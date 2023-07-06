@@ -1,10 +1,8 @@
 ---
 title: 'Tutoriel - Créer sa page web personnelle chez OVHcloud'
 excerpt: 'Apprenez à créer votre première page web sur un hébergement gratuit 100M'
-updated: 2023-02-17
+updated: 2023-07-16
 ---
-
-**Dernière mise à jour le 17/02/2023**
 
 ## Objectif
 

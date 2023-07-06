@@ -1,14 +1,12 @@
 ---
 title: "Fai evolvere la tua offerta di hosting Web"
 excerpt: Come modificare la formula di abbonamento della tua offerta di hosting OVHcloud
-updated: 2023-04-19
+updated: 2023-07-16
 ---
 
 > [!primary]
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
 >
-
-**Ultimo aggiornamento: 19/04/2023**
 
 ## Obiettivo
 

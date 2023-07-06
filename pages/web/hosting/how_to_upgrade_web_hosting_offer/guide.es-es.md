@@ -1,14 +1,12 @@
 ---
 title: Mejorar la solución de alojamiento web
 excerpt: Cómo cambiar la fórmula de suscripción de un plan de hosting de OVHcloud
-updated: 2023-04-19
+updated: 2023-07-16
 ---
 
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón "Contribuir" de esta página.
 >
-
-**Última actualización: 19/04/2023**
 
 ## Objetivo
 

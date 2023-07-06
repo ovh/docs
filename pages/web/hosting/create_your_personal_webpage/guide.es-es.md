@@ -1,14 +1,12 @@
 ---
 title: 'Tutorial - Crear una página web personal en OVHcloud'
 excerpt: 'Cómo crear su primera página web en un alojamiento web gratuito Start 10M'
-updated: 2023-02-17
+updated: 2023-07-16
 ---
 
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
-
-**Última actualización: 17/02/2023**
 
 ## Objetivo
 

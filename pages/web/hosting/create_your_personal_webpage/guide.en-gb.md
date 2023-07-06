@@ -1,10 +1,8 @@
 ---
 title: 'Tutorial - Creating your personal webpage at OVHcloud'
 excerpt: 'Find out how to create your first webpage with a 100M free hosting plan'
-updated: 2023-02-17
+updated: 2023-07-16
 ---
-
-**Last updated 17th February 2023**
 
 ## Objective
 
