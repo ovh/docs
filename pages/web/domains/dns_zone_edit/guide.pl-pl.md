@@ -12,6 +12,8 @@ updated: 2022-07-07
 
 ## Wprowadzenie
 
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/BvrUi26ShzI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ### Zrozumienie pojęcia DNS <a name="understanddns"></a>
 
 Symbol DNS, oznaczający **D**omain **N**ame **S**ystem, to zbiór elementów pozwalających na powiązanie domeny z adresem IP.
@@ -35,8 +37,6 @@ Strefa DNS domeny to plik konfiguracyjny składający się z **rekordów**. Umo�
 ![DNS](images/dnszone.png){.thumbnail}
 
 **Dowiedz się, jak edytować strefę DNS w Panelu klienta.**
-
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/BvrUi26ShzI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Wymagania początkowe
 

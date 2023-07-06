@@ -1,14 +1,12 @@
 ---
 title: "Montowanie NAS-HA przy użyciu zasobów NFS"
 excerpt: "Dowiedz się, jak się zalogować do usługi NAS-HA przy użyciu protokołu NFS"
-updated: 2022-12-06
+updated: 2023-07-06
 ---
 
 > [!primary]
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
 > 
-
-**Ostatnia aktualizacja z dnia 06-12-2022**
 
 ## Wprowadzenie
 
@@ -186,8 +184,51 @@ Partycja NAS-HA jest teraz zamontowana w datastore.
 
 ![ESXI](images/esxi4.png){.thumbnail}
 
+### NFSv3/NFSv4
+
+Oferta NAS-HA obsługuje protokoły NFSv3 i NFSv4. Szczegóły ich wykorzystania.
+
+**Co się stanie, jeśli nie podasz wersji podczas składania zamówienia NFS?**
+
+W takim przypadku klient NFS spróbuje połączyć się bezpośrednio z najwyższą wspieraną przez niego wersją.
+Możesz również wybrać, czy chcesz korzystać z NFSv3 lub NFSv4:
+
+Aby wymusić korzystanie z NFSv3, wpisz następujące polecenie:
+
+```bash
+ubuntu@server:~$ sudo mount -t nfs -o vers=3 IP_HA-NAS:/NFS_PATH /MOUNTING_FOLDER
+```
+
+- Przykład:
+
+```bash
+ubuntu@server:~$ sudo mount -t nfs -o vers=3 10.1.1.1:/zpool-123456/partition01 /mount/ha_nas
+```
+
+Aby wymusić korzystanie z NFSv4, wpisz następujące polecenie:
+
+```bash
+ubuntu@server:~$ sudo mount -t nfs -o vers=4 IP_HA-NAS:/NFS_PATH /MOUNTING_FOLDER
+```
+
+- Przykład:
+
+```bash
+ubuntu@server:~$ sudo mount -t nfs -o vers=4 10.1.1.1:/zpool-123456/partition01 /mount/ha_nas
+```
+
+Możesz również użyć następującego polecenia, aby określić wersję użytą przez aktualny montaż:
+
+```bash
+ubuntu@server:~$ nfsstat -m
+```
+
+W powrocie parametr `vers=3` lub `vers=4` wskazuje, który protokół jest używany.
+
+Korzystanie z poleceń będzie podobne dla CentOS i Fedora.
+
 ## Sprawdź również
 
 Jeśli potrzebujesz szkolenia lub pomocy technicznej w celu wdrożenia naszych rozwiązań, skontaktuj się z przedstawicielem handlowym lub kliknij [ten link](https://www.ovhcloud.com/pl/professional-services/), aby uzyskać wycenę i poprosić o spersonalizowaną analizę projektu od naszych ekspertów z zespołu Professional Services.
-
+ 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
