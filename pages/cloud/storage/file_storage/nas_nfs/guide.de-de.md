@@ -187,12 +187,12 @@ Ihre HA-NAS Partition wurde nun als Datastore hinzugefügt.
 
 ### NFS3/NFS4
 
-Das HA-NAS Angebot unterstützt die Protokolle NFS3 und NFS4. Wir werden deren Verwendung detailliert beschreiben.
+HA-NAS unterstützt die Protokolle NFS3 und NFS4. Deren Verwendung wird im folgenden Abschnitt erklärt.
 
-**Was passiert, wenn die Version beim NFS Befehl nicht angegeben wird?**
+**Was passiert, wenn die NFS-Version im Befehl nicht angegeben wird?**
 
-In diesem Fall wird Ihr NFS-Client versuchen, sich direkt mit der höchsten von diesem unterstützten Version zu verbinden.
-Sie können aber auch auswählen, ob Sie NFS3 oder NFS4 verwenden möchten:
+In diesem Fall wird Ihr NFS-Client versuchen, sich direkt mit der aktuellsten unterstützten Version zu verbinden.
+Sie können aber auch auswählen, ob Sie NFS3 oder NFS4 verwenden möchten.
 
 Um die Verwendung von NFS3 zu erzwingen, verwenden Sie folgenden Befehl:
 
@@ -218,15 +218,15 @@ ubuntu@server:~$ sudo mount -t nfs -o vers=4 IP_HA-NAS:/NFS_PATH /MOUNTING_FOLDE
 ubuntu@server:~$ sudo mount -t nfs -o vers=4 10.1.1.1:/zpool-123456/partition01 /mount/ha_nas
 ```
 
-Sie können den folgenden Befehl auch verwenden, um die beim aktuellen Mounten verwendete Version zu bestimmen:
+Sie können den folgenden Befehl verwenden, um die aktuell verwendete Version festzustellen:
 
 ```bash
 ubuntu@server:~$ nfsstat -m
 ```
 
-Im Rückblick zeigt Ihnen der Parameter `vers=3` oder `vers=4` das verwendete Protokoll an.
+Die Ausgabe zeigt mit den Parametern `vers=3` oder `vers=4` das verwendete Protokoll an.
 
-Die Verwendung der Bestellungen entspricht CentOS und Fedora.
+Die oben aufgeführten Befehle können entsprechend in CentOS und Fedora verwendet werden.
 
 ## Weiterführende Informationen
 
