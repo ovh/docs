@@ -224,7 +224,7 @@ Sie können den folgenden Befehl verwenden, um die aktuell verwendete Version fe
 ubuntu@server:~$ nfsstat -m
 ```
 
-Die Ausgabe zeigt mit den Parametern `vers=3` oder `vers=4` das verwendete Protokoll an.
+Die Ausgabe zeigt über den Parameter `vers=3` oder `vers=4` das verwendete Protokoll an.
 
 Die oben aufgeführten Befehle können entsprechend in CentOS und Fedora verwendet werden.
 

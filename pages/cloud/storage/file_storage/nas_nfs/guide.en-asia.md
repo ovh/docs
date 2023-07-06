@@ -188,9 +188,9 @@ Your HA-NAS partition is now mounted as a datastore.
 
 ### NFS3/NFS4
 
-The HA-NAS solution supports NFS3 and NFS4 protocols. We will explain how they are used.
+The HA-NAS solution supports NFS3 and NFS4 protocols. This section explains how they are used.
 
-**What happens if the version is not specified during the NFS command?**
+**What happens if the NFS version is not specified inside the mount command?**
 
 In this case, your NFS client will try to connect directly to the latest version supported by it.<br>
 But you can also choose whether you prefer to use NFS3 or NFS4:
@@ -198,25 +198,25 @@ But you can also choose whether you prefer to use NFS3 or NFS4:
 To force the use of NFS3, you must use the following command:
 
 ```bash
-ubuntu@server:~$ sudo mount -t nfs -o to=3 HA-NAS_IP:/NFS_PATH /MOUNTING_FOLDER
+ubuntu@server:~$ sudo mount -t nfs -o vers=3 IP_HA-NAS:/NFS_PATH /MOUNTING_FOLDER
 ```
 
 - Example:
 
 ```bash
-ubuntu@server:~$ sudo mount -t nfs -o to=3 10.1.1.1:/zpool-123456/partition01 /mount/ha_nas
+ubuntu@server:~$ sudo mount -t nfs -o vers=3 10.1.1.1:/zpool-123456/partition01 /mount/ha_nas
 ```
 
 To force the use of NFS4, you must use the following command:
 
 ```bash
-ubuntu@server:~$ sudo mount -t nfs -o to=4 IP_HA-NAS:/NFS_PATH /MOUNTING_FOLDER
+ubuntu@server:~$ sudo mount -t nfs -o vers=4 IP_HA-NAS:/NFS_PATH /MOUNTING_FOLDER
 ```
 
 - Example:
 
 ```bash
-ubuntu@server:~$ sudo mount -t nfs -o to=4 10.1.1.1:/zpool-123456/partition01 /mount/ha_nas
+ubuntu@server:~$ sudo mount -t nfs -o vers=4 10.1.1.1:/zpool-123456/partition01 /mount/ha_nas
 ```
 
 You can also use the following command to determine which version is used by the current mount:
@@ -225,7 +225,7 @@ You can also use the following command to determine which version is used by the
 ubuntu@server:~$ nfsstat -m
 ```
 
-In the return, the parameter `to=3` or `to=4` tells you which protocol is used.
+In the return, the parameter `vers=3` or `vers=4` tells you which protocol is used.
 
 Command usage will be similar for CentOS and Fedora.
 
