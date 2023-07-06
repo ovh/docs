@@ -186,7 +186,7 @@ Ein großes Bild ist ein Bilddatei, die Zeit benötigt, um von Ihrem Browser gel
 
 In der Regel sollten Sie Ihre Bilder optimieren und deren "Gewicht" reduzieren. Dieses Gewicht wird in Bytes angegeben. Üblicherweise werden Kilobyte (1 kB = 1.000 Bytes) oder Megabyte (1 kB = 1.000.000 Bytes) verwendet. Ein Image von mehr als einigen Dutzend KB wird als "schwer" eingestuft und benötigt Optimierung. 
 
-**Beispiel**: Wenn Ihre Bilder 1 Monat lang verfügbar sind, sind Sie auf maximal 100 Bilder auf Ihrem kostenlosen 100-Millionen-Höhepunkt begrenzt. Wenn Sie zwischen 50.000 und 200.000 Euro sparen möchten, müssen Sie nur noch ein paar Millisekunden auf Ihrer Website präsentieren.
+**Beispiel**: Wenn Ihre Bilder jeweils 1 MB groß sind, sind Sie auf weniger als 100 Bilder auf Ihrem kostenlosen 100M-Hosting beschränkt. Wenn es Ihnen gelingt, ihre Größe zwischen 50 kb und 200 kb zu reduzieren, könnten Sie bis zu mehreren Tausend Bilder auf Ihrer Webseite präsentieren.
 
 Einige Tipps, um Webseiten-Dateien so einfach wie möglich zu gestalten:
 

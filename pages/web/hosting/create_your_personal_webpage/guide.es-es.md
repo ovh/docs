@@ -188,7 +188,7 @@ La etiqueta HTML usada para mostrar una imagen es la etiqueta `<img>`. A diferen
 Una imagen de gran tamaño es una imagen que tardará en ser cargada por su navegador, especialmente si sus visitantes utilizan un smartphone o tablet conectada a la red 4G o 5G.
 Por regla general, debe optimizar sus imágenes y limitar su peso. Este peso se expresa en bytes. Las unidades que se utilizan generalmente son los kilobytes (1 KB = 1.000 bytes) o el megabyte (1 MB = 1.000.000 bytes). Una imagen superior a unas cuantas decenas de KB se considera pesada y merece ser optimizada. 
 
-**Ejemplo**: si tiene imágenes que duran 1 mes, debe limitar su número de 100 imágenes a 100M sin cargo. Si desea reducir su cola entre 50 ko y 200 ko, debe verterla en el presentador tanto como desee en su página web.
+**Ejemplo**: si cada una de tus imágenes pesa 1 MB, estarás limitado a menos de 100 imágenes en tu alojamiento gratuito de 100M. Si consigues reducir su tamaño a entre 50kb y 200kb, podrás mostrar hasta varios miles de ellas en tu página web.
 
 Algunos consejos para que sus archivos sean lo más ligeros posible:
 

@@ -190,7 +190,7 @@ Il tag HTML utilizzato per visualizzare un'immagine è il tag `<img>`. Contraria
 Un'immagine grande è un'immagine che richiederà tempo per essere caricata dal tuo browser, soprattutto se i tuoi visitatori utilizzano uno smartphone o un tablet collegato alla rete 4G o 5G.
 In generale, è necessario ottimizzare le immagini e limitarne il peso. Questo peso è espresso in byte. Le unità generalmente utilizzate sono i kilobyte (1 KB = 1.000 byte) o i megabyte (1 MB = 1.000.000 byte). Un'immagine superiore a qualche decina di KB è considerata pesante e merita di essere ottimizzata. 
 
-**Esempio**: se disponi di immagini che durano 1 mese, dovresti limitare il numero di 100 immagini a 100M gratuitamente. Se vuoi ridurre la tua coda tra 50 ko e 200 ko, dovresti versarla nel presentatore tanto quanto vuoi milliers sulla tua pagina web.
+**Esempio**: se le vostre immagini pesano ciascuna 1 MB, sarete limitati a meno di 100 immagini sul vostro hosting gratuito da 100M. Se riuscite a ridurne la dimensione a un valore compreso tra 50kb e 200kb, potrete visualizzarne fino a diverse migliaia sulla vostra pagina web.
 
 Ti consigliamo di semplificare al minimo i file:
 

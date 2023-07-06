@@ -183,7 +183,7 @@ The HTML tag used to display an image is the `<img>` tag. Unlike the tags we saw
 A large image will take time to load in a browser, especially if your visitors use a smartphone or tablet connected to the 4G or 5G network.
 In general, you should optimise your images and limit their size. Their "weight" is expressed in bytes. Typical units are kilobytes (1 KB = 1,000 bytes) or megabytes (1 MB = 1,000,000 bytes). An image larger than a few dozen KB is considered "heavy" and deserves to be optimised. 
 
-**Example** : if you have images that last 1 month, you should limit your number of 100 images to 100M free of charge. If you want to reduce your tail between 50 ko and 200 ko, you should pour it in the presenter just as much as you want milliers on your web page.
+**Example**: if your images each weigh 1 MB, you will be limited to less than 100 images on your free 100M hosting. If you manage to reduce their size to between 50kb and 200kb, you could display up to several thousand of them on your web page.
 
 Some tips to make your files as light as possible:
 

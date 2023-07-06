@@ -188,7 +188,7 @@ O identificador HTML utilizado para apresentar uma imagem é o identificador `<i
 Uma imagem de grande dimensão é uma imagem que levará tempo a ser carregada pelo seu browser, particularmente se os seus visitantes utilizam um smartphone ou um tablet ligado à rede 4 ou 5G.
 Regra geral, deve otimizar as suas imagens e limitar o seu peso. Este peso é expresso em bytes. As unidades normalmente utilizadas são os quilobytes (1 ko = 1 000 bytes) ou o megabyte (1 MB = 1 000 000 bytes). Uma imagem superior a algumas dezenas de KB é considerada pesada e merece ser otimizada. 
 
-**Exemplo**: se você tem imagens que duram 1 mês, você deve limitar seu número de 100 imagens a 100M gratuitamente. Se você deseja reduzir sua cauda entre 50 ko e 200 ko, você deve despejá-lo no apresentador tanto quanto deseja milliers em sua página da web.
+**Exemplo**: se as suas imagens pesarem 1 MB cada, estará limitado a menos de 100 imagens no seu alojamento gratuito de 100M. Se conseguir reduzir o tamanho das imagens para entre 50kb e 200kb, poderá apresentar até vários milhares delas na sua página Web.
 
 Alguns conselhos para que os seus ficheiros sejam o mais leves possível:
 
