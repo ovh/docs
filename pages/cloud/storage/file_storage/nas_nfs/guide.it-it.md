@@ -1,16 +1,14 @@
 ---
 title: "Installazione di un NAS-HA tramite condivisione NFS"
 excerpt: "Come connettersi al tuo NAS-HA utilizzando una condivisione NFS"
-updated: 2022-12-06
+updated: 2023-07-06
 ---
 
 > [!primary]
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
 >
 
-**Ultimo aggiornamento: 06/12/2022**
-
-## Obiettivo
+## Obiettivo 
 
 Il servizio NAS-HA OVHcloud ti permette di gestire uno storage di file accessibile da una rete.
 
@@ -185,6 +183,49 @@ Clicca su `Next`{.action}. Clicca su `Finish`{.action} nell'ultimo step.
 La tua partizione NAS-HA è montata in datastore.
 
 ![ESXI](images/esxi4.png){.thumbnail}
+
+### NFSv3/NFSv4
+
+L'offerta NAS-HA supporta i protocolli NFSv3 e NFSv4. Ne spieghiamo l'utilizzo.
+
+**Cosa succede se la versione non viene precisata durante l'ordine NFS?**
+
+In questo caso, il tuo client NFS cercherà di connettersi direttamente alla versione più alta supportata da quest'ultimo.
+Ma puoi anche scegliere se utilizzare NFSv3 o NFSv4:
+
+Per forzare l'utilizzo di NFSv3, utilizza questo comando:
+
+```bash
+ubuntu@server:~$ sudo mount -t nfs -o vers=3 IP_HA-NAS:/NFS_PATH /MOUNTING_FOLDER
+```
+
+- Esempio:
+
+```bash
+ubuntu@server:~$ sudo mount -t nfs -o vers=3 10.1.1.1:/zpool-123456/partition01 /mount/ha_nas
+```
+
+Per forzare l'utilizzo di NFSv4, utilizza questo comando:
+
+```bash
+ubuntu@server:~$ sudo mount -t nfs -o vers=4 IP_HA-NAS:/NFS_PATH /MOUNTING_FOLDER
+```
+
+- Esempio:
+
+```bash
+ubuntu@server:~$ sudo mount -t nfs -o vers=4 10.1.1.1:/zpool-123456/partition01 /mount/ha_nas
+```
+
+Per determinare la versione utilizzata dall'installazione corrente, utilizza il seguente comando:
+
+```bash
+ubuntu@server:~$ nfsstat -m
+```
+
+Nella risposta, le impostazioni `vers=3` o `vers=4` ti indicano il protocollo utilizzato.
+
+L'utilizzo dei comandi sarà simile per CentOS e Fedora.
 
 ## Per saperne di più
 

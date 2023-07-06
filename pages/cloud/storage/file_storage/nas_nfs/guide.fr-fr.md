@@ -4,7 +4,7 @@ excerpt: Découvrez comment vous connecter à votre NAS-HA en utilisant un parta
 updated: 2023-07-06
 ---
 
-## Objectif
+## Objectif 
 
 Le service NAS-HA OVHcloud vous permet de gérer un stockage de fichiers accessible depuis un réseau.
 
@@ -44,7 +44,6 @@ Les notations suivantes sont utilisées comme arguments dans les sections de lig
 > L'utilisateur NFS est `root`, les modifications de droits avec cet utilisateur peuvent générer des conflits avec des droits CIFS/SMB existants.
 >
 > 
-
 
 ### Distributions basées sur Debian
 
