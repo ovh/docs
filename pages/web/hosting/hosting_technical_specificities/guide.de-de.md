@@ -39,7 +39,7 @@ Um eine hohe Dienstqualität für alle zu gewährleisten und den Versand Ihrer E
 
 Innerhalb eines gleitenden Zeitraums von 3600 Sekunden (also 1 Stunde) können Sie mit Ihrem Webhosting-Angebot folgendes E-Mail-Versandvolumen nutzen:
 
-|Angebote|Kostenloses Hosting 100M|Perso|Pro|Performance|
+|Angebote|Kostenloses Hosting 100M|Basic|Pro|Performance|
 |---|---|---|---|---|
 |Maximale Anzahl an E-Mails pro Stunde und Dienstleistung|10|100|200|2000|
 
