@@ -6,7 +6,7 @@ updated: 2023-07-06
 
 > [!warning]
 >
-> Cette fonctionnalité est actuellement en version bêta. Pour participer à la bêta, inscrivez-vous ici : <https://labs.ovhcloud.com/en/>
+> Cette fonctionnalité est actuellement en version bêta. Vous trouverez plus d'information à cet endroit : <https://labs.ovhcloud.com/en/>
 >
 
 ## Objectif
@@ -26,7 +26,7 @@ En détail, une politique contient :
  
 Par exemple, nous pouvons créer une politique pour donner à un utilisateur nommé John, pour un VPS, l'accès à l'action « redémarrer ».
 
-**Ce guide vous explique en détail comment déclarer ces politiques à l'aide de l'API OVHcloud et comment lister les identités, ressources et actions disponibles pour celles-ci.**
+**Ce guide vous explique en détail comment déclarer ces politiques à l'aide de l'espace client OVHcloud et comment lister les identités, ressources et actions disponibles pour celles-ci.**
 
 ![politiques IAM](images/iam_policies.png){.thumbnail}
 
@@ -147,7 +147,7 @@ Retrouvez les détails de la gestion des utilisateurs dans la [documentation dé
 
 ### Gestion des groupes de ressources
 
-Les politiques peuvent cibler des groupes de ressources (au lieu de cibler des ressources). Ces groupes de ressources peuvent assembler des ressources provenant de différents produits, par exemple pour configurer un environnement de test.
+Les politiques peuvent cibler des groupes de ressources (au lieu de cibler des ressources directement). Ces groupes de ressources peuvent assembler des ressources provenant de différents produits, par exemple pour configurer un environnement de test.
 
 #### Créer un groupe de ressources
 

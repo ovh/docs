@@ -6,7 +6,7 @@ updated: 2023-07-06
 
 > [!warning]
 >
-> This feature is currently in beta. To join the beta, subscribe here: <https://labs.ovhcloud.com/en/>
+> This feature is currently in beta. Find more informations about it: <https://labs.ovhcloud.com/en/>
 >
 
 ## Objective
@@ -26,7 +26,7 @@ In detail, a policy contains:
  
 For example, we can create a policy to give to a user called John, for a VPS, access to the action "reboot".
 
-**This guide explains in detail how these policies can be declared using the OVHcloud API, and how to list the identities, resources and actions available for them.**
+**This guide explains in detail how these policies can be declared using the OVHcloud Control Panel, and how to list the identities, resources and actions available for them.**
 
 ![IAM Policies](images/iam_policies.png){.thumbnail}
 
