@@ -1672,6 +1672,7 @@
         + [Getting started](manage-operate-api-getting-started)
             + [First Steps with the OVHcloud APIs](account/api/first-steps)
             + [Exploring the OVHcloud APIs](account/api/console-preview)
+            + [Use legacy connection mode](account/api/legacy-connection-mode)
         + [APIv6](manage-operate-api-apiv6)
             + [OVHcloud API v2 - Operating principles](account/api/apiv2)
             + [Manage services](account/api/services)

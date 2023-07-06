@@ -1,10 +1,14 @@
 ---
-title: 'First Steps with the OVHcloud APIs'
-excerpt: 'Learn how to use OVHcloud APIs'
+title: 'Use the legacy connection mode with the OVHcloud APIs'
+excerpt: 'Learn how to use OVHcloud APIs with the legacy connection mode'
 updated: 2023-07-06
 ---
 
 **Last updated 06th July 2023**
+
+> [!warning]
+>This connection mode described in this guide is legacy. If you are setting up your first connection with the API, we suggest you to use the methode detailed on the [First Step](pages\account\api\first-steps)
+>
 
 ## Objective
 
@@ -123,14 +127,85 @@ The `PHP` and `Python` tabs contain the elements to be added to your script acco
 
 ### Advanced usage: pair OVHcloud APIs with an application
 
-TODO
+#### Create your app keys
+
+Any application that wants to communicate with the OVHcloud API must be declared in advance.
+
+To do this, click the following link: [https://eu.api.ovh.com/createToken/](https://eu.api.ovh.com/createToken/){.external}.
+
+Fill in your OVHcloud customer ID, password, and application name. The name will be useful later if you want to allow others to use it.
+
+You can also add a description of the application and a validity period. 
+
+The `Rights` field allows you to restrict the use of the application to certain APIs. 
+<br> In order to allow all OVHcloud APIs for an HTTP method, put an asterisk (`*`) into the field, as in the following example where the GET method is allowed for all APIs:
+
+![API keys](images/api-keys.png){.thumbnail}
+
+After you click `Create keys`{.action}, you will be issued three keys:
+
+- the application key, called **AK**. For example:
+
+```console
+7kbG7Bk7S9Nt7ZSV
+```
+
+- your secret application key, not to be disclosed, called **AS**. For example:
+
+```console
+EXEgWIz07P0HYwtQDs7cNIqCiQaWSuHF
+```
+
+- a secret "**consumer key**", not to be disclosed, called **CK**. For example:
+
+```console
+MtSwSrPpNjqfVSmJhLbPyr2i45lSwPU1
+```
+
+In this case, the **CK** key is attached to your account.
+
+The **CK** token can be used for rights delegation. See the following guide for more information: [How to manage a customer’s account via OVHcloud API](/pages/account/api/api_right_delegation)
+
+#### First API Usage
+
+Once you have obtained your three keys (**AK**, **AS**, **CK**), you can sign API requests. The signature is calculated as follows:
+
+```console
+"$1$" + SHA1_HEX(AS+"+"+CK+"+"+METHOD+"+"+QUERY+"+"+BODY+"+"+TSTAMP)
+```
+
+To simplify the development of your applications, OVHcloud provides API wrappers in multiple languages.
+Using them will help you to avoid worrying about signing requests, so that you can focus on developing your application.
+
+- *Perl* : <https://github.com/ovh/perl-ovh>
+- *Python* : <https://github.com/ovh/python-ovh>
+- *PHP* : <https://github.com/ovh/php-ovh>
+- *Node.js* : <https://github.com/ovh/node-ovh>
+- *Swift* : <https://github.com/ovh/swift-ovh>
+- *C#* : <https://github.com/ovh/csharp-ovh>
+
+Here is an example of how to use the `/me` section to manage your OVHcloud account:
+
+```python
+import ovh
+
+# Instantiate. Visit https://api.ovh.com/createToken/?GET=/me
+# to get your credentials
+client = ovh.Client(
+    endpoint='ovh-eu',
+    application_key='<application key>',
+    application_secret='<application secret>',
+    consumer_key='<consumer key>',
+)
+
+# Print nice welcome message
+print("Welcome", client.get('/me')['firstname'])
+```
 
 ## Go further <a name="gofurther"></a>
 
 [Managing a Domain Name with the OVHcloud API](/pages/web/domains/api_domain_intro)
 
 [How to manage a customer’s account via OVHcloud API](/pages/account/api/api_right_delegation)
-
-[How to use IAM policies using the OVHcloud Control Panel](pages/account/customer/iam-policy-ui)
 
 Join our community of users on <https://community.ovh.com/en/>.
