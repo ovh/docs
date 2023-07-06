@@ -1,7 +1,7 @@
 ---
 title: HA-NAS über NFS mounten
 excerpt: "Erfahren Sie hier, wie sich mit Ihrem HA-NAS unter Verwendung einer NFS-Freigabe verbinden"
-updated: 2023-07-05
+updated: 2023-07-06
 ---
 
 > [!primary]
@@ -185,16 +185,16 @@ Ihre HA-NAS Partition wurde nun als Datastore hinzugefügt.
 
 ![ESXI](images/esxi4.png){.thumbnail}
 
-### NFS3/NFS4
+### NFSv3/NFSv4
 
-HA-NAS unterstützt die Protokolle NFS3 und NFS4. Deren Verwendung wird im folgenden Abschnitt erklärt.
+HA-NAS unterstützt die Protokolle NFSv3 und NFSv4. Deren Verwendung wird im folgenden Abschnitt erklärt.
 
 **Was passiert, wenn die NFS-Version im Befehl nicht angegeben wird?**
 
 In diesem Fall wird Ihr NFS-Client versuchen, sich direkt mit der aktuellsten unterstützten Version zu verbinden.
-Sie können aber auch auswählen, ob Sie NFS3 oder NFS4 verwenden möchten.
+Sie können aber auch auswählen, ob Sie NFSv3 oder NFSv4 verwenden möchten.
 
-Um die Verwendung von NFS3 zu erzwingen, verwenden Sie folgenden Befehl:
+Um die Verwendung von NFSv3 zu erzwingen, verwenden Sie folgenden Befehl:
 
 ```bash
 ubuntu@server:~$ sudo mount -t nfs -o vers=3 IP_HA-NAS:/NFS_PATH /MOUNTING_FOLDER
@@ -206,7 +206,7 @@ ubuntu@server:~$ sudo mount -t nfs -o vers=3 IP_HA-NAS:/NFS_PATH /MOUNTING_FOLDE
 ubuntu@server:~$ sudo mount -t nfs -o vers=3 10.1.1.1:/zpool-123456/partition01 /mount/ha_nas
 ```
 
-Um die Verwendung von NFS4 zu erzwingen, verwenden Sie folgenden Befehl:
+Um die Verwendung von NFSv4 zu erzwingen, verwenden Sie folgenden Befehl:
 
 ```bash
 ubuntu@server:~$ sudo mount -t nfs -o vers=4 IP_HA-NAS:/NFS_PATH /MOUNTING_FOLDER

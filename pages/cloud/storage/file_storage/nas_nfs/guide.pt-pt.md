@@ -1,7 +1,7 @@
 ---
 title: "Montagem de NAS-HA através de NFS"
 excerpt: "Saiba como conectar-se ao NAS-HA através de NFS"
-updated: 2023-07-05
+updated: 2023-07-06
 ---
 
 > [!primary]
@@ -184,16 +184,16 @@ A sua partição NAS-HA foi montada num datastore.
 
 ![ESXI](images/esxi4.png){.thumbnail}
 
-### NFS3/NFS4
+### NFSv3/NFSv4
 
-A oferta NAS-HA suporta os protocolos NFS3 e NFS4. Vamos detalhar a sua utilização.
+A oferta NAS-HA suporta os protocolos NFSv3 e NFSv4. Vamos detalhar a sua utilização.
 
 **O que acontece se não especificarmos a versão durante o comando NFS?**
 
 Neste caso, o seu cliente NFS vai tentar ligar-se diretamente à versão mais alta suportada por este último.
-Mas também pode escolher se prefere utilizar NFS3 ou NFS4:
+Mas também pode escolher se prefere utilizar NFSv3 ou NFSv4:
 
-Para forçar a utilização de NFS3, deve utilizar o seguinte comando:
+Para forçar a utilização de NFSv3, deve utilizar o seguinte comando:
 
 ```bash
 ubuntu@server:~$ sudo mount -t nfs -o vers=3 IP_HA-NAS:/NFS_PATH /MOUNTING_FOLDER
@@ -205,7 +205,7 @@ ubuntu@server:~$ sudo mount -t nfs -o vers=3 IP_HA-NAS:/NFS_PATH /MOUNTING_FOLDE
 ubuntu@server:~$ sudo mount -t nfs -o vers=3 10.1.1.1:/zpool-123456/partition01 /mount/ha_nas
 ```
 
-Para forçar a utilização de NFS4, deve utilizar o seguinte comando:
+Para forçar a utilização de NFSv4, deve utilizar o seguinte comando:
 
 ```bash
 ubuntu@server:~$ sudo mount -t nfs -o vers=4 IP_HA-NAS:/NFS_PATH /MOUNTING_FOLDER

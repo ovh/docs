@@ -1,7 +1,7 @@
 ---
 title: "Montowanie NAS-HA przy użyciu zasobów NFS"
 excerpt: "Dowiedz się, jak się zalogować do usługi NAS-HA przy użyciu protokołu NFS"
-updated: 2023-07-05
+updated: 2023-07-06
 ---
 
 > [!primary]
@@ -184,16 +184,16 @@ Partycja NAS-HA jest teraz zamontowana w datastore.
 
 ![ESXI](images/esxi4.png){.thumbnail}
 
-### NFS3/NFS4
+### NFSv3/NFSv4
 
-Oferta NAS-HA obsługuje protokoły NFS3 i NFS4. Szczegóły ich wykorzystania.
+Oferta NAS-HA obsługuje protokoły NFSv3 i NFSv4. Szczegóły ich wykorzystania.
 
 **Co się stanie, jeśli nie podasz wersji podczas składania zamówienia NFS?**
 
 W takim przypadku klient NFS spróbuje połączyć się bezpośrednio z najwyższą wspieraną przez niego wersją.
-Możesz również wybrać, czy chcesz korzystać z NFS3 lub NFS4:
+Możesz również wybrać, czy chcesz korzystać z NFSv3 lub NFSv4:
 
-Aby wymusić korzystanie z NFS3, wpisz następujące polecenie:
+Aby wymusić korzystanie z NFSv3, wpisz następujące polecenie:
 
 ```bash
 ubuntu@server:~$ sudo mount -t nfs -o vers=3 IP_HA-NAS:/NFS_PATH /MOUNTING_FOLDER
@@ -205,7 +205,7 @@ ubuntu@server:~$ sudo mount -t nfs -o vers=3 IP_HA-NAS:/NFS_PATH /MOUNTING_FOLDE
 ubuntu@server:~$ sudo mount -t nfs -o vers=3 10.1.1.1:/zpool-123456/partition01 /mount/ha_nas
 ```
 
-Aby wymusić korzystanie z NFS4, wpisz następujące polecenie:
+Aby wymusić korzystanie z NFSv4, wpisz następujące polecenie:
 
 ```bash
 ubuntu@server:~$ sudo mount -t nfs -o vers=4 IP_HA-NAS:/NFS_PATH /MOUNTING_FOLDER
