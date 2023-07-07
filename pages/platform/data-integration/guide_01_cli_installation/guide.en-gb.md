@@ -91,6 +91,13 @@ Go back to your terminal and use your newly created API keys to complete the CLI
 - Finally copy the `consumer key` from your browser and paste it.
 
 You should receive a feedback message informing you that you are now logged in.
+![image](images/03_login_success.png){.thumbnail}
+
+Finalize the login process by setting the service name corresponding to your PCI project identifier:
+
+``` {.console}
+ovhdata-cli config set-service-name a7b3ecad6e4a52b0b33dfd5ba7eb4199
+```
 
 ### Step 6: Using the command line CLI
 

@@ -94,6 +94,14 @@ Go back to your terminal and use your newly created API keys to complete the CLI
 
 You should receive a feedback message informing you that you are now logged in.
 
+![image](images/03_login_success.png){.thumbnail}
+
+Finalize the login process by setting the service name corresponding to your PCI project identifier:
+
+``` {.console}
+ovhdata-cli config set-service-name a7b3ecad6e4a52b0b33dfd5ba7eb4199
+```
+
 ### Step 6: Using the command line CLI
 
 You can use the command `ovhdata-cli --help` to list generic CLI actions, `ovhdata-cli di --help` to list actions specific to the Data Integration service, and `ovhdata-cli di <action> --help` for more information about a specific action.
