@@ -1,5 +1,5 @@
 ---
-title: So verbinden Sie sich mit dem OVHcloud Kundencenter über IAM (EN)
+title: Einloggen in das OVHcloud Kundencenter über IAM (EN)
 excerpt: "Find out how to grant the minimum rights required to log to the OVHcloud Control Panel"
 updated: 2023-07-03
 ---
