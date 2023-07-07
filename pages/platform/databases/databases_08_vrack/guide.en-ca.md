@@ -4,7 +4,7 @@ excerpt: Connect a Public Cloud Database to vRack
 updated: 2023-07-07
 ---
 
-**Last updated 7th June 2023**
+**Last updated 7th July 2023**
 
 ## Objective
 
