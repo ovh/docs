@@ -1,11 +1,11 @@
 ---
 title: Data Integration - CLI - Commands reference
 excerpt: Learn how to use the Data Integration CLI
-updated: 2023-07-04
+updated: 2023-07-07
 ---
 
 > [!primary]
-> The Data Integration product is in `beta`. During the beta-testing phase, the infrastructure’s availability and performances are not guaranteed. Please do not use this service for applications that are in production, while this phase is not complete.
+> The Data Integration product is in `beta`. During the beta-testing phase, the infrastructure’s availability and performances are not guaranteed. Please do not use this service for applications that are in production while this phase is not finished.
 
 ## Objective
 
@@ -31,12 +31,12 @@ ovhdata-cli di source-connector list
 
 You should see a list of source connectors with their `name`, `identifier` and `version`.
 
-Let's create a PostgreSQL source targetting a managed database hosted in OVHcloud Public Cloud.
+Let's create a PostgreSQL source targeting a managed database hosted on OVHcloud Public Cloud.
 
 > [!primary]
 > Before creating this source, make sure the Data Integration platform IP address `188.165.35.170` is whitelisted on the managed database service.
 
-We can either provide all the required parameters on the command line or just the name of the source. If one or multiple parameters are missing,the CLI will help us fill them in interactively:
+We can either provide all the required parameters on the command line or just the name of the source. If one or multiple parameters are missing, the CLI will help us fill them in interactively:
 
 ``` {.console}
 ovhdata-cli di source create MY_FIRST_SRC

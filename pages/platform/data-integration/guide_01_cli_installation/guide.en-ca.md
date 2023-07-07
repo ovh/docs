@@ -1,11 +1,11 @@
 ---
 title: Data Integration - CLI - Installation
 excerpt: Learn how to install the Data Integration CLI
-updated: 2023-06-27
+updated: 2023-07-07
 ---
 
 > [!primary]
-> The Data Integration product is in `beta`. During the beta-testing phase, the infrastructure’s availability and performances are not guaranteed. Please do not use this service for applications that are in production, while this phase is not complete.
+> The Data Integration product is in `beta`. During the beta-testing phase, the infrastructure’s availability and performances are not guaranteed. Please do not use this service for applications that are in production while this phase is not finished.
 
 ## Objective
 

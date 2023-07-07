@@ -3,11 +3,11 @@ title: Data Integration - CLI - Installation
 excerpt: Learn how to install the Data Integration CLI
 routes:
     canonical: 'https://help.ovhcloud.com/csm/en-gb-public-cloud-data-analytics-data-integration-cli-installation?id=kb_article_view&sysparm_article=KB0058598'
-updated: 2023-06-27
+updated: 2023-07-07
 ---
 
 > [!primary]
-> The Data Integration product is in `beta`. During the beta-testing phase, the infrastructure’s availability and performances are not guaranteed. Please do not use this service for applications that are in production, while this phase is not complete.
+> The Data Integration product is in `beta`. During the beta-testing phase, the infrastructure’s availability and performances are not guaranteed. Please do not use this service for applications that are in production while this phase is not finished.
 
 ## Objective
 
