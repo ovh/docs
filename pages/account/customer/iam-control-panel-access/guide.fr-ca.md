@@ -1,5 +1,5 @@
 ---
-title : "Comment se connecter à l'espace client OVHcloud en utilisant IAM"
+title : "Comment se connecter à l'espace client OVHcloud en utilisant OVHcloud IAM"
 excerpt: Découvrez comment octroyer les droits minimums nécessaires pour vous connecter à votre espace client
 updated: 2023-07-03
 ---
@@ -34,7 +34,7 @@ Grâce à ces droits, un utilisateur pourra se connecter à l'espace client. Cep
 
 L'interface utilisateur permet de configurer une stratégie avec la configuration suivante :
 
-- Ajouter un `resourceType` « Mon compte ».
+- Ajouter un `resourceType` « OVHcloud customer account ».
 - Ajouter votre compte en tant que ressource.
 - Ajouter les 4 droits listés ci-dessus en tant qu'action.
 

@@ -1,5 +1,5 @@
 ---
-title: Jak zalogować się do Panelu klienta OVHcloud przy użyciu narzędzia IAM (EN)
+title: Jak zalogować się do Panelu klienta OVHcloud przy użyciu narzędzia OVHcloud IAM (EN)
 excerpt: "Find out how to grant the minimum rights required to log to the OVHcloud Control Panel"
 updated: 2023-07-03
 ---
@@ -34,7 +34,7 @@ With these rights, a user will be able to log in to the OVHcloud Control Panel. 
 
 Using the UI, you can set up a policy with the following configuration:
 
-- Add a `resourceType` "My account".
+- Add a `resourceType` "OVHcloud customer account".
 - Add your account as a resource.
 - Add the 4 rights listed above as an action.
 
