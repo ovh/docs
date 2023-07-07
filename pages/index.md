@@ -73,6 +73,7 @@
         + [Public Cloud Block Storage - Shared Responsibility](platform/public-cloud/responsibility-model-block-storage)
         + [Public Cloud Object Storage - Shared Responsibility](cloud/storage/object_storage/s3_object_storage_responsibility_model)
         + [Managed Kubernetes - Responsibility model](platform/kubernetes-k8s/responsibility-model)
+        + [Managed Private Registry - Responsibility model](platform/private-registry/responsibility-model)
         + [Hosted Exchange - Shared Responsibility](web/microsoft-collaborative-solutions/responsibility-model)
         + [Email Pro - Shared Responsibility](web/emails-pro/responsibility_model)
 + Bare Metal Cloud
@@ -348,6 +349,7 @@
             + [Configuring NAT for port redirections with NSX](cloud/private-cloud/nsx-07-configure-nat-redirection)
             + [Load Balancing configuration in NSX](cloud/private-cloud/nsx-09-configure-loadbalancing)
             + [Adding a new Tier-1 Gateway in NSX](cloud/private-cloud/nsx-10-add-new-tier1-gateway)
+            + [Setting up an IPsec Tunnel with NSX](cloud/private-cloud/nsx-12-configure-ipsec)
             + [NSX - FAQ](cloud/private-cloud/nsx-11-faq)
         + [VMware NSX-v](hosted-private-cloud-hosted-private-cloud-powered-by-vmware-nsx-v)
             + [VMware NSX-v - End of Support](cloud/private-cloud/nsx_nsx-v-eos)
@@ -766,6 +768,7 @@
                 + [Managing users and projects](platform/private-registry/managing-users-and-projects)
                 + [FAQ](platform/private-registry/managed-private-registry-faq)
                 + [End Of Life (EOL) Harbor 1.x - How to replicate and migrate your data to Harbor 2.x](platform/private-registry/eol-harbor-1.x)
+                + [Managed Private Registry - Responsibility model](platform/private-registry/responsibility-model)
             + [Tutorials](public-cloud-containers-orchestration-managed-private-registry-tutorials)
                 + [Creating and using a Docker image stored in an OVHcloud Managed Private Registry](platform/private-registry/creating-and-using-a-private-image)
                 + [Using Private Registry with OVHcloud Managed Kubernetes](platform/private-registry/using-private-registry-with-kubernetes)

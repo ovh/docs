@@ -1,12 +1,10 @@
 ---
 title: Mounting HA-NAS via NFS share
 excerpt: Find out how to connect to your HA-NAS using an NFS share
-updated: 2022-12-06
+updated: 2023-07-06
 ---
 
-**Last updated 6th December 2022**
-
-## Objective
+## Objective 
 
 The OVHcloud HA-NAS service allows you to manage file storage that can be accessed over a network.
 
@@ -113,7 +111,7 @@ You can now access your mounted partition at the specified folder.
 >
 > In order to automate the mounting process for each time the server boots, add the following line to the file `/etc/fstab`:
 >
-> `IP_HA-NAS:NFS_PATH /MOUNTING_FOLDER nfs rw 0 0`
+> `IP_HA-NAS:/NFS_PATH /MOUNTING_FOLDER nfs rw 0 0`
 >
 
 ### Fedora
@@ -187,6 +185,49 @@ Once done, click on `Next`{.action}. Click on `Finish`{.action} in the last step
 Your HA-NAS partition is now mounted as a datastore.
 
 ![ESXI](images/esxi4.png){.thumbnail}
+
+### NFSv3/NFSv4
+
+The HA-NAS solution supports NFSv3 and NFSv4 protocols. This section explains how they are used.
+
+**What happens if the NFS version is not specified inside the mount command?**
+
+In this case, your NFS client will try to connect directly to the latest version supported by it.<br>
+But you can also choose whether you prefer to use NFSv3 or NFSv4:
+
+To force the use of NFSv3, you must use the following command:
+
+```bash
+ubuntu@server:~$ sudo mount -t nfs -o vers=3 IP_HA-NAS:/NFS_PATH /MOUNTING_FOLDER
+```
+
+- Example:
+
+```bash
+ubuntu@server:~$ sudo mount -t nfs -o vers=3 10.1.1.1:/zpool-123456/partition01 /mount/ha_nas
+```
+
+To force the use of NFSv4, you must use the following command:
+
+```bash
+ubuntu@server:~$ sudo mount -t nfs -o vers=4 IP_HA-NAS:/NFS_PATH /MOUNTING_FOLDER
+```
+
+- Example:
+
+```bash
+ubuntu@server:~$ sudo mount -t nfs -o vers=4 10.1.1.1:/zpool-123456/partition01 /mount/ha_nas
+```
+
+You can also use the following command to determine which version is used by the current mount:
+
+```bash
+ubuntu@server:~$ nfsstat -m
+```
+
+In the return, the parameter `vers=3` or `vers=4` tells you which protocol is used.
+
+Command usage will be similar for CentOS and Fedora.
 
 ## Go further
 

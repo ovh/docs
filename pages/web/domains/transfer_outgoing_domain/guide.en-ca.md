@@ -1,16 +1,14 @@
 ---
-title: Transferring a domain name to another registrar
-excerpt: Find out how to move a domain name from OVHcloud to a provider of your choice
-updated: 2023-03-10
+title: "Transferring a domain name to another registrar"
+excerpt: "Find out how to move a domain name from OVHcloud to a provider of your choice"
+updated: 2023-07-04
 ---
-
-**Last updated 10th March 2023**
 
 ## Objective
 
-**Domain transfer** refers to the process of moving a registered domain name from one registrar to another. For example, if you have ordered a domain name on our website, OVHcloud is its current registrar. An outgoing domain transfer needs to be initiated by the new registrar. 
+A **domain transfer** refers to the process of moving a domain name from one registrar to another. For example, if you have ordered a domain name on our website, OVHcloud is its current registrar. An outgoing domain transfer must be initiated by the new registrar.
 
-In order to prevent unauthorised domain transfers, domain names are usually locked by having the status *clientTransferProhibited* set. This protection must be lifted in the OVHcloud Control Panel before starting a transfer.
+In order to prevent unauthorised domain transfers, domain names are usually locked, indicated by the status *clientTransferProhibited*. This protection must be lifted in the OVHcloud Control Panel before starting a transfer.
 
 **This guide explains how to prepare your domain name for an outgoing transfer.**
 
@@ -29,12 +27,16 @@ In order to prevent unauthorised domain transfers, domain names are usually lock
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca) with the necessary permissions to manage the domain name (domain administrator)
 - The registration of the domain name in question was at least 60 days ago **and** it has not been transferred or traded (i.e. change of owner) during the last 60 days
 
+> [!primary]
+>
+> If you are the domain name's **owner** but you are currently not able to manage it in the OVHcloud Control Panel, neither by using your own access nor via your domain name's administrative contact, please consult [this guide](/pages/account/customer/managing_contacts#special-case-of-a-domain-owner) first before proceeding.
+>
 
 ## Instructions
 
 > [!warning]
 >
-> The following instructions describe the most common way to transfer a domain name, valid for most Top Level Domains (TLD). However, the specific rules for processes regarding TLDs are solely defined by the appropriate allocation authority i.e. the **registry**. Registrars such as OVHcloud must adhere to these rules and have no influence over registry decisions.
+> The following instructions describe the most common way to transfer a domain name, valid for most Top Level Domains (TLD). However, the specific rules for processes regarding TLDs are solely defined by the appropriate allocation authority i.e. the **registry**. Registrars such as OVHcloud must adhere to these rules and have no influence on registry decisions.
 >
 > The exact procedure for domain transfers may therefore vary, especially in case of some country-code TLDs (ccTLD, such as .lu, .uk, .hk, .ro) and a few special purpose TLDs (.am, .fm, etc.). Transfers might also be prohibited for various reasons, e.g. outstanding payment, abuse case or registry lock. 
 >
@@ -50,29 +52,38 @@ In order to prevent unauthorised domain transfers, domain names are usually lock
 
 Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca) and select `Web Cloud`{.action}. Click `Domain names`{.action}, then choose the domain name concerned.
 
-On the `General information`{.action} tab you can find the "Protection against domain name transfer" slider button under **Security**, set to `Enabled`{.action} by default.
+On the `General information`{.action} tab you can find the `Protection against domain name transfer`{.action} slider button under **Security**, set to `Enabled`{.action} by default.
 
 ![outgoingtransfer](images/outgoing-transfer-step1.png){.thumbnail}
 
 Click on the slider and confirm in the popup window that you want to remove this protection. Allow a few minutes for the status to change to `Disabled`{.action}.
 
-![outgoingtransfer](images/outgoing-transfer-step2.png){.thumbnail}
+> [!primary]
+> 
+> If you encounter the message "**An error occurred when requesting to disable the domain protection (User not granted for this request)**", your customer account does not have sufficient rights to unlock the domain name. 
+>
+> If you encounter the message "**AUTH/INFO code: Authcode is not managed by OVHcloud, contact the registry to claim it**", this means that the transfer code for your domain name cannot be retrieved via your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca).
+> 
+> In both cases, check that your account is the **administrator** contact of the domain name using our guide on [contact management](/pages/account/customer/managing_contacts) then check that the domain name extension can be unlocked from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca).
+> 
+> Some *transfer codes* are directly managed by the *registry* of your domain name extension. A *registry* is an organisation that manages all domain names for a given extension. For example, the **AFNIC** manages all domain names with the extension *.fr*. If this is the case, you must contact the *registry* managing your domain name extension directly to retrieve the *transfer code*.
+>
 
-You can also refresh the page if it seems to take longer.
+![outgoingtransfer](images/outgoing-transfer-step2.png){.thumbnail}
 
 > [!primary]
 >
-> Once the status has changed, the domain name will remain unlocked for seven days. After this period, the protection will automatically turn back on. If you do not request a domain transfer at your new registrar during this time, it will be necessary to unlock the domain again.
+> Once the protection is lifted, the domain name will remain unlocked for seven days. After this period, the protection will be automatically reactivated. If you do not request a domain transfer to your new registrar during this time, it will be necessary to remove the protection again.
 >
 
 ### Step 2: Retrieve the transfer code
 
 > [!warning]
 >
-> Note that it is still possible to unlock and retrieve the transfer code of your domain name after its expiration. According to registry rules, a domain in [redemption period](https://www.icann.org/resources/pages/epp-status-codes-2014-06-16-en) may need to be restored so that it can be transferred. Contact your new registrar for transfer details.
+> Note that it is still possible to unlock and retrieve the transfer code of your domain name after its expiration. According to registry rules, a domain name in the [redemption period](https://www.icann.org/resources/pages/epp-status-codes-2014-06-16-en) may need to be restored so that it can be transferred. Contact your new registrar for transfer details.
 >
 
-Once the status is set to `Disabled`{.action}, a link labelled `AUTH/INFO`{.action} will appear. Clicking on this link will open a window that contains your AUTH/INFO code (also known as transfer key, domain password, AUTH-CODE or EPP-Code).
+Once you have removed the transfer protection, you can retrieve your domain name’s transfer code in the `General information`{.action} tab. Refresh the page if necessary. Click on `AUTH/INFO`{.action} under `Protection against domain name transfer`{.action}. A window displaying your AUTH/INFO code (also known as transfer code, domain password, AUTH-CODE or EPP-Code) will open.
 
 ![outgoingtransfer](images/outgoing-transfer-step3.png){.thumbnail}
 
@@ -90,7 +101,7 @@ You can contact your provider for more information about this process.
 
 > [!warning]
 >
-> If your new registrar requests a new transfer code, re-enable `Transfer protection` for your domain, then disable it again a few minutes later. You can then retrieve the new transfer code.
+> If your new registrar requests a new transfer code, reenable the transfer protection for your domain name, then disable it again a few minutes later. You can then retrieve the new transfer code.
 >
 
 ## Go further
@@ -101,4 +112,4 @@ For specialised services (SEO, development, etc.), contact [OVHcloud partners](h
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-ca/support-levels/).
 
-Join our community of users on <https://community.ovh.com/en/>.
+Join our community of users on <https://community.ovh.com/en/>. 
