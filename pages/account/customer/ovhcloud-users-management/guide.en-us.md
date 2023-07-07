@@ -12,7 +12,7 @@ With OVHcloud, you can create additional users with read or write access to your
 >
 > User management is different to contact management. A user will have an access to all sections of the OVHcloud Control Panel according to the level of rights he's granted.
 >
-> The purpose of contact management is to delegate full management of the administrative, technical and billing aspects of one or more services on your OVHcloud account. For further information on contact management, please refer to [this guide](/pages/account/customer/managing_contact).
+> The purpose of contact management is to delegate full management of the administrative, technical and billing aspects of one or more services on your OVHcloud account. For further information on contact management, please refer to [this guide](/pages/account/customer/managing_contacts).
 >
 
 **This guide details the privileges a user can hold, as well as the method for adding and managing users.**
