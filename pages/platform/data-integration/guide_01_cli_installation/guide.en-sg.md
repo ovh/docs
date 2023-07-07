@@ -1,7 +1,7 @@
 ---
 title: Data Integration - CLI - Installation
 excerpt: Learn how to install the Data Integration CLI
-updated: 2023-06-27
+updated: 2023-07-07
 ---
 
 ## Objective
