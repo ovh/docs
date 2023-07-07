@@ -1,7 +1,7 @@
 ---
 title: Configurer un enregistrement SPF sur son nom de domaine
 excerpt: Découvrez comment configurer un enregistrement SPF sur votre nom de domaine chez OVHcloud
-updated: 2023-06-08
+updated: 2023-07-07
 ---
 
 **Dernière mise à jour le 08/06/2023**
@@ -209,7 +209,7 @@ mydomain.ovh IN TXT "v=spf1 include:mx.ovh.com a:gw.ex-mail.biz ~all"
 
 ### Configuration SPF OVHcloud pour Private Exchange 
 
-Pour l'offre Private Exchange, il est nécessaire de renseigner les adresses IP de votre serveur e-mail. Pour cela, utilisez l'arguments `ip4` pour renseigner l'adresse IPv4 (**A**) et l'argument `ip6` pour l'adresse IPv6 (**AAAA**) de votre serveur Private Exchange.
+Pour l'offre Private Exchange, il est nécessaire de renseigner les adresses IP de votre serveur e-mail. Pour cela, utilisez l'argument `ip4` pour renseigner l'adresse IPv4 (**A**) et l'argument `ip6` pour l'adresse IPv6 (**AAAA**) de votre serveur Private Exchange.
 
 ```bash
 mydomain.ovh IN TXT "v=spf1 ip4:11.22.333.444 ip6:5555:66a7:88:b999::1000:2233 ~all"

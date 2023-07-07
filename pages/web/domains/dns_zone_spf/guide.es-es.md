@@ -1,7 +1,7 @@
 ---
 title: 'Añadir un registro SPF a la configuración del dominio'
 excerpt: 'Cómo añadir un registro SPF a la configuración de un dominio en OVHcloud'
-updated: 2022-09-12
+updated: 2023-07-07
 ---
 
 **Última actualización: 12/09/2022**
@@ -193,7 +193,7 @@ mydomain.ovh IN TXT "v=spf1 include:mx.ovh.com ~all"
 
 ### Configuración SPF OVHcloud para Private Exchange 
 
-Para la solución Private Exchange, es necesario indicar las direcciones IP del servidor de correo. Para ello, utilice el argumento `ip4` para indicar la dirección IP de su servidor Private Exchange.
+Para la solución Private Exchange, es necesario indicar las direcciones IP del servidor de correo. Para ello, utilice el argumento `ip4` para introducir la dirección IPv4 (**A**) y el argumento `ip6` para la dirección IPv6 (**AAAA**) de su servidor Private Exchange.
 
 ```bash
 mydomain.ovh IN TXT "v=spf1 ip4:11.22.33.444 ~all"
@@ -202,14 +202,14 @@ mydomain.ovh IN TXT "v=spf1 ip4:11.22.33.444 ~all"
 Si también utiliza [una solución de correo en alojamiento compartido](#ovhcloudspfvalue), puede añadir el argumento `include:mx.ovh.com` al registro anterior, que proporciona el siguiente valor:
 
 ```bash
-mydomain.ovh IN TXT "v=spf1 ip4:11.22.333.444 include:mx.ovh.com ~all"
+mydomain.ovh IN TXT "v=spf1 ip4:11.22.333.444 ip6:5555:66a7:88:b999::1000:2233 include:mx.ovh.com ~all"
 ```
 
 > [!primary]
 > 
 > Para obtener la dirección IP del servidor Private Exchange, haga clic en `Microsoft`{.action} y seleccione `Exchange`{.action}. y seleccione el servicio Private Exchange correspondiente.
 >
-> En la pestaña `Información general`{.action}, haga clic en el botón `A` del apartado `Diagnóstico del servidor`. En la nueva ventana, seleccione el valor.
+> En la ficha `Información general`{.action}, haga clic en `A` y `AAAA` en la sección `Diagnóstico del servidor`. En la ventana que aparece, lea el valor
 >
 > ![Dominio](images/spf_records_ip.png){.thumbnail}
 

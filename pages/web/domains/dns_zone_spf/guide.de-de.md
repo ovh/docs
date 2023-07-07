@@ -1,7 +1,7 @@
 ---
 title: Einen SPF-Eintrag zur Konfiguration Ihrer Domain hinzufügen
 excerpt: Erfahren Sie hier, wie Sie einen SPF-Eintrag für Ihre OVHcloud Domain konfigurieren
-updated: 2022-09-12
+updated: 2023-07-07
 ---
 
 **Letzte Aktualisierung am 12.09.2022**
@@ -187,23 +187,23 @@ mydomain.ovh IN TXT "v=spf1 include:mx.ovh.com ~all"
 
 ### OVHcloud SPF-Konfiguration für Private Exchange 
 
-Für das Private Exchange Angebot müssen die IP-Adressen Ihres E-Mail-Servers angegeben werden. Verwenden Sie das `ip4`-Argument, um die IP-Adresse Ihres Private Exchange Servers einzutragen.
+Für das Private Exchange Angebot müssen die IP-Adressen Ihres E-Mail-Servers angegeben werden. Verwenden Sie das `ip4`-Argument, , um die IPv4-Adresse (**A**) und das `ip6`-Argument für die IPv6-Adresse (**AAAA**) Ihres Private Exchange Servers anzugeben.
 
 ```bash
-mydomain.ovh IN TXT "v=spf1 ip4:11.22.333.444 ~all"
+mydomain.ovh IN TXT "v=spf1 ip4:11.22.333.444 ip6:5555:66a7:88:b999::1000:2233 ~all"
 ```
 
 Falls Sie zusätzlich einen [Webhosting E-Mail-Dienst verwenden](#ovhcloudspfvalue), können Sie das entsprechende Argument `include:mx.ovh.com` zum SPF-Eintrag hinzufügen. Das Ergebnis sollte dann folgendermaßen aussehen:
 
 ```bash
-mydomain.ovh IN TXT "v=spf1 ip4:11.22.333.444 include:mx.ovh.com ~all"
+mydomain.ovh IN TXT "v=spf1 ip4:11.22.333.444 ip6:5555:66a7:88:b999::1000:2233 include:mx.ovh.com ~all"
 ```
 
 > [!primary]
 > 
-> Um die IP-Adresse des Private Exchange Servers abzurufen, klicken Sie auf `Microsoft`{.action} und dann auf `Exchange`{.action}. Klicken Sie dann auf den Namen des betreffenden Private Exchange Dienstes.
+> Um die IP-Adressen des Private Exchange Servers abzurufen, klicken Sie auf `Microsoft`{.action} und dann auf `Exchange`{.action}. Klicken Sie dann auf den Namen des betreffenden Private Exchange Dienstes.
 >
-> Klicken Sie im Tab `Allgemeine Informationen`{.action} im Bereich `Server` auf `A`. Lesen Sie im neu angezeigten Fenster den Wert ab.
+> Klicken Sie im Tab `Allgemeine Informationen`{.action} im Bereich `Server` auf `A` und das `AAAAA` im Bereich `Serverdiagnose`. Lesen Sie im daraufhin angezeigten Fenster den Wert ab.
 >
 > ![domain](images/spf_records_ip.png){.thumbnail}
 

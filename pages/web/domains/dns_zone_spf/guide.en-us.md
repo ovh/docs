@@ -1,7 +1,7 @@
 ---
 title: Adding an SPF record to the configuration of your domain name
 excerpt: Find out how to configure an SPF record for your OVHcloud domain name
-updated: 2022-09-12
+updated: 2023-07-07
 ---
 
 **Last updated 12th September 2022**
@@ -188,24 +188,23 @@ mydomain.ovh IN TXT "v=spf1 include:mx.ovh.ca ~all"
 
 ### OVHcloud SPF configuration for Private Exchange 
 
-For the Private Exchange solution, you need to enter your email server’s IP addresses. To do this, use the `ip4` argument to enter the IP address of your Private Exchange server.
+For the Private Exchange solution, you need to enter your email server’s IP addresses. To do this, use the `ip4` argument to enter the IPv4 address (**A**) and the `ip6` argument for the IPv6 address (**AAAA**) of your Private Exchange server.
 
 ```bash
-mydomain.ovh IN TXT "v=spf1 ip4:11.22.333.444 ~all"
+mydomain.ovh IN TXT "v=spf1 ip4:11.22.333.444 ip6:5555:66a7:88:b999::1000:2233 ~all"
 ```
 
-If you also use a [shared email service](#ovhcloudspfvalue), you can add the argument `include:mx.ovh.ca` to the SPF record, with the following result:
-
+If you also use a [shared email service](#ovhcloudspfvalue), you can add the argument `include:mx.ovh.com` to the SPF record, with the following result:
 
 ```bash
-mydomain.ovh IN TXT "v=spf1 ip4:11.22.333.444 include:mx.ovh.ca ~all"
+mydomain.ovh IN TXT "v=spf1 ip4:11.22.333.444 ip6:5555:66a7:88:b999::1000:2233 include:mx.ovh.com ~all"
 ```
 
 > [!primary]
 > 
 > To retrieve the IP address of the Private Exchange server, click `Microsoft`{.action}, then `Exchange`{.action}. Next, click on the name of the Private Exchange service concerned.
 >
-> In the `General`{.action} information tab, click the `A` in the `Server` diagnostic section. In the window that pops up, read the value.
+> In the `General Information`{.action} tab, click on the `A` and `AAAA` in the `Server Diagnostics` section. In the window that appears, read the value.
 >
 > ![domain](images/spf_records_ip.png){.thumbnail}
 
