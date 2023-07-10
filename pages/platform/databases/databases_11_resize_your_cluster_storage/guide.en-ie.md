@@ -1,10 +1,12 @@
 ---
 title: Resize your cluster storage
 excerpt:
-updated: 2023-02-15
+updated: 2023-07-10
+routes:
+    canonical: '/pages/platform/databases/databases_11_resize_your_cluster_storage'
 ---
 
-**Last updated 15th February 2023**
+**Last updated 10th July 2023**
 
 ## Objective
 
@@ -15,12 +17,16 @@ Learn how to adjust the storage space of your cluster according to your needs.
 > This feature is available for engines that use storage space.
 >
 
-## Requirements
+## How to increase storage?
 
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
+Available with the OVHcloud [API](https://api.ovhcloud.com/console/) and [Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovhcloud.com/en-ie/)
+
+### Requirements
+
+- Access to your OVHcloud [Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovhcloud.com/en-ie/) or to the [API](https://api.ovhcloud.com/console/)
 - A [Public Cloud project](https://www.ovhcloud.com/en-ie/public-cloud/) in your OVHcloud account.
 
-## Instructions
+### Instructions
 
 To adjust the storage space of your cluster, you must first log in to the OVHcloud Control Panel and open your Public Cloud project. Click `Databases`{.action} in the left navigation bar, select your engine instance then click the `General Information`{.action} tab.
 
@@ -29,6 +35,24 @@ To adjust the storage space of your cluster, you must first log in to the OVHclo
 Click `Add more storage`{.action} and adjust the storage space of your cluster.
 
 ![Add more storage](images/databases_10_resize_your_cluster_storage-20230215132327325.png)
+
+## How to decrease storage?
+
+Currently only available with the OVHcloud [API](https://api.ovhcloud.com/console/)
+
+### Requirements
+
+- Access to the OVHcloud [API](https://api.ovhcloud.com){.external} (create your credentials by consulting [this guide](/pages/account/api/first-steps))
+- A [Public Cloud project](https://www.ovhcloud.com/en-ie/public-cloud/) in your OVHcloud account.
+
+### Instructions
+
+In order to be able to decrease your storage, you must have a threshold of 20% between your current disk space used and the new disk storage (base storage + additional storage)
+
+For instance, if you have a MongoDB with 120 GB of storage and 80 GB of disk space used, you can decrease the storage up to 100GB on that endpoint:
+
+> [!api]
+> @api {PUT} /cloud/project/{serviceName}/database/mongodb/{clusterId}
 
 ## We want your feedback!
 
