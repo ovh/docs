@@ -508,6 +508,7 @@
             + [Creating and configuring an additional disk on an instance](platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance)
             + [Creating a volume from a backup](platform/public-cloud/create-volume-from-snapshot)
             + [Transfer a volume backup from one datacentre to another](platform/public-cloud/transfer_volume_backup_from_one_datacentre_to_another)
+            + [Switch volume type](platform/public-cloud/switch_volume_type)
         + [Tutorials](public-cloud-compute-tutorials)
             + [Configuring additional SSH keys](platform/public-cloud/configuring_additional_ssh_keys)
             + [How to use Terraform](platform/public-cloud/how_to_use_terraform)
