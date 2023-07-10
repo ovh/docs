@@ -1,7 +1,7 @@
 ---
 title: 'Configuring IPv6 on dedicated servers'
 excerpt: 'Find out how to configure IPv6 addresses on our infrastructure'
-updated: 2023-06-21
+updated: 2023-07-04
 ---
 
 **Last updated 21st June 2023**

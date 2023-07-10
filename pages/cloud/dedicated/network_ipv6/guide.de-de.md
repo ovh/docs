@@ -1,7 +1,7 @@
 ---
 title: 'IPv6 auf einem Dedicated Server konfigurieren'
 excerpt: 'Erfahren Sie hier, wie Sie IPv6-Adressen auf unserer Infrastruktur konfigurieren'
-updated: 2023-06-21
+updated: 2023-07-04
 ---
 
 > [!primary]
