@@ -36,7 +36,28 @@ Selon vos besoins, il est possible personnaliser le nom des serveurs DNS de votr
 > Nous vous invitons à suivre précisément les étapes décrites ci-dessous ou à faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) en cas de doute.
 >
 
-### Étape 1 : ajouter les enregistrements « GLUE »
+### Étape 1 : récupérez les serveurs DNS actuellement utilisés par votre nom de domaine
+
+Vous pouvez récupérer les serveurs DNS actuellement utilisés par votre nom de domaine à l'aide de l'outil DNS en ligne [Zonemaster](https://zonemaster.fr/fr/run-test){.external}.
+
+Pour cela, rendez-vous sur le lien [https://zonemaster.fr](https://zonemaster.fr/fr/run-test){.external}, saisissez votre nom de domaine sans les *www* (exemple : *domain.tld*) puis cochez le bouton `Options`{.action} situé juste en dessous du formulaire de saisie du nom de domaine.
+
+Dans les options disponibles, cliquez directement sur le bouton `Récupérer les DNS depuis la zone parente`{.action}.
+
+Un résultat s'affiche :
+
+![glue-zonemaster](images/glue-dns-zonemaster.png){.thumbnail}
+
+Récupérez les *serveurs DNS* et conservez **toutes** leurs adresses IPv4 (sous la forme *X.X.X.X où les *X* sont compris entre *0* et *255*) et IPv6 (les autres IPs qui ne sont pas des IPv4) associées. Vous en aurez besoin pour la suite de ce guide.
+
+Dans notre exemple illustré ci-dessus, le domaine **domain.tld** utilise actuellement les **serveurs DNS** suivants :
+
+- **dnsX1.ovh.net** associé à l'IPv4 *111.222.333.443* et l'IPv6 *0000:00d0:1:0000::1* ;
+- **dnsX2.ovh.net** associé à l'IPv4 *111.222.333.444* et l'IPv6 *0000:00d0:1:0000::2*.
+
+Si besoin et pour plus d'informations, consultez notre tutoriel sur l'outil [Zonemaster](/pages/web/domains/dns_zonemaster)
+
+### Étape 2 : ajouter les enregistrements « GLUE »
 
 Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} puis rendez-vous dans la partie partie `Web Cloud`. Dans la colonne de gauche, cliquez sur `Noms de domaine`{.action} puis choisissez le nom de domaine pour lequel vous souhaitez personnaliser les serveurs DNS. Sur la page qui s'affiche, cliquez l'onglet `GLUE`{.action}.
 
