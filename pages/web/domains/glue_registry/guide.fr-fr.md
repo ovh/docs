@@ -36,7 +36,7 @@ Selon vos besoins, il est possible personnaliser le nom des serveurs DNS de votr
 > Nous vous invitons à suivre précisément les étapes décrites ci-dessous ou à faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) en cas de doute.
 >
 
-### Étape 1 : récupérez les serveurs DNS actuellement utilisés par votre nom de domaine
+### Étape 1 : récupérez les serveurs DNS actuellement utilisés par votre nom de domaine <a name="step1"></a>
 
 Vous pouvez récupérer les serveurs DNS actuellement utilisés par votre nom de domaine à l'aide de l'outil DNS en ligne [Zonemaster](https://zonemaster.fr/fr/run-test){.external}.
 
@@ -82,11 +82,15 @@ Dans la fenêtre qui s'ouvre sur votre écran, complétez les informations deman
 |Informations|Détail|  
 |---|---|
 |Nom du hôte|Personnalisez le nom d'hôte que vous souhaitez utiliser en tant que serveur DNS personnalisé.|
-|IP(s) de destination|Indiquez la ou les adresses IP auxquelles le nom d'hôte doit être relié. Il s'agit de l'adresse IP du serveur DNS actuellement utilisé par votre nom de domaine. Si celui-ci utilise les serveurs DNS d'OVHcloud et que vous n'en connaissez pas l'adresse IP correspondante, utilisez notre outil « [Dig](https://www.ovh.com/fr/support/outils/dig_domain.pl){.external} » afin de la récupérer. Elle apparaîtra dans la partie `ANSWER SECTION` à côté du « A ».|
+|IP(s) de destination|Indiquez la ou les adresses IP (IPv4 et / ou IPv6) auxquelles le nom d'hôte doit être relié. Il s'agit de la ou des adresses IP du serveur DNS actuellement utilisé par votre nom de domaine.|
 
-![glueregistry](images/customize-dns-servers-step2.png){.thumbnail}
+![glueregistry](images/glue-add-glue.png){.thumbnail}
 
-Dans l'image ci-dessus, le « GLUE » que l'on souhaite ajouter en exemple à partir du domaine *mydomain.ovh* est **testglue.mydomain.ovh** ayant pour IP de *serveur DNS cible* **0.0.0.0**.
+Dans l'image ci-dessus et si l'on reprend notre exemple de l'[étape 1](#step1), le « GLUE » que l'on souhaite ajouter ici (à partir du domaine *domain.tld*) est **dns1.domain.tld**. 
+
+On indique pour ce « GLUE » comme adresses IP de *serveur DNS cible* les adresses IP *111.222.333.443* (IPv4) et *0000:00d0:1:0000::1* (IPv6). Ces IPs correspondent à l'un des deux serveurs DNS utilisés pour *domain.tld* (**dnsX1.ovh.net**). 
+
+On ajoute ce « GLUE » pour que **dns1.domain.tld** puisse, à la fin, remplacer le nom de serveur DNS **dnsX1.ovh.net** actuellement utilisé par le nom de domaine *domain.tld*.
 
 Une fois les informations complétées, cliquez sur le bouton `Ajouter`{.action}, prenez connaissance des informations affichées, puis cliquez sur `Valider`{.action}. Répétez cette manipulation autant de fois que nécessaire, selon le nombre de serveurs DNS utilisés par votre nom de domaine.
 
