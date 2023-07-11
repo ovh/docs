@@ -26,11 +26,12 @@ Si vous n'utilisez aucune des fonctionnalités ci-dessus, vous pourrez désactiv
 
 #### Je n'utilise que du VXLAN
 
-Si la seule fonctionnalité que vous utilisez est le VXLAN, le choix suivant s'offre à vous :
+Si la seule fonctionnalité que vous utilisez est le VXLAN, les choix suivants s'offre à vous :
 
-- Migrer vers NSX (voir les [détails](#migration) ci-dessous)
-- Reconfigurer votre réseau afin de remplacer le VXLAN par un [VLAN](/pages/cloud/private-cloud/creation_vlan), en utilisant l’appel API suivant :
+- Migrer vers NSX (voir les [détails](#migration) ci-dessous),
+- Reconfigurer votre réseau afin de remplacer le VXLAN par un [VLAN](/pages/cloud/private-cloud/creation_vlan).
 
+Si vous souhaitez migrer vers des VLAN, pour vous aider à configurer votre réseau, vous pouvez utiliser cet appel API pour générer une correspondance entre VXLAN et VLAN.
 > [!api]
 >
 > @api {POST} /dedicatedCloud/{serviceName}/generateVxlanToVrackMapping
@@ -44,7 +45,8 @@ Si la seule fonctionnalité que vous utilisez est le VXLAN, le choix suivant s'o
 >
 > Retrouvez plus d'informations sur l'utilisation des API OVHcloud dans notre guide « [Premiers pas avec les API OVHcloud](/pages/account/api/first-steps) ».
 
-Par la suite, vous devrez désactiver NSX-v. Vous serez notifié lorsque le processus de désactivation sera disponible.
+Pour créer vos réseaux VLAN, vous pouvez suivre cette documentation : [Création de VLAN](/pages/cloud/private-cloud/creation_vlan).
+Vous devrez ensuite désactiver NSX-v. Vous serez notifié lorsque le processus de désactivation sera disponible.
 
 #### J'utilise certaines des fonctionnalités de NSX-v
 
