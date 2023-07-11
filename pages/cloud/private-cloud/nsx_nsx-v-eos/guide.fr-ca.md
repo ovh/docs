@@ -31,7 +31,7 @@ Si la seule fonctionnalité que vous utilisez est le VXLAN, les choix suivants s
 - Migrer vers NSX (voir les [détails](#migration) ci-dessous),
 - Reconfigurer votre réseau afin de remplacer le VXLAN par un [VLAN](/pages/cloud/private-cloud/creation_vlan).
 
-Si vous souhaitez migrer vers des VLAN, pour vous aider à configurer votre réseau, vous pouvez utiliser cet appel API pour générer une correspondance entre VXLAN et VLAN.
+Si vous souhaitez le migrer vers des VLAN, pour vous aider à configurer votre réseau, vous pouvez utiliser cet appel d'API pour générer une correspondance entre VXLAN et VLAN.
 > [!api]
 >
 > @api {POST} /dedicatedCloud/{serviceName}/generateVxlanToVrackMapping
