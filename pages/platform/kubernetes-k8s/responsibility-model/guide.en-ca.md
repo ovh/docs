@@ -4,7 +4,7 @@ excerpt: 'Shared responsibilities between OVHcloud and the customer'
 updated: 2023-07-06
 ---
 
-The RACI below details shared responsibilities between OVHcloud and the customer for the the Managed Kubernetes service.
+The RACI below details shared responsibilities between OVHcloud and the customer for the Managed Kubernetes service.
 This shared model can help relieve the customer’s operational burden.
 
 ## RACI definition
@@ -12,7 +12,7 @@ This shared model can help relieve the customer’s operational burden.
 | Roles |
 | --- |
 | R: Is in charge of carrying out the process |
-| A: Accountable for  the successful completion of the process|
+| A: Accountable for the successful completion of the process|
 | C: Is consulted during the process |
 | I: Is informed of the results of the process |
 
