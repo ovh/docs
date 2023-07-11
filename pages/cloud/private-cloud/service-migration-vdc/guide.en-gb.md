@@ -4,13 +4,13 @@ routes:
     canonical: '/pages/cloud/private-cloud/service-migration'
 excerpt: Find out how to move your workload from an existing vDC to a new vDC in the same VMware infrastructure
 hidden: true
-updated: 2023-07-05
+updated: 2023-07-11
 ---
 <style>
 .ovh-api-main { background:#fff;}
 </style> 
 
-**This guide explains how to move virtual machines (VM) from a previous source virtual DataCenter (vDC) (DC or SDDC) to a new destination vDC (Essentials or Premier).**
+**This guide explains how to move virtual machines (VM) from a previous source virtual DataCenter (vDC) (PREMIER or SDDC) to a new destination vDC (VMware on OVHcloud).**
 
 > [!warning]
 >
@@ -19,7 +19,12 @@ updated: 2023-07-05
 
 ## Objective
 
-In 2020, OVHcloud has launched 2 new ranges: Essentials and Premier. You can now upgrade from commercial ranges prior to 2019 to the new ranges while keeping the same VMware infrastructure (pcc-123-123-123-123) using Storage Motion and vMotion.
+In 2023, OVHcloud has launched 4 new ranges: 
+- vSphere 
+- Hyperconverged Storage (vSAN)
+- Network Security Virtualization (NSX)
+- Software-Defined Datacenter ( NSX + vSAN)
+You can now upgrade from commercial ranges prior to 2020 to the new ranges while keeping the same VMware infrastructure (pcc-123-123-123-123) using Storage Motion and vMotion.
 
 There are two aspects involved in this process:
 
@@ -28,8 +33,7 @@ There are two aspects involved in this process:
 
 ## Requirements
 
-- a PCC infrastructure (SDDC or DC)
-- a [new or an empty vRack](/pages/cloud/private-cloud/using_private_cloud_in_vrack) added to your PCC infrastructure (SDDC or DC)
+- a PCC infrastructure (PREMIER or SDDC)
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) (`Private Cloud`{.action} in the `Hosted Private Cloud`{.action} section)
 - access to the vSphere Control Panel
 
@@ -108,9 +112,9 @@ This guide will utilise the notions of a **source vDC** and a **destination vDC*
 <a name="design"></a>
 ### Step 1 Design your infrastructure
 
-At the end of step 1, you should have a clear view of which 2020 commercial range you want to upgrade to, as well as which hosts and storage you want to use.
+At the end of step 1, you should have a clear view of which 2023 commercial range you want to upgrade to, as well as which hosts and storage you want to use.
 <a name="premoress"></a>
-#### Step 1.1 Choose between Premier or Essentials
+#### Step 1.1 Choose between  different ranges
 
 As an Hosted Private Cloud VMware customer with host prior to 2020, you want to upgrade to 2020 hosts.
 First, you would need to select a commercial range between [Essentials](https://www.ovhcloud.com/en-gb/managed-bare-metal/) (2018 Intel CPU, no NSX, no certification, network bandwith ~1Gbps) and [Premier](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/) (2020 Intel CPU,NSX mandatory, certifications available, network bandwith ~10Gbps)
