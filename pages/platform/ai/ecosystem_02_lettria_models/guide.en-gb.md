@@ -476,8 +476,7 @@ For the input `I bought an Apple yesterday.`
 
 A Gradio is available on `/demo` or `/gradio`.
 
-![SentimentGradioDemo](images/lettria_sentiment_demo.png){.thumbnail}
-![NERGradioDemo](images/lettria_ner_demo.png)
+![NERGradioDemo](images/lettria_ner_demo.png){.thumbnail}
 
 ### Calling the API in Python
 
@@ -485,7 +484,7 @@ A Gradio is available on `/demo` or `/gradio`.
 
 Install the requests package :
 
-```bash
+```console
 pip install requests
 ```
 
