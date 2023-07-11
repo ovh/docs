@@ -59,9 +59,21 @@ Si besoin et pour plus d'informations, consultez notre tutoriel sur l'outil [Zon
 
 ### Étape 2 : ajouter les enregistrements « GLUE »
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} puis rendez-vous dans la partie partie `Web Cloud`. Dans la colonne de gauche, cliquez sur `Noms de domaine`{.action} puis choisissez le nom de domaine pour lequel vous souhaitez personnaliser les serveurs DNS. Sur la page qui s'affiche, cliquez l'onglet `GLUE`{.action}.
+> [!success]
+>
+> Avant de commencer, sachez que :
+>
+> 1 : Vous pouvez créer des DNS personnalisés directement sur le nom de domaine qui va les utiliser. Par exemple, vous pouvez créer les DNS personnalisés *dns1.domain.tld* et *dns2.domain.tld* pour le nom de domaine *domain.tld*.
+>
+> 2 : Vous pouvez aussi créer des DNS personnalisés sur un nom de domaine pour les utiliser avec un autre nom de domaine. Par exemple, vous pouvez créer les DNS personnalisés *dns1.domain1.tld* et *dns2.domain1.tld* pour le nom de domaine *domain2.tld*. Dans ce deuxième cas, vous devrez récupérer les serveurs DNS et leurs IPs associées par rapport au *domain2.tld*.
+> Dans ce second cas, le *domain1.tld* doit être enregistré chez OVHcloud pour mettre en place les « GLUE » records.
+>
 
-Sur la page qui apparaît, un tableau affiche les enregistrements « GLUE » actuellement configurés chez OVHcloud pour votre nom de domaine. Afin d'ajouter un nouvel enregistrement « GLUE », cliquez sur le bouton `Ajouter`{.action}.
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} puis rendez-vous dans la partie `Web Cloud`. Dans la colonne de gauche, cliquez sur `Noms de domaine`{.action} puis choisissez le nom de domaine que vous utiliserez pour personnaliser les noms des serveurs DNS. 
+
+Sur la nouvelle page, cliquez l'onglet `GLUE`{.action}.
+
+Un tableau affiche alors les enregistrements « GLUE » actuellement configurés chez OVHcloud pour votre nom de domaine (s'il y en a). Afin d'ajouter un nouvel enregistrement « GLUE », cliquez sur le bouton `Ajouter`{.action}.
 
 ![glueregistry](images/customize-dns-servers-step1.png){.thumbnail}
 
