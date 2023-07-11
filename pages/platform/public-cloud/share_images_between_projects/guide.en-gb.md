@@ -1,20 +1,18 @@
 ---
-title: Transfer an instance backup from one Public cloud project to another
-excerpt: Find out how to transfer an instance backup from one Public cloud project to another
-updated: 2023-07-05
+title: Sharing images between Public Cloud Projects
+excerpt: Find out how to share images between Public Cloud Projects using Openstack
+updated: 2023-07-11
 ---
 
 ## Objective
 
-A situation may arise where you need to move an [Instance backup](/pages/platform/public-cloud/save_an_instance) or a [Volume backup](/pages/platform/public-cloud/volume-backup) from one Public cloud project to another, because you would prefer to move to a newly available project.
-
-**This guide will show you how to transfer an Instance backup from one Public cloud project to another while preserving the configuration and state of the Instance.**
+A situation may arise where you need to share an [Instance backup](/pages/platform/public-cloud/save_an_instance) image or a [Volume backup](/pages/platform/public-cloud/volume-backup) image between one or more Public cloud projects.
 
 With Openstack (and especially with glance), it is possible to share an image between projects, even if they don't belong to the same account.
 
 This feature offers many possibilities, but it also has its risks. It is therefore important to understand how it works.
 
-For example, if we want to move an image from Project A to Project B (in the same or different account), the following rules apply:
+For example, if we want to share an image from Project A with Project B (in the same or different account), the following rules apply:
 
 - The image remains physically attached to Project A. Project B only has "access authorization" to this image.
 
@@ -24,6 +22,7 @@ It is therefore important to keep this in mind before engaging in this setup.
 
 For more information, please consult the [Official Openstack documentation](https://docs.openstack.org/image-guide/share-images.html){.external}.
 
+**This guide will show you how to share images between one or more projects while preserving the configuration and state of the image.**
 
 ## Requirements
 
@@ -34,6 +33,7 @@ Before following these steps, it is recommended that you first complete this gui
 You will also need the following:
 
 * a [Public Cloud Instance](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account
+* an [OpenStack user](/pages/platform/public-cloud/create_and_delete_a_user/)
 * administrative (root) access to your instance/operating system via SSH
 
 > [!primary]

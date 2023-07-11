@@ -1,18 +1,18 @@
 ---
-title: "Transférer une image d'un projet Public Cloud à un autre"
-excerpt: "Apprenez à déplacer une image d'un projet Public Cloud à un autre"
-updated: 2023-07-05
+title: "Partager des images entre Projets Public Cloud"
+excerpt: "Découvrez comment partager des images entre des Projets Public Cloud à l'aide d'Openstack"
+updated: 2023-07-11
 ---
 
 ## Objectif
 
-Il peut arriver que vous deviez déplacer une image come celle d'une [Instance backup](/pages/platform/public-cloud/save_an_instance) ou d'un [Volume backup](/pages/platform/public-cloud/volume-backup) vers un autre projet Public Cloud dans le but d'optimiser votre travail.
+Il peut arriver que vous deviez partager une image [Instance backup](/pages/platform/public-cloud/save_an_instance) ou une image [Volume backup](/pages/platform/public-cloud/volume-backup) entre un ou plusieurs projets Public Cloud.
 
 Avec Openstack (et surtout avec Glance), il est possible de partager une image entre plusieurs projets, même s'ils n'appartiennent pas au même compte.
 
 Cette fonctionnalité offre de nombreuses possibilités, mais elle comporte également des risques. Il est donc important de comprendre de quoi il s'agit.
 
-Par exemple, si vous souhaitez déplacer une image d'un projet A vers un projet B (dans le même compte ou dans un compte différent), les règles suivantes s'appliquent :
+Par exemple, si vous souhaitez partager une image d'un projet A avec un projet B (dans le même compte ou dans un compte différent), les règles suivantes s'appliquent :
 
 - L'image reste attachée physiquement au projet A. Le projet B ne dispose que d'une « autorisation d'accès » à cette image.
 
@@ -22,7 +22,7 @@ Il est donc important de garder cela à l'esprit avant de s'engager dans cette c
 
 Pour plus d'informations, veuillez consulter la documentation [officielle Openstack](https://docs.openstack.org/image-guide/share-images.html){.external}.
 
-**Ce guide vous montrera comment transférer une image d'un projet Public Cloud à un autre tout en préservant la configuration et l'état de l'image.**
+**Ce guide vous montrera comment partager des images entre un ou plusieurs projets tout en préservant la configuration et l'état de l'image.**
 
 ## Prérequis
 
@@ -33,6 +33,7 @@ Avant de suivre ces étapes, il est recommandé de compléter d'abord ce guide :
 Vous aurez également besoin :
 
 * Posséder une [Instance Public Cloud](https://www.ovhcloud.com/fr/public-cloud/) dans votre compte OVHcloud
+* Un utilisateur [OpenStack](/pages/platform/public-cloud/create_and_delete_a_user) créé dans votre projet.
 * Disposer d’un accès administrateur (root) à votre instance/sur votre système d'exploitation via SSH.
 
 > [!primary]
