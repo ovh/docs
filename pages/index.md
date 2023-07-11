@@ -868,6 +868,7 @@
             + [Guides](public-cloud-data-analytics-data-integration-guides)
                 + [Data Integration - CLI - Installation](platform/data-integration/guide_01_cli_installation)
                 + [Data Integration - CLI - Commands reference](platform/data-integration/guide_02_cli_commands_reference)
+                + [Data Integration - UI - Visualize workflows and jobs](platform/data-integration/guide_03_ui_visualize)
         + [Data Processing](public-cloud-data-analytics-data-processing)
             + [Concepts](public-cloud-data-analytics-data-processing-concepts)
                 + [Data Processing Overview](platform/data-processing/00_CONCEPTS_Overview)
