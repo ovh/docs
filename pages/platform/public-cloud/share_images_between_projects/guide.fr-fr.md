@@ -1,14 +1,14 @@
 ---
 title: "Partager des images entre Projets Public Cloud"
 excerpt: "Découvrez comment partager des images entre des Projets Public Cloud à l'aide d'Openstack"
-updated: 2023-07-11
+updated: 2023-07-12
 ---
 
 ## Objectif
 
 Il peut arriver que vous deviez partager une image [Instance backup](/pages/platform/public-cloud/save_an_instance) ou une image [Volume backup](/pages/platform/public-cloud/volume-backup) entre un ou plusieurs projets Public Cloud.
 
-Avec Openstack (et surtout avec Glance), il est possible de partager une image entre plusieurs projets, même s'ils n'appartiennent pas au même compte.
+Avec Openstack, il est possible de partager une image entre plusieurs projets, même s'ils n'appartiennent pas au même compte.
 
 Cette fonctionnalité offre de nombreuses possibilités, mais elle comporte également des risques. Il est donc important de comprendre de quoi il s'agit.
 
@@ -38,121 +38,12 @@ Vous aurez également besoin :
 
 > [!primary]
 >
-> Les commandes de ce guide sont basées sur les API `OPENSTACK` et `GLANCE`.
+> Les commandes de ce guide sont basées sur l'API `OPENSTACK`.
 >
 
 ## Instructions
 
-### Avec Glance
-
-#### Partager une image
-
-Tout d'abord, établissez une connexion SSH à votre instance/système d'exploitation, puis exécutez la commande suivante pour répertorier vos images existantes :
-
-```bash
-$ glance image-list
-| 9a0fbdc5-1f4a-4a1c-ad46-8d404a1313ba | pfsense |
-```
-
-> [!warning]
-> 
-> Pour être partagée, une image doit d'abord être mise en "visibility shared".
->
-
-```bash
-$ glance image-update --visibility shared <Image_UUID>
-```
-
-Une fois fait, l'image peut maintenant être partagée entre deux projets.
-
-### Ajouter un projet à une image
-
-L'étape suivante consiste à ajouter l'UUID d'un autre projet comme membre de l'image. Dans notre exemple ci-dessous, nous ajoutons l'UUID du « Projet B ».
-
-
-```bash
-$ glance member-create <Image_UUID> <UUID_Project_B>
-+--------------------------------------+--------------------------------------+---------+
-| Image ID | Member ID | Status |
-+--------------------------------------+--------------------------------------+---------+
-| 9a0fbdc5-1f4a-4a1c-ad46-8d404a1313ba | <UUID_Project_B> | pending |
-+--------------------------------------+--------------------------------------+---------+
-```
-
-Une fois cela fait, vérifiez la demande sur le projet B :
-
-```bash
-$ glance member-list <Image_UUID>
-+--------------------------------------+----------------------------------+----------+
-| Image ID | Member ID | Status |
-+--------------------------------------+----------------------------------+----------+
-| 9a0fbdc5-1f4a-4a1c-ad46-8d404a1313ba | <UUID_Project_B> | pending |
-+--------------------------------------+----------------------------------+----------+
-```
-
-Si la demande de partage est en `attente`, vous devez l'accepter :
-
-```bash
-$ glance member-update 9a0fbdc5-1f4a-4a1c-ad46-8d404a1313ba <UUID_Project_B> accepted
-+--------------------------------------+----------------------------------+----------+
-| Image ID | Member ID | Status |
-+--------------------------------------+----------------------------------+----------+
-| 9a0fbdc5-1f4a-4a1c-ad46-8d404a1313ba | <UUID_Project_B> | accepted |
-+--------------------------------------+----------------------------------+----------+
-```
-
-Une fois l'opération terminée, vérifiez que vous pouvez voir et accéder à l'image :
-
-```bash
-$ glance image-show 9a0fbdc5-1f4a-4a1c-ad46-8d404a1313ba
-+------------------+----------------------------------------------------------------------------------+
-| Property | Value |
-+------------------+----------------------------------------------------------------------------------+
-| checksum | 1b19c9e5bdd36b9010de0164dd8b245e |
-| container_format | bare |
-| created_at | 2018-05-08T15:38:50Z |
-| direct_url | swift+config://ref1/glance/9a0fbdc5-1f4a-4a1c-ad46-8d404a1313ba |
-| disk_format | raw |
-| id | 9a0fbdc5-1f4a-4a1c-ad46-8d404a1313ba |
-| locations | [{"url": "swift+config://ref1/glance/9a0fbdc5-1f4a-4a1c-ad46-8d404a1313ba", |
-| | "metadata": {}}] |
-| min_disk | 0 |
-| min_ram | 0 |
-| name | pfsense |
-| owner | 35c9ee22e5c84c1097a5652b0abcbab3 |
-| protected | False |
-| size | 10737418240 |
-| status | active |
-| tags | [] |
-| updated_at | 2018-05-08T15:53:57Z |
-| virtual_size | Not available |
-| visibility | private |
-+------------------+----------------------------------------------------------------------------------+
-```
-
-Sur le projet A, vous pouvez :
-
-#### Vérifier tous les membres d'une image
-
-```bash
-$ glance member-list --image-id <image>
-+--------------------------------------+--------------------------------------+----------+
-| Image ID                             | Member ID                            | Status   |
-+--------------------------------------+--------------------------------------+----------+
-| 9a0fbdc5-1f4a-4a1c-ad46-8d404a1313ba | <project C>                          | pending  |
-| 9a0fbdc5-1f4a-4a1c-ad46-8d404a1313ba | <project B>                          | accepted |
-+--------------------------------------+--------------------------------------+----------+
-```
-
-#### Supprimer un membre d'une image/annuler le partage d'une image
-
-```bash
-$ glance member-delete <image> <UUID_Projet_A_Supprimer>
-```
-
-### Avec Openstack 
-
-#### Partager une image
+### Partager une image
 
 Tout d'abord, établissez une connexion SSH à votre instance/système d'exploitation, puis exécutez la commande suivante pour répertorier vos images existantes :
 
@@ -171,7 +62,7 @@ $ openstack image list --private
 $ openstack image set --shared <Image_UUID>
 ```
 
-### Ajouter un projet à une image
+### Ajouter un projet à une Image
 
 L'étape suivante consiste à ajouter l'UUID d'un autre projet comme membre de l'image. Dans notre exemple ci-dessous, nous ajoutons l'UUID du « Projet B ».
 
@@ -242,7 +133,7 @@ $ openstack image show 9a0fbdc5-1f4a-4a1c-ad46-8d404a1313ba
 +------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ```
 
-#### Supprimer un membre d'une image/annuler le partage d'une image
+### Supprimer un membre d'une Image ou annuler le partage d'une Image
 
 ```bash
 $ openstack image remove project <image> <UUID_Projet_A_Supprimer>
@@ -252,4 +143,4 @@ $ openstack image remove project <image> <UUID_Projet_A_Supprimer>
 
 [Transférer la sauvegarde d'une instance d'un datacenter à un autre](/pages/platform/public-cloud/transfer_instance_backup_from_one_datacentre_to_another).
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/en/>.
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
