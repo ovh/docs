@@ -14,7 +14,7 @@ This shared model can help relieve the customer’s operational burden.
 | Roles |
 | --- |
 | R: Is in charge of carrying out the process |
-| A: Accountable for  the successful completion of the process|
+| A: Accountable for the successful completion of the process|
 | C: Is consulted during the process |
 | I: Is informed of the results of the process |
 
