@@ -20,15 +20,15 @@ Il s’agit généralement de la méthode de connexion la plus sûre et la plus 
 - Accès administrateur (root) via SSH
 
 > [!primary]
-> Ce guide ne s'applique pas aux installations **Windows Server** standard, car elles reposent sur le protocole RDP (`Remote Desktop Protocol`) pour les connexions. Les connexions SSH sont cependant utilisées pour le mode rescue d’OVHcloud. Plus d'informations dans la section [Aller plus loin](#gofurther) de ce guide.
+> Ce guide ne s'applique pas aux installations **Windows Server** standard, car elles reposent sur le `Remote Desktop Protocol` (RDP) pour les connexions. Les connexions SSH sont cependant utilisées pour le mode rescue d’OVHcloud. Plus d'informations dans la section [Aller plus loin](#gofurther) de ce guide.
 >
 
 ## Instructions
 
 N’oubliez pas de consulter nos guides « Premiers pas » : <a name="getstarted"></a>
 
-- Pour [un serveur dédié](/pages/cloud/dedicated/getting-started-with-dedicated-server)
-- Pour [un serveur dédié de la gamme **Eco**](/pages/cloud/dedicated/getting-started-with-dedicated-server-eco)
+- Pour un [serveur dédié](/pages/cloud/dedicated/getting-started-with-dedicated-server)
+- Pour un [serveur dédié de la gamme **Eco**](/pages/cloud/dedicated/getting-started-with-dedicated-server-eco)
 - Pour un [VPS](/pages/cloud/vps/starting_with_a_vps)
 
 Nous vous invitons à consulter également le guide de présentation [SSH](/pages/cloud/dedicated/ssh_introduction).
