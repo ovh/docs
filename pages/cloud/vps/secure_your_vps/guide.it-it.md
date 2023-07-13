@@ -58,7 +58,7 @@ sudo apt upgrade
 
 Questa operazione deve essere effettuata regolarmente per mantenere un sistema aggiornato.
 
-### Modifica la porta di default SSH
+### Modifica la porta di default SSH <a name="changesshport"></a>
 
 Una delle prime operazioni da effettuare sul tuo server è la configurazione della porta di ascolto del servizio SSH. Di default, viene definita sulla **porta 22**, quindi i tentativi di hack del server da parte dei robot indirizzeranno questa porta in priorità.
 Modificare questo parametro a vantaggio di una porta diversa è una misura semplice per rafforzare la protezione del tuo server contro gli attacchi automatici.

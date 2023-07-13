@@ -56,7 +56,7 @@ sudo apt upgrade
 
 Cette opération doit être effectuée régulièrement afin de maintenir un système à jour.
 
-### Modifier le port d'écoute SSH par défaut
+### Modifier le port d'écoute SSH par défaut <a name="changesshport"></a>
 
 L'une des premières actions à effectuer sur votre serveur est la configuration du port d'écoute du service SSH. Par défaut, celui-ci est défini sur le **port 22** donc les tentatives de hack du serveur par des robots vont cibler ce port en priorité.
 La modification de ce paramètre, au profit d'un port différent, est une mesure simple pour renforcer la protection de votre serveur contre les attaques automatisées.
