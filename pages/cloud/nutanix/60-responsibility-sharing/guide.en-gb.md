@@ -82,46 +82,52 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
 | Manage access to the OVHcloud Control Panel  | RA | I |
+| Manage users' accesses to Nutanix cluster ( ex : Prism Administration interface, SSH, CLI) | RA |  |
+| Manage users' accesses and security policy on IS  | RA |  |
+| Managing physical access to infrastructures for OVHcloud teams | I | RA |
 
-| Manage access and security policy for Service users | RA |  |
-| Managing physical and logical access to infrastructures for OVHcloud teams | I | RA |
-| Manage access to the manager | RA | I |
 
 ##### **3.1.3. Monitoring**
 
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
 | Monitor the proper functioning of physical devices (utilities) supporting the Dedicated Server  | I | RA |
-| Monitor physical resource performance | RA | R |
-| Process and clear alarms from managed devices on the Dedicated Server  | I | RA |
-| Keep logs of the information system hosted on the Dedicated Server | RA |  |
-| Keep logs of the Control Plane that monitors the Dedicated Server |  | RA |
-| Monitor the performance of the services installed on the Dedicated Server. | RA |  |
+| Monitor physical resource performance | RA | CI |
+| Keep logs related to administration activities of the cluster made available with Nutanix tools (ex : Prism, SSH, CLI) or with any external tool and those of hosted IS | RA |  |
+| Keep logs of the control plane that monitor and administrate Nutanix service|  | RA |
+| Monitor the performance of Nutanix cluster (inicdent alerts, usage report, etc .) and other softwares installed by the client on the IS | RA |  |
+| Monitor the performance of IPLB service usage integrated to Nutanix offer (using graphs perfomances) | RA | I |
+
 
 ##### **3.1.4. Storage**
 
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
 | Create, modify, control, restore, delete backup jobs | RA |  |
-| Managing content hosted on infrastructures | RA |  |
-| Ensuring data continuity and sustainability | RA |  |
-| Carry out maintenance on the storage and backup devices provided by OVHcloud |  | RA |
+| Manage content hosted on infrastructures | RA |  |
+| Manage data continuity and sustainability | RA |  |
+| Carry out maintenance on the storage and backup tools installed by the client | RA |  |
+| Carry out maintenance on the storage and backup devices provided by OVHcloud | CI | RA |
 
 ##### **3.1.5. Connectivity**
 
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Ensure the functioning of automatic network management systems (architecture, implementation, software and hardware maintenance for deployed public and private networks, primary IP of dedicated server) | I | RA |
-| Manage IP addressing plan | RA | I |
+| Manage the functioning of automatic network management systems (architecture, implementation, software and hardware maintenance for deployed public and private networks, primary IP of dedicated server) | I | RA |
+| Implement a network architecture adapted as needed (vRack, IPLB, access to public and private networks, etc.) | RA | I |
+| Manage private IP addressing plan of the client on Nutanix cluster | RA |  |
+| Manage public IP addressing plan provided by OVHcloud Nutanix service | CI | RA |
 
 ##### **3.1.6. Management**
 
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Ensure the security of management infrastructures (API, control plane) | I | RA |
-| Ensure the security of Nutanix software, software and Middleware installed on Dedicated Servers |RA |  |
-| Managing the security of data stored by the Customer on Dedicated Servers | RA |  |
-| Managing the physical security of equipment and infrastructures hosted at OVHcloud | I | RA |
+| Provide inventory of infrastructures and services used | I | RA |
+| Manage the security of management infrastructures (control plane) |  | RA |
+| Manage the security of Nutanix software, softwares and Middleware installed on the cluster |RA |  |
+| Manage the security of data stored by the Customer on the infrastructure| RA |  |
+| Manage the physical security of equipment and infrastructures hosted at OVHcloud | I | RA |
+| Maintain Nutanix software solution and its extensions | RA |  |
 
 ##### **3.1.7. Business continuity**
 
@@ -136,19 +142,20 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Replace the defective hardware elements of the Dedicated Server | I | RA |
-| Open tickets for incidents related to a hardware malfunction on the Dedicated Server |RA | I |
-| Open Nutanix software incident tickets |RA | I |
-| Handle hardware and network incidents (tickets and telephone contacts) | AI |RA |
-| Handle Nutanix software incidents (tickets and phone contacts) | AI |RA |
+| Open tickets for incidents related to Nutanix software (in case of subscription to packaged offer and dysfunction of Nutanix softawre)  |RA | I |
+| Open tickets for incidents related to Bring Your Own licence offer (related to dysfunction of ardware elements in the Dedicated Server)   |RA | I |
+| Replace the defective hardware elements of the Dedicated Server following incident qualification | I | RA |
 | Process other incidents |RA |  |
-| Restore machine backups |RA |  |
+| Restore virtual machine backups |RA |  |
 
 #### **3.2.2. Changes**
 
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Deploy patches, update and configure Nutanix |RA |  |
+| Deploy patches, update and configure the Nutanix software, softwares, middlewares and hosted IS |RA |  |
+| Provide the new firmware version of the dedicated server | I | RA |
+| Update virtual machines |RA |  |
+| Approve change requests of defective hardware elements submitted by OVHcloud  |A | R |
 | Schedule changes requested by customer |RA | RI |
 
 ### 4. Reversibility
@@ -157,14 +164,14 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Schedule reversibility operations |RA |  |
+| Schedule reversibility operations |RA | I |
 | Choose fallback infrastructures |RA |  |
 
 #### 4.2. Data recovery
 
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Manage reversibility operations |RA |  |
+| Export virtual machines from any source compatible with Nutanix technology (VMware, Hyper-V, AHV) manually or by using Nutanix Move tool |RA | C |
 | Migrate/transfer data |RA |  |
 
 ### 5. End of service
@@ -173,13 +180,12 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Terminate service contract |RA | I |
-| Uncommission client-related configurations |  |RA |
+| Uncommission client-related configurations following contrat termination | I |RA |
 
 #### 5.2. Data destruction
 
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Securely destroy data on storage media |  |RA |
+| Securely erase data on storage media |  |RA |
 | Destroy storage media that have reached their end of life or on which the secure destruction process generates errors |  |RA |
 | Provide a certificate of destruction (upon request) | I |RA |
