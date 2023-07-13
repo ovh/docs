@@ -81,6 +81,8 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
+| Manage access to the OVHcloud Control Panel  | RA | I |
+
 | Manage access and security policy for Service users | RA |  |
 | Managing physical and logical access to infrastructures for OVHcloud teams | I | RA |
 | Manage access to the manager | RA | I |
