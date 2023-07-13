@@ -4,10 +4,10 @@ excerpt: "Partage de responsabilité entre OVHcloud et le client pour l'utilisat
 kb: Hosted Private Cloud
 category_l1: Nutanix on OVHcloud
 category_l2: Responsibility sharing
-updated: 2022-04-07
+updated: 2023-07-13
 ---
 
-**Dernière mise à jour le 03/07/2023**
+**Dernière mise à jour le 13/07/2023**
 
 ## Objectif
 
@@ -31,7 +31,7 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 | Choisir le pack de licences Nutanix, mis à disposition par OVHcloud, en fonction des besoins ou importer ses propres Licences  | RA | I |
 | Choisir le modèle et la gamme du serveur dédié selon les besoins et critères définis  | RA | I |
 | Choisir les options de configuration des serveurs dédiés en fonction des besoins | RA | I |
-| Choisir la configuration des options supplémentaires  du cluster Nutanix en  fonction des besoins (Fault Tolerance Domain,  Replication Factor,  Fonctionnalité Erasure Coding ) | RA | I |
+| Choisir la configuration des options supplémentaires du cluster Nutanix en fonction des besoins (Fault Tolerance Domain, Replication Factor, Fonctionnalité Erasure Coding) | RA | I |
 
 
 ### 2. Mise à disposition du service
@@ -49,7 +49,7 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 
 | **Activité** | **Client** | **OVHcloud** |
 | --- | --- | --- |
-| Importer des machines virtuelles depuis une source compatible avec la solution Nutanix (VMware, Hyper-V, AHV) manuellement ou via l'outil Nutanix Move  | RA | I |
+| Importer des machines virtuelles depuis une source compatible avec la solution Nutanix (VMware, Hyper-V, AHV) manuellement ou via l'outil Nutanix Move | RA | I |
 
 
 #### 2.3. Installation du SI client
@@ -58,9 +58,9 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 | --- | --- | --- |
 | Créer de nouvelles machines virtuelles | RA |  |
 | Acheter et détenir les licences et droits d’utilisation pour les OS | RA |  |
-| Installer l'OS des machines virtuelles  | RA |  |
+| Installer l'OS des machines virtuelles | RA |  |
 | Installer et configurer les softwares et middlewares sur le cluster | RA |  |
-| Modifier les configurations par défaut du réseau afin de sécuriser les connexions internes et externes au cluster  | RA |  |
+| Modifier les configurations par défaut du réseau afin de sécuriser les connexions internes et externes au cluster | RA |  |
 
 ### 3. Utilisation du service
 
@@ -74,16 +74,16 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 | Configurer et administrer la solution Nutanix | RA |  |
 | Administrer les applicatifs installés sur la couche de virtualisation Nutanix  | RA |  |
 | Demander le remplacement d'un matériel défectueux sur le Serveur Dédié | RA | CI |
-| Réaliser l’ajout / suppression du matériel défectueux  sur le Serveur Dédié  | CI | RA |
+| Réaliser l’ajout / suppression du matériel défectueux  sur le Serveur Dédié | CI | RA |
 | Gérer les risques liés au SI installé | RA |  |
-| Déployer et s'assurer du bon fonctionnement  de  la politique de backups sur le SI du client  | RA |  |
+| Déployer et s'assurer du bon fonctionnement de la politique de backups sur le SI du client | RA |  |
 
 ##### **3.1.2. Gestion des accès**
 
 | **Activité** | **Client** | **OVHcloud** |
 | --- | --- | --- |
 | Gérer des accès à l'espace Client OVHcloud (Control Plane) | RA | I |
-| Gérer les accès des utilisateurs au cluster Nutanix (ex : interface d'administration Prism, SSH, CLI)  | RA |  |
+| Gérer les accès des utilisateurs au cluster Nutanix (ex : interface d'administration Prism, SSH, CLI) | RA |  |
 | Gérer les accès et la politique de sécurité des utilisateurs du SI | RA |  |
 | Gérer les accès physiques et logiques des équipes OVHcloud aux infrastructures | I | RA |
 
@@ -94,7 +94,7 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 | --- | --- | --- |
 | Surveiller le bon fonctionnement des dispositifs physiques (utilités) en support du Serveur Dédié | I | RA |
 | Suivre les performances des ressources physiques | RA | CI |
-| Conserver les logs d'administration du cluster Nutanix rendus disponibles via les différents outils Nutanix (ex : Prism, SSH, CLI) ou via des outils tiers  et du SI hébergé  | RA |  |
+| Conserver les logs d'administration du cluster Nutanix rendus disponibles via les différents outils Nutanix (ex : Prism, SSH, CLI) ou via des outils tiers  et du SI hébergé | RA |  |
 | Conserver les logs du Control Plane qui supervise et administre le service Nutanix on OVHcloud |  | RA |
 | Suivre les performances du cluster Nutanix (alertes incidents, rapport d'utilisation, etc ..) et autres  logiciels installés par le client sur son SI | RA |  |
 | Suivre les performances utilisation du service IPLB intégré à l'offre Nutanix on OVHcloud (via les graphiques de performance) | RA | I |
@@ -108,15 +108,15 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 | Gérer le contenu hébergé sur les infrastructures | RA |  |
 | Gérer la continuité et la durabilité des données | RA |  |
 | Réaliser la maintenance des dispositifs de stockage et de sauvegarde mis en place par le client | RA |  |
-| Réaliser la maintenance des dispositifs de stockage et de sauvegarde mis à disposition par OVHcloud (hors intégrité des sauvegardes)  | CI | RA |
+| Réaliser la maintenance des dispositifs de stockage et de sauvegarde mis à disposition par OVHcloud (hors intégrité des sauvegardes) | CI | RA |
 
 ##### **3.1.5. Connectivité**
 
 | **Activité** | **Client** | **OVHcloud** |
 | --- | --- | --- |
 | Gérer le fonctionnement des systèmes automatiques de gestion du réseau (architecture, mise en oeuvre, maintenance logicielle et matérielle pour les réseaux publics et privés déployés, IP primaire du serveur dédié) | I | RA |
-| Mettre en place une architecture réseau adaptée aux besoins (vrack, IPLB, accès réseaux privés et publics, etc ...)  | RA | I |
-| Gérer le plan d’adressage IP privé du client au niveau du Cluster Nutanix  | RA |  |
+| Mettre en place une architecture réseau adaptée aux besoins (vrack, IPLB, accès réseaux privés et publics, etc...) | RA | I |
+| Gérer le plan d’adressage IP privé du client au niveau du Cluster Nutanix | RA |  |
 | Gérer le plan d’adressage IP public fournit avec le service Nutanix on OVHcloud | CI | RA |
 
 ##### **3.1.6. Gestion**
@@ -125,10 +125,10 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 | --- | --- | --- |
 | Tenir un inventaire des dispositifs fournis par OVHcloud | I | RA |
 | Gérer la sécurité des infrastructures de gestion (control plane) |  | RA |
-| Gérer la sécurité du logiciel Nutanix, des Softwares et Middlewares installés sur le cluster  | RA |  |
-| Gérer la sécurité des données déposées par le Client sur son infrastructure| RA |  |
+| Gérer la sécurité du logiciel Nutanix, des Softwares et Middlewares installés sur le cluster | RA |  |
+| Gérer la sécurité des données déposées par le Client sur son infrastructure | RA |  |
 | Gérer la sécurité physique des équipements et infrastructures hébergés chez OVHcloud | I | RA |
-| Gérer la maintenance de la solution Nutanix et ses extensions| RA |  |
+| Gérer la maintenance de la solution Nutanix et ses extensions | RA |  |
 
 ##### **3.1.7. Continuité d'activité**
 
@@ -143,8 +143,8 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 
 | **Activité** | **Client** | **OVHcloud** |
 | --- | --- | --- |
-| Ouvrir les tickets d'incidents relatifs au logiciel Nutanix (en cas de souscription à  l'offre offre packagée et de  dysfonctionnement sur le logiciel Nutanix)  | RA | I |
-| Ouvrir les tickets d'incidents relatifs à l'offre Bring your Own Licence  (lié au un dysfonctionnement  matériel du Serveur Dédié ) | RA | I |
+| Ouvrir les tickets d'incidents relatifs au logiciel Nutanix (en cas de souscription à l'offre packagée et de dysfonctionnement sur le logiciel Nutanix) | RA | I |
+| Ouvrir les tickets d'incidents relatifs à l'offre Bring your Own Licence (lié au un dysfonctionnement matériel du Serveur Dédié ) | RA | I |
 | Remplacer les éléments matériels défectueux du Serveur Dédié suite à la qualification de l'incident | I | RA |
 | Traiter les autres incidents | RA |  |
 | Restaurer les sauvegardes de la machine virtuelle | RA |  |
@@ -172,7 +172,7 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 
 | **Activité** | **Client** | **OVHcloud** |
 | --- | --- | --- |
-| Exporter les machines virtuelles vers des infrastructures compatibles avec la solution Nutanix ( VMware, Hyper-V, AHV  manuellement ou via l'outil Nutanix Move  | RA | C |
+| Exporter les machines virtuelles vers des infrastructures compatibles avec la solution Nutanix (VMware, Hyper-V, AHV)  manuellement ou via l'outil Nutanix Move  | RA | C |
 | Migrer / transférer les données | RA |  |
 
 ### 5. Fin de service
