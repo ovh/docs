@@ -143,8 +143,8 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 
 | **Activité** | **Client** | **OVHcloud** |
 | --- | --- | --- |
-| Ouvrir les tickets d'incidents relatif au logiciel Nutanix (en cas de souscription à  l'offre offre packagée en cas de  dysfonctionnement sur le logiciel Nutanix)  | RA | I |
-| Ouvrir les tickets d'incidents relatif à l'offre Bring your Own Licence  (lié au un dysfonctionnement  matériel du Serveur Dédié ) | RA | I |
+| Ouvrir les tickets d'incidents relatifs au logiciel Nutanix (en cas de souscription à  l'offre offre packagée en cas de  dysfonctionnement sur le logiciel Nutanix)  | RA | I |
+| Ouvrir les tickets d'incidents relatifs à l'offre Bring your Own Licence  (lié au un dysfonctionnement  matériel du Serveur Dédié ) | RA | I |
 | Remplacer les éléments matériels défectueux du Serveur Dédié suite à la qualification de l'incident | I | RA |
 | Traiter les autres incidents | RA |  |
 | Restaurer les sauvegardes de la machine virtuelle | RA |  |
