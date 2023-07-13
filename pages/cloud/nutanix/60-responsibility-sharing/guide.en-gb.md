@@ -4,7 +4,7 @@ excerpt: "Shared responsibility between OVHcloud and the customer for the use of
 kb: Hosted Private Cloud
 category_l1: Nutanix on OVHcloud
 category_l2: Responsibility sharing
-updated: 2022-07-13
+updated: 2023-07-13
 ---
 
 **Last updated 13th July 2023**
@@ -17,7 +17,7 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 | Roles |
 | --- |
 | R: Is in charge of carrying out the process |
-| A: is Accountable for the successful completion of the process |
+| A: Is Accountable for the successful completion of the process |
 | C: Is consulted during the process |
 | I: Is informed of the results of the process |
 
@@ -30,7 +30,7 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 | Learn about the capabilities and limitations of the Services detailed in the OVHcloud documentation (web site, Particular Conditions, etc ..)| RA | CI |	
 | Choose the location of your Nutanix cluster | RA | I |
 | Choose Nutanix licence pack provided by OVHcloud following needs or import your own licences | RA | I |
-| Choose the model et range of dedicated servers following needs and defined criteria | RA | I |
+| Choose the model and range of dedicated servers following needs and defined criteria | RA | I |
 | Choose dedicated server configuration options as needed | RA | I |
 | Choose additionnal Nutanix cluster configuration options as needed (Fault Tolerance Domain,  Replication Factor, Erasure Coding feature) | RA | I |
 
@@ -59,7 +59,7 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 | Purchase and own the licenses and rights of use for OS  | RA |  |
 | Install OS on virtual machines | RA |  |
 | Install and configure softwares and middlewares on the cluster | RA |  |
-| Modify default network configurations to secure internal and external connexions of the cluster | RA |  |
+| Modify default network configurations to secure internal and external cluster connections | RA |  |
 
 ### 3. Service usage
 
@@ -75,7 +75,7 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 | Request the replacement of defective hardware on the Dedicated Server | RA | CI |
 | Add/remove options/hardware on the Dedicated Server | CI | RA |
 | Manage risks of IS installed  | RA |  |
-| Deploy and ensure the functioning ofthe backup policy in client's IS   | RA |  |
+| Deploy and ensure the functioning of the backup policy in client's IS   | RA |  |
 
 ##### **3.1.2. Access management**
 
@@ -94,9 +94,9 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 | Monitor the proper functioning of physical devices (utilities) supporting the Dedicated Server  | I | RA |
 | Monitor physical resource performance | RA | CI |
 | Keep logs related to administration activities of the cluster made available with Nutanix tools (ex : Prism, SSH, CLI) or with any external tool and those of hosted IS | RA |  |
-| Keep logs of the control plane that monitor and administrate Nutanix service|  | RA |
-| Monitor the performance of Nutanix cluster (inicdent alerts, usage report, etc .) and other softwares installed by the client on the IS | RA |  |
-| Monitor the performance of IPLB service usage integrated to Nutanix offer (using graphs perfomances) | RA | I |
+| Keep logs of the Control Plane that monitors and administrate Nutanix service|  | RA |
+| Monitor the performance of Nutanix cluster (incident alerts, usage report, etc.) and other softwares installed by the client on the IS | RA |  |
+| Monitor the performance of IPLB service usage integrated into the Nutanix offer (using performance graphs) | RA | I |
 
 
 ##### **3.1.4. Storage**
@@ -115,7 +115,7 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 | --- | --- | --- |
 | Manage the functioning of automatic network management systems (architecture, implementation, software and hardware maintenance for deployed public and private networks, primary IP of dedicated server) | I | RA |
 | Implement a network architecture adapted as needed (vRack, IPLB, access to public and private networks, etc.) | RA | I |
-| Manage private IP addressing plan of the client on Nutanix cluster | RA |  |
+| Manage private IP addressing plan of the client on the Nutanix cluster | RA |  |
 | Manage public IP addressing plan provided by OVHcloud Nutanix service | CI | RA |
 
 ##### **3.1.6. Management**
@@ -143,7 +143,7 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
 | Open tickets for incidents related to Nutanix software (in case of subscription to packaged offer and dysfunction of Nutanix softawre)  |RA | I |
-| Open tickets for incidents related to Bring Your Own licence offer (related to dysfunction of ardware elements in the Dedicated Server)   |RA | I |
+| Open tickets for incidents related to Bring Your Own licence offer (related to dysfunction of hardware elements in the Dedicated Server)   |RA | I |
 | Replace the defective hardware elements of the Dedicated Server following incident qualification | I | RA |
 | Process other incidents |RA |  |
 | Restore virtual machine backups |RA |  |
@@ -180,7 +180,7 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Uncommission client-related configurations following contrat termination | I |RA |
+| Uncommission client-related configurations following contract termination | I |RA |
 
 #### 5.2. Data destruction
 
