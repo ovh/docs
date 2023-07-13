@@ -4,10 +4,10 @@ excerpt: "Shared responsibility between OVHcloud and the customer for the use of
 kb: Hosted Private Cloud
 category_l1: Nutanix on OVHcloud
 category_l2: Responsibility sharing
-updated: 2022-04-07
+updated: 2022-07-13
 ---
 
-**Last updated 07th April 2022**
+**Last updated 13th July 2023**
 
 ## Objective
 
@@ -17,7 +17,7 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 | Roles |
 | --- |
 | R: Is in charge of carrying out the process |
-| A: Guarantees the successful completion of the process |
+| A: is Accountable for the successful completion of the process |
 | C: Is consulted during the process |
 | I: Is informed of the results of the process |
 
@@ -27,10 +27,12 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Choose the location of your dedicated servers | RA | I |
-| Choose Nutanix licence pack as needed | RA | I |
-| Sizing dedicated servers according to needs | RA | I |
+| Learn about the capabilities and limitations of the Services detailed in the OVHcloud documentation (web site, Particular Conditions, etc ..)| RA | CI |	
+| Choose the location of your Nutanix cluster | RA | I |
+| Choose Nutanix licence pack provided by OVHcloud following needs or import your own licences | RA | I |
+| Choose the model et range of dedicated servers following needs and defined criteria | RA | I |
 | Choose dedicated server configuration options as needed | RA | I |
+| Choose additionnal Nutanix cluster configuration options as needed (Fault Tolerance Domain,  Replication Factor, Erasure Coding feature) | RA | I |
 
 ### 2. Service availability
 
@@ -38,11 +40,26 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Produce, route, deliver and maintain physical machines and hosting buildings | CI | RA |
-| Install and configure the functional building blocks internal to the dedicated server that are necessary for maintaining operational conditions and security conditions (firmware, BIOS, BMC, IPMI, etc.). |  | RA |
-| Purchase and own the licenses and rights of use for the OS used | I | RA  |
-| Deploy initial network configuration to devices | I | RA |
-| Install the Nutanix cluster | I | RA |
+| Produce, route, deliver and maintain physical machines and hosting buildings | I | RA |
+| Install and configure the functional building blocks internal to the dedicated server that are necessary for maintaining operational conditions and security conditions (firmware, BIOS, BMC, IPMI, etc.). | I | RA |
+| Deploy initial network configuration to devices (Vrack, IPLB and Nutanix cluster nodes) | I | RA |
+| Install the Nutanix Acroplis Operating System (AOS)  | I | RA |
+
+#### 2.2. Reversibility model
+
+| **Activity** | **Customer** | **OVHcloud** |
+| --- | --- | --- |
+| Import virtual machines from any source compatible with Nutanix technology (VMware, Hyper-V, AHV) manually or by using Nutanix Move tool  | RA | I |
+
+#### 2.3. Customer Information System setup
+
+| **Activity** | **Customer** | **OVHcloud** |
+| --- | --- | --- |
+| Create new virtual machines | RA |  |
+| Purchase and own the licenses and rights of use for OS  | RA |  |
+| Install OS on virtual machines | RA |  |
+| Install and configure softwares and middlewares on the cluster | RA |  |
+| Modify default network configurations to secure internal and external connexions of the cluster | RA |  |
 
 ### 3. Service usage
 
@@ -52,11 +69,13 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Ensure network accessibility of the Dedicated Server |  | RA |
-| Manage the applications installed on the Dedicated Server | RA |  |
-| Decide to add/remove an option on the Dedicated Server, request the replacement of defective hardware on the Dedicated Server | RA | I |
-| Add/remove options/hardware on the Dedicated Server | I | RA |
-| Configure the Nutanix software  | RA |  |
+| Manage network accessibility of the Dedicated Server |  | RA |
+| Configure and administrate Nutanix solution | RA |  |  
+| Administrate applications installed on Nutanix virtual layer | RA |  |
+| Request the replacement of defective hardware on the Dedicated Server | RA | CI |
+| Add/remove options/hardware on the Dedicated Server | CI | RA |
+| Manage risks of IS installed  | RA |  |
+| Deploy and ensure the functioning ofthe backup policy in client's IS   | RA |  |
 
 ##### **3.1.2. Access management**
 
