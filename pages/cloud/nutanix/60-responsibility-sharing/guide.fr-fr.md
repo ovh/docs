@@ -95,7 +95,7 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 | Surveiller le bon fonctionnement des dispositifs physiques (utilités) en support du Serveur Dédié | I | RA |
 | Suivre les performances des ressources physiques | RA | CI |
 | Conserver les logs d'administration du cluster Nutanix rendus disponibles via les différents outils Nutanix (ex : Prism, SSH, CLI) ou via des outils tiers  et du SI hébergé  | RA |  |
-| Conserver logs du Control Plane qui supervise et administre le service Nutanix on OVHcloud |  | RA |
+| Conserver les logs du Control Plane qui supervise et administre le service Nutanix on OVHcloud |  | RA |
 | Suivre les performances du cluster Nutanix (alertes incidents, rapport d'utilisation, etc ..) et autres  logiciels installés par le client sur son SI | RA |  |
 | Suivre les performances utilisation du service IPLB intégré à l'offre Nutanix on OVHcloud (via les graphiques de performance) | RA | I |
 
