@@ -1,19 +1,20 @@
 ---
-title: VMware NSX-v - End of Life
-excerpt: Analyse your use of the NSX-v features and choose between the different evolution scenarios, from disabling the NSX-v component to the migration to NSX
+title: VMware NSX-V - End of Life
+excerpt: Analyse your use of the NSX-V features and choose between the different evolution scenarios, from disabling the NSX-V component to the migration to NSX
 updated: 2023-07-10
 ---
 
 ## Objective
 
-You are using the VMware NSX-V component (Network and Security Virtualization), we inform you that this component will no longer be maintained by VMware as of January 15, 2024, and will therefore be deactivated on that date.
-This guide helps you analysing your use of NSX-v features and therefore offers you different evolution scenarios: from disabling the NSX-v component to migrating to its successor NSX-T (named NSX by VMware since version 4.0).
+You are using the VMware NSX-V component (Network and Security Virtualization); we inform you that this component will no longer be maintained by VMware as of January 15, 2024, and will therefore be deactivated on that date.
+
+This guide helps you analyse your use of NSX-V features and therefore offers you different evolution scenarios: From disabling the NSX-V component to migrating to its successor NSX-T (named NSX by VMware since version 4.0).
 
 ## Instructions
 
-### Identifying your NSX-v usage
+### Identifying your NSX-V usage
 
-To identify your usage of the NSX-v feature in your Hosted Private Cloud environment, you have to ask yourself the following questions:
+To identify your usage of the NSX-V feature in your Hosted Private Cloud environment, you have to ask yourself the following questions:
 
 - Am I using VXLAN?
 ![NSX VXLAN](images/vxlan.gif){.thumbnail}
@@ -23,9 +24,9 @@ To identify your usage of the NSX-v feature in your Hosted Private Cloud environ
 ![NSX DFW](images/dlr-edge.gif){.thumbnail}
 - Am I using an SSL VPN?
 
-#### I do not use any of the NSX-v features
+#### I do not use any of the NSX-V features
 
-If you do not use any of the above features, we will deactivate NSX-v starting 1st September 2023. 
+If you do not use any of the above features, we will deactivate NSX-V starting 1st September 2023. 
 You will be notified when the deactivation process is available.
 
 #### I only use VXLAN
@@ -42,44 +43,45 @@ If the only feature you use is VXLAN, you have the following choice:
 
 > **Parameters:**
 >
-> serviceName: the reference for your PCC as `pcc-XX-XX-XX-XX`.
+> serviceName: The reference for your PCC as `pcc-XX-XX-XX-XX`.
 
 > [!primary]
 >
 >  Find more information on the OVHcloud API in our guide on [Getting started with the OVHcloud API](/pages/account/api/first-steps).
 
 Then you can migrate VMs from VXLAN to DVS vRACK.
-From Network view in the vSphere UI, right click on the vxlan portgroup where VMs are assigned and select Migrate VMs to Another Network...
+From the Network view in the vSphere UI, right click on the vxlan portgroup where VMs are assigned and select `Migrate VMs to Another Network..`.
 
 ![NSX network](images/network-inferface.png){.thumbnail}
 
 Select the target portgroup by browsing the vlan vrack portgroup. Previous email sent advices you about the vxlan/vlan matching.
-Go to the next step by clicking NEXT.
+Go to the next step by clicking `NEXT`{.action}.
+
 ![NSX migrate](images/migrate.png){.thumbnail}
 
 From this screen, select the VMs that will migrate to this VLAN portgroup.
-You should migrate all VMs as you won't be able to deactivate NSX-v if one VM network interface is still assigned to vxlan portgroup.
+You should migrate all VMs as you won't be able to deactivate NSX-V if one VM network interface is still assigned to vxlan portgroup.
+
 ![NSX DVS](images/dvs.png){.thumbnail}
 
 ![NSX VMS](images/vms.png){.thumbnail}
 
 Complete your operation and reproduce this for each used vxlan portgroup.
 
-VMs will only experience a very brief reconnection. In some cases, this may only be loss of a single ping request
+VMs will only experience a very brief reconnection. In some cases, this may only be loss of a single ping request.
 
-
-We will deactivate NSX-v starting 1st September if you don't use any feature of NSX-v.
+We will deactivate NSX-V starting 1st September if you don't use any features of NSX-V.
 You will be notified when the deactivation process is available.
 
-#### I use some of the NSX-v features
+#### I use some of the NSX-V features
 
 We recommend migrating to NSX (see [details](#migration) below) to benefit from all its included features.
 
-Alternatively, you can decide to deploy alternatives components (Load-balancer, Firewall appliance, VPN, ...) and then disable NSX-v (you will be notified when the deactivation process is available).
+Alternatively, you can decide to deploy alternative components (Load Balancer, Firewall appliance, VPN, ...) and then disable NSX-V (you will be notified when the deactivation process is available).
 
 ### Migrating to NSX <a name="migration"></a>
 
-The NSX software is enabled at the Virtual Datacenter (vDC) level. In order to migrate from NSX-v to NSX, you can order a new vDC for your existing Hosted Private Cloud service (feature available starting July 18, 2023), add new Hosts and then migrate from your current vDC to the new vDC using VMware vMotion.
+The NSX software is enabled at the Virtual Datacenter (vDC) level. In order to migrate from NSX-V to NSX, you can order a new vDC for your existing Hosted Private Cloud service (feature available starting July 18, 2023), add new Hosts and then migrate from your current vDC to the new vDC using VMware vMotion.
 
 The documentation to migrate to NSX is not yet available. 
 
