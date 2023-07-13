@@ -27,7 +27,7 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Learn about the capabilities and limitations of the Services detailed in the OVHcloud documentation (web site, Particular Conditions, etc ..)| RA | CI |	
+| Learn about the capabilities and limitations of the Services detailed in the OVHcloud documentation (website, Particular Conditions, etc.) | RA | CI |	
 | Choose the location of your Nutanix cluster | RA | I |
 | Choose Nutanix licence pack provided by OVHcloud following needs or import your own licences | RA | I |
 | Choose the model and range of dedicated servers following needs and defined criteria | RA | I |
@@ -41,22 +41,22 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
 | Produce, route, deliver and maintain physical machines and hosting buildings | I | RA |
-| Install and configure the functional building blocks internal to the dedicated server that are necessary for maintaining operational conditions and security conditions (firmware, BIOS, BMC, IPMI, etc.). | I | RA |
+| Install and configure the functional building blocks internal to the dedicated server that are necessary for maintaining operational conditions and security conditions (firmware, BIOS, BMC, IPMI, etc.) | I | RA |
 | Deploy initial network configuration to devices (Vrack, IPLB and Nutanix cluster nodes) | I | RA |
-| Install the Nutanix Acroplis Operating System (AOS)  | I | RA |
+| Install the Nutanix Acroplis Operating System (AOS) | I | RA |
 
 #### 2.2. Reversibility model
 
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Import virtual machines from any source compatible with Nutanix technology (VMware, Hyper-V, AHV) manually or by using Nutanix Move tool  | RA | I |
+| Import virtual machines from any source compatible with Nutanix technology (VMware, Hyper-V, AHV) manually or by using Nutanix Move tool | RA | I |
 
 #### 2.3. Customer Information System setup
 
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
 | Create new virtual machines | RA |  |
-| Purchase and own the licenses and rights of use for OS  | RA |  |
+| Purchase and own the licenses and rights of use for OS | RA |  |
 | Install OS on virtual machines | RA |  |
 | Install and configure softwares and middlewares on the cluster | RA |  |
 | Modify default network configurations to secure internal and external cluster connections | RA |  |
@@ -74,16 +74,16 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 | Administrate applications installed on Nutanix virtual layer | RA |  |
 | Request the replacement of defective hardware on the Dedicated Server | RA | CI |
 | Add/remove options/hardware on the Dedicated Server | CI | RA |
-| Manage risks of IS installed  | RA |  |
-| Deploy and ensure the functioning of the backup policy in client's IS   | RA |  |
+| Manage risks of IS installed | RA |  |
+| Deploy and ensure the functioning of the backup policy in client's IS | RA |  |
 
 ##### **3.1.2. Access management**
 
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Manage access to the OVHcloud Control Panel  | RA | I |
-| Manage users' accesses to Nutanix cluster ( ex : Prism Administration interface, SSH, CLI) | RA |  |
-| Manage users' accesses and security policy on IS  | RA |  |
+| Manage access to the OVHcloud Control Panel | RA | I |
+| Manage users' accesses to Nutanix cluster (ex : Prism Administration interface, SSH, CLI) | RA |  |
+| Manage users' accesses and security policy on IS | RA |  |
 | Managing physical access to infrastructures for OVHcloud teams | I | RA |
 
 
@@ -91,10 +91,10 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Monitor the proper functioning of physical devices (utilities) supporting the Dedicated Server  | I | RA |
+| Monitor the proper functioning of physical devices (utilities) supporting the Dedicated Server | I | RA |
 | Monitor physical resource performance | RA | CI |
 | Keep logs related to administration activities of the cluster made available with Nutanix tools (ex : Prism, SSH, CLI) or with any external tool and those of hosted IS | RA |  |
-| Keep logs of the Control Plane that monitors and administrate Nutanix service|  | RA |
+| Keep logs of the Control Plane that monitors and administrate Nutanix service |  | RA |
 | Monitor the performance of Nutanix cluster (incident alerts, usage report, etc.) and other softwares installed by the client on the IS | RA |  |
 | Monitor the performance of IPLB service usage integrated into the Nutanix offer (using performance graphs) | RA | I |
 
@@ -124,8 +124,8 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 | --- | --- | --- |
 | Provide inventory of infrastructures and services used | I | RA |
 | Manage the security of management infrastructures (control plane) |  | RA |
-| Manage the security of Nutanix software, softwares and Middleware installed on the cluster |RA |  |
-| Manage the security of data stored by the Customer on the infrastructure| RA |  |
+| Manage the security of Nutanix software, softwares and Middleware installed on the cluster | RA |  |
+| Manage the security of data stored by the Customer on the infrastructure | RA |  |
 | Manage the physical security of equipment and infrastructures hosted at OVHcloud | I | RA |
 | Maintain Nutanix software solution and its extensions | RA |  |
 
@@ -142,21 +142,21 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Open tickets for incidents related to Nutanix software (in case of subscription to packaged offer and dysfunction of Nutanix softawre)  |RA | I |
-| Open tickets for incidents related to Bring Your Own licence offer (related to dysfunction of hardware elements in the Dedicated Server)   |RA | I |
+| Open tickets for incidents related to Nutanix software (in case of subscription to packaged offer and dysfunction of Nutanix softawre) | RA | I |
+| Open tickets for incidents related to Bring Your Own licence offer (related to dysfunction of hardware elements in the Dedicated Server) | RA | I |
 | Replace the defective hardware elements of the Dedicated Server following incident qualification | I | RA |
-| Process other incidents |RA |  |
-| Restore virtual machine backups |RA |  |
+| Process other incidents | RA |  |
+| Restore virtual machine backups | RA |  |
 
 #### **3.2.2. Changes**
 
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Deploy patches, update and configure the Nutanix software, softwares, middlewares and hosted IS |RA |  |
+| Deploy patches, update and configure the Nutanix software, softwares, middlewares and hosted IS | RA |  |
 | Provide the new firmware version of the dedicated server | I | RA |
-| Update virtual machines |RA |  |
-| Approve change requests of defective hardware elements submitted by OVHcloud  |A | R |
-| Schedule changes requested by customer |RA | RI |
+| Update virtual machines | RA |  |
+| Approve change requests of defective hardware elements submitted by OVHcloud | A | R |
+| Schedule changes requested by customer | RA | RI |
 
 ### 4. Reversibility
 
@@ -164,15 +164,15 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Schedule reversibility operations |RA | I |
-| Choose fallback infrastructures |RA |  |
+| Schedule reversibility operations | RA | I |
+| Choose fallback infrastructures | RA |  |
 
 #### 4.2. Data recovery
 
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Export virtual machines from any source compatible with Nutanix technology (VMware, Hyper-V, AHV) manually or by using Nutanix Move tool |RA | C |
-| Migrate/transfer data |RA |  |
+| Export virtual machines from any source compatible with Nutanix technology (VMware, Hyper-V, AHV) manually or by using Nutanix Move tool | RA | C |
+| Migrate/transfer data | RA |  |
 
 ### 5. End of service
 
@@ -180,12 +180,12 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Uncommission client-related configurations following contract termination | I |RA |
+| Uncommission client-related configurations following contract termination | I | RA |
 
 #### 5.2. Data destruction
 
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Securely erase data on storage media |  |RA |
-| Destroy storage media that have reached their end of life or on which the secure destruction process generates errors |  |RA |
-| Provide a certificate of destruction (upon request) | I |RA |
+| Securely erase data on storage media |  | RA |
+| Destroy storage media that have reached their end of life or on which the secure destruction process generates errors |  | RA |
+| Provide a certificate of destruction (upon request) | I | RA |
