@@ -21,7 +21,7 @@ This guide explains how to provide a user with the minimum rights to allow her/h
 
 ## Instructions
 
-To be able to log in to the OVHcloud Control Panel, a user should have at least this minimum set of rights on the account resource:
+To be able to log in to the OVHcloud Control Panel, a user should have at least this set of rights on the account resource:
 
 - account:apiovh:me/get
 - account:apiovh:me/supportLevel/get
