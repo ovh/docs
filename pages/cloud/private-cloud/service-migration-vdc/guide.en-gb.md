@@ -1,9 +1,6 @@
 ---
 title: Migrating an infrastructure to a new vDC
-routes:
-    canonical: '/pages/cloud/private-cloud/service-migration'
 excerpt: Find out how to move your workload from an existing vDC to a new vDC in the same VMware infrastructure
-hidden: true
 updated: 2023-07-11
 ---
 <style>
@@ -20,10 +17,11 @@ updated: 2023-07-11
 ## Objective
 
 In 2023, OVHcloud has launched 4 new ranges: 
+
 - **vSphere**: OVHcloud Managed VMware vSphere is our most accessible solution for infrastructure migration, application, datacentre extension or disaster recovery plan needs (with Veeam or Zerto solutions available as an additional option).
 - **Hyperconverged Storage (vSAN)**: The Hyperconverged Storage solution meets your needs for ultra-powerful storage. Equipped with NVMe SSDs, our servers have been specially designed to accommodate even the most demanding applications. With VMware vSAN, you can manage your storage in a scalable way, just as you would in your own datacentre.
 - **Network Security Virtualization (NSX)**: The Network Security solution is based on VMware NSX (NSX-T) network and security virtualisation software. You can manage your security rules, operations and automation in a consistent way across your different cloud environments. NSX secures your software, whether it is hosted on virtual machines or in containers, and reduces the threat of ransomware thanks to micro-segmentation.
-- **Software-Defined Data Center ( NSX + vSAN)**: The Software-Defined Datacentre solution includes hyperconverged storage (vSAN) and network and security virtualisation (NSX-T) features. You get an optimal cloud environment for migrating and modernising your most critical applications.
+- **Software-Defined Datacenter (NSX & vSAN)**: The Software-Defined Datacentre solution includes hyperconverged storage (vSAN) and network and security virtualisation (NSX-T) features. You get an optimal cloud environment for migrating and modernising your most critical applications.
 
 You can now upgrade from commercial ranges prior to 2020 to the new ranges while keeping the same VMware infrastructure (pcc-123-123-123-123) using Storage Motion and vMotion.
 
@@ -34,9 +32,9 @@ There are two aspects involved in this process:
 
 ## Requirements
 
-- a PCC infrastructure (PREMIER or SDDC)
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) (`Private Cloud`{.action} in the `Hosted Private Cloud`{.action} section)
-- access to the vSphere Control Panel
+- A PCC infrastructure (PREMIER or SDDC)
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) (`VMware`{.action} in the `Hosted Private Cloud`{.action} section)
+- Access to the vSphere Control Panel
 
 ## Instructions
 
@@ -45,7 +43,7 @@ There are two aspects involved in this process:
 > If you want to be assisted by:
 >
 > - OVHcloud partners, who are certified and experts on our products, to assist you with your migration or perform it on your behalf, please click [this link](https://www.ovhcloud.com/en-gb/private-cloud-migration/).
-> - our OVHcloud technical experts for tailored support and advice at every stage of your migration project, please click [this link](https://www.ovhcloud.com/en-gb/private-cloud-migration/).
+> - Our OVHcloud technical experts for tailored support and advice at every stage of your migration project, please click [this link](https://www.ovhcloud.com/en-gb/private-cloud-migration/).
 >
 
 This guide will utilise the notions of a **source vDC** and a **destination vDC**. Please find an index of the tasks you will be performing:
@@ -81,7 +79,7 @@ This guide will utilise the notions of a **source vDC** and a **destination vDC*
 &ensp;&ensp;[Step 4.5 Enable vSAN (if relevant)](#vsan)<br />
 &ensp;&ensp;[Step 4.6 Recreate vSphere networking](#vspherenetwork)<br />
 &ensp;&ensp;[Step 4.7 Check inventory organisation (if relevant)](#inventory)<br />
-&ensp;&ensp;[Step 4.8 Migrate NSX V to NSX (if pertinent)](#nsx)<br />
+&ensp;&ensp;[Step 4.8 Migrate NSX-V to NSX (if pertinent)](#nsx)<br />
 &emsp;&emsp;[Step 4.8.1 NSX Distributed Firewall](#dfw)<br />
 &emsp;&emsp;[Step 4.8.2 NSX Distributed Logical Router](#dlr)<br />
 &emsp;&emsp;[Step 4.8.3 NSX Edges](#edge)<br />
@@ -327,12 +325,12 @@ For organisational reasons, the VMs, hosts or datastores may have been placed in
 If you still need this organisation, you will need to create it again in the destination vDC.
 
 <a name="nsx"></a>
-#### Step 4.8 Migrate NSX V to NSX (if applicable)
+#### Step 4.8 Migrate NSX-V to NSX (if applicable)
 
-As part of an NSX V to NSX T migration, several NSX V services need to be migrated to NSX T. If you are using any of the services listed below, here is a step-by-step guide on how to migrate them. 
+As part of an NSX-V to NSX-T migration, several NSX-V services need to be migrated to NSX-T. If you are using any of the services listed below, here is a step-by-step guide on how to migrate them. 
 
 > [!primary]
-> If you need technical support, our [Professional Services] team (https://www.ovhcloud.com/en-gb/professional-services/) can help you rebuild your network architecture with customized services.
+> If you need technical support, our [Professional Services](https://www.ovhcloud.com/en-gb/professional-services/) team can help you rebuild your network architecture with customised services.
 
 As a first step, please read our documentation on [getting started with NSX](/pages/cloud/private-cloud/nsx-01-first-steps).
 
@@ -359,7 +357,7 @@ For more information, read our documentation on [Managing the distributed firewa
 <a name="dlr"></a>
 ##### Step 4.8.2 NSX Distributed Logical Router
 
-The NSX V Distributed Logical Router does not have a direct equivalent in NSX. To migrate the Distributed Logical Router, routing should be directly done in the T1 Gateways.
+The NSX-V Distributed Logical Router does not have a direct equivalent in NSX. To migrate the Distributed Logical Router, routing should be directly done in the T1 Gateways.
 
 <a name="edge"></a>
 ##### Step 4.8.3 NSX Edges
@@ -370,7 +368,7 @@ Additionally, if your production requires zero service interruption, solutions c
 
 In both cases mentioned above, our [Professional Services](https://www.ovhcloud.com/en-gb/professional-services/) team can assist you in this process.
 
-Professional Services can also use the Migration Coordinator Tool to generate an NSX network blueprint based on your existing NSX V architecture, in order to expedite/simplify the migration process.
+Professional Services can also use the Migration Coordinator Tool to generate an NSX network blueprint based on your existing NSX-V architecture, in order to expedite or simplify the migration process.
 
 <a name="t1seg"></a>
 ##### Step 4.8.3.1 Create T1 and segments
@@ -427,13 +425,13 @@ If you are using SSL VPN functionality, unfortunately, this feature no longer ex
 
 > [!warning]
 > This step will result in a service interruption as all traffic will be redirected to the T0 VIP.
-> It is up to you to decide whether you want to point the primary IP block of NSX V to the NSX T0 before or after migrating your VMs (see [Step 5.2](#vmotion)).
+> It is up to you to decide whether you want to point the primary IP block of NSX-V to the NSX-T0 before or after migrating your VMs (see [Step 5.2](#vmotion)).
 >
 
 For this step, you will need two elements:
 
-- The IP block initially associated with the NSX V vDC.
-- The public IP of the VIP associated with the NSX T0 (visible in `Networking`{.action} => `Tier-0 Gateways`{.action} => `ovh-T0-XXXX`{.action} => expand => `HA VIP Configuration`{.action} => click on `1`{.action} => `IP Address / Mask`{.action} section)
+- The IP block initially associated with the NSX-V vDC.
+- The public IP of the VIP associated with the NSX-T0 (visible in `Networking`{.action} => `Tier-0 Gateways`{.action} => `ovh-T0-XXXX`{.action} => expand => `HA VIP Configuration`{.action} => click on `1`{.action} => `IP Address / Mask`{.action} section)
 
 Next, in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), follow the instructions in our [Move an Additional IP](/pages/cloud/dedicated/move-failover-ip) guide to move the initial NSX-V block to the PCC service you are migrating, but specify the VIP IP of the T0 as the "next hop", as shown in the example below:
 
@@ -474,13 +472,14 @@ A task is launched on the infrastructure to deploy vRA on each of the hosts of t
 
 After this, the Zerto Replication will work on both datacenters:
 
-- the old one is still running and protects your workload
-- the new one is ready to host your workload
+- The old one is still running and protects your workload.
+- The new one is ready to host your workload.
 
 The next step depends on the current configuration per [Virtual Protection Group](/pages/cloud/private-cloud/zerto_virtual_replication_as_a_service):
 
-- source of replication
-- destination of replication
+- Source of replication
+- Destination of replication
+
 <a name="vpgsource"></a>
 ##### Step 4.9.1 VPG as Source
 
@@ -616,7 +615,7 @@ In the following instructions, `{datacenterId}` is the **old** vDC id, you can g
 > @api {GET} /dedicatedCloud/{serviceName}/datacenter
 >
 
-With the API, get the filer (datastore) id list:
+With the API, get the filer (datastore) ID list:
 
 > [!api]
 >
@@ -630,7 +629,7 @@ Then for each id:
 > @api {POST} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/filer/{filerId}/remove
 >
 
-For global datastores, you can use the following API call :
+For global datastores, you can use the following API call:
 
 > [!api]
 >
