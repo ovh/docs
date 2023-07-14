@@ -77,7 +77,7 @@ Ce guide utilise les notions de **vDC d'origine** et de **vDC de destination**. 
 &ensp;&ensp;[Etape 4.5 Activer vSAN (si pertinent)](#vsan)<br />
 &ensp;&ensp;[Etape 4.6 Recréer votre configuration réseau vSphere](#vspherenetwork)<br />
 &ensp;&ensp;[Etape 4.7 Vérifier l'organisation de votre inventaire (si pertinent)](#inventory)<br />
-&ensp;&ensp;[Etape 4.8 Migrer NSX-V vers NSX (si pertinent)](#nsx)<br />
+&ensp;&ensp;[Etape 4.8 Migrer NSX V vers NSX (si pertinent)](#nsx)<br />
 &emsp;&emsp;[Etape 4.8.1 NSX Distributed Firewall](#dfw)<br />
 &emsp;&emsp;[Etape 4.8.2 NSX Distributed Logical Router](#dlr)<br />
 &emsp;&emsp;[Etape 4.8.3 NSX Edges](#edge)<br />
@@ -428,7 +428,7 @@ Pour plus d'informations, consultez notre documentation sur la [gestion du pare-
 <a name="dlr"></a>
 ##### Etape 4.8.2 NSX Distributed Logical Router
 
-L'objet Distributed Logical Router de NSX-V n'a pas de réel équivalent dans NSX. Pour migrer les Distributed Logical Routers, il faut directement faire le routage dans les Gateways T1 directement.
+L'objet Distributed Logical Router de NSX V n'a pas de réel équivalent dans NSX. Pour migrer les Distributed Logical Routers, il faut directement faire le routage dans les Gateways T1 directement.
 
 <a name="edge"></a>
 ##### Etape 4.8.3 NSX Edges
