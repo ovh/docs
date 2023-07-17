@@ -1,29 +1,29 @@
 ---
 title: Création et utilisation de clés SSH
-excerpt: Découvrez comment créer une clé SSH pour une connexion sécurisée à votre serveur dédié
-updated: 2022-03-31
+excerpt: Découvrez comment créer une clé SSH pour effectuer une connexion sécurisée à votre serveur dédié
+updated: 2023-07-17
 ---
 
 ## Objectif
 
-L'utilisation du protocole SSH ouvre un canal sécurisé sur un réseau non sécurisé dans une architecture client-serveur, en connectant un client SSH à un serveur SSH. La création d'un jeu de clés SSH vous permet d'obtenir une clé publique et une clé privée. Vous pouvez placer la clé publique sur un serveur, puis vous y connecter avec un client qui possède la clé privée correspondante. Si les clés SSH publique et privée correspondent, vous serez connecté sans avoir besoin de mot de passe.
+L'utilisation du protocole SSH ouvre un canal sécurisé sur un réseau non sécurisé dans une architecture client-serveur, en connectant un client SSH à un serveur SSH. La création d'un jeu de clés SSH vous permet d'obtenir une clé publique et une clé privée. Vous pouvez placer la clé publique sur un serveur, puis vous y connecter avec un client qui possède la clé privée correspondante. Si les clés SSH publique et privée correspondent, vous serez connecté sans avoir besoin d'un mot de passe.
 
 Il s’agit généralement de la méthode de connexion la plus sûre et la plus pratique.
 
-**Ce guide explique comment configurer des clés SSH sur votre appareil local pour sécuriser les connexions aux serveurs distants.**
+**Ce guide explique comment configurer des clés SSH sur votre appareil local pour sécuriser les connexions a des serveurs distants.**
 
 ## Prérequis
 
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
-- Un [serveur](https://www.ovhcloud.com/fr/bare-metal/) dédié ou un [VPS](https://www.ovhcloud.com/fr/vps/) dans votre compte OVHcloud
-- Une application client SSH (ligne de commande ou GUI)
-- Accès administrateur (root) via SSH
+- Disposer d'un [serveur dédié](https://www.ovhcloud.com/fr/bare-metal/) ou d'un [VPS](https://www.ovhcloud.com/fr/vps/) dans votre compte OVHcloud
+- Installer au préalable une application client SSH (ligne de commande ou GUI)
+- Disposer d'un accès administrateur (root) via SSH
 
 > [!primary]
 > Ce guide ne s'applique pas aux installations **Windows Server** standard, car elles reposent sur le `Remote Desktop Protocol` (RDP) pour les connexions. Les connexions SSH sont cependant utilisées pour le mode rescue d’OVHcloud. Plus d'informations dans la section [Aller plus loin](#gofurther) de ce guide.
 >
 
-## Instructions
+## En pratique
 
 N’oubliez pas de consulter nos guides « Premiers pas » : <a name="getstarted"></a>
 
@@ -38,19 +38,19 @@ Les instructions suivantes couvrent deux méthodes d'utilisation des clés SSH :
 - [Création d'une paire de clés **Open SSH** et connexion à un serveur à partir du client SSH en ligne de commande](#openssh)
 - [Création d'une paire de clés `PuTTY` et connexion à un serveur à partir du client SSH `PuTTY`](#useputty)
 
-Vous pouvez utiliser les deux méthodes côte à côte, mais gardez à l'esprit que `PuTTY` stocke les fichiers de clé dans un format spécifique qui les rend incompatibles avec les fichiers de clé SSH créés avec le client **Open SSH**. Cela signifie qu'une clé privée créée avec le client SSH en ligne de commande devra d'abord être [convertie au format `PuTTY` et inversement](https://www.chiark.greenend.org.uk/~sgtatham/putty/faq.html#faq-ssh2-keyfmt).
+Vous pouvez utiliser les deux méthodes simultanément, mais gardez à l'esprit que `PuTTY` garde les fichiers de clé dans un format spécifique : ce qui les rend incompatibles avec les fichiers de clé SSH créés avec le client **Open SSH**. Cela signifie qu'une clé privée créée avec le client SSH en ligne de commande devra d'abord être [convertie au format `PuTTY` et inversement](https://www.chiark.greenend.org.uk/~sgtatham/putty/faq.html#faq-ssh2-keyfmt){.external}.
 
 ### Création d'une paire de clés SSH à partir de la ligne de commande <a name="openssh"></a>
 
 À partir d'un ordinateur **Mac** ou d'un périphérique sur lequel un système d'exploitation **Linux** est installé, ouvrez l'application en ligne de commande (`Terminal`).
 
-Vérifiez que vous avez un dossier nommé `.ssh` dans votre répertoire `$HOME`. Si le dossier n'existe pas, le créer :
+Vérifiez que vous avez un dossier nommé `.ssh` dans votre répertoire `$HOME`. Si le dossier n'existe pas, créez-le :
 
 ```bash
 mkdir ~/.ssh
 ```
 
-Sur un système d'exploitation **Windows** actuel, ouvrez l'`invite` de commandes en tapant « cmd » dans la barre de recherche (ou ouvrez `PowerShell` à partir du menu).
+Sur un système d'exploitation **Windows** actuel, ouvrez l'`invite de commandes` en tapant « cmd » dans la barre de recherche (ou ouvrez `PowerShell` à partir du menu).
 
 Rendez-vous dans le répertoire `.ssh` de votre utilisateur **Windows** actif (par défaut : `C:\Users\WindowsUsername.ssh`):
 
@@ -59,7 +59,7 @@ cd .ssh
 ```
 
 <a name="createnewkey"></a>
-Utiliser la commande suivante pour créer une clé RSA de 4096 bits :
+Utilisez ensuite la commande suivante pour créer une clé RSA de 4096 bits :
 
 ```bash
 ssh-keygen -b 4096
@@ -78,19 +78,19 @@ Generating public/private rsa key pair.
 Enter file in which to save the key (/home/user/.ssh/id_rsa):
 ```
 
-Vous pouvez confirmer avec `Entrée` pour accepter le nom de fichier proposé ou entrer un nom individuel. Ceci est pertinent si plusieurs paires de clés sont placées dans le répertoire `.ssh`. Plus d'informations dans la section [Managing multiple SSH keys](#multiplekeys).<br>
+Confirmez avec `Entrée` pour accepter le nom de fichier proposé ou entrer un nom individuel. Ceci est pertinent si plusieurs paires de clés sont placées dans le répertoire `.ssh`. Plus d'informations dans la section [Managing multiple SSH keys](#multiplekeys).<br>
 Cet exemple utilise les noms de fichiers standard `id_rsa` et `id_rsa.pub`.
 
-Vous pouvez protéger votre clé SSH avec une phrase secrète à l'invite suivante. C’est une étape recommandée pour plus de sécurité.
+Vous pouvez protéger votre clé SSH avec une phrase secrète à l'opération suivante. C’est une étape recommandée pour plus de sécurité.
 
 > [!warning]
 >
-> L'accès à distance à votre serveur est aussi sécurisé que le périphérique client stockant la clé privée. La protection de votre appareil et de vos fichiers contre les accès non autorisés est donc cruciale lors de l'utilisation de clés SSH.
+> L'accès à distance à votre serveur doit être aussi sécurisé que le périphérique client stockant la clé privée. La protection de votre appareil et de vos fichiers contre les accès non autorisés est donc cruciale lors de l'utilisation de clés SSH.
 > 
 > Pour des raisons de commodité et de sécurité, pensez à utiliser un gestionnaire de mots de passe sur votre appareil, comme la solution open source `KeePass`.
 > 
 
-Toutes les clés SSH doivent être stockées dans le répertoire `.ssh`. Le fichier `.pub` sera ajouté au nom de fichier des fichiers de clé publique.
+Toutes les clés SSH doivent être stockées dans le répertoire `.ssh`. L'extension `.pub` sera ajoutée aux noms des fichiers de clés publiques.
 
 ```console
 Your identification has been saved in /home/user/.ssh/id_rsa.
@@ -113,7 +113,7 @@ The key's randomart image is:
 
 <a name="publickey"></a>
 
-Pour afficher et exporter votre clé publique, utilisez la commande `cat` sur votre fichier de clé `.pub`. Copiez la chaîne de clé complète dans le Presse-papiers afin de l'[ajouter à votre serveur](#addserverkey).
+Pour afficher et exporter votre clé publique, utilisez la commande `cat` sur votre fichier de clés `.pub`. Copiez la chaîne de clé complète dans le Presse-papiers afin de l'[ajouter à votre serveur](#addserverkey).
 
 ```bash
 cat ~/.ssh/id_rsa.pub
@@ -133,7 +133,7 @@ i4ANmLy7NULWK36yU0Rp9bFJ4o0/4PTkZiDCsK0QyHhAJXdLN7ZHpfJtHIPCnexmwIMLfIhCWhO5
 > `pbcopy < ~/.ssh/id_rsa.pub`
 >
 
-Sur un système d'exploitation **Windows**, vous pouvez ouvrir le fichier à l'aide de l'application `Bloc`-notes à partir de l'`Explorateur de fichiers` (cliquez avec le bouton `droit` sur le fichier et sélectionnez `Ouvrir avec`) ou utiliser l'une des commandes suivantes (in `\Users\WindowsUsername\.ssh`) :
+Sur un système d'exploitation **Windows**, ouvrez le fichier à l'aide de l'application `Bloc-notes` à partir de l'`Explorateur de fichiers` (cliquez avec le bouton `droit` sur le fichier et sélectionnez `Ouvrir avec`) ou utilisez l'une des commandes suivantes (in `\Users\WindowsUsername\.ssh`) :
 
 - `cmd`
 
@@ -153,7 +153,7 @@ Copiez la chaîne de clé complète dans le Presse-papiers afin de l'[ajouter à
 >
 > **Utilisation du Presse-papiers**
 >
-> Lorsque vous travaillez à partir d'une ligne de commande **Windows**, utilisez un `clic droit` pour **coller** le contenu du Presse-papiers dans la fenêtre de ligne de commande. Pour **copier** une chaîne à partir de la fenêtre de ligne de commande, mettez-la en surbrillance, puis appuyez sur `Entrée`. Vous pouvez également retrouver ces fonctions via un `clic droit` sur la barre de menu.
+> Lorsque vous travaillez à partir d'une ligne de commande **Windows**, utilisez un `clic droit` pour **coller** le contenu du Presse-papiers dans la fenêtre de ligne de commande. Pour **copier** une chaîne à partir de la fenêtre de ligne de commande, mettez-la en surbrillance avec votre souris puis appuyez sur `Entrée`. Vous pouvez également retrouver ces fonctions via un `clic droit` sur la barre de menu.
 >
 
 ### Créer une paire de clés SSH avec PuTTY <a name="useputty"></a>
@@ -162,14 +162,14 @@ Copiez la chaîne de clé complète dans le Presse-papiers afin de l'[ajouter à
 
 > [!primary]
 >
-> L'objectif principal de `PuTTY` est de gérer les connexions SSH d'un périphérique client **Windows** vers un serveur **GNU/Linux**. `PuTTY` stocke les fichiers de clé dans un format spécifique qui les rend incompatibles avec les fichiers de clé SSH créés avec le client **Open SSH** inclus nativement dans la plupart des systèmes d'exploitation modernes.
+> L'objectif principal de `PuTTY` est de gérer les connexions SSH d'un périphérique client **Windows** vers un serveur **GNU/Linux**. `PuTTY` stocke les fichiers de clé dans un format spécifique : ce qui les rend incompatibles avec les fichiers de clé SSH créés avec le client **Open SSH** inclus nativement dans la plupart des systèmes d'exploitation modernes.
 >
-> Si nécessaire, les clés générées à partir de la ligne de commande comme expliqué ci-dessus peuvent être [converties au format `PPK`](https://www.chiark.greenend.org.uk/~sgtatham/putty/faq.html#faq-ssh2-keyfmt) afin de les utiliser avec le client `PuTTY`. Pour une utilisation plus pratique des clés SSH, choisissez une option et respectez-la (clés privées **Open SSH** ou clés privées `PuTTY`).
+> Si nécessaire et comme expliqué plus haut dans ce guide, les clés générées en *ligne de commande* peuvent être [converties au format `PPK`](https://www.chiark.greenend.org.uk/~sgtatham/putty/faq.html#faq-ssh2-keyfmt) afin de les utiliser avec le client `PuTTY`. Pour une utilisation plus pratique des clés SSH, choisissez une option et respectez-la (clés privées **Open SSH** ou clés privées `PuTTY`).
 >
 
-S'il n'est pas déjà installé (consultez votre liste d'applications ou utilisez la fonction de recherche), téléchargez `PuTTY` depuis [le site officiel](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html). Le package d'installation standard recommandé contient `PuTTYgen`, mais il est également disponible en tant que fichier autonome sur le site Web.
+S'il n'est pas déjà installé (consultez votre liste d'applications ou utilisez la fonction de recherche), téléchargez `PuTTY` depuis [le site officiel](https://www.chiark.greenend.org.uk/~sgtatham/putty/latest.html){.external}. Le package d'installation standard recommandé contient déjà `PuTTYgen` mais il est également disponible en tant que fichier autonome sur le site Web.
 
-Ouvrez `PuTTYgen` et sélectionnez un algorithme de chiffrement pris en charge. Cet exemple utilise RSA. Entrez 4096 comme nombre de bits dans le coin inférieur droit, puis cliquez sur le bouton `Generate`{.action}.
+Ouvrez `PuTTYgen` et sélectionnez l'un des algorithmes de chiffrement pris en charge. Cet exemple utilise RSA. Entrez 4096 comme nombre de bits dans le coin inférieur droit, puis cliquez sur le bouton `Generate`{.action}.
 
 ![clé PuTTy](images/puttygen_01.png){.thumbnail}
 
@@ -185,7 +185,7 @@ Copiez la chaîne de clé complète dans le presse-papiers afin de l'[ajouter à
 
 > [!warning]
 >
-> L'accès à distance à votre serveur est aussi sécurisé que le périphérique client stockant la clé privée. La protection de votre appareil et de vos fichiers contre les accès non autorisés est donc cruciale lors de l'utilisation de clés SSH.
+> L'accès à distance à votre serveur doit être aussi sécurisé que le périphérique client stockant la clé privée. La protection de votre appareil et de vos fichiers contre les accès non autorisés est donc cruciale lors de l'utilisation de clés SSH.
 > 
 > Pour des raisons de commodité et de sécurité, pensez à utiliser un gestionnaire de mots de passe sur votre appareil, comme la solution open source `KeePass`.
 >
@@ -236,7 +236,7 @@ Pour ajouter des clés SSH pour d'autres utilisateurs accédant à votre serveur
 
 #### Suppression des clés publiques de votre serveur
 
-Ouvrez le fichier `authorized_keys` comme [décrit ci-dessus](#addserverkey) et supprimez la chaîne de clé qui correspond à l'utilisateur dont l'accès a été révoqué.
+Ouvrez le fichier `authorized_keys` comme [décrit ci-dessus](#addserverkey) et supprimez la chaîne de clé correspondant à l'utilisateur dont l'accès doit être révoqué.
 
 Enregistrez le fichier et quittez l’éditeur.
 
@@ -272,7 +272,7 @@ Comme indiqué dans les sections précédentes, les mêmes instructions fonction
 
 L'alternative à l'ajout de l'option `-i` à chaque fois consiste à modifier un fichier nommé `config` dans le dossier `~/.ssh` (`\Users\Username\.ssh` pour **Windows**). Il permet de configurer les détails des différentes connexions (nom d'utilisateur, port, fichier de clé, paramètres optionnels, etc.)
 
-Si ce fichier existe dans `.ssh`, il contient probablement déjà des informations. En fonction de votre environnement de travail, envisagez de créer d'abord une copie de sauvegarde de l'original.
+Si ce fichier existe dans `.ssh`, il contient probablement déjà des informations. En fonction de votre environnement de travail, envisagez d'abord de créer une copie de sauvegarde de l'original.
 
 Exemple de contenu de dossier `.ssh` :
     
@@ -281,7 +281,7 @@ ls ~/.ssh/
 config  id_rsa  id_rsa.pub  known_hosts  known_hosts.old
 ```
 
-Le fichier de `configuration` permet de stocker plusieurs connexions SSH ainsi que leurs paramètres individuels, en plus des valeurs standard. L’exploitation de tout le potentiel de ce fichier peut devenir complexe, car elle est particulièrement utile pour les utilisateurs expérimentés qui gèrent plusieurs serveurs sur une base régulière.
+Le fichier de `configuration` permet de stocker plusieurs connexions SSH ainsi que leurs paramètres individuels en plus des valeurs standard. L’exploitation de tout le potentiel de ce fichier peut devenir complexe, car il est particulièrement utile pour les utilisateurs expérimentés qui gèrent plusieurs serveurs sur une base régulière.
 
 Voici un exemple simple pour vous expliquer comment configurer une connexion SSH à un VPS.<br>
 Ouvrez le fichier et ajoutez les lignes suivantes en haut :
@@ -298,7 +298,7 @@ Vous pourrez ensuite vous connecter au VPS avec le nom d'alias que vous avez dé
 ssh ubuntu@vps
 ```
 
-Seules l'IP du serveur et le fichier de clé ont été spécifiés dans l'exemple précédent, mais des détails supplémentaires peuvent être ajoutés. Pour configurer une connexion SSH à un second serveur avec le nom d'utilisateur « rocky », le [port SSH modifié](/pages/cloud/vps/secure_your_vps#changesshport) « 49160 » et la clé privée dans le fichier « myserver_rsa », étendez le contenu du fichier comme indiqué dans cet exemple :
+Seuls l'IP du serveur et le fichier de clé ont été spécifiés dans l'exemple précédent, mais des détails supplémentaires peuvent être ajoutés. Pour configurer une connexion SSH à un second serveur avec le nom d'utilisateur « rocky », le [port SSH modifié](/pages/cloud/vps/secure_your_vps#changesshport) « 49160 » et la clé privée dans le fichier « myserver_rsa », étendez le contenu du fichier comme indiqué dans cet exemple :
 
 ```console
 Host vps
@@ -318,15 +318,15 @@ Vous pourrez ensuite vous connecter à ce serveur en renseignant :
 ssh dedicated_server
 ```
 
-Vous pouvez consulter [la page `man` correspondante](https://manpages.org/ssh_config/5) pour plus d'informations.
+Vous pouvez consulter [la page `man` correspondante](https://manpages.org/ssh_config/5){.external} pour plus d'informations.
 
 #### Utilisation de PuTTY <a name="puttykeys"></a>
 
-Si vous avez suivi les instructions des sections [Création d'une paire de clés SSH avec `PuTTY`](#useputty) et [Ajout de clés SSH à votre serveur](#addserverkey), vous disposez d'une paire de clés vous permettant de vous connecter à votre serveur. 
+Si vous avez suivi les instructions des sections [Création d'une paire de clés SSH avec `PuTTY`](#useputty) et [Ajout de clés SSH à votre serveur](#addserverkey), vous disposez d'une paire de clés permettant de vous connecter à votre serveur. 
 
 `PuTTY` peut enregistrer les informations d'identification et les paramètres d'une connexion SSH en tant que `Session`. Cela vous permet également de vous connecter à différents serveurs à l'aide de clés individuelles.
 
-Ouvrez `PuTTY` et développez la sous-section `SSH` dans le menu de gauche, puis cliquez sur `Auth` and `Credentials`.
+Ouvrez `PuTTY` et développez la sous-section `SSH` dans le menu de gauche, puis cliquez sur `Auth` et `Credentials`.
 
 ![clé PuTTy](images/puttygen_04.png){.thumbnail}
 
@@ -338,7 +338,7 @@ Entrez un nom pour cette connexion sous `Saved Sessions` et cliquez sur `Save`{.
 
 ![clé PuTTy](images/puttygen_05.png){.thumbnail}
 
-Dès à présent, vous pouvez cliquer sur cet élément de `session` et ouvrir une connexion à votre serveur. Pour le tester, cliquez sur `Open`{.action}. Si vous avez protégé le fichier de clé avec une phrase secrète, vous devez l'entrer à ce stade.
+Dès à présent, vous pouvez cliquer sur cet élément de `session` et ouvrir une connexion à votre serveur. Pour le tester, cliquez sur `Open`{.action}. Si vous avez protégé le fichier de clé avec une phrase secrète, saisissez-la à ce stade.
 
 Pour configurer une autre connexion au serveur, répétez les étapes suivantes :
 
@@ -365,16 +365,16 @@ Dans la nouvelle fenêtre, entrez un identifiant (un nom de votre choix) pour la
 
 ![Espace de gestion des clés SSH](images/SSH_keys_panel_3.png){.thumbnail}
 
-Si vous avez copié la sortie complète, l'identifiant après la clé doit déjà être ajouté. Notez que pour stocker votre clé, vous devrez spécifier votre identifiant local après la clé collée. (Voir l'exemple de format ci-dessus). C'est une exigence de l’espace client OVHcloud. Cliquez sur `Confirmer`{.action} pour stocker votre clé publique.
+Si vous avez copié la sortie complète, l'identifiant après la clé doit déjà être ajouté. Notez que pour stocker votre clé, vous devrez spécifier votre identifiant local après la clé *collée*. (Voir l'exemple de format ci-dessus). C'est une exigence de l’espace client OVHcloud. Cliquez sur `Confirmer`{.action} pour stocker votre clé publique.
 
 > [!primary]
 >
-> Toutes les clés enregistrées dans la section `Dédié` sont disponibles en préinstallation sur un serveur dédié ou un VPS. En ce qui concerne les clés SSH pour les services Public Cloud, veuillez vous référer à [ce guide](/pages/platform/public-cloud/public-cloud-first-steps).
+> Toutes les clés enregistrées dans la section `Dédié` sont disponibles en pré-installation sur un serveur dédié ou un VPS. En ce qui concerne les clés SSH pour les services Public Cloud, veuillez vous référer à [ce guide](/pages/platform/public-cloud/public-cloud-first-steps).
 >
 
 ### Définir une clé SSH par défaut (uniquement pour la section « Dédié ») <a name="cpsshkey"></a>
 
-Si vous avez ajouté plusieurs clés SSH dans votre espace client, il est possible de définir une clé à utiliser comme clé par défaut sur le compte. 
+Si vous avez ajouté plusieurs clés SSH dans votre espace client OVHcloud, il est possible de définir une clé à utiliser comme clé par défaut sur le compte. 
 
 > [!warning]
 > À noter qu’une fois la clé par défaut paramétrée, elle sera également utilisée comme moyen de connexion au redémarrage d’un serveur en mode rescue. Pour recevoir un mot de passe à la place, la clé par défaut doit être [désactivée](#disablesshkey) avant de redémarrer le serveur en mode rescue. Plus d'informations dans la section [Aller plus loin](#gofurther) de ce guide.
@@ -388,13 +388,13 @@ Dans la liste des clés, cliquez sur l'icône `Clé` à côté de la clé SSH de
 
 ![Espace de gestion des clés SSH](images/defaultsshkey.png){.thumbnail}
 
-Une fois ceci fait, un message apparaît, vous confirmant que la clé a été définie par défaut et que l'icône `Clé` est mise en surbrillance.
+Une fois ceci fait, un message confirmant que la clé a été définie par défaut apparaît et l'icône `Clé` est mise en surbrillance.
 
 ![Espace de gestion des clés SSH](images/defaultsshkey1.png){.thumbnail}
 
 ### Désactivation de la clé SSH par défaut <a name="disablesshkey"></a>
 
-Pour désactiver la clé SSH par **défaut actuelle**, accédez à la section `Clés SSH`{.action} comme décrit ci-dessus. Cliquez sur l'icône `Clé` bleue à côté de la clé SSH correspondante pour désactiver l'option par défaut.
+Pour désactiver la clé SSH par **défaut** actuelle, accédez à la section `Clés SSH`{.action} comme décrit ci-dessus. Cliquez sur l'icône `Clé` bleue à côté de la clé SSH correspondante pour désactiver l'option par défaut.
 
 ## Aller plus loin <a name="gofurther"></a>
 
