@@ -7,8 +7,6 @@ category_l2: Responsibility sharing
 updated: 2023-07-13
 ---
 
-**Dernière mise à jour le 13/07/2023**
-
 ## Objectif
 
 Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et le client pour le service Nutanix on OVHcloud. Ce modèle peut aider le client à utiliser le service Nutanix on OVHcloud au mieux.
