@@ -24,7 +24,7 @@ HA-NAS erlaubt die Zentralisierung der Daten verschiedener Workloads von Linux u
 
 - Geteilter und ausgelagerter Speicher für IT-Anwendungen (VM, DB, etc.)
 - Verwaltung von Webinhalten 
-- Filesharing im Netzwerkr
+- Filesharing im Netzwerk
 
 ### Kann das HA-NAS über eine Verwaltungsoberfläche genutzt werden?
 
