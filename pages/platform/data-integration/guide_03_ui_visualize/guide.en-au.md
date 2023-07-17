@@ -10,8 +10,8 @@ This guide covers the usage of the Control Panel to explore the **Data Integrati
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au).
-- A [Public Cloud project](https://www.ovhcloud.com/en-au/public-cloud/) in your OVHcloud account.
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
+- A [Public Cloud project](https://www.ovhcloud.com/en-au/public-cloud/) in your OVHcloud account
 
 ## Instructions
 
@@ -21,7 +21,7 @@ Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomana
 
 ![image](images/01_menu.png){.thumbnail}
 
-If your project does not yet contain any `workflow` you will be greated with the following page:
+If your project does not yet contain any `workflow` you will be greeted with the following page:
 
 ![image](images/02_empty_status.png){.thumbnail}
 
