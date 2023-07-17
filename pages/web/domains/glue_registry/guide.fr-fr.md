@@ -1,7 +1,7 @@
 ---
 title: "Personnaliser les serveurs DNS d'un nom de domaine (Glue Records)"
 excerpt: 'Découvrez comment personnaliser les serveurs DNS de votre nom de domaine OVHcloud'
-updated: 2023-07-11
+updated: 2023-07-17
 ---
 
 ## Objectif
@@ -75,7 +75,7 @@ Sur la nouvelle page, cliquez l'onglet `GLUE`{.action}.
 
 Un tableau affiche alors les enregistrements « GLUE » actuellement configurés chez OVHcloud pour votre nom de domaine (s'il y en a). Afin d'ajouter un nouvel enregistrement « GLUE », cliquez sur le bouton `Ajouter`{.action}.
 
-![glueregistry](images/customize-dns-servers-step1.png){.thumbnail}
+![glueregistry](images/glue-add.png){.thumbnail}
 
 Dans la fenêtre qui s'ouvre sur votre écran, complétez les informations demandées :
 
@@ -111,7 +111,7 @@ Cette manipulation s'effectue depuis l’interface du prestataire gérant la con
 > Dans tous les, cas, un délai de propagation de 4 à 24 heures est nécessaire pour que la modification de la zone DNS soit prise en compte sur l'ensemble du réseau DNS. Nous vous recommandons de patienter ce délai avant de poursuivre.
 >
 
-![glueregistry](images/customize-dns-servers-step3.png){.thumbnail}
+![glueregistry](images/glue-dns-zone-add.png){.thumbnail}
 
 Si l'on reprend notre exemple précédent, les enregistrements « GLUE » que l'on souhaite ajouter (à partir du domaine *domain.tld*) sont **dns1.domain.tld** et **dns2.domain.tld**. Ceci pour remplacer les serveurs DNS actuels **dnsX1.ovh.net** et **dnsX2.ovh.net**
 
@@ -134,12 +134,12 @@ Positionnez-vous sur l'onglet `Serveurs DNS`{.action} puis cliquez sur `Modifier
 
 Finalisez les étapes et, si nécessaire, reportez-vous aux instructions décrites dans notre documentation « [Modifier les serveurs DNS d’un nom de domaine OVHcloud](/pages/web/domains/dns_server_general_information){.external} ».
 
+![glueregistry](images/glue-dns-servers-modify.png){.thumbnail}
+
 > [!primary]
 >
 > Un délai de propagation de 24 à 48 heures est nécessaire pour que le changement des serveurs DNS soit pris en compte sur l'ensemble du réseau DNS. Nous vous recommandons de patienter ce délai avant de poursuivre.
 >
-
-![glueregistry](images/customize-dns-servers-step4.png){.thumbnail}
 
 Dans notre exemple de personnalisation des serveurs DNS du nom de domaine *domain.tld*, on remplace le serveur DNS **dnsX1.ovh.net** par **dns1.domain.tld** et le serveur DNS **dnsX2.ovh.net** par **dns2.domain.tld** puis on patiente le temps de la propagation DNS.
 
