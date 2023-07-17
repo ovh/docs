@@ -97,10 +97,10 @@ Im OVHcloud Kundencenter werden diese Optionen in einem gemeinsamen Kundencenter
 - **Sicherheit**: In diesem Bereich können Sie die Sicherheitseinstellungen Ihres Accounts verwalten. Weitere Informationen finden Sie in [dieser Anleitung](/pages/account/customer/all_about_username).
 - **Empfangene E-Mails**: In diesem Bereich finden Sie alle E-Mails, die von OVHcloud gesendet wurden, mit Ausnahme der Support-Anfragen.
 - **Mein Support-Level** (ausschließlich für OVHcloud Dienste verfügbar): Weitere Informationen zum von OVHcloud angebotenen Support finden Sie in diesem Abschnitt.
-- **Benutzerverwaltung**: In dieser Rubrik können Sie Ihre Benutzer verwalten. Weitere Informationen finden Sie in [dieser Anleitung](/pages/account/customer/ovhcloud-users-management).
+- **Verwaltung der Nutzer**: In dieser Rubrik können Sie Ihre Benutzer verwalten. Weitere Informationen finden Sie in [dieser Anleitung](/pages/account/customer/ovhcloud-users-management).
 - **Meine Rechnungen**: Hier können Sie Ihre Rechnungen einsehen, die Zahlungen mit Ihrem Standardzahlungsmittel nachverfolgen und Ihre Guthaben einsehen. Weitere Informationen finden Sie in [dieser Anleitung](/pages/account/billing/invoice_management).
-- **Meine Dienstleistungen**: In dieser Rubrik können Sie alle Ihre Dienstleistungen, Verträge und SSH-Schlüssel einsehen.
-- **Zahlungstarten**: In diesem Bereich haben Sie Zugriff auf Ihr aktuelles Zahlungsmittel, Ihren Prepaid-Account sowie Ihre OVHcloud Gutscheine. Dort finden Sie auch die Option, eine Zahlungsmethode hinzuzufügen oder zu löschen. Weitere Informationen zur Verwaltung Ihrer Zahlungsmittel finden Sie in [dieser Anleitung](/pages/account/billing/manage-payment-methods).
+- **Meine Dienste**: In dieser Rubrik können Sie alle Ihre Dienstleistungen, Verträge und SSH-Schlüssel einsehen.
+- **Meine Zahlungsarten**: In diesem Bereich haben Sie Zugriff auf Ihr aktuelles Zahlungsmittel, Ihren Prepaid-Account sowie Ihre OVHcloud Gutscheine. Dort finden Sie auch die Option, eine Zahlungsmethode hinzuzufügen oder zu löschen. Weitere Informationen zur Verwaltung Ihrer Zahlungsmittel finden Sie in [dieser Anleitung](/pages/account/billing/manage-payment-methods).
 - **Meine Bestellungen**: Sie finden die Übersicht Ihrer Bestellungen auf dieser Seite. Weitere Informationen finden Sie in [dieser Anleitung](/pages/account/billing/managing_ovh_orders).
 - **Meine Kontakte**: In diesem Bereich können Sie die zu Ihren Dienstleistungen gehörenden Kontakte anzeigen und verwalten. Im Tab **Meine Anfragen** finden Sie die Anfragen zur Änderung von Kontakten, die Sie über Ihren Kunden-Account gesendet haben, sowie die eingegangenen Anfragen zur Verwaltung von Dienstleistungen. Weitere Informationen zur Verwaltung Ihrer Servicekontakte finden Sie in [dieser Anleitung](/pages/account/customer/managing_contacts).
 - **Meine Support-Anfragen**: In dieser Rubrik können Sie Ihre Support-Anfragen eröffnen/anzeigen.
@@ -109,12 +109,12 @@ Im OVHcloud Kundencenter werden diese Optionen in einem gemeinsamen Kundencenter
 
 Hier einige zusätzliche Anleitungen, die Ihnen bei Ihren ersten Schritten helfen:
 
-[In das OVHcloud Kundencenter einloggen](/pages/account/customer/ovhcloud-account-login).<br>
-[Das Passwort Ihres Kunden-Accounts anlegen und verwalten](/pages/account/customer/manage-ovh-password).<br>
-[OVHcloud Kunden-Account absichern und persönliche Informationen verwalten](/pages/account/customer/all_about_username).<br>
-[Die Kontakte Ihrer Dienste verwalten](/pages/account/customer/managing_contacts).<br>
-[SSH-Schlüssel erzeugen](/pages/cloud/dedicated/creating-ssh-keys-dedicated).<br>
-[Was sind die IP-Adressen des OVHcloud Monitorings?](/pages/cloud/dedicated/network_ip_monitoring).
+[In das OVHcloud Kundencenter einloggen](/pages/account/customer/ovhcloud-account-login)<br>
+[Das Passwort Ihres Kunden-Accounts anlegen und verwalten](/pages/account/customer/manage-ovh-password)<br>
+[OVHcloud Kunden-Account absichern und persönliche Informationen verwalten](/pages/account/customer/all_about_username)<br>
+[Die Kontakte Ihrer Dienste verwalten](/pages/account/customer/managing_contacts)<br>
+[SSH-Schlüssel erzeugen](/pages/cloud/dedicated/creating-ssh-keys-dedicated)<br>
+[Was sind die IP-Adressen des OVHcloud Monitorings?](/pages/cloud/dedicated/network_ip_monitoring)
 
 Wenn Sie Schulungen oder technische Unterstützung bei der Implementierung unserer Lösungen benötigen, wenden Sie sich an Ihren Vertriebsmitarbeiter oder klicken Sie auf [diesen Link](https://www.ovhcloud.com/de/professional-services/), um einen Kostenvoranschlag zu erhalten und eine persönliche Analyse Ihres Projekts durch unsere Experten des Professional Services Teams anzufordern.
 

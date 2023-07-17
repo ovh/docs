@@ -1013,7 +1013,7 @@
             + [Changing your web hosting plan offer](web/hosting/how_to_upgrade_web_hosting_offer)
             + [Speeding up your website with CDN](web/hosting/cdn_how_to_use_cdn)
             + [Accessing a website’s logs and statistics on a Web Hosting](web/hosting/logs_and_statistics)
-            + [Geolocating your website's logs and statistics on a Web Hosting](web/hosting/multisites_geolocation)
+            + [Geolocating your website](web/hosting/multisites_geolocation)
             + [Optimising your website’s performance](web/hosting/optimise_your_website_performance)
         + [Troubleshooting](web-cloud-hosting-troubleshooting)
             + [What do I do if my website is down?](web/hosting/diagnostic-website-not-accessible)
