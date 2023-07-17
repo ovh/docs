@@ -50,7 +50,7 @@ Der Inhaber des Accounts xx11111-ovh verfügt automatisch über **Administrator*
 ### Schritt 2: Benutzer hinzufügen
 
 Wenn Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) eingeloggt sind, klicken Sie oben rechts auf `Ihren Namen`{.action} (1) und klicken Sie dann auf Ihre Initialen (2).
-Klicken Sie anschließend auf den Tab `Benutzerverwaltung`{.action} (3) und dann auf `Einen Benutzer hinzufügen`{.action} (4).
+Klicken Sie anschließend auf den Tab `Verwaltung der Nutzer`{.action} (3) und dann auf `Nutzer hinzufügen`{.action} (4).
 
 ![Benutzerverwaltung](images/hubusers.png){.thumbnail}
 
@@ -66,7 +66,7 @@ Füllen Sie im neu geöffneten Fenster alle erforderlichen Felder aus. Klicken S
 | Rechte | Wählen Sie aus Keine/Benutzer/Administrator. |
 | Beschreibung | Sie können eine Benutzerbeschreibung hinzufügen, beispielsweise die Rolle in Ihrem Unternehmen. |
 
-Der Benutzer erhält im Anschluss eine eigene Kundenkennung bestehend aus der numerischen ID Ihres Accounts (die Sie im Bereich “Verwaltung der Benutzer” nachlesen können) und dem Benutzernamen, wobei beide Werte durch ein “/” getrennt sind.
+Der Benutzer erhält im Anschluss eine eigene Kundenkennung bestehend aus der numerischen ID Ihres Accounts (die Sie im Bereich "Verwaltung der Nutzer" finden können) und dem Benutzernamen, wobei beide Werte durch ein “/” getrennt sind.
 
 Beispiel: **1234-567-89/johnsmith**.
 
