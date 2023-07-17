@@ -22,7 +22,7 @@ This option is available through the OVHcloud [API](https://api.ovh.com/console/
 ### Requirements
 
 - Access to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) or to the [API](https://api.ovh.com/console/)
-- A [Public Cloud project](https://www.ovhcloud.com/fr-fr/public-cloud/) in your OVHcloud account
+- A [Public Cloud project](https://www.ovhcloud.com/fr/public-cloud/) in your OVHcloud account
 
 ### Instructions
 
@@ -41,7 +41,7 @@ This option is currently only available via the OVHcloud [API](https://api.ovh.c
 ### Requirements
 
 - Access to the OVHcloud [API](https://api.ovhcloud.com){.external} (create your credentials by consulting [this guide](/pages/account/api/first-steps))
-- A [Public Cloud project](https://www.ovhcloud.com/fr-fr/public-cloud/) in your OVHcloud account
+- A [Public Cloud project](https://www.ovhcloud.com/fr/public-cloud/) in your OVHcloud account
 
 ### Instructions
 
@@ -56,6 +56,6 @@ For instance, if you have a MongoDB with 120 GB of storage and 80 GB of disk spa
 
 We would love to help answer questions and appreciate any feedback you may have.
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/fr-fr/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/fr/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 Are you on Discord? Connect to our channel at <https://discord.gg/PwPqWUpN8G> and interact directly with the team that builds our databases service!
