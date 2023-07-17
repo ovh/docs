@@ -57,7 +57,7 @@ sudo apt upgrade
 This operation needs to be performed regularly to keep a system up-to-date.
 
 
-### Changing the default SSH listening port
+### Changing the default SSH listening port <a name="changesshport"></a>
 
 One of the first things to do on your server is configuring the SSH service's listening port. It is set to **port 22** by default, therefore server hacking attempts by robots will target this port. Modifying this setting by using a different port is a simple measure to harden your server against automated attacks.
 

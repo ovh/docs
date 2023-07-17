@@ -59,7 +59,7 @@ sudo apt upgrade
 
 Esta operação deve ser efetuada regularmente para manter um sistema atualizado.
 
-### Modificar a porta de escuta SSH
+### Modificar a porta de escuta SSH <a name="changesshport"></a>
 
 Uma das primeiras ações a realizar no seu servidor é a configuração da porta de escuta do serviço SSH. Por predefinição, este é definido na **porta 22**, pelo que as tentativas de hack do servidor por robots vão direcionar esta porta prioritariamente.
 A alteração deste parâmetro, em benefício de uma porta diferente, é uma medida simples para reforçar a proteção do seu servidor contra ataques automatizados.

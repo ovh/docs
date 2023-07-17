@@ -4,13 +4,12 @@ routes:
     canonical: '/pages/cloud/private-cloud/service-migration'
 excerpt: Découvrez comment déplacer vos VMs d'un vDC existant vers un nouveau vDC dans la même infrastructure VMware
 hidden: true
-updated: 2023-05-04
+updated: 2023-07-05
 ---
 <style>
 .ovh-api-main { background:#fff;}
 </style> 
 
-**Dernière mise à jour le 04/05/2023**
 
 **Ce guide explique comment déplacer des machines virtuelles (VM) d'un virtual DataCenter (vDC) d'origine (DC ou SDDC) vers un nouveau vDC de destination (Essentials ou Premier).**
 
@@ -25,7 +24,7 @@ En 2020, OVHcloud a lancé 2 nouvelles gammes, Essentials et Premier. Vous pouve
 
 Ce processus comporte deux aspects :
 
-- L'infrastructure OVHcloud elle-même, qui inclut la côté client de l'administration d'une infrastructure.
+- L'infrastructure OVHcloud elle-même qui inclut le côté client de l'administration d'une infrastructure.
 - L'infrastructure VMware, qui inclut l'ensemble de l'écosystème VMware.
 
 ## Prérequis
@@ -78,11 +77,20 @@ Ce guide utilise les notions de **vDC d'origine** et de **vDC de destination**. 
 &ensp;&ensp;[Etape 4.5 Activer vSAN (si pertinent)](#vsan)<br />
 &ensp;&ensp;[Etape 4.6 Recréer votre configuration réseau vSphere](#vspherenetwork)<br />
 &ensp;&ensp;[Etape 4.7 Vérifier l'organisation de votre inventaire (si pertinent)](#inventory)<br />
-&ensp;&ensp;[Etape 4.8 Reconfigurer NSX (si pertinent)](#nsx)<br />
-&emsp;&emsp;[Etape 4.8.1 v(x)lan Transport Zones](#transportzones)<br />
-&emsp;&emsp;[Etape 4.8.2 NSX Edges](#edges)<br />
-&emsp;&emsp;[Etape 4.8.3 NSX Distributed Logical Routing](#dlr)<br />
-&emsp;&emsp;[Etape 4.8.4 NSX Distributed Firewall](#dfw)<br />
+&ensp;&ensp;[Etape 4.8 Migrer NSX V vers NSX (si pertinent)](#nsx)<br />
+&emsp;&emsp;[Etape 4.8.1 NSX Distributed Firewall](#dfw)<br />
+&emsp;&emsp;[Etape 4.8.2 NSX Distributed Logical Router](#dlr)<br />
+&emsp;&emsp;[Etape 4.8.3 NSX Edges](#edge)<br />
+&emsp;&emsp;[Etape 4.8.3.1 Créer les T1 et les segments](#t1seg)<br />
+&emsp;&emsp;[Etape 4.8.3.2 DHCP](#dhcp)<br />
+&emsp;&emsp;[Etape 4.8.3.3 DNS](#dns)<br />
+&emsp;&emsp;[Etape 4.8.3.4 Règles NAT](#nat)<br />
+&emsp;&emsp;[Etape 4.8.3.5 Load Balancing NSX](#lb)<br />
+&emsp;&emsp;[Etape 4.8.3.6 Pare-feu des passerelles T0 T1](#fwgw)<br />
+&emsp;&emsp;[Etape 4.8.3.7 VPN](#vpn)<br />
+&emsp;&emsp;[Etape 4.8.3.7.1 IPSec](#ipsec)<br />
+&emsp;&emsp;[Etape 4.8.3.7.2 SSL VPN](#sslvpn)<br />
+&emsp;&emsp;[Etape 4.8.3.8 Reconfiguration du bloc IP initial](#moveip)<br />
 &ensp;&ensp;[Etape 4.9 Etendre la protection Zerto Disaster Recovery Protection (si pertinent)](#zerto)<br />
 &emsp;&emsp;[Etape 4.9.1 VPG Source](#vpgsource)<br />
 &emsp;&emsp;[Etape 4.9.2 VPG Destination](#vpgdest)<br />
@@ -386,133 +394,23 @@ Pour plus d'informations, consultez le guide OVHcloud sur [comment créer un V(x
 Pour des raisons organisationelles, les VMs, les hosts ou les datastores peuvent avoir été placés dans des répertoires.
 
 Si cette organisation est toujours nécessaire, il vous faudra la créer à nouveau dans le vDC de destination.
+
 <a name="nsx"></a>
-#### Etape 4.8 Configurer NSX (si pertinent)
-<a name="transportzones"></a>
-##### Etape 4.8.1 v(x)lan Transport Zones
+#### Etape 4.8 Migrer NSX-V vers NSX (si pertinent)
 
-Que les VXLANs ou les DLRs soient utilisés ou pas dans le vDC d'origine, il sera nécessaire d'étendre la ou les zones de transport lors de la migration depuis le vDC d'origine vers le vDC de destination si des NSX Edges sont en cours d'utilisation. Cela permettra de créer des ID réseau VXLAN à l'échelle du PCC, qui faciliteront la migration Edge
-
-La zone de transport VXLAN détermine les limites d'un réseau soutenu par VXLAN et le routage d'un DLR. L'extension des zones de transport garantit que les mêmes réseaux VXLAN et les mêmes DLR sont disponibles dans les vDC d'origine et de destination.
-Pour ce faire, vous devez modifier la zone de transport actuelle afin d'inclure les nouveaux clusters qui se trouvent dans le vDC de destination.
-
-Pour ce faire, suivez les étapes suivantes :
-
-1\. Dans le client vSphere, rendez-vous dans `Networking and Security`{.action}, puis dans `Installation and Upgrade`{.action}.
-
-2\. Cliquez sur l'onglet `Logical Network Settings`{.action}, puis sur l'onglet `Transport Zones`{.action}.
-
-3\. Sélectionnez alors une zone de transport et cliquez sur l'option `Connect Clusters`{.action}.
-
-4\. Sélectionnez le ou les nouveaux clusters qui se trouvent dans le vDC de destination et choisissez `Save`{.action}.
-
-5\. Répétez cette opération pour toutes les zones de transport en cours d'utilisation.
-
-Vous pouvez également créer de nouveaux réseaux VXLAN en suivant ces étapes :
-
-1\. Dans le client vSphere, rendez-vous dans `Networking and Security`{.action}, puis dans `Logical Switches`{.action}.
-
-2\. Cliquez sur `+ Add`{.action}.
-
-3\. Donnez un nom au Switch logique/VXLAN et choisissez la zone de transport.
-
-4\. Cliquez sur `Add`{.action}.
-<a name="edges"></a>
-##### Etape 4.8.2 NSX Edges
-
-Pour migrer une gateway Edge, nous devons demander au Manager NSX de redéployer la gateway Edge dans le vDC de destination. Cela permet d'assurer la cohérence au sein de la base de données du Manager NSX. Pour ce faire, il est nécessaire que toutes les interfaces d’une Edge gateway soient attachées aux VXLANs.
+Dans le cadre d'une migration NSX-V vers NSX, si vous utilisez un des services ci-dessous, voici comment effectuer cette migration en détails. 
 
 > [!primary]
->
-> Dans ce guide, la haute disponibilité (HA) est désactivée avant la migration de la gateway NSX Edge. Cela permet de réduire les temps d'inactivité. Il est possible de migrer une gateway Edge avec la HA activée, mais le temps d'inactivité sera plus long puisque deux Edges NSX devront alors être migrées au lieu d'une seule.
->
+> Si vous avez besoin d'une assistance technique, notre équipe [Professional Services](https://www.ovhcloud.com/fr/professional-services/) peut vous accompagner dans votre démarche de reconstrusction de votre architecture réseau, au travers de prestations personnalisées.
 
-> **Prérequis :**
->
-> - Si des VLANs vRack sont en cours d'utilisation, assurez-vous que les VLANs sont recréés dans le vDC de destination et que le vDC d'origine et de destination font partie du même vRack. Cela permettra la communication L2 entre les vDC.
->
-> - Pour la migration Edge, tous les portgroups VLAN (y compris le VM Network) seront basculés vers des portgroups VXLAN. Le Edge sera ensuite migré vers le nouveau vDC. Enfin, une nouvelle bascule vers des portgroups VLAN sera effectuée. Nous vous conseillons de garder une trace des réseaux qui ont été basculés.
->
+Dans un premier temps, nous vous invitions à consulter notre documentation sur [les premiers pas avec NSX](/pages/cloud/private-cloud/nsx-01-first-steps).
 
-Vous pouvez migrer un NSX Edge en suivant ces étapes :
-
-1\. Dans le client vSphere, accédez à `Networking and Security`{.action}.
-
-2\. Accédez à `NSX Edges`{.action}.
-
-3\. Choisissez le NSX Edge à migrer.
-
-4\. Cliquez sur l'onglet `Configure`{.action}.
-
-5\. Cliquez sur l'onglet `High Availability`{.action}.
-
-6\. Cliquez sur `Edit`{.action}.
-
-7\. Affectez la valeur **Disabled** à l'option « HA Status » et attendez la fin de la tâche.
-
-8\. Cliquez sur l'onglet `Interfaces`{.action}.
-
-9\. L'objectif ici est de basculer toute interface connectée à un portgroup VLAN, vers un portgroup VXLAN. Par exemple :
-
-- Etape 1 - Sélectionnez l'interface qui est connectée au VM Network (ou tout autre portgroup VLAN)
-- Etape 2 - Cliquez sur `Edit`{.action}.
-- Etape 3 - Cliquez sur l'icône « Crayon » à côté du champ « Connected to ».
-- Etape 4 - Dans l'onglet « Logical switch », choisissez un réseau VXLAN temporaire auquel connecter cette interface. **Prenez note du mappage VLAN à VXLAN**.
-- Etape 5 - Cliquez sur `OK`{.action}.
-- Etape 6 - Cliquez sur `Save`{.action}.
-- Etape 7 - Répétez cette opération pour tous les autres portgroups VLAN.
-
-> [!primary]
->
-> - Prenez note des réseaux VLAN correspondant aux nouveaux réseaux VXLAN.
->
-> - Toute VM passant d'un réseau VLAN  à un réseau temporaire VXLAN subira une déconnexion du réseau.
->
-
-10\. Une fois tous les réseaux VLAN transformés en réseaux VXLAN, cliquez sur l'onglet  `Appliance Settings`{.action}.
-
-11\. Sous l'en-tête `Edge Appliance VMs`, sélectionnez la roue crantée et cliquez sur  `Edit`{.action}.
-
-12\. Indiquez ici les paramètres pointant vers le nouveau vDC et cliquez sur `Save`{.action}.
-
-13\. La gateway Edge sera redéployée dans le vDC de destination.
-
-> [!primary]
->
-> Si vous voyez les détails de deux edge dans la section « Edge Appliance VMs » même si vous avez désactivé HA, vous devrez soit répéter les étapes ci-dessus pour migrer cette edge « fantôme », soit cliquer sur la roue crantée pour cette edge fantôme et « non déployée » et cliquer sur `Supprimer`{.action}.
->
-
-14\. Une fois la tâche de redéploiement terminée, cliquez sur l'onglet `Configure`{.action}.
-
-15\. Cliquez sur l'onglet `Interfaces`{.action}.
-
-16\. L'objectif ici est de rétablir tout réseau VLAN qui a été modifié en réseau VXLAN à l'étape 9, et de revenir au réseau VLAN correct qui existe dans le nouveau vDC.
-
-17\. Réactivez HA sur la Edge.
-
-18\. Répétez cette opération pour tous les autres NSX Edge.
-
-> [!primary]
->
-> Si vous avez migré la Edge alors que HA était activé et que vous rencontrez des problèmes de connectivité, il est recommandé de basculer les edge HA et de tester à nouveau. Pour ce faire, accédez à `Configure`{.action}, `Appliance Settings`{.action} et sélectionnez la roue crantée de la edge active, puis sélectionnez `Set Admin State Down`{.action}. Testez à nouveau puis repassez le statut admin à « Up ».
->
-
-<a name="dlr"></a>
-##### Etape 4.8.3 NSX Distributed Logical Routing
-
-Une fois que la zone de transport NSX a été étendue au nouveau vDC, le routage logique distribué est disponible dans les hôtes ESXi sur le vDC de destination.
-
-Les routeurs logiques distribués NSX ne doivent être migrés que lorsqu'une VM de contrôle est déployée en appui du DLR qui facilite le routage dynamique.
-
-Si une VM de contrôle est déployée, suivez les étapes de migration NSX Edge ci-dessus.
-
-Notez qu’il n’est pas nécessaire de changer d’interface car les DLR **doivent** déjà se connecter aux VXLANs.
 <a name="dfw"></a>
-##### Etape 4.8.4 NSX Distributed Firewall
+##### Etape 4.8.1 NSX Distributed Firewall
 
-Le pare-feu distribué NSX protège automatiquement l'intégralité du vDC. Ainsi, tout nouveau vDC sera également protégé.
+Le pare-feu distribué NSX protège automatiquement l'intégralité du vDC. L'outil Migration Coordinator permet de le faire, cependant un ticket doit être créé afin qu'un intervenant puisse le déclencher. Vous pouvez également faire appel à notre équipe [Professional Services](https://www.ovhcloud.com/fr/professional-services/) pour déclencher la procédure.
 
-Cependant, il est extrêmement important de comprendre que les objets placés dans le pare-feu distribué correspondront à l'ID d'objet significatif en local. Par exemple, si un groupe de ports VLAN vRack est utilisé dans une règle dans le pare-feu distribué, il référencera le groupe de ports à partir du vDC d'origine uniquement et non à partir d'un groupe de ports vRack recréé dans le vDC de destination.
+Il est extrêmement important de comprendre que les objets placés dans le pare-feu distribué correspondront à l'ID d'objet significatif en local. Par exemple, si un groupe de ports VLAN vRack est utilisé dans une règle dans le pare-feu distribué, il référencera le groupe de ports à partir du vDC d'origine uniquement et non à partir d'un groupe de ports vRack recréé dans le vDC de destination.
 
 Il sera nécessaire de vérifier si le pare-feu distribué contient des objets significatifs en local et de modifier le pare-feu distribué afin qu'il puisse également voir les objets dans le nouveau vDC. Par exemple, une règle qui utilise un groupe de ports VLAN vRack à partir du vDC d'origine peut être modifiée pour utiliser à la fois le groupe de ports VLAN vRack d'origine et le nouveau groupe de ports VLAN vRack dans le vDC de destination.
 
@@ -524,6 +422,97 @@ Les objets devant être considérés :
 - Groupe de ports Legacy
 - Resource Pool
 - vApp
+
+Pour plus d'informations, consultez notre documentation sur la [gestion du pare-feu distribué dans NSX](/pages/cloud/private-cloud/nsx-05-manage-distributed-firewall).
+
+<a name="dlr"></a>
+##### Etape 4.8.2 NSX Distributed Logical Router
+
+L'objet Distributed Logical Router de NSX V n'a pas de réel équivalent dans NSX. Pour migrer les Distributed Logical Routers, il faut directement faire le routage dans les Gateways T1 directement.
+
+<a name="edge"></a>
+##### Etape 4.8.3 NSX Edges
+
+De manière générale, en fonction du nombre de *Edges* déployées via NSX-V dans le vDC source, il conviendra de créer des T1 gateway dans NSX sur le vDC de destination. Cependant, il peut être aussi intéressant de prendre du recul afin de revoir l'architecture réseau mise en place pour faire correspondre au mieux les besoins dans le nouveau produit NSX. 
+
+De plus, si votre production nécessite de n'avoir aucune interruption de service, des solutions peuvent être mises en place pour éviter ces coupures.
+
+Dans ces deux cas et comme indiqué plus haut, notre équipe [Professional Services](https://www.ovhcloud.com/fr/professional-services/) peut vous accompagner dans cette démarche. Nos experts de cette équipe peuvent aussi utiliser le Migration Coordinator Tool pour générer un squelette réseau NSX basé sur votre ancienne architecture NSX-V afin d'accélérer / simplifier la procédure de migration.
+
+<a name="t1seg"></a>
+##### Etape 4.8.3.1 Créer les T1 et les segments
+
+Pour créer les T1, suivez [cette documentation](/pages/cloud/private-cloud/nsx-10-add-new-tier1-gateway). Ce guide vous aiguillera aussi sur la façon de créer les segments. Avant de créer les segments, il est nécessaire de faire l'inventaire des VXLANs utilisés dans le vDC source et de créer un segment pour chaque VXLAN utilisé sur votre infrastructure.
+
+Il suffit ensuite de les relier à la T0 fournie dans NSX.
+
+Pour plus d'informations, consultez notre documentation sur la [gestion des segments dans NSX](/pages/cloud/private-cloud/nsx-02-segment-management).
+
+Il est aussi possible de créer des segments de type VLAN et les relier au vRack via la Transport Zone `ovh-tz-vrack`.
+
+Par la suite, pour pouvoir contacter le vRack via NSX, il faut positionner les segments VLAN soit au niveau des T1, soit au niveau des T0 avec des interfaces de type Service.
+
+<a name="dhcp"></a>
+##### Etape 4.8.3.2 DHCP
+
+Pour recréer les DHCP et les associer à vos segments puis à vos T1, consultez notre guide sur la [configuration du DHCP dans NSX](/pages/cloud/private-cloud/nsx-03-configure-dhcp-onsegment).
+
+<a name="dns"></a>
+##### Etape 4.8.3.3 DNS
+
+Pour recréer les DNS et les associer à vos T1, consultez notre guide sur la [configuration du redirecteur DNS dans NSX](/pages/cloud/private-cloud/nsx-04-configure-dns-forwarder/).
+
+<a name="nat"></a>
+##### Etape 4.8.3.4 Règles NAT
+
+Pour recréer vos règles NAT et les associer aux T1, consultez notre guide sur la [mise en place du NAT pour des redirections de ports avec NSX](/pages/cloud/private-cloud/nsx-07-configure-nat-redirection).
+
+<a name="lb"></a>
+##### Etape 4.8.3.5 Load Balancing NSX
+
+Pour recréer vos Load Balancer, suivez les indications de notre guide sur la [configuration du Load Balancing dans NSX](/pages/cloud/private-cloud/nsx-09-configure-loadbalancing).
+
+<a name="fwgw"></a>
+##### Etape 4.8.3.6 Pare-feu des passerelles T0 T1
+
+Pour recréer les règles de pare-feu associées à vos anciennes edges, consultez notre guide sur la [gestion du pare-feu des passerelles dans NSX](/pages/cloud/private-cloud/nsx-06-manage-gateway-firewall).
+
+<a name="vpn"></a>
+
+##### Etape 4.8.3.7 VPN 
+
+<a name="ipsec"></a>
+
+##### Etape 4.8.3.7.1 IPSec 
+
+Pour recréer vos sessions IPsec, consultez notre guide sur la [mise en place d'un tunnel IPsec avec NSX](/pages/cloud/private-cloud/nsx-12-configure-ipsec).
+
+<a name="sslvpn"></a>
+
+##### Etape 4.8.3.7.2 SSL VPN
+
+Si vous utilisez la fonctionnalité SSL VPN, cette fonctionnalité n'existe malheureusement plus sur NSX. Des alternatives opensource sont néanmoins disponibles, telles que OpenVPN, OpenConnect VPN, WireGuard, etc.
+
+Ces applications réseau sont à monter sur des VMs dédiées hébergées sur votre Hosted Private Cloud. Chaque client est ensuite à installer sur les postes des collaborateurs afin qu'ils puissent de nouveau accéder à leur VPN.
+
+<a name="moveip"></a>
+
+##### Etape 4.8.3.8 Reconfiguration du bloc IP initial
+
+> [!warning]
+> Cette étape entraine une interruption de service car tout le trafic sera redirigé vers la VIP de la T0.
+> Vous devez décider si vous voulez faire pointer le bloc IP primaire de NSX-V vers la T0 de NSX avant ou après avoir migré vos VMs (cf [Etape 5.2](#vmotion))
+>
+
+Pour cette étape vous aurez besoin de deux éléments :
+
+- le bloc IP initialement associé au vDC NSX-V.
+- l'IP publique de la VIP associée à la T0 de NSX (visible dans `Networking`{.action} > `Tier-0 Gateways`{.action} > `ovh-T0-XXXX`{.action} > dépliez > `HA VIP Configuration`{.action} > cliquez sur `1`{.action} > section `IP Address / Mask`{.action})
+
+Par la suite, depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), suivez les indications de notre guide « [Déplacer une Additional IP](/pages/cloud/dedicated/move-failover-ip) »  pour déplacer le bloc initial NSX-V sur le service PCC que vous migrez, tout en précisant comme *next hop* l'IP de la VIP de la T0 récupérée précédemment, comme sur l'exemple ci-dessous :
+
+![Migration NSX IP](images/MoveIPNextHop.png){.thumbnail}
+
 <a name="zerto"></a>
 #### Etape 4.9 Etendre la protection Zerto Disaster Recovery Protection (si pertinent)
 

@@ -59,7 +59,7 @@ sudo apt upgrade
 
 Operacja ta musi być wykonywana regularnie, aby utrzymać system na bieżąco.
 
-### Zmień domyślny port SSH
+### Zmień domyślny port SSH <a name="changesshport"></a>
 
 Jedna z pierwszych operacji, jakie należy przeprowadzić na serwerze, to konfiguracja portu wykorzystywanego do nasłuchiwania usługi SSH. Domyślnie jest on zdefiniowany na **porcie 22**, więc próby włamania na serwerze przez roboty będą wskazywać na ten port jako priorytet.
 Zmiana tego parametru na inny port to prosty sposób na wzmocnienie ochrony serwera przed automatycznymi atakami.

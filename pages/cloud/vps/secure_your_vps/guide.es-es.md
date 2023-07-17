@@ -59,7 +59,7 @@ sudo apt upgrade
 
 Esta operación debe realizarse regularmente para mantener un sistema actualizado.
 
-### Cambiar el puerto de escucha por defecto SSH
+### Cambiar el puerto de escucha por defecto SSH <a name="changesshport"></a>
 
 Una de las primeras acciones que deberá realizar en su servidor es configurar el puerto de escucha del servicio SSH. Por defecto, este se define en el **puerto 22**, por lo que los intentos de hackeo del servidor por parte de robots se dirigirán prioritariamente a este puerto.
 La modificación de este parámetro, en beneficio de un puerto diferente, es una medida sencilla para reforzar la protección de su servidor contra los ataques automatizados.
