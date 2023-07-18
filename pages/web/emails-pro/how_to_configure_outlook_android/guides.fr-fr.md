@@ -35,25 +35,26 @@ Récupérez le nom du serveur *E-mail Pro* qui apparaît en dessous de la mentio
 
 Toujours dans l'onglet `Comptes e-mail`{.action} de votre plateforme *Email Pro*, un tableau s'affiche avec votre (vos) adresse(s) *E-mail Pro*.
 
-Si vous ne vous souvenez plus du mot de passe d'accès à l'adresse e-mail que vous souhaitez configurer, vous pouvez modifier le mot de passe à l'aide du bouton `...`{.action} situé sur la même ligne à droite du compte e-mail.
+Si vous ne vous souvenez plus du mot de passe d'accès à l'adresse e-mail que vous souhaitez configurer, vous pouvez le modifier à l'aide du bouton `...`{.action} situé sur la même ligne à droite du compte e-mail.
 Sélectionnez ensuite `Modifier`{.action}, choisissez un nouveau mot de passe puis confirmez-le. Cliquez enfin sur `Suivant`{.action} puis sur `Valider`{.action} dans la seconde fenêtre.
+
 Le changement du mot de passe se fait en 15 minutes approxymativement.
 
 > [!warning]
 >
-> Si vous changer le mot de passe de votre adresse e-mail et que celle-ci est déjà utilisée par un autre appareil (logiciel de messagerie, ordinateur, tablette, smartphone, photocopieur, etc.), vous devrez mettre à jour le mot de passe pour ces autres appareils.
+> Si vous changez le mot de passe de votre adresse e-mail et que celle-ci est déjà utilisée par un autre appareil (logiciel de messagerie, ordinateur, tablette, smartphone, photocopieur, etc.), vous devrez mettre à jour le mot de passe sur ces autres appareils.
 > En effet, ces derniers ne seront plus en mesure de se connecter avec votre adresse e-mail avec l'ancien mot de passe.
 >
 
 A la fin de cette première étape, vous devez désormais avoir les éléments suivants en votre possession :
 
-- le nom du serveur *E-mail Pro* 
+- le nom du serveur *E-mail Pro* (pro1.mail.ovh.net, pro2.mail.ovh.net, etc.)
 - l'adresse e-mail à configurer
 - le mot de passe de l'adresse e-mail à configurer sur Android via l'application Microsoft Outlook
 
 ### Étape 2 : configurer votre adresse sur Android via l'application Microsoft Outlook <a name="step2"></a>
 
-Lancer sur votre appareil Android l'application Microsoft Outlook. Si vous ne l'avez pas déjà installé, téléchargez-là depuis le *Google Play Store*.
+Lancer sur votre appareil Android l'application Microsoft Outlook. Si vous ne l'avez pas déjà installée, téléchargez-la depuis le *Google Play Store*.
 
 Une fois ouverte, cliquez sur `Ajouter un compte`{.action}, saisissez votre adresse e-mail complète dans le formulaire intitulé `Entrez votre adresse de courrier`{.action} puis cliquez sur `Continuer`{.action}.
 
@@ -61,13 +62,14 @@ Dès lors, deux choix de configuration vous sont proposés en bas de votre écra
 
 > [!success]
 >
-> Le protocole de synchronisation **IMAP** va permettre de récupérer une *image* des e-mails présents dans votre adresse *E-mail Pro* côté serveur pour l'afficher dans votre application Microsoft Outlook.
+> Le protocole de synchronisation **IMAP** permet de récupérer une *image* des e-mails présents dans votre adresse *E-mail Pro* côté serveur pour l'afficher dans votre application Microsoft Outlook.
 > Ceci **sans** supprimer le mail du serveur *E-mail Pro* où se trouve votre adresse e-mail. Ce protocole est très utile notamment si vous avez plusieurs appareils configurés avec votre adresse e-mail.
 >
 > Le protocole **POP3** va, par défaut, récupérer l'e-mail reçu sur le serveur *E-mail Pro* où se trouve votre adresse e-mail pour le garder dans l'application / le logiciel configuré avec cette dernière. De ce fait l'e-mail n'est plus présent sur le serveur *E-mail Pro* mais uniquement sur l'appareil configuré avec votre adresse e-mail via le protocole POP.
 > Ce protocole n'est pas recommandé si vous avez plusieurs appareils configurés avec votre adresse e-mail. En effet, l'e-mail ne sera présent que sur l'un des appareils configuré en **POP3** et pas sur l'ensemble des appareils configurés avec votre adresse e-mail.
-> Cependant et malré une configuration en **POP3**, certaines applications / logiciels de messagerie renvoient tout de même une copie de l'e-mail sur le serveur e-mail où se trouve votre adresse e-mail. Cette copie peut rester de manière temporaire ou permanente.
-> Pour savoir si votre application / logiciel fait partie de ceux-là, contactez l'éditeur du logiciel directement.
+>
+> Cependant et malgré une configuration en **POP3**, certains logiciels de messagerie / applications renvoient tout de même une copie de l'e-mail sur le serveur où se trouve votre adresse e-mail. Cette copie peut rester de manière temporaire ou permanente.
+> Pour savoir si votre application / logiciel fait parti de ceux-là, contactez l'éditeur du logiciel directement.
 >
 >
 
@@ -79,7 +81,7 @@ Sur la nouvelle page qui s'affiche, votre adresse e-mail est pré-remplie.
 
 Saisissez le mot de passe de votre adresse *E-mail Pro* dans le formulaire `Mot de passe`{.action} juste en dessous de l'endroit où votre adresse e-mail est déjà pré-remplie.
 
-Dans les deux formulaires qui suivent et de manière totalement **facultative**, vous pouvez également renseigner un `Nom complet`{.action} et une `Description`{.action}.
+Dans les deux formulaires qui suivent et de manière totalement **facultative**, vous pouvez renseigner un `Nom complet`{.action} et une `Description`{.action}.
 
 Pour poursuivre, cochez le bouton intitulé `PARAMETRES AVANCÉS`{.action} pour faire apparaître le reste du menu de configuration.
 
@@ -111,7 +113,7 @@ Sur la nouvelle page qui s'affiche, votre adresse e-mail est pré-remplie.
 
 Saisissez le mot de passe de votre adresse *E-mail Pro* dans le formulaire `Mot de passe`{.action} juste en dessous de l'endroit où votre adresse e-mail est déjà pré-remplie.
 
-Dans les deux formulaires qui suivent et de manière totalement **facultative**, vous pouvez également renseigner un `Nom complet`{.action} et une `Description`{.action}.
+Dans les deux formulaires qui suivent et de manière totalement **facultative**, vous pouvez renseigner un `Nom complet`{.action} et une `Description`{.action}.
 
 Pour poursuivre, cochez le bouton intitulé `PARAMETRES AVANCÉS`{.action} pour faire apparaître le reste du menu de configuration.
 
