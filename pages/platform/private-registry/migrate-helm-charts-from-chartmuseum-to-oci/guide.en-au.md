@@ -3,10 +3,8 @@ title: "Migrate Helm Charts from Chartmuseum to OCI"
 excerpt: "Find out how to migrate Helm Charts From Chartmuseum (Harbor < 2.8) to OCI"
 routes:
     canonical: '/pages/platform/private-registry/migrate-helm-charts-from-chartmuseum-to-oci'
-updated: 2023-06-28
+updated: 2023-07-18
 ---
-
-**Last updated 28th June, 2023.**
 
 <style>
  pre {
@@ -33,13 +31,15 @@ The OVHcloud Managed Private Registry service provides you a managed, authentica
 
 Managed Private Registry is built on top of Open Source solution [Harbor](https://github.com/goharbor/harbor), to guarantee its interoperability.
 
-[Harbor](https://github.com/goharbor/harbor) supports two different ways to store the Helms charts data:
+[Harbor](https://github.com/goharbor/harbor) supports two different ways to store the Helm charts data:
+
+
 1. Harbor registry storage directly via OCI API.
 2. Harbor hosted Chartmuseum backend via Chartmuseum's API.
 
 From Harbor version 2.6, [Chartmuseum](https://github.com/helm/chartmuseum) is deprecated and is removed from Harbor version 2.8.
 
-## How to know if I have Helm charts stored inside Chartmuseum ?
+## How to know if I have Helm charts stored inside Chartmuseum?
 
 Follow the guide [Connecting to the UI](/pages/platform/private-registry/connecting-to-the-ui) to connect to your registry.
 
@@ -101,7 +101,7 @@ $ docker run -ti --rm ovhcloud/harbor-chartmuseum-migrator --url $HARBOR_URL --u
 
 > [!primary]
 >
-> Important: the tool copies Helm charts but don't delete them from Chartmuseum.
+> Important: The tool copies Helm charts but don't delete them from Chartmuseum.
 
 ### Use OCI Helm charts
 
