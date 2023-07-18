@@ -14,7 +14,7 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 | Rôles |
 | --- |
 |R : Est en charge de la Réalisation du processus|
-|A : Est Approbateur de la réalisation du processus|
+|A : Est Approbateur de la finalisation du processus|
 |C : Est Consulté pendant le processus|
 |I : est Informé des résultats du processus|
 
@@ -72,7 +72,7 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 | Configurer et administrer la solution Nutanix | RA |  |
 | Administrer les applicatifs installés sur la couche de virtualisation Nutanix  | RA |  |
 | Demander le remplacement d'un matériel défectueux sur le Serveur Dédié | RA | CI |
-| Réaliser l’ajout / suppression du matériel défectueux  sur le Serveur Dédié | CI | RA |
+| Réaliser l’ajout / suppression du matériel défectueux sur le Serveur Dédié | CI | RA |
 | Gérer les risques liés au SI installé | RA |  |
 | Déployer et s'assurer du bon fonctionnement de la politique de backups sur le SI du client | RA |  |
 
@@ -94,7 +94,7 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 | Suivre les performances des ressources physiques | RA | CI |
 | Conserver les logs d'administration du cluster Nutanix rendus disponibles via les différents outils Nutanix (ex : Prism, SSH, CLI) ou via des outils tiers  et du SI hébergé | RA |  |
 | Conserver les logs du Control Plane qui supervise et administre le service Nutanix on OVHcloud |  | RA |
-| Suivre les performances du cluster Nutanix (alertes incidents, rapport d'utilisation, etc ..) et autres  logiciels installés par le client sur son SI | RA |  |
+| Suivre les performances du cluster Nutanix (alertes incidents, rapport d'utilisation, etc ..) et autres logiciels installés par le client sur son SI | RA |  |
 | Suivre les performances utilisation du service IPLB intégré à l'offre Nutanix on OVHcloud (via les graphiques de performance) | RA | I |
 
 
@@ -151,7 +151,7 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 
 | **Activité** | **Client** | **OVHcloud** |
 | --- | --- | --- |
-| Déployer les correctifs, mettre à jour et configurer la couche de virtualisation Nutanix ainsi que les  softwares, middlewares et SI hébergé | RA |  |
+| Déployer les correctifs, mettre à jour et configurer la couche de virtualisation Nutanix ainsi que les softwares, middlewares et SI hébergé | RA |  |
 | Mettre à disposition la nouvelle version du firmware du serveur dédié | I | RA |
 | Mettre à jour les machines virtuelles | RA |  |
 | Valider la demande d’un changement de matériel défectueux d’infrastructure soumise par OVHcloud | A | R |
@@ -170,7 +170,7 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 
 | **Activité** | **Client** | **OVHcloud** |
 | --- | --- | --- |
-| Exporter les machines virtuelles vers des infrastructures compatibles avec la solution Nutanix (VMware, Hyper-V, AHV)  manuellement ou via l'outil Nutanix Move  | RA | C |
+| Exporter les machines virtuelles vers des infrastructures compatibles avec la solution Nutanix (VMware, Hyper-V, AHV) manuellement ou via l'outil Nutanix Move  | RA | C |
 | Migrer / transférer les données | RA |  |
 
 ### 5. Fin de service
