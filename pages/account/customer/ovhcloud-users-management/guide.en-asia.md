@@ -19,8 +19,8 @@ With OVHcloud, you can create additional users with read or write access to your
 
 ## Requirements
 
-- an active OVHcloud account
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
+- An active OVHcloud account
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
 
 ## Instructions
 
@@ -42,10 +42,10 @@ A window will pop up, and you will need to complete the required fields. Click `
 | ID | Enter the user’s name or their role, for example. |
 | Email | Enter the user’s full email address. |
 | Password | Set the user password. The user can then change this password once their access has been created. <br>We also suggest reading our [guide on password management](/pages/account/customer/manage-ovh-password) to define this password. |
-| Group | Choose a group from those available |
+| Group | Choose a group from those available. |
 | Description | You can add a user description (such as their role within the company). |
 
-The user then gets their own ID made up of your account’s digital ID (which is listed in the “User management” menu) and their username, with the two values separated by a “/”.
+The user then gets their own ID made up of your account’s numeric ID (which is listed in the “User management” menu) and their username, with the two values separated by a “/”.
 
 Example: **1234-567-89/johnsmith**.
 
@@ -81,7 +81,7 @@ Groups give a default privilege level for the users they contain, according to t
 
 | Role | Details |
 |------------------|----------------------------------------------------------------------------------------------------------------------|
-| None | Gives no access to the OVHcloud Control Panel if no IAM policy is set-up. |
+| None | Gives no access to the OVHcloud Control Panel if no IAM policy is set up. |
 | Read-Only | Gives read access to the OVHcloud Control Panel and all of its sections. |
 | Restricted Admin | Gives write access to the OVHcloud Control Panel and all of its sections, **except for** user management. |
 | Administrator | Gives write access to the OVHcloud Control Panel and all of its sections, **including** user management. |
@@ -96,10 +96,10 @@ When you edit a group you can update its description and role.
 
 ![users-management](images/usersmanagement10.png){.thumbnail}
 
-### Right management
+### Rights management
 
-On top of the role associate to users groups, you can fine tune access privileges using OVHcloud IAM.
-OVHcloud IAM policies management is cover on the [dedicated guide](/pages/account/customer/iam-policy-ui)
+On top of the role associated to user groups, you can fine-tune access privileges using OVHcloud IAM.
+OVHcloud IAM policies management is covered by the [dedicated guide](/pages/account/customer/iam-policy-ui).
 
 ## Go further
 
