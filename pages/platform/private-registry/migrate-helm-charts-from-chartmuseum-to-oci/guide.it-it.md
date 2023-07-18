@@ -100,7 +100,7 @@ $ docker run -ti --rm ovhcloud/harbor-chartmuseum-migrator --url $HARBOR_URL --u
 
 > [!primary]
 >
-> Important: The tool copies Helm charts but don't delete them from Chartmuseum.
+> Important: The tool copies Helm charts but does not delete them from Chartmuseum.
 
 ### Use OCI Helm charts
 

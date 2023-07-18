@@ -570,6 +570,7 @@
             + [Restore a backup](platform/databases/databases_06_restore_backup)
             + [Handling "Disk Full" situations](platform/databases/databases_10_full_disk_handling)
             + [Resize your cluster storage](platform/databases/databases_11_resize_your_cluster_storage)
+            + [Update your cluster flavor](platform/databases/databases_13_update_your_cluster_flavor)
             + [Automated Backups](platform/databases/databases_05_automated_backups)
             + [Getting started with Kubernetes database operator](platform/databases/databases_12_operator)
             + [Cross Service Integration](platform/databases/databases_07_cross_service_integration)
