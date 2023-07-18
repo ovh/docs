@@ -1,10 +1,8 @@
 ---
 title: Redis - Capabilities and Limitations
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for Redis
-updated: 2023-05-23
+updated: 2023-07-03
 ---
-
-**Last updated May 23rd, 2023**
 
 ## Objective
 
@@ -46,7 +44,6 @@ Three plans are available:
 
 - *Essential*
 - *Business*
-- *Enterprise*
 
 Here is an overview of the various plans' capabilities:
 
@@ -54,7 +51,6 @@ Here is an overview of the various plans' capabilities:
 | ------------ | -------------------------- | ---------------- |
 | *Essential*  | 1                          | No               |
 | *Business*   | 2                          | No               |
-| *Enterprise* | 3                          | No               |
 
 Your choice of plan affects the number of nodes your cluster can run, the SLA, and a few other features such as read replicas or backup retention.
 
@@ -65,11 +61,13 @@ Your choice of plan affects the number of nodes your cluster can run, the SLA, a
 
 - **Essential**: the cluster can support at most one node.
 - **Business**: the cluster is delivered with 2 nodes by default.
-- **Enterprise**: the cluster is delivered with 3 nodes by default.
 
 #### License type
 
 Redis Community software is under the 3-Clause-BSD license, a liberal open-source license.
+
+Redis Stack and all Redis modules created by Redis Ltd. (e.g., RediSearch, RedisJSON, RedisGraph, RedisTimeSeries, and RedisBloom) are dual-licensed under the Redis Source Available License v2 (RSALv2) and SSPL. The RSALv2 license model prohibits OVHcloud, and any other service provider, from offering these modules to third parties as a service. So **these modules are not available**.
+
 More information on <https://redis.com/legal/licenses/>.
 
 ### Hardware resources
@@ -121,8 +119,6 @@ You can further customise your Redis by using advanced parameters. See the [Adva
 *Essential* plan clusters are automatically backed up every 12 hours during their maintenance window. Backup retention is 1 day.
 
 *Business* plan clusters are automatically backed up every 12 hours during their maintenance window. Backup retention is 3 days.
-
-*Enterprise* plan clusters are automatically backed up every 12 hours during their maintenance window. Backup retention is 13 days.
 
 See the [Automated Backups guide](/pages/platform/databases/databases_05_automated_backups) for more information.
 

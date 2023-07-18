@@ -1,10 +1,10 @@
 ---
 title: Configure your Private Network
 excerpt: Connect a Public Cloud Database to vRack
-updated: 2022-10-26
+updated: 2023-07-07
 ---
 
-**Last updated October 26, 2022**
+**Last updated 7th July 2023**
 
 ## Objective
 
@@ -23,36 +23,7 @@ The OVHcloud vRack is a private network solution that enables our customers to r
 
 ### Step 1 - Creating a virtual network
 
-The first step is to create the virtual network that will be used in your vRack.
-
-To proceed, from the `Public cloud`{.action} tab, click on the `Private Network`{.action} menu, then click on the `Add Private Network`{.action} button.
-
-![Add virtual network](images/redis_tuto_02_vrack-20220829161637685.png){.thumbnail}
-
-You can define yourself a **VLAN ID** for your virtual network. Value must be between 2 and 4,000.
-
-Define your own range or let dynamic address distribution if you want to use DHCP.
-
-By default, the 10.0.0.0/16 CIDR address is defined. Different subnets can be added later.
-
-![Configure virtual network](images/redis_tuto_02_vrack-20220829161937143.png){.thumbnail}
-
-Choose the regions where you want your virtual network to operate.
-
-The subnets addresses are automatically ajusted, depending on the number of regions you choose.
-
-![Choose regions](images/redis_tuto_02_vrack-20220829162300168.png){.thumbnail}
-
-Give a name to your virtual network.
-
-![Name virtual network](images/redis_08_vrack_06.png){.thumbnail}
-
-Your vRack is ready!
-
-> [!primary]
->
-> Learn more about vRack [here](/pages/platform/network-services/getting-started-07-creating-vrack)
->
+The first step is to create the virtual network that will be used in your vRack. To proceed, consult this [guide](/pages/platform/network-services/getting-started-07-creating-vrack).
 
 ### Step 2 - Creating a Public Cloud Database connected to the private network
 

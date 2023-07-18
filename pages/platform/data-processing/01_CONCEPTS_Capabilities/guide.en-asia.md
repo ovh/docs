@@ -1,10 +1,10 @@
 ---
 title: Data Processing Capabilities and Limitations
 excerpt: Find out what are the current capabilities and limitations of the OVHcloud Data Processing Platform 
-updated: 2023-05-12
+updated: 2023-07-11
 ---
 
-**Last updated May 12th, 2023**
+**Last updated July 11th, 2023**
 
 ## Objective 
 
@@ -31,6 +31,7 @@ Data can be processed in two ways:
 
 At this moment, the following engines are supported by Data Processing Jobs:
 
+- Spark 3.4.1 (Scala 2.13.7 and Hadoop 3.3.1)
 - Spark 3.4.0 (Scala 2.13.7 and Hadoop 3.3.1)
 - Spark 3.3.2 (Scala 2.13.7 and Hadoop 3.3.1)
 - Spark 3.3.1 (Scala 2.13.7 and Hadoop 3.3.1)

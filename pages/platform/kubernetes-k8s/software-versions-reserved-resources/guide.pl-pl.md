@@ -3,10 +3,10 @@ title: Kubernetes Plugins (CNI, CRI, CSI...) & softwares versions and reserved r
 excerpt: ''
 routes:
     canonical: '/pages/platform/kubernetes-k8s/software-versions-reserved-resources'
-updated: 2023-05-09
+updated: 2023-07-04
 ---
 
-**Last updated May 09<sup>th</sup>, 2023.**
+**Last updated July 04<sup>th</sup>, 2023.**
 
 We list here some details on the Control Panel, the plugins (CNI, CRI, CSI...) & software versions we use and the resources we reserve on each Node.
 
@@ -14,7 +14,6 @@ We list here some details on the Control Panel, the plugins (CNI, CRI, CSI...) &
 
 Currently, we support the following Kubernetes releases:
 
-* `1.21` (deprecated)
 * `1.22` (deprecated)
 * `1.23` (deprecated)
 * `1.24`
@@ -27,18 +26,18 @@ You will find more details about our [End-of-Sale, End-of-Service and End-of-lif
 
 We will closely follow the Kubernetes releases, and new versions will be regularly available.
 
-## OS and Docker versions
+## OS, kernel and Docker versions
 
-The OS and Docker demon version on your nodes will be regularly updated. Current versions are:
+The OS, kernel and Docker demon version on your nodes will be regularly updated. Current versions are:
 
 * OS: Ubuntu 22.04 LTS
+* Kernel: 5.15-generic
 * Docker: 23.0.1
 
 ## CRI (Container Runtime Interface)
 
 We use `containerd` as the default CRI
 
-* `1.21`: 1.6.18 (deprecated)
 * `1.22`: 1.6.18 (deprecated)
 * `1.23`: 1.6.18 (deprecated)
 * `1.24`: 1.6.18
@@ -51,7 +50,6 @@ The CNI plugin installed is [canal](https://github.com/projectcalico/canal){.ext
 
 The versions installed depends on the Kubernetes version:
 
-* `1.21`: calico v3.23.5, flannel v0.17.0 (deprecated)
 * `1.22`: calico v3.24.5, flannel v0.17.0 (deprecated)
 * `1.23`: calico v3.25.1, flannel v0.17.0 (deprecated)
 * `1.24`: calico v3.25.1, flannel v0.17.0
@@ -64,7 +62,6 @@ The CSI plugin installed is [cinder](https://github.com/kubernetes/cloud-provide
 
 The versions depend on the Kubernetes cluster version:
 
-* `1.21`: csi-plugin v1.21.0, csi-attacher v3.4.0, csi-provisioner v3.1.0, csi-snapshotter v5.0.1, snapshot-controller: v4.2.1, csi-resizer v1.4.0 (deprecated)
 * `1.22`: csi-plugin v1.21.0, csi-attacher v3.4.0, csi-provisioner v3.1.0, csi-snapshotter v5.0.1, snapshot-controller: v4.2.1, csi-resizer v1.4.0 (deprecated)
 * `1.23`: csi-plugin v1.21.0, csi-attacher v3.4.0, csi-provisioner v3.1.0, csi-snapshotter v5.0.1, snapshot-controller: v4.2.1, csi-resizer v1.4.0 (deprecated)
 * `1.24`: csi-plugin v1.21.0, csi-attacher v3.5.0, csi-provisioner v3.2.1, csi-snapshotter v6.0.1, snapshot-controller: v6.0.1, csi-resizer v1.5.0
@@ -75,7 +72,6 @@ The versions depend on the Kubernetes cluster version:
 
 The versions are:
 
-* `1.21`: coredns v1.10.1, metrics-server v0.6.3 (deprecated)
 * `1.22`: coredns v1.10.1, metrics-server v0.6.3 (deprecated)
 * `1.23`: coredns v1.10.1, metrics-server v0.6.3 (deprecated)
 * `1.24`: coredns v1.10.1, metrics-server v0.6.3
@@ -87,7 +83,6 @@ The versions are:
 * [Network policies](https://kubernetes.io/docs/concepts/services-networking/network-policies/){.external}
 * [Resource quotas](https://kubernetes.io/docs/concepts/policy/resource-quotas/){.external}
 * [Limit range](https://kubernetes.io/docs/concepts/policy/limit-range/){.external}
-
 
 Authorization modes:
 

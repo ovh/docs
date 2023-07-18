@@ -3,7 +3,7 @@ title: Data Integration - CLI - Installation
 excerpt: Learn how to install the Data Integration CLI
 routes:
     canonical: 'https://help.ovhcloud.com/csm/en-gb-public-cloud-data-analytics-data-integration-cli-installation?id=kb_article_view&sysparm_article=KB0058598'
-updated: 2023-06-27
+updated: 2023-07-07
 ---
 
 ## Objective
@@ -93,6 +93,14 @@ Go back to your terminal and use your newly created API keys to complete the CLI
 - Finally copy the `consumer key` from your browser and paste it.
 
 You should receive a feedback message informing you that you are now logged in.
+
+![image](images/03_login_success.png){.thumbnail}
+
+Finalize the login process by setting the service name corresponding to your Public Cloud project identifier:
+
+``` {.console}
+ovhdata-cli config set-service-name a7b3ecad6e4a52b0b33dfd5ba7eb4199
+```
 
 ### Step 6: Using the command line CLI
 

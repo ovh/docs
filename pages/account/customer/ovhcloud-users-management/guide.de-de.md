@@ -41,7 +41,7 @@ Klicken Sie anschließend auf den Tab `Verwaltung der Nutzer`{.action} (3) und d
 Füllen Sie im neu geöffneten Fenster alle erforderlichen Felder aus. Klicken Sie auf `Bestätigen`{.action}, um den Benutzer zu erstellen.
 
 ![Benutzerverwaltung](images/usersmanagement2.png){.thumbnail}
-
+ 
 | Feld | Beschreibung |
 |--------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Kennung | Geben Sie zum Beispiel den Namen des Benutzers oder dessen Funktion ein. |
@@ -50,7 +50,7 @@ Füllen Sie im neu geöffneten Fenster alle erforderlichen Felder aus. Klicken S
 | Gruppe | Wählen Sie eine der verfügbaren Gruppen aus. |
 | Beschreibung | Sie können eine Benutzerbeschreibung hinzufügen, beispielsweise die Rolle in Ihrem Unternehmen. |
 
-Der Benutzer erhält im Anschluss eine eigene Kundenkennung bestehend aus der numerischen ID Ihres Accounts (die Sie im Bereich “Verwaltung der Benutzer” nachlesen können) und dem Benutzernamen, wobei beide Werte durch ein “/” getrennt sind.
+Der Benutzer erhält im Anschluss eine eigene Kundenkennung bestehend aus der numerischen ID Ihres Accounts (die Sie im Bereich "Verwaltung der Nutzer" finden können) und dem Benutzernamen, wobei beide Werte durch ein “/” getrennt sind.
 
 Beispiel: **1234-567-89/johnsmith**.
 

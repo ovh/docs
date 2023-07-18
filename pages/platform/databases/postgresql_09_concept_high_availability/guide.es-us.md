@@ -105,9 +105,9 @@ OVHcloud also detects when a whole datacenter is lost. As a user, your cluster w
 
  Automatic backups are first performed on-site (i.e. in the same region as the service), then replicated off-site, to another datacenter.
 
-In case of a Datacenter failure, the recovery strategy involves creating a new service in another region, either using the fork (from the backup feature) from an automatic backup that was replicated off-site, or restoring from backups performed manually (e.g. `pg_restore` as previously performed `pg_dump`).
-You will then need to configure the freshly created service (e.g. adding users, IP restrictions, ..) and reconfigure applications consuming the database service to use new services URIs and credentials.
-In both cases the Recovery Time Objective will vary, depending of multiples parameters such as the amount of data to restore, network congestion and latency or node performances. It can go from a few hours up to a few days.
+In case of datacenter failure, the recovery strategy involves creating a new service in another region, either duplicating it from an automatic backup (creating a fork) that was replicated off-site, or restoring from backups performed manually (e.g. `pg_restore` a previously performed `pg_dump`).
+You will then need to configure the newly created service (e.g. adding users, IP restrictions, etc.) and reconfigure applications consuming the database service to use new services URIs and credentials.
+In both cases the Recovery Time Objective will vary, depending on multiple parameters such as the amount of data to restore, network congestion and latency or node performances. It can take from a few hours up to a few days.
 
 ### Scenarios for Highly available Business and Enterprise service plans
 
@@ -152,9 +152,9 @@ OVHcloud also detects when a whole datacenter is lost. As a user, your cluster w
 
  Automatic backups are first performed on-site (i.e. in the same region as the service), then replicated off-site, to another datacenter.
 
-In case of a Datacenter failure, the recovery strategy involves creating a new service in another region, either using the fork (from the backup feature) from an automatic backup that was replicated off-site, or restoring from backups performed manually (e.g. `pg_restore` as previously performed `pg_dump`).
-You will then need to configure the freshly created service (e.g. adding users, IP restrictions, ..) and reconfigure applications consuming the database service to use new services URIs and credentials.
-In both cases the Recovery Time Objective will vary, depending of multiples parameters such as the amount of data to restore, network congestion and latency or node performances. It can go from a few hours up to a few days.
+In case of datacenter failure, the recovery strategy involves creating a new service in another region, either duplicating it from an automatic backup (creating a fork) that was replicated off-site, or restoring from backups performed manually (e.g. `pg_restore` a previously performed `pg_dump`).
+You will then need to configure the newly created service (e.g. adding users, IP restrictions, etc.) and reconfigure applications consuming the database service to use new services URIs and credentials.
+In both cases the Recovery Time Objective will vary, depending on multiple parameters such as the amount of data to restore, network congestion and latency or node performances. It can take from a few hours up to a few days.
 
 ## We want your feedback!
 

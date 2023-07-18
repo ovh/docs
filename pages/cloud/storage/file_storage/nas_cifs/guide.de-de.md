@@ -47,7 +47,7 @@ net use z: \\10.16.101.8\zpool-000206_PARTITION_NAME_1
 
 ## Weiterführende Informationen
 
-[Häufig gestellte Fragen zu NAS](/pages/cloud/storage/file_storage/nas_faq)
+[Häufig gestellte Fragen zu HA-NAS](/pages/cloud/storage/file_storage/nas_faq)
 
 Wenn Sie Schulungen oder technische Unterstützung bei der Implementierung unserer Lösungen benötigen, wenden Sie sich an Ihren Vertriebsmitarbeiter oder klicken Sie auf [diesen Link](https://www.ovhcloud.com/de/professional-services/), um einen Kostenvoranschlag zu erhalten und eine persönliche Analyse Ihres Projekts durch unsere Experten des Professional Services Teams anzufordern.
 

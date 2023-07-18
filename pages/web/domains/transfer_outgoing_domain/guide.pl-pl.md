@@ -1,28 +1,26 @@
 ---
-title: Transfer domeny do innego operatora
-excerpt: Dowiedz się, jak wykonać transfer domeny z OVHcloud do wybranego operatora
-updated: 2023-03-10
+title: "Transfer domeny do innego operatora"
+excerpt: "Dowiedz się, jak wykonać transfer domeny z OVHcloud do wybranego operatora"
+updated: 2023-06-28
 ---
 
 > [!primary]
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
 > 
 
-**Ostatnia aktualizacja z dnia 10-03-2023**
-
 ## Wprowadzenie
 
 **Transfer domeny** odnosi się do przeniesienia domeny z jednego operatora na drugi. Na przykład, jeśli zamówiłeś domenę na naszej stronie internetowej, OVHcloud jest jej aktualnym operatorem. Transfer domeny wychodzącej musi zostać zainicjowany przez nowego operatora.
 
-Aby zapobiec przenoszeniu domeny bez zezwolenia, domeny są zazwyczaj blokowane przez status *clientTransferProhibited*. Ochrona ta musi zostać usunięta w Panelu klienta OVHcloud przed rozpoczęciem transferu.
+Aby zapobiec przenoszeniu domeny bez zezwolenia, domeny są zazwyczaj blokowane statusem *clientTransferProhibited*. Ochrona ta musi zostać usunięta w Panelu klienta OVHcloud przed rozpoczęciem transferu.
 
-**Niniejszy przewodnik wyjaśnia, jak przygotować domenę do transferu wychodzącego.**
+**Dowiedz się, jak przygotować domenę do transferu wychodzącego.**
 
 > [!warning]
 >
 > Jeśli domena ma pozostać zarejestrowana w OVHcloud, ale została zmieniona w sposób umożliwiający zarządzanie domeną lub jej własność, transfer wychodzący z domeny nie jest właściwą procedurą.
 >
-> Aby przenieść zarządzanie domeną na inne konto klienta OVHcloud, należy zmienić kontakt. Procedurę opisano w [tym przewodniku](/pages/account/customer/managing_contacts).
+> Aby przenieść zarządzanie domeną na inne konto klienta OVHcloud, należy **zmienić kontakt**. Procedurę opisano w [tym przewodniku](/pages/account/customer/managing_contacts).
 >
 > Jeśli chcesz zmienić również **właściciela** domeny, musisz to zrobić **przed** zmianą kontaktów domeny. W tym celu postępuj zgodnie z instrukcjami zawartymi w przewodniku OVHcloud dotyczącym [zmiany właściciela domen](/pages/web/domains/trade_domain).
 >
@@ -32,7 +30,7 @@ Aby zapobiec przenoszeniu domeny bez zezwolenia, domeny są zazwyczaj blokowane 
 - Posiadanie [domeny zarejestrowanej](https://www.ovhcloud.com/pl/domains/) w OVHcloud
 - Posiadanie uprawnień do złożenia wniosku o transfer domeny: właściciel i/lub administratorzy domeny powinni zostać poinformowani o wszczęciu takiej procedury. 
 - Dostęp do interfejsu zarządzania domeną w Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
-- Rejestracja tej domeny trwa co najmniej 60 dni i nie została przeniesiona ani wymieniona (tj. zmiana właściciela) w ciągu ostatnich 60 dni
+- Rejestracja tej domeny trwa co najmniej 60 dni **i** nie została przeniesiona ani wymieniona (tj. zmiana właściciela) w ciągu ostatnich 60 dni
 
 > [!primary]
 >
@@ -65,6 +63,17 @@ W zakładce `Informacje ogólne`{.action} znajdziesz suwak `Ochrona przed transf
 
 Kliknij kursor i potwierdź w oknie, które się wyświetli, że chcesz usunąć tę ochronę. Odczekaj kilka minut, aż stan się `Wyłączone`{.action}.
 
+> [!primary]
+>
+> Jeśli pojawi się komunikat "**Wystąpił błąd podczas zlecania wyłączenia ochrony domeny (User not granted for this request)**", oznacza to, że nie masz wystarczających uprawnień do odblokowania domeny. 
+>
+> Ponadto, jeśli pojawi się komunikat: "**AUTH/INFO code : Authcode is not managed by OVHcloud, contact the registry to claim it**", co oznacza, że kod transferu Twojej domeny nie będzie możliwy do pobrania za pośrednictwem [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).  
+> 
+> W obu przypadkach sprawdź, czy jesteś kontaktem **administrator** domeny korzystając z naszego przewodnika do [zarządzanie kontaktami](/pages/account/customer/managing_contacts), a następnie sprawdź, czy rozszerzenie Twojej domeny pozwala na odblokowanie w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+> 
+> Niektóre *kody transferu* są zarządzane bezpośrednio przez *registry* przy rozszerzaniu domeny. *Rejestr* to organizacja, która zarządza wszystkimi domenami dla wybranego rozszerzenia. Na przykład,**AFNIC** zarządza wszystkimi domenami, których rozszerzenie oznacza "*.fr*". W takim przypadku należy skontaktować się bezpośrednio z repozytorium*, które zarządza rozszerzeniem Twojej domeny, aby pobrać *kod transferu*.
+>
+
 ![dezaktywacja](images/outgoing-transfer-step2.png){.thumbnail}
 
 > [!primary]
@@ -79,7 +88,7 @@ Kliknij kursor i potwierdź w oknie, które się wyświetli, że chcesz usunąć
 > Pamiętaj, że zawsze istnieje możliwość odblokowania i odzyskania kodu transferu nazwy domeny po jej wygaśnięciu. Zgodnie z zasadami rejestru, domena w [redemptionPeriod](https://www.icann.org/resources/pages/epp-status-codes-2014-06-16-en) może wymagać przywrócenia w celu przeniesienia. Skontaktuj się z nowym rejestratorem, aby uzyskać szczegóły przeniesienia.
 >
 
-Po odblokowaniu Twojej domeny do transferu, pobierz jej kod transferu.  W tym celu, w zakładce `Informacje ogólne`{.action}, kliknij przycisk `AUTH/INFO`{.action} znajdujący się obok przycisku `Ochrona przed transferem`. Jeśli to konieczne, odśwież stronę.
+Po odblokowaniu Twojej domeny do transferu, pobierz jej kod transferu.  W tym celu, w zakładce `Informacje ogólne`{.action}, kliknij przycisk `AUTH/INFO`{.action} znajdujący się obok przycisku `Ochrona przed transferem`{.action}. Jeśli to konieczne, odśwież stronę.
 
 Wyświetli się wówczas okno zawierające kod AUTH/INFO (zwany również kodem transferu, hasłem domeny, AUTH-CODE lub EPP-Code).
 

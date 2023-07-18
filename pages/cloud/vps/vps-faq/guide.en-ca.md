@@ -1,9 +1,7 @@
 ---
 title: FAQ VPS OVHcloud
-updated: 2022-05-05
+updated: 2023-07-06
 ---
-
-**Last updated 5th May 2022**
 
 ## FAQ VPS
 
@@ -49,13 +47,16 @@ This will help you make the right choice from our VPS solutions:
 - **VPS Starter**: entry-level server to test our solution (with a Linux distribution only, no web hosting control panel).
 - **VPS Value, Essential and Comfort**: ideal for hosting websites, e-commerce services or monitoring systems.
 - **VPS Elite**: adapted for e-commerce websites and applications that require more CPU and memory resources.
+- **VPS Limited Edition** (Limited quantities): this VPS solution offers increased performance, which is a major advantage when it comes to hosting complex websites, resource-intensive applications, and even game servers. This offer is limited and only valid until stocks run out.
 
+> [!primary]
+> You can upgrade a Limited Edition VPS to another VPS from the same range, but for technical reasons, you cannot upgrade a Limited Edition VPS to a VPS from another range (Starter, Value, Essential or Comfort).
 
 ### Who can use a VPS?
 
 Using a VPS requires basic knowledge of server administration. It is essential for managing the operating system (Linux or Windows) installed on the machine, and configuring the applications. Think you might need a VPS, but don’t have the technical knowledge required? We recommend getting in touch with one of our partners. 
 
-If you would like to get guaranteed resources but don't know how to manage servers, we would recommend Performance web [hosting plans](https://www.ovh.com/ca/en/web-hosting/).
+If you would like to get guaranteed resources but don't know how to manage servers, we would recommend Performance web [hosting plans](https://www.ovhcloud.com/en-ca/web-hosting/performance-offer/).
 
 ### How do I connect to my VPS?
 

@@ -1,16 +1,14 @@
 ---
 title: HA-NAS über NFS mounten
 excerpt: "Erfahren Sie hier, wie sich mit Ihrem HA-NAS unter Verwendung einer NFS-Freigabe verbinden"
-updated: 2022-12-06
+updated: 2023-07-06
 ---
 
 > [!primary]
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 06.12.2022**
-
-## Ziel
+## Ziel 
 
 OVHcloud HA-NAS ermöglicht Ihnen die Verwaltung eines über Netzwerk zugänglichen Datei-Storage.
 
@@ -186,6 +184,49 @@ Wenn Sie fertig sind, klicken Sie auf `Next`{.action}. Klicken Sie im letzten Sc
 Ihre HA-NAS Partition wurde nun als Datastore hinzugefügt.
 
 ![ESXI](images/esxi4.png){.thumbnail}
+
+### NFSv3/NFSv4
+
+HA-NAS unterstützt die Protokolle NFSv3 und NFSv4. Deren Verwendung wird im folgenden Abschnitt erklärt.
+
+**Was passiert, wenn die NFS-Version im Befehl nicht angegeben wird?**
+
+In diesem Fall wird Ihr NFS-Client versuchen, sich direkt mit der aktuellsten unterstützten Version zu verbinden.
+Sie können aber auch auswählen, ob Sie NFSv3 oder NFSv4 verwenden möchten.
+
+Um die Verwendung von NFSv3 zu erzwingen, verwenden Sie folgenden Befehl:
+
+```bash
+ubuntu@server:~$ sudo mount -t nfs -o vers=3 IP_HA-NAS:/NFS_PATH /MOUNTING_FOLDER
+```
+
+- Beispiel:
+
+```bash
+ubuntu@server:~$ sudo mount -t nfs -o vers=3 10.1.1.1:/zpool-123456/partition01 /mount/ha_nas
+```
+
+Um die Verwendung von NFSv4 zu erzwingen, verwenden Sie folgenden Befehl:
+
+```bash
+ubuntu@server:~$ sudo mount -t nfs -o vers=4 IP_HA-NAS:/NFS_PATH /MOUNTING_FOLDER
+```
+
+- Beispiel:
+
+```bash
+ubuntu@server:~$ sudo mount -t nfs -o vers=4 10.1.1.1:/zpool-123456/partition01 /mount/ha_nas
+```
+
+Sie können den folgenden Befehl verwenden, um die aktuell verwendete Version festzustellen:
+
+```bash
+ubuntu@server:~$ nfsstat -m
+```
+
+Die Ausgabe zeigt über den Parameter `vers=3` oder `vers=4` das verwendete Protokoll an.
+
+Die oben aufgeführten Befehle können entsprechend in CentOS und Fedora verwendet werden.
 
 ## Weiterführende Informationen
 

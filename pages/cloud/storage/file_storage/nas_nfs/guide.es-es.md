@@ -1,16 +1,14 @@
 ---
 title: "Montaje de un NAS-HA mediante NFS compartido"
 excerpt: "Cómo conectarse a un NAS-HA utilizando un recurso compartido por NFS"
-updated: 2022-12-06
+updated: 2023-07-06
 ---
 
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 > 
 
-**Última actualización: 06/12/2022**
-
-## Objetivo
+## Objetivo 
 
 El servicio NAS-HA de OVHcloud le permite gestionar un almacenamiento de archivos al que podrá acceder desde una red.
 
@@ -111,7 +109,7 @@ Ahora puede acceder a la partición montada en la carpeta especificada.
 >
 > Para automatizar el proceso de montaje cada vez que inicie el servidor, añada la siguiente línea al archivo `/etc/fstab`:
 >
-> `IP_HA-NAS:NFS_PATH /MOUNTING_FOLDER nfs rw 0 0`
+> `IP_HA-NAS:/NFS_PATH /MOUNTING_FOLDER nfs rw 0 0`
 >
 
 ### Fedora
@@ -185,6 +183,49 @@ A continuación, haga clic en `Next`{.action}. Haga clic en `Finish`{.action} en
 La partición NAS-HA está ahora montada en datastores.
 
 ![ESXI](images/esxi4.png){.thumbnail}
+
+### NFSv3/NFSv4
+
+El NAS-HA soporta los protocolos NFSv3 y NFSv4. En este tutorial explicamos cómo se utilizan.
+
+**Qué ocurre si no se especifica la versión durante el pedido NFS?**
+
+En ese caso, el cliente NFS intentará conectarse directamente a la versión más alta de NFS.
+También puede elegir si prefiere utilizar NFSv3 o NFSv4:
+
+Para forzar el uso de NFSv3, utilice el siguiente comando:
+
+```bash
+ubuntu@server:~$ sudo mount -t nfs -o vers=3 IP_HA-NAS:/NFS_PATH /MOUNTING_FOLDER
+```
+
+- Ejemplo:
+
+```bash
+ubuntu@server:~$ sudo mount -t nfs -o vers=3 10.1.1.1:/zpool-123456/partition01 /mount/ha_nas
+```
+
+Para forzar el uso de NFSv4, utilice el siguiente comando:
+
+```bash
+ubuntu@server:~$ sudo mount -t nfs -o vers=4 IP_HA-NAS:/NFS_PATH /MOUNTING_FOLDER
+```
+
+- Ejemplo:
+
+```bash
+ubuntu@server:~$ sudo mount -t nfs -o vers=4 10.1.1.1:/zpool-123456/partition01 /mount/ha_nas
+```
+
+También puede utilizar el siguiente comando para determinar la versión utilizada en el montaje actual:
+
+```bash
+ubuntu@server:~$ nfsstat -m
+```
+
+En la respuesta, el parámetro `vers=3` o `vers=4` le indica cuál es el protocolo utilizado.
+
+El uso de los mandos será similar para CentOS y Fedora.
 
 ## Más información
 
