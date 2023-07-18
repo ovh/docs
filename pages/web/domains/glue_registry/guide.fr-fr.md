@@ -86,9 +86,9 @@ Dans la fenêtre qui s'ouvre sur votre écran, complétez les informations deman
 
 ![glueregistry](images/glue-add-glue.png){.thumbnail}
 
-Dans l'image ci-dessus tout en reprennant l'exemple de l'[étape 1](#step1), le « GLUE » que l'on souhaite ajouter ici (à partir du domaine *domain.tld*) est **dns1.domain.tld**. 
+Dans l'image ci-dessus tout en reprennant l'exemple de l'[étape 1](#step1), le « GLUE » que l'on souhaite ajouter ici (à partir du nom de domaine *domain.tld*) est **dns1.domain.tld**. 
 
-On indique pour ce « GLUE » comme adresses IP de *serveur DNS cible* les adresses IP *111.222.333.443* (IPv4) et *0000:00d0:1:0000::1* (IPv6). Ces IPs correspondent à l'un des deux serveurs DNS utilisés pour *domain.tld* (**dnsX1.ovh.net**). 
+On indique pour ce « GLUE » comme adresses IP de *serveur DNS cible* les adresses IP *111.222.333.443* (IPv4) et *0000:00d0:1:0000::1* (IPv6). Ces IPs correspondent à l'un des deux serveurs DNS actuellement utilisés pour *domain.tld* (**dnsX1.ovh.net**). 
 
 On ajoute ce « GLUE » pour que **dns1.domain.tld** puisse, à la fin, remplacer le nom de serveur DNS **dnsX1.ovh.net** actuellement utilisé par le nom de domaine *domain.tld*.
 
@@ -96,7 +96,7 @@ Une fois les informations complétées, cliquez sur le bouton `Ajouter`{.action}
 
 Dans notre exemple, vous devrez réitérer l'opération pour créer le « GLUE » **dns2.domain.tld**. Ce dernier remplacera par la suite le serveur DNS **dnsX2.ovh.net**  actuellement associé aux IPv4 *111.222.333.444* et IPv6 *0000:00d0:1:0000::2*
 
-### Étape 3 : créer les enregistrements A DNS correspondants aux DNS personnalisés
+### Étape 3 : créer les enregistrements DNS de type A et AAAA correspondants aux DNS personnalisés
 
 Vous devez créer les enregistrements *A* et *AAAA* pour les noms d'hôtes que vous avez définis lors de l'étape précédente. Les enregistrements *A* et *AAAA* doivent avoir pour cible l'adresse IP de destination correspondante au nom d'hôte créé précédemment.
 
@@ -104,7 +104,7 @@ Cette manipulation s'effectue depuis l’interface du prestataire gérant la con
 
 - **votre nom de domaine n'utilise pas une zone DNS active chez OVHcloud** : rapprochez-vous du prestataire gérant cette dernière. Une fois la manipulation effectuée, poursuivez vers l'étape suivante ;
 
-- **votre nom de domaine utilise une zone DNS active chez OVHcloud** : Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} puis rendez-vous dans la partie `Web Cloud`. Dans la colonne de gauche, cliquez sur `Noms de domaine`{.action} puis sélectionnez *le nom de domaine que vous avez utilisé pour créer les « GLUE » lors de l'[étape 2](#step2)*. Positionnez-vous sur l'onglet `Zone DNS`{.action} puis cliquez sur `Ajouter une entrée`{.action}. Sélectionnez l'entrée de type *A* ou *AAAA* en fonction du type d'IP associée. Suivez les étapes en renseignant le *sous-domaine* et l'adresse *IPv4* (A) / *IPv6* (AAAA) puis poursuivez jusqu'à la validation de l'ajout. Si nécessaire, reportez-vous aux instructions décrites dans notre documentation « [Éditer une zone DNS OVHcloud](/pages/web/domains/dns_zone_edit) ».
+- **votre nom de domaine utilise une zone DNS active chez OVHcloud** : Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} puis rendez-vous dans la partie `Web Cloud`. Dans la colonne de gauche, cliquez sur `Noms de domaine`{.action} puis sélectionnez *le nom de domaine que vous avez utilisé pour créer les « GLUE » lors de l'[étape 2](#step2)*. Positionnez-vous sur l'onglet `Zone DNS`{.action} puis cliquez sur `Ajouter une entrée`{.action}. Sélectionnez l'entrée de type *A* ou *AAAA* en fonction du type d'IP associée que vous souhaitez ajouter. Suivez les étapes en renseignant le *sous-domaine* et l'adresse *IPv4* (A) ou *IPv6* (AAAA) puis poursuivez jusqu'à la validation de l'ajout. Si nécessaire, reportez-vous aux instructions décrites dans notre documentation « [Éditer une zone DNS OVHcloud](/pages/web/domains/dns_zone_edit) ».
 
 ![glueregistry](images/glue-dns-zone-add.png){.thumbnail}
 
@@ -119,24 +119,24 @@ De ce fait, on ajoute les enregistrements suivants dans la zone DNS active du no
 
  - Un enregistrement DNS de type *A* pour le *sous-domaine* **dns1.domain.tld** vers l'IP *111.222.333.443* (IPv4 du serveur DNS **dnsX1.ovh.net**) ;
  - Un enregistrement DNS de type *AAAA* pour le *sous-domaine* **dns1.domain.tld** vers l'IP *0000:00d0:1:0000::1* (IPv6 du serveur DNS **dnsX1.ovh.net**) ;
- - Un enregistrement DNS de type *A* pour le *sous-domaine* **dns2.domain.tld** vers l'IP *111.222.333.444* (IPv4 du serveur DNS **dnsX1.ovh.net**) ;
- - Un enregistrement DNS de type *AAAA* pour le *sous-domaine* **dns2.domain.tld** vers l'IP .*0000:00d0:1:0000::2* (IPv6 du serveur DNS **dnsX1.ovh.net**).
+ - Un enregistrement DNS de type *A* pour le *sous-domaine* **dns2.domain.tld** vers l'IP *111.222.333.444* (IPv4 du serveur DNS **dnsX2.ovh.net**) ;
+ - Un enregistrement DNS de type *AAAA* pour le *sous-domaine* **dns2.domain.tld** vers l'IP .*0000:00d0:1:0000::2* (IPv6 du serveur DNS **dnsX2.ovh.net**).
 
  On patiente le temps de la propagation DNS.
 
 ### Étape 4 : modifier les serveurs DNS de votre nom de domaine
 
-Vous devez modifier les serveurs DNS de votre nom de domaine en remplaçant les anciens serveurs DNS par les DNS personnalisés créés précédemment.
+Vous devez modifier les serveurs DNS de votre nom de domaine en remplaçant les anciens serveurs DNS par les serveurs DNS personnalisés créés précédemment.
 
 Pour cela, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} puis rendez-vous dans la partie `Web Cloud`. Dans la colonne de gauche, cliquez sur `Noms de domaine`{.action} puis sélectionnez *le nom de domaine pour lequel vous souhaitez personnaliser les serveurs DNS*.
  
-Positionnez-vous sur l'onglet `Serveurs DNS`{.action} puis cliquez sur `Modifier les serveurs DNS`{.action}. Remplacez alors vos serveurs DNS actuels par ceux que vous souhaitez utiliser. 
+Positionnez-vous sur l'onglet `Serveurs DNS`{.action} puis cliquez sur `Modifier les serveurs DNS`{.action}. Remplacez alors vos serveurs DNS actuels par ceux que vous souhaitez utiliser en tant que serveur DNS personnalisés. 
 
-Finalisez les étapes et, si nécessaire, reportez-vous aux instructions décrites dans notre documentation « [Modifier les serveurs DNS d’un nom de domaine OVHcloud](/pages/web/domains/dns_server_general_information){.external} ».
+Finalisez les étapes et, si nécessaire, reportez-vous aux instructions décrites dans notre documentation « [Modifier les serveurs DNS d’un nom de domaine OVHcloud](/pages/web/domains/dns_server_general_information) ».
 
 > [!primary]
 > 
-> Si vous avez personnalisé des serveurs DNS sur un nom de domaine pour les utiliser avec un autre nom de domaine enregistré ailleurs que chez OVHcloud, rapprochez-vous du prestataire où est enregistré votre autre nom de domaine pour modifier les serveurs DNS.
+> Si vous avez personnalisé des serveurs DNS sur un nom de domaine pour les utiliser avec un autre nom de domaine qui n'est pas enregistré chez OVHcloud, rapprochez-vous du prestataire où est enregistré votre autre nom de domaine pour modifier les serveurs DNS.
 >
 
 ![glueregistry](images/glue-dns-servers-modify.png){.thumbnail}
@@ -168,7 +168,7 @@ Une fenêtre comprenant votre zone DNS en mode *textuel* apparaît :
 > Faites appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) en cas de doute.
 >
 
-Dans cette fenêtre, vous devrez remplacer les noms des serveurs DNS par vos propres noms de serveurs DNS personnalisés **sans oublier** d'incrémenter de "1" le premier groupe de chiffres de la ligne *SOA*. Une fois vos modifications faites, cliquez sur `Suivant`{.action} puis sur `Valider`{.action}.
+Dans cette fenêtre, remplacez **uniquement dans les enregistrements de type *NS*** les noms des serveurs DNS par vos propres noms de serveurs DNS personnalisés **sans oublier** d'incrémenter de "1" la première valeur numérique de la ligne *SOA*. Une fois vos modifications faites, cliquez sur `Suivant`{.action} puis sur `Valider`{.action}.
 
 La modification ne sera pas visible immédiatement dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Patientez une vingtaine de minutes puis reconnectez-vous à votre espace client OVHcloud pour observer la bonne prise en compte de vos modifications.
 
@@ -181,15 +181,15 @@ Pour mieux comprendre cette dernière étape, reprennons notre exemple avec le n
 
 On y observe les éléments suivants : 
 
-- le premier groupe de chiffres de la ligne *SOA* est le suivant : *2023071700* ;
+- la première valeur numérique de la ligne *SOA* est la suivante : *2023071700* ;
 - il y a deux enregistrements de type *NS* pour le nom de domaine *domain.tld* ;
 - les enregistrements de type *NS* ciblent encore les deux serveurs DNS **dnsX1.ovh.net** et **dnsX2.ovh.net**.
 
-Pour finaliser la personnalisation des serveurs DNS pour le nom de domaine *domain.tld* nous allons :
+Pour finaliser la personnalisation des serveurs DNS pour le nom de domaine *domain.tld* il faut :
 
-- incrémenter de "1" le premier groupe de chiffres de la ligne *SOA* : *202307170**1***. (Notez que si le groupe de chiffres était le suivant :*2023071704*, on incrémenterait toujours de "1" et on obtiendrait alors le résultat suivant : *202307170**5*** ) ;
-- remplacer la cible **dnsX1.ovh.net.** par **dns1.domain.tld.** ;
-- remplacer la cible **dnsX2.ovh.net.** par **dns2.domain.tld.**.
+- incrémenter de "1" la première valeur numérique de la ligne *SOA* : *202307170**1***. (Notez que si la première valeur numérique était la suivante :*2023071704*, on incrémenterait toujours de "1" et on obtiendrait alors le résultat suivant : *202307170**5*** ) ;
+- remplacer la cible **dnsX1.ovh.net.** par **dns1.domain.tld.** uniquement pour la ligne qui débute par **IN NS**;
+- remplacer la cible **dnsX2.ovh.net.** par **dns2.domain.tld.** uniquement pour la ligne qui débute par **IN NS**.
 
 Une fois les modifications faites, le résultat de notre exemple serait le suivant :
 
@@ -200,7 +200,7 @@ $TTL 3600
                   IN NS     dns2.domain.tld.
 ```
 
-Pour notre nom de domaine *domain.tld* les serveurs qui s'afficheront après la prise en compte de la modification et la propagation DNS seront désormais **dns1.domain.tld.** et **dns2.domain.tld.**.
+Pour notre nom de domaine *domain.tld* les serveurs DNS qui s'afficheront après la prise en compte de la modification et de la propagation DNS seront désormais **dns1.domain.tld.** et **dns2.domain.tld.**.
 
 Si nécessaire, reportez-vous aux instructions décrites dans notre documentation « [Éditer une zone DNS OVHcloud](/pages/web/domains/dns_zone_edit) ».
 
@@ -213,14 +213,16 @@ Si nécessaire, reportez-vous aux instructions décrites dans notre documentatio
 > - domain.tld IN NS dns1.domain.tld.
 > - domain.tld IN NS dns2.domain.tld.
 >
-> la zone DNS pourrait afficher les enregistrements comme suit :
+> la zone DNS peut afficher les enregistrements comme suit :
 > - domain.tld IN NS dns1
 > - domain.tld IN NS dns2
 >
-> Rassurez-vous, cela équivaut au même résultat et cette configuration fonctionnera parfaitement. Ceci est généré par le fait qu'il s'agit du même nom de domaine de part et d'autre de l'enregistrement *NS*.
+> Rassurez-vous, cela équivaut au même résultat et cette configuration fonctionnera parfaitement. Ce phénomène est généré par le fait qu'il s'agit du même nom de domaine de part et d'autre de l'enregistrement *NS*.
 >
 
 ## Aller plus loin
+
+[Généralités sur les serveurs DNS OVHcloud](/pages/web/domains/dns_server_general_information)
 
 [Éditer une zone DNS OVHcloud](/pages/web/domains/dns_zone_edit)
 
