@@ -774,6 +774,7 @@
                 + [Using Private Registry with OVHcloud Managed Kubernetes](platform/private-registry/using-private-registry-with-kubernetes)
                 + [Managing Helm charts in the OVHcloud Managed Private Registry](platform/private-registry/using-helm-chart-museum)
                 + [Deploying a Helm chart from your private registry in Kubernetes](platform/private-registry/deploy-chart-from-registry-in-kubernetes)
+                + [Migrate Helm Charts from Chartmuseum to OCI](platform/private-registry/migrate-helm-charts-from-chartmuseum-to-oci)
                 + [Scanning Docker images for vulnerabilities with OVHcloud Managed Private Registry](platform/private-registry/scan-docker-images-vulnerabilities)
     + [AI & Machine Learning](public-cloud-ai-and-machine-learning)
         + [General information](public-cloud-ai-and-machine-learning-general-information)
