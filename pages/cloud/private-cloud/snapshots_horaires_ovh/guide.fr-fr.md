@@ -72,7 +72,7 @@ Il ne vous reste plus qu'à suivre l'assistant de création de VM afin de termin
 
 ## Et pour les snapshots au-delà de la dernière heure ?
 
-OVHcloud conserve les 23 autres snapshots horaires (jusqu'à H-24) sur une baie de stockage (datastore) à laquelle vous n'avez pas directement accès. Il est néanmoins possible via une demande d'intervention faite au support technique (facturée 80€ HT) de demander la restauration d'un snapshot (au delà de H-1 donc) pour une VM en particulier. Nous ne pourrons restaurer le snapshot demandé que sur le même datastore et cette restauration ne peut en aucun cas être garantie.
+OVHcloud conserve les 23 autres snapshots horaires (jusqu'à H-24) sur une baie de stockage (datastore) à laquelle vous n'avez pas directement accès. Il est néanmoins possible via une demande d'intervention faite au support technique (facturée 80€ HT) de demander la restauration d'un snapshot (au delà de H-1 donc) pour une VM en particulier. Nous pourrons restaurer le snapshot demandé sur le même datastore ou dans un nouveau datastore et cette restauration ne peut en aucun cas être garantie.
 
 Il s'agit là d'une sécurité normalement à usage interne d'OVHcloud, les snapshots horaires ne sont **PAS** un système de backup et ne sont **PAS** garantis.
 
