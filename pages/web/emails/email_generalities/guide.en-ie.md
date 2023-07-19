@@ -1,4 +1,4 @@
-![image](https://github.com/ovh/docs/assets/78911684/3a26e067-e079-4447-98a9-edda41652605)---
+---
 title: 'Getting started with an MX Plan solution'
 excerpt: 'Find out how to get started with an MX Plan solution'
 updated: 2021-07-19
