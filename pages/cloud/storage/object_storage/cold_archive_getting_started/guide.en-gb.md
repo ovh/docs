@@ -96,9 +96,12 @@ Delete an intelligent-tiering configuration and objects of a bucket:
 aws --endpoint-url https://s3.rbx-archive.io.cloud.ovh.net delete-ovh-archive <bucket_name>
 ```
 
-After this request, the objects of the bucket are not deleted yet.<br>
-It will take some time before objects are deleted.<br>
-Once objects are deleted, the bucket can be released:
+After this request, the objects of the bucket are not deleted yet as the deletion is done asynchronously.<br>
+The operation will delete everything (on tapes and every objects if restored) and the bucket status will be in a "Deleting" status.<br>
+Once the deletion is completed:
+- The bucket status will be "Flushed".
+- In this state, the bucket still exists (but is empty and does not contain any objects) and data have been removed from the tapes
+- The bucket can be released and the client can remove his bucket:
 
 ```bash
 aws s3 rb s3://<bucket_name>
