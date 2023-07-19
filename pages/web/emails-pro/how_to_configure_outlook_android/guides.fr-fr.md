@@ -56,9 +56,17 @@ A la fin de cette première étape, vous devez désormais avoir les éléments s
 
 Lancer sur votre appareil Android l'application Microsoft Outlook. Si vous ne l'avez pas déjà installée, téléchargez-la depuis le *Google Play Store*.
 
+|||
+|---|---|
+|![Outlook-android-emailpro-login](images/screenshot_outlook_1.png){.thumbnail}|![Outlook-android-emailpro-login](images/screenshot_outlook_3.png){.thumbnail}|
+
 Une fois ouverte, cliquez sur `Ajouter un compte`{.action}, saisissez votre adresse e-mail complète dans le formulaire intitulé `Entrez votre adresse de courrier`{.action} puis cliquez sur `Continuer`{.action}.
 
 Dès lors, deux choix de configuration vous sont proposés en bas de votre écran : `IMAP`{.action} et `POP3`{.action}.
+
+|||
+|---|---|
+| ![Outlook-android-emailpro-login](images/screenshot_outlook_4.png){.thumbnail} | ![Outlook-android-emailpro-login](images/screenshot_outlook_2.png){.thumbnail} |
 
 > [!success]
 >
