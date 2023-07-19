@@ -1,7 +1,7 @@
 ---
 title: Utiliser la fonctionnalité Bring Your Own IP
 excerpt: Découvrez comment importer facilement votre propre adresse IP comme Additional IP dans votre compte OVHcloud
-updated: 2023-05-15
+updated: 2023-07-19
 ---
 
 **Dernière mise à jour le 15/05/2023**
@@ -200,7 +200,7 @@ Pas pour le moment.
 
 ### Puis-je commander le service alors que ma plage IP est encore annoncée depuis un autre site ?
 
-Oui, nous l'autorisons à des fins de migration sans coupure. Cependant, vous devez désactiver l'annonce BGP de votre ancien fournisseur juste avant d'activer l'annonce BGP d'OVHcloud, sinon vous risquez de rencontrer des problèmes de routage. Sachez qu'une liste de contrôle d'accès spécifique sera mise en place au cours du processus de livraison du service BYOIP. Ces listes de contrôle d'accès visent à empêcher l'usurpation d'adresse IP, elles bloqueront tout trafic depuis le réseau OVHcloud vers n'importe quelle adresse IP de votre plage IP et depuis n'importe quelle adresse de votre plage IP vers le réseau OVHcloud, même si l'annonce BGP n'est pas encore activée côté OVHcloud. Si votre migration peut être affectée par ce processus, veuillez nous contacter et nous vous aiderons.
+Oui, mais une fois la livraison du service BYOIP effectuée, vous devrez immédiatement annuler les annonces depuis l'autre site, sous peine de problème de connectivité avec vos éventuels services hébergés chez OVHcloud. Le cas échéant, OVHcloud ne pourra être tenu responsable.
 
 ## Allez plus loin
 
