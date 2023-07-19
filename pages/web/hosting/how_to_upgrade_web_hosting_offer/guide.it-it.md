@@ -25,7 +25,7 @@ Il tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&fr
 >
 > **Prima** di apportare qualsiasi modifica al tuo abbonamento attuale, verifica se hai a che fare con una di queste domande:
 >
-> - [Come far evolvere la tua offerta alojamiento gratuito 100M verso un'offerta di hosting Web?](#start10m)
+> - [Come far evolvere la tua offerta Hosting gratuito 100M verso un'offerta di hosting Web?](#start10m)
 > - [Come usufruire di prestazioni aggiuntive temporanee sulla tua offerta di hosting Performance?](#boost)
 > - [Perdero' il tempo restante sulla tua offerta di hosting attuale al momento della modifica dell'offerta?](#billing)
 > - [È possibile modificare la tua offerta corrente verso un'offerta inferiore?](#checks)
@@ -116,9 +116,9 @@ Una volta verificati questi 7 elementi, è possibile [cambiare offerta](#modify)
 
 ### Casi particolari
 
-#### Disponi di un'offerta alojamiento gratuito 100M <a name="start10m"></a>
+#### Disponi di un'offerta Hosting gratuito 100M <a name="free100m"></a>
 
-In caso di modifica dell'offerta [Alojamiento gratuito 100M](/pages/web/hosting/activate_start10m), ti verrà proposta solo [l'offerta Personale](https://www.ovhcloud.com/it/web-hosting/personal-offer/). Tuttavia, in seguito a una modifica all'offerta Personale, potrai far evolvere quest'ultima verso l'insieme delle nostre [offerte di hosting Web](https://www.ovhcloud.com/it/web-hosting/).
+In caso di modifica dell'offerta [Hosting gratuito 100M](/pages/web/hosting/activate_start10m), ti verrà proposta solo [l'offerta Personale](https://www.ovhcloud.com/it/web-hosting/personal-offer/). Tuttavia, in seguito a una modifica all'offerta Personale, potrai far evolvere quest'ultima verso l'insieme delle nostre [offerte di hosting Web](https://www.ovhcloud.com/it/web-hosting/).
 
 Segui [queste istruzioni](#modify) per effettuare la modifica dell'offerta.
 
