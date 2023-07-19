@@ -1,7 +1,7 @@
 ---
 title: VMware NSX-v - Fin de prise en charge
 excerpt: "Analysez votre utilisation des fonctionnalités NSX-v et choisissez entre les différents scénarios possibles d’évolution, allant de la désactivation du composant NSX-v jusqu'à la migration vers NSX"
-updated: 2023-06-26
+updated: 2023-07-19
 ---
 
 ## Objectif
@@ -26,10 +26,12 @@ Si vous n'utilisez aucune des fonctionnalités ci-dessus, vous pourrez désactiv
 
 #### Je n'utilise que du VXLAN
 
-Si la seule fonctionnalité que vous utilisez est le VXLAN, le choix suivant s'offre à vous :
+Si la seule fonctionnalité que vous utilisez est le VXLAN, les choix suivants s'offre à vous :
 
-- Migrer vers NSX (voir les [détails](#migration) ci-dessous)
-- Reconfigurer votre réseau afin de remplacer le VXLAN par un [VLAN](/pages/cloud/private-cloud/creation_vlan), en utilisant l’appel API suivant :
+- Migrer vers NSX (voir les [détails](#migration) ci-dessous),
+- Reconfigurer votre réseau afin de remplacer le VXLAN par un [VLAN](/pages/cloud/private-cloud/creation_vlan).
+
+Si vous souhaitez le migrer vers des VLAN, pour vous aider à configurer votre réseau, vous pouvez utiliser cet appel d'API pour générer une correspondance entre VXLAN et VLAN.
 
 > [!api]
 >
@@ -44,7 +46,8 @@ Si la seule fonctionnalité que vous utilisez est le VXLAN, le choix suivant s'o
 >
 > Retrouvez plus d'informations sur l'utilisation des API OVHcloud dans notre guide « [Premiers pas avec les API OVHcloud](/pages/account/api/first-steps) ».
 
-Par la suite, vous devrez désactiver NSX-v. Vous serez notifié lorsque le processus de désactivation sera disponible.
+Pour créer vos réseaux VLAN, vous pouvez suivre cette documentation : [Création de VLAN](/pages/cloud/private-cloud/creation_vlan).
+Vous devrez ensuite désactiver NSX-v. Vous serez notifié lorsque le processus de désactivation sera disponible.
 
 #### J'utilise certaines des fonctionnalités de NSX-v
 
@@ -56,9 +59,9 @@ Une autre possibilité est de déployer des composants alternatifs (Load Balance
 
 Le logiciel NSX est activé au niveau du Virtual Datacenter (vDC). Afin de migrer de NSX-v vers NSX, vous pouvez commander un nouveau vDC pour votre service Hosted Private Cloud existant (la fonctionnalité sera disponible à partir du 18 juillet 2023), ajouter de nouveaux Hosts puis migrer de votre vDC actuel vers le nouveau vDC en utilisant VMware vMotion.
 
-La documentation pour migrer vers NSX sera disponible prochainement.
+La documentation pour migrer vers NSX est disponible ici: [vDC Migration](/pages/cloud/private-cloud/service-migration-vdc)
 
-Nos équipes du support et [nos experts de l'équipe Professional Services](https://www.ovhcloud.com/fr/professional-services/) pourront vous fournir une assistance lorsque la procédure de migration sera disponible.
+Nos équipes du support et [nos experts de l'équipe Professional Services](https://www.ovhcloud.com/fr/professional-services/) pourront vous fournir une assistance.
 
 ## Aller plus loin <a name="gofurther"></a>
 
