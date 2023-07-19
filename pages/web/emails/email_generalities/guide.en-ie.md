@@ -1,4 +1,4 @@
----
+![image](https://github.com/ovh/docs/assets/78911684/3a26e067-e079-4447-98a9-edda41652605)---
 title: 'Getting started with an MX Plan solution'
 excerpt: 'Find out how to get started with an MX Plan solution'
 updated: 2021-07-19
@@ -14,7 +14,8 @@ If you have just purchased an MX Plan solution, you can have email addresses, wh
 
 ## Requirements
 
-- An MX plan solution, available with a [web hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/){.external}, [Kostenloses Hosting 100M](https://www.ovhcloud.com/en-ie/domains/free-web-hosting/){.external}, or ordered separately
+- An MX plan solution, available with a [web hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/){.external}, [100M free hosting
+](https://www.ovhcloud.com/en-ie/domains/free-web-hosting/){.external}, or ordered separately
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}
 
 ## Instructions
