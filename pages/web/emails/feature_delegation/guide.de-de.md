@@ -1,4 +1,4 @@
----
+![image](https://github.com/ovh/docs/assets/78911684/0066c3d0-fa84-43a8-af54-455378c5f83f)---
 title: 'Die Verwaltung Ihrer E-Mail-Accounts einer anderen Person übertragen'
 legacy_guide_number: 1933
 excerpt: Erfahren Sie hier, wie Sie die Verwaltung der E-Mail-Accounts Ihres MX Plan Angebots delegieren
@@ -23,7 +23,8 @@ Die Delegation gibt dem Benutzer eines E-Mail-Accounts die Möglichkeit, verschi
 
 ## Voraussetzungen
 
- - Sie verfügen über ein MX Plan Angebot, entweder in einem [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) enthalten, separat bestellt, oder als Teil eines kostenlosen [Alojamento gratuito 100M](https://www.ovhcloud.com/de/domains/free-web-hosting/).
+ - Sie verfügen über ein MX Plan Angebot, entweder in einem [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) enthalten, separat bestellt, oder als Teil eines kostenlosen [Kostenloses Hosting 100M
+](https://www.ovhcloud.com/de/domains/free-web-hosting/).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 > [!warning]
