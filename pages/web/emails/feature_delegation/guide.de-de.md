@@ -1,4 +1,4 @@
-![image](https://github.com/ovh/docs/assets/78911684/0066c3d0-fa84-43a8-af54-455378c5f83f)---
+---
 title: 'Die Verwaltung Ihrer E-Mail-Accounts einer anderen Person übertragen'
 legacy_guide_number: 1933
 excerpt: Erfahren Sie hier, wie Sie die Verwaltung der E-Mail-Accounts Ihres MX Plan Angebots delegieren
