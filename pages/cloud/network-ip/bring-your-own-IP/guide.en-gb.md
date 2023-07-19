@@ -198,7 +198,7 @@ Not for the moment.
 
 ### Can I order the service while I still have my IP range announced from another site?
 
-Yes, we allow this for smooth migration purpose. However, you should de-activate the BGP announcement from your previous provider right before you activate the BGP announcement from OVHcloud, otherwise you may encounter routing issues. Be aware that a specific access-control list will be put in place during the BYOIP service delivery process. These access control lists aim at preventing IP spoofing, they will block any traffic from the OVHcloud network to any IP address of your IP range and from any address of your IP range to the OVHcloud network, even if BGP announcement is not yet activated from the OVHcloud side. If your migration may be impacted by this process, please contact us and we will assist you.
+Yes, but once the BYOIP service has been delivered, you must immediately cancel the annoucement from the other site, as you risk connectivity issues with any services hosted at OVHcloud. In this case, OVHcloud cannot be held responsible.
 
 ## Go further
 
