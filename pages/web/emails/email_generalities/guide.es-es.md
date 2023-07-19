@@ -1,4 +1,4 @@
----
+![image](https://github.com/ovh/docs/assets/78911684/71c7f838-1962-4181-a43e-56395b26f38b)---
 title: 'Primeros pasos con la solución MX Plan'
 excerpt: 'Cómo empezar a utilizar la solución de correo electrónico MX Plan'
 updated: 2021-07-19
@@ -18,7 +18,8 @@ Usted acaba de adquirir una solución MX Plan que permite disfrutar de direccion
 
 ## Requisitos
 
-- Tener una solución MX Plan, que está disponible disponible en un [plan de hosting](https://www.ovhcloud.com/es-es/web-hosting/), el [alojamiento gratuito Start 10M](https://www.ovhcloud.com/es-es/domains/free-web-hosting/) o la solución MX Plan.
+- Tener una solución MX Plan, que está disponible disponible en un [plan de hosting](https://www.ovhcloud.com/es-es/web-hosting/), el [Alojamiento gratuito 100M
+](https://www.ovhcloud.com/es-es/domains/free-web-hosting/) o la solución MX Plan.
 - Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), en la sección `Web Cloud`{.action}.
 
 ## Procedimiento <a name="instructions"></a>
