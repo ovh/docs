@@ -1,7 +1,6 @@
 ---
 title: 'Einrichten von Auto-Antworten für E-Mails'
 excerpt: 'Erfahren Sie, wie Sie einen E-Mail-Responder einrichten'
-legacy_guide_number: g2052
 updated: 2021-04-20
 ---
 
