@@ -21,7 +21,7 @@ Die Accounts Ihrer OVHcloud E-Mail-Dienste sind nur mit dem zugehörigen Passwor
 
 ## Voraussetzungen
 
-- Sie verfügen über eine bereits konfigurierte OVHcloud E-Mail-Lösung: [**Hosted Exchange**](https://www.ovhcloud.com/de/emails/hosted-exchange/), [**Email Pro**](https://www.ovhcloud.com/de/emails/email-pro/) oder **MX Plan** (enthalten in einem [Webhosting](https://www.ovhcloud.com/de/web-hosting/), einem [Kostenloses Hosting 100M](https://www.ovhcloud.com/de/domains/free-web-hosting/) oder separat bestellt).
+- Sie verfügen über eine bereits konfigurierte OVHcloud E-Mail-Lösung: [**Hosted Exchange**](https://www.ovhcloud.com/de/emails/hosted-exchange/), [**Email Pro**](https://www.ovhcloud.com/de/emails/email-pro/) oder **MX Plan** (enthalten in einem [Webhosting](https://www.ovhcloud.com/de/web-hosting/) oder [Kostenloses Hosting 100M](https://www.ovhcloud.com/de/domains/free-web-hosting/) oder separat bestellt).
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) oder auf den relevanten Account über [Webmail](https://www.ovhcloud.com/de/mail/), je nach verwendeter Methode.
 
 > [!primary]

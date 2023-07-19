@@ -20,7 +20,7 @@ Unter der Option „Posteingangsregeln“ können Sie ein umfangreiches Regelwer
 
 ## Voraussetzungen
 
-- Sie haben bereits einen OVHcloud E-Mail-Dienst eingerichtet ([**Exchange**](https://www.ovhcloud.com/de/emails/), [**E-Mail Pro**](https://www.ovhcloud.com/de/emails/email-pro/) oder **MX Plan**, aus dem MX Plan Angebot oder als Teil eines [OVHcloud Webhostings](https://www.ovhcloud.com/de/web-hosting/), enthalten in einem [Kostenloses Hosting 100M](https://www.ovhcloud.com/de/domains/free-web-hosting/)).
+- Sie haben bereits einen OVHcloud E-Mail-Dienst eingerichtet ([**Exchange**](https://www.ovhcloud.com/de/emails/), [**E-Mail Pro**](https://www.ovhcloud.com/de/emails/email-pro/) oder **MX Plan**, aus dem MX Plan Angebot oder enthalten in [OVHcloud Webhostings](https://www.ovhcloud.com/de/web-hosting/) und [Kostenloses Hosting 100M](https://www.ovhcloud.com/de/domains/free-web-hosting/)).
 - Sie verfügen über Anmeldeinformationen für die E-Mail-Adresse, die Sie konfigurieren möchten.
 
 
