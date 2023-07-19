@@ -1,4 +1,4 @@
-![image](https://github.com/ovh/docs/assets/78911684/71c7f838-1962-4181-a43e-56395b26f38b)---
+---
 title: 'Primeros pasos con la solución MX Plan'
 excerpt: 'Cómo empezar a utilizar la solución de correo electrónico MX Plan'
 updated: 2021-07-19
