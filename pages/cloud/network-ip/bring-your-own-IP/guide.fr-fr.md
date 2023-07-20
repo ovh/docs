@@ -143,8 +143,6 @@ Pour plus d'informations sur les objets de routage (*route objects*), veuillez c
 
 Les adresses IP importées se comporteront comme le produit Additional IP OVHcloud. Une plage d'adresses IP importée sera fractionnée en blocs de /24 pouvant être déplacés vers n’importe quel service d’un même campus.<br>
 Pour activer l'annonce de votre plage IP importée sur Internet, il vous suffit d'affecter un de vos blocs à un produit éligible via l'espace client où l'API OVHcloud.<br>
-Sachez qu'une liste de contrôle d'accès spécifique sera mise en place au cours du processus de livraison du service BYOIP. Ces listes de contrôle d'accès visent à empêcher l'usurpation d'adresses IP, elles bloqueront tout trafic depuis le réseau OVHcloud vers n'importe quelle adresse IP de votre plage IP située sur un réseau externe et depuis n'importe quelle adresse de votre plage IP située sur un réseau externe vers le réseau OVHcloud, même si l'annonce BGP n'est pas encore activée côté OVHcloud.<br>
-Si votre migration peut être affectée par ce processus, veuillez nous contacter et nous vous aiderons.
 
 > [!warning]
 > Certaines opérations disponibles sur l'offre Additional IP ne seront pas disponibles sur l'offre BYOIP.
