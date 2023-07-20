@@ -4,7 +4,7 @@ excerpt: Understand how simple it is to train a model using AI Training
 updated: 2023-05-11
 ---
 
-**Last updated 4th July, 2023**
+**Last updated 20th July, 2023**
 
 ## Objective
 
@@ -46,6 +46,7 @@ You can copy and paste the following code in a file named `train-audio-classific
 ```python
 import numpy as np
 import pandas as pd
+import datetime
 
 # preprocessing
 from sklearn.preprocessing import LabelEncoder
@@ -53,9 +54,7 @@ from sklearn.preprocessing import StandardScaler
 from sklearn.model_selection import train_test_split
 
 # model
-from keras.models import load_model
 import tensorflow as tf
-from tensorflow.keras.models import Sequential
 
 ########################################################################################################################################################
 # The goal of this script is to train a pre-construct model to recognize marine mammal sound.                                                          #
@@ -63,7 +62,7 @@ from tensorflow.keras.models import Sequential
 # more details : https://github.com/ovh/ai-training-examples/blob/main/notebooks/audio/audio-classification/notebook-marine-sound-classification.ipynb #
 # You must mount 2 volumes for the data and the model (the same used for the Notebook for example 😉) :                                                #
 #   - /workspace/saved_model where the model is stored                                                                                                 #
-#   - /workspace/data where store the data for the training                                                                                            #
+#   - /workspace/data/ where store the data for the training                                                                                           #
 ########################################################################################################################################################
 
 
@@ -89,19 +88,45 @@ print("X:", X)
 # ⚗️ Create training and validation sets
 X_train, X_val, y_train, y_val = train_test_split(X, y, test_size = 0.2)
 
-# 🧠 Load the pre-trained model 
-model = load_model('/workspace/saved_model/my_model')
+# 🧠 Define model architecture
+model = tf.keras.models.Sequential([
+    tf.keras.layers.Dense(512, activation='relu', input_shape=(X_train.shape[1],)),
+    tf.keras.layers.Dropout(0.2),
+
+    tf.keras.layers.Dense(256, activation='relu'),
+    tf.keras.layers.Dropout(0.2),
+
+    tf.keras.layers.Dense(128, activation='relu'),
+    tf.keras.layers.Dropout(0.2),
+
+    tf.keras.layers.Dense(64, activation='relu'),
+    tf.keras.layers.Dropout(0.2),
+
+    tf.keras.layers.Dense(45, activation='softmax'),
+])
+
 print(model.summary())
 
 # 💪 Train the model with data
 model.compile(optimizer = 'adam', loss = 'sparse_categorical_crossentropy', metrics = 'accuracy')
-batch_size = 128
-model.fit(X_train, y_train, validation_data = (X_val, y_val), epochs = 100, batch_size = batch_size)
 
-# 💿 Save the model for futur usages
+# 📈 Add the TensorBoard callback (optional)
+print('Model tracking')
+log_dir = "/workspace/saved_model/runs/" + datetime.datetime.now().strftime("%Y%m%d-%H%M%S")
+tensorboard_callback = tf.keras.callbacks.TensorBoard(log_dir=log_dir, histogram_freq=1)
+
+model.fit(X_train, y_train, validation_data = (X_val, y_val), epochs = 100, batch_size = 128, callbacks = [tensorboard_callback])
+
+# 💿 Save the model for future usages
 model.save('/workspace/saved_model/my_model2')
 print('End of training')
 ```
+
+> [!primary]
+>
+> The tensorboard step is not mandatory. It's just a way to monitor your training.
+>
+
 Then, create a `requirements.txt` file to declare the Python dependencies:
 ```
 tensorflow
@@ -158,30 +183,32 @@ You can launch the training specifying more ore less GPU depending on the speed 
 ovhai job run \
 	--name marine-audio-classification-job \
 	--gpu 1 \
-	--volume marine-mammal-model@GRA/:/workspace/saved_model:RWD:cache \
-	--volume marine-mammal-sounds@GRA/:/workspace/data:RWD:cache \
+	--volume marine-mammal-model@GRA/:/workspace/saved_model:RW:cache \
+	--volume marine-mammal-sounds@GRA/csv/:/workspace/data:RO:cache \
 	<registry name>/ai/marine-mammal-job:1.0.0
 ```
 
 Output should be like this:
 ```bash
 $ ovhai job run \
-	--name marine-audio-classification-job \
-	--gpu 1 \
-	--volume marine-mammal-model@GRA/:/workspace/saved_model:RWD:cache \
-	--volume marine-mammal-sounds@GRA/:/workspace/data:RWD:cache \
-	my-registry.gra7.container-registry.ovh.net/ai/marine-mammal-job:1.0.0
+        --name marine-audio-classification-job \
+        --gpu 1 \
+        --volume marine-mammal-model@GRA/:/workspace/saved_model:RW:cache \
+        --volume marine-mammal-sounds@GRA/csv/:/workspace/data:RO:cache \
+        --unsecure-http \
+        registry.gra.ai.cloud.ovh.net/my-project-id/marine-audio-classification-job:1.0.0
+
 
 Id:         c0c0878c-5564-4660-889a-65724f6e3056
 Created At: 04-07-23 14:05:58
 Updated At: 04-07-23 14:05:58
 User:       my-user
 Spec:
-  Image:                my-registry.gra7.container-registry.ovh.net/ai/marine-mammal-job:1.0.0
-  Command:              
+  Image:                registry.gra.ai.cloud.ovh.net/my-project-id/marine-mammal-job:1.0.0
+ Command:              
   Env Vars:             ~
   Default Http Port:    8080
-  Unsecure Http:        false
+  Unsecure Http:        true
   Resources:
     Gpu:               1
     Cpu:               13
@@ -202,17 +229,17 @@ Spec:
     Target: ~
     Mount:
       Mount Path: /workspace/saved_model
-      Permission: Read & Write & Delete
+      Permission: Read & Write
     Cache:  true
   - Source:
       Container: marine-mammal-sounds
       Alias:     GRA
-      Prefix:    
+      Prefix:    csv/
       Archive:   ~
     Target: ~
     Mount:
       Mount Path: /workspace/data
-      Permission: Read & Write & Delete
+      Permission: Read Only
     Cache:  true
   Timeout:              0
   Timeout Auto Restart: false
@@ -230,7 +257,7 @@ Status:
     Message: Job submitted
   History:
     STATE      DATE
-    QUEUED     04-07-23 14:05:58
+    QUEUED     20-07-23 16:08:58
   Data Sync:       ~
   Duration:        0s
   Url:             https://c0c0878c-5564-4660-889a-65724f6e3056.job.gra.ai.cloud.ovh.net
@@ -239,11 +266,11 @@ Status:
   Monitoring Url:  ~
   Volumes:
   - Mount Path:     /workspace/saved_model
-    Id:             81d501c7-8488-4e83-be57-f846a7521fe4
-    User Volume Id: 77e923e7-a15b-4442-ad10-37c7eb3eeeca
+    Id:             fbff59c9-abfa-4d7f-ae53-549348e8c53a
+    User Volume Id: b51cd2f5-99a0-4cc0-bc32-ce4515ecce6f
   - Mount Path:     /workspace/data
-    Id:             23fe6d5d-1b9e-401c-b5c9-e3b221bc4cc6
-    User Volume Id: 16ab3584-84d1-417a-b33b-e4ff367c516c
+    Id:             2f25d170-5741-459b-919b-fef8d6fc74c4
+    User Volume Id: bf7b5c4b-c61e-4d17-b6d8-248de56834b6
 ```
 
 You can access to the execution logs of your job with the CLI:
