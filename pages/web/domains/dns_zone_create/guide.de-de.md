@@ -1,6 +1,6 @@
 ---
-title: 'OVHcloud DNS-Zone für eine Domain erstellen'
-excerpt: 'Diese Anleitung erklärt, wie Sie über Ihr Kundencenter eine DNS-Zone bei OVHcloud für Ihre Domain erstellen'
+title: OVHcloud DNS-Zone für eine Domainnamen erstellen
+excerpt: Erfahren Sie hier, wie Sie im OVHcloud Kundencenter eine DNS-Zone für Ihren Domainnamen erstellen
 updated: 2023-07-04
 ---
 
@@ -10,114 +10,110 @@ updated: 2023-07-04
 
 ## Ziel
 
-Die Konfigurationsdatei einer Domain ist die Zone **D**omain **N**ame **S**ystem (**DNS**). Sie besteht aus technischen Informationen, die als DNS-Einträge bezeichnet werden*. Die DNS Zone ist sozusagen wie ein Weichenzentrum.
+Die **DNS**-Zone (**D**omain **N**ame **S**ystem) ist die Konfigurationsdatei eines Domainnamens. Sie besteht aus **DNS-Einträgen**, Datensätzen die dem Domainnamen verschiedenen Diensten und Funktionen zuordnen, zum Beispiel:
 
-Geben Sie hierzu beispielsweise Folgendes an:
+- Die IP-Adresse (DNS-Einträge vom Typ *A* und *AAAA*) Ihres Hostings muss in der Zone eingetragen sein, damit Ihre Webseite angezeigt wird, wenn der Domainnamenname in einen Browser eingegeben wird.
+- Die E-Mail-Server (DNS-Einträge vom Typ *MX*), die E-Mails erhalten sollen, die an Adressen mit diesem Domainnamen versendet wurden. Wenn Sie die MX-Einträge Ihres Domainnamens konfigurieren, können Sie E-Mails über Ihre personalisierten E-Mail-Adressen empfangen.
+- Informationen zur Sicherheit/Authentifizierung von Diensten (Webhosting, Webserver, E-Mail-Server, etc.), die mit Ihrem Domainnamen verbunden sind (DNS-Einträge vom Typ *SPF*, *DKIM*, *DMARC*, etc.).
 
-- IP-Adresse (DNS-Einträge vom Typ *A* und *AAAA*) Ihres Webhostings, um Ihre Website mit Ihrer Domain anzuzeigen.
-- Die E-Mail Server (DNS-Einträge vom Typ *MX*), auf die Ihre Domain die E-Mails, die sie erhält, weiterleiten soll. So können Sie die E-Mail-Adressen Ihrer Domain einsehen.
-- Informationen zur Sicherheit und Authentifizierung Ihrer Dienste (Webhosting, Webserver, E-Mail-Server etc.), die mit Ihrer Domain verbunden sind (DNS Einträge vom Typ *SPF*, *DKIM*, *DMARC* etc.).
+Für weitere Informationen zu DNS-Zonen und wie Sie diese im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) editieren, lesen Sie [unsere Dokumentation zu DNS](/pages/web/domains/dns_zone_edit).
 
-Wenn nötig, lesen Sie unsere Dokumentation zu [DNS-Einträgen und Editieren einer DNS-Zone](/pages/web/domains/dns_zone_edit) über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+Eine DNS-Zone wird auf **DNS-Servern** gehostet. Zur Verwendung der dort registrierten DNS-Zone müssen die **DNS-Server** für diesen Domainnamen deklariert werden. 
 
-Eine DNS Zone wird auf **DNS Servern** gehostet/gespeichert. Für die Verwendung der gehosteten DNS Zone müssen die **DNS Server** bei der Domain angemeldet werden. 
+**DNS-Server** werden üblicherweise in Paaren eingesetzt:
 
-Die **DNS Server** funktionieren üblicherweise paarweise:
+- *Primärer* DNS-Server: Er leitet die vom Domainnamen empfangenen Anfragen auf die von ihm gehostete DNS-Zone. Damit wird die *DNS-Auflösung* durchgeführt, um eingehenden Traffic auf die passenden Dienste (Server, Website, E-Mails, etc.) zu leiten.
+- *Sekundärer* DNS-Server: Kann als *Backup*-Server verwendet werden, wenn der *Primäre* DNS-Server mit Anfragen überlastet ist, nicht verfügbar ist oder langsamer antwortet als der *Sekundäre* DNS-Server.
 
-- Ein *haupt*-DNS Server: Er leitet die von der Domain empfangenen Anfrageströme auf die von ihm gehostete DNS Zone um. So können Sie die *DNS-Auflösung* durchführen, um die Streams auf die zu Ihrer Domain gehörenden Dienste (Server, Website, E-Mails...) weiterzuleiten.
-- Ein *sekundärer* DNS Server: Dieser *Backup*-Server wird verwendet, wenn der *Haupt*-Server mit Anfragen überlastet ist, nicht verfügbar ist oder weniger schnell antwortet als der *Sekundär-Server*.
+DNS-Provider können auch drei oder mehr **DNS-Server** einsetzen, die alle deklariert werden müssen, um die betroffene DNS-Zone zu aktivieren.
 
-Einige DNS Server bieten 3 **DNS Server** oder mehr an, die bei Ihrer Domain zu melden sind, um die von ihnen gehostete DNS Zone für Ihre Domain zu aktivieren.
+Mehr Informationen zu **DNS-Servern** finden Sie in [unserer Anleitung](/pages/web/domains/dns_server_general_information) zum Thema.
 
-Mehr Informationen zu den **DNS-Servern** finden Sie in [Anleitung](/pages/web/domains/dns_server_general_information) zum Thema.
+Es gibt verschiedene Gründe für die Erstellung einer DNS-Zone bei OVHcloud für Ihren Domainnamen.
 
-Aus verschiedenen Gründen können Sie bei OVHcloud eine DNS-Zone für Ihre Domain erstellen müssen.
-
-**Diese Anleitung erklärt, wie Sie über Ihr OVHcloud Kundencenter eine DNS-Zone bei OVHcloud für Ihre Domain erstellen.**
+**Diese Anleitung erklärt, wie Sie im OVHcloud Kundencenter eine DNS-Zone bei OVHcloud für Ihren Domainnamen erstellen.**
 
 ## Voraussetzungen
 
-- Sie besitzen eine Domain.
-- Die betreffende Domain darf nicht bereits über eine DNS-Zone bei OVHcloud verfügen (aktiviert oder nicht) oder Gegenstand einer laufenden Operation oder Bestellung bei OVHcloud sein.
-- Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} eingeloggt.
+- Sie haben administrativen Zugriff auf Ihren Domainnamen.
+- Für den betreffenden Domainnamen besteht nicht bereits eine aktive oder inaktive OVHcloud DNS-Zone, noch ist er Gegenstand einer laufenden Operation oder einer Bestellung bei OVHcloud.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 ## In der praktischen Anwendung
 
 > [!warning]
 >
-> Sie können mehrere DNS Zonen (bei verschiedenen DNS Lieferanten/Anbietern/DNS Hosting Providern) für eine Domain erstellen. Sie können jedoch nur eine aktive DNS Zone für Ihre Domain verwenden. Diese Beschränkung dient der Vermeidung von *DNS-Konflikten*.
+> Sie können mehrere DNS-Zonen (bei verschiedenen DNS- oder Hosting-Providern) für einen Domainnamen erstellen. Sie können jedoch nur eine aktive DNS-Zone für Ihre Domainnamen verwenden. Diese Beschränkung dient der Vermeidung von *DNS-Konflikten*.
 >
-> Die Aktivierung/Deaktivierung einer DNS Zone erfolgt ab der Benachrichtigung der **DNS Server** bei Ihrer Domain. Sie können diese Erklärung ändern und die **DNS Server** einer Domain ändern bei: 
+> Die Aktivierung/Deaktivierung einer DNS-Zone erfolgt, indem die zugehörigen **DNS-Server** für den Domainnamen deklariert werden. Um diese **DNS-Server** und damit die Konfiguration eines Domainnamens zu ändern müssen die entsprechenden Einstellungen bei der zuständigen Stelle vorgenommen werden: 
 >
-> - vom *Registrar* an dem Sie Ihre Domain direkt registriert haben
-> - des Anbieters, der die Domain verwaltet, wenn Sie über einen spezialisierten Dienstleister für die Verwaltung Ihrer Domain verfügen.
+> - Der *Registrar*, bei dem der Domainname registriert ist.
+> - Ihr DNS-Anbieter, falls Sie Ihren Domainnamen über einen spezialisierten Dienstleister verwalten.
 >
-> Indem Sie die **DNS-Server** einer Domain ändern, deaktivieren Sie die Konfiguration der alten angewendeten DNS Zone zugunsten der Konfiguration der neuen DNS Zone (wird auf den neu deklarierten **DNS Servern**) deaktiviert.
+> Indem Sie die **DNS-Server** eines Domainnamens ändern, deaktivieren Sie die Konfiguration der bestehenden DNS-Zone zugunsten der neuen DNS-Zone, die auf den zu deklarierenden **DNS-Servern** liegt.
 >
-> Überprüfen Sie daher, bevor Sie die bei Ihrer Domain angegebenen **DNS Server** ändern, ob die Konfiguration der neuen DNS Zone Ihren Erwartungen entspricht.
+> Überprüfen Sie daher, bevor Sie die für Ihrem Domainnamen angegebenen **DNS-Server** ändern, ob die Konfiguration der neuen DNS-Zone Ihren Erwartungen entspricht.
 >
 
-### Schritt 1: die DNS-Zone über das OVHcloud Kundencenter erstellen
+### Schritt 1: DNS-Zone über das OVHcloud Kundencenter erstellen
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf die `Bestellen`{.action} und dann auf den Kasten `DNS-Zone`{.action}.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Bestellen`{.action} und dann auf `DNS-Zone`{.action}.
 
-Geben Sie auf der angezeigten Seite den Domainnamen ein (Beispiel: *domain.tld*), für die Sie eine OVHcloud DNS-Zone erstellen möchten. Warten Sie einen Moment, bis das Tool die Überprüfung des Domainnamens durchführt.
+Geben Sie auf neuen Seite den Domainnamen ein (*domainname.tld*), für den Sie eine OVHcloud DNS-Zone erstellen möchten. Warten Sie einen Moment, bis das Tool die Überprüfung des Domainnamens durchgeführt hat.
 
-Wenn eine Nachricht erscheint und Ihnen anzeigt, dass die DNS Zone nicht erstellt werden kann, überprüfen Sie, ob der Domainname die notwendigen Voraussetzungen erfüllt, oder bitten Sie die Person, die die Domain verwaltet, dies für Sie zu tun. Wenn alles korrekt ist, versuchen Sie es erneut.
+Wenn eine Meldung erscheint, dass die DNS-Zone nicht erstellt werden kann, überprüfen Sie, ob der Domainname die notwendigen Voraussetzungen erfüllt, oder lassen Sie dies von der zuständigen Person prüfen. Wenn alles korrekt ist, versuchen Sie es erneut.
 
 ![dnszonecreate](images/dns-zone-create-step1.png){.thumbnail}
 
-Sobald die Überprüfung abgeschlossen ist, wählen Sie aus, ob Sie die minimalen Einträge für die DNS-Zone, die Sie erstellen möchten, aktivieren möchten. Diese Auswahl ist nicht endgültig, da Sie die Einträge der [DNS-Zone auch später noch bearbeiten können](/pages/web/domains/dns_zone_edit).
+Sobald die Überprüfung abgeschlossen ist, wählen Sie aus, ob Sie die minimalen Einträge für die DNS-Zone, die Sie erstellen möchten, aktivieren möchten. Diese Auswahl ist nicht endgültig, da Sie die [Einträge der DNS-Zone auch später noch bearbeiten können](/pages/web/domains/dns_zone_edit).
 
 ![dnszonecreate](images/dns-zone-create-step2.png){.thumbnail}
 
 |Die minimalen Einträge aktivieren?|Details|
 |---|---|
-|Ja|Wählen Sie diese Auswahl aus, wenn Sie die DNS Zone später selbst personalisieren möchten.</br>![Minimum-DNS-Zentries](images/minimal.png){.thumbnail}|
-|Nein|Wählen Sie diese Wahl aus, wenn Sie OVHcloud Dienste wie ein [Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} verwenden möchten, wobei die Zone hierfür vorkonfiguriert ist.</br>![Minimum-dns-zentries](images/no_minimal.png){.thumbnail}|
+|Ja|Wählen Sie diese Option, wenn Sie Ihre DNS-Zone später selbst anpassen möchten.</br>![Minimum-DNS-Zentries](images/minimal.png){.thumbnail}|
+|Nein|	Wählen Sie diese Option, wenn Sie OVHcloud Dienste wie zum Beispiel ein [Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} nutzen möchten. Die DNS-Zone ist hierfür bereits vorkonfiguriert.</br>![Minimum-dns-zentries](images/no_minimal.png){.thumbnail}|
 
-Wenn Sie Ihre Auswahl getroffen haben, folgen Sie den Schritten bis zur Erstellung der DNS Zone.
+Wenn Sie Ihre Auswahl getroffen haben, folgen Sie den Schritten bis zur Erstellung der DNS-Zone.
 
-### Schritt 2: die DNS Zone bearbeiten (optional)
+### Schritt 2: DNS-Zone bearbeiten (optional)
 
-Da die DNS-Zone für Ihre Domain erstellt wurde, können Sie sie ab sofort bearbeiten. Dieser Vorgang ist optional, kann aber notwendig sein, wenn Sie die Verfügbarkeit der mit dieser Domain verbundenen Dienste (wie Websites und/oder E-Mails) aufrechterhalten möchten.
+Sobald die DNS-Zone für Ihren Domainnamen erstellt wurde, können Sie sie bearbeiten. Dieser Vorgang ist optional, kann aber notwendig sein, wenn Sie die Verfügbarkeit der mit dieser Domainnamen verbundenen Dienste (wie Websites und E-Mails) aufrechterhalten möchten.
 
-Um diese DNS-Zone zu bearbeiten, lesen Sie unsere Anleitung "[DNS-Zone bei OVHcloud bearbeiten](/pages/web/domains/dns_zone_edit)".
-
-> [!primary]
->
-> Wenn Sie gerade die DNS Zone erstellt haben und die Domain noch nicht in der Liste Ihrer Dienstleistungen erscheint (im Bereich `Web cloud`{.action} im OVHcloud Kundencenter, dann im Bereich `Domainnamen`{.action}), warten Sie 15 bis 20 Minuten und laden Sie die Seite neu.
->
-
-Führen Sie die notwendigen Schritte durch. Nach der Änderung der OVHcloud DNS-Zone Ihrer Domain ist eine maximale Propagationszeit von **4 bis 24 Stunden** erforderlich, damit die Änderungen wirksam sind.
-
-### Schritt 3: die DNS Server der Domain ändern
-
-Wenn die DNS-Zone bei OVHcloud für die Verwendung bereit ist, tragen Sie diese bitte Ihrer Domain zur Anwendung bei. 
-
-Sie müssen daher zuerst die **DNS-Server** von OVHcloud abrufen, auf denen die OVHcloud DNS-Zone für Ihre Domain erstellt wurde.
-
-Loggen Sie sich hierzu in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und gehen Sie in den Bereich "Web Cloud"{.action}. Klicken Sie in der linken Spalte auf Domainnamen {.action} und wählen Sie die betreffende DNS-Zone aus. 
-
-Links befindet sich ein Logo mit dem Namen Ihrer Domain und der Begriff *DNS* ist als Globus gekennzeichnet. 
+Um die DNS-Zone zu bearbeiten, lesen Sie unsere Anleitung "[Bearbeiten der OVHcloud DNS-Zone](/pages/web/domains/dns_zone_edit)".
 
 > [!primary]
-> Wenn Sie an diesem Punkt nur ein Globus-Logo haben (ohne den Begriff *DNS*, der in Ihrem Kundencenter geschrieben ist), dann wird die Domain bereits in Ihrem OVHcloud Kundencenter verwaltet. 
 >
-> Wenn Sie Administrator* Kontakt dieses Kontakts sind, können Sie die **DNS Server** in diesem Fall direkt mithilfe unserer [Anleitung](/pages/web/domains/dns_server_general_information) zum Thema ändern.
->
-> Zur Erinnerung: Überprüfen Sie, bevor Sie die bei Ihrer Domain angegebenen **DNS Server** ändern, ob die Konfiguration der neuen DNS Zone Ihren Erwartungen entspricht.
+> Wenn Sie gerade die DNS-Zone erstellt haben und der Domainname noch nicht in der Liste Ihrer Dienstleistungen erscheint (unter `Domainnamen`{.action} im Bereich `Web Cloud`{.action} im OVHcloud Kundencenter), warten Sie ca. 20 Minuten und laden Sie die Seite neu.
 >
 
-Auf der angezeigten Seite werden die DNS-Server, die mit Ihrer Domain zur Aktivierung der OVHcloud DNS-Zone verwendet werden sollen, unter dem `Name Servers`{.action} aufgeführt.
+Führen Sie die notwendigen Schritte durch. Nach der Änderung der OVHcloud DNS-Zone Ihres Domainnamens ist eine Propagationszeit von **4 bis 24 Stunden** erforderlich, damit die Änderungen wirksam werden.
+
+### Schritt 3: DNS-Server des Domainnamens ändern
+
+Sobald die OVHcloud DNS-Zone bereit ist, aktivieren Sie diese, indem Sie die neuen DNS-Server deklarieren. Ermitteln Sie hierfür zuerst die Namen der **DNS-Server** von OVHcloud, auf denen die OVHcloud DNS-Zone für Ihre Domainnamen erstellt wurde.
+
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Domainnamen`{.action} und wählen Sie die neu erstellte DNS-Zone aus. 
+
+Im linken Menü sollte für den Domainnamen ein Globus-Symbol mit der Bezeichnung *DNS* angezeigt werden. 
+
+> [!primary]
+> Wenn Sie hier nur das Globus-Symbol sehen (ohne den Zusatz *DNS*), dann wird dieser Domainname bereits in Ihrem OVHcloud Kundencenter verwaltet.
+>
+> Wenn Sie der *Administrator* dieses Domainnamens sind, können Sie die **DNS-Server** selbst ändern. Verwenden Sie ggf. [unsere Anleitung](/pages/web/domains/dns_server_general_information) zum Thema.
+>
+> Zur Erinnerung: Überprüfen Sie, bevor Sie die bei Ihrer Domainnamen angegebenen **DNS-Server** ändern, ob die Konfiguration der neuen DNS-Zone Ihren Erwartungen entspricht.
+>
+
+Auf der neuen Seite werden die DNS-Server, die mit Ihrer Domainnamen zur Aktivierung der OVHcloud DNS-Zone verwendet werden sollen, unter `Name Servers`{.action} aufgeführt.
 
 ![dnszonecreate](images/dns-zone-create-step3.png){.thumbnail}
 
-Nachdem Sie die Informationen erhalten haben **Ändern Sie die DNS-Server Ihrer Domain über das Interface des Anbieters, der diese verwaltet**. Nach der Änderung ist eine maximale Propagationszeit von **48 Stunden** erforderlich, damit die Änderung voll wirksam ist.
+Mit den Namen der DNS-Server können Sie nun **die DNS-Server Ihres Domainnamens im Interface Ihres DNS-Anbieters entsprechend abändern**. Nach dieser Bearbeitung ist eine maximale Propagationszeit von **48 Stunden** erforderlich, damit die Änderung voll wirksam ist.
 
 > [!primary]
 >
-> Zur Erinnerung: Überprüfen Sie, bevor Sie die bei Ihrer Domain angegebenen **DNS Server** ändern, ob die Konfiguration der neuen DNS Zone Ihren Erwartungen entspricht.
+> Überprüfen Sie, bevor Sie die für Ihrem Domainnamen angegebenen **DNS-Server** ändern, ob die Konfiguration der neuen DNS-Zone Ihren Erwartungen entspricht.
 >
 
 ## Weiterführende Informationen
