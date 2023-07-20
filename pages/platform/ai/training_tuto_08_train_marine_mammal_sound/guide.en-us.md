@@ -1,10 +1,10 @@
 ---
 title: AI Training - Tutorial - Train a model to recognize marine mammal sound 
-excerpt: Understand how simple it is to train a model using AI Training
-updated: 2023-05-11
+excerpt: Understand how to train a model using AI Training
+updated: 2023-07-20
 ---
 
-**Last updated 4th July, 2023**
+**Last updated 20th July, 2023**
 
 ## Objective
 
@@ -31,18 +31,19 @@ You can see the Notebook step in the tutorial [Audio analysis and classification
 
 ### Create object storages for data
 
-To train the model you'll need data and a place where save the trained model.
+To train the model you'll need data and a place where to save the trained model.
 You can reuse the previous object storage used in the Notebook tutorial [Audio analysis and classification with AI](/pages/platform/ai/notebook_tuto_06_marine_mammal_sounds_classification/) or follow the step _Uploading your dataset on Public Cloud Storage_ of this tutorial.
 
 ### Train your model
 
-To train the model, we will use AI Training. This tool is much more powerful.
-It will allow you to automate your pipelines and build fine-tuning phases easily.
+To train the model, we will use AI Training. This tool is much more powerful. It will allow you to automate your pipelines and build fine-tuning phases easily.
 
 AI Training allows you to train models directly from your own Docker images.
 
-First, you need to create a Python script that it responsible to do the training.
+First, you need to create a Python script that is responsible to do the training.
+
 You can copy and paste the following code in a file named `train-audio-classification.py`:
+
 ```python
 import numpy as np
 import pandas as pd
@@ -102,7 +103,9 @@ model.fit(X_train, y_train, validation_data = (X_val, y_val), epochs = 100, batc
 model.save('/workspace/saved_model/my_model2')
 print('End of training')
 ```
+
 Then, create a `requirements.txt` file to declare the Python dependencies:
+
 ```
 tensorflow
 numpy==1.22.4
@@ -134,7 +137,9 @@ Then, build the Docker image and push it in the registry:
 docker build . -f Dockerfile -t <regristry-name>/marine-mammal-job:1.0.0
 docker push <regristry-name>/marine-mammal-job:1.0.0
 ```
+
 Output should be like this:
+
 ```bash
 $ docker build . -f Dockerfile -t my-registry.gra7.container-registry.ovh.net/ai/marine-mammal-job:1.0.0
 ...
@@ -146,8 +151,9 @@ The push refers to repository [my-registry.gra7.container-registry.ovh.net/ai/ma
 ..
 1.0.0: digest: sha256:72f19493662aafe3d0a3dc35ea5ab76b8472bd6a709de2da1a52e7ebf8ab7ad1 size: 3054 
 ```
+
 Once your Docker image is created and pushed into the registry, you can directly use the `ovhai` command to create your model training.
-You can launch the training specifying more ore less GPU depending on the speed you want for you training.
+You can launch the training specifying more or less GPU depending on the speed you want for your training.
 
 > [!primary]
 >
@@ -164,6 +170,7 @@ ovhai job run \
 ```
 
 Output should be like this:
+
 ```bash
 $ ovhai job run \
 	--name marine-audio-classification-job \
@@ -246,12 +253,14 @@ Status:
     User Volume Id: 16ab3584-84d1-417a-b33b-e4ff367c516c
 ```
 
-You can access to the execution logs of your job with the CLI:
+You can access the execution logs of your job with the CLI:
+
 ```bash
 ovhai job logs <job id> -f       
 ```
 
 Output should be like this:
+
 ```bash
 $ ovhai job logs c0c0878c-5564-4660-889a-65724f6e3056 -f
 
