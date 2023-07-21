@@ -4,8 +4,6 @@ excerpt: Découvrez comment importer facilement votre propre adresse IP comme Ad
 updated: 2023-07-19
 ---
 
-**Dernière mise à jour le 15/05/2023**
-
 ## Objectif
 
 La fonctionnalité [Bring Your Own IP (BYOIP)](https://www.ovhcloud.com/fr-ca/network/byoip/) vous permet d'utiliser les plages d'adresses IP que vous possédez déjà en tant qu'adresses Additional IP, directement sur le réseau et les produits OVHcloud.
@@ -143,8 +141,6 @@ Pour plus d'informations sur les objets de routage (*route objects*), veuillez c
 
 Les adresses IP importées se comporteront comme le produit Additional IP OVHcloud. Une plage d'adresses IP importée sera fractionnée en blocs de /24 pouvant être déplacés vers n’importe quel service d’un même campus.<br>
 Pour activer l'annonce de votre plage IP importée sur Internet, il vous suffit d'affecter un de vos blocs à un produit éligible via l'espace client où l'API OVHcloud.<br>
-Sachez qu'une liste de contrôle d'accès spécifique sera mise en place au cours du processus de livraison du service BYOIP. Ces listes de contrôle d'accès visent à empêcher l'usurpation d'adresses IP, elles bloqueront tout trafic depuis le réseau OVHcloud vers n'importe quelle adresse IP de votre plage IP située sur un réseau externe et depuis n'importe quelle adresse de votre plage IP située sur un réseau externe vers le réseau OVHcloud, même si l'annonce BGP n'est pas encore activée côté OVHcloud.<br>
-Si votre migration peut être affectée par ce processus, veuillez nous contacter et nous vous aiderons.
 
 > [!warning]
 > Certaines opérations disponibles sur l'offre Additional IP ne seront pas disponibles sur l'offre BYOIP.
@@ -200,7 +196,7 @@ Pas pour le moment.
 
 ### Puis-je commander le service alors que ma plage IP est encore annoncée depuis un autre site ?
 
-Oui, nous l'autorisons à des fins de migration sans coupure. Cependant, vous devez désactiver l'annonce BGP de votre ancien fournisseur juste avant d'activer l'annonce BGP d'OVHcloud, sinon vous risquez de rencontrer des problèmes de routage. Sachez qu'une liste de contrôle d'accès spécifique sera mise en place au cours du processus de livraison du service BYOIP. Ces listes de contrôle d'accès visent à empêcher l'usurpation d'adresse IP, elles bloqueront tout trafic depuis le réseau OVHcloud vers n'importe quelle adresse IP de votre plage IP et depuis n'importe quelle adresse de votre plage IP vers le réseau OVHcloud, même si l'annonce BGP n'est pas encore activée côté OVHcloud. Si votre migration peut être affectée par ce processus, veuillez nous contacter et nous vous aiderons.
+Oui, mais une fois la livraison du service BYOIP effectuée, vous devrez immédiatement annuler les annonces depuis l'autre site, sous peine de problème de connectivité avec vos éventuels services hébergés chez OVHcloud. Le cas échéant, OVHcloud ne pourra être tenu responsable.
 
 ## Allez plus loin
 
