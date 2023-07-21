@@ -139,8 +139,6 @@ For more information on route objects, please refer to your RIR’s documentatio
 
 The imported IPs will behave like the current Additional IP product. An imported IP range will be split into /24 blocks that will be movable to any service in the same campus.<br>
 To activate the announcement of your imported IP range on the Internet, simply assign one of your block to an eligible product via the control panel or the OVHcloud API.<br>
-Be aware that a specific access-control list will be put in place during the BYOIP service delivery process. These access control lists aim at preventing IP spoofing, they will block any traffic from the OVHcloud network to any IP address of your IP range located on an external network and from any address of your IP range located on an external network to the OVHcloud network, even if BGP announcement is not yet activated from the OVHcloud side.<br>
-If your migration may be impacted by this process, please contact us and we will assist you.
 
 > [!warning]
 > Some operations available on the Additional IP product will not be available on the BYOIP product.

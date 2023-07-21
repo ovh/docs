@@ -4,8 +4,6 @@ excerpt: Découvrez comment importer facilement votre propre adresse IP comme Ad
 updated: 2023-07-19
 ---
 
-**Dernière mise à jour le 15/05/2023**
-
 ## Objectif
 
 La fonctionnalité [Bring Your Own IP (BYOIP)](https://www.ovhcloud.com/fr/network/byoip/) vous permet d'utiliser les plages d'adresses IP que vous possédez déjà en tant qu'adresses Additional IP, directement sur le réseau et les produits OVHcloud.
