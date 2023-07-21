@@ -2,7 +2,7 @@
 title: 'FAQ Managed Private Registry (Harbor)'
 routes:
     canonical: '/pages/platform/private-registry/managed-private-registry-faq'
-updated: 2023-05-09
+updated: 2023-07-21
 ---
 
 **Last updated 9th May, 2023.**
@@ -19,12 +19,12 @@ The MPR (Managed Private Registry) service is managed by our teams relying on co
 
 Find below the exact locations of the dependencies:
 
-| X              | Dependencies | Public Cloud<br>(Compute/Network) | Object Storage S3 standard |
+| X              | Dependencies | Public Cloud<br>(Compute region) | Object Storage S3 standard  |
 |----------------|:------------:|:---------------------------------:|:--------------------------:|
 | **MPR region** |      X       |                 X                 |             X              |
-| GRA            |      X       |               GRA7                |            GRA             |
+| GRA            |      X       |             GRA7/GRA9             |            GRA             |
 | BHS            |      X       |               BHS5                |            BHS             |
-| DE             |      X       |                DE1                |             DE             |
+| DE             |      X       |                DE1                |            DE              |
 
 ### What version of Harbor is offered?
 All new Private Registry services expose Harbor 2.x. We regularly backport security and performance patches from the latest versions and will regularly propose new feature upgrades.
