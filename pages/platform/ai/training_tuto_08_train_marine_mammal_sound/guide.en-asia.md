@@ -6,7 +6,7 @@ updated: 2023-07-20
 
 ## Objective
 
-The aim of this tutorial is to understand how to train a model with AI Training in oder to classify sounds. 
+The aim of this tutorial is to understand how to train a model with AI Training in order to classify sounds. 
 
 This is the next step after you have designed the model with AI Notebooks.
 You can see the Notebook step in the tutorial [Audio analysis and classification with AI](/pages/platform/ai/notebook_tuto_06_marine_mammal_sounds_classification/).
