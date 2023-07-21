@@ -1,7 +1,7 @@
 ---
 title: 'Crear una zona DNS de OVHcloud para un dominio'
 excerpt: 'Descubra cómo crear una zona DNS en OVHcloud para su dominio desde el área de cliente'
-updated: 2023-07-04
+updated: 2023-07-21
 ---
 
 > [!primary]
@@ -88,8 +88,6 @@ Para editar esta zona DNS, consulte nuestra guía [Editar una zona DNS en OVHclo
 >
 > Si acaba de crear la zona DNS y el dominio no aparece aún en la lista de sus servicios (en la sección `Web cloud`{.action} del área de cliente de OVHcloud y, seguidamente, en la sección `Dominios`{.action}), espere entre 15 y 20 minutos y vuelva a cargar la página.
 >
-
-Realice las operaciones necesarias. Una vez que haya editado la zona DNS de OVHcloud del dominio, los cambios tardarán entre **4 y 24 horas** como máximo.
 
 ### Etapa 3: cambiar los servidores DNS del dominio
 

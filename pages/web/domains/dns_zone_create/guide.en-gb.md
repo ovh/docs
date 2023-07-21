@@ -1,7 +1,7 @@
 ---
 title: Creating an OVHcloud DNS zone for a domain name
 excerpt: Find out how to create an OVHcloud DNS zone for your domain name via the OVHcloud Control Panel
-updated: 2023-07-04
+updated: 2023-07-21
 ---
 
 ## Objective
@@ -83,8 +83,6 @@ To edit this DNS zone, please read our guide on [Editing a DNS zone at OVHcloud]
 >
 > If you have just created the DNS zone and the domain name does not yet appear in your list of services (under `Domain names`{.action} in the `Web Cloud`{.action} section of the OVHcloud Control Panel), wait 15 to 20 minutes, then reload the page.
 >
-
-Once you have done this, make the required changes. Once you have modified your domain name’s OVHcloud DNS zone, you will need to allow between **4 and 24 hours** for the changes to propagate fully, and be effective.
 
 ### Step 3: Modify the domain name’s DNS servers
 
