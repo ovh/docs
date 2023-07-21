@@ -1,16 +1,15 @@
 ---
 title: 'Sécuriser votre nom de domaine avec DNSSEC'
-excerpt: 'Protégez votre nom de domaine du Cache Poisoning en activant le DNSSEC'
-updated: 2023-04-26
+excerpt: 'Découvrez comment protéger votre nom de domaine du Cache Poisoning en activant le DNSSEC'
+updated: 2023-07-21
 ---
-
-**Dernière mise à jour le 26/04/2023**
 
 ## Objectif
 
 Les serveurs DNS hébergent la configuration DNS d'un nom de domaine. Dans une utilisation classique, cette configuration permet de faire le lien entre votre nom de domaine et le ou les serveurs qui hébergent votre site internet et vos adresses e-mail. Ces dernières années, des personnes malveillantes ont mis au point des méthodes d'empoisonnement des serveur DNS, leur permettant de détourner le trafic vers d'autres serveurs. Il existe un moyen de protéger votre nom de domaine de ces actions : le DNSSEC.
 
-**Apprenez à activer le DNSSEC sur votre nom de domaine afin de le protéger contre le Cache Poisoning.**  
+**Découvrez comment activer le DNSSEC sur votre nom de domaine afin de le protéger contre le Cache Poisoning.**  
+
 Pour comprendre comment cette protection fonctionne, nous vous conseillons de consulter cette page : « [Comprendre le DNSSEC](https://www.ovhcloud.com/fr/domains/dnssec/){.external} ».
 
 ## Prérequis
@@ -36,7 +35,7 @@ Vous pouvez désormais renseigner les 4 champs « Key Tag », « Flag », « Alg
 
 ### Étape 1 : accéder à la gestion du nom de domaine
 
-Pour débuter la manipulation, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} et assurez-vous d'être positionné dans la partie `Web Cloud`{.action}. Cliquez alors sur `Hébergements`{.action} puis choisissez le nom de domaine concerné dans la liste.
+Pour débuter la manipulation, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} et assurez-vous d'être positionné dans la partie `Web Cloud`{.action}. Cliquez alors sur `Noms de domaine`{.action} puis choisissez le nom de domaine concerné dans la liste.
 
 La page qui apparaît affiche les informations générales de celui-ci. 
 
@@ -57,5 +56,9 @@ En bougeant le bouton d'activation, vous pourrez ainsi activer ou désactiver le
 Une fois que vous avez décidé d'activer ou de désactiver le DNSSEC sur votre nom de domaine, la prise en compte de cette modification nécessite un délai 24 heures au maximum, durant lequel vous devez patienter. 
 
 ## Aller plus loin
+
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
+
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
