@@ -4,7 +4,7 @@ excerpt: 'Découvrez comment protéger votre nom de domaine du Cache Poisoning e
 updated: 2023-07-21
 ---
 
-## Objectif
+## Objectif 
 
 Un serveur DNS héberge une ou plusieurs zone(s) DNS. Une zone DNS contient la configuration DNS d'un nom de domaine. C'est cette configuration qui relie votre nom de domaine aux différents services qui lui sont associés (serveur d'hébergement pour votre site web, serveurs pour vos adresses e-mail personnalisées avec votre nom de domaine, etc.).
 
