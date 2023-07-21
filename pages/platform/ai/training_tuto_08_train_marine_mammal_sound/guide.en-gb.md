@@ -8,9 +8,9 @@ updated: 2023-07-20
 
 ## Objective
 
-The aim of the tutorial is to understand how to train a model with AI Training in oder to classify sounds. 
+The aim of the tutorial is to understand how to train a model with AI Training in order to classify sounds. 
 
-This the next step after you have designed the model with AI Notebooks.
+This is the next step after you have designed the model with AI Notebooks.
 You can see the Notebook step in the tutorial [Audio analysis and classification with AI](/pages/platform/ai/notebook_tuto_06_marine_mammal_sounds_classification/).
 
 > [!primary]
@@ -23,15 +23,15 @@ You can see the Notebook step in the tutorial [Audio analysis and classification
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 - A Public Cloud project created
 - The ovhai CLI interface installed on your system (more information [here](/pages/platform/ai/cli_10_howto_install_cli))
-- [Docker](https://www.docker.com/get-started) installed and configured to build images.
-- A OCI / Docker image registry, you can use a public registry (like [Docker Hub](https://hub.docker.com/) for example) or a private registry. Refer to the [Creating a private registry](/pages/platform/private-registry/creating-a-private-registry/) documentation to create a private registry based on Harbor.
+- [Docker](https://www.docker.com/get-started) installed and configured to build images
+- A OCI / Docker image registry, you can use a public registry (like [Docker Hub](https://hub.docker.com/) for example) or a private registry. Refer to the [Creating a private registry](/pages/platform/private-registry/creating-a-private-registry/) documentation to create a private registry based on Harbor
 - Knowledge about building images with [Dockerfile](https://docs.docker.com/engine/reference/builder/)
 
 ## Instructions
 
 ### Create object storages for data
 
-To train the model you'll need data and a place where to save the trained model.
+To train the model, you'll need data and a place to save the trained model.
 You can reuse the previous object storage used in the Notebook tutorial [Audio analysis and classification with AI](/pages/platform/ai/notebook_tuto_06_marine_mammal_sounds_classification/) or follow the step _Uploading your dataset on Public Cloud Storage_ of this tutorial.
 
 ### Train your model
