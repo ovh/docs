@@ -1,15 +1,13 @@
 ---
 title: OVHcloud Snapshots
 excerpt: Erfahren Sie hier die Funktionsweise der stündlichen Sicherungen
-legacy_guide_number: '2163263'
-updated: 2022-03-15
+updated: 2022-07-21
 ---
 
 > [!primary]
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 15.03.2022**
 
 ## Ziel
 
@@ -82,7 +80,7 @@ Folgen Sie nun dem VM Creation Wizard, um den Vorgang abzuschließen.
 >Die stündlichen Snapshots sind **kein** Backup-System und **nicht** garantiert.
 >
 
-OVHcloud bewahrt die 23 weiteren Snapshots (bis H-24) auf einem Datastore auf, zu dem Sie keinen direkten Zugriff haben. Es ist jedoch möglich, über eine Anfrage beim technischen Support (Ticket) die Wiederherstellung eines Snapshots älter als H-1 für eine bestimmte VM als **kostenpflichtigen Eingriff** zu beantragen. Wir können den angeforderten Snapshot nur auf demselben Datastore wiederherstellen, und diese Wiederherstellung kann keinesfalls garantiert werden.
+OVHcloud bewahrt die 23 weiteren Snapshots (bis H-24) auf einem Datastore auf, zu dem Sie keinen direkten Zugriff haben. Es ist jedoch möglich, über eine Anfrage beim technischen Support (Ticket) die Wiederherstellung eines Snapshots älter als H-1 für eine bestimmte VM als **kostenpflichtigen Eingriff** zu beantragen. Wir können den angeforderten Snapshot wahlweise auf demselben Datastore oder einem neuen Datastore wiederherstellen, und diese Wiederherstellung kann keinesfalls garantiert werden.
 
 Beachten Sie, dass stündliche Snapshots als zusätzliche Sicherheitsmaßnahme für interne Zwecke dienen und nur als letztes Mittel eingesetzt werden sollten, um einen möglichen Datenverlust zu vermeiden.
 
