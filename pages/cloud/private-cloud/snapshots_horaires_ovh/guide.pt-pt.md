@@ -1,15 +1,12 @@
 ---
 title: Snapshots horárias OVHcloud
 excerpt: Compreender o funcionamento das snapshots horárias da OVHcloud
-legacy_guide_number: '2163263'
-updated: 2022-03-15
+updated: 2022-07-21
 ---
 
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
-
-**Última atualização: 15/03/2022**
 
 ## Sumário
 
@@ -76,7 +73,7 @@ Só precisa de seguir o assistente de criação de VM para concluir o procedimen
 
 ## E as snapshots depois da última hora?
 
-A OVHcloud conserva as outras 23 snapshots horárias (até H-24) num rack de armazenamento (datastore) ao qual não tem acesso direto. No entanto, é possível, através de um pedido de intervenção feito ao suporte técnico (faturado a 80€ s/IVA), solicitar o restauro de uma snapshot (acima de H-1, portanto) para uma VM em particular. Só poderemos restaurar a snapshot solicitada no mesmo datastore e este restauro não pode, em caso algum, ser garantido.
+A OVHcloud conserva as outras 23 snapshots horárias (até H-24) num rack de armazenamento (datastore) ao qual não tem acesso direto. No entanto, é possível, através de um pedido de intervenção feito ao suporte técnico (faturado a 80€ s/IVA), solicitar o restauro de uma snapshot (acima de H-1, portanto) para uma VM em particular. Poderemos restaurar o snapshot solicitado no mesmo datastore ou num novo datastore, e este restauro não pode, em caso algum, ser garantido.
 
 Trata-se de uma segurança normalmente de uso interno da OVHcloud, as snapshots horárias pas são um sistema de backup e pas.
 

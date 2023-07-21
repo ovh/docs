@@ -1,15 +1,12 @@
 ---
 title: Snapshoty godzinowe OVHcloud
 excerpt: Dowiedz się, jak działają snapshoty godzinowe OVHcloud
-legacy_guide_number: '2163263'
-updated: 2022-03-15
+updated: 2022-07-21
 ---
 
 > [!primary]
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
 > 
-
-**Ostatnia aktualizacja z dnia 15-03-2022**
 
 ## Wprowadzenie
 
@@ -76,7 +73,7 @@ W celu zakończenia procedury postępuj zgodnie z instrukcją tworzenia wirtualn
 
 ## A co z snapshotami po ostatniej godzinie?
 
-OVHcloud przechowuje pozostałe 23 kopii zapasowych (do H-24) w szafie przestrzeni dyskowej (datastore), do której nie masz bezpośredniego dostępu. W przypadku danej wirtualnej maszyny można jednak, za pomocą prośby o interwencję (opłacanej 80€ netto), zażądać przywrócenia snapshota (poza H-1). Nie będziemy w stanie przywrócić zamówionego snapshota, który ma zostać zainstalowany na tym samym datastore i w żadnym razie nie możemy zagwarantować przywrócenia tej kopii.
+OVHcloud przechowuje pozostałe 23 kopii zapasowych (do H-24) w szafie przestrzeni dyskowej (datastore), do której nie masz bezpośredniego dostępu. W przypadku danej wirtualnej maszyny można jednak, za pomocą prośby o interwencję (opłacanej 80€ netto), zażądać przywrócenia snapshota (poza H-1). Przywrócimy wybrany snapshot do tego samego datastore lub do innego datastore i w żadnym razie nie możemy zagwarantować przywrócenia tej kopii.
 
 Jest to bezpieczeństwo normalnie używane przez OVHcloud. Snapshoty godzinowe nie są systemem kopii zapasowych i nie są gwarantowane.
 
