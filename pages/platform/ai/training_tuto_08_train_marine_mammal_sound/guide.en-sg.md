@@ -4,8 +4,6 @@ excerpt: Understand how to train a model using AI Training
 updated: 2023-07-20
 ---
 
-**Last updated 20th July, 2023**
-
 ## Objective
 
 The aim of the tutorial is to understand how to train a model with AI Training in order to classify sounds. 
