@@ -98,7 +98,7 @@ Après cette requête, les objets du bucket ne sont pas encore supprimés car la
 L'opération supprimera tout (sur les bandes et tous les objets s'ils sont restaurés) et l'état du bucket sera en état "Deleting".<br>
 Une fois la suppression effectuée :
 
-- Le statut du compartiment sera "Vidé".
+- Le statut du compartiment sera "Flushed".
 - Dans cet état, le bucket existe toujours (mais est vide et ne contient aucun objet) et les données ont été supprimées des bandes.
 - Le bucket peut être débloqué et vous pouvez retirer votre bucket :
 
