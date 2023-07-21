@@ -1,11 +1,8 @@
 ---
 title: Cold Archive - Premiers pas avec Cold Archive
 excerpt: Ce guide vous montre comment gérer vos données avec Cold Archive
-updated: 2023-05-17
+updated: 2023-07-21
 ---
-
-**Dernière mise à jour le 17/05/2023**
-
 ## Objectif
 
 Cold Archive est un service de stockage de données à long terme.
@@ -96,9 +93,13 @@ Supprimer la configuration Intelligent-Tiering et les objets d'un bucket:
 aws --endpoint-url https://s3.rbx-archive.io.cloud.ovh.net delete-ovh-archive <bucket_name>
 ```
 
-Après cette requête, les objets du bucket ne sont pas encore supprimés.<br>
-La suppression des objets prendra un certain temps.<br>
-Une fois les objets supprimés, le bucket peut être supprimé :
+Après cette requête, les objets du bucket ne sont pas encore supprimés car la suppression est effectuée de manière asynchrone.<br>
+L'opération supprimera tout (sur les bandes et tous les objets s'ils sont restaurés) et l'état du bucket sera en état "Deleting".<br>
+Une fois la suppression effectuée :
+
+- Le statut du compartiment sera "Flushed".
+- Dans cet état, le bucket existe toujours (mais est vide et ne contient aucun objet) et les données ont été supprimées des bandes.
+- Le bucket peut être débloqué et vous pouvez retirer votre bucket :
 
 ```bash
 aws s3 rb s3://<bucket_name>

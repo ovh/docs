@@ -1,10 +1,8 @@
 ---
 title: Cold Archive - Getting started with Cold Archive
 excerpt: This guide shows you how to manage your data with Cold Archive
-updated: 2023-05-17
+updated: 2023-07-21
 ---
-
-**Last updated 17th May 2023**
 
 ## Objective
 
@@ -96,9 +94,13 @@ Delete an intelligent-tiering configuration and objects of a bucket:
 aws --endpoint-url https://s3.rbx-archive.io.cloud.ovh.net delete-ovh-archive <bucket_name>
 ```
 
-After this request, the objects of the bucket are not deleted yet.<br>
-It will take some time before objects are deleted.<br>
-Once objects are deleted, the bucket can be released:
+After this request, the objects of the bucket are not deleted yet as the deletion is done asynchronously.<br>
+The operation will delete everything (on tapes and all objects if restored) and the bucket status will be in a "Deleting" status.<br>
+Once the deletion is completed:
+
+- The bucket status will be "Flushed".
+- In this state, the bucket still exists (but is empty and does not contain any objects) and data has been removed from the tapes.
+- The bucket can be released and you can remove your bucket:
 
 ```bash
 aws s3 rb s3://<bucket_name>
