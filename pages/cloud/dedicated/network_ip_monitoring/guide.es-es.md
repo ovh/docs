@@ -1,14 +1,12 @@
 ---
 title: ¿Cuáles son las direcciones IP monitorización de OVHcloud?
 excerpt: Encuentre aquí las direcciones IP que debe completar al configurar un firewall para que el sistema de monitorización de OVHcloud continúe funcionando en su servidor.
-updated: 2022-12-13
+updated: 2023-07-21
 ---
 
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
-
-**Última actualización: 13/12/2022**
 
 ## Objetivo
 
@@ -28,28 +26,12 @@ Para implementar un firewall restrictivo, especialmente en ICMP, y continuar ben
 
 |Reverse|IP|Protocol|
 |---|---|---|
-|mrtg-rbx-100|37.187.231.251|icmp|
-|mrtg-sbg-100|37.187.231.251|icmp|
-|mrtg-gra-100|37.187.231.251|icmp|
-|mrtg-bhs-100|37.187.231.251|icmp|
-|mrtg-rbx-101|151.80.231.244|icmp|
-|mrtg-rbx-102|151.80.231.245|icmp|
-|mrtg-rbx-103|151.80.231.246|icmp|
-|mrtg-gra-101|151.80.231.247|icmp|
-|a2.ovh.net|213.186.33.62|icmp|
-|---|---|---|
 |netmon-rbx-probe|92.222.184.0/24|icmp|
 |netmon-sbg-probe|92.222.185.0/24|icmp|
 |netmon-gra-probe|92.222.186.0/24|icmp|
 |netmon-bhs-probe|167.114.37.0/24|icmp|
 |netmon-sgp-probe|139.99.1.144/28|icmp|
-|---|---|---|
-|proxy.p19.ovh.net|213.186.45.4|icmp|
-|proxy.rbx.ovh.net|213.251.184.9|icmp|
-|proxy.sbg.ovh.net|37.59.0.235|icmp|
-|proxy.bhs.ovh.net|8.33.137.2|icmp|
 |ping.ovh.net|213.186.33.13|icmp|
-|proxy.ovh.net|213.186.50.98|icmp|
 ||xxx.xxx.xxx.250 (xxx.xxx.xxx.aaa es la ip del servidor)|icmp|
 ||xxx.xxx.xxx.251 (xxx.xxx.xxx.aaa es la ip del servidor)|icmp + Puerto monitoreado por el servicio de monitorización|
 

@@ -1,14 +1,12 @@
 ---
 title: Quali sono gli indirizzi IP del monitoring OVHcloud?
 excerpt: Qui trovi gli indirizzi IP da inserire durante l'installazione del firewall, in modo che il monitoring OVHcloud continui a funzionare sul tuo server.
-updated: 2022-12-13
+updated: 2023-07-21
 ---
 
 > [!primary]
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
 >
-
-**Ultimo aggiornamento: 13/12/2022**
 
 ## Obiettivo
 
@@ -31,28 +29,12 @@ Per impostare un firewall restrittivo, in particolare sull'ICMP, e continuare a 
 
 |Reverse|IP|Protocollo|
 |---|---|---|
-|mrtg-rbx-100|37.187.231.251|icmp|
-|mrtg-sbg-100|37.187.231.251|icmp|
-|mrtg-gra-100|37.187.231.251|icmp|
-|mrtg-bhs-100|37.187.231.251|icmp|
-|mrtg-rbx-101|151.80.231.244|icmp|
-|mrtg-rbx-102|151.80.231.245|icmp|
-|mrtg-rbx-103|151.80.231.246|icmp|
-|mrtg-gra-101|151.80.231.247|icmp|
-|a2.ovh.net|213.186.33.62|icmp|
-|---|---|---|
 |netmon-rbx-probe|92.222.184.0/24|icmp|
 |netmon-sbg-probe|92.222.185.0/24|icmp|
 |netmon-gra-probe|92.222.186.0/24|icmp|
 |netmon-bhs-probe|167.114.37.0/24|icmp|
 |netmon-sgp-probe|139.99.1.144/28|icmp|
-|---|---|---|
-|proxy.p19.ovh.net|213.186.45.4|icmp|
-|proxy.rbx.ovh.net|213.251.184.9|icmp|
-|proxy.sbg.ovh.net|37.59.0.235|icmp|
-|proxy.bhs.ovh.net|8.33.137.2|icmp|
 |ping.ovh.net|213.186.33.13|icmp|
-|proxy.ovh.net|213.186.50.98|icmp|
 |---|---|---|
 ||xxx.xxx.xxx.250 (xxx.xxx.xxx.aaa è l'IP del server)|icmp|
 ||xxx.xxx.xxx.251 (xxx.xxx.xxx.aaa è l'IP del server)|icmp + porta monitorata dal servizio monitoring|

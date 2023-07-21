@@ -1,14 +1,13 @@
 ---
 title: Jakie są adresy IP monitoringu OVHcloud?
 excerpt: W tej sekcji odnajdziesz adresy IP, które mają zostać wpisane podczas uruchamiania firewalla. Dzięki temu monitoring OVHcloud będzie nadal działać na Twoim serwerze.
-updated: 2022-12-13
+updated: 2023-07-21
 ---
 
 > [!primary]
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia 13-12-2022**
 
 ## Wprowadzenie
 
@@ -31,28 +30,12 @@ Aby wdrożyć restrykcyjny firewall, zwłaszcza w zakresie ICMP i nadal korzysta
 
 |Rewers|IP|Protokół|
 |---|---|---|
-|mrtg-rbx-100|37.187.231.251|icmp|
-|mrtg-sbg-100|37.187.231.251|icmp|
-|mrtg-gra-100|37.187.231.251|icmp|
-|mrtg-bhs-100|37.187.231.251|icmp|
-|mrtg-rbx-101|151.80.231.244|icmp|
-|mrtg-rbx-102|151.80.231.245|icmp|
-|mrtg-rbx-103|151.80.231.246|icmp|
-|mrtg-gra-101|151.80.231.247|icmp|
-|a2.ovh.net|213.186.33.62|icmp|
-|---|---|---|
 |netmon-rbx-probe|92.222.184.0/24|icmp|
 |netmon-sbg-probe|92.222.185.0/24|icmp|
 |netmon-gra-probe|92.222.186.0/24|icmp|
 |netmon-bhs-probe|167.114.37.0/24|icmp|
 |netmon-sgp-probe|139.99.1.144/28|icmp|
-|---|---|---|
-|proxy.p19.ovh.net|213.186.45.4|icmp|
-|proxy.rbx.ovh.net|213.251.184.9|icmp|
-|proxy.sbg.ovh.net|37.59.0.235|icmp|
-|proxy.bhs.ovh.net|8.33.137.2|icmp|
 |ping.ovh.net|213.186.33.13|icmp|
-|proxy.ovh.net|213.186.50.98|icmp|
 |---|---|---|
 ||xxx.xxx.xxx.xxx.250 (z adresem IP serwera xxx.xxx.xxx.aaa)|icmp|
 ||xxx.xxx.xxx.xxx.251 (z adresem IP serwera xxx.xxx.xxx.aaa)|icmp + port monitorowany przez dział monitoringu|
