@@ -93,7 +93,7 @@ Supprimer la configuration Intelligent-Tiering et les objets d'un bucket:
 aws --endpoint-url https://s3.rbx-archive.io.cloud.ovh.net delete-ovh-archive <bucket_name>
 ```
 
-Après cette demande, les objets du bucket ne sont pas encore supprimés car la suppression est effectuée de manière asynchrone.<br>
+Après cette requête, les objets du bucket ne sont pas encore supprimés car la suppression est effectuée de manière asynchrone.<br>
 L'opération supprimera tout (sur les bandes et tous les objets s'ils sont restaurés) et l'état du bucket sera en état "Deleting".<br>
 Une fois la suppression effectuée :
 
