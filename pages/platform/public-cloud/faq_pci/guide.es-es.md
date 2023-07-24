@@ -1,6 +1,6 @@
 ---
 title: FAQ Public Cloud OVHcloud
-updated: 2022-12-01
+updated: 2023-07-24
 ---
 
 > [!primary]

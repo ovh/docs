@@ -1,9 +1,7 @@
 ---
 title: FAQ Public Cloud OVHcloud
-updated: 2022-12-01
+updated: 2023-07-24
 ---
-
-**Last updated 1st December 2022**
 
 ## Public Cloud FAQ
 
@@ -13,7 +11,7 @@ You can log in using an SSH key set that you need to configure when you create y
 
 Please read our guide on [Creating and connecting to your first Public Cloud instance](/pages/platform/public-cloud/public-cloud-first-steps).
 
-### I lost or I want to change my SSH key, how to proceed ?
+### I lost or I want to change my SSH key, how to proceed?
 
 If you can no longer log in after losing your private key, you will need to change your instance's public key by switching it to rescue mode.
 
@@ -66,7 +64,7 @@ You can attach up to 25 additional volumes per instance.
 
 OVHcloud protects its entire infrastructure with its exclusive anti-DDoS solution. In addition, you can add the OpenStack security groups. This firewall equivalent is managed directly through the OpenStack infrastructure, above your instances.
 
-Please refer to our guide on [Configuring a security group](/pages/platform/public-cloud/setup_security_group) .
+Please refer to our guide on [Configuring a security group](/pages/platform/public-cloud/setup_security_group).
 
 These protections, combined with others that can be launched on your servers, will help you maximise the reliability of your solutions.
 
@@ -92,6 +90,14 @@ Public IP addresses are automatically assigned to instances, and therefore canno
 
 For more information, please refer to this guide: [Buying an Additional IP](/pages/platform/network-services/additional-ip-buy).
 
+### How many additional IPs can I attach to each instance?
+
+You can attach up to 256 additional IPs per instance.
+
+### How many IPv6 addresses come with my instance?
+
+Each public cloud instance comes with one IPv6 address.
+
 ### How to check if my instance is affected by MDS bug?
 
 The [MDS bug](https://www.kernel.org/doc/html/latest/admin-guide/hw-vuln/mds.html) vulnerability can be checked with the following command:
@@ -100,7 +106,7 @@ The [MDS bug](https://www.kernel.org/doc/html/latest/admin-guide/hw-vuln/mds.htm
 cat /sys/devices/system/cpu/vulnerabilities/mds
 ```
 
-If the result is `Vulnerable`, dont worry, the hypervisor hosting your instance is protecting you.
+If the result is `Vulnerable`, don't worry, the hypervisor hosting your instance is protecting you.
 
 Anyway, if you want to mitigate this inside your instance as well, you should hard reboot your instance, either doing it from the [OVHcloud Control Panel](/pages/platform/public-cloud/first_steps_with_public_cloud_instance#restarting-the-instance), or with a command like this:
 
@@ -108,7 +114,7 @@ Anyway, if you want to mitigate this inside your instance as well, you should ha
 openstack server reboot --hard $serverID
 ```
 
-### My instance is reported beeing vulnerable against SSBD bug, what should I do?
+### My instance is reported as being vulnerable to the SSBD bug. What should I do?
 
 The [SSBD bug](https://www.kernel.org/doc/html/latest/userspace-api/spec_ctrl.html) vulnerability can be checked with the following command:
 
