@@ -1,6 +1,6 @@
 ---
 title: "Configurer son compte E-mail Pro sur Android avec l'application Microsoft Outlook"
-excerpt: 'Découvrez comment configurer un compte E-mail Pro sur Adroid avec l'application Microsoft Outlook'
+excerpt: "Découvrez comment configurer un compte E-mail Pro sur Adroid avec l'application Microsoft Outlook"
 updated: 2023-07-24
 ---
 
