@@ -8,8 +8,6 @@ updated: 2023-07-04
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
 >
 
-**Ultimo aggiornamento: 21/06/2028**
-
 ## Obiettivo
 
 La versione 6 del Protocollo Internet (IPv6) è l’ultima versione del Protocollo Internet (IP). È stata studiata per sopperire alla prevista saturazione degli indirizzi del suo predecessore, IPv4, utilizzando indirizzi a 128-bit invece che a 32-bit. La maggior parte dei server dedicati OVHcloud vengono consegnati con un blocco /64 IPv6, ad eccezione dei server High Grade e Scale che vengono consegnati con un blocco /56 IPv6. Si tratta di più di 18 quintiplici di indirizzi IP di cui puoi disporre a tua scelta. Ciò equivale a oltre 18 quintilioni di indirizzi IP che puoi utilizzare a tuo piacimento.
@@ -37,8 +35,6 @@ La versione 6 del Protocollo Internet (IPv6) è l’ultima versione del Protocol
 Se per installare il tuo server utilizzi un template per il sistema operativo Linux fornito da OVHcloud, dovrai configurare il primo indirizzo IPv6 (l'indirizzo principale) sul server.
 
 Ad esempio, se abbiamo assegnato al tuo server l'intervallo IPv6: `2607:5300:xxxx:xxxx::/64` è possibile utilizzare come IPv6 principale del tuo server l'IPv6: `2607:5300:xxxx:xxx::1/64`.
-
-Se si desidera configurare indirizzi IPv6 su una macchina virtuale, è necessario disporre di un Additional IP configurato con una vMAC. In caso contrario, l'IPv6 non potrà essere utilizzato dai nostri router/switch. Ti ricordiamo che questa restrizione non si applica ai server High Grade e Scale. Per le macchine virtuali create su questi server, gli indirizzi IPv6 possono essere utilizzati senza l'utilizzo di vMAC.
 
 ### Gateway predefinito (esclusi i server High Grade e Scale)
 

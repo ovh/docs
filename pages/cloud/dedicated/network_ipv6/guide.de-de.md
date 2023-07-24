@@ -8,8 +8,6 @@ updated: 2023-07-04
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 21.06.2023**
-
 ## Ziel
 
 Internet Protocol Version 6 (IPv6) ist die neueste Version des Internet Protocol (IP). Die Ausschöpfung der verfügbaren IPv4-Adressen wird schon lange erwartet. Hier soll die neue Version Abhilfe schaffen, indem statt der bisherigen 32 Bit der IPv4-Adressen 128-Bit-Adressen verwendet werden. Die meisten OVHcloud Dedicated Server werden mit einem /64 IPv6-Block geliefert, mit Ausnahme von High Grade und Scale, die mit einem /56 IPv6-Block geliefert werden. Das entspricht über 18 Trillionen IP-Adressen, aus denen Sie wählen können.
@@ -37,8 +35,6 @@ Internet Protocol Version 6 (IPv6) ist die neueste Version des Internet Protocol
 Wenn Sie Ihren Server mithilfe eines von OVHcloud bereitgestellten Linux-Betriebssystems installieren, muss die erste IPv6-Adresse (die Hauptadresse) auf dem Server konfiguriert werden.
 
 Wenn wir beispielsweise Ihrem Server den IPv6-Bereich `2607:5300:xxxx:xxxx::/64` zugewiesen haben, können Sie folgende Adresse als primäre IPv6 Ihres Servers verwenden: `2607:5300:xxxx:xxxx::1/64`.
-
-Wenn Sie mehrere IPv6-Adressen auf einer VM verwenden möchten, müssen Sie jeweils eine Additional IP mit vMAC einrichten. Andernfalls kann IPv6 nicht von unseren Routern / Switches geroutet werden. Beachten Sie, dass diese Einschränkung nicht für Server der Reihen High Grade und Scale gilt. Für die auf diesen Servern erstellten virtuellen Maschinen können IPv6-Adressen konfiguriert werden, ohne dass vMAC-Adressen verwendet werden müssen.
 
 ### Standardgateway (mit Ausnahme von High Grade und Scale Servern)
 

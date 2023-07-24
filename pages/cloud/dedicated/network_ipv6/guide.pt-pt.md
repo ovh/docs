@@ -8,8 +8,6 @@ updated: 2023-07-04
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 21/06/2023**
-
 ## Objetivo
 
 O IPv6 é a versão mais recente do Internet Protocol (IP). Foi concebido para solucionar a já esperada exaustão do seu antecessor, o IPv4, através do recurso a endereços de 128 bits em vez de endereços de 32 bits. A maior parte dos servidores dedicados OVHcloud são entregues com um bloco IPv6 /64, à exceção dos servidores High Grade e Scale que são entregues com um bloco IPv6 /56. Isto representa mais de 18 quintiliões de endereços IP ao seu dispor.
@@ -37,8 +35,6 @@ O IPv6 é a versão mais recente do Internet Protocol (IP). Foi concebido para s
 Se está a usar um template Linux fornecido pela OVHcloud para instalar o servidor, deverá configurar o primeiro IPv6 (principal) no servidor. 
 
 Por exemplo, se atribuimos ao seu servidor o intervalo IPv6: `2607:5300:xxxx:xxxx:/64` pode utilizar o IPv6 principal do seu servidor como IPv6: `2607:5300:xxxx:xxxx::1/64`.
-
-Se quiser configurar endereços IPv6 em uma VM, deve dispor de um Additional IP configurado com um vMAC. Caso contrário, o IPv6 não poderá ser roteado pelos nossos routers/switchs. Tenha em conta que esta restrição não se aplica aos servidores High Grade e Scale. Para as máquinas virtuais criadas nestes servidores, os endereços IPv6 podem ser utilizados sem que seja necessário utilizar vMAC.
 
 ### Gateway predefinido (exceto os servidores High Grade e Scale)
 

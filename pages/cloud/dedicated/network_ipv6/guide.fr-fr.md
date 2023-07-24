@@ -4,8 +4,6 @@ excerpt: 'Decouvrez comment configurer des adresses IPv6 sur notre infrastructur
 updated: 2023-07-04
 ---
 
-**Dernière mise à jour le 21/06/2023**
-
 ## Objectif
 
 Internet Protocol version 6 (IPv6) est le successeur d'Internet Protocol version 4 (IPv4). Mis en place pour résoudre l’épuisement des adresses IPv4, IPv6 utilise des adresses de 128 bits au lieu d’adresses de 32 bits. La plupart des serveurs dédiés OVHcloud sont livrés avec un bloc /64 IPv6, à l'exception des serveurs High Grade et Scale qui sont livrés avec un bloc /56 IPv6. Ceci représente plus de 18 quintillions d’adresses IP dont vous pouvez disposer à votre guise.
@@ -34,8 +32,6 @@ Internet Protocol version 6 (IPv6) est le successeur d'Internet Protocol version
 En installant votre serveur à l’aide d’un modèle de système d’exploitation Linux fourni par OVHcloud, vous devrez configurer la première adresse IPv6 (l'adresse principale) sur le serveur.
 
 Par exemple, si nous avons attribué à votre serveur la plage IPv6 : `2607:5300:xxxx:xxxx::/64` vous pouvez utiliser comme IPv6 principale de votre serveur l'IPv6 : `2607:5300:xxxx:xxxx::1/64`.
-
-Si vous souhaitez configurer des adresses IPv6 sur une VM, vous devez disposer d’une Additional IP configurée avec une vMAC. Veuillez noter que cette restriction ne s'applique pas aux serveurs High Grade et Scale. Pour les machines virtuelles créées sur ces serveurs, les adresses IPv6 peuvent être utilisées sans qu'il soit nécessaire d'utiliser des vMAC.
 
 ### Passerelle par défaut (à l'exception des serveurs High Grade et Scale)
 
