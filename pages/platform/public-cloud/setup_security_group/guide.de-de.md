@@ -38,7 +38,7 @@ Eine Tabelle listet die vorhandenen Sicherheitsgruppen auf. Die Gruppe "Default"
 
 > [!alert]
 >
-> **Bitte ändern oder löschen Sie die Gruppe "Default" nicht. Sie müssen unbedingt eine neue Sicherheitsgruppe erstellen und Ihre Regeln darin konfigurieren.**
+> **Achtung: Ändern oder löschen Sie die Gruppe "Default" nicht. Erstellen Sie in jedem Fall eine neue Sicherheitsgruppe, um Ihre Regeln darin zu konfigurieren.**
 >
 > Automatisierte Tasks auf der Infrastruktur können die Standard-Sicherheitsgruppe zurücksetzen. Es ist daher wichtig, dass Sie diese nicht ändern.
 >
