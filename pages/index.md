@@ -1299,6 +1299,7 @@
             + [Setting up an email application on your mobile device](web-cloud-email-collaborative-solutions-email-pro-setting-up-email-application-on-mobile-device)
                 + [Configuring an Email Pro account on iPhone and iPad](web/emails-pro/how_to_configure_ios)
                 + [Configuring an Email Pro account on Android via the Gmail app](web/emails-pro/how_to_configure_android)
+                + [Configuring an Email Pro account on Android with the Microsoft Outlook application](web/emails-pro/how_to_configure_outlook_android)
                 + [Configurer son compte E-mail Pro sur un BlackBerry](web/emails-pro/how_to_configure_blackberry)
             + [Adding your email account to an existing email service](web-cloud-email-collaborative-solutions-email-pro-adding-email-address-on-existing-email-service)
                 + [Configuring an Email Pro account on the Gmail online interface](web/emails-pro/how_to_configure_gmail)

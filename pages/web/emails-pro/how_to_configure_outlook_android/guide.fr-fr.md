@@ -1,7 +1,7 @@
 ---
 title: "Configurer son compte E-mail Pro sur Android avec l'application Microsoft Outlook"
 excerpt: 'Découvrez comment configurer un compte E-mail Pro sur Adroid avec l'application Microsoft Outlook'
-updated: 2023-07-18
+updated: 2023-07-24
 ---
 
 ## Objectif
@@ -58,7 +58,7 @@ Lancer sur votre appareil Android l'application Microsoft Outlook. Si vous ne l'
 
 |||
 |---|---|
-|![Outlook-android-emailpro-login](images/screenshot_outlook_1.png){.thumbnail}|![Outlook-android-emailpro-login](images/screenshot_outlook_3.png){.thumbnail}|
+|![Outlook-android-emailpro-login](images/Screenshot_Outlook_1.png){.thumbnail}|![Outlook-android-emailpro-login](images/Screenshot_Outlook_3.png){.thumbnail}|
 
 Une fois ouverte, cliquez sur `Ajouter un compte`{.action}, saisissez votre adresse e-mail complète dans le formulaire intitulé `Entrez votre adresse de courrier`{.action} puis cliquez sur `Continuer`{.action}.
 
@@ -66,7 +66,7 @@ Dès lors, deux choix de configuration vous sont proposés en bas de votre écra
 
 |||
 |---|---|
-| ![Outlook-android-emailpro-login](images/screenshot_outlook_4.png){.thumbnail} | ![Outlook-android-emailpro-login](images/screenshot_outlook_2.png){.thumbnail} |
+| ![Outlook-android-emailpro-login](images/Screenshot_Outlook_4.png){.thumbnail} | ![Outlook-android-emailpro-login](images/Screenshot_Outlook_2.png){.thumbnail} |
 
 > [!success]
 >
