@@ -1,15 +1,12 @@
 ---
 title: Creare e configurare un gruppo di sicurezza su Horizon
 excerpt: Come creare un gruppo di sicurezza e configurarlo su un'istanza Public Cloud
-legacy_guide_number: g1925
-updated: 2021-08-24
+updated: 2023-07-24
 ---
 
 > [!primary]
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
 >
-
-**Ultimo aggiornamento: 24/08/2021**
 
 ## Obiettivo
 
@@ -35,7 +32,18 @@ Accedi all'interfaccia [Horizon](/pages/platform/public-cloud/create_and_delete_
 > Se un gruppo di sicurezza deve essere utilizzato in più localizzazioni, è necessario crearlo per ciascuna di esse.
 >
 
-A questo punto, apri il menu `Network`{.action} e clicca su `Security Groups`{.action}. Una tabella elenca i gruppi di sicurezza creati. Il gruppo "default" vi è già stato inserito. che permette di passare tutto il traffico in entrata e in uscita.
+A questo punto, apri il menu `Network`{.action} e clicca su `Security Groups`{.action}.
+
+Una tabella elenca i gruppi di sicurezza creati. Il gruppo "default" vi è già stato inserito. che permette di passare tutto il traffico in entrata e in uscita.
+
+> [!alert]
+>
+> **Non modificare o eliminare il gruppo "default". È necessario creare un nuovo gruppo di sicurezza e configurarvi le regole.**
+>
+> Le operazioni automatiche sull'infrastruttura possono ripristinare il gruppo di sicurezza di default, quindi è importante non modificarlo.
+>
+> OpenStack chiude di default tutti gli accessi alle istanze. Se elimini il gruppo di sicurezza "default", è necessario creare un gruppo proprio che apra gli accessi alle tue istanze e applicarlo a ogni creazione di un’istanza. In seguito, il gruppo "default" sarà creato nuovamente con le operazioni automatizzate sull’infrastruttura.
+>
 
 Per aggiungere un nuovo gruppo di sicurezza, clicca sul pulsante `+ Create Security Group`{.action}.
 
@@ -51,7 +59,7 @@ Se le regole sono corrette, prosegui nella lettura di questa guida allo Step 3 "
 
 ### Step 2: configurare le regole di un gruppo di sicurezza
 
-Per modificare le regole di default o in caso di necessità, clicca sul pulsante `Manage Rules`{.action}.
+Clicca sul pulsante `Manage Rules`{.action}.
 
 ![gestire le regole](images/security-group3.png){.thumbnail}
 

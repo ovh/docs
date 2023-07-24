@@ -1,10 +1,8 @@
 ---
 title: 'Creating and configuring a security group in Horizon'
 excerpt: 'Find out how to create a security group and configure it on a Public Cloud instance'
-updated: 2021-08-24
+updated: 2023-07-24
 ---
-
-**Last updated 24th August 2021**
 
 ## Objective
 
@@ -30,7 +28,18 @@ Access the [Horizon interface](/pages/platform/public-cloud/create_and_delete_a_
 > If a security group is to be used in several regions, you must create it for each region.
 >
 
-Now expand the `Network`{.action} menu and click `Security Groups`{.action}. A table lists the security groups created. The default group is already listed here. This will allow all incoming and outgoing traffic to pass through.
+Now expand the `Network`{.action} menu and click `Security Groups`{.action}. 
+
+A table lists the security groups created. The default group is already listed here. This will allow all incoming and outgoing traffic to pass through.
+
+> [!alert]
+>
+> **Please do not modify or delete the "default" group. You will need to create a new security group and configure your rules in it.**
+>
+> Automated tasks on the infrastructure can reset the default security group, so it is important not to change it.
+>
+> OpenStack closes all access to instances by default. If you delete the "default" security group, you will need to create your own group, which will open access to your instances, and apply it every time you create an instance. In addition, the default group will be created again later by the automated tasks on the infrastructure.
+>
 
 To add a new security group, click the `+ Create Security Group`{.action} button.
 
@@ -48,7 +57,7 @@ If you are satisfied with these rules, go to Step 3: [Configure a security group
 
 ### Step 2: configuring security group rules
 
-To change the default rules, or if your needs change, click the `Manage Rules`{.action} button.
+Click the `Manage Rules`{.action} button.
 
 ![manage rules](images/security-group3.png){.thumbnail}
 

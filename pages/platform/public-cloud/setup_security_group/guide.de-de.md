@@ -1,14 +1,12 @@
 ---
 title: 'Eine Sicherheitsgruppe in Horizon erstellen und konfigurieren'
 excerpt: 'Erfahren Sie hier, wie Sie eine Sicherheitsgruppe erstellen und auf einer Public Cloud Instanz konfigurieren'
-updated: 2021-08-24
+updated: 2023-07-24
 ---
 
 > [!primary]
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
 >
-
-**Letzte Aktualisierung am 24.08.2021**
 
 ## Ziel
 
@@ -34,7 +32,18 @@ Greifen Sie auf das [Horizon-Interface](/pages/platform/public-cloud/create_and_
 > Wenn eine Sicherheitsgruppe in mehreren Regionen verwendet werden soll, erstellen Sie diese für jede Region.
 >
 
-Wählen Sie jetzt das Menü `Network`{.action} aus und klicken Sie auf `Security Groups`{.action}. Eine Tabelle listet die vorhandenen Sicherheitsgruppen auf. Die Gruppe "Default" ist bereits erstellt; damit wird der gesamte ein- und ausgehende Traffic durchgelassen.
+Wählen Sie jetzt das Menü `Network`{.action} aus und klicken Sie auf `Security Groups`{.action}.
+
+Eine Tabelle listet die vorhandenen Sicherheitsgruppen auf. Die Gruppe "Default" ist bereits erstellt; damit wird der gesamte ein- und ausgehende Traffic durchgelassen.
+
+> [!alert]
+>
+> **Achtung: Ändern oder löschen Sie die Gruppe "Default" nicht. Erstellen Sie in jedem Fall eine neue Sicherheitsgruppe, um Ihre Regeln darin zu konfigurieren.**
+>
+> Automatisierte Tasks auf der Infrastruktur können die Standard-Sicherheitsgruppe zurücksetzen. Es ist daher wichtig, dass Sie diese nicht ändern.
+>
+> OpenStack schließt standardmäßig alle Zugriffe auf Instanzen. Wenn Sie die Sicherheitsgruppe "Default" löschen, müssen Sie eine eigene Sicherheitsgruppe erstellen, die den Zugriff auf Ihre Instanzen ermöglicht, und diese bei jeder Erstellung einer Instanz anwenden. Darüber hinaus wird die Gruppe "Default" zu einem späteren Zeitpunkt durch die automatisierten Tasks auf der Infrastruktur wieder erstellt.
+>
 
 Um eine neue Sicherheitsgruppe hinzuzufügen, klicken Sie auf den Button `+ Create Security Group`{.action}.
 
@@ -50,7 +59,7 @@ Wenn Sie mit diesen Regeln einverstanden sind, fahren Sie stattdessen fort mit S
 
 ### Schritt 2: Regeln einer Sicherheitsgruppe konfigurieren
 
-Um die Standardregeln anzupassen, klicken Sie auf den Button `Manage Rules`{.action}.
+Klicken Sie auf den Button `Manage Rules`{.action}.
 
 ![Regeln verwalten](images/security-group3.png){.thumbnail}
 

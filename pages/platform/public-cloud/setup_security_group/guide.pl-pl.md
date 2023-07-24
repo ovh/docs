@@ -1,15 +1,12 @@
 ---
 title: 'Tworzenie i konfigurowanie grupy zabezpieczeń w interfejsie Horizon'
 excerpt: 'Dowiedz się, jak utworzyć grupę zabezpieczeń i skonfigurować ją na instancji Public Cloud'
-legacy_guide_number: g1925
-updated: 2021-08-24
+updated: 2023-07-24
 ---
 
 > [!primary]
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
 >
-
-**Ostatnia aktualizacja z dnia 24-08-2021**
 
 ## Wprowadzenie
 
@@ -35,7 +32,18 @@ Dostęp do interfejsu [Horizon](/pages/platform/public-cloud/create_and_delete_a
 > Jeśli grupa zabezpieczeń ma być używana w kilku regionach, należy ją utworzyć dla każdego z nich.
 >
 
-Teraz rozwiń menu `Network`{.action} i kliknij `Security Groups`{.action}. Tabela zawiera listę utworzonych grup zabezpieczeń. Grupa "default" została już wymieniona. Pozwala on na przepuszczanie całego ruchu przychodzącego i wychodzącego.
+Teraz rozwiń menu `Network`{.action} i kliknij `Security Groups`{.action}. 
+
+Tabela zawiera listę utworzonych grup zabezpieczeń. Grupa "default" została już wymieniona. Pozwala on na przepuszczanie całego ruchu przychodzącego i wychodzącego.
+
+> [!alert]
+>
+> **Nie zmieniaj ani nie usuwaj grupy "default". Utwórz nową grupę zabezpieczeń i skonfiguruj w niej reguły.**
+>
+> Zautomatyzowane zadania w infrastrukturze mogą zresetować domyślną grupę zabezpieczeń. Dlatego ważne jest, aby nie wprowadzać zmian w tej grupie.
+>
+> OpenStack zamyka domyślnie wszystkie dostępy do instancji. Jeśli usuniesz grupę zabezpieczeń "default", utwórz własną grupę, która umożliwia dostęp do Twoich instancji i stosuje ją przy każdym utworzeniu instancji. Dodatkowo, grupa "default" zostanie utworzona ponownie za pomocą zautomatyzowanych zadań w infrastrukturze.
+>
 
 Aby dodać nową grupę zabezpieczeń, kliknij przycisk `+ Create Security Group`{.action}.
 
@@ -51,7 +59,7 @@ Jeśli użytkownik zgadza się z tymi zasadami, zapoznaj się z tym przewodnikie
 
 ### Etap 2: skonfiguruj reguły grupy zabezpieczeń
 
-Aby zmienić domyślne reguły lub zmienić Twoje potrzeby, kliknij przycisk `Manage Rules`{.action}.
+Kliknij przycisk `Manage Rules`{.action}.
 
 ![zarządzanie regułami](images/security-group3.png){.thumbnail}
 
