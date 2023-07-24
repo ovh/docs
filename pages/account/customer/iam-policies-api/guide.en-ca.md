@@ -6,25 +6,25 @@ updated: 2023-06-23
 
 > [!warning]
 >
-> This feature is currently in beta. To join the beta, subscribe here: <https://labs.ovhcloud.com/en/>
+> This feature is currently in beta. Find more information about it on <https://labs.ovhcloud.com/en/>
 >  
 
 ## Objective
 
 This guide will explain how to provide specific access rights to users of an OVHcloud account.
 
-The access management of OVHcloud is based on a "policy" management system. It is possible to write different "policies" that give users access to specific features on the products linked to an OVHcloud account.
+The access management of OVHcloud is based on a policy management system. It is possible to write different policies that give users access to specific features on the products linked to an OVHcloud account.
 
-In details, a policy contains:
+In detail, a policy contains:
 
 - One or more **identities** targeted by this policy. 
-    - It can be account IDs, users or user groups (like the ones used in [federation](/products/customer-connect-saml-sso)). 
+    - It can be account IDs, users or user groups (like the ones used in [Federation](/products/customer-connect-saml-sso)
 - One or more **resources** impacted by this policy. 
     - A resource is an OVHcloud product that will be impacted by this policy (a domain name, a Nutanix server, a Load Balancer, etc.).
-- One or more **actions** allowed or excepted by this policy. 
-    - Actions are the specific rights affected by this policy (reboot the server, create an email account, terminate a product, etc.)
+- One or more **actions** allowed or excepted by this policy.
+    - Actions are the specific rights affected by this policy (reboot a server, create an email account, cancel a subscription, etc.)
 
-For instance, we can create a policy to give to a user called John, for a VPS, access to the action "reboot".
+For example, we can create a policy to give to a user called John, for a VPS, access to the action "reboot".
 
 **This guide explains in detail how these policies can be declared using the OVHcloud API, and how to list the identities, resources and actions available for them.**
 
@@ -34,9 +34,9 @@ For instance, we can create a policy to give to a user called John, for a VPS, a
 
 To set up a policy, you will require:
 
-- An [OVHcloud account](/pages/account/customer/ovhcloud-account-creation).
-- To know [how to manage account users](/pages/account/customer/ovhcloud-users-management).
-- Some OVHcloud products linked to this OVHcloud account (Load Balancer, domain name, VPS, etc.).
+- An [OVHcloud account](/pages/account/customer/ovhcloud-account-creation)
+- Knowing [how to manage account users](/pages/account/customer/ovhcloud-users-management)
+- One or more OVHcloud products linked to this OVHcloud account (Load Balancer, domain name, VPS, etc.)
 
 ## Instructions
 
