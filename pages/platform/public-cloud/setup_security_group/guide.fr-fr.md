@@ -34,11 +34,14 @@ Un tableau liste les groupes de sécurité créés.
 
 Le groupe « default » y est déjà listé. Celui-ci laisse passer tout le trafic entrant et sortant.
 
-> [!primary]
+> [!alert]
 >
-> Nous vous déconseillons vivement de modifier ou supprimer le groupe « default », ceci afin de maintenir l'accès à vos instance en toutes circonstances (par exemple en mode rescue).
+> **Veuillez ne pas modifier ou supprimer le groupe « default ». Vous devez impérativement créer un nouveau groupe de sécurité et y configurer vos règles.**
 >
-> Par défaut, OpenStack ferme tous les accès aux instances. Si vous supprimez le groupe « default », vous devrez créer votre propre groupe ouvrant les accès à vos instances et l'appliquer à chaque création d'une instance.
+> Des tâches automatisées sur l'infrastructure peuvent réinitialiser le groupe de sécurité par défaut, il est donc important de ne pas modifier celui-ci.
+>
+> OpenStack ferme par défaut tous les accès aux instances. Si vous supprimez le groupe de sécurité « default », vous devrez créer votre propre groupe ouvrant les accès à vos instances et l'appliquer à chaque création d'une instance. Par ailleurs, le groupe « default » sera ultérieurement créé de nouveau par les tâches automatisées sur l'infrastructure.
+>
 
 Pour ajouter un nouveau groupe de sécurité, cliquez sur le bouton `+ Create Security Group`{.action}.
 
