@@ -1,10 +1,8 @@
 ---
 title: What are the IP addresses of the OVHcloud monitoring?
 excerpt: Find here the IP addresses to fill in when setting up a firewall so that OVHcloud monitoring will continue to work on your server
-updated: 2022-12-13
+updated: 2023-07-21
 ---
-
-**Last updated 13th December 2022**
 
 ## Objective
 
@@ -25,17 +23,7 @@ To implement a restrictive firewall, especially on ICMP, and continue to benefit
 
 ### IP addresses to be authorised
 
-|Reverse|IP|Protocol|
-|---|---|---|
-|mrtg-rbx-100|37.187.231.251|icmp|
-|mrtg-sbg-100|37.187.231.251|icmp|
-|mrtg-gra-100|37.187.231.251|icmp|
-|mrtg-bhs-100|37.187.231.251|icmp|
-|mrtg-rbx-101|151.80.231.244|icmp|
-|mrtg-rbx-102|151.80.231.245|icmp|
-|mrtg-rbx-103|151.80.231.246|icmp|
-|mrtg-gra-101|151.80.231.247|icmp|
-|a2.ovh.net|213.186.33.62|icmp|
+Reverse|IP|Protocol|
 |---|---|---|
 |netmon-rbx-probe|92.222.184.0/24|icmp|
 |netmon-sbg-probe|92.222.185.0/24|icmp|
@@ -43,12 +31,7 @@ To implement a restrictive firewall, especially on ICMP, and continue to benefit
 |netmon-bhs-probe|167.114.37.0/24|icmp|
 |netmon-sgp-probe|139.99.1.144/28|icmp|
 |---|---|---|
-|proxy.p19.ovh.net|213.186.45.4|icmp|
-|proxy.rbx.ovh.net|213.251.184.9|icmp|
-|proxy.sbg.ovh.net|37.59.0.235|icmp|
-|proxy.bhs.ovh.net|8.33.137.2|icmp|
 |ping.ovh.net|213.186.33.13|icmp|
-|proxy.ovh.net|213.186.50.98|icmp|
 ||xxx.xxx.xxx.250 (xxx.xxx.xxx.aaa is the server ip)|icmp|
 ||xxx.xxx.xxx.251 (xxx.xxx.xxx.aaa is the server ip)|icmp + Port monitored by the monitoring service|
 
