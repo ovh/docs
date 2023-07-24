@@ -3,8 +3,6 @@ title: FAQ Public Cloud OVHcloud
 updated: 2023-07-24
 ---
 
-**Dernière mise à jour le 01/12/2022**
-
 ## FAQ Public Cloud
 
 ### Comment se connecter à une instance Public cloud ?
