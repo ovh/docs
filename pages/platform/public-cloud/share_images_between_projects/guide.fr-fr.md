@@ -1,68 +1,64 @@
 ---
-title: "Partager des images entre Projets Public Cloud"
-excerpt: "Découvrez comment partager des images entre des Projets Public Cloud à l'aide d'Openstack"
-updated: 2023-07-12
+title: "Partager des images entre projets Public Cloud"
+excerpt: "Découvrez comment partager des images entre des projets Public Cloud à l'aide d'OpenStack"
+updated: 2023-07-24
 ---
 
 ## Objectif
 
-Il peut arriver que vous deviez partager une image [Instance backup](/pages/platform/public-cloud/save_an_instance) ou une image [Volume backup](/pages/platform/public-cloud/volume-backup) entre un ou plusieurs projets Public Cloud.
+Il peut arriver que vous deviez partager une image [Instance backup](/pages/platform/public-cloud/save_an_instance) ou une image [Volume backup](/pages/platform/public-cloud/volume-backup) entre  plusieurs projets Public Cloud.
 
-Avec Openstack, il est possible de partager une image entre plusieurs projets, même s'ils n'appartiennent pas au même compte.
-
-Cette fonctionnalité offre de nombreuses possibilités, mais elle comporte également des risques. Il est donc important de comprendre de quoi il s'agit.
+Avec OpenStack, vous pouvez partager une image entre plusieurs projets, même s'ils n'appartiennent pas au même compte.
+Cette fonctionnalité offre de nombreuses possibilités mais elle comporte également des risques. Il est donc important d'en comprendre les principes.
 
 Par exemple, si vous souhaitez partager une image d'un projet A avec un projet B (dans le même compte ou dans un compte différent), les règles suivantes s'appliquent :
 
 - L'image reste attachée physiquement au projet A. Le projet B ne dispose que d'une « autorisation d'accès » à cette image.
-
-- Si le Projet A supprime l'accès à l'image (suppression de l'acl, suppression de l'image, suppression du projet pour factures impayées, etc...), les instances s'exécutant à partir de cette image sur le Projet B peuvent ne plus fonctionner en raison de problèmes de migration ou de reconstruction.
+- Si le Projet A supprime l'accès à l'image (suppression de l'ACL, suppression de l'image, suppression du projet pour factures impayées, etc.), les instances s'exécutant à partir de cette image sur le Projet B peuvent ne plus fonctionner en raison de problèmes de migration ou de reconstruction.
 
 Il est donc important de garder cela à l'esprit avant de s'engager dans cette configuration.
+Pour plus d'informations, veuillez consulter la [documentation officielle OpenStack](https://docs.openstack.org/image-guide/share-images.html){.external}.
 
-Pour plus d'informations, veuillez consulter la documentation [officielle Openstack](https://docs.openstack.org/image-guide/share-images.html){.external}.
-
-**Ce guide vous montrera comment partager des images entre un ou plusieurs projets tout en préservant la configuration et l'état de l'image.**
+**Ce guide vous montrera comment partager des images entre un ou plusieurs projets, tout en préservant la configuration et l'état de l'image.**
 
 ## Prérequis
 
-Avant de suivre ces étapes, il est recommandé de compléter d'abord ce guide :
+Avant de suivre ces étapes, il est recommandé de consulter d'abord ce guide :
 
-* [Préparer l’environnement à l’utilisation de l’API OpenStack](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api)
+- [Préparer l’environnement à l’utilisation de l’API OpenStack](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api)
 
-Vous aurez également besoin :
+Vous aurez également besoin de :
 
-* Posséder une [Instance Public Cloud](https://www.ovhcloud.com/fr/public-cloud/) dans votre compte OVHcloud
-* Un utilisateur [OpenStack](/pages/platform/public-cloud/create_and_delete_a_user) créé dans votre projet.
-* Disposer d’un accès administrateur (root) à votre instance/sur votre système d'exploitation via SSH.
+- posséder une [Instance Public Cloud](https://www.ovhcloud.com/fr/public-cloud/) dans votre compte OVHcloud ;
+- Un utilisateur [OpenStack](/pages/platform/public-cloud/create_and_delete_a_user) créé dans votre projet ;
+- Disposer d’un accès administrateur (root) à votre instance/sur votre système d'exploitation via SSH.
 
 > [!primary]
 >
 > Les commandes de ce guide sont basées sur l'API `OPENSTACK`.
 >
 
-## Instructions
+## En pratique
 
 ### Partager une image
 
-Tout d'abord, établissez une connexion SSH à votre instance/système d'exploitation, puis exécutez la commande suivante pour répertorier vos images existantes :
+Tout d'abord, établissez une connexion SSH à votre instance/système d'exploitation puis exécutez la commande suivante pour répertorier vos images existantes :
 
 ```bash
 $ openstack image list --private
 | 9a0fbdc5-1f4a-4a1c-ad46-8d404a1313ba | pfsense |
 ```
 
-
 > [!warning]
 > 
-> Pour être partagée, une image doit d'abord être mise en "visibility shared".
+> Pour être partagée, une image doit d'abord être mise en « visibilité partagée » (*shared visibility*).
 >
 
 ```bash
 $ openstack image set --shared <Image_UUID>
 ```
 
-### Ajouter un projet à une Image
+### Ajouter un projet à une image
 
 L'étape suivante consiste à ajouter l'UUID d'un autre projet comme membre de l'image. Dans notre exemple ci-dessous, nous ajoutons l'UUID du « Projet B ».
 
@@ -104,7 +100,7 @@ $ openstack image set --accept 9a0fbdc5-1f4a-4a1c-ad46-8d404a1313ba
 +--------------------------------------+----------------------------------+----------+
 ```
 
-Une fois celle-ci terminée, vérifiez que vous pouvez voir et accéder à l'Image :
+Une fois la demande de partage acceptée, vérifiez que vous pouvez voir et accéder à l'image :
 
 ```bash
 $ openstack image show 9a0fbdc5-1f4a-4a1c-ad46-8d404a1313ba
@@ -133,7 +129,19 @@ $ openstack image show 9a0fbdc5-1f4a-4a1c-ad46-8d404a1313ba
 +------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ```
 
-### Supprimer un membre d'une Image ou annuler le partage d'une Image
+### Vérifier les membres d'une image
+
+```bash
+$ openstack image member list 9a0fbdc5-1f4a-4a1c-ad46-8d404a1313ba
++--------------------------------------+----------------------------------+----------+
+| Image ID                             | Member ID                        | Status   |
++--------------------------------------+----------------------------------+----------+
+| 9a0fbdc5-1f4a-4a1c-ad46-8d404a1313ba | <project C>                      | pending  |
+| 9a0fbdc5-1f4a-4a1c-ad46-8d404a1313ba | <project B>                      | accepted |
++--------------------------------------+----------------------------------+----------+
+```
+
+### Supprimer un membre d'une image ou annuler le partage d'une image
 
 ```bash
 $ openstack image remove project <image> <UUID_Projet_A_Supprimer>

@@ -1,40 +1,39 @@
 ---
-title: Sharing images between Public Cloud Projects
-excerpt: Find out how to share images between Public Cloud Projects using Openstack
-updated: 2023-07-12
+title: Sharing images between Public Cloud projects
+excerpt: Find out how to share images between Public Cloud projects using OpenStack
+updated: 2023-07-24
 ---
 
 ## Objective
 
-A situation may arise where you need to share an [Instance backup](/pages/platform/public-cloud/save_an_instance) image or a [Volume backup](/pages/platform/public-cloud/volume-backup) image between one or more Public cloud projects.
+A situation may arise where you need to share an [Instance backup](/pages/platform/public-cloud/save_an_instance) image or a [Volume backup](/pages/platform/public-cloud/volume-backup) image between several Public Cloud projects.
 
-With Openstack, it is possible to share an image between projects, even if they don't belong to the same account.
+With OpenStack, it is possible to share an image between projects, even if they don't belong to the same account.
 
 This feature offers many possibilities, but it also has its risks. It is therefore important to understand how it works.
 
 For example, if we want to share an image from Project A with Project B (in the same or different account), the following rules apply:
 
 - The image remains physically attached to Project A. Project B only has "access authorization" to this image.
-
-- If Project A removes access to the image (like acl, image deletion or if the project is deleted for unpaid invoices etc...), the instances running from this image on Project B may not work anymore due to migration or rebuild issues.
+- If Project A removes access to the image (like ACL, image deletion or if the project is deleted for unpaid invoices, etc.), the instances running from this image on Project B may not work anymore due to migration or rebuild issues.
 
 It is therefore important to keep this in mind before engaging in this setup.
 
-For more information, please consult the [Official Openstack documentation](https://docs.openstack.org/image-guide/share-images.html){.external}.
+For more information, please consult the [Official OpenStack documentation](https://docs.openstack.org/image-guide/share-images.html){.external}.
 
 **This guide will show you how to share images between one or more projects while preserving the configuration and state of the image.**
 
 ## Requirements
 
-Before following these steps, it is recommended that you first complete this guide:
+Before following these steps, it is recommended that you first read this guide:
 
-* [Prepare the environment to use the OpenStack API](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api)
+- [Prepare the environment to use the OpenStack API](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api)
 
 You will also need the following:
 
-* a [Public Cloud Instance](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account
-* an [OpenStack user](/pages/platform/public-cloud/create_and_delete_a_user/)
-* administrative (root) access to your instance/operating system via SSH
+- a [Public Cloud Instance](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account
+- an [OpenStack user](/pages/platform/public-cloud/create_and_delete_a_user/)
+- administrative (root) access to your instance/operating system via SSH
 
 > [!primary]
 >
@@ -62,7 +61,7 @@ $ openstack image list --private
 $ openstack image set --shared <Image_UUID>
 ```
 
-### Add a project to an Image
+### Add a project to an image
 
 The next step is to add the UUID of a different project as a member of the image. In our example below, we add the UUID of "Project B" to the image.
 
@@ -104,7 +103,7 @@ $ openstack image set --accept 9a0fbdc5-1f4a-4a1c-ad46-8d404a1313ba
 +--------------------------------------+----------------------------------+----------+
 ```
 
-Once completed, check that you can see and access the Image:
+Once completed, check that you can see and access the image:
 
 ```bash
 $ openstack image show 9a0fbdc5-1f4a-4a1c-ad46-8d404a1313ba
@@ -133,9 +132,7 @@ $ openstack image show 9a0fbdc5-1f4a-4a1c-ad46-8d404a1313ba
 +------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ```
 
-On Project A, you can:
-
-### Verify all the members of an Image
+### Verify all the members of an image
 
 ```bash
 $ openstack image member list 9a0fbdc5-1f4a-4a1c-ad46-8d404a1313ba
@@ -147,7 +144,7 @@ $ openstack image member list 9a0fbdc5-1f4a-4a1c-ad46-8d404a1313ba
 +--------------------------------------+----------------------------------+----------+
 ```
 
-### Delete a member of an Image or unshare an Image
+### Delete a member of an image or unshare an image
 
 ```bash
 $ openstack image remove project <image> <UUID_Project_To_Delete>
