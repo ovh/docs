@@ -1,14 +1,12 @@
 ---
 title: 'Crear y configurar un grupo de seguridad en Horizon'
 excerpt: 'Cómo crear un grupo de seguridad y configurarlo en una instancia de Public Cloud'
-updated: 2021-08-24
+updated: 2023-07-24
 ---
 
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
-
-**Última actualización: 24/08/2021**
 
 ## Objetivo
 
@@ -34,7 +32,18 @@ Acceda a la interfaz [Horizon](/pages/platform/public-cloud/create_and_delete_a_
 > Si un grupo de seguridad va a utilizarse en varias regiones, deberá crearlo para cada una de ellas.
 >
 
-Despliegue el menú `Network`{.action} y haga clic en `Security Groups`{.action}. Una tabla lista los grupos de seguridad creados. El grupo "default" ya está listado. que permite pasar todo el tráfico entrante y saliente.
+Despliegue el menú `Network`{.action} y haga clic en `Security Groups`{.action}.
+
+Una tabla lista los grupos de seguridad creados. El grupo "default" ya está listado. que permite pasar todo el tráfico entrante y saliente.
+
+> [!alert]
+>
+> **No modifique ni elimine el grupo "default". Es necesario crear un nuevo grupo de seguridad y configurar las reglas.**
+>
+> Las tareas automatizadas en la infraestructura pueden restablecer el grupo de seguridad "default", por lo que es importante no modificarlo.
+>
+> OpenStack cierra por defecto todos los accesos a las instancias. Si elimina el grupo de seguridad "default", deberá crear su propio grupo que abra los accesos a sus instancias y aplicarlo cada vez que cree una instancia. Además, el grupo "default" se creará de nuevo más adelante mediante tareas automatizadas en la infraestructura.
+>
 
 Para añadir un nuevo grupo de seguridad, haga clic en el botón `+ Create Security Group`{.action}.
 
@@ -50,7 +59,7 @@ Si lo necesita, lea esta guía en el [paso 3\. Configurar un grupo de seguridad 
 
 ### 2\. configurar las reglas de un grupo de seguridad
 
-Para cambiar las reglas por defecto o, si lo necesita, haga clic en el botón `Manage Rules`{.action}.
+Haga clic en el botón `Manage Rules`{.action}.
 
 ![gestionar las reglas](images/security-group3.png){.thumbnail}
 
