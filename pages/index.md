@@ -173,6 +173,7 @@
             + [FAQ](cloud/vps/vps-faq)
             + [Securing a VPS](cloud/vps/secure_your_vps)
             + [Getting started with SSH](cloud/dedicated/ssh_introduction)
+            + [Creating and using SSH keys](cloud/dedicated/creating-ssh-keys-dedicated)
             + [Repartitioning a VPS after an upgrade](cloud/vps/upsize_vps_partition)
             + [First steps with pre-installed applications](cloud/vps/apps_first_steps)
             + [Using the KVM for a VPS](cloud/vps/using_kvm_for_vps)
