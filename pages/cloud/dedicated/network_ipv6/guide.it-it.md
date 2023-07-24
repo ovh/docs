@@ -1,14 +1,12 @@
 ---
 title: 'Configurare IPv6 su server dedicati'
 excerpt: 'Scopri come configurare indirizzi IPv6 sulla nostra infrastruttura'
-updated: 2023-06-21
+updated: 2023-07-04
 ---
 
 > [!primary]
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
 >
-
-**Ultimo aggiornamento: 21/06/2028**
 
 ## Obiettivo
 
@@ -37,8 +35,6 @@ La versione 6 del Protocollo Internet (IPv6) è l’ultima versione del Protocol
 Se per installare il tuo server utilizzi un template per il sistema operativo Linux fornito da OVHcloud, dovrai configurare il primo indirizzo IPv6 (l'indirizzo principale) sul server.
 
 Ad esempio, se abbiamo assegnato al tuo server l'intervallo IPv6: `2607:5300:xxxx:xxxx::/64` è possibile utilizzare come IPv6 principale del tuo server l'IPv6: `2607:5300:xxxx:xxx::1/64`.
-
-Per configurare più indirizzi IPv6 sul tuo server (o per utilizzarlo su una VM), è necessario disporre di un Additional IP configurato con una vMAC. In caso contrario, l'IPv6 non potrà essere utilizzato dai nostri router/switch. Ti ricordiamo che questa restrizione non si applica ai server High Grade e Scale. Per le macchine virtuali create su questi server, gli indirizzi IPv6 possono essere utilizzati senza l'utilizzo di vMAC.
 
 ### Gateway predefinito (esclusi i server High Grade e Scale)
 
