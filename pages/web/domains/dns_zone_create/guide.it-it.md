@@ -38,7 +38,7 @@ Per diversi motivi, potresti aver bisogno di creare una zona DNS per il tuo domi
 ## Prerequisiti
 
 - Disporre di un dominio
-- il dominio in questione non deve disporre già di una zona DNS (attiva o meno) in OVHcloud o essere oggetto di un'operazione o di un ordine in corso in OVHcloud.
+- Il dominio in questione non deve disporre già di una zona DNS (attiva o meno) in OVHcloud o essere oggetto di un'operazione o di un ordine in corso in OVHcloud.
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 
 ## Procedura
@@ -74,7 +74,7 @@ Una volta completata la verifica, scegli se attivare il numero minimo di record 
 |Attivare i record minimi?|Dettaglio|
 |---|---|
 |Sì|Seleziona questa scelta se vuoi personalizzare in autonomia la zona DNS in seguito.</br>![minimale-entra](images/minimal.png){.thumbnail}|
-|Non|Seleziona questa opzione se intendi utilizzare servizi OVHcloud come [hosting web](https://www.ovhcloud.com/it/web-hosting/){.external}, con la zona preconfigurata a tal fine.</br>![no-minimale-entra](images/no_minimal.png){.thumbnail}|
+|No|Seleziona questa opzione se intendi utilizzare servizi OVHcloud come [hosting web](https://www.ovhcloud.com/it/web-hosting/){.external}, con la zona preconfigurata a tal fine.</br>![no-minimale-entra](images/no_minimal.png){.thumbnail}|
 
 Una volta effettuata la scelta, segui gli step fino alla creazione della zona DNS.
 
@@ -82,7 +82,7 @@ Una volta effettuata la scelta, segui gli step fino alla creazione della zona DN
 
 Ora che la zona DNS del tuo dominio è stata creata, è possibile modificarla. Questa operazione è facoltativa, ma può rivelarsi necessaria per garantire la disponibilità dei servizi associati a questo dominio (ad esempio un sito Web e/o un servizio di posta elettronica).
 
-Per modificare questa zona DNS, consulta la nostra guida "[Modifica una zona DNS in OVHcloud]()".
+Per modificare questa zona DNS, consulta la nostra guida "[Modifica una zona DNS in OVHcloud]((/pages/web/domains/dns_zone_edit)".
 
 > [!primary]
 >
