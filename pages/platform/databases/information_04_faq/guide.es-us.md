@@ -2,10 +2,8 @@
 title: FAQ Public Cloud databases
 routes:
     canonical: '/pages/platform/databases/information_04_faq'
-updated: 2023-03-21
+updated: 2023-07-24
 ---
-
-**Last updated March 21<sup>st</sup>, 2023**
 
 ## Objective
 
@@ -20,12 +18,6 @@ Public Cloud Databases is a managed service allowing you to deploy and use datab
 We provide cost-efficient services and take care of the infrastructure. We provide by design various features such as automatic backups, software updates, public or private network, observability tools such as logs and metrics, and end-to-end security mechanisms.
 
 Our Public Cloud Databases can be reached via Public network (Internet) or Private network (vRack), allowing you multiple use cases: connect with OVHcloud Public Cloud instances or Kubernetes clusters, OVHcloud baremetal, Hosted Private Cloud, OVHcloud VPS... but also allow for Hybrid Cloud as long as you can use Public network (Internet).
-
-### What is the difference between this offer and the Enterprise Cloud Databases offer ?
-
-Enterprise Cloud Databases is only providing the PostgreSQL database engine, and is powered by dedicated servers. Public Cloud Databases are based on virtual machines, and provides multiples DBMS.
-
-Enterprise Cloud Databases will smoothly be transited to Public Cloud Databases in the near future.
 
 ### What is the difference between this offer and Web Hosting Databases ?
 
@@ -204,23 +196,22 @@ We are based on UTC Time.
 
 To select the right amount of compute, RAM and storage, you will need to assess your needs.
 
-If you already have databases instances, you can check what is consumed today. For a new service, you will have to forecast you needs. Keep in mind that you can upgrade your DB instance range to a bigger one.
+If you already have databases instances, you can check what is consumed today. For a new service, you will have to forecast your needs. Keep in mind that you can scale up or down your DB.
 
 ### Once my DB instance is up, can I scale my service up or down ?
 
 For each DB instance, you can:
 
 - select a higher service plan if required (Essential to Business or Enterprise, Business to Enterprise).
-- select a higher range of compute and storage.
+- select a higher or lower range of compute and storage, provided that the new storage is enough to contain your data.
 
 For each DB instance, you can not:
 
 - select a lower service plan.
-- select a lower range of compute.
 
 ### Will my DB instance remain available during scaling ?
 
-In most cases, your instance will remain available during the scaling. However, the status of your service will switch to "updating", preventing you from modifying your service (e.g.: adding a user).
+In most cases and if your plan supports high availability, your instance will remain available during the scaling. However, the status of your service will switch to "updating", preventing you from modifying your service (e.g.: adding a user).
 
 ### What are the performances for each flavor ?
 
@@ -231,7 +222,7 @@ Just keep in mind that our performances gaps are linear.
 ### Where are my DB instances deployed ?
 
 During the DB instance creation, you can select the region and datacenter to deploy your service.
-Please find the exact list and proposed version in our [Capabilities page](/pages/platform/databases/mongodb_01_concept_capabilities).
+Please find the exact list in our [Capabilities page](/pages/platform/databases/information_05_capabilities).
 
 ### Do we provide Multi-AZ deployments ?
 
@@ -243,7 +234,10 @@ To provide High-Availability, we use the clustering principles. Your service and
 
 The exact implementation may differ for each DBMS. Indeed, each DBMS has its own mechanisms and best practices.
 
-For MongoDB, High-Availability starts with 3 nodes. For PostgreSQL or MySQL, it starts with 2 nodes.
+For example:
+
+- MongoDB high-Availability starts with 3 nodes.
+- PostgreSQL or MySQL, it starts with 2 nodes.
 
 ### What are nodes called "primary" and "replicas" ?
 
@@ -298,20 +292,33 @@ When possible, we store your encrypted backups outside the region of your servic
 The location of the backup is available with all the other information of the backup in the API.
 
 The period during which the backup is stored depends on the plan you subscribed.
-You can find it in our [Capabilities page](/pages/platform/databases/mongodb_01_concept_capabilities).
+You can find it in our [Automated backups documentation](/pages/platform/databases/databases_05_automated_backups).
 
 ### What are my responsibilities about backups ?
 
 As a customer, you are solely responsible to make the appropriate backups for your services.
 
+### What is a backup window? Will my DB instance be available during backups events ?
+
+The backup window is the period of the day during which the backups operation are executed.
+Your instance will remain available.
+
+### Can I modify the backup window ?
+
+Yes, you can, via the OVHcloud control panel, Terraform or the API.
+
+### Can I modify the backup location ?
+
+Yes, you can. Please refer to [Automated backups](/pages/platform/databases/databases_05_automated_backups) for more details.
+
 ### What is a maintenance window? Will my DB instance be available during maintenance events ?
 
-The maintenance window is the period of the day during which the maintenance operation, such as the backups, can be executed.
+The maintenance window is the period of the day during which the maintenance operation, such as security patches, can be executed.
 Depending on the maintenance operation, your DB instance will or will not be available during this event, but in most cases, your instance will be available.
 
 ### Can I modify the maintenance window ?
 
-Currently you can not modifiy the maintenance window. Please follow our [official roadmap](https://github.com/ovh/public-cloud-roadmap/projects).
+Yes, you can, via the OVHcloud control panel, Terraform or the API.
 
 ## Security
 
@@ -324,7 +331,7 @@ Each database instance is strongly secured through multiple actions:
 - **Network ACL**: we provide Access Control List (ACL) allowing you to specify which IPs or IP block have the right to connect to your database instance. By default, no ACL is declared on the service meaning nobody can connect to your service until you add at least one.
 - **End-to-End encryption**: connections to databases are, by default, encrypted with TLS protocol, providing an end-to-end encryption protection. OVHcloud generates a SSL/TLS certificate for each dB instance. Once you establish an encrypted connection betwen your application and your database instance, your data flows will be encrypted.
 - **Data encryption**: data is stored on dedicated volumes that are encrypted.
-- **European data sovereignty**: Public Cloud Databases are part of OVHcloud, a European company. It guarantees data sovereignty to our customers. [Read more](https://www.ovhcloud.com/es-es/about-us/data-sovereignty/)
+- **European data sovereignty**: Public Cloud Databases are part of OVHcloud, a European company. It guarantees data sovereignty to our customers. [Read more](https://www.ovhcloud.com/es/about-us/data-sovereignty/)
 
 ### Who can access my database instance initially ?
 
@@ -337,13 +344,13 @@ To sum-up, initially your database cannot be accessed. It's made on purpose to p
 
 ### How can I manage authorized accesses to my database instance ?
 
-Once your database instance is created, you can manage authorized IPs or IP blocks through the OVHcloud Control Panel or via API. You need at least 1 authorized IP to access your service.
+Once your database instance is created, you can manage authorized IPs or IP blocks either in the OVHcloud Control Panel or via Terraform or the API. You need at least 1 authorized IP to access your service.
 
 Please read our [Getting started guide](/pages/platform/databases/databases_01_order_control_panel) to get a step by step documentation.
 
 ### How can I add new users for my database instance ?
 
-Once your database instance is created, you can manage database users through the OVHcloud control panel or via API.
+Once your database instance is created, you can manage database users either in the OVHcloud control panel or via Terraform or the API.
 You need at least 1 created and configured user.
 Please read our [Getting started guide](/pages/platform/databases/databases_01_order_control_panel) to get a step by step documentation.
 
@@ -375,6 +382,11 @@ Yes, based on the service plan, databases instances have the ability to connect 
 It has to be specified and selected during database instance creation.
 If you select Private Network connectivity, you can not be connected through Public Network.
 
+### Can I move my instance from public to private network or vice versa ?
+
+No, you cannot. Once the networking type of an instance is set, you cannot switch to the other networking type.
+However, if your instance already has data and you want to move to the other networking type, you can restore your instance from a backup to a new instance with the other networking type (fork).
+
 ### Can I move my database instance from one vRack to another one ?
 
 At this time, you can not move your database from one vRack to another. You can follow our [official roadmap](https://github.com/ovh/public-cloud-roadmap/projects).
@@ -404,6 +416,7 @@ To connect to a database instance, please make sure to:
 - know your database instance connection parameters: host address, port, security mode.
 
 Once you are ready, you can test the connection via the DBMS official command line interface OR with classic application code such as Python, PHP, java...
+You can find connection examples in various languages in our [Example Repository](https://github.com/ovh/public-cloud-databases-examples).
 
 If you still have connectivity issues, please contact our support.
 
@@ -415,16 +428,7 @@ If you forgot your user credentials, or have security concerns, you can modify y
 
 Each database instance has a limited amount of storage space. We recommend you to monitor your remaining storage space constantly.
 
-To prevent storage issues, OVHcloud:
-
-- alerts you by email when you are reaching 80% of used storage space.
-- puts your database in read-only mode when you are reaching 90% of used storage space. It means that your database instance can accept READ operations, but will not accept WRITE operations anymore. Your service is degraded.
-- unblocks your database instance state when you decrease your used storage space to 80%.
-
-If you are running out of storage, you can:
-
-- either upgrade to a superior flavor, with more storage space, via the OVHcloud Public Cloud Control Panel.
-- or clean up your data (remove unused tables...). Please follow the official DBMS documentation for instructions.
+In order to manage storage issues, please refer to the [Handling "Disk Full" situations](/pages/platform/databases/databases_10_full_disk_handling) guide.
 
 ### My queries are slow
 
@@ -439,7 +443,7 @@ These queries performances are related to many external factors:
 - The heavy usage of the service (for example a legit traffic due to Sales actions).
 - An issue on the hardware infrastructure or network.
 
-To troubleshoot your performance, usually the first step is to check if the service is not affected, i.e. by a [travaux task](https://status.us.ovhcloud.com/).
+To troubleshoot your performance, usually the first step is to check if the service is not affected, i.e. by a [travaux task](https://www.status-ovhcloud.com/).
 To bench a superior flavor, you can duplicate your database instance to a higher flavor model and test again the performance.
 
 Overall, if you are experiencing punctual slowness, you need databases and system admin skills.
