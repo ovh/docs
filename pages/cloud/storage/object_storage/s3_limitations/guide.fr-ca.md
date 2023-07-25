@@ -48,7 +48,7 @@ La taille théorique maximale d’un seul *Large Object* uploadé via MPU est do
 
 - Doit comporter entre 3 et 63 caractères.
 - Doit commencer et se terminer par des caractères alphanumériques minuscules (de a à z et de 0 à 9).
-- Doit être unique chez OVHcloud.
+- Doit être unique au sein d'OVHcloud.
 - Peut comporter les signes de ponctuation suivants : « . » et « - ».
 - Ne peut comporter plusieurs signes de ponctuation à la suite (« .. » ou « -. » ou « .- » ou « -- »).
 - Ne peut ressembler à une adresse IP (192.168.1.1).
