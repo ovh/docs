@@ -20,7 +20,7 @@ This is an open-source engine, whose parent company is Oracle.
 
 MariaDB is a derivative (fork) of MySQL.
 
-This engine is 100% compatible, and is "freer" than its sibling MySQL. All the bugs and roadmaps are freely accessible, unlike the Oracle version. In addition, the storage database InnoDB has been replaced by XtraDB and other optimisations, promising performance gains.
+This engine is 100% compatible, and is "freer" than its sibling MySQL. All the bugs and roadmaps are freely accessible, unlike the Oracle version.
 
 **Find out how to create and manage your MySQL or MariaDB databases**
 
