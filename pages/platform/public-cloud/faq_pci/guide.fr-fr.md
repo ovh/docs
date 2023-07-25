@@ -1,6 +1,6 @@
 ---
 title: FAQ Public Cloud OVHcloud
-updated: 2023-07-24
+updated: 2023-07-25
 ---
 
 ## FAQ Public Cloud
@@ -89,7 +89,7 @@ Les IP publiques sont attribuées automatiquement aux instances et ne sont donc 
 
 Pour plus d'informations, nous vous invitons à consulter le guide : [Acheter une Additional IP](/pages/platform/network-services/additional-ip-buy).
 
-### Combien d'Additional IP puis-je attacher à chaque instance ?
+### Combien d'adresses Additional IP puis-je attacher à chaque instance ?
 
 Vous pouvez attacher jusqu'à 256 Additional IP par instance.
 

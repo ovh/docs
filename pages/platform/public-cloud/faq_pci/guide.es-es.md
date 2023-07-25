@@ -1,6 +1,6 @@
 ---
 title: FAQ Public Cloud OVHcloud
-updated: 2023-07-24
+updated: 2023-07-25
 ---
 
 > [!primary]
@@ -93,9 +93,9 @@ Las IP públicas se asignan automáticamente a las instancias, por lo que no pue
 
 Para más información, consulte la guía [Comprar una Additional IP](/pages/platform/network-services/additional-ip-buy).
 
-### ¿Cuántas IPs Adicionales puedo adjuntar a cada instancia?
+### ¿Cuántas direcciones Additional IP puedo adjuntar a cada instancia?
 
-Puede adjuntar hasta 256 IPs adicionales por instancia.
+Puede adjuntar hasta 256 direcciones Additional IP por instancia.
 
 ### ¿Cuántas direcciones IPv6 se entregan con mi instancia?
 
