@@ -1,6 +1,6 @@
 ---
-title: AI Training - Tutorial - Train a model to recognize marine mammal sounds 
-excerpt: Understand how simple it is to train a model using AI Training
+title: AI Training - Tutoriel - Entraînez un modèle à reconnaître les sons des mammifères marins (EN)
+excerpt: "Découvrez à quel point il est simple d'entraîner un modèle à l'aide d'AI Training"
 updated: 2023-07-25
 ---
 
@@ -18,7 +18,7 @@ You can see the Notebook step in the tutorial: [Audio analysis and classificatio
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 - A Public Cloud project created
 - The ovhai CLI interface installed on your system (more information [here](/pages/platform/ai/cli_10_howto_install_cli))
 - [Docker](https://www.docker.com/get-started) installed and configured to build images.
