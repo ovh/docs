@@ -50,7 +50,7 @@ The theoretical maximum size of a single large object uploaded via MPU is thus 4
 
 - Must be between 3 and 63 characters long.
 - Must begin and end with lower case alphanumeric characters (a to z and 0 to 9).
-- Must be unique within the same OVHcloud region.
+- Must be unique within OVHcloud.
 - May contain the following punctuation marks: "." and "-".
 - Must not contain multiple punctuation marks in a row (".." or " -." or ".-" or " --").
 - Must not look like an IP address (192.168.1.1).
