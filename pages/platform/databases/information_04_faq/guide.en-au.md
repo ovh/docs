@@ -3,8 +3,6 @@ title: FAQ Public Cloud databases
 updated: 2023-07-24
 ---
 
-**Last updated March 21<sup>st</sup>, 2023**
-
 ## Objective
 
 Here are the most frequently asked questions about Public Cloud Databases.
@@ -203,7 +201,7 @@ If you already have databases instances, you can check what is consumed today. F
 For each DB instance, you can:
 
 - select a higher service plan if required (Essential to Business or Enterprise, Business to Enterprise).
-- select a higher or lower range of compute and storage, on the condition the new storage is enough to contain your data.
+- select a higher or lower range of compute and storage, provided that the new storage is enough to contain your data.
 
 For each DB instance, you can not:
 
@@ -211,7 +209,7 @@ For each DB instance, you can not:
 
 ### Will my DB instance remain available during scaling ?
 
-In most cases and if your plan supports the high availability, your instance will remain available during the scaling. However, the status of your service will switch to "updating", preventing you from modifying your service (e.g.: adding a user).
+In most cases and if your plan supports high availability, your instance will remain available during the scaling. However, the status of your service will switch to "updating", preventing you from modifying your service (e.g.: adding a user).
 
 ### What are the performances for each flavor ?
 
@@ -292,7 +290,7 @@ When possible, we store your encrypted backups outside the region of your servic
 The location of the backup is available with all the other information of the backup in the API.
 
 The period during which the backup is stored depends on the plan you subscribed.
-You can find it in our [Automated backups](/pages/platform/databases/databases_05_automated_backups).
+You can find it in our [Automated backups documentation](/pages/platform/databases/databases_05_automated_backups).
 
 ### What are my responsibilities about backups ?
 
@@ -305,11 +303,11 @@ Your instance will remain available.
 
 ### Can I modify the backup window ?
 
-Yes, you do, through the OVHcloud control panel, terraform or via API.
+Yes, you can, via the OVHcloud control panel, Terraform or the API.
 
 ### Can I modify the backup location ?
 
-Yes, you do. Please refer to [Automated backups](/pages/platform/databases/databases_05_automated_backups) for more details.
+Yes, you can. Please refer to [Automated backups](/pages/platform/databases/databases_05_automated_backups) for more details.
 
 ### What is a maintenance window? Will my DB instance be available during maintenance events ?
 
@@ -318,7 +316,7 @@ Depending on the maintenance operation, your DB instance will or will not be ava
 
 ### Can I modify the maintenance window ?
 
-Yes, you do, through the OVHcloud control panel, terraform or via API.
+Yes, you can, via the OVHcloud control panel, Terraform or the API.
 
 ## Security
 
@@ -344,13 +342,13 @@ To sum-up, initially your database cannot be accessed. It's made on purpose to p
 
 ### How can I manage authorized accesses to my database instance ?
 
-Once your database instance is created, you can manage authorized IPs or IP blocks through the OVHcloud Control Panel, terraform or via API. You need at least 1 authorized IP to access your service.
+Once your database instance is created, you can manage authorized IPs or IP blocks either in the OVHcloud Control Panel or via Terraform or the API. You need at least 1 authorized IP to access your service.
 
 Please read our [Getting started guide](/pages/platform/databases/databases_01_order_control_panel) to get a step by step documentation.
 
 ### How can I add new users for my database instance ?
 
-Once your database instance is created, you can manage database users through the OVHcloud control panel, terraform or via API.
+Once your database instance is created, you can manage database users either in the OVHcloud control panel or via Terraform or the API.
 You need at least 1 created and configured user.
 Please read our [Getting started guide](/pages/platform/databases/databases_01_order_control_panel) to get a step by step documentation.
 
@@ -416,7 +414,7 @@ To connect to a database instance, please make sure to:
 - know your database instance connection parameters: host address, port, security mode.
 
 Once you are ready, you can test the connection via the DBMS official command line interface OR with classic application code such as Python, PHP, java...
-You can find connection examples in various languages in our [Example Repository](https://github.com/ovh/public-cloud-databases-examples)
+You can find connection examples in various languages in our [Example Repository](https://github.com/ovh/public-cloud-databases-examples).
 
 If you still have connectivity issues, please contact our support.
 
@@ -428,7 +426,7 @@ If you forgot your user credentials, or have security concerns, you can modify y
 
 Each database instance has a limited amount of storage space. We recommend you to monitor your remaining storage space constantly.
 
-In order to manage storage issues, please refer to the [Handling «Disk Full» situations](/pages/platform/databases/databases_10_full_disk_handling) guide.
+In order to manage storage issues, please refer to the [Handling "Disk Full" situations](/pages/platform/databases/databases_10_full_disk_handling) guide.
 
 ### My queries are slow
 
