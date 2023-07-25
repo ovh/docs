@@ -1,13 +1,13 @@
 ---
 title: 'Anúncios de fim de venda/vida Web Cloud Databases'
-updated: 2023-07-18
+updated: 2023-07-26
 ---
 
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 18/07/2023**
+**Última atualização: 26/07/2023**
 
 ## Objetivo
 
@@ -18,7 +18,7 @@ Para mais informações, consulte a [política de fim de vida das bases de dados
 |---|---|---|---|
 |MariaDB 10.3|2021-08-18|2022-11-23|2023-05-25|
 |MariaDB 10.4|2022-07-22|2023-12-18|2024-06-18|
-|MariaDB 10.5|A definir|A definir|A definir|
+|MariaDB 10.5|2023-07-26|2024-12-23|2025-06-24|
 |MariaDB 10.6|A definir|A definir|A definir|
 |MariaDB 10.11|A definir|A definir|A definir|
 |MySQL 5.7|2022-03-29|2023-04-01|2023-10-01|

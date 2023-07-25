@@ -1,9 +1,9 @@
 ---
 title: 'Annonces de fin de vente/vie Web Cloud Databases'
-updated: 2023-07-18
+updated: 2023-07-26
 ---
 
-**Dernière mise à jour le 18/07/2023**
+**Dernière mise à jour le 26/07/2023**
 
 ## Objectif
 
@@ -13,7 +13,7 @@ Les produits couverts par ces annonces de fin de vente et de fin de vie sont les
 |---|---|---|---|
 |MariaDB 10.3|2021-08-18|2022-11-23|2023-05-25|
 |MariaDB 10.4|2022-07-22|2023-12-18|2024-06-18|
-|MariaDB 10.5|À définir|À définir|À définir|
+|MariaDB 10.5|2023-07-26|2024-12-23|2025-06-24|
 |MariaDB 10.6|À définir|À définir|À définir|
 |MariaDB 10.11|À définir|À définir|À définir|
 |MySQL 5.7|2022-03-29|2023-04-01|2023-10-01|
