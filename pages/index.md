@@ -708,6 +708,7 @@
                 + [Deploy applications to specific Nodes and Nodes Pools](platform/kubernetes-k8s/label-nodeaffinity-node-pools)
                 + [Taint, cordon and drain specific Nodes and Nodes Pools](platform/kubernetes-k8s/taint-drain-node-pools)
                 + [Using Codefresh with OVHcloud Managed Kubernetes cluster](platform/kubernetes-k8s/using-codefresh)
+                + [Deploying Apache Pulsar on an OVHcloud Managed Kubernetes cluster](platform/kubernetes-k8s/installing-pulsar-with-streamnative)
             + [Network](public-cloud-containers-orchestration-managed-kubernetes-k8s-network)
                 + [Using vRack Private Network](platform/kubernetes-k8s/using-vrack)
                 + [Using vRack - Communicating between different private networks](platform/kubernetes-k8s/using-vrack-between-private-networks)
