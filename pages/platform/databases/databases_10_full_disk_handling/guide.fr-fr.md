@@ -1,12 +1,12 @@
 ---
 title: Gestion des situations de «Full Disk» (EN)
 excerpt: Découvrez comment éviter, analyser et réparer un service Public Cloud Databases atteignant sa pleine capacité de disque
-updated: 2023-01-23
+updated: 2023-07-24
 routes:
     canonical: '/pages/platform/databases/databases_10_full_disk_handling'
 ---
 
-**Last updated January 23rd, 2023**
+**Last updated July 24th, 2023**
 
 ## Objective
 
@@ -31,9 +31,9 @@ As part of using your Public Cloud Databases service efficiently, you should kee
 
 When your service storage begins to fill up and reaches a high mark, Public Cloud Databases sends you an email to warn you of the situation. The specific threshold depends on the engine, it may range from 75 to 90 percent.
 
-When the disk usage increases even more and reaches a critical level (depending on the engine, ranging from 90 to 95 percent), you will receive another mail notification and the service will turn to a "disk full" mode, where it will start to refuse writes.
+When the disk usage increases even more and reaches a critical level (depending on the engine, ranging from 90 to 95 percent), you will receive another email notification and the service will turn to a "disk full" mode, where it will start to refuse writes.
 
-### How to handle a disk full situation
+### How to handle a disk full situation ?
 
 Different engines react in different ways, thus Public Cloud Databases services react differently when facing disk full conditions:
 
@@ -42,15 +42,13 @@ Different engines react in different ways, thus Public Cloud Databases services 
 - `MySQL` and `PostgreSQL` turn to read-only with a way to temporarily revert to read-write.
 - `MongoDB` forbids writes but allows deletes.
 
-#### What to do: Upgrading your service
+#### Upgrading your service
 
-It may be that your usage simply requires more storage. You can then increase the provisioned storage, and / or upgrade to an offer with more storage.
+It may be that your usage simply requires more storage. You can then increase the provisioned storage, and / or upgrade to an offer with more storage. Once the upgrade finishes, the service will detect that more storage is available and thus revert to normal mode.
 
-Once the upgrade finishes, the service will detect that more storage is available and thus revert to normal mode.
+#### Reclaim disk space
 
-#### What to do: Reclaim disk space
-
-It may be that you reached the full disk situation because of a runaway application filling up your database, or that you store some old obsolete data. In these cases, stop whatever process is unduly filling up your storage, then remove unwanted data.
+It may be that you have reached the full disk situation because of a runaway application filling up your database, or that you are storing some old obsolete data. In these cases, stop whatever process which is unduly filling up your storage, then remove unwanted data.
 
 ##### **Kafka**, **OpenSearch**, **M3DB**
 
@@ -75,7 +73,7 @@ For these engines, call the respective API endpoint to temporarily allow write o
 This will give you a 15 minutes time window to write again to your database. At the end of this window, either you were able to execute queries that reduce disk usage (e.g. DROPs, DELETEs), and thus your service changes to the read-write state, or disk usage stays too high and your service will return to the read-only state.
 
 > [!warning]
-> Be careful **not** to use that write window to continue to increase the disk usage; this might fill the underlying storage space completely. `PostgreSQL` and `MySQL` will not react well to such a situation and end up unrecoverabely out of order.
+> Be careful **not** to use that write window to continue to increase the disk usage; this might fill the underlying storage space completely. `PostgreSQL` and `MySQL` will not react well to such a situation and might end up unrecoverabely out of order.
 
 ## We want your feedback!
 
