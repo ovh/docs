@@ -19,20 +19,20 @@ Les comptes E-mail Pro peuvent être configurés sur différents logiciels de me
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
 > 
 
 ## En pratique
 
 ### Étape 1 : récupérer les informations du compte E-mail Pro <a name="step1"></a>
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} puis rendez-vous dans la partie `Web Cloud`. Dans la colonne de gauche, cliquez sur `E-mails Pro`{.action} puis choisissez la plateforme E-mail Pro où se trouve l'adresse e-mail à configurer.
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} puis rendez-vous dans la partie `Web Cloud`{.action}. Dans la colonne de gauche, cliquez sur `E-mails Pro`{.action} puis choisissez la plateforme E-mail Pro où se trouve l'adresse e-mail à configurer.
 
 Sur la nouvelle page, cliquez sur l'onglet `Comptes e-mail`{.action}.
 
 ![Outlook-android-emailpro-login](images/ol-android-ep-login.png){.thumbnail}
 
-Récupérez le nom du serveur E-mail Pr* qui apparaît en dessous de la mention `Webmail`{.action}. Dans notre exemple illustré ci-dessus, il s'agit de `proX.mail.ovh.net`.
+Récupérez le nom du serveur E-mail Pro qui apparaît en dessous de la mention `Webmail`{.action}. Dans notre exemple illustré ci-dessus, il s'agit de `proX.mail.ovh.net`.
 
 > [!warning]
 >
