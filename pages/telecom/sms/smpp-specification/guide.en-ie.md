@@ -1,10 +1,10 @@
 ---
 title: SMPP Technical Specifications
 excerpt: 'Discover the technical specifications of the OVHcloud SMPP solution'
-updated: 2023-05-22
+updated: 2023-07-25
 ---
 
-**Last updated 22nd May 2023**
+**Last updated 25th July 2023**
 
 ## Objective
 
@@ -261,6 +261,7 @@ Our service will attempt to send the `deliver_sm` to ESME for up to 7 days.
 |51  | Internal Error |
 |52  | Missing Template (e.g. US destination requires approved templates) |
 |53  | Blacklisted (a STOP response sent by the recipient to block the sender) |
+|54  | Forbidden destination |
 |100 | Invalid Destination Numbering Plan |
 |101 | Invalid Content |
 |102 | Invalid GSM7 Coding (e.g. error with packed/unpacked GSM7) |
