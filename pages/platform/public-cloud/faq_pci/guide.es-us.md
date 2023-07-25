@@ -7,9 +7,6 @@ updated: 2023-07-24
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 > 
 
-**Última actualización: 02/12/2022**
-
-
 ## FAQ Public Cloud
 
 ## ¿Cómo conectarse a una instancia de Public Cloud?
@@ -95,6 +92,14 @@ También encontrará más información sobre [documentación de OpenStack](https
 Las IP públicas se asignan automáticamente a las instancias, por lo que no pueden modificarse. Para controlar la IP pública de una instancia, le recomendamos que utilice una Additional IP. De este modo, cualquiera que sea la dirección pública que se haya asignado automáticamente a la instancia, puede añadir una o varias Additional IP a su instancia.
 
 Para más información, consulte la guía [Comprar una Additional IP](/pages/platform/network-services/additional-ip-buy).
+
+### ¿Cuántas IPs Adicionales puedo adjuntar a cada instancia?
+
+Puede adjuntar hasta 256 IPs adicionales por instancia.
+
+### ¿Cuántas direcciones IPv6 se entregan con mi instancia?
+
+Cada instancia incluye una dirección IPv6.
 
 ### ¿Cómo comprobar si mi instancia es vulnerable a la fallo MDS?
 

@@ -7,8 +7,6 @@ updated: 2023-07-24
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 02.12.2022**
-
 ## Public Cloud FAQ
 
 ### Wie kann ich mich mit einer Public Cloud Instanz verbinden?
@@ -97,6 +95,14 @@ Weitere Informationen finden Sie in der [OpenStack Dokumentation](https://docs.o
 Die öffentlichen IPs werden den Instanzen automatisch zugewiesen und können daher nicht geändert werden. Um die öffentliche IP-Adresse einer Instanz zu verwalten, empfehlen wir die Verwendung von Additional IPs. So können Sie unabhängig von einer der Instanz automatisch zugewiesenen öffentlichen Adresse eine oder mehrere Additional IP-Adressen zu Ihrer Instanz hinzufügen.
 
 Weitere Informationen finden Sie in der Anleitung "[Eine Additional IP erwerben](/pages/platform/network-services/additional-ip-buy)".
+
+### Wie viele Additional IPs kann ich an jede Instanz anhängen?
+
+Sie können bis zu 256 Additional IPs pro Instanz anhängen.
+
+### Wie viele IPv6-Adressen werden mit meiner Instanz ausgeliefert?
+
+Jede Instanz wird mit einer IPv6-Adresse ausgeliefert.
 
 ### Wie kann ich überprüfen, ob meine Instanz für die Sicherheitslücke "MDS" anfällig ist?
 
