@@ -1,10 +1,8 @@
 ---
 title: Konfiguracja rekordu SPF w strefie DNS nazwy domeny
 excerpt: Zobacz, jak dodać rekord SPF w strefie DNS nazwy domeny na serwerze OVHcloud
-updated: 2022-09-12
+updated: 2023-07-25
 ---
-
-**Ostatnia aktualizacja z dnia 12-09-2022**
 
 ## Wprowadzenie
 
@@ -192,23 +190,23 @@ mydomain.ovh IN TXT "v=spf1 include:mx.ovh.com ~all"
 
 ### Konfiguracja SPF OVHcloud w usłudze Private Exchange 
 
-W przypadku oferty Private Exchange należy podać adresy IP Twojego serwera e-mail. W tym celu użyj argumentu `ip4`, aby podać adres IP serwera Private Exchange.
+W przypadku oferty Private Exchange należy podać adresy IP Twojego serwera e-mail. W tym celu należy użyć argumentu `ip4`, aby wprowadzić adres IPv4 (**A**) oraz `ip6`, aby wprowadzić adres IPv6 (**AAAA**) serwera Private Exchange.
 
 ```bash
-mydomain.ovh IN TXT "v=spf1 ip4:11.22.333.444 ~all"
+mydomain.ovh IN TXT "v=spf1 ip4:11.22.333.444 ip6:5555:66a7:88:b999::1000:2233 ~all"
 ```
 
 Jeśli używasz również [oferty e-mail na hostingu](#ovhcloudspfvalue), możesz dodać argument `include:mx.ovh.com` do powyższego rekordu, podając następującą wartość:
 
 ```bash
-mydomain.ovh IN TXT "v=spf1 ip4:11.22.333.444 include:mx.ovh.com ~all"
+mydomain.ovh IN TXT "v=spf1 ip4:11.22.333.444 ip6:5555:66a7:88:b999::1000:2233 include:mx.ovh.com ~all"
 ```
 
 > [!primary]
 > 
 > Aby pobrać adres IP serwera Private Exchange, kliknij `Microsoft`{.action}, a następnie `Exchange`{.action}. Następnie kliknij nazwę odpowiedniej usługi Private Exchange.
 >
-> W zakładce `Informacje ogólne`{.action} kliknij przycisk `A` w sekcji `Diagnostyka serwera`. W oknie, które się wyświetli, podnieś wartość.
+> W zakładce `Informacje ogólne`{.action} kliknij na `A` i `AAAA` w sekcji `Diagnostyka serwera`. W wyświetlonym oknie odczytaj wartość.
 >
 > ![domena](images/spf_records_ip.png){.thumbnail}
 
