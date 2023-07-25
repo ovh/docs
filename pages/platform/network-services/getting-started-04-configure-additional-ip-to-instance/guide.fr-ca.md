@@ -1,10 +1,8 @@
 ---
 title: Configurer une Additional IP
 excerpt: Découvrez comment ajouter des adresses Additional IP à la configuration de votre instance
-updated: 2023-01-04
+updated: 2023-07-25
 ---
-
-**Dernière mise à jour le 04/01/2023**
 
 > [!primary]
 >
@@ -100,7 +98,7 @@ Appliquez les modifications à l'aide de la commande suivante :
 sudo systemctl restart networking
 ```
 
-### Ubuntu 22.04
+### Ubuntu 22.04 & Debian 12
 
 Le fichier de configuration de vos adresses Additional IP se trouve dans `/etc/netplan/`. Dans cet exemple, il s'appelle « 50-cloud-init.yaml ». Avant d'apporter des modifications, vérifiez le nom de fichier réel dans ce dossier. Chaque adresse Additional IP nécessite sa propre ligne dans le fichier.
 
