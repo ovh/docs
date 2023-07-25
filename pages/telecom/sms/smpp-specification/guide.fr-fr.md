@@ -263,6 +263,7 @@ Notre service essaie d'envoyer les `deliver_sm` au ESME pendant 7 jours maximum.
 |51  | Internal Error |
 |52  | Missing Template (e.g. US destination requires approved templates) |
 |53  | Blacklisted (a STOP response sent by the recipient to block the sender) |
+|54  | Forbidden destination |
 |100 | Invalid Destination Numbering Plan |
 |101 | Invalid Content |
 |102 | Invalid GSM7 Coding (e.g. error with packed/unpacked GSM7) |
