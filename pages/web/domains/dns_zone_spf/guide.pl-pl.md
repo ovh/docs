@@ -1,10 +1,8 @@
 ---
 title: Konfiguracja rekordu SPF w strefie DNS nazwy domeny
 excerpt: Zobacz, jak dodać rekord SPF w strefie DNS nazwy domeny na serwerze OVHcloud
-updated: 2023-07-07
+updated: 2023-07-25
 ---
-
-**Ostatnia aktualizacja z dnia 12-09-2022**
 
 ## Wprowadzenie
 

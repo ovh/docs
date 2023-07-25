@@ -1,10 +1,8 @@
 ---
 title: Configurer un enregistrement SPF sur son nom de domaine
 excerpt: Découvrez comment configurer un enregistrement SPF sur votre nom de domaine chez OVHcloud
-updated: 2023-07-07
+updated: 2023-07-25
 ---
-
-**Dernière mise à jour le 12/09/2022**
 
 ## Objectif
 

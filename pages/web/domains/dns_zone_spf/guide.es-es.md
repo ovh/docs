@@ -1,10 +1,8 @@
 ---
 title: 'Añadir un registro SPF a la configuración del dominio'
 excerpt: 'Cómo añadir un registro SPF a la configuración de un dominio en OVHcloud'
-updated: 2023-07-07
+updated: 2023-07-25
 ---
-
-**Última actualización: 12/09/2022**
 
 ## Objetivo
 

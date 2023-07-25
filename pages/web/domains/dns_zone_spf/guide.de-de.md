@@ -1,10 +1,8 @@
 ---
 title: Einen SPF-Eintrag zur Konfiguration Ihrer Domain hinzufügen
 excerpt: Erfahren Sie hier, wie Sie einen SPF-Eintrag für Ihre OVHcloud Domain konfigurieren
-updated: 2023-07-07
+updated: 2023-07-25
 ---
-
-**Letzte Aktualisierung am 12.09.2022**
 
 ## Ziel
 

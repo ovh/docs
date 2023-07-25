@@ -1,10 +1,8 @@
 ---
 title: Adding an SPF record to the configuration of your domain name
 excerpt: Find out how to configure an SPF record for your OVHcloud domain name
-updated: 2023-07-07
+updated: 2023-07-25
 ---
-
-**Last updated 12th September 2022**
 
 ## Objective
 

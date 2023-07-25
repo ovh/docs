@@ -1,10 +1,8 @@
 ---
 title: Como configurar o registo SPF de um domínio
 excerpt: Saiba como adicionar um registo SPF à zona DNS do seu domínio
-updated: 2023-07-07
+updated: 2023-07-25
 ---
-
-**Última atualização: 12-09-2022**
 
 ## Objetivo
 
