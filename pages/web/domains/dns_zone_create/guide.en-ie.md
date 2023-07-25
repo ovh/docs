@@ -1,70 +1,120 @@
 ---
-title: 'Creating an OVHcloud DNS zone for a domain name'
-excerpt: 'Find out how to create an OVHcloud DNS zone for your domain name via the OVHcloud Control Panel'
-updated: 2018-08-06
+title: Creating an OVHcloud DNS zone for a domain name
+excerpt: Find out how to create an OVHcloud DNS zone for your domain name via the OVHcloud Control Panel
+updated: 2023-07-21
 ---
-
-**Last updated 8th February 2023**
 
 ## Objective
 
-A Domain Name System (DNS) zone is a domain name’s config file. It is composed of technical information, otherwise called ‘records’. DNS zones are usually used to link your domain name to the server (or servers) that host your website and email addresses.
+The **DNS** (**D**omain **N**ame **S**ystem) zone is a domain name’s configuration file. It consists of DNS **records** that map the domain name to various services and functions, for example:
+
+- The IP address (DNS records of type *A* and *AAAA*) of your web hosting must be provided in the zone in order to display your website when entering the domain name in a browser.
+- The email servers (DNS records of type *MX*) that should receive emails sent to addresses of this domain name. By configuring MX records, you can receive emails through custom email addresses using your domnain name.
+- Information related to the security/authentication of services (web hosting, web server, email server, etc.) associated with your domain name (DNS records of type *SPF*, *DKIM*, *DMARC*, etc.).
+
+
+For more information on DNS zones and how to edit them in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), refer to [our DNS documentation](/pages/web/domains/dns_zone_edit).
+
+A DNS zone is hosted/registered on **DNS servers**. **DNS servers** must be declared on the domain name's configuration in order to use the DNS zone they host.
+
+**DNS servers** usually work in pairs:
+
+- A *primary* DNS server: It redirects the requests received by the domain name to the DNS zone it hosts for the domain name. This way, you can perform *DNS resolution* to redirect traffic to the correct services (servers, website, emails, etc.) associated with the domain name.
+- A *secondary* DNS server: This *backup* server is used if the *primary* server is saturated with requests, unavailable, or responds less quickly than the *secondary* server.
+
+Some DNS providers offer 3 **DNS servers** or more to declare with your domain name, in order to activate the DNS zone they host for your domain name.
+
+For more details on **DNS servers**, see [our guide](/pages/web/domains/dns_server_general_information) on this topic.
 
 For a number of reasons, you may need to create a DNS zone for your domain name at OVHcloud.
 
-**Find out how to create an OVHcloud DNS zone for your domain name via the OVHcloud Control Panel.**
+**This guide explains how to create an OVHcloud DNS zone for your domain name via the OVHcloud Control Panel.**
 
 ## Requirements
 
-- A domain name that does not already have an OVHcloud DNS zone, and is not part of an operation or order currently being processed at OVHcloud
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
+- You have adminstrative access to manage your domain name.
+- The domain name concerned does not already have an active or inactive DNS zone with OVHcloud, nor is it the subject of an operation or order in progress with OVHcloud.
+- You have access your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie).
 
 ## Instructions
 
+> [!warning]
+>
+> You can create multiple DNS zones (from different DNS/hosting providers) for the same domain name. However, you can only have one active DNS zone for your domain name. This restriction is designed to avoid *DNS conflicts*.
+>
+> You can activate/deactivate a DNS zone by declaring the **DNS servers** of your domain name. You can change this declaration and change the **DNS servers** of a domain name at: 
+>
+> - The *registrar* registered your domain name.
+> - The service provider that manages it, if you use a specialised service provider to manage your domain name.
+>
+> By modifying the **DNS servers** of a domain name, you disable the configuration of the old DNS zone applied in favour of the configuration of the new DNS zone (present on the new **DNS servers** declared).
+>
+> Therefore, please check that the configuration of the new DNS zone meets your expectations before changing the **DNS servers** registered with your domain name.
+>
+
 ### Step 1: Create the DNS zone via the OVHcloud Control Panel
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}. click `Web Cloud`{.action}, then click `Order`{.action}, then `DNS zone`{.action}.
+Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} then go to the `Web Cloud`{.action} section. In the left-hand column, click on `Order`{.action} then on the `DNS zone`{.action} icon.
 
-In the page that pops up, enter the domain name you would like to create an OVHcloud DNS zone for. Then wait a few moments for the tool to carry out its verifications on the domain name.
+On the page that appears, enter the domain name (*domain.tld*), for which you would like to create an OVHcloud DNS zone. You will need to wait a few moments for the tool to carry out its checks on the domain name.
 
-If a message appears notifying you that the DNS zone cannot be created, check that the domain name follows the requirements listed above, or ask the person managing it to do this for you. Once you have ensured that the domain name meets all requirements and is correctly configured, try again.
+If a message appears notifying you that the DNS zone cannot be created, check that the domain name meets the necessary requirements, or ask the person managing it to do this for you. Once everything is correct, try again.
 
 ![dnszonecreate](images/dns-zone-create-step1.png){.thumbnail}
 
-Once the verifications are complete, you must choose whether to enable the minimal records for the DNS zone you are going to create. The way you set your DNS records is not permanent. You can change the records after you have created the DNS zone. 
-
-|Enable minimal records?|Details|
-|---|---|
-|Yes|Select this option if you would like to customise the DNS zone yourself at a later stage.|
-|No|Select this option if you are planning to use OVHcloud services like a [Web Hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/){.external}, since the zone has already been pre-configured.|
+Once the verification is complete, choose whether to enable the minimum records for the DNS zone you are going to create. This choice is not definitive, as you can always [edit DNS zone records](/pages/web/domains/dns_zone_edit) later.
 
 ![dnszonecreate](images/dns-zone-create-step2.png){.thumbnail}
 
-Once you have selected an option, continue following the next steps until you have created the DNS zone.
+|Enable minimal entries?|Details|
+|---|---|
+|Yes|Select this option if you would like to customise the DNS zone yourself at a later stage.</br>![minimal-dns-entries](images/minimal.png){.thumbnail}|
+|No|Select this option if you plan to use OVHcloud services as a [web hosting](https://www.ovhcloud.com/en-ie/web-hosting/){.external}, with the zone preconfigured for this purpose.</br>![no-minimum-dns-entries](images/no_minimal.png){.thumbnail}|
+
+Once you have chosen your DNS zone, follow the steps until you have created it.
 
 ### Step 2: Edit the DNS zone (optional)
 
-Now that your domain name’s DNS zone has been created, you can edit it. This step is optional, but it may be essential if you want to ensure that any services linked to your domain name do not experience any downtime (e.g. your website and email services).
+Now that your domain name’s DNS zone has been created, you can edit it. This step is optional, but it may be necessary if you want to ensure that the services associated with your domain name remain available (e.g. your website and/or emails).
 
-If you would like to edit this DNS zone, click `Web Cloud`{.action} in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), then click `Domain names`{.action} and choose the domain name concerned. Go to the `DNS zone`{.action} tab.
+To edit this DNS zone, please read our guide on [Editing a DNS zone at OVHcloud](/pages/web/domains/dns_zone_edit).
 
 > [!primary]
 >
-> If you have just created the DNS zone but the domain name does not appear under the list of services in the `Domain names`{.action} section, please wait a few moments, then reload the page.
+> If you have just created the DNS zone and the domain name does not yet appear in your list of services (under `Domain names`{.action} in the `Web Cloud`{.action} section of the OVHcloud Control Panel), wait 15 to 20 minutes, then reload the page.
 >
 
-Once it appears, make the required changes. To learn more about how to edit a DNS zone, please read our guide to [Editing an OVHcloud DNS zone](/pages/web/domains/dns_zone_edit){.external}. Once you have modified your domain name’s OVHcloud DNS zone, you will need to allow 4-24 hours for the changes to fully propagate and take effect.
+### Step 3: Modify the domain name’s DNS servers
 
-### Step 3: Edit the DNS servers for a domain name
+Once the OVHcloud DNS zone is ready to be used, it needs to be activated by declaring the corresponding DNS servers. To do this, first retrieve the names of the OVHcloud **DNS servers** on which your domain name’s DNS zone was created.
 
-Once the OVHcloud DNS zone is ready to be used, you can then link it to your domain name. To do this, you will need to retrieve the details for the OVHcloud DNS servers activated for your domain name in the OVHcloud Control Panel. The servers will appear below `Name Servers`{.action}.
+Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} then go to the `Web cloud`{.action} section. In the left-hand column, click on `Domain names`{.action} then select the relevant DNS zone. It is named after your domain name and has a globe-shaped logo labelled *DNS* on its left.
+
+> [!primary]
+> At this point, if you only see the globe-shaped logo (without the label *DNS*), the domain name is already managed in your OVHcloud Control Panel. 
+>
+> If you are the *Administrator* contact of the latter, you can directly change the **DNS servers** using [our guide](/pages/web/domains/dns_server_general_information) on the subject.
+>
+> As a reminder, please check that the configuration of the new DNS zone meets your expectations before changing the **DNS servers** registered with your domain name.
+>
+
+On the page that appears, the DNS servers that you need to use with your domain name to enable the OVHcloud DNS zone will appear below `Name Servers`{.action}.
 
 ![dnszonecreate](images/dns-zone-create-step3.png){.thumbnail}
 
-Once you have the details, **edit your domain name’s DNS servers using the interface supplied by your domain name’s service provider**. Once you have modified the DNS zone configuration, you will need to allow 48 hours for the changes to fully propagate.
+Once you have the information, **edit your domain name’s DNS servers in the interface of the service provider managing your domain name**. Once you have configured your domain name, you will need to allow a maximum of **48 hours** for the changes to propagate fully.
+
+> [!primary]
+>
+> As a reminder, please check that the configuration of the new DNS zone meets your expectations before changing the **DNS servers** registered with your domain name.
+>
 
 ## Go further
 
 [Editing an OVHcloud DNS zone](/pages/web/domains/dns_zone_edit)
 
-Join our community of users on <https://community.ovh.com/en/>.
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-ie/directory/).
+
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-ie/support-levels/).
+
+Join our community of users on <https://community.ovh.com/en/>. 
