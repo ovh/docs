@@ -1,6 +1,6 @@
 ---
-title: "Konfiguration Ihres E-Mail Pro Accounts in Android mit der Microsoft Outlook App"
-excerpt: "Diese Anleitung erklärt, wie Sie Ihren E-Mail Pro Account mit der Microsoft Outlook App in Adroid konfigurieren."
+title: "Konfiguration von E-Mail Pro auf Android mit der Microsoft Outlook App"
+excerpt: "Diese Anleitung erklärt, wie Sie Ihren E-Mail Pro Account auf Android mit der Microsoft Outlook App einrichten."
 updated: 2023-07-25
 ---
 
@@ -10,70 +10,70 @@ updated: 2023-07-25
 
 ## Ziel
 
-E-Mail Pro Accounts können auf verschiedenen kompatiblen E-Mail-Clients eingerichtet werden. So können Sie Ihre E-Mail-Adresse über das Gerät Ihrer Wahl verwenden.
+E-Mail Pro Accounts können auf verschiedenen, kompatiblen E-Mail-Clients eingerichtet werden. So können Sie Ihre E-Mail-Adresse über das Gerät Ihrer Wahl verwenden.
 
-**Diese Anleitung erklärt, wie Sie Ihren E-Mail Pro Account mit der Microsoft Outlook App in Android einrichten.**
+**Diese Anleitung erklärt, wie Sie einen E-Mail Pro Account auf Android mit der Microsoft Outlook App einrichten.**
 
 ## Voraussetzungen
 
 - Sie verfügen über ein Angebot [E-Mail Pro](https://www.ovhcloud.com/de/emails/email-pro/){.external}.
-- Sie haben die Microsoft Outlook Anwendung auf Ihrem Android Gerät installiert. Sie können die Datei über das *Google Play Store* herunterladen.
+- Sie haben die Microsoft Outlook-App auf Ihrem Android-Gerät installiert. Sie können diese aus dem *Google Play Store* herunterladen.
 
 > [!warning]
 >
-> OVHcloud stellt Ihnen Dienste zur Verfügung, deren Konfiguration, Verwaltung und Verantwortung Ihnen obliegen. Es liegt daher an Ihnen, dafür zu sorgen, dass sie ordnungsgemäß funktionieren.
+> OVHcloud stellt Ihnen Dienste zur Verfügung, für deren Konfiguration, Verwaltung und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit in Ihrer Verantwortung, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 > 
-> Wir stellen Ihnen diese Anleitung zur Verfügung, um Sie bei alltäglichen Aufgaben bestmöglich zu unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) und/oder den Herausgeber des Dienstes zu kontaktieren. Wir werden Ihnen leider keine Unterstützung anbieten können. Weitere Informationen finden Sie im Abschnitt ["Weiterführende Informationen"](#go-further) dieser Anleitung.
+> Wir stellen Ihnen diese Anleitung zur Verfügung, um Sie bei gängigen Aufgaben bestmöglich zu begleiten. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) und/oder den Herausgeber des Dienstes zu kontaktieren. Für externe Dienstleistungen bieten wir leider keine Unterstützung. Weitere Informationen finden Sie im Abschnitt [„Weiterführende Informationen“](#go-further) dieser Anleitung.
 > 
 
 ## In der praktischen Anwendung
 
-### Schritt 1: Informationen des E-Mail Pro Accounts abrufen <a name="step1"></a>
+### Schritt 1: E-Mail Pro Account-Informationen abrufen <a name="step1"></a>
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `E-mail für Profis`{.action} und wählen Sie die E-Mail Pro Plattform aus, in der sich die zu konfigurierende E-Mail-Adresse befindet.
+Verbinden Sie sich mit Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} und gehen Sie dann in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `E-Mail für Profis`{.action} und wählen Sie dann die E-Mail Pro Plattform aus, auf der sich die zu konfigurierende E-Mail-Adresse befindet.
 
 Klicken Sie auf der neuen Seite auf den Tab `E-Mail-Accounts`{.action}.
 
 ![Outlook-android-emailpro-login](images/ol-android-ep-login.png){.thumbnail}
 
-Rufen Sie den Namen des Pro E-Mail-Servers ab, der unter dem Eintrag für `Webmail`{.action} erscheint. In unserem oben dargestellten Beispiel handelt es sich um `proX.mail.ovh.net`.
+Rufen Sie den Namen des E-Mail Pro Servers ab, der unter `Webmail`{.action} angezeigt wird. In unserem oben abgebildeten Beispiel ist dies `proX.mail.ovh.net`.
 
 > [!warning]
 >
-> Geben Sie den **guten Namen** des E-Mail Pro Servers mit der E-Mail-Adresse ein, die Sie einrichten möchten. Dieser kann je nach Alter Ihres E-Mail Pro Angebots unterschiedlich ausfallen (pro1.mail.ovh.net, pro2.mail.ovh.net usw.).
+> Suchen Sie den **richtigen Namen** des E-Mail Pro Servers, auf dem sich die E-Mail-Adresse befindet, die Sie konfigurieren möchten. Diese kann je nach Alter Ihres E-Mail Pro Angebots (pro1.mail.ovh.net, pro2.mail.ovh.net etc.) variieren.
 > 
 
-Im Tab `E-Mail-Accounts`{.action} Ihrer Plattform *E-Mail Pro* wird eine Tabelle mit Ihrer E-Mail Pro Adresse(n) angezeigt.
+Ebenfalls im Tab `E-Mail-Accounts`{.action} auf Ihrer *Email Pro* Plattform wird eine Tabelle mit Ihrer/Ihren E-Mail Pro Adresse(n) angezeigt.
 
-Wenn Sie sich nicht mehr an das Passwort für den Zugang zur E-Mail-Adresse erinnern, die Sie konfigurieren möchten, können Sie es mithilfe der Schaltfläche Kfz `...`{.action} ändern auf derselben Zeile rechts neben dem E-Mail Account.
+Wenn Sie sich nicht mehr an das Passwort der E-Mail-Adresse erinnern, die Sie einrichten möchten, können Sie es mit dem Button `...`{.action} in der gleichen Zeile rechts vom E-Mail-Account ändern.
 
-Wählen Sie dann die Option `Ändern`{.action} aus, wählen Sie ein neues Passwort aus und bestätigen Sie dieses. Klicken Sie dann auf `Weiter`{.action} und dann auf im zweiten Fenster `bestätigen`{.action}.
+Wählen Sie anschließend `Ändern`{.action} aus, geben Sie ein neues Passwort ein und bestätigen Sie dieses. Klicken Sie anschließend im zweiten Fenster auf `Weiter`{.action} und dann auf `Bestätigen`{.action}.
 
-Die Änderung des Passworts wird in etwa 15 Minuten durchgeführt.
+Die Änderung des Passworts wird innerhalb von ca. 15 Minuten aktiv.
 
 > [!warning]
 >
-> Wenn Sie das Passwort Ihrer E-Mail-Adresse ändern und diese bereits von einem anderen Gerät (E-Mail-Programm, Computer, Tablet, Smartphone, Kopierer usw.) verwendet wird, müssen Sie das Passwort für diese anderen Geräte aktualisieren.
-> Diese können sich dann nicht mehr mit Ihrer E-Mail-Adresse über das alte Passwort verbinden.
+> Wenn Sie das Passwort Ihrer E-Mail-Adresse ändern und diese bereits von einem anderen Gerät (E-Mail-Programm, Computer, Tablet, Smartphone, Kopierer usw.) verwendet wird, müssen Sie das Passwort auf diesen anderen Geräten aktualisieren.
+> Diese können sich dann nicht mehr mit Ihrer E-Mail-Adresse über das alte Passwort einloggen.
 >
 
-Am Ende dieses ersten Schritts müssen Sie nun folgende Angaben haben:
+Am Ende dieses ersten Schritts müssen Sie nun über Folgendes verfügen:
 
-- Name des E-Mail Pro Servers (pro1.mail.ovh.net, pro2.mail.ovh.net usw.)
-- zu konfigurierende E-Mail-Adresse
+- den Namen des E-Mail Pro Servers (pro1.mail.ovh.net, pro2.mail.ovh.net etc.);
+- die zu konfigurierende E-Mail-Adresse;
 - das Passwort der zu konfigurierenden E-Mail-Adresse.
 
-### Schritt 2: Ihre Adresse in Android über die Microsoft Outlook Anwendung konfigurieren <a name="step2"></a>
+### Schritt 2: Konfiguration Ihrer Adresse auf Android über die Microsoft Outlook App <a name="step2"></a>
 
-Starten Sie auf Ihrem Android-Gerät die Microsoft Outlook Anwendung. Wenn Sie es noch nicht installiert haben, laden Sie es über das *Google Play Store* herunter.
+Starten Sie auf Ihrem Android-Gerät die Microsoft Outlook-App. Wenn Sie es noch nicht installiert haben, laden Sie es aus dem *Google Play Store* herunter.
 
 |||
 |---|---|
 |![Outlook-android-emailpro-login](images/Screenshot_Outlook_1.png){.thumbnail}|![Outlook-android-emailpro-login](images/Screenshot_Outlook_3.png){.thumbnail}|
 
-Klicken Sie nach dem `Öffnen auf Account`{.action} hinzufügen, geben Sie Ihre vollständige E-Mail-Adresse im Feld `E-Mail-Adresse`{.action} angeben und klicken Sie dann auf `Weiter`{.action}.
+Wenn Sie eingeloggt sind, klicken Sie auf `Account hinzufügen`{.action}, geben Sie Ihre vollständige E-Mail-Adresse in das Feld `Geben Sie Ihre E-Mail-Adresse ein`{.action} und dann auf `Weiter`{.action} ein.
 
-Hier finden Sie unten auf Ihrem Bildschirm zwei Konfigurationsmöglichkeiten: `IMAP`{.action} und `POP3`{.action}
+Unten auf dem Bildschirm stehen Ihnen zwei Konfigurationsmöglichkeiten zur Verfügung: `IMAP`{.action} und `POP3`{.action}.
 
 |||
 |---|---|
@@ -81,86 +81,85 @@ Hier finden Sie unten auf Ihrem Bildschirm zwei Konfigurationsmöglichkeiten: `I
 
 > [!success]
 >
-> Das Synchronisationsprotokoll **IMAP** ermöglicht es, ein "Bild" der E-Mails in Ihrer E-Mail Pro Server-Adresse abzurufen, um diese in Ihrer Microsoft Outlook Anwendung anzuzeigen, **ohne** die E-Mail-Adresse des E-Mail Pro Servers zu löschen, an dem sich Ihre E-Mail-Adresse befindet. Dieses Protokoll ist besonders nützlich, wenn Sie mehrere Geräte mit Ihrer E-Mail-Adresse konfiguriert haben.
+> Mit dem Synchronisationsprotokoll **IMAP** können Sie ein „Image“ der E-Mails in Ihrer serverseitigen E-Mail Pro Adresse abrufen, um sie in Ihrer Microsoft Outlook-Anwendung anzuzeigen, **ohne** die E-Mail vom E-Mail Pro Server zu löschen, auf dem sich Ihre E-Mail-Adresse befindet. Dieses Protokoll ist besonders nützlich, wenn Sie mehrere Geräte mit Ihrer E-Mail-Adresse konfiguriert haben.
 >
-> Das Protokoll **POP3** wird standardmäßig die E-Mail abrufen, die auf dem E-Mail Pro Server empfangen wurde, auf dem sich Ihre E-Mail-Adresse befindet, um diese in der mit dieser E-Mail konfigurierten Anwendung / Software zu speichern. Aus diesem Grund ist die E-Mail nicht mehr auf dem E-Mail Pro Server, sondern nur noch auf dem mit Ihrer E-Mail-Adresse über das POP-Protokoll konfigurierten Gerät verfügbar.
-> Dieses Protokoll wird nicht empfohlen, wenn Sie mehrere Geräte mit Ihrer E-Mail-Adresse konfiguriert haben. Die E-Mail wird nur auf einem der in **POP3** konfigurierten Geräte und nicht auf allen mit Ihrer E-Mail-Adresse konfigurierten Geräten aktiv sein.
+> Das **POP3** Protokoll ruft standardmäßig die E-Mail ab, die Sie von dem E-Mail Pro Server erhalten haben, auf dem sich Ihre E-Mail-Adresse befindet, um sie in der Anwendung / Software zu belassen, die mit dieser konfiguriert ist. Aus diesem Grund ist die E-Mail nicht mehr auf dem E-Mail Pro Server vorhanden, sondern nur noch auf dem Gerät, das mit Ihrer E-Mail-Adresse über das POP-Protokoll konfiguriert wurde.
+> Dieses Protokoll wird nicht empfohlen, wenn Sie mehrere Geräte mit Ihrer E-Mail-Adresse konfiguriert haben. Die E-Mail wird nur auf einem der mit **POP3** konfigurierten Geräte und nicht auf allen mit Ihrer E-Mail-Adresse konfigurierten Geräten angezeigt.
 >
-> Trotz einer Konfiguration in **POP3** senden einige E-Mail-Programme / Anwendungen dennoch eine Kopie der E-Mail auf den Server, auf dem sich Ihre E-Mail-Adresse befindet. Diese Kopie kann temporär oder dauerhaft sein.
-> Um zu erfahren, ob Ihre Applikation / Software Teil davon ist, kontaktieren Sie den Herausgeber der Software direkt.
+> Trotz der Konfiguration mit **POP3** senden einige E-Mail-Programme dennoch eine Kopie der E-Mail an den Server, auf dem sich Ihre E-Mail-Adresse befindet. Diese Kopie kann vorübergehend oder dauerhaft bleiben.
+> Wenden Sie sich direkt an den Softwareherausgeber, um zu erfahren, ob Ihre Anwendung bzw. Software Teil dieser Software ist.
 >
 
+#### Fall Nr. 1: Konfiguration der Microsoft Outlook App auf Android mit dem IMAP Protokoll
 
-#### Fall #1: Konfiguration der Microsoft Outlook Anwendung in Android mit dem IMAP Protokoll
+Wählen Sie `IMAP`{.action} unten auf dem Bildschirm aus.
 
-Wählen Sie `IMAP`{.action} unten auf Ihrem Bildschirm aus.
+Auf der neu geöffneten Seite ist Ihre E-Mail-Adresse voreingetragen.
 
-Auf der neu geöffneten Seite ist Ihre E-Mail-Adresse im Voraus angegeben.
+Geben Sie das Passwort Ihrer E-Mail Pro Adresse in das Formular `Passwort`{.action} direkt unter der Stelle ein, an der Ihre E-Mail-Adresse bereits eingetragen ist.
 
-Geben Sie das Passwort Ihrer E-Mail Pro Adresse im Formular `Passwort`{.action} direkt unter dem Ort ein, an dem Ihre E-Mail-Adresse bereits vorab angegeben ist.
+In den beiden folgenden Formularen können Sie ganz **optional** einen `Anzeigenamen`{.action} und eine `Beschreibung`{.action} eingeben.
 
-Geben Sie in den beiden folgenden Formularen **fakultativ** einen `vollständigen Namen`{.action} und eine ganze `Beschreibung`{.action} ein.
+Um fortzufahren, wählen Sie den Knopf `ERWEITERTE EINSTELLUNGEN`{.action} um den Rest des Konfigurationsmenüs anzuzeigen.
 
-Setzen Sie hier einen Haken bei der Schaltfläche `FORTGESCHRITTENE EINSTELLUNGEN`{.action}, um den Rest des Konfigurationsmenüs anzugeben.
+Füllen Sie anschließend die verschiedenen Formulare mit den folgenden Informationen aus.
 
-Füllen Sie anschließend die einzelnen Formulare mit folgenden Angaben aus.
+Für den Abschnitt **IMAP-Posteingangsserver**:
 
-Für den Bereich **Posteingangsserver IMAP**:
+ - **IMAP Hostname**: Geben Sie den Namen Ihres E-Mail Pro Servers an, den Sie zuvor in [Schritt 1](#step1) erhalten haben: (Beispiele: *pro1.mail.ovh.net*, *pro2.mail.ovh.net* usw.);
+ - **Port**: Geben Sie die Portnummer ein **993**;
+ - **Sicherheitstyp**: Wählen Sie aus der Dropdown-Liste Sicherheit **SSL/TLS**;
+ - **IMAP-Benutzername**: Geben Sie die E-Mail-Adresse an, die Sie konfigurieren möchten;
+ - **IMAP Passwort**: Geben Sie das Zugangspasswort für die E-Mail-Adresse ein, die Sie einrichten möchten.
 
- - **IMAP-Hostname**: Geben Sie den Namen Ihres E-Mail Pro Servers an, der zuvor in [Schritt 1](#step1) abgerufen wurde : (Beispiele: *pro1.mail.ovh.net*, *pro2.mail.ovh.net* usw.)
- - **Port**: Geben Sie die Port-Nummer an **993**
- - **Art der Sicherheit**: Sicherheitsliste **SSL/TLS**
- - **IMAP-Benutzername**: Geben Sie die E-Mail-Adresse an, die Sie konfigurieren möchten.
- - **IMAP Passwort**: Geben Sie das Passwort für den Zugriff auf die E-Mail-Adresse ein, die Sie konfigurieren möchten.
+Für den Abschnitt **SMTP-Postausgangsserver**:
 
-Für den Bereich **Postausgangsserver SMTP**:
+ - **SMTP-Hostname**: Geben Sie den Namen Ihres E-Mail Pro Servers an, den Sie zuvor in [Schritt 1](#step1) erhalten haben: (Beispiele: *pro1.mail.ovh.net*, *pro2.mail.ovh.net* usw.);
+ - **Port**: Geben Sie die Portnummer ein **587**;
+ - **Sicherheitstyp**: Wählen Sie aus der Dropdown-Liste Sicherheit **StartTls**;
+ - **SMTP-Benutzername**: Geben Sie die E-Mail-Adresse an, die Sie konfigurieren möchten;
+ - **SMTP-Passwort**: Geben Sie das Zugangspasswort für die E-Mail-Adresse ein, die Sie konfigurieren möchten.
 
- - **SMTP-Hostname**: Geben Sie den Namen Ihres E-Mail Pro Servers an, der zuvor in [Schritt 1](#step1) abgerufen wurde : (Beispiele: *pro1.mail.ovh.net*, *pro2.mail.ovh.net* usw.)
- - **Port**: Geben Sie die Port-Nummer an **587**
- - **Art der Sicherheit**: Sicherheitsliste **StartTls**
- - **SMTP-Benutzername**: Geben Sie die E-Mail-Adresse an, die Sie konfigurieren möchten.
- - **SMTP Passwort**: Geben Sie das Passwort für den Zugriff auf die E-Mail-Adresse ein, die Sie konfigurieren möchten.
+Überprüfen Sie anschließend, ob alle eingegebenen Einstellungen mit den oben aufgeführten übereinstimmen, und klicken Sie auf das Symbol `V`{.action} oben rechts auf Ihrem Bildschirm.
 
-Überprüfen Sie anschließend, ob alle eingegebenen Einstellungen den oben angegebenen Elementen entsprechen, und klicken Sie rechts oben auf Ihrem Bildschirm auf das `V`{.action}-förmige Icon.
+#### Fall Nr. 2: Konfiguration der Microsoft Outlook App auf Android mit dem Protokoll „POP3“
 
-#### Fall #2: Konfiguration der Microsoft Outlook Anwendung in Android mit dem "POP3" Protokoll
+Klicken Sie unten auf `POP3`{.action}. 
 
-Klicken Sie unten auf den entsprechenden `POP3`{.action}-Bildschirm. 
+Auf der neu geöffneten Seite ist Ihre E-Mail-Adresse voreingetragen.
 
-Auf der neu geöffneten Seite ist Ihre E-Mail-Adresse im Voraus angegeben.
+Geben Sie das Passwort Ihrer E-Mail Pro Adresse in das Formular `Passwort`{.action} direkt unter der Stelle ein, an der Ihre E-Mail-Adresse bereits eingetragen ist.
 
-Geben Sie das Passwort Ihrer E-Mail Pro Adresse im Formular `Passwort`{.action} direkt unter dem Ort ein, an dem Ihre E-Mail-Adresse bereits vorab angegeben ist.
+In den beiden folgenden Formularen können Sie ganz **optional** einen `Anzeigenamen`{.action} und eine `Beschreibung`{.action} eingeben.
 
-Geben Sie in den beiden folgenden Formularen **fakultativ** einen `vollständigen Namen`{.action} und eine ganze `Beschreibung`{.action} ein.
+Um fortzufahren, wählen Sie den Knopf `ERWEITERTE EINSTELLUNGEN`{.action} um den Rest des Konfigurationsmenüs anzuzeigen.
 
-Setzen Sie hier einen Haken bei der Schaltfläche `FORTGESCHRITTENE EINSTELLUNGEN`{.action}, um den Rest des Konfigurationsmenüs anzugeben.
+Füllen Sie anschließend die verschiedenen Formulare mit den folgenden Informationen aus.
 
-Füllen Sie anschließend die einzelnen Formulare mit folgenden Angaben aus.
+Für den Abschnitt **POP-Posteingangsserver**:
 
-Für den Bereich **Posteingangsserver POP**:
+ - **POP-Hostname**: Geben Sie den Namen Ihres E-Mail Pro Servers an, den Sie zuvor in [Schritt 1](#step1) erhalten haben: (Beispiele: *pro1.mail.ovh.net*, *pro2.mail.ovh.net* usw.);
+ - **Port**: Geben Sie die Portnummer ein **995**;
+ - **Sicherheitstyp**: Wählen Sie aus der Dropdown-Liste Sicherheit **SSL/TLS**;
+ - **POP-Benutzername**: Geben Sie die E-Mail-Adresse an, die Sie konfigurieren möchten;
+ - **POP-Passwort**: Geben Sie das Zugangspasswort für die E-Mail-Adresse ein, die Sie konfigurieren möchten.
 
- - **POP-Hostname**: Geben Sie den Namen Ihres E-Mail Pro Servers an, der zuvor in [Schritt 1](#step1) abgerufen wurde : (Beispiele: *pro1.mail.ovh.net*, *pro2.mail.ovh.net* usw.)
- - **Port**: Geben Sie die Port-Nummer an **995**
- - **Art der Sicherheit**: Sicherheitsliste **SSL/TLS**
- - **POP-Benutzername**: Geben Sie die E-Mail-Adresse an, die Sie konfigurieren möchten.
- - **POP Passwort**: Geben Sie das Passwort für den Zugriff auf die E-Mail-Adresse ein, die Sie konfigurieren möchten.
+Für den Abschnitt **SMTP-Postausgangsserver**:
 
-Für den Bereich **Postausgangsserver SMTP**:
+ - **SMTP-Hostname**: Geben Sie den Namen Ihres E-Mail Pro Servers an, den Sie zuvor in [Schritt 1](#step1) erhalten haben: (Beispiele: *pro1.mail.ovh.net*, *pro2.mail.ovh.net* usw.);
+ - **Port**: Geben Sie die Portnummer ein **587**;
+ - **Sicherheitstyp**: Wählen Sie aus der Dropdown-Liste Sicherheit **StartTls**;
+ - **SMTP-Benutzername**: Geben Sie die E-Mail-Adresse an, die Sie konfigurieren möchten;
+ - **SMTP-Passwort**: Geben Sie das Zugangspasswort für die E-Mail-Adresse ein, die Sie konfigurieren möchten.
 
- - **SMTP-Hostname**: Geben Sie den Namen Ihres E-Mail Pro Servers an, der zuvor in [Schritt 1](#step1) abgerufen wurde : (Beispiele: *pro1.mail.ovh.net*, *pro2.mail.ovh.net* usw.)
- - **Port**: Geben Sie die Port-Nummer an **587**
- - **Art der Sicherheit**: Sicherheitsliste **StartTls**
- - **SMTP-Benutzername**: Geben Sie die E-Mail-Adresse an, die Sie konfigurieren möchten.
- - **SMTP Passwort**: Geben Sie das Passwort für den Zugriff auf die E-Mail-Adresse ein, die Sie konfigurieren möchten.
+Überprüfen Sie anschließend, ob alle eingegebenen Einstellungen mit den oben aufgeführten übereinstimmen, und klicken Sie auf das Symbol `V`{.action} oben rechts auf Ihrem Bildschirm.
 
-Überprüfen Sie anschließend, ob alle eingegebenen Einstellungen den oben angegebenen Elementen entsprechen, und klicken Sie rechts oben auf Ihrem Bildschirm auf das `V`{.action}-förmige Icon.
+### Schritt 3: Konfiguration der Microsoft Outlook-App auf Android abschließen
 
-### Schritt 3: Konfiguration der Microsoft Outlook App auf Android abschließen
+Nachdem Sie auf das Symbol im Format `V`{.action} geklickt haben, testet die App die Einstellungen und meldet sich beim E-Mail Pro Server an, auf dem sich Ihre E-Mail-Adresse befindet.
+Diese wird dann den Inhalt Ihrer E-Mail-Adresse synchronisieren / abrufen, um ihn auf Ihrem Gerät anzuzeigen.
 
-Nachdem Sie auf das Icon in der Form `V`{.action} geklickt haben, testet die Anwendung die Einstellungen und loggt sich in den E-Mail Pro Server ein, auf dem sich Ihre E-Mail-Adresse befindet.
-Die E-Mail-Adresse wird dann synchronisiert / abgerufen, um den Inhalt Ihrer E-Mail-Adresse anzuzeigen.
-
-Testen Sie anschließend den Versand und Empfang von E-Mails von Ihrer Microsoft Outlook Applikation aus, um die Konfiguration abzuschließen.
+Testen Sie dann das Senden und Empfangen von E-Mails über Ihre Microsoft Outlook-Anwendung, um die Konfiguration abzuschließen.
 
 ## Weiterführende Informationen <a name="go-further"></a>
 
