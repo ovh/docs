@@ -1,6 +1,6 @@
 ---
-title: AI Notebooks - Tutorial - Fine-tuning LLaMA 2
-excerpt: Unlock the full Potential of LLaMA 2 by fine-tuning it on your own dataset using a single GPU, QLoRA and AI Notebooks
+title: AI Notebooks - Tutoriel - Fine-tuner LLaMA 2 (EN)
+excerpt: Fine-tuner LLaMA 2 sur votre propre dataset en utilisant un seul GPU, QLoRA et AI Notebooks afin d'exploiter pleinement son potentiel
 updated: 2023-07-25
 ---
 
@@ -10,23 +10,23 @@ Trained between January 2023 and July 2023 on 2 trillion tokens, LLaMA 2 outperf
 
 ## Objective
 
-The purpose of this tutorial is to show you how it is possible to fine-tune LLaMA 2 models using [OVHcloud AI Notebooks](https://www.ovhcloud.com/en-gb/public-cloud/ai-notebooks/) and a single GPU. This allows you to retrain the model to suit your needs, using your own dataset. We will use [QLoRA](https://arxiv.org/abs/2305.14314), a highly efficient LLM fine-tuning technique.
+The purpose of this tutorial is to show you how it is possible to fine-tune LLaMA 2 models using [OVHcloud AI Notebooks](https://www.ovhcloud.com/fr-ca/public-cloud/ai-notebooks/) and a single GPU. This allows you to retrain the model to suit your needs, using your own dataset. We will use [QLoRA](https://arxiv.org/abs/2305.14314), a highly efficient LLM fine-tuning technique.
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
-- An AI Notebooks project created inside a [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
+- An AI Notebooks project created inside a [Public Cloud project](https://www.ovhcloud.com/fr-ca/public-cloud/) in your OVHcloud account
 - A user for AI Notebooks
 
 To access LLaMA 2 models, you will also need to follow the requirements indicated in the notebook.
 
 ## Instructions
 
-You can launch the notebook from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) or via the ovhai [CLI](/pages/platform/ai/cli_11_howto_run_notebook_cli).
+You can launch the notebook from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) or via the ovhai [CLI](/pages/platform/ai/cli_11_howto_run_notebook_cli).
 
 ### Launching a Jupyter notebook with "Conda" via UI (Control Panel)
 
-To launch your notebook from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), refer to the following steps.
+To launch your notebook from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), refer to the following steps.
 
 #### Code editor
 
@@ -78,7 +78,7 @@ Direct link to the notebook can be found [here](https://github.com/ovh/ai-traini
 
 ## Going further
 
-Don't forget to keep an eye on our upcoming tutorials, where we will be deploying our fine-tuned LLaMA model on [AI Deploy](https://www.ovhcloud.com/en-gb/public-cloud/ai-deploy/) for inference!
+Don't forget to keep an eye on our upcoming tutorials, where we will be deploying our fine-tuned LLaMA model on [AI Deploy](https://www.ovhcloud.com/fr-ca/public-cloud/ai-deploy/) for inference!
 
 In the meantime, we invite you to take a look at our other NLP tutorials: 
 
@@ -88,7 +88,7 @@ In the meantime, we invite you to take a look at our other NLP tutorials:
 
 - [Discover speech to text powers and use them to generate video subtitles, meeting scripts and summaries](https://github.com/ovh/ai-training-examples/tree/main/notebooks/natural-language-processing/speech-to-text/miniconda)
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/fr-ca/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 ## Feedback
 
