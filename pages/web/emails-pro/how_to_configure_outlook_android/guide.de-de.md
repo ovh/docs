@@ -30,7 +30,7 @@ E-Mail Pro Accounts können auf verschiedenen kompatiblen E-Mail-Clients eingeri
 
 ### Schritt 1: Informationen des E-Mail Pro Accounts abrufen <a name="step1"></a>
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `E-mail für Profis`{.action} und wählen Sie die E-Mail Pro Plattform aus, in der sich die zu konfigurierende E-Mail-Adresse befindet.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `E-mail für Profis`{.action} und wählen Sie die E-Mail Pro Plattform aus, in der sich die zu konfigurierende E-Mail-Adresse befindet.
 
 Klicken Sie auf der neuen Seite auf den Tab `E-Mail-Accounts`{.action}.
 
