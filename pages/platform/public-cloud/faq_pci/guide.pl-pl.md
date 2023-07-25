@@ -1,13 +1,11 @@
 ---
 title: FAQ Public Cloud OVHcloud
-updated: 2022-12-01
+updated: 2023-07-25
 ---
 
 > [!primary]
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
 >
-
-**Ostatnia aktualizacja z dnia 02/12/2022**
 
 ## FAQ Public Cloud
 
@@ -94,6 +92,14 @@ Szczegóły znajdziesz również na stronie [dokumentacja OpenStack](https://doc
 Publiczne adresy IP są automatycznie przypisane do instancji i dlatego nie można ich zmienić. Zalecamy użycie adresu Additional IP, aby zarządzać publicznym adresem IP instancji. W ten sposób, bez względu na publiczny adres przypisany automatycznie do instancji, możesz dodać jeden lub kilka adresów Additional IP do Twojej instancji.
 
 Zapraszamy do zapoznania się z przewodnikiem [Wykupienie adresu Additional IP](/pages/platform/network-services/additional-ip-buy).
+
+### Ile dodatkowych Additional IP mogę dołączyć do każdej instancji?
+
+Do każdej instancji można dołączyć maksymalnie 256 dodatkowych Additional IP.
+
+### Ile adresów IPv6 jest dostarczanych z moją instancją?
+
+Każda instancja jest dostarczana z jednym adresem IPv6.
 
 ### Jak sprawdzić, czy moja instancja jest podatna na atak MDS?
 

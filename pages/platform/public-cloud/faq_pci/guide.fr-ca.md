@@ -1,9 +1,7 @@
 ---
 title: FAQ Public Cloud OVHcloud
-updated: 2022-12-01
+updated: 2023-07-25
 ---
-
-**Dernière mise à jour le 01/12/2022**
 
 ## FAQ Public Cloud
 
@@ -25,7 +23,7 @@ Vous avez la possibilité de créer à tout moment la sauvegarde d’une instanc
 
 Nous vous invitons à consulter le guide [Sauvegarder une instance](/pages/platform/public-cloud/save_an_instance).
 
-### Comment créer et gérer des utilisateurs OpenStack?  
+### Comment créer et gérer des utilisateurs OpenStack ?  
 
 Afin de pouvoir utiliser les API Horizon ou OpenStack, vous devrez au préalable créer un utilisateur OpenStack. Vous pouvez en créer un nombre illimité.
 
@@ -90,6 +88,14 @@ Vous trouverez aussi tous les détails sur la [documentation OpenStack](https://
 Les IP publiques sont attribuées automatiquement aux instances et ne sont donc pas modifiables. Pour avoir la main sur l'IP publique d'une instance, nous vous conseillons d'utiliser une Additional IP. De cette manière, quelle que soit l'adresse IP publique attribuée automatiquement à l'instance, vous avez la possibilité d'ajouter une ou plusieurs Additional IP à votre instance.
 
 Pour plus d'informations, nous vous invitons à consulter le guide : [Acheter une Additional IP](/pages/platform/network-services/additional-ip-buy).
+
+### Combien d'adresses Additional IP puis-je attacher à chaque instance ?
+
+Vous pouvez attacher jusqu'à 256 Additional IP par instance.
+
+### Combien d'adresses IPv6 sont livrées avec mon instance ?
+
+Chaque instance est livrée avec une adresse IPv6.
 
 ### Comment vérifier si mon instance est vulnérable a la faille MDS ?
 

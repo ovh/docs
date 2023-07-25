@@ -1,13 +1,11 @@
 ---
 title: FAQ Public Cloud OVHcloud
-updated: 2022-12-01
+updated: 2023-07-25
 ---
 
 > [!primary]
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
 >
-
-**Ultimo aggiornamento: 02/12/2022**
 
 ## FAQ Public Cloud
 
@@ -94,6 +92,14 @@ Ulteriori informazioni sono disponibili alla pagina [documentazione OpenStack](h
 Gli IP pubblici sono assegnati automaticamente alle istanze e non sono quindi modificabili. Per utilizzare il controllo dell'IP pubblico di un'istanza, ti consigliamo di utilizzare un Additional IP. In questo modo, indipendentemente dall'indirizzo pubblico assegnato automaticamente all'istanza, hai la possibilità di aggiungere uno o più Additional IP alla tua istanza.
 
 Per maggiori informazioni, consulta la guida [Acquista un Additional IP](/pages/platform/network-services/additional-ip-buy).
+
+### Quanti Additional IP posso collegare a ciascuna istanza?
+
+È possibile collegare fino a 256 Additional IP per istanza.
+
+### Quanti indirizzi IPv6 vengono forniti con la mia istanza?
+
+Ogni istanza viene fornita con un indirizzo IPv6.
 
 ### Come verificare se la tua istanza è vulnerabile alla falla MDS?
 
