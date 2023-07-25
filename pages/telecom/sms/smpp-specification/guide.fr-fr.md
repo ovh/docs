@@ -1,10 +1,10 @@
 ---
 title: Spécifications techniques du SMPP
 excerpt: 'Découvrez les spécifications techniques du SMPP'
-updated: 2023-05-22
+updated: 2023-07-25
 ---
 
-**Dernière mise à jour le 22/05/2023**
+**Dernière mise à jour le 25/07/2023**
 
 ## Objectif
 

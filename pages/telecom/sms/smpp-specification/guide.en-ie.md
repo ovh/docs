@@ -1,10 +1,10 @@
 ---
 title: SMPP Technical Specifications
 excerpt: 'Discover the technical specifications of the OVHcloud SMPP solution'
-updated: 2023-05-22
+updated: 2023-07-25
 ---
 
-**Last updated 22nd May 2023**
+**Last updated 25th July 2023**
 
 ## Objective
 
