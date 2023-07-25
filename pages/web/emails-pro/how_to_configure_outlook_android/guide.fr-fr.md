@@ -86,7 +86,6 @@ Dès lors, deux choix de configuration vous sont proposés en bas de votre écra
 > Pour savoir si votre application / logiciel en fait partie, contactez l'éditeur du logiciel directement.
 >
 
-
 #### Cas n°1 : configuration de l'application Microsoft Outlook sur Android avec le protocole IMAP
 
 Sélectionnez `IMAP`{.action} en bas de votre écran.
