@@ -136,7 +136,7 @@ Then fill in the various forms with the following information.
 For the **POP incoming mail server** section:
 
  - **POP host name**: Enter the name of your Email Pro server retrieved earlier in [step 1](#step1): (examples: *pro1.mail.ovh.net*, *pro2.mail.ovh.net*, etc.);
- - **Port**: enter the port number **995**;
+ - **Port**: Enter the port number **995**;
  - **Security type**: Select **SSL/TLS** security from the dropdown list.
  - **POP username**: Enter the email address you would like to configure
  - **POP password**: Enter the password to access the email address you want to configure.
