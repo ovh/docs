@@ -128,7 +128,7 @@ Haga clic en `POP3`{.action} en la parte inferior de su pantalla.
 
 Se abrirá una nueva página en la que deberá introducir previamente la dirección de correo electrónico.
 
-Introduzca la contraseña de su dirección Email Pro en el formulario `Contraseña {.action} justo debajo del lugar en el que su dirección de correo electrónico ya está pre-indicada.
+Introduzca la contraseña de su dirección Email Pro en el formulario `Contraseña`{.action} justo debajo del lugar en el que su dirección de correo electrónico ya está pre-indicada.
 
 En los dos formularios siguientes, y de forma totalmente **opcional**, puede indicar un `Nombre completo`{.action} y una `Descripción`{.action}.
 
