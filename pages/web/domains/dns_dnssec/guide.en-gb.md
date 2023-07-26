@@ -12,7 +12,7 @@ In some cases, data streams that pass through DNS servers can be hijacked by hac
 In short, to do this, these people poison the DNS server cache with the DNS configuration they want to apply to your domain name. This is called ‘Cache poisoning’.
 This way, they can redirect incoming traffic for your domain name to their own websites, and email addresses.
 
-The **D**omain **N**ame **S**ystem **SEC**Security extensions (**DNSSEC**), protects your domain name’s DNS configuration against ‘Cache Poisoning’ by verifying and authenticating DNS responses.
+The **D**omain **N**ame **S**ystem **SEC**ecurity extensions (**DNSSEC**), protects your domain name’s DNS configuration against ‘Cache Poisoning’ by verifying and authenticating DNS responses.
 
 **Find out how to enable DNSSEC for your domain name, to protect it against ‘cache poisoning’.**
 
