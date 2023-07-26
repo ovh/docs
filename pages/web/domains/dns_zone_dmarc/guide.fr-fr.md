@@ -77,7 +77,7 @@ Vous trouverez ci-dessous le descriptif exhaustif des balises utilisées pour **
 >
 > **Exemples** 
 >
-> - **Aligné**: lorsque l'adresse *john.smith@mydomain.ovh* transmet un message depuis le service e-mail attaché au nom de domaine *mydomain.ovh* et que les mécanismes d'authentification SPF et DKIM ont été configurés, nous obtiendrons un résultat aligné.
+> - **Aligné** : lorsque l'adresse *john.smith@mydomain.ovh* transmet un message depuis le service e-mail attaché au nom de domaine *mydomain.ovh* et que les mécanismes d'authentification SPF et DKIM ont été configurés, on obtient un résultat aligné.
 > - **Partiellement aligné**: lorsque l'adresse *john.smith@subdomain.mydomain.ovh* transmet un message depuis le service e-mail attaché au nom de domaine *mydomain.ovh*, mais que les mécanismes d'authentification SPF et DKIM ont été configurés uniquement sur le domaine principal, à savoir *mydomain.ovh*, nous obitiendrons un résultat partiellement aligné.
 > - **Echec des mécanismes d'authentification**: l'expéditeur tente d'envoyer un e-mail en tant que *john.smith@mydomain.ovh* en passant par une autre adresse, tel que *robert@example.com* ou encore en utilisant un service d'envoie d'e-mail qui n'est pas listé dans le SPF. Alors les mécanismes d'authentification SPF et DKIM renveront un échec comme résultat.
 
