@@ -1,10 +1,8 @@
 ---
 title: Getting started with MySQL and MariaDB
 excerpt: Using Your Databases
-updated: 2023-02-15
+updated: 2023-07-26
 ---
-
-**Last updated 15rd February 2023**
 
 ## Objective
 
