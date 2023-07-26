@@ -144,7 +144,7 @@ For the **POP incoming mail server** section:
 For the **SMTP Outgoing Mail Server** section:
 
  - **SMTP Host Name**: Enter the name of your Email Pro server previously retrieved in [step 1](#step1): (examples: *pro1.mail.ovh.net*, *pro2.mail.ovh.net*, etc.);
- - **Port**: enter the port number **587**;
+ - **Port**: Enter the port number **587**;
  - **Security type**: Select **StartTls** security from the dropdown list.
  - **SMTP username**: Enter the email address you would like to configure
  - **SMTP password**: enter the password to access the email address you want to configure.
