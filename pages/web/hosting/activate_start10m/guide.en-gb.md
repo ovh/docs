@@ -8,11 +8,11 @@ updated: 2022-09-15
 
 ## Objective
 
-With [Start10M](https://www.ovhcloud.com/en-gb/domains/free-web-hosting/){.external}, OVHcloud offers you a 10 MB web hosting plan, and an email account with 5 GB of storage. This guide will show you how to activate a 100M free hosting on your [domain name](https://www.ovhcloud.com/en-gb/domains/){.external}.
+With [100M free hosting](https://www.ovhcloud.com/en-gb/domains/free-web-hosting/){.external}, OVHcloud offers you a 100 MB web hosting plan, and an email account with 5 GB of storage. This guide will show you how to activate a 100M free hosting on your [domain name](https://www.ovhcloud.com/en-gb/domains/){.external}.
 
 > [!warning]
 >
-> This 10 MB free hosting plan is suitable for a simple webpage presentation, it **does not include a database**.
+> This 100 MB free hosting plan is suitable for a simple webpage presentation, it **does not include a database**.
 > It is also suitable if you do not need several "MX plan" email accounts. 
 > If you would like to set up a website with several pages and require a database, such as a CMS (WordPress, Joomla!, PrestaShop, Drupal, etc.), please order one of [our web hosting plans](https://www.ovhcloud.com/en-gb/web-hosting/) directly from our website or your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}.
 >
@@ -52,7 +52,7 @@ The activation window will appear. **Step 1** will detail the plan and its price
 
 > [!primary]
 >
-> If your project will quickly evolve to a hosting plan with a database, larger storage space or more email accounts, you can switch directly and only from Start 10M to a **Personal** hosting plan from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}.
+> If your project will quickly evolve to a hosting plan with a database, larger storage space or more email accounts, you can switch directly and only from 100M free hosting to a **Personal** hosting plan from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}.
 >
 > To switch to the **Pro** or **Performance** plan, you will need to switch from the 100M free hosting to the **Personal** plan beforehand.
 >
