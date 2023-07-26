@@ -12,7 +12,7 @@ You can configure Email Pro accounts on email clients, if they are compatible. B
 
 ## Requirements
 
-- an [Email Pro](https://www.ovhcloud.com/en-ie/emails/email-pro/){.external} solution
+- An [Email Pro](https://www.ovhcloud.com/en-ie/emails/email-pro/){.external} solution.
 - You need to have Microsoft Outlook installed on your Android device. You can download it from the *Google Play Store*.
 
 > [!warning]
@@ -36,7 +36,7 @@ Get the name of the Email Pro server that appears below the `Webmail`{.action} e
 
 > [!warning]
 >
-> Get the **correct name** of the Email Pro server where the email address you want to configure is located. It may vary depending on the duration of your Email Pro solution (pro1.mail.ovh.net, pro2.mail.ovh.net, etc.).
+> Make sure to retrieve the **correct name** of the Email Pro server where the email address you want to configure is located. It may vary depending on the duration of your Email Pro solution (pro1.mail.ovh.net, pro2.mail.ovh.net, etc.).
 > 
 
 In the `Email accounts`{.action} tab of your *Email Pro* platform, a table will be displayed with your Email Pro address(es).
@@ -45,7 +45,7 @@ If you no longer remember the password to access the email address you want to c
 
 Then select `Edit`{.action}, choose a new password and confirm it. Then click `Next`{.action} and `Validate`{.action} in the second window.
 
-The password change will be processed in approximately the next 15 minutes.
+The password change will be processed within the next 15 minutes approximately.
 
 > [!warning]
 >
@@ -83,7 +83,7 @@ At the bottom of your screen, you will see two configuration choices: `IMAP`{.ac
 > This protocol is not recommended if you have several devices configured with your email address. The email will only appear on one of the devices configured in **POP3** and not on all of the devices configured with your email address.
 >
 > However and despite the **POP3** configuration, some email software/applications still return a copy of the email to the server where your email address is located. This copy may remain temporarily or permanently.
-> To find out if your application / software is part of it, contact the software publisher directly.
+> To find out if your application / software applies this method, contact the software publisher directly.
 >
 
 
@@ -93,9 +93,9 @@ Select `IMAP`{.action} at the bottom of your screen.
 
 On the new page that pops up, your email address is pre-filled.
 
-Enter your Email Pro password in the form `Password`{.action} just below where your email address is already pre-filled.
+Enter your Email Pro password in the `Password`{.action} form right below where your email address is already pre-filled.
 
-In the two forms that follow, and completely **optional**, you can enter a `Display name`{.action} and a `Description`{.action}.
+Optionally, in the two forms that follow, you can enter a `Display name`{.action} and a `Description`{.action}.
 
 To continue, select the button labelled `ADVANCED SETTINGS`{.action} to display the rest of the configuration menu.
 
@@ -103,19 +103,19 @@ Then fill in the various forms with the following information.
 
 For the **IMAP incoming mail server** section:
 
- - **IMAP host name**: Enter the name of your Email Pro server retrieved earlier in [step 1](#step1): (examples: *pro1.mail.ovh.net*, *pro2.mail.ovh.net*, etc.);
- - **Port**: enter the port number **993**;
+ - **IMAP host name**: Enter the name of your Email Pro server previously retrieved in [step 1](#step1): (examples: *pro1.mail.ovh.net*, *pro2.mail.ovh.net*, etc.);
+ - **Port**: Enter the port number **993**;
  - **Security type**: Select **SSL/TLS** security from the dropdown list.
  - **IMAP username**: Enter the email address you would like to configure
- - **IMAP password**: enter the password to access the email address you want to configure.
+ - **IMAP password**: Enter the password to access the email address you want to configure.
 
 For the **SMTP Outgoing Mail Server** section:
 
- - **SMTP Host Name**: Enter the name of your Email Pro server retrieved earlier in [step 1](#step1): (examples: *pro1.mail.ovh.net*, *pro2.mail.ovh.net*, etc.);
- - **Port**: enter the port number **587**;
+ - **SMTP Host Name**: Enter the name of your Email Pro server previously retrieved in [step 1](#step1): (examples: *pro1.mail.ovh.net*, *pro2.mail.ovh.net*, etc.);
+ - **Port**: Enter the port number **587**;
  - **Security type**: Select **StartTls** security from the dropdown list.
  - **SMTP username**: Enter the email address you would like to configure
- - **SMTP password**: enter the password to access the email address you want to configure.
+ - **SMTP password**: Enter the password to access the email address you want to configure.
 
 Then make sure that all the settings you have entered match the above, and click the `V`{.action} icon in the top right-hand corner of your screen.
 
@@ -125,9 +125,9 @@ Click `POP3`{.action} at the bottom of your screen.
 
 On the new page that pops up, your email address is pre-filled.
 
-Enter your Email Pro password in the form `Password`{.action} just below where your email address is already pre-filled.
+Enter your Email Pro password in the `Password`{.action} form right below where your email address is already pre-filled.
 
-In the two forms that follow, and completely **optional**, you can enter a `Display name`{.action} and a `Description`{.action}.
+Optionally, in the two forms that follow, you can enter a `Display name`{.action} and a `Description`{.action}.
 
 To continue, select the button labelled `ADVANCED SETTINGS`{.action} to display the rest of the configuration menu.
 
@@ -135,19 +135,19 @@ Then fill in the various forms with the following information.
 
 For the **POP incoming mail server** section:
 
- - **POP host name**: Enter the name of your Email Pro server retrieved earlier in [step 1](#step1): (examples: *pro1.mail.ovh.net*, *pro2.mail.ovh.net*, etc.);
- - **Port**: enter the port number **995**;
+ - **POP host name**: Enter the name of your Email Pro server previously retrieved in [step 1](#step1): (examples: *pro1.mail.ovh.net*, *pro2.mail.ovh.net*, etc.);
+ - **Port**: Enter the port number **995**;
  - **Security type**: Select **SSL/TLS** security from the dropdown list.
  - **POP username**: Enter the email address you would like to configure
- - **POP password**: enter the password to access the email address you want to configure.
+ - **POP password**: Enter the password to access the email address you want to configure.
 
 For the **SMTP Outgoing Mail Server** section:
 
- - **SMTP Host Name**: Enter the name of your Email Pro server retrieved earlier in [step 1](#step1): (examples: *pro1.mail.ovh.net*, *pro2.mail.ovh.net*, etc.);
- - **Port**: enter the port number **587**;
+ - **SMTP Host Name**: Enter the name of your Email Pro server previously retrieved in [step 1](#step1): (examples: *pro1.mail.ovh.net*, *pro2.mail.ovh.net*, etc.);
+ - **Port**: Enter the port number **587**;
  - **Security type**: Select **StartTls** security from the dropdown list.
  - **SMTP username**: Enter the email address you would like to configure
- - **SMTP password**: enter the password to access the email address you want to configure.
+ - **SMTP password**: Enter the password to access the email address you want to configure.
 
 Then make sure that all the settings you have entered match the above, and click the `V`{.action} icon in the top right-hand corner of your screen.
 
