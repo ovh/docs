@@ -73,7 +73,7 @@ Vous trouverez ci-dessous le descriptif exhaustif des balises utilisées pour **
 
 > [!primary]
 >
-> Dans le cadre des mécanismes d'authentification SPF et DKIM, l'**alignement** fait référence à la correspondance entre le nom de domaine (et/ou la signature du domaine) utilisé lors de l'envoi, avec le nom de domaine inscrit dans ces mécanismes.
+> Dans le cadre des mécanismes d'authentification SPF et DKIM, l'**alignement** fait référence à la correspondance entre le nom de domaine (et/ou la signature du domaine) utilisé lors de l'envoi **et** le nom de domaine inscrit dans ces mécanismes.
 >
 > **Exemples** 
 >
