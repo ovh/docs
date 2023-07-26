@@ -1,9 +1,9 @@
 ---
 title: 'Web Cloud Databases EOS and EOL announcements'
-updated: 2023-07-18
+updated: 2023-07-26
 ---
 
-**Last updated 18th July 2023**
+**Last updated 26th July 2023**
 
 ## Objective
 
@@ -13,7 +13,7 @@ The products covered by those End Of Sale (EOS) and End Of Life (EOL) announceme
 |---|---|---|---|
 |MariaDB 10.3|2021-08-18|2022-11-23|2023-05-25|
 |MariaDB 10.4|2022-07-22|2023-12-18|2024-06-18|
-|MariaDB 10.5|To be defined|To be defined|To be defined|
+|MariaDB 10.5|2023-07-26|2024-12-23|2025-06-24|
 |MariaDB 10.6|To be defined|To be defined|To be defined|
 |MariaDB 10.11|To be defined|To be defined|To be defined|
 |MySQL 5.7|2022-03-29|2023-04-01|2023-10-01|
