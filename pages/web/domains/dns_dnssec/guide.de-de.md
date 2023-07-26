@@ -22,7 +22,7 @@ Die **D**omain **N**ame **S**ystem **SEC**urity extensions (**DNSSEC**) ermögli
 
 Weitere Informationen zur Funktionsweise des **DNSSEC** finden Sie auf unserer Seite „[DNSSEC verstehen](https://www.ovhcloud.com/de/domains/dnssec/){.external}“.
 
-Weitere Informationen zu diesen Themen finden Sie in unseren Anleitungen zu [den OVHcloud DNS-Servern](/pages/web/domains/dns_server_general_information/) und zur [Bearbeitung einer OVHcloud DNS-Zone](/pages/web/domains/dns_zone_edit/).
+Weitere Informationen zu diesen Themen finden Sie in unseren Anleitungen zu [den OVHcloud DNS-Servern](/pages/web/domains/dns_server_general_information) und zur [Bearbeitung einer OVHcloud DNS-Zone](/pages/web/domains/dns_zone_edit).
 
 ## Voraussetzungen
 
@@ -76,9 +76,9 @@ Im Tab `Allgemeine Informationen`{.action} können Sie nach dem [Schritt 1](#ste
 
 ## Weiterführende Informationen
 
-[Allgemeine Informationen zu den OVHcloud DNS-Servern](/pages/web/domains/dns_server_general_information/)
+[Allgemeine Informationen zu den OVHcloud DNS-Servern](/pages/web/domains/dns_server_general_information)
 
-[OVHcloud DNS-Zone bearbeiten](/pages/web/domains/dns_zone_edit/)
+[OVHcloud DNS-Zone bearbeiten](/pages/web/domains/dns_zone_edit)
 
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
 

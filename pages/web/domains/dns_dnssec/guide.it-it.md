@@ -22,7 +22,7 @@ Il **D**omain **N**ame **S**ystem **SEC**urity extensions (**DNSSEC**), permette
 
 Per maggiori informazioni sul funzionamento del **DNSSEC**, consulta la nostra pagina "[Comprendere il DNSSEC](https://www.ovhcloud.com/it/domains/dnssec/){.external}".
 
-Per maggiori informazioni su questi argomenti, consulta le nostre guide disponibili su [server DNS OVHcloud](/pages/web/domains/dns_server_general_information/) e sull’[edizione di una zona DNS OVHcloud](/pages/web/domains/dns_zone_edit/).
+Per maggiori informazioni su questi argomenti, consulta le nostre guide disponibili su [server DNS OVHcloud](/pages/web/domains/dns_server_general_information) e sull’[edizione di una zona DNS OVHcloud](/pages/web/domains/dns_zone_edit).
 
 ## Prerequisiti
 
@@ -76,9 +76,9 @@ Il pulsante di attivazione situato sopra la voce `Delegazione Sicura (DNSSEC)`{.
 
 ## Per saperne di più
 
-[Generalità sui server DNS OVHcloud](/pages/web/domains/dns_server_general_information/)
+[Generalità sui server DNS OVHcloud](/pages/web/domains/dns_server_general_information)
 
-[Modificare una zona DNS in OVHcloud](/pages/web/domains/dns_zone_edit/)
+[Modificare una zona DNS in OVHcloud](/pages/web/domains/dns_zone_edit)
 
 Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
 

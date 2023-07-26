@@ -22,7 +22,7 @@ Dzięki temu mogą przekierować przychodzące strumienie Twojej domeny na włas
 
 Aby uzyskać więcej informacji na temat działania usługi **DNSSEC**, sprawdź naszą stronę "[Dowiedz się więcej o DNSSEC](https://www.ovhcloud.com/pl/domains/dnssec/){.external}".
 
-Zapoznaj się również z naszymi przewodnikami dotyczącymi [serwerów DNS OVHcloud](/pages/web/domains/dns_server_general_information/) oraz [edycji strefy DNS OVHcloud](/pages/web/domains/dns_zone_edit/), jeśli chcesz uzyskać więcej informacji na temat tych tematów.
+Zapoznaj się również z naszymi przewodnikami dotyczącymi [serwerów DNS OVHcloud](/pages/web/domains/dns_server_general_information) oraz [edycji strefy DNS OVHcloud](/pages/web/domains/dns_zone_edit), jeśli chcesz uzyskać więcej informacji na temat tych tematów.
 
 ## Wymagania początkowe
 
@@ -76,9 +76,9 @@ Za pomocą przycisku aktywacyjnego powyżej hasła `Zabezpieczenie DNS - DNSSEC`
 
 ## Sprawdź również
 
-[Informacje ogólne na temat serwerów DNS OVHcloud](/pages/web/domains/dns_server_general_information/)
+[Informacje ogólne na temat serwerów DNS OVHcloud](/pages/web/domains/dns_server_general_information)
 
-[Edytuj strefę DNS OVHcloud](/pages/web/domains/dns_zone_edit/)
+[Edytuj strefę DNS OVHcloud](/pages/web/domains/dns_zone_edit)
 
 W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
 

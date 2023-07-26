@@ -22,7 +22,7 @@ El **D**omain **N**ame **S**ystem **SEC**urity extensions (**DNSSEC**) permite p
 
 Para más información sobre el funcionamiento del **DNSSEC**, consulte nuestra página "[Comprender DNSSEC](https://www.ovhcloud.com/es-es/domains/dnssec/){.external}".
 
-Si desea más información sobre estos temas, no dude en consultar nuestras guías sobre [los servidores DNS OVHcloud](/pages/web/domains/dns_server_general_information/) y sobre la [edición de una zona DNS OVHcloud](/pages/web/domains/dns_zone_edit/).
+Si desea más información sobre estos temas, no dude en consultar nuestras guías sobre [los servidores DNS OVHcloud](/pages/web/domains/dns_server_general_information) y sobre la [edición de una zona DNS OVHcloud](/pages/web/domains/dns_zone_edit).
 
 ## Requisitos
 
@@ -76,9 +76,9 @@ Además, si más adelante desea cambiar los servidores DNS asociados a su domini
 
 ## Más información
 
-[Información general sobre los servidores DNS de OVHcloud](/pages/web/domains/dns_server_general_information/)
+[Información general sobre los servidores DNS de OVHcloud](/pages/web/domains/dns_server_general_information)
 
-[Editar una zona DNS de OVHcloud](/pages/web/domains/dns_zone_edit/)
+[Editar una zona DNS de OVHcloud](/pages/web/domains/dns_zone_edit)
 
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
 

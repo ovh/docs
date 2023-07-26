@@ -18,7 +18,7 @@ The **D**omain **N**ame **S**ystem **SEC**ecurity extensions (**DNSSEC**), prote
 
 For more information on how **DNSSEC** works, please visit our page “[Understanding DNSSEC](https://www.ovhcloud.com/en-gb/domains/dnssec/){.external}”.
 
-You can also refer to our guides on [OVHcloud DNS servers](/pages/web/domains/dns_server_general_information/) and on [editing an OVHcloud DNS zone](/pages/web/domains/dns_zone_edit/) if you would like more information on these topics.
+You can also refer to our guides on [OVHcloud DNS servers](/pages/web/domains/dns_server_general_information) and on [editing an OVHcloud DNS zone](/pages/web/domains/dns_zone_edit) if you would like more information on these topics.
 
 ## Requirements
 
@@ -72,9 +72,9 @@ With the activation button above the mention `Secured Delegation - DNSSEC`{.acti
 
 ## Go further
 
-[General information on OVHcloud DNS servers](/pages/web/domains/dns_server_general_information/)
+[General information on OVHcloud DNS servers](/pages/web/domains/dns_server_general_information)
 
-[Edit an OVHcloud DNS zone](/pages/web/domains/dns_zone_edit/)
+[Edit an OVHcloud DNS zone](/pages/web/domains/dns_zone_edit)
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/).
 
