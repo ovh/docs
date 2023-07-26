@@ -1,14 +1,12 @@
 ---
 title: 'Korzystanie z Backup Storage na serwerze dedykowanym'
 excerpt: 'Dowiedz się, jak aktywować i uzyskać dostęp do dodatkowej przestrzeni dyskowej'
-updated: 2021-03-15
+updated: 2023-07-26
 ---
 
 > [!primary]
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
 > 
-
-**Ostatnia aktualizacja z dnia 15-03-2021**
 
 ## Wprowadzenie
 
@@ -145,6 +143,11 @@ Zostanie utworzone zamówienie. Po zaksięgowaniu płatności otrzymasz powiadom
 > [!primary]
 >
 > Usługa Backup Storage nie wykonuje automatycznych kopii zapasowych danych. Otrzymujesz do dyspozycji przestrzeń dyskową i możesz łączyć się z przestrzenią za pomocą dostępnych protokołów. Wybór odpowiedniej metody wykonywania kopii zapasowych oraz narzędzi należy do Ciebie. OVHcloud nie ponosi odpowiedzialności za dane zawarte w tych przestrzeniach.
+>
+
+> [!warning]
+>
+> Usługa Backup Storage ma limit trzech jednoczesnych połączeń z jednym adresem IP.
 >
 
 #### FTP/FTPS
