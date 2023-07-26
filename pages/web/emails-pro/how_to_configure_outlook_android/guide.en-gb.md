@@ -83,7 +83,7 @@ At the bottom of your screen, you will see two configuration choices: `IMAP`{.ac
 > This protocol is not recommended if you have several devices configured with your email address. The email will only appear on one of the devices configured in **POP3** and not on all of the devices configured with your email address.
 >
 > However and despite the **POP3** configuration, some email software/applications still return a copy of the email to the server where your email address is located. This copy may remain temporarily or permanently.
-> To find out if your application / software is part of it, contact the software publisher directly.
+> To find out if your application / software applies this method, contact the software publisher directly.
 >
 
 
