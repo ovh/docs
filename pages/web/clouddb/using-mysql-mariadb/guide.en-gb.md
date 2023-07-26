@@ -24,7 +24,7 @@ This engine is 100% compatible, and is "freer" than its sibling MySQL. All the b
 
 ## Requirements
 
-- A [Web Cloud Databases instance](https://www.ovh.co.uk/cloud/cloud-databases/){.external} (included in a [performance web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/)).
+- A [Web Cloud Databases instance](https://www.ovhcloud.com/en-gb/web-cloud/databases/){.external} (included in a [performance web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/)).
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}.
 - You need to have read the [Web Cloud Databases startup guide](/pages/web/clouddb/starting_with_clouddb).
 
@@ -116,7 +116,7 @@ cat database_name.sql | mysql --host=server --user=user --port=port --password=p
 
 ## Go further
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/).
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-gb/support-levels/).
 

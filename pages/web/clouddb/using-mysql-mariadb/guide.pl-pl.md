@@ -1,14 +1,12 @@
 ---
 title: MySQL i MariaDB
 excerpt: Korzystanie z baz danych
-updated: 2023-02-15
+updated: 2023-07-26
 ---
 
 > [!primary]
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
 >
-
-**Ostatnia aktualizacja z dnia 15/02/2023**
 
 ## Wprowadzenie
 
@@ -24,13 +22,13 @@ Jest to silnik open source firmy Oracle.
 
 MariaDB to pochodna systemu zarządzania bazami danych MySQL.
 
-Silnik ten jest w 100% kompatybilny. Wszystkie bugi oraz roadmapy są w pełni dostępne, w przeciwieństwie do wersji Oracle. Ponadto silnik InnoDB został zastąpiony silnikiem XtraDB. Wprowadzono również inne optymalizacje, które pozwalają na zwiększenie wydajności.
+Silnik ten jest w 100% kompatybilny. Wszystkie bugi oraz roadmapy są w pełni dostępne, w przeciwieństwie do wersji Oracle.
 
 **Dowiedz się, jak tworzyć bazy danych MySQL lub MariaDB**
   
 ## Wymagania początkowe
 
-- Posiadanie [instancji Web Cloud Databases](https://www.ovh.pl/cloud/cloud-databases/){.external} (zawartej w ofercie[hostingu www Performance](https://www.ovhcloud.com/pl/web-hosting/)
+- Posiadanie [instancji Web Cloud Databases](https://www.ovhcloud.com/pl/web-cloud/databases/){.external} (zawartej w ofercie[hostingu www Performance](https://www.ovhcloud.com/pl/web-hosting/)
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
 - Przeglądanie [przewodnik dotyczący uruchomienia usługi Web Cloud Databases](/pages/web/clouddb/starting_with_clouddb)
 
@@ -122,7 +120,7 @@ cat nazwa_bazy.sql | mysql --host=serwer --user=użytkownik --port=port --passwo
 
 ## Sprawdź również
 
-W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/).
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
 

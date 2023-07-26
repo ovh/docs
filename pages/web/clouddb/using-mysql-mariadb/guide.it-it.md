@@ -1,14 +1,12 @@
 ---
 title: Come utilizzare MySQL e MariaDB
 excerpt: Guida all'utilizzo dei tuoi database
-updated: 2023-02-15
+updated: 2023-07-26
 ---
 
 > [!primary]
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
 >
-
-**Ultimo aggiornamento: 15/02/2023**
 
 ## Obiettivo
 
@@ -24,13 +22,13 @@ Questo motore è open source e la sua casa madre è Oracle.
 
 MariaDB è un derivato (fork) del modello di database MySQL.
 
-Questo motore è compatibile al 100% ed è stato progettato per essere più "libero" del suo fratello maggiore MySQL. Contrariamente alla versione di Oracle, tutti i bug e la roadmap sono pubblicamente accessibili. Inoltre, utilizza XtraDB in sostituzione del motore di storage InnoDB e ha introdotto ulteriori ottimizzazioni per garantire un aumento delle performance.
+Questo motore è compatibile al 100% ed è stato progettato per essere più "libero" del suo fratello maggiore MySQL. Contrariamente alla versione di Oracle, tutti i bug e la roadmap sono pubblicamente accessibili.
 
 **Scopri come creare e gestire i tuoi database MySQL o MariaDB**
 
 ## Prerequisiti
 
-- Disporre di una [istanza Web Cloud Databases](https://www.ovh.it/cloud/cloud-databases/){.external} (inclusa in un'offerta di[hosting web performance](https://www.ovhcloud.com/fr/web-hosting/)
+- Disporre di una [istanza Web Cloud Databases](https://www.ovhcloud.com/it/web-cloud/databases/){.external} (inclusa in un'offerta di[hosting web performance](https://www.ovhcloud.com/fr/web-hosting/)
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 - Consulta la guida [all'avvio di Web Cloud Databases](/pages/web/clouddb/starting_with_clouddb)
 
@@ -122,7 +120,7 @@ cat nome_database.sql | mysql --host=server --user=utente --port=porta --passwor
 
 ## Per saperne di più
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
 
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
 
