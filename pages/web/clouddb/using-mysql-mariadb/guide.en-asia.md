@@ -1,10 +1,8 @@
 ---
 title: Getting started with MySQL and MariaDB
 excerpt: Using Your Databases
-updated: 2023-02-15
+updated: 2023-07-26
 ---
-
-**Last updated 15rd February 2023**
 
 ## Objective
 
@@ -20,13 +18,13 @@ This is an open-source engine, whose parent company is Oracle.
 
 MariaDB is a derivative (fork) of MySQL.
 
-This engine is 100% compatible, and is "freer" than its sibling MySQL. All the bugs and roadmaps are freely accessible, unlike the Oracle version. In addition, the storage database InnoDB has been replaced by XtraDB and other optimisations, promising performance gains.
+This engine is 100% compatible, and is "freer" than its sibling MySQL. All the bugs and roadmaps are freely accessible, unlike the Oracle version.
 
 **Find out how to create and manage your MySQL or MariaDB databases**
 
 ## Requirements
 
-- A [Web Cloud Databases instance](https://www.ovh.ie/cloud-databases/){.external} (included in a [performance web hosting plan](https://www.ovhcloud.com/asia/web-hosting/)).
+- A [Web Cloud Databases instance](https://www.ovhcloud.com/asia/web-cloud/databases/){.external} (included in a [performance web hosting plan](https://www.ovhcloud.com/asia/web-hosting/)).
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia){.external}.
 - You need to have read the [Web Cloud Databases startup guide](/pages/web/clouddb/starting_with_clouddb).
 
@@ -118,7 +116,7 @@ cat database_name.sql | mysql --host=server --user=user --port=port --password=p
 
 ## Go further
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/asia/directory/).
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/asia/support-levels/).
 

@@ -1,10 +1,8 @@
 ---
 title: 'Démarrez avec MySQL et MariaDB'
 excerpt: 'Utilisez vos bases de données'
-updated: 2023-02-15
+updated: 2023-07-26
 ---
-
-**Dernière mise à jour le 15/02/2023**
 
 ## Objectif
 
@@ -20,13 +18,13 @@ Ce moteur est open source et sa maison mère n'est autre qu'Oracle.
 
 MariaDB est un dérivé (fork) du système de gestion de bases de données MySQL.
 
-Ce moteur est 100% compatible, et se veut plus "libre" que sa grande sœur MySQL. Tous les bugs et roadmaps sont librement accessibles, contrairement à la version d'Oracle. En plus de cela, le moteur de stockage InnoDB est remplacé par XtraDB et d'autres optimisations promettent des gains en performances.
+Ce moteur est 100% compatible, et se veut plus "libre" que sa grande sœur MySQL. Tous les bugs et roadmaps sont librement accessibles, contrairement à la version d'Oracle.
 
 **Découvrez comment créer et gérer vos bases de données MySQL ou MariaDB**
 
 ## Prérequis
 
-- Disposer d'une [instance Web Cloud Databases](https://www.ovh.com/fr/cloud/cloud-databases/)(incluse dans une offre d'[hébergement web performance](https://www.ovhcloud.com/fr/web-hosting/))
+- Disposer d'une [instance Web Cloud Databases](https://www.ovhcloud.com/fr/web-cloud/databases/) (incluse dans une offre d'[hébergement web performance](https://www.ovhcloud.com/fr/web-hosting/))
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 - Avoir consulté le [guide de démarrage de Web Cloud Databases](/pages/web/clouddb/starting_with_clouddb)
 
@@ -118,7 +116,7 @@ cat nom_de_la_base.sql | mysql --host=serveur --user=utilisateur --port=port --p
 
 ## Aller plus loin
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
 

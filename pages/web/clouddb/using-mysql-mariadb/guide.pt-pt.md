@@ -1,14 +1,12 @@
 ---
 title: Comecar com MySQL e MariaDB
 excerpt: Utilize as suas bases de dados
-updated: 2023-02-15
+updated: 2023-07-26
 ---
 
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
-
-**Última atualização: 15/02/2023**
 
 ## Objetivo
 
@@ -24,13 +22,13 @@ Este motor é open source, e a sua case mãe é nada mais nada menos que a Oracl
 
 A MariaDB é uma derivação (fork) do sistema de gestão de bases de dados MySQL.
 
-Este motor é 100% compatível, e é mais "livre" que o seu irmão mais velho MySQL. Todos os bugs e roadmaps estão acessíveis gratuitamente, ao contrário da versão da Oracle. Além disso, o motor de armazenamento InnoDB é substituído pela XtraDB e outras otimizações que prometem ganhos de performances.
+Este motor é 100% compatível, e é mais "livre" que o seu irmão mais velho MySQL. Todos os bugs e roadmaps estão acessíveis gratuitamente, ao contrário da versão da Oracle.
 
 **Descubra como criar e gerir as suas bases de dados MySQL ou MariaDB**
 
 ## Pre-requisitos
 
-- Dispor de uma [instância Web Cloud Databases](https://www.ovh.pt/cloud/cloud-databases/){.external} (incluída numa oferta de [alojamento web performance](https://www.ovhcloud.com/pt/web-hosting/)
+- Dispor de uma [instância Web Cloud Databases](https://www.ovhcloud.com/pt/web-cloud/databases/){.external} (incluída numa oferta de [alojamento web performance](https://www.ovhcloud.com/pt/web-hosting/)
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
 - Consultar o [guia de arranque do Web Cloud Databases](/pages/web/clouddb/starting_with_clouddb)
 
@@ -122,7 +120,7 @@ cat nome_da_base.sql | mysql --host=servidor --user=utilizador --port=port --pas
 
 ## Quer saber mais?
 
-Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/).
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
 

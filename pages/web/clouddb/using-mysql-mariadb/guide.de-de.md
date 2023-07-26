@@ -1,14 +1,12 @@
 ---
 title: Erste Schritte mit MySQL und MariaDB
 excerpt: Verwendung Ihrer Datenbanken
-updated: 2023-02-15
+updated: 2023-07-26
 ---
 
 > [!primary]
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
 >
-
-**Letzte Aktualisierung am 15.02.2023**
 
 ## Ziel
 
@@ -24,7 +22,7 @@ Das System ist eine Open-Source-Software von Oracle.
 
 MariaDB ist durch eine Abspaltung (Fork) von dem Datenbankverwaltungssystem MySQL entstanden.
 
-Das System ist 100% kompatibel und gilt insgesamt als „freier“ als das originäre MySQL. Im Gegensatz zu dem Verwaltungssystem von Oracle sind alle Bug Fixes und Roadmaps frei erhältlich. Außerdem wurde die Storage-Engine InnoDB durch XtraDB ersetzt, was neben anderen Verbesserungen die Performance weiter erhöht.
+Das System ist 100% kompatibel und gilt insgesamt als „freier“ als das originäre MySQL. Im Gegensatz zu dem Verwaltungssystem von Oracle sind alle Bug Fixes und Roadmaps frei erhältlich.
 
 **Diese Anleitung erklärt, wie Sie Ihre MySQL oder MariaDB Datenbanken erstellen und verwalten.**
 
