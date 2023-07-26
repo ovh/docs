@@ -45,7 +45,7 @@ You can now enter the 4 fields “Key Tag”, “Flag”, “Algorithm”, “Pu
 
 ### Step 1: Access the domain name management <a name="step1"></a>
 
-To activate the **DNSSEC** solution for your domain name, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external} then go to the `Web Cloud`{.action} section. In the left-hand column, click `Domain names`{.action} , then choose the domain name concerned from the list.
+To activate the **DNSSEC** solution for your domain name, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external} then go to the `Web Cloud`{.action} section. In the left-hand column, click `Domain names`{.action}, then choose the domain name concerned from the list.
 
 The page that appears will display general information about the service. 
 
