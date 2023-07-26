@@ -67,7 +67,7 @@ With the activation button above the mention `Secured Delegation - DNSSEC`{.acti
 >
 > Furthermore, if you later want to change the DNS servers associated with your domain name, the DNS servers will not be modified on the OVHcloud side until the **DNSSEC** has been disabled. After this, an additional period of **24** to **48** hours will be required for the DNS propagation of the modification.
 >
-> In total, the modification of a domain name’s DNS servers with the **DNSSEC** active solution will be fully effective after **48** at **72** hours.
+> In total, the modification of a domain name’s DNS servers with the **DNSSEC** active solution will be fully effective after **48** to **72** hours.
 >
 
 ## Go further
