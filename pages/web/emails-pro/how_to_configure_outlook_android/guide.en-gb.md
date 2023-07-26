@@ -139,7 +139,7 @@ For the **POP incoming mail server** section:
  - **Port**: enter the port number **995**;
  - **Security type**: Select **SSL/TLS** security from the dropdown list.
  - **POP username**: Enter the email address you would like to configure
- - **POP password**: enter the password to access the email address you want to configure.
+ - **POP password**: Enter the password to access the email address you want to configure.
 
 For the **SMTP Outgoing Mail Server** section:
 
