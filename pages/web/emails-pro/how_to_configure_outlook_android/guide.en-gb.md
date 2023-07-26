@@ -36,7 +36,7 @@ Get the name of the Email Pro server that appears below the `Webmail`{.action} e
 
 > [!warning]
 >
-> Get the **correct name** of the Email Pro server where the email address you want to configure is located. It may vary depending on the duration of your Email Pro solution (pro1.mail.ovh.net, pro2.mail.ovh.net, etc.).
+> Make sure to retrieve the **correct name** of the Email Pro server where the email address you want to configure is located. It may vary depending on the duration of your Email Pro solution (pro1.mail.ovh.net, pro2.mail.ovh.net, etc.).
 > 
 
 In the `Email accounts`{.action} tab of your *Email Pro* platform, a table will be displayed with your Email Pro address(es).
