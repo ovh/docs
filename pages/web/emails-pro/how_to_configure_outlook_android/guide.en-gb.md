@@ -103,7 +103,7 @@ Then fill in the various forms with the following information.
 
 For the **IMAP incoming mail server** section:
 
- - **IMAP host name**: Enter the name of your Email Pro server retrieved earlier in [step 1](#step1): (examples: *pro1.mail.ovh.net*, *pro2.mail.ovh.net*, etc.);
+ - **IMAP host name**: Enter the name of your Email Pro server previously retrieved in [step 1](#step1): (examples: *pro1.mail.ovh.net*, *pro2.mail.ovh.net*, etc.);
  - **Port**: Enter the port number **993**;
  - **Security type**: Select **SSL/TLS** security from the dropdown list.
  - **IMAP username**: Enter the email address you would like to configure
