@@ -147,7 +147,7 @@ For the **SMTP Outgoing Mail Server** section:
  - **Port**: Enter the port number **587**;
  - **Security type**: Select **StartTls** security from the dropdown list.
  - **SMTP username**: Enter the email address you would like to configure
- - **SMTP password**: enter the password to access the email address you want to configure.
+ - **SMTP password**: Enter the password to access the email address you want to configure.
 
 Then make sure that all the settings you have entered match the above, and click the `V`{.action} icon in the top right-hand corner of your screen.
 
