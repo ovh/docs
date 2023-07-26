@@ -1,14 +1,12 @@
 ---
 title: "Fazer evoluir a sua oferta de alojamento web"
 excerpt: "Saiba como alterar a fórmula de subscrição da sua oferta de alojamento OVHcloud"
-updated: 2023-04-19
+updated: 2023-07-16
 ---
 
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
-
-**Última atualização: 19/04/2023**
 
 ## Objetivo
 
@@ -27,7 +25,7 @@ A sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&f
 >
 > **Antes** de alterar a sua subscrição atual, verifique se tem alguma destas questões:
 >
-> - [Como fazer evoluir a minha oferta gratuita Start 10M para uma oferta de alojamento web?](#start10m)
+> - [Como fazer evoluir a minha oferta alojamento gratuito 100M para uma oferta de alojamento web?](#start10m)
 > - [Como beneficiar de um ganho de desempenho temporário na minha oferta de alojamento Performance?](#boost)
 > - [Vou perder o tempo que resta na minha oferta de alojamento atual quando mudar de oferta?](#billing)
 > - [É possível mudar a minha oferta atual para uma oferta inferior?](#checks)
@@ -52,13 +50,9 @@ De seguida, selecione a sua nova subscrição e a sua duração. Valide os contr
 > Deverá **primeiro** fazer evoluir o seu alojamento a partir da fórmula *Performance 2* para a oferta *Performance 1* e **depois** para a oferta *Pro*.
 >
 
-#### 1 - Número de sites
+Antes de realizar a mudança para um jogo inferior, verifique os 6 elementos seguintes:
 
-A oferta [Kimsufi Web](https://www.ovhcloud.com/pt/web-hosting/old-web-hosting-offers/) não permite ter mais do que um nome de domínio no [multisite](/pages/web/hosting/multisites_configure_multisite) do seu alojamento.
-
-Antes de passar da oferta [Perso](https://www.ovhcloud.com/pt/web-hosting/personal-offer/) à oferta [Kimsufi Web](https://www.ovhcloud.com/pt/web-hosting/old-web-hosting-offers/), verifique que o seu alojamento inclui apenas um site.
-
-#### 2 - Bases de dados Start SQL
+#### 1 - Bases de dados Start SQL
 
 Antes de passar o seu alojamento numa oferta inferior, certifique-se de que a nova oferta inclui suficientes [bases de dados](https://www.ovhcloud.com/pt/web-hosting/options/start-sql/). Verifique também que têm tamanhos suficientes.
 
@@ -68,7 +62,7 @@ No seguimento da eliminação de dados nas suas bases de dados, pense em recalcu
 
 ![quota](images/quota.png){.thumbnail}
 
-#### 3 - Web Cloud Databases
+#### 2 - Web Cloud Databases
 
 Se utiliza a oferta [Web Cloud Databases](/pages/web/clouddb/starting_with_clouddb#ativacao-do-seu-servidor-clouddb-incluido-com-o-seu-plano-de-alojamento-web) incluída com o seu alojamento [Performance](https://www.ovhcloud.com/pt/web-hosting/performance-offer/) e deseja migrar o seu alojamento para uma oferta [Pro](https://www.ovhcloud.com/pt/web-hosting/professional-offer/), aceda à parte `Alojamentos`{.action} da sua Área de Cliente.<br>
 Clique no botão `...`{.action} na parte `Bases de dados privada`{.action} depois `Desassociar`{.action}.
@@ -82,7 +76,7 @@ Se não deseja conservar estes dados, pode também eliminar o seu SQL privado an
 1. Faça o backup dos seus dados seguindo as instruções deste [guia](/pages/web/clouddb/save-export-on-database-server).<br>
 2. Elimine o seu servidor Web Cloud Databases através da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Para isso, clique no canto superior direito no seu nome e depois em `Gestão dos serviços`{.action}. A seguir, clique no botão `...`{.action} à direita da linha em questão e depois `Eliminar o meu alojamento SQL privado`{.action}.
 
-#### 4 - Espaço FTP
+#### 3 - Espaço FTP
 
 Antes de passar o seu alojamento numa oferta inferior, certifique-se de que a nova oferta tem espaço de [armazenamento FTP suficiente](/pages/web/hosting/ftp_connection) para que os ficheiros do seu alojamento atual possam ser importados.
 
@@ -90,7 +84,7 @@ A quota utilizada no seu alojamento FTP está visível na secção `Alojamentos`
 
 ![ftp](images/ftp.png){.thumbnail}
 
-#### 5 - Endereços de e-mail
+#### 4 - Endereços de e-mail
 
 Verifique também que a nova oferta inclui um número suficiente de endereços de e-mail disponíveis. Caso contrário, elimine endereços supérfluos, depois de os ter [guardado](/pages/web/emails/manual_email_migration), se necessário.
 
@@ -98,15 +92,15 @@ Se pretender manter o mesmo número de caixas de correio antes de passar o seu a
 
 ![mxplan](images/mxplan.png){.thumbnail}
 
-#### 6 - Mailing lists
+#### 5 - Mailing lists
 
-A funcionalidade [Mailing lists](/pages/web/emails/feature_mailing_list) está disponível como opção nos alojamentos [Perso](https://www.ovhcloud.com/pt/web-hosting/personal-offer/) e [Kimsufi Web](https://www.ovhcloud.com/pt/web-hosting/old-web-hosting-offers/).
+A funcionalidade [Mailing lists](/pages/web/emails/feature_mailing_list) está disponível como opção nos alojamentos [Perso](https://www.ovhcloud.com/pt/web-hosting/personal-offer/).
 
 Para passar o seu alojamento numa oferta [Perso](https://www.ovhcloud.com/pt/web-hosting/personal-offer/), deverá eliminar as mailing lists ou encomendar uma oferta de e-mail que inclua esta funcionalidade (**MX Plan 100** ou **MX Plan Full**) a partir do seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 
 Na parte `E-mails`{.action}, selecione o serviço em causa e clique em `...`{.action} à direita de `Oferta`. Finalmente, clique em `Mudar de oferta`{.action}.
 
-#### 7 - Utilizadores FTP
+#### 6 - Utilizadores FTP
 
 Antes de migrar o seu alojamento para uma oferta inferior, certifique-se de que a nova oferta inclui um número suficiente de utilizadores FTP.
 
@@ -122,9 +116,9 @@ Depois de verificar estes 7 elementos, pode realizar a sua [alteração da ofert
 
 ### Casos especiais
 
-#### Possui uma oferta Start 10M <a name="start10m"></a>
+#### Possui uma oferta alojamento gratuito 100M <a name="start10m"></a>
 
-No âmbito de uma alteração da oferta [Start10M](/pages/web/hosting/activate_start10m), apenas [a oferta Perso](https://www.ovhcloud.com/pt/web-hosting/personal-offer/) ser-lhe-á proposta. No entanto, após uma mudança para a oferta Perso, poderá fazer evoluir esta última para o conjunto das nossas [ofertas de alojamento Web](https://www.ovhcloud.com/pt/web-hosting/).
+No âmbito de uma alteração da oferta [Alojamento gratuito 100M](/pages/web/hosting/activate_start10m), apenas [a oferta Perso](https://www.ovhcloud.com/pt/web-hosting/personal-offer/) ser-lhe-á proposta. No entanto, após uma mudança para a oferta Perso, poderá fazer evoluir esta última para o conjunto das nossas [ofertas de alojamento Web](https://www.ovhcloud.com/pt/web-hosting/).
 
 Siga [estas instruções](#modify) para realizar a alteração da oferta.
 

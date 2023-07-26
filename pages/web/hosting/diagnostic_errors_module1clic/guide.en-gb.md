@@ -48,7 +48,7 @@ In the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&fro
 
 ![upgrade_hosting](images/upgrade_hosting.png){.thumbnail}
 
-With the [Professional](https://www.ovhcloud.com/en-gb/web-hosting/professional-offer/) and [Performance](https://www.ovhcloud.com/en-gb/web-hosting/performance-offer/) offers, you can create up to three additional 1-click modules. **Performance** hosting plans also allow you to enable a [Web Cloud Databases](https://www.ovh.co.uk/cloud/cloud-databases/) for free.
+With the [Pro](https://www.ovhcloud.com/en-gb/web-hosting/professional-offer/) and [Performance](https://www.ovhcloud.com/en-gb/web-hosting/performance-offer/) offers, you can create up to three additional 1-click modules. **Performance** hosting plans also allow you to enable a [Web Cloud Databases](https://www.ovh.co.uk/cloud/cloud-databases/) for free.
 
 #### Solution 2: delete an unused database <a name="deleteDB"></a>
 

@@ -16,7 +16,7 @@ Tramite l’opzione “Regole Posta in arrivo” è possibile creare una serie d
 
 ## Prerequisiti
 
-- Disporre di una soluzione di posta elettronica OVHcloud attiva (**MX Plan**, disponibile nell'ambito delle nostre offerte di [hosting Web](https://www.ovhcloud.com/it/web-hosting/), inclusa in un [hosting gratuito Start10M](https://www.ovhcloud.com/it/domains/free-web-hosting/) oppure ordinata separatamente con una soluzione indipendente; [**Hosted Exchange**](https://www.ovhcloud.com/it/emails/hosted-exchange/)o ancora [**Email Pro**](https://www.ovhcloud.com/it/emails/email-pro/))
+- Disporre di una soluzione di posta elettronica OVHcloud attiva (**MX Plan**, disponibile nell'ambito delle nostre offerte di [hosting Web](https://www.ovhcloud.com/it/web-hosting/), inclusa in un [Hosting gratuito 100M](https://www.ovhcloud.com/it/domains/free-web-hosting/) oppure ordinata separatamente con una soluzione indipendente; [**Hosted Exchange**](https://www.ovhcloud.com/it/emails/hosted-exchange/)o ancora [**Email Pro**](https://www.ovhcloud.com/it/emails/email-pro/))
 - Disporre delle credenziali di accesso dell’indirizzo email da configurare
 
 

@@ -40,7 +40,7 @@ Para garantizar una buena calidad de servicio para todos y facilitar el envío d
 
 En un período de 3600 segundos (es decir, 1 hora), su plan de hosting le permitirá enviar los siguientes límites de correo:
 
-|Solución|Start 10M|Perso|Pro|Performance|
+|Solución|Alojamiento gratuito 100M|Personal|Pro|Performance|
 |---|---|---|---|---|
 |Cantidad máxima de envío de correo por hora y servicio|10|100|200|2000|
 

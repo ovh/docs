@@ -1,10 +1,8 @@
 ---
 title: "Faire évoluer son offre d'hébergement web"
 excerpt: "Découvrez comment modifier la formule d'abonnement de votre offre d'hébergement OVHcloud"
-updated: 2023-04-18
+updated: 2023-07-16
 ---
-
-**Dernière mise à jour le 18/04/2023**
 
 ## Objectif
 
@@ -23,7 +21,7 @@ Votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from
 >
 > **Avant** tout changement sur votre abonnement actuel, vérifiez si vous êtes concerné par l'une de ces questions :
 >
-> - [Comment faire évoluer mon offre gratuite Start 10M vers une offre d'hébergement web ?](#start10m)
+> - [Comment faire évoluer mon hébergement gratuit 100M vers une offre d'hébergement web ?](#start10m)
 > - [Comment bénéficier d'un gain de performance temporaire sur mon offre d'hébergement performance ?](#boost)
 > - [Vais-je perdre le temps restant sur mon offre d'hébergement actuelle lors de mon changement d'offre ?](#billing)
 > - [Est-il possible de changer mon offre actuelle vers une offre inférieure ?](#checks)
@@ -47,15 +45,9 @@ Sélectionnez ensuite votre nouvel abonnement, ainsi que sa durée. Validez les 
 > Par exemple, vous ne pourrez pas passer d'une formule *Performance 2* à une formule *Pro* en une seule opération.
 > Vous devrez **d'abord** faire évoluer votre hébergement depuis la formule *Performance 2* vers l'offre *Performance 1* **puis** vers l'offre *Pro*.
 
-Avant de réaliser votre changement vers une gamme inférieure, vérifiez les 7 éléments suivants:
+Avant de réaliser votre changement vers une gamme inférieure, vérifiez les 6 éléments suivants:
 
-#### 1 - Nombre de sites
-
-L'offre [Kimsufi Web](https://www.kimsufi.com/fr/hosting.xml) ne permet pas d'avoir plus d'un nom de domaine sur le [multisite](/pages/web/hosting/multisites_configure_multisite) de votre hébergement.
-
-Avant de passer de l'offre [Perso](https://www.ovhcloud.com/fr/web-hosting/personal-offer/) à l'offre [Kimsufi Web](https://www.kimsufi.com/fr/hosting.xml), vérifiez donc que votre hébergement ne comporte qu'un seul site.
-
-#### 2 - Bases de données Start SQL
+#### 1 - Bases de données Start SQL
 
 Avant de passer votre hébergement sur une offre inférieure, assurez-vous que la nouvelle offre comporte assez de [bases de données](https://www.ovhcloud.com/fr/web-hosting/options/start-sql/). Vérifiez aussi qu'elles sont de tailles suffisantes.
 
@@ -65,7 +57,7 @@ Suite à la suppression de données sur vos bases, pensez à recalculer le quota
 
 ![quota](images/quota.png){.thumbnail}
 
-#### 3 - Web Cloud Databases
+#### 2 - Web Cloud Databases
 
 Si vous utilisez l'offre [Web Cloud Databases](/pages/web/clouddb/starting_with_clouddb#activation-de-votre-serveur-clouddb-inclus-avec-votre-offre-dhebergement-web) incluse avec votre hébergement [Performance](https://www.ovhcloud.com/fr/web-hosting/performance-offer/) et que vous souhaitez passer votre hébergement sur une offre [Pro](https://www.ovhcloud.com/fr/web-hosting/professional-offer/), rendez-vous dans la partie `Hébergements`{.action} de votre espace client.<br>
 Cliquez sur le bouton `...`{.action} dans la partie `Bases de données privée`{.action} puis sur `Délier`{.action}.
@@ -79,7 +71,7 @@ Si vous ne souhaitez pas conserver ces données, vous pouvez aussi supprimer vot
 1. Sauvegardez vos données en suivant les instructions de ce [guide](/pages/web/clouddb/save-export-on-database-server#en-pratique).<br>
 2. Supprimez votre serveur Web Cloud Databases via votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Pour cela, cliquez en haut à droite sur votre nom puis sur `Gestion des services`{.action}. Cliquez ensuite sur le bouton `...`{.action} à droite de la ligne concernée puis sur `Supprimer mon hébergement SQL privé`{.action}.
 
-#### 4 - Espace FTP
+#### 3 - Espace FTP
 
 Avant de passer votre hébergement sur une offre inférieure, assurez-vous que la nouvelle offre propose suffisamment [d'espace de stockage FTP](/pages/web/hosting/ftp_connection) pour que l'import des fichiers de votre hébergement actuel soit possible.
 
@@ -87,7 +79,7 @@ Le quota utilisé sur votre hébergement FTP est visible dans la partie `Héberg
 
 ![ftp](images/ftp.png){.thumbnail}
 
-#### 5 - Adresses e-mail
+#### 4 - Adresses e-mail
 
 Vérifiez également que votre nouvelle offre propose un nombre suffisant d'adresses e-mail disponibles. Dans le cas contraire, supprimez les adresses superflues, après les avoir [sauvegardées](/pages/web/emails/manual_email_migration) si nécessaire.
 
@@ -95,15 +87,15 @@ Si vous souhaitez conserver le même nombre de boîtes e-mail, avant de passer v
 
 ![mxplan](images/mxplan.png){.thumbnail}
 
-#### 6 - Mailing lists
+#### 5 - Mailing lists
 
-La fonctionnalité [Mailing lists](/pages/web/emails/feature_mailing_list) est en option sur les hébergements [Perso](https://www.ovhcloud.com/fr/web-hosting/personal-offer/) et [Kimsufi Web](https://www.kimsufi.com/fr/hosting.xml).
+La fonctionnalité [Mailing lists](/pages/web/emails/feature_mailing_list) est en option sur les hébergements [Perso](https://www.ovhcloud.com/fr/web-hosting/personal-offer/).
 
 Pour passer votre hébergement sur une offre [Perso](https://www.ovhcloud.com/fr/web-hosting/personal-offer/), vous devrez donc dans un premier temps en supprimer les mailing lists ou commander une offre de messagerie comprenant cette fonctionnalité (**MX Plan 100** ou **MX Plan Full**) depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 
 Dans la partie `Emails`{.action} de votre espace client, sélectionnez l'offre concernée puis cliquez sur `...`{.action} à droite de `Offre`{.action}. Cliquez enfin sur `Changer d'offre`{.action}.
 
-#### 7 - Utilisateurs FTP
+#### 6 - Utilisateurs FTP
 
 Avant de basculer votre hébergement sur une offre inférieure, assurez-vous que la nouvelle offre propose suffisamment d'utilisateurs FTP.
 
@@ -119,9 +111,9 @@ Une fois ces 7 éléments vérifiés, vous pouvez réaliser votre [changement d'
 
 ### Cas particuliers
 
-#### Vous possédez une offre Start 10M <a name="start10m"></a>
+#### Vous possédez une offre d'hébergement gratuit 100M <a name="start10m"></a>
 
-Dans le cadre d'un changement de l'offre [Start10M](/pages/web/hosting/activate_start10m), seule [l'offre Perso](https://www.ovhcloud.com/fr/web-hosting/personal-offer/) vous sera proposée. Néanmoins, après un changement vers l'offre Perso, il vous sera possible de faire évoluer cette dernière vers l'ensemble de nos [offres d'hébergement Web](https://www.ovhcloud.com/fr/web-hosting/).
+Dans le cadre d'un changement de l'offre d'[hébergement gratuit 100M](/pages/web/hosting/activate_start10m), seule [l'offre Perso](https://www.ovhcloud.com/fr/web-hosting/personal-offer/) vous sera proposée. Néanmoins, après un changement vers l'offre Perso, il vous sera possible de faire évoluer cette dernière vers l'ensemble de nos [offres d'hébergement Web](https://www.ovhcloud.com/fr/web-hosting/).
 
 Suivez [ces instructions](#modify) pour réaliser votre changement d'offre.
 

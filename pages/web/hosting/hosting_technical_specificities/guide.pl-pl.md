@@ -40,7 +40,7 @@ Aby zagwarantować dobrą jakość usługi dla wszystkich i uprościć wysyłkę
 
 W ciągu 3600 sekund (czyli 1 godzina) Twoja oferta hostingowa pozwoli Ci na wysłanie następujących kont e-mail:
 
-|Oferty|Start 10M|Perso|Pro|Performance|
+|Oferty|Darmowy hosting 100M|Perso|Pro|Performance|
 |---|---|---|---|---|
 |Maksymalna ilość wysyłki e-maili na godzinę i na usługę|10|100|200|2000|
 

@@ -36,7 +36,7 @@ Pour garantir une bonne qualité de service pour tous et fluidifier l'envoi de v
 
 Sur une période glissante de 3600 secondes (soit 1 heure), votre offre d'hébergement vous permettra d'envoyer les quotas d'e-mails suivants :
 
-|Offres|Start 10M|Kimsufi Web|Perso|Pro|Performance|
+|Offres|Hébergement gratuit 100M|Starter|Perso|Pro|Performance|
 |---|---|---|---|---|---|
 |Quantité maximale d'envoi d'e-mails par heure et par service|10|20|100|200|2000|
 

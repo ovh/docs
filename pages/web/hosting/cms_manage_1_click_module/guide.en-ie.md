@@ -20,7 +20,7 @@ The 1-click modules are a quick and easy way to install an online website creati
 
 ## Requirements
 
-- An [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/) that allows you to install a 1-click module (only the free [Start10M plan](/pages/web/hosting/activate_start10m) does not provide this feature)
+- An [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/) that allows you to install a 1-click module (only the free [100M free hosting](/pages/web/hosting/activate_start10m) does not provide this feature)
 - A 1-click module on your web hosting plan (If you did not install one yet, follow the instructions in this [guide](/pages/web/hosting/cms_install_1_click_modules))
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
 
@@ -137,7 +137,7 @@ Then click on the `...`{.action} button to the right of the line related to your
 >
 > Deleting your 1-click module **will not automatically delete its database**. If you launch the installation of a new CMS without having previously deleted the database from the previous one and if your hosting plan does not allow the automatic creation of another database, the message "[An error has occurred loading the information (You need at least one free database)](/pages/web/hosting/diagnostic_errors_module1clic#an-error-has-occurred-loading-the-information-you-need-at-least-one-free-database)" will appear in your Control Panel.
 >
-> If you have a [Personal Hosting](https://www.ovhcloud.com/en-ie/web-hosting/personal-offer/) subscription or if you have already created all four databases of your [Professional Hosting](https://www.ovhcloud.com/en-ie/web-hosting/professional-offer/) or [Performance Hosting](https://www.ovhcloud.com/en-ie/web-hosting/performance-offer/), you will need to delete the database identified in [step 1](#step1) **BEFORE** creating a new 1-click module.
+> If you have a [Personal Hosting](https://www.ovhcloud.com/en-ie/web-hosting/personal-offer/) subscription or if you have already created all four databases of your [Pro Hosting](https://www.ovhcloud.com/en-ie/web-hosting/professional-offer/) or [Performance Hosting](https://www.ovhcloud.com/en-ie/web-hosting/performance-offer/), you will need to delete the database identified in [step 1](#step1) **BEFORE** creating a new 1-click module.
 >
 
 To complete the removal of your module, in the `Web Cloud`{.action}, `Hosting plans`{.action} sections, within the relevant hosting plan of your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), go to the `Databases`{.action} tab. Next, click on the `...`{.action} button to the right of the line concerning your database and on the `Delete database`{.action} button.

@@ -19,7 +19,7 @@ En caso de ausencia en su despacho, puede poner en marcha un contestador email q
 
 ## Requisitos
 
-- Tener una solución MX Plan. (disponible en: un [plan de hosting](https://www.ovhcloud.com/es-es/web-hosting/){.external}, el [alojamiento gratuito Start 10M](https://www.ovhcloud.com/es-es/domains/free-web-hosting/){.external} incluido con un dominio (previamente activado) o el MX Plan contratado por separado.
+- Tener una solución MX Plan. (disponible en: un [plan de hosting](https://www.ovhcloud.com/es-es/web-hosting/){.external}, el [Alojamiento gratuito 100M](https://www.ovhcloud.com/es-es/domains/free-web-hosting/){.external} incluido con un dominio (previamente activado) o el MX Plan contratado por separado.
 - Haber iniciado sesión en el [Panel de configuración de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
 
 ## Procedimiento

@@ -155,7 +155,7 @@ php crypt.php
 
 > [!warning]
 >
-> Per motivi di sicurezza, si raccomanda l'utilizzo di SSH. Tuttavia, se disponi di un'offerta [Kimsufi Web](https://www.kimsufi.com/it/hosting.xml) o [Personale](https://www.ovhcloud.com/it/web-hosting/personal-offer/) sulle quali l'SSH non è disponibile, puoi anche eseguire il file "crypt.php" tramite il tuo browser Web.
+> Per motivi di sicurezza, si raccomanda l'utilizzo di SSH. Tuttavia, se disponi di un'offerta **Starter** o [Personale](https://www.ovhcloud.com/it/web-hosting/personal-offer/) sulle quali l'SSH non è disponibile, puoi anche eseguire il file "crypt.php" tramite il tuo browser Web.
 >
 > Inserisci questo URL: `https://domain.tld/crypt.php` en che modifica `domain.tld` con il tuo dominio. direttamente nella barra degli indirizzi del browser.
 >

@@ -14,7 +14,7 @@ Every OVHcloud email account has a dedicated storage space. By managing your sto
 
 ## Requirements
 
-- A preconfigured OVHcloud email solution, such as [**Hosted Exchange**](https://www.ovhcloud.com/en-ie/emails/hosted-exchange/), [**Email Pro**](https://www.ovhcloud.com/en-ie/emails/email-pro/)) or **MX Plan** (available with a [web hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/), a [free Start 10M hosting plan](https://www.ovhcloud.com/en-ie/domains/free-web-hosting/), or ordered separately)
+- A preconfigured OVHcloud email solution, such as [**Hosted Exchange**](https://www.ovhcloud.com/en-ie/emails/hosted-exchange/), [**Email Pro**](https://www.ovhcloud.com/en-ie/emails/email-pro/)) or **MX Plan** (available with a [web hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/), a [100M free hosting](https://www.ovhcloud.com/en-ie/domains/free-web-hosting/), or ordered separately)
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
 - Login credentials for the email account concerned
 
@@ -22,7 +22,7 @@ Every OVHcloud email account has a dedicated storage space. By managing your sto
 >
 > **Special cases**
 >
-> - Regarding the free Start 10M hosting solution, you will need to activate it beforehand in order to create an email account. You can do this from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) by going to the domain name concerned.
+> - Regarding the 100M free hosting solution, you will need to activate it beforehand in order to create an email account. You can do this from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) by going to the domain name concerned.
 > - For [web hosting plans](https://www.ovhcloud.com/en-ie/web-hosting/), you will need to activate your MX Plan before continuing with this guide. To do this, please refer to our guide on [Activating the email addresses included in your web hosting plan](/pages/web/hosting/activate-email-hosting).
 
 ## Instructions <a name="instructions"></a>

@@ -14,14 +14,14 @@ You have just purchased an MX Plan email solution. It allows you to benefit from
 
 ## Requirements
 
-- An MX Plan solution, available as part of our [Web Hosting plans](https://www.ovhcloud.com/en-ie/web-hosting/), the [free Start 10M hosting solution](https://www.ovhcloud.com/en-ie/domains/free-web-hosting/) included with a domain name (activated in advance), or ordered separately as a standalone solution
+- An MX Plan solution, available as part of our [Web Hosting plans](https://www.ovhcloud.com/en-ie/web-hosting/), the [100M free hosting](https://www.ovhcloud.com/en-ie/domains/free-web-hosting/) included with a domain name (activated in advance), or ordered separately as a standalone solution
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, in the `Web Cloud`{.action} section
 
 > [!primary]
 >
 > **Special cases**
 >
-> - Regarding the free Start 10M hosting solution, you will need to [activate it](/pages/web/hosting/activate_start10m) in order to create an email account. You can do this from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external} by selecting the domain name concerned.
+> - Regarding the 100M free hosting solution, you will need to [activate it](/pages/web/hosting/activate_start10m) in order to create an email account. You can do this from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external} by selecting the domain name concerned.
 > - For [Web Hosting plans](https://www.ovhcloud.com/en-ie/web-hosting/){.external}, you will need to activate your MX Plan package before continuing to follow this guide. To do this, please refer to our guide on [Activating the email addresses included in your web hosting plan](/pages/web/hosting/activate-email-hosting).
 
 ## Instructions <a name="instructions"></a>

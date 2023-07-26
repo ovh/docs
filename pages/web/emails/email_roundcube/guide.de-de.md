@@ -17,7 +17,7 @@ Mit einem OVHcloud MX Plan können Sie E-Mails über eine Software oder ein Webm
 
 ## Voraussetzungen
 
-- Sie verfügen über einen OVHcloud **MX Plan**, als E-Mail-Dienst in unseren [Webhosting-Angeboten](https://www.ovhcloud.com/de/web-hosting/) sowie in einem [kostenlosen Start10M Hosting](https://www.ovhcloud.com/de/domains/free-web-hosting/) enthalten oder separat als eigenständige Lösung bestellbar.
+- Sie verfügen über einen OVHcloud **MX Plan**, als E-Mail-Dienst in unseren [Webhosting-Angeboten](https://www.ovhcloud.com/de/web-hosting/) sowie in [Kostenloses Hosting 100M](https://www.ovhcloud.com/de/domains/free-web-hosting/) enthalten oder separat als eigenständige Lösung bestellbar.
 - Sie verfügen über die Logindaten des MX Plan E-Mail-Accounts, den Sie verwenden möchten. Weitere Informationen finden Sie in unserer Anleitung "[Erste Schritte mit MX Plan](/pages/web/emails/email_generalities)".
 
 ## In der praktischen Anwendung

@@ -18,7 +18,7 @@ Usted acaba de adquirir una solución MX Plan que permite disfrutar de direccion
 
 ## Requisitos
 
-- Tener una solución MX Plan, que está disponible disponible en un [plan de hosting](https://www.ovhcloud.com/es-es/web-hosting/), el [alojamiento gratuito Start 10M](https://www.ovhcloud.com/es-es/domains/free-web-hosting/) o la solución MX Plan.
+- Tener una solución MX Plan, que está disponible disponible en un [plan de hosting](https://www.ovhcloud.com/es-es/web-hosting/), el [Alojamiento gratuito 100M](https://www.ovhcloud.com/es-es/domains/free-web-hosting/) o la solución MX Plan.
 - Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), en la sección `Web Cloud`{.action}.
 
 ## Procedimiento <a name="instructions"></a>

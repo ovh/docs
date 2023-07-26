@@ -19,7 +19,7 @@ W przypadku Twojej nieobecności w biurze możesz utworzyć autoresponder e-mail
 
 ## Wymagania początkowe
 
-- Wykupienie usługi MX Plan. Jest ona dostępna przez: oferta [hostingu](https://www.ovhcloud.com/pl/web-hosting/){.external}, bezpłatny [hosting Start 10M](https://www.ovhcloud.com/pl/domains/free-web-hosting/){.external} zawarty w ofercie domeny (wcześniej aktywowanej) lub oferta MX Plan zamówiona oddzielnie.
+- Wykupienie usługi MX Plan. Jest ona dostępna przez: oferta [hostingu](https://www.ovhcloud.com/pl/web-hosting/){.external}, bezpłatny [Darmowy hosting 100M](https://www.ovhcloud.com/pl/domains/free-web-hosting/){.external} zawarty w ofercie domeny (wcześniej aktywowanej) lub oferta MX Plan zamówiona oddzielnie.
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 
 ## W praktyce

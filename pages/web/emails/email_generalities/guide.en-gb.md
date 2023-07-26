@@ -14,7 +14,7 @@ If you have just purchased an MX Plan solution, this means you have email addres
 
 ## Requirements
 
-- An MX plan solution, available with a [web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/), a [free Start 10M hosting plan](https://www.ovhcloud.com/en-gb/domains/free-web-hosting/), or ordered separately
+- An MX plan solution, available with a [web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/), a [100M free hosting](https://www.ovhcloud.com/en-gb/domains/free-web-hosting/), or ordered separately
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), and `Web Cloud`{.action} section
 
 ## Instructions <a name="instructions"></a>

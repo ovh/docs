@@ -1,18 +1,16 @@
 ---
 title: 'Tutorial - Criar a sua página web pessoal na OVHcloud'
-excerpt: 'Saiba como criar a primeira página num alojamento gratuito Start 10M'
-updated: 2023-02-17
+excerpt: 'Saiba como criar a primeira página num Alojamento gratuito 100M'
+updated: 2023-07-16
 ---
 
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 17/02/2023**
-
 ## Objetivo
 
-Saiba como criar a primeira página de um site num alojamento Start 10M grátis para qualquer compra de um domínio na OVHcloud.
+Saiba como criar a primeira página de um site num alojamento gratuito 100M grátis para qualquer compra de um domínio na OVHcloud.
 
 > [!warning]
 >
@@ -24,7 +22,7 @@ Saiba como criar a primeira página de um site num alojamento Start 10M grátis 
 ## Requisitos
 
 - Dispor de um [domínio](https://www.ovhcloud.com/pt/domains/)
-- Ter um serviço de [alojamento web da OVHcloud](https://www.ovhcloud.com/pt/web-hosting/) ou um [alojamento gratuito Start 10M](https://www.ovhcloud.com/pt/domains/free-web-hosting/)
+- Ter um serviço de [alojamento web da OVHcloud](https://www.ovhcloud.com/pt/web-hosting/) ou um [Alojamento gratuito 100M](https://www.ovhcloud.com/pt/domains/free-web-hosting/)
 - Ter um editor de texto (bloco de notas, TextEdit, Notepad++, etc.)
 - Ter instalado um cliente FTP (por exemplo, [Cyberduck](https://cyberduck.io/), [FileZilla](https://filezilla-project.org/download.php), etc.) para telecarregar (colocar no alojamento) os seus ficheiros no seu espaço dedicado.
 
@@ -149,7 +147,7 @@ Esta baliza é utilizada para introduzir texto ("p" para parágrafo). É possív
 <body>
     <h1>Bem-vindo à minha página pessoal</h1>
     <h2>Crie de forma rápida e fácil o seu website</h2>
-    <p>A OVHcloud propõe-lhe, na sua oferta Start 10M, gratuitamente um alojamento para qualquer compra de um nome de domínio.</p>
+    <p>A OVHcloud propõe-lhe, na sua oferta Alojamento gratuito 100M, gratuitamente um alojamento para qualquer compra de um nome de domínio.</p>
 </body>
 ```
 
@@ -164,10 +162,10 @@ Pode, em HTML, utilizar listas. Tomaremos o exemplo de listas simples, ditas nã
     <p>
         <img src="images/logo-ovhcloud.png" alt="Logo OVHcloud">
     </p>
-    <p>A OVHcloud propõe-lhe, na sua oferta Start 10M, gratuitamente um alojamento para qualquer compra de um nome de domínio.</p>
+    <p>A OVHcloud propõe-lhe, na sua oferta Alojamento gratuito 100M, gratuitamente um alojamento para qualquer compra de um nome de domínio.</p>
     <p>A oferta "Nome de domínio" compreende:</p>
     <ul>
-        <li>Alojamento Web 10 MB grátis</li>
+        <li>Alojamento Web 100 MB grátis</li>
         <li>Conta E-mail 5 GB grátis</li>
         <li>DNSSEC: proteção contra o envenenamento da cache (cache poisoning)</li>
         <li>Easy Redirect: acesso às redes sociais a partir do seu nome de domínio</li>
@@ -179,7 +177,7 @@ Pode ver o resultado no seu browser: por predefinição, os elementos das listas
 
 #### Adicionar imagens para tornar a sua página mais atraente
 
-A web é, antes de mais, um meio visual. Vamos ver nesta secção como inserir imagens no seu conteúdo. A oferta Start 10M propõe-lhe um espaço de armazenamento de 10MB. É suficiente para as suas páginas HTML e CSS, mas pode ser limitado se deseja colocar muitas imagens no seu site. Neste caso, sugerimos que subscreva uma [oferta de alojamento web da OVHcloud](https://www.ovhcloud.com/pt/web-hosting/) que lhe permita beneficiar de um maior armazenamento.
+A web é, antes de mais, um meio visual. Vamos ver nesta secção como inserir imagens no seu conteúdo. A oferta alojamento gratuito 100M propõe-lhe um espaço de armazenamento de 100MB. É suficiente para as suas páginas HTML e CSS, mas pode ser limitado se deseja colocar muitas imagens no seu site. Neste caso, sugerimos que subscreva uma [oferta de alojamento web da OVHcloud](https://www.ovhcloud.com/pt/web-hosting/) que lhe permita beneficiar de um maior armazenamento.
 
 O identificador HTML utilizado para apresentar uma imagem é o identificador `<img>`. Contrariamente às balizas que vimos anteriormente, não há abertura e encerramento deste elemento. Falamos de baliza autoferoz. São os atributos desta baliza que permitirão estabelecer a ligação entre a localização do ficheiro e o texto descritivo da imagem.
 
@@ -188,7 +186,7 @@ O identificador HTML utilizado para apresentar uma imagem é o identificador `<i
 Uma imagem de grande dimensão é uma imagem que levará tempo a ser carregada pelo seu browser, particularmente se os seus visitantes utilizam um smartphone ou um tablet ligado à rede 4 ou 5G.
 Regra geral, deve otimizar as suas imagens e limitar o seu peso. Este peso é expresso em bytes. As unidades normalmente utilizadas são os quilobytes (1 ko = 1 000 bytes) ou o megabyte (1 MB = 1 000 000 bytes). Uma imagem superior a algumas dezenas de KB é considerada pesada e merece ser otimizada. 
 
-**Exemplo**: se cada uma das suas imagens pesar 1 MB, ficará limitado a menos de 10 imagens no seu alojamento Start10M. Se conseguir reduzir o tamanho entre 50 Kg e 200 Kg, poderá apresentar até 100 Kg na sua página web.
+**Exemplo**: se as suas imagens pesarem 1 MB cada, estará limitado a menos de 100 imagens no seu alojamento gratuito de 100M. Se conseguir reduzir o tamanho das imagens para entre 50kb e 200kb, poderá apresentar até vários milhares delas na sua página Web.
 
 Alguns conselhos para que os seus ficheiros sejam o mais leves possível:
 
@@ -218,10 +216,10 @@ Vamos agora criar um novo parágrafo no qual colocaremos a imagem (neste exemplo
     <p>
         <img src="images/logo-ovhcloud.png" alt="Logo OVHcloud">
     </p>
-    <p>A OVHcloud propõe-lhe, na sua oferta Start 10M, gratuitamente um alojamento para qualquer compra de um nome de domínio.</p>
+    <p>A OVHcloud propõe-lhe, na sua oferta alojamento gratuito 100M, gratuitamente um alojamento para qualquer compra de um nome de domínio.</p>
     <p>A oferta "Nome de domínio" compreende:</p>
     <ul>
-        <li>Alojamento Web 10 MB grátis</li>
+        <li>Alojamento Web 100 MB grátis</li>
         <li>Conta E-mail 5 GB grátis</li>
         <li>DNSSEC: proteção contra o envenenamento da cache (cache poisoning)</li>
         <li>Easy Redirect: acesso às redes sociais a partir do seu nome de domínio</li>
@@ -340,10 +338,10 @@ O seu código HTML será apresentado da seguinte forma:
         <main>
             <h1>Bem-vindo à minha página pessoal</h1>
             <h2>Crie de forma rápida e fácil o seu website</h2>
-            <p>A OVHcloud propõe-lhe, na sua oferta Start 10M, gratuitamente um alojamento para qualquer compra de um nome de domínio.</p>
+            <p>A OVHcloud propõe-lhe, na sua oferta lojamento gratuito 100M, gratuitamente um alojamento para qualquer compra de um nome de domínio.</p>
             <p>A oferta "Nome de domínio" compreende:</p>
             <ul>
-                <li>Alojamento Web 10 MB grátis</li>
+                <li>Alojamento Web 100 MB grátis</li>
                 <li>Conta E-mail 5 GB grátis</li>
                 <li>DNSSEC: proteção contra o envenenamento da cache (cache poisoning)</li>
                 <li>Easy Redirect: acesso às redes sociais a partir do seu nome de domínio</li>

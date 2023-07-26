@@ -53,7 +53,7 @@ En el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager
 
 ![upgrade_hosting](images/upgrade_hosting.png){.thumbnail}
 
-Los planes [Hosting Profesional](https://www.ovhcloud.com/es/web-hosting/professional-offer/) y [Hosting Performance](https://www.ovhcloud.com/es/web-hosting/performance-offer/) permiten crear hasta tres módulos en 1 clic adicional. 
+Los planes [Hosting Pro](https://www.ovhcloud.com/es/web-hosting/professional-offer/) y [Hosting Performance](https://www.ovhcloud.com/es/web-hosting/performance-offer/) permiten crear hasta tres módulos en 1 clic adicional. 
 
 #### Solución n°2: eliminar una base de datos no utilizada <a name="delete-the-database"></a>
 

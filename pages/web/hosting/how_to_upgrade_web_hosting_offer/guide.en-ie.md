@@ -1,14 +1,12 @@
 ---
 title: Changing your web hosting plan offer
 excerpt: Find out how to change the subscription offer for your OVHcloud Web Hosting plan
-updated: 2023-04-19
+updated: 2023-07-16
 ---
-
-**Last updated 19th April 2023**
 
 ## Objective
 
-In your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), you can increase the capacity of your [web hosting offers](https://www.ovhcloud.com/en-ie/web-hosting/) to have more compute resources, storage space, databases or email accounts. Additional features such as [mailing lists](/pages/web/emails/feature_mailing_list) (from the [Professional plan](https://www.ovhcloud.com/en-ie/web-hosting/professional-offer/)) or [Private SQL](https://www.ovhcloud.com/en-ie/web-hosting/options/private-sql/) (included with the offers of the [Performance range](https://www.ovhcloud.com/en-ie/web-hosting/performance-offer/)) will also become available with a subscription upgrade.
+In your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), you can increase the capacity of your [web hosting offers](https://www.ovhcloud.com/en-ie/web-hosting/) to have more compute resources, storage space, databases or email accounts. Additional features such as [mailing lists](/pages/web/emails/feature_mailing_list) (from the [Pro plan](https://www.ovhcloud.com/en-ie/web-hosting/professional-offer/)) or [Private SQL](https://www.ovhcloud.com/en-ie/web-hosting/options/private-sql/) (included with the offers of the [Performance range](https://www.ovhcloud.com/en-ie/web-hosting/performance-offer/)) will also become available with a subscription upgrade.
 
 **Find out how to scale your OVHcloud hosting plan without any service interruptions.**
 
@@ -23,7 +21,7 @@ In your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&fr
 >
 > **Before** you make any changes to your current subscription, check to see if you have any of these questions:
 >
-> - [How do I upgrade my free Start 10M solution to a web hosting plan?](#start10m)
+> - [How do I upgrade my 100M free hosting solution to a web hosting plan?](#start10m)
 > - [How do I get a temporary performance boost on my Performance hosting plan?](#boost)
 > - [Will I waste the time remaining on my current hosting plan when I change plans?](#billing)
 > - [Can I upgrade my current plan to a lower plan?](#checks)
@@ -44,18 +42,12 @@ Then select your new subscription and its duration. Confirm the corresponding co
 > [!warning]
 >
 > You can only change your subscription to a lower range plan if it is the **immediate lower range** plan.
-> For example, you cannot switch from *Performance 2* to *Professional* in a single operation.
-> You will **first** need to downgrade your web hosting plan from the *Performance 2* plan to the *Performance 1* plan, **and then** to the *Professional* plan.
+> For example, you cannot switch from *Performance 2* to *Pro* in a single operation.
+> You will **first** need to downgrade your web hosting plan from the *Performance 2* plan to the *Performance 1* plan, **and then** to the *Pro* plan.
 
-Before you make your switch to a lower range, check the following 7 items:
+Before you make your switch to a lower range, check the following 6 items:
 
-#### 1 - Number of sites
-
-With the [Kimsufi Web](https://www.ovhcloud.com/en-ie/web-hosting/old-web-hosting-offers/) solution, you cannot have more than one domain name on your hosting plan’s [multisite](/pages/web/hosting/multisites_configure_multisite).
-
-Before you switch from the [Personal](https://www.ovhcloud.com/en-ie/web-hosting/personal-offer/) solution to the [Kimsufi Web](https://www.ovhcloud.com/en-ie/web-hosting/old-web-hosting-offers/) solution, please check that your web hosting plan only has one website.
-
-#### 2 - Start SQL databases
+#### 1 - Start SQL databases
 
 Before moving your hosting to a lower plan, please ensure that the new plan has enough [databases](https://www.ovhcloud.com/en-ie/web-hosting/options/start-sql/). Also make sure they are of sufficient size.
 
@@ -65,21 +57,21 @@ If you have deleted data from your databases, you can recalculate the quota from
 
 ![quota](images/quota.png){.thumbnail}
 
-#### 3 - Web Cloud Databases
+#### 2 - Web Cloud Databases
 
-If you are using the [Web Cloud Databases](/pages/web/clouddb/starting_with_clouddb#clouddb-server-activation-included-with-your-web-hosting-plan) solution included with your [Performance](https://www.ovhcloud.com/en-ie/web-hosting/performance-offer/) hosting plan, and you wish to switch your hosting plan to a [Professional](https://www.ovhcloud.com/en-ie/web-hosting/professional-offer/) solution, go to the `Hosting plans`{.action} section in your Control Panel.<br>
+If you are using the [Web Cloud Databases](/pages/web/clouddb/starting_with_clouddb#clouddb-server-activation-included-with-your-web-hosting-plan) solution included with your [Performance](https://www.ovhcloud.com/en-ie/web-hosting/performance-offer/) hosting plan, and you wish to switch your hosting plan to a [Pro](https://www.ovhcloud.com/en-ie/web-hosting/professional-offer/) solution, go to the `Hosting plans`{.action} section in your Control Panel.<br>
 Click the `... `{.action} button in the `Private database`{.action} section, then `Detach`{.action}.
 
 ![Web Cloud Databases](images/clouddb.png){.thumbnail}
 
 With this action, you can order a Web Cloud Databases solution independent of your *Performance* subscription. Your server data will be stored.
 
-If you do not want to keep this data, you can also delete your Private SQL before going to the *Professional* offer: 
+If you do not want to keep this data, you can also delete your Private SQL before going to the *Pro* offer: 
 
 1. Back up your data by following the instructions in this [guide](/pages/web/clouddb/save-export-on-database-server).<br>
 2. Delete your Web Cloud Databases server via your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie). To do this, click on your name in the top right-hand corner, then `Service management`{.action}. Then click on the `...`{.action} button to the right of the row concerned, then `Delete my Private SQL hosting service`{.action}.
 
-#### 4 - FTP space
+#### 3 - FTP space
 
 Before switching your hosting plan to a lower plan, please ensure that the new plan includes enough [FTP storage space](/pages/web/hosting/ftp_connection) so that you can import files from your current hosting plan.
 
@@ -87,7 +79,7 @@ The quota used on your FTP hosting plan is visible in the `Hosting plans`{.actio
 
 ![ftp](images/ftp.png){.thumbnail}
 
-#### 5 - Email accounts
+#### 4 - Email accounts
 
 Please also check that your new solution has a sufficient number of available email accounts. Otherwise, delete the extra accounts, after you have [backed up](/pages/web/emails/manual_email_migration) the contents if necessary.
 
@@ -95,15 +87,15 @@ If you would like to keep the same number of email accounts, before moving your 
 
 ![mxplan](images/mxplan.png){.thumbnail}
 
-#### 6 - Mailing lists
+#### 5 - Mailing lists
 
-The [Mailing lists](/pages/web/emails/feature_mailing_list) feature is optional on [Personal](https://www.ovhcloud.com/en-ie/web-hosting/personal-offer/) and [Kimsufi Web](https://www.ovhcloud.com/en-ie/web-hosting/old-web-hosting-offers/) hosting plans.
+The [Mailing lists](/pages/web/emails/feature_mailing_list) feature is optional on [Personal](https://www.ovhcloud.com/en-ie/web-hosting/personal-offer/) hosting plans.
 
 To set up your hosting plan on a [Personal](https://www.ovhcloud.com/en-ie/web-hosting/personal-offer/) solution, you will need to delete the mailing lists first, or order an email solution with this feature (**MX Plan 100** or **MX Plan Full**) from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie).
 
 In the `Emails`{.action} section of your Control Panel, select the solution concerned, then click on `...`{.action} to the right of `Solution`{.action}. Next, click `Change solution`{.action}.
 
-#### 7 - FTP users
+#### 6 - FTP users
 
 Before switching your hosting plan to a lower plan, ensure that the new plan has enough FTP users.
 
@@ -119,9 +111,9 @@ Once you have checked these 7 elements, you can [change your plan](#modify).
 
 ### Special cases
 
-#### You have a Start 10M solution <a name="start10m"></a>
+#### You have a 100M free hosting solution <a name="start10m"></a>
 
-If you change your [Start10M](/pages/web/hosting/activate_start10m) solution, you will only be offered the [Personal Hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/personal-offer/). However, once you have switched to the Personal hosting plan, you can migrate it to all of our [web hosting plans](https://www.ovhcloud.com/en-ie/web-hosting/).
+If you change your [100M free hosting](/pages/web/hosting/activate_start10m) solution, you will only be offered the [Personal Hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/personal-offer/). However, once you have switched to the Personal hosting plan, you can migrate it to all of our [web hosting plans](https://www.ovhcloud.com/en-ie/web-hosting/).
 
 Please follow [these instructions](#modify) to change your plan.
 
@@ -156,10 +148,10 @@ This calculation corresponds to the price difference between your initial soluti
 >
 > You subscribed to a [Personal Hosting](https://www.ovhcloud.com/en-ie/web-hosting/personal-offer/) subscription on January 1, 2022.
 >
-> On October 31, 2022, you upgrade from this **Personal** plan to a [Professional plan](https://www.ovhcloud.com/en-ie/web-hosting/professional-offer/).<br>
+> On October 31, 2022, you upgrade from this **Personal** plan to a [Pro plan](https://www.ovhcloud.com/en-ie/web-hosting/professional-offer/).<br>
 >
-> Therefore, the amount corresponding to the remaining duration on the **Personal** subscription (2 months, from November 1, 2022 to January 1, 2023) is automatically deducted from the cost of the new **Professional** subscription, until January 1, 2023. You will only pay the difference.
-> From 1st January 2023, you will then be billed for your Professional subscription at its current price.
+> Therefore, the amount corresponding to the remaining duration on the **Personal** subscription (2 months, from November 1, 2022 to January 1, 2023) is automatically deducted from the cost of the new **Pro** subscription, until January 1, 2023. You will only pay the difference.
+> From 1st January 2023, you will then be billed for your Pro subscription at its current price.
 
 Please follow [these instructions](#modify) to change your plan.
 

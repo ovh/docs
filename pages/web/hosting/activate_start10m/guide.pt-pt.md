@@ -1,6 +1,6 @@
 ---
-title: 'Ativar o alojamento gratuito Start 10M'
-excerpt: 'Saiba como ativar o alojamento Start 10M'
+title: 'Ativar o alojamento gratuito 100M'
+excerpt: 'Saiba como ativar o alojamento gratuito 100M'
 updated: 2022-09-15
 ---
 
@@ -12,16 +12,16 @@ updated: 2022-09-15
 
 ## Objetivo
 
-Com o [Start10M](https://www.ovhcloud.com/pt/domains/free-web-hosting/){.external}, a OVHcloud oferece-lhe um alojamento Web de 10MB e uma conta de e-mail com 5 GB de armazenamento. Este guia explica como pode ativar o alojamento Start 10M no seu [domínio](https://www.ovhcloud.com/pt/domains/){.external}.
+Com o [Alojamento gratuito 100M](https://www.ovhcloud.com/pt/domains/free-web-hosting/){.external}, a OVHcloud oferece-lhe um alojamento Web de 100MB e uma conta de e-mail com 5 GB de armazenamento. Este guia explica como pode ativar o alojamento gratuito 100M no seu [domínio](https://www.ovhcloud.com/pt/domains/){.external}.
 
 > [!warning]
 >
-> Este alojamento gratuito de 10MB é adequado para uma simples página Web de apresentação, e **não inclui uma base de dados**.
+> Este alojamento gratuito de 100MB é adequado para uma simples página Web de apresentação, e **não inclui uma base de dados**.
 > Também é necessário que não precise de vários endereços de e-mail do tipo "MX plan". 
 > Se pretender implementar um website com várias páginas e que requer uma base de dados, como um CMS (WordPress, Joomla!, PrestaShop, Drupal, etc.), sugerimos que encomende diretamente uma das nossas ofertas de alojamento Web (https://www.ovhcloud.com/pt/web-hosting/) a partir do nosso website ou do seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) {.nal.
 >
 
-**Saiba como ativar o alojamento gratuito Start 10M**
+**Saiba como ativar o Alojamento gratuito 100M**
 
 ## Requisitos
 
@@ -34,11 +34,11 @@ Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanage
 
 No menu **Informações gerais**, encontrará *Alojamento web e e-mail gratuito*. À direita, clique no botão `...`{.action} e, a seguir, em `Ativar`{.action}.
 
-![start10m](images/start10m-step1-01.png){.thumbnail}
+![free100m](images/start10m-step1-01.png){.thumbnail}
 
 Aparecerá a janela de ativação. A **etapa 1** faz menção ao serviço e ao seu custo. Clique em `Seguinte`{.action}. Na **etapa 2**, escolha as alterações a fazer à sua zona DNS:
 
-![start10m](images/start10m-step1-02.png){.thumbnail}
+![free100m](images/start10m-step1-02.png){.thumbnail}
 
 > [!warning]
 >
@@ -51,14 +51,14 @@ Aparecerá a janela de ativação. A **etapa 1** faz menção ao serviço e ao s
 
 | Escolha                                       	| Descrição                                                                                                               								|
 |--------------------------------------------	|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Entrada DNS A                         	| O domínio ficará associado ao endereço IP do alojamento Start 10M.                                               								|
+| Entrada DNS A                         	| O domínio ficará associado ao endereço IP do alojamento gratuito 100M.                                               								|
 | Entrada DNS MX 	| Os servidores de e-mail (`mx1.mail.ovh.net`, `mx2.mail.ovh.net`, `mx3.mail.ovh.net`, etc.) da OVHcloud serão aplicados no domínio. 	|
 
 > [!primary]
 >
-> Se o seu projeto for migrado rapidamente para um alojamento que disponha de uma base de dados, de um espaço de armazenamento maior ou de mais endereços de e-mail, poderá migrar diretamente e unicamente do Start 10M para uma oferta de alojamento **Perso** a partir do seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
+> Se o seu projeto for migrado rapidamente para um alojamento que disponha de uma base de dados, de um espaço de armazenamento maior ou de mais endereços de e-mail, poderá migrar diretamente e unicamente do Alojamento gratuito 100M para uma oferta de alojamento **Perso** a partir do seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 >
-> Migração para a oferta **Pro** ou **Performance** necessita de passar previamente da oferta Start 10M à oferta **Perso**.
+> Migração para a oferta **Pro** ou **Performance** necessita de passar previamente da oferta alojamento gratuito 100M à oferta **Perso**.
 >
 > Também pode optar por eliminar a oferta gratuita tendo o cuidado de recuperar previamente os seus dados de alojamento e o conteúdo do seu endereço de e-mail.
 >
@@ -69,9 +69,9 @@ Aparecerá a janela de ativação. A **etapa 1** faz menção ao serviço e ao s
 
 Na **etapa 4**, deverá ler os contratos e validar a encomenda.
 
-Depois de validar a encomenda, receberá um e-mail com as informações de [ligação FTP](/pages/web/hosting/ftp_connection){.external} ao seu alojamento Start 10M.
+Depois de validar a encomenda, receberá um e-mail com as informações de [ligação FTP](/pages/web/hosting/ftp_connection){.external} ao seu alojamento gratuito 100M.
 
-Consulte o guia de [criação de uma conta E-mail MX Plan](/pages/web/emails/email_creation){.external} para beneficiar do endereço de e-mail incluído com o seu alojamento Start 10M.
+Consulte o guia de [criação de uma conta E-mail MX Plan](/pages/web/emails/email_creation){.external} para beneficiar do endereço de e-mail incluído com o seu alojamento gratuito 100M.
 
 ## Quer saber mais?
 

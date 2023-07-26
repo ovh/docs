@@ -23,7 +23,7 @@ La delegación ofrece al usuario de una cuenta de correo la posibilidad de gesti
 
 ## Requisitos
 
-- Tener una solución MX Plan  (disponible en: un [plan de hosting Cloud](https://www.ovhcloud.com/es-es/web-hosting/), un [alojamiento gratuito Start 10M](https://www.ovhcloud.com/es-es/domains/free-web-hosting/) o un MX Plan contratado por separado.
+- Tener una solución MX Plan  (disponible en: un [plan de hosting Cloud](https://www.ovhcloud.com/es-es/web-hosting/), un [Alojamiento gratuito 100M](https://www.ovhcloud.com/es-es/domains/free-web-hosting/) o un MX Plan contratado por separado.
 - Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), en la sección `Web Cloud`{.action}.
 
 > [!warning]

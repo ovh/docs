@@ -19,7 +19,7 @@ Wykreśliłeś przez przypadek jeden lub kilka elementów (e-mail, kontakt, spot
 ## Wymagania początkowe
  
 - Posiadanie rozwiązania poczty elektronicznej OVHcloud:
-    - **MX Plan** ([tylko nowa wersja](/pages/web/emails/email_generalities)) proponowany w naszej [ofercie hostingu www](https://www.ovhcloud.com/pl/web-hosting/) zawartej w darmowym [hostingu Start10M](https://www.ovhcloud.com/pl/domains/free-web-hosting/)
+    - **MX Plan** ([tylko nowa wersja](/pages/web/emails/email_generalities)) proponowany w naszej [ofercie hostingu www](https://www.ovhcloud.com/pl/web-hosting/) zawartej w darmowym [Darmowy hosting 100M](https://www.ovhcloud.com/pl/domains/free-web-hosting/)
     - lub [**Hosted Exchange**](https://www.ovhcloud.com/pl/emails/hosted-exchange/)
     - lub [**E-mail Pro**](https://www.ovhcloud.com/pl/emails/email-pro/)
 - Dane do logowania do odpowiedniego konta e-mail

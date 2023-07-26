@@ -19,7 +19,7 @@ Sie haben versehentlich ein oder mehrere Elemente (E-Mail, Kontakt, Kalender) ge
 ## Voraussetzungen
  
 - Sie haben eine OVHcloud E-Mail-Lösung:
-    - **MX Plan** ([nur neue Version](/pages/web/emails/email_generalities)), enthalten in unseren [Webhosting-Angeboten](https://www.ovhcloud.com/de/web-hosting/) oder in einem kostenlosen [Start 10M Hosting](https://www.ovhcloud.com/de/domains/free-web-hosting/)
+    - **MX Plan** ([nur neue Version](/pages/web/emails/email_generalities)), enthalten in unseren [Webhosting-Angeboten](https://www.ovhcloud.com/de/web-hosting/) oder in [Kostenloses Hosting 100M](https://www.ovhcloud.com/de/domains/free-web-hosting/)
     - [**Hosted Exchange**](https://www.ovhcloud.com/de/emails/hosted-exchange/)
     - [**E-Mail Pro**](https://www.ovhcloud.com/de/emails/email-pro/)
 - Sie verfügen über die Login-Daten des betreffenden E-Mail-Accounts

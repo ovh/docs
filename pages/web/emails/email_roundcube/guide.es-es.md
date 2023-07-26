@@ -17,7 +17,7 @@ Con el MX Plan de OVHcloud, puede enviar y recibir mensajes de correo desde un p
 
 ## Requisitos
 
-- Disponer de una solución de correo **MX Plan** de OVHcloud, [incluida](https://www.ovhcloud.com/es-es/web-hosting/) con un [alojamiento Start10M gratuito](https://www.ovhcloud.com/es-es/domains/free-web-hosting/) o contratada por separado como solución autónoma.
+- Disponer de una solución de correo **MX Plan** de OVHcloud, [incluida](https://www.ovhcloud.com/es-es/web-hosting/) con un [Alojamiento gratuito 100M](https://www.ovhcloud.com/es-es/domains/free-web-hosting/) o contratada por separado como solución autónoma.
 - Disponer de los datos de conexión a la dirección de correo electrónico MX Plan que quiera consultar. Para más información, consulte nuestra guía Primeros [pasos con la solución MX Plan](/pages/web/emails/email_generalities).
 
 ## Procedimiento

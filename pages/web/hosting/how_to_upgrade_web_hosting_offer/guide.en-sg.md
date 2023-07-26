@@ -1,14 +1,12 @@
 ---
 title: Changing your web hosting plan offer
 excerpt: Find out how to change the subscription offer for your OVHcloud Web Hosting plan
-updated: 2023-04-19
+updated: 2023-07-16
 ---
-
-**Last updated 30th January 2023**
 
 ## Objective
 
-In your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg), you can increase the capacity of your [web hosting offers](https://www.ovhcloud.com/en-sg/web-hosting/) to have more compute resources, storage space, databases or email accounts. Additional features such as [mailing lists](/pages/web/emails/feature_mailing_list) (from the [Professional plan](https://www.ovhcloud.com/en-sg/web-hosting/professional-offer/)) or [Private SQL](https://www.ovhcloud.com/en-sg/web-hosting/options/private-sql/) (included with the offers of the [Performance range](https://www.ovhcloud.com/en-sg/web-hosting/performance-offer/)) will also become available with a subscription upgrade.
+In your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg), you can increase the capacity of your [web hosting offers](https://www.ovhcloud.com/en-sg/web-hosting/) to have more compute resources, storage space, databases or email accounts. Additional features such as [mailing lists](/pages/web/emails/feature_mailing_list) (from the [Pro plan](https://www.ovhcloud.com/en-sg/web-hosting/professional-offer/)) or [Private SQL](https://www.ovhcloud.com/en-sg/web-hosting/options/private-sql/) (included with the offers of the [Performance range](https://www.ovhcloud.com/en-sg/web-hosting/performance-offer/)) will also become available with a subscription upgrade.
 
 **Find out how to scale your OVHcloud hosting plan without any service interruptions.**
 
@@ -76,10 +74,10 @@ This calculation corresponds to the price difference between your initial soluti
 >
 > You subscribed to a [Personal Hosting](https://www.ovhcloud.com/en-sg/web-hosting/personal-offer/) subscription on January 1, 2022.
 >
-> On October 31, 2022, you upgrade from this **Personal** plan to a [Professional plan](https://www.ovhcloud.com/en-sg/web-hosting/professional-offer/).<br>
+> On October 31, 2022, you upgrade from this **Personal** plan to a [Pro plan](https://www.ovhcloud.com/en-sg/web-hosting/professional-offer/).<br>
 >
-> Therefore, the amount corresponding to the remaining duration on the **Personal** subscription (2 months, from November 1, 2022 to January 1, 2023) is automatically deducted from the cost of the new **Professional** subscription, until January 1, 2023. You will only pay the difference.
-> From 1st January 2023, you will then be billed for your Professional subscription at its current price.
+> Therefore, the amount corresponding to the remaining duration on the **Personal** subscription (2 months, from November 1, 2022 to January 1, 2023) is automatically deducted from the cost of the new **Pro** subscription, until January 1, 2023. You will only pay the difference.
+> From 1st January 2023, you will then be billed for your Pro subscription at its current price.
 
 Please follow [these instructions](#modify) to change your plan.
 

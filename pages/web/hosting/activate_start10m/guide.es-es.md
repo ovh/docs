@@ -1,6 +1,6 @@
 ---
-title: 'Activar el alojamiento web gratuito Start 10M'
-excerpt: 'Esta guía explica cómo activar su alojamiento web Start 10M'
+title: 'Activar el Alojamiento gratuito 100M'
+excerpt: 'Esta guía explica cómo activar su Alojamiento gratuito 100M'
 updated: 2022-09-15
 ---
 
@@ -12,16 +12,16 @@ updated: 2022-09-15
 
 ## Objetivo
 
-Con el [Start 10M](https://www.ovhcloud.com/es-es/domains/free-web-hosting/){.external}, OVHcloud le ofrece un alojamiento web de 10 MB y una cuenta de correo con 5 GB de almacenamiento. Esta guía explica cómo activar el alojamiento web Start 10M en su [nombre de dominio](https://www.ovhcloud.com/es-es/domains/){.external}.
+Con el [Alojamiento gratuito 100M](https://www.ovhcloud.com/es-es/domains/free-web-hosting/){.external}, OVHcloud le ofrece un alojamiento web de 100 MB y una cuenta de correo con 5 GB de almacenamiento. Esta guía explica cómo activar el alojamiento gratuito 100M en su [nombre de dominio](https://www.ovhcloud.com/es-es/domains/){.external}.
 
 > [!warning]
 >
-> Este alojamiento gratuito de 10 MB es adecuado para una simple página web de presentación. **no incluye base de datos**.
+> Este alojamiento gratuito de 100 MB es adecuado para una simple página web de presentación. **no incluye base de datos**.
 > También es conveniente si no necesita varias direcciones de correo electrónico de tipo MX Plan. 
 > Si quiere crear un sitio web que tenga varias páginas y que requiera una base de datos, como un CMS (WordPress, Joomla, PrestaShop, Drupal, etc.), puede contratar uno de [nuestros planes de hosting](https://www.ovhcloud.com/es-es/web-hosting/) directamente desde nuestro sitio web o desde su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
 >
 
-**Cómo activar el alojamiento web gratuito Start 10M**
+**Cómo activar el alojamiento gratuito 100M**
 
 ## Requisitos
 
@@ -51,14 +51,14 @@ Si su zona DNS no está gestionada en su [área de cliente de OVHcloud](https://
 
 | Operación                                       	| Descripción                                                                                                               								|
 |--------------------------------------------	|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Registro DNS A                         	| El nombre de dominio apuntará a la dirección IP del alojamiento web Start 10M.                                               								|
+| Registro DNS A                         	| El nombre de dominio apuntará a la dirección IP del Alojamiento gratuito 100M.                                               								|
 | Entrada DNS MX 	| Los servidores de correo (`mx1.mail.ovh.net`, `mx2.mail.ovh.net`, `mx3.mail.ovh.net`, etc.) de OVHcloud se aplicarán al dominio. 	|
 
 > [!primary]
 >
-Si su proyecto evoluciona rápidamente hacia un alojamiento que dispone de una base de datos, un espacio de almacenamiento más grande o más direcciones de correo, podrá migrar directamente y únicamente del Start 10M a un plan de hosting **Perso** desde su [área de cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
+Si su proyecto evoluciona rápidamente hacia un alojamiento que dispone de una base de datos, un espacio de almacenamiento más grande o más direcciones de correo, podrá migrar directamente y únicamente del Alojamiento gratuito 100M a un plan de hosting **Personal** desde su [área de cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
 >
-> Para migrar al plan **Pro** o **Performance**, es necesario cambiar del plan Start 10M al plan **Perso**.
+> Para migrar al plan **Pro** o **Performance**, es necesario cambiar del Alojamiento gratuito 100M al plan **Personal**.
 >
 > También puede eliminar la oferta gratuita, con el cuidado de obtener previamente los datos de su alojamiento y el contenido de su dirección de correo electrónico.
 >
@@ -69,9 +69,9 @@ Si su proyecto evoluciona rápidamente hacia un alojamiento que dispone de una b
 
 En **el paso 4**, debe leer los contratos y aceptar su pedido.
 
-Una vez validado el pedido, le enviaremos por correo electrónico la información de [conexión FTP](/pages/web/hosting/ftp_connection){.external} a su alojamiento Start 10M.
+Una vez validado el pedido, le enviaremos por correo electrónico la información de [conexión FTP](/pages/web/hosting/ftp_connection){.external} a su alojamiento gratuito 100M.
 
-Consulte la guía [creación de una cuenta MX Plan](/pages/web/emails/email_creation){.external} para disfrutar de la dirección de correo electrónico incluida con su alojamiento Start 10M.
+Consulte la guía [creación de una cuenta MX Plan](/pages/web/emails/email_creation){.external} para disfrutar de la dirección de correo electrónico incluida con su alojamiento gratuito 100M.
 
 ## Más información
 

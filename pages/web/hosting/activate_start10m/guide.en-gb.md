@@ -1,6 +1,6 @@
 ---
-title: 'Activating the free Start 10M hosting plan'
-excerpt: 'Find out how to activate your Start 10M hosting plan'
+title: 'Activating the 100M free hosting plan'
+excerpt: 'Find out how to activate your 100M free hosting plan'
 updated: 2022-09-15
 ---
 
@@ -8,7 +8,7 @@ updated: 2022-09-15
 
 ## Objective
 
-With [Start10M](https://www.ovhcloud.com/en-gb/domains/free-web-hosting/){.external}, OVHcloud offers you a 10 MB web hosting plan, and an email account with 5 GB of storage. This guide will show you how to activate a Start 10M hosting on your [domain name](https://www.ovhcloud.com/en-gb/domains/){.external}.
+With [Start10M](https://www.ovhcloud.com/en-gb/domains/free-web-hosting/){.external}, OVHcloud offers you a 10 MB web hosting plan, and an email account with 5 GB of storage. This guide will show you how to activate a 100M free hosting on your [domain name](https://www.ovhcloud.com/en-gb/domains/){.external}.
 
 > [!warning]
 >
@@ -17,7 +17,7 @@ With [Start10M](https://www.ovhcloud.com/en-gb/domains/free-web-hosting/){.exter
 > If you would like to set up a website with several pages and require a database, such as a CMS (WordPress, Joomla!, PrestaShop, Drupal, etc.), please order one of [our web hosting plans](https://www.ovhcloud.com/en-gb/web-hosting/) directly from our website or your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}.
 >
 
-**Find out how to activate your free Start 10M hosting plan**
+**Find out how to activate your 100M free hosting plan**
 
 ## Requirements
 
@@ -30,11 +30,11 @@ Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomana
 
 In the **General information** box, you will see *Free web hosting and email*. Click `...`{.action} on the right-hand side, then `Enable`{.action}.
 
-![start10m](images/start10m-step1-01.png){.thumbnail}
+![free100m](images/start10m-step1-01.png){.thumbnail}
 
 The activation window will appear. **Step 1** will detail the plan and its price — click `Next`{.action}. For **step 2**, choose the changes you need to make to your DNS zone:
 
-![start10m](images/start10m-step1-02.png){.thumbnail}
+![free100m](images/start10m-step1-02.png){.thumbnail}
 
 > [!warning]
 >
@@ -47,14 +47,14 @@ The activation window will appear. **Step 1** will detail the plan and its price
 
 | Choice                                       	| Description                                                                                                               								|
 |--------------------------------------------	|-----------------------------------------------------------------------------------------------------------------------------------------------------------|
-| DNS A record                         	| The domain name will point to the IP address of the Start 10M hosting plan.                                               								|
+| DNS A record                         	| The domain name will point to the IP address of the 100M free hosting plan.                                               								|
 | MX DNS record 	| The email servers (`mx1.mail.ovh.net`, `mx2.mail.ovh.net`, `mx3.mail.ovh.net`, etc.) of OVHcloud will be applied to the domain name. 	|
 
 > [!primary]
 >
 > If your project will quickly evolve to a hosting plan with a database, larger storage space or more email accounts, you can switch directly and only from Start 10M to a **Personal** hosting plan from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}.
 >
-> To switch to the **Professional** or **Performance** plan, you will need to switch from the Start 10M plan to the **Personal** plan beforehand.
+> To switch to the **Pro** or **Performance** plan, you will need to switch from the 100M free hosting to the **Personal** plan beforehand.
 >
 > You can also choose to delete the free offer after backing up your hosting data and the contents of your email account.
 >
@@ -65,9 +65,9 @@ The activation window will appear. **Step 1** will detail the plan and its price
 
 During **step 4**, you must read the contracts and confirm your order.
 
-Once your order has been confirmed, you will be sent an email with the information for the [FTP connection](/pages/web/hosting/ftp_connection){.external} to your Start 10M hosting plan.
+Once your order has been confirmed, you will be sent an email with the information for the [FTP connection](/pages/web/hosting/ftp_connection){.external} to your 100M free hosting plan.
 
-Please refer to our guide on [Creating an MX Plan email account](/pages/web/emails/email_creation){.external} to take advantage of the email account included with your Start 10M hosting plan.
+Please refer to our guide on [Creating an MX Plan email account](/pages/web/emails/email_creation){.external} to take advantage of the email account included with your 100M free hosting plan.
 
 ## Go further
 

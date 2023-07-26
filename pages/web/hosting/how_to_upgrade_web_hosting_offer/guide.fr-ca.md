@@ -1,10 +1,8 @@
 ---
 title: "Faire évoluer son offre d'hébergement web"
 excerpt: "Découvrez comment modifier la formule d'abonnement de votre offre d'hébergement OVHcloud"
-updated: 2023-04-19
+updated: 2023-07-16
 ---
-
-**Dernière mise à jour le 30/01/2023**
 
 ## Objectif
 

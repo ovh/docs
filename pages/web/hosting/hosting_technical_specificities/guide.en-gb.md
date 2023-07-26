@@ -36,7 +36,7 @@ To guarantee a good quality of service for all and make it easier to send your e
 
 For a rolling period of 3600 seconds (1 hour), your hosting plan will allow you to send the following email quotas:
 
-|Offers|Start 10M|Personal|Pro|Performance|
+|Offers|100M free hosting|Personal|Pro|Performance|
 |---|---|---|---|---|
 |Maximum number of emails sent per hour per service|10|100|200|2000|
 

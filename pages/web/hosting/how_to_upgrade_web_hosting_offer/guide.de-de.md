@@ -1,14 +1,12 @@
 ---
 title: Webhosting-Dienst anpassen
 excerpt: "Erfahren Sie hier, wie Sie das Abonnement Ihres OVHcloud Webhosting-Dienstes ändern"
-updated: 2023-04-19
+updated: 2023-07-16
 ---
 
 > [!primary]
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
 >
-
-**Letzte Aktualisierung am 19.04.2023**
 
 ## Ziel 
 
@@ -25,9 +23,9 @@ Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=ht
 
 > [!warning]
 >
-> **Bevor** Sie Ihr aktuelles Abonnement ändern, überprüfen Sie die folgenden Fragen:
+> **Bevor** Sie Ihr aktuelles Abonnement ändern, prüfen Sie die folgenden Fragestellungen:
 >
-> - [Wie kann ich mein kostenloses Start 10M Angebot auf ein Webhosting Angebot umstellen?](#start10m)
+> - [Wie kann ich mein *Kostenloses Hosting 100M* auf ein Webhosting Angebot umstellen?](#start10m)
 > - [Wie kann ich eine temporäre Verbesserung der Performance bei meinem Performance-Hosting nutzen?](#boost)
 > - [Werde ich beim Wechsel des Angebots die verbleibende Zeit auf meinem aktuellen Webhosting-Angebot verlieren?](#billing)
 > - [Kann ich mein derzeitiges Angebot auf ein kleineres Angebot umstellen?](#checks)
@@ -56,9 +54,9 @@ Bevor Sie Ihre Umstellung auf eine niedrigere Reihe vornehmen, überprüfen Sie 
 
 #### 1 - Anzahl der Websites
 
-Mit dem Angebot [Kimsufi Web](https://www.ovhcloud.com/de/web-hosting/old-web-hosting-offers/) können Sie auf Ihrem Hosting nur einen Domainnamen mit [Multisite](/pages/web/hosting/multisites_configure_multisite) verwenden.
+Mit dem Angebot **Starter** können Sie auf Ihrem Hosting nur einen Domainnamen mit [Multisite](/pages/web/hosting/multisites_configure_multisite) verwenden.
 
-Bevor Sie vom [Basic Webhosting](https://www.ovhcloud.com/de/web-hosting/personal-offer/) zu [Kimsufi Web](https://www.ovhcloud.com/de/web-hosting/old-web-hosting-offers/) wechseln, überprüfen Sie, dass Ihr Hosting nur eine einzige Website enthält.
+Bevor Sie vom [Basic Webhosting](https://www.ovhcloud.com/de/web-hosting/personal-offer/) zu **Starter** wechseln, überprüfen Sie, dass Ihr Hosting nur eine einzige Website enthält.
 
 #### 2 - Start SQL Datenbanken
 
@@ -102,7 +100,7 @@ Wenn Sie die gleiche Anzahl an E-Mail-Accounts behalten möchten, können Sie vo
 
 #### 6 - Mailinglisten
 
-Die [Mailinglisten-Funktion](/pages/web/emails/feature_mailing_list) ist optional bei den [Basic Hostings](https://www.ovhcloud.com/de/web-hosting/personal-offer/) und [Kimsufi Web](https://www.ovhcloud.com/de/web-hosting/old-web-hosting-offers/).
+Die [Mailinglisten-Funktion](/pages/web/emails/feature_mailing_list) ist optional bei den [Basic Hostings](https://www.ovhcloud.com/de/web-hosting/personal-offer/) und **Starter**.
 
 Um Ihr Hosting auf ein [Basic Hosting](https://www.ovhcloud.com/de/web-hosting/personal-offer/) umzustellen, müssen Sie zunächst Mailinglisten entfernen oder ein E-Mail-Angebot mit dieser Funktion (**MX Plan 100** oder **MX Plan Full**) über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) bestellen.
 
@@ -124,9 +122,9 @@ Wenn Sie alle Punkte überprüft haben, können Sie [Ihr Angebot wechseln](#modi
 
 ### Sonderfälle
 
-#### Sie besitzen ein Start 10M Angebot <a name="start10m"></a>
+#### Sie haben ein <i>Kostenloses Hosting 100M</i> <a name="start10m"></a>
 
-Sie können das [Start 10M](/pages/web/hosting/activate_start10m) Angebot nur auf ein [Basic Webhosting](https://www.ovhcloud.com/de/web-hosting/personal-offer/) umstellen. Nach der Umstellung auf das Basic Angebot können Sie es jedoch auf alle unsere [Webhosting Angebote hochstufen](https://www.ovhcloud.com/de/web-hosting/).
+Sie können Ihr [Kostenloses Hosting 100M](/pages/web/hosting/activate_start10m) Angebot nur auf ein [Basic Webhosting](https://www.ovhcloud.com/de/web-hosting/personal-offer/) umstellen. Nach der Umstellung auf das Basic Angebot können Sie es jedoch auf alle unsere [Webhosting Angebote hochstufen](https://www.ovhcloud.com/de/web-hosting/).
 
 Folgen [Sie diesen Anweisungen](#modify), um Ihr Angebot zu wechseln.
 

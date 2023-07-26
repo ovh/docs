@@ -1,6 +1,5 @@
 ---
 title: 'Delegating the management of your email accounts to another person'
-legacy_guide_number: 1933
 excerpt: 'Find out how to delegate the management of email accounts for your MX Plan solution'
 updated: 2021-10-08
 ---
@@ -19,7 +18,7 @@ By creating a delegation, you can enable an email account user to manage their o
 
 ## Requirements
 
-- an MX Plan solution, available as part of our [Web Hosting plans](https://www.ovhcloud.com/en-gb/web-hosting/), the [free Start 10M hosting plan](https://www.ovhcloud.com/en-gb/domains/free-web-hosting/), or ordered separately as a standalone solution
+- an MX Plan solution, available as part of our [Web Hosting plans](https://www.ovhcloud.com/en-gb/web-hosting/), the [100M free hosting](https://www.ovhcloud.com/en-gb/domains/free-web-hosting/), or ordered separately as a standalone solution
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 
 
