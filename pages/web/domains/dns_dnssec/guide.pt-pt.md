@@ -1,65 +1,87 @@
----
-title: "Proteger um domínio com DNSSEC"
-excerpt: "Proteja o seu domínio contra o “cache poisoning” com o serviço DNSSEC"
-legacy_guide_number: g609
-updated: 2023-04-26
----
+--- 
+title: "Proteger o seu nome de domínio com DNSSEC"
+excerpt: "Saiba como proteger o seu domínio do Cache Poisoning ativando o DNSSEC"
+updated: 2023-07-26
+--- 
 
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 19/10/2022**
+## Objetivo 
 
-## Sumário
+Um servidor DNS aloja uma ou várias zonas DNS. Uma zona DNS contém a configuração DNS de um domínio. É esta configuração que liga o seu nome de domínio aos diferentes serviços que lhe estão associados (servidor de alojamento para o seu website, servidores para os seus endereços de e-mail personalizados com o seu nome de domínio, etc.).
 
-Os servidores DNS alojam a configuração DNS de um nome de domínio. Numa utilização clássica, esta configuração permite fazer a ligação entre o seu nome de domínio e os servidores que alojam o seu website e os seus endereços de e-mail. Nos últimos anos, os piratas informáticos aperfeiçoaram os métodos de “envenenamento” dos servidores DNS, o que lhe permite desviar o tráfego para outros servidores. O serviço DNSSEC permite proteger o domínio contra este tipo de ações.
+Em certos casos, os fluxos de dados que transitam pelos servidores DNS podem ser desviados por pessoas mal-intencionadas.
+Em resumo, para o fazer, estas pessoas envenenam a cache dos servidores DNS com a configuração DNS que desejam aplicar ao seu domínio: é o que é chamado o « Cache poisoning ».
+Desta forma, podem reencaminhar os fluxos de entrada do seu domínio para os seus próprios websites e para os seus próprios endereços de e-mail.
 
-**Saiba como ativar o DNSSEC no seu domínio para o proteger do “cache poisoning”.**  
-Para compreender como funciona esta proteção, aconselhamos que consulte a seguinte página: “[Serviço DNSSEC](https://www.ovhcloud.com/pt/domains/dnssec/){.external}”.
+O **D**omain **N**ame **S**ystem **SEC**urity tensions (**DNSSEC**), permite proteger a configuração DNS do seu domínio contra o « Cache poisoning » verificando e autenticando as respostas DNS.
+
+**Saiba como ativar o DNSSEC para o seu domínio para o proteger do « Cache poisoning ».**
+
+Para mais informações sobre o funcionamento do **DNSSEC**, consulte a nossa página « [Compreender o DNSSEC](https://www.ovhcloud.com/pt/domains/dnssec/){.external} ».
+
+Não hesite também em consultar os nossos manuais sobre [os servidores DNS da OVHcloud](/pages/web/domains/dns_server_general_information/) e sobre a [edição de uma zona DNS da OVHcloud](pages/web/domains/dns_zone_edit/) se deseja mais informações sobre estes assumptos.
 
 ## Requisitos
 
 - Ter um nome de domínio registado na OVHcloud.
-- O nome de domínio afetado deve dispor de uma extensão compatível com o DNSSEC.
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na secção `Web Cloud`{.action}.
+- O domínio afetado deve dispor de uma extensão compatível com o DNSSEC.
+- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, secção `Web Cloud`{.action}.
 
 ## Instruções
 
-É possível ativar o DNSSEC de duas formas diferentes:
+A ativação do **DNSSEC** é possível em dois casos:
 
-- **se o nome de domínio utilizar os servidores DNS da OVHcloud**: a ativação é realizada diretamente na Área de Cliente;
+- **O domínio utiliza os servidores DNS da OVHcloud**: a ativação é realizada através de um clique na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} (se ainda não estiver ativa por predefinição).
 
-- **se o seu domínio não utilizar os servidores DNS da OVHcloud**, será necessário entrar em contacto com o fornecedor responsável pela gestão da configuração dos DNS e pedir-lhe todos os parâmetros. De seguida, aceda à secção `Cloud Web`{.action}. Clique em `Domínios`{.action} e escolha o domínio em questão na lista.
-Clique no separador `DS records`{.action} e, de seguida, no botão `Editar`{.action} à direita, clique no botão `+`{.action}.
-Pode agora preencher os 4 campos, "Key tag", "Flag", "Algorithm", "Public key (encoded in base64)", com os dados fornecidos pelo seu fornecedor atual.
+- **O seu domínio não utiliza os servidores DNS da OVHcloud** : contacte o prestador responsável pela configuração DNS do seu domínio e solicite-lhe os parâmetros. Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} e aceda à secção `Web Cloud`{.action}. Na coluna da esquerda, clique em `Nomes de domínio`{.action} e escolha o domínio na lista.</br>
+Selecione o separador `DS records`{.action}, clique no botão `Alterar`{.action} à direita e, a seguir, no botão `+`{.action} que aparecer.</br>
+Os 4 campos « Key Tag », « Flag », « Algoritmo », « Chave pública (codificada em base64) » já podem ser preenchidos com os dados comunicados pelo seu prestador atual.
 
 > [!primary]
 >
-> Para verificar se o domínio utiliza a configuração DNS da OVHcloud, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, selecione o domínio e clique em `Servidores DNS`{.action}.
+> Para verificar se o domínio utiliza a configuração DNS da OVHcloud, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} e aceda à secção `Web Cloud`{.action}. Na coluna da esquerda, clique em `Nomes de domínio`{.action} e escolha o domínio na lista. Selecione o separador `Servidores DNS`{.action} quando posicionado no domínio em questão.
+>
+> Se os nomes dos servidores DNS terminarem com *ovh.net*, *ovh.ca* ou *anycast.me*, o seu domínio utiliza bem os servidores DNS da OVHcloud.
+>
 
-### 1 - Aceder à gestão do nome de domínio
+### Etapa 1: aceder à gestão do nome de domínio <a name="step1"></a>
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na secção `Web Cloud`{.action}. A seguir, clique em `Alojamentos`{.action} e, em seguida, selecione o domínio correspondente.
+Para ativar a solução **DNSSEC** para o seu domínio, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} e aceda à secção `Web Cloud`{.action}. Na coluna da esquerda, clique em `Nomes de domínio`{.action} e escolha o domínio na lista.
 
-Poderá consultar as informações gerais do domínio na nova janela que irá aparecer.
+A página que aparece apresenta as informações gerais do mesmo. 
 
-### 2 - Gerir o DNSSEC de um nome de domínio
+### Etapa 2: gerir o DNSSEC do seu nome de domínio
 
-No mesmo separador `Informações gerais`{.action}, poderá verificar o estado da ativação do DNSSEC no seu domínio.
+Ainda no separador `Informações gerais`{.action}, na sequência da [etapa 1](#step1), pode verificar o estado de ativação do **DNSSEC** no seu domínio.
 
-Para isso, na secção “Segurança”, verifique o estado junto de “Delegação Segura (DNSSEC)”.
+Para isso, no quadro « Segurança », verifique o estado junto da menção « Delegação Segura - DNSSEC ».
 
-![dnssec](images/activate-dnssec-step2.png){.thumbnail}
+![dnssec](images/ativate-dnssec-step2.png){.thumbnail}
 
-Poderá ativar ou desativar o serviço DNSEEC no domínio movendo o botão de ativação. Aparecerá uma nova janela onde deverá validar a alteração.
+Graças ao botão de ativação situado por cima da menção `Delegação Segura - DNSSEC`{.action}, poderá ativar ou desativar o **DNSSEC** no seu domínio. Ao realizar esta ação, aparecerá uma nova janela a partir da qual poderá validar a modificação.
 
-![dnssec](images/activate-dnssec-step3.png){.thumbnail}
+![dnssec](images/ativate-dnssec-step3.png){.thumbnail}
 
-### 3 - Aguardar durante a ativação ou a desativação
-
-Depois de decidir se irá ativar ou desativar o serviço DNSSEC no domínio, deverá esperar um máximo de 24 horas até que as alterações sejam aplicadas.
+> [!primary]
+>
+> A ativação/desativação do **DNSSEC** leva **24** horas para ficar efetiva.
+>
+> Além disso, se posteriormente pretender alterar os servidores DNS associados ao seu domínio, a modificação dos servidores DNS só será efetiva na OVHcloud após a desativação do **DNSSEC**. Depois disso, será necessário um prazo suplementar de **24** a **48** horas para a propagação DNS da modificação.
+>
+> No total, a modificação dos servidores DNS de um domínio com a solução **DNSSEC** ativa será plenamente efetiva passado as **48** às **72** horas.
+>
 
 ## Quer saber mais?
 
-Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
+[Generalidades sobre os servidores DNS da OVHcloud](/pages/web/domains/dns_server_general_information/)
+
+[Editar uma zona DNS da OVHcloud](/pages/web/domains/dns_zone_edit/)
+
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
+
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
+
+Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>. 
