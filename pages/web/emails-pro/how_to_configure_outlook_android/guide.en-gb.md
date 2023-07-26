@@ -45,7 +45,7 @@ If you no longer remember the password to access the email address you want to c
 
 Then select `Edit`{.action}, choose a new password and confirm it. Then click `Next`{.action} and `Validate`{.action} in the second window.
 
-The password change will be processed in approximately the next 15 minutes.
+The password change will be processed within the next 15 minutes approximately.
 
 > [!warning]
 >
