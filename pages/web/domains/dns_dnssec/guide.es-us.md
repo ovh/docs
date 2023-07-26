@@ -16,7 +16,7 @@ En algunos casos, los flujos de datos que transitan por los servidores DNS puede
 Para ello, estas personas envenenan la caché de los servidores DNS con la configuración DNS que desean aplicar a su dominio: es lo que se llama "cache poisoning".
 De este modo, pueden redirigir los flujos entrantes de su dominio hacia sus propios sitios web y hacia sus propias direcciones de correo.
 
-El **D**omain **N**ame **S**ystem **SEC**urity extensions (**DNSSEC**), permite proteger la configuración DNS de su nombre de dominio contra el "cache poisoning" verificando y autentificando las respuestas DNS.
+El **D**omain **N**ame **S**ystem **SEC**urity extensions (**DNSSEC**) permite proteger la configuración DNS de su nombre de dominio contra el "cache poisoning" verificando y autentificando las respuestas DNS.
 
 **Descubra cómo activar DNSSEC para su dominio para protegerlo contra el "cache poisoning".**
 
@@ -28,7 +28,7 @@ Si desea más información sobre estos temas, no dude en consultar nuestras guí
 
 - Tener un dominio registrado con OVHcloud.
 - El dominio debe tener una extensión compatible con DNSSEC.
-- Estar conectado a su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, parte `Web Cloud`{.action}.
+- Estar conectado a su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, en la parte `Web Cloud`{.action}.
 
 ## Procedimiento
 
