@@ -20,7 +20,7 @@ L'enregistrement **D**omain-based **M**essage **A**uthentication, **R**eporting,
 
 L' enregistrement DMARC contient des informations sur la politique à appliquer pour les e-mails malveillants qui tentent d'usurper votre nom de domaine.<br>
 DMARC interroge les mécanismes d'authentification [SPF](/pages/web/domains/dns_zone_spf) et [DKIM](/pages/web/domains/dns_zone_dkim) pour vérifier les e-mails entrants.<br>
-Le résultat de ces vérifications SPF et/ou DKIM est traduit par DMARC en mesures à prendre lorsqu'un e-mail échoue aux contrôles, comme la mise en quarantaine ou le rejet des e-mails concernés.
+Le résultat de ces vérifications SPF et/ou DKIM est traduit par DMARC en « mesures à prendre » lorsqu'un e-mail échoue aux contrôles, comme la mise en quarantaine ou le rejet des e-mails concernés.
 
 ### Comment le DMARC fonctionne-t-il ? <a name="how-dmarc-works"></a>
 
