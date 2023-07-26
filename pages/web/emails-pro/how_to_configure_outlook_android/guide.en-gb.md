@@ -95,7 +95,7 @@ On the new page that pops up, your email address is pre-filled.
 
 Enter your Email Pro password in the form `Password`{.action} just below where your email address is already pre-filled.
 
-In the two forms that follow, and completely **optional**, you can enter a `Display name`{.action} and a `Description`{.action}.
+Optionally, in the two forms that follow, you can enter a `Display name`{.action} and a `Description`{.action}.
 
 To continue, select the button labelled `ADVANCED SETTINGS`{.action} to display the rest of the configuration menu.
 
