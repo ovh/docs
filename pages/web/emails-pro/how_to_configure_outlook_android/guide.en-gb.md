@@ -107,7 +107,7 @@ For the **IMAP incoming mail server** section:
  - **Port**: enter the port number **993**;
  - **Security type**: Select **SSL/TLS** security from the dropdown list.
  - **IMAP username**: Enter the email address you would like to configure
- - **IMAP password**: enter the password to access the email address you want to configure.
+ - **IMAP password**: Enter the password to access the email address you want to configure.
 
 For the **SMTP Outgoing Mail Server** section:
 
