@@ -20,7 +20,7 @@ L'enregistrement **D**omain-based **M**essage **A**uthentication, **R**eporting,
 
 L' enregistrement DMARC contient des informations sur la politique à appliquer pour les e-mails malveillants qui tentent d'usurper votre nom de domaine.<br>
 DMARC interroge les mécanismes d'authentification [SPF](/pages/web/domains/dns_zone_spf) et [DKIM](/pages/web/domains/dns_zone_dkim) pour vérifier les e-mails entrants.<br>
-Le résultat de ces vérifications SPF et/ou DKIM est traduit par DMARC en « mesures à prendre » lorsqu'un e-mail échoue aux contrôles, comme la mise en quarantaine ou le rejet des e-mails concernés.
+Le résultat de ces vérifications SPF et/ou DKIM est traduit par DMARC en « mesures à prendre » lorsqu'un e-mail échoue aux contrôles. Ces mesures peuvent être la mise en quarantaine ou le rejet des e-mails concernés.
 
 ### Comment le DMARC fonctionne-t-il ? <a name="how-dmarc-works"></a>
 
@@ -42,13 +42,12 @@ Pour configurer la zone DNS du nom de domaine de votre service e-mail, rendez-vo
 
 Il y a deux façons de configurer le DMARC dans votre zone DNS OVHcloud :
 
-- Par le biais d'un [enregistrement DMARC](#dmarc-record). Cet enregistrement permet une configuration simplifiée du DMARC, vous n'aurez qu'à compléter les champs avec les paramètres DMARC nécessaires à votre configuration. Cet enregistrement est lu comme un enregistrement TXT par les serveurs DNS.
-
-- Par le biais d'un [enregistrement TXT](#txt-record). Cet enregistrement standard peut être utilisé dans le cadre de la configuration du DMARC depuis l'espace client OVHcloud, il vous permettra d'intégrer l'ensemble des balises de paramétrage DMARC y compris celles absentes via l'enregistrement DMARC OVHcloud. Il nécessite toutefois de bien respecter les règles de syntaxe du protocole DMARC.
+- Par le biais d'un [enregistrement DMARC](#dmarc-record). Cet enregistrement permet une configuration simplifiée du DMARC. Vous n'aurez qu'à compléter les champs avec les paramètres DMARC nécessaires à votre configuration. Cet enregistrement est lu comme un enregistrement TXT par les serveurs DNS.
+- Par le biais d'un [enregistrement TXT](#txt-record). Cet enregistrement standard peut être utilisé dans le cadre de la configuration du DMARC depuis l'espace client OVHcloud. Il vous permettra d'intégrer l'ensemble des balises de paramétrage DMARC, y compris celles absentes via l'enregistrement DMARC OVHcloud. Il nécessite toutefois de bien respecter les règles de syntaxe du protocole DMARC.
 
 #### Enregistrement DMARC <a name="dmarc-record"></a>
 
-Vous pouvez ajouter l'enregistrement DMARC à votre zone DNS depuis l'espace client OVHcloud. Pour cela, , connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) puis rendez-vous dans la partie `Web Cloud`{.action}. Dans la colonne de gauche, sélectionnez, dans la section `Noms de domaine`{.action}, le nom de domaine concerné puis cliquez sur l'onglet `Zone DNS`{.action} pour accéder à votre zone DNS.
+Vous pouvez ajouter l'enregistrement DMARC à votre zone DNS depuis l'espace client OVHcloud. Pour cela, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) puis rendez-vous dans la partie `Web Cloud`{.action}. Dans la colonne de gauche, sélectionnez, dans la section `Noms de domaine`{.action}, le nom de domaine concerné puis cliquez sur l'onglet `Zone DNS`{.action} pour accéder à votre zone DNS.
 
 Une fois votre zone DNS affichée, cliquez sur le bouton `Ajouter une entrée`{.action} puis sur « Champs mails » `DMARC`{.action}.
 
@@ -97,13 +96,13 @@ Vous trouverez ci-dessous la liste des balises utilisées pour créer un **enreg
 
 - **ruf** (liste en texte brut séparée par des virgules) : adresses auxquelles les informations d'échec spécifiques au message doivent être signalées . Si cette balise est présente, le propriétaire du domaine expéditeur demande aux destinataires d'envoyer des rapports d'échec détaillés sur les e-mails qui échouent à l'évaluation DMARC de manière spécifique (voir la balise `fo` ci-dessous). Le format du message à générer doit suivre le format spécifié pour la balise `rf`. La mention « mailto:» doit précéder le destinataire e-mail (exemple : `mailto:address@example.com`).
 
-- **fo** (texte brut ; la valeur par défaut est `0`) : options du rapport d'échec détaillé. Les générateurs de rapports peuvent choisir de se conformer aux options demandées. Le contenu de cette balise doit être ignoré si une balise `ruf` (ci-dessus) n'est pas également spécifiée. La valeur de cette balise est une liste de caractères séparés par deux-points qui indiquent les options de rapport d'échec suivant :
+- **fo** (texte brut ; la valeur par défaut est `0`) : options du rapport d'échec détaillé. Les générateurs de rapports peuvent choisir de se conformer aux options demandées. Le contenu de cette balise doit être ignoré si une balise `ruf` (ci-dessus) n'est pas également spécifiée. La valeur de cette balise est une liste de caractères séparés par deux points (`:`)  et qui indiquent les options de rapport d'échec suivants :
      - **0** : génère un rapport d'échec DMARC si tous les mécanismes d'authentification (DKIM **ET** SPF) ne parviennent pas à produire un résultat « pass » aligné.
      - **1** : génère un rapport d'échec DMARC si un mécanisme d'authentification (DKIM **OU** SPF) produit autre chose qu'un résultat « success » aligné.
      - **d** : génère un rapport d'échec DKIM si le mécanisme d'authentification DKIM échoue, quel que soit son alignement.
      - **s** : génère un rapport d'échec SPF si le mécanisme d'authentification SPF échoue, quel que soit son alignement.
 
-- **rf** (valeurs en texte brut séparées par des virgules, la valeur par défaut est `afrf`) : cette balise indique le type de format attendu pour les rapports qui fournissent des détails spécifiques sur les échecs d'authentification des messages. Actuellement, seul `afrf`(Auth Failure Reporting Format) est pris en charge.
+- **rf** (valeurs en texte brut séparées par des virgules, la valeur par défaut est `afrf`) : cette balise indique le type de format attendu pour les rapports qui fournissent des détails spécifiques sur les échecs d'authentification des messages. Actuellement, seul `afrf` (Auth Failure Reporting Format) est pris en charge.
 
 - **ri** (entier non signé de 32 bits en texte brut ; la valeur par défaut est 86400) : intervalle requis, en secondes, entre les rapports agrégés. Cette balise spécifie la fréquence à laquelle les destinataires des e-mails doivent générer des rapports agrégés sur les résultats d'évaluation DMARC pour le domaine concerné.
 
@@ -117,13 +116,13 @@ Pour illustrer ce premier exemple, nous avons utilisé l'[enregistrement DMARC](
 
 ![dmarc](images/dns-dmarc-03.png){.thumbnail}
 
-Vous obtiendrez le résultat suivant :
+Nous obtenons le résultat suivant :
 
 ```
 "v=DMARC1;p=quarantine;pct=100;rua=mailto:report@mydomain.ovh;aspf=s;"
 ```
 
-La totalité des e-mails envoyés (**pct=100**) sont traités par les mécanismes d'authentification SPF et/ou DKIM. Les e-mails ayant échoués au test SPF sont automatiquement rejetés car "**aspf=s**" (mécanisme SPF en mode strict). Un rapport d'erreurs sur l'échec des mécanismes d'authentification SPF et/ou DKIM est envoyé à l'adresse `report@mydomain.ovh` (**rua=mailto:report@mydomain.ovh**).
+La totalité des e-mails envoyés (**pct=100**) sont traités par les mécanismes d'authentification SPF et/ou DKIM. Les e-mails ayant échoué au test SPF sont automatiquement rejetés car "**aspf=s**" (mécanisme SPF en mode strict). Un rapport d'erreurs sur l'échec des mécanismes d'authentification SPF et/ou DKIM est envoyé à l'adresse `report@mydomain.ovh` (**rua=mailto:report@mydomain.ovh**).
 
 ##### Deuxième exemple
 
@@ -131,7 +130,7 @@ Pour ce deuxième exemple, nous avons utilisé un [enregistrement TXT](#txt-reco
 
 ![dmarc](images/dns-dmarc-04.png){.thumbnail}
 
-Vous obtiendrez le résultat suivant :
+Nous obtenons le résultat suivant :
 
 ```
 "v=DMARC1; p=quarantine; pct=100; ruf=mailto:report@mydomain.ovh; fo=0; adkim=r; aspf=s; adkim=r; ri=86400"
