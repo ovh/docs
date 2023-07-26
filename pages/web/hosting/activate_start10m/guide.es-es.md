@@ -34,11 +34,11 @@ Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=go
 
 En la sección **« Información general »**, acceda al apartado *«Alojamiento web y correo electrónico gratis»*. Haga clic en el botón `...`{.action} a la derecha y, seguidamente, en `«Activar»`{.action}.
 
-![start10m](images/start10m-step1-01.png){.thumbnail}
+![free100m](images/start10m-step1-01.png){.thumbnail}
 
 Se mostrará la ventana de activación. En el **paso 1** se muestra información sobre el plan y el precio. Haga clic en `«Siguiente»`{.action}. En el **paso 2**, seleccione los cambios que quiera realizar en su zona DNS:
 
-![start10m](images/start10m-step1-02.png){.thumbnail}
+![free100m](images/start10m-step1-02.png){.thumbnail}
 
 > [!warning]
 >
