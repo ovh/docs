@@ -93,7 +93,7 @@ Select `IMAP`{.action} at the bottom of your screen.
 
 On the new page that pops up, your email address is pre-filled.
 
-Enter your Email Pro password in the form `Password`{.action} just below where your email address is already pre-filled.
+Enter your Email Pro password in the `Password`{.action} form right below where your email address is already pre-filled.
 
 Optionally, in the two forms that follow, you can enter a `Display name`{.action} and a `Description`{.action}.
 
