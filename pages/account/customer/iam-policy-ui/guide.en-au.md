@@ -70,14 +70,14 @@ The following form will be displayed:
 
 ![Create a policy](images/create_a_policy_01.png){.thumbnail}
 
-- **Name of the policy** (mandatory): This is the name that will appear in the interfaces. The name should be unique and must not contain any spaces.
-- **Product type**: Select the types of product to define the scope of the policy. One or more product types can be included in the same policy.
+- **Policy name** (mandatory): This is the name that will appear in the interfaces. The name should be unique and must not contain any spaces.
+- **Product types**: Select the types of product to define the scope of the policy. One or more product types can be included in the same policy.
 - **Resources**: Add resources or resource groups to be covered by the policy. The resources available are filtered by the product type selected beforehand.
 - **Actions**.
 
 There are 3 different ways to add actions:
 
-- Activating the `Enable all the actions`{.action} option
+- Activating the `Authorise all actions`{.action} option
 
 ![Create a policy](images/create_a_policy_02.png){.thumbnail}
 
@@ -115,7 +115,7 @@ A search field is available to help identify a specific action on the list.
 
 #### Editing a policy
 
-To edit an existing policy, click the `...`{.action} button to the right of the policy and click `Edit the policy`{.action}.
+To edit an existing policy, click the `...`{.action} button to the right of the policy and click `Edit policy`{.action}.
 
 ![Edit a policy](images/editing_a_policy.png){.thumbnail}
 
@@ -123,13 +123,13 @@ Then you can change the scope of the policy.
 
 #### Deleting a policy
 
-To delete an existing policy, click the `...`{.action} button to the right of the policy and click `Delete the policy`{.action}.
+To delete an existing policy, click the `...`{.action} button to the right of the policy and click `Delete policy`{.action}.
 
 A popup window will ask you to confirm the deletion.
 
 ### Linking an identity to a policy
 
-To link an identity to a policy, click the `...`{.action} button to the right of the policy and click `Manage the identities`{.action}.
+To link an identity to a policy, click the `...`{.action} button to the right of the policy and click `Manage linked identities`{.action}.
 
 ![Edit a policy](images/editing_a_policy.png){.thumbnail}
 
@@ -155,12 +155,12 @@ To create a resource group, access the dedicated tab of the IAM menu:
 
 ![Resource Group](images/resource_groups.png){.thumbnail}
 
-Click on `Create a resource group`{.action}.
+Click on `Create resource group`{.action}.
 
 ![Resource Group](images/resource_groups_form.png){.thumbnail}
 
 - **Name of the resource group**: This is the name that will appear in the interfaces. The name should be unique and must not contain any spaces.
-- **Product type**: The list of product types concerned by this resource group.
+- **Product types**: The list of product types concerned by this resource group.
 - **Resources**: The list of resources the group will contain.
 
 #### Editing a resource group
@@ -169,7 +169,7 @@ To edit a resource group, click on its name in the list.
 
 #### Deleting a resource group
 
-To delete an existing resource group, click the `...`{.action} button to the right of the group and click `Delete the resource group`{.action}.
+To delete an existing resource group, click the `...`{.action} button to the right of the group and click `Delete resource group`{.action}.
 
 A popup window will ask you to confirm the deletion.
 
