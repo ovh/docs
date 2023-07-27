@@ -606,7 +606,7 @@ C'est à l'étape suivante appelée "Configurez votre instance" que vous allez p
 Nommez votre instance, puis cliquez sur "Ajouter" dans l'encadré "Script de post-installation". 
 Dans la boite de texte qui s'affiche, coller le script d'installation généré précedemment. 
 
-![](scriptPostInstall.png){.thumbnail}
+![](images/scriptPostInstall.png){.thumbnail}
 
 Cliquez sur suivant pour valider cette étape. Terminez par le choix de votre configuration réseau et du mode de facturation. 
 
