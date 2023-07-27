@@ -33,18 +33,17 @@ You will also need the following:
 
 - a [Public Cloud Instance](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account
 - an [OpenStack user](/pages/platform/public-cloud/create_and_delete_a_user/)
-- administrative (root) access to your instance/operating system via SSH
 
 > [!primary]
 >
-> The commands in this guide are based on the `OPENSTACK` API.
+> This guide references the use of the [OpenStack command-line client](https://docs.openstack.org/python-openstackclient/latest/){.external}.
 >
 
 ## Instructions
 
 ### Share an Image
 
-First, establish an SSH connection to your instance/OS and then run the following command to list your existing images:
+First, run the following command to list your existing images:
 
 ```bash
 $ openstack image list --private
