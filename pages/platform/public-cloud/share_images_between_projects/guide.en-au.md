@@ -1,65 +1,68 @@
 ---
-title: "Partager des images entre projets Public Cloud"
-excerpt: "Découvrez comment partager des images entre des projets Public Cloud à l'aide d'OpenStack"
+title: Sharing images between Public Cloud projects
+excerpt: Find out how to share images between Public Cloud projects using OpenStack
 updated: 2023-07-27
 ---
 
-## Objectif
+## Objective
 
-Il peut arriver que vous deviez partager une image [Instance backup](/pages/platform/public-cloud/save_an_instance) ou une image [Volume backup](/pages/platform/public-cloud/volume-backup) entre  plusieurs projets Public Cloud.
+A situation may arise where you need to share an [Instance backup](/pages/platform/public-cloud/save_an_instance) image or a [Volume backup](/pages/platform/public-cloud/volume-backup) image between several Public Cloud projects.
 
-Avec OpenStack, vous pouvez partager une image entre plusieurs projets, même s'ils n'appartiennent pas au même compte.
-Cette fonctionnalité offre de nombreuses possibilités mais elle comporte également des risques. Il est donc important d'en comprendre les principes.
+With OpenStack, it is possible to share an image between projects, even if they don't belong to the same account.
 
-Par exemple, si vous souhaitez partager une image d'un projet A avec un projet B (dans le même compte ou dans un compte différent), les règles suivantes s'appliquent :
+This feature offers many possibilities, but it also has its risks. It is therefore important to understand how it works.
 
-- L'image reste attachée physiquement au projet A. Le projet B ne dispose que d'une « autorisation d'accès » à cette image.
-- Si le Projet A supprime l'accès à l'image (suppression de l'ACL, suppression de l'image, suppression du projet pour factures impayées, etc.), les instances s'exécutant à partir de cette image sur le Projet B peuvent ne plus fonctionner en raison de problèmes de migration ou de reconstruction.
+For example, if we want to share an image from Project A with Project B (in the same or different account), the following rules apply:
 
-Il est donc important de garder cela à l'esprit avant de s'engager dans cette configuration.
-Pour plus d'informations, veuillez consulter la [documentation officielle OpenStack](https://docs.openstack.org/image-guide/share-images.html){.external}.
+- The image remains physically attached to Project A. Project B only has "access authorization" to this image.
+- If Project A removes access to the image (like ACL, image deletion or if the project is deleted for unpaid invoices, etc.), the instances running from this image on Project B may not work anymore due to migration or rebuild issues.
 
-**Ce guide vous montrera comment partager des images entre un ou plusieurs projets, tout en préservant la configuration et l'état de l'image.**
+It is therefore important to keep this in mind before engaging in this setup.
 
-## Prérequis
+For more information, please consult the [Official OpenStack documentation](https://docs.openstack.org/image-guide/share-images.html){.external}.
 
-Avant de suivre ces étapes, il est recommandé de consulter d'abord ce guide :
+**This guide will show you how to share images between one or more projects while preserving the configuration and state of the image.**
 
-- [Préparer l’environnement à l’utilisation de l’API OpenStack](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api)
+## Requirements
 
-Vous aurez également besoin de :
+Before following these steps, it is recommended that you first read this guide:
 
-- posséder une [Instance Public Cloud](https://www.ovhcloud.com/fr/public-cloud/) dans votre compte OVHcloud ;
-- Un utilisateur [OpenStack](/pages/platform/public-cloud/create_and_delete_a_user) créé dans votre projet ;
+- [Prepare the environment to use the OpenStack API](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api)
+
+You will also need the following:
+
+- a [Public Cloud Instance](https://www.ovhcloud.com/en-au/public-cloud/) in your OVHcloud account
+- an [OpenStack user](/pages/platform/public-cloud/create_and_delete_a_user/)
 
 > [!primary]
 >
-> Ce guide fait référence à l'utilisation du [client de ligne de commande OpenStack](https://docs.openstack.org/python-openstackclient/latest/){.external}.
+> This guide references the use of the [OpenStack command-line client](https://docs.openstack.org/python-openstackclient/latest/){.external}.
 >
 
-## En pratique
+## Instructions
 
-### Partager une image
+### Share an Image
 
-Tout d'abord, exécutez la commande suivante pour répertorier vos images existantes :
+First, run the following command to list your existing images:
 
 ```bash
 $ openstack image list --private
 | 9a0fbdc5-1f4a-4a1c-ad46-8d404a1313ba | pfsense |
 ```
 
+
 > [!warning]
 > 
-> Pour être partagée, une image doit d'abord être mise en « visibilité partagée » (*shared visibility*).
+> In order to be shared, an image must first be set to "shared" visibility.
 >
 
 ```bash
 $ openstack image set --shared <Image_UUID>
 ```
 
-### Ajouter un projet à une image
+### Add a project to an image
 
-L'étape suivante consiste à ajouter l'UUID d'un autre projet comme membre de l'image. Dans notre exemple ci-dessous, nous ajoutons l'UUID du « Projet B ».
+The next step is to add the UUID of a different project as a member of the image. In our example below, we add the UUID of "Project B" to the image.
 
 ```bash
 $ openstack image add project 9a0fbdc5-1f4a-4a1c-ad46-8d404a1313ba <UUID_Project_B>
@@ -75,7 +78,7 @@ $ openstack image add project 9a0fbdc5-1f4a-4a1c-ad46-8d404a1313ba <UUID_Project
 +------------+--------------------------------------+
 ```
 
-Une fois cela fait, vérifiez la demande sur le projet B :
+Once this is done, check the request on project B:
 
 
 ```bash
@@ -88,7 +91,7 @@ $ openstack image member list <Image_UUID>
 ```
 
 
-Si la demande de partage est en statut `pending`, vous devez l'accepter :
+If the sharing request is in `pending` status, you have to accept it:
 
 ```bash
 $ openstack image set --accept 9a0fbdc5-1f4a-4a1c-ad46-8d404a1313ba
@@ -99,7 +102,7 @@ $ openstack image set --accept 9a0fbdc5-1f4a-4a1c-ad46-8d404a1313ba
 +--------------------------------------+----------------------------------+----------+
 ```
 
-Une fois la demande de partage acceptée, vérifiez que vous pouvez voir et accéder à l'image :
+Once completed, check that you can see and access the image:
 
 ```bash
 $ openstack image show 9a0fbdc5-1f4a-4a1c-ad46-8d404a1313ba
@@ -128,7 +131,7 @@ $ openstack image show 9a0fbdc5-1f4a-4a1c-ad46-8d404a1313ba
 +------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ```
 
-### Vérifier les membres d'une image
+### Verify all the members of an image
 
 ```bash
 $ openstack image member list 9a0fbdc5-1f4a-4a1c-ad46-8d404a1313ba
@@ -140,14 +143,14 @@ $ openstack image member list 9a0fbdc5-1f4a-4a1c-ad46-8d404a1313ba
 +--------------------------------------+----------------------------------+----------+
 ```
 
-### Supprimer un membre d'une image ou annuler le partage d'une image
+### Delete a member of an image or unshare an image
 
 ```bash
-$ openstack image remove project <image> <UUID_Projet_A_Supprimer>
+$ openstack image remove project <image> <UUID_Project_To_Delete>
 ```
 
-## Aller plus loin
+## Go further
 
-[Transférer la sauvegarde d'une instance d'un datacenter à un autre](/pages/platform/public-cloud/transfer_instance_backup_from_one_datacentre_to_another).
+[Transfer an instance backup from one datacentre to another](/pages/platform/public-cloud/transfer_instance_backup_from_one_datacentre_to_another).
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Join our community of users on <https://community.ovh.com/en/>.
