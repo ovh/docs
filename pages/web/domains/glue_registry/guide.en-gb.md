@@ -68,7 +68,7 @@ If you need more information, please read our tutorial on the [Zonemaster](/page
 > In addition, the *domain1.tld* must be registered with OVHcloud to set up the GLUE records.
 >
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external} , then go to the `Web Cloud` section. In the left-hand column, click `Domain names`{.action} , then choose the domain name you will use to customize the DNS server names. 
+Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external} , then go to the `Web Cloud`{.action} section. In the left-hand column, click `Domain names`{.action} , then choose the domain name you will use to customize the DNS server names. 
 
 On the new page, click on the `GLUE`{.action} tab.
 

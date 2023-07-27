@@ -68,7 +68,7 @@ Si besoin et pour plus d'informations, consultez notre tutoriel sur l'outil [Zon
 > De plus, le *domain1.tld* doit être enregistré chez OVHcloud pour mettre en place les « GLUE » records.
 >
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} puis rendez-vous dans la partie `Web Cloud`. Dans la colonne de gauche, cliquez sur `Noms de domaine`{.action} puis choisissez le nom de domaine que vous utiliserez pour personnaliser les noms des serveurs DNS. 
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} puis rendez-vous dans la partie `Web Cloud`{.action}. Dans la colonne de gauche, cliquez sur `Noms de domaine`{.action} puis choisissez le nom de domaine que vous utiliserez pour personnaliser les noms des serveurs DNS. 
 
 Sur la nouvelle page, cliquez sur l'onglet `GLUE`{.action}.
 

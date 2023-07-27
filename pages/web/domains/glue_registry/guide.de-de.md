@@ -72,7 +72,7 @@ Weitere Informationen finden Sie in unserer Anleitung zum Tool [Zonemaster](/pag
 > Darüber hinaus muss die *domain1.tld* bei OVHcloud registriert sein, um die „GLUE“-Rekorde aufzustellen.
 >
 
-Verbinden Sie sich mit Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} und gehen Sie dann in den Bereich `Web Cloud`. Klicken Sie in der linken Spalte auf `Domainnamen`{.action} und wählen Sie dann den Domainnamen aus, den Sie zum Anpassen der DNS-Servernamen verwenden möchten. 
+Verbinden Sie sich mit Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} und gehen Sie dann in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Domainnamen`{.action} und wählen Sie dann den Domainnamen aus, den Sie zum Anpassen der DNS-Servernamen verwenden möchten. 
 
 Klicken Sie auf der neuen Seite auf den Tab `GLUE`{.action}.
 
