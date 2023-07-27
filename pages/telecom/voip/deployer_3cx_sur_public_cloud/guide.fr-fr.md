@@ -597,7 +597,43 @@ Après avoir sélectionné votre projet Public Cloud, sélectionnez le bon flavo
 
 ![](images/flavor.png){.thumbnail}
 
+Sélectionnez ensuite le système d'exploitation. A ce jour, 3CX utilise Debian 10. 
+
+![](images/os.png){.thumbnail}
+
+C'est à l'étape suivante appelée "Configurez votre instance" que vous allez pouvoir joindre votre template. 
+
+Nommez votre instance, puis cliquez sur "Ajouter" dans l'encadré "Script de post-installation". 
+Dans la boite de texte qui s'affiche, coller le script d'installation généré précedemment. 
+
+![](scriptPostInstall.png){.thumbnail}
+
+Cliquez sur suivant pour valider cette étape. Terminez par le choix de votre configuration réseau et du mode de facturation. 
+
+Une fois l'instance démarrée, l'installation sera lancée directement et prendre quelques minutes. 
+Vous pouvez vous connecter à la machine pour vérifier le bon déroulement avec les logs : 
+
+```bash
+tail -F /var/lib/3cxpbx/Data/Logs/PbxConfigTool.log
+```
+
+Une fois le déploiement terminé, l'interface d'admin sera accessible via le FQDN donné lors de la souscription à votre license 3CX ou via l'ip de votre instance : `https://ip_publique_instance:5001/
+
 #### Déploiement via l'api 
+
+Il est également possible de déployer votre instance via l'API, en utilisant le call /cloud/project/{serviceName}/instance 
+
+Exemple avec un flavor D2-4, Debian 10 et facturation à l'heure : 
+
+```
+curl -X POST "https://eu.api.ovh.com/v1/cloud/project/votre_id_projet/instance" \
+ -H "accept: application/json"\
+ -H "authorization: Bearer [Votre_Token]"\
+ -H "content-type: application/json" \
+ -d '{"flavorId":"199060ac-6dde-435a-acab-78456ac337a7","imageId":"60704751-09c2-4ad4-a30f-b3e786348fa0","monthlyBilling":false,"name":"Nom-De-L-Instance","region":"GRA7","sshKeyId":"Id-De-Votre-Cle-Ssh","userData":"LeContenuDuTemplate"}'
+```
+
+Dans ce JSON, insérez dans "userData" le template. Attention les sauts de lignes doivent êtres échappés par "\n". 
 
 ## Aller plus loin
   
