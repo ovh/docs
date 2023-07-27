@@ -8,8 +8,6 @@ updated: 2023-07-27
 
 The **DNS servers** host the DNS configurations for domain names: the *DNS zones*. 
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/BvrUi26ShzI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 These *DNS zones* consist of technical information: *DNS records*. In standard usage, *DNS records* allow you to:
 
 - display your website with your domain name, using your hosting server’s IP address (DNS records of types *A* and *AAAA*).
@@ -18,21 +16,21 @@ These *DNS zones* consist of technical information: *DNS records*. In standard u
 
 For more information on these topics, please read our documentation on [OVHcloud DNS servers](/pages/web/domains/dns_server_general_information) and [editing an OVHcloud DNS zone](/pages/web/domains/dns_zone_edit).
 
-Depending on your needs, you can customize your OVHcloud domain name’s DNS servers using “***Glue Records**”.
+Depending on your needs, you can customize your OVHcloud domain name’s DNS servers using **Glue Records**.
 
 **Find out how to customize your OVHcloud domain name’s DNS servers.**
 
 ## Requirements
 
-- a domain name registered with OVHcloud.
-- You must be logged in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, part `Web Cloud`{.action}.
+- A domain name registered with OVHcloud.
+- You must be logged in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external} and access the `Web Cloud`{.action} section.
 
 ## Instructions
 
 > [!warning]
 >
-> **Customizing a domain name’s DNS servers is a sensitive procedure** : making an inappropriate change can cut access to your website and/or make it unavailable to receive new emails on your email addresses. 
-> If in doubt, please follow the detailed steps below, or contact a [specialist provider](https://partner.ovhcloud.com/en-gb/directory/).
+> **Customizing a domain name’s DNS servers is a sensitive procedure**: making an inappropriate change can cut access to your website and/or make it unavailable for you to receive new emails on your email addresses. 
+> Please follow the steps below carefully,, or contact a [specialist provider](https://partner.ovhcloud.com/en-gb/directory/) if you have any doubts.
 >
 
 ### Step 1: Retrieve the DNS servers currently used by your domain name <a name="step1"></a>
@@ -47,14 +45,14 @@ A result is displayed:
 
 ![glue-zonemaster](images/glue-dns-zonemaster.png){.thumbnail}
 
-Retrieve the *DNS servers* and keep **all** their associated IPv4 addresses (in the form of *X.X.X.X* where *X* is between *0* and *255*) and IPv6 (other IPs that are not IPv4). You will need it for the rest of this guide.
+Retrieve the *DNS servers* and keep **all** their associated IPv4 addresses (in the form of *X.X.X.X* where *X* is a number between *0* and *255*) and IPv6 (other IPs that are not IPv4). You will need them for the rest of this guide.
 
 In our example shown above, the **domain.tld** domain currently uses the following **DNS servers**:
 
 - **dnsX1.ovh.net** associated with IPv4 *111.222.333.443* and IPv6 *0000:00d0:1:0000::1*;
 - **dnsX2.ovh.net** associated with IPv4 *111.222.333.444* and IPv6 *0000:00d0:1:0000::2*.
 
-If you need more information, please read our tutorial on the [Zonemaster](/pages/web/domains/dns_zonemaster) tool 
+If you need more information, please read [our tutorial on the Zonemaster tool](/pages/web/domains/dns_zonemaster).
 
 ### Step 2: Add the "GLUE" records <a name="step2"></a>
 
@@ -68,17 +66,17 @@ If you need more information, please read our tutorial on the [Zonemaster](/page
 > In addition, the *domain1.tld* must be registered with OVHcloud to set up the GLUE records.
 >
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external} , then go to the `Web Cloud`{.action} section. In the left-hand column, click `Domain names`{.action} , then choose the domain name you will use to customize the DNS server names. 
+Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, then go to the `Web Cloud`{.action} section. In the left-hand column, click `Domain names`{.action} then choose the domain name you will use to customize the DNS server names. 
 
 On the new page, click on the `GLUE`{.action} tab.
 
-A table will then display the ‘GLUE’ records currently configured at OVHcloud for your domain name (if any). To add a new GLUE record, click the `Add`{.action} button.
+A table will then display the "GLUE" records currently configured at OVHcloud for your domain name (if any). To add a new GLUE record, click the `Add`{.action} button.
 
 ![glueregistry](images/glue-add.png){.thumbnail}
 
 In the window that opens on your screen, enter the information requested:
 
-|Info|Detail|  
+|Information|Details|
 |---|---|
 |Host Name|Customize the host name you want to use as a custom DNS server.|
 |Target IP(s)|Specify the IP address(es) (IPv4 and/or IPv6) to which the host name should be attached. This is the IP address(es) of the DNS server currently used by your domain name. If there are multiple IP addresses, separate them with *commas*.|
@@ -102,13 +100,13 @@ You must create the *A* and *AAAA* records for the host names that you defined i
 You can do this via the interface given by the service provider managing your domain name’s DNS configuration. There are two ways of doing this:
 
 - **If your domain name does not use an active DNS zone with OVHcloud**: contact the service provider managing it. Once you have made the required changes, please move on to the next step.
-- **Your domain name uses an active DNS zone at OVHcloud**: Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external} then go to the `Web Cloud`{.action} section. In the left-hand column, click `Domain names`{.action} , then select the domain name you used to create the “GLUE” in [step 2](#step2). Go to the `DNS Zone`{.action} tab, then click `Add an entry`{.action}. Select the entry of type *A* or *AAAA* depending on the type of associated IP you want to add. Follow the steps by entering the *sub-domain* and the address *IPv4* (A) or *IPv6* (AAAA) then proceed until the addition has been validated. If necessary, please refer to our guide on [Editing an OVHcloud DNS zone](/pages/web/domains/dns_zone_edit) .
+- **Your domain name uses an active DNS zone at OVHcloud**: Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external} then go to the `Web Cloud`{.action} section. In the left-hand column, click `Domain names`{.action}, then select the domain name you used to create the “GLUE” in [step 2](#step2). Go to the `DNS Zone`{.action} tab, then click `Add an entry`{.action}. Select the entry of type *A* or *AAAA* depending on the type of associated IP you want to add. Follow the steps by entering the *sub-domain* and the address *IPv4* (A) or *IPv6* (AAAA) then proceed until the addition has been validated. If necessary, please refer to our guide on [Editing an OVHcloud DNS zone](/pages/web/domains/dns_zone_edit) .
 
 ![glueregistry](images/glue-dns-zone-add.png){.thumbnail}
 
 > [!primary]
 >
-> In all cases, you will need to wait between 4 and 24 hours for the DNS zone modification to propagate across the entire DNS network. We recommend that you wait for this time before continuing.
+> In all cases, you will need to wait between 4 and 24 hours for the DNS zone modification to propagate across the entire DNS network.We recommend that you wait until the end of this period before continuing.
 >
 
 If we go back to our previous example, the “GLUE” records that we want to add (from the *domain.tld* domain) are **dns1.domain.tld** and **dns2.domain.tld**. The goal is to replace the current DNS servers **dnsX1.ovh.net** and **dnsX2.ovh.net**.
@@ -126,7 +124,7 @@ The DNS propagation will take a while.
 
 You will need to modify your domain name’s DNS servers by replacing the old DNS servers with the custom DNS servers you have created.
 
-To do this, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external} , then go to the `Web Cloud`{.action} section. In the left-hand column, click `Domain names`{.action} , then select *the domain name for which you want to customize the DNS servers*.
+To do this, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, then go to the `Web Cloud`{.action} section. In the left-hand column, click `Domain names`{.action}, then select *the domain name for which you want to customize the DNS servers*.
  
 Go to the `DNS servers`{.action} tab, then click `Modify DNS servers`{.action}. Then replace your current DNS servers with those you would like to use as custom DNS servers. 
 
@@ -141,10 +139,10 @@ Finalize the steps and, if necessary, refer to the instructions set out in our d
 
 > [!primary]
 >
-> A propagation delay of 24 to 48 hours is required for the change of DNS servers to take effect across the entire DNS network. We recommend that you wait for this time before continuing.
+> A propagation delay of 24 to 48 hours is required for the change of DNS servers to take effect across the entire DNS network. We recommend that you wait until the end of this period before continuing.
 >
 
-In our example of customizing the DNS servers for the domain name *domain.tld*, we replace the DNS server **dnsX1.ovh.net** with **dns1.domain.tld** and the DNS server **dnsX2.ovh.net** with **dns2.domain.tld** , then wait for the DNS propagation to propagate.
+In our example of customizing the DNS servers for the domain name *domain.tld*, we replace the DNS server **dnsX1.ovh.net** with **dns1.domain.tld** and the DNS server **dnsX2.ovh.net** with **dns2.domain.tld**, then wait for the DNS propagation to propagate.
 
 ### Step 5: Replace the NS records in your domain name’s active DNS zone
 
@@ -153,7 +151,7 @@ For the customization of DNS servers to be visible on the DNS network (by perfor
 You can do this via the interface given by the service provider managing your domain name’s DNS configuration. There are therefore two possibilities:
 
 - **Your domain name does not use an active DNS zone at OVHcloud** : contact the service provider managing it to make the change.
-- **Your domain name uses an active DNS zone at OVHcloud**: Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external} then go to the `Web Cloud`{.action} section. In the left-hand column, click `Domain names`{.action} , then select the domain name for which you have customized the DNS servers. Go to the `DNS Zone`{.action} tab, then click `Change in text format`{.action}. 
+- **Your domain name uses an active DNS zone at OVHcloud**: Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external} then go to the `Web Cloud`{.action} section. In the left-hand column, click `Domain names`{.action}, then select the domain name for which you have customized the DNS servers. Go to the `DNS Zone`{.action} tab, then click `Change in text format`{.action}. 
 
 A window will appear with your DNS zone in *text* mode:
 
@@ -161,11 +159,11 @@ A window will appear with your DNS zone in *text* mode:
 
 > [!warning]
 >
-> As a reminder, making an inappropriate change to *text* mode in your DNS zone can cut access to your website and/or make it unavailable to receive new emails on your email addresses. 
+> As a reminder, making an inappropriate change in *text* mode in your DNS zone can cut access to your website and/or make it unavailable for you to receive new emails on your email addresses. 
 > Contact a [specialist provider](https://partner.ovhcloud.com/en-gb/directory/) if you have any doubts.
 >
 
-In this window, replace **only in records of type *NS*** the names of the DNS servers with your own custom DNS server names **not to mention** incrementing the first numeric value in the *SOA* line by "1". Once you have made your changes, click `Next`{.action} then `Confirm`{.action}.
+In this window, replace **only in records of type *NS*** the names of the DNS servers with your own custom DNS server names. You **also have to** increment the first numeric value in the *SOA* line by "1". Once you have made your changes, click `Next`{.action} then `Confirm`{.action}.
 
 The change will not be visible immediately in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}. Wait around 20 minutes, then log in to the OVHcloud Control Panel to ensure that your changes have been processed.
 
@@ -178,15 +176,15 @@ To get a better understanding of this last step, let’s take a look at our exam
 
 The following elements are observed: 
 
-- the first numeric value of the line *SOA* is as follows: *2023071700*;
-- there are two *NS* records for the domain name *domain.tld*;
-- records of type *NS* still target the two DNS servers **dnsX1.ovh.net** and **dnsX2.ovh.net**.
+- The first numeric value of the line *SOA* is as follows: *2023071700*.
+- There are two *NS* records for the domain name *domain.tld*.
+- Records of type *NS* still target the two DNS servers **dnsX1.ovh.net** and **dnsX2.ovh.net**.
 
 To finalize the customization of the DNS servers for the domain name *domain.tld*, you will need to:
 
-- increment the first numeric value of the *SOA* line by "1": *202307170**1*** (note that if the first numeric value was:*2023071704*, you would always increment by "1" and get the following result: *202307170**5*** );
-- replace the target **dnsX1.ovh.net.** with **dns1.domain.tld.** only for the line that starts with **IN NS**;
-- replace target **dnsX2.ovh.net.** with **dns2.domain.tld.** only for line that starts with **IN NS**.
+- Increment the first numeric value of the *SOA* line by "1": *202307170**1*** (note that if the first numeric value was:*2023071704*, you would still increment by "1" and get the following result: *202307170**5*** ).
+- Replace the target **dnsX1.ovh.net.** with **dns1.domain.tld.** only for the line that starts with **IN NS**.
+- Replace the target **dnsX2.ovh.net.** with **dns2.domain.tld.** only for the line that starts with **IN NS**.
 
 Once the modifications are made, the result of our example will be the following:
 
@@ -197,9 +195,9 @@ $TTL 3600
                   IN NS     dns2.domain.tld.
 ```
 
-For our domain name *domain.tld*, the DNS servers that will be displayed after the DNS modification and propagation have been processed will now be **dns1.domain.tld.** and **dns2.domain.tld.**.
+For our domain name *domain.tld*, the DNS servers displayed after the DNS modification and propagation have been processed now are **dns1.domain.tld.** and **dns2.domain.tld.**.
 
-If necessary, please refer to our guide on Editing an OVHcloud DNS zone (/pages/web/domains/dns_zone_edit) .
+If necessary, please refer to our guide on [editing an OVHcloud DNS zone](/pages/web/domains/dns_zone_edit) .
 
 > [!success]
 >
