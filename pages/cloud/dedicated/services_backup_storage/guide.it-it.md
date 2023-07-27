@@ -1,14 +1,12 @@
 ---
 title: Utilizzare il Backup Storage su un server dedicato
 excerpt: Come attivare e accedere allo spazio di storage aggiuntivo
-updated: 2021-03-15
+updated: 2023-07-26
 ---
 
 > [!primary]
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
 >
-
-**Ultimo aggiornamento: 15/03/2021**
 
 ## Obiettivo
 
@@ -147,6 +145,10 @@ Verrà creato un buono d'ordine. Una volta effettuato il pagamento, riceverai un
 > Il servizio di Backup Storage non effettua un backup automatico dei tuoi dati. ma non prevede il backup automatico dei tuoi dati. Definire una strategia di backup efficiente e scegliere gli strumenti più adatti per attuarla è quindi responsabilità dell’utente. OVHcloud non potrà essere considerata responsabile dei dati contenuti in questi spazi.
 >
 
+> [!warning]
+>
+> Il servizio di Backup Storage ha un limite di tre connessioni simultanee su un IP.
+>
 
 #### FTP/FTPS
 

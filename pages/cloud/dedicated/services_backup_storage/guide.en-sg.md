@@ -1,10 +1,8 @@
 ---
 title: Using backup storage on a dedicated server
 excerpt: 'Find out how to enable and access your additional storage space'
-updated: 2021-03-15
+updated: 2023-07-26
 ---
-
-**Last updated 15th March 2021**
 
 ## Objective
 
@@ -138,6 +136,11 @@ An order will be created and once your payment has been processed, you will be n
 >
 > The backup storage service does not automatically back up your data, it only provides the space and the access protocols. It is your responsibility to implement an adequate backup strategy using the tools of your choice.
 >
+
+> [!warning]
+> 
+> The backup storage service has a limit of three simultaneous connections on an IP.
+> 
 
 #### FTP/FTPS
 
