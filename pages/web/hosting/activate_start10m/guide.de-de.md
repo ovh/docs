@@ -1,6 +1,6 @@
 ---
-title: '&laquo;Kostenloses Hosting 100M&laquo; aktivieren'
-excerpt: 'Erfahren Sie hier, wie Sie Ihr kostenloses Hosting 100M aktivieren'
+title: "&laquo;Kostenloses Hosting 100M&raquo; aktivieren"
+excerpt: Erfahren Sie hier, wie Sie Ihr kostenloses Hosting 100M aktivieren
 updated: 2022-09-15
 ---
 
@@ -8,19 +8,19 @@ updated: 2022-09-15
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 15.09.2022**
 
 ## Ziel 
 
-Mit dem [Kostenloses Hosting 100M](https://www.ovhcloud.com/de/domains/free-web-hosting/){.external} bietet Ihnen OVHcloud ein Webhosting mit 100 MB und einen E-Mail-Account mit 5 GB Speicherplatz.
+Mit dem Angebot [Kostenloses Hosting 100M](https://www.ovhcloud.com/de/domains/free-web-hosting/){.external} bietet Ihnen OVHcloud ein Webhosting mit 100 MB und einen E-Mail-Account mit 5 GB Speicherplatz.
 
 In dieser Anleitung erfahren Sie, wie Sie dieses Angebot für Ihren [Domainnamen](https://www.ovhcloud.com/de/domains/){.external} aktivieren.
 
 > [!warning]
 >
-> Dieses kostenlose Hosting mit 100 MB ist für eine einfache Präsentationsseite geeignet; es enthält **keine Datenbank**.
-> Es ist auch angezeigt, wenn Sie nicht mehr als eine "MX Plan" E-Mail-Adresse benötigen.
-> Wenn Sie eine Website mit mehreren Seiten einrichten möchten, die eine Datenbank wie WordPress, Joomla!, PrestaShop, Drupal usw. benötigt, bestellen Sie direkt über unsere Website oder Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) eines unserer [Webhosting-Angebote](https://www.ovhcloud.com/de/web-hosting/){.external}.
+> Dieses kostenlose Webhosting mit 100 MB Speicherplatz ist für eine einfache Präsentationsseite geeignet; es enthält **keine Datenbank**.
+> Es eignet sich auch für die E-Mail-Nutzung, wenn Sie nicht mehr als einen "MX Plan" E-Mail-Account benötigen.
+>
+> Wenn Sie eine Website mit mehreren Seiten einrichten möchten, die eine Datenbank benötigt, wie etwa WordPress, Joomla!, PrestaShop oder Drupal, bestellen Sie direkt über unsere Website oder Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) eines unserer [Webhosting-Angebote](https://www.ovhcloud.com/de/web-hosting/){.external}.
 >
 
 **Diese Anleitung erklärt, wie Sie Ihr <i>Kostenloses Hosting 100M</i> aktivieren.**
@@ -32,7 +32,7 @@ In dieser Anleitung erfahren Sie, wie Sie dieses Angebot für Ihren [Domainnamen
 
 ## In der praktischen Anwendung
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und klicken Sie im Bereich `Web Cloud`{.action} auf`Domainnamen`{.action}. Wählen Sie die betreffende Domain aus.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und klicken Sie im Bereich `Web Cloud`{.action} auf `Domainnamen`{.action}. Wählen Sie den Domainnamen aus.
 
 Im Bereich **Allgemeine Informationen** finden Sie den Abschnitt *Gratis Webhosting und E-Mail*. Klicken Sie rechts auf den Button `...`{.action} und anschließend auf `Aktivieren`{.action}.
 
@@ -44,11 +44,11 @@ Daraufhin öffnet sich das Aktivierungsfenster. **Schritt 1** zeigt Ihnen Angebo
 
 > [!warning]
 >
-> Wenn Sie eine oder beide der Optionen `DNS A Eintrag` und `DNS MX Eintrag` anhaken, wird die in der DNS Zone Ihrer Domain bereits vorhandene Konfiguration überschrieben.
+> Wenn Sie eine oder beide der Optionen `DNS A Eintrag` und `DNS MX Eintrag` anhaken, wird die in der DNS-Zone Ihrer Domain bereits vorhandene Konfiguration überschrieben.
 >
-> Wenn Ihre DNS Zone nicht in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} verwaltet wird, müssen die Änderungen manuell in Ihrer externen DNS Zone durchgeführt werden.
+> Wenn Ihre DNS-Zone nicht in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} verwaltet wird, müssen die Änderungen manuell in Ihrer externen DNS-Zone durchgeführt werden.
 >
-> Weitere Informationen finden Sie in unserer Anleitung zumr [Bearbeiten der OVHcloud DNS-Zone](/pages/web/domains/dns_zone_edit).
+> Weitere Informationen finden Sie in unserer Anleitung zum [Bearbeiten der OVHcloud DNS-Zone](/pages/web/domains/dns_zone_edit).
 >
 
 | Option                                       	| Beschreibung                                                                                                               								|
@@ -64,16 +64,16 @@ Daraufhin öffnet sich das Aktivierungsfenster. **Schritt 1** zeigt Ihnen Angebo
 >
 > Sie können auch das kostenlose Angebot löschen, nachdem Sie Ihre Hosting-Daten und den Inhalt Ihres E-Mail-Accounts gesichert haben.
 >
-> Weitere Informationen finden Sie in unseren [Webhosting-Angebote](https://www.ovhcloud.com/de/web-hosting/).
+> Weitere Informationen finden Sie in unserer [Webhosting-Übersicht](https://www.ovhcloud.com/de/web-hosting/).
 >
 
-**Schritt 3** erinnert Sie an die Preisgestaltung des Angebots. 
+**Schritt 3** informiert Sie über die Preisgestaltung des Angebots. 
 
 In **Schritt 4** können Sie die Verträge einsehen und Ihre Bestellung bestätigen.
 
 Sobald Ihre Bestellung bestätigt wurde, erhalten Sie eine E-Mail mit den Informationen zur [FTP-Verbindung](/pages/web/hosting/ftp_connection){.external} für Ihr **Kostenloses Hosting 100M**.
 
-Ziehen Sie die Anleitung zur [Erstellung eines MX Plan E-Mail-Accounts](/pages/web/emails/email_creation){.external} zu Rate, um den Account zu nutzen, der im **Kostenloses Hosting 100M** inklusive ist.
+Ziehen Sie die Anleitung zur [Erstellung eines MX Plan E-Mail-Accounts](/pages/web/emails/email_creation){.external} zu Rate, um den Account zu nutzen, der in **Kostenloses Hosting 100M** inklusive ist.
 
 ## Weiterführende Informationen
 

@@ -283,7 +283,7 @@ ls ~/.ssh/
 config  id_rsa  id_rsa.pub  known_hosts  known_hosts.old
 ```
 
-Le fichier de `configuration` permet de stocker plusieurs connexions SSH ainsi que leurs paramètres individuels en plus des valeurs standard. L’exploitation de tout le potentiel de ce fichier peut devenir complexe, car il est particulièrement utile pour les utilisateurs expérimentés qui gèrent plusieurs serveurs de manière régulière.
+Le fichier de `config` permet de stocker plusieurs connexions SSH ainsi que leurs paramètres individuels en plus des valeurs standard. L’exploitation de tout le potentiel de ce fichier peut devenir complexe, car il est particulièrement utile pour les utilisateurs expérimentés qui gèrent plusieurs serveurs de manière régulière.
 
 Voici un exemple simple pour vous expliquer comment configurer une connexion SSH à un VPS.<br>
 Ouvrez le fichier et ajoutez les lignes suivantes en haut :
