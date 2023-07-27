@@ -111,7 +111,7 @@ You can do this via the interface given by the service provider managing your do
 > In all cases, you will need to wait between 4 and 24 hours for the DNS zone modification to propagate across the entire DNS network. We recommend that you wait for this time before continuing.
 >
 
-If we go back to our previous example, the “GLUE” records that we want to add (from the *domain.tld* domain) are **dns1.domain.tld** and **dns2.domain.tld**. The goal is to replace the current DNS servers **dnsX1.ovh.net** and **dnsX2.ovh.net**
+If we go back to our previous example, the “GLUE” records that we want to add (from the *domain.tld* domain) are **dns1.domain.tld** and **dns2.domain.tld**. The goal is to replace the current DNS servers **dnsX1.ovh.net** and **dnsX2.ovh.net**.
 
 As a result, the following records are added to the active DNS zone of the domain name *domain.tld*:
 

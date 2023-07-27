@@ -115,7 +115,7 @@ Gehen Sie hierzu in das Interface des Anbieters, der die DNS-Konfiguration Ihrer
 > In jedem Fall ist eine Propagationszeit von 4 bis 24 Stunden erforderlich, damit die Änderung der DNS-Zone im gesamten DNS-Netzwerk wirksam wird. Wir empfehlen Ihnen, vor dem Fortsetzen des Vorgangs bis zu diesem Zeitpunkt zu warten.
 >
 
-In unserem vorherigen Beispiel sind die GLUE-Einträge, die Sie hinzufügen möchten (ab der Domain *domain.tld*), **dns1.domain.tld** und **dns2.domain.tld**. Ziel ist es, die aktuellen DNS-Server **dnsX1.ovh.net** und **dnsX2.ovh.net** zu ersetzen
+In unserem vorherigen Beispiel sind die GLUE-Einträge, die Sie hinzufügen möchten (ab der Domain *domain.tld*), **dns1.domain.tld** und **dns2.domain.tld**. Ziel ist es, die aktuellen DNS-Server **dnsX1.ovh.net** und **dnsX2.ovh.net** zu ersetzen.
 
 Dadurch werden folgende Einträge zur aktiven DNS-Zone der Domain *domain.tld* hinzugefügt:
 
