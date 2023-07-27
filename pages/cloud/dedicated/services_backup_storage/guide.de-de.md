@@ -150,7 +150,7 @@ Es wird ein Bestellschein erzeugt und sobald Ihre Zahlung verbucht wurde, erhalt
 
 > [!warning]
 >
-> Der Backup Storage Dienst hat ein Limit von drei gleichzeitigen Verbindungen auf einer IP.
+> Der Backup Storage Dienst hat ein Limit von drei gleichzeitigen Verbindungen per IP.
 >
 
 #### FTP/FTPS
