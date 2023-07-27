@@ -595,7 +595,7 @@ Pour notre guide, nous allons utiliser une instance Discovery D2-4.
 
 Après avoir sélectionné votre projet Public Cloud, sélectionnez le bon flavor et la région désirée. 
 
-
+![](images/flavor.png){.thumbnail}
 
 #### Déploiement via l'api 
 
