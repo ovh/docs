@@ -84,29 +84,29 @@ Introduzca la información solicitada en la ventana que se abre en su pantalla:
 
 |Información|Detalle|  
 |---|---|
-|Nombre de host|Personalice el nombre de host que desea utilizar como servidor DNS personalizado.|
+|Nombre del host|Personalice el nombre de host que desea utilizar como servidor DNS personalizado.|
 |IP(s) de destino|Especifique la dirección o direcciones IP (IPv4 y/o IPv6) a las que se debe enlazar el nombre de host. Dirección o direcciones IP del servidor DNS que utiliza actualmente el dominio. Si hay varias direcciones IP, separe con *comas*.|
 
 ![glueregistry](images/glue-add-glue.png){.thumbnail}
 
-En la imagen anterior, tomando como ejemplo el [paso 1](#step1), el «Glue» que queremos añadir aquí (a partir del dominio *domain.tld*) es **dns1.domain.tld**. 
+En la imagen anterior, tomando como ejemplo el [etapa 1](#step1), el «Glue» que queremos añadir aquí (a partir del dominio *domain.tld*) es **dns1.domain.tld**. 
 
 Para este «Glue», se indican como direcciones IP del *servidor DNS de destino*, las direcciones IP *111.222.333.443* (IPv4) y *0000:00d0:1:000::1* (IPv6). Estas IP corresponden a uno de los dos servidores DNS que se utilizan actualmente para *domain.tld* (**dnsX1.ovh.net**). 
 
 Se añade este «Glue» para que **dns1.domain.tld** pueda, al final, sustituir el nombre de servidor DNS **dnsX1.ovh.net** actualmente utilizado por el nombre de dominio *domain.tld*.
 
-Una vez que haya introducido toda la información, haga clic en el botón `Añadir`{.action}, lea la información mostrada y haga clic en `Aceptar`{.action}. Repita esta operación tantas veces como sea necesario, en función del número de servidores DNS utilizados por su dominio.
+Una vez que haya introducido toda la información, haga clic en el botón `Siguiente`{.action}, lea la información mostrada y haga clic en `Aceptar`{.action}. Repita esta operación tantas veces como sea necesario, en función del número de servidores DNS utilizados por su dominio.
 
 En nuestro ejemplo, deberá repetir la operación para crear el «Glue» **dns2.domain.tld**. Este sustituirá posteriormente al servidor DNS **dnsX2.ovh.net** asociado actualmente a las IPv4 *111.222.333.444* e IPv6 *0000:00d0:1:0000::2*
 
-### Paso 3: crear los registros DNS de tipo A y AAAA correspondientes a los DNS personalizados
+### Etapa 3: crear los registros DNS de tipo A y AAAA correspondientes a los DNS personalizados
 
 Debe crear los registros *A* y *AAAA* para los nombres de host que definió en el paso anterior. Los registros *A* y *AAAA* deben tener como destino la dirección IP de destino que coincida con el nombre de host creado anteriormente.
 
 Esta operación se realiza desde el panel que le ofrezca el proveedor que gestione la configuración DNS de su dominio. Existen dos posibilidades:
 
 - **Su dominio no utiliza una zona DNS activa en OVHcloud** : Contacte con el proveedor que gestione dicha zona. Una vez realizada esta operación, vaya al siguiente paso.
-- **Su dominio utiliza una zona DNS activa en OVHcloud** : Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} y acceda a la sección «Web Cloud». En la columna de la izquierda, haga clic en `Dominios`{.action} y seleccione el dominio que utilizó para crear los «Glue» en el [paso 2](#step2). Abra la pestaña `Zona DNS`{.action} y haga clic en `Añadir un registro`{.action}. Seleccione el tipo de entrada *A* o *AAAA* en función del tipo de IP asociada que quiera añadir. Siga los pasos indicados en el *subdominio* y la dirección *IPv4* (A) o *IPv6* (AAAA). Si necesita ayuda, consulte la guía [Editar una zona DNS de OVHcloud](/pages/web/domains/dns_zone_edit).
+- **Su dominio utiliza una zona DNS activa en OVHcloud** : Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} y acceda a la sección «Web Cloud». En la columna de la izquierda, haga clic en `Dominios`{.action} y seleccione el dominio que utilizó para crear los «Glue» en el [etapa 2](#step2). Abra la pestaña `Zona DNS`{.action} y haga clic en `Añadir un registro`{.action}. Seleccione el tipo de entrada *A* o *AAAA* en función del tipo de IP asociada que quiera añadir. Siga los pasos indicados en el *subdominio* y la dirección *IPv4* (A) o *IPv6* (AAAA). Si necesita ayuda, consulte la guía [Editar una zona DNS de OVHcloud](/pages/web/domains/dns_zone_edit).
 
 ![glueregistry](images/glue-dns-zone-add.png){.thumbnail}
 
@@ -130,9 +130,9 @@ Esperando el tiempo de la propagación DNS.
 
 Debe modificar los servidores DNS de su dominio sustituyendo los antiguos servidores DNS por los servidores DNS personalizados creados anteriormente.
 
-Para ello, conéctese a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} y acceda a la sección «Web Cloud» de la columna izquierda. En la columna izquierda, haga clic en `Dominios`{.action} y seleccione *el dominio para el que quiera personalizar los servidores DNS*.
+Para ello, conéctese a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} y acceda a la sección `Web Cloud`{.action} de la columna izquierda. En la columna izquierda, haga clic en `Dominios`{.action} y seleccione *el dominio para el que quiera personalizar los servidores DNS*.
  
-Abra la pestaña Servidores DNS`{.action} y haga clic en `Modificar los servidores DNS`{.action}. Sustituya sus servidores DNS actuales por los que quiera utilizar como servidor DNS personalizado. 
+Abra la pestaña `Servidores DNS`{.action} y haga clic en `Cambiar los servidores DNS`{.action}. Sustituya sus servidores DNS actuales por los que quiera utilizar como servidor DNS personalizado. 
 
 Siga los pasos que se indican y, si necesita ayuda, consulte nuestra guía «[Cambiar los servidores DNS de un dominio en OVHcloud](/pages/web/domains/dns_server_general_information) ».
 
@@ -157,7 +157,7 @@ Para que la personalización de los servidores DNS sea visible en la red DNS (ef
 Esta operación se realiza desde el panel que le ofrezca el proveedor que gestione la configuración DNS de su dominio. Existen dos posibilidades:
 
 - **Su dominio no utiliza una zona DNS activa en OVHcloud** : Póngase en contacto con el proveedor que gestione dicha zona para realizar el cambio.
-- **Su dominio utiliza una zona DNS activa en OVHcloud** : Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} y acceda a la sección «Web Cloud». En la columna izquierda, haga clic en `Dominios`{.action} y seleccione el dominio para el que haya personalizado los servidores DNS. Abra la pestaña `Zona DNS`{.action} y haga clic en `Editar en modo de texto`{.action}. 
+- **Su dominio utiliza una zona DNS activa en OVHcloud** : Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} y acceda a la sección `Web Cloud`{.action}. En la columna izquierda, haga clic en `Dominios`{.action} y seleccione el dominio para el que haya personalizado los servidores DNS. Abra la pestaña `Zona DNS`{.action} y haga clic en `Editar en modo de texto`{.action}. 
 
 Aparecerá una ventana con su zona DNS en modo *textual*:
 
@@ -166,7 +166,7 @@ Aparecerá una ventana con su zona DNS en modo *textual*:
 > [!warning]
 >
 > Le recordamos que un cambio inoportuno en modo *textual* en su zona DNS puede cortar el acceso a su sitio web y/o hacer que la recepción de nuevos mensajes en sus direcciones de correo electrónico no esté disponible. 
-> En caso de duda, llame a un [proveedor especializado](https://partner.ovhcloud.com/es/directory/).
+> En caso de duda, llame a un [proveedor especializado](https://partner.ovhcloud.com/es-es/directory/).
 >
 
 En esta ventana, sustituya **únicamente en los registros de tipo *NS*** los nombres de los servidores DNS por sus propios nombres de servidores DNS personalizados **sin olvidar** aumentar en «1» el primer valor numérico de la línea *SOA*. Una vez realizados los cambios, haga clic en `Siguiente`{.action} y luego en `Aceptar`{.action}.
@@ -194,12 +194,12 @@ Para finalizar la personalización de los servidores DNS para el dominio *domain
 
 Una vez realizados los cambios, el resultado de nuestro ejemplo será el siguiente:
 
-«bash
-3600 $ TTL
-@ IN SOA dnsX1.ovh.net. tech.ovh.net. (2023071701 86400 3600 360000 300)
-                  IN NS dns1.domain.tld.
-                  IN NS dns2.domain.tld.
-«
+```bash
+$TTL 3600
+@	IN SOA dnsX1.ovh.net. tech.ovh.net. (2023071701 86400 3600 3600000 300)
+                  IN NS     dns1.domain.tld.
+                  IN NS     dns2.domain.tld.
+```
 
 Para nuestro dominio *domain.tld*, los servidores DNS que se mostrarán tras la modificación y propagación DNS serán ahora **dns1.domain.tld.** y **dns2.domain.tld.**.
 

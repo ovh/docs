@@ -106,7 +106,7 @@ Sie müssen die Einträge *A* und *AAAA* für die Hostnamen erstellen, die Sie i
 Gehen Sie hierzu in das Interface des Anbieters, der die DNS-Konfiguration Ihrer Domain verwaltet. Es gibt daher zwei Möglichkeiten:
 
 - **Ihre Domain verwendet keine aktive DNS-Zone bei OVHcloud**: Wenden Sie sich an den Anbieter, der die DNS-Zone verwaltet. Wenn Sie fertig sind, gehen Sie zum nächsten Schritt über.
-- **Ihre Domain verwendet eine aktive DNS-Zone bei OVHcloud**: Verbinden Sie sich mit Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} und gehen Sie dann in den Bereich `Web Cloud`. Klicken Sie in der linken Spalte auf `Domainnamen`{.action} und wählen Sie dann den Domainnamen aus, mit dem Sie die „GLUEs“ im [Schritt 2](#step2) erstellt haben. Gehen Sie auf den Tab `DNS-Zone`{.action} und klicken Sie dann auf `Eintrag hinzufügen`{.action}. Wählen Sie den Eintrag vom Typ *A* oder *AAAA* aus, je nachdem, welchen Typ von zugehöriger IP Sie hinzufügen möchten. Folgen Sie den Anweisungen, indem Sie die *Subdomain* und die Adresse *IPv4* (A) oder *IPv6* (AAAA) eingeben und bis zur Bestätigung des Hinzufügens fortfahren. Falls erforderlich, folgen Sie den Anweisungen in unserer Dokumentation „[OVHcloud DNS-Zone bearbeiten](/pages/web/domains/dns_zone_edit)“.
+- **Ihre Domain verwendet eine aktive DNS-Zone bei OVHcloud**: Verbinden Sie sich mit Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} und gehen Sie dann in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Domainnamen`{.action} und wählen Sie dann den Domainnamen aus, mit dem Sie die „GLUEs“ im [Schritt 2](#step2) erstellt haben. Gehen Sie auf den Tab `DNS-Zone`{.action} und klicken Sie dann auf `Eintrag hinzufügen`{.action}. Wählen Sie den Eintrag vom Typ *A* oder *AAAA* aus, je nachdem, welchen Typ von zugehöriger IP Sie hinzufügen möchten. Folgen Sie den Anweisungen, indem Sie die *Subdomain* und die Adresse *IPv4* (A) oder *IPv6* (AAAA) eingeben und bis zur Bestätigung des Hinzufügens fortfahren. Falls erforderlich, folgen Sie den Anweisungen in unserer Dokumentation „[OVHcloud DNS-Zone bearbeiten](/pages/web/domains/dns_zone_edit)“.
 
 ![glueregistry](images/glue-dns-zone-add.png){.thumbnail}
 
@@ -130,7 +130,7 @@ Es wird gewartet, bis die DNS-Propagierung abgeschlossen ist.
 
 Sie müssen die DNS-Server Ihrer Domain ändern, indem Sie die alten DNS-Server durch die zuvor erstellten benutzerdefinierten DNS-Server ersetzen.
 
-Loggen Sie sich hierzu in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und gehen Sie in den Bereich `Web Cloud`. Klicken Sie in der linken Spalte auf `Domainnamen`{.action} und wählen Sie *die Domain aus, für die Sie die DNS-Server anpassen möchten*.
+Loggen Sie sich hierzu in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Domainnamen`{.action} und wählen Sie *die Domain aus, für die Sie die DNS-Server anpassen möchten*.
  
 Gehen Sie auf den Tab `DNS-Server`{.action} und klicken Sie dann auf `DNS-Server ändern`{.action}. Ersetzen Sie nun Ihre aktuellen DNS-Server durch die Server, die Sie als personalisierte DNS-Server verwenden möchten. 
 
@@ -157,7 +157,7 @@ Damit die Personalisierung der DNS-Server im DNS-Netzwerk sichtbar ist (durch Au
 Gehen Sie hierzu in das Interface des Anbieters, der die DNS-Konfiguration Ihrer Domain verwaltet. Daher gibt es zwei Möglichkeiten:
 
 - **Ihre Domain verwendet keine aktive DNS-Zone bei OVHcloud**: Wenden Sie sich an den Anbieter, der die DNS-Zone verwaltet, um die Änderung vorzunehmen.
-- **Ihre Domain verwendet eine aktive DNS-Zone bei OVHcloud**: Verbinden Sie sich mit Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} und gehen Sie dann in den Bereich `Web Cloud`. Klicken Sie in der linken Spalte auf `Domainnamen`{.action} und wählen Sie dann den Domainnamen aus, für den Sie die DNS-Server angepasst haben. Gehen Sie auf den Tab `DNS-Zone`{.action} und klicken Sie dann auf `Im Textmodus bearbeiten`{.action}. 
+- **Ihre Domain verwendet eine aktive DNS-Zone bei OVHcloud**: Verbinden Sie sich mit Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} und gehen Sie dann in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Domainnamen`{.action} und wählen Sie dann den Domainnamen aus, für den Sie die DNS-Server angepasst haben. Gehen Sie auf den Tab `DNS-Zone`{.action} und klicken Sie dann auf `Im Textmodus bearbeiten`{.action}. 
 
 Es erscheint ein Fenster mit Ihrer DNS Zone im *text* Modus:
 
