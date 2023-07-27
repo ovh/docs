@@ -12,8 +12,6 @@ updated: 2023-07-27
 
 Os **servidores DNS** alojam as configurações DNS dos nomes de domínio: as *zonas DNS*. 
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/BvrUi26ShzI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 Estas *zonas DNS* são compostas por informações técnicas: *registos DNS*. Numa utilização clássica, os *registos DNS* permitem:
 
 - apresentar o seu website com o seu nome de domínio, através do endereço IP do seu servidor de alojamento (registos DNS dos tipos *A* e *AAAA*).
@@ -82,8 +80,8 @@ Aparecerá uma tabela com os registos « GLUE » atualmente configurados na OVHc
 
 Na janela que se abre no seu ecrã, complete as informações pedidas:
 
-|Informações|Detalhes|  
-|---|---| 
+|Informações|Detalhes|
+|---|---|
 |Nome do host|Personalize o nome do host que pretende utilizar enquanto servidor DNS personalizado.|
 |IP(s) de destino|Especifique o(s) endereço(s) de IP (IPv4 e / ou IPv6) ao(s) qual(is) o nome do host deve ser associado. Trata-se do(s) endereço(s) de IP do servidor DNS atualmente utilizado(s) pelo seu domínio. Se houver vários endereços IP, separe-os por *vírgulas*.|
 
@@ -122,7 +120,7 @@ Por este facto, adicionam-se os seguintes registos na zona DNS ativa do domínio
  - Um registo DNS do tipo *A* para o *subdomínio* **dns1.domain.tld** para o IP *11.222.333.443* (IPv4 do servidor DNS **dnsX1.ovh.net**);
  - Um registo DNS do tipo *AAAA* para o *subdomínio* **dns1.domain.tld** para o IP *0000:00d0:1:0000::1* (IPv6 do servidor DNS **dnsX1.ovh.net*);
  - Um registo DNS do tipo *A* para o *subdomínio* **dns2.domain.tld** para o IP *11.222.333.444* (IPv4 do servidor DNS **dnsX2.ovh.net**);
- - Um registo DNS do tipo *AAAA* para o *subdomínio* **dns2.domain.tld** para o IP .*0000:00d0:1:0000::2* (IPv6 do servidor DNS **dnsX2.ovh.net**).
+ - Um registo DNS do tipo *AAAA* para o *subdomínio* **dns2.domain.tld** para o IP *0000:00d0:1:0000::2* (IPv6 do servidor DNS **dnsX2.ovh.net**).
 
 Aguarde o tempo da propagação DNS.
 
@@ -165,7 +163,7 @@ Uma janela com a zona DNS em modo *textual* aparece:
 
 > [!warning]
 >
-> Uma alteração inadequada no modo *textual* na zona DNS pode interromper o acesso ao seu website e/ou tornar indisponível a receção de novas mensagens nos seus endereços de e-mail. 
+> Uma alteração inadequada no modo *textual* na zona DNS pode interromper o acesso ao seu website e/ou tornar indisponível a receção de novas mensagens nos seus endereços de e-mail.
 > Contacte um [fornecedor especializado](https://partner.ovhcloud.com/pt/diretory/) em caso de dúvida.
 >
 
@@ -232,4 +230,4 @@ Para serviços especializados (referenciamento, desenvolvimento, etc), contacte 
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
 
-Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>. 
+Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

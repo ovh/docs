@@ -120,7 +120,7 @@ Por lo tanto, se añaden los siguientes registros a la zona DNS activa del domin
  - un registro DNS de tipo *A* para el *subdominio* **dns1.domain.tld** hacia la IP *111.222.333.443* (IPv4 del servidor DNS **dnsX1.ovh.net**);
  - un registro DNS de tipo *AAAA* para el *subdominio* **dns1.domain.tld** hacia la IP *0000:00d0:1:0000::1* (IPv6 del servidor DNS **dnsX1.ovh.net**);
  - un registro DNS de tipo *A* para el *subdominio* **dns2.domain.tld** hacia la IP *111.222.333.444* (IPv4 del servidor DNS **dnsX2.ovh.net**);
- - Un registro DNS de tipo *AAAA* para el *subdominio* **dns2.domain.tld** hacia la IP .*0000:00d0:1:0000::2* (IPv6 del servidor DNS **dnsX2.ovh.net**).
+ - Un registro DNS de tipo *AAAA* para el *subdominio* **dns2.domain.tld** hacia la IP *0000:00d0:1:0000::2* (IPv6 del servidor DNS **dnsX2.ovh.net**).
 
 Esperábamos el tiempo de la propagación DNS.
 

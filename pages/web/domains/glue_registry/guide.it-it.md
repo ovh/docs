@@ -1,7 +1,7 @@
 ---
 title: "Personalizzare i server DNS di un dominio (Glue Records)"
 excerpt: "Questa guida ti mostra come personalizzare i server DNS del tuo dominio OVHcloud"
-updated: 2023-07-25
+updated: 2023-07-27
 ---
 
 > [!primary]
@@ -11,8 +11,6 @@ updated: 2023-07-25
 ## Obiettivo
 
 I **server DNS** ospitano le configurazioni DNS dei domini : le *zone DNS*. 
-
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/BvrUi26ShzI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 Queste *zone DNS* sono composte da informazioni tecniche, *record DNS*. In genere, i *record DNS* permettono di:
 
@@ -82,10 +80,10 @@ Visualizzi una tabella con tutti i record "GLUE" configurati per il tuo dominio 
 
 Nella nuova finestra, inserisci le informazioni richieste:
 
-|Informazioni|Dettaglio|  
+|Informazioni|Dettaglio|
 |---|---| 
 |Hostname|Personalizzare il nome host che si desidera utilizzare come server DNS personalizzato.|
-|IP di destinazione|Indica gli indirizzi IP (IPv4 e/o IPv6) a cui deve essere associato l’hostname. Indirizzo IP del server DNS utilizzato dal dominio. Se sono presenti più indirizzi IP, separarli con *virgole*.|
+|IP di destinazione|Indica gli indirizzi IP (IPv4 e/o IPv6) a cui deve essere associato l’hostname. Si tratta dell'indirizzo IP del server DNS attualmente utilizzato dal nome di dominio. Se sono presenti più indirizzi IP, separarli con *virgole*.|
 
 ![glueregistry](images/glue-add-glue.png){.thumbnail}
 
@@ -122,7 +120,7 @@ In questo modo, nella zona DNS attiva del dominio *domain.tld* vengono aggiunti 
  - un record DNS di tipo *A* per il *sottodominio* **dns1.domain.tld** verso l'IP *111.222.333.443* (IPv4 del server DNS **dnsX1.ovh.net**);
  - un record DNS di tipo *AAAA* per il *sottodominio* **dns1.domain.tld** verso l'IP *0000:00d0:1:0000::1* (IPv6 del server DNS **dnsX1.ovh.net**);
  - un record DNS di tipo *A* per il *sottodominio* **dns2.domain.tld** verso l'IP *111.222.333.444* (IPv4 del server DNS **dnsX2.ovh.net**);
- - Un record DNS di tipo *AAAA* per il *sottodominio* **dns2.domain.tld** verso l'IP .*0000:00d0:1:0000::2* (IPv6 del server DNS **dnsX2.ovh.net**).
+ - Un record DNS di tipo *AAAA* per il *sottodominio* **dns2.domain.tld** verso l'IP *0000:00d0:1:0000::2* (IPv6 del server DNS **dnsX2.ovh.net**).
 
 Attendiamo il tempo di propagazione DNS.
 
@@ -131,7 +129,7 @@ Attendiamo il tempo di propagazione DNS.
 È necessario modificare i server DNS del dominio sostituendo i server DNS precedenti con i server DNS personalizzati creati in precedenza.
 
 Per farlo, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} e clicca sulla sezione `Web Cloud`{.action}. Nella colonna di sinistra, clicca su `Domini`{.action} e seleziona *il dominio per il quale vuoi personalizzare i server DNS*.
- 
+
 Seleziona la scheda `Server DNS`{.action} e clicca su `Modifica i server DNS`{.action}. Sostituisci i server DNS correnti con quelli che vuoi utilizzare come server DNS personalizzato. 
 
 Completa gli step e, se necessario, consulta le istruzioni descritte nella nostra documentazione "[Modifica i server DNS di un dominio OVHcloud](/pages/web/domains/dns_server_general_information)".
@@ -165,7 +163,7 @@ Viene visualizzata una finestra che include la zona DNS in modalità *testuale*:
 
 > [!warning]
 >
-> Ti ricordiamo che una modifica inappropriata in modalità *testuale* nella tua zona DNS può impedire l'accesso al tuo sito Web e/o rendere non disponibile la ricezione di nuovi messaggi sui tuoi indirizzi email. 
+> Ti ricordiamo che una modifica inappropriata in modalità *testuale* nella tua zona DNS può impedire l'accesso al tuo sito Web e/o rendere non disponibile la ricezione di nuovi messaggi sui tuoi indirizzi email.
 > Contatta un [provider specializzato](https://partner.ovhcloud.com/it/directory/) in caso di dubbi.
 >
 

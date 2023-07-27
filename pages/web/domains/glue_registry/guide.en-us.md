@@ -116,7 +116,7 @@ As a result, the following records are added to the active DNS zone of the domai
  - An *A* DNS record for the *subdomain* **dns1.domain.tld** to the IP *111.222.333.443* (DNS server IPv4 **dnsX1.ovh.net**);
  - A *AAAA* DNS record for the *subdomain* **dns1.domain.tld** to the IP *0000:00d0:1:0000::1* (DNS server IPv6 **dnsX1.ovh.net**);
  - An *A* DNS record for the *subdomain* **dns2.domain.tld** to the IP *111.222.333.444* (DNS server IPv4 **dnsX2.ovh.net**);
- - A *AAAA* DNS record for the *subdomain* **dns2.domain.tld** to the IP .*0000:00d0:1:0000::2* (DNS server IPv6 **dnsX2.ovh.net**).
+ - A *AAAA* DNS record for the *subdomain* **dns2.domain.tld** to the IP *0000:00d0:1:0000::2* (DNS server IPv6 **dnsX2.ovh.net**).
 
 The DNS propagation will take a while.
 

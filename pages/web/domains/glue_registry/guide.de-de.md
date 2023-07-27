@@ -12,8 +12,6 @@ updated: 2023-07-27
 
 Die **DNS Server** hosten die DNS-Konfigurationen der Domainnamen: die *DNS Zonen*. 
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/BvrUi26ShzI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
 Diese *DNS* Zonen bestehen aus technischen Informationen: *DNS Einträgen*. Bei der herkömmlichen Verwendung ermöglichen die *DNS-Einträge*:
 
 - Ihre Website mit Ihrem Domainnamen unter Verwendung der IP-Adresse Ihres Hosting-Servers anzuzeigen (DNS-Einträge der Typen *A* und *AAAA*).
@@ -122,7 +120,7 @@ Dadurch werden folgende Einträge zur aktiven DNS-Zone der Domain *domain.tld* h
  - Ein DNS Eintrag vom Typ *A* für die *Subdomain* **dns1.domain.tld** zur IP *111.222.333.443* (IPv4 des DNS Servers **dnsX1.ovh.net**);
  - Ein DNS Eintrag vom Typ *AAAA* für die *Subdomain* **dns1.domain.tld** zur IP *0000:00d0:1:0000::1* (IPv6 des DNS Servers **dnsX1.ovh.net**);
  - Ein DNS Eintrag vom Typ *A* für die *Subdomain* **dns2.domain.tld** zur IP *111.222.333.444* (IPv4 des DNS Servers **dnsX2.ovh.net**);
- - Ein DNS Eintrag vom Typ *AAAA* für die *Subdomain* **dns2.domain.tld** zur IP .*0000:00d0:1:0000::2* (IPv6 des DNS Servers **dnsX2.ovh.net**).
+ - Ein DNS Eintrag vom Typ *AAAA* für die *Subdomain* **dns2.domain.tld** zur IP *0000:00d0:1:0000::2* (IPv6 des DNS Servers **dnsX2.ovh.net**).
 
 Es wird gewartet, bis die DNS-Propagierung abgeschlossen ist.
 

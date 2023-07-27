@@ -12,8 +12,6 @@ updated: 2023-07-27
 
 **serwery DNS** przechowują konfiguracje DNS domen: *strefy DNS*. 
 
-<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/BvrUi26ShzI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>>
-
 Te *strefy DNS* zawierają informacje techniczne: *rekordy DNS*. W przypadku klasycznego użycia *rekordy DNS* umożliwiają:
 
 - wyświetlać Twoją stronę WWW za pomocą nazwy domeny za pomocą adresu IP Twojego serwera hostingowego (rekordy DNS typu *A* i *AAAA*).
@@ -36,7 +34,7 @@ W zależności od Twoich potrzeb możesz spersonalizować nazwy serwerów DNS Tw
 > [!warning]
 >
 > **Personalizacja serwerów DNS domeny jest operacją wymagającą odpowiedniej wiedzy**: wykonywanie nieprawidłowej zmiany może wyłączyć dostęp do Twojej strony WWW i / lub spowodować niedostępność nowych wiadomości na Twoje konta e-mail. 
-> W przypadku wątpliwości zalecamy zastosowanie się do opisanych poniżej etapów lub skorzystanie z pomocy [wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/fr/directory/).
+> W przypadku wątpliwości zalecamy zastosowanie się do opisanych poniżej etapów lub skorzystanie z pomocy [wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/pl/directory/).
 >
 
 ### Etap 1: pobierz serwery DNS aktualnie używane przez Twoją domenę <a name="step1"></a>
@@ -82,8 +80,8 @@ W tabeli wyświetlają się wówczas rekordy "GLUE" aktualnie skonfigurowane w O
 
 W oknie, które się otworzy na ekranie, wprowadź wymagane informacje:
 
-|Informacje|Szczegóły|  
-|—|—|
+|Informacje|Szczegóły|
+|---|---|
 |Nazwa hosta|Dostosuj nazwę hosta, którego chcesz użyć jako spersonalizowanego serwera DNS.|
 |IP docelowe|Wskaż adres lub adresy IP (IPv4 i / lub IPv6), do których należy przypisać nazwę hosta. Jest to adres lub adresy IP serwera DNS aktualnie używanego przez Twoją domenę. Jeśli istnieje kilka adresów IP, należy je oddzielić przecinkami*.|
 
@@ -122,7 +120,7 @@ W związku z tym do aktywnej strefy DNS domeny dodaje się następujące rekordy
  - Wpis DNS typu *A* dla *subdomeny* **dns1.domain.tld** na IP *111.222.333.443* (IPv4 serwera DNS **dnsX1.ovh.net**);
  - Rekord DNS typu *AAAA* dla *subdomeny* **dns1.domain.tld** do IP *0000:00d0:1:0000::1* (IPv6 serwera DNS **dnsX1.ovh.net**);
  - Wpis DNS typu *A* dla *subdomeny* **dns2.domain.tld** na IP *111.222.333.444* (IPv4 serwera DNS **dnsX2.ovh.net**);
- - Rekord DNS typu *AAAA* dla *subdomeny* **dns2.domain.tld** do IP .*0000:00d0:1:0000::2* (IPv6 serwera DNS **dnsX2.ovh.net**).
+ - Rekord DNS typu *AAAA* dla *subdomeny* **dns2.domain.tld** do IP *0000:00d0:1:0000::2* (IPv6 serwera DNS **dnsX2.ovh.net**).
 
 Czekamy na czas propagacji DNS.
 
@@ -166,7 +164,7 @@ Pojawi się okno zawierające strefę DNS w trybie *tekstowym*:
 > [!warning]
 >
 > Przypominamy, że wykonywanie niewłaściwej zmiany w trybie *tekstowym* w strefie DNS może spowodować wyłączenie dostępu do Twojej strony WWW i / lub uniemożliwić otrzymywanie nowych wiadomości na Twoje konta e-mail. 
-> W przypadku wątpliwości skorzystaj z pomocy [wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/fr/directory/).
+> W przypadku wątpliwości skorzystaj z pomocy [wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/pl/directory/).
 >
 
 W tym oknie zamień **tylko w rekordach typu *NS*** nazwy serwerów DNS na własne nazwy serwerów DNS **nie zapominając**, zwiększ o "1" pierwszą cyfrową wartość linii *SOA*. Po przeprowadzeniu modyfikacji kliknij przycisk `Dalej`{.action}, a następnie `Zatwierdź`{.action}.

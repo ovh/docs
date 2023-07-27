@@ -118,7 +118,7 @@ De ce fait, on ajoute les enregistrements suivants dans la zone DNS active du no
  - Un enregistrement DNS de type *A* pour le *sous-domaine* **dns1.domain.tld** vers l'IP *111.222.333.443* (IPv4 du serveur DNS **dnsX1.ovh.net**) ;
  - Un enregistrement DNS de type *AAAA* pour le *sous-domaine* **dns1.domain.tld** vers l'IP *0000:00d0:1:0000::1* (IPv6 du serveur DNS **dnsX1.ovh.net**) ;
  - Un enregistrement DNS de type *A* pour le *sous-domaine* **dns2.domain.tld** vers l'IP *111.222.333.444* (IPv4 du serveur DNS **dnsX2.ovh.net**) ;
- - Un enregistrement DNS de type *AAAA* pour le *sous-domaine* **dns2.domain.tld** vers l'IP .*0000:00d0:1:0000::2* (IPv6 du serveur DNS **dnsX2.ovh.net**).
+ - Un enregistrement DNS de type *AAAA* pour le *sous-domaine* **dns2.domain.tld** vers l'IP *0000:00d0:1:0000::2* (IPv6 du serveur DNS **dnsX2.ovh.net**).
 
 On patiente le temps de la propagation DNS.
 
