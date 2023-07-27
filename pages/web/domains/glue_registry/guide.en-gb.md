@@ -27,7 +27,7 @@ Depending on your needs, you can customize your OVHcloud domain name’s DNS ser
 - a domain name registered with OVHcloud.
 - You must be logged in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, part `Web Cloud`{.action}.
 
-## In practice
+## Instructions
 
 > [!warning]
 >
