@@ -115,7 +115,7 @@ Per effettuare questa operazione, utilizza l’interfaccia del provider che gest
 > In ogni caso, la propagazione delle modifiche della zona DNS potrebbe richiedere da 4 a 24 ore. Ti consigliamo di attendere questo periodo prima di continuare.
 >
 
-Riprendendo l’esempio precedente, i record "GLUE" che vuoi aggiungere (a partire dal dominio *domain.tld*) sono **dns1.domain.tld** e **dns2.domain.tld**. L'obiettivo è sostituire i server DNS attuali **dnsX1.ovh.net** e **dnsX2.ovh.net**
+Riprendendo l’esempio precedente, i record "GLUE" che vuoi aggiungere (a partire dal dominio *domain.tld*) sono **dns1.domain.tld** e **dns2.domain.tld**. L'obiettivo è sostituire i server DNS attuali **dnsX1.ovh.net** e **dnsX2.ovh.net**.
 
 In questo modo, nella zona DNS attiva del dominio *domain.tld* vengono aggiunti i seguenti record:
 

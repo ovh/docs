@@ -115,7 +115,7 @@ Esta operación se realiza desde el panel que le ofrezca el proveedor que gestio
 > En todos los casos, es necesario un plazo de propagación de 4 a 24 horas para que el cambio de la zona DNS se aplique en toda la red DNS. Le recomendamos que espere este período de tiempo antes de continuar.
 >
 
-Siguiendo con el ejemplo anterior, los registros «Glue» que queremos añadir (del dominio *domain.tld*) son **dns1.domain.tld** y **dns2.domain.tld**. El objetivo es sustituir los servidores DNS actuales **dnsX1.ovh.net** y **dnsX2.ovh.net**
+Siguiendo con el ejemplo anterior, los registros «Glue» que queremos añadir (del dominio *domain.tld*) son **dns1.domain.tld** y **dns2.domain.tld**. El objetivo es sustituir los servidores DNS actuales **dnsX1.ovh.net** y **dnsX2.ovh.net**.
 
 Por lo tanto, se añaden los siguientes registros a la zona DNS activa del dominio *domain.tld*:
 
