@@ -199,7 +199,7 @@ We build, tag and push our Docker image in this private repository:
 ```console
 docker build . -t <image-name>:<tag-name>
 docker tag <image-name>:<tag-name> <docker_hub_username>/<private_repository_name>:<tag-name>
-docker <docker_hub_username>/<private_repository_name>:<tag-name>
+docker push <docker_hub_username>/<private_repository_name>:<tag-name>
 ```
 
 #### Add the private Docker registry

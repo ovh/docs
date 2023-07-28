@@ -82,11 +82,11 @@ Don't forget to keep an eye on our upcoming tutorials, where we will be deployin
 
 In the meantime, we invite you to take a look at our other NLP tutorials: 
 
-- [Analyse sentiments on Tweets](https://github.com/ovh/ai-training-examples/blob/main/notebooks/natural-language-processing/text-classification/hugging-face/sentiment-analysis-twitter/hugging_face_models_comparaison.ipynb)
+- [Analyse sentiments on Tweets](/pages/platform/ai/notebook_tuto_05_hugging_face_sentiment_analysis)
 
-- [Create a Spam classifier](https://github.com/ovh/ai-training-examples/blob/main/notebooks/natural-language-processing/text-classification/miniconda/spam-classifier/notebook-spam-classifier.ipynb)
+- [Create a Spam classifier](/pages/platform/ai/notebook_tuto_09_spam_classifier)
 
-- [Discover speech to text powers and use them to generate video subtitles, meeting scripts and summaries](https://github.com/ovh/ai-training-examples/tree/main/notebooks/natural-language-processing/speech-to-text/miniconda)
+- [Discover speech to text powers and use them to generate video subtitles, meeting scripts and summaries](/pages/platform/ai/notebook_tuto_08_speech_to_text)
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-sg/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
