@@ -130,7 +130,7 @@ Then, in the `Enter the Docker command` step, you can specify the command that a
 
 - Example:
 
-Assuming you have added your `main.py` file and your`requirements.txt` file to a container that you have linked to your job with `my_data` as your mount directory, you can then use: 
+Assuming you have added your `main.py` file and your `requirements.txt` file to a container that you have linked to your job with `my_data` as your mount directory, you can then use: 
 
 ```console
 -- bash -c 'pip install -r /workspace/my_data/requirements.txt && python /workspace/my_data/cnn_classification_mode_dataset.py'
