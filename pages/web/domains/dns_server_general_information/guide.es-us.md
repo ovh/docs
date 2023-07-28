@@ -85,4 +85,4 @@ Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con 
 
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es/support-levels/).
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.>.
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
