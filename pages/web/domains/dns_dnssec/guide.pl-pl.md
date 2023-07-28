@@ -1,66 +1,87 @@
 ---
-title: 'Zabezpieczenie domeny za pomocą DNSSEC'
-excerpt: 'Dowiedz się, jak chronić domeny przed atakiem DNS (Cache Poisoning) za pomocą DNSSEC'
-legacy_guide_number: g609
-updated: 2023-04-26
+title: "Zabezpieczenie domeny za pomocą DNSSEC"
+excerpt: "Dowiedz się, jak zabezpieczyć domenę przed atakiem DNSSEC"
+updated: 2023-07-26
 ---
 
 > [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zgłóś propozycję modyfikacji” na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia 19-10-2022**
+## Wprowadzenie 
 
-## Wprowadzenie
+Serwer DNS przechowuje jedną lub kilka stref DNS. Strefa DNS zawiera konfigurację DNS domeny. Jest to konfiguracja, która łączy Twoją domenę z powiązanymi z nią usługami (serwer hostingowy dla Twojej strony WWW, serwery dla Twoich kont e-mail z Twoją domeną, itp.).
 
-Konfiguracja DNS domeny zapisana jest na serwerach DNS. W przypadku klasycznego użycia konfiguracja ta umożliwia powiązanie domeny z serwerem lub serwerami hostującymi stronę WWW i konta e-mail. W ostatnich latach atakujący opracowali bardzo skuteczne metody zatruwania serwerów DNS, dzięki czemu mogą przekierowywać ruch z domeny na inne serwery. Możesz ochronić Twoją domenę przed tego typu atakami, korzystając z DNSSEC.
+W niektórych przypadkach przepływ danych przez serwery DNS może być kierowany przez osoby niepowołane.
+Podsumowując, ci ludzie wprowadzają w błąd cache serwerów DNS korzystając z konfiguracji DNS, którą chcą zastosować do Twojej domeny: to się nazywa "Cache poisoning".
+Dzięki temu mogą przekierować przychodzące strumienie Twojej domeny na własne strony WWW i konta e-mail.
 
-**Dowiedz się, jak aktywować DNSSEC dla Twojej domeny, aby zapewnić jej ochronę przed atakami DNS typu Cache Poisoning.**  
-Dla lepszego zrozumienia, jak ta ochrona działa, zachęcamy do lektury treści na stronie: [Jak działa usługa DNSSEC](https://www.ovhcloud.com/pl/domains/dnssec/){.external}.
+**D**omain **N**ame **S**ystem **SEC**urity wtyczki (**DNSSEC**) pozwala na ochronę konfiguracji DNS Twojej domeny przed "cache poisoning" poprzez weryfikację i uwierzytelnienie odpowiedzi DNS.
+
+**Dowiedz się, jak aktywować DNSSEC dla Twojej domeny, aby zapewnić jej ochronę przed atakiem "Cache poisoning".**
+
+Aby uzyskać więcej informacji na temat działania usługi **DNSSEC**, sprawdź naszą stronę "[Dowiedz się więcej o DNSSEC](https://www.ovhcloud.com/pl/domains/dnssec/){.external}".
+
+Zapoznaj się również z naszymi przewodnikami dotyczącymi [serwerów DNS OVHcloud](/pages/web/domains/dns_server_general_information) oraz [edycji strefy DNS OVHcloud](/pages/web/domains/dns_zone_edit), jeśli chcesz uzyskać więcej informacji na temat tych tematów.
 
 ## Wymagania początkowe
 
-- Posiadanie domeny zarejestrowanej w OVHcloud
-- Wybrana domena powinna posiadać rozszerzenie kompatybilne z DNSSEC
-- Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} > sekcja `Web Cloud`{.action}
+- Zarejestrowana domena OVHcloud
+- Nazwa domeny musi posiadać rozszerzenie kompatybilne z DNSSEC.
+- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, część `Web Cloud`{.action}.
 
 ## W praktyce
 
-Aktywacja DNSSEC jest możliwa w dwóch przypadkach:
+Aktywacja **DNSSEC** jest możliwa w dwóch przypadkach:
 
-- **Twoja domena korzysta z serwerów DNS OVHcloud**: aktywacji dokonujesz w prosty sposób w Panelu klienta;
+- **Twoja domena używa serwerów DNS OVHcloud** : aktywacja następuje za pomocą jednego kliknięcia w [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} (jeśli nie jest ona jeszcze włączona domyślnie).
 
-- **jeśli nazwa domeny nie korzysta z serwerów DNS OVHcloud**, należy skontaktować się z dostawcą usług zarządzającym konfiguracją DNS i poprosić go o wszystkie parametry. Następnie przejdź do sekcji `Web Cloud`{.action}. Kliknij przycisk `Domeny`{.action}, a następnie wybierz nazwę domeny z listy.
-Kliknij zakładkę `rekordy DS`{.action}, następnie kliknij przycisk `Edytuj`{.action} po prawej stronie, a następnie kliknij przycisk `+`{.action}.
-Teraz możesz wypełnić 4 pól "Key tag", "Flag", "Algorithm","Public key (encoded in base64)" danymi dostarczonymi przez bieżącego usługodawcę.
+- **Twoja domena nie używa serwerów DNS OVHcloud** : skontaktuj się z dostawcą zarządzającym konfiguracją DNS Twojej domeny, aby poprosić o jej ustawienia. Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i przejdź do sekcji `Web Cloud`{.action}. W kolumnie po lewej stronie kliknij `Domeny`{.action}, następnie wybierz odpowiednią domenę z listy.</br>
+Wybierz zakładkę `Rekordy DS`{.action}, kliknij przycisk `Zmień`{.action} po prawej stronie, następnie przycisk `+`{.action}, który się wyświetli.</br>
+Możesz teraz wpisać 4 pola "Key Tag", "Flaga", "Algorytm", "Klucz publiczny zakodowany w base64)" wraz z danymi dostarczonymi przez aktualnego operatora.
 
 > [!primary]
 >
-> Aby sprawdzić, czy Twoja domena używa konfiguracji DNS OVHcloud, kliknij zakładkę `Serwery DNS` w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
+> Aby sprawdzić, czy Twoja domena używa konfiguracji DNS OVHcloud, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i przejdź do sekcji `Web Cloud`{.action}. W kolumnie po lewej stronie kliknij `Domeny`{.action}, następnie wybierz odpowiednią domenę z listy. Wybierz kartę `Serwery DNS`{.action} po wybraniu domeny.
+>
+> Jeśli nazwy serwerów DNS kończą się na *ovh.net*, *ovh.ca* lub *anycast.me*, Twoja domena używa serwerów DNS OVHcloud.
 >
 
-### Etap 1: logowanie do interfejsu zarządzania domeną
+### Etap 1: dostęp do interfejsu zarządzania domeną <a name="step1"></a>
 
-Zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} > sekcja `Web Cloud`{.action}. Po zalogowaniu kliknij `Hosting`{.action}, następnie wybierz odpowiedni hosting.
+Aby aktywować rozwiązanie **DNSSEC** dla Twojej domeny, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i przejdź do sekcji `Web Cloud`{.action}. W kolumnie po lewej stronie kliknij `Domeny`{.action}, następnie wybierz odpowiednią domenę z listy.
 
-Na stronie, która się wyświetla widoczne są ogólne informacje o hostingu. 
+Wyświetli się strona z ogólnymi informacjami o hostingu. 
 
-### Etap 2: zarządzanie DNSSEC domeny
+### Etap 2: zarządzaj DNSSEC domeny
 
-W zakładce `Informacje ogólne`{.action} możesz sprawdzić stan aktywacji DNSSEC dla Twojej domeny.
+W zakładce `Informacje ogólne`{.action}, po zalogowaniu się do [etap 1](#step1), możesz sprawdzić stan aktywacji **DNSSEC** dla Twojej domeny.
 
-W sekcji „Bezpieczeństwo” sprawdź status obok wzmianki „Zabezpieczenie DNS - DNSSEC”.
+W sekcji "Bezpieczeństwo" sprawdź status obok pozycji "Zabezpieczenie DNS - DNSSEC".
 
-![DNSSEC](images/activate-dnssec-step2.png){.thumbnail}
+![dnssec](images/activate-dnssec-step2.png){.thumbnail}
 
-Używając przycisku aktywacji, będziesz mógł włączyć lub wyłączyć DNSSEC dla Twojej domeny. Wyświetli się wówczas nowe okno, w którym powinieneś zatwierdzić zmianę.
+Za pomocą przycisku aktywacyjnego powyżej hasła `Zabezpieczenie DNS - DNSSEC`{.action} możesz włączyć lub wyłączyć **DNSSEC** dla Twojej domeny. Po wykonaniu tych operacji pojawi się nowe okno, w którym możesz zatwierdzić modyfikację.
 
-![DNSSEC](images/activate-dnssec-step3.png){.thumbnail}
+![dnssec](images/activate-dnssec-step3.png){.thumbnail}
 
-### Etap 3: czas aktywacji / dezaktywacji DNSSEC 
-
-Na efekty włączenia / wyłączenia DNSSEC należy poczekać maksymalnie 24 godziny.  
+> [!primary]
+>
+> Aktywacja / wyłączanie **DNSSEC** trwa **24** godzin, aby być aktywnym.
+>
+> Ponadto, jeśli w przyszłości chcesz zmienić serwery DNS przypisane do Twojej domeny, zmiana serwerów DNS zostanie wykonana w OVHcloud dopiero po wyłączeniu **DNSSEC**. Po upływie tego czasu konieczne będzie przedłużenie czasu trwania zmiany o **24** do **48** godzin, aby wznowić prace DNS.
+>
+> Zmiana serwerów DNS domeny w połączeniu z opcją **DNSSEC** włączona do usługi zostanie wykonana w pełni po upływie **48** do **72** godzin.
+>
 
 ## Sprawdź również
 
-Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+[Informacje ogólne na temat serwerów DNS OVHcloud](/pages/web/domains/dns_server_general_information)
+
+[Edytuj strefę DNS OVHcloud](/pages/web/domains/dns_zone_edit)
+
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
+
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>. 

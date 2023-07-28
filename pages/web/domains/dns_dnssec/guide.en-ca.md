@@ -2,62 +2,81 @@
 title: 'Securing your domain name with DNSSEC'
 excerpt: 'Protect your domain name from cache poisoning by activating DNSSEC'
 legacy_guide_number: g609
-updated: 2023-04-26
+updated: 2023-07-26
 ---
 
-**Last updated 19th October 2022**
+## Objective 
 
-## Objective
+A DNS server hosts one or more DNS zones. A DNS zone contains the DNS configuration of a domain name. This configuration links your domain name to the various services associated with it (hosting server for your website, servers for your custom email addresses with your domain name, etc.).
 
-DNS servers store DNS configurations for domain names. DNS records are usually used to link your domain name to the server (or servers) that host your website and email addresses. In a conventional use, this configuration allows you to link your domain name to the server(s) that host your website and email addresses. In recent years, hackers have developed methods to poison DNS servers, allowing them to divert traffic to other servers. There is a way to protect your domain name from these actions: DNSSEC.
+In some cases, data streams that pass through DNS servers can be intercepted by hackers.
+To achieve this, they manipulate the DNS server cache to apply their own DNS configuration to your domain name. This is called *cache poisoning*.
+This way, they can redirect incoming traffic for your domain name to their websites and email addresses.
 
-**Learn how to enable DNSSEC on your domain name to protect it against Cache Poisoning.**
+The **D**omain **N**ame **S**ystem **SEC**ecurity Extensions (**DNSSEC**) protect your domain name’s DNS configuration against *cache poisoning* by verifying and authenticating DNS responses.
 
-To understand how this protection works, we recommend reading this page: [Understanding the DNSSEC service](https://www.ovhcloud.com/en-ca/domains/dnssec/){.external}.
+**Find out how to enable DNSSEC for your domain name to protect it against *cache poisoning*.**
+
+For more information on how **DNSSEC** works, please visit our page “[Understanding DNSSEC](https://www.ovhcloud.com/en-ca/domains/dnssec/){.external}”.
+
+You can also refer to our guides on [OVHcloud DNS servers](/pages/web/domains/dns_server_general_information) and on [editing an OVHcloud DNS zone](/pages/web/domains/dns_zone_edit) if you would like more information on these topics.
 
 ## Requirements
 
-- a domain name registered with OVHcloud
-- The domain name concerned must have an extension compatible with DNSSEC.
-- access to the `Web Cloud`{.action} section of the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}
+- You have a domain name registered with OVHcloud.
+- The domain name extension is compatible with DNSSEC.
+- You have access to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external} in the `Web Cloud`{.action} section.
 
 ## Instructions
 
-DNSSEC can be activated in two ways:
+You can enable **DNSSEC** in two ways:
 
-- **If your domain name uses OVHcloud DNS servers**, activation is done in one click from the OVHcloud Control Panel.
+- **Your domain name uses OVHcloud DNS servers**: Activation is done in one click from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external} (if it is not already activated by default).
 
-- **If your domain name does not use OVHcloud DNS servers**, you will need to contact the service provider managing its DNS configuration and ask them all the parameters. Then go to the `Web Cloud`{.action} section. Click `Domain names`{.action}, then choose the domain name concerned from the list.
-Open the `DS records`{.action} tab, click the `Edit`{.action} button on the right then click the  `+`{.action} button.
-You can now fill in the 4 fields, "Key tag", "Flag", "Algorithm", "Public key (encoded in base64)", with the data provided by your current service provider.
+- **Your domain name does not use OVHcloud DNS servers**: Contact the service provider managing your domain name’s DNS configuration to ask for their settings. Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external} , then go to the `Web Cloud`{.action} section. In the left-hand column, click `Domain names`{.action}, then choose the domain name concerned from the list.</br>
+Select the `DS records`{.action} tab, click the `Edit`{.action} button on the right-hand side, then click the `+`{.action} button that pops up.</br>
+You can now enter the 4 fields “Key Tag”, “Flag”, “Algorithm”, “Public key (encoded in base64)” with the data communicated by your current provider.
 
 > [!primary]
 >
-> To check if your domain name is using the OVHcloud DNS configuration: in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}, select the domain, and go to the `DNS servers`{.action} tab.
+> To check if your domain name uses the OVHcloud DNS configuration, log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external} , then go to the `Web Cloud`{.action} section. In the left-hand column, click `Domain names`{.action}, then choose the domain name concerned from the list. Select the `DNS servers`{.action} tab.
+>
+> If the DNS server names end with *ovh.net*, *ovh.ca* or *anycast.me*, your domain name is using the OVHcloud DNS servers.
 >
 
-### Step 1: Access the domain name management section.
+### Step 1: Access the domain name management <a name="step1"></a>
 
-To start with, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}, and go to the `Web Cloud`{.action} section. Click `Domains`{.action}, then choose the domain name concerned from the list.
+To activate the **DNSSEC** solution for your domain name, log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external} then go to the `Web Cloud`{.action} section. In the left-hand column, click `Domain names`{.action}, then choose the domain name concerned from the list.
 
-The page that appears displays the general information. 
+The page that appears will display general information about the service. 
 
-### Step 2: Manage your domain name’s DNSSEC service.
+### Step 2: Manage the DNSSEC of your domain name
 
-In the `General Information`{.action} tab, you can check the activation status of DNSSEC on your domain name.
-
-To do this, in the "Security" box, check the status next to "Secure Delegation - DNSSEC".
+In the `General information`{.action} tab, following [step 1](#step1), you can see the activation status of the **DNSSEC** on your domain name: Check the status next to "Secured Delegation - DNSSEC" inside the box "Security".
 
 ![dnssec](images/activate-dnssec-step2.png){.thumbnail}
 
-By moving the activation button, you can activate or deactivate the DNSSEC service on your domain name. A new window will then appear, where you will need to confirm the change.
+With the activation button above `Secured Delegation - DNSSEC`{.action}, you can activate or deactivate **DNSSEC** on your domain name. When you perform these actions, a new window will appear in which you can validate the change.
 
 ![dnssec](images/activate-dnssec-step3.png){.thumbnail}
 
-### Step 3: Wait during the activation or deactivation.
-
-Once you have decided to activate or deactivate DNSSEC on your domain name, you will need to wait a maximum of 24 hours for the change to take effect. 
+> [!primary]
+>
+> The activation/deactivation of **DNSSEC** takes **24** hours to be effective.
+>
+> Note that if you want to change the DNS servers associated with your domain name, the DNS servers will not be modified on the OVHcloud side until **DNSSEC** has been disabled. After this, an additional period of **24** to **48** hours will be required for the DNS propagation of the modification.
+>
+> In total, the modification of a domain name’s DNS servers with **DNSSEC** enabled will be fully effective after **48** to **72** hours.
+>
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+[General information on OVHcloud DNS servers](/pages/web/domains/dns_server_general_information)
+
+[Edit an OVHcloud DNS zone](/pages/web/domains/dns_zone_edit)
+
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-ca/directory/).
+
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-ca/support-levels/).
+
+Join our community of users on <https://community.ovh.com/en/>. 
