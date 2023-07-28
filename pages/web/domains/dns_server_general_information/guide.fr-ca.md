@@ -104,4 +104,4 @@ Pour des prestations spécialisées (référencement, développement, etc), cont
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr-ca/support-levels/).
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.>.
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
