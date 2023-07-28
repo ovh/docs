@@ -141,4 +141,8 @@ Si detecta una anomalía que no está relacionada con la configuración de los s
 
 [Cambiar los servidores DNS de un dominio de OVHcloud](/pages/web/domains/dns_server_general_information)
  
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es/directory/).
+
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es/support-levels/).
+
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
