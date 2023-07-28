@@ -99,4 +99,8 @@ Once you have made the required changes, there is a waiting period for them to b
 
 [Editing an OVHcloud DNS zone](/pages/web/domains/dns_zone_edit){.external}.
 
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-sg/directory/).
+
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-sg/support-levels/).
+
 Join our community of users on <https://community.ovh.com/en/>.

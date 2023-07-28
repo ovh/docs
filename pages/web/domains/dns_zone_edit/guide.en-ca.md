@@ -269,4 +269,8 @@ As a result, and in this specific case, you will not be able to create a CNAME r
 
 [Securing your domain name with DNSSEC](/pages/web/domains/dns_dnssec)
 
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-ca/directory/).
+
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-ca/support-levels/).
+
 Join our community of users on <https://community.ovh.com/en/>.

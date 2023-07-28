@@ -399,7 +399,7 @@ Ta zmienna może być używana podczas tymczasowego przenoszenia plików na inn�
 
 [Jak edytować strefę DNS?](/pages/web/domains/dns_zone_edit)
 
-W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/).
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi ofertami pomocy (https://www.ovhcloud.com/pl/support-levels/).
 

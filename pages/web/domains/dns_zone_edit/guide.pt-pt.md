@@ -271,4 +271,8 @@ Assim e neste caso específico, não poderá criar um campo CNAME para o *subdom
 
 [Proteja o seu domínio contra o Cache Poisoning graças ao DNSSEC](/pages/web/domains/dns_dnssec){.external}
 
-Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
+
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
+
+Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>. 

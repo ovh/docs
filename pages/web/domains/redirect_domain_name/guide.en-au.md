@@ -392,7 +392,7 @@ This variable can be used when you temporarily move files to another site. Visit
 
 [Editing an OVHcloud DNS zone](/pages/web/domains/dns_zone_edit)
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-au/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-au/directory/).
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-au/support-levels/).
 

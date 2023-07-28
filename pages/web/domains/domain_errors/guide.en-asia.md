@@ -137,4 +137,8 @@ If you notice an anomaly that is not related to the configuration of the DNS ser
 
 [Editing the DNS servers for an OVHcloud domain name](/pages/web/domains/dns_server_general_information)
  
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/asia/directory/).
+
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/asia/support-levels/).
+
 Join our community of users on <https://community.ovh.com/en/>.
