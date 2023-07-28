@@ -339,7 +339,7 @@ network-content-delivery-network-cdninfrastructure: Content Delivery Network (CD
 manage-operate-api: API
 manage-operate-api-apiv6: APIv6
 manage-operate-api-getting-started: Premiers pas
-manage-operate-user: Gestion des utilisateurs
+manage-operate-user: Gestion des utilisateurs et de la fédération
 manage-operate-user-getting-started: Premiers pas
 manage-operate-user-federation: Fédération d'identités
 manage-operate-iam: IAM
