@@ -1,7 +1,7 @@
 ---
 title: 'Utiliser Backup Storage sur un serveur dédié'
 excerpt: 'Découvrez comment activer et accéder à votre espace de stockage supplémentaire'
-updated: 2023-07-26
+updated: 2023-07-28
 ---
 
 ## Objectif
@@ -143,7 +143,7 @@ Un bon de commande sera créé. Une fois votre paiement enregistré, vous serez 
 
 > [!warning]
 >
-> Le service de Backup Storage a une limite de trois connexions simultanées sur une IP.
+> Le service Backup Storage a une limite de trois connexions simultanées par IP.
 >
 
 #### FTP/FTPS

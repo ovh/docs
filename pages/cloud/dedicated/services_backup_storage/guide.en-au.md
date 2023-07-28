@@ -1,7 +1,7 @@
 ---
 title: Using backup storage on a dedicated server
 excerpt: 'Find out how to enable and access your additional storage space'
-updated: 2023-07-26
+updated: 2023-07-28
 ---
 
 ## Objective
