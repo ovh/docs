@@ -1459,6 +1459,7 @@
                 + [Installer le logiciel POPC](telecom/voip/popc-installation)
                 + [Prise en main du logiciel POPC](telecom/voip/popc-utilisation)
             + [IPBX](web-cloud-phone-and-fax-voip-ipbx)
+                + [Déployer automatiquement l'IPBX 3CX sur l'offre Public Cloud OVHcloud](telecom/voip/deployer_3cx_sur_public_cloud)
                 + [Asterisk - configuration et utilisation](telecom/voip/asterisk_configuration_et_utilisation)
                 + [Comment modifier le temps d’enregistrement d’une ligne sur Asterisk](telecom/voip/comment_modifier_le_temps_denregistrement_dune_ligne_sur_asterisk)
                 + [3CX Phone System - configuration et utilisation](telecom/voip/configuration_basique_dun_sip_trunk_ovh_sur_3cx_phone_system)

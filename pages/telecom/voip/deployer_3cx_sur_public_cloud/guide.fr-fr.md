@@ -17,6 +17,13 @@ A la fin de ce guide, vous aurez les bases pour gérer le déploiement de votre 
 
 ## En pratique
 
+> [!warning]
+> 
+> OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
+>
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce guide.
+>
+
 Nous allons utiliser un template au format XML afin de pouvoir configurer automatiquement l'instance 3CX. 
 
 Ce fichier XML peut être très simple, pour simplement installer 3CX et votre license.<br>
@@ -654,5 +661,9 @@ Dans ce JSON, insérez le template dans `userData`. Attention, les sauts de lign
 [Créer votre premier projet Public Cloud](/pages/platform/public-cloud/create_a_public_cloud_project)
 
 [Créer une première instance Public Cloud et s'y connecter](/pages/platform/public-cloud/public-cloud-first-steps)
+
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
+
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
