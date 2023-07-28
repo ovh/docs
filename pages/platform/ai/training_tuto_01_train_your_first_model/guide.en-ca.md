@@ -102,9 +102,9 @@ To launch your training job, you can also use the [OVHcloud Control Panel](https
 
 Now, select the `AI Training` section (in the `AI & Machine Learning` category) and create your job by clicking `Launch a new job`.
 
-Here you will have to specify a `region` and a `Docker image`. Depending on the framework you are using in your project, you will have to select the Docker image that suits you best. This will reduce the number of library installations you need to do.
+Here you will have to specify a `region` and a `Docker image`. Depending on the framework you are using in your project, you will have to select the Docker image that suits you best. This will reduce the number of library installations you need to do. You can either choose one of our proposed images, or use your own! To discover how to build your own image, please read [this documentation](/pages/platform/ai/training_tuto_02_build_custom_image). To push this image into a registry and use it with AI Training, follow the [use & manage your registries documentation](/pages/platform/ai/gi_07_manage_registry).
 
-Make sure to mention in a `requirements.txt` file all the libraries that are not included in the image. For example, the *Pytorch* image does not contain the *Pandas* library. Since our code uses it, we will have to mention it in our `requirements.txt` file and install it, otherwise the job will not run correctly.
+In both cases, make sure to mention in a `requirements.txt` file all the libraries that are not included in the selected image. For example, the *Pytorch* image does not contain the *Pandas* library. Since our code uses it, we will have to mention it in our `requirements.txt` file and install it, otherwise the job will not run correctly.
 
 Then, you can toggle the `I want to link volumes of data to the job` switch, to attach your Object Storage container(s) to your job environment and access the data you have stored in the cloud (dataset, python files, requirements.txt, etc.). 
 
@@ -124,11 +124,11 @@ Depending on your needs, you can enable or disable the cache and select the perm
 > But since we want to keep this tutorial fairly simple, we will use only one container for our data.
 >
 
-Then, in the `Enter the Docker command` step, you can specify the command that allows you to install your librairies and run your Python script, which are both contained in your object container. 
+Then, in the `Enter the Docker command` step, you can specify the command that allows you to install your libraries and run your Python script, which are both contained in your object container. 
 
 - Example:
 
-Assuming you have added your main .py file and your requirements.txt file to a container that you have linked to your job with `my_data` as your mount directory, you can then use: 
+Assuming you have added your `main.py` file and your`requirements.txt` file to a container that you have linked to your job with `my_data` as your mount directory, you can then use: 
 
 ```console
 -- bash -c 'pip install -r /workspace/my_data/requirements.txt && python /workspace/my_data/cnn_classification_mode_dataset.py'
@@ -149,7 +149,7 @@ If you prefer to launch your job with the CLI, the principle is identical to the
 A classic training job can be launched with the following command:
 
 ```console
-ovhai job run <docker_image_name> \
+ovhai job run <registry-address>/<docker_image_name>:<tag-name> \
   	  --gpu <nb_gpus> \
 	  --volume <object_storage_name>@<region>/:/workspace/<mount_directory_name>:<permission_mode> \
 	  -- bash -c 'pip install -r /workspace/mount_directory_name/requirements.txt && python /workspace/mount_directory_name/python_script.py'
@@ -159,7 +159,7 @@ ovhai job run <docker_image_name> \
 >
 > **Arguments**
 >
-> `<docker_image_name>`: Choose the image you want to use to create your environment. You can get a list of the framework images hosted by OVHcloud [here](https://registry.hub.docker.com/u/ovhcom). You can also use another Docker image, but it may take longer to load.
+> `<docker_image_name>`: Choose the Docker image you want to use to create your environment. You can get a list of the framework images hosted by OVHcloud [here](https://registry.hub.docker.com/u/ovhcom). You can also [use your own Docker image](/pages/platform/ai/training_tuto_02_build_custom_image).
 >
 > `<nb_gpus>`: Number of GPUs your job will be run on. You can also use CPUs by replacing this line by `--cpu <nb_cpus>`.
 >
@@ -259,7 +259,7 @@ ovhai bucket object download fashion_MNIST_dataset@GRA model.net
 ## Go further
 
 - If you are interested in **deploying your model** in a Python app, discover AI Deploy by following this [tutorial](/pages/platform/ai/deploy_tuto_01_streamlit).
-- If you want learn about Docker, check out this [tutorial](/pages/platform/ai/training_tuto_02_build_custom_image).
+- If you want to learn about Docker, check out this [tutorial](/pages/platform/ai/training_tuto_02_build_custom_image).
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-ca/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
