@@ -504,6 +504,7 @@
                 + [Transfer an instance backup from one data centre to another](platform/public-cloud/transfer_instance_backup_from_one_datacentre_to_another)
                 + [Launching a script when an instance is created](platform/public-cloud/launching_script_when_creating_instance)
                 + [Sharing an object via a temporary URL](platform/public-cloud/share_an_object_via_a_temporary_url)
+                + [Sharing images between Public Cloud projects](platform/public-cloud/share_images_between_projects)
                 + [Managing firewall rules and port security on networks using OpenStack CLI](platform/public-cloud/security_group_private_network)
         + [Block Storage](public-cloud-compute-block-storage)
             + [Test disk speed](platform/public-cloud/test_disk_speed)
