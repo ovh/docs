@@ -273,4 +273,8 @@ W związku z tym nie będziesz mógł utworzyć pola CNAME dla *subdomeny-mając
 
 [Zabezpieczenie domeny przed Cache Poisoning za pomocą DNSSEC](/pages/web/domains/dns_dnssec){.external}.
 
-Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
+
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>. 

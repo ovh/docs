@@ -272,4 +272,8 @@ Así pues, en este caso concreto no podrá crear un registro CNAME para un *subd
 
 [Proteja su dominio contra el «cache poisoning» con el servicio DNSSEC](/pages/web/domains/dns_dnssec){.external}
 
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
+
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es-es/support-levels/).
+
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
