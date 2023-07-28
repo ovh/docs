@@ -20,7 +20,7 @@ Each job is linked to a **Public Cloud** project and specifies an amount of reso
 > * A job will run indefinitely until completion or manual interruption.
 
 -   [Data](/pages/platform/ai/gi_02_concepts_data) can be attached to a job to serve either/both as input for your training workload or output (e.g. model weights).
--   If you do not customise you resource request, the default requested is 1 GPU. Memory is not customisable.
+-   If you do not customise your resource request, the default requested is 1 GPU. Memory is not customisable.
 -   Billing for **jobs** is minute-based and starts at job initialisation until completion. Each commenced minute is billed completely.
 -   You can read further on job limitations [here](/pages/platform/ai/training_guide_01_capabilities).
 
