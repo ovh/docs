@@ -1,7 +1,7 @@
 ---
 title: 'Backup Storage auf einem Dedicated Server verwenden'
 excerpt: 'Erfahren Sie hier, wie Sie zusätzlichen Speicherplatz aktivieren und auf diesen zugreifen'
-updated: 2023-07-26
+updated: 2023-07-28
 ---
 
 > [!primary]
