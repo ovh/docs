@@ -24,7 +24,7 @@ You can also refer to our guides on [OVHcloud DNS servers](/pages/web/domains/dn
 
 - You have a domain name registered with OVHcloud.
 - The domain name extension is compatible with DNSSEC.
-- You must be logged in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external} and access the `Web Cloud`{.action} section.
+- You have access to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external} in the `Web Cloud`{.action} section.
 
 ## Instructions
 
