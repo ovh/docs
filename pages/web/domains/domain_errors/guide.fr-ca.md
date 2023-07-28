@@ -3,8 +3,6 @@ title: 'Résoudre une erreur sur un nom de domaine'
 updated: 2022-09-01
 ---
 
-**Dernière mise à jour le 01/09/2022**
-
 ## Objectif
 
 La création d'un nom de domaine, son transfert, son changement de propriétaire sont autant d'opérations pour lesquelles une erreur peut survenir. Une intervention de votre part peut alors s'avérer nécessaire.
@@ -14,12 +12,12 @@ La création d'un nom de domaine, son transfert, son changement de propriétaire
 ## Prérequis
 
 - Posséder un ou plusieurs noms de domaine.
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
 - Être à jour dans les [paiements](/pages/account/billing/invoice_management#pay-bills) et [renouvellements](/pages/account/billing/how_to_use_automatic_renewal#renewal-management) de vos noms de domaine.
 
 ## En pratique
 
-Depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), dirigez-vous dans la rubrique `Web Cloud`{.action} puis `Noms de domaine`{.action}. Cliquez sur `Opérations en cours`{.action} au-dessus de la liste des noms de domaine.
+Depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), dirigez-vous dans la rubrique `Web Cloud`{.action} puis `Noms de domaine`{.action}. Cliquez sur `Opérations en cours`{.action} au-dessus de la liste des noms de domaine.
 
 Un tableau vous permet de consulter toutes les opérations liées aux noms de domaine de votre espace client.
 
@@ -137,8 +135,8 @@ Si vous constatez une anomalie qui n'est pas liée à la configuration des serve
 
 [Modifier les serveurs DNS d’un nom de domaine OVHcloud](/pages/web/domains/dns_server_general_information)
  
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/directory/).
 
-Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr-ca/support-levels/).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
