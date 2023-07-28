@@ -339,6 +339,10 @@ network-content-delivery-network-cdninfrastructure: Content Delivery Network (CD
 manage-operate-api: API
 manage-operate-api-apiv6: APIv6
 manage-operate-api-getting-started: Premiers pas
+manage-operate-user: Gestion des utilisateurs
+manage-operate-user-getting-started: Premiers pas
+manage-operate-user-federation: Fédération d'identités
+manage-operate-iam: IAM
 manage-operate-terraform: Terraform
 manage-operate-observability: Observabilité
 observability-logs-data-platform: Logs Data Platform
