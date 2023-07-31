@@ -1,7 +1,7 @@
 ---
 title: 'Using OVHcloud High Performance (S3) Object Storage as Terraform Backend to store your Terraform state'
 excerpt: 'Find out how to use an OVHcloud High Performance (S3) Object Storage as a Terraform Backend to store your Terraform state'
-updated: 2022-07-12
+updated: 2023-07-31
 ---
 
 <style>
@@ -26,15 +26,14 @@ updated: 2022-07-12
  }
 </style>
 
-**Last updated 12th July 2022**
 
 ## Objective
 
-It is possible to store Terraform state on a remote data store/backend like an AWS S3 bucket, a Google Cloud Storage (GCS), etc. but are you aware that you can also store your Terraform states on an OVHcloud High Performance (S3) Object Storage container?
+It is possible to store Terraform state on a remote data store/backend like an AWS S3 bucket, a Google Cloud Storage (GCS), etc. but are you aware that you can also store your Terraform states on an OVHcloud Object Storage container?
 
 In this tutorial you will:
 
-- create an OVHcloud High Performance (S3) Object Storage container
+- create an OVHcloud Object Storage container
 - create a Terraform remote backend
 - initialize your Terraform backend
 
@@ -50,7 +49,7 @@ In this tutorial you will:
 
 ## Terraform
 
-[Terraform](https://www.terraform.io/) is an open-source infrastructure as code (IaC) tool created by [Hashicorp](https://www.hashicorp.com/) in 2014, and written in Go. It aims to build, change and version control your infrastructure. You can define and provision your infrastructure by writing the definition of your resources in Hashicorp Configuration Language (HCL).
+[Terraform](https://www.terraform.io/) is an open-source infrastructure as code (IaC) tool created by [Hashicorp](https://www.hashicorp.com/) in 2014 and written in Go. Its purpose it to build, change and version control your infrastructure. You can define and provision your infrastructure by writing the definition of your resources in Hashicorp Configuration Language (HCL).
 
 ![Terraform](images/terraform.png){.thumbnail}
 
@@ -65,7 +64,7 @@ Terraform has several concepts, one of them is the `state`.
 
 A Terraform state is a snapshot of your infrastructure from when you last ran the `terraform apply` command.
 By default, the state file is stored locally in a `terraform.tfstate` file.
-But the common usage in production environment, is to store it remotely.
+But the common usage in production environment is to store it remotely.
 
 ![Terraform state schema](images/schema.png){.thumbnail}
 
@@ -79,15 +78,17 @@ In order to do that you need to configure a `backend` in your Terraform HCL conf
 
 ## Instructions
 
-### Creating a High Performance Object Storage container/bucket
+### Creating an Object Storage container/bucket
 
-First, you need to have a High Performance Object Storage container. If you don't already have one, you can follow the [Creating a High Performance Object Storage container](/pages/cloud/storage/object_storage/s3_getting_started_with_object_storage) tutorial.
+First, you need to have an Object Storage container. If you don't already have one, you can follow the [Getting started with Object Storage](/pages/cloud/storage/object_storage/s3_getting_started_with_object_storage) tutorial.
 
-For this guide, our Object Storage container is named `terraform-state-hp`, its solution is `High Performance` and its region is `GRA`.
+For this guide, our Object Storage container is named `terraform-state-hp`, its storage class is `High Performance` and its region is `GRA`.
 
 ![terraform state container in OVHcloud Object Storage](images/object_storage.png){.thumbnail}
 
-In order to store your Terraform states on an Object Storage, and generally if you want to interact with the Object Storage, you need to have the rights to manage an Object Storage. So, at this point of this tutorial, you should have a High Performance Object Storage container, a user and you can interact with the `aws` CLI and list the OVHcloud High Performance Object Storage containers that the user is linked to:
+In order to store your Terraform states on an Object Storage, and generally if you want to interact with the Object Storage, you need to have the rights to manage an Object Storage.
+
+So, at this stage of this tutorial, you should have a High Performance Object Storage container and a user. You should also be able to interact with the `aws` CLI and list the OVHcloud High Performance Object Storage containers that the user is linked to:
 
 ```
 $ aws s3 ls

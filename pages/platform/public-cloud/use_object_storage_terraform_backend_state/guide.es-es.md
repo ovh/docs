@@ -1,6 +1,6 @@
 ---
-title: 'Using OVHcloud High Performance (S3) Object Storage as Terraform Backend to store your Terraform state'
-excerpt: 'Find out how to use an OVHcloud High Performance (S3) Object Storage as a Terraform Backend to store your Terraform state'
+title: 'Using OVHcloud Object Storage as Terraform Backend to store your Terraform state (EN)'
+excerpt: 'Find out how to use an OVHcloud Object Storage as a Terraform Backend to store your Terraform state'
 updated: 2023-07-31
 ---
 
@@ -39,8 +39,8 @@ In this tutorial you will:
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
-- A [Public Cloud Instance](https://www.ovhcloud.com/en-ca/public-cloud/) in your OVHcloud account
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es)
+- A [Public Cloud Instance](https://www.ovhcloud.com/es-es/public-cloud/) in your OVHcloud account
 - [Terraform CLI](https://www.terraform.io/downloads){.external} installed
 
 ## Before you begin

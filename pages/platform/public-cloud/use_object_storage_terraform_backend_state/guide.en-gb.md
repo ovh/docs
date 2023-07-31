@@ -26,7 +26,6 @@ updated: 2023-07-31
  }
 </style>
 
-**Last updated 31th July 2023**
 
 ## Objective
 
@@ -50,7 +49,7 @@ In this tutorial you will:
 
 ## Terraform
 
-[Terraform](https://www.terraform.io/) is an open-source infrastructure as code (IaC) tool created by [Hashicorp](https://www.hashicorp.com/) in 2014, and written in Go. It aims to build, change and version control your infrastructure. You can define and provision your infrastructure by writing the definition of your resources in Hashicorp Configuration Language (HCL).
+[Terraform](https://www.terraform.io/) is an open-source infrastructure as code (IaC) tool created by [Hashicorp](https://www.hashicorp.com/) in 2014 and written in Go. Its purpose it to build, change and version control your infrastructure. You can define and provision your infrastructure by writing the definition of your resources in Hashicorp Configuration Language (HCL).
 
 ![Terraform](images/terraform.png){.thumbnail}
 
@@ -65,7 +64,7 @@ Terraform has several concepts, one of them is the `state`.
 
 A Terraform state is a snapshot of your infrastructure from when you last ran the `terraform apply` command.
 By default, the state file is stored locally in a `terraform.tfstate` file.
-But the common usage in production environment, is to store it remotely.
+But the common usage in production environment is to store it remotely.
 
 ![Terraform state schema](images/schema.png){.thumbnail}
 
@@ -87,7 +86,9 @@ For this guide, our Object Storage container is named `terraform-state-hp`, its 
 
 ![terraform state container in OVHcloud Object Storage](images/object_storage.png){.thumbnail}
 
-In order to store your Terraform states on an Object Storage, and generally if you want to interact with the Object Storage, you need to have the rights to manage an Object Storage. So, at this point of this tutorial, you should have a High Performance Object Storage container, a user and you can interact with the `aws` CLI and list the OVHcloud High Performance Object Storage containers that the user is linked to:
+In order to store your Terraform states on an Object Storage, and generally if you want to interact with the Object Storage, you need to have the rights to manage an Object Storage.
+
+So, at this stage of this tutorial, you should have a High Performance Object Storage container and a user. You should also be able to interact with the `aws` CLI and list the OVHcloud High Performance Object Storage containers that the user is linked to:
 
 ```
 $ aws s3 ls
