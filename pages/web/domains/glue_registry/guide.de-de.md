@@ -47,7 +47,7 @@ Klicken Sie in den Optionen auf `Fetch NS from parent zone`{.action}.
 
 Es wird ein Ergebnis angezeigt:
 
-![glue-zoneMaster](images/glue-dns-zoneMaster.png){.thumbnail}
+![glue-zonemaster](images/glue-dns-zonemaster.png){.thumbnail}
 
 Notieren Sie die Namen der DNS-Server sowie **alle** IPv4-Adressen (in Form von *X.X.X.X*, wobei *X* zwischen *0* und *255* liegt) und IPv6 (weitere mögliche IP-Adressen, die keine IPv4-Adressen sind). Sie benötigen diese Daten für die weiteren Schritte dieser Anleitung.
 
