@@ -22,7 +22,7 @@ updated: 2023-07-31
 
 En 2023, OVHcloud a lancé 4 nouvelles gammes:
 
-- **vSphere** : OVH Managed VMware vSphere est notre solution la plus accessible pour les besoins de migration d'infrastructure, d'application, d'extension de datacentre ou de plan de reprise d'activité (avec les solutions Veeam ou Zerto disponibles en option)
+- **vSphere** : OVHcloud Managed VMware vSphere est notre solution la plus accessible pour les besoins de migration d'infrastructure, d'application, d'extension de datacentre ou de plan de reprise d'activité (avec les solutions Veeam ou Zerto disponibles en option).
 - **Stockage hyperconvergé (vSAN)** : La solution Hyperconverged Storage répond à vos besoins de stockage ultra-puissant. Dotés de disques SSD NVMe, nos serveurs sont spécialement conçus pour répondre aux besoins des applications les plus exigeantes. Avec VMware vSAN, vous pouvez gérer votre stockage de manière évolutive, comme vous le feriez dans votre propre centre de données.
 - **Network Security Virtualization (NSX)** : La solution Network Security est basée sur le logiciel de virtualisation de réseau et de sécurité VMware NSX (NSX-T). Vous pouvez gérer vos règles de sécurité, vos opérations et votre automatisation de manière cohérente dans vos différents environnements cloud. NSX sécurise vos logiciels, qu'ils soient hébergés sur des machines virtuelles ou dans des conteneurs, et réduit la menace des ransomwares grâce à la micro-segmentation.
 - **Software-Defined Datacenter (NSX & vSAN)** : La solution Software-Defined Datacenter comprend des fonctionnalités de stockage hyperconvergé (vSAN) et de virtualisation du réseau et de la sécurité (NSX-T). Vous bénéficiez d’un environnement cloud optimal pour migrer et moderniser vos applications les plus critiques.
@@ -122,7 +122,7 @@ Ce guide utilise les notions de **vDC d'origine** et de **vDC de destination**. 
 
 En tant que client Hosted Private Cloud VMware avec un hôte antérieur à 2020, vous souhaitez migrer vers VMware on OVHcloud.
 
-- Si vous utilisez ou prévoyez d'utiliser [NSX](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/nsx-datacenter-vsphere/) => vous devez effectuer une mise à niveau vers [Network Security Virtualization or Software-Defined DataCenter ](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/)
+- Si vous utilisez ou prévoyez d'utiliser [NSX](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/nsx-datacenter-vsphere/) => vous devez effectuer une mise à niveau vers [Network Security Virtualization ou Software-Defined DataCenter](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/)
 - Si votre infrastructure VMware doit être [certifiée](https://www.ovhcloud.com/fr/enterprise/certification-compliance/) (HDS, PCI-DSS, HIPA) => vous devez effectuer une mise à niveau vers [VMware on OVHcloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/)
 - Si vous n'avez pas NSX sur votre infrastructure actuelle et que vous n'avez pas besoin de certifications => vous pouvez choisir [vSphere](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/). 
 - Les options Veeam Backup Managed et Zerto Disaster Recovery sont disponibles sur l'ensemble des gammes.
