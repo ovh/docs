@@ -6,7 +6,7 @@ updated: 2023-06-29
 
 ## Objectif
 
-Vous pouvez identifier si un VPS est issu d'une ancienne gamme grâce au nom de référence affiché dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) : si cette référence interne est au format *vpsXXXX.ovh.net* (où *X* représente un chiffre) et que vous n’avez pas migré le VPS correspondant vers [notre gamme actuelle de produits](https://www.ovhcloud.com/fr/vps/), il s’agit d’un VPS *legacy*. 
+Vous pouvez identifier si un VPS est issu d'une ancienne gamme grâce au nom de référence affiché dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) : si cette référence interne est au format *vpsXXXX.ovh.net* (où *X* représente un chiffre) et que vous n’avez pas migré le VPS correspondant vers [notre gamme actuelle de produits](https://www.ovhcloud.com/fr-ca/vps/), il s’agit d’un VPS *legacy*. 
 
 La référence d'un VPS de gamme actuelle se présente de cette façon : *vps-XXXXXXX.vps.ovh.net* (où *X* peut être un chiffre ou une lettre).
 
@@ -16,12 +16,12 @@ Un VPS *legacy* implique quelques différences en termes de gestion.
 
 ## Prérequis
 
-- Un [VPS](https://www.ovhcloud.com/fr/vps/) *legacy* dans votre compte OVHcloud
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- Un [VPS](https://www.ovhcloud.com/fr-ca/vps/) *legacy* dans votre compte OVHcloud
+- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
 
 ## En pratique
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), ouvrez l'onglet `Bare Metal Cloud`{.action} et sélectionnez votre serveur parmi les `Serveur privés virtuels`{.action}.
+Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), ouvrez l'onglet `Bare Metal Cloud`{.action} et sélectionnez votre serveur parmi les `Serveur privés virtuels`{.action}.
 
 Dans l'onglet `Accueil`{.action} vous pouvez accéder aux opérations principales du VPS depuis la section **Raccourcis**.
 
@@ -105,11 +105,11 @@ Utilisez cette option pour vous connecter à votre VPS via KVM. Retrouvez tous l
 
 ### Changer le propriétaire
 
-Ce lien vous dirige vers le formulaire à remplir en cas de changement de propriétaire d'un VPS. Si vous avez besoin d'aide pour effectuer cette procédure, contactez nos équipes du support en créant un ticket dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+Ce lien vous dirige vers le formulaire à remplir en cas de changement de propriétaire d'un VPS. Si vous avez besoin d'aide pour effectuer cette procédure, contactez nos équipes du support en créant un ticket dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
 
 ### Migrer vers la nouvelle gamme
 
-Votre VPS peut être migré automatiquement vers la gamme actuelle. Découvrez les avantages de cette offre dans [notre FAQ dédiée à la migration de VPS](https://www.ovhcloud.com/fr/vps/vps-offer-migration/).
+Votre VPS peut être migré automatiquement vers la gamme actuelle. Découvrez les avantages de cette offre dans [notre FAQ dédiée à la migration de VPS](https://www.ovhcloud.com/fr-ca/vps/vps-offer-migration/).
 
 ## Aller plus loin
 

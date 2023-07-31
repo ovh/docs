@@ -6,20 +6,22 @@ updated: 2023-06-27
 
 ## Objective
 
-You can identify an old-range VPS by the reference name displayed in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB): If this internal identifier has the format *vpsXXXX.ovh.net* (in which *X* stands for a number) and you have not migrated the corresponding VPS to our [current product line](https://www.ovhcloud.com/en-gb/vps/), this is a legacy VPS. There are a few differences to consider when managing such a service.
+You can identify an old-range VPS by the reference name displayed in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia): If this internal identifier has the format *vpsXXXX.ovh.net* (in which *X* stands for a number) and you have not migrated the corresponding VPS to our [current product line](https://www.ovhcloud.com/asia/vps/), this is a legacy VPS. There are a few differences to consider when managing such a service.
 
 The reference name of a current VPS looks like this: *vps-XXXXXXX.vps.ovh.net* (where *X* can be a number or a letter).
 
 **This guide explains the Control Panel functions of a legacy VPS.**
 
+
 ## Requirements
 
-- A legacy [Virtual Private Server](https://www.ovhcloud.com/en-gb/vps/vps-offer-migration/) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- A legacy [Virtual Private Server](https://www.ovhcloud.com/asia/vps/vps-offer-migration/) in your OVHcloud account
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
+
 
 ## Instructions
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), open `Bare Metal Cloud`{.action} and select your server from `Virtual Private Servers`{.action}. On the `Home`{.action} tab you can access the main VPS operations from the section **Shortcuts**.
+Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), open `Bare Metal Cloud`{.action} and select your server from `Virtual Private Servers`{.action}. On the `Home`{.action} tab you can access the main VPS operations from the section **Shortcuts**.
 
 ![controlpanel](images/legacy_vps_1.png){.thumbnail}
 
@@ -63,7 +65,7 @@ You will receive an email once the installation is complete. This process may ta
 When you reinstall your VPS, you will be sent an email containing your root password for connecting to your VPS via [SSH](/pages/cloud/dedicated/ssh_introduction), unless you have selected an [SSH key](/pages/cloud/dedicated/creating-ssh-keys-dedicated) to be preinstalled.
 
 
-#### Disabling remote access for the root user
+#### Disabling server access for the root user
 
 The user "**root**" is created by default on GNU/Linux systems. Root access means having the highest level of permissions on an operating system. It can be dangerous to leave your VPS accessible via the root user login and password, as this account can perform irreversibly damaging operations.
 
@@ -104,11 +106,12 @@ Use this option to connect to your VPS via KVM. Find all the details in [our gui
 
 ### Change holder
 
-This link directs you to the form to fill out in case the owner of the VPS has to be changed. Contact our support teams by creating a ticket in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) if you need assistance with this procedure.
+This link directs you to the form to fill out in case the owner of the VPS has to be changed. Contact our support teams by creating a ticket in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia) if you need assistance with this procedure.
 
 ### Migrate to the new range
 
-Your VPS can be migrated to the current range automatically. Find out the benefits of this offer on our [VPS migration FAQ page](https://www.ovhcloud.com/en-gb/vps/vps-offer-migration/).
+Your VPS can be migrated to the current range automatically. Find out the benefits of this offer on our [VPS migration FAQ page](https://www.ovhcloud.com/asia/vps/vps-offer-migration/).
+
 
 
 ## Go further
