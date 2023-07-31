@@ -347,7 +347,7 @@ NER Model API delivers accurate, reliable results, enabling you to streamline wo
 
 Discover and understand the true entities behind text to improve customer satisfaction, make data-driven decisions and optimize your business strategies with entity analysis.
 
-### How NER works?
+### How does NER work?
 
 **Note**
 
