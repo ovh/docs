@@ -364,7 +364,7 @@ Entities:
 | LOC (Location) | locations or places mentioned in the text, such as cities, countries, and landmarks |
 | ORG (Organization) | organizational entities including companies, institutions, government agencies and other formal or informal groups with recognized names |
 | PER (Person) | personal entities, such as individuals’ names, including people, fictional characters, or any other references to specific persons in the text |
-| MISC (Miscellaneous) | named entities that do not fall into other specific categories, such as events, social medias, or other entities that do not fit into the predefined tags LOC, ORG, or PER |
+| MISC (Miscellaneous) | named entities that do not fall into other specific categories, such as events, social media or other entities that do not fit into the predefined tags LOC, ORG, or PER |
 
 #### Logits
 
