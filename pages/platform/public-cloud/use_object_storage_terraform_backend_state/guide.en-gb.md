@@ -81,7 +81,7 @@ In order to do that you need to configure a `backend` in your Terraform HCL conf
 
 ### Creating an Object Storage container/bucket
 
-First, you need to have a Object Storage container. If you don't already have one, you can follow the [Getting started with Object Storage](/pages/cloud/storage/object_storage/s3_getting_started_with_object_storage) tutorial.
+First, you need to have an Object Storage container. If you don't already have one, you can follow the [Getting started with Object Storage](/pages/cloud/storage/object_storage/s3_getting_started_with_object_storage) tutorial.
 
 For this guide, our Object Storage container is named `terraform-state-hp`, its storage class is `High Performance` and its region is `GRA`.
 
