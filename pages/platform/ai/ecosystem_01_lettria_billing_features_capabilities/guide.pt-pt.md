@@ -1,7 +1,7 @@
 ---
 title: AI Partners Ecosystem - Lettria - Models features, capabilities and billing (EN)
 excerpt: Learn how Lettria models and billing work
-updated: 2023-07-10
+updated: 2023-07-31
 ---
 
 ## Objective
@@ -14,7 +14,7 @@ OVHcloud offers different Artificial Intelligence services through its AI Partne
 
 **Lettria** is a start-up specialized in **NLP** (Natural Language Processing). The platform enables all organizations, from start-ups to large corporations, to perform textual analysis on their data to take the best strategic decisions.
 
-Lettria provides text understanding models that allow users to easily identify and extract key information from their text. This method relies on artificial intelligence and NLP techniques to understand the sentiment or emotions of a text.
+Lettria provides text understanding models that allow users to easily identify and extract key information from their text. This method relies on artificial intelligence and NLP techniques to extract **sentiments**, **emotions** and **entities** from a text.
 
 The uses are many:
 
@@ -25,7 +25,7 @@ The uses are many:
 
 ## Lettria models features
 
-The Lettria models available at OVHcloud cover two NLP tasks: **sentiment analysis** and **emotion extraction**.
+The Lettria models available at OVHcloud cover three NLP tasks: **sentiment analysis**, **emotion extraction** and **name entity recognition**.
 
 ### Sentiment
 
@@ -75,6 +75,51 @@ Output example:
 > To learn more about **Lettria's emotion extraction model**, please refer to this [documentation](https://doc.lettria.com/api-reference/comprehension/2.0/schemas/sentence/ml-emotion).
 >
 
+### Name Entity Recognition
+
+Lettria gives you the possibility to extract entities from a text. The principle is to automatically identify and classify key entities such as **Locations** (LOC), **Persons** (PER), **Organizations** (ORG) and **Miscellaneous** (MISC) within a text.
+
+Input example:
+
+```console
+John is using Lettria app for NER task.
+```
+
+Output example:
+
+```console
+{
+   "predictions":[
+      [
+         {
+            "entity":"PER",
+            "score":0.834,
+            "confidence":0.673,
+            "words":"John",
+            "start":0,
+            "end":4
+         },
+         {
+            "entity":"MISC",
+            "score":0.941,
+            "confidence":0.919,
+            "words":"Lettria",
+            "start":14,
+            "end":21
+         }
+      ]
+   ],
+   "analysed_chars":32
+}
+```
+
+![LettriaNERExample](images/lettria-ner-example.png){.thumbnail}
+
+> [!primary]
+>
+> To learn more about **Lettria's NER model**, please refer to this [documentation](https://doc.lettria.com/api-reference/comprehension/2.0/schemas/sentence/ml-ner).
+>
+
 ## Lettria quick start
 
 To be able to query the Lettria models, you must first deploy one of the Lettria images with AI Deploy.
@@ -119,7 +164,7 @@ ovhai app run \
     --gpu 1 \
     --label <name=value> \
     --partner lettria \
-	  emotion-analysis:v0.1.0-gpu
+    emotion-analysis:v0.1.0-gpu
 ```
 
 > [!primary]

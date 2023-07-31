@@ -1,7 +1,7 @@
 ---
 title: AI Partners Ecosystem - Lettria - Models concept
 excerpt: Learn how to use Lettria models
-updated: 2023-07-17
+updated: 2023-07-31
 ---
 
 ## Objective
