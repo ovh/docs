@@ -1,5 +1,5 @@
 ---
-title: "Comment se connecter à l'espace client OVHcloud en utilisant l'IAM OVHcloud"
+title: "Comment créer une politique IAM pour permettre à un utilisateur de se connecter à l'espace client OVHcloud"
 excerpt: Découvrez comment octroyer les droits minimums nécessaires pour vous connecter à votre espace client
 updated: 2023-07-03
 ---

@@ -1,5 +1,5 @@
 ---
-title: Cómo conectarse al área de cliente de OVHcloud utilizando OVHcloud IAM (EN)
+title: Cómo crear una política IAM que permita al usuario conectarse al área de cliente de OVHcloud (EN)
 excerpt: "Find out how to grant the minimum rights required to log to the OVHcloud Control Panel"
 updated: 2023-07-03
 ---
