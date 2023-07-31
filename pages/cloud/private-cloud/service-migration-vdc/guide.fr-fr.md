@@ -4,14 +4,14 @@ routes:
     canonical: '/pages/cloud/private-cloud/service-migration'
 excerpt: Découvrez comment déplacer vos VMs d'un vDC existant vers un nouveau vDC dans la même infrastructure VMware
 hidden: true
-updated: 2023-07-05
+updated: 2023-07-31
 ---
 <style>
 .ovh-api-main { background:#fff;}
 </style> 
 
 
-**Ce guide explique comment déplacer des machines virtuelles (VM) d'un virtual DataCenter (vDC) d'origine (DC ou SDDC) vers un nouveau vDC de destination (Essentials ou Premier).**
+**Ce guide explique comment déplacer des machines virtuelles (VM) d'un virtual DataCenter (vDC) d'origine (PREMIER ou SDDC) vers un nouveau vDC de destination (VMware on OVHcloud).**
 
 > [!warning]
 >
@@ -20,7 +20,14 @@ updated: 2023-07-05
 
 ## Objectif
 
-En 2020, OVHcloud a lancé 2 nouvelles gammes, Essentials et Premier. Vous pouvez désormais passer des gammes commerciales antérieures à 2019 aux nouvelles gammes tout en conservant la même infrastructure VMware (pcc-123-123-123-123) grâce aux fonctionnalités Storage Motion et vMotion.
+En 2023, OVHcloud a lancé 4 nouvelles gammes:
+
+- **vSphere** : OVHcloud Managed VMware vSphere est notre solution la plus accessible pour les besoins de migration d'infrastructure, d'application, d'extension de datacentre ou de plan de reprise d'activité (avec les solutions Veeam ou Zerto disponibles en option).
+- **Stockage hyperconvergé (vSAN)** : La solution Hyperconverged Storage répond à vos besoins de stockage ultra-puissant. Dotés de disques SSD NVMe, nos serveurs sont spécialement conçus pour répondre aux besoins des applications les plus exigeantes. Avec VMware vSAN, vous pouvez gérer votre stockage de manière évolutive, comme vous le feriez dans votre propre centre de données.
+- **Network Security Virtualization (NSX)** : La solution Network Security est basée sur le logiciel de virtualisation de réseau et de sécurité VMware NSX (NSX-T). Vous pouvez gérer vos règles de sécurité, vos opérations et votre automatisation de manière cohérente dans vos différents environnements cloud. NSX sécurise vos logiciels, qu'ils soient hébergés sur des machines virtuelles ou dans des conteneurs, et réduit la menace des ransomwares grâce à la micro-segmentation.
+- **Software-Defined Datacenter (NSX & vSAN)** : La solution Software-Defined Datacenter comprend des fonctionnalités de stockage hyperconvergé (vSAN) et de virtualisation du réseau et de la sécurité (NSX-T). Vous bénéficiez d’un environnement cloud optimal pour migrer et moderniser vos applications les plus critiques.
+
+Vous pouvez désormais passer des gammes commerciales antérieures à 2020 aux nouvelles gammes tout en conservant la même infrastructure VMware (pcc-192-0-2-1) grâce à Storage Motion et vMotion.
 
 Ce processus comporte deux aspects :
 
@@ -29,8 +36,7 @@ Ce processus comporte deux aspects :
 
 ## Prérequis
 
-- Une infrastructure PCC (SDDC ou DC)
-- Un [nouveau vRack ou un vRack vide](/pages/cloud/private-cloud/using_private_cloud_in_vrack) ajouté sur votre infrastructure PCC (SDDC ou DC)
+- Une infrastructure PCC (SDDC ou PREMIER)
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} dans la partie `Hosted Private Cloud`{.action}.
 - Être connecté à votre interface d'administration vSphere
 
@@ -55,7 +61,7 @@ Ce guide utilise les notions de **vDC d'origine** et de **vDC de destination**. 
 &emsp;&emsp;[Etape 2.1.1 Vérifier l'éligibilité de vos services](#eligible)<br />
 &emsp;&emsp;[Etape 2.1.2 Obtenir votre "serviceName"](#checkupgrade)<br />
 &emsp;&emsp;[Etape 2.1.3 Obtenir votre "planCode"](#checkupgradeto)<br />
-&emsp;&emsp;[Etape 2.1.4 Vérifier avec vos "serviceName" et "planCode" votre possibilité d'ajouter un vDC Premier ou Essentials](#snandpncheck)<br />
+&emsp;&emsp;[Etape 2.1.4 Vérifiez que vous pouvez effectuer la mise à niveau avec vos "serviceName" et "planCode"](#snandpncheck)<br />
 &emsp;&emsp;[Etape 2.1.5 Valider votre commande](#createorder)<br />
 &ensp;&ensp;[Etape 2.2 Ajouter des nouveaux hosts et datastores](#addhostandds)<br />
 &ensp;&ensp;[Etape 2.3 Convertir une datastore comme global](#converttoglobal)<br />
@@ -77,7 +83,7 @@ Ce guide utilise les notions de **vDC d'origine** et de **vDC de destination**. 
 &ensp;&ensp;[Etape 4.5 Activer vSAN (si pertinent)](#vsan)<br />
 &ensp;&ensp;[Etape 4.6 Recréer votre configuration réseau vSphere](#vspherenetwork)<br />
 &ensp;&ensp;[Etape 4.7 Vérifier l'organisation de votre inventaire (si pertinent)](#inventory)<br />
-&ensp;&ensp;[Etape 4.8 Migrer NSX V vers NSX (si pertinent)](#nsx)<br />
+&ensp;&ensp;[Etape 4.8 Migrer NSX-V vers NSX (si pertinent)](#nsx)<br />
 &emsp;&emsp;[Etape 4.8.1 NSX Distributed Firewall](#dfw)<br />
 &emsp;&emsp;[Etape 4.8.2 NSX Distributed Logical Router](#dlr)<br />
 &emsp;&emsp;[Etape 4.8.3 NSX Edges](#edge)<br />
@@ -109,35 +115,28 @@ Ce guide utilise les notions de **vDC d'origine** et de **vDC de destination**. 
 <a name="design"></a>
 ### Etape 1 Concevoir votre infrastructure
 
-À la fin de l'étape 1, vous devriez avoir une vision claire de la gamme commerciale 2020 vers laquelle vous souhaitez passer, ainsi que des hosts et des datastores que vous souhaitez utiliser.
+À la fin de l'étape 1, vous devriez avoir une vision claire de la gamme commerciale 2023 vers laquelle vous souhaitez passer, ainsi que des hôtes et du stockage que vous souhaitez utiliser.
 
 <a name="premoress"></a>
-#### Etape 1.1 Choisir entre Premier et Essentials
+#### Etape 1.1 Choix entre différentes gammes
 
-En tant que client Hosted Private Cloud VMware avec des hosts antérieurs à 2020, vous souhaitez passer aux hosts 2020.
-Tout d'abord, vous devrez sélectionner une gamme commerciale entre [Essentials](https://www.ovhcloud.com/fr/managed-bare-metal/) (processeur Intel 2018, pas de NSX, pas de certification, bande passante réseau ~ 1Gbps) et [Premier](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/) (CPU Intel 2020, NSX obligatoire, certifications disponibles, bande passante réseau ~10Gbps)
-Veuillez noter que ce choix est définitif. 
+En tant que client Hosted Private Cloud VMware avec un hôte antérieur à 2020, vous souhaitez migrer vers VMware on OVHcloud.
 
-Voici quelques lignes directrices pour aider votre décision :
-
-- Si vous utilisez ou prévoyez d'utiliser [NSX](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/nsx-datacenter-vsphere/) => vous devez ajouter un vDC de destination [Premier](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/).
-- Si vous avez besoin que votre infrastructure VMware soit [certifiée](https://www.ovhcloud.com/fr/enterprise/certification-conformity/) (HDS, PCI-DSS, HIPA) => vous devez ajouter un vDC de destination [ Premier](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/).
-- Si vous n'avez pas NSX sur votre infrastructure actuelle et que vous n'avez pas besoin de certifications => vous pouvez choisir entre un vDC de destination [Essentials](https://www.ovhcloud.com/fr/managed-bare-metal/) ou [Premier](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/). En règle générale, les hosts Essentials ont un meilleur rapport coût/cœur tandis que Premier optimise le rapport coût/RAM. Vous pouvez comparer les [hosts Essentials](https://www.ovhcloud.com/en-gb/managed-bare-metal/options/) et les [hosts Premier](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/hosts/).
-- Les options Veeam Managed Backup et Zerto Disaster Recovery sont disponibles sur Essentials et Premier.
-- Si votre infrastructure actuelle est en AMD-2013, vous ne pourrez pas migrer vers Premier.
+- Si vous utilisez ou prévoyez d'utiliser [NSX](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/nsx-datacenter-vsphere/) => vous devez effectuer une mise à niveau vers [Network Security Virtualization ou Software-Defined DataCenter](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/)
+- Si votre infrastructure VMware doit être [certifiée](https://www.ovhcloud.com/fr/enterprise/certification-compliance/) (HDS, PCI-DSS, HIPA) => vous devez effectuer une mise à niveau vers [VMware on OVHcloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/)
+- Si vous n'avez pas NSX sur votre infrastructure actuelle et que vous n'avez pas besoin de certifications => vous pouvez choisir [vSphere](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/). 
+- Les options Veeam Backup Managed et Zerto Disaster Recovery sont disponibles sur l'ensemble des gammes.
 
 Attention, vous ne démarrez pas un nouveau service, il vous faudra commander vos ressources à l'unité. La création d'un nouveau vDC n'entraine pas la livraison de 2 hosts et 2 datastores.
 
-![decision tree](images/ESSorPRE.png){.thumbnail}
+![decision tree](images/tree.png){.thumbnail}
 
 <a name="selecthosts"></a>
 #### Etape 1.2 Sélectionner vos hosts (compute)
 
 Vous avez maintenant choisi votre gamme commerciale.
 
-En fonction de vos besoins en termes de calcul (CPU, RAM), vous pouvez sélectionner le type et le nombre d'hosts que vous souhaitez commander entre les [hosts Essentials](https://www.ovhcloud.com/fr/managed-bare-metal/options/) et les [hosts Premier](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/hosts/). Par exemple, si vous utilisez actuellement 3xDC2016 XL+, et que vous avez choisi Essentials, vous pouvez passer à 3xESS128 (grâce à un processeur plus puissant) ou 3xESS256 (si la RAM est votre critère de choix).
-
-Attention, ce choix n'est pas définitif, vous pouvez commencer par 3xESS128 et passer à  3xESS256 par la suite.
+Attention, ce choix n'est pas définitif, vous pouvez commencer par 2 hôtes de 96GB de RAM et passer à 3 hôtes de 192GB de RAM.
 
 <a name="selectdatastores"></a>
 #### Etape 1.3 Sélectionner vos datastores (storage) <a name="introduction"></a>
@@ -152,7 +151,7 @@ Vous avez maintenant choisi votre gamme commerciale et vos hosts. Veuillez noter
 **Résultat attendu :** boolean
 
 Si le retour API est `TRUE`, ce datastore est compatible avec les nouvelles gammes et vous pourrez le conserver. Vous pourrez le définir comme global par la suite dans le processus de mise à jour.
-Si le retour API est `FALSE`, ce datastore n'est pas compatible, il faudra alors commander de nouveaux datastores, soit des [datastores Essentials](https://www.ovhcloud.com/fr/managed-bare-metal/options/) soit des [datastores Premier](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/datastores-nfs/).<br>
+Si le retour API est `FALSE`, ce datastore n'est pas compatible, vous devrez commander de nouveaux datastores, [VMware On OVHcloud datastores](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/datastores-nfs/).<br>
 En fonction de vos besoins en capacité de stockage, vous pouvez choisir le type et le nombre de datastores à commander.
 
 Il vous suffit de remplacer les datastores qui ne sont pas compatibles. Il vous sera possible de libérer les datastores qui ne sont pas compatibles à la fin du processus.
@@ -162,68 +161,18 @@ Veuillez noter que ce choix n'est pas définitif, vous pouvez commencer par 4x3T
 <a name="build"></a>
 ### Etape 2 Construire votre nouvelle infrastructure
 
-A la fin de l'étape 2, vous devriez avoir au sein de votre infrastructure VMware actuelle (pcc -123-123-123-123) un nouveau vDC de destination avec des hosts 2020 et des datastores globales.
+A la fin de l'étape 2, vous devriez avoir au sein de votre infrastructure VMware actuelle (pcc-192-0-2-1) un nouveau vDC de destination avec des hosts 2020 et des datastores globales.
 
 <a name="addvdc"></a>
 #### Etape 2.1 Ajouter un nouveau vDC de destination
 
 Vous pouvez ajouter un vDC de destination en procédant comme suit :
 
-<a name="eligible"></a>
-##### Etape 2.1.1 Vérifier l'éligibilité de vos services
-
-> [!api]
->
-> @api {GET} /dedicatedCloud/{serviceName}/commercialRange/compliance
->
-
-**Résultat attendu :** vous retrouverez la liste des gammes commerciales compatibles avec votre infrastructure VMware, dont Essentials ou Premier si vous êtes compatible. Veuillez noter que l'ajout d'un vDC 2020 n'est pas encore disponible pour tous les services car des opérations de mise à niveau et de maintenance sont en cours. Nous vous avertirons dès que cette migration sera possible pour votre infrastructure.
-
-<a name="checkupgrade"></a>
-##### Etape 2.1.2 Obtenir votre "serviceName"
-
-> [!api]
->
-> @api {GET} /order/upgrade/privateCloudManagementFee
->
-
-**Résultat attendu :** vous devriez obtenir "pcc-123-123-123-123/managementfee" 
-
-<a name="checkupgradeto"></a>
-##### Etape 2.1.3 Obtenir votre "planCode"
-
-> [!api]
->
-> @api {GET} /order/upgrade/privateCloudManagementFee/{serviceName}
->
-
-**Résultat attendu :** vous devriez obtenir le planCode à utiliser lors du prochain call API de type "pcc-management-fee-premier" or "pcc-management-fee-essentials"
-
-<a name="snandpncheck"></a>
-##### Etape 2.1.4 Vérifier avec vos "serviceName" et "planCode" votre possibilité d'ajouter un vDC Premier ou Essentials
-
-> [!api]
->
-> @api {GET} /order/upgrade/privateCloudManagementFee/{serviceName}/{planCode} ( quantity : 1 )
->
-
-**Résultat attendu :** vous devriez obtenir une commande provisoire pour l'ajout d'un vDC Premier ou Essentials
-
-<a name="createorder"></a>
-##### Etape 2.1.5 Valider votre commande
-
-> [!api]
->
-> @api {POST} /order/upgrade/privateCloudManagementFee/{serviceName}/{planCode} ( quantity : 1 )
->
-
-**Résultat attendu :** order.upgrade.OperationAndOrder
-
-Cet appel API génère un bon de commande qui doit être validé. Si vous n'avez pas de moyen de paiement, merci de contacter le support ou votre Account Manager pour le faire valider.
+![add a Virtual Datacenter](images/add-vDC.gif){.thumbnail}
 
 > [!primary]
 >
-> Tant que vous n’aurez pas attribué les autorisations nécessaires aux utilisateurs sur le nouveau vDC, vous ne pourrez pas voir le nouveau vDC dans le client vSphere.
+> Tant que vous n'aurez pas attribué les autorisations nécessaires aux utilisateurs sur le nouveau vDC, vous ne pourrez pas voir le nouveau vDC dans le client vSphere.
 >
 
 <a name="addhostandds"></a>
@@ -338,7 +287,7 @@ Voici une liste des éléments à prendre en compte :
 
 L'installation d'un nouveau vDC de destination nécessite la reconstruction des pools de ressources, notamment les réservations, les partages et les applications virtuelles. Cela s'applique également aux vApps et à toute configuration de commande de démarrage définie dans les vApps.
 
-Pour plus d'informations, consultez la documentation de [VMware pour la gestion des pools de ressources](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.resmgmt.doc/GUID-60077B40-66FF-4625-934A-641703ED7601.html){.external}.
+Pour plus d'informations, consultez la documentation de [VMware pour la gestion des pools de ressources](https://docs.vmware.com/fr/VMware-vSphere/7.0/com.vmware.vsphere.resmgmt.doc/GUID-60077B40-66FF-4625-934A-641703ED7601.html){.external}.
 
 Voici une liste d'éléments à prendre en compte:
 
@@ -376,7 +325,7 @@ Voici une liste des éléments à prendre en compte:
 - Paramètres de Teaming et de Failover
 - Allocation des ressources réseau du client
 
-Pour plus d'informations, consultez le guide OVHcloud sur [comment créer un V(x)LAN dans un vRack](/pages/cloud/private-cloud/creation_vlan#vlan-vrack) et la documentation de VMware sur [comment modifier les paramètres des groupes de ports distribués](https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.networking.doc/GUID-FCA2AE5E-83D7-4FEE-8DFF-540BDB559363.html){.external}.
+Pour plus d'informations, consultez le guide OVHcloud sur [comment créer un V(x)LAN dans un vRack](/pages/cloud/private-cloud/creation_vlan#vlan-vrack) et la documentation de VMware sur [comment modifier les paramètres des groupes de ports distribués](https://docs.vmware.com/fr/VMware-vSphere/7.0/com.vmware.vsphere.networking.doc/GUID-FCA2AE5E-83D7-4FEE-8DFF-540BDB559363.html){.external}.
 
 **Conseils d'automatisation :** L'applet de commande Powercli « Export-VDPortGroup » peut récupérer des informations de Portgroups virtuels distribués qui peuvent ensuite être importées dans le Distributed Switch de destination à l'aide de l'applet de commande « New-VDPortgroup -BackupPath ».
 
@@ -385,7 +334,7 @@ Pour plus d'informations, consultez le guide OVHcloud sur [comment créer un V(x
 > - Certaines appliances de routage virtuel telles que pfSense utilisent CARP pour fournir de la haute disponibilité.
 > - Les VMs qui utilisent CARP auront besoin que le « *Promiscuous Mode* » soit activé dans les paramètres de sécurité d'un groupe de ports.
 > - Vous pouvez peut activer ce paramètre sur le vRack vDS du vDC de destination.
-> - Cependant, si le « *Promiscuous Mode* » doit être activé sur le portgroup « VM Network » du nouveau vDC, merci d’ouvrir un ticket auprès du support OVHcloud avant la migration, afin de maintenir la connectivité durant la migration.
+> - Cependant, si le « *Promiscuous Mode* » doit être activé sur le portgroup « VM Network » du nouveau vDC, merci d'ouvrir un ticket auprès du support OVHcloud avant la migration, afin de maintenir la connectivité durant la migration.
 >
 
 <a name="inventory"></a>
@@ -509,7 +458,7 @@ Pour cette étape vous aurez besoin de deux éléments :
 - le bloc IP initialement associé au vDC NSX-V.
 - l'IP publique de la VIP associée à la T0 de NSX (visible dans `Networking`{.action} > `Tier-0 Gateways`{.action} > `ovh-T0-XXXX`{.action} > dépliez > `HA VIP Configuration`{.action} > cliquez sur `1`{.action} > section `IP Address / Mask`{.action})
 
-Par la suite, depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), suivez les indications de notre guide « [Déplacer une Additional IP](/pages/cloud/dedicated/move-failover-ip) »  pour déplacer le bloc initial NSX-V sur le service PCC que vous migrez, tout en précisant comme *next hop* l'IP de la VIP de la T0 récupérée précédemment, comme sur l'exemple ci-dessous :
+Par la suite, depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager), suivez les indications de notre guide « [Déplacer une Additional IP](/pages/cloud/dedicated/move-failover-ip) »  pour déplacer le bloc initial NSX-V sur le service PCC que vous migrez, tout en précisant comme *next hop* l'IP de la VIP de la T0 récupérée précédemment, comme sur l'exemple ci-dessous :
 
 ![Migration NSX IP](images/MoveIPNextHop.png){.thumbnail}
 
@@ -521,7 +470,7 @@ Zerto Replication est configuré au niveau du vDC. Afin de protéger la charge d
 > **Prérequis :**
 >
 > - Avoir un nouveau vDC
-> - Disposer sous le nouveau vDC d’un cluster host avec le nombre de hosts requis (identique au cluster source et au minimum deux hosts)
+> - Disposer sous le nouveau vDC d'un cluster host avec le nombre de hosts requis (identique au cluster source et au minimum deux hosts)
 > - Avoir sous le nouveau vDC un datastore accessible depuis les 2 hosts
 > - Avoir activé Zerto Replication sur le nouveau vDC
 >
@@ -658,7 +607,7 @@ Exécutez l'API OVHcloud pour finaliser la migration :
 Une tâche est lancée pour :
 
 - Vérifier si aucun VPG de destination n'existe encore sur le datacentre : ils DOIVENT être retirés.
-- Basculer l’option Zerto Replication (souscription) de l’ancien vers le nouveau vDC.
+- Basculer l'option Zerto Replication (souscription) de l'ancien vers le nouveau vDC.
 - Retirer tous les vRA des hôtes sur l'ancien vDC.
 <a name="recreateaffinity"></a>
 #### Etape 6.3 Recréer les règles d'affinité
@@ -681,7 +630,7 @@ Répétez l'action pour chaque hôte.
 <a name="removeoldds"></a>
 #### Etape 6.5 Supprimer les anciens datastores
 
-À cette étape, on peut considérer qu’il n’y a plus de données et/ou de VM sur l’ancien vDC, donc on peut supprimer des ressources.
+À cette étape, on peut considérer qu'il n'y a plus de données et/ou de VM sur l'ancien vDC, donc on peut supprimer des ressources.
 
 Dans les instructions suivantes, `{datacenterId}` est l'**ancien** id vDC, vous pouvez l'obtenir avec l'appel API suivant :
 
@@ -784,7 +733,7 @@ Retrouvez ci-dessous une liste de questions fréquemment posées au sujet de la 
 >
 > Quels sont les impacts lors du partage de mes datastores entre mes vDC ?
 >> Il n'y a aucun impact sur votre production, sur la facturation ou sur les snapshots ZFS. Cependant, il n'est actuellement pas possible d'annuler le partage d'un datastore. Nous modifierons cela plus tard.
-> Est-ce que les VMs (avec IP publiques) seront accessibles depuis l’extérieur si elles sont dans le nouveau vDC quand les PFSENSE sont dans l’ancien vDC ?
+> Est-ce que les VMs (avec IP publiques) seront accessibles depuis l'extérieur si elles sont dans le nouveau vDC quand les PFSENSE sont dans l'ancien vDC ?
 >> Oui, le VM network est au niveau de l'infrastructure VMware et donc sur les 2 vDC.
 > Est-il possible de mettre en place un PFSENSE dans l'ancien vDC et un autre dans le nouveau vDC ?
 >> Oui, il est même nécessaire d'avoir 2 PFSENSE différents pour éviter les conflits d'IP.
@@ -812,10 +761,10 @@ Retrouvez ci-dessous une liste de questions fréquemment posées au sujet de la 
 >> Non, le plafond de facturation horaire est désactivé sur les offres 2020 (Premier & Essentials). Toutes les anciennes gammes continueront à fonctionner avec le plafond de facturation horaire en place
 > Le prix des anciennes offres va-t-il évoluer?
 >> Non, il n'y a pas de modification tarifaire des anciennes offres prévue.
->  Dans quelle langue les Services Professionnels d’OVHcloud sont-ils disponibles ?
+>  Dans quelle langue les Services Professionnels d'OVHcloud sont-ils disponibles ?
 >> Les Services professionnels OVHcloud sont disponibles en français et en anglais.
-> Est-ce que les Services Professionnels d’OVHcloud peuvent recréer mes comptes utilisateurs & configurations NSX pour moi ?
->> Nos Services Professionnels n’effectuent aucune opération sur l’infrastructure du client. Nous sommes là pour vous aider, vous guider et vous conseiller. Dans ce cas de figure, nous allons diriger notre client vers un partenaire qui pourra exécuter les opérations dans l'infrastructure client. 
+> Est-ce que les Services Professionnels d'OVHcloud peuvent recréer mes comptes utilisateurs & configurations NSX pour moi ?
+>> Nos Services Professionnels n'effectuent aucune opération sur l'infrastructure du client. Nous sommes là pour vous aider, vous guider et vous conseiller. Dans ce cas de figure, nous allons diriger notre client vers un partenaire qui pourra exécuter les opérations dans l'infrastructure client. 
 > Quelle est la durée de vie des crédits du Pack of Technical Advice Services ?
 >> Le pack est valide pour une durée de 3 mois à compter de la commande.
 > Comment savoir combien d'heures de Crédits ont été utilisées et sont restantes ?
@@ -825,6 +774,6 @@ Retrouvez ci-dessous une liste de questions fréquemment posées au sujet de la 
 
 ## Aller plus loin
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l'équipe Professional Services.
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

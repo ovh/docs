@@ -1,7 +1,7 @@
 ---
 title: Migrating an infrastructure to a new vDC
 excerpt: Find out how to move your workload from an existing vDC to a new vDC in the same VMware infrastructure
-updated: 2023-07-11
+updated: 2023-07-31
 ---
 <style>
 .ovh-api-main { background:#fff;}
@@ -112,8 +112,9 @@ This guide will utilise the notions of a **source vDC** and a **destination vDC*
 ### Step 1 Design your infrastructure
 
 At the end of step 1, you should have a clear view of which 2023 commercial range you want to upgrade to, as well as which hosts and storage you want to use.
+
 <a name="premoress"></a>
-#### Step 1.1 Choose between  different ranges
+#### Step 1.1 Choose between different ranges
 
 As an Hosted Private Cloud VMware customer with host prior to 2020, you want to upgrade to VMware on OVHcloud.
 
@@ -134,7 +135,7 @@ Please be reminded that you do not create a new service, you will need to order 
 
 You have now chosen your commercial range.
 
-Please note that this choice is not definitive.
+Please note that this choice is not definitive, you can start with 2 hosts of 96GB RAM and switch to 3 hosts of 192GB RAM.
 
 <a name="selectdatastores"></a>
 #### Step 1.3 Select your datastores (storage) <a name="introduction"></a>
@@ -149,22 +150,22 @@ You have now chosen your commercial range and your hosts. Please note that some 
 **Expected return:** boolean
 
 If the API return is `TRUE`, this datastore is compatible with the newer ranges and you can keep this datastore, you will make it global later on in the upgrade process.
-If the API return is `FALSE`, this datastore is not compatible, you will need to order new datastores, [VMware On OVHlcoud datastores](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/datastores-nfs/).<br>
+If the API return is `FALSE`, this datastore is not compatible, you will need to order new datastores, [VMware On OVHcloud datastores](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/datastores-nfs/).<br>
 Based on your needs in terms of storage capacity, you can select which type and how many datastores you would order.
 
 You only need to replace the datastores that are not compatible. You will be able to release the datastores that are not compatible after you upgrade your storage.
 
-Please note that this choice is not definitive, you can start with 4x3Tb and switch to 2x6Tb later on.
+Please note that this choice is not definitive, you can start with 4x3TB and switch to 2x6TB later on.
 <a name="build"></a>
 ### Step 2 Build your new infrastructure
 
-At the end of step 2, you should have within your existing VMware infrastructure (pcc-123-123-123-123) a new Destination vDC with new 2023 hosts, and global datastores. 
+At the end of step 2, you should have within your existing VMware infrastructure (pcc-192-0-2-1) a new Destination vDC with new 2023 hosts, and global datastores. 
 <a name="addvdc"></a>
 #### Step 2.1 Add a new destination vDC
 
 You can add a destination vDC following those steps:
 
-![decision tree](images/add-vDC.gif){.thumbnail}
+![add a Virtual Datacenter](images/add-vDC.gif){.thumbnail}
 
 > [!primary]
 >
@@ -268,7 +269,7 @@ Here is a checklist of aspects to take into account:
 
 Setting up a new vDC requires rebuilding resource pools including reservations, shares, and vApps. This also applies to vApps and any start-up order configuration set in the vApps.
 
-For more information, consult [VMware's documentation for managing resource pools](https://docs.vmware.com/en/VMware-vSphere/6.7/com.vmware.vsphere.resmgmt.doc/GUID-60077B40-66FF-4625-934A-641703ED7601.html){.external}.
+For more information, consult [VMware's documentation for managing resource pools](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.resmgmt.doc/GUID-60077B40-66FF-4625-934A-641703ED7601.html){.external}.
 
 Here is a checklist of aspects to take into account:
 
@@ -305,7 +306,7 @@ Here is a checklist of aspects to take into account:
 - Teaming and Failover settings
 - Customer network resource allocation
 
-For more information, consult OVHcloud's guide [How to create a V(x)LAN within a vRack](/pages/cloud/private-cloud/creation_vlan#vlan-vrack) and VMware's documentation on [how to edit general distributed port group settings](https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.networking.doc/GUID-FCA2AE5E-83D7-4FEE-8DFF-540BDB559363.html){.external}.
+For more information, consult OVHcloud's guide [How to create a V(x)LAN within a vRack](/pages/cloud/private-cloud/creation_vlan#vlan-vrack) and VMware's documentation on [how to edit general distributed port group settings](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.networking.doc/GUID-FCA2AE5E-83D7-4FEE-8DFF-540BDB559363.html){.external}.
 
 **Automation tips:** Powercli cmdlet “Export-VDPortGroup” can retrieve Distibuted Virtual Portgroup information which can then be imported into the destination Distributed Switch with the use of the “New-VDPortgroup -BackupPath” cmdlet.
 
@@ -433,7 +434,7 @@ For this step, you will need two elements:
 - The IP block initially associated with the NSX-V vDC.
 - The public IP of the VIP associated with the NSX-T0 (visible in `Networking`{.action} => `Tier-0 Gateways`{.action} => `ovh-T0-XXXX`{.action} => expand => `HA VIP Configuration`{.action} => click on `1`{.action} => `IP Address / Mask`{.action} section)
 
-Next, in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), follow the instructions in our [Move an Additional IP](/pages/cloud/dedicated/move-failover-ip) guide to move the initial NSX-V block to the PCC service you are migrating, but specify the VIP IP of the T0 as the "next hop", as shown in the example below:
+Next, in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager), follow the instructions in our [Move an Additional IP](/pages/cloud/dedicated/move-failover-ip) guide to move the initial NSX-V block to the PCC service you are migrating, but specify the VIP IP of the T0 as the "next hop", as shown in the example below:
 
 ![NSX IP Migration](images/MoveIPNextHop.png){.thumbnail}
 
