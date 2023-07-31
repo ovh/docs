@@ -1,7 +1,7 @@
 ---
-title: 'Using OVHcloud High Performance (S3) Object Storage as Terraform Backend to store your Terraform state'
-excerpt: 'Find out how to use an OVHcloud High Performance (S3) Object Storage as a Terraform Backend to store your Terraform state'
-updated: 2022-07-12
+title: 'Using OVHcloud Object Storage as Terraform Backend to store your Terraform state'
+excerpt: 'Find out how to use an OVHcloud Object Storage as a Terraform Backend to store your Terraform state'
+updated: 2023-07-31
 ---
 
 <style>
@@ -26,15 +26,15 @@ updated: 2022-07-12
  }
 </style>
 
-**Last updated 12th July 2022**
+**Last updated 31th July 2023**
 
 ## Objective
 
-It is possible to store Terraform state on a remote data store/backend like an AWS S3 bucket, a Google Cloud Storage (GCS), etc. but are you aware that you can also store your Terraform states on an OVHcloud High Performance (S3) Object Storage container?
+It is possible to store Terraform state on a remote data store/backend like an AWS S3 bucket, a Google Cloud Storage (GCS), etc. but are you aware that you can also store your Terraform states on an OVHcloud Object Storage container?
 
 In this tutorial you will:
 
-- create an OVHcloud High Performance (S3) Object Storage container
+- create an OVHcloud Object Storage container
 - create a Terraform remote backend
 - initialize your Terraform backend
 
@@ -79,11 +79,11 @@ In order to do that you need to configure a `backend` in your Terraform HCL conf
 
 ## Instructions
 
-### Creating a High Performance Object Storage container/bucket
+### Creating an Object Storage container/bucket
 
-First, you need to have a High Performance Object Storage container. If you don't already have one, you can follow the [Creating a High Performance Object Storage container](/pages/cloud/storage/object_storage/s3_getting_started_with_object_storage) tutorial.
+First, you need to have a Object Storage container. If you don't already have one, you can follow the [Getting started with Object Storage](/pages/cloud/storage/object_storage/s3_getting_started_with_object_storage) tutorial.
 
-For this guide, our Object Storage container is named `terraform-state-hp`, its solution is `High Performance` and its region is `GRA`.
+For this guide, our Object Storage container is named `terraform-state-hp`, its storage class is `High Performance` and its region is `GRA`.
 
 ![terraform state container in OVHcloud Object Storage](images/object_storage.png){.thumbnail}
 
