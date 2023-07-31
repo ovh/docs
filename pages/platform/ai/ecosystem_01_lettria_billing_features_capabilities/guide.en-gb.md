@@ -77,7 +77,7 @@ Output example:
 
 ### Name Entity Recognition
 
-Lettria gives you the possibility to extract entities from a text. The principle is to automatically identify and classify key entities such as **Locations** (LOC), **Persons** (PER), **Organizations** (ORG), and **Miscellaneous** (MISC) within a text.
+Lettria gives you the possibility to extract entities from a text. The principle is to automatically identify and classify key entities such as **Locations** (LOC), **Persons** (PER), **Organizations** (ORG) and **Miscellaneous** (MISC) within a text.
 
 Input example:
 
