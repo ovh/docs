@@ -372,7 +372,7 @@ By setting `return_logits=true`, the API will return the raw scores of each enti
 
 This can be useful to gain finer control over the prediction.
 
-Example post-processing alteration:
+Example of post-processing alteration:
 
 If a word is predicted as MISC with a score of 0.6 and as LOC with a score of 0.5, in some use cases, we might want to consider it a Location instead of a Miscellaneous entity.
 
