@@ -1,7 +1,6 @@
 ---
 title: Enable the Private Gateway
 excerpt: Learn how to enable Private Gateway on a Hosted Private Cloud infrastructure
-hidden: true
 updated: 2023-01-06
 ---
 

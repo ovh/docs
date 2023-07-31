@@ -107,10 +107,11 @@ Ce guide utilise les notions de **vDC d'origine** et de **vDC de destination**. 
 &ensp;&ensp;[Etape 6.1 Reconfigurer Veeam Managed Backup (si pertinent)](#reconveeam)<br />
 &ensp;&ensp;[Etape 6.2 Reconfigurer Zerto Disaster Recovery (si pertinent)](#reconzerto)<br />
 &ensp;&ensp;[Etape 6.3 Recréer les règles d'affinité](#recreateaffinity)<br />
-&ensp;&ensp;[Etape 6.4 Passer les hosts en mode maintenance](#hostmm)<br />
-&ensp;&ensp;[Etape 6.5 Supprimer les anciens datastores](#removeoldds)<br />
-&ensp;&ensp;[Etape 6.6 Supprimer les anciens hosts](#removeoldhosts)<br />
-&ensp;&ensp;[Etape 6.7 Supprimer le vDC source](#removeoldvdc)<br />
+&ensp;&ensp;[Etape 6.4 Reconfigurer la Private Gateway (si pertinent)](#privategw)<br />
+&ensp;&ensp;[Etape 6.5 Passer les hosts en mode maintenance](#hostmm)<br />
+&ensp;&ensp;[Etape 6.6 Supprimer les anciens datastores](#removeoldds)<br />
+&ensp;&ensp;[Etape 6.7 Supprimer les anciens hosts](#removeoldhosts)<br />
+&ensp;&ensp;[Etape 6.8 Supprimer le vDC source](#removeoldvdc)<br />
 
 <a name="design"></a>
 ### Etape 1 Concevoir votre infrastructure
@@ -615,8 +616,21 @@ Une tâche est lancée pour :
 Les règles d'affinité sont basées sur des objets de VM de sorte que les règles ne peuvent être créées qu'après la migration des VMs vers le vDC de destination. Une fois la migration terminée, les règles d'affinité peuvent être réappliquées sur le vDC de destination.
 
 **Conseils d'automatisation :** [Ce fil de discussion de communauté VMware](https://communities.vmware.com/t5/VMware-PowerCLI-Discussions/Backup-Restore-DRS-VM-affinity-anti-affinity-rules-can-these-be/td-p/733981/page/2) détaille les options d'exportation et d'importation des règles d'affinité via powercli.
+
+<a name="privategw"></a>
+#### Etape 6.4 Private Gateway (si pertinent)
+
+Pour changer la Private Gateway de virtual datacenter (vDC), pour devez d'abord la désactiver en suivant les étapes de : [Désactiver la private gateway](/pages/cloud/private-cloud/private_gateway#desactiver-la-private-gateway)
+
+> [!warning]
+>
+> Si vous avez activé des certifications ou un niveau de sécurité qui require l'usage de la Private Gateway, vous seul est résponsable de la reactivation de celle-ci (lancement de l'activation)
+>
+
+Puis activer de nouvelle celle-ci en en suivant les étapes de [Activer la private gateway](/pages/cloud/private-cloud/private_gateway#activer-la-private-gateway) en choisissant le datacenterId du nouveau vDC
+
 <a name="hostmm"></a>
-#### Etape 6.4 Passer les hosts en mode maintenance
+#### Etape 6.5 Passer les hosts en mode maintenance
 
 Vous devez mettre les hôtes en mode maintenance en procédant comme suit :
 
@@ -628,7 +642,7 @@ Vous devez mettre les hôtes en mode maintenance en procédant comme suit :
 
 Répétez l'action pour chaque hôte.
 <a name="removeoldds"></a>
-#### Etape 6.5 Supprimer les anciens datastores
+#### Etape 6.6 Supprimer les anciens datastores
 
 À cette étape, on peut considérer qu'il n'y a plus de données et/ou de VM sur l'ancien vDC, donc on peut supprimer des ressources.
 
@@ -673,7 +687,7 @@ Une tâche est créée pour chaque appel, vous pouvez suivre l'avancement avec :
 >
 
 <a name="removeoldhosts"></a>
-#### Etape 6.6 Supprimer les anciens hosts
+#### Etape 6.7 Supprimer les anciens hosts
 
 Dans les instructions suivantes, `{datacenterId}` est l'**ancien** id vDC, vous pouvez l'obtenir avec l'appel API suivant :
 
@@ -709,7 +723,7 @@ Une tâche est créée pour chaque appel, vous pouvez suivre l'avancement avec :
 >
 
 <a name="removeoldvdc"></a>
-#### Etape 6.7 Supprimer le vDC source
+#### Etape 6.8 Supprimer le vDC source
 
 Dans les instructions suivantes, `{datacenterId}` est l'**ancien** id vDC, vous pouvez l'obtenir avec l'appel API suivant :
 
