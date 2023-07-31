@@ -1,5 +1,5 @@
 ---
-title: How to log in to the OVHcloud Control Panel using OVHcloud IAM
+title: How to create an IAM policy to allow a user to log to the OVHcloud Control Panel
 excerpt: "Find out how to grant the minimum rights required to log to the OVHcloud Control Panel"
 updated: 2023-07-03
 ---

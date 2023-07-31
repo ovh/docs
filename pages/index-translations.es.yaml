@@ -337,6 +337,10 @@ network-load-balancer-viewing-statuses: Consultar los estados
 manage-operate-api: API
 manage-operate-api-apiv6: APIv6
 manage-operate-api-getting-started: Primeros pasos
+manage-operate-user: Gestión de usuarios y federación
+manage-operate-user-getting-started: Primeros pasos
+manage-operate-user-federation: Federación de identidades
+manage-operate-iam: IAM
 manage-operate-terraform: Terraform
 manage-operate-observability: Observability
 observability-logs-data-platform: Logs Data Platform

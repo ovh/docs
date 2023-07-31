@@ -335,6 +335,10 @@ network-load-balancer-viewing-statuses: Status einsehen
 network-content-delivery-network-cdninfrastructure: Content Delivery Network (CDN) Infrastructure
 manage-operate-api: API
 manage-operate-api-getting-started: Erste Schritte
+manage-operate-user: Verwaltung der Benutzer und des Verbunds
+manage-operate-user-getting-started: Erste Schritte
+manage-operate-user-federation: Identitätsverbund
+manage-operate-iam: IAM
 manage-operate-api-apiv6: APIv6
 manage-operate-terraform: Terraform
 manage-operate-observability: Observability
