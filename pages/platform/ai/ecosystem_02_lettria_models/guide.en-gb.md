@@ -378,7 +378,11 @@ If a word is predicted as MISC with a score of 0.6 and as LOC with a score of 0.
 
 > [!primary]
 >
-> In logit mode, the NER tags are prefixed by B or I. B stands for Beginning (the word is the beginning of an entity) and I stands for Inside (the word is inside an entity). Example: In Alan Turing invented AI. Alan | B-PER Turing | I-PER invented AI | B-MISC.
+> In logit mode, the NER tags are prefixed by B or I. B stands for Beginning (the word is the beginning of an entity) and I stands for Inside (the word is inside an entity). 
+> Example: in `Alan Turing invented AI.` 
+> Alan | B-PER 
+> Turing | I-PER 
+> invented AI | B-MISC
 > 
 
 #### Language Support
