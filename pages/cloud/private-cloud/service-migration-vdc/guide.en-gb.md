@@ -597,7 +597,7 @@ Affinity rules are based on VM objects so rules can only be created after VMs ha
 <a name="privategw"></a>
 #### Step 6.4 Reconfigure the Private Gateway (if relevant)
 
-To "move" Private Gateway to destination vDC, you must first disable it by following the steps in [Disable the private gateway](/pages/cloud/private-cloud/private_gateway#disablegw)
+To "move" Private Gateway to destination vDC, you must first disable it by following the steps in [Disable the private gateway](/pages/cloud/private-cloud/private_gateway#disablegw).
 
 > [!warning]
 >
