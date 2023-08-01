@@ -69,7 +69,7 @@ Seleccione el servicio de correo en las siguientes pestañas:
 >>
 >  **MX plan - histórico**
 >>
->> Si el bloqueo afecta a una dirección de correo electrónico [MXplan versión histórica](#instructions), no hay tíquet de soporte. Por favor, consulte el [paso 1](#step1) de esta guía antes de seguir las instrucciones siguientes.
+>> Si el bloqueo afecta a una dirección de correo electrónico [MXplan versión histórica](#instructions), no hay tíquet de soporte. Por favor, consulte la [etapa 1](#step1) de esta guía antes de seguir las instrucciones siguientes.
 >>
 >> Conéctese a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y acceda al apartado `Web Cloud`{.action}. Haga clic en `Correo electrónico`{.action} y seleccione el dominio correspondiente.
 >>
