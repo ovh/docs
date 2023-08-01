@@ -519,7 +519,6 @@
             + [Configuring additional SSH keys](platform/public-cloud/configuring_additional_ssh_keys)
             + [How to use Terraform](platform/public-cloud/how_to_use_terraform)
             + [Using OVHcloud Object Storage as Terraform Backend to store your Terraform state](platform/public-cloud/use_object_storage_terraform_backend_state)
-            + [Using OVHcloud High Performance (S3) Object Storage as Terraform Backend to store your Terraform state](platform/public-cloud/use_high_perf_object_storage_terraform_backend_state)
             + [Upgrading your operating system](platform/public-cloud/upgrading_operating_system)
             + [Changing the hostname of a Public Cloud instance](platform/public-cloud/changing_the_hostname_of_an_instance)
             + [Create a custom OpenStack image with Packer](platform/public-cloud/create_image_from_existing_image_with_packer)

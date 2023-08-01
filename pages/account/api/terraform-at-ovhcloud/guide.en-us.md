@@ -163,7 +163,7 @@ This universe is currently not supported by Terraform providers
 - [Public Cloud examples repository on GitHub](https://github.com/ovh/public-cloud-examples)
 - [Creating a kubernetes cluster on Terraform](/pages/platform/kubernetes-k8s/creating-a-cluster-through-terraform)
 - [Creating a private registry (Harbor) through Terraform](/pages/platform/private-registry/creating-a-private-registry-through-terraform)
-- [Using OVHcloud High Performance (S3) Object Storage as Terraform Backend to store your Terraform state](/pages/platform/public-cloud/use_high_perf_object_storage_terraform_backend_state)
+- [Using OVHcloud High Performance (S3) Object Storage as Terraform Backend to store your Terraform state](/pages/platform/public-cloud/use_object_storage_terraform_backend_state)
 
 ### OVH Provider
 
