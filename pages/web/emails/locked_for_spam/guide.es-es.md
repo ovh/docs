@@ -62,7 +62,7 @@ Seleccione el servicio de correo en las siguientes pestañas:
 >>
 >> Inicie sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y acceda a la sección `Web Cloud`{.action}. Haga clic en `Correos electrónicos`{.action} y seleccione el nombre de dominio correspondiente.
 >>
->> Acceda a la pestaña `Cuentas de correo electrónico`{.action} de su plataforma. Si la columna «Estado» —a la derecha de la dirección de correo electrónico correspondiente— indica «Correo no deseado», haga clic en esa opción y, seguidamente, en `Responder al tique`{.action}. El desbloqueo de la dirección de correo electrónico no se realiza automáticamente. Es necesario contactar con el soporte en el tíquet de asistencia respondiendo a las 3 preguntas formuladas.
+>> Acceda a la pestaña `Cuentas de correo electrónico`{.action} de su plataforma. Si la columna «Estado» —a la derecha de la dirección de correo electrónico correspondiente— indica «Correo no deseado», haga clic en esa opción y, seguidamente, en `Responder al tiquet`{.action}. El desbloqueo de la dirección de correo electrónico no se realiza automáticamente. Es necesario contactar con el soporte en el tíquet de asistencia respondiendo a las 3 preguntas formuladas.
 >> Continúe con el [paso 3](#step3) de la guía.
 >>
 >> ![spam](images/blocked-for-SPAM-01-03.png){.thumbnail}
