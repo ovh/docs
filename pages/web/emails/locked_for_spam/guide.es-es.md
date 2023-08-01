@@ -35,7 +35,7 @@ Si la actividad sospechosa detectada por el antispam no ha sido iniciada por el 
 
 - Compruebe todos los programas que utilicen las claves de la dirección de correo electrónico bloqueada para spam (p. ej.: copiadora, software de gestión empresarial y de mensajería).
 
-### Paso 2: comprobar el estado de la dirección de correo electrónico y acceder al tique de asistencia asociado <a name="step2"></a>
+### Etapa 2: comprobar el estado de la dirección de correo electrónico y acceder al tique de asistencia asociado <a name="step2"></a>
 
 Seleccione el servicio de correo en las siguientes pestañas:
 
