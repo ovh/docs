@@ -17,7 +17,7 @@ This guide explains how to provide a user with the minimum rights to allow her/h
 
 - An [OVHcloud account](/pages/account/customer/ovhcloud-account-creation)
 - Knowing [how to manage account users](/pages/account/customer/ovhcloud-users-management)
-- Knowing [how to set up policies for IAM](/pages/account/customer/iam-policies-api)
+- Knowing [how to set up policies for IAM](/pages/account/customer/iam-policy-ui)
 
 ## Instructions
 
