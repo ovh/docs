@@ -118,7 +118,7 @@ After this message, you will be sent a sample of email headers.
 
 These headers will help determine the movement and origin of the emails sent.
 
-## Go further
+## Go further <a name="go-further"></a>
 
 For specialized services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/).
 
