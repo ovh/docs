@@ -2,7 +2,7 @@
 title: 'Mailinglisten verwalten und nutzen'
 excerpt: 'Erfahren Sie hier, wie Sie Mailinglisten verwenden'
 legacy_guide_number: g1596
-updated: 2020-03-19
+updated: 2023-08-01
 ---
 
 **Letzte Aktualisierung am 13.02.2020**

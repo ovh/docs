@@ -1,7 +1,7 @@
 ---
 title: 'Gérer et utiliser les mailing lists'
 excerpt: 'Decouvrez dans ce guide comment utiliser les listes de diffusion.'
-updated: 2020-03-19
+updated: 2023-08-01
 ---
 
 **Dernière mise à jour le 13/02/2020**

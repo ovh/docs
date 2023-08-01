@@ -1,7 +1,7 @@
 ---
 title: 'Managing and using mailing lists'
 excerpt: 'Find out how to use mailing lists'
-updated: 2020-03-19
+updated: 2023-08-01
 ---
 
 **Last updated 19th March 2020**

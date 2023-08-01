@@ -2,7 +2,7 @@
 title: 'Gerir e utilizar as mailing lists'
 excerpt: 'Neste guia, fique a saber como usar as mailing lists'
 legacy_guide_number: g1596
-updated: 2020-03-19
+updated: 2023-08-01
 ---
 
 **Última atualização: 13/02/2020**

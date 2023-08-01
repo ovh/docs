@@ -2,7 +2,7 @@
 title: 'Korzystanie z list mailingowych i zarządzanie nimi'
 excerpt: 'Z tego przewodnika dowiesz się, jak korzystać z list mailingowych'
 legacy_guide_number: g1596
-updated: 2020-03-19
+updated: 2023-08-01
 ---
 
 **Ostatnia aktualizacja z dnia 13-02-2020**

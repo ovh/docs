@@ -1,7 +1,7 @@
 ---
 title: 'Gestire e utilizzare una mailing list'
 excerpt: 'Come gestire e utilizzare una mailing list'
-updated: 2020-03-19
+updated: 2023-08-01
 ---
 
 **Ultimo aggiornamento: 02/07/2020**
