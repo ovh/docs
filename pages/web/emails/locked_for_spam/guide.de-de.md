@@ -13,7 +13,7 @@ Wenn Ihre E-Mail-Adresse für SPAM gesperrt ist, wurde eine verdächtige Aktivit
 ## Voraussetzungen
 
 - Sie verfügen über einen [OVHcloud E-Mail-Dienst](https://www.ovhcloud.com/de/emails/).
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Zugriff auf den Bereich `Web Cloud`{.action} im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de)
 
 ## In der praktischen Anwendung <a name="instructions"></a>
 
@@ -44,7 +44,7 @@ Wählen Sie das betreffende E-Mail-Angebot in den folgenden Tabs aus:
 >>
 >> Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie unter `Microsoft`{.action} und `Exchange`{.action} Ihren Exchange Dienst aus. Gehen Sie dann auf den Tab `E-Mail-Accounts`{.action}.
 >>
->> Wenn die Spalte „Status“ der entsprechenden E-Mail-Adresse die Bezeichnung „Gesperrt“ aufweist, klicken Sie auf `...`{.action} rechts in der Zeile und danach auf `Entsperren`{.action}. Die Entsperrung der E-Mail-Adresse erfolgt nicht automatisch. Kontaktieren Sie den Support über das Support-Ticket und beantworten Sie die 3 gestellten Fragen.<br>
+>> Wenn die Spalte „Status“ der entsprechenden `E-Mail-Accounts`{.action} die Bezeichnung „Gesperrt“ aufweist, klicken Sie auf `...`{.action} rechts in der Zeile und danach auf `Entsperren`{.action}. Die Entsperrung der E-Mail-Adresse erfolgt nicht automatisch. Kontaktieren Sie den Support über das Support-Ticket und beantworten Sie die 3 gestellten Fragen.<br>
 >> Gehen Sie zu [Schritt 3](#step3) der Anleitung.
 >>
 >> ![spam](images/blocked-for-SPAM-01-01.png){.thumbnail}
@@ -53,7 +53,7 @@ Wählen Sie das betreffende E-Mail-Angebot in den folgenden Tabs aus:
 >>
 >> Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie unter `E-Mail Pro`{.action} Ihren E-Mail Pro Dienst aus. Gehen Sie dann auf den Tab `E-Mail-Accounts`{.action}.
 >>
->> Wenn in der Spalte „Status“ rechts neben der entsprechenden E-Mail-Adresse „Spam“ angegeben ist, klicken Sie auf dieses Element und dann auf `Ticket beantworten`{.action}. Die Entsperrung der E-Mail-Adresse erfolgt nicht automatisch. Kontaktieren Sie den Support über das Support-Ticket und beantworten Sie die 3 gestellten Fragen.<br>
+>> Wenn in der Spalte „Status“ rechts neben der entsprechenden `E-Mail-Accounts`{.action} „Spam“ angegeben ist, klicken Sie auf dieses Element und dann auf `Ticket beantworten`{.action}. Die Entsperrung der E-Mail-Adresse erfolgt nicht automatisch. Kontaktieren Sie den Support über das Support-Ticket und beantworten Sie die 3 gestellten Fragen.<br>
 >> Gehen Sie zu [Schritt 3](#step3) der Anleitung.
 >>
 >>![spam](images/blocked-for-SPAM-01-02.png){.thumbnail}
@@ -62,7 +62,7 @@ Wählen Sie das betreffende E-Mail-Angebot in den folgenden Tabs aus:
 >>
 >> Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie unter `E-Mails`{.action} die betreffende Domain aus. Gehen Sie dann auf den Tab `E-Mails`{.action}.
 >>
->> Wenn in der Spalte „Blockiert wegen SPAM“ rechts neben der entsprechenden E-Mail-Adresse „Ja“ angegeben ist, klicken Sie auf dieses Element und dann auf `Ticket beantworten`{.action}. Die Entsperrung der E-Mail-Adresse erfolgt nicht automatisch. Kontaktieren Sie den Support über das Support-Ticket und beantworten Sie die 3 gestellten Fragen.<br>
+>> Wenn in der Spalte „Blockiert wegen SPAM“ rechts neben der entsprechenden `E-Mail-Accounts`{.action} „Ja“ angegeben ist, klicken Sie auf dieses Element und dann auf `Ticket beantworten`{.action}. Die Entsperrung der E-Mail-Adresse erfolgt nicht automatisch. Kontaktieren Sie den Support über das Support-Ticket und beantworten Sie die 3 gestellten Fragen.<br>
 >> Gehen Sie zu [Schritt 3](#step3) der Anleitung.
 >>
 >> ![spam](images/blocked-for-SPAM-01-03.png){.thumbnail}

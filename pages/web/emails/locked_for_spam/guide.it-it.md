@@ -13,7 +13,7 @@ Quando il tuo indirizzo email è bloccato per SPAM, significa che sono state ril
 ## Prerequisiti
 
 - Disporre di un [servizio di posta elettronica OVHcloud](https://www.ovhcloud.com/it/emails/){.external}.
-- Avere accesso alla sezione [Web](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) dello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
+- Avere accesso alla sezione `Web Cloud`{.action} dello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 
 ## Procedura <a name="instructions"></a>
 
@@ -71,7 +71,7 @@ Seleziona il servizio di posta nelle schede seguenti:
 >>
 >> Se il blocco riguarda un indirizzo email [MXplan versione storica](#instructions), non ci sono ticket di assistenza. Consulta lo [step 1](#step1) di questa guida prima di seguire queste istruzioni.
 >>
->> Accedi alla sezione `Web Cloud`{.action} dello Spazio Cliente OVHcloud(https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Clicca su `Email`{.action} e seleziona il dominio interessato.
+>> Accedi alla sezione `Web Cloud`{.action} dello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Clicca su `Email`{.action} e seleziona il dominio interessato.
 >>
 >> Accedi alla scheda `Email`{.action} della tua piattaforma. Se la colonna "Bloccato per SPAM" indica "Sì", clicca su questa voce e poi su `Modifica la password`{.action}. Il tuo indirizzo email è sbloccato, non è necessario seguire lo [step 3](#step3).
 >>

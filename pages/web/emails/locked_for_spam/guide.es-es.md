@@ -13,7 +13,7 @@ Cuando su dirección de correo electrónico está bloqueada por SPAM, significa 
 ## Requisitos
 
 - Tener un [plan de correo en OVHcloud](https://www.ovhcloud.com/es-es/emails/){.external}.
-- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y accedido a la sección ``Webcloud`{.action}`{.action}.
+- Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y accedido a la sección `Webcloud`{.action}.
 
 ## Procedimiento <a name="instructions"></a>
 
