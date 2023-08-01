@@ -21,7 +21,7 @@ Antes de continuar, y si el bloqueo afecta a una dirección de correo electróni
 
 |Versión histórica de la solución MX Plan|Nueva versión de la solución MX Plan|
 |---|---|
-|![email](images/mxplan-starter-legacy-step1.png){.thumbnail}< br> Consulte la oferta en el cuadro "Suscripción"|[email](images/mxplan-starter-new-step1.png){.thumbnail}< br>Consulte la referencia del servidor en el recuadro "Resumen"|
+|![email](images/mxplan-starter-legacy-step1.png){.thumbnail}< br> Consulte la oferta en el cuadro "Suscripción"|![email](images/mxplan-starter-new-step1.png){.thumbnail}< br>Consulte la referencia del servidor en el recuadro "Resumen"|
 
 ### Etapa 1: ¿por qué su dirección de correo electrónico está bloqueada por spam? <a name="step1"></a>
 
