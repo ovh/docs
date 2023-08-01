@@ -4,6 +4,10 @@ excerpt: "Erfahren Sie, wie Sie mit OpenStack Bilder zwischen Public Cloud-Proje
 updated: 2023-07-31
 ---
 
+> [!primary]
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
+>
+
 ## Ziel
 
 Es kann vorkommen, dass Sie ein Image [einer Instanz-Backup](/pages/platform/public-cloud/save_an_instance) oder ein Image eines [Volume Backups](/pages/platform/public-cloud/volume-backup) für mehrere Public Cloud-Projekte freigeben müssen.

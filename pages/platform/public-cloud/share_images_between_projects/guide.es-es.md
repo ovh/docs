@@ -4,6 +4,10 @@ excerpt: "Cómo compartir imágenes entre proyectos de Public Cloud utilizando O
 updated: 2023-07-31
 ---
 
+> [!primary]
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+>
+
 ## Objetivo
 
 En ocasiones, es posible que necesite compartir una imagen de [backup de instancia](/pages/platform/public-cloud/save_an_instance) o una [imagen de backup por volumen](/pages/platform/public-cloud/volume-backup) entre varios proyectos de Public Cloud.

@@ -4,6 +4,10 @@ excerpt: 'Dowiedz się, jak współdzielić obrazy między projektami Public Clo
 updated: 2023-07-31
 ---
 
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
+>
+
 ## Wprowadzenie
 
 Czasami może być konieczne współdzielenie obrazu [Instance Backup](/pages/platform/public-cloud/save_an_instance) lub obrazu [Volume Backup](/pages/platform/public-cloud/volume-backup) między kilkoma projektami Public Cloud.

@@ -4,6 +4,10 @@ excerpt: "Saiba como partilhar imagens entre projetos Public Cloud com a ajuda d
 updated: 2023-07-31
 ---
 
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
+
 ## Objetivo
 
 Pode ser necessário partilhar uma imagem [Instance backup](/pages/platform/public-cloud/save_an_instance) ou uma imagem [Volume backup](/pages/platform/public-cloud/volume-backup) entre vários projetos Public Cloud.
