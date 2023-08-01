@@ -105,8 +105,6 @@ Si vous avez commandé l'un des **certificats SSL payants** de notre partenaire 
 
 [Résoudre l’erreur « Site non installé »](/pages/web/hosting/multisites_website_not_installed)
 
-[Comment diagnostiquer une page blanche ?](/pages/web/hosting/diagnostic_fix_500_internal_server_error)
-
 [Que faire en cas d’erreur 500 Internal Server Error ?](/pages/web/hosting/diagnostic_fix_500_internal_server_error)
 
 [Résoudre les erreurs les plus fréquentes liées aux modules en 1 clic](/pages/web/hosting/diagnostic_errors_module1clic)

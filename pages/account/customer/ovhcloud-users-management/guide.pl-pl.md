@@ -75,11 +75,11 @@ Edycja użytkownika pozwala na aktualizację jego adresu e-mail, uprawnień oraz
 
 W zakładce `Zarządzanie użytkownikami`{.action} kliknij `Zgłoś grupę`{.action}.
 
-[users-management](images/usersmanagement7.png){.thumbnail}
+![users-management](images/usersmanagement7.png){.thumbnail}
 
 Wyświetli się okno, w którym należy wypełnić wymagane pola. Kliknij `Zatwierdź`{.action}, aby utworzyć użytkownika.
 
-[users-management](images/usersmanagement8.png){.thumbnail}
+![users-management](images/usersmanagement8.png){.thumbnail}
 
 Grupy przyznają domyślny poziom przywileju użytkownikom, których dotyczą, w zależności od wybranej przez Ciebie roli:
 
@@ -94,11 +94,11 @@ Grupy przyznają domyślny poziom przywileju użytkownikom, których dotyczą, w
 
 Możesz zaktualizować lub usunąć grupę, klikając przycisk `...`{.action} po prawej stronie nazwy grupy.
 
-[users-management](images/usersmanagement9.png){.thumbnail}
+![users-management](images/usersmanagement9.png){.thumbnail}
 
 Po zmianie grupy możesz zmienić jej opis i rolę.
 
-[users-management](images/usersmanagement10.png){.thumbnail}
+![users-management](images/usersmanagement10.png){.thumbnail}
 
 ## Zarządzanie uprawnieniami
 

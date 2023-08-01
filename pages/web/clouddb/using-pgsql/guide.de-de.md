@@ -38,7 +38,7 @@ Um sich mit Ihrer Datenbank zu verbinden, benötigen Sie:
 
 Diese Informationen sind über Ihr [Kundencenter](https://www.ovh.com/manager/web/){.external} einsehbar.
 
-Eine Anleitung finden Sie unter: [Erste Schritte mit Web Cloud Databases](/de/clouddb/starting_with_clouddb/guide.de-de.md){.ref}
+Eine Anleitung finden Sie unter: [Erste Schritte mit Web Cloud Databases](/pages/web/clouddb/starting_with_clouddb){.ref}
 
 
 ### Per Kommandozeile verbinden

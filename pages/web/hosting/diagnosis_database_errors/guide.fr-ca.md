@@ -1,7 +1,7 @@
 ---
 title: Résoudre les erreurs les plus fréquentes liées aux bases de données 
 excerpt: "Diagnostiquez les cas les plus courants d'erreurs liées aux bases de données"
-
+updated: 2022-12-09
 ---
 
 **Dernière mise à jour le 15/02/2023**

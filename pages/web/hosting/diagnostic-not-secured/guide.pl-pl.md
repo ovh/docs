@@ -109,9 +109,7 @@ Jeśli zamówiłeś jeden z płatnych **certyfikatów SSL** od naszego partnera 
 
 [Usunięcie błędu “Strona nie została zainstalowana”](/pages/web/hosting/multisites_website_not_installed)
 
-[Przyczyny wyświetlania się “białej strony”](/pages/web/hosting/diagnostic_fix_500_internal_server_error)
-
-[Co zrobić w przypadku błędu 500 Internal Server Error?](/pl/hosting/b%C5%82%C4%85d-500-internal-server-error/)
+[Co zrobić w przypadku błędu 500 Internal Server Error?](/pages/web/hosting/diagnostic_fix_500_internal_server_error)
 
 [Rozwiąż najczęstsze błędy związane z modułami za pomocą 1 kliknięcia](/pages/web/hosting/diagnostic_errors_module1clic)
  

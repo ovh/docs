@@ -66,7 +66,7 @@ You can for example decide that the account will be locked after multiple unsucc
 
 In this case, you can either wait until the account becomes available again or you can contact our Exchange teams by creating a support request.
 
-You can find more information about this topic in the [security policy guide](/gb/en/microsoft-collaborative-solutions/manage-security-policy-password/).
+You can find more information about this topic in the [security policy guide](/pages/web/emails/security-policy).
 
 ### Webmail authentication has failed <a name="password"></a>
 

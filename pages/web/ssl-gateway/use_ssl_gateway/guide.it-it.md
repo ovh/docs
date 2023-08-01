@@ -13,7 +13,7 @@ updated: 2022-12-01
 
 > [!primary]
 >
-> - Aver ordinato un [SSL Gateway](/it/ssl-gateway/order-ssl-gateway/guide.it-it.md).
+> - Aver ordinato un [SSL Gateway](/pages/web/ssl-gateway/order-ssl-gateway).
 > - Avere accesso allo Spazio Cliente OVHcloud Sunrise.
 >
 

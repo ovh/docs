@@ -15,7 +15,7 @@ This section briefly describes the main functions of the API for the OVH Load Ba
 > Attention, for compatibility reasons the entry point of the old OVH Load Balancer system is still present in the /ip/loadBalancing API, not to be confused with the new /ipLoadbalancing.
 > 
 
-For a complete reference to the API functions of the OVH Load Balancer service, it's [here](/asia/en/load-balancer/use_api_details/guide.en-ca.md){.ref}
+For a complete reference to the API functions of the OVH Load Balancer service, it's [here](/pages/cloud/load_balancer/use_api_details){.ref}
 
 
 > [!primary]

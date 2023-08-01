@@ -22,7 +22,7 @@ La gestione degli accessi OVHcloud si basa su un sistema di gestione delle polit
 In dettaglio, una politica contiene:
 
 - Una o più **identità** oggetto di tale politica. 
-    - Può trattarsi di identificativi di account, utenti o gruppi di utenti (come quelli utilizzati in [Federation](/pagine/account/customer/ovhcloud-account-connect-saml-adfs) - sono disponibili altre guide SSO). 
+    - Può trattarsi di identificativi di account, utenti o gruppi di utenti (come quelli utilizzati in [Federation](/pages/account/customer/ovhcloud-account-connect-saml-adfs) - sono disponibili altre guide SSO). 
 - Una o più **risorse** interessate da tale politica. 
     - Una risorsa è un prodotto OVHcloud che sarà interessato da questa politica (un dominio, un server Nutanix, un Load Balancer, ecc...).
 - Una o più **azioni** autorizzate o escluse da tale politica.
@@ -36,8 +36,8 @@ Ad esempio, possiamo creare una politica per dare ad un utente di nome John, per
 
 ## Prerequisiti
 
-- Disporre di un [account OVHcloud](/pagine/account/customer/ovhcloud-account-creazione)
-- Sapere [gestire gli utenti dell'account](/pagine/account/customer/ovhcloud-users-management)
+- Disporre di un [account OVHcloud](/pages/account/customer/ovhcloud-account-creation)
+- Sapere [gestire gli utenti dell'account](/pages/account/customer/ovhcloud-users-management)
 - Uno o più prodotti OVHcloud associati a questo account OVHcloud (Load Balancer, dominio, VPS, ecc...)
 
 ## Procedura
@@ -147,7 +147,7 @@ Le identità disponibili per le policy sono gestite tramite la scheda `Gestione 
 
 `Identità`{.action} del menu IAM ti reindirizza verso questo menu.
 
-Visualizza i dettagli della gestione degli utenti nella [documentazione dedicata](/pagine/account/customer/ovhcloud-users-management).
+Visualizza i dettagli della gestione degli utenti nella [documentazione dedicata](/pages/account/customer/ovhcloud-users-management).
 
 ### Gestione dei gruppi di risorse
 

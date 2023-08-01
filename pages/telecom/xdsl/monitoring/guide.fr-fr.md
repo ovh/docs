@@ -31,7 +31,7 @@ Dans l'onglet `Mon accès`{.action}, cliquez sur `Afficher les alertes`{.action}
 
 Vous arrivez alors sur le formulaire de création de notifications.
 
-![afficher alertes](images/XDSL%20monitoring.png){.thumbnail}
+![afficher alertes](images/xdsl-monitoring.png){.thumbnail}
 
 ### Activer les notifications par e-mail
 
@@ -46,7 +46,7 @@ Validez l'alerte via le bouton dédié, à droite de la ligne.
 
 Si vous ajoutez une adresse commune à plusieurs accès, vous recevrez un seul e-mail contenant toutes les notifications de coupure.
 
-![notification e-mail](images/XDSL%20Monitoring%20alerte.png){.thumbnail}
+![notification e-mail](images/xdsl-monitoring-alerte.png){.thumbnail}
 
 ### Activer les notifications par SMS
 
@@ -60,7 +60,7 @@ Choisissez, dans le champ `Compte SMS à débiter`, le compte SMS à utiliser po
 
 Validez l'alerte via le bouton dédié, à droite de la ligne.
 
-![notification SMS](images/XDSL%20Monitoring%20alerte.png){.thumbnail}
+![notification SMS](images/xdsl-monitoring-alerte.png){.thumbnail}
 
 Les SMS vous prévenant de l'injoignabilité de votre accès à Internet, ou de son rétablissement, se présentent sous la forme suivante :
 

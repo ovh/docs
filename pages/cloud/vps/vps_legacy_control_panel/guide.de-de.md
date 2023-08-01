@@ -106,7 +106,7 @@ Anschließend werden Verbindungen zu Ihrem Server über den Root-Benutzer (`ssh 
 
 ### KVM
 
-Verwenden Sie diese Option, um sich über KVM mit Ihrem VPS zu verbinden. Weitere Informationen finden Sie in [unserer Anleitung](pages/cloud/vps/using_kvm_for_vps).
+Verwenden Sie diese Option, um sich über KVM mit Ihrem VPS zu verbinden. Weitere Informationen finden Sie in [unserer Anleitung](/pages/cloud/vps/using_kvm_for_vps).
 
 ### Inhaber ändern
 

@@ -38,7 +38,7 @@ Per accedere al tuo database, sono necessarie queste informazioni:
 
 Questi dati sono disponibili nella sezione Web del tuo [Spazio Cliente OVHcloud](https://www.ovh.com/manager/web/){.external}.
 
-Se necessario, consulta la guida: [Inziare a utilizzare Web Cloud Databases](/it/clouddb/starting_with_clouddb/guide.it-it.md){.ref}
+Se necessario, consulta la guida: [Inziare a utilizzare Web Cloud Databases](/pages/web/clouddb/starting_with_clouddb){.ref}
 
 
 ### Connessione da riga di comando

@@ -84,7 +84,7 @@ Si usted o su desarrollador desea tener acceso a estos detalles, puede conectars
 
 ### Comprobar el estado de la base de datos
 
-Para más información sobre los errores que puedan estar relacionados con la base de datos de su sitio web, consulte nuestra guía ["Resolver los errores más frecuentes asociados a las bases de datos"](/pages/web/hosting/diagnóstico_database_errors).
+Para más información sobre los errores que puedan estar relacionados con la base de datos de su sitio web, consulte nuestra guía ["Resolver los errores más frecuentes asociados a las bases de datos"](/pages/web/hosting/diagnosis_database_errors).
 
 ### Restaurar el sitio web a su estado anterior <a name="restore"></a>
 

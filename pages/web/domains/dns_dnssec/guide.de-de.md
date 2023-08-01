@@ -57,11 +57,11 @@ Im Tab `Allgemeine Informationen`{.action} können Sie nach [Schritt 1](#step1) 
 
 Überprüfen Sie hierzu im Feld "Sicherheit" den Status neben "Sichere Delegation (DNSSEC)".
 
-![DNSSEC](images/activate-DNSSEC-step2.png){.thumbnail}
+![DNSSEC](images/activate-dnssec-step2.png){.thumbnail}
 
 Über den Aktivierungsbutton oberhalb von `Sichere Delegation - DNSSEC`{.action} können Sie den **DNSSEC** für Ihren Domainnamen aktivieren oder deaktivieren. Wenn Sie diese Aktion ausführen, erscheint ein neues Fenster, in dem Sie die Änderung bestätigen können.
 
-![DNSSEC](images/activate-DNSSEC-step3.png){.thumbnail}
+![DNSSEC](images/activate-dnssec-step3.png){.thumbnail}
 
 > [!primary]
 >

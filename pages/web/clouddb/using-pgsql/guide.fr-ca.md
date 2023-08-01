@@ -39,7 +39,7 @@ Afin de vous connecter à votre base, assurez vous de ceci :
 
 Toutes ces informations sont disponibles dans votre [Espace Client Web](https://www.ovh.com/manager/web/){.external}.
 
-Un guide est également disponible : [Premiers pas avec le service Web Cloud Databases](/ca/fr/clouddb/starting_with_clouddb/guide.fr-fr.md){.ref}
+Un guide est également disponible : [Premiers pas avec le service Web Cloud Databases](/pages/web/clouddb/starting_with_clouddb){.ref}
 
 
 ### Connexion en ligne de commande

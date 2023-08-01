@@ -105,7 +105,7 @@ Połączenia z serwerem za pośrednictwem użytkownika root (`ssh root@IPv4_VPS`
 
 ### KVM
 
-Użyj tej opcji, aby połączyć się z serwerem VPS przez KVM. Szczegółowe informacje znajdziesz w [naszym przewodniku](pages/cloud/vps/using_kvm_for_vps).
+Użyj tej opcji, aby połączyć się z serwerem VPS przez KVM. Szczegółowe informacje znajdziesz w [naszym przewodniku](/pages/cloud/vps/using_kvm_for_vps).
 
 ### Zmiana właściciela
 

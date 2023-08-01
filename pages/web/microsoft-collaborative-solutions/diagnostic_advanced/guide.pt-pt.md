@@ -55,7 +55,7 @@ Uma conta bloqueada recebe sempre e-mails mas o envio foi desativado pelo sistem
 
 Pode verificá-lo no separador `Contas de e-mail`{.action} do seu serviço Exchange. A conta terá uma menção `SPAM` na coluna "Estado" do quadro.
 
-Consulte o nosso guia [O que fazer em caso de conta bloqueada por spam?](/pt/microsoft-collaborative-solutions/bloqueado-por-spam/) para permitir às nossas equipas de segurança reativar a conta.
+Consulte o nosso guia [O que fazer em caso de conta bloqueada por spam?](/pages/web/emails/locked_for_spam) para permitir às nossas equipas de segurança reativar a conta.
 
 ### A subscrição à conta expirou <a name="expired"></a>
 
@@ -70,7 +70,7 @@ Pode, por exemplo, decidir que a conta será bloqueada após várias tentativas 
 
 Neste caso, pode aguardar que a conta esteja de novo disponível ou contactar as nossas equipas Exchange criando um pedido de assistência.
 
-Para mais informações sobre esta funcionalidade, consulte o nosso [guia sobre a política de segurança](/pt/microsoft-collaborative-solutions/gerir-politica-de-seguranca-palavra-passe/).
+Para mais informações sobre esta funcionalidade, consulte o nosso [guia sobre a política de segurança](/pages/web/emails/security-policy).
 
 ### A autenticação ao webmail falhou <a name="password"></a>
 

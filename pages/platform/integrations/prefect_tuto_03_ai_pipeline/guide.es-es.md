@@ -38,14 +38,14 @@ The model used will be a classical **PyTorch** image classification model. If yo
 Object storage is the most common and powerful solution to easily store data. OVHcloud object storage offers are natevily compliant with S3 protocol.
 
 First, we will generate credentials allowing us to manage S3 buckets and data over API. 
-Follow our [S3 official documentaiton for credentials here](/pages/cloud/storage/object_storage/s3_identity_access_management). 
+Follow our [S3 official documentaiton for credentials here](/pages/cloud/storage/object_storage/s3_identity_and_access_management). 
 Keep the access key and the secret key, we will need them later. 
 
 Next, let's synchronize our S3 credentials with the boto3 client. To do this, we have to create a folder and two files in it. To configurate the boto3 client, we recommend following this [part](/pages/cloud/storage/object_storage/s3_getting_started_with_object_storage#configuration) of the tutorial. Once the two files are created and you have filled them with your credentials, we can start coding and create our S3 object storage with a Prefect flow.
 
 To create an S3 object storage, we must provide With the [SDK OVHcloud](https://github.com/ovh/python-ovh), we can easily communicate with the OVHcloud's API. To interact with an S3 object container, we must use an S3 protocol. OVHcloud does not provide this protocol yet, but [The boto3 library](https://github.com/boto/boto3) does. The boto3 SDK is the Amazon Web Services (AWS) Software Development Kit (SDK) for Python, which allows Python developers to write software that makes use of services like S3 containers. It provides a low-level interface to many of the services, as well as higher-level abstractions that facilitate working with these services. 
 
-We require certain credentials to use this protocol. You can get these credentials as S3 users. You can create them in the OVHcloud control panel, go to your public cloud project and open the object storage tab. To know more about these credentials, consult this [guide](/pages/cloud/storage/object_storage/s3_identity_access_management).
+We require certain credentials to use this protocol. You can get these credentials as S3 users. You can create them in the OVHcloud control panel, go to your public cloud project and open the object storage tab. To know more about these credentials, consult this [guide](/pages/cloud/storage/object_storage/s3_identity_and_access_management).
 
 
 ### Create environments variables inside our Prefect Cloud workspace. 
@@ -354,7 +354,7 @@ You also have the possibility to see the steps of your flows directly in the con
  
 - [Official Prefect documentation](https://docs.prefect.io/latest/)
 - [OVHcloud API console](https://api.ovh.com/console/)
-- Learn about AI Training jobs with tutorials : [AI Training - Tutorials](/pages/platform/ai)
+- Learn about AI Training jobs with tutorials : [AI Training - Tutorials](/products/public-cloud-ai-and-machine-learning-ai-training-tutorials)
 
 ## Feedback
 

@@ -13,7 +13,7 @@ updated: 2022-12-01
 
 > [!primary]
 >
-> - Sie haben bereits ein SSL Gateway bestellt <docs/web/ssl-gateway/order-ssl-gateway>.
+> - Sie haben bereits ein [SSL Gateway bestellt](/pages/web/ssl-gateway/order-ssl-gateway).
 > - Sie haben Zugang zum Sunrise Kundencenter.
 >
 

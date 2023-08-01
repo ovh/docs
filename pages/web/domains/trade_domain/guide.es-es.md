@@ -12,7 +12,7 @@ updated: 2023-06-19
 
 ## Objetivo
 
-Además de [gestionar los contactos](/pages/account/customer/managing_contactos), para registrar un dominio es necesario introducir la información relativa al propietario del mismo. En este contexto, el **propietario** designa a una persona, empresa, organización o asociación que posea los derechos sobre este dominio. **El cambio de propietario** hace referencia a la transferencia de los derechos de propiedad de una persona o empresa a otra. La información del **propietario** tiene valor jurídico. Este proceso es especialmente obligatorio si una empresa cambia de nombre.
+Además de [gestionar los contactos](/pages/account/customer/managing_contacts), para registrar un dominio es necesario introducir la información relativa al propietario del mismo. En este contexto, el **propietario** designa a una persona, empresa, organización o asociación que posea los derechos sobre este dominio. **El cambio de propietario** hace referencia a la transferencia de los derechos de propiedad de una persona o empresa a otra. La información del **propietario** tiene valor jurídico. Este proceso es especialmente obligatorio si una empresa cambia de nombre.
 
 > [!primary]
 >Esta operación no migra el dominio a otra cuenta de cliente de OVHcloud.

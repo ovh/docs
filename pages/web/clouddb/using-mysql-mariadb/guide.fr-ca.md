@@ -24,7 +24,7 @@ Ce moteur est 100% compatible, et se veut plus "libre" que sa grande sœur MySQL
 
 ## Prérequis
 
-- Disposer d'une [instance Web Cloud Databases](hhttps://www.ovhcloud.com/fr-ca/web-cloud/databases/) (incluse dans une offre d'[hébergement web performance](https://www.ovhcloud.com/fr-ca/web-hosting/))
+- Disposer d'une [instance Web Cloud Databases](https//www.ovhcloud.com/fr-ca/web-cloud/databases/) (incluse dans une offre d'[hébergement web performance](https://www.ovhcloud.com/fr-ca/web-hosting/))
 - Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
 - Avoir consulté le [guide de démarrage de Web Cloud Databases](/pages/web/clouddb/starting_with_clouddb)
 

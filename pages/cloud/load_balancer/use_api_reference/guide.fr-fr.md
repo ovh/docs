@@ -15,7 +15,7 @@ Cette section décrit brièvement les principales fonctions de l'API pour le Loa
 > Attention, pour des raisons de compatibilité, le point d'entrée de l'ancien système OVHcloud Load Balancer est toujours présent dans l'API /ip/loadBalancing, à ne pas confondre avec le nouveau /ipLoadbalancing.
 > 
 
-Pour une référence complète des fonctions de l'API du service OVHcloud Load Balancer, [cliquez ici](/pages/cloud/load_balancer/use_api_details){.ref}
+Pour une référence complète des fonctions de l'API du service OVHcloud Load Balancer, [cliquez ici](/pages/cloud/load_balancer/use_api_details).
 
 > [!primary]
 >

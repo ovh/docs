@@ -184,7 +184,7 @@ php cecil.phar build
 
 Następnie wróć na stronę, aby zobaczyć wynik:
 
-[Strona zaktualizowana](images/static_website_installation_cecil10.png){.thumbnail}
+![Strona zaktualizowana](images/static_website_installation_cecil10.png){.thumbnail}
 
 #### Zmiana dla Twojego stanowiska pracy
 

@@ -55,7 +55,7 @@ Un account bloccato riceve ancora email ma l'invio è stato disattivato dal sist
 
 Puoi verificarlo nella scheda `Account email`{.action} del tuo servizio Exchange. L'account visualizzerà una dicitura `SPAM` nella colonna "Stato" della tabella.
 
-Consulta la nostra guida [Cosa fare in caso di account bloccato per Spam?](/it/microsoft-collaborative-solutions/blocco-per-spam/) per consentire ai nostri team di sicurezza di riattivare l'account.
+Consulta la nostra guida [Cosa fare in caso di account bloccato per Spam?](/pages/web/emails/locked_for_spam) per consentire ai nostri team di sicurezza di riattivare l'account.
 
 ### L'abbonamento all'account è scaduto <a name="expired"></a>
 
@@ -70,7 +70,7 @@ Ad esempio, puoi decidere di bloccare l'account dopo diversi tentativi di connes
 
 In questo caso, puoi aspettare che l'account sia nuovamente disponibile o contattare il nostro team Exchange tramite una richiesta di assistenza.
 
-Per maggiori informazioni su questa funzionalità, consulta la nostra [guida sulla politica di sicurezza](/it/microsoft-collaborative-solutions/gestire-politica-di-sicurezza-password/).
+Per maggiori informazioni su questa funzionalità, consulta la nostra [guida sulla politica di sicurezza](/pages/web/emails/security-policy).
 
 ### L'autenticazione alla Webmail è fallita <a name="password"></a>
 

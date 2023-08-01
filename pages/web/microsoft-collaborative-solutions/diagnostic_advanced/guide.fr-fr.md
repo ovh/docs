@@ -51,7 +51,7 @@ Un compte bloqué reçoit toujours des e-mails mais l'envoi a été désactivé 
 
 Vous pouvez le vérifier dans l'onglet `Comptes e-mail`{.action} de votre service Exchange. Le compte aura une mention `SPAM` dans la colonne « statut » du tableau.
 
-Veuillez consulter notre guide [Que faire en cas de compte bloqué pour spam ?](/fr/microsoft-collaborative-solutions/bloque-pour-spam/) pour permettre à nos équipes de sécurité de réactiver le compte.
+Veuillez consulter notre guide [Que faire en cas de compte bloqué pour spam ?](/pages/web/emails/locked_for_spam) pour permettre à nos équipes de sécurité de réactiver le compte.
 
 ### L'abonnement au compte est expiré <a name="expired"></a>
 
@@ -66,7 +66,7 @@ Vous pouvez, par exemple, décider que le compte sera verrouillé après plusieu
 
 Dans ce cas, vous pouvez attendre que le compte soit de nouveau disponible ou contacter nos équipes Exchange en créant une demande d'assistance.
 
-Pour plus d'informations sur cette fonctionnalité, consultez notre [guide sur la politique de sécurité](/fr/microsoft-collaborative-solutions/gerer-politique-de-securite-mot-de-passe/).
+Pour plus d'informations sur cette fonctionnalité, consultez notre [guide sur la politique de sécurité](/pages/web/emails/security-policy).
 
 ### L'authentification au webmail a échoué <a name="password"></a>
 

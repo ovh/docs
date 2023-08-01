@@ -161,9 +161,9 @@ Si vous désirez obtenir de l’aide concernant les fonctionnalités de votre si
 
 ### Étape 6 : utiliser vos adresses e-mail
 
-Il ne reste plus qu'à utiliser vos adresses e-mail. Pour cela, OVHcloud met à disposition un applicatif en ligne (webmail) : RoundCube. Ce dernier est accessible à l'adresse <https://www.ovh.com/ca/fr/mail/> où vous devrez y renseigner les identifiants relatifs à votre adresse e-mail créée chez OVHcloud.
+Il ne reste plus qu'à utiliser vos adresses e-mail. Pour cela, OVHcloud met à disposition un applicatif en ligne (webmail), accessible à l'adresse <https://www.ovh.com/ca/fr/mail/>, où vous devrez y renseigner les identifiants relatifs à votre adresse e-mail créée chez OVHcloud.
 
-Si vous désirez obtenir plus de détails sur l'utilisation de RoundCube, consultez notre guide : [Utilisation de RoundCube](/ca/fr/emails/utilisation-roundcube/){.external}. Si vous souhaitez configurer votre adresse e-mail sur un logiciel de messagerie ou un appareil (comme un smartphone ou une tablette), consultez nos documentations depuis ce portail : </products/web-cloud-email-collaborative-solutions-mx-plan>.
+Si vous souhaitez configurer votre adresse e-mail sur un logiciel de messagerie ou un appareil (comme un smartphone ou une tablette), consultez nos documentations depuis [ce portail](/products/web-cloud-email-collaborative-solutions).
 
 
 ## Aller plus loin
@@ -175,8 +175,6 @@ Si vous désirez obtenir plus de détails sur l'utilisation de RoundCube, consul
 [Installer son site avec les modules en 1 clic](/pages/web/hosting/cms_install_1_click_modules){.external}
 
 [Comment créer une adresse e-mail](/pages/web/emails/email_generalities#etape-2-creer-vos-adresses-e-mail){.external}
-
-[Utilisation de RoundCube](/ca/fr/emails/utilisation-roundcube/){.external}
 
 [Les certificats SSL sur les hébergements web](/pages/web/hosting/ssl_on_webhosting){.external}
 

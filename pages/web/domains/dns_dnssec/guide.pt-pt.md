@@ -22,7 +22,7 @@ O **D**omain **N**ame **S**ystem **SEC**urity tensions (**DNSSEC**), permite pro
 
 Para mais informações sobre o funcionamento do **DNSSEC**, consulte a nossa página « [Compreender o DNSSEC](https://www.ovhcloud.com/pt/domains/dnssec/){.external} ».
 
-Não hesite também em consultar os nossos manuais sobre [os servidores DNS da OVHcloud](/pages/web/domains/dns_server_general_information) e sobre a [edição de uma zona DNS da OVHcloud](pages/web/domains/dns_zone_edit/) se deseja mais informações sobre estes assumptos.
+Não hesite também em consultar os nossos manuais sobre [os servidores DNS da OVHcloud](/pages/web/domains/dns_server_general_information) e sobre a [edição de uma zona DNS da OVHcloud](/pages/web/domains/dns_zone_edit) se deseja mais informações sobre estes assumptos.
 
 ## Requisitos
 
@@ -59,11 +59,11 @@ Ainda no separador `Informações gerais`{.action}, na sequência da [etapa 1](#
 
 Para isso, no quadro « Segurança », verifique o estado junto da menção « Delegação Segura - DNSSEC ».
 
-![dnssec](images/ativate-dnssec-step2.png){.thumbnail}
+![dnssec](images/activate-dnssec-step2.png){.thumbnail}
 
 Graças ao botão de ativação situado por cima da menção `Delegação Segura - DNSSEC`{.action}, poderá ativar ou desativar o **DNSSEC** no seu domínio. Ao realizar esta ação, aparecerá uma nova janela a partir da qual poderá validar a modificação.
 
-![dnssec](images/ativate-dnssec-step3.png){.thumbnail}
+![dnssec](images/activate-dnssec-step3.png){.thumbnail}
 
 > [!primary]
 >

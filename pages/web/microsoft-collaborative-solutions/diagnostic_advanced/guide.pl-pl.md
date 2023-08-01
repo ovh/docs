@@ -55,7 +55,7 @@ Zablokowane konto zawsze otrzymuje e-maile, ale wysyłka została wyłączona pr
 
 Możesz to sprawdzić w zakładce `Konta e-mail`{.action} w Twojej usłudze Exchange. Konto będzie zawierać oznaczenie `SPAM` w kolumnie "Status" tabeli.
 
-Zapoznaj się z naszym przewodnikiem [Co zrobić w przypadku blokady konta ze względu na spam?](/pl/microsoft-collaborative-solutions/blokada-za-spam/) aby umożliwić naszym zespołom bezpieczeństwa ponowne uruchomienie konta.
+Zapoznaj się z naszym przewodnikiem [Co zrobić w przypadku blokady konta ze względu na spam?](/pages/web/emails/locked_for_spam) aby umożliwić naszym zespołom bezpieczeństwa ponowne uruchomienie konta.
 
 ### Abonament dotyczący konta wygasł <a name="expired"></a>
 
@@ -70,7 +70,7 @@ Możesz na przykład zdecydować, że konto zostanie zablokowane po kilku nieuda
 
 W takim przypadku możesz poczekać, aż konto będzie ponownie dostępne lub skontaktować się z zespołem Exchange dodając zgłoszenie z poziomu panelu klienta.
 
-Aby uzyskać więcej informacji na temat tej funkcji, zapoznaj się z naszym [przewodnikiem dotyczącym polityki bezpieczeństwa](/pl/microsoft-collaborative-solutions/zarzadzanie-polityka-bezpieczenstwa-exchange/).
+Aby uzyskać więcej informacji na temat tej funkcji, zapoznaj się z naszym [przewodnikiem dotyczącym polityki bezpieczeństwa](/pages/web/emails/security-policy).
 
 ### Logowanie do webmaila nie powiodło się. <a name="password"></a>
 

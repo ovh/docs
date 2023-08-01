@@ -252,7 +252,7 @@ Możliwe są dwa scenariusze:
 
 Jeśli potrzebujesz pomocy, zapoznaj się z tym przewodnikiem: [Tworzenie instancji](/pages/platform/public-cloud/public-cloud-first-steps#create-instance) Podczas tworzenia instancji w etapie 5 możesz wybrać tryb sieci, a następnie prywatną sieć, do której chcesz zintegrować instancję.
 
-![przypisz nową instancję](images/network-selection){.thumbnail}
+![przypisz nową instancję](images/network-selection.png){.thumbnail}
 
 > [!warning]
 > W Panelu klienta OVHcloud będzie można podłączyć instancję **tylko do jednej** sieci vRack.
