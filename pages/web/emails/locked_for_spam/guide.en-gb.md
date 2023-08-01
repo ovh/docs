@@ -120,4 +120,8 @@ These headers will help determine the movement and origin of the emails sent.
 
 ## Go further
 
+For specialized services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/).
+
+If you would like assistance with using and configuring your OVHcloud solutions, we recommend referring to our range of [support solutions](https://www.ovhcloud.com/en-gb/support-levels/).
+
 Join our community of users on <https://community.ovh.com/en/>.

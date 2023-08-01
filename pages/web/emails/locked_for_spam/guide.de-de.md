@@ -83,7 +83,6 @@ Wählen Sie das betreffende E-Mail-Angebot in den folgenden Tabs aus:
 
 ![spam](images/blocked-for-SPAM-01-03.png){.thumbnail}
 
-
 ### Schritt 3: Auf das Support-Ticket zugreifen <a name="step3"></a>
 
 Nach Schritt 1 werden Sie zum Fenster „Meine Support-Anfragen“ weitergeleitet. Klicken Sie auf `...`{.action} rechts vom Ticket mit dem Betreff „Account locked for spam“ und klicken Sie danach auf `Details anzeigen`{.action}. 
@@ -117,7 +116,6 @@ Dises Support-Ticket sieht wie folgt aus:
 Im Anschluss an diese Nachricht wird Ihnen ein Beispiel der Header der verdächtigen E-Mails angehängt.
 
 Diese Header werden verwendet, um die Route und den Ursprung der gesendeten E-Mails zu ermitteln.
-
 
 ## Weiterführende Informationen <a name="go-further"></a>
  
