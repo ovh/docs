@@ -104,7 +104,7 @@ A continuación, se rechazarán las conexiones al servidor a través del usuario
 
 ### KVM
 
-Utilice esta opción para conectarse a su VPS a través de KVM. Para más información, consulte [nuestra guía](pages/cloud/vps/using_kvm_for_vps).
+Utilice esta opción para conectarse a su VPS a través de KVM. Para más información, consulte [nuestra guía](/pages/cloud/vps/using_kvm_for_vps).
 
 ### Cambiar el propietario
 

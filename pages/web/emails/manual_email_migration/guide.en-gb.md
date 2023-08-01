@@ -8,7 +8,7 @@ updated: 2021-01-05
 
 ## Objective
 
-You can [migrate an email address automatically](/gb/en/microsoft-collaborative-solutions/exchange-account-migration-with-ovh-mail-migrator/){.external} via our [OVH Mail Migrator](https://omm.ovh.net/){.external} tool. You can also manually migrate your email address using an email client.
+You can [migrate an email address automatically](/pages/web/emails/migration_omm){.external} via our [OVH Mail Migrator](https://omm.ovh.net/){.external} tool. You can also manually migrate your email address using an email client.
 
 **Find out how to migrate your email address manually.**
 
@@ -26,7 +26,7 @@ You can [migrate an email address automatically](/gb/en/microsoft-collaborative-
 ## Instructions
 
 > [!primary]
-> First of all, check if automatic migration is possible using our [OVH Mail Migrator](https://omm.ovh.net/){.external}. To do this, please use our guide on [Migrating email accounts with OVH Mail Migrator](/gb/en/microsoft-collaborative-solutions/exchange-account-migration-with-ovh-mail-migrator/){.external}.
+> First of all, check if automatic migration is possible using our [OVH Mail Migrator](https://omm.ovh.net/){.external}. To do this, please use our guide on [Migrating email accounts with OVH Mail Migrator](/pages/web/emails/migration_omm){.external}.
 
 In this guide, we have carried out operations on the most commonly used email software, i.e. **Outlook**, **Mail** on Mac OS and **Thunderbird**.
 
@@ -230,6 +230,6 @@ In your inbox and the left-hand column, you will find the folders and emails for
 
 ## Go further
 
-[Migrating email accounts using OVH Mail Migrator](/gb/en/microsoft-collaborative-solutions/exchange-account-migration-with-ovh-mail-migrator/)
+[Migrating email accounts using OVH Mail Migrator](/pages/web/emails/migration_omm)
 
 Join our community of users on <https://community.ovh.com/en/>.

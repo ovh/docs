@@ -105,7 +105,7 @@ De seguida, as ligações ao servidor através do utilizador root (`ssh root@IPv
 
 ### KVM
 
-Utilize esta opção para se ligar ao seu VPS através do KVM. Encontre todos os detalhes no [nosso guia](pages/cloud/vps/using_kvm_for_vps).
+Utilize esta opção para se ligar ao seu VPS através do KVM. Encontre todos os detalhes no [nosso guia](/pages/cloud/vps/using_kvm_for_vps).
 
 ### Alterar titular
 

@@ -14,7 +14,7 @@ updated: 2022-12-01
 
 > [!primary]
 >
-> - Ter encomendado um serviço [SSL Gateway](/pt/ssl-gateway/order-ssl-gateway/guide.pt-pt.md).
+> - Ter encomendado um serviço [SSL Gateway](/pages/web/ssl-gateway/order-ssl-gateway).
 > - Ter acesso ao seu Espaço Cliente Sunrise.
 >
 

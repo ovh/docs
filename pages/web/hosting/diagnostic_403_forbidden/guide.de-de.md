@@ -120,7 +120,7 @@ Wenn Ihr Hosting vor mehr als zwei Wochen gesperrt wurde, kontaktieren Sie einen
 
 > [!success]
 >
-> Wenn Sie weitere Informationen zu den [Schritten 2 und 3](#step-2) benötigen, lesen Sie unsere Hilfe zu [Aktionen wenn Ihre Website von einem Hack betroffen ist](/de/hosting/diagnose-403-forbidden/pages/web/hosting/cms_what_to_do_if_your_site_is_hacked).
+> Wenn Sie weitere Informationen zu den [Schritten 2 und 3](#step-2) benötigen, lesen Sie unsere Hilfe zu [Aktionen wenn Ihre Website von einem Hack betroffen ist](/pages/web/hosting/cms_what_to_do_if_your_site_is_hacked).
 >
 
 ### Schritt 4: Webhosting wieder aktivieren <a name="reactivate-web-hosting"></a>

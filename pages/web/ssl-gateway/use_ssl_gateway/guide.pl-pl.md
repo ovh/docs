@@ -14,7 +14,7 @@ updated: 2022-12-01
 
 > [!primary]
 >
-> - Zamówienie usługi [SSL Gateway](/pl/ssl-gateway/order-ssl-gateway/guide.pl-pl.md).
+> - Zamówienie usługi [SSL Gateway](/pages/web/ssl-gateway/order-ssl-gateway).
 > - Dostęp do Panelu klienta Sunrise.
 >
 

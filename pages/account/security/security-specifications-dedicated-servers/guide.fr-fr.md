@@ -103,7 +103,7 @@ A travers son espace client OVHcloud, le client a la possibilité de gérer le s
 
 Afin de référencer chaque client ayant souscrit à un ou plusieurs services, OVHcloud utilise un compte propriétaire avec un NIC interne. 
 
-Pour renforcer l'accès au compte client, le client a la possibilité d'activer [une authentification à double facteur (2FA)](/pages/account/customer/secure-ovhcloud-account-with-2fa) ou [l'authentification SSO (Single Sign-On)](/products/customer-connect-saml-sso) en associant son compte à un Active Directory externe.
+Pour renforcer l'accès au compte client, le client a la possibilité d'activer [une authentification à double facteur (2FA)](/pages/account/customer/secure-ovhcloud-account-with-2fa) ou [l'authentification SSO (Single Sign-On)](/products/account-and-service-management-account-information-users) en associant son compte à un Active Directory externe.
 
 ### 7.2 - Data Plane
 

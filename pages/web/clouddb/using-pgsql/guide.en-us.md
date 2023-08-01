@@ -39,7 +39,7 @@ To log in to your database, make sure that you have:
 
 All this information is available in the [Web Control Panel](https://www.ovh.com/manager/web/){.external}.
 
-There is also a guide here: [Getting started with the Web Cloud Databases service](/us/en/clouddb/starting_with_clouddb/guide.en-gb.md){.ref}
+There is also a guide here: [Getting started with the Web Cloud Databases service](/pages/web/clouddb/starting_with_clouddb){.ref}
 
 
 ### Connect via the command line

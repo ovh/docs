@@ -44,7 +44,7 @@ Para conectarse a ella, es necesario disponer de la siguiente información relat
 
 Puede encontrar todos estos datos en el [área de cliente Web](https://www.ovh.com/manager/web/){.external}.
 
-Para más información, puede consultar la guía [Primeros pasos con el servicio Cloud Databases](/es/clouddb/starting_with_clouddb/guide.es-es.md){.ref}
+Para más información, puede consultar la guía [Primeros pasos con el servicio Cloud Databases](/pages/web/clouddb/starting_with_clouddb){.ref}
 
 
 ### Conexion en linea de comandos

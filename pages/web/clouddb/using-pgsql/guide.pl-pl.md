@@ -40,7 +40,7 @@ Aby zalogować się do bazy danych, musisz dysponować:
 
 Wszystkie te informacje są dostępne w [Panelu klienta](https://www.ovh.com/manager/web/){.external}.
 
-Zapoznaj się również z tym przewodnikiem: [Pierwsze kroki z usługą Cloud Databases](/pl/clouddb/starting_with_clouddb/guide.pl-pl.md){.ref}
+Zapoznaj się również z tym przewodnikiem: [Pierwsze kroki z usługą Cloud Databases](/pages/web/clouddb/starting_with_clouddb){.ref}
 
 
 ### Logowanie z linii polecen

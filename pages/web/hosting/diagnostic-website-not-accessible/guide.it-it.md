@@ -135,8 +135,6 @@ Il tuo sito Web sarà disponibile entro 24 ore.
 
 [Risolvere l'errore "Sito non installato"](/pages/web/hosting/multisites_website_not_installed)
 
-[Web hosting come fai a diagnosticare una pagina bianca?](/pages/web/hosting/diagnostic_fix_500_internal_server_error)
-
 [Cosa fare in caso di errore 500 Internal Server Error?](/pages/web/hosting/diagnostic_fix_500_internal_server_error)
 
 [Risolvere gli errori più frequenti associati ai moduli in 1 click](/pages/web/hosting/diagnostic_errors_module1clic)

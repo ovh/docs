@@ -163,7 +163,7 @@ Si vous désirez obtenir de l’aide concernant les fonctionnalités de votre si
 
 Il ne reste plus qu'à utiliser vos adresses e-mail. Pour cela, OVHcloud met à disposition un applicatif en ligne (webmail) : RoundCube. Ce dernier est accessible à l'adresse <https://www.ovhcloud.com/fr/mail/> où vous devrez y renseigner les identifiants relatifs à votre adresse e-mail créée chez OVHcloud.
 
-Si vous désirez obtenir plus de détails sur l'utilisation de RoundCube, consultez notre guide : [Utilisation de RoundCube](/pages/web/emails/email_roundcube){.external}. Si vous souhaitez configurer votre adresse e-mail sur un logiciel de messagerie ou un appareil (comme un smartphone ou une tablette), consultez nos documentations depuis ce portail : </products/web-cloud-email-collaborative-solutions-mx-plan>.
+Si vous désirez obtenir plus de détails sur l'utilisation de RoundCube, consultez notre guide : [Utilisation de RoundCube](/pages/web/emails/email_roundcube){.external}. Si vous souhaitez configurer votre adresse e-mail sur un logiciel de messagerie ou un appareil (comme un smartphone ou une tablette), consultez nos documentations depuis [ce portail](/products/web-cloud-email-collaborative-solutions).
 
 
 ## Aller plus loin

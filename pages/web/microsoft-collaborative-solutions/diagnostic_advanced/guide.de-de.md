@@ -56,7 +56,7 @@ Ein blockiertes Konto empfängt weiterhin E-Mails, aber der Versand wurde vom au
 
 Sie können dies im Tab `E-Mail-Accounts`{.action} Ihres Exchange-Dienstes überprüfen. Für den Account wird dann der Status `SPAM` in der Tabelle angezeigt.
 
-Bitte folgen Sie den Anweisungen in [dieser Anleitung](/de/microsoft-collaborative-solutions/blocked-wegen-spam/), damit unsere Sicherheitsteams das Konto wieder freischalten können.
+Bitte folgen Sie den Anweisungen in [dieser Anleitung](/pages/web/emails/locked_for_spam), damit unsere Sicherheitsteams das Konto wieder freischalten können.
 
 ### Das Abonnement des Accounts ist abgelaufen <a name="expired"></a>
 
@@ -71,7 +71,7 @@ Sie können zum Beispiel festlegen, dass das Konto nach mehreren fehlgeschlagene
 
 In diesem Fall können Sie entweder warten, bis das Konto wieder verfügbar ist, oder Sie können unsere Exchange-Teams kontaktieren, indem Sie eine Support-Anfrage erstellen.
 
-Weitere Informationen zu dieser Funktion finden Sie in unserer [Anleitung zu Sicherheitsrichtlinien](/de/microsoft-collaborative-solutions/passwort-sicherheitseinstellungen-verwalten/).
+Weitere Informationen zu dieser Funktion finden Sie in unserer [Anleitung zu Sicherheitsrichtlinien](/pages/web/emails/security-policy).
 
 ### Webmail-Authentifizierung ist fehlgeschlagen <a name="password"></a>
 

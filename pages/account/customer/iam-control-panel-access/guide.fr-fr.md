@@ -17,7 +17,7 @@ Ce guide explique comment fournir à un utilisateur les droits essentiels lui pe
 
 - Disposer d'un [compte OVHcloud](/pages/account/customer/ovhcloud-account-creation)
 - Savoir [gérer les utilisateurs du compte](/pages/account/customer/ovhcloud-users-management)
-- Savoir [comment configurer des stratégies pour IAM](/pages/account/iam-policies-ui)
+- Savoir [comment configurer des stratégies pour IAM](/pages/account/customer/iam-policies-api)
 
 ## En pratique
 

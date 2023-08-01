@@ -247,11 +247,11 @@ Find out more about [Public Cloud additional disks](https://www.ovhcloud.com/en-
 
 #### Step 1: Create and attach the disk to your Public Cloud Instance
 
-To do this, just follow the steps in this guide: [Create an additional disk on Public Cloud](/ie/en/public-cloud/create-an-additional-volume-and-attach-it-to-an-instance/){.external}.
+To do this, just follow the steps in this guide: [Create an additional disk on Public Cloud](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance){.external}.
 
 #### Step 2: Configure the additional disk
 
-To do this, just follow the steps in this guide: [Configure an additional disk on Public Cloud](/ie/en/public-cloud/configure-an-additional-volume/#from-an-instance-on-linux){.external}.
+To do this, just follow the steps in this guide: [Configure an additional disk on Public Cloud](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance#from-an-instance-on-linux){.external}.
 
 > [!primary]
 >

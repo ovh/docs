@@ -55,7 +55,7 @@ Una cuenta bloqueada siempre recibe mensajes de correo, pero el envío ha sido d
 
 Puede comprobarlo en la pestaña `Cuentas de correo`{.action} de su servicio Exchange. La cuenta tendrá una mención `SPAM` en la columna "Estado" de la tabla.
 
-Consulte nuestra guía ¿[Qué hacer en caso de cuenta bloqueada por spam?](/es/microsoft-collaborative-solutions/bloqueo-por-correo-no-deseado/) para que nuestros equipos de seguridad puedan reactivar la cuenta.
+Consulte nuestra guía ¿[Qué hacer en caso de cuenta bloqueada por spam?](/pages/web/emails/locked_for_spam) para que nuestros equipos de seguridad puedan reactivar la cuenta.
 
 ### La suscripción a la cuenta ha expirado. <a name="expired"></a>
 
@@ -70,7 +70,7 @@ Por ejemplo, puede decidir que la cuenta se bloquee después de varios intentos 
 
 En ese caso, puede esperar a que la cuenta vuelva a estar disponible o contactar con nuestro equipo Exchange creando una solicitud de asistencia.
 
-Para más información sobre esta funcionalidad, consulte nuestra [guía sobre la política de seguridad](/es/microsoft-collaborative-solutions/configurar-politica-seguridad-exchange/).
+Para más información sobre esta funcionalidad, consulte nuestra [guía sobre la política de seguridad](/pages/web/emails/security-policy).
 
 ### La autenticación en el webmail no ha podido realizarse. <a name="password"></a>
 

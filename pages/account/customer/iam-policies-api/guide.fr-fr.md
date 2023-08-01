@@ -18,7 +18,7 @@ La gestion des accès d'OVHcloud est basée sur un système de gestion de « pol
 Dans le détail, une politique contient :
 
 - Une ou plusieurs **identités** ciblées par cette politique. 
-    - Il peut s'agir d'identifiants de compte, d'utilisateurs ou de groupes d'utilisateurs (comme ceux utilisés avec la [fédération d'identité](/products/customer-connect-saml-sso)). 
+    - Il peut s'agir d'identifiants de compte, d'utilisateurs ou de groupes d'utilisateurs (comme ceux utilisés avec la [fédération d'identité](/products/account-and-service-management-account-information-users)). 
 - Une ou plusieurs **ressources** concernées par cette politique. 
     - Une ressource est un produit OVHcloud qui sera concerné par cette politique (un nom de domaine, un serveur Nutanix, un Load Balancer, etc.)
 - Une ou plusieurs **actions** autorisées ou exclues par cette politique. 
@@ -311,7 +311,7 @@ Pour plus d'informations, consultez notre [documentation sur la gestion des util
 
 #### Avec une connexion SSO active
 
-Si la fédération d'identité est activée via la [connexion SSO](/products/customer-connect-saml-sso), les politiques s'appliquent uniquement aux groupes d'utilisateurs, comme décrit dans la section précédente.
+Si la fédération d'identité est activée via la [connexion SSO](/products/account-and-service-management-account-information-users), les politiques s'appliquent uniquement aux groupes d'utilisateurs, comme décrit dans la section précédente.
 
 ### Ressources
 

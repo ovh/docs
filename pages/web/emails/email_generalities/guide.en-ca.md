@@ -64,7 +64,7 @@ Once you have configured your email addresses, you can start using them straight
 
 Go to the [Webmail login](https://www.ovh.com/ca/en/mail/){.external} page, then enter the email address and password. Then click the `Login`{.action} button.
 
-When you first log in to webmail, you will be prompted to set the interface language, and the time zone you are in. Your inbox will then appear. To find out how to use your email address via OWA webmail, you can refer to our [Outlook Web App user guide](/ca/en/microsoft-collaborative-solutions/exchange_2016_outlook_web_app_user_guide/){.external}.
+When you first log in to webmail, you will be prompted to set the interface language, and the time zone you are in. Your inbox will then appear. To find out how to use your email address via OWA webmail, you can refer to our [Outlook Web App user guide](/pages/web/emails/email_owa){.external}.
 
 ![email](images/mxplan-starter-new-step4.png){.thumbnail}
 

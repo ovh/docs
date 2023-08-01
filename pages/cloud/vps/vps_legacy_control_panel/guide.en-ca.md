@@ -102,7 +102,7 @@ Afterwards, connections to your server via root user (`ssh root@IPv4_VPS`) will 
 
 ### KVM
 
-Use this option to connect to your VPS via KVM. Find all the details in [our guide](pages/cloud/vps/using_kvm_for_vps).
+Use this option to connect to your VPS via KVM. Find all the details in [our guide](/pages/cloud/vps/using_kvm_for_vps).
 
 ### Change holder
 
