@@ -4,8 +4,6 @@ excerpt: 'Find out what to do if your email address has been blocked for spam'
 updated: 2023-06-07
 ---
 
-**Last updated 20th April 2020**
-
 ## Objective
 
 When your email address is blocked for SPAM, it means that suspicious activity has been detected in sending emails from this address. In this situation, you can no longer send email from this email address. You should then understand why a suspicious activity was detected and take action to prevent it from happening again.
@@ -17,7 +15,7 @@ When your email address is blocked for SPAM, it means that suspicious activity h
 - an [OVHcloud email solution](https://www.ovhcloud.com/en-gb/emails/)
 - access to the `Web Cloud`{.action} section of the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 
-## Instructions
+## Instructions <a name="instructions"></a>
 
 Before you proceed, and if the block is for an MXplan email address, identify the version you have to follow the correct unblock process. Use the table below to check how to distinguish between the two versions.
 

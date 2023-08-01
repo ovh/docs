@@ -33,7 +33,7 @@ Wenn der/die rechtmäßige(n) Benutzer(n) der E-Mail-Adresse die vom Antispam en
 
 - Führen Sie jedem auf rechner, der die für SPAM gesperrte E-Mail-Adresse, verwenden Virenscan durch und Wenden sie einen Patch an, wenn infiziert sind.
 
-- überprüfen Sie alle Software, die Kennungen der für SPAM gesperrten E-Mail-Adressen verwenden. B. Faxgerät, branchen Software, E-Mail-Software).
+- überprüfen Sie alle Software, die Kennungen der für SPAM gesperrten E-Mail-Adressen (verwenden. B. Faxgerät, branchen Software, E-Mail-Software).
 
 ### Schritt 2: Überprüfen Sie den Status des E-Mail-Accounts und greifen Sie auf das zugehörige Support-Ticket zu <a name="step3"></a>
 
@@ -60,7 +60,7 @@ Wählen Sie das betreffende E-Mail-Angebot in den folgenden Tabs aus:
 >>
 > **MXplan - neue Version**
 >>
->> Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie unter  `E-Mails`{.action} die betreffende Domain aus. Gehen Sie dann auf den Tab `E-Mails`{.action}.
+>> Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie unter `E-Mails`{.action} die betreffende Domain aus. Gehen Sie dann auf den Tab `E-Mails`{.action}.
 >>
 >> Wenn in der Spalte „Blockiert wegen SPAM“ rechts neben der entsprechenden E-Mail-Adresse „Ja“ angegeben ist, klicken Sie auf dieses Element und dann auf `Ticket beantworten`{.action}. Die Entsperrung der E-Mail-Adresse erfolgt nicht automatisch. Kontaktieren Sie den Support über das Support-Ticket und beantworten Sie die 3 gestellten Fragen.<br>
 >> Gehen Sie zu [Schritt 3](#step3) der Anleitung.
@@ -70,13 +70,13 @@ Wählen Sie das betreffende E-Mail-Angebot in den folgenden Tabs aus:
 > **MXplan - History**
 >>
 >> Wenn die Sperrung eine E-Mail-Adresse [MXplan History](#instructions) betrifft, gibt es kein Support-Ticket. Lesen Sie [Schritt 1](#step1) dieser Anleitung, bevor Sie den folgenden Anweisungen folgen.
->
->>> Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und gehen Sie in den Bereich Web Cloud {.action}. Klicken Sie auf E-Mails {.action} und wählen Sie die betreffende Domain aus.
->
->> Gehen Sie auf den Tab {.action} E-Mails Ihrer Plattform. Wenn in der Spalte "Blockiert wegen SPAM" "Ja" steht, klicken Sie auf diesen Eintrag und dann auf `Passwort ändern`{.action}. Ihre E-Mail-Adresse wurde nun entsperrt, Sie müssen den [Schritt 3](#step3) nicht befolgen.
->
->>![spam](images/blocked-for-SPAM-01-04.png) {.thumbnail}
->
+>>
+>> Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie auf `E-Mails`{.action} und wählen Sie die betreffende Domain aus.
+>>
+>> Gehen Sie auf den Tab `E-Mails`{.action} Ihrer Plattform. Wenn in der Spalte "Blockiert wegen SPAM" "Ja" steht, klicken Sie auf diesen Eintrag und dann auf `Passwort ändern`{.action}. Ihre E-Mail-Adresse wurde nun entsperrt, Sie müssen den [Schritt 3](#step3) nicht befolgen.
+>>
+>>![spam](images/blocked-for-SPAM-01-04.png){.thumbnail}
+>>
 >> > [!warning]
 >> >
 >> > In seltenen Fällen kann in der Spalte "Blockiert wegen SPAM" Nein angegeben werden, obwohl die E-Mail-Adresse gesperrt ist. Wenn Sie das Richtige getan haben, um die E-Mail-Adresse zu sichern, bleibt die Lösung wie oben beschrieben bestehen.
@@ -97,11 +97,11 @@ Dises Support-Ticket sieht wie folgt aus:
 > 
 > Sehr geehrter Kunde,
 >
-unser System hat festgestellt, dass Spam von der Adresse **Ihre.Adresse@domain.com** gesendet wurde. Diese E-Mail-Adresse ist unter der Dienstleistung '**Dienstreferenz**' auf unseren Systemen gehostet. Wir haben deshalb vorübergehend den Versand neuer Nachrichten blockiert.
+> unser System hat festgestellt, dass Spam von der Adresse **Ihre.Adresse@domain.com** gesendet wurde. Diese E-Mail-Adresse ist unter der Dienstleistung '**Dienstreferenz**' auf unseren Systemen gehostet. Wir haben deshalb vorübergehend den Versand neuer Nachrichten blockiert.
 >
-Derzeit haben wir **X** unerwünschte Nachrichten, die von Ihrer E-Mail-Adresse gesendet wurden, entdeckt.
+> Derzeit haben wir **X** unerwünschte Nachrichten, die von Ihrer E-Mail-Adresse gesendet wurden, entdeckt.
 >
-Um uns dabei zu helfen, den Versand von E-Mails für die Adresse **Ihre.Adresse@domain.com** wieder zu aktivieren, beantworten Sie bitte folgende Fragen:
+> Um uns dabei zu helfen, den Versand von E-Mails für die Adresse **Ihre.Adresse@domain.com** wieder zu aktivieren, beantworten Sie bitte folgende Fragen:
 >
 > - Sind Sie der Absender der betroffenen E-Mail (siehe Header unten)?
 >
@@ -109,8 +109,9 @@ Um uns dabei zu helfen, den Versand von E-Mails für die Adresse **Ihre.Adresse@
 >
 > - Haben Sie auf eine Spam-Nachricht geantwortet?
 >
-Ihre Antworten auf diese Fragen helfen uns dabei, Ihren Account schnellstmöglich wieder zu aktivieren.
-> 
+> Ihre Antworten auf diese Fragen helfen uns dabei, Ihren Account schnellstmöglich wieder zu aktivieren.
+> <br>
+> <br>
 >
 
 Im Anschluss an diese Nachricht wird Ihnen ein Beispiel der Header der verdächtigen E-Mails angehängt.
@@ -118,6 +119,10 @@ Im Anschluss an diese Nachricht wird Ihnen ein Beispiel der Header der verdächt
 Diese Header werden verwendet, um die Route und den Ursprung der gesendeten E-Mails zu ermitteln.
 
 
-## Weiterführende Informationen
-
-Für den Austausch mit unserer Community gehen Sie auf <https://community.ovh.com/en/>.
+## Weiterführende Informationen <a name="go-further"></a>
+ 
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+ 
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
+ 
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

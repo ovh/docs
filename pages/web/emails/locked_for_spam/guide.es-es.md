@@ -1,14 +1,12 @@
 ---
 title: '¿Qué hacer con una cuenta bloqueada debido a correo no deseado?'
 excerpt: 'Cómo proceder cuando su dirección ha sido bloqueada debido a correo no deseado'
-updated: 2020-04-20
+updated: 2023-06-07
 ---
-
-**Última actualización: 16/3/2020**
 
 ## Objetivo
 
-When your email address is blocked for SPAM, it means that suspicious activity has been detected in sending emails from this address. In this situation, you can no longer send email from this email address. You should then understand why a suspicious activity was detected and take action to prevent it from happening again.
+Cuando su dirección de correo electrónico está bloqueada por SPAM, significa que se ha detectado actividad sospechosa en el envío de mensajes de correo electrónico desde esta dirección. En este caso, ya no podrá enviar mensajes desde esta dirección de correo electrónico. A continuación, debe comprender por qué se ha detectado una actividad sospechosa y tomar medidas para evitar que vuelva a ocurrir.
 
 **Cómo proceder cuando su dirección ha sido bloqueada debido a correo no deseado**
 
@@ -23,7 +21,7 @@ Antes de continuar, y si el bloqueo afecta a una dirección de correo electróni
 
 |Versión histórica de la solución MX Plan|Nueva versión de la solución MX Plan|
 |---|---|
-|![email](images/mxplan-starter-legacy-step1.png) {.thumbnail}< br> Consulte la oferta en el cuadro "Suscripción"|[email](images/mxplan-starter-new-step1.png) {.thumbnail}< br>Consulte la referencia del servidor en el recuadro "Resumen"|
+|![email](images/mxplan-starter-legacy-step1.png){.thumbnail}< br> Consulte la oferta en el cuadro "Suscripción"|[email](images/mxplan-starter-new-step1.png){.thumbnail}< br>Consulte la referencia del servidor en el recuadro "Resumen"|
 
 ### Etapa 1: ¿por qué su dirección de correo electrónico está bloqueada por spam? <a name="step1"></a>
 
@@ -77,7 +75,7 @@ Seleccione el servicio de correo en las siguientes pestañas:
 >>
 >> Acceda a la pestaña `Emails`{.action} de su plataforma. Si la columna "Bloqueado por spam" indica "Sí", haga clic en esta opción y, seguidamente, en `Cambiar la contraseña`{.action}. Su dirección de correo electrónico se ha desbloqueado. No necesita seguir el [paso 3](#step3).
 >>
->>>![spam](images/blocked-for-SPAM-01-04.png) {.thumbnail}
+>>![spam](images/blocked-for-SPAM-01-04.pn){.thumbnail}
 >>
 >> > [!warning]
 >> >
@@ -120,6 +118,10 @@ A continuación de este mensaje, se le ha enviado una muestra de los encabezados
 
 Estos encabezados permiten determinar el rastro de la ruta y el origen de los mensajes de correo electrónico enviados.
 
-## Más información
+## Más información <a name="go-further"></a>
+  
+Para servicios especializados (posicionamiento web, desarrollo...), póngase en contacto con los [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
 
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Si desea ayuda para el uso y la configuración de sus soluciones de OVHcloud, consulte nuestras distintas [ofertas de soporte](https://www.ovhcloud.com/es-es/support-levels/).
+
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com>.

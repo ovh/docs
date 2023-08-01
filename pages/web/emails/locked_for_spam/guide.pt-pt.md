@@ -21,7 +21,7 @@ Antes de prosseguir, e se o bloqueio afetar um endereço de e-mail do tipo MXpla
 
 |Versão histórica da oferta MX Plan|Nova versão da oferta MX Plan|
 |---|---|
-|![email](images/mxplan-starter-legacy-step1.png) {.thumbnail}<br> Consulte a oferta na secção "Subscrição"|![email](images/mxplan-starter-new-step1.png) {.thumbnail}<br>Consulte a "Referência do servidor" na secção "Resumo"|
+|![email](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> Consulte a oferta na secção "Subscrição"|![email](images/mxplan-starter-new-step1.png){.thumbnail}<br>Consulte a "Referência do servidor" na secção "Resumo"|
 
 ### Fase 1: porque é que o seu endereço de e-mail foi bloqueado para SPAM? <a name="step1"></a>
 
@@ -73,7 +73,7 @@ Se a atividade suspeita detetada pelo sistema antisspam não tiver sido iniciada
 >>
 >> Dirija-se ao separador `Emails`{.action} da sua plataforma. Se a coluna "Bloqueado por SPAM" mencionar "Sim", clique nesta menção e depois em `Alterar a palavra-passe`{.action}. O seu endereço de e-mail foi desbloqueado. Não precisa de seguir o [passo 3](#step3).
 >>
->> ![spam](images/blocked-for-SPAM-01-04.png) {.thumbnail}
+>> ![spam](images/blocked-for-SPAM-01-04.png){.thumbnail}
 >>
 >> > [!warning]
 >> >
@@ -117,6 +117,10 @@ Anexámos a esta mensagem uma amostra de cabeçalhos dos e-mails enviados para s
 Estes cabeçalhos permitem rastrear e determinar a origem dos e-mails enviados.
 
 
-## Quer saber mais?
-
-Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.
+## Quer saber mais? <a name="go-further"></a>
+ 
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
+ 
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
+ 
+Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

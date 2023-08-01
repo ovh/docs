@@ -76,7 +76,7 @@ Jeśli podejrzana aktywność wykryta przez aplikację antyspamową nie została
 >>![spam](images/blocked-for-SPAM-01-04.png){.thumbnail}
 >>
 >> > [!warning]
->>
+>> >
 >> > W rzadkich przypadkach kolumna "Zablokowane ze względu na SPAM" może wskazywać "Nie", mimo że adres e-mail jest zablokowany. Jeśli zrobiłeś wszystko, co konieczne, aby zabezpieczyć adres e-mail, rozwiązanie pozostaje takie samo, jak wyżej.
 
 ### Etap 3: przejście do zgłoszenia serwisowego <a name="step3"></a>
@@ -92,7 +92,7 @@ Gotowe zgłoszenie serwisowe wygląda następująco:
 > 
 > Drogi Kliencie,
 >
-> Nasz system wykrył, że adres **youraddress@domain.com** hostowany w naszych systemach w ramach usługi **servicename** jest wykorzystywany do rozsyłania niechcianych wiadomości (spamu).
+> Nasz system wykrył, że adres **youraddress@domain.com** hostowany w naszych systemach w ramach usługi **servicename** jest wykorzystywany do rozsyłania niechcianych wiadomości (spam).
 > Wysyłanie e-maili zostało więc tymczasowo wyłączone.
 >
 > Na chwilę obecną wykryliśmy następującą liczbę podejrzanych wiadomości: **X**
@@ -115,6 +115,10 @@ Wraz z tą wiadomością otrzymałeś próbkę nagłówków wysłanych e-maili.
 
 Nagłówki te pozwolą określić drogę i pochodzenie wysłanych wiadomości.
 
-## Sprawdź również
-
-Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com/en/>.
+## Sprawdź również <a name="go-further"></a>
+ 
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+ 
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
+ 
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
