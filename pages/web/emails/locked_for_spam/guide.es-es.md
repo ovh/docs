@@ -45,7 +45,7 @@ Seleccione el servicio de correo en las siguientes pestañas:
 >> Inicie sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y acceda a la sección `Web Cloud`{.action}. Haga clic en `Microsoft`{.action}, luego en `Exchange`{.action} y, por último, seleccione la plataforma Exchange correspondiente.
 >>
 >> Acceda a la pestaña `Cuentas de correo electrónico`{.action} de su plataforma. Si la columna «Estado» de la dirección de correo electrónico correspondiente indica «bloqueado», haga clic en `...`{.action} a la derecha de la cuenta y, seguidamente, en `Desbloquear`{.action}. El desbloqueo de la dirección de correo electrónico no se realiza automáticamente. Es necesario contactar con el soporte en el tíquet de asistencia respondiendo a las 3 preguntas formuladas.
->> Pasar al [paso 3](#step3) de la guía.
+>> Continúe con el [paso 3](#step3) de la guía.
 >>
 >> ![spam](images/blocked-for-SPAM-01-01.png){.thumbnail}
 >> 
