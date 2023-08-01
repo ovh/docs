@@ -9,7 +9,7 @@ updated: 2020-03-19
 
 ## Wprowadzenie
 
-Lista mailingowa pozwala na masowe kontaktowanie się z abonentami, tzn. na przesyłanie wiadomości lub informacji do wielu odbiorców jednocześnie. Rozwiązanie to może być przydatne w ramach korespondencji informacyjnej, np. dotyczącej wydania nowego produktu (w przypadku witryny e-commerce) lub w celu poinformowania o nadchodzącym spotkaniu (w przypadku witryny społecznościowej). 
+Lista mailingowa pozwala na masowe kontaktowanie się z abonentami, tzn. na przesyłanie wiadomości lub informacji do wielu odbiorców jednocześnie. Rozwiązanie to może być przydatne w ramach korespondencji informacyjnej, np. dotyczącej wydania nowego produktu (w przypadku witryny e-commerce) lub w celu poinformowania o nadchodzącym spotkaniu (w przypadku witryny społecznościowej).
 
 **Dowiedz się, jak zarządzać listami mailingowymi**
 
@@ -69,9 +69,7 @@ Uzupełnij formularz zgodnie z informacjami zawartymi w poniższej tabeli:
 | Każdy może przesłać wiadomość (bez moderowania) | Wiadomości e-mail do odbiorców z listy mailingowej są wysyłane bezpośrednio do abonentów bez zatwierdzenia.             		|
 | Moderowanie abonentów         	| Właściciel lub moderator musi zatwierdzić zapisanie się abonenta do listy mailingowej.                                    	|
 
-
 ![emails](images/manage_mailing-lists_03.png){.thumbnail}
-
 
 > [!primary]
 >
@@ -81,13 +79,11 @@ Uzupełnij formularz zgodnie z informacjami zawartymi w poniższej tabeli:
 > - 250, jeśli wiadomości nie są moderowane
 >
 
-
 ### Zarządzanie opcjami listy mailingowej
 
 Aby zmodyfikować opcje listy mailingowej, kliknij przycisk `...`{.action} po prawej stronie listy. Teraz można zaktualizować opcje, usunąć listę mailingową lub udostępnić listę jej abonentów przez e-mail. 
 
 ![emails](images/manage_mailing-lists_04.png){.thumbnail}
-
 
 ### Zarządzanie abonentami
 
@@ -114,7 +110,7 @@ Istnieją dwie metody dodawania/usuwania abonentów:
 #### Eksport listy abonentów do pliku CSV
 
 Kliknij polecenie `Eksport abonentów do pliku CSV`{.action}, aby wyprodukować plik CSV zawierający listę wszystkich abonentów. Ta opcja nie jest dostępna w naszym przypadku, ponieważ nie dodano żadnego abonenta.
- 
+
 ### Zarządzanie moderatorami
 
 Aby zarządzać moderatorami listy mailingowej, kliknij sylwetkę w kolumnie „Moderatorzy”.
@@ -140,37 +136,35 @@ Istnieją dwie metody dodawania/usuwania moderatorów:
 > [!primary]
 > - Jeśli do jednej listy mailingowej wyznaczonych jest kilku moderatorów, wystarczy, że jeden z nich zatwierdzi wysłanie wiadomości do abonentów.
 > - Jeśli moderator wysyła wiadomość e-mail do odbiorców z listy mailingowej, tylko on otrzymuje e-mail dotyczący moderacji.
-> 
+>
 
 W zależności od liczby abonentów do dodania, operacja może zająć trochę czasu.
-
 
 ### Zapisywanie się do listy mailingowej
 
 Jeśli ktoś chce się zapisać do Twojej listy mailingowej, wystarczy, że wyśle wiadomość e-mail na adres:
 
-
 ```bash
 nazwa_twojej_LM-subscribe@twojadomena.com
 ```
-
 
 ### Wypisywanie się z listy mailingowej
 
 Jeśli ktoś chce się wypisać z Twojej listy mailingowej, wystarczy, że wyśle wiadomość e-mail na adres:
 
-
 ```bash
 nazwa_twojej_LM-unsubscribe@twojadomena.com
 ```
 
+> [!primary]
+>
+> Wypisanie się z listy mailingowej nie wymaga zatwierdzenia, niezależnie od tego, czy lista mailingowa jest moderowana czy nie.
 
 ### Automatyczne usuwanie błędnych adresów
 
 System listy mailingowej nie usuwa abonenta z listy po pierwszej wiadomości zwrotnej informującej o błędzie (wiadomość niedostarczona, nieistniejący adres itp.). Czeka około 12 dni od pierwszego nieudanego wysłania, a następnie wysyła abonentowi wiadomość ostrzegawczą.
 
 Wiadomość ostrzegawcza zawiera odniesienia do pominiętych wiadomości. Jeśli wysłanie wiadomości ostrzegawczej również się nie powiedzie, nasz system listy mailingowej czeka kolejne 12 dni, a następnie wysyła wiadomość testową. Jeśli wysłanie wiadomości testowej również się nie powiedzie, abonent zostaje usunięty z listy abonentów.
-
 
 ### Częste błędy
 
@@ -179,7 +173,6 @@ Wiadomość ostrzegawcza zawiera odniesienia do pominiętych wiadomości. Jeśli
 Wiadomość wysyłana do abonentów listy mailingowej musi zawierać temat. W przeciwnym razie automatycznie zostanie wyprodukowany błąd, a nadawca wiadomości otrzyma e-maila zwrotnego informującego o błędzie.
 
 Nadawca wiadomości bez tematu otrzyma zatem e-mail zwrotny informujący o błędzie, podobny do widocznego poniżej:
-
 
 ```bash
 Hi. This is the qmail-send program at mx1.ovh.net.
@@ -191,7 +184,6 @@ This is a permanent error; I've given up. Sorry it didn't work out.
 ezmlm-reject: fatal: Sorry, I don't accept message with empty Subject (#5.7.0)
 ```
 
-
 #### Wysłanie wiadomości z adresem e-mail abonenta listy mailingowej w polu UDW
 
 Aby wysłać wiadomość do abonentów listy mailingowej, ich adresy muszą być wpisane w polu „Do” lub „DW” (Do wiadomości).
@@ -199,7 +191,6 @@ Aby wysłać wiadomość do abonentów listy mailingowej, ich adresy muszą być
 Jeśli klient wpisze adres w polu UDW (Ukryte do wiadomości), zostanie zwrócony błąd.
 
 Nadawca e-maila otrzyma wiadomość zwrotną informującą o błędzie:
-
 
 ```bash
 Hi. This is the qmail-send program at mx1.ovh.net.
@@ -210,7 +201,6 @@ This is a permanent error; I've given up. Sorry it didn't work out.
 
 ezmlm-reject: fatal: List address must be in To: or Cc: (#5.7.0)
 ```
-
 
 ### Zaawansowana personalizacja
 
@@ -224,7 +214,6 @@ Możesz spersonalizować większość tekstów listy mailingowej. Jako moderator
 Wówczas otrzymasz wiadomość z instrukcją wprowadzania modyfikacji.
 
 Poniżej znajduje się lista plików zawierających teksty odpowiedzi i krótki opis wykorzystania ich treści. Aby edytować plik, wystarczy wysłać wiadomość na envoi-edit.plik, zastępując słowo „plik” nazwą pliku. Instrukcje edycji zostaną wysłane razem z plikiem tekstowym.
-
 
 |Plik|Wykorzystanie|
 |---|---|
@@ -255,7 +244,7 @@ Poniżej znajduje się lista plików zawierających teksty odpowiedzi i krótki 
 > [!primary]
 >
 > Przykład: Jeśli chcesz zmodyfikować domyślą stopkę wiadomości wysyłanych do abonentów listy mailingowej, musisz wysłać wiadomość na adres `nazwa_twojej_LM-edit.bottom@mydomain.ovh`. Otrzymasz wówczas nową wiadomość informującą, jak spersonalizować stopkę.
-> 
+>
 
 ## Sprawdź również
 

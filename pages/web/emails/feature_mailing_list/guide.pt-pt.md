@@ -9,7 +9,7 @@ updated: 2020-03-19
 
 ## Objetivo
 
-Uma mailing list permite-lhe contactar de forma massiva subscritores, ou seja, difundir uma mensagem ou uma informação a vários destinatários ao mesmo tempo. Isto pode ser importante no âmbito de um mailing informativo, por exemplo, sobre o lançamento de um novo produto (para um site de comércio eletrónico) ou para informar sobre um próximo encontro (para um site comunitário). 
+Uma mailing list permite-lhe contactar de forma massiva subscritores, ou seja, difundir uma mensagem ou uma informação a vários destinatários ao mesmo tempo. Isto pode ser importante no âmbito de um mailing informativo, por exemplo, sobre o lançamento de um novo produto (para um site de comércio eletrónico) ou para informar sobre um próximo encontro (para um site comunitário).
 
 **Fique a saber como gerir as suas mailing lists**
 
@@ -69,9 +69,7 @@ Preencha o formulário em função das informações descritas no seguinte quadr
 | Toda a gente pode publicar (sem moderação) | O envio de um e-mail para a mailing list é diretamente enviado para os subscritores sem validação.             		|
 | Moderação dos subscritores         	| O titular ou um moderador deve aprovar as subscrições na mailing list.                                    	|
 
-
 ![emails](images/manage_mailing-lists_03.png){.thumbnail}
-
 
 > [!primary]
 >
@@ -81,13 +79,11 @@ Preencha o formulário em função das informações descritas no seguinte quadr
 > - 250 sem moderação das mensagens
 >
 
-
 ### Gerir as opções da mailing list
 
 Para alterar as opções da mailing list, clique em `...`{.action} do lado direito. Pode então atualizar as opções, eliminar a mailing list ou partilhar a lista dos subscritores por e-mail. 
 
 ![emails](images/manage_mailing-lists_04.png){.thumbnail}
-
 
 ### Gerir os subscritores
 
@@ -114,7 +110,7 @@ Há 2 métodos para adicionar/eliminar subscritores:
 #### Exportar a sua lista de subscritores para um ficheiro CSV
 
 Clique em `Exportar os subscritores para CSV`{.action} para criar um ficheiro CSV com todos os seus subscritores. Esta opção não está disponível no nosso caso porque nenhum subscritor foi adicionado.
- 
+
 ### Gerir os moderadores
 
 Para gerir os moderadores da sua mailing list, clique na silhueta na coluna "Moderadores".
@@ -140,29 +136,29 @@ Há 2 métodos para adicionar/eliminar moderadores:
 > [!primary]
 > - Quando vários moderadores são definidos numa mailing list, basta a validação de um único moderador para que o e-mail seja difundido pelos subscritores.
 > - Quando um moderador envia um e-mail para a mailing list, só ele é que recebe o e-mail de moderação.
-> 
+>
 
 Em função do número de subscritores a adicionar, a realização da operação pode demorar algum tempo.
-
 
 ### Subscrever uma mailing list
 
 Se alguém pretender subscrever a sua mailing list, basta que envie um e-mail para:
 
-
 ```bash
 nome_da_sua_ML-subscribe@votredomaine.com
 ```
-
 
 ### Anular a subscrição de uma mailing list
 
 Se um subscritor pretender anular a subscrição da sua mailing list, basta que envie um e-mail para:
 
-
 ```bash
 nome_da_sua_ML-unsubscribe@votredomaine.com
 ```
+
+> [!primary]
+>
+> A anulação da subscrição de uma mailing list não requer validação, quer a mailing list seja moderada ou não.
 
 
 ### Eliminação automática dos endereços errados
@@ -171,7 +167,6 @@ O sistema de mailing list não elimina um subscritor da lista após uma única r
 
 A mensagem de aviso indica as referências das mensagens que falharam. Se esta mensagem de aviso também falhar, o nosso sistema mailing list espera mais 12 dias e envia uma mensagem de "teste". Se esta mensagem de teste também falhar, o subscritor é apagado da lista dos subscritores.
 
-
 ### Erros recorrentes
 
 #### Envio sem indicação de assunto no e-mail
@@ -179,7 +174,6 @@ A mensagem de aviso indica as referências das mensagens que falharam. Se esta m
 Um envio para uma mailing list deve obrigatoriamente incluir um assunto. Caso contrário, será automaticamente criado um erro e um e-mail de resposta de erro será enviado ao remetente relativamente ao envio.
 
 O remetente do e-mail sem assunto receberá então um e-mail de resposta de erro conforme abaixo indicado:
-
 
 ```bash
 Hi. This is the qmail-send program at mx1.ovh.net.
@@ -191,7 +185,6 @@ This is a permanent error; I've given up. Sorry it didn't work out.
 ezmlm-reject: fatal: Sorry, I don't accept message with empty Subject (#5.7.0)
 ```
 
-
 #### Envio com indicação do endereço da mailing list em cópia oculta
 
 Para enviar uma mensagem a uma mailing list, o endereço da mailing list deve obrigatoriamente encontrar-se no campo "To", ou no campo "Cópia para" (Cc).
@@ -199,7 +192,6 @@ Para enviar uma mensagem a uma mailing list, o endereço da mailing list deve ob
 Se o cliente indicar o endereço no campo "Cópia oculta", receberá uma resposta de erro.
 
 O remetente do e-mail receberá uma resposta de erro:
-
 
 ```bash
 Hi. This is the qmail-send program at mx1.ovh.net.
@@ -210,7 +202,6 @@ This is a permanent error; I've given up. Sorry it didn't work out.
 
 ezmlm-reject: fatal: List address must be in To: or Cc: (#5.7.0)
 ```
-
 
 ### Personalização avançada
 
@@ -224,7 +215,6 @@ Pode personalizar a maioria dos textos da sua mailing list. Enquanto moderador, 
 Receberá então um e-mail que o(a) guiará para realizar as suas alterações.
 
 Pode encontrar, em seguida, uma lista dos ficheiros com os textos de resposta e uma breve descrição da utilização do respetivo conteúdo. Para editar um ficheiro, basta enviar uma mensagem para envoi-edit.fichier, substituindo o nome do ficheiro por 'ficheiro'. As instruções de edição serão enviadas com o ficheiro de texto.
-
 
 |Ficheiro|Utilização|
 |---|---|
@@ -255,7 +245,7 @@ Pode encontrar, em seguida, uma lista dos ficheiros com os textos de resposta e 
 > [!primary]
 >
 > Por exemplo: Se pretender alterar o rodapé predefinido dos e-mails enviados para a sua mailing list, terá de enviar uma mensagem para o endereço `nome_da_sua_ML-edit.bottom@mydomain.ovh`. Receberá então um novo e-mail a explicar como personalizar o rodapé.
-> 
+>
 
 ## Saiba mais
 

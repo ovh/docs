@@ -9,7 +9,7 @@ updated: 2020-03-19
 
 ## Objectif
 
-Une mailing list vous permet de contacter des abonnés en masse, c'est à dire de diffuser un message ou une information à plusieurs destinataires à la fois. Cela peut avoir un intérêt dans le cadre d'un mailing d'information, par exemple, sur la sortie d'un nouveau produit (pour un site e-commerce) ou pour informer d'un prochain rassemblement (pour un site communautaire). 
+Une mailing list vous permet de contacter des abonnés en masse, c'est à dire de diffuser un message ou une information à plusieurs destinataires à la fois. Cela peut avoir un intérêt dans le cadre d'un mailing d'information, par exemple, sur la sortie d'un nouveau produit (pour un site e-commerce) ou pour informer d'un prochain rassemblement (pour un site communautaire).
 
 **Découvrer comment gérer vos mailing-lists**
 
@@ -69,9 +69,7 @@ Complétez le formulaire selon les informations décrites dans le tableau ci-des
 | Tout le monde peut poster (aucune modération) | L'envoi d'un e-mail à la mailing-list est directement envoyé aux abonnés sans validation.             		|
 | Modération des abonnés         	| Le propriétaire, ou un modérateur, doit approuver les inscriptions à la mailing-list.                                    	|
 
-
 ![emails](images/manage_mailing-lists_03.png){.thumbnail}
-
 
 > [!primary]
 >
@@ -81,13 +79,11 @@ Complétez le formulaire selon les informations décrites dans le tableau ci-des
 > - 250 sans modération des messages
 >
 
-
 ### Gérer les options de la mailing list
 
 Pour modifier les options de la mailing list, cliquez sur `...`{.action} à droite de celle-ci. Vous pourrez alors mettre à jour les options, supprimer la mailing list ou encore partager la liste de ses abonnés par e-mail. 
 
 ![emails](images/manage_mailing-lists_04.png){.thumbnail}
-
 
 ### Gérer les abonnés
 
@@ -114,7 +110,7 @@ Il y a 2 méthodes pour ajouter/supprimer des abonnés:
 #### Exporter votre liste d'abonnés vers un fichier CSV
 
 Cliquez sur `exporter les abonnés en CSV`{.action} afin de générer un fichier CSV contenant l'ensemble de vos abonnés. Cette option n'est pas disponible dans notre cas car aucun abonné n'a été ajouté.
- 
+
 ### Gérer les modérateurs
 
 Pour gérer les modérateurs de votre mailing list, cliquez sur la silhouette dans la colonne « Modérateurs ».
@@ -140,37 +136,35 @@ Il y a 2 méthodes pour ajouter/supprimer des modérateurs:
 > [!primary]
 > - Lorsque plusieurs modérateurs sont définis sur une mailing list, la validation d'un seul des modérateurs suffit pour que l'e-mail soit diffusé aux abonnés.
 > - Lorsqu'un modérateur envoie un e-mail à la mailing list, seul lui reçoit l'e-mail de modération.
-> 
+>
 
 Selon le nombre d'abonnés à ajouter, cela peut prendre un certains temps afin de réaliser l'opération.
-
 
 ### S'inscrire à une mailing list
 
 Si quelqu'un souhaite s'inscrire à votre mailing list, il lui suffit d'envoyer un e-mail à :
 
-
 ```bash
 nom_de_votre_ML-subscribe@votredomaine.com
 ```
-
 
 ### Se désinscrire d'une mailing list
 
 Si un abonné souhaite se désinscrire de votre mailing list, il lui suffit d'envoyer un e-mail à :
 
-
 ```bash
 nom_de_votre_ML-unsubscribe@votredomaine.com
 ```
 
+> [!primary]
+>
+> La désinscription à une mailing list ne nécessite pas de validation, que la mailing list soit modéré ou non.
 
 ### Suppression automatique des adresses erronées
 
 Le système de mailing list ne supprime pas un abonné de la liste après un seul retour d'erreur (message non délivré, adresse inexistante...). Il attend environ 12 jours après le premier échec d'envoi, puis envoie un message d'avertissement à l'abonné.
 
 Le message d'avertissement indique les références des messages manqués. Si ce message d'avertissement tombe en échec également, notre système de mailing list attend encore 12 jours puis envoie un message "test". Si ce message de test tombe également en erreur, l'abonné est effacé de la liste des abonnés.
-
 
 ### Erreurs récurrentes
 
@@ -179,7 +173,6 @@ Le message d'avertissement indique les références des messages manqués. Si ce
 Un envoi vers une mailing list doit obligatoirement contenir un sujet. Sans cela, une erreur sera automatiquement générée et un e-mail de retour en erreur sera envoyé à l'expéditeur de l'envoi.
 
 L'expéditeur de l'e-mail sans objet recevra donc un mail de retour en erreur comme visible ci-dessous :
-
 
 ```bash
 Hi. This is the qmail-send program at mx1.ovh.net.
@@ -191,7 +184,6 @@ This is a permanent error; I've given up. Sorry it didn't work out.
 ezmlm-reject: fatal: Sorry, I don't accept message with empty Subject (#5.7.0)
 ```
 
-
 #### Envoi en renseignant l'adresse de la mailing list en copie cachée
 
 Pour envoyer un message à une mailing list, l'adresse de celle-ci doit obligatoirement se trouver soit dans le champ « To », soit dans le champ « Copie à » (Cc).
@@ -199,7 +191,6 @@ Pour envoyer un message à une mailing list, l'adresse de celle-ci doit obligato
 Si le client renseigne l'adresse dans le champ « Copie Cachée », une erreur lui sera alors retournée.
 
 L'expéditeur de l'e-mail recevra un retour d'erreur :
-
 
 ```bash
 Hi. This is the qmail-send program at mx1.ovh.net.
@@ -210,7 +201,6 @@ This is a permanent error; I've given up. Sorry it didn't work out.
 
 ezmlm-reject: fatal: List address must be in To: or Cc: (#5.7.0)
 ```
-
 
 ### Personnalisation avancée
 
@@ -224,7 +214,6 @@ Vous pouvez personnaliser la plupart des textes de votre mailing list. En tant q
 Vous recevrez alors un e-mail qui vous guidera pour effectuer vos modifications.
 
 Ci-dessous, une liste des fichiers contenant les textes de réponses et une brève description de l'utilisation de leur contenu. Pour éditer un fichier, envoyez simplement un message à envoi-edit.fichier, en substituant le nom du fichier à 'fichier'. Les instructions d'édition seront envoyées avec le fichier de texte.
-
 
 |Fichier|Utilisation|
 |---|---|
@@ -255,7 +244,7 @@ Ci-dessous, une liste des fichiers contenant les textes de réponses et une brè
 > [!primary]
 >
 > Exemple : Si vous souhaitez modifier le pied de page par défaut des e-mails envoyés à votre mailing list, il vous faudra envoyer un message à l'adresse `nom_de_votre_ML-edit.bottom@mydomain.ovh`. Vous recevrez alors un nouvel e-mail vous expliquant comment personnaliser le pied de page.
-> 
+>
 
 ## Aller plus loin
 

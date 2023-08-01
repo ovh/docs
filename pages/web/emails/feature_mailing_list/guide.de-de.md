@@ -69,9 +69,7 @@ Füllen Sie das Formular gemäß den Angaben in der folgenden Tabelle aus:
 | Jeder kann posten (keine Moderation) | Das Senden einer E-Mail an die Mailingliste erfolgt ohne Validierung direkt an Abonnenten.             		|
 | Moderation der Abonnenten         	| Der Inhaber oder ein Moderator muss Einträge in die Mailingliste genehmigen.                                    	|
 
-
 ![Emails](images/manage_mailing-lists_03.png){.thumbnail}
-
 
 > [!primary]
 >
@@ -80,7 +78,6 @@ Füllen Sie das Formular gemäß den Angaben in der folgenden Tabelle aus:
 > - 5000 bei Moderation der Nachrichten
 > - 250 ohne Moderation der Nachrichten
 >
-
 
 ### Die Mailinglisten-Optionen verwalten
 
@@ -114,7 +111,7 @@ Es gibt zwei Methoden zum Hinzufügen/Entfernen von Abonnenten:
 #### Ihre Abonnentenliste in eine CSV-Datei exportieren
 
 Klicken Sie auf `Abonnenten in CSV exportieren`{.action}, um eine CSV-Datei mit allen Ihren Abonnenten zu erstellen. Diese Option ist in unserem Fall nicht verfügbar, da kein Abonnent hinzugefügt wurde.
- 
+
 ### Moderatoren verwalten
 
 Um die Moderatoren Ihrer Mailingliste zu verwalten, klicken Sie auf das Icon in der Spalte „Moderatoren“.
@@ -140,37 +137,35 @@ Es gibt zwei Methoden zum Hinzufügen/Entfernen von Moderatoren:
 > [!primary]
 > - Wenn mehrere Moderatoren in einer Mailingliste definiert sind, reicht die Validierung nur eines der Moderatoren aus, damit die E-Mail an Abonnenten gesendet werden kann.
 > - Wenn ein Moderator eine E-Mail an die Mailingliste sendet, erhält nur er die Moderations-E-Mail.
-> 
+>
 
 Je nach Anzahl der hinzuzufügenden Abonnenten kann es einige Zeit dauern, bis der Vorgang abgeschlossen ist.
-
 
 ### Eine Mailingliste abonnieren
 
 Wenn jemand Ihre Mailingliste abonnieren möchte, muss er nur eine E-Mail senden an:
 
-
 ```bash
 Name_Ihrer_ML-subscribe@Ihredomain.com
 ```
-
 
 ### Eine Mailingliste abbestellen
 
 Wenn ein Abonnent sich von Ihrer Mailingliste abmelden möchte, muss er nur eine E-Mail senden an:
 
-
 ```bash
 Name_Ihrer_ML-unsubscribe@Ihredomain.com
 ```
 
+> [!primary]
+>
+> Die Abmeldung von einer Mailingliste erfordert keine Bestätigung, unabhängig davon, ob die Mailingliste moderiert ist oder nicht.
 
 ### Automatisches Löschen fehlerhafter Adressen
 
 Im Mailinglistensystem wird ein Abonnenten nach einer einzelnen Fehlerrückgabe nicht aus der Liste entfernt (Nachricht nicht zugestellt, nicht vorhandene Adresse ...). Es wartet ungefähr 12 Tage nach dem ersten Sendefehler und sendet dann eine Warnmeldung an den Abonnenten.
 
 Die Warnmeldung zeigt die Referenzen der fehlenden Nachrichten an. Wenn diese Warnmeldung ebenfalls fehlschlägt, wartet unser Mailinglistensystem weitere 12 Tage und sendet dann eine „Test“-Nachricht. Wenn diese Testnachricht ebenfalls fehlschlägt, wird der Abonnent aus der Liste der Abonnenten gelöscht.
-
 
 ### Wiederkehrende Fehler
 
@@ -179,7 +174,6 @@ Die Warnmeldung zeigt die Referenzen der fehlenden Nachrichten an. Wenn diese Wa
 Eine Sendung an eine Mailingliste muss einen Betreff enthalten. Andernfalls wird automatisch ein Fehler generiert und eine Fehlermeldung per E-Mail an den Absender der Nachricht gesendet.
 
 Der Absender der E-Mail ohne Betreff erhält daher eine E-Mail mit einer Fehlermeldung zurück, wie unten angezeigt.
-
 
 ```bash
 Hi. This is the qmail-send program at mx1.ovh.net.
@@ -191,13 +185,11 @@ This is a permanent error; I've given up. Sorry it didn't work out.
 ezmlm-reject: fatal: Sorry, I don't accept message with empty Subject (#5.7.0)
 ```
 
-
 #### Senden durch Eingabe der Adresse der Mailingliste in Blindkopie
 
 Um eine Nachricht an eine Mailingliste zu senden, muss ihre Adresse entweder im Feld „An“ oder im Feld „Kopie an“ (Cc) angegeben werden.
 
 Wenn der Absender die Adresse in das Feld „Blindkopie“ eingibt, wird folgende Fehlermeldung erzeugt:
-
 
 ```bash
 Hi. This is the qmail-send program at mx1.ovh.net.
@@ -208,7 +200,6 @@ This is a permanent error; I've given up. Sorry it didn't work out.
 
 ezmlm-reject: fatal: List address must be in To: or Cc: (#5.7.0)
 ```
-
 
 ### Erweiterte Anpassung
 
@@ -222,7 +213,6 @@ Sie können die meisten Texte in Ihrer Mailingliste anpassen. Als Moderator müs
 Sie erhalten dann eine E-Mail, die Sie anleitet wie Sie Ihre Änderungen vornehmen können.
 
 Unten finden Sie eine Liste der Dateien mit den Antworttexten und eine kurze Beschreibung der Verwendung ihres Inhalts. Um eine Datei zu bearbeiten, senden Sie einfach eine Nachricht an send-edit.file und ersetzen Sie den Dateinamen durch 'file'. Die Bearbeitungsanleitung wird mit der Textdatei gesendet.
-
 
 |Datei|Verwendung|
 |---|---|
@@ -253,7 +243,7 @@ Unten finden Sie eine Liste der Dateien mit den Antworttexten und eine kurze Bes
 > [!primary]
 >
 > Beispiel: Wenn Sie die Standardfußzeile für E-Mails ändern möchten, die an Ihre Mailingliste gesendet werden, müssen Sie eine Nachricht an die Adresse `Name_Ihrer_ML-edit.bottom@mydomain.ovh` senden. Sie erhalten dann eine neue E-Mail, in der erläutert wird, wie Sie die Fußzeile anpassen.
-> 
+>
 
 ## Weiterführende Informationen
 

@@ -140,20 +140,17 @@ Hay dos métodos para añadir o eliminar moderadores:
 > [!primary]
 > - Cuando una lista de difusión tiene varios moderadores, solo se necesita la validación de uno de ellos para que el correo electrónico se transmita a todos los abonados.
 > - Cuando un moderador envía un correo electrónico a la lista de difusión, solo ese moderador recibe el correo electrónico de moderación.
-> 
+>
 
 La operación de adición de abonados tardará en función del número de abonados que se vaya a añadir.
-
 
 ### Suscribirse a una lista de difusión
 
 Si alguien desea suscribirse a su lista de difusión, basta con enviar un mensaje de correo electrónico a:
 
-
 ```bash
 nombre_de_su_LD-subscribe@sudominio.com
 ```
-
 
 ### Cancelar la suscripción a una lista de difusión
 
@@ -164,13 +161,15 @@ Si un abonado desea cancelar la suscripción a su lista de difusión, basta con 
 nombre_de_su_LD-unsubscribe@sudominio.com
 ```
 
+> [!primary]
+>
+> La cancelación de la suscripción a una lista de difusión no requiere validación, independientemente de que la lista de difusión sea moderada o no.
 
 ### Eliminar automáticamente direcciones erróneas
 
 El sistema de listas de difusión no elimina un abonado de la lista por una sola devolución de error (mensaje no entregado, dirección inexistente, etc.). Tras el primer envío fallido, transcurren aproximadamente doce días antes de enviar una notificación al abonado.
 
 En la notificación, se indican las referencias de los mensajes perdidos. Si dicha notificación también es fallida, nuestro sistema de listas de difusión esperará otros doce días para enviar un mensaje de prueba. Si también ocurre un fallo con este mensaje, se eliminará el abonado de la lista de suscriptores.
-
 
 ### Errores recurrentes
 
@@ -179,7 +178,6 @@ En la notificación, se indican las referencias de los mensajes perdidos. Si dic
 Obligatoriamente, todo mensaje enviado a una lista de difusión debe tener un asunto. Sin asunto, se genera automáticamente un error y se envía una notificación de error al remitente.
 
 Por lo tanto, el remitente del correo electrónico sin asunto recibirá una notificación de error como la que se muestra a continuación:
-
 
 ```bash
 Hi. This is the qmail-send program at mx1.ovh.net.
@@ -191,7 +189,6 @@ This is a permanent error; I've given up. Sorry it didn't work out.
 ezmlm-reject: fatal: Sorry, I don't accept message with empty Subject (#5.7.0)
 ```
 
-
 #### Enviar la dirección de la lista de difusión en copia oculta
 
 Para enviar un mensaje a una lista de difusión, es absolutamente necesario indicar su dirección, o bien en el campo «Para», o bien en el campo «CC» (con copia a).
@@ -199,7 +196,6 @@ Para enviar un mensaje a una lista de difusión, es absolutamente necesario indi
 Si el cliente introduce la dirección en el campo «CCO» (con copia oculta), recibirá una notificación de error.
 
 El remitente del correo electrónico recibirá una notificación de error:
-
 
 ```bash
 Hi. This is the qmail-send program at mx1.ovh.net.
@@ -210,7 +206,6 @@ This is a permanent error; I've given up. Sorry it didn't work out.
 
 ezmlm-reject: fatal: List address must be in To: or Cc: (#5.7.0)
 ```
-
 
 ### Personalización avanzada
 
@@ -223,7 +218,6 @@ Es posible personalizar la mayoría de los textos de una lista de difusión. Com
 Luego, recibirá un correo electrónico con la información necesaria para guiarle en la realización de las modificaciones.
 
 A continuación, le presentamos una lista de archivos con los textos de las respuestas y una breve descripción de la utilización de su contenido. Para editar un archivo, simplemente envíe un mensaje a envío-edit.archivo, sustituyendo el nombre del archivo por «archivo». Las instrucciones para la edición se enviarán con el archivo de texto.
-
 
 |Archivo|Uso|
 |---|---|
@@ -254,7 +248,7 @@ A continuación, le presentamos una lista de archivos con los textos de las resp
 > [!primary]
 >
 > Por ejemplo: Si desea modificar el pie de página por defecto de los correos electrónicos enviados a su lista de difusión, envíe un mensaje a la dirección `nombre_de_su_LD-edit.bottom@mydomain.ovh`. Luego, recibirá un nuevo correo electrónico en el que se explica cómo personalizar el pie de página.
-> 
+>
 
 ## Más información
 

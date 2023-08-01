@@ -140,46 +140,43 @@ There are two ways of adding and removing moderators:
 > [!primary]
 > - When several moderators are defined on a mailing list, only one moderator needs to validate an email to send to subscribers.
 > - When a moderator sends an email to the mailing list, only they receive the moderation email.
-> 
+>
 
 Depending on the number of subscribers you need to add, this may take some time to do.
 
-
-### Subscribe to a mailing list.
+### Subscribe to a mailing list
 
 If someone wants to subscribe to your mailing list, they can simply send an email to:
-
 
 ```bash
 your_mailing_list_name-subscribe@yourdomain.com
 ```
 
-
-### Unsubscribe from a mailing list.
+### Unsubscribe from a mailing list
 
 If someone wants to unsubscribe from your mailing list, they can simply send an email to:
-
 
 ```bash
 your_mailing_list_name-unsubscribe@yourdomain.com
 ```
 
+> [!primary]
+>
+> Unsubscribing from a mailing list does not require validation, whether the mailing list is moderated or not.
 
-### Automatic removal of incorrect email addresses.
+### Automatic removal of incorrect email addresses
 
 The mailing list system will not remove a subscriber from the list after just one error message (email not delivered, email address does not exist, etc.). It will wait around 12 days after the first failed sending attempt, then send a warning email to the subscriber.
 
 The warning email will contain the references of the emails they have failed to receive. If this warning email also fails to send, our mailing list system will wait another 12 days and send a “test” email.  If this test email also fails to send, the subscriber is then removed from the subscription list.
 
+### Recurring errors
 
-### Recurring errors.
-
-#### Sending an email without including a subject.
+#### Sending an email without including a subject
 
 Emails sent to a mailing list must contain a subject. Without a subject, an error will automatically be generated, and the email will bounce back to the sender with an error message.
 
 The user sending an email without a subject will receive an error email like the one listed below:
-
 
 ```bash
 Hi. This is the qmail-send program at mx1.ovh.net.
@@ -191,15 +188,13 @@ This is a permanent error; I've given up. Sorry it didn't work out.
 ezmlm-reject: fatal: Sorry, I don't accept message with empty Subject (#5.7.0)
 ```
 
-
-#### Send emails entering an email address into the Carbon Copy (Cc) field.
+#### Send emails entering an email address into the Carbon Copy (Cc) field
 
 To send an email to a mailing list, the address needs to be entered in either the “To” field, or the “Cc” field.
 
 If the user enters the email address into the “Bcc” field, the email will bounce back with an error message.
 
 The sender will receive an error message similar to the one below:
-
 
 ```bash
 Hi. This is the qmail-send program at mx1.ovh.net.
@@ -210,7 +205,6 @@ This is a permanent error; I've given up. Sorry it didn't work out.
 
 ezmlm-reject: fatal: List address must be in To: or Cc: (#5.7.0)
 ```
-
 
 ### Advanced customisation
 
@@ -224,7 +218,6 @@ You can customise most of the texts in your mailing list. As a moderator, you wi
 You will then receive an email that will guide you on the changes you need to make.
 
 Below is a list of files containing the reply texts, and a brief description of how to use their content. To edit a file, simply send an email to send-edit.file, replacing ‘file’ with the file name. The editing instructions will be sent with the text file.
-
 
 |File|Use|
 |---|---|
@@ -255,7 +248,7 @@ Below is a list of files containing the reply texts, and a brief description of 
 > [!primary]
 >
 > Example: If you would like to edit the default footer for emails sent to your mailing list, you will need to send an email to the address `name_of_your_ML-edit.bottom@mydomain.ovh`.  You will then receive a new email explaining how to customise the footer.
-> 
+>
 
 ## Go further
 
