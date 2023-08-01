@@ -1,7 +1,6 @@
 ---
 title: Enable the Private Gateway
 excerpt: Learn how to enable Private Gateway on a Hosted Private Cloud infrastructure
-hidden: true
 updated: 2023-01-06
 ---
 
@@ -49,6 +48,8 @@ The vSphere interface is accessible by default over the Internet. For infrastruc
 * Having added the private gateway network to [restrictions per source IP](/pages/cloud/private-cloud/manager_ovh_private_cloud).
 * Adding a entry in file /etc/hosts or C:\Windows\system32\etc\hosts for pcc-X-X-X-X.ovh.com with the private IP
 
+<a name="enablegw"></a>
+
 ### Enable the Private Gateway
 
 Before starting, get the following necessary information:
@@ -70,6 +71,8 @@ Start activation with:
 The call creates a task that will deploy the virtual machine and make the network configuration.
 
 You may receive a resource delivery notification (a new datastore). This will not be charged and will be placed in the **Admin Storages** folder from the **Storage** view. It is added to host the virtual machine without consuming your datastores.
+
+<a name="disablegw"></a>
 
 ### Disable the Private Gateway
 

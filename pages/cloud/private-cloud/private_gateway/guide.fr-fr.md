@@ -51,6 +51,8 @@ L'interface vSphere est accessible par défaut via Internet. Pour les infrastruc
 * Avoir ajouté le réseau de la private gateway dans [les autorisations par IP source](/pages/cloud/private-cloud/manager_ovh_private_cloud).
 * Avoir ajouté une entrée dans le fichier /etc/hosts ou C:\Windows\system32\drivers\etc\hosts pour faire correspondre l'adresse pcc-X-X-X-X.ovh.com avec l'adresse IP privée (outre éviter des messages d'erreurs de certificat, cela est nécessaire pour un bon fonctionnement des différentes consoles VMRC ou autre).
 
+<a name="enablegw"></a>
+
 ### Activer la private gateway
 
 Avant de commencer, rassemblez les informations nécessaires suivantes :
@@ -72,6 +74,8 @@ Lancez l'activation avec :
 L'appel entraîne la création d'une tâche qui va déployer la machine virtuelle et fait la configuration réseau.
 
 Vous recevrez peut-être une notification de livraison de ressource (un nouveau datastore). Celui-ci ne sera pas facturé et sera placé dans le dossier **Admin Storages** de la vue **Storage**. Il est ajouté pour pouvoir héberger la machine virtuelle sans affecter vos espaces de stockage.
+
+<a name="disablegw"></a>
 
 ### Désactiver la private gateway
 
