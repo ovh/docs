@@ -5,8 +5,6 @@ legacy_guide_number: g1596
 updated: 2023-08-01
 ---
 
-**Última atualização: 13/02/2020**
-
 ## Objetivo
 
 Uma mailing list permite-lhe contactar de forma massiva subscritores, ou seja, difundir uma mensagem ou uma informação a vários destinatários ao mesmo tempo. Isto pode ser importante no âmbito de um mailing informativo, por exemplo, sobre o lançamento de um novo produto (para um site de comércio eletrónico) ou para informar sobre um próximo encontro (para um site comunitário).

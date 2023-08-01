@@ -5,8 +5,6 @@ legacy_guide_number: g1596
 updated: 2023-08-01
 ---
 
-**Ostatnia aktualizacja z dnia 13-02-2020**
-
 ## Wprowadzenie
 
 Lista mailingowa pozwala na masowe kontaktowanie się z abonentami, tzn. na przesyłanie wiadomości lub informacji do wielu odbiorców jednocześnie. Rozwiązanie to może być przydatne w ramach korespondencji informacyjnej, np. dotyczącej wydania nowego produktu (w przypadku witryny e-commerce) lub w celu poinformowania o nadchodzącym spotkaniu (w przypadku witryny społecznościowej).

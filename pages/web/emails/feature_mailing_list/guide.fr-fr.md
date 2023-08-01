@@ -4,8 +4,6 @@ excerpt: 'Decouvrez dans ce guide comment utiliser les listes de diffusion.'
 updated: 2023-08-01
 ---
 
-**Dernière mise à jour le 13/02/2020**
-
 ## Objectif
 
 Une mailing list vous permet de contacter des abonnés en masse, c'est à dire de diffuser un message ou une information à plusieurs destinataires à la fois. Cela peut avoir un intérêt dans le cadre d'un mailing d'information, par exemple, sur la sortie d'un nouveau produit (pour un site e-commerce) ou pour informer d'un prochain rassemblement (pour un site communautaire). 
@@ -157,7 +155,7 @@ nom_de_votre_ML-unsubscribe@votredomaine.com
 
 > [!primary]
 >
-> La désinscription à une mailing list ne nécessite pas de validation, que la mailing list soit modéré ou non.
+> La désinscription à une mailing list ne nécessite pas de validation, que la mailing list soit modérée ou non.
 
 ### Suppression automatique des adresses erronées
 

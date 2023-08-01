@@ -5,8 +5,6 @@ legacy_guide_number: g1596
 updated: 2023-08-01
 ---
 
-**Letzte Aktualisierung am 13.02.2020**
-
 ## Ziel
 
 Über eine Mailingliste können Sie Massenabonnenten kontaktieren, d. h. eine Nachricht oder Informationen gleichzeitig an mehrere Empfänger senden. Das kann im Zusammenhang mit einem Informationsmailing z. B. über die Veröffentlichung eines neuen Produkts (für eine E-Commerce-Site) oder als Information über ein bevorstehendes Meeting (für eine Community-Website) nützlich sein. 

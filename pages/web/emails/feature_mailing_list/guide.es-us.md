@@ -5,8 +5,6 @@ hidden: true
 updated: 2023-08-01
 ---
 
-**Última actualización: 05/05/2020**
-
 ## Objetivo
 
 Una lista de difusión permite contactar con los abonados en masa, es decir, transmitir un mensaje o una información a varios destinatarios a la vez. Dicha transmisión puede ser útil en el contexto de un email de información, por ejemplo, el lanzamiento de un nuevo producto (para un sitio web de <i>e-commerce</i>) o para informar sobre una próxima reunión (en el caso de un sitio web comunitario). 

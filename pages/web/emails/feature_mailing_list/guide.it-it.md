@@ -4,8 +4,6 @@ excerpt: 'Come gestire e utilizzare una mailing list'
 updated: 2023-08-01
 ---
 
-**Ultimo aggiornamento: 02/07/2020**
-
 ## Obiettivo
 
 Una mailing list ti consente di trasmettere informazioni a una lista di più destinatari, tramite l’invio di messaggi di posta collettivi agli iscritti al servizio. Questa soluzione può essere utile, ad esempio, per informare i tuoi clienti dell’uscita di un nuovo prodotto (sito e-commerce) o di un incontro (ad esempio, nel caso del sito di una Community). 

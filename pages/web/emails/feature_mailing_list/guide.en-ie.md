@@ -4,8 +4,6 @@ excerpt: 'Find out how to use mailing lists'
 updated: 2023-08-01
 ---
 
-**Last updated 19th March 2020**
-
 ## Objective
 
 Mailing lists are used to contact subscribers en masse, i.e. to send an email or information to several recipients at once. This may be of interest to you if you want to share information on a new product release (for an e-commerce website), for example — or to let people know about a future event (for a community website).
