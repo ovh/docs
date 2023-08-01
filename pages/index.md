@@ -18,6 +18,7 @@
             + [Enabling Google Workspace SSO connections with your OVHcloud account](account/customer/ovhcloud-account-connect-saml-google-workspace)
             + [Enabling Azure AD SSO connections with your OVHcloud account](account/customer/ovhcloud-account-connect-saml-azure-ad)
             + [Enabling Okta SSO connections with your OVHcloud account](account/customer/ovhcloud-account-connect-saml-okta)
+            + [Use IAM policy with vSphere](cloud/private-cloud/use_iam_with_vSphere)
         + [FAQ](account-and-service-management-account-information-faq)
             + [OVHcloud account management FAQ](../faq/faq-account-management)
             + [OVHcloud account support FAQ](../faq/faq-support)
