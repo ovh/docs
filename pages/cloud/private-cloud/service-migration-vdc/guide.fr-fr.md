@@ -618,16 +618,16 @@ Les règles d'affinité sont basées sur des objets de VM de sorte que les règl
 **Conseils d'automatisation :** [Ce fil de discussion de communauté VMware](https://communities.vmware.com/t5/VMware-PowerCLI-Discussions/Backup-Restore-DRS-VM-affinity-anti-affinity-rules-can-these-be/td-p/733981/page/2) détaille les options d'exportation et d'importation des règles d'affinité via powercli.
 
 <a name="privategw"></a>
-#### Etape 6.4 Private Gateway (si pertinent)
+#### Etape 6.4 Reconfigurer la Private Gateway (si pertinent)
 
-Pour changer la Private Gateway de virtual datacenter (vDC), pour devez d'abord la désactiver en suivant les étapes de : [Désactiver la private gateway](/pages/cloud/private-cloud/private_gateway#desactiver-la-private-gateway)
+Pour changer la Private Gateway de virtual datacenter (vDC), pour devez d'abord la désactiver en suivant les étapes du guide pour [désactiver la private gateway](/pages/cloud/private-cloud/private_gateway#disablegw).
 
 > [!warning]
 >
-> Si vous avez activé des certifications ou un niveau de sécurité qui require l'usage de la Private Gateway, vous seul est résponsable de la reactivation de celle-ci (lancement de l'activation)
+> Si vous avez activé des certifications ou un niveau de sécurité qui requiert l'usage de la Private Gateway, vous seul êtes responsable de la réactivation de celle-ci (lancement de l'activation).
 >
 
-Puis activer de nouvelle celle-ci en en suivant les étapes de [Activer la private gateway](/pages/cloud/private-cloud/private_gateway#activer-la-private-gateway) en choisissant le datacenterId du nouveau vDC
+Puis activez de nouvelle celle-ci en en suivant les étapes du guide pour [activer la private gateway](/pages/cloud/private-cloud/private_gateway#enablegw) et en choisissant le datacenterId du nouveau vDC.
 
 <a name="hostmm"></a>
 #### Etape 6.5 Passer les hosts en mode maintenance

@@ -597,14 +597,14 @@ Affinity rules are based on VM objects so rules can only be created after VMs ha
 <a name="privategw"></a>
 #### Step 6.4 Reconfigure the Private Gateway (if relevant)
 
-To "move" Private Gateway to destination vDC, you must first disable it by following the steps in: [Désactiver la private gateway](/pages/cloud/private-cloud/private_gateway#enable-the-private-gateway)
+To "move" Private Gateway to destination vDC, you must first disable it by following the steps in [Disable the private gateway](/pages/cloud/private-cloud/private_gateway#disablegw)
 
 > [!warning]
 >
-> If you have enable a compliancy or a security level that require the use of the Private Gateway, you alone are responsible for reactivating it (launch enabling)
+> If you have enabled a compliancy or a security level that require the use of the Private Gateway, you alone are responsible for reactivating it (launch enabling).
 >
 
-Then enable it again by following the steps in [Enable private gateway](/pages/cloud/private-cloud/private_gateway#enable-private-gateway) by choosing the datacentreId of the new vDC
+Then enable it again by following the steps in [Enable the private gateway](/pages/cloud/private-cloud/private_gateway#enablegw) and choose the datacentreId of the new vDC.
 
 <a name="hostmm"></a>
 #### Step 6.5 Put hosts in maintenance mode
