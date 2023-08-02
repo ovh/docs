@@ -136,7 +136,7 @@ If you would like to configure your email address on an email client or device (
 
 [Using the Outlook Web App with an Exchange account](/pages/web/emails/email_owa)
 
-[Creating inbox rules in OWA]( /pages/web/emails/creating-inbox-rules-in-owa-mx-plan)
+[Creating inbox rules in OWA](/pages/web/emails/creating-inbox-rules-in-owa-mx-plan)
 
 [Adding an alias to your email account](/pages/web/emails/feature_redirections)
 

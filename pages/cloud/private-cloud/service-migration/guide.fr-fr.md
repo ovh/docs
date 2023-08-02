@@ -43,7 +43,7 @@ Nous aborderons dans ce guide les notions d'**infrastructure d'origine** et de *
 
 ##### **Contexte de connexion au Hosted Private Cloud**
 
-Pour vous connecter à la plateforme VMware, vous pouvez choisir de bloquer l'accès au vSphere par défaut. Pour cela, consultez notre guide sur la [politique d'accès au vCenter](/fr/private-cloud/changer-la-politique-d-acces-au-vcenter/).
+Pour vous connecter à la plateforme VMware, vous pouvez choisir de bloquer l'accès au vSphere par défaut. Pour cela, consultez notre guide sur la [politique d'accès au vCenter](/pages/cloud/managed-bare-metal/vcenter-modify-access-policy).
 
 Suite au changement de politique d'accès, si celle-ci est passée en « restreinte », il faut bien sûr appliquer les mêmes IPs de connexion sur le Hosted Private Cloud de destination que sur l'infrastructure d'origine.
 

@@ -170,8 +170,6 @@ En cas de rejet de votre mot de passe actuel d'accès à l’interface d’admin
 
 [Comment diagnostiquer une page blanche ?](/pages/web/hosting/diagnostic_fix_500_internal_server_error)
 
-[Les codes de reponse d’un serveur HTTP](/ca/fr/hosting/mutualise-les-codes-de-reponse-dun-serveur-http/)
-
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/directory/)
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr-ca/support-levels/).

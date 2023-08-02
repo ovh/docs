@@ -1,6 +1,6 @@
 ---
 title: Object Storage - Pierwsze kroki z Object Storage (EN)
-excerpt:
+excerpt: This guide is designed to familiarise you with the management of your containers/objects
 routes:
     canonical: '/pages/cloud/storage/object_storage/s3_getting_started_with_object_storage'
 updated: 2023-04-28

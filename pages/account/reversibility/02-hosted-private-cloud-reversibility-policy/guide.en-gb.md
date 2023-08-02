@@ -58,7 +58,7 @@ Information about the architecture (such as servers, storage ...) is centralized
 
 [Importing/exporting virtual machines](/pages/cloud/private-cloud/ovf_tool) (FR).
 
-[Converting a physical / virtual machine into a cloud infrastructure](/pages/cloud/private-cloud/vmware_vcenter_converter) (FR).
+[Converting a physical / virtual machine into a cloud infrastructure](https://help.ovhcloud.com/csm/fr-vmware-vmware-vcenter-converter?id=kb_article_view&sysparm_article=KB0033587) (FR).
 
 ### Partner services
 

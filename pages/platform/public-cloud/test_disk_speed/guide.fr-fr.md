@@ -114,6 +114,4 @@ Les performances des disques sont ici d'environ 891 IOPS.
 
 [Créer et configurer un disque supplementaire sur une instance](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance){.external}.
 
-[Ajouter des espaces de stockage](/fr/public-cloud/ajouter-des-espaces-de-stockage/){.external}.
-
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

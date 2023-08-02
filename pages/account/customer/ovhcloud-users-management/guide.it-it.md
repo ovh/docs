@@ -75,11 +75,11 @@ La modifica dell’utente ti consentirà di aggiornare il suo indirizzo-mail, i 
 
 Nella scheda `Gestione utenti`{.action}, clicca su `Dichiarare un gruppo`{.action}.
 
-![users-management](images/usermanagement7.png){.thumbnail}
+![users-management](images/usersmanagement7.png){.thumbnail}
 
 Viene visualizzata una finestra in cui è necessario completare i campi richiesti. Clicca su `Conferma`{.action} per creare l’utente.
 
-![users-management](images/usermanagement8.png){.thumbnail}
+![users-management](images/usersmanagement8.png){.thumbnail}
 
 I gruppi assegnano un livello di privilegio predefinito agli utenti che contengono, in base al ruolo scelto:
 
@@ -94,11 +94,11 @@ I gruppi assegnano un livello di privilegio predefinito agli utenti che contengo
 
 Per aggiornare o eliminare un gruppo, clicca sul pulsante `...`{.action} a destra del nome del gruppo.
 
-![users-management](images/usermanagement9.png){.thumbnail}
+![users-management](images/usersmanagement9.png){.thumbnail}
 
 Quando si modifica un gruppo, è possibile modificarne la descrizione e il ruolo.
 
-![users-management](images/usermanagement10.png){.thumbnail}
+![users-management](images/usersmanagement10.png){.thumbnail}
 
 ### Gestione dei diritti
 

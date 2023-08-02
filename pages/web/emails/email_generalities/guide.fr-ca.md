@@ -125,11 +125,11 @@ Une fois les champs complétés, cliquez sur `Suivant`{.action} puis vérifiez l
 
 Une fois vos adresses e-mail créées, il ne vous reste plus qu’à les utiliser. Pour cela, vous disposez de deux possibilités.
 
-##### 1. Utiliser le webmail RoundCube
+##### 1. Utiliser le webmail
 
 Accédez à la page « [Connexion au webmail](https://www.ovh.com/ca/fr/mail/){.external} », puis renseignez l'adresse e-mail concernée ainsi que son mot de passe. Cliquez ensuite sur le bouton `Connexion`{.action}.
 
-Votre boîte de réception s'affiche alors. Pour découvrir comment utiliser votre adresse e-mail depuis le webmail RoundCube, aidez-vous de notre guide « [Utiliser son adresse e-mail depuis le webmail RoundCube](/ca/fr/emails/utilisation-roundcube/){.external} ».
+Votre boîte de réception s'affiche alors. Pour découvrir comment utiliser votre adresse e-mail depuis le webmail, aidez-vous de notre guide « [Utiliser son adresse e-mail depuis le webmail](/pages/web/emails/email_owa){.external} ».
 
 ![email](images/mxplan-starter-legacy-step4.png){.thumbnail}
 

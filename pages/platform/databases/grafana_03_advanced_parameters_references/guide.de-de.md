@@ -1,6 +1,6 @@
 ---
 title: Grafana - Advanced parameters references
-excerpt:
+excerpt: This guide lists all the supported advanced parameters that allow you to configure your Public Cloud Databases for Grafana according to your use cases
 routes:
     canonical: '/pages/platform/databases/grafana_03_advanced_parameters_references'
 updated: 2023-02-06

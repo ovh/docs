@@ -1,6 +1,6 @@
 ---
 title: Object Storage - Criptografe seus objetos do lado do servidor com SSE-C (EN)
-excerpt:
+excerpt: This guide explains how to encrypt your server-side objects with SSE-C
 routes:
     canonical: '/pages/cloud/storage/object_storage/s3_encrypt_your_objects_with_sse_c'
 updated: 2022-04-15

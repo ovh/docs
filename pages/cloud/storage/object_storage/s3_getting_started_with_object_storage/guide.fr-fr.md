@@ -1,6 +1,6 @@
 ---
 title: Object Storage - Premiers pas avec Object Storage
-excerpt:
+excerpt: Ce guide a pour objectif de vous familiariser avec la gestion de vos conteneurs / objets
 updated: 2023-04-28
 ---
 

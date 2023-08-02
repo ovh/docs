@@ -1,6 +1,6 @@
 ---
 title: Connexion à l’API OVH
-excerpt: 
+excerpt: "L’API OVH permet de réaliser certaines actions parfois non disponibles dans l’espace client OVH"
 legacy_guide_number: '7766879'
 updated: 2019-02-14
 ---

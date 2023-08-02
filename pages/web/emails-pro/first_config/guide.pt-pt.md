@@ -138,7 +138,7 @@ Se desejar associar o seu endereço de e-mail a um software de correio eletróni
 
 [Utilizar o Outlook Web App com uma conta de e-mail](/pages/web/emails/email_owa)
 
-[Criar regras inbox no OWA]( /pages/web/emails/creating-inbox-rules-in-owa-mx-plan)
+[Criar regras inbox no OWA](/pages/web/emails/creating-inbox-rules-in-owa-mx-plan)
 
 [Adicionar um alias à sua conta de e-mail](/pages/web/emails/feature_redirections)
 

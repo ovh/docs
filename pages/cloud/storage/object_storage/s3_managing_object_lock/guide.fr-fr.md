@@ -1,6 +1,6 @@
 ---
 title: "Object Storage - Gestion de l'immuabilité des objets avec Object Lock (WORM)"
-excerpt:
+excerpt: "Object Lock est une fonctionnalité qui vous permet de stocker des objets en utilisant un modèle WORM (Write Once, Read Many)"
 updated: 2022-06-02
 ---
 

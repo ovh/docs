@@ -12,7 +12,7 @@ updated: 2021-01-05
 
 ## Ziel
 
-Die automatische [Migration](/de/microsoft-collaborative-solutions/exchange_migration_von_e-mail-accounts_-_ovh_mail_migrator/){.external} einer E-Mail-Adresse ist über unseren [OVH Mail Migrator](https://omm.ovh.net/){.external} möglich. Sie können Ihre E-Mail-Adresse auch manuell über einen E-Mail-Client migrieren.
+Die automatische [Migration](/pages/web/emails/migration_omm){.external} einer E-Mail-Adresse ist über unseren [OVH Mail Migrator](https://omm.ovh.net/){.external} möglich. Sie können Ihre E-Mail-Adresse auch manuell über einen E-Mail-Client migrieren.
 
 **Diese Anleitung erläutert, wie Sie Ihre E-Mail-Adresse manuell migrieren.**
 
@@ -31,7 +31,7 @@ Bei Schwierigkeiten kontaktieren Sie bitte einen [spezialisierten Dienstleister]
 ## In der praktischen Anwendung
 
 > [!primary]
-> Überprüfen Sie zunächst, ob die automatische Migration mit unserem [OVH Mail Migrator](https://omm.ovh.net/){.external} möglich ist. Lesen Sie hierzu die Anleitung [E-Mail-Accounts über den OVH Mail Migrator migrieren](/de/microsoft-collaborative-solutions/exchange_migration_von_e-mail-accounts_-_ovh_mail_migrator/).
+> Überprüfen Sie zunächst, ob die automatische Migration mit unserem [OVH Mail Migrator](https://omm.ovh.net/){.external} möglich ist. Lesen Sie hierzu die Anleitung [E-Mail-Accounts über den OVH Mail Migrator migrieren](/pages/web/emails/migration_omm).
 
 In dieser Anleitung haben wir die Operationen mit den 3 meistverwendeten E-Mail-Programmen **Outlook**, **Mail** auf Mac OS und **Thunderbird** durchgeführt.
 
@@ -235,6 +235,6 @@ In Ihrem Posteingang und in der linken Spalte finden Sie die Ordner und E-Mails 
 
 ## Weiterführende Informationen
 
-[E-Mail-Accounts mit dem OVH Mail Migrator migrieren](/de/microsoft-collaborative-solutions/exchange_migration_von_e-mail-accounts_-_ovh_mail_migrator/){.external}
+[E-Mail-Accounts mit dem OVH Mail Migrator migrieren](/pages/web/emails/migration_omm)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

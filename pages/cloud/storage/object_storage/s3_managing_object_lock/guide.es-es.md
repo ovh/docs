@@ -1,6 +1,6 @@
 ---
 title: Object Storage - Gestión de la inmutabilidad de los objetos con Object Lock (WORM) (EN)
-excerpt:
+excerpt: Object Lock is a feature that allows you to store objects using a Write Once, Read Many (WORM) model
 routes:
     canonical: '/pages/cloud/storage/object_storage/s3_managing_object_lock'
 updated: 2022-06-02

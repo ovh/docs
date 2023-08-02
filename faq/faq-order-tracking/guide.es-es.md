@@ -1,6 +1,7 @@
 ---
 title: Preguntas frecuentes sobre el seguimiento del pedido de OVHcloud
 excerpt: Encuentre las preguntas más frecuentes sobre el seguimiento de pedidos de OVHcloud
+updated: 2022-11-10
 ---
 
 **Última actualización: 10/11/2022**

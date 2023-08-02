@@ -1,6 +1,7 @@
 ---
 title: FAQ sobre a gestão da conta OVHcloud
 excerpt: Encontre as questões mais frequentes sobre a gestão da conta OVHcloud
+updated: 2022-11-21
 ---
 
 **Última atualização: 21/11/2022**
