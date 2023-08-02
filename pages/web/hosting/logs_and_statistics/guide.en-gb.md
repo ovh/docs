@@ -37,6 +37,20 @@ Click the `Create a new user`{.action} button in the `User Administration` secti
 
 ![hosting](images/user-statistics01.png){.thumbnail}
 
+> [!primary] 
+>
+> To access your website's statistics with a user you have created, you must enter the following address by replacing `000` with your hosting cluster number and `mydomain.ovh` with your website's domain name (without the “www”):
+>
+> ```bash
+> https://logs.cluster000.hosting.ovh.net/mydomain.ovh/
+> ```
+> 
+> In the `Statistics and logs`{.action} section, click `View statistics`{.action}.<br>
+> From the tab of your browser that displays the statistics window, retrieve the link that will be used to log in with one of the users you have created.
+>
+>![hosting](images/OWStatslink.png){.thumbnail}
+>
+
 > [!warning] 
 >
 > If you have enabled separate logs on a [multisite entry](/pages/web/hosting/multisites_configure_multisite#step-2-add-a-domain-or-subdomain), users created here cannot access statistics for that multisite entry.

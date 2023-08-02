@@ -41,6 +41,20 @@ Clique no botão `Criar um novo utilizador`{.action} na secção `Administraçã
 
 ![alojamento](images/user-statistics01.png){.thumbnail}
 
+> [!primary] 
+>
+> Para aceder às estatísticas do seu website com um utilizador que criou, deve introduzir o endereço seguinte substituindo `000` pelo número do cluster do seu alojamento e `mydomain.ovh` pelo nome do domínio do seu website (sem as « www »):
+>
+> ```bash
+> https://logs.cluster000.hosting.ovh.net/mydomain.ovh/
+> ```
+> 
+> Na secção `Estatísticas e logs`{.action}, clique em `Ver estatísticas`{.action}.<br>
+> No separador do browser que apresenta a janela de estatísticas, obtenha o link que servirá para se ligar a um dos utilizadores criados.
+>
+>![hosting](images/OWStatslink.png){.thumbnail}
+>
+
 > [!warning] 
 >
 > Se ativou os logs separados numa [entrada multi-site](/pages/web/hosting/multisites_configure_multisite#2-adicionar-um-dominio-ou-subdominio), os utilizadores criados aqui não podem aceder às estatísticas desta entrada multi-site.

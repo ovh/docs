@@ -30,11 +30,26 @@ La fenêtre qui s’affiche alors est composée de 3 sections. La première pré
 
 ### Administration des utilisateurs
 
-La création d'un utilisateur permettra à une personne d'accéder aux statistiques de votre hébergement sans avoir accès à votre espace client OVHcloud. 
+La création d'un utilisateur permettra à une personne d'accéder aux statistiques de votre hébergement sans avoir accès à votre espace client OVHcloud.
 
-Cliquez sur le bouton `Créer un nouvel utilisateur`{.action} dans la section `Administration des utilisateurs` et suivez les instructions comme ci-dessous.  
+Cliquez sur le bouton `Créer un nouvel utilisateur`{.action} dans la section `Administration des utilisateurs` et suivez les instructions comme ci-dessous.
 
 ![hosting](images/user-statistics01.png){.thumbnail}
+
+> [!primary]
+>
+> Pour accéder aux statistiques de votre site web avec un utilisateur que vous avez créé, vous devez saisir l'adresse suivante en remplaçant `000` par le numéro du cluster de votre hébergement et `mydomain.ovh` par le nom de domaine de votre site web (sans les « www »):
+>
+> ```bash
+> https://logs.cluster000.hosting.ovh.net/mydomain.ovh/
+> ```
+> 
+> Depuis la section `Statistiques et logs`{.action}, cliquez sur `Voir les statistiques`{.action}.<br>
+> Depuis l'onglet de votre navigateur qui affiche la fenêtre de statistiques, récupérez le lien qui servira à vous connecter avec l'un des utilisateurs créés.
+>
+> ![hosting](images/OWStatslink.png){.thumbnail}
+> 
+
 
 > [!warning] 
 >

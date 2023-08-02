@@ -41,6 +41,20 @@ Klicken Sie im Bereich `Verwaltung der Nutzer` auf den Button `Einen neuen Nutze
 
 ![Hosting](images/user-statistics01.png){.thumbnail}
 
+> [!primary] 
+>
+> Um mit einem von Ihnen erstellten Benutzer auf die Statistiken Ihrer Website zuzugreifen, müssen Sie die folgende Adresse eingeben und `000` durch die Nummer des Clusters Ihres Hostings und `mydomain.ovh` durch den Domainnamen Ihrer Website ersetzen (ohne die „www“):
+>
+> ```bash
+> https://logs.cluster000.hosting.ovh.net/mydomain.ovh/
+> ```
+> 
+> Klicken Sie im Bereich `Statistiken und Logs`{.action} auf `Statistiken anzeigen`{.action}.<br>
+> Rufen Sie im Tab Ihres Browsers, in dem das Statistikfenster angezeigt wird, den Link auf, über den Sie sich mit einem der erstellten Benutzer verbinden können.
+>
+>![hosting](images/OWStatslink.png){.thumbnail}
+>
+
 > [!warning] 
 >
 > Wenn Sie die separaten Logs bei einem [Multisite-Eintrag](/pages/web/hosting/multisites_configure_multisite#schritt-2-eine-domain-oder-subdomain-hinzufugen) aktiviert haben, können die hier erstellten Benutzer nicht auf die Statistiken dieses Multisite-Eintrags zugreifen.
