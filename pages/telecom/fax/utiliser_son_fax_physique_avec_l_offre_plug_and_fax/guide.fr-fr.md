@@ -70,7 +70,7 @@ Enfin, cliquez sur `Valider`{.action}.
 
 ![renvoi d'appels](images/renvoi_dappel.png){.thumbnail}
 
-Pour configurer les notifications par e-mail de votre ligne, reportez vous au guide [Configurer ma ligne Ecofax Pro](/fr/fax/utilisation_de_loffre_ecofax_pro_plug_and_fax/#options-de-notifications).
+Pour configurer les notifications par e-mail de votre ligne, reportez vous au guide [Configurer ma ligne Ecofax Pro](/pages/telecom/fax/configuration_fax_espace_client).
 
 #### Réception uniquement par e-mail ou Ecofax
 
@@ -85,7 +85,7 @@ Enfin, cliquez sur `Valider`{.action}.
 
 ![renvoi d'appels inconditionnel](images/renvoi_dappel2.png){.thumbnail}
 
-Pour configurer les notifications par e-mail de votre ligne, reportez vous au guide [Configurer ma ligne Ecofax Pro](/fr/fax/utilisation_de_loffre_ecofax_pro_plug_and_fax/#options-de-notifications).
+Pour configurer les notifications par e-mail de votre ligne, reportez vous au guide [Configurer ma ligne Ecofax Pro](/pages/telecom/fax/configuration_fax_espace_client).
 
 ### Configurer la présentation du numéro en appel sortant
 

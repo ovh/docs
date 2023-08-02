@@ -43,7 +43,7 @@ This guide will use the notions of a **source PCC** and a **destination Hosted P
 
 ##### **Hosted Private Cloud access**
 
-For connections to the VMware platform, you can choose to block access to vSphere by default. Please refer to our guide on the [vCenter access policy](/gb/en/private-cloud/modify-vcenter-access-policy/) for details.
+For connections to the VMware platform, you can choose to block access to vSphere by default. Please refer to our guide on the [vCenter access policy](/pages/cloud/managed-bare-metal/vcenter-modify-access-policy) for details.
 
 If the access policy has been changed to "Restricted", you will need to apply the same connection IPs to the destination Hosted Private Cloud as to the source PCC.
 

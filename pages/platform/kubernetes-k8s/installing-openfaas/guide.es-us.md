@@ -311,7 +311,7 @@ In OpenFaaS you can write your these function on many languages, not only the us
 
 That also means that in order to create your own functions, you need to have [Docker](https://www.docker.com/){.external} installed in your workstation, and you will need to push the images in a Docker registry, either the official one or a private one.
 
-If you need a private registry, you can use our [OVHcloud Managed Private Registry](/us/es/private-registry). For this tutorial we are choosing to deploy our image on the official Docker registry.
+If you need a private registry, you can use our [OVHcloud Managed Private Registry](/products/public-cloud-containers-orchestration-managed-private-registry). For this tutorial we are choosing to deploy our image on the official Docker registry.
 
 
 ## Writing our first function

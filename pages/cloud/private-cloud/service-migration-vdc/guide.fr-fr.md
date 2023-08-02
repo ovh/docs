@@ -216,7 +216,7 @@ Si les machines virtuelles sont protégées par le chiffrement, elles restent pr
 <a name="access"></a>
 ##### Etape 3.1.3 Restrictions d'accès
 
-Pour vous connecter à votre infrastructure VMware, vous pouvez choisir de bloquer l'accès au vSphere par défaut. Pour cela, consultez notre guide sur la [politique d'accès au vCenter](/fr/private-cloud/changer-la-politique-d-acces-au-vcenter/).
+Pour vous connecter à votre infrastructure VMware, vous pouvez choisir de bloquer l'accès au vSphere par défaut. Pour cela, consultez notre guide sur la [politique d'accès au vCenter](/pages/cloud/managed-bare-metal/vcenter-modify-access-policy).
 
 Suite au changement de politique d'accès, si celle-ci est passée en « restreinte », le nouveau vDC héritera de la politique d'accès utilisée par le vDC d'origine.
 

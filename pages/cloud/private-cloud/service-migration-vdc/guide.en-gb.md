@@ -207,7 +207,7 @@ If virtual machines are protected by encryption, they stay protected on the dest
 <a name="access"></a>
 ##### Step 3.1.3 Access restrictions
 
-For connections to the VMware platform, you can choose to block access to vSphere by default. Please refer to our guide on the [vCenter access policy](/gb/en/private-cloud/modify-vcenter-access-policy/) for details.
+For connections to the VMware platform, you can choose to block access to vSphere by default. Please refer to our guide on the [vCenter access policy](/pages/cloud/managed-bare-metal/vcenter-modify-access-policy) for details.
 
 If the access policy has been changed to "Restricted", the new vDC will inherit the access policy that the source vDC uses.
 <a name="userrights"></a>
