@@ -119,7 +119,7 @@ Fill in the requested information depending on the action you want the rule to c
 
 ![useowa](images/use-owa-step14.png){.thumbnail}
 
-For more detailed instructions about creating inbox rules, please refer to our guide: [Creating inbox rules in OWA](/ca/en/emails/creating-inbox-rules-in-owa/).
+For more detailed instructions about creating inbox rules, please refer to our guide: [Creating inbox rules in OWA](/pages/web/emails/creating-inbox-rules-in-owa-mx-plan).
 
 #### Block a sender
 

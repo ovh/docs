@@ -136,7 +136,7 @@ Pour configurer votre adresse e-mail sur un logiciel de messagerie ou un apparei
 
 [Consulter son compte depuis l’interface OWA](/pages/web/emails/email_owa)
 
-[Règles de boîte de réception depuis l’interface OWA]( /pages/web/emails/creating-inbox-rules-in-owa-mx-plan)
+[Règles de boîte de réception depuis l’interface OWA](/pages/web/emails/creating-inbox-rules-in-owa-mx-plan)
 
 [Ajouter un alias sur son compte e-mail](/pages/web/emails/feature_redirections)
 

@@ -1,6 +1,6 @@
 ---
 title: PostgreSQL - Detect and terminate long-running queries
-excerpt:
+excerpt: This guide explains how to detect and terminate specific sessions via the OVHcloud Control Panel and Command Line Interface (CLI)
 updated: 2023-02-15
 routes:
     canonical: '/pages/platform/databases/postgresql_11_terminate_queries'

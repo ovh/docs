@@ -1,6 +1,6 @@
 ---
 title: Object Storage - Versenden Ihrer Dateien zu S3 Object Storage optimieren (EN)
-excerpt:
+excerpt: Learn how to optimise the sending of your files to your bucket
 routes:
     canonical: '/pages/cloud/storage/object_storage/s3_optimise_the_sending_of_your_files'
 updated: 2021-12-08

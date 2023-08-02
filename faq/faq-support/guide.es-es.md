@@ -1,6 +1,7 @@
 ---
 title: FAQ en el soporte de OVHcloud
 excerpt: Encuentre las preguntas más frecuentes en el soporte de OVHcloud
+updated: 2022-11-10
 ---
 
 **Última actualización: 10/11/2022**

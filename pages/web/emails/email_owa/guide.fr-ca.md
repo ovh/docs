@@ -121,7 +121,7 @@ Renseignez les informations demandées en fonction de la tâche que vous voudrez
 
 ![useowa](images/use-owa-step14.png){.thumbnail}
 
-Pour des instructions plus détaillées sur la création des règles de gestion de messagerie, veuillez vous référer à notre guide : [Création de règles de gestion de messagerie sous OWA](/ca/fr/emails/regles-boite-de-reception-owa/).
+Pour des instructions plus détaillées sur la création des règles de gestion de messagerie, veuillez vous référer à notre guide : [Création de règles de gestion de messagerie sous OWA](/pages/web/emails/creating-inbox-rules-in-owa-mx-plan).
 
 #### Bloquer un expéditeur
 

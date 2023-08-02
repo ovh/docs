@@ -1,6 +1,6 @@
 ---
 title: OpenSearch - Advanced parameters references
-excerpt:
+excerpt: This guide lists all the supported advanced parameters that allow you to configure your Public Cloud Databases for OpenSearch according to your use cases
 updated: 2023-02-06
 ---
 

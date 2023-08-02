@@ -1,6 +1,6 @@
 ---
 title: Redis - Références des paramètres avancés (EN)
-excerpt:
+excerpt: This guide lists all the supported advanced parameters that allow you to configure your Public Cloud Databases for Redis according to your use cases
 routes:
     canonical: '/pages/platform/databases/redis_09_advanced_parameters_references'
 updated: 2023-02-06

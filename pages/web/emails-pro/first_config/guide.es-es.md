@@ -136,7 +136,7 @@ Para configurar su dirección de correo electrónico en un cliente de correo o e
 
 [Usar Outlook Web App con una cuenta de correo](/pages/web/emails/email_owa)
 
-[Crear reglas de la bandeja de entrada en OWA]( /pages/web/emails/creating-inbox-rules-in-owa-mx-plan)
+[Crear reglas de la bandeja de entrada en OWA](/pages/web/emails/creating-inbox-rules-in-owa-mx-plan)
 
 [Añadir un alias a una cuenta de correo](/pages/web/emails/feature_redirections)
 

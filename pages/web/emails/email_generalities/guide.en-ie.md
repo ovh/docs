@@ -74,7 +74,7 @@ To use your email address with a third-party software, you will need to configur
 
 |Windows|Outlook|Apple|Android|
 |---|---|---|---|
-|[Windows 10]( /pages/web/emails/how_to_configure_windows_10)|[Outlook Windows](/pages/web/emails/how_to_configure_outlook_2016)|[MacOS Mail (latest version)](/pages/web/emails/how_to_configure_mail_macos)|[Android (latest version)](/pages/web/emails/how_to_configure_android)|
+|[Windows 10](/pages/web/emails/how_to_configure_windows_10)|[Outlook Windows](/pages/web/emails/how_to_configure_outlook_2016)|[MacOS Mail (latest version)](/pages/web/emails/how_to_configure_mail_macos)|[Android (latest version)](/pages/web/emails/how_to_configure_android)|
 |[Thunderbird](/pages/web/emails/how_to_configure_thunderbird_windows)|[Outlook Mac OS](/pages/web/emails/how_to_configure_outlook_2016_mac)|[Mail for iPhone or iPad](/pages/web/emails/how_to_configure_ios)|
 |||[Thunderbird Mac OS](/pages/web/emails/how_to_configure_thunderbird_mac)|
 
@@ -190,7 +190,7 @@ To use your email accounts with a third-party software, you will need to configu
 
 |Windows|Outlook|Apple|Android|
 |---|---|---|---|
-|[Windows 10]( /pages/web/emails/how_to_configure_windows_10)|[Outlook Windows](/pages/web/emails/how_to_configure_outlook_2016)|[MacOS Mail (latest version)](/pages/web/emails/how_to_configure_mail_macos)|[Android (latest version)](/pages/web/emails/how_to_configure_android)|
+|[Windows 10](/pages/web/emails/how_to_configure_windows_10)|[Outlook Windows](/pages/web/emails/how_to_configure_outlook_2016)|[MacOS Mail (latest version)](/pages/web/emails/how_to_configure_mail_macos)|[Android (latest version)](/pages/web/emails/how_to_configure_android)|
 |[Thunderbird](/pages/web/emails/how_to_configure_thunderbird_windows)|[Outlook Mac OS](/pages/web/emails/how_to_configure_outlook_2016_mac)|[Mail for iPhone or iPad](/pages/web/emails/how_to_configure_ios)|
 |||[Thunderbird Mac OS](/pages/web/emails/how_to_configure_thunderbird_mac)|
 
@@ -232,7 +232,7 @@ You can then use the automatic reply function of your email accounts. Please fol
 
 You may want to **delegate all the email services for a domain name to another OVHcloud account** , or **delegate one or more email accounts to another OVHcloud account**. For example, you can allow the holder of this other OVHcloud account to change the password for an email account.
 
-Please follow our guide on [Delegating email management to another person]( /pages/web/microsoft-collaborative-solutions/feature_delegation).
+Please follow our guide on [Delegating email management to another person](/pages/web/microsoft-collaborative-solutions/feature_delegation).
 
 ##### **Mailing lists**
 

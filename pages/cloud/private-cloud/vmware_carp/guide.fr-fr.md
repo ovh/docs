@@ -1,7 +1,7 @@
 ---
 title: 'Activation du mode promiscuité sur une machine virtuelle'
 excerpt: 'Découvrez comment activer le mode promiscuité sur une machine virtuelle pour le bon fonctionnement de certains protocoles HA comme le CARP'
-update: 2023-05-25
+updated: 2023-05-25
 ---
 
 ## Objectif

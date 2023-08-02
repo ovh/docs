@@ -16,7 +16,7 @@ Die Liste der Kontaktdaten ihrer Dienste finden Sie unter `Meine Kontakte`{.acti
 
 #### Tipps und Tricks
 
-Mehr Informationen zur Verwaltung der Kontakte finden Sie in der folgenden ausführlichen Anleitung: [Verwaltung der Kontakte Ihrer Dienste](https://help.ovhcloud.com/de/faq/billing-payment/billing-account/)
+Mehr Informationen zur Verwaltung der Kontakte finden Sie in der folgenden ausführlichen Anleitung: [Verwaltung der Kontakte Ihrer Dienste](/pages/account/customer/managing_contacts)
 
 ### Wie kann ich meine Zahlungsdaten ändern?
 

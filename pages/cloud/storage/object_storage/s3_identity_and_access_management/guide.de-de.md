@@ -1,6 +1,6 @@
 ---
 title: Object Storage - Identitäts- und Zugriffsverwaltung (EN)
-excerpt:
+excerpt: The purpose of this guide is to show you how to manage your identities and access your S3 Object Storage resources
 routes:
     canonical: '/pages/cloud/storage/object_storage/s3_identity_and_access_management'
 updated: 2022-09-27

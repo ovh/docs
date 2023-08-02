@@ -88,7 +88,7 @@ Clicking on a calendar in the list adds or removes them from the overview displa
 
 ## Go further
 
-[Using the Outlook Web App with an Exchange account]( /pages/web/emails/email_owa)
+[Using the Outlook Web App with an Exchange account](/pages/web/emails/email_owa)
 
 [Sharing folders in OWA](/pages/web/microsoft-collaborative-solutions/owa_directory_sharing)
 

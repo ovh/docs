@@ -1,6 +1,6 @@
 ---
 title: Object Storage - Getting started with Object Storage
-excerpt:
+excerpt: This guide is designed to familiarise you with the management of your containers/objects
 updated: 2023-04-28
 ---
 

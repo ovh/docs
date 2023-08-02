@@ -204,7 +204,7 @@ print("Welcome", client.get('/me')['firstname'])
 
 ## Weiterführende Informationen <a name="gofurther"></a>
 
-[Domainnamen über die API verwalten](/pages/account/api/domains) (EN)
+[Domainnamen über die API verwalten](/pages/web/domains/api_domain_intro) (EN)
 
 [OVHcloud Kunden-Account über die API verwalten](/pages/account/api/api_right_delegation) (EN)
 

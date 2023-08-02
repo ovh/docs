@@ -1,6 +1,6 @@
 ---
 title: Object Storage - Gestion des identités et des accès
-excerpt:
+excerpt: Ce guide a pour objectif de vous montrer la gestion de vos identités et accès à vos ressources S3 Object Storage
 updated: 2022-09-27
 ---
 
