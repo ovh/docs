@@ -842,6 +842,7 @@
                 + [AI Training - Tutorial - Use tensorboard inside a job](platform/ai/training_tuto_05_tensorboard)
                 + [AI Training - Tutorial - Compare models with W&B for audio classification task](platform/ai/training_tuto_06_models_comparaison_weights_and_biases)
                 + [AI Training - Tutorial - Train a Rasa chatbot with Docker and AI Training](platform/ai/training_tuto_07_train_rasa_chatbot)
+                + [AI Training - Tutorial - Train a model to recognize marine mammal sounds](platform/ai/training_tuto_08_train_marine_mammal_sound)
         + [AI Deploy](public-cloud-ai-and-machine-learning-ai-deploy)
             + [Guides](public-cloud-ai-and-machine-learning-ai-deploy-guides)
                 + [AI Deploy - Features, Capabilities and Limitations](platform/ai/deploy_guide_01_capabilities)

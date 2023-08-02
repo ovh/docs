@@ -95,6 +95,7 @@ A preview of this notebook can be found on GitHub [here](https://github.com/ovh/
 
 ## Go further
 
+- If you want to train your model, please check out this [AI Training tutorial](/pages/platform/ai/training_tuto_08_train_marine_mammal_sound).
 - If you want to deploy a **Streamlit** app in order to classify marine mammal sounds using your model, please check out this [notebook](/pages/platform/ai/deploy_tuto_03_streamlit_sounds_classification).
 - You can also compare two methods for audio classification task by following this [tutorial](/pages/platform/ai/training_tuto_06_models_comparaison_weights_and_biases).
 
@@ -104,4 +105,4 @@ If you need training or technical assistance to implement our solutions, contact
 
 Please send us your questions, feedback and suggestions to improve the service:
 
-- On the OVHcloud [Discord server](https://discord.com/invite/vXVurFfwe9)
+- On the OVHcloud [Discord server](https://discord.gg/ovhcloud)
