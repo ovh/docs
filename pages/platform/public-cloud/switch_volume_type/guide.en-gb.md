@@ -15,15 +15,15 @@ The purpose of this guide is to show you how to change a block storage volume ty
 
 ## Instructions
 
-When trying to change a block storage volume type to a 'High speed gen2' one, the migration policy will needs to be changed from 'Never' to 'On-demand'.
+When trying to change a block storage volume type to a "High speed gen2" one, the migration policy will need to be changed from `Never` to `On-demand`.
 
-The migration policy is set by default to 'Never' as the volume stays on the same CEPH cluster. However, for the 'High speed gen2' the volume will need to be migrated to a new cluster.
+The migration policy is set by default to `Never` as the volume stays on the same CEPH cluster. However, for the "High speed gen2" type, the volume will need to be migrated to a new cluster.
 
 This modification can be made via Horizon or the Openstack CLI.
 
 ### From the Horizon Interface
 
-Log into the [Horizon interface](https://horizon.cloud.ovh.net/auth/login/) and make sure you are in the correct region. You can verify this on the top left corner. 
+Log in to the [Horizon interface](https://horizon.cloud.ovh.net/auth/login/) and make sure you are in the correct region. You can verify this on the top left corner. 
 
 ![Region selection](images/region2021.png){.thumbnail}
 
@@ -32,18 +32,17 @@ Click on the drop-down arrow next to `Edit Volume`{.action} and select `Change V
 
 ![Option selection](images/selectoption.png){.thumbnail}
 
-In the pop-up window, click on the drop-down underneath `Type` and select `high-speed-gen-2`{.action}. Next, click on the drop-down arrow underneath `Migration Policy`, and select `On Demand`{.action}.
+In the pop-up window, click on the drop-down menu underneath `Type` and select `high-speed-gen-2`{.action}. Next, click on the drop-down arrow underneath `Migration Policy`, and select `On Demand`{.action}.
 
 Once done, click on `Change Volume Type`{.action} to confirm the change.
 
 ![Option selection](images/changevolume.png){.thumbnail}
 
-
-### From the Openstack CLI
+### From the OpenStack CLI
 
 Make sure to consult the following guide before proceeding:
 
-- [Preparing an environment for using the OpenStack API ](https://help.ovhcloud.com/csm/en-gb-public-cloud-compute-prepare-openstack-api-environment?id=kb_article_view&sysparm_article=KB0050997).
+- [Preparing an environment for using the OpenStack API](/pages/platform/public-cloud/prepare_the_environment_for_using_openstack/).
 
 First, list the type of volumes available in your region with the following command:
 
