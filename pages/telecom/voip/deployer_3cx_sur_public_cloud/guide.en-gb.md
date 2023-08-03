@@ -1,46 +1,46 @@
 ---
-title: "Déployer automatiquement l'IPBX 3CX sur l'offre Public Cloud OVHcloud"
-excerpt: "Découvrez comment vous pouvez déployer automatiquement votre IPBX 3CX sur une instance Public Cloud via un template XML."
+title: "Deploying automatically the 3CX IPBX on OVHcloud Public Cloud"
+excerpt: "Find out how you can automatically deploy your 3CX IPBX on a Public Cloud instance via an XML template"
 updated: 2023-07-28
 ---
 
-## Objectif
+## Objective
 
-Ce guide vous détaille comment déployer automatiquement votre instance 3CX sur une instance Public Cloud. 
+This guide details how to automatically deploy your 3CX instance on a Public Cloud instance.
 
-A la fin de ce guide, vous aurez les bases pour gérer le déploiement de votre instance et sa configuration automatiquement.
+At the end of this guide, you will have the basics to manage the deployment of your instance and its configuration automatically.
 
-## Prérequis
+## Requirements
 
-- Un projet [Public Cloud](https://www.ovhcloud.com/fr/public-cloud/) dans votre compte OVHcloud. Retrouvez plus d'informations dans notre guide « [Créer votre premier projet Public Cloud](/pages/platform/public-cloud/create_a_public_cloud_project) ».
-- L'IPBX 3CX requiert une license valide pour être utilisé. Assurez-vous d'avoir une license valide lors du déploiement. Retrouvez toutes les informations sur <https://www.3cx.fr>. 
+- A [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account. You can find more information in our guide [Creating your first Public Cloud project](/pages/platform/public-cloud/create_a_public_cloud_project).
+- The 3CX IPBX requires a valid license to be used. Ensure that you have a valid license during deployment. You can find all the information on <https://www.3cx.com/>.
 
-## En pratique
+## Instructions
 
 > [!warning]
-> 
-> OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 >
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce guide.
+> OVHcloud provides services that you are responsible for with regard to their configuration and management. It is therefore your responsibility to ensure that they function properly.
+>
+> This tutorial is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en-gb/directory/) and/or the service’s publisher if you encounter any difficulties. We will not be able to assist you. You can find more information in the ["Go further"](#go-further) section of this guide.
 >
 
-Nous allons utiliser un template au format XML afin de pouvoir configurer automatiquement l'instance 3CX. 
+We will use a template in XML format so that we can automatically configure the 3CX instance.
 
-Ce fichier XML peut être très simple, pour simplement installer 3CX et votre license.<br>
-Il peut aussi être très complet pour vous permettre non seulement d'installer la license mais aussi de créer vos utilisateurs, vos trunks et les autres fonctions de 3CX.
+This XML file can be very simple, to simply install 3CX and your license.<br>
+It can also be very complete, allowing you not only to install the license but also to create your users, trunks and other 3CX features.
 
-Dans ce guide, nous allons utiliser un template XML très simple. Pour un template plus complet, nous vous invitons à consulter la [documentation de 3CX](https://www.3cx.com/docs/configure-pbx-automatically/).
+In this tutorial, we will use a very simple XML template. For a more complete template, please refer to the [3CX documentation](https://www.3cx.com/docs/configure-pbx-automatically/).
 
-### Etape 1 : compléter le template 
+### Step 1: Complete the template
 
-Nous allons joindre à l'instance un *user-data*. Lors du démarrage de l'instance, ce fichier permettra à l'outil cloud-init de : 
+We will attach a *user-data* to the instance. When the instance is booted, this file will allow the cloud-init tool to:
 
-- créer le fichier XML de configuration de 3CX ;
-- lancer l'installation des packages de 3CX.
+- Create the 3CX configuration XML file.
+- Launch the installation of 3CX packages.
 
-Le fichier XML est inclus dans le template que nous allons joindre à l'instance lors de sa création. 
+The XML file is included in the template that we will attach to the instance when we create it.
 
-Voici le fichier à utiliser pour suivre ce guide : 
+Here is the file to use to follow this tutorial:
 
 ```xml
 #!/bin/bash -e
@@ -568,9 +568,9 @@ apt-get -y install 3cxpbx
 
 ```
 
-Dans ce template, il y a deux éléments à modifier pour un premier test de déploiement :
+In this template, there are two elements to modify for a first deployment test:
 
-- Remplacez `YourLicenseKey` par votre clé de license 3CX.
+- Replace `YourLicenseKey` with your 3CX license key.
 
 ```xml
     <option>
@@ -579,7 +579,7 @@ Dans ce template, il y a deux éléments à modifier pour un premier test de dé
     </option>
 ```
 
-- Remplacez `YourStrongAdminPassword` par votre mot de passe pour le compte admin. Ce mot de passe doit faire 10 caractères minimum, contenir des chiffres, des lettres en minuscules et majuscules : 
+- Replace `YourStrongAdminPassword` with your admin account password. This password must be at least 10 characters long, contain numbers and lower-case and upper-case letters:
 
 ```xml
     <option>
@@ -589,81 +589,81 @@ Dans ce template, il y a deux éléments à modifier pour un premier test de dé
 
 ```
 
-Une fois votre template terminé, vous pouvez le déployer grâce aux instructions de l'étape 2.
+Once your template is complete, you can deploy it using the instructions in step 2.
 
-### Etape 2 : déployer l'instance avec le template 
+### Step 2: Deploy the instance with the template
 
-Selon la version et le dimensionnement de votre instance 3CX, le modèle d'instance (*flavor*) à utiliser sera différent. Référez vous au lien suivant pour choisir la bonne instance : <https://www.3cx.com/docs/recommended-hardware-specifications-for-3cx/>
+Depending on the version and sizing of your 3CX instance, the instance flavor to use will be different. Please refer to the following link to choose the right instance: <https://www.3cx.com/docs/recommended-hardware-specifications-for-3cx/>
 
-Pour notre guide, nous allons utiliser une instance **Discovery D2-4**.
+For our guide, we will use a **Discovery D2-4** instance.
 
-#### Déploiement via l'espace client OVHcloud
+#### Deployment via the OVHcloud Control Panel
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et cliquez sur le menu `Public Cloud`{.action}.
+Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and click on the `Public Cloud`{.action} menu.
 
-Sélectionnez votre projet Public Cloud.
+Select your Public Cloud project.
 
-Sur la page d'accueil, cliquez sur `Créer une instance`{.action}. Sélectionnez votre modèle d'instance et la région désirée.
+On the homepage, click `Create an instance`{.action}. Select your instance flavor and the region you want.
 
-![choix d'une flavor](images/flavor.png){.thumbnail}
+![choosing a flavor](images/flavor.png){.thumbnail}
 
-Sélectionnez ensuite le système d'exploitation. A ce jour, 3CX utilise Debian 10.
+Then select the operating system. To date, 3CX uses Debian 10.
 
-![choix de l'OS](images/os.png){.thumbnail}
+![OS selection](images/os.png){.thumbnail}
 
-C'est à l'étape suivante, appelée « Configurez votre instance » que vous allez pouvoir joindre votre template.
+In the next step, called “Configure your instance”, you will be able to attach your template.
 
-Nommez votre instance, puis cliquez sur `Ajouter`{.action} dans l'encadré `Script de post-installation`.
+Name your instance, then click `Add`{.action} in the `Post-installation script` box.
 
-Dans la boite de texte qui s'affiche, collez le script d'installation généré précédemment.
+In the text box that appears, paste the installation script that was generated earlier.
 
-![ajout du script](images/scriptPostInstall.png){.thumbnail}
+![adding script](images/scriptPostInstall.png){.thumbnail}
 
-Cliquez sur `Suivant`{.action} pour valider cette étape. Terminez par le choix de votre configuration réseau et du mode de facturation.
+Click `Next`{.action} to confirm this step. Finally, choose your network configuration and billing method.
 
-Une fois l'instance démarrée, l'installation sera lancée directement et prendra quelques minutes.
+Once the instance has booted, the installation will be launched directly, this will take a few minutes.
 
-Vous pouvez vous connecter à la machine pour vérifier le bon déroulement avec les logs :
+You can log in to the machine to check that the logs are correct:
 
 ```bash
 tail -F /var/lib/3cxpbx/Data/Logs/PbxConfigTool.log
 ```
 
-Une fois le déploiement terminé, l'interface d'administration sera accessible via le FQDN donné lors de la souscription à votre license 3CX ou via l'adresse IP de votre instance : `https://ip_publique_instance:5001/`
+Once the deployment is complete, the administration interface will be accessible via the FQDN given when you subscribe to your 3CX license, or via the IP address of your instance: `https://instance_public_ip:5001/`
 
-#### Déploiement via API
+#### Deployment via API
 
-Il est également possible de déployer votre instance via API, en utilisant l'appel suivant :
+You can also deploy your instance via API, using the following call:
 
 > [!api]
 >
 > @api {POST} /cloud/project/{serviceName}/instance
 >
 
-- Exemple avec une flavor D2-4, Debian 10 et la facturation à l'heure :
+- Example with a D2-4 flavor, Debian 10 and hourly billing:
 
 ```bash
-curl -X POST "https://eu.api.ovh.com/v1/cloud/project/votre_id_projet/instance" \
+curl -X POST "https://eu.api.ovh.com/v1/cloud/project/your_project_id/instance" \
  -H "accept: application/json"\
- -H "authorization: Bearer [Votre_Token]"\
+ -H "authorization: Bearer [Your_Token]"\
  -H "content-type: application/json" \
- -d '{"flavorId":"199060ac-6dde-435a-acab-78456ac337a7","imageId":"60704751-09c2-4ad4-a30f-b3e786348fa0","monthlyBilling":false,"name":"Nom-De-L-Instance","region":"GRA7","sshKeyId":"Id-De-Votre-Cle-Ssh","userData":"LeContenuDuTemplate"}'
+ -d '{"flavorId":"199060ac-6dde-435a-acab-78456ac337a7","imageId":"60704751-09c2-4ad4-a30f-b3e786348fa0","monthlyBilling":false,"name":"Name-Of-The-Instance","region":"GRA7","sshKeyId":"Your-Ssh-Key-Id","userData":TheTemplateContent"}'
 ```
 
-Dans ce JSON, insérez le template dans `userData`. Attention, les sauts de lignes doivent êtres échappés par `\n`.
+In this JSON, insert the template into `userData`. Warning: line breaks must be escaped by `\n`.
 
-## Aller plus loin <a name="gofurther"></a>
+## Go further <a name="gofurther"></a>
 
-[L'essentiel pour commencer avec Public Cloud](/pages/platform/public-cloud/00-essential-info-to-get-started-on-public-cloud)
+[All you need to know to get started with Public Cloud](/pages/platform/public-cloud/00-essential-info-to-get-started-on-public-cloud)
 
-[Se familiariser avec l'interface Public Cloud](/pages/platform/public-cloud/03-public-cloud-interface-walk-me)
+[Familiarise yourself with the Public Cloud interface](/pages/platform/public-cloud/03-public-cloud-interface-walk-me)
 
-[Créer votre premier projet Public Cloud](/pages/platform/public-cloud/create_a_public_cloud_project)
+[Create your first OVHcloud Public Cloud project](/pages/platform/public-cloud/create_a_public_cloud_project)
 
-[Créer une première instance Public Cloud et s'y connecter](/pages/platform/public-cloud/public-cloud-first-steps)
+[Creating and connecting to your first Public Cloud instance](/pages/platform/public-cloud/public-cloud-first-steps)
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
+For specialized services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/).
 
-Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
+If you would like assistance with using and configuring your OVHcloud solutions, we recommend referring to our range of [support solutions](https://www.ovhcloud.com/en-gb/support-levels/).
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+Join our community of users on <https://community.ovh.com/en/>.
