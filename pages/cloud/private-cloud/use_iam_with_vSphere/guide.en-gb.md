@@ -15,18 +15,18 @@ This guide will show you how to connect your vSphere with OVHcloud IAM.
 
 This will allow you to:
 
-- log in to your vSphere using an OVHcloud account.
-- manage your users' rights levels through IAM policies.
+- Log in to your vSphere using an OVHcloud account.
+- Manage your users' rights levels through IAM policies.
 
 ## Requirements
 
-- An [OVHcloud account](/pages/account/customer/ovhcloud-account-creation)
-- Knowing [how to manage account users](/pages/account/customer/ovhcloud-users-management)
-- Knowing [how to configure policies for IAM](/pages/account/customer/iam-policy-ui)
+- You have an [OVHcloud account](/pages/account/customer/ovhcloud-account-creation).
+- You know [how to manage account users](/pages/account/customer/ovhcloud-users-management).
+- You know [how to configure policies for IAM](/pages/account/customer/iam-policy-ui).
 
 ## Instructions
 
-Enabling OVHcloud IAM does not deactivate your existing Hosted Private Cloud users, you can still use them to connect directly to the different elements of your Hosted Private Cloud, without going through IAM.
+Enabling OVHcloud IAM does not deactivate your existing Hosted Private Cloud users. You can still use them to connect directly to the different elements of your Hosted Private Cloud, without going through IAM.
 
 OVHcloud IAM is not available on environments with advanced security and certification options (PCI-DSS, HDS, HIPAA, SNC).
 
@@ -52,11 +52,11 @@ You can create new roles by executing the following call:
 > @api {POST} /dedicatedCloud/{serviceName}/iam/addRole
 >
 
-The management of vSphere permissions for each IAM role is carried out as for any other Hosted Private Cloud user, via the API or from the [OVHcloud Control Panel](/pages/cloud/private-cloud/change_users_rights)
+The management of vSphere permissions for each IAM role is carried out as for any other Hosted Private Cloud user, via the API or from the [OVHcloud Control Panel](/pages/cloud/private-cloud/change_users_rights).
 
 ### Using IAM policies
 
-You can create IAM policies from the [OVHcloud IAM](/pages/account/customer/iam-policy-ui). 
+You can create IAM policies from the [OVHcloud IAM menu](/pages/account/customer/iam-policy-ui). 
 
 Each IAM role in your Hosted Private Cloud corresponds to an IAM action in the form "pccVMware:vSphere:assumeRole?**role name**".
 
