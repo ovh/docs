@@ -1,7 +1,7 @@
 ---
 title: Modifier un Volume Block Storage
 excerpt: "Découvrez comment changer le type d'un volume block storage en utilisant Openstack"
-updated: 2023-07-05
+updated: 2023-08-03
 ---
 
 ## Objectif
@@ -41,10 +41,31 @@ Une fois fait, cliquez sur `Change Volume Type`{.action} de volume pour valider 
 
 ### Depuis la CLI Openstack
 
-Une fois votre environnement prêt, tapez ce qui suit en ligne de commande :
+Avant de commencer, consulter le guide suivant :
+
+- [Préparer l’environnement pour utiliser l’API OpenStack](/pages/platform/public-cloud/prepare_the_environment_for_using_openstack/).
+
+En premier, listez le type de volumes disponibles dans votre région avec la commande suivante :
 
 ```bash
-$ openstack volume set --type NEW_TYPE --retype-policy on-demand VOLUME_NAME_OR_ID
+#~$ openstack image list
++--------------------------------------+-----------------------------------------------+----------+
+| ID                                   | Name                                          | Is Public |
++--------------------------------------+-----------------------------------------------+----------+
+| 27844ef7-1a9a-4944-be59-6e4eb19a71f6 | high-speed-gen2                                    | True |
+| 23f75fef-d4f6-416a-a884-95aa3fd45695 | classic                                            | True |
+| 2f78e8af-93c9-4e5c-b177-83c4a7ec456a | high-speed                                         | True |
+----------------------------------------------------------------------------------------------------
+```
+
+> [!warning]
+> Veuillez noter que si le type de volume « high-speed-gen2 » n'apparaît pas dans la liste, cela signifie qu'il n'est pas disponible dans cette région.
+>
+
+Ensuite, changez le type de volume avec la commande suivante :
+
+```bash
+$ openstack volume set --type high-speed-gen2 --retype-policy on-demand VOLUME_NAME_OR_ID
 ```
 
 ## Aller plus loin
