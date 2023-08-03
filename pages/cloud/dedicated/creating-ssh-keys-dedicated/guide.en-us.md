@@ -17,7 +17,7 @@ This is generally the most secure and convenient connection method.
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
 - A [dedicated server](https://www.ovhcloud.com/en/bare-metal/) or a [VPS](https://www.ovhcloud.com/en/vps/) in your OVHcloud account
 - An SSH client application (command line or GUI)
-- Administrative access (root) via SSH
+- Administrative access (root) via SSH to your server
 
 > [!primary]
 > This guide is not applicable for standard **Windows Server** installations since they rely on the `Remote Desktop Protocol` (RDP) for connections. SSH connections are used for the OVHcloud rescue mode however. You can find more information in the [Go further](#gofurther) section of this guide.

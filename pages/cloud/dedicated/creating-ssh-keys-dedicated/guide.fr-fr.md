@@ -340,7 +340,7 @@ Entrez un nom pour cette connexion sous `Saved Sessions` et cliquez sur `Save`{.
 
 ![clé PuTTy](images/puttygen_05.png){.thumbnail}
 
-Dès à présent, vous pouvez cliquer sur cet élément de `session` et ouvrir une connexion à votre serveur. Pour le tester, cliquez sur `Open`{.action}. Si vous avez protégé le fichier de clé avec une phrase secrète, saisissez-la à ce stade.
+Dès à présent, vous pouvez cliquer sur cet élément de `Session` et ouvrir une connexion à votre serveur. Pour le tester, cliquez sur `Open`{.action}. Si vous avez protégé le fichier de clé avec une phrase secrète, saisissez-la à ce stade.
 
 Pour configurer une autre connexion au serveur, répétez les étapes suivantes :
 
@@ -363,7 +363,7 @@ Dans `Mes services`, positionnez-vous sur l'onglet `Clés SSH`{.action} et cliqu
 
 Sélectionnez `Dédié` dans le menu déroulant.
 
-Dans la nouvelle fenêtre, entrez un identifiant (un nom de votre choix) pour la clé. Collez la chaîne de clé (copiée depuis [votre fichier `.pub`](#publickey) ou depuis [la fenêtre `PuTTYgen`)](#useputty) dans le champ `Key`.
+Dans la nouvelle fenêtre, entrez un identifiant (un nom de votre choix) pour la clé. Collez la chaîne de clé (copiée depuis [votre fichier `.pub`](#publickey) ou depuis [la fenêtre `PuTTYgen`](#useputty) dans le champ `Key`).
 
 ![Espace de gestion des clés SSH](images/SSH_keys_panel_3.png){.thumbnail}
 
