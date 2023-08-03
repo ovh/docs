@@ -24,7 +24,7 @@ You can also check that your domain name is delivering emails to the right place
 
 You can configure your email account to use an email client like Outlook, Thunderbird, Mac Mail, etc. To do this, we have created guides to help you set up your email address. You can find them on [this page](/products/web-cloud-email-collaborative-solutions-mx-plan). 
 
-With [webmail](/), you can access your inbox at any time from any connected device. Once you have created your email account, you can log in here to access it. 
+With [webmail](https://www.ovhcloud.com/en/mail/), you can access your inbox at any time from any connected device. Once you have created your email account, you can log in here to access it. 
 
 **Tips and tricks**: If you configure your email account in an email software client, we advise configuring it with the IMAP protocol. This way, emails will stay stored on the server, and you can read them from any device via [webmail](https://www.ovh.com/world/mail/). To do this, you can use the following documentation: [Getting started with an MX Plan solution](/pages/web/emails/email_generalities).
 

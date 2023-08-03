@@ -27,7 +27,7 @@ To do so, go to [OVHcloud API](https://ca.api.ovh.com/createApp/){.external}.
 
 You will need to log in and set an application name and description.
 
-![image](images/ createapp-ca.png)
+![image](images/createapp-ca.png)
 
 Once logged in, you will get your `Application Key` and `Application Secret`, later refered as `AK` and `AS`.
 
