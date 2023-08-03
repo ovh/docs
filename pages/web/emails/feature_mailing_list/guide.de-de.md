@@ -1,7 +1,6 @@
 ---
 title: 'Mailinglisten verwalten und nutzen'
 excerpt: 'Erfahren Sie hier, wie Sie Mailinglisten verwenden'
-legacy_guide_number: g1596
 updated: 2023-08-01
 ---
 
@@ -9,7 +8,7 @@ updated: 2023-08-01
 
 Über eine Mailingliste können Sie Massenabonnenten kontaktieren, d. h. eine Nachricht oder Informationen gleichzeitig an mehrere Empfänger senden. Das kann im Zusammenhang mit einem Informationsmailing z. B. über die Veröffentlichung eines neuen Produkts (für eine E-Commerce-Site) oder als Information über ein bevorstehendes Meeting (für eine Community-Website) nützlich sein. 
 
-**Erfahren Sie in dieser Anleitung, wie Sie Ihre Mailinglisten verwalten.**
+**Diese Anleitung erklärt, wie Sie Ihre Mailinglisten verwalten.**
 
 ### Prinzip der Moderation
 
@@ -161,7 +160,7 @@ Name_Ihrer_ML-unsubscribe@Ihredomain.com
 
 ### Automatisches Löschen fehlerhafter Adressen
 
-Im Mailinglistensystem wird ein Abonnenten nach einer einzelnen Fehlerrückgabe nicht aus der Liste entfernt (Nachricht nicht zugestellt, nicht vorhandene Adresse ...). Es wartet ungefähr 12 Tage nach dem ersten Sendefehler und sendet dann eine Warnmeldung an den Abonnenten.
+Im Mailinglistensystem wird ein Abonnent nach einer einzelnen Fehlerrückgabe nicht aus der Liste entfernt (Nachricht nicht zugestellt, nicht vorhandene Adresse ...). Es wartet ungefähr 12 Tage nach dem ersten Sendefehler und sendet dann eine Warnmeldung an den Abonnenten.
 
 Die Warnmeldung zeigt die Referenzen der fehlenden Nachrichten an. Wenn diese Warnmeldung ebenfalls fehlschlägt, wartet unser Mailinglistensystem weitere 12 Tage und sendet dann eine „Test“-Nachricht. Wenn diese Testnachricht ebenfalls fehlschlägt, wird der Abonnent aus der Liste der Abonnenten gelöscht.
 
@@ -210,33 +209,33 @@ Sie können die meisten Texte in Ihrer Mailingliste anpassen. Als Moderator müs
 
 Sie erhalten dann eine E-Mail, die Sie anleitet wie Sie Ihre Änderungen vornehmen können.
 
-Unten finden Sie eine Liste der Dateien mit den Antworttexten und eine kurze Beschreibung der Verwendung ihres Inhalts. Um eine Datei zu bearbeiten, senden Sie einfach eine Nachricht an send-edit.file und ersetzen Sie den Dateinamen durch 'file'. Die Bearbeitungsanleitung wird mit der Textdatei gesendet.
+Unten finden Sie eine Liste der Dateien mit den Antworttexten und eine kurze Beschreibung der Verwendung ihres Inhalts. Um eine Datei zu bearbeiten, senden Sie einfach eine Nachricht an `Name_Ihrer_ML-edit.file@mydomain.ovh` und ersetzen dabei "file" entsprechen. Die Bearbeitungsanleitung wird mit der Textdatei gesendet.
 
 |Datei|Verwendung|
 |---|---|
 |bottom|Fußzeile aller Antworten: allgemeine Informationen.|
-|digest|'administrativer' Abschnitt der regelmäßigen Rundschreiben.|
+|digest|Administrativer Abschnitt der regelmäßigen Mails.|
 |FAQ|Antworten auf häufig gestellte Fragen zu dieser Liste.|
-|get_bad|im Fall von Nachrichten, die nicht im Archiv vorhanden sind.|
-|help|allgemeine Hilfe (zwischen 'top' und 'bottom').|
+|get_bad|Im Fall von Nachrichten, die nicht im Archiv vorhanden sind.|
+|help|Allgemeine Hilfe (zwischen 'top' und 'bottom').|
 |info|Informationen auf der Liste. Die erste Zeile ist eine Zusammenfassung.|
-|mod_help|spezifische Hilfe für Listenmoderatoren.|
-|mod_reject|an den Absender abgelehnter Sendungen.|
-|mod_request|an Moderatoren mit einer Sendung.|
-|mod_sub|an den Abonnenten nach Bestätigung der Registrierung durch den Moderator.|
-|mod_sub_confirm|an Moderatoren zur Validierung einer Registrierung.|
-|mod_timeout|an den Absender einer Nachricht, der seit langem nicht gültig war.|
-|mod_unsub_confirm|an einen Administrator zum Anfordern einer Abmeldung.|
-|sub_bad|an den Abonnenten, wenn die Bestätigung falsch war.|
-|sub_confirm|an den Abonnenten zum Bestätigen seiner Anfrage.|
-|sub_nop|an den Abonnenten nach einem neuen Abonnement.|
-|sub_ok|an den Abonnenten nach einem erfolgreichen Abonnement.|
-|Top|in der Überschrift jeder Antwort.|
-|trailer|am Ende jedes Beitrags zur Liste hinzugefügt.|
-|unsub_bad|an den Abonnenten, wenn die Abmeldebestätigung falsch ist.|
-|unsub_confirm|an den Abonnenten, um eine Abmeldebestätigung anzufordern.|
-|unsub_nop|an einen Nicht-Abonnenten nach einer Abmeldeanforderung.|
-|unsub_ok|an einen ehemaligen Abonnenten nach erfolgreicher Abmeldung.|
+|mod_help|Spezifische Hilfe für Listenmoderatoren.|
+|mod_reject|An den Absender abgelehnter Sendungen.|
+|mod_request|An Moderatoren mit einer Sendung.|
+|mod_sub|An den Abonnenten nach Bestätigung der Registrierung durch den Moderator.|
+|mod_sub_confirm|An Moderatoren zur Validierung einer Registrierung.|
+|mod_timeout|An den Absender einer Nachricht, der seit langem nicht gültig war.|
+|mod_unsub_confirm|An einen Administrator zum Anfordern einer Abmeldung.|
+|sub_bad|An den Abonnenten, wenn die Bestätigung falsch war.|
+|sub_confirm|An den Abonnenten zum Bestätigen seiner Anfrage.|
+|sub_nop|An den Abonnenten nach einem neuen Abonnement.|
+|sub_ok|An den Abonnenten nach einem erfolgreichen Abonnement.|
+|Top|In der Überschrift jeder Antwort.|
+|trailer|Am Ende jedes Beitrags zur Liste hinzugefügt.|
+|unsub_bad|An den Abonnenten, wenn die Abmeldebestätigung falsch ist.|
+|unsub_confirm|An den Abonnenten, um eine Abmeldebestätigung anzufordern.|
+|unsub_nop|An einen Nicht-Abonnenten nach einer Abmeldeanforderung.|
+|unsub_ok|An einen ehemaligen Abonnenten nach erfolgreicher Abmeldung.|
 
 > [!primary]
 >
