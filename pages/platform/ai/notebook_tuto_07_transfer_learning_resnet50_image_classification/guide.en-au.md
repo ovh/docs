@@ -142,7 +142,7 @@ You can then reach your notebook’s URL once the notebook is running.
 
 Once the repository has been cloned, find your notebook by following this path: `ai-training-examples` > `notebooks` > `computer-vision` > `image-classification` > `tensorflow` > `notebook-resnet-transfer-learning-image-classification.ipynb`.
 
-A preview of this notebook can be found on GitHub [here](https://github.com/ovh/ai-training-examples/blob/main/notebooks/computer-vision/image-classification/tensorflow/notebook-resnet-transfer-learning-image-classification.ipynb).
+A preview of this notebook can be found on GitHub [here](https://github.com/ovh/ai-training-examples/blob/main/notebooks/computer-vision/image-classification/tensorflow/resnet50/notebook-resnet-transfer-learning-image-classification.ipynb).
 
 ## Go further
 
