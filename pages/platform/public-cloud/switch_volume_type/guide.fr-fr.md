@@ -41,8 +41,6 @@ Une fois ces actions effectuées, cliquez sur `Change Volume Type`{.action} pour
 
 ### Depuis la CLI OpenStack
 
-### Depuis la CLI Openstack
-
 Avant de commencer, consulter le guide suivant :
 
 - [Préparer l’environnement pour utiliser l’API OpenStack](/pages/platform/public-cloud/prepare_the_environment_for_using_openstack/).
