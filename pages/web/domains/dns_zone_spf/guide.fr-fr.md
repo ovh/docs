@@ -231,7 +231,7 @@ mydomain.ovh IN TXT "v=spf1 ip4:11.22.333.444 ip6:5555:66a7:88:b999::1000:2233 i
 >
 > ![domain](images/spf_records_ip2.png){.thumbnail}
 >
-> Dirigez-vous ensuite dans la section `Noms de domaine`{.action}, sélectionnez le nom de domaine attaché à votre plateforme private Exchange, puis cliquez sur l'onglet `Zone DNS`{.action}. Récupérez les adresses IPv4 (enregistrement `A`) et IPv6 (enregistrement `AAAA`) correspondant à l'URL du webmail.
+> Dirigez-vous ensuite dans la section `Noms de domaine`{.action}, sélectionnez le nom de domaine attaché à votre plateforme Private Exchange, puis cliquez sur l'onglet `Zone DNS`{.action}. Récupérez les adresses IPv4 (enregistrement `A`) et IPv6 (enregistrement `AAAA`) correspondant à l'URL du webmail.
 >
 > ![domain](images/spf_records_ip3.png){.thumbnail}
 >
