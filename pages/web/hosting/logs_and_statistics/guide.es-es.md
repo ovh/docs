@@ -39,19 +39,16 @@ Haga clic en el botón `Crear un nuevo usuario`{.action} en la sección `Adminis
 
 ![hosting](images/user-statistics01.png){.thumbnail}
 
-> [!primary]
->
-> Para acceder a las estadísticas de su sitio web con un usuario que haya creado, debe introducir la siguiente dirección sustituyendo `000` por el número del cluster de su alojamiento y `mydomain.ovh` por el nombre de dominio de su sitio web (sin los « www »):
->
-> ```bash
-> https://logs.cluster000.hosting.ovh.net/mydomain.ovh/
-> ```
->
-> Desde la sección `Estadísticas y logs`{.action}, haga clic en `Ver las estadísticas`{.action}.<br>
-> En la pestaña de su navegador que muestra la ventana de estadísticas, consulte el enlace que se utilizará para conectarse con uno de los usuarios creados.
->
-> ![hosting](images/OWStatslink.png){.thumbnail}
->
+Para acceder a las estadísticas de su sitio web con un usuario que haya creado, debe introducir la siguiente dirección sustituyendo `000` por el número del cluster de su alojamiento y `mydomain.ovh` por el nombre de dominio de su sitio web (sin los « www »):
+
+```bash
+https://logs.cluster000.hosting.ovh.net/mydomain.ovh/
+```
+
+Desde la sección `Estadísticas y logs`{.action}, haga clic en `Ver las estadísticas`{.action}.<br>
+En la pestaña de su navegador que muestra la ventana de estadísticas, consulte el enlace que se utilizará para conectarse con uno de los usuarios creados.
+
+![hosting](images/OWStatslink.png){.thumbnail}
 
 > [!warning] 
 >

@@ -35,22 +35,18 @@ Cliquez sur le bouton `Créer un nouvel utilisateur`{.action} dans la section `A
 
 ![hosting](images/user-statistics01.png){.thumbnail}
 
-> [!primary]
->
-> Pour accéder aux statistiques de votre site web avec un utilisateur que vous avez créé, vous devez saisir l'adresse suivante en remplaçant `000` par le numéro du cluster de votre hébergement et `mydomain.ovh` par le nom de domaine de votre site web (sans les « www »):
->
-> ```bash
-> https://logs.cluster000.hosting.ovh.net/mydomain.ovh/
-> ```
-> 
-> Depuis la section `Statistiques et logs`{.action}, cliquez sur `Voir les statistiques`{.action}.<br>
-> Depuis l'onglet de votre navigateur qui affiche la fenêtre de statistiques, récupérez le lien qui servira à vous connecter avec l'un des utilisateurs créés.
->
-> ![hosting](images/OWStatslink.png){.thumbnail}
-> 
+Pour accéder aux statistiques de votre site web avec un utilisateur que vous avez créé, vous devez saisir l'adresse suivante en remplaçant `000` par le numéro du cluster de votre hébergement et `mydomain.ovh` par le nom de domaine de votre site web (sans les « www »):
 
+```bash
+https://logs.cluster000.hosting.ovh.net/mydomain.ovh/
+```
 
-> [!warning] 
+Depuis la section `Statistiques et logs`{.action}, cliquez sur `Voir les statistiques`{.action}.<br>
+Depuis l'onglet de votre navigateur qui affiche la fenêtre de statistiques, récupérez le lien qui servira à vous connecter avec l'un des utilisateurs créés.
+
+![hosting](images/OWStatslink.png){.thumbnail}
+
+> [!warning]
 >
 > Si vous avez activé les logs séparés sur une [entrée multisite](/pages/web/hosting/multisites_configure_multisite#etape-2-ajouter-un-domaine-ou-un-sous-domaine), les utilisateurs créés ici ne peuvent pas accéder aux statistiques de cette entrée multisite.
 >

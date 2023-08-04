@@ -39,19 +39,16 @@ Kliknij przycisk `Utwórz nowego użytkownika`{.action} w sekcji `Administracja 
 
 ![hosting](images/user-statistics01.png){.thumbnail}
 
-> [!primary] 
->
-> Aby uzyskać dostęp do statystyk Twojej strony WWW dla użytkownika, którego utworzyłeś, wpisz następujący adres zastępując `000` numerem klastra Twojego hostingu, `mydomain.ovh` nazwą domeny Twojej strony WWW (bez znaków "www"):
->
-> ```bash
-> https://logs.cluster000.hosting.ovh.net/mydomain.ovh/
-> ```
-> 
-> W sekcji `Statystyki i logi`{.action} kliknij `Wyświetl statystyki`{.action}.<br>
-> Z karty przeglądarki, która wyświetla okno statystyk, pobierz link, który będzie używany do łączenia się z jednym z utworzonych użytkowników.
->
-> ![hosting](obrazy/OWStatslink.png){.thumbnail}
->
+Aby uzyskać dostęp do statystyk Twojej strony WWW dla użytkownika, którego utworzyłeś, wpisz następujący adres zastępując `000` numerem klastra Twojego hostingu, `mydomain.ovh` nazwą domeny Twojej strony WWW (bez znaków "www"):
+
+```bash
+https://logs.cluster000.hosting.ovh.net/mydomain.ovh/
+```
+
+W sekcji `Statystyki i logi`{.action} kliknij `Wyświetl statystyki`{.action}.<br>
+Z karty przeglądarki, która wyświetla okno statystyk, pobierz link, który będzie używany do łączenia się z jednym z utworzonych użytkowników.
+
+![hosting](obrazy/OWStatslink.png){.thumbnail}
 
 > [!warning] 
 >
