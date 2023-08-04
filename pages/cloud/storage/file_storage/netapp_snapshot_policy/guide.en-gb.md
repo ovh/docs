@@ -36,12 +36,12 @@ A snapshot policy allows you to automate snapshots creation by defining creation
 It is also required to specify the number of copies you want to retain.
 
 1.  From your OVHcloud Enterprise File Storage control panel, select the `Snapshot policy`{.action} tab.
-// AJOUTER IMAGE 
+![SnapshotPolicy](images/Snapshot_Policy_1.png){.thumbnail}
 
 2.  Set your snapshot policy name, a policy description and then use the button `Add a new rule`{.action} to add one or more rules to the policy.
-// AJOUTER IMAGE 
+![SnapshotPolicy](images/Snapshot_Policy_2.png){.thumbnail}
 
-Fill in the fields to specify the time of day, days of a month, week days and months for the snapshot creation. You also have to enter a prefix for the snapshots, needed for naming them.
+3.Fill in the fields to specify the time of day, days of a month, week days and months for the snapshot creation. You also have to enter a prefix for the snapshots, needed for naming them.
 
 You can find more detailed information for each value by clicking on the question mark icon. By expanding the `Example`{.action} section you can view two sets of policy rules with an explanation of their outcome.
 Click on the check mark button to add the new rule. Once all rules are added, click on `Create a new snapshot policy`{.action}.
@@ -56,12 +56,12 @@ You cannot modify a snapshot policy after creating it. You will have to delete i
 
 Once the snapshot policy is created, you can then apply it to a volume.
 1.  Go to the `volumes`{.action} tab of your capacity pool
-// AJOUTER IMAGE
+![ApplySnapshotPolicy](images/Snapshot_Policy_3.png){.thumbnail}
 
 3.  Choose from the list, the volume you want the snapshot policy to be applied on
 4.	Go the `Snapshots`{.action} section and in the `Manage the snapshot policy`{.action} section, select the policy you want to apply. 
 5.	Click on the `Apply the policy`{.action}
-// AJOUTER IMAGE
+![ApplySnapshotPolicy](images/Snapshot_Policy_4.png){.thumbnail}
 
 ### Delete a snapshot policy
 
@@ -72,11 +72,12 @@ Once the snapshot policy is created, you can then apply it to a volume.
 
 To delete a snapshot policy:
 1.	Go to your capacity pool `Snapshot policies`{.action} tab
-// AJOUTER IMAGE
+![DeleteSnapshotPolicy](images/Snapshot_Policy_5.png){.thumbnail}
 
 2.	Select the policy you want to delete
 3.	Click on the `delete`{.action} button
-// AJOUTER IMAGE
+![DeleteSnapshotPolicy](images/Snapshot_Policy_6.png){.thumbnail}
+
 
 ## Go further
   
