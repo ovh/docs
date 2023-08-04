@@ -72,7 +72,7 @@ Si vous avez déployé des instances dans différentes régions, assurez-vous d�
 
 ![horizon interface](images/firstaccesshorizon.png){.thumbnail}
 
-Cliquez sur le menu `Compute`{.action} dans le gauche et sélectionnez `Instances`{.action}. Sélectionnez `Shelve Instance`{.action} dans la liste déroulante correspondant à l’instance.
+Cliquez sur le menu `Compute`{.action} à gauche puis sur `Instances`{.action}. Sélectionnez `Shelve Instance`{.action} dans la liste déroulante correspondant à l’instance.
 
 ![instance shelve](images/shelveinstancehorizon.png){.thumbnail}
 
