@@ -80,7 +80,8 @@ To launch your notebook, run the following command:
 ovhai notebook run conda jupyterlab \
 		--name <notebook-name> \
 		--framework-version <conda-version> \
-  	    --gpu <nb-gpus>
+		--gpu <nb-gpus>
+
 ```
 
 You can then reach your notebook’s URL once the notebook is running.
