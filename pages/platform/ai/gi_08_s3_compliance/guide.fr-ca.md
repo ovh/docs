@@ -35,7 +35,7 @@ You have two options:
 
 > [!primary]
 >
-> Whether you create a *new user* or use an *existing one*, don't forget to grant him at least the `AI Training Operator` and `Object Storage Operator` rights.
+> Whether you create a *new user* or use an *existing one*, don't forget to grant him at least the `AI Training Operator` and `ObjectStore Operator` rights.
 >
 
 ![S3 user roles](images/user-roles.png)
