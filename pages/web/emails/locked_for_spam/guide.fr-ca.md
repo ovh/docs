@@ -19,12 +19,6 @@ Lorsque votre adresse e-mail est bloquée pour SPAM, cela signifie qu'une activi
 
 ## En pratique <a name="instructions"></a>
 
-Avant de poursuivre et si le blocage concerne une adresse e-mail de type MXplan, identifiez la version que vous possédez pour suivre le bon processus de déblocage. Vérifiez, à l'aide du tableau ci-dessous, comment distinguer les deux versions.
-
-|Version historique de l'offre MX Plan|Nouvelle version de l'offre MX Plan|
-|---|---|
-|![email](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> Repérez l'offre dans le cadre « Abonnement »|![email](images/mxplan-starter-new-step1.png){.thumbnail}<br>Repérez la « Référence serveur » dans le cadre « Résumé »|
-
 ### Étape 1 : pourquoi votre adresse e-mail est bloquée pour SPAM ? <a name="step1"></a>
 
 Lorsqu'une activité suspecte est détectée au niveau de l'envoi des e-mails, l'adresse concernée est automatiquement bloquée. Dans cette situation, vous ne pouvez plus envoyer d'e-mails depuis cette adresse e-mail.
@@ -51,16 +45,7 @@ Sélectionnez l'offre e-mail concernée dans les onglets suivants:
 >> 
 >> ![spam](images/blocked-for-SPAM-01-01.png){.thumbnail}
 >>
-> **Email Pro**
->>
->> Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) et dirigez-vous dans la section `Webcloud`{.action}. Cliquez sur `E-mail Pro`{.action} puis sélectionnez la plateforme E-mail Pro concernée.
->> 
->> Dirigez-vous vers l'onglet `Comptes e-mail`{.action} de votre plateforme. Si la colonne « statut » à droite de l'adresse e-mail concernée mentionne « Spam », cliquez sur cette mention puis sur `Répondre au ticket`{.action}. Le déblocage de l'adresse e-mail ne se fait pas automatiquement. Il est nécessaire de contacter le support, sur le ticket d'assistance, en répondant aux 3 questions posées. <br>
->> Passez à [l'étape 3](#step3) du guide.
->> 
->> ![spam](images/blocked-for-SPAM-01-02.png){.thumbnail}
->>
-> **MX plan - Nouvelle version**
+> **MX plan**
 >>
 >> Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) et dirigez-vous dans la section `Web Cloud`{.action}. Cliquez sur `Emails`{.action}, puis sélectionnez le nom de domaine concerné.
 >>
@@ -68,21 +53,6 @@ Sélectionnez l'offre e-mail concernée dans les onglets suivants:
 >> Passez à [l'étape 3](#step3) du guide.
 >>
 >> ![spam](images/blocked-for-SPAM-01-03.png){.thumbnail}
->>
-> **MX plan - Historique**
->>
->> Si le blocage concerne une adresse e-mail [MXplan version historique](#instructions), il n'y a pas de ticket d'assistance. Veillez bien à consulter [l'étape 1](#step1) de ce guide avant de suivre les instructions suivante.
->>
->> Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) et dirigez-vous dans la section `Web Cloud`{.action}. Cliquez sur `Emails`{.action}, puis sélectionnez le nom de domaine concerné.
->>
->> Dirigez-vous vers l'onglet `Emails`{.action} de votre plateforme. Si la colonne « Bloqué pour SPAM » mentionne « Oui », cliquez sur cette mention puis sur `Changer le mot de passe`{.action}. Votre adresse e-mail est maintenant débloquée, vous n'avez pas besoin de suivre l'[étape 3](#step3).
->>
->> ![spam](images/blocked-for-SPAM-01-04.png){.thumbnail}
->>
->> > [!warning]
->> >
->> > Dans de rares cas, la colonne « Bloqué pour SPAM » peut indiquer « Non » malgré le fait que l'adresse e-mail soit bloquée. Si vous avez fait le nécessaire pour sécuriser l'adresse e-mail, la solution reste la même que ci-dessus.
-
 
 ### Étape 3 : accéder au ticket d'assistance <a name="step3"></a>
 
