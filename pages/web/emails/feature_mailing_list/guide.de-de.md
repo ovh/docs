@@ -1,17 +1,14 @@
 ---
 title: 'Mailinglisten verwalten und nutzen'
 excerpt: 'Erfahren Sie hier, wie Sie Mailinglisten verwenden'
-legacy_guide_number: g1596
-updated: 2020-03-19
+updated: 2023-08-01
 ---
-
-**Letzte Aktualisierung am 13.02.2020**
 
 ## Ziel
 
 Über eine Mailingliste können Sie Massenabonnenten kontaktieren, d. h. eine Nachricht oder Informationen gleichzeitig an mehrere Empfänger senden. Das kann im Zusammenhang mit einem Informationsmailing z. B. über die Veröffentlichung eines neuen Produkts (für eine E-Commerce-Site) oder als Information über ein bevorstehendes Meeting (für eine Community-Website) nützlich sein. 
 
-**Erfahren Sie in dieser Anleitung, wie Sie Ihre Mailinglisten verwalten.**
+**Diese Anleitung erklärt, wie Sie Ihre Mailinglisten verwalten.**
 
 ### Prinzip der Moderation
 
@@ -69,9 +66,7 @@ Füllen Sie das Formular gemäß den Angaben in der folgenden Tabelle aus:
 | Jeder kann posten (keine Moderation) | Das Senden einer E-Mail an die Mailingliste erfolgt ohne Validierung direkt an Abonnenten.             		|
 | Moderation der Abonnenten         	| Der Inhaber oder ein Moderator muss Einträge in die Mailingliste genehmigen.                                    	|
 
-
 ![Emails](images/manage_mailing-lists_03.png){.thumbnail}
-
 
 > [!primary]
 >
@@ -80,7 +75,6 @@ Füllen Sie das Formular gemäß den Angaben in der folgenden Tabelle aus:
 > - 5000 bei Moderation der Nachrichten
 > - 250 ohne Moderation der Nachrichten
 >
-
 
 ### Die Mailinglisten-Optionen verwalten
 
@@ -114,7 +108,7 @@ Es gibt zwei Methoden zum Hinzufügen/Entfernen von Abonnenten:
 #### Ihre Abonnentenliste in eine CSV-Datei exportieren
 
 Klicken Sie auf `Abonnenten in CSV exportieren`{.action}, um eine CSV-Datei mit allen Ihren Abonnenten zu erstellen. Diese Option ist in unserem Fall nicht verfügbar, da kein Abonnent hinzugefügt wurde.
- 
+
 ### Moderatoren verwalten
 
 Um die Moderatoren Ihrer Mailingliste zu verwalten, klicken Sie auf das Icon in der Spalte „Moderatoren“.
@@ -140,37 +134,35 @@ Es gibt zwei Methoden zum Hinzufügen/Entfernen von Moderatoren:
 > [!primary]
 > - Wenn mehrere Moderatoren in einer Mailingliste definiert sind, reicht die Validierung nur eines der Moderatoren aus, damit die E-Mail an Abonnenten gesendet werden kann.
 > - Wenn ein Moderator eine E-Mail an die Mailingliste sendet, erhält nur er die Moderations-E-Mail.
-> 
+>
 
 Je nach Anzahl der hinzuzufügenden Abonnenten kann es einige Zeit dauern, bis der Vorgang abgeschlossen ist.
-
 
 ### Eine Mailingliste abonnieren
 
 Wenn jemand Ihre Mailingliste abonnieren möchte, muss er nur eine E-Mail senden an:
 
-
 ```bash
 Name_Ihrer_ML-subscribe@Ihredomain.com
 ```
-
 
 ### Eine Mailingliste abbestellen
 
 Wenn ein Abonnent sich von Ihrer Mailingliste abmelden möchte, muss er nur eine E-Mail senden an:
 
-
 ```bash
 Name_Ihrer_ML-unsubscribe@Ihredomain.com
 ```
 
+> [!primary]
+>
+> Die Abmeldung von einer Mailingliste erfordert keine Bestätigung, unabhängig davon, ob die Mailingliste moderiert ist oder nicht.
 
 ### Automatisches Löschen fehlerhafter Adressen
 
-Im Mailinglistensystem wird ein Abonnenten nach einer einzelnen Fehlerrückgabe nicht aus der Liste entfernt (Nachricht nicht zugestellt, nicht vorhandene Adresse ...). Es wartet ungefähr 12 Tage nach dem ersten Sendefehler und sendet dann eine Warnmeldung an den Abonnenten.
+Im Mailinglistensystem wird ein Abonnent nach einer einzelnen Fehlerrückgabe nicht aus der Liste entfernt (Nachricht nicht zugestellt, nicht vorhandene Adresse ...). Es wartet ungefähr 12 Tage nach dem ersten Sendefehler und sendet dann eine Warnmeldung an den Abonnenten.
 
 Die Warnmeldung zeigt die Referenzen der fehlenden Nachrichten an. Wenn diese Warnmeldung ebenfalls fehlschlägt, wartet unser Mailinglistensystem weitere 12 Tage und sendet dann eine „Test“-Nachricht. Wenn diese Testnachricht ebenfalls fehlschlägt, wird der Abonnent aus der Liste der Abonnenten gelöscht.
-
 
 ### Wiederkehrende Fehler
 
@@ -179,7 +171,6 @@ Die Warnmeldung zeigt die Referenzen der fehlenden Nachrichten an. Wenn diese Wa
 Eine Sendung an eine Mailingliste muss einen Betreff enthalten. Andernfalls wird automatisch ein Fehler generiert und eine Fehlermeldung per E-Mail an den Absender der Nachricht gesendet.
 
 Der Absender der E-Mail ohne Betreff erhält daher eine E-Mail mit einer Fehlermeldung zurück, wie unten angezeigt.
-
 
 ```bash
 Hi. This is the qmail-send program at mx1.ovh.net.
@@ -191,13 +182,11 @@ This is a permanent error; I've given up. Sorry it didn't work out.
 ezmlm-reject: fatal: Sorry, I don't accept message with empty Subject (#5.7.0)
 ```
 
-
 #### Senden durch Eingabe der Adresse der Mailingliste in Blindkopie
 
 Um eine Nachricht an eine Mailingliste zu senden, muss ihre Adresse entweder im Feld „An“ oder im Feld „Kopie an“ (Cc) angegeben werden.
 
 Wenn der Absender die Adresse in das Feld „Blindkopie“ eingibt, wird folgende Fehlermeldung erzeugt:
-
 
 ```bash
 Hi. This is the qmail-send program at mx1.ovh.net.
@@ -208,7 +197,6 @@ This is a permanent error; I've given up. Sorry it didn't work out.
 
 ezmlm-reject: fatal: List address must be in To: or Cc: (#5.7.0)
 ```
-
 
 ### Erweiterte Anpassung
 
@@ -221,39 +209,38 @@ Sie können die meisten Texte in Ihrer Mailingliste anpassen. Als Moderator müs
 
 Sie erhalten dann eine E-Mail, die Sie anleitet wie Sie Ihre Änderungen vornehmen können.
 
-Unten finden Sie eine Liste der Dateien mit den Antworttexten und eine kurze Beschreibung der Verwendung ihres Inhalts. Um eine Datei zu bearbeiten, senden Sie einfach eine Nachricht an send-edit.file und ersetzen Sie den Dateinamen durch 'file'. Die Bearbeitungsanleitung wird mit der Textdatei gesendet.
-
+Unten finden Sie eine Liste der Dateien mit den Antworttexten und eine kurze Beschreibung der Verwendung ihres Inhalts. Um eine Datei zu bearbeiten, senden Sie einfach eine Nachricht an `Name_Ihrer_ML-edit.file@mydomain.ovh` und ersetzen dabei "file" entsprechen. Die Bearbeitungsanleitung wird mit der Textdatei gesendet.
 
 |Datei|Verwendung|
 |---|---|
 |bottom|Fußzeile aller Antworten: allgemeine Informationen.|
-|digest|'administrativer' Abschnitt der regelmäßigen Rundschreiben.|
+|digest|Administrativer Abschnitt der regelmäßigen Mails.|
 |FAQ|Antworten auf häufig gestellte Fragen zu dieser Liste.|
-|get_bad|im Fall von Nachrichten, die nicht im Archiv vorhanden sind.|
-|help|allgemeine Hilfe (zwischen 'top' und 'bottom').|
+|get_bad|Im Fall von Nachrichten, die nicht im Archiv vorhanden sind.|
+|help|Allgemeine Hilfe (zwischen 'top' und 'bottom').|
 |info|Informationen auf der Liste. Die erste Zeile ist eine Zusammenfassung.|
-|mod_help|spezifische Hilfe für Listenmoderatoren.|
-|mod_reject|an den Absender abgelehnter Sendungen.|
-|mod_request|an Moderatoren mit einer Sendung.|
-|mod_sub|an den Abonnenten nach Bestätigung der Registrierung durch den Moderator.|
-|mod_sub_confirm|an Moderatoren zur Validierung einer Registrierung.|
-|mod_timeout|an den Absender einer Nachricht, der seit langem nicht gültig war.|
-|mod_unsub_confirm|an einen Administrator zum Anfordern einer Abmeldung.|
-|sub_bad|an den Abonnenten, wenn die Bestätigung falsch war.|
-|sub_confirm|an den Abonnenten zum Bestätigen seiner Anfrage.|
-|sub_nop|an den Abonnenten nach einem neuen Abonnement.|
-|sub_ok|an den Abonnenten nach einem erfolgreichen Abonnement.|
-|Top|in der Überschrift jeder Antwort.|
-|trailer|am Ende jedes Beitrags zur Liste hinzugefügt.|
-|unsub_bad|an den Abonnenten, wenn die Abmeldebestätigung falsch ist.|
-|unsub_confirm|an den Abonnenten, um eine Abmeldebestätigung anzufordern.|
-|unsub_nop|an einen Nicht-Abonnenten nach einer Abmeldeanforderung.|
-|unsub_ok|an einen ehemaligen Abonnenten nach erfolgreicher Abmeldung.|
+|mod_help|Spezifische Hilfe für Listenmoderatoren.|
+|mod_reject|An den Absender abgelehnter Sendungen.|
+|mod_request|An Moderatoren mit einer Sendung.|
+|mod_sub|An den Abonnenten nach Bestätigung der Registrierung durch den Moderator.|
+|mod_sub_confirm|An Moderatoren zur Validierung einer Registrierung.|
+|mod_timeout|An den Absender einer Nachricht, der seit langem nicht gültig war.|
+|mod_unsub_confirm|An einen Administrator zum Anfordern einer Abmeldung.|
+|sub_bad|An den Abonnenten, wenn die Bestätigung falsch war.|
+|sub_confirm|An den Abonnenten zum Bestätigen seiner Anfrage.|
+|sub_nop|An den Abonnenten nach einem neuen Abonnement.|
+|sub_ok|An den Abonnenten nach einem erfolgreichen Abonnement.|
+|Top|In der Überschrift jeder Antwort.|
+|trailer|Am Ende jedes Beitrags zur Liste hinzugefügt.|
+|unsub_bad|An den Abonnenten, wenn die Abmeldebestätigung falsch ist.|
+|unsub_confirm|An den Abonnenten, um eine Abmeldebestätigung anzufordern.|
+|unsub_nop|An einen Nicht-Abonnenten nach einer Abmeldeanforderung.|
+|unsub_ok|An einen ehemaligen Abonnenten nach erfolgreicher Abmeldung.|
 
 > [!primary]
 >
 > Beispiel: Wenn Sie die Standardfußzeile für E-Mails ändern möchten, die an Ihre Mailingliste gesendet werden, müssen Sie eine Nachricht an die Adresse `Name_Ihrer_ML-edit.bottom@mydomain.ovh` senden. Sie erhalten dann eine neue E-Mail, in der erläutert wird, wie Sie die Fußzeile anpassen.
-> 
+>
 
 ## Weiterführende Informationen
 

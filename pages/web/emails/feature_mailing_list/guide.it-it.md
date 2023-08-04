@@ -1,10 +1,8 @@
 ---
 title: 'Gestire e utilizzare una mailing list'
 excerpt: 'Come gestire e utilizzare una mailing list'
-updated: 2020-03-19
+updated: 2023-08-01
 ---
-
-**Ultimo aggiornamento: 02/07/2020**
 
 ## Obiettivo
 
@@ -69,7 +67,6 @@ Completa la tabella inserendo le seguenti informazioni:
 | Chiunque può inviare messaggi (nessuna moderazione) | L’invio di un’email alla mailing list avviene direttamente senza conferma             		|
 | Moderazione degli iscritti         	| Il proprietario (o un moderatore) deve approvare le iscrizioni alla mailing list                                    	|
 
-
 ![Email](images/manage_mailing-lists_03.png){.thumbnail}
 
 
@@ -81,13 +78,11 @@ Completa la tabella inserendo le seguenti informazioni:
 > - 250 iscritti per le mailing list non moderate
 >
 
-
 ### Gestire le opzioni della mailing list
 
-Per modificare le opzioni della mailing list, clicca sui tre puntini `...`{.action}a destra della tua mailing list. È possibile aggiornare le opzioni, eliminare la mailing list oppure condividere la lista degli iscritti via email. 
+Per modificare le opzioni della mailing list, clicca sui tre puntini `...`{.action}a destra della tua mailing list. È possibile aggiornare le opzioni, eliminare la mailing list oppure condividere la lista degli iscritti via email.
 
 ![Email](images/manage_mailing-lists_04.png){.thumbnail}
-
 
 ### Gestisci i tuoi iscritti
 
@@ -114,7 +109,7 @@ Per aggiungere/eliminare iscritti alla mailing list, puoi:
 #### Esporta la tua lista di contatti verso un file CSV
 
 Per generare un file CSV con tutti i tuoi contatti, clicca su `Esporta i contatti in CSV`{.action}. Nel nostro esempio questa opzione non è disponibile perché non sono stati aggiunti contatti.
- 
+
 ### Gestisci i moderatori
 
 Per gestire i moderatori della tua mailing list, clicca sull’icona a forma di silhouette umana nella sezione “Moderatori”.
@@ -140,30 +135,29 @@ Per aggiungere/eliminare moderatori, puoi:
 > [!primary]
 > - Quando su una mailing list vengono definiti più moderatori, la convalida di un solo moderatore è sufficiente perché l’email sia diffusa agli iscritti.
 > - Quando un moderatore invia una email alla mailing list, soltanto lui riceve l’email di moderazione.
-> 
+>
 
 L’operazione può richiedere più o meno tempo, in base al numero di contatti da aggiungere.
 
-
 ### Iscriversi a una mailing list
 
-Per iscriversi alla tua mailing list, è sufficiente inviare una email a: 
-
+Per iscriversi alla tua mailing list, è sufficiente inviare una email a:
 
 ```bash
 nome_tua_ML-subscribe@tuodominio.com
 ```
 
-
 ### Disiscriversi dalla tua mailing list
 
 Per disiscriversi dalla tua mailing list, è sufficiente inviare un email all’indirizzo:
-
 
 ```bash
 nome_tua_ML-unsubscribe@votredomaine.com
 ```
 
+> [!primary]
+>
+> La disiscrizione a una mailing list non necessita di conferma, che la mailing list sia moderata o meno.
 
 ### Elimina automaticamente gli indirizzi non validi
 
@@ -171,15 +165,13 @@ Il sistema di mailing list non cancella un contatto dopo un solo messaggio di er
 
 con i dettagli del messaggio non ricevuto. Se anche questo invio fallisce, il nostro sistema di mailing list attende altri 12 giorni e poi invia un messaggio di test. Se anche questo invio restituisce un messaggio di errore, il contatto viene cancellato dalla lista degli iscritti.
 
-
 ### Errori ricorrenti
 
-#### Invio di un messaggio senza Oggetto 
+#### Invio di un messaggio senza Oggetto
 
 Un messaggio inviato a una mailing list deve contenere necessariamente un oggetto. In caso contrario, viene generato automaticamente un errore 
 
 e il mittente riceverà questo messaggio:
-
 
 ```bash
 Hi. This is the qmail-send program at mx1.ovh.net.
@@ -191,7 +183,6 @@ This is a permanent error; I've given up. Sorry it didn't work out.
 ezmlm-reject: fatal: Sorry, I don't accept message with empty Subject (#5.7.0)
 ```
 
-
 #### Invio di un messaggio con l’indirizzo della mailing list in copia nascosta
 
 Per inviare un messaggio a una mailing list, l’indirizzo deve necessariamente essere inserito nel campo “A” o “Cc”.
@@ -199,7 +190,6 @@ Per inviare un messaggio a una mailing list, l’indirizzo deve necessariamente 
 Se l’utente inserisce l’indirizzo in “Ccn”,
 
 riceverà questo messaggio di errore:
-
 
 ```bash
 Hi. This is the qmail-send program at mx1.ovh.net.
@@ -210,7 +200,6 @@ This is a permanent error; I've given up. Sorry it didn't work out.
 
 ezmlm-reject: fatal: List address must be in To: or Cc: (#5.7.0)
 ```
-
 
 ### Personalizzazione avanzata
 
@@ -224,7 +213,6 @@ In quanto moderatore, puoi personalizzare la maggior parte dei testi della tua m
 Riceverai una email con le informazioni necessarie per effettuare le tue modifiche.
 
 Qui di seguito trovi una lista dei file che contengono i testi delle risposte e una breve descrizione dell’utilizzo del loro contenuto. Per modificare un file, invia semplicemente un messaggio a invio-edit.file (inserisci il nome del file al posto di ‘file’). Riceverai un file di testo con le informazioni relative alla modifica.
-
 
 |File|Utilizzo|
 |---|---|
@@ -255,7 +243,7 @@ Qui di seguito trovi una lista dei file che contengono i testi delle risposte e 
 > [!primary]
 >
 > Esempio: per modificare la firma predefinita delle email inviate alla tua mailing list, invia un messaggio all’indirizzo `nome_tua_ML-edit.bottom@mydomain.ovh`. Riceverai una nuova email con le informazioni necessarie per la personalizzazione della tua firma.
-> 
+>
 
 ## Per saperne di più
 
