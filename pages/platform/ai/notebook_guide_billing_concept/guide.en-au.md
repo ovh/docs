@@ -12,7 +12,7 @@ The OVHcloud AI Notebooks service provides you with Jupyter or VSCode notebooks,
 
 ## Introduction
 
-AI Notebooks are linked to a Public Cloud project. The whole project is billed at the end of the month, with pay-as-you-go. It means you will only pay for what you consume, based on the compute resources you use (CPus and GPUs) and their running time.
+AI Notebooks are linked to a Public Cloud project. The whole project is billed at the end of the month, with pay-as-you-go. It means you will only pay for what you consume, based on the compute resources you use (CPUs and GPUs) and their running time.
 
 ## AI Notebooks lifecycle
 
@@ -59,7 +59,7 @@ A more detailed view:
 ### Compute resources details
 
 During the notebook creation, you can select **compute resources**, known as CPUs or GPUs.
-Their official pricing is available in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au) or on the[OVHcloud Public Cloud website](https://www.ovhcloud.com/en-au/public-cloud/prices/).
+Their official pricing is available in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au) or on the [OVHcloud Public Cloud website](https://www.ovhcloud.com/en-au/public-cloud/prices/).
 
 Rates for compute are mentioned per hour to facilitate reading of the prices, but the billing granularity remains **per minute**.
 
