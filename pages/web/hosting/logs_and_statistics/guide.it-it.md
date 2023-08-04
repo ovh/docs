@@ -1,7 +1,7 @@
 ---
 title: 'Hosting condiviso: consulta le statistiche e i log del tuo sito'
 excerpt: Accedi alle statistiche del tuo sito
-updated: 2023-08-01
+updated: 2023-08-04
 ---
 
 > [!primary]

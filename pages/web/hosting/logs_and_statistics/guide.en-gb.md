@@ -1,7 +1,7 @@
 ---
 title: 'Accessing a website’s logs and statistics on a Web Hosting'
 excerpt: Find out how to review statistics and logs of your websites
-updated: 2023-08-01
+updated: 2023-08-04
 ---
 
 ## Objective
