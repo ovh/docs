@@ -73,7 +73,7 @@ Dans le tableau, pour retrouver la ligne correspondante au SPF OVHcloud, un filt
 
 > [!primary]
 >
-> Un SPF se compose toujours de la forme suivante : "v=spf1 `sources` `qualifieur`". Par exemple, le SPF OVHcloud est : "v=spf1 include:mx.ovh.ca ~all".
+> Un SPF se compose toujours de la forme suivante : "v=spf1 `sources` `qualifieur`". Par exemple, le SPF OVHcloud est : "v=spf1 include:mx.ovh.ca ~all".
 >
 
 ![domain](images/spf_records_check_OVH_configuration.png){.thumbnail}
