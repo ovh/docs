@@ -1598,6 +1598,7 @@
             + [Enterprise File Storage - Concepts](cloud/storage/file_storage/netapp_concepts)
             + [Enterprise File Storage - Performance Concepts](cloud/storage/file_storage/netapp_concepts_performances)
             + [Managing Enterprise File Storage from the OVHcloud Control Panel](cloud/storage/file_storage/netapp_control_panel)
+            + [Enterprise File Storage - Manage your snapshot policies](cloud/storage/file_storage/snapshot-policies)
             + [Enterprise File Storage - API Quickstart](cloud/storage/file_storage/netapp_quick_start)
             + [Enterprise File Storage - Managing volumes](cloud/storage/file_storage/netapp_volumes)
             + [Enterprise File Storage - Managing volume ACLs](cloud/storage/file_storage/netapp_volume_acl)
