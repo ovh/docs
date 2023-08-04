@@ -210,6 +210,15 @@ mydomain.ovh IN TXT "v=spf1 ip4:11.22.333.444 ip6:5555:66a7:88:b999::1000:2233 i
 > Nella scheda `Informazioni generali`{.action}, fare clic su `A` e `AAAA` nella sezione `Diagnostica server`. Nella finestra visualizzata, leggere il valore.
 >
 > ![dominio](images/spf_records_ip.png){.thumbnail}
+>
+> Se le caselle `A` e `AAAA` sono verdi, cliccandoci sopra non vedrai gli indirizzi IP. recuperali dalla zona DNS del dominio associato alla piattaforma Private Exchange. Per farlo, recupera il link della Webmail dalla scheda `Informazioni generali`{.action}, nel riquadro `Connessione`.
+>
+> ![domain](images/spf_records_ip2.png){.thumbnail}
+>
+> Accedi alla sezione `Domini`{.action}, seleziona il dominio associato alla piattaforma Private Exchange e clicca sulla scheda `Zona DNS`{.action}. Recupera gli indirizzi IPv4 (record `A`) e IPv6 (record `AAAA`) corrispondenti all’URL della webmail.
+>
+> ![domain](images/spf_records_ip3.png){.thumbnail}
+>
 
 ## Per saperne di più
 
