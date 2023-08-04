@@ -35,6 +35,11 @@ Let's assume that a file named `my-dataset.zip` exists locally on your computer 
 
 ### 1- Select your solution
 
+> [!warning]
+>
+> If you choose an S3 solution, please note that they are not yet compatible with our AI products from the Control Panel. **To use S3 buckets, you will need to use [ovhai](/pages/platform/ai/cli_10_howto_install_cli)**. The Control Panel allows you to use Swift containers only.
+>
+
 If you want to know more about the different storage solutions, refer to this [page](/products/storage-backup).
 
 ![image](images/ui-container-solution.png){.thumbnail}
@@ -107,6 +112,11 @@ You can choose between *2 datacenters* for the storage of your notebook: `GRA` o
 ### Attach container or a Git repository
 
 You can attach your different types of data to your notebook.
+
+> [!warning]
+>
+> As mentioned before, S3 buckets are not yet compatible with our AI products from the Control Panel. To use S3 solutions, you will need to use [ovhai](/pages/platform/ai/cli_10_howto_install_cli)**.
+>
 
 #### Access with Read-Only permissions
 
