@@ -50,7 +50,7 @@ Klicken Sie im Bereich `Verwaltung der Nutzer` auf den Button `Einen neuen Nutze
 > Klicken Sie im Bereich `Statistiken und Logs`{.action} auf `Die Statistiken anzeigen`{.action}.<br>
 > Rufen Sie im Tab Ihres Browsers, in dem das Statistikfenster angezeigt wird, den Link auf, über den Sie sich mit einem der erstellten Benutzer verbinden können.
 >
->![hosting](images/OWStatslink.png){.thumbnail}
+> ![hosting](images/OWStatslink.png){.thumbnail}
 >
 
 > [!warning] 

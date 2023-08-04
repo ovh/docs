@@ -50,7 +50,7 @@ Clique no botão `Criar um novo utilizador`{.action} na secção `Administraçã
 > Na secção `Estatísticas e logs`{.action}, clique em `Ver estatísticas`{.action}.<br>
 > No separador do browser que apresenta a janela de estatísticas, obtenha o link que servirá para se ligar a um dos utilizadores criados.
 >
->![hosting](images/OWStatslink.png){.thumbnail}
+> ![hosting](images/OWStatslink.png){.thumbnail}
 >
 
 > [!warning] 

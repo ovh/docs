@@ -46,7 +46,7 @@ Click the `Create a new user`{.action} button in the `User Administration` secti
 > In the `Statistics and logs`{.action} section, click `View statistics`{.action}.<br>
 > From the tab of your browser that displays the statistics window, retrieve the link that will be used to log in with one of the users you have created.
 >
->![hosting](images/OWStatslink.png){.thumbnail}
+> ![hosting](images/OWStatslink.png){.thumbnail}
 >
 
 > [!warning] 
