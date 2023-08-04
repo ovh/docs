@@ -1,43 +1,88 @@
 ---
 title: '¿Qué hacer con una cuenta bloqueada debido a correo no deseado?'
 excerpt: 'Cómo proceder cuando su dirección ha sido bloqueada debido a correo no deseado'
-updated: 2020-04-20
+updated: 2023-06-07
 ---
-
-**Última actualización: 16/03/2020**
 
 ## Objetivo
 
-Si recibe un mensaje de correo electrónico indicándole que una de sus direcciones de correo está bloqueada debido a correo no deseado, deberá ejecutar las siguientes acciones.
+Cuando su dirección de correo electrónico está bloqueada por SPAM, significa que se ha detectado actividad sospechosa en el envío de mensajes de correo electrónico desde esta dirección. En este caso, ya no podrá enviar mensajes desde esta dirección de correo electrónico. A continuación, debe comprender por qué se ha detectado una actividad sospechosa y tomar medidas para evitar que vuelva a ocurrir.
 
 **Cómo proceder cuando su dirección ha sido bloqueada debido a correo no deseado**
 
 ## Requisitos
 
 - Tener un [plan de correo en OVHcloud](https://www.ovhcloud.com/es/emails/){.external}.
-- Haber iniciado sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) y accedido a la sección `Web`{.action}.
+- Haber iniciado sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) y accedido a la sección `Web Cloud`{.action}.
 
-## Procedimiento
+## Procedimiento <a name="instructions"></a>
 
-### Paso 1: comprobar el estado de la dirección de correo electrónico y acceder al tique de asistencia asociado
+Antes de continuar, y si el bloqueo afecta a una dirección de correo electrónico de tipo MXplan, identifique la versión que tiene para consultar el progreso del proceso de desbloqueo. Compruebe cómo distinguir las dos versiones utilizando la siguiente tabla.
 
-#### Para una dirección de correo electrónico de Exchange
+|Versión histórica de la solución MX Plan|Nueva versión de la solución MX Plan|
+|---|---|
+|![email](images/mxplan-starter-legacy-step1.png){.thumbnail}< br> Consulte la oferta en el cuadro "Suscripción"|![email](images/mxplan-starter-new-step1.png){.thumbnail}< br>Consulte la referencia del servidor en el recuadro "Resumen"|
 
-Inicie sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) y acceda a la sección «Web». Haga clic en `Microsoft`{.action}, luego en `Exchange`{.action} y, por último, seleccione la plataforma Exchange correspondiente.
+### Etapa 1: ¿por qué su dirección de correo electrónico está bloqueada por spam? <a name="step1"></a>
 
-Acceda a la pestaña `Cuentas de correo electrónico`{.action} de su plataforma. Si la columna «Estado» de la dirección de correo electrónico correspondiente indica «bloqueado», haga clic en `...`{.action} a la derecha de la cuenta y, seguidamente, en `Desbloquear`{.action}. Seguidamente, continúe con el [paso 2](./#paso-2-acceder-al-tique-de-asistencia_1){.external} de la guía.
+Cuando se detecta una actividad sospechosa en el envío de los mensajes de correo, la dirección en cuestión se bloquea automáticamente. En ese caso, no podrá enviar mensajes de correo desde esta dirección de correo.
 
-![spam](images/blocked-for-SPAM-01-01.png){.thumbnail}
+En primer lugar, asegúrese de que los usuarios de la dirección de correo electrónico bloqueada no son los causantes directamente del bloqueo, debido a un uso inusual de la dirección de correo electrónico (por ejemplo, tras el envío masivo de mensajes de correo). En ese caso, debe corregir la situación antes de desbloquear la dirección.
 
-#### Para una dirección de correo electrónico MX plan
+Si la actividad sospechosa detectada por el antispam no ha sido iniciada por el usuario legítimo o los usuarios de la dirección de correo electrónico, tome las siguientes medidas necesarias y detalladas:
 
-Inicie sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) y acceda a la sección «Web». Haga clic en `Correos electrónicos`{.action} y seleccione el nombre de dominio correspondiente.
+- Realice un análisis antivirus de cada uno de los equipos que utilicen la dirección de correo electrónico bloqueada para spam y aplique un parche si estos están infectados.
 
-Acceda a la pestaña `Cuentas de correo electrónico`{.action} de su plataforma. Si la columna «Estado» —a la derecha de la dirección de correo electrónico correspondiente— indica «Correo no deseado», haga clic en esa opción y, seguidamente, en `Responder al tique`{.action}. Seguidamente, continúe con el [paso 2](./#paso-2-acceder-al-tique-de-asistencia_1){.external} de la guía.
+- Compruebe todos los programas que utilicen las claves de la dirección de correo electrónico bloqueada para spam (p. ej.: copiadora, software de gestión empresarial y de mensajería).
 
-![spam](images/blocked-for-SPAM-01-03.png){.thumbnail}
+### Etapa 2: comprobar el estado de la dirección de correo electrónico y acceder al tique de asistencia asociado <a name="step2"></a>
 
-### Paso 2: acceder al tique de asistencia
+Seleccione el servicio de correo en las siguientes pestañas:
+
+> [!tabs]
+> **Exchange**
+>>
+>> Inicie sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) y acceda a la sección `Web Cloud`{.action}. Haga clic en `Microsoft`{.action}, luego en `Exchange`{.action} y, por último, seleccione la plataforma Exchange correspondiente.
+>>
+>> Acceda a la pestaña `Cuentas de correo electrónico`{.action} de su plataforma. Si la columna «Estado» de la dirección de correo electrónico correspondiente indica «bloqueado», haga clic en `...`{.action} a la derecha de la cuenta y, seguidamente, en `Desbloquear`{.action}. El desbloqueo de la dirección de correo electrónico no se realiza automáticamente. Es necesario contactar con el soporte en el tíquet de asistencia respondiendo a las 3 preguntas formuladas.
+>> Continúe con el [paso 3](#step3) de la guía.
+>>
+>> ![spam](images/blocked-for-SPAM-01-01.png){.thumbnail}
+>> 
+> **Email Pro**
+>>
+>> Inicie sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) y acceda a la sección `Webcloud`{.action}. Haga clic en `Email Pro`{.action} y, seguidamente, seleccione la plataforma Email Pro correspondiente.
+>>
+>> Acceda a la pestaña `Cuentas de correo electrónico`{.action} de su plataforma. Si la columna «Estado» a la derecha de la dirección de correo electrónico correspondiente indica «Correo no deseado», haga clic en esa opción y, seguidamente, en `Responder al tique`{.action}. El desbloqueo de la dirección de correo electrónico no se realiza automáticamente. Es necesario contactar con el soporte en el tíquet de asistencia respondiendo a las 3 preguntas formuladas.
+>> Pasar al [paso 3](#step3) de la guía.
+>>
+>> ![spam](images/blocked-for-SPAM-01-02.png){.thumbnail}
+>>
+>  **MX plan - nueva versión**
+>>
+>> Inicie sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) y acceda a la sección `Web Cloud`{.action}. Haga clic en `Correos electrónicos`{.action} y seleccione el nombre de dominio correspondiente.
+>>
+>> Acceda a la pestaña `Cuentas de correo electrónico`{.action} de su plataforma. Si la columna «Estado» —a la derecha de la dirección de correo electrónico correspondiente— indica «Correo no deseado», haga clic en esa opción y, seguidamente, en `Responder al tiquet`{.action}. El desbloqueo de la dirección de correo electrónico no se realiza automáticamente. Es necesario contactar con el soporte en el tíquet de asistencia respondiendo a las 3 preguntas formuladas.
+>> Continúe con el [paso 3](#step3) de la guía.
+>>
+>> ![spam](images/blocked-for-SPAM-01-03.png){.thumbnail}
+>>
+>  **MX plan - histórico**
+>>
+>> Si el bloqueo afecta a una dirección de correo electrónico [MXplan versión histórica](#instructions), no hay tíquet de soporte. Por favor, consulte la [etapa 1](#step1) de esta guía antes de seguir las instrucciones siguientes.
+>>
+>> Conéctese a su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) y acceda al apartado `Web Cloud`{.action}. Haga clic en `Correo electrónico`{.action} y seleccione el dominio correspondiente.
+>>
+>> Acceda a la pestaña `Emails`{.action} de su plataforma. Si la columna "Bloqueado por spam" indica "Sí", haga clic en esta opción y, seguidamente, en `Cambiar la contraseña`{.action}. Su dirección de correo electrónico se ha desbloqueado. No necesita seguir el [paso 3](#step3).
+>>
+>>![spam](images/blocked-for-SPAM-01-04.pn){.thumbnail}
+>>
+>> > [!warning]
+>> >
+>> > En algunos casos, la columna "Bloqueado por spam" puede indicar "No", a pesar de que la dirección de correo electrónico esté bloqueada. Si ha tomado las medidas necesarias para proteger la dirección de correo, la solución es la misma que la anterior.
+
+
+### Paso 3: acceder al tique de asistencia <a name="step3"></a>
 
 Una vez completado el paso 1, se le redirigirá a la ventana «Mis solicitudes de asistencia». Haga clic en `...`{.action} —a la derecha del tique con el asunto «Cuenta bloqueada debido a correo no deseado»— y, seguidamente, en `Ver toda la información`{.action}. 
 
@@ -73,29 +118,10 @@ A continuación de este mensaje, se le ha enviado una muestra de los encabezados
 
 Estos encabezados permiten determinar el rastro de la ruta y el origen de los mensajes de correo electrónico enviados.
 
-### Paso 3: responder las siguientes tres preguntas
+## Más información <a name="go-further"></a>
+  
+Para servicios especializados (posicionamiento web, desarrollo...), póngase en contacto con los [partners de OVHcloud](https://partner.ovhcloud.com/es/directory/).
 
-> [!warning]
->
-> El desbloqueo de la dirección de correo electrónico no se realiza automáticamente. Debe ponerse en contacto con el equipo de asistencia que se indica en el tique, respondiendo las tres preguntas planteadas.
+Si desea ayuda para el uso y la configuración de sus soluciones de OVHcloud, consulte nuestras distintas [ofertas de soporte](https://www.ovhcloud.com/es/support-levels/).
 
-- ** ¿Es usted el emisor del mensaje de correo electrónico en cuestión?** Con la ayuda de los encabezados provistos, verifique el remitente, el destinatario y el asunto del mensaje para comprobar si se trata de uno de sus mensajes.
-
-- ** ¿Dispone de una regla de redirección a otra dirección de correo electrónico?** Verifique las reglas de la bandeja de entrada de su dirección de correo electrónico para asegurarse de que no se hayan redirigido mensajes de correo electrónico no deseados a otra dirección.
-
-- ** ¿Ha respondido a algún correo no deseado?**El simple hecho de haber respondido a un correo no deseado no solo contribuye a dañar la reputación de los servidores de envío de mensajes de correo electrónico, sino también de su dominio.
-
-
-### Paso 4: medidas que se deben instrumentar en caso de un acceso fraudulento a su dirección de correo electrónico
-
-Si los envíos mencionados en los encabezados no han sido iniciados por el usuario legítimo (o usuarios legítimos) de la dirección de correo electrónico, le recomendamos tomar las siguientes medidas:
-
-- Ejecutar un análisis antivirus de cada uno de los equipos que utilizan la dirección de correo electrónico bloqueada debido a correo no deseado y realizar las correcciones necesarias si estos estuvieran infectados.
-
-- Comprobar todos los programas que utilizan el usuario y la contraseña de la dirección de correo electrónico bloqueada debido a correo no deseado (por ejemplo, fax, programa de aplicación y programa de mensajería).
-
-- Cambiar la contraseña de la dirección de correo electrónico después de haber ejecutado el análisis antivirus, asegurándose de que sea lo suficientemente segura.
-
-## Más información
-
-Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com>.
