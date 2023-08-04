@@ -45,7 +45,7 @@ Avant de commencer, consultez le guide suivant :
 
 - [Préparer l’environnement pour utiliser l’API OpenStack](/pages/platform/public-cloud/prepare_the_environment_for_using_openstack/).
 
-En premier, listez le type de volumes disponibles dans votre région avec la commande suivante :
+Tout d'abord, listez les types de volumes disponibles dans votre région avec la commande suivante :
 
 ```bash
 #~$ openstack image list
