@@ -104,9 +104,9 @@ A preview of this notebook can be found on GitHub [here](https://github.com/ovh/
 
 There are many other tasks that exist in the computer vision field. Check our other tutorials to learn how to:
 
-- [Use Transfer Learning with ResNet50 for image classification](https://github.com/ovh/ai-training-examples/blob/main/notebooks/computer-vision/image-classification/tensorflow/resnet50/notebook-resnet-transfer-learning-image-classification.ipynb)
+- [Use Transfer Learning with ResNet50 for image classification](/pages/platform/ai/notebook_tuto_07_transfer_learning_resnet50_image_classification)
 
-- [Train YOLOv7 for American Sign Language recognition](https://github.com/ovh/ai-training-examples/blob/main/notebooks/computer-vision/object-detection/miniconda/yolov7/notebook_object_detection_yolov7_asl.ipynb)
+- [Train YOLOv7 for American Sign Language recognition](/pages/platform/ai/notebook_tuto_11_yolov7)
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/fr/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 

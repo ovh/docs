@@ -828,6 +828,7 @@
                 + [AI Notebooks - Tutorial - Train YOLOv7 for sign language recognition](platform/ai/notebook_tuto_11_yolov7)
                 + [AI Notebooks - Tutorial - Brain tumor segmentation using U-Net](platform/ai/notebook_tuto_12_image-segmentation-unet-tumors)
                 + [AI Notebooks - Tutorial - Fine-tuning LLaMA 2](platform/ai/notebook_tuto_13_fine_tune_llama_v2)
+                + [AI Notebooks - Tutorial - Create and train an image generation model](platform/ai/notebook_tuto_14_image_generation_dcgan)
         + [AI Training](public-cloud-ai-and-machine-learning-ai-training)
             + [Guides](public-cloud-ai-and-machine-learning-ai-training-guides)
                 + [AI Training - Features, Capabilities and Limitations](platform/ai/training_guide_01_capabilities)
