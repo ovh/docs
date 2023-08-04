@@ -1,10 +1,8 @@
 ---
 title: AI Notebooks - Tutorial - Create and train an image generation model
-excerpt: Getting Started with Generative Adversarial Networks (GANs) to generate synthetic images
-updated: 2023-08-03
+excerpt: Get started with Generative Adversarial Networks (GANs) to generate synthetic images
+updated: 2023-08-04
 ---
-
-**Last updated 08th August, 2023.**
 
 ## Objective
 
@@ -16,7 +14,7 @@ The purpose of this tutorial is to show you how it is possible to build and trai
 
 At the end of this tutorial, you will have learnt the concepts of generative models, model evaluation, and how to generate your own images by training a DCGAN on your dataset.
 
-![image](images/dcgan_training_animation.gif){.thumbnail}
+![DCGAN training animation](images/dcgan_training_animation.gif){.thumbnail}
 
 > [!primary]
 >
