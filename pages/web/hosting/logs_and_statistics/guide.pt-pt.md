@@ -1,14 +1,12 @@
 ---
 title: 'Partilhado: Consultar as estatísticas e os logs do meu site'
 excerpt: Acesso às estatísticas do seu site
-updated: 2021-01-05
+updated: 2023-08-01
 ---
 
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
-
-**Última atualização: 05/01/2021**
 
 ## Objetivo
 
