@@ -62,7 +62,7 @@ En premier, listez le type de volumes disponibles dans votre région avec la com
 > Veuillez noter que si le type de volume « high-speed-gen2 » n'apparaît pas dans la liste, cela signifie qu'il n'est pas disponible dans cette région.
 >
 
-Ensuite, changez le type de volume avec la commande suivante :
+Modifiez ensuite le type de volume avec la commande suivante :
 
 ```bash
 $ openstack volume set --type high-speed-gen2 --retype-policy on-demand VOLUME_NAME_OR_ID
