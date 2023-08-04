@@ -1,6 +1,6 @@
 ---
 title: Enterprise File Storage - Manage your snapshot policies
-slug: snapshot-policies
+slug: cloud/storage/file_storage/snapshot-policies
 excerpt: Snapshot policies management tutorial for Enterprise File Storage
 section: Enterprise File Storage
 order: 04
