@@ -1,6 +1,6 @@
 ---
-title: So erstellen Sie eine IAM-Richtlinie, die es einem Benutzer ermöglicht, sich im OVHcloud Kundencenter anzumelden (EN)
-excerpt: "Find out how to grant the minimum rights required to log to the OVHcloud Control Panel"
+title: IAM-Richtlinien erstellen, um Benutzern das Anmelden im OVHcloud Kundencenter zu ermöglichen (EN)
+excerpt: "Find out how to grant the minimum rights required to log in to the OVHcloud Control Panel"
 updated: 2023-07-03
 ---
 
@@ -15,9 +15,9 @@ This guide explains how to provide a user with the minimum rights to allow her/h
 
 ## Requirements
 
-- An [OVHcloud account](/pages/account/customer/ovhcloud-account-creation)
-- Knowing [how to manage account users](/pages/account/customer/ovhcloud-users-management)
-- Knowing [how to set up policies for IAM](/pages/account/customer/iam-policy-ui)
+- You have an [OVHcloud account](/pages/account/customer/ovhcloud-account-creation).
+- You know [how to manage account users](/pages/account/customer/ovhcloud-users-management).
+- You know [how to configure policies for IAM](/pages/account/customer/iam-policy-ui).
 
 ## Instructions
 

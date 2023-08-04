@@ -32,9 +32,9 @@ For example, we can create a policy to give to a user called John, for a VPS, ac
 
 ## Requirements
 
-- An [OVHcloud account](/pages/account/customer/ovhcloud-account-creation)
-- Knowing [how to manage account users](/pages/account/customer/ovhcloud-users-management)
-- One or more OVHcloud products linked to this OVHcloud account (Load Balancer, domain name, VPS, etc.)
+- You have an [OVHcloud account](/pages/account/customer/ovhcloud-account-creation).
+- You know [how to manage account users](/pages/account/customer/ovhcloud-users-management).
+- You have one or more OVHcloud products linked to this OVHcloud account (Load Balancer, domain name, VPS, etc.).
 
 ## Instructions
 
