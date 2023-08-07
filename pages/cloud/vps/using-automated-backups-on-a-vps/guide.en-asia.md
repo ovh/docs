@@ -112,6 +112,10 @@ sudo mount /dev/sdb1 /mnt/restore
 ```
 
 You can now switch to this folder and access your backup data.
+
+Remember to unmount the backup once you have finished using it. Click on the button `Unmount the backup`{.action} in the `Automated backup`{.action} tab, then confirm in the popup window.
+
+![unmount](images/backup_vps_unmount.png){.thumbnail}
                                         
 #### Using Windows
 
@@ -130,6 +134,10 @@ The disk will appear as `Offline`, right-click on the disk and select `Online`{.
 Once done, your mounted backup will be accessible in the `File Explorer`.
 
 ![file explorer](images/windowsbackup4.png){.thumbnail}
+
+Remember to unmount the backup once you have finished using it. Click on the button `Unmount the backup`{.action} in the `Automated backup`{.action} tab, then confirm in the popup window.
+
+![unmount](images/backup_vps_unmount.png){.thumbnail}
                                        
 > [!warning]
 > Please note that a server reboot will occur when the backup is unmounted.
