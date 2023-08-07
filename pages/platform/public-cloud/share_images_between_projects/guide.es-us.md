@@ -1,7 +1,7 @@
 ---
 title: "Compartir imágenes entre proyectos de Public Cloud"
 excerpt: "Cómo compartir imágenes entre proyectos de Public Cloud utilizando OpenStack"
-updated: 2023-07-31
+updated: 2023-08-07
 ---
 
 > [!primary]
@@ -10,7 +10,7 @@ updated: 2023-07-31
 
 ## Objetivo
 
-En ocasiones, es posible que necesite compartir una imagen de [backup de instancia](/pages/platform/public-cloud/save_an_instance) o una [imagen de backup por volumen](/pages/platform/public-cloud/volume-backup) entre varios proyectos de Public Cloud.
+En ocasiones, es posible que necesite compartir una imagen de [backup de instancia](/pages/platform/public-cloud/save_an_instance) o una imagen de [backup por volumen](/pages/platform/public-cloud/volume-backup) entre varios proyectos de Public Cloud.
 
 Con OpenStack, puede compartir una imagen entre varios proyectos, aunque no pertenezcan a la misma cuenta.
 Esta funcionalidad ofrece numerosas posibilidades, pero también conlleva riesgos. Por lo tanto, es importante entender sus principios.
@@ -38,7 +38,7 @@ También necesitará:
 
 > [!primary]
 >
-> Esta guía hace referencia al uso del [cliente de línea de comandos OpenStack](https://docs.openstack.org/python-openstackclient/latest/){.external}.
+> Esta guía hace referencia al uso del [OpenStack Client](https://docs.openstack.org/python-openstackclient/latest/){.external}.
 >
 
 ## Procedimiento
@@ -54,7 +54,7 @@ $ openstack image list --private
 
 > [!warning]
 > 
-> Para poder compartir una imagen, primero debe estar en «visibilidad compartida» (*shared visibility*).
+> Para poder compartir una imagen, primero debe estar en visibilidad compartida (*shared visibility*).
 >
 
 ```bash
@@ -63,7 +63,7 @@ $ openstack image set --shared <Image_UUID>
 
 ### Agregar un proyecto a una imagen
 
-El siguiente paso consiste en agregar el UUID de otro proyecto como miembro de la imagen. En nuestro ejemplo a continuación, añadimos el UUID del «Proyecto B».
+El siguiente paso consiste en agregar el UUID de otro proyecto como miembro de la imagen. En nuestro ejemplo a continuación, añadimos el UUID del « Proyecto B ».
 
 ```bash
 $ openstack image add project 9a0fbdc5-1f4a-4a1c-ad46-8d404a1313ba <UUID_Project_B>
@@ -147,7 +147,7 @@ $ openstack image member list 9a0fbdc5-1f4a-4a1c-ad46-8d404a1313ba
 ### Eliminar un miembro de una imagen o dejar de compartir una imagen
 
 ```bash
-$ openstack image remove project <image> <UUID_Project_A_eliminar>
+$ openstack image remove project <image> <UUID_Project_To_Delete>
 ```
 
 ## Más información

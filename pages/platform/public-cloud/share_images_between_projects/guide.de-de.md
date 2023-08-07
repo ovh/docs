@@ -1,7 +1,7 @@
 ---
 title: Image zwischen Public Cloud Projekten teilen
 excerpt: Erfahren Sie hier, wie Sie ein Image mit OpenStack zwischen Public Cloud Projekten teilen können
-updated: 2023-07-31
+updated: 2023-08-07
 ---
 
 > [!primary]

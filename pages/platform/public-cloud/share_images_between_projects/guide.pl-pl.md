@@ -1,7 +1,7 @@
 ---
-title: 'Współdzielenie obrazów między projektami Public Cloud'
-excerpt: 'Dowiedz się, jak współdzielić obrazy między projektami Public Cloud za pomocą OpenStack'
-updated: 2023-07-31
+title: "Współdzielenie obrazów między projektami Public Cloud"
+excerpt: "Dowiedz się, jak współdzielić obrazy między projektami Public Cloud za pomocą OpenStack"
+updated: 2023-08-07
 ---
 
 > [!primary]
@@ -54,7 +54,7 @@ $ openstack image list --private
 
 > [!warning]
 > 
-> Aby obraz był udostępniany, najpierw należy ustawić go jako "współdzieloną widoczność" (*shared visibility*).
+> Aby obraz był udostępniany, najpierw należy ustawić go jako współdzieloną widoczność (*shared visibility*).
 >
 
 ```bash
@@ -63,7 +63,7 @@ $ openstack image set --shared <Image_UUID>
 
 ### Dodaj projekt do obrazu
 
-Następnym krokiem jest dodanie identyfikatora UUID innego projektu jako elementu członkowskiego obrazu. W poniższym przykładzie dodajemy UUID dla "Projektu B".
+Następnym krokiem jest dodanie identyfikatora UUID innego projektu jako elementu członkowskiego obrazu. W poniższym przykładzie dodajemy UUID dla « Projektu B ».
 
 ```bash
 $ openstack image add project 9a0fbdc5-1f4a-4a1c-ad46-8d404a1313ba <UUID_Project_B>
@@ -147,7 +147,7 @@ $ openstack image member list 9a0fbdc5-1f4a-4a1c-ad46-8d404a1313ba
 ### Usuń członka z obrazu lub anuluj udostępnianie obrazu
 
 ```bash
-$ openstack image remove project <image> <UUID_Projektu_Do_Usunięcia>
+$ openstack image remove project <image> <UUID_Project_To_Delete>
 ```
 
 ## Sprawdź również

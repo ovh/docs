@@ -1,7 +1,7 @@
 ---
-title: "Partilhar imagens entre projetos Public Cloud"
-excerpt: "Saiba como partilhar imagens entre projetos Public Cloud com a ajuda do OpenStack"
-updated: 2023-07-31
+title: Partilhar imagens entre projetos Public Cloud
+excerpt: Saiba como partilhar imagens entre projetos Public Cloud com a ajuda do OpenStack
+updated: 2023-08-07
 ---
 
 > [!primary]
@@ -38,7 +38,7 @@ Necessitará igualmente de:
 
 > [!primary]
 >
-> Este manual refere-se à utilização de um [cliente de linha de comandos OpenStack](https://docs.openstack.org/python-openstackclient/latest/){.external}.
+> Este manual refere-se à utilização de [OpenStack Client](https://docs.openstack.org/python-openstackclient/latest/){.external}.
 >
 
 ## Instruções
@@ -147,7 +147,7 @@ $ openstack image member list 9a0fbdc5-1f4a-4a1c-ad46-8d404a1313ba
 ### Excluir um membro de uma imagem ou anular a partilha de uma imagem
 
 ```bash
-$ openstack image remove project <image> <UUID_Projeto_A_eliminar>
+$ openstack image remove project <image> <UUID_Project_To_Delete>
 ```
 
 ## Saiba mais

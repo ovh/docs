@@ -1,7 +1,7 @@
 ---
-title: "Condividere immagini tra progetti Public Cloud"
-excerpt: "Scopri come condividere immagini tra progetti Public Cloud con OpenStack"
-updated: 2023-07-31
+title: Condividere immagini tra progetti Public Cloud
+excerpt: Scopri come condividere immagini tra progetti Public Cloud con OpenStack
+updated: 2023-08-07
 ---
 
 > [!primary]
@@ -17,7 +17,7 @@ Questa funzionalità offre numerose possibilità ma comporta anche dei rischi. �
 
 Ad esempio, se si desidera condividere un'immagine di un progetto A con un progetto B (nello stesso account o in un account diverso), vengono applicate le regole seguenti:
 
-- L'immagine rimane fisicamente attaccata al progetto A. Il progetto B dispone solo di un'"autorizzazione di accesso" a questa immagine.
+- L'immagine rimane fisicamente attaccata al progetto A. Il progetto B dispone solo di un'autorizzazione di accesso a questa immagine.
 - Se il Progetto A elimina l'accesso all'immagine (eliminazione dell'ACL, eliminazione dell'immagine, eliminazione del progetto per fatture non pagate, ecc.), le istanze che vengono eseguite da questa immagine sul Progetto B potrebbero non funzionare a causa di problemi di migrazione o di ricostruzione.
 
 È quindi importante tenerlo a mente prima di intraprendere questa configurazione.
@@ -38,7 +38,7 @@ Avrai anche bisogno di:
 
 > [!primary]
 >
-> Questa guida ti mostra come utilizzare il [client della riga di comando OpenStack](https://docs.openstack.org/python-openstackclient/latest/){.external}.
+> Questa guida ti mostra come utilizzare il [OpenStack Cient](https://docs.openstack.org/python-openstackclient/latest/){.external}.
 >
 
 ## Procedura
@@ -54,7 +54,7 @@ $ openstack image list --private
 
 > [!warning]
 > 
-> Per condividere un'immagine, è necessario innanzitutto renderla "visibile in condivisione" (*shared visibility*).
+> Per condividere un'immagine, è necessario innanzitutto renderla visibile in condivisione (*shared visibility*).
 >
 
 ```bash
@@ -63,7 +63,7 @@ $ openstack image set --shared <Image_UUID>
 
 ### Aggiungere un progetto a un'immagine
 
-Lo step successivo consiste nell’aggiungere l’UUID di un altro progetto come membro dell’immagine. Nel nostro esempio qui sotto, aggiungiamo l’UUID del "Progetto B".
+Lo step successivo consiste nell’aggiungere l’UUID di un altro progetto come membro dell’immagine. Nel nostro esempio qui sotto, aggiungiamo l’UUID del « Progetto B ».
 
 ```bash
 $ openstack image add project 9a0fbdc5-1f4a-4a1c-ad46-8d404a1313ba <UUID_Project_B>
@@ -147,11 +147,11 @@ $ openstack image member list 9a0fbdc5-1f4a-4a1c-ad46-8d404a1313ba
 ### Rimuovere un membro da un'immagine o annullare la condivisione di un'immagine
 
 ```bash
-$ openstack image remove project <image> <UUID_Project_A_Elimina>
+$ openstack image remove project <image> <UUID_Project_To_Delete>
 ```
 
 ## Per saperne di più
 
-[Trasferire il backup di un’istanza tra datacenter ](/pages/platform/public-cloud/transfer_instance_backup_from_one_datacentre_to_another).
+[Trasferire il backup di un’istanza tra datacenter](/pages/platform/public-cloud/transfer_instance_backup_from_one_datacentre_to_another).
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/>.
+Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
