@@ -1,7 +1,7 @@
 ---
 title: 'Añadir un registro SPF a la configuración del dominio'
 excerpt: 'Cómo añadir un registro SPF a la configuración de un dominio en OVHcloud'
-updated: 2023-07-25
+updated: 2023-08-04
 ---
 
 ## Objetivo
@@ -72,7 +72,7 @@ Para encontrar la línea correspondiente al SPF de OVHcloud, puede utilizar un f
 
 > [!primary]
 >
-> Un SPF se compone siempre de la forma siguiente : "v=spf1 `orígenes` `calificador`". Por ejemplo, el SPF de OVHcloud es: "v=spf1 include:mx.ovh.ca ~all".
+> Un SPF se compone siempre de la forma siguiente : "v=spf1 `orígenes` `calificador`". Por ejemplo, el SPF de OVHcloud es: "v=spf1 include:mx.ovh.com ~all".
 >
 
 ![Dominio](images/spf_records_check_OVH_configuration.png){.thumbnail}
@@ -109,6 +109,7 @@ Haga clic en el botón `Utilizar el SPF para hosting compartido OVHcloud`{.actio
 > Los cambios tardan entre 4 y 24 horas en propagarse y ser efectivos.
 >
 
+
 #### Añadir un registro SPF <a name="spfrecord"></a>
 
 Ha elegido el registro `SPF.`{.action}
@@ -137,7 +138,7 @@ En lo relativo a la pregunta «**¿Hay otros servidores que envíen correo del d
 |ptr|Introduzca aquí los nombres de hosts cuyo registro *inverso* sea funcional (gracias al registro PTR en la zona DNS). para identificarlos como origen de envío legítimo.|
 |ip4|Indique la IP o rango de IP (IPv4) autorizados a enviar correo con sus direcciones.|
 |ip6|Indique la IP o rango de IP (IPv6) autorizados a enviar correo con sus direcciones.|
-|include|Introduzca aquí los dominios con sus propias reglas SPF. Esto permitirá que estas direcciones sean compatibles con su propio dominio. Por ejemplo, OVHcloud utiliza este método en su configuración SPF:  "v=spf1 include:mx.ovh.ca ~all", lo que permite a OVHcloud gestionar el SPF de mx.ovh.ca y permitir a sus clientes utilizarlo.|
+|include|Introduzca aquí los dominios con sus propias reglas SPF. Esto permitirá que estas direcciones sean compatibles con su propio dominio. Por ejemplo, OVHcloud utiliza este método en su configuración SPF:  "v=spf1 include:mx.ovh.com ~all", lo que permite a OVHcloud gestionar el SPF de mx.ovh.com y permitir a sus clientes utilizarlo.|
 
 Por último, en lo relativo a la pregunta «**¿La información que ha indicado describe todos los hosts que envían correo del dominio?**», dispone de tres opciones:
 
@@ -183,7 +184,7 @@ La configuración SPF de OVHcloud general se aplica a las siguientes soluciones:
 La configuración es la siguiente:
 
 ```bash
-mydomain.ovh IN TXT "v=spf1 include:mx.ovh.ca ~all"
+mydomain.ovh IN TXT "v=spf1 include:mx.ovh.com ~all"
 ```
 
 ### Configuración SPF OVHcloud para Private Exchange 
@@ -207,6 +208,15 @@ mydomain.ovh IN TXT "v=spf1 ip4:11.22.333.444 ip6:5555:66a7:88:b999::1000:2233 i
 > En la ficha `Información general`{.action}, haga clic en `A` y `AAAA` en la sección `Diagnóstico del servidor`. En la ventana que aparece, lea el valor
 >
 > ![Dominio](images/spf_records_ip.png){.thumbnail}
+>
+> Si las etiquetas `A` y `AAAA` son verdes, no verá las direcciones IP al hacer clic en ellas. Deberá recuperarlas desde la zona DNS del dominio asociado a su plataforma Private Exchange. Para ello, consulte el enlace del webmail en la pestaña `Información general`{.action}, en el recuadro `Conexión`.
+>
+> ![domain](images/spf_records_ip2.png){.thumbnail}
+>
+> Acceda a la sección `Nombres de dominio`{.action} de la columna izquierda y seleccione el dominio asociado a su plataforma Private Exchange. A continuación, abra la pestaña de la columna izquierda y haga clic en `Zona DNS`{.action}. Obtenga las direcciones IPv4 (registro `A`) y IPv6 (registro `AAAA`) correspondientes a la URL del webmail.
+>
+> ![domain](images/spf_records_ip3.png){.thumbnail}
+>
 
 ## Más información
 

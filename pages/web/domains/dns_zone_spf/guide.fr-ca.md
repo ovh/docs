@@ -1,7 +1,7 @@
 ---
 title: Configurer un enregistrement SPF sur son nom de domaine
 excerpt: Découvrez comment configurer un enregistrement SPF sur votre nom de domaine chez OVHcloud
-updated: 2023-07-25
+updated: 2023-08-04
 ---
 
 ## Objectif
@@ -73,7 +73,7 @@ Dans le tableau, pour retrouver la ligne correspondante au SPF OVHcloud, un filt
 
 > [!primary]
 >
-> Un SPF se compose toujours de la forme suivante : "v=spf1 `sources` `qualifieur`". Par exemple, le SPF OVHcloud est : "v=spf1 include:mx.ovh.ca ~all".
+> Un SPF se compose toujours de la forme suivante : "v=spf1 `sources` `qualifieur`". Par exemple, le SPF OVHcloud est : "v=spf1 include:mx.ovh.com ~all".
 >
 
 ![domain](images/spf_records_check_OVH_configuration.png){.thumbnail}
@@ -88,7 +88,7 @@ Pour ajouter un enregistrement SPF, cliquez sur `Ajouter une entrée`{.action}.
 
 Dans la fenêtre qui s’affiche, plusieurs enregistrements DNS vous sont proposés. Concernant l’ajout d’un SPF, deux possibilités s’offrent à vous :
 
-- [Ajouter un enregistrement SPF OVHcloud](#spfrecordovhcloud) **et utiliser la configuration OVHcloud**: pour les utilisateurs possédant uniquement les offres e-mail OVHcloud sur leur nom de domaine (Hors [Private Exchange](https://www.ovhcloud.com/fr-ca/emails/hosted-exchange/){.external}).
+- [Ajouter un enregistrement SPF OVHcloud](#spfrecordovhcloud) **et utiliser la configuration OVHcloud**: pour les utilisateurs possédant uniquement les offres e-mail OVHcloud sur leur nom de domaine (Hors [Private Exchange](https://www.ovhcloud.com/fr-ca/emails/hosted-exchange/){.external} et Exchange Provider).
 - [Ajouter un enregistrement SPF](#spfrecord) : pour les utilisateurs ne possédant pas l'intégralité de l'enregistrement. Par exemple, vous disposez uniquement d'une adresse IP ou du nom d'hôte du serveur e-mail.
 - [Ajouter un enregistrement TXT](#txtrecord) : pour les utilisateurs avertis ou disposant déjà de l'enregistrement complet. Par exemple, votre fournisseur de solution e-mail vous transmet la valeur.
 
@@ -110,6 +110,7 @@ Cliquez sur le bouton `Utiliser le SPF pour mutualisé OVHcloud`{.action} en hau
 >
 > La modification nécessite un temps de propagation de 4 à 24 heures avant d’être pleinement effective.
 >
+
 
 #### Ajouter un enregistrement SPF <a name="spfrecord"></a>
 
@@ -139,7 +140,7 @@ Concernant la question : "**D'autres serveurs envoient-ils le courrier avec votr
 |ptr|Renseignez ici des noms d'hôtes dont le *reverse* est fonctionnel (grâce à un enregistrement PTR dans la zone DNS). Ils seront ainsi identifiés comme une source d'envoi légitime.|
 |ip4|Indiquez les IP ou les plages d'IP (IPv4) autorisées à envoyer des e-mails avec vos adresses.|
 |ip6|Indiquez les IP ou les plages d'IP (IPv6) autorisées à envoyer des e-mails avec vos adresses.|
-|include|Renseignez ici des noms de domaine incluant leurs propres règles SPF. Cela permettra ces dernières pour votre propre domaine. Par exemple, OVHcloud utilise cette méthode dans sa configuration SPF :  "v=spf1 include:mx.ovh.ca ~all", ce qui permet à OVHcloud de gérer le SPF de mx.ovh.ca et de permettre à ses clients de l'utiliser.|
+|include|Renseignez ici des noms de domaine incluant leurs propres règles SPF. Cela permettra ces dernières pour votre propre domaine. Par exemple, OVHcloud utilise cette méthode dans sa configuration SPF :  "v=spf1 include:mx.ovh.com ~all", ce qui permet à OVHcloud de gérer le SPF de mx.ovh.com et de permettre à ses clients de l'utiliser.|
 
 Enfin, concernant la question : "**Est-ce que les informations que vous avez indiquées décrivent tous les hôtes qui envoient du courrier avec votre domaine ?**", trois choix sont possibles :
 
@@ -185,7 +186,21 @@ La configuration SPF OVHcloud générale s'applique aux solutions ci-dessous :
 La configuration est la suivante :
 
 ```bash
-mydomain.ovh IN TXT "v=spf1 include:mx.ovh.ca ~all"
+mydomain.ovh IN TXT "v=spf1 include:mx.ovh.com ~all"
+```
+
+### Configuration SPF OVHcloud pour Exchange Provider
+
+Pour l'offre Exchange Provider, la configuration est la suivante :
+
+```bash
+mydomain.ovh IN TXT "v=spf1 include:mx.ovh.com ~all"
+```
+
+En revanche, la configuration est la suivante si vous souhaitez aussi déclarer la *gateway* du service **Exchange Provider** :
+
+```bash
+mydomain.ovh IN TXT "v=spf1 include:mx.ovh.com a:gw.ex-mail.biz ~all"
 ```
 
 ### Configuration SPF OVHcloud pour Private Exchange 
@@ -196,10 +211,10 @@ Pour l'offre Private Exchange, il est nécessaire de renseigner les adresses IP 
 mydomain.ovh IN TXT "v=spf1 ip4:11.22.333.444 ip6:5555:66a7:88:b999::1000:2233 ~all"
 ```
 
-Si vous utilisez également [une offre e-mail mutualisée](#ovhcloudspfvalue), vous pouvez ajouter l'argument `include:mx.ovh.ca` à l'enregistrement ci-dessus, ce qui donnera la valeur suivante :
+Si vous utilisez également [une offre e-mail mutualisée](#ovhcloudspfvalue), vous pouvez ajouter l'argument `include:mx.ovh.com` à l'enregistrement ci-dessus, ce qui donnera la valeur suivante :
 
 ```bash
-mydomain.ovh IN TXT "v=spf1 ip4:11.22.333.444 ip6:5555:66a7:88:b999::1000:2233 include:mx.ovh.ca ~all"
+mydomain.ovh IN TXT "v=spf1 ip4:11.22.333.444 ip6:5555:66a7:88:b999::1000:2233 include:mx.ovh.com ~all"
 ```
 
 > [!primary]
@@ -209,6 +224,15 @@ mydomain.ovh IN TXT "v=spf1 ip4:11.22.333.444 ip6:5555:66a7:88:b999::1000:2233 i
 > Dans l'onglet `Informations générales`{.action}, cliquez sur le `A` et le `AAAA` dans la partie `Diagnostic serveur`. Dans la fenêtre qui s'affiche, relevez la valeur.
 >
 > ![domain](images/spf_records_ip.png){.thumbnail}
+>
+> Si les pastilles `A` et `AAAA` sont vertes, vous ne verrez pas les adresses IP en cliquant dessus. Vous devrez récupérer celles-ci depuis la zone DNS du nom de domaine attaché à votre plateforme Private Exchange. Pour cela, récupérez le lien du webmail depuis l'onglet `Informations générales`{.action}, dans le cadre `Connexion`.
+>
+> ![domain](images/spf_records_ip2.png){.thumbnail}
+>
+> Dirigez-vous ensuite dans la section `Noms de domaine`{.action}, sélectionnez le nom de domaine attaché à votre plateforme Private Exchange, puis cliquez sur l'onglet `Zone DNS`{.action}. Récupérez les adresses IPv4 (enregistrement `A`) et IPv6 (enregistrement `AAAA`) correspondant à l'URL du webmail.
+>
+> ![domain](images/spf_records_ip3.png){.thumbnail}
+>
 
 ## Aller plus loin
 

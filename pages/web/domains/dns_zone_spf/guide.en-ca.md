@@ -1,7 +1,7 @@
 ---
 title: Adding an SPF record to the configuration of your domain name
 excerpt: Find out how to configure an SPF record for your OVHcloud domain name
-updated: 2023-07-25
+updated: 2023-08-04
 ---
 
 ## Objective
@@ -72,7 +72,7 @@ To find the row for the OVHcloud SPF record, a display filter can be applied to 
 
 > [!primary]
 >
-> An SPF record always follows this form: "v=spf1 `sources` `qualifier`". For example, the OVHcloud SPF is: "v=spf1 include:mx.ovh.ca ~all".
+> An SPF record always follows this form: "v=spf1 `sources` `qualifier`". For example, the OVHcloud SPF is: "v=spf1 include:mx.ovh.com ~all".
 >
 
 ![domain](images/spf_records_check_OVH_configuration.png){.thumbnail}
@@ -87,11 +87,9 @@ To add an SPF record, click on `Add an entry`{.action} in the right-hand menu.
 
 In the window that pops up, the configuration assistant offers several different types of DNS records. There are two ways of adding an SPF record:
 
-- [Add an OVHcloud SPF record](#spfrecordovhcloud) **and use the OVHcloud configuration**: For users who only have OVHcloud email offers on their domain name (excluding [Private Exchange](https://www.ovhcloud.com/en-ca/emails/hosted-exchange/){.external}).
+- [Add an OVHcloud SPF record](#spfrecordovhcloud) **and use the OVHcloud configuration**: For users who only have OVHcloud email offers on their domain name (excluding [Private Exchange](https://www.ovhcloud.com/en-ca/emails/private-exchange/){.external}).
 - [Add an SPF record](#spfrecord): For users who do not have the entire record. For example, you only have an IP address or the host name of the email server.
 - [Add a TXT record](#txtrecord): For users who are experienced or already have the full record. For example, your email solution provider will send you the value.
-
-
 
 ![domain](images/spf_records_add_entry.png){.thumbnail}
 
@@ -134,7 +132,7 @@ Regarding the question: "**Do the emails of your domain originate from other ser
 |ptr|Enter the host names for which the *reverse* path works (using a PTR record in the DNS zone). They will thus be identified as a legitimate sending source.|
 |ip4|Indicates IP addresses or RIPE blocks (IPv4) authorised to send emails with your addresses.|
 |ip6|Indicates IP addresses or RIPE blocks (IPv6) authorised to send emails with your addresses.|
-|include|Enter domain names here that include their own SPF rules. This will enable these for your own domain. For example, OVHcloud uses this method in its SPF configuration: "v=spf1 include:mx.ovh.ca ~all". It allows OVHcloud to manage the SPF of mx.ovh.ca and let customers use it for their services.|
+|include|Enter domain names here that include their own SPF rules. This will enable these for your own domain. For example, OVHcloud uses this method in its SPF configuration: "v=spf1 include:mx.ovh.com ~all". It allows OVHcloud to manage the SPF of mx.ovh.com and let customers use it for their services.|
 
 Regarding the question: "**Does the data you have entered describe all hosts that send email from your domain?**", three choices are possible:
 
@@ -182,7 +180,7 @@ The general OVHcloud SPF configuration applies to the solutions below:
 The configuration is as follows:
 
 ```bash
-mydomain.ovh IN TXT "v=spf1 include:mx.ovh.ca ~all"
+mydomain.ovh IN TXT "v=spf1 include:mx.ovh.com ~all"
 ```
 
 ### OVHcloud SPF configuration for Private Exchange 
@@ -206,6 +204,16 @@ mydomain.ovh IN TXT "v=spf1 ip4:11.22.333.444 ip6:5555:66a7:88:b999::1000:2233 i
 > In the `General Information`{.action} tab, click on the `A` and `AAAA` in the `Server Diagnostics` section. In the window that appears, read the value.
 >
 > ![domain](images/spf_records_ip.png){.thumbnail}
+>
+> If the boxes `A` and `AAAA` are green, you will not see the IP addresses by clicking on them. You will need to retrieve this information from the DNS zone for the domain name attached to your Private Exchange platform. To do this, retrieve the webmail link from the `General information`{.action} tab, in the `Connection` box.
+>
+> ![domain](images/spf_records_ip2.png){.thumbnail}
+>
+> Go to the `Domain names`{.action} section, select the domain name attached to your private Exchange platform, then click on the `DNS zone`{.action} tab. Retrieve the IPv4 (record `A`) and IPv6 (record `AAAA`) addresses corresponding to the webmail URL.
+>
+> ![domain](images/spf_records_ip3.png){.thumbnail}
+>
+
 
 ## Go further
 
