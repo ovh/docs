@@ -1,10 +1,10 @@
 ---
 title: Réplication avancée avec Leap
 excerpt: "Mise en place de réplications avancées avec Leap"
-updated: 2022-07-18
+updated: 2023-08-07
 ---
 
-**Dernière mise à jour le 18/07/2022**
+**Dernière mise à jour le 07/08/2023**
 
 ## Objectif
 
@@ -59,7 +59,7 @@ En haut à gauche du tableau de bord de **Prism Element**, cliquez sur `Le nom d
 
 ![00 Add iSCSI address in FRANCE01](images/00-isci-add-address-france01.png){.thumbnail}
 
-Saisissez une `adresse IP non utilisée du réseau d'administration ` dans le champ **iSCSI Data Service IP** et cliquez sur `Save`{.action}.
+Vérifiez l'adresse IP dans le champ **iSCSI Data Service IP**.
 
 ![00 Add iSCSI address in FRANCE01](images/00-isci-add-address-france02.png){.thumbnail}
 
@@ -69,7 +69,7 @@ En haut à gauche du tableau de bord de **Prism Element**, cliquez sur `Le nom d
 
 ![01 Add iSCSI address in Canada01](images/01-isci-add-address-canada01.png){.thumbnail}
 
-Saisissez une `adresse IP non utilisée du réseau d'administration ` dans le champ **iSCSI Data Service IP** et cliquez sur `Save`{.action}.
+Vérifiez l'adresse IP dans le champ **iSCSI Data Service IP**.
 
 ![01 Add iSCSI address in Canada02](images/01-isci-add-address-canada02.png){.thumbnail}
 

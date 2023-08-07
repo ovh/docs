@@ -37,7 +37,7 @@ Cliquez sur le nom de votre cluster en haut à gauche à côté du **X**.
 
 ![01 Check ISCSI ADDRESS 02](images/01-check-iscsi-address02.png){.thumbnail}
 
-Faites défiler la fenêtre et saisissez, dans la rubrique **ISCSI Data Services IP**, une adresse IP privée non utilisée de votre réseau d'administration. Cliquez ensuite sur `Save`{.action}.
+Faites défiler la fenêtre, dans la rubrique **ISCSI Data Services IP**, vérifiez l'adresse IP.
 
 ![01 Check ISCSI ADDRESS 03](images/01-check-iscsi-address03.png){.thumbnail}
 
