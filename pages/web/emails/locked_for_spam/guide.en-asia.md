@@ -1,52 +1,65 @@
 ---
 title: 'What to do if your account is blocked for spam'
 excerpt: 'Find out what to do if your email address has been blocked for spam'
-updated: 2020-04-20
+updated: 2023-06-07
 ---
-
-**Last updated 20th April 2020**
 
 ## Objective
 
-If you receive an email notifying you that one of your email addresses has been blocked for spam, there are several steps to follow to be able to use it again.
+When your email account is blocked for SPAM, it means that suspicious sending activity has been detected on it. In this situation, you can no longer send emails from this account. It is important to understand why a suspicious activity was detected and how to take action to prevent it from happening again.
 
 **This guide explains the procedure to follow if an email account has been blocked for spam.**
 
 ## Requirements
 
-- an [OVHcloud email solution](https://www.ovh.com/asia/emails/)
-- access to the `Web Cloud`{.action} section of the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
+- An [OVHcloud email solution](https://www.ovhcloud.com/asia/emails/)
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
 
-## Instructions
+## Instructions <a name="instructions"></a>
 
-### Step 1: Checking the status of the email address, and access the associated support ticket
+### Step 1: Investigating why your email account is blocked for SPAM <a name="step1"></a>
+
+When suspicious activity is detected at the email sending level, the account concerned is automatically blocked. In this situation, you can no longer send emails from this email account.
+
+First of all, make sure that any user of the blocked email account has caused the block directly, following an uncommon use of the email account (for example a mass email sending operation). If this is the case, you must resolve the root cause before unblocking the account.
+
+If the suspicious activity detected by the antispam system was not initiated by a legitimate user of the email account, take the necessary measures and detailed below:
+
+- Perform an antivirus check for each of the emails sent from the blocked account, and apply a patch if these emails contain malware.
+
+- Check all software applications using the credentials for the blocked account (e.g. fax, business software, email software).
+
+### Step 2: Checking the status of the email account <a name="step2"></a>
+
+**MX plan**
 
 Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia) and select `Web Cloud`{.action} in the top navigation bar. Click `Emails`{.action}, then choose the domain name concerned.
 
-Go to the `Email accounts`{.action} section of your platform. If the "Status" column to the right of the email address concerned displays "Spam", click on it, then `Reply to the ticket`{.action}. Next, move on to [step 2](./#step-2-access-the-support-ticket_1) of this guide.
+Go to the `Email accounts`{.action} section of your platform. If the "Status" column to the right of the email account concerned displays "Spam", click on it, then `Reply to the ticket`{.action}. Email accounts are not unblocked automatically. You will need to contact the support team by answering the 3 questions in the support ticket.<br>
+
+Go to [step 3](#step3) of the guide.
 
 ![spam](images/blocked-for-SPAM-01-03.png){.thumbnail}
 
+### Step 3: Accessing the support ticket <a name="step3"></a>
 
-### Step 2: Accessing the support ticket
-
-Following step 1, you will then be redirected to the Control Panel section “My support tickets”. Click `...`{.action} to the right of the ticket with the subject “Account locked for spam”, then click `See more information`{.action}. 
+Following step 2, you will be redirected to the Control Panel section “My support tickets”. Click `...`{.action} to the right of the ticket with the subject “Account locked for spam”, then click `See more information`{.action}.
 
 ![spam](images/blocked-for-SPAM-02.png){.thumbnail}
 
-Here you will see the email that was sent to you, which has subsequently generated the support ticket.
+Here you will see the email sent to you, which has subsequently generated the support ticket.
 
 The support ticket will look like this:
 
 > 
 > Dear Customer,
 >
-> Our system has detected that the address **youraddress@domain.com** hosted on our systems under the **servicename** service is a source of spam.
+> Our system has detected that the address **address@example.com** hosted on our systems under the **service name** service is a source of spam.
 > The sending of emails has been temporarily disabled.
 >
 > We have currently detected **X** suspicious message(s).
 >
-> To help us re-enable sending for the address: **address@domain.com**,
+> To help us re-enable sending for the address: **address@example.com**,
 > please reply to this email by answering the following questions:
 >
 > - Are you the sender of the email in question (see the header below)?
@@ -60,35 +73,14 @@ The support ticket will look like this:
 > <br>
 > 
 
-After this message, you will be sent a sample of email headers.
+After this message, you will find a sample of email headers.
 
-These headers will help determine the movement and origin of the emails sent.
+These headers will help determine the path and origin of the emails sent.
 
-### Step 3: Answering the three questions regarding the email account
+## Go further <a name="go-further"></a>
 
-> [!warning]
->
-> Email addresses are not unblocked automatically. You will need to contact the support team by replying to the ticket with all three questions answered.
->
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/asia/directory/).
 
-- **Are you the sender of the email in question?** Using the headers provided, check the sender, the recipient, and the email subject to check if it is one of your emails.
-
-- **Do you have a redirection rule to another email address?** Check the inbox rules for your email address, and ensure that incoming spam emails were not redirected to another address.
-
-- **Have you responded to spam?** Even just replying to spam emails plays a part in degrading the reputation of email sending servers, as well as your domain name.    
-
-
-### Step 4: Putting measures in place if your email address has been fraudulently accessed
-
-If the sent emails mentioned in the headers were not sent by the real email address holders, please take the following measures:
-
-- Perform an anti-virus check for each of the emails sent using the email address blocked for spam, and apply a patch if these emails contain malware.
-
-- Check all of the software using the credentials for the email address that has been blocked for spam (e.g. fax machines, business software, email software).
-
-- Change the password for the email address, once you have performed an anti-virus check — and ensure that the password is strong enough. We recommend to consult the [guidelines defined by the NCSC for creating a strong password](https://www.ncsc.gov.uk/collection/top-tips-for-staying-secure-online/use-a-strong-and-separate-password-for-email) or another reputable resource on this topic.
-
-
-## Go further
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/asia/support-levels/).
 
 Join our community of users on <https://community.ovh.com/en/>.
