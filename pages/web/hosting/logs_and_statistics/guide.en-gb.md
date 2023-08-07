@@ -103,4 +103,4 @@ You can display different types of graphics from the drop-down menu in the top l
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com>.
+Join our community of users on <https://community.ovh.com/en/>.
