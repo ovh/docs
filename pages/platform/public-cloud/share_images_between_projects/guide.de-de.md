@@ -1,6 +1,6 @@
 ---
-title: "Bilder zwischen Public Cloud Projekten teilen“
-excerpt: "Erfahren Sie, wie Sie mit OpenStack Bilder zwischen Public Cloud-Projekten teilen können“
+title: Image zwischen Public Cloud Projekten teilen
+excerpt: Erfahren Sie hier, wie Sie ein Image mit OpenStack zwischen Public Cloud Projekten teilen können
 updated: 2023-07-31
 ---
 
@@ -10,40 +10,35 @@ updated: 2023-07-31
 
 ## Ziel
 
-Es kann vorkommen, dass Sie ein Image [einer Instanz-Backup](/pages/platform/public-cloud/save_an_instance) oder ein Image eines [Volume Backups](/pages/platform/public-cloud/volume-backup) für mehrere Public Cloud-Projekte freigeben müssen.
+Es kann vorkommen, dass Sie ein Image eines [Instanz Backups](/pages/platform/public-cloud/save_an_instance) oder ein Image eines [Volume Backups](/pages/platform/public-cloud/volume-backup) für mehrere Public Cloud Projekte freigeben müssen.
 
-Mit OpenStack können Sie ein Bild für mehrere Projekte freigeben, auch wenn diese nicht zum selben Konto gehören.
+Mit OpenStack können Sie ein Image für mehrere Projekte freigeben, auch wenn diese nicht zum selben Account gehören.
 Diese Funktion bietet viele Möglichkeiten, birgt aber auch Risiken. Es ist also wichtig, die Prinzipien zu verstehen.
 
-Wenn Sie z. B. ein Bild aus Projekt A für Projekt B freigeben möchten (unter demselben oder einem anderen Konto), gelten die folgenden Regeln:
+Wenn Sie z.B. ein Image aus Projekt A für Projekt B freigeben möchten (unter demselben oder einem anderen Account), gelten die folgenden Regeln:
 
-- Das Bild bleibt physisch an Projekt A angehängt. Das Projekt B verfügt nur über eine "Zugriffsberechtigung" für dieses Bild.
-- Wenn Projekt A den Zugriff auf das Image unterdrückt (Löschen der ACL, Löschen des Images, Löschen des Projekts für unbezahlte Rechnungen usw.), funktionieren Instanzen, die von diesem Image aus in Projekt B ausgeführt werden, möglicherweise aufgrund von Migrations- oder Neuerstellungsproblemen nicht mehr.
+- Das Image bleibt physisch an Projekt A angehängt. Das Projekt B verfügt nur über eine Zugriffsberechtigung (*access authorization*) für dieses Image.
+- Wenn Projekt A den Zugriff auf das Image unterdrückt (Löschen der ACL, Löschen des Images, Löschen des Projekts aufgrund ausstehender Zahlungen, etc.), funktionieren Instanzen, die von diesem Image aus in Projekt B ausgeführt werden, möglicherweise wegen Problemen bei Migration oder Rebuild nicht mehr.
 
-Daher ist es wichtig, das im Hinterkopf zu behalten, bevor Sie sich dieser Konfiguration widmen.
-Weitere Informationen finden Sie in der offiziellen [OpenStack-Dokumentation](https://docs.openstack.org/image-guide/share-images.html){.external}.
+Daher ist es wichtig, diese Punkte in Betracht zu ziehen, bevor Sie diese Konfigurationen anwenden.
+Weitere Informationen finden Sie in der offiziellen [OpenStack Dokumentation](https://docs.openstack.org/image-guide/share-images.html){.external}.
 
-**In dieser Anleitung erfahren Sie, wie Sie Bilder zwischen einem oder mehreren Projekten freigeben und dabei die Image-Konfiguration und den Image-Status beibehalten.**
+**Diese Anleitung erklärt, wie Sie ein Image für ein anderes Projekt freigeben und dabei die Image-Konfiguration und den Image-Status beibehalten.**
 
 ## Voraussetzungen
 
-Bevor Sie diese Schritte ausführen, sollten Sie sich zunächst die folgende Anleitung ansehen:
-
-- Sie haben die Anleitung "[Vorbereitung der Umgebung für die Verwendung der OpenStack API](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api)" gelesen (empfohlen).
-
-Außerdem benötigen Sie:
-
+- Sie sind mit der Vorgehensweise zur [Vorbereitung der Umgebung für die Verwendung der OpenStack API](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api) vertraut (empfohlen).
 - Sie haben eine [Public Cloud Instanz](https://www.ovhcloud.com/de/public-cloud/) in Ihrem Account erstellt.
 - Sie haben einen [OpenStack User erstellt](/pages/platform/public-cloud/create_and_delete_a_user).
 
 > [!primary]
 >
-> Dieses Handbuch bezieht sich auf die Verwendung des [OpenStack-Befehlszeilenclients](https://docs.openstack.org/python-openstackclient/latest/){.external}.
+> Diese Anleitung bezieht sich auf die Verwendung des [OpenStack Client](https://docs.openstack.org/python-openstackclient/latest/){.external}.
 >
 
 ## In der praktischen Anwendung
 
-### Bild freigeben
+### Image freigeben
 
 Führen Sie zunächst den folgenden Befehl aus, um die vorhandenen Images aufzulisten:
 
@@ -54,16 +49,16 @@ $ openstack image list --private
 
 > [!warning]
 > 
-> Um geteilt zu werden, muss ein Bild zunächst auf "geteilte Sichtbarkeit" (*shared visibility*) gesetzt werden.
+> Um es teilen zu können, muss ein Image zunächst auf geteilte Sichtbarkeit (*shared visibility*) eingestellt werden.
 >
 
 ```bash
 $ openstack image set --shared <Image_UUID>
 ```
 
-### Hinzufügen eines Projekts zu einem Bild
+### Hinzufügen eines Projekts zu einem Image
 
-Im nächsten Schritt fügen Sie die UUID eines anderen Projekts als Member des Abbilds hinzu. In unserem Beispiel unten fügen wir die UUID des "Projekts B" hinzu.
+Im nächsten Schritt fügen Sie die UUID eines anderen Projekts als Member des Image hinzu. In unserem Beispiel unten fügen wir die UUID von Projekt B hinzu.
 
 ```bash
 $ openstack image add project 9a0fbdc5-1f4a-4a1c-ad46-8d404a1313ba <UUID_Project_B>
@@ -103,7 +98,7 @@ $ openstack image set --accept 9a0fbdc5-1f4a-4a1c-ad46-8d404a1313ba
 +--------------------------------------+----------------------------------+----------+
 ```
 
-Nachdem Sie die Freigabeanfrage akzeptiert haben, überprüfen Sie, ob Sie das Bild sehen und darauf zugreifen können:
+Nachdem Sie die Freigabeanfrage akzeptiert haben, überprüfen Sie, ob Sie das Image sehen und darauf zugreifen können:
 
 ```bash
 $ openstack image show 9a0fbdc5-1f4a-4a1c-ad46-8d404a1313ba
@@ -132,7 +127,7 @@ $ openstack image show 9a0fbdc5-1f4a-4a1c-ad46-8d404a1313ba
 +------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ```
 
-### Überprüfen der Member eines Bildes
+### Überprüfen der Member des Image
 
 ```bash
 $ openstack image member list 9a0fbdc5-1f4a-4a1c-ad46-8d404a1313ba
@@ -144,14 +139,14 @@ $ openstack image member list 9a0fbdc5-1f4a-4a1c-ad46-8d404a1313ba
 +--------------------------------------+----------------------------------+----------+
 ```
 
-### Entfernen eines Mitglieds aus einem Bild oder Aufheben der Freigabe eines Bilds
+### Entfernen eines Members aus einem Image oder Aufheben der Freigabe eines Images
 
 ```bash
-$ openstack image remove project <image> <UUID_Projekt_A_Löschen>
+$ openstack image remove project <image> <UUID_Project_To_Delete>
 ```
 
 ## Weiterführende Informationen
 
-[Backup einer Instanz von einem Rechenzentrum in ein anderes übertragen](/pages/platform/public-cloud/transfer_instance_backup_from_one_datacentre_to_another) übertragen.
+[Backup einer Instanz von einem Rechenzentrum in ein anderes übertragen](/pages/platform/public-cloud/transfer_instance_backup_from_one_datacentre_to_another)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
