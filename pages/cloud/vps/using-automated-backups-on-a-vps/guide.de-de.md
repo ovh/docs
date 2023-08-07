@@ -1,10 +1,8 @@
 ---
-title: 'Automatische Backups auf einem VPS verwenden'
-excerpt: 'Erfahren Sie hier, wie Sie im OVHcloud Kundencenter die Option “Automatisches Backup” aktivieren und verwenden'
-updated: 2022-11-15
+title: Automatische Backups auf einem VPS verwenden
+excerpt: Erfahren Sie hier, wie Sie im OVHcloud Kundencenter die Option “Automatisches Backup” aktivieren und verwenden
+updated: 2023-08-07
 ---
-
-**Letzte Aktualisierung am 15.11.2022**
 
 ## Ziel
 
@@ -89,7 +87,7 @@ Stellen Sie zunächst über SSH eine Verbindung zu Ihrem VPS her.
 Mit dem folgenden Befehl können Sie den Namen des neu angehängten Volumes überprüfen:
 
 ```bash
-$ lsblk
+lsblk
 ```
 
 Hier sehen Sie eine Beispielausgabe dieses Befehls:
@@ -109,11 +107,15 @@ In diesem Beispiel heißt die Partition, in der Ihr Backup-Dateisystem enthalten
 Erstellen Sie als Nächstes ein Verzeichnis für diese Partition und definieren Sie es als Mountpunkt:
 
 ```bash
-$ mkdir -p /mnt/restore
-$ mount /dev/sdb1 /mnt/restore
+sudo mkdir -p /mnt/restore
+sudo mount /dev/sdb1 /mnt/restore
 ```
 
 Sie können jetzt zu diesem Ordner wechseln und auf Ihre Backup-Daten zugreifen.
+
+Denken Sie daran, das automatische Backup zu unmounten, sobald Sie damit fertig sind. Klicken Sie im Tab `Automatisches Backup`{.action} auf den Button `Backup unmounten`{.action} und bestätigen Sie den Vorgang im Popup-Fenster.
+
+![unmount](images/backup_vps_unmount.png){.thumbnail}
 
 #### Mit Windows
 
@@ -135,8 +137,15 @@ Anschließend können Sie auf Ihr gemountetes Backup als Laufwerk über den `Dat
 
 ![file explorer](images/windowsbackup4.png){.thumbnail}
 
+Denken Sie daran, das automatische Backup auszuhängen, sobald Sie damit fertig sind. Klicken Sie im Tab `Automatisches Backup`{.action} auf den Button `Backup unmounten`{.action} und bestätigen Sie den Vorgang im Popup-Fenster.
+
+![unmount](images/backup_vps_unmount.png){.thumbnail}
+
+
 > [!warning]
-> Bitte beachten Sie, dass beim Aushängen des Backups ein Neustart des Servers erfolgt.
+> 
+>
+Beachten Sie, dass beim Aushängen des Backups ein Neustart des Servers erfolgt.
 >
 
 
@@ -146,7 +155,7 @@ Die Funktion “Automatisches Backup” basiert auf VPS Snapshots. Es wird empfo
 
 #### Konfiguration des QEMU-Agents auf einem VPS
 
-Snapshots sind Momentaufnahmen Ihres Systems bei der Ausführung (“live snapshot”). Um die Verfügbarkeit Ihres Systems während der Erstellung des Snapshots zu gewährleisten, wird der QEMU-Agent verwendet, um das Dateisystem für diesen Vorgang vorzubereiten.
+Snapshots sind Momentaufnahmen Ihres Systems bei der Ausführung (*live snapshot*). Um die Verfügbarkeit Ihres Systems während der Erstellung des Snapshots zu gewährleisten, wird der QEMU-Agent verwendet, um das Dateisystem für diesen Vorgang vorzubereiten.
 
 Der hierzu benötigte *qemu-guest-agent* ist bei den meisten Distributionen nicht standardmäßig installiert. Auch können lizenzbedingte Einschränkungen OVHcloud daran hindern, diese Bedingung in die Images der verfügbaren Betriebssysteme einzubeziehen. Es wird daher geraten, dies zu überprüfen, und den Agent zu installieren, falls er nicht auf Ihrem VPS aktiviert ist. Verbinden Sie sich per SSH mit Ihrem VPS und folgen Sie je nach Betriebssystem den unten stehenden Anleitungen. 
 
@@ -155,27 +164,27 @@ Der hierzu benötigte *qemu-guest-agent* ist bei den meisten Distributionen nich
 Überprüfen Sie mit folgendem Befehl, ob das System richtig für Snapshots konfiguriert ist.
 
 ```bash
-$ file /dev/virtio-ports/org.qemu.guest_agent.0
+file /dev/virtio-ports/org.qemu.guest_agent.0
 /dev/virtio-ports/org.qemu.guest_agent.0: symbolic link to ../vport2p1
 ```
 
-Erscheint ein anderes Ergebnis (“No such file or directory”), dann installieren Sie das aktuelle Paket:
+Erscheint ein anderes Ergebnis (*No such file or directory*), dann installieren Sie das aktuelle Paket:
 
 ```bash
-$ sudo apt-get update
-$ sudo apt-get install qemu-guest-agent
+sudo apt-get update
+sudo apt-get install qemu-guest-agent
 ```
 
 Starten Sie den VPS neu:
 
 ```bash
-$ sudo reboot
+sudo reboot
 ```
 
 Überprüfen Sie, ob der Dienst ausgeführt wird:
 
 ```bash
-$ sudo service qemu-guest-agent status
+sudo service qemu-guest-agent status
 ```
 
 ##### **Redhat Distributionen (CentOS, Fedora)**
@@ -183,27 +192,27 @@ $ sudo service qemu-guest-agent status
 Überprüfen Sie mit folgendem Befehl, ob das System richtig für Snapshots konfiguriert ist.
 
 ```bash
-$ file /dev/virtio-ports/org.qemu.guest_agent.0
+file /dev/virtio-ports/org.qemu.guest_agent.0
 /dev/virtio-ports/org.qemu.guest_agent.0: symbolic link to ../vport2p1
 ```
 
-Erscheint ein anderes Ergebnis (“No such file or director”), dann installieren und aktivieren Sie den Agent:
+Erscheint ein anderes Ergebnis (*No such file or directory*), dann installieren und aktivieren Sie den Agent:
 
 ```bash
-$ sudo yum install qemu-guest-agent
-$ sudo chkconfig qemu-guest-agent on
+sudo yum install qemu-guest-agent
+sudo chkconfig qemu-guest-agent on
 ```
 
 Starten Sie den VPS neu:
 
 ```bash
-$ sudo reboot
+sudo reboot
 ```
 
 Überprüfen Sie, ob der Dienst ausgeführt wird:
 
 ```bash
-$ sudo service qemu-guest-agent status
+sudo service qemu-guest-agent status
 ```
 
 ##### **Windows**

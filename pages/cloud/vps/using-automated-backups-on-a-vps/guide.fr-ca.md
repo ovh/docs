@@ -1,10 +1,8 @@
 ---
 title: 'Utiliser la sauvegarde automatique'
 excerpt: 'Découvrez comment activer et utiliser l’option de sauvegarde automatique depuis l’espace client OVHcloud'
-updated: 2022-11-15
+updated: 2023-08-07
 ---
-
-**Dernière mise à jour le 15/11/2022**
 
 ## Objectif
 
@@ -91,7 +89,7 @@ Connectez-vous à votre VPS en SSH.
 Vous pouvez utiliser la commande suivante pour vérifier le nom du nouveau périphérique connecté :
 
 ```bash
-$ lsblk
+lsblk
 ```
 
 Voici un exemple de résultat de cette commande :
@@ -112,11 +110,15 @@ Dans cet exemple, la partition contenant votre système de fichiers de sauvegard
 Créez à présent un répertoire pour cette partition et définissez-le comme point de montage :
 
 ```bash
-$ mkdir -p /mnt/restore
-$ mount /dev/sdb1 /mnt/restore
+sudo mkdir -p /mnt/restore
+sudo mount /dev/sdb1 /mnt/restore
 ```
 
 Vous pouvez maintenant basculer vers ce dossier et accéder à vos données de sauvegarde.
+
+Pensez à bien démonter la sauvegarde automatique une fois l'utilisation de celle-ci terminée. Cliquez sur le bouton `Démonter le backup`{.action} dans l'onglet `Backup automatisé`{.action}, puis validez dans la fenêtre qui s'affiche.
+
+![unmount](images/backup_vps_unmount.png){.thumbnail}
 
 #### Sous Windows
 
@@ -138,6 +140,10 @@ Par la suite, votre sauvegarde montée sera accessible dans `Explorateur de fich
 
 ![file explorer](images/windowsbackup4.png){.thumbnail}
 
+Pensez à bien démonter la sauvegarde automatique une fois l'utilisation de celle-ci terminée. Cliquez sur le bouton `Démonter le backup`{.action} dans l'onglet `Backup automatisé`{.action}, puis validez dans la fenêtre qui s'affiche.
+
+![unmount](images/backup_vps_unmount.png){.thumbnail}
+
 > [!warning]
 > Veuillez noter qu'un redémarrage du serveur se produira lors du démontage de la sauvegarde.
 >
@@ -157,27 +163,27 @@ Le *qemu-guest-agent* requis n'est pas installé par défaut sur la plupart des 
 Utilisez la commande suivante pour vérifier si le système est correctement configuré pour les snapshots :
 
 ```bash
-$ file /dev/virtio-ports/org.qemu.guest_agent.0
+file /dev/virtio-ports/org.qemu.guest_agent.0
 /dev/virtio-ports/org.qemu.guest_agent.0: symbolic link to ../vport2p1
 ```
 
 Si le résultat est différent (« No such file or directory »), installez le dernier package :
 
 ```bash
-$ sudo apt-get update
-$ sudo apt-get install qemu-guest-agent
+sudo apt-get update
+sudo apt-get install qemu-guest-agent
 ```
 
 Redémarrez le VPS:
 
 ```bash
-$ sudo reboot
+sudo reboot
 ```
 
 Démarrez le service pour vous assurer qu'il est en cours d'exécution :
 
 ```bash
-$ sudo service qemu-guest-agent start
+sudo service qemu-guest-agent start
 ```
 
 ##### **Distributions Redhat (CentOS, Fedora)**
@@ -185,28 +191,28 @@ $ sudo service qemu-guest-agent start
 Utilisez la commande suivante pour vérifier si le système est correctement configuré pour les snapshots :
 
 ```bash
-$ file /dev/virtio-ports/org.qemu.guest_agent.0
+file /dev/virtio-ports/org.qemu.guest_agent.0
 /dev/virtio-ports/org.qemu.guest_agent.0: symbolic link to ../vport2p1
 ```
 
 Si le résultat est différent (« No such file or directory »), installez et activez l'agent :
 
 ```bash
-$ sudo yum install qemu-guest-agent
-$ sudo chkconfig qemu-guest-agent on
+sudo yum install qemu-guest-agent
+sudo chkconfig qemu-guest-agent on
 ```
 
 Redémarrez le VPS:
 
 ```bash
-$ sudo reboot
+sudo reboot
 ```
 
 Démarrez l'agent et vérifiez qu'il est en cours d'exécution :
 
 ```bash
-$ sudo service qemu-guest-agent start
-$ sudo service qemu-guest-agent status
+sudo service qemu-guest-agent start
+sudo service qemu-guest-agent status
 ```
 
 ##### **Windows**

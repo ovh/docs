@@ -11,7 +11,7 @@ updated: 2023-07-03
 
 ## Objective
 
-This guide explains how to provide a user with the minimum rights to allow her/him to log in to the OVHcloud Control Panel.
+This guide explains how to provide a user with the minimum rights to allow them to log in to the OVHcloud Control Panel.
 
 ## Requirements
 

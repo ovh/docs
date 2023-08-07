@@ -1,14 +1,12 @@
 ---
 title: 'Usar copias de seguridad automáticas en un servidor virtual privado (VPS)'
 excerpt: 'Cómo activar y usar la opción «Copia de seguridad automatizada» en el panel de control de OVHcloud'
-updated: 2022-11-15
+updated: 2023-08-07
 ---
 
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
-
-**Última actualización: 15/11/2022**
 
 ## Objetivo
 
@@ -93,7 +91,7 @@ Primero, conéctese a su servidor virtual privado (VPS) a través del protocolo/
 Puede utilizar el comando siguiente para verificar el nombre del nuevo dispositivo conectado:
 
 ```bash
-$ lsblk
+lsblk
 ```
 
 A continuación, un resultado de muestra de este comando:
@@ -114,11 +112,15 @@ En este ejemplo, la partición que contiene el sistema de archivos de la copia d
 A continuación, cree un directorio para esta partición y defínalo como el punto de montaje:
 
 ```bash
-$ mkdir -p /mnt/restore
-$ mount /dev/sdb1 /mnt/restore
+sudo mkdir -p /mnt/restore
+sudo mount /dev/sdb1 /mnt/restore
 ```
 
 Ahora, puede cambiar a esta carpeta y acceder a los datos de su copia de seguridad.
+
+Recuerde desmontar la copia de seguridad automática una vez que haya finalizado su uso. Haga clic en el botón `Desmontar el backup`{.action} en la pestaña `Backup automatizado`{.action} y acepte en la ventana que se abre.
+
+![unmount](images/backup_vps_unmount.png){.thumbnail}
 
 #### En Windows
 
@@ -140,6 +142,10 @@ Más adelante podrá acceder a la copia de seguridad montada en `Explorador de a
 
 ![file explorer](images/windowsbackup4.png){.thumbnail}
 
+Recuerde desmontar la copia de seguridad automática una vez que haya finalizado su uso. Haga clic en el botón `Desmontar el backup`{.action} en la pestaña `Backup automatizado`{.action} y acepte en la ventana que se abre.
+
+![unmount](images/backup_vps_unmount.png){.thumbnail}
+
 > [!warning]
 > Tenga en cuenta que se reiniciará el servidor al desmontar la copia de seguridad.
 >
@@ -159,27 +165,27 @@ La mayoría de las distribuciones no disponen por defecto de *qemu-guest* obliga
 Utilice el siguiente comando para comprobar si el sistema está configurado correctamente para los snapshots:
 
 ```bash
-$ file /dev/virtio-ports/org.qemu.guest_agent.0
+file /dev/virtio-ports/org.qemu.guest_agent.0
 /dev/virtio-ports/org.qemu.guest_agent.0: symbolic link to ../vport2p1
 ```
 
 Si el resultado es diferente (« No such file or directory »), instale la última versión del paquete:
 
 ```bash
-$ sudo apt-get update
-$ sudo apt-get install qemu-guest-agent
+sudo apt-get update
+sudo apt-get install qemu-guest-agent
 ```
 
 Reinicie el VPS:
 
 ```bash
-$ sudo reboot
+sudo reboot
 ```
 
 Inicie el servicio para garantizar que está en ejecución:
 
 ```bash
-$ sudo service qemu-guest-agent start
+sudo service qemu-guest-agent start
 ```
 
 ##### **Distribuciones Redhat (CentOS, Fedora)**
@@ -187,28 +193,28 @@ $ sudo service qemu-guest-agent start
 Utilice el siguiente comando para comprobar si el sistema está configurado correctamente para los snapshots:
 
 ```bash
-$ file /dev/virtio-ports/org.qemu.guest_agent.0
+file /dev/virtio-ports/org.qemu.guest_agent.0
 /dev/virtio-ports/org.qemu.guest_agent.0: symbolic link to ../vport2p1
 ```
 
 Si el resultado es diferente (« No such file or directory »), instale y active el software:
 
 ```bash
-$ sudo yum install qemu-guest-agent
-$ sudo chkconfig qemu-guest-agent on
+sudo yum install qemu-guest-agent
+sudo chkconfig qemu-guest-agent on
 ```
 
 Reinicie el VPS:
 
 ```bash
-$ sudo reboot
+sudo reboot
 ```
 
 Inicie el software y compruebe que está en ejecución:
 
 ```bash
-$ sudo service qemu-guest-agent start
-$ sudo service qemu-guest-agent status
+sudo service qemu-guest-agent start
+sudo service qemu-guest-agent status
 ```
 
 ##### **Windows**
