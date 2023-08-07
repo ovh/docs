@@ -12,8 +12,8 @@ Web server logs and website statistics are included in your Web Hosting plan, ea
 
 ## Requirements
 
-- an [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/)
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- An [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/)
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 
 ## Instructions
 
@@ -35,8 +35,7 @@ Click the `Create a new user`{.action} button in the `User Administration` secti
 
 ![hosting](images/user-statistics01.png){.thumbnail}
 
-
-To access your website's statistics with a user you have created, you must enter the following address by replacing `000` with your hosting cluster number and `mydomain.ovh` with your website's domain name (without the “www”):
+To access your website's statistics with a user you have created, you must enter the following address by replacing `000` with your hosting cluster number and `mydomain.ovh` with your website's domain name (without "www"):
 
 ```bash
 https://logs.cluster000.hosting.ovh.net/mydomain.ovh/
@@ -60,13 +59,13 @@ The **OVHcloud Web Statistics** tool helps you to track and control the traffic 
 
 The dashboard of OVHcloud Web Statistics is presented in 6 sections in the left-hand panel.
 
-- Dashboard: visualises the website traffic on your Web Hosting plan.
-- Browsers: shows a ranking of the most used internet browsers to view your sites.
-- Geolocalization: groups site visitors according to their location.
-- Requests: displays the ranking of the most visited pages on your sites.
-- Robots: visualises the automated attempts to connect to your sites.
-- Status: displays statistics of the failures and successes encountered, based on the HTTP codes returned.
-- FAQ: opens the section dedicated to frequently asked questions.
+- Dashboard: Visualises the website traffic on your Web Hosting plan.
+- Browsers: Shows a ranking of the most used internet browsers to view your sites.
+- Geolocalization: Groups site visitors according to their location.
+- Requests: Displays the ranking of the most visited pages on your sites.
+- Robots: Visualises the automated attempts to connect to your sites.
+- Status: Displays statistics of the failures and successes encountered, based on the HTTP codes returned.
+- FAQ: Opens the section dedicated to frequently asked questions.
 
 The `Period selection` box allows you to select a specific time frame.
 
@@ -96,11 +95,11 @@ Switch to the `General information`{.action} tab, then scroll to the bottom of t
 
 You can display different types of graphics from the drop-down menu in the top left-hand corner:
 
-- Outbound connections: requests sent from your website to an external website.
-- CPU usage: the level of processor consumption on your hosting instance.
-- Exceeding the resource threshold: indicates when your hosting exceeds its resource quota.
-- SQL requests: quantity of requests to your hosting database.
-- SQL response time: response time of requests sent to your hosting database.
+- Outbound connections: Requests sent from your website to an external website.
+- CPU usage: The level of processor consumption on your hosting instance.
+- Exceeding the resource threshold: Indicates when your hosting exceeds its resource quota.
+- SQL requests: Quantity of requests to your hosting database.
+- SQL response time: Response time of requests sent to your hosting database.
 
 ## Go further
 
