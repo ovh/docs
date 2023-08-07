@@ -1,10 +1,10 @@
 ---
 title: "Nutanix on OVHcloud - Documentation générale"
 excerpt: "Les détails techniques de la solution Nutanix on OVHcloud"
-updated: 2022-12-08
+updated: 2023-08-07
 ---
 
-**Dernière mise à jour le 08/12/2022**
+**Dernière mise à jour le 07/08/2023**
 
 ## Objectif
 
@@ -61,11 +61,11 @@ Cette VM utilise deux cartes réseau (dans le vRack), une pour le réseau privé
 La VM utilise des règles de NAT pour acheminer le trafic du réseau privé vers Internet.
 Vous pouvez donc l'utiliser pour le trafic sortant mais pas pour le trafic entrant.
 
-La passerelle OVHgateway est de conception légère, elle utilise 1 vCPU, 1 GB de mémoire et 11 GiB de stockage.
+La passerelle OVHgateway est de conception légère, elle utilise 1 vCPU, 1 GB de mémoire et 1 GiB de stockage.
 
 La bande passante pour accéder à Internet est de 1 Gb/s.
 
-Pour remplacer cette machine virtuelle par un autre système d'exploitation réseau, consultez ce guide : [Remplacement de l'OVHgateway](/pages/cloud/nutanix/30-software-gateway-replacement).
+Cette machine n'a pour but que de vous permettre de télécharger vos premières sources (iso windows, appliances, etc) vous devrez remplacer cette machine virtuelle par un autre système d'exploitation, consultez ce guide : [Remplacement de l'OVHgateway](/pages/cloud/nutanix/30-software-gateway-replacement).
 
 ### Prism Central Access
 

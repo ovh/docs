@@ -36,7 +36,7 @@ Nous allons activer CALM, créer deux applications pour notre cluster Nutanix et
 
 ### Activation de CALM
 
-Avant de déployer CALM, il faut configurer une adresse IP pour le **ISCSI Data Services IP**.
+Avant de déployer CALM, vérifiez l'adresse IP pour le **ISCSI Data Services IP**.
 
 Depuis le tableau de bord Prism Central, cliquez sur votre `Cluster`{.action} dans la rubrique **Cluster Quick Access**.
 
@@ -46,7 +46,7 @@ Dans Prism Element, cliquez en haut à gauche sur les `paramètres de votre clus
 
 ![00 Activate CALM 02](images/00-activate-calm02.png){.thumbnail}
 
-Saisissez une `adresse IP`{.action} dans **ISCSI Data Services IP** (elle ne doit pas être utilisée dans l'étendue du réseau d'administration) puis cliquez sur `Save`{.action}.
+Vérifiez l'adresse IP dans **ISCSI Data Services IP**.
 
 ![00 Activate CALM 03](images/00-activate-calm03.png){.thumbnail}
 
