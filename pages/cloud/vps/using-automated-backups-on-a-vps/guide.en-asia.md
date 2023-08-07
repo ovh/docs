@@ -1,10 +1,8 @@
 ---
 title: 'Using automatic backups on a VPS'
 excerpt: 'Find out how to enable and use the Automated Backup option in the OVHcloud Control Panel'
-updated: 2022-11-15
+updated: 2023-08-07
 ---
-
-**Last updated 15th November 2022**
 
 ## Objective
 
@@ -88,7 +86,7 @@ First, connect to your VPS via SSH.
 You can use the following command to verify the name of the newly attached device:
 
 ```bash
-$ lsblk
+lsblk
 ```
 
 Here is a sample output of this command:
@@ -109,8 +107,8 @@ In this example, the partition containing your backup filesystem is named "sdb1"
 Next, create a directory for this partition and define it as the mountpoint:
 
 ```bash
-$ mkdir -p /mnt/restore
-$ mount /dev/sdb1 /mnt/restore
+sudo mkdir -p /mnt/restore
+sudo mount /dev/sdb1 /mnt/restore
 ```
 
 You can now switch to this folder and access your backup data.
@@ -152,27 +150,27 @@ The required *qemu-guest-agent* is not installed by default on most distribution
 Use the following command to check whether the system is properly set up for snapshots:
 
 ```bash
-$ file /dev/virtio-ports/org.qemu.guest_agent.0
+file /dev/virtio-ports/org.qemu.guest_agent.0
 /dev/virtio-ports/org.qemu.guest_agent.0: symbolic link to ../vport2p1
 ```
 
 If the output is different ("No such file or directory"), install the latest package:
 
 ```bash
-$ sudo apt-get update
-$ sudo apt-get install qemu-guest-agent
+sudo apt-get update
+sudo apt-get install qemu-guest-agent
 ```
 
 Reboot the VPS:
 
 ```bash
-$ sudo reboot
+sudo reboot
 ```
 
 Start the service to ensure it is running:
 
 ```bash
-$ sudo service qemu-guest-agent start
+sudo service qemu-guest-agent start
 ```
 
 ##### **Redhat-based distributions (Centos, Fedora)**
@@ -180,28 +178,28 @@ $ sudo service qemu-guest-agent start
 Use the following command to check whether the system is properly set up for snapshots:
 
 ```bash
-$ file /dev/virtio-ports/org.qemu.guest_agent.0
+file /dev/virtio-ports/org.qemu.guest_agent.0
 /dev/virtio-ports/org.qemu.guest_agent.0: symbolic link to ../vport2p1
 ```
 
 If the output is different ("No such file or directory"), install and enable the agent:
 
 ```bash
-$ sudo yum install qemu-guest-agent
-$ sudo chkconfig qemu-guest-agent on
+sudo yum install qemu-guest-agent
+sudo chkconfig qemu-guest-agent on
 ```
 
 Reboot the VPS:
 
 ```bash
-$ sudo reboot
+sudo reboot
 ```
 
 Start the agent and verify that it is running:
 
 ```bash
-$ sudo service qemu-guest-agent start
-$ sudo service qemu-guest-agent status
+sudo service qemu-guest-agent start
+sudo service qemu-guest-agent status
 ```
 
 ##### **Windows**

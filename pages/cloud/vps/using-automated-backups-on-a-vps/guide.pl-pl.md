@@ -1,14 +1,12 @@
 ---
 title: 'Korzystanie z automatycznych kopii zapasowych na prywatnym serwerze wirtualnym'
 excerpt: 'Dowiedz się, jak włączyć opcję "Automatyczne kopie zapasowe" w Panelu klienta OVHcloud i korzystać z niej'
-updated: 2022-11-15
+updated: 2023-08-07
 ---
 
 > [!primary]
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
 >
-
-**Ostatnia aktualizacja z dnia: 15-11-2022**
 
 ## Wprowadzenie
 
@@ -92,7 +90,7 @@ Najpierw połącz się z prywatnym serwerem wirtualnym przy użyciu protokołu S
 Aby zweryfikować nazwę nowo przyłączonego urządzenia, użyj następującego polecenia:
 
 ```bash
-$ lsblk
+lsblk
 ```
 
 Przykład danych wyświetlonych po wykonaniu tego polecenia:
@@ -113,11 +111,15 @@ W tym przykładzie partycja zawierająca system plików kopii zapasowej ma nazw�
 Następnie utwórz katalog dla tej partycji i zdefiniuj go jako punkt montowania:
 
 ```bash
-$ mkdir -p /mnt/restore
-$ mount /dev/sdb1 /mnt/restore
+sudo mkdir -p /mnt/restore
+sudo mount /dev/sdb1 /mnt/restore
 ```
 
 Teraz możesz się przełączyć do tego folderu i uzyskać dostęp do danych kopii zapasowej.
+
+Pamiętaj, aby odmontować automatyczną kopię zapasową po zakończeniu korzystania z niej. Kliknij przycisk `Odmontuj backup`{.action} w zakładce `Zautomatyzowany backup`{.action}, następnie zatwierdź w oknie, które się wyświetli.
+
+![unmount](images/backup_vps_unmount.png){.thumbnail}
 
 #### Windows
 
@@ -139,6 +141,10 @@ Następnie zamontowana kopia zapasowa będzie dostępna w `Eksplorator plików`.
 
 ![file explorer](images/windowsbackup4.png){.thumbnail}
 
+Pamiętaj, aby odmontować automatyczną kopię zapasową po zakończeniu korzystania z niej. Kliknij przycisk `Odmontuj backup`{.action} w zakładce `Zautomatyzowany backup`{.action}, następnie zatwierdź w oknie, które się wyświetli.
+
+![unmount](images/backup_vps_unmount.png){.thumbnail}
+
 > [!warning]
 > Podczas odmontowywania kopii zapasowej nastąpi restart serwera.
 >
@@ -158,27 +164,27 @@ Wymagany *qemu-guest-agent* nie jest domyślnie zainstalowany na większości dy
 Wprowadź poniższą komendę, aby sprawdzić, czy system został poprawnie skonfigurowany pod kątem tworzenie migawek:
 
 ```bash
-$ file /dev/virtio-ports/org.qemu.guest_agent.0
+file /dev/virtio-ports/org.qemu.guest_agent.0
 /dev/virtio-ports/org.qemu.guest_agent.0: symbolic link to ../vport2p1
 ```
 
 Jeśli wynik jest inny (“No such file or directory”), zainstaluj najnowszy pakiet:
 
 ```bash
-$ sudo apt-get update
-$ sudo apt-get install qemu-guest-agent
+sudo apt-get update
+sudo apt-get install qemu-guest-agent
 ```
 
 Zrestartuj serwer VPS:
 
 ```bash
-$ sudo reboot
+sudo reboot
 ```
 
 Uruchom usługę, aby upewnić się, że działa:
 
 ```bash
-$ sudo service qemu-guest-agent start
+sudo service qemu-guest-agent start
 ```
 
 ##### **Dystrybucje Redhat (CentOS, Fedora)**
@@ -186,28 +192,28 @@ $ sudo service qemu-guest-agent start
 Wprowadź poniższą komendę, aby sprawdzić, czy system został poprawnie skonfigurowany pod kątem tworzenie migawek:
 
 ```bash
-$ file /dev/virtio-ports/org.qemu.guest_agent.0
+file /dev/virtio-ports/org.qemu.guest_agent.0
 /dev/virtio-ports/org.qemu.guest_agent.0: symbolic link to ../vport2p1
 ```
 
 Jeśli wynik jest inny (“No such file or directory”), zainstaluj i aktywuj agenta:
 
 ```bash
-$ sudo yum install qemu-guest-agent
-$ sudo chkconfig qemu-guest-agent on
+sudo yum install qemu-guest-agent
+sudo chkconfig qemu-guest-agent on
 ```
 
 Zrestartuj serwer VPS:
 
 ```basj
-$ sudo reboot
+sudo reboot
 ```
 
 Uruchom agenta i sprawdź, czy działa:
 
 ```bash
-$ sudo service qemu-guest-agent start
-$ sudo service qemu-guest-agent status
+sudo service qemu-guest-agent start
+sudo service qemu-guest-agent status
 ```
 
 ##### **Windows**

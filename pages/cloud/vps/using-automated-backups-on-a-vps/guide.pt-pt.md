@@ -1,14 +1,12 @@
 ---
 title: 'Utilizar backups automáticos num alojamento VPS'
 excerpt: 'Saiba como ativar e utilizar a opção Backup Automático na Área de Cliente OVHcloud'
-updated: 2022-11-15
+updated: 2023-08-07
 ---
 
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
-
-**Última atualização: 15/11/2022**
 
 ## Sumário
 
@@ -93,7 +91,7 @@ Primeiro, conecte-se ao seu alojamento VPS via SSH.
 Pode utilizar o seguinte comando para verificar o nome do novo dispositivo adicionado:
 
 ```bash
-$ lsblk
+lsblk
 ```
 
 Aqui está um exemplo deste comando:
@@ -114,11 +112,15 @@ Neste exemplo, a partição que contém o backup do seu “filesystem” designa
 Em seguida, crie um diretório para esta partição e defina-o como “mountpoint”:
 
 ```bash
-$ mkdir -p /mnt/restore
-$ mount /dev/sdb1 /mnt/restore
+sudo mkdir -p /mnt/restore
+sudo mount /dev/sdb1 /mnt/restore
 ```
 
 Pode agora passar para esta pasta e aceder aos dados do seu backup.
+
+Não se esqueça de desmontar a cópia de segurança automática depois de utilizar a cópia de segurança. Clique no botão `Remover o backup`{.action} no separador `Backup automatizado`{.action} e valide na janela que é apresentada.
+
+![unmount](images/backup_vps_unmount.png){.thumbnail}
 
 #### Em Windows
 
@@ -140,6 +142,10 @@ A seguir, o seu backup será acessível ao `Explorador de ficheiros`.
 
 ![fila exploradora](images/windowsbackup4.png){.thumbnail}
 
+Não se esqueça de desmontar a cópia de segurança automática depois de utilizar a cópia de segurança. Clique no botão `Remover o backup`{.action} no separador `Backup automatizado`{.action} e valide na janela que é apresentada.
+
+![unmount](images/backup_vps_unmount.png){.thumbnail}
+
 > [!warning]
 > Tenha em conta que o servidor será reiniciado durante a desmontagem do backup.
 >
@@ -159,27 +165,27 @@ Na maioria das distribuições, o *comutador* necessário não está instalado d
 Utilize o seguinte comando para verificar se o sistema está corretamente configurado para as snapshots:
 
 ```bash
-$ file /dev/virtio-ports/org.qemu.guest_agent.0
+file /dev/virtio-ports/org.qemu.guest_agent.0
 /dev/virtio-ports/org.qemu.guest_agent.0: symbolic link to ../vport2p1
 ```
 
 Se o resultado for diferente (“No such file or directory”), instale a última versão do pacote:
 
 ```bash
-$ sudo apt-get update
-$ sudo apt-get install qemu-guest-agent
+sudo apt-get update
+sudo apt-get install qemu-guest-agent
 ```
 
 Reinicie a VPS:
 
 ```bash
-$ sudo reboot
+sudo reboot
 ```
 
 Inicie o serviço para garantir que está a ser executado:
 
 ```bash
-$ sudo service qemu-guest-agent start
+sudo service qemu-guest-agent start
 ```
 
 ##### **Distributions Redhat (CentOS, Fedora)**
@@ -187,28 +193,28 @@ $ sudo service qemu-guest-agent start
 Utilize o seguinte comando para verificar se o sistema está corretamente configurado para as snapshots:
 
 ```bash
-$ file /dev/virtio-ports/org.qemu.guest_agent.0
+file /dev/virtio-ports/org.qemu.guest_agent.0
 /dev/virtio-ports/org.qemu.guest_agent.0: symbolic link to ../vport2p1
 ```
 
 Se o resultado for diferente (“No such file or directory”), instale e ative o agente:
 
 ```bash
-$ sudo yum install qemu-guest-agent
-$ sudo chkconfig qemu-guest-agent on
+sudo yum install qemu-guest-agent
+sudo chkconfig qemu-guest-agent on
 ```
 
 Reinicie a VPS:
 
 ```bash
-$ sudo reboot
+sudo reboot
 ```
 
 Inicie o agente e verifique que está a ser executado:
 
 ```bash
-$ sudo service qemu-guest-agent start
-$ sudo service qemu-guest-agent status
+sudo service qemu-guest-agent start
+sudo service qemu-guest-agent status
 ```
 
 ##### **Windows**
