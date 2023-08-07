@@ -27,6 +27,8 @@ Pour pouvoir se connecter à l'espace client OVHcloud, un utilisateur doit dispo
 - account:apiovh:me/supportLevel/get
 - account:apiovh:me/certificates/get
 - account:apiovh:me/tag/get
+- account:apiovh:me/preferences/manager/get
+- account:apiovh:cloud/migrationStein/get
 
 Grâce à ces droits, un utilisateur pourra se connecter à l'espace client. Cependant, pour pouvoir effectuer des actions à l’intérieur de celui-ci, des droits supplémentaires doivent être attribués via IAM.
 
@@ -68,6 +70,12 @@ L'API vous permet de mettre en place une policy selon l'exemple suivant :
       },
       {
         "action": "account:apiovh:me/tag/get"
+      },
+      {
+        "action": "account:apiovh:me/preferences/manager/get"
+      },
+      {
+        "action": "account:apiovh:cloud/migrationStein/get"
       }
     ]
   }

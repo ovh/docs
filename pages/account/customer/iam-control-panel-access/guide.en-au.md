@@ -27,6 +27,8 @@ To be able to log in to the OVHcloud Control Panel, a user should have at least 
 - account:apiovh:me/supportLevel/get
 - account:apiovh:me/certificates/get
 - account:apiovh:me/tag/get
+- account:apiovh:me/preferences/manager/get
+- account:apiovh:cloud/migrationStein/get
 
 With these rights, a user will be able to log in to the OVHcloud Control Panel. To be able to perform any actions inside the Control Panel however, additional rights have to be assigned through IAM.
 
