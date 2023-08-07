@@ -1,7 +1,7 @@
 ---
 title: Configurer un enregistrement DMARC sur votre nom de domaine
 excerpt: Découvrez comment fonctionne DMARC et comment le mettre en place pour votre service e-mail
-updated: 2023-06-30
+updated: 2023-08-07
 ---
 
 ## Objectif
@@ -13,7 +13,6 @@ L'enregistrement **D**omain-based **M**essage **A**uthentication, **R**eporting,
 ## Prérequis
 
 - Disposer d'un accès à la gestion du nom de domaine (attaché à votre solution e-mail) depuis l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
-- Disposer d'une solution e-mail compatible avec le DMARC.
 - Un des mécanismes d'authentification, [SPF](/pages/web/domains/dns_zone_spf) et/ou [DKIM](/pages/web/domains/dns_zone_dkim) doit être configuré dans la zone DNS du nom de domaine de l'offre e-mail.
 
 ## En pratique
