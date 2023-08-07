@@ -39,8 +39,7 @@ Klicken Sie im Bereich `Verwaltung der Nutzer` auf den Button `Einen neuen Nutze
 
 ![Hosting](images/user-statistics01.png){.thumbnail}
 
-
-Um mit einem von Ihnen erstellten Benutzer auf die Statistiken Ihrer Website zuzugreifen, müssen Sie die folgende Adresse eingeben und `000` durch die Nummer des Clusters Ihres Hostings und `mydomain.ovh` durch den Domainnamen Ihrer Website ersetzen (ohne die „www“):
+Um mit einem von Ihnen erstellten Benutzer auf die Statistiken Ihrer Website zuzugreifen, geben Sie die folgende Adresse ein. Ersetzen Sie dabei `000` mit der Cluster-Nummer Ihres Hostings und `mydomain.ovh` mit dem Domainnamen Ihrer Website (ohne "www""):
 
 ```bash
 https://logs.cluster000.hosting.ovh.net/mydomain.ovh/
@@ -65,13 +64,13 @@ Das **OVHcloud Web Statistics** Tool hilft Ihnen dabei, den Traffic der auf Ihre
 
 Das Dashboard von OVHcloud Web Statistics ist in 6 Abschnitte im linken Bereich aufgeteilt.
 
-- Dashboard: visualisiert den Traffic der Website auf Ihrem Webhosting.
-- Browsers: zeigt ein Ranking der Webbrowser an, die am häufigsten für die Anzeige Ihrer Websites verwendet werden.
-- Geolocalization: gruppiert die Besucher der Website je nach Standort.
-- Requests: zeigt ein Ranking der Seiten an, die am häufigsten auf Ihren Webseiten besucht werden.
-- Robots: visualisiert automatische Verbindungsversuche zu Ihren Webseiten.
-- Status: zeigt Statistiken über Fehlschläge und Erfolge an, die anhand der zurückgegebenen HTTP-Codes ermittelt wurden.
-- FAQ: öffnet den Bereich für häufig gestellte Fragen.
+- Dashboard: Visualisiert den Traffic der Website auf Ihrem Webhosting.
+- Browsers: Zeigt ein Ranking der Webbrowser an, die am häufigsten für die Anzeige Ihrer Websites verwendet werden.
+- Geolocalization: Gruppiert die Besucher der Website je nach Standort.
+- Requests: Zeigt ein Ranking der Seiten an, die am häufigsten auf Ihren Webseiten besucht werden.
+- Robots: Visualisiert automatische Verbindungsversuche zu Ihren Webseiten.
+- Status: Zeigt Statistiken über Fehlschläge und Erfolge an, die anhand der zurückgegebenen HTTP-Codes ermittelt wurden.
+- FAQ: Öffnet den Bereich für häufig gestellte Fragen.
 
 Mit `Period selection` können Sie einen bestimmten Zeitraum auswählen.
 
