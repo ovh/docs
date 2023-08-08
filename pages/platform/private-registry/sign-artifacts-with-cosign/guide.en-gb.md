@@ -112,7 +112,7 @@ Public key written to cosign.pub
 </code></pre>
 
 > [!primary]
-> In this guide we generated a private key locally. In production environment, you can obviously generate the private key and store it in a key management storage such as a Vault or KMS.
+> In this guide we generated a private key locally. In a production environment, you can obviously generate the private key and store it in a key management storage such as a Vault or KMS.
 
 ### Sign your OCI artifact (container image)
 

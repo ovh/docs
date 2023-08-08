@@ -6,8 +6,6 @@ routes:
 updated: 2023-08-08
 ---
 
-**Last updated 08th August 2023**
-
 <style>
  pre {
      font-size: 14px;
@@ -30,29 +28,31 @@ updated: 2023-08-08
  }
 </style>
 
-OVHcloud Managed Private Registry service, a cloud-native registry, built on Harbor, allows you to store, manage and access your container images (OCI artifacts) and Helm charts.
+## Objective
+
+OVHcloud Managed Private Registry service, a cloud-native registry built on Harbor, allows you to store, manage and access your container images (OCI artifacts) and Helm charts.
 
 Security is an important topic and through artifact signing and signature verification you can increase the security of your OVHcloud Managed Private Registries by verifying the integrity of an artifact.
 
-Since v2.5+ Harbor supports [Cosign](https://github.com/sigstore/cosign), a OCI (Open Container Initiative) artifact signing and verification solution that is part of the [Sigstore project](https://github.com/sigstore).
+Since v2.5+ Harbor supports [Cosign](https://github.com/sigstore/cosign), an OCI (Open Container Initiative) artifact signing and verification solution that is part of the [Sigstore project](https://github.com/sigstore).
 
 > [!primary]
 >
 > Harbor has started the deprecation of Notary in Harbor 2.6, it will be removed in Harbor v2.8, so you must use Cosign to sign container images and Helm charts.
 
-Compared to Notary, Cosign is really easy to use and one advantage to use it is the ability using Harbor’s replication capabilities to replicate signatures with their associated signed artifact.
+Compared to Notary, Cosign is really easy to use and one advantage to use it is the ability to use Harbor’s replication capabilities to replicate signatures with their associated signed artifact.
 
 **This guide will explain how to sign artifacts with Cosign in an OVHcloud Managed Private Registry service.**
 
 ## Requirements
 
-* An OVHcloud Managed Private Registry (version 2.5+)
-* The URL and login/password of your private registry
-* an image stored in your registry
+- An OVHcloud Managed Private Registry (version 2.5+)
+- The URL and login/password of your private registry
+- An image stored in your registry
 
 This tutorial presupposes that you already have a working OVHcloud Managed Private Registry and you have followed the guides on [creating a private registry](/pages/platform/private-registry/creating-a-private-registry), [connecting to the UI](/pages/platform/private-registry/connecting-to-the-ui), [managing users and projects](/pages/platform/private-registry/managing-users-and-projects) and [creating and using private images](/pages/platform/private-registry/creating-and-using-a-private-image).
 
-At this time you should have a running Private Registry in version 2.5 minimum, with a stored image and you can access to your private registry.
+You should also have a running Private Registry in version 2.5 minimum, with a stored image and access to your private registry.
 
 ![Docker image in OVHcloud Managed Private Registry](images/image-stored.png)
 
@@ -114,7 +114,7 @@ Public key written to cosign.pub
 </code></pre>
 
 > [!primary]
-> In this guide we generated a private key locally but in production environment you can, obviously, generate the private key and store it in a key management storage like a Vault or KMS.
+> In this guide we generated a private key locally. In a production environment, you can obviously generate the private key and store it in a key management storage such as a Vault or KMS.
 
 ### Sign your OCI artifact (container image)
 
@@ -148,16 +148,16 @@ Pushing signature to: xxxxxx.c1.gra9.container-registry.ovh.net/library/hello-ov
 
 ### Verify the image is signed with Cosign
 
-In order to verify if your image is well signed, login in your private registry (in the Harbor UI), click in **Projects**, your project, your image and then you will see a new green check mark:
+In order to verify if your image is well signed, log in to your private registry (in the Harbor UI), click in `Projects`{.action}, your project, your image and then you will see a new green check mark:
 
 ![Docker image signed in OVHcloud Managed Private Registry](images/image-signed.png)
 
-Clicking in the ">" icon display the associated cosign signature information:
+Clicking in the `>`{.action} icon displays the associated cosign signature information:
 
 ![Docker image cosign signature in OVHcloud Managed Private Registry](images/image-cosign-signature.png)
 
 ## Go further
 
-To have an overview of OVHcloud Managed Private Registry service, you can consult the [OVHcloud Managed Private Registry site](/products/public-cloud-containers-orchestration-managed-private-registry).
+To have an overview of OVHcloud Managed Private Registry service, read the [OVHcloud Managed Private Registry documentation](/products/public-cloud-containers-orchestration-managed-private-registry).
 
 Join our community of users on <https://community.ovh.com/en/>.
