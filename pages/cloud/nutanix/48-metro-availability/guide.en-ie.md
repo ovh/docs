@@ -1,10 +1,8 @@
 ---
 title: "Configuring Disaster Recovery with Metro"
 excerpt: "Implementing Metro for a Disaster Recovery Plan"
-updated: 2023-05-09
+updated: 2023-08-08
 ---
-
-**Last updated 9th May 2023**
 
 ## Objective
 
@@ -329,7 +327,7 @@ On the Prism Element dashboard, click the `cluster name`{.action} in the top lef
 
 ![03 - Add iscsi address Erith 02](images/03-add-iscsi-address-erith02.png){.thumbnail}
 
-Scroll down the window, add an "unused IP address" to `ISCSI Data Services IP`, and click `Save`{.action}.
+Scroll down the window and check the IP address in `ISCSI Data Services IP`.
 
 ![03 - Add iscsi address Erith 03](images/03-add-iscsi-address-erith03.png){.thumbnail}
 
@@ -341,7 +339,7 @@ On the Prism Element dashboard, click "the cluster name" in the top left-hand co
 
 ![03 - Add iscsi address Gravelines 02](images/03-add-iscsi-address-gravelines02.png){.thumbnail}
 
-Scroll down the window, add an "unused IP" address to `ISCSI Data Services IP`, and click `Save`{.action}.
+Scroll down the window and check the IP address in `ISCSI Data Services IP`.
 
 ![03 - Add iscsi address graveline 03](images/03-add-iscsi-address-gravelines03.png){.thumbnail}
 
@@ -353,7 +351,7 @@ On the Prism Element dashboard, click the "cluster name" in the top left-hand co
 
 ![03 - Add iscsi address Roubaix 02](images/03-add-iscsi-address-roubaix02.png){.thumbnail}
 
-Scroll down the window, add an « unused IP address » to `ISCSI Data Services IP`, and click `Save`{.action}.
+Scroll down the window and check the IP address in `ISCSI Data Services IP`.
 
 ![03 - Add iscsi address Roubaix 03](images/03-add-iscsi-address-roubaix03.png){.thumbnail}
 
