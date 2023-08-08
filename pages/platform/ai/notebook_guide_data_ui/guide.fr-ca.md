@@ -3,10 +3,10 @@ title: "AI Notebooks - Se servir de données dans un notebook via l'espace clien
 excerpt: Découvrez comment gérer et accéder aux données de votre Object Storage depuis votre AI Notebooks
 routes:
     canonical: '/pages/platform/ai/notebook_guide_data_ui'
-updated: 2022-04-13
+updated: 2023-08-08
 ---
 
-**Last updated 13th April, 2022.**
+**Last updated 08th August, 2023.**
 
 ## Objective
 

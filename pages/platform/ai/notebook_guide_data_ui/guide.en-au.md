@@ -1,10 +1,10 @@
 ---
 title: AI Notebooks - Manage and use data in a notebook via UI
 excerpt: Learn how to manage and access data from your Object Storage in your Notebook
-updated: 2022-04-13
+updated: 2023-08-08
 ---
 
-**Last updated 13th April, 2022.**
+**Last updated 08th August, 2023.**
 
 ## Objective
 
