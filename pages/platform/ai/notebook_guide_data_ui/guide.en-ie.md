@@ -1,10 +1,10 @@
 ---
 title: AI Notebooks - Manage and use data in a notebook via UI
 excerpt: Learn how to manage and access data from your Object Storage in your Notebook
-updated: 2022-04-13
+updated: 2023-08-08
 ---
 
-**Last updated 13th April, 2022.**
+**Last updated 08th August, 2023.**
 
 ## Objective
 
@@ -34,6 +34,11 @@ To upload your data, go to `Create an object container`.
 Let's assume that a file named `my-dataset.zip` exists locally on your computer and contains your dataset. You will be able to upload it into an object container in your Object Storage by following these steps.
 
 ### 1- Select your solution
+
+> [!warning]
+>
+> If you choose an S3 solution, please note that they are not yet compatible with our AI products from the Control Panel. **To use S3 buckets, you will need to use [ovhai](/pages/platform/ai/cli_10_howto_install_cli)**. The Control Panel allows you to use Swift containers only.
+>
 
 If you want to know more about the different storage solutions, refer to this [page](/products/storage-backup).
 
@@ -107,6 +112,11 @@ You can choose between *2 datacenters* for the storage of your notebook: `GRA` o
 ### Attach container or a Git repository
 
 You can attach your different types of data to your notebook.
+
+> [!warning]
+>
+> As mentioned before, S3 buckets are not yet compatible with our AI products from the Control Panel. To use S3 solutions, you will need to use [ovhai](/pages/platform/ai/cli_10_howto_install_cli)**.
+>
 
 #### Access with Read-Only permissions
 
