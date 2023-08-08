@@ -3,10 +3,8 @@ title: Using Terraform with OVHcloud (EN)
 excerpt: Find out about useful resources in order to use Terraform with OVHcloud
 routes:
     canonical: '/pages/account/api/terraform-at-ovhcloud'
-updated: 2023-02-28
+updated: 2023-08-07
 ---
-
-**Last updated 28th February 2023**
 
 ## Introduction
 
@@ -25,7 +23,7 @@ Based on your automation needs at OVHcloud, you have to pick one or more of the 
 - [Hashicorp AWS provider](https://registry.terraform.io/providers/hashicorp/aws/latest/) to automate the operations of the S3 Object Storage.
 - [Hashicorp Kubernetes provider](https://registry.terraform.io/providers/hashicorp/kubernetes/latest) : once you have provisionned a Kubernetes cluster with OVH provider, you can manage your Kubernetes configuration with this provider.
 - [Hashicorp vSphere provider](https://registry.terraform.io/providers/hashicorp/vsphere/latest) to automate the operations of OVHcloud [Hosted Private Cloud powered by VMware](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/).
-- [Nutanix provider](https://registry.terraform.io/providers/nutanix/nutanix/latest) to automate the operations of OVHcloud [Hosted Private Cloud powered by Nutanix](https://www.ovhcloud.com/fr/hosted-private-cloud/nutanix/).
+- [Nutanix provider](https://registry.terraform.io/providers/nutanix/nutanix/latest) to automate the operations of OVHcloud [Nutanix on OVHcloud](https://www.ovhcloud.com/fr/hosted-private-cloud/nutanix/).
 
 ## Mapping OVHcloud GUI to Terraform providers & resources
 
@@ -95,7 +93,7 @@ OVHcloud console GUI (also called "Control Panel" or "Manager") hides some backg
 |Managed Kubernetes Service - Application deployment operations|Hashicorp Kubernetes|[kubernetes_namespace](https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs/resources/namespace) [kubernetes_deployment](https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs/resources/deployment)|
 |Kubernetes Load Balancer|Hashicorp kubernetes|[kubernetes_service](https://registry.terraform.io/providers/hashicorp/kubernetes/latest/docs/resources/service) as described in this [tutorial](/pages/platform/kubernetes-k8s/using-lb)|
 |Managed Private Registry|ovh|[ovh_cloud_project_containerregistry](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/cloud_project_containerregistry)<br/>[ovh_cloud_project_containerregistry_user](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/cloud_project_containerregistry_user)|
-|Workflow Management|ovh|not available (see this [feature request](https://github.com/ovh/terraform-provider-ovh/issues/330) on ovh provider project)|
+|Workflow Management|ovh|[cloud_project_workflow_backup](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/cloud_project_workflow_backup)|
 
 #### AI & Machine Learning
 
@@ -110,7 +108,7 @@ OVHcloud console GUI (also called "Control Panel" or "Manager") hides some backg
 | Control Panel concept | Terraform provider(s) | Resource or Data Source  |
 | --- | --- | --- |
 | Data Processing | not available||
-| Logs Data Platform | ovh | partially available :<br/>- [ovh_dbaas_logs_graylog_output_stream](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/dbaas_logs_graylog_output_stream) <br/> - [ovh_dbaas_logs_input](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/dbaas_logs_input) <br/>- [data source] [ovh_dbaas_logs_input_engine](https://registry.terraform.io/providers/ovh/ovh/latest/docs/data-sources/dbaas_logs_input_engine)
+| Logs Data Platform | ovh | partially available :<br/>- [ovh_dbaas_logs_graylog_output_stream](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/dbaas_logs_graylog_output_stream) <br/> - [ovh_dbaas_logs_input](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/dbaas_logs_input) <br/>- [ovh_dbaas_logs_cluster](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/dbaas_logs_cluster) <br/>- [data source] [ovh_dbaas_logs_input_engine](https://registry.terraform.io/providers/ovh/ovh/latest/docs/data-sources/dbaas_logs_input_engine)|
 
 #### Settings
 
@@ -157,6 +155,23 @@ OVHcloud console GUI (also called "Control Panel" or "Manager") hides some backg
 ### Telecom
 
 This universe is currently not supported by Terraform providers
+
+### My account
+
+#### My profile
+
+| Control Panel concept | Terraform provider(s) | Resource or Data Source  |
+| --- | --- | --- |
+| Profile | ovh | [data source] [ovh_me](https://registry.terraform.io/providers/ovh/ovh/latest/docs/data-sources/me)|
+| Payment method | ovh |- [data source] [ovh_me_paymentmean_bankaccount](https://registry.terraform.io/providers/ovh/ovh/latest/docs/data-sources/me_paymentmean_bankaccount) <br/>- [data source] [ovh_me_paymentmean_creditcard](https://registry.terraform.io/providers/ovh/ovh/latest/docs/data-sources/me_paymentmean_creditcard)|
+
+#### Identity and Access Management (IAM)
+
+| Control Panel concept | Terraform provider(s) | Resource or Data Source  |
+| --- | --- | --- |
+| Policies | ovh |[ovh_iam_policy](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/iam_policy)|
+|Identities| ovh |- [data source] [ovh_me_identity_user](https://registry.terraform.io/providers/ovh/ovh/latest/docs/data-sources/me_identity_user) <br/>- [data source] [ovh_me_identity_group](https://registry.terraform.io/providers/ovh/ovh/latest/docs/data-sources/me_identity_group)| 
+|Resource groups | not available | |
 
 ## Resources
 
