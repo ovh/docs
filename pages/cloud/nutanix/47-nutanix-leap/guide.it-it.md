@@ -3,10 +3,8 @@ title: Replica avanzata con Leap (EN)
 excerpt: Implementing advanced replication with Leap
 routes:
     canonical: '/pages/cloud/nutanix/47-nutanix-leap'
-updated: 2022-07-18
+updated: 2023-08-08
 ---
-
-**Last updated 18th July 2022**
 
 ## Objective
 
@@ -34,7 +32,7 @@ Nutanix Leap allows:
 - Access to your clusters via **Prism Central**
 - An interconnection between two clusters, for example using these technologies:
     - via an IPsec VPN as detailed in the guide [Interconnecting IPsec between two sites](/pages/cloud/nutanix/44-ipsec-interconnection)
-    - or via a [vRack](https://www.ovh.it/soluzioni/vrack/) connection.
+    - or via a [vRack](https://www.ovhcloud.com/it/network/vrack/) connection.
 - **Prism Central** needs more resources depending on the mode:
     - Single Mode: 4GB additional RAM.
     - Scale Mode with 3 **Prism Central** virtual machines: 8 GB additional RAM per virtual machine.
@@ -61,7 +59,7 @@ In the top left-hand corner of the **Prism Element** dashboard, click `the clust
 
 ![00 Add iSCSI address in FRANCE01](images/00-isci-add-address-france01.png){.thumbnail}
 
-Enter an unused IP `address from the management network `in the **iSCSI Data Service IP** field and click `Save`{.action}.
+Check the IP address in the **iSCSI Data Service IP** field.
 
 ![00 Add iSCSI address in FRANCE01](images/00-isci-add-address-france02.png){.thumbnail}
 
@@ -71,7 +69,7 @@ In the top left-hand corner of the **Prism Element** dashboard, click `The clust
 
 ![01 Add iSCSI address in Canada01](images/01-isci-add-address-canada01.png){.thumbnail}
 
-Enter `an unused IP address from the management network `in the **iSCSI Data Service IP** field and click `Save`{.action}.
+Check the IP address in the **iSCSI Data Service IP** field.
 
 ![01 Add iSCSI address in Canada02](images/01-isci-add-address-canada02.png){.thumbnail}
 
@@ -509,7 +507,7 @@ The virtual machine that is a member of the disaster recovery plan will boot to 
 
 [IPsec interconnect between two sites](/pages/cloud/nutanix/44-ipsec-interconnection)
 
-[OVHcloud vRack](https://www.ovh.it/soluzioni/vrack/)
+[OVHcloud vRack](https://www.ovhcloud.com/it/network/vrack/)
 
 [Nutanix Leap documentation](https://portal.nutanix.com/page/documents/details?targetId=Leap-Xi-Leap-Admin-Guide-v6_1:Leap-Xi-Leap-Admin-Guide-v6)
 

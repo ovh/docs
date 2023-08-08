@@ -36,7 +36,7 @@ Click your cluster's name in the top left-hand corner next to the **X**.
 
 ![01 Check ISCSI ADDRESS 02](images/01-check-iscsi-address02.png){.thumbnail}
 
-Scroll down the window, enter an unused private IP address from your management network in the **ISCSI Data Services IP** section, then click `Save`{.action}.
+Scroll down the window and check the IP address in the **ISCSI Data Services IP** section.
 
 ![01 Check ISCSI ADDRESS 03](images/01-check-iscsi-address03.png){.thumbnail}
 
