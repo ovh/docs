@@ -2,7 +2,7 @@
 title: 'Sign OCI artifacts with Cosign on OVHcloud Managed Private Registry'
 excerpt: 'Find out how to sign OCI artifacts with Cosign OVHcloud Managed Private Registry'
 routes:
-    canonical: /pages/platform/private-registry/sign-artifacts-with-cosign
+    canonical: '/pages/platform/private-registry/sign-artifacts-with-cosign'
 updated: 2023-08-08
 ---
 
