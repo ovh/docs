@@ -193,10 +193,10 @@ For the Private Exchange solution, you need to enter your email server’s IP ad
 mydomain.ovh IN TXT "v=spf1 ip4:11.22.333.444 ip6:5555:66a7:88:b999::1000:2233 ~all"
 ```
 
-If you also use a [shared email service](#ovhcloudspfvalue), you can add the argument `include:mx.ovh.com` to the SPF record, with the following result:
+If you also use a [shared email service](#ovhcloudspfvalue), you can add the argument `include:mx.ovh.ca` to the SPF record, with the following result:
 
 ```bash
-mydomain.ovh IN TXT "v=spf1 ip4:11.22.333.444 ip6:5555:66a7:88:b999::1000:2233 include:mx.ovh.com ~all"
+mydomain.ovh IN TXT "v=spf1 ip4:11.22.333.444 ip6:5555:66a7:88:b999::1000:2233 include:mx.ovh.ca ~all"
 ```
 
 > [!primary]
