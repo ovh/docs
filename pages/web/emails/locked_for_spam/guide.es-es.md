@@ -75,7 +75,7 @@ Seleccione el servicio de correo en las siguientes pestañas:
 >>
 >> Acceda a la pestaña `Emails`{.action} de su plataforma. Si la columna "Bloqueado por spam" indica "Sí", haga clic en esta opción y, seguidamente, en `Cambiar la contraseña`{.action}. Su dirección de correo electrónico se ha desbloqueado. No necesita seguir el [paso 3](#step3).
 >>
->>![spam](images/blocked-for-SPAM-01-04.pn){.thumbnail}
+>>![spam](images/blocked-for-SPAM-01-04.png){.thumbnail}
 >>
 >> > [!warning]
 >> >

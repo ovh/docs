@@ -1,7 +1,7 @@
 ---
 title: 'Web hosting: Consultar las estadísticas y logs de un sitio web'
 excerpt: Acceso a las estadísticas de su sitio
-
+updated: 2023-08-04
 ---
 
 > [!primary]

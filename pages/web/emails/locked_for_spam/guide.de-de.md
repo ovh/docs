@@ -1,5 +1,5 @@
 ---
-Titel:: Was tun, wenn ein Account aufgrund Spamversands gesperrt wurde?
+title: Was tun, wenn ein Account aufgrund Spamversands gesperrt wurde?
 excerpt: Erfahren Sie hier, wie Sie vorgehen, wenn Ihr E-Mail-Acount wegen Spamverdachts blockiert ist 
 updated: 2023-06-07
 ---
@@ -22,7 +22,7 @@ Falls die Sperrung einen E-Mail-Account vom Typ MX Plan betrifft, identifizieren
 
 |Legacy MX Plan Version|Neue MX Plan Version|
 |---|---|
-|![E-Mail](images/MX Plan-starter-legacy-step1.png){.thumbnail}<br> Die Dienstbezeichnung steht im Rahmen **Abo** rechts.|![E-Mail](images/MX Plan-starter-new-step1.png){.thumbnail}<br>Das neue Angebot hat eine **Server-Referenz** im Rahmen **Zusammenfassung** links.|
+|![E-Mail](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> Die Dienstbezeichnung steht im Rahmen **Abo** rechts.|![E-Mail](images/mxplan-starter-new-step1.png){.thumbnail}<br>Das neue Angebot hat eine **Server-Referenz** im Rahmen **Zusammenfassung** links.|
 
 ### Schritt 1: Die Ursache für den SPAM-Verdacht ermitteln <a name="step1"></a>
 

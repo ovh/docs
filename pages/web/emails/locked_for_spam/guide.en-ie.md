@@ -21,7 +21,7 @@ If the block is occuring on an MX Plan email account, identify the version you a
 
 |MX Plan legacy version|MX Plan new version|
 |------|------|
-|![email](images/MX Plan-starter-legacy-step1.png){.thumbnail}<br> Locate the solution in the `Subscription` box on the right.|![email](images/MX Plan-starter-new-step1.png){.thumbnail}<br>Locate the `Server model` in the `Summary` box on the left.|
+|![email](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> Locate the solution in the `Subscription` box on the right.|![email](images/mxplan-starter-new-step1.png){.thumbnail}<br>Locate the `Server model` in the `Summary` box on the left.|
 
 ### Step 1: Investigating why your email account is blocked for SPAM <a name="step1"></a>
 

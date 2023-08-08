@@ -43,7 +43,7 @@ Une fois ces actions effectuées, cliquez sur `Change Volume Type`{.action} pour
 
 Avant de commencer, consultez le guide suivant :
 
-- [Préparer l’environnement pour utiliser l’API OpenStack](/pages/platform/public-cloud/prepare_the_environment_for_using_openstack/).
+- [Préparer l’environnement pour utiliser l’API OpenStack](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api).
 
 Tout d'abord, listez les types de volumes disponibles dans votre région avec la commande suivante :
 
