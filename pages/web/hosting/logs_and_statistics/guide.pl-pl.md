@@ -48,7 +48,7 @@ https://logs.cluster000.hosting.ovh.net/mydomain.ovh/
 W sekcji `Statystyki i logi`{.action} kliknij `Wyświetl statystyki`{.action}.<br>
 Z karty przeglądarki, która wyświetla okno statystyk, pobierz link, który będzie używany do łączenia się z jednym z utworzonych użytkowników.
 
-![hosting](obrazy/OWStatslink.png){.thumbnail}
+![hosting](images/OWStatslink.png){.thumbnail}
 
 > [!warning] 
 >
