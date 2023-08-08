@@ -1,14 +1,12 @@
 ---
 title: Statistiken und Logs eines Webhostings einsehen
 excerpt: Erfahren Sie hier, wie Sie die Statistiken und Logs Ihrer Webseiten abrufen
-updated: 2021-01-05
+updated: 2023-08-04
 ---
 
 > [!primary]
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
 >
-
-**Letzte Aktualisierung am 22.01.2021**
 
 ## Ziel 
 
@@ -41,6 +39,18 @@ Klicken Sie im Bereich `Verwaltung der Nutzer` auf den Button `Einen neuen Nutze
 
 ![Hosting](images/user-statistics01.png){.thumbnail}
 
+Um mit einem von Ihnen erstellten Benutzer auf die Statistiken Ihrer Website zuzugreifen, geben Sie die folgende Adresse ein. Ersetzen Sie dabei `000` mit der Cluster-Nummer Ihres Hostings und `mydomain.ovh` mit dem Domainnamen Ihrer Website (ohne "www""):
+
+```bash
+https://logs.cluster000.hosting.ovh.net/mydomain.ovh/
+```
+
+Klicken Sie im Bereich `Statistiken und Logs`{.action} auf `Die Statistiken anzeigen`{.action}.<br>
+Rufen Sie im Tab Ihres Browsers, in dem das Statistikfenster angezeigt wird, den Link auf, über den Sie sich mit einem der erstellten Benutzer verbinden können.
+
+![hosting](images/OWStatslink.png){.thumbnail}
+
+
 > [!warning] 
 >
 > Wenn Sie die separaten Logs bei einem [Multisite-Eintrag](/pages/web/hosting/multisites_configure_multisite#schritt-2-eine-domain-oder-subdomain-hinzufugen) aktiviert haben, können die hier erstellten Benutzer nicht auf die Statistiken dieses Multisite-Eintrags zugreifen.
@@ -54,13 +64,13 @@ Das **OVHcloud Web Statistics** Tool hilft Ihnen dabei, den Traffic der auf Ihre
 
 Das Dashboard von OVHcloud Web Statistics ist in 6 Abschnitte im linken Bereich aufgeteilt.
 
-- Dashboard: visualisiert den Traffic der Website auf Ihrem Webhosting.
-- Browsers: zeigt ein Ranking der Webbrowser an, die am häufigsten für die Anzeige Ihrer Websites verwendet werden.
-- Geolocalization: gruppiert die Besucher der Website je nach Standort.
-- Requests: zeigt ein Ranking der Seiten an, die am häufigsten auf Ihren Webseiten besucht werden.
-- Robots: visualisiert automatische Verbindungsversuche zu Ihren Webseiten.
-- Status: zeigt Statistiken über Fehlschläge und Erfolge an, die anhand der zurückgegebenen HTTP-Codes ermittelt wurden.
-- FAQ: öffnet den Bereich für häufig gestellte Fragen.
+- Dashboard: Visualisiert den Traffic der Website auf Ihrem Webhosting.
+- Browsers: Zeigt ein Ranking der Webbrowser an, die am häufigsten für die Anzeige Ihrer Websites verwendet werden.
+- Geolocalization: Gruppiert die Besucher der Website je nach Standort.
+- Requests: Zeigt ein Ranking der Seiten an, die am häufigsten auf Ihren Webseiten besucht werden.
+- Robots: Visualisiert automatische Verbindungsversuche zu Ihren Webseiten.
+- Status: Zeigt Statistiken über Fehlschläge und Erfolge an, die anhand der zurückgegebenen HTTP-Codes ermittelt wurden.
+- FAQ: Öffnet den Bereich für häufig gestellte Fragen.
 
 Mit `Period selection` können Sie einen bestimmten Zeitraum auswählen.
 

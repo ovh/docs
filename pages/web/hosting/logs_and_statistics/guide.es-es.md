@@ -1,14 +1,12 @@
 ---
 title: 'Web hosting: Consultar las estadísticas y logs de un sitio web'
 excerpt: Acceso a las estadísticas de su sitio
-updated: 2021-01-05
+updated: 2023-08-04
 ---
 
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 > 
-
-**Última actualización: 05/01/2021**
 
 ## Objetivo
 
@@ -40,6 +38,17 @@ La creación de un usuario permitirá a una persona acceder a las estadísticas 
 Haga clic en el botón `Crear un nuevo usuario`{.action} en la sección `Administración de usuarios` y siga las instrucciones que se indican a continuación.  
 
 ![hosting](images/user-statistics01.png){.thumbnail}
+
+Para acceder a las estadísticas de su sitio web con un usuario que haya creado, debe introducir la siguiente dirección sustituyendo `000` por el número del cluster de su alojamiento y `mydomain.ovh` por el nombre de dominio de su sitio web (sin los « www »):
+
+```bash
+https://logs.cluster000.hosting.ovh.net/mydomain.ovh/
+```
+
+Desde la sección `Estadísticas y logs`{.action}, haga clic en `Ver las estadísticas`{.action}.<br>
+En la pestaña de su navegador que muestra la ventana de estadísticas, consulte el enlace que se utilizará para conectarse con uno de los usuarios creados.
+
+![hosting](images/OWStatslink.png){.thumbnail}
 
 > [!warning] 
 >

@@ -1,14 +1,12 @@
 ---
 title: 'Hosting condiviso: consulta le statistiche e i log del tuo sito'
 excerpt: Accedi alle statistiche del tuo sito
-updated: 2021-01-05
+updated: 2023-08-04
 ---
 
 > [!primary]
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
 >
-
-**Ultimo aggiornamento: 05/01/2021**
 
 ## Obiettivo
 
@@ -40,6 +38,18 @@ La creazione di un utente permetterà a una persona di accedere alle statistiche
 Clicca sul pulsante `Crea un nuovo utente`{.action} nella sezione `Amministrazione utenti` e segui le istruzioni come mostrato qui di seguito.  
 
 ![hosting](images/user-statistics01.png){.thumbnail}
+
+
+Per accedere alle statistiche del tuo sito Web con un utente che hai creato, inserisci questo indirizzo sostituendo `000` con il numero del cluster del tuo hosting e `mydomain.ovh` con il nome del dominio del tuo sito Web (senza le "www"):
+
+```bash
+https://logs.cluster000.hosting.ovh.net/mydomain.ovh/
+```
+
+Dalla sezione `Statistiche e log`{.action}, clicca su `Visualizza le statistiche`{.action}.<br>
+Dalla scheda del tuo browser che visualizza la finestra di statistiche, recupera il link che servirà a connetterti con uno degli utenti creati.
+
+[hosting](images/OWStatslink.png){.thumbnail}
 
 > [!warning] 
 >

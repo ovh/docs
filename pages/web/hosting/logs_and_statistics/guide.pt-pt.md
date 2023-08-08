@@ -1,14 +1,12 @@
 ---
 title: 'Partilhado: Consultar as estatísticas e os logs do meu site'
 excerpt: Acesso às estatísticas do seu site
-updated: 2021-01-05
+updated: 2023-08-04
 ---
 
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
-
-**Última atualização: 05/01/2021**
 
 ## Objetivo
 
@@ -40,6 +38,17 @@ A criação de um utilizador permitirá a uma pessoa aceder às estatísticas do
 Clique no botão `Criar um novo utilizador`{.action} na secção `Administração dos utilizadores` e siga as instruções abaixo.  
 
 ![alojamento](images/user-statistics01.png){.thumbnail}
+
+Para aceder às estatísticas do seu website com um utilizador que criou, deve introduzir o endereço seguinte substituindo `000` pelo número do cluster do seu alojamento e `mydomain.ovh` pelo nome do domínio do seu website (sem as « www »):
+
+```bash
+https://logs.cluster000.hosting.ovh.net/mydomain.ovh/
+```
+
+Na secção `Estatísticas e logs`{.action}, clique em `Ver estatísticas`{.action}.<br>
+No separador do browser que apresenta a janela de estatísticas, obtenha o link que servirá para se ligar a um dos utilizadores criados.
+
+![hosting](images/OWStatslink.png){.thumbnail}
 
 > [!warning] 
 >

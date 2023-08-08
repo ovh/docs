@@ -1,14 +1,12 @@
 ---
 title: 'Hosting: Statystyki i logi strony'
 excerpt: Dostęp do statystyk strony www
-updated: 2021-01-05
+updated: 2023-08-04
 ---
 
 > [!primary]
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
 > 
-
-**Ostatnia aktualizacja z dnia 05-01-2021**
 
 ## Wprowadzenie 
 
@@ -40,6 +38,17 @@ Utworzenie użytkownika umożliwi osobie uzyskanie dostępu do statystyk hosting
 Kliknij przycisk `Utwórz nowego użytkownika`{.action} w sekcji `Administracja użytkownikami` i postępuj zgodnie z instrukcjami podanymi poniżej.  
 
 ![hosting](images/user-statistics01.png){.thumbnail}
+
+Aby uzyskać dostęp do statystyk Twojej strony WWW dla użytkownika, którego utworzyłeś, wpisz następujący adres zastępując `000` numerem klastra Twojego hostingu, `mydomain.ovh` nazwą domeny Twojej strony WWW (bez znaków "www"):
+
+```bash
+https://logs.cluster000.hosting.ovh.net/mydomain.ovh/
+```
+
+W sekcji `Statystyki i logi`{.action} kliknij `Wyświetl statystyki`{.action}.<br>
+Z karty przeglądarki, która wyświetla okno statystyk, pobierz link, który będzie używany do łączenia się z jednym z utworzonych użytkowników.
+
+![hosting](obrazy/OWStatslink.png){.thumbnail}
 
 > [!warning] 
 >
