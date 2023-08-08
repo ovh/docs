@@ -30,7 +30,7 @@ Nutanix Leap permet :
 - Être connecté à vos clusters via **Prism Central**.
 - Avoir mis en place une interconnexion entre deux clusters, par exemple à l'aide de ces technologies :
     - via un VPN IPsec comme détaillé dans le guide « [Interconnexion IPsec entre deux sites](/pages/cloud/nutanix/44-ipsec-interconnection) »;
-    - ou via une connexion [vRack](https://www.ovh.com/fr/solutions/vrack/).
+    - ou via une connexion [vRack](https://www.ovhcloud.com/fr/network/vrack/).
 - **Prism Central** a besoin de plus de ressources en fonction du mode :
     - Single Mode : 4Go de RAM supplémentaires.
     - Scale Mode avec 3 machines virtuelles **Prism Central** : 8 Go de RAM supplémentaires par machine virtuelle.
@@ -505,7 +505,7 @@ La machine virtuelle membre du plan de reprise d'activité va démarrer sur le c
 
 [Interconnexion IPsec entre deux sites](/pages/cloud/nutanix/44-ipsec-interconnection)
 
-[OVHcloud vRack](https://www.ovh.com/fr/solutions/vrack/)
+[OVHcloud vRack](https://www.ovhcloud.com/fr/network/vrack/)
 
 [Documentation Nutanix Leap](https://portal.nutanix.com/page/documents/details?targetId=Leap-Xi-Leap-Admin-Guide-v6_1:Leap-Xi-Leap-Admin-Guide-v6)
 

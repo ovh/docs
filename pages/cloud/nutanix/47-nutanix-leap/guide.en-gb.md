@@ -30,7 +30,7 @@ Nutanix Leap allows:
 - Access to your clusters via **Prism Central**
 - An interconnection between two clusters, for example using these technologies:
     - via an IPsec VPN as detailed in the guide [Interconnecting IPsec between two sites](/pages/cloud/nutanix/44-ipsec-interconnection)
-    - or via a [vRack](https://www.ovh.co.uk/solutions/vrack/) connection.
+    - or via a [vRack](https://www.ovhcloud.com/en-gb/network/vrack/) connection.
 - **Prism Central** needs more resources depending on the mode:
     - Single Mode: 4GB additional RAM.
     - Scale Mode with 3 **Prism Central** virtual machines: 8 GB additional RAM per virtual machine.
@@ -505,7 +505,7 @@ The virtual machine that is a member of the disaster recovery plan will boot to 
 
 [IPsec interconnect between two sites](/pages/cloud/nutanix/44-ipsec-interconnection)
 
-[OVHcloud vRack](https://www.ovh.co.uk/solutions/vrack/)
+[OVHcloud vRack](https://www.ovhcloud.com/en-gb/network/vrack/)
 
 [Nutanix Leap documentation](https://portal.nutanix.com/page/documents/details?targetId=Leap-Xi-Leap-Admin-Guide-v6_1:Leap-Xi-Leap-Admin-Guide-v6)
 

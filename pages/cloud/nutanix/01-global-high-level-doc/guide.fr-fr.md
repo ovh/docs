@@ -15,8 +15,8 @@ Cette page fournit une explication sur les éléments qui constituent un cluster
 Un cluster Nutanix est constitué d’un ensemble de services OVHcloud :
 
 - [Serveur dédié](https://www.ovhcloud.com/fr/bare-metal/)
-- [vRack](https://www.ovh.com/fr/solutions/vrack/)
-- [Load Balancer](https://www.ovh.com/fr/solutions/load-balancer/)
+- [vRack](https://www.ovhcloud.com/fr/network/vrack/)
+- [Load Balancer](https://www.ovhcloud.com/fr/network/load-balancer/)
 - [Additional IP](https://www.ovhcloud.com/fr/bare-metal/ip/)
 
 Les serveurs dédiés (3 minimum) sont connectés au sein du vRack qui est un réseau L2, le réseau privé des hosts (noeud ou *node*).
