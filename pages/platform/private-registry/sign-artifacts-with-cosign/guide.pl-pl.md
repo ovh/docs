@@ -44,7 +44,7 @@ Since v2.5+ Harbor supports [Cosign](https://github.com/sigstore/cosign), a OCI 
 >
 > Harbor has started the deprecation of Notary in Harbor 2.6, it will be removed in Harbor v2.8, so you must use Cosign to sign container images and Helm charts.
 
-One advantage to use Cosign is the ability using Harbor’s replication capabilities to replicate signatures with their associated signed artifact.
+Compared to Notary, Cosign is really easy to use and one advantage to use it is the ability using Harbor’s replication capabilities to replicate signatures with their associated signed artifact.
 
 **This guide will explain how to sign artifacts with Cosign in an OVHcloud Managed Private Registry service.**
 
