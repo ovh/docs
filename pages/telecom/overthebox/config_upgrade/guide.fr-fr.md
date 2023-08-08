@@ -1,7 +1,7 @@
 ---
 title: 'Mettre à jour son OverTheBox'
 excerpt: 'Découvrez comment mettre à jour votre équipement OverTheBox'
-updated: 2023-06-30
+updated: 2023-08-08
 ---
 
 ## Objectif
@@ -43,7 +43,7 @@ Attendez quelques minutes afin que l'**OverTheBox** soit de nouveau opérationne
 
 Vous pouvez mettre à jour votre équipement OverTheBox depuis l'interface web locale.
 
-- Téléchargez la dernière image sur votre ordinateur : [http://downloads.overthebox.net/stable/v3.11.0/targets/x86/64/latest.img.gz](http://downloads.overthebox.net/stable/v3.11.0/targets/x86/64/latest.img.gz){.external}.
+- Téléchargez la dernière image sur votre ordinateur : [http://downloads.overthebox.net/stable/v5.0.0/targets/x86/64/latest.img.gz](http://downloads.overthebox.net/stable/v5.0.0/targets/x86/64/latest.img.gz){.external}.
 - Rendez-vous sur [http://overthebox.ovh (192.168.100.1)](http://overthebox.ovh){.external}.
 - Cliquez sur `System`{.action}.
 - Cliquez sur `Backup/Flash Firmware`{.action}.
@@ -129,7 +129,7 @@ Vous pouvez modifier le canal de votre version via l'espace client OVHcloud, ce 
 > Seul les équipements Raspberry Pi 3 sont actuellement supportés.
 >
 
-Dans un premier temps, il vous faut installer manuellement [la dernière image disponible](http://downloads.overthebox.net/stable/v3.11.0/targets/brcm2708/bcm2710/latest.img.gz){.external}.
+Dans un premier temps, il vous faut installer manuellement [la dernière image disponible](http://downloads.overthebox.net/stable/v5.0.0/targets/brcm2708/bcm2710/latest.img.gz){.external}.
 Une fois l'image installée et votre service OverTheBox configuré, votre Raspberry Pi se comportera comme une OverTheBox standard. Il vous sera également possible de modifier le canal de version si vous souhaitez utiliser les canaux alpha et beta.
 
 ## Aller plus loin
