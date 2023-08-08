@@ -1,10 +1,8 @@
 ---
 title: "Nutanix on OVHcloud - High-level documentation"
 excerpt: Technical details of the Nutanix on OVHcloud solution
-updated: 2022-12-08
+updated: 2023-08-08
 ---
-
-**Last updated 8th December 2022**
 
 ## Objective
 
@@ -15,8 +13,8 @@ This page provides an explanation of the elements that constitute a Nutanix clus
 A Nutanix cluster consists of a stack of OVHcloud services:
 
 - [Dedicated server](https://www.ovhcloud.com/en/bare-metal/)
-- [vRack](https://www.ovh.com/world/solutions/vrack/)
-- [Load Balancer](https://www.ovh.com/world/solutions/load-balancer/)
+- [vRack](https://www.ovhcloud.com/en/network/vrack/)
+- [Load Balancer](https://www.ovhcloud.com/en/network/load-balancer/)
 - [Additional IP](https://www.ovhcloud.com/en/bare-metal/ip/)
 
 Dedicated servers (3 minimum) are connected within the vRack which is an L2 network, the hosts (node) private network.
@@ -59,11 +57,11 @@ This VM uses two network cards (in the vRack), one for the private network on VL
 The VM uses NAT to route traffic from the private network to the Internet.
 You can therefore use it for outgoing traffic but not for incoming traffic.
 
-OVHgateway has a lightweight design, using 1 vCPU, 1 GB memory and a 11 GiB disk.
+OVHgateway has a lightweight design, using 1 vCPU, 1 GB memory and a 1 GiB disk.
 
 Bandwidth for Internet access is 1 Gbps.
 
-To replace this virtual machine with another network operating system, please read this guide: [Replace OVHgateway](/pages/cloud/nutanix/30-software-gateway-replacement).
+This machine is only for you to download your first sources (Windows ISO, appliances, etc.). You will need to replace this virtual machine with another operating system. See this guide for more information: [Replace OVHgateway](/pages/cloud/nutanix/30-software-gateway-replacement).
 
 ### Prism Central Access
 

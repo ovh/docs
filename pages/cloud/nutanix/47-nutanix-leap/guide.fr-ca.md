@@ -1,10 +1,8 @@
 ---
 title: Réplication avancée avec Leap
 excerpt: "Mise en place de réplications avancées avec Leap"
-updated: 2022-07-18
+updated: 2023-08-07
 ---
-
-**Dernière mise à jour le 18/07/2022**
 
 ## Objectif
 
@@ -32,7 +30,7 @@ Nutanix Leap permet :
 - Être connecté à vos clusters via **Prism Central**.
 - Avoir mis en place une interconnexion entre deux clusters, par exemple à l'aide de ces technologies :
     - via un VPN IPsec comme détaillé dans le guide « [Interconnexion IPsec entre deux sites](/pages/cloud/nutanix/44-ipsec-interconnection) »;
-    - ou via une connexion [vRack](https://www.ovh.com/ca/fr/solutions/vrack/).
+    - ou via une connexion [vRack](https://www.ovhcloud.com/fr-ca/network/vrack/).
 - **Prism Central** a besoin de plus de ressources en fonction du mode :
     - Single Mode : 4Go de RAM supplémentaires.
     - Scale Mode avec 3 machines virtuelles **Prism Central** : 8 Go de RAM supplémentaires par machine virtuelle.
@@ -59,7 +57,7 @@ En haut à gauche du tableau de bord de **Prism Element**, cliquez sur `Le nom d
 
 ![00 Add iSCSI address in FRANCE01](images/00-isci-add-address-france01.png){.thumbnail}
 
-Saisissez une `adresse IP non utilisée du réseau d'administration ` dans le champ **iSCSI Data Service IP** et cliquez sur `Save`{.action}.
+Vérifiez l'adresse IP dans le champ **iSCSI Data Service IP**.
 
 ![00 Add iSCSI address in FRANCE01](images/00-isci-add-address-france02.png){.thumbnail}
 
@@ -69,7 +67,7 @@ En haut à gauche du tableau de bord de **Prism Element**, cliquez sur `Le nom d
 
 ![01 Add iSCSI address in Canada01](images/01-isci-add-address-canada01.png){.thumbnail}
 
-Saisissez une `adresse IP non utilisée du réseau d'administration ` dans le champ **iSCSI Data Service IP** et cliquez sur `Save`{.action}.
+Vérifiez l'adresse IP dans le champ **iSCSI Data Service IP**.
 
 ![01 Add iSCSI address in Canada02](images/01-isci-add-address-canada02.png){.thumbnail}
 
@@ -507,7 +505,7 @@ La machine virtuelle membre du plan de reprise d'activité va démarrer sur le c
 
 [Interconnexion IPsec entre deux sites](/pages/cloud/nutanix/44-ipsec-interconnection)
 
-[OVHcloud vRack](https://www.ovh.com/ca/fr/solutions/vrack/)
+[OVHcloud vRack](https://www.ovhcloud.com/fr-ca/network/vrack/)
 
 [Documentation Nutanix Leap](https://portal.nutanix.com/page/documents/details?targetId=Leap-Xi-Leap-Admin-Guide-v6_1:Leap-Xi-Leap-Admin-Guide-v6)
 

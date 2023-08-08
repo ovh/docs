@@ -1,10 +1,8 @@
 ---
 title: "Configuration d'un plan de reprise d'activité avec Metro"
 excerpt: "Mise en oeuvre de Metro pour un plan de reprise d'activité"
-updated: 2023-05-09
+updated: 2023-08-07
 ---
-
-**Dernière mise à jour le 09/05/2023**
 
 ## Objectif
 
@@ -329,7 +327,7 @@ Sur le tableau de bord de Prism Element, cliquez en haut à gauche sur le `nom d
 
 ![03 - Add iscsi address Erith 02](images/03-add-iscsi-address-erith02.png){.thumbnail}
 
-Faites défilez la fenêtre, ajoutez une `adresse IP non utilisée`{.action} à **ISCSI Data Services IP** et cliquez sur `Save`{.action}.
+Faites défilez la fenêtre, vérifiez l'adresse IP **ISCSI Data Services IP**.
 
 ![03 - Add iscsi address Erith 03](images/03-add-iscsi-address-erith03.png){.thumbnail}
 
@@ -341,7 +339,7 @@ Sur le tableau de bord de Prism Element, cliquez en haut à gauche sur le « nom
 
 ![03 - Add iscsi address Gravelines 02](images/03-add-iscsi-address-gravelines02.png){.thumbnail}
 
-Faites défiler la fenêtre, ajoutez une « adresse IP non utilisée » à `ISCSI Data Services IP` et cliquez sur `Save`{.action}.
+Faites défilez la fenêtre, vérifiez l'adresse IP **ISCSI Data Services IP**.
 
 ![03 - Add iscsi address graveline 03](images/03-add-iscsi-address-gravelines03.png){.thumbnail}
 
@@ -353,7 +351,7 @@ Sur le tableau de bord de Prism Element, cliquez en haut à gauche sur le « nom
 
 ![03 - Add iscsi address Roubaix 02](images/03-add-iscsi-address-roubaix02.png){.thumbnail}
 
-Faites défilez la fenêtre, ajoutez une « adresse IP non utilisée » à `ISCSI Data Services IP` et cliquez sur `Save`{.action}.
+Faites défilez la fenêtre, vérifiez l'adresse IP **ISCSI Data Services IP**.
 
 ![03 - Add iscsi address Roubaix 03](images/03-add-iscsi-address-roubaix03.png){.thumbnail}
 

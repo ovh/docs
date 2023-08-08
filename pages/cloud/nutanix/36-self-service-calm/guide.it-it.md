@@ -39,7 +39,7 @@ We will enable CALM, create two applications for our Nutanix cluster and publish
 
 ### Activating CALM
 
-Before deploying CALM, you must configure an IP address for the **ISCSI Data Services IP**.
+Before deploying CALM, check the IP address for the **ISCSI Data Services IP**.
 
 From the Prism Central dashboard, click on your `Cluster`{.action} in the **Cluster Quick Access** section.
 
@@ -49,7 +49,7 @@ In the Prism Element, click on the `cluster settings`{.action} in the top left-h
 
 ![00 Activate CALM 02](images/00-activate-calm02.png){.thumbnail}
 
-Enter an `IP Address`{.action} in **ISCSI Data Services IP** which is not used in the scope of the management network and click `Save`{.action}.
+Check the IP address in **ISCSI Data Services IP**.
 
 ![00 Activate CALM 03](images/00-activate-calm03.png){.thumbnail}
 
@@ -316,7 +316,7 @@ Scroll down the window on the right and check the `Guest Customisation`{.action}
 
 > [!primary]
 > This file is generated from the Windows ADK tools downloadable via this [link](https://learn.microsoft.com/en-us/windows-hardware/get-started/adk-install#download-the-adk-for-windows-11) and has been adapted by adding variables from Nutanix CALM such as '@@{WindowsAccount.secret}@@' that represents the password of the WindowsAccount.
->
+> 
 
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
@@ -406,7 +406,7 @@ In the left-hand window, go to `Install`{.action} below the **Package** category
 
 ![03 Create Windows Blueprint 11](images/03-create-windows-blueprint11.png){.thumbnail}
 
-Enter this information:
+Enter this information: 
 
 - **Task Name**: `IIS Installation`
 - **Type**: `Execute`
@@ -730,7 +730,7 @@ while state != "SUCCEEDED":
 print("OS disk extended to {} GB".format(diskSize))
 
 # Wait until VM boots
-sleep(60)
+sleep(60) 
 ```
 
 Click `+ Task`{.action}.
