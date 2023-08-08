@@ -4,8 +4,6 @@ excerpt: "Les détails techniques de la solution Nutanix on OVHcloud"
 updated: 2023-08-07
 ---
 
-**Dernière mise à jour le 07/08/2023**
-
 ## Objectif
 
 Cette page fournit une explication sur les éléments qui constituent un cluster Nutanix tel que fourni par OVHcloud, ainsi que sur son fonctionnement sur l'infrastructure OVHcloud.
@@ -65,7 +63,7 @@ La passerelle OVHgateway est de conception légère, elle utilise 1 vCPU, 1 GB d
 
 La bande passante pour accéder à Internet est de 1 Gb/s.
 
-Cette machine n'a pour but que de vous permettre de télécharger vos premières sources (iso windows, appliances, etc) vous devrez remplacer cette machine virtuelle par un autre système d'exploitation, consultez ce guide : [Remplacement de l'OVHgateway](/pages/cloud/nutanix/30-software-gateway-replacement).
+Cette machine n'a pour but que de vous permettre de télécharger vos premières sources (ISO windows, appliances, etc). Vous devrez remplacer cette machine virtuelle par un autre système d'exploitation. Consultez ce guide pour plus d'informations : [Remplacement de l'OVHgateway](/pages/cloud/nutanix/30-software-gateway-replacement).
 
 ### Prism Central Access
 

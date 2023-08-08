@@ -4,8 +4,6 @@ excerpt: "Mise en place de réplications avancées avec Leap"
 updated: 2023-08-07
 ---
 
-**Dernière mise à jour le 07/08/2023**
-
 ## Objectif
 
 Ce guide vous détaille comment mettre en place des réplications et des plans de reprises d'activités avancés avec **Nutanix Leap** dans **Prism Central**.

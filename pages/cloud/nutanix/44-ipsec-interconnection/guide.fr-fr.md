@@ -1,10 +1,10 @@
 ---
 title: Interconnexion IPsec entre deux sites
 excerpt: "Mise en place d'un VPN IPsec entre deux clusters Nutanix distants"
-updated: 2023-08-07
+updated: 2022-06-29
 ---
 
-**Dernière mise à jour le 07/08/2023**
+**Dernière mise à jour le 29/06/2022**
 
 ## Objectif
 

@@ -1,10 +1,8 @@
 ---
 title: Advanced replication with Leap
 excerpt: Implementing advanced replication with Leap
-updated: 2022-07-18
+updated: 2023-08-08
 ---
-
-**Last updated 18th July 2022**
 
 ## Objective
 
@@ -59,7 +57,7 @@ In the top left-hand corner of the **Prism Element** dashboard, click `the clust
 
 ![00 Add iSCSI address in FRANCE01](images/00-isci-add-address-france01.png){.thumbnail}
 
-Enter an unused IP `address from the management network `in the **iSCSI Data Service IP** field and click `Save`{.action}.
+Check the IP address in the **iSCSI Data Service IP** field.
 
 ![00 Add iSCSI address in FRANCE01](images/00-isci-add-address-france02.png){.thumbnail}
 
@@ -69,7 +67,7 @@ In the top left-hand corner of the **Prism Element** dashboard, click `The clust
 
 ![01 Add iSCSI address in Canada01](images/01-isci-add-address-canada01.png){.thumbnail}
 
-Enter `an unused IP address from the management network `in the **iSCSI Data Service IP** field and click `Save`{.action}.
+Check the IP address in the **iSCSI Data Service IP** field.
 
 ![01 Add iSCSI address in Canada02](images/01-isci-add-address-canada02.png){.thumbnail}
 

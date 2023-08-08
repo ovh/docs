@@ -4,8 +4,6 @@ excerpt: Découvrez comment fonctionne la passerelle OVHgateway
 updated: 2023-08-07
 ---
 
-**Dernière mise à jour le 07/08/2023**
-
 ## Objectif
 
 « OVHgateway » est le nom du point de sortie de votre cluster vers Internet.
@@ -26,17 +24,18 @@ La VM est basée sur Alpine Linux 3.18.2.
 > [!primary]
 > Vous devez ipérativement remplacer cette passerelle par une de votre choix. La OVHgateway n'est pas manageable. Vous ne pouvez pas vous connecter dessus pour effectuer des modifications.
 > Il n'y a aucun moyen de se connecter avec SSH ou tout autre protocole.
-> Il n'est pas non plus possible de se loguer depuis la console via Prism Central.
+> Il n'est pas non plus possible de se connecter depuis la console via Prism Central.
 > Vous pouvez-vous aider de ce guide : [Remplacement de l'OVHgateway](/pages/cloud/nutanix/30-software-gateway-replacement).
 
 La passerelle OVHgateway a un design léger, avec 2 NICs, 1 vCPU, 1 GB de mémoire et 1 GiB d'espace-disque.
 
-`eth0` est l'interface pour le réseau externe et possède l'adresse Additional IP dans le sous-réseau **base** avec le VLAN 0. <br>
-`eth1` est l'interface pour le réseau interne dans le sous-réseau **infra** avec le VLAN 1.
+- `eth0` est l'interface pour le réseau externe et possède l'adresse Additional IP dans le sous-réseau **base** avec le VLAN 0. <br>
+- `eth1` est l'interface pour le réseau interne dans le sous-réseau **infra** avec le VLAN 1.
 
 > [!primary]
 > La VM est utilisée uniquement pour le trafic NAT entre les hosts, le CVM, la VM et Internet.
 >
+
 Les requêtes ICMP ne sont autorisées que dans le réseau privé.
 
 #### Script de données utilisateur
@@ -192,8 +191,8 @@ Vous trouverez ci-dessous un template que vous pourrez modifier avec vos valeurs
 > [!primary]
 >
 > - Remplacez les valeurs « hostname », « fqdn », « name », « passwd », « ssh-autorized-keys » et les adresses IP par les valeurs souhaitées.
-> - Ce fichier crée la configuration réseau; redimensionne le disque pour occuper tout l'espace, puis redémarre.
-> - Attention, une fois crtée votre VM est exposé sur internet.
+> - Ce fichier crée la configuration réseau, redimensionne le disque pour occuper tout l'espace puis redémarre.
+> - Attention, une fois créée, votre VM est exposée sur Internet.
 >
 
 ```yaml

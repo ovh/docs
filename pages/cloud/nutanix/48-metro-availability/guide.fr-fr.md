@@ -4,8 +4,6 @@ excerpt: "Mise en oeuvre de Metro pour un plan de reprise d'activité"
 updated: 2023-08-07
 ---
 
-**Dernière mise à jour le 07/08/2023**
-
 ## Objectif
 
 **Ce guide vous présente Metro Availability qui permet un plan de reprise d'activité automatisé.** 
