@@ -1,7 +1,7 @@
 ---
 title: Einen SPF-Eintrag zur Konfiguration Ihrer Domain hinzufügen
 excerpt: Erfahren Sie hier, wie Sie einen SPF-Eintrag für Ihre OVHcloud Domain konfigurieren
-updated: 2023-07-25
+updated: 2023-08-04
 ---
 
 ## Ziel
@@ -204,6 +204,15 @@ mydomain.ovh IN TXT "v=spf1 ip4:11.22.333.444 ip6:5555:66a7:88:b999::1000:2233 i
 > Klicken Sie im Tab `Allgemeine Informationen`{.action} unter `Zusammenfassung` jeweils auf `A` und `AAAA` im Bereich `Server-Diagnose`. Lesen Sie im neu geöffneten Fenster den Wert ab.
 >
 > ![domain](images/spf_records_ip.png){.thumbnail}
+>
+> Wenn die Felder `A` und `AAAA` grün sind, werden die IP-Adressen nicht angezeigt, wenn man darauf klickt. Sie finden die Adressen in der DNS-Zone des Domainnamens, der mit Ihrem Private Exchange verknüpft ist. Identifizieren Sie zunächst den Domainnamen über den Webmail-Link im Tab `Allgemeine Informationen`{.action} im Feld `Verbindung`.
+>
+> ![domain](images/spf_records_ip2.png){.thumbnail}
+>
+> Gehen Sie dann in den Bereich `Domainnamen`{.action}, wählen Sie den mit Ihrem Private Exchange verbundenen Domainnamen aus und klicken Sie auf den Tab `DNS-Zone`{.action}. Kopieren Sie hier die IPv4-Adresse (Eintrag `A`) und die IPv6-Adresse (Eintrag `AAAA`).
+>
+>![Domain](images/spf_records_ip3.png){.thumbnail}
+>
 
 ## Weiterführende Informationen
 

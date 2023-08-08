@@ -1,7 +1,7 @@
 ---
 title: 'Añadir un registro SPF a la configuración del dominio'
 excerpt: 'Cómo añadir un registro SPF a la configuración de un dominio en OVHcloud'
-updated: 2023-07-25
+updated: 2023-08-04
 ---
 
 ## Objetivo
@@ -109,6 +109,7 @@ Haga clic en el botón `Utilizar el SPF para hosting compartido OVHcloud`{.actio
 > Los cambios tardan entre 4 y 24 horas en propagarse y ser efectivos.
 >
 
+
 #### Añadir un registro SPF <a name="spfrecord"></a>
 
 Ha elegido el registro `SPF.`{.action}
@@ -194,10 +195,10 @@ Para la solución Private Exchange, es necesario indicar las direcciones IP del 
 mydomain.ovh IN TXT "v=spf1 ip4:11.22.33.444 ~all"
 ```
 
-Si también utiliza [una solución de correo en alojamiento compartido](#ovhcloudspfvalue), puede añadir el argumento `include:mx.ovh.com` al registro anterior, que proporciona el siguiente valor:
+Si también utiliza [una solución de correo en alojamiento compartido](#ovhcloudspfvalue), puede añadir el argumento `include:mx.ovh.ca` al registro anterior, que proporciona el siguiente valor:
 
 ```bash
-mydomain.ovh IN TXT "v=spf1 ip4:11.22.333.444 ip6:5555:66a7:88:b999::1000:2233 include:mx.ovh.com ~all"
+mydomain.ovh IN TXT "v=spf1 ip4:11.22.333.444 ip6:5555:66a7:88:b999::1000:2233 include:mx.ovh.ca ~all"
 ```
 
 > [!primary]
@@ -207,6 +208,15 @@ mydomain.ovh IN TXT "v=spf1 ip4:11.22.333.444 ip6:5555:66a7:88:b999::1000:2233 i
 > En la ficha `Información general`{.action}, haga clic en `A` y `AAAA` en la sección `Diagnóstico del servidor`. En la ventana que aparece, lea el valor
 >
 > ![Dominio](images/spf_records_ip.png){.thumbnail}
+>
+> Si las etiquetas `A` y `AAAA` son verdes, no verá las direcciones IP al hacer clic en ellas. Deberá recuperarlas desde la zona DNS del dominio asociado a su plataforma Private Exchange. Para ello, consulte el enlace del webmail en la pestaña `Información general`{.action}, en el recuadro `Conexión`.
+>
+> ![domain](images/spf_records_ip2.png){.thumbnail}
+>
+> Acceda a la sección `Nombres de dominio`{.action} de la columna izquierda y seleccione el dominio asociado a su plataforma Private Exchange. A continuación, abra la pestaña de la columna izquierda y haga clic en `Zona DNS`{.action}. Obtenga las direcciones IPv4 (registro `A`) y IPv6 (registro `AAAA`) correspondientes a la URL del webmail.
+>
+> ![domain](images/spf_records_ip3.png){.thumbnail}
+>
 
 ## Más información
 
