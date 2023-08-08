@@ -4,8 +4,6 @@ excerpt: Find out about useful resources in order to use Terraform with OVHcloud
 updated: 2023-08-07
 ---
 
-**Last updated 07th August 2023**
-
 ## Introduction
 
 [Terraform](https://www.terraform.io/) is an open-source infrastructure as code (IaC) tool created by [Hashicorp](https://www.hashicorp.com/) in 2014, written in Go. It aims at building, changing and version controlling your infrastructure. You can define and provision your infrastructure by writing the definition of your resources in Hashicorp Configuration Language (HCL).
@@ -156,14 +154,17 @@ OVHcloud console GUI (also called "Control Panel" or "Manager") hides some backg
 
 This universe is currently not supported by Terraform providers
 
-### My account 
-### My profile 
+### My account
+
+#### My profile
+
 | Control Panel concept | Terraform provider(s) | Resource or Data Source  |
 | --- | --- | --- |
 | Profile | ovh | [data source] [ovh_me](https://registry.terraform.io/providers/ovh/ovh/latest/docs/data-sources/me)|
 | Payment method | ovh |- [data source] [ovh_me_paymentmean_bankaccount](https://registry.terraform.io/providers/ovh/ovh/latest/docs/data-sources/me_paymentmean_bankaccount) <br/>- [data source] [ovh_me_paymentmean_creditcard](https://registry.terraform.io/providers/ovh/ovh/latest/docs/data-sources/me_paymentmean_creditcard)|
 
-### Identity and Access Management (IAM)
+#### Identity and Access Management (IAM)
+
 | Control Panel concept | Terraform provider(s) | Resource or Data Source  |
 | --- | --- | --- |
 | Policies | ovh |[ovh_iam_policy](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/iam_policy)|
