@@ -76,7 +76,7 @@ Voici un exemple d'e-mail contenant les identifiants PPPoE :
 
 ### Configurer votre routeur
 
-Vous pouvez suivre le guide « [Configurer un routeur manuellement](/pages/telecom/xdsl/advanced_config_router_manually) » pour configurer manuellement vos identifiant PPPoE sur votre propre matériel.
+Vous pouvez suivre le guide « [Configurer un routeur manuellement](/pages/telecom/xdsl/advanced_config_router_manually) » pour configurer manuellement vos identifiants PPPoE sur votre propre matériel.
 
 ## Aller plus loin
 

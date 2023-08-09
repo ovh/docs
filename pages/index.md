@@ -1386,6 +1386,7 @@
                 + [Gérer et configurer un bloc IP /29](telecom/xdsl/comment_commander_et_gerer_un_bloc_ip_29)
                 + [Comment changer le backend ACS du modem](telecom/xdsl/comment_changer_backend_acs)
                 + [Connectivity API](telecom/xdsl/connectivity-api)
+                + [Configurer un routeur manuellement](telecom/xdsl/advanced_config_router_manually)
         + [OverTheBox](web-cloud-internet-overthebox)
             + [OverTheBox Plus & IT v2](web-cloud-internet-overthebox-overthebox-plus-and-it-v2)
                 + [Installation OverTheBox Plus ou IT v2](telecom/overthebox/plus_itv2_installation)
