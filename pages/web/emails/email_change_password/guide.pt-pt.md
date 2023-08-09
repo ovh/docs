@@ -51,7 +51,7 @@ Na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from
 >> Se não conhece o tipo de oferta MXplan que possui, consulte o nosso parágrafo [Identifique a sua oferta MXplan](#whichmxplan).<br>
 >> Clique em `E-mails`{.action} e escolha o nome do serviço MX Plan em causa. Aceda ao separador `E-mails`{.action}. Na nova janela, podem ver-se as contas de e-mail existentes. <br>
 >> Clique no botão <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> e depois em `Alterar`{.action}.<br><br>
->>![e-mail](images/email-password-mxplan-new01.png) {.thumbnail}<br>
+>>![e-mail](images/email-password-mxplan-new01.png){.thumbnail}<br>
 >>
 > **Email Pro**
 >>

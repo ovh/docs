@@ -200,4 +200,4 @@ Poderá verificar, no seu vSphere, diferentes operações no momento do restauro
 
 Fale com a nossa comunidade de utilizadores no Discord: <https://discord.gg/ovhcloud>
 
-Fale com a nossa comunidade de utilizadores: [https://community.ovh.com/en/](https://community.ovh.com/){.external}.
+Fale com a nossa comunidade de utilizadores: [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.

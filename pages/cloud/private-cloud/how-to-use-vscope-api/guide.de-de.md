@@ -268,4 +268,4 @@ Für mehr Details zu API Calls mit OpenTSDB können Sie in der folgenden Dokumen
 
 ## Weiterführende Informationen
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/>.
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

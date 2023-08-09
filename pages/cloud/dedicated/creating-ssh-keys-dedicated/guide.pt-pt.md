@@ -338,7 +338,7 @@ Abra `PuTTY` e expanda a subsecção `SSH` no menu à esquerda e clique em `Auth
 
 ![PuTTy](images/puttygen_04.png){.thumbnail}
 
-Clique no botão "Browse"{.action} e selecione o ficheiro de chave privada `PuTTY` (`keyfile.ppk`) na pasta onde o guardou.
+Clique no botão `Browse`{.action} e selecione o ficheiro de chave privada `PuTTY` (`keyfile.ppk`) na pasta onde o guardou.
 
 O ficheiro de chave está associado à sessão SSH em curso. Passe para `Session` no menu à esquerda e introduza as suas credenciais de [ligação ao servidor](#getstarted) (`username@IPv4_address`).
 

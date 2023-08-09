@@ -116,4 +116,4 @@ Besuchen Sie unseren speziellen Discord-Kanal: <https://discord.gg/ovhcloud>. St
 
 Wenn Sie Schulungen oder technische Unterstützung bei der Implementierung unserer Lösungen benötigen, wenden Sie sich an Ihren Vertriebsmitarbeiter oder klicken Sie auf [diesen Link](https://www.ovhcloud.com/de/professional-services/), um einen Kostenvoranschlag zu erhalten und eine persönliche Analyse Ihres Projekts durch unsere Experten des Professional Services Teams anzufordern.
 
-Treten Sie unserer Benutzergemeinschaft auf <https://community.ovh.com/> bei.
+Treten Sie unserer Benutzergemeinschaft auf <https://community.ovh.com/en/> bei.

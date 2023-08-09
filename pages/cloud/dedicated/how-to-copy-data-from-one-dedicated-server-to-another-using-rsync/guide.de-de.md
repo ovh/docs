@@ -113,4 +113,4 @@ rsync -av -P --stats --human-readable -e 'ssh -p X' --exclude="Folder_Name" --ex
 
 Nun können Sie die Daten von Ihrem dedizierten Server auf einen anderen mit rsync kopieren.
 
-Um noch mehr zu erfahren, können Sie sich mit unserer User Community auf <https://community.ovh.com/> austauschen.
+Um noch mehr zu erfahren, können Sie sich mit unserer User Community auf <https://community.ovh.com/en/> austauschen.

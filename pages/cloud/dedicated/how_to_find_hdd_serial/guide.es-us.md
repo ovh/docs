@@ -179,4 +179,4 @@ No olvide sustituir en el comando anterior **sgX** por **/dev/sg0**, **/dev/sg1*
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en [https://community.ovh.com](https://community.ovh.com/){.external}.
+Interactúe con nuestra comunidad de usuarios en [https://community.ovh.com](https://community.ovh.com/en/){.external}.

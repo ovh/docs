@@ -1,4 +1,4 @@
---- 
+---
 title: Enterprise File Storage - Gestisci le politiche degli Snapshot
 excerpt: "Scopri come creare una politica di Snapshot, applicarla sul tuo volume, modificarla ed eliminarla dal tuo spazio cliente"
 updated: 2023-08-07

@@ -33,7 +33,7 @@ A sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&f
 
 ### Alterar a sua oferta de alojamento <a name="modify"></a>
 
-Para alterar a subscrição, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), na secção `Web Cloud` {.action. Clique em `Alojamentos`{.action} e selecione o alojamento em causa.
+Para alterar a subscrição, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), na secção `Web Cloud`{.action}. Clique em `Alojamentos`{.action} e selecione o alojamento em causa.
 
 No quadro `Subscrição`, clique no botão `...`{.action} à direita de `Oferta`, `Mudar de oferta`{.action}.
 

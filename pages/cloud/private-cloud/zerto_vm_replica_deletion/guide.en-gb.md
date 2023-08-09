@@ -55,4 +55,4 @@ The VPG will sync and will get back to a functional state with only one VM left.
 
 ## Go further 
 
-Discuss with other Zerto users on <https://community.ovh.com/>.
+Discuss with other Zerto users on <https://community.ovh.com/en/>.

@@ -75,7 +75,7 @@ Para ir mais rápido, pode clicar no campo de pesquisa Windows e escrever `Run` 
 ncpa.cpl
 ```
 
-De seguida, clique com o botão direito do rato na placa de rede correspondente ao VMNetwork e em `Propriedades` {.action). Selecione `Protocolo TCP/IP v4`{.action}, clique novamente em 'Properties' e introduza as informações do seu IP da seguinte forma:
+De seguida, clique com o botão direito do rato na placa de rede correspondente ao VMNetwork e em `Propriedades`{.action). Selecione `Protocolo TCP/IP v4`{.action}, clique novamente em 'Properties' e introduza as informações do seu IP da seguinte forma:
 
 ![Configuração Windows](images/config_ip_windows.jpg){.thumbnail}
 
@@ -135,7 +135,7 @@ Para ir mais rápido, pode clicar no campo de pesquisa Windows e escrever `Run` 
 ncpa.cpl
 ```
 
-De seguida, clique com o botão direito do rato na placa de rede correspondente ao VMNetwork e em `Propriedades` {.action). De seguida, selecione o `Protocolo TCP/IP v4`{.action} e clique novamente em 'Properties' e introduza as informações do seu IP da seguinte forma:
+De seguida, clique com o botão direito do rato na placa de rede correspondente ao VMNetwork e em `Propriedades`{.action). De seguida, selecione o `Protocolo TCP/IP v4`{.action} e clique novamente em 'Properties' e introduza as informações do seu IP da seguinte forma:
 
 ![Configuração Windows IP público](images/windows_private.PNG){.thumbnail}
 

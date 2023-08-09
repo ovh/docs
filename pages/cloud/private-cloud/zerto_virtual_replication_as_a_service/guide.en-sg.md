@@ -370,4 +370,4 @@ Depending on failover options, the failback (if needed) may require differents s
 
 ## Go further 
 
-Discuss with other Zerto users on <https://community.ovh.com/>.
+Discuss with other Zerto users on <https://community.ovh.com/en/>.
