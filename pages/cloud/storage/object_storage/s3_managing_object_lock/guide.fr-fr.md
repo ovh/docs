@@ -1,10 +1,8 @@
 ---
 title: "Object Storage - Gestion de l'immuabilité des objets avec Object Lock (WORM)"
 excerpt: "Object Lock est une fonctionnalité qui vous permet de stocker des objets en utilisant un modèle WORM (Write Once, Read Many)"
-updated: 2022-06-02
+updated: 2023-08-09
 ---
-
-**Dernière mise à jour le 02/06/2022**
 
 ## Objectif
 
@@ -15,6 +13,33 @@ Object Lock est une fonctionnalité qui vous permet de stocker des objets en uti
 ## Concept
 
 Object Lock fournit deux façons de gérer la rétention des objets. La première étant les périodes de rétention et la seconde le Legal hold.
+
+### Comment fonctionne Object Lock ?
+
+Pour comprendre le fonctionnement de Object Lock, nous devons d'abord comprendre comment la suppression d'objets et le *versioning* fonctionnent ensemble. Lorsqu'une opération de suppression d'objet est effectuée sur un objet dans un bucket sur lequel le *versioning* est activé, elle ne supprime pas l'objet de manière permanente, mais crée un marqueur de suppression sur l'objet. Ce marqueur de suppression devient la version la plus récente et la version actuelle de l'objet avec un nouvel ID de version.
+
+Un marqueur de suppression possède les propriétés suivantes :
+
+- Une clé et un ID de version comme tout autre objet.
+- Il n'a pas de données associées, donc il ne récupère rien d'une requête GET (vous obtenez une erreur 404).
+- Par défaut, il n'est plus affiché dans l'espace client.
+- La seule opération que vous pouvez utiliser sur un marqueur de suppression est DELETE, et seul le propriétaire du bucket peut effectuer une telle demande.
+
+Pour supprimer définitivement un objet, vous devez spécifier l'ID de version dans votre demande de suppression d'objet :
+
+```bash
+aws s3api delete-object --bucket my-bucket --key an-object --version-id 123456huijw0
+```
+
+La fonction Object Lock empêche les objets, pendant une durée fixe (mode de rétention) ou indéfiniment (conservation légale), d'être :
+
+ - supprimé même si vous spécifiez le *version id* (vous obtenez une erreur « Access Denied ») ;
+ - écrasé par le versionning.
+
+> [!primary]
+>
+> Pour utiliser Object Lock, le *versioning* doit être activé.
+>
 
 ### Périodes de rétention
 
