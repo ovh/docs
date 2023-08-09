@@ -1,10 +1,8 @@
 ---
 title: AI Partners Ecosystem - Lettria - Models concept (EN)
 excerpt: Learn how to use Lettria models
-updated: 2023-07-10
+updated: 2023-08-08
 ---
-
-**Last updated 10th July, 2023.**
 
 ## Objective
 
@@ -25,7 +23,7 @@ Lettria provides text understanding models that allow users to easily identify a
 
 ## Lettria’s Sentiment Analysis API
 
-Our Sentiment Analysis API, powered by Deep Learning, applies advanced algorithms to examine and predict sentiment values from -1 to 1, offering key insights into the emotional tone of text.
+Lettria's Sentiment Analysis API, powered by Deep Learning, applies advanced algorithms to examine and predict sentiment values from -1 to 1, offering key insights into the emotional tone of text.
 
 The Sentiment Analysis API facilitates sentiment assessment in diverse content, including:
 
@@ -335,6 +333,177 @@ payload = json.dumps([
     "Wow! I can't believe I won the lottery!"
 ])
 
+response = requests.post(url, json=payload, headers=headers)
+print(response.body())
+```
+
+## Lettria’s Name Entity Recognition API
+
+Lettria's NER Model API is a text analysis tool powered by deep learning. The NER model accurately predicts and extracts essential information from your data. 
+
+The API is specifically designed to identify and classify key entities such as **Locations** (`LOC`), **Persons** (`PER`), **Organizations** (`ORG`), and **Miscellaneous** (`MISC`) within your text, providing unparalleled insights and boosting your understanding of textual data. 
+
+NER Model API delivers accurate, reliable results, enabling you to streamline workflows, improve data-driven decision-making and achieve a new level of efficiency.
+
+Discover and understand the true entities behind text to improve customer satisfaction, make data-driven decisions and optimize your business strategies with entity analysis.
+
+### How does NER work?
+
+**Note**
+
+By reaching the root endpoint `/` of your API, you can access the full documentation.
+
+#### Entities
+
+The API returns a list of detected entities for each input sentence.
+
+Entities:
+
+| Entity | Description |
+| --- | --- |
+| LOC (Location) | locations or places mentioned in the text, such as cities, countries, and landmarks |
+| ORG (Organization) | organizational entities including companies, institutions, government agencies and other formal or informal groups with recognized names |
+| PER (Person) | personal entities, such as individuals’ names, including people, fictional characters, or any other references to specific persons in the text |
+| MISC (Miscellaneous) | named entities that do not fall into other specific categories, such as events, social media or other entities that do not fit into the predefined tags LOC, ORG, or PER |
+
+#### Logits
+
+By setting `return_logits=true`, the API will return the raw scores of each entity class for each word in the sentence.
+
+This can be useful to gain finer control over the prediction.
+
+Example of post-processing alteration:
+
+If a word is predicted as MISC with a score of 0.6 and as LOC with a score of 0.5, in some use cases, we might want to consider it a Location instead of a Miscellaneous entity.
+
+> [!primary]
+>
+> In logit mode, the NER tags are prefixed by B or I. B stands for Beginning (the word is the beginning of an entity) and I stands for Inside (the word is inside an entity). 
+> Example: in `Alan Turing invented AI.` 
+> Alan | B-PER 
+> Turing | I-PER 
+> invented AI | B-MISC
+> 
+
+#### Language Support
+
+The model supports the following languages:
+
+- English
+- French
+- Spanish
+- Portuguese
+- Italian
+
+#### Predict
+
+This predicts sentiment in a list of documents. It takes a string as input and gives a JSON as output.
+
+**URL**: `/api/predict/`
+
+**Method**: `POST`
+
+**Payload**
+
+```json
+{
+	"inputs": [str],
+	"return_logits": bool
+}
+```
+
+**Payload example**
+
+```json
+{
+   "inputs":[
+      "I bought an apple yesterday.",
+      "I bought an Apple yesterday."
+   ],
+   "return_logits":true
+}
+```
+
+#### Success Response
+
+**Code**: `200 OK`
+
+**Response content**
+
+```json
+{
+   "predictions":[
+      [
+         {
+            "entity":"string",
+            "score":"float",
+            "confidence":"float",
+            "words":"string",
+            "start":"int",
+            "end":"int",
+            "scores":{
+               "property1":"float",
+               "property2":"float"
+            }
+         }
+      ]
+   ],
+   "analysed_chars":"int"
+}
+```
+
+**Example response**
+
+For the input `I bought an Apple yesterday.`
+
+```json
+{
+   "predictions":[
+      [
+         {
+            "entity":"ORG",
+            "score":0.935,
+            "confidence":0.872,
+            "words":"Apple",
+            "start":13,
+            "end":18
+         }
+      ]
+   ],
+   "analysed_chars":50
+}
+```
+
+### Demo
+
+A Gradio is available on `/demo` or `/gradio`.
+
+![NERGradioDemo](images/lettria_ner_demo.png){.thumbnail}
+
+### Calling the API in Python
+
+**Requirement**
+
+Install the requests package :
+
+```console
+pip install requests
+```
+
+**Code**
+
+```python
+import requests
+
+base_ovh_endpoint = ""
+url = f"{base_ovh_endpoint}/predict"
+headers = {"Accept": "*/*", "Content-Type": "application/json"}
+payload = json.dumps(
+    {
+        "inputs": ["I bought an apple yesterday.", "I bought an Apple yesterday."],
+        "return_logits": true,
+    }
+)
 response = requests.post(url, json=payload, headers=headers)
 print(response.body())
 ```
