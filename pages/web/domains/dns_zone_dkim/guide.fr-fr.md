@@ -68,6 +68,9 @@ L'enregistrement DKIM (**D**omain**K**eys **I**dentified **M**ail) permet de sig
     - [Enregistrement TXT](#txt-record)
     - [Enregistrement CNAME](#cname-record)
 - [Tester votre DKIM](#test-dkim)
+- [Cas d'usages](#usecases)
+    - [Comment changer sa paire de clé DKIM ?](#2selectors)
+    - [Pourquoi l'icône DKIM est rouge dans mon espace client ?](#reddkim)
 
 ### Comment le DKIM fonctionne-t-il ? <a name="how-dkim-work"></a>
 
@@ -341,7 +344,11 @@ Suivez les **5 étapes** ci-dessous en cliquant sur chacun des onglets.
 >>
 > **2.Créer un sélecteur**
 >> Vous allez maintenant créer un sélecteur, générer sa paire de clés et l'enregistrement DNS associé au nom de domaine.<br>
->><br>
+>> <br>
+>> > [!primary]
+>> >
+>> > Nous vous conseillons de réaliser cette opération à deux reprises pour chacun des sélecteurs précédement listés. Le deuxième sélecteur vous permettra d'éffectuer un changement de paire de clés lorsque cela sera necessaire. Nous vous invitons à consulter notre cas d'usage [« Comment changer sa paire de clé DKIM »](#2selectors).
+>> <br>
 >> Pour cela, utilisez l'appel API suivant :<br>
 >>
 >> > [!api]
@@ -717,6 +724,69 @@ Return-Path: <test-dkim@mydomain.ovh>
 </code></pre>
 
 Pour récupérer l'en-tête d'un e-mail, consulter notre guide « [Récupérer l'en-tête d'un e-mail](/pages/web/emails/diagnostic_headers) ».
+
+### Cas d'usages <a name="usecases"></a>
+
+#### Comment changer sa paire de clé DKIM ? <a name="2selectors"></a>
+
+Lorsque vous activez le DKIM sur votre service e-mail, il est possible de créer 2 sélecteurs. Le deuxième sélecteur servira de nouvelle paire de clé lors de votre changement. Pour cela vous devez désactivez 
+
+> [!tabs]
+> **Exchange**
+>> Pour désactiver le sélecteur actuel, utilisez l'appel API suivant:
+>> 
+>> > [!api]
+>> >
+>> > @api {POST} /email/exchange/{organizationName}/service/{exchangeService}/domain/{domainName}/dkim/{selectorName}/disable
+>> >
+>>
+>> - `organizationName` : saisissez le nom de votre plateforme Exchange se présentant sous la forme « hosted-zz111111-1 » ou « private-zz111111-1 ». <br>
+>> - `selectorName` : saisissez le nom du sélecteur que vous souhaitez désactiver. <br>
+>> - `exchangeService` : saisissez le nom de votre plateforme Exchange se présentant sous la forme « hosted-zz111111-1 » ou « private-zz111111-1 ». <br>
+>> - `domainName` : saisissez le nom de domaine attaché à votre plateforme Exchange. <br>
+>>
+>> Pour activer le nouveau sélecteur, utilisez l'appel API suivant :
+>>
+>> > [!api]
+>> >
+>> > @api {POST} /email/exchange/{organizationName}/service/{exchangeService}/domain/{domainName}/dkim/{selectorName}/enable
+>> >
+>>
+>> - `organizationName` : saisissez le nom de votre plateforme Exchange se présentant sous la forme « hosted-zz111111-1 » ou « private-zz111111-1 ».<br>
+>> - `selectorName` : saisissez le nom d'un sélecteur existant.<br>
+>> - `exchangeService` : saisissez le nom de votre plateforme Exchange se présentant sous la forme « hosted-zz111111-1 » ou « private-zz111111-1 ».<br>
+>> - `domainName` : saisissez le nom de domaine attaché à votre plateforme Exchange sur lequel vous souhaitez activer le DKIM.<br>
+>>
+> **E-mail Pro**
+>> Pour désactiver le sélecteur actuel, utilisez l'appel API suivant:
+>> 
+>> > [!api]
+>> >
+>> > @api {POST} /email/pro/{service}/domain/{domainName}/dkim/{selectorName}/disable
+>> >
+>>
+>> - `service` : saisissez le nom de votre plateforme E-mail Pro se présentant sous la forme « emailpro-zz111111-1 » . <br>
+>> - `selectorName` : saisissez le nom du sélecteur que vous souhaitez désactiver. <br>
+>> - `domainName` : saisissez le nom de domaine attaché à votre plateforme E-mail Pro. <br>
+>>
+>> Pour activer le nouveau sélecteur, utilisez l'appel API suivant :
+>>
+>> > [!api]
+>> >
+>> > @api {POST} /email/pro/{service}/domain/{domainName}/dkim/{selectorName}/enable
+>> >
+>>
+>> - `service` : saisissez le nom de votre plateforme E-mail Pro se présentant sous la forme « emailpro-zz111111-1 » . <br>
+>> - `selectorName` : saisissez le nom du sélecteur que vous avez créé .<br>
+>> - `domainName` : saisissez le nom de domaine attaché à votre plateforme E-mail Pro sur lequel le DKIM doit être présent.<br>
+>>
+
+Une fois l'ancien sélecteur désactivé et le nouveau
+
+
+#### Pourquoi l'icône DKIM est rouge dans mon espace client ? <a name="reddkim"></a>
+
+Cela signifie
 
 ## Aller plus loin
 
