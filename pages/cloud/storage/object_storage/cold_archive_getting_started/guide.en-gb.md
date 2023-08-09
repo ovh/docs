@@ -42,9 +42,24 @@ delete-ovh-archive = s3api delete-bucket-intelligent-tiering-configuration --id 
 
 > [!primary]
 >
-> `Id` will be necessary for further PUT, GET and DELETE operations on the intelligent-tiering configuration.
+> `Id` is a string used to identify the S3 Intelligent-Tiering configuration. Its value is arbitrary and up to you. It will be necessary for further PUT, GET and DELETE operations on the intelligent-tiering configuration.
 > `Status` and `Days` are mandatory but not used.
 >
+
+To retrieve an Intelligent tiering configuration, use the get-bucket-intelligent-tiering-configuration command:
+```bash
+aws s3api get-bucket-intelligent-tiering-configuration --bucket example-bucket --id myid
+```
+```json
+{
+    "Id": "myid",
+    "Status": "Enabled",
+    "Tierings": [
+        {"Days": 999, "AccessTier": "OVH_ARCHIVE"}
+    ]
+}
+```
+
 
 > [!primary]
 >
