@@ -729,7 +729,7 @@ Pour récupérer l'en-tête d'un e-mail, consulter notre guide « [Récupérer l
 
 #### Comment changer sa paire de clé DKIM ? <a name="2selectors"></a>
 
-Lorsque vous activez le DKIM sur votre service e-mail, il est possible de créer 2 sélecteurs. Le deuxième sélecteur servira de nouvelle paire de clé lors de votre changement. Pour cela vous devez désactivez 
+Lorsque vous activez le DKIM sur votre service e-mail, il est possible de créer 2 sélecteurs. Le deuxième sélecteur servira de nouvelle paire de clé lors de votre changement. Pour cela vous devez désactiver 
 
 > [!tabs]
 > **Exchange**
@@ -781,7 +781,7 @@ Lorsque vous activez le DKIM sur votre service e-mail, il est possible de créer
 >> - `domainName` : saisissez le nom de domaine attaché à votre plateforme E-mail Pro sur lequel le DKIM doit être présent.<br>
 >>
 
-Une fois l'ancien sélecteur désactivé et le nouveau
+Une fois l'ancien sélecteur désactivé et le nouveau activé
 
 
 #### Pourquoi l'icône DKIM est rouge dans mon espace client ? <a name="reddkim"></a>
