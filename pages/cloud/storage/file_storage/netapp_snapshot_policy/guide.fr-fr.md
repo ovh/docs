@@ -17,8 +17,8 @@ Dans ce guide, nous allons vous donner un aperçu de la gestion de vos politique
 
 ## Principes de base
 
-Un snapshot de volume est une copie ponctuelle en lecture seule d'un volume.
-Les snapshots sont créés à partir d'un volume opérationnel existant. Ils ne peuvent exister sans cela. 
+Un snapshot de volume est une copie ponctuelle en lecture seule d'un volume.<br>
+Les snapshots sont créés à partir d'un volume opérationnel existant. Ils ne peuvent exister sans cela.<br>
 Une politique de snapshot permet d'automatiser la création de snapshots à l'aide de différents paramètres. La politique peut ensuite être modifiée et supprimée si vous n'en avez plus besoin.
 
 ## En pratique
@@ -34,7 +34,7 @@ Il est également nécessaire de préciser le nombre de copies que vous souhaite
 
 ![SnapshotPolicy](images/Snapshot_Policy_1.png){.thumbnail}
 
-2\. Définissez le nom de votre politique de snapshot, une description pour celle-ci, puis utilisez le bouton `Ajouter une nouvelle règle`{.action} pour ajouter une ou plusieurs règles à la politique.
+2\. Définissez le nom de votre politique de snapshot, une description pour celle-ci, puis utilisez le bouton `+ Ajouter une nouvelle règle`{.action} pour ajouter une ou plusieurs règles à la politique.
 
 ![SnapshotPolicy](images/Snapshot_Policy_2.png){.thumbnail}
 
@@ -83,5 +83,7 @@ Pour supprimer une politique de snapshot :
 ![DeleteSnapshotPolicy](images/Snapshot_Policy_6.png){.thumbnail}
 
 ## Aller plus loin
+
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre communauté d’utilisateurs sur <https://community.ovh.com/>.
