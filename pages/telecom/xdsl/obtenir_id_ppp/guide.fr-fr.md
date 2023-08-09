@@ -1,10 +1,8 @@
 ---
 title: 'Obtenir les identifiants PPPoE'
 excerpt: 'Découvrez comment récupérer les identifiants PPPoE de votre accès à Internet OVHcloud via les API'
-updated: 2022-02-16
+updated: 2023-08-08
 ---
-
-**Dernière mise à jour le 16/02/2022**
 
 ## Objectif
 
@@ -32,7 +30,7 @@ Si votre offre a été fournie avec un modem OVHcloud, les identifiants PPPoE vo
 Le *login* reste identique après chaque réinitialisation.
 Pour des raisons de sécurité, le *mot de passe* est systématiquement modifié après chaque réinitialisation.
 
-Si vous souhaitez utiliser votre propre modem/routeur, vous pouvez utiliser les API OVHcloud afin de générer l'envoi de nouveaux identifiants PPPoE par e-mail. 
+Si vous souhaitez utiliser votre propre modem/routeur, vous pouvez utiliser les API OVHcloud afin de générer l'envoi de nouveaux identifiants PPPoE par e-mail.
 
 Dans un premier temps, il vous faut retrouver le *serviceName* de votre accès à Internet.
 
@@ -75,6 +73,10 @@ L'objet de l'e-mail est le suivant :
 Voici un exemple d'e-mail contenant les identifiants PPPoE :
 
 ![email_recus](images/contenumailtyperesetppp-2022.png){.thumbnail}
+
+### Configurer votre routeur
+
+Vous pouvez suivre le guide « [Configurer un routeur manuellement](/pages/telecom/xdsl/advanced_config_router_manually) » pour configurer manuellement vos identifiants PPPoE sur votre propre matériel.
 
 ## Aller plus loin
 
