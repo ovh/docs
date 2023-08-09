@@ -16,6 +16,30 @@ Object Lock is a feature that allows you to store objects using a **W**rite **O*
 
 Object Lock provides two ways to manage object retention. The first is *retention periods* and the second is *Legal hold*.
 
+### How object locking works
+To understand how object lock works, we must first understand how deletion of objects and versioning work together. When a delete object operation is performed on an object in a versioning-enabled bucket, it does not delete the object permanently but it creates a delete marker on the object. This delete marker becomes the latest and current version of the object with a new version id.
+
+A delete marker has the following properties:
+- a key and version ID like any other object
+- it does not have data associated with it thus it does not retrieve anything from a GET request (you get a 404 error)
+- by default, it is not displayed in the manager UI anymore
+- the only operation you can use on a delete marker is DELETE, and only the bucket owner can issue such a request
+
+To permanently delete an object, you have to specify the version-id in your delete object request:
+```bash
+aws s3api delete-object --bucket my-bucket --key an-object --version-id 123456huijw0
+```
+
+The object lock feature prevents objects, for a fixed amount of time (retention mode) or indefinitely (legal hold), from being:
+ - deleted even if you specify the version id (you get an Access Denied error)
+ - overwritten by using versioning
+
+> [!primary]
+>
+> To use object locks, versioning must be activated.
+>
+
+
 ### Retention periods
 
 A retention period specifies a fixed period of time during which an object remains locked. During this period, your object is protected and can’t be overwritten or deleted. You apply a retention period either in number of days or number of years with the minimum being 1-day and no maximum limit.
