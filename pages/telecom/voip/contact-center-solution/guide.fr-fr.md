@@ -1,10 +1,8 @@
 ---
 title: 'Configurer un Contact Center Solution'
 excerpt: 'Découvrez comment configurer un Contact Center Solution sur votre numéro alias'
-updated: 2022-08-04
+updated: 2023-08-09
 ---
-
-**Dernière mise à jour le 04/08/2022**
 
 ## Objectif
 
@@ -154,7 +152,7 @@ Les options sont les suivantes :
 |---|---|
 |Nom de la file|Cela vous permet de personnaliser le nom de votre file. C'est recommandé si vous comptez créer plusieurs files, afin de bien les différencier dans la construction de votre CCS.|
 |Stratégie|Choisissez une stratégie de sonnerie pour vos agents qui pourront, par exemple, sonner tous en même temps ou l'un après l'autre.|
-|Suivre les renvois d'appels|Définissez si les renvois d’appels configurés sur les lignes de la file doivent être appliqués ou non.|
+|Suivre les renvois d'appels|Définissez si les renvois d’appels configurés sur les lignes de la file doivent être appliqués ou non.<br><br>**Attention**, cette option, même si elle n'est activée que sur une file, s'appliquera à l'ensemble des files d'appels configurées.|
 |Nombre maximum d'appelants en attente|Définissez le nombre maximum d’appelants pouvant être en attente dans la file. Si ce nombre venait à être dépassé, les appelants suivants entendraient l'annonce sur débordement.|
 |Temps d'attente maximum dans la file (en secondes)|Définissez la durée maximale d'attente dans cette file avant que l'appel ne passe à l'étape suivante de votre CCS.|
 |Musique d'attente|Ce son sera joué à l’entrée dans la file d’attente jusqu’au décrochage de l’appel par une ligne.|
