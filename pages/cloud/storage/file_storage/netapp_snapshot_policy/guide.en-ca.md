@@ -16,8 +16,8 @@ Learn how to create a snapshot policy, apply it to your volume, modify and delet
 
 ## Basics
 
-A volume snapshot is a point-in-time, read-only copy of a volume.
-Snapshots are created from an existing, operational volume. They cannot exist without it. 
+A volume snapshot is a point-in-time, read-only copy of a volume.<br>
+Snapshots are created from an existing, operational volume. They cannot exist without it.<br>
 A snapshot policy allows you to automate the snapshot creation using different parameters. The policy can then be modified and deleted if you no longer need it.
 
 
@@ -33,7 +33,7 @@ It is also required to specify the number of copies you want to retain.
 1\. From your OVHcloud Enterprise File Storage Control Panel, select the `Snapshot policy`{.action} tab.
 ![SnapshotPolicy](images/Snapshot_Policy_1.png){.thumbnail}
 
-2\. Set your snapshot policy name, a policy description and then use the button `Add a new rule`{.action} to add one or more rules to the policy.
+2\. Set your snapshot policy name, a policy description and then use the button `+ Add a new rule`{.action} to add one or more rules to the policy.
 ![SnapshotPolicy](images/Snapshot_Policy_2.png){.thumbnail}
 
 3\. Fill in the fields to specify the time of day, days of a month, week days and months for the snapshot creation. You also have to enter a prefix for the snapshots, needed for naming them.
@@ -76,7 +76,8 @@ To delete a snapshot policy:
 3\.	Click on the `Trash can`{.action} deletion button.
 ![DeleteSnapshotPolicy](images/Snapshot_Policy_6.png){.thumbnail}
 
-
 ## Go further
-  
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-ca/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+
 Join our community of users on <https://community.ovh.com/en/>.
