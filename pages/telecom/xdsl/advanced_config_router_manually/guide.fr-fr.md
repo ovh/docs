@@ -7,7 +7,7 @@ updated: 2023-08-08
 ## Objectif
 
 Si vous souhaitez utiliser votre équipement personnel pour gérer la connexion PPPoE sur votre offre xDSL/FTTH OVHcloud, vous devez récupérer les identifiants PPPoE associés à cet accès.<br>
-Si vous ne les connaissez pas vous pouvez les récupéréer en suivant les étapes de notre guide « [Obtenir les identifiants PPPoE](/pages/telecom/xdsl/obtenir_id_ppp) ».
+Si vous ne les connaissez pas vous pouvez les récupérer en suivant les étapes de notre guide « [Obtenir les identifiants PPPoE](/pages/telecom/xdsl/obtenir_id_ppp) ».
 
 **Découvrez comment configurer votre accès internet OVHcloud sur votre propre routeur**.
 
