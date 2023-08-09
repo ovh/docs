@@ -1,7 +1,7 @@
 ---
 title: Cold Archive - Premiers pas avec Cold Archive
 excerpt: Ce guide vous montre comment gérer vos données avec Cold Archive
-updated: 2023-07-21
+updated: 2023-08-09
 ---
 
 ## Objectif
@@ -42,9 +42,26 @@ delete-ovh-archive = s3api delete-bucket-intelligent-tiering-configuration --id 
 
 > [!primary]
 >
-> `Id` sera nécessaire pour les opérations ultérieures PUT, GET et DELETE sur la configuration de l'Intelligent-Tiering.
-> `Status` et `Days` sont obligatoires mais non utilisés.
+> - `Id` est une chaîne utilisée pour identifier la configuration de l'Intelligent-Tiering S3. Sa valeur est arbitraire et vous pouvez la modifier. Elle sera nécessaire pour les opérations ultérieures PUT, GET et DELETE sur la configuration de l'Intelligent-Tiering.
+> 
+> - `Status` et `Days` sont obligatoires mais non utilisés.
 >
+
+Pour récupérer une configuration de Intelligent-Tiering, utilisez la commande get-bucket-intelligent-tiering-configuration :
+
+```bash
+aws s3api get-bucket-intelligent-tiering-configuration --bucket example-bucket --id myid
+```
+
+```json
+{
+    "Id": "myid",
+    "Status": "Enabled",
+    "Tierings": [
+        {"Days": 999, "AccessTier": "OVH_ARCHIVE"}
+    ]
+}
+```
 
 > [!primary]
 >

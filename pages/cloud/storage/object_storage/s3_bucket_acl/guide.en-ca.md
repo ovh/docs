@@ -1,9 +1,7 @@
 ---
 title: Object Storage - Bucket ACL
-updated: 2023-03-09
+updated: 2023-08-09
 ---
-
-**Last updated on 9th March 2023**
 
 ## Overview
 
@@ -196,6 +194,81 @@ $ aws s3api put-object --bucket my-bucket --body file.txt --key file --grant-ful
 ```
 
 In this example, we created an object named "file" and we gave "FULL_CONTROL" on that object to account user "user-yyyyyyyyyy".
+
+To verifiy that ACL are set correctly, you can use the following command to return the ACL:
+
+```bash
+$ aws s3api get-object-acl --bucket my-bucket --key file
+```
+
+```json
+{
+    "Owner": {
+        "DisplayName": "2171889990277389:user-xxxxxxxxxxxx",
+        "ID": "2171889990277389:user-xxxxxxxxxxxx"
+    },
+    "Grants": [
+        {
+            "Grantee": {
+                "DisplayName": "2171889990277389:user-xxxxxxxxxxxx",
+                "ID": "2171889990277389:user-xxxxxxxxxxxx",
+                "Type": "CanonicalUser"
+            },
+            "Permission": "FULL_CONTROL"
+        },
+        {
+            "Grantee": {
+                "DisplayName": "po-training:user-yyyyyyyyyy",
+                "ID": "po-training:user-yyyyyyyyyy",
+                "Type": "CanonicalUser"
+            },
+            "Permission": "FULL_CONTROL"
+        },
+    ]
+}
+```
+
+To change the ACL, you can call the `put-object-acl` endpoint by using the AWS cli:
+
+```bash
+$ aws s3api put-object-acl --bucket acl-bucket --grant-read id=po-training:user-yyyyyyyyyy
+```
+
+Here, we changed our mind and decided to only give the account user "user-yyyyyyyyyy" the permission to read in the bucket instead of full control.
+
+Again, to verify that ACL are set correctly, use the following command:
+
+```bash
+$ aws s3api get-object-acl --bucket my-bucket --key file
+```
+
+```json
+{
+    "Owner": {
+        "DisplayName": "2171889990277389:user-xxxxxxxxxxxx",
+        "ID": "2171889990277389:user-xxxxxxxxxxxx"
+    },
+    "Grants": [
+        {
+            "Grantee": {
+                "DisplayName": "2171889990277389:user-xxxxxxxxxxxx",
+                "ID": "2171889990277389:user-xxxxxxxxxxxx",
+                "Type": "CanonicalUser"
+            },
+            "Permission": "FULL_CONTROL"
+        },
+        {
+            "Grantee": {
+                "DisplayName": "po-training:user-yyyyyyyyyy",
+                "ID": "po-training:user-yyyyyyyyyy",
+                "Type": "CanonicalUser"
+            },
+            "Permission": "READ"
+        },
+    ]
+}
+```
+
 
 ## Best practices
 
