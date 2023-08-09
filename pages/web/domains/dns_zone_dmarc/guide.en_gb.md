@@ -37,8 +37,6 @@ After reading the instructions of the **mydomain.ovh** domain name DMARC record 
 
 You must first enable DMARC on the email service associated with your domain name.
 
-To configure the DNS zone for your email service’s domain name, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), click the `Web Cloud`{.action} tab then go in the `Domain names`{.action} section on the left.
-
 There are two ways to configure the DMARC in your OVHcloud DNS zone:
 
 - Via a [DMARC record](#dmarc-record). This registration allows a simplified configuration of the DMARC. Simply fill in the fields with the DMARC settings required for your configuration. This record is read as a TXT record by DNS servers.

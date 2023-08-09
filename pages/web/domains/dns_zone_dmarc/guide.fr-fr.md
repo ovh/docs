@@ -37,8 +37,6 @@ Après lecture des instructions de l'enregistrement DMARC du nom de domaine **my
 
 Vous devez d'abord activer le DMARC sur le service e-mail associé à votre nom de domaine.
 
-Pour configurer la zone DNS du nom de domaine de votre service e-mail, rendez-vous dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), dans la section `Noms de domaine`{.action} à gauche.
-
 Il y a deux façons de configurer le DMARC dans votre zone DNS OVHcloud :
 
 - Par le biais d'un [enregistrement DMARC](#dmarc-record). Cet enregistrement permet une configuration simplifiée du DMARC. Vous n'aurez qu'à compléter les champs avec les paramètres DMARC nécessaires à votre configuration. Cet enregistrement est lu comme un enregistrement TXT par les serveurs DNS.
@@ -83,7 +81,7 @@ Vous trouverez ci-dessous le descriptif exhaustif des balises utilisées pour **
 
 #### Enregistrement TXT <a name="txt-record"></a>
 
-Vous pouvez ajouter l'enregistrement TXT à votre zone DNS depuis l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Cliquez sur `Noms de domaine`{.action} puis choisissez le nom de domaine concerné. Positionnez-vous enfin sur l'onglet `Zone DNS`{.action}.
+Vous pouvez ajouter l'enregistrement TXT à votre zone DNS depuis l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) puis rendez-vous dans la partie `Web Cloud`{.action}. Cliquez sur `Noms de domaine`{.action} puis choisissez le nom de domaine concerné. Positionnez-vous enfin sur l'onglet `Zone DNS`{.action}.
 
 Une fois votre zone DNS affichée, cliquez sur le bouton `Ajouter une entrée`{.action} puis sur « Champs étendus » `TXT`{.action}.
 
