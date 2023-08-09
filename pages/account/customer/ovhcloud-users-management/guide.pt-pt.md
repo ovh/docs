@@ -73,13 +73,13 @@ A alteração do utilizador permite atualizar o seu endereço de e-mail, os seus
 
 #### Adicionar um grupo
 
-No separador `Gestão dos utilizadores` {.action}, clique em `Declarar um grupo`{.action}.
+No separador `Gestão dos utilizadores`{.action}, clique em `Declarar um grupo`{.action}.
 
-![users-management](images/usersmanagement7.png) {.thumbnail}
+![users-management](images/usersmanagement7.png){.thumbnail}
 
 Aparecerá uma janela e deverá preencher os campos necessários. Clique em `Validar`{.action} para criar o utilizador.
 
-![users-management](images/usersmanagement8.png) {.thumbnail}
+![users-management](images/usersmanagement8.png){.thumbnail}
 
 Os grupos atribuem um nível de privilégio por defeito aos utilizadores que contêm, em função do papel que escolhe:
 
@@ -94,11 +94,11 @@ Os grupos atribuem um nível de privilégio por defeito aos utilizadores que con
 
 Pode atualizar ou eliminar um grupo ao clicar no botão `...`{.action} à direita do nome do grupo.
 
-![users-management](images/usersmanagement9.png) {.thumbnail}
+![users-management](images/usersmanagement9.png){.thumbnail}
 
 Quando alterar um grupo, pode modificar a sua descrição e o seu papel.
 
-![users-management](images/usersmanagement10.png) {.thumbnail}
+![users-management](images/usersmanagement10.png){.thumbnail}
 
 ### Gestão de permissões
 

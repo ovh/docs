@@ -55,4 +55,4 @@ Das Ergebnis zeigt einen Eintrag mit "vmac / supported" an, der "true" oder "fal
 
 [First Steps with the OVHcloud API](/pages/account/api/first-steps)
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/>.
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

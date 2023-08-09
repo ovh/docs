@@ -82,7 +82,7 @@ Por último, configure los siguientes campos:
 
 En el área de cliente de OVHcloud, seleccione una de sus cuentas de SMS y haga clic en `Transferir crédito`{.action} en la pestaña `Inicio`{.action}.
 
-![transferencia de créditos de SMS](images/credit-transfer01.png) {.thumbnail}
+![transferencia de créditos de SMS](images/credit-transfer01.png){.thumbnail}
 
 Seleccione:
 
@@ -92,7 +92,7 @@ Seleccione:
 
 Haga clic en `Enviar`{.action} para confirmar la transferencia. Esta operación es inmediata.
 
-![transferencia de créditos de SMS](images/credit-transfer02.png) {.thumbnail}
+![transferencia de créditos de SMS](images/credit-transfer02.png){.thumbnail}
 
 
 ## Más información

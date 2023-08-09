@@ -1,4 +1,4 @@
---- 
+---
 title: Enterprise File Storage - Zarządzanie polityką wykonywania snapshotów
 excerpt: "Dowiedz się, jak utworzyć politykę wykonywania snapshotów, zastosować ją do Twojego wolumenu, zmodyfikować i usunąć z poziomu panelu klienta"
 updated: 2023-08-07

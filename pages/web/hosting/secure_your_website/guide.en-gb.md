@@ -12,7 +12,7 @@ This guide will provide you with basic knowledge to ensure that your services ar
 
 The recommendations below are ordered by decreasing importance and increasing technical difficulty, which means that the first steps are the most essential. The security of your site will be measured by the element least protected. We therefore recommend carrying out all of the actions described in this guide. 
 
-However, if you experience any difficulties carrying out some of them, please do not hesitate to contact the [OVHcloud community](https://community.ovh.com/) or our [partners](https://partner.ovhcloud.com/en-gb/directory/).
+However, if you experience any difficulties carrying out some of them, please do not hesitate to contact the [OVHcloud community](https://community.ovh.com/en/) or our [partners](https://partner.ovhcloud.com/en-gb/directory/).
 
 **This guide explains how to improve the security your website.**
 

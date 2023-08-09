@@ -54,4 +54,4 @@ Tenga en cuenta que, al cambiar la contraseña de una cuenta de usuario, se canc
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en [https://community.ovh.com](https://community.ovh.com/){.external}.
+Interactúe con nuestra comunidad de usuarios en [https://community.ovh.com](https://community.ovh.com/en/){.external}.

@@ -124,4 +124,4 @@ Odwiedź nasz dedykowany kanał na Discordzie: <https://discord.gg/ovhcloud>. Za
 
 Jeśli potrzebujesz szkolenia lub pomocy technicznej w celu wdrożenia naszych rozwiązań, skontaktuj się z przedstawicielem handlowym lub kliknij [ten link](https://www.ovhcloud.com/pl/professional-services/), aby uzyskać wycenę i poprosić o spersonalizowaną analizę projektu od naszych ekspertów z zespołu Professional Services.
 
-Dołącz do naszej społeczności użytkowników na <https://community.ovh.com/>.
+Dołącz do naszej społeczności użytkowników na <https://community.ovh.com/en/>.

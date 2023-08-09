@@ -62,7 +62,7 @@ Siga los siguientes pasos para registrar una forma de pago. En el primer paso, p
 
 Para registrar un cargo en su cuenta bancaria, será redirigido a un espacio que permita el registro de dicha cuenta y la firma electrónica de su autorización de cobro.
 
-![forma de pago SEPA](images/sepa.png) {.thumbnail}
+![forma de pago SEPA](images/sepa.png){.thumbnail}
 
 Si su entidad bancaria está registrada por nuestro partner, el registro de la cuenta bancaria será inmediato. En caso contrario, puede ser necesario un plazo aproximado de 48 horas.
 
