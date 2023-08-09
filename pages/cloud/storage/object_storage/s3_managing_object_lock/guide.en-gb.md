@@ -33,8 +33,8 @@ aws s3api delete-object --bucket my-bucket --key an-object --version-id 123456hu
 
 The Object Lock feature prevents objects, for a fixed amount of time (retention mode) or indefinitely (legal hold), from being:
 
- - deleted even if you specify the version id (you get an Access Denied error) ;
- - overwritten by using versioning.
+- deleted even if you specify the version id (you get an Access Denied error) ;
+- overwritten by using versioning.
 
 > [!primary]
 >
