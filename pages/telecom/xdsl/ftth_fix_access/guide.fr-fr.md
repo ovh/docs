@@ -1,10 +1,8 @@
 ---
 title: 'Dépanner son accès internet fibre'
 excerpt: 'Découvrez comment dépanner et remettre en service votre accès internet fibre OVHcloud'
-updated: 2022-02-16
+updated: 2023-08-09
 ---
-
-**Dernière mise à jour le 16/02/2022**
 
 ## Objectif
 
@@ -59,9 +57,10 @@ Commencez en relevant l'état des trois voyants mentionnés ci-dessous sur l'app
 
 |Voyant|États et significations|
 |---|---|
-|Alimentation|**Vert fixe** : l'équipement ONT est allumé.<br> **Éteint** : l'équipement ONT est éteint.|
-|Fibre|**Vert fixe** : la connexion avec le signal optique (fibre) est établie.<br> **Vert clignotant** : la connexion avec le signal optique (fibre) est en train de s'établir.<br> **Rouge fixe** : la connexion avec le signal optique (fibre) n'est pas établie.|
-|État|**Éteint** : l'équipement ONT fonctionne correctement.<br> **Rouge clignotant lentement (toutes les deux secondes)** : l'équipement ONT est en train de se mettre à jour.<br> **Rouge fixe ou clignotant rapidement (deux fois par seconde)** : l'équipement ONT est défaillant.|
+|Alimentation|**Vert fixe** : l'équipement ONT est bien alimenté électriquement.<br> **Éteint** : l'équipement ONT n'est pas raccordé électriquement ou n'est pas allumé (bouton ON/OFF) ou est hors service.|
+|Fibre|**Vert fixe** : la synchronisation optique (fibre) est établie.<br> **Vert clignotant** : un signal optique est détecté par l'équipement ONT.<br> **Eteint** : aucun signal optique n'est détecté par l'équipement ONT.|
+|État|**Éteint** : l'équipement ONT fonctionne correctement.<br>**Rouge clignotant rapidement (deux fois par seconde)** : le signal optique présente une anomalie.| 
+|Lan|**Vert clignotant** : fonctionnement normal, des données sont échangées entre l'équipement ONT et le routeur.<br>**Éteint** : il n'y a pas de communication entre l'équipement ONT et le routeur OVHcloud, via un câble RJ45.|
 
 Dès lors, plusieurs possibilités, selon l'état des voyants.
 
@@ -81,15 +80,16 @@ Commencez en relevant l'état des trois voyants mentionnés ci-dessous sur l'app
 
 |Voyant|États et significations|
 |---|---|
-|Power|**Vert fixe** : l'équipement ONT est allumé.<br> **Éteint** : l'équipement ONT est éteint.|
-|Alarm|**Éteint** : l'équipement ONT fonctionne correctement.<br> **Rouge clignotant lentement (toutes les deux secondes)** : l'équipement ONT est en train de se mettre à jour.<br> **Rouge fixe ou clignotant rapidement (deux fois par seconde)** : l'équipement ONT est défaillant.|
-|PON|**Vert fixe** : la connexion avec le signal optique (fibre) est établie.<br> **Vert clignotant** : la connexion avec le signal optique (fibre) est en train de s'établir.<br> **Rouge fixe** : la connexion avec le signal optique (fibre) n'est pas établie.|
+|Power|**Vert fixe** : l'équipement ONT est bien alimenté électriquement.<br> **Éteint** : l'équipement ONT n'est pas raccordé électriquement ou n'est pas allumé (bouton ON/OFF) ou est hors service.|
+|Alarm|**Éteint** : l'équipement ONT fonctionne correctement.<br>**Rouge fixe** : le signal optique présente des anomalies LOF/LOS (pertes de frames/pertes de signal)|
+|PON|**Vert fixe** : la synchronisation optique (fibre) est établie.<br> **Vert clignotant** : un signal optique (fibre) est détecté, la synchronisation est en train de s'établir.<br> **Eteint** : le signal optique (fibre) n'est pas/plus détecté par l'équipement ONT.|
+|LAN|**Vert clignotant** : fonctionnement normal, des données sont échangées entre l'équipement ONT et le routeur.<br>**Éteint** : il n'y a pas/plus de communication entre l'équipement ONT et le routeur OVHcloud, via un câble RJ45.<br>**Vert fixe** : cela signifie que l'équipement ONT est bien relié au routeur via un câble RJ45 mais il n'y a pas de communication de données entre ces deux éléments.|
 
 Dès lors, plusieurs possibilités selon l'état des voyants.
 
 - **Aucun voyant n’est allumé sur l'ONT** : assurez-vous que le bouton-poussoir « ON/OFF », situé sur une tranche de l'appareil est bien enclenché sur **ON**. Vérifiez que le câble d'alimentation est correctement branché à ses deux extrémités. Testez éventuellement une autre prise électrique. Si le défaut persiste, prenez contact avec notre équipe support.
 
-- **Le voyant ON est éteint** : assurez-vous que le câble de fibre optique est correctement relié à votre ONT et que celui-ci est en bon état (non plié ou non coincé sous un meuble). Essayez de redémarrer l'ONT grâce au bouton-poussoir « ON/OFF », situé sur une tranche de l'appareil. Si le défaut persiste, prenez contact avec notre équipe support.
+- **Le voyant PON est éteint** : assurez-vous que le câble de fibre optique est correctement relié à votre ONT et que celui-ci est en bon état (non plié ou non coincé sous un meuble). Essayez de redémarrer l'ONT grâce au bouton-poussoir « ON/OFF », situé sur une tranche de l'appareil. Si le défaut persiste, prenez contact avec notre équipe support.
 
 - **Le voyant « Alarm » est allumé en rouge ou clignote rapidement** : essayez de redémarrer l'ONT grâce au bouton-poussoir « ON/OFF », situé sur une tranche de l'appareil. Si le défaut persiste, prenez contact avec notre équipe support.
 
