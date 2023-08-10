@@ -41,7 +41,7 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 | Generate the customer interface to manage its DNS zone | I | RA |
 
 #### 2.2. Reversibility model
-
+| Domain Names are fully reversible by design. DNS Zones may be backuped in txt files and deployed on any new DNS server.
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
 | Know the services that depend on some DNS registerings | RA |  |
