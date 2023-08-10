@@ -35,7 +35,7 @@ Não se esqueça de consultar os nossos manuais « Primeiros passos »: <a name=
 - para um [servidor dedicado da gama **Eco**](/pages/cloud/dedicated/getting-started-with-dedicated-server-eco) ;
 - para um [VPS](/pages/cloud/vps/starting_with_a_vps).
 
-Consulte também o guia de apresentação do [protocolo SSH](/pages/cloud/dedicated/ssh_introducao).
+Consulte também o guia de apresentação do [protocolo SSH](/pages/cloud/dedicated/ssh_introduction).
 
 As instruções seguintes abrangem dois métodos de utilização das chaves SSH:
 
@@ -198,11 +198,11 @@ Copie a cadeia de chaves completa para a área de transferência para [adicionar
 
 Uma das vantagens de usar `PuTTY` é a capacidade de salvar várias conexões como « sessões ». Encontre mais informações na secção « [Gestão de várias chaves SSH no seu dispositivo local](#puttykeys) ».
 
-Para saber mais sobre as ligações SSH, consulte os guias de [primeiros passos](#getstarted) » e a nossa introdução ao [protocolo SSH](/pages/cloud/dedicated/ssh_introducao).
+Para saber mais sobre as ligações SSH, consulte os guias de [primeiros passos](#getstarted) » e a nossa introdução ao [protocolo SSH](/pages/cloud/dedicated/ssh_introduction).
 
 ### Adicionar chaves SSH ao servidor <a name="addserverkey"></a>
 
-[Ligue-se](/pages/cloud/dedicated/ssh_introducao) ao seu servidor e certifique-se de que está no diretório `$HOME` do seu utilizador. Se já não existir, crie a pasta `.ssh`:
+[Ligue-se](/pages/cloud/dedicated/ssh_introduction) ao seu servidor e certifique-se de que está no diretório `$HOME` do seu utilizador. Se já não existir, crie a pasta `.ssh`:
 
 ```bash
 mkdir ~/.ssh
@@ -377,7 +377,7 @@ Se copiou a saída completa, o identificador após a chave já deve ser adiciona
 
 > [!primary]
 >
-> Todas as chaves registadas na secção "Dedicado" estão disponíveis em pré-instalação num servidor dedicado ou num VPS. No que diz respeito às chaves SSH para os serviços Public Cloud, queira consultar [este manual](/páginas/platform/public-cloud/public-cloud-first-steps).
+> Todas as chaves registadas na secção "Dedicado" estão disponíveis em pré-instalação num servidor dedicado ou num VPS. No que diz respeito às chaves SSH para os serviços Public Cloud, queira consultar [este manual](/pages/platform/public-cloud/public-cloud-first-steps).
 >
 
 ### Definir uma chave SSH predefinida (apenas para a secção « Dedicado ») <a name="cpsshkey"></a>
@@ -406,7 +406,7 @@ Para desativar a chave SSH por **default** atual, aceda à secção `Chaves SSH`
 
 ## Quer saber mais? <a name="gofurther"></a>
 
-[Introdução ao protocolo SSH](/pages/cloud/dedicated/ssh_introducao)
+[Introdução ao protocolo SSH](/pages/cloud/dedicated/ssh_introduction)
 
 [Modo rescue num servidor dedicado](/pages/cloud/dedicated/rescue_mode)
 
