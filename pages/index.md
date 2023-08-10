@@ -1727,7 +1727,6 @@
         + [How to use IAM policies with vSphere](cloud/private-cloud/use_iam_with_vSphere)
         + [Authenticate on Openstack API with service account](pages/platform/public-cloud/authenticate-api-openstack-with-service-account)
     + [Terraform](infrastructure-as-code-terraform)
-
         + [Using Terraform with OVHcloud](account/api/terraform-at-ovhcloud)
     + [Observability](manage-operate-observability)
         + [Logs Data Platform](observability-logs-data-platform)

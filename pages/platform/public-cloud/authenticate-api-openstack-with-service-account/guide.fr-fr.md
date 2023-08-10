@@ -75,7 +75,7 @@ Vous pouvez désormais ajouter la politique d'accès suivante :
 }
 ```
 
-## Utiliser le compte de service avec la ligne de commande (CLI) Openstack
+## Utiliser un compte de service avec la ligne de commande (CLI) Openstack
 
 Si vous utilisez votre infrastructure openstack avec la ligne de commande, vous devez utiliser les variables d'environnement suivante : 
 
@@ -83,7 +83,7 @@ Si vous utilisez votre infrastructure openstack avec la ligne de commande, vous 
 export OS_AUTH_TYPE=v3oidcclientcredentials
 export OS_PROTOCOL=openid
 export OS_ACCESS_TOKEN_TYPE=id_token
-export OS_AUTH_URL=https://auth.preprod.cloud.ovh.net/v3
+export OS_AUTH_URL=https://auth.cloud.ovh.net/v3
 ```
 
 Si vous utilisez les services de OVHcloud depuis la région EMEA, ajoutez les variables suivantes
@@ -103,11 +103,8 @@ Puis ajoutez les variables suivantes avec les valeurs correspondant à votre con
 export OS_PROJECT_ID=0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f
 export OS_CLIENT_ID=0f0f0f0f0f0f0f0f
 export OS_CLIENT_SECRET=xxxx
-export OS_REGION_NAME=GRA7
+export OS_REGION_NAME=GRA1
 ```
-
-8e63474692f845ec8323f7141814af8d
-
 
 - **OS_PROJECT_ID**: Identifiant de votre projet cloud
 - **OS_CLIENT_ID**: Identifiant de votre compte de service
@@ -134,4 +131,109 @@ Forbidden (HTTP 403) (Request-ID: 0f0f0f0f0f0f0f0f0f0f0f0-000f0f0f0f)
 
 ## Utiliser le compte de service en utilisant le SDK python
 
+Pour se connecter en utilisant le SDK Python et les accès de OVHcloud, vous pouvez utiliser deux techniques:
 
+- **Les variables d'environnement**: comme pour la CLI, vous pouvez configurer vos accès avec les variables d'environnement. Ce sont les mêmes que celle documentées dans la partie *Utiliser un compte de service avec la ligne de commande (CLI) Openstack*
+- **Un fichier de configuration clouds.yaml**: si vous souhaitez déployer votre configuration avec un fichier clouds.yaml comme indiqué dans la [documentation officielle Openstack](https://docs.openstack.org/openstacksdk/2023.1/user/config/configuration.html#openstack-config), vous devez suivre le format suivant: 
+
+```yaml
+clouds:
+  ovhcloud:
+    auth_type: 'v3oidcclientcredentials'
+    region_name: GRA
+    auth:
+      protocol: 'openid'
+      access_token_type: 'id_token'
+      auth_url: 'https://auth.cloud.ovh.net/v3'
+      identity_provider: 'ovhcloud-emea'
+      discovery_endpoint: 'https://iam.ovh.net/role-adapter/urn:v1:eu:resource:publicCloudProject:pci/.well-known/openid-configuration'
+      project_id: '0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f'
+      client_id: '0f0f0f0f0f0f0f0f'
+      client_secret: 'xxxx'
+```
+L'exemple précédent fonctionne sur la région EMEA. Si vous utilisez les services de OVHcloud depuis la région "Rest of the World", modifier les lignes suivantes avec les valeurs suivantes:
+
+-  identity_provider: 'ovhcloud-world'
+-  discovery_endpoint: 'https://iam.ovh.ca/role-adapter/urn:v1:eu:resource:publicCloudProject:pci/.well-known/openid-configuration'
+
+Et n'oubliez pas de modifier les variables suivantes avec les valeurs correspondant à votre configuration
+
+Puis ajoutez les variables suivantes avec les valeurs correspondant à votre configuration:
+
+- **project_id**: Identifiant de votre projet cloud
+- **client_id**: Identifiant de votre compte de service
+- **client_secret**: Secret de votre compte de service
+- **region_name**: Region concernée par votre script
+
+Vous pouvez désormais utiliser votre code python pour accèder aux services autorisés par la politique d'accès associée à votre compte de service. Si l'on reprend l'exemple précédent, vous pourrez accèder à la liste des serveurs de la façon suivante :
+
+```bash
+$ virtualenv iam-openstack
+$ pip install openstacksdk
+$ cat clouds.yaml
+clouds:
+  ovhcloud:
+    auth_type: 'v3oidcclientcredentials'
+    region_name: GRA1
+    auth:
+      protocol: 'openid'
+      access_token_type: 'id_token'
+      auth_url: 'https://auth.cloud.ovh.net/v3'
+      identity_provider: 'ovhcloud-emea'
+      discovery_endpoint: 'https://iam.ovh.net/role-adapter/urn:v1:eu:resource:publicCloudProject:pci/.well-known/openid-configuration'
+      project_id: '0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f'
+      client_id: '0f0f0f0f0f0f0f0f'
+      client_secret: 'xxxx'
+$ cat list-servers.py
+import openstack
+
+# Initialize connection
+conn = openstack.connect(cloud='ovhcloud')
+
+# List the servers
+for server in conn.compute.servers():
+    print("ID: #", server.id)
+    print("Name: ", server.name)
+$ python3 list-servers.py
+ID: # 0f0f0f0f-0f0f-0f0f-0f0f-0f0f0f0f0ff0
+Name:  name-vm
+```
+
+Cependant, vous n'aurez pas accès aux containers des objects storage :
+
+```bash
+$ virtualenv iam-openstack
+$ pip install openstacksdk
+$ cat clouds.yaml
+clouds:
+  ovhcloud:
+    auth_type: 'v3oidcclientcredentials'
+    region_name: GRA
+    auth:
+      protocol: 'openid'
+      access_token_type: 'id_token'
+      auth_url: 'https://auth.cloud.ovh.net/v3'
+      identity_provider: 'ovhcloud-emea'
+      discovery_endpoint: 'https://iam.ovh.net/role-adapter/urn:v1:eu:resource:publicCloudProject:pci/.well-known/openid-configuration'
+      project_id: '0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f'
+      client_id: '0f0f0f0f0f0f0f0f'
+      client_secret: 'xxxx'
+$ cat list-containers.py
+import openstack
+
+# Initialize connection
+conn = openstack.connect(cloud='ovhcloud')
+
+# List the servers
+for container in conn.object_store.containers():
+    print(container.toDict())
+$ python3 list-containers.py
+Traceback (most recent call last):
+  File "list-objects.py", line 10, in <module>
+    for container in conn.object_store.containers():
+  File "/Users/ovhcloud/Library/Python/3.7/lib/python/site-packages/openstack/resource.py", line 2077, in list
+    exceptions.raise_from_response(response)
+  File "/Users/ovhcloud/Library/Python/3.7/lib/python/site-packages/openstack/exceptions.py", line 268, in raise_from_response
+    request_id=request_id,
+openstack.exceptions.ForbiddenException: ForbiddenException: 403: Client Error for url: https://storage.gra.cloud.ovh.net/v1/AUTH_0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f/, ForbiddenAccess was denied to this resource.
+```
