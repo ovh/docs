@@ -90,11 +90,15 @@ Trois formats d’envoi sont également disponibles (2) :
 
 ### Étape 3 : choisir votre expéditeur SMS
 
-#### Numéro court permettant la réponse (Uniquement pour les comptes OVHcloud en France)
+#### Numéro court permettant la réponse
+
+**Uniquement pour les comptes OVHcloud en France hors DOM-TOM.**
 
 Il permet de recevoir une réponse via l’onglet SMS reçus.
 
-#### Numéro mobile virtuel (Uniquement pour les comptes OVHcloud en France)
+#### Numéro mobile virtuel
+
+**Uniquement pour les comptes OVHcloud en France.**
 
 Si vous disposez d'une offre SMS avec numéro mobile virtuel, vous pouvez renseigner celui-ci comme expéditeur. Pour plus d'informations, consultez notre [page sur le numéro mobile virtuel](https://www.ovhtelecom.fr/sms/reponse/numeros-virtuels.xml).
 

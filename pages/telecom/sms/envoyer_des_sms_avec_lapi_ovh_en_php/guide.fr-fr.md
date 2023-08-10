@@ -121,14 +121,12 @@ Pour envoyer des SMS, utilisez la méthode POST jobs : [https://api.ovh.com/cons
 
 > [!primary]
 >
-> **Uniquement pour les comptes OVHcloud en France :**
+> **Uniquement pour les comptes OVHcloud en France hors DOM-TOM :**
 > 
 > Le paramètre senderForResponse va permettre d’utiliser un numéro court, ce qui vous permet d’envoyer directement des SMS sans devoir créer un expéditeur alphanumérique (par exemple: votre nom).
 > 
 > Les numéros courts permettent aussi de recevoir des réponses de la part des destinataires de votre SMS, ce qui peut être utile pour une enquête de satisfaction, une application de vote, un jeu...
 >
->
-
 
 
 ```

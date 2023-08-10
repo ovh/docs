@@ -119,7 +119,7 @@ Para enviar SMS, utilice la siguiente llamada a la API:
 
 > [!primary]
 >
-> **Solo para las cuentas de OVHcloud Francia:**
+> **Sólo para cuentas OVHcloud en Francia excluyendo DOM-TOM:**
 > 
 > El parámetro **senderForResponse** permite utilizar un número corto para enviar SMS directamente, sin tener que crear un remitente alfanumérico (por ejemplo, su nombre).
 > 

@@ -71,11 +71,15 @@ También puede configurar el tipo de envío (2), eligiendo entre los siguientes:
 
 #### Número corto que permite responder
 
-Permite recibir una respuesta en la pestaña de SMS recibidos (disponible únicamente en las cuentas de OVHcloud Francia).
+**Sólo para cuentas OVHcloud en Francia excluyendo DOM-TOM**
+
+Permite recibir una respuesta en la pestaña de SMS recibidos.
 
 #### Número móvil virtual
 
-Si dispone de una solución de SMS con número móvil virtual, podrá utilizar este número como remitente (disponible únicamente en las cuentas de OVHcloud Francia).
+**Sólo para cuentas OVHcloud en Francia.**
+
+Si dispone de una solución de SMS con número móvil virtual, podrá utilizar este número como remitente.
 
 > [!primary]
 >

@@ -120,7 +120,7 @@ Per inviare degli SMS, utilizza il metodo POST jobs: [https://api.ovh.com/consol
 
 > [!primary]
 >
-> **Unicamente per gli account OVHcloud in Francia:**
+> **Solo per gli account OVHcloud in Francia escluso DOM-TOM:**
 > 
 > Il parametro senderForResponse permetterà di utilizzare un numero breve, il che consente di inviare direttamente degli SMS senza dover creare un mittente alfanumerico (ad esempio: il tuo cognome).
 > 

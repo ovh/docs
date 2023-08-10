@@ -73,11 +73,15 @@ Inoltre sono disponibili tre formati di invio (2):
 
 ### Step 3: scegli il mittente del tuo SMS
 
-#### Breve numero che consente ai destinatari di inviare le risposte (soltanto per gli account OVHcloud in Francia).
+#### Breve numero che consente ai destinatari di inviare le risposte
+
+**Solo per gli account OVHcloud in Francia escluso DOM-TOM.**
 
 Consente di ricevere una risposta tramite la scheda SMS ricevuti.
 
-#### Numero mobile virtuale (soltanto per gli account OVHcloud in Francia)
+#### Numero mobile virtuale
+
+**Solo per gli account OVHcloud in Francia.**
 
 Se disponi di un’offerta SMS con numero di cellulare virtuale, puoi inserirlo come mittente. Per maggiori informazioni, consulta la nostra [pagina sui numeri di cellulare virtuali ](https://www.ovhtelecom.fr/sms/reponse/numeros-virtuels.xml).
 
