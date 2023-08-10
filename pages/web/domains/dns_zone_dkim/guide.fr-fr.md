@@ -213,6 +213,11 @@ Suivez les **5 étapes** ci-dessous en cliquant sur chacun des onglets.
 >> - `selectorName` : saisissez le nom d'un sélecteur que vous avez relevé à l'étape précédente (exemple: « ovhex123456-selector1 »). <br>
 >>
 >> Cliquez sur `Execute`{.action} pour lancer la création du sélecteur.<br>
+>> 
+>> > [!primary]
+>> >
+>> > Nous vous conseillons de réaliser cette opération à deux reprises pour chacun des sélecteurs précédement listés. Le deuxième sélecteur vous permettra d'éffectuer un changement de paire de clés lorsque cela sera necessaire. **Ne cochez pas la case `autoEnableDKIM` lorsque vous créez le deuxième sélecteurs** pour ne pas créer un conflit avec l'activation du premier sélecteur. Nous vous invitons à consulter notre cas d'usage [« Comment changer sa paire de clé DKIM »](#2selectors) lorsque vous souhaiterez basculer sur le deuxième sélecteurs.
+>> <br>
 >>
 >> *Exemple de résultat :*
 >> ```
@@ -233,7 +238,7 @@ Suivez les **5 étapes** ci-dessous en cliquant sur chacun des onglets.
 >> - votre plateforme Exchange est liée à un nom de domaine qui est géré dans un autre bureau d'enregistrement ;<br>
 >> - vous avez choisi de ne pas cocher la case `configureDkim` à l'étape précédente.<br>
 >>
->> Pour configurez votre zone DNS, vous devez récupérer les valeurs de l'enregistrement DNS. Pour cela, utilisez l'appel API suivant :
+>> Pour configurez votre zone DNS, vous devez récupérer les valeurs de l'enregistrement DNS **pour chaques sélecteurs si vous avez créé les deux**. Pour cela, utilisez l'appel API suivant :
 >>
 >> > [!api]
 >> >
@@ -274,7 +279,9 @@ Suivez les **5 étapes** ci-dessous en cliquant sur chacun des onglets.
 >>
 >> ![email](images/dns-dkim-api02.png){.thumbnail} <br>
 >> 
->> Une fois les valeurs saisies, cliquez sur `Suivant`{.action} puis `Valider`{.action}.
+>> Une fois les valeurs saisies, cliquez sur `Suivant`{.action} puis `Valider`{.action}.<br>
+>>
+>> **Répétez cette opération pour le deuxième sélecteur si vous l'avez créé.**<br>
 >>
 >> Si vous configurez votre zone DNS dans une interface tierce hors OVHcloud, votre enregistrement CNAME doit avoir la forme suivante :
 >>
@@ -314,7 +321,7 @@ Suivez les **5 étapes** ci-dessous en cliquant sur chacun des onglets.
 >>
 >> > [!success]
 >> >
->> > Vous avez maintenant effectué toutes les manipulations pour activer le DKIM. Pour s'assurer que celui-ci est bien activé, consultez la section [**« Les différents états du DKIM »**](#dkim-status) de ce guide pour vérifier que la valeur `status:` est bien en `inProduction`. Si c'est bien le cas, votre DKIM est désormais actif.
+>> > Vous avez maintenant effectué toutes les manipulations pour activer le DKIM. Pour s'assurer que celui-ci est bien activé, consultez la section [**« Les différents états du DKIM »**](#dkim-status) de ce guide pour vérifier que la valeur `status:` est bien en `inProduction`. Si c'est bien le cas, votre DKIM est désormais actif.<br><br> **Si vous avez créé deux sélecteurs**, le deuxième sélecteur devrait être en `status: "ready"`.
 >>
 
 ##### **Pour E-mail Pro** <a name="confemp"></a>
@@ -363,6 +370,11 @@ Suivez les **5 étapes** ci-dessous en cliquant sur chacun des onglets.
 >> - `selectorName` : saisissez le nom d'un sélecteur que vous avez relevé à l'étape précédente. (exemple: « ovhemp123456-selector1 ») <br>
 >>
 >> Cliquez sur `Execute`{.action} pour lancer la création du sélecteur.<br>
+>> 
+>> > [!primary]
+>> >
+>> > Nous vous conseillons de réaliser cette opération à deux reprises pour chacun des sélecteurs précédement listés. Le deuxième sélecteur vous permettra d'éffectuer un changement de paire de clés lorsque cela sera necessaire. **Ne cochez pas la case `autoEnableDKIM` lorsque vous créez le deuxième sélecteurs** pour ne pas créer un conflit avec l'activation du premier sélecteur. Nous vous invitons à consulter notre cas d'usage [« Comment changer sa paire de clé DKIM »](#2selectors) lorsque vous souhaiterez basculer sur le deuxième sélecteurs.
+>> <br>
 >>
 >> *Exemple de résultat :*
 >> ```
@@ -383,7 +395,7 @@ Suivez les **5 étapes** ci-dessous en cliquant sur chacun des onglets.
 >> - votre plateforme E-mail Pro est liée à un nom de domaine qui est géré dans un autre bureau d'enregistrement ;<br>
 >> - vous avez choisi de ne pas cocher la case `configureDkim` à l'étape précédente.<br>
 >>
->> Pour configurez votre zone DNS, vous devez récupérer les valeurs de l'enregistrement DNS. Pour cela, utilisez l'appel API suivant :
+>> Pour configurez votre zone DNS, vous devez récupérer les valeurs de l'enregistrement DNS **pour chaques sélecteurs si vous avez créé les deux**. Pour cela, utilisez l'appel API suivant :
 >>
 >> > [!api]
 >> >
@@ -423,7 +435,9 @@ Suivez les **5 étapes** ci-dessous en cliquant sur chacun des onglets.
 >>
 >> ![email](images/dns-dkim-api02.png){.thumbnail} <br>
 >> 
->> Une fois les valeurs saisies, cliquez sur `Suivant`{.action} puis `Valider`{.action}.
+>> Une fois les valeurs saisies, cliquez sur `Suivant`{.action} puis `Valider`{.action}.<br>
+>>
+>> **Répétez cette opération pour le deuxième sélecteur si vous l'avez créé.**<br>
 >>
 >> Si vous configurez votre zone DNS dans une interface tierce hors OVHcloud, votre enregistrement CNAME doit avoir la forme suivante :
 >>
@@ -462,7 +476,7 @@ Suivez les **5 étapes** ci-dessous en cliquant sur chacun des onglets.
 >>
 >> > [!success]
 >> >
->> > Vous avez maintenant effectué toutes les manipulations pour activer le DKIM. Pour s'assurer que celui-ci est bien activé, consultez la section [**« Les différents états du DKIM »**](#dkim-status) de ce guide pour vérifier que la valeur `status:` est bien en `inProduction`. Si c'est bien le cas, votre DKIM est désormais actif.
+>> > Vous avez maintenant effectué toutes les manipulations pour activer le DKIM. Pour s'assurer que celui-ci est bien activé, consultez la section [**« Les différents états du DKIM »**](#dkim-status) de ce guide pour vérifier que la valeur `status:` est bien en `inProduction`. Si c'est bien le cas, votre DKIM est désormais actif.<br><br> **Si vous avez créé deux sélecteurs**, le deuxième sélecteur devrait être en `status: "ready"`.
 >>
 
 #### Les différents états du DKIM <a name="dkim-status"></a>
@@ -729,7 +743,7 @@ Pour récupérer l'en-tête d'un e-mail, consulter notre guide « [Récupérer l
 
 #### Comment changer sa paire de clé DKIM ? <a name="2selectors"></a>
 
-Lorsque vous activez le DKIM sur votre service e-mail, il est possible de créer 2 sélecteurs. Le deuxième sélecteur servira de nouvelle paire de clé lors de votre changement. Pour cela vous devez désactiver 
+Lorsque vous activez le DKIM sur votre service e-mail, il est possible de créer 2 sélecteurs qui contiennent chacun une paire de clés. Le deuxième sélecteur sert de successeur au premier qui est en cours d'utilisation. On appel cela une rotation de clés.
 
 > [!tabs]
 > **Exchange**
@@ -781,7 +795,7 @@ Lorsque vous activez le DKIM sur votre service e-mail, il est possible de créer
 >> - `domainName` : saisissez le nom de domaine attaché à votre plateforme E-mail Pro sur lequel le DKIM doit être présent.<br>
 >>
 
-Une fois l'ancien sélecteur désactivé et le nouveau activé
+Une fois l'ancien sélecteur désactivé et le nouveau activé, 
 
 
 #### Pourquoi l'icône DKIM est rouge dans mon espace client ? <a name="reddkim"></a>
