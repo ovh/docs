@@ -69,33 +69,22 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Manage access to the OVHcloud Control Panel | RA | I |
-| Manage users' accesses to Nutanix cluster (ex.: Prism Administration interface, SSH, CLI) | RA |  |
-| Manage users' accesses and security policy on IS | RA |  |
-| Managing physical access to infrastructures for OVHcloud teams | I | RA |
+| Manage access to the DNS zone configuration tool | RA | I |
 
 
 ##### **3.1.3. Monitoring**
 
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Monitor the proper functioning of physical devices (utilities) supporting the Dedicated Server | I | RA |
-| Monitor physical resource performance | RA | CI |
-| Keep logs related to administration activities of the cluster made available with Nutanix tools (ex.: Prism, SSH, CLI) or with any external tool and those of hosted IS | RA |  |
-| Keep logs of the Control Plane that monitors and administrate Nutanix service |  | RA |
-| Monitor the performance of Nutanix cluster (incident alerts, usage report, etc.) and other softwares installed by the client on the IS | RA |  |
-| Monitor the performance of IPLB service usage integrated into the Nutanix offer (using performance graphs) | RA | I |
-
+| Monitor the DNS servers |  | RA |
+| Monitor the DNS zone entries | A |  |
 
 ##### **3.1.4. Storage**
 
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Create, modify, control, restore, delete backup jobs | RA |  |
-| Manage content hosted on infrastructures | RA |  |
-| Manage data continuity and sustainability | RA |  |
-| Carry out maintenance on the storage and backup tools installed by the client | RA |  |
-| Carry out maintenance on the storage and backup devices provided by OVHcloud | CI | RA |
+| Store the DNS zone |  | RA |
+
 
 ##### **3.1.5. Connectivity**
 
