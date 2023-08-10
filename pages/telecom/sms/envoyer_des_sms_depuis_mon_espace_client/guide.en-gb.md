@@ -73,11 +73,15 @@ Three sending formats are also available (2).
 
 ### Step 3: Choose an SMS sender.
 
-#### A short number enabling recipients to send replies (for OVHcloud accounts in France only)
+#### A short number enabling recipients to send replies
+
+**Only for OVHcloud accounts in France excluding French overseas departments and territories.**
 
 Short numbers enable you to receive replies via the Received SMS tab.
 
-#### Virtual mobile number (for OVHcloud accounts in France only)
+#### Virtual mobile number
+
+**Only for OVHcloud accounts in France.**
 
 If you have an SMS solution with a virtual mobile number, you can enter it as a sender. For further information, please refer to our French webpage on [virtual mobile numbers](https://www.ovhtelecom.fr/sms/reponse/numeros-virtuels.xml).
 

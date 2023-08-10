@@ -121,7 +121,7 @@ To send SMS messages, use the POST jobs method: [https://api.ovh.com/console/#/s
 
 > [!primary]
 >
-> **For OVHcloud accounts in France only:**
+> **Only for OVHcloud accounts in France excluding DOM-TOM:**
 > 
 > With the senderForResponse setting, you can use a short number, which enables you to send SMS messages directly without needing to create an alpha-numeric sender (e.g. your name).
 > 

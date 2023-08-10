@@ -73,11 +73,15 @@ Dostępne są również trzy formaty wysyłki (2):
 
 ### Etap 3: wybór nadawcy wiadomości SMS
 
-#### Numer skrócony umożliwiający otrzymanie odpowiedzi (dotyczy wyłącznie kont OVHcloud we Francji)
+#### Numer skrócony umożliwiający otrzymanie odpowiedzi
+
+**Tylko dla kont OVHcloud we Francji z wyłączeniem DOM-TOM.**
 
 Umożliwia otrzymanie odpowiedzi za pośrednictwem karty Otrzymane wiadomości SMS.
 
-#### Wirtualny numer komórkowy (dotyczy tylko kont OVHcloud we Francji)
+#### Wirtualny numer komórkowy
+
+**Tylko dla kont OVHcloud we Francji.**
 
 Jeśli posiadasz ofertę SMS obejmującą wirtualny numer komórkowy, możesz go podać jako nadawcę. Aby uzyskać więcej informacji, przejdź na [stronę dotyczącą wirtualnego numeru komórkowego](https://www.ovhtelecom.fr/sms/reponse/numeros-virtuels.xml).
 
