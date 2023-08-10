@@ -1,10 +1,8 @@
 ---
 title: Deploying an Octavia Load Balancer
 excerpt: Find out how to configure the Octavia LBaaS for Public Cloud
-updated: 2022-11-02
+updated: 2023-08-08
 ---
-
-**Last updated 2nd November 2022**
 
 ## Objective
 
@@ -17,6 +15,8 @@ This tutorial explains the following Load Balancer configurations:
 
 - A [Public Cloud project](https://www.ovhcloud.com/asia/public-cloud/) in your OVHcloud account
 - A [private network](/pages/platform/network-services/getting-started-07-creating-vrack) configured in your project
+- [Prepare the environment to use the OpenStack API](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api)
+- [Set OpenStack environment variables](/pages/platform/public-cloud/loading_openstack_environment_variables)
 - [OpenStack Octavia client](https://docs.openstack.org/python-octaviaclient/latest/install/index.html) installed
 
 ## Instructions
