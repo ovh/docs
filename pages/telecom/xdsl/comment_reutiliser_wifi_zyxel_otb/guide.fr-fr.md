@@ -22,7 +22,7 @@ Dans ce guide, vous verrez comment tirer parti de l'interface du modem Zyxel pou
 - Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovhtelecom.fr%2Fmanager&ovhSubsidiary=fr){.external} dans la partie `Accès Internet`{.action}.
 - Disposer d'un [service et d'un boitier OverThebox](https://www.ovhtelecom.fr/overthebox/)
 - La configuration à distance du modem doit être [désactivée](#desactiver-configuration-distance).
-- Une OverTheBox Plus ou une OverTheBox IT v2 (boitier bleu avec 4 ports), ces modèles fonctionnant sans nécessité de modifuer le DHCP des modems.
+- Une OverTheBox Plus ou une OverTheBox IT v2 (boitier bleu avec 4 ports), ces modèles fonctionnant sans nécessité de modifier le DHCP des modems.
 - Deux cables Ethernet RJ45. Le premier servira à brancher le port LAN1 du modem vers un des ports WAN de l'OverTheBox. Le second pour brancher le port LAN4 du modem vers un des port LAN de l'OverTheBox.
 
 ## En pratique
