@@ -31,8 +31,8 @@ Este suele ser el método de conexión más seguro y práctico.
 
 No olvide consultar nuestras guías Primeros pasos: <a name="getstarted"></a>
 
-- para un [servidor dedicado] (/pages/cloud/dedicated/getting-started-with-dedicated-server);
-- para un [servidor dedicado de la gama Eco] (/pages/cloud/dedicated/getting-started-with-dedicated-server-eco);
+- para un [servidor dedicado](/pages/cloud/dedicated/getting-started-with-dedicated-server);
+- para un [servidor dedicado de la gama Eco](/pages/cloud/dedicated/getting-started-with-dedicated-server-eco);
 - para un [VPS](/pages/cloud/vps/starting_with_a_vps).
 
 Para más información, consulte la guía de presentación del [protocolo SSH] (/pages/cloud/dedicated/ssh_introduction).

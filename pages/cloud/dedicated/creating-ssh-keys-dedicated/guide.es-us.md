@@ -19,7 +19,7 @@ Este suele ser el método de conexión más seguro y práctico.
 ## Requisitos
 
 - Estar conectado a su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws)
-- Tener un [servidor dedicado]https://www.ovhcloud.com/es/bare-metal/) o un [VPS](https://www.ovhcloud.com/es/vps/) en su cuenta de OVHcloud
+- Tener un [servidor dedicado](https://www.ovhcloud.com/es/bare-metal/) o un [VPS](https://www.ovhcloud.com/es/vps/) en su cuenta de OVHcloud
 - Instalar previamente una aplicación cliente SSH (línea de comandos o GUI)
 - Tener acceso de administrador (root) por SSH
 

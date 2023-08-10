@@ -20,7 +20,7 @@ Jest to zazwyczaj najbezpieczniejsza i najwygodniejsza metoda połączenia.
 ## Wymagania początkowe
 
 
-- Dostęp do [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- Dostęp do [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
 - Posiadanie [serwera dedykowanego](https://www.ovhcloud.com/pl/bare-metal/) lub [VPS](https://www.ovhcloud.com/pl/vps/) na koncie OVHcloud
 - Zainstaluj najpierw aplikację klienta SSH (wiersz poleceń lub GUI)
 - Dostęp administratora (root) przez SSH
@@ -412,7 +412,7 @@ Aby dezaktywować klucz SSH jako **domyślny**, przejdź do sekcji `Klucze SSH`{
 
 [Dedicated Server Mode](/pages/cloud/dedicated/rescue_mode)
 
-[Tryb Rescue na serwerze VPS](strony/cloud/vps/rescue)
+[Tryb Rescue na serwerze VPS](/pages/cloud/vps/rescue)
 
 Jeśli potrzebujesz szkolenia lub pomocy technicznej w celu wdrożenia naszych rozwiązań, skontaktuj się z przedstawicielem handlowym lub kliknij [ten link](https://www.ovhcloud.com/pl/professional-services/), aby uzyskać wycenę i poprosić o spersonalizowaną analizę projektu od naszych ekspertów z zespołu Professional Services.
 
