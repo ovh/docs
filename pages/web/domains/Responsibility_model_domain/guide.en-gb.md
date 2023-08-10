@@ -1,7 +1,7 @@
 ---
 title: Responsibility sharing - Domain Name service
 excerpt: "Shared responsibility between OVHcloud and the customer for the use of the Domain Name service"
-kb: Hosted Private Cloud
+kb: domains
 category_l1: Domain Name
 updated: 2023-08-10
 ---
@@ -90,28 +90,21 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Manage the functioning of automatic network management systems (architecture, implementation, software and hardware maintenance for deployed public and private networks, primary IP of dedicated server) | I | RA |
-| Implement a network architecture adapted as needed (vRack, IPLB, access to public and private networks, etc.) | RA | I |
-| Manage private IP addressing plan of the client on the Nutanix cluster | RA |  |
-| Manage public IP addressing plan provided by OVHcloud Nutanix service | CI | RA |
+| Manage the availability of the DNS service |  | RA |
+
 
 ##### **3.1.6. Management**
 
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Provide inventory of infrastructures and services used | I | RA |
-| Manage the security of management infrastructures (Control Plane) |  | RA |
-| Manage the security of Nutanix software, softwares and Middleware installed on the cluster | RA |  |
-| Manage the security of data stored by the customer on the infrastructure | RA |  |
-| Manage the physical security of equipment and infrastructures hosted at OVHcloud | I | RA |
-| Maintain Nutanix software solution and its extensions | RA |  |
+| Manage domain and sub-domains | RA |  |
 
 ##### **3.1.7. Business continuity**
 
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Manage automatic management systems for the infrastructure provided | I | RA |
-| Maintain a business continuity and disaster recovery plan for the hosted IS | RA |  |
+| Manage business continuity of OVHcloud DNS servers |  | RA |
+| Install or subscribe secondary DNS services (not useful excepting highly specific cases) | RA |  |
 
 #### 3.2. Event management
 
@@ -119,21 +112,16 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Open tickets for incidents related to Nutanix software (in case of subscription to packaged offer and dysfunction of Nutanix software) | RA | I |
-| Open tickets for incidents related to Bring Your Own licence offer (related to dysfunction of hardware elements in the Dedicated Server) | RA | I |
-| Replace the defective hardware elements of the Dedicated Server following incident qualification | I | RA |
-| Process other incidents | RA |  |
-| Restore virtual machine backups | RA |  |
+| Restore the DNS service |  | RA |
+| Restore the DNS entries | RA |  |
+
 
 #### **3.2.2. Changes**
 
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Deploy patches, update and configure the Nutanix software, softwares, middlewares and hosted IS | RA |  |
-| Provide the new firmware version of the dedicated server | I | RA |
-| Update virtual machines | RA |  |
-| Approve change requests of defective hardware elements submitted by OVHcloud | A | R |
-| Schedule changes requested by customer | RA | RI |
+| Give the contacts data required by DNS registering | RA | I |
+| Update the contacts data in the registry in accordance with local regulations / GDPR |  | RA |
 
 ### 4. Reversibility
 
@@ -141,15 +129,14 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Schedule reversibility operations | RA | I |
-| Choose fallback infrastructures | RA |  |
+| Document the services that depend on some DNS registerings | RA |  |
+| Plan the DNS zone migration in accordance with the security requirements of DNS dependant services | RA |  |
 
 #### 4.2. Data recovery
 
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Export virtual machines from any source compatible with Nutanix technology (VMware, Hyper-V, AHV) manually or by using Nutanix Move tool | RA | C |
-| Migrate/transfer data | RA |  |
+| Copy the DNS zone configuration | RA |  |
 
 ### 5. End of service
 
@@ -157,12 +144,10 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Uncommission client-related configurations following contract termination | I | RA |
+| Remove the DNS zone from OVHcloud DNS servers | I | RA |
 
 #### 5.2. Data destruction
 
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Securely erase data on storage media |  | RA |
-| Destroy storage media that have reached their end of life or on which the secure destruction process generates errors |  | RA |
-| Provide a certificate of destruction (upon request) | I | RA |
+| Remove the customers recordings from OVHcloud systems when recording deadlines are exceeded |  | RA |
