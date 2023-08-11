@@ -1,0 +1,59 @@
+---
+title: 'Weniger sichere Verbindungen in Google Mail zulassen'
+hidden: true
+updated: 2022-04-06
+---
+
+**Letzte Aktualisierung am 06.04.2022**
+
+## Ziel
+
+In dieser Anleitung wird erklärt, wie Sie die Option „Weniger sichere Apps zulassen" in Ihrem Google Mail-Account aktivieren.
+
+> [!primary] 
+> 
+Nachfolgend werden Schritte zur Konfiguration von Gmail im Zusammenhang mit dieser Anleitung beschrieben: 
+[Einen Gmail-Account mit dem OVH Mail Migrator auf einen OVHcloud E-Mail-Account migrieren](/pages/web_cloud/email_and_collaborative_solutions/migrating/migrate_gmail_to_ovhcloud_by_omm)
+> 
+
+## In der praktischen Anwendung
+
+Wenn Sie eine Warnungsmail zum Account-Zugriff erhalten haben, klicken Sie auf `Aktivität einsehen`{.action}.
+
+![omm](images/OMM-gmail-security-01.png){.thumbnail}
+
+Nun wird angezeigt, dass ein Versuch, über ein Nicht-Google Protokoll zuzugreifen, stattgefunden hat. Klicken Sie auf `Ja, das war ich`{.action}
+
+![omm](images/OMM-gmail-security-02.png){.thumbnail}
+
+Das nächste Fenster informiert Sie darüber, dass trotz dieser Validierung eine Sperre aktiv ist. Klicken Sie direkt auf den folgenden Link: [myaccount.google.com/lesssecureapps](https://myaccount.google.com/lesssecureapps)
+
+![omm](images/OMM-gmail-security-03.png){.thumbnail}
+
+Klicken Sie auf die Schaltfläche rechts neben der Option „Weniger sichere Apps zulassen: AUS“ (siehe unten).
+
+![omm](images/OMM-gmail-security-04.png){.thumbnail}
+
+Sie erhalten eine weitere Warn-E-Mail. Klicken Sie auf `Aktivität einsehen`{.action}.
+
+![omm](images/OMM-gmail-security-05.png){.thumbnail}
+
+Mit dieser Nachricht soll überprüft werden, ob Sie der Initiator dieser Aktivierung sind. Klicken Sie auf `Ja, das war ich`{.action}.
+
+![omm](images/OMM-gmail-security-06.png){.thumbnail}
+
+Nach der Validierung zeigt die folgende Meldung an, dass Ihre Auswahl berücksichtigt wurde. Sie können sich jetzt auch mit Anwendungen außerhalb von Google Diensten in Ihrem Google Mail-Account anmelden.
+
+![omm](images/OMM-gmail-security-07.png){.thumbnail}
+
+> [!warning]
+>
+> Sie benötigen ein Passwort mit mindestens 16 Zeichen auf Ihrem Gmail-Account, auch als "Application Passwort" bezeichnet. Wenn Sie „Weniger sichere Apps zulassen" aktivieren, muss Ihr Gmail-Account ein starkes Passwort verwenden.
+>
+> ![omm](images/OMM-gmail-security-08.png){.thumbnail}
+>
+
+
+## Weiterführende Informationen
+
+[Einen Gmail-Account mit dem OVH Mail Migrator auf einen OVHcloud E-Mail-Account migrieren](/pages/web_cloud/email_and_collaborative_solutions/migrating/migrate_gmail_to_ovhcloud_by_omm)

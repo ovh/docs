@@ -1,0 +1,88 @@
+---
+title: Restaurar las copias de seguridad a través de la API de OVHcloud
+routes:
+    canonical: '/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/veeam_managed_backup_restoration'
+excerpt: Cómo restaurar las copias de seguridad Veeam Managed Backup a través de la API de OVHcloud
+updated: 2021-03-29
+---
+
+> [!primary]
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+> 
+
+**Última actualización: 29/03/2021**
+
+## Objetivo
+
+**Esta guía explica cómo identificar y restaurar las copias de seguridad a través de la API de OVHcloud.**
+
+## Requisitos
+
+- Estar conectado a la [API de OVHcloud.](https://api.ovh.com/)
+- [Veeam Managed Backup activado](/pages/bare_metal_cloud/managed_bare_metal/veeam_backup_as_a_service) en su Managed Bare Metal
+
+## Procedimiento
+
+Si no está familiarizado con el funcionamiento de las API de OVHcloud, consulte nuestra guía [Primeros pasos con las API de OVHcloud](/pages/manage_and_operate/api/first-steps).
+
+### 1. generar un informe de backup
+
+En primer lugar, debe identificar los backups que desea restaurar.
+
+Conéctese a [https://api.ovh.com/](https://api.ovh.com/) y utilice la siguiente llamada:
+
+> [!api]
+>
+> @api {POST} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/backup/generateReport
+
+Introduzca las variables:
+
+- serviceName: la referencia de su Managed Bare Metal en forma `pcc-XX-XX-XX-XX`
+- datacenterId: ID del datacenter en el que está activada la solución Veeam Managed Backup
+
+Esta llamada va a generar un informe de copias de seguridad. Se enviará por correo electrónico a la dirección indicada en la cuenta de administrador del servicio Managed Bare Metal.
+<br>El mensaje de correo electrónico incluye los siguientes elementos:
+
+- Nombre de la MV
+- Copias de seguridad efectuadas (BackupJobName)
+- Tamaño de cada backup
+- **Carpeta de almacenamiento (BackupRepository)**
+- Último punto de restauración
+
+![Correo electrónico](images/backup-report-email2.png){.thumbnail}
+
+Tenga en cuenta que el backup repository permite restaurar las copias de seguridad en la siguiente etapa.
+
+### 2. restaurar las copias de seguridad
+
+> [!warning]
+>
+> Antes de restaurar el datastore, asegúrese de que este último dispone de la capacidad de almacenamiento suficiente para alojar todos los datos que debe restaurar.
+>
+> En caso contrario, le informaremos por correo electrónico y la operación se cancelará.
+
+La llamada a la API restaurará los últimos puntos de restauración válidos de cada backup presente en el directorio de almacenamiento.
+
+Conéctese a [https://api.ovh.com/](https://api.ovh.com/) y utilice la siguiente llamada:
+
+> [!api]
+>
+> @api {POST} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/backup/batchRestore
+>
+
+Introduzca las variables:
+
+- serviceName: la referencia de su Managed Bare Metal en forma `pcc-XX-XX-XX-XX`
+- datacenterId: ID del datacenter en el que está activada la solución Veeam Managed Backup
+- backupJobName (opcional): el nombre de una copia de seguridad (obtenida en el paso 1) en forma de `pcc-XXX-XXX-XXX-XXX-XXX_vm-XXX` si solo desea restaurar una MV.
+- backupRepositoryName el nombre del backup repository obtenido en el paso 1.
+
+Una vez completada la restauración, en la interfaz vSphere podrá ver las MV correspondientes a las copias de seguridad restauradas.
+<br>Para identificarlos, sus nombres contienen el sufijo *BatchRestore* así como una marca de tiempo de la restauración.
+<br>Las MV se restauran apagadas. A su cargo, encenderlo.
+
+![vSphere](images/vcenter2.png){.thumbnail}
+
+## Más información
+
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
