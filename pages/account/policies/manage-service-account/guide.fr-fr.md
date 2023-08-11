@@ -19,7 +19,7 @@ Lorsque des accès aux API sont nécessaire depuis des applicatif ou du code, il
 Ce guide vous expliquera comment générer des identifiants pour déployer au sein de code, ainsi que leur utilisation dans les politiques d'accès de OVHcloud.
 Ces identifiants peuvent être utilisés au sein des différentes API de nos produits : 
 
-- API OVHcloud: [Comment utiliser l'API OVHcloud en Oauth2]()
+- API OVHcloud: [Comment utiliser l'API OVHcloud en Oauth2](/pages/account/api/authenticate-api-with-service-account)
 - API Openstack: [Comment utiliser les comptes de service pour se connecter à Openstack](/pages/platform/public-cloud/authenticate-api-openstack-with-service-account)
 
 ## Pré-requis
