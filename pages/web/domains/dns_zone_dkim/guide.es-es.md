@@ -46,7 +46,7 @@ El registro DKIM (**D**omain**K**eys **I**dentified **M**ail) permite firmar los
 >
 > Si el dominio no utiliza los servidores DNS de OVHcloud, deberá editar el DKIM desde el panel que le ofrezca el proveedor que gestione la configuración de su dominio.
 >
-> Si el dominio está registrado en OVHcloud, puede comprobar si utiliza nuestra configuración de OVHcloud desde el [área de cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), en la pestaña `Servidores DNS`{.action}, después de seleccionar el dominio correspondiente.
+> Si el dominio está registrado en OVHcloud, puede comprobar si utiliza nuestra configuración de OVHcloud desde el [área de cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), en la pestaña `Zona DNS`{.action}, después de seleccionar el dominio correspondiente.
 >
 
 ## Procedimiento
@@ -566,7 +566,7 @@ Seleccione el servicio de correo en las siguientes pestañas:
 
 > [!warning]
 >
-> El selector DKIM debe estar en estado `inProduction` antes de poder desactivarlo.
+> El selector DKIM debe estar en estado `inProduction` o `ready` antes de poder desactivarlo.
 
 Seleccione el servicio de correo en las siguientes pestañas:
 
@@ -705,7 +705,7 @@ v=DKIM1;t=s;p= MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA77VDAIfyhjtoF0DIE5V7 
 
 El registro CNAME es un alias. Esto significa que el valor de destino devuelve a una URL que proporcionará el registro DKIM al servidor que desee que aparezca el registro CNAME. Este tipo de registro CNAME para configurar el DKIM es frecuente cuando se utiliza un servidor de correo Microsoft.
 
-Este es precisamente el tipo de registro utilizado para activar el DKIM en un dominio declarado para una solución Exchange de OVHcloud.
+Este es precisamente el tipo de registro utilizado para activar el DKIM en un dominio declarado para una solución Exchange de OVHcloud. Este procedimiento permite que su proveedor de soluciones de correo gestione por usted la seguridad y la actualización del DKIM.
 
 ### Probar su DKIM <a name="test-dkim"></a>
 

@@ -42,7 +42,7 @@ The DKIM (**D**omain**K**eys **I**dentified **M**ail) record allows you to sign 
 >
 > If your domain name does not use OVHcloud DNS servers, you will need to modify the DKIM records in the interface of the service provider that manages your domain name configuration.
 >
-> If your domain name is registered with OVHcloud, you can check if it is using the OVHcloud configuration in your [Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca). To do this, go to the `DNS servers`{.action} tab, and select the domain concerned.
+> If your domain name is registered with OVHcloud, you can check if it is using the OVHcloud configuration in your [Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca). To do this, go to the `DNS Zone`{.action} tab, and select the domain concerned.
 >
 
 ## Instructions
@@ -361,7 +361,7 @@ To enable DKIM on a selector, use the following API call:
 
 > [!warning]
 >
-> The DKIM selector must be in `inProduction` status before it can be disabled.
+> The DKIM selector must be in `inProduction` or `ready` status before it can be disabled.
 
 
 
@@ -475,7 +475,7 @@ v=DKIM1;t=s;p= MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA77VDAIfyhjtoF0DIE5V7 
 
 The CNAME record is an alias. This means that the target value points to a URL that will itself provide the DKIM record to the server that will query the CNAME record. This type of CNAME record for setting the DKIM is common when using a Microsoft email server.
 
-This record type is used to enable DKIM on a domain name declared for an OVHcloud Exchange solution.
+This record type is used to enable DKIM on a domain name declared for an OVHcloud Exchange solution. This way, your email solution provider can manage security and update the DKIM for you.
 
 ### Test your DKIM <a name="test-dkim"></a>
 

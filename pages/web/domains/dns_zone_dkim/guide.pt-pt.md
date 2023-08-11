@@ -46,7 +46,7 @@ O registo DKIM (**D**omain**K**eys **I**dentified **M**ail) permite assinar os e
 >
 > Se o domínio não usar os servidores DNS da OVHcloud, a alteração DKIM deverá ser efetuada através da interface do agente responsável pela configuração do domínio.
 >
-> Se o domínio for gerido pela OVHcloud, verifique se este utiliza a nossa configuração OVHcloud na [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) a partir do separador `Servidores DNS`{.action}, depois de selecionado o domínio.
+> Se o domínio for gerido pela OVHcloud, verifique se este utiliza a nossa configuração OVHcloud na [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) a partir do separador `Zona DNS`{.action}, depois de selecionado o domínio.
 >
 
 ## Instruções
@@ -566,7 +566,7 @@ Selecione a oferta de e-mail em questão nos separadores seguintes:
 
 > [!warning]
 >
-> O seletor DKIM deve estar no estado `in Production` antes de poder ser desativado.
+> O seletor DKIM deve estar no estado `in Production` ou `ready` antes de poder ser desativado.
 
 Selecione a oferta de e-mail em questão nos separadores seguintes:
 
@@ -705,7 +705,7 @@ v=DKIM1;t=s;p= MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA77VDAIfyhjtoF0DIE5V7 
 
 O registo CNAME é um alias. Isto significa que o valor-alvo remete para um URL que fornecerá ele próprio o registo DKIM ao servidor que interrogará o registo CNAME. Este tipo de registo CNAME para configurar o DKIM é frequente no quadro da utilização de um servidor de e-mail Microsoft.
 
-Tem exatamente o tipo de registo utilizado para ativar o DKIM num nome de domínio declarado para uma oferta Exchange OVHcloud.
+Tem exatamente o tipo de registo utilizado para ativar o DKIM num nome de domínio declarado para uma oferta Exchange OVHcloud. Este procedimento permite ao seu fornecedor de soluções de e-mail gerir por si a segurança e a atualização do DKIM.
 
 ### Testar o seu DKIM <a name="test-dkim"></a>
 

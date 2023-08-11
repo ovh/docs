@@ -42,7 +42,7 @@ L'enregistrement DKIM (**D**omain**K**eys **I**dentified **M**ail) permet de sig
 >
 > Si votre nom de domaine n'utilise pas les serveurs DNS d'OVHcloud, vous devez réaliser la modification du DKIM depuis l'interface du prestataire gérant la configuration de votre nom de domaine.
 >
-> Si votre nom de domaine est déposé chez OVHcloud, vous pouvez vérifier si ce dernier utilise notre configuration OVHcloud dans votre [espace client](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) depuis l'onglet `Serveurs DNS`{.action}, une fois le domaine concerné sélectionné.
+> Si votre nom de domaine est déposé chez OVHcloud, vous pouvez vérifier si ce dernier utilise notre configuration OVHcloud dans votre [espace client](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) depuis l'onglet `zone DNS`{.action}, une fois le domaine concerné sélectionné.
 >
 
 ## En pratique
@@ -85,7 +85,7 @@ La fonction de hachage est utile lorsque vous souhaitez vérifier l'intégrité 
 
 Le **chiffrement**, comme son nom l'indique, a pour but de chiffrer les données qu'on lui donne. Il est « **asymétrique** » car la clé de chiffrement n'est pas la même que la clé de 	déchiffrement, contrairement à un chiffrement symétrique qui utilisera la même clé pour chiffrer et déchiffrer.
 
-Dans le chiffrement asymétrique, on utilise une **clé publique** et une **clé privée**. La clé publique est visible et utilisable par tous. La clé privée est uniquement utilisée par propriétaire et n'est pas visible de tous. 
+Dans le chiffrement asymétrique, on utilise une **clé publique** et une **clé privée**. La clé publique est visible et utilisable par tous. La clé privée est uniquement utilisée par le propriétaire et n'est pas visible de tous.
 
 Il existe deux utilisations du chiffrement asymétrique :
 
@@ -363,7 +363,7 @@ Pour activer le DKIM sur un sélecteur, utilisez l'appel API suivant :
 
 > [!warning]
 >
-> Le sélecteur DKIM doit être en statut `inProduction` avant de pouvoir être désactivé.
+> Le sélecteur DKIM doit être en statut `inProduction` ou `ready` avant de pouvoir être désactivé.
 
 Si vous souhaitez désactiver le DKIM sans supprimer le sélecteur et sa paire de clés, utilisez l'appel API suivant:
 
@@ -474,7 +474,7 @@ v=DKIM1;t=s;p= MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA77VDAIfyhjtoF0DIE5V7 
 
 L'enregistrement CNAME est un alias. Cela signifie que la valeur cible renvoie vers une URL qui fournira elle-même l'enregistrement DKIM au serveur qui interrogera l'enregistrement CNAME. Ce type d'enregistrement CNAME pour paramétrer le DKIM est fréquent dans le cadre de l'utilisation d'un serveur e-mail Microsoft.
 
-Il s'ahit précisément du type d'enregistrement utilisé pour activer le DKIM sur un nom de domaine déclaré pour une offre Exchange OVHcloud.
+Il s'agit précisément du type d'enregistrement utilisé pour activer le DKIM sur un nom de domaine déclaré pour une offre Exchange OVHcloud. Ce procédé permet à votre fournisseur de solution e-mail de gérer pour vous la sécurité et la mise à jour du DKIM.
 
 ### Tester votre DKIM <a name="test-dkim"></a>
 

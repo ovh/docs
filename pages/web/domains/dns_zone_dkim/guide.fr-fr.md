@@ -42,7 +42,7 @@ L'enregistrement DKIM (**D**omain**K**eys **I**dentified **M**ail) permet de sig
 >
 > Si votre nom de domaine n'utilise pas les serveurs DNS d'OVHcloud, vous devez réaliser la modification du DKIM depuis l'interface du prestataire gérant la configuration de votre nom de domaine.
 >
-> Si votre nom de domaine est déposé chez OVHcloud, vous pouvez vérifier si ce dernier utilise notre configuration OVHcloud dans votre [espace client](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) depuis l'onglet `Serveurs DNS`{.action}, une fois le domaine concerné sélectionné.
+> Si votre nom de domaine est déposé chez OVHcloud, vous pouvez vérifier si ce dernier utilise notre configuration OVHcloud dans votre [espace client](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) depuis l'onglet `Zone DNS`{.action}, une fois le domaine concerné sélectionné.
 >
 
 ## En pratique
@@ -70,7 +70,7 @@ L'enregistrement DKIM (**D**omain**K**eys **I**dentified **M**ail) permet de sig
 - [Tester votre DKIM](#test-dkim)
 - [Cas d'usages](#usecases)
     - [Comment changer sa paire de clé DKIM ?](#2selectors)
-    - [Pourquoi l'icône DKIM est rouge dans mon espace client ?](#reddkim)
+    - [Pourquoi l'icône DKIM apparait en rouge dans l'espace client ?](#reddkim)
 
 ### Comment le DKIM fonctionne-t-il ? <a name="how-dkim-work"></a>
 
@@ -90,7 +90,7 @@ La fonction de hachage est utile lorsque vous souhaitez vérifier l'intégrité 
 
 Le **chiffrement**, comme son nom l'indique, a pour but de chiffrer les données qu'on lui donne. Il est « **asymétrique** » car la clé de chiffrement n'est pas la même que la clé de 	déchiffrement, contrairement à un chiffrement symétrique qui utilisera la même clé pour chiffrer et déchiffrer.
 
-Dans le chiffrement asymétrique, on utilise une **clé publique** et une **clé privée**. La clé publique est visible et utilisable par tous. La clé privée est uniquement utilisée par  propriétaire et n'est pas visible de tous. 
+Dans le chiffrement asymétrique, on utilise une **clé publique** et une **clé privée**. La clé publique est visible et utilisable par tous. La clé privée est uniquement utilisée par le propriétaire et n'est pas visible de tous. 
 
 Il existe deux utilisations du chiffrement asymétrique :
 
@@ -138,7 +138,7 @@ Le destinataire **recipient@otherdomain.ovh** pourra déchiffrer cette signature
 
 ### Configurer le DKIM pour une offre e-mail Exchange ou E-mail Pro OVHcloud <a name="internal-dkim"></a>
 
-Pour configurer votre DKIM, vous devez d'abord récupérer la référence de votre plateforme Exchange ou E-mail Pro. 
+Pour configurer votre DKIM, vous devez d'abord récupérer la référence de votre plateforme Exchange ou E-mail Pro.
 
 Cliquez sur l'onglet ci-dessous correspondant à votre offre.
 
@@ -583,7 +583,7 @@ Sélectionnez l'offre e-mail concernée dans les onglets suivant:
 
 > [!warning]
 >
-> Le sélecteur DKIM doit être en statut `inProduction` avant de pouvoir être désactivé.
+> Le sélecteur DKIM doit être en statut `inProduction` ou `ready` avant de pouvoir être désactivé.
 
 Sélectionnez l'offre e-mail concernée dans les onglets suivant:
 
@@ -636,7 +636,6 @@ Sélectionnez l'offre e-mail concernée dans les onglets suivant:
 >> - `selectorName` : saisissez le nom du sélecteur que vous souhaitez supprimer. <br>
 >> - `domainName` : saisissez le nom de domaine attaché à votre plateforme E-mail Pro. <br>
 >>
-
 
 ### Configurer le DKIM pour une offre e-mail hors de votre compte OVHcloud <a name="external-dkim"></a>
 
@@ -722,7 +721,7 @@ v=DKIM1;t=s;p= MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA77VDAIfyhjtoF0DIE5V7 
 
 L'enregistrement CNAME est un alias. Cela signifie que la valeur cible renvoie vers une URL qui fournira elle-même l'enregistrement DKIM au serveur qui interrogera l'enregistrement CNAME. Ce type d'enregistrement CNAME pour paramétrer le DKIM est fréquent dans le cadre de l'utilisation d'un serveur e-mail Microsoft.
 
-Il s'ahit précisément du type d'enregistrement utilisé pour activer le DKIM sur un nom de domaine déclaré pour une offre Exchange OVHcloud.
+Il s'agit précisément du type d'enregistrement utilisé pour activer le DKIM sur un nom de domaine déclaré pour une offre Exchange OVHcloud. Ce procédé permet à votre fournisseur de solution e-mail de gérer pour vous la sécurité et la mise à jour du DKIM.
 
 ### Tester votre DKIM <a name="test-dkim"></a>
 
@@ -741,49 +740,29 @@ Pour récupérer l'en-tête d'un e-mail, consulter notre guide « [Récupérer l
 
 ### Cas d'usages <a name="usecases"></a>
 
-#### Comment changer sa paire de clé DKIM ? <a name="2selectors"></a>
+#### Comment changer sa paire de clés DKIM et pourquoi le faire ? <a name="2selectors"></a>
 
-Lorsque vous activez le DKIM sur votre service e-mail, il est possible de créer 2 sélecteurs qui contiennent chacun une paire de clés. Le deuxième sélecteur sert de successeur au premier qui est en cours d'utilisation. On appel cela une rotation de clés.
+Lorsque vous activez pour la première fois le DKIM sur votre service e-mail, il est possible de créer 2 sélecteurs qui contiennent chacun une paire de clés. Le deuxième sélecteur sert de successeur à celui qui est en cours d'utilisation.
+
+Pour éviter les tentatives de déchiffrement de la clé DKIM, il est conseillé de changer régulièrement de paire de clés. Pour cela, assurez-vous d'avoir bien configurer vos 2 sélecteurs en vérifiant que le premier est en status `inProduction`et le second en status `ready`. vous pouvez vérifier cette état en vous référant à la section [« Les différents états du DKIM »](#dkim-status).
+
 
 > [!tabs]
 > **Exchange**
->> Pour désactiver le sélecteur actuel, utilisez l'appel API suivant:
+>> Pour basculer sur le deuxieme sélecteur, utilisez l'appel API suivant:
 >> 
->> > [!api]
->> >
->> > @api {POST} /email/exchange/{organizationName}/service/{exchangeService}/domain/{domainName}/dkim/{selectorName}/disable
->> >
->>
->> - `organizationName` : saisissez le nom de votre plateforme Exchange se présentant sous la forme « hosted-zz111111-1 » ou « private-zz111111-1 ». <br>
->> - `selectorName` : saisissez le nom du sélecteur que vous souhaitez désactiver. <br>
->> - `exchangeService` : saisissez le nom de votre plateforme Exchange se présentant sous la forme « hosted-zz111111-1 » ou « private-zz111111-1 ». <br>
->> - `domainName` : saisissez le nom de domaine attaché à votre plateforme Exchange. <br>
->>
->> Pour activer le nouveau sélecteur, utilisez l'appel API suivant :
->>
 >> > [!api]
 >> >
 >> > @api {POST} /email/exchange/{organizationName}/service/{exchangeService}/domain/{domainName}/dkim/{selectorName}/enable
 >> >
 >>
->> - `organizationName` : saisissez le nom de votre plateforme Exchange se présentant sous la forme « hosted-zz111111-1 » ou « private-zz111111-1 ».<br>
->> - `selectorName` : saisissez le nom d'un sélecteur existant.<br>
->> - `exchangeService` : saisissez le nom de votre plateforme Exchange se présentant sous la forme « hosted-zz111111-1 » ou « private-zz111111-1 ».<br>
->> - `domainName` : saisissez le nom de domaine attaché à votre plateforme Exchange sur lequel vous souhaitez activer le DKIM.<br>
+>> - `organizationName` : saisissez le nom de votre plateforme Exchange se présentant sous la forme « hosted-zz111111-1 » ou « private-zz111111-1 ». <br>
+>> - `selectorName` : saisissez le nom du sélecteur sur lequel vous souhaitez basculer. <br>
+>> - `exchangeService` : saisissez le nom de votre plateforme Exchange se présentant sous la forme « hosted-zz111111-1 » ou « private-zz111111-1 ». <br>
+>> - `domainName` : saisissez le nom de domaine attaché à votre plateforme Exchange. <br>
 >>
 > **E-mail Pro**
->> Pour désactiver le sélecteur actuel, utilisez l'appel API suivant:
->> 
->> > [!api]
->> >
->> > @api {POST} /email/pro/{service}/domain/{domainName}/dkim/{selectorName}/disable
->> >
->>
->> - `service` : saisissez le nom de votre plateforme E-mail Pro se présentant sous la forme « emailpro-zz111111-1 » . <br>
->> - `selectorName` : saisissez le nom du sélecteur que vous souhaitez désactiver. <br>
->> - `domainName` : saisissez le nom de domaine attaché à votre plateforme E-mail Pro. <br>
->>
->> Pour activer le nouveau sélecteur, utilisez l'appel API suivant :
+>> Pour basculer sur le deuxieme sélecteur, utilisez l'appel API suivant:
 >>
 >> > [!api]
 >> >
@@ -791,16 +770,26 @@ Lorsque vous activez le DKIM sur votre service e-mail, il est possible de créer
 >> >
 >>
 >> - `service` : saisissez le nom de votre plateforme E-mail Pro se présentant sous la forme « emailpro-zz111111-1 » . <br>
->> - `selectorName` : saisissez le nom du sélecteur que vous avez créé .<br>
+>> - `selectorName` : saisissez le nom du sélecteur sur lequel vous souhaitez basculer. <br>
 >> - `domainName` : saisissez le nom de domaine attaché à votre plateforme E-mail Pro sur lequel le DKIM doit être présent.<br>
 >>
 
-Une fois l'ancien sélecteur désactivé et le nouveau activé, 
+Après avoir basculé sur le nouveau sélecteur, conservez l'ancien durant 7 jours avant de le supprimer et de créer un nouveau.
 
+#### Pourquoi l'icône DKIM apparait en rouge dans l'espace client ? <a name="reddkim"></a>
 
-#### Pourquoi l'icône DKIM est rouge dans mon espace client ? <a name="reddkim"></a>
+![email](images/red-dkim.png){.thumbnail}
 
-Cela signifie
+Si vous venez de configurer le DKIM, cela signifie que l'activation du DKIM n'est pas terminée, **il est conseillé de patienter 24h**.
+
+Si le statut reste rouge après 24h, vérifiez l'état du sélecteur que vous avez activé. Pour cela appuyez-vous sur la section [Les différents états du DKIM](#dkim-status) de ce guide.
+
+Voici les 4 raisons d'avoir l'icône DKIM en rouge :
+
+ - `WaitingRecord` : les enregistrements DNS sont en attente de configuration ou en cours de validation dans la zone DNS du nom de domaine. Une vérification automatique régulière est faite pour constater si l'enregistrement DNS est présent et correctement renseigné. Selon vote offre, suivez **l'étape 5** dans la section [« Configuration complète du DKIM »](#firststep) pour configurer correctement la zone DNS du nom de domaine concerné.
+ - `ready` : les enregistrements DNS sont présents dans la zone. Le DKIM peut maintenant être activé. Il vous suffira d'activer le sélecteur en vous appuyant de la section [« Activer ou changer un sélecteur DKIM »](#enable-switch).
+ - `deleting` : le DKIM est en cours de suppression. Après suppression, il vous faudra suivre la section [« Configuration complète du DKIM »](#firststep).
+ - `disabling` : le DKIM est en cours de désactivation. Après cette opération vous pourrez activer le sélecteur en vous appuyant de la section [« Activer ou changer un sélecteur DKIM »](#enable-switch).
 
 ## Aller plus loin
 
