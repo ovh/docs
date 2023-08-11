@@ -1,15 +1,12 @@
 ---
 title: Responsibility sharing - Domain Name service
 excerpt: "Shared responsibility between OVHcloud and the customer for the use of the Domain Name service"
-kb: domains
-category_l1: Domain Name
-updated: 2023-08-10
+updated: 2023-08-11
 ---
 
 ## Objective
 
-The RACI below details shared responsibilities between OVHcloud and the customer for Domain Name Service. This shared model can help relieve the customer’s operational burden.
-
+The RACI below details shared responsibilities between OVHcloud and the customer for the Domain Name service. This shared model can help relieve the customer’s operational burden.
 
 | Roles |
 | --- |
@@ -24,7 +21,7 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
-| Choose the name of the service | RA |  |	
+| Choose the name of the service | RA |  |
 | Define the list of TLD you want to cover with the name | RA |  |
 | Define the close domain names you want to protect against malicious uses | RA |  |
 
@@ -41,6 +38,7 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 | Generate the customer interface to manage its DNS zone | I | RA |
 
 #### 2.2. Reversibility model
+
 Domain Names are fully reversible by design. DNS Zones may be backuped in txt files and deployed on any new DNS server.
 
 | **Activity** | **Customer** | **OVHcloud** |
@@ -54,7 +52,6 @@ Domain Names are fully reversible by design. DNS Zones may be backuped in txt fi
 | Deploy the configuration on the DNS zone in full autonomy | RA |  |
 | Deploy the configuration on the DNS zone with the help of OVHcloud automatization tools | RI | AI |
 
-
 ### 3. Service usage
 
 #### 3.1. Operations
@@ -64,7 +61,7 @@ Domain Names are fully reversible by design. DNS Zones may be backuped in txt fi
 | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- |
 | Perform the DNS modifications for services deployed in full autonomy | RA |  |
-| Perform the DNS modifications for services deployed via OVHcloud automatization tools | RI | RA |  
+| Perform the DNS modifications for services deployed via OVHcloud automatization tools | RI | RA |
 
 ##### **3.1.2. Access management**
 
@@ -115,7 +112,6 @@ Domain Names are fully reversible by design. DNS Zones may be backuped in txt fi
 | --- | --- | --- |
 | Restore the DNS service |  | RA |
 | Restore the DNS entries | RA |  |
-
 
 #### **3.2.2. Changes**
 
