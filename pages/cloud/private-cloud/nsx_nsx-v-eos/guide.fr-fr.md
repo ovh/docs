@@ -16,7 +16,6 @@ Pour identifier votre utilisation de la fonctionnalité NSX-v dans votre environ
 
 - Est-ce que j’utilise un VXLAN ?
 ![NSX VXLAN](images/vxlan.gif){.thumbnail}
-
 - Est-ce que j’utilise des règles de Distributed Firewall ?
 ![NSX DFW](images/DFW.gif){.thumbnail}
 - Est-ce que j'utilise un Distributed Logical Router  ou une Edge Services Gateway?
@@ -52,7 +51,7 @@ Si vous souhaitez le migrer vers des VLAN, pour vous aider à configurer votre r
 Pour créer vos réseaux VLAN, vous pouvez suivre cette documentation : [Création de VLAN](/pages/cloud/private-cloud/creation_vlan).
 
 Vous devrez ensuite désactiver NSX-v. Vous serez notifié lorsque le processus de désactivation sera disponible.
-Après les opérations précédentes, vous pouvez maintenant migrer vos Machines Virtuelle des VXLAN vers les DVS vRACK.
+Après les opérations précédentes, vous pouvez maintenant migrer vos Machines Virtuelles des VXLAN vers les DVS vRACK.
 
 Depuis vue Réseaux sur la console vSphere UI, faire un clique droit sur le portgroup VXLAN où réside vos Machines Virtuelles et sélectionné `Migrer les VM vers un autre réseau...`.
 
@@ -61,6 +60,12 @@ Depuis vue Réseaux sur la console vSphere UI, faire un clique droit sur le port
 
 ![NSX DVS](images/migration.gif){.thumbnail}
 
+Terminez l'opération et reproduisez-la pour chaque portgroup VXLAN utilisé.
+
+Les Machines Virtuelles ne connaîtront qu’une très brève reconnexion. Dans certains cas, il se peut qu'une seule requête ping soit perdue.
+
+Nous désactiverons NSX-V à partir du 1er septembre 2023 si vous n'utilisez aucune fonctionnalité de NSX-V.
+Vous serez averti lorsque le processus de désactivation sera disponible.
 
 #### J'utilise certaines des fonctionnalités de NSX-v
 
