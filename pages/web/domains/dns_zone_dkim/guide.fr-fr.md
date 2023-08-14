@@ -1,7 +1,7 @@
 ---
 title: Configurer un enregistrement DKIM
 excerpt: Découvrez comment configurer un enregistrement DKIM sur votre nom de domaine et votre plateforme e-mail OVHcloud
-updated: 2023-05-17
+updated: 2023-08-14
 ---
 
 <style>
@@ -78,7 +78,7 @@ Pour bien comprendre pourquoi le DKIM permet de sécuriser vos échanges d'e-mai
 
 #### Le hachage <a name="hash"></a>
 
-Le principe d'une **fonction de hachage** est de générer une **signature** (aussi appelée empreinte) à partir d'une donnée d'entrée. Son intérêt est de créer en sortie une suite de caractères fixe, quelle que soit la quantité de données en entrée. 
+Le principe d'une **fonction de hachage** est de générer une **signature** (aussi appelée empreinte) à partir d'une donnée d'entrée. Son intérêt est de créer en sortie une suite de caractères fixe, quelle que soit la quantité de données en entrée.
 
 Sur le diagramme suivant, vous pouvez constater que la sortie (Output) sera toujours composée de 32 caractères en utilisant un algorithme de hachage MD5 (**M**essage **D**igest **5**), alors que le texte d'entrée (Input) peut varier en taille. La moindre variation de caractère dans la donnée d'entrée change complètement le hachage en sortie, ce qui rend la signature en sortie imprévisible et infalsifiable. Dans l'exemple ci-dessous, la valeur d'entrée (Input) est passée dans l'algorithme de hachage MD5 et présente en sortie (Output) sa valeur de hachage.
 
@@ -88,7 +88,7 @@ La fonction de hachage est utile lorsque vous souhaitez vérifier l'intégrité 
 
 #### Le chiffrement asymétrique <a name="encrypt"></a>
 
-Le **chiffrement**, comme son nom l'indique, a pour but de chiffrer les données qu'on lui donne. Il est « **asymétrique** » car la clé de chiffrement n'est pas la même que la clé de 	déchiffrement, contrairement à un chiffrement symétrique qui utilisera la même clé pour chiffrer et déchiffrer.
+Le **chiffrement**, comme son nom l'indique, a pour but de chiffrer les données qu'on lui donne. Il est « **asymétrique** » car la clé de chiffrement n'est pas la même que la clé de déchiffrement, contrairement à un chiffrement symétrique qui utilisera la même clé pour chiffrer et déchiffrer.
 
 Dans le chiffrement asymétrique, on utilise une **clé publique** et une **clé privée**. La clé publique est visible et utilisable par tous. La clé privée est uniquement utilisée par le propriétaire et n'est pas visible de tous. 
 
@@ -746,6 +746,7 @@ Lorsque vous activez pour la première fois le DKIM sur votre service e-mail, il
 
 Pour éviter les tentatives de déchiffrement de la clé DKIM, il est conseillé de changer régulièrement de paire de clés. Pour cela, assurez-vous d'avoir bien configurer vos 2 sélecteurs en vérifiant que le premier est en status `inProduction`et le second en status `ready`. vous pouvez vérifier cette état en vous référant à la section [« Les différents états du DKIM »](#dkim-status).
 
+Cliquez sur l'onglet ci-dessous correspondant à votre offre.
 
 > [!tabs]
 > **Exchange**
@@ -778,13 +779,27 @@ Après avoir basculé sur le nouveau sélecteur, conservez l'ancien durant 7 jou
 
 #### Pourquoi l'icône DKIM apparait en rouge dans l'espace client ? <a name="reddkim"></a>
 
-![email](images/red-dkim.png){.thumbnail}
+Cliquez sur l'onglet ci-dessous correspondant à votre offre, pour constater l'état d'activation du DKIM sur votre plateforme e-mail.
+
+> [!tabs]
+> **Exchange**
+>>
+>> Depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), dans l'onglet `Web Cloud`{.action}, cliquez sur `Microsoft`{.action}, puis sur `Exchange`{.action}. Cliquez enfin sur le nom du service Exchange concerné.<br><br> Dans la rubrique `Domaines associés`{.action}, constatez la couleur de l'icône `DKIM` à droite du nom de domaine concerné. (voir l'image ci-dessous).
+>>
+>> ![email](images/red-dkim.png){.thumbnail}
+>>
+> **E-mail Pro**
+>>
+>> Depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), dans l'onglet `Web Cloud`{.action}, cliquez sur `E-mails Pro`{.action}, puis sur le nom du service E-mail Pro concerné.<br><br> Dans la rubrique `Domaines associés`{.action}, constatez la couleur de l'icône `DKIM` à droite du nom de domaine concerné. (voir l'image ci-dessous).
+>>
+>> ![email](images/red-dkim.png){.thumbnail}
+
 
 Si vous venez de configurer le DKIM, cela signifie que l'activation du DKIM n'est pas terminée, **il est conseillé de patienter 24h**.
 
 Si le statut reste rouge après 24h, vérifiez l'état du sélecteur que vous avez activé. Pour cela appuyez-vous sur la section [Les différents états du DKIM](#dkim-status) de ce guide.
 
-Voici les 4 raisons d'avoir l'icône DKIM en rouge :
+Voici les 4 états ayant pour résultat l'icône DKIM en rouge dans votre esapce client:
 
  - `WaitingRecord` : les enregistrements DNS sont en attente de configuration ou en cours de validation dans la zone DNS du nom de domaine. Une vérification automatique régulière est faite pour constater si l'enregistrement DNS est présent et correctement renseigné. Selon vote offre, suivez **l'étape 5** dans la section [« Configuration complète du DKIM »](#firststep) pour configurer correctement la zone DNS du nom de domaine concerné.
  - `ready` : les enregistrements DNS sont présents dans la zone. Le DKIM peut maintenant être activé. Il vous suffira d'activer le sélecteur en vous appuyant de la section [« Activer ou changer un sélecteur DKIM »](#enable-switch).
