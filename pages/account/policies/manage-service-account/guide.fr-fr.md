@@ -14,27 +14,27 @@ updated: 2023-08-08
 
 Les accès au sein des produits de OVHcloud sont configurable au sein de **politiques d'accès** accessible depuis l'espace client. Cela vous permet de définir de manière globale qui peut accéder à quel produit. Afin de configurer ces accès pour des utilisateurs, plus d'informations sur le guide [Comment utiliser les politiques IAM depuis votre espace client](/pages/account/customer/iam-policy-ui).
 
-Lorsque des accès aux API sont nécessaire depuis des applicatif ou du code, il est nécessaire de générer des identifiants spécifiques afin de ne pas les lier à un utilisateur. En effet, vous ne souhaitez pas réinitialiser vos identifiants en production si votre utilisateur change ces identifiants, voir part de votre entreprise.
+Lorsque des accès aux API sont nécessaire depuis des applicatif ou du code, il est nécessaire de générer des identifiants spécifiques afin de ne pas les lier à un utilisateur. En effet, vous ne souhaitez pas réinitialiser vos scripts en production si votre utilisateur change ses identifiants, voir part de votre entreprise.
 
 Ce guide vous expliquera comment générer des identifiants pour déployer au sein de code, ainsi que leur utilisation dans les politiques d'accès de OVHcloud.
 Ces identifiants peuvent être utilisés au sein des différentes API de nos produits : 
 
-- API OVHcloud: [Comment utiliser l'API OVHcloud en Oauth2](/pages/account/api/authenticate-api-with-service-account)
+- API OVHcloud: [Comment s'authentifier sur l'API OVHcloud avec Oauth2](/pages/account/api/authenticate-api-with-service-account)
 - API Openstack: [Comment utiliser les comptes de service pour se connecter à Openstack](/pages/platform/public-cloud/authenticate-api-openstack-with-service-account)
 
 ## Pré-requis
 
 - Vous avez un compte client [OVHcloud account](/pages/account/customer/ovhcloud-account-creation).
 - Vous savez configurer des politiques d'accès [Comment utiliser les politiques IAM depuis votre espace client](/pages/account/customer/iam-policy-ui).
-- Savoir utiliser les [API de OVHcloud](/pages/account/customer/console-preview)
+- Vous savez utiliser les [API de OVHcloud](/pages/account/customer/console-preview)
 
 ## Fonctionnement des comptes de services
 
-Les comptes de service OVHcloud sont un couple identifiant / token qui permet à votre code de s'authentifier auprès des APIs de OVHcloud. Ces identifiants respectent le protocole Oauth2 en suivant le mécanisme d'authentification **client credential**.
+Les comptes de service OVHcloud sont un couple identifiant / token qui permettent à votre code de s'authentifier auprès des APIs de OVHcloud. Ces identifiants respectent le protocole Oauth2 en suivant le mécanisme d'authentification **client credential**.
 
-Ce couple identifiant/token n'a pas de limite d'utilisation dans le temps. Ils sont idéals pour l'utilisation au sein de code fonctionnant en production. Vous pouvez bien entendu révoquer les accès associés à ce couple à tout moment en modifiant les politiques d'accès associées ou en supprimant cet accès.
+Ce couple identifiant/token n'a pas de limite d'utilisation dans le temps. Ils sont idéals pour l'utilisation au sein de code fonctionnant en production. Vous pouvez bien entendu révoquer les accès associés à ce compte de service à tout moment en modifiant les politiques d'accès associées ou en supprimant ce compte de service .
 
-Chaque identifiant est associé à une **urn** unique qui permet de lui fournir à des droits fin sur les produits OVHcloud en l'associant avec des politiques d'accès.Ces identifiants sont directement rattachés à votre compte racine. Ils ne sont donc pas affecté par des changements d'utilisateurs. 
+Chaque identifiant est associé à un **urn** unique qui permet de lui fournir à des droits fin sur les produits OVHcloud en l'associant avec des politiques d'accès.Ces identifiants sont directement rattachés à votre compte racine. Ils ne sont donc pas affecté par des changements d'utilisateurs. 
 
 Comme toutes les API de OVHcloud, la gestion de ces identifiants sont soumis à des droits d'accès configurable au sein des politiques d'accès. Plus d'informations sur le guide [Comment utiliser les politiques IAM depuis votre espace client](/pages/account/customer/iam-policy-ui)
 
@@ -51,7 +51,7 @@ Afin de créer un compte de service, il faut utiliser l'API suivante:
 > @api {POST} /me/api/oauth2/client
 >
 
-Cette API permet des identifiants Oauth2 pour plusieurs mécanismes d'authentification. Celui qui nous concerne ici est **CLIENT_CREDENTIALS**. Ce mécanisme ne nécessite pas d'url de callback.
+Cette API permet de créer des identifiants Oauth2 pour plusieurs mécanismes d'authentification. Celui qui nous intéresse ici est **CLIENT_CREDENTIALS**. Ce mécanisme ne nécessite pas d'url de callback.
 
 Ainsi, vous devez fournir les valeurs suivantes: 
 
@@ -90,7 +90,7 @@ Si vous n'utilisez plus un compte de service, ou bien que vous voulez supprimer 
 
 ## Associer des accès à un compte de service
 
-Dans ce guide, nous décrivons comment associer un compte de service à une politique d'accès existante. Si vous souhaitez en savoir plus sur la gestion des politiques d'accès, consultez ce guide : [Comment utiliser les politiques IAM via l’API OVHcloud](/pages/account/customer/iam-policies-api).
+Pour modifier les accès d'un compte de service, vous pouvez l'associer à une politique d'accès existante ou en créer une nouvelle. Si vous souhaitez en savoir plus sur la gestion des politiques d'accès, consultez ce guide : [Comment utiliser les politiques IAM via l’API OVHcloud](/pages/account/customer/iam-policies-api).
 
 Pour cet exemple, nous allons partir d'une politique d'accès existante permettant de fournir les accès aux API de gestion des services accounts. Ci-dessous se trouve un exemple de politique avec les valeurs **xx11111-ovh** et **urn:v1:eu:identity:credential:xx11111-ovh/oauth2-0f0f0f0f0f0f0f0f** qui sont à adapter en fonction de votre configuration.
 
@@ -137,5 +137,5 @@ Cet exemple peut être utilisé directement au sein de l'appel suivant pour cré
 
 Les comptes de services sont disponible dans plusieurs API de nos produits. Pour chaque API, un guide y est consacré:
 
-- [Comment utiliser l'API OVHcloud en Oauth2]()
+- [Comment s'authentifier sur l'API OVHcloud avec Oauth2](/pages/account/api/authenticate-api-with-service-account)
 - [Comment utiliser les comptes de service pour se connecter à Openstack](/pages/platform/public-cloud/authenticate-api-openstack-with-service-account)

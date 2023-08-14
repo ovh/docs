@@ -11,7 +11,7 @@ updated: 2023-08-08
 
 ## Objectifs
 
-Pour réaliser des automatisations, il faut fournir des identifiants au code qui s'en charge. Avec les comptes de service OVHcloud, il est possible d'avoir un seul identifiant par script pour l'utilisation des différentes API proposées par les produits de OVHcloud ([API de OVHcloud](/pages/account/customer/console-preview), [API de openstack](/pages/platform/public-cloud/starting_with_nova)... )
+Pour automatiser des appels à des APIs protégées, il faut fournir des identifiants au code qui s'en charge. Avec les comptes de service OVHcloud, il est possible d'avoir un seul identifiant par script pour l'utilisation des différentes API proposées par les produits de OVHcloud ([API de OVHcloud](/pages/account/customer/console-preview), [API de openstack](/pages/platform/public-cloud/starting_with_nova)... ).
 
 Ce guide va vous expliquer comment utiliser les comptes de service afin de se connecter aux APIs de Openstack.
 
@@ -25,7 +25,7 @@ Cela peut vous permettre :
 - Vous avez un commpte client [OVHcloud account](/pages/account/customer/ovhcloud-account-creation).
 - Vous savez configurer des politiques d'accès via API [how to configure policies for IAM](/pages/account/customer/iam-policies-api).
 - Vous savez utiliser les APIs de Openstack [Débuter avec l'api Openstack](/pages/platform/public-cloud/starting_with_nova)
-- Avoir créé un compte de service via API [Créer et utiliser des comptes de service OVHcloud](/pages/account/policies/manage-service-account)
+- Vous avez créé un compte de service via API [Créer et utiliser des comptes de service OVHcloud](/pages/account/policies/manage-service-account)
 
 Pour l'exemple dans ce guide, nous utiliserons le compte de service **urn:v1:eu:identity:credential:xx11111-ovh/oauth2-0f0f0f0f0f0f0f0f** pour accéder au projet public cloud 
 **urn:v1:eu:resource:publicCloudProject:0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f**. N'oubliez pas de modifier ces valeurs dans les exemples suivant.
@@ -95,7 +95,7 @@ export OS_DISCOVERY_ENDPOINT=https://iam.ovh.net/role-adapter/urn:v1:eu:resource
 Si vous utilisez les services de OVHcloud depuis la région "Rest of the World", ajoutez les variables suivantes
 ```bash
 export OS_IDENTITY_PROVIDER=ovhcloud-world
-export OS_DISCOVERY_ENDPOINT=https://iam.ovh.ca/role-adapter/urn:v1:eu:resource:publicCloudProject:pci/.well-known/openid-configuration
+export OS_DISCOVERY_ENDPOINT=https://iam.ovh.ca/role-adapter/urn:v1:ca:resource:publicCloudProject:pci/.well-known/openid-configuration
 ```
 
 Puis ajoutez les variables suivantes avec les valeurs correspondant à votre configuration
