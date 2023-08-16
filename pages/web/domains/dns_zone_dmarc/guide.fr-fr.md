@@ -40,8 +40,6 @@ Après lecture des instructions de l'enregistrement DMARC du nom de domaine **my
 
 ### Configurer le DMARC 
 
-Vous devez d'abord activer le DMARC sur le service e-mail associé à votre nom de domaine.
-
 Il y a deux façons de configurer le DMARC dans votre zone DNS OVHcloud :
 
 - Par [l'outil de configuration DMARC](#dmarc-record). Cet enregistrement permet une configuration simplifiée du DMARC. Vous n'aurez qu'à compléter les champs avec les paramètres DMARC nécessaires à votre configuration. Cet enregistrement est lu comme un enregistrement TXT par les serveurs DNS.
@@ -61,6 +59,10 @@ Vous trouverez ci-dessous le descriptif exhaustif des balises utilisées pour **
     - *none* : le propriétaire du domaine ne demande aucune action spécifique concernant la livraison des messages.
     - *quarantine* : en cas d'échec de la vérification du mécanisme DMARC, les e-mails doivent être considérés comme suspects par les destinataires. Selon les capacités du serveur destinataire, cela peut signifier « placer dans le dossier spam » et/ou « signaler comme suspect ».
     - *reject* : rejet des e-mails qui échouent à la vérification du mécanisme DMARC.
+
+> [!warning]
+>
+> la configuration du paramètre `p=` peut avoir un impact important sur la délivrabilité des emails de votre nom de domaine. Il est conseillé de configurer `p=none` et effectuer une analyse des rapports d’échec pendant plusieurs semaines pour régler les éventuelles anomalies. Passer en `p=quarantine` ou `p=reject` nécessite une pleine maitrise des paramètres de sécurité e-mail, concernant le [SPF](/pages/web/domains/dns_zone_spf) et le [DKIM](/pages/web/domains/dns_zone_dkim). L’utilisation du facteur `pct=`, présenté en-dessous, permet une transition progressive.
 
 - **Pourcentage des messages filtrés (pct=)** (valeur comprise entre 0 et 100, la valeur par défaut est 100) : pourcentage du flux de messages auquel la politique DMARC doit être appliquée. Le but de la balise « pct » est de permettre aux propriétaires de domaines d'adopter une mise en œuvre lente du mécanisme DMARC.
 
