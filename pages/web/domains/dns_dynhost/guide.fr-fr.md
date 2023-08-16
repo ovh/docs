@@ -1,7 +1,7 @@
 ---
 title: "Paramétrer un DNS dynamique (DynHost/DynDNS) pour votre nom de domaine"
 excerpt: "Découvrez comment paramétrer un enregistrement DNS dynamique pour votre nom de domaine OVHcloud"
-updated: 2023-06-23
+updated: 2023-08-16
 ---
 
 ## Objectif
