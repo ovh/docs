@@ -23,14 +23,14 @@ The main pool attributes are the load balancing algorithm (e.g. `Round Robin`) a
 A member represents the configuration for a target back-end server to which the traffic is sent. Its main attributes are its IP e.g. `192.168.1.10` and a port e.g. `443`. A member is part of a pool. 
 
 ### Health Monitor
-The Health Monitor defines how the load balancer will check the health of the pool members. Its main attributes are the check method e.g. `PING` with various delays and timeouts. It is associated with exactly one Pool.  
+The health monitor defines how the load balancer will check the health of the pool members. Its main attributes are the check method e.g. `PING` with various delays and timeouts. It is associated with exactly one pool.  
    
-###  L7 Rule
-a L7 Rule is a single logical expression that is used to match a condition present in a given HTTP or terminated HTTPS request. L7 rules typically match against a specific header or part of the URI. An L7 rule is associated with exactly one L7 policy.
+###  L7 rule
+a L7 rule is a single logical expression that is used to match a condition present in a given HTTP or terminated HTTPS request. L7 rules typically match against a specific header or part of the URI. An L7 rule is associated with exactly one L7 policy.
 For example, a L7 rule can evaluate if an URI begins with “/api”.
 
-###  L7 Policy
-A L7 Policy associates one or many L7 rules to a listener. It main attribute is the action that is performed it the L7 rules all returns `true`. For example, a user could specify an L7 policy that any client request that matches the L7 rule “request URI starts with ‘/api’” should get routed to a specific “api” pool.
+###  L7 policy
+A L7 policy associates one or many L7 rules to a listener. It main attribute is the action that is performed if all the L7 rules evaluation returns `true`. For example, a user could specify an L7 policy so that any client request that matches the L7 rule “request URI starts with ‘/api’” should get routed to a specific “api” pool.
 
 
 ## Going Further
