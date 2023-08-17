@@ -1,14 +1,12 @@
 ---
 title: Configurare un indirizzo IP in alias
 excerpt: Come aggiungere indirizzi Additional IP alla tua configurazione VPS
-updated: 2022-10-06
+updated: 2023-08-15
 ---
 
 > [!primary]
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
 >
-
-**Ultimo aggiornamento: 06/10/2022**
 
 > [!primary]
 >
@@ -102,7 +100,7 @@ Applica le modifiche utilizzando il seguente comando:
 sudo systemctl restart networking
 ```
 
-### Ubuntu 20.04
+### Ubuntu 20.04 & Debian 12
 
 Il file di configurazione dei tuoi indirizzi Additional IP si trova in `/etc/netplan/`. In questo esempio, si chiama "50-cloud-init.yaml". Prima di apportare modifiche, verifica il nome del file effettivo in questa cartella. Ogni indirizzo Additional IP richiede la propria linea nel file.
 

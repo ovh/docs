@@ -1,14 +1,12 @@
 ---
 title: 'IP-Adresse als Alias konfigurieren'
 excerpt: 'Erfahren Sie hier, wie Sie Additional IPs in Ihre VPS-Konfiguration einbinden'
-updated: 2022-10-06
+updated: 2023-08-15
 ---
 
 > [!primary]
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
 >
-
-**Letzte Aktualisierung am 06.10.2022**
 
 > [!primary]
 >
@@ -100,7 +98,7 @@ Wenden Sie die Änderungen mit folgendem Befehl an:
 sudo systemctl restart networking
 ```
 
-### Ubuntu 20.04
+### Ubuntu 20.04 & Debian 12
 
 Die Konfigurationsdatei für Ihre Additional IPs befindet sich in `/etc/netplan/`. In diesem Beispiel heißt sie "50-cloud-init.yaml". Bevor Sie Änderungen vornehmen, überprüfen Sie am besten den tatsächlichen Dateinamen in diesem Ordner. Jede Additional IP benötigt in der Datei eine eigene Zeile.
 
