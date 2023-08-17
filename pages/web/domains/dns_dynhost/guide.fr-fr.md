@@ -58,6 +58,11 @@ Cliquez sur le bouton `Gérer les accès`{.action} puis sur `Créer un identifia
 |Sous-domaine|Spécifiez le sous-domaine concerné par la création de l'enregistrement DNS dynamique. Si vous souhaitez gérer l'ensemble des sous-domaines avec un seul identifiant, précisez juste `*` dans le formulaire de saisie|
 |Mot de passe|Définissez le mot de passe associé à l'identifiant DynHost puis confirmez-le.|
 
+> [!success]
+>
+> Pour mettre en place un DynHost directement pour votre nom de domaine, saisissez uniquement `*` dans le formulaire de saisie intitulé `Sous-domaine`{.action}.
+>
+
 Une fois les champs complétés, cliquez sur le bouton `Valider`{.action}. L'identifiant apparaît alors dans le tableau présent sur la page actuelle. Répétez cette étape autant de fois que nécessaire si vous avez besoin de créer plusieurs identifiants DynHost.
 
 ![dynhost](images/use-dynhost-step2.png){.thumbnail}
@@ -70,7 +75,7 @@ Dès que vous êtes prêt à créer l'enregistrement DynHost, repositionnez-vous
 
 |Informations|Description|
 |---|---|
-|Sous-domaine|Renseignez le sous-domaine dont l'enregistrement DNS devra être mis à jour dynamiquement. Ce sous-domaine doit correspondre à celui renseigné lors de la création de l'utilisateur DynHost.|
+|Sous-domaine|Renseignez le sous-domaine dont l'enregistrement DNS devra être mis à jour dynamiquement. Ce sous-domaine doit correspondre à celui renseigné lors de la création de l'utilisateur DynHost. **Si vous souhaitez mettre en place un DynHost directement pour votre nom de domaine, laissez ce formulaire de saisie vide**|
 |IP de destination|Renseignez l'adresse IP (IPv4 uniquement) qui doit être actuellement utilisée par l'enregistrement DNS. Il s'agit généralement de l'adresse IP publique de votre *box* Internet ou de votre serveur auto-hébergé. Selon le principe du DynHost, celle-ci sera mise à jour automatiquement par la suite.|
 
 > [!primary]
