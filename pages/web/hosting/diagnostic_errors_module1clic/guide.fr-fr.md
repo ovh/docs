@@ -1,10 +1,8 @@
 ---
 title: Résoudre les erreurs les plus fréquentes liées aux modules en 1 clic
 excerpt: Diagnostiquez les cas les plus courants d'erreurs liées aux créations de modules en 1 clic
-updated: 2022-11-08
+updated: 2023-08-17
 ---
-
-**Dernière mise à jour le 15/02/2023**
 
 ## Objectif
 
@@ -100,6 +98,17 @@ Pour relier votre domaine à un autre répertoire, cliquez sur `Modifier le doma
 ![modify_root_folder](images/modify_root_folder.png){.thumbnail}
 
 Vous pouvez également vous connecter à votre hébergement via [FTP](/pages/web/hosting/ftp_connection), puis supprimer ou déplacer le contenu du dossier, après l'avoir sauvegardé.
+
+### « Either no configuration (ovhConfig or runtime), or the current configuration is not valid (please, double check the module's requirement) (as a reminder, the global configuration is used for module). »
+
+Ce message indique que le fichier « .ovhconfig » est inexistant ou invalide pour pouvoir installer votre « module en 1 clic ». Ce fichier contient la version de PHP et l'environnement d'exécution appliqués à votre hébergement web.
+
+Il est recommandé d'utiliser la version de PHP la plus récente possible. Si vous disposez d'autres sites web sur votre hébergement web, assurez-vous, **avant** de changer la configuration du fichier « .ovhconfig », que ces derniers sont compatibles avec la nouvelle version de PHP et/ou le nouvel environnement d'exécution que vous allez appliquer sur votre hébergement web.
+
+Pour vérifier cette configuration, consultez nos guides sur le sujet :
+
+- [Modifier la configuration de son hébergement web](/pages/web/hosting/ovhconfig_modify_system_runtime)
+- [Configurer le fichier .ovhconfig de son hébergement web](/pages/web/hosting/ovhconfig_configuration)
 
 ### « Une erreur s'est produite lors du chargement des informations (There is not enough space on your hosting (you need at least xxx MB)) »
 
