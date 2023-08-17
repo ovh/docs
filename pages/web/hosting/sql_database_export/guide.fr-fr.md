@@ -108,7 +108,7 @@ La première étape consiste à créer le script qui permettra de réaliser la s
 
 ```php
 <?
-system("mysqldump --host=adresse_du_serveur --user=nom_utilisateur --password=mot_de_passe_utilisateur nom_base_de_données > nom_fichier_sauvegarde.sql");
+system("mysqldump --host=server_address --user=user_name --password=user_password name_of_database > backup_file_name.sql");
 ?>
 ```
 
@@ -116,11 +116,11 @@ Prenez soin de remplacer les informations génériques dans ce script par les in
 
 |Informations|À remplacer par|
 |---|---|
-|adresse_du_serveur|L'adresse du serveur de la base de données concernée.|
-|nom_utilisateur|Le nom d'utilisateur disposant d'un accès à la base de données.|
-|mot_de_passe_utilisateur|Le mot de passe du nom d'utilisateur indiqué précédemment.|
-|nom_base_de_données|Le nom de la base de données concernée.|
-|nom_fichier_sauvegarde|Le nom que portera le fichier de sauvegarde une fois cette dernière exécutée.|
+|server_address|L'adresse du serveur de la base de données concernée.|
+|user_name|Le nom d'utilisateur disposant d'un accès à la base de données.|
+|user_password|Le mot de passe du nom d'utilisateur indiqué précédemment.|
+|name_of_database|Le nom de la base de données concernée.|
+|backup_file_name|Le nom que portera le fichier de sauvegarde une fois cette dernière exécutée.|
 
 > [!primary]
 >
@@ -164,7 +164,7 @@ Pour réaliser la manipulation, vous devrez utiliser des commandes depuis un ter
 Une fois connecté à votre espace de stockage FTP via une connexion en SSH, utilisez une commande permettant de réaliser la sauvegarde de la base de données. Vous en trouverez une ci-dessous pouvant vous aider dans votre démarche. Prenez en compte que la sauvegarde sera réalisée dans le répertoire actif au moment où vous enverrez la commande dans votre terminal.
 
 ```sh
-mysqldump --host=adresse_du_serveur --user=nom_utilisateur --password=mot_de_passe_utilisateur nom_base_de_données > nom_fichier_sauvegarde.sql
+mysqldump --host=server_address --user=user_name --password=user_password name_of_database > backup_file_name.sql
 ```
 
 Remplacez les informations génériques de cette commande par les informations de la base de données concernée. Une fois la sauvegarde réalisée, il ne vous reste plus qu'à la récupérer sur votre propre machine.
@@ -172,11 +172,11 @@ Remplacez les informations génériques de cette commande par les informations d
 
 |Informations|À remplacer par|
 |---|---|
-|adresse_du_serveur|L'adresse du serveur de la base de données concernée.|
-|nom_utilisateur|Le nom d'utilisateur disposant d'un accès à la base de données.|
-|mot_de_passe_utilisateur|Le mot de passe du nom d'utilisateur indiqué précédemment.|
-|nom_base_de_données|Le nom de la base de données concernée.|
-|nom_fichier_sauvegarde|Le nom que portera le fichier de sauvegarde une fois cette dernière exécutée.|
+|server_address|L'adresse du serveur de la base de données concernée.|
+|user_name|Le nom d'utilisateur disposant d'un accès à la base de données.|
+|user_password|Le mot de passe du nom d'utilisateur indiqué précédemment.|
+|name_of_database|Le nom de la base de données concernée.|
+|backup_file_name|Le nom que portera le fichier de sauvegarde une fois cette dernière exécutée.|
 
 ## Aller plus loin <a name="go-further"></a>
 
