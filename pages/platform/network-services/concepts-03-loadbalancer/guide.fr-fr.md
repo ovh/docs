@@ -15,7 +15,7 @@ Un Listener définit un point d'entrée pour le traffic qui sera traité par le 
 
 
 ### Pool 
-Un pool définit un ensemble de membres à qui sont envoyé le traffic. Un pool est associé à un listener. Pour une configuration avancée avec les L7 Policy, il est possible qu'un listener redirige le traffic vers plusieurs pools. 
+Un pool définit un ensemble de membres à qui est envoyé le traffic. Un pool est associé à un listener. Pour une configuration avancée avec les L7 Policy, il est possible qu'un listener redirige le traffic vers plusieurs pools. 
 Les attributs principaux d'un pool sont l'algorithme (par exemple `Round Robin`) et le protocol utilisé pour transmettre le traffic aux membres (par exemple `HTTPS`)
 
 ### Membre
