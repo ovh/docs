@@ -298,4 +298,10 @@ A questo punto il disco malfunzionante è pronto per essere sostituito da un tec
 
 ## Per saperne di più
 
+[Come configurare il software RAID di un server](/pages/cloud/dedicated/raid_soft){.external}
+
+[Hot Swap - RAID Hardware](/pages/cloud/dedicated/hotswap_raid_hard){.external}
+
+[Gestire il RAID Hardware](/pages/cloud/dedicated/raid_hard){.external} (in inglese)
+
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

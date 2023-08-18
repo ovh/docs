@@ -391,7 +391,7 @@ mount /dev/md4 /home
 
 [Hot Swap – RAID Software](/pages/cloud/dedicated/hotswap_raid_soft){.external}
 
-[Hot Swap - RAID Hardware](/pages/cloud/dedicated/hotswap_raid_soft){.external}
+[Hot Swap - RAID Hardware](/pages/cloud/dedicated/hotswap_raid_hard){.external}
 
 [Gestire il RAID Hardware](/pages/cloud/dedicated/raid_hard){.external} (in inglese)
 

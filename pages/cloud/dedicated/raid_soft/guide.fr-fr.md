@@ -385,10 +385,12 @@ mount /dev/md4 /home
 
 ## Aller plus loin
 
-[Hot Swap – RAID Matériel](/pages/cloud/dedicated/hotswap_raid_hard){.external}
+[Remplacement à chaud - RAID logiciel](/pages/cloud/dedicated/hotswap_raid_soft)
 
-[Hot Swap – RAID Logiciel](/pages/cloud/dedicated/hotswap_raid_soft){.external}
+[API OVHcloud & Partitionnement](/pages/cloud/dedicated/partitioning_ovh)
 
-[RAID Matériel](/pages/cloud/dedicated/raid_hard){.external}
+[Gestion du RAID matériel](/pages/cloud/dedicated/raid_hard)
+
+[Remplacement à chaud - RAID Matériel](/pages/cloud/dedicated/hotswap_raid_hard)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

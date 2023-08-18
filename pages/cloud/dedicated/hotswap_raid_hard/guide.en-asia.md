@@ -400,3 +400,17 @@ You can also check the progress of the rebuild with the following command :
 <span class="output">Rebuild Progress on Device at Enclosure 252, Slot 1 Completed 93% in 0 Minutes.</span>
 <span class="blank">&nbsp;</span>
 <span class="output">Exit Code: 0x00</span> </pre></div>
+
+## Go further
+
+[Managing hardware RAID](/pages/cloud/dedicated/raid_hard)
+
+[Configuring MegaRAID for RAID Level 0](/pages/cloud/dedicated/megaraid_config)
+
+[OVHcloud API & Partitioning](/pages/cloud/dedicated/partitioning_ovh)
+
+[Managing software RAID](/pages/cloud/dedicated/raid_soft)
+
+[Hot Swap - Software RAID](/pages/cloud/dedicated/hotswap_raid_soft)
+
+Join our community of users on <https://community.ovh.com/en/>.

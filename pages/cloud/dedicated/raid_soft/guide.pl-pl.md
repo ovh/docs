@@ -387,7 +387,6 @@ mount /dev/md4 /home
 
 ## Sprawdź również
 
-* [Wymiana dysku bez wyłączania serwera – Sprzętowa macierz RAID](/pages/cloud/dedicated/hotswap_raid_soft){.external}
 * [Wymiana dysku bez wyłączania serwera – Programowa macierz RAID](/pages/cloud/dedicated/hotswap_raid_soft){.external}
 * [Sprzętowa macierz RAID (EN)](/pages/cloud/dedicated/raid_hard){.external}
 

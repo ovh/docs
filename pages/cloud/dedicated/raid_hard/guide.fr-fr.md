@@ -419,4 +419,14 @@ Ce contrôleur RAID est déprécié et devient instable. Nous vous suggérons fo
 
 ## Aller plus loin
 
+[Remplacement à chaud - RAID Matériel](/pages/cloud/dedicated/hotswap_raid_hard)
+
+[Configurer votre MegaRAID en RAID 0](/pages/cloud/dedicated/megaraid_config)
+
+[API OVHcloud & Partitionnement](/pages/cloud/dedicated/partitioning_ovh)
+
+[Gestion du RAID logiciel](/pages/cloud/dedicated/raid_soft)
+
+[Remplacement à chaud - RAID logiciel](/pages/cloud/dedicated/hotswap_raid_soft)
+
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

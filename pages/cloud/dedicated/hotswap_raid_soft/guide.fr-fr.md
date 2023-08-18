@@ -298,4 +298,12 @@ Le disque défectueux est désormais prêt à être remplacé par un technicien 
 
 ## Aller plus loin
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+[Gestion du RAID logiciel](/pages/cloud/dedicated/raid_soft)
+
+[API OVHcloud & Partitionnement](/pages/cloud/dedicated/partitioning_ovh)
+
+[Gestion du RAID matériel](/pages/cloud/dedicated/raid_hard)
+
+[Remplacement à chaud - RAID Matériel](/pages/cloud/dedicated/hotswap_raid_hard)
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

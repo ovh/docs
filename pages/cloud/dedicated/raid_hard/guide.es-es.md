@@ -224,4 +224,14 @@ Para comprobar si el RAID se está resincronizando y seguir el progreso de la re
 > [!alert]
 >
 > Esta controladora RAID está obsoleta y es inestable. Le recomendamos encarecidamente que contacte con el soporte de OVHcloud para planificar una intervención de sustitución de esta controladora RAID por una LSI. Este tipo de intervención requiere la reinstalación del servidor, por lo que deberá haber realizado previamente un backup de sus datos.
-> 
+>
+
+## Más información
+
+[Configurar MegaRAID para RAID nivel 0](/pages/cloud/dedicated/megaraid_config)
+
+[RAID por software](/pages/cloud/dedicated/raid_soft)
+
+[Sustituir un disco en caliente en un servidor con RAID por software](/pages/cloud/dedicated/hotswap_raid_soft)
+
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

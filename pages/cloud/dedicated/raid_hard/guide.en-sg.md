@@ -426,5 +426,14 @@ RAID actions menu, select an option:  [1-99 or e/p/w or 0 to quit] 0
 
 ## Go further
 
-[Configuring software RAID](/pages/cloud/dedicated/raid_soft){.external}
+[Hot Swap - Hardware RAID](/pages/cloud/dedicated/hotswap_raid_hard)
+
+[Configuring MegaRAID for RAID Level 0](/pages/cloud/dedicated/megaraid_config)
+
+[OVHcloud API & Partitioning](/pages/cloud/dedicated/partitioning_ovh)
+
+[Managing software RAID](/pages/cloud/dedicated/raid_soft)
+
+[Hot Swap - Software RAID](/pages/cloud/dedicated/hotswap_raid_soft)
+
 Join our community of users on <https://community.ovh.com/en/>.

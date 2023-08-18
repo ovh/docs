@@ -389,9 +389,7 @@ mount /dev/md4 /home
 
 ## Más información
 
-[Sustituir un disco en caliente en un servidor con RAID por software](/pages/cloud/dedicated/hotswap_raid_soft){.external}
-
-[Hot Swap - RAID Hardware (EN)](/pages/cloud/dedicated/hotswap_raid_hard){.external}
+[Sustituir un disco en caliente en un servidor con RAID por software](/pages/cloud/dedicated/hotswap_raid_soft)
 
 [RAID por hardware](/pages/cloud/dedicated/raid_hard)
 

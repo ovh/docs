@@ -298,4 +298,12 @@ Die defekte Festplatte kann jetzt von einem Techniker im Rechenzentrum ausgetaus
 
 ## Weiterführende Informationen
 
+[Erfahren Sie hier, wie Sie das RAID Array Ihres Servers rekonfigurieren](/pages/cloud/dedicated/raid_soft)
+
+[OVHcloud API & Partitioning](/pages/cloud/dedicated/partitioning_ovh) (Englisch)
+
+[Managing hardware RAID](/pages/cloud/dedicated/raid_hard)(Englisch)
+
+[Hot Swap - Hardware RAID](/pages/cloud/dedicated/hotswap_raid_hard) (Englisch)
+
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

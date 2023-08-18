@@ -269,3 +269,17 @@ Une fois l'intervention effectuée par le Datacentre, vous pouvez lister de nouv
 Vous pouvez également vérifier la progression de la reconstruction avec la commande suivante :
 
 <div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">[root@ns3043198:/opt/lsi/MegaCLI] ./MegaCli -PDRbld -ShowProg -PhysDrv [252:1] -a0</span> <span class="blank">&nbsp;</span> <span class="output">Rebuild Progress on Device at Enclosure 252, Slot 1 Completed 93% in 0 Minutes.</span> <span class="blank">&nbsp;</span> <span class="output">Exit Code: 0x00</span> </pre></div>
+
+## Aller plus loin
+
+[Gestion du RAID matériel](/pages/cloud/dedicated/raid_hard)
+
+[Configurer votre MegaRAID en RAID 0](/pages/cloud/dedicated/megaraid_config)
+
+[API OVHcloud & Partitionnement](/pages/cloud/dedicated/partitioning_ovh)
+
+[Gestion du RAID logiciel](/pages/cloud/dedicated/raid_soft)
+
+[Remplacement à chaud - RAID logiciel](/pages/cloud/dedicated/hotswap_raid_soft)
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

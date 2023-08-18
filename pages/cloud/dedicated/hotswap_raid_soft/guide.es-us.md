@@ -302,4 +302,8 @@ A continuación, el disco dañado ya podrá ser sustituido por un técnico del d
 
 ## Más información
 
+[RAID por software](/pages/cloud/dedicated/raid_soft)
+
+[RAID por hardware](/pages/cloud/dedicated/raid_hard)
+
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

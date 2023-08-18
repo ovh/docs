@@ -382,10 +382,12 @@ mount /dev/md4 /home
 
 ## Weiterführende Informationen
 
-[Hot Swap – Hardware RAID](/pages/cloud/dedicated/hotswap_raid_hard){.external} (Englisch)
+[Hot Swap - Software RAID](/pages/cloud/dedicated/hotswap_raid_soft) (Englisch)
 
-[Hot Swap – Software RAID](/pages/cloud/dedicated/hotswap_raid_soft){.external}
+[OVHcloud API & Partitioning](/pages/cloud/dedicated/partitioning_ovh) (Englisch)
 
-[Hardware RAID](/pages/cloud/dedicated/raid_hard){.external} (Englisch)
+[Managing hardware RAID](/pages/cloud/dedicated/raid_hard)(Englisch)
+
+[Hot Swap - Hardware RAID](/pages/cloud/dedicated/hotswap_raid_hard) (Englisch)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

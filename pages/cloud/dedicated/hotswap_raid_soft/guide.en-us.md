@@ -296,6 +296,14 @@ You can do this from the **Disk Management** interface of your Windows server.
 
 The defective disk is now ready to be replaced by a datacentre technician. Once the operation is complete, you just have to resync the RAID. To do this, you can use the following guide: [Configuring software RAID](/pages/cloud/dedicated/raid_soft){.external}
 
-## Go further
+## Go Further
+
+[Managing software RAID](/pages/cloud/dedicated/raid_soft)
+
+[OVHcloud API & Partitioning](/pages/cloud/dedicated/partitioning_ovh)
+
+[Managing hardware RAID](/pages/cloud/dedicated/raid_hard)
+
+[Hot Swap - Hardware RAID](/pages/cloud/dedicated/hotswap_raid_hard)
 
 Join our community of users on <https://community.ovh.com/en/>.

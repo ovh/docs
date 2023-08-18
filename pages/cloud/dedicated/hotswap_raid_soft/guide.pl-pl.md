@@ -298,4 +298,6 @@ Niesprawny dysk jest teraz gotowy do wymiany przez technika w centrum danych. Po
 
 ## Sprawdź również
 
+* [Programowa macierz RAID](/pages/cloud/dedicated/raid_soft){.external}
+
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
