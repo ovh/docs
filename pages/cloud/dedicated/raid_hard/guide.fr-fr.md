@@ -1,16 +1,17 @@
 ---
-title: 'Gestion du RAID matériel'
-excerpt: "Apprenez à vérifier l'état de votre RAID et de vos disques durs"
-updated: 2019-05-10
+title: Gestion du RAID matériel
+slug: raid-hard
+excerpt: Apprenez à vérifier l'état de votre RAID matériel et de vos disques durs
+section: RAID & disques
+updated: 2023-08-21
 ---
 
-**Dernière mise à jour le 01/04/2020**
+<!-- markdownlint-disable-next-line MD036 -->
+**Dernière mise à jour le 21/08/2023**
 
 ## Objectif
 
 Sur un serveur disposant d'une configuration RAID matériel, la matrice RAID est gérée par un composant physique appelé contrôleur RAID.
-
-**Ce guide vous montre comment vérifier l'état de votre RAID et de vos disques durs.**
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/t_BL_uOXQVA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 

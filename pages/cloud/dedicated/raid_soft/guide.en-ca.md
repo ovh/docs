@@ -1,10 +1,13 @@
 ---
-title: 'Configuring software RAID'
-excerpt: 'Find out how to rebuild your server’s drive configuration after a disk replacement'
-updated: 2022-10-11
+title: Managing software RAID
+slug: raid-soft
+excerpt: Find out how to verify the state of your software RAID
+section: RAID and disks
+updated: 2023-08-21
 ---
 
-**Last updated 15th February 2023**
+<!-- markdownlint-disable-next-line MD036 -->
+**Last updated 21st August 2023**
 
 ## Objective
 

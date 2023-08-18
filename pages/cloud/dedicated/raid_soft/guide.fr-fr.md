@@ -1,10 +1,13 @@
 ---
-title: 'Le RAID logiciel'
-excerpt: 'Apprenez à configurer la baie RAID de votre serveur en cas de panne ou de corruption de disque'
-updated: 2022-10-11
+title: Gestion du RAID logiciel
+slug: raid-soft
+excerpt: Apprenez à vérifier l'état de votre RAID logiciel
+section: RAID & disques
+updated: 2023-08-21
 ---
 
-**Dernière mise à jour le 16/02/2023**
+<!-- markdownlint-disable-next-line MD036 -->
+**Dernière mise à jour le 21/08/2023**
 
 ## Objectif
 

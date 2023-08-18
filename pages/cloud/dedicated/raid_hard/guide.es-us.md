@@ -1,21 +1,21 @@
 ---
 title: RAID por hardware
 excerpt: Como comprobar el estado del RAID por hardware y de los discos con controladora RAID&#58; LSI, LSI MegaRaid y 3ware (obsoleto).
-updated: 2019-05-10
+section: RAID y discos
+updated: 2023-08-21
 ---
 
+<!-- markdownlint-disable-next-line MD036 -->
+**Última actualización: 21/08/2023**
 
 ## Requisitos
 - Tener acceso *root* por SSH.
 - Tener un servidor con RAID por hardware.
 
-
-
 > [!warning]
 >
 > Es peligroso manipular los comandos MegaCli y lsiutil si no está seguro de cómo hacerlo, ya que corre el riesgo de perder sus datos. Por ese motivo, es importante hacer un backup antes de realizar cualquier operación.
-> 
-
+>
 
 ## Controladora RAID MegaRaid
 

@@ -1,16 +1,17 @@
 ---
-title: 'Managing Hardware RAID'
-excerpt: 'This guide will show you how to verify the state of your RAID and the health of your hard drives'
-updated: 2019-05-10
+title: Managing hardware RAID
+slug: raid-hard
+excerpt: Find out how to verify the state of your hardware RAID and the health of your hard drives
+section: RAID and disks
+updated: 2023-08-21
 ---
 
-**Last updated 16th October 2016**
+<!-- markdownlint-disable-next-line MD036 -->
+**Last updated 21st August 2023**
 
 ## Objective
 
 On a server with a hardware RAID configuration, the RAID array is managed by a physical component called a RAID controller.
-
-**This guide will show you how to verify the state of your RAID and the health of your hard drives.**
 
 ## Requirements
 

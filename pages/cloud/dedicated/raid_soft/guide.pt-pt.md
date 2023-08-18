@@ -1,14 +1,17 @@
 ---
-title: 'RAID por software'
-excerpt: 'Saiba como configurar o RAID de um servidor em caso de avaria ou de falha de disco'
-updated: 2022-10-11
+title: RAID por software
+slug: raid-soft
+excerpt: Saiba como configurar o software RAID de um servidor
+section: RAID e discos
+updated: 2023-08-21
 ---
 
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 21/02/2023**
+<!-- markdownlint-disable-next-line MD036 -->
+**Última atualização: 21/08/2023**
 
 ## Objetivo
 
