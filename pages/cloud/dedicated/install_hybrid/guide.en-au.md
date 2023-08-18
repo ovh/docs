@@ -1,10 +1,10 @@
 ---
 title: 'Choosing the disk group to install an operating system'
 excerpt: 'Learn here how to choose a disk group to install your operating system'
-updated: 2018-11-22
+updated: 2023-08-21
 ---
 
-**Last updated 23/11/2018**
+**Last updated 21st August 2023**
 
 ## Objective
 
@@ -94,5 +94,19 @@ Your operating system will now be installed. You can check the progress of the i
 > 
 
 ## Go further
+
+[Getting started with a dedicated server](/pages/cloud/dedicated/getting-started-with-dedicated-server)
+
+[Getting started with a Kimsufi, So You Start or Rise dedicated server](/pages/cloud/dedicated/getting-started-with-dedicated-server-eco)
+
+[OVHcloud API & Partitioning](/pages/cloud/dedicated/partitioning_ovh)
+
+[Managing software RAID](/pages/cloud/dedicated/raid_soft)
+
+[Hot Swap - Software RAID](/pages/cloud/dedicated/hotswap_raid_soft)
+
+[Managing hardware RAID](/pages/cloud/dedicated/raid_hard)
+
+[Hot Swap - Hardware RAID](/pages/cloud/dedicated/hotswap_raid_hard)
 
 Join our community of users on <https://community.ovh.com/en/>.

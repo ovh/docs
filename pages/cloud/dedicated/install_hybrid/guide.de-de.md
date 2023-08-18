@@ -1,10 +1,10 @@
 ---
 title: 'Festplattengruppe für die Installation des Betriebssystems auswählen'
 excerpt: 'Hier erfahren Sie, wie Sie eine spezifische Festplattengruppe für die Installation Ihres Betriebssystems auswählen.'
-updated: 2018-11-22
+updated: 2023-08-21
 ---
 
-**Stand 19.07.2018**
+**Stand 21.08.2023**
 
 ## Einleitung
 

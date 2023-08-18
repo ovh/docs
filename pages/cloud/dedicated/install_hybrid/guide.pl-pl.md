@@ -1,10 +1,10 @@
 ---
 title: 'Wybór grupy dysków przeznaczoną do instalacji systemu operacyjnego'
 excerpt: 'Dowiedz się, jak wybrać odpowiednią grupę dysków przeznaczoną do instalacji systemu operacyjnego'
-updated: 2018-11-22
+updated: 2023-08-21
 ---
 
-**Ostatnia aktualizacja z dnia 06-12-2018**
+**Ostatnia aktualizacja z dnia 21-08-2023**
 
 ## Wprowadzenie
 

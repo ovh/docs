@@ -1,10 +1,10 @@
 ---
 title: 'Choisir une grappe de disques pour installer un système d’exploitation'
 excerpt: "Découvrez comment choisir une grappe de disques spécifique pour installer votre système d'exploitation"
-updated: 2018-11-22
+updated: 2023-08-21
 ---
 
-**Dernière mise à jour le 09/11/2018**
+**Dernière mise à jour le 21/08/2023**
 
 ## Objectif
 
@@ -96,5 +96,19 @@ Votre système d'exploitation va maintenant être installé. Vous pouvez vérifi
 > 
 
 ## Aller plus loin
+
+[Premiers pas avec un serveur dédié](/pages/cloud/dedicated/getting-started-with-dedicated-server)
+
+[Premiers pas avec un serveur dédié Kimsufi, So You Start ou Rise](/pages/cloud/dedicated/getting-started-with-dedicated-server-eco)
+
+[API OVHcloud & Partitionnement](/pages/cloud/dedicated/partitioning_ovh)
+
+[Gestion du RAID logiciel](/pages/cloud/dedicated/raid_soft)
+
+[Remplacement à chaud - RAID logiciel](/pages/cloud/dedicated/hotswap_raid_soft)
+
+[Gestion du RAID matériel](/pages/cloud/dedicated/raid_hard)
+
+[Remplacement à chaud - RAID matériel](/pages/cloud/dedicated/hotswap_raid_hard)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

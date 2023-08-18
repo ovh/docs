@@ -1,10 +1,10 @@
 ---
 title: 'Scegliere il gruppo di dischi su cui installare un sistema operativo'
 excerpt: 'Come scegliere un gruppo di dischi specifico per installare il tuo sistema operativo'
-updated: 2018-11-22
+updated: 2023-08-21
 ---
 
-**Ultimo aggiornamento: 17/05/2019**
+**Ultimo aggiornamento: 21/08/2023**
 
 ## Obiettivo
 

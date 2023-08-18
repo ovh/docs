@@ -1,10 +1,10 @@
 ---
 title: 'Escolher um conjunto de discos para instalar um sistema operativo'
 excerpt: 'Saiba como escolher um conjunto de discos específico para instalar um sistema operativo'
-updated: 2018-11-22
+updated: 2023-08-21
 ---
 
-**Última atualização: 29/11/2018**
+**Última atualização: 21/08/2023**
 
 ## Sumário
 
