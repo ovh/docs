@@ -1,7 +1,7 @@
 ---
 title: Attacher une adresse Floating IP à une instance Public Cloud
 excerpt: Comprendre qu'est-ce qu’une Floating IP des services L3 et comment la configurer
-updated: 2022-11-14
+updated: 2023-08-18
 ---
 
 **Dernière mise à jour le 14/11/2022**
@@ -331,6 +331,14 @@ Dans la fenêtre qui s'affiche, cliquez sur `Confirmer`{.action}. L'opération p
 >> >
 >> > Une fois qu'une Floating IP est attachée à une VM, elle est exposée au réseau public. Assurez-vous toujours que votre machine virtuelle et ses services sont correctement protégés par des groupes de sécurité ou un pare-feu virtuel.
 >> >
+
+#### Ajouter un DNS à une Floating IP
+
+Pour ajouter un DNS à une IP flottante, exécutez la commande suivante à partir de la ligne de commande.
+
+```bash
+$ openstack floating ip set --dns-domain <DOMAIN_NAME> <IP_ADDRESS_ID>
+```
 
 #### Détacher une Floating IP <a name="detachip"></a>
 
