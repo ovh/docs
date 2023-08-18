@@ -17,6 +17,8 @@ Le niveau RAID par défaut pour les installations de serveurs OVHcloud est RAID 
 
 **Ce guide va vous aider à configurer la matrice RAID de votre serveur dans l'éventualité où elle doit être reconstruite en raison d'une corruption ou d'une panne de disque.**
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/t_BL_uOXQVA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Prérequis
 
 - Posséder un [serveur dédié](https://www.ovhcloud.com/fr-ca/bare-metal/){.external} avec une configuration RAID logiciel.
@@ -187,7 +189,7 @@ umount /dev/md4
 ```
 
 > [!warning]
-> Veuillez noter que si vous êtes connecté en tant qu'utilisateur `root` , vous pouvez obtenir le message suivant lorsque vous essayez de démonter la partition (dans notre cas, où notre partition md4 est montée dans /home) :
+> Veuillez noter que si vous êtes connecté en tant qu'utilisateur `root`, vous pouvez obtenir le message suivant lorsque vous essayez de démonter la partition (dans notre cas, où notre partition md4 est montée dans /home) :
 > 
 > <div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">umount: /home: target is busy</span> </pre></div>
 >
