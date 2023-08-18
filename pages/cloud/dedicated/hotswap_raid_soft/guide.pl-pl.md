@@ -30,7 +30,7 @@ Jeśli jeden z dysków w serwerze jest niesprawny, możesz wymienić go bez wył
 
 Otrzymałeś alert dotyczący dysku `/dev/sdb`. Jest on niesprawny i chcesz go wymienić bez wyłączenia serwera. **Wykorzystaj z tego przewodnika sekcje, które odpowiadają Twojemu przypadkowi.**
 
-Rozpocznij od przetestowania dysku i sprawdzenia jego numeru seryjnego (**Serial Number **) danego dysku.
+Rozpocznij od przetestowania dysku i sprawdzenia jego numeru seryjnego (**Serial Number**) danego dysku.
 
 ```sh
 root@ns3054662:/home# smartctl -a /dev/sdb
@@ -93,7 +93,7 @@ root@ns3054662:/home# smartctl -a /dev/sdb
 >>> Long (extended) Self Test duration: 34237 seconds [570.6 minutes]
 ```
 
-Stwierdzasz, że: 
+Stwierdzasz, że:
 
 - dysk **SDB** jest niesprawny ze względu na nieusunięte błędy (“uncorrected errors”);
 - jego **SErial Number** odpowiada numerowi podanemu w alercie (uzyskanym z centrum danych lub w narzędziu do monitoringu).
@@ -253,13 +253,13 @@ Otrzymałeś alert dotyczący dysku `/dev/sdb`. Jest on niesprawny i chcesz go w
 > [!primary]
 >
 > Pamiętaj, aby uruchomić terminal komend jako administrator. W przeciwnym razie wyświetli się błąd.
-> 
+>
 
-Rozpocznij od przetestowania dysku i sprawdzenia jego numeru seryjnego (**Serial Number **) danego dysku. Na poniższym zrzucie, dysk nie jest tak naprawdę niesprawny, ale będziemy postępować tak, jak gdyby był niesprawny.
+Rozpocznij od przetestowania dysku i sprawdzenia jego numeru seryjnego (**Serial Number**) danego dysku. Na poniższym zrzucie, dysk nie jest tak naprawdę niesprawny, ale będziemy postępować tak, jak gdyby był niesprawny.
 
 ![smart_sdb_windows](images/smart_sdb_windows.png){.thumbnail}
 
-Stwierdzasz, że: 
+Stwierdzasz, że:
 
 - dysk **SDB** jest niesprawny ze względu na nieusunięte błędy (“uncorrected errors”);
 - jego **SErial Number** odpowiada numerowi podanemu w alercie (uzyskanym z centrum danych lub w narzędziu do monitoringu).

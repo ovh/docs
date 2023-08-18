@@ -93,7 +93,7 @@ root@ns3054662:/home# smartctl -a /dev/sdb
 >>> Long (extended) Self Test duration: 34237 seconds [570.6 minutes]
 ```
 
-Aqui, poderá notar que: 
+Aqui, poderá notar que:
 
 - o disco “**SDB**” está fora de serviço devido aos erros que não foram corrigidos (“uncorrected errors”);
 - o seu **número de série** corresponde ao da alerta recebida (enviada do datacenter ou através de qualquer outra ferramenta de monitorização).
@@ -107,7 +107,7 @@ root@ns3054662:/home# smartctl -a /dev/sdb | grep Serial
 
 #### 2 - Obter a posição do disco
 
-A seguir, deverá identificar a **slot** e o **enclosure** do disco afetado. Para isso, utilize a ferramenta “sas2ircu” previamente instalada no servidor. 
+A seguir, deverá identificar a **slot** e o **enclosure** do disco afetado. Para isso, utilize a ferramenta “sas2ircu” previamente instalada no servidor.
 
 Comece por verificar que os discos estão bem conectados através de uma placa LSI.
 
@@ -253,20 +253,20 @@ Neste manual partiremos do princípio de que o cliente recebeu um alerta para o 
 > [!primary]
 >
 > É importante abrir o terminal de comandos enquanto administrador para evitar erros.
-> 
+>
 
 Comece por testar e verificar o **serial number** (número de série) do disco danificado. **Na seguinte captura de ecrã, o armazenamento na realidade não está fora de serviço.**
 
 ![smart_sdb_windows](images/smart_sdb_windows.png){.thumbnail}
 
-Aqui, poderá notar que: 
+Aqui, poderá notar que:
 
 - o disco “**SDB**” está fora de serviço devido aos erros que não foram corrigidos (“uncorrected errors”);
 - o seu **número de série** corresponde ao da alerta recebida (enviada do datacenter ou através de qualquer outra ferramenta de monitorização).
 
 #### 2 - Obter a posição do disco
 
-A seguir, deverá identificar a **slot** e o **enclosure** do disco afetado. Para isso, utilize a ferramenta “sas2ircu” previamente instalada no servidor. 
+A seguir, deverá identificar a **slot** e o **enclosure** do disco afetado. Para isso, utilize a ferramenta “sas2ircu” previamente instalada no servidor.
 
 Comece por determinar o ID desta placa LSI.
 

@@ -193,11 +193,11 @@ umount /dev/md4
 
 > [!warning]
 > Se sei connesso come utente `root`, puoi ottenere questo messaggio quando cerchi di smontare la partizione (nel nostro caso, la partizione md4 è montata in /home):
-> 
+>
 > <div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">umount: /home: target is busy</span> </pre></div>
 >
 > In questo caso, dovrai disconnetterti come utente root e connetterti come utente locale (nel nostro caso, `debian`) utilizzando il comando:
-> 
+>
 > <div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">debian@ns000000:/$ sudo umount /dev/md4</span> </pre></div>
 >
 > Se non disponi di un utente locale, è necessario crearne uno.
@@ -328,7 +328,7 @@ sfdisk -d /dev/sdb | sfdisk /dev/sda
 
 L'ordine deve essere nel seguente formato: `sfdisk -d /dev/healthydisk | sfdisk /dev/newdisk`.
 
-A questo punto è possibile ricostruire il volume RAID. Il codice seguente mostra come ricostruire la partizione `/dev/md4` tramite la tabella di “sda” copiata precedentemente: 
+A questo punto è possibile ricostruire il volume RAID. Il codice seguente mostra come ricostruire la partizione `/dev/md4` tramite la tabella di “sda” copiata precedentemente:
 
 ```sh
 mdadm --add /dev/md4 /dev/sda4
@@ -380,12 +380,11 @@ mdadm --detail /dev/md4
        1       8       18        1      active sync   /dev/sdb4
 ```
 
-Una volta che il RAID è stato ricostruito, effettua il mount della partizione (nell’esempio, `/dev/md4`) con il comando: 
+Una volta che il RAID è stato ricostruito, effettua il mount della partizione (nell’esempio, `/dev/md4`) con il comando:
 
 ```sh
 mount /dev/md4 /home
 ```
-
 
 ## Per saperne di più
 

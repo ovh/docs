@@ -93,7 +93,7 @@ root@ns3054662:/home# smartctl -a /dev/sdb
 >>> Long (extended) Self Test duration: 34237 seconds [570.6 minutes]
 ```
 
-Vous constatez ainsi que : 
+Vous constatez ainsi que :
 
 - le disque « **SDB** » est effectivement hors d'usage du fait d'erreurs non corrigées (« uncorrected errors ») ;
 - son « **Serial Number** » correspond bien à l'alerte reçue (via le datacenter ou tout autre outil de monitoring).
@@ -253,13 +253,13 @@ Afin d'illustrer le propos de ce guide, nous partons du principe que nous avons 
 > [!primary]
 >
 > Il est important de lancer le terminal de commande en tant qu'administrateur, afin de ne pas obtenir d'erreur.
-> 
+>
 
 Débutez par tester et vérifier le « **Serial Number** » du disque concerné. **Dans la capture ci-dessous, le stockage n'est pas réellement hors d'usage mais nous ferons comme si c'était le cas.**
 
 ![smart_sdb_windows](images/smart_sdb_windows.png){.thumbnail}
 
-Vous constatez ainsi que : 
+Vous constatez ainsi que :
 
 - le disque « **SDB** » est effectivement hors d'usage du fait d'erreurs non corrigées (« uncorrected errors ») ;
 - son « **Serial Number** » correspond bien à l'alerte reçue (via le datacenter ou tout autre outil de monitoring).

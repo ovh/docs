@@ -93,7 +93,7 @@ root@ns3054662:/home# smartctl -a /dev/sdb
 >>> Long (extended) Self Test duration: 34237 seconds [570.6 minutes]
 ```
 
-Hier sehen Sie, dass: 
+Hier sehen Sie, dass:
 
 - die Festplatte “**sdb**” aufgrund nicht korrigierter Fehler (“uncorrected errors”) fehlerhaft ist,
 - die “**Serial Number**” der Festplatte mit der Seriennummer aus der Alarm-Nachricht (über das Datacenter oder einem anderen Monitoring-Tool) übereinstimmt.
@@ -253,13 +253,13 @@ Wir gehen in dieser Anleitung zunächst davon aus, dass wir einen Alarm für die
 > [!primary]
 >
 > Es ist wichtig, dass Sie die Kommandozeile als Administrator ausführen, damit Sie keine Fehler erhalten.
-> 
+>
 
 Überprüfen Sie zuerst die “**Serial Number**” der betreffenden Festplatte. **Im unten stehenden Screenshot ist der Speicher eigentlich nicht fehlerhaft. Wie werden jedoch so fortfahren, als wäre das der Fall.**
 
 ![smart_sdb_windows](images/smart_sdb_windows.png){.thumbnail}
 
-Hier sehen Sie, dass: 
+Hier sehen Sie, dass:
 
 - die Festplatte “**sdb**” aufgrund nicht korrigierter Fehler (“uncorrected errors”) fehlerhaft ist,
 - die “**Serial Number**” der Festplatte mit der Seriennummer aus der Alarm-Nachricht (über das Datacenter oder einem anderen Monitoring-Tool) übereinstimmt.

@@ -118,7 +118,6 @@ I/O size (minimum/optimal): 512 bytes / 512 bytes
 Disk identifier: 0x150f6797
 ```
 
-
 Die Ausgabe zeigt, das `/dev/md2` 888,8 GB und `/dev/md4` 973,5 GB enthält. Über den Befehl “mount” erhalten Sie das Layout der Disk.
 
 ```sh
@@ -187,15 +186,14 @@ umount /dev/md4
 
 > [!warning]
 > Beachten Sie, dass, falls Sie mit dem Account `root` eingeloggt sind, folgende Nachricht erhalten können, wenn Sie versuchen, die Partition zu unmounten (in unserem Fall wird die Partition md4 in /home gemountet):
-> 
+>
 > <div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">umount: /home: target is busy</span> </pre></div>
 >
 > Wechseln Sie in diesem Fall zu einem anderen Root-Benutzer (in diesem Fall `debian`) und verwenden Sie folgenden Befehl:
-> 
+>
 > <div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">debian@ns000000:/$ sudo umount /dev/md4</span> </pre></div>
 >
 > Wenn Sie noch keine anderen User-Accounts haben, erstellen Sie einen.
-
 
 Als Ergebnis erhalten Sie:
 
@@ -297,7 +295,7 @@ Consistency Policy : bitmap
 
 ### RAID neu einrichten
 
-Wenn die Disk ersetzt wurde, kopieren Sie die Partitionstabelle einer funktionsfähigen Disk (in unserem Beispiel “sdb”) zur neuen Disk (“sda”): 
+Wenn die Disk ersetzt wurde, kopieren Sie die Partitionstabelle einer funktionsfähigen Disk (in unserem Beispiel “sdb”) zur neuen Disk (“sda”):
 
 **Für GPT Partitionen**
 
@@ -321,7 +319,7 @@ sfdisk -d /dev/sdb | sfdisk /dev/sda
 
 Der Befehl muss im folgenden Format sein: `sfdisk -d /dev/healthydisk | sfdisk /dev/newdisk`.
 
-Jetzt können Sie das RAID Array neu konfigurieren. Der nachstehende Code zeigt, wie das Layout der Partition `/dev/md4` mit der zuvor kopierten Partitionstabelle von “sda” wiederhergestellt werden kann: 
+Jetzt können Sie das RAID Array neu konfigurieren. Der nachstehende Code zeigt, wie das Layout der Partition `/dev/md4` mit der zuvor kopierten Partitionstabelle von “sda” wiederhergestellt werden kann:
 
 ``sh
 mdadm --add /dev/md4 /dev/sda4
@@ -337,6 +335,7 @@ md4 : active raid1 sda4[0] sdb4[1]
       bitmap: 0/8 pages [0KB], 65536KB chunk
 
 unused devices: <none>
+
 ```
 
 Überprüfen Sie die Details des RAID mit folgendem Befehl:
@@ -373,12 +372,11 @@ mdadm --detail /dev/md4
        1       8       18        1      active sync   /dev/sdb4
 ```
 
-Das RAID wurde neu eingerichtet. Mounten Sie die Partition (in diesem Beispiel `/dev/md4`) mit folgendem Befehl: 
+Das RAID wurde neu eingerichtet. Mounten Sie die Partition (in diesem Beispiel `/dev/md4`) mit folgendem Befehl:
 
 ```sh
 mount /dev/md4 /home
 ```
-
 
 ## Weiterführende Informationen
 

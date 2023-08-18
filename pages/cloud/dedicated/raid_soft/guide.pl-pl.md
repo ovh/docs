@@ -17,7 +17,7 @@ updated: 2023-08-21
 
 RAID (Redundant Array of Independent Disks) to narzędzie pozwalające zminimalizować ryzyko utraty danych zapisanych na serwerze poprzez ich replikację na wielu dyskach.
 
-Domyślny poziom RAID dla serwerów OVHcloud to RAID 1. Dzięki temu przestrzeń zajmowana przez dane zwiększa się dwukrotnie, natomiast wielkość użytkowanej przestrzeni dyskowej zmniejsza się o połowę. 
+Domyślny poziom RAID dla serwerów OVHcloud to RAID 1. Dzięki temu przestrzeń zajmowana przez dane zwiększa się dwukrotnie, natomiast wielkość użytkowanej przestrzeni dyskowej zmniejsza się o połowę.
 
 **W tym przewodniku wyjaśniamy, jak skonfigurować macierz RAID Twojego serwera w przypadku, gdy musi ona zostać odtworzona z powodu awarii lub uszkodzenia dysku.**
 
@@ -192,11 +192,11 @@ umount /dev/md4
 
 > [!warning]
 > Pamiętaj, że jeśli jesteś zalogowany jako użytkownik `root`, możesz uzyskać następujący komunikat podczas próby odmontowania partycji (w naszym przypadku, kiedy nasza partycja md4 jest zamontowana w /home):
-> 
+>
 > <div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">umount: /home: target is busy</span> </pre></div>
 >
 > W tym przypadku należy wylogować się jako użytkownik root i zalogować się jako użytkownik lokalny (w naszym przypadku, `debian`) i użyć następującej komendy:
-> 
+>
 > <div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">debian@ns000000:/$ sudo umount /dev/md4</span> </pre></div>
 >
 > Jeśli nie posiadasz lokalnego użytkownika, musisz go utworzyć.
@@ -301,7 +301,7 @@ Consistency Policy : bitmap
 
 ### Rekonstrukcja RAID
 
-Po wymianie dysku skopiuj tablicę partycji ze zdrowego dysku, (w tym przykładzie dysk “sdb”) do nowego dysku “sda” za pomocą następującego polecenia: 
+Po wymianie dysku skopiuj tablicę partycji ze zdrowego dysku, (w tym przykładzie dysk “sdb”) do nowego dysku “sda” za pomocą następującego polecenia:
 
 **Dla partycji GPT**
 
@@ -319,7 +319,7 @@ sgdisk -G /dev/sda
 
 **Dla partycji MBR**
 
-Po wymianie dysku skopiuj tablicę partycji ze zdrowego dysku, (w tym przykładzie dysk “sdb”) do nowego dysku “sda” za pomocą następującego polecenia: 
+Po wymianie dysku skopiuj tablicę partycji ze zdrowego dysku, (w tym przykładzie dysk “sdb”) do nowego dysku “sda” za pomocą następującego polecenia:
 
 ```sh
 sfdisk -d /dev/sdb | sfdisk /dev/sda 
@@ -327,7 +327,7 @@ sfdisk -d /dev/sdb | sfdisk /dev/sda
 
 Polecenie musi mieć następujący format: `sfdisk -d /dev/healthydisk | sfdisk /dev/newdisk`.
 
-Teraz możesz odtworzyć macierz RAID. Poniższy fragment kodu pokazuje, jak odtworzyć układ partycji `/dev/md4` za pomocą skopiowanej tablicy partycji “sda”: 
+Teraz możesz odtworzyć macierz RAID. Poniższy fragment kodu pokazuje, jak odtworzyć układ partycji `/dev/md4` za pomocą skopiowanej tablicy partycji “sda”:
 
 ```sh
 mdadm —add /dev/md4 /dev/sda4
@@ -379,7 +379,7 @@ mdadm --detail /dev/md4
        1       8       18        1      active sync   /dev/sdb4
 ```
 
-Macierz RAID została odtworzona. Zamontuj partycję (w tym przykładzie `/dev/md4`) za pomocą polecenia: 
+Macierz RAID została odtworzona. Zamontuj partycję (w tym przykładzie `/dev/md4`) za pomocą polecenia:
 
 ```sh
 mount /dev/md4 /home

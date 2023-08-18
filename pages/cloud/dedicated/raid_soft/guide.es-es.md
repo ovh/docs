@@ -192,15 +192,14 @@ umount /dev/md4
 
 > [!warning]
 > Tenga en cuenta que, si está conectado como usuario `root`, puede obtener el siguiente mensaje cuando intente desmontar la partición (en nuestro caso, la partición md4 está montada en /home):
-> 
+>
 > <div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">umount: /home: target is busy</span> </pre></div>
 >
 > En ese caso, deberá desconectarse como usuario root y conectarse como usuario local (en nuestro caso, `debian`) y utilizar el siguiente comando:
-> 
+>
 > <div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">debian@ns000000:/$ sudo umount /dev/md4</span> </pre></div>
 >
 > Si no tiene un usuario local, debe crear uno.
-
 
 Obtendrá la siguiente respuesta:
 
@@ -320,7 +319,7 @@ sgdisk -G /dev/sda
 
 **Para las particiones MBR**
 
-Una vez sustituido el disco, copie la tabla de particiones desde un disco sano (**sdb** en el ejemplo) en la nueva partición (**sda**) con el siguiente comando: 
+Una vez sustituido el disco, copie la tabla de particiones desde un disco sano (**sdb** en el ejemplo) en la nueva partición (**sda**) con el siguiente comando:
 
 ```sh
 sfdisk -d /dev/sdb | sfdisk /dev/sda 
@@ -328,7 +327,7 @@ sfdisk -d /dev/sdb | sfdisk /dev/sda
 
 El comando debe tener el siguiente formato: `sfdisk -d /dev/healthydisk | sfdisk /dev/newdisk`.
 
-Ya puede reconstruir el RAID. El siguiente fragmento de código muestra cómo reconstruir la disposición de la partición **/dev/md4** con la tabla de particiones « sda » anteriormente copiada: 
+Ya puede reconstruir el RAID. El siguiente fragmento de código muestra cómo reconstruir la disposición de la partición **/dev/md4** con la tabla de particiones « sda » anteriormente copiada:
 
 ```sh
 mdadm --add /dev/md4 /dev/sda4
@@ -380,12 +379,11 @@ mdadm --detail /dev/md4
        1       8       18        1      active sync   /dev/sdb4
 ```
 
-Una vez reconstruido el RAID, monte la partición (**/dev/md4**, en el ejemplo) con el siguiente comando: 
+Una vez reconstruido el RAID, monte la partición (**/dev/md4**, en el ejemplo) con el siguiente comando:
 
 ```sh
 mount /dev/md4 /home
 ```
-
 
 ## Más información
 

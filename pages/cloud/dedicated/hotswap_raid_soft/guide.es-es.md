@@ -97,7 +97,7 @@ root@ns3054662:/home# smartctl -a /dev/sdb
 >>> Long (extended) Self Test duration: 34237 seconds [570.6 minutes]
 ```
 
-En la respuesta al comando anterior puede comprobar lo siguiente: 
+En la respuesta al comando anterior puede comprobar lo siguiente:
 
 - el disco **sdb** está fuera de servicio debido a que presenta errores no corregidos (*uncorrected errors*);
 - su serial number se corresponde con el de la alerta recibida (enviada desde el datacenter o a través de cualquier otra herramienta de monitorización).
@@ -257,13 +257,13 @@ En esta guía partiremos del supuesto de que el cliente ha recibido una alerta i
 > [!primary]
 >
 > Es importante abrir el terminal como administrador para evitar errores.
-> 
+>
 
 En primer lugar, compruebe el **serial number** (número de serie) del disco dañado. **En la siguiente captura, el almacenamiento en realidad no está fuera de servicio.**
 
 ![smart_sdb_windows](images/smart_sdb_windows.png){.thumbnail}
 
-En la respuesta al comando anterior puede comprobar lo siguiente: 
+En la respuesta al comando anterior puede comprobar lo siguiente:
 
 - el disco **sdb** está fuera de servicio debido a que presenta errores no corregidos (*uncorrected errors*);
 - su serial number se corresponde con el de la alerta recibida (enviada desde el datacenter o a través de cualquier otra herramienta de monitorización).
