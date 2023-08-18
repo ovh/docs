@@ -1,7 +1,7 @@
 ---
 title: Premiers pas avec NSX
 excerpt: "Découvrez NSX, la solution de gestion de réseau logicielle Software Defined Networking (SDN) fournie par VMware"
-updated: 2023-06-14
+updated: 2023-08-18
 ---
 
 **Dernière mise à jour le 14/06/2023**
