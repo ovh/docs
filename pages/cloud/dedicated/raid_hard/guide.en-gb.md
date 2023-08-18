@@ -145,24 +145,29 @@ In this example, **/dev/sda** is the first RAID, and **/dev/sdb** is the second.
 > [!warning]
 >
 > If one of your hard drives is showing SMART errors, you should perform a full backup of your data as soon as possible and contact our support team. Our support team will need the slot number and device ID in order to identify the faulty disk.
-> 
+>
 
 #### Step 3: Verify the health of the RAID controller
-To make sure, your RAID controller is working correctly, you can list all information with 
+
+To make sure, your RAID controller is working correctly, you can list all information with
+
 ```sh
 MegaCli -AdpAllInfo -aALL
 ```
 
 The most important section of the output is the error counter:
-```
+
+```none
 Error Counters
                 ================
 Memory Correctable Errors   : 0
 Memory Uncorrectable Errors : 0
 ```
+
 If the counted errors are more than zero, you should create a backup of your data and contact the support with the full output. Then, the support will schedule an intervention for the replacement of the RAID controller.
 
 For a succinct output of only the error counters, the command can be expanded by a grep:
+
 ```sh
 MegaCli -AdpAllInfo -aALL | grep "Errors"
 Memory Correctable Errors   : 0
@@ -209,7 +214,6 @@ MegaCli -PDRbld -ShowProg -PhysDrv [EncID:SlotID] -aALL (Or : storcli /c0/eEncID
 
 The command will retrieve the enclosure ID and slot ID, as shown above.
 
-
 #### Step 5a: Using CacheCade
 
 > [!primary]
@@ -232,9 +236,11 @@ MegaCli -CfgCacheCadeDsply -a0 | grep "Associated LDs"
 #### Step 5b: Checking the status of the backup battery unit
 
 to receive a full list of status parameters for the BBU, use this command:
+
 ```sh
 MegaCli -AdpBbuCmd -aALL
 ```
+
 the most important value to check is if `Battery State` is **Optimal**. If there are indicators of a failing battery, create a backup of your data and provide the outpout of this command to the support, when creating the Ticket.
 
 ### Using the LSI RAID controller
@@ -415,9 +421,10 @@ RAID actions menu, select an option:  [1-99 or e/p/w or 0 to quit] 0
 
 > [!alert]
 >
-> This RAID controller card is deprecated. We highly recommend that you contact OVH Support to schedule an intervention to replace the RAID controller with an LSI, as 3ware RAID controllers are proven to be rather unstable. This type of intervention requires a reinstallation of your server. Be sure to backup your data first.
+> This RAID controller card is deprecated. We highly recommend that you contact OVHcloud Support to schedule an intervention to replace the RAID controller with an LSI, as 3ware RAID controllers are proven to be rather unstable. This type of intervention requires a reinstallation of your server. Be sure to backup your data first.
 > 
 
 ## Go further
 
+[Configuring software RAID](/pages/cloud/dedicated/raid_soft){.external}
 Join our community of users on <https://community.ovh.com/en/>.

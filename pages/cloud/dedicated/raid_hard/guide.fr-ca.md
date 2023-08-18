@@ -13,6 +13,8 @@ updated: 2023-08-21
 
 Sur un serveur disposant d'une configuration RAID matériel, la matrice RAID est gérée par un composant physique appelé contrôleur RAID.
 
+<iframe width="560" height="315" src="https://www.youtube.com/embed/t_BL_uOXQVA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 ## Prérequis
 
 - Posséder un [serveur dédié](https://www.ovh.com/fr/serveurs_dedies/){.external} avec une configuration RAID matériel.
@@ -128,6 +130,8 @@ smartctl -d megaraid,N -a /dev/sdX
 ```
 
 Dans cet exemple, `/dev/sda` est le premier RAID et `/dev/sdb` est le second.
+
+Dans certaines situations, vous pouvez recevoir ce résultat :
 
 > [!primary]
 >

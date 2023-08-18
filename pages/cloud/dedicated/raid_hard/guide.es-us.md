@@ -9,6 +9,7 @@ updated: 2023-08-21
 **Última actualización: 21/08/2023**
 
 ## Requisitos
+
 - Tener acceso *root* por SSH.
 - Tener un servidor con RAID por hardware.
 

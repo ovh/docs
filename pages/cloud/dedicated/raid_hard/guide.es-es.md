@@ -8,6 +8,11 @@ updated: 2023-08-21
 <!-- markdownlint-disable-next-line MD036 -->
 **Última actualización: 21/08/2023**
 
+## Requisitos
+
+- Tener acceso *root* por SSH.
+- Tener un servidor con RAID por hardware.
+
 > [!warning]
 >
 > Es peligroso manipular los comandos MegaCli y lsiutil si no está seguro de cómo hacerlo, ya que corre el riesgo de perder sus datos. Por ese motivo, es importante hacer un backup antes de realizar cualquier operación.
@@ -218,5 +223,5 @@ Para comprobar si el RAID se está resincronizando y seguir el progreso de la re
 
 > [!alert]
 >
-> Esta controladora RAID está obsoleta y es inestable. Le recomendamos encarecidamente que contacte con el soporte de OVH para planificar una intervención de sustitución de esta controladora RAID por una LSI. Este tipo de intervención requiere la reinstalación del servidor, por lo que deberá haber realizado previamente un backup de sus datos.
+> Esta controladora RAID está obsoleta y es inestable. Le recomendamos encarecidamente que contacte con el soporte de OVHcloud para planificar una intervención de sustitución de esta controladora RAID por una LSI. Este tipo de intervención requiere la reinstalación del servidor, por lo que deberá haber realizado previamente un backup de sus datos.
 > 
