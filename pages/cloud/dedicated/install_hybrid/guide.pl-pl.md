@@ -4,6 +4,7 @@ excerpt: 'Dowiedz się, jak wybrać odpowiednią grupę dysków przeznaczoną do
 updated: 2023-08-21
 ---
 
+<!-- markdownlint-disable-next-line MD036 -->
 **Ostatnia aktualizacja z dnia 21-08-2023**
 
 ## Wprowadzenie
@@ -13,9 +14,9 @@ Możesz dzierżawić od OVH [serwery dedykowane](https://www.ovh.pl/serwery_dedy
 **Niniejszy przewodnik wyjaśnia, jak wybrać grupę dysków, na której ma zostać zainstalowany system operacyjny.**
 
 > [!warning]
-> 
+>
 > OVH oddaje do Twojej dyspozycji usługi, za które przejmujesz odpowiedzialność. Firma OVH nie ma dostępu do Twoich serwerów, nie pełni funkcji administratora i w związku z tym nie będzie mogła udzielić Ci wsparcia. Zarządzanie oprogramowaniem i wdrażanie środków bezpieczeństwa należy do klienta.
-> 
+>
 > Oddajemy w Twojej ręce niniejszy przewodnik, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku problemów z administrowaniem, użytkowaniem czy zabezpieczeniem serwera rekomendujemy skorzystanie z usług wyspecjalizowanej firmy. Więcej informacji znajduje się w sekcji “Sprawdź również”.
 >
 
@@ -28,7 +29,7 @@ Możesz dzierżawić od OVH [serwery dedykowane](https://www.ovh.pl/serwery_dedy
 > [!warning]
 >
 > Procedura ta działa tylko w przypadku systemów Linux (z wyjątkiem systemów ESXi oraz XenServer) i wyłącznie w konfiguracji RAID Soft, NoRAID lub RAID Hard (w konfiguracji domyślnej).
-> 
+>
 
 ## W praktyce
 
@@ -39,7 +40,7 @@ Po zalogowaniu do API na stronie <https://api.ovh.com/console/> możesz uzyskać
 > [!api]
 >
 > @api {GET} /dedicated/server
-> 
+>
 
 Wyświetl nazwę serwera hybrydowego, klikając Execute`{.action}:
 
@@ -47,14 +48,14 @@ Wyświetl nazwę serwera hybrydowego, klikając Execute`{.action}:
 
 ### Uzyskanie parametru DiskGroupId
 
-`DiskGroupId` jest elementem umożliwiającym określenie grupy dysków, na którym zostanie zainstalowany system operacyjny. 
+`DiskGroupId` jest elementem umożliwiającym określenie grupy dysków, na którym zostanie zainstalowany system operacyjny.
 
 Poniżej wywołanie API, które należy zastosować:
 
 > [!api]
 >
 > @api {GET} /dedicated/server/{serviceName}/specifications/hardware
-> 
+>
 
 Wprowadź uzyskaną wcześniej nazwę serwera w polu **serviceName**, następnie kliknij przycisk `Execute`{.action}. Wyświetlą się wówczas informacje o sprzęcie, z jakiego składa się Twój serwer. Odszukaj odpowiedni `diskGroupId` w części `diskGroups`.
 
@@ -71,7 +72,7 @@ W tym celu wywołaj API, jak pokazano poniżej, aby pobrać listę kompatybilnyc
 > [!api]
 >
 > @api {GET} /dedicated/server/{serviceName}/install/compatibleTemplates
-> 
+>
 
 ![Kompatybilne systemy](images/templates-01.png){.thumbnail}
 
@@ -80,7 +81,7 @@ Zapisz nazwę szablonu odpowiadającego wybranemu przez Ciebie systemowi operacy
 > [!api]
 >
 > @api {POST} /dedicated/server/{serviceName}/install/start
-> 
+>
 
 Wprowadź nazwę Twojego serwera w polu **serviceName**, wprowadź diskGroupId (2) w polu **diskGroupId**, następnie wprowadź nazwę szablonu w polu **templateName** (wszystkie pozostałe pola są opcjonalne).
 
@@ -93,7 +94,7 @@ Twój system operacyjny zostanie teraz zainstalowany. Możesz sprawdzić postęp
 > [!api]
 >
 > @api {GET} /dedicated/server/{serviceName}/install/status
-> 
+>
 
 ## Sprawdź również
 

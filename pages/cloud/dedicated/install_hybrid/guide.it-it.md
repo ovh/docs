@@ -4,6 +4,7 @@ excerpt: 'Come scegliere un gruppo di dischi specifico per installare il tuo sis
 updated: 2023-08-21
 ---
 
+<!-- markdownlint-disable-next-line MD036 -->
 **Ultimo aggiornamento: 21/08/2023**
 
 ## Obiettivo
@@ -13,9 +14,9 @@ Alcuni [server dedicati OVH](https://www.ovh.it/server_dedicati/){.external} dis
 **Questa guida ti mostra come definire il gruppo di dischi su cui installare il sistema operativo.**
 
 > [!warning]
-> 
+>
 > OVH mette a disposizione i server, ma non è autorizzata ad accedervi e non si occupa quindi della loro amministrazione. Garantire quotidianamente la gestione software e la sicurezza di queste macchine è quindi responsabilità dell’utente.
-> 
+>
 > Questa guida ti aiuta a utilizzare un cluster di dischi sulla tua macchina. Tuttavia, in caso di difficoltà o dubbi relativi ad amministrazione e sicurezza, ti consigliamo di contattare un fornitore specializzato. Per maggiori informazioni consulta la sezione “Per saperne di più”.
 >
 
@@ -28,7 +29,7 @@ Alcuni [server dedicati OVH](https://www.ovh.it/server_dedicati/){.external} dis
 > [!warning]
 >
 > Questa procedura è valida soltanto per i sistemi Linux (ESXi e XenServer esclusi) e su configurazioni in RAID Soft, NoRAID o RAID Hard (configurazione di default).
-> 
+>
 
 ## Procedura
 
@@ -39,7 +40,7 @@ Una volta effettuato l’accesso su <https://api.ovh.com/console/>, recupera il 
 > [!api]
 >
 > @api {GET} /dedicated/server
-> 
+>
 
 In seguito, clicca su `Execute`{.action} per recuperare il nome del tuo server ibrido:
 
@@ -47,14 +48,14 @@ In seguito, clicca su `Execute`{.action} per recuperare il nome del tuo server i
 
 ### Recupera il DiskGroupId
 
-Il `DiskGroupId` è l’elemento che consente di definire il gruppo di dischi su cui verrà installato il sistema operativo. 
+Il `DiskGroupId` è l’elemento che consente di definire il gruppo di dischi su cui verrà installato il sistema operativo.
 
 Per effettuare l’operazione, utilizza questa chiamata API:
 
 > [!api]
 >
 > @api {GET} /dedicated/server/{serviceName}/specifications/hardware
-> 
+>
 
 Sostituisci **{serviceName}** con il nome del tuo server e clicca su `Execute`{.action}. Visualizzi le informazioni relative all’hardware del tuo server: scegli il `diskGroupId` tra quelli disponibili in `diskGroups` (di default, il sistema operativo è installato sul `diskGroupId 1`).
 
@@ -69,7 +70,7 @@ Per visualizzare l’elenco dei sistemi operativi compatibili, utilizza questa c
 > [!api]
 >
 > @api {GET} /dedicated/server/{serviceName}/install/compatibleTemplates
-> 
+>
 
 ![Modelli compatibili:](images/templates-01.png){.thumbnail}
 
@@ -78,7 +79,7 @@ Annota il modello corrispondente al sistema operativo scelto ed esegui questa ch
 > [!api]
 >
 > @api {POST} /dedicated/server/{serviceName}/install/start
-> 
+>
 
 Compila i campi **serviceName**, **diskGroupId** e **TemplateName** con i dati recuperati negli step precedenti. Tutti gli altri campi sono facoltativi.
 
@@ -91,7 +92,7 @@ A questo punto inizierà l’installazione del sistema operativo: per verificare
 > [!api]
 >
 > @api {POST} /dedicated/server/{serviceName}/install/start
-> 
+>
 
 ## Per saperne di più
 

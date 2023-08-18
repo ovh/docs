@@ -4,6 +4,7 @@ excerpt: 'Learn here how to choose a disk group to install your operating system
 updated: 2023-08-21
 ---
 
+<!-- markdownlint-disable-next-line MD036 -->
 **Last updated 21st August 2023**
 
 ## Objective
@@ -21,28 +22,28 @@ OVH offers some [Dedicated Servers](https://www.ovh.ie/dedicated_servers/){.exte
 > [!warning]
 >
 > This procedure only works for Linux systems (except ESXi, and XenServer), and only for SoftRAID, NoRAID, or HardRAID (default only) configuration.
-> 
+>
 
 ## Instructions
 
-### Step 1: Log in to the OVH API.
+### Step 1: Log in to the OVH API
 
 Go to <https://api.ovh.com/console/> and click the `Login`{.action} in the top-right corner of the page. Then, on the following page, log in with the credentials of your OVH account.
 
-### Step 2: Retrieve the server name.
+### Step 2: Retrieve the server name
 
 Next, go to the following API call:
 
 > [!api]
 >
 > @api {GET} /dedicated/server
-> 
+>
 
 Next, retrieve the name of your hybrid server by clicking `Execute`{.action}:
 
 ![Available services](images/services-01.png){.thumbnail}
 
-### Step 3: Retrieve the diskGroupId.
+### Step 3: Retrieve the diskGroupId
 
 The diskGroupId is what will allow us to define the disk group on which we want the operating system to be installed.
 
@@ -51,7 +52,7 @@ Go to the following API call:
 > [!api]
 >
 > @api {GET} /dedicated/server/{serviceName}/specifications/hardware
-> 
+>
 
 Enter the name of your server in the **serviceName** field, and click the `Execute`{.action} button. You will then see your server's hardware information.
 Note down the diskGroupId, which you will find in diskGroups.
@@ -60,7 +61,7 @@ By default, the operating system is installed on the diskGroupId 1.
 
 ![Hybrid](images/hybrid-01.png){.thumbnail}
 
-### Step 4: Start the installation.
+### Step 4: Start the installation
 
 Once you have the diskGroupId, you can proceed to the final step of installing your operating system.
 
@@ -69,7 +70,7 @@ To do this, go to the following API call to retrieve a list of compatible operat
 > [!api]
 >
 > @api {GET} /dedicated/server/{serviceName}/install/compatibleTemplates
-> 
+>
 
 ![Compatible templates](images/templates-01.png){.thumbnail}
 
@@ -78,7 +79,7 @@ Make a note of the template name for your chosen operating system, then go to th
 > [!api]
 >
 > @api {POST} /dedicated/server/{serviceName}/install/start
-> 
+>
 
 Enter your server's reference into the **serviceName** field, enter the diskGroupId (2) into the **diskGroupId** field, and enter the template name into the **templateName** field (all other fields are optional).
 
@@ -91,7 +92,7 @@ Your operating system will now be installed. You can check the progress of the i
 > [!api]
 >
 > @api {GET} /dedicated/server/{serviceName}/install/status
-> 
+>
 
 ## Go further
 

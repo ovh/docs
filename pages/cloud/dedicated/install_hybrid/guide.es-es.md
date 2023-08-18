@@ -4,6 +4,7 @@ excerpt: 'Cómo elegir un conjunto específico de discos para instalar el sistem
 updated: 2023-08-21
 ---
 
+<!-- markdownlint-disable-next-line MD036 -->
 **Última actualización: 21/08/2023**
 
 ## Objetivo
@@ -13,9 +14,9 @@ OVH le ofrece la posibilidad de contratar [servidores dedicados](https://www.ovh
 **Esta guía explica cómo especificar el conjunto de discos en el que queremos instalar el sistema operativo.**
 
 > [!warning]
-> 
+>
 > La responsabilidad sobre los servicios que OVH pone a su disposición recae íntegramente en usted. Nuestros técnicos no son los administradores de las máquinas, ya que no tienen acceso a ellas. Por lo tanto, la gestión del software y la seguridad le corresponde a usted.
-> 
+>
 > Esta guía le ayudará a realizar las operaciones más habituales. No obstante, si tiene problemas o dudas sobre la administración, la utilización o la seguridad de su servidor, le recomendamos que contacte con un proveedor de servicios especializado. Para más información, consulte el apartado «Más información» de esta guía.
 >
 
@@ -28,7 +29,7 @@ OVH le ofrece la posibilidad de contratar [servidores dedicados](https://www.ovh
 > [!warning]
 >
 > Este procedimiento solo funciona en los sistemas Linux (excepto sistemas ESXi y XenServer) y en configuraciones SoftRAID, NoRAID o HardRAID (configuración por defecto).
-> 
+>
 
 ## Procedimiento
 
@@ -39,7 +40,7 @@ Una vez conectado a la [API de OVH](https://api.ovh.com/){.external}, descienda 
 > [!api]
 >
 > @api {GET} /dedicated/server
-> 
+>
 
 Haga clic en `Execute`{.action} e identifique el nombre del servidor híbrido.
 
@@ -47,14 +48,14 @@ Haga clic en `Execute`{.action} e identifique el nombre del servidor híbrido.
 
 ### Obtener el diskGroupId
 
-El **diskGroupId** le permitirá indicar el conjunto de discos en el que se instalará el sistema operativo. 
+El **diskGroupId** le permitirá indicar el conjunto de discos en el que se instalará el sistema operativo.
 
 Para obtenerlo, vaya a la siguiente llamada a la API:
 
 > [!api]
 >
 > @api {GET} /dedicated/server/{serviceName}/specifications/hardware
-> 
+>
 
 Introduzca en el campo **serviceName** el nombre del servidor obtenido anteriormente y haga clic en el botón `Execute`{.action}. Se mostrará la información relativa al hardware del servidor. Localice el **diskGroupId** en el apartado **diskGroups**.
 
@@ -71,7 +72,7 @@ Realice la siguiente llamada a la API para ver la lista de sistemas operativos c
 > [!api]
 >
 > @api {GET} /dedicated/server/{serviceName}/install/compatibleTemplates
-> 
+>
 
 ![Plantillas compatibles](images/templates-01.png){.thumbnail}
 
@@ -80,7 +81,7 @@ Anote el nombre de la plantilla correspondiente al sistema operativo que haya el
 > [!api]
 >
 > @api {POST} /dedicated/server/{serviceName}/install/start
-> 
+>
 
 Introduzca la referencia del servidor en el campo **serviceName**, el diskGroupId (1) en el campo **diskGroupId** y, por último, el nombre de la plantilla en el campo **templateName**.
 
@@ -93,7 +94,7 @@ El sistema operativo se instalará. Puede consultar el progreso de la operación
 > [!api]
 >
 > @api {GET} /dedicated/server/{serviceName}/install/status
-> 
+>
 
 ## Más información
 
