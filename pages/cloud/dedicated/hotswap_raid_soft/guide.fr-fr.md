@@ -1,10 +1,13 @@
 ---
-title: 'Remplacer à chaud un disque sur un serveur en RAID logiciel'
-excerpt: 'Découvrez les principales étapes pour remplacer à chaud un disque sur un serveur en RAID logiciel'
-updated: 2016-11-21
+title: Remplacement à chaud - RAID logiciel
+slug: hotswap-raid-soft
+excerpt: Retrouvez ici comment remplacer un disque à chaud sur un serveur avec un RAID logiciel
+section: RAID & disques
+updated: 2023-08-21
 ---
 
-**Dernière mise à jour le 21/11/2016**
+<!-- markdownlint-disable-next-line MD036 -->
+**Dernière mise à jour le 21/08/2023**
 
 ## Objectif
 

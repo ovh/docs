@@ -1,10 +1,13 @@
 ---
-title: Hot Swap - Raid Hard
-excerpt: Here are the main steps to follow to allow the replacement of a hot swap on a Raid Hardware server.
-updated: 2022-11-16
+title: Hot Swap - Hardware RAID
+slug: hotswap-raid-hard
+excerpt: Find out how to hot-swap a disk on a server with a hardware RAID configuration
+section: RAID and disks
+updated: 2023-08-21
 ---
 
-**Last updated 16th November 2022**
+<!-- markdownlint-disable-next-line MD036 -->
+**Last updated 21st August 2023**
 
 ## Requirements
 Hot swapping is only possible on the server ranges mHG, HG, and bHG.

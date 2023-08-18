@@ -1,10 +1,13 @@
 ---
-title: Remplacement à chaud - Raid Matériel
-excerpt: Retrouvez ici les principales étapes à suivre pour permettre le remplacement d’un disque à chaud sur un serveur en Raid Materiel.
-updated: 2022-11-16
+title: Remplacement à chaud - RAID Matériel
+slug: hotswap-raid-hard
+excerpt: Retrouvez ici comment remplacer un disque à chaud sur un serveur avec un RAID matériel
+section: RAID & disques
+updated: 2023-08-21
 ---
 
-**Dernière mise à jour le 16/11/2022**
+<!-- markdownlint-disable-next-line MD036 -->
+**Dernière mise à jour le 21/08/2023**
 
 ## Prérequis
 Le remplacement à chaud n'est possible que sur les gammes de serveur mHG, HG, et bHG.
