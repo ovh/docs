@@ -1,7 +1,7 @@
 ---
 title: Premiers pas avec NSX
 excerpt: "Découvrez NSX, la solution de gestion de réseau logicielle Software Defined Networking (SDN) fournie par VMware"
-updated: 2023-06-14
+updated: 2023-08-18
 ---
 
 **Dernière mise à jour le 14/06/2023**
@@ -53,7 +53,7 @@ Depuis la page d'accueil de votre cluster, cliquez sur l'icône `NSX`{.action}.
 Saisissez vos informations d'identification et cliquez sur `LOG IN`{.action}.
 
 > [!warning]
-> Pour s'authentifier sur l'interface NSX, il faut utiliser un compte fourni par OVHcloud suivi du nom FQDN de votre cluster sous la forme `admin@pcc-xxxxx.ovh.xx`. 
+> Pour s'authentifier sur l'interface NSX, il faut utiliser un compte fourni par OVHcloud. Veillez à ce que le nom du PCC (FQDN, sous la forme `pcc-x-x-x-x.ovh.xx`) soit selectionné dans le formulaire de connexion. 
 >
 
 ![01 NSX Connection 02](images/01-nsxt-connection02.png){.thumbnail}
