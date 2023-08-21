@@ -4,8 +4,6 @@ excerpt: Discover the capabilities and limitations of Public Cloud Databases for
 updated: 2023-08-17
 ---
 
-**Last updated April 24th, 2023**
-
 ## Objective
 
 This page provides the technical capabilities and limitations of the Public Cloud Databases for Kafka MirrorMaker offer.

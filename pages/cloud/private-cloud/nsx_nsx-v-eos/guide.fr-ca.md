@@ -53,10 +53,10 @@ Pour créer vos réseaux VLAN, vous pouvez suivre cette documentation : [Créati
 Vous devrez ensuite désactiver NSX-v. Vous serez notifié lorsque le processus de désactivation sera disponible.
 Après les opérations précédentes, vous pouvez maintenant migrer vos Machines Virtuelles des VXLAN vers les DVS vRACK.
 
-Depuis vue Réseaux sur la console vSphere UI, faire un clique droit sur le portgroup VXLAN où réside vos Machines Virtuelles et sélectionnez `Migrer les VM vers un autre réseau...`.
+Depuis la vue `Réseaux`{.action} sur la console vSphere UI, faire un cliv droit sur le portgroup VXLAN où résident vos Machines Virtuelles et sélectionnez `Migrer les VM vers un autre réseau...`{.action}.
 
 > [!primary]
-> Dans cette exemple, nous allons migrer les VMs vers le portgroup VLAN10 qui se trouve sur le vRACK. Vous devez migrer toutes les VM vers des portgroups pour pouvoir désactiver NSX-v ( ou que OVHcloud détecte un non usage de NSX-v).
+> Dans cet exemple, nous allons migrer les VMs vers le portgroup VLAN10 qui se trouve sur le vRACK. Vous devez migrer toutes les VM vers des portgroups pour pouvoir désactiver NSX-v (ou pour que OVHcloud détecte un non usage de NSX-v).
 
 ![NSX DVS](images/migration.gif){.thumbnail}
 
@@ -79,12 +79,12 @@ Le logiciel NSX est activé au niveau du Virtual Datacenter (vDC). Afin de migre
 
 La documentation pour migrer vers NSX est disponible ici: [vDC Migration](/pages/cloud/private-cloud/service-migration-vdc)
 
-Nos équipes du support et [nos experts de l'équipe Professional Services](https://www.ovhcloud.com/fr/professional-services/) pourront vous fournir une assistance.
+Nos équipes du support et [nos experts de l'équipe Professional Services](https://www.ovhcloud.com/fr-ca/professional-services/) pourront vous fournir une assistance.
 
 ## Aller plus loin <a name="gofurther"></a>
 
 [Premiers pas avec NSX](/pages/cloud/private-cloud/nsx-01-first-steps)
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr-ca/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

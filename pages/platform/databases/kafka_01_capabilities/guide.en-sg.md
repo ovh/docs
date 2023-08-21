@@ -1,10 +1,9 @@
 ---
 title: Kafka - Capabilities and Limitations
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for Kafka
-updated: 2023-05-03
+updated: 2023-08-17
 ---
 
-**Last updated May 3rd, 2023**
 
 ## Objective
 

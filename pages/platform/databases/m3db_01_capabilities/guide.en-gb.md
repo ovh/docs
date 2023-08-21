@@ -4,7 +4,6 @@ excerpt: Discover the capabilities and limitations of Public Cloud Databases for
 updated: 2023-08-17
 ---
 
-**Last updated May 23rd, 2023**
 
 ## Objective
 

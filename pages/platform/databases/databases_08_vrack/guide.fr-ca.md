@@ -6,7 +6,6 @@ routes:
 updated: 2023-08-17
 ---
 
-**Last updated 7th July 2023**
 
 ## Objective
 
