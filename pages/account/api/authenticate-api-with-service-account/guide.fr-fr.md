@@ -17,7 +17,7 @@ Pour réaliser des automatisations sur vos infrastructures, vous devez fournir d
 
 Cela peut vous permettre de :
 
-- commander ou de résilier automatiquement certains produits ;
+- commander ou résilier automatiquement certains produits ;
 - gérer votre facturation ;
 - gérer les infrastructures de vos produits ;
 - fournir à votre monitoring des informations issues de nos infrastructures ;
