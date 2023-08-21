@@ -79,6 +79,7 @@
         + [Managed Private Registry - Responsibility model](platform/private-registry/responsibility-model)
         + [Hosted Exchange - Shared Responsibility](web/microsoft-collaborative-solutions/responsibility-model)
         + [Email Pro - Shared Responsibility](web/emails-pro/responsibility_model)
+        + [Domains - Shared Responsbility](web/domains/responsibility_model_domains)
 + Bare Metal Cloud
     + [Dedicated Servers](bare-metal-cloud-dedicated-servers)
         + [Getting started](bare-metal-cloud-dedicated-servers-getting-started)
@@ -922,6 +923,7 @@
         + [Domain names](web-cloud-domains-domain-names)
             + [General guides](web-cloud-domains-domain-names-general-guides)
                 + [Redirecting a domain name managed by OVHcloud](web/domains/redirect_domain_name)
+                + [Domains - Shared Responsbility](web/domains/responsibility_model_domains)
             + [Changing a domain name owner (trade)](web-cloud-domains-domain-names-changing-a-domain-name-owner-trade)
                 + [Changing the owner of a domain name](web/domains/trade_domain)
                 + [Changer le propriétaire d’un domaine avec une Demande d'Opération AFNIC (DOA)](web/domains/trade_doa)
