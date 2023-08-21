@@ -103,7 +103,8 @@ Vous pouvez également vous connecter à votre hébergement via [FTP](/pages/web
 
 Ce message indique que le fichier « .ovhconfig » est inexistant ou invalide pour pouvoir installer votre « module en 1 clic ». Ce fichier contient la version de PHP et l'environnement d'exécution appliqués à votre hébergement web.
 
-Il est recommandé d'utiliser la version de PHP la plus récente possible. Si vous disposez d'autres sites web sur votre hébergement web, assurez-vous, **avant** de changer la configuration du fichier « .ovhconfig », que ces derniers sont compatibles avec la nouvelle version de PHP et/ou le nouvel environnement d'exécution que vous allez appliquer sur votre hébergement web.
+Il est recommandé d'utiliser la version de PHP la plus récente possible. **Avant** de changer la configuration du fichier « .ovhconfig », si vous disposez d'autres sites web sur votre hébergement web, assurez-vous que ces derniers sont compatibles avec la nouvelle version de PHP et/ou le nouvel environnement d'exécution que vous allez appliquer sur votre hébergement web.
+
 
 Pour vérifier cette configuration, consultez nos guides sur le sujet :
 
