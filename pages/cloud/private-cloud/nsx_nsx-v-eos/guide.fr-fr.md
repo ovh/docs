@@ -53,10 +53,10 @@ Pour créer vos réseaux VLAN, vous pouvez suivre cette documentation : [Créati
 Vous devrez ensuite désactiver NSX-v. Vous serez notifié lorsque le processus de désactivation sera disponible.
 Après les opérations précédentes, vous pouvez maintenant migrer vos Machines Virtuelles des VXLAN vers les DVS vRACK.
 
-Depuis vue Réseaux sur la console vSphere UI, faire un clique droit sur le portgroup VXLAN où réside vos Machines Virtuelles et sélectionnez `Migrer les VM vers un autre réseau...`.
+Depuis la vue `Réseaux`{.action} sur la console vSphere UI, faire un cliv droit sur le portgroup VXLAN où résident vos Machines Virtuelles et sélectionnez `Migrer les VM vers un autre réseau...`{.action}.
 
 > [!primary]
-> Dans cette exemple, nous allons migrer les VMs vers le portgroup VLAN10 qui se trouve sur le vRACK. Vous devez migrer toutes les VM vers des portgroups pour pouvoir désactiver NSX-v ( ou que OVHcloud détecte un non usage de NSX-v).
+> Dans cet exemple, nous allons migrer les VMs vers le portgroup VLAN10 qui se trouve sur le vRACK. Vous devez migrer toutes les VM vers des portgroups pour pouvoir désactiver NSX-v (ou pour que OVHcloud détecte un non usage de NSX-v).
 
 ![NSX DVS](images/migration.gif){.thumbnail}
 

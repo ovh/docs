@@ -53,13 +53,15 @@ If you wish to migrate to VLAN, to help you to configure your network, you can u
 >
 >  Find more information on the OVHcloud API in our guide on [Getting started with the OVHcloud API](/pages/account/api/first-steps).
 
+To create your VLAN networks, you can follow this documentation: [VLAN Creation](/pages/cloud/private-cloud/creation_vlan)
+
 You will then need to disable NSX-v. You will be notified when the deactivation process is available.
 After the previous operations, you can now migrate your Virtual Machines from the VXLANs to the vRack DVS.
 
-From the Networks view on the vSphere UI console, right-click on the VXLAN portgroup where your Virtual Machines reside and select `Migrate the VMs to another network...`.
+From the `Networks`{.action} view on the vSphere UI console, right-click on the VXLAN portgroup where your Virtual Machines are located and select `Migrate the VMs to another network...`{.action}.
 
 > [!primary]
-> In this example, we will migrate the VMs to the VLAN10 portgroup, which is located on the vRack. You must migrate all VMs to portgroups in order to disable NSX-v ( or if OVHcloud detects that NSX-v is not in use).
+> In this example, we will migrate the VMs to the VLAN10 portgroup, which is located on the vRack. You must migrate all VMs to portgroups in order to disable NSX-v (or if OVHcloud detects that NSX-v is not in use).
 
 ![NSX DVS](images/migration.gif){.thumbnail}
 
