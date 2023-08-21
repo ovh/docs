@@ -9,8 +9,6 @@ updated: 2023-08-21
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie beim geringsten Zweifel die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
 >
 
-**Letzte Aktualisierung am 15.02.2023**
-
 ## Ziel 
 
 Die Erstellung eines [1-Klick-Moduls](/pages/web/hosting/cms_install_1_click_modules) im einfachen oder fortgeschrittenen Modus kann verschiedene Anomalien verursachen.

@@ -4,8 +4,6 @@ excerpt: Diagnostiquez les cas les plus courants d'erreurs liées aux créations
 updated: 2023-08-21
 ---
 
-**Dernière mise à jour le 08/11/2022**
-
 ## Objectif
 
 La création d'un [Module en 1 clic](/pages/web/hosting/cms_install_1_click_modules) en mode simple ou avancé peut occasionner différentes anomalies.

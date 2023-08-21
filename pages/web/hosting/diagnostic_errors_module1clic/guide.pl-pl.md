@@ -8,8 +8,6 @@ updated: 2023-08-21
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia 15-02-2023**
-
 ## Wprowadzenie 
 
 Utworzenie [modułu za pomocą 1 kliknięcia](/pages/web/hosting/cms_install_1_click_modules) w trybie prostym lub zaawansowanym może spowodować różne nieprawidłowości.

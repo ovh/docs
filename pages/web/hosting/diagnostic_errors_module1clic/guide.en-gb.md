@@ -4,8 +4,6 @@ excerpt: Find out how to diagnose the most common cases of 1-click module creati
 updated: 2023-08-21
 ---
 
-**Last updated 15rd February 2023**
-
 ## Objective
 
 Creating a [1-click module](/pages/web/hosting/cms_install_1_click_modules) in automatic or advanced mode can produce various issues.

@@ -8,8 +8,6 @@ updated: 2023-08-21
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
 
-**Última actualización: 15/02/2023**
-
 ## Objetivo
 
 La creación de un [Módulo en 1 clic](/pages/web/hosting/cms_install_1_click_modules) en modo simple o avanzado puede provocar diferentes anomalías.
