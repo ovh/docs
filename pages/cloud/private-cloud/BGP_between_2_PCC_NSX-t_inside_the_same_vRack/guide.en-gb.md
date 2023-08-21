@@ -14,6 +14,7 @@ PCC in DE : pcc-145-239-250-146.ovh.de
 PCC in UK : https://pcc-145-239-249-80.ovh.uk
 
 I will use a vlan in vRack for the BGP peer connectivity. Vlan 12
+![Context](images/1.png)
 
 # DE preparation
 ## Segment creation
