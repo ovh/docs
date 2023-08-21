@@ -1,44 +1,44 @@
 ---
-title: Comment utiliser les comptes de service pour se connecter à OpenStack
-excerpt: "Comment se connecter aux API ou lignes de commande OpenStack avec ses comptes de service OVHcloud"
+title: How to use service accounts to connect to OpenStack
+excerpt: "How to log in to OpenStack APIs or command lines with OVHcloud service accounts"
 updated: 2023-08-21
 ---
 
 > [!warning]
 >
-> Cette fonctionnalité est actuellement en bêta. Retrouvez plus d'informations sur <https://labs.ovhcloud.com/fr/>.
+> This feature is currently in beta. Find more information at <https://labs.ovhcloud.com/en/>.
 >
 
-## Objectif
+## Objective
 
-Pour automatiser des appels à des APIs protégées, il faut fournir des identifiants au code qui s'en charge. Avec les comptes de service OVHcloud, il est possible d'avoir un seul identifiant par script pour l'utilisation des différentes API proposées par les produits de OVHcloud ([API de OVHcloud](/pages/account/customer/console-preview), [API OpenStack](/pages/platform/public-cloud/starting_with_nova), etc.).
+To automate calls to protected APIs, you need to provide credentials to the code that handles them. With OVHcloud service accounts, it is possible to have a single ID per script for the use of the different APIs offered by OVHcloud products ([OVHcloud API](/pages/account/customer/console-preview), [OpenStack API](/pages/platform/public-cloud/starting_with_nova), etc.).
 
-Ce guide vous détaille comment utiliser les comptes de service afin de se connecter aux APIs OpenStack.
+This guide details how to use service accounts to connect to OpenStack APIs.
 
-Cela vous permet : 
+This allows you to: 
 
-- d'intégrer des alertes en provenance de votre infrastructure ;
-- de gérer la montée en charge de votre infrastructure dynamiquement ;
-- d'automatiser la résolution des incidents les plus courants.
+- Integrate alerts from your infrastructure.
+- Dynamically manage the scalability of your infrastructure.
+- Automate the resolution of the most common incidents.
 
-## Prérequis
+## Requirements
 
-- Un [commpte client OVHcloud](/pages/account/customer/ovhcloud-account-creation).
-- Savoir configurer des [politiques d'accès via API](/pages/account/customer/iam-policies-api).
-- Vous savez [utiliser l'API OpenStack](/pages/platform/public-cloud/starting_with_nova).
-- Avoir créé un [compte de service via API](/pages/account/policies/manage-service-account).
+- An [OVHcloud customer account](/pages/account/customer/ovhcloud-account-creation).
+- You know [how to configure access policies via API](/pages/account/customer/iam-policies-api).
+- You know [how to use the OpenStack API](/pages/platform/public-cloud/starting_with_nova)
+- You have created a [service account via API](/pages/account/policies/manage-service-account).
 
-## En pratique
+## Instructions
 
-A des fins d'exemple dans ce guide, nous utiliserons le compte de service **urn:v1:eu:identity:credential:xx11111-ovh/oauth2-0f0f0f0f0f0f0f0f** pour accéder au projet Public Cloud **urn:v1:eu:resource:publicCloudProject:0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f**. 
+For example purposes in this guide, we will use the service account **urn:v1:eu:identity:credential:xx11111-ovh/oauth2-0f0f0f0f0f0f0f0f** to access the Public Cloud project **urn:v1:eu:resource:publicCloudProject:0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f**.
 
-N'oubliez pas de modifier ces valeurs pour correspondre aux vôtres.
+You must change these values to match your own.
 
-### Associer des droits d'accès à OpenStack à son compte de service
+### Assign OpenStack access rights to their service account
 
-Avant toute chose, il faut que notre compte de service puisse accèder à votre infrastructure OpenStack. OVHcloud fournit 11 niveaux de droits utilisables au sein d'OpenStack. Ils sont décrits dans le tableau suivant : 
+First of all, our service account must be able to access your OpenStack infrastructure. OVHcloud provides 11 levels of rights that can be used within OpenStack. They are described in the following table: 
 
-| Droits OpenStack                                      | Nova: compute_manage | Nova: compute_snapshot_manage | Nova: compute_read | Swift: objectstore_all | glance: image_manage | glance: image_read | glance: image_import | Cinder: volume_manage | Cinder: volume_snapshot_manage | Cinder: volume_read | Neutron: network_manage | Neutron: network_read | Neutron: network_secgroup_manage | Neutron: network_secgroup_read | AI Training: ai_training_all | AI Training: ai_training_read | 
+| OpenStack rights                                      | Nova: compute_manage | Nova: compute_snapshot_manage | Nova: compute_read | Swift: objectstore_all | glance: image_manage | glance: image_read | glance: image_import | Cinder: volume_manage | Cinder: volume_snapshot_manage | Cinder: volume_read | Neutron: network_manage | Neutron: network_read | Neutron: network_secgroup_manage | Neutron: network_secgroup_read | AI Training: ai_training_all | AI Training: ai_training_read | 
 | :---------------------------------------------------- |:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | publicCloudProject:openstack:administrator            |  x  |  x  |  x  |  x  |  x  |  x  |  x  |  x  |  x  |  x  |  x  |  x  |  x  |  x  |     |     |
 | publicCloudProject:openstack:backupOperator           |     |  x  |  x  |     |     |  x  |  x  |     |  x  |  x  |     |     |     |     |     |     |
@@ -53,9 +53,9 @@ Avant toute chose, il faut que notre compte de service puisse accèder à votre 
 | publicCloudProject:ai:aiTrainingRead                  |     |     |     |     |     |     |     |     |     |     |     |     |     |     |     |  x  |
 
 
-Pour notre exemple, nous souhaitons ajouter le droit `publicCloudProject:openstack:infrastructureSupervisor` qui permet de récupérer des informations sur notre infrastructure. Il peut être utile pour mettre en place des scripts de monitoring.
+For our example, we would like to add the `publicCloudProject:openstack:infrastructureSupervisor` right, which can be used to retrieve information on our infrastructure. It can be useful for setting up monitoring scripts.
 
-Vous pouvez désormais ajouter la politique d'accès suivante : 
+You can now add the following access policy: 
 
 ```json
 {
@@ -79,9 +79,9 @@ Vous pouvez désormais ajouter la politique d'accès suivante :
 }
 ```
 
-### Utiliser un compte de service avec la ligne de commande (CLI) OpenStack <a name="openstack-cli"></a>
+### Using a service account with the OpenStack command line (CLI) <a name="openstack-cli"></a>
 
-Si vous utilisez votre infrastructure OpenStack avec la ligne de commande, vous devez utiliser les variables d'environnement suivantes : 
+If you are using your OpenStack infrastructure with the command line, you will need to use the following environment variables: 
 
 ```bash
 export OS_AUTH_TYPE=v3oidcclientcredentials
@@ -90,21 +90,22 @@ export OS_ACCESS_TOKEN_TYPE=id_token
 export OS_AUTH_URL=https://auth.cloud.ovh.net/v3
 ```
 
-Si vous utilisez les services de OVHcloud depuis la région EMEA, ajoutez les variables suivantes :
+
+If you are using OVHcloud services from EMEA, add the following variables:
 
 ```bash
 export OS_IDENTITY_PROVIDER=ovhcloud-emea
 export OS_DISCOVERY_ENDPOINT=https://iam.ovh.net/role-adapter/urn:v1:eu:resource:publicCloudProject:pci/.well-known/openid-configuration
 ```
 
-Si vous utilisez les services de OVHcloud depuis la région « Rest of the World », ajoutez les variables suivantes :
+If you are using OVHcloud services from the “Rest of the World” regions, add the following variables:
 
 ```bash
 export OS_IDENTITY_PROVIDER=ovhcloud-world
 export OS_DISCOVERY_ENDPOINT=https://iam.ovh.ca/role-adapter/urn:v1:ca:resource:publicCloudProject:pci/.well-known/openid-configuration
 ```
 
-Puis ajoutez les variables suivantes avec les valeurs correspondant à votre configuration :
+Then add the following variables with the values corresponding to your configuration:
 
 ```bash
 export OS_PROJECT_ID=0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f
@@ -113,12 +114,12 @@ export OS_CLIENT_SECRET=xxxx
 export OS_REGION_NAME=GRA1
 ```
 
-- **OS_PROJECT_ID**: identifiant de votre projet Public Cloud ;
-- **OS_CLIENT_ID**: identifiant de votre compte de service ;
-- **OS_CLIENT_SECRET**: secret de votre compte de service ;
-- **OS_REGION_NAME**: région concernée par votre script.
+- **OS_PROJECT_ID**: your Public Cloud project ID.
+- **OS_CLIENT_ID**: your service account ID.
+- **OS_CLIENT_SECRET**: your service account secret.
+- **OS_REGION_NAME**: ehe region affected by your script.
 
-Vous pouvez désormais utiliser votre ligne de commande pour observer vos machines virtuelles.
+You can now use your command line to observe your virtual machines.
 
 ```bash
 $ openstack server list
@@ -129,19 +130,19 @@ $ openstack server list
 +--------------------------------------+---------------------+--------+-------------------------------------------------+-----------+--------+
 ```
 
-Vous n'aurez cependant pas accès aux services Object Storage Swift avec ce compte de service :
+However, you will not have access to Swift Object Storage services with this service account:
 
 ```bash
 $ openstack container list
 Forbidden (HTTP 403) (Request-ID: 0f0f0f0f0f0f0f0f0f0f0f0-000f0f0f0f)
 ```
 
-### Utiliser le compte de service via le SDK Python
+### Using the service account with the Python SDK
 
-Pour se connecter en utilisant le SDK Python et les accès de OVHcloud, vous pouvez utiliser deux techniques :
+To connect using the Python SDK and OVHcloud access, you can use two techniques:
 
-- **Les variables d'environnement** : comme pour la CLI, vous pouvez configurer vos accès avec les variables d'environnement. Ce sont les mêmes que celles documentées dans la partie [Utiliser un compte de service avec la ligne de commande (CLI) Openstack](#openstack-cli)
-- **Un fichier de configuration clouds.yaml**: si vous souhaitez déployer votre configuration avec un fichier clouds.yaml comme indiqué dans la [documentation officielle Openstack](https://docs.openstack.org/openstacksdk/2023.1/user/config/configuration.html#openstack-config), vous devez suivre le format suivant: 
+- **Environment variables**: As with the CLI, you can configure your access with environment variables. These are the same as those documented in the [Use a service account with the Openstack command line (CLI)](#openstack-cli) section above.
+- **A clouds.yaml configuration file**: if you want to deploy your configuration with a clouds.yaml file as described in the [official Openstack documentation](https://docs.openstack.org/openstacksdk/2023.1/user/config/configuration.html#openstack-config), you must follow the following format: 
 
 ```yaml
 clouds:
@@ -159,21 +160,21 @@ clouds:
       client_secret: 'xxxx'
 ```
 
-L'exemple précédent fonctionne sur la région EMEA. Si vous utilisez les services de OVHcloud depuis la région "Rest of the World", modifiez les lignes suivantes avec ces valeurs :
+The previous example works for the EMEA region. If you are using OVHcloud services from the "Rest of the World" regions, edit the following lines with these values:
 
--  identity_provider: `ovhcloud-world`
--  discovery_endpoint: `https://iam.ovh.ca/role-adapter/urn:v1:eu:resource:publicCloudProject:pci/.well-known/openid-configuration`
+- identity_provider: `ovhcloud-world`
+- discovery_endpoint: `https://iam.ovh.ca/role-adapter/urn:v1:eu:resource:publicCloudProject:pci/.well-known/openid-configuration`
 
-Pour rappel, n'oubliez pas de remplacer les variables de ces exemples par les valeurs correspondant à votre configuration.
+As a reminder, you must replace the variables in these examples with the values that match your configuration.
 
-Puis ajoutez les variables suivantes avec les valeurs correspondant à votre configuration :
+Then add the following variables with the values corresponding to your configuration:
 
-- **project_id**: identifiant de votre projet Public Cloud ;
-- **client_id**: identifiant de votre compte de service ;
-- **client_secret**: secret de votre compte de service ;
-- **region_name**: région concernée par votre script.
+- **project_id**: your Public Cloud project ID.
+- **client_id**: your service account ID.
+- **client_secret**: your service account secret.
+- **region_name**: the region concerned by your script.
 
-Vous pouvez désormais utiliser votre code Python pour accéder aux services autorisés par la politique d'accès associée à votre compte de service. Si l'on reprend l'exemple précédent, vous pourrez accèder à la liste des serveurs de la façon suivante :
+You can now use your Python code to access the services authorized by the access policy associated with your service account. Using the previous example, you can access the list of servers as follows:
 
 ```bash
 $ virtualenv iam-openstack
@@ -207,7 +208,7 @@ ID: # 0f0f0f0f-0f0f-0f0f-0f0f-0f0f0f0f0ff0
 Name:  name-vm
 ```
 
-Vous n'aurez cependant pas accès aux containers des services Object Storage :
+However, you will not have access to the Object Storage service containers:
 
 ```bash
 $ virtualenv iam-openstack
@@ -246,6 +247,6 @@ Traceback (most recent call last):
 openstack.exceptions.ForbiddenException: ForbiddenException: 403: Client Error for url: https://storage.gra.cloud.ovh.net/v1/AUTH_0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f/, ForbiddenAccess was denied to this resource.
 ```
 
-## Aller plus loin
+## Go further
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Join our community of users on <https://community.ovh.com/en/>.
