@@ -340,7 +340,7 @@ In the pop-up window, proceed with the deletion of the IP by clicking on `Confir
 
 #### Adding a DNS to a Floating IP
 
-To add a DNS to a floating IP, run the following command from the command line.
+To add a DNS to a Floating IP, run the following command from the command line.
 
 ```bash
 $ openstack floating ip set --dns-domain <DOMAIN_NAME> <IP_ADDRESS_ID>
