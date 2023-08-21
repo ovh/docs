@@ -4,8 +4,6 @@ excerpt: "Découvrez NSX, la solution de gestion de réseau logicielle Software 
 updated: 2023-08-18
 ---
 
-**Dernière mise à jour le 14/06/2023**
-
 ## Objectif
 
 NSX est une solution de gestion de réseau logicielle **Software Defined Networking (SDN)** fournie par VMware. OVHcloud propose ce service en remplacement de NSX-v dans son offre Hosted Private Cloud Powered by VMware. Deux hôtes sont déployés avec, sur chacun d'entre eux, une machine virtuelle dédiée à NSX, ce qui permet une redondance en cas de défaillance d'un des hôtes.
