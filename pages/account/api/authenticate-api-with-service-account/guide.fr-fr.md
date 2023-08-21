@@ -1,7 +1,7 @@
 ---
 title: Comment utiliser les comptes de service pour se connecter aux API de OVHcloud
 excerpt: "Comment se connecter aux API avec ses comptes de service OVHcloud grâce au protocole Oauth2"
-updated: 2023-08-11
+updated: 2023-08-21
 ---
 
 > [!warning]
@@ -11,7 +11,7 @@ updated: 2023-08-11
 
 ## Objectif
 
-Pour réaliser des automatisations sur vos infrastructures, vous devez fournir des identifiants au code qui s'en charge. Avec les comptes de service OVHcloud, il est possible d'avoir un seul identifiant par script pour l'utilisation des différentes API proposées par les produits de OVHcloud ([API de OVHcloud](/pages/account/customer/console-preview), [API OpenStack](/pages/platform/public-cloud/starting_with_nova), etc. )
+Pour réaliser des automatisations sur vos infrastructures, vous devez fournir des identifiants au code qui s'en charge. Avec les comptes de service OVHcloud, il est possible d'avoir un seul identifiant par script pour l'utilisation des différentes API proposées par les produits de OVHcloud ([API de OVHcloud](/pages/account/api/console-preview), [API OpenStack](/pages/platform/public-cloud/starting_with_nova), etc. )
 
 **Ce guide vous détaille comment utiliser les comptes de service afin de vous connecter aux APIs de OVHcloud.**
 
@@ -34,9 +34,9 @@ Oauth2 permet aussi de développer des applications tierces se connectant aux AP
 - Savoir utiliser les [APIs de OVHcloud](/pages/account/api/first-steps).
 - Avoir créé un [compte de service via API](/pages/account/policies/manage-service-account).
 
-Pour l'exemple dans ce guide, nous utiliserons le compte de service `urn:v1:eu:identity:credential:xx11111-ovh/oauth2-0f0f0f0f0f0f0f0f` pour accéder à la configuration de l'hébergement web `urn:v1:eu:resource:webHosting:xxxxxxx.cluster001.hosting.ovh.net`. N'oubliez pas d'adapter les exemples à vos besoins.
-
 ## En pratique
+
+A des fins d'exemple dans ce guide, nous utiliserons le compte de service `urn:v1:eu:identity:credential:xx11111-ovh/oauth2-0f0f0f0f0f0f0f0f` pour accéder à la configuration de l'hébergement web `urn:v1:eu:resource:webHosting:xxxxxxx.cluster001.hosting.ovh.net`. N'oubliez pas de remplacer les variables par celles correspondant à vos besoins.
 
 ### Associer des droits d'accès API à son compte de service
 
