@@ -1,5 +1,5 @@
 ---
-title: Responsibility sharing - Domain Name service
+title: Responsibility sharing - Domain Name service (EN)
 excerpt: "Shared responsibility between OVHcloud and the customer for the use of the Domain Name service"
 updated: 2023-08-21
 ---
