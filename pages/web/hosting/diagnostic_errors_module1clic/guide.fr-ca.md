@@ -1,7 +1,7 @@
 ---
 title: Résoudre les erreurs les plus fréquentes liées aux modules en 1 clic
 excerpt: Diagnostiquez les cas les plus courants d'erreurs liées aux créations de modules en 1 clic
-updated: 2022-11-08
+updated: 2023-08-21
 ---
 
 **Dernière mise à jour le 08/11/2022**

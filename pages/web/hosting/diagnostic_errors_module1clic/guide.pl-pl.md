@@ -1,7 +1,7 @@
 ---
 title: Rozwiąż najczęstsze błędy związane z modułami za pomocą 1 kliknięcia
 excerpt: Zdiagnozuj najczęstsze przypadki błędów związanych z modułami za pomocą 1 kliknięcia
-updated: 2022-11-08
+updated: 2023-08-21
 ---
 
 > [!primary]

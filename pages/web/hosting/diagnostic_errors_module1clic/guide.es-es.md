@@ -1,7 +1,7 @@
 ---
 title: Resolver los errores más frecuentes asociados a los módulos en 1 clic
 excerpt: Diagnóstico de los errores más comunes relacionados con la creación de módulos en 1 clic
-updated: 2022-11-08
+updated: 2023-08-21
 ---
 
 > [!primary]
