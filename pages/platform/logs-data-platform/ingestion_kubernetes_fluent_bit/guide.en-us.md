@@ -1,5 +1,5 @@
 ---
-title: Pushing logs from software - Kubernetes and Fluent Bit
+title: Pushing logs from a Kubernetes cluster to Logs Data Platform using Fluent Bit
 excerpt: All the logs of your pods in one place
 updated: 2022-11-15
 ---
@@ -7,6 +7,8 @@ updated: 2022-11-15
 **Last updated 15th November, 2022**
 
 ## Objective
+
+In this tutorial, you will learn how to collect logs from pods in a Kubernetes cluster and send them to Logs Data Platform.
 
 [Kubernetes](https://kubernetes.io/){.external} is the de facto standard to manage containerized applications on cloud platforms. It is open source, has a large ecosystem, and has a ever growing community. Kubernetes is great but once your containers go live in the cloud, you still want to monitor their behavior. The more containers you have, the more difficult it can be to navigate through the logs and have a clear picture of what's happening. How can you centralize all your Kubernetes pods logs in one place and analyze them easily ? By using Logs Data Platform with the help of Fluent Bit. [Fluent Bit](http://fluentbit.io/) is a fast and lightweight log processor and forwarder. It is open source, cloud oriented and a part of the [Fluentd](http://fluentd.org/){.external} ecosystem. This tutorial will help you to configure it for Logs Data Platform, you can of course apply it to our [fully managed Kubernetes offer](https://www.ovhcloud.com/en/public-cloud/kubernetes/){.external}.
 
