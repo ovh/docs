@@ -6,8 +6,6 @@ routes:
 updated: 2023-08-17
 ---
 
-**Last updated May 23rd, 2023**
-
 ## Objective
 
 This page provides the technical capabilities and limitations of the Public Cloud Databases for PostgreSQL offer.

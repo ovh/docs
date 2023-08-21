@@ -3,10 +3,9 @@ title: Kafka - Capacités et limitations (EN)
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for Kafka
 routes:
     canonical: '/pages/platform/databases/kafka_01_capabilities'
-updated: 2023-05-03
+updated: 2023-08-17
 ---
 
-**Last updated May 3rd, 2023**
 
 ## Objective
 
