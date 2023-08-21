@@ -1,12 +1,12 @@
 ---
 title: "Récupérer la sauvegarde de la base de données d'un hébergement web"
 excerpt: "Découvrez comment récupérer la sauvegarde d'une base de données de votre hébergement web OVHcloud"
-updated: 2023-08-16
+updated: 2023-08-21
 ---
 
 ## Objectif
 
-Les bases de données sont tilisées par la plupart des sites web et des **C**ontent **M**anagement **S**ystem (**CMS**) tels que *WordPress*, *Joomla!*, *PrestaShop* ou *Drupal*. Elles permettent généralement de stocker des éléments dynamiques comme par exemple des commentaires, des utilisateurs / mots de passe, l'état des stocks si vous disposez d'un site e-commerce ou encore des articles. Pour diverses raisons, vous devrez réaliser une sauvegarde de votre base de données afin d'en récupérer le contenu.
+Les bases de données sont utilisées par la plupart des sites web et des **C**ontent **M**anagement **S**ystem (**CMS**) tels que *WordPress*, *Joomla!*, *PrestaShop* ou *Drupal*. Elles permettent généralement de stocker des éléments dynamiques comme, par exemple, des commentaires, des utilisateurs / mots de passe, l'état des stocks si vous disposez d'un site e-commerce ou encore des articles. Pour diverses raisons, vous serez amené à réaliser une sauvegarde de votre base de données afin d'en récupérer le contenu.
 
 **Découvrez comment récupérer la sauvegarde d'une base de données de votre hébergement web OVHcloud.**
 
@@ -20,20 +20,20 @@ Les bases de données sont tilisées par la plupart des sites web et des **C**on
 
 Avant de commencer, définissez la méthode que vous allez suivre pour récupérer la sauvegarde de votre base de données. Plusieurs possibilités s’offrent à vous :
 
-- **Utiliser l'outil de sauvegarde d'OVHcloud** : cette solution permet de récupérer des sauvegardes de vos bases de données depuis l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Cette solution ne nécessite pas de compétences techniques particulières.
+- **Utiliser l'outil de sauvegarde d'OVHcloud** : cette solution permet de récupérer des sauvegardes de vos bases de données depuis l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Cette méthode ne nécessite pas de compétences techniques particulières.
 
-- **Réaliser la sauvegarde depuis l'interface web phpMyAdmin** : cette solution nécessite de se connecter à l'interface *phpMyAdmin* pour effectuer la manipulation. Cette solution nécessite de maîtriser l'interface *phpMyAdmin* pour être choisie.
+- **Réaliser la sauvegarde depuis l'interface web phpMyAdmin** : cette méthode nécessite de se connecter à l'interface *phpMyAdmin* pour effectuer la manipulation. Cela nécessite de maîtriser l'interface *phpMyAdmin*.
 
-- **Utiliser un script réalisant la sauvegarde** : cette solution nécessite de créer un script enregistré sur votre hébergement web OVHcloud afin de pouvoir réaliser la sauvegarde. Des connaissances spécifiques pour cette création sont nécessaires pour choisir cette solution.
+- **Utiliser un script réalisant la sauvegarde** : cette méthode nécessite de créer un script enregistré sur votre hébergement web OVHcloud afin de pouvoir réaliser la sauvegarde. Des connaissances spécifiques pour cette création sont nécessaires.
 
-- **Réaliser la sauvegarde depuis une commande SSH** : cette solution nécessite de vous connecter à votre espace de stockage FTP via le protocole SSH, puis d'utiliser des commandes pour interagir avec celui-ci. Des connaissances plus avancées, ainsi qu’une offre d’[hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/){.external} spécifique sont nécessaires pour utiliser ce type d’accès.
+- **Réaliser la sauvegarde depuis une commande SSH** : cette méthode nécessite de vous connecter à votre espace de stockage FTP via le protocole SSH, puis d'utiliser des commandes pour interagir avec celui-ci. Des connaissances plus avancées, ainsi qu’une offre d’[hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/){.external} spécifique sont nécessaires pour utiliser ce type d’accès.
 
 > [!success]
 >
-> Si vous réalisez une sauvegarde de votre base de donnée car celle-ci est saturée / pleine, n'hésitez pas à consulter notre tutoriel « [Que faire lorsque ma base de données est saturée ?](/pages/web/hosting/sql_overquota_database) ».
+> Si vous réalisez une sauvegarde de votre base de données car celle-ci est saturée / pleine, n'hésitez pas à consulter notre tutoriel « [Que faire lorsque ma base de données est saturée ?](/pages/web/hosting/sql_overquota_database) ».
 >
 
-Certaines des méthodes ci-dessus ne sont pas inhérentes à une interface OVHcloud. Vous devrez donc, pour ces dernières, réaliser la manipulation selon vos propres connaissances. Quelques informations sont présentes ci-dessous, mais elles ne peuvent se substituer à l’aide d’un webmaster si vous éprouvez des difficultées à les réaliser seul. 
+Certaines des méthodes ci-dessus ne sont pas inhérentes à une interface OVHcloud. Vous devrez donc, pour ces dernières, réaliser la manipulation selon vos propres connaissances. Quelques informations sont présentes ci-dessous, mais elles ne peuvent se substituer à l’assistance fournie par un webmaster si vous éprouvez des difficultées à les réaliser seul. 
 
 Poursuivez la lecture de cette documentation selon la méthode de sauvegarde souhaitée.
 
@@ -48,7 +48,7 @@ Poursuivez la lecture de cette documentation selon la méthode de sauvegarde sou
 
 Pour accéder à l'outil de sauvegarde d'OVHcloud, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} puis rendez-vous dans la partie `Web Cloud`{.action}. Dans la colonne de gauche, cliquez sur `Hébergements`{.action} puis choisissez le nom de l'hébergement concerné. Positionnez-vous enfin sur l'onglet `Bases de données`{.action}.
 
-Le tableau qui s'affiche contient toutes les bases de données créées dans le cadre de votre offre d'hébergement web. Dès lors, vous pourrez choisir entre réaliser une nouvelle sauvegarde ou en récupérer une déjà existante via deux manipulations distinctes.
+Le tableau qui s'affiche contient toutes les bases de données créées dans le cadre de votre offre d'hébergement web. Dès lors, vous pourrez choisir entre réaliser une nouvelle sauvegarde ou en récupérer une déjà existante, via deux manipulations distinctes.
 
 #### Étape 1 : effectuer une nouvelle sauvegarde de la base de données
 
@@ -95,7 +95,7 @@ Une fois sur l'interface de connexion à *phpMyAdmin*, renseignez les informatio
 
 ### Récupérer une sauvegarde en utilisant un script
 
-La manipulation s'effectue en plusieurs étapes. Assurez-vous d'être en possession des informations permettant de vous connecter à la base de données pour laquelle vous souhaitez réaliser une sauvegarde  à savoir : le nom d’utilisateur, son mot de passe, le nom de la base de données ainsi que l’adresse du serveur.
+La manipulation s'effectue en plusieurs étapes. Assurez-vous d'être en possession des informations permettant de vous connecter à la base de données pour laquelle vous souhaitez réaliser une sauvegarde : le nom d’utilisateur, son mot de passe, le nom de la base de données ainsi que l’adresse du serveur.
 
 > [!warning]
 >
@@ -104,7 +104,7 @@ La manipulation s'effectue en plusieurs étapes. Assurez-vous d'être en possess
 
 #### Étape 1 : créer le script de sauvegarde
 
-La première étape consiste à créer le script qui permettra de réaliser la sauvegarde de la base de données. Vous trouverez ci-dessous un exemple de script pouvant vous aider dans votre démarche mais il ne se substitue pas à l’aide d’un webmaster si vous éprouvez des difficultés.
+La première étape consiste à créer le script qui permettra de réaliser la sauvegarde de la base de données. Vous trouverez ci-dessous un exemple de script pouvant vous aider dans votre démarche. Néanmoins, si vous éprouvez des difficultés, cet exemple ne peut se substituer à lui seul à l'assistance que pourrait vous fournir un webmaster.
 
 ```php
 <?
