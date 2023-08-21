@@ -1,10 +1,8 @@
 ---
 title: Attaching a Floating IP to a Public Cloud instance
 excerpt: Find out how a Floating IP address functions and how to configure it
-updated: 2022-11-14
+updated: 2023-08-18
 ---
-
-**Last updated 14th November 2022**
 
 ## Objective
 
@@ -336,6 +334,14 @@ In the pop-up window, proceed with the deletion of the IP by clicking on `Confir
 >> >
 >> > Once a Floating IP is attached to a VM, it is exposed to the Internet. Always ensure that your VM and its services are properly protected by security groups or a VM firewall.
 >> >
+
+#### Adding a DNS to a Floating IP
+
+To add a DNS to a Floating IP, run the following command from the command line.
+
+```bash
+$ openstack floating ip set --dns-domain <DOMAIN_NAME> <IP_ADDRESS_ID>
+```
 
 #### Detaching a Floating IP <a name="detachip"></a>
 
