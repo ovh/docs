@@ -95,6 +95,17 @@ Para asociar su dominio a otro directorio, haga clic en `Cambiar el dominio`{.ac
 
 También puede conectarse al alojamiento por [FTP](/pages/web/hosting/ftp_connection) y después eliminar o mover el contenido de la carpeta después de guardarlo.
 
+### "Either no configuration (ovhConfig or runtime), or the current configuration is not valid (please, double check the module's requirement) (as a reminder, the global configuration is used for module)".
+
+Este mensaje indica que el archivo ".ovhconfig" no existe o no es válido para poder instalar el "módulo en un clic". Este archivo contiene la versión de PHP y el entorno de ejecución aplicados al alojamiento web.
+
+Le recomendamos que utilice la versión de PHP más reciente. **Antes** de modificar la configuración del archivo ".ovhconfig", si tiene otros sitios web en su alojamiento web, asegúrese de que estos son compatibles con la nueva versión de PHP y/o el nuevo entorno de ejecución que vaya a aplicar en su alojamiento web.
+
+Para comprobar esta configuración, consulte nuestras guías sobre este tema:
+
+- [Modificar la configuración de un alojamiento web](/pages/web/hosting/ovhconfig_modify_system_runtime)
+- [Configurar el archivo .ovhconfig de un alojamiento web](/pages/web/hosting/ovhconfig_configuration)
+
 ### "Si è verificato un errore durante il caricamento delle informazioni (There is not enough space on your hosting (you need at least xxx MB))"
 
 ![not_enough_space](images/not_enough_space.png){.thumbnail}

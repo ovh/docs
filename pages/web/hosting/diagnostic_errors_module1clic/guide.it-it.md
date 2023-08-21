@@ -95,6 +95,18 @@ Per collegare il tuo dominio a un'altra directory, clicca su `Modifica il domini
 
 Accedi al tuo hosting via [FTP](/pages/web/hosting/ftp_connection) e, dopo averlo salvato, elimina o trasferisci il contenuto della cartella.
 
+### "Either no configuration (ovhConfig or runtime), or the current configuration is not valid (please, double check the module's requirement) (as a reminder, the global configuration is used for module)".
+
+Questo messaggio indica che il file ".ovhconfig" è inesistente o non valido per poter installare il "modulo in 1 click". Questo file contiene la versione di PHP e l’ambiente di esecuzione applicati al tuo hosting Web.
+
+Ti consigliamo di utilizzare la versione PHP più recente disponibile. **Prima di modificare la configurazione del file ".ovhconfig", assicurati che gli altri siti presenti sull’hosting Web siano compatibili con la nuova versione di PHP e/o con il nuovo ambiente di esecuzione che verrà applicato all’hosting.
+
+
+Per verificare questa configurazione, consulta le nostre guide:
+
+- [Modificare la configurazione di un hosting Web](/pages/web/hosting/ovhconfig_modify_system_runtime)
+- [Configurare il file .ovhconfig di un hosting Web](/pages/web/hosting/ovhconfig_configuration)
+
 ### "Si è verificato un errore durante il caricamento delle informazioni (There is not enough space on your hosting (you need at least xxx MB))"
 
 ![not_enough_space](images/not_enough_space.png){.thumbnail}

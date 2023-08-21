@@ -95,6 +95,17 @@ Para associar o seu domínio a outro diretório, clique em `Modificar o domínio
 
 Pode também ligar-se ao seu alojamento via [FTP](/pages/web/hosting/ftp_connection) e, depois, eliminar ou mover o conteúdo da pasta após o backup.
 
+### "Either no configuration (ovhConfig or runtime), or the current configuration is not valid (please, double check the module's requirement) (as a reminder, the global configuration is used for module)."
+
+Esta mensagem indica que o ficheiro ".ovhconfig" é inexistente ou inválido para poder instalar o seu "módulo em 1 clique". Este ficheiro contém a versão de PHP e o ambiente de execução aplicados ao seu alojamento web.
+
+Recomenda-se a utilização da versão de PHP mais recente possível. **Antes** de alterar a configuração do ficheiro ".ovhconfig", se dispõe de outros websites no seu alojamento web, certifique-se de que estes são compatíveis com a nova versão de PHP e/ou o novo ambiente de execução que vai aplicar no seu alojamento web.
+
+Para verificar esta configuração, consulte os nossos manuais sobre:
+
+- [Alterar a configuração do alojamento web](/pages/web/hosting/ovhconfig_modify_system_runtime)
+- [Configurar o ficheiro .ovhconfig do alojamento web](/pages/web/hosting/ovhconfig_configuration)
+
 ### "Ocorreu um erro durante o carregamento das informações (There is not enough space on your hosting (you need at least xxx MB))"
 
 ![not_enough_space](images/not_enough_space.png){.thumbnail}

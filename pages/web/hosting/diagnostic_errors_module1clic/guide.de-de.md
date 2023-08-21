@@ -93,6 +93,18 @@ Um Ihren Domainnamen mit einem anderen Verzeichnis zu verbinden, klicken Sie auf
 
 Sie können sich auch per [FTP](/pages/web/hosting/ftp_connection) mit Ihrem Hosting verbinden und den Ordnerinhalt löschen oder verschieben, nachdem Sie ihn lokal gesichert haben.
 
+### Either no configuration (ovhConfig or runtime), or the current configuration is not valid (please, double check the module's requirement) (as a reminder, the global configuration is used for module).“
+
+Diese Meldung zeigt an, dass die Datei “.ovhconfig“ nicht existiert oder ungültig ist, um Ihr “1-Klick-Modul“ installieren zu können. Diese Datei enthält die PHP-Version und die Ausführungsumgebung, die auf Ihr Webhosting angewendet wurden.
+
+Es wird empfohlen, die aktuellste PHP-Version zu verwenden. **Bevor** Sie die Konfiguration der Datei “.ovhconfig“ ändern, stellen Sie bei Ihrem Webhosting sicher, dass die anderen Websites mit der neuen PHP-Version und/oder der neuen Ausführungsumgebung kompatibel sind, die Sie auf Ihrem Webhosting anwenden werden.
+
+
+Um diese Konfiguration zu überprüfen, lesen Sie unsere Anleitungen zu diesem Thema:
+
+- [Webhosting-Konfiguration bearbeiten](/pages/web/hosting/ovhconfig_modify_system_runtime)
+- [OVHconfig-Datei Ihres Webhostings konfigurieren](/pages/web/hosting/ovhconfig_configuration)
+
 ### “Es ist ein Fehler beim Laden der Informationen aufgetreten. (Es ist nicht genügend Speicherplatz auf Ihrem Hosting vorhanden (Sie benötigen mindestens xxx MB))“
 
 ![not_enough_space](images/not_enough_space.png){.thumbnail}

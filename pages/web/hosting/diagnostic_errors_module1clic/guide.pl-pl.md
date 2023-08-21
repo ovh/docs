@@ -95,6 +95,17 @@ Aby powiązać domenę z innym katalogiem, kliknij `Zmień domenę`{.action} w z
 
 Możesz również połączyć się z hostingiem przez [FTP](/pages/web/hosting/ftp_connection), a następnie usunąć lub przenieść zawartość folderu po jego zapisaniu.
 
+### "Either no configuration (ovhConfig or runtime), or the current configuration is not valid (please, double check the module's requirement) (as a reminder, the global configuration is used for module)".
+
+Wyświetli się komunikat, że plik ".ovhconfig" nie istnieje lub jest nieprawidłowy. Wystarczy, że zainstalujesz "moduł za 1 kliknięciem". Plik ten zawiera wersję PHP oraz środowisko wykonawcze zastosowane do Twojego hostingu.
+
+Zaleca się korzystanie z najnowszej możliwej wersji PHP. **Przed** zmianą konfiguracji pliku ".ovhconfig", jeśli posiadasz inne strony WWW na Twoim hostingu, upewnij się, że są one kompatybilne z nową wersją PHP i/lub nowym środowiskiem wykonawczym, które zastosujesz na Twoim hostingu.
+
+Aby sprawdzić tę konfigurację, zapoznaj się z naszymi przewodnikami:
+
+- [Zmień konfigurację hostingu WWW](/pages/web/hosting/ovhconfig_modify_system_runtime)
+- [Konfiguracja pliku .ovhconfig na hostingu](/pages/web/hosting/ovhconfig_configuration)
+
 ### "Wystąpił błąd podczas pobierania informacji (There is not enough space on your hosting (you need at least xxx MB))"
 
 ![not_enough_space](images/not_enough_space.png){.thumbnail}
