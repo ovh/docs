@@ -1,53 +1,56 @@
 ---
 title: Comment utiliser les comptes de service pour se connecter aux API de OVHcloud
-excerpt: "Comment se connecter aux API avec ses comptes de service OVHcloud"
+excerpt: "Comment se connecter aux API avec ses comptes de service OVHcloud grâce au protocole Oauth2"
 updated: 2023-08-11
 ---
 
 > [!warning]
 >
-> Cette fonctionnalité est actuellement en béta. Vous pouvez trouver plus d'informations sur <https://labs.ovhcloud.com/fr/>.
+> Cette fonctionnalité est actuellement en bêta. Retrouvezplus d'informations sur <https://labs.ovhcloud.com/fr/>.
 >
 
-## Objectifs
+## Objectif
 
-Pour réaliser des automatisations sur vos infrastructure, vous devez fournir des identifiants au code qui s'en charge. Avec les comptes de service OVHcloud, il est possible d'avoir un seul identifiant par script pour l'utilisation des différentes API proposées par les produits de OVHcloud ([API de OVHcloud](/pages/account/customer/console-preview), [API de openstack](/pages/platform/public-cloud/starting_with_nova)... )
+Pour réaliser des automatisations sur vos infrastructures, vous devez fournir des identifiants au code qui s'en charge. Avec les comptes de service OVHcloud, il est possible d'avoir un seul identifiant par script pour l'utilisation des différentes API proposées par les produits de OVHcloud ([API de OVHcloud](/pages/account/customer/console-preview), [API OpenStack](/pages/platform/public-cloud/starting_with_nova), etc. )
 
-Ce guide va vous expliquer comment utiliser les comptes de service afin de se connecter aux APIs de OVHcloud.
+**Ce guide vous détaille comment utiliser les comptes de service afin de vous connecter aux APIs de OVHcloud.**
 
-Cela peut vous permettre de : 
-- Commander ou de résilier automatiquement certains produits
-- Gérer votre facturation
-- Gérer les infrastructures de vos produits
-- Fournir à votre monitoring des informations issues de nos infrastructures
-- ...
+Cela peut vous permettre de :
 
-Les comptes de service fonctionnent avec le flow *client credentials* de Oauth2. Cela vous permet donc d'intégrer l'utilisation de l'API OVHcloud avec tous les outils respectant ce protocole. Les versions v1 et v2 de l'api OVHcloud sont compatibles avec les flow *client credentials* et *authorization code* de Oauth2.
+- commander ou de résilier automatiquement certains produits ;
+- gérer votre facturation ;
+- gérer les infrastructures de vos produits ;
+- fournir à votre monitoring des informations issues de nos infrastructures ;
+- etc...
 
-Oauth2 permet aussi de développer des applications tierces se connectant aux API de OVHcloud sans collecter les identifiants. Si vous souhaitez créer vos propres applications exploitant les informations de comptes OVHcloud, vous pouvez utiliser le flow *authorization code* qui n'est pas décrit dans ce guide.
+Les comptes de service fonctionnent avec le flow *client credentials* de Oauth2. Cela vous permet donc d'intégrer l'utilisation de l'API OVHcloud avec tous les outils respectant ce protocole. Les versions v1 et v2 de l'API OVHcloud sont compatibles avec les flows *client credentials* et *authorization code* de Oauth2.
 
-## Pré-requis
+Oauth2 permet aussi de développer des applications tierces se connectant aux API de OVHcloud, sans collecter les identifiants. Si vous souhaitez créer vos propres applications exploitant les informations de comptes OVHcloud, vous pouvez utiliser le flow *authorization code* qui n'est pas décrit dans ce guide.
 
-- Vous avez un commpte client [OVHcloud account](/pages/account/customer/ovhcloud-account-creation).
-- Vous savez configurer des politiques d'accès via API [how to configure policies for IAM](/pages/account/customer/iam-policies-api).
-- Vous savez utiliser les APIs de OVHcloud [Premiers pas avec les API OVHcloud](/pages/account/api/first-steps/)
-- Vous avez créé un compte de service via API [Créer et utiliser des comptes de service OVHcloud](/pages/account/policies/manage-service-account)
+## Prérequis
 
-Pour l'exemple dans ce guide, nous utiliserons le compte de service **urn:v1:eu:identity:credential:xx11111-ovh/oauth2-0f0f0f0f0f0f0f0f** pour accéder à la configuration de l'hébergement web **urn:v1:eu:resource:webHosting:xxxxxxx.cluster001.hosting.ovh.net**. N'oubliez pas d'adapter les exemples à vos besoins.
+- Un [commpte client OVHcloud](/pages/account/customer/ovhcloud-account-creation).
+- Savoir configurer des [politiques d'accès via API](/pages/account/customer/iam-policies-api).
+- Savoir utiliser les [APIs de OVHcloud](/pages/account/api/first-steps).
+- Avoir créé un [compte de service via API](/pages/account/policies/manage-service-account).
 
-## Associer des droits d'accès API à son compte de service
+Pour l'exemple dans ce guide, nous utiliserons le compte de service `urn:v1:eu:identity:credential:xx11111-ovh/oauth2-0f0f0f0f0f0f0f0f` pour accéder à la configuration de l'hébergement web `urn:v1:eu:resource:webHosting:xxxxxxx.cluster001.hosting.ovh.net`. N'oubliez pas d'adapter les exemples à vos besoins.
 
-Avant toute chose, il faut que notre compte de service puisse accèder aux APIs utile. OVHcloud fournit des droits pour chaque appel d'API. Pour trouver quelles sont les autorisations nécessaires, vous pouvez vous rendre sur la console des API de OVHcloud:
+## En pratique
+
+### Associer des droits d'accès API à son compte de service
+
+Avant toute chose, il faut que notre compte de service puisse accèder aux APIs utiles. OVHcloud fournit des droits pour chaque appel d'API. Pour trouver quelles sont les autorisations nécessaires, vous pouvez vous rendre sur la console des API de OVHcloud :
 
 - [Console de l'API EU](https://eu.api.ovh.com/console-preview/)
 - [Console de l'API CA](https://ca.api.ovh.com/console-preview/)
 
-Pour chaque appel d'api, vous trouverez le nom de l'action correspondante à la ligne **IAM actions**.
-Par exemple, pour l'appel */v1/hosting/web*, le nom de l'action nécessaire est *webHosting:apiovh:get* comme vous pouvez l'observer dans l'exemple suivant
+Pour chaque appel d'API, vous trouverez le nom de l'action correspondante à la ligne **IAM actions**.
+Par exemple, pour l'appel */v1/hosting/web*, le nom de l'action nécessaire est *webHosting:apiovh:get* comme vous pouvez l'observer dans l'exemple suivant :
 
 ![API](images/actions-in-console.png){.thumbnail}
 
-Vous pouvez aussi utiliser l'opérateur **\*** pour désigner un sous ensemble de droits. Dans notre exemple, nous souhaitons fournir tous les droits sur les API liées au produit webhosting. Nous utiliserons ainsi l'action **webHosting:**
+Vous pouvez aussi utiliser l'opérateur **\*** pour désigner un sous ensemble de droits. Dans notre exemple, nous souhaitons fournir tous les droits sur les API liées au produit **Hébergements Web**. Nous utiliserons ainsi l'action **webHosting:**
 
 Dans le cadre de notre exemple, nous avons créé la politique d'accès suivante : 
 
@@ -73,9 +76,9 @@ Dans le cadre de notre exemple, nous avons créé la politique d'accès suivante
 }
 ```
 
-## Récupérer un token d'API à partir d'un compte de service
+### Récupérer un token d'API à partir d'un compte de service
 
-Afin de récupérer un token d'API, vous devez effectuer l'appel HTTP suivant : 
+Afin de récupérer un token d'API, vous devez effectuer l'appel HTTP suivant :
 
 ```bash
 curl --request POST \
@@ -89,13 +92,13 @@ curl --request POST \
 
 En modifiant les données suivantes: 
 
- - **client_id**: Identifiant de votre compte de service
- - **client_secret**: Token de votre compte de service
+- **client_id**: identifiant de votre compte de service
+- **client_secret**: token de votre compte de service
 
-En fonction de la localisation de votre API, vous devez utiliser l'url suivante : 
+En fonction de la localisation de votre API, vous devez utiliser l'URL suivante : 
 
-- **API EU**: https://www.ovh.com/auth/oauth2/token
-- **API CA**: https://www.ovh.ca/auth/oauth2/token
+- **API EU**: `https://www.ovh.com/auth/oauth2/token`
+- **API CA**: `https://www.ovh.ca/auth/oauth2/token`
 
 Lors de cet appel d'API, vous recevrez une réponse respectant le format suivant:
 
@@ -108,7 +111,7 @@ Lors de cet appel d'API, vous recevrez une réponse respectant le format suivant
 }
 ```
 
-Conservez le token contenu dans le champs **access_token**. Il sera nécessaire pour authentifier vos calls d'API.
+Conservez le token contenu dans le champ **access_token**. Il sera nécessaire pour authentifier vos appels d'API.
 
 Pour obtenir des informations sur votre hébergement web, vous pouvez désormais faire un appel sur 
 
@@ -117,7 +120,7 @@ Pour obtenir des informations sur votre hébergement web, vous pouvez désormais
 > @api {GET} /hosting/web/xxxxxxx.cluster001.hosting.ovh.net
 >
 
-Pour ce faire, vous devez fournir le token récupéré précédemment en header de votre requête de la façon suivante:
+Pour ce faire, vous devez fournir le token récupéré précédemment en header de votre requête de la façon suivante :
 
 ```bash
 curl -i -X GET "https://{eu|ca}.api.ovh.com/v1/hosting/web/xxxxxxx.cluster001.hosting.ovh.net" \
@@ -125,7 +128,7 @@ curl -i -X GET "https://{eu|ca}.api.ovh.com/v1/hosting/web/xxxxxxx.cluster001.ho
   -H "authorization: your-api-token" 
 ```
 
-Avec cette politique d'accès, vous n'avez accès que aux API de webhosting. Les autres API vous retournerons l'erreur HTTP 403 suivante:
+Avec cette politique d'accès, vous n'avez accès qu'aux API de webhosting. Les autres API vous retourneront l'erreur HTTP 403 suivante :
 
 ```json
 {
@@ -134,4 +137,8 @@ Avec cette politique d'accès, vous n'avez accès que aux API de webhosting. Les
 }
 ```
 
-Si vous souhaitez utiliser ces autres API, vous devrez modifier votre politique d'accès pour lui accorder les droits correspondant.
+Si vous souhaitez utiliser ces autres API, vous devez modifier votre politique d'accès pour lui accorder les droits correspondants.
+
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
