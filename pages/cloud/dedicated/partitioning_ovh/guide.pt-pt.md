@@ -281,7 +281,7 @@ The following table gives an overview of well known customer errors and how to f
 
 #### Input customer auto-fixing
 
-In order to improve customer experience, reduce [OVHcloud support](https://help.ovhcloud.com/pt/) workload and to avoid introducing breaking changes for customer, some customer input is automatically fixed or changed by the backend. The following table gives an overview of what is currently auto-fixed/changed during the **pre-processing**:
+In order to improve customer experience, reduce OVHcloud support workload and to avoid introducing breaking changes for customer, some customer input is automatically fixed or changed by the backend. The following table gives an overview of what is currently auto-fixed/changed during the **pre-processing**:
 
 |Subject|Description|
 |---|---|

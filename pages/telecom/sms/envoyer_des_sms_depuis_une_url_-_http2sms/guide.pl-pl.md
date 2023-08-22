@@ -88,7 +88,7 @@ Wszystkie symbole X zastąp następującymi informacjami:
 > 
 >Jeśli zmienisz kodowanie na Unicode, Twoja wiadomość SMS będzie mogła zawierać maksymalnie 70 znaków (160 w przypadku kodowania 7-bitowego).
 >
->Aby uzyskać więcej informacji na temat dozwolonych znaków z kodowaniu 7-bitowym, zapoznaj się z [załącznikiem](./#zalacznik) na dole tego przewodnika.
+>Aby uzyskać więcej informacji na temat dozwolonych znaków z kodowaniu 7-bitowym, zapoznaj się z [załącznikiem](#zalacznik) na dole tego przewodnika.
 >
 
 ### Etap 3: analiza wysyłki
@@ -120,7 +120,7 @@ W razie niepowodzenia przyczyna jest zapisywana:
 - W przypadku niepowodzenia:
 
 ```xml
-<?xml version="1.0" encoding="UTF-8" ?><response><status>201</status><message>Missing message. For more informations : http://guides.ovh.com/httpToSms</message></response>
+<?xml version="1.0" encoding="UTF-8" ?><response><status>201</status><message>Missing message. For more informations : https://help.ovhcloud.com/csm/pl-sms-sending-via-url-http2sms?id=kb_article_view&sysparm_article=KB0051387</message></response>
 ```
 
 
@@ -135,7 +135,7 @@ W razie niepowodzenia przyczyna jest zapisywana:
 - W przypadku niepowodzenia:
 
 ```json
-{"status":201,"message":"Missing message. For more informations : http//:guides.ovh.com/httpToSms"}
+{"status":201,"message":"Missing message. For more informations : https://help.ovhcloud.com/csm/pl-sms-sending-via-url-http2sms?id=kb_article_view&sysparm_article=KB0051387"}
 ```
 
 
@@ -168,7 +168,7 @@ OK<br>
 <title>HTTP2SMS</title>
 </HEAD>
 <BODY>
-KO<br>Missing message. For more informations : http://guides.ovh.com/httpToSms<br>
+KO<br>Missing message. For more informations : https://help.ovhcloud.com/csm/pl-sms-sending-via-url-http2sms?id=kb_article_view&sysparm_article=KB0051387<br>
 </BODY>
 </HTML>
 ```
@@ -187,7 +187,7 @@ OK
 
 ```
 KO
-Missing message. For more informations : http://guides.ovh.com/httpToSms
+Missing message. For more informations : https://help.ovhcloud.com/csm/pl-sms-sending-via-url-http2sms?id=kb_article_view&sysparm_article=KB0051387
 ```
 
 ## Załącznik

@@ -88,7 +88,7 @@ Replace the Xs with the information below:
 > 
 >If you select Unicode encoding, your SMS will have a 70-character limit, rather than the 160-character limit of 7bit encoding.
 >
->For further information on authorised characters in 7bit encoding, please refer to the [appendix](./#appendix) at the bottom of this guide.
+>For further information on authorised characters in 7bit encoding, please refer to the [appendix](#appendix) at the bottom of this guide.
 >
 
 
@@ -121,7 +121,7 @@ When a failure occurs, the cause is included:
 - If sending failed:
 
 ```xml
-<?xml version="1.0" encoding="UTF-8" ?><response><status>201</status><message>Missing message. For more information: https://docs.ovh.com/gb/en/sms/send_sms_messages_via_url_-_http2sms</message></response>
+<?xml version="1.0" encoding="UTF-8" ?><response><status>201</status><message>Missing message. For more information: https://help.ovhcloud.com/csm/en-gb-sms-sending-via-url-http2sms?id=kb_article_view&sysparm_article=KB0039184</message></response>
 ```
 
 
@@ -136,7 +136,7 @@ When a failure occurs, the cause is included:
 - If sending failed:
 
 ```json
-{"status":201,"message":"Missing message. For more information: https://docs.ovh.com/gb/en/sms/send_sms_messages_via_url_-_http2sms"}
+{"status":201,"message":"Missing message. For more information: https://help.ovhcloud.com/csm/en-gb-sms-sending-via-url-http2sms?id=kb_article_view&sysparm_article=KB0039184"}
 ```
 
 
@@ -169,7 +169,7 @@ OK<br>
 <title>HTTP2SMS</title>
 </HEAD>
 <BODY>
-KO<br>Missing message. For more information: https://docs.ovh.com/gb/en/sms/send_sms_messages_via_url_-_http2sms<br>
+KO<br>Missing message. For more information: https://help.ovhcloud.com/csm/en-gb-sms-sending-via-url-http2sms?id=kb_article_view&sysparm_article=KB0039184<br>
 </BODY>
 </HTML>
 ```
@@ -188,7 +188,7 @@ OK
 
 ```
 KB
-Missing message. For more information: https://docs.ovh.com/gb/en/sms/send_sms_messages_via_url_-_http2sms
+Missing message. For more information: https://help.ovhcloud.com/csm/en-gb-sms-sending-via-url-http2sms?id=kb_article_view&sysparm_article=KB0039184
 ```
 
 ## Appendix
