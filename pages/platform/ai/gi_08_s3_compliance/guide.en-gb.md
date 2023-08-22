@@ -4,8 +4,6 @@ excerpt: Learn how to use S3 buckets with AI Tools
 updated: 2023-08-22
 ---
 
-**Last updated 22nd August, 2023.**
-
 ## Objective
 
 This guide is intended to help you to use `S3 buckets` with **AI Tools** via the OVHcloud Control Panel and `ovhai` CLI. This will help you to manage your data when working with AI Notebooks, AI Training and AI Deploy.
@@ -26,28 +24,28 @@ Then, you will be able to use this bucket with the different **OVHcloud AI Tools
 
 First of all, you must have an S3-user with the correct rights to manage S3 buckets. 
 
-To do this, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager\), go to the `Public Cloud` section, and select the Public Cloud project concerned. Then click on `Object Storage` in the left-hand menu.
+To do this, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned. Then click on `Object Storage`{.action} in the left-hand menu.
 
-Here, you can create your S3 user by clicking on `Create User`. If you already have OpenStack users, you can use them to use S3 buckets, instead of creating a new one.
+Here, you can create your S3 user by clicking on `Create User`{.action}. If you already have OpenStack users, you can use them to use S3 buckets, instead of creating a new one.
 
 > [!warning]
 >
-> In both cases, please be sure to save your S3 credentials: **S3 user name**, **S3 access key** and **S3 secret key**. We will use them later, to create an S3 datastore.
+> In both cases, make sure to save your S3 credentials: **S3 user name**, **S3 access key** and **S3 secret key**. You will use them later to create an S3 datastore.
 >
 
-For more information about creating S3 users, you can check this [Object Storage documentation](/pages/cloud/storage/object_storage/s3_identity_and_access_management)
+For more information about S3 users creation, you can check this [Object Storage documentation](/pages/cloud/storage/object_storage/s3_identity_and_access_management).
 
 ### Editing your S3 user roles
 
-Once your S3 user has been created, you need to check that this user has the necessary rights to to interact with your data and OVHcloud AI products.
+Once your S3 user has been created, you need to check that this user has the necessary rights to interact with your data and OVHcloud AI products.
 
-In the OVHcloud control panel left-hand menu, click on `Users & Roles`, in the `Project management` category. 
+In the OVHcloud Control Panel left-hand menu, click on `Users & Roles`{.action} in the `Project management`{.action} category.
 
 Whether you have created a *new user* or use an *existing one*, check that this user has at least the following rights: `AI Training Operator` and `ObjectStore Operator`, as shown below:
 
 ![S3 user roles](images/user-roles.png)
 
-For more information about editing user rights, you can check this [documentation](/pages/platform/ai/gi_01_manage_users)
+For more information about editing user rights, you can check this [documentation](/pages/platform/ai/gi_01_manage_users).
 
 ### Adding a new datastore
 
@@ -170,7 +168,7 @@ You have to link your user to the bucket:
 
 ![S3 bucket user](images/s3-bucket-user.png)
 
-Finally, name your bucket. Keep in mind that its name must be between 3 and 63 characters, can consist only of lowercase letters, numbers, dots (.), and hyphens (-) and must start and end with lower-case alphanumeric characters (a to z and 0 to 9). 
+Finally, name your bucket. Keep in mind that its name must be between 3 and 63 characters, can consist only of lowercase letters, numbers, dots (.), and hyphens (-) and must start and end with lower-case alphanumeric characters (a to z and 0 to 9).
 
 ![S3 bucket name](images/s3-bucket-name.png)
 
@@ -182,7 +180,7 @@ Once your bucket is created, you can add files (images, codes, templates,...).
 
 > [!warning]
 >
-> Warning! You have to be sure that your user has the rights to **all the files** in your S3 bucket. Otherwise you may encounter permission issues. Indeed, even if your user has the rights to your bucket, it is important to indicate the files to which the user can access. You can grant access to an object for your user by clicking on the `...` button, and then on `Add a user to my object`.
+> Warning! You have to make sure that your user has the rights to **all the files** in your S3 bucket. Otherwise you may encounter permission issues. Indeed, even if your user has the rights to your bucket, it is important to indicate the files which the user can access. You can grant access to an object for your user by clicking on the `...`{.action} button, and then on `Add a user to my object`{.action}.
 >
 
 #### Using the `ovhai` CLI
@@ -205,7 +203,7 @@ ovhai bucket create S3GRA my-bucket-s3
 
 > [!warning]
 >
-> Bucket name must be between 3 and 63 characters, can consist only of lowercase letters, numbers, dots (.), and hyphens (-) and must start and end with lower-case alphanumeric characters (a to z and 0 to 9). 
+> The bucket name must be between 3 and 63 characters, can consist only of lowercase letters, numbers, dots (.), and hyphens (-) and must start and end with lower-case alphanumeric characters (a to z and 0 to 9). 
 >
 
 You can check that your S3 bucket has been created:
@@ -255,7 +253,7 @@ Now that your **S3 bucket** has been created, you are free to use it with any OV
 
 You can now link your **S3 buckets** to AI notebooks, AI Training and AI Deploy.
 
-If you want to use `boto3` library to manage your bucket objects, here is a [notebook](https://github.com/ovh/ai-training-examples/blob/main/notebooks/getting-started/S3/use-s3-buckets-with-ai-tools.ipynb) that contains basic commands.
+If you want to use the `boto3` library to manage your bucket objects, here is a [notebook](https://github.com/ovh/ai-training-examples/blob/main/notebooks/getting-started/S3/use-s3-buckets-with-ai-tools.ipynb) that contains basic commands.
 
 #### AI Notebooks
 
