@@ -44,7 +44,7 @@ You can verify the cluster number of the Web Hosting on this page under **FTP se
 |Lithuania|LT|188.165.31.2|2001:41d0:1:1b00:188:165:31:2|
 |Germany|DE|87.98.247.2|2001:41d0:1:1b00:87:98:247:2|
 
-If you have activated the **Shared CDN** option (released on 19/11/2020) on your Web Hosting, use this IP address:
+If you have activated the **Shared CDN** option on your Web Hosting, use this IP address:
 
 ```bash
 46.105.204.2
@@ -75,7 +75,7 @@ If you need the **outgoing IP address** of the Web Hosting cluster (gateway), us
 |Lithuania|LT|188.165.31.4|2001:41d0:1:1b00:188:165:31:4|
 |Germany|DE|87.98.247.4|2001:41d0:1:1b00:87:98:247:4|
 
-If you have activated the **Shared CDN** option (released on 19/11/2020) on your Web Hosting, use this IP address:
+If you have activated the **Shared CDN** option on your Web Hosting, use this IP address:
 
 ```bash
 46.105.204.3
@@ -106,7 +106,7 @@ If you need the **outgoing IP address** of the Web Hosting cluster (gateway), us
 |Lithuania|LT|188.165.31.16|2001:41d0:1:1b00:188.165.31.16|
 |Germany|DE|87.98.247.16|2001:41d0:1:1b00:87:98:247:16|
 
-If you have activated the **Shared CDN** option (released on 19/11/2020) on your Web Hosting, use this IP address:
+If you have activated the **Shared CDN** option on your Web Hosting, use this IP address:
 
 ```bash
 46.105.204.5
@@ -137,7 +137,7 @@ If you need the **outgoing IP address** of the Web Hosting cluster (gateway), us
 |Lithuania|LT|188.165.31.17|2001:41d0:1:1b00:188:165:31:17|
 |Germany|DE|87.98.247.17|2001:41d0:1:1b00:87:98:247:17|
 
-If you have activated the **Shared CDN** option (released on 19/11/2020) on your Web Hosting, use this IP address:
+If you have activated the **Shared CDN** option on your Web Hosting, use this IP address:
 
 ```bash
 46.105.204.6
@@ -168,7 +168,7 @@ If you need the **outgoing IP address** of the Web Hosting cluster (gateway), us
 |Lithuania|LT|188.165.31.18|2001:41d0:1:1b00:188:165:31:18|
 |Germany|DE|87.98.247.18|2001:41d0:1:1b00:87:98:247:18|
 
-If you have activated the **Shared CDN** option (released on 19/11/2020) on your Web Hosting, use this IP address:
+If you have activated the **Shared CDN** option on your Web Hosting, use this IP address:
 
 ```bash
 46.105.204.7
@@ -199,7 +199,7 @@ If you need the **outgoing IP address** of the Web Hosting cluster (gateway), us
 |Lithuania|LT|188.165.31.19|2001:41d0:1:1b00:188:165:31:19|
 |Germany|DE|87.98.247.19|2001:41d0:1:1b00:87:98:247:19|
 
-If you have activated the **Shared CDN** option (released on 19/11/2020) on your Web Hosting, use this IP address:
+If you have activated the **Shared CDN** option on your Web Hosting, use this IP address:
 
 ```bash
 46.105.204.10
@@ -230,7 +230,7 @@ If you need the **outgoing IP address** of the Web Hosting cluster (gateway), us
 |Lithuania|LT|188.165.31.40|2001:41d0:1:1b00:188:165:31:40|
 |Germany|DE|87.98.247.40|2001:41d0:1:1b00:87:98:247:40|
 
-If you have activated the **Shared CDN** option (released on 19/11/2020) on your Web Hosting, use this IP address:
+If you have activated the **Shared CDN** option on your Web Hosting, use this IP address:
 
 ```bash
 46.105.204.11
@@ -261,7 +261,7 @@ If you need the **outgoing IP address** of the Web Hosting cluster (gateway), us
 |Lithuania|LT|188.165.31.48|2001:41d0:1:1b00:188:165:31:48|
 |Germany|DE|87.98.247.48|2001:41d0:1:1b00:87:98:247:48|
 
-If you have activated the **Shared CDN** option (released on 19/11/2020) on your Web Hosting, use this IP address:
+If you have activated the **Shared CDN** option on your Web Hosting, use this IP address:
 
 ```bash
 46.105.204.12
@@ -292,7 +292,7 @@ If you need the **outgoing IP address** of the Web Hosting cluster (gateway), us
 |Lithuania|LT|188.165.31.24|2001:41d0:1:1b00:188:165:31:24|
 |Germany|DE|87.98.247.24|2001:41d0:1:1b00:87:98:247:24|
 
-If you have activated the **Shared CDN** option (released on 19/11/2020) on your Web Hosting, use this IP address:
+If you have activated the **Shared CDN** option on your Web Hosting, use this IP address:
 
 ```bash
 46.105.204.13
@@ -323,7 +323,7 @@ If you need the **outgoing IP address** of the Web Hosting cluster (gateway), us
 |Lithuania|LT|188.165.31.87|2001:41d0:1:1b00:188:165:31:87|
 |Germany|DE|87.98.247.87|2001:41d0:1:1b00:87:98:247:87|
 
-If you have activated the **Shared CDN** option (released on 19/11/2020) on your Web Hosting, use this IP address:
+If you have activated the **Shared CDN** option on your Web Hosting, use this IP address:
 
 ```bash
 46.105.204.14
@@ -354,7 +354,7 @@ If you need the **outgoing IP address** of the Web Hosting cluster (gateway), us
 |Lithuania|LT|188.165.31.3|2001:41d0:1:1b00:188:165:31:3|
 |Germany|DE|87.98.247.3|2001:41d0:1:1b00:87:98:247:3|
 
-If you have activated the **Shared CDN** option (released on 19/11/2020) on your Web Hosting, use this IP address:
+If you have activated the **Shared CDN** option on your Web Hosting, use this IP address:
 
 ```bash
 46.105.204.15
@@ -385,7 +385,7 @@ If you need the **outgoing IP address** of the Web Hosting cluster (gateway), us
 |Lithuania|LT|188.165.31.50|2001:41d0:1:1b00:188:165:31:50|
 |Germany|DE|87.98.247.50|2001:41d0:1:1b00:87:98:247:50|
 
-If you have activated the **Shared CDN** option (released on 19/11/2020) on your Web Hosting, use this IP address:
+If you have activated the **Shared CDN** option on your Web Hosting, use this IP address:
 
 ```bash
 46.105.204.17
@@ -417,7 +417,7 @@ If you need the **outgoing IP address** of the Web Hosting cluster (gateway), us
 |Germany|DE|5.135.108.219|2001:41d0:301:1::20|
 |Belgium|BE|5.196.203.200|2001:41d0:301:10::20|
 
-If you have activated the **Shared CDN** option (released on 19/11/2020) on your Web Hosting, use this IP address:
+If you have activated the **Shared CDN** option on your Web Hosting, use this IP address:
 
 ```bash
 46.105.204.20
@@ -449,7 +449,7 @@ If you need the **outgoing IP address** of the Web Hosting cluster (gateway), us
 |Germany|DE|94.23.162.9|2001:41d0:301:1::21|
 |Belgium|BE|178.32.40.72|2001:41d0:301:10::21|
 
-If you have activated the **Shared CDN** option (released on 19/11/2020) on your Web Hosting, use this IP address:
+If you have activated the **Shared CDN** option on your Web Hosting, use this IP address:
 
 ```bash
 46.105.204.21
@@ -481,7 +481,7 @@ If you need the **outgoing IP address** of the Web Hosting cluster (gateway), us
 |Germany|DE|87.98.242.65|2001:41d0:301:1::23|
 |Belgium|BE|137.74.229.68|2001:41d0:301:10::23|
 
-If you have activated the **Shared CDN** option (released on 19/11/2020) on your Web Hosting, use this IP address:
+If you have activated the **Shared CDN** option on your Web Hosting, use this IP address:
 
 ```bash
 46.105.204.23
@@ -513,7 +513,7 @@ If you need the **outgoing IP address** of the Web Hosting cluster (gateway), us
 |Germany|DE|178.33.38.88|2001:41d0:301:1::24|
 |Belgium|BE|213.32.81.103|2001:41d0:301:10::24|
 
-If you have activated the **Shared CDN** option (released on 19/11/2020) on your Web Hosting, use this IP address:
+If you have activated the **Shared CDN** option on your Web Hosting, use this IP address:
 
 ```bash
 46.105.204.24
@@ -545,7 +545,7 @@ If you need the **outgoing IP address** of the Web Hosting cluster (gateway), us
 |Germany|DE|94.23.160.29|2001:41d0:301:1::26|
 |Belgium|BE|178.32.43.46|2001:41d0:301:10::26|
 
-If you have activated the **Shared CDN** option (released on 19/11/2020) on your Web Hosting, use this IP address:
+If you have activated the **Shared CDN** option on your Web Hosting, use this IP address:
 
 ```bash
 46.105.204.26
@@ -577,7 +577,7 @@ If you need the **outgoing IP address** of the Web Hosting cluster (gateway), us
 |Germany|DE|91.134.179.251|2001:41d0:301:1::27|
 |Belgium|BE|193.70.58.226|2001:41d0:301:10::27|
 
-If you have activated the **Shared CDN** option (released on 19/11/2020) on your Web Hosting, use this IP address:
+If you have activated the **Shared CDN** option on your Web Hosting, use this IP address:
 
 ```bash
 46.105.204.27
@@ -609,7 +609,7 @@ If you need the **outgoing IP address** of the Web Hosting cluster (gateway), us
 |Germany|DE|54.37.173.127|2001:41d0:301:1::28|
 |Belgium|BE|193.70.70.144|2001:41d0:301:10::28|
 
-If you have activated the **Shared CDN** option (released on 19/11/2020) on your Web Hosting, use this IP address:
+If you have activated the **Shared CDN** option on your Web Hosting, use this IP address:
 
 ```bash
 46.105.204.28
@@ -641,7 +641,7 @@ If you need the **outgoing IP address** of the Web Hosting cluster (gateway), us
 |Germany|DE|145.239.222.45|2001:41d0:301:1::29|
 |Belgium|BE|178.32.44.140|2001:41d0:301:10::29|
 
-If you have activated the **Shared CDN** option (released on 19/11/2020) on your Web Hosting, use this IP address:
+If you have activated the **Shared CDN** option on your Web Hosting, use this IP address:
 
 ```bash
 46.105.204.29
@@ -673,7 +673,7 @@ If you need the **outgoing IP address** of the Web Hosting cluster (gateway), us
 |Germany|DE|51.255.232.79|2001:41d0:301:1::30|
 |Belgium|BE|213.32.107.241|2001:41d0:301:10::30|
 
-If you have activated the **Shared CDN** option (released on 19/11/2020) on your Web Hosting, use this IP address:
+If you have activated the **Shared CDN** option on your Web Hosting, use this IP address:
 
 ```bash
 46.105.204.30
@@ -705,7 +705,7 @@ If you need the **outgoing IP address** of the Web Hosting cluster (gateway), us
 |Germany|DE|151.80.4.219|2001:41d0:301:1::31|
 |Belgium|BE|217.182.187.17|2001:41d0:301:10::31|
 
-If you have activated the **Shared CDN** option (released on 19/11/2020) on your Web Hosting, use this IP address:
+If you have activated the **Shared CDN** option on your Web Hosting, use this IP address:
 
 ```bash
 46.105.204.31
@@ -725,7 +725,7 @@ If you need the **outgoing IP address** of the Web Hosting cluster (gateway), us
 |---|---|----|---|
 |Canada|CA|51.161.122.78|2607:5300:202:0:0::51|
 
-If you have activated the **Shared CDN** option (released on 19/11/2020) on your Web Hosting, use this IP address:
+If you have activated the **Shared CDN** option on your Web Hosting, use this IP address:
 
 ```bash
 46.105.204.51
