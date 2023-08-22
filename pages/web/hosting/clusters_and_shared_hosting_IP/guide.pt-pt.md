@@ -50,12 +50,6 @@ De seguida indicamos os endereços IP do **cluster** para cada país (tendo em v
 |Lituânia|LT|188.165.31.2|2001:41d0:1:1b00:188:165:31:2|
 |Alemanha|DE|87.98.247.2|2001:41d0:1:1b00:87:98:247:2|
 
-Se tem o serviço **CDN** ativado no seu alojamento, deve utilizar o seguinte endereço IP:
-
-```bash
-213.186.33.69
-```
-
 Se o **Shared CDN** (lançado em 19/11/2020) estiver ativado no seu alojamento, deve utilizar este endereço IP:
 
 ```bash
@@ -86,12 +80,6 @@ De seguida indicamos os endereços IP do **cluster** para cada país (tendo em v
 |Finlândia|FI|188.165.143.4|2001:41d0:1:1b00:188:165:143:4|
 |Lituânia|LT|188.165.31.4|2001:41d0:1:1b00:188:165:31:4|
 |Alemanha|DE|87.98.247.4|2001:41d0:1:1b00:87:98:247:4|
-
-Se tem o serviço **CDN** ativado no seu alojamento, deve utilizar o seguinte endereço IP:
-
-```bash
-213.186.33.85
-```
 
 Se o **Shared CDN** (lançado em 19/11/2020) estiver ativado no seu alojamento, deve utilizar este endereço IP:
 
@@ -124,12 +112,6 @@ De seguida indicamos os endereços IP do **cluster** para cada país (tendo em v
 |Lituânia|LT|188.165.31.16|2001:41d0:1:1b00:188.165.31.16|
 |Alemanha|DE|87.98.247.16|2001:41d0:1:1b00:87:98:247:16|
 
-Se tem o serviço **CDN** ativado no seu alojamento, deve utilizar o seguinte endereço IP:
-
-```bash
-213.186.33.95
-```
-
 Se o **Shared CDN** (lançado em 19/11/2020) estiver ativado no seu alojamento, deve utilizar este endereço IP:
 
 ```bash
@@ -160,12 +142,6 @@ De seguida indicamos os endereços IP do **cluster** para cada país (tendo em v
 |Finlândia|FI|188.165.143.17|2001:41d0:1:1b00:188:165:143:17|
 |Lituânia|LT|188.165.31.17|2001:41d0:1:1b00:188:165:31:17|
 |Alemanha|DE|87.98.247.17|2001:41d0:1:1b00:87:98:247:17|
-
-Se tem o serviço **CDN** ativado no seu alojamento, deve utilizar o seguinte endereço IP:
-
-```bash
-213.186.33.97
-```
 
 Se o **Shared CDN** (lançado em 19/11/2020) estiver ativado no seu alojamento, deve utilizar este endereço IP:
 
@@ -198,12 +174,6 @@ De seguida indicamos os endereços IP do **cluster** para cada país (tendo em v
 |Lituânia|LT|188.165.31.18|2001:41d0:1:1b00:188:165:31:18|
 |Alemanha|DE|87.98.247.18|2001:41d0:1:1b00:87:98:247:18|
 
-Se tem o serviço **CDN** ativado no seu alojamento, deve utilizar o seguinte endereço IP:
-
-```bash
-213.186.33.105
-```
-
 Se o **Shared CDN** (lançado em 19/11/2020) estiver ativado no seu alojamento, deve utilizar este endereço IP:
 
 ```bash
@@ -234,12 +204,6 @@ De seguida indicamos os endereços IP do **cluster** para cada país (tendo em v
 |Finlândia|FI|188.165.143.19|2001:41d0:1:1b00:188:165:143:19|
 |Lituânia|LT|188.165.31.19|2001:41d0:1:1b00:188:165:31:19|
 |Alemanha|DE|87.98.247.19|2001:41d0:1:1b00:87:98:247:19|
-
-Se tem o serviço **CDN** ativado no seu alojamento, deve utilizar o seguinte endereço IP:
-
-```bash
-213.186.33.107
-```
 
 Se o **Shared CDN** (lançado em 19/11/2020) estiver ativado no seu alojamento, deve utilizar este endereço IP:
 
@@ -272,12 +236,6 @@ De seguida indicamos os endereços IP do **cluster** para cada país (tendo em v
 |Lituânia|LT|188.165.31.40|2001:41d0:1:1b00:188:165:31:40|
 |Alemanha|DE|87.98.247.40|2001:41d0:1:1b00:87:98:247:40|
 
-Se tem o serviço **CDN** ativado no seu alojamento, deve utilizar o seguinte endereço IP:
-
-```bash
-213.186.33.151
-```
-
 Se o **Shared CDN** (lançado em 19/11/2020) estiver ativado no seu alojamento, deve utilizar este endereço IP:
 
 ```bash
@@ -308,12 +266,6 @@ De seguida indicamos os endereços IP do **cluster** para cada país (tendo em v
 |Finlândia|FI|188.165.143.48|2001:41d0:1:1b00:188:165:143:48|
 |Lituânia|LT|188.165.31.48|2001:41d0:1:1b00:188:165:31:48|
 |Alemanha|DE|87.98.247.48|2001:41d0:1:1b00:87:98:247:48|
-
-Se tem o serviço **CDN** ativado no seu alojamento, deve utilizar o seguinte endereço IP:
-
-```bash
-213.186.33.153
-```
 
 Se o **Shared CDN** (lançado em 19/11/2020) estiver ativado no seu alojamento, deve utilizar este endereço IP:
 
@@ -346,12 +298,6 @@ De seguida indicamos os endereços IP do **cluster** para cada país (tendo em v
 |Lituânia|LT|188.165.31.24|2001:41d0:1:1b00:188:165:31:24|
 |Alemanha|DE|87.98.247.24|2001:41d0:1:1b00:87:98:247:24|
 
-Se tem o serviço **CDN** ativado no seu alojamento, deve utilizar o seguinte endereço IP:
-
-```bash
-213.186.33.83
-```
-
 Se o **Shared CDN** (lançado em 19/11/2020) estiver ativado no seu alojamento, deve utilizar este endereço IP:
 
 ```bash
@@ -382,12 +328,6 @@ De seguida indicamos os endereços IP do **cluster** para cada país (tendo em v
 |Finlândia|FI|188.165.143.87|2001:41d0:1:1b00:188:165:143:87|
 |Lituânia|LT|188.165.31.87|2001:41d0:1:1b00:188:165:31:87|
 |Alemanha|DE|87.98.247.87|2001:41d0:1:1b00:87:98:247:87|
-
-Se tem o serviço **CDN** ativado no seu alojamento, deve utilizar o seguinte endereço IP:
-
-```bash
-213.186.33.169
-```
 
 Se o **Shared CDN** (lançado em 19/11/2020) estiver ativado no seu alojamento, deve utilizar este endereço IP:
 
@@ -420,12 +360,6 @@ De seguida indicamos os endereços IP do **cluster** para cada país (tendo em v
 |Lituânia|LT|188.165.31.3|2001:41d0:1:1b00:188:165:31:3|
 |Alemanha|DE|87.98.247.3|2001:41d0:1:1b00:87:98:247:3|
 
-Se tem o serviço **CDN** ativado no seu alojamento, deve utilizar o seguinte endereço IP:
-
-```bash
-213.186.33.171
-```
-
 Se o **Shared CDN** (lançado em 19/11/2020) estiver ativado no seu alojamento, deve utilizar este endereço IP:
 
 ```bash
@@ -456,12 +390,6 @@ De seguida indicamos os endereços IP do **cluster** para cada país (tendo em v
 |Finlândia|FI|188.165.143.50|2001:41d0:1:1b00:188:165:143:50|
 |Lituânia|LT|188.165.31.50|2001:41d0:1:1b00:188:165:31:50|
 |Alemanha|DE|87.98.247.50|2001:41d0:1:1b00:87:98:247:50|
-
-Se tem o serviço **CDN** ativado no seu alojamento, deve utilizar o seguinte endereço IP:
-
-```bash
-213.186.33.173
-```
 
 Se o **Shared CDN** (lançado em 19/11/2020) estiver ativado no seu alojamento, deve utilizar este endereço IP:
 
@@ -495,12 +423,6 @@ De seguida indicamos os endereços IP do **cluster** para cada país (tendo em v
 |Alemanha|DE|5.135.108.219|2001:41d0:301:1::20|
 |Bélgica|BE|5.196.203.200|2001:41d0:301:10::20|
 
-Se tem o serviço **CDN** ativado no seu alojamento, deve utilizar o seguinte endereço IP:
-
-```bash
-213.186.33.176
-```
-
 Se o **Shared CDN** (lançado em 19/11/2020) estiver ativado no seu alojamento, deve utilizar este endereço IP:
 
 ```bash
@@ -532,12 +454,6 @@ De seguida indicamos os endereços IP do **cluster** para cada país (tendo em v
 |Lituânia|LT|188.165.30.41|2001:41d0:301:9::21|
 |Alemanha|DE|94.23.162.9|2001:41d0:301:1::21|
 |Bélgica|BE|178.32.40.72|2001:41d0:301:10::21|
-
-Se tem o serviço **CDN** ativado no seu alojamento, deve utilizar o seguinte endereço IP:
-
-```bash
-213.186.33.177
-```
 
 Se o **Shared CDN** (lançado em 19/11/2020) estiver ativado no seu alojamento, deve utilizar este endereço IP:
 
@@ -571,12 +487,6 @@ De seguida indicamos os endereços IP do **cluster** para cada país (tendo em v
 |Alemanha|DE|87.98.242.65|2001:41d0:301:1::23|
 |Bélgica|BE|137.74.229.68|2001:41d0:301:10::23|
 
-Se tem o serviço **CDN** ativado no seu alojamento, deve utilizar o seguinte endereço IP:
-
-```bash
-213.186.33.186
-```
-
 Se o **Shared CDN** (lançado em 19/11/2020) estiver ativado no seu alojamento, deve utilizar este endereço IP:
 
 ```bash
@@ -608,12 +518,6 @@ De seguida indicamos os endereços IP do **cluster** para cada país (tendo em v
 |Lituânia|LT|164.132.150.73|2001:41d0:301:9::24|
 |Alemanha|DE|178.33.38.88|2001:41d0:301:1::24|
 |Bélgica|BE|213.32.81.103|2001:41d0:301:10::24|
-
-Se tem o serviço **CDN** ativado no seu alojamento, deve utilizar o seguinte endereço IP:
-
-```bash
-213.186.33.187
-```
 
 Se o **Shared CDN** (lançado em 19/11/2020) estiver ativado no seu alojamento, deve utilizar este endereço IP:
 
@@ -647,12 +551,6 @@ De seguida indicamos os endereços IP do **cluster** para cada país (tendo em v
 |Alemanha|DE|94.23.160.29|2001:41d0:301:1::26|
 |Bélgica|BE|178.32.43.46|2001:41d0:301:10::26|
 
-Se tem o serviço **CDN** ativado no seu alojamento, deve utilizar o seguinte endereço IP:
-
-```bash
-188.165.51.93
-```
-
 Se o **Shared CDN** (lançado em 19/11/2020) estiver ativado no seu alojamento, deve utilizar este endereço IP:
 
 ```bash
@@ -684,12 +582,6 @@ De seguida indicamos os endereços IP do **cluster** para cada país (tendo em v
 |Lituânia|LT|51.255.97.18|2001:41d0:301:9::27|
 |Alemanha|DE|91.134.179.251|2001:41d0:301:1::27|
 |Bélgica|BE|193.70.58.226|2001:41d0:301:10::27|
-
-Se tem o serviço **CDN** ativado no seu alojamento, deve utilizar o seguinte endereço IP:
-
-```bash
-145.239.51.129
-```
 
 Se o **Shared CDN** (lançado em 19/11/2020) estiver ativado no seu alojamento, deve utilizar este endereço IP:
 
@@ -723,12 +615,6 @@ De seguida indicamos os endereços IP do **cluster** para cada país (tendo em v
 |Alemanha|DE|54.37.173.127|2001:41d0:301:1::28|
 |Bélgica|BE|193.70.70.144|2001:41d0:301:10::28|
 
-Se tem o serviço **CDN** ativado no seu alojamento, deve utilizar o seguinte endereço IP:
-
-```bash
-51.255.119.116
-```
-
 Se o **Shared CDN** (lançado em 19/11/2020) estiver ativado no seu alojamento, deve utilizar este endereço IP:
 
 ```bash
@@ -761,12 +647,6 @@ De seguida indicamos os endereços IP do **cluster** para cada país (tendo em v
 |Alemanha|DE|145.239.222.45|2001:41d0:301:1::29|
 |Bélgica|BE|178.32.44.140|2001:41d0:301:10::29|
 
-Se tem o serviço **CDN** ativado no seu alojamento, deve utilizar o seguinte endereço IP:
-
-```bash
- 51.255.215.242 
-```
-
 Se o **Shared CDN** (lançado em 19/11/2020) estiver ativado no seu alojamento, deve utilizar este endereço IP:
 
 ```bash
@@ -798,12 +678,6 @@ De seguida indicamos os endereços IP do **cluster** para cada país (tendo em v
 |Lituânia|LT|188.165.24.146|2001:41d0:301:9::30|
 |Alemanha|DE|51.255.232.79|2001:41d0:301:1::30|
 |Bélgica|BE|213.32.107.241|2001:41d0:301:10::30|
-
-Se tem o serviço **CDN** ativado no seu alojamento, deve utilizar o seguinte endereço IP:
-
-```bash
-54.36.13.47
-```
 
 Se o **Shared CDN** (lançado em 19/11/2020) estiver ativado no seu alojamento, deve utilizar este endereço IP:
 
@@ -856,12 +730,6 @@ De seguida indicamos os endereços IP do **cluster** para cada país (tendo em v
 |País|Código de país|IPv4|IPv6|
 |---|---|----|---|
 |Canada|CA|51.161.122.78|2607:5300:202:0:0::51|
-
-Se tem o serviço **CDN** ativado no seu alojamento, deve utilizar o seguinte endereço IP:
-
-```bash
-178.32.120.166
-```
 
 Se o **Shared CDN** (lançado em 19/11/2020) estiver ativado no seu alojamento, deve utilizar este endereço IP:
 
