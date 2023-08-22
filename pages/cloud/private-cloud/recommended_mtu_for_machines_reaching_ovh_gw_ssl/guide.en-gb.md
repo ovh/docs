@@ -1,5 +1,5 @@
 ---
-title: "Changing the MTU size for machines reaching the OVHcloud Gwateway SSL"
+title: "Changing the MTU size for machines reaching the OVHcloud Gateway SSL"
 excerpt: "Find out how to check your current MTU size and set it up to the OVHcloud recommended value"
 updated: 2023-08-22
 ---
