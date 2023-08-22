@@ -10,9 +10,9 @@ updated: 2023-08-22
 
 ## Objetivo
 
-Las bases de datos, que hoy en día se utilizan en la mayoría de los sistemas de gestión de contenidos (*content management system* o CMS) como WordPress o Joomla!, permiten almacenar elementos dinámicos, tales como comentarios o artículos. Existen diversos motivos por los que podría necesitar realizar una copia de seguridad de una base de datos para recuperar su contenido.
+La mayoría de los sitios web utilizan bases de datos y **C**ontent **M**anagement **S**ystem (**CMS**) como *WordPress*, *Joomla!*, *PrestaShop* o *Drupal*. Por lo general, permiten almacenar elementos dinámicos como, por ejemplo, comentarios, usuarios y contraseñas, el estado del inventario si dispone de un sitio de e-commerce o incluso artículos. Existen diversos motivos por los que podría necesitar realizar una copia de seguridad de la base de datos para recuperar el contenido.
 
-**Esta guía explica cómo exportar una copia de seguridad de la base de datos de un alojamiento web de OVHcloud.**
+**Descubra cómo recuperar la copia de seguridad de una base de datos de su alojamiento web de OVHcloud.**
 
 ## Requisitos
 

@@ -10,9 +10,9 @@ updated: 2023-08-22
  
 ## Ziel
 
-Fast alle Content Management Systeme (CMS) wie WordPress oder Joomla! verwenden heutzutage Datenbanken, um sogenannte dynamische Inhalte wie beispielsweise Kommentare oder Artikel zu speichern. Es kann aus verschiedenen Gründen erforderlich sein, ein Backup Ihrer Datenbank zu erstellen, um deren Inhalt zu exportieren.
+Datenbanken werden von den meisten Websites verwendet, und **C**ustomer **M**anagement **S**ystem (**CMS***) wie *WordPress*, *Joomla!*, *PrestaShop* ou *Drupal*. In der Regel speichern Sie dynamische Elemente wie zum Beispiel Kommentare, Benutzer / Passwörter, den Lagerbestand, wenn Sie eine E-Commerce-Seite haben, oder Artikel. Aus verschiedenen Gründen müssen Sie ein Backup Ihrer Datenbank erstellen, um deren Inhalt wiederherzustellen.
 
-**In dieser Anleitung erfahren Sie, wie Sie ein Backup der Datenbank Ihres OVHcloud Webhostings erstellen.**
+**Diese Anleitung erklärt, wie Sie ein Backup einer Datenbank Ihres OVHcloud Webhostings erstellen.**
 
 ## Voraussetzungen
 

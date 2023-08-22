@@ -10,9 +10,9 @@ updated: 2023-08-22
 
 ## Obiettivo
 
-Utilizzati dalla maggior parte dei sistemi di gestione dei contenuti (Content Management System o CMS) come WordPress e Joomla!, i database permettono di salvare gli elementi detti dinamici (ad esempio, commenti o articoli). Per diversi motivi, potresti aver bisogno di effettuare un backup del tuo database per recuperarne il contenuto.
+I database sono utilizzati dalla maggior parte dei siti Web e **C**ontent **M**anagement **S**ystem (**CMS**) come *WordPress*, *Joomla!*, *PrestaShop* o *Drupal*. Permettono generalmente di archiviare elementi dinamici come, ad esempio, commenti, utenti / password, lo stato del magazzino se hai un sito e-commerce o articoli. Per diversi motivi potrebbe essere necessario effettuare un backup del database per recuperarne il contenuto.
 
-**Questa guida ti mostra come recuperare il backup di un database del tuo hosting Web OVHcloud.**
+**Questa guida ti mostra come ripristinare il backup di un database di un hosting Web OVHcloud.**
 
 ## Prerequisiti
 

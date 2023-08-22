@@ -10,7 +10,7 @@ updated: 2023-08-22
 
 ## Objetivo
 
-As bases de dados, utilizadas pela maioria dos sistemas de gestão de conteúdos (Content Management System ou CMS), como o WordPress ou o Joomla!, permitem armazenar elementos dinâmicos, como comentários ou artigos. Por diversas razões, pode precisar de realizar a cópia de segurança de uma base de dados para mais tarde recuperar o seu conteúdo.
+As bases de dados são utilizadas pela maior parte dos websites e dos **C**ontent **M**anagement **S**ystem (**CMS**) tais como *WordPress*, *Joomla!*, *PrestaShop* ou *Drupal*. Estes cookies permitem geralmente armazenar elementos dinâmicos, como, por exemplo, comentários, utilizadores/palavras-passe, o estado dos stocks caso disponha de um site de e-commerce ou ainda artigos. Por várias razões, terá de realizar um backup da sua base de dados para recuperar o seu conteúdo.
 
 **Saiba como recuperar a cópia de segurança de uma base de dados de um alojamento web da OVHcloud.**
 

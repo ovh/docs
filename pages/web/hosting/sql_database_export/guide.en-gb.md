@@ -6,9 +6,9 @@ updated: 2023-08-22
 
 ## Objective
 
-Databases are used in virtually all modern content management systems (CMS), such as WordPress or Joomla!, to store dynamic elements like comments or articles. For various reasons, you may find that you need to back up your database in order to retrieve its contents.
+Databases are used by most websites and **C**ontent **M**anagement **S**ystems (**CMS**) such as *WordPress*, *Joomla!*, *PrestaShop* or *Drupal*. They are usually used to store dynamic elements, such as comments, users/passwords, stock status if you have an e-commerce website, or even articles. For various reasons, you may need to back up your database in order to retrieve its contents.
 
-**Find out how to retrieve a database backup from your OVHcloud Web Hosting plan.**
+**Find out how to retrieve a database backup from an OVHcloud Web Hosting plan.**
 
 ## Requirements
 

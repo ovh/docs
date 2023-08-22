@@ -10,7 +10,7 @@ updated: 2023-08-22
 
 ## Wprowadzenie 
 
-Bazy danych, wykorzystywane obecnie przez niemal wszystkie systemy zarządzania treścią ( Content Management System lub CMS), na przykład WordPress czy Joomla!, umożliwiają przechowywanie elementów dynamicznych, takich jak komentarze czy artykuły. Mogą zaistnieć sytuacje, w których będziesz potrzebował wykonać kopię zapasową bazy danych w celu późniejszego odzyskania jej zawartości.
+Bazy danych są używane przez większość stron WWW i serwerów **C**ontent **M**anagement **S**ystem (**CMS**), takich jak *WordPress*, *Joomla!*, *PrestaShop* lub *Drupal*. Są one zazwyczaj wykorzystywane do przechowywania elementów dynamicznych, takich jak komentarze, hasła/użytkownicy, stan zapasów, jeśli posiadasz sklep internetowy lub artykuły. Mogą zaistnieć sytuacje, w których będziesz potrzebował wykonać kopię zapasową bazy danych w celu późniejszego odzyskania jej zawartości.
 
 **Dowiedz się, jak pobrać kopię zapasową bazy danych Twojego hostingu WWW OVHcloud.**
 
