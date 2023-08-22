@@ -1,9 +1,7 @@
 ---
 title: 'Liste des adresses IP des clusters et hebergements web'
-updated: 2023-05-03
+updated: 2023-08-22
 ---
-
-**Dernière mise à jour le 03/05/2023**
 
 ## Objectif
 

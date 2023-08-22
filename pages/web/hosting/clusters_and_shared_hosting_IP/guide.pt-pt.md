@@ -1,9 +1,7 @@
 ---
 title: 'Lista dos endereços IP dos clusters e alojamentos web'
-updated: 2023-05-03
+updated: 2023-08-22
 ---
-
-**Última atualização: 03/05/2023**
 
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.

@@ -1,10 +1,8 @@
 ---
 title: 'IP address list for Web Hosting clusters'
 excerpt: 'Find out the appropriate IP addresses to use with your OVHcloud Web Hosting plan'
-updated: 2023-05-03
+updated: 2023-08-22
 ---
-
-**Last updated 03rd May 2023**
 
 ## Objective
 
