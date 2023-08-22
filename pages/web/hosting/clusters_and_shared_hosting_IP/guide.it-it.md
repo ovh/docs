@@ -50,12 +50,6 @@ Qui di seguito trovi gli indirizzi IP del **cluster** per ciascun Paese (per la 
 |Lituania|LT|188.165.31.2|2001:41d0:1:1b00:188:165:31:2|
 |Germania|DE|87.98.247.2|2001:41d0:1:1b00:87:98:247:2|
 
-Se hai attivato la **CDN** sul tuo hosting, è necessario utilizzare questo indirizzo IP: 
-
-```bash
-213.186.33.69
-```
-
 Se il **Shared CDN** (uscito il 19/11/2020) è attivo sul tuo hosting, devi utilizzare questo indirizzo IP:
 
 ```bash
@@ -86,12 +80,6 @@ Qui di seguito trovi gli indirizzi IP del **cluster** per ciascun Paese (per la 
 |Finlandia|FI|188.165.143.4|2001:41d0:1:1b00:188:165:143:4|
 |Lituania|LT|188.165.31.4|2001:41d0:1:1b00:188:165:31:4|
 |Germania|DE|87.98.247.4|2001:41d0:1:1b00:87:98:247:4|
-
-Se hai attivato la **CDN** sul tuo hosting, è necessario utilizzare questo indirizzo IP: 
-
-```bash
-213.186.33.85
-```
 
 Se il **Shared CDN** (uscito il 19/11/2020) è attivo sul tuo hosting, devi utilizzare questo indirizzo IP:
 
@@ -124,12 +112,6 @@ Qui di seguito trovi gli indirizzi IP del **cluster** per ciascun Paese (per la 
 |Lituania|LT|188.165.31.16|2001:41d0:1:1b00:188.165.31.16|
 |Germania|DE|87.98.247.16|2001:41d0:1:1b00:87:98:247:16|
 
-Se hai attivato la **CDN** sul tuo hosting, è necessario utilizzare questo indirizzo IP: 
-
-```bash
-213.186.33.95
-```
-
 Se il **Shared CDN** (uscito il 19/11/2020) è attivo sul tuo hosting, devi utilizzare questo indirizzo IP:
 
 ```bash
@@ -160,12 +142,6 @@ Qui di seguito trovi gli indirizzi IP del **cluster** per ciascun Paese (per la 
 |Finlandia|FI|188.165.143.17|2001:41d0:1:1b00:188:165:143:17|
 |Lituania|LT|188.165.31.17|2001:41d0:1:1b00:188:165:31:17|
 |Germania|DE|87.98.247.17|2001:41d0:1:1b00:87:98:247:17|
-
-Se hai attivato la **CDN** sul tuo hosting, è necessario utilizzare questo indirizzo IP: 
-
-```bash
-213.186.33.97
-```
 
 Se il **Shared CDN** (uscito il 19/11/2020) è attivo sul tuo hosting, devi utilizzare questo indirizzo IP:
 
@@ -198,12 +174,6 @@ Qui di seguito trovi gli indirizzi IP del **cluster** per ciascun Paese (per la 
 |Lituania|LT|188.165.31.18|2001:41d0:1:1b00:188:165:31:18|
 |Germania|DE|87.98.247.18|2001:41d0:1:1b00:87:98:247:18|
 
-Se hai attivato la **CDN** sul tuo hosting, è necessario utilizzare questo indirizzo IP: 
-
-```bash
-213.186.33.105
-```
-
 Se il **Shared CDN** (uscito il 19/11/2020) è attivo sul tuo hosting, devi utilizzare questo indirizzo IP:
 
 ```bash
@@ -234,12 +204,6 @@ Qui di seguito trovi gli indirizzi IP del **cluster** per ciascun Paese (per la 
 |Finlandia|FI|188.165.143.19|2001:41d0:1:1b00:188:165:143:19|
 |Lituania|LT|188.165.31.19|2001:41d0:1:1b00:188:165:31:19|
 |Germania|DE|87.98.247.19|2001:41d0:1:1b00:87:98:247:19|
-
-Se hai attivato la **CDN** sul tuo hosting, è necessario utilizzare questo indirizzo IP: 
-
-```bash
-213.186.33.107
-```
 
 Se il **Shared CDN** (uscito il 19/11/2020) è attivo sul tuo hosting, devi utilizzare questo indirizzo IP:
 
@@ -272,12 +236,6 @@ Qui di seguito trovi gli indirizzi IP del **cluster** per ciascun Paese (per la 
 |Lituania|LT|188.165.31.40|2001:41d0:1:1b00:188:165:31:40|
 |Germania|DE|87.98.247.40|2001:41d0:1:1b00:87:98:247:40|
 
-Se hai attivato la **CDN** sul tuo hosting, è necessario utilizzare questo indirizzo IP: 
-
-```bash
-213.186.33.151
-```
-
 Se il **Shared CDN** (uscito il 19/11/2020) è attivo sul tuo hosting, devi utilizzare questo indirizzo IP:
 
 ```bash
@@ -308,12 +266,6 @@ Qui di seguito trovi gli indirizzi IP del **cluster** per ciascun Paese (per la 
 |Finlandia|FI|188.165.143.48|2001:41d0:1:1b00:188:165:143:48|
 |Lituania|LT|188.165.31.48|2001:41d0:1:1b00:188:165:31:48|
 |Germania|DE|87.98.247.48|2001:41d0:1:1b00:87:98:247:48|
-
-Se hai attivato la **CDN** sul tuo hosting, è necessario utilizzare questo indirizzo IP: 
-
-```bash
-213.186.33.153
-```
 
 Se il **Shared CDN** (uscito il 19/11/2020) è attivo sul tuo hosting, devi utilizzare questo indirizzo IP:
 
@@ -346,12 +298,6 @@ Qui di seguito trovi gli indirizzi IP del **cluster** per ciascun Paese (per la 
 |Lituania|LT|188.165.31.24|2001:41d0:1:1b00:188:165:31:24|
 |Germania|DE|87.98.247.24|2001:41d0:1:1b00:87:98:247:24|
 
-Se hai attivato la **CDN** sul tuo hosting, è necessario utilizzare questo indirizzo IP: 
-
-```bash
-213.186.33.83
-```
-
 Se il **Shared CDN** (uscito il 19/11/2020) è attivo sul tuo hosting, devi utilizzare questo indirizzo IP:
 
 ```bash
@@ -382,12 +328,6 @@ Qui di seguito trovi gli indirizzi IP del **cluster** per ciascun Paese (per la 
 |Finlandia|FI|188.165.143.87|2001:41d0:1:1b00:188:165:143:87|
 |Lituania|LT|188.165.31.87|2001:41d0:1:1b00:188:165:31:87|
 |Germania|DE|87.98.247.87|2001:41d0:1:1b00:87:98:247:87|
-
-Se hai attivato la **CDN** sul tuo hosting, è necessario utilizzare questo indirizzo IP: 
-
-```bash
-213.186.33.169
-```
 
 Se il **Shared CDN** (uscito il 19/11/2020) è attivo sul tuo hosting, devi utilizzare questo indirizzo IP:
 
@@ -420,12 +360,6 @@ Qui di seguito trovi gli indirizzi IP del **cluster** per ciascun Paese (per la 
 |Lituania|LT|188.165.31.3|2001:41d0:1:1b00:188:165:31:3|
 |Germania|DE|87.98.247.3|2001:41d0:1:1b00:87:98:247:3|
 
-Se hai attivato la **CDN** sul tuo hosting, è necessario utilizzare questo indirizzo IP: 
-
-```bash
-213.186.33.171
-```
-
 Se il **Shared CDN** (uscito il 19/11/2020) è attivo sul tuo hosting, devi utilizzare questo indirizzo IP:
 
 ```bash
@@ -456,12 +390,6 @@ Qui di seguito trovi gli indirizzi IP del **cluster** per ciascun Paese (per la 
 |Finlandia|FI|188.165.143.50|2001:41d0:1:1b00:188:165:143:50|
 |Lituania|LT|188.165.31.50|2001:41d0:1:1b00:188:165:31:50|
 |Germania|DE|87.98.247.50|2001:41d0:1:1b00:87:98:247:50|
-
-Se hai attivato la **CDN** sul tuo hosting, è necessario utilizzare questo indirizzo IP: 
-
-```bash
-213.186.33.173
-```
 
 Se il **Shared CDN** (uscito il 19/11/2020) è attivo sul tuo hosting, devi utilizzare questo indirizzo IP:
 
@@ -495,12 +423,6 @@ Qui di seguito trovi gli indirizzi IP del **cluster** per ciascun Paese (per la 
 |Germania|DE|5.135.108.219|2001:41d0:301:1::20|
 |Belgio|BE|5.196.203.200|2001:41d0:301:10::20|
 
-Se hai attivato la **CDN** sul tuo hosting, è necessario utilizzare questo indirizzo IP: 
-
-```bash
-213.186.33.176
-```
-
 Se il **Shared CDN** (uscito il 19/11/2020) è attivo sul tuo hosting, devi utilizzare questo indirizzo IP:
 
 ```bash
@@ -532,12 +454,6 @@ Qui di seguito trovi gli indirizzi IP del **cluster** per ciascun Paese (per la 
 |Lituania|LT|188.165.30.41|2001:41d0:301:9::21|
 |Germania|DE|94.23.162.9|2001:41d0:301:1::21|
 |Belgio|BE|178.32.40.72|2001:41d0:301:10::21|
-
-Se hai attivato la **CDN** sul tuo hosting, è necessario utilizzare questo indirizzo IP: 
-
-```bash
-213.186.33.177
-```
 
 Se il **Shared CDN** (uscito il 19/11/2020) è attivo sul tuo hosting, devi utilizzare questo indirizzo IP:
 
@@ -571,12 +487,6 @@ Qui di seguito trovi gli indirizzi IP del **cluster** per ciascun Paese (per la 
 |Germania|DE|87.98.242.65|2001:41d0:301:1::23|
 |Belgio|BE|137.74.229.68|2001:41d0:301:10::23|
 
-Se hai attivato la **CDN** sul tuo hosting, è necessario utilizzare questo indirizzo IP: 
-
-```bash
-213.186.33.186
-```
-
 Se il **Shared CDN** (uscito il 19/11/2020) è attivo sul tuo hosting, devi utilizzare questo indirizzo IP:
 
 ```bash
@@ -608,12 +518,6 @@ Qui di seguito trovi gli indirizzi IP del **cluster** per ciascun Paese (per la 
 |Lituania|LT|164.132.150.73|2001:41d0:301:9::24|
 |Germania|DE|178.33.38.88|2001:41d0:301:1::24|
 |Belgio|BE|213.32.81.103|2001:41d0:301:10::24|
-
-Se hai attivato la **CDN** sul tuo hosting, è necessario utilizzare questo indirizzo IP: 
-
-```bash
-213.186.33.187
-```
 
 Se il **Shared CDN** (uscito il 19/11/2020) è attivo sul tuo hosting, devi utilizzare questo indirizzo IP:
 
@@ -647,12 +551,6 @@ Qui di seguito trovi gli indirizzi IP del **cluster** per ciascun Paese (per la 
 |Germania|DE|94.23.160.29|2001:41d0:301:1::26|
 |Belgio|BE|178.32.43.46|2001:41d0:301:10::26|
 
-Se hai attivato la **CDN** sul tuo hosting, è necessario utilizzare questo indirizzo IP: 
-
-```bash
-188.165.51.93
-```
-
 Se il **Shared CDN** (uscito il 19/11/2020) è attivo sul tuo hosting, devi utilizzare questo indirizzo IP:
 
 ```bash
@@ -684,12 +582,6 @@ Qui di seguito trovi gli indirizzi IP del **cluster** per ciascun Paese (per la 
 |Lituania|LT|51.255.97.18|2001:41d0:301:9::27|
 |Germania|DE|91.134.179.251|2001:41d0:301:1::27|
 |Belgio|BE|193.70.58.226|2001:41d0:301:10::27|
-
-Se hai attivato la **CDN** sul tuo hosting, è necessario utilizzare questo indirizzo IP: 
-
-```bash
-145.239.51.129
-```
 
 Se il **Shared CDN** (uscito il 19/11/2020) è attivo sul tuo hosting, devi utilizzare questo indirizzo IP:
 
@@ -723,12 +615,6 @@ Qui di seguito trovi gli indirizzi IP del **cluster** per ciascun Paese (per la 
 |Germania|DE|54.37.173.127|2001:41d0:301:1::28|
 |Belgio|BE|193.70.70.144|2001:41d0:301:10::28|
 
-Se hai attivato la **CDN** sul tuo hosting, è necessario utilizzare questo indirizzo IP: 
-
-```bash
-51.255.119.116
-```
-
 Se il **Shared CDN** (uscito il 19/11/2020) è attivo sul tuo hosting, devi utilizzare questo indirizzo IP:
 
 ```bash
@@ -761,12 +647,6 @@ Qui di seguito trovi gli indirizzi IP del **cluster** per ciascun Paese (per la 
 |Germania|DE|145.239.222.45|2001:41d0:301:1::29|
 |Belgio|BE|178.32.44.140|2001:41d0:301:10::29|
 
-Se hai attivato la **CDN** sul tuo hosting, è necessario utilizzare questo indirizzo IP: 
-
-```bash
- 51.255.215.242 
-```
-
 Se il **Shared CDN** (uscito il 19/11/2020) è attivo sul tuo hosting, devi utilizzare questo indirizzo IP:
 
 ```bash
@@ -798,12 +678,6 @@ Qui di seguito trovi gli indirizzi IP del **cluster** per ciascun Paese (per la 
 |Lituania|LT|188.165.24.146|2001:41d0:301:9::30|
 |Germania|DE|51.255.232.79|2001:41d0:301:1::30|
 |Belgio|BE|213.32.107.241|2001:41d0:301:10::30|
-
-Se hai attivato la **CDN** sul tuo hosting, è necessario utilizzare questo indirizzo IP: 
-
-```bash
-54.36.13.47
-```
 
 Se il **Shared CDN** (uscito il 19/11/2020) è attivo sul tuo hosting, devi utilizzare questo indirizzo IP:
 
@@ -860,12 +734,6 @@ Qui di seguito trovi gli indirizzi IP del **cluster** per ciascun Paese (per la 
 |Paese|Codice Paese|IPv4|IPv6|
 |---|---|----|---|
 |Canada|CA|51.161.122.78|2607:5300:202:0:0::51|
-
-Se hai attivato la **CDN** sul tuo hosting, è necessario utilizzare questo indirizzo IP: 
-
-```bash
-178.32.120.166
-```
 
 Se il **Shared CDN** (uscito il 19/11/2020) è attivo sul tuo hosting, devi utilizzare questo indirizzo IP:
 
