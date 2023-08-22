@@ -308,7 +308,7 @@
             + [Deploy an OVF Linux, Windows Server and Windows SQL Server template](cloud/private-cloud/ovf_template)
             + [Avoiding VM freeze with the Veeam Managed Backup option](cloud/private-cloud/eviter_le_freeze_de_vm_avec_l_option_veeam_backup)
             + [Enabling promiscuous mode on a Virtual Machine](cloud/private-cloud/vmware_carp)
-            + [Changing the MTU size for machines reaching the OVHcloud Gwateway SSL](cloud/private-cloud/recommended_mtu_for_machines_reaching_ovh_gw_ssl)
+            + [Changing the MTU size for machines reaching the OVHcloud Gateway SSL](cloud/private-cloud/recommended_mtu_for_machines_reaching_ovh_gw_ssl)
         + [Maintenance and monitoring](hosted-private-cloud-hosted-private-cloud-powered-by-vmware-maintenance-and-monitoring)
             + [Rescheduling a maintenance on your Hosted Private Cloud](cloud/private-cloud/maintenance-rescheduling)
             + [Taking a snapshot](cloud/private-cloud/creer_un_snapshot)
