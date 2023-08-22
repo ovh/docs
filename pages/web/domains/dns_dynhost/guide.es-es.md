@@ -1,7 +1,7 @@
 ---
 title: "Configurar un DNS dinámico (DynHost/DynDNS) para un dominio"
 excerpt: "Descubra cómo configurar un registro DNS dinámico para un dominio de OVHcloud"
-updated: 2023-06-29
+updated: 2023-08-16
 ---
 
 > [!primary]
@@ -62,6 +62,11 @@ Haga clic en el botón `Gestionar los accesos`{.action} y luego en el botón `Cr
 |Subdominio|Indique el subdominio al que quiere crear el registro DNS dinámico. Si desea gestionar todos los subdominios con un único identificador, escriba el formulario de entrada `*`.|
 |Contraseña|Establezca una contraseña para el usuario DynHost y confírmela.|
 
+> [!success]
+>
+> Para instalar un DynHost directamente para su dominio, introduzca únicamente `*` en el formulario de entrada denominado `Subdominio`{.action}.
+>
+
 Una vez que haya completado todos los campos, haga clic en `Aceptar`{.action}. El usuario aparecerá en la tabla.
  Repita esta operación para cada usuario DynHost que quiera crear.
 
@@ -75,7 +80,7 @@ Para crear el registro DynHost, vuelva a la página principal de la pestaña `Dy
 
 |Campo|Descripción|
 |---|---|
-|Subdominio|Introduzca el subdominio al que pertenezca el registro DNS que deberá actualizarse dinámicamente. Este subdominio debe ser el mismo que haya indicado anteriormente al crear el usuario DynHost.|
+|Subdominio|Introduzca el subdominio al que pertenezca el registro DNS que deberá actualizarse dinámicamente. Este subdominio debe ser el mismo que haya indicado anteriormente al crear el usuario DynHost. **Si desea implementar un DynHost directamente para su dominio, deje este formulario de entrada vacío**|
 |IP de destino|Introduzca la dirección IP (solo IPv4) que vaya a utilizar el registro DNS. Es generalmente la dirección IP pública de su *box* Internet o de su servidor alojado. Según el principio DynHost, esta se actualizará automáticamente más adelante.|
 
 > [!primary]
