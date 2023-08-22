@@ -1,10 +1,11 @@
 ---
-title: 'Configuring software RAID'
-excerpt: 'Find out how to rebuild your server’s drive configuration after a disk replacement'
-updated: 2022-10-11
+title: Managing software RAID
+excerpt: Find out how to verify the state of your software RAID
+updated: 2023-08-21
 ---
 
-**Last updated 15th February 2023**
+<!-- markdownlint-disable-next-line MD036 -->
+**Last updated 21st August 2023**
 
 ## Objective
 
@@ -184,15 +185,15 @@ umount /dev/md4
 
 > [!warning]
 > Please note that if you are connected as the user `root`, you may get the following message when you try to unmount the partition (in our case, where our md4 partition is mounted in /home):
-> 
+>
 > <div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">umount: /home: target is busy</span> </pre></div>
 >
 > In this case, you must log out as the user root and connect as a local user (in our case `debian`), and use the following command:
-> 
-> 
+>
+>
 > <div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">debian@ns000000:/$ sudo umount /dev/md4</span> </pre></div>
 >
-> 
+>
 > If you do not have a local user, you need to create one.
 
 This will provide us with the following output:
@@ -295,13 +296,14 @@ Consistency Policy : bitmap
 
 ### Rebuilding the RAID
 
-Once the disk has been replaced, we need to copy the partition table from a healthy disk (in this example, sdb) to the new one (sda) with the following command: 
+Once the disk has been replaced, we need to copy the partition table from a healthy disk (in this example, sdb) to the new one (sda) with the following command:
 
 **For GPT partitions**
 
 ```sh
 sgdisk -R /dev/sda /dev/sdb 
 ```
+
 The command should be in this format: `sgdisk -R /dev/newdisk /dev/healthydisk`
 
 Once this is done, the next step is to randomize the GUID of the new disk to prevent GUID conflicts with other disks:
@@ -312,7 +314,7 @@ sgdisk -G /dev/sda
 
 **For MBR partitions**
 
-Once the disk has been replaced, we need to copy the partition table from a healthy disk (in this example, sdb) to the new one (sda) with the following command: 
+Once the disk has been replaced, we need to copy the partition table from a healthy disk (in this example, sdb) to the new one (sda) with the following command:
 
 ```sh
 sfdisk -d /dev/sdb | sfdisk /dev/sda 
@@ -320,7 +322,7 @@ sfdisk -d /dev/sdb | sfdisk /dev/sda
 
 The command should be in this format: `sfdisk -d /dev/healthydisk | sfdisk /dev/newdisk`
 
-We can now rebuild the RAID array. The following code snippet shows how we can rebulid the `/dev/md4` partition layout with the recently-copied sda partition table: 
+We can now rebuild the RAID array. The following code snippet shows how we can rebulid the `/dev/md4` partition layout with the recently-copied sda partition table:
 
 ```sh
 mdadm --add /dev/md4 /dev/sda4
@@ -372,7 +374,7 @@ mdadm --detail /dev/md4
        1       8       18        1      active sync   /dev/sdb4
 ```
 
-The RAID has now been rebuilt, but we still need to mount the partition (`/dev/md4` in this example) with the following command: 
+The RAID has now been rebuilt, but we still need to mount the partition (`/dev/md4` in this example) with the following command:
 
 ```sh
 mount /dev/md4 /home
@@ -380,10 +382,12 @@ mount /dev/md4 /home
 
 ## Go Further
 
-[Hot Swap – Hardware RAID](/pages/cloud/dedicated/hotswap_raid_hard)
+[Hot Swap - Software RAID](/pages/cloud/dedicated/hotswap_raid_soft)
 
-[Hot Swap – Software RAID](/pages/cloud/dedicated/hotswap_raid_soft)
+[OVHcloud API & Partitioning](/pages/cloud/dedicated/partitioning_ovh)
 
-[Hardware RAID](/pages/cloud/dedicated/raid_hard)
+[Managing hardware RAID](/pages/cloud/dedicated/raid_hard)
+
+[Hot Swap - Hardware RAID](/pages/cloud/dedicated/hotswap_raid_hard)
 
 Join our community of users on <https://community.ovh.com/en/>.

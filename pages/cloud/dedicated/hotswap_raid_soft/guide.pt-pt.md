@@ -1,10 +1,11 @@
 ---
-title: 'Substituir um disco a quente num servidor com RAID por software'
-excerpt: 'Saiba como substituir a quente um disco num servidor com RAID por software'
-updated: 2016-11-21
+title: Substituir um disco a quente num servidor com RAID por software
+excerpt: Saiba como substituir a quente um disco num servidor com RAID por software
+updated: 2023-08-21
 ---
 
-**Última atualização: 05/09/2019**
+<!-- markdownlint-disable-next-line MD036 -->
+**Última atualização: 21/08/2023**
 
 ## Sumário
 
@@ -90,7 +91,7 @@ root@ns3054662:/home# smartctl -a /dev/sdb
 >>> Long (extended) Self Test duration: 34237 seconds [570.6 minutes]
 ```
 
-Aqui, poderá notar que: 
+Aqui, poderá notar que:
 
 - o disco “**SDB**” está fora de serviço devido aos erros que não foram corrigidos (“uncorrected errors”);
 - o seu **número de série** corresponde ao da alerta recebida (enviada do datacenter ou através de qualquer outra ferramenta de monitorização).
@@ -104,7 +105,7 @@ root@ns3054662:/home# smartctl -a /dev/sdb | grep Serial
 
 #### 2 - Obter a posição do disco
 
-A seguir, deverá identificar a **slot** e o **enclosure** do disco afetado. Para isso, utilize a ferramenta “sas2ircu” previamente instalada no servidor. 
+A seguir, deverá identificar a **slot** e o **enclosure** do disco afetado. Para isso, utilize a ferramenta “sas2ircu” previamente instalada no servidor.
 
 Comece por verificar que os discos estão bem conectados através de uma placa LSI.
 
@@ -250,20 +251,20 @@ Neste manual partiremos do princípio de que o cliente recebeu um alerta para o 
 > [!primary]
 >
 > É importante abrir o terminal de comandos enquanto administrador para evitar erros.
-> 
+>
 
 Comece por testar e verificar o **serial number** (número de série) do disco danificado. **Na seguinte captura de ecrã, o armazenamento na realidade não está fora de serviço.**
 
 ![smart_sdb_windows](images/smart_sdb_windows.png){.thumbnail}
 
-Aqui, poderá notar que: 
+Aqui, poderá notar que:
 
 - o disco “**SDB**” está fora de serviço devido aos erros que não foram corrigidos (“uncorrected errors”);
 - o seu **número de série** corresponde ao da alerta recebida (enviada do datacenter ou através de qualquer outra ferramenta de monitorização).
 
 #### 2 - Obter a posição do disco
 
-A seguir, deverá identificar a **slot** e o **enclosure** do disco afetado. Para isso, utilize a ferramenta “sas2ircu” previamente instalada no servidor. 
+A seguir, deverá identificar a **slot** e o **enclosure** do disco afetado. Para isso, utilize a ferramenta “sas2ircu” previamente instalada no servidor.
 
 Comece por determinar o ID desta placa LSI.
 
@@ -294,5 +295,7 @@ Esta operação pode ser realizada a partir da interface **Gestão dos discos** 
 O disco danificado já pode ser substituído por um técnico do datacenter. Uma vez a operação efetuada, só terá de voltar a sincronizar o RAID. Para isso, consulte a seguinte documentação: [RAID software](/pages/cloud/dedicated/raid_soft){.external}.
 
 ## Quer saber mais?
+
+* [RAID por software](/pages/cloud/dedicated/raid_soft){.external}
 
 Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

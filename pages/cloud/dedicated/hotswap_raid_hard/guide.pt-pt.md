@@ -1,5 +1,5 @@
 ---
-title: Hot Swap - Hardware RAID
+title: Hot Swap - Hardware RAID (EN)
 excerpt: Find out how to hot-swap a disk on a server with a hardware RAID configuration
 updated: 2023-08-21
 ---

@@ -1,10 +1,11 @@
 ---
-title: 'Hot-swapping a disk on a server with a software RAID configuration'
-excerpt: 'Find out the main steps to follow in order to hot-swap a disk on a server with a software RAID configuration'
-updated: 2016-11-21
+title: Hot Swap - Software RAID
+excerpt: Find out how to hot-swap a disk on a server with a software RAID configuration
+updated: 2023-08-21
 ---
 
-**Last updated 21st November 2016**
+<!-- markdownlint-disable-next-line MD036 -->
+**Last updated 21st August 2023**
 
 ## Objective
 
@@ -23,7 +24,7 @@ If one of the disks on your server is failing, you can hot-swap it if you have a
 
 ### On Linux
 
-#### Step 1: Identify the disk concerned.
+#### Step 1: Identify the disk concerned
 
 To illustrate the purpose of this guide, we assume that we have received an alert for the`/dev/sdb` disk. The disk is defective, and we want to hot-swap it. **Please adapt the details of this guide according to your specific situation.**
 
@@ -90,7 +91,7 @@ root@ns3054662:/home# smartctl -a /dev/sdb
 >>> Long (extended) Self Test duration: 34237 seconds [570.6 minutes]
 ```
 
-Here, you will note that: 
+Here, you will note that:
 
 - the "**SDB**" disk has failed due to uncorrected errors
 - its **Serial Number** corresponds to the alert received (via the datacentre or any other monitoring tool)
@@ -102,7 +103,7 @@ root@ns3054662:/home# smartctl -a /dev/sdb | grep Serial
 >>> Serial number:        K4GW439B
 ```
 
-#### Step 2: Retrieve the disk’s position.
+#### Step 2: Retrieve the disk’s position
 
 You must now find the **Slot ID** and the **Enclosure ID** of the disk concerned. To do this, use the «sas2ircu» tool already installed on the server.
 
@@ -151,7 +152,7 @@ This command is used to obtain the disk information, including the **Serial Numb
 
 In our example, we retrieved the **Enclosure ID** (corresponding to 1) and the **Slot ID** (corresponding to 3).
 
-#### Stage 3: Switch on the disk.
+#### Stage 3: Switch on the disk
 
 Using the information retrieved during the previous steps, turn on the LED of the faulty disk, and replace it with the command `./sas2ircu 0 locate EncID:SlotID on`. Customise it to suit your situation, as per the example below:
 
@@ -168,7 +169,7 @@ root@ns3054662:/home# ./sas2ircu 0 locate 1:3 on
 
 You can disable the disk flashing, by replacing "on" with "off" in the command.
 
-#### Step 4: Remove the defective disk from the RAID.
+#### Step 4: Remove the defective disk from the RAID
 
 If you have not already done so, switch the defective disk to **Faulty**. Then look at the RAID status.
 
@@ -243,25 +244,25 @@ The defective disk is now ready to be replaced by a datacentre technician. Once 
 
 ### On Windows
 
-#### Step 1: Identify the disk.
+#### Step 1: Identify the disk
 
 To illustrate the purpose of this guide, we assume that we have received an alert for the`/dev/sdb` disk. The disk is defective, and we want to hot-swap it. **Please adapt the details of this guide according to your specific situation.**
 
 > [!primary]
 >
 > It is important to launch the command terminal as an administrator, so that you do not receive any errors.
-> 
+>
 
-To begin, test and check the **Serial Number** of the disk concerned. In the screenshot below, the storage is not really defective, but we will act as if it were. 
+To begin, test and check the **Serial Number** of the disk concerned. In the screenshot below, the storage is not really defective, but we will act as if it were.
 
 ![smart_sdb_windows](images/smart_sdb_windows.png){.thumbnail}
 
-Here, you will note that: 
+Here, you will note that:
 
 - the "**SDB**" disk has failed due to uncorrected errors
 - its **Serial Number** corresponds to the alert received (via the datacentre or any other monitoring tool)
 
-#### Step 2: Retrieve the disk’s position.
+#### Step 2: Retrieve the disk’s position
 
 You will now need to find the **Slot ID** and the **Enclosure ID** of the disk concerned. To do this, use the «sas2ircu» tool already installed on the server.
 
@@ -279,7 +280,7 @@ You can use this command to retrieve the disk information, including the **Seria
 
 In our example, we have retrieved the **Enclosure ID** (corresponding to 1) and the **Slot ID** (corresponding to 1).
 
-#### Stage 3: Switch on the disk.
+#### Stage 3: Switch on the disk
 
 Using the information retrieved during the previous steps, turn on the LED of the faulty disk, and replace it with the command `.\sas2ircu 0 locate EncID:SlotID on`. Customise it to suit your situation, as per the example below:
 
@@ -287,12 +288,20 @@ Using the information retrieved during the previous steps, turn on the LED of th
 
 You can disable the disk flashing, by replacing "on" with "off" in the command.
 
-#### Step 4: Remove the defective disk from the RAID.
+#### Step 4: Remove the defective disk from the RAID
 
 You can do this from the **Disk Management** interface of your Windows server.
 
 The defective disk is now ready to be replaced by a datacentre technician. Once the operation is complete, you just have to resync the RAID. To do this, you can use the following guide: [Configuring software RAID](/pages/cloud/dedicated/raid_soft){.external}
 
-## Go further
+## Go Further
+
+[Managing software RAID](/pages/cloud/dedicated/raid_soft)
+
+[OVHcloud API & Partitioning](/pages/cloud/dedicated/partitioning_ovh)
+
+[Managing hardware RAID](/pages/cloud/dedicated/raid_hard)
+
+[Hot Swap - Hardware RAID](/pages/cloud/dedicated/hotswap_raid_hard)
 
 Join our community of users on <https://community.ovh.com/en/>.

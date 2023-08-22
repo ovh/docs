@@ -1,10 +1,11 @@
 ---
-title: 'Remplacer à chaud un disque sur un serveur en RAID logiciel'
-excerpt: 'Découvrez les principales étapes pour remplacer à chaud un disque sur un serveur en RAID logiciel'
-updated: 2016-11-21
+title: Remplacement à chaud - RAID logiciel
+excerpt: Retrouvez ici comment remplacer un disque à chaud sur un serveur avec un RAID logiciel
+updated: 2023-08-21
 ---
 
-**Dernière mise à jour le 21/11/2016**
+<!-- markdownlint-disable-next-line MD036 -->
+**Dernière mise à jour le 21/08/2023**
 
 ## Objectif
 
@@ -90,7 +91,7 @@ root@ns3054662:/home# smartctl -a /dev/sdb
 >>> Long (extended) Self Test duration: 34237 seconds [570.6 minutes]
 ```
 
-Vous constatez ainsi que : 
+Vous constatez ainsi que :
 
 - le disque « **SDB** » est effectivement hors d'usage du fait d'erreurs non corrigées (« uncorrected errors ») ;
 - son « **Serial Number** » correspond bien à l'alerte reçue (via le datacenter ou tout autre outil de monitoring).
@@ -250,13 +251,13 @@ Afin d'illustrer le propos de ce guide, nous partons du principe que nous avons 
 > [!primary]
 >
 > Il est important de lancer le terminal de commande en tant qu'administrateur, afin de ne pas obtenir d'erreur.
-> 
+>
 
 Débutez par tester et vérifier le « **Serial Number** » du disque concerné. **Dans la capture ci-dessous, le stockage n'est pas réellement hors d'usage mais nous ferons comme si c'était le cas.**
 
 ![smart_sdb_windows](images/smart_sdb_windows.png){.thumbnail}
 
-Vous constatez ainsi que : 
+Vous constatez ainsi que :
 
 - le disque « **SDB** » est effectivement hors d'usage du fait d'erreurs non corrigées (« uncorrected errors ») ;
 - son « **Serial Number** » correspond bien à l'alerte reçue (via le datacenter ou tout autre outil de monitoring).
@@ -295,4 +296,12 @@ Le disque défectueux est désormais prêt à être remplacé par un technicien 
 
 ## Aller plus loin
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+[Gestion du RAID logiciel](/pages/cloud/dedicated/raid_soft)
+
+[API OVHcloud & Partitionnement](/pages/cloud/dedicated/partitioning_ovh)
+
+[Gestion du RAID matériel](/pages/cloud/dedicated/raid_hard)
+
+[Remplacement à chaud - RAID Matériel](/pages/cloud/dedicated/hotswap_raid_hard)
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

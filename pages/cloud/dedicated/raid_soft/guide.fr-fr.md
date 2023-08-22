@@ -1,10 +1,11 @@
 ---
-title: 'Le RAID logiciel'
-excerpt: 'Apprenez à configurer la baie RAID de votre serveur en cas de panne ou de corruption de disque'
-updated: 2022-10-11
+title: Gestion du RAID logiciel
+excerpt: Apprenez à vérifier l'état de votre RAID logiciel
+updated: 2023-08-21
 ---
 
-**Dernière mise à jour le 16/02/2023**
+<!-- markdownlint-disable-next-line MD036 -->
+**Dernière mise à jour le 21/08/2023**
 
 ## Objectif
 
@@ -187,11 +188,11 @@ umount /dev/md4
 
 > [!warning]
 > Veuillez noter que si vous êtes connecté en tant qu'utilisateur `root`, vous pouvez obtenir le message suivant lorsque vous essayez de démonter la partition (dans notre cas, où notre partition md4 est montée dans /home) :
-> 
+>
 > <div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">umount: /home: target is busy</span> </pre></div>
 >
 > Dans ce cas, vous devez vous déconnecter en tant qu'utilisateur root et vous connecter en tant qu'utilisateur local (dans notre cas, `debian`) et utiliser la commande suivante :
-> 
+>
 > <div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">debian@ns000000:/$ sudo umount /dev/md4</span> </pre></div>
 >
 > Si vous ne disposez pas d'utilisateur local, vous devez en créer un.
@@ -296,7 +297,7 @@ Consistency Policy : bitmap
 
 ### Reconstruction du RAID
 
-Une fois le disque remplacé, copiez la table de partition à partir d'un disque sain (« sdb » dans cet exemple) dans la nouvelle (« sda ») avec la commande suivante : 
+Une fois le disque remplacé, copiez la table de partition à partir d'un disque sain (« sdb » dans cet exemple) dans la nouvelle (« sda ») avec la commande suivante :
 
 **Pour les partitions GPT**
 
@@ -314,7 +315,7 @@ sgdisk -G /dev/sda
 
 **Pour les partitions MBR**
 
-Une fois le disque remplacé, copiez la table de partition à partir d'un disque sain (« sdb » dans cet exemple) dans la nouvelle (« sda ») avec la commande suivante : 
+Une fois le disque remplacé, copiez la table de partition à partir d'un disque sain (« sdb » dans cet exemple) dans la nouvelle (« sda ») avec la commande suivante :
 
 ```sh
 sfdisk -d /dev/sdb | sfdisk /dev/sda 
@@ -322,7 +323,7 @@ sfdisk -d /dev/sdb | sfdisk /dev/sda
 
 La commande doit être au format suivant : `sfdisk -d /dev/disquesain | sfdisk /dev/nouveaudisque`
 
-Il est maintenant possible de reconstruire la matrice RAID. L'extrait de code ci-dessous montre comment reconstruire la disposition de la partition `/dev/md4` avec la table de partition « sda » copiée récemment : 
+Il est maintenant possible de reconstruire la matrice RAID. L'extrait de code ci-dessous montre comment reconstruire la disposition de la partition `/dev/md4` avec la table de partition « sda » copiée récemment :
 
 ```sh
 mdadm --add /dev/md4 /dev/sda4
@@ -374,7 +375,7 @@ mdadm --detail /dev/md4
        1       8       18        1      active sync   /dev/sdb4
 ```
 
-Le RAID a maintenant été reconstruit. Montez la partition (`/dev/md4` dans cet exemple) avec cette commande : 
+Le RAID a maintenant été reconstruit. Montez la partition (`/dev/md4` dans cet exemple) avec cette commande :
 
 ```sh
 mount /dev/md4 /home
@@ -382,10 +383,12 @@ mount /dev/md4 /home
 
 ## Aller plus loin
 
-[Hot Swap – RAID Matériel](/pages/cloud/dedicated/hotswap_raid_hard){.external}
+[Remplacement à chaud - RAID logiciel](/pages/cloud/dedicated/hotswap_raid_soft)
 
-[Hot Swap – RAID Logiciel](/pages/cloud/dedicated/hotswap_raid_soft){.external}
+[API OVHcloud & Partitionnement](/pages/cloud/dedicated/partitioning_ovh)
 
-[RAID Matériel](/pages/cloud/dedicated/raid_hard){.external}
+[Gestion du RAID matériel](/pages/cloud/dedicated/raid_hard)
+
+[Remplacement à chaud - RAID Matériel](/pages/cloud/dedicated/hotswap_raid_hard)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

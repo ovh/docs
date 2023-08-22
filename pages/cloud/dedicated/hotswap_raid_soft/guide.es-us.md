@@ -1,14 +1,15 @@
 ---
-title: 'Sustituir un disco en caliente en un servidor con RAID por software'
-excerpt: 'Cómo sustituir un disco sin interrupción del servicio en un servidor con RAID por software'
-updated: 2016-11-21
+title: Sustituir un disco en caliente en un servidor con RAID por software
+excerpt: Cómo sustituir un disco sin interrupción del servicio en un servidor con RAID por software
+updated: 2023-08-21
 ---
 
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
-> 
+>
 
-**Última actualización: 05/04/2019**
+<!-- markdownlint-disable-next-line MD036 -->
+**Última actualización: 21/08/2023**
 
 ## Objetivo
 
@@ -94,7 +95,7 @@ root@ns3054662:/home# smartctl -a /dev/sdb
 >>> Long (extended) Self Test duration: 34237 seconds [570.6 minutes]
 ```
 
-En la respuesta al comando anterior puede comprobar lo siguiente: 
+En la respuesta al comando anterior puede comprobar lo siguiente:
 
 - el disco **sdb** está fuera de servicio debido a que presenta errores no corregidos (*uncorrected errors*);
 - su serial number se corresponde con el de la alerta recibida (enviada desde el datacenter o a través de cualquier otra herramienta de monitorización).
@@ -254,13 +255,13 @@ En esta guía partiremos del supuesto de que el cliente ha recibido una alerta i
 > [!primary]
 >
 > Es importante abrir el terminal como administrador para evitar errores.
-> 
+>
 
 En primer lugar, compruebe el **serial number** (número de serie) del disco dañado. **En la siguiente captura, el almacenamiento en realidad no está fuera de servicio.**
 
 ![smart_sdb_windows](images/smart_sdb_windows.png){.thumbnail}
 
-En la respuesta al comando anterior puede comprobar lo siguiente: 
+En la respuesta al comando anterior puede comprobar lo siguiente:
 
 - el disco **sdb** está fuera de servicio debido a que presenta errores no corregidos (*uncorrected errors*);
 - su serial number se corresponde con el de la alerta recibida (enviada desde el datacenter o a través de cualquier otra herramienta de monitorización).
@@ -298,5 +299,9 @@ Esta operación puede realizarse desde la utilidad **Administración de discos**
 A continuación, el disco dañado ya podrá ser sustituido por un técnico del datacenter. Una vez realizada la intervención, solo tendrá que resincronizar el RAID. Para ello, consulte la guía [RAID por software](/pages/cloud/dedicated/raid_soft){.external}.
 
 ## Más información
+
+[RAID por software](/pages/cloud/dedicated/raid_soft)
+
+[RAID por hardware](/pages/cloud/dedicated/raid_hard)
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
