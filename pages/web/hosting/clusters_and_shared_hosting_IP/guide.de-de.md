@@ -47,12 +47,6 @@ Um herauszufinden, auf welchem Webhosting Cluster Ihr Dienst liegt, loggen Sie s
 |Litauen|LT|188.165.31.2|2001:41d0:1:1b00:188:165:31:2|
 |Deutschland|DE|87.98.247.2|2001:41d0:1:1b00:87:98:247:2|
 
-Wenn Sie die Option **CDN** für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
-
-```bash
-213.186.33.69
-```
-
 Wenn Sie die Option **Shared CDN** (veröffentlicht am 19.11.2020) für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
 
 ```bash
@@ -83,12 +77,6 @@ Wenn Sie die **ausgehende IP-Adresse** des Webhostings benötigen, verwenden Sie
 |Finnland|FI|188.165.143.4|2001:41d0:1:1b00:188:165:143:4|
 |Litauen|LT|188.165.31.4|2001:41d0:1:1b00:188:165:31:4|
 |Deutschland|DE|87.98.247.4|2001:41d0:1:1b00:87:98:247:4|
-
-Wenn Sie die Option **CDN** für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
-
-```bash
-213.186.33.85
-```
 
 Wenn Sie die Option **Shared CDN** (veröffentlicht am 19.11.2020) für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
 
@@ -121,12 +109,6 @@ Wenn Sie die **ausgehende IP-Adresse** des Webhostings benötigen, verwenden Sie
 |Litauen|LT|188.165.31.16|2001:41d0:1:1b00:188.165.31.16|
 |Deutschland|DE|87.98.247.16|2001:41d0:1:1b00:87:98:247:16|
 
-Wenn Sie die Option **CDN** für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
-
-```bash
-213.186.33.95
-```
-
 Wenn Sie die Option **Shared CDN** (veröffentlicht am 19.11.2020) für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
 
 ```bash
@@ -157,12 +139,6 @@ Wenn Sie die **ausgehende IP-Adresse** des Webhostings benötigen, verwenden Sie
 |Finnland|FI|188.165.143.17|2001:41d0:1:1b00:188:165:143:17|
 |Litauen|LT|188.165.31.17|2001:41d0:1:1b00:188:165:31:17|
 |Deutschland|DE|87.98.247.17|2001:41d0:1:1b00:87:98:247:17|
-
-Wenn Sie die Option **CDN** für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
-
-```bash
-213.186.33.97
-```
 
 Wenn Sie die Option **Shared CDN** (veröffentlicht am 19.11.2020) für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
 
@@ -195,12 +171,6 @@ Wenn Sie die **ausgehende IP-Adresse** des Webhostings benötigen, verwenden Sie
 |Litauen|LT|188.165.31.18|2001:41d0:1:1b00:188:165:31:18|
 |Deutschland|DE|87.98.247.18|2001:41d0:1:1b00:87:98:247:18|
 
-Wenn Sie die Option **CDN** für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
-
-```bash
-213.186.33.105
-```
-
 Wenn Sie die Option **Shared CDN** (veröffentlicht am 19.11.2020) für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
 
 ```bash
@@ -231,12 +201,6 @@ Wenn Sie die **ausgehende IP-Adresse** des Webhostings benötigen, verwenden Sie
 |Finnland|FI|188.165.143.19|2001:41d0:1:1b00:188:165:143:19|
 |Litauen|LT|188.165.31.19|2001:41d0:1:1b00:188:165:31:19|
 |Deutschland|DE|87.98.247.19|2001:41d0:1:1b00:87:98:247:19|
-
-Wenn Sie die Option **CDN** für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
-
-```bash
-213.186.33.107
-```
 
 Wenn Sie die Option **Shared CDN** (veröffentlicht am 19.11.2020) für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
 
@@ -269,12 +233,6 @@ Wenn Sie die **ausgehende IP-Adresse** des Webhostings benötigen, verwenden Sie
 |Litauen|LT|188.165.31.40|2001:41d0:1:1b00:188:165:31:40|
 |Deutschland|DE|87.98.247.40|2001:41d0:1:1b00:87:98:247:40|
 
-Wenn Sie die Option **CDN** für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
-
-```bash
-213.186.33.151
-```
-
 Wenn Sie die Option **Shared CDN** (veröffentlicht am 19.11.2020) für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
 
 ```bash
@@ -305,12 +263,6 @@ Wenn Sie die **ausgehende IP-Adresse** des Webhostings benötigen, verwenden Sie
 |Finnland|FI|188.165.143.48|2001:41d0:1:1b00:188:165:143:48|
 |Litauen|LT|188.165.31.48|2001:41d0:1:1b00:188:165:31:48|
 |Deutschland|DE|87.98.247.48|2001:41d0:1:1b00:87:98:247:48|
-
-Wenn Sie die Option **CDN** für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
-
-```bash
-213.186.33.153
-```
 
 Wenn Sie die Option **Shared CDN** (veröffentlicht am 19.11.2020) für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
 
@@ -343,12 +295,6 @@ Wenn Sie die **ausgehende IP-Adresse** des Webhostings benötigen, verwenden Sie
 |Litauen|LT|188.165.31.24|2001:41d0:1:1b00:188:165:31:24|
 |Deutschland|DE|87.98.247.24|2001:41d0:1:1b00:87:98:247:24|
 
-Wenn Sie die Option **CDN** für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
-
-```bash
-213.186.33.83
-```
-
 Wenn Sie die Option **Shared CDN** (veröffentlicht am 19.11.2020) für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
 
 ```bash
@@ -379,12 +325,6 @@ Wenn Sie die **ausgehende IP-Adresse** des Webhostings benötigen, verwenden Sie
 |Finnland|FI|188.165.143.87|2001:41d0:1:1b00:188:165:143:87|
 |Litauen|LT|188.165.31.87|2001:41d0:1:1b00:188:165:31:87|
 |Deutschland|DE|87.98.247.87|2001:41d0:1:1b00:87:98:247:87|
-
-Wenn Sie die Option **CDN** für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
-
-```bash
-213.186.33.169
-```
 
 Wenn Sie die Option **Shared CDN** (veröffentlicht am 19.11.2020) für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
 
@@ -417,12 +357,6 @@ Wenn Sie die **ausgehende IP-Adresse** des Webhostings benötigen, verwenden Sie
 |Litauen|LT|188.165.31.3|2001:41d0:1:1b00:188:165:31:3|
 |Deutschland|DE|87.98.247.3|2001:41d0:1:1b00:87:98:247:3|
 
-Wenn Sie die Option **CDN** für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
-
-```bash
-213.186.33.171
-```
-
 Wenn Sie die Option **Shared CDN** (veröffentlicht am 19.11.2020) für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
 
 ```bash
@@ -453,12 +387,6 @@ Wenn Sie die **ausgehende IP-Adresse** des Webhostings benötigen, verwenden Sie
 |Finnland|FI|188.165.143.50|2001:41d0:1:1b00:188:165:143:50|
 |Litauen|LT|188.165.31.50|2001:41d0:1:1b00:188:165:31:50|
 |Deutschland|DE|87.98.247.50|2001:41d0:1:1b00:87:98:247:50|
-
-Wenn Sie die Option **CDN** für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
-
-```bash
-213.186.33.173
-```
 
 Wenn Sie die Option **Shared CDN** (veröffentlicht am 19.11.2020) für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
 
@@ -491,12 +419,6 @@ Wenn Sie die **ausgehende IP-Adresse** des Webhostings benötigen, verwenden Sie
 |Litauen|LT|5.196.129.52|2001:41d0:301:9::20|
 |Deutschland|DE|5.135.108.219|2001:41d0:301:1::20|
 |Belgien|BE|5.196.203.200|2001:41d0:301:10::20|
-
-Wenn Sie die Option **CDN** für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
-
-```bash
-213.186.33.176
-```
 
 Wenn Sie die Option **Shared CDN** (veröffentlicht am 19.11.2020) für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
 
@@ -531,12 +453,6 @@ Wenn Sie die **ausgehende IP-Adresse** des Webhostings benötigen, verwenden Sie
 |Deutschland|DE|94.23.162.9|2001:41d0:301:1::21|
 |Belgien|BE|178.32.40.72|2001:41d0:301:10::21|
 
-Wenn Sie die Option **CDN** für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
-
-```bash
-213.186.33.177
-```
-
 Wenn Sie die Option **Shared CDN** (veröffentlicht am 19.11.2020) für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
 
 ```bash
@@ -568,12 +484,6 @@ Wenn Sie die **ausgehende IP-Adresse** des Webhostings benötigen, verwenden Sie
 |Litauen|LT|37.59.69.122|2001:41d0:301:9::23|
 |Deutschland|DE|87.98.242.65|2001:41d0:301:1::23|
 |Belgien|BE|137.74.229.68|2001:41d0:301:10::23|
-
-Wenn Sie die Option **CDN** für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
-
-```bash
-213.186.33.186
-```
 
 Wenn Sie die Option **Shared CDN** (veröffentlicht am 19.11.2020) für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
 
@@ -607,12 +517,6 @@ Wenn Sie die **ausgehende IP-Adresse** des Webhostings benötigen, verwenden Sie
 |Deutschland|DE|178.33.38.88|2001:41d0:301:1::24|
 |Belgien|BE|213.32.81.103|2001:41d0:301:10::24|
 
-Wenn Sie die Option **CDN** für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
-
-```bash
-213.186.33.187
-```
-
 Wenn Sie die Option **Shared CDN** (veröffentlicht am 19.11.2020) für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
 
 ```bash
@@ -644,12 +548,6 @@ Wenn Sie die **ausgehende IP-Adresse** des Webhostings benötigen, verwenden Sie
 |Litauen|LT|188.165.29.126|2001:41d0:301:9::26|
 |Deutschland|DE|94.23.160.29|2001:41d0:301:1::26|
 |Belgien|BE|178.32.43.46|2001:41d0:301:10::26|
-
-Wenn Sie die Option **CDN** für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
-
-```bash
-188.165.51.93
-```
 
 Wenn Sie die Option **Shared CDN** (veröffentlicht am 19.11.2020) für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
 
@@ -683,12 +581,6 @@ Wenn Sie die **ausgehende IP-Adresse** des Webhostings benötigen, verwenden Sie
 |Deutschland|DE|91.134.179.251|2001:41d0:301:1::27|
 |Belgien|BE|193.70.58.226|2001:41d0:301:10::27|
 
-Wenn Sie die Option **CDN** für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
-
-```bash
-145.239.51.129
-```
-
 Wenn Sie die Option **Shared CDN** (veröffentlicht am 19.11.2020) für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
 
 ```bash
@@ -720,12 +612,6 @@ Wenn Sie die **ausgehende IP-Adresse** des Webhostings benötigen, verwenden Sie
 |Litauen|LT|51.83.29.135|2001:41d0:301:9::28|
 |Deutschland|DE|54.37.173.127|2001:41d0:301:1::28|
 |Belgien|BE|193.70.70.144|2001:41d0:301:10::28|
-
-Wenn Sie die Option **CDN** für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
-
-```bash
-51.255.119.116
-```
 
 Wenn Sie die Option **Shared CDN** (veröffentlicht am 19.11.2020) für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
 
@@ -759,12 +645,6 @@ Wenn Sie die **ausgehende IP-Adresse** des Webhostings benötigen, verwenden Sie
 |Deutschland|DE|145.239.222.45|2001:41d0:301:1::29|
 |Belgien|BE|178.32.44.140|2001:41d0:301:10::29|
 
-Wenn Sie die Option **CDN** für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
-
-```bash
- 51.255.215.242 
-```
-
 Wenn Sie die Option **Shared CDN** (veröffentlicht am 19.11.2020) für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
 
 ```bash
@@ -796,12 +676,6 @@ Wenn Sie die **ausgehende IP-Adresse** des Webhostings benötigen, verwenden Sie
 |Litauen|LT|188.165.24.146|2001:41d0:301:9::30|
 |Deutschland|DE|51.255.232.79|2001:41d0:301:1::30|
 |Belgien|BE|213.32.107.241|2001:41d0:301:10::30|
-
-Wenn Sie die Option **CDN** für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
-
-```bash
-54.36.13.47
-```
 
 Wenn Sie die Option **Shared CDN** (veröffentlicht am 19.11.2020) für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
 
@@ -854,12 +728,6 @@ Wenn Sie die **ausgehende IP-Adresse** des Webhostings benötigen, verwenden Sie
 |Country|Country Code|IPv4|IPv6|
 |---|---|----|---|
 |Canada|CA|51.161.122.78|2607:5300:202:0:0::51|
-
-Wenn Sie die Option **CDN** für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
-
-```bash
-178.32.120.166
-```
 
 Wenn Sie die Option **Shared CDN** (veröffentlicht am 19.11.2020) für Ihr Webhosting aktiviert haben, verwenden Sie diese IP-Adresse:
 
