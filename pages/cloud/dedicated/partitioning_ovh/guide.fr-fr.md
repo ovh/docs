@@ -282,7 +282,7 @@ Le tableau suivant donne un aperçu des erreurs clients les plus connues et de l
 
 #### Auto-correction des données d'entrée client
 
-Afin d'améliorer l'expérience client, réduire la charge de travail du [support OVHcloud](https://help.ovhcloud.com/fr/) et éviter les changements brutaux qui pourraient avoir un impact pour le client, certaines saisies effectuées par le client sont automatiquement corrigées ou modifiées par le backend. Le tableau suivant donne une vue d'ensemble de ce qui est actuellement auto-corrigé / changé lors du **pre-processing** :
+Afin d'améliorer l'expérience client, réduire la charge de travail du support OVHcloud et éviter les changements brutaux qui pourraient avoir un impact pour le client, certaines saisies effectuées par le client sont automatiquement corrigées ou modifiées par le backend. Le tableau suivant donne une vue d'ensemble de ce qui est actuellement auto-corrigé / changé lors du **pre-processing** :
 
 |Sujet|Description|
 |---|---|
