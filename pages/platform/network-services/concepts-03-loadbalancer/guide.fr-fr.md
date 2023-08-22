@@ -8,7 +8,7 @@ updated: 2023-08-11
 Le Load Balancer du Public Cloud est basé sur le projet Openstack Octavia et fournit beaucoup de capacités de configuration. Le but de cette page est d'expliciter les concepts de configuration pour que vous puissiez avoir une meilleures compréhension des capacités du Load Balancer.
 
 ## Load Balancer Configuration concepts
-![LB concepts](./LB_concepts.svg)
+![LB concepts](./images/LB_concepts.svg)
 
 ### Listener
 Un Listener définit un point d'entrée pour le traffic qui sera traité par le Load Balancer. Ces attributs principaux sont le protocole et le port, par exemple `HTTPS` et `443`. Vous pouvez définir plusieurs listeners sur un Load Balancer. 

@@ -9,7 +9,7 @@ The Public Cloud Load Balancer (based on Octavia Openstack project) provides a l
 
 
 ## Load Balancer Configuration concepts
-![LB concepts](./LB_concepts.svg)
+![LB concepts](./images/LB_concepts.svg)
 
 ### Listener
 The listener specifies a listening endpoint where the incoming traffic is received. Its mains attributes are the protocol and the port, for instance `HTTPS` and `443`. Note that you can have multiple listeners on one Load Balancer.
