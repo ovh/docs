@@ -17,18 +17,20 @@ The goal of this tutorial is to see how it is possible to deploy **Triton Infere
 ## Requirements
 
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB);
-- [ovhai CLI](https://docs.ovh.com/gb/en/publiccloud/ai/cli/install-client/) installed
+- [ovhai CLI](/pages/platform/ai/cli_10_howto_install_cli) installed
 - An AI Training project created inside a [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account;
-- A [user for AI Training](https://docs.ovh.com/gb/en/publiccloud/ai/users/);
+- A [user for AI Training](/pages/platform/ai/gi_01_manage_users);
 - [Docker](https://www.docker.com/get-started) installed on your local computer or on a Virtual Machine;
 - Some knowledge about Docker images and [Dockerfile](https://docs.docker.com/engine/reference/builder/);
 - Some basics on [NVIDIA Triton Inference Server](https://docs.nvidia.com/deeplearning/triton-inference-server/user-guide/docs/getting_started/quickstart.html)
 
-## Create the model repository
+## Instructions
+
+### Create the model repository
 
 The model repository is the directory in which you place the AI models you want **Triton Inference Server** to serve.
 
-### Custom models
+#### Custom models
 
 **Triton Inference Sever** allows you to deploy several models from multiple Deep Learning and Machine Learning frameworks. For example, Triton Inference Server can serve the following model formats: TensorRT, TensorFlow, PyTorch, ONNX, ...
 
@@ -66,7 +68,7 @@ An example model repository is included in the `docs/examples/model_repository`.
 > We will use these [models already trained](https://github.com/triton-inference-server/server/tree/main/docs/examples/model_repository) in this tutorial.
 >
 
-### Sample models
+#### Sample models
 
 First of all, you have to clone locally the Triton Inference Server GitHub repository.
 
@@ -84,6 +86,7 @@ git clone -b r23.03 https://github.com/triton-inference-server/server.git
 Before using the repository, you have to fetch any missing model definition files from their public model zoos via the provided script: `fetch_models.sh`.
 
 The following models will be downloaded:
+
 - densenet_onnx
 - inception_graphdef
 - simple
@@ -147,9 +150,9 @@ model_repository/
 17 directories, 18 files
 ```
 
-### Upload the models to an Object Storage container
+#### Upload the models to an Object Storage container
 
-To upload the models to an OVHcloud Object Storage container, you can use the `ovhai` [CLI](https://docs.ovh.com/gb/en/publiccloud/ai/cli/access-object-storage-data/).
+To upload the models to an OVHcloud Object Storage container, you can use the `ovhai` [CLI](/pages/platform/ai/cli_17_how_to_cli_data_notebooks).
 
 > [!warning]
 >
@@ -165,6 +168,7 @@ Once your models have been uploaded, check that all your models are available:
 ```console
 ovhai bucket object list my-models@GRA
 ```
+
 You should obtain:
 
 ```console
@@ -189,17 +193,17 @@ DATE                       BYTES    NAME                                        
 2023-05-04T12:45:42.056610 382 B    simple_string/config.pbtxt                        Object      840206b87fb3259eabdc3bb6478ab687
 ```
 
-## Launch Triton Inference Server with AI Training
+### Launch Triton Inference Server with AI Training
 
-Triton is optimized to provide the best inferencing performance by using **GPUs**. In this tutorial, it will be running with one GPU thanks to OVHcloud **AI Training** tool.
+Triton is optimized to provide the best inferencing performance by using **GPUs**. In this tutorial, it will be running with one GPU thanks to the OVHcloud **AI Training** tool.
 
-First of all, pull the **Triton Inference Server** Docker image from [NGC repository](https://catalog.ngc.nvidia.com/orgs/nvidia/containers/tritonserver). In this tutorial, we will use `23.03-py3` container version.
+First of all, pull the **Triton Inference Server** Docker image from the [NGC repository](https://catalog.ngc.nvidia.com/orgs/nvidia/containers/tritonserver). In this tutorial, we will use the `23.03-py3` container version.
 
 ```console
 docker pull nvcr.io/nvidia/tritonserver:23.03-py3
 ```
 
-### Customize the Triton Inference Server Docker image for OVHcloud AI Tools
+#### Customize the Triton Inference Server Docker image for OVHcloud AI Tools
 
 To make Triton Inference Server image compatible with AI Training, you have to rebuild the image by giving the OVHcloud user rights on the `/workspace` content.
 
@@ -208,7 +212,7 @@ To make Triton Inference Server image compatible with AI Training, you have to r
 > For more information on how to build Docker images compatible with OVHcloud AI solutions, please refer to this [documentation](/pages/platform/ai/training_tuto_02_build_custom_image).
 >
 
-#### Create the Dockerfile
+##### Create the Dockerfile
 
 Your **Dockerfile** should start with the `FROM` instruction indicating the parent image to use. In our case we choose to start from the `FROM nvcr.io/nvidia/tritonserver:23.03-py3` pulled image:
 
@@ -247,7 +251,7 @@ RUN chown -R 42420:42420 /workspace
 ENV HOME=/workspace
 ```
 
-#### Build the Docker image from the Dockerfile
+##### Build the Docker image from the Dockerfile
 
 Launch the following command from the **Dockerfile** directory to build the image:
 
@@ -269,11 +273,11 @@ docker build . -t triton-inference-server:23.03-py3
 > `docker buildx build --platform linux/amd64 ...`
 >
 
-#### Push the server image into the shared registry
+##### Push the server image into the shared registry
 
 > [!warning]
 >
-> The shared registry of AI Training should only be used for testing purposes. Please consider attaching your own registry. More information about this can be found [here](https://docs.ovh.com/gb/en/publiccloud/ai/training/add-private-registry/).
+> The shared registry of AI Training should only be used for testing purposes. Please consider attaching your own registry. More information about this can be found [here](/pages/platform/ai/training_guide_05_howto_add_registry).
 >
 
 Find the address of your shared registry by launching this command:
@@ -287,6 +291,7 @@ Log in on the shared registry with your usual OpenStack credentials:
 ```console
 docker login -u <user> -p <password> <shared-registry-address>
 ```
+
 Push the compiled image into the shared registry:
 
 ```console
@@ -294,7 +299,7 @@ docker tag triton-inference-server:23.03-py3 <shared-registry-address>/triton-in
 docker push <shared-registry-address>/triton-inference-server:23.03-py3
 ```
 
-### Launch Triton Inference Server in a dedicated job
+#### Launch Triton Inference Server in a dedicated job
 
 Triton Inference Server exposes both **HTTP/REST** and **gRPC** endpoints. Therefore, clients can communicate with Triton using either an HTTP/REST and GRPC protocols.
 
@@ -308,7 +313,7 @@ ovhai job run --default-http-port 8000 \
               -- bash -c 'tritonserver --model-repository=/workspace/models'
 ```
 
-So that the client can communicate with the Triton Inference Server, you must retrieve the **server job ip and url**.
+So that the client can communicate with the Triton Inference Server, you must retrieve the **server job IP and URL**.
 
 If necessary, install `jq` as follows:
 
@@ -334,7 +339,7 @@ Then, you can get the **server job ip**:
 ovhai job get <job_id> -o json | jq '.status.ip' -r
 ```
 
-## Send inference requests
+### Send inference requests
 
 First, you have to use a `docker pull` to get the client libraries and examples image from NGC.
 
@@ -349,7 +354,7 @@ docker pull nvcr.io/nvidia/tritonserver:23.03-py3-sdk
 > ![DogImage](images/dog.jpg){.thumbnail}
 >
 
-### Test it locally (optional)
+#### Test it locally (optional)
 
 ```console
 docker run -it --rm --net=host nvcr.io/nvidia/tritonserver:23.03-py3-sdk
@@ -377,11 +382,11 @@ Image '/workspace/images/dog.jpg':
 9.468060 (151) = CHIHUAHUA
 ```
 
-### Customize the Triton client Docker image for OVHcloud AI Tools
+#### Customize the Triton client Docker image for OVHcloud AI Tools
 
 Here, the method is exactly the same as the one used previously for the **Triton server**. Refer to the part concerning Triton server Docker image for more details.
 
-#### Create the Dockerfile
+##### Create the Dockerfile
 
 ```console
 FROM nvcr.io/nvidia/tritonserver:23.03-py3-sdk
@@ -393,7 +398,7 @@ RUN chown -R 42420:42420 /workspace
 ENV HOME=/workspace
 ```
 
-#### Build the Docker image from the Dockerfile
+##### Build the Docker image from the Dockerfile
 
 Launch the following command from the **Dockerfile** directory to build your application image:
 
@@ -401,7 +406,7 @@ Launch the following command from the **Dockerfile** directory to build your app
 docker build . -t triton-inference-server:23.03-py3-sdk
 ```
 
-#### Push the client image into the shared registry
+##### Push the client image into the shared registry
 
 Push the compiled image into the shared registry:
 
@@ -410,7 +415,7 @@ docker tag triton-inference-server:23.03-py3-sdk <shared-registry-address>/trito
 docker push <shared-registry-address>/triton-inference-server:23.03-py3-sdk
 ```
 
-### Launch a Triton Client job for inference
+#### Launch a Triton Client job for inference
 
 Run the example image client inside an AI Training job to perform image classification using the example **densenet_onnx** model.
 
@@ -425,9 +430,9 @@ To be able to classify your own images, you can create an Object Container in th
 ovhai bucket object upload my-images@GRA image_repository/ --remove-prefix image_repository/dog.jpg
 ```
 
-To send a request for the **densenet_onnx** model use an image from the `/workspace/images` directory. In this case we ask for the top 3 classifications.
+To send a request for the **densenet_onnx** model, use an image from the `/workspace/images` directory. In this case we ask for the top 3 classifications.
 
-#### HTTP/REST protocol
+##### HTTP/REST protocol
 
 You just have to use the `-u` flag to point at the gRPC endpoint on Triton. The inference server URL will be your **server job URL**.
 
@@ -448,7 +453,7 @@ ovhai job run \
      -- bash -c '/workspace/install/bin/image_client -u <server_job_ip>:8000 -m densenet_onnx -c 3 -s INCEPTION /workspace/images/'
 ```
 
-Once your job is in `RUNNING`, check the logs to obtain the results of the classification.
+Once your job is `RUNNING`, check the logs to obtain the results of the classification.
 
 ```console
 ovhai job logs <job_id> --from job
@@ -463,11 +468,9 @@ You should obtain something like that:
 2023-08-21T14:47:03Z [job] 9.468060 (151) = CHIHUAHUA
 ```
 
-#### gRPC protocol
+##### gRPC protocol
 
-If you want to use the **gRPC protocol** by providing the `-i` flag.
-
-You must also use the `-u` flag to point at the gRPC endpoint on Triton. The inference server URL will be your **server job IP**.
+If you want to use the **gRPC protocol** by providing the `-i` flag, you must also use the `-u` flag to point at the gRPC endpoint on Triton. The inference server URL will be your **server job IP**.
 
 > [!warning]
 >
@@ -486,7 +489,7 @@ ovhai job run \
      -- bash -c '/workspace/install/bin/image_client -i grpc -u <server_job_ip>:8001 -m densenet_onnx -c 3 -s INCEPTION /workspace/images/'
 ```
 
-Once your job is in `RUNNING`, check the logs to obtain the results of the classification.
+Once your job is `RUNNING`, check the logs to obtain the results of the classification.
 
 ```console
 ovhai job logs <job_id> --from job
