@@ -100,7 +100,7 @@
             + [Securing a server with a Memcached service](cloud/dedicated/memcache_secure)
             + [ESXi Dedicated Servers - FAQ](cloud/dedicated/faq-esxi)
             + [Manage and secure your ESXi dedicated server from the outset](cloud/dedicated/esxi-hardening)
-            + [How to mitigate the Zenbleed vulnerability](cloud/dedicated/zenbleed-vulnerability)
+            + [How to mitigate the Zenbleed vulnerability](cloud/dedicated/vulnerability-zenbleed)
             + [How to mitigate the Downfall vulnerability](cloud/dedicated/vulnerability-downfall)
             + [How to mitigate the Inception vulnerability](cloud/dedicated/vulnerability-inception)
             + [Find your patch for Meltdown and Spectre](cloud/dedicated/meltdown_spectre_fixes_os)
