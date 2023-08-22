@@ -1,8 +1,6 @@
 ---
 title: Remplacement à chaud - RAID Matériel
-slug: hotswap-raid-hard
 excerpt: Retrouvez ici comment remplacer un disque à chaud sur un serveur avec un RAID matériel
-section: RAID & disques
 updated: 2023-08-21
 ---
 
