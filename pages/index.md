@@ -541,6 +541,7 @@
         + [Concepts](public-cloud-network-concepts)
             + [Concepts - Public Cloud Networking](platform/network-services/concepts-01-public-cloud-networking-concepts)
             + [Concepts - Additional IP or Floating IP](platform/network-services/concepts-02-additional-ip-vs-floating-ip)
+            + [Concepts - Load Balancer](platform/network-services/concepts-03-loadbalancer)
         + [Getting started](public-cloud-network-getting-started)
             + [Getting started with Load Balancer on Public Cloud](platform/network-services/getting-started-01-create-lb-service)
             + [Creating a private network with Gateway](platform/network-services/getting-started-02-create-private-network-gateway)
