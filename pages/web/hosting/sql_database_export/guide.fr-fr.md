@@ -82,7 +82,7 @@ Le tableau qui s'affiche contient toutes les bases de données créées dans le 
 
 ![databasedump](images/database-dump-step6.png){.thumbnail}
 
-Une fois sur l'interface de connexion à *phpMyAdmin*, renseignez les informations de la base de données, choisissez dans le menu déroulant si vous souhaitez afficher les données actuelles de la base de données ou celles d'une sauvegarde antérieure, puis connectez-vous. Une fois connecté, rendez-vous à présent sur l'onglet `Exporter`{.action} où deux méthodes d'exportation sont proposées :
+Une fois sur l'interface de connexion à *phpMyAdmin*, renseignez les informations de la base de données, puis connectez-vous. Une fois connecté, rendez-vous à présent sur l'onglet `Exporter`{.action} où deux méthodes d'exportation sont proposées :
 
 - **méthode rapide** : vous pouvez définir le format d'export de la sauvegarde. Le plus courant est le format SQL, mais d'autres sont proposés selon vos besoins ;
 
@@ -121,13 +121,6 @@ Prenez soin de remplacer les informations génériques dans ce script par les in
 |user_password|Le mot de passe du nom d'utilisateur indiqué précédemment.|
 |name_of_database|Le nom de la base de données concernée.|
 |backup_file_name|Le nom que portera le fichier de sauvegarde une fois cette dernière exécutée.|
-
-> [!primary]
->
-> Si le datacenter de votre hébergement web est Paris (P19), vous pouvez réaliser une sauvegarde à partir d'une date antérieure en ajoutant un port dans votre script. Pour une sauvegarde à la date d'hier, utilisez le port « 3307 ». Pour une sauvegarde d'il y a sept jours, utilisez le port « 3317 ». 
-> 
-> À noter que l'utilisation du port « 3306 » permettra de réaliser une sauvegarde des données actuellement présentes dans la base de données.
->
 
 #### Étape 2 : télécharger le script sur l'espace de stockage FTP
 
