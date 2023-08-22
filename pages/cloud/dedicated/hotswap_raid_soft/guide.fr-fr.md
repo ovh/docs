@@ -1,8 +1,6 @@
 ---
 title: Remplacement à chaud - RAID logiciel
-slug: hotswap-raid-soft
 excerpt: Retrouvez ici comment remplacer un disque à chaud sur un serveur avec un RAID logiciel
-section: RAID & disques
 updated: 2023-08-21
 ---
 

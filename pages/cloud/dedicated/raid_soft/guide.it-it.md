@@ -1,8 +1,6 @@
 ---
 title: Configurare un RAID software
-slug: raid-software
 excerpt: Come configurare il software RAID di un server
-section: RAID e dischi
 updated: 2023-08-21
 ---
 

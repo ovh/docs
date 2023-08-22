@@ -1,8 +1,6 @@
 ---
 title: Gestion du RAID logiciel
-slug: raid-soft
 excerpt: Apprenez à vérifier l'état de votre RAID logiciel
-section: RAID & disques
 updated: 2023-08-21
 ---
 

@@ -1,8 +1,6 @@
 ---
 title: Programowa macierz RAID
-slug: raid-soft
 excerpt: Dowiedz się, jak konfiguracja software RAID Twojego serwera
-section: RAID & dyski
 updated: 2023-08-21
 ---
 

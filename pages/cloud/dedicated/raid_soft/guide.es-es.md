@@ -1,8 +1,6 @@
 ---
 title: RAID por software
-slug: raid-software
 excerpt: Cómo configurar el software RAID de un servidor
-section: RAID y discos
 updated: 2023-08-21
 ---
 

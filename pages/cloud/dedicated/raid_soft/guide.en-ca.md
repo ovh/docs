@@ -1,8 +1,6 @@
 ---
 title: Managing software RAID
-slug: raid-soft
 excerpt: Find out how to verify the state of your software RAID
-section: RAID and disks
 updated: 2023-08-21
 ---
 

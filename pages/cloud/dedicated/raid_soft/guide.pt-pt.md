@@ -1,8 +1,6 @@
 ---
 title: RAID por software
-slug: raid-soft
 excerpt: Saiba como configurar o software RAID de um servidor
-section: RAID e discos
 updated: 2023-08-21
 ---
 

@@ -1,8 +1,6 @@
 ---
 title: Festplatte auf einem Server mit Software-RAID im laufenden Betrieb wechseln
-slug: hotswap-software-raid
 excerpt: Hier erfahren Sie, wie eine Festplatte auf einem Server mit Software-RAID im laufenden Betrieb ausgetauscht wird
-section: RAID & Festplatten
 updated: 2023-08-21
 ---
 
@@ -302,7 +300,7 @@ Die defekte Festplatte kann jetzt von einem Techniker im Rechenzentrum ausgetaus
 
 [OVHcloud API & Partitioning](/pages/cloud/dedicated/partitioning_ovh) (Englisch)
 
-[Managing hardware RAID](/pages/cloud/dedicated/raid_hard)(Englisch)
+[Managing hardware RAID](/pages/cloud/dedicated/raid_hard) (Englisch)
 
 [Hot Swap - Hardware RAID](/pages/cloud/dedicated/hotswap_raid_hard) (Englisch)
 

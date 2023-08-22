@@ -1,8 +1,6 @@
 ---
 title: Substituir um disco a quente num servidor com RAID por software
-slug: hotswap-raid-software
 excerpt: Saiba como substituir a quente um disco num servidor com RAID por software
-section: RAID e discos
 updated: 2023-08-21
 ---
 
