@@ -1,7 +1,7 @@
 ---
 title: "Récupérer la sauvegarde de la base de données d'un hébergement web"
 excerpt: "Découvrez comment récupérer la sauvegarde d'une base de données de votre hébergement web OVHcloud"
-updated: 2023-08-21
+updated: 2023-08-22
 ---
 
 ## Objectif
