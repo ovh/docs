@@ -87,7 +87,7 @@ Sustituya las «X» por los valores correspondientes:
 > 
 >Si utiliza la codificación Unicode, el tamaño máximo del SMS se reducirá a 70 caracteres, frente a los 160 de la codificación de 7 bits.
 >
->Para más información sobre los caracteres autorizados con codificación de 7 bits, consulte el [anexo](/pages/telecom/sms/envoyer_des_sms_depuis_une_url_-_http2sms#anexo) que encontrará al final de esta guía.
+>Para más información sobre los caracteres autorizados con codificación de 7 bits, consulte el [anexo](#anexo) que encontrará al final de esta guía.
 >
 
 
@@ -120,7 +120,7 @@ Si el envío se ha realizado correctamente:
 Si se ha producido un fallo en el envío:
 
 ```xml
-<?xml version="1.0" encoding="UTF-8" ?><response><status>201</status><message>Missing message. For more informations : http://guides.ovh.com/httpToSms</message></response>
+<?xml version="1.0" encoding="UTF-8" ?><response><status>201</status><message>Missing message. For more informations : https://help.ovhcloud.com/csm/es-es-sms-sending-via-url-http2sms?id=kb_article_view&sysparm_article=KB0051394</message></response>
 ```
 
 
@@ -167,7 +167,7 @@ Si se ha producido un fallo en el envío:
 </HEAD>
 <BODY>
 KO<br>
-Missing message. For more informations: https://docs.ovh.com/es/sms/enviar-sms-desde-una-url<br>
+Missing message. For more informations: https://help.ovhcloud.com/csm/es-es-sms-sending-via-url-http2sms?id=kb_article_view&sysparm_article=KB0051394<br>
 </BODY>
 </HTML>
 ```
@@ -186,7 +186,7 @@ Si se ha producido un fallo en el envío:
 
 ```
 KO
-Missing message. For more informations : http://guides.ovh.com/httpToSms
+Missing message. For more informations : https://help.ovhcloud.com/csm/es-es-sms-sending-via-url-http2sms?id=kb_article_view&sysparm_article=KB0051394
 ```
 
 ## Anexo

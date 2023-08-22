@@ -86,7 +86,7 @@ Sostituisci le X con le informazioni qui di seguito:
 > 
 >Se si modifica la codifica su Unicode, l’SMS sarà al massimo di 70 caratteri rispetto ai 160 della codifica a 7 bit.
 >
->Per maggiori informazioni sui caratteri autorizzati in codifica a 7 bit, fai riferimento [all'allegato](./#allegato) in fondo a questa guida.
+>Per maggiori informazioni sui caratteri autorizzati in codifica a 7 bit, fai riferimento [all'allegato](#allegato) in fondo a questa guida.
 >
 
 
@@ -118,7 +118,7 @@ In caso di fallimento, la causa è specificata;
 - In caso di fallimento:
 
 ```xml
-<?xml version="1.0" encoding="UTF-8" ?><response><status>201</status><message>Missing message. Per maggiori informazioni visitare la pagina: http://guides.ovh.com/httpToSms</message></response>
+<?xml version="1.0" encoding="UTF-8" ?><response><status>201</status><message>Missing message. Per maggiori informazioni visitare la pagina: https://help.ovhcloud.com/csm/it-sms-sending-via-url-http2sms?id=kb_article_view&sysparm_article=KB0051388</message></response>
 ```
 
 
@@ -133,7 +133,7 @@ In caso di fallimento, la causa è specificata;
 - In caso di fallimento:
 
 ```json
-{"status":201,"message":"Missing message. Per maggiori informazioni visitare la pagina: http://guides.ovh.com/httpToSms”}
+{"status":201,"message":"Missing message. Per maggiori informazioni visitare la pagina: https://help.ovhcloud.com/csm/it-sms-sending-via-url-http2sms?id=kb_article_view&sysparm_article=KB0051388"}
 ```
 
 
@@ -166,7 +166,7 @@ OK<br>
 <title>HTTP2SMS</title>
 </HEAD>
 <BODY>
-KO<br>Missing message. Per maggiori informazioni visitare la pagina: http://guides.ovh.com/httpToSms<br>
+KO<br>Missing message. Per maggiori informazioni visitare la pagina: https://help.ovhcloud.com/csm/it-sms-sending-via-url-http2sms?id=kb_article_view&sysparm_article=KB0051388<br>
 </BODY>
 </HTML>
 ```
@@ -185,7 +185,7 @@ OK
 
 ```
 KO
-Missing message. Per maggiori informazioni visitare la pagina: http://guides.ovh.com/httpToSms”
+Missing message. Per maggiori informazioni visitare la pagina: https://help.ovhcloud.com/csm/it-sms-sending-via-url-http2sms?id=kb_article_view&sysparm_article=KB0051388”
 ```
 
 ## Allegato
