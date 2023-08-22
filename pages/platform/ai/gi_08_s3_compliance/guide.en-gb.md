@@ -1,10 +1,10 @@
 ---
 title: Data - S3 compliance with AI Tools
 excerpt: Learn how to use S3 buckets with AI Tools
-updated: 2023-08-21
+updated: 2023-08-22
 ---
 
-**Last updated 21st August, 2023.**
+**Last updated 22nd August, 2023.**
 
 ## Objective
 
@@ -22,9 +22,9 @@ In the next steps, you will be able to **create a user to manage your S3 buckets
 
 Then, you will be able to use this bucket with the different **OVHcloud AI Tools** through the `ovhai` CLI.
 
-### Creating a S3 user
+### Creating an S3 user
 
-First of all, you must have a S3-user with the correct rights to manage S3 buckets. 
+First of all, you must have an S3-user with the correct rights to manage S3 buckets. 
 
 To do this, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager\), go to the `Public Cloud` section, and select the Public Cloud project concerned. Then click on `Object Storage` in the left-hand menu.
 
@@ -32,7 +32,7 @@ Here, you can create your S3 user by clicking on `Create User`. If you already h
 
 > [!warning]
 >
-> In both cases, please be sure to save your S3 credentials: **S3 user name**, **S3 access key** and **S3 secret key**. We will use them later, to create a S3 datastore.
+> In both cases, please be sure to save your S3 credentials: **S3 user name**, **S3 access key** and **S3 secret key**. We will use them later, to create an S3 datastore.
 >
 
 For more information about creating S3 users, you can check this [Object Storage documentation](/pages/cloud/storage/object_storage/s3_identity_and_access_management)
