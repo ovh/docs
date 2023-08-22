@@ -1,10 +1,12 @@
 ---
-title: 'Recuperare il backup del database di un hosting Web'
-excerpt: 'Come ripristinare il backup di un database di un hosting Web OVH'
-updated: 2018-05-19
+title: "Recuperare il backup del database di un hosting Web"
+excerpt: "Questa guida ti mostra come ripristinare il backup di un database di un hosting Web OVHcloud"
+updated: 2023-08-22
 ---
 
-**Ultimo aggiornamento: 25/02/2019**
+> [!primary]
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
+>
 
 ## Obiettivo
 

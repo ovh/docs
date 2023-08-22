@@ -1,13 +1,14 @@
 ---
-title: 'Backup einer Webhosting-Datenbank exportieren'
-excerpt: 'Hier erfahren Sie, wie Sie ein Backup einer Datenbank Ihres OVHcloud Webhostings exportieren.'
-legacy_guide_number: g1394
-updated: 2018-05-19
+title: "Backup einer Webhosting-Datenbank exportieren"
+excerpt: "Diese Anleitung erklärt, wie Sie ein Backup einer Datenbank Ihres OVHcloud Webhostings exportieren."
+updated: 2023-08-22
 ---
 
-**Stand 27.11.2018**
+> [!primary]
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
+>
  
-## Einleitung
+## Ziel
 
 Fast alle Content Management Systeme (CMS) wie WordPress oder Joomla! verwenden heutzutage Datenbanken, um sogenannte dynamische Inhalte wie beispielsweise Kommentare oder Artikel zu speichern. Es kann aus verschiedenen Gründen erforderlich sein, ein Backup Ihrer Datenbank zu erstellen, um deren Inhalt zu exportieren.
 

@@ -1,12 +1,14 @@
 ---
-title: 'Recuperar a cópia de segurança da base de dados de um alojamento web'
-excerpt: 'Saiba como recuperar a cópia de segurança de uma base de dados de um alojamento web da OVH'
-updated: 2018-05-19
+title: "Recuperar a cópia de segurança da base de dados de um alojamento web"
+excerpt: "Saiba como recuperar a cópia de segurança de uma base de dados de um alojamento web da OVHcloud"
+updated: 2023-08-22
 ---
 
-**Última atualização: 14/02/2019**
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
 
-## Sumário
+## Objetivo
 
 As bases de dados, utilizadas pela maioria dos sistemas de gestão de conteúdos (Content Management System ou CMS), como o WordPress ou o Joomla!, permitem armazenar elementos dinâmicos, como comentários ou artigos. Por diversas razões, pode precisar de realizar a cópia de segurança de uma base de dados para mais tarde recuperar o seu conteúdo.
 

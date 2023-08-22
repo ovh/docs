@@ -1,10 +1,12 @@
 ---
-title: 'Tworzenie i pobieranie kopii zapasowej bazy danych na hostingu WWW'
-excerpt: 'Dowiedz się, jak pobrać kopię zapasową bazy danych Twojego hostingu WWW OVH'
-updated: 2018-05-19
+title: "Tworzenie i pobieranie kopii zapasowej bazy danych na hostingu WWW"
+excerpt: "Dowiedz się, jak pobrać kopię zapasową bazy danych Twojego hostingu WWW OVHcloud"
+updated: 2023-08-22
 ---
 
-**Ostatnia aktualizacja dnia 2018-08-/07**
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zgłóś propozycję modyfikacji” na tej stronie.
+>
 
 ## Wprowadzenie 
 
