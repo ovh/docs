@@ -360,6 +360,7 @@
             + [Adding a new Tier-1 Gateway in NSX](cloud/private-cloud/nsx-10-add-new-tier1-gateway)
             + [Setting up an IPsec Tunnel with NSX](cloud/private-cloud/nsx-12-configure-ipsec)
             + [NSX - FAQ](cloud/private-cloud/nsx-11-faq)
+            + [BGP between 2 PCC NSX-t inside the same vRack](cloud/private-cloud/BGP_between_2_PCC_NSX-t_inside_the_same_vRack)
         + [VMware NSX-v](hosted-private-cloud-hosted-private-cloud-powered-by-vmware-nsx-v)
             + [VMware NSX-v - End of Support](cloud/private-cloud/nsx_nsx-v-eos)
             + [Accessing the NSX-v interface](cloud/private-cloud/nsx_access-interface)
