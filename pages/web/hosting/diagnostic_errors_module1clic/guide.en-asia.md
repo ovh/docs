@@ -1,10 +1,8 @@
 ---
 title: Resolving the most common 1-click module errors
 excerpt: Find out how to diagnose the most common cases of 1-click module creation errors
-updated: 2022-11-08
+updated: 2023-08-21
 ---
-
-**Last updated 8th November 2022**
 
 ## Objective
 
@@ -88,6 +86,18 @@ To link your domain to another directory, click on `Modify domain`{.action} in t
 ![modify_root_folder](images/modify_root_folder.png){.thumbnail}
 
 You can also log in to your hosting plan via [FTP](/pages/web/hosting/ftp_connection), then delete or move the folder content after backing it up.
+
+### “Either no configuration (ovhConfig or runtime), or the current configuration is not valid (please, double check the module's requirement) (as a reminder, the global configuration is used for module).”
+
+This message indicates that the .ovhconfig file does not exist or is invalid in order to install your 1-click module. This file contains the PHP version and runtime environment applied to your web hosting plan.
+
+We recommend using the most recent PHP version possible. **Before** you change the configuration of the .ovhconfig file, if you have other websites on your web hosting plan, please ensure that they are compatible with the new PHP version and/or the new runtime environment that you will apply to your web hosting plan.
+
+
+To check this configuration, please refer to our guides on the subject:
+
+- [Modify your web hosting plan’s configuration](/pages/web/hosting/ovhconfig_modify_system_runtime)
+- [Configure the .ovhconfig file of your web hosting plan](/pages/web/hosting/ovhconfig_configuration)
 
 ### "An error has occurred loading the information. (There is not enough space on your hosting (you need at least xxx MB))"
 
