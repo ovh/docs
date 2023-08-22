@@ -50,7 +50,7 @@ Pour modifier la valeur de la MTU de manière permanente :
 - Pour un adressage IP dynamique, la taille de la MTU est définie par le DHCP. Vous devez configurer le fichier de configuration DHCP situé dans `/etc/dhcp/dhclient.conf`.
 - Pour les adresses IP statiques, vous devez éditer le fichier de configuration de l'interface réseau situé dans `/etc/network/interfaces`.
 
-#### Windows :
+#### Windows
 
 ```bash
 netsh int ipv4 set subinterface **<Interface_name>** mtu=**<mtu_size>** store=persistent
