@@ -128,7 +128,7 @@ Substitua a informação genérica do script pela informação da base de dados 
 
 #### Etapa 2: descarregar o script no espaço de armazenamento FTP
 
-Depois de criar o script de backup, deverá carregá-lo para o espaço de armazenamento FTP do seu alojamento web. Para isso, consulte as informações descritas no passo 2 da documentação intitulada "[Ligar-se ao espaço de armazenamento](/páginas/web/hosting/hosting_how_to_get_my_website_online)".
+Depois de criar o script de backup, deverá carregá-lo para o espaço de armazenamento FTP do seu alojamento web. Para isso, consulte as informações descritas no passo 2 da documentação intitulada "[Ligar-se ao espaço de armazenamento](/pages/web/hosting/hosting_how_to_get_my_website_online)".
 
 Para realizar as seguintes etapas, transfira o script para a pasta que contém o website que utiliza a base de dados. **Tenha cuidado com o nome do ficheiro do script de backup.** Não substitua um ficheiro já existente com o mesmo nome no espaço de armazenamento FTP quando carregar o script. Se aparecer uma mensagem de aviso, altere o nome do script que acabou de criar e tente carregá-lo novamente.
 
