@@ -43,135 +43,137 @@ Consulte este manual de acordo com o método de backup pretendido.
 
 > [!warning]
 >
-> A responsabilidade sobre a configuração e a gestão dos serviços que a OVHcloud disponibiliza recai sobre o utilizador. Assim, deverá certificar-se de que estes funcionam corretamente.
+> A OVHcloud oferece-lhe serviços cuja configuração, gestão e responsabilidade é da sua responsabilidade. Assim, deverá assegurar o seu bom funcionamento.
 >
-> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se tiver alguma dúvida, recomendamos que recorra a um fornecedor de serviços especializado e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção “Quer saber mais?” deste manual.
+> Este guia fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](https://partner.ovhcloud.com/pt/diretory/). Não poderemos proporcionar-lhe assistência técnica. Mais informações na secção [Quer saber mais?](#go-further) deste guia.
 >
 
-### Recuperar uma cópia de segurança através da ferramenta da OVH
+### Recuperar um backup através da ferramenta da OVHcloud
 
-Para iniciar a operação, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, clique em `Alojamentos`{.action} e escolha o nome do alojamento em causa. Por fim, clique no separador `Base de dados`{.action}.
+Para aceder à ferramenta de backup da OVHcloud, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} e aceda à secção `Web Cloud`{.action}. Na coluna da esquerda, clique em `Alojamentos`{.action} e escolha o nome do alojamento correspondente. Por fim, clique no separador `Bases de dados`{.action}.
 
-Aparecerá uma tabela com todas as bases de dados criadas com o plano de alojamento web. Poderá optar por realizar um novo backup ou importar um já existente através de duas operações.
+Aparecerá uma tabela com todas as bases de dados criadas com o plano de alojamento web. Poderá optar por realizar um novo backup ou recuperar um já existente, através de duas operações distintas.
 
-#### 1 - Efetuar um novo backup da base de dados
+#### Etapa 1: efetuar um novo backup da base de dados
 
-Ainda no separador `Bases de dados`{.action}, clique nos três pontos à direita da base de dados que pretende salvaguardar e, a seguir, em `Criar uma cópia de segurança`{.action}.
+Ainda no separador `Bases de dados`{.action}, clique no botão `...`{.action} à direita da base de dados a salvaguardar e, a seguir, em `Criar uma cópia de segurança`{.action}.
 
 ![databasedump](images/database-dump-step2.png){.thumbnail}
 
-Na janela que surgir, selecione a data desejada para a cópia de segurança e clique em `Seguinte`{.action}. Certifique-se de que as informações no resumo estão corretas e clique em `Validar`{.action} para dar início à operação.
+Na janela que surgir, selecione a data desejada para o backup e clique no botão `Seguinte`{.action}. Certifique-se de que as informações no resumo estão corretas e clique em `Validar`{.action} para dar início à operação.
 
-Aguarde enquanto a cópia de segurança é realizada. Quando estiver disponível, poderá importá-la.
+Aguarde enquanto o backup é realizado. Quando estiver disponível, poderá importá-la.
 
 ![databasedump](images/database-dump-step3.png){.thumbnail}
 
-#### 2 - Recuperar uma cópia de segurança da base de dados
+#### Etapa 2: recuperar uma cópia de segurança da base de dados
 
-Ainda no separador `Bases de dados`{.action}, clique nos três pontos à direita da base de dados cujo backup pretende recuperar e, a seguir, em `Restaurar um backup`{.action}.
+Ainda no separador `Bases de dados`{.action}, clique no botão `...`{.action} à direita da base de dados a salvaguardar e, a seguir, em `Restaurar um backup`{.action}.
 
 ![databasedump](images/database-dump-step4.png){.thumbnail}
 
-A tabela que aparecerá apresenta todos os backups disponíveis da base de dados selecionada. Poderá consultar a data exata das cópias de segurança, assim como a data em que estes backups serão eliminados da ferramenta da OVHcloud.
+A tabela que aparecerá apresenta todos os backups disponíveis da base de dados selecionada. Poderá consultar a data exata em que os backups foram realizados, assim como a data em que estes últimos serão eliminados da ferramenta da OVHcloud.
 
-Para transferir um backup, clique nos três pontos à direita daquele que deseja obter e, a seguir, em `Transferir backup`{.action}. Surgirá uma janela que lhe solicitará para guardar o ficheiro na sua máquina. Aceite e espere enquanto o backup é descarregado.
+Para descarregar um backup, clique no botão `...`{.action} à direita daquele que deseja recuperar e, a seguir, em `Transferir backup`{.action}. Surgirá uma janela que lhe solicitará para guardar o ficheiro na sua máquina. Aceite e espere enquanto o backup é descarregado.
 
 ![databasedump](images/database-dump-step5.png){.thumbnail}
 
 ### Recuperar um backup a partir da interface web phpMyAdmin
 
-Em primeiro lugar, deverá aceder ao phpMyAdmin. Para isso, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, clique em `Alojamentos`{.action} e selecione o nome do alojamento correspondente. Por fim, clique no separador `Base de dados`{.action}.
+Para realizar a operação, aceda a *phpMyAdmin*. Para saber a ligação de acesso a esta última, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} e aceda à secção `Web Cloud`{.action}. Na coluna da esquerda, clique em `Alojamentos`{.action} e escolha o nome do alojamento correspondente. Por fim, clique no separador `Bases de dados`{.action}.
 
-Aparecerá uma tabela com todas as bases de dados criadas com o plano de alojamento web. Clique nos três pontos à direita da linha correspondente à base de dados e selecione `Aceder ao phpMyAdmin`{.action}.
+Aparecerá uma tabela com todas as bases de dados criadas com o plano de alojamento web. Clique no botão `...`{.action} à direita da base de dados em causa e depois em `Aceder ao phpMyAdmin`{.action}.
 
 ![databasedump](images/database-dump-step6.png){.thumbnail}
 
-Uma vez na página do phpMyAdmin, introduza as informações da base de dados, selecione a opção para aceder aos dados atuais da base de dados no menu pendente e, em seguida, conecte-se. Clique no separador `Exportar`{.action}, onde poderá escolher entre dois métodos de exportação:
+Uma vez na interface de ligação a *phpMyAdmin*, introduza as informações da base de dados e ligue-se. Depois de iniciar sessão, aceda ao separador `Exportar`{.action} onde existem dois métodos de exportação:
 
-- **Método rápido**: pode definir o formato de exportação do backup. O mais comum é o formato SQL, mas, consoante as suas necessidades, terá outros ao seu dispor.
+- **Método rápido** : pode definir o formato de exportação do backup. O mais comum é o formato SQL, mas, consoante as suas necessidades, terá outros ao seu dispor;
 
-- **Método personalizado**: pode definir pormenorizadamente os parâmetros de exportação do backup.
-
-> [!warning]
->
-> A interface phpMyAdmin não pertence à OVHcloud, pelo que deverá encarregar-se da realização das operações necessárias. Recomendamos que, caso de precise de ajuda, recorra a um [prestador de serviços especializado](https://partner.ovhcloud.com/pt/directory/) e/ou que contacte o editor da interface. Não poderemos proporcionar-lhe assistência técnica.
->
-
-### Recuperar um backup através de um script
-
-Esta operação realiza-se em vários passos. Certifique-se de que possui a informação necessária para se ligar à base de dados na qual pretende realizar o backup: o nome de utilizador e a respetiva palavra-passe, o nome da base de dados e o endereço do servidor.
+- **Método personalizado** : pode definir pormenorizadamente os parâmetros de exportação do backup.
 
 > [!warning]
 >
-> Esta operação requer conhecimentos técnicos de programação. Apresentamos a seguir algumas informações sobre como a realizar. Contudo, se precisar de ajuda, recomendamos que recorra a um [prestador de serviços especializado](https://partner.ovhcloud.com/pt/directory/). Não poderemos proporcionar-lhe assistência técnica.
+> Como a interface *phpMyAdmin* não foi criada pela OVHcloud, deverá realizar a operação de acordo com os seus conhecimentos. Recomendamos que, em caso de dúvida, recorra a um [fornecedor especializado](https://partner.ovhcloud.com/pt/diretory/) e/ou que contacte o editor da interface. Não poderemos proporcionar-lhe assistência técnica.
 >
 
-#### 1 - Criar um script de backup
+### Recuperar um backup usando um script
 
-O primeiro passo consiste em criar o script que permitirá realizar o backup da base de dados. Encontrará abaixo um exemplo que o ajudará a realizar esta operação. No entanto, se precisar de ajuda, contacte um webmaster.
+Esta operação realiza-se em várias etapas. Certifique-se de que possui a informação necessária para se ligar à base de dados na qual pretende realizar um backup: o nome de utilizador, a respetiva palavra-passe, o nome da base de dados e o endereço do servidor.
+
+> [!warning]
+>
+> Esta solução requer conhecimentos de programação. Apresentamos a seguir algumas informações sobre como o fazer. No entanto, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](https://partner.ovhcloud.com/pt/diretory/). Não poderemos proporcionar-lhe assistência técnica.
+>
+
+#### Etapa 1: criar o script de backup
+
+O primeiro passo consiste em criar o script que permitirá realizar o backup da base de dados. Encontrará abaixo um exemplo que o ajudará a realizar esta operação. No entanto, se encontrar dificuldades, este exemplo não substitui por si só a ajuda que um webmaster pode fornecer.
 
 ```php
 <?
-system("mysqldump --host=endereço_do_servidor --user=nome_utilizador --password=palavra_passe_utilizador nome_base_de_dados > nome_ficheiro_backup.sql");
+system("mysqldump --host=server_address --user=user_name --password=user_password name_of_database > backup_file_name.sql");
 ?>
 ```
 
-Substitua a informação genérica do script pela informação da base de dados correspondente, recorrendo aos elementos abaixo. Depois de concluir o script, recomendamos que lhe atribua um nome (“backup.php”, por exemplo).
+Substitua a informação genérica do script pela informação da base de dados correspondente, recorrendo aos elementos abaixo. Quando o script estiver concluído, aconselhamos que dê ao script "backup.php" um nome.
 
-|Informações|Substituir por|
-|---|---|
-|endereço_do_servidor|O endereço do servidor da base de dados em causa.|
-|nome_de_utilizador|O nome de utilizador com acesso à base de dados.|
-|palavra_passe_utilizador|A palavra-passe do nome de utilizador indicado anteriormente.|
-|nome_base_de_dados|O nome da base de dados.|
-|nome_ficheiro_backup|O nome do ficheiro de backup quando este for executado.|
+|Informações|A substituir por|
+|---|---| 
+|server_address|O endereço do servidor da base de dados.|
+|user_name|O nome de utilizador com acesso à base de dados.|
+|user_password|A palavra-passe do nome de utilizador indicado anteriormente.|
+|name_of_database|O nome da base de dados.|
+|backup_file_name|O nome do ficheiro de backup quando este for executado.|
 
-> [!primary]
->
-> Pode realizar um backup a partir de uma data anterior se adicionar uma porta ao script. Para um backup com a data de ontem, utilize a porta “3307”. Para um backup com a data de há uma semana, utilize a porta “3317”. 
-> 
-> Note que, se utilizar a porta “3306”, poderá realizar um backup dos dados atualmente presentes na base de dados.
->
+#### Etapa 2: descarregar o script no espaço de armazenamento FTP
 
-#### 2 - Carregar o script no espaço de armazenamento
+Depois de criar o script de backup, deverá carregá-lo para o espaço de armazenamento FTP do seu alojamento web. Para isso, consulte as informações descritas no passo 2 da documentação intitulada "[Ligar-se ao espaço de armazenamento](/páginas/web/hosting/hosting_how_to_get_my_website_online)".
 
-Depois de criar o script de backup, deverá carregá-lo para o espaço de armazenamento do alojamento web. Para isso, ligue-se ao seu espaço de armazenamento. Se precisar de ajuda, consulte o passo 2.2 do manual “[Aceder ao espaço de armazenamento](/pages/web/hosting/hosting_how_to_get_my_website_online#22-aceder-ao-espaco-de-armazenamento){.external}”.
+Para realizar as seguintes etapas, transfira o script para a pasta que contém o website que utiliza a base de dados. **Tenha cuidado com o nome do ficheiro do script de backup.** Não substitua um ficheiro já existente com o mesmo nome no espaço de armazenamento FTP quando carregar o script. Se aparecer uma mensagem de aviso, altere o nome do script que acabou de criar e tente carregá-lo novamente.
 
-Para poder realizar as seguintes ações, descarregue o script para a pasta “www”. **Preste especial atenção ao nome do ficheiro do script de backup.** Certifique-se de que não apaga um ficheiro já existente com o mesmo nome no espaço de armazenamento quando carregar o script. Se aparecer uma mensagem de aviso deste tipo, altere o nome do script que acabou de criar e tente carregá-lo novamente.
+#### Etapa 3: chamar o script
 
-#### 3 - Chamar um script
+Assim que o script for transferido para o espaço de armazenamento FTP, inicie o código presente no mesmo chamando o script.
 
-Depois de carregar o script no espaço de armazenamento, só falta executar o código. Para isso, é necessário chamar o script.
+Para efetuar esta operação, aceda ao URL completo do script a partir do seu browser (por exemplo: mypersonaldomain.ovh/backup.php se tiver nomeado o script "backup.php"). Se as informações introduzidas no script estiverem corretas, o backup será iniciado. Aguarde alguns instantes até a instalação ser finalizada. Caso contrário, verifique as informações introduzidas no script e tente novamente.
 
-Introduza no browser o URL completo do script (por exemplo, “mypersonaldomain.ovh/backup.php”, se o nome do script for “backup.php”). Se as informações introduzidas no script estiverem corretas, o backup será iniciado. Só precisará de esperar alguns segundos. Caso contrário, verifique as informações introduzidas no script e tente novamente.
+#### Etapa 4: recuperar o backup a partir do espaço de armazenamento FTP
 
-#### 4 - Recuperar o backup a partir do espaço de armazenamento
+Uma vez feito o backup, recupere-o na pasta onde colocou o script de backup. O backup da base de dados deve ter o nome definido anteriormente no script. Agora já só tem de descarregar o backup para o seu dispositivo.
 
-Uma vez feito o backup, pode recuperá-lo na pasta onde colocou o script de backup. O backup da base de dados deve ter o nome definido anteriormente no script. Agora já só tem de descarregar o backup para a sua máquina.
-
-Antes de terminar, recomendamos vivamente que elimine o ficheiro de backup e o script do diretório “www”.
+Antes de terminar, sugerimos que elimine o ficheiro de backup e o script do diretório onde se encontram.
 
 > [!primary]
 >
-> A utilização de um script de backup e das tarefas planificadas (chamadas “CRON”) permitir-lhe-á automatizar as cópias de segurança segundo a frequência que desejar. Saiba mais sobre as tarefas planificadas no manual: "[Alojamento Partilhado: Tarefas Agendadas / CRON](/pages/web/hosting/cron_tasks){.external}".
+> A utilização de um script de backup com o nosso sistema de tarefas planificadas (tarefas « CRON ») pode permitir automatizar backups com a frequência que desejar. Saiba mais sobre as tarefas planificadas no manual: "[Criar uma tarefa planificada (CRON) no alojamento web](/pages/web/hosting/cron_tasks)".
 >
 
 ### Recuperar um backup através de um comando SSH
 
-Para interagir com o seu espaço de armazenamento, deverá executar comandos a partir de um terminal.
+Para interagir com o espaço de armazenamento FTP, deverá utilizar comandos a partir de um terminal.
 
 > [!warning]
 >
-> Este tipo de acesso requer conhecimento técnicos mais avançados. Apresentamos a seguir algumas informações sobre a operação. Contudo, se precisar de ajuda, recomendamos que recorra a um [prestador de serviços especializado](https://partner.ovhcloud.com/pt/directory/). Não poderemos proporcionar-lhe assistência técnica.
+> São necessários conhecimentos mais avançados para utilizar este tipo de acesso. Apresentamos a seguir algumas informações sobre a operação. Contudo, se encontrar dificuldades, recomendamos que recorra a um [fornecedor especializado](https://partner.ovhcloud.com/pt/diretory/). Não poderemos proporcionar-lhe assistência técnica.
 >
 
-Depois de aceder ao espaço de armazenamento por SSH, tem de utilizar um comando que lhe permita realizar o backup da base de dados. Apresentamos a seguir um exemplo que o ajudará a realizar esta operação. Tenha em conta que o backup será realizado no diretório que estiver ativo no momento em que introduzir o comando no terminal.
+Depois de aceder ao espaço de armazenamento FTP por SSH, utilize um comando que lhe permita efetuar o backup da base de dados. Apresentamos a seguir um exemplo que o ajudará a realizar esta operação. Tenha em conta que o backup será realizado no diretório que estiver ativo no momento em que introduzir o comando no terminal.
 
 ```sh
-mysqldump --host=endereço_do_servidor --user=nome_utilizador --password=palavra_passe_utilizador nome_base_de_dados > nome_ficheiro_backup.sql
+mysqldump --host=server_address --user=user_name --password=user_password name_of_database > backup_file_name.sql
 ```
 
 Substitua a informação genérica deste comando pela informação da base de dados em causa. Agora já só tem de descarregar o backup para o seu computador.
+
+
+|Informações|A substituir por|
+|---|---| 
+|server_address|O endereço do servidor da base de dados.|
+|user_name|O nome de utilizador com acesso à base de dados.|
+|user_password|A palavra-passe do nome de utilizador indicado anteriormente.|
+|name_of_database|O nome da base de dados.|
+|backup_file_name|O nome do ficheiro de backup quando este for executado.|
 
 ## Quer saber mais? <a name="go-further"></a>
 
