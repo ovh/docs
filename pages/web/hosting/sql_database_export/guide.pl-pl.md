@@ -22,17 +22,22 @@ Bazy danych są używane przez większość stron WWW i serwerów **C**ontent **
 
 ## W praktyce
 
-Przed rozpoczęciem operacji określ metodę, której użyjesz do pobrania kopii zapasowej bazy danych.  W zależności od Twoich kompetencji technicznych masz do wyboru kilka możliwości.
+Przed rozpoczęciem określ metodę, której będziesz używać do pobierania kopii zapasowej bazy danych. Masz kilka możliwości:
 
-- **Użycie narzędzia OVHcloud do eksportu kopii zapasowych**: rozwiązanie to umożliwia pobranie kopii zapasowych baz danych w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Jest to bardzo przystępne rozwiązanie, nie wymaga zaawansowanych kompetencji technicznych.
+- **Użycie narzędzia OVHcloud do tworzenia kopii zapasowych** : rozwiązanie to umożliwia pobranie kopii zapasowych baz danych z poziomu [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Metoda ta nie wymaga specjalnych umiejętności technicznych.
 
-- **Wykonanie kopii zapasowej w interfejsie phpMyAdmin**: przed operacją należy zalogować się do interfejsu phpMyAdmin. Konieczna jest zatem umiejętność korzystania z tego interfejsu.
+- **Wykonanie kopii zapasowej w interfejsie phpMyAdmin** : przed operacją należy zalogować się do interfejsu *phpMyAdmin*. Wymaga to pełnej kontroli nad interfejsem *phpMyAdmin*.
 
-- **Użycie skryptu do tworzenia kopii zapasowych**: rozwiązanie to, do wykonania kopii zapasowej, wymaga utworzenia skryptu zarejestrowanego na Twoim hostingu OVHcloud. W przypadku tej metody konieczna jest odpowiednia wiedza umożliwiająca utworzenie skryptu. 
+- **Użycie skryptu do tworzenia kopii zapasowych** : przed wykonaniem kopii zapasowej należy utworzyć skrypt zarejestrowany na Twoim hostingu OVHcloud. Potrzebna jest szczególna wiedza na ten temat.
 
-- **Wykonanie kopii zapasowej przy użyciu komendy SSH**: rozwiązanie to wymaga zalogowania się do przestrzeni dyskowej przez protokół SSH, a następnie zastosowania odpowiednich komend pozwalających połączyć się z bazą danych. Ten typ dostępu możliwy jest, jeśli posiadasz zaawansowane umiejętności oraz masz wykupioną usługę [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external}.
+- **Wykonanie kopii zapasowej przy użyciu komendy SSH** : metoda ta wymaga zalogowania się do przestrzeni dyskowej FTP przez protokół SSH, a następnie zastosowania odpowiednich komend pozwalających połączyć się z przestrzenią dyskową FTP. W przypadku tego dostępu konieczne są bardziej zaawansowane umiejętności techniczne oraz posiadanie [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external}.
 
-Niektóre z powyższych metod nie są powiązane z interfejsem OVHcloud. W takich przypadkach wykonaj operację, bazując na własnej wiedzy. Poniżej zamieszczamy kilka pomocnych informacji, nie zastąpią one jednak pomocy technicznej webmastera. 
+> [!success]
+>
+> Jeśli tworzysz kopię zapasową bazy danych, ponieważ jest ona zapełniona/pełna, zapoznaj się z tutorialem "[Co zrobić, gdy baza danych jest zapełniona?](/pages/web/hosting/sql_overquota_database)".
+>
+
+Niektóre z powyższych metod nie są powiązane z interfejsem OVHcloud. W przypadku tych ostatnich wykonaj operację, bazując na własnej wiedzy. Poniżej zamieszczamy kilka podstawowych informacji, nie mogą one jednak zastąpić wsparcia ze strony webmastera, jeśli użytkownik ma trudności z samodzielnym wykonaniem tych informacji. 
 
 Przejdź do metody tworzenia kopii zapasowej, która Cię interesuje opisanej w dalszej części dokumentacji.
 

@@ -22,17 +22,22 @@ As bases de dados são utilizadas pela maior parte dos websites e dos **C**onten
 
 ## Instruções
 
-Antes de começar, deve escolher o método que quer utilizar para recuperar a cópia de segurança da base de dados. Para isso, existem várias opções, adequadas a diferentes competências técnicas.
+Antes de começar, defina o método que vai seguir para recuperar a cópia de segurança da sua base de dados. Tem à sua disposição várias possibilidades:
 
-- **Utilizar a ferramenta de backup da OVH**: esta solução permite recuperar backups das suas bases de dados a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Trata-se da solução mais acessível, pois não requer competências técnicas especiais.
+- **Utilizar a ferramenta de backup da OVHcloud** : esta solução permite recuperar backups das suas bases de dados a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Este método não requer conhecimentos técnicos especiais.
 
-- **Realizar a cópia de segurança a partir da interface web phpMyAdmin**: deverá aceder à interface phpMyAdmin. A utilização desta última exige conhecimentos específicos.
+- **Realizar a cópia de segurança a partir da interface web phpMyAdmin** : este método requer que se ligue à interface *phpMyAdmin* para efetuar a operação. Isto requer um controlo da interface *phpMyAdmin*.
 
-- **Utilizar um script que realize o backup**: esta solução requer a criação de um script registado no alojamento web da OVHcloud, de modo a viabilizar a cópia de segurança. São necessários conhecimentos específicos para criar este script.
+- **Utilizar um script que realize o backup** : este método requer a criação de um script registado no alojamento web da OVHcloud para poder realizar o backup. São necessários conhecimentos específicos para esta criação.
 
-- **Realizar a cópia de segurança através de um comando SSH**: deverá ligar-se ao seu espaço de armazenamento através do protocolo SSH e utilizar comandos para interagir com o espaço. Tenha em atenção que este tipo de acesso requer conhecimentos técnicos avançados, bem como um plano de [alojamento web da OVHcloud](https://www.ovhcloud.com/pt/web-hosting/){.external} específico.
+- **Efetuar o backup através de SSH** : este método requer que se ligue ao espaço de armazenamento FTP através do protocolo SSH e que utilize comandos para interagir com este. Este tipo de acesso requer conhecimentos mais avançados, bem como uma oferta de [alojamento web OVHcloud](https://www.ovhcloud.com/pt/web-hosting/){.external} específica.
 
-Tenha em conta que algumas destas operações se realizam fora da interface da OVHcloud e, por isso, deverá executá-las de forma autónoma. A seguir disponibilizamos algumas informações, mas, se precisar de ajuda, entre em contacto com um webmaster. 
+> [!success]
+>
+> Se efetuar um backup da sua base de dados, pois esta está saturada / cheia, não hesite em consultar o nosso tutorial "[O que fazer quando a minha base de dados estiver saturada?](/pages/web/hosting/sql_overquota_database)".
+>
+
+Alguns dos métodos acima indicados não são inerentes a uma interface OVHcloud. Por isso, deverá realizar a operação de acordo com os seus próprios conhecimentos. A seguir disponibilizamos algumas informações, mas estas não substituem a assistência fornecida por um webmaster se tiver dificuldade em realizar estas tarefas sozinho.
 
 Consulte este manual de acordo com o método de backup pretendido.
 

@@ -22,17 +22,22 @@ I database sono utilizzati dalla maggior parte dei siti Web e **C**ontent **M**a
 
 ## Procedura
 
-Prima di iniziare, è necessario indicare il metodo con cui intendi recuperare il backup del database. A seconda delle tue competenze tecniche a riguardo, puoi utilizzare diversi metodi:
+Prima di iniziare, definisci il metodo che intendi utilizzare per recuperare il backup del database. Le opzioni disponibili sono diverse:
 
-- **strumento di backup di OVH**: grazie a questo tool è possibile recuperare i backup direttamente dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. È la soluzione più semplice, perché non richiede particolari competenze tecniche.
+- **Utilizza lo strumento di backup di OVHcloud**: permette di recuperare i backup dei tuoi database dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Questo metodo non richiede particolari competenze tecniche.
 
-- **interfaccia Web phpMyAdmin**: questa soluzione richiede la conoscenza dell’applicazione Web phpMyAdmin e della sua interfaccia di gestione.
+- **Effettuare il backup dall’interfaccia web phpMyAdmin** : per effettuare l’operazione è necessario connettersi all’interfaccia *phpMyAdmin*. per utilizzare al meglio l’interfaccia *phpMyAdmin*.
 
-- **script**: per utilizzare questa soluzione è necessario creare uno script e salvarlo sull’hosting Web OVHcloud e richiede quindi competenze specifiche.
+- **Utilizza uno script per il backup** : per poter effettuare il backup è necessario creare uno script e salvarlo sull’hosting Web OVHcloud. Per questa creazione sono necessarie conoscenze specifiche.
 
-- **comando SSH**: questa soluzione richiede l’accesso allo spazio di storage tramite il protocollo SSH e l’utilizzo di comandi per interagire con esso.  Sono quindi necessarie competenze tecniche avanzate e una soluzione di[ hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/){.external} compatibile.
+- **Effettua il backup da un comando SSH**: questo metodo richiede l’accesso allo spazio di storage FTP tramite il protocollo SSH e l’utilizzo di comandi per interagire con esso. Questo tipo di accesso richiede conoscenze avanzate e una soluzione [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/){.external} specifica.
 
-Alcune delle opzioni elencate non vengono eseguite in un’interfaccia OVHcloud, e non possiamo quindi fornire assistenza sul loro utilizzo. Le informazioni contenute in questa guida potrebbero esserti di aiuto per effettuare l’operazione ma non si sostituiscono all’aiuto di un webmaster. 
+> [!success]
+>
+> Se effettui un backup del tuo database perché è pieno/pieno, consulta il nostro tutorial "[Cosa fare quando il tuo database è pieno?](/pages/web/hosting/sql_overquota_database)".
+>
+
+Alcuni dei metodi indicati non sono relativi a un’interfaccia OVHcloud. e, in base alle tue conoscenze, sarà necessario effettuare l’operazione. Le informazioni contenute in questa guida potrebbero esserti di aiuto per effettuare l’operazione ma non sostituiscono l’assistenza fornita da un webmaster.
 
 Continua la lettura in base al metodo di backup scelto.
 
