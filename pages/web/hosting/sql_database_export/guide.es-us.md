@@ -43,135 +43,138 @@ Continúe leyendo esta guía en el apartado correspondiente al método de backup
 
 > [!warning]
 >
-> La responsabilidad sobre la configuración y la gestión de los servicios que OVHcloud pone a su disposición recae íntegramente en usted. Por lo tanto, usted deberá asegurarse de que estos funcionan correctamente.
+> OVHcloud pone a su disposición servicios cuya configuración, gestión y responsabilidad recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionen correctamente.
 >
-> Esta guía le ayudará a realizar las operaciones más habituales. No obstante, si tiene alguna duda, le recomendamos que contacte con un proveedor de servicios especializado o con el editor del servicio. Nosotros no podremos asistirle. Para más información, consulte el apartado «Más información» de esta guía.
+> Esta guía le ayudará a realizar las tareas más habituales. No obstante, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es/directory/). Nosotros no podremos asistirle. Para más información, consulte la sección [«Más información»](#go-further) de esta guía.
 >
 
-### Exportar una copia de seguridad desde el área de cliente
+### Obtener una copia de seguridad a través de la herramienta de OVHcloud
 
-Conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. A continuación, abra la pestaña `Bases de datos`{.action}.
+Para acceder a la herramienta de backup de OVHcloud, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external} y acceda a la sección `Web Cloud`{.action}. En la columna izquierda, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. A continuación, abra la pestaña `Bases de datos`{.action}.
 
-Se mostrará una tabla con todas las bases de datos creadas en el plan de hosting. Desde esa página podrá realizar una nueva copia de seguridad o restaurar una copia de seguridad ya realizada.
+Se mostrará una tabla con todas las bases de datos creadas en el alojamiento web. A continuación, podrá elegir entre realizar una nueva copia de seguridad o recuperar una ya existente, realizando dos operaciones distintas.
 
-#### 1. Realizar una nueva copia de seguridad de la base de datos
+#### Etapa 1: realizar una nueva copia de seguridad de la base de datos
 
-En la pestaña `Bases de datos`{.action}, haga clic en los tres puntos situados al final de la línea correspondiente a la base de datos de la que quiera realizar la copia de seguridad y seleccione `Crear una copia de seguridad`{.action}.
+En la pestaña `Bases de datos`{.action}, haga clic en el botón `...`{.action} a la derecha de la base de datos de la que quiera realizar la copia de seguridad y seleccione `Crear una copia de seguridad`{.action}.
 
-![Dump de la base de datos](images/database-dump-step2.png){.thumbnail}
+![databasedump](images/database-dump-step2.png){.thumbnail}
 
-Se abrirá una ventana en la que deberá seleccionar la fecha de la copia de seguridad deseada. Haga clic en `Siguiente`{.action}. Asegúrese de que la información es correcta y haga clic en `Aceptar`{.action}.
+Se abrirá una ventana en la que deberá seleccionar la fecha de la copia de seguridad deseada y pulsar el botón `Siguiente`{.action}. Asegúrese de que la información introducida en el resumen es correcta y haga clic en `Validar`{.action} para iniciar la operación.
 
-Espere a que se realice la copia de seguridad. Una vez que esté disponible, ya podrá exportarla.
+Espere a que se realice la copia de seguridad. Una vez que esté disponible, podrá recuperarla.
 
-![Dump de la base de datos](images/database-dump-step3.png){.thumbnail}
+![databasedump](images/database-dump-step3.png){.thumbnail}
 
-#### 2. Exportar una copia de seguridad de la base de datos
+#### Etapa 2: recuperar una copia de seguridad de la base de datos
 
-En la pestaña `Bases de datos`{.action}, haga clic en los tres puntos situados al final de la línea correspondiente a la base de datos de la que quiera realizar la copia de seguridad y seleccione `Restaurar una copia de seguridad`{.action}.
+En la pestaña `Bases de datos`{.action}, haga clic en el botón `...`{.action} a la derecha de la base de datos de la que quiera realizar la copia de seguridad y seleccione `Restaurar una copia de seguridad`{.action}.
 
-![Dump de la base de datos](images/database-dump-step4.png){.thumbnail}
+![databasedump](images/database-dump-step4.png){.thumbnail}
 
-Se mostrarán todas las copias de seguridad de la base de datos seleccionada, con la fecha exacta en la que se realizaron y la fecha en la que se eliminarán de la herramienta de backup de OVHcloud.
+Se mostrará una tabla que contiene todas las copias de seguridad disponibles de la base de datos seleccionada. Aquí podrá ver la fecha exacta en la que se realizaron las copias de seguridad y la fecha en la que se eliminarán de la herramienta de backup de OVHcloud.
 
-Para descargar una copia de seguridad, haga clic en los tres puntos situados al final de la línea correspondiente a la copia de seguridad que quiera exportar y haga clic en `Descargar la copia de seguridad`{.action}. Según la configuración de su navegador de internet, se abrirá una ventana en la que deberá confirmar que desea guardar la copia de seguridad en su equipo local. Espere a que se descargue la copia de seguridad.
+Para descargar una copia de seguridad, haga clic en el botón `...`{.action} a la derecha de la copia de seguridad que desea recuperar y luego en `Descargar la copia de seguridad`{.action}. Se abrirá una ventana en la que deberá guardarla en su máquina. Acepte y espere a que se descargue la copia de seguridad.
 
-![Dump de la base de datos](images/database-dump-step5.png){.thumbnail}
+![databasedump](images/database-dump-step5.png){.thumbnail}
 
-### Exportar una copia de seguridad desde la herramienta web phpMyAdmin
+### Recuperar una copia de seguridad desde la interfaz web phpMyAdmin
 
-En primer lugar, deberá acceder a phpMyAdmin. Para ello, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. A continuación, abra la pestaña `Bases de datos`{.action}.
+Para realizar la operación, conéctese a *phpMyAdmin*. Para conocer el enlace de acceso a este último, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external} y acceda a la sección `Web Cloud`{.action}. En la columna izquierda, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. A continuación, abra la pestaña `Bases de datos`{.action}.
 
-Se mostrará una tabla con todas las bases de datos creadas en el plan de hosting. Haga clic en los tres puntos situados al final de la línea correspondiente a la base de datos y seleccione `Acceder a phpMyAdmin`{.action}.
+Se mostrará una tabla con todas las bases de datos creadas en el alojamiento web. Haga clic en el botón `...`{.action} a la derecha de la base de datos correspondiente y, seguidamente, en `Acceder a phpMyAdmin »`{.action}.
 
-![Dump de la base de datos](images/database-dump-step6.png){.thumbnail}
+![databasedump](images/database-dump-step6.png){.thumbnail}
 
-En la página de phpMyAdmin, introduzca la información de la base de datos, seleccione en el menú desplegable si quiere mostrar los datos actuales de la base de datos o los de una fecha anterior y conéctese haciendo clic en `Continuar`{.action}. Una vez que se haya conectado, haga clic en `Exportar`{.action} en el menú superior. Elija un método de exportación:
+Una vez en la interfaz de conexión a *phpMyAdmin*, introduzca los datos de la base de datos y conéctese. Una vez que se haya conectado, abra la pestaña `Exportar`{.action}, en la que podrá elegir entre dos métodos de exportación:
 
-- **Rápido**: Puede seleccionar el formato de exportación de la copia de seguridad. El más común es SQL, pero puede elegir cualquier otro de la lista, según sus necesidades.
+- **método rápido**: puede definir el formato de exportación de la copia de seguridad. El más común es el formato SQL, pero puede elegir uno en función de sus necesidades;
 
-- **Personalizado**: Puede configurar al detalle los parámetros de exportación de la copia de seguridad.
+- **Personalizado**: Puede especificar los parámetros de exportación de la copia de seguridad.
 
 > [!warning]
 >
-> La interfaz phpMyAdmin no pertenece a OVHcloud, por lo que no podemos orientarle sobre cómo utilizarla. Le recomendamos que, si necesita ayuda, contacte con un proveedor de servicios especializado o con el editor del servicio. Nosotros no podremos asistirle.
+> La interfaz *phpMyAdmin* no ha sido creada por OVHcloud, por lo que deberá realizar la operación según sus propios conocimientos. Le recomendamos que, si necesita ayuda, contacte con un [proveedor de servicios especializado](https://partner.ovhcloud.com/es/directory/) o con el editor de la interfaz. Nosotros no podremos asistirle.
 >
 
-### Exportar una copia de seguridad utilizando un script
+### Recuperar una copia de seguridad utilizando un script
 
-Esta operación se realiza en varios pasos. En primer lugar, asegúrese de que tiene la información necesaria para conectarse a la base de datos de la que quiera realizar la copia de seguridad: el nombre de usuario y la contraseña, el nombre de la base de datos y la dirección del servidor.
+Esta operación se realiza en varios pasos. Asegúrese de disponer de la información necesaria para conectarse a la base de datos de la que quiera realizar la copia de seguridad: el nombre de usuario, la contraseña, el nombre de la base de datos y la dirección del servidor.
 
 > [!warning]
 >
-> Esta operación requiere conocimientos de programación. A continuación ofrecemos algunas indicaciones sobre cómo realizarla. No obstante, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es/directory/). Nosotros no podremos asistirle.
+> Esta solución requiere conocimientos de programación. A continuación ofrecemos algunas indicaciones sobre cómo hacerlo. No obstante, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es/directory/). Nosotros no podremos asistirle.
 >
 
-#### 1. Crear un script de backup
+#### Etapa 1: crear el script de backup
 
-El primer paso consiste en crear el script que realizará la copia de seguridad de la base de datos. A continuación ofrecemos un ejemplo de script para realizar esta operación (sin que este sustituya a la ayuda de un webmaster).
+El primer paso consiste en crear el script que permitirá realizar la copia de seguridad de la base de datos. A continuación ofrecemos un ejemplo de script que puede ayudarle a realizar esta operación. Sin embargo, si tiene alguna dificultad, este ejemplo no puede sustituir por sí solo a la asistencia que le proporcione un webmaster.
+
 
 ```php
 <?
-system("mysqldump --host=dirección_servidor --user=nombre_usuario --password=contraseña_usuario nombre_base_de_datos > nombre_archivo_backup.sql");
+system("mysqldump --host=server_address --user=user_name --password=user_password name_of_database > backup_file_name.sql");
 ?>
 ```
 
-No olvide sustituir la información genérica del script por los datos correspondientes a la base de datos según se indica a continuación. Una vez que haya creado el script, le recomendamos que le asigne un nombre («backup.php», por ejemplo).
+No olvide sustituir la información genérica del script por la información de la base de datos correspondiente, basándose en los elementos que se indican a continuación. Una vez finalizado el script, le recomendamos que le asigne un nombre, por ejemplo, «backup.php».
 
-|Información|Sustituir por...|
+|Información|Reemplazar por|
 |---|---|
-|dirección_servidor|Dirección del servidor de la base de datos.|
-|nombre_usuario|Nombre del usuario con acceso a la base de datos.|
-|contraseña_usuario|Contraseña del nombre de usuario anteriormente indicado.|
-|nombre_base_de_datos|Nombre de la base de datos.|
-|nombre_archivo_backup|Nombre que tendrá el archivo de backup, una vez que este se haya realizado.|
+|server_address|La dirección del servidor de la base de datos afectada.|
+|user_name|Nombre del usuario con acceso a la base de datos.|
+|user_password|Contraseña del nombre de usuario indicado anteriormente.|
+|name_of_database|Nombre de la base de datos.|
+|backup_file_name|Nombre que tendrá el archivo de copia de seguridad cuando se ejecute.|
+
+#### Etapa 2: descargar el script en el espacio de almacenamiento FTP
+
+Una vez que haya creado el script de backup, deberá descargarlo en el espacio de almacenamiento FTP de su alojamiento web. Para ello, consulte el paso 2 de la documentación "[Conectarse al espacio de almacenamiento](/pages/web/hosting/hosting_how_to_get_my_website_online)".
+
+Para llevar a cabo los siguientes pasos, cargue el script en la carpeta que contiene el sitio web que utiliza la base de datos. **Preste especial atención al nombre del archivo de script de copia de seguridad.** No sobrescriba un archivo existente con el mismo nombre en el espacio de almacenamiento FTP cuando vaya a descargar el script. Si aparece un mensaje de advertencia de este tipo, cambie el nombre del script recién creado para volver a intentar cargarlo.
+
+#### Etapa 3: llamar al script
+
+Una vez que el script se haya cargado en el espacio de almacenamiento FTP, inicie el código del mismo llamando al script.
+
+Para ello, acceda desde su navegador de internet a la dirección URL completa del script (por ejemplo, mypersonaldomain.ovh/backup.php si ha llamado al script "backup.php"). Si la información introducida en el script es correcta, se iniciará la copia de seguridad. Espere a que se ejecute. Si no es así, compruebe la información introducida en el script y vuelva a intentarlo.
+
+#### Etapa 4: recuperar la copia de seguridad desde el espacio de almacenamiento FTP
+
+Una vez realizada la copia de seguridad, deberá descargarla en la carpeta en la que se haya descargado el script de copia de seguridad. La copia de seguridad de la base de datos debe tener el nombre que se ha definido anteriormente en el script. Solo tiene que descargar la copia de seguridad en su propio dispositivo.
+
+Antes de finalizar, le recomendamos encarecidamente que elimine tanto el archivo de copia de seguridad como el script del directorio en el que se encuentran.
 
 > [!primary]
 >
-> Es posible realizar un backup de una fecha anterior añadiendo un puerto en el script. Para un backup a fecha del día anterior, utilice el puerto «3307». Para un backup a fecha de siete días antes, utilice el puerto «3317». 
-> 
-> El puerto «3306» le permitirá crear una copia de seguridad de los datos presentes actualmente en la base de datos.
+> El uso de un script de backup con nuestro sistema de tareas planificadas (tareas «CRON») le permite automatizar las copias de seguridad con la frecuencia que usted elija. Para más información sobre las tareas planificadas, consulte nuestra guía: «[Configurar una tarea planificada (CRON) en un alojamiento web](/pages/web/hosting/cron_tasks)».
 >
 
-#### 2. Cargar el script en el espacio de almacenamiento
+### Recuperar una copia de seguridad mediante un pedido SSH
 
-Una vez que haya creado el script de backup, deberá cargarlo en el espacio de almacenamiento de su alojamiento web. Para ello, conéctese al espacio de almacenamiento. Si necesita ayuda, consulte el paso «2. Conectarse al espacio de almacenamiento» de la guía [Publicar un sitio web en internet](/pages/web/hosting/hosting_how_to_get_my_website_online#2-conectarse-al-espacio-de-almacenamiento){.external}.
-
-Para poder realizar las siguientes acciones, cargue el script en la carpeta «www». **Preste especial atención al nombre del archivo del script de backup**: cuando cargue el script, asegúrese de no sobrescribir un archivo presente en su espacio de almacenamiento que pueda tener el mismo nombre. Si aparece un mensaje de aviso que indique lo anterior, cambie el nombre del script que acaba de crear por otro diferente y vuelva a intentar cargarlo.
-
-#### 3. Llamar al script
-
-Una vez que haya cargado el script en el espacio de almacenamiento, solo queda ejecutar el código. Para ello, tendrá que llamar al script.
-
-Introduzca en el navegador la URL completa del script (por ejemplo, «example.com/backup.php» si el nombre del script es «backup.php»). Si la información introducida en el script es correcta, comenzará el backup. Espere unos segundos a que este se ejecute. En caso contrario, corrija la información del script y vuelva a intentarlo.
-
-#### 4. Exportar el backup desde el espacio de almacenamiento
-
-Una vez realizada la copia de seguridad, puede localizarla en la carpeta en la que haya colocado el script de backup. La copia de seguridad tendrá el nombre que usted haya indicado en el script. Solo tiene que copiar el archivo de backup en su equipo local.
-
-Una vez que haya finalizado la operación, le recomendamos encarecidamente que elimine tanto el archivo de backup como el script del directorio «www».
-
-> [!primary]
->
-> La utilización de un script de backup y de tareas planificadas (denominadas «Cron») le permitirá automatizar las copias de seguridad con la frecuencia que desee. Para más información sobre las tareas planificadas, consulte la guía [Tareas automatizadas (cron)](/pages/web/hosting/cron_tasks){.external}.
->
-
-### Exportar una copia de seguridad por SSH
-
-Para interactuar con su espacio de almacenamiento, deberá ejecutar comandos desde un terminal.
+Para realizar la operación, deberá utilizar comandos desde un terminal para interactuar con su espacio de almacenamiento FTP.
 
 > [!warning]
 >
-> Este tipo de acceso requiere conocimientos técnicos más avanzados. A continuación ofrecemos algunas indicaciones. No obstante, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es/directory/). Nosotros no podremos asistirle.
+> Este tipo de acceso requiere conocimientos técnicos más avanzados. No obstante, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es/directory/). Nosotros no podremos asistirle.
 >
 
-Una vez que se haya conectado al espacio de almacenamiento por SSH, utilice un comando para realizar la copia de seguridad de la base de datos. A continuación ofrecemos un ejemplo que le ayudará a realizar esta operación. Tenga en cuenta que la copia de seguridad se creará en el directorio en el que esté situado cuando envíe el comando desde su terminal.
+Una vez conectado al espacio de almacenamiento FTP por SSH, utilice un comando para realizar la copia de seguridad de la base de datos. A continuación se incluye una descripción que puede ayudarle a realizar esta operación. Tenga en cuenta que la copia de seguridad se realizará en el directorio actual en el momento en que envíe el comando en su terminal.
 
 ```sh
-mysqldump --host=dirección_servidor --user=nombre_usuario --password=contraseña_usuario nombre_base_de_datos > nombre_archivo_backup.sql
+mysqldump --host=server_address --user=user_name --password=user_password name_of_database > backup_file_name.sql
 ```
 
-Sustituya la información genérica incluida en el script por la información de la base de datos correspondiente. Una vez que haya finalizado la copia de seguridad, solo tiene que copiar el archivo de backup en su equipo local.
+Sustituya la información genérica del comando por la información de la base de datos correspondiente. Una vez realizada la copia de seguridad, solo tiene que cargarla en su propia máquina.
+
+
+|Información|Reemplazar por|
+|---|---|
+|server_address|La dirección del servidor de la base de datos afectada.|
+|user_name|Nombre del usuario con acceso a la base de datos.|
+|user_password|Contraseña del nombre de usuario indicado anteriormente.|
+|name_of_database|Nombre de la base de datos.|
+|backup_file_name|Nombre que tendrá el archivo de copia de seguridad cuando se ejecute.|
 
 ## Más información <a name="go-further"></a>
 
