@@ -169,6 +169,12 @@ mysqldump --host=indirizzo_del_server --user=nome_utente --password=password_ute
 
 Sostituisci le informazioni generiche del comando con i dati del database in questione. A questo punto, non ti resta che ripristinare il backup sulla macchina.
 
-## Per saperne di più
+## Per saperne di più <a name="go-further"></a>
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+[Tutorial - Cosa fare quando il database è pieno?](/pages/web/hosting/sql_overquota_database)
+
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
+
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
+
+Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.

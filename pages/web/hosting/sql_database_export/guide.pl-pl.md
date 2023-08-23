@@ -168,6 +168,12 @@ system("mysqldump --host=adres_serwera --user=uzytkownik --password=haslo nazwa_
 
 Pamiętaj, aby zastąpić informacje ogólne występujące w komendzie informacjami dotyczącymi odpowiedniej bazy danych. Teraz pobierz kopię zapasową na Twój komputer.
 
-## Sprawdź również
+## Sprawdź również <a name="go-further"></a>
 
-Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+[Tutorial - Co zrobić, gdy baza danych jest zapełniona?](/pages/web/hosting/sql_overquota_database)
+
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
+
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>. 

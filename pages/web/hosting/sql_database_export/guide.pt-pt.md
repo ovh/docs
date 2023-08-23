@@ -168,6 +168,12 @@ mysqldump --host=endereço_do_servidor --user=nome_utilizador --password=palavra
 
 Substitua a informação genérica deste comando pela informação da base de dados em causa. Agora já só tem de descarregar o backup para o seu computador.
 
-## Quer saber mais?
+## Quer saber mais? <a name="go-further"></a>
 
-Fale com a nossa comunidade de utilizadores em [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}
+[Tutorial - O que fazer quando o meu banco de dados estiver cheio?](/pages/web/hosting/sql_overquota_database)
+
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
+
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
+
+Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>. 

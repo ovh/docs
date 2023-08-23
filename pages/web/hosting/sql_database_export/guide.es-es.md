@@ -168,6 +168,12 @@ mysqldump --host=dirección_servidor --user=nombre_usuario --password=contraseñ
 
 Sustituya la información genérica incluida en el script por la información de la base de datos correspondiente. Una vez que haya finalizado la copia de seguridad, solo tiene que copiar el archivo de backup en su equipo local.
 
-## Más información
+## Más información <a name="go-further"></a>
+
+[Tutorial: ¿Qué hacer cuando la base de datos está llena?](/pages/web/hosting/sql_overquota_database)
+
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
+
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es-es/support-levels/).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

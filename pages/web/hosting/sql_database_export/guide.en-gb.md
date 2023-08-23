@@ -164,6 +164,12 @@ mysqldump --host=server_address --user=user_name --password=user_password databa
 
 Make sure you replace the generic information in this command (e.g. ‘user_name’, ‘user_password’ etc.) with the actual information for the database concerned. Once the backup is complete, you can save it to your own machine.
 
-## Go further
+## Go further <a name="go-further"></a>
 
-Join our community of users on <https://community.ovh.com/en/>.
+[Tutorial - What should I do when my database is full?](/pages/web/hosting/sql_overquota_database)
+
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/).
+
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-gb/support-levels/).
+
+Join our community of users on <https://community.ovh.com/en/>. 
