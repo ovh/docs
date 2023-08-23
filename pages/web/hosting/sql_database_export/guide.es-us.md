@@ -17,7 +17,7 @@ La mayoría de los sitios web utilizan bases de datos y **C**ontent **M**anageme
 ## Requisitos
 
 - Tener contratado un [plan de hosting de OVHcloud](https://www.ovhcloud.com/es/web-hosting/){.external}.
-- Disponer de una base de datos creada en un [alojamiento web de OVHcloud](https://www.ovhcloud.com/es/web-hosting/){.external}.
+- Disponer de una base de datos creada en un [alojamiento web de OVHcloud.](https://www.ovhcloud.com/es/web-hosting/){.external}
 - Según el método de backup utilizado, tener acceso a la gestión del plan de hosting desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external} o disponer de las claves necesarias para conectarse a la base de datos.
 
 ## Procedimiento
@@ -88,7 +88,7 @@ Se mostrará una tabla con todas las bases de datos creadas en el alojamiento we
 
 Una vez en la interfaz de conexión a *phpMyAdmin*, introduzca los datos de la base de datos y conéctese. Una vez que se haya conectado, abra la pestaña `Exportar`{.action}, en la que podrá elegir entre dos métodos de exportación:
 
-- **método rápido**: puede definir el formato de exportación de la copia de seguridad. El más común es el formato SQL, pero puede elegir uno en función de sus necesidades;
+- **Método rápido**: puede definir el formato de exportación de la copia de seguridad. El más común es el formato SQL, pero puede elegir uno en función de sus necesidades;
 
 - **Personalizado**: Puede especificar los parámetros de exportación de la copia de seguridad.
 
@@ -109,7 +109,6 @@ Esta operación se realiza en varios pasos. Asegúrese de disponer de la informa
 #### Etapa 1: crear el script de backup
 
 El primer paso consiste en crear el script que permitirá realizar la copia de seguridad de la base de datos. A continuación ofrecemos un ejemplo de script que puede ayudarle a realizar esta operación. Sin embargo, si tiene alguna dificultad, este ejemplo no puede sustituir por sí solo a la asistencia que le proporcione un webmaster.
-
 
 ```php
 <?
@@ -150,7 +149,7 @@ Antes de finalizar, le recomendamos encarecidamente que elimine tanto el archivo
 > El uso de un script de backup con nuestro sistema de tareas planificadas (tareas «CRON») le permite automatizar las copias de seguridad con la frecuencia que usted elija. Para más información sobre las tareas planificadas, consulte nuestra guía: «[Configurar una tarea planificada (CRON) en un alojamiento web](/pages/web/hosting/cron_tasks)».
 >
 
-### Recuperar una copia de seguridad mediante un pedido SSH
+### Recuperar una copia de seguridad mediante un comando SSH
 
 Para realizar la operación, deberá utilizar comandos desde un terminal para interactuar con su espacio de almacenamiento FTP.
 
@@ -166,7 +165,6 @@ mysqldump --host=server_address --user=user_name --password=user_password name_o
 ```
 
 Sustituya la información genérica del comando por la información de la base de datos correspondiente. Una vez realizada la copia de seguridad, solo tiene que cargarla en su propia máquina.
-
 
 |Información|Reemplazar por|
 |---|---|

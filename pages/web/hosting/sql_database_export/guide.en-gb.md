@@ -76,7 +76,7 @@ To download a backup, click on the `...`{.action} button to the right of the bac
 
 ### Retrieve a backup via the phpMyAdmin web interface
 
-To do this, log in to *phpMyAdmin*. To find the access link for this interface, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/en/&ovhSubsidiary=en){.external} , then go to the `Web Cloud`{.action} section. In the left-hand column, click `Hosting plans`{.action}, then choose the name of the web hosting plan concerned. Go to the `Databases`{.action} tab.
+To do this, log in to *phpMyAdmin*. To find the access link for this interface, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external} , then go to the `Web Cloud`{.action} section. In the left-hand column, click `Hosting plans`{.action}, then choose the name of the web hosting plan concerned. Go to the `Databases`{.action} tab.
 
 The table that opens will contain all of the databases created as part of your Web Hosting plan. In this window, click the `...`{.action} button to the right of the database concerned, then `Go to phpMyAdmin`{.action}.
 
