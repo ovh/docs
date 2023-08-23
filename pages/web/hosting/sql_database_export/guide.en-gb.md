@@ -20,11 +20,11 @@ Databases are used by most websites and **C**ontent **M**anagement **S**ystems (
 
 Before you begin, define the method you will follow to retrieve the backup of your database. There are several ways to do this:
 
-- **Use the OVHcloud backup tool** : this solution allows you to retrieve backups of your databases from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}. This method does not require any particular technical skills.
+- **Use the OVHcloud backup tool**: this solution allows you to retrieve backups of your databases from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}. This method does not require any particular technical skills.
 
-- **Carry out the backup from the phpMyAdmin web interface** : this method requires you to log in to the *phpMyAdmin* interface to carry out the manipulation. You will need to be familiar with the *phpMyAdmin* interface.
+- **Carry out the backup from the phpMyAdmin web interface**: this method requires you to log in to the *phpMyAdmin* interface to carry out the manipulation. You will need to be familiar with the *phpMyAdmin* interface.
 
-- **Use a script that performs the backup** : this method involves creating a script saved on your OVHcloud Web Hosting plan, which will perform the backup. Specific knowledge is required for this creation.
+- **Use a script that performs the backup**: this method involves creating a script saved on your OVHcloud Web Hosting plan, which will perform the backup. Specific knowledge is required for this creation.
 
 - **Backing up from an SSH command** : this method involves connecting to your FTP storage space via the SSH protocol, then using commands to interact with it. More advanced knowledge and a specific [OVHcloud Web Hosting](https://www.ovhcloud.com/en-gb/web-hosting/){.external} solution are required to use this type of access.
 
@@ -50,7 +50,7 @@ To access the OVHcloud backup tool, log in to your [OVHcloud Control Panel](http
 
 The table that opens will contain all of the databases created as part of your Web Hosting plan. You can now choose between creating a new backup, or recovering an existing one, in two separate steps.
 
-#### Step 1: Back up the database again
+#### Step 1: Create a new backup of the database
 
 In the `Databases`{.action} tab, click the `...`{.action} button to the right of the database you want to back up, then `Create a backup`{.action}.
 
@@ -74,7 +74,7 @@ To download a backup, click on the `...`{.action} button to the right of the bac
 
 ![databasedump](images/database-dump-step5.png){.thumbnail}
 
-### Retrieve a backup from the phpMyAdmin web interface
+### Retrieve a backup via the phpMyAdmin web interface
 
 To do this, log in to *phpMyAdmin*. To find the access link for this interface, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/en/&ovhSubsidiary=en){.external} , then go to the `Web Cloud`{.action} section. In the left-hand column, click `Hosting plans`{.action}, then choose the name of the web hosting plan concerned. Go to the `Databases`{.action} tab.
 
@@ -84,8 +84,7 @@ The table that opens will contain all of the databases created as part of your W
 
 Once you have reached the interface for connecting to *phpMyAdmin*, enter the information for the database, then log in. Once you have logged in, go to the `Export`{.action} tab, where you can choose from two export methods:
 
-- **Quick Method**: You can set the export format for the backup. The most common format is SQL, but other formats are available to suit your needs;
-
+- **Quick Method**: You can set the export format for the backup. The most common format is SQL, but other formats are available to suit your needs.
 - **Custom method**: You can define the backup export settings in detail.
 
 > [!warning]
@@ -99,7 +98,7 @@ There are several steps to this process. Make sure you have the information you 
 
 > [!warning]
 >
-> This solution requires programming skills. Below you will find some information on how to proceed. However, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en-gb/directory/) if you experience any difficulties. We will not be able to assist you with this.
+> This solution requires programming skills. You will find below some information on how to proceed. However, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en-gb/directory/) if you experience any difficulties. We will not be able to assist you with this.
 >
 
 #### Step 1: Create the backup script
@@ -114,7 +113,7 @@ system("mysqldump --host=server_address --user=user_name --password=user_passwor
 
 Please ensure that you replace the generic information in this script with the information for the database concerned, using the elements below. Once the script is complete, we recommend naming it backup.php, for example.
 
-|Information|To be replaced by|
+|Information|To replace with|
 |---|---|
 |server_address|The server address of the database concerned.|
 |user_name|The user name that has access to the database.|
@@ -124,7 +123,7 @@ Please ensure that you replace the generic information in this script with the i
 
 #### Step 2: Download the script to the FTP storage space
 
-Once the backup script has been created, you will need to upload it to your web hosting plan’s FTP storage space. To do this, please refer to the information described in step 2 of the guide titled ‘[Log in to your storage space](/pages/web/hosting/hosting_how_to_get_my_website_online)’.
+Once the backup script has been created, you will need to upload it to your web hosting plan’s FTP storage space. To do this, please refer to the information described in step 2 of the guide titled [Log in to your storage space](/pages/web/hosting/hosting_how_to_get_my_website_online).
 
 To complete the following steps, download the script to the folder that contains the website that uses the database. **Be particularly careful about the name of the backup script file.** Do not overwrite an existing file with the same name on the FTP storage space when you upload the script. If you see a warning message like this, change the name of the newly created script and try downloading it again.
 
@@ -154,7 +153,7 @@ To do this, you will need to use commands from a terminal to interact with your 
 > More advanced knowledge is required to use this type of access. Below you will find some information on how to proceed. However, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en-gb/directory/) if you encounter any difficulties. We will not be able to assist you with this.
 >
 
-Once you have logged in to your FTP storage space via an SSH connection, use a command to back up the database. Below, you will find one that can help you with this process. Bear in mind that the backup will be made in the current directory when you send the command in your terminal.
+Once you have logged in to your FTP storage space via an SSH connection, use a command to back up the database. You will find below one that can help you with this process. Bear in mind that the backup will be made in the current directory when you send the command in your terminal.
 
 ```sh
 mysqldump --host=server_address --user=user_name --password=user_password name_of_database > backup_file_name.sql
@@ -163,7 +162,7 @@ mysqldump --host=server_address --user=user_name --password=user_password name_o
 Replace the generic information for this command with the information for the database concerned. Once the backup is complete, you just need to retrieve it from your own machine.
 
 
-|Information|To be replaced by|
+|Information|To replace with|
 |---|---|
 |server_address|The server address of the database concerned.|
 |user_name|The user name that has access to the database.|

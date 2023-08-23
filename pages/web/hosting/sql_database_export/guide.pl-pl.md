@@ -94,7 +94,7 @@ Po zalogowaniu się do *phpMyAdmin* wprowadź informacje dotyczące bazy danych,
 
 > [!warning]
 >
-> Interfejs *phpMyAdmin* nie został utworzony przez OVHcloud, należy więc wykonać operację, bazując na własnej wiedzy. W przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/pl/directory/) i/lub skontaktowanie się ze stroną lub wydawcą interfejsu. Niestety firma OVH nie jest w stanie udzielić wsparcia w tym zakresie.
+> Interfejs *phpMyAdmin* nie został utworzony przez OVHcloud, należy więc wykonać operację, bazując na własnej wiedzy. W przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/pl/directory/) i/lub skontaktowanie się ze stroną lub wydawcą interfejsu. Niestety firma OVHcloud nie jest w stanie udzielić wsparcia w tym zakresie.
 >
 
 ### Pobierz kopię zapasową, używając skryptu
@@ -103,7 +103,7 @@ Operacja składa się z kilku etapów. Upewnij się, czy posiadasz informacje po
 
 > [!warning]
 >
-> Rozwiązanie to wymaga umiejętności programowania. Poniżej zamieszczamy kilka informacji dotyczących sposobu postępowania. Jednak w przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/pl/directory/). Niestety firma OVH nie jest w stanie udzielić wsparcia w tym zakresie.
+> Rozwiązanie to wymaga umiejętności programowania. Poniżej zamieszczamy kilka informacji dotyczących sposobu postępowania. Jednak w przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/pl/directory/). Niestety firma OVHcloud nie jest w stanie udzielić wsparcia w tym zakresie.
 >
 
 ### Etap 1: utwórz skrypt kopii zapasowej
@@ -155,7 +155,7 @@ Aby przeprowadzić operację, wpisz odpowiednie komendy w terminalu, aby połąc
 
 > [!warning]
 >
-> Aby korzystać z tego typu dostępu, konieczna jest zaawansowana wiedza techniczna. Poniżej zamieszczamy kilka informacji dotyczących sposobu postępowania, jednak w przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/pl/directory/). Niestety firma OVH nie jest w stanie udzielić wsparcia w tym zakresie.
+> Aby korzystać z tego typu dostępu, konieczna jest zaawansowana wiedza techniczna. Poniżej zamieszczamy kilka informacji dotyczących sposobu postępowania, jednak w przypadku trudności zalecamy skorzystanie z pomocy [wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/pl/directory/). Niestety firma OVHcloud nie jest w stanie udzielić wsparcia w tym zakresie.
 >
 
 Po zalogowaniu się do przestrzeni dyskowej FTP za pomocą SSH, wprowadź komendę pozwalającą na utworzenie kopii zapasowej bazy danych. Poniżej przykład komendy, która może być pomocna w przeprowadzanej przez Ciebie operacji. Pamiętaj, że kopia zapasowa zostanie zapisana w aktywnym katalogu w momencie, gdy wyślesz komendę do terminala.
