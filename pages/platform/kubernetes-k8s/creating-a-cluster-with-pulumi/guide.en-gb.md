@@ -1,10 +1,10 @@
 ---
 title: Creating a cluster with Pulumi
 excerpt: 'Creates an OVHcloud Managed Kubernetes Service cluster with Pulumi'
-updated: 2023-08-10
+updated: 2023-08-25
 ---
 
-**Last updated 10th August 2023**
+**Last updated 25th August 2023**
 
 <style>
  pre {
@@ -32,28 +32,28 @@ updated: 2023-08-10
 
 Creating an OVHcloud Managed Kubernetes cluster through the OVHcloud Control Panel is cool, but do you know you can deploy a cluster programmatically, with an Infrastructure as Code (IaC) tools?
 
-You know you can through Terraform thanks to our OVHcloud provider but do you know you can too with Pulumi?
+You know you can do it through Terraform thanks to our OVHcloud provider but do you know you can do it too with Pulumi?
 
 ## Pulumi
 
-[Pulumi](https://www.pulumi.com/) is an Infrastructure as code (IasC) tool that allows you to build your infrastructures with a programming language.
+[Pulumi](https://www.pulumi.com/) is an Infrastructure as code (IasC) tool that allows you to build your infrastructures with a programming language, in Golang of example ;-).
 Users defined the desired state in Pulumi programs and Pulumi create the desired resources.
 
-To provision, update or delete your infrastructure, Pulumi have an intuitive command line interface (CLI).
-If you are familiar with Docker compose CLI and Terraform CLI, you will adopt [Pulumi CLI](https://www.pulumi.com/docs/cli/) too.
+To provision, update or delete your infrastructure, Pulumi have an intuitive command line interface (CLI). If you are familiar with Docker Compose CLI and Terraform CLI, you will adopt [Pulumi CLI](https://www.pulumi.com/docs/cli/) too.
 
 ## Requirements
 
 - A [Public Cloud project](/pages/platform/public-cloud/create_a_public_cloud_project) in your OVHcloud account
 - Installing [Pulumi CLI](https://www.pulumi.com/docs/install/){.external}
-- TODO: An account in Pulumi
-- TODO: Pulumi access token
+- An account in [Pulumi](https://www.pulumi.com/)
+- A [Pulumi access token](https://app.pulumi.com/account/tokens)
+- Installing [kubectl CLI](https://kubernetes.io/docs/tasks/tools/)
 
 ## Before you begin
 
 * You should have installed Pulumi CLI on your machine.
 
-Verify the Pulumi Cli is successfully installed in your machine with `pulumi version` command:
+Verify the Pulumi CLI is successfully installed in your machine with `pulumi version` command.
 
 You should have a result like this:
 
@@ -63,16 +63,12 @@ v3.77.1
 
 ## OVHcloud Pulumi provider
 
-TODO: xxx
+In order to create a Kubernetes cluster and other resources, you will use the [OVHcloud Pulumi provider](https://github.com/scraly/pulumi-ovh). This provider is a bridge to our official [Terraform provider](https://registry.terraform.io/providers/ovh/ovh/latest){.external}.
 
-![Pulumi](images/ovh-loves-terraform.png){.thumbnail}
+TODO: quand le repo GH sera officiel sur le registry de pulumi
+TODO: change scraly to ovh orga
 
-TODO: xxx
-
-
-In order to create a Kubernetes cluster and other resources, you will use the [OVHcloud Pulumi provider](https://github.com/lbrlabs/pulumi-ovh). This provider is a bridge to our official [Terraform provider](https://registry.terraform.io/providers/ovh/ovh/latest){.external}.
-
-All available Pulumi resource have their definition and [documentation](https://www.pulumi.com/registry/packages/ovh).
+All available Pulumi resources have their definition and [documentation](https://www.pulumi.com/registry/packages/ovh).
 
 In this guide, we will create two resources:
 
@@ -102,7 +98,7 @@ Concretely, you have to generate these credentials via the [OVH token generation
 
 When you have successfully generated your OVH tokens, please keep them. You'll have to define them in the coming minutes ;-).
 
-The last needed information is the `service_name`: it is the ID of your Public Cloud project.
+The last needed information is the `serviceName`: it is the ID of your Public Cloud project.
 
 How to get it?
 
@@ -119,16 +115,20 @@ export OVH_APPLICATION_SECRET="xxx"
 export OVH_CONSUMER_KEY="xxx"
 ```
 
+> [!primary]
+>
+> Replace `xxx` by the correct values and `ovh-eu` with the correct endpoint.
+
 ## Instructions 
 
 ### Create our Pulumi project and initialize our Go program
 
-Infrastructure in Pulumi is organized into projects.  In the Pulumi ecosystem, a project represents a Pulumi program that, when run, declares the desired infrastructure for Pulumi to manage. 
-First, create a folder `ovhcloud_kube` taht represent our project and go into it.
+Infrastructure in Pulumi is organized into projects. In the Pulumi ecosystem, a project represents a Pulumi program that, when run, declares the desired infrastructure for Pulumi to manage. 
+First, create a folder `pulumi_ovh_kube` that represent our project and go into it.
 
 ```bash
-mkdir ovhcloud_kube
-cd ovhcloud_kube
+mkdir pulumi_ovh_kube
+cd pulumi_ovh_kube
 ```
 
 Initialize our project:
@@ -139,8 +139,8 @@ pulumi new go -y
 
 The output should be like this:
 
-<pre class="console"><code>$pulumi new go -y
-Created project 'ovhcloud_kube'
+<pre class="console"><code>$ pulumi new go -y
+Created project 'pulumi_ovh_kube'
 
 Please enter your desired stack name.
 To create a stack in an organization, use the format <org-name>/<stack-name> (e.g. `acmecorp/dev`).
@@ -165,46 +165,43 @@ The command create a `dev` stack and the code organization of your project:
 └── Pulumi.yaml
 </code></pre>
 
-Now we need to install the needed providers.
-Change the `go.mod` file so that the require section looks like this:
+Now we need to install the Pulumi OVH provider.
 
+TODO: change to ovh orga
+```bash
+go get github.com/scraly/pulumi-ovh/sdk
 ```
-require (
-	github.com/lbrlabs/pulumi-ovh/sdk v0.2.0
-	github.com/pulumi/pulumi/sdk/v3 v3.55.0
-)
+
+In order to create a OVHcloud MKS cluster we need to define the `serviceName`.
+Edit the `Pulumi.yaml` file with the following content:
+
+```yaml
+config:
+ serviceName: <your-service-name>
 ```
+
+> [!primary]
+>
+> Replace `<your-service-name>` by your Public Cloud project.
 
 Then, edit the `main.go` file and replace the content with the following:
-
-
-TODO: a fixer quand ça marchera !!!!!
-TODO: puis rajouter le node pool !!!!!
-TODO: et le kubeconfig !!!! ctx.Export("kubeconfig", pulumi.ToSecret(myKube.kubeconfig)) 
 
 ```go
 package main
 
 import (
-	"log"
-
-	ovh "github.com/lbrlabs/pulumi-ovh/sdk/go/ovh"
 	"github.com/pulumi/pulumi/sdk/v3/go/pulumi"
 	"github.com/pulumi/pulumi/sdk/v3/go/pulumi/config"
+	"github.com/scraly/pulumi-ovh/sdk/go/ovh/cloudproject"
 )
 
 func main() {
 	pulumi.Run(func(ctx *pulumi.Context) error {
-		cfg := config.New(ctx, "")
-		serviceName := "a212a1e43b614c4ba27a247b890fcf59"
-		if param := cfg.Get("serviceName"); param != "" {
-			serviceName = param
-		}
 
-		//project, err := ovh.GetCloudProject(ctx, "LAB_DEVREL_AV", "myid", &ovh.CloudProjectState{} , )
+		serviceName := config.Require(ctx, "serviceName")
 
 		// Deploy a new Kubernetes cluster
-		mykube, err := ovh.NewCloudProjectKube(ctx, "mykube", &ovh.CloudProjectKubeArgs{
+		myKube, err := cloudproject.NewKube(ctx, "my_desired_cluster", &cloudproject.KubeArgs{
 			ServiceName: pulumi.String(serviceName),
 			Name:        pulumi.String("my_desired_cluster"),
 			Region:      pulumi.String("GRA5"),
@@ -213,16 +210,43 @@ func main() {
 			return err
 		}
 
-    ctx.Export("kubeconfig", pulumi.ToSecret(myKube.kubeconfig))
+		// Export kubeconfig file to a secret
+		ctx.Export("kubeconfig", pulumi.ToSecret(myKube.Kubeconfig))
 
-		log.Println(mykube.Name)
+		//Create a Node Pool
+		nodePool, err := cloudproject.NewKubeNodePool(ctx, "my-desired-pool", &cloudproject.KubeNodePoolArgs{
+			ServiceName:  pulumi.String(serviceName),
+			KubeId:       myKube.ID(),
+			Name:         pulumi.String("my-desired-pool"),
+			DesiredNodes: pulumi.Int(1),
+			MaxNodes:     pulumi.Int(3),
+			MinNodes:     pulumi.Int(1),
+			FlavorName:   pulumi.String("b2-7"),
+		})
+		if err != nil {
+			return err
+		}
+
+		ctx.Export("nodePoolID", nodePool.ID())
 
 		return nil
 	})
 }
 ```
 
-Then, run `go mod tidy` command` to ask go to download and install the necessary Go providers and dependencies.
+This Go program will create an OVHcloud MKS cluster:
+
+* named `my-desired-cluster`
+* in the `GRA5` region
+* in your Public Cloud project (depending the `serviceName` you defined)
+
+And a Kubernetes Node Pool:
+
+* named `my-desired-pool`
+* with `b2-7` flavor/machine type
+* with 1 desired node, 2 node minimum and 3 node maximum
+
+Then, run `go mod tidy` command` to ask Go to download and install the necessary Go providers and dependencies.
 
 ```
 go mod tidy
@@ -231,17 +255,49 @@ go mod tidy
 ### Create our cluster through Pulumi
 
 Now we can deploy our cluster and the node pool, to do that just execute the `pulumi up` comand.
-This will display the plan/the preview of the desireed state.
+This will display the plan/the preview of the desireed state. A prompt will ask you to choose the stack (`dev` by default) and to confirm of you want to perform/apply the changes.
 
-TODO: xxx
-
-
+TODO: change scraly to ovh orga
 ```
 $ pulumi up
+Please choose a stack, or create a new one: dev
+Previewing update (dev)
 
+View in Browser (Ctrl+O): https://app.pulumi.com/scraly/pulumi_ovh_kube/dev/previews/cf1a0da4-xxxx-xxxx-xxxx-053bf2bfdda0
+
+     Type                              Name                 Plan       
+ +   pulumi:pulumi:Stack               pulumi_ovh_kube-dev  create     
+ +   ├─ ovh:CloudProject:Kube          my_desired_cluster   create     
+ +   └─ ovh:CloudProject:KubeNodePool  my-desired-pool      create     
+
+
+Outputs:
+    kubeconfig: [secret]
+    nodePoolID: output<string>
+
+Resources:
+    + 3 to create
+
+Do you want to perform this update? yes
+Updating (dev)
+
+View in Browser (Ctrl+O): https://app.pulumi.com/scraly/pulumi_ovh_kube/dev/updates/4
+
+     Type                              Name                 Status             
+ +   pulumi:pulumi:Stack               pulumi_ovh_kube-dev  created (394s)     
+ +   ├─ ovh:CloudProject:Kube          my_desired_cluster   created (241s)     
+ +   └─ ovh:CloudProject:KubeNodePool  my-desired-pool      created (150s)     
+
+
+Outputs:
+    kubeconfig: [secret]
+    nodePoolID: "06519a68-xxxx-xxxx-xxxx-18ac624e169d"
+
+Resources:
+    + 3 created
+
+Duration: 6m37s
 ```
-
-TODO: xxx
 
 Now, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), go to the `Public Cloud`{.action} section and click on `Managed Kubernetes Service`. <br>
 As you can see, your cluster has been successfuly created:
@@ -258,7 +314,6 @@ Perfect!
 
 ## Connect to the cluster
 
-TODO: xx
 
 Our cluster is created, now we need to connect to it in order to check our nodes, existing pods and to deploy our applications.
 
@@ -273,67 +328,107 @@ You can define it in your `$KUBECONFIG` environment variable or you can use it d
 List our Node Pool:
 
 ```
-$ kubectl --kubeconfig=/Users/<your-user>/.kube/my_kube_cluster.yml get nodepool
-NAME      FLAVOR   AUTO SCALED   MONTHLY BILLED   ANTI AFFINITY   DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   MIN   MAX   AGE
-my-pool   b2-7     false         false            false           3         3         3            3           3     3     1d
+$ kubectl --kubeconfig=kubeconfig.yaml get nodepool
+NAME              FLAVOR   AUTOSCALED   MONTHLYBILLED   ANTIAFFINITY   DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   MIN   MAX   AGE
+my-desired-pool   b2-7     false        false           false          1         1         1            1           1     3     3m25s
 ```
 
 Display the list of Nodes:
 
 ```
-$ kubectl --kubeconfig=/Users/<your-user>/.kube/my_kube_cluster.yml get node
-NAME                  STATUS   ROLES    AGE   VERSION
-my-pool-node-1bb290   Ready    <none>   1d   v1.22.2
-my-pool-node-8280a6   Ready    <none>   1d   v1.22.2
-my-pool-node-8a1bfe   Ready    <none>   1d   v1.22.2
+$ kubectl --kubeconfig=kubeconfig.yaml get node
+NAME                          STATUS   ROLES    AGE    VERSION
+my-desired-pool-node-a90c09   Ready    <none>   115s   v1.26.4
 ```
 
 Awesome!
 
-You can now deploy your applications and/or create new clusters through Terraform.
+You can now deploy your applications and/or create new clusters through Pulumi.
 
 ## Known issues
 
-TODO: a garder ???
+### "Provider is missing a required configuration key"
 
-### "gzip: invalid header"
+If you have the following error, it means you forget to export needed OVH environment variables.
 
-You defined the node pool you want to create? So it's time to enter  the `terraform apply` command.
+TODO: change scraly to ovh orga
 
 ```bash
-ovh_cloud_project_kube_nodepool.node_pool[0]: Creating...
-local_file.kubeconfig[0]: Creating...
-local_file.kubeconfig[0]: Creation complete after 0s [id=c5d11f6df9df77a0b57b6c14c3be4fb48178f6ac]
- 
-Error: calling Post /cloud/project/a212a1e43b614c4ba27a247b890fcf59/kube/90cb98f1-ad48-4f98-95c8-07188ea765cf/nodepool with params my-pool-0(d2.8): 3/3/3:
-                "gzip: invalid header"
- 
-  on ovh_kube_cluster.tf line 10, in resource "ovh_cloud_project_kube_nodepool" "node_pool":
-  10: resource "ovh_cloud_project_kube_nodepool" "node_pool" {
+$ pulumi up
+Previewing update (dev)
+
+View in Browser (Ctrl+O): https://app.pulumi.com/scraly/pulumi_ovh_kube/dev/previews/7ddcd60c-xxxx-xxxx-xxxx-6e14e388c577
+
+     Type                     Name                                              Plan       Info
+ +   pulumi:pulumi:Stack      pulumi_ovh_kube-dev                              create     1 message
+     └─ pulumi:providers:ovh  default_github_/api.github.com/scraly/pulumi-ovh             1 error
+
+
+Diagnostics:
+  pulumi:providers:ovh (default_github_/api.github.com/scraly/pulumi-ovh):
+    error: pulumi:providers:ovh resource 'default_github_/api.github.com/scraly/pulumi-ovh' has a problem: Provider is missing a required configuration key, try `pulumi config set ovh:endpoint`: The OVH API endpoint to target (ex: "ovh-eu").
+
+  pulumi:pulumi:Stack (pulumi_ovh_kube-dev):
+    2023/08/10 07:04:39 {0xc0001e25b0}
 ```
 
-We do agree the error message is not user friendly, we will work on it. ;-)
+The solution is to export missing required onfiguration:
 
-If you get this "gzip: invalid header" error message, the issue is that you name the flavor or the node pool name with an invalid character: "_" or ".".
+```bash
+export OVH_ENDPOINT="ovh-eu"
+export OVH_APPLICATION_KEY="xxx"
+export OVH_APPLICATION_SECRET="xxx"
+export OVH_CONSUMER_KEY="xxx"
+```
+
+> [!primary]
+>
+> Replace `xxx` by the correct values and `ovh-eu` with the correct endpoint.
+
+### "Node pool name xxx is invalid, only lowercase characters, digits and '-' are accepted"
+
+You defined the node pool you want to create? So it's time to enter  the `pulumi up` command.
+
+```bash
+     Type                              Name                 Status                  Info
+ +   pulumi:pulumi:Stack               pulumi_ovh_kube-dev  **creating failed**     1 error
+ +   ├─ ovh:CloudProject:Kube          my_desired_cluster   created (222s)          
+ +   └─ ovh:CloudProject:KubeNodePool  my_desired_pool      **creating failed**     1 error
+
+
+Diagnostics:
+  pulumi:pulumi:Stack (pulumi_ovh_kube-dev):
+    error: update failed
+
+  ovh:CloudProject:KubeNodePool (my_desired_pool):
+    error: 1 error occurred:
+        * calling Post /cloud/project/xxxxxxxxxx/kube/22980f3b-xxxx-xxxx-xxxx-19ddb026cf45/nodepool with params my_desired_pool(b2-7): 1/1/3:
+         OVHcloud API error (status code 400): Client::BadRequest: "[InvalidDataError] 400: Node pool name my_desired_pool is invalid, only lowercase characters, digits and '-' are accepted (regex: '^[a-z0-9]([-a-z0-9]*[a-z0-9])?$') (request ID: xxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxx)" (X-OVH-Query-Id: EU.ext-3.64d4d2ba.66772.xxxxxxxxxxxxxxxxx)
+
+Resources:
+    + 2 created
+
+Duration: 3m47s
+```
+
+If you get this error message, the issue is that you name the flavor or the node pool with an invalid character: "_" or ".".
 
 The API don't support these characters so that's the reason why you obtained this error message.
 In order to fix it, change the flavor name and/or the pool name to a correct one, for example:
 
-```bash
-resource "ovh_cloud_project_kube_nodepool" "node_pool" {
-  service_name  = var.service_name
-  kube_id       = ovh_cloud_project_kube.my_kube_cluster.id
-  name          = "my-pool" //Warning: "_" char is not allowed!
-  flavor_name   = "b2-7"
-  desired_nodes = 3
-  max_nodes     = 3
-  min_nodes     = 3
-}
+```go
+nodePool, err := cloudproject.NewKubeNodePool(ctx, "my-desired-pool", &cloudproject.KubeNodePoolArgs{
+			ServiceName:  pulumi.String(serviceName),
+			KubeId:       myKube.ID(),
+			Name:         pulumi.String("my-desired-pool"),
+			DesiredNodes: pulumi.Int(1),
+			MaxNodes:     pulumi.Int(3),
+			MinNodes:     pulumi.Int(1),
+			FlavorName:   pulumi.String("b2-7"),
+		})
 ```
 
 ### "not enough xxx quotas"
-
-TODO: a garder ?
 
 By default, the Public Cloud projects as well as the resources total (RAM, CPU, disk space, number of instances, etc.) you can use are limited for security reasons.
 
@@ -349,79 +444,52 @@ In order to check your quotas and increase them, please follow this tutorial:
 
 ## Destroy (cleanup)
 
-TODO: 
+If you want to easily destroy created resources, you can use `pulumi destroy` command.
 
-pulumi destroy
-
-
-If you want to easily destroy created resources, you can use `terraform destroy` command.
+TODO: change scraly to ovh orga
 
 ```
-$ terraform destroy
-ovh_cloud_project_kube.my_kube_cluster: Refreshing state... [id=7628f0e1-a082-4ec5-98df-2aba283ca3f3]
-ovh_cloud_project_kube_nodepool.node_pool: Refreshing state... [id=ebfa7726-d50c-4fbc-8b24-e722a1ff28f5]
+$ pulumi destroy
+Please choose a stack: dev
+Previewing destroy (dev)
 
-An execution plan has been generated and is shown below.
-Resource actions are indicated with the following symbols:
-  - destroy
+View in Browser (Ctrl+O): https://app.pulumi.com/scraly/pulumi_ovh_kube/dev/previews/0d349055-xxxx-xxxx-xxxx-8821daab3d43
 
-Terraform will perform the following actions:
+     Type                              Name                 Plan       
+ -   pulumi:pulumi:Stack               pulumi_ovh_kube-dev  delete     
+ -   ├─ ovh:CloudProject:KubeNodePool  my-desired-pool      delete     
+ -   └─ ovh:CloudProject:Kube          my_desired_cluster   delete     
 
-  # ovh_cloud_project_kube.my_kube_cluster will be destroyed
-  - resource "ovh_cloud_project_kube" "my_kube_cluster" {
-      - control_plane_is_up_to_date = true -> null
-      - id                          = "7628f0e1-a082-4ec5-98df-2aba283ca3f3" -> null
-      - is_up_to_date               = true -> null
-      - kubeconfig                  = (sensitive value)
-      - name                        = "my_kube_cluster" -> null
-      - next_upgrade_versions       = [] -> null
-      - nodes_url                   = "z2tj25.nodes.c1.gra7.k8s.ovh.net" -> null
-      - region                      = "GRA7" -> null
-      - service_name                = "<your_service_name>" -> null
-      - status                      = "READY" -> null
-      - update_policy               = "ALWAYS_UPDATE" -> null
-      - url                         = "xxxxxx.c1.gra7.k8s.ovh.net" -> null
-      - version                     = "1.22" -> null
-    }
 
-  # ovh_cloud_project_kube_nodepool.node_pool will be destroyed
-  - resource "ovh_cloud_project_kube_nodepool" "node_pool" {
-      - anti_affinity  = false -> null
-      - desired_nodes  = 3 -> null
-      - flavor_name    = "b2-7" -> null
-      - id             = "ebfa7726-d50c-4fbc-8b24-e722a1ff28f5" -> null
-      - kube_id        = "7628f0e1-a082-4ec5-98df-2aba283ca3f3" -> null
-      - max_nodes      = 3 -> null
-      - min_nodes      = 3 -> null
-      - monthly_billed = false -> null
-      - name           = "my-pool" -> null
-      - service_name   = "<your_service_name>" -> null
-      - status         = "READY" -> null
-    }
+Outputs:
+  - kubeconfig: [secret]
+  - nodePoolID: "e0b6f857-xxxx-xxxx-9dca-9e3e1480097c"
 
-Plan: 0 to add, 0 to change, 2 to destroy.
+Resources:
+    - 3 to delete
 
-Do you really want to destroy all resources?
-  Terraform will destroy all your managed infrastructure, as shown above.
-  There is no undo. Only 'yes' will be accepted to confirm.
+Do you want to perform this destroy? yes
+Destroying (dev)
 
-  Enter a value: yes
+View in Browser (Ctrl+O): https://app.pulumi.com/scraly/pulumi_ovh_kube/dev/updates/3
 
-ovh_cloud_project_kube_nodepool.node_pool: Destroying... [id=ebfa7726-d50c-4fbc-8b24-e722a1ff28f5]
-ovh_cloud_project_kube_nodepool.node_pool: Still destroying... [id=ebfa7726-d50c-4fbc-8b24-e722a1ff28f5, 10s elapsed]
-ovh_cloud_project_kube_nodepool.node_pool: Still destroying... [id=ebfa7726-d50c-4fbc-8b24-e722a1ff28f5, 20s elapsed]
-ovh_cloud_project_kube_nodepool.node_pool: Still destroying... [id=ebfa7726-d50c-4fbc-8b24-e722a1ff28f5, 30s elapsed]
-ovh_cloud_project_kube_nodepool.node_pool: Still destroying... [id=ebfa7726-d50c-4fbc-8b24-e722a1ff28f5, 40s elapsed]
-ovh_cloud_project_kube_nodepool.node_pool: Still destroying... [id=ebfa7726-d50c-4fbc-8b24-e722a1ff28f5, 50s elapsed]
-ovh_cloud_project_kube_nodepool.node_pool: Still destroying... [id=ebfa7726-d50c-4fbc-8b24-e722a1ff28f5, 1m0s elapsed]
-ovh_cloud_project_kube_nodepool.node_pool: Destruction complete after 1m2s
-ovh_cloud_project_kube.my_kube_cluster: Destroying... [id=7628f0e1-a082-4ec5-98df-2aba283ca3f3]
-ovh_cloud_project_kube.my_kube_cluster: Still destroying... [id=7628f0e1-a082-4ec5-98df-2aba283ca3f3, 10s elapsed]
-ovh_cloud_project_kube.my_kube_cluster: Still destroying... [id=7628f0e1-a082-4ec5-98df-2aba283ca3f3, 20s elapsed]
-ovh_cloud_project_kube.my_kube_cluster: Still destroying... [id=7628f0e1-a082-4ec5-98df-2aba283ca3f3, 30s elapsed]
-ovh_cloud_project_kube.my_kube_cluster: Destruction complete after 33s
+     Type                              Name                 Status            
+     pulumi:pulumi:Stack               pulumi_ovh_kube-dev                    
+ -   ├─ ovh:CloudProject:KubeNodePool  my-desired-pool      deleted (66s)     
+ -   └─ ovh:CloudProject:Kube          my_desired_cluster   deleted (96s)     
 
-Destroy complete! Resources: 2 destroyed.
+
+Outputs:
+  - kubeconfig: [secret]
+  - nodePoolID: "e0b6f857-xxxx-xxxx-xxxx-9e3e1480097c"
+
+Resources:
+    - 3 deleted
+
+Duration: 2m45s
+
+The resources in the stack have been deleted, but the history and configuration associated with the stack are still maintained. 
+If you want to remove the stack completely, run `pulumi stack rm dev`.
 ```
 
 Perfect, your Kubernetes cluster and associated resources (Nodes, Pods...) have been correctly destroyed!
