@@ -1,14 +1,12 @@
 ---
 title: 'Pierwsze kroki z API OVHcloud'
 excerpt: 'Dowiedz się, jak korzystać z API OVHcloud'
-updated: 2022-05-30
+updated: 2023-08-24
 ---
 
 > [!primary]
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
 >
-
-**Ostatnia aktualizacja z dnia 30-05-2022**
 
 ## Wprowadzenie
 
@@ -128,6 +126,11 @@ Zakładki `PHP` i `Python` zawierają elementy, które należy dodać do skryptu
 ### Zaawansowane wykorzystanie: łączenie API OVHcloud z aplikacją
 
 #### Utwórz klucze aplikacji
+
+> [!success]
+>
+> Interfejsy API OVHcloud są teraz kompatybilne z protokołem Oauth2. Więcej informacji znajdziesz w przewodniku "[Jak uwierzytelnić się za pomocą API OVHcloud Oauth2 (EN)](/pages/account/api/authenticate-api-with-service-account)".
+>
 
 Każda aplikacja, która chce komunikować się z API OVHcloud, musi zostać zgłoszona z wyprzedzeniem.
 

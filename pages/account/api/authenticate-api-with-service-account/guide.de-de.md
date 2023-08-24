@@ -1,5 +1,5 @@
 ---
-title: How to use service accounts to connect to OVHcloud APIs
+title: How to use service accounts to connect to OVHcloud APIs (EN)
 excerpt: "How to connect to APIs with OVHcloud service accounts using the Oauth2 protocol"
 updated: 2023-08-24
 ---
