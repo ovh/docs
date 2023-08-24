@@ -6,7 +6,7 @@ updated: 2023-08-21
 
 > [!warning]
 >
-> Cette fonctionnalité est actuellement en bêta. Retrouvezplus d'informations sur <https://labs.ovhcloud.com/fr/>.
+> Cette fonctionnalité est actuellement en bêta. Retrouvez plus d'informations sur <https://labs.ovhcloud.com/fr/>.
 >
 
 ## Objectif
