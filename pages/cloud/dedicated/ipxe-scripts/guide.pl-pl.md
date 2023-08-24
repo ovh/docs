@@ -1,7 +1,7 @@
 ---
 title: "Skonfiguruj spersonalizowany skrypt iPXE, aby uruchomić serwer przez API OVHcloud"
 excerpt: "Dowiedz się, jak API OVHcloud pozwala na skonfigurowanie spersonalizowanego skryptu PXE do uruchamiania serwera"
-updated: 2023-06-21
+updated: 2023-08-24
 ---
 
 > [!primary]
@@ -31,6 +31,11 @@ Spersonalizowany skrypt może być interesujący w następujących przypadkach:
 > [!warning]
 >
 > Restart serwera dedykowanego może spowodować przerwanie świadczenia nieredundantnych usług, które zależą wyłącznie od zrestartowanego serwera.
+>
+
+> [!warning]
+>
+> Ta funkcja jest dostępna tylko na serwerach `UEFI`. Aktualnie pracujemy nad dodaniem tej funkcji na serwerach w trybie boot `LEGACY`.
 >
 
 ## W praktyce

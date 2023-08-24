@@ -1,7 +1,7 @@
 ---
 title: "Configurare uno script iPXE personalizzato per avviare il tuo server tramite l'API OVHcloud"
 excerpt: "Scopri come l'API OVHcloud ti permette di configurare uno script di innesco personalizzato PXE per boot il tuo server"
-updated: 2023-06-21
+updated: 2023-08-24
 ---
 
 > [!primary]
@@ -31,6 +31,11 @@ Utilizza uno script personalizzato che potrebbe essere interessante nei seguenti
 > [!warning]
 >
 > Il riavvio di un server dedicato può provocare l'interruzione dei servizi non ridondati che dipendono esclusivamente dal server riavviato.
+>
+
+> [!warning]
+>
+> Questa funzionalità è disponibile solo sui server `UEFI`. Stiamo lavorando per aggiungere questa funzionalità ai server in boot `LEGACY`.
 >
 
 ## Procedura
