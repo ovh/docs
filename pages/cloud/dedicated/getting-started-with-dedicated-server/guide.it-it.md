@@ -1,14 +1,12 @@
 ---
 title: Iniziare a utilizzare un server dedicato
 excerpt: Come eseguire le prime operazioni sul tuo nuovo server dedicato
-updated: 2023-03-28
+updated: 2023-08-24
 ---
 
 > [!primary]
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
 >
-
-**Ultimo aggiornamento: 28/02/2023**
 
 ## Obiettivo
 
@@ -151,7 +149,7 @@ Clicca sul pulsante `Configura`{.action}. Nella nuova finestra, hai tre opzioni 
 
 - **Disattivato**: Questa opzione blocca i messaggi di alert e gli interventi di OVHcloud. Scegli questa opzione se esegui le azioni di amministrazione sul server che impediscono una risposta ICMP.
 - **Attivato con intervento proattivo**: Se il server non risponde più, riceverai un'email di alert e il server sarà verificato da un tecnico.
-- **Attivato senza intervento proattivo**: Riceverai un alert via email nel caso in cui il server non risponda più. Per avviare un intervento è necessario creare una richiesta di assistenza.
+- **Attivato senza intervento proattivo**: Riceverai un alert via email nel caso in cui il server non risponda più. Per avviare un intervento è necessario attivare l'opzione con intervento proattivo.
 
 ![Monitoring](images/monitoring-your-server2.png){.thumbnail}
 

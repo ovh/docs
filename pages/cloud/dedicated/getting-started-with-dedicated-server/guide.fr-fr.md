@@ -1,7 +1,7 @@
 ---
 title: 'Premiers pas avec un serveur dédié'
 excerpt: 'Découvrez comment prendre en main votre nouveau serveur dédié'
-updated: 2023-03-28
+updated: 2023-08-24
 ---
 
 **Dernière mise à jour le 28/02/2023**
@@ -147,7 +147,7 @@ Cliquez sur le bouton `Configurer`{.action}. Dans la fenêtre qui apparaît, vou
 
 - **Désactivé** : cette option interrompt les messages d'alerte et les interventions d'OVHcloud. Choisissez cette option si vous exécutez des actions d'administration spécifiques sur le serveur et qui empêchent une réponse ICMP.
 - **Activé avec intervention proactive** : si le serveur ne répond plus, un e-mail d'alerte vous est envoyé et le serveur est vérifié par un technicien.
-- **Activé sans intervention proactive** : vous recevrez un message d'alerte par e-mail au cas où le serveur ne répondrait plus. Pour lancer une intervention, il est nécessaire de créer une demande d'assistance.
+- **Activé sans intervention proactive** : vous recevrez un message d'alerte par e-mail au cas où le serveur ne répondrait plus. Pour lancer une intervention, il est nécessaire d'activé l'option avec intervention proactive.
 
 ![Monitoring](images/monitoring-your-server2.png){.thumbnail}
 

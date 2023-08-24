@@ -1,14 +1,12 @@
 ---
 title: 'Primeiros passos com um servidor dedicado'
 excerpt: 'Saiba como utilizar o seu novo servidor dedicado'
-updated: 2023-03-28
+updated: 2023-08-24
 ---
 
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em “Contribuir” nesta página.
 >
-
-**Última atualização: 28/02/2023**
 
 ## Objetivo
 
@@ -151,7 +149,7 @@ Clique no botão `Configurar`{.action}. Na janela que aparece, tem três opçõe
 
 - **Desativado**: Esta opção interrompe as mensagens de alerta e as intervenções da OVHcloud. Escolha esta opção se executar ações de administração pertinentes no servidor que impedem uma resposta ICMP.
 - **Ativado com intervenção proactiva**: Se o servidor deixar de responder, ser-lhe-á enviado um e-mail de alerta e o servidor será verificado por um técnico.
-- **Ativado sem intervenção proactiva**: No caso de o servidor deixar de responder, receberá uma mensagem de alerta por e-mail. Para dar início a uma intervenção, é necessário criar um pedido de assistência.
+- **Ativado sem intervenção proactiva**: No caso de o servidor deixar de responder, receberá uma mensagem de alerta por e-mail. Para dar início a uma intervenção, é necessário ativar a opção com intervenção proactiva.
 
 ![Monitoring](images/monitoring-your-server2.png){.thumbnail}
 
