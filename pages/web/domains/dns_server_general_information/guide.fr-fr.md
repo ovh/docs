@@ -1,26 +1,39 @@
 ---
 title: "Modifier les serveurs DNS d'un nom de domaine OVHcloud"
 excerpt: 'Apprenez à modifier les serveurs DNS de votre nom de domaine OVHcloud'
-updated: 2021-02-18
+updated: 2023-08-24
 ---
-
-**Dernière mise à jour le 18 février 2021**
 
 ## Objectif
 
 ### Comprendre la notion de DNS 
 
-Le sigle DNS, signifiant **D**omain **N**ame **S**ystem, est un ensemble d'éléments permettant de faire correspondre un nom de domaine avec une adresse IP.
-
-Retrouvez l'explication complète sur le guide « [Éditer une zone DNS OVHcloud](/pages/web/domains/dns_zone_edit#understanddns) ».
+Le sigle DNS, signifiant **D**omain **N**ame **S**ystem, est un ensemble d'éléments (serveurs DNS, zones DNS, etc.) permettant de faire correspondre un nom de domaine avec une adresse IP.
 
 ### Les serveurs DNS 
 
-Les **serveurs DNS** contiennent les fichiers de configurations DNS des noms de domaine, appelés **zones DNS**.
+Les **serveurs DNS** contiennent des fichiers de configurations DNS pour des noms de domaine, appelés **zones DNS**.
+
+Une zone DNS contient des informations techniques, appelées *enregistrements DNS*. La zone DNS est comme un centre d'aiguillage.
+
+Par exemple, vous pouvez y préciser :
+
+- L'adresse IP (enregistrements DNS de type *A* et *AAAA*) de votre hébergement web pour afficher votre site web avec votre nom de domaine.
+- Les serveurs e-mail (enregistrements DNS de type *MX*) vers lesquels votre nom de domaine doit rediriger les e-mails qu'il reçoit. Cela vous permet de les consulter sur votre (vos) adresse(s) e-mail(s) personnalisée(s) avec votre nom de domaine.
+- Des informations liées à la sécurité / l'authentification de vos services (hébergement web, serveur web, serveur e-mail, etc.) associés à votre nom de domaine (enregistrements DNS de type *SPF*, *DKIM*, *DMARC*, etc.).
+
+Pour plus d'information sur les zones DNS, consultez notre guide « [Editer une zone DNS OVHcloud](/pages/web/domains/dns_zone_edit) ».
+
+De ce fait, ce sont les **serveurs DNS** qui doivent être déclarés auprès du nom de domaine pour utiliser la zone DNS qu'ils hébergent. 
 
 ![DNS](images/dnsserver.png){.thumbnail}
 
-Les serveurs DNS sont généralement utilisés par groupes de deux (primaire et secondaire), dans le but d'obtenir une redondance en cas de défaillance de l'un des serveurs DNS.
+Les **serveurs DNS** fonctionnent généralement par paire :
+
+- Un serveur DNS *principal* qui redirige les flux de requêtes reçus par le nom de domaine vers la zone DNS qu'il héberge pour ce dernier. La zone DNS effectue ainsi la *résolution DNS* pour rediriger les flux vers les bons services (serveurs, site web, e-mails, etc.) associés au nom de domaine.
+- Un serveur DNS *secondaire* dit *de secours* qui est utilisé si le serveur *principal* est saturé, indisponible ou répond moins rapidement que le serveur *secondaire*.
+
+Parfois, certains fournisseurs DNS proposent plus de 2 **serveurs DNS** à déclarer auprès de votre nom de domaine. Dans ce cas, renseignez tous les serveurs DNS proposés par votre fournisseur DNS.
 
 **Découvrez comment modifier les serveurs DNS pour votre nom de domaine OVHcloud.**
 
@@ -34,14 +47,16 @@ Les serveurs DNS sont généralement utilisés par groupes de deux (primaire et 
 
 > [!primary]
 >
-> Si votre nom de domaine n'est pas enregistré chez OVHcloud, vous devrez modifier les serveurs DNS à l'aide de l'interface fournie par le prestataire de services qui le gère.
+> Un *bureau d'enregistrements* est une organisation autorisée à vendre des noms de domaines. OVHcloud fait partie de ces *bureaux d'enregistrements*.
+>
+> Si votre nom de domaine n'est pas enregistré auprès d'OVHcloud, vous devrez modifier les serveurs DNS auprès du *bureau d'enregistrements* où est actuellement enregistré votre nom de domaine.
 >
 
 ## En pratique
 
 > [!warning]
 >
-> **Nous vous recommandons de faire attention lorsque vous modifiez les serveurs DNS d’un nom de domaine.** Une erreur de manipulation peut rendre votre site web inaccessible ou empêcher vos adresses de messagerie de recevoir de nouveaux e-mails. Comprendre les impacts d’une telle modification vous permettra de mieux appréhender le changement que vous allez opérer.
+> **Faites attention lorsque vous modifiez les serveurs DNS d’un nom de domaine.** Une erreur de manipulation peut rendre votre site web inaccessible ou empêcher vos adresses de messagerie de recevoir de nouveaux e-mails. Comprendre les impacts d’une telle modification vous permettra de mieux appréhender le changement que vous allez opérer.
 >
 
 Lorsque vous modifiez les serveurs DNS de votre nom de domaine, vous changez sa configuration DNS. La nouvelle configuration DNS remplace l'ancienne et est stockée sur les serveurs DNS nouvellement définis. Techniquement, le nom de domaine utilise ensuite une nouvelle zone DNS.
@@ -99,7 +114,7 @@ Une fois les modifications requises effectuées, vous devez attendre qu'elles so
 
 ## Aller plus loin
 
-[ Modification d'une zone](/pages/web/domains/dns_zone_edit){.external} DNS OVHcloud.
+[Modification d'une zone DNS OVHcloud](/pages/web/domains/dns_zone_edit){.external}.
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
 
