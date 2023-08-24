@@ -11,7 +11,7 @@ updated: 2023-08-24
 
 ## Objectif
 
-Pour automatiser des appels à des APIs protégées, il faut fournir des identifiants au code qui s'en charge. Avec les comptes de service OVHcloud, il est possible d'avoir un seul identifiant par script pour l'utilisation des différentes API proposées par les produits de OVHcloud ([API de OVHcloud](/pages/account/customer/console-preview), [API OpenStack](/pages/platform/public-cloud/starting_with_nova), etc.).
+Pour automatiser des appels à des APIs protégées, il faut fournir des identifiants au code qui s'en charge. Avec les comptes de service OVHcloud, il est possible d'avoir un seul identifiant par script pour l'utilisation des différentes API proposées par les produits de OVHcloud ([API de OVHcloud](/pages/account/api/console-preview), [API OpenStack](/pages/platform/public-cloud/starting_with_nova), etc.).
 
 Ce guide vous détaille comment utiliser les comptes de service afin de se connecter aux APIs OpenStack.
 

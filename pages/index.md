@@ -1737,7 +1737,7 @@
         + [How to create an IAM policy to allow a user to log to the OVHcloud Control Panel](account/customer/iam-control-panel-access)
         + [How to use IAM policies with vSphere](cloud/private-cloud/use_iam_with_vSphere)
         + [Authenticate on Openstack API with service account](platform/public-cloud/authenticate-api-openstack-with-service-account)
-    + [Terraform](infrastructure-as-code-terraform)
+    + [Terraform](manage-operate-terraform)
         + [Using Terraform with OVHcloud](account/api/terraform-at-ovhcloud)
     + [Observability](manage-operate-observability)
         + [Logs Data Platform](observability-logs-data-platform)
