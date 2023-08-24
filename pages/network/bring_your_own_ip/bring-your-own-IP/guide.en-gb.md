@@ -150,6 +150,62 @@ To activate the announcement of your imported IP range on the Internet, simply a
 
 <br>During the delivery, we will create ARPA zones on our DNS servers and any reverse DNS modification via the OVHcloud Control Panel/API will be applied on them. However, these modifications will be visible to the public when our DNS servers receive delegations of the ARPA zones by the RIR. (This is optional, if you want to continue managing your reverse DNS on your own, you can).
 
+### Range slicing
+
+Any imported block can be further split into smaller blocks and/or individual addresses. To slice a block, use the following API call :
+
+> [!api]
+>
+> @api {POST} /ip/{ip}/bringYourOwnIp/slice
+>
+
+with following parameters:
+
+- ip : the IP block you want to slice, in CIDR notation
+- slicingSize : the resulting size of the sliced blocks, expressed as a network prefix size, in bits. For example if you want to slice a /24 block into 2 smaller blocks of size /25, you should enter the value "25"
+
+Note : This API call is asynchronous, the newly created blocks are made available shortly after the call. They will be usable as any other Additional IP blocks or individual addresses.
+
+You can preview the resulting blocks that would be created for each block size, by using the following API call:
+
+> [!api]
+>
+> @api {GET} /ip/{ip}/bringYourOwnIp/slice
+>
+
+with following parameters:
+
+- ip : the IP block you want to slice, in CIDR notation
+
+To merge back a block into a bigger one, use this API call :
+
+> [!api]
+>
+> @api {POST} /ip/{ip}/bringYourOwnIp/aggregate
+>
+
+with following parameters:
+
+- ip : the IP block you want to slice, in CIDR notation
+- aggregationIp : the resulting block, in CIDR notation
+
+The resulting block will be an aggregate of all its children blocks.
+
+You can preview all the possible configuration of aggregated blocks for a given IP block, by using the following API call:
+
+> [!api]
+>
+> @api {GET} /ip/{ip}/bringYourOwnIp/aggregate
+>
+
+with following parameters:
+
+- ip : the IP block you want to slice, in CIDR notation
+
+This call returns a list of possible aggregated blocks and for each one of them, gives the list of children blocks to be merged back.
+
+Note : this feature is currently available via API only. It will be added to the control panel in the near future.
+
 ## FAQ
 
 ### Is it possible to import an IP range lower than a /24?
@@ -162,7 +218,7 @@ Not at product launch, but feel free to contact us to discuss this.
 
 ### Is splitting the imported /24 into smaller block size (/25, /26, /27, /28, /29 /30) or into /32 supported?
 
-Not for the moment.
+Yes, please see section "Range slicing" for more details.
 
 ### Can I import an ARIN range in campuses accepting only RIPE ranges, and vice-versa?
 
