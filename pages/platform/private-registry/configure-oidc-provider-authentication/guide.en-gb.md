@@ -96,14 +96,14 @@ registryID: <the ID of the registry>
 OIDCPost:
   deleteUsers: true
   provider:
-    adminGroup: harbor-admin //it's my admin group in keycloack
+    adminGroup: harbor-admin //optional, it's my admin group in keycloack
     clientSecret: <keycloack client secret>
     endpoint: <keyclock endpoint> //ending with the realm, for example: https://xxx.yyy.com/realms/mpr 
     groupsClaim: <group in keycloack>
     name: keycloack //for example
     scope: openid,profile,email,offline_access
-    userClaim:
-    verifyCert: true //if you want to check the keycloack SSL/TLS certificate
+    userClaim: //optional, only useful when autOonboard is enabled
+    verifyCert: true //optional, if you want to check the keycloack SSL/TLS certificate
 ```
 
 **Result:**
@@ -167,7 +167,11 @@ registryId: xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
 }
 ```
 
-- Update an existing registry's OIDC provider (to add adminGroup and groupsClaim fields for example):
+- Update an existing registry's OIDC provider:
+
+With this API endpoint, we can, for example, add adminGroup and groupsClaim fields.
+
+When an `adminGroup` is configured, all users belonging to this group will have the admin rights on Harbor.
 
 First, retrieve information about groups in keycloack:
 
@@ -187,7 +191,7 @@ Then, update the configuration with a PUT request.
 ```
 OIDCPost:
   provider:
-    adminGroup: harbor-admin //for example, it's my admin group in keycloack
+    adminGroup: harbor-admin //optional, it's my admin group in keycloack
     groupsClaim: groups
 ```
 
@@ -248,6 +252,10 @@ userID: 8 //the user ID
 ```json
 ```
 
+> [!primary]
+>
+> The response will be empty but you should get a 2xx HTTP status code telling you that everything worked successfully.
+
 When you log again with this user, you are now an Administrator.
 
 ![admin user](admin.png)
@@ -272,6 +280,10 @@ registryId: xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
 
 ```json
 ```
+
+> [!primary]
+>
+> The response will be empty but you should get a 2xx HTTP status code telling you that everything worked successfully.
 
 This request will delete all the users.
 
