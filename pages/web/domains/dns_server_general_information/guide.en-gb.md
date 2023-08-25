@@ -118,7 +118,7 @@ The `Reset the DNS servers`{.action} button allows you to reset your current DNS
 
 Once you have made the required changes, you must wait for them to become fully effective. Two successive periods must be taken into account:
 
-- the modification made on the OVHcloud side must be taken into account by the *registry* that manages your domain name extension (for example, the registry of extensions in *.fr*). You can track the progress of this operation in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}.
+- the modification made on the OVHcloud side must be taken into account by the *registry* that manages your domain name extension (for example, the registry of extensions in *.uk*). You can track the progress of this operation in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}.
 To do this, go to the `Web Cloud`{.action} section, go to the `Domain names`{.action} section in the left-hand column, then click `Ongoing operations`{.action};
 - Once the change has been processed by the organization that manages your domain name extension, you must wait a maximum of **48 hours** for the changes you have made to be fully propagated.
 
