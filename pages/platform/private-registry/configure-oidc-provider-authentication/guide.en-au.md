@@ -4,8 +4,6 @@ excerpt: 'Find out how to configure the authentication via an OIDC provider on a
 updated: 2023-08-25
 ---
 
-**Last updated 25th August, 2023.**
-
 <style>
  pre {
      font-size: 14px;
@@ -30,20 +28,22 @@ updated: 2023-08-25
 
 ## Objective
 
-OVHcloud Managed Private Registry service, a cloud-native registry built on Harbor, allows you to store, manage and access your container images (OCI artifacts) and Helm charts.
+The OVHcloud Managed Private Registry service, a cloud-native registry built on Harbor, allows you to store, manage and access your container images (OCI artifacts) and Helm charts.
 
-By default, to log in your OVHloud Managed private registries you have to generate credentials (from the OVHcloud Control Panel, the APIv6 or Terraform), then log you with this user and administrate other users in the Harbor HMI. But, do you know that you can configure an Open ID Connect (OIDC) provider, for the OVHcloud Managed Private registry authentiction, like Keycloack?
+By default, to log in to your OVHloud Managed private registries you have to generate credentials (from the OVHcloud Control Panel, the APIv6 or Terraform), then log in with this user and administrate other users in the Harbor HMI.
 
-First of all, what is OIDC?
+However, you can also configure an Open ID Connect (OIDC) provider, for the OVHcloud Managed Private registry authentication, such as Keycloack.
+
+- First of all, what is OIDC?
 
 ![OIDC](images/oidc.png)
 
 OIDC stands for [OpenID Connect](https://en.wikipedia.org/wiki/OpenID). It is an open standard and decentralized authentication protocol.
 This protocol allows verifying the user identity when a user is trying to access a protected HTTPs endpoint.
 
-Several OpenID Connect providers exists like Dex, Keycloak, Okta or a SaaS provider and Harbor supports all of them. In this tutorial we will use Keycloack.
+Several OpenID Connect providers exists like Dex, Keycloak, Okta or a SaaS provider. Harbor supports all of them. In this tutorial we will use Keycloack.
 
-What is Keycloak?
+- What is Keycloak?
 
 ![Keycloak](images/keycloack.png)
 
@@ -55,21 +55,21 @@ More information can be found here: [Official Keycloak documentation](https://ww
 
 ## Requirements
 
-- An OVHcloud [Managed Private Registry](/pages/platform/private-registry/creating-a-private-registry)
-- The URL and login/password of your private registry
-- an OIDC provider, like a KeyCloack instance and credentials to access to it
+- An OVHcloud [Managed Private Registry](/pages/platform/private-registry/creating-a-private-registry).
+- The URL and login/password of your private registry.
+- an OIDC provider, like a KeyCloack instance and credentials to access it.
 
-Follow the official guide if you want to [install a Keyclock on an OVHcloud Managed Kubernetes cluster](/pages/platform/kubernetes-k8s/installing-keycloak).
+Follow the official guide if you want to [install Keycloack on an OVHcloud Managed Kubernetes cluster](/pages/platform/kubernetes-k8s/installing-keycloak).
 
 ## Instructions
 
-### Configure OIDC provider through the API
+### Configure ythe OIDC provider through the API
 
 #### The API Explorer
 
 To simplify things, we are using the [API Explorer](https://api.ovh.com/) which allows to explore, learn and interact with the API in an interactive way.
 
-Log in to the API Explorer using your OVHcloud NIC handle.
+Log in to the API Explorer using your OVHcloud account credentials.
 
 ![Log in to the API Explorer](images/kubernetes-quickstart-api-ovh-com-001.png){.thumbnail}
 
@@ -86,7 +86,7 @@ Do a POST HTTP request and fill the input fields with the keycloack/OIDC provide
 > [!api]
 >
 > @api {POST} /cloud/project/{serviceName}/containerRegistry/{registryID}/openIdConnect
-> 
+>
 
 **Input:**
 
@@ -116,29 +116,29 @@ Go to the [Harbor documentation](https://goharbor.io/docs/2.8.0/administration/c
 
 > [!primary]
 >
-> If you forget to enable `deleteUsers` option, you will have an error: `{ "class": "Client::BadRequest", "message": "4 users exist, set parameter deleteUsers to delete them" }`. Indeed, when a new private registry is created, several users are created. So you need to enable the `deleteUsers` field is order to remove existing local users and enable OIDC authentication.
+> If you forget to enable the `deleteUsers` option, you will have an error: `{ "class": "Client::BadRequest", "message": "4 users exist, set parameter deleteUsers to delete them" }`. Indeed, when a new Private Registry is created, several users are created. So you need to enable the `deleteUsers` option in order to remove existing local users and enable OIDC authentication.
 
-Now, access to the Harbor HMI and new buttons should appears, especially the `Login via OIDC provider`:
+Now, access the Harbor HMI. New buttons should appear, especially the `Login via OIDC provider`{.action}:
 
 ![Harbor login via oidc provider](images/login.png)
 
-When you click on the `Login via OIDC provider` button, you are redirected to the Keycloack interface. 
+When you click the `Login via OIDC provider`{.action} button, you are redirected to the Keycloack interface. 
 
 ![keycloack login](images/keycloack-login.png)
 
-If you don't enable `autoOnboard` input field, a popup in the Habror interface should appear asking you to fill the username.
-When this option is checked, the attribute `UserClaim` must be set, Harbor will read the value of this claim from ID token and use it as the username for onboarding the user. 
+If you don't enable the `autoOnboard` input field, a popup in the Harbor interface should appear asking you to fill the username.
+When this option is checked, the attribute `UserClaim` must be set, Harbor will read the value of this claim from the ID token and use it as the username for onboarding the user.
 
 ![Harbor login via OIDC provider](images/autoonboard_off.png)
 
-Click on the `Save` button to finally log on Harbor with the OIDC provider.
+Click on the `Save`{.action} button to finally log in to Harbor with the OIDC provider.
 
 - Get an existing registry's OIDC configuration:
 
 > [!api]
 >
 > @api {GET} /cloud/project/{serviceName}/containerRegistry/{registryID}/openIdConnect
-> 
+>
 
 **Input:**
 
@@ -174,6 +174,7 @@ First, retrieve information about groups in keycloack:
 ![keycloack group](images/keycloack_groups.png)
 
 Check you have at least one member in the group:
+
 ![keycloack group member](images/keycloack_group_member.png)
 
 Then, update the configuration with a PUT request.
@@ -181,7 +182,7 @@ Then, update the configuration with a PUT request.
 > [!api]
 >
 > @api {PUT} /cloud/project/{serviceName}/containerRegistry/{registryID}/openIdConnect
-> 
+>
 
 ```
 OIDCPost:
@@ -191,13 +192,14 @@ OIDCPost:
 ```
 
 Result:
+
 ```json
 null
 ```
 
-- List users
+- Listing users
 
-When you log in the Harbor HMI with an OIDC provider user, the user will be saved. With this API endpoint you can list them.
+When you log in to the Harbor HMI with an OIDC provider user, the user will be saved. Use this API endpoint to list users:
 
 > [!api]
 >
@@ -224,9 +226,9 @@ registryId: xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
 ]
 ```
 
-- Set an user as admin
+- Setting a user as admin
 
-By default an user created in an OIDC provider don't have the admin right. To grants the admin rights to an user, you can do a PUT in the API to set an user as admin.
+By default a user created in an OIDC provider doesn't have the admin rights. To grant a user the admin rights, use the following PUT call:
 
 > [!api]
 >
@@ -246,13 +248,13 @@ userID: 8 //the user ID
 ```json
 ```
 
-When you log again with this user, now you are an Administrator.
+When you log again with this user, you are now an Administrator.
 
 ![admin user](admin.png)
 
-- Delete an existing registry's OIDC configuration:
+- Deleting an existing registry's OIDC configuration:
 
-If you want to delete the authentication with OIDC configuration, execute a DELETE action in the API.
+If you want to delete the authentication with OIDC configuration, execute a DELETE action in the API:
 
 > [!api]
 >
@@ -275,10 +277,12 @@ This request will delete all the users.
 
 > [!primary]
 >
-> Generate again the users credentials through the OVHcloud Control Panel, the APIv6 or Terraform and log you with this new local credentials.
+> You can generate again the users credentials via the OVHcloud Control Panel, the APIv6 or Terraform and log in with these new local credentials.
 
 ## Go further
 
 To have an overview of OVHcloud Managed Private Registry service, read the [OVHcloud Managed Private Registry documentation](/products/public-cloud-containers-orchestration-managed-private-registry).
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-au/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.
