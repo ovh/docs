@@ -42,7 +42,7 @@ Parfois, certains fournisseurs DNS proposent plus de 2 **serveurs DNS** à décl
 ## Prérequis
 
 - Posséder un [nom de domaine](https://www.ovhcloud.com/fr/domains/) enregistré chez OVHcloud.
-- Disposer des autorisations [appropriées pour gérer](/pages/account/customer/managing_contacts){.external} le nom de domaine depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
+- Disposer des autorisations [appropriées pour gérer](/pages/account/customer/managing_contacts) le nom de domaine depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 
 > [!primary]
