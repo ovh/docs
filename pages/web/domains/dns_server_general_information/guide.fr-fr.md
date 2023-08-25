@@ -90,7 +90,7 @@ Si vous souhaitez utiliser des serveurs DNS externes, vous devez les substituer 
 
 Cliquez sur `Modifier les serveurs DNS`{.action} à droite.
 
-Dans les formulaires de saisies, **remplacez** les valeurs actuelles des serveurs DNS par les informations relatives aux nouveaux serveurs DNS que vous souhaitez définir. Pour ajouter d'autres serveurs à la liste active, cliquez sur le bouton `+`{.action} située à droite de la dernière ligne du tableau. Une ligne supplémentaire apparaîtra dans le tableau que vous pourrez compléter.
+Dans les formulaires de saisie, **remplacez** les valeurs actuelles des serveurs DNS par les informations relatives aux nouveaux serveurs DNS que vous souhaitez définir. Pour ajouter d'autres serveurs à la liste active, cliquez sur le bouton `+`{.action} située à droite de la dernière ligne du tableau. Une ligne supplémentaire apparaîtra dans le tableau que vous pourrez compléter.
 
 > [!warning]
 >
