@@ -1,14 +1,12 @@
 ---
 title: 'Alojar varios sitios web en un mismo hosting'
 excerpt: 'Descubra cómo utilizar un plan de hosting para alojar varios sitios web'
-updated: 2023-06-08
+updated: 2023-08-25
 ---
 
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 > 
-
-**Última actualización: 08/06/2023**
 
 ## Objetivo
 
@@ -24,6 +22,13 @@ Es posible alojar varios sitios web en un mismo plan de hosting, aunque los domi
 - Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
 
 ## Procedimiento
+
+> [!primary]
+>
+> La mayoría de los [planes de hosting de OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/){.external} incluyen una opción de creación de direcciones de correo personalizadas con su nombre de dominio.
+> Esta opción de correo electrónico puede activarse para **un solo** nombre de dominio. Esto significa que si realiza el *multisite* con varios dominios diferentes, solo podrá activar esta opción para uno de sus dominios.
+> No dude en consultar nuestra [guide](/pages/web/hosting/activate-email-hosting) para más detalles sobre la activación de esta opción.
+>
 
 ### 1\. Acceder a la gestión del multisitio
 

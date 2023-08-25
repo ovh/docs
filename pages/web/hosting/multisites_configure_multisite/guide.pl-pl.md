@@ -1,14 +1,12 @@
 ---
 title: 'Instalacja kilku stron WWW na jednym hostingu'
 excerpt: 'Dowiedz się, jak zainstalować kilka stron WWW na hostingu'
-updated: 2023-06-08
+updated: 2023-08-25
 ---
 
 > [!primary]
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
 > 
-
-**Ostatnia aktualizacja z dnia 08-06-2023**
 
 ## Wprowadzenie 
 
@@ -24,6 +22,13 @@ Na jednym hostingu możesz zainstalować kilka stron WWW, nawet jeśli domeny ni
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 
 ## W praktyce
+
+> [!primary]
+>
+> Większość ofert [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external} dysponuje opcją tworzenia spersonalizowanego(ych) adresu(ów) e-mail powiązanego z Twoją domeną.
+> Ta opcja e-mail może zostać włączona dla **jednej** domeny. Oznacza to, że jeśli korzystasz z opcji *MultiSite* dla kilku różnych domen, możesz włączyć tę opcję tylko dla jednej domeny.
+> Zapoznaj się z [przewodnikiem](/pages/web/hosting/activate-email-hosting), aby uzyskać więcej informacji na temat aktywacji tej opcji.
+>
 
 ### Etap 1: zarządzanie opcją MultiSite
 
