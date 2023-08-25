@@ -1,10 +1,11 @@
 ---
 title: 'Choisir une grappe de disques pour installer un système d’exploitation'
 excerpt: "Découvrez comment choisir une grappe de disques spécifique pour installer votre système d'exploitation"
-updated: 2018-11-22
+updated: 2023-08-21
 ---
 
-**Dernière mise à jour le 09/11/2018**
+<!-- markdownlint-disable-next-line MD036 -->
+**Dernière mise à jour le 21/08/2023**
 
 ## Objectif
 
@@ -13,9 +14,9 @@ Chez OVHcloud, vous pouvez louer des [serveurs dédiés](https://www.ovh.com/ca/
 **Ce guide vous explique comment spécifier la grappe de disques sur laquelle installer le système d'exploitation.**
 
 > [!warning]
-> 
+>
 > OVH met à votre disposition des services dont la responsabilité vous revient. En effet, n’ayant aucun accès à ces machines, nous n’en sommes pas les administrateurs et ne pourrons vous fournir d'assistance. Il vous appartient de ce fait d’en assurer la gestion logicielle et la sécurisation au quotidien.
-> 
+>
 > Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/directory/) si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la sécurisation d’un serveur. Plus d’informations dans la section « Aller plus loin » de ce guide.
 >
 
@@ -28,7 +29,7 @@ Chez OVHcloud, vous pouvez louer des [serveurs dédiés](https://www.ovh.com/ca/
 > [!warning]
 >
 > Cette procédure ne fonctionne que pour les systèmes Linux (à l’exception des systèmes ESXi et XenServer) et uniquement sur des configurations en RAID Soft, NoRAID ou RAID Hard (configuration par défaut).
-> 
+>
 
 ## En pratique
 
@@ -39,7 +40,7 @@ Une fois connecté sur <https://ca.api.ovh.com/console/>, vous pourrez récupér
 > [!api]
 >
 > @api {GET} /dedicated/server
-> 
+>
 
 Ensuite, récupérez le nom de votre serveur hybride en cliquant sur `Execute`{.action}:
 
@@ -47,14 +48,14 @@ Ensuite, récupérez le nom de votre serveur hybride en cliquant sur `Execute`{.
 
 ### Récupérer le DiskGroupId
 
-Le `DiskGroupId` est l'élément qui vous permettra de définir la grappe de disques sur laquelle l'installation du système d'exploitation sera effectuée. 
+Le `DiskGroupId` est l'élément qui vous permettra de définir la grappe de disques sur laquelle l'installation du système d'exploitation sera effectuée.
 
 Voici l'appel API à réaliser pour cela :
 
 > [!api]
 >
 > @api {GET} /dedicated/server/{serviceName}/specifications/hardware
-> 
+>
 
 Entrez le nom de votre serveur récupéré précédemment dans le champ « **serviceName** », puis cliquez sur le bouton `Execute`{.action}. Les informations sur le matériel de votre serveur s'affichent alors. Repérez le `diskGroupId` concerné dans la partie `diskGroups`.
 
@@ -71,7 +72,7 @@ Pour cela, effectuez l’appel d’API suivant pour récupérer la liste des sys
 > [!api]
 >
 > @api {GET} /dedicated/server/{serviceName}/install/compatibleTemplates
-> 
+>
 
 ![Modèles compatibles](images/templates-01.png){.thumbnail}
 
@@ -80,7 +81,7 @@ Notez le nom du modèle correspondant au système d'exploitation que vous avez c
 > [!api]
 >
 > @api {POST} /dedicated/server/{serviceName}/install/start
-> 
+>
 
 Entrez la référence de votre serveur dans le champ **serviceName**, entrez « diskGroupId » (2) dans le champ **diskGroupId**, puis entrez le nom du modèle dans le champ **templateName** (tous les autres champs sont facultatifs).
 
@@ -93,8 +94,22 @@ Votre système d'exploitation va maintenant être installé. Vous pouvez vérifi
 > [!api]
 >
 > @api {GET} /dedicated/server/{serviceName}/install/status
-> 
+>
 
 ## Aller plus loin
+
+[Premiers pas avec un serveur dédié](/pages/cloud/dedicated/getting-started-with-dedicated-server)
+
+[Premiers pas avec un serveur dédié Kimsufi, So You Start ou Rise](/pages/cloud/dedicated/getting-started-with-dedicated-server-eco)
+
+[API OVHcloud & Partitionnement](/pages/cloud/dedicated/partitioning_ovh)
+
+[Gestion du RAID logiciel](/pages/cloud/dedicated/raid_soft)
+
+[Remplacement à chaud - RAID logiciel](/pages/cloud/dedicated/hotswap_raid_soft)
+
+[Gestion du RAID matériel](/pages/cloud/dedicated/raid_hard)
+
+[Remplacement à chaud - RAID matériel](/pages/cloud/dedicated/hotswap_raid_hard)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/en/>.

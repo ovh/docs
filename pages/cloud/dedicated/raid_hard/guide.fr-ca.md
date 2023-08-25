@@ -1,16 +1,17 @@
 ---
-title: 'Gestion du RAID matériel'
-excerpt: "Apprenez à vérifier l'état de votre RAID et de vos disques durs"
-updated: 2019-05-10
+title: Gestion du RAID matériel
+excerpt: Apprenez à vérifier l'état de votre RAID matériel et de vos disques durs
+updated: 2023-08-21
 ---
 
-**Dernière mise à jour le 12/06/2019**
+<!-- markdownlint-disable-next-line MD036 -->
+**Dernière mise à jour le 21/08/2023**
 
 ## Objectif
 
 Sur un serveur disposant d'une configuration RAID matériel, la matrice RAID est gérée par un composant physique appelé contrôleur RAID.
 
-**Ce guide vous montre comment vérifier l'état de votre RAID et de vos disques durs.**
+<iframe width="560" height="315" src="https://www.youtube.com/embed/t_BL_uOXQVA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## Prérequis
 
@@ -20,7 +21,7 @@ Sur un serveur disposant d'une configuration RAID matériel, la matrice RAID est
 > [!warning]
 >
 > Il est risqué de manipuler les commandes `MegaCli` et `lsiutil` si vous ne possédez pas les compétences adéquates. Vous risquez en effet de perdre vos données. Nous vous conseillons d'effectuer une sauvegarde avant de réaliser la moindre action.
-> 
+>
 
 ## En pratique
 
@@ -128,6 +129,8 @@ smartctl -d megaraid,N -a /dev/sdX
 
 Dans cet exemple, `/dev/sda` est le premier RAID et `/dev/sdb` est le second.
 
+Dans certaines situations, vous pouvez recevoir ce résultat :
+
 > [!primary]
 >
 > Dans certaines situations, vous pouvez recevoir ce résultat :
@@ -135,6 +138,7 @@ Dans cet exemple, `/dev/sda` est le premier RAID et `/dev/sdb` est le second.
 > ```
 > /dev/sda [megaraid_disk_00] [SAT]: Device open changed type from 'megaraid' to 'sat'
 > ```
+>
 > Vous devez alors remplacer `megaraid` par `sat+megaraid` comme suit :
 >
 > ```
@@ -144,11 +148,12 @@ Dans cet exemple, `/dev/sda` est le premier RAID et `/dev/sdb` est le second.
 > [!warning]
 >
 > Si l'un de vos disques durs affiche des erreurs SMART, vous devez effectuer une sauvegarde complète de vos données dès que possible et contacter notre équipe Support. Votre interlocuteur aura besoin du slot number et du device ID afin d'identifier le disque défectueux.
-> 
+>
 
 #### Étape 3 : vérifier l'état du contrôleur RAID
 
 Pour vous assurer que votre contrôleur RAID fonctionne correctement, vous pouvez lister toutes les informations avec la commande suivante :
+
 ```sh
 MegaCli -AdpAllInfo -aALL
 ```
@@ -161,6 +166,7 @@ Compteur d'erreurs
 Erreurs corrigeables de mémoire : 0
 Erreurs de mémoire non corrigeables : 0
 ```
+
 Si le nombre d'erreurs est supérieur à zéro, créez une sauvegarde de vos données et contactez le support avec la sortie complète. Notre équipe programmera ensuite une intervention pour le remplacement du contrôleur RAID.
 
 Pour une sortie succincte des compteurs d'erreurs seulement, la commande peut être étendue par un `grep` :
@@ -211,13 +217,12 @@ MegaCli -PDRbld -ShowProg -PhysDrv [EncID:SlotID] -aALL (Or : storcli /c0/eEncID
 
 La commande récupérera l’enclosure ID et le slot ID, comme indiqué ci-dessus.
 
-
 #### Étape 5a : utilisation de CacheCade
 
 > [!primary]
 >
 > Le CacheCade est un module conçu par LSI pour améliorer les performances en lecture aléatoire des disques durs en utilisant un disque SSD comme périphérique frontal de cache.
-> 
+>
 
 Pour vérifier la configuration de CacheCade, utilisez les commandes suivantes :
 
@@ -234,9 +239,11 @@ MegaCli -CfgCacheCadeDsply -a0 | grep "Associated LDs"
 #### Étape 5b : vérification de l'état de l'unité de batterie de secours
 
 Pour recevoir la liste complète des paramètres d'état du BBU, utilisez cette commande :
+
 ```sh
 MegaCli -AdpBbuCmd -aALL
 ```
+
 La valeur la plus importante à vérifier est l'état de la batterie, s'assurer que celui-ci est optimal. S'il existe des indicateurs d'une batterie défaillante, créez une sauvegarde de vos données et fournissez la sortie de cette commande lors de la création de votre ticket support.
 
 ### Utiliser le contrôleur RAID LSI
@@ -255,14 +262,14 @@ Cela confirme la présence d'un contrôleur RAID LSI.
 > [!primary]
 >
 > La commande `grep -v megaraid` sert à retirer le paramètre `MegaRAID` du résultat de la commande `lspci` car les cartes MegaRAID sont aussi fabriquées par LSI Corporation.
-> 
+>
 
 Pour rassembler et lister les ensembles RAID disponibles, vous pouvez utiliser la commande `lsiutil` :
 
 > [!primary]
 >
 > Attention, les valeurs (1,0 21) peuvent être différentes selon les versions. Soyez vigilant lorsque vous manipulez ce type de commande.
-> 
+>
 
 ```sh
 lsiutil -p1 -a 1,0 21
@@ -296,7 +303,7 @@ Si l'état du RAID est « dégradé », nous vous recommandons de vérifier é
 > [!primary]
 >
 > Dans le cas d'un serveur nouvellement provisionné, le message suivant peut s'afficher: « [In Progress:  data scrub] ». Ce message n'est pas une erreur. Il s'agit plutôt d'un processus automatisé généré par le micrologiciel du contrôleur afin de réduire autant que possible les erreurs non corrigibles.
-> 
+>
 
 #### Étape 2 : déterminer l'état du disque
 
@@ -343,7 +350,7 @@ cat /proc/scsi/scsi | grep Vendor
 ```
 
 Chaque ligne représente un périphérique sg, qui est mappé en fonction de l'ordre du périphérique affiché ci-dessous :
- 
+
 ```
 Vendor: LSI      Model: Logical Volume   Rev: 3000 => /dev/sg0
 > 
@@ -371,7 +378,7 @@ Le numéro de périphérique sg est indiqué dans la commande ci-dessus.
 > [!warning]
 >
 > Si l'un de vos disques durs affiche des erreurs SMART, vous devez effectuer une sauvegarde complète de vos données dès que possible et contacter notre équipe Support.
-> 
+>
 
 #### Étape 3 : resynchronisation du RAID
 
@@ -380,7 +387,7 @@ Si un ou plusieurs disques durs ont été remplacés, le RAID se resynchronisera
 > [!primary]
 >
 > Attention, les valeurs (3,0 21) peuvent être différentes selon les versions. Soyez vigilant lorsque vous manipulez ce type de commande.
-> 
+>
 
 ```sh
 lsiutil -p1 -a 3,0 21
@@ -405,13 +412,22 @@ RAID actions menu, select an option:  [1-99 or e/p/w or 0 to quit] 0
 > [!primary]
 >
 > La valeur en pourcentage indiquée dans le résultat de la commande n’est pas le pourcentage de progression, mais le pourcentage restant.
-> 
+>
 
 ### Contrôleur Raid 3Ware
 
 Ce contrôleur RAID est déprécié et devient instable. Nous vous suggérons fortement de contacter le support OVHcloud pour planifier une intervention visant à remplacer ce contrôleur RAID par un contrôleur LSI, puisque les contrôleurs RAID 3ware s’avèrent plutôt instables. Ce type d’intervention nécessite une réinstallation de votre serveur. Veillez alors à bien sauvegarder vos données au préalable.
- 
 
 ## Aller plus loin
+
+[Remplacement à chaud - RAID Matériel](/pages/cloud/dedicated/hotswap_raid_hard)
+
+[Configurer votre MegaRAID en RAID 0](/pages/cloud/dedicated/megaraid_config)
+
+[API OVHcloud & Partitionnement](/pages/cloud/dedicated/partitioning_ovh)
+
+[Gestion du RAID logiciel](/pages/cloud/dedicated/raid_soft)
+
+[Remplacement à chaud - RAID logiciel](/pages/cloud/dedicated/hotswap_raid_soft)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

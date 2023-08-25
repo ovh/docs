@@ -1,7 +1,7 @@
 ---
 title: "Impostare un DNS dinamico (DynHost/DynDNS) per il tuo dominio"
 excerpt: "Questa guida ti mostra come configurare un record DNS dinamico per il tuo dominio OVHcloud"
-updated: 2023-06-29
+updated: 2023-08-16
 ---
 
 > [!primary]
@@ -62,6 +62,11 @@ Clicca sul pulsante `Gestisci gli accessi`{.action} e poi su `Crea un identifica
 |Sottodominio|Specifica il sottodominio per cui vuoi creare il record DNS dinamico. Per gestire tutti i sottodomini con un solo identificativo, indica just `*` nel modulo di registrazione|
 |Password|Associa una password all’identificativo DynHost e confermala.|
 
+> [!success]
+>
+> Per installare un DynHost direttamente per il tuo dominio, inserisci solo `*` nel modulo di inserimento intitolato `Sottodominio`{.action}.
+>
+
 Dopo aver completato tutti i campi, clicca su `Conferma`{.action}. L’identificativo compare nella tabella della pagina corrente. Ripeti questa operazione per ogni identificativo DynHost da aggiungere.
 
 ![dynhost](images/use-dynhost-step2.png){.thumbnail}
@@ -74,7 +79,7 @@ Una volta che tutto è pronto per creare il record, torna alla pagina principale
 
 |Campo|Descrizione|
 |---|---|
-|Sottodominio|Inserisci il nome del sottodominio a cui è associato il record DNS da aggiornare dinamicamente. Questo sottodominio deve coincidere con quello inserito durante la creazione dell’utente DynHost.|
+|Sottodominio|Inserisci il nome del sottodominio a cui è associato il record DNS da aggiornare dinamicamente. Questo sottodominio deve coincidere con quello inserito durante la creazione dell’utente DynHost. **Se vuoi installare un DynHost direttamente per il tuo dominio, lascia vuoto questo modulo di inserimento**|
 |IP di destinazione|Inserisci l'indirizzo IP (solo IPv4) che deve essere utilizzato dal record DNS. È generalmente l'indirizzo IP pubblico del tuo *box* Internet o del tuo server auto-ospitato. In base al principio del DynHost, verrà aggiornato automaticamente in seguito.|
 
 > [!primary]

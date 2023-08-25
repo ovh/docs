@@ -3,11 +3,11 @@ title: 'OVHcloud API & Partitioning (EN)'
 excerpt: 'Find out what the OVHcloud API provides in order to customize the partitioning configuration during the server OS installation'
 routes:
     canonical: '/pages/cloud/dedicated/partitioning_ovh'
-updated: 2023-03-10
+updated: 2023-08-21
 ---
 
 <!-- markdownlint-disable-next-line MD036 -->
-**Last updated 10th March 2023**
+**Last updated 21st August 2023**
 
 ## Objective
 
@@ -281,7 +281,7 @@ The following table gives an overview of well known customer errors and how to f
 
 #### Input customer auto-fixing
 
-In order to improve customer experience, reduce [OVHcloud support](https://help.ovhcloud.com/pl/) workload and to avoid introducing breaking changes for customer, some customer input is automatically fixed or changed by the backend. The following table gives an overview of what is currently auto-fixed/changed during the **pre-processing**:
+In order to improve customer experience, reduce OVHcloud support workload and to avoid introducing breaking changes for customer, some customer input is automatically fixed or changed by the backend. The following table gives an overview of what is currently auto-fixed/changed during the **pre-processing**:
 
 |Subject|Description|
 |---|---|
@@ -294,8 +294,14 @@ In order to improve customer experience, reduce [OVHcloud support](https://help.
 
 ## Go further <a name="gofurther"></a>
 
-[Configuring Software RAID](/pages/cloud/dedicated/raid_soft)
+[Managing software RAID](/pages/cloud/dedicated/raid_soft)
 
-[Managing Hardware RAID](/pages/cloud/dedicated/raid_hard)
+[Hot Swap - Software RAID](/pages/cloud/dedicated/hotswap_raid_soft)
+
+[Choosing the disk group to install an operating system](/pages/cloud/dedicated/install_hybrid)
+
+[Managing hardware RAID](/pages/cloud/dedicated/raid_hard)
+
+[Hot Swap - Hardware RAID](/pages/cloud/dedicated/hotswap_raid_hard)
 
 Join our community of users on <https://community.ovh.com/en/>.

@@ -1,10 +1,11 @@
 ---
-title: 'Wymiana dysku bez wyłączania serwera – Programowa macierz RAID'
-excerpt: 'Dowiedz się, jak przebiega wymiana dysku bez wyłączania serwera w programowej macierzy RAID'
-updated: 2016-11-21
+title: Wymiana dysku bez wyłączania serwera – Programowa macierz RAID
+excerpt: Dowiedz się, jak przebiega wymiana dysku bez wyłączania serwera w programowej macierzy RAID
+updated: 2023-08-21
 ---
 
-**Ostatnia aktualizacja z dnia 14-10-2019**
+<!-- markdownlint-disable-next-line MD036 -->
+**Ostatnia aktualizacja z dnia 21-08-2023**
 
 ## Wprowadzenie
 
@@ -27,7 +28,7 @@ Jeśli jeden z dysków w serwerze jest niesprawny, możesz wymienić go bez wył
 
 Otrzymałeś alert dotyczący dysku `/dev/sdb`. Jest on niesprawny i chcesz go wymienić bez wyłączenia serwera. **Wykorzystaj z tego przewodnika sekcje, które odpowiadają Twojemu przypadkowi.**
 
-Rozpocznij od przetestowania dysku i sprawdzenia jego numeru seryjnego (**Serial Number **) danego dysku.
+Rozpocznij od przetestowania dysku i sprawdzenia jego numeru seryjnego (**Serial Number**) danego dysku.
 
 ```sh
 root@ns3054662:/home# smartctl -a /dev/sdb
@@ -90,7 +91,7 @@ root@ns3054662:/home# smartctl -a /dev/sdb
 >>> Long (extended) Self Test duration: 34237 seconds [570.6 minutes]
 ```
 
-Stwierdzasz, że: 
+Stwierdzasz, że:
 
 - dysk **SDB** jest niesprawny ze względu na nieusunięte błędy (“uncorrected errors”);
 - jego **SErial Number** odpowiada numerowi podanemu w alercie (uzyskanym z centrum danych lub w narzędziu do monitoringu).
@@ -250,13 +251,13 @@ Otrzymałeś alert dotyczący dysku `/dev/sdb`. Jest on niesprawny i chcesz go w
 > [!primary]
 >
 > Pamiętaj, aby uruchomić terminal komend jako administrator. W przeciwnym razie wyświetli się błąd.
-> 
+>
 
-Rozpocznij od przetestowania dysku i sprawdzenia jego numeru seryjnego (**Serial Number **) danego dysku. Na poniższym zrzucie, dysk nie jest tak naprawdę niesprawny, ale będziemy postępować tak, jak gdyby był niesprawny.
+Rozpocznij od przetestowania dysku i sprawdzenia jego numeru seryjnego (**Serial Number**) danego dysku. Na poniższym zrzucie, dysk nie jest tak naprawdę niesprawny, ale będziemy postępować tak, jak gdyby był niesprawny.
 
 ![smart_sdb_windows](images/smart_sdb_windows.png){.thumbnail}
 
-Stwierdzasz, że: 
+Stwierdzasz, że:
 
 - dysk **SDB** jest niesprawny ze względu na nieusunięte błędy (“uncorrected errors”);
 - jego **SErial Number** odpowiada numerowi podanemu w alercie (uzyskanym z centrum danych lub w narzędziu do monitoringu).
@@ -294,5 +295,7 @@ Przeprowadź tę operację w interfejsie **Zarządzanie dyskami** na serwerze Wi
 Niesprawny dysk jest teraz gotowy do wymiany przez technika w centrum danych. Po wykonaniu operacji zsynchronizuj ponownie macierz RAID. Zanim do tego przystąpisz, zapoznaj się z dokumentacją: [Programowa macierz RAID](/pages/cloud/dedicated/raid_soft){.external}.
 
 ## Sprawdź również
+
+* [Programowa macierz RAID](/pages/cloud/dedicated/raid_soft){.external}
 
 Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

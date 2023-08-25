@@ -1,11 +1,11 @@
 ---
 title: 'API OVHcloud & Partitionnement'
 excerpt: "Découvrez comment l'API OVHcloud vous permet de personnaliser la configuration du partitionnement lors de l'installation de l'OS sur votre serveur"
-updated: 2023-03-10
+updated: 2023-08-21
 ---
 
 <!-- markdownlint-disable-next-line MD036 -->
-**Dernière mise à jour le 10/03/2023**
+**Dernière mise à jour le 21/08/2023**
 
 ## Objectif
 
@@ -282,7 +282,7 @@ Le tableau suivant donne un aperçu des erreurs clients les plus connues et de l
 
 #### Auto-correction des données d'entrée client
 
-Afin d'améliorer l'expérience client, réduire la charge de travail du [support OVHcloud](https://help.ovhcloud.com/fr/) et éviter les changements brutaux qui pourraient avoir un impact pour le client, certaines saisies effectuées par le client sont automatiquement corrigées ou modifiées par le backend. Le tableau suivant donne une vue d'ensemble de ce qui est actuellement auto-corrigé / changé lors du **pre-processing** :
+Afin d'améliorer l'expérience client, réduire la charge de travail du support OVHcloud et éviter les changements brutaux qui pourraient avoir un impact pour le client, certaines saisies effectuées par le client sont automatiquement corrigées ou modifiées par le backend. Le tableau suivant donne une vue d'ensemble de ce qui est actuellement auto-corrigé / changé lors du **pre-processing** :
 
 |Sujet|Description|
 |---|---|
@@ -295,8 +295,14 @@ Afin d'améliorer l'expérience client, réduire la charge de travail du [suppor
 
 ## Aller plus loin <a name="gofurther"></a>
 
-[RAID logiciel](/pages/cloud/dedicated/raid_soft)
+[Gestion du RAID logiciel](/pages/cloud/dedicated/raid_soft)
 
-[Gestion du RAID Matériel](/pages/cloud/dedicated/raid_hard)
+[Remplacement à chaud - RAID logiciel](/pages/cloud/dedicated/hotswap_raid_soft)
+
+[Choisir une grappe de disques pour installer un système d’exploitation](/pages/cloud/dedicated/install_hybrid)
+
+[Gestion du RAID matériel](/pages/cloud/dedicated/raid_hard)
+
+[Configurer votre MegaRAID en RAID 0](/pages/cloud/dedicated/megaraid_config)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

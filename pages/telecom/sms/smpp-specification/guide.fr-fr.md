@@ -1,10 +1,8 @@
 ---
 title: Spécifications techniques du SMPP
 excerpt: 'Découvrez les spécifications techniques du SMPP'
-updated: 2023-07-25
+updated: 2023-08-18
 ---
-
-**Dernière mise à jour le 25/07/2023**
 
 ## Objectif
 
@@ -49,7 +47,7 @@ Le SMPP (Short Message Peer-to-Peer) est un protocole permettant d’échanger d
 > Retrouvez des informations complémentaires sur les moyens de communication au chapitre [Liste des PDUs](#pdu-list).
 
 Une fois la connexion établie entre le ESME et un SMSC OVHcloud, l'émission et/ou la réception d’un message peuvent être effectuées.<br>
-L’authentification de la connexion au SMSC se fait avec le `system_id` (compte SMPP), le `password` et l’`adresse IP` de votre application.
+L’authentification de la connexion au SMSC se fait avec le `system_id` (identifiant), le `password` et l’`adresse IP` de votre application.
 
 L’offre SMPP OVHcloud permet :
 
@@ -342,7 +340,7 @@ Un TLV (*Tag, Length, Value*) permet d'enrichir un PDU en y ajoutant des informa
 
 #### Système ID
 
-Compte SMPP sous la forme `smpp-*********`
+Le system_id est l'identifiant de connexion SMPP, il est généré sous la forme d'une chaîne de caractères aléatoires.
 
 #### Mot de passe
 

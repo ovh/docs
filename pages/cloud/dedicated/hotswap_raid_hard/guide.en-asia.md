@@ -1,12 +1,14 @@
 ---
-title: Hot Swap - Raid Hard
-excerpt: Here are the main steps to follow to allow the replacement of a hot swap on a Raid Hardware server.
-updated: 2022-11-16
+title: Hot Swap - Hardware RAID
+excerpt: Find out how to hot-swap a disk on a server with a hardware RAID configuration
+updated: 2023-08-21
 ---
 
-**Last updated 16th November 2022**
+<!-- markdownlint-disable-next-line MD036 -->
+**Last updated 21st August 2023**
 
 ## Requirements
+
 Hot swapping is only possible on the server ranges mHG, HG, and bHG.
 
 To carry out the various steps of this guide, you must:
@@ -17,18 +19,18 @@ To carry out the various steps of this guide, you must:
 - Have access to RDP (Windows).
 - The MegaCLI and / or StorCLI utilities must be installed (normally by default).
 
-
 ## In Linux
 
 ### Step 1&#58; Identify the disk to be replaced
+
 In order to replace a disk, you will have to provide the technician with the Enclosure ID, the slot ID, and the Serial Number of the disk to be replaced.
 
 Or otherwise (disk not detected for ex), the same information but for disks that are **NOT** to replace and specify it to the technician.
 
 We will start by listing the disks on the server. While being able to retrieve the information cited above.
 
-
 #### List of disks
+
 To list the disks, you can use the following command: MegaCli -PdList -aALL | Egrep "Slot | Device ID | Device Id"
 
 For example :
@@ -48,8 +50,6 @@ For example :
 <span class="output">Device Id: 7</span> </pre></div>
 The MegaCli -PdList -aALL command, without *GREP*, can display all information on a disk.
 
-
-
 > [!primary]
 >
 > Equivalent via the storcli command :
@@ -67,24 +67,24 @@ The MegaCli -PdList -aALL command, without *GREP*, can display all information o
 <span class="output">252:3     7 Onln   0 744.687 GB SATA SSD N   N  512B INTEL SSDSC2BB800H4 U</span>
 <span class="output">----------------------------------------------------------------------------</span> </pre></div>
 > This is an excerpt from the return of the storcli command. Other information is visible, like the listing of the disks according to the raids etc ...
-> 
+>
 
 With MegaCLI, you can also list disks according to the raids with this command: MegaCli -CfgDsply -a0.
 
-
 #### Test and identify a disk &#58;
+
 To test a disk / identify its serial number, you must perform the smartctl command as follows :
 
 <div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">smartctl -a -d megaraid,6 /dev/sda | grep Serial</span>
 <span class="output">Serial Number:    BTWH509602CV800CGN</span> </pre></div>
 The number **6** in this command corresponds to the Device ID of the disk (*Device ID* under MegaCLI, and *DID* under storCLI).
 
-This information is found in the disk listing, performed in the previous step.
+This information is found in the disc listing, performed in the previous step.
 
 We now know the Enclosure ID, the Slot ID, and the Serial Number of the drive to be replaced.
 
-
 ### Step 2&#58; Turn on a disk
+
 To allow the technician to replace your drive with heater, the HS drive must be switched on (flashing).
 
 In our example, we have Enclosure ID **252**, Slot ID **0**, and Serial Number **BTWH509602CV800CGN** to be replaced.
@@ -105,12 +105,12 @@ The command to flash the disk is as follows: MegaCli -PdLocate -start -physdrv [
 <span class="output">Status = Success</span>
 <span class="output">Description = Start Drive Locate Succeeded.</span> </pre></div>
 
-To turn the disk off after the operation, simply replace the "start" with "stop" in the above commands.
+To turn the disc off after the operation, simply replace the "start" with "stop" in the above commands.
 
 At this point, the procedure is ready to be performed. You can then provide the previously collected information to the support team and indicate that the disk is turned on.
 
-
 ### Step 3&#58; Check the rebuilding
+
 Once the intervention scheduled in the Datacenter is completed, you can re-test the RAID and disks, and see that the replaced disk is in **Rebuild**.
 
 <div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">MegaCli -PdList -aALL | egrep "Slot|Device ID|state"</span>
@@ -173,21 +173,19 @@ Finally, you can also check the progress of the rebuild with the following comma
 > Equivalent via the storcli command :
 > <div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">storcli /call /e252 /s0 show rebuild</span> </pre></div>
 
-
 ## In Windows
+
 This guide is based on a Windows Server 2012 R2 Standard system. The MegaRaid Storage Manager tool is installed by default.
 
-
 ### Step 1 &#58; Verify that the server has a MegaRaid card
-So we go to the menu Device management, and we see the presence of the MegaRaid card (9271-4i)
 
+So we go to the menu Device management, and we see the presence of the MegaRaid card (9271-4i)
 
 ![device](images/device.png){.thumbnail}
 
-
 ### Step 2 &#58; Identify the disk to be replaced
-At first, we will open MegaRAID Storage Manager.
 
+At first, we will open MegaRAID Storage Manager.
 
 ![login](images/login.png){.thumbnail}
 
@@ -195,13 +193,11 @@ Then click Login, and fill in your login/password. (The manipulations in our cas
 
 Then we arrive on the Management screen of the MegaRaid card.
 
-
 ![dashboard](images/dashboard.png){.thumbnail}
 
 We will now check the **Serial Number** of our HS drive and its position in the server (**Enclosure ID** and **Slot ID**).
 
 We go to the Logical tab, and we get to this.
-
 
 ![logical-view-2](images/logical-view-2.png){.thumbnail}
 
@@ -215,19 +211,16 @@ So our disk has for **Enclosure ID 252**, **Slot Number 1**, and **Serial Number
 
 From now on, we will be able to light (physically flash) the disk to be replaced for replacement by a Datacenter technician.
 
-
 ### Step 3 &#58; Turn on a disk
+
 With the MegaRAID Storage Manager it will be very easy to turn on the LED of the disk to be replaced.
-
-
 
 > [!primary]
 >
 > First of all, it is better to stop the Locator on each disk in order to avoid any error in Datacentre. Indeed, if during a previous intervention the LED has not been turned off, there will be two disks of lights on the server.
-> 
+>
 
 To do this, right click on each disk, and click on **stop locating drive**.
-
 
 ![stop-locate](images/stop-locate.png){.thumbnail}
 
@@ -235,77 +228,68 @@ Now we can turn on the disk we are interested in.
 
 Right click on our disk, **Slot ID 1**, and **Serial Number BTWH509504BN800CGN**.
 
-
 ![clic-locate](images/clic-locate.png){.thumbnail}
 
 Then click on **start locating drive**
 
 At this point, the procedure is ready to be performed. You can then provide the information previously gathered (**Enclosure ID, Slot ID, and Serial Number**), and indicate that the drive is turned on.
 
-
 ### Step 4 &#58; Check the rebuilding
-Once you have completed the Datacenter, you can go back to the MegaRAID Storage Manager in the Background operations and check that the disk is *Rebuild*.
 
+Once you have completed the Datacenter, you can go back to the MegaRAID Storage Manager in the Background operations and check that the disk is *Rebuild*.
 
 ![back](images/back.png){.thumbnail}
 
 The detail will return you this type of result :
 
-
 ![1](images/1.png){.thumbnail}
 
 Also, on the **Logical** tab, we always have the details of RAID and disks.
-
 
 ![2](images/2.png){.thumbnail}
 
 The **Slot ID 1** is in doing of *Rebuild*.
 
-
-
 > [!primary]
 >
 > The RAID is in degraded state during Rebuild, which is normal.
-> 
+>
 
 Finally, it is preferable to repeat the operation of the stop locate seen previously for the disk that has just been replaced.
 
-
 ## In VmWare ESXi
+
 In this guide, we assume you have received an alert for the failed **Slot Number 1**, **Serial Number BTWA547608CE800HGN** and you want to replace it hot.
 
-For this we will need the **Enclosure ID**, the **Slot Number**, and **Serial Number** of the disk to be replaced to communicate them to the Datacentre.
-
-
+For this we will need the **Enclosure ID**, the **Slot Number**, and **Serial Number** of the disc to be replaced to communicate them to the Datacentre.
 
 > [!primary]
 >
 > The MegaCLI tool must be installed on the server.
-> 
-
+>
 
 ### Step 1 &#58; Verify that the server has a MegaRaid card
+
 Before continuing, we will verify that the server has a MegaRAID card.
 
 <div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">lspci | grep -i mega</span>
 <span class="output">0000:81:00.0 Mass storage controller: Avago (LSI / Symbios Logic) MegaRAID SAS Fusion Controller [vmhba2]</span> </pre></div>
 Via the Vsphere client, you can also find this information in Manage, then Hardware Tab.
 
-
 ![gerer-host](images/gerer-host.png){.thumbnail}
 
 We have an LSI MegaRAID card.
 
-
 ### Step 2 &#58; Identify the disk to be replaced
+
 For a disk replacement, the **Enclosure ID**, **Slot Number**, and **Serial Number** must be supplied to the Data Center of the drive to be replaced.
 
 If the disk is no longer detected, for example, it will be necessary to provide the same information from all other disks to **DO NOT** replace.
 
 At first, we will list the disks present on the server while being able to recover the information listed above.
 
-
 #### List of disks
+
 <div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">[root@ns3043198:/opt/lsi/MegaCLI] ./MegaCli -PdList -aALL | egrep "Slot|Device ID|Device Id"</span>
 <span class="output">Enclosure Device ID: 252</span>
 <span class="output">Slot Number: 0</span>
@@ -321,18 +305,16 @@ At first, we will list the disks present on the server while being able to recov
 <span class="output">Device Id: 6</span> </pre></div>
 We have therefore recovered the ID of our HS **Slot Number 1** which is **Device ID 7**, and its **Enclosure ID 252**.
 
-
 ### Step 3 &#58; Turn on a disk
+
 To perform the replacement operation, the HS drive must be switched on (flashing).
-
-
 
 > [!primary]
 >
 > Before turning on the LED of the disk that interests us here, we will first go through each disk to turn off the LEDs (in case a LED is always on after a previous intervention).
-> 
+>
 
-In this case, we have 4 disks that have as **Enclosure ID** 252, and as **Slot Number** 1, 2, 3, and 4.
+In this case, we have 4 discs that have as **Enclosure ID** 252, and as **Slot Number** 1, 2, 3, and 4.
 
 We will use the following command: ./MegaCli -PdLocate -stop -physdrv [EncID: SlotID] -a0
 
@@ -365,10 +347,10 @@ To do this, we use the following command: ./MegaCli -PdLocate -start -physdrv[En
 <span class="output">Adapter: 0: Device at EnclId-252 SlotId-1  -- PD Locate Start Command was successfully sent to Firmware</span>
 <span class="blank">&nbsp;</span>
 <span class="output">Exit Code: 0x00</span> </pre></div>
-At this point, the procedure is ready to be performed. You can then provide the information previously gathered (**Enclosure ID, Slot Number or Slot ID, Serial Number**), and indicate that the disk is turned on.
-
+At this point, the procedure is ready to be performed. You can then provide the information previously gathered (**Enclosure ID, Slot Number or Slot ID, Serial Number**), and indicate that the disc is turned on.
 
 ### Step 4 &#58; Check the rebuilding
+
 Once you have completed the Datacenter, you can re-test RAID and disks to verify that the replaced disk is in *Rebuild*.
 
 <div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">[root@ns3043198:/opt/lsi/MegaCLI] ./MegaCli -PdList -aALL | egrep "Slot|Device ID|state"</span>
@@ -388,7 +370,7 @@ Once you have completed the Datacenter, you can re-test RAID and disks to verify
 > [!primary]
 >
 > The RAID is in degraded state during rebuild, which is normal.
-> 
+>
 
 You can also check the progress of the rebuild with the following command :
 
@@ -397,3 +379,17 @@ You can also check the progress of the rebuild with the following command :
 <span class="output">Rebuild Progress on Device at Enclosure 252, Slot 1 Completed 93% in 0 Minutes.</span>
 <span class="blank">&nbsp;</span>
 <span class="output">Exit Code: 0x00</span> </pre></div>
+
+## Go further
+
+[Managing hardware RAID](/pages/cloud/dedicated/raid_hard)
+
+[Configuring MegaRAID for RAID Level 0](/pages/cloud/dedicated/megaraid_config)
+
+[OVHcloud API & Partitioning](/pages/cloud/dedicated/partitioning_ovh)
+
+[Managing software RAID](/pages/cloud/dedicated/raid_soft)
+
+[Hot Swap - Software RAID](/pages/cloud/dedicated/hotswap_raid_soft)
+
+Join our community of users on <https://community.ovh.com/en/>.

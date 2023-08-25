@@ -1,10 +1,9 @@
 ---
 title: Cassandra - Capabilities and Limitations
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for Cassandra
-updated: 2023-05-23
+updated: 2023-08-17
 ---
 
-**Last updated May 23rd, 2023**
 
 ## Objective
 
@@ -137,6 +136,8 @@ Here are some considerations to take into account when using private network:
 
 - Network ports are created in the private network of your choice. Thus, further operations on that network might be restricted - e.g. you won’t be able to delete the network if you didn’t stop the Public Cloud Databases services first.
 - When connecting from an outside subnet, the Openstack IP gateway must be enabled in the subnet used for the Database service. The customer is responsible for any other custom network setup.
+- Subnet sizing should include considerations for service nodes, other co-located services within the same subnet, and an allocation of additional available IP addresses for maintenance purposes. Failure to adequately size subnets could result in operational challenges and the malfunctioning of services.
+
 
 ##### Authorised IPs
 

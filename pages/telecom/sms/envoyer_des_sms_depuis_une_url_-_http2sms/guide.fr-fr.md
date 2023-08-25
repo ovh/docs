@@ -89,7 +89,7 @@ Remplacez les X par par les informations ci-dessous :
 > 
 >Si vous modifiez l’encodage pour l'encodage Unicode, votre SMS fera 70 caractères maximum contre 160 sur l'encodage 7bit.
 >
->Pour plus d'informations sur les caractères autorisés en encodage 7bit, reportez-vous à [l'annexe](./#annexe) en bas de ce guide.
+>Pour plus d'informations sur les caractères autorisés en encodage 7bit, reportez-vous à [l'annexe](#annexe) en bas de ce guide.
 >
 
 #### Taille des SMS à caractère commercial
@@ -133,7 +133,7 @@ Lors d'un échec, la cause est inscrite :
 - En cas d'échec :
 
 ```xml
-<?xml version="1.0" encoding="UTF-8" ?><response><status>201</status><message>Missing message. For more informations : http://guides.ovh.com/httpToSms</message></response>
+<?xml version="1.0" encoding="UTF-8" ?><response><status>201</status><message>Missing message. For more informations : https://help.ovhcloud.com/csm/fr-sms-sending-via-url-http2sms?id=kb_article_view&sysparm_article=KB0051397</message></response>
 ```
 
 
@@ -148,7 +148,7 @@ Lors d'un échec, la cause est inscrite :
 - En cas d'échec :
 
 ```json
-{"status":201,"message":"Missing message. For more informations : http//:guides.ovh.com/httpToSms"}
+{"status":201,"message":"Missing message. For more informations : https://help.ovhcloud.com/csm/fr-sms-sending-via-url-http2sms?id=kb_article_view&sysparm_article=KB0051397"}
 ```
 
 
@@ -181,7 +181,7 @@ OK<br>
 <title>HTTP2SMS</title>
 </HEAD>
 <BODY>
-KO<br>Missing message. For more informations : http://guides.ovh.com/httpToSms<br>
+KO<br>Missing message. For more informations : https://help.ovhcloud.com/csm/fr-sms-sending-via-url-http2sms?id=kb_article_view&sysparm_article=KB0051397<br>
 </BODY>
 </HTML>
 ```
@@ -200,7 +200,7 @@ OK
 
 ```
 KO
-Missing message. For more informations : http://guides.ovh.com/httpToSms
+Missing message. For more informations : https://help.ovhcloud.com/csm/fr-sms-sending-via-url-http2sms?id=kb_article_view&sysparm_article=KB0051397
 ```
 
 ## Annexe

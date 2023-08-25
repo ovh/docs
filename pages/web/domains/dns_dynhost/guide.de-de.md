@@ -1,7 +1,7 @@
 ---
 title: "Konfiguration von dynamischen DNS-Aktualisierungen (DynHost/DynDNS) für Ihren Domainnamen"
 excerpt: "Erfahren Sie hier, wie Sie einen dynamischen DNS-Eintrag (DynHost) für Ihren Domainnamen einrichten"
-updated: 2023-06-29
+updated: 2023-08-16
 ---
 
 > [!primary]
@@ -60,6 +60,11 @@ Klicken Sie auf den Button `Zugriff verwalten`{.action} und dann auf `DynHost-Ke
 |Subdomain|Geben Sie die Subdomain an, für die der dynamische DNS-Eintrag erstellt wird. Wenn Sie alle Subdomains über diese Kennung verwalten möchten, geben Sie einfach `*` in das Feld ein|
 |Passwort|Legen Sie für die DynHost-Kennung ein Passwort fest und bestätigen Sie es.|
 
+> [!success]
+>
+> Um einen DynHost direkt für Ihre Domain einzurichten, geben Sie nur `*` in das Eingabeformular mit dem Namen `Subdomain`{.action} ein.
+>
+
 Wenn Sie die Felder ausgefüllt haben, klicken Sie auf den Button `Bestätigen`{.action}. Die Kennung erscheint dann in der Tabelle auf der aktuellen Seite. Wiederholen Sie diesen Schritt, wenn Sie weitere DynHost-Kennungen anlegen möchten.
 
 ![dynhost](images/use-dynhost-step2.png){.thumbnail}
@@ -72,7 +77,7 @@ Gehen Sie für die Erstellung des DynHost-Eintrags nun zurück auf den Tab `DynH
 
 |Information|Beschreibung|
 |---|---|
-|Subdomain|Geben Sie die Subdomain ein, deren DNS-Eintrag dynamisch aktualisiert werden soll. Diese Subdomain muss der bei der Erstellung des DynHost-Benutzers angegebenen Subdomain entsprechen.|
+|Subdomain|Geben Sie die Subdomain ein, deren DNS-Eintrag dynamisch aktualisiert werden soll. Diese Subdomain muss der bei der Erstellung des DynHost-Benutzers angegebenen Subdomain entsprechen. **Wenn Sie einen DynHost direkt für Ihre Domain einrichten möchten, lassen Sie dieses Eingabeformular leer**|
 |Ziel-IP|Geben Sie die IP-Adresse (nur IPv4) ein, die derzeit für den DNS-Eintrag verwendet wird. Dies ist in der Regel die öffentliche IP-Adresse Ihrer Internet-Zugangsbox oder Ihres selbst gehosteten Servers. Nach dem DynHost-Prinzip wird diese Adresse künftig automatisch aktualisiert.|
 
 > [!primary]

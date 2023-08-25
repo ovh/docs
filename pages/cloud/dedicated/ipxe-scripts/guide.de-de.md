@@ -1,7 +1,7 @@
 ---
 title: "Konfigurieren von personalisierten iPXE Skripten über die OVHcloud API"
 excerpt: "Erfahren Sie hier, wie Sie mit der OVHcloud API ein personalisiertes PXE Startskript konfigurieren können, um Ihren Server zu booten"
-updated: 2023-06-21
+updated: 2023-08-24
 ---
 
 > [!primary]
@@ -32,6 +32,11 @@ Personalisierte Skripte können in folgenden Fällen interessant sein:
 >
 > Beim Neustart eines Dedicated Servers kann es zur Unterbrechung von Diensten kommen, die ausschließlich von diesem Server abhängig sind.
 >
+
+<!-- markdownlint-disable-next-line MD028 -->
+> [!warning]
+>
+> Diese Funktionalität ist nur für `UEFI` Dedicated Servers verfügbar. Wir arbeiten derzeit, um diese Funktionalität auch für `LEGACY` boot Dedicated Servers hinzufügen.
 
 ## In der praktischen Anwendung
 

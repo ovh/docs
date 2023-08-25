@@ -1,7 +1,7 @@
 ---
 title: VMware NSX-V - End of Life
 excerpt: Analyse your use of the NSX-V features and choose between the different evolution scenarios, from disabling the NSX-V component to the migration to NSX
-updated: 2023-07-19
+updated: 2023-08-14
 ---
 
 ## Objective
@@ -53,28 +53,21 @@ If you wish to migrate to VLAN, to help you to configure your network, you can u
 
 To create your VLAN networks, you can follow this documentation: [VLAN Creation](/pages/cloud/private-cloud/creation_vlan)
 
-Then you can migrate VMs from VXLAN to DVS vRACK.
-From the Network view in the vSphere UI, right click on the vxlan portgroup where VMs are assigned and select `Migrate VMs to Another Network..`.
+You will then need to disable NSX-v. You will be notified when the deactivation process is available.
+After the previous operations, you can now migrate your Virtual Machines from the VXLANs to the vRack DVS.
 
-![NSX network](images/network-inferface.png){.thumbnail}
+From the `Networks`{.action} view on the vSphere UI console, right-click on the VXLAN portgroup where your Virtual Machines are located and select `Migrate the VMs to another network...`{.action}.
 
-Select the target portgroup by browsing the vlan vrack portgroup. Previous email sent advices you about the vxlan/vlan matching.
-Go to the next step by clicking `NEXT`{.action}.
+> [!primary]
+> In this example, we will migrate the VMs to the VLAN10 portgroup, which is located on the vRack. You must migrate all VMs to portgroups in order to disable NSX-v (or if OVHcloud detects that NSX-v is not in use).
 
-![NSX migrate](images/migrate.png){.thumbnail}
-
-From this screen, select the VMs that will migrate to this VLAN portgroup.
-You should migrate all VMs as you won't be able to deactivate NSX-V if one VM network interface is still assigned to vxlan portgroup.
-
-![NSX DVS](images/dvs.png){.thumbnail}
-
-![NSX VMS](images/vms.png){.thumbnail}
+![NSX DVS](images/migration.gif){.thumbnail}
 
 Complete your operation and reproduce this for each used vxlan portgroup.
 
 VMs will only experience a very brief reconnection. In some cases, this may only be loss of a single ping request.
 
-We will deactivate NSX-V starting 1st September if you don't use any features of NSX-V.
+We will deactivate NSX-V starting 1st September 2023 if you don't use any features of NSX-V.
 You will be notified when the deactivation process is available.
 
 #### I use some of the NSX-V features

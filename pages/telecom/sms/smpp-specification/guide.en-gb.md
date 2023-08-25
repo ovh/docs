@@ -1,10 +1,8 @@
 ---
 title: SMPP Technical Specifications
 excerpt: 'Discover the technical specifications of the OVHcloud SMPP solution'
-updated: 2023-07-25
+updated: 2023-08-18
 ---
-
-**Last updated 25th July 2023**
 
 ## Objective
 
@@ -49,7 +47,7 @@ The SMPP (Short Message Peer-to-Peer) is a protocol for exchanging SMS messages 
 > Find more information on the means of communication in the chapter [List of PDUs](#pdu-list).
 
 Once a connection has been established between the ESME and an OVHcloud SMSC, a message can be sent and/or received.<br>
-Authentication of the connection to the SMSC is done with the `system_id` (SMPP account), the `password` and the `IP address` of your application.
+Authentication of the connection to the SMSC is done with the `system_id` (identifier), the `password` and the `IP address` of your application.
 
 The OVHcloud SMPP solution allows you to:
 
@@ -340,7 +338,7 @@ A TLV (*Tag, Length, Value*) can be used to enrich a PDU by adding optional info
 
 #### System ID
 
-SMPP account as `smpp-**********`
+SMPP connection identifier, it's generated with random characters.
 
 #### Password
 

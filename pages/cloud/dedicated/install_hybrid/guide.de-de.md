@@ -1,10 +1,11 @@
 ---
 title: 'Festplattengruppe für die Installation des Betriebssystems auswählen'
 excerpt: 'Hier erfahren Sie, wie Sie eine spezifische Festplattengruppe für die Installation Ihres Betriebssystems auswählen.'
-updated: 2018-11-22
+updated: 2023-08-21
 ---
 
-**Stand 19.07.2018**
+<!-- markdownlint-disable-next-line MD036 -->
+**Stand 21.08.2023**
 
 ## Einleitung
 
@@ -13,9 +14,9 @@ Bei OVH können Sie [Dedicated Server](https://www.ovh.de/dedicated_server/){.ex
 **In dieser Anleitung erfahren Sie, wie Sie die Festplattengruppe festlegen, auf der das Betriebssystem installiert werden soll.**
 
 > [!warning]
-> 
+>
 > OVH stellt Ihnen Dienstleistungen zur Verfügung, für die Sie die alleinige Verantwortung tragen. Da wir keinen Zugriff auf diese Maschinen haben, können wir hierfür keinerlei Administrator-Aufgaben übernehmen oder sonstige Hilfeleistung anbieten. Es liegt daher in Ihrer Verantwortung, das Softwaremanagement und die tägliche Sicherheit zu gewährleisten.
-> 
+>
 > Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Wir empfehlen Ihnen jedoch, sich an einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu wenden, wenn Sie Schwierigkeiten oder Zweifel hinsichtlich der Verwaltung, Nutzung oder Sicherheit eines Servers haben. Genauere Informationen finden Sie im Teil "Weiterführende Informationen" dieser Anleitung.
 >
 
@@ -28,7 +29,7 @@ Bei OVH können Sie [Dedicated Server](https://www.ovh.de/dedicated_server/){.ex
 > [!warning]
 >
 > Diese Beschreibung gilt ausschließlich für Linux-Systeme (mit Ausnahme von ESXi- und XenServer-Systemen) und nur bei SoftRAID-, NoRAID- oder HardRAID-Konfigurationen (Standardkonfiguration).
-> 
+>
 
 ## Beschreibung
 
@@ -39,7 +40,7 @@ Sobald Sie sich auf <https://api.ovh.com/console/> eingeloggt haben, können Sie
 > [!api]
 >
 > @api {GET} /dedicated/server
-> 
+>
 
 Um den Namen Ihres Hybridservers abzurufen, klicken Sie auf `Execute`{.action}:
 
@@ -47,14 +48,14 @@ Um den Namen Ihres Hybridservers abzurufen, klicken Sie auf `Execute`{.action}:
 
 ### DiskGroupId abrufen
 
-Mithilfe der `diskGroupId` können Sie festlegen, auf welcher Festplattengruppe das Betriebssystems installiert wird. 
+Mithilfe der `diskGroupId` können Sie festlegen, auf welcher Festplattengruppe das Betriebssystems installiert wird.
 
 Verwenden Sie hierzu folgenden API-Aufruf:
 
 > [!api]
 >
 > @api {GET} /dedicated/server/{serviceName}/specifications/hardware
-> 
+>
 
 Geben Sie den zuvor erhaltenen Servernamen in das Feld “**serviceName**” ein und klicken Sie dann auf `Execute`{.action}. Alle Informationen zur Hardware Ihres Servers werden nun angezeigt. Die gewünschte `diskGroupId` finden Sie im Bereich `diskGroups`.
 
@@ -71,7 +72,7 @@ Rufen Sie hierfür mit folgendem API-Aufruf die Liste der kompatiblen Betriebssy
 > [!api]
 >
 > @api {GET} /dedicated/server/{serviceName}/install/compatibleTemplates
-> 
+>
 
 ![Kompatible Templates](images/templates-01.png){.thumbnail}
 
@@ -80,7 +81,7 @@ Notieren Sie den Template-Namen des gewünschten Betriebssystems und fahren Sie 
 > [!api]
 >
 > @api {POST} /dedicated/server/{serviceName}/install/start
-> 
+>
 
 Geben Sie den Servernamen in das Feld **serviceName** und die “diskGroupId” (2) in das Feld **diskGroupId** sowie anschließend den Namen des gewünschten Betriebssystems in das Feld **templateName** ein (die übrigen Felder sind optional).
 
@@ -93,7 +94,7 @@ Ihr Betriebssystem wird nun installiert. Den Fortschritt der Installation könne
 > [!api]
 >
 > @api {GET} /dedicated/server/{serviceName}/install/status
-> 
+>
 
 ## Weiterführende Informationen
 

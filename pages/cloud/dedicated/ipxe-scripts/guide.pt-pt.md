@@ -1,7 +1,7 @@
 ---
 title: "Configurar um script iPXE personalizado para iniciar o seu servidor através da API OVHcloud"
 excerpt: "Descubra como a API OVHcloud lhe permite configurar um script de arranque personalizado PXE para dar bootagem ao seu servidor"
-updated: 2023-06-21
+updated: 2023-08-24
 ---
 
 > [!primary]
@@ -31,6 +31,11 @@ Utilizar um script personalizado pode ser interessante nos seguintes casos:
 > [!warning]
 >
 > A reinicialização de um servidor dedicado pode gerar a interrupção de serviços não redundados que dependem unicamente do servidor reiniciado.
+>
+
+> [!warning]
+>
+> Esta funcionalidade só está disponível nos servidores `UEFI`. Estamos atualmente a trabalhar para adicionar esta funcionalidade nos servidores em boot `LEGACY`.
 >
 
 ## Instruções

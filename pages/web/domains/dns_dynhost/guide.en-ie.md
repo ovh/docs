@@ -1,7 +1,7 @@
 ---
 title: "Configure dynamic DNS (DynHost/DynDNS) for your domain name"
 excerpt: "Find out how to configure a dynamic DNS record for your OVHcloud domain name"
-updated: 2023-06-29
+updated: 2023-08-16
 ---
 
 ## Objective
@@ -53,8 +53,13 @@ Click on the `Manage access`{.action} button, then `Create a username`{.action}.
 |Information|Description|
 |---|---|
 |Username suffix|Define a suffix for the DynHost username you are creating.|
-|Subdomain|Specify the subdomain you want to create the dynamic DNS record for. If you want to manage all the subdomains with a single identifier, just specify `*` in the entry form.|
+|Sub-domain|Specify the subdomain you want to create the dynamic DNS record for. If you want to manage all the subdomains with a single identifier, just specify `*` in the entry form.|
 |Password|Define a password for the DynHost username, then confirm it.|
+
+> [!success]
+>
+> To set up a DynHost directly for your domain name, enter only `*` in the input form labeled `Sub-domain`{.action}.
+>
 
 Once you have filled in all of the required fields, click `Confirm`{.action}. The username will then appear in the table on the current page. Repeat this step if you need additional DynHost usernames.
 
@@ -68,7 +73,7 @@ Once you are ready to create the DynHost record, go to the `DynHost`{.action} ta
 
 |Information|Description|
 |---|---|
-|Subdomain|Enter the subdomain that the DNS record must be dynamically updated for. This subdomain must be identical to the one you entered when you created the DynHost username.|
+|Subdomain|Enter the subdomain that the DNS record must be dynamically updated for. This subdomain must be identical to the one you entered when you created the DynHost username. **If you would like to set up a DynHost directly for your domain name, leave this form blank**|
 |Target IP|Enter the IP address (IPv4 only) currently mapped in the DNS record. This is usually the public IP address of your Internet access box or your self-hosted server. In accordance with the DynHost principle, the IP will from now on be updated automatically.|
 
 > [!primary]

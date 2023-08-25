@@ -1,14 +1,12 @@
 ---
 title: Rozwiąż najczęstsze błędy związane z modułami za pomocą 1 kliknięcia
 excerpt: Zdiagnozuj najczęstsze przypadki błędów związanych z modułami za pomocą 1 kliknięcia
-updated: 2022-11-08
+updated: 2023-08-21
 ---
 
 > [!primary]
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
 >
-
-**Ostatnia aktualizacja z dnia 15-02-2023**
 
 ## Wprowadzenie 
 
@@ -96,6 +94,17 @@ Aby powiązać domenę z innym katalogiem, kliknij `Zmień domenę`{.action} w z
 ![modify_root_folder](images/modify_root_folder.png){.thumbnail}
 
 Możesz również połączyć się z hostingiem przez [FTP](/pages/web/hosting/ftp_connection), a następnie usunąć lub przenieść zawartość folderu po jego zapisaniu.
+
+### "Either no configuration (ovhConfig or runtime), or the current configuration is not valid (please, double check the module's requirement) (as a reminder, the global configuration is used for module)".
+
+Wyświetli się komunikat, że plik ".ovhconfig" nie istnieje lub jest nieprawidłowy. Wystarczy, że zainstalujesz "moduł za 1 kliknięciem". Plik ten zawiera wersję PHP oraz środowisko wykonawcze zastosowane do Twojego hostingu.
+
+Zaleca się korzystanie z najnowszej możliwej wersji PHP. **Przed** zmianą konfiguracji pliku ".ovhconfig", jeśli posiadasz inne strony WWW na Twoim hostingu, upewnij się, że są one kompatybilne z nową wersją PHP i/lub nowym środowiskiem wykonawczym, które zastosujesz na Twoim hostingu.
+
+Aby sprawdzić tę konfigurację, zapoznaj się z naszymi przewodnikami:
+
+- [Zmień konfigurację hostingu WWW](/pages/web/hosting/ovhconfig_modify_system_runtime)
+- [Konfiguracja pliku .ovhconfig na hostingu](/pages/web/hosting/ovhconfig_configuration)
 
 ### "Wystąpił błąd podczas pobierania informacji (There is not enough space on your hosting (you need at least xxx MB))"
 

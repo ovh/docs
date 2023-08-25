@@ -1,10 +1,8 @@
 ---
 title: 'First Steps with the OVHcloud APIs'
 excerpt: 'Learn how to use OVHcloud APIs'
-updated: 2022-05-30
+updated: 2023-08-24
 ---
-
-**Last updated 30th May 2022**
 
 ## Objective
 
@@ -105,6 +103,11 @@ For example, if you do not want to keep the DNS record that you added to your DN
 >
 
 ##### **API parameters**
+
+> [!success]
+>
+> OVHcloud APIs are now compatible with the Oauth2 protocol. Find more information in our guide on [How to authenticate on the OVHcloud API with Oauth2](/pages/account/api/authenticate-api-with-service-account).
+>
 
 After you click the API you want, the **Parameters** section allows you to assign variables for its application.
  

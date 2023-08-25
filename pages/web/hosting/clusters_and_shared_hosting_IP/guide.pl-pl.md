@@ -1,9 +1,7 @@
 ---
 title: 'Lista adresów IP klastrów i hostingów WWW'
-updated: 2023-05-03
+updated: 2023-08-22
 ---
-
-**Ostatnia aktualizacja z dnia 03-05-2023**
 
 > [!primary]
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk „Zaproponuj zmianę” na tej stronie.
@@ -52,13 +50,7 @@ Tutaj znajdziesz adresy IP **klastra** według kraju (w przypadku geolokalizacji
 |Litwa|LT|188.165.31.2|2001:41d0:1:1b00:188:165:31:2|
 |Niemcy|DE|87.98.247.2|2001:41d0:1:1b00:87:98:247:2|
 
-Jeśli w hostingu masz aktywną opcję **CDN**, użyj poniższego adresu IP:
-
-```bash
-213.186.33.69
-```
-
-Jeśli **Shared CDN** (wydany 19/11/2020) jest aktywny na Twoim hostingu, użyj tego adresu IP:
+Jeśli **Shared CDN** jest aktywny na Twoim hostingu, użyj tego adresu IP:
 
 ```bash
 46.105.204.2
@@ -89,13 +81,7 @@ Tutaj znajdziesz adresy IP **klastra** według kraju (w przypadku geolokalizacji
 |Litwa|LT|188.165.31.4|2001:41d0:1:1b00:188:165:31:4|
 |Niemcy|DE|87.98.247.4|2001:41d0:1:1b00:87:98:247:4|
 
-Jeśli w hostingu masz aktywną opcję **CDN**, użyj poniższego adresu IP:
-
-```bash
-213.186.33.85
-```
-
-Jeśli **Shared CDN** (wydany 19/11/2020) jest aktywny na Twoim hostingu, użyj tego adresu IP:
+Jeśli **Shared CDN** jest aktywny na Twoim hostingu, użyj tego adresu IP:
 
 ```bash
 46.105.204.3
@@ -126,13 +112,7 @@ Tutaj znajdziesz adresy IP **klastra** według kraju (w przypadku geolokalizacji
 |Litwa|LT|188.165.31.16|2001:41d0:1:1b00:188.165.31.16|
 |Niemcy|DE|87.98.247.16|2001:41d0:1:1b00:87:98:247:16|
 
-Jeśli w hostingu masz aktywną opcję **CDN**, użyj poniższego adresu IP:
-
-```bash
-213.186.33.95
-```
-
-Jeśli **Shared CDN** (wydany 19/11/2020) jest aktywny na Twoim hostingu, użyj tego adresu IP:
+Jeśli **Shared CDN** jest aktywny na Twoim hostingu, użyj tego adresu IP:
 
 ```bash
 46.105.204.5
@@ -163,13 +143,7 @@ Tutaj znajdziesz adresy IP **klastra** według kraju (w przypadku geolokalizacji
 |Litwa|LT|188.165.31.17|2001:41d0:1:1b00:188:165:31:17|
 |Niemcy|DE|87.98.247.17|2001:41d0:1:1b00:87:98:247:17|
 
-Jeśli w hostingu masz aktywną opcję **CDN**, użyj poniższego adresu IP:
-
-```bash
-213.186.33.97
-```
-
-Jeśli **Shared CDN** (wydany 19/11/2020) jest aktywny na Twoim hostingu, użyj tego adresu IP:
+Jeśli **Shared CDN** jest aktywny na Twoim hostingu, użyj tego adresu IP:
 
 ```bash
 46.105.204.6
@@ -200,13 +174,7 @@ Tutaj znajdziesz adresy IP **klastra** według kraju (w przypadku geolokalizacji
 |Litwa|LT|188.165.31.18|2001:41d0:1:1b00:188:165:31:18|
 |Niemcy|DE|87.98.247.18|2001:41d0:1:1b00:87:98:247:18|
 
-Jeśli w hostingu masz aktywną opcję **CDN**, użyj poniższego adresu IP:
-
-```bash
-213.186.33.105
-```
-
-Jeśli **Shared CDN** (wydany 19/11/2020) jest aktywny na Twoim hostingu, użyj tego adresu IP:
+Jeśli **Shared CDN** jest aktywny na Twoim hostingu, użyj tego adresu IP:
 
 ```bash
 46.105.204.7
@@ -237,13 +205,7 @@ Tutaj znajdziesz adresy IP **klastra** według kraju (w przypadku geolokalizacji
 |Litwa|LT|188.165.31.19|2001:41d0:1:1b00:188:165:31:19|
 |Niemcy|DE|87.98.247.19|2001:41d0:1:1b00:87:98:247:19|
 
-Jeśli w hostingu masz aktywną opcję **CDN**, użyj poniższego adresu IP:
-
-```bash
-213.186.33.107
-```
-
-Jeśli **Shared CDN** (wydany 19/11/2020) jest aktywny na Twoim hostingu, użyj tego adresu IP:
+Jeśli **Shared CDN** jest aktywny na Twoim hostingu, użyj tego adresu IP:
 
 ```bash
 46.105.204.10
@@ -275,13 +237,7 @@ Tutaj znajdziesz adresy IP **klastra** według kraju (w przypadku geolokalizacji
 |Litwa|LT|188.165.31.40|2001:41d0:1:1b00:188:165:31:40|
 |Niemcy|DE|87.98.247.40|2001:41d0:1:1b00:87:98:247:40|
 
-Jeśli w hostingu masz aktywną opcję **CDN**, użyj poniższego adresu IP:
-
-```bash
-213.186.33.151
-```
-
-Jeśli **Shared CDN** (wydany 19/11/2020) jest aktywny na Twoim hostingu, użyj tego adresu IP:
+Jeśli **Shared CDN** jest aktywny na Twoim hostingu, użyj tego adresu IP:
 
 ```bash
 46.105.204.11
@@ -312,13 +268,7 @@ Tutaj znajdziesz adresy IP **klastra** według kraju (w przypadku geolokalizacji
 |Litwa|LT|188.165.31.48|2001:41d0:1:1b00:188:165:31:48|
 |Niemcy|DE|87.98.247.48|2001:41d0:1:1b00:87:98:247:48|
 
-Jeśli w hostingu masz aktywną opcję **CDN**, użyj poniższego adresu IP:
-
-```bash
-213.186.33.153
-```
-
-Jeśli **Shared CDN** (wydany 19/11/2020) jest aktywny na Twoim hostingu, użyj tego adresu IP:
+Jeśli **Shared CDN** jest aktywny na Twoim hostingu, użyj tego adresu IP:
 
 ```bash
 46.105.204.12
@@ -349,13 +299,7 @@ Tutaj znajdziesz adresy IP **klastra** według kraju (w przypadku geolokalizacji
 |Litwa|LT|188.165.31.24|2001:41d0:1:1b00:188:165:31:24|
 |Niemcy|DE|87.98.247.24|2001:41d0:1:1b00:87:98:247:24|
 
-Jeśli w hostingu masz aktywną opcję **CDN**, użyj poniższego adresu IP:
-
-```bash
-213.186.33.83
-```
-
-Jeśli **Shared CDN** (wydany 19/11/2020) jest aktywny na Twoim hostingu, użyj tego adresu IP:
+Jeśli **Shared CDN** jest aktywny na Twoim hostingu, użyj tego adresu IP:
 
 ```bash
 46.105.204.13
@@ -386,13 +330,7 @@ Tutaj znajdziesz adresy IP **klastra** według kraju (w przypadku geolokalizacji
 |Litwa|LT|188.165.31.87|2001:41d0:1:1b00:188:165:31:87|
 |Niemcy|DE|87.98.247.87|2001:41d0:1:1b00:87:98:247:87|
 
-Jeśli w hostingu masz aktywną opcję **CDN**, użyj poniższego adresu IP:
-
-```bash
-213.186.33.169
-```
-
-Jeśli **Shared CDN** (wydany 19/11/2020) jest aktywny na Twoim hostingu, użyj tego adresu IP:
+Jeśli **Shared CDN** jest aktywny na Twoim hostingu, użyj tego adresu IP:
 
 ```bash
 46.105.204.14
@@ -423,13 +361,7 @@ Tutaj znajdziesz adresy IP **klastra** według kraju (w przypadku geolokalizacji
 |Litwa|LT|188.165.31.3|2001:41d0:1:1b00:188:165:31:3|
 |Niemcy|DE|87.98.247.3|2001:41d0:1:1b00:87:98:247:3|
 
-Jeśli w hostingu masz aktywną opcję **CDN**, użyj poniższego adresu IP:
-
-```bash
-213.186.33.171
-```
-
-Jeśli **Shared CDN** (wydany 19/11/2020) jest aktywny na Twoim hostingu, użyj tego adresu IP:
+Jeśli **Shared CDN** jest aktywny na Twoim hostingu, użyj tego adresu IP:
 
 ```bash
 46.105.204.15
@@ -460,13 +392,7 @@ Tutaj znajdziesz adresy IP **klastra** według kraju (w przypadku geolokalizacji
 |Litwa|LT|188.165.31.50|2001:41d0:1:1b00:188:165:31:50|
 |Niemcy|DE|87.98.247.50|2001:41d0:1:1b00:87:98:247:50|
 
-Jeśli w hostingu masz aktywną opcję **CDN**, użyj poniższego adresu IP:
-
-```bash
-213.186.33.173
-```
-
-Jeśli **Shared CDN** (wydany 19/11/2020) jest aktywny na Twoim hostingu, użyj tego adresu IP:
+Jeśli **Shared CDN** jest aktywny na Twoim hostingu, użyj tego adresu IP:
 
 ```bash
 46.105.204.17
@@ -498,13 +424,7 @@ Tutaj znajdziesz adresy IP **klastra** według kraju (w przypadku geolokalizacji
 |Niemcy|DE|5.135.108.219|2001:41d0:301:1::20|
 |Belgia|BE|5.196.203.200|2001:41d0:301:10::20|
 
-Jeśli w hostingu masz aktywną opcję **CDN**, użyj poniższego adresu IP:
-
-```bash
-213.186.33.176
-```
-
-Jeśli **Shared CDN** (wydany 19/11/2020) jest aktywny na Twoim hostingu, użyj tego adresu IP:
+Jeśli **Shared CDN** jest aktywny na Twoim hostingu, użyj tego adresu IP:
 
 ```bash
 46.105.204.20
@@ -536,13 +456,7 @@ Tutaj znajdziesz adresy IP **klastra** według kraju (w przypadku geolokalizacji
 |Niemcy|DE|94.23.162.9|2001:41d0:301:1::21|
 |Belgia|BE|178.32.40.72|2001:41d0:301:10::21|
 
-Jeśli w hostingu masz aktywną opcję **CDN**, użyj poniższego adresu IP:
-
-```bash
-213.186.33.177
-```
-
-Jeśli **Shared CDN** (wydany 19/11/2020) jest aktywny na Twoim hostingu, użyj tego adresu IP:
+Jeśli **Shared CDN** jest aktywny na Twoim hostingu, użyj tego adresu IP:
 
 ```bash
 46.105.204.21
@@ -574,13 +488,7 @@ Tutaj znajdziesz adresy IP **klastra** według kraju (w przypadku geolokalizacji
 |Niemcy|DE|87.98.242.65|2001:41d0:301:1::23|
 |Belgia|BE|137.74.229.68|2001:41d0:301:10::23|
 
-Jeśli w hostingu masz aktywną opcję **CDN**, użyj poniższego adresu IP:
-
-```bash
-213.186.33.186
-```
-
-Jeśli **Shared CDN** (wydany 19/11/2020) jest aktywny na Twoim hostingu, użyj tego adresu IP:
+Jeśli **Shared CDN** jest aktywny na Twoim hostingu, użyj tego adresu IP:
 
 ```bash
 46.105.204.23
@@ -612,13 +520,7 @@ Tutaj znajdziesz adresy IP **klastra** według kraju (w przypadku geolokalizacji
 |Niemcy|DE|178.33.38.88|2001:41d0:301:1::24|
 |Belgia|BE|213.32.81.103|2001:41d0:301:10::24|
 
-Jeśli w hostingu masz aktywną opcję **CDN**, użyj poniższego adresu IP:
-
-```bash
-213.186.33.187
-```
-
-Jeśli **Shared CDN** (wydany 19/11/2020) jest aktywny na Twoim hostingu, użyj tego adresu IP:
+Jeśli **Shared CDN** jest aktywny na Twoim hostingu, użyj tego adresu IP:
 
 ```bash
 46.105.204.24
@@ -650,13 +552,7 @@ Tutaj znajdziesz adresy IP **klastra** według kraju (w przypadku geolokalizacji
 |Niemcy|DE|94.23.160.29|2001:41d0:301:1::26|
 |Belgia|BE|178.32.43.46|2001:41d0:301:10::26|
 
-Jeśli w hostingu masz aktywną opcję **CDN**, użyj poniższego adresu IP:
-
-```bash
-188.165.51.93
-```
-
-Jeśli **Shared CDN** (wydany 19/11/2020) jest aktywny na Twoim hostingu, użyj tego adresu IP:
+Jeśli **Shared CDN** jest aktywny na Twoim hostingu, użyj tego adresu IP:
 
 ```bash
 46.105.204.26
@@ -688,13 +584,7 @@ Tutaj znajdziesz adresy IP **klastra** według kraju (w przypadku geolokalizacji
 |Niemcy|DE|91.134.179.251|2001:41d0:301:1::27|
 |Belgia|BE|193.70.58.226|2001:41d0:301:10::27|
 
-Jeśli w hostingu masz aktywną opcję **CDN**, użyj poniższego adresu IP:
-
-```bash
-145.239.51.129
-```
-
-Jeśli **Shared CDN** (wydany 19/11/2020) jest aktywny na Twoim hostingu, użyj tego adresu IP:
+Jeśli **Shared CDN** jest aktywny na Twoim hostingu, użyj tego adresu IP:
 
 ```bash
 46.105.204.27
@@ -726,13 +616,7 @@ Tutaj znajdziesz adresy IP **klastra** według kraju (w przypadku geolokalizacji
 |Niemcy|DE|54.37.173.127|2001:41d0:301:1::28|
 |Belgia|BE|193.70.70.144|2001:41d0:301:10::28|
 
-Jeśli w hostingu masz aktywną opcję **CDN**, użyj poniższego adresu IP:
-
-```bash
-51.255.119.116
-```
-
-Jeśli **Shared CDN** (wydany 19/11/2020) jest aktywny na Twoim hostingu, użyj tego adresu IP:
+Jeśli **Shared CDN** jest aktywny na Twoim hostingu, użyj tego adresu IP:
 
 ```bash
 46.105.204.28
@@ -764,13 +648,7 @@ Tutaj znajdziesz adresy IP **klastra** według kraju (w przypadku geolokalizacji
 |Niemcy|DE|145.239.222.45|2001:41d0:301:1::29|
 |Belgia|BE|178.32.44.140|2001:41d0:301:10::29|
 
-Jeśli w hostingu masz aktywną opcję **CDN**, użyj poniższego adresu IP:
-
-```bash
- 51.255.215.242 
-```
-
-Jeśli **Shared CDN** (wydany 19/11/2020) jest aktywny na Twoim hostingu, użyj tego adresu IP:
+Jeśli **Shared CDN** jest aktywny na Twoim hostingu, użyj tego adresu IP:
 
 ```bash
 46.105.204.29
@@ -802,13 +680,7 @@ Tutaj znajdziesz adresy IP **klastra** według kraju (w przypadku geolokalizacji
 |Niemcy|DE|51.255.232.79|2001:41d0:301:1::30|
 |Belgia|BE|213.32.107.241|2001:41d0:301:10::30|
 
-Jeśli w hostingu masz aktywną opcję **CDN**, użyj poniższego adresu IP:
-
-```bash
-54.36.13.47
-```
-
-Jeśli **Shared CDN** (wydany 19/11/2020) jest aktywny na Twoim hostingu, użyj tego adresu IP:
+Jeśli **Shared CDN** jest aktywny na Twoim hostingu, użyj tego adresu IP:
 
 ```bash
 46.105.204.30
@@ -840,7 +712,7 @@ Tutaj znajdziesz adresy IP **klastra** według kraju (w przypadku geolokalizacji
 |Niemcy|DE|151.80.4.219|2001:41d0:301:1::31|
 |Belgia|BE|217.182.187.17|2001:41d0:301:10::31|
 
-Jeśli **Shared CDN** (wydany 19/11/2020) jest aktywny na Twoim hostingu, użyj tego adresu IP:
+Jeśli **Shared CDN** jest aktywny na Twoim hostingu, użyj tego adresu IP:
 
 ```bash
 46.105.204.31
@@ -860,13 +732,7 @@ Tutaj znajdziesz adresy IP **klastra** według kraju (w przypadku geolokalizacji
 |---|---|----|---|
 |Canada|CA|51.161.122.78|2607:5300:202:0:0::51|
 
-Jeśli w hostingu masz aktywną opcję **CDN**, użyj poniższego adresu IP:
-
-```bash
-178.32.120.166 
-```
-
-Jeśli **Shared CDN** (wydany 19/11/2020) jest aktywny na Twoim hostingu, użyj tego adresu IP:
+Jeśli **Shared CDN** jest aktywny na Twoim hostingu, użyj tego adresu IP:
 
 ```bash
 46.105.204.51

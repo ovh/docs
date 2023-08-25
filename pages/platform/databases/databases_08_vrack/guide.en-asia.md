@@ -1,10 +1,9 @@
 ---
 title: Configure your Private Network
 excerpt: Connect a Public Cloud Database to vRack
-updated: 2023-07-07
+updated: 2023-08-17
 ---
 
-**Last updated 7th July 2023**
 
 ## Objective
 
@@ -18,6 +17,13 @@ The OVHcloud vRack is a private network solution that enables our customers to r
 
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
 - A [Public Cloud project](https://www.ovhcloud.com/asia/public-cloud/) in your OVHcloud account.
+
+## Considerations
+Here are some considerations to take into account when using private network:
+
+- Network ports are created in the private network of your choice. Thus, further operations on that network might be restricted - e.g. you won’t be able to delete the network if you didn’t stop the Public Cloud Databases services first.
+- When connecting from an outside subnet, the Openstack IP gateway must be enabled in the subnet used for the Database service. The customer is responsible for any other custom network setup.
+- Subnet sizing should include considerations for service nodes, other co-located services within the same subnet, and an allocation of additional available IP addresses for maintenance purposes. Failure to adequately size subnets could result in operational challenges and the malfunctioning of services.
 
 ## Instructions
 

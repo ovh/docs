@@ -1,10 +1,11 @@
 ---
-title: 'Sostituire un disco a caldo su un server con RAID Software'
-excerpt: 'Come sostituire un disco senza interruzione di servizio sul tuo server con RAID Software'
-updated: 2016-11-21
+title: Sostituire un disco a caldo su un server con RAID Software
+excerpt: Come sostituire un disco senza interruzione di servizio sul tuo server con RAID Software
+updated: 2023-08-21
 ---
 
-**Ultimo aggiornamento: 20/12/2019**
+<!-- markdownlint-disable-next-line MD036 -->
+**Ultimo aggiornamento: 21/08/2023**
 
 ## Obiettivo
 
@@ -90,7 +91,7 @@ root@ns3054662:/home# smartctl -a /dev/sdb
 >>> Long (extended) Self Test duration: 34237 seconds [570.6 minutes]
 ```
 
-La risposta restituita al comando eseguito mostra che: 
+La risposta restituita al comando eseguito mostra che:
 
 - il disco **SDB** è fuori servizio a causa di errori non corretti (uncorrected errors)
 - Il **Serial Number** coincide con quello dell’alert ricevuto (inviato dal datacenter o altri strumenti di monitoraggio)
@@ -250,13 +251,13 @@ Le operazioni descritte in questa guida partono dal presupposto che l’utente a
 > [!primary]
 >
 > Per evitare errori è importante avviare il terminale come amministratore.
-> 
+>
 
 Per prima cosa, verifica il **Serial Number** del disco in questione. **Nella schermata mostrata qui sotto, lo storage non è realmente danneggiato, ma faremo finta che lo sia.**
 
 ![smart_sdb_windows](images/smart_sdb_windows.png){.thumbnail}
 
-La risposta restituita al comando eseguito mostra che: 
+La risposta restituita al comando eseguito mostra che:
 
 - il disco **SDB** è fuori servizio a causa di errori non corretti (uncorrected errors)
 - Il **Serial Number** coincide con quello dell’alert ricevuto (inviato dal datacenter o altri strumenti di monitoraggio)
@@ -294,5 +295,11 @@ Questa operazione può essere effettuata dall’interfaccia **Gestione disco** d
 A questo punto il disco malfunzionante è pronto per essere sostituito da un tecnico nel datacenter e, a intervento ultimato, non resta che risincronizzare il RAID. Per effettuare questa operazione, consulta la guida [Configurare un RAID software](/pages/cloud/dedicated/raid_soft){.external}.
 
 ## Per saperne di più
+
+[Come configurare il software RAID di un server](/pages/cloud/dedicated/raid_soft){.external}
+
+[Hot Swap - RAID Hardware](/pages/cloud/dedicated/hotswap_raid_hard){.external}
+
+[Gestire il RAID Hardware](/pages/cloud/dedicated/raid_hard){.external} (in inglese)
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
