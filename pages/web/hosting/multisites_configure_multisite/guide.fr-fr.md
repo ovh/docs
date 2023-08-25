@@ -1,10 +1,8 @@
 ---
 title: 'Partager son hébergement entre plusieurs sites'
 excerpt: "Découvrez comment héberger différents sites Internet sur votre offre d'hébergement web"
-updated: 2023-06-07
+updated: 2023-08-24
 ---
-
-**Dernière mise à jour le 07/06/2023**
 
 ## Objectif
 
@@ -20,6 +18,13 @@ Vous pouvez héberger plusieurs sites Internet sur une même offre d'hébergemen
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 
 ## En pratique
+
+> [!primary]
+>
+> La plupart des offres d'[hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/){.external} disposent d'une option incluse de création d'adresse(s) e-mail personnalisée(s) avec votre nom de domaine.
+> Cette option e-mail peut être activée pour **un seul** nom de domaine. Cela signifie que si vous effectuez du *multisite* avec plusieurs noms de domaine différents, vous ne pourrez activer cette option que pour un seul de vos noms de domaines.
+> N'hésitez pas à consulter notre [guide](/pages/web/hosting/activate-email-hosting) pour plus de détails sur l'activation de cette option.
+>
 
 ### Étape 1 : accéder à la gestion multisite
 
