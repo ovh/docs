@@ -1,10 +1,8 @@
 ---
 title: 'Hosting multiple websites on your Web Hosting plan'
 excerpt: 'Find out how to host several websites on your Web Hosting plan'
-updated: 2022-11-04
+updated: 2023-08-25
 ---
-
-**Last updated 22nd August 2022**
 
 ## Objective
 
@@ -20,6 +18,13 @@ You can host multiple websites on a single Web Hosting plan, even if the domain 
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia){.external}
 
 ## Instructions
+
+> [!primary]
+>
+> Most [OVHcloud Web Hosting](https://www.ovhcloud.com/asia/web-hosting/){.external} offers include the option of creating custom email addresses with your domain name.
+> This email option can be enabled for **only one** domain name. This means that if you use *multisite* with several different domain names, you can only enable this option for one of your domain names.
+> Please refer to our [guide](/pages/web/hosting/activate-email-hosting) for more details on how to enable this option.
+>
 
 ### Step 1: Access multisite management
 
