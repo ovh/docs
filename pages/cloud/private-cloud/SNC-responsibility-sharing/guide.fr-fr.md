@@ -78,7 +78,7 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 | **Activité** | **Client** | **OVHcloud** |
 | --- | --- | --- |
 | Gérer des accès et la politique de sécurité des utilisateurs du Service | RA |  |
-| Gérer les accès physiques et logiques des équipes OVHcloud aux infrastructures (vCenter) | I | RA |
+| Gérer les accès physiques et logiques des équipes OVHcloud aux infrastructures | I | RA |
 | Gérer les accès à l'espace client | RA | I |
 | Gérer les accès à l’interface de gestion de la virtualisation | RA | I |
 
