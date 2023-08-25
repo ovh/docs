@@ -146,9 +146,9 @@ Le guide pour les premiers pas avec la solution NSX est disponible sur [ce lien]
 
 Un service optionnel de connectivité est disponible sur l'infrastructure qualifiée SecNumCloud. Ce service intègre :
 
-    Un Réseau Privé Sécurisé (SNC Secured Private Network ou SPN)
-    Une interconnexion sécurisée entre SPN distants (SNC SPN Inter-DC)
-    Une passerelle VPN IPsec (SNC VPN Gateway)
+- Un Réseau Privé Sécurisé (SNC Secured Private Network ou SPN)
+- Une interconnexion sécurisée entre SPN distants (SNC SPN Inter-DC)
+- Une passerelle VPN IPsec (SNC VPN Gateway)
 
 La présentation de ces options est disponible sur [ce lien](https://help.ovhcloud.com/csm/fr-documentation-hosted-private-cloud-hosted-private-cloud-powered-by-vmware-networking-secnumcloud-connectivity?id=kb_browse_cat&kb_id=62e4cfed55d574502d4c6e78b7421953&kb_category=e781fb0d312b4154f0783c59fae3cd8f).
 
@@ -176,15 +176,16 @@ Les principe de portabilité d'OVHcloud sont décrits dans sa propre politique d
 
 
 Afin d'assurer la portabilité et la réversibilité des données sur le service, OVHcloud permet au client d'exporter et importer ses données en toute autonomie.
-Les principe de portabilité d'OVHcloud sont décrits dans sa propre [politique de portabilité](/pages/account/reversibility/00-global-reversibility-policy) et ceux spécifiques au service Serveurs Dédiés sont indiqués dans sa [politique spécifique](/pages/account/reversibility/01-dedicated-servers-reversibility-policy).
+Les principe de portabilité d'OVHcloud sont décrits dans sa propre [politique de portabilité](/pages/account/reversibility/00-global-reversibility-policy) et ceux spécifiques au service Serveurs Dédiés sont indiqués dans sa [politique spécifique](/pages/account/reversibility/02-hosted-private-cloud-reversibility-policy/).
 
 ### 10.1 - Effacement des données métier
 
-Suite au décommissionnement du service par le client et avant l'extraction du disque dur du rack, un robot d'effacement applique une procédure d'effacement sécurisé des données basée sur le standard NIST SP 800-88 r1 niveau 'Purge'.
-En cas de contraintes ou limitations techniques sur certaines gammes de disques durs et quand le niveau 'Purge' ne peut s'appliquer, c'est l'effacement au niveau 'Clear' qui s'exécute.
+Suite au décommissionnement du service par le client et avant l'extraction du disque dur du rack, un robot d'effacement applique une procédure d'effacement sécurisé des données basée sur le standard NIST SP 800-88 r1 niveau 'Purge'. En cas de contraintes ou limitations techniques sur certaines gammes de disques durs et quand le niveau 'Purge' ne peut s'appliquer, c'est l'effacement au niveau 'Clear' qui s'exécute.
+Sur l'infrastructure qualifiée SecNumCloud, c'est le niveau 'Destroy' qui est appliqué suite à l'extraction du disque de la baie.
+
 
 ### 10.2 - Effacement des données techniques
 
-Suite au décommissionnement du service par le client, OVHcloud procède à la libération des ressources qui lui sont allouées, comme les adresses IP et la suppression des configurations réalisées lors de la livraison du service.
+Suite au décommissionnent du service par le client, OVHcloud procède à la libération des ressources qui lui sont allouées et la suppression des configurations réalisées lors de la livraison du service
 
 
