@@ -36,7 +36,7 @@ However, you can also configure an Open ID Connect (OIDC) provider, for the OVHc
 
 - First of all, what is OIDC?
 
-![OIDC](images/oidc.png)
+![OIDC](images/oidc.png){.thumbnail}
 
 OIDC stands for [OpenID Connect](https://en.wikipedia.org/wiki/OpenID). It is an open standard and decentralized authentication protocol.
 This protocol allows verifying the user identity when a user is trying to access a protected HTTPs endpoint.
@@ -45,7 +45,7 @@ Several OpenID Connect providers exists like Dex, Keycloak, Okta or a SaaS provi
 
 - What is Keycloak?
 
-![Keycloak](images/keycloack.png)
+![Keycloak](images/keycloak.png){.thumbnail}
 
 [Keycloak](https://www.keycloak.org/) is an open source Identity and Access Management solution aimed at modern applications and services.
 It makes it easy to secure applications and services with little to no code.
@@ -120,16 +120,16 @@ Go to the [Harbor documentation](https://goharbor.io/docs/2.8.0/administration/c
 
 Now, access the Harbor HMI. New buttons should appear, especially the `Login via OIDC provider`{.action}:
 
-![Harbor login via oidc provider](images/login.png)
+![Harbor login via oidc provider](images/login.png){.thumbnail}
 
 When you click the `Login via OIDC provider`{.action} button, you are redirected to the Keycloack interface. 
 
-![keycloack login](images/keycloack-login.png)
+![keycloack login](images/keycloack-login.png){.thumbnail}
 
 If you don't enable the `autoOnboard` input field, a popup in the Harbor interface should appear asking you to fill the username.
 When this option is checked, the attribute `UserClaim` must be set, Harbor will read the value of this claim from the ID token and use it as the username for onboarding the user.
 
-![Harbor login via OIDC provider](images/autoonboard_off.png)
+![Harbor login via OIDC provider](images/autoonboard_off.png){.thumbnail}
 
 Click on the `Save`{.action} button to finally log in to Harbor with the OIDC provider.
 
@@ -175,11 +175,11 @@ When an `adminGroup` is configured, all users belonging to this group will have 
 
 First, retrieve information about groups in keycloack:
 
-![keycloack group](images/keycloack_groups.png)
+![keycloack group](images/keycloack_groups.png){.thumbnail}
 
 Check you have at least one member in the group:
 
-![keycloack group member](images/keycloack_group_member.png)
+![keycloack group member](images/keycloack_group_member.png){.thumbnail}
 
 Then, update the configuration with a PUT request.
 
@@ -258,7 +258,7 @@ userID: 8 //the user ID
 
 When you log again with this user, you are now an Administrator.
 
-![admin user](admin.png)
+![admin user](images/admin.png){.thumbnail}
 
 - Deleting an existing registry's OIDC configuration:
 
