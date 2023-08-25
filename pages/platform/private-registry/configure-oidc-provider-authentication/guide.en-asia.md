@@ -1,6 +1,6 @@
 ---
 title: 'Configure the authentication via an OIDC provider on an OVHcloud Managed Private Registry'
-excerpt: 'Find out how to configure the authentication via an OIDC provider OVHcloud Managed Private Registry'
+excerpt: 'Find out how to configure the authentication via an OIDC provider on an OVHcloud Managed Private Registry'
 updated: 2023-08-25
 ---
 
