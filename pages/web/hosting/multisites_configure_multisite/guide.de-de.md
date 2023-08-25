@@ -1,14 +1,12 @@
 ---
 title: 'Mehrere Websites auf einem Webhosting einrichten'
 excerpt: 'Erfahren Sie hier, wie Sie ein Webhosting für mehrere Websites verwenden'
-updated: 2023-06-08
+updated: 2023-08-25
 ---
 
 > [!primary]
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
 >
-
-**Letzte Aktualisierung am 08.06.2023**
 
 ## Ziel 
 
@@ -24,6 +22,13 @@ Sie können mehrere Websites auf einem einzigen Webhosting-Angebot hosten, auch 
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 ## In der praktischen Anwendung
+
+> [!primary]
+>
+> Die meisten [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} Angebote verfügen über eine Inklusiv-Option zur Erstellung personalisierter E-Mail-Adressen mit Ihrer Domain.
+> Diese E-Mail-Option kann für **einen einzelnen** Domainnamen aktiviert werden. Wenn Sie also *Multisite* mit mehreren verschiedenen Domainnamen betreiben, können Sie diese Option nur für einen Ihrer Domainnamen aktivieren.
+> Weitere Informationen zur Aktivierung dieser Option finden Sie in unserer [Anleitung](/pages/web/hosting/activate-email-hosting).
+>
 
 ### Schritt 1: Auf die Multisite-Verwaltung zugreifen
 
