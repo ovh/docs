@@ -1,7 +1,7 @@
 ---
 title: Concepts - Load Balancer
 excerpt: "Understand the configuration concepts that are powering the Public Cloud Load Balancer"
-updated: 2023-08-22
+updated: 2023-08-24
 ---
 
 ## Objective
@@ -10,7 +10,11 @@ The Public Cloud Load Balancer (based on Octavia OpenStack project) provides a l
 
 ## Load Balancer Configuration concepts
 
-![LB concepts](images/LB_concepts.svg)
+Here are 2 drawings of 2 configurations : a simple one that contains the minimum number of concepts to configure a Load Balancer and a more complex one that uses them all. The following chapters provide a definition of each concept used in those configurations.
+
+![simple LB concepts](images/LB_concepts_simple.svg)
+
+![full LB concepts](images/LB_concepts_full.svg)
 
 ### Listener
 
@@ -37,9 +41,15 @@ For example, a L7 rule can evaluate if an URI begins with “/api”.
 
 ###  L7 policy
 
-An L7 policy associates one or many L7 rules to a listener. Its main attribute is the action that is performed if all the L7 rules evaluations return `true`. For example, a user could specify an L7 policy so that any client request that matches the L7 rule “request URI starts with ‘/api’” should get routed to a specific “api” pool.
+An L7 policy associates one or many L7 rules to a listener. Its main attribute is the action that is performed if all the L7 rules evaluation returns `true`. For example, a user could specify an L7 policy so that any client request that matches the L7 rule “request URI starts with ‘/api’” should get routed to a specific “api” pool.
+
+When a request is received on a listener, the L7 policies are evaluated in the order defined by the `position` attribute. If the evaluation returns `true` then the evaluation stops and the L7 policy action is executed. If all L7 policies returns `false` then the request is forwarded to the listener default pool. 
 
 ## Go Further
 
 - An exhaustive technical documentation on [OpenStack project page](https://docs.openstack.org/octavia/latest/).
 - Configure your first load balancer with this [guide](/pages/platform/network-services/getting-started-01-create-lb-service).
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-ie/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+
+Join our community of users on <https://community.ovh.com/en/>.
