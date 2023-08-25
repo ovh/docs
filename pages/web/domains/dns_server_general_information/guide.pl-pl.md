@@ -51,9 +51,9 @@ Niektórzy dostawcy DNS proponują czasem więcej niż 2 **serwery DNS* do zadek
 
 > [!primary]
 >
-> *Registrar* to firma upoważniona do sprzedaży domen. OVHcloud jest jednym z tych *Registrar*.
+> *Registrar* to firma upoważniona do sprzedaży domen. OVHcloud jest jednym z tych *Registrars*.
 >
-> Jeśli Twoja domena nie jest zarejestrowana w OVHcloud, zmodyfikuj serwery DNS u *operatora*, u którego zarejestrowana jest aktualnie Twoja domena.
+> Jeśli Twoja domena nie jest zarejestrowana w OVHcloud, zmodyfikuj serwery DNS u *Registrar*, u którego zarejestrowana jest aktualnie Twoja domena.
 >
 
 ## W praktyce
@@ -122,7 +122,7 @@ Przycisk `Resetuj serwery DNS`{.action} pozwala zresetować aktualne serwery DNS
 
 Po zakończeniu operacji należy odczekać określony czas, zanim zmiany staną się widoczne. Na czas oczekiwania składają się dwa czynniki:
 
-- zmiana wprowadzona w OVHcloud musi zostać uwzględniona przez *registry* zarządzający rozszerzeniem Twojej domeny (na przykład rejestr rozszerzeń *.fr*). Możesz śledzić postęp operacji w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
+- zmiana wprowadzona w OVHcloud musi zostać uwzględniona przez *registry* zarządzający rozszerzeniem Twojej domeny (na przykład rejestr rozszerzeń *.pl*). Możesz śledzić postęp operacji w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 W tym celu przejdź do sekcji `Web Cloud`{.action}, przejdź do sekcji `Domeny`{.action} w kolumnie po lewej stronie, następnie kliknij `Operacje w toku`{.action};
 - po uwzględnieniu zmiany przez organizację zarządzającą rozszerzeniem domeny konieczny jest maksymalny czas propagacji wynoszący **48 godzin**, aby modyfikacje stały się w pełni widoczne.
 

@@ -51,9 +51,9 @@ En ocasiones, algunos proveedores DNS ofrecen más de 2 **servidores DNS** para 
 
 > [!primary]
 >
-> Un *registrar* es una organización autorizada a vender dominios. OVHcloud forma parte de estos *registrar*.
+> Un *registrar* es una organización autorizada a vender dominios. OVHcloud forma parte de estos *registrars*.
 >
-> Si su dominio no está registrado con OVHcloud, deberá modificar los servidores DNS en el *agente registrador* en el que esté registrado su dominio.
+> Si su dominio no está registrado con OVHcloud, deberá modificar los servidores DNS en el *registrar* en el que esté registrado su dominio.
 >
 
 ## Procedimiento

@@ -51,7 +51,7 @@ A volte, alcuni provider DNS offrono più di 2 **server DNS** da dichiarare pres
 
 > [!primary]
 >
-> *Registrar* è un'organizzazione autorizzata a vendere domini. Tra questi *Registrar* anche OVHcloud.
+> *Registrar* è un'organizzazione autorizzata a vendere domini. Tra questi *Registrars* anche OVHcloud.
 >
 > Se il dominio non è registrato presso OVHcloud, è necessario modificare i server DNS presso il *Registrar* in cui è attualmente registrato il dominio.
 >
@@ -122,7 +122,7 @@ Il pulsante `Reinizializza i server DNS`{.action} permette di reinizializzare i 
 
 Una volta completata l’operazione attendi il tempo necessario alla sua elaborazione. Devono essere presi in considerazione due periodi successivi:
 
-- la modifica apportata in OVHcloud deve essere presa in carico dal *registro* che gestisce l’estensione del dominio (ad esempio, il registro delle estensioni in *.fr*). Lo stato di avanzamento dell’operazione è disponibile nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}.
+- la modifica apportata in OVHcloud deve essere presa in carico dal *registro* che gestisce l’estensione del dominio (ad esempio, il registro delle estensioni in *.it*). Lo stato di avanzamento dell’operazione è disponibile nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}.
 Accedi alla sezione `Web Cloud`{.action}, clicca su `Domini`{.action} nella colonna di sinistra e poi su `Operazioni in corso`{.action};
 - una volta che la modifica è stata presa in carico dall'organizzazione che gestisce l’estensione del dominio, è necessario attendere fino a **48 ore** perché le modifiche apportate siano completamente propagate.
 
