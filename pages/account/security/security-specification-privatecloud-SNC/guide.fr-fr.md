@@ -1,13 +1,13 @@
 ---
 title: "Spécifications de sécurité du service Hosted Private Cloud VMware sous la qualification SecNumCloud "
-updated: 2023-02-16
+updated: 2023-08-25
 ---
 
 **Dernière mise à jour le 25/08/2023**
 
 ## Objectif
 
-En complément au [modèle de responsabilité entre OVHcloud et le client sur le service Serveurs Dédiés](/pages/account/responsibility-sharing/dedicated-servers), cette fiche a pour objectif de présenter les particularités et fonctions de sécurité propres à ce service. Elle met aussi en avant des bonnes pratiques qui permettront au client de l'exploiter au mieux.
+En complément au [modèle de responsabilité entre OVHcloud et le client sur le service Hosted Private Cloud powered by VMware sous la qualification SecNumcloud](/pages/cloud/private-cloud/SNC-responsibility-sharing/), cette fiche a pour objectif de présenter les particularités et fonctions de sécurité propres à ce service. Elle met aussi en avant des bonnes pratiques qui permettront au client de l'exploiter au mieux.
 
 ## 1 - Certifications
 
@@ -16,21 +16,23 @@ En complément au [modèle de responsabilité entre OVHcloud et le client sur le
 - ISO/IEC 27017
 - ISO/IEC 27018
 - HDS
-- SOC 1 type 1
-- SOC 2 type 1
-- CSA type 1
-- C5 type 1
+- PCI DSS
+- SecNumCloud
+- SOC 1 type II
+- SOC 2 type II
+- CSA type II
+- C5 type II
 - CISPE
 
 ## 2 - Bonnes pratiques à déployer sur le service
 
 ### 2.1 - Recommandations à la prise en main du service
 
-Une fois le service délivré et après réception des identifiants de connexion à son Serveur Dédié, OVHcloud recommande au client de changer ses identifiants 
-et de procéder au durcissement de son système d'exploitation. Des références et guides de durcissement sont présentés dans la section [9.1 Fourniture d'image OS 
-et durcissement](#os-images) de cette page.<br>
-D'autres guides sont disponibles dans [le corpus documentaire sur les Serveurs Dédiés](/products/bare-metal-cloud-dedicated-servers) pour assister le client à la prise 
-en main et l'exploitation du service.
+Pour l'accès à l'interface vSphre sous la qualification SecNumCloud, il convient de suivre les étapes sur [le lien suivant](/pages/cloud/private-cloud/snc_getting_started/)  afin d'autoriser les connexions d'adresses IP au vCenter, les accès des utilisateurs et authentification en MFA ainsi que les fonctionnalités de filtrage réseaux et de chiffrement pour sécuriser le service.
+
+Il convient également de procéder au durcissement de son Système d'Exploitation suite à la création des machines virtuelles.
+
+D'autres guides sont disponibles dans le corpus documentaire dédié au service sur [ce lien](https://help.ovhcloud.com/csm/fr-documentation-hosted-private-cloud-hosted-private-cloud-powered-by-vmware?id=kb_browse_cat&kb_id=62e4cfed55d574502d4c6e78b7421953&kb_category=db34d555f49801102d4ca4d466a7fd4f) pour assister le client à la prise en main et l'exploitation du service.
 
 ### 2.2 - Scan de vulnérabilités
 
@@ -41,59 +43,50 @@ Le client n'est pas autorisé à utiliser son service pour scanner d'autres infr
 
 ## 3 - Garanties de service
 
-### 3.1 - SLA
+### 3. SLA
 
 Reprise des SLA des conditions particulières par composante du service.
 
 | **Composant** | **SLA** | **Méthode de calcul** | **Dédommagement** |
 | --- | --- | --- | --- |
-| Serveur Dédié | 99,9% minimum (dépend de la gamme) | Nombre total  de minutes du mois considéré, déduction faite du nombre de minutes d’indisponibilité du mois concerné, le tout divisé par le nombre total de minutes du mois considéré. Pour le calcul des dédommagements, le temps d’indisponibilité est calculé à partir de l’ouverture du ticket incident, jusqu'à la résolution du dysfonctionnement. | Crédit de 5% du coût mensuel des Serveurs Dédiés indisponibles, par tranches de 30 minutes entamées d'indisponibilité au-delà du SLA, dans la limite de 50% dudit coût mensuel. |
+|  | Le taux de disponibilité mensuel est de 99,9 % pour l'ensemble du service | Nombre total  de minutes du mois considéré, déduction faite du nombre de minutes d’indisponibilité du mois concerné, le tout divisé par le nombre total de minutes du mois considéré. Pour le calcul des dédommagements, le temps d’indisponibilité est calculé à partir de l’ouverture du ticket incident, jusqu'à la résolution du dysfonctionnement. | 1- si taux disponibilité mensuel < 99,95 %, crédit de 10% du prix du service impacté. <br>
+2- si taux de disponibilité mensuel <99%, crédit de 30% du prix du service impacté |
 
-### 3.2 - GTI
 
-| **Typologie d'incident** | **Temps d'intervention** | **Temps de rétablissement** | **Dédommagement** |
-| --- | --- | --- | --- |
-| Incident niveau 1 : indisponibilité totale du service **détectée par OVHcloud** | 1h | 1h à compter du début de l'intervention | Détection de l'incident par OVHcloud | Crédit de 5% du coût mensuel des Serveurs Dédiés indisponibles, par tranches de 30 minutes entamées d'indisponibilité au-delà du SLA, dans la limite de 50% dudit coût mensuel. |
-| Incident niveau 1 : indisponibilité totale du service **signalée par le client** | 1h | 1h à compter du début de l'intervention | Création du ticket par le client | Crédit de 5% du coût mensuel des Serveurs Dédiés indisponibles, par tranches de 30 minutes entamées d'indisponibilité au-delà du SLA, dans la limite de 50% dudit coût mensuel. |
-| Incident niveau 2 : dégradation substantielle des performances des Serveurs Dédiés | 1h | ∅ | Création du ticket par le client | Crédit de 5% du coût mensuel des Serveurs Dédiés indisponibles, par tranches de 30 minutes entamées d'indisponibilité au-delà du SLA, dans la limite de 50% dudit coût mensuel. |
 
 ## 4 - Backups
 
 ### 4.1 - Sauvegardes techniques
 
-Les sauvegardes techniques sont les sauvegardes réalisées par OVHcloud pour assurer les niveaux de service prévus au contrat. Ces sauvegardes ne sont pas prévues pour être activées à la demande du client. Ces backups ne contiennent aucune donnée métier déposée par les clients sur leurs propres serveurs dédiés.
-
-Ce sont des sauvegardes de configurations des infrastructures qui permettent de délivrer le service aux clients telles que : configuration des routeurs, configurations vRack, affectation des IP, etc ...
+Les sauvegardes techniques (ou de configuration) sont les sauvegardes réalisées par OVHcloud pour assurer les niveaux de service prévus au contrat. Ces sauvegardes ne sont pas prévues pour être activées à la demande du client.
 
 ### 4.2 - Sauvegardes métier
 
 Liste des fonctionnalités et options de backups adaptées au service :
 
-| **Nom de l'option** | **Granularité** | **RTO** | **RPO** | **Documentation et tutoriels**|
+| **Nom de l'option** | **Granularité** | **RPO** | **RTO** | **Documentation et tutoriels**| **chiffrement des jobs**|
 | --- | --- | --- | --- | --- |
-| - FTP backup ou Backup Storage est un espace de stockage de 500Go mis à disposition du client suite à la souscription au service.<br> - Le service doit être activé par le client.<br> - Aucune routine de backup n'est configurée par OVHcloud. | Au choix du client | Dépend du choix du client | N/A | [Utiliser Backup Storage sur un serveur dédié](/pages/cloud/dedicated/services_backup_storage) |
-| - Backup Storage est une option de stockage supplémentaire qui permet d'avoir un espace disque supplémentaire pouvant atteindre 10To pour déposer des sauvegardes. | Au choix du client | Dépend du choix du client |  N/A | [Utiliser Backup Storage sur un serveur dédié](/pages/cloud/dedicated/services_backup_storage) |
+| Veeam Managed Backup(Standard) | la VM | dépend de la date de la dernière sauvegarde et durée de résolution de l'incident | dépend de la taille de la VM sauvegardée | [Activer et utiliser Veeam Managed Backup](/pages/cloud/private-cloud/veeam_backup_as_a_service/) | Oui |
+| Veeam Managed Backup(Advanced) | la VM | dépend de la date de la dernière sauvegarde et durée de résolution de l'incident | dépend de la taille de la VM sauvegardée | [Activer et utiliser Veeam Managed Backup](/pages/cloud/private-cloud/veeam_backup_as_a_service/) | Oui |
+|Veeam Managed Backup(Premium) | la VM | dépend de la date de la dernière sauvegarde et durée de résolution de l'incident | dépend de la taille de la VM sauvegardée | [Activer et utiliser Veeam Managed Backup](/pages/cloud/private-cloud/veeam_backup_as_a_service/) | Oui |
 
 ## 5 - Logs
+Le client bénéficiant d'une infrastructure Hosted Private Cloud qualifiée SecNumcloud a la possibilité de récupérer les logs de connexion à l'espace client  et évènements enregistrés sur le service qu'il opère.
 
 > [!primary]
 > Consultez le guide [Premiers pas avec les API OVHcloud](/pages/account/api/first-steps) pour vous familiariser avec l'utilisation des APIv6 OVHcloud.
 
 | **Source** | **Contenu** | **Liens** |
 | --- | --- | --- |
-| Control Plane (Espace Client) | Logs sur toutes les interactions réalisées via des appels API, lancés par les contacts administrateur, technique ou de facturation, sur les services auxquels ils ont accès. |- <https://api.ovh.com/console/#/me> (voir les appels `/me/api/logs`)<br>- [List of API calls done with your account](https://api.ovh.com/console/#/me/api/logs/self~GET)<br>- [List of API calls done on services you have access to](https://api.ovh.com/console/#/me/api/logs/services~GET) |
-| Service | Liste des tâches lancées sur un serveur donné | [Dedicated Servers ToDos](https://api.ovh.com/console/#/dedicated/server/%7BserviceName%7D/task~GET)|
-| Service | Liste des interventions lancées sur un serveur donné | [Technical interventions history](https://api.ovh.com/console/#/dedicated/server/%7BserviceName%7D/intervention~GET) |
+| Control Plane (Espace Client) | Logs sur toutes les interactions réalisées via des appels API, lancés par les contacts administrateur, technique ou de facturation, sur les services auxquels ils ont accès. |- <https://api.ovh.com/console/#/me> (voir les appels `/me/api/logs`)<br>- [List of API calls done with your account](https://api.ovh.com/console/#/me/api/logs/self~GET)<br> // [Tasks associated with this User](https://api.ovh.com/console/#/dedicatedCloud/%7BserviceName%7D/user/%7BuserId%7D/task~GET) |
+| Service | Logs des "support user" qui correspondent aux tâches, effectuées par un utilisateur d'OVHcloud créé à la volée, dans l'infrastructure du client pour le support et gestion des incidents. | Historique du vCenter : vSphere Client, onglet "Tasks et events"|
 
-Les tâches sont des actions lancées par le client sur un Serveur Dédié : installation de l'OS, redémarrage de l'OS, activation du mode 'rescue', etc ...
-
-Les interventions sont des actions réalisées par les équipes OVHcloud dans les Datacentres sur les serveurs physiques : vérification de l'état de l'équipement, changement de CPU, RAM ou disque défectueux, etc ...
 
 ## 6 - API
 
 | **Nom** | **Capacités** | **Liens** |
 | --- | --- | --- |
-| Control Plane et service | Manipulation des comptes client et des services sur lesquels le compte a des droits de gestion du service | [API calls for Dedicated Servers](https://api.ovh.com/console/#/dedicated/server) |
+| Control Plane et service | Manipulation des comptes client et des services sur lesquels le compte a des droits de gestion du service | [API calls for Private Cloud]([https://api.ovh.com/console/#/dedicated/server)](https://api.ovh.com/console/#/dedicatedCloud) |
 
 ## 7 - Comptes utilisateurs
 
@@ -103,59 +96,76 @@ A travers son espace client OVHcloud, le client a la possibilité de gérer le s
 
 Afin de référencer chaque client ayant souscrit à un ou plusieurs services, OVHcloud utilise un compte propriétaire avec un NIC interne. 
 
-Pour renforcer l'accès au compte client, le client a la possibilité d'activer [une authentification à double facteur (2FA)](/pages/account/customer/secure-ovhcloud-account-with-2fa) ou [l'authentification SSO (Single Sign-On)](/products/customer-connect-saml-sso) en associant son compte à un Active Directory externe.
+Pour renforcer l'accès au compte client, le client a la possibilité d'activer [une authentification à double facteur (2FA)](/pages/account/customer/secure-ovhcloud-account-with-2fa).
+
+La gestion des accès utilisateurs à l'interface vSphere avec filtrage IP et authentification à double facteurs peut se faire en suivant les premières étapes de [ce guide](/pages/cloud/private-cloud/snc_getting_started/).
+
+Avec le compte administrateur, le client a la possibilité d'établir sa propre politique d'accès au vCenter, de créer des utilisateurs et leur affecter différents droits d'accès pour gérer les ressources, l'accès à l'interface vSphere et la gestion de la partie réseau privé et public. Le guide et détails de configurations sont disponibles sur [ce lien](/pages/cloud/private-cloud/manager_ovh_private_cloud/).
 
 ### 7.2 - Data Plane
-
-Une fois le service livré, à l'étape d'installation de l'OS, le client a le choix entre l'[utilisation d'une clé SSH](/pages/cloud/dedicated/creating-ssh-keys-dedicated) (pour les distributions Linux) pour accéder à son serveur où d'un mot de passe unique, généré automatiquement par OVHcloud s'il n'a pas configuré de clé SSH.
 
 Le client est autonome pour créer les comptes utilisateurs sur son OS, une fois qu'il a les droits d'administration sur son serveur.
 
 ## 8 - Antivirus
 
-OVHcloud ne prend pas en charge l'installation d'un antivirus lors de l'installation du système d'exploitation.
-Le client est responsable du déploiement des mesures de sécurité sur les serveurs dédiés qu'il opère.
+Une protection antivirus est déployée sur différents composants des infrastructures gérées par OVHcloud comme la SSL Gateway, la Private Gateway, la zone Master, ... avec des scans hebdomadaires.
+
+Aucune protection n'est mise en place au niveau des VM déployées par le client, il appartient donc à celui-ci d'installer son propre logiciel antivirus et de le monitorer.
 
 ## 9 - Services disponibles à l'installation du Service
 
-### 9.1 - Fourniture d'images d'OS et durcissement <a name="os-images"></a>
+### 9.1 - Fourniture d'images de VM
 
-> [!primary]
-> Consultez le guide [Premiers pas avec les API OVHcloud](/pages/account/api/first-steps) pour vous familiariser avec l'utilisation des APIv6 OVHcloud.
+OVHcloud met à disposition des clients des modèles de VM au format OVF. Ces template de VM disposent d'un niveau de durcissement minimal. Le durcissement des OS windows et Linux est celui d'une installation nominale de l’éditeur. Pour un durcissement avancé, OVHcloud recommande de se référer aux documentations de chaque éditeur.
 
-OVHcloud met à disposition un catalogue de systèmes d'exploitation et s'engage à fournir des systèmes d'exploitation dont la dernière mise à jour date de moins de 30 jours.
+Lors du déploiement d'une VM, le client a également la possibilité d'importer sa propre image ISO.
 
-- [Liste des systèmes d'exploitation disponibles chez OVHcloud](https://api.ovh.com/console/#/dedicated/installationTemplate/templateInfos~GET)
-- [Liste des systèmes d'exploitation disponibles pour une référence commerciale donnée](https://api.ovh.com/console/#/dedicated/server/osAvailabilities~GET)
-- [Liste des systèmes d'exploitation disponibles pour un serveur donné](https://api.ovh.com/console/#/dedicated/server/%7BserviceName%7D/install/compatibleTemplates~GET)
+### 9.2 - Fonctions de filtrage, chiffrement et autres options sécurité
+### 9.2.1 SSL Gateway
+Les adresses IP d'un service Private Cloud sont par défaut publiques. La SSL Gateway est une passerelle qui permet à un client d'activer des fonctions de filtrage pour permettre à ses propres utilisateurs de se connecter depuis Internet à son infrastructure.
 
-Le durcissement des systèmes d'exploitation fournis est celui d'une installation nominale de l’éditeur. Pour un durcissement avancé, OVHcloud recommande de se référer aux documentations de chaque éditeur .
+Elle offre également un service de Firewall/NAT qui peut configuré par le client via une 'iptable', un certifcat pour sécuriser la connexion, un ProxyPass, du monitoring, un serveur SFTP et un script antivirus avec scan quotidien/mis à jour. 
 
-| **Editeur** | **Documentation de durcissement** |
-| --- | --- |
-| Debian | <https://wiki.debian.org/Hardening> |
-| Redhat | <https://access.redhat.com/documentation/en-us/red_hat_enterprise_linux/8/html/security_hardening/overview-of-security-hardening-security-hardening> |
-| Ubuntu | <https://ubuntu.com/security/certifications/docs/usg> |
-| Windows | <https://docs.microsoft.com/fr-fr/windows/security/threat-protection/windows-security-configuration-framework/windows-security-baselines> |
+### 9.2.2 Private Gateway
 
-### 9.2 - Bring Your Own Image
+La PrivateGateway est est une option disponible sur un service Private Cloud et activée par défaut sur une infrastructure qualifiée SecNumCloud. Elle permet au client de gérer l'accès à son infrastructure via une IP privée (interface vSphere, vScope, etc, ..).
 
-Bring Your Own Image est une fonctionnalité qui permet au client d'importer une image de son choix sur un serveur en dehors du catalogue proposé par OVHcloud. 
-Les prérequis et modes d'emploi sont disponibles sur [ce lien](/pages/cloud/dedicated/bring-your-own-image).
+Une fois déployée, la PrivateGateway agit comme un proxy pour accéder à l'infrastructure à partir du réseau vRack. L'ensemble des règles établies dans SSL Gateway (iptable) seront copiées vers la PrivateGateway pour le filtrage, l'accès via les IP publiques sera désactivé et le domaine du Private Cloud sera accessible uniquement via cette Gateway. 
 
-### 9.3 - Monitoring OVHcloud
+Le mode opératoire pour activer la Private Gateway est disponible sur ce lien : [Activer la Private Gateway](/pages/cloud/private-cloud/private_gateway/) 
 
-Un service de monitoring est activé par défaut par OVHcloud pour suivre l'état des serveurs des clients, via le protocole ICMP. Le client a la possibilité de suivre l'état de ses propres serveurs ou de désactiver ce service, via son espace client OVHcloud ou via un appel API.
+Pour l'infrastructure qualifiée SecNumCloud, il convient de suivre l'étape 4 disponible sur ce lien : [Mise en route de votre vSphere SecNumCloud](/pages/cloud/private-cloud/snc_getting_started/)
 
-Le client a également la possibilité d'activer la supervision d'autres services réseaux qui sont désactivés par défaut.
+### 9.2.3 NSX
 
-Il appartient au client de suivre les guides de durcissement des éditeurs d'OS et de restreindre les flux ICMP au strict nécessaire.
+Des fonctionnalités de filtrage réseaux plus fines comme la micro segmentation, un pare-feu distribué, du Load Balancing, etc .. sont disponibles via l'offre SDN de VMware basée sur la solution NSX.
 
-Afin de continuer à bénéficier du service de monitoring OVHcloud, le client doit configurer [des règles de filtrage](/pages/cloud/dedicated/network_ip_monitoring) sur le pare-feu interne de ses serveurs et sélectionner les autres services dont il souhaite suivre l'état.
+Le guide pour les premiers pas avec la solution NSX est disponible sur [ce lien](/pages/cloud/private-cloud/nsx-01-first-steps/). Il accompagné d'autres tutoriels dans l'espace documentaire pour faciliter l'utilisation des autres fonctionnalités.
 
-OVHcloud propose une fonctionnalité appelée [OVHcloud Link Aggrégation](/pages/cloud/dedicated/ola-enable-manager) qui peut être activée par le client et qui lui permet de bénéficier d'un réseau privé à haut débit et redondé pour ses Serveurs Dédiés.
+### 9.2.4 SecNumCloud Connectivity : SPN et VPN
 
-Si le client active cette fonctionnalité, le monitoring réalisé par OVHcloud sera désactivé.
+Un service optionnel de connectivité est disponible sur l'infrastructure qualifiée SecNumCloud. Ce service intègre :
+
+    Un Réseau Privé Sécurisé (SNC Secured Private Network ou SPN)
+    Une interconnexion sécurisée entre SPN distants (SNC SPN Inter-DC)
+    Une passerelle VPN IPsec (SNC VPN Gateway)
+
+La présentation de ces options est disponible sur [ce lien](https://help.ovhcloud.com/csm/fr-documentation-hosted-private-cloud-hosted-private-cloud-powered-by-vmware-networking-secnumcloud-connectivity?id=kb_browse_cat&kb_id=62e4cfed55d574502d4c6e78b7421953&kb_category=e781fb0d312b4154f0783c59fae3cd8f).
+
+
+### 9.2.5 Chiffrement des données 
+Sur une infrastructure qualifiée SecNumcloud ou hors SecNumcloud, un client a la possibilité d'appliquer un chiffrement au repos en utilisant la brique vNKP disponible sur le service pour chiffrer les VM ou au niveau des datastores d'un Cluster vSAN.
+
+La même opération peut être réalisée si le client opte pour l'utilisation d'un KMS externe à l'offre OVHcloud.
+
+Le mode d'emploi est disponible sur [ce lien](/pages/cloud/private-cloud/vm_encrypt-vnkp/).
+
+### 9.2.6 6 Sécurité avancée avec HDS et PCI DSS
+
+Le client peut bénéficier d'un pack sécurité avancée en activant les options HDS ou PCI DSS sur son infrastructure.
+
+Le pack comprend plusieurs fonctionnalités telles que : [token validator](/pages/cloud/private-cloud/interface-secure/), accès via 2FA, session Timeout, Fail2ban, hids, forcer le protocole TLS v1.2, ..
+
 
 ## 10 - Réversibilité
 
