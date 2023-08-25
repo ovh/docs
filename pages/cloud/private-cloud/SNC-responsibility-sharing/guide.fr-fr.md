@@ -99,7 +99,7 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 | --- | --- | --- |
 | Créer, modifier, contrôler, restaurer, supprimer les jobs de backups | RA |  |
 | Gérer le contenu hébergé sur les infrastructures | RA |  |
-| Gérer la continuité et la durabilité des données | RA |  |
+| Gérer la continuité et l'intégrité des données | RA |  |
 | Réaliser la maintenance des dispositifs de stockage et de sauvegarde fournis par OVHcloud | C | RA |
 
 ##### **3.1.5. Connectivité**
