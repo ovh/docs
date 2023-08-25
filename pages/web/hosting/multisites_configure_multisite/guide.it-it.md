@@ -1,14 +1,12 @@
 ---
 title: 'Ospitare più siti su uno stesso hosting'
 excerpt: 'Questa guida ti mostra come condividere il tuo hosting Web tra più siti Internet'
-updated: 2023-06-08
+updated: 2023-08-25
 ---
 
 > [!primary]
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
 >
-
-**Ultimo aggiornamento: 08/06/2023**
 
 ## Obiettivo
 
@@ -24,6 +22,13 @@ Su una stessa soluzione di hosting è possibile ospitare più siti Internet, anc
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 
 ## Procedura
+
+> [!primary]
+>
+> La maggior parte delle soluzioni di [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/){.external} includono un’opzione per la creazione di indirizzi email personalizzati con il dominio.
+> Questa opzione email può essere attivata per **un solo* dominio. *multisito* con diversi domini permette di attivare questa opzione solo per uno dei tuoi domini.
+> Per maggiori informazioni sull’attivazione di questa opzione, consulta la nostra [guida](/pages/web/hosting/activate-email-hosting).
+>
 
 ### Step 1: accedi alla gestione del multisito
 
