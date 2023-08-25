@@ -77,7 +77,8 @@ Le client bénéficiant d'une infrastructure Hosted Private Cloud qualifiée Sec
 
 | **Source** | **Contenu** | **Liens** |
 | --- | --- | --- |
-| Control Plane (Espace Client) | Logs sur toutes les interactions réalisées via des appels API, lancés par les contacts administrateur, technique ou de facturation, sur les services auxquels ils ont accès. |- <https://api.ovh.com/console/#/me> (voir les appels `/me/api/logs`)<br>- [List of API calls done with your account](https://api.ovh.com/console/#/me/api/logs/self~GET)<br> // [Tasks associated with this User](https://api.ovh.com/console/#/dedicatedCloud/%7BserviceName%7D/user/%7BuserId%7D/task~GET) |
+| Control Plane (Espace Client) | Logs sur toutes les interactions réalisées via des appels API, lancés par les contacts administrateur, technique ou de facturation, sur les services auxquels ils ont accès. |- <https://api.ovh.com/console/#/me> (voir les appels `/me/api/logs`)<br>- [List of API calls done with your account](https://api.ovh.com/console/#/me/api/logs/self~GET)<br>// [Tasks associated with this User](https://api.ovh.com/console/#/dedicatedCloud/%7BserviceName%7D/user/%7BuserId%7D/task~GET) |
+| Service | Historique des tâches, évènements sur le vCenter effectués par un client sur ses infrastructures. | Historique du vCenter : vSphere Client, onglet "Tasks et events" ou via via appel API pour certaines tâches : <br> [// Tasks associated with this User](https://api.ovh.com/console/#/dedicatedCloud/%7BserviceName%7D/user/%7BuserId%7D/task~GET) |
 | Service | Logs des "support user" qui correspondent aux tâches, effectuées par un utilisateur d'OVHcloud créé à la volée, dans l'infrastructure du client pour le support et gestion des incidents. | Historique du vCenter : vSphere Client, onglet "Tasks et events"|
 
 
