@@ -23,7 +23,7 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 
 | **Activité** | **Client** | **OVHcloud** |
 | --- | --- | --- |
-| Choisir la localisation des infrastructures (vCenter) | RA | I |
+| Choisir la localisation des infrastructures | RA | I |
 | Dimensionner les infrastructures en fonction des besoins | RA | I |
 | Choisir les options en fonction des besoins | RA | I |
 
