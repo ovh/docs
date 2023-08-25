@@ -149,7 +149,7 @@ Haga clic en el botón `Configurar`{.action}. En el cuadro de diálogo, se mostr
 
 - **Desactivado**: Esta opción detiene los mensajes de alerta y las intervenciones de OVHcloud. Seleccione esta opción si ejecuta acciones de administración relevantes en el servidor que impidan una respuesta ICMP.
 - **Activado con intervención proactiva**: Si el servidor no responde, recibirá un mensaje de correo electrónico de alerta y el servidor será verificado por un técnico.
-- **Activado sin intervención proactiva**: Recibirá un mensaje de alerta por correo electrónico en caso de que el servidor deje de responder. Para iniciar una intervención, ees necesario activar la opción con intervención proactiva.
+- **Activado sin intervención proactiva**: Recibirá un mensaje de alerta por correo electrónico en caso de que el servidor deje de responder. Para iniciar una intervención, es necesario activar la opción con intervención proactiva.
 
 ![Monitoring](images/monitoring-your-server2.png){.thumbnail}
 
