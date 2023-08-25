@@ -1,7 +1,7 @@
 ---
 title: Concepts - Load Balancer
 excerpt: "Understand the configuration concepts that are powering the Public Cloud Load Balancer"
-updated: 2023-08-11
+updated: 2023-08-24
 ---
 
 ## Objective
@@ -9,7 +9,9 @@ The Public Cloud Load Balancer (based on Octavia Openstack project) provides a l
 
 
 ## Load Balancer Configuration concepts
-![LB concepts](./images/LB_concepts.svg)
+Here are 2 drawings of 2 configurations : a simple one that contains the minimum number of concepts to configure a Load Balancer and a more complex one that uses them all ! The following chapters provide a definition of each concept used in those configurations.
+![simple LB concepts](./images/LB_concepts_simple.svg)
+![full LB concepts](./images/LB_concepts_full.svg)
 
 ### Listener
 The listener specifies a listening endpoint where the incoming traffic is received. Its mains attributes are the protocol and the port, for instance `HTTPS` and `443`. Note that you can have multiple listeners on one Load Balancer.
@@ -30,8 +32,8 @@ a L7 rule is a single logical expression that is used to match a condition prese
 For example, a L7 rule can evaluate if an URI begins with “/api”.
 
 ###  L7 policy
-A L7 policy associates one or many L7 rules to a listener. It main attribute is the action that is performed if all the L7 rules evaluation returns `true`. For example, a user could specify an L7 policy so that any client request that matches the L7 rule “request URI starts with ‘/api’” should get routed to a specific “api” pool.
-
+A L7 policy associates one or many L7 rules to a listener. Its main attribute is the action that is performed if all the L7 rules evaluation returns `true`. For example, a user could specify an L7 policy so that any client request that matches the L7 rule “request URI starts with ‘/api’” should get routed to a specific “api” pool.
+When a request is received on a listener, the L7 policy are evaluated in the order defined by the `position` attribute. If the evaluation returns `true` then the evaluation stops and the L7 policy action is executed. If all L7 policy returns `false` then the request is forwarded to the listener default pool. 
 
 ## Going Further
 
