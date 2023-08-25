@@ -793,6 +793,7 @@
                 + [Migrate Helm Charts from Chartmuseum to OCI](platform/private-registry/migrate-helm-charts-from-chartmuseum-to-oci)
                 + [Scanning Docker images for vulnerabilities with OVHcloud Managed Private Registry](platform/private-registry/scan-docker-images-vulnerabilities)
                 + [Sign OCI artifacts with Cosign on OVHcloud Managed Private Registry](platform/private-registry/sign-artifacts-with-cosign)
+                + [Configure the authentication via an OIDC provider on an OVHcloud Managed Private Registry](platform/private-registry/configure-oidc-provider-authentication)
     + [AI & Machine Learning](public-cloud-ai-and-machine-learning)
         + [General information](public-cloud-ai-and-machine-learning-general-information)
             + [Comparative tables - AI Notebooks, AI Training, AI Deploy](platform/ai/gi_00_ai_comparative-table)
