@@ -56,31 +56,31 @@ Parfois, certains fournisseurs DNS proposent plus de 2 **serveurs DNS** à décl
 
 > [!warning]
 >
-> **Faites attention lorsque vous modifiez les serveurs DNS d’un nom de domaine.** Une erreur de manipulation peut rendre votre site web inaccessible ou empêcher vos adresses de messagerie de recevoir de nouveaux e-mails. Comprendre les impacts d’une telle modification vous permettra de mieux appréhender le changement que vous allez opérer.
+> **Faites attention lorsque vous modifiez les serveurs DNS d’un nom de domaine.** Une erreur de manipulation peut rendre votre site web inaccessible ou empêcher vos adresses de messagerie de recevoir de nouveaux e-mails. Comprendre les conséquences d’une telle modification vous permettra de mieux appréhender le changement que vous allez opérer.
 >
 
 Lorsque vous modifiez les serveurs DNS de votre nom de domaine, vous changez sa configuration DNS. La nouvelle configuration DNS remplace l'ancienne et est stockée sur les serveurs DNS nouvellement définis. Techniquement, le nom de domaine utilise ensuite une nouvelle zone DNS.
 
-Toutefois, il est important de noter que :
+Toutefois, il est essentiel de noter que :
 
-- Lors d'un changement de serveur DNS (e.g. DNS externe par DNS OVHCloud), le contenu de l'ancienne configuration DNS n'est pas automatiquement répliqué dans la nouvelle. Assurez-vous que votre nouvelle zone DNS inclut toutes les enregistrements DNS requis pour que les services associés à votre nom de domaine fonctionnent correctement (par exemple, votre site web et vos adresses de messagerie).
+- Lors d'un changement de serveur DNS (e.g. DNS externe par DNS OVHCloud), le contenu de l'ancienne configuration / zone DNS n'est pas automatiquement répliqué dans la nouvelle. Assurez-vous que votre nouvelle zone DNS contient tous les enregistrements DNS requis pour que les services associés à votre nom de domaine fonctionnent correctement (par exemple, votre site web et vos adresses de messagerie).
 
-- Si vous ne souhaitez modifier qu'un seul élément de votre configuration DNS actuelle (par exemple un enregistrement DNS), nous vous recommandons plutôt de suivre notre guide pour modifier la zone DNS : « [Éditer une zone DNS OVHcloud](/pages/web/domains/dns_zone_edit){.external} ».
+- Si vous souhaitez modifier non pas les serveurs DNS mais un ou plusieurs enregistrements de votre configuration / zone DNS actuelle, consultez notre guide : « [Éditer une zone DNS OVHcloud](/pages/web/domains/dns_zone_edit){.external} ».
 
-- Certaines organisations, les registres, qui gèrent les extensions de noms de domaine, ont des exigences particulières concernant les serveurs DNS (quantité de serveurs de noms, valeur des enregistrements...). En cas de doute, vérifiez auprès du registre responsable du domaine.
+- Certaines organisations, les registres, qui gèrent les extensions de noms de domaine, ont des exigences particulières concernant les serveurs DNS (quantité de serveurs de noms, valeur des enregistrements, etc.). En cas de doute, vérifiez auprès du registre responsable du domaine.
 
-Assurez-vous que les modifications ne rendront pas votre nom de domaine inaccessible. Si vous n'êtes pas sûr de cela, veuillez contacter la personne qui vous demande d'apporter ces modifications.
+Assurez-vous que les modifications ne rendront pas votre nom de domaine inaccessible. Si vous n'êtes pas sûr de cela, contactez la personne qui vous demande d'apporter ces modifications.
 
 
 ### Accéder à la gestion des serveurs DNS OVHcloud
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} dans la section `Web Cloud`{.action}. Cliquez sur `Noms de domaine`{.action}, puis choisissez le nom de domaine concerné. Accédez alors à l'onglet `Serveurs DNS`{.action}.
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} puis rendez-vous dans la partie `Web Cloud`{.action}. Dans la colonne de gauche, cliquez sur `Noms de domaine`{.action} puis choisissez le nom de domaine concerné. Sélectionnez enfin l'onglet `Serveurs DNS`{.action}.
 
-Le tableau qui apparaît affiche les serveurs DNS actuellement définis par OVHcloud pour votre nom de domaine. Plusieurs serveurs DNS peuvent être répertoriés, chacun possédant sa propre ligne dans le tableau.
+Le tableau qui s'affiche contient les serveurs DNS actuellement définis par OVHcloud pour votre nom de domaine. Plusieurs serveurs DNS peuvent être répertoriés, chacun possédant sa propre ligne dans le tableau.
 
 > [!primary]
 >
-> Lorsque vous utilisez les serveurs DNS OVHcloud, les numéros de serveurs n'ont pas de lien avec le ou les services que vous utilisez. Seule l'option [DNS anycast](https://www.ovhcloud.com/fr/domains/options/) utilise des serveurs DNS spécifiques qui vous sont automatiquement attribués. 
+> Lorsque vous utilisez les serveurs DNS OVHcloud, les numéros présents dans les noms des serveurs n'ont aucun lien avec le ou les services que vous utilisez. Seule l'option [DNS anycast](https://www.ovhcloud.com/fr/domains/options/) utilise des serveurs DNS spécifiques qui vous sont automatiquement attribués. 
 
 ![dnsserver](images/edit-dns-server-ovh-step1.png){.thumbnail}
 
@@ -90,27 +90,37 @@ Si vous souhaitez utiliser des serveurs DNS externes, vous devez les substituer 
 
 Cliquez sur `Modifier les serveurs DNS`{.action} à droite.
 
-Dans les champs de texte, **remplacez** les valeurs actuelles des serveurs DNS par les informations relatives aux nouveaux serveurs que vous souhaitez définir. Pour ajouter d'autres serveurs à la liste active, cliquez sur le bouton `+`{.action} située à droite de la dernière ligne du tableau. Une ligne supplémentaire apparaît alors dans le tableau, avec des champs de texte que vous pouvez compléter.
+Dans les formulaires de saisies, **remplacez** les valeurs actuelles des serveurs DNS par les informations relatives aux nouveaux serveurs DNS que vous souhaitez définir. Pour ajouter d'autres serveurs à la liste active, cliquez sur le bouton `+`{.action} située à droite de la dernière ligne du tableau. Une ligne supplémentaire apparaîtra dans le tableau que vous pourrez compléter.
 
 > [!warning]
 >
 > Veillez à ne pas mélanger un groupe de serveurs DNS avec un autre. 
-> Par exemple, *dns19.ovh.net* et *ns19.ovh.net* correspondent à un groupe de serveurs DNS OVHcloud, ils sont identiques et synchronisés. Si vous y ajoutez des serveurs DNS externes à OVHcloud (ou d'un groupe OVHcloud différent), la résolution DNS se fera de manière aléatoire entre les serveurs DNS OVHcloud et les serveurs DNS externes renseignés.
+>
+> Par exemple, *dns19.ovh.net* et *ns19.ovh.net* correspondent à un groupe de serveurs DNS OVHcloud, ils vont de paire et sont synchronisés. Si vous y ajoutez des serveurs DNS externes à OVHcloud (ou d'un groupe OVHcloud différent), la résolution DNS se fera de manière aléatoire entre les serveurs DNS OVHcloud et les serveurs DNS externes renseignés.
+>
+> Chez OVHCloud, les groupes de serveurs DNS sont identifiables à l'aide du numéro présent dans les noms des serveurs. Deux serveurs DNS OVHcloud font partie d'un même groupe de serveurs dès lors qu'ils partagent le même numéro. Par exemple, *dns19.ovh.net* et *ns19.ovh.net*.
+>
 
 Une fois que vous avez saisi ces informations, cliquez sur `Appliquer la configuration`{.action}. Les statuts des serveurs DNS seront alors mis à jour dans le tableau et afficheront les nouvelles informations que vous venez de fournir.
 
 ![dnsserver](images/edit-dns-server-ovh-step2.png){.thumbnail}
 
-### Réinitialiser les serveurs DNS 
+> [!success]
+>
+> La modification des serveurs DNS associés à un nom de domaine entraine un délai de propagation de **24** à **48** heures maximum pour que celle-ci soit effective.
+>
 
-En cliquant sur le bouton `Réinitialiser les serveurs DNS`{.action}, vous pouvez réinitialiser les serveurs DNS actuels en les remplaçant automatiquement par les serveurs DNS OVHcloud d'origine. Nous vous conseillons d’utiliser cette option uniquement si vous souhaitez réutiliser les serveurs DNS OVHcloud. 
+#### Cas particulier : Réinitialiser les serveurs DNS 
+
+Le bouton `Réinitialiser les serveurs DNS`{.action} permet de réinitialiser les serveurs DNS actuels en les remplaçant automatiquement par les serveurs DNS OVHcloud d'origine. Utilisez cette option **uniquement** si vous souhaitez réutiliser les serveurs DNS OVHcloud (et la zone DNS OVHcloud associée à ses serveurs DNS). 
 
 ![dnsserver](images/edit-dns-server-ovh-step3.png){.thumbnail}
 
 Une fois les modifications requises effectuées, vous devez attendre qu'elles soient pleinement effectives. Deux périodes successives doivent être prises en compte :
 
-- la modification apportée côté OVHcloud doit être prise en compte par le registre qui gère votre extension de nom de domaine. Vous pouvez suivre la progression de cette opération dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}  en accédant à la section `Noms de domaine`{.action}, puis `Opérations en cours`{.action} ;
-- une fois que la modification a été prise en compte par l'organisation qui gère votre extension de nom de domaine, vous devez attendre un maximum de 48 heures pour que les modifications que vous avez apportées soient entièrement propagées.
+- la modification apportée côté OVHcloud doit être prise en compte par le *registre* qui gère votre extension de nom de domaine (par exemple, le regitre des extensions en *.fr*). Vous pouvez suivre la progression de cette opération dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
+Pour cela, rendez-vous dans la partie `Web Cloud`{.action}, accédez la section `Noms de domaine`{.action} dans la colonne de gauche puis cliquez sur `Opérations en cours`{.action} ;
+- une fois que la modification a été prise en compte par l'organisation qui gère votre extension de nom de domaine, vous devez attendre un maximum de **48 heures** pour que les modifications que vous avez apportées soient entièrement propagées.
 
 ## Aller plus loin
 
