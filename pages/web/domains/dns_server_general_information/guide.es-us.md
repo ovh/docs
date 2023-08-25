@@ -78,7 +78,7 @@ Asegúrese de que los cambios no inhabilitarán el dominio. Si no está seguro, 
 
 ### Acceder a la gestión de los servidores DNS de OVHcloud
 
-Conéctese a su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external} y acceda a la sección «Web Cloud» de la página {.action}. En la columna izquierda, haga clic en `Dominios`{.action} y seleccione el dominio correspondiente. Por último, abra la pestaña Servidores DNS`{.action}.
+Conéctese a su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external} y acceda a la sección `Web Cloud`{.action} de la página. En la columna izquierda, haga clic en `Dominios`{.action} y seleccione el dominio correspondiente. Por último, abra la pestaña Servidores DNS`{.action}.
 
 Se mostrará una tabla con los servidores DNS actualmente definidos por OVHcloud para su dominio. Es posible mostrar varios servidores DNS, cada uno con su propia fila en la tabla.
 
