@@ -124,7 +124,7 @@ Pour cela, rendez-vous dans la partie `Web Cloud`{.action}, accédez à la secti
 
 ## Aller plus loin
 
-[Modification d'une zone DNS OVHcloud](/pages/web/domains/dns_zone_edit){.external}.
+[Modification d'une zone DNS OVHcloud](/pages/web/domains/dns_zone_edit).
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
 
