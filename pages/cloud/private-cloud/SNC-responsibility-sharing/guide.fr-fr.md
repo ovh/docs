@@ -161,7 +161,7 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 | Réaliser les changements nécessaires pour maintenir la conformité de l'IaaS à SecNumCloud| I | RA |
 | Prononcer la recette | RA | C |
 | Déployer les correctifs, mettre à jour et configurer l’ensemble des éléments constitutifs de l’Infrastructure as a Service | I | RA |
-| Déployer les correctifs, mettre à jour et configurer l’ensemble des éléments constitutifs du système d’information hébergé sur l’IaaS | I | RA |
+| Déployer les correctifs, mettre à jour et configurer l’ensemble des éléments constitutifs du système d’information hébergé sur l’IaaS | RA | C |
 | Réaliser les interventions préventives sur les éléments managés de l’IaaS  | A | R |
 | Mettre à jour l’hyperviseur  | I | RA |
 | Mettre à jour les VMs | RA | I |
