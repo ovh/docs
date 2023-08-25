@@ -1,7 +1,7 @@
 ---
 title: Concepts - Load Balancer
 excerpt: "Comprendre les concepts de configuration du Load Balancer Public Cloud"
-updated: 2023-08-22
+updated: 2023-08-24
 ---
 
 ## Objectif
@@ -10,7 +10,11 @@ Le Load Balancer du Public Cloud est basé sur le projet OpenStack Octavia et fo
 
 ## Load Balancer Configuration concepts
 
-![LB concepts](images/LB_concepts.svg)
+Les illustrations suivantes montrent 2 configurations : une minimale et une complète qui utilise toutes les fonctionnalités. Les chapitres suivants donne une définition de chacun des concepts présents dans ces illustrations.
+
+![simple LB concepts](images/LB_concepts_simple.svg)
+
+![full LB concepts](images/LB_concepts_full.svg)
 
 ### Listener
 
@@ -35,10 +39,16 @@ Une règle est une expression logique unique qui est évaluée sur une requête 
 
 ### Politique L7 (L7 Policy)
 
-Une politique L7 est l'association entre une ou plusieurs règles L7 et un listener. Son attribut principal est l'action qui est faite lorsque toutes les règles L7 associées retournent `vrai`. Par exemple, un utilisateur peut spécifier une politique L7 pour que toutes les requêtes dont l'URI commence par "/api" soit routées vers un pool spécifique. 
+Une politique L7 est l'association entre une ou plusieurs règles L7 et un listener. Son attribut principal est l'action qui est faite lorsque toutes les règles L7 associées retourne `vrai`. Par exemple, un utilisateur peut spécifier une politique L7 pour que toutes les requêtes dont l'URI commence par "/api" soit routées vers un pool spécifique. 
+
+Lorsqu'une requête arrive sur un listener, les politiques sont évaluées dans l'ordre défini par l'attribut `position`. Lorsqu'une politique retourne `vrai`, l'action est effectuée et l'évaluation s'arrête. Si toutes les politiques retournent `faux`, la requête est alors envoyée au pool par défaut du listener.
 
 ## Aller plus loin
 
 - Une documentation technique complète (en anglais) sur la [page du projet OpenStack](https://docs.openstack.org/octavia/latest/).
 
 - Configurez votre premier load balancer avec ce [guide](/pages/platform/network-services/getting-started-01-create-lb-service).
+
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr-ca/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
