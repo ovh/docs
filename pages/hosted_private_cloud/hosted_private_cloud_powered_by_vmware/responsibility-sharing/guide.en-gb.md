@@ -1,0 +1,207 @@
+---
+title: Responsibility sharing for the Hosted Private Cloud powered by VMware service
+excerpt: "Shared responsibility between OVHcloud and the customer for the use of the VMware on OVHcloud product"
+updated: 2023-03-07
+---
+
+
+## Objective
+
+The RACI below details shared responsibilities between OVHcloud and the customer. This model is designed to help the customer make the best use of the Hosted Private Cloud powered by VMware service provided by OVHcloud.
+
+| Roles |
+| --- |
+|R : Is in charge of carrying out the process|
+|A : is Accountable for the successful completion of the process|
+|C : Is Consulted during the process|
+|I : Is Informed of the results of the process|
+
+### 1. Before subscription
+
+#### 1.1. Specify service as needed
+
+| **Activity** | **Customer** | **OVHcloud** |
+| --- | --- | --- |
+| Choose the location of infrastructures (vCenter) | RA | I |
+| Size infrastructures as needed | RA | I |
+| Choose options as needed | RA | I |
+| Decide versions of the VMware software to use | I | RA |
+| Decide to use TKG (Tanzu Kubernetes Grid) provided | RA |  |
+| Choose the location of TKG infrastructures' deployment | RA |  |
+
+### 2. Service availability
+
+#### 2.1. Install service
+
+| **Activity** | **Customer** | **OVHcloud** |
+| --- | --- | --- |
+| Produce, route, deliver and maintain physical machines and hosting buildings | I | RA |
+| Install and configure the functional building blocks internal to the dedicated server that are necessary for maintaining operational conditions and security conditions (firmware, BIOS, BMC, IPMI, etc.). |  | RA |
+| Purchase and own the licenses and rights of use for the OS provided by OVHcloud | I | RA  |
+| Purchase and own the licenses and rights of use for softwares provided by OVHcloud | I | RA  |
+| Purchase and own the licenses and rights of use for the VMware solution (Private Cloud)| I | RA  |
+| Install the vCenter | I | RA |
+| Deploy the initial network configuration to devices | I | RA |
+| Supply an up to date OVA image template for TKG service | I | RA |
+| Provide a client's support following TKG service deployment (ticket, debug) | A | CR |
+| Adapt the service configuration after its initial delivery | RA |  |
+
+
+### 2.2. Reversibility
+
+| **Activity** | **Customer** | **OVHcloud** |
+| --- | --- | --- |
+| Import data in VMDK file format or any other format supported by the VMware hypervisor | RA | C |
+| Decide to use OVHTOOL to import virtual machines in .OVF file format | RA |  |
+
+#### 2.3. Customer's IS installation
+
+| **Activity** | **Customer** | **OVHcloud** |
+| --- | --- | --- |
+| Create / install / optimise new VMs | RA | I |
+| Install and configure softwares and middlewares in the service infrastructure | RA |  |
+| Purchase and own the licenses and rights of use for OS with Bring Your Own Licence mode | RA |  |
+| Configure virtual instances deployed on the IaaS | RA | I |
+| Deploy containers on VMs following TKG integration on the infrastructure | RA |  |
+| Install and configure softwares inside containers | RA |  |
+| Supply/import data to containers | RA |  |
+| Specify the project in order to avoid storing persistant data locally (use persistant and shared volumes to store data permanently : NFS volumes or vSAN storage)| A |  |
+| Configure network in order to have a functional IS | RA |  |
+
+### 3. Service Usage
+
+#### 3.1. Operations
+
+##### **3.1.1. Daily operations**
+
+| **Activity** | **Customer** | **OVHcloud** |
+| --- | --- | --- |
+| Manage network access to the vCenter | RA | I |
+| Manage access, according to needs, to the managed infrastructure service | I | RA |
+| Operate virtual instances deployed on the service | RA | I |
+| Decide to add/remove resources on the virtual datacenter | RA | I |
+| Add/remove resources on the virtual datacenter | I | RA |
+| Add/remove resources on VMs | RA |  |
+| Manage accessibility and proper functioning of the service TKG installed | RA |  |
+| Manage accessibility and proper functioning of the customer's IS installed on VMs | RA |  |
+| Manage risks of the customer's IS installed | RA |  |
+| Deploy a backup policy for the IS installed | RA | I |
+
+##### **3.1.2. Access management**
+
+| **Activity** | **Customer** | **OVHcloud** |
+| --- | --- | --- |
+| Manage access to the OVHcloud control plane | RA | I |
+| Manage physical and logical access of OVHcloud teams to service infrastructure (vCenter) | I | RA |
+| Manage access to virtual management interface | RA | I |
+| Manage access and security policy of users' IS | RA |  |
+
+##### **3.1.3. Monitoring**
+
+| **Activity** | **Customer** | **OVHcloud** |
+| --- | --- | --- |
+| Monitor the proper functioning of physical devices (utilities) supporting the service infrastructure | I | RA |
+| Monitor physical resource performances | RA | R |
+| Monitor VMs and TKG service performances | RA | I |
+| Process and clear alarms from managed devices on the managed infrastructure (vCenter) | I | RA |
+| Keep logs generated by the managed infrastructure (vCenter) | RA | RA |
+| Keep logs generated by the TKG service offer chosen | RA |  |
+| Keep logs of the information system hosted on the service infrastructure | RA |  |
+
+##### **3.1.4. Storage**
+
+| **Activity** | **Customer** | **OVHcloud** |
+| --- | --- | --- |
+| Create, modify, control, restore, delete backup jobs with the solution chosen by the client | RA |  |
+| Encrypt data backups following subscription to Veeam Managed Backup option | AI | RI |
+| Encrypt VMs following needs with vNKP solution | RA |  |
+| Manage content hosted on infrastructures | RA |  |
+| Manage data continuity and sustainability | RA |  |
+| Carry out maintenance on the storage and backup devices provided by OVHcloud | C | RA |
+
+##### **3.1.5. Connectivity**
+
+| **Activity** | **Customer** | **OVHcloud** |
+| --- | --- | --- |
+| Manage the functioning of automatic network management systems (architecture, implementation, software and hardware maintenance for deployed public and private networks on NSX Controller and NSX Edge) | I | RA |
+| Deploy a network architecture as needed | RA | I |
+| Manage IP addressing plan | RA | I |
+
+##### **3.1.6. Management**
+
+| **Activity** | **Customer** | **OVHcloud** |
+| --- | --- | --- |
+| Maintain an inventory of services and devices provided by OVHcloud | I | RA |
+| Maintain an inventory of all services and devices | RA |  |
+| Manage security of the managed infrastructure (API, Control Plane) |  | RA |
+| Manage security of VMs | RA | I |
+| Manage security of softwares and middlewares installed on VMs | RA | I |
+| Manage security of data stored by the Customer on the IaaS | RA | I |
+| Manage physical security of equipment and infrastructures hosted at OVHcloud | I | RA |
+| Maintain the VMware managed solution and its extensions | I | RA |
+| Maintain the TKG solution | RA |  |
+
+##### **3.1.7. Business continuity**
+
+| **Activity** | **Customer** | **OVHcloud** |
+| --- | --- | --- |
+| Manage automatic management systems for the infrastructure provided | I | RA |
+| Maintain a business continuity and disaster recovery plan for the hosted IS | RA | CI |
+
+#### 3.2. Event management
+
+##### **3.2.1. Incidents**
+
+| **Activity** | **Customer** | **OVHcloud** |
+| --- | --- | --- |
+| Replace the defective hardware elements in support of the IaaS | I | RA |
+| Qualify, Intervene on managed service elements (vCenter) | C | RA |
+| Handle incidents (tickets and telephone contacts) | AI | RA |
+| Intervene on incidents affecting the IS hosted and non managed services | RA |  |
+
+#### **3.2.2. Change**
+
+| **Activity** | **Customer** | **OVHcloud** |
+| --- | --- | --- |
+| Deploy patches, updates and configurations on softwares, middlewares and IS hosted on the IaaS | RA |  |
+| Optimise VMs | RA | I |
+| Validate hardware change request on the infrastrcture provided by OVHcloud | A | R |
+| Plan changes requested by the Client | RA | RI |
+| Operate acceptance tests | RA | C |
+| Deploy patches, updates and cofigurations on managed infrastructure elements | RI | RA |
+| Operate preventive interventions on managed infrastructure elements  | A | R |
+| Update the hypervisor | I | RA |
+| Allow OVHcloud to carry out a maintenance for a host at any time to allow an update (subject to ressource provision by the Client) | RA | I |
+| Update VMs | RA |  |
+
+### 4. Reversibility
+
+#### 4.1. Reversibility model
+
+| **Activity** | **Customer** | **OVHcloud** |
+| --- | --- | --- |
+| Schedule reversibility operations | RA | I  |
+| Choose fallback infrastructures | RA |  |
+
+#### 4.2. Data recovery
+
+| **Activity** | **Customer** | **OVHcloud** |
+| --- | --- | --- |
+| Manage reversibility operations : Manual extraction, API, OVHFTOOL or any other software supported by VMware | RA | I  |
+| Migrate/transfer data | RA |  |
+
+### 5. End of service
+
+#### 5.1. Destroying configurations
+
+| **Activity** | **Customer** | **OVHcloud** |
+| --- | --- | --- |
+| Uncommission client-related configurations and associated options following contract termination | I | RA |
+
+#### 5.2. Data destruction
+
+| **Activity** | **Customer** | **OVHcloud** |
+| --- | --- | --- |
+| Securely destroy data on storage media |  | RA |
+| Destroy storage media that has reached their end of life or when the secure destruction processes are generating errors |  | RA |
+| Provide a certificate of destruction (upon request) | I | RA |
