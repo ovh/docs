@@ -22,9 +22,9 @@ For example, you can specify:
 - The email servers (DNS records of type *MX*) to which your domain name must redirect the emails it receives. This allows you to view them on your custom email address(es) with your domain name.
 - Information related to the security/authentication of your services (web hosting, web server, email server, etc.) associated with your domain name (DNS records of type *SPF*, *DKIM*, *DMARC*, etc.).
 
-For more information on DNS zones, please read our guide on [Editing an OVHcloud DNS zone](/pages/web/domains/dns_zone_edit) .
+For more information on DNS zones, please read our guide on [Editing an OVHcloud DNS zone](/pages/web/domains/dns_zone_edit).
 
-As a result, the **DNS servers** must be registered with the domain name in order to use the DNS zone they host. 
+As a result, the **DNS servers** must be registered with the domain name in order to use the DNS zone they host.
 
 ![DNS](images/dnsserver.png){.thumbnail}
 
@@ -65,7 +65,7 @@ However, it is important to note that:
 
 - When changing DNS servers (e.g. External DNS via OVHcloud DNS), the content of the old configuration/DNS zone is not automatically replicated in the new one. Ensure that your new DNS zone contains all of the DNS records required for the services associated with your domain name to work correctly (for example, your website and email addresses).
 
-- If you would like to modify one or more of the records in your current configuration/DNS zone instead of the DNS servers, please read our guide on [Editing an OVHcloud DNS zone](/pages/web/domains/dns_zone_edit) .
+- If you would like to modify one or more of the records in your current configuration/DNS zone instead of the DNS servers, please read our guide on [Editing an OVHcloud DNS zone](/pages/web/domains/dns_zone_edit).
 
 - Some organizations, registries, that manage domain name extensions, have specific requirements regarding DNS servers (quantity of name servers, value of records, etc.). If in doubt, check with the registry responsible for the domain.
 
@@ -73,13 +73,13 @@ Please ensure that the changes you have made will not render your domain name in
 
 ### Accessing OVHcloud DNS server management
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external} , then go to the `Web Cloud`{.action} section. In the left-hand column, click `Domain names`{.action} , then choose the domain name concerned. Then select the `DNS servers`{.action} tab.
+Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, then go to the `Web Cloud`{.action} section. In the left-hand column, click `Domain names`{.action} , then choose the domain name concerned. Then select the `DNS servers`{.action} tab.
 
 The table that opens will contain the DNS servers currently set by OVHcloud for your domain name. Several DNS servers can be listed, each with its own row in the table.
 
 > [!primary]
 >
-> When you use the OVHcloud DNS servers, the numbers in the server names have no link to the service(s) you are using. Only the [Anycast DNS](https://www.ovhcloud.com/en-gb/domains/options/) option  uses specific DNS servers that are automatically assigned to you. 
+> When you use the OVHcloud DNS servers, the numbers in the server names have no link to the service(s) you are using. Only the [Anycast DNS](https://www.ovhcloud.com/en-gb/domains/options/) option  uses specific DNS servers that are automatically assigned to you.
 
 ![dnsserver](images/edit-dns-server-ovh-step1.png){.thumbnail}
 
@@ -128,4 +128,4 @@ For specialised services (SEO, development, etc.), contact [OVHcloud partners](h
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-gb/support-levels/).
 
-Join our community of users on <https://community.ovh.com/en/>. 
+Join our community of users on <https://community.ovh.com/en/>.
