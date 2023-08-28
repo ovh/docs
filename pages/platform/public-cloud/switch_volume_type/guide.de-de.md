@@ -21,7 +21,7 @@ Ziel dieser Anleitung ist es, Ihnen zu zeigen, wie Sie einen Block Storage-Volum
 
 Wenn Sie einen Block Storage-Volume-Typ in ein "High Speed gen2"-Volume ändern, muss die Migrationsrichtlinie von `Never` in `On Demand` geändert werden.
 
-Standardmäßig ist die Migrationsrichtlinie auf `Never` eingestellt, da das Volume auf demselben CEPH Cluster verbleibt. Für das „High Speed gen2“ muss das Volume jedoch auf einen neuen Cluster migriert werden.
+Standardmäßig ist die Migrationsrichtlinie auf `Never` eingestellt, da das Volume auf demselben CEPH Cluster verbleibt. Für das "High Speed gen2" muss das Volume jedoch auf einen neuen Cluster migriert werden.
 
 Diese Änderung kann über Horizon oder die OpenStack-Befehlszeilenschnittstelle vorgenommen werden.
 
@@ -37,9 +37,9 @@ Klicken Sie auf den Dropdownpfeil neben `Volume`{.action} bearbeiten, und wähle
 
 ![Wahl der Option](images/selectoption.png){.thumbnail}
 
-Klicken Sie im angezeigten Fenster auf das Dropdown-Menü unter `Type` und wählen Sie `high-speed-gen-2`{.action}. Klicken Sie dann auf den Dropdownpfeil unter `Migrationsrichtlinie`, und wählen Sie `On Demand`{.action} aus.
+Klicken Sie im angezeigten Fenster auf das Dropdown-Menü unter `Type` und wählen Sie `high-speed-gen-2`{.action}. Klicken Sie dann auf den Dropdownpfeil unter `Migration Policy` und wählen Sie `On Demand`{.action}.
 
-Wenn Sie diese Aktionen abgeschlossen haben, klicken Sie auf `Change Volume Type`{.action}, um die Änderung zu bestätigen.
+Wenn Sie diese Aktionen ausgeführt haben, klicken Sie auf `Change Volume Type`{.action}, um die Änderung zu bestätigen..
 
 ![Wahl der Option](images/changevolume.png){.thumbnail}
 
@@ -64,7 +64,7 @@ Zunächst können Sie die in Ihrer Region verfügbaren Volume-Typen mit folgende
 ```
 
 > [!warning]
-> Bitte beachten Sie: Wenn der Volume-Typ "high-speed-gen2" nicht in der Liste erscheint, bedeutet dies, dass er in dieser Region nicht verfügbar ist.
+> Bitte beachten Sie: Wenn der Volume-Typ "high-speed-gen2" nicht in der Liste angezeigt wird, ist er in dieser Region nicht verfügbar.
 >
 
 Ändern Sie anschließend den Volume-Typ mit folgendem Befehl:
