@@ -87,7 +87,7 @@ Le client bénéficiant d'une infrastructure Hosted Private Cloud a la possibili
 
 | **Nom** | **Capacités** | **Liens** |
 | --- | --- | --- |
-| Control Plane et service | Manipulation des comptes client et des services sur lesquels le compte a des droits de gestion du service | [API calls for Private Cloud](https://api.ovh.com/console/#/dedicatedCloud)] |
+| Control Plane et service | Manipulation des comptes client et des services sur lesquels le compte a des droits de gestion du service | [API calls for Private Cloud](https://api.ovh.com/console/#/dedicatedCloud) |
 
 ## 7 - Comptes utilisateurs
 
