@@ -1,15 +1,12 @@
 ---
 title: 'Erste Schritte mit einem Dedicated Server'
 excerpt: 'Erfahren Sie hier, wie Sie Ihren neuen Dedicated Server verwalten'
-updated: 2023-03-28
+updated: 2023-08-24
 ---
 
 > [!primary]
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
 >
-
-
-**Letzte Aktualisierung am 28.02.2023**
 
 ## Ziel
 
@@ -152,7 +149,7 @@ Klicken Sie auf den Button `Konfigurieren`{.action}. Im neu angezeigten Fenster 
 
 - **Deaktiviert**: Mit dieser Option werden Warnmeldungen und Eingriffe von OVHcloud gestoppt. Wählen Sie dies aus, wenn Sie auf dem Server relevante Administrationsmaßnahmen durchführen, die eine ICMP-Antwort verhindern.
 - **Aktiviert mit proaktivem Eingriff**: Wenn der Server nicht mehr reagiert wird Ihnen eine Benachrichtigung per E-Mail gesendet und der Server von einem Techniker überprüft.
-- **Aktiviert ohne proaktiven Eingriff**: Sie erhalten eine Benachrichtigung per E-Mail, wenn der Server nicht mehr reagiert. Um eine Intervention zu veranlassen, muss eine Support-Anfrage erstellt werden.
+- **Aktiviert ohne proaktiven Eingriff**: Sie erhalten eine Benachrichtigung per E-Mail, wenn der Server nicht mehr reagiert. Um eine Intervention zu veranlassen, aktivieren Sie die Überwachung Ihres Servers mit der proaktiven Eingriff.
 
 ![Monitoring](images/monitoring-your-server2.png){.thumbnail}
 

@@ -1,14 +1,12 @@
 ---
 title: 'Pierwsze kroki z serwerem dedykowanym'
 excerpt: 'Poznaj podstawy korzystania z serwera dedykowanego'
-updated: 2023-03-28
+updated: 2023-08-24
 ---
 
 > [!primary]
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
 > 
-
-**Ostatnia aktualizacja z dnia 28-02-2022**
 
 ## Wprowadzenie
 
@@ -151,7 +149,7 @@ Kliknij przycisk `Skonfiguruj`{.action}. W oknie, które się pojawi, masz trzy 
 
 - **Wyłączone**: Ta opcja wyłącza komunikaty ostrzegawcze i interwencje OVHcloud. Wybierz tę opcję, jeśli wykonasz odpowiednie operacje administracyjne na serwerze, które uniemożliwiają odpowiedź ICMP.
 - **Aktywny z aktywną interwencją**: Jeśli serwer przestanie odpowiadać, otrzymasz wiadomość e-mail z alertem. Serwer zostanie zweryfikowany przez technika.
-- **Aktywny bez aktywnej interwencji**: Otrzymasz e-mail z komunikatem ostrzegawczym, jeśli serwer przestanie odpowiadać. Aby rozpocząć interwencję, należy utworzyć wniosek o pomoc.
+- **Aktywny bez aktywnej interwencji**: Otrzymasz e-mail z komunikatem ostrzegawczym, jeśli serwer przestanie odpowiadać. Aby rozpocząć interwencję, należy aktywować opcję aktywną interwencją.
 
 ![Monitoring](images/monitoring-your-server2.png){.thumbnail}
 
