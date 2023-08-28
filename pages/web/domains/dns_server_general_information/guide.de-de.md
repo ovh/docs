@@ -19,7 +19,7 @@ Die Abkürzung DNS für **D**omain **N**ame **S**ystem ist ein Satz von Elemente
 
 Die **DNS-Server** enthalten DNS-Konfigurationsdateien für Domainnamen, die als **DNS-Zonen** bezeichnet werden.
 
-Eine DNS-Zone enthält technische Informationen, die als *DNS-Einträge* bezeichnet werden. Die DNS-Zone ist wie ein Datacenter.
+Eine DNS-Zone enthält technische Informationen, die als *DNS-Einträge* bezeichnet werden.
 
 Sie können beispielsweise Folgendes angeben:
 
@@ -91,7 +91,7 @@ Die angezeigte Tabelle enthält die derzeit von OVHcloud für Ihre Domain defini
 
 ### DNS Server ändern
 
-Wenn Sie externe DNS-Server verwenden möchten, müssen Sie diese gegen die OVHcloud DNS-Server austauschen und nicht zu diesen addieren.
+Wenn Sie externe DNS-Server verwenden möchten, müssen Sie die OVHcloud-DNS-Server durch diese externen DNS-Server ersetzen und nicht beide addieren.
 
 Klicken Sie rechts auf `DNS-Server ändern`{.action}.
 
@@ -123,8 +123,7 @@ Mit dem Button `DNS-Server zurücksetzen`{.action} können Sie die aktuellen DNS
 
 Nachdem Sie die erforderlichen Änderungen vorgenommen haben, müssen Sie warten, bis diese voll wirksam sind. Dabei sind zwei aufeinanderfolgende Zeiträume zu berücksichtigen:
 
-- Die auf der Seite von OVHcloud vorgenommene Änderung muss von der *.register*, die Ihre Domainendung verwaltet, übernommen werden (zum Beispiel die *.de* Registrierung). Sie können den Fortschritt dieser Operation in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} verfolgen.
-Gehen Sie hierzu in den Bereich `Web Cloud`{.action}, gehen Sie in der linken Spalte in den Bereich `Domainnamen`{.action} und klicken Sie dann auf `Laufende Vorgänge`{.action};
+- Die auf der Seite von OVHcloud vorgenommene Änderung muss von der *.register*, die Ihre Domainendung verwaltet, übernommen werden (zum Beispiel die *.de* Registrierung). Sie können den Fortschritt dieser Operation in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} verfolgen. Gehen Sie hierzu in den Bereich `Web Cloud`{.action}, gehen Sie in der linken Spalte in den Bereich `Domainnamen`{.action} und klicken Sie dann auf `Laufende Vorgänge`{.action}.
 - Sobald die Änderung von der Organisation, die Ihre Domainendung verwaltet, übernommen wurde, müssen Sie maximal **48 Stunden** warten, bis die von Ihnen vorgenommenen Änderungen vollständig übernommen wurden.
 
 ## Weiterführende Informationen

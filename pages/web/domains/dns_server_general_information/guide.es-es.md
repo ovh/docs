@@ -18,7 +18,7 @@ La sigla DNS, que significa **D**omain **N**ame **S**ystem, es un conjunto de el
 
 Los **servidores DNS** contienen archivos de configuración DNS para los nombres de dominio, denominados **zonas DNS**.
 
-Una zona DNS contiene información técnica, denominada *registros DNS*. La zona DNS es como un centro de reenvío.
+Una zona DNS contiene información técnica, denominada *registros DNS*.
 
 Por ejemplo, puede especificar lo siguiente:
 
@@ -90,7 +90,7 @@ Se mostrará una tabla con los servidores DNS actualmente definidos por OVHcloud
 
 ### Cambiar los servidores DNS
 
-Si quiere utilizar servidores DNS externos, debe sustituirlos por los servidores DNS de OVHcloud y no sumarlos a ellos.
+Si deseas utilizar servidores DNS externos, debes sustituir los servidores DNS de OVHcloud por estos servidores DNS externos, y no sumar ambos.
 
 Haga clic en `Cambiar los servidores DNS`{.action} a la derecha.
 
@@ -122,8 +122,7 @@ El botón `Restaurar los servidores DNS`{.action} permite restaurar los servidor
 
 Una vez realizados los cambios necesarios, debe esperar a que los cambios surtan efecto. Hay que tener en cuenta dos períodos sucesivos:
 
-- el *registre* que gestiona la extensión del dominio (por ejemplo, el registro de extensiones en *.es*) debe aplicar los cambios realizados por OVHcloud. Puede consultar el progreso en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
-Para ello, acceda a la sección `Web Cloud`{.action}, acceda a la sección `dominios`{.action} en la columna de la izquierda y haga clic en `Operaciones en curso`{.action};
+- el *registre* que gestiona la extensión del dominio (por ejemplo, el registro de extensiones en *.es*) debe aplicar los cambios realizados por OVHcloud. Puede consultar el progreso en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}. Para ello, acceda a la sección `Web Cloud`{.action}, acceda a la sección `dominios`{.action} en la columna de la izquierda y haga clic en `Operaciones en curso`{.action}.
 - Una vez que la organización que gestiona la extensión del dominio haya aplicado el cambio, deberá esperar un máximo de **48 horas** para que los cambios que haya realizado se propaguen por completo.
 
 ## Más información

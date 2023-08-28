@@ -18,7 +18,7 @@ La sigla DNS, che significa **D**omain **N**ame **S**ystem, è un insieme di ele
 
 I **server DNS** contengono file di configurazione DNS per nomi di dominio, chiamati **zone DNS**.
 
-Una zona DNS contiene informazioni tecniche chiamate *record DNS*. La zona DNS è come un centro di scambi.
+Una zona DNS contiene informazioni tecniche chiamate *record DNS*.
 
 Ad esempio, è possibile specificare:
 
@@ -90,7 +90,7 @@ Visualizzi una tabella con tutti i server DNS configurati da OVHcloud per il tuo
 
 ### Modifica i server DNS
 
-Per utilizzare server DNS esterni è necessario sostituirli e non aggiungerli ai server DNS di OVHcloud.
+Se si desidera utilizzare server DNS esterni, è necessario sostituire i server DNS di OVHcloud con questi server DNS esterni, e non sommarli.
 
 Clicca su `Modifica i server DNS`{.action} a destra.
 
@@ -122,8 +122,7 @@ Il pulsante `Reinizializza i server DNS`{.action} permette di reinizializzare i 
 
 Una volta completata l’operazione attendi il tempo necessario alla sua elaborazione. Devono essere presi in considerazione due periodi successivi:
 
-- la modifica apportata in OVHcloud deve essere presa in carico dal *registro* che gestisce l’estensione del dominio (ad esempio, il registro delle estensioni in *.it*). Lo stato di avanzamento dell’operazione è disponibile nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}.
-Accedi alla sezione `Web Cloud`{.action}, clicca su `Domini`{.action} nella colonna di sinistra e poi su `Operazioni in corso`{.action};
+- la modifica apportata in OVHcloud deve essere presa in carico dal *registro* che gestisce l’estensione del dominio (ad esempio, il registro delle estensioni in *.it*). Lo stato di avanzamento dell’operazione è disponibile nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Accedi alla sezione `Web Cloud`{.action}, clicca su `Domini`{.action} nella colonna di sinistra e poi su `Operazioni in corso`{.action}.
 - una volta che la modifica è stata presa in carico dall'organizzazione che gestisce l’estensione del dominio, è necessario attendere fino a **48 ore** perché le modifiche apportate siano completamente propagate.
 
 ## Per saperne di più

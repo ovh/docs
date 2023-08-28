@@ -14,7 +14,7 @@ Le sigle DNS, signifiant **D**omain **N**ame **S**ystem, est un ensemble d'élé
 
 Les **serveurs DNS** contiennent des fichiers de configurations DNS pour des noms de domaine, appelés **zones DNS**.
 
-Une zone DNS contient des informations techniques, appelées *enregistrements DNS*. La zone DNS est comme un centre d'aiguillage.
+Une zone DNS contient des informations techniques, appelées *enregistrements DNS*. La zone DNS est comme un poste d'aiguillage.
 
 Par exemple, vous pouvez y préciser :
 
@@ -86,7 +86,7 @@ Le tableau qui s'affiche contient les serveurs DNS actuellement définis par OVH
 
 ### Modifier les serveurs DNS
 
-Si vous souhaitez utiliser des serveurs DNS externes, vous devez les substituer aux serveurs DNS OVHcloud et non les additionner à ces derniers.
+Si vous souhaitez utiliser des serveurs DNS externes, vous devez remplacer les serveurs DNS OVHcloud par ces serveurs DNS externes, et non pas additionner les deux.
 
 Cliquez sur `Modifier les serveurs DNS`{.action} à droite.
 
@@ -118,8 +118,7 @@ Le bouton `Réinitialiser les serveurs DNS`{.action} permet de réinitialiser le
 
 Une fois les modifications requises effectuées, vous devez attendre qu'elles soient pleinement effectives. Deux périodes successives doivent être prises en compte :
 
-- la modification apportée côté OVHcloud doit être prise en compte par le *registre* qui gère votre extension de nom de domaine (par exemple, le regitre des extensions en *.fr*). Vous pouvez suivre la progression de cette opération dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
-Pour cela, rendez-vous dans la partie `Web Cloud`{.action}, accédez à la section `Noms de domaine`{.action} dans la colonne de gauche puis cliquez sur `Opérations en cours`{.action} ;
+- la modification apportée côté OVHcloud doit être prise en compte par le *registre* qui gère votre extension de nom de domaine (par exemple, le regitre des extensions en *.fr*). Vous pouvez suivre la progression de cette opération dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Pour cela, rendez-vous dans la partie `Web Cloud`{.action}, accédez à la section `Noms de domaine`{.action} dans la colonne de gauche puis cliquez sur `Opérations en cours`{.action}.
 - une fois que la modification a été prise en compte par l'organisation qui gère votre extension de nom de domaine, vous devez attendre un maximum de **48 heures** pour que les modifications que vous avez apportées soient entièrement propagées.
 
 ## Aller plus loin

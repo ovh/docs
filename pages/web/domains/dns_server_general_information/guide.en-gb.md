@@ -14,7 +14,7 @@ The abbreviation DNS, meaning **D**omain **N**ame **S**ystem, is a set of elemen
 
 **DNS servers** contain DNS configuration files for domain names, called **DNS zones**.
 
-A DNS zone contains technical information, called *DNS records*. The DNS zone is like a referral center.
+A DNS zone contains technical information, called *DNS records*.
 
 For example, you can specify:
 
@@ -41,9 +41,9 @@ Sometimes, some DNS providers offer more than 2 **DNS servers** to declare with 
 
 ## Requirements
 
-- a [domain name](https://www.ovhcloud.com/en-gb/domains/) registered with OVHcloud.
-- You must have the appropriate permissions [to manage](/pages/account/customer/managing_contacts) the domain name from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}.
-- You must be logged in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}.
+- A [domain name](https://www.ovhcloud.com/en-gb/domains/) registered with OVHcloud.
+- The appropriate permissions [to manage](/pages/account/customer/managing_contacts) the domain name from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}.
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}.
 
 > [!primary]
 >
@@ -56,7 +56,7 @@ Sometimes, some DNS providers offer more than 2 **DNS servers** to declare with 
 
 > [!warning]
 >
-> **Be careful when you modify a domain name’s DNS servers.** A configuration error may make your website inaccessible, or prevent your email addresses from receiving new emails. By learning more about the consequences of modifying your DNS zone, you can get a better understanding of the changes you will make.
+> **Be careful when you modify a domain name’s DNS servers.** A misconfiguration may make your website inaccessible, or prevent your email addresses from receiving new emails. By learning more about the consequences of modifying your DNS zone, you can get a better understanding of the changes you will make.
 >
 
 When you modify your domain name’s DNS servers, you are changing its DNS configuration. The new DNS configuration replaces the old one and is stored on the newly-defined DNS servers. Technically, the domain name then uses a new DNS zone.
@@ -71,8 +71,7 @@ However, it is important to note that:
 
 Please ensure that the changes you have made will not render your domain name inaccessible. If you are unsure about this, contact the person who is asking you to make these changes.
 
-
-### Access OVHcloud DNS server management
+### Accessing OVHcloud DNS server management
 
 Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external} , then go to the `Web Cloud`{.action} section. In the left-hand column, click `Domain names`{.action} , then choose the domain name concerned. Then select the `DNS servers`{.action} tab.
 
@@ -84,13 +83,13 @@ The table that opens will contain the DNS servers currently set by OVHcloud for 
 
 ![dnsserver](images/edit-dns-server-ovh-step1.png){.thumbnail}
 
-### Modify DNS servers
+### Modifying DNS servers
 
-If you would like to use external DNS servers, you will need to replace them with OVHcloud DNS servers, and not add them up.
+If you wish to use external DNS servers, you must replace the OVHcloud DNS servers with these external DNS servers, and not add the two together.
 
 Click `Modify DNS servers`{.action} on the right.
 
-In the data forms, **replace** the current DNS server values with the information about the new DNS servers you want to set. To add other servers to the active list, click the `+`{.action} button to the right of the last table row. An additional row will appear in the table, which you can complete.
+In the text fields, **replace** the current DNS server values with the information about the new DNS servers you want to set. To add other servers to the active list, click the `+`{.action} button to the right of the last table row. An additional row will appear in the table, which you can fill in.
 
 > [!warning]
 >
@@ -110,7 +109,7 @@ Once you have entered this information, click `Apply configuration`{.action}. Th
 > Modifying the DNS servers associated with a domain name will take between **24** and **48** hours to propagate fully.
 >
 
-#### Special case: Reset the DNS servers 
+#### Special case: Resetting the DNS servers 
 
 The `Reset the DNS servers`{.action} button allows you to reset your current DNS servers by automatically replacing them with the original OVHcloud DNS servers. Use this option **only** if you would like to reuse the OVHcloud DNS servers (and the OVHcloud DNS zone associated with its DNS servers). 
 
@@ -118,13 +117,12 @@ The `Reset the DNS servers`{.action} button allows you to reset your current DNS
 
 Once you have made the required changes, you must wait for them to become fully effective. Two successive periods must be taken into account:
 
-- the modification made on the OVHcloud side must be taken into account by the *registry* that manages your domain name extension (for example, the registry of extensions in *.uk*). You can track the progress of this operation in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}.
-To do this, go to the `Web Cloud`{.action} section, go to the `Domain names`{.action} section in the left-hand column, then click `Ongoing operations`{.action};
+- the modification made on the OVHcloud side must be taken into account by the *registry* that manages your domain name extension (for example, the registry of extensions in *.uk*). You can track the progress of this operation in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}. To do this, go to the `Web Cloud`{.action} section, go to the `Domain names`{.action} section in the left-hand column, then click `Ongoing operations`{.action}.
 - Once the change has been processed by the organization that manages your domain name extension, you must wait a maximum of **48 hours** for the changes you have made to be fully propagated.
 
 ## Go further
 
-[Modify an OVHcloud DNS zone](/pages/web/domains/dns_zone_edit).
+[Editing an OVHcloud DNS zone](/pages/web/domains/dns_zone_edit).
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/).
 

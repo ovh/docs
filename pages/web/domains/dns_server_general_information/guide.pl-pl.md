@@ -18,7 +18,7 @@ Skrót DNS oznaczający **D**omain **N**ame **S**ystem, to zbiór elementów (se
 
 **Serwery DNS** zawierają pliki konfiguracyjne DNS dla domen, nazywane **strefami DNS**.
 
-Strefa DNS zawiera informacje techniczne nazywane *rekordami DNS*. Strefa DNS jest jak centrum wskazówek.
+Strefa DNS zawiera informacje techniczne nazywane *rekordami DNS*.
 
 Możesz na przykład sprecyzować:
 
@@ -90,7 +90,7 @@ Tabela, która się wyświetla zawiera listę serwerów DNS zdefiniowanych aktua
 
 ### Zmień serwery DNS
 
-Jeśli chcesz korzystać z zewnętrznych serwerów DNS, zastąp je serwerami DNS OVHcloud, a nie dodaj je do nich.
+Jeśli chcesz korzystać z zewnętrznych serwerów DNS, musisz zastąpić serwery DNS OVHcloud tymi zewnętrznymi serwerami DNS, a nie dodawać oba razem.
 
 Kliknij przycisk `Zmień serwery DNS`{.action} po prawej stronie.
 
@@ -122,8 +122,7 @@ Przycisk `Resetuj serwery DNS`{.action} pozwala zresetować aktualne serwery DNS
 
 Po zakończeniu operacji należy odczekać określony czas, zanim zmiany staną się widoczne. Na czas oczekiwania składają się dwa czynniki:
 
-- zmiana wprowadzona w OVHcloud musi zostać uwzględniona przez *registry* zarządzający rozszerzeniem Twojej domeny (na przykład rejestr rozszerzeń *.pl*). Możesz śledzić postęp operacji w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
-W tym celu przejdź do sekcji `Web Cloud`{.action}, przejdź do sekcji `Domeny`{.action} w kolumnie po lewej stronie, następnie kliknij `Operacje w toku`{.action};
+- zmiana wprowadzona w OVHcloud musi zostać uwzględniona przez *registry* zarządzający rozszerzeniem Twojej domeny (na przykład rejestr rozszerzeń *.pl*). Możesz śledzić postęp operacji w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. W tym celu przejdź do sekcji `Web Cloud`{.action}, przejdź do sekcji `Domeny`{.action} w kolumnie po lewej stronie, następnie kliknij `Operacje w toku`{.action}.
 - po uwzględnieniu zmiany przez organizację zarządzającą rozszerzeniem domeny konieczny jest maksymalny czas propagacji wynoszący **48 godzin**, aby modyfikacje stały się w pełni widoczne.
 
 ## Sprawdź również
