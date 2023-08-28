@@ -1,10 +1,8 @@
 ---
 title: 'IP-Block im vRack konfigurieren'
 excerpt: 'So konfigurieren Sie einen öffentlichen IP-Adressblock im vRack'
-updated: 2022-07-26
+updated: 2023-08-28
 ---
-
-**Letzte Aktualisierung am 26.07.2022**
 
 ## Einleitung
 
@@ -49,6 +47,11 @@ Wählen Sie in der Liste Ihr vRack aus, um die Liste der verfügbaren Dienstleis
 ![vrack](images/addIPblock.png){.thumbnail}
 
 ### Eine verwendbare IP-Adresse konfigurieren
+
+> [!warning]
+>
+> Im vorliegenden Beispiel befindet sich die Netzwerkkonfigurationsdatei in `/etc/network/interfaces`. Je nach verwendetem Betriebssystem kann sich die entsprechende Datei auch an einem anderen Speicherort befinden. Der Inhalt der Datei kann sich ebenfalls unterscheiden. Im Zweifelsfall lesen Sie die offizielle Dokumentation Ihrer Distribution.
+>
 
 Beim vRack sind die erste, die vorletzte und die letzte Adresse eines gegebenen IP-Blocks immer jeweils für die Netzwerkadresse, das Netzwerk-Gateway sowie für den Netzwerk-*Broadcast* reserviert. Das heißt, die erste verwendbare Adresse ist die zweite Adresse des Blocks, wie im Folgenden zu sehen ist:
 
@@ -119,11 +122,6 @@ local
 ```
 
 ### Netzwerkkonfigurationsdatei bearbeiten
-
-> [!primary]
->
-> Im vorliegenden Beispiel befindet sich die Netzwerkkonfigurationsdatei in `/etc/network/interfaces`. Je nach verwendetem Betriebssystem kann sich die entsprechende Datei auch an einem anderen Speicherort befinden. Im Zweifelsfall lesen Sie die offizielle Dokumentation Ihrer Distribution.
->
 
 Um den Vorgang abzuschließen, muss nun noch die Netzwerkkonfigurationsdatei bearbeitet werden, damit die neue Traffic-Regel umgesetzt und der vRack Traffic über die Netzwerk-Gateway-Adresse **46.105.135.110** geleitet wird.
 

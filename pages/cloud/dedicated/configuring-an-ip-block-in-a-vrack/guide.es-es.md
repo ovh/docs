@@ -1,14 +1,12 @@
 ---
 title: 'Configurar un bloque de IP en el vRack'
 excerpt: 'Cómo configurar un bloque de direcciones IP públicas en el vRack'
-updated: 2022-07-26
+updated: 2023-08-28
 ---
 
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
-
-**Última actualización: 26/07/2022**
 
 ## Objetivo
 
@@ -53,6 +51,11 @@ Seleccione el vRack en la lista para ver la lista de servicios compatibles. Haga
 ![vrack](images/addIPblock.png){.thumbnail}
 
 ### Configurar una dirección IP útil
+
+> [!warning]
+>
+> En este ejemplo, el archivo de configuración de red se encuentra en **/etc/network/interfaces**. En función del sistema operativo, este archivo puede encontrarse en otra ubicación. El contenido del archivo también puede ser diferente. En caso de duda, consulte la documentación oficial de su distribución.
+>
 
 En el caso del vRack, la primera, la penúltima y la última dirección de un bloque de IP siempre están reservadas para la dirección de red, la puerta de enlace y el *broadcast* respectivamente. Eso significa que la primera dirección útil es la segunda dirección del bloque, tal y como se muestra a continuación:
 
@@ -123,11 +126,6 @@ local
 ```
 
 ### Editar el archivo de configuración de red
-
-> [!primary]
->
-> En este ejemplo, el archivo de configuración de red se encuentra en **/etc/network/interfaces**. En función del sistema operativo, este archivo puede encontrarse en otra ubicación. En caso de duda, consulte la documentación oficial de su distribución.
->
 
 Por último, edite el archivo de configuración de red para que reconozca la nueva regla de tráfico y enrute el tráfico vRack hacia la dirección de la puerta de enlace **46.105.135.110**.
 

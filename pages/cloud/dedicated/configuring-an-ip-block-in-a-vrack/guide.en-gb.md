@@ -1,10 +1,8 @@
 ---
 title: 'Configuring an IP block in a vRack'
 excerpt: 'This guide will show you how to configure a block of public IP addresses for use with the vRack.'
-updated: 2022-07-26
+updated: 2023-08-28
 ---
-
-**Last updated 26th July 2022**
 
 ## Objective
 
@@ -48,6 +46,11 @@ Select your vRack from the list to display the list of eligible services. Click 
 ![vrack](images/addIPblock.png){.thumbnail}
 
 ### Configure a usable IP address
+
+> [!warning]
+>
+For example purposes, the network configuration file we refer to is located in /etc/network/interfaces. The equivalent file on your server may be located somewhere else, depending on your operating system. The file content may also be different. If you encounter any difficulties, please refer to the official documentation for your distribution.
+>
 
 For [vRack](https://www.ovh.co.uk/solutions/vrack/){.external} purposes, the first, penultimate, and last addresses in any given IP block are always reserved for the network address, network gateway, and network broadcast respectively. This means that the first useable address is the second address in the block, as shown below:
 

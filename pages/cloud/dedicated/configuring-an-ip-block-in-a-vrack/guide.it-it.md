@@ -1,14 +1,12 @@
 ---
 title: 'Configurare un blocco di indirizzi IP nella vRack'
 excerpt: 'Scopri come configurare un blocco di indirizzi IP nella vRack'
-updated: 2022-07-26
+updated: 2023-08-28
 ---
 
 > [!primary]
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
 >
-
-**Ultimo aggiornamento: 26/07/2022**
 
 ## Obiettivo
 
@@ -53,6 +51,11 @@ Seleziona la tua vRack nella lista per visualizzare la lista dei servizi ammissi
 ![vrack](images/addIPblock.png){.thumbnail}
 
 ### Configura un indirizzo IP utilizzabile
+
+> [!warning]
+>
+> In questo esempio, il file di configurazione di rete si trova in `/etc/network/interfaces`{.action}. A seconda del sistema operativo utilizzato, questo file può essere situato altrove. Anche il contenuto del file potrebbe essere diverso. In caso di dubbi, consulta la documentazione ufficiale della tua distribuzione.
+>
 
 Nel caso della vRack, il primo, il penultimo e l’ultimo indirizzo di un determinato blocco IP sono sempre riservati rispettivamente all’indirizzo di rete, al gateway di rete e al *broadcast* di rete. Questo significa che il primo indirizzo utilizzabile è il secondo indirizzo del blocco, come indicato di seguito:
 
@@ -123,11 +126,6 @@ local
 ```
 
 ### Modifica il file di configurazione di rete
-
-> [!primary]
->
-> In questo esempio, il file di configurazione di rete si trova in `/etc/network/interfaces`{.action}. A seconda del sistema operativo utilizzato, questo file può essere situato altrove. In caso di dubbi, consulta la documentazione ufficiale della tua distribuzione.
->
 
 Infine, non ti resta che modificare il file di configurazione di rete per tenere conto della nuova regola di traffico e instradare il traffico vRack attraverso l’indirizzo di gateway di rete **46.105.135.110**.
 

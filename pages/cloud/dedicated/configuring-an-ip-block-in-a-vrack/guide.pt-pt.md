@@ -1,14 +1,12 @@
 ---
 title: 'Configurar um bloco de endereços IP no vRack'
 excerpt: 'Saiba como configurar um bloco de endereços IP públicos no vRack'
-updated: 2022-07-26
+updated: 2023-08-28
 ---
 
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
-
-**Última atualização: 26/07/2022**
 
 ## Objetivo
 
@@ -53,6 +51,11 @@ Selecione o seu vRack na lista para apresentar a lista dos serviços elegíveis.
 ![vrack](images/addIPblock.png){.thumbnail}
 
 ### Configurar um endereço IP utilizável
+
+> [!warning]
+>
+> A título de exemplo, o ficheiro de configuração de rede a que nos referimos encontra-se em `/etc/network/interfaces`. Em função do sistema operativo utilizado, o ficheiro equivalente pode encontrar-se noutro local. O conteúdo do ficheiro também pode ser diferente. Não hesite em consultar a documentação oficial da sua distribuição em caso de dúvidas.
+>
 
 No caso do vRack, o primeiro, o penúltimo e o último endereço de um bloco de endereços IP estão sempre reservados, respetivamente, para o endereço da rede, ao gateway da rede e ao *broadcast* da rede. Isto significa que o primeiro endereço utilizável é o segundo endereço do bloco, como indicado a seguir:
 
@@ -123,11 +126,6 @@ local
 ```
 
 ### Modificar o ficheiro de configuração de rede
-
-> [!primary]
->
-> A título de exemplo, o ficheiro de configuração de rede a que nos referimos encontra-se em `/etc/network/interfaces`. Em função do sistema operativo utilizado, o ficheiro equivalente pode encontrar-se noutro local. Não hesite em consultar a documentação oficial da sua distribuição em caso de dúvidas.
->
 
 Por fim, resta modificar o ficheiro de configuração de rede para ter em conta a nova regra de tráfego e encaminhar o tráfego vRack através do endereço do gateway de rede **46.105.135.110**.
 

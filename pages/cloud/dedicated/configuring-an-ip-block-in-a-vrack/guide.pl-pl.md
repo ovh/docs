@@ -1,10 +1,13 @@
 ---
 title: 'Konfiguracja bloku IP w sieci vRack'
 excerpt: 'Dowiedz się, jak skonfigurować blok publicznych adresów IP w sieci vRack'
-updated: 2022-07-26
+updated: 2023-08-28
 ---
 
-**Ostatnia aktualizacja z dnia 26-07-2022**
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
+>
+
 
 ## Wprowadzenie
 
@@ -49,6 +52,11 @@ Wybierz z listy usługę vRack, aby wyświetlić listę usług, które chcesz za
 ![vrack](images/addIPblock.png){.thumbnail}
 
 ### Konfiguracja adresu IP
+
+> [!warning]
+>
+> W przedstawionym przykładzie plik konfiguracyjny sieci, do którego się odnosimy, znajduje się w `/etc/network/interfaces`. W zależności od systemu operacyjnego odpowiedni plik może być zlokalizowany w innym miejscu. Zawartość pliku może być inna. W przypadku trudności z jego odnalezieniem, skorzystaj z oficjalnej dokumentacji dotyczącej Twojej dystrybucji.
+>
 
 W przypadku sieci vRack pierwszy, przedostatni i ostatni adres danego bloku IP są zawsze zarezerwowane odpowiednio dla: adresu sieci, bramy sieciowej i broadcastu sieci. Oznacza to, że pierwszy możliwy do użycia adres jest drugim adresem z bloku, jak pokazano poniżej:
 
@@ -119,11 +127,6 @@ local
 ```
 
 ### Zmodyfikuj plik konfiguracyjny sieci
-
-> [!primary]
->
-> W przedstawionym przykładzie plik konfiguracyjny sieci, do którego się odnosimy, znajduje się w `/etc/network/interfaces`. W zależności od systemu operacyjnego odpowiedni plik może być zlokalizowany w innym miejscu. W przypadku trudności z jego odnalezieniem, skorzystaj z oficjalnej dokumentacji dotyczącej Twojej dystrybucji.
->
 
 Na koniec zmodyfikuj plik konfiguracyjny sieci, aby została uwzględniona nowa reguła ruchu, i aby ruch vRack został przekierowany za pomocą adresu bramy sieciowej **46.105.135.110**.
 
