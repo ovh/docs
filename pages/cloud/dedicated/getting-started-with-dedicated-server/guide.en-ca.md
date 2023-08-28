@@ -147,7 +147,7 @@ Click on the button `Configure`{.action}. In the popup window, you have three op
 
 - **Disabled**: This option stops alert messages and interventions by OVHcloud. Choose this if you are executing pertinent administrative actions on the server which prevent an ICMP response.
 - **Enabled with proactive intervention**: If the server stops responding, an alert email is sent to you and the server will be checked by a technician.
-- **Enabled without proactive intervention**: You will receive an alert message by email in case the server stops responding. To initiate an intervention, enable your server monitoring with proactive intervention
+- **Enabled without proactive intervention**: You will receive an alert message by email in case the server stops responding. To initiate an intervention, enable your server monitoring with proactive intervention.
 
 ![Monitoring](images/monitoring-your-server2.png){.thumbnail}
 
