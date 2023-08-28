@@ -25,7 +25,7 @@ Por exemplo, pode especificar:
 - Os servidores de e-mail (registos DNS do tipo *MX*) para os quais o seu domínio deve reencaminhar os e-mails que recebe. Isto permite-lhe consultá-los no(s) seu(s) endereço(s) de e-mail(s) personalizado(s) com o seu nome de domínio.
 - Informações relacionadas com a segurança / autenticação dos seus serviços (alojamento web, servidor web, servidor de e-mail, etc.) associados ao seu nome de domínio (registos DNS do tipo *SPF*, *DKIM*, *DMARC*, etc.).
 
-Para mais informações sobre as zonas DNS, consulte o guia "[Editar uma zona DNS da OVHcloud](/pages/web/domínios/dns_zone_edit)".
+Para mais informações sobre as zonas DNS, consulte o guia "[Editar uma zona DNS da OVHcloud](/pages/web/domains/dns_zone_edit)".
 
 Por este motivo, os **servidores DNS** devem ser declarados no domínio para utilizarem a zona DNS que alojam. 
 
@@ -45,7 +45,7 @@ Por vezes, alguns fornecedores DNS propõem mais de 2 **servidores DNS** a decla
 ## Requisitos
 
 - Ter um [nome de domínio](https://www.ovhcloud.com/pt/domains/) registado na OVHcloud.
-- Dispor das autorizações [adequadas para gerir](/pages/account/customer/managing_contact) o nome de domínio a partir do seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
+- Dispor das autorizações [adequadas para gerir](/pages/account/customer/managing_contacts) o nome de domínio a partir do seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
 > [!primary]
@@ -68,7 +68,7 @@ No entanto, é essencial notar que:
 
 - Aquando de uma mudança de servidor DNS (e.g. DNS externo por DNS OVHcloud), o conteúdo da antiga configuração/zona DNS não é automaticamente replicado na nova. Certifique-se de que a nova zona DNS contém todos os registos DNS necessários para que os serviços associados ao domínio funcionem corretamente (por exemplo, o website e os endereços de e-mail).
 
-- Se pretender alterar, não os servidores DNS, mas um ou vários registos da sua configuração/zona DNS atual, consulte o nosso guia: "[Editar uma zona DNS da OVHcloud](/pages/web/domínios/dns_zone_edit)".
+- Se pretender alterar, não os servidores DNS, mas um ou vários registos da sua configuração/zona DNS atual, consulte o nosso guia: "[Editar uma zona DNS da OVHcloud](/pages/web/domains/dns_zone_edit)".
 
 - Certas organizações, os registos que gerem as extensões de domínios, têm exigências particulares relativamente aos servidores DNS (quantidade de servidores de nomes, valor dos registos, etc.). Em caso de dúvida, contacte o agente de registo responsável pelo domínio.
 
