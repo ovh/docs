@@ -160,7 +160,7 @@ Le pack comprend plusieurs fonctionnalités telles que : [token validator](/page
 ## 10 - Réversibilité
 Afin d'assurer la portabilité et réversibilité des données sur le service, OVHcloud permet au client d'importer et exporter ses données (machines virtuelles et fichiers de configuration du vCenter)  en toute autonomie sous un format de fichiers VMDK ou tout autre format supporté par l'hyperviseur VMware.  Il est également possible d'utiliser les API et l'[outil OVF Tool](/pages/cloud/private-cloud/ovf_tool/) mis à disposition pour faciliter ces opérations.
 
-Les principe de portabilité d'OVHcloud sont décrits dans sa propre [politique de portabilité](/pages/account/reversibility/00-global-reversibility-policy) et ceux spécifiques au service Hosted Private Cloud by VMware sont indiqués dans sa [politique spécifique](/pages/account/reversibility/02-hosted-private-cloud-reversibility-policy/.
+Les principe de portabilité d'OVHcloud sont décrits dans sa propre [politique de portabilité](/pages/account/reversibility/00-global-reversibility-policy) et ceux spécifiques au service Hosted Private Cloud by VMware sont indiqués dans sa [politique spécifique](/pages/account/reversibility/02-hosted-private-cloud-reversibility-policy/).
 
 ### 10.1 - Effacement des données métier
 
