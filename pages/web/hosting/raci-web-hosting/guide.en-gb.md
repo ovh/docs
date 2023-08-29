@@ -1,5 +1,5 @@
 ---
-title: Responsibility sharing for Web hosting service
+title: Responsibility sharing for the Web Hosting service
 excerpt: "Shared responsibility between OVHcloud and the customer for the use of the Web hosting service"
 updated: 2023-08-28
 ---
