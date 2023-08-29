@@ -69,7 +69,7 @@ If your bank is listed by our partner, registration of the bank account will be 
 To register a new bank card, you will be redirected to our payment provider's secure interface. A small amount of money is deducted from your bank account to check your card details and their validity.<br>
 No amount will be charged and your credit card will be activated in a few minutes.
 
-#### Paypal account
+#### PayPal account
 
 ![paypal](images/paypal.png){.thumbnail}
 

@@ -76,9 +76,9 @@ Aucun montant ne sera prélevé et votre carte bancaire sera activée au bout de
 
 ![paypal](images/paypal.png){.thumbnail}
 
-Cliquez sur le bouton `Paypal`{.action}. Une fenêtre contextuelle s'ouvrira alors pour vous connecter à votre compte Paypal&#174; et enregistrer celui-ci comme moyen de paiement autorisé auprès de OVHcloud.
+Cliquez sur le bouton `PayPal`{.action}. Une fenêtre contextuelle s'ouvrira alors pour vous connecter à votre compte PayPal&#174; et enregistrer celui-ci comme moyen de paiement autorisé auprès de OVHcloud.
 
-Votre compte Paypal&#174; sera activé sous quelques minutes.
+Votre compte PayPal&#174; sera activé sous quelques minutes.
 
 ### Modifier votre moyen de paiement par défaut
 
