@@ -29,7 +29,7 @@ Oauth2 permet aussi de développer des applications tierces se connectant aux AP
 
 ## Prérequis
 
-- Un [commpte client OVHcloud](/pages/account/customer/ovhcloud-account-creation).
+- Un [compte client OVHcloud](/pages/account/customer/ovhcloud-account-creation).
 - Savoir configurer des [politiques d'accès via API](/pages/account/customer/iam-policies-api).
 - Savoir utiliser les [APIs de OVHcloud](/pages/account/api/first-steps).
 - Avoir créé un [compte de service via API](/pages/account/policies/manage-service-account).
