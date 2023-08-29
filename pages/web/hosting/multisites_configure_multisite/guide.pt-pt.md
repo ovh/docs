@@ -27,7 +27,7 @@ Pode alojar vários websites no mesmo alojamento web, mesmo que os nomes de dom�
 >
 > A maioria das ofertas de [alojamento web OVHcloud](https://www.ovhcloud.com/pt/web-hosting/){.external} dispõem de uma opção incluída de criação de endereço(s) de e-mail personalizado(s) com o seu nome de domínio.
 > Esta opção de e-mail pode ser ativada para **apenas um** nome de domínio. Isto significa que se utilizar o *multisite* com vários domínios, só poderá ativar esta opção para um dos seus nomes de domínio.
-> Não hesite em consultar o nosso [guia](/pages/web/hosting/ativate-email-hosting) para mais pormenores sobre a ativação desta opção.
+> Não hesite em consultar o nosso [guia](/pages/web/hosting/activate-email-hosting) para mais pormenores sobre a ativação desta opção.
 >
 
 ### 1 - Aceder à gestão multisite
