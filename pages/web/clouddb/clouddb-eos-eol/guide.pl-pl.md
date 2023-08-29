@@ -1,13 +1,13 @@
 ---
 title: 'Ogłoszenia dotyczące końca umowy sprzedaży/usługi Web Cloud Databases'
-updated: 2023-07-26
+updated: 2023-08-29
 ---
 
 > [!primary]
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
 >
 
-**Ostatnia aktualizacja z dnia 26-07-2023**
+**Ostatnia aktualizacja z dnia 29-08-2023**
 
 ## Wprowadzenie
 
@@ -16,7 +16,6 @@ Więcej informacji na ten temat znajdziesz w [polityce wycofania zarządzanych](
 
 |Wersja|Ogłoszenie o zakończeniu życia|Koniec sprzedaży|Zakończenie pomocy|
 |---|---|---|---|
-|MariaDB 10.3|2021-08-18|2022-11-23|2023-05-25|
 |MariaDB 10.4|2022-07-22|2023-12-18|2024-06-18|
 |MariaDB 10.5|2023-07-26|2024-12-23|2025-06-24|
 |MariaDB 10.6|Do określenia|Do określenia|Do określenia|
