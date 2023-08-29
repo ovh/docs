@@ -1,10 +1,8 @@
 ---
 title: "Commander un nom de domaine"
-excerpt: "Utilisez l'API publique OVHcloud pour commander vos noms de domaines"
-updated: 2022-05-05
+excerpt: "Découvrez comment utilisez l'API publique OVHcloud pour commander vos noms de domaines"
+updated: 2023-08-29
 ---
-
-**Dernière mise à jour le 05/05/2022**
 
 <!-- Rappel à mettre au début de chaque page -->
 
@@ -558,6 +556,8 @@ Voici la liste exhaustive des différentes configurations requises pour un nom d
 | `PROTECTED_CODE`    | string                         | oui si présent    | Certains domaines sont réservés par un registre et nécessitent un code spécifique pour débloquer leur obtention                                                                                                                                                                                            |
 | `OWNER_LEGAL_AGE`   | bool                           | oui               | Toujours présent, il s'agit d'une configuration de type "opt-in" afin de certifier que le registrant à l'âge légal pour posséder un nom de domaine                                                                                                                                                         |
 | `AUTH_INFO`         | string                         | non               | Code d'autorisation utilisé pour prouver que vous êtes le propriétaire du domaine. Utilisé pour les transferts de nom de domaines.                                                                                                                                                                         |
+| `DNS`               | string                         | non               | Permet de renseigner les serveurs DNS à utiliser pour le nom de domaine. Ceci directement après la finalisation de la commande.                                                                                                                                                                         |
+| `KEEP_DNS`          | bool                           | non               | Uniquement dans le cadre d'un transfert entrant de nom de domaine : permet d'indiquer que l'on souhaite conserver les serveurs DNS déclarés initialement chez l'ancien bureau d'enregistrement.                                                                                                                                                                 |
 
 > [!warning]
 >
