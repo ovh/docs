@@ -66,7 +66,7 @@ No se cargará ningún importe y su tarjeta bancaria se activará en unos minuto
 
 ![paypal_no_sepa](images/paypal_no_sepa.png){.thumbnail}
 
-Seleccionar `PayPal`{.action} como forma de pago. Haga clic en el botón `Paypal`{.action}. Se abrirá una ventana emergente donde podrá conectarse a su cuenta de PayPal® y registrarla como forma de pago autorizada con OVHcloud.
+Seleccionar `PayPal`{.action} como forma de pago. Haga clic en el botón `PayPal`{.action}. Se abrirá una ventana emergente donde podrá conectarse a su cuenta de PayPal® y registrarla como forma de pago autorizada con OVHcloud.
 
 Su cuenta de PayPal® se activará en unos minutos.
 

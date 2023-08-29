@@ -62,13 +62,13 @@ Postępuj zgodnie z poniższą procedurą, aby dodać sposób płatności. Na pi
 Aby zarejestrować nową kartę bankową, zostaniesz przekierowany do bezpiecznego interfejsu naszego dostawcy płatności. W celu potwierdzenia rejestracji i ważności Twojej karty, należy zalogować się do Twojego banku.<br>
 Kwota nie zostanie pobrana, a Twoja karta bankowa zostanie aktywowana po kilku minutach.
 
-#### Konto paypal
+#### Konto PayPal
 
 ![paypal_no_sepa](images/paypal_no_sepa.png){.thumbnail}
 
-Wybierz `Paypal`{.action} jako sposób płatności. Kliknij przycisk `Paypal`{.action}. Otworzy się wówczas okno, w którym zaloguj się do Twojego konta Paypal® i zapisz je jako sposób płatności zatwierdzony przez OVHcloud.
+Wybierz `PayPal`{.action} jako sposób płatności. Kliknij przycisk `PayPal`{.action}. Otworzy się wówczas okno, w którym zaloguj się do Twojego konta PayPal® i zapisz je jako sposób płatności zatwierdzony przez OVHcloud.
 
-Twoje konto Paypal® zostanie włączone za kilka minut.
+Twoje konto PayPal® zostanie włączone za kilka minut.
 
 ### Zmienić domyślny sposób płatności
 

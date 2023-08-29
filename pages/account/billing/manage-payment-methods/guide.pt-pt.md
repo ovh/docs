@@ -62,13 +62,13 @@ Siga as etapas sucessivas de registo do método de pagamento. Na primeira etapa,
 Para registar um novo cartão de crédito, será redirecionado para a interface segura do nosso prestador de pagamentos. É efetuada uma tentativa de débito junto do seu organismo bancário para validar o número e a validade do seu cartão.<br>
 Nenhum montante será debitado e o seu cartão de crédito será ativado ao fim de alguns minutos.
 
-#### Conta paga
+#### Conta PayPal
 
 ![paypal_no_sepa](images/paypal_no_sepa.png){.thumbnail}
 
-Clique no botão `Paypal`{.action}. Será então aberta uma janela de contexto para se ligar à sua conta Paypal® e registar esta como método de pagamento autorizado junto da OVHcloud.
+Clique no botão `PayPal`{.action}. Será então aberta uma janela de contexto para se ligar à sua conta PayPal® e registar esta como método de pagamento autorizado junto da OVHcloud.
 
-A sua conta Paypal® será ativada dentro de alguns minutos.
+A sua conta PayPal® será ativada dentro de alguns minutos.
 
 ### Alterar o seu método de pagamento padrão
 

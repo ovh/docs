@@ -73,13 +73,13 @@ Se la tua banca è registrata dal nostro partner, la registrazione del conto ban
 Per salvare una nuova carta bancaria, verrai reindirizzato all'interfaccia sicura del nostro provider di pagamento. Per verificare il numero e la validità della carta inserita verrà effettuato un tentativo di prelievo presso il tuo istituto bancario.<br>
 Non verrà addebitato alcun importo e la tua carta bancaria verrà attivata entro pochi minuti.
 
-#### Account paypal
+#### Account PayPal
 
 ![paypal_no_sepa](images/paypal.png){.thumbnail}
 
-Seleziona `Paypal`{.action} come modalità di pagamento. Clicca sul pulsante `Paypal`{.action}. Si aprirà una finestra contestuale per accedere al tuo account Paypal® e registrarlo come metodo di pagamento autorizzato presso OVHcloud.
+Seleziona `PayPal`{.action} come modalità di pagamento. Clicca sul pulsante `PayPal`{.action}. Si aprirà una finestra contestuale per accedere al tuo account PayPal® e registrarlo come metodo di pagamento autorizzato presso OVHcloud.
 
-Il tuo account Paypal® sarà attivo in pochi minuti.
+Il tuo account PayPal® sarà attivo in pochi minuti.
 
 ### Modificare il metodo di pagamento predefinito
 
