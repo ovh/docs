@@ -3,7 +3,7 @@ title: PostgreSQL - Capabilities and Limitations
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for PostgreSQL
 routes:
     canonical: '/pages/platform/databases/postgresql_01_capabilities'
-updated: 2023-08-17
+updated: 2023-08-29
 ---
 
 ## Objective
@@ -121,6 +121,7 @@ See the [Handling «Disk Full» situations documentation](/pages/platform/databa
 ### Features
 
 #### Network
+
 PostgreSQL clusters are reachable on a customized port available through the Control Panel and the API.
 
 Public as well as private networking (vRack) can be used for all the offers.
@@ -128,6 +129,7 @@ Public as well as private networking (vRack) can be used for all the offers.
 Ingress and Egress traffic are included in the service plans and unmetered.
 
 ##### Private network considerations
+
 Here are some considerations to take into account when using private network:
 
 - Network ports are created in the private network of your choice. Thus, further operations on that network might be restricted - e.g. you won’t be able to delete the network if you didn’t stop the Public Cloud Databases services first.
