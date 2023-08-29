@@ -90,7 +90,7 @@ Le client bénéficiant d'une infrastructure Hosted Private Cloud a la possibili
 
 A travers votre espace client OVHcloud, vous avez la possibilité de gérer le service à l'aide de [trois contacts types](/pages/account/customer/managing_contacts#definition).
 
-Afin de référencer chaque client ayant souscrit à un ou plusieurs services, OVHcloud utilise un compte propriétaire avec un NIC interne. 
+Afin de référencer chaque client ayant souscrit à un ou plusieurs services, OVHcloud utilise un compte propriétaire avec un *NIC* interne. 
 
 Pour renforcer l'accès au compte client, vous avez la possibilité d'activer [une authentification à double facteur (2FA)](/pages/account/customer/secure-ovhcloud-account-with-2fa) ou l'[authentification SSO (Single Sign-On)](/pages/account/customer/ovhcloud-account-connect-saml-adfs/) en associant votre compte à un Active Directory externe..
 
@@ -114,17 +114,17 @@ Aucune protection n'est mise en place au niveau des VM déployées par un client
 
 ### 9.1 - Fourniture d'images de VM
 
-OVHcloud met à disposition des clients des modèles de VM au format OVF. Ces templates de VM disposent d'un niveau de durcissement minimal. Le durcissement des OS windows et Linux est celui d'une installation nominale de l’éditeur. Pour un durcissement avancé, OVHcloud recommande de se référer aux documentations de chaque éditeur.
+OVHcloud met à disposition des clients des modèles de VM au format OVF. Ces templates de VM disposent d'un niveau de durcissement minimal. Le durcissement des OS Windows et Linux est celui d'une installation nominale de l’éditeur. Pour un durcissement avancé, OVHcloud recommande de se référer aux documentations de chaque éditeur.
 
 Lors du déploiement d'une VM, vous avez également la possibilité d'importer sa propre image ISO.
 
-### 9.2 - Fonctions de filtrage, chiffrement et autres options sécurité
+### 9.2 - Fonctions de filtrage, chiffrement et autres options de sécurité
 
 ### 9.2.1 SSL Gateway
 
-Les adresses IP d'un service Private Cloud sont par défaut publiques. La SSL Gateway est une passerelle qui permet à un client d'activer des fonctions de filtrage pour permettre à ses propres utilisateurs de se connecter depuis Internet à son infrastructure.
+Les adresses IP d'un service Private Cloud sont publiques par défaut. La SSL Gateway est une passerelle qui permet à un client d'activer des fonctions de filtrage pour permettre à ses propres utilisateurs de se connecter à son infrastructure depuis Internet.
 
-Elle offre également un service de Firewall/NAT que vous pouvez configurer via une *iptable*, un certifcat pour sécuriser la connexion, un ProxyPass, du monitoring, un serveur SFTP et un script antivirus avec scan quotidien/mis à jour.
+Elle offre également un service de Firewall/NAT que vous pouvez configurer via une *iptable*, un certificat pour sécuriser la connexion, un ProxyPass, du monitoring, un serveur SFTP et un script antivirus avec scan quotidien/mise à jour.
 
 ### 9.2.2 Private Gateway
 
@@ -156,7 +156,7 @@ Le pack comprend plusieurs fonctionnalités telles que [token validator](/pages/
 
 ## 10 - Réversibilité
 
-Afin d'assurer la portabilité et réversibilité des données sur le service, OVHcloud vous permet d'importer et exporter vos données (machines virtuelles et fichiers de configuration du vCenter)  en toute autonomie sous un format de fichiers VMDK ou tout autre format supporté par l'hyperviseur VMware. Il est également possible d'utiliser les API et l'[outil OVF Tool](/pages/cloud/private-cloud/ovf_tool/) mis à disposition pour faciliter ces opérations.
+Afin d'assurer la portabilité et la réversibilité des données sur le service, OVHcloud vous permet d'importer et exporter vos données (machines virtuelles et fichiers de configuration du vCenter) en toute autonomie sous un format de fichiers VMDK ou tout autre format supporté par l'hyperviseur VMware. Il est également possible d'utiliser les API et l'[outil OVF Tool](/pages/cloud/private-cloud/ovf_tool) mis à disposition pour faciliter ces opérations.
 
 Les principe de portabilité d'OVHcloud sont décrits dans sa propre [politique de portabilité](/pages/account/reversibility/00-global-reversibility-policy) et ceux spécifiques au service Hosted Private Cloud by VMware sont indiqués dans sa [politique spécifique au service](/pages/account/reversibility/02-hosted-private-cloud-reversibility-policy).
 
@@ -166,4 +166,4 @@ Suite au décommissionnement du service par le client et avant l'extraction du d
 
 ### 10.2 - Effacement des données techniques
 
-Suite au décommissionnent du service par le client, OVHcloud procède à la libération des ressources qui lui sont allouées et la suppression des configurations réalisées lors de la livraison du service.
+Suite au décommissionnement du service par le client, OVHcloud procède à la libération des ressources qui lui sont allouées et la suppression des configurations réalisées lors de la livraison du service.
