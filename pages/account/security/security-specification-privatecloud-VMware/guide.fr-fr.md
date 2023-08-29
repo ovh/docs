@@ -5,7 +5,7 @@ updated: 2023-08-28
 
 ## Objectif
 
-En complément au [modèle de responsabilité entre OVHcloud et le client sur le service Hosted Private Cloud powered by VMware](/pages/cloud/private-cloud/responsibility-sharing/), cette page a pour objectif de présenter les particularités et fonctions de sécurité propres à ce service. Elle met aussi en avant des bonnes pratiques qui vous permettront de l'exploiter au mieux.
+En complément au [modèle de responsabilité entre OVHcloud et le client sur le service Hosted Private Cloud powered by VMware](/pages/cloud/private-cloud/responsibility-sharing), cette page a pour objectif de présenter les particularités et fonctions de sécurité propres à ce service. Elle met aussi en avant des bonnes pratiques qui vous permettront de l'exploiter au mieux.
 
 ## 1 - Certifications
 
@@ -26,7 +26,7 @@ En complément au [modèle de responsabilité entre OVHcloud et le client sur le
 
 ### 2.1 - Recommandations à la prise en main du service
 
-Une fois le service délivré et après réception de vos identifiants de connexion à son Hosted Private Cloud, OVHcloud vous recommande de changer vos identifiants selon les instructions de [ce guide pour la connexion à l'interface vSphere](/pages/cloud/private-cloud/vsphere_interface_connexion/).
+Une fois le service délivré et après réception de vos identifiants de connexion à son Hosted Private Cloud, OVHcloud vous recommande de changer vos identifiants selon les instructions de [ce guide pour la connexion à l'interface vSphere](/pages/cloud/private-cloud/vsphere_interface_connexion).
 
 Il convient également de procéder au durcissement de votre Système d'Exploitation suite à la création des machines virtuelles.
 
@@ -92,7 +92,7 @@ A travers votre espace client OVHcloud, vous avez la possibilité de gérer le s
 
 Afin de référencer chaque client ayant souscrit à un ou plusieurs services, OVHcloud utilise un compte propriétaire avec un *NIC* interne. 
 
-Pour renforcer l'accès au compte client, vous avez la possibilité d'activer [une authentification à double facteur (2FA)](/pages/account/customer/secure-ovhcloud-account-with-2fa) ou l'[authentification SSO (Single Sign-On)](/pages/account/customer/ovhcloud-account-connect-saml-adfs/) en associant votre compte à un Active Directory externe..
+Pour renforcer l'accès au compte client, vous avez la possibilité d'activer [une authentification à double facteur (2FA)](/pages/account/customer/secure-ovhcloud-account-with-2fa) ou l'[authentification SSO (Single Sign-On)](/pages/account/customer/ovhcloud-account-connect-saml-adfs) en associant votre compte à un Active Directory externe..
 
 Sur le service Private Cloud, avec le compte administrateur, vous avez la possibilité d'établir votre propre politique d'accès au vCenter, de créer des utilisateurs et leur affecter différents droits d'accès pour gérer les ressources, l'accès à l'interface vSphere et la gestion de la partie réseau privé et public. Le guide et les détails de configurations sont disponibles sur [ce lien](/pages/cloud/private-cloud/manager_ovh_private_cloud).
 

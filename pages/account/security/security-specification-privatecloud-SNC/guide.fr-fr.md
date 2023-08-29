@@ -5,7 +5,7 @@ updated: 2023-08-25
 
 ## Objectif
 
-En complément au [modèle de responsabilité entre OVHcloud et le client sur le service Hosted Private Cloud powered by VMware sous la qualification SecNumcloud](/pages/cloud/private-cloud/SNC-responsibility-sharing/), cette fiche a pour objectif de présenter les particularités et fonctions de sécurité propres à ce service. Elle met aussi en avant des bonnes pratiques qui permettront au client de l'exploiter au mieux.
+En complément au [modèle de responsabilité entre OVHcloud et le client sur le service Hosted Private Cloud powered by VMware sous la qualification SecNumcloud](/pages/cloud/private-cloud/SNC-responsibility-sharing), cette fiche a pour objectif de présenter les particularités et fonctions de sécurité propres à ce service. Elle met aussi en avant des bonnes pratiques qui permettront au client de l'exploiter au mieux.
 
 ## 1 - Certifications
 
@@ -93,9 +93,9 @@ Afin de référencer chaque client ayant souscrit à un ou plusieurs services, O
 
 Pour renforcer l'accès au compte client, vous avez la possibilité d'activer [une authentification à double facteur (2FA)](/pages/account/customer/secure-ovhcloud-account-with-2fa).
 
-La gestion des accès utilisateurs à l'interface vSphere avec filtrage IP et authentification à double facteurs peut se faire en suivant les premières étapes de [ce guide](/pages/cloud/private-cloud/snc_getting_started/).
+La gestion des accès utilisateurs à l'interface vSphere avec filtrage IP et authentification à double facteurs peut se faire en suivant les premières étapes de [ce guide](/pages/cloud/private-cloud/snc_getting_started).
 
-Avec le compte administrateur, vous avez la possibilité d'établir sa propre politique d'accès au vCenter, de créer des utilisateurs et leur affecter différents droits d'accès pour gérer les ressources, l'accès à l'interface vSphere et la gestion de la partie réseau privé et public. Le guide et détails de configurations sont disponibles sur [ce lien](/pages/cloud/private-cloud/manager_ovh_private_cloud/).
+Avec le compte administrateur, vous avez la possibilité d'établir sa propre politique d'accès au vCenter, de créer des utilisateurs et leur affecter différents droits d'accès pour gérer les ressources, l'accès à l'interface vSphere et la gestion de la partie réseau privé et public. Le guide et détails de configurations sont disponibles sur [ce lien](/pages/cloud/private-cloud/manager_ovh_private_cloud).
 
 ### 7.2 - Data Plane
 
@@ -162,7 +162,7 @@ Le mode d'emploi est disponible via [ce lien](/pages/cloud/private-cloud/vm_encr
 
 Vous pouvez bénéficier d'un pack sécurité avancée en activant les options HDS ou PCI DSS sur votre infrastructure.
 
-Le pack comprend plusieurs fonctionnalités telles que [token validator](/pages/cloud/private-cloud/interface-secur/), accès via 2FA, session Timeout, Fail2ban, hids, forcer le protocole TLS v1.2, etc.
+Le pack comprend plusieurs fonctionnalités telles que [token validator](/pages/cloud/private-cloud/interface-secure), accès via 2FA, session Timeout, Fail2ban, hids, forcer le protocole TLS v1.2, etc.
 
 ## 10 - Réversibilité
 
@@ -172,9 +172,9 @@ Les principes de portabilité d'OVHcloud sont décrits dans sa propre [politique
 
 ### 10.1 - Effacement des données métier
 
-Suite au décommissionnement du service par le client et avant l'extraction du disque dur du rack, un robot d'effacement applique une procédure d'effacement sécurisé des données basée sur le standard NIST SP 800-88 r1 niveau 'Purge'. En cas de contraintes ou limitations techniques sur certaines gammes de disques durs et quand le niveau 'Purge' ne peut s'appliquer, c'est l'effacement au niveau 'Clear' qui s'exécute.
+Suite au décommissionnement du service par le client et avant l'extraction du disque dur du rack, un robot d'effacement applique une procédure d'effacement sécurisé des données basée sur le standard NIST SP 800-88 r1 niveau *Purge*. En cas de contraintes ou limitations techniques sur certaines gammes de disques durs et quand le niveau *Purge* ne peut s'appliquer, c'est l'effacement au niveau *Clear* qui s'exécute.
 
-Sur l'infrastructure qualifiée SecNumCloud, c'est le niveau 'Destroy' qui est appliqué suite à l'extraction du disque de la baie.
+Sur l'infrastructure qualifiée SecNumCloud, c'est le niveau *Destroy* qui est appliqué suite à l'extraction du disque de la baie.
 
 ### 10.2 - Effacement des données techniques
 
