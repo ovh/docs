@@ -1,327 +1,97 @@
 ---
-title: Python
-updated: 2022-06-02
+title: Manage Python versions in non-Python containers
+slug: python-version
+section: Python
 ---
 
-**Last updated 2nd June 2022**
+**Last updated 29th August 2023**
+
 
 
 ## Objective  
 
-Python is a general purpose scripting language often used in web development.
-You can deploy Python apps on Web PaaS using a server or a project such as [uWSGI](https://uwsgi-docs.readthedocs.io/en/latest/).
+You may need to use a specific version of Python that isn't available in an app container for a different language.
+For example, a container might have a long-term support version, while you want the latest version.
 
-## Supported versions
+In such cases, use the [Pyenv version manager](https://github.com/pyenv/pyenv)
+to install the specific version you want to use.
 
-| **Grid** | 
-|----------------------------------|  
-|  2.7 |  
-|  3.5 |  
-|  3.6 |  
-|  3.7 |  
-|  3.8 |  
-|  3.9 |  
-|  3.10 |  
+1\.  Add your target Python version as a [variable](../../development/variables/_index.md):
 
 
-## Usage example
+```yaml {configFile="app"}
+    variables:
+        env:
+            # Update for your desired Python version.
+            PYTHON_VERSION: "3.11.0"
+```
 
-### Run your own server
+2\.  Add Pyenv in a [`build` hook](../../create-apps/hooks/hooks-comparison.md#build-hook):
 
-You can define any server to handle requests.
-Once you have it configured, add the following configuration to get it running on Web PaaS:
 
-1\. Specify one of the [supported versions](#supported-versions):
-
-```yaml   
-type: 'python:3.10'
-```  
-
-2\. Install the requirements for your app.
-
-```yaml  
-location=".platform.app.yaml"
-dependencies:
-    python3:
-        pipenv: "2022.5.2"
-
+```yaml {configFile="app"}
 hooks:
     build: |
-              pipenv install --system --deploy
-``` 
-3\. Define the command to start your web server:
+        # Exit the hook on any failure
+        set -e
 
+        # Clone Pyenv to the build cache if not present
+        if [ ! -d "$PLATFORM_CACHE_DIR/.pyenv" ]; then
+            mkdir -p $PLATFORM_CACHE_DIR/.pyenv
+            git clone https://github.com/pyenv/pyenv.git $PLATFORM_CACHE_DIR/.pyenv
+        fi
 
-```yaml 
-location=".platform.app.yaml"
-web:
-    # Start your app with the configuration you define
-    # You can replace the file location with your location
-    commands:
-        start: python server.py
+        # Pyenv environment variables
+        export PYENV_ROOT="$PLATFORM_CACHE_DIR/.pyenv"
+        export PATH="$PYENV_ROOT/bin:$PATH"
+
+        # Initialize Pyenv
+        if command -v pyenv 1>/dev/null 2>&1; then
+            eval "$(pyenv init --path)"
+        fi
+
+        # Install desired Python version
+        mkdir -p $PLATFORM_CACHE_DIR/.pyenv/versions
+        if [ ! -d "$PLATFORM_CACHE_DIR/.pyenv/versions/$PYTHON_VERSION" ]; then
+            pyenv install $PYTHON_VERSION
+        fi
+
+        # Set global Python version
+        pyenv global $PYTHON_VERSION
 ```
 
-### Use uWSGI
+Now your build hook can use the specified version of Python.
+You can verify this by running `python --version`.
 
-You can also use [uWSGI](https://uwsgi-docs.readthedocs.io/en/latest/) to manage your server.
-Follow these steps to get your server started.
+If you want this Python version to be available in the runtime environment, follow these steps:
 
-1\. Specify one of the [supported versions](#supported-versions):
-
-
-
-```yaml   
-type: 'python:3.10'
-```  
+1\.  Copy Pyenv to your runtime environment at the end of your build hook:
 
 
-2\. Define the conditions for your web server:
-
-
-```yaml 
-location=".platform.app.yaml"
-web:
-    upstream:
-        # Send requests to the app server through a unix socket
-        # Its location is defined in the SOCKET environment variable
-        socket_family: "unix"
-
-    # Start your app with the configuration you define
-    # You can replace the file location with your location
-    commands:
-        start: "uwsgi --ini conf/uwsgi.ini"
-
-    locations:
-        # The folder from which to serve static assets
-        "/":
-            root: "public"
-            passthru: true
-            expires: 1h
-```
-
-3\. Create configuration for uWSGI such as the following:
-
-
-```ini 
-location="config/uwsgi.ini"
-[uwsgi]
- # UNIX socket to use to talk with the web server
- # Uses the variable defined in the configuration in step 2
- socket = $(SOCKET)
- protocol = http
-
- # the entry point to your app
- wsgi-file = app.py
-```
-
-   Replace `app.py` with whatever your file is.
-
-4\. Install the requirements for your app.
-```yaml  
-   dependencies:
-    python3:
-        pipenv: "2022.5.2"
-
+```yaml {configFile="app"}
 hooks:
     build: |
-              pipenv install --system --deploy
-```
-5\. Define the entry point in your app:
+        ...
 
+        # Copy Pyenv directory to runtime directory
+        cp -R $PLATFORM_CACHE_DIR/.pyenv $PLATFORM_APP_DIR
 
-```python
-# You can name the function differently and pass the new name as a flag
-# start: "uwsgi --ini conf/uwsgi.ini --callable <NAME>"
-def application(env, start_response):
-
-    start_response('200 OK', [('Content-Type', 'text/html')])
-    return [b"Hello world from Web PaaS"]
+        # Rehash Pyenv for new (runtime) location
+        PYENV_ROOT="$PLATFORM_APP_DIR/.pyenv" $PLATFORM_APP_DIR/.pyenv/bin/pyenv rehash
 ```
 
-## Package management
+2\.  Create an [`.environment` file](../../development/variables/set-variables.md#set-variables-via-script):
 
-Your app container comes with pip pre-installed.
-To add global dependencies (packages available as commands),
-add them to the `dependencies` in your [app configuration](/pages/web/web-paas/configuration-app):
 
-```yaml 
-location=".platform.app.yaml"
-dependencies:
-    python3:
-        <PACKAGE_NAME>: <PACKAGE_VERSION>
+```bash
+touch .environment
 ```
 
-```yaml  
-dependencies:
-    python3:
-        pipenv: "2022.5.2"
+3\.  Update the PATH for the runtime environment:
 
-hooks:
-    build: |
-              pipenv install --system --deploy
+
+```yaml {location=".environment"}
+export PATH=/app/.pyenv/bin:/app/.pyenv/shims:$PATH
 ```
-## Connect to services
 
-The following examples show how to access various [services](/pages/web/web-paas/configuration-services) with Python.
-For more information on configuring a given service, see the page for that service.
-
-> [!tabs]      
-> Elasticsearch     
->> [Elasticsearch - example](https://github.com/ovh/docs/blob/develop/pages/web/web-paas/static/files/fetch/examples/python/elasticsearch)  
->>     
-> Kafka     
->> [Kafka - example](https://github.com/ovh/docs/blob/develop/pages/web/web-paas/static/files/fetch/examples/python/kafka)  
->>     
-> Memcached     
->> [Memcached - example](https://github.com/ovh/docs/blob/develop/pages/web/web-paas/static/files/fetch/examples/python/memcached)  
->>     
-> MongoDB     
->> [MongoDB - example](https://github.com/ovh/docs/blob/develop/pages/web/web-paas/static/files/fetch/examples/python/mongodb)  
->>     
-> MySQL     
->> [MySQL - example](https://github.com/ovh/docs/blob/develop/pages/web/web-paas/static/files/fetch/examples/python/mysql)  
->>     
-> PostgreSQL     
->> [PostgreSQL - example](https://github.com/ovh/docs/blob/develop/pages/web/web-paas/static/files/fetch/examples/python/postgresql)  
->>     
-> RabbitMQ     
->> [RabbitMQ - example](https://github.com/ovh/docs/blob/develop/pages/web/web-paas/static/files/fetch/examples/python/rabbitmq)  
->>     
-> Redis     
->> [Redis - example](https://github.com/ovh/docs/blob/develop/pages/web/web-paas/static/files/fetch/examples/python/redis)  
->>     
-> Solr     
->> [Solr - example](https://github.com/ovh/docs/blob/develop/pages/web/web-paas/static/files/fetch/examples/python/solr)  
->>     
-
-## Configuration reader
-While you can read the environment directly from your app, you might want to use the
-[`platformshconfig` library](https://github.com/platformsh/config-reader-python). 
-It decodes service credentials, the correct port, and other information for you.
-
-## Project templates
-
-
-### Django 2 
-
-![image](images/django2.png)
-
-<p>This template deploys the Django 2 application framework on Web PaaS, using the gunicorn application runner. It also includes a PostgreSQL database connection pre-configured.</p>
-<p>New projects should be built using Django 3, but this project is a reference for existing migrating sites. Version 2 is in legacy support.</p>
-  
-#### Features
-- Python 3.8<br />  
-- PostgreSQL 12<br />  
-- Automatic TLS certificates<br />  
-- Pipfile-based build<br />  
- 
-[View the repository](https://github.com/platformsh-templates/django2) on GitHub.
-
-### Pelican 
-
-![image](images/pelican.png)
-
-<p>This template provides a basic Pelican skeleton. Only content files need to be committed, as Pelican itself is downloaded at build time via the Pipfile. All files are generated at build time, so at runtime only static files need to be served.</p>
-<p>Pelican is a static site generator written in Python and using Jinja for templating.</p>
-  
-#### Features
-- Python 3.8<br />  
-- Automatic TLS certificates<br />  
-- Pipfile-based build<br />  
- 
-[View the repository](https://github.com/platformsh-templates/pelican) on GitHub.
-
-### Wagtail 
-
-![image](images/wagtail.png)
-
-<p>This template builds the Wagtail CMS on Web PaaS, using the gunicorn application runner. It includes a PostgreSQL database that is configured automatically, and a basic demonstration app that shows how to use it.  It is intended for you to use as a starting point and modify for your own needs. You will need to run the command line installation process by logging into the project over SSH after the first deploy.</p>
-<p>Wagtail is a web CMS built using the Django framework for Python.</p>
-  
-#### Features
-- Python 3.8<br />  
-- PostgreSQL 12<br />  
-- Automatic TLS certificates<br />  
-- Pipfile-based build<br />  
- 
-[View the repository](https://github.com/platformsh-templates/wagtail) on GitHub.
-
-### Flask 
-
-![image](images/flask.png)
-
-<p>This template demonstrates building the Flask framework for Web PaaS. It includes a minimalist application skeleton that demonstrates how to connect to a MariaDB server for data storage and Redis for caching. The application starts as a bare Python process with no separate runner. It is intended for you to use as a starting point and modify for your own needs.</p>
-<p>Flask is a lightweight web microframework for Python.</p>
-  
-#### Features
-- Python 3.8<br />  
-- MariaDB 10.4<br />  
-- Redis 5.0<br />  
-- Automatic TLS certificates<br />  
-- Pipfile-based build<br />  
- 
-[View the repository](https://github.com/platformsh-templates/flask) on GitHub.
-
-### Django 3 
-
-![image](images/django2.png)
-
-<p>This template deploys the Django 3 application framework on Web PaaS, using the gunicorn application runner. It also includes a PostgreSQL database connection pre-configured.</p>
-<p>Django is a Python-based web application framework with a built-in ORM.</p>
-  
-#### Features
-- Python 3.8<br />  
-- PostgreSQL 12<br />  
-- Automatic TLS certificates<br />  
-- Pipfile-based build<br />  
- 
-[View the repository](https://github.com/platformsh-templates/django3) on GitHub.
-
-### Pyramid 
-
-![image](images/pyramid.png)
-
-<p>This template builds Pyramid on Web PaaS. It includes a minimalist application skeleton that demonstrates how to connect to a MariaDB server for data storage and Redis for caching.  It is intended for you to use as a starting point and modify for your own needs.</p>
-<p>Pyramid is a web framework written in Python.</p>
-  
-#### Features
-- Python 3.8<br />  
-- MariaDB 10.4<br />  
-- Redis 5.0<br />  
-- Automatic TLS certificates<br />  
-- Pipfile-based build<br />  
- 
-[View the repository](https://github.com/platformsh-templates/pyramid) on GitHub.
-
-### Basic Python 3 
-
-![image](images/basicpython3.png)
-
-<p>This template provides the most basic configuration for running a custom Python 3.7 project.  It includes the `platformshconfig` package and demonstrates using it to connect to MariaDB and Redis. It can be used to build a very rudimentary application but is intended primarily as a documentation reference. The application starts as a bare Python process with no separate runner.</p>
-<p>Python is a general purpose scripting language often used in web development.</p>
-  
-#### Features
-- Python 3.8<br />  
-- MariaDB 10.4<br />  
-- Redis 5.0<br />  
-- Automatic TLS certificates<br />  
-- Pipfile-based build<br />  
- 
-[View the repository](https://github.com/platformsh-templates/python3) on GitHub.
-
-### Python 3 running UWSGI 
-
-![image](images/python.png)
-
-<p>This template provides the most basic configuration for running a custom Python 3.7 project. It includes the `platformshconfig` package and demonstrates using it to connect to MariaDB and Redis. It can be used to build a very rudimentary application but is intended primarily as a documentation reference. The application runs through the UWSGI runner.</p>
-<p>Python is a general purpose scripting language often used in web development.</p>
-  
-#### Features
-- Python 3.8<br />  
-- MariaDB 10.4<br />  
-- Redis 5.0<br />  
-- Automatic TLS certificates<br />  
-- Pipfile-based build<br />  
- 
-[View the repository](https://github.com/platformsh-templates/python3-uwsgi) on GitHub.
-
+Now the specified Python version is used in the runtime environment.
