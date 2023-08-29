@@ -1,21 +1,19 @@
 ---
-title: "Partage de responsabilité sur le service Hosted Private Cloud by VMware  sous la qualifcation SecNumCloud"
+title: "Partage de responsabilité sur le service Hosted Private Cloud by VMware sous la qualifcation SecNumCloud"
 excerpt: "Partage de responsabilité entre OVHcloud et le client pour l'utilisation du produit VMware on OVHcloud sous la qualifcation SecNumCloud"
-updated: 2023-08-25
+updated: 2023-08-28
 ---
-
-**Dernière mise à jour le 07/03/2023**
 
 ## Objectif
 
-Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et le client pour le service Hosted Private Cloud by VMware. Ce modèle peut aider le client à utiliser le service VMware on OVHcloud au mieux.
+Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et le client pour le service Hosted Private Cloud by VMware sous la qualifcation SecNumCloud. Ce modèle peut aider le client à utiliser le service VMware on OVHcloud au mieux.
 
 | Rôles |
 | --- |
 |R : Est en charge de la Réalisation du processus|
 |A : Est Approbateur de la réalisation du processus|
 |C : Est Consulté pendant le processus|
-|I : est Informé des résultats du processus|
+|I : Est Informé des résultats du processus|
 
 ### 1. Avant la souscription
 
@@ -41,13 +39,12 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 | Déployer le service initial en conformité avec le Référentiel SecNumCloud | I | RA |
 | Déployer la configuration réseau initiale sur les équipements | I | RA |
 
-
 #### 2.2. Modèle de réversibilité
 
 | **Activité** | **Client** | **OVHcloud** |
 | --- | --- | --- |
 | Fournir la documentation technique correspondant à l’offre SecNumCloud | I | RA |
-| Rédiger un plan plan de continuité d’activité et le plan de reprise d’activité pour le SI hébergé, en cohérence avec la sensibilité du SI hébergé | RA |  |
+| Rédiger un plan de continuité d’activité et le plan de reprise d’activité pour le SI hébergé, en cohérence avec la sensibilité du SI hébergé | RA |  |
 
 #### 2.3. Installation du SI client
 
@@ -58,7 +55,6 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 | Acheter et détenir les licences et droits d’utilisation pour les OS en mode Bring Your Own Licence | RA |   |
 | Configurer l’ensemble des instances virtuelles déployées sur le IaaS | RA |  I |
 
-
 ### 3. Utilisation du service
 
 #### 3.1. Opérations
@@ -67,17 +63,16 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 
 | **Activité** | **Client** | **OVHcloud** |
 | --- | --- | --- |
-| Exploiter l’ensemble des instances virtuelles déployées dans l'Iaas | RA | I |
+| Exploiter l’ensemble des instances virtuelles déployées dans l'IaaS | RA | I |
 | Décider d’ajouter / supprimer des ressources au datacentre virtuel | RA | I |
 | Réaliser l’ajout / suppression des ressources au datacentre virtuel | I | RA |
 | Ajouter / supprimer des ressources aux VMs | RA |  |
-
 
 ##### **3.1.2. Gestion des accès**
 
 | **Activité** | **Client** | **OVHcloud** |
 | --- | --- | --- |
-| Gérer des accès et la politique de sécurité des utilisateurs du Service | RA |  |
+| Gérer les accès et la politique de sécurité des utilisateurs du Service | RA |  |
 | Gérer les accès physiques et logiques des équipes OVHcloud aux infrastructures | I | RA |
 | Gérer les accès à l'espace client | RA | I |
 | Gérer les accès à l’interface de gestion de la virtualisation | RA | I |
@@ -86,7 +81,7 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 
 | **Activité** | **Client** | **OVHcloud** |
 | --- | --- | --- |
-| Surveiller le bon fonctionnement des dispositifs physiques (utilités) en support de l'infrastructure as a service | I | RA |
+| Surveiller le bon fonctionnement des dispositifs physiques (utilités) en support de l'Infrastructure as a Service | I | RA |
 | Suivre les performances des ressources physiques | RI | A |
 | Suivre les performances des VMs | RA | I |
 | Traiter et acquitter les alarmes provenant des dispositifs managés de l’Infrastructure as a Service  | I | RA |
@@ -117,7 +112,7 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 | Tenir un inventaire complet de l’ensemble des dispositifs | RA |  |
 | Rédiger et fournir un rapport mensuel de traitement des incidents, changements et demandes pris en charge par OVHcloud| I | RA |
 | Maintenir et fournir la  documentation technique correspondant à l’offre SecNumCloud| I | RA |
-| Gérer la sécurité des infrastructures de gestion (API, Gateway SSL) de l'Iaas | I | RA |
+| Gérer la sécurité des infrastructures de gestion (API, Gateway SSL) de l'IaaS | I | RA |
 | Gérer la sécurité des infrastructures de gestion (API, bastion, etc.) hébergées | RA | I |
 | Gérer la sécurité des VMs | RA | I |
 | Gérer la sécurité des Softwares et Middlewares installés sur les VMs | RA | I |
@@ -125,7 +120,7 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 | Gérer la sécurité physique des équipements et infrastructures hébergés chez OVHcloud | I | RA |
 | Gérer la maintenance de la solution VMware managée et ses extensions | C | RA |
 | Réaliser le suivi commercial et contractuel du Client (devis, commande, livraison et facturation) | I | RA  |
-| Réaliser le suivi commercial et contractuel de la prestation   fournie (devis, commande, livraison et facturation) | RA | I  |
+| Réaliser le suivi commercial et contractuel de la prestation fournie (devis, commande, livraison et facturation) | RA | I  |
 | Obtenir le support d’experts par l’intermédiaire du Techical Account Manager | A | R  |
 
 ##### **3.1.7. Continuité d'activité**
@@ -145,8 +140,8 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 | Intervenir sur les éléments managés de l’IaaS | C | RA |
 | Qualifier les incidents survenus sur les éléments managés de l’IaaS | C | RA |
 | Rédiger et fournir une analyse post mortem | C | RA |
-| Coopérer avec OVHcloud dans le cadre de la résolution des incidents  | RA | CI |
-| Coopérer avec le Client dans le cadre de la résolution des incidents   | CI | RA |
+| Coopérer avec OVHcloud dans le cadre de la résolution des incidents | RA | CI |
+| Coopérer avec le Client dans le cadre de la résolution des incidents | CI | RA |
 
 #### **3.2.2. Changements**
 
