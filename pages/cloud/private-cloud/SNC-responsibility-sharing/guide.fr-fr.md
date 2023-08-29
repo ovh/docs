@@ -1,6 +1,6 @@
 ---
-title: "Partage de responsabilité sur le service Hosted Private Cloud by VMware sous la qualifcation SecNumCloud"
-excerpt: "Partage de responsabilité entre OVHcloud et le client pour l'utilisation du produit VMware on OVHcloud sous la qualifcation SecNumCloud"
+title: "Partage de responsabilité sur le service Hosted Private Cloud by VMware sous la qualification SecNumCloud"
+excerpt: "Partage de responsabilité entre OVHcloud et le client pour l'utilisation du produit VMware on OVHcloud sous la qualification SecNumCloud"
 updated: 2023-08-28
 ---
 
