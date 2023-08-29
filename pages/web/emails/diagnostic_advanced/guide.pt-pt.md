@@ -2,7 +2,7 @@
 title: 'Envio ou receção de e-mails impossível'
 legacy_guide_number: 2117
 excerpt: "Saiba como reagir em caso de problemas de envio ou receção de e-mails na OVHcloud"
-updated: 2023-06-15
+updated: 2023-08-29
 ---
 
 ## Objetivo
@@ -22,7 +22,11 @@ Não é possível receber ou enviar e-mails a partir do seu software de correio 
 
 ## Instruções
 
-### A minha oferta de e-mail e/ou as minhas contas estão ativas?
+> [!success]
+>
+> Identifique rapidamente, graças aos averbamentos **envio** e **receção**, a problemática que se aplica a cada caso prático abaixo.
+
+### A minha oferta de e-mail e/ou as minhas contas estão ativas? (**envio** e **receção**)
 
 Para que os seus e-mails sejam funcionais, deve possuir uma oferta de e-mail ativa. Se a sua oferta de e-mail estiver associada a uma oferta de alojamento, verifique se esta não expirou. Pode verificar esta informação diretamente na Área de Cliente. Da mesma forma, o seu domínio também deve estar ativo.
 
@@ -36,7 +40,7 @@ Eis como verificar que os seus serviços estão corretamente operacionais:
 - Para uma oferta **E-mail Pro**, aceda à secção `Web Cloud`{.action}, clique em `E-mail Pro`{.action} e selecione a sua plataforma. Clique no separador `Contas de e-mail`{.action}. Verifique o estado da conta de e-mail na coluna `Estado`.
 - Para uma oferta **Exchange**, dirija-se à secção `Web Cloud`{.action}, clique em `Microsoft`{.action}, e depois clique em `Exchange`{.action} e selecione a sua plataforma. Clique no separador `Contas de e-mail`{.action}. Verifique o estado da conta de e-mail na coluna `Estado`.
 
-### Não consigo enviar e-mails a partir do meu software de e-mail
+### Não consigo enviar e-mails a partir do meu software de e-mail (**envio** e/ou **receção**)
 
 Se utiliza um software de mensagens no seu computador (Outlook, Mail do Mac, Thunderbird, etc.) ou no seu smartphone (iOS, Android, etc.) e encontra uma falha no envio ou na receção, verifique os parâmetros de configuração de acordo com a sua oferta de e-mail e o software de mensagens ou de aplicação utilizado.
 
@@ -46,7 +50,7 @@ Se utiliza um software de mensagens no seu computador (Outlook, Mail do Mac, Thu
 
 - Para uma oferta **Exchange**, na secção [Soluções colaborativas Microsoft](/products/web-cloud-email-collaborative-solutions-microsoft-exchange) dos nossos guias **Web Cloud**.
 
-### Os e-mails estão a funcionar a partir do webmail?
+### Os e-mails estão a funcionar a partir do webmail? (**envio** e/ou **receção**)
 
 Para garantir que a avaria não está associada a um erro de configuração, realize um teste de envio e de receção diretamente através do webmail da OVHcloud. Se tudo estiver a funcionar corretamente, verifique a configuração do seu software através dos guias postos à sua disposição.
 
@@ -66,7 +70,7 @@ Como alterar a palavra-passe de um endereço de e-mail:
 
 - Para uma oferta **Exchange**, dirija-se à secção `Web Cloud`{.action}, clique em `Microsoft`{.action}, e depois clique em `Exchange`{.action} e selecione a sua plataforma. No separador `Contas de e-mail`{.action}, clique no botão `...`{.action} e em `Alterar`{.action} para alterar a palavra-passe. <br> Verifique se a dupla autenticação está ativada ao consultar o nosso guia [Configurar a dupla autenticação numa conta Exchange](/pages/web/microsoft-collaborative-solutions/manage_2fa_exchange).
 
-### Há algum incidente ou manutenção em curso no meu serviço?
+### Há algum incidente ou manutenção em curso no meu serviço? (**envio** e/ou **receção**)
 
 Pode verificar as diferentes tarefas em curso no <https://web-cloud.status-ovhcloud.com/>.
 
@@ -74,13 +78,13 @@ Pode verificar as diferentes tarefas em curso no <https://web-cloud.status-ovhcl
 - Para o **E-mail Pro**, dirija-se à secção `Microsoft`
 - Para **Exchange**, dirija-se à secção `Microsoft`
 
-### O apontamento do domínio para o meu serviço de e-mail está correto?
+### O apontamento do domínio para o meu serviço de e-mail está correto? (**receção**)
 
 Verifique que o seu domínio está a apontar corretamente para os servidores de e-mail OVHcloud. Para isso, devem ser configurados registos do tipo MX na sua zona DNS. <br>Consulte o nosso manual [Adicionar um campo MX à configuração do domínio](/pages/web/domains/dns_zone_mx).
 
 ![DNSzone](images/DNS.png){.thumbnail}
 
-### Após o envio de um e-mail, recebo uma mensagem indicando que o meu e-mail não pôde ser enviado, incluindo um código de 3 dígitos
+### Após o envio de um e-mail, recebo uma mensagem indicando que o meu e-mail não pôde ser enviado, incluindo um código de 3 dígitos (**envio**)
 
 Trata-se de uma resposta de erro SMTP. Isto indica que a troca entre o servidor de envio e o servidor de e-mail de receção não pôde ser realizada corretamente. O código serve para determinar o tipo de erro que o servidor encontrou. É geralmente acompanhado de uma mensagem que detalha este erro.
 
@@ -121,7 +125,7 @@ Encontrará abaixo a maioria dos códigos de respostas negativas SMTP utilizados
 |551|Utilizador não local|Esta é geralmente utilizada como uma estratégia de prevenção contra o spam. Indica-se que o envio de correio não é autorizado, por qualquer razão, a transmitir a sua mensagem para outro servidor que não o seu. Contacte o seu fornecedor de serviço|
 |552|Serviço de mensagens pedido interrompido: espaço de armazenamento ultrapassado|O utilizador que tentou contactar já não tem espaço disponível para receber mensagens. Infelizmente, a única solução é contactar o destinatário através de outro método|
 |553|Ação solicitada não efetuada: endereço de e-mail não autorizado|Esta situação é geralmente causada por um endereço de e-mail de destino incorreto. Verifique que o endereço de e-mail está correto|
-|554|Transação falhada, "Nenhum serviço SMTP aqui")|Trata-se geralmente de um problema de blacklist. Verifique se o endereço IP do servidor de e-mail não está "blacklistado" ([SpamHaus](https://check.spamhaus.org/){.external})|
+|554|Transação falhada, "Nenhum serviço SMTP aqui"|Trata-se geralmente de um problema de blacklist. Verifique se o endereço IP do servidor de e-mail não está "blacklistado" ([SpamHaus](https://check.spamhaus.org/){.external})|
 |555|MAIL FROM / RCPT TO, parâmetros não reconhecidos ou não utilizados|O servidor SMTP de saída não regista corretamente o endereço de e-mail utilizado nos seus parâmetros "De" ou "A". Verifique que os endereços de e-mail indicados estão corretos e verifique que não ultrapassou o limite definido pela OVHcloud: 200 emails /hora /conta e 300 emails /hora /ip|
 
 ## Saiba mais

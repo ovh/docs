@@ -2,7 +2,7 @@
 title: 'Wysyłanie lub otrzymywanie e-maili niemożliwe'
 legacy_guide_number: 2117
 excerpt: "Dowiedz się, jak należy zareagować w przypadku problemów z wysyłaniem lub odbieraniem wiadomości e-mail do OVHcloud"
-updated: 2023-06-15
+updated: 2023-08-29
 ---
 
 ## Wprowadzenie
@@ -22,7 +22,11 @@ Nie można odbierać ani wysyłać e-maili przy użyciu programu pocztowego lub 
 
 ## W praktyce
 
-### Czy moja oferta e-mail i/lub moje konta są aktywne?
+> [!success]
+>
+> Dzięki wzmiankom **envoi** i/lub **réception** szybko zidentyfikuj problem mający zastosowanie do każdego z poniższych praktycznych przypadków.
+
+### Czy moja oferta e-mail i/lub moje konta są aktywne? (**envoi** i **réception**)
 
 Aby Twoje e-maile działały, musisz posiadać aktywną ofertę e-mail. Jeśli Twoja usługa e-mail jest przypisana do hostingu, sprawdź, czy oferta nie wygasła. Informacje te możesz sprawdzić bezpośrednio w Panelu klienta. Podobnie Twoja domena musi być aktywna.
 
@@ -36,7 +40,7 @@ Sprawdź, czy Twoje usługi działają poprawnie:
 - W przypadku oferty **E-mail Pro** przejdź do sekcji `Web Cloud`{.action} i kliknij `E-mail Pro`{.action}, a następnie wybierz Twoją platformę. Kliknij kartę `Konta e-mail`{.action}. Sprawdź status odpowiedniego konta e-mail w kolumnie `Status`.
 - W przypadku oferty **Exchange** przejdź do sekcji `Web Cloud`{.action}, kliknij `Microsoft`{.action}, następnie kliknij `Exchange`{.action} i wybierz Twoją platformę. Kliknij kartę `Konta e-mail`{.action}. Sprawdź status odpowiedniego konta e-mail w kolumnie `Status`.
 
-### Nie mogę wysyłać e-maili z programu pocztowego
+### Nie mogę wysyłać e-maili z programu pocztowego (**envoi** i/lub **réception**)
 
 Jeśli korzystasz z programu pocztowego na Twoim komputerze (Outlook, Mail firmy Mac, Thunderbird, itp.) lub na smartfonie (iOS, Android, etc.) i masz problemy z wysyłaniem lub odbieraniem wiadomości, sprawdź parametry konfiguracji zgodnie z Twoją ofertą e-mail oraz używanym oprogramowaniem poczty lub aplikacją.
 
@@ -46,7 +50,7 @@ Jeśli korzystasz z programu pocztowego na Twoim komputerze (Outlook, Mail firmy
 
 - W przypadku oferty **Exchange**, w sekcji [Rozwiązania do pracy zespołowej Microsoft](/products/web-cloud-email-collaborative-solutions-microsoft-exchange) w przewodnikach **Web Cloud** sprawdź konfigurację programu pocztowego w sekcji `Konfiguracja programu pocztowego Exchange` lub smartphonie w `Konfiguracja konta Exchange na smartfonie/tablecie`
 
-### Czy e-maile działają w interfejsie Webmail?
+### Czy e-maile działają w interfejsie Webmail? (**envoi** i/lub **réception**)
 
 Aby upewnić się, że problem nie jest związany z błędem konfiguracji, przeprowadź test wysyłki i odbioru bezpośrednio przez interfejs webmail OVHcloud. Jeśli wszystko działa poprawnie, sprawdź konfigurację oprogramowania w dostępnych przewodnikach.
 
@@ -54,7 +58,7 @@ Przejdź na adres z poziomu przeglądarki internetowej lub smartfona <https://ww
 
 ![webmail](images/webmail.png){.thumbnail}
 
-### Nie mogę się zalogować do interfejsu Webmail
+### Nie mogę się zalogować do interfejsu Webmail 
 
 Upewnij się, że posiadasz właściwe hasło. W razie potrzeby możesz go zmienić. Sprawdź również, czy weryfikacja dwuetapowa jest aktywna ([tylko Exchange](https://www.ovhcloud.com/pl/emails/hosted-exchange/)).
 
@@ -66,7 +70,7 @@ W jaki sposób zmienić hasło do konta e-mail:
 
 - W przypadku oferty **Exchange** przejdź do sekcji `Web Cloud`{.action}, kliknij `Microsoft`{.action}, następnie kliknij `Exchange`{.action} i wybierz Twoją platformę. W zakładce `Konta e-mail`{.action} kliknij przycisk `...`{.action} a następnie `Zmień`{.action}, aby zmienić hasło. <br> Sprawdź, czy weryfikacja dwuetapowa jest włączona, sprawdzając nasz przewodnik [Konfiguracja weryfikacji dwuetapowej na koncie Exchange](/pages/web/microsoft-collaborative-solutions/manage_2fa_exchange).
 
-### Masz problem z utrzymaniem usługi?
+### Masz problem z utrzymaniem usługi? (**envoi** i/lub **réception**)
 
 Możesz sprawdzić różne zadania obecnie wykonywane prace na <https://web-cloud.status-ovhcloud.com/>.
 
@@ -74,13 +78,13 @@ Możesz sprawdzić różne zadania obecnie wykonywane prace na <https://web-clou
 - W przypadku **E-mail Pro** przejdź do sekcji `Microsoft`
 - W przypadku **Exchange** przejdź do sekcji `Microsoft`
 
-### Czy wskazanie domeny do mojej usługi e-mail jest poprawne?
+### Czy wskazanie domeny do mojej usługi e-mail jest poprawne? (**réception**)
 
 Sprawdź, czy Twoja domena wskazuje poprawnie na serwery e-mail OVHcloud. W tym celu rekordy typu MX muszą być skonfigurowane w strefie DNS. <br>Zapoznaj się z naszym przewodnikiem [Dodaj pole MX do konfiguracji domeny](/pages/web/domains/dns_zone_mx).
 
 ![DNSzone](images/DNS.png){.thumbnail}
 
-### Po wysłaniu wiadomości e-mail otrzymuję wiadomość informującą, że mój e-mail nie mógł zostać wysłany, w tym 3-cyfrowy kod
+### Po wysłaniu wiadomości e-mail otrzymuję wiadomość informującą, że mój e-mail nie mógł zostać wysłany, w tym 3-cyfrowy kod (**envoi**)
 
 Jest to powrót błędu SMTP. Oznacza to, że nie można przeprowadzić prawidłowej wymiany między serwerem poczty wychodzącej a serwerem poczty wychodzącej. Kod służy do określenia rodzaju błędu, który wystąpił na serwerze. Zazwyczaj towarzyszy mu komunikat opisujący ten błąd.
 
@@ -121,7 +125,7 @@ Poniżej znajdziesz większość ujemnych kodów odpowiedzi SMTP używanych prze
 |551|Użytkownik nielokalny|Jest to powszechnie stosowane jako strategia zapobiegania spamowi. Wiadomo, że przekazywanie poczty nie jest dozwolone z jakiegokolwiek powodu, aby przekazać wiadomość do innego serwera niż twój. Skontaktuj się z dostawcą usług|
 |552|Polecenie połączenia zostało przerwane: przekroczona przestrzeń dyskowa|Użytkownik, z którym próbowałeś się skontaktować, nie ma już dostępnej przestrzeni na otrzymywanie wiadomości. Niestety, jedynym rozwiązaniem jest kontakt z odbiorcą za pomocą innej metody|
 |553|Operacja nie została wykonana: nieautoryzowany adres e-mail|Jest to zazwyczaj spowodowane przez nieprawidłowy adres e-mail docelowy. Sprawdź, czy dany adres e-mail jest poprawny|
-|554|Transakcja nie powiodła się, "Brak usług SMTP tutaj")|To zazwyczaj problem czarnej plamki. Sprawdź, czy Twój adres IP serwera poczty elektronicznej nie jest czarna ([SpamHaus](https://check.spamhaus.org/){.external})|
+|554|Transakcja nie powiodła się, "Brak usług SMTP tutaj"|To zazwyczaj problem czarnej plamki. Sprawdź, czy Twój adres IP serwera poczty elektronicznej nie jest czarna ([SpamHaus](https://check.spamhaus.org/){.external})|
 |555|MAIL FROM / RCPT TO, ustawienia nie rozpoznane lub nie zostały wdrożone|Wychodzący serwer SMTP nie rejestruje poprawnie adresu e-mail używanego w ustawieniach "De" lub "A". Sprawdź, czy podane adresy e-mail są poprawne i sprawdź, czy nie przekroczyłeś limitu określonego przez OVHcloud: 200 e-maili /godzina /konto i 300 e-maili /godzina /ip|
 
 ## Sprawdź również

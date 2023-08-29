@@ -2,7 +2,7 @@
 title: 'No se puede enviar o recibir mensajes'
 excerpt: Cómo reaccionar ante un fallo de funcionamiento en el envío o recepción de los mensajes de correo electrónico a OVHcloud
 legacy_guide_number: g2117
-updated: 2023-06-15
+updated: 2023-08-29
 ---
 
 ## Objetivo
@@ -22,7 +22,11 @@ updated: 2023-06-15
 
 ## Procedimiento
 
-### ¿Mi solución de correo y/o mis cuentas están activas?
+> [!success]
+>
+> Identifique rápidamente, gracias a las menciones **envío** y **recepción**, la problemática que se aplica a cada caso práctico que se indica a continuación.
+
+### ¿Mi solución de correo y/o mis cuentas están activas? (**envío** y **recepción**)
 
 Para que sus mensajes de correo funcionen, debe tener un servicio de correo activo. Si su servicio de correo está asociado a un plan de alojamiento, compruebe que este no haya expirado. Puede comprobar esta información directamente desde el área de cliente. Asimismo, el dominio también debe estar activo.
 
@@ -36,7 +40,7 @@ Compruebe que los servicios están correctamente operativos:
 - Para un servicio **Email Pro**, acceda a la sección `Web Cloud`{.action}, haga clic en `Email Pro`{.action} y seleccione su plataforma. Haga clic en la pestaña `Cuentas de correo`{.action}. Compruebe el estado de la cuenta de correo en la columna `Estado`.
 - Para un servicio **Exchange**, acceda a la sección `Web Cloud`{.action}, haga clic en `Microsoft`{.action} y seleccione `Exchange`{.action}. Haga clic en la pestaña `Cuentas de correo`{.action}. Compruebe el estado de la cuenta de correo en la columna `Estado`.
 
-### No consigo enviar correos desde mi cliente de correo
+### No consigo enviar correos desde mi cliente de correo (**envío** y/o **recepción**)
 
 Si utiliza un cliente de correo en su ordenador (Outlook, Mail de Mac, Thunderbird, etc.) o su smartphone (iOS, Android, etc.) y si experimenta un fallo de funcionamiento en el envío o en la recepción, compruebe los parámetros de configuración según su solución de correo electrónico y el programa de mensajería o aplicación utilizado.
 
@@ -46,7 +50,7 @@ Si utiliza un cliente de correo en su ordenador (Outlook, Mail de Mac, Thunderbi
 
 - Para un servicio **Exchange**, en la sección [Soluciones colaborativas Microsoft](/products/web-cloud-email-collaborative-solutions-microsoft-exchange) de nuestras guías **Web Cloud**, compruebe la configuración de su cliente de correo en el apartado `Configuración del cliente de correo Exchange` o su smartphone en `Configuración en un smartphone o tablet compatible con Exchange`.
 
-### ¿Los mensajes de correo funcionan desde el webmail?
+### ¿Los mensajes de correo funcionan desde el webmail? (**envío** y/o **recepción**)
 
 Para asegurarse de que el fallo de funcionamiento no se deba a un error de configuración, realice una prueba de envío y de recepción directamente a través del webmail de OVHcloud. Si todo funciona correctamente, compruebe la configuración de su programa a través de las guías disponibles.
 
@@ -66,7 +70,7 @@ Esta guía explica cómo cambiar la contraseña de una dirección de correo:
 
 - Para un servicio **Exchange**, acceda a la sección `Web Cloud`{.action}, haga clic en `Microsoft`{.action} y seleccione `Exchange`{.action}. En la pestaña `Cuentas de correo`{.action}, haga clic en el botón `...`{.action} y luego en `Cambiar`{.action} para cambiar la contraseña. <br> Compruebe si la doble autenticación está activada en nuestra guía [Configurar la doble autenticación en una cuenta Exchange](/pages/web/microsoft-collaborative-solutions/manage_2fa_exchange).
 
-### ¿Hay algún incidente o mantenimiento en curso en mi servicio?
+### ¿Hay algún incidente o mantenimiento en curso en mi servicio? (**envío** y/o **recepción**)
 
 Puede consultar las distintas tareas en curso en <https://web-cloud.status-ovhcloud.com/> en este momento.
 
@@ -74,13 +78,13 @@ Puede consultar las distintas tareas en curso en <https://web-cloud.status-ovhcl
 - Para **Email Pro**, acceda a la sección `Microsoft.`
 - Para **Exchange**, acceda a la sección `Microsoft.`
 
-### ¿Es correcto apuntar el dominio a mi servicio de correo?
+### ¿Es correcto apuntar el dominio a mi servicio de correo? (**recepción**)
 
 Compruebe que el dominio apunta correctamente a los servidores de correo de OVHcloud. Para ello, es necesario configurar los registros de tipo MX en la zona DNS. <br>Para más información, consulte nuestra guía [Añadir un registro MX a la configuración del dominio](/pages/web/domains/dns_zone_mx).
 
 ![DNSzone](images/DNS.png){.thumbnail}
 
-### Tras el envío de un email, recibo un mensaje indicando que no ha podido enviarse mi email, que incluye un código de 3 cifras.
+### Tras el envío de un email, recibo un mensaje indicando que no ha podido enviarse mi email, que incluye un código de 3 cifras. (**envío**)
 
 Se trata de una devolución de error SMTP. Esto significa que el intercambio entre el servidor de envío y el servidor de correo de recepción no se ha podido realizar correctamente. El código se utiliza para determinar el tipo de error que el servidor ha encontrado. Por lo general, viene acompañado de un mensaje en el que se detalla el error.
 
@@ -121,7 +125,7 @@ A continuación encontrará la mayoría de los códigos de respuesta negativos S
 |551|Usuario no local|Esto se usa generalmente como una estrategia de prevención contra el spam. Por alguna razón, el relevo de correo no está autorizado a transferir su mensaje a otro servidor distinto del suyo. Por favor, contacte con su proveedor de servicio.|
 |552|Petición de acción de correo interrumpida: espacio de almacenamiento superado|El usuario al que ha intentado contactar ya no tiene espacio disponible para recibir mensajes. Desafortunadamente, la única solución es contactar con el destinatario a través de otro método|
 |553|Acción solicitada no realizada: dirección de correo electrónico no autorizada|Esto suele deberse a una dirección de correo electrónico de destino incorrecta. Por favor, compruebe que la dirección de correo electrónico es correcta.|
-|554|Transacción fallida, "Aquí no hay servicios SMTP")|En general, se trata de un problema de lista negra. Compruebe si su dirección IP del servidor de correo no es blacklistada ([SpamHaus](https://check.spamhaus.org/){.external})|
+|554|Transacción fallida, "Aquí no hay servicios SMTP"|En general, se trata de un problema de lista negra. Compruebe si su dirección IP del servidor de correo no es blacklistada ([SpamHaus](https://check.spamhaus.org/){.external})|
 |555|MAIL FROM / RCPT TO, parámetros no reconocidos o no implementados|El servidor SMTP saliente no guarda correctamente la dirección de correo electrónico utilizada en los parámetros "De" o "A". Por favor, compruebe que las direcciones de correo electrónico indicadas son correctas y también que no ha superado el límite establecido por OVHcloud: 200 emails /hora por cuenta y 300 emails /hora/ip|
 
 ## Más información
