@@ -119,7 +119,7 @@ See the [Handling «Disk Full» situations documentation](/pages/platform/databa
 ### Features
 
 #### Network
-PostgreSQL clusters are reachable through default port 5432.
+PostgreSQL clusters are reachable on a customized port available through the Control Panel and the API.
 
 Public as well as private networking (vRack) can be used for all the offers.
 
@@ -134,7 +134,7 @@ Here are some considerations to take into account when using private network:
 
 ##### Authorised IPs
 
-Once your service is up and running, you will be able to specify IP addresses (or CIDR blocks) to authorise incoming traffic. Until then, your service will be unreachable. 
+Once your service is up and running, you will be able to specify CIDR blocks to authorise incoming traffic. Until then, your service will be unreachable.
 
 #### Maximum simultaneous connections
 
@@ -169,7 +169,7 @@ Please note that if the database instance is deleted, logs and metrics are also 
 #### Users and roles
 
 Creation of users is allowed via the Control Panel and API with default admin roles and privileges.
-You can't select specific privileges.
+The only specific privilege you can set is `replication`.
 
 ## We want your feedback!
 
