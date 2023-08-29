@@ -77,7 +77,6 @@ Une fois les informations complétées, finalisez les étapes, puis cliquez sur 
 
 **Si vous disposez d'une autre solution e-mail** : reportez-vous aux informations communiquées par votre fournisseur de service e-mail.
 
-
 > [!primary]
 >
 > La modification nécessite un temps de propagation de 4 à 24 heures avant d’être pleinement effective.
@@ -88,6 +87,10 @@ Une fois les informations complétées, finalisez les étapes, puis cliquez sur 
 [Généralités sur les serveurs DNS](/pages/web/domains/dns_server_general_information)
 
 [Éditer une zone DNS OVHcloud](/pages/web/domains/dns_zone_edit)
+
+[Configurer un enregistrement SPF sur son nom de domaine](/pages/web/domains/dns_zone_spf)
+
+[Configurer un enregistrement DKIM](/pages/web/domains/dns_zone_dkim)
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
 
