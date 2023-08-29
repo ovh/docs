@@ -1,14 +1,12 @@
 ---
 title: 'Migrar una cuenta de correo con OVH Mail Migrator'
 excerpt: 'Cómo utilizar OVH Mail Migrator para migrar una cuenta de correo electrónico'
-updated: 2022-02-14
+updated: 2023-08-29
 ---
 
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
-
-**Última actualización: 25/11/2021**
 
 ## Objetivo
 
@@ -54,6 +52,10 @@ Introduzca la información solicitada en cada apartado.
 - **Opciones**: Seleccione el tipo de contenido que quiera migrar. En función del tipo de servidor elegido anteriormente, algunos elementos podrían no estar disponibles.
 
 - **Información**: introduzca una dirección de correo electrónico para recibir una notificación sobre el progreso de la migración.
+
+> [!primary]
+>
+> La migración no afecta a la cuenta de origen. Los datos no se eliminan. Se trata de una copia de la cuenta de origen en el estado en el que se encontraba en el momento del inicio de la migración.
 
 Una vez que haya introducido la información, haga clic en `Iniciar migración`{.action}. Si la información es correcta, comenzará la migración.
 
