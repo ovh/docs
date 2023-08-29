@@ -23,7 +23,7 @@ Cela vous permet :
 
 ## Prérequis
 
-- Un [commpte client OVHcloud](/pages/account/customer/ovhcloud-account-creation).
+- Un [compte client OVHcloud](/pages/account/customer/ovhcloud-account-creation).
 - Savoir configurer des [politiques d'accès via API](/pages/account/customer/iam-policies-api).
 - Vous savez [utiliser l'API OpenStack](/pages/platform/public-cloud/starting_with_nova).
 - Avoir créé un [compte de service via API](/pages/account/policies/manage-service-account).
