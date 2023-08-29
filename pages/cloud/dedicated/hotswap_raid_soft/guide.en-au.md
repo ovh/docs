@@ -448,7 +448,7 @@ root@ns3054662:/home# cat /proc/mdstat
 >>> unused devices: <none>
 ```
 
-The defective disk is now ready to be replaced by a datacentre technician. Once the operation is complete, you just have to resync the RAID. To do this, you can use the following guide: [Configuring software RAID](../raid-soft/){.external}
+The defective disk is now ready to be replaced by a datacentre technician. Once the operation is complete, you just have to resync the RAID. To do this, you can use the following guide: [Configuring software RAID](/pages/cloud/dedicated/raid_soft){.external}
 
 ### On Windows
 
