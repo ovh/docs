@@ -6,9 +6,15 @@ updated: 2023-08-29
 
 <!-- Rappel à mettre au début de chaque page -->
 
+> [!warning]
+>
+> L'utilisation des APIs OVHcloud nécessite des connaissances avancées dans ce domaine. Si besoin, contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/) si vous éprouvez des difficultés.
+>
+
 > [!primary]
 >
 > Pour suivre ce guide, vous devez déjà vous connecter à l'API OVHcloud. Vous trouverez plus de détails sur la page d'[introduction à l'API](/pages/web/domains/api_domain_intro).
+>
 
 <!-- Begin TOC -->
 
