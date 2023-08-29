@@ -7,8 +7,6 @@ updated: 2023-08-29
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-**Última atualização: 29/08/2023**
-
 ## Objetivo
 
 Os produtos abrangidos por estes anúncios de fim de vida e de venda são os serviços Web Cloud Databases, instâncias SGBD contactáveis através da rede pública ou através da rede Web Hosting.

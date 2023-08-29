@@ -3,8 +3,6 @@ title: 'Annonces de fin de vente/vie Web Cloud Databases'
 updated: 2023-08-29
 ---
 
-**Dernière mise à jour le 29/08/2023**
-
 ## Objectif
 
 Les produits couverts par ces annonces de fin de vente et de fin de vie sont les services Web Cloud Databases, instances SGBD joignables via le réseau public ou via le réseau Web Hosting. Référez-vous à la [politique de fin de vie des bases de données managées](/pages/web/clouddb/eol-policy) pour plus d'informations.
