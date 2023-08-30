@@ -23,7 +23,7 @@ Sie können Ihre E-Mails nicht über Ihr E-Mail-Programm oder über das Webmail-
 
 > [!success]
 >
-> Identifizieren Sie anhand der Hinweise **Versand** und **Empfang** schnell die für jeden praktischen Fall zutreffenden Probleme.
+> Identifizieren Sie anhand der Schlagwörter **Versand** und **Empfang** die für jeden praktischen Fall auftretenden Störungen.
 
 ### Sind mein E-Mail Angebot und/oder meine Accounts aktiv?  (**Versand** und **Empfang**)
 
