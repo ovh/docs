@@ -24,9 +24,9 @@ Nie można odbierać ani wysyłać e-maili przy użyciu programu pocztowego lub 
 
 > [!success]
 >
-> Dzięki wzmiankom **envoi** i/lub **réception** szybko zidentyfikuj problem mający zastosowanie do każdego z poniższych praktycznych przypadków.
+> Dzięki wzmiankom **wysyłka** i/lub **odbiór** szybko zidentyfikuj problem mający zastosowanie do każdego z poniższych praktycznych przypadków.
 
-### Czy moja oferta e-mail i/lub moje konta są aktywne? (**envoi** i **réception**)
+### Czy moja oferta e-mail i/lub moje konta są aktywne? (**wysyłka** i **odbiór**)
 
 Aby Twoje e-maile działały, musisz posiadać aktywną ofertę e-mail. Jeśli Twoja usługa e-mail jest przypisana do hostingu, sprawdź, czy oferta nie wygasła. Informacje te możesz sprawdzić bezpośrednio w Panelu klienta. Podobnie Twoja domena musi być aktywna.
 
@@ -40,7 +40,7 @@ Sprawdź, czy Twoje usługi działają poprawnie:
 - W przypadku oferty **E-mail Pro** przejdź do sekcji `Web Cloud`{.action} i kliknij `E-mail Pro`{.action}, a następnie wybierz Twoją platformę. Kliknij kartę `Konta e-mail`{.action}. Sprawdź status odpowiedniego konta e-mail w kolumnie `Status`.
 - W przypadku oferty **Exchange** przejdź do sekcji `Web Cloud`{.action}, kliknij `Microsoft`{.action}, następnie kliknij `Exchange`{.action} i wybierz Twoją platformę. Kliknij kartę `Konta e-mail`{.action}. Sprawdź status odpowiedniego konta e-mail w kolumnie `Status`.
 
-### Nie mogę wysyłać e-maili z programu pocztowego (**envoi** i/lub **réception**)
+### Nie mogę wysyłać e-maili z programu pocztowego (**wysyłka** i/lub **odbiór**)
 
 Jeśli korzystasz z programu pocztowego na Twoim komputerze (Outlook, Mail firmy Mac, Thunderbird, itp.) lub na smartfonie (iOS, Android, etc.) i masz problemy z wysyłaniem lub odbieraniem wiadomości, sprawdź parametry konfiguracji zgodnie z Twoją ofertą e-mail oraz używanym oprogramowaniem poczty lub aplikacją.
 
@@ -50,7 +50,7 @@ Jeśli korzystasz z programu pocztowego na Twoim komputerze (Outlook, Mail firmy
 
 - W przypadku oferty **Exchange**, w sekcji [Rozwiązania do pracy zespołowej Microsoft](/products/web-cloud-email-collaborative-solutions-microsoft-exchange) w przewodnikach **Web Cloud** sprawdź konfigurację programu pocztowego w sekcji `Konfiguracja programu pocztowego Exchange` lub smartphonie w `Konfiguracja konta Exchange na smartfonie/tablecie`
 
-### Czy e-maile działają w interfejsie Webmail? (**envoi** i/lub **réception**)
+### Czy e-maile działają w interfejsie Webmail? (**wysyłka** i/lub **odbiór**)
 
 Aby upewnić się, że problem nie jest związany z błędem konfiguracji, przeprowadź test wysyłki i odbioru bezpośrednio przez interfejs webmail OVHcloud. Jeśli wszystko działa poprawnie, sprawdź konfigurację oprogramowania w dostępnych przewodnikach.
 
@@ -70,7 +70,7 @@ W jaki sposób zmienić hasło do konta e-mail:
 
 - W przypadku oferty **Exchange** przejdź do sekcji `Web Cloud`{.action}, kliknij `Microsoft`{.action}, następnie kliknij `Exchange`{.action} i wybierz Twoją platformę. W zakładce `Konta e-mail`{.action} kliknij przycisk `...`{.action} a następnie `Zmień`{.action}, aby zmienić hasło. <br> Sprawdź, czy weryfikacja dwuetapowa jest włączona, sprawdzając nasz przewodnik [Konfiguracja weryfikacji dwuetapowej na koncie Exchange](/pages/web/microsoft-collaborative-solutions/manage_2fa_exchange).
 
-### Masz problem z utrzymaniem usługi? (**envoi** i/lub **réception**)
+### Masz problem z utrzymaniem usługi? (**wysyłka** i/lub **odbiór**)
 
 Możesz sprawdzić różne zadania obecnie wykonywane prace na <https://web-cloud.status-ovhcloud.com/>.
 
@@ -78,13 +78,13 @@ Możesz sprawdzić różne zadania obecnie wykonywane prace na <https://web-clou
 - W przypadku **E-mail Pro** przejdź do sekcji `Microsoft`
 - W przypadku **Exchange** przejdź do sekcji `Microsoft`
 
-### Czy wskazanie domeny do mojej usługi e-mail jest poprawne? (**réception**)
+### Czy wskazanie domeny do mojej usługi e-mail jest poprawne? (**odbiór**)
 
 Sprawdź, czy Twoja domena wskazuje poprawnie na serwery e-mail OVHcloud. W tym celu rekordy typu MX muszą być skonfigurowane w strefie DNS. <br>Zapoznaj się z naszym przewodnikiem [Dodaj pole MX do konfiguracji domeny](/pages/web/domains/dns_zone_mx).
 
 ![DNSzone](images/DNS.png){.thumbnail}
 
-### Po wysłaniu wiadomości e-mail otrzymuję wiadomość informującą, że mój e-mail nie mógł zostać wysłany, w tym 3-cyfrowy kod (**envoi**)
+### Po wysłaniu wiadomości e-mail otrzymuję wiadomość informującą, że mój e-mail nie mógł zostać wysłany, w tym 3-cyfrowy kod (**wysyłka**)
 
 Jest to powrót błędu SMTP. Oznacza to, że nie można przeprowadzić prawidłowej wymiany między serwerem poczty wychodzącej a serwerem poczty wychodzącej. Kod służy do określenia rodzaju błędu, który wystąpił na serwerze. Zazwyczaj towarzyszy mu komunikat opisujący ten błąd.
 
