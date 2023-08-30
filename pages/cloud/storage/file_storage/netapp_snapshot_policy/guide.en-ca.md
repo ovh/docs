@@ -16,8 +16,8 @@ Learn how to create a snapshot policy, apply it to your volume, modify and delet
 
 ## Basics
 
-A volume snapshot is a point-in-time, read-only copy of a volume.
-Snapshots are created from an existing, operational volume. They cannot exist without it. 
+A volume snapshot is a point-in-time, read-only copy of a volume.<br>
+Snapshots are created from an existing, operational volume. They cannot exist without it.<br>
 A snapshot policy allows you to automate the snapshot creation using different parameters. The policy can then be modified and deleted if you no longer need it.
 
 
