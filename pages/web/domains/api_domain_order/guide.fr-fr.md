@@ -1,16 +1,20 @@
 ---
 title: "Commander un nom de domaine"
-excerpt: "Utilisez l'API publique OVHcloud pour commander vos noms de domaines"
-updated: 2022-05-05
+excerpt: "Découvrez comment utiliser l'API publique OVHcloud pour commander vos noms de domaines"
+updated: 2023-08-29
 ---
-
-**Dernière mise à jour le 05/05/2022**
 
 <!-- Rappel à mettre au début de chaque page -->
 
+> [!warning]
+>
+> L'utilisation des APIs OVHcloud nécessite des connaissances avancées dans ce domaine. Si vous éprouvez des difficultés, contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
+>
+
 > [!primary]
 >
-> Pour suivre ce guide, vous devez déjà vous connecter à l'API OVHcloud. Vous trouverez plus de détails sur la page d'[introduction à l'API](/pages/web/domains/api_domain_intro).
+> Pour suivre ce guide, vous devez d'abord vous connecter à l'API OVHcloud. Vous trouverez plus de détails sur la page d'[introduction à l'API](/pages/web/domains/api_domain_intro).
+>
 
 <!-- Begin TOC -->
 
@@ -556,8 +560,10 @@ Voici la liste exhaustive des différentes configurations requises pour un nom d
 | `REASON`            | string                         | oui si présent    | Il indique que le registre demande la raison pour laquelle le domaine veut être commandé. Cela concerne généralement des domaines réservés à des usages spécifiques (ville par exemple)                                                                                                                    |
 | `CLAIMS_NOTICE`     | string                         | oui si présent    | Indique si un avis de marque est présent sur le domaine. Si oui, alors le domaine est protégé par une marque et une notification sera alors envoyée au détenteur de la marque. Si le registrant n'est pas détenteur de la marque, le domaine pourra être supprimé par la suite sans remboursement possible |
 | `PROTECTED_CODE`    | string                         | oui si présent    | Certains domaines sont réservés par un registre et nécessitent un code spécifique pour débloquer leur obtention                                                                                                                                                                                            |
-| `OWNER_LEGAL_AGE`   | bool                           | oui               | Toujours présent, il s'agit d'une configuration de type "opt-in" afin de certifier que le registrant à l'âge légal pour posséder un nom de domaine                                                                                                                                                         |
+| `OWNER_LEGAL_AGE`   | bool                           | oui               | Toujours présent, il s'agit d'une configuration de type "opt-in" afin de certifier que le registrant a l'âge légal pour posséder un nom de domaine                                                                                                                                                         |
 | `AUTH_INFO`         | string                         | non               | Code d'autorisation utilisé pour prouver que vous êtes le propriétaire du domaine. Utilisé pour les transferts de nom de domaines.                                                                                                                                                                         |
+| `DNS`               | string                         | non               | Permet de renseigner les serveurs DNS à utiliser pour le nom de domaine. Ceux-ci seront actifs dès la livraison du domaine. Pour renseigner les serveurs DNS, séparez-les par un `;` sans espaces. *Exemple* : `dnsXX.ovh.net;nsXX.ovh.net`                                                                                                                                                                         |
+| `KEEP_DNS`          | bool                           | non               | Uniquement dans le cadre d'un transfert entrant de nom de domaine : permet d'indiquer que l'on souhaite conserver les serveurs DNS déclarés initialement chez l'ancien bureau d'enregistrement.                                                                                                                                                                 |
 
 > [!warning]
 >
