@@ -1,10 +1,8 @@
 ---
 title: Migrer des comptes e-mail via OVH Mail Migrator
 excerpt: Apprenez à migrer vos comptes e-mail vers OVHcloud grâce à notre outil OVH Mail Migrator
-updated: 2022-02-14
+updated: 2023-08-29
 ---
-
-**Dernière mise à jour le 25/11/2021**
 
 ## Objectif
 
@@ -50,6 +48,10 @@ Sur la page qui s'affiche, complétez maintenant les informations pour chaque pa
 - **Options** : sélectionnez les éléments que vous souhaitez migrer. Certains contenus peuvent être indisponibles selon le type de serveur choisi auparavant.
 
 - **Informations** : renseignez une adresse e-mail afin d'être notifié sur l'avancement de la migration.
+
+> [!primary]
+>
+> La migration n'affecte pas le compte source, les données ne sont pas supprimées. Il s'agit d'une copie du compte source dans l'état où il se trouve au moment du lancement de la migration.
 
 Cliquez sur `Démarrer la migration`{.action} une fois les informations complétées. Si ces dernières sont correctes, le processus débutera.
 
