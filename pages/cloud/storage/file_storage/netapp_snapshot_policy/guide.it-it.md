@@ -1,7 +1,7 @@
 ---
 title: Enterprise File Storage - Gestisci le politiche degli Snapshot
 excerpt: "Scopri come creare una politica di Snapshot, applicarla sul tuo volume, modificarla ed eliminarla dal tuo spazio cliente"
-updated: 2023-08-07
+updated: 2023-08-30
 ---
 
 > [!primary]
@@ -63,7 +63,9 @@ Una volta creata la politica di Snapshot, è possibile applicarla a un volume.
 ![ApplySnapshotPolicy](images/Snapshot_Policy_3.png){.thumbnail}
 
 2\. Seleziona dall'elenco il volume al quale applicare la politica di Snapshot.
+
 3\. Accedi alla sezione `Snapshot`{.action} e seleziona la politica che vuoi applicare nella sezione `Gestisci la politica di Snapshot`{.action}. 
+
 4\. Clicca sul pulsante `Applica la politica`{.action}.
 
 ![ApplySnapshotPolicy](images/Snapshot_Policy_4.png){.thumbnail}
@@ -82,6 +84,7 @@ Per eliminare una politica di Snapshot:
 ![DeleteSnapshotPolicy](images/Snapshot_Policy_5.png){.thumbnail}
 
 2\. Selezionare la politica da eliminare.
+
 3\. Clicca sul pulsante di eliminazione rappresentato da un `cestino`{.action}.
 
 ![DeleteSnapshotPolicy](images/Snapshot_Policy_6.png){.thumbnail}

@@ -1,7 +1,7 @@
 ---
 title: Enterprise File Storage - Zarządzanie polityką wykonywania snapshotów
 excerpt: "Dowiedz się, jak utworzyć politykę wykonywania snapshotów, zastosować ją do Twojego wolumenu, zmodyfikować i usunąć z poziomu panelu klienta"
-updated: 2023-08-07
+updated: 2023-08-30
 ---
 
 > [!primary]
@@ -63,7 +63,9 @@ Po utworzeniu polityki wykonywania snapshotów możesz ją zastosować do wolume
 ![ApplySnapshotPolicy](images/Snapshot_Policy_3.png){.thumbnail}
 
 2\. Wybierz z listy wolumin, do którego ma zostać zastosowana polityka wykonywania snapshotów.
+
 3\. Przejdź do sekcji `Snapshoty`{.action} i do sekcji `Zarządzaj polityką wykonywania snapshotów`{.action}, wybierz politykę, którą chcesz zastosować. 
+
 4\. Kliknij przycisk `Zastosuj politykę`{.action}.
 
 ![ApplySnapshotPolicy](images/Snapshot_Policy_4.png){.thumbnail}
@@ -82,6 +84,7 @@ Aby usunąć politykę wykonywania snapshotów:
 ![DeleteSnapshotPolicy](images/Snapshot_Policy_5.png){.thumbnail}
 
 2\. Wybierz politykę, którą chcesz usunąć.
+
 3\. Kliknij przycisk Usuń reprezentowany przez `kosz`{.action}.
 
 ![DeleteSnapshotPolicy](images/Snapshot_Policy_6.png){.thumbnail}
