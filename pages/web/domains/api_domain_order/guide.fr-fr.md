@@ -13,7 +13,7 @@ updated: 2023-08-29
 
 > [!primary]
 >
-> Pour suivre ce guide, vous devez déjà vous connecter à l'API OVHcloud. Vous trouverez plus de détails sur la page d'[introduction à l'API](/pages/web/domains/api_domain_intro).
+> Pour suivre ce guide, vous devez d'abord vous connecter à l'API OVHcloud. Vous trouverez plus de détails sur la page d'[introduction à l'API](/pages/web/domains/api_domain_intro).
 >
 
 <!-- Begin TOC -->
