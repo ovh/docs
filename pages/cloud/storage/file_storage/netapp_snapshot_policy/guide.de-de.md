@@ -38,7 +38,7 @@ Außerdem müssen Sie die Anzahl der Kopien angeben, die Sie aufbewahren möchte
 
 ![SnapshotPolicy](images/Snapshot_Policy_1.png){.thumbnail}
 
-2\. Geben Sie in der neuen Ansicht einen Namen und eine Beschreibung für die Policy ein. Verwenden Sie anschließend den Button `Eine neue Regel erstellen`{.action}, um eine oder mehrere Regeln zur Policy hinzuzufügen.
+2\. Geben Sie in der neuen Ansicht einen Namen und eine Beschreibung für die Policy ein. Verwenden Sie anschließend den Button `+ Eine neue Regel erstellen`{.action}, um eine oder mehrere Regeln zur Policy hinzuzufügen.
 
 ![SnapshotPolicy](images/Snapshot_Policy_2.png){.thumbnail}
 
