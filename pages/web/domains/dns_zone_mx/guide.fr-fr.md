@@ -1,7 +1,7 @@
 ---
 title: Configurer un enregistrement MX
 excerpt: Découvrez comment configurer un enregistrement MX sur votre nom de domaine chez OVHcloud
-updated: 2023-08-28
+updated: 2023-08-30
 ---
 
 ## Objectif
@@ -15,13 +15,13 @@ L'enregistrement MX permet de relier un nom de domaine au serveur de sa platefor
 - Disposer d'un accès à la gestion du nom de domaine concerné depuis l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 - Le nom de domaine concerné doit utiliser la configuration OVHcloud (c'est à dire les serveurs DNS d'OVHcloud).
-- Disposer d'une offre MX Plan (incluse dans offre d’[hébergement web](https://www.ovhcloud.com/fr/web-hosting/), l'[hébergement gratuit 100M](https://www.ovhcloud.com/fr/domains/free-web-hosting/) ou l'offre MX Plan commandé séparément ), une de nos [offre e-mail OVHcloud](https://www.ovhcloud.com/fr/emails/), ou un service e-mail externe.
+- Disposer d'une offre MX Plan (incluse dans l'offre d’[hébergement web](https://www.ovhcloud.com/fr/web-hosting/), l'[hébergement gratuit 100M](https://www.ovhcloud.com/fr/domains/free-web-hosting/) ou l'offre MX Plan commandée séparément), une de nos [offres e-mail OVHcloud](https://www.ovhcloud.com/fr/emails/), ou un service e-mail externe.
 
 > [!primary]
 >
 > - Si votre nom de domaine n'utilise pas les serveurs DNS d'OVHcloud, vous devez réaliser la modification des enregistrements MX depuis l'interface du prestataire gérant la configuration de votre nom de domaine.
 >
-> - Si votre nom de domaine est déposé chez OVHcloud, vous pouvez vérifier si ce dernier utilise notre configuration OVHcloud dans votre [espace client](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) depuis l'onglet `Serveurs DNS`{.action}, une fois positionné sur le domaine concerné, dans l'onglet `informations générales`{.action}. Si la mention « **serveurs DNS** » est sur `Actif`, vous utilisez bien les serveurs DNS OVHcloud
+> - Si votre nom de domaine est déposé chez OVHcloud, vous pouvez vérifier si ce dernier utilise notre configuration OVHcloud dans votre [espace client](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), dans la partie `Serveurs DNS`{.action}, une fois positionné sur le domaine concerné, dans l'onglet `informations générales`{.action}. Si la mention `Actif` est présente sous « **serveurs DNS** », vous utilisez bien les serveurs DNS OVHcloud.
 >
 > ![email](images/email-dns-conf-mx00.png){.thumbnail}
 
@@ -31,17 +31,18 @@ L'enregistrement MX permet de relier un nom de domaine au serveur de sa platefor
 
 Les enregistrements MX (**M**ail e**X**change) permettent de relier votre nom de domaine aux serveurs e-mail de réception attachés à votre service e-mail. Nous allons nous appuyer sur un exemple.
 
-Lorsque l'adresse **sender@otherdomain.ovh** envoie un e-mail vers **contact@mydomain.ovh**, le serveur d'envoi e-mail (**Outgoing mail server**) va intérroger la zone DNS du nom de domaine **mydomain.ovh** et lire les enregistrements **MX** pour transmettre l'e-mail.
+Lorsque l'adresse **sender@otherdomain.ovh** envoie un e-mail vers **contact@mydomain.ovh**, le serveur d'envoi e-mail (**Outgoing mail server**) va interroger la zone DNS du nom de domaine **mydomain.ovh** et lire les enregistrements **MX** pour transmettre l'e-mail.
 
 ![email](images/email-dns-conf-mx01.png){.thumbnail}
 
-L'e-mail sera envoyé vers la cible **mx0.mail.ovh.net** qui est précédée de la valeur **0**. Cette valeur est appelée priorité, la plus faible est interrogée en premier et la plus élevée en dernier. Cela signifie que la présence de plusieurs enregistrements permet de pallier une absence de réponse de l'enregistrement MX ayant la plus faible priorité.
+L'e-mail sera envoyé vers la cible **mx0.mail.ovh.net** qui est précédée de la valeur **0**. Cette valeur est appelée priorité. La plus faible valeur est interrogée en premier et la plus élevée en dernier. Cela signifie que la présence de plusieurs enregistrements permet de pallier une absence de réponse de l'enregistrement MX ayant la plus faible priorité.
 
-Parce qu'il est possible de paramétrer plusieurs enregistrements MX pour un même nom de domaine, il est nécessaire de définir une priorité pour chacun d'entre eux. Cela permet aux serveurs qui vous envoient des e-mails de savoir vers quel serveur ils doivent en priorité les acheminer. Vous ne pouvez cependant ajouter que des enregistrements MX appartenant au même prestataire.
+Etant donné qu'il est possible de paramétrer plusieurs enregistrements MX pour un même nom de domaine, il est nécessaire de définir une priorité pour chacun d'entre eux. Cela permet aux serveurs qui vous envoient des e-mails de savoir vers quel serveur ils doivent les acheminer en priorité. Vous ne pouvez cependant ajouter que des enregistrements MX appartenant au même prestataire.
 
 > [!warning]
 >
-> De manière générale, **changer les enregistrements MX dans la zone DNS de son nom de domaine est une manipulation délicate** : réaliser une mauvaise manipulation peut rendre impossible la réception des e-mails sur vos adresses. Nous vous invitons à être vigilant lors de la réalisation de cette manipulation.
+> De manière générale, **modifier les enregistrements MX dans la zone DNS de son nom de domaine est une manipulation délicate** : réaliser une mauvaise manipulation peut rendre impossible la réception des e-mails sur vos adresses. Nous vous invitons à être vigilant lors de la réalisation de cette manipulation.
+> En cas de doute, nous vous conseillons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/).
 
 ### Connaître la configuration MX d'OVHcloud <a name="mxovhcloud"></a>
 
@@ -59,23 +60,25 @@ Ces enregistrements MX doivent être configurés dans la zone DNS de votre nom d
 
 ### Configurer un enregistrement MX dans une zone DNS OVHcloud
 
-Pour créer ou modifier les enregistrements MX dans la configuration OVHcloud de votre nom de domaine, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Rendez-vous dans la section `Noms de domaine`{.action}, cliquez sur le domaine concerné, puis rendez-vous dans l'onglet `Zone DNS`{.action}.
+Pour créer ou modifier les enregistrements MX dans la configuration OVHcloud de votre nom de domaine, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Rendez-vous dans la section `Noms de domaine`{.action}, cliquez sur le domaine concerné puis rendez-vous dans l'onglet `Zone DNS`{.action}.
 
-Le tableau affiche la configuration OVHcloud de votre nom de domaine. Chaque ligne correspond à un enregistrement DNS. Nous vous invitons à vérifier dans un premier temps si des enregistrements MX existent déjà dans la configuration DNS OVHcloud de votre nom de domaine en vous aidant de la liste de filtrage situé au dessus du tableau de votre zone DNS, sélectionnez le type **MX**, puis validez pour n'afficher que les entrées DNS MX de votre zone DNS. Appuyez-vous de la capture ci-dessous
+Le tableau affiche la configuration OVHcloud de votre nom de domaine. Chaque ligne correspond à un enregistrement DNS.
+
+Dans un premier temps, nous vous invitons à vérifier si des enregistrements MX existent déjà dans la configuration DNS OVHcloud de votre nom de domaine, en vous aidant de la liste de filtrages située au dessus du tableau de votre zone DNS.<br>
+Sélectionnez le type **MX** puis validez pour n'afficher que les entrées DNS MX de votre zone DNS. Aidez-vous de la capture d'écran ci-dessous.
 
 ![dnsmxrecord](images/mx-records-dns-zone.png){.thumbnail}
 
-- Si des enregistrements MX existent déjà et que vous souhaitez les modifier, cliquez sur le bouton `...`{.action} à droite de chaque ligne du tableau concernée, puis cliquez sur `Modifier l'entrée`{.action}.
+- Si des enregistrements MX existent déjà et que vous souhaitez les modifier, cliquez sur le bouton `...`{.action} à droite de chaque ligne du tableau concernée puis cliquez sur `Modifier l'entrée`{.action}.
+- Si aucun enregistrement MX n'est présent, cliquez sur le bouton `Ajouter une entrée`{.action} à droite du tableau puis choisissez `MX`{.action}. Complétez les informations demandées en fonction de la solution e-mail choisie :
 
-- Si aucun enregistrement MX n'est présent, cliquez sur le bouton `Ajouter une entrée`{.action} à droite du tableau, puis choisissez `MX`{.action}. Remplissez les informations demandées en fonction de la solution e-mail choisie :
-
-**Si vous disposez d'une solution e-mail OVHcloud** : reportez-vous aux informations données à l'étape [« Connaître la configuration MX d'OVHcloud »](#mxovhcloud).
+**Si vous disposez d'une solution e-mail OVHcloud**, reportez-vous aux informations données à l'étape « [Connaître la configuration MX d'OVHcloud ](#mxovhcloud) ».
 
 ![dnsmxrecord](images/mx-records-dns-zone-modif.png){.thumbnail}
 
-Une fois les informations complétées, finalisez les étapes, puis cliquez sur `Valider`{.action}.
+Une fois les informations complétées, finalisez les étapes puis cliquez sur `Valider`{.action}.
 
-**Si vous disposez d'une autre solution e-mail** : reportez-vous aux informations communiquées par votre fournisseur de service e-mail.
+**Si vous disposez d'une autre solution e-mail**, reportez-vous aux informations communiquées par votre fournisseur de service e-mail.
 
 > [!primary]
 >
