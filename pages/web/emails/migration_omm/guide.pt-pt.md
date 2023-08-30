@@ -54,7 +54,7 @@ Na nova página, preencha as informações para cada parte.
 
 > [!primary]
 >
-> A migração não afeta a conta de origem, os dados não são eliminados. Trata-se de uma cópia da conta de origem quando esta é iniciada a migração.
+> A migração não afecta a conta de origem, os dados não são eliminados. Trata-se de uma cópia da conta de origem no estado em que se encontra quando a migração é iniciada.
 
 Clique em `Iniciar a migração`{.action} depois de as informações estarem completadas. Se estas últimas estiverem corretas, o processo começará.
 
