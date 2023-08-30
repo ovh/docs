@@ -29,7 +29,7 @@ Utiliser un script personnalisé peut-être intéressant dans les cas suivants :
 > Le redémarrage d'un serveur dédié peut engendrer l'interruption de services non redondés qui dépendent uniquement du serveur redémarré.
 >
 
-<!-- markdownlint-disable-next-line MD028 -->
+
 > [!warning]
 >
 > Cette fonctionnalité n'est disponible que sur les serveurs `UEFI`. Nous travaillons actuellement à ajouter cette fonctionnalité sur les serveurs en boot `LEGACY`.

@@ -110,7 +110,7 @@ ssh root@IPv4_del_servidor
 **Ejemplo de usuario preconfigurado:**
 
 ```bash
-ssh root@nombre_de_referencia_del_servidor
+ssh ubuntu@nombre_de_referencia_del_servidor
 ```
 
 Para más información sobre SSH, consulte nuestra guía [Introducción al SSH](/pages/cloud/dedicated/ssh_introduction).

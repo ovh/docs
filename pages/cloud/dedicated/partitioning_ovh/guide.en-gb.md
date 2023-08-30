@@ -159,7 +159,7 @@ A partition layout is a list of partitions. Here is an example of a partition st
 >
 > >
 
-<!-- markdownlint-disable-next-line MD028 -->
+
 > [!primary]
 >
 > type: is one of primary, logical, lv
@@ -169,7 +169,7 @@ A partition layout is a list of partitions. Here is an example of a partition st
 > - logical: if you don't know what to choose
 >
 
-<!-- markdownlint-disable-next-line MD028 -->
+
 > [!primary]
 >
 > volumeName : two use cases

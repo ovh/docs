@@ -10,9 +10,9 @@ updated: 2023-08-24
 
 ## Ziel
 
-Die unter [https://api.ovh.com/](https://api.ovh.com/){.external} verfügbare API erlauben es Ihnen, OVHcloud Produkte zu bestellen, zu verwalten, zu aktualisieren und zu konfigurieren, ohne ein grafisches Interface wie das Kundencenter zu verwenden.
+Die unter [https://api.ovh.com/](https://api.ovh.com/){.external} verfügbare API erlaubt es Ihnen, OVHcloud Produkte zu bestellen, zu verwalten, zu aktualisieren und zu konfigurieren, ohne ein grafisches Interface wie das Kundencenter zu verwenden.
 
-**Hier erfahren Sie, wie Sie die OVHcloud APIs verwenden und mit Ihren Anwendungen verbinden.**
+**Hier erfahren Sie, wie Sie die OVHcloud API verwenden und mit Ihren Anwendungen verbinden.**
 
 ## Voraussetzungen
 
@@ -36,9 +36,9 @@ Klicken Sie auf der [OVHcloud API Seite](https://api.ovh.com/) auf `Explore the 
 
 Um die API für Ihre Dienste zu verwenden, loggen Sie sich mit Ihren OVHcloud Zugangsdaten ein:
 
-- Klicken Sie auf oben rechts `Login`{.action}. 
+- Klicken Sie oben rechts auf `Login`{.action}. 
 - Geben Sie Ihre OVHcloud Zugangsdaten ein. 
-- Legen Sie unter der Bezeichnung **Validity** einen Zeitraum fest, währenddessen Aktionen über die OVHcloud API erlaubt sein sollen.
+- Legen Sie unter der Bezeichnung **Validity** einen Zeitraum fest, während dessen Aktionen über die OVHcloud API erlaubt sein sollen.
 
 ![API](images/login.png){.thumbnail} 
 
@@ -129,7 +129,7 @@ Die Tabs `PHP` und `Python` enthalten die Elemente, die entsprechend der Anwendu
 
 > [!success]
 >
-> Die APIs von OVHcloud sind nun mit dem Oauth2-Protokoll kompatibel. Weitere Informationen finden Sie in der Anleitung „[So authentifizieren Sie sich über die OVHcloud API mit Oauth2 (EN)](/pages/account/api/authenticate-api-with-service-account)“.
+> Die OVHcloud API ist mit dem Protokoll Oauth2 kompatibel. Weitere Informationen finden Sie in der Anleitung zur [Verwendung von Service Accounts zur Authentifizierung über OVHcloud APIs (EN)](/pages/account/api/authenticate-api-with-service-account).
 >
 
 Jede Anwendung, die mit der OVHcloud API kommunizieren möchte, muss zuerst freigegeben werden.
