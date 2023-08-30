@@ -54,7 +54,7 @@ Ergänzen Sie auf der angezeigten Seite alle angeforderten Informationen.
 
 > [!primary]
 >
-> Die Migration wirkt sich nicht auf das Quellkonto aus, die Daten werden nicht gelöscht. Dies ist eine Kopie des Quellkontos in dem Zustand, in dem es sich zum Zeitpunkt des Migrationsbeginns befindet.
+> Die Migration hat keine Auswirkungen auf den Quell-Account; die Daten werden also nicht gelöscht. Es wird eine Kopie des Quell-Accounts im Zustand zum Zeitpunkt des Migrationsbeginns angelegt.
 
 Klicken Sie auf `Start Migration`{.action}, nachdem Sie alle Daten eingegeben haben. Wenn die Informationen korrekt sind, startet die Migration.
 
