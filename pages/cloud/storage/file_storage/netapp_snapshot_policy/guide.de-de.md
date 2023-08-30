@@ -20,7 +20,7 @@ In dieser Anleitung geben wir Ihnen einen Überblick über die Verwaltung Ihrer 
 
 ## Grundlagen
 
-Ein Volume Snapshot ist eine schreibgeschützte Point-in-Time-Kopie eines Volumes.
+Ein Volume Snapshot ist eine schreibgeschützte Point-in-Time-Kopie eines Volumes.<br>
 Snapshots werden aus einem bestehenden, betriebsbereiten Volume erstellt. Sie können nicht separat davon existieren.
 
 Eine Snapshot-Policy erlaubt es, die Erstellung von Snapshots anhand verschiedener Einstellungen zu automatisieren. Diese Regel kann bearbeitet und gelöscht werden, wenn Sie sie nicht mehr benötigen.
