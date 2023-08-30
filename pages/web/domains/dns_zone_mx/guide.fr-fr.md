@@ -37,7 +37,7 @@ Lorsque l'adresse **sender@otherdomain.ovh** envoie un e-mail vers **contact@myd
 
 L'e-mail sera envoyé vers la cible **mx0.mail.ovh.net** qui est précédée de la valeur **0**. Cette valeur est appelée priorité. La plus faible valeur est interrogée en premier et la plus élevée en dernier. Cela signifie que la présence de plusieurs enregistrements permet de pallier une absence de réponse de l'enregistrement MX ayant la plus faible priorité.
 
-Etant donné qu'il est possible de paramétrer plusieurs enregistrements MX pour un même nom de domaine, il est nécessaire de définir une priorité pour chacun d'entre eux. Cela permet aux serveurs qui vous envoient des e-mails de savoir vers quel serveur ils doivent les acheminer en priorité. Vous ne pouvez cependant ajouter que des enregistrements MX appartenant au même prestataire.
+Vous pouvez paramétrer plusieurs enregistrements MX pour un même nom de domaine. Il est alors nécessaire de définir un numéro de priorité pour chacun d'entre eux. Les enregistrements MX sont interrogés par ordre croissant, du numéro le plus faible au plus élevé, jusqu'à obtenir une réponse du serveur de réception.
 
 > [!warning]
 >
