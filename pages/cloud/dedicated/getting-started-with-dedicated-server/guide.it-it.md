@@ -104,13 +104,13 @@ Utilizza questi esempi per connetterti al tuo server e sostituisci le informazio
 **Esempio con root:**
 
 ```bash
-sh ssh root@IPv4_del_tuo_server 
+ssh root@IPv4_del_tuo_server 
 ```
 
 **Esempio con un utente preconfigurato:**
 
 ```bash
-ssh root@nome_di_riferimento_del_tuo_server
+ssh ubuntu@nome_di_riferimento_del_tuo_server
 ```
 
 Per saperne di più su SSH, consulta la nostra guida [Introduzione a SSH](/pages/cloud/dedicated/ssh_introduction).

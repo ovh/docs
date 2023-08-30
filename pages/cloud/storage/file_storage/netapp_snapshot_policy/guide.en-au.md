@@ -1,7 +1,7 @@
 ---
 title: Enterprise File Storage - Manage your snapshot policies
 excerpt: Find out how to manage snapshot policies for Enterprise File Storage
-updated: 2023-08-07
+updated: 2023-08-30
 ---
 
 ## Objective
@@ -31,9 +31,11 @@ A snapshot policy allows you to automate snapshots by defining the creation freq
 It is also required to specify the number of copies you want to retain.
 
 1\. From your OVHcloud Enterprise File Storage Control Panel, select the `Snapshot policy`{.action} tab.
+
 ![SnapshotPolicy](images/Snapshot_Policy_1.png){.thumbnail}
 
 2\. Set your snapshot policy name, a policy description and then use the button `+ Add a new rule`{.action} to add one or more rules to the policy.
+
 ![SnapshotPolicy](images/Snapshot_Policy_2.png){.thumbnail}
 
 3\. Fill in the fields to specify the time of day, days of a month, week days and months for the snapshot creation. You also have to enter a prefix for the snapshots, needed for naming them.
@@ -53,11 +55,15 @@ You cannot modify a snapshot policy after creating it. You will have to delete i
 Once the snapshot policy is created, you can apply it to a volume.
 
 1\. Go to the tab `Volumes`{.action} of your capacity pool.
+
 ![ApplySnapshotPolicy](images/Snapshot_Policy_3.png){.thumbnail}
 
 2\. Choose the volume you want the snapshot policy applied to from the list.
+
 3\.	Go the `Snapshots`{.action} section and in the `Manage the snapshot policy`{.action} section, select the policy you want to apply. 
+
 4\.	Click on the button `Apply the policy`{.action}.
+
 ![ApplySnapshotPolicy](images/Snapshot_Policy_4.png){.thumbnail}
 
 ### Deleting a snapshot policy
@@ -70,11 +76,15 @@ Once the snapshot policy is created, you can apply it to a volume.
 To delete a snapshot policy:
 
 1\.	Go to the `Snapshot policies`{.action} tab of your capacity pool.
+
 ![DeleteSnapshotPolicy](images/Snapshot_Policy_5.png){.thumbnail}
 
 2\.	Select the policy you want to delete.
+
 3\.	Click on the `Trash can`{.action} deletion button.
+
 ![DeleteSnapshotPolicy](images/Snapshot_Policy_6.png){.thumbnail}
+
 
 ## Go further
 

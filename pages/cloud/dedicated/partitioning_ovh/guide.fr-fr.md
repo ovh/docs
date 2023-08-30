@@ -163,7 +163,7 @@ Une disposition de partition est une liste de partitions. Voici un exemple de st
 > order : il s'agit de l'ordre des partitions dans la matrice de partitions.
 >
 
-<!-- markdownlint-disable-next-line MD028 -->
+
 > [!primary]
 >
 > type : primary, logical, lv.
@@ -173,7 +173,7 @@ Une disposition de partition est une liste de partitions. Voici un exemple de st
 > - logical: si vous ne savez pas quoi choisir
 >
 
-<!-- markdownlint-disable-next-line MD028 -->
+
 > [!primary]
 >
 > volumeName : 2 cas d'utilisation :

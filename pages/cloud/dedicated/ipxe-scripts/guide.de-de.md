@@ -12,7 +12,7 @@ updated: 2023-08-24
 
 > [!warning]
 >
-> Dieses Tutorial richtet sich an erfahrene Anwender, die mindestens Grundkenntnisse über [Preboot Execution Environment (PXE)](https://en.wikipedia.org/wiki/Preboot_Execution_Environment) und die bei OVHcloud verwendete Implementierung [iPXE](https://ipxe.org/) haben.
+> Dieses Tutorial richtet sich an erfahrene Anwender, die mindestens Grundkenntnisse von [Preboot Execution Environment (PXE)](https://en.wikipedia.org/wiki/Preboot_Execution_Environment) und die bei OVHcloud verwendete Implementierung [iPXE](https://ipxe.org/) haben.
 >
 
 Im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) kann der Boot-Modus nur aus einer vorgegebenen Liste ausgewählt werden: Primäre Disk oder Rescue.
@@ -33,10 +33,10 @@ Personalisierte Skripte können in folgenden Fällen interessant sein:
 > Beim Neustart eines Dedicated Servers kann es zur Unterbrechung von Diensten kommen, die ausschließlich von diesem Server abhängig sind.
 >
 
-<!-- markdownlint-disable-next-line MD028 -->
+
 > [!warning]
 >
-> Diese Funktionalität ist nur für `UEFI` Dedicated Servers verfügbar. Wir arbeiten derzeit, um diese Funktionalität auch für `LEGACY` boot Dedicated Servers hinzufügen.
+> Diese Funktionalität ist derzeit nur für `UEFI`-fähige Dedicated Server verfügbar. Sie wird demnächst auch für Dedicated Server mit `LEGACY`-Boot bereitgestellt werden.
 
 ## In der praktischen Anwendung
 

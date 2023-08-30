@@ -110,7 +110,7 @@ ssh root@IP_Twojego_serwera
 **Przykład dla wstępnie skonfigurowanego użytkownika:**
 
 ```bash
-ssh root@nazwa_serwera
+ssh ubuntu@nazwa_serwera
 ```
 
 Więcej informacji na temat SSH znajdziesz w przewodniku "[Wprowadzenie do SSH](/pages/cloud/dedicated/ssh_introduction)".

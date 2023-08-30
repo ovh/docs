@@ -29,7 +29,7 @@ Using a custom script can be interesting in the following use cases:
 > Restarting a dedicated server can cause outage of all services that only depend on this dedicated server.
 >
 
-<!-- markdownlint-disable-next-line MD028 -->
+
 > [!warning]
 >
 > This feature is only available for `UEFI` servers. We are working on adding this feature to `LEGACY` boot servers as well.

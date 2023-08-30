@@ -20,7 +20,7 @@ In dieser Anleitung geben wir Ihnen einen Überblick über die Verwaltung Ihrer 
 
 ## Grundlagen
 
-Ein Volume Snapshot ist eine schreibgeschützte Point-in-Time-Kopie eines Volumes.
+Ein Volume Snapshot ist eine schreibgeschützte Point-in-Time-Kopie eines Volumes.<br>
 Snapshots werden aus einem bestehenden, betriebsbereiten Volume erstellt. Sie können nicht separat davon existieren.
 
 Eine Snapshot-Policy erlaubt es, die Erstellung von Snapshots anhand verschiedener Einstellungen zu automatisieren. Diese Regel kann bearbeitet und gelöscht werden, wenn Sie sie nicht mehr benötigen.
@@ -38,7 +38,7 @@ Außerdem müssen Sie die Anzahl der Kopien angeben, die Sie aufbewahren möchte
 
 ![SnapshotPolicy](images/Snapshot_Policy_1.png){.thumbnail}
 
-2\. Geben Sie in der neuen Ansicht einen Namen und eine Beschreibung für die Policy ein. Verwenden Sie anschließend den Button `Eine neue Regel erstellen`{.action}, um eine oder mehrere Regeln zur Policy hinzuzufügen.
+2\. Geben Sie in der neuen Ansicht einen Namen und eine Beschreibung für die Policy ein. Verwenden Sie anschließend den Button `+ Eine neue Regel erstellen`{.action}, um eine oder mehrere Regeln zur Policy hinzuzufügen.
 
 ![SnapshotPolicy](images/Snapshot_Policy_2.png){.thumbnail}
 
@@ -90,5 +90,7 @@ So löschen Sie eine Snapshot-Policy:
 ![DeleteSnapshotPolicy](images/Snapshot_Policy_6.png){.thumbnail}
 
 ## Weiterführende Informationen
+
+Wenn Sie Schulungen oder technische Unterstützung bei der Implementierung unserer Lösungen benötigen, wenden Sie sich an Ihren Vertriebsmitarbeiter oder klicken Sie auf [diesen Link](https://www.ovhcloud.com/de/professional-services/), um einen Kostenvoranschlag zu erhalten und eine persönliche Analyse Ihres Projekts durch unsere Experten des Professional Services Teams anzufordern.
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

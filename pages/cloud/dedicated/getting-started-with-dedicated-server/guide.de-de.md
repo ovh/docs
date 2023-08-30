@@ -110,7 +110,7 @@ ssh root@IPv4_Ihres_Servers
 **Beispiel mit einem vorkonfigurierten Benutzer:**
 
 ```bash
-ssh root@Referenzname_Ihres_Servers
+ssh ubuntu@Referenzname_Ihres_Servers
 ```
 
 Weitere Informationen zu SSH finden Sie in unserer [Anleitung](/pages/cloud/dedicated/ssh_introduction).
@@ -149,7 +149,7 @@ Klicken Sie auf den Button `Konfigurieren`{.action}. Im neu angezeigten Fenster 
 
 - **Deaktiviert**: Mit dieser Option werden Warnmeldungen und Eingriffe von OVHcloud gestoppt. Wählen Sie dies aus, wenn Sie auf dem Server relevante Administrationsmaßnahmen durchführen, die eine ICMP-Antwort verhindern.
 - **Aktiviert mit proaktivem Eingriff**: Wenn der Server nicht mehr reagiert wird Ihnen eine Benachrichtigung per E-Mail gesendet und der Server von einem Techniker überprüft.
-- **Aktiviert ohne proaktiven Eingriff**: Sie erhalten eine Benachrichtigung per E-Mail, wenn der Server nicht mehr reagiert. Um eine Intervention zu veranlassen, aktivieren Sie die Überwachung Ihres Servers mit der proaktiven Eingriff.
+- **Aktiviert ohne proaktiven Eingriff**: Sie erhalten eine Benachrichtigung per E-Mail, wenn der Server nicht mehr reagiert. Um eine Intervention zu veranlassen, aktivieren Sie das Monitoring Ihres Servers mit proaktivem Eingriff.
 
 ![Monitoring](images/monitoring-your-server2.png){.thumbnail}
 
