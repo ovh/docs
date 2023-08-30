@@ -1,6 +1,6 @@
 ---
 title: "Commander un nom de domaine"
-excerpt: "Découvrez comment utilisez l'API publique OVHcloud pour commander vos noms de domaines"
+excerpt: "Découvrez comment utiliser l'API publique OVHcloud pour commander vos noms de domaines"
 updated: 2023-08-29
 ---
 
