@@ -34,7 +34,7 @@ It is also required to specify the number of copies you want to retain.
 
 ![SnapshotPolicy](images/Snapshot_Policy_1.png){.thumbnail}
 
-2\. Set your snapshot policy name, a policy description and then use the button `Add a new rule`{.action} to add one or more rules to the policy.
+2\. Set your snapshot policy name, a policy description and then use the button `+ Add a new rule`{.action} to add one or more rules to the policy.
 
 ![SnapshotPolicy](images/Snapshot_Policy_2.png){.thumbnail}
 
