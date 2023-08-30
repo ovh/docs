@@ -2,7 +2,7 @@
 title: Invio o ricezione delle email impossibile
 legacy_guide_number: g2272
 excerpt: Come reagire in caso di malfunzionamenti durante l'invio o la ricezione delle email in OVHcloud
-updated: 2023-08-29
+updated: 2023-08-30
 ---
 
 ## Obiettivo
