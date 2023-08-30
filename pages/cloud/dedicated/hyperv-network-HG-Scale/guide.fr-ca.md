@@ -1,10 +1,10 @@
 ---
 title: 'Configurer le réseau sur Windows Server avec Hyper-V sur les gammes High Grade & SCALE'
 excerpt: 'Découvrez comment configurer le réseau sur Windows Server avec Hyper-V sur les gammes High Grade & SCALE'
-updated: 2023-06-20
+updated: 2023-08-30
 ---
 
-**Dernière mise à jour le 20/06/2023**
+**Dernière mise à jour le 30/08/2023**
 
 ## Objectif
 
@@ -111,15 +111,23 @@ Suivez l'assistant jusqu'à atteindre la section « Server Roles ». Sélectionn
 
 ![Install roles](images/install_roles_2.png){.thumbnail}
 
-Continuez ensuite jusqu'à la section « Virtual Switches » de « Hyper-V » et sélectionnez votre *NIC teaming* créé précédemment.
+Continuez ensuite jusqu'à la section « Virtual Switches » de « Hyper-V » s'assurer qu'aucune interface n'est sélectionnée.
 
-![Install roles](images/install_roles_3.png){.thumbnail}
+![Install roles](images/install_roles_3_2.png){.thumbnail}
 
 Continuez ensuite jusqu'à la section « Role Services » de « Remote Access » et sélectionnez `Routing`.
 
 ![Install roles](images/install_roles_4.png){.thumbnail}
 
 Enfin, dans la section « Confirmation », sélectionnez `Restart the destination server automatically if required` et cliquez sur `Install`{.action}.
+
+#### Création du switch virtuel
+
+Dans les versions les plus récentes de Windows Server, les switchs virtuels Hyper-V sur un cluster d'adaptateurs réseau de type LBFO sont obsolètes. Nous devrons donc créer le switch manuellement à l'aide de powershell. Exécutez la commande suivante et remplacez "vSwitch_Name" par le nom de votre choix et remplacez "NIC_Team_Name" par le nom de l'équipe NIC que vous avez créée précédemment :
+
+```powershell
+New-VMSwitch -Name "vSwitch_Name" -NetAdapterName "NIC_Team_Name" -AllowNetLbfoTeams $true -AllowManagementOS $true 
+```
 
 #### Configurer Routing and Remote Access
 
@@ -213,7 +221,7 @@ network:
                 eth0:
                         dhcp4: no
                         addresses:
-                                - 192.xxx.xxx.16
+                                - 192.xxx.xxx.16/32
                         nameservers:
                                 addresses:
                                         - 213.186.33.99
@@ -276,23 +284,17 @@ Sur la page suivante, faites un clic droit sur l'une des interfaces privées pr�
 
 Donnez un nom à votre *teaming* puis ajoutez la seconde interface au *teaming*. Ouvrez ensuite les propriétés supplémentaires, définissez « Teaming Mode » sur « LACP » et cliquez sur `OK`{.action}.
 
-#### Créer le commutateur virtuel dans Hyper-VM
+#### Créer le switch virtuel dans Powershell
 
 Nous allons avoir besoin de créer un switch virtuel qui va lier nos VMs au *teaming* que nous avons créé.
 
-Tout d'abord, ouvrez le Gestionnaire Hyper-V et cliquez sur `Virtual Switch Manager`{.action}.
+Tout d'abord, ouvrez Powershell en tant qu'administrateur et exécutez la commande suivante en remplaçant "vSwitch_Name" par le nom de votre choix et en remplaçant "NIC_Team_Name" par le nom de l'équipe NIC que vous avez créée précédemment:
 
-![Create v-switch](images/create_vswitch_1.png){.thumbnail}
+```powershell
+New-VMSwitch -Name "vSwitch_Name" -NetAdapterName "NIC_Team_Name" -AllowNetLbfoTeams $true -AllowManagementOS $true 
+```
 
-Sur cette page, assurez-vous que vous avez sélectionné « External » et cliquez sur `Create Virtual Switch`{.action}.
-
-![Create v-switch](images/create_vswitch_2.png){.thumbnail}
-
-Donnez un nom à votre commutateur, choisissez votre nouvel adaptateur de *teaming*, cliquez sur `Apply`{.action}, puis sur `OK`{.action}.
-
-![Create v-switch](images/create_vswitch_3.png){.thumbnail}
-
-Vous êtes maintenant prêt à créer votre VM et à configurer le réseau pour celle-ci.
+Vous êtes maintenant prêt à créer votre VM et à configurer son réseau.
 
 #### Configurer une adresse IP utilisable
 
