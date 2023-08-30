@@ -2,7 +2,7 @@
 title: 'Envoi ou réception des e-mails impossible'
 legacy_guide_number: 2117
 excerpt: "Découvrez comment réagir en cas de dysfonctionnement à l'envoi ou la réception des e-mails chez OVHcloud"
-updated: 2023-06-15
+updated: 2023-08-30
 ---
 
 ## Objectif
@@ -22,7 +22,11 @@ Il vous est impossible de recevoir ou envoyer vos e-mails depuis votre logiciel 
 
 ## En pratique
 
-### Mon offre e-mail et/ou mes comptes sont-ils actifs ?
+> [!success]
+>
+> Identifiez rapidement, grâce aux mentions **envoi** et **réception**, la problématique s'appliquant à chaque cas pratique ci-dessous.
+
+### Mon offre e-mail et/ou mes comptes sont-ils actifs ? (**envoi** et **réception**)
 
 Pour que vos e-mails soient fonctionnels, vous devez posséder une offre e-mail active. Si votre offre e-mail est associée à une offre d'hébergement, vérifiez que celle-ci n'est pas expirée. Vous pouvez vérifier cette information directement dans l'espace client. De la même façon, votre nom de domaine doit lui aussi être actif.
 
@@ -36,7 +40,7 @@ Voici comment vérifier que vos services sont bien opérationnels :
 - Pour une offre **E-mail Pro**, dirigez-vous dans la section `Web Cloud`{.action}, cliquez sur `E-mail Pro`{.action}, puis sélectionnez votre plateforme. Cliquez sur l'onglet `Comptes e-mail`{.action}. Vérifiez l'état du compte e-mail concerné dans la colonne `Statut`.
 - Pour une offre **Exchange**, dirigez-vous dans la section `Web Cloud`{.action}, cliquez sur `Microsoft`{.action}, puis cliquez sur `Exchange`{.action} et sélectionnez votre plateforme. Cliquez sur l'onglet `Comptes e-mail`{.action}. Vérifiez l'état du compte e-mail concerné dans la colonne `Statut`.
 
-### Je ne parviens pas à envoyer d'e-mails depuis mon logiciel de messagerie
+### Je ne parviens pas à envoyer et/ou recevoir d'e-mails depuis mon logiciel de messagerie (**envoi** et/ou **réception**)
 
 Si vous utilisez un logiciel de messagerie sur votre ordinateur (Outlook, Mail de Mac, Thunderbird, etc.) ou votre smartphone (iOS, Android, etc.), et que vous rencontrez un dysfonctionnement à l'envoi ou à la réception, vérifiez les paramètres de configuration selon votre offre e-mail et le logiciel de messagerie ou application utilisé.
 
@@ -46,7 +50,7 @@ Si vous utilisez un logiciel de messagerie sur votre ordinateur (Outlook, Mail d
 
 - Pour une offre **Exchange**, dans la section [Solutions collaboratives Microsoft](/products/web-cloud-email-collaborative-solutions-microsoft-exchange) de nos guides **Web Cloud**, vérifiez la configuration de votre logiciel de messagerie dans le paragraphe `Configuration Exchange sur ordinateur` ou de votre smartphone dans `Configuration Exchange sur smartphone`
 
-### Les e-mails sont-ils fonctionnels depuis le webmail ?
+### Les e-mails sont-ils fonctionnels depuis le webmail ? (**envoi** et/ou **réception**)
 
 Pour vous assurer que le dysfonctionnement n'est pas lié à une erreur de configuration, réalisez un test d'envoi et de réception directement via le webmail d'OVHcloud. Si tout fonctionne correctement, vérifiez la configuration de votre logiciel via les guides mis à votre disposition.
 
@@ -54,7 +58,7 @@ Depuis le navigateur de votre ordinateur ou depuis un smartphone, allez sur l'ad
 
 ![webmail](images/webmail.png){.thumbnail}
 
-### Je ne ne parviens pas à me connecter au webmail
+### Je ne ne parviens pas à me connecter au webmail 
 
 Assurez-vous d'avoir le bon mot de passe. Si nécessaire, vous pouvez le modifier. Vérifiez également si la double authentification est activée ([Exchange](https://www.ovhcloud.com/fr/emails/hosted-exchange/) uniquement).
 
@@ -66,7 +70,7 @@ Voici comment modifier le mot de passe d'une adresse e-mail :
 
 - Pour une offre **Exchange**, dirigez-vous dans la section `Web Cloud`{.action}, cliquez sur `Microsoft`{.action}, puis cliquez sur `Exchange`{.action} et sélectionnez votre plateforme. Depuis l'onglet `Comptes e-mail`{.action}, cliquez sur le bouton `...`{.action} puis sur `Modifier`{.action} pour modifier le mot de passe. <br> Vérifiez si la double authentification est activée en consultant notre guide [Configurer la double authentification sur un compte Exchange](/pages/web/microsoft-collaborative-solutions/manage_2fa_exchange).
 
-### Y a-t-il un incident ou une maintenance en cours sur mon service ?
+### Y a-t-il un incident ou une maintenance en cours sur mon service ? (**envoi** et/ou **réception**)
 
 Vous pouvez vérifier les différentes tâches travaux actuellement en cours sur <https://web-cloud.status-ovhcloud.com/>.
 
@@ -74,13 +78,13 @@ Vous pouvez vérifier les différentes tâches travaux actuellement en cours sur
 - Pour **E-mail Pro**, dirigez-vous dans la section `Microsoft`
 - Pour **Exchange**, dirigez-vous dans la section `Microsoft`
 
-### Le pointage du nom de domaine vers mon service e-mail est-il correct ?
+### Le pointage du nom de domaine vers mon service e-mail est-il correct ? (**réception**)
 
 Vérifiez que votre nom de domaine pointe correctement vers les serveurs e-mail OVHcloud. Pour cela, des enregistrements de type MX doivent être configurés dans votre zone DNS. <br>Référez-vous à notre guide [Ajouter un champ MX à la configuration de son nom de domaine](/pages/web/domains/dns_zone_mx).
 
 ![DNSzone](images/DNS.png){.thumbnail}
 
-### Après l'envoi d'un e-mail, je reçois un message indiquant que mon e-mail n'a pas pu être envoyé, comprenant un code à 3 chiffres
+### Après l'envoi d'un e-mail, je reçois un message indiquant que mon e-mail n'a pas pu être envoyé, comprenant un code à 3 chiffres (**envoi**)
 
 Il s'agit d'un retour d'erreur SMTP. Cela indique que l'échange entre le serveur d'envoi et le serveur e-mail de réception n'a pas pu se faire correctement. Le code sert à déterminer le type d'erreur que le serveur a rencontré. Il est généralement accompagné d'un message détaillant cette erreur.
 
@@ -121,7 +125,7 @@ Vous trouverez ci-dessous la majorité des codes de réponses négatives SMTP ut
 |551|Utilisateur non local|Ceci est en général utilisé comme une stratégie de prévention contre le spam. Il est indiqué que le relais de courrier n'est pas autorisé pour une raison quelconque à relayer votre message vers un autre serveur que le vôtre. Veuillez contacter votre fournisseur de service|
 |552|Action de messagerie demandée interrompue : espace de stockage dépassé|L'utilisateur que vous avez essayé de contacter n'a plus d'espace disponible pour recevoir des messages. Malheureusement, la seule solution est de contacter le destinataire via une autre méthode|
 |553|Action demandée non effectuée : adresse e-mail non autorisée|Cela est en général causé par une adresse e-mail de destination incorrecte. Veuillez vérifier que l'adresse e-mail en question est bien correcte|
-|554|Transaction échouée, "Aucun service SMTP ici")|Il s'agit en général d'un problème de blacklist. Vérifiez si votre adresse IP du serveur de messagerie n'est pas blacklistée ([SpamHaus](https://check.spamhaus.org/){.external})|
+|554|Transaction échouée, "Aucun service SMTP ici"|Il s'agit en général d'un problème de blacklist. Vérifiez si votre adresse IP du serveur de messagerie n'est pas blacklistée ([SpamHaus](https://check.spamhaus.org/){.external})|
 |555|MAIL FROM / RCPT TO, paramètres non reconnus ou non mis en oeuvre|Le serveur SMTP sortant n'enregistre pas correctement l'adresse e-mail utilisée soit dans vos paramètres "De" ou "A". Veuillez vérifier que les adresses e-mail indiquées sont correctes, et vérifiez également que vous n'avez pas dépassé la limite définie par OVHcloud : 200 mails /heure /compte et 300 mails /heure /ip|
 
 ## Aller plus loin

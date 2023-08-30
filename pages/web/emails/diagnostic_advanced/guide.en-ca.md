@@ -2,7 +2,7 @@
 title: Unable to send or receive emails
 legacy_guide_number: 2117
 excerpt: Find out what to do if your emails are not sent or received correctly by OVHcloud
-updated: 2023-06-15
+updated: 2023-08-30
 ---
 
 ## Objective
@@ -22,7 +22,11 @@ Is your email account unable to send or receive emails when using webmail or you
 
 ## Instructions
 
-### Are my email service and/or accounts active?
+> [!success]
+>
+> Use the **sending** and **receiving** keywords to quickly identify the issues that apply to each of the practical cases below.
+
+### Are my email service and/or accounts active? (**sending** and **receiving**)
 
 For your emails to work, you need to have an active email service. If your email solution is linked to a Web Hosting plan, check that it has not expired. You can verify this directly in the OVHcloud Control Panel. The corresponding domain name must also be active.
 
@@ -35,7 +39,7 @@ Follow these steps to ensure that your relevant services are up and running:
 - For an **MXplan** solution, go to the `Web Cloud`{.action} section, click `Emails`{.action}, then select the domain name concerned. Click the `Email`{.action} accounts tab. Check the status of the email account in the `Status` column.
 - For an **Exchange** solution, go to the `Web Cloud`{.action} section, click `Microsoft`{.action}, then click `Exchange`{.action} and select your service. Click the `Email accounts`{.action} tab. Check the status of the email account in the `Status` column.
 
-### I am unable send emails from my email software
+### I am unable to send emails from my email software (**sending** and/or **receiving**)
 
 If you use an email client on your computer (Outlook, Mac Mail, Thunderbird, etc.) or smartphone (iOS, Android, etc.), and you experience a sending or receiving technical issue, check the configuration settings according to your email solution and the email client or application you are using.
 
@@ -43,7 +47,7 @@ If you use an email client on your computer (Outlook, Mac Mail, Thunderbird, etc
 
 - For an **Exchange** offer, in the [Microsoft Collaborative Solutions ](/products/web-cloud-email-collaborative-solutions-microsoft-exchange) section in our **Web Cloud** guides, check the configuration of your email software in the section `Email clients` or your smartphone in `Exchange-compatible smartphone and tablet configuration`.
 
-### Are emails functional from webmail?
+### Are emails functional from webmail? (**sending** and/or **receiving**)
 
 To ensure that the malfunction is not linked to a configuration error, send and receive a test email directly via OVHcloud webmail. If everything is working properly, check your software configuration using the guides provided.
 
@@ -61,20 +65,20 @@ Here is how to change the password for an email address:
 
 - For an **Exchange** solution, go to the `Web Cloud`{.action} section, click `Microsoft`{.action}, then click `Exchange`{.action} and select your platform. In the `Email`{.action} accounts tab, click the `...`{.action} button, then click `Modify`{.action} to change the password.
 
-### Is there an incident or maintenance in progress for my service?
+### Is there an incident or maintenance in progress for my service? (**sending** and/or **receiving**)
 
 You can check the various tasks that are currently in progress on <https://web-cloud.status-ovhcloud.com/>.
 
 - For **MXplan**, check in the `Emails` section
 - For **Exchange**, go to the `Microsoft` section
 
-### Is the domain name pointing correctly to my email service?
+### Is the domain name pointing correctly to my email service? (**receiving**)
 
 Check that your domain name points correctly to the OVHcloud email servers. To do this, you will need to configure MX records in your DNS zone. <br>Please refer to our guide on [Adding an MX record to your domain name’s configuration](/pages/web/domains/dns_zone_mx).
 
 ![DNSzone](images/DNS-CA.png){.thumbnail}
 
-### After sending an email, I receive a message that my email could not be sent, including a 3-digit code
+### After sending an email, I receive a message that my email could not be sent, including a 3-digit code (**sending**)
 
 This is an SMTP error return. This indicates that the exchange between the outgoing server and the incoming email server could not be completed correctly. The code is used to determine the type of error the server encountered. It is usually accompanied by a message detailing this error.
 
@@ -115,7 +119,7 @@ The majority of SMTP negative response codes used by servers are listed below:
 |551|User not local or invalid address – Relay denied|This is typically used as a spam prevention strategy. It says that the mail relay is not authorised for any reason to relay your message to another server than yours. Please contact your service provider.|
 |552|Requested mail actions aborted – Exceeded storage allocation|The user you tried to contact no longer has space to receive messages. Unfortunately, the only solution is to contact the recipient via another method.|
 |553|Requested action not taken – Mailbox name invalid|This is usually caused by an incorrect destination email address. Please check that the email address in question is correct.|
-|554|Transaction failed, "No SMTP service here")|This is usually a blacklist problem. Check if your email server IP address is blacklisted ([SpamHaus](https://check.spamhaus.org/){.external}).|
+|554|Transaction failed, "No SMTP service here"|This is usually a blacklist problem. Check if your email server IP address is blacklisted ([SpamHaus](https://check.spamhaus.org/){.external}).|
 |555|MAIL FROM / RCPT TO, unrecognised or unimplemented arguments|The outgoing SMTP server cannot recognise the email address used in either your `From` or `To` settings. Please check that the email addresses entered are correct, and also check that you have not exceeded the limit set by OVHcloud: 200 mails/hour/account and 300 mails/hour/ip.|
 
 ## Go further

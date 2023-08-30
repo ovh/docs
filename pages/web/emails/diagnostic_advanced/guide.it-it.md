@@ -2,7 +2,7 @@
 title: Invio o ricezione delle email impossibile
 legacy_guide_number: g2272
 excerpt: Come reagire in caso di malfunzionamenti durante l'invio o la ricezione delle email in OVHcloud
-updated: 2023-06-15
+updated: 2023-08-30
 ---
 
 ## Obiettivo
@@ -22,7 +22,11 @@ Non è possibile ricevere o inviare email dal tuo client di posta o dalla Webmai
 
 ## Procedura
 
-### Il tuo servizio di posta elettronica e/o i tuoi account sono attivi?
+> [!success]
+>
+> Identifica rapidamente, grazie alle opzioni **invio** e **ricezione**, il problema applicabile a ogni caso pratico qui sotto.
+
+### Il tuo servizio di posta elettronica e/o i tuoi account sono attivi? (**invio** e **ricezione**)
 
 Per una corretta gestione delle email è necessario disporre di un'offerta attiva. Se la tua offerta email è associata a un'offerta di hosting, verifica che non sia scaduta. È possibile verificare questa informazione direttamente dallo Spazio Cliente. Allo stesso modo, anche il tuo dominio deve essere attivo.
 
@@ -36,7 +40,7 @@ Come verificare che i tuoi servizi siano operativi:
 - Per un'offerta **Email Pro**, seleziona la sezione `Web Cloud`{.action}, clicca su `Email Pro`{.action} e seleziona la tua piattaforma. Clicca sulla scheda `Account email`{.action}. Verifica lo stato dell'account email nella colonna `Stato`.
 - Per un'offerta **Exchange**, accedi alla sezione `Web Cloud`{.action}, clicca su `Microsoft`{.action}, clicca su `Exchange`{.action} e seleziona la tua piattaforma. Clicca sulla scheda `Account email`{.action}. Verifica lo stato dell'account email nella colonna `Stato`.
 
-### Non riesco a inviare email dal mio client di posta
+### Non riesco a inviare email dal mio client di posta (**invio** e/o **ricezione**)
 
 Se utilizzi un client di posta sul tuo computer (Outlook, Mail di Mac, Thunderbird, ecc.) o sul tuo smartphone (iOS, Android, ecc.), e riscontri un malfunzionamento all'invio o alla ricezione, verifica i parametri di configurazione in base al tuo servizio di posta elettronica e al client di posta o applicazione utilizzato.
 
@@ -46,7 +50,7 @@ Se utilizzi un client di posta sul tuo computer (Outlook, Mail di Mac, Thunderbi
 
 - Per un'offerta **Exchange**, nella sezione [Soluzioni collaborative Microsoft](/products/web-cloud-email-collaborative-solutions-microsoft-exchange) delle nostre guide **Web Cloud**, verifica la configurazione del tuo client di posta nel paragrafo `Configurazione di un client di posta elettronica Exchange` o del tuo smartphone nella `Varie`.
 
-### Le email sono funzionali dalla Webmail?
+### Le email sono funzionali dalla Webmail? (**invio** e/o **ricezione**)
 
 Per assicurarti che il malfunzionamento non sia associato a un errore di configurazione, effettua un test di invio e di ricezione direttamente dalla Webmail di OVHcloud. Se tutto funziona correttamente, verifica la configurazione del tuo software tramite le guide disponibili.
 
@@ -66,7 +70,7 @@ Come modificare la password di un indirizzo email:
 
 - Per un'offerta **Exchange**, accedi alla sezione `Web Cloud`{.action}, clicca su `Microsoft`{.action}, clicca su `Exchange`{.action} e seleziona la tua piattaforma. Nella scheda `Account email`{.action}, clicca sul pulsante `...`{.action} e clicca su `Modifica`{.action} per modificare la password. <br> Per verificare che la doppia autenticazione sia attiva, consulta la guida [Configurare la doppia autenticazione su un account Exchange](/pages/web/microsoft-collaborative-solutions/manage_2fa_exchange).
 
-### Sul tuo servizio è in corso un incidente o una manutenzione?
+### Sul tuo servizio è in corso un incidente o una manutenzione? (**invio** e/o **ricezione**)
 
 È possibile verificare i diversi task in corso su <https://web-cloud.status-ovhcloud.com/> questo
 
@@ -74,13 +78,13 @@ Come modificare la password di un indirizzo email:
 - Per **Email Pro**, accedi alla sezione `Microsoft`
 - Per **Exchange**, accedi alla sezione `Microsoft`
 
-### Il puntamento del dominio verso il tuo servizio di posta è corretto?
+### Il puntamento del dominio verso il tuo servizio di posta è corretto? (**ricezione**)
 
 Verifica che il tuo dominio punti correttamente verso i server di posta OVHcloud. Per fare ciò, nella tua zona DNS devono essere configurati record di tipo MX. <br>Consulta la nostra guida [Aggiungere un record MX alla configurazione del dominio](/pages/web/domains/dns_zone_mx).
 
 ![DNSzone](images/DNS.png){.thumbnail}
 
-### Dopo l'invio di un'email, ricevi un messaggio che indica che la tua email non ha potuto essere inviata, con un codice a 3 cifre
+### Dopo l'invio di un'email, ricevi un messaggio che indica che la tua email non ha potuto essere inviata, con un codice a 3 cifre (**invio**)
 
 Si tratta di un ritorno di errore SMTP. Ciò indica che lo scambio tra il server di invio e il server di posta in entrata non è stato possibile. Il codice serve a determinare il tipo di errore riscontrato dal server. In genere è accompagnato da un messaggio che illustra in dettaglio tale errore.
 
@@ -121,7 +125,7 @@ Di seguito trovi la maggior parte dei codici di risposta negativi SMTP utilizzat
 |551|Utenti non locali|Questo viene generalmente utilizzato come strategia di prevenzione contro lo spam. Ti ricordiamo che il corriere di posta non è autorizzato per alcun motivo a trasferire il tuo messaggio verso un server diverso dal tuo. Contatta il tuo provider di servizi|
 |552|Azione di messaggistica richiesta interrotta: spazio di storage superato|L'utente che hai cercato di contattare non ha più spazio disponibile per ricevere messaggi. Purtroppo, l'unica soluzione è contattare il destinatario con un altro metodo|
 |553|Azione richiesta non effettuata: indirizzo email non autorizzato|La causa principale di questa operazione è in genere un indirizzo email di destinazione non corretto. Verifica che l'indirizzo email in questione sia corretto|
-|554|Operazione fallita, "Nessun servizio SMTP qui")|Di solito è un problema di blacklist. Verifica che il tuo indirizzo IP del server di posta non sia inserito nella blacklist ([SpamHaus](https://check.spamhaus.org/){.external})|
+|554|Operazione fallita, "Nessun servizio SMTP qui"|Di solito è un problema di blacklist. Verifica che il tuo indirizzo IP del server di posta non sia inserito nella blacklist ([SpamHaus](https://check.spamhaus.org/){.external})|
 |555|MAIL FROM / RCPT TO, parametri non riconosciuti o non attuati|Il server SMTP in uscita non registra correttamente l'indirizzo email utilizzato nei parametri "Da" o "A". Verifica la correttezza degli indirizzi email indicati e verifica che non sia stato superato il limite definito da OVHcloud: 200 email/ora/account e 300 email/ora/ip|
 
 ## Per saperne di più
