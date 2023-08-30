@@ -17,8 +17,8 @@ Dans ce guide, nous allons vous donner un aperçu de la gestion de vos politique
 
 ## Principes de base
 
-Un snapshot de volume est une copie ponctuelle en lecture seule d'un volume.
-Les snapshots sont créés à partir d'un volume opérationnel existant. Ils ne peuvent exister sans cela. 
+Un snapshot de volume est une copie ponctuelle en lecture seule d'un volume.<br>
+Les snapshots sont créés à partir d'un volume opérationnel existant. Ils ne peuvent exister sans cela.<br>
 Une politique de snapshot permet d'automatiser la création de snapshots à l'aide de différents paramètres. La politique peut ensuite être modifiée et supprimée si vous n'en avez plus besoin.
 
 ## En pratique
