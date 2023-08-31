@@ -47,6 +47,10 @@ AI Training allows you to train your models easily, with just a few clicks or co
 
 #### Logs and Monitoring tools
 
+#### Command line interface (CLI)
+
+AI Training is compliant with the OVHcloud AI CLI. Discover how to [install the OVHcloud AI CLI](/pages/platform/ai/cli_10_howto_install_cli).
+
 ##### **Logs**
 
 To check the logs of your job, you can do it via the `ovhai` CLI using the following command:
@@ -57,7 +61,7 @@ ovhai job logs <job-id>
 
 ##### **Monitoring tools**
 
-To observe the metrics of your job, you can do so with the `ovhai` CLI using the command above:
+To see information of your job, you can do so with the `ovhai` CLI using the command above:
 
 ```console
 ovhai job get <job-id>
@@ -66,10 +70,6 @@ ovhai job get <job-id>
 You can then access your metrics through the `Monitoring Url`.
 
 You are also able to check it from the OVHcloud Control Panel in your job information by clicking the `Go to Graph Dashboard`{.action} button.
-
-#### Command line interface (CLI)
-
-AI Training is compliant with the OVHcloud AI CLI. Discover how to [install the OVHcloud AI CLI](/pages/platform/ai/cli_10_howto_install_cli).
 
 ### Planned features
 We continuously improve our offers. You can follow, vote and submit ideas to add to our roadmap at <https://github.com/ovh/public-cloud-roadmap/projects/4>.

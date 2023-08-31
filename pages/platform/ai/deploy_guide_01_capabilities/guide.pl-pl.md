@@ -49,6 +49,10 @@ AI Deploy allows you to deploy your AI applications and models with compute reso
 
 #### Logs and Monitoring tools
 
+#### Command line interface (CLI)
+
+AI Deploy is compliant with the OVHcloud AI CLI. Discover how to [install the OVHcloud AI CLI](/pages/platform/ai/cli_10_howto_install_cli).
+
 ##### **Logs**
 
 To check the logs of your app, you can do it via the `ovhai` CLI using the following command:
@@ -59,7 +63,7 @@ ovhai app logs <app-id>
 
 ##### **Monitoring tools**
 
-To observe the metrics of your app, you can do so with the `ovhai` CLI using the command above:
+To see information of your app, you can do so with the `ovhai` CLI using the command above:
 
 ```console
 ovhai app get <app-id>
@@ -75,10 +79,6 @@ API endpoints to manage your AI Deploy apps can be found here:
 
 - EU: <https://api.ovh.com/console/#/cloud/project/%7BserviceName%7D/ai/app#GET>
 - CA: <https://ca.api.ovh.com/console/#/cloud/project/%7BserviceName%7D/ai/app#GET>
-
-#### Command line interface (CLI)
-
-AI Deploy is compliant with the OVHcloud AI CLI. Discover how to [install the OVHcloud AI CLI](/pages/platform/ai/cli_10_howto_install_cli).
 
 ### Planned features
 We continuously improve our offers. You can follow, vote and submit ideas to add to our roadmap at <https://github.com/ovh/public-cloud-roadmap/projects/4>.
