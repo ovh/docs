@@ -6,7 +6,7 @@ updated: 2023-08-21
 
 ## Objective
 
-Creating a [1-click module](/pages/web/hosting/cms_install_1_click_modules) in automatic or advanced mode can produce various issues.
+Creating a [1-click module](/pages/web/hosting/cms_install_1_click_modules) in automatic or advanced mode can produce various error messages.
 
 **This guide explains how to diagnose the most common cases of errors when creating 1-click modules.**
 

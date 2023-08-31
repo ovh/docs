@@ -1,6 +1,6 @@
 ---
 title: "Backup einer Webhosting-Datenbank exportieren"
-excerpt: "Diese Anleitung erklärt, wie Sie ein Backup einer Datenbank Ihres OVHcloud Webhostings exportieren."
+excerpt: "Erfahren Sie hier, wie Sie ein Backup einer Datenbank Ihres OVHcloud Webhostings exportieren"
 updated: 2023-08-22
 ---
 
@@ -10,49 +10,47 @@ updated: 2023-08-22
  
 ## Ziel
 
-Datenbanken werden von den meisten Websites verwendet, und **C**ustomer **M**anagement **S**ystem (**CMS***) wie *WordPress*, *Joomla!*, *PrestaShop* ou *Drupal*. In der Regel speichern Sie dynamische Elemente wie zum Beispiel Kommentare, Benutzer / Passwörter, den Lagerbestand, wenn Sie eine E-Commerce-Seite haben, oder Artikel. Aus verschiedenen Gründen müssen Sie ein Backup Ihrer Datenbank erstellen, um deren Inhalt wiederherzustellen.
+Datenbanken werden von den meisten Websites und **C**ontent **M**anagement **S**ystemen (**CMS**) wie *WordPress*, *Joomla!*, *PrestaShop* ou *Drupal* eingesetzt. In der Regel speichern Sie dynamische Elemente wie zum Beispiel Kommentare, Benutzerkennungen, Bestände von E-Commerce-Seiten oder Artikel. Es kann aus verschiedenen Gründen erforderlich sein, ein Backup Ihrer Datenbank zu erstellen, um deren Inhalt zu exportieren.
 
 **Diese Anleitung erklärt, wie Sie ein Backup einer Datenbank Ihres OVHcloud Webhostings erstellen.**
 
 ## Voraussetzungen
 
-- Sie haben ein [Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} Angebot.
-- Ihr [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} Angebot beinhaltet eine Datenbank.
-- Je nach der verwendeten Backup-Methode benötigen Sie Zugriff auf die Verwaltung Ihres Webhosting Angebots über das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} oder die erforderlichen Login-Daten, um sich mit der Datenbank zu verbinden.
+- Sie haben ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external}, das eine Datenbank enthält.
+- Je nach der verwendeten Backup-Methode benötigen Sie Zugriff auf die Verwaltung Ihres Webhostings über das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} oder die Login-Daten der Datenbank.
 
 ## In der praktischen Anwendung
 
-Legen Sie zunächst fest, wie Sie das Backup der Datenbank wiederherstellen möchten. Sie haben mehrere Möglichkeiten:
+Entscheiden Sie zunächst, mit welcher Methode Sie das Backup der Datenbank wiederherstellen möchten:
 
-- **Backup-Tool von OVHcloud verwenden**: Mit dieser Lösung können Sicherungen Ihrer Datenbanken über das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} abgerufen werden. Für diese Methode sind keine besonderen technischen Kenntnisse erforderlich.
+- **Backup über das OVHcloud Backup-Tool**: Erstellen Sie die Backups Ihrer Datenbanken im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external}. Für diese Methode sind keine besonderen technischen Kenntnisse erforderlich.
 
-- **Backup über das phpMyAdmin-Webinterface**: Loggen Sie sich für diese Methode im *phpMyAdmin*-Interface ein, um die Operation durchzuführen. Dazu ist es notwendig, das *phpMyAdmin* Interface zu beherrschen.
+- **Backup über das *phpMyAdmin*-Webinterface**: Loggen Sie sich im *phpMyAdmin*-Interface ein, um dort die Aktion durchzuführen. Sie sollten für diese Methode mit dem *phpMyAdmin*-Webinterface vertraut sein.
 
-- **Backup über ein Skript erstellen**: Für diese Methode muss ein Skript erstellt werden, das auf Ihrem OVHcloud Webhosting gespeichert ist, um das Backup durchzuführen. Für diese Erstellung sind spezielle Kenntnisse erforderlich.
+- **Backup über ein Skript erstellen**: Hierzu muss zunächst ein Skript geschrieben und auf Ihrem OVHcloud Webhosting gespeichert werden. Für das Schreiben des Skripts sind spezifische technische Kenntnisse erforderlich.
 
-- **Backup über einen SSH-Befehl erstellen** : Loggen Sie sich hierfür via SSH in Ihren FTP-Speicherbereich ein und verwenden Sie Befehle, um mit diesem zu interagieren. Für diesen Zugriffstyp sind fortgeschrittene Kenntnisse sowie ein spezielles [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} Angebot erforderlich.
+- **Backup über SSH-Zugang erstellen**: Loggen Sie sich hierfür via SSH in Ihren FTP-Speicherbereich ein und verwenden Sie die Kommandozeile, um mit diesem zu interagieren. Für diesen Zugriffstyp sind fortgeschrittene Kenntnisse sowie ein kompatibles [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} erforderlich.
 
 > [!success]
 >
 > Wenn Sie ein Backup Ihrer Datenbank erstellen, weil diese voll ist, lesen Sie unsere Anleitung „[Was tun, wenn meine Datenbank voll ist?](/pages/web/hosting/sql_overquota_database)“.
 >
 
-Einige der oben genannten Methoden sind keiner OVHcloud-Schnittstelle inhärent. Daher sollten Sie bei diesen Ihren Vorstellungen entsprechend vorgehen. Im Folgenden geben wir Ihnen einige Informationen, die jedoch nicht die Unterstützung durch einen Webmaster ersetzen können, wenn Sie Schwierigkeiten haben, diese allein zu realisieren.
+Einige der oben aufgeführten Methoden lassen sich nicht über ein OVHcloud Interface ausführen, weshalb deren exakte Verwendung hier nicht aufgeführt werden kann. Im Folgenden geben wir Ihnen einige Informationen, die jedoch nicht die Unterstützung eines Webmasters ersetzen können.
 
 Folgen Sie dieser Anleitung nun entsprechend der von Ihnen ausgewählten Backup-Methode.
 
 > [!warning]
->
-> OVHcloud stellt Ihnen Dienste zur Verfügung, für deren Konfiguration, Verwaltung und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt daher in Ihrer Verantwortung, sicherzustellen, dass diese ordnungsgemäß funktionieren.
->
-> Wir stellen Ihnen diese Anleitung zur Verfügung, um Sie bei gängigen Aufgaben bestmöglich zu begleiten. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren. Für externe Dienstleistungen bieten wir leider keine Unterstützung. Weitere Informationen finden Sie im Abschnitt [„Weiterführende Informationen“](#go-further) dieser Anleitung.
+> OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
+> 
+> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren oder Ihre Fragen an die [OVHcloud Community](https://community.ovh.com/en/) zu richten. Leider können wir Ihnen für externe Dienstleistungen keine weitergehende Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
 >
 
-### Backup über das Tool von OVHcloud abrufen
+### Backup mit dem OVHcloud Backup-Tool exportieren
 
-Um auf das Backup-Tool von OVHcloud zuzugreifen, loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und gehen Sie dann in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Hosting aus. Gehen Sie dann auf den Tab `Datenbanken`{.action}.
+Loggen Sie sich für den Zugriff auf das Backup-Tool in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Hosting aus. Gehen Sie dann auf den Tab `Datenbanken`{.action}.
 
-Die angezeigte Tabelle enthält alle Datenbanken, die im Rahmen Ihres Webhosting Angebots erstellt wurden. Sie können nun wählen, ob Sie ein neues Backup erstellen oder ein bereits existierendes Backup wiederherstellen möchten.
+Die angezeigte Tabelle enthält alle Datenbanken, die im Rahmen Ihres Webhosting Angebots erstellt wurden. Sie können nun wählen, ob Sie ein neues Backup erstellen oder ein bereits existierendes Backup exportieren möchten.
 
 #### Schritt 1: Neues Backup der Datenbank durchführen
 
@@ -66,7 +64,7 @@ Warten Sie, bis die Sicherung abgeschlossen ist. Sobald diese verfügbar ist, k�
 
 ![databaseDump](images/database-dump-step3.png){.thumbnail}
 
-#### Schritt 2: Backup der Datenbank abrufen
+#### Schritt 2: Datenbank-Backup exportieren
 
 Bleiben Sie im Tab `Datenbanken`{.action} und klicken Sie auf den Button `...`{.action} rechts neben der zu sichernden Datenbank und dann auf `Backup wiederherstellen`{.action}.
 
@@ -86,20 +84,20 @@ Die angezeigte Tabelle enthält alle Datenbanken, die im Rahmen Ihres Webhosting
 
 ![databaseDump](images/database-dump-step6.png){.thumbnail}
 
-Geben Sie im Login-Interface für *phpMyAdmin* die Informationen der Datenbank ein, und loggen Sie sich ein. Gehen Sie nach dem Login auf den Tab `Exportieren`{.action} und wählen Sie zwei Exportmethoden aus:
+Geben Sie im Login-Interface von *phpMyAdmin* die Informationen zu Ihrer Datenbank ein, um sich einzuloggen. Gehen Sie nach dem Login auf den Tab `Exportieren`{.action} und wählen Sie eine Exportmethode aus:
 
-- **Schnelle Methode**: Sie können das Exportformat des Backups festlegen. Das gängigste Format ist SQL. Andere werden jedoch nach Bedarf angeboten;
+- **Schnelle Methode**: Sie können das Exportformat des Backups festlegen. Das gängigste Format ist SQL. Bei Bedarf können Sie auch ein anderes Format auswählen.
 
-- **Benutzerdefinierte Methode**: Sie können die Exporteinstellungen für das Backup im Detail festlegen.
+- **Benutzerdefinierte Methode**: Sie können Export-Einstellungen des Backups selbst im Detail festlegen.
 
 > [!warning]
 >
-> Da das *phpMyAdmin* Interface nicht von OVHcloud erstellt wurde, müssen Sie die Operation nach Ihren eigenen Kenntnissen durchführen. Wir empfehlen Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren und/oder die Website des Herausgebers des Interfaces aufzurufen. Für externe Dienstleistungen bieten wir leider keine Unterstützung.
+> Da *phpMyAdmin* kein Interface von OVHcloud ist, müssen Sie die Operation nach Ihren eigenen Kenntnissen durchführen. Wir empfehlen Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren und/oder die Website des Herausgebers des Interfaces aufzurufen. Für externe Dienstleistungen bieten wir leider keine Unterstützung.
 >
 
-### Backup mit Skript exportieren
+### Backup über ein Skript exportieren
 
-Die Änderung erfolgt in mehreren Schritten. Vergewissern Sie sich, dass Sie über die Login-Daten für die Datenbank verfügen, für die Sie ein Backup erstellen möchten: Benutzername, zugehöriges Passwort, Name der Datenbank und Serveradresse.
+Die Änderung erfolgt in mehreren Schritten. Vergewissern Sie sich, dass Sie über die Login-Daten für die Datenbank verfügen, für die ein Backup erstellt werden soll: Benutzername, das zugehörige Passwort, Name der Datenbank und Serveradresse.
 
 > [!warning]
 >
@@ -108,7 +106,7 @@ Die Änderung erfolgt in mehreren Schritten. Vergewissern Sie sich, dass Sie üb
 
 #### Schritt 1: Backup-Skript erstellen
 
-Im ersten Schritt erstellen Sie das Skript, um das Datenbank-Backup durchzuführen. Im Folgenden finden Sie ein Beispielskript, das Ihnen dabei helfen kann. Sollten Sie jedoch Schwierigkeiten haben, kann dieses Beispiel nicht die Unterstützung ersetzen, die Ihnen ein Webmaster bieten könnte.
+Im ersten Schritt erstellen Sie das Skript, um das Datenbank-Backup durchzuführen. Im Folgenden finden Sie ein Beispielskript, das Ihnen dabei helfen kann. Es ersetzt allerdings nicht die Hilfe eines Webmasters.
 
 ```php
 <?
@@ -116,64 +114,63 @@ system("mysqldump --host=server_address --user=user_name --password=user_passwor
 ?>
 ```
 
-Achten Sie darauf, die generischen Informationen in diesem Skript mit den Informationen aus der betreffenden Datenbank zu ersetzen. Wir empfehlen Ihnen, das Skript am Ende zum Beispiel „backup.php“ zu nennen.
+Achten Sie darauf, die generischen Daten im Beispielskrip mit den Informationen der betreffenden Datenbank zu ersetzen. Wir empfehlen, das Skript am Ende zum Beispiel „backup.php“ zu benennen.
 
-|Informationen|Ersetzen durch|
+|Informationen|Ersetzen mit|
 |---|---|
-|server_address|Die Serveradresse der betreffenden Datenbank.|
-|user_name|Der Benutzername mit Datenbankzugriff.|
-|user_password|Das Kennwort für den oben angegebenen Benutzernamen.|
-|name_of_database|Der Name der betreffenden Datenbank.|
-|backup_file_name|Der Name der Sicherungsdatei, nachdem die Sicherung ausgeführt wurde.|
+|server_address|Die Serveradresse der Datenbank|
+|user_name|Name des Benutzers, der Zugriff auf die betreffende Datenbank hat|
+|user_password|Passwort zum betreffenden Benutzernamen|
+|name_of_database|Der Name der Datenbank|
+|backup_file_name|Name der zu erstellenden Backup-Datei|
 
 #### Schritt 2: Skript auf den FTP-Speicherplatz hochladen
 
-Nachdem Sie das Backup-Skript erstellt haben, müssen Sie es auf den FTP-Speicherplatz Ihres Webhostings hochladen. Weitere Informationen hierzu finden Sie in Schritt 2 der Dokumentation „[Mit Speicherplatz verbinden](/pages/web/hosting/hosting_how_to_get_my_website_online)“.
+Nachdem Sie das Backup-Skript erstellt haben, plazieren Sie es auf dem Speicherplatz Ihres Webhostings. Weitere Informationen hierzu finden Sie in Schritt 2 der [Anleitung zur Nutzung von FTP](/pages/web/hosting/hosting_how_to_get_my_website_online).
 
-Laden Sie das Skript in den Ordner herunter, der die Website enthält, die die Datenbank verwendet, um die folgenden Schritte auszuführen. **Achten Sie beim Herunterladen des Skripts besonders auf den Dateinamen des Backup-Skripts.** Überschreiben Sie beim Herunterladen des Skripts keine bereits vorhandene Datei mit demselben Namen auf dem FTP-Speicherplatz. Wenn eine solche Warnmeldung angezeigt wird, ändern Sie den Namen des neu erstellten Skripts in, und versuchen Sie dann erneut, das Skript herunterzuladen.
+Legen Sie das Skript im Ordner ab, der die Website enthält, die die Datenbank verwendet, um die folgenden Schritte auszuführen. **Achten Sie bei der Verwendung des Skripts besonders auf dessen Dateinamen.** Stellen Sie sicher, dass Sie beim Hochladen des Skripts keine bereits im Speicherplatz vorhandene Datei löschen, die denselben Namen trägt. Erscheint ein entsprechender Warnhinweis, ändern Sie den Skriptnamen und laden Sie es anschließend erneut hoch.
 
-#### Schritt 3: Skript aufrufen
+#### Schritt 3: Skript ausführen
 
-Sobald das Skript auf den FTP-Speicherplatz hochgeladen wurde, initiieren Sie den Code im Skript, indem Sie das Skript aufrufen.
+Nachdem das Skript auf den Speicherplatz hochgeladen wurde, können Sie den darin enthaltenen Code ausführen. Hierzu muss zunächst das Skript aufgerufen werden.
 
-Greifen Sie hierzu über Ihren Webbrowser auf die vollständige Skript-URL zu (zum Beispiel: mypersonaldomain.ovh/backup.php, wenn Sie Ihr Skript „backup.php“ genannt haben). Wenn die im Skript eingegebenen Informationen korrekt sind, startet das Backup. Warten Sie einen Moment, bis der Vorgang abgeschlossen ist. Ist das nicht der Fall, überprüfen Sie die im Skript eingegebenen Informationen und versuchen Sie es erneut.
+Um das Skript aufzurufen, geben Sie die vollständige Skript-URL in Ihrem Webbrowser ein (zum Beispiel: mypersonaldomain.ovh/backup.php, wenn Sie Ihr Skript „backup.php“ genannt haben). Wenn die im Skript eingegebenen Informationen korrekt sind, startet das Backup. Warten Sie einen Moment, bis der Vorgang abgeschlossen ist. Sollte das Backup nicht starten, überprüfen Sie die im Skript eingegeben Informationen und starten Sie den Vorgang erneut.
 
 #### Schritt 4: Backup aus dem FTP-Speicherplatz exportieren
 
-Nachdem das Backup erstellt wurde, laden Sie es in den Ordner zurück, in den das Backup-Skript hochgeladen wurde. Die Datenbanksicherung muss den Namen haben, der zuvor im Skript definiert wurde. Sie müssen nur noch das Backup auf Ihrem eigenen Gerät wiederherstellen.
+Nachdem das Backup erstellt wurde, können Sie es aus dem Ordner, in den das Backup-Skript hochgeladen wurde, exportieren. Sie finden das Datenbank-Backup unter dem Namen, der zuvor im Skript festgelegt wurde. Jetzt muss das Backup nur noch auf Ihrem Rechner gespeichert werden.
 
-Wir empfehlen Ihnen dringend, die Backup-Datei und das Skript aus dem Verzeichnis zu löschen, in dem sie sich befinden, bevor Sie den Vorgang abschließen.
+Wir empfehlen, die Backup-Datei und das Skript aus dem Webseiten-Verzeichnis zu löschen, bevor Sie den Vorgang abschließen.
 
 > [!primary]
 >
-> Die Verwendung eines Backup-Skripts mit unserem System geplanter Tasks („CRON“ Tasks) kann es Ihnen ermöglichen, Backups in der von Ihnen gewünschten Häufigkeit zu automatisieren. Weitere Informationen zu geplanten Tasks finden Sie in unserer Dokumentation: „[Einen geplanten Task (CRON) auf dem Webhosting einrichten](/pages/web/hosting/cron_tasks)“.
+> Mithilfe eines Backup-Skripts und geplanter Tasks (*Cronjob*) können Sie automatische Backups zu von Ihnen definierten Intervallen durchführen. Weitere Informationen zu geplanten Tasks finden Sie in unserer Dokumentation: [Automatische Tasks mit einem Webhosting verwenden](/pages/web/hosting/cron_tasks).
 >
 
-### Backup per SSH-Befehl abrufen
+### Backup via SSH exportieren
 
-Für diese Aktion müssen Sie Befehle über ein Terminal ausführen, um mit Ihrem FTP-Speicherplatz zu interagieren.
+Bei dieser Methode werden Befehle über ein Terminal eingegeben, um mit Ihrem FTP-Speicherplatz zu interagieren.
 
 > [!warning]
 >
-> Für diesen Zugriffstyp sind fortgeschrittene Kenntnisse erforderlich. Im Folgenden geben wir Ihnen einige Informationen zur Vorgehensweise, empfehlen Ihnen jedoch, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren. Für externe Dienstleistungen bieten wir leider keine Unterstützung.
+> Für diese Art des Zugriffs sind fortgeschrittene Kenntnisse erforderlich. Im Folgenden geben wir Ihnen einige Informationen zur Vorgehensweise, empfehlen Ihnen aber dennoch, bei Bedarf einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren. Für externe Dienstleistungen bieten wir leider keine Unterstützung.
 >
 
-Wenn Sie via SSH in Ihren FTP-Speicherplatz eingeloggt sind, geben Sie einen Befehl ein, um ein Backup der Datenbank zu erstellen. Im Folgenden finden Sie eine Beschreibung, die Ihnen dabei helfen kann. Bitte beachten Sie, dass das Backup im aktuellen Verzeichnis erstellt wird, wenn Sie den Befehl an Ihr Terminal senden.
+Wenn Sie via SSH in Ihren FTP-Speicherplatz eingeloggt sind, können Sie den Befehl zur Sicherung der Datenbank eingeben. Im Folgenden finden Sie ein Beispiel, um Ihnen dabei zu helfen. Bevor Sie den Befehl über das Terminal ausführen, stellen Sie sicher, dass Sie sich in dem Verzeichnis befinden, in dem die Backup-Datei erstellt werden soll.
 
 ```sh
 mysqldump --host=server_address --user=user_name --password=user_password name_of_database > backup_file_name.sql
 ```
 
-Ersetzen Sie die allgemeinen Informationen für diesen Befehl durch die Informationen der betreffenden Datenbank. Wenn das Backup abgeschlossen ist, muss es nur noch auf Ihrem Rechner gespeichert werden.
+Ersetzen Sie die generischen Daten in diesem Befehl durch die Informationen der betreffenden Datenbank. Wenn das Backup abgeschlossen ist, muss die erstellte Datei nur noch auf Ihrem lokalen Gerät gespeichert werden.
 
-
-|Informationen|Ersetzen durch|
+|Informationen|Ersetzen mit|
 |---|---|
-|server_address|Die Serveradresse der betreffenden Datenbank.|
-|user_name|Der Benutzername mit Datenbankzugriff.|
-|user_password|Das Kennwort für den oben angegebenen Benutzernamen.|
-|name_of_database|Der Name der betreffenden Datenbank.|
-|backup_file_name|Der Name der Sicherungsdatei, nachdem die Sicherung ausgeführt wurde.|
+|server_address|Die Serveradresse der Datenbank|
+|user_name|Name des Benutzers, der Zugriff auf die betreffende Datenbank hat|
+|user_password|Passwort zum betreffenden Benutzernamen|
+|name_of_database|Der Name der Datenbank|
+|backup_file_name|Name der zu erstellenden Backup-Datei|
 
 ## Weiterführende Informationen <a name="go-further"></a>
 

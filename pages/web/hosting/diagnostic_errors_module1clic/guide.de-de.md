@@ -11,9 +11,9 @@ updated: 2023-08-21
 
 ## Ziel 
 
-Die Erstellung eines [1-Klick-Moduls](/pages/web/hosting/cms_install_1_click_modules) im einfachen oder fortgeschrittenen Modus kann verschiedene Anomalien verursachen.
+Bei der Erstellung eines [1-Klick-Moduls](/pages/web/hosting/cms_install_1_click_modules) im einfachen oder fortgeschrittenen Modus können aus verschiedenen Gründen Fehlermeldungen auftreten.
 
-**Hier erfahren Sie, wie Sie die häufigsten Fehler bei der Erstellung von 1-Klick-Modulen diagnostizieren.**
+**Diese Anleitung erklärt, wie Sie Fehlermeldungen bei der Erstellung von 1-Klick-Modulen diagnostizieren.**
 
 > [!warning]
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
@@ -31,7 +31,7 @@ Die Erstellung eines [1-Klick-Moduls](/pages/web/hosting/cms_install_1_click_mod
 
 > [!primary]
 >
-> Wir weisen hier auf die häufigsten Fehler hin. Falls Sie weitere Schwierigkeiten haben, ziehen Sie unsere [Webhosting FAQ](/pages/web/hosting/faq-web_hosting) zu Rate.
+> Wir listen hier die häufigsten Fehler auf. Falls Sie darüber hinaus Schwierigkeiten haben, ziehen Sie unsere [Webhosting FAQ](/pages/web/hosting/faq-web_hosting) zu Rate.
 >
 
 ### “Beim Laden der Informationen ist ein Fehler aufgetreten. (Sie benötigen mindestens eine freie Datenbank)“
@@ -40,20 +40,20 @@ Die Erstellung eines [1-Klick-Moduls](/pages/web/hosting/cms_install_1_click_mod
 
 Diese Meldung kann erscheinen, wenn Sie versuchen, ein neues Modul automatisch zu erstellen. Jedes 1-Klick-Modul benötigt eine Datenbank, um zu funktionieren. Der Fehler tritt auf, wenn das Hosting derzeit keine unbenutzte Datenbank zur Verfügung hat. Die folgenden Lösungen können in Betracht gezogen werden:
 
-#### Lösung Nr. 1: Ihr Webhosting-Angebot wechseln
+#### Lösung 1: Ihr Webhosting-Angebot wechseln
 
 > [!primary]
 >
 > Hier finden Sie die Übersicht unserer [Webhosting Angebote](https://www.ovh.de/hosting/).
 >
 
-Klicken Sie im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) auf `Web Cloud`{.action} und dann auf `Hosting-Pakete`{.action}. Wählen Sie das betreffende Hosting aus und klicken Sie dann im Bereich `Abo*` bei `Angebot` auf `...`{.action} und `Upgraden`{.action}.
+Klicken Sie im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) auf `Web Cloud`{.action} und dann auf `Hosting-Pakete`{.action}. Wählen Sie das betreffende Hosting aus und klicken Sie dann im Bereich `Abo` bei `Angebot` auf `...`{.action} und `Upgraden`{.action}.
 
 ![upgrade_hosting](images/upgrade_hosting.png){.thumbnail}
 
 Mit den [Pro](https://www.ovh.de/hosting/hosting-pro.xml)- und [Performance](https://www.ovh.de/hosting/performance-hosting.xml)-Angeboten können Sie bis zu drei zusätzliche 1-Klick-Module erstellen. Bei einem Performance Webhosting können Sie auch kostenlos [Web Cloud Databases](https://www.ovh.de/cloud/cloud-databases/) aktivieren.
 
-#### Lösung Nr. 2: Eine nicht verwendete Datenbank löschen <a name="deleteDB"></a>
+#### Lösung 2: Eine nicht verwendete Datenbank löschen <a name="deleteDB"></a>
 
 > [!warning]
 >
@@ -64,7 +64,7 @@ Um eine Datenbank in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?act
 
 ![delete_a_database](images/delete_a_database.png){.thumbnail}
 
-#### Lösung Nr. 3: Neue Datenbanken bestellen
+#### Lösung 3: Neue Datenbanken bestellen
 
 Klicken Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) auf `Web Cloud`{.action} und dann auf `Hosting-Pakete`{.action}. In `Datenbanken`{.action} Tab, klicken Sie auf `Aktionen`{.action}.
 
@@ -75,7 +75,7 @@ Klicken Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=go
 > Hier finden Sie den Vergleich unserer [Datenbank-Angebote](https://www.ovh.de/hosting/sql-optionen.xml).
 >
 
-#### Lösung Nr. 4: Ihr Modul auf einer bereits genutzten Datenbank installieren
+#### Lösung 4: Ihr Modul auf einer bereits genutzten Datenbank installieren
 
 Um Ihr Modul auf einer bereits genutzten Datenbank zu installieren, verwenden Sie den [fortgeschrittenen Modus](/pages/web/hosting/cms_install_1_click_modules#erweiterte-installation-eines-moduls).
 
