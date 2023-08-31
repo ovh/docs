@@ -8,6 +8,10 @@ updated: 2023-08-29
 
 Lorsque vous ajoutez un nom de domaine sur votre plateforme e-mail, la configuration d'un enregistrement CNAME dans la zone DNS peut vous être demandée. Celle-ci a pour but de s'assurer que le nom de domaine concerné est bien légitime pour être utilisé sur la plateforme e-mail.
 
+> [!primary]
+>
+> Si le nom de domaine ajouté est géré dans le même compte client que la plateforme e-mail, plus particulièrement sa zone DNS, il n'y a pas d'enregistrement CNAME à configurer.
+
 **Découvrez comment valider votre nom de domaine sur votre plateforme e-mail en ajoutant un enregistrement CNAME.**
 
 ## Prérequis
@@ -24,10 +28,6 @@ Lorsque vous ajoutez un nom de domaine sur votre plateforme e-mail, la configura
 L'enregistrement CNAME est utilisé ici en temps qu'alias, il pointe vers une cible qui elle-même renvoie vers une adresse IP. Il ne s'agit donc pas par nature d'un enregistrement lié à un service e-mail.
 
 Dans le cadre de nos offres [**Hosted Exchange**](https://www.ovhcloud.com/fr/emails/hosted-exchange/) et [**Email Pro**](https://www.ovhcloud.com/fr/emails/email-pro/), cet enregistrement CNAME est utilisé comme code de validation (token) qui sera visible dans la zone DNS du nom de domaine à valider. Le but est de vérifier que l'utilisateur de la plateforme e-mail est bien le gestionnaire du nom de domaine qu'il ajoute.
-
-> [!primary]
->
-> Si le nom de domaine ajouté est géré dans le même compte client que la plateforme e-mail, il n'y a pas d'enregistrement CNAME à configurer.
 
 Dans le schéma ci-dessous, la plateforme e-mail ([Exchange](https://www.ovhcloud.com/fr/emails/) ou [Email Pro](https://www.ovhcloud.com/fr/emails/email-pro/)) est représentée par le cadre vert.<br>
 Pour former les adresses e-mail vous ajoutez des comptes (ici représentés par « **contact** », « **john.smith** » et « **mary.johnson** »).<br>
@@ -80,7 +80,7 @@ Sélectionnez l'onglet correspondant à votre situation :
 >>
 >> Une fois ces informations complétées, cliquez sur `Suivant`{.action}. Assurez-vous que les informations affichées sont correctes puis cliquez sur `Confirmer`{.action}.<br>
 >>
->> > [!primary]
+>> > [!warning]
 >> >
 >> > La modification nécessite un temps de propagation généralement appliqué en quelques minutes. Il peut néanmoins aller jusqu'à 24 heures maximum.
 >>
@@ -93,7 +93,7 @@ Sélectionnez l'onglet correspondant à votre situation :
 >>
 >> Validez cette modification dans votre zone DNS.
 >>
->> > [!primary]
+>> > [!warning]
 >> >
 >> > Cette modification nécessite un temps de propagation, généralement appliqué en quelques minutes. Il peut néanmoins aller jusqu'à 24 heures maximum.
 >> >
