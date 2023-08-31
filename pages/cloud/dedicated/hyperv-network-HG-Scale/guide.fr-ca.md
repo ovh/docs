@@ -1,7 +1,7 @@
 ---
 title: 'Configurer le réseau sur Windows Server avec Hyper-V sur les gammes High Grade & SCALE'
 excerpt: 'Découvrez comment configurer le réseau sur Windows Server avec Hyper-V sur les gammes High Grade & SCALE'
-updated: 2023-08-30
+updated: 2023-08-31
 ---
 
 ## Objectif
@@ -109,7 +109,7 @@ Suivez l'assistant jusqu'à atteindre la section « Server Roles ». Sélectionn
 
 ![Install roles](images/install_roles_2.png){.thumbnail}
 
-Continuez ensuite jusqu'à la section « Virtual Switches » de « Hyper-V » et s'assurer qu'aucune interface n'est sélectionnée.
+Continuez ensuite jusqu'à la section « Virtual Switches » de « Hyper-V » et assurez-vous qu'aucune interface n'est sélectionnée.
 
 ![Install roles](images/install_roles_3_2.png){.thumbnail}
 
@@ -121,7 +121,7 @@ Enfin, dans la section « Confirmation », sélectionnez `Restart the destinatio
 
 #### Création du switch virtuel
 
-Dans les versions les plus récentes de Windows Server, les switchs virtuels Hyper-V sur un cluster d'adaptateurs réseau de type LBFO sont obsolètes. Nous devrons donc créer le switch manuellement à l'aide de Powershell. Exécutez la commande suivante et remplacez "vSwitch_Name" par le nom de votre choix et remplacez "NIC_Team_Name" par le nom de l'équipe NIC que vous avez créée précédemment :
+Dans les versions les plus récentes de Windows Server, les switchs virtuels Hyper-V sur un cluster d'adaptateurs réseau de type LBFO sont obsolètes. Nous devrons donc créer le switch manuellement à l'aide de Powershell. Exécutez la commande suivante et remplacez "vSwitch_Name" par le nom de votre choix et remplacez "NIC_Team_Name" par le nom du NIC team que vous avez créée précédemment :
 
 ```powershell
 New-VMSwitch -Name "vSwitch_Name" -NetAdapterName "NIC_Team_Name" -AllowNetLbfoTeams $true -AllowManagementOS $true 
@@ -286,7 +286,7 @@ Donnez un nom à votre *teaming* puis ajoutez la seconde interface au *teaming*.
 
 Nous allons avoir besoin de créer un switch virtuel qui va lier nos VMs au *teaming* que nous avons créé.
 
-Tout d'abord, ouvrez Powershell en tant qu'administrateur et exécutez la commande suivante en remplaçant "vSwitch_Name" par le nom de votre choix et en remplaçant "NIC_Team_Name" par le nom de l'équipe NIC que vous avez créée précédemment:
+Tout d'abord, ouvrez Powershell en tant qu'administrateur et exécutez la commande suivante en remplaçant "vSwitch_Name" par le nom de votre choix et en remplaçant "NIC_Team_Name" par le nom du NIC team que vous avez créée précédemment:
 
 ```powershell
 New-VMSwitch -Name "vSwitch_Name" -NetAdapterName "NIC_Team_Name" -AllowNetLbfoTeams $true -AllowManagementOS $true 

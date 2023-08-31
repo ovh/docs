@@ -1,7 +1,7 @@
 ---
 title: 'Configuring the network on Windows Server with Hyper-V on the High Grade & SCALE ranges'
 excerpt: 'Find out how to configure the network on  Windows Server with Hyper-V on the High Grade & SCALE ranges'
-updated: 2023-08-30
+updated: 2023-08-31
 ---
 
 ## Objective
@@ -121,7 +121,7 @@ Finally, proceed to the `Confirmation` section, select `Restart the destination 
 
 #### Creating the Virtual Switch
 
-With the newest versions of Windows Server, Hyper-V virtual switches on an LBFO-Type Network adapter cluster is deprecated. As such we will need to create the switch manually using Powershell. Run the following command and replace "vSwitch_Name" with the name of your choosing and replace "NIC_Team_Name" with the name of the NIC team that you created earlier:
+With the newest versions of Windows Server, Hyper-V virtual switches on an LBFO-Type Network adapter cluster are deprecated. As such we will need to create the switch manually using Powershell. Run the following command and replace "vSwitch_Name" with the name of your choice and replace "NIC_Team_Name" with the name of the NIC team that you created earlier:
 
 ```powershell
 New-VMSwitch -Name "vSwitch_Name" -NetAdapterName "NIC_Team_Name" -AllowNetLbfoTeams $true -AllowManagementOS $true 
@@ -287,7 +287,7 @@ Next, give your team a name, add the second interface to the team, then expand t
 
 We will need to create a virtual switch that will link our VMs to the Team that we created.
 
-First, open Powershell as an admin and run the following command and replace "vSwitch_Name" with the name of your choosing and replace "NIC_Team_Name" with the name of the NIC team that you created earlier:
+First, open Powershell as an admin and run the following command. Replace "vSwitch_Name" with the name of your choice and replace "NIC_Team_Name" with the name of the NIC team that you created earlier:
 
 ```powershell
 New-VMSwitch -Name "vSwitch_Name" -NetAdapterName "NIC_Team_Name" -AllowNetLbfoTeams $true -AllowManagementOS $true 
