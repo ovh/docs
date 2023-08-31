@@ -161,7 +161,7 @@ Haga clic derecho en su tarjeta vEthernet y seleccione `Properties`{.action}.
 
 ![Static IP](images/static_ip_5.png){.thumbnail}
 
-Haga doble clic en Protocolo de `Internet versión 4 (TCP/IPv4)`{.action}.
+Haga doble clic en `Internet Protocol Version 4 (TCP/IPv4)`{.action}.
 
 ![Static IP](images/static_ip_3.png){.thumbnail}
 
