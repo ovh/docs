@@ -4,8 +4,6 @@ excerpt: 'Find out how to configure the network on  Windows Server with Hyper-V 
 updated: 2023-08-30
 ---
 
-**Last updated 30th August 2023**
-
 ## Objective
 
 On the High Grade & SCALE ranges, it is not possible to operate Additional IPs in *bridged* mode (via virtual MACs). It is therefore necessary to configure Additional IPs in routed mode or via the vRack.
@@ -123,7 +121,7 @@ Finally, proceed to the `Confirmation` section, select `Restart the destination 
 
 #### Creating the Virtual Switch
 
-With the newest versions of Windows Server, Hyper-V virtual switches on an LBFO-Type Network adapter cluster is deprecated. As such we will need to create the switch manually using powershell. Run the following command and replace "vSwitch_Name" with the name of your choosing and replace "NIC_Team_Name" with the name of the NIC team that you created earlier:
+With the newest versions of Windows Server, Hyper-V virtual switches on an LBFO-Type Network adapter cluster is deprecated. As such we will need to create the switch manually using Powershell. Run the following command and replace "vSwitch_Name" with the name of your choosing and replace "NIC_Team_Name" with the name of the NIC team that you created earlier:
 
 ```powershell
 New-VMSwitch -Name "vSwitch_Name" -NetAdapterName "NIC_Team_Name" -AllowNetLbfoTeams $true -AllowManagementOS $true 
