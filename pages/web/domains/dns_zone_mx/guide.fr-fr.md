@@ -12,7 +12,7 @@ L'enregistrement MX permet de relier un nom de domaine au serveur de sa platefor
 
 ## Prérequis
 
-- Disposer d'un accès à la gestion du nom de domaine concerné depuis l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+- Disposer d'un accès à la gestion de la zone DNS du nom de domaine concerné depuis l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 - Le nom de domaine concerné doit utiliser la configuration OVHcloud (c'est à dire les serveurs DNS d'OVHcloud).
 - Disposer d'une offre MX Plan (incluse dans l'offre d’[hébergement web](https://www.ovhcloud.com/fr/web-hosting/), l'[hébergement gratuit 100M](https://www.ovhcloud.com/fr/domains/free-web-hosting/) ou l'offre MX Plan commandée séparément), une de nos [offres e-mail OVHcloud](https://www.ovhcloud.com/fr/emails/), ou un service e-mail externe.
@@ -31,7 +31,9 @@ L'enregistrement MX permet de relier un nom de domaine au serveur de sa platefor
 
 Les enregistrements MX (**M**ail e**X**change) permettent de relier votre nom de domaine aux serveurs e-mail de réception attachés à votre service e-mail. Nous allons nous appuyer sur un exemple.
 
-Lorsque l'adresse **sender@otherdomain.ovh** envoie un e-mail vers **contact@mydomain.ovh**, le serveur d'envoi e-mail (**Outgoing mail server**) va interroger la zone DNS du nom de domaine **mydomain.ovh** et lire les enregistrements **MX** pour transmettre l'e-mail.
+Lorsque l'adresse **sender@otherdomain.ovh** envoie un e-mail vers **contact@mydomain.ovh**, le serveur d'envoi e-mail (**Outgoing mail server**) va :
+- **(1)** interroger la zone DNS du nom de domaine **mydomain.ovh** et lire les enregistrements **MX**.
+- **(2)** transmettre l'e-mail vers l'URL de l'enregistrement MX lu.
 
 ![email](images/email-dns-conf-mx01.png){.thumbnail}
 
@@ -44,7 +46,7 @@ Vous pouvez paramétrer plusieurs enregistrements MX pour un même nom de domain
 > De manière générale, **modifier les enregistrements MX dans la zone DNS de son nom de domaine est une manipulation délicate** : réaliser une mauvaise manipulation peut rendre impossible la réception des e-mails sur vos adresses. Nous vous invitons à être vigilant lors de la réalisation de cette manipulation.
 > En cas de doute, nous vous conseillons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/).
 
-### Connaître la configuration MX d'OVHcloud <a name="mxovhcloud"></a>
+### Valeurs de la configuration MX OVHcloud <a name="mxovhcloud"></a>
 
 Retrouvez ci-dessous la configuration MX OVHcloud à utiliser pour nos solutions MX Plan (seule ou incluse dans une offre d’[hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/)), [E-mail Pro](https://www.ovhcloud.com/fr/emails/email-pro/) et [Exchange](https://www.ovhcloud.com/fr/emails/). Nos serveurs e-mail disposent d'un antispam et d'un antivirus intégré.
 
