@@ -1,10 +1,8 @@
 ---
 title: Configuring an IP block in a vRack
 excerpt: This guide will show you how to configure a block of public IP addresses for use with the vRack.
-updated: 2022-07-26
+updated: 2023-08-31
 ---
-
-**Last updated 26th July 2022**
 
 ## Objective
 
@@ -29,8 +27,9 @@ As well as private IP addressing, the [vRack](https://www.ovh.com/asia/solutions
 
 > [!primary]
 >
-For example purposes we'll be using an IP block of 46.105.135.96/28 and eth1 for the secondary network interface, which is dedicated to the vRack.
->
+> For example purposes we'll be using an IP block of 46.105.135.96/28 and eth1 for the secondary network interface, which is dedicated to the [vRack](https://www.ovh.co.uk/solutions/vrack/){.external}.
+> 
+> Also for example purposes, the network configuration file we refer to is located in `/etc/network/interfaces`. The equivalent file on your server may be located somewhere else, depending on your operating system. The file content may also be different. If you encounter any difficulties, please refer to the official documentation for your distribution.
 
 ### Add the IP block to the vRack
 
@@ -117,12 +116,6 @@ Next, we need to create a new IP route for the vRack. We'll be adding a new traf
 ```
 
 ### Amend the network configuration file
-
-> [!primary]
->
-For example purposes, the network configuration file we refer to is located in /etc/network/interfaces. The equivalent file on your server may be located somewhere else, depending on your operating system.
->
-
 
 Finally, we need to amend the network configuration file to account for the new traffic rule and route the vRack traffic through the network gateway address of **46.105.135.110**.
 

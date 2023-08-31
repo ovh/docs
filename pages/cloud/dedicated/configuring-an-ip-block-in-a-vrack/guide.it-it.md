@@ -1,14 +1,12 @@
 ---
 title: 'Configurare un blocco di indirizzi IP nella vRack'
 excerpt: 'Scopri come configurare un blocco di indirizzi IP nella vRack'
-updated: 2022-07-26
+updated: 2023-08-31
 ---
 
 > [!primary]
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
 >
-
-**Ultimo aggiornamento: 26/07/2022**
 
 ## Obiettivo
 
@@ -34,8 +32,9 @@ Oltre a consentire un indirizzamento IP privato, la [vRack](https://www.ovh.it/s
 
 > [!primary]
 >
-> In questa guida utilizzeremo, a titolo di esempio, un blocco IP di 46.105.135.96/28 e l’interfaccia di rete secondaria `eth1`{.action} (dedicata alla vRack).
+> In questa guida utilizzeremo, a titolo di esempio, un blocco IP di 46.105.135.96/28 e l’interfaccia di rete secondaria `eth1` (dedicata alla vRack).
 >
+> Sempre a titolo di esempio, il file di configurazione della rete a cui ci riferiamo si trova in `/etc/network/interfaces`. A seconda del sistema operativo utilizzato, il file equivalente potrebbe trovarsi altrove. Anche il contenuto del file potrebbe essere diverso. In caso di difficoltà, consultare la documentazione ufficiale della propria distribuzione.
 
 ### Aggiungi il blocco IP alla vRack
 
@@ -123,11 +122,6 @@ local
 ```
 
 ### Modifica il file di configurazione di rete
-
-> [!primary]
->
-> In questo esempio, il file di configurazione di rete si trova in `/etc/network/interfaces`{.action}. A seconda del sistema operativo utilizzato, questo file può essere situato altrove. In caso di dubbi, consulta la documentazione ufficiale della tua distribuzione.
->
 
 Infine, non ti resta che modificare il file di configurazione di rete per tenere conto della nuova regola di traffico e instradare il traffico vRack attraverso l’indirizzo di gateway di rete **46.105.135.110**.
 

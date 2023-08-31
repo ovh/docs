@@ -1,14 +1,12 @@
 ---
 title: 'Configurar um bloco de endereços IP no vRack'
 excerpt: 'Saiba como configurar um bloco de endereços IP públicos no vRack'
-updated: 2022-07-26
+updated: 2023-08-31
 ---
 
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
-
-**Última atualização: 26/07/2022**
 
 ## Objetivo
 
@@ -36,6 +34,7 @@ Além do direcionamento IP privado, o [vRack](https://www.ovh.pt/solucoes/vrack/
 >
 > A título de exemplo, iremos utilizar um bloco de endereços IP 46.105.135.96/28 e a interface de rede secundária `eth1` (dedicada ao vRack).
 >
+> Também a título de exemplo, o ficheiro de configuração de rede a que nos referimos está localizado em `/etc/network/interfaces`. Dependendo do sistema operativo utilizado, o ficheiro equivalente pode estar localizado noutro local. O conteúdo do ficheiro também pode ser diferente. Se tiver alguma dificuldade, por favor consulte a documentação oficial da sua distribuição.
 
 ### Adicionar o bloco IP ao vRack
 
@@ -123,11 +122,6 @@ local
 ```
 
 ### Modificar o ficheiro de configuração de rede
-
-> [!primary]
->
-> A título de exemplo, o ficheiro de configuração de rede a que nos referimos encontra-se em `/etc/network/interfaces`. Em função do sistema operativo utilizado, o ficheiro equivalente pode encontrar-se noutro local. Não hesite em consultar a documentação oficial da sua distribuição em caso de dúvidas.
->
 
 Por fim, resta modificar o ficheiro de configuração de rede para ter em conta a nova regra de tráfego e encaminhar o tráfego vRack através do endereço do gateway de rede **46.105.135.110**.
 
