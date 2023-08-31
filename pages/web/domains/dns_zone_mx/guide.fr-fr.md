@@ -33,7 +33,7 @@ Les enregistrements MX (**M**ail e**X**change) permettent de relier votre nom de
 
 Lorsque l'adresse **sender@otherdomain.ovh** envoie un e-mail vers **contact@mydomain.ovh**, le serveur d'envoi e-mail (**Outgoing mail server**) va :
 - **(1)** interroger la zone DNS du nom de domaine **mydomain.ovh** et lire les enregistrements **MX**.
-- **(2)** transmettre l'e-mail vers l'URL de l'enregistrement MX lu.
+- **(2)** transmettre l'e-mail vers l'URL de l'enregistrement **MX** lu.
 
 ![email](images/email-dns-conf-mx01.png){.thumbnail}
 
