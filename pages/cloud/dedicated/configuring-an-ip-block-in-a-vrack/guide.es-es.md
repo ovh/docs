@@ -34,6 +34,7 @@ Además del direccionamiento IP privado, el [vRack](https://www.ovh.es/solucione
 >
 > En esta guía utilizaremos, a modo de ejemplo, el bloque de IP **46.105.135.96/28** y la interfaz de red secundaria **eth1** (dedicada al vRack).
 >
+> También a modo de ejemplo, el archivo de configuración de red al que nos referimos se encuentra en `/etc/network/interfaces`. En función del sistema operativo, este archivo puede encontrarse en otra ubicación. El contenido del archivo también puede ser diferente. Si tiene alguna dificultad, consulte la documentación oficial de su distribución.
 
 ### Añadir el bloque IP al vRack
 
@@ -52,10 +53,6 @@ Seleccione el vRack en la lista para ver la lista de servicios compatibles. Haga
 
 ### Configurar una dirección IP útil
 
-> [!warning]
->
-> En este ejemplo, el archivo de configuración de red se encuentra en **/etc/network/interfaces**. En función del sistema operativo, este archivo puede encontrarse en otra ubicación. El contenido del archivo también puede ser diferente. En caso de duda, consulte la documentación oficial de su distribución.
->
 
 En el caso del vRack, la primera, la penúltima y la última dirección de un bloque de IP siempre están reservadas para la dirección de red, la puerta de enlace y el *broadcast* respectivamente. Eso significa que la primera dirección útil es la segunda dirección del bloque, tal y como se muestra a continuación:
 

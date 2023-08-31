@@ -1,7 +1,7 @@
 ---
 title: 'Configurar um bloco de endereços IP no vRack'
 excerpt: 'Saiba como configurar um bloco de endereços IP públicos no vRack'
-updated: 2023-08-28
+updated: 2023-08-31
 ---
 
 > [!primary]
@@ -34,6 +34,7 @@ Além do direcionamento IP privado, o [vRack](https://www.ovh.pt/solucoes/vrack/
 >
 > A título de exemplo, iremos utilizar um bloco de endereços IP 46.105.135.96/28 e a interface de rede secundária `eth1` (dedicada ao vRack).
 >
+> Também a título de exemplo, o ficheiro de configuração de rede a que nos referimos está localizado em `/etc/network/interfaces`. Dependendo do sistema operativo utilizado, o ficheiro equivalente pode estar localizado noutro local. O conteúdo do ficheiro também pode ser diferente. Se tiver alguma dificuldade, por favor consulte a documentação oficial da sua distribuição.
 
 ### Adicionar o bloco IP ao vRack
 
@@ -51,11 +52,6 @@ Selecione o seu vRack na lista para apresentar a lista dos serviços elegíveis.
 ![vrack](images/addIPblock.png){.thumbnail}
 
 ### Configurar um endereço IP utilizável
-
-> [!warning]
->
-> A título de exemplo, o ficheiro de configuração de rede a que nos referimos encontra-se em `/etc/network/interfaces`. Em função do sistema operativo utilizado, o ficheiro equivalente pode encontrar-se noutro local. O conteúdo do ficheiro também pode ser diferente. Não hesite em consultar a documentação oficial da sua distribuição em caso de dúvidas.
->
 
 No caso do vRack, o primeiro, o penúltimo e o último endereço de um bloco de endereços IP estão sempre reservados, respetivamente, para o endereço da rede, ao gateway da rede e ao *broadcast* da rede. Isto significa que o primeiro endereço utilizável é o segundo endereço do bloco, como indicado a seguir:
 

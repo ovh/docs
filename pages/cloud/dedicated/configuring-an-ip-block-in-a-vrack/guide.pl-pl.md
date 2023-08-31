@@ -1,7 +1,7 @@
 ---
 title: 'Konfiguracja bloku IP w sieci vRack'
 excerpt: 'Dowiedz się, jak skonfigurować blok publicznych adresów IP w sieci vRack'
-updated: 2023-08-28
+updated: 2023-08-31
 ---
 
 > [!primary]
@@ -35,6 +35,7 @@ Oprócz prywatnego adresowania IP, [vRack](https://www.ovh.pl/rozwiazania/vrack/
 >
 > Jako przykład użyjemy bloku IP 46.105.135.96/28 oraz `eth1` dla dodatkowego interfejsu sieciowego dedykowanego sieci vRack.
 >
+> Dla przykładu, plik konfiguracyjny sieci, do którego się odnosimy, znajduje się w `/etc/network/interfaces`. W zależności od używanego systemu operacyjnego, równoważny plik może znajdować się w innym miejscu. Zawartość pliku może być również inna. Jeśli masz jakiekolwiek trudności, zapoznaj się z oficjalną dokumentacją swojej dystrybucji.
 
 ### Dodaj blok IP do vRack
 
@@ -53,10 +54,6 @@ Wybierz z listy usługę vRack, aby wyświetlić listę usług, które chcesz za
 
 ### Konfiguracja adresu IP
 
-> [!warning]
->
-> W przedstawionym przykładzie plik konfiguracyjny sieci, do którego się odnosimy, znajduje się w `/etc/network/interfaces`. W zależności od systemu operacyjnego odpowiedni plik może być zlokalizowany w innym miejscu. Zawartość pliku może być inna. W przypadku trudności z jego odnalezieniem, skorzystaj z oficjalnej dokumentacji dotyczącej Twojej dystrybucji.
->
 
 W przypadku sieci vRack pierwszy, przedostatni i ostatni adres danego bloku IP są zawsze zarezerwowane odpowiednio dla: adresu sieci, bramy sieciowej i broadcastu sieci. Oznacza to, że pierwszy możliwy do użycia adres jest drugim adresem z bloku, jak pokazano poniżej:
 

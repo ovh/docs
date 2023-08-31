@@ -1,7 +1,7 @@
 ---
 title: 'IP-Block im vRack konfigurieren'
 excerpt: 'So konfigurieren Sie einen öffentlichen IP-Adressblock im vRack'
-updated: 2023-08-28
+updated: 2023-08-31
 ---
 
 ## Einleitung
@@ -30,6 +30,7 @@ Neben Private IP Addressing ist es mit dem [vRack](https://www.ovh.de/loesungen/
 >
 > In der vorliegenden Anleitung verwenden wir als Beispiel den IP-Block 46.105.135.96/28 sowie `eth1` als sekundäres Netzwerk, das dem vRack zugewiesen ist.
 >
+> Ebenfalls nur als Beispiel: Die Netzwerkkonfigurationsdatei, auf die wir uns beziehen, befindet sich unter `/etc/network/interfaces`. Je nach verwendetem Betriebssystem kann sich die entsprechende Datei an anderer Stelle befinden. Auch der Inhalt der Datei kann unterschiedlich sein. Bei Schwierigkeiten können Sie gerne die offizielle Dokumentation Ihrer Distribution zu Rate ziehen.
 
 ### IP-Block zum vRack hinzufügen
 
@@ -47,11 +48,6 @@ Wählen Sie in der Liste Ihr vRack aus, um die Liste der verfügbaren Dienstleis
 ![vrack](images/addIPblock.png){.thumbnail}
 
 ### Eine verwendbare IP-Adresse konfigurieren
-
-> [!warning]
->
-> Im vorliegenden Beispiel befindet sich die Netzwerkkonfigurationsdatei in `/etc/network/interfaces`. Je nach verwendetem Betriebssystem kann sich die entsprechende Datei auch an einem anderen Speicherort befinden. Der Inhalt der Datei kann sich ebenfalls unterscheiden. Im Zweifelsfall lesen Sie die offizielle Dokumentation Ihrer Distribution.
->
 
 Beim vRack sind die erste, die vorletzte und die letzte Adresse eines gegebenen IP-Blocks immer jeweils für die Netzwerkadresse, das Netzwerk-Gateway sowie für den Netzwerk-*Broadcast* reserviert. Das heißt, die erste verwendbare Adresse ist die zweite Adresse des Blocks, wie im Folgenden zu sehen ist:
 
