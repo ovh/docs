@@ -112,6 +112,8 @@ At the end of the wizard, review your settings and click on the `Create a Notebo
 >
 > Note at the bottom of the screen the equivalent of all these steps with the Command Line Interface (CLI) `ovhai`.
 >
+> Discover how to [install the OVHcloud AI CLI](/pages/platform/ai/cli_10_howto_install_cli).
+>
 
 When your notebook is created, it will appear on your dashboard.
 
