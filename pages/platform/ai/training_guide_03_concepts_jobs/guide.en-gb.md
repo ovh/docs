@@ -28,10 +28,10 @@ Each job is linked to a **Public Cloud** project and specifies an amount of reso
 
 ## Job lifecycle
 
-During its lifetime the job will transition between the following statuses:
+During its lifetime the job will transit between the following statuses:
 
 > [!primary]
-> * Only jobs that reach the `RUNNING` status are billed. Billing starts with the `INITIALIZING` step and ends when the `FINALIZING` step starts.
+> * Only jobs that reach the `RUNNING` status are billed. Billing starts with the `RUNNING` step and ends when the `FINALIZING` step starts.
 > * Only jobs in states `QUEUED`, `INITIALIZING`, `PENDING` and `RUNNING` are included in the quota computation.
 
 -   `QUEUED` the job run request is about to be processed
