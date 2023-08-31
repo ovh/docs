@@ -12,27 +12,40 @@ order: 4
 ## Objective  
 
 Python is a general purpose scripting language often used in web development.
-You can deploy Python apps on {{< vendor/name >}} using a server or a project such as [uWSGI](https://uwsgi-docs.readthedocs.io/en/latest/).
+You can deploy Python apps on Web PaaS using a server or a project such as [uWSGI](https://uwsgi-docs.readthedocs.io/en/latest/).
 
 ## Supported versions
 
-{{% major-minor-versions-note configMinor="true" %}}
+You can select the major and minor version.
 
-| Grid and {{% names/dedicated-gen-3 %}} | {{% names/dedicated-gen-2 %}} |
-|----------------------------------------|------------------------------ |
-| - 3.11  
-- 3.10  
-- 3.9  
-- 3.8 |
+Patch versions are applied periodically for bug fixes and the like. When you deploy your app, you always get the latest available patches.
 
-{{% language-specification type="python" display_name="Python" %}}
+| Grid 
+|------|
+|  3.11  
+|  3.10  
+|  3.9  
+|  3.8 
 
-{{% deprecated-versions %}}
+## Specify the language Anchor to this heading
+
+To use Python, specify python as your app’s type:
+
+```.platform.app.yaml
+type: 'python:<VERSION_NUMBER>'
+```
+
+For example:
+
+```.platform.app.yaml
+type: 'python:3.11'
+```
+## Deprecated versions
 
 - 3.7  
 - 3.6  
 - 3.5  
-- 2.7*
+- 2.7
 
 \* This version doesn't receive any updates at all.
 You are strongly recommended to upgrade to a supported version.
@@ -42,7 +55,7 @@ You are strongly recommended to upgrade to a supported version.
 ### Run your own server
 
 You can define any server to handle requests.
-Once you have it configured, add the following configuration to get it running on {{< vendor/name >}}:
+Once you have it configured, add the following configuration to get it running on  Web PaaS:
 
 1\.  Specify one of the [supported versions](#supported-versions):
 
@@ -53,9 +66,18 @@ type: 'python:3.11'
 ```  
 
 
-2\.  Install the requirements for your app.
+2\.  Install the requirements for your app. For example, to use pipenv to manage requirements and a virtual environment, add the following:
 
-    {{% pipenv %}}
+```.platform.app.yaml
+dependencies:
+    python3:
+        pipenv: "2022.12.19"
+
+hooks:
+    build: |
+        set -eu
+        pipenv install --system --deploy
+```
 
 3\.  Define the command to start your web server:
 
@@ -122,11 +144,20 @@ protocol = http
 wsgi-file = app.py
 ```
 
-    Replace `app.py` with whatever your file is.
+Replace `app.py` with whatever your file is.
 
 4\.  Install the requirements for your app.
 
-    {{% pipenv %}}
+```.platform.app.yaml
+dependencies:
+    python3:
+        pipenv: "2022.12.19"
+
+hooks:
+    build: |
+        set -eu
+        pipenv install --system --deploy  
+```
 
 5\.  Define the entry point in your app:
 
@@ -137,7 +168,7 @@ wsgi-file = app.py
 def application(env, start_response):
 
     start_response('200 OK', [('Content-Type', 'text/html')])
-    return [b"Hello world from {{< vendor/name >}}"]
+    return [b"Hello world from Web PaaS"]
 ```
 
 ## Package management
@@ -152,11 +183,20 @@ add them to the `dependencies` in your [app configuration](../../create-apps/app
 ```yaml {configFile="app"}
 dependencies:
     python3:
-        {{< variable "PACKAGE_NAME" >}}: {{< variable "PACKAGE_VERSION" >}}
+        PACKAGE_NAME:PACKAGE_VERSION
 ```
 
-{{% pipenv %}}
+For example, to use `pipenv` to manage requirements and a virtual environment, add the following:
+```.platform.app.yaml
+dependencies:
+    python3:
+        pipenv: "2022.12.19"
 
+hooks:
+    build: |
+        set -eu
+        pipenv install --system --deploy        
+```
 ## Connect to services
 
 The following examples show how to access various [services](../../add-services/_index.md) with Python.
