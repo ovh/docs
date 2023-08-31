@@ -3,10 +3,8 @@ title: Kubernetes Plugins (CNI, CRI, CSI...) & softwares versions and reserved r
 excerpt: ''
 routes:
     canonical: '/pages/platform/kubernetes-k8s/software-versions-reserved-resources'
-updated: 2023-08-25
+updated: 2023-08-31
 ---
-
-**Last updated August 25<sup>th</sup>, 2023.**
 
 We list here some details on the Control Panel, the plugins (CNI, CRI, CSI...) & software versions we use and the resources we reserve on each Node.
 
@@ -125,6 +123,6 @@ This table sums up the reserved resources on b2 flavors:
 
 ## Go further
 
-- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/de/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+- If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-sg/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 - Join our [community of users](https://community.ovh.com/en/).

@@ -3,10 +3,8 @@ title: Kubernetes Plugins (CNI, CRI, CSI...) & softwares versions and reserved r
 excerpt: ''
 routes:
     canonical: '/pages/platform/kubernetes-k8s/software-versions-reserved-resources'
-updated: 2023-08-25
+updated: 2023-08-31
 ---
-
-**Last updated August 25<sup>th</sup>, 2023.**
 
 We list here some details on the Control Panel, the plugins (CNI, CRI, CSI...) & software versions we use and the resources we reserve on each Node.
 
