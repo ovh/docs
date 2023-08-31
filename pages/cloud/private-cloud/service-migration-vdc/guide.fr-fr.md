@@ -53,7 +53,7 @@ Ce processus comporte deux aspects :
 Ce guide utilise les notions de **vDC d'origine** et de **vDC de destination**. Voici un index des tâches à réaliser:
 
 [Etape 1 Concevoir votre infrastructure](#design)<br />
-&ensp;&ensp;[Etape 1.1 Choisir entre Premier et Essentials](#premoress)<br />
+&ensp;&ensp;[Etape 1.1 Choisir votre gamme](#premoress)<br />
 &ensp;&ensp;[Etape 1.2 Selectionner vos hosts (compute)](#selecthosts)<br />
 &ensp;&ensp;[Etape 1.3 Selectionner vos datastores (storage)](#selectdatastores)<br />
 [Etape 2 Construire votre nouvelle infrastructure](#build)<br />
@@ -119,7 +119,7 @@ Ce guide utilise les notions de **vDC d'origine** et de **vDC de destination**. 
 À la fin de l'étape 1, vous devriez avoir une vision claire de la gamme commerciale 2023 vers laquelle vous souhaitez passer, ainsi que des hôtes et du stockage que vous souhaitez utiliser.
 
 <a name="premoress"></a>
-#### Etape 1.1 Choix entre différentes gammes
+#### Etape 1.1 Choisir votre gamme
 
 En tant que client Hosted Private Cloud VMware avec un hôte antérieur à 2020, vous souhaitez migrer vers VMware on OVHcloud.
 

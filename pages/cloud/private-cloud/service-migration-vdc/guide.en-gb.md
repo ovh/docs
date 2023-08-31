@@ -49,7 +49,7 @@ There are two aspects involved in this process:
 This guide will utilise the notions of a **source vDC** and a **destination vDC**. Please find an index of the tasks you will be performing:
 
 [Step 1 Design your infrastructure](#design)<br />
-&ensp;&ensp;[Step 1.1 Choose between VMware On OVHcloud range](#premoress)<br />
+&ensp;&ensp;[Step 1.1 Choose between the different VMware On OVHcloud ranges](#premoress)<br />
 &ensp;&ensp;[Step 1.2 Select your hosts (compute)](#selecthosts)<br />
 &ensp;&ensp;[Step 1.3 Select your datastores (storage)](#selectdatastores)<br />
 [Step 2 Build your new infrastructure](#build)<br />
@@ -115,7 +115,7 @@ This guide will utilise the notions of a **source vDC** and a **destination vDC*
 At the end of step 1, you should have a clear view of which 2023 commercial range you want to upgrade to, as well as which hosts and storage you want to use.
 
 <a name="premoress"></a>
-#### Step 1.1 Choose between different ranges
+#### Step 1.1 Choose between the different VMware on OVHcloud ranges
 
 As an Hosted Private Cloud VMware customer with host prior to 2020, you want to upgrade to VMware on OVHcloud.
 
