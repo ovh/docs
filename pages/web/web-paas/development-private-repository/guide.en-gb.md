@@ -1,43 +1,65 @@
 ---
-title: Private repository
-updated: 2021-03-26
+title: Pull code from a private Git repository
+slug: development-private-repository
+section: Development
+order: 5
 ---
 
-**Last updated 26th March 2021**
+**Last updated 31st August 2023**
 
 
-## Pull code from a private Git repository
 
-Let's say you're building a module (*or theme, library...*) which is stored in a private Git repository that you have access to, and you want to use it on your project. Web PaaS allows you to include code dependencies that are stored in external private Git repositories.
+## Objective  
 
-To grant Web PaaS access to your private Git repository, you need to add the project public SSH key to the deploy keys of your Git repository.
+To complete its build, your {{< vendor/name >}} project may need to access pieces of code stored in private Git repositories.
+Examples include themes, libraries, and modules.
+Configure these repositories to grant access to your project.
 
-You can copy your project's public key by going to the Settings tab on the management console and then clicking the Deploy Key tab on the left hand side.
+To grant access to a private Git repository,
+add the project's public SSH key to your Git repository's deploy keys.
 
-![Deploy Key](images/settings-deploy-key.png)
+## 1. Get your project's public key
 
-If your private repository is on GitHub, go to the target repository's settings page. Go to *Deploy Keys* and click *Add deploy key*. Paste the public SSH key in and submit. By default, on github, deploy keys are read only, so you don't need to worry about the system pushing code to the private repository.
+1\. In the Console, open the project you want.
 
-If you're using Drupal for example, you can now use your private module by adding it to your make file:
+2\. Click **{{< icon settings >}} Settings**.
 
-```ini
-; Add private repository from GitHub
-projects[module_private][type] = module
-projects[module_private][subdir] = "contrib"
-projects[module_private][download][type] = git
-projects[module_private][download][branch] = dev
-projects[module_private][download][url] = "git@github.com:guguss/module_private.git"
+3\. Under **Project settings**, click **Deploy key**.
+
+4\. Click **{{< icon copy >}} Copy**.
+
+
+![Deploy Key](images/settings-deploy-key.png "0.5")
+
+## 2. Add the key to your repository in your Git provider
+
+* [GitHub deploy key](https://docs.github.com/en/developers/overview/managing-deploy-keys#deploy-keys) 
+* [GitLab deploy key](https://docs.gitlab.com/ee/user/project/deploy_keys/#grant-project-access-to-a-public-deploy-key)
+* [Bitbucket access key](https://support.atlassian.com/bitbucket-cloud/docs/configure-repository-settings/)
+
+If you're only pulling code, the key doesn't need write permissions.
+
+Now your {{< vendor/name >}} project can access your private repository via SSH, including to add dependencies.
+
+This means you can access the private repository through links like:
+<code>git@{{% variable "GIT_PROVIDER" %}}:{{% variable "PATH_OR_USERNAME" %}}/{{% variable "REPOSITORY" %}}.git</code>.
+For example, you can clone a repository in your [`build` hook](../create-apps/hooks/_index.md):
+
+```yaml {configFile="app"}
+hooks:
+    build: |
+        set -e
+        git clone git@bitbucket.org:username/module.git
 ```
 
-> [!primary]  
-> In the make file use the `<user>@<host>:<path>.git` format, or `ssh://<user>@<host>:<port>/<path>.git` if using a non-standard port.
-> 
+You can also use [private repositories as submodules](./submodules.md#use-private-git-repositories).
 
-## Using multiple private Git repositories
+## Using multiple private GitHub repositories
 
-More complex projects may have many repositories that they want to include, but GitHub only allows you to associate a deploy key with a single repository.
+GitHub requires a separate deploy key for each repository.
+To grant your project access to multiple repositories, create an automated user account, known as a machine user, with its own SSH key.
 
-If your project needs to access multiple repositories, you can choose to attach an SSH key to an automated user account. Since this account won't be used by a human, it's called a machine user. You can then add the machine account as collaborator or add the machine user to a team with access to the repositories it needs to manipulate.
+You can then add the machine account as collaborator to specific repositories
+or to a team with access to the repositories.
 
-More information about this is available on
-[GitHub](https://developer.github.com/v3/guides/managing-deploy-keys/#machine-users).
+See more information about [machine users on GitHub](https://docs.github.com/en/developers/overview/managing-deploy-keys#machine-users).

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="93px" preserveAspectRatio="none" style="width:520px;height:93px;background:#FFFFFF;" version="1.1" viewBox="0 0 520 93" width="520px" zoomAndPan="magnify"><defs/><g><rect fill="#F1F1F1" height="20.2969" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="64" x="10" y="41.5"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="32" x="15" y="56.4951">web</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="12" x="57" y="56.4951">   </text><line style="stroke:#000000;stroke-width:1.0;" x1="52" x2="52" y1="41.5" y2="61.7969"/><rect fill="none" height="20.2969" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="64" x="10" y="41.5"/><rect fill="#F1F1F1" height="20.2969" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="108" x="111" y="41.5"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="76" x="116" y="56.4951">locations</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="12" x="202" y="56.4951">   </text><line style="stroke:#000000;stroke-width:1.0;" x1="197" x2="197" y1="41.5" y2="61.7969"/><rect fill="none" height="20.2969" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="108" x="111" y="41.5"/><rect fill="#F1F1F1" height="60.8906" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="127" x="256" y="21"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="43" x="261" y="35.9951">index</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="12" x="344" y="35.9951">   </text><line style="stroke:#000000;stroke-width:1.0;" x1="339" x2="339" y1="21" y2="41.2969"/><line style="stroke:#000000;stroke-width:1.0;" x1="256" x2="383" y1="41.2969" y2="41.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="73" x="261" y="56.292">passthru</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="30" x="344" y="56.292">true</text><line style="stroke:#000000;stroke-width:1.0;" x1="339" x2="339" y1="41.2969" y2="61.5938"/><line style="stroke:#000000;stroke-width:1.0;" x1="256" x2="383" y1="61.5938" y2="61.5938"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="43" x="261" y="76.5889">allow</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="34" x="344" y="76.5889">false</text><line style="stroke:#000000;stroke-width:1.0;" x1="339" x2="339" y1="61.5938" y2="81.8906"/><rect fill="none" height="60.8906" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="127" x="256" y="21"/><rect fill="#F1F1F1" height="40.5938" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="88" x="420" y="10"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="78" x="425" y="24.9951">index.html</text><line style="stroke:#000000;stroke-width:1.0;" x1="420" x2="508" y1="30.2969" y2="30.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="74" x="425" y="45.292">index.htm</text><rect fill="none" height="40.5938" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="88" x="420" y="10"/><path d="M371,30.5 L384,30.5 C393.2571,30.5 403.1205,30.5 412.6372,30.5 " fill="none" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:3.0,3.0;"/><path d="M412.6372,33.5158 L414.899,30.5 L412.6372,27.4842 L420.1767,30.5 L412.6372,33.5158 " fill="#000000" style="stroke:#000000;stroke-width:1.0;"/><ellipse cx="371" cy="30.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><path d="M207,51.5 L220,51.5 C229.29,51.5 239.0703,51.5 248.7198,51.5 " fill="none" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:3.0,3.0;"/><path d="M248.7198,54.5795 L251.0295,51.5 L248.7198,48.4205 L256.4186,51.5 L248.7198,54.5795 " fill="#000000" style="stroke:#000000;stroke-width:1.0;"/><ellipse cx="207" cy="51.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><path d="M62,51.5 L75,51.5 C84.3181,51.5 94.1818,51.5 103.8243,51.5 " fill="none" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:3.0,3.0;"/><path d="M103.8243,54.5684 L106.1256,51.5 L103.8243,48.4316 L111.4953,51.5 L103.8243,54.5684 " fill="#000000" style="stroke:#000000;stroke-width:1.0;"/><ellipse cx="62" cy="51.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><!--MD5=[342c7a1a39b608d89ca278a1ce5b2012]
+@startyaml
+web:
+    locations:
+        '/':
+            index:
+                - index.html
+                - index.htm
+            passthru: true
+            allow: false
+@endyaml
+
+@startyaml
+web:
+    locations:
+            index:
+                - index.html
+                - index.htm
+            passthru: true
+            allow: false
+@endyaml
+
+PlantUML version 1.2022.8beta2(Unknown compile time)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

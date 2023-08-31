@@ -1,125 +1,76 @@
 ---
-title: Bitbucket
-updated: 2021-06-21
+title: Integrate with Bitbucket
+slug: bitbucket
+section: Source
 ---
 
-**Last updated 21st June 2021**
+**Last updated 31st August 2023**
+
 
 
 ## Objective  
 
-The Bitbucket integration allows you to manage your Web PaaS environments directly from your Bitbucket repository.
+{{% source-integration/intro source="Bitbucket" %}}
 
-It is possible to integrate a Web PaaS project with either the freely available Bitbucket Cloud product, or with the self-hosted [Bitbucket Server](https://confluence.atlassian.com/bitbucketserver/). In both cases, you will need to [install the Web PaaS CLI](/pages/web/web-paas/development-cli#installation) if you have not already done so to set up the integration.
+You can set up an integration with either Bitbucket Cloud
+or a self-hosted [Bitbucket Server](https://confluence.atlassian.com/bitbucketserver/).
 
-> [!primary]  
-> If the repository you are trying to integrate with a Web PaaS project has a default branch that is not `master` (e.g. `main`), there are a few additional steps you will need to perform to setup the integration.
-> 
+{{% source-integration/requirements source="Bitbucket" %}}
 
 ## Bitbucket Cloud
 
-### 1. Set up an OAuth consumer
+### 1. Create an OAuth consumer
 
-You can integrate your Bitbucket repositories with Web PaaS by creating an [OAuth consumer](https://confluence.atlassian.com/bitbucket/oauth-on-bitbucket-cloud-238027431.html) for your Workspace.
+To integrate your {{< vendor/name >}} project with an existing Bitbucket Cloud repository,
+[create an OAuth consumer](https://support.atlassian.com/bitbucket-cloud/docs/use-oauth-on-bitbucket-cloud/):
 
-1\. Go to your Bitbucket Workspace and click "Settings".
+![A screenshot of how to setup the Bitbucket OAuth consumer](images/bitbucket-oauth-consumer.svg "0.35")
 
-2\. Under "APPS AND FEATURES" click "OAuth Consumers".
+> [!primary]  
+> Be sure to define the above as a _private_ consumer by checking the "This is a private consumer" box.
+> 
+The **Callback URL** isn't important in this case.
+You can set it to `http://localhost`.
 
-3\. Click the "Add consumer" button.
+Copy the **Key** and **Secret** for your consumer.
 
-4\. Fill out the information for the consumer. In order for the integration to work correctly, it's required that you include:
+### 2. Enable the Cloud integration
 
-    * **Name:** Give the consumer a recognizable name, like `Web PaaS consumer` or `Web PaaS integration`.
-    * **Callback URL:** The URL users will be redirected to after access authorization. It is sufficient to set this value to `http://localhost`.
-    * **Set as a private consumer:** At the bottom of the "Details" section, select the "This is a private consumer" checkbox.
-    * **Permissions:** Sets the integration permissions for Web PaaS. These permissions will create the webhooks that will enable Web PaaS to mirror actions from the Bitbucket repository.
-      * **Account** - Email, Read
-      * **Repositories** - Read, Write
-      * **Pull requests** - Read
-      * **Webhooks** - Read and write
-5\. After you have completed the form, `Save` the consumer.
+{{< source-integration/enable-integration source="Bitbucket" >}}
 
-6\. After you have saved, you will see your consumer listed in the "OAuth consumers" section. If you open that item, it will expose two variables that you will need to complete the integration using the Web PaaS CLI: `Key` and `Secret`.
+{{% source-integration/validate source="Bitbucket" %}}
+1\. Follow the [Bitbucket instructions to create a webhook](https://support.atlassian.com/bitbucket-cloud/docs/manage-webhooks/#Create-webhooks)
 
-
-### 2. Enable the integration
-
-Retrieve a `PROJECT_ID` for an existing project with `webpaas project:list` or create a new project with `webpaas project:create`.
-
-Then run the integration command:
-
-```bash
- webpaas integration:add --type=bitbucket --project <PLATFORMSH_PROJECT_ID> --key <CONSUMER_KEY> --secret <CONSUMER_SECRET> --repository <USER>/<REPOSITORY>
-```
-
-where
-
-* `PLATFORMSH_PROJECT_ID` is the project ID for your Web PaaS project.
-* `CONSUMER_KEY` is the `Key` variable of the consumer you created.
-* `CONSUMER_SECRET` is the `Secret` variable of the consumer you created.
-* `USER/REPOSITORY` is the location of the repository.
+   using the URL you copied.
+   Make sure to update the triggers to include all pull request events except comments and approval.
+{{% /source-integration/validate %}}
 
 ## Bitbucket Server
 
 ### 1. Generate a token
 
-To integrate your Web PaaS project with a repository on a Bitbucket Server instance, you will first need to create an access token associated with your account. Click the avatar icon in the top right-hand corner, and then select "Manage account". From your account settings go to "Personal access tokens", and then "Create a token".
+To integrate your {{< vendor/name >}} project with a repository on a Bitbucket Server instance,
+you first need to create an access token associated with your account.
 
-Name the token, and give it at least "Read" access to projects and "Write" access to repositories.
+[Generate a token](https://confluence.atlassian.com/display/BitbucketServer/HTTP+access+tokens).
+and give it at least read access to projects and admin access to repositories.
+Copy the token.
 
-![Bitbucket server token](images/bitbucket_server.png "0.3")
+### 2. Enable the Server integration
 
-Copy the token and make a note of it (temporarily).
+{{< source-integration/enable-integration source="Bitbucket server" >}}
 
-### 2. Enable the integration
+{{% source-integration/validate source="Bitbucket" %}}
+1\. Follow the [Bitbucket instructions to create a webhook](https://confluence.atlassian.com/bitbucketserver076/managing-webhooks-in-bitbucket-server-1026535073.html#ManagingwebhooksinBitbucketServer-creatingwebhooksCreatingwebhooks)
 
-Retrieve a `PROJECT_ID` for an existing project with `webpaas project:list` or create a new project with `webpaas project:create`.
+   using the URL you copied.
+   Send all events except comments and approval.
+{{% /source-integration/validate %}}
 
-Then run the integration command:
+{{% source-integration/environment-status source="Bitbucket" %}}
 
-```bash
-webpaas integration:add --type=bitbucket_server --project <PLATFORMSH_PROJECT_ID> --base-url=<BASE_URL> --username=<USERNAME> --token=<TOKEN> --repository=<REPOSITORY>
-```
+## Source of truth
 
-Where
+{{< source-integration/source-of-truth source="Bitbucket" >}}
 
-* `PLATFORMSH_PROJECT_ID` is the project ID for your Web PaaS project.
-* `BASE_URL`: The base URL of the server installation.
-* `USERNAME`: Your Bitbucket Server username.
-* `TOKEN`: The access token you created for the integration.
-* `REPOSITORY`: The repository  (e.g. 'owner/repository').
-
-## Validate the integration
-
-In both cases, you can verify that your integration is functioning properly [using the CLI](/pages/web/web-paas/integrations-overview#validating-integrations) command:
-
-```bash
-webpaas integration:validate
-```
-
-## Optional parameters
-
-By default several parameters will be set for the Bitbucket integration. They can be changed using the `webpaas integration:update` command.
-
-* `--fetch-branches`: Track and deploy branches (true by default)
-* `--prune-branches`: Delete branches that do not exist in the remote Bitbucket repository (true by default)
-* `--build-pull-requests`: Track and deploy pull-requests (true by default)
-* `--build-pull-requests-post-merge`: `false` to have Web PaaS build the branch specified in a PR. `true` to build the result of merging the PR.  (`false` by default)
-* `--pull-requests-clone-parent-data`: Set to `false` to disable cloning of parent environment data when creating a PR environment, so each PR environment starts with no data. (`true` by default)
-
-For more information see:
-
-```bash
-webpaas help integration:update
-```
-
-> [!primary]  
-> The `--prune-branches` option depends on `--fetch-branches` being enabled. If `--fetch-branches` is disabled, `--prune-branches` will automatically be set to false, even if specifically set to true.
-> 
-
-## Clones and commits
-
-When you run `webpaas get <projectID>` or use the clone command shown in the "Git" dropdown in the management console to clone the project, you will actually be cloning from your remote integrated repository, so long as you have the appropriate access to do so. 
-
-Your Bitbucket repository is considered by Web PaaS to be the "source of truth" for the project. The project is only a mirror of that repository, and all commits should be pushed only to Bitbucket.
+{{% source-integration/url source="Bitbucket" %}}

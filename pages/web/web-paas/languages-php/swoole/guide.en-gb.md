@@ -1,9 +1,10 @@
 ---
 title: Swoole
-updated: 2022-06-02
+slug: swoole
+section: Php
 ---
 
-**Last updated 2nd June 2022**
+**Last updated 31st August 2023**
 
 
 
@@ -13,30 +14,33 @@ Swoole is a PHP extension that extends PHP core with a coroutine based asynchron
 
 Unlike PHP-FPM’s stateless operating, Swoole relies on establishing persistent connections with every user, sending and receiving data in real-time.
 
-[Swoole](https://github.com/swoole/swoole-src) and [Open Swoole](https://openswoole.com/) are two forked libraries persuing that goal.
+[Swoole](https://github.com/swoole/swoole-src) and [Open Swoole](https://openswoole.com/) are two forked libraries pursuing that goal.
 
 > [!primary]  
 > Swoole requires PHP 7.3+.
 > 
+> The Swoole installation script is compatible up to PHP 8.0.
+> 
 
-Check the documentation related to Laravel Octane on Web PaaS.
+Check the documentation related to [Laravel Octane on {{< vendor/name >}}](../../guides/laravel/deploy/octane.md).
 
-
+{{% swoole %}}
 
 ## Use
 
-Override the default web server with a custom start command.
+Override the default web server with a [custom start command](./_index.md#alternate-start-commands).
 Octane should listen on a TCP socket.
 
-```yaml {location=".platform.app.yaml"}
+```yaml {configFile="app"}
 web:
     upstream:
         socket_family: tcp
         protocol: http
     commands:
-        start: php path/to/swoole/start/command --port=$PORT
+        start: php {{<variable "PATH_TO_SWOOLE_START_COMMAND" >}} --port=$PORT
     locations:
         "/":
-            allow: false
             passthru: true
+            scripts: false
+            allow: false
 ```

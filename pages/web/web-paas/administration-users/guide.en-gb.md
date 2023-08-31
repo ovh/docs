@@ -1,162 +1,166 @@
 ---
-title: User administration
-updated: 2022-06-24
+title: Administer users
+slug: administration-users
+section: Administration
+order: 11
 ---
 
-**Last updated 24th June 2022**
+**Last updated 31st August 2023**
 
 
 
 ## Objective  
 
-Learn about user roles and environment types, how to add and delete users, and how to assign user permissions per environment type.
+{{< vendor/name >}} offers very granular and flexible user permissions across projects and organizations. 
+When a user is added to a project, they are automatically added to your organization.
 
-## Instructions
+## Manage project access
 
-### User roles
+If you have set up an external integration to GitHub, GitLab, or Bitbucket and your users can't clone the project locally,
+see how to [troubleshoot source integrations](../integrations/source/troubleshoot.md).
 
-Within a project, each user has a role that controls their access and permission levels.
+### Project roles
 
-* Project Admin: Users who can configure project settings, add and remove users, administer environment permissions, push code, and execute actions on all project environments.
-* Project Viewer: Any user with access to environment types automatically gets this role.
+A user can have one of the following roles to control their access at project level:
 
-These control who has access to projects.
+| Role           | View environment | Push code | Manage user access | Change settings | Execute actions on all environments |
+|----------------|------------------|-----------|--------------------|-----------------|-------------------------------------|
+| Project admin  | Yes              | Yes       | Yes                | Yes             | Yes                                 |
+| Project viewer | Yes              | No        | No                 | No              | No                                  |
 
-Users can still see projects that they can't access if they're a member of an organization.
-See more on access control for organizations.
+By default, organization owners have **Project admin** access on all of the projects within their organization.
 
-To see all projects you have a role in, from the main console page
-click **All projects&nbsp;<span aria-label="and then">></span> All projects**.
+### Environment type roles
 
-## Environment types
+An environment type (Production, Staging, and Development) groups one or more environments together so that you can manage access for all environments of that type:
 
-Each environment type groups one or more environments together so that you can manage access for all environments of a certain type.
-This allows you to set permissions for multiple environments at once based on their purpose.
+- A role assigned to an environment type applies to all environments of that type.
 
-Web PaaS offers three environment types: Production, Staging, and Development.
-You can assign user permissions for each environment type.
-Any permissions you assign to an environment type apply to all environments of that type.
+- Only one environment per project can be of the type: Production.
 
-For example, if you assign User1 **Admin** permissions for Development environments,
-User1 has **Admin** permissions for all environments of that type.
+  It is set automatically as the default branch and can't be overridden separately.
+- You can change an environment's type (except for the Production environment).
 
-A few things to consider:
+- You can have multiple Staging and Development environments.
 
-* Only one environment per project can be the Production type. It's set automatically as the default branch and can't be overridden separately.
-* You can change an environment's type (if it's not Production).
-* You can have multiple Staging and Development environments.
 
-The following table shows the available roles for environment types.
+A user can have one of the following roles on an environment type which grants them permissions on all environments of this type:
 
-| Role | View environment | Push code | Branch environment | SSH access | Change settings | Execute actions |
-| ---- | ---------------- | --------- | ------------------ | ---------- | --------------- | --------------- |
-| Viewer | Yes | No |  No |  No |  No |  No |
-| Contributor | Yes | Yes | Yes | Yes | No | No |
-| Admin| Yes | Yes | Yes | Yes | Yes | Yes |
+| Role        | View environment | Push code | Branch environment | SSH access | Change settings | Execute actions |
+|-------------|------------------|-----------|--------------------|------------|-----------------|-----------------|
+| Admin       | Yes              | Yes       | Yes                | Yes        | Yes             | Yes             |
+| Contributor | Yes              | Yes       | Yes                | Yes        | No              | No              |
+| Viewer      | Yes              | No        | Yes                | No         | No              | No              |
 
-To customize who can use SSH, [set the access key](/pages/web/web-paas/configuration-app/access) in your `platform.app.yaml` file.
+To customize which roles can use SSH, set [`access` in your app configuration](../create-apps/app-reference.md#access).
 
-## Manage users
+#### View a user's permissions across all of the projects in your organization
+
+For each user, you can view a summary of their roles and permissions
+across all projects in your organization.
+
+> [!tabs]      
 
 ### Add a user to a project
 
-To add a user, you need to be a [Project Admin](#user-roles).
+To invite a user, you need to be a [project admin](#project-roles).
 
-To add a user to a project or an environment, follow these steps:
-
-> [!tabs]      
-> In the console     
->>
->>1. Select the project where you want to add a new user.
->>2. Click **Settings**.
->>3. Click **Access**.
->>4. Click **+ Add**.
->>5. Add the user's details and choose their permissions.
->>6. Click **Save**.
->>
->>
-> Using the CLI     
->>
->> Say you want to add `user1@example.com` to the project with a Project Admin role:
->> 
->> ``` bash     
->> 
->> 
->> webpaas user:add user1@example.com -r admin
->> 
->> 
->> ``` 
->>      
-
-The user has to create an account before they can contribute to the project.
-Once you add a user to a project, they receive an email with instructions.
-For SSH access changes to apply after you add a user to a project, you have to redeploy each environment by either clicking **Redeploy** in the console or running `webpaas redeploy`.
-
-### Delete a user from a project
-
-To delete a user, you need to be a [Project Admin](#user-roles).
-
-To delete a user from a project, follow these steps:
+To add a user, follow these steps:
 
 > [!tabs]      
-> In the console
->> 
->>1. Select the project where you want to add a new user.
->>2. Click **Settings**.
->>3. Click **Access**.
->>4. Expand the user you want to delete.
->>5. Click **Delete**.
->>6. Click **Save**.
->>
->>
-> Using the CLI   
->> 
->> To delete existing users:
->> 
->> ``` bash     
->> 
->> 
->> webpaas user:delete user1@example.com
->> 
->> 
->> ``` 
 
-Once you delete a user, they can no longer access the project.
-After you delete a user from a project or an environment type,
-you must [trigger a redeploy](/pages/web/web-paas/development-redeploy) to propagate SSH access changes to each environment.
+The user has to create an account before they can access the project.
+Once you add a user to a project, they receive an invitation email with instructions.
 
-### Change existing permissions for environment types
+To apply SSH access changes after you add a user to a project,
+[trigger a redeploy](../development/troubleshoot.md#force-a-redeploy).
 
-To manage user permissions, you need to be a [Project Admin](#user-roles).
+### Manage project users
+
+To manage user permissions on a project, you need to be a [project admin](#project-roles),
+be an organization owner, or have the [**Manage users** permission for the organization](#organization-permissions).
 
 To change user permissions, follow these steps:
 
 > [!tabs]      
-> In the console     
->> 
->> 1. Select the project where you want to add a new user.
->> 2. Click **Settings**.
->> 3. Click **Access**.
->> 4. Expand the user you want to delete.
->> 5. Click **Delete**.
->> 6. Click **Delete** to confirm.
->>
->>  
-> Using the CLI     
->>    
->> 
->> Say you want `user1@example.com` to have the Viewer role for Production environments
->> and the Contributor role for Development environments:
->> 
->> ``` bash     
->> 
->> 
->> webpaas user:update user1@example.com -r production:v,development:c
->> 
->> 
->> ``` 
->>     
->> After you change a user's role for an environment type, you must trigger a redeploy each environment to propagate access changes. You can redeploy using the CLI command `webpaas redeploy`.
->> 
->>      
 
+To apply SSH access changes after you add a remove a user from a project or environment type,
+[trigger a redeploy](../development/troubleshoot.md#force-a-redeploy). 
+
+### Remove a user from a project
+
+To remove a user from a project, you need to be a [project admin](#project-roles),
+be an organization owner, or have the [**Manage users** permission for the organization](#organization-permissions).
+
+To remove a user, follow these steps:
+
+> [!tabs]      
+
+To apply SSH access changes after changing a user's permissions for an environment type,
+[trigger a redeploy](../development/troubleshoot.md#force-a-redeploy).
+
+## Manage organization access
+
+All users who are added to any project within an organization become members of that organization.
+By default, such users have no [organization permissions](#organization-permissions).
+You can also have organization users who aren't part of any projects.
+
+Users who are a part of an organization with the **List projects** permission can see all projects in that organization at the organization's URL,
+which takes the form `https://console.platform.sh/{{< variable "ORGANIZATION_NAME" >}}`.
+They can only access projects they've been explicitly invited to.
+For more information on project access control, see how to [manage project users](#manage-project-users).
+
+### Organization permissions
+
+As an organization owner or an organization user with the **Manage users** permission,
+you can invite other users to your organization and grant them the following permissions:
+
+- **Manage billing** (`billing`):
+
+  Add, remove, and edit billing information.
+  Access invoices and vouchers.
+  Users with this permission receive monthly invoices by email.
+- **Manage plans** (`plans`):
+
+  View and edit plans and plan options for existing projects.
+  Plan options include the amount of storage, number of environments, and number of user licenses on a project.
+- **Manage users** (`members`):
+
+  Add, remove, and edit organization-level users and permissions, except their own.
+  Users with this permission can't grant other users permissions that they themselves don't have.
+- **Create projects** (`projects:create`):
+
+  Create new projects within the organization.
+- **List projects** (`projects:list`):
+
+  See all projects in an organization, even those the user can't access.
+
+> [!primary]  
+> 
+> Users with the **Manage users** (`members`) permission can add, edit, or remove _any_ user's permissions except their own.
+> 
+> 
+
+Users without any of these permissions can only access [projects where they're users](#project-roles).
+They can't access or manage the rest of the organization.
+
+Organization owners have all permissions within their organization.
+Their permission level can't be edited.
+Organization owners can't be removed from their organization,
+except through an [ownership transfer](../administration/organizations.md#transfer-project-ownership).
+
+### Add a user to an organization
+
+> [!tabs]      
+
+All users you invite receive an invitation email with instructions.
+
+### Manage organization users
+
+> [!tabs]      
+
+### Remove a user from an organization
+
+> [!tabs]      
+
+Remove a user from an organization will remove them from all projects they were a member of.

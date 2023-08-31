@@ -1,113 +1,82 @@
 ---
-title: Tethered
-updated: 2021-05-11
+title: Tethered local development
+slug: tethered
+section: Local
 ---
 
-**Last updated 11th May 2021**
+**Last updated 31st August 2023**
 
 
-# Tethered Local
 
-The simplest way to run a project locally is to use a local web server, but keep all other services on Web PaaS and connect to them over an SSH tunnel.  This approach needs very little setup, but requires an active Internet connection, and depending on the speed of your connection and how I/O intensive your application is, it may not be performant enough for day-to-day use.
+## Objective  
 
-## Quick Start
+To test changes locally, you can connect your locally running web server
+to service containers on an active {{< vendor/name >}} environment.
+This method requires less configuration than tools such as [DDEV](./ddev.md),
+but may not perform well enough for everyday use.
+Because it replies on a local web server, it's also less consistent across your team.
 
-In your application directory run `webpaas tunnel:open &&  export PLATFORM_RELATIONSHIPS="$(webpaas tunnel:info --encode)"`. This will open an SSH tunnel to your current Web PaaS environment and expose a local environment variable that mimics the relationships array on Web PaaS.
+{{% guides/local-requirements %}}
 
-You can now run your application locally, assuming it is configured to read its configuration from the Web PaaS environment variables.
+## Create the tethered connection
 
-Note that other Web PaaS environment configuration such as the routes or application secret value will still not be available.  Also be aware that the environment variable exists only in your current shell.  If you are starting multiple local command shells you will need to rerun the `export` command above in each of them.
+{{% tethered-dev/steps-start %}}
 
-## Local web server
+1\.  Run your application locally.
 
-For the local web server the approach will vary depending on your language.
+    Make sure it's set up to read configuration from {{< vendor/name >}} environment variables.
 
-* For a self-serving language (Go or Node.js), simply run the program locally.
-* For PHP, you may install your own copy of Nginx (or Apache) and PHP-FPM, or simply use the built-in PHP web server.  Be aware however that by default the PHP web server will ignore environment variables by default.  You will need to explicitly instruct it to read them, like so: `php -S -d variables_order=EGPCS localhost:8001`.  That will start a basic web server capable of running PHP, serving the current directory, on port 8001, using available environment variables.  See the [PHP manual](https://www.php.net/manual/en/features.commandline.webserver.php) for more information.
-* For other languages it is recommended that you install your own copy of Nginx or Apache.
-* A virtual machine or Docker image is also a viable option.
+    If you app relies on other {{< vendor/name >}} environment configuration, such as routes or secret variables,
+    make sure to mock those variables as well.
 
-## SSH tunneling
+    Your options for running the app depend on the language and configuration.
+    You can use the serve for your language, install a copy of Nginx,
+    or use a virtual machine or Docker image.
 
-Now that the code is running, it needs to connect it to its services.  For that, open an SSH tunnel to the current project.
+{{% tethered-dev/steps-end %}}
 
-```bash
-$ webpaas tunnel:open
-SSH tunnel opened on port 30000 to relationship: redis
-SSH tunnel opened on port 30001 to relationship: database
-Logs are written to: ~/.webpaas/tunnels.log
+## Connect to services directly
 
-List tunnels with: webpaas tunnels
-View tunnel details with: webpaas tunnel:info
-Close tunnels with: webpaas tunnel:close
-```
-
-Now you can connect to the remote database normally, as if it were local.
+With open tunnels to all your services, you can also connect to the running services directly.
+To get information on all running services, run the following command:
 
 ```bash
-$ mysql --host=127.0.0.1 --port=30001 --user='user' --password='' --database='main'
+webpaas tunnels
 ```
 
-The specific port that each service uses is not guaranteed, but is unlikely to change unless you add an additional service or connect to multiple projects at once.  In most cases it's safe to add a local-configuration file for your application that connects to, in this case, `localhost:30001` for the SQL database and `localhost:30000` for Redis.
-
-
-After the tunnel(s) are opened, you can confirm their presence:
+You get a response similar to the following:
 
 ```bash
-webpaas tunnel:list
++-------+---------------+-------------+-----+--------------+
+| Port  | Project       | Environment | App | Relationship |
++-------+---------------+-------------+-----+--------------+
+| 30000 | abcdefg123456 | new-feature | app | cache        |
+| 30001 | abcdefg123456 | new-feature | app | database     |
++-------+---------------+-------------+-----+--------------+
 ```
 
-You can show more information about the open tunnel(s) with:
+You can use the port information to connect directly to a service.
+If you need more detailed information, such as a path or password, run the following command:
 
 ```bash
 webpaas tunnel:info
 ```
 
-and you can close tunnels with:
+You can use the information returned to connect to the remote database as if it were local.
+For example, the following command would connect to a MySQL database running through a tethered connection:
 
 ```bash
-webpaas tunnel:close
+mysql --host=127.0.0.1 --port={{ variable "PORT" }} --user='{{ variable "USERNAME" }}' --password='{{ variable "PASSWORD" }}' --database='{{ variable "PATH" }}'
 ```
 
-> [!primary]  
-> The `webpaas tunnel:open` command requires the `pcntl` and `posix` PHP extensions. Run `php -m | grep -E 'posix|pcntl'` to check if they're there.
-> 
-> If you don't have these extensions installed, you can use the `webpaas tunnel:single` command to open one tunnel at a time. This command also lets you specify a local port number.
-> 
+{{% local-dev/next-steps-start %}}
 
-### Local environment variables
-
-Alternatively, you can read the relationship information directly from Web PaaS and expose it locally in the same form.  From the command line, run:
-
-```bash
-export PLATFORM_RELATIONSHIPS="$(webpaas tunnel:info --encode)"
-```
-
-That will create a `PLATFORM_RELATIONSHIPS` environment variable locally that looks exactly the same as the one you'd see on Web PaaS, but pointing to the locally mapped SSH tunnels.  Whatever code you have that looks for and decodes the relationship information from that variable (which is what runs on Web PaaS) will detect it and use it just as if you were running on Web PaaS.
+    Fill it with something similar to the following example, depending on your app and configuration:
 
 
+```bash   
 
-> [!tabs]      
-> PHP     
->> ``` php     
->> 
->> <?php
->> if ($relationships_encoded = shell_exec('webpaas tunnel:info --encode')) {
->>     $relationships = json_decode(base64_decode($relationships_encoded, TRUE), TRUE);
->>     // ...
->> }
->> 
->> ```     
-> Python     
->> ``` python     
->> 
->> import json
->> import base64
->> import subprocess
->> 
->> encoded = subprocess.check_output(['platform', 'tunnel:info', '--encode'])
->> if (encoded):
->>     json.loads(base64.b64decode(encoded).decode('utf-8'))
->>     # ...
->> 
->> ```     
+```  
+
+
+{{% local-dev/next-steps-end %}}

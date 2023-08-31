@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentStyleType="text/css" height="58px" preserveAspectRatio="none" style="width:297px;height:58px;background:#FFFFFF;" version="1.1" viewBox="0 0 297 58" width="297px" zoomAndPan="magnify"><defs/><g><rect fill="#F1F1F1" height="20.2969" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="80" x="10" y="18.5"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="48" x="15" y="33.4951">hooks</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="12" x="73" y="33.4951">   </text><line style="stroke:#000000;stroke-width:1.0;" x1="68" x2="68" y1="18.5" y2="38.7969"/><rect fill="none" height="20.2969" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="80" x="10" y="18.5"/><rect fill="#F1F1F1" height="36.5938" rx="5" ry="5" style="stroke:#F1F1F1;stroke-width:1.5;" width="158" x="127" y="10"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacing" textLength="40" x="132" y="24.9951">build</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="42" x="182" y="24.9951">set -e</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacing" textLength="98" x="182" y="41.292">cp a.txt b.txt</text><line style="stroke:#000000;stroke-width:1.0;" x1="177" x2="177" y1="10" y2="46.5938"/><rect fill="none" height="36.5938" rx="5" ry="5" style="stroke:#000000;stroke-width:1.5;" width="158" x="127" y="10"/><path d="M78,28.5 L91,28.5 C100.2544,28.5 109.9295,28.5 119.5662,28.5 " fill="none" style="stroke:#000000;stroke-width:1.0;stroke-dasharray:3.0,3.0;"/><path d="M119.5662,31.5846 L121.8797,28.5 L119.5662,25.4154 L127.2777,28.5 L119.5662,31.5846 " fill="#000000" style="stroke:#000000;stroke-width:1.0;"/><ellipse cx="78" cy="28.5" fill="#000000" rx="3" ry="3" style="stroke:#000000;stroke-width:1.0;"/><!--MD5=[e014aaca33a027213ff534238081008a]
+@startyaml
+hooks:
+    build: |
+        set -e
+        \ncp a.txt b.txt
+@endyaml
+
+PlantUML version 1.2022.8beta2(Unknown compile time)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>

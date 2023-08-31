@@ -1,64 +1,78 @@
 ---
 title: Authenticated Composer repositories
-updated: 2022-06-02
+slug: composer-auth
+section: Php
 ---
 
-**Last updated 2nd June 2022**
+**Last updated 31st August 2023**
+
 
 
 ## Objective  
 
-Some PHP projects may need to use a private, third party Composer repository in addition to the public Packagist.org repository. Often, such third party repositories require authentication in order to download packages. These credentials shouldn't be located in the Git repository source code for security reasons.
+[Packagist](https://packagist.org/) is the primary Composer repository for public PHP packages.
+But you can also have Composer download PHP packages from a private, third-party Composer repository.
+To make sure Composer has the necessary credentials to do so,
+follow the instructions on this page.
+
+## Before you begin
+
+You need:
+- A {{< vendor/name >}} project using [PHP](../php/_index.md) and Composer
+
+- Credentials to access a private third-party Composer repository
+
+- The [{{< vendor/name >}} CLI](../../administration/cli/_index.md)
 
 
-To handle that situation, you can define a `env:COMPOSER_AUTH` [project variable](/pages/web/web-paas/development-variables#create-project-variables) which allows you to set up authentication as an environment variable. The contents of the variable should be a JSON formatted object containing an `http-basic` object (see [composer-auth specifications](https://getcomposer.org/doc/03-cli.md#composer-auth)).
+## 1. Declare a private Composer repository
 
-The advantage is that you can control who in your team has access to those variables.
+To allow Composer to download packages from a private third-party repository,
+declare the repository in your Composer setup.
 
-## Specify a third party repository in `composer.json`
-
-For this example, consider that there are several packages we want to install from a private repository hosted at `my-private-repos.example.com`.  List that repository in your `composer.json` file.
-
-```json
+```json {location="composer.json"}
 {
     "repositories": [
         {
             "type": "composer",
-            "url": "https://my-private-repos.example.com"
+            "url": "https://{{< variable "PRIVATE_REPOSITORY_URL" >}}"
         }
     ]
 }
 ```
 
-## Set a project variable
+## 2. Set up Composer authentication using a variable
 
-Set the Composer authentication by adding a project level variable called `env:COMPOSER_AUTH` as JSON and available only during build time.
+To allow Composer to successfully authenticate when accessing the declared private repository,
+set an [`env:COMPOSER_AUTH` variable](../../development/variables/_index.md) for your project.
 
-That can be done through the [management console](/pages/web/web-paas/administration-web) or via the command line, like so:
+To do so, run the following command:
 
 ```bash
 webpaas variable:create --level project --name env:COMPOSER_AUTH \
   --json true --visible-runtime false --sensitive true --visible-build true \
-  --value '{"http-basic": {"my-private-repos.example.com": {"username": "your-username", "password": "your-password"}}}'
+  --value '{"http-basic": {"{{< variable "PRIVATE_REPOSITORY_URL" >}}": {"username": "{{< variable "USERNAME" >}}", "password": "{{< variable "PASSWORD" >}}"}}}'
 ```
 
-The `env:` prefix will make that variable appear as its own Unix environment variable available by Composer during the build process. The optional `--no-visible-runtime` flag means the variable will only be defined during the build hook, which offers slightly better security.
+The [`env:` prefix](../../development/variables/_index.md#top-level-environment-variables) means that the variable is exposed
+as its own Unix environment variable.
+The `--visible-runtime false` and `--visible-build true` flags mean the variable is available to Composer only during the build.
 
-*Note:* The authentication credentials may be cached in your project's build container, so please make sure you clear the Composer cache upon changing any authentication credentials. You can use the `webpaas project:clear-build-cache` command.
+## 3. Clear your project's build cache
 
-## Build your application with Composer
+For security reasons, make sure that the authentication credentials aren't cached in your project's build container.
+To do so, run the following command:
 
-Enable the default Composer build mode in your `.platform.app.yaml`:
-
-```yaml
-build:
-    flavor: "composer"
+```bash
+webpaas project:clear-build-cache
 ```
 
-In that case, Composer will be able to authenticate and download dependencies from your authenticated repository.
+## Access dependencies downloaded from a private repository
 
-## Private repository hosting
-
-Typically, a private dependency will be hosted in a private Git repository.  While Web PaaS supports [private repositories](/pages/web/web-paas/development-private-repository) for the site itself, that doesn't help for pulling in third party dependencies from private repositories unless they have the same SSH keys associated with them.
-
-Fortunately, most private Composer tools (including Satis, Toran Proxy, and [Private Packagist](https://packagist.com/)) mirror tagged releases of dependencies and serve them directly rather than hitting the Git repository.  Therefore as long as your dependencies specify tagged releases there should be no need to authenticate against a remote Git repository and there should be no authentication issue.
+When you download a dependency from a private third-party Composer repository,
+that dependency is usually hosted in a [private Git repository](../../development/private-repository.md).
+Access to private Git repositories is restricted through the use of SSH keys.
+But most private Composer tools mirror tagged releases of dependencies
+and serve them directly without hitting the Git repository.
+To avoid having to authenticate against a remote Git repository,
+make sure your dependencies specify tagged releases.

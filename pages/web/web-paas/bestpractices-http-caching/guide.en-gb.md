@@ -1,27 +1,74 @@
 ---
 title: HTTP caching
-updated: 2021-06-03
+slug: bestpractices-http-caching
+section: Best practices
+order: 10
 ---
 
-**Last updated 3rd June 2021**
+**Last updated 31st August 2023**
+
 
 
 ## Objective  
 
-There are several different "levels" at which you could configure HTTP caching for your site on Web PaaS.  Which one you want to use depends on your specific use case.  You should use only one of these at a time and disable any others. Mixing them together will most likely result in stale and unclearable caches.
+You can configure HTTP caching for your site on {{< vendor/name >}} in several ways.
+Which one you should use depends on your specific use case.
 
-* **The Web PaaS [Router cache](/pages/web/web-paas/configuration-routes/cache)**.  Every project includes a router instance, which includes optional HTTP caching.  It is reasonably configurable and obeys HTTP cache directives, but does not support push-based clearing.  If you are uncertain what caching tool to use, start with this one.  It is more than sufficient for the majority of use cases.
+You should use only one of these at a time and disable any others.
+Mixing them together most likely results in stale cache that can't be cleared.
 
-* **A Content Delivery Network (CDN)**.  Web PaaS is compatible with most commercial CDNs.    A CDN will generally offer the best performance as it is the only option that includes multiple geographic locations, but it also tends to be the most expensive.  Functionality will vary widely depending on the CDN.  
+## The {{< vendor/name >}} router cache
 
-* **[Varnish](/pages/web/web-paas/configuration-services/varnish)**.  Web PaaS offers a Varnish service that you can declare as part of your application and insert between the router and your application.  Performance will be roughly comparable to the Router cache.  Varnish is more configurable than the Router cache as you are able to customize your VCL file, but make sure you are comfortable with Varnish configuration.  Web PaaS does not provide assistance with VCL configuration and a misconfiguration may cause difficult to debug behavior.  Generally speaking, you should use Varnish only if your application requires push-based clearing or relies on Varnish-specific business logic.
+Every project includes a router instance that includes [optional HTTP caching](../define-routes/cache.md).
+It's reasonably configurable and obeys HTTP cache directives, but doesn't support push-based clearing.
 
-* **Application-specific caching**.  Many web applications and frameworks include a built-in web cache layer that mimics what Varnish or the Router cache would do.  Most of the time they will be slower than a dedicated caching service as they still require invoking the application server, and only serve as a fallback for users that do not have a dedicated caching service available.  Generally speaking the only reason to use an application-specific web cache is if it includes some application-specific business logic that you depend on, such as application-sensitive selective cache clearing or partial page caching.
+If you're uncertain what caching tool to use, start with this one.
+It's enough for most uses.
 
-Note that this refers only to HTTP level caching.  Many applications have an internal application cache for data objects or similar.  That should remain active regardless of the HTTP cache in use.
+## A Content Delivery Network (CDN)
+
+{{< vendor/name >}} is compatible with most commercial CDNs.
+If you have a Dedicated instance, it comes with the [Fastly CDN](../domains/cdn/fastly.md).
+
+CDNs generally offer the best performance as they're the only option that includes multiple geographic locations.
+But they do tend to be the most expensive option.
+
+See more on setting up [Fastly](../domains/cdn/fastly.md) and [Cloudflare](../domains/cdn/cloudflare.md).
+The methods for other CDNs are similar.
+
+## Varnish
+
+{{< vendor/name >}} offers a [Varnish service](../add-services/varnish.md) that you can insert between the router and your app.
+
+It has roughly the same performance as the router cache.
+Varnish is more configurable, but it requires you to be comfortable with Varnish Configuration Language (VCL).
+{{< vendor/name >}} doesn't help with VCL configuration and a misconfiguration may be difficult to debug.
+
+Varnish supports [clearing cache with a push](../add-services/varnish.md#clear-cache-with-a-push),
+but access control is complicated by the inability to have [circular relationships](../add-services/varnish.md#circular-relationships).
+
+Generally speaking, you should use Varnish only if your application requires push-based clearing or relies on Varnish-specific business logic.
+
+## App-specific caching
+
+Many web apps and frameworks include a built-in web cache layer that mimics what Varnish or the Router cache would do.
+Most of the time they're slower than a dedicated caching service as they still require invoking the app server
+and only serve as a fallback for users that don't have a dedicated caching service available.
+Generally speaking, use app-specific web cache only when it includes app-specific business logic you depend on,
+such as app-sensitive selective cache clearing or partial page caching.
+
+Note that this refers only to HTTP caching.
+Many apps have an internal app cache for data objects and similar information.
+That should remain active regardless of the HTTP cache in use.
 
 ## Cookies and caching
 
-HTTP-based caching systems generally default to including cookie values in cache keys so as to avoid serving authenticated content to the wrong user.  While a safe default, it also has the side effect that *any* cookie will effectively disable the cache, including mundane cookies like analytics.  
+HTTP-based caching systems generally default to including cookie values in cache keys
+to avoid serving authenticated content to the wrong user.
+While this is a safe default, it means that *any* cookie effectively disables the cache,
+including mundane cookies like analytics.
 
-The solution is to specifically allow the cookies that should impact the cache and include only the application session cookie(s).  For the Router cache see [our documentation](/pages/web/web-paas/configuration-routes/cache#cookies).  For other cache systems consult their documentation.
+
+The solution is to set which cookies should impact the cache and limit them to session cookies.
+For the router cache, see [cookies in HTTP caching](../define-routes/cache.md#cookies).
+For other cache systems, consult their documentation.

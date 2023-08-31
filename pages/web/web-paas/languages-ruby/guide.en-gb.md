@@ -1,35 +1,38 @@
 ---
 title: Ruby
-updated: 2022-06-02
+slug: languages-ruby
+section: Languages
+order: 4
 ---
 
-**Last updated 2nd June 2022**
+**Last updated 31st August 2023**
+
 
 
 ## Objective  
 
-Web PaaS supports deploying any Ruby application. Your application can use any Ruby application server such as Unicorn or Puma and deploying a Rails or a Sinatra app is very straight forward.
+{{% description %}}
 
 ## Supported versions
 
+{{% major-minor-versions-note configMinor="true" %}}
+
 ### Ruby MRI
 
-| **Grid** | 
-|----------------------------------|  
-|  2.3 |  
-|  2.4 |  
-|  2.5 |  
-|  2.6 |  
-|  2.7 |  
-|  3.0 |  
+| Grid and {{% names/dedicated-gen-3 %}} | {{% names/dedicated-gen-2 %}} |
+|----------------------------------------|------------------------------ |
+| - 3.2  
+- 3.1  
+- 3.0 |
 
+{{% language-specification type="ruby" display_name="Ruby" %}}
 
 ## Unicorn based Rails configuration
 
 This example uses Unicorn to run a Ruby application.
 You could use any Ruby application server such as Puma or Thin.
 
-Configure the `.platform.app.yaml` file with a few key settings as listed below.
+Configure the `{{< vendor/configfile "app" >}}` file with a few key settings as listed below.
 A complete example is included at the end of this section.
 
 1\. Specify the language of your application (available versions are listed above):
@@ -37,21 +40,24 @@ A complete example is included at the end of this section.
 
 
 ```yaml   
-type: 'ruby:3.0'
+type: 'ruby:3.2'
 ```  
 
 
 2\. Setup environment variables.
 
-Rails runs by default on a development environment. You can change the Rails/Bundler via those environment variables, some of which are defaults on Web PaaS.
+
+   Rails runs by default on a development environment.
+   You can change the Rails/Bundler via those environment variables,
+   some of which are defaults on {{< vendor/name >}}.
 
 ```yaml
 variables:
     env:
-        BUNDLE_CACHE_ALL: '1' # default
-        BUNDLE_CLEAN: '1' # /!\ if you are working with Ruby<2.7 this does not work well
-        BUNDLE_DEPLOYMENT: '1' # default
-        BUNDLE_ERROR_ON_STDERR: '1' # default
+        BUNDLE_CACHE_ALL: '1'
+        BUNDLE_CLEAN: '1' # /!\ if you are working with Ruby <2.7, this doesn't work well
+        BUNDLE_DEPLOYMENT: '1'
+        BUNDLE_ERROR_ON_STDERR: '1'
         BUNDLE_WITHOUT: 'development:test'
         DEFAULT_BUNDLER_VERSION: "2.2.26" # in case none is mentioned in Gemfile.lock
         EXECJS_RUNTIME: 'Node'
@@ -60,13 +66,18 @@ variables:
         NVM_VERSION: v0.38.0
         RACK_ENV: 'production'
         RAILS_ENV: 'production'
-        RAILS_LOG_TO_STDOUT: '1' # default (log to /var/log/app.log)
-        RAILS_TMP: '/tmp' # default
+        RAILS_LOG_TO_STDOUT: '1' # log to /var/log/app.log
+        RAILS_TMP: '/tmp'
 ```
+
+    The `SECRET_KEY_BASE` variable is generated automatically based on the [`PLATFORM_PROJECT_ENTROPY` variable](../development/variables/use-variables.md#use-provided-variables).
+    You can change it.
 
 3\. Build your application with the build hook.
 
-Assuming you have your dependencies stored in the `Gemfile` at [your app root](/pages/web/web-paas/configuration-app), create a hook like the following:
+
+    Assuming you have your dependencies stored in the `Gemfile` at [your app root](../create-apps/app-reference.md#root-directory),
+    create a hook like the following:
 
 ```yaml
 hooks:
@@ -86,7 +97,7 @@ hooks:
         gem install --no-document bundler -v $BUNDLER_VERSION
 
         echo "Installing gems"
-        # We copy the bundle directory to the Web PaaS cache directory for
+        # We copy the bundle directory to the {{< vendor/name >}} cache directory for
         # safe keeping, then restore from there on the next build. That allows
         # bundler to skip downloading code it doesn't need to.
         [ -d "$PLATFORM_CACHE_DIR/bundle" ] && \
@@ -94,11 +105,12 @@ hooks:
         mkdir -p "$PLATFORM_CACHE_DIR/bundle"
         bundle install
         # synchronize updated cache for next build
-        rsync -az --delete vendor/bundle/ "$PLATFORM_CACHE_DIR/bundle/"
+        [ -d "vendor/bundle" ] && \
+          rsync -az --delete vendor/bundle/ "$PLATFORM_CACHE_DIR/bundle/"
 
         # precompile assets
         echo "Precompiling assets"
-        # We copy the webpacker directory to the Web PaaS cache directory for
+        # We copy the webpacker directory to the {{< vendor/name >}} cache directory for
         # safe keeping, then restore from there on the next build. That allows
         # bundler to skip downloading code it doesn't need to.
         mkdir -p "$PLATFORM_CACHE_DIR/webpacker"
@@ -111,11 +123,11 @@ hooks:
     deploy: bundle exec rake db:migrate
 ```
 
-These are installed as your project dependencies in your environment.
-You can also use the `dependencies` key to install global dependencies.
-These can be Ruby, Python, NodeJS, or PHP libraries.
+    These are installed as your project dependencies in your environment.
+    You can also use the `dependencies` key to install global dependencies.
+    These can be Ruby, Python, NodeJS, or PHP libraries.
 
-If you have assets, it's likely that you need NodeJS/yarn.
+    If you have assets, it's likely that you need NodeJS/yarn.
 
 ```yaml
 dependencies:
@@ -134,12 +146,12 @@ web:
         start: "bundle exec unicorn -l $SOCKET"
 ```
 
- This assumes you have Unicorn as a dependency in your Gemfile:
+    This assumes you have Unicorn as a dependency in your Gemfile:
 
 ```ruby
     # Use Unicorn as the app server
     gem "unicorn", "~> 6.0", :group => :production
-```
+    ```
 
 5\. Define the web locations your application is using:
 
@@ -154,7 +166,9 @@ web:
             allow: true
 ```
 
-This configuration sets the web server to handle HTTP requests at `/static` to serve static files stored in `/app/static/` folder. Everything else is forwarded to your application server.
+    This configuration sets the web server to handle HTTP requests at `/static`
+    to serve static files stored in `/app/static/` folder.
+    Everything else is forwarded to your application server.
 
 6\. Create any Read/Write mounts.
 
@@ -174,12 +188,13 @@ mounts:
         source_path: tmp
 ```
 
-This setting allows your application writing temporary files to `/app/tmp`, logs stored in `/app/log`, and active storage in `/app/storage`.
+    This setting allows your application writing temporary files to `/app/tmp`,
+    logs stored in `/app/log`, and active storage in `/app/storage`.
 
-You can define other read/write mounts (your application code itself being deployed to a read-only file system).
-Note that the file system is persistent and when you backup your cluster these mounts are also backed up.
+    You can define other read/write mounts (your application code itself being deployed to a read-only file system).
+    Note that the file system is persistent and when you backup your cluster these mounts are also backed up.
 
-7\. Set up the routes to your application in `.platform/routes.yaml`.
+7\. Then, setup the routes to your application in `{{< vendor/configfile "routes" >}}`.
 
 
 ```yaml
@@ -191,7 +206,7 @@ Note that the file system is persistent and when you backup your cluster these m
 
 ### Complete app configuration
 
-Here is a complete `.platform.app.yaml` file:
+Here is a complete `{{< vendor/configfile "app" >}}` file:
 
 ```yaml
 name: 'app'
@@ -209,7 +224,7 @@ disk: 2048
 variables:
     env:
         BUNDLE_CACHE_ALL: '1'
-        BUNDLE_CLEAN: '1' # /!\ if you are working with Ruby<2.7 this does not work well
+        BUNDLE_CLEAN: '1' # /!\ if you are working with Ruby<2.7 this doesn't work well
         BUNDLE_DEPLOYMENT: '1'
         BUNDLE_ERROR_ON_STDERR: '1'
         BUNDLE_WITHOUT: 'development:test'
@@ -240,7 +255,7 @@ hooks:
         gem install --no-document bundler -v $BUNDLER_VERSION
 
         echo "Installing gems"
-        # We copy the bundle directory to the Web PaaS cache directory for
+        # We copy the bundle directory to the {{< vendor/name >}} cache directory for
         # safe keeping, then restore from there on the next build. That allows
         # bundler to skip downloading code it doesn't need to.
         [ -d "$PLATFORM_CACHE_DIR/bundle" ] && \
@@ -248,11 +263,12 @@ hooks:
         mkdir -p "$PLATFORM_CACHE_DIR/bundle"
         bundle install
         # synchronize updated cache for next build
-        rsync -az --delete vendor/bundle/ "$PLATFORM_CACHE_DIR/bundle/"
+        [ -d "vendor/bundle" ] && \
+            rsync -az --delete vendor/bundle/ "$PLATFORM_CACHE_DIR/bundle/"
 
         # precompile assets
         echo "Precompiling assets"
-        # We copy the webpacker directory to the Web PaaS cache directory for
+        # We copy the webpacker directory to the {{< vendor/name >}} cache directory for
         # safe keeping, then restore from there on the next build. That allows
         # bundler to skip downloading code it doesn't need to.
         mkdir -p "$PLATFORM_CACHE_DIR/webpacker"
@@ -293,10 +309,9 @@ web:
 ## Configuring services
 
 This example assumes there is a MySQL instance.
-To configure it, [create a service](/pages/web/web-paas/configuration-services) such as the following:
+To configure it, [create a service](../add-services/_index.md) such as the following:
 
-```yaml 
-location=".platform/services.yaml"
+```yaml {configFile="services"}
 database:
     type: mysql:10.4
     disk: 2048
@@ -304,10 +319,9 @@ database:
 
 ## Connecting to services
 
-Once you have a service, link to it in your [app configuration](/pages/web/web-paas/configuration-app):
+Once you have a service, link to it in your [app configuration](../create-apps/_index.md):
 
-```yaml 
-location=".platform.app.yaml"
+```yaml {configFile="app"}
 relationships:
     database: "database:mysql"
 ```
@@ -344,38 +358,36 @@ This should give you something like the following:
 For Rails, you have two choices:
 
 - Use the standard Rails `config/database.yml` with the values found with the snippet provided before
-- Use the [platformsh-rails-helper gem](https://github.com/platformsh/platformsh-rails-helper) by adding it to your `Gemfile` and commenting the production block in `config/database.yml`
 
-## Configuration reader
+- Use the [platformsh-rails-helper gem](https://github.com/platformsh/platformsh-rails-helper)
 
-- While you can read the environment directly from your app, you might want to use the [helper library for Ruby apps](https://github.com/platformsh/platformsh-ruby-helper) or [one for Rails apps](https://github.com/platformsh/platformsh-rails-helper). It decodes service credentials, the correct port, and other information for you.
+  by adding it to your `Gemfile` and commenting the production block in `config/database.yml`
 
+{{% config-reader %}}
+[helper library for Ruby apps](https://github.com/platformsh/platformsh-ruby-helper)
+or [one for Rails apps](https://github.com/platformsh/platformsh-rails-helper)
+{{% /config-reader%}}
 
 ## Other tips
 
-- To speed up boot you can use the [Bootsnap gem](https://github.com/Shopify/bootsnap) and configure it with the local `/tmp`:
+- To speed up boot you can use the [Bootsnap gem](https://github.com/Shopify/bootsnap)
 
-```ruby
-{location="config/boot.rb"}
+  and configure it with the local `/tmp`:
+
+```ruby {location="config/boot.rb"}
 Bootsnap.setup(cache_dir: "/tmp/cache")
 ```
 
-- For garbage collection tuning, you can read [this article](https://shopify.engineering/17489064-tuning-rubys-global-method-cache) and look for [discourse configurations](https://github.com/discourse/discourse_docker/blob/b259c8d38e0f42288fd279c9f9efd3cefbc2c1cb/templates/web.template.yml#L8)
+- For garbage collection tuning, you can read [this article](https://shopify.engineering/17489064-tuning-rubys-global-method-cache)
+
+  and look for [discourse configurations](https://github.com/discourse/discourse_docker/blob/b259c8d38e0f42288fd279c9f9efd3cefbc2c1cb/templates/web.template.yml#L8)
+
+- New images are released on a regular basis to apply security patches.
+
+  To avoid issues when such updates are performed, use `ruby "~>3.1"` in your `Gemfile`.
 
 ## Project templates
 
 
-### Ruby on Rails 
 
-![image](images/rubyonrails.png)
 
-<p>This template builds Ruby on Rails 5 on Web PaaS.  It includes a bridge library that will auto-configure most databases and services, and ships with PostgreSQL out of the box.  Otherwise it is the same as the result of running "rails new".</p>
-<p>Rails is an opinionated rapid application development framework written in Ruby.</p>
-  
-#### Features
-- Ruby 2.6<br />  
-- PostgreSQL 11<br />  
-- Automatic TLS certificates<br />  
-- Bundler-based build<br />  
- 
-[View the repository](https://github.com/platformsh-templates/rails) on GitHub.

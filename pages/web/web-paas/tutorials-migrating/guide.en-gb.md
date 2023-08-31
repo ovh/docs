@@ -1,52 +1,88 @@
 ---
-title: Migrating to Web PaaS
-updated: 2021-05-11
+title: Migrating to {{< vendor/name >}}
+slug: tutorials-migrating
+section: Tutorials
+order: 9
 ---
 
-**Last updated 11th May 2021**
+**Last updated 31st August 2023**
+
 
 
 ## Objective  
 
-Moving an already-built site to Web PaaS is generally straightforward.  For the most part, the only part that will vary from one framework to another is the details of the Web PaaS configuration files.
+If you already have an app running somewhere else, you want to migrate it to {{< vendor/name >}} and deploy it.
+To do so, follow these steps.
+
+## Before you begin
+
+You need:
+
+- An app that works and is ready to be built
+
+- Code in Git
+
+- A {{< vendor/name >}} account -- if you don't already have one, [start a trial](https://auth.api.platform.sh/register?trial_type=general)
+
+- Optional: the [{{< vendor/name >}} CLI](../administration/cli/_index.md)
 
 
+## 1. Export from previous system
 
-## Preparation
+Start by exporting everything you might need from your current app.
+This includes data in databases, files on a file system,
+and for some apps, such as Drupal, configuration that you need to export from the system into files.
 
-First, assemble your Git repository as appropriate, on your master branch.  Be sure to include the Web PaaS configuration files, as you will not be able to push the repository to Web PaaS otherwise!
+## 2. Create a project
 
-For some applications, such as Drupal you will need to dump configuration to files before proceeding.  You will also need to provide appropriate configuration to read the credentials for your services at runtime and integrate them into your application's configuration.  The details of that integration will vary between systems.  Be sure to see the appropriate project templates for our recommended configuration.
+> [!tabs]      
 
-* [Go Templates](/pages/web/web-paas/languages-go#project-templates)
-* [Java Templates](/pages/web/web-paas/languages-java#project-templates)
-* [Node.js Templates](/pages/web/web-paas/languages-nodejs#project-templates)
-* [PHP Templates](/pages/web/web-paas/languages-php#project-templates)
-* [Python Templates](/pages/web/web-paas/languages-python#project-templates)
+## 3. Add configuration
+
+The exact configuration you want depends on your app.
+You likely want to configure three areas:
+
+- [The app itself](../create-apps/_index.md) -- this is the only required configuration
+
+- [Services](../add-services/_index.md)
+
+- [Routes](../define-routes/_index.md)
 
 
-In the management console, click `+ Add project` to create a new Web PaaS project. When asked to select a template pick "Create a blank project".
+You can also take guidance from the [project templates](../development/templates.md),
+which are starting points for various technology stacks with working configuration examples.
 
-## Push your code
+When you've added your configuration, make sure to commit it to Git.
 
-When creating a new project, the management console will provide two commands to copy and paste similar to the following:
+## 4. Push your code
+
+The way to push your code to {{< vendor/name >}} depends on
+whether you're hosting your code with a third-party service using a [source integration](../integrations/source/_index.md).
+If you aren't, your repository is hosted in {{< vendor/name >}}
+and you can use the CLI or just Git itself.
+
+> [!tabs]      
+
+## 5. Import data
+
+Once you have an environment, you can import the data you backed up in step 1.
+The exact process may depend on the service you use.
+
+For SQL databases, for example, you can use a version of this command:
 
 ```bash
-git remote add webpaas nodzrdripcyh6@git.us.platform.sh:nodzrdripcyh6.git
-git push -u webpaas master
+webpaas sql < {{< variable "BACKUP_FILE_NAME" >}}
 ```
 
-The first will add a Git remote for the Web PaaS repository named `webpaas`.  The name is significant as the Web PaaS CLI will look for either `webpaas` or `origin` to be the Web PaaS repository, and some commands may not function correctly otherwise.  The second will push your repository's master branch to the Web PaaS master branch.  Note that a project must always start with a master branch, or deploys to any other environment will fail.
+For any potential more details, see the [specific service](../add-services/_index.md).
 
-When you push, a new environment will be created using your code and the provided configuration files.  The system will flag any errors with the configuration if it can.  If so, correct the error and try again.
+## 6. Import files
 
-## Import your database
+Your app may include content files, meaning files that aren't intended to be part of your codebase so aren't in Git.
+You can upload such files to [mounts you created](../create-apps/app-reference.md#mounts).
+Upload to each mount separately.
 
-You will need to have a dump or backup of the database you wish to start from.  The process is essentially the same for each type of persistent data service.  See the [MySQL](/pages/web/web-paas/configuration-services/mysql), [PostgreSQL](/pages/web/web-paas/configuration-services/postgresql) documentation as appropriate.
-
-## Import your files
-
-Content files (that is, files that are not intended as part of your code base so are not in Git) can be uploaded to your mounts using the Web PaaS CLI or by using `rsync`. You will need to upload each directory's files separately.  Suppose for instance you have the following file mounts defined:
+Suppose for instance you have the following file mounts defined:
 
 ```yaml
 mounts:
@@ -58,28 +94,31 @@ mounts:
         source_path: private
 ```
 
-While using the CLI and rsync are the most common solutions for uploading files to mounts, you can also use SCP.
-
-### Web PaaS CLI
-
-The easiest way to import files to your project mounts is by using the Web PaaS CLI `mount:upload` command. To upload to each of directories above, we can use the following commands.
+Upload to each of directories above by running the following commands:
 
 ```bash
 webpaas mount:upload --mount web/uploads --source ./uploads
 webpaas mount:upload --mount private --source ./private
 ```
 
-### rsync
+You can adjust these commands for your own case.
+Or upload to your mounts using a different [SSH method](../development/file-transfer.md#transfer-files-using-an-ssh-client).
 
-You can also use `rsync` to upload each directory.  The `webpaas ssh --pipe` command will return the SSH URL for the current environment as an inline string that `rsync` can recognize. To use a non-default environment, use the `-e` switch after `--pipe`.  Note that the trailing slash on the remote path means `rsync` will copy just the files inside the specified directory, not the directory itself.
+## Optional: Add variables
 
-```bash
-rsync -az ./private `webpaas ssh --pipe`:/app/private/
-rsync -az ./web/uploads `webpaas ssh --pipe`:/app/web/uploads
-```
+If your app requires environment variables to build properly, [add them to your environment](../development/variables/set-variables.md).
 
-> [!primary]  
-> If you're running `rsync` on MacOS, you should add `--iconv=utf-8-mac,utf-8` to your `rsync` call.
-> 
+## What's next
 
-See the [`rsync` documentation](https://download.samba.org/pub/rsync/rsync.html) for more details on how to adjust the upload process.
+Now that your app is ready to be deployed, you can do more:
+
+- Upgrade from a Development plan.
+
+- [Add a domain](../domains/steps/_index.md).
+
+- Set up for [local development](../development/local/_index.md).
+
+- Configure [health notifications](../integrations/notifications.md).
+
+- For monitoring and profiling, [integrate Blackfire](../increase-observability/integrate-observability/blackfire.md).
+

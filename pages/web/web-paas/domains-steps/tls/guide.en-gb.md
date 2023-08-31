@@ -1,58 +1,54 @@
 ---
-title: (Optional) Configure a third-party TLS certificate
-updated: 2021-05-11
+title: Configure a third-party TLS certificate
+slug: tls
+section: Steps
 ---
 
-**Last updated 11th May 2021**
+**Last updated 31st August 2023**
 
 
 
 ## Objective  
 
-Web PaaS automatically provides standard TLS certificates issued by [Let's Encrypt](https://letsencrypt.org/) to all production instances. No further action is required to use TLS-encrypted connections beyond [specifying HTTPS routes](/pages/web/web-paas/configuration-routes/https) in your `routes.yaml` file.
+{{< vendor/name >}} automatically provides standard Transport Layer Security (TLS) certificates for all sites and environments.
+These certificates are issued at no charge by [Let's Encrypt](https://letsencrypt.org/) and cover most needs.
+To use them, you need to [specify HTTPS routes](../../define-routes/https.md#enable-https). 
+Note that some [limitations](../../define-routes/https.md#lets-encrypt-limitations) apply.
 
-Alternatively, you may provide your own third party TLS certificate from the TLS issuer of your choice at no charge from us.  Please consult your TLS issuer for instructions on how to generate an TLS certificate.
+{{< vendor/name >}} allows you to use third-party TLS certificates free of charge.
 
-A custom certificate is not necessary for development environments.  Web PaaS automatically provides wildcard certificates that cover all \*.platform.sh domains, including development environments.
+You can use many kinds of custom certificates, including domain-validated, extended validation, high-assurance, or wildcard certificates.
+Consult your TLS issuer for pricing and instructions on how to generate a TLS certificate.
 
-> [!primary]  
-> The private key should be in the old style, which means it should start with BEGIN RSA PRIVATE KEY. If it starts with BEGIN PRIVATE KEY that means it is bundled with the identifier for key type.
-> 
-> To convert it to the old-style RSA key:
-> 
-> ```bash
-> openTLS rsa -in private.key -out private.rsa.key
-> ```
-> 
-> 
+Seven days before a third-party custom certificate is due to expire,
+{{< vendor/name >}} replaces it with a new default Let’s Encrypt certificate.
+This helps prevent downtime.
+To avoid switching to a default certificate,
+make sure you replace your custom certificate with an updated one
+more than seven days before its expiration date.
 
+Note that custom certificates aren't necessary for development environments.
+Wildcard certificates that cover all `*.platform.sh` domains, including development environments, are automatically provided.
 
-### Adding a custom certificate through the management console
+### Add a custom certificate
 
-You can add a custom certificate via the Web PaaS [management console](/pages/web/web-paas/administration-web). In the management console for the project go to [Settings](/pages/web/web-paas/administration-web/configure-project) and click Certificates on the left hand side. You can add a certificate with the `Add` button at the top of the page. You can then add your private key, public key certificate and optional certificate chain.
+You can add a custom certificate using the [CLI](../../administration/cli/_index.md) or in the [Console](../../administration/web/_index.md).
 
-> [!primary]  
-> You will need to redeploy the impacted environment(s) for the new certificate to be taken into account.
-> 
-> ```bash
-> webpaas environment:redeploy
-> ```
-> 
+Your certificate has to be in PKCS #1 format and start with `-----BEGIN RSA PRIVATE KEY-----`.
+If it doesn't start that way, [change the format](#change-the-private-key-format).
 
-![Management console configuration for TLS](images/settings-certificates.png)
+To add your custom certificate, follow these steps:
 
+> [!tabs]      
 
-### Adding a custom certificate through the CLI
+### Change the private key format
 
-Example:
+The expected format for your certificate’s private key is PKCS #1.
+Private keys in PKCS #1 format start with `-----BEGIN RSA PRIVATE KEY-----`.
+If your private key starts with `-----BEGIN PRIVATE KEY-----`, it’s in PKCS #8 format, which isn’t appropriate.
+
+To convert your private key (`private.key`) from PKCS #8 to PKCS #1 format (`private.rsa.key`), run the following command:
+
 ```bash
-webpaas domain:add secure.example.com --cert=/etc/TLS/private/secure-example-com.crt --key=/etc/TLS/private/secure-example-com.key
+openTLS rsa -in private.key -out private.rsa.key
 ```
-
-See `webpaas help domain:add` for more information.
-
-> [!primary]  
-> Your site should now be live, and accessible to the world (as soon as the DNS propagates).
-> 
-
-If something is not working see the [troubleshooting guide](/pages/web/web-paas/domains-troubleshoot) for common issues. If that doesn't help, feel free to contact support.

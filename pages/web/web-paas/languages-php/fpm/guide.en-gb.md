@@ -1,97 +1,148 @@
 ---
 title: PHP-FPM sizing
-updated: 2022-06-02
+slug: fpm
+section: Php
 ---
 
-**Last updated 2nd June 2022**
+**Last updated 31st August 2023**
 
 
 
 ## Objective  
 
-Web PaaS uses a heuristic to automatically set the number of workers of the PHP-FPM runtime based on the memory available in the container. This heuristic is based on assumptions about the memory necessary on average to process a request. You can tweak those assumptions if your application will typically use considerably more or less memory.
+PHP-FPM helps improve your app's performance
+by maintaining pools of workers that can process PHP requests.
+This is particularly useful when your app needs to handle a high number of simultaneous requests. 
 
-Note that this value is independent of the `memory_limit` set in `php.ini`, which is the maximum amount of memory a single PHP process can use before it is automatically terminated.  These estimates are used only for determining the number of PHP-FPM workers to start.
+By default, {{< vendor/name >}} automatically sets a maximum number of PHP-FPM workers for your app. 
+This number is calculated based on three parameters:
+- The container memory: the amount of memory you can allot for PHP processing 
 
-## The heuristic
+  depending on [app size](../../create-apps/app-reference.md#sizes).
+- The request memory: the amount of memory an average PHP request is expected to require.
 
-The heuristic is based on three input parameters:
-
-- The memory available for the container, which depends on the size of the container (`S`, `M`, `L`).
-- The memory that an average request is expected to require.
-- The memory that should be reserved for things that are not specific to a request (memory for `nginx`, the op-code cache, some OS page cache, etc.)
-
-The number of workers is calculated as:
-
-![FPM](images/phpfpmworkers.png "0.3")
+- The reserved memory: the amount of memory you need to reserve for tasks that aren't related to requests. 
 
 
-## Defaults
+The number is calculated as follows: ![The sum of container memory minus reserved memory divided by request memory](images/PHP-FPM-Workers-Calculation.png "0.2")
 
-The default assumptions are:
+Note that when the resulting number is a decimal, 
+it's rounded up to set the maximum number of workers.
+Also, the minimum number of PHP-FPM workers is 2.
 
-- `45 MB` for the average per-request memory
-- `70 MB` for the reserved memory
+> [!primary]  
+> 
+> To ensure that {{< vendor/name >}} doesn't add more workers than the CPU can handle,
+> a CPU limit applies as soon as the number of set workers equals or exceeds 25.
+> This limit is calculated as follows: `number of vCPU cores * 5`.
+> 
+> For example, if you have a 2XL container with 8 CPU cores,
+> you can have up to 40 workers as long as you have sufficient memory.
+> 
+> 
 
-These are deliberately conservative values that should allow most programs to run without modification.
+To adjust the maximum number of PHP-FPM workers depending on your app's needs, follow the instructions on this page.
 
-You can change them by using the `runtime.sizing_hints.reserved_memory` and `runtime.sizing_hints.request_memory` in your `.platform.app.yaml`. For example, if your application consumes on average `110 MB` of memory for a request use:
+## Before you begin
 
-```yaml
+You need:
+
+- An up-and-running web app in PHP, complete with [PHP-FPM](https://www.php.net/manual/en/install.fpm.php)
+
+- The [{{< vendor/name >}} CLI](../../administration/cli/_index.md)
+
+
+Note that the memory settings mentioned on this page are different from the [`memory_limit` PHP setting](./_index.md). 
+The `memory_limit` setting is the maximum amount of memory a single PHP process can use 
+before it's automatically terminated.
+
+## 1. Estimate the optimal request memory for your app
+
+To determine what the optimal request memory is for your app, 
+you can refer to your PHP access logs.
+Run a command similar to:
+
+```bash
+webpaas log --lines 5000 | awk '{print $6}' | sort -n | uniq -c
+```
+
+This command takes into account the last 5,000 requests that reached PHP-FPM.
+You can adjust this number depending on the amount of traffic on your site.
+
+In the output, you can see how many requests used how much memory, in KB.
+For example:
+
+```bash
+    2654 2048
+    431  4096
+    584  8192
+    889  10240
+    374  12288
+     68  46384
+```
+
+The output shows that:
+- The majority of requests peaked at 2,048 KB of memory.
+
+- Most other requests used up to around 10 MB of memory.
+
+- A few requests used up to around 12 MB of memory.
+
+- Only 68 requests peaked at around 46 MB of memory.
+
+
+In this situation, you might want to be cautious 
+and [set your request memory](#2-adjust-the-maximum-number-of-php-fpm-workers) to 12 MB.
+Setting a lower request memory presents a risk of allowing more concurrent requests. 
+This can result in memory swapping and latencies.
+
+For further help in estimating the optimal request memory for your app,
+use the [log analyzer tool for {{< vendor/name >}}](https://github.com/pixelant/platformsh-analytics) 
+by [Pixelant](https://www.pixelant.net/).
+This tool offers a better visualization of access logs.
+It also provides additional insights into the operation of your app. 
+These can help you further optimize your configuration 
+and provide guidance on when to increase your plan size.
+Note that this tool is maintained by a third party, 
+not by {{< vendor/name >}}.
+
+## 2. Adjust the maximum number of PHP-FPM workers
+
+By default, the request memory is set to 45 MB
+and the reserved memory is set to 70 MB.
+These values allow most programs to run, 
+but you can amend them to fit your needs.
+
+To do so, adjust your [app configuration](../../create-apps/_index.md).
+Under `runtime` in the [`sizing_hints` setting](../../create-apps/app-reference.md#sizing-hints),
+set the values for `reserved_memory` and `request_memory`.
+
+For example, 
+if you estimate your [optimal request memory](#1-estimate-the-optimal-request-memory-for-your-app) to be 110 MB
+and your reserved memory to be 80 MB, 
+you can use:
+
+```yaml {configFile="app"}
 runtime:
     sizing_hints:
         request_memory: 110
+        reserved_memory: 80
 ```
 
-The `request_memory` has a lower limit of 10 MB while `reserved_memory` has a lower limit of 70 MB.  Values lower than those will be replaced with those minimums.
+Note that the minimum value for the `request_memory` key is 10 MB
+and the minimum value for the `reserved_memory` key is 70 MB.
+If you set lower values, 
+they're automatically overridden with those minimums.
 
-You can check the maximum number of PHP-FPM workers by opening an [SSH session](/pages/web/web-paas/development-ssh) and running following command (example for PHP 7.x):
+To check the maximum number of PHP-FPM workers available to your app,
+run the following command, where `children` refers to PHP-FPM workers:
 
 ```bash
-grep -e '^pm.max_children' /etc/php/*/fpm/php-fpm.conf
-pm.max_children = 2
+webpaas ssh "grep -e '^pm.max_children' /etc/php/*/fpm/php-fpm.conf"      
 ```
 
-## Measuring PHP worker memory usage
-
-To see how much memory your PHP worker processes are using, you can open an [SSH session](/pages/web/web-paas/development-ssh) and look at the PHP access log:
+You get output similar to the following:
 
 ```bash
-less /var/log/php.access.log
+pm.max_children = 5
 ```
-
-In the fifth column, you'll see the peak memory usage that occurred while each request was handled. The peak usage will probably vary between requests, but in order to avoid the severe performance costs that come from swapping, your size hint should be somewhere between the average and worst case memory usages that you observe.
-
-A good way to determine an optimal request memory is with the following command:
-
-```bash
-tail -n5000 /var/log/php.access.log | awk '{print $6}' | sort -n | uniq -c
-```
-
-This will print out a table of how many requests used how much memory, in KB, for the last 5000 requests that reached PHP-FPM.  (On an especially busy site you may need to increase that number).  As an example, consider the following output:
-
-```text
-      1
-   4800 2048
-    948 4096
-    785 6144
-    584 8192
-    889 10240
-    492 12288
-    196 14336
-     68 16384
-      2 18432
-      1 22528
-      6 131072
-```
-
-This indicates that the majority of requests (4800) used 2048 KB of memory.  In this case that's likely application caching at work.  Most requests used up to around 10 MB of memory, while a few used as much as 18 MB and a very few (6 requests) peaked at 131 MB.  (In this example those are probably cache clears.)
-
-A conservative approach would suggest an average request memory of 16 MB should be sufficient.  A more aggressive stance would suggest 10 MB.  The more aggressive approach would potentially allow for more concurrent requests at the risk of some requests needing to use swap memory, thus slowing them down.
-
-The web agency [Pixelant](https://www.pixelant.net/) has also published a [log analyzer tool for Web PaaS](https://github.com/pixelant/platformsh-analytics) that offers a better visualization of access logs to determine how much memory requests are using on average.  It also offers additional insights into the operation of your site that can suggest places to further optimize your configuration and provide guidance on when it's time to increase your plan size.  (Please note that this tool is maintained by a 3rd party, not by Web PaaS.)
-
-
-> [!primary]  
-> If you are running on PHP 5.x then don't bother adjusting the worker memory usage until you upgrade to PHP 7.x.  PHP 7 is vastly more memory efficient than PHP 5 and you will likely need less than half as much memory per process under PHP 7.
-> 

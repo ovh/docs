@@ -1,56 +1,131 @@
 ---
-title: One site or many
-updated: 2021-05-11
+title: From monoliths through headless to microservices
+slug: bestpractices-oneormany
+section: Best practices
+order: 10
 ---
 
-**Last updated 11th May 2021**
+**Last updated 31st August 2023**
+
 
 
 ## Objective  
 
-Web PaaS supports running multiple "application containers" in a single project.  That can be extremely powerful in some cases, but if misused can lead to unnecessary maintenance difficulty and excessive costs.
+With {{< vendor/name >}}, you can run multiple application containers in a single environment.
+This gives you access to a large variety of setups and allows you to seamlessly upgrade your app
+from a monolith with a single application server to a more elaborate and effective topology.
 
-The way to determine what setup is appropriate for your use case is to think of your project as a collection of services, some of which you've written yourself.  That is, put "your code" and "the database" on the same level.  (That is essentially true from the Web PaaS perspective.)  Does your project consist of multiple "your code" pieces, but they all are parts of the same project?  Or are they discrete applications that conceptually exist independently of each other?
+You can set up multiple apps to achieve the following:
+- Keep your backend and frontend systems separate
 
-## Discrete projects
+- Run workers alongside your main app
 
-If your applications are discrete systems that are only incidentally related (such as because you wrote both of them), make them separate projects.  That will provide the most flexible development workflow.  It will also be cheaper, as running multiple applications in a single project requires at least a Medium plan, which costs more than two Standard plans.
+- Or even go for a full microservices architecture
 
-Discrete projects are appropriate if:
 
-* You want to deploy new releases of each application independently of the others.
-* The projects are for different customers/clients.
-* The projects do not need deep internal knowledge of each other's data.
-* Different teams will be working on different applications.
-* You want to develop true-microservices, where each microservice is fully stand-alone process with its own data.
+{{< vendor/name >}} makes implementing such setups and switching from one to the other pain-free.
 
-If you are uncertain how your needs map to projects, it probably means they should be separate, discrete projects.
+The same flexibility applies to any supported services, from relational databases to search engines and message queues.
+Depending on your specific use case, you can run a single database,
+multiple databases inside a single instance, or multiple databases in multiple versions...
+It's up to you!
+
+Whether you embrace a mono-repo approach with a single Git repository describing your entire setup,
+or divide your project into multiple repositories, {{< vendor/name >}} allows you to build the best architecture for your needs.
+
+But while the possibilities are endless, making the right choice between creating one big project with multiple apps
+or keeping each app in its own project can be a tough formula to crack.
+So read on for guidance!
+
+## Separate projects
+
+If you have multiple apps sharing the same code but each of them has its own data,
+keep your apps in separate projects.
+{{< vendor/name >}} provides the automation to deploy multiple projects from the same code base,
+which makes their maintenance effortless.
+
+> [!primary]  
+> 
+> By design, {{< vendor/name >}} doesn't allow your app to access services in another project through HTTP.
+> 
+> 
+
+So separate projects are appropriate in the following cases:
+
+- Your apps are for different customers/clients
+
+- Your apps don't need to directly connect to the same database
+
+- Different teams are working on different apps
+
+- You want to develop true microservices, where each microservice is a fully standalone process with its own data
+
+
+When in doubt over your own needs,
+it's better to keep separate projects than build an architecture that may prove difficult for you to maintain.
 
 ## Clustered applications
 
-A clustered application is one where your project requires multiple "app services", written by you, but are all part of the same conceptual project.  That is, removing one of the app services would render the others broken.
+A clustered application is one where your project requires multiple _app services_ that are all part of the same conceptual project.
 
-In a clustered application, you either have [multiple `.platform.app.yaml`](/pages/web/web-paas/configuration-app/multi-app) files in different directories with separate code bases that deploy separately or you have a single application that spawns one or more [worker instances](/pages/web/web-paas/configuration-app/workers) that run background processes.  (See the link for details on how to set those up.)
+Clustered applications can range from a straightforward headless architecture, where frontend and backend systems are separated,
+to micro-services with dozens of apps in multiple runtimes and frameworks forming a consistent whole.
+Meaning, removing one of the app services would break the others.
 
-A Clustered application requires at least a Medium plan.
+{{< vendor/name >}} allows you to configure access from one service to another
+without having to worry about service discovery or complex _ingress controllers_.
+[Configuring incoming routes](../define-routes/_index.md) is straightforward.
+You can have services that are only exposed to another service as well as services that are exposed to the internet.
 
-With a clustered application, you often will not need multiple service instances.  The [MySQL, MariaDB](/pages/web/web-paas/configuration-services/mysql), and [Solr](/pages/web/web-paas/configuration-services/solr) services support defining multiple databases on a single service, which is significantly more efficient than defining multiple services.  [Redis](/pages/web/web-paas/configuration-services/redis), [Memcached](/pages/web/web-paas/configuration-services/memcached),   and [RabbitMQ](/pages/web/web-paas/configuration-services/rabbitmq) natively support multiple bins, or queues, or indexes (the terminology varies) defined by the client application as part of the request so they need no additional configuration on Web PaaS, although they may need application configuration.
+In a clustered application, you can have one of the following configurations:
 
-Clustered applications are appropriate if:
+- Multiple [`{{< vendor/configfile "app" >}}` files](../create-apps/multi-app/_index.md) in different directories, with separate code bases that deploy separately
 
-* You want one user-facing application and an entirely separate admin-facing application that are both operating on the same data.
-* You want to have a user-facing application and a separate worker process (either the same code or separate) that handles background tasks.
-* You want a single conceptual application written in multiple programming languages, such as a PHP frontend with Node.js background worker.
+- A single app that spawns one or more [worker instances](../create-apps/app-reference.md#workers) that run background processes
 
-## Multi-site applications
 
-Some Content Management Systems or other applications support running multiple logical "sites" off of a single code base.  Those will usually work on Web PaaS depending on the configuration details of the application but are generally not recommended.  Often their multi-site logic is dependant on the domain name of the incoming request, which on Web PaaS will vary by branch.  They also often recommend running multiple databases, which while supported just fine on Web PaaS makes the setup process for each site more difficult.
+> [!primary]  
+> 
+> Note that a clustered application requires at least a [{{< partial "plans/multiapp-plan-name" >}} plan](https://platform.sh/pricing/).
+> 
+> 
 
-Leveraging multi-site capabilities of an application are appropriate if, and only if:
+With a clustered application, you often don't need multiple service instances.
+The [MySQL, MariaDB](../add-services/mysql/_index.md),
+and [Solr](../add-services/solr.md) services support defining multiple databases on a single service,
+which is significantly more efficient than defining multiple services.
+[Redis](../add-services/redis.md), [Memcached](../add-services/memcached.md),
+[Elasticsearch](../add-services/elasticsearch.md), and [RabbitMQ](../add-services/rabbitmq.md)
+natively support multiple bins (also called _queues_ or _indexes_) defined by the client application as part of the request.
+Therefore, they don't need additional configuration on {{< vendor/name >}}.
 
-* There is only a single team working on all of the "sites" involved.
-* All "sites" should be updated simultaneously as a single unit.
-* Each individual site is relatively low traffic, such that the aggregate traffic is appropriate for your plan size.
-* All sites really do use the same codebase with no variation, just different data.
+Clustered applications are appropriate in the following cases:
 
-If any of those is not the case, discrete projects will be a better long term plan.
+- You want one user-facing app and an entirely separate admin-facing app that are both operating on the same data
+
+- You want to have a user-facing app and a separate worker process (either the same code or separate) that handles background tasks
+
+- You want a single conceptual app written in multiple programming languages
+
+
+## A note on "multi-site" applications
+
+Some Content Management Systems or other applications support running multiple logical "sites" off of a single code base.
+This approach isn't recommended on {{< vendor/name >}}.
+
+This multi-site logic is often dependent on the domain name of the incoming request, which on {{< vendor/name >}} varies by branch.
+Running multiple databases, as is often recommended with this approach,
+is supported on {{< vendor/name >}} but makes the setup process for each site more difficult.
+
+Leveraging the multi-site capabilities of an app are appropriate only in the following cases:
+
+- There is only a single team working on all of the "sites" involved
+
+- All "sites" should be updated simultaneously as a single unit
+
+- Each individual site is relatively low traffic, such that the aggregate traffic is appropriate for your plan size
+
+- All sites really do use the same codebase with no variation, just different data
+
+
+Otherwise, [separate projects](#separate-projects) are a better long-term plan.

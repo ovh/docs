@@ -1,14 +1,18 @@
 ---
-title: Source Integrations
-updated: 2021-05-11
+title: Source integrations
+slug: integrations-source
+section: Integrations
 ---
 
-**Last updated 11th May 2021**
+**Last updated 31st August 2023**
 
 
 
 ## Objective  
 
-Web PaaS allows you to maintain your code base in a third party repository and link it to your Web PaaS project.  The remote repository is the canonical, definitive copy of your application code and the Web PaaS project is just a read-only mirror.
+You might want to keep your code in a third-party repository that's linked to your {{< vendor/name >}} project.
+This means you keep all your workflows where you want and use {{< vendor/name >}} for deploying.
 
-Note that when a source integration is enabled, you should not push code directly to the Web PaaS repository.  It will get overwritten the next time the integration is triggered.
+Your {{< vendor/name >}} project becomes a mirror of your code repository elsewhere.
+This means you shouldn't push code directly to {{< vendor/name >}}.
+Any changes you push directly get overwritten by the integration when changes happen in the third-party repository.

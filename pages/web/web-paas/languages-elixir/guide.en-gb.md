@@ -1,36 +1,36 @@
 ---
 title: Elixir
-updated: 2022-06-02
+slug: languages-elixir
+section: Languages
+order: 4
 ---
 
-**Last updated 2nd June 2022**
+**Last updated 31st August 2023**
+
 
 
 ## Objective  
 
-Web PaaS supports building and deploying applications written in Elixir. There is no default flavor for the build phase, but you can define it explicitly in your build hook. Web PaaS Elixir images support both committed dependencies and download-on-demand. The underlying Erlang version is 22.0.7.
+{{% description %}}
 
 ## Supported versions
 
-| **Grid** | 
-|----------------------------------|  
-|  1.9 |  
-|  1.10 |  
-|  1.11 |  
-|  1.12 |  
+{{% major-minor-versions-note configMinor="true" %}}
 
+| Grid and {{% names/dedicated-gen-3 %}} | {{% names/dedicated-gen-2 %}} |
+|----------------------------------------|------------------------------ |
+| - 1.15  
+- 1.14  
+- 1.13  
+- 1.12 |
 
-To specify an Elixir container, use the `type` property in your `.platform.app.yaml`.
+{{% language-specification type="elixir" display_name="Elixir" %}}
 
-```yaml 
-type: 'elixir:1.9'
-``` 
+## Built-in variables
 
-## Web PaaS variables
-
-Web PaaS exposes relationships and other configuration as [environment variables](/pages/web/web-paas/development-variables).
+{{< vendor/name >}} exposes relationships and other configuration as [environment variables](../development/variables/_index.md).
 Most notably, it allows a program to determine at runtime what HTTP port it should listen on
-and what the credentials are to access [other services](/pages/web/web-paas/configuration-services).
+and what the credentials are to access [other services](../add-services/_index.md).
 
 To get the `PORT` environment variable (the port on which your web application is supposed to listen) you would:
 
@@ -46,14 +46,16 @@ Some of the environment variables are in JSON format and are base64 encoded. You
 
 ## Building and running the application
 
-If you are using Hex to manage your dependencies, it is necessary to specify a set of environment variables in your `.platform.app.yaml` file that define the `MIX_ENV` and `SECRET_KEY_BASE`, which can be set to the Web PaaS-provided `PLATFORM_PROJECT_ENTROPY` environment variable:
+If you are using Hex to manage your dependencies, you need to specify the `MIX_ENV` environment variable:
 
-```yaml
+```yaml {configFile="app"}
 variables:
     env:
-        SECRET_KEY_BASE: $PLATFORM_PROJECT_ENTROPY
         MIX_ENV: 'prod'
 ```
+
+The `SECRET_KEY_BASE` variable is generated automatically based on the [`PLATFORM_PROJECT_ENTROPY` variable](../development/variables/use-variables.md#use-provided-variables).
+You can change it.
 
 Include in your build hook the steps to retrieve a local Hex and `rebar`, and then run `mix do deps.get, deps.compile, compile` on your application to build a binary.
 
@@ -69,28 +71,23 @@ hooks:
 
 > [!primary]  
 > 
-> The above build hook works for most cases and assumes that your `mix.exs` file is located at your app root.
+> That build hook works for most cases and assumes that your `mix.exs` file is located at [your app root](../create-apps/app-reference.md#root-directory).
 > 
 > 
 
 Assuming `mix.exs` is present at your app root and your build hook matches the above,
 you can then start it from the `web.commands.start` directive.
 
-> [!primary]  
-> The start command _must_ run in the foreground, so you should set the `--no-halt` flag when calling `mix run`.
-> 
+The following basic app configuration is sufficient to run most Elixir applications.
 
-The following basic `.platform.app.yaml` file is sufficient to run most Elixir applications.
-
-```yaml
+```yaml {configFile="app"}
 name: app
 
-type: elixir:1.9
+type: elixir:1.13
 
 variables:
     env:
         MIX_ENV: 'prod'
-        SECRET_KEY_BASE: $PLATFORM_PROJECT_ENTROPY
 
 hooks:
     build: |
@@ -100,7 +97,7 @@ hooks:
 
 web:
     commands:
-        start: mix run --no-halt
+        start: mix phx.server
     locations:
         /:
             allow: false
@@ -111,7 +108,7 @@ Note that there is still an Nginx proxy server sitting in front of your applicat
 
 ## Dependencies
 
-The recommended way to handle Elixir dependencies on Web PaaS is using Hex. 
+The recommended way to handle Elixir dependencies on {{< vendor/name >}} is using Hex.
 You can commit a `mix.exs` file in your repository and the system downloads the dependencies in your `deps` section using the build hook above.
 
 ```elixir
@@ -124,11 +121,11 @@ You can commit a `mix.exs` file in your repository and the system downloads the 
 
 ## Accessing Services
 
-{{% config-reader %}}
-[Web PaaS Config Reader library](https://hex.pm/packages/platformshconfig) 
-{{% /config-reader%}}
+{{% guides/config-reader-info lang="elixir" %}}
 
-If you are building a Phoenix app for example, it would suffice to add a database to `.platform/services.yaml` and a relationship in `.platform.app.yaml`. Put the lib in your `deps` and, assuming you renamed the `prod.secret.exs` to `releases.exs` per the [Phoenix guide](https://hexdocs.pm/phoenix/releases.html), change:
+```json  
+
+```  
 
 ```elixir
 System.get_env("DATABASE_URL")
@@ -140,13 +137,13 @@ to
 Platformsh.Config.ecto_dsn_formatter("database")
 ```
 
-See [Web PaaS Config Reader Documentation](https://hexdocs.pm/platformshconfig/Platformsh.Config.html) for the full API.
+See [Config Reader Documentation](../development/variables/use-variables.md#access-variables-in-your-app) for the full API.
 
 ### Accessing Services Manually
 
 The services configuration is available in the environment variable `PLATFORM_RELATIONSHIPS`.
 
-Given a relationship defined in `.platform.app.yaml`:
+Given a relationship defined in `{{< vendor/configfile "app" >}}`:
 
 
 ```yaml   
@@ -184,3 +181,5 @@ and setup Ecto during the deploy hook:
 deploy: |
     mix do ecto.setup
 ```
+
+{{% config-reader %}}[Elixir configuration reader library](https://github.com/platformsh/config-reader-elixir/){{% /config-reader %}}

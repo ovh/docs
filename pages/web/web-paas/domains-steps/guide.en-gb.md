@@ -1,75 +1,69 @@
 ---
-title: Custom Domains - Step by step guide
-updated: 2021-06-02
+title: Set up a custom domain
+slug: domains-steps
+section: Domains
+order: 7
 ---
 
-**Last updated 2nd June 2021**
+**Last updated 31st August 2023**
+
 
 
 ## Objective  
 
-Configuring custom domains on Web PaaS is a simple two or three step process. You can either use the Web PaaS management console or the CLI to configure your project for production. Once you are familiar with it the whole process usually takes a couple of minutes.
+Once your project is ready for production, replace the automatically generated domain with your own custom domain.
+
+Note that adding a domain disables the automatically generated URL for your Production environment only.
+If you are an Enterprise or Elite customer and have a Grid or {{% names/dedicated-gen-3 %}} project, you can [customize the URLs for your non-production environments](/domains/steps/custom-non-production-domains).
+{{% names/dedicated-gen-2 %}} customers can also customize the domain for their Staging environment.
+
+## Before you begin
+
+You need:
+
+- A project that's ready to go live
+
+- A domain with access to its settings with the registrar
+
+- A registrar that allows `CNAME` records or [one of the alternatives](./dns.md) on [apex domains](../../other/glossary.md#apex-domain)
+
+- Optional: The [CLI](../../administration/cli/_index.md) installed locally
+
+- If you are on a development plan, you need to [upgrade your tier to a production plan](#1-change-your-plan-to-a-production-plan).
 
 
-> [!primary]  
-> The order of operations is not really important, but if you are migrating a site from an existing provider, you should first configure the domain on the Web PaaS side, and only then switch DNS over.
-> 
+If you are planning to use several subdomains of the same domain on different projects,
+see how to [manage multiple subdomains](subdomains) *before* you add your domain to {{< vendor/name >}}.
 
-## 2. (CDN version) Configure your DNS provider
+## 2. Get the target for your project
 
-If you are serving the site through a CDN, configure your DNS provider to point at your CDN account.  The address or CNAME to set for that will vary with the CDN provider.
+You want to point your DNS record to the automatically generated URL.
+Your domain needs to point to that target for your site to go live.
 
-## 2. (Non-CDN version) Configure your DNS provider
+For Dedicated plans, get the target for your project from your {{< vendor/name >}} contact.
 
-Configure your DNS provider to point your domain to your Web PaaS Master environment domain name.
+> [!tabs]      
 
-The way to do so will vary somewhat depending on your registrar, but nearly all registrars should allow you to set a CNAME.  Some will call it an Alias or similar alternate name, but either way the intent is to say "this domain should always resolve to... this other domain".
+## 3. Configure your DNS provider
 
-You can access the CNAME target by running `webpaas environment:info edge_hostname`.  That is the host name by which Web PaaS knows your environment. Add a CNAME record from your desired domain (`www.example.com`) to the value of the `edge_hostname`.
+Your DNS provider (usually your registrar) is where you manage your domain.
+Most registrars offer similar functionalities regarding DNS configuration but use different terminology or configuration.
+For example, some registrars require you to use an `@` to create custom records on the apex domain, while others don't.
+Check your registrar's documentation.
 
-If you have multiple domains you want to be served by the same application you will need to add a CNAME record for each of them.
+Note that depending on your registrar and the time to live (TTL) you set,
+it can take anywhere from 15 minutes to 72 hours for DNS changes to be taken into account.
 
-Note that depending on your registrar and the TTL you set, it could take anywhere from 15 minutes to 72 hours for the DNS change to fully propagate across the Internet.
+> [!tabs]      
 
-If you are using an apex domain (`example.com`), see the additional information about [Apex domains and CNAME records](/pages/web/web-paas/domains-steps/dns).
+## 4. Set your domain
 
-If you are planning to host multiple subdomains on different projects, see the additional information about [Subdomains](/pages/web/web-paas/domains-steps/subdomains) *before* you add your domain to Web PaaS.
+Add a single domain to your project:
 
-## 3. (Non-CDN version) Set your domain in Web PaaS
+> [!tabs]      
 
-> [!primary]  
-> If using a CDN, skip this step. The CDN should already have been configured in advance to point to Web PaaS as its upstream.
-> 
+## What's next
 
-This step will tell the Web PaaS edge layer where to route requests for your web site. You can do this through the CLI with `webpaas domain:add example.com` or  [using the managment console](/pages/web/web-paas/administration-web/configure-project#domains).
-
-You can add multiple domains to point to your project. Each domain can have its own custom SSL certificate, or use the default one provided.
-
-If you require access to the site before the domain name becomes active you can create a `hosts` file entry on your computer and point it to the IP address that resolves when you access your master project branch.
-
-To get the IP address, first run `webpaas environment:info edge_hostname`.  That will print the "internal" domain name for your project.  Run `ping <that domain name>` to get its IP address.
-
-In OS X and Linux you can add that IP  to your `/etc/hosts` file.  In Windows the file is named `c:\Windows\System32\Drivers\etc\hosts`. You will need to be a admin user to be able to change that file. So in OS X you will usually run something like `sudo vi /etc/hosts`. After adding the line the file will look something like:
-
-![Hosts File](images/hosts-file.png "0.4")
-
-Alternatively there is also an add-on for Firefox and Google Chrome that allow you to dynamically switch DNS IP addresses without modifying your `hosts` file.
-
-* [Firefox LiveHosts add-on](https://addons.mozilla.org/en-US/firefox/addon/livehosts/)
-* [Google Chrome LiveHosts add-on](https://chrome.google.com/webstore/detail/livehosts/hdpoplemgeaioijkmoebnnjcilfjnjdi?hl=en)
-
-> [!primary]  
-> Do not put the IP address you see here, but the one you got from the ping command.
-> 
-> *Also, remember to remove this entry after you have configured DNS!*
-> 
-
-Sometimes it can take Let's Encrypt a couple of minutes to provision the certificate the first time. This is normal, and only means the first deploy after enabling a domain may take longer than usual.  Setting the CNAME record with your DNS provider first helps to minimize that disruption.
-
-## 4. Bonus steps (Optional)
-
-### Configure health notifications
-
-While not required, it's strongly recommended that you set up [health notifications](/pages/web/web-paas/integrations-notifications) to advise you if your site is experiencing issues such as running low on disk space.  Notifications can be sent via email, Slack, or PagerDuty.
-
-
+* [Use a content delivery network](../cdn/_index.md)
+* [Use subdomains across multiple projects](./subdomains.md)
+* [Use a custom TLS certificate](./tls.md)

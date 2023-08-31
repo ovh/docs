@@ -1,350 +1,476 @@
 ---
 title: PHP
-updated: 2022-06-02
+slug: languages-php
+section: Languages
+order: 4
 ---
 
-**Last updated 2nd June 2022**
+**Last updated 31st August 2023**
 
 
 ## Supported versions
 
-| **Grid** | 
-|----------------------------------|  
-|  7.3 |  
-|  7.4 |  
-|  8.0 |  
-|  8.1 |  
+{{% major-minor-versions-note configMinor="true" %}}
+
+| Grid and {{% names/dedicated-gen-3 %}} | {{% names/dedicated-gen-2 %}} |
+|----------------------------------------|------------------------------ |
+| - 8.2  
+- 8.1  
+- 8.0 |
+
+Note that from PHP versions 7.1 to 8.1, the images support the Zend Thread Safe (ZTS) version of PHP.
+
+{{% language-specification type="php" display_name="PHP" %}}
+
+{{% deprecated-versions %}}
+
+| Grid and {{% names/dedicated-gen-3 %}} | {{% names/dedicated-gen-2 %}} |
+|----------------------------------------|------------------------------ |
+| - 7.4  
+- 7.3  
+- 7.2  
+- 7.1  
+- 7.0  
+- 5.6  
+- 5.5  
+- 5.4 |
+
+## Usage example
+
+Configure your app to use PHP on {{< vendor/name >}}.
+
+### 1. Specify the version
+
+Choose a [supported version](#supported-versions)
+and add it to your [app configuration](../../create-apps/_index.md):
 
 
-## Deprecated versions
+```yaml   
+type: 'php:8.2'
+```  
 
-| **Grid** | 
-|----------------------------------|  
-|  5.4 |  
-|  5.5 |  
-|  5.6 |  
-|  7.0 |  
-|  7.1 |  
-|  7.2 |  
 
-## Alternate start commands
+### 2. Serve your app
 
-PHP is most commonly run in a CGI mode, using PHP-FPM.
-That's the default on Web PaaS.
-However, you can also start alternative processes if desired,
-such as if you're running an async PHP daemon, a thread-based worker process, or something similar.
-To do so, specify an alternative start command in `platform.app.yaml`, similar to the following:
+To serve your app, define what (and how) content should be served by setting the [`locations` parameter](../../create-apps/app-reference.md#locations).
 
-```yaml
+Usually, it contains the two following (optional) keys:
+
+- `root` for the document root,
+
+  the directory to which all requests for existing `.php` and static files (such as `.css`, `.jpg`) are sent.
+- `passthru` to [define a front controller](../../create-apps/web/php-basic.md#set-different-rules-for-specific-locations) to handle nonexistent files.
+
+  The value is a file path relative to the [app root](../../create-apps/app-reference.md#root-directory).
+
+> [!primary]  
+> 
+>   For enhanced security, when setting `passthru` to `true`, you might also want to add the following configuration:
+> 
+>   1. Set `scripts` to `false`.
+>      This prevents PHP scripts from being executed from the specified location.
+> 
+>   2. Set `allow` to `false`.
+>      By default, when PHP scripts aren't executed, their source code is delivered.
+>      Setting `allow` to `false` allows you to keep the source code of your PHP scripts confidential.
+> 
+> 
+
+Adjust the `locations` block to fit your needs.
+
+In the following example, all requests made to your site's root (`/`) are sent to the `public` directory
+and nonexistent files are handled by `app.php`:
+
+```yaml {configFile="app"}
 web:
-    commands:
-        start: php run.php
-    upstream:
-            socket_family: tcp
-            protocol: http
+    locations:
+        '/':
+            root: 'public'
+            passthru: '/app.php'
 ```
 
-The above configuration executes the `run.php` script in the application root when the container starts using the PHP-CLI SAPI, ust before the deploy hook runs but does *not* launch PHP-FPM.
+See how to [create a basic PHP app with a front controller](../../create-apps/web/php-basic.md).
+To have more control, you can define rules to specify which files you want to allow [from which location](../../create-apps/web/php-basic.md#set-different-rules-for-specific-locations).
 
-It also tells the front-controller (Nginx) to connect to your application via a TCP socket,
-which is specified in the `PORT` environment variable.
-Note that the start command _must_ run in the foreground.
+### Complete example
 
-If not specified, the effective default start command varies by PHP version:
+A complete basic app configuration looks like the following:
 
-- On PHP 5.x, it's `/usr/sbin/php5-fpm`.
-- On PHP 7.0, it's `/usr/sbin/php-fpm7.0`.
-- On PHP 7.1, it's `/usr/sbin/php-fpm7.1-zts`.
-- On PHP 7.2, it's `/usr/sbin/php-fpm7.2-zts`.
-- On PHP 7.3, it's `/usr/sbin/php-fpm7.3-zts`.
-- On PHP 7.4, it's `/usr/sbin/php-fpm7.4-zts`.
+```yaml {configFile="app"}
+name: 'app'
 
-While you can call it manually that's generally not necessary.
-Note that PHP-FPM cannot run simultaneously along with another persistent process (such as ReactPHP or Amp).
-If you need both, they have to run in separate containers.
+type: 'php:8.2'
 
-## Expanded dependencies
+disk: 2048
 
-In addition to the standard `dependencies` format,
-it's also possible to specify alternative repositories for use by Composer.
-The standard format:
-
-```yaml
-dependencies:
-    php:
-        "platformsh/client": "2.x-dev"
+web:
+    locations:
+        '/':
+            root: 'public'
+            passthru: '/app.php'
 ```
 
-is equivalent to `composer require platform/client 2.x-dev`.
-You can also specify explicit `require` and `repositories` blocks:
+## Dependencies
 
-```yaml
-dependencies:
-    php:
-        require:
-            "platformsh/client": "2.x-dev"
-        repositories:
-            - type: vcs
-              url: "git@github.com:platformsh/platformsh-client-php.git"
+Up to PHP version 8.1, it's assumed that you're using [Composer](https://getcomposer.org/) 1.x to manage dependencies.
+If you have a `composer.json` file in your code, the default [build flavor is run](../../create-apps/app-reference.md#build):
+
+```bash
+composer --no-ansi --no-interaction install --no-progress --prefer-dist --optimize-autoloader
 ```
 
-That would install `platformsh/client` from the alternate repository specified, as a global dependency.
-In other words, it's equivalent to the following `composer.json` file:
+To use Composer 2.x on your project, either use PHP 8.2+ or, in your app configuration, add the following [dependency](../../create-apps/app-reference.md#dependencies):
 
-```json
-{
-    "repositories": [
-        {
-            "type": "vcs",
-            "url":  "git@github.com:platformsh/platformsh-client-php.git"
-        }
-    ],
-    "require": {
-        "platformsh/client": "2.x-dev"
-    }
-}
-```
-
-That allows you to install a forked version of a global dependency from a custom repository.
-
-## Build flavor
-
-PHP images use the `composer` build flavor by default,
-which runs `composer --no-ansi --no-interaction install --no-progress --prefer-dist --optimize-autoloader` if a `composer.json` file is detected.
-
-Note that by default, all PHP containers include the latest Composer 1.x release.
-If you wish to use Composer 2.x, add it as a `dependency`:
-
-```yaml
+```yaml {configFile="app"}
 dependencies:
     php:
         composer/composer: '^2'
 ```
 
-## OPcache preloading
+Adding a dependency to the [dependencies block](../../create-apps/app-reference.md#dependencies) makes it available globally.
+So you can then use included dependencies as commands within your app container.
+You can add multiple global dependencies to the dependencies block, such as [Node.js](../nodejs/_index.md#2-specify-any-global-dependencies).
 
-From PHP 7.4, you can use OPcache preloading,
-which allows you to load selected files into shared memory when PHP-FPM starts.
-That means functions and classes in those files are always available and don't need to be autoloaded,
-at the cost of any changes to those files requiring a PHP-FPM restart.
+If you want to have more control over Composer or if you don't want to use Composer at all, adapt the [build flavor](#change-the-build-flavor).
+You can also use a [private, authenticated third-party Composer repository](./composer-auth.md).
 
-Since PHP-FPM restarts on each new deploy, this feature is a major win on Web PaaS and we recommend using it aggressively.
+### Change the build flavor
 
-To enable preloading, add a `php.ini` value that specifies a preload script.
-Any `php.ini` mechanism ini works,
-but using a variable in `.platform.app.yaml` is the recommended approach:
+If you need more control over the dependency management,
+you can either use your custom build flavor
+or interact with Composer itself through [its environment variables](https://getcomposer.org/doc/03-cli.md#environment-variables).
 
-```yaml
+You can remove the default build flavor and run your own commands for complete control over your build.
+Set the build flavor to `none` and add the commands you need to your `build` hook, as in the following example:
+
+```yaml {configFile="app"}
+build:
+    flavor: none
+
+hooks:
+    build: |
+        set -e
+        composer install --no-interaction --no-dev
+```
+
+That installs production dependencies with Composer but not development dependencies.
+The same can be achieved by using the default build flavor and [adding the `COMPOSER_NO_DEV` variable](../../development/variables/set-variables.md).
+
+See more on [build flavors](../../create-apps/app-reference.md#build).
+
+### Alternative repositories
+
+In addition to the standard `dependencies` format,
+you can specify alternative repositories for Composer to use as global dependencies.
+So you can install a forked version of a global dependency from a custom repository.
+
+To install from an alternative repository:
+
+1\. Set an explicit `require` block:
+
+
+```yaml {configFile="app"}
+dependencies:
+    php:
+        require:
+            "platformsh/client": "2.x-dev"
+```
+
+   This is equivalent to `composer require platform/client 2.x-dev`.
+2\. Add the repository to use:
+
+
+```yaml {configFile="app"}
+        repositories:
+            - type: vcs
+                url: "git@github.com:platformsh/platformsh-client-php.git"
+```
+
+That installs `platformsh/client` from the specified repository URL as a global dependency.
+
+For example, to install Composer 2 and the `platform/client 2.x-dev` library from a custom repository,
+use the following:
+
+```yaml {configFile="app"}
+dependencies:
+    php:
+        composer/composer: '^2'
+        require:
+            "platformsh/client": "2.x-dev"
+        repositories:
+            - type: vcs
+                url: "git@github.com:platformsh/platformsh-client-php.git"
+```
+
+## Connect to services
+
+The following examples show how to use PHP to access various [services](../../add-services/_index.md).
+The individual service pages have more information on configuring each service.
+
+> [!tabs]      
+
+{{% config-reader %}}[PHP configuration reader library](https://github.com/platformsh/config-reader-php){{% /config-reader %}}
+
+## PHP settings
+
+You can configure your PHP-FPM runtime configuration by specifying the [runtime in your app configuration](../../create-apps/app-reference.md#runtime).
+
+In addition to changes in runtime, you can also change the PHP settings.
+Some commonly used settings are:
+
+| Name | Default | Description |
+|------|---------|-------------|
+| `max_execution_time` | `300` | The maximum execution time, in seconds, for your PHP scripts and apps. A value of `0` means there are no time limits. |
+| `max_file_uploads` | `20` | The maximum number of files that can be uploaded in each request. |
+| `max_input_time` | `60` | The maximum time in seconds that your script is allowed to receive input (such as for file uploads). A value of `-1` means there are no time limits. |
+| `max_input_vars` | `1000` | The maximum number of input variables that are accepted in each request. |
+| `memory_limit` | `128M` | The memory limit, in megabytes, for PHP. Ensure that the PHP memory limit is set to a lower value than your environment's memory. |
+| `post_max_size` | `64M` | The maximum size, in megabytes, per uploaded file. To upload larger files, increase the value. |
+| `zend.assertions` | `-1` | Assertions are optimized and have no impact at runtime. Set assertions to `1` for your local development system. [See more on assertions](https://www.php.net/manual/en/regexp.reference.assertions). |
+| `opcache.memory_consumption` | `64` | The number of megabytes available for [the OPcache](./tuning.md#opcache-preloading). For large apps with many files, increase this value. |
+| `opcache.validate_timestamps` | `On` | If your app doesn't generate compiled PHP, you can [disable this setting](./tuning.md#disable-opcache-timestamp-validation). |
+
+### Retrieve the default values
+
+To retrieve the default PHP values, run the following [CLI command](../../administration/cli/_index.md):
+
+```bash
+webpaas ssh "php --info"
+```
+
+To get specific default values, use grep.
+For example, to get the value for `opcache.memory_consumption`, run the following command:
+
+```bash
+webpaas ssh "php --info" | grep opcache.memory_consumption
+```
+
+### Retrieve the settings
+
+To see the settings used on your environment:
+
+1\.  Find the PHP configuration files with the following [CLI command](../../administration/cli/_index.md):
+
+
+```bash
+platform ssh "php --ini"
+```
+
+    The output is something like the following:
+
+```bash
+Configuration File (php.ini) Path: /etc/php/8.0-zts/cli
+Loaded Configuration File:         /etc/php/8.0-zts/cli/php.ini
+Scan for additional .ini files in: /etc/php/8.0-zts/cli/conf.d
+Additional .ini files parsed:      (none)
+```
+
+2\.  Display the configuration file by adapting the following command with the output from step 1:
+
+
+```bash
+platform ssh "cat {{< variable "LOADED_CONFIGURATION_FILE_PATH" >}}"
+```
+
+### Customize PHP settings
+
+For {{% names/dedicated-gen-2 %}}, see the [configuration options](../../dedicated-gen-2/overview/grid.md#configuration-options).
+
+You can customize PHP values for your app in two ways.
+The recommended method is to use variables.
+
+> [!tabs]      
+
+If you're using [PHP-CLI](#execution-mode),
+you need to take into account the default settings of PHP-CLI when you customize your PHP settings.
+The default settings of PHP-CLI can't be overwritten and are the following:
+
+```text
+max_execution_time=0
+max_input_time=-1
+memory_limit=-1
+```
+
+### Disable functions for security
+
+A common recommendation for securing PHP installations is disabling built-in functions frequently used in remote attacks.
+By default, {{< vendor/name >}} doesn't disable any functions.
+
+If you're sure a function isn't needed in your app, you can disable it.
+
+For example, to disable `pcntl_exec` and `pcntl_fork`, add the following to your [app configuration](../../create-apps/_index.md):
+
+```yaml {configFile="app"}
 variables:
     php:
-        opcache.preload: 'preload.php'
+        disable_functions: "pcntl_exec,pcntl_fork"
 ```
 
-The `opcache.preload` value is evaluated as a file path relative your app configuration.
-It may be any PHP script that calls `opcache_compile_file()`.
+Common functions to disable include:
 
-The following example preloads all `.php` files anywhere in the `vendor` directory:
+| Name | Description |
+|------|-------------|
+| `create_function` | This function has been replaced by anonymous functions and shouldn't be used anymore. |
+| `exec`, `passthru`, `shell_exec`, `system`, `proc_open`, `popen` | These functions allow a PHP script to run a bash shell command. Rarely used by web apps except for build scripts that might need them. |
+| `pcntl_*` | The `pcntl_*` functions are responsible for process management. Most of them cause a fatal error if used within a web request. Cron tasks or workers may need them. Most are usually safe to disable. |
+| `curl_exec`, `curl_multi_exec` | These functions allow a PHP script to make arbitrary HTTP requests. If you're using HTTP libraries such as Guzzle, don't disable them. |
+| `show_source` | This function shows a syntax highlighted version of a named PHP source file. Rarely useful outside of development. |
 
-```php
-<?php
-$directory = new RecursiveDirectoryIterator(getenv('PLATFORM_APP_DIR') . '/vendor');
-$iterator = new RecursiveIteratorIterator($directory);
-$regex = new RegexIterator($iterator, '/^.+\.php$/i', RecursiveRegexIterator::GET_MATCH);
+## Execution mode
 
-foreach ($regex as $key => $file) {
-    // This is the important part!
-    opcache_compile_file($file[0]);
-}
-```
+PHP has two execution modes you can choose from:
 
-> [!primary]  
-> 
-> Preloading all `.php` files may not be optimal for your application and may even introduce errors.
-> Your application framework may provide recommendations or a pre-made preload script to use instead.
-> You have to determine the optimal preloading strategy for your situation.
-> 
-> 
+- The command line interface mode (PHP-CLI) is the mode used for command line scripts and standalone apps.
 
-#### Preloading and dependencies
+  This is the mode used when you're logged into your container via SSH, for [crons](../../create-apps/app-reference.md#crons),
+  and usually also for [alternate start commands](#alternate-start-commands).
+  To use PHP-CLI, run your script with `php {{<variable "PATH_TO_SCRIPT" >}}`,
+  where {{<variable "PATH_TO_SCRIPT" >}} is a file path relative to the [app root](../../create-apps/app-reference.md#root-directory).
+- The Common Gateway Interface mode (PHP-CGI) is the mode used for web apps and web requests.
 
-Your preload script runs each time PHP-FPM restarts, including during your build.
-This means it runs before your dependencies have been installed (such as with Composer).
+  This is the default mode when the `start` command isn't explicitly set.
+  To use PHP-CGI, run your script with a symlink: `/usr/bin/start-php-app {{<variable "PATH_TO_SCRIPT" >}}`,
+  where {{<variable "PATH_TO_SCRIPT" >}} is a file path relative to the [app root](../../create-apps/app-reference.md#root-directory).
+  With PHP-CGI, PHP is run using the FastCGI Process Manager (PHP-FPM).
 
-If your preload script uses `require` for dependencies, it fails during the build
-because the dependencies aren't yet present.
+## Alternate start commands
 
-To resolve this, you have two options:
+To specify an alternative process to run your code, set a `start` command.
+For more information about the start command, see the [web commands reference](../../create-apps/app-reference.md#web-commands).
 
-- Have your script `include` dependencies instead of `require` and fail gracefully if the dependencies aren't there.
-- Enable preloading with a variable that [isn't available during the build](/pages/web/web-paas/development-variables#setting-variables). Then preloading happens only on deploy.
+By default, start commands use PHP-CLI.
+Find out how and when to use each [execution mode](#execution-mode).
 
-## FFI
+Note that the `start` command must run in the foreground and is executed before the [deploy hook](../../create-apps/hooks/hooks-comparison.md).
+That means that PHP-FPM can't run simultaneously with another persistent process
+such as [ReactPHP](https://github.com/platformsh-examples/platformsh-example-reactphp)
+or [Amp](https://github.com/platformsh-examples/platformsh-example-amphp).
+If you need multiple processes, they have to run in separate containers.
 
-PHP 7.4 introduced support for Foreign Function Interfaces (FFI),
-which allows user-space code to bridge to existing C-ABI-compatible libraries.
-FFI is fully supported on Web PaaS.
+See some generic examples on how to use alternate start commands:
 
-Note: FFI is only intended for advanced use cases, and is rarely a net win for routine web requests.
+> [!tabs]      
+
+## Foreign function interfaces
+
+PHP 7.4 introduced support for [foreign function interfaces (FFIs)](https://en.wikipedia.org/wiki/Foreign_function_interface).
+FFIs allow your PHP program to call routines or use services written in C or Rust.
+
+Note: FFIs are only intended for advanced use cases.
 Use with caution.
 
-There are a few steps to leveraging FFI:
+If you are using C code, you need `.so` library files.
+Either place these files directly in your repository or compile them in a makefile using `gcc` in your [build hook](../../create-apps/hooks/hooks-comparison.md#build-hook).
+Note: The `.so` library files shouldn't be located in a publicly accessible directory.
 
-1\. Enable the FFI extension in `.platform.app.yaml`:
+If you are compiling Rust code, use the build hook to [install Rust](https://doc.rust-lang.org/stable/book/ch01-01-installation.html).
+
+To leverage FFIs, follow these steps:
+
+1\.  [Enable and configure OPcache preloading](./tuning.md#enable-opcache-preloading).
 
 
-```yaml
+2\.  Enable the FFI extension:
+
+
+```yaml {configFile="app"}
 runtime:
-    extensions:
+   extensions:
         - ffi
 ```
 
-2\. Specify a [preload file](#opcache-preloading) in which you can call `FFI::load()`.
+3\.  Make sure that your [preload script](./tuning.md#opcache-preloading) calls the `FFI::load()` function.
 
-Using `FFI::load()` in preload is considerably faster than loading the linked library on each request or script run.
+    Using this function in preload is considerably faster than loading the linked library on each request or script run.
 
-3\. Ensure the library is available locally, but not in a web-accessible directory.
+4\.  If you are running FFIs from the command line,
 
-`.so` files may included in your repository, downloaded in your build hook, or compiled in your build hook.
-If compiling C code, `gcc` is available by default.
-If compiling Rust code, you can download the [Rust compiler in the build hook](https://doc.rust-lang.org/stable/book/ch01-01-installation.html).
+    enable the preloader by adding the following configuration:
 
-4\. Running FFI from the command line. 
-
-You need to enable the OPcache for command line scripts in addition to the preloader.
-The standard pattern for the command would be `php -d opcache.preload="your-preload-script.php" -d opcache.enable_cli=true your-cli-script.php`.
-
-A working [FFI example](https://github.com/platformsh-examples/php-ffi) is available online for both C and Rust.
-
-## Debug PHP-FPM
-
-If you want to inspect what's going on with PHP-FPM,
-you can install this [small CLI](https://github.com/wizaplace/php-fpm-status-cli):
-
-```yaml
-dependencies:
+```yaml {configFile="app"}
+variables:
     php:
-        wizaplace/php-fpm-status-cli: "^1.0"
+        opcache.enable_cli: true
 ```
 
-Then when you are connected to your project over SSH, you can run:
+5\.  Run your script with the following command:
 
-```shell
-$ php-fpm-status --socket=unix://$SOCKET --path=/-/status --full
+
+```bash
+php {{<variable "CLI_SCRIPT" >}}
 ```
 
-## Accessing services
-
-To access various [services](/pages/web/web-paas/configuration-services) with PHP, see the following examples.
-The individual service pages have more information on configuring each service.
-
-> [!tabs]
-> Elasticsearch
->> [PHP - Elasticsearch](https://github.com/ovh/docs/blob/develop/pages/web/web-paas/static/files/fetch/examples/php/elasticsearch)
->>
-> Memcached     
->> [PHP - Memcached](https://github.com/ovh/docs/blob/develop/pages/web/web-paas/static/files/fetch/examples/php/memcached)
->>
-> MongoDB     
->> [PHP - MongoDB](https://github.com/ovh/docs/blob/develop/pages/web/web-paas/static/files/fetch/examples/php/mongodb)
->>
-> MySQL     
->> [PHP - MySQL](https://github.com/ovh/docs/blob/develop/pages/web/web-paas/static/files/fetch/examples/php/mysql)
->>
-> PostgreSQL     
->> [PHP - PostgreSQL](https://github.com/ovh/docs/blob/develop/pages/web/web-paas/static/files/fetch/examples/php/postgresql)
->>
-> RabbitMQ     
->> [PHP - RabbitMQ](https://github.com/ovh/docs/blob/develop/pages/web/web-paas/static/files/fetch/examples/php/rabbitmq)
->>
-> Redis     
->> [PHP - Redis](https://github.com/ovh/docs/blob/develop/pages/web/web-paas/static/files/fetch/examples/php/redis)
->>
-> Solr     
->> [PHP - Solr](https://github.com/ovh/docs/blob/develop/pages/web/web-paas/static/files/fetch/examples/php/solr)
->>
-
-[Composer library](https://github.com/platformsh/config-reader-php)
-
-## Runtime configuration
-
-It's possible to change the PHP-FPM runtime configuration via the `runtime` property in your app configuration.
-See that reference for details on what can be changed.
+See [complete working examples for C and Rust](https://github.com/platformsh-examples/php-ffi).
 
 ## Project templates
 
 
-### Gatsby with WordPress 
+### Drupal 10 
 
-![image](images/gatsby.png)
+![image]()
 
-This template builds a two application project to deploy the Headless CMS pattern using Gatsby as its frontend and WordPress for its backend. The `gatsby-source-wordpress` source plugin is used to pull data from WordPress during the `post_deploy` hook into the Gatsby Data Layer and build the frontend site. Gatsby utilizes the Web PaaS Configuration Reader library for Node.js to define the backend data source in its configuration. It is intended for you to use as a starting point and modify for your own needs.
-
-Note that after you have completed the WordPress installation, the project will require a redeploy to build and deploy Gatsby for the first time. See the included README's post-install section for details.
-
-Gatsby is a free and open source framework based on React that helps developers build statically-generated websites and apps, and WordPress is a blogging and lightweight CMS written in PHP.
+<p>This template builds Drupal 10 using the "Drupal Recommended" Composer project.  It is pre-configured to use MariaDB and Redis for caching.  The Drupal installer will skip asking for database credentials as they are already provided.</p>
+<p>Drupal is a flexible and extensible PHP-based CMS framework.</p>
   
 #### Features
-- Node.js 14<br />  
-- PHP 7.4<br />  
-- MariaDB 10.4<br />  
-- Automatic TLS certificates<br />  
-- npm-based build for Gatsby<br />  
-- Composer-based build for WordPress<br />  
-- Multi-app configuration<br />  
-- Delayed SSG build (post deploy hook)<br />  
- 
-[View the repository](https://github.com/platformsh-templates/gatsby-wordpress) on GitHub.
-
-### Drupal 8 Multisite 
-
-![image](images/drupal8.png)
-
-<p>This template builds Drupal 8 in a multisite configuration using the "Drupal Recommended" Composer project. It is pre-configured to use MariaDB and Redis for caching.  The Drupal installer will skip asking for database credentials as they are already provided.</p>
-<p>It also includes instructions and a script to help with setting up additional multisite instances, although depending on your particular needs it may require some customization.</p>
-<p>Drupal is a flexible and extensible PHP-based CMS framework capable of hosting multiple sites on a single code base.</p>
-  
-#### Features
-- PHP 7.4<br />  
+- PHP 8.1<br />  
 - MariaDB 10.4<br />  
 - Redis 6<br />  
-- Drush and Drupal Console included<br />  
-- Pre-configured for multiple sites<br />  
+- Drush included<br />  
 - Automatic TLS certificates<br />  
 - Composer-based build<br />  
  
-[View the repository](https://github.com/platformsh-templates/drupal8-multisite) on GitHub.
+[View the repository](https://github.com/platformsh-templates/drupal10) on GitHub.
 
-### Backdrop 
+### GovCMS 9 
 
-![image](images/backdrop.png)
+![image]()
 
-<p>This template deploys a Backdrop CMS site, with the entire site committed to Git.  It comes configured for MariaDB, the most popular database used with Backdrop.  It supports a quick web installation to configure the site.</p>
-<p>Backdrop is a PHP-based CMS, originally forked from Drupal 7.</p>
+<p>This template builds the Australian government's GovCMS Drupal 9 distribution using the Drupal Composer project for better flexibility.  It is pre-configured to use MariaDB and Redis for caching.  The Drupal installer will skip asking for database credentials as they are already provided.</p>
+<p>GovCMS is a Drupal distribution built for the Australian government, and includes configuration optimized for managing government websites.</p>
   
 #### Features
-- PHP 7.3<br />  
+- PHP 8.0<br />  
 - MariaDB 10.4<br />  
+- Redis 6<br />  
 - Drush included<br />  
 - Automatic TLS certificates<br />  
+- Composer-based build<br />  
  
-[View the repository](https://github.com/platformsh-templates/backdrop) on GitHub.
+[View the repository](https://github.com/platformsh-templates/drupal9-govcms9) on GitHub.
 
-### Nextcloud 
+### Drupal 9 
 
-![image](images/nextcloud.png)
+![image](images/drupal8.png)
 
-<p>This template builds Nextcloud on Web PaaS. Nextcloud itself is downloaded on the fly during the build step, and pre-configured for use with MariaDB and Redis.  Add-on applications can be provided in a separate directory and will be merged into Nextcloud automatically during build. (Self-update through the web interface is not supported.)</p>
-<p>The admin user is created automatically during the first deploy, and its name and password will be available in the deploy log.  Be sure to check for it there so you can log in.</p>
-<p>Nextcloud is a PHP-based groupware server with installable apps, file synchronization, and federated storage.</p>
+<p>This template builds Drupal 9 using the "Drupal Recommended" Composer project.  It is pre-configured to use MariaDB and Redis for caching.  The Drupal installer will skip asking for database credentials as they are already provided.</p>
+<p>Drupal is a flexible and extensible PHP-based CMS framework.</p>
   
 #### Features
-- PHP 7.4<br />  
+- PHP 8.0<br />  
+- MariaDB 10.4<br />  
+- Redis 6<br />  
+- Drush included<br />  
+- Automatic TLS certificates<br />  
+- Composer-based build<br />  
+ 
+[View the repository](https://github.com/platformsh-templates/drupal9) on GitHub.
+
+### Laravel 
+
+![image](images/laravel.png)
+
+<p>This template provides a basic Laravel skeleton.  It comes pre-configured to use a MariaDB database and Redis for caching and sessions using a Laravel-specific bridge library that runs during Composer autoload.  The public files symlink is also replaced with a custom web path definition so it is unnecessary.  It is intended for you to use as a starting point and modify for your own needs.</p>
+<p>Laravel is an opinionated, integrated rapid-application-development framework for PHP.</p>
+  
+#### Features
+- PHP 8.0<br />  
 - MariaDB 10.4<br />  
 - Redis 5.0<br />  
 - Automatic TLS certificates<br />  
-- Nextcloud downloaded on the fly during build<br />  
+- Composer-based build<br />  
  
-[View the repository](https://github.com/platformsh-templates/nextcloud) on GitHub.
+[View the repository](https://github.com/platformsh-templates/laravel) on GitHub.
 
 ### Magento 2 Community Edition 
 
@@ -363,39 +489,24 @@ Gatsby is a free and open source framework based on React that helps developers 
  
 [View the repository](https://github.com/platformsh-templates/magento2ce) on GitHub.
 
-### TYPO3 
+### Sylius 
 
-![image](images/typo3.png)
+![image]()
 
-<p>This template builds the TYPO3 CMS for Web PaaS. It comes pre-configured with MariaDB for storage and Redis for caching. A command line installer will automatically initialize the site on first deploy.</p>
-<p>TYPO3 is a PHP-based Content Management System</p>
+<p>This template builds a Sylius application for Web PaaS, which can be used as a starting point for developing complex e-commerce applications.</p>
+<p>Sylius is a modern e-commerce solution for PHP, based on Symfony Framework.</p>
   
 #### Features
-- PHP 7.4<br />  
-- MariaDB 10.4<br />  
-- Redis 5.0<br />  
+- PHP 8.0<br />  
+- MySQL 10.2<br />  
 - Automatic TLS certificates<br />  
-- Composer-based build<br />  
+- composer-based build<br />  
  
-[View the repository](https://github.com/platformsh-templates/typo3) on GitHub.
-
-### Basic PHP 
-
-![image](images/basicphp.png)
-
-<p>This template provides the most basic configuration for running a custom PHP project built with Composer. It includes but doesn't make use of the Web PaaS `config-reader` library.  It can be used to build a very rudimentary application but is intended primarily as a documentation reference.</p>
-<p>PHP is a high-performance scripting language especially well suited to web development.</p>
-  
-#### Features
-- PHP 7.4<br />  
-- Automatic TLS certificates<br />  
-- Composer-based build<br />  
- 
-[View the repository](https://github.com/platformsh-templates/php) on GitHub.
+[View the repository](https://github.com/platformsh-templates/sylius) on GitHub.
 
 ### WordPress (Bedrock) 
 
-![image](images/wordpress.png)
+![image]()
 
 <p>This template builds WordPress on Web PaaS using the Bedrock boilerplate by Roots with Composer. Plugins and themes should be managed with Composer exclusively. The only modifications made to the standard Bedrock boilerplate have been providing database credentials and main site url parameters via environment variables. With this configuration, the database is automatically configured such that the installer will not ask you for database credentials. While Bedrock provides support to replicate this configuration in a `.env` file for local development, an example Lando configuration file is included as the recommendated method to do so.</p>
 <p>WordPress is a blogging and lightweight CMS written in PHP, and Bedrock is a Composer-based WordPress boilerplate project with a slightly modified project structure and configuration protocol. </p>
@@ -408,37 +519,38 @@ Gatsby is a free and open source framework based on React that helps developers 
  
 [View the repository](https://github.com/platformsh-templates/wordpress-bedrock) on GitHub.
 
-### Laravel 
+### WordPress (Composer) 
 
-![image](images/laravel.png)
+![image]()
 
-<p>This template provides a basic Laravel skeleton.  It comes pre-configured to use a MariaDB database and Redis for caching and sessions using a Laravel-specific bridge library that runs during Composer autoload.  The public files symlink is also replaced with a custom web path definition so it is unnecessary. It is intended for you to use as a starting point and modify for your own needs.</p>
-<p>Laravel is an opinionated, integrated rapid-application-development framework for PHP.</p>
+<p>This template builds WordPress on Web PaaS using the <a href="https://github.com/johnpbloch/wordpress"><code>johnbloch/wordpress</code></a> "Composer Fork" of WordPress.  Plugins and themes should be managed with Composer exclusively.  A custom configuration file is provided that runs on Web PaaS to automatically configure the database, so the installer will not ask you for database credentials.  For local-only configuration you can use a `wp-config-local.php` file that gets excluded from Git.</p>
+<p>WordPress is a blogging and lightweight CMS written in PHP.</p>
+  
+#### Features
+- PHP 8.1<br />  
+- MariaDB 10.4<br />  
+- Automatic TLS certificates<br />  
+- Composer-based build<br />  
+ 
+[View the repository](https://github.com/platformsh-templates/wordpress-composer) on GitHub.
+
+### WordPress (Vanilla) for Web PaaS 
+
+![image]()
+
+<p>This template builds WordPress on Web PaaS, installing WordPress to a subdirectory instead of to the project root. It does not use a package management tool like Composer, and updating core, themes, and plugins should be done with care. A custom configuration file is provided that runs on Web PaaS to automatically configure the database, so the installer will not ask you for database credentials.</p>
+<p>WordPress is a blogging and lightweight CMS written in PHP.</p>
   
 #### Features
 - PHP 7.4<br />  
 - MariaDB 10.4<br />  
-- Redis 5.0<br />  
 - Automatic TLS certificates<br />  
-- Composer-based build<br />  
  
-[View the repository](https://github.com/platformsh-templates/laravel) on GitHub.
-
-### Sculpin 
-
-![image](images/sculpin.png)
-
-<p>This template provides a basic Sculpin skeleton.  All files are generated at build time, so at runtime only static files need to be served.</p>
-<p>Sculpin is a static site generator written in PHP and using the Twig templating engine.</p>
-  
-#### Features
-- PHP 7.4<br />  
-- Automatic TLS certificates<br />  
-- Composer-based build<br />  
- 
-[View the repository](https://github.com/platformsh-templates/sculpin) on GitHub.
+[View the repository](https://github.com/platformsh-templates/wordpress-vanilla) on GitHub.
 
 ### WooCommerce (Bedrock) for Web PaaS 
+
+![image]()
 
 <p>This template builds WordPress on Web PaaS using the Bedrock boilerplate by Roots with Composer. It includes WooCommerce and JetPack as dependencies, which when enabled will quickly allow you to create a store on WordPress.</p>
 <p>Plugins and themes should be managed with Composer exclusively. The only modifications made to the standard Bedrock boilerplate have been providing database credentials and main site url parameters via environment variables. With this configuration, the database is automatically configured such that the installer will not ask you for database credentials. While Bedrock provides support to replicate this configuration in a <code>.env</code> file for local development, an example Lando configuration file is included as the recommendated method to do so.</p>
@@ -452,137 +564,3 @@ Gatsby is a free and open source framework based on React that helps developers 
  
 [View the repository](https://github.com/platformsh-templates/wordpress-woocommerce) on GitHub.
 
-### Drupal 9 
-
-![image](images/drupal8.png)
-
-<p>This template builds Drupal 9 using the "Drupal Recommended" Composer project. It is pre-configured to use MariaDB and Redis for caching. The Drupal installer will skip asking for database credentials as they are already provided.</p>
-<p>Drupal is a flexible and extensible PHP-based CMS framework.</p>
-  
-#### Features
-- PHP 7.4<br />  
-- MariaDB 10.4<br />  
-- Redis 6<br />  
-- Drush included<br />  
-- Automatic TLS certificates<br />  
-- Composer-based build<br />  
- 
-[View the repository](https://github.com/platformsh-templates/drupal9) on GitHub.
-
-### Drupal 8 
-
-![image](images/drupal8.png)
-
-<p>This template builds Drupal 8 using the "Drupal Recommended" Composer project. It is pre-configured to use MariaDB and Redis for caching. The Drupal installer will skip asking for database credentials as they are already provided.</p>
-<p>Drupal is a flexible and extensible PHP-based CMS framework.</p>
-  
-#### Features
-- PHP 7.4<br />  
-- MariaDB 10.4<br />  
-- Redis 6<br />  
-- Automatic TLS certificates<br />  
-- Composer-based build<br />  
- 
-[View the repository](https://github.com/platformsh-templates/drupal8) on GitHub.
-
-### GovCMS 8 
-
-![image](images/drupal8.png)
-
-<p>This template builds the Australian government's GovCMS Drupal 8 distribution using the Drupal Composer project for better flexibility. It is pre-configured to use MariaDB and Redis for caching.  The Drupal installer will skip asking for database credentials as they are already provided.</p>
-<p>GovCMS is a Drupal distribution built for the Australian government, and includes configuration optimized for managing government websites.</p>
-  
-#### Features
-- PHP 7.4<br />  
-- MariaDB 10.4<br />  
-- Redis 6<br />  
-- Drush and Drupal Console included<br />  
-- Automatic TLS certificates<br />  
-- Composer-based build<br />  
- 
-[View the repository](https://github.com/platformsh-templates/drupal8-govcms8) on GitHub.
-
-### Pimcore 
-
-![image](images/pimcore.png)
-
-<p>This template builds Pimcore 5 on Web PaaS. It comes pre-installed with a MariaDB database connecting through Doctrine and Redis for caching via a custom configuration file. It will self-install on the first deploy.</p>
-<p>Pimcore is a Symfony-based Digital Experience Platform.</p>
-  
-#### Features
-- PHP 7.4<br />  
-- MariaDB 10.4<br />  
-- Redis 5<br />  
-- Automatic TLS certificates<br />  
-- Composer-based build<br />  
- 
-[View the repository](https://github.com/platformsh-templates/pimcore) on GitHub.
-
-### WordPress (Composer) 
-
-![image](images/wordpress.png)
-
-This template builds WordPress on Web PaaS using the <a href="https://github.com/johnpbloch/wordpress"><code>johnbloch/wordpress</code></a> "Composer Fork" of WordPress. Plugins and themes should be managed with Composer exclusively. A custom configuration file is provided that runs on Web PaaS to automatically configure the database, so the installer will not ask you for database credentials. For local-only configuration you can use a `wp-config-local.php` file that gets excluded from Git.
-
-WordPress is a blogging and lightweight CMS written in PHP.
-  
-#### Features
-- PHP 7.4<br />  
-- MariaDB 10.4<br />  
-- Automatic TLS certificates<br />  
-- Composer-based build<br />  
- 
-[View the repository](https://github.com/platformsh-templates/wordpress-composer) on GitHub.
-
-### Opigno 
-
-![image](images/opigno.png)
-
-This template builds the Opigno Drupal 8 distribution using the [Drupal Composer project](https://github.com/drupal-composer/drupal-project) for better flexibility.  It also includes configuration to use Redis for caching, although that must be enabled post-install in `.platform.app.yaml`.
-
-Opigno is a Learning Management system built as a Drupal distribution.
-  
-#### Features
-- PHP 7.3<br />  
-- MariaDB 10.4<br />  
-- Redis 6<br />  
-- Drush and Drupal Console included<br />  
-- Automatic TLS certificates<br />  
-- Composer-based build<br />  
- 
-[View the repository](https://github.com/platformsh-templates/drupal8-opigno) on GitHub.
-
-### Gatsby with Drupal 
-
-![image](images/gatsby.png)
-
-<p>This template builds a two-application project to deploy the Headless CMS pattern using Gatsby as its frontend and Drupal 8 for its backend. The <code>gatsby-source-drupal</code> source plugin is used to pull data from Drupal during the <code>post_deploy</code> hook into the Gatsby Data Layer and build the frontend site. Gatsby utilizes the Web PaaS Configuration Reader library for Node.js to define the backend data source in its configuration. It is intended for you to use as a starting point and modify for your own needs.</p>
-<p>Note that after you have completed the Drupal installation and included a few articles, the project will require a redeploy to build and deploy Gatsby for the first time. See the included README's post-install section for details.</p>
-<p>Gatsby is a free and open source framework based on React that helps developers build statically-generated websites and apps, and Drupal is a flexible and extensible PHP-based CMS framework.</p>
-  
-#### Features
-- Node.js 12<br />  
-- PHP 7.4<br/>  
-- MariaDB 10.4<br/>  
-- Redis 5.0<br/>  
-- Automatic TLS certificates<br />  
-- npm-based build for Gatsby<br />  
-- Composer-based build for Drupal<br />  
-- Multi-app configuration<br />  
-- Delayed SSG build (post deploy hook)<br />  
- 
-[View the repository](https://github.com/platformsh-templates/gatsby-drupal) on GitHub.
-
-### WordPress (Vanilla) for Web PaaS 
-
-![image](images/wordpress.png)
-
-<p>This template builds WordPress on Web PaaS, installing WordPress to a subdirectory instead of to the project root. It does not use a package management tool like Composer, and updating core, themes, and plugins should be done with care. A custom configuration file is provided that runs on Web PaaS to automatically configure the database, so the installer will not ask you for database credentials.</p>
-<p>WordPress is a blogging and lightweight CMS written in PHP.</p>
-  
-#### Features
-- PHP 7.4<br />  
-- MariaDB 10.4<br />  
-- Automatic TLS certificates<br />  
- 
-[View the repository](https://github.com/platformsh-templates/wordpress-vanilla) on GitHub.

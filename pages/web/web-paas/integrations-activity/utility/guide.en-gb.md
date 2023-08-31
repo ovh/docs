@@ -1,38 +1,16 @@
 ---
 title: Utility routines
-updated: 2021-05-11
+slug: utility
+section: Activity
 ---
 
-**Last updated 11th May 2021**
+**Last updated 31st August 2023**
+
 
 
 ## Objective  
 
-The following utility routines can help simplify common tasks in your activity scripts.  They are free to copy, modify, bend, fold, spindle, and mutilate as needed for your own scripts.  They also demonstrate some common patterns for working with the `activity` and `project` data structures.
-
-## General utilities
-
-```javascript
-/**
- * Returns a key/value object containing all variables relevant for the activity.
- *
- * That includes project level variables, plus any variables visible for
- * the relevant environment for the activity, if any.
- *
- * Note that JSON-encoded values will show up as a string, and need to be
- * decoded with JSON.parse().
- */
-function getEnvironmentVariables() {
-  return activity.payload.deployment.variables.reduce(
-    (vars, { name, value }) => ({
-      ...vars,
-      [name]: value,
-    }),
-    {}
-  );
-}
-```
-
+{{% description %}}
 
 ## Route access
 
@@ -74,7 +52,7 @@ function getUpstreamRoutes(appName) {
 /**
  * Returns the primary route.
  *
- * The primary route is the one marked primary in `routes.yaml`, or else
+ * The primary route is the one marked primary in `{{< vendor/configfile "routes" >}}`, or else
  * the first non-redirect route in that file if none are marked.
  *
  * @return {object}
@@ -98,7 +76,7 @@ function getPrimaryRoute() {
 /**
  * Returns the route definition that has the specified id.
  *
- * Note: If no route ID was specified in routes.yaml then it will not be possible
+ * Note: If no route ID was specified in {{< vendor/configfile "routes" >}} then it will not be possible
  * to look up a route by ID.
  *
  * @param {string} id

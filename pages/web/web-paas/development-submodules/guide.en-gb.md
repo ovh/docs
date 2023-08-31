@@ -1,131 +1,194 @@
 ---
-title: Git submodules
-updated: 2021-03-31
+title: Use Git submodules
+slug: development-submodules
+section: Development
+order: 5
 ---
 
-**Last updated 31st March 2021**
+**Last updated 31st August 2023**
 
 
 ## Clone submodules during deployment
 
-Web PaaS allows you to use submodules in your Git repository. They are usually listed in a `.gitmodules` file at the root of your Git repository. When you push via Git, Web PaaS will try to clone them automatically.
+{{< vendor/name >}} allows you to use submodules in your Git repository.
+They're usually listed in a `.gitmodules` file at the root of your Git repository.
+When you push via Git, {{< vendor/name >}} tries to clone them automatically.
 
-Here is an example of a ``.gitmodules`` file:
+The following example is based on [a Bigfoot multi-app project](https://github.com/platformsh-templates/bigfoot-multiapp/tree/multiapp-subfolders-applications) which uses the following submodules:
 
-```ini
-[submodule "app/Oro"]
-	path = src/Oro
-	url = https://github.com/orocrm/platform.git
-[submodule "src/OroPackages/src/Oro/Bundle/EntitySerializedFieldsBundle"]
-	path = src/OroPackages/src/Oro/Bundle/EntitySerializedFieldsBundle
-	url = https://github.com/orocrm/OroEntitySerializedFieldsBundle.git
-[submodule "src/OroB2B"]
-	path = src/OroB2B
-	url = https://github.com/orocommerce/orocommerce.git
-```
+- A [BigFoot app](https://github.com/platformsh-templates/bigfoot-multiapp-api/tree/without-platform-app-yaml)
 
-When you run ``git push``, you can see the output of the log:
+- An [API WebPaas v3, Admin component](https://github.com/platformsh-templates/bigfoot-multiapp-admin/tree/without-platform-app-yaml)
+
+- A [Gatsby frontend](https://github.com/platformsh-templates/bigfoot-multiapp-gatsby/tree/without-platform-app-yaml)
+
+- A [Mercure Rocks server](https://github.com/platformsh-templates/bigfoot-multiapp-mercure/tree/without-platform-app-yaml)
+
+
+![Diagram of a project containing multiple apps](images/multiple-app.png "0.5")
+
+To import all the submodules, run the following commands from your multiple application project's root folder:
 
 ```bash
-Validating submodules.
-  Updated submodule git://github.com/orocommerce/orocommerce: 4 references updated.
-  Updated submodule git://github.com/orocrm/platform: 229 references updated.
-  Updated submodule git://github.com/orocrm/OroEntitySerializedFieldsBundle: 11 references updated.
+$ touch .gitmodules
+$ git submodule add --name admin https://github.com/platformsh-templates/bigfoot-multiapp-admin.git admin
+$ git submodule add --name api https://github.com/platformsh-templates/bigfoot-multiapp-api.git api
+$ git submodule add --name gatsby https://github.com/platformsh-templates/bigfoot-multiapp-gatsby.git gatsby
+$ git submodule add --name mercure https://github.com/platformsh-templates/bigfoot-multiapp-mercure.git mercure
+$ git add .
+$ git commit -m "Adding submodules for Bigfoot App, API WebPaas Admin, Gatsby frontend and Mercure Rocks server"
+$ git push
 ```
+
+Here is an example of a `.gitmodules` file:
+
+```ini
+[submodule "admin"]
+  path = admin
+  url = https://github.com/platformsh-templates/bigfoot-multiapp-admin.git
+[submodule "api"]
+  path = api
+  url = https://github.com/platformsh-templates/bigfoot-multiapp-api.git
+[submodule "gatsby"]
+  path = gatsby
+  url = https://github.com/platformsh-templates/bigfoot-multiapp-gatsby.git
+[submodule "mercure"]
+  path = mercure
+  url = https://github.com/platformsh-templates/bigfoot-multiapp-mercure.git
+```
+
+When you run `git push`, you can see the output of the logs:
+
+```bash
+  Validating submodules
+    Updating submodule ttps://github.com/platformsh-templates/bigfoot-multiapp-admin.git
+    Updated submodule https://github.com/platformsh-templates/bigfoot-multiapp-admin.git: 549 references updated.
+    Updating submodule ttps://github.com/platformsh-templates/bigfoot-multiapp-api.git
+    Updated submodule https://github.com/platformsh-templates/bigfoot-multiapp-api.git: 898 references updated.
+    Updating submodule https://github.com/platformsh-templates/bigfoot-multiapp-gatsby.git
+    Updated submodule https://github.com/platformsh-templates/bigfoot-multiapp-gatsby.git: 257 references updated.
+    Updating submodule https://github.com/platformsh-templates/bigfoot-multiapp-mercure.git
+    Updated submodule https://github.com/platformsh-templates/bigfoot-multiapp-mercure.git: 124 references updated.
+  ...
+```
+
+> [!primary]  
+> 
+> If your submodule contains an independent app,
+> see [how to configure it properly](../(create-apps-multi-app/project-structure#split-your-code-source-into-multiple-git-submodule-repositories).
+> 
+> 
+
+## Update submodules
+
+> [!tabs]      
 
 ## Error when validating submodules
 
-If you see the following error:
+Using an SSH URL (`git@github.com:...`) to fetch submodules triggers the following error:
 
 ```bash
 Validating submodules.
   Found unresolvable links, updating submodules.
 
 E: Error validating submodules in tree:
-    - /src/Oro: Exception: commit 03567c6 not found.
+    - admin: Exception: commit 03567c6 not found.
 
    This might be due to the following errors fetching submodules:
-    - git@github.com:orocommerce/orocommerce.git: HangupException: The remote server unexpectedly closed the connection.
+    - git@github.com:platformsh-templates/bigfoot-multiapp-admin.git: HangupException: The remote server unexpectedly closed the connection.
 ```
 
-Since the Web PaaS Git server cannot connect to Github via SSH without being granted an SSH key to do so, you should not be using an SSH URL: ``git@github.com:...``, but you should use an HTTPS URL instead: ``https://github.com/...``.
+This is due to the fact that the {{< vendor/name >}} Git server can't connect to GitHub via SSH without being granted an SSH key to do so.
+To solve this issue, use an HTTPS URL (`https://github.com/...`) instead.
 
-## Use of private git repositories
+## Use private Git repositories
 
-When using Git submodules that are hosted on private repositories, using the `https` protocol will fail with errors like:
+When using Git submodules that are private repositories, URLs with the HTTPS protocol fail with errors such as the following:
 
 ```bash
 GitProtocolError: unexpected http resp 401 for https://bitbucket.org/myusername/mymodule.git/info/refs?service=git-upload-pack
 ```
 
-To fix this, you need to:
+To fix this, follow these steps:
 
-1\. Change your `.gitmodules` file from the HTTPS syntax to the SSH syntax, e.g.
+1\. Change your module declarations to use SSH for URLs.
 
 
-    from:
+    Your existing declaration might look like this:
 
-```bash
-[submodule "support/mymodule"]
-    path = support/mymodule
-    url = https://bitbucket.org/myusername/mymodule.git
+```bash {location=".gitmodules"}
+[submodule "support/module"]
+    path = support/module
+    url = https://bitbucket.org/username/module.git
+    branch = submodule/branch
 ```
 
-    to:
+    Change this to the following:
 
-```bash
-[submodule "support/mymodule"]
-    path = support/mymodule
-    url=git@bitbucket.org:myusername/mymodule.git
+```bash {location=".gitmodules"}
+[submodule "support/module"]
+    path = support/module
+    url = git@bitbucket.org:username/module.git
+    branch = submodule/branch
 ```
 
-2\. Add the SSH public key in the Web PaaS project settings "Deploy Key" tab in the Web UI as per the [Private Repository](/pages/web/web-paas/development-private-repository) documentation page, which will allow our Git service to pull the module from the remote git service. This assumes you have configured the remote git repository to allow this by generating a private/public key pair. For example, see the [Bitbucket documentation](https://confluence.atlassian.com/bitbucket/use-ssh-keys-in-bitbucket-pipelines-847452940.html).
+2\. Add the [project's public key to your remote Git repository](./private-repository.md).
 
+   This allows your {{< vendor/name >}} project to pull the repository from the remote Git service.
 
+> [!primary]  
+> 
+> Deploy keys only grant access to a single repository,
+> which can cause issues when attempting to pull several repositories to the same server.
+> If your server needs access to multiple repositories, follow these steps:
+> 
+> 1. [Create a machine user](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/managing-deploy-keys#machine-users)
+>    with access rights to each of the private repositories.
+> 2. Attach the deploy key to your machine user.
+> 
+> 
 
 ## Removing submodules
 
-These steps are not specific to Web PaaS, but kept as a reference for Git so that submodules are effectively removed prior to entering the build process.
+These steps aren't specific to {{< vendor/name >}}, but kept as a reference for Git so that submodules are effectively removed before entering the build process.
 
-1\. Delete information for the submodule you'd like to remove from `.gitmodules`.
+1\. In your `.gitmodules` and `.git/config` files, delete the information related to the submodule you want to remove.
 
-2\. Stage changes to `.gitmodules`: 
+
+```bash
+$ git submodule deinit -f path_to_submodule
+ ```
+
+2\. Stage changes to `.gitmodules`:
 
 
 ```bash
 $ git add .gitmodules
 ```
-
-3\. Remove the submodule's configuration from `.git/config`.
-
-4\. Remove the submodule from the repository (without trailing slash): 
+3\. Remove the submodule from the repository (without trailing slash):
 
 
 ```bash
 $ git rm --cached path_to_submodule
 ```
 
-5\. Remove the submodule's files in `.git` from the repository  (without trailing slash): 
+4\. Remove the submodule files in `.git` from the repository  (without trailing slash):
 
 
 ```bash
 $ rm -rf .git/modules/path_to_submodule
 ```
 
-6\. Commit the changes: 
+5\. Commit the changes:
 
 
 ```bash
 $ git commit -m "Removed submodule."
 ```
 
-7\. Remove the submodule code locally, now untracked: 
+6\. Remove the submodule code locally, now no longer tracked:
 
 
 ```bash
 $ rm -rf path_to_submodule
 ```
-
-> [!primary]  
-> Original can be found in a [gist by Mahdi Yusuf](https://gist.github.com/myusuf3/7f645819ded92bda6677), replicated here for internal linking.
-> 

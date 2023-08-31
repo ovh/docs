@@ -1,147 +1,67 @@
 ---
-title: SSH
-updated: 2021-05-11
+title: Connect securely with SSH
+slug: development-ssh
+section: Development
+order: 5
 ---
 
-**Last updated 11th May 2021**
+**Last updated 31st August 2023**
+
 
 
 ## Objective  
 
-One of the ways Web PaaS keeps things secure is by using SSH behind the scenes. Users can interact with their environment through a command shell, or push changes to the environment's Git repository, and both of these features rely on SSH.
+When you interact with a deployed environment, you need to guard your connection against unauthorized access.
+Use Secure Shell (SSH) to provide a secure channel.
+
+You can securely log in to your deployed app to troubleshoot and read logs.
+And create a tunnel to export data through.
+And interact with your project through the CLI.
+All secured through SSH.
+
+## Connect to apps
+
+To connect to an app securely with SSH, follow two steps.
+
+### 1. Authenticate with the CLI
+
+To authenticate with the CLI:
+
+1\. Install the [{{< vendor/name >}} CLI](../administration-cli).
+
+2\. Run `webpaas login`.
+
+3\. In the open browser window, log in with your {{< vendor/name >}} account credentials.
+
+   (This webpage is encrypted with HTTPS [HTTP over TLS], making it secure.)
+4\. Authorize the CLI to use your account.
 
 
-Secure Shell Protocol, SSH, supports certificate-based and keypair-based authentication.  Certificate-based authentication is faster to set up and generally easier to use, provided you have a web browser available on your computer.  Alternatively, you may use keypair-based authentication if you are setting up an automation tool, or simply prefer that method.
+A certificate gets stored in your local SSH configuration.
+The certificate is automatically cycled every hour for a new certificate as long as your session is active.
+
+If you are inactive for an extended period,
 
 
+You are now ready to run CLI commands and connect to an environment.
 
-## Certificate-based authentication
+### 2. Connect to an app with SSH
 
-To connect using certificate-based authentication, install the [Web PaaS CLI](/pages/web/web-paas/development-cli).
-
-Once installed, you may run `webpaas login` or any CLI command that would require authentication.  In either case, a browser window will open and ask you to login with your Web PaaS account credentials.  This web page is already encrypted with TLS over HTTP, making it secure.
-
-The login process will issue a certificate that gets stored in your local SSH configuration.  The certificate is automatically cycled every hour for a new certificate as long as your session is active.  If you are inactive for an extended period your certificate will expire, and the system will ask you to login again the next time you use a command that requires authentication.
-
-## Keypair-based authentication
-
-This process requires two [RSA keys](https://en.wikipedia.org/wiki/RSA_%28cryptosystem%29):
-
-* A **private key** kept secret by the user
-* A **public key** stored within the Web PaaS account
-
-These keys are called the *public-private keypair* and usually look like random lines of characters, like this:
-
-*A private key*:
-
-```text
------BEGIN RSA PRIVATE KEY-----
-MIIEowIBAAKCAQEAtpw0S4DwDVj2q04mhiIMkhvrYU7Z6hRiNbTFsqg3X7x/uYS/
-dcNrSvT82j/jSeYQP3Dsod9GERW+dmOuLaFNeiqOStZi6jRSWo41hCOWOFbpBum3
-ra1n6nUO1wa/7O5wbgzhUOfnim77oOK0UgkqPArBCNXiNFTUJAvRyVmCtvJOyrqz
-...(20 more lines like this)...
-cPjJ/wKBgGd3eZIBK6Ak92u65HYXgY9EcX3vBNP4NsF087uxV4YfrM18KlGf5I87
-QGerp3VKaGe0St3ot57GlwCAQUJAf1mit8qDTi0I8MhBe7q2lstXkBvde7GY1gKx
-Kng4ohG6xHZ/OvC9tq7/THwAvleaxgLZN5GyXfAqNylDdZ0LtSjl
------END RSA PRIVATE KEY-----
-```
-
-*A public key (one very long line)*:
-
-```text
-ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABAQC2nDRLgPANWParTiaGIgySG+thTtnqFGI1tMWyqDdfvH+5hL91w2tK9PzaP+NJ5hA/cOyh30YRFb52Y64toU16Ko5K1mLqNFJajjWEI5Y4VukG6betrWfqdQ7XBr/s7nBuDOFQ5+eKbvug4rRSCSo8CsEI1eI0VNQkC9HJWYK28k7KurMdTN7X/Z/4vknM4/Rm2bnMk2idoORQgomeZS1p3GkG8dQs/c0j/b4H7azxnqdcCaR4ahbytX3d49BN0WwE84C+ItsnkCt1g5tVADPrab+Ywsm/FTnGY3cJKKdOAHt7Ls5lfpyyug2hNAFeiZF0MoCekjDZ2GH2xdFc7AX/ your_email_address@example.com
-```
-
-GitHub has a good [walk-through of creating an SSH keypair](https://help.github.com/articles/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent/) on various operating systems.
-
-A keypair is valid for as long as you have access to the private key on the system from which you are connecting.  If you have a keypair available you will not be prompted to login.
-
-### Find your Public-Private keypair
-
-If you use Linux, you probably already have keys. The private key is usually in a file named `~/.ssh/id_rsa` and the public key in `~/.ssh/id_rsa.pub`.
-
-Searching for a public key file:
-1\. Open up a command prompt.
-
-2\. Run the following commands:
-
+To access an app in a given environment via the CLI, run the following command:
 
 ```bash
-$ cd ~/.ssh
-$ ls -a
-id_rsa
-id_rsa.pub
-known_hosts
-authorized_keys
+webpaas ssh --project {{< variable "PROJECT_ID" >}} --environment {{< variable "ENVIRONMENT_NAME" >}} --app {{< variable "APPLICATION_NAME" >}}
 ```
 
-    If you find a file named `id_rsa.pub`, you can use it with Web PaaS. If you don't find an existing key, see the steps to create a new one in the [next section](#create-a-new-public-private-keypair).
+Replace each of <code>{{< variable "PROJECT_ID" >}}</code>, <code>{{< variable "ENVIRONMENT_NAME" >}}</code>, and <code>{{< variable "APPLICATION_NAME" >}}</code> with the values you want to access.
+To find these values in the Console,
+navigate to the environment you want to access and click **SSH** in the top right-hand corner.
 
-### Create a New Public-Private Keypair
+Alternatively, just run `webpaas ssh` and select the values from each list presented to you.
 
-> [!primary]  
-> If you already have a SSH keypair, you can skip this step.
-> 
-
-Create a public-private keypair:
+Once you've connected, you get a response like this:
 
 ```bash
-$ ssh-keygen -t rsa -C "your_email_address@example.com"
-```
-
-`ssh-keygen` generates the key pair and will ask you where you want to save the file:
-
-```bash
-Generating public/private rsa key pair.
-Enter file in which to save the key (/Users/your_username/.ssh/id_rsa):
-```
-
-The default location is fine in most cases. Now it's time to create a passphrase. A good, strong passphrase is highly recommended, to make your key less useful if it falls into the wrong hands.
-
-```text
-Enter passphrase (empty for no passphrase): [Type a passphrase]
-Enter same passphrase again: [Type passphrase again]
-```
-
-That's it. Keys generated! Here are the results:
-
-```text
-Your identification has been saved in /Users/your_username/.ssh/id_rsa.
-Your public key has been saved in /Users/your_username/.ssh/id_rsa.pub.
-The key fingerprint is:
-55:c5:d7:a9:1f:dc:7a:67:31:70:fd:87:5a:a6:d0:69 your_email_address@example.com
-```
-
-> [!primary]  
-> Make note of the location of your public key, you're going to need that in the next section.
-> 
-
-### Add the SSH key to your WebPaas account
-
-1\.  First off, you'll need to copy your public key to the clipboard.
-
-2\.  Click on the user profile in [webpaas console](https://eu.console.webpaas.ovhcloud.com/) and click on Account.
-
-3\. In the left side-bar, select `SSH keys`.
-
-4\. Click the `Add a public key` button.
-
-5\.  Paste the key that you copied earlier into the 'Key' text box. You can also add a title if you like, otherwise it will be auto-generated.
-
-6\.  Click 'Save'.
-
-
-
-
-That's it! You're all set. Now you'll be able to use Git and command shells with any Web PaaS environment that your user account is authorized to work with.
-
-## SSH to your Web Server
-
-In the management console header, click on the environment tab and select the environment that you want to SSH into. Then click the `SSH` dropdown button towards the top right.
-
-```bash
-$ ssh wk5fqz6qoo123-master@ssh.ovhcloud-fr-1.webpaas.ovh.net
-
 
 
 
@@ -149,99 +69,96 @@ $ ssh wk5fqz6qoo123-master@ssh.ovhcloud-fr-1.webpaas.ovh.net
 
  Welcome to WebPaaS.
 
- This is environment master
+ This is environment main
  of project wk5fqz6qoo123.
 
-web@wk5fqz6qoo123-master--php:~$
+web@wk5fqz6qoo123-main--php:~$
 ```
 
-## Troubleshoot SSH
+Now you can interact with the environment as you want.
+Note that your app's file system is read-only,
+except for any [mounts you've defined](../../create-apps/app-reference.md#mounts). 
 
-While trying to log in via SSH, this can happen:
+## Connect to services
+
+To connect to a service, you need the [service credentials](../../add-services/_index.md#connect-to-a-service).
+Then you can connect either with a [direct tunnel](#use-a-direct-tunnel) or a [tunnel in your app](#use-an-app-tunnel).
+
+### Use a direct tunnel
+
+To open SSH tunnels for all of your services, run the following command:
 
 ```bash
-$ ssh [SSH-URL]
-Permission denied (publickey).
+webpaas tunnel:open
 ```
 
-Don't panic! It's an issue which can happen for the following reasons:
-
-* Your environment is inactive
-* You haven't redeployed (i.e. `git push`) your environment since adding the new public key
-* You didn't upload your public key to your user profile
-* Your SSH private key has not been added into your ssh-agent
-* Your SSH key files have incorrect permissions
-
-### Check your public key
-
-Make sure your public key has been uploaded to your user account.
-
-### Check your ssh-agent
-
-Check that your key is properly added to your SSH agent. This is an authentication agent that manages your private key.
-
-1\.  Check your SSH agent. Run the command `ssh-add -l` in your terminal:
-
+You get output similar to the following:
 
 ```bash
-$ ssh-add -l
-2048 12:b0:13:83:7f:56:18:9b:78:ca:54:90:a7:ff:12:69 /Users/nick/.ssh/id_rsa (RSA)
+SSH tunnel opened to database at: http://127.0.0.1:30000
+
+Logs are written to: ~/.platformsh/tunnels.log
+
+List tunnels with: webpaas tunnels
+View tunnel details with: webpaas tunnel:info
+Close tunnels with: webpaas tunnel:close
+
+Save encoded tunnel details to the PLATFORM_RELATIONSHIPS variable using:
+  export PLATFORM_RELATIONSHIPS="$(platform tunnel:info --encode)"
 ```
 
-2\.  Check that file name on the right (`.ssh/id_rsa` in the example above). Does it match your private key file?
+Use the returned host (in this case `http://127.0.0.1:30000`) for your connection
+and fill in the details with the rest of your [service credentials](../../add-services/_index.md#connect-to-a-service).
 
-3\.  If you don't see your private key file, add your private key:
+The `tunnel:open` command connects all relationships defined in your [app configuration](../../create-apps/_index.md).
 
+To open only one connection when you have multiple relationships defined, run `tunnel:single`.
+By default, this opens a tunnel at `http://127.0.0.1:30000`.
+You can specify the port for the connection using the `--port` flag.
 
-```bash
-$ ssh-add path-to-your-key
-```
+### Use an app tunnel
 
-4\.  Try again.
+Many database applications (such as MySQL Workbench) support establishing their own SSH tunnel.
+You need to use [SSH keys](./ssh-keys.md) for authentication.
+Consult the documentation for your application for how to enter SSH credentials.
 
+#### Get SSH connection details
 
-### Still having trouble?
+To get the host and username for connections, follow these steps:
 
-If you followed all the steps above, you may also notice an error message similar to below while attempting to SSH to webpaas:
+> [!tabs]      
 
-```text
-Hello Your Name, you successfully connected, but you do not have access to service 'xxxxxxxxxxxxxx-master': check permissions.
-Received disconnect from 54.210.49.244: 14: No more auth methods available
-```
+The host is everything after the `@` and the username is what's before it.
+In this case, the host is `ssh.us.platform.sh` and the username is `jyu7waly36ncj-main-7rqtwti--app`.
+The host is the same for the entire project, while the username varies by environment.
 
-This usually means a deployment has not been committed yet. When a new key is added, it only becomes immediately active for use with Git. For use with SSH, it will not be activated until a deployment is made. An easy way to force this is to create and push an empty commit:
+To connect to a service, fill in the details with the rest of your [service credentials](../../add-services/_index.md#connect-to-a-service).
 
-```bash
-$ git commit --allow-empty -m 'force redeploy'
-$ git push origin master
-```
+## Alternative authentication methods
 
-### Generate SSH debug information
+There are three basic ways to authenticate with {{< vendor/name >}}:
 
-If your private key and public key both look OK but you don't have any luck logging in, print debugging information. These lines often give clues about what is going wrong.
+* [Through the CLI](#1-authenticate-with-the-cli)
+  * The fastest and easiest method.
+  * Supports multifactor authentication.
+  * Automatically generates new certificates to keep your connection safe.
+  * Necessary when using the CLI and when your organization has multifactor authentication set up.
+* [Using SSH keys](./ssh-keys.md)
+  * Requires more setup on your part.
+  * Represents only a single authentication method.
+  * Requires you to regularly change the keys to maintain security.
+  * Useful for checking out code as part of an automated process.
+* [Using API tokens](../../administration/cli/api-tokens.md)
+  * Good for letting automation tools use the CLI.
+  * Requires you to regularly change the tokens to maintain security.
 
-1\.  Run the SSH command with the `-v` option, like this:
+## Multifactor authentication (MFA) over SSH
 
+{{< premium-features/tiered "Enterprise and Elite" >}}
 
-```bash
-$ ssh -v [SSH-URL]
-OpenSSH_6.7.8, OpenSSL 1.2.3 1 Sep 2014
-debug1: Connecting to ssh.ovhcloud-fr-1.webpaas.ovh.net [54.32.10.98] port 22.
-debug1: Connection established.
-debug1: identity file /Users/nick/.ssh/id_rsa type 1
-...(30 more lines of this light reading)...
-debug1: Offering RSA public key: /Users/nick/.ssh/id_rsa
-debug1: Authentications that can continue: publickey
-debug1: No more authentication methods to try.
-Permission denied (publickey).
-```
+To enhance security, Enterprise and Elite customers can enforce MFA over SSH within their organization.
+When this is enabled, every project contributor within your organization must enable MFA in their account
+to run Git commands or to SSH in an environment.
+To enable this feature, open a support ticket and request for MFA over SSH to be enforced within your organization.
 
-    or
-
-```bash
-$ GIT_SSH_COMMAND="ssh -v" git clone [REPO-URL]
-```
-
-You can use this information to make one last check of the private key file.
-
-If you're still stuck, don't hesitate to submit a support ticket, we'll help you solve your problem.
+If you have trouble accessing an environment with MFA enabled, see how to [add a second factor](./troubleshoot-ssh.md#add-a-second-authentication-factor).

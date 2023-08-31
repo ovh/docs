@@ -1,124 +1,89 @@
 ---
 title: Custom Redis versions
-updated: 2022-06-02
+slug: redis
+section: Php
 ---
 
-**Last updated 2nd June 2022**
+**Last updated 31st August 2023**
 
 
 
 ## Objective  
 
-Redis is a popular structured key-value service, supported by Web PaaS.  It's frequently used for caching.
+[Redis](../../add-services/redis.md) is a popular structured key-value service, supported by {{< vendor/name >}}.
+It's frequently used for caching.
 
-The [PhpRedis](https://github.com/phpredis/phpredis) extension is available on Web PaaS's PHP container images.  However, the extension has been known to break its API between versions when removing deprecated functionality.  The version available on each application image is the latest available at the time that PHP version was built, which if your application is very sensitive to PhpRedis versions may not be ideal.
+## Install PhpRedis
 
-If the version of the PhpRedis extension available for your PHP version is not compatible with your application and upgrading your application is not feasible, you can use the script below as an alternative to download and compile a precise version of the extension on the fly.
+The [PhpRedis](https://github.com/phpredis/phpredis) extension is available on {{< vendor/name >}}'s PHP container images.
+The extension has been known to break its API between versions when removing deprecated functionality.
+The version available on each application image is the latest available at the time that PHP version was built,
+which if your app is sensitive to PhpRedis versions may not be ideal.
 
-Do *not* use this approach unless you really need to.  Using the provided PhpRedis extension is preferred in the vast majority of cases.
+It may happen that the version of the PhpRedis extension available for your PHP version
+isn't compatible with your app and upgrading your app isn't feasible.
+If so, use the following script as an alternative to download and compile a precise version of the extension.
 
-## Using the Redis builder script
+Do *not* use this approach unless you really need to.
+Using the provided PhpRedis extension is preferred in the majority of cases.
 
-1\. Copy the following script into a file named `install-redis.sh` in your app root
+To ease the installation of a customer version of PhpRedis, use a [PhpRedis install script](https://github.com/platformsh/snippets/blob/main/src/install-phpredis.sh).
+Invoke this script from your build hook, specifying a version.
+Any tagged version of the library is acceptable:
 
-
-```bash
-run() {
-    # Run the compilation process.
-    cd $PLATFORM_CACHE_DIR || exit 1;
-
-    if [ ! -f "${PLATFORM_CACHE_DIR}/phpredis/modules/redis.so" ]; then
-        ensure_source
-        checkout_version "$1"
-        compile_source
-    fi
-
-    copy_lib
-    enable_lib
-}
-
-enable_lib() {
-    # Tell PHP to enable the extension.
-    echo "Enabling PhpRedis extension."
-    echo -e "\nextension=${PLATFORM_APP_DIR}/redis.so" >> $PLATFORM_APP_DIR/php.ini
-}
-
-copy_lib() {
-    # Copy the compiled library to the application directory.
-    echo "Installing PhpRedis extension."
-    cp $PLATFORM_CACHE_DIR/phpredis/modules/redis.so $PLATFORM_APP_DIR
-}
-
-checkout_version () {
-    # Check out the specific Git tag that we want to build.
-    git checkout "$1"
-}
-
-ensure_source() {
-    # Ensure that the extension source code is available and up to date.
-    if [ -d "phpredis" ]; then
-        cd phpredis || exit 1;
-        git fetch --all --prune
-    else
-        git clone https://github.com/phpredis/phpredis.git
-        cd phpredis || exit 1;
-    fi
-}
-
-compile_source() {
-    # Compile the extension.
-    phpize
-    ./configure
-    make
-}
-
-ensure_environment() {
-    # If not running in a Web PaaS build environment, do nothing.
-    if [ -z "${PLATFORM_CACHE_DIR}" ]; then
-        echo "Not running in a Web PaaS build environment.  Aborting Redis installation."
-        exit 0;
-    fi
-}
-
-ensure_arguments() {
-    # If no version was specified, don't try to guess.
-    if [ -z $1 ]; then
-        echo "No version of the PhpRedis extension specified.  You must specify a tagged version on the command line."
-        exit 1;
-    fi
-}
-
-ensure_environment
-ensure_arguments "$1"
-run "$1"
-```
-
-2\. Invoke that script from your build hook, specifying a version.  Any tagged version of the library is acceptable:
-
-
-```yaml
+```yaml {configFile="app"}
 hooks:
     build: |
         set -e
-        bash install-redis.sh 5.1.1
+        # Install PhpRedis v5.3.7:
+        curl -fsS https://raw.githubusercontent.com/platformsh/snippets/main/src/install-phpredis.sh | { bash /dev/fd/3 5.3.7 ; } 3<&0
 ```
 
-3\. If you ever wish to change the version of PhpRedis you are using, update the build hook and clear the build cache: `webpaas project:clear-build-cache`.  The new version will *not* be used until you clear the build cache.
+## Install Relay
+
+Relay is a [Redis](../../add-services/redis.md) client
+similar to [PhpRedis](https://github.com/phpredis/phpredis) and
+[Predis](https://github.com/predis/predis).
+It's intended to be a drop-in replacement for those libraries.
+
+That PHP extension is also a shared in-memory cache like APCu. All retrieved keys are held in the PHP master process’ memory, which is shared across all FPM workers.
+
+That means if the FPM Worker #1 fetches the `users:count` key from Redis,
+all other FPM workers instantaneously retrieve that key from Relay without having to communicate with Redis.
+
+To ease the installation of a customer version of Relay, use the [Relay install script](https://github.com/platformsh/snippets/blob/main/src/install-relay.sh).
+Invoke this script from your build hook, specifying a version.
+Any tagged version of the library is acceptable:
+
+```yaml {configFile="app"}
+hooks:
+    build: |
+        set -e
+        # Install Relay v0.6.0:
+        curl -fsS https://raw.githubusercontent.com/platformsh/snippets/main/src/install-relay.sh | { bash /dev/fd/3 v0.6.0 ; } 3<&0
+```
+
+## Change extension or version
+
+To change the Redis extension or the version you are using, update the build hook and clear the build cache: `webpaas project:clear-build-cache`.
+
+The new version is *not* be used until you clear the build cache.
+
+There's no need to declare the extension in the `runtime` block.
+That's only for pre-built extensions.
+
+## What these scripts do
+
+1\. Download the Relay/PhpRedis source code.
+
+2\. Check out the version specified in the build hook.
+
+3\. Compile the extension.
+
+4\. Copy the resulting `relay.so`/`redis.so` file to [your app root](../../create-apps/app-reference.md#root-directory).
+
+5\. Add a line to the `php.ini` file in your app root to enable the extension, creating the file if necessary.
 
 
-There is no need to declare the extension in the `runtime` block.  That is only for pre-built extensions.
-
-## What the script does
-
-1\. Downloads the PhpRedis source code.
-
-2\. Checks out the version specified in the build hook.
-
-3\. Compiles the extension.
-
-4\. Copies the resulting `redis.so` file to your app root.
-
-5\. Adds a line to the `php.ini` file in your app root to enable the extension, creating the file if necessary.
-
-
-If the script does not find a `$PLATFORM_CACHE_DIR` directory defined, it exits silently.  That means if you run the build hook locally it will have no effect.
+If the script doesn't find a `$PLATFORM_CACHE_DIR` directory defined, it exits silently.
+So if you run the build hook locally, it has no effect.

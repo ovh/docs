@@ -1,87 +1,87 @@
 ---
 title: Exporting data
-updated: 2021-05-11
+slug: tutorials-exporting
+section: Tutorials
+order: 9
 ---
 
-**Last updated 11th May 2021**
+**Last updated 31st August 2023**
+
 
 
 ## Objective  
 
-Web PaaS aims to be a great host, but we never want to lock you in to our service. Your code and your data belong to you, and you should always be able to download your site's data for local development, backup, or to "take your data elsewhere".
+As a {{< vendor/name >}} user, your code and data belong to you.
+At any time, you can download your site's data for local development, to back up your data, or to change provider.
 
-## Downloading code
+## Before you begin
 
-Your application's code is maintained in Git.  Because Git is a distributed system it is trivial to download your entire code history with a simple `git clone` or `webpaas get` command.
+You need:
 
-## Downloading files
+- [Git](https://git-scm.com/downloads)
 
-Your application runs on a read-only file system, so it cannot be edited.  That means there's nothing to download from most of it that isn't already in your Git repository.
+- A {{< vendor/name >}} account
 
-The only files to download are from any writable file mounts you may have defined in your `.platform.app.yaml` file.  The easiest way to download those is using the `rsync` tool.  For instance, suppose you have a mounts section that defines one web-accessible directory and one non-web-accessible directory:
+- Code in your project
 
-```yaml
-mounts:
-    'web/uploads':
-        source: local
-        source_path: uploads
-    'private':
-        source: local
-        source_path: private
-```
-### Using the CLI
-
-The CLI provides a useful `mount` command for accessing mount data.
-
-```bash
-webpaas mount:list
-```
-
-Downloading a mount is then as simple as running the following:
-
-```bash
-webpaas mount:download
-```
-
-### Using rsync
-To use `rsync` to download each directory, we can use the following commands.  The `webpaas ssh --pipe` command will return the SSH URL for the current environment as an inline string that `rsync` can recognize. To use a non-default environment, use the `-e` switch after `--pipe`.  Note that the trailing slash on the remote path means `rsync` will copy just the files inside the specified directory, not the directory itself.
-
-```bash
-rsync -az `webpaas ssh --pipe`:/app/private/ ./private/
-rsync -az `webpaas ssh --pipe`:/app/web/uploads ./uploads/
-```
+- Optional: the [{{< vendor/name >}} CLI](../administration/cli/_index.md)
 
 
-> [!primary]  
-> If you're running `rsync` on MacOS, you should add `--iconv=utf-8,utf-8-mac` to your `rsync` call.
-> 
+## 1. Download your app's code
 
-See the [`rsync` documentation](https://download.samba.org/pub/rsync/rsync.html) for more details on how to adjust the download process.
+Your app's code is maintained through the Git version control system.
 
-## Download data from services
+To download your entire app's code history:
 
-The mechanism for downloading from each service (such as your database) varies.  For services designed to hold non-persistent information (such as Redis or Solr) it's generally not necessary to download data as it can be rebuilt from the primary data store.
+> [!tabs]      
 
-To download data from persistent services ([MySQL](/pages/web/web-paas/configuration-services/mysql), [PostgreSQL](/pages/web/web-paas/configuration-services/postgresql),   or [InfluxDB](/pages/web/web-paas/configuration-services/influxdb)), see each service's page for instructions.
+## 2. Download your files
 
-## Get the environment variables
+Some files might not be stored in Git,
+such as data your app writes [in mounts](../create-apps/app-reference.md#mounts).
 
-If your project uses some environment variable (tokens, ...) it can be helpful to backup them if you didn't store them separately.
+You can download your files [using the CLI](../development/file-transfer.md#transfer-files-using-the-cli) or [using SSH](../development/file-transfer.md#transfer-files-using-an-ssh-client).
 
-As stated in the management console, several possibilities exist for the environment variables.
+## 3. Download data from services
 
-* Variables beginning with `env:` will be exposed as Unix environment variables
-* Variables beginning with `php:` will be interpreted as `php.ini` directives.
-* All other variables will be part of the environment `PLATFORM_VARIABLES` variable
+The mechanism for downloading from each service (such as your database) varies.
+
+For services designed to hold non-persistent data, such as [Redis](../add-services/redis.md) or [Solr](../add-services/solr.md),
+it's generally not necessary to download data as it can be rebuilt from the primary data store.
+
+For services designed to hold persistent data, see each service's page for instructions:
+
+- [MySQL](../add-services/mysql/_index.md#exporting-data)
+
+- [PostgreSQL](../add-services/postgresql.md#exporting-data)
+
+- [MongoDB](../add-services/mongodb.md#exporting-data)
+
+- [InfluxDB](../add-services/influxdb.md#export-data)
 
 
+## 4. Get environment variables
 
-You can access the content of the environment variable through the management console unless the `--sensitive true` flag was set.
+Environment variables can contain critical information such as tokens or additional configuration options for your app.
 
-In that case, you can run:
-`webpaas ssh -p <project id> -e <environment>`
-To access all the environment variables's values
+Environment variables can have different prefixes:
 
-and `webpaas ssh -p <project id> -e <environment> "echo \$PLATFORM_VARIABLES | base64 -d | jq"` to access the `PLATFORM_VARIABLES`'s values.
+- Variables beginning with `env:` are exposed [as Unix environment variables](../development/variables/_index.md#top-level-environment-variables).
 
- 
+- Variables beginning with `php:` are interpreted [as `php.ini` directives](../development/variables/_index.md#php-specific-variables).
+
+
+All other variables are [part of `$PLATFORM_VARIABLES`](../development/variables/use-variables.md#use-provided-variables).
+
+To back up your environment variables:
+
+> [!tabs]      
+
+## What's next
+
+- Migrate data from elsewhere [into {{< vendor/name >}}](./migrating.md).
+
+- Migrate to [another region](../projects/region-migration.md).
+
+- To use data from an environment locally, export your data and set up your [local development environment](../development/local/_index.md).
+

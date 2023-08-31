@@ -1,77 +1,110 @@
 ---
 title: Set up your local development environment
-updated: 2021-05-11
+slug: development-local
+section: Development
+order: 5
 ---
 
-**Last updated 11th May 2021**
+**Last updated 31st August 2023**
+
 
 
 ## Objective  
 
-While Web PaaS is great as a tool for hosting an application during both development and production, it's naturally not the ideal place to edit code.  You can't, in fact, as the file system is read-only (as it should be). The proper place to edit your code is on your computer.
+To make changes to your app's code and test them without affecting your production environment, 
+set up a local development environment on your computer.
+
+For the most effective testing, you want your local environment to match your {{< vendor/name >}} environments.
+The best way to do this is to use a cross-platform tool based on Docker.
+This ensures the changes you make locally appear as they would on your {{< vendor/name >}} environments.
+It also means you don't have to worry about configuring your machine with
+the various dependencies, certificates, and connections your app needs to run.
+
+The **recommended tool** for local development with {{< vendor/name >}} is **[DDEV](./ddev.md)**.
+The integration with DDEV is maintained by {{< vendor/name >}} to ensure it works smoothly.
+Other Docker-based tools are also supported, such as [Docksal](./docksal.md) and [Lando](./lando.md).
+
+If you choose to use a Docker-based tool, follow the steps on its page.
+
+Otherwise, follow these steps to run your app on your computer.
+
+## Before you begin
+
+You need to have:
+
+- A {{< vendor/name >}} account:
+
+  new users can sign up for a [free trial account](https://auth.api.platform.sh/register)
+- A working project,
+
+  either started from a [template](../../development/templates.md) 
+  or with your own code pushed to {{< vendor/name >}}
+- [Git](https://git-scm.com/downloads)
+
+- The [{{< vendor/name >}} CLI](../../administration/cli/_index.md)
 
 
-You must have an [SSH key](/pages/web/web-paas/development-tools#ssh) already configured on your account, and have both [Git](/pages/web/web-paas/development-tools#git) and the [Web PaaS CLI](/pages/web/web-paas/development-cli) installed before continuing.
+## 1. Get your code
 
-## Download the code
+If you don't have your app code on your computer, download a copy.
 
-If you don't already have a local copy of your project's code, run `webpaas get` to download one. You can also run `webpaas projects` to list all of the projects in your account.
+1\.  Get your project ID by running `webpaas projects`.
+
+
+2\.  Get the code by running the following command:
+
 
 ```bash
-~/htdocs $ webpaas projects
-Your projects are:
-+---------------+----------------------------+------------------------------------------------+
-| ID            | Name                       | URL                                            |
-+---------------+----------------------------+------------------------------------------------+
-| [project-id]  | New WebPaas Project       | https://eu.webpaas.ovhcloud.com/#/projects/[project-id] |
-+---------------+----------------------------+------------------------------------------------+
-
-Get a project by running webpaas get [id].
-List a project's environments by running webpaas environments.
+platform get {{< variable "PROJECT_ID" >}} {{< variable "TARGET_DIRECTORY_NAME" >}}
 ```
 
-Now you can download the code using `webpaas get [project-id] [folder-name]`:
+    Or pull from your [integrated Git repository](../../integrations/source/_index.md).
+
+You can now access your code from the project directory on your computer.
+The CLI created a `{{< vendor/configfile "apps" >}}/local` directory that's excluded from Git. 
+It contains builds and local metadata about your project.
+
+You can now make changes to your project without pushing to {{< vendor/name >}} each time to test them. 
+Instead, you can locally build your application using the {{< vendor/name >}} CLI.
+
+Note that if your app contains services, you need to open an SSH tunnel to connect to them.
+For more information, see how to [connect services](../../add-services#2-connect-the-service).
+
+## 2. Connect to services
+
+If your app requires services to run, you have two options for developing locally:
+
+- [Tethered local development](./tethered.md) involves running your app on a local web server
+
+  but keeping all other services on {{< vendor/name >}} and connecting to them over an SSH tunnel.
+- [Untethered local development](./untethered.md) involves running your entire site locally,
+
+  including all services.
+
+Choose the option that works for you and get your services running.
+
+## 3. Build your site locally
+
+If you want your local development environment to be enclosed 
+so your main system remains unaffected by the build and its dependencies, 
+you can use a local virtual machine.
+
+To build your site locally:
+
+1\.  Install any dependencies or tools needed for the build process.
+
+
+2\.  Run the following command:
+
 
 ```bash
-~/htdocs $ webpaas get [project-id] my-project
-Cloning into 'my-project/repository'...
-remote: counting objects: 11, done.
-Receiving objects: 100% (11/11), 1.36 KiB | 0 bytes/s, done.
-Checking connectivity... done.
+platform build
 ```
 
-You should now have a repository folder, based on what you used for *[folder-name]* in the `webpaas get` command above.
+    Your app is built in the `{{< vendor/configfile "apps" >}}/local/builds` directory.
+    Unless you specify otherwise with the `--destination` flag,
+    a symbolic link from your build is created as the `_www` directory at your project root.
 
-You will also notice a new directory in your project, `.platform/local`, which is excluded from Git.  This directory contains builds and any local metadata about your project needed by the CLI.
+3\.  To check that the build was successful, move to the `_www` directory
 
-## Building the site locally
-
-Run the `webpaas build` command to run through the same build process as would be run on Web PaaS.  That will produce a `_www` directory in your project root that is a symlink to the currently active build in the `.platform/local/builds` folder. It should be used as the document root for your local web server.
-
-```bash
-~/htdocs/my-project $ webpaas build
-Building application myapp (runtime type: php)
-  Beginning to build ~/htdocs/my-project/project.make.
-  drupal-7.38 downloaded.
-  drupal patched with install-redirect-on-empty-database-728702-36.patch.
-  Generated PATCHES.txt file for drupal
-  platform-7.x-1.3 downloaded.
-Running post-build hooks
-Symlinking files from the 'shared' directory to sites/default
-
-Build complete for application myapp
-Web root: ~/htdocs/my-project/_www
-~/htdocs/my-project $
-```
-
-Because the `webpaas build` command will run locally, any runtime or tools used in your build process need to be available in your local environment, or the build will fail.  It may also result in side effects, such as the installation on your local computer of packages referenced in your `dependencies` block.
-
-If that is undesireable, a local virtual machine will let you create an enclosed local development environment that won't affect your main system.
-
-## Running the code
-
-Web PaaS supports whatever local development environment you wish to use.  There is no dependency on any particular tool so if you already have a local development workflow you're comfortable with you can keep using it without changes.  That's the "[untethered](/pages/web/web-paas/development-local/untethered)" option.
-
-For quick changes, you can also run your code locally but use the services hosted on Web PaaS.  That is, your site is "[tethered](/pages/web/web-paas/development-local/tethered)" to Web PaaS.  While this approach requires installing less on your system it can be quite slow as all communication with the database or cache server will need to travel from your computer to Web PaaS's servers.
-
-
+    and run a web server.

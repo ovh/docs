@@ -4,7 +4,7 @@ slug: server
 section: Python
 ---
 
-**Last updated 29th August 2023**
+**Last updated 31st August 2023**
 
 
 

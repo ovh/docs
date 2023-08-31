@@ -1,81 +1,92 @@
 ---
 title: Structure
-updated: 2022-07-06
+slug: overview-structure
+section: Overview
+order: 2
 ---
 
-**Last updated 6th July 2022**
+**Last updated 31st August 2023**
 
 
+> [!primary]  
+> 
+> This page describes how things work on Grid projects.
+> [{{% names/dedicated-gen-3 %}}](../dedicated-gen-3/_index.md) projects are similar,
+> but they run on dedicated hosts and each container is replicated three times.
+> 
+> For {{% names/dedicated-gen-2 %}} projects, read about how [{{% names/dedicated-gen-2 %}} projects are structured](../dedicated-gen-2/overview/_index.md).
+> 
+> 
 
-## Objective  
+Each environment you deploy on {{< vendor/name >}} is built as a set of containers.
+Each container is an isolated instance with specific resources.
 
-Every application you deploy on Web PaaS is built as a **virtual cluster**,
-containing a set of containers.
-The default branch of your Git repository is always deployed as the production cluster.
-Any other branch can be deployed as a development cluster.
+Each environment has 2 to 4 types of containers:
 
-By default, you can have up to three live development clusters at once,
-but you can buy more on a per-project basis.
+* One [*router*](#router) (configured in a `{{< vendor/configfile "routes" >}}` file)
+* One or more [*app* containers](#apps) (configured in `{{< vendor/configfile "app" >}}` files)
+* Zero or more [*service* containers](#services) (configured in a `{{< vendor/configfile "services" >}}` file)
+* Zero or more [*worker* containers](#workers) (configured in the files for apps)
 
-There are three types of containers within your cluster:
+If you have two app containers, two services (a database and a search engine), and a worker,
+requests to your environment might look something like this:
 
-- one *router*
-- one or more *application* containers
-- zero or more *service* containers
+![A user request goes to the router, which sends it to either a Node.js app or a Python app. Each app communicates separately with the database and search services and sends responses to the user. The Node.js app triggers actions in a worker, which communicates separately with the database.](images/structure-diagram.png)
 
-All of those containers are managed by three special files in your Git repository:
-
-- `.platform/routes.yaml`
-- `.platform/services.yaml`
-- `.platform.app.yaml`
-
-In most cases, that means your repository looks like this:
+If you have only one app container, your repository might look like this:
 
 ```text
-yourproject/
-  .git/
-  .platform/
-    services.yaml
-    routes.yaml
-  .platform.app.yaml
-  <your application files>
+project
+├── .git
+├── {{< vendor/configdir >}}
+│   ├── {{< vendor/configfile "routes" "strip" >}}
+│   └── {{< vendor/configfile "services" "strip" >}}
+├── {{< vendor/configfile "app" >}}
+└── <YOUR_APP_FILES>
 ```
 
 ## Router
 
-There is always exactly one router per cluster.
+Each environment always has exactly one router.
 
-The router of a cluster is a single nginx process.
-It's configured by the `routes.yaml` file.
-It maps incoming requests to the appropriate application container
-and provides basic caching of responses, if so configured.
-It has no persistent storage.
+This router maps incoming requests to the appropriate app container
+and provides basic caching of responses, unless configured otherwise.
 
-## Service
+The router is configured in a `{{< vendor/configfile "routes" >}}` file.
+If you don't include configuration, a single [default route is deployed](../define-routes/_index.md#default-route-definition).
 
-Service containers are configured by the `services.yaml` file.
+Read more about how to [define routes](../define-routes/_index.md).
 
-There may be zero or more service containers in a cluster,
-depending on the `services.yaml` file.
-For zero services, don't include the `services.yaml` file in your repository.
+## Apps
 
-The code for a service is provided by Web PaaS in a pre-built container image,
-along with a default configuration.
-Depending on the service,
-it may also include user-provided configuration in the `services.yaml` file.
-Examples of services include MySQL/MariaDB, Redis, and RabbitMQ.
+You always need at least one app container, but you can have more.
 
-## Application
+App containers run the code you provide via your Git repository.
+They handle requests from the outside world and can communicate with other containers within the environment.
+Each app container is built from a specific language image with a given version for the language.
 
-There always must be one application container in a cluster,
-but there may be more.
+To configure your apps, you usually create one `{{< vendor/configfile "app" >}}` file for each app container.
+A basic app generally has only one such file placed in the repository root.
 
-Each application container corresponds to a `.platform.app.yaml` file in the repository.
-If there are 3 `.platform.app.yaml` files, there are three application containers.
-Application containers hold the code you provide via your Git repository.
-Application containers are always built off of one of the Web PaaS-provided language-specific images,
-such as `PHP 7.4`, `Node.js 14`, and `Python 3.7`.
-It 's also possible to have multiple application containers running different languages or versions.
+Read more about how to [configure apps](../create-apps/_index.md).
 
-For typical applications, there is only one `.platform.app.yaml` file,
-which is generally placed at the repository root.
+## Services
+
+You don't need any service containers, but you can add them as you like.
+
+Service containers run predefined code for specific purposes, such as a database or search service.
+You don't need to add their code yourself, just set up how your apps communicate with them.
+
+Service containers are configured by the `{{< vendor/configfile "services" >}}` file.
+
+Read more about how to [add services](../add-services/_index.md).
+
+## Workers
+
+You don't need any worker containers, but you can add them as you like.
+
+Worker containers are copies of an app containers
+that have no access to the outside world and can have a different start command.
+They're useful for continually running background processes.
+
+Read more about how to [work with workers](../create-apps/workers.md).
