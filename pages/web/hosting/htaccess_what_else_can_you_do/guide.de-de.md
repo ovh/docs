@@ -14,7 +14,7 @@ updated: 2023-05-23
 
 Diese Anleitung zeigt anhand von Beispielen einige bedeutende Funktionen der ".htaccess" Datei für Ihr Webhosting.
 
-Die Datei ".htaccess" ist eine Apache-Konfigurationsdatei (HTTP), die vom Webserver Ihres Webhostings ausgeführt wird. Es erlaubt die Festlegung spezifischer Regeln für ein Verzeichnis und alle seine Unterverzeichnisse. Mehrere ".htaccess" Dateien können im [FTP Bereich](/pages/web/hosting/ftp_connection/) Ihres Webhostings erstellt werden. 
+Die Datei ".htaccess" ist eine Apache-Konfigurationsdatei (HTTP), die vom Webserver Ihres Webhostings ausgeführt wird. Es erlaubt die Festlegung spezifischer Regeln für ein Verzeichnis und alle seine Unterverzeichnisse. Mehrere ".htaccess" Dateien können im [FTP Bereich](/pages/web/hosting/ftp_connection) Ihres Webhostings erstellt werden. 
 
 Wenn sie nicht bereits in Ihrem FTP-Bereich existiert, können Sie einfach eine Datei namens "**.htaccess**" in dem Verzeichnis erstellen, für das Sie eine oder mehrere der in diesem Tutorial beschriebenen Regeln anwenden möchten.
 
@@ -44,13 +44,13 @@ Um die Datei ".htaccess" korrekt zu verwenden müssen Sie folgende Regeln kennen
 
 Diese Funktion ist sehr nützlich und erhöht die Sicherheit für Ihre Website. Sie verringert das Risiko, dass Ihre Website gehackt wird.
 
-Mehr Informationen finden Sie in unserer Anleitung ["Wie kann ich den Zugang zu meiner Website für bestimmte IP-Adressen über eine .htaccess-Datei sperren?"](/pages/web/hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website/).
+Mehr Informationen finden Sie in unserer Anleitung ["Wie kann ich den Zugang zu meiner Website für bestimmte IP-Adressen über eine .htaccess-Datei sperren?"](/pages/web/hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website).
 
 ### Ein verschlüsseltes Zugangspasswort festlegen, um auf ein Verzeichnis oder eine Website zuzugreifen
 
 Über die Datei ".htaccess" können Sie einen geschützten Zugang (mit verschlüsselten Passwörtern) zu den Dateien auf Ihrem Hosting einrichten.
 
-Weitere Informationen finden Sie in unserer Anleitung ["Das Verwaltungsinterface Ihrer Website durch eine .htaccess-Datei schützen"](/pages/web/hosting/htaccess_protect_directory_by_password/)).
+Weitere Informationen finden Sie in unserer Anleitung ["Das Verwaltungsinterface Ihrer Website durch eine .htaccess-Datei schützen"](/pages/web/hosting/htaccess_protect_directory_by_password).
 
 ### Eine andere Indexdatei festlegen
 
@@ -84,7 +84,7 @@ Das **mod_rewrite** Moduls des Apache Webservers auf Ihrem Webhosting erlaubt di
 - Anfragen zu einem bestimmten Ordner, ohne den betreffenden Ordner anzuzeigen.
 - Webseitenaufrufe zu HTTPS, wenn eine URL über HTTP abgefragt wurde.
 
-Weitere Informationen finden Sie in unserer Anleitung ["Die URL einer Website mit mod_rewrite über die .htaccess Datei umschreiben"](/pages/web/hosting/htaccess_url_rewriting_using_mod_rewrite/).
+Weitere Informationen finden Sie in unserer Anleitung ["Die URL einer Website mit mod_rewrite über die .htaccess Datei umschreiben"](/pages/web/hosting/htaccess_url_rewriting_using_mod_rewrite).
 
 #### Fehlermeldungen weiterleiten
 
@@ -137,13 +137,13 @@ Diese Zeile leitet Besucher auf Ihr Skript *error.cgi* um, sobald ein Fehler **4
 
 ## Weiterführende Informationen <a name="go-further"></a>
 
-[Mit dem Speicherplatz eines Webhostings verbinden](/pages/web/hosting/ftp_connection/)
+[Mit dem Speicherplatz eines Webhostings verbinden](/pages/web/hosting/ftp_connection)
 
-[Tutorial - Wie kann ich den Zugang zu meiner Website für bestimmte IP-Adressen über eine .htaccess Datei sperren?](/pages/web/hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website/)
+[Tutorial - Wie kann ich den Zugang zu meiner Website für bestimmte IP-Adressen über eine .htaccess Datei sperren?](/pages/web/hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website)
 
-[Den Adminbereich Ihrer Website mit einer .htaccess Datei schützen](/pages/web/hosting/htaccess_protect_directory_by_password/)
+[Den Adminbereich Ihrer Website mit einer .htaccess Datei schützen](/pages/web/hosting/htaccess_protect_directory_by_password)
 
-[Tutorial - Die URL einer Website mit mod_rewrite über die .htaccess Datei umschreiben](/pages/web/hosting/htaccess_url_rewriting_using_mod_rewrite/)
+[Tutorial - Die URL einer Website mit mod_rewrite über die .htaccess Datei umschreiben](/pages/web/hosting/htaccess_url_rewriting_using_mod_rewrite)
 
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
 

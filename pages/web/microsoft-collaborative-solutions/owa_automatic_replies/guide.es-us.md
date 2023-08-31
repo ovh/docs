@@ -58,7 +58,7 @@ Puede escribir un mensaje alternativo para los remitentes externos en el segundo
 
 [Usar Outlook en la web (OWA) con una cuenta de Exchange](/pages/web/emails/email_owa)
 
-[Delegar permisos en una cuenta de Exchange](/pages/web/microsoft-collaborative-solutions/feature_delegation/)
+[Delegar permisos en una cuenta de Exchange](/pages/web/microsoft-collaborative-solutions/feature_delegation)
 
 [Compartir calendarios en OWA](/pages/web/microsoft-collaborative-solutions/owa_calendar_sharing)
 

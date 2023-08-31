@@ -128,7 +128,7 @@ Here are some guides to help you with the first steps:
 |Documentation|Details|
 |---|---|
 |[Create your first instance](/pages/platform/public-cloud/public-cloud-first-steps)|First practical guide to starting a cloud server from the OVHcloud Control Panel.|
-|[Using an SSH key](/pages/platform/public-cloud/public-cloud-first-steps#step-2-storing-public-keys-in-the-ovhcloud-control-panel_1/)| To log in to a Linux instance, you will need to log in via an SSH connection. This guide details the procedure.|
+|[Using an SSH key](/pages/platform/public-cloud/public-cloud-first-steps#step-2-storing-public-keys-in-the-ovhcloud-control-panel_1)| To log in to a Linux instance, you will need to log in via an SSH connection. This guide details the procedure.|
 |[Private Network Configuration](/pages/platform/network-services/getting-started-07-creating-vrack)|At OVHcloud, private networks are powered by vRack technology. This guide will help you get started.|
 |[Attach an additional disk to an instance](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance)|This guide will help you add additional storage to your first instance.|
 |[Accessing the Horizon interface](/pages/platform/public-cloud/introducing_horizon)|The Horizon interface of OpenStack allows some advanced actions, here is how to connect to it.|

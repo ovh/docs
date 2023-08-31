@@ -15,7 +15,7 @@ Outre l'espace client OVHcloud, vous pouvez également gérer vos projets Public
 ## Prérequis
 
 - Avoir créé une instance Public Cloud depuis votre [espace client OVHcloud](/pages/platform/public-cloud/public-cloud-first-steps) ou à travers l'[interface Horizon](/pages/platform/public-cloud/create_instance_in_horizon).
-- [Avoir créé une clé SSH](/pages/platform/public-cloud/public-cloud-first-steps#etape-1-creer-des-cles-ssh/).
+- [Avoir créé une clé SSH](/pages/platform/public-cloud/public-cloud-first-steps#etape-1-creer-des-cles-ssh).
 
 ## En pratique
 

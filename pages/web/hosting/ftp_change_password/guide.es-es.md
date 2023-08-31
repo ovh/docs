@@ -16,7 +16,7 @@ Los planes de hosting de OVHcloud permiten acceder a un espacio de almacenamient
 
 Para acceder a este espacio de almacenamiento, puede utilizar un **usuario FTP** y su contraseña asociada.
 
-Este acceso permite, entre otras cosas, [publicar el sitio web](/pages/web/hosting/hosting_how_to_get_my_website_online/).
+Este acceso permite, entre otras cosas, [publicar el sitio web](/pages/web/hosting/hosting_how_to_get_my_website_online).
 
 **Descubra cómo cambiar la contraseña de un usuario FTP en un alojamiento de OVHcloud.**
 
@@ -44,7 +44,7 @@ Se mostrará una tabla con los *usuarios FTP* creados en su alojamiento web. Est
 
 > [!primary]
 >
-> Para más información sobre las buenas prácticas de gestión de contraseñas, consulte esta [guía](/pages/account/customer/manage-ovh-password/).
+> Para más información sobre las buenas prácticas de gestión de contraseñas, consulte esta [guía](/pages/account/customer/manage-ovh-password).
 >
 
 La nueva contraseña debe respetar la **política de las siguientes contraseñas** :
@@ -70,15 +70,15 @@ Por último, abra la pestaña `Tareas en curso`{.action} y vuelva a actualizar l
 
 ### Etapa 3: Acceder al espacio de almacenamiento
 
-Para acceder a su espacio de almacenamiento FTP, consulte nuestra guía ["Conectarse al espacio de almacenamiento de un alojamiento web"](/pages/web/hosting/ftp_connection/).
+Para acceder a su espacio de almacenamiento FTP, consulte nuestra guía ["Conectarse al espacio de almacenamiento de un alojamiento web"](/pages/web/hosting/ftp_connection).
 
 ## Más información <a name="go-further"></a>
 
-[Establecer y gestionar la contraseña de su cuenta](/pages/account/customer/manage-ovh-password/)
+[Establecer y gestionar la contraseña de su cuenta](/pages/account/customer/manage-ovh-password)
 
-[Conectarse al espacio de almacenamiento de un alojamiento web](/pages/web/hosting/ftp_connection/)
+[Conectarse al espacio de almacenamiento de un alojamiento web](/pages/web/hosting/ftp_connection)
 
-[Publicar el sitio web](/pages/web/hosting/hosting_how_to_get_my_website_online/)
+[Publicar el sitio web](/pages/web/hosting/hosting_how_to_get_my_website_online)
 
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
 

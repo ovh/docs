@@ -16,7 +16,7 @@ As part of the configuration of a high-availability infrastructure, you may enco
 
 ## Requirements
 
-- An [OVHcloud Public Cloud instance](/pages/platform/public-cloud/public-cloud-first-steps#step-3-creating-an-instance/) on **hourly** billing
+- An [OVHcloud Public Cloud instance](/pages/platform/public-cloud/public-cloud-first-steps#step-3-creating-an-instance) on **hourly** billing
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia){.external} or [Horizon interface](/pages/platform/public-cloud/introducing_horizon)
 - Knowledge of [Openstack API](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api) and [Openstack variables](/pages/platform/public-cloud/loading_openstack_environment_variables)
 

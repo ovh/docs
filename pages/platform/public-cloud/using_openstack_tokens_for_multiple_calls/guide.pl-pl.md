@@ -58,7 +58,7 @@ sudo apt install python3-openstackclient
 sudo yum install python3-openstackclient
 ```
 
-- Aby wyeksportować zmienne środowiskowe, zapoznaj się z tym przewodnikiem: [Zmienne środowiskowe OpenStack](/pages/platform/public-cloud/loading_openstack_environment_variables/).
+- Aby wyeksportować zmienne środowiskowe, zapoznaj się z tym przewodnikiem: [Zmienne środowiskowe OpenStack](/pages/platform/public-cloud/loading_openstack_environment_variables).
 
 ## W praktyce
 

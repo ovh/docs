@@ -60,6 +60,6 @@ An alternative message for external senders can be entered into the second edito
 
 [Delegating permissions on an Exchange account](/pages/web/microsoft-collaborative-solutions/feature_delegation)
 
-[Sharing calendars in OWA](/pages/web/microsoft-collaborative-solutions/owa_calendar_sharing/)
+[Sharing calendars in OWA](/pages/web/microsoft-collaborative-solutions/owa_calendar_sharing)
 
 Join our community of users on <https://community.ovh.com/en/>.

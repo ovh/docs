@@ -21,7 +21,7 @@ O Plesk é uma interface de gestão de servidores simples de utilizar. Pode inst
 
 ## Requisitos
 
-- [Ter criado uma instância a partir da Área de Cliente OVHcloud](/pages/platform/public-cloud/public-cloud-first-steps#3o-passo-criacao-de-uma-instancia/).
+- [Ter criado uma instância a partir da Área de Cliente OVHcloud](/pages/platform/public-cloud/public-cloud-first-steps#3o-passo-criacao-de-uma-instancia).
 - [Tornar-se o utilizador root e selecionar uma palavra-passe](/pages/platform/public-cloud/become_root_and_change_password).
 
 ## Instruções

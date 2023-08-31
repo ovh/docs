@@ -183,7 +183,7 @@ Now, fill in the requested information depending on the action you want it to ca
 
 ![useowa](images/use-owa-step21.png){.thumbnail}
 
-For more detailed instructions about creating auto-replies, please refer to our guide: [Creating automatic replies in OWA](/pages/web/microsoft-collaborative-solutions/owa_automatic_replies/).
+For more detailed instructions about creating auto-replies, please refer to our guide: [Creating automatic replies in OWA](/pages/web/microsoft-collaborative-solutions/owa_automatic_replies).
 
 ### Adding a signature
 
@@ -218,11 +218,11 @@ However, disabling these cookies may affect the stability of your webmail.
 
 ## Go further
 
-[Creating automatic replies in OWA](/pages/web/microsoft-collaborative-solutions/owa_automatic_replies/)
+[Creating automatic replies in OWA](/pages/web/microsoft-collaborative-solutions/owa_automatic_replies)
 
 [Sharing folders in OWA](/pages/web/microsoft-collaborative-solutions/owa_directory_sharing)
 
-[Sharing calendars in OWA](/pages/web/microsoft-collaborative-solutions/owa_calendar_sharing/)
+[Sharing calendars in OWA](/pages/web/microsoft-collaborative-solutions/owa_calendar_sharing)
 
 [Creating contact groups](/pages/web/microsoft-collaborative-solutions/feature_groups)
 

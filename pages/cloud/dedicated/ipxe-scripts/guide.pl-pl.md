@@ -21,7 +21,7 @@ Za pośrednictwem [API OVHcloud](https://api.ovh.com/) możesz również zdefini
 Spersonalizowany skrypt może być interesujący w następujących przypadkach:
 
 - Używasz systemu operacyjnego, który nie chcesz instalować na dysku i który pozostaje tylko w pamięci RAM.
-- Robisz multicloud i jeden z innych dostawców, których używasz, nie oferuje systemu operacyjnego, który chcesz zainstalować w swoim katalogu ani innego rozwiązania, takiego jak [BringYourOwnImage](/pages/cloud/dedicated/bring-your-own-image/). Szukasz unikalnej i znormalizowanej metody instalacji u każdego dostawcy? Zbudowałeś swój własny obraz trybu rescue instalacyjnego umożliwiającego zarządzanie pełną instalacją serwera dedykowanego.
+- Robisz multicloud i jeden z innych dostawców, których używasz, nie oferuje systemu operacyjnego, który chcesz zainstalować w swoim katalogu ani innego rozwiązania, takiego jak [BringYourOwnImage](/pages/cloud/dedicated/bring-your-own-image). Szukasz unikalnej i znormalizowanej metody instalacji u każdego dostawcy? Zbudowałeś swój własny obraz trybu rescue instalacyjnego umożliwiającego zarządzanie pełną instalacją serwera dedykowanego.
 
 ## Wymagania początkowe
 

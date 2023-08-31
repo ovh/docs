@@ -18,7 +18,7 @@ OVHcloud bietet Nutzern der Public Cloud vorinstallierte Images verschiedener An
 
 ## Voraussetzungen
 
-- Sie haben eine [Public Cloud Instanz](/pages/platform/public-cloud/public-cloud-first-steps#schritt-3-instanz-erstellen/) in Ihrem Kunden-Account.
+- Sie haben eine [Public Cloud Instanz](/pages/platform/public-cloud/public-cloud-first-steps#schritt-3-instanz-erstellen) in Ihrem Kunden-Account.
 
 ## In der praktischen Anwendung
 

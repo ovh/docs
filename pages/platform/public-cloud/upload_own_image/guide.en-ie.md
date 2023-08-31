@@ -14,7 +14,7 @@ OVHcloud offers ready-to-go images for Public Cloud instances, however we also e
 
 ## Requirements
 
-- A [Public Cloud instance](/pages/platform/public-cloud/public-cloud-first-steps#step-3-creating-an-instance/) in your OVHcloud account
+- A [Public Cloud instance](/pages/platform/public-cloud/public-cloud-first-steps#step-3-creating-an-instance) in your OVHcloud account
 - Your own RAW/QCOW2 (recommended formats) image 
 - an [OpenStack user](/pages/platform/public-cloud/create_and_delete_a_user) 
 - An [OpenStack CLI ready environment](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api) (if using CLI)

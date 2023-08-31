@@ -19,7 +19,7 @@ Além da Área de Cliente OVHcloud, também pode gerir os seus projetos Public C
 ## Requisitos
 
 - Ter criado uma instância Public Cloud a partir da [Área de Cliente OVHcloud](/pages/platform/public-cloud/public-cloud-first-steps) ou através da [interface Horizon](/pages/platform/public-cloud/create_instance_in_horizon).
-- [Ter criado uma chave SSH](/pages/platform/public-cloud/public-cloud-first-steps#1o-passo-criacao-de-chaves-ssh/).
+- [Ter criado uma chave SSH](/pages/platform/public-cloud/public-cloud-first-steps#1o-passo-criacao-de-chaves-ssh).
 
 ## Prática
 

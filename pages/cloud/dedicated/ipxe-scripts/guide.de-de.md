@@ -21,7 +21,7 @@ Im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=htt
 Personalisierte Skripte können in folgenden Fällen interessant sein:
 
 - Sie verwenden ein flüchtiges Betriebssystem, das Sie nicht auf der Disk installieren möchten und das ausschließlich im RAM verbleibt.
-- Sie betreiben eine Multicloud-Lösung und einer Ihrer Cloud-Anbieter stellt weder das Betriebssystem, das Sie installieren möchten, noch eine alternative Lösung wie [BringYourOwnImage](/pages/cloud/dedicated/bring-your-own-image/) zur Verfügung. Sie wollen eine individuelle und standardisierte Installationsmethode unabhängig vom Dienstanbieter und haben deshalb Ihr eigenes Rescue-Image zur vollständigen Verwaltung der Installation Ihrer Dedicated Server erstellt.
+- Sie betreiben eine Multicloud-Lösung und einer Ihrer Cloud-Anbieter stellt weder das Betriebssystem, das Sie installieren möchten, noch eine alternative Lösung wie [BringYourOwnImage](/pages/cloud/dedicated/bring-your-own-image) zur Verfügung. Sie wollen eine individuelle und standardisierte Installationsmethode unabhängig vom Dienstanbieter und haben deshalb Ihr eigenes Rescue-Image zur vollständigen Verwaltung der Installation Ihrer Dedicated Server erstellt.
 
 ## Voraussetzungen
 

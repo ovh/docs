@@ -25,7 +25,7 @@ Plesk es un panel de control de servidores fácil de usar que puede instalarse e
 
 ## Requisitos
 
-- [Crear una instancia desde el área de cliente de OVHcloud](/pages/platform/public-cloud/public-cloud-first-steps#3-crear-una-instancia/).
+- [Crear una instancia desde el área de cliente de OVHcloud](/pages/platform/public-cloud/public-cloud-first-steps#3-crear-una-instancia).
 - [Conectarse como usuario root y establecer una contraseña](/pages/platform/public-cloud/become_root_and_change_password).
 
 ## Procedimiento

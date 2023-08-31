@@ -63,7 +63,7 @@ We will explain the 4 main steps to take to protect access to a directory or all
 > To modify the PHP version of your websites on your web hosting plan, please refer to the following guides:
 > 
 > - [Modify your web hosting plan’s configuration](/pages/web/hosting/ovhconfig_modify_system_runtime)
-> - [Change the PHP version of your web hosting plan](/pages/web/hosting/php_configure_php_on_your_web_hosting_2014/)
+> - [Change the PHP version of your web hosting plan](/pages/web/hosting/php_configure_php_on_your_web_hosting_2014)
 >
 > The scripts and information described below in this tutorial only work with a runtime environment and a recent PHP version.
 > 

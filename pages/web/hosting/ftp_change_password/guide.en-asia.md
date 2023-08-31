@@ -12,7 +12,7 @@ OVHcloud web hosting plans provide access to an online file storage space, which
 
 You can access this space using an **FTP user** and its associated password.
 
-This access allows you to [put your website online](/pages/web/hosting/hosting_how_to_get_my_website_online/).
+This access allows you to [put your website online](/pages/web/hosting/hosting_how_to_get_my_website_online).
 
 **This guide explains how to change the password for an FTP user created on your OVHcloud Web Hosting plan.**
 
@@ -40,7 +40,7 @@ A table will display the *FTP users* created on your Web Hosting plan. These use
 
 > [!primary]
 >
-> For more information on password management best practices, follow the instructions in this [guide](/pages/account/customer/manage-ovh-password/).
+> For more information on password management best practices, follow the instructions in this [guide](/pages/account/customer/manage-ovh-password).
 >
 
 Your new password must respect the following **password policy**:
@@ -66,15 +66,15 @@ Then go to the `Ongoing Jobs`{.action} tab and refresh the page regularly. Your 
 
 ### Step 3: Access your storage space
 
-To access your FTP storage space, please refer to our guide ["Logging in to your Web Hosting plan’s storage space"](/pages/web/hosting/ftp_connection/).
+To access your FTP storage space, please refer to our guide ["Logging in to your Web Hosting plan’s storage space"](/pages/web/hosting/ftp_connection).
 
 ## Go further <a name="gofurther"></a>
 
-[Setting and managing an account password](/pages/account/customer/manage-ovh-password/)
+[Setting and managing an account password](/pages/account/customer/manage-ovh-password)
 
-[Logging in to your Web Hosting plan’s storage space](/pages/web/hosting/ftp_connection/)
+[Logging in to your Web Hosting plan’s storage space](/pages/web/hosting/ftp_connection)
 
-[Put your website online](/pages/web/hosting/hosting_how_to_get_my_website_online/)
+[Put your website online](/pages/web/hosting/hosting_how_to_get_my_website_online)
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/asia/directory/).
 

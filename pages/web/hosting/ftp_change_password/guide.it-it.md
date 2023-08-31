@@ -16,7 +16,7 @@ Le offerte di hosting Web OVHcloud danno accesso a uno spazio di archiviazione o
 
 L'accesso a questo spazio è possibile tramite **utente FTP** e la password associata.
 
-Questo accesso permette in particolare di [pubblicare il vostro sito](/pages/web/hosting/hosting_how_to_get_my_website_online/).
+Questo accesso permette in particolare di [pubblicare il vostro sito](/pages/web/hosting/hosting_how_to_get_my_website_online).
 
 **Questa guida ti mostra come modificare la password di un utente FTP creata sul tuo hosting Web OVHcloud.**
 
@@ -44,7 +44,7 @@ Una tabella mostra gli *utenti FTP* creati sul tuo hosting Web. Questi utenti ti
 
 > [!primary]
 >
-> Per maggiori informazioni sulle best practice di gestione delle password, segui le indicazioni di questa [guida](/pages/account/customer/manage-ovh-password/).
+> Per maggiori informazioni sulle best practice di gestione delle password, segui le indicazioni di questa [guida](/pages/account/customer/manage-ovh-password).
 >
 
 La nuova password dovrà rispettare la **politica delle password** che segue :
@@ -70,15 +70,15 @@ Consulta la scheda `Operazioni in corso`{.action} e aggiorna regolarmente la pag
 
 ### Step 3: accedere al tuo spazio di archiviazione
 
-Per accedere al tuo spazio di storage FTP, consulta la nostra guida ["Connettersi allo spazio di storage di un hosting Web"](/pages/web/hosting/ftp_connection/)".
+Per accedere al tuo spazio di storage FTP, consulta la nostra guida ["Connettersi allo spazio di storage di un hosting Web"](/pages/web/hosting/ftp_connection)".
 
 ## Per saperne di più <a name="go-further"></a>
 
-[Impostare e gestire la password di un account OVHcloud](/pages/account/customer/manage-ovh-password/)
+[Impostare e gestire la password di un account OVHcloud](/pages/account/customer/manage-ovh-password)
 
-[Accedere allo spazio di storage di un hosting Web](/pages/web/hosting/ftp_connection/)
+[Accedere allo spazio di storage di un hosting Web](/pages/web/hosting/ftp_connection)
 
-[Mettere online il tuo sito](/pages/web/hosting/hosting_how_to_get_my_website_online/)
+[Mettere online il tuo sito](/pages/web/hosting/hosting_how_to_get_my_website_online)
 
 Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
 

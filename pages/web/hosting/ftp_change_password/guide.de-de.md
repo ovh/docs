@@ -16,7 +16,7 @@ Die OVHcloud Webhosting Angebote bieten Zugriff auf einen Online-Speicherplatz f
 
 Der Zugriff auf diesen Speicherplatz ist mit einem **FTP-Benutzer** und seinem zugehörigen Passwort möglich.
 
-Dieser Zugang erlaubt unter anderem [Ihre Website online zu stellen](/pages/web/hosting/hosting_how_to_get_my_website_online/).
+Dieser Zugang erlaubt unter anderem [Ihre Website online zu stellen](/pages/web/hosting/hosting_how_to_get_my_website_online).
 
 **Diese Anleitung erklärt, wie Sie das Passwort eines auf Ihrem OVHcloud Webhosting erstellten FTP-Benutzers ändern.**
 
@@ -43,7 +43,7 @@ Eine Tabelle zeigt die *FTP-Benutzer*, die auf Ihrem Webhosting erstellt wurden.
 
 > [!primary]
 >
-> Für weitere Informationen zu bewährten Praktiken bei der Passwortverwaltung folgen Sie den Anweisungen in [dieser Anleitung](/pages/account/customer/manage-ovh-password/).
+> Für weitere Informationen zu bewährten Praktiken bei der Passwortverwaltung folgen Sie den Anweisungen in [dieser Anleitung](/pages/account/customer/manage-ovh-password).
 >
 
 Ihr neues Passwort muss folgenden **Richtlinien** entsprechen:
@@ -73,15 +73,15 @@ Gehen Sie dann zum Tab `Aktuelle Tasks`{.action} und laden Sie die Seite ggf. ne
 
 ### Schritt 3: Auf Ihren Speicherplatz zugreifen
 
-Um auf Ihren FTP-Speicherplatz zuzugreifen, lesen Sie unsere Anleitung ["Mit dem Speicherplatz Ihres Webhostings verbinden"](/pages/web/hosting/ftp_connection/).
+Um auf Ihren FTP-Speicherplatz zuzugreifen, lesen Sie unsere Anleitung ["Mit dem Speicherplatz Ihres Webhostings verbinden"](/pages/web/hosting/ftp_connection).
 
 ## Weiterführende Informationen <a name="gofurther"></a>
 
-[Das Passwort Ihres Kunden-Accounts anlegen und verwalten](/pages/account/customer/manage-ovh-password/)
+[Das Passwort Ihres Kunden-Accounts anlegen und verwalten](/pages/account/customer/manage-ovh-password)
 
-[Mit dem Speicherplatz eines Webhostings verbinden](/pages/web/hosting/ftp_connection/)
+[Mit dem Speicherplatz eines Webhostings verbinden](/pages/web/hosting/ftp_connection)
 
-[Ihre Website online stellen](/pages/web/hosting/hosting_how_to_get_my_website_online/)
+[Ihre Website online stellen](/pages/web/hosting/hosting_how_to_get_my_website_online)
 
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
 

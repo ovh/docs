@@ -17,7 +17,7 @@ In dieser Online-Hilfe erfahren Sie, wie Sie Ihrem Container einen Domainnamen z
 
 ## Voraussetzungen
 
-- [Hinzufügen von Storage-Bereichen](/pages/cloud/storage/object_storage/pcs_create_container/)
+- [Hinzufügen von Storage-Bereichen](/pages/cloud/storage/object_storage/pcs_create_container)
 - Ein Domainname
 
 ## In der Theorie

@@ -19,7 +19,7 @@ Zusätzlich zum OVHcloud Kundencenter können Sie Ihre OVHcloud Public Cloud Pro
 ## Voraussetzungen
 
 - Sie haben eine Public Cloud Instanz über Ihr [OVHcloud Kundencenter](/pages/platform/public-cloud/public-cloud-first-steps) oder über das [Horizon-Interface](/pages/platform/public-cloud/create_instance_in_horizon) erstellt.
-- Sie haben einen [SSH-Schlüssel erstellt](/pages/platform/public-cloud/public-cloud-first-steps#schritt-1-ssh-schlussel-erstellen/).
+- Sie haben einen [SSH-Schlüssel erstellt](/pages/platform/public-cloud/public-cloud-first-steps#schritt-1-ssh-schlussel-erstellen).
 
 ## In der praktischen Anwendung
 

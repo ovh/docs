@@ -64,7 +64,7 @@ An incorrect level of access rights on a folder or a file may create a 500 error
 
 To access these files, log on your [FTP server](/pages/web/hosting/ftp_connection).
 
-The [FileZilla guide](/pages/web/hosting/ftp_filezilla_user_guide#file-and-folder-permissions/) will then help you check the following points :
+The [FileZilla guide](/pages/web/hosting/ftp_filezilla_user_guide#file-and-folder-permissions) will then help you check the following points :
 
 - The **root** of your hosting plan (this is the directory marked `/` or `.` on Filezilla) must have 705 access rights (these are the default permissions). Do not change this level of permissions.
 - Folders must have 705 access rights.

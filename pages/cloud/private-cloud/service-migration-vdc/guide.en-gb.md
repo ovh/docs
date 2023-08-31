@@ -391,7 +391,7 @@ To recreate DHCP and associate them with your segments and T1 Gateways, refer to
 <a name="dns"></a>
 ##### Step 4.8.3.3 DNS
 
-To recreate DNS and associate them with your T1 Gateways, please refer to our guide on [configuring the DNS forwarder in NSX](/pages/cloud/private-cloud/nsx-04-configure-dns-forwarder/).
+To recreate DNS and associate them with your T1 Gateways, please refer to our guide on [configuring the DNS forwarder in NSX](/pages/cloud/private-cloud/nsx-04-configure-dns-forwarder).
 
 <a name="nat"></a>
 ##### Step 4.8.3.4 NAT Rules

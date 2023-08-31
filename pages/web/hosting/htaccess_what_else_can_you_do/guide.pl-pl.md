@@ -14,7 +14,7 @@ updated: 2023-05-23
 
 Tutorial przedstawia główne funkcje pliku ".htaccess" dla Twojego hostingu.
 
-Plik ".htaccess" to plik konfiguracyjny (HTTP) Apache wykonywany przez serwer www Twojego hostingu www. Pozwala on na zdefiniowanie szczególnych zasad dla katalogu i wszystkich jego podkatalogów. Możesz utworzyć kilka plików ".htaccess" w [przestrzeni FTP](/pages/web/hosting/ftp_connection/) Twojego hostingu. 
+Plik ".htaccess" to plik konfiguracyjny (HTTP) Apache wykonywany przez serwer www Twojego hostingu www. Pozwala on na zdefiniowanie szczególnych zasad dla katalogu i wszystkich jego podkatalogów. Możesz utworzyć kilka plików ".htaccess" w [przestrzeni FTP](/pages/web/hosting/ftp_connection) Twojego hostingu. 
 
 Jeśli Twoja przestrzeń FTP nie istnieje, możesz ją dodać dodając w katalogu, do którego chcesz zastosować jedną lub kilka reguł opisanych w tym tutorialu.
 
@@ -45,13 +45,13 @@ Aby poprawnie korzystać z pliku ".htaccess", musisz znać i przestrzegać nast�
 
 Funkcja ta jest bardzo przydatna i zwiększa bezpieczeństwo Twoich stron WWW. Może pomóc zmniejszyć ryzyko włamania na Twojej stronie WWW.
 
-Aby uzyskać więcej informacji, zapoznaj się z przewodnikiem: ["Jak zablokować dostęp do mojej strony dla niektórych adresów IP za pomocą pliku .htaccess? "](/pages/web/hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website/).
+Aby uzyskać więcej informacji, zapoznaj się z przewodnikiem: ["Jak zablokować dostęp do mojej strony dla niektórych adresów IP za pomocą pliku .htaccess? "](/pages/web/hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website).
 
 ### Zdefiniuj zaszyfrowane hasło dostępu do katalogu lub strony www
 
 Za pomocą pliku ".htaccess" możesz wprowadzić zabezpieczony dostęp (hasłem) do danych znajdujących się na Twoim hostingu.
 
-Aby uzyskać więcej informacji, zapoznaj się z naszym tutorialu ["Chroń interfejs administracyjny Twojej strony za pomocą pliku .htaccess"](/pages/web/hosting/htaccess_protect_directory_by_password/).
+Aby uzyskać więcej informacji, zapoznaj się z naszym tutorialu ["Chroń interfejs administracyjny Twojej strony za pomocą pliku .htaccess"](/pages/web/hosting/htaccess_protect_directory_by_password).
 
 ### Określ inny plik indeksu
 
@@ -85,7 +85,7 @@ Dzięki modułowi **mod_rewrite** z wstępnie zainstalowanego serwera HTTP Apach
 - zapytania do konkretnego folderu, bez wyświetlania danego folderu;
 - automatycznie odwiedzający Twoją stronę przez HTTPS podczas wyświetlania jej zawartości poprzez HTTP.
 
-Więcej informacji znajdziesz w przewodniku: ["Prześlij link dostępowy do mojej strony za pomocą mod_rewrite za pomocą pliku .htaccess"](/pages/web/hosting/htaccess_url_rewriting_using_mod_rewrite/).
+Więcej informacji znajdziesz w przewodniku: ["Prześlij link dostępowy do mojej strony za pomocą mod_rewrite za pomocą pliku .htaccess"](/pages/web/hosting/htaccess_url_rewriting_using_mod_rewrite).
 
 #### Przekieruj wiadomości z błędem
 
@@ -138,11 +138,11 @@ Poniższa linia przekieruje osobę odwiedzającą, która ma błąd **404** na T
 
 ## Sprawdź również <a name="go-further"></a>
 
-[Logowanie do przestrzeni FTP hostingu WWW](/pages/web/hosting/ftp_connection/)
+[Logowanie do przestrzeni FTP hostingu WWW](/pages/web/hosting/ftp_connection)
 
-[Zablokować dostęp do mojej strony dla niektórych adresów IP przez plik .htaccess?](/pages/web/hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website/)
+[Zablokować dostęp do mojej strony dla niektórych adresów IP przez plik .htaccess?](/pages/web/hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website)
 
-[Chroń interfejs administracyjny swojej strony plikiem .htaccess](/pages/web/hosting/htaccess_protect_directory_by_password/)
+[Chroń interfejs administracyjny swojej strony plikiem .htaccess](/pages/web/hosting/htaccess_protect_directory_by_password)
 
 [Prześlij link dostępowy do mojej strony za pomocą mod_rewrite za pomocą pliku .htaccess](/pages/web/hosting/htaccess_url_rewriting_using_mod_rewrite)
 

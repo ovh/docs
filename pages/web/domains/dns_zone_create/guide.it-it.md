@@ -82,7 +82,7 @@ Una volta effettuata la scelta, segui gli step fino alla creazione della zona DN
 
 Ora che la zona DNS del tuo dominio è stata creata, è possibile modificarla. Questa operazione è facoltativa, ma può rivelarsi necessaria per garantire la disponibilità dei servizi associati a questo dominio (ad esempio un sito Web e/o un servizio di posta elettronica).
 
-Per modificare questa zona DNS, consulta la nostra guida "[Modifica una zona DNS in OVHcloud]((/pages/web/domains/dns_zone_edit)".
+Per modificare questa zona DNS, consulta la nostra guida "[Modifica una zona DNS in OVHcloud](/pages/web/domains/dns_zone_edit)".
 
 > [!primary]
 >

@@ -16,7 +16,7 @@ Wraz z pakietami hostingowymi OVHcloud zyskujesz dostęp do przestrzeni dyskowej
 
 Dostęp do przestrzeni dyskowej możliwy jest za pomocą **użytkownika FTP** oraz przypisanego do niego hasła.
 
-W szczególności dostęp ten umożliwia [umieszczenie strony w Internecie](/pages/web/hosting/hosting_how_to_get_my_website_online/).
+W szczególności dostęp ten umożliwia [umieszczenie strony w Internecie](/pages/web/hosting/hosting_how_to_get_my_website_online).
 
 **Dowiedz się, jak zmienić hasło do konta FTP utworzonego na Twoim hostingu.**
 
@@ -44,7 +44,7 @@ Tabela wyświetla *użytkowników FTP* utworzonych na Twoim hostingu. Użytkowni
 
 > [!primary]
 >
-> Aby uzyskać więcej informacji na temat dobrych praktyk w zakresie zarządzania hasłami, zapoznaj się z instrukcjami zawartymi w tym [przewodniku](/pages/account/customer/manage-ovh-password/).
+> Aby uzyskać więcej informacji na temat dobrych praktyk w zakresie zarządzania hasłami, zapoznaj się z instrukcjami zawartymi w tym [przewodniku](/pages/account/customer/manage-ovh-password).
 >
 
 Nowe hasło powinno być zgodne z następującą **polityką haseł** :
@@ -70,15 +70,15 @@ Następnie przejdź do zakładki `Zadania w realizacji`{.action} i odśwież str
 
 ### Etap 3: dostęp do Twojej przestrzeni dyskowej
 
-Aby uzyskać dostęp do przestrzeni FTP, zapoznaj się z naszym przewodnikiem "[Logowanie do przestrzeni dyskowej Twojego hostingu](/pages/web/hosting/ftp_connection/)".
+Aby uzyskać dostęp do przestrzeni FTP, zapoznaj się z naszym przewodnikiem "[Logowanie do przestrzeni dyskowej Twojego hostingu](/pages/web/hosting/ftp_connection)".
 
 ## Sprawdź również <a name="go-further"></a>
 
-[Tworzenie i zarządzanie hasłem do konta](/pages/account/customer/manage-ovh-password/)
+[Tworzenie i zarządzanie hasłem do konta](/pages/account/customer/manage-ovh-password)
 
-[Logowanie do przestrzeni dyskowej hostingu](/pages/web/hosting/ftp_connection/)
+[Logowanie do przestrzeni dyskowej hostingu](/pages/web/hosting/ftp_connection)
 
-[Umieszczenie strony WWW w Internecie](/pages/web/hosting/hosting_how_to_get_my_website_online/)
+[Umieszczenie strony WWW w Internecie](/pages/web/hosting/hosting_how_to_get_my_website_online)
 
 W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
 

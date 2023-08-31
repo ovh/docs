@@ -10,7 +10,7 @@ updated: 2023-02-14
 
 The OVHcloud [vRack](https://www.ovh.com/ca/en/solutions/vrack/) allows you to configure private network addressing between two or more OVHcloud [Dedicated Servers](https://www.ovhcloud.com/en-ca/bare-metal/). But it also allows you to add [Public Cloud instances](https://www.ovh.com/ca/en/public-cloud/instances/) to your private network so that you can create an infrastructure of both physical and virtual resources.
 
-**This guide will show you how to configure private networking between a [Public Cloud instance](/pages/platform/public-cloud/public-cloud-first-steps#create-instance/) and a [Dedicated Server](https://www.ovhcloud.com/en-ca/bare-metal/).**
+**This guide will show you how to configure private networking between a [Public Cloud instance](/pages/platform/public-cloud/public-cloud-first-steps#create-instance) and a [Dedicated Server](https://www.ovhcloud.com/en-ca/bare-metal/).**
 
 
 ## Requirements

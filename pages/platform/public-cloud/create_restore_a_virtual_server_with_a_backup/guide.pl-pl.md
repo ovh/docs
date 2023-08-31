@@ -50,7 +50,7 @@ Niektóre elementy są wstępnie określone:
 
 Zdefiniuj nazwę nowej instancji, klucz SSH, vRack i okres rozliczeniowy, następnie kliknij przycisk `Utwórz instancję`{.action}.
 
-Aby uzyskać więcej informacji na temat tworzenia instancji, zapoznaj się z [tym przewodnikiem](/pages/platform/public-cloud/public-cloud-first-steps#krok-3-tworzenie-instancji/).
+Aby uzyskać więcej informacji na temat tworzenia instancji, zapoznaj się z [tym przewodnikiem](/pages/platform/public-cloud/public-cloud-first-steps#krok-3-tworzenie-instancji).
 
 > [!primary]
 >

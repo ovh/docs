@@ -50,7 +50,7 @@ Manual operations are typically used for educational or debugging purposes.
 
 You need to load the environment using the openRC file. To do this, we recommend downloading and using the openrc.sh file, which you will find in the Horizon interface. This way, you will have all of the environment variables you need to build the commands that follow.
 
-To log in to Horizon and download the file, read [this guide](/pages/platform/public-cloud/introducing_horizon/). 
+To log in to Horizon and download the file, read [this guide](/pages/platform/public-cloud/introducing_horizon). 
 
 In our example we will retrieve the meta-data information for an object that is stored using your Public Cloud Storage solution:
 
