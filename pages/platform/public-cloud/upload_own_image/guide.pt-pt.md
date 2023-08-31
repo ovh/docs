@@ -18,7 +18,7 @@ A OVHcloud oferece aos clientes Public Cloud imagens prontas a usar, mas também
 
 ## Requisitos
 
-- uma [instância Public Cloud](/pages/platform/public-cloud/public-cloud-first-steps#3o-passo-criacao-de-uma-instancia/) na sua Área de Cliente OVHcloud
+- uma [instância Public Cloud](/pages/platform/public-cloud/public-cloud-first-steps#3o-passo-criacao-de-uma-instancia) na sua Área de Cliente OVHcloud
 - imagem RAW/QCOW2 (formatos recomendados) 
 - um utilizador [OpenStack](/pages/platform/public-cloud/create_and_delete_a_user) 
 - um ambiente [OpenStack CLI ready](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api) (se utilizar CLI)

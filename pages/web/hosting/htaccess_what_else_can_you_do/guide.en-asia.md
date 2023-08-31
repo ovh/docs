@@ -10,7 +10,7 @@ updated: 2023-05-23
 
 This tutorial introduces you to the main features of the file ".htaccess" for your web hosting.
 
-The .htaccess file is an Apache configuration file (HTTP) that is run by the web server of your Web Hosting plan. It allows you to define specific rules for a directory and all of its subdirectories. You can create multiple .htaccess files in [the FTP space](/pages/web/hosting/ftp_connection/) of your Web Hosting plan. 
+The .htaccess file is an Apache configuration file (HTTP) that is run by the web server of your Web Hosting plan. It allows you to define specific rules for a directory and all of its subdirectories. You can create multiple .htaccess files in [the FTP space](/pages/web/hosting/ftp_connection) of your Web Hosting plan. 
 
 If it does not already exist in your FTP space, you can add it by creating a file that you name **.htaccess** in the directory for which you want to apply one or more of the rules described in this tutorial.
 
@@ -41,13 +41,13 @@ To use the .htaccess file correctly, you need to know and follow the following r
 
 This feature is very useful and strengthens security for your websites. It can help reduce the risk of your website being hacked.
 
-For more information, see our tutorial: ["How do I block access to my website for certain IP addresses via a .htaccess file?"](/pages/web/hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website/).
+For more information, see our tutorial: ["How do I block access to my website for certain IP addresses via a .htaccess file?"](/pages/web/hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website).
 
 ### Set an encrypted access password to access a directory or website
 
 Via the .htaccess file, you can set up protected access (with an encrypted password) to your data stored on your hosting.
 
-For more information, see our tutorial ["Protect your website’s administration interface with a .htaccess file"](/pages/web/hosting/htaccess_protect_directory_by_password/).
+For more information, see our tutorial ["Protect your website’s administration interface with a .htaccess file"](/pages/web/hosting/htaccess_protect_directory_by_password).
 
 ### Specify a different index file
 
@@ -81,7 +81,7 @@ With the **mod_rewrite** module of the Apache HTTP Web server preinstalled on yo
 - Requests to a particular folder, without displaying the folder concerned.
 - Website requests to HTTPS when a URL was opened in HTTP.
 
-You can find more information in our tutorial: ["Rewrite the URL for accessing my website with mod_rewrite via the .htaccess file"](/pages/web/hosting/htaccess_url_rewriting_using_mod_rewrite/).
+You can find more information in our tutorial: ["Rewrite the URL for accessing my website with mod_rewrite via the .htaccess file"](/pages/web/hosting/htaccess_url_rewriting_using_mod_rewrite).
 
 #### Redirect error messages
 
@@ -134,13 +134,13 @@ The line above will redirect any visitor who encounters an error **404** to your
 
 ## Go further <a name="go-further"></a>
 
-[Logging in to your Web Hosting plan’s FTP space](/pages/web/hosting/ftp_connection/)
+[Logging in to your Web Hosting plan’s FTP space](/pages/web/hosting/ftp_connection)
 
-[Tutorial - How do I block access to my website for certain IP addresses via a .htaccess file?](/pages/web/hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website/)
+[Tutorial - How do I block access to my website for certain IP addresses via a .htaccess file?](/pages/web/hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website)
 
-[Protecting your website's administration interface with a .htaccess file](/pages/web/hosting/htaccess_protect_directory_by_password/)
+[Protecting your website's administration interface with a .htaccess file](/pages/web/hosting/htaccess_protect_directory_by_password)
 
-[Tutorial - Rewrite the URL for accessing your website using mod_rewrite via the .htaccess file](/pages/web/hosting/htaccess_url_rewriting_using_mod_rewrite/)
+[Tutorial - Rewrite the URL for accessing your website using mod_rewrite via the .htaccess file](/pages/web/hosting/htaccess_url_rewriting_using_mod_rewrite)
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/asia/directory/).
 

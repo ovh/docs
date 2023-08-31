@@ -21,7 +21,7 @@ Através da [API OVHcloud](https://api.ovh.com/), pode também definir scripts p
 Utilizar um script personalizado pode ser interessante nos seguintes casos:
 
 - Utiliza um SO volátil que não deseja instalar no disco e que permanece unicamente em RAM.
-- Faz multicloud e um dos outros fornecedores que utiliza não propõe o SO que deseja instalar no seu catálogo, nem soluções alternativas tais como [BringYourOwnImage](/pages/cloud/dedicated/bring-your-own-image/). Desejando um método único e normalizado de instalação, seja qual for o fornecedor, construiu a sua própria imagem de rescue de instalação para gerir a instalação completa do seu servidor dedicado.
+- Faz multicloud e um dos outros fornecedores que utiliza não propõe o SO que deseja instalar no seu catálogo, nem soluções alternativas tais como [BringYourOwnImage](/pages/cloud/dedicated/bring-your-own-image). Desejando um método único e normalizado de instalação, seja qual for o fornecedor, construiu a sua própria imagem de rescue de instalação para gerir a instalação completa do seu servidor dedicado.
 
 ## Requisitos
 

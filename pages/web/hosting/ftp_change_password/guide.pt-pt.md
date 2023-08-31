@@ -16,7 +16,7 @@ As ofertas de alojamento web da OVHcloud dão acesso a um espaço de armazenamen
 
 O acesso a este espaço é possível com a ajuda de um **utilizador FTP** e da respetiva palavra-passe.
 
-Este acesso permite nomeadamente [publicar o seu site](/pages/web/hosting/hosting_how_to_get_my_website_online/).
+Este acesso permite nomeadamente [publicar o seu site](/pages/web/hosting/hosting_how_to_get_my_website_online).
 
 **Descubra como alterar a palavra-passe de um utilizador FTP criado no seu alojamento web da OVHcloud.**
 
@@ -44,7 +44,7 @@ Um quadro apresenta os *utilizadores FTP* criados no seu alojamento web. Estes u
 
 > [!primary]
 >
-> Para mais informações sobre as boas práticas de gestão de palavras-passe, siga as instruções deste [guia](/pages/account/customer/manage-ovh-password/).
+> Para mais informações sobre as boas práticas de gestão de palavras-passe, siga as instruções deste [guia](/pages/account/customer/manage-ovh-password).
 >
 
 A sua nova password deverá respeitar a **política das palavras-passe** seguinte :
@@ -72,15 +72,15 @@ Por fim, consulte o separador `Operações em curso`{.action} e atualize a pági
 
 ### Etapa 3: Aceder ao espaço de armazenamento
 
-Para aceder ao seu espaço de armazenamento FTP, consulte o nosso guia "[Aceder ao espaço de armazenamento do alojamento web](/pages/web/hosting/ftp_connection/)".
+Para aceder ao seu espaço de armazenamento FTP, consulte o nosso guia "[Aceder ao espaço de armazenamento do alojamento web](/pages/web/hosting/ftp_connection)".
 
 ## Quer saber mais? <a name="go-further"></a>
 
-[Definir e gerir a palavra-passe da sua conta](/pages/account/customer/manage-ovh-password/)
+[Definir e gerir a palavra-passe da sua conta](/pages/account/customer/manage-ovh-password)
 
-[Aceder ao espaço de armazenamento do alojamento web](/pages/web/hosting/ftp_connection/)
+[Aceder ao espaço de armazenamento do alojamento web](/pages/web/hosting/ftp_connection)
 
-[Publicar o seu site](/pages/web/hosting/hosting_how_to_get_my_website_online/)
+[Publicar o seu site](/pages/web/hosting/hosting_how_to_get_my_website_online)
 
 Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
 

@@ -128,7 +128,7 @@ W praktyce znajdziesz tutaj również przewodniki, które pomogą Ci zacząć:
 |Dokumentacja|Szczegóły|
 |---|---|
 |[Utwórz pierwszą instancję](/pages/platform/public-cloud/public-cloud-first-steps)|Pierwszy przewodnik dotyczący uruchomienia serwera cloud w Panelu klienta OVHcloud.|
-|[Korzystanie z klucza SSH](/pages/platform/public-cloud/public-cloud-first-steps#krok-2-przechowywanie-kluczy-publicznych-w-panelu-klienta-ovhcloud_1/)| Aby zalogować się do instancji Linux, zapoznaj się z tym przewodnikiem dotyczącym korzystania z tej instancji.|
+|[Korzystanie z klucza SSH](/pages/platform/public-cloud/public-cloud-first-steps#krok-2-przechowywanie-kluczy-publicznych-w-panelu-klienta-ovhcloud_1)| Aby zalogować się do instancji Linux, zapoznaj się z tym przewodnikiem dotyczącym korzystania z tej instancji.|
 |[Konfiguracja prywatnej sieci](/pages/platform/network-services/getting-started-07-creating-vrack)|W OVHcloud prywatne sieci opierają się na technologii vRack. Niniejszy przewodnik pomaga Ci w uruchomieniu tej usługi.|
 |[Przypisz dodatkowy dysk do instancji](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance)|Niniejszy przewodnik wyjaśnia, jak dodać przestrzeń dyskową do Twojej pierwszej instancji.|
 |[Dostęp do interfejsu Horizon](/pages/platform/public-cloud/introducing_horizon)|Interfejs Horizon OpenStack pozwala na wykonywanie niektórych zaawansowanych operacji.|

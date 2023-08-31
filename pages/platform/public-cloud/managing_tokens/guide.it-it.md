@@ -50,7 +50,7 @@ Le operazioni che seguono possono essere effettuate manualmente, sono generalmen
 
 È necessario caricare l'ambiente utilizzando il file openRC. Per effettuare questa operazione, ti consigliamo di scaricare e utilizzare il file openrc.sh che trovi nell'interfaccia Horizon. Quest’ultimo disporrà di tutte le variabili d’ambiente necessarie alla costruzione dei comandi successivi.
 
-Per connetterti a Horizon e scaricare il file, consulta [questa guida](/pages/platform/public-cloud/introducing_horizon/).
+Per connetterti a Horizon e scaricare il file, consulta [questa guida](/pages/platform/public-cloud/introducing_horizon).
 
 Nel nostro esempio, vogliamo ottenere le informazioni di metadata di un oggetto archiviato grazie all'offerta Public Cloud Storage. Gli step sono:
 

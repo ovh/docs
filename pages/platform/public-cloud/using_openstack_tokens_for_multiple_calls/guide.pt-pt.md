@@ -58,7 +58,7 @@ sudo apt install python3-openstackclient
 sudo yum install python3-openstackclient
 ```
 
-- Para os utilizadores do Windows, consulte este guia para exportar as suas variáveis de ambiente: [Carregar as variáveis de ambiente OpenStack](/pages/platform/public-cloud/loading_openstack_environment_variables/).
+- Para os utilizadores do Windows, consulte este guia para exportar as suas variáveis de ambiente: [Carregar as variáveis de ambiente OpenStack](/pages/platform/public-cloud/loading_openstack_environment_variables).
 
 ## Instruções
 

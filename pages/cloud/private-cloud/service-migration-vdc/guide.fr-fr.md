@@ -410,7 +410,7 @@ Pour recréer les DHCP et les associer à vos segments puis à vos T1, consultez
 <a name="dns"></a>
 ##### Etape 4.8.3.3 DNS
 
-Pour recréer les DNS et les associer à vos T1, consultez notre guide sur la [configuration du redirecteur DNS dans NSX](/pages/cloud/private-cloud/nsx-04-configure-dns-forwarder/).
+Pour recréer les DNS et les associer à vos T1, consultez notre guide sur la [configuration du redirecteur DNS dans NSX](/pages/cloud/private-cloud/nsx-04-configure-dns-forwarder).
 
 <a name="nat"></a>
 ##### Etape 4.8.3.4 Règles NAT

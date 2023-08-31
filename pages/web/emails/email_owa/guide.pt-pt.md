@@ -183,7 +183,7 @@ Preencha a informação solicitada dependendo da ação que deseja ver concluíd
 
 ![useowa](images/use-owa-step21.png){.thumbnail}
 
-Para instruções mais detalhadas sobre como criar respostas automáticas, consulte o nosso guia: [Criar respostas automáticas no OWA](/pages/web/microsoft-collaborative-solutions/owa_automatic_replies/).
+Para instruções mais detalhadas sobre como criar respostas automáticas, consulte o nosso guia: [Criar respostas automáticas no OWA](/pages/web/microsoft-collaborative-solutions/owa_automatic_replies).
 
 ### Adicionar assinatura
 
@@ -218,7 +218,7 @@ A desativação destes cookies pode afetar a estabilidade do webmail.
 
 ## Saiba mais
 
-[Criar respostas automáticas no OWA](/pages/web/microsoft-collaborative-solutions/owa_automatic_replies/)
+[Criar respostas automáticas no OWA](/pages/web/microsoft-collaborative-solutions/owa_automatic_replies)
 
 [Partilhar uma pasta através do webmail OWA](/pages/web/microsoft-collaborative-solutions/owa_directory_sharing)
 

@@ -50,7 +50,7 @@ Następujące czynności mogą być wykonywane ręcznie, są zazwyczaj wykorzyst
 
 Konieczne jest załadowanie środowiska za pomocą pliku openRC. W tym celu zalecamy pobranie i użycie pliku openrc.sh, który znajdziesz w interfejsie Horizon. Będzie on dysponował wszystkimi niezbędnymi zmiennymi środowiskowymi, takimi jak budowa kolejnych zamówień.
 
-Aby zalogować się do interfejsu Horizon i pobrać plik, zapoznaj się [z tym przewodnikiem](/pages/platform/public-cloud/introducing_horizon/).
+Aby zalogować się do interfejsu Horizon i pobrać plik, zapoznaj się [z tym przewodnikiem](/pages/platform/public-cloud/introducing_horizon).
 
 W poniższym przykładzie chcemy uzyskać informacje o metadata obiektu przechowywanego w ramach oferty Public Cloud Storage. Etapy są następujące:
 

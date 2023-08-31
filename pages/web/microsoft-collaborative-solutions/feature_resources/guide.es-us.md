@@ -47,7 +47,7 @@ Haga clic en `Siguiente`{.action} para ir al resumen y confirme la tarea haciend
 
 ### 2\. utilizar recursos
 
-Los recursos pueden gestionarse desde la pestaña "Recursos". Haga clic en `...`{.action} para editar o eliminar un recurso. También se mostrará la opción `Configurar delegaciones`{.action}. Con esta opción, podrá delegar el acceso del mismo modo que para una cuenta Exchange. Consulte los detalles en [esta guía](/pages/web/microsoft-collaborative-solutions/feature_delegation/).
+Los recursos pueden gestionarse desde la pestaña "Recursos". Haga clic en `...`{.action} para editar o eliminar un recurso. También se mostrará la opción `Configurar delegaciones`{.action}. Con esta opción, podrá delegar el acceso del mismo modo que para una cuenta Exchange. Consulte los detalles en [esta guía](/pages/web/microsoft-collaborative-solutions/feature_delegation).
 
 ![utilizar recursos](images/exchange-resources-step3.png){.thumbnail}
 

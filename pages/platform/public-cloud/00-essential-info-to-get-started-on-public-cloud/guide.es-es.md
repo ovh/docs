@@ -132,7 +132,7 @@ En la práctica, a continuación le ofrecemos algunas guías que le ayudarán en
 |Documentación|Detalles|
 |---|---|
 |[Crear la primera instancia](/pages/platform/public-cloud/public-cloud-first-steps)|Esta es la primera guía práctica para iniciar un servidor cloud desde el área de cliente de OVHcloud.|
-|[Uso de una llave SSH](/pages/platform/public-cloud/public-cloud-first-steps#2-guardar-las-claves-publicas-en-el-area-de-cliente-de-ovhcloud_1/)| Para conectarse a una instancia Linux, necesitará utilizar una conexión SSH en esta guía.|
+|[Uso de una llave SSH](/pages/platform/public-cloud/public-cloud-first-steps#2-guardar-las-claves-publicas-en-el-area-de-cliente-de-ovhcloud_1)| Para conectarse a una instancia Linux, necesitará utilizar una conexión SSH en esta guía.|
 |[Configuración de la red privada](/pages/platform/network-services/getting-started-07-creating-vrack)|En OVHcloud, la tecnología vRack utiliza las redes privadas. Esta guía le ayudará a realizar esta operación.|
 |[Asociar un disco adicional a una instancia](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance)|Esta guía explica cómo añadir almacenamiento adicional a la primera instancia de OVH.|
 |[Conectarse a Horizon](/pages/platform/public-cloud/introducing_horizon)|La interfaz Horizon de OpenStack permite realizar determinadas acciones avanzadas. Así es como conectarse a ella.|

@@ -100,7 +100,7 @@ In the Outlook application, you will see your shared account in the left-hand co
 
 [Delegating permissions on an Exchange account](/pages/web/microsoft-collaborative-solutions/feature_delegation)
 
-[How to share calendars via OWA](/pages/web/microsoft-collaborative-solutions/owa_calendar_sharing/)
+[How to share calendars via OWA](/pages/web/microsoft-collaborative-solutions/owa_calendar_sharing)
 
 [Creating automatic signatures](/pages/web/microsoft-collaborative-solutions/feature_footers)
 

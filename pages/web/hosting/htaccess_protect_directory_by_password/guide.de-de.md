@@ -67,7 +67,7 @@ Wir erklären die 4 wichtigsten Schritte zum Schutz des Zugriffs auf ein Verzeic
 > Um die PHP-Version Ihrer Webseiten auf Ihrem Webhosting zu ändern, lesen Sie folgende Anleitungen:
 > 
 > - [Konfiguration eines Webhostings bearbeiten](/pages/web/hosting/ovhconfig_modify_system_runtime)
-> - [PHP-Version eines Webhostings ändern](/pages/web/hosting/php_configure_php_on_your_web_hosting_2014/)
+> - [PHP-Version eines Webhostings ändern](/pages/web/hosting/php_configure_php_on_your_web_hosting_2014)
 >
 > Die hier beschriebenen Skripte und Informationen funktionieren nur im Modus "Produktion" und mit einer aktuellen PHP-Version.
 > 
@@ -255,13 +255,13 @@ Ersetzen Sie im oben stehenden Skript die folgenden Elemente mit Ihren eigenen W
 
 [Offizielle Dokumentation Apache](https://httpd.apache.org/docs/2.4/){.external}
 
-[Mit dem Speicherplatz eines Webhostings verbinden](/pages/web/hosting/ftp_connection/)
+[Mit dem Speicherplatz eines Webhostings verbinden](/pages/web/hosting/ftp_connection)
 
 [Tutorial - Operationen mit .htaccess Dateien](/pages/web/hosting/htaccess_what_else_can_you_do)
 
-[Tutorial - Wie kann ich den Zugang zu meiner Website für bestimmte IP-Adressen über eine .htaccess Datei sperren?](/pages/web/hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website/)
+[Tutorial - Wie kann ich den Zugang zu meiner Website für bestimmte IP-Adressen über eine .htaccess Datei sperren?](/pages/web/hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website)
 
-[Tutorial - Die URL einer Website mit mod_rewrite über die .htaccess Datei umschreiben](/pages/web/hosting/htaccess_url_rewriting_using_mod_rewrite/)
+[Tutorial - Die URL einer Website mit mod_rewrite über die .htaccess Datei umschreiben](/pages/web/hosting/htaccess_url_rewriting_using_mod_rewrite)
 
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
 

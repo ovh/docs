@@ -12,7 +12,7 @@ Les offres d'hébergement web OVHcloud donnent accès à un espace de stockage d
 
 L'accès à cet espace est possible à l'aide d'un **utilisateur FTP** et de son mot de passe associé.
 
-Cet accès permet notamment de [mettre en ligne votre site](/pages/web/hosting/hosting_how_to_get_my_website_online/).
+Cet accès permet notamment de [mettre en ligne votre site](/pages/web/hosting/hosting_how_to_get_my_website_online).
 
 **Découvrez comment modifier le mot de passe d'un utilisateur FTP créé sur votre hébergement web OVHcloud.**
 
@@ -40,7 +40,7 @@ Un tableau affiche les *utilisateurs FTP* créés sur votre hébergement web. Ce
 
 > [!primary]
 >
-> Pour plus d'informations sur les bonnes pratiques en matière de gestion de mots de passe, suivez les instructions de ce [guide](/pages/account/customer/manage-ovh-password/).
+> Pour plus d'informations sur les bonnes pratiques en matière de gestion de mots de passe, suivez les instructions de ce [guide](/pages/account/customer/manage-ovh-password).
 >
 
 Votre nouveau mot de passe devra respecter la **politique des mots de passe** suivante :
@@ -66,15 +66,15 @@ Consultez enfin l'onglet `Tâches en cours`{.action} et rafraîchissez la page r
 
 ### Étape 3 : accéder à votre espace de stockage
 
-Pour accéder à votre espace de stockage FTP, consultez notre guide [« Se connecter à l’espace de stockage de son hébergement web »](/pages/web/hosting/ftp_connection/).
+Pour accéder à votre espace de stockage FTP, consultez notre guide [« Se connecter à l’espace de stockage de son hébergement web »](/pages/web/hosting/ftp_connection).
 
 ## Aller plus loin <a name="go-further"></a>
 
-[Modifier le mot de passe de votre compte](/pages/account/customer/manage-ovh-password/)
+[Modifier le mot de passe de votre compte](/pages/account/customer/manage-ovh-password)
 
-[Se connecter à l’espace de stockage de son hébergement web](/pages/web/hosting/ftp_connection/)
+[Se connecter à l’espace de stockage de son hébergement web](/pages/web/hosting/ftp_connection)
 
-[Mettre en ligne votre site](/pages/web/hosting/hosting_how_to_get_my_website_online/)
+[Mettre en ligne votre site](/pages/web/hosting/hosting_how_to_get_my_website_online)
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
 

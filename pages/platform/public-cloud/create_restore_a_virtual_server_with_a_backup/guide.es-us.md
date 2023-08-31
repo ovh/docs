@@ -50,7 +50,7 @@ Algunos elementos están predefinidos:
 
 Asigne un nombre a la nueva instancia, la llave SSH, el vRack y el período de facturación y haga clic en el botón `Crear la instancia`{.action}.
 
-Para más información sobre la creación de una instancia, consulte [la presente guía](/pages/platform/public-cloud/public-cloud-first-steps#3-crear-una-instancia/).
+Para más información sobre la creación de una instancia, consulte [la presente guía](/pages/platform/public-cloud/public-cloud-first-steps#3-crear-una-instancia).
 
 > [!primary]
 >

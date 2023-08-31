@@ -12,7 +12,7 @@ updated: 2023-05-23
 
 Este tutorial explica las principales funcionalidades del archivo ".htaccess" para su alojamiento web.
 
-El archivo ".htaccess" es un archivo de configuración (HTTP) Apache ejecutado por el servidor web de su alojamiento web. Permite establecer reglas específicas para un directorio y todos sus subdirectorios. Es posible crear varios ficheros ".htaccess" en [el espacio FTP](/pages/web/hosting/ftp_connection/) de su alojamiento web. 
+El archivo ".htaccess" es un archivo de configuración (HTTP) Apache ejecutado por el servidor web de su alojamiento web. Permite establecer reglas específicas para un directorio y todos sus subdirectorios. Es posible crear varios ficheros ".htaccess" en [el espacio FTP](/pages/web/hosting/ftp_connection) de su alojamiento web. 
 
 Si todavía no existe en su espacio FTP, puede añadirlo creando un archivo que usted llamará "**.htaccess**" en el directorio para el que desea aplicar una o más de las reglas descritas en este tutorial.
 
@@ -43,13 +43,13 @@ La configuración, la gestión y la responsabilidad de los servicios que OVHclou
 
 Esta funcionalidad es muy útil y refuerza la seguridad de sus sitios web. Esto puede reducir el riesgo de pirateo de un sitio web.
 
-Para más información, consulte nuestro tutorial: ["Cómo bloquear el acceso a mi sitio web para determinadas direcciones IP a través de un archivo .htaccess? "](/pages/web/hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website/).
+Para más información, consulte nuestro tutorial: ["Cómo bloquear el acceso a mi sitio web para determinadas direcciones IP a través de un archivo .htaccess? "](/pages/web/hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website).
 
 ### Establecer una contraseña de acceso encriptada para acceder a un directorio o sitio web
 
 A través del archivo ".htaccess", puede establecer un acceso protegido (mediante una contraseña encriptada) a los datos presentes en su alojamiento.
 
-Para más información, consulte nuestro tutorial ["Proteger la interfaz de administración de su sitio web mediante un archivo .htaccess"](/pages/web/hosting/htaccess_protect_directory_by_password/).
+Para más información, consulte nuestro tutorial ["Proteger la interfaz de administración de su sitio web mediante un archivo .htaccess"](/pages/web/hosting/htaccess_protect_directory_by_password).
 
 ### Especificar un archivo de índice diferente
 
@@ -83,7 +83,7 @@ una parte de las peticiones HTTP a un solo archivo del sitio web.
 - las peticiones a una carpeta en particular, sin mostrar la carpeta correspondiente;
 - automáticamente un internauta hacia su sitio web en HTTPS cuando lo consulta con una URL en HTTP.
 
-Más información en nuestro tutorial: ["Reescribir la URL de acceso a mi sitio web gracias al mod_rewrite a través del archivo .htaccess"](/pages/web/hosting/htaccess_url_rewriting_using_mod_rewrite/).
+Más información en nuestro tutorial: ["Reescribir la URL de acceso a mi sitio web gracias al mod_rewrite a través del archivo .htaccess"](/pages/web/hosting/htaccess_url_rewriting_using_mod_rewrite).
 
 #### Redirigir los mensajes de error
 
@@ -136,13 +136,13 @@ La línea anterior redirigirá al internauta que experimente un error **404** ha
 
 ## Más información <a name="go-further"></a>
 
-[Conectarse al espacio FTP de un alojamiento web](/pages/web/hosting/ftp_connection/)
+[Conectarse al espacio FTP de un alojamiento web](/pages/web/hosting/ftp_connection)
 
-[Bloquear el acceso a mi sitio web para algunas direcciones IP a través de un archivo .htaccess ?](/pages/web/hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website/)
+[Bloquear el acceso a mi sitio web para algunas direcciones IP a través de un archivo .htaccess ?](/pages/web/hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website)
 
-[Proteger la interfaz de administración de su sitio web con un fichero .htaccess](/pages/web/hosting/htaccess_protect_directory_by_password/)
+[Proteger la interfaz de administración de su sitio web con un fichero .htaccess](/pages/web/hosting/htaccess_protect_directory_by_password)
 
-[Reescribir la URL de acceso a mi sitio web gracias al mod_rewrite a través del archivo .htaccess](/pages/web/hosting/htaccess_url_rewriting_using_mod_rewrite/)
+[Reescribir la URL de acceso a mi sitio web gracias al mod_rewrite a través del archivo .htaccess](/pages/web/hosting/htaccess_url_rewriting_using_mod_rewrite)
 
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
 

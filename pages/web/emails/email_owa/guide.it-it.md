@@ -218,7 +218,7 @@ La disattivazione di questi cookies può compromettere la stabilità della webma
 
 ## Per saperne di più
 
-[Impostare risposte automatiche con OWA](/pages/web/microsoft-collaborative-solutions/owa_automatic_replies/)
+[Impostare risposte automatiche con OWA](/pages/web/microsoft-collaborative-solutions/owa_automatic_replies)
 
 [Condividere una cartella con la Webmail OWA](/pages/web/microsoft-collaborative-solutions/owa_directory_sharing)
 

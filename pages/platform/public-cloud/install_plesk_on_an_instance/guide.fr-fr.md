@@ -21,7 +21,7 @@ Plesk est une interface de gestion de serveurs simple à prendre en main. Vous a
 
 ## Prérequis
 
-- [Avoir créé une instance depuis l'espace client OVHcloud](/pages/platform/public-cloud/public-cloud-first-steps#etape-3-creer-une-instance/).
+- [Avoir créé une instance depuis l'espace client OVHcloud](/pages/platform/public-cloud/public-cloud-first-steps#etape-3-creer-une-instance).
 - [Passer root et définir un mot de passe](/pages/platform/public-cloud/become_root_and_change_password).
 
 ## En pratique

@@ -32,7 +32,7 @@ Estas direcciones Additional IP solo pueden migrar a las instancias de un mismo 
 ## Requisitos
 
 - Tener acceso al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
-- Disponer al menos de una instancia. A tal efecto, consulte [la guía para crear una instancia desde el área de cliente](/pages/platform/public-cloud/public-cloud-first-steps#3-crear-una-instancia/).
+- Disponer al menos de una instancia. A tal efecto, consulte [la guía para crear una instancia desde el área de cliente](/pages/platform/public-cloud/public-cloud-first-steps#3-crear-una-instancia).
 
 > [!warning]
 > Esta funcionalidad no está actualmente disponible para instancias Metal.

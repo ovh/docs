@@ -17,7 +17,7 @@ Via l’[API OVHcloud](https://ca.api.ovh.com/), vous pouvez aussi définir des 
 Utiliser un script personnalisé peut-être intéressant dans les cas suivants :
 
 - Vous utilisez un OS volatile que vous ne souhaitez pas installer sur le disque et qui reste uniquement en RAM.
-- Vous faites du multicloud et l'un des autres fournisseurs que vous utilisez ne propose ni l'OS que vous souhaitez installer dans son catalogue, ni de solution alternative telle que [BringYourOwnImage](/pages/cloud/dedicated/bring-your-own-image/). Souhaitant une méthode unique et standardisée d'installation quel que soit le fournisseur, vous avez construit votre propre image de rescue d'installation pour gérer l'installation complète de votre serveur dédié.
+- Vous faites du multicloud et l'un des autres fournisseurs que vous utilisez ne propose ni l'OS que vous souhaitez installer dans son catalogue, ni de solution alternative telle que [BringYourOwnImage](/pages/cloud/dedicated/bring-your-own-image). Souhaitant une méthode unique et standardisée d'installation quel que soit le fournisseur, vous avez construit votre propre image de rescue d'installation pour gérer l'installation complète de votre serveur dédié.
 
 ## Prérequis
 

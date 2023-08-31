@@ -48,7 +48,7 @@ Die folgenden Operationen können manuell durchgeführt werden und werden in der
 
 Die Umgebung muss mittels der openRC-Datei geladen werden. Laden Sie dazu die Datei "openrc.sh" herunter, die Sie im Horizon-Interface finden. Deren Verwendung stellt alle Umgebungsvariablen bereit, die für die Komposition der nachfolgenden Befehle erforderlich sind.
 
-Um sich mit Horizon zu verbinden und die Datei herunterzuladen, lesen Sie [diese Anleitung](/pages/platform/public-cloud/introducing_horizon/).
+Um sich mit Horizon zu verbinden und die Datei herunterzuladen, lesen Sie [diese Anleitung](/pages/platform/public-cloud/introducing_horizon).
 
 In unserem Beispiel möchten wir die Metadaten eines Objekts erhalten, das mithilfe von Public Cloud Storage gespeichert wurde. Die Schritte sind:
 

@@ -28,7 +28,7 @@ Moduł Cloud-Init pozwala na skonfigurowanie [instancji Public Cloud](https://ww
 ## Wymagania początkowe
 
 * Utworzenie [instancji Public Cloud](https://www.ovh.pl/public-cloud/instances/){.external}
-* [Połączenie przez SSH](/pages/platform/public-cloud/public-cloud-first-steps#step-4-connecting-to-your-instance/){.external} (root) z instancją
+* [Połączenie przez SSH](/pages/platform/public-cloud/public-cloud-first-steps#step-4-connecting-to-your-instance) (root) z instancją
 
 
 ## W praktyce

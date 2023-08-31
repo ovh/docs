@@ -17,7 +17,7 @@ With the [OVHcloud API](https://api.ovh.com/), you can define custom scripts.
 Using a custom script can be interesting in the following use cases:
 
 - You are using a volatile OS that you don't want to install on disk and that remains only in memory.
-- You have a multi-cloud strategy and one of the other cloud providers you use doesn't offer the OS you want to install, nor does it offer an alternative solution such as [BringYourOwnImage](/pages/cloud/dedicated/bring-your-own-image/). You want a unique and standard installation process whatever the cloud provider is, so you have built your own rescue installation image to fully manage the complete OS installation of your dedicated server.
+- You have a multi-cloud strategy and one of the other cloud providers you use doesn't offer the OS you want to install, nor does it offer an alternative solution such as [BringYourOwnImage](/pages/cloud/dedicated/bring-your-own-image). You want a unique and standard installation process whatever the cloud provider is, so you have built your own rescue installation image to fully manage the complete OS installation of your dedicated server.
 
 ## Requirements
 
