@@ -1,14 +1,17 @@
 ---
 title: "Order a Domain Name"
-excerpt: "Use the OVHcloud public API to order your domain names"
+excerpt: "Find out how to use the OVHcloud Public API to order your domain names"
 routes:
   canonical: "/pages/web/domains/api_domain_order"
-updated: 2022-05-05
+updated: 2023-08-30
 ---
 
-**Last updated 5th May 2022**
-
 <!-- Reminder to put at the beginning of each page -->
+
+> [!warning]
+>
+> Using OVHcloud APIs requires advanced knowledge. If you experience any difficulties, please contact [OVHcloud partners](https://partner.ovhcloud.com/es/directory/).
+>
 
 > [!primary]
 >
@@ -563,6 +566,8 @@ Below is the exhaustive list of required configurations for a domain name.
 | `PROTECTED_CODE`    | string                         | yes, if present      | Some domains are reserved by the registry and require a specific code to order them                                                                                                                                                                                                                               |
 | `OWNER_LEGAL_AGE`   | bool                           | yes                  | Used to legally certify that the domain registrant is old enough to order a domain name                                                                                                                                                                                                                           |
 | `AUTH_INFO`         | string                         | no                   | Authorization code used to prove that you are the domain owner. Used for domain name transfers.                                                                                                                                                                                                                   |
+| `DNS`               | string                         | no                   | Enter the DNS servers to use for the domain name. These will be active as soon as the domain is delivered. To enter the DNS servers, separate them with a `;` without spaces. *Example*: `dnsXX.ovh.net;nsXX.ovh.net` |
+| `KEEP_DNS`          | bool                           | no                   | Only for incoming domain name transfers. Used to indicate that you want to keep the DNS servers initially declared at the old registrar. |
 
 > [!warning]
 >
