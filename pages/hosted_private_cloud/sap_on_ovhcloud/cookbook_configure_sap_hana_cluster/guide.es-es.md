@@ -36,7 +36,7 @@ To allow the Corosync service to get information from your SAP HANA nodes, you h
 
 We recommend creating a dedicated user with limited permissions to interact with the vSphere for the data centre where your SAP HANA virtual machines are hosted.
 
-This dedicated user needs only the "Read only" right to vSphere access. To know how to create this dedicated user, please refer to [our guide on changing user rights](/pages/cloud/private-cloud/change_users_rights).
+This dedicated user needs only the "Read only" right to vSphere access. To know how to create this dedicated user, please refer to [our guide on changing user rights](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/change_users_rights).
 
 ### SUSE packages
 

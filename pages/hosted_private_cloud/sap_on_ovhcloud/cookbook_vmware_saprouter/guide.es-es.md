@@ -29,7 +29,7 @@ If you didn't create a Network Firewall and a firewall rule for the public IP ad
 >>
 >> If you have many public IP addresses or services, you can filter them with the `All service types`{.action} value and select `Hosting Private Cloud (VMware)`{.action}, or with the `All services`{.action} value and select your VMware on OVHcloud solution.
 >>
->> In our [First steps with NSX](/pages/cloud/private-cloud/nsx-01-first-steps) guide, the [Displaying the HA VIP virtual IP address](/pages/cloud/private-cloud/nsx-01-first-steps/#displaying-the-ha-vip-virtual-ip-address) chapter shows you the way to get the public IP address held by your NSX gateway.
+>> In our [First steps with NSX](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx-01-first-steps) guide, the [Displaying the HA VIP virtual IP address](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx-01-first-steps/#displaying-the-ha-vip-virtual-ip-address) chapter shows you the way to get the public IP address held by your NSX gateway.
 >>
 >> Expand the IPv4 address block, select the IPv4 address used by your NSX gateway and click on `Create Firewall`{.action}.
 >>
@@ -187,13 +187,13 @@ To install the SAProuter service on your dedicated virtual machine, we recommend
 
 We advise updating your SAProuter as often as you can and deploying it in a monitored and isolated network of your SAP infrastructure. The SAProuter should communicate with your SAP infrastructure on restricted ports.
 
-Find more information about the firewall rule with an NSX gateway in [our guide](/pages/cloud/private-cloud/nsx-06-manage-gateway-firewall).
+Find more information about the firewall rule with an NSX gateway in [our guide](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx-06-manage-gateway-firewall).
 
 ## Go further
 
-- [Configuring the Network Firewall](/pages/cloud/dedicated/firewall_network)
+- [Configuring the Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network)
 - [Install SAProuter](https://support.sap.com/en/tools/connectivity-tools/saprouter/install-saprouter.html)
-- [Gateway Firewall Management in NSX](/pages/cloud/private-cloud/nsx-06-manage-gateway-firewall)
+- [Gateway Firewall Management in NSX](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx-06-manage-gateway-firewall)
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/es-es/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 

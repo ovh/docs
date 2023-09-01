@@ -20,7 +20,7 @@ Ce guide fournit des instructions générales pour sauvegarder une base de donn�
 
 ### Installation de Veeam Backup and Replication
 
-Si vous souhaitez être guidé sur l'installation de Veeam Backup and Replication sur votre serveur Windows, nous vous recommandons [notre guide](/pages/cloud/storage/backup/veeam_veeam_backup_replication).
+Si vous souhaitez être guidé sur l'installation de Veeam Backup and Replication sur votre serveur Windows, nous vous recommandons [notre guide](/pages/storage_and_backup/backup_and_disaster_recovery_solutions/veeam/veeam_veeam_backup_replication).
 
 ### Configuration du Backup Repository
 
@@ -70,7 +70,7 @@ Pour cette configuration, vous pouvez utiliser un espace de stockage partagé, a
 
 Ce Backup Repository servira à sécuriser vos sauvegardes sur un autre espace de stockage et sur une autre localisation OVHcloud.
 
-Pour découvrir les étapes de création d'un bucket Object Storage S3, nous vous recommandons [notre guide](/pages/cloud/storage/object_storage/s3_create_bucket).
+Pour découvrir les étapes de création d'un bucket Object Storage S3, nous vous recommandons [notre guide](/pages/storage_and_backup/object_storage/s3_create_bucket).
 
 > [!tabs]
 > **Étape 1**
@@ -103,7 +103,7 @@ Pour découvrir les étapes de création d'un bucket Object Storage S3, nous vou
 >> 
 >> Entrez le `Service point`{.action} qui correspond à l'endpoint du bucket Object Storage S3 ainsi que la région.
 >>
->> Ajoutez les identifiants de l'utilisateur S3 qui possède le rôle Administrator sur ce bucket Object Storage S3. Il s'agit de la clé d'accès et de la clé secrète de l'utilisateur S3 associée au bucket Object Storage S3. Retrouvez plus d'informations sur l'utilisateur S3 dans [notre guide](/pages/cloud/storage/object_storage/s3_identity_and_access_management).
+>> Ajoutez les identifiants de l'utilisateur S3 qui possède le rôle Administrator sur ce bucket Object Storage S3. Il s'agit de la clé d'accès et de la clé secrète de l'utilisateur S3 associée au bucket Object Storage S3. Retrouvez plus d'informations sur l'utilisateur S3 dans [notre guide](/pages/storage_and_backup/object_storage/s3_identity_and_access_management).
 >>
 >> ![s3_no_snc_5](images/s3_no_snc_5.png){.thumbnail}
 >>

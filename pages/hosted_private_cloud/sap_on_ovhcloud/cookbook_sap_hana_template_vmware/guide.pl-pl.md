@@ -13,10 +13,10 @@ This guide provides instructions for deploying a SLES for SAP virtual machine wi
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 - [VMware on OVHcloud solution](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/) deployed.
 - A [Public Cloud project](/pages/platform/public-cloud/create_a_public_cloud_project) in your OVHcloud account.
-- [An S3 Object Storage bucket](/pages/cloud/storage/object_storage/s3_create_bucket).
-- [An S3 user](/pages/cloud/storage/object_storage/s3_identity_and_access_management#creation-dun-utilsateur) with read right.
-- [A second S3 Object Storage bucket](/pages/cloud/storage/object_storage/s3_create_bucket).
-- [An S3 user](/pages/cloud/storage/object_storage/s3_identity_and_access_management#creation-dun-utilsateur) with read/write rights on this second S3 Object Storage bucket.
+- [An S3 Object Storage bucket](/pages/storage_and_backup/object_storage/s3_create_bucket).
+- [An S3 user](/pages/storage_and_backup/object_storage/s3_identity_and_access_management#creation-dun-utilsateur) with read right.
+- [A second S3 Object Storage bucket](/pages/storage_and_backup/object_storage/s3_create_bucket).
+- [An S3 user](/pages/storage_and_backup/object_storage/s3_identity_and_access_management#creation-dun-utilsateur) with read/write rights on this second S3 Object Storage bucket.
 
 ## Instructions
 
@@ -46,7 +46,7 @@ First, you must upload SAP HANA sources to your first S3 Object Storage bucket, 
 > SAP HANA Components (AFL, EML, LCAPPS, EPMMDS, etc.) are not managed by this automation. They should be managed in the post-installation step.
 >
 
-We recommend following our [S3 Object Storage guide](/pages/cloud/storage/object_storage/s3_getting_started_with_object_storage) if it's your first time with S3 Object Storage.
+We recommend following our [S3 Object Storage guide](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage) if it's your first time with S3 Object Storage.
 
 Once the SAP HANA sources have been uploaded in your S3 Object Storage bucket, you can now connect to the vSphere interface of your VMware on OVHcloud solution. Get the URL at [this address](https://www.ovh.com/manager/#/dedicated/dedicated_cloud).
 
@@ -234,7 +234,7 @@ Install your SAP HANA licence.
 </li></ol>
 
 <ol start="3"><li>
-Create the scheduling backups for your SAP HANA database. We present an example of the scheduling backups with OVHcloud Backint Agent for SAP HANA in <a href="/pages/cloud/sap/cookbook-install-ovhcloud-backint-agent">our guide</a>.
+Create the scheduling backups for your SAP HANA database. We present an example of the scheduling backups with OVHcloud Backint Agent for SAP HANA in <a href="/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook-install-ovhcloud-backint-agent">our guide</a>.
 </li></ol>
 
 <ol start="4"><li>
@@ -267,8 +267,8 @@ systemctl enable chronyd.service
 
 ## Go further
 
-- [Install and use OVHcloud Backint Agent for SAP HANA](/pages/cloud/sap/cookbook-install-ovhcloud-backint-agent)
-- [Use OVHcloud Backint Agent with several S3 Object Storage buckets](/pages/cloud/sap/cookbook-configure-ovhcloud-backint-agent-several-buckets)
+- [Install and use OVHcloud Backint Agent for SAP HANA](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook-install-ovhcloud-backint-agent)
+- [Use OVHcloud Backint Agent with several S3 Object Storage buckets](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook-configure-ovhcloud-backint-agent-several-buckets)
 - [SAP HANA on VMware vSphere Best Practices and Reference Architecture Guide](https://core.vmware.com/resource/sap-hana-vmware-vsphere-best-practices-and-reference-architecture-guide)
 - [SAP Note 1606643 - Linux: VMware vSphere host monitoring interface](https://me.sap.com/notes/1606643/E)
 - [SAP Note 2470289 - FAQ: SAP HANA Non-Uniform Memory Access (NUMA)](https://me.sap.com/notes/2470289)

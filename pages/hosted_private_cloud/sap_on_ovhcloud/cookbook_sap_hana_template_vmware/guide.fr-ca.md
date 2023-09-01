@@ -13,10 +13,10 @@ Ce guide vous détaille les étapes pour le déploiement d'une machine virtuelle
 - Un accès à l’[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
 - Une [solution VMware on OVHcloud](https://www.ovhcloud.com/fr-ca/hosted-private-cloud/vmware/) déployée.
 - [Un projet Public Cloud](/pages/platform/public-cloud/create_a_public_cloud_project) dans votre compte OVHcloud.
-- [Un bucket Object Storage S3](/pages/cloud/storage/object_storage/s3_create_bucket).
-- [Un utilisateur S3](/pages/cloud/storage/object_storage/s3_identity_and_access_management#creation-dun-utilsateur) avec le droit de lecture.
-- [Un second bucket Object Storage S3](/pages/cloud/storage/object_storage/s3_create_bucket).
-- [Un utilisateur S3](/pages/cloud/storage/object_storage/s3_identity_and_access_management#creation-dun-utilsateur) avec les droits de lecture et d'écriture sur ce second bucket Object Storage S3.
+- [Un bucket Object Storage S3](/pages/storage_and_backup/object_storage/s3_create_bucket).
+- [Un utilisateur S3](/pages/storage_and_backup/object_storage/s3_identity_and_access_management#creation-dun-utilsateur) avec le droit de lecture.
+- [Un second bucket Object Storage S3](/pages/storage_and_backup/object_storage/s3_create_bucket).
+- [Un utilisateur S3](/pages/storage_and_backup/object_storage/s3_identity_and_access_management#creation-dun-utilsateur) avec les droits de lecture et d'écriture sur ce second bucket Object Storage S3.
 
 ## En pratique
 
@@ -46,7 +46,7 @@ Vous devez dans un premier temps déposer les sources nécessaires à l'installa
 > Les SAP HANA Components (AFL, EML, LCAPPS, EPMMDS, etc.) ne sont pas pris en charge par cette automatisation et devront être gérés en post-installation.
 >
 
-Nous vous recommandons de suivre notre [guide Object Storage S3](/pages/cloud/storage/object_storage/s3_getting_started_with_object_storage), si ce sont vos premiers pas avec un bucket Object Storage S3.
+Nous vous recommandons de suivre notre [guide Object Storage S3](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage), si ce sont vos premiers pas avec un bucket Object Storage S3.
 
 Une fois les sources SAP HANA déposées dans votre bucket Object Storage S3, vous pouvez à présent vous rendre sur l'interface vSphere de votre solution VMware on OVHcloud. Obtenez l'URL à [cette adresse](https://www.ovh.com/manager/#/dedicated/dedicated_cloud).
 
@@ -232,7 +232,7 @@ Installez la licence de votre base de données SAP HANA.
 </li></ol>
 
 <ol start="3"><li>
-Configurez votre planification de sauvegarde SAP HANA. Nous présentons des exemples de planification avec OVHcloud Backint Agent for SAP HANA dans <a href="/pages/cloud/sap/cookbook-install-ovhcloud-backint-agent/">notre guide</a>.
+Configurez votre planification de sauvegarde SAP HANA. Nous présentons des exemples de planification avec OVHcloud Backint Agent for SAP HANA dans <a href="/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook-install-ovhcloud-backint-agent/">notre guide</a>.
 </li></ol>
 
 <ol start="4"><li>
@@ -264,8 +264,8 @@ systemctl enable chronyd.service
 
 ## Aller plus loin
 
-- [Installer et utiliser OVHcloud Backint Agent pour SAP HANA](/pages/cloud/sap/cookbook-install-ovhcloud-backint-agent)
-- [Utiliser OVHcloud Backint Agent avec plusieurs buckets Object Storage S3](/pages/cloud/sap/cookbook-configure-ovhcloud-backint-agent-several-buckets)
+- [Installer et utiliser OVHcloud Backint Agent pour SAP HANA](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook-install-ovhcloud-backint-agent)
+- [Utiliser OVHcloud Backint Agent avec plusieurs buckets Object Storage S3](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook-configure-ovhcloud-backint-agent-several-buckets)
 - [SAP HANA on VMware vSphere Best Practices and Reference Architecture Guide](https://core.vmware.com/resource/sap-hana-vmware-vsphere-best-practices-and-reference-architecture-guide)
 - [SAP Note 1606643 - Linux: VMware vSphere host monitoring interface](https://me.sap.com/notes/1606643/E)
 - [SAP Note 2470289 - FAQ: SAP HANA Non-Uniform Memory Access (NUMA)](https://me.sap.com/notes/2470289)

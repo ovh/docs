@@ -29,7 +29,7 @@ Si vous n'avez pas créé de Network Firewall et de règles de filtrage réseau 
 >>
 >> Si vous possédez plusieurs adresses IP publiques ou services, vous pouvez soit filtrer avec les valeurs `Tous les types de service`{.action} et sélectionner `Hosting Private Cloud (VMware)`{.action}, soit avec les valeurs `Tous les services`{.action} et sélectionner votre solution VMware on OVHcloud.
 >>
->> Dans notre documentation [Premiers pas avec NSX](/pages/cloud/private-cloud/nsx-01-first-steps), le chapitre [Affichage de l'adresse IP virtuelle HA VIP](/pages/cloud/private-cloud/nsx-01-first-steps/#displaying-the-ha-vip-virtual-ip-address) vous présente le moyen d'obtenir votre adresse IP publique portée par votre gateway NSX.
+>> Dans notre documentation [Premiers pas avec NSX](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx-01-first-steps), le chapitre [Affichage de l'adresse IP virtuelle HA VIP](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx-01-first-steps/#displaying-the-ha-vip-virtual-ip-address) vous présente le moyen d'obtenir votre adresse IP publique portée par votre gateway NSX.
 >>
 >> Développez votre bloc d'adresses IPv4, sélectionnez l'adresse IPv4 utilisée par votre gateway NSX et cliquez sur `Créer Firewall`{.action}.
 >>
@@ -185,13 +185,13 @@ Pour la réalisation de l'installation du service SAProuter sur votre machine vi
 
 Nous vous conseillons de mettre à jour régulièrement le SAProuter et de le positionner dans un réseau surveillé et isolé du réseau de votre infrastructure SAP. Le SAProuter ne doit communiquer avec votre infrastructure SAP que sur les ports nécessaires pour le support SAP.
 
-[Ce guide](/pages/cloud/private-cloud/nsx-06-manage-gateway-firewall) détaille les options disponibles lors de la configuration de règles de filtrage réseau sur une gateway NSX.
+[Ce guide](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx-06-manage-gateway-firewall) détaille les options disponibles lors de la configuration de règles de filtrage réseau sur une gateway NSX.
 
 ## Aller plus loin
 
-- [Configurer le Network Firewall](/pages/cloud/dedicated/firewall_network)
+- [Configurer le Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network)
 - [Instructions pour installer un SAProuter](https://support.sap.com/en/tools/connectivity-tools/saprouter/install-saprouter.html)
-- [Gestion du pare-feu des passerelles dans NSX](/pages/cloud/private-cloud/nsx-06-manage-gateway-firewall)
+- [Gestion du pare-feu des passerelles dans NSX](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx-06-manage-gateway-firewall)
 
 Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr-ca/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 

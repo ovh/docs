@@ -20,7 +20,7 @@ This guide provides instructions for backuping an SAP HANA database with Veeam B
 
 ### Veeam Backup and Replication installation
 
-If you want to be helped during the installation of Veeam Backup and Replication on your Windows server, we recommend you [our guide](/pages/cloud/storage/backup/veeam_veeam_backup_replication).
+If you want to be helped during the installation of Veeam Backup and Replication on your Windows server, we recommend you [our guide](/pages/storage_and_backup/backup_and_disaster_recovery_solutions/veeam/veeam_veeam_backup_replication).
 
 ### Backup Repository configuration
 
@@ -70,7 +70,7 @@ For this configuration, you can use a space on a shared storage as well as a S3 
 
 This Backup Repository will be used for secure your backups on another storage space and another OVHcloud location.
 
-To discover a S3 Object Storage creation steps, we recommend our [our guide](/pages/cloud/storage/object_storage/s3_create_bucket).
+To discover a S3 Object Storage creation steps, we recommend our [our guide](/pages/storage_and_backup/object_storage/s3_create_bucket).
 
 > [!tabs]
 > **Step 1**
@@ -103,7 +103,7 @@ To discover a S3 Object Storage creation steps, we recommend our [our guide](/pa
 >>
 >> Set the `Service point`{.action} which match the endpoint of the S3 Object Storage bucket as well as its region.
 >>
->> Add your credentials which have the Administrator role on this S3 Object Storage bucket. It's the user's access key and the user's secret key linked to the S3 Object Storage bucket. Find more information about that in [our guide](/pages/cloud/storage/object_storage/s3_identity_and_access_management).
+>> Add your credentials which have the Administrator role on this S3 Object Storage bucket. It's the user's access key and the user's secret key linked to the S3 Object Storage bucket. Find more information about that in [our guide](/pages/storage_and_backup/object_storage/s3_identity_and_access_management).
 >>
 >> ![s3_no_snc_5](images/s3_no_snc_5.png){.thumbnail}
 >>

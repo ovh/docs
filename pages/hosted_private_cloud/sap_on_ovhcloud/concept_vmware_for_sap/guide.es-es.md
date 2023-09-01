@@ -23,7 +23,7 @@ The following concept allows you to build an architecture with an SAP HANA datab
 
 To guarantee the quality of communication between your local site and your SAP infrastructure hosted at OVHcloud, we recommend using OVHcloud Connect. This solution offers you a secure and high-performance link between your offices and OVHcloud. To get more information, please refer to the [OVHcloud Connect documentation](https://www.ovhcloud.com/es-es/network/ovhcloud-connect/).
 
-Instead of using OVHcloud Connect, a point-to-point VPN can also be deployed with NSX if you use a OVHcloud Managed VMware vSphere®, Software-Defined Datacenter SAP HANA pack. To learn how to configure an NSX Gateway VPN with OVHcloud, please refer to [our documentation](/pages/cloud/private-cloud/nsx-12-configure-ipsec). If you use a OVHcloud Managed VMware vSphere®, Hyperconverged Storage SAP HANA pack, you must deploy a virtual machine to manage this point-to-point VPN.
+Instead of using OVHcloud Connect, a point-to-point VPN can also be deployed with NSX if you use a OVHcloud Managed VMware vSphere®, Software-Defined Datacenter SAP HANA pack. To learn how to configure an NSX Gateway VPN with OVHcloud, please refer to [our documentation](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx-12-configure-ipsec). If you use a OVHcloud Managed VMware vSphere®, Hyperconverged Storage SAP HANA pack, you must deploy a virtual machine to manage this point-to-point VPN.
 
 ### SAP HANA database
 
@@ -31,23 +31,23 @@ We advise to take consideration of the [SAP Note 2161991](https://launchpad.supp
 
 OVHcloud proposes an SAP HANA virtual machine template. You have the possibility to use this template to deploy a virtual machine for SAP HANA with SUSE Linux Enterprise Server for SAP Application (SLES4SAP) operating system installed (BYOL mode), as well as disks configured following the recommendations by SAP and VMware.
 
-This template offers also the possibility to deploy the SAP HANA database and the OVHcloud Backint Agent for SAP HANA after filling a form. To know more about this SAP HANA template, please refer to [our guide](/pages/cloud/sap/cookbook-sap-hana-template-vmware).
+This template offers also the possibility to deploy the SAP HANA database and the OVHcloud Backint Agent for SAP HANA after filling a form. To know more about this SAP HANA template, please refer to [our guide](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook-sap-hana-template-vmware).
 
 The Fault Tolerance feature provided by VMware is not suitable to protect the SAP HANA virtual machine due to the resource limitation of Fault Tolerance. However, we advise to enable the feature vSphere HA which monitors the health of each ESXi host in the cluster, and automatically restarts the virtual machines hosted on the impacted ESXi host.
 
 We advise to be careful with the NUMA sharing. To know more about that please refer to the [SAP Confluence](https://wiki.scn.sap.com/wiki/display/VIRTUALIZATION/SAP+HANA+on+VMware+vSphere) and the [SAP Note 2470289](https://launchpad.support.sap.com/#/notes/2470289).
 
-If you want to reduce the RTO and RPO in a single OVHcloud location, you have the possibility to manage an SAP HANA cluster with SUSE. We propose a [dedicated guide](/pages/cloud/sap/cookbook-configure-sap-hana-cluster) to help you to implement this configuration. In this case, we recommend to create an anti-affinity rule to avoid running both SAP HANA databases on the same ESXi host.
+If you want to reduce the RTO and RPO in a single OVHcloud location, you have the possibility to manage an SAP HANA cluster with SUSE. We propose a [dedicated guide](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook-configure-sap-hana-cluster) to help you to implement this configuration. In this case, we recommend to create an anti-affinity rule to avoid running both SAP HANA databases on the same ESXi host.
 
 ### SAP Application Servers
 
-The Fault Tolerance feature provided by VMware guarantees the availability of your SAP Application Servers in case of ESXi host failures. Your virtual machines are automatically activated on another member of your VMware cluster. We advise to enable it on your virtual machines which host the SAP Central Services (SCS), if you do not manage an SAP cluster for this service in another way. The Fault Tolerance could also be enabled on your SAP Application Servers which host a critical service. To discover how to enable this feature, please refer to [our guide](/pages/cloud/private-cloud/vmware_fault_tolerance).
+The Fault Tolerance feature provided by VMware guarantees the availability of your SAP Application Servers in case of ESXi host failures. Your virtual machines are automatically activated on another member of your VMware cluster. We advise to enable it on your virtual machines which host the SAP Central Services (SCS), if you do not manage an SAP cluster for this service in another way. The Fault Tolerance could also be enabled on your SAP Application Servers which host a critical service. To discover how to enable this feature, please refer to [our guide](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_fault_tolerance).
 
 However, to be able to enable the Fault Tolerance, the virtual machine cannot exceed 8 vCPUs and 128 GB of memory.
 
 For SAP Application Servers which do not host a critical service, the vSphere HA feature is recommended.
 
-Last, the vSphere Distributed Resource Scheduler can also be activated with VM/Host rules to avoid running all SAP Application Servers on the same ESXi host. To know more about this feature, please refer to [our guide](/pages/cloud/private-cloud/vmware_drs_distributed_ressource_scheduler_new).
+Last, the vSphere Distributed Resource Scheduler can also be activated with VM/Host rules to avoid running all SAP Application Servers on the same ESXi host. To know more about this feature, please refer to [our guide](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_drs_distributed_ressource_scheduler_new).
 
 ### Backup infrastructure
 
@@ -59,8 +59,8 @@ OVHcloud provides OVHcloud Backint Agent for SAP HANA to backup your SAP HANA da
 
 This backint agent allows you to take advantage of an S3 Object Storage, like retention policy or immutable policy. To know more about the OVHcloud Backint Agent for SAP HANA, we recommend taking note of these guides:
 
-- [Install and use OVHcloud Backint Agent for SAP HANA](/pages/cloud/sap/cookbook-install-ovhcloud-backint-agent)
-- [Use OVHcloud Backint Agent with several S3 Object Storage buckets](/pages/cloud/sap/cookbook-configure-ovhcloud-backint-agent-several-buckets)
+- [Install and use OVHcloud Backint Agent for SAP HANA](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook-install-ovhcloud-backint-agent)
+- [Use OVHcloud Backint Agent with several S3 Object Storage buckets](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook-configure-ovhcloud-backint-agent-several-buckets)
 
 To ensure the recovery of the SAP HANA configuration (INI files), we suggest to set the value "true" for the parameter `include_configuration_backup`. This parameter enables the backup of all settings stored in INI files during the data backup of the SAP HANA database.
 
@@ -74,7 +74,7 @@ Another solution to accelerate the recovery of your virtual machine is to deploy
 
 Veeam Backup and Replication allows you to back up and restore snapshots of your virtual machines. It ensures a quick recovery in case of an issue with your VMware on OVHcloud solution.
 
-For help with the the installation process of a Veeam Backup and Replication server in your VMware on OVHcloud solution, please refer to the [OVHcloud documentation](/pages/cloud/storage/backup/veeam_veeam_backup_replication).
+For help with the the installation process of a Veeam Backup and Replication server in your VMware on OVHcloud solution, please refer to the [OVHcloud documentation](/pages/storage_and_backup/backup_and_disaster_recovery_solutions/veeam/veeam_veeam_backup_replication).
 
 ### Long term and archive storage
 
@@ -90,7 +90,7 @@ Configure your NSX, or your virtual machine to route the ingress traffic to your
 
 As this virtual machine is exposed to the Internet, adapt ingress firewall rules to only allow the connection from the SAP IP public range to your SAProuter server. Allow communication from your new SAProuter to your SAP infrastructure for only the needed ports/protocols. All of this information is available on the [SAP Support pages](https://support.sap.com/en/tools/connectivity-tools/saprouter/install-saprouter.html).
 
-We propose you a [guide](/pages/cloud/sap/cookbook-vmware-saprouter) to set up a SAProuter with NSX.
+We propose you a [guide](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook-vmware-saprouter) to set up a SAProuter with NSX.
 
 ### Dual locations (optional)
 
@@ -118,7 +118,7 @@ If you are interested in use cases with Zerto in an SAP HANA context, we advise 
 
 To secure your infrastructure in the event of a major incident in your primary OVHcloud location, we advise you to enable the feature named Zerto for your VMware on OVHcloud solution, allowing you to replicate your virtual machines to a VMware on OVHcloud solution hosted on a secondary OVHcloud location. With this feature, you secure your SAP Application Servers on a secondary OVHcloud location with a synchronous replication, and you reduce the RTO and the RPO if you have to switch to your secondary OVHcloud location.
 
-To know how to enable this feature, please refer to the [OVHcloud documentation](/pages/cloud/private-cloud/zerto_virtual_replication_as_a_service/).
+To know how to enable this feature, please refer to the [OVHcloud documentation](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/zerto_virtual_replication_as_a_service/).
 
 > [!warning]
 > If you trigger a switch to the secondary OVHcloud location through Zerto, the SAP HANA database has to be switched too, to ensure the performance between the SAP Application Servers and the SAP HANA database.
@@ -134,12 +134,12 @@ To guarantee the connection continuity with the SAP Support, we recommend config
 
 ## Go further
 
-- [Setting up Zerto Virtual Replication between two OVHcloud datacenters](/pages/cloud/private-cloud/zerto_virtual_replication_as_a_service)
-- [Setting up Veeam Backup & Replication](/pages/cloud/storage/backup/veeam_veeam_backup_replication)
+- [Setting up Zerto Virtual Replication between two OVHcloud datacenters](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/zerto_virtual_replication_as_a_service)
+- [Setting up Veeam Backup & Replication](/pages/storage_and_backup/backup_and_disaster_recovery_solutions/veeam/veeam_veeam_backup_replication)
 - [Installing SAProuter](https://support.sap.com/en/tools/connectivity-tools/saprouter/install-saprouter.html)
-- [Deploy a SAProuter with NSX](/pages/cloud/sap/cookbook-vmware-saprouter)
-- [Install and use OVHcloud Backint Agent for SAP HANA](/pages/cloud/sap/cookbook-install-ovhcloud-backint-agent)
-- [Use OVHcloud Backint Agent with several S3 Object Storage buckets](/pages/cloud/sap/cookbook-configure-ovhcloud-backint-agent-several-buckets)
+- [Deploy a SAProuter with NSX](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook-vmware-saprouter)
+- [Install and use OVHcloud Backint Agent for SAP HANA](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook-install-ovhcloud-backint-agent)
+- [Use OVHcloud Backint Agent with several S3 Object Storage buckets](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook-configure-ovhcloud-backint-agent-several-buckets)
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/es-es/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 

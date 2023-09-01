@@ -36,7 +36,7 @@ Pour autoriser le service corosync à obtenir les informations des nœuds SAP HA
 
 Nous recommandons d'utiliser un utilisateur dédié avec des droits limités pour interagir avec vSphere pour le datacenter où les machines virtuelles SAP HANA sont hébergées.
 
-Cet utilisateur dédié n'a besoin que du droit en « Lecture seule » pour l'accès vSphere. Pour connaître les étapes de création d'un utilisateur dédié, veuillez vous référer à [notre guide](/pages/cloud/private-cloud/change_users_rights).
+Cet utilisateur dédié n'a besoin que du droit en « Lecture seule » pour l'accès vSphere. Pour connaître les étapes de création d'un utilisateur dédié, veuillez vous référer à [notre guide](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/change_users_rights).
 
 ### Paquets SUSE
 

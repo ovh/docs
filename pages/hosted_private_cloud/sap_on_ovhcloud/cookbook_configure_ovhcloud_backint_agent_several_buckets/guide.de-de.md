@@ -18,11 +18,11 @@ The advantage of using several S3 Object Storage buckets is to separate the data
 ## Requirements.
 .
 - [A Public Cloud project](/pages/platform/public-cloud/create_a_public_cloud_project) deployed.
-- [An S3 user](/pages/cloud/storage/object_storage/s3_identity_and_access_management#creating-a-user) created.
+- [An S3 user](/pages/storage_and_backup/object_storage/s3_identity_and_access_management#creating-a-user) created.
 - [At least two S3 Object Storage buckets](pages/cloud/storage/object_storage/s3_create_bucket) created.
-- [The read and write rights configured](/pages/cloud/storage/object_storage/s3_identity_and_access_management#manage-access-to-a-bucket-via-a-profile) on the S3 Object Storage buckets for the S3 user.
+- [The read and write rights configured](/pages/storage_and_backup/object_storage/s3_identity_and_access_management#manage-access-to-a-bucket-via-a-profile) on the S3 Object Storage buckets for the S3 user.
 - An SAP HANA database installed
-- [OVHcloud Backint Agent for SAP HANA installed](/pages/cloud/sap/cookbook-install-ovhcloud-backint-agent#ovhcloud-backint-agent-for-sap-hana)
+- [OVHcloud Backint Agent for SAP HANA installed](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook-install-ovhcloud-backint-agent#ovhcloud-backint-agent-for-sap-hana)
 
 > [!warning]
 > The access key and the secret key should not be communicated. They grant the rights to write, read and delete the data which will be stored in the S3 Object Storage bucket.
@@ -33,7 +33,7 @@ The advantage of using several S3 Object Storage buckets is to separate the data
 ### S3 Object Storage
 
 > [!primary]
-> To get more information about the configuration and the usage of the AWS S3 CLI commands, please refer to the documentation [Getting started with Object Storage](/pages/cloud/storage/object_storage/s3_getting_started_with_object_storage).
+> To get more information about the configuration and the usage of the AWS S3 CLI commands, please refer to the documentation [Getting started with Object Storage](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage).
 >
 
 The bucket versioning must be enabled to ensure the correct operation of OVHcloud Backint Agent.
@@ -288,6 +288,6 @@ To recover a SAP HANA database from a backup done with OVHcloud Backint Agent, f
 
 ## Go further
 
-To improve the security of your backups, we advise you to set the [object immutability](/pages/cloud/storage/object_storage/s3_managing_object_lock).
+To improve the security of your backups, we advise you to set the [object immutability](/pages/storage_and_backup/object_storage/s3_managing_object_lock).
 
 Join our community of users on <https://community.ovh.com/en/>.
