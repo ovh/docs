@@ -46,7 +46,7 @@ O registo DKIM (**D**omain**K**eys **I**dentified **M**ail) permite assinar os e
 >
 > Se o domínio não usar os servidores DNS da OVHcloud, a alteração DKIM deverá ser efetuada através da interface do agente responsável pela configuração do domínio.
 >
-> Se o domínio for gerido pela OVHcloud, verifique se este utiliza a nossa configuração OVHcloud na [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) a partir do separador `Servidores DNS`{.action}, depois de selecionado o domínio.
+> Se o domínio for gerido pela OVHcloud, verifique se este utiliza a nossa configuração OVHcloud na [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) a partir do separador `Zona DNS`{.action}, depois de selecionado o domínio.
 >
 
 ## Instruções
@@ -105,19 +105,19 @@ Existem duas utilizações da encriptação assimétrica:
 
 #### Como é que a picadura e a encriptação assimétrica são utilizadas para o DKIM? <a name="encrypt-and-hash"></a>
 
-A partir da plataforma de e-mail, o DKIM vai utilizar a trituração para criar uma assinatura a partir de certos elementos [do cabeçalho do e-mail](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/diagnostic_headers) e do corpo do e-mail (conteúdo do e-mail).
+A partir da plataforma de e-mail, o DKIM vai utilizar a trituração para criar uma assinatura a partir de certos elementos [do cabeçalho do e-mail](/pages/web/emails/diagnostic_headers) e do corpo do e-mail (conteúdo do e-mail).
 
 A assinatura é depois encriptada com a chave privada utilizando a encriptação assimétrica.
 
 #### Porque é que precisamos de configurar os servidores DNS? <a name="dns-and-dkim"></a>
 
-Para que o destinatário possa verificar a assinatura DKIM do remetente, precisará dos parâmetros DKIM e, sobretudo, da chave pública para a decifrar. A [zona DNS](/pages/web_cloud/domains/dns_zone_edit) de um nome de domínio é pública, pelo que é acrescentado um registo DNS para transmitir a chave pública e os parâmetros DKIM ao destinatário.
+Para que o destinatário possa verificar a assinatura DKIM do remetente, precisará dos parâmetros DKIM e, sobretudo, da chave pública para a decifrar. A [zona DNS](/pages/web/domains/dns_zone_edit) de um nome de domínio é pública, pelo que é acrescentado um registo DNS para transmitir a chave pública e os parâmetros DKIM ao destinatário.
 
 #### O que é um seletor DKIM <a name="selector"></a>
 
 Quando ativa o DKIM, este funciona com um par de chave pública / chave privada. É possível atribuir vários pares de chaves ao seu domínio, no quadro de uma rotação, por exemplo. Com efeito, quando muda de par de chaves, o antigo par deve permanecer ativo enquanto o conjunto dos e-mails que enviou com a antiga chave não encontrar falha na verificação do DKIM no servidor de receção.
 
-Para que este princípio de rotação funcione, vamos utilizar o que chamamos os **seletores DKIM**. Um seletor DKIM inclui um par de chave privada/chave pública. É visível sob a forma de um canal de caráter na assinatura DKIM de um e-mail pelo argumento `s=`. Esta assinatura é visível [no cabeçalho do e-mail](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/diagnostic_headers).
+Para que este princípio de rotação funcione, vamos utilizar o que chamamos os **seletores DKIM**. Um seletor DKIM inclui um par de chave privada/chave pública. É visível sob a forma de um canal de caráter na assinatura DKIM de um e-mail pelo argumento `s=`. Esta assinatura é visível [no cabeçalho do e-mail](/pages/web/emails/diagnostic_headers).
 
 **Exemplo de uma parte de assinatura DKIM**
 
@@ -162,7 +162,7 @@ Certifique-se também de que o domínio que pretende utilizar para os seus e-mai
 
 Para configurar o DKIM, aceda ao website <https://api.ovh.com/console/>através do botão `Login`{.action} no canto superior direito e introduza as suas credenciais OVHcloud.
 
-> Apoie-se no nosso guia ["Descubra como utilizar as API OVHcloud"](/pages/manage_and_operate/api/first-steps) se nunca utilizou as API.
+> Apoie-se no nosso guia ["Descubra como utilizar as API OVHcloud"](/pages/account/api/first-steps) se nunca utilizou as API.
 
 Dirija-se à secção `/email/exchange` (ofertas Exchanges) ou `/email/pro` (oferta E-mail Pro) das API e introduza "dkim" na casa `Filter` para aparecer apenas as API relativas ao DKIM.
 
@@ -566,7 +566,7 @@ Selecione a oferta de e-mail em questão nos separadores seguintes:
 
 > [!warning]
 >
-> O seletor DKIM deve estar no estado `in Production` antes de poder ser desativado.
+> O seletor DKIM deve estar no estado `in Production` ou `ready` antes de poder ser desativado.
 
 Selecione a oferta de e-mail em questão nos separadores seguintes:
 
@@ -619,6 +619,7 @@ Selecione a oferta de e-mail em questão nos separadores seguintes:
 >> - `selectorName` : introduza o nome do seletor que deseja eliminar. <br>
 >> - `domainName` : introduza o domínio associado à sua plataforma E-mail Pro. <br>
 >>
+
 
 ### Configurar o DKIM para uma oferta de e-mail fora da sua conta OVHcloud <a name="external-dkim"></a>
 
@@ -704,7 +705,7 @@ v=DKIM1;t=s;p= MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA77VDAIfyhjtoF0DIE5V7 
 
 O registo CNAME é um alias. Isto significa que o valor-alvo remete para um URL que fornecerá ele próprio o registo DKIM ao servidor que interrogará o registo CNAME. Este tipo de registo CNAME para configurar o DKIM é frequente no quadro da utilização de um servidor de e-mail Microsoft.
 
-Tem exatamente o tipo de registo utilizado para ativar o DKIM num nome de domínio declarado para uma oferta Exchange OVHcloud.
+Tem exatamente o tipo de registo utilizado para ativar o DKIM num nome de domínio declarado para uma oferta Exchange OVHcloud. Este procedimento permite ao seu fornecedor de soluções de e-mail gerir por si a segurança e a atualização do DKIM.
 
 ### Testar o seu DKIM <a name="test-dkim"></a>
 
@@ -719,7 +720,7 @@ ARC-Authentication-Results: i=1; mx.example.com;
 Return-Path: <test-dkim@mydomain.ovh>
 </code></pre>
 
-Para obter o cabeçalho de um e-mail, consulte o nosso manual "[Obter o cabeçalho de um e-mail](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/diagnostic_headers)".
+Para obter o cabeçalho de um e-mail, consulte o nosso manual "[Obter o cabeçalho de um e-mail](/pages/web/emails/diagnostic_headers)".
 
 ## Saiba mais
 

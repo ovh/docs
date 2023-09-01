@@ -42,7 +42,7 @@ The DKIM (**D**omain**K**eys **I**dentified **M**ail) record allows you to sign 
 >
 > If your domain name does not use OVHcloud DNS servers, you will need to modify the DKIM records in the interface of the service provider that manages your domain name configuration.
 >
-> If your domain name is registered with OVHcloud, you can check if it is using the OVHcloud configuration in your [Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie). To do this, go to the `DNS servers`{.action} tab, and select the domain concerned.
+> If your domain name is registered with OVHcloud, you can check if it is using the OVHcloud configuration in your [Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie). To do this, go to the `DNS Zone`{.action} tab, and select the domain concerned.
 >
 
 ## Instructions
@@ -101,19 +101,19 @@ There are two uses for asymmetric encryption:
 
 #### How are hashing and asymmetric encryption used for DKIM? <a name="encrypt-and-hash"></a>
 
-From the email platform, DKIM will use hashing to create a signature from certain elements of [the email header](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/diagnostic_headers) and email body (email content).
+From the email platform, DKIM will use hashing to create a signature from certain elements of [the email header](/pages/web/emails/diagnostic_headers) and email body (email content).
 
 The signature is then encrypted with the private key using asymmetric encryption.
 
 #### Why do we need to configure DNS servers? <a name="dns-and-dkim"></a>
 
-In order for a recipient to verify the sender's DKIM signature, they will need the DKIM parameters and especially the public key to decrypt it. A domain name’s [DNS zone](/pages/web_cloud/domains/dns_zone_edit) is public, which is why a DNS record is added to transmit the public key and DKIM settings to the recipient.
+In order for a recipient to verify the sender's DKIM signature, they will need the DKIM parameters and especially the public key to decrypt it. A domain name’s [DNS zone](/pages/web/domains/dns_zone_edit) is public, which is why a DNS record is added to transmit the public key and DKIM settings to the recipient.
 
 #### What is a DKIM selector? <a name="selector"></a>
 
 When you enable DKIM, it works with a public/private key pair. You can assign several pairs of keys to your domain name, for example, as part of a rotation. Indeed, when you change the key pair, the old pair must remain active until all emails you sent with the old key fail to pass the DKIM check on the incoming server.
 
-For this rotation principle to work, we're going to use something called **DKIM selectors**. A DKIM selector includes a private/public key pair. It is visible as a character string in the DKIM signature of an email after the argument `s=`. This signature is visible in [the email header](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/diagnostic_headers).
+For this rotation principle to work, we're going to use something called **DKIM selectors**. A DKIM selector includes a private/public key pair. It is visible as a character string in the DKIM signature of an email after the argument `s=`. This signature is visible in [the email header](/pages/web/emails/diagnostic_headers).
 
 **Example of a DKIM signature part**
 
@@ -158,7 +158,7 @@ Also, make sure that the domain name you want to use for your emails is active i
 
 To configure DKIM, go to the website <https://api.ovh.com/console/>, log in using the `Login`{.action} button in the top right-hand corner, and enter your OVHcloud credentials.
 
-> Visit our guide ["First Steps with the OVHcloud APIs"](/pages/manage_and_operate/api/first-steps) if you have never used APIs.
+> Visit our guide ["First Steps with the OVHcloud APIs"](/pages/account/api/first-steps) if you have never used APIs.
 
 Go to the `/email/exchange` (Exchange offers) or `/email/pro` (Email Pro offer) API section, and type "dkim" in the `Filter` box to display only the API endpoints related to DKIM.
 
@@ -562,7 +562,7 @@ Select the email solution concerned in the following tabs:
 
 > [!warning]
 >
-> The DKIM selector must be in `inProduction` status before it can be disabled.
+> The DKIM selector must be in `inProduction` or `ready` status before it can be disabled.
 
 Select the email solution concerned in the following tabs:
 
@@ -615,6 +615,7 @@ Select the email solution concerned in the following tabs:
 >> - `selectorName`: Enter the name of the selector you want to delete. <br>
 >> - `domainName`: Enter the domain name attached to your Email Pro platform. <br>
 >>
+
 
 ### Configuring DKIM for an email solution outside of your OVHcloud account <a name="external-dkim"></a>
 
@@ -700,7 +701,7 @@ v=DKIM1;t=s;p= MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA77VDAIfyhjtoF0DIE5V7 
 
 The CNAME record is an alias. This means that the target value points to a URL that will itself provide the DKIM record to the server that will query the CNAME record. This type of CNAME record for setting the DKIM is common when using a Microsoft email server.
 
-This record type is used to enable DKIM on a domain name declared for an OVHcloud Exchange solution.
+This record type is used to enable DKIM on a domain name declared for an OVHcloud Exchange solution. This way, your email solution provider can manage security and update the DKIM for you.
 
 ### Test your DKIM <a name="test-dkim"></a>
 
@@ -715,7 +716,8 @@ ARC-Authentication-Results: i=1; mx.example.com;
 Return-Path: <test-dkim@mydomain.ovh>
 </code></pre>
 
-To retrieve the header of an email, please read our guide on [Retrieving email headers](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/diagnostic_headers).
+
+To retrieve the header of an email, please read our guide on [Retrieving email headers](/pages/web/emails/diagnostic_headers).
 
 ## Go further
 

@@ -46,7 +46,7 @@ Der DKIM-Eintrag (**D**omain**K**eys **I**dentified **M**ail) ermöglicht die Si
 >
 > Wenn Ihr Domainname keine OVHcloud DNS-Server verwendet, muss die Änderung des DKIM über das Interface des Anbieters vorgenommen werden, bei dem die Konfiguration Ihres Domainnamens verwaltet wird.
 >
-> Wenn Ihr Domainname bei OVHcloud registriert ist, können Sie im [Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) überprüfen, ob OVHcloud DNS-Server genutzt werden, indem Sie den Domainnamen auswählen und dann den Tab `DNS-Server`{.action} öffnen.
+> Wenn Ihr Domainname bei OVHcloud registriert ist, können Sie im [Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) überprüfen, ob OVHcloud DNS-Server genutzt werden, indem Sie den Domainnamen auswählen und dann den Tab `DNS-Zone`{.action} öffnen.
 >
 
 ## In der praktischen Anwendung
@@ -105,19 +105,19 @@ Es gibt zwei Verwendungszwecke für asymmetrische Verschlüsselung:
 
 #### Wie werden asymmetrisches Hashing und Verschlüsselung für DKIM verwendet? <a name="encrypt-and-hash"></a>
 
-Für E-Mail-Dienste nutzt DKIM das Hashing-Verfahren, um eine Signatur aus einigen Elementen des [E-Mail-Headers](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/diagnostic_headers) sowie des Inhalts der E-Mail (Body) zu erstellen.
+Für E-Mail-Dienste nutzt DKIM das Hashing-Verfahren, um eine Signatur aus einigen Elementen des [E-Mail-Headers](/pages/web/emails/diagnostic_headers) sowie des Inhalts der E-Mail (Body) zu erstellen.
 
 Die Signatur wird dann mit dem privaten Schlüssel asymmetrisch verschlüsselt.
 
 #### Warum müssen die DNS Server konfiguriert werden? <a name="dns-and-dkim"></a>
 
-Damit der Empfänger die DKIM-Signatur des Absenders überprüfen kann, benötigt er die DKIM-Parameter, insbesondere den öffentlichen Schlüssel, um die Signatur zu entschlüsseln. Die [DNS-Zone](/pages/web_cloud/domains/dns_zone_edit) eines Domainnamens ist öffentlich verfügbar, deshalb wird, um den öffentlichen Schlüssel und die DKIM-Parameter an den Empfänger weiterzuleiten, ein DNS-Eintrag verwendet.
+Damit der Empfänger die DKIM-Signatur des Absenders überprüfen kann, benötigt er die DKIM-Parameter, insbesondere den öffentlichen Schlüssel, um die Signatur zu entschlüsseln. Die [DNS-Zone](/pages/web/domains/dns_zone_edit) eines Domainnamens ist öffentlich verfügbar, deshalb wird, um den öffentlichen Schlüssel und die DKIM-Parameter an den Empfänger weiterzuleiten, ein DNS-Eintrag verwendet.
 
 #### Was ist ein DKIM-Selektor? <a name="selector"></a>
 
 Wenn Sie DKIM aktivieren, funktioniert es mit einem Schlüsselpaar. Es ist möglich, Ihrem Domainnamen mehrere Schlüsselpaare zuzuweisen, zum Beispiel mittels einer Rotation. Wenn Sie das Schlüsselpaar wechseln, muss das alte Paar so lange aktiv bleiben, bis alle mit dem alten Schlüssel versendete E-Mails den DKIM-Check beim Empfangsserver nicht mehr bestehen.
 
-Damit dieses Prinzip der Rotation funktioniert, werden **DKIM-Selektoren** eingesetzt. Ein DKIM-Selektor beinhaltet ein *private key*/*public key* Paar. Es ist als Zeichenkette in der DKIM-Signatur einer E-Mail sichtbar, nach dem Argument `s=`. Diese Signatur kann im [Header der E-Mail](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/diagnostic_headers) ausgelesen werden.
+Damit dieses Prinzip der Rotation funktioniert, werden **DKIM-Selektoren** eingesetzt. Ein DKIM-Selektor beinhaltet ein *private key*/*public key* Paar. Es ist als Zeichenkette in der DKIM-Signatur einer E-Mail sichtbar, nach dem Argument `s=`. Diese Signatur kann im [Header der E-Mail](/pages/web/emails/diagnostic_headers) ausgelesen werden.
 
 **Beispiel einer DKIM-Signatur**
 
@@ -162,7 +162,7 @@ Vergewissern Sie sich, dass der Domainname, den Sie für Ihre E-Mails verwenden 
 
 Um DKIM zu konfigurieren, gehen Sie zur Seite <https://api.ovh.com/console/> und klicken Sie oben rechts auf `Login`{.action}. Geben Sie die Zugangsdaten Ihres OVHcloud Kunden-Accounts ein, um sich einzuloggen.
 
-> Lesen Sie unsere Anleitung zur [Verwendung der API](/pages/manage_and_operate/api/first-steps), wenn Sie damit noch nicht vertraut sind.
+> Lesen Sie unsere Anleitung zur [Verwendung der API](/pages/account/api/first-steps), wenn Sie damit noch nicht vertraut sind.
 
 Öffnen Sie den Bereich `/email/exchange` oder `/email/pro`, je nach Ihrer Dienstauswahl. Geben Sie "dkim" in das Feld `Filter` ein, damit nur die Endpunkte für DKIM angezeigt werden.
 
@@ -620,6 +620,7 @@ Wählen Sie Ihr E-Mail-Angebot in den folgenden Tabs aus:
 >> - `domainName`: Geben Sie den E-Mail Pro zugewiesenen Domainnamen ein, für den Sie DKIM aktivieren möchten. <br>
 >>
 
+
 ### DKIM für einen E-Mail-Dienst außerhalb Ihres OVHcloud Kunden-Accounts konfigurieren <a name="external-dkim"></a>
 
 Wenn Sie Ihre DNS-Zone konfigurieren möchten, um einen DKIM-Eintrag für Ihren Dienst hinzuzufügen, folgen Sie den nachstehenden Anweisungen.
@@ -704,11 +705,11 @@ v=DKIM1;t=s;p= MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA77VDAIfyhjtoF0DIE5V7 
 
 Der CNAME-Eintrag ist ein Alias. Dies bedeutet, dass der Zielwert auf eine URL verweist, die dann den DKIM-Eintrag an den Server liefert, der den CNAME-Eintrag abfragt. Dieser Typ von CNAME-Eintrag zur Konfiguration von DKIM ist üblich bei der Verwendung eines Microsoft E-Mail-Servers.
 
-Dieser Eintragstyp wird zur Aktivierung von DKIM für Domainnamen verwendet, die für OVHcloud Exchange deklariert wurden.
+Dieser Eintragstyp wird zur Aktivierung von DKIM für Domainnamen verwendet, die für OVHcloud Exchange deklariert wurden. Door dit proces kan uw e-mailprovider de beveiliging en updates van de DKIM beheren.
 
 ### DKIM testen <a name="test-dkim"></a>
 
-Wir empfehlen, eine E-Mail von einem Exchange-Accoun taus an eine E-Mail-Adresse zu senden, die beim Empfang die DKIM-Signatur überprüft.
+Wir empfehlen, eine E-Mail von einem Exchange-Account taus an eine E-Mail-Adresse zu senden, die beim Empfang die DKIM-Signatur überprüft.
 
 Im Header der empfangenen E-Mail finden Sie folgendes:
 
@@ -719,7 +720,7 @@ ARC-Authentication-Results: i=1; mx.example.com;
 Return-Path: <test-dkim@mydomain.ovh>
 </code></pre>
 
-Um den Header einer E-Mail einzusehen, lesen Sie unsere Anleitung "[E-Mail-Header extrahieren](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/diagnostic_headers)".
+Um den Header einer E-Mail einzusehen, lesen Sie unsere Anleitung "[E-Mail-Header extrahieren](/pages/web/emails/diagnostic_headers)".
 
 ## Weiterführende Informationen
 
