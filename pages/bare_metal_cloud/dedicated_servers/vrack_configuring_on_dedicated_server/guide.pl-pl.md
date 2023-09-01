@@ -1,7 +1,7 @@
 ---
 title: 'Konfiguracja kilku serwerów dedykowanych w sieci vRack'
 excerpt: 'Dowiedz się, jak połączyć kilka serwerów w ramach rozwiązania vRack'
-updated: 2022-05-02
+updated: 2023-08-23
 ---
 
 > [!primary]

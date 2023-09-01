@@ -1,7 +1,7 @@
 ---
 title: 'Configurare due o più server dedicati nella vRack'
 excerpt: 'Scopri come configurare due o più server dedicati nella vRack'
-updated: 2022-05-02
+updated: 2023-08-23
 ---
 
 > [!primary]
@@ -196,6 +196,8 @@ Clicca su `Modifica impostazioni scheda`{.action}.
 ![Change Adapter Settings](images/windows_change_adapter_settings.png){.thumbnail}
 
 Clicca con il tasto destro sull'interfaccia di rete secondaria e poi clicca su `Proprietà`{.action}.
+
+Nel nostro esempio, `Ethernet 2` è l'interfaccia utilizzata per la vRack. ma è possibile che la scheda di rete vRack utilizzi un'interfaccia diversa. Utilizza un'interfaccia che non possiede l'indirizzo IP principale del server o che utilizza un indirizzo IP auto-attribuito.
 
 ![Windows Properties](images/windows_properties_button.png){.thumbnail}
 

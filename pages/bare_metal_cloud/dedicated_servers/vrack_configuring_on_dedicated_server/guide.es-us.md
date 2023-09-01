@@ -1,7 +1,7 @@
 ---
 title: 'Configurar varios servidores dedicados en el vRack'
 excerpt: 'Cómo configurar varios servidores dedicados en el vRack'
-updated: 2022-05-02
+updated: 2023-08-23
 ---
 
 > [!primary]
@@ -196,6 +196,8 @@ Haga clic en `Cambiar configuración del adaptador`{.action}.
 ![Cambiar configuración del adaptador](images/windows_change_adapter_settings.png){.thumbnail}
 
 Haga clic derecho en la interfaz de red secundaria y seleccione `Propiedades`{.action}.
+
+En nuestro ejemplo, `Ethernet 2` es la interfaz utilizada para el vRack. Sin embargo, es posible que la tarjeta de red vRack utilice una interfaz diferente. Utilice una interfaz que no posea la dirección IP principal del servidor o que utilice una dirección IP autoasignada.
 
 ![Propiedades de Windows](images/windows_properties_button.png){.thumbnail}
 
