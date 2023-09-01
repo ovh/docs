@@ -1,7 +1,7 @@
 ---
 title: 'Tworzenie kilku sieci VLAN w prywatnej sieci vRack'
 excerpt: 'Dowiedz się, jak utworzyć kilka sieci VLAN w prywatnej sieci vRack'
-updated: 2022-02-24
+updated: 2023-08-23
 ---
 
 ## Wprowadzenie
@@ -152,7 +152,11 @@ Połącz się z serwerem przez zdalny pulpit i otwórz aplikację “Server Mana
 
 ![Windows VLAN](images/vrack2-windows-01.png){.thumbnail}
 
-W kolejnym kroku utwórz nowy zespół kart sieciowych, zaznaczając interfejs sieciowy i wpisując nazwę zespołu w polu **Team name**. Czynność tę zatwierdź, klikając `OK`{.action}:
+Następnie kliknij prawym przyciskiem myszy interfejs sieciowy i wybierz `Add to New Team`{.action}.
+
+![Windows vLAN](images/vrack2-windows-02.0.png){.thumbnail}
+
+W oknie, które się wyświetli, utwórz nowy zespół, wpisując nazwę zespołu w polu **Team name**. Po zakończeniu zatwierdź przyciskiem `OK`{.action}.
 
 ![Windows VLAN](images/vrack2-windows-02.png){.thumbnail}
 
@@ -179,6 +183,8 @@ Kliknij `Zmodyfikuj parametry adaptera`{.action} :
 Następnie kliknij prawym przyciskiem myszy interfejs VLAN, po czym kliknij `Properties`{.action}:
 
 ![Windows VLAN](images/vrack2-windows-08.png){.thumbnail}
+
+W naszym przykładzie `Ethernet 2` to interfejs używany w sieci vRack. Możliwe jest jednak, że karta sieciowa vRack używa innego interfejsu. Korzystaj z interfejsu, który nie posiada głównego adresu IP serwera lub który używa przypisanego do siebie adresu IP.
 
 Kliknij dwa razy `Internet Protocol Version 4 (TCP/IP/IPv4)`{.action}.
 
