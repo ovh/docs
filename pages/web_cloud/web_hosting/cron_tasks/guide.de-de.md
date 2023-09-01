@@ -144,7 +144,7 @@ Weitere Informationen finden Sie in unserer Anleitung zu [Statistiken und Logs](
 
 ## Weiterführende Informationen
 
-[.ovhconfig-Datei Ihres Webhostings konfigurieren](/pages/web_cloud/web_hosting/ovhconfig_configuration)
+[.ovhconfig-Datei Ihres Webhostings konfigurieren](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014)
 
 [SSH-Zugang Ihres Webhostings verwenden](/pages/web_cloud/web_hosting/ssh_on_webhosting)
 

@@ -199,7 +199,7 @@ Di seguito trovi le azioni da effettuare per identificare la fonte o le fonti de
 
 #### 2.1 - Verifica la configurazione del tuo hosting Web
 
-Per verificare il motore PHP, la versione PHP e l'ambiente di esecuzione utilizzati sull'hosting Web, consulta la guida sulla [configurazione del tuo hosting Web](/pages/web_cloud/web_hosting/ovhconfig_modify_system_runtime).
+Per verificare il motore PHP, la versione PHP e l'ambiente di esecuzione utilizzati sull'hosting Web, consulta la guida sulla [configurazione del tuo hosting Web](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014).
 
 Se utilizzi sul tuo hosting Web una versione di PHP obsoleta, il motore "**PHP CGI**" e/o l'ambiente "**legacy**" e **se il tuo sito Web è compatibile**, preferisci l'utilizzo del motore "**PHP**" (PHP FPM), l'ambiente "**stable**" o "**stable64**" versione di PHP più recente possibile.
 

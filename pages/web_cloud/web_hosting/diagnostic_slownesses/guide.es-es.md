@@ -199,7 +199,7 @@ A continuación se indican las acciones que debe realizar para identificar las f
 
 #### 2.1 - Compruebe la configuración de su alojamiento web
 
-Compruebe el motor PHP, la versión PHP y el entorno de ejecución utilizados en su alojamiento web, con ayuda de nuestra guía sobre la [configuración de su alojamiento web](/pages/web_cloud/web_hosting/ovhconfig_modify_system_runtime).
+Compruebe el motor PHP, la versión PHP y el entorno de ejecución utilizados en su alojamiento web, con ayuda de nuestra guía sobre la [configuración de su alojamiento web](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014).
 
 Si utiliza en su alojamiento web una versión de PHP obsoleta, el motor "**PHP CGI**" y/o el entorno "**legacy**" y **si su sitio web es compatible**, privilegie el uso del motor "**PHP**" (PHP FPM), el entorno "**stable**" o "**stable64**". con la versión más reciente posible de PHP.
 

@@ -88,8 +88,8 @@ Para mais informações sobre a gestão das bases de dados, consulte o guia [Cri
 
 - Pode modificar a versão PHP do seu alojamento web, quer a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) («**Configuração**»), quer alterando o ficheiro .ovhconfig. Também são possíveis configurações mistas neste último caso. Os seguintes guias contêm instruções pormenorizadas:
 
-[Configurar o ficheiro .ovhconfig do alojamento web](/pages/web_cloud/web_hosting/ovhconfig_configuration)  
-[Alterar a configuração do alojamento web](/pages/web_cloud/web_hosting/ovhconfig_modify_system_runtime)
+[Configurar o ficheiro .ovhconfig do alojamento web](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014)  
+[Alterar a configuração do alojamento web](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014)
 
 > [!primary]
 > O ficheiro .ovhconfig está funcional na pasta raiz do alojamento web ou num subdiretório de primeiro nível (em geral, _/www/_). A única forma de substituir os principais parâmetros do ficheiro .ovhconfig é utilizar outro ficheiro .ovhconfig numa subpasta.

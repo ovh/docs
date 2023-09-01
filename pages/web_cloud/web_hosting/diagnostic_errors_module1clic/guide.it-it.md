@@ -103,8 +103,8 @@ Ti consigliamo di utilizzare la versione PHP più recente disponibile. **Prima**
 
 Per verificare questa configurazione, consulta le nostre guide:
 
-- [Modificare la configurazione di un hosting Web](/pages/web_cloud/web_hosting/ovhconfig_modify_system_runtime)
-- [Configurare il file .ovhconfig di un hosting Web](/pages/web_cloud/web_hosting/ovhconfig_configuration)
+- [Modificare la configurazione di un hosting Web](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014)
+- [Configurare il file .ovhconfig di un hosting Web](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014)
 
 ### "Si è verificato un errore durante il caricamento delle informazioni (There is not enough space on your hosting (you need at least xxx MB))"
 

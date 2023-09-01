@@ -195,7 +195,7 @@ Below, you will find the actions you need to take to identify the source(s) of t
 
 #### 2.1 - Check your web hosting plan’s configuration
 
-Check the PHP engine, PHP version and runtime environment used on your Web Hosting plan, using our guide to [configuring your Web Hosting plan](/pages/web_cloud/web_hosting/ovhconfig_modify_system_runtime).
+Check the PHP engine, PHP version and runtime environment used on your Web Hosting plan, using our guide to [configuring your Web Hosting plan](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014).
 
 If you are using an outdated PHP version on your web hosting plan, the **PHP CGI** engine and/or the **legacy** environment, and **if your website is compatible**, you should use the **PHP** engine (PHP FPM), the **stable** or **stable64** environment, with the most recent PHP version possible.
 

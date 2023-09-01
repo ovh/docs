@@ -66,18 +66,18 @@ Wenn Sie bereit sind, die Änderung vorzunehmen, gehen Sie zu Schritt 2 über.
 
 Es gibt zwei Möglichkeiten, die PHP-Version Ihres Webhostings zu ändern:
 
-- **Konfigurationsassistent in Ihrem Kundencenter**: Wenn Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) eingeloggt sind, können Sie die gewünschte neue PHP-Version in den Einstellungen auswählen. Lesen Sie hierzu die Anleitung ["Konfiguration Ihres Webhostings bearbeiten"](/pages/web_cloud/web_hosting/ovhconfig_modify_system_runtime){.external}.
+- **Konfigurationsassistent in Ihrem Kundencenter**: Wenn Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) eingeloggt sind, können Sie die gewünschte neue PHP-Version in den Einstellungen auswählen. Lesen Sie hierzu die Anleitung ["Konfiguration Ihres Webhostings bearbeiten"](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014){.external}.
 
-- **Editieren der Konfigurationsdatei „.ovhconfig“**: Diese Lösung ist technisch anspruchsvoller. Sie müssen sich dazu auf Ihrem [FTP-Speicherplatz](/pages/web_cloud/web_hosting/ftp_connection) einloggen und die Datei `.ovhconfig` bearbeiten, wie in unserer Anleitung [".ovhconfig-Datei Ihres Webhostings konfigurieren"](/pages/web_cloud/web_hosting/ovhconfig_configuration){.external} beschrieben.
+- **Editieren der Konfigurationsdatei „.ovhconfig“**: Diese Lösung ist technisch anspruchsvoller. Sie müssen sich dazu auf Ihrem [FTP-Speicherplatz](/pages/web_cloud/web_hosting/ftp_connection) einloggen und die Datei `.ovhconfig` bearbeiten, wie in unserer Anleitung [".ovhconfig-Datei Ihres Webhostings konfigurieren"](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014){.external} beschrieben.
 
 > [!primary]
 >
 > Die Änderung der PHP-Version über eine ".htaccess" Datei ist bei den neueren [OVHcloud Webhostings](https://www.ovhcloud.com/de/web-hosting/){.external} nicht mehr möglich.<br>
 > Der Befehl, der die PHP-Version in der Datei ".htaccess" ändert, erlaubt nicht die Verwendung der aktuellen PHP Versionen auf unseren Infrastrukturen.<br>
-> Es muss hierzu die Datei `.ovhconfig` editiert werden, wie in unserer Anleitung [".ovhconfig-Datei Ihres Webhostings konfigurieren"](/pages/web_cloud/web_hosting/ovhconfig_configuration){.external} erklärt.
+> Es muss hierzu die Datei `.ovhconfig` editiert werden, wie in unserer Anleitung [".ovhconfig-Datei Ihres Webhostings konfigurieren"](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014){.external} erklärt.
 >
 
-Einige PHP Versionen funktionieren nur mit bestimmten Ausführungsumgebungen. Im Folgenden finden Sie die auf den Webhostings von OVHcloud verfügbaren PHP-Versionen und kompatiblen [Ausführungsumgebungen](/pages/web_cloud/web_hosting/ovhconfig_modify_system_runtime):
+Einige PHP Versionen funktionieren nur mit bestimmten Ausführungsumgebungen. Im Folgenden finden Sie die auf den Webhostings von OVHcloud verfügbaren PHP-Versionen und kompatiblen [Ausführungsumgebungen](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014):
 
 |PHP Versionen|Kompatible Ausführungsumgebungen|
 |---|---|
@@ -87,9 +87,9 @@ Einige PHP Versionen funktionieren nur mit bestimmten Ausführungsumgebungen. Im
 
 ## Weiterführende Informationen
 
-[Konfiguration Ihres Webhostings bearbeiten](/pages/web_cloud/web_hosting/ovhconfig_modify_system_runtime){.external}
+[Konfiguration Ihres Webhostings bearbeiten](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014){.external}
 
-[.ovhconfig-Datei Ihres Webhostings konfigurieren](/pages/web_cloud/web_hosting/ovhconfig_configuration){.external}
+[.ovhconfig-Datei Ihres Webhostings konfigurieren](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014){.external}
 
 [Mit dem Speicherplatz Ihres Webhostings verbinden](/pages/web_cloud/web_hosting/ftp_connection){.external}
 

@@ -213,7 +213,7 @@ Consulte nuestra guía sobre cómo proteger su sitio web (/pages/web_cloud/web_h
 
 [Conectarse al espacio de almacenamiento de un alojamiento web](/pages/web_cloud/web_hosting/ftp_connection)
 
-[Modificar la configuración de un alojamiento web](/pages/web_cloud/web_hosting/ovhconfig_modify_system_runtime)
+[Modificar la configuración de un alojamiento web](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014)
 
 [Activar el firewall de aplicación](/pages/web_cloud/web_hosting/multisites_activating_application_firewall)
 

@@ -101,12 +101,12 @@ Através de um comando, pode igualmente lançar um script utilizando uma versão
 /usr/local/php7.1/bin/php myscript.php
 ```
 
-Em função da versão de PHP que deseja usar, é possível que o ambiente de execução tenha de ser modificado por uma questão de compatibilidade. Para isso, recorra [ao guia](/pages/web_cloud/web_hosting/ovhconfig_modify_system_runtime) «Alterar a configuração do alojamento web».
+Em função da versão de PHP que deseja usar, é possível que o ambiente de execução tenha de ser modificado por uma questão de compatibilidade. Para isso, recorra [ao guia](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014) «Alterar a configuração do alojamento web».
 
 ## Quer saber mais?
 
-[Alterar a configuração do alojamento web](/pages/web_cloud/web_hosting/ovhconfig_modify_system_runtime)
+[Alterar a configuração do alojamento web](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014)
 
-[Configurar o ficheiro .ovhconfig do alojamento web](/pages/web_cloud/web_hosting/ovhconfig_configuration)
+[Configurar o ficheiro .ovhconfig do alojamento web](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014)
 
 Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

@@ -193,7 +193,7 @@ Retrouvez ci-après les actions à réaliser pour identifier la ou les source(s)
 
 #### 2.1 - Vérifiez la configuration de votre hébergement web
 
-Vérifiez le moteur PHP, la version PHP et l'environnement d'exécution utilisés sur votre hébergement web, en vous aidant de notre guide sur la [configuration de votre hébergement web](/pages/web_cloud/web_hosting/ovhconfig_modify_system_runtime).
+Vérifiez le moteur PHP, la version PHP et l'environnement d'exécution utilisés sur votre hébergement web, en vous aidant de notre guide sur la [configuration de votre hébergement web](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014).
 
 Si vous utilisez sur votre hébergement web une version de PHP obsolète, le moteur « **PHP CGI** » et/ou l'environnement « **legacy** » et **si votre site web est compatible**, privilégiez l'utilisation du moteur « **PHP** » (PHP FPM), l'environnement « **stable** » ou « **stable64** » avec la version de PHP la plus récente possible.
 

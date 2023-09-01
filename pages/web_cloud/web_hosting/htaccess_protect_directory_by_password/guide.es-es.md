@@ -65,7 +65,7 @@ A continuación explicamos los 4 pasos principales que debe seguir para proteger
 > 
 > Para modificar la versión de PHP de sus sitios web en su alojamiento web, consulte las siguientes guías:
 > 
-> - [Modificar la configuración de un alojamiento web](/pages/web_cloud/web_hosting/ovhconfig_modify_system_runtime)
+> - [Modificar la configuración de un alojamiento web](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014)
 > - [Cambiar la versión de PHP de un alojamiento web](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014)
 
 >

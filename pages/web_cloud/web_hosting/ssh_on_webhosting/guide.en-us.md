@@ -105,8 +105,8 @@ Depending on the PHP version you want to use, the runtime environment may need t
 
 ## Go further
 
-[Modifying the configuration of a Web Hosting plan](/pages/web_cloud/web_hosting/ovhconfig_modify_system_runtime)
+[Modifying the configuration of a Web Hosting plan](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014)
 
-[Configuring the .ovhconfig file of your Web Hosting plan](/pages/web_cloud/web_hosting/ovhconfig_configuration)
+[Configuring the .ovhconfig file of your Web Hosting plan](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014)
 
 Join our community of users on <https://community.ovh.com/en/>.

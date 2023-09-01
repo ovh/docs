@@ -63,7 +63,7 @@ Some server variables are changed via PHP-FPM usage:
 
 You can find out how to update PHP in [this guide](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014){.external}.
 
-To switch to use PHP-FPM in the _stable_ version or to get details on more advanced options of your webhosting, please consult [this guide](/pages/web_cloud/web_hosting/ovhconfig_modify_system_runtime){.external}.
+To switch to use PHP-FPM in the _stable_ version or to get details on more advanced options of your webhosting, please consult [this guide](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014){.external}.
 
 The _.ovhconfig_ file works at the root of the hosting package or in a level 1 sub-directory (ex.: _/www/_) but not in level two or higher directories (ex.: _/www/test/_ , _/www/test/test2/_)
 
@@ -216,7 +216,7 @@ If despite all the changes and optimisations you did undertake the database is s
 
 ## Go further
 
-[Modifying the configuration of a Web Hosting plan](/pages/web_cloud/web_hosting/ovhconfig_modify_system_runtime)
+[Modifying the configuration of a Web Hosting plan](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014)
 
 [Creating and managing a database in your Web Hosting plan](/pages/web_cloud/web_hosting/sql_create_database)
 

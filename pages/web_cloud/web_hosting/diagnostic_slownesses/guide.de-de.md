@@ -198,7 +198,7 @@ Im Folgenden finden Sie die notwendigen Aktionen, um die Quelle(n) der Langsamke
 
 #### 2.1 - Überprüfen Sie die Konfiguration Ihres Webhostings
 
-Überprüfen Sie die auf Ihrem Webhosting verwendete PHP-Engine, PHP-Version und Ausführungsumgebung. Lesen Sie hierzu unsere Anleitung zur [Konfiguration Ihres Webhostings](/pages/web_cloud/web_hosting/ovhconfig_modify_system_runtime).
+Überprüfen Sie die auf Ihrem Webhosting verwendete PHP-Engine, PHP-Version und Ausführungsumgebung. Lesen Sie hierzu unsere Anleitung zur [Konfiguration Ihres Webhostings](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014).
 
 Wenn Sie auf Ihrem Webhosting eine überholte PHP-Version einsetzen, sowie die Engine **PHP CGI** und/oder die Umgebung **legacy** und **wenn Ihre Website kompatibel ist**, verwenden Sie die Engine **PHP** (PHP FPM) mit **stable64** und die aktuellste PHP-Version.
 

@@ -217,7 +217,7 @@ Si a pesar de todos los cambios y optimizaciones realizados la base de datos va 
 
 ## Más información
 
-[Modificar la configuración de un plan de hospedaje web](/pages/web_cloud/web_hosting/ovhconfig_modify_system_runtime){.external}
+[Modificar la configuración de un plan de hospedaje web](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014){.external}
 
 [Gestionar una base de datos en un paquete de hospedaje web](/pages/web_cloud/web_hosting/sql_create_database){.external}
 

@@ -199,7 +199,7 @@ Poniżej znajdziesz działania, które należy przeprowadzić, aby zidentyfikowa
 
 #### 2.1 - Sprawdź konfigurację hostingu
 
-Sprawdź framework PHP, wersję PHP i środowisko wykonawcze używane na Twoim hostingu. Zapoznaj się z naszym przewodnikiem dotyczącym [konfiguracji Twojego hostingu](/pages/web_cloud/web_hosting/ovhconfig_modify_system_runtime).
+Sprawdź framework PHP, wersję PHP i środowisko wykonawcze używane na Twoim hostingu. Zapoznaj się z naszym przewodnikiem dotyczącym [konfiguracji Twojego hostingu](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014).
 
 Jeśli korzystasz z przestarzałej wersji PHP na Twoim hostingu, silnik "**PHP CGI**" i/lub środowisko "**legacy**" i **jeśli Twoja strona WWW jest kompatybilna**, skorzystaj z silnika "**PHP**" (PHP FPM), środowisko "**stable**" lub "**stable64**" z najnowsza wersja PHP.
 

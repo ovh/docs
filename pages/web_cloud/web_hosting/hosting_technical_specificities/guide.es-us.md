@@ -80,8 +80,8 @@ Para saber más sobre la gestión de las bases de datos, consulte la guía [Crea
 
 - Podrá modificar la versión PHP de su alojamiento web, o bien en [el área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) ("**Configuración**"), o bien modificando el archivo .ovhconfig. También se pueden llevar a cabo configuraciones mixtas en estas últimas. Tiene a su disposición instrucciones detalladas en nuestras guías:
 
-[Configurar el archivo .ovhconfig de un alojamiento web](/pages/web_cloud/web_hosting/ovhconfig_configuration)  
-[Modificar la configuración de un alojamiento web](/pages/web_cloud/web_hosting/ovhconfig_modify_system_runtime)
+[Configurar el archivo .ovhconfig de un alojamiento web](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014)  
+[Modificar la configuración de un alojamiento web](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014)
 
 > [!primary]
 > El archivo .ovhconfig funciona en la raíz del alojamiento web y en las subcarpetas de primer nivel (normalmente _/www/_). La única forma de reemplazar los parámetros principales del archivo .ovhconfig es utilizar otro archivo .ovhconfig en una subcarpeta.

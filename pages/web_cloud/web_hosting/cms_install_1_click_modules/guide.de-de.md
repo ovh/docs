@@ -21,7 +21,7 @@ updated: 2023-03-28
 - Sie verfügen über ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) mit mindestens einer Datenbank.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 - Sie verwenden eine [kompatible PHP-Version](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014) auf Ihrem Webhosting. 
-- Ihre [.ovhconfig-Datei ist korrekt konfiguriert](/pages/web_cloud/web_hosting/ovhconfig_configuration).
+- Ihre [.ovhconfig-Datei ist korrekt konfiguriert](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014).
 - Das Verzeichnis (Wurzelverzeichnis), in dem Ihr 1-Klick-Modul installiert wird, muss leer sein oder noch nicht vorhanden.
 - Der Domainname (und gegebenenfalls die Subdomain) Ihrer Website ist auf Ihrem OVHcloud Webhosting als [Multisite](/pages/web_cloud/web_hosting/multisites_configure_multisite) deklariert.
 

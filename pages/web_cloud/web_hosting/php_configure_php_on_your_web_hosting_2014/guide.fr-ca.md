@@ -62,18 +62,18 @@ Dès que vous êtes prêt à réaliser le changement, poursuivez vers l'étape 2
 
 Il existe deux manières de modifier la version de PHP de votre hébergement web :
 
-- **via un assistant de configuration depuis votre espace client** : une fois connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), vous pourrez choisir la nouvelle version de PHP souhaitée parmi d'autres paramètres. Reportez-vous aux instructions décrites dans notre documentation [« Modifier la configuration de son hébergement web »](/pages/web_cloud/web_hosting/ovhconfig_modify_system_runtime){.external} pour réaliser la manipulation par ce biais.
+- **via un assistant de configuration depuis votre espace client** : une fois connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), vous pourrez choisir la nouvelle version de PHP souhaitée parmi d'autres paramètres. Reportez-vous aux instructions décrites dans notre documentation [« Modifier la configuration de son hébergement web »](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014){.external} pour réaliser la manipulation par ce biais.
 
-- **en modifiant manuellement un fichier sur votre espace de stockage** : cette solution est plus technique et nécessite d'être connecté à votre [espace de stockage FTP](/pages/web_cloud/web_hosting/ftp_connection) où vous devrez modifier le fichier `.ovhconfig`. Reportez-vous aux instructions décrites dans notre documentation [« Configurer le fichier .ovhconfig de mon hébergement web »](/pages/web_cloud/web_hosting/ovhconfig_configuration){.external} pour réaliser la manipulation par ce biais.
+- **en modifiant manuellement un fichier sur votre espace de stockage** : cette solution est plus technique et nécessite d'être connecté à votre [espace de stockage FTP](/pages/web_cloud/web_hosting/ftp_connection) où vous devrez modifier le fichier `.ovhconfig`. Reportez-vous aux instructions décrites dans notre documentation [« Configurer le fichier .ovhconfig de mon hébergement web »](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014){.external} pour réaliser la manipulation par ce biais.
 
 > [!primary]
 >
 > La modification de la version de PHP via un fichier « .htaccess » n'est plus possible sur les dernières offres d'[hébergement web OVHcloud](https://www.ovhcloud.com/fr-ca/web-hosting/){.external}.<br>
 > La commande permettant de changer la version de PHP dans le fichier « .htaccess » ne permet pas d'utiliser les versions récentes de PHP sur nos infrastructures.<br>
-> Pour cela, vous devrez obligatoirement utiliser le fichier `.ovhconfig` en vous aidant de notre documentation [« Configurer le fichier .ovhconfig de mon hébergement web »](/pages/web_cloud/web_hosting/ovhconfig_configuration){.external}.
+> Pour cela, vous devrez obligatoirement utiliser le fichier `.ovhconfig` en vous aidant de notre documentation [« Configurer le fichier .ovhconfig de mon hébergement web »](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014){.external}.
 >
 
-Certaines versions de PHP ne fonctionnent qu'avec certains environnements d'exécution. Vous trouverez ci-après les versions de PHP disponibles sur les hébergements mutualisés OVHcloud et [les environnements d'exécution](/pages/web_cloud/web_hosting/ovhconfig_modify_system_runtime) compatibles :
+Certaines versions de PHP ne fonctionnent qu'avec certains environnements d'exécution. Vous trouverez ci-après les versions de PHP disponibles sur les hébergements mutualisés OVHcloud et [les environnements d'exécution](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014) compatibles :
 
 |Versions PHP|Environnements d'exécution compatibles|
 |---|---|
@@ -83,9 +83,9 @@ Certaines versions de PHP ne fonctionnent qu'avec certains environnements d'exé
 
 ## Aller plus loin
 
-[Modifier la configuration de son hébergement web](/pages/web_cloud/web_hosting/ovhconfig_modify_system_runtime){.external}
+[Modifier la configuration de son hébergement web](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014){.external}
 
-[Configurer le fichier .ovhconfig de son hébergement web](/pages/web_cloud/web_hosting/ovhconfig_configuration){.external}
+[Configurer le fichier .ovhconfig de son hébergement web](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014){.external}
 
 [Se connecter à l’espace de stockage de son hébergement Web](/pages/web_cloud/web_hosting/ftp_connection){.external}
 

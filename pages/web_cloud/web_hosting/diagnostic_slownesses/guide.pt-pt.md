@@ -199,7 +199,7 @@ Encontre aqui as ações a realizar para identificar a(s) fonte(s) da(s) lentid�
 
 #### 2.1 - Verifique a configuração do seu alojamento web
 
-Verifique o motor PHP, a versão PHP e o ambiente de execução utilizados no seu alojamento web, através do nosso guia sobre a [configuração do seu alojamento web](/pages/web_cloud/web_hosting/ovhconfig_modify_system_runtime).
+Verifique o motor PHP, a versão PHP e o ambiente de execução utilizados no seu alojamento web, através do nosso guia sobre a [configuração do seu alojamento web](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014).
 
 Se utiliza no seu alojamento web uma versão de PHP obsoleta, o motor "**PHP CGI**" e/ou o ambiente "**legacy**" e **se o seu website for compatível**, dê preferência à utilização do motor "**PHP**" (PHP FPM), o ambiente "**stable**" ou "**stable64**" com a versão de PHP mais recente possível.
 

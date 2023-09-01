@@ -101,8 +101,8 @@ Es wird empfohlen, die aktuellste PHP-Version zu verwenden. **Bevor** Sie die Ko
 
 Um diese Konfiguration zu überprüfen, lesen Sie unsere Anleitungen zu diesem Thema:
 
-- [Webhosting-Konfiguration bearbeiten](/pages/web_cloud/web_hosting/ovhconfig_modify_system_runtime)
-- [OVHconfig-Datei Ihres Webhostings konfigurieren](/pages/web_cloud/web_hosting/ovhconfig_configuration)
+- [Webhosting-Konfiguration bearbeiten](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014)
+- [OVHconfig-Datei Ihres Webhostings konfigurieren](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014)
 
 ### “Es ist ein Fehler beim Laden der Informationen aufgetreten. (Es ist nicht genügend Speicherplatz auf Ihrem Hosting vorhanden (Sie benötigen mindestens xxx MB))“
 

@@ -88,8 +88,8 @@ Aby uzyskać więcej informacji na temat zarządzania bazami danych, zapoznaj si
 
 - Wersję PHP hostingu możesz zmienić w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) („**Konfiguracja**”) lub modyfikując plik .ovhconfig. W przypadku tego drugiego rozwiązania możliwe są również konfiguracje mieszane. Szczegółowe instrukcje znajdują się w przewodnikach:
 
-[Konfiguracja pliku .ovhconfig w hostingu](/pages/web_cloud/web_hosting/ovhconfig_configuration)  
-[Zmiana konfiguracji hostingu](/pages/web_cloud/web_hosting/ovhconfig_modify_system_runtime)
+[Konfiguracja pliku .ovhconfig w hostingu](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014)  
+[Zmiana konfiguracji hostingu](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014)
 
 > [!primary]
 > Plik .ovhconfig znajduje się w katalogu głównym hostingu lub w podfolderze pierwszego poziomu (zwykle _/www/_). Jedynym sposobem na zastąpienie parametrów głównych pliku .ovhconfig jest wykorzystanie innego pliku .ovhconfig w podfolderze.
