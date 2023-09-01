@@ -1,14 +1,12 @@
 ---
 title: 'Configurar la red en Windows Server con Hyper-V en las gamas High Grade & SCALE'
 excerpt: 'Cómo configurar la red en Windows Server con Hyper-V en las gamas High Grade & SCALE'
-updated: 2023-06-20
+updated: 2023-08-31
 ---
 
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
 >
-
-**Última actualización: 20/06/2023**
 
 ## Objetivo
 
@@ -115,15 +113,23 @@ Siga el asistente hasta alcanzar la sección "Server Roles". Haga clic en `Hyper
 
 ![Install roles](images/install_roles_2.png){.thumbnail}
 
-Continúe accediendo al apartado "Virtual Switches" de "Hyper-V" y seleccione su *NIC teaming* creado anteriormente.
+Continúe accediendo al apartado "Virtual Switches" de "Hyper-V" y asegúrese de que no haya ninguna interfaz seleccionada.
 
-![Install roles](images/install_roles_3.png){.thumbnail}
+![Install roles](images/install_roles_3_2.png){.thumbnail}
 
 Continúe hasta el apartado "Role Services" de "Remote Access" y seleccione `Routing`.
 
 ![Install roles](images/install_roles_4.png){.thumbnail}
 
 Por último, en la sección "Confirmation", seleccione `Restart the destination server automatically if required` y haga clic en `Install`{.action}.
+
+#### Creación del switch virtual
+
+En las versiones más recientes de Windows Server, los switchs virtuales de Hyper-V en un clúster de adaptadores de red de tipo LBFO están obsoletos. Por lo tanto, es necesario crear el switch manualmente utilizando Powershell. Ejecute el siguiente comando y sustituya "vSwitch_Name" por el nombre que desee y sustituya "NIC_Team_Name" por el nombre del equipo NIC que creó anteriormente:
+
+```powershell
+New-VMSwitch -Name "vSwitch_Name" -NetAdapterName "NIC_Team_Name" -AllowNetLbfoTeams $true -AllowManagementOS $true 
+```
 
 #### Acceso al Routing y al Remote
 
@@ -155,7 +161,7 @@ Haga clic derecho en su tarjeta vEthernet y seleccione `Properties`{.action}.
 
 ![Static IP](images/static_ip_5.png){.thumbnail}
 
-Haga doble clic en Protocolo de `Internet versión 4 (TCP/IPv4)`{.action}.
+Haga doble clic en `Internet Protocol Version 4 (TCP/IPv4)`{.action}.
 
 ![Static IP](images/static_ip_3.png){.thumbnail}
 
@@ -217,7 +223,7 @@ network:
                 eth0:
                         dhcp4: no
                         addresses:
-                                - 192.xxx.xxx.16
+                                - 192.xxx.xxx.16/32
                         nameservers:
                                 addresses:
                                         - 213.186.33.99
@@ -280,23 +286,17 @@ Haga clic derecho en una de las interfaces privadas anteriormente identificadas 
 
 Asigne un nombre a su *teaming* y añada la segunda interfaz al *teaming*. Abra las propiedades adicionales, defina "Teaming Mode" en "LACP" y haga clic en `Aceptar`{.action}.
 
-#### Crear el conmutador virtual en Hyper-V
+#### Crear el switch virtual en Powershell
 
 Vamos a necesitar crear un switch virtual que asocie nuestras MV al *teaming* que hemos creado.
 
-En primer lugar, abra el Gestor de Hyper-V y haga clic en `Virtual Switch Manager`{.action}.
+En primer lugar, abra Powershell como administrador y ejecute el siguiente comando sustituyendo "vSwitch_Name" por el nombre que desee y sustituyendo "NIC_Team_Name" por el nombre del equipo NIC que creó anteriormente:
 
-![Create vSwitch](images/create_vswitch_1.png){.thumbnail}
+```powershell
+New-VMSwitch -Name "vSwitch_Name" -NetAdapterName "NIC_Team_Name" -AllowNetLbfoTeams $true -AllowManagementOS $true 
+```
 
-Asegúrese de que ha seleccionado "External" y haga clic en `Create Virtual Switch`{.action}.
-
-![Create vSwitch](images/create_vswitch_2.png){.thumbnail}
-
-Asigne un nombre al conmutador, seleccione el nuevo adaptador de *teaming*, haga clic en `Apply`{.action} y seleccione `OK`{.action}.
-
-![Create vSwitch](images/create_vswitch_3.png){.thumbnail}
-
-Una vez que haya creado su máquina virtual, ya puede configurar la red para ella.
+Ahora estás listo para crear tu máquina virtual y configurar su red.
 
 #### Configurar una dirección IP útil
 

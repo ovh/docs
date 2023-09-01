@@ -1,14 +1,12 @@
 ---
 title: 'Netzwerk auf Windows Server mit Hyper-V für die High Grade & SCALE Reihen konfigurieren'
 excerpt: 'Erfahren Sie, wie Sie das Netzwerk auf Windows Server mit Hyper-V für die High Grade & SCALE Reihen konfigurieren'
-updated: 2023-06-20
+updated: 2023-08-31
 ---
 
 > [!primary]
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
 >
-
-**Letzte Aktualisierung am 20.06.2023**
 
 ## Ziel
 
@@ -115,15 +113,25 @@ Folgen Sie dem Assistenten bis zum Abschnitt "Server Roles". Wählen Sie dann `H
 
 ![Install Roles](images/install_roles_2.png){.thumbnail}
 
-Gehen Sie dann zum Unterbereich "Virtual Switches" von "Hyper-V" und wählen Sie Ihr zuvor erstelltes *NIC Team* aus.
+Gehen Sie dann zum Unterbereich "Virtual Switches" von "Hyper-V" und stellen Sie sicher, dass keine Schnittstelle ausgewählt ist.
 
-![Install Roles](images/install_roles_3.png){.thumbnail}
+![Install roles](images/install_roles_3_2.png){.thumbnail}
 
 Gehen Sie dann zum Unterbereich "Role Services" von "Remote Access" und haken Sie `Routing` an.
 
 ![Install Roles](images/install_roles_4.png){.thumbnail}
 
 Wählen Sie im Bereich "Confirmation" die Option `Restart the destination server automatically if required` aus und klicken Sie auf `Install`{.action}.
+
+#### Virtuellen Switch erstellen
+
+In den neuesten Versionen von Windows Server sind virtuelle Hyper-V-Switches auf einem LBFO-basierten Netzwerkadaptercluster veraltet. Daher muss der Switch manuell mithilfe von PowerShell erstellt werden.
+
+Führen Sie den folgenden Befehl aus und ersetzen Sie "vSwitch_Name" durch den Namen Ihrer Wahl und "NIC_Team_Name" durch den Namen der zuvor erstellten Team-Kundenkennung:
+
+```powershell
+New-VMSwitch -Name "vSwitch_Name" -NetAdapterName "NIC_Team_Name" -AllowNetLbfoTeams $true -AllowManagementOS $true 
+```
 
 #### Routing und Remote Access konfigurieren
 
@@ -217,7 +225,7 @@ network:
                 eth0:
                         dhcp4: no
                         addresses:
-                                - 192.xxx.xxx.16
+                                - 192.xxx.xxx.16/32
                         nameservers:
                                 addresses:
                                         - 213.186.33.99
@@ -281,23 +289,17 @@ Klicken Sie auf der nächsten Seite mit der rechten Maustaste auf eine der zuvor
 
 Geben Sie einen Namen für Ihr Team ein und fügen Sie das zweite Interface hinzu. Öffnen Sie anschließend die erweiterten Einstellungen, stellen Sie "Teaming Mode" auf `LACP` ein und klicken Sie auf `OK`{.action}.
 
-#### Virtuellen Switch im Hyper-V Manager erstellen
+#### Virtuellen Switch in PowerShell erstellen
 
 Es wird ein virtueller Switch benötigt, der die VMs an das zuvor erstellte Team bindet.
 
-Öffnen Sie zuerst den Hyper-V Manager und klicken Sie auf `Virtual Switch Manager`{.action}.
+Öffnen Sie zunächst PowerShell als Administrator, und führen Sie den folgenden Befehl aus. Ersetzen Sie dabei "vSwitch_Name" durch den gewünschten Namen und "NIC_Team_Name" durch den zuvor erstellten Namen der Team-Netzwerkkarte:
 
-![v-switch Create](images/create_vswitch_1.png){.thumbnail}
+```powershell
+New-VMSwitch -Name "vSwitch_Name" -NetAdapterName "NIC_Team_Name" -AllowNetLbfoTeams $true -AllowManagementOS $true 
+```
 
-Vergewissern Sie sich, dass Sie "External" ausgewählt haben, und klicken Sie auf `Create Virtual Switch`{.action}.
-
-![v-switch Create](images/create_vswitch_2.png){.thumbnail}
-
-Geben Sie Ihrem Switch einen Namen, wählen Sie Ihren neuen Team-Adapter aus, klicken Sie auf `Apply`{.action} und dann auf `OK`{.action}.
-
-![v-switch Create](images/create_vswitch_3.png){.thumbnail}
-
-Sie können jetzt Ihre VM erstellen und das Netzwerk darauf konfigurieren.
+Sie können Sie Ihre VM erstellen und ihr Netzwerk konfigurieren.
 
 #### Eine verwendbare IP-Adresse konfigurieren
 
