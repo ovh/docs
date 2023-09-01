@@ -986,8 +986,6 @@
             + [Responsibility sharing for the Web Hosting service](web_cloud/web_hosting/raci-web-hosting)
         + [Configuring a Personal, Professionnal or Performance web hosting plan](web-cloud-hosting-configuring-web-hosting-plan)
             + [IP address list for Web Hosting clusters](web_cloud/web_hosting/clusters_and_shared_hosting_IP)
-            + [Modifying the configuration of a Web Hosting plan](web_cloud/web_hosting/ovhconfig_modify_system_runtime)
-            + [Configuring the .ovhconfig file of your Web Hosting plan](web_cloud/web_hosting/ovhconfig_configuration)
             + [Activating the application firewall](web_cloud/web_hosting/multisites_activating_application_firewall)
             + [Technical specifications of Web Hostings](web_cloud/web_hosting/hosting_technical_specificities)
             + [Configuring IPv6 for your website](web_cloud/web_hosting/configure_ipv6)
