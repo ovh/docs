@@ -1,7 +1,7 @@
 ---
 title: Kubernetes Plugins (CNI, CRI, CSI...) & softwares versions and reserved resources
 excerpt: ''
-updated: 2023-08-31
+updated: 2023-09-01
 ---
 
 We list here some details on the Control Panel, the plugins (CNI, CRI, CSI...) & software versions we use and the resources we reserve on each Node.
@@ -111,7 +111,7 @@ To guarantee the availability of a customer's node, the amount of reserved resou
 
 This table sums up the reserved resources on b2 flavors:
 
-| Flavor | vCore | Reserved CPU (ms) | Total RAM | Reserved RAM (MB) | Total storage (GB) | Reserved storage (GB) |
+| Flavor | vCore | Reserved CPU (ms) | Total RAM | Reserved RAM (GB) | Total storage (GB) | Reserved storage (GB) |
 |-|-|-|-|-|-|-|
 | b2-7 | 2 | 160 | 7 | 1,85 | 50 | 22 |
 | b2-15 | 4 | 170 | 15 | 2,25 | 100 | 30 |
