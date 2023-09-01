@@ -125,7 +125,9 @@ Wählen Sie im Bereich "Confirmation" die Option `Restart the destination server
 
 #### Virtuellen Switch erstellen
 
-In den neuesten Versionen von Windows Server sind virtuelle Hyper-V-Switches auf einem LBFO-basierten Netzwerkadaptercluster veraltet. Daher müssen wir den Switch manuell mithilfe von PowerShell erstellen. Führen Sie den folgenden Befehl aus und ersetzen Sie "vSwitch_Name" durch den Namen Ihrer Wahl und "NIC_Team_Name" durch den Namen der zuvor erstellten Team-Kundenkennung:
+In den neuesten Versionen von Windows Server sind virtuelle Hyper-V-Switches auf einem LBFO-basierten Netzwerkadaptercluster veraltet. Daher muss der Switch manuell mithilfe von PowerShell erstellt werden.
+
+Führen Sie den folgenden Befehl aus und ersetzen Sie "vSwitch_Name" durch den Namen Ihrer Wahl und "NIC_Team_Name" durch den Namen der zuvor erstellten Team-Kundenkennung:
 
 ```powershell
 New-VMSwitch -Name "vSwitch_Name" -NetAdapterName "NIC_Team_Name" -AllowNetLbfoTeams $true -AllowManagementOS $true 
