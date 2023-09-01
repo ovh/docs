@@ -1,7 +1,7 @@
 ---
 title: AI Training - Tutorial - Get started with NVIDIA Triton Inference Server and AI Training
 excerpt: How to use optimally AI models with NVIDIA Triton Inference Server and AI Training
-updated: 2023-08-22
+updated: 2023-09-01
 ---
 
 ## Objective
@@ -16,13 +16,13 @@ The goal of this tutorial is to see how it is possible to deploy **Triton Infere
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we);
-- [ovhai CLI](/pages/platform/ai/cli_10_howto_install_cli) installed
-- An AI Training project created inside a [Public Cloud project](https://www.ovhcloud.com/en/public-cloud/) in your OVHcloud account;
-- A [user for AI Training](/pages/platform/ai/gi_01_manage_users);
-- [Docker](https://www.docker.com/get-started) installed on your local computer or on a Virtual Machine;
-- Some knowledge about Docker images and [Dockerfile](https://docs.docker.com/engine/reference/builder/);
-- Some basics on [NVIDIA Triton Inference Server](https://docs.nvidia.com/deeplearning/triton-inference-server/user-guide/docs/getting_started/quickstart.html)
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg).
+- [ovhai CLI](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli) installed.
+- An AI Training project created inside a [Public Cloud project](https://www.ovhcloud.com/en-sg/public-cloud/) in your OVHcloud account.
+- A [user for AI Training](/pages/public_cloud/ai_machine_learning/gi_01_manage_users).
+- [Docker](https://www.docker.com/get-started) installed on your local computer or on a Virtual Machine.
+- Some knowledge about Docker images and [Dockerfile](https://docs.docker.com/engine/reference/builder/).
+- Some basics on [NVIDIA Triton Inference Server](https://docs.nvidia.com/deeplearning/triton-inference-server/user-guide/docs/getting_started/quickstart.html).
 
 ## Instructions
 
@@ -152,7 +152,7 @@ model_repository/
 
 #### Upload the models to an Object Storage container
 
-To upload the models to an OVHcloud Object Storage container, you can use the `ovhai` [CLI](/pages/platform/ai/cli_17_how_to_cli_data_notebooks).
+To upload the models to an OVHcloud Object Storage container, you can use the `ovhai` [CLI](/pages/public_cloud/ai_machine_learning/cli_17_how_to_cli_data_notebooks).
 
 > [!warning]
 >
@@ -209,7 +209,7 @@ To make Triton Inference Server image compatible with AI Training, you have to r
 
 > [!primary]
 >
-> For more information on how to build Docker images compatible with OVHcloud AI solutions, please refer to this [documentation](/pages/platform/ai/training_tuto_02_build_custom_image).
+> For more information on how to build Docker images compatible with OVHcloud AI solutions, please refer to this [documentation](/pages/public_cloud/ai_machine_learning/training_tuto_02_build_custom_image).
 >
 
 ##### Create the Dockerfile
@@ -277,7 +277,7 @@ docker build . -t triton-inference-server:23.03-py3
 
 > [!warning]
 >
-> The shared registry of AI Training should only be used for testing purposes. Please consider attaching your own registry. More information about this can be found [here](/pages/platform/ai/training_guide_05_howto_add_registry).
+> The shared registry of AI Training should only be used for testing purposes. Please consider attaching your own registry. More information about this can be found [here](/pages/public_cloud/ai_machine_learning/training_guide_05_howto_add_registry).
 >
 
 Find the address of your shared registry by launching this command:
