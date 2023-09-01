@@ -1,13 +1,15 @@
 ---
-title: Configuring the Network Firewall
-updated: 2023-05-02
+title: Enabling and configuring the Edge Network Firewall
+excerpt: "Configure firewall network"
+updated: 2023-09-01
 ---
 
 ## Objective
 
-To protect its global infrastructure and its customers’ servers, OVHcloud offers a firewall that can be configured and integrated into the **Anti-DDoS** solution: the Network Firewall. This is an option you can use to limit your service's exposure to attacks from the public network.
+To protect its global infrastructure and its customers’ servers, OVHcloud offers a firewall that can be configured and integrated into the **Anti-DDoS** solution: the Edge Network Firewall (or Firewall Network). This is an option you can use to limit your service's exposure to attacks from the public network.
 
 **This guide will show you how to configure your Network Firewall.**
+
 
 > [!primary]
 >
@@ -16,9 +18,10 @@ To protect its global infrastructure and its customers’ servers, OVHcloud offe
 
 ![The VAC in detail](images/vac-inside.png){.thumbnail}
 
+
 ## Requirements
 
-- An OVHcloud service with a Network Firewall ([Dedicated Server](https://www.ovhcloud.com/en-gb/bare-metal/){.external}, [VPS](https://www.ovhcloud.com/en-gb/vps/){.external}, [Public Cloud instance](https://www.ovhcloud.com/en-gb/public-cloud/){.external}, [Hosted Private Cloud](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/){.external}, [Additional IP](https://www.ovhcloud.com/en-gb/network/additional-ip/){.external}, etc.)
+- An OVHcloud service with a Network Firewall ([Dedicated Server](https://www.ovhcloud.com/en-gb/bare-metal/), [VPS](https://www.ovhcloud.com/en-gb/vps/), [Public Cloud instance](https://www.ovhcloud.com/en-gb/public-cloud/), [Hosted Private Cloud](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/), [Additional IP](https://www.ovhcloud.com/en-gb/network/additional-ip/), etc.)
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 
 > [!warning]
@@ -35,11 +38,12 @@ To protect its global infrastructure and its customers’ servers, OVHcloud offe
 > The Network Firewall protects the IP associated with a server. As a result, if you have a server with multiple IP addresses, you need to configure each IP separately. You cannot configure the firewall on the server as a whole.
 > 
 
-In the OVHcloud Control Panel, click on the `Bare Metal Cloud`{.action} menu and open `IP`{.action}. You can use the drop-down menu underneath **"My public IP addresses and associated services"** to filter your services according to category.
+In the OVHcloud Control Panel, click on the `Bare Metal Cloud`{.action} section, next click on the `Network`.{action} menu and open `Public IP Adresses`{.action}. You can use the drop-down menu underneath **"My public IP addresses and associated services"** to filter your services according to category.
 
 ![filter service](images/selectservice.png){.thumbnail}
 
 Next, click the `...`{.action} button to the right of the relevant IPv4 and select `Create Firewall`{.action}.
+
 
 ![Enabling the Network Firewall](images/firewallcreation2022.png){.thumbnail}
 
@@ -47,9 +51,15 @@ You will then be asked to confirm.
 
 ![Confirmation](images/creationvalid.png){.thumbnail}
 
-Then click `Enable the firewall`{.action} (1), and click `Configure the firewall`{.action} (2) to start configuring it.
+> [!primary]
+> The `Create Firewall`{.action} button will only be available for IPs that have never configured a firewall. If it is not the first time you are configuring your firewall, you can skip this step. 
+>
+
+Then click `Edge firewall configuration`{.action} to start configuring it.
 
 ![Enabling the configuration](images/activationconfig.png){.thumbnail}
+
+On this page you can choose to **Enable** or **Disable** the firewall using the switch button. 
 
 You can set up to **20 rules per IP**.
 
@@ -60,11 +70,13 @@ You can set up to **20 rules per IP**.
 > If you have any, we recommend checking them regularly, even if the firewall is disabled.
 >
 
+
 > [!primary]
 >
 > - The UDP fragmentation is blocked (DROP) by default. When you enable the Network Firewall, if you use a VPN, remember to configure your maximum transmission unit (MTU) correctly. For example, on OpenVPN, you can tick `MTU test`{.action}.
 > - The Network Firewall is not taken into account within the OVHcloud network, so the rules set up do not affect the connections in this internal network.
 >
+
 
 ### Configure the Network Firewall
 
@@ -82,12 +94,13 @@ For each rule you must choose:
 - A priority (from 0 to 19, 0 being the first rule to be applied, followed by the others)
 - An action (`Authorise`{.action} or `Refuse`{.action})
 - The protocol
-- An IP (optional)
+- Source IP (optional)
 - The source port (TCP only)
 - The destination port (TCP only)
 - The TCP options (TCP only)
 
 ![Details on adding a rule](images/ajoutregle4.png){.thumbnail}
+
 
 > [!primary]
 >
@@ -111,47 +124,39 @@ For example, a packet for TCP port 80 will be captured by rule 2, and the rules 
 
 ### Mitigation
 
-Our Anti-DDoS (VAC) solution includes three mitigation modes: automatic, permanent or forced.
+Our Anti-DDoS (VAC) solution includes three mitigation modes: automatic, permanent or forced. The mitigation process is OVHcloud's automatic scrubbing center. This is the place where our advanced technology is taking a deep look into packets and malicious traffic (DDoS or other known vulnerabilities) is removed while allowing legitimate traffic to pass through.
 
-**Automatic mitigation**: By default, all OVHcloud IPs are under automatic mitigation. Automatic mitigation will be enabled automatically only if the traffic is detected as "unusual" compared to the normal traffic usually received by the server. 
+- **Automatic mitigation**: By default, all OVHcloud IPs are under automatic mitigation. Automatic mitigation will be enabled only if the traffic is detected as "unusual" compared to the normal traffic usually received by the server. We **recommend** using this mode as best automations are applied during malicious traffic mitigation.
 
-**Permanent mitigation**: This mode can be enabled or disabled via the OVHcloud Control Panel. With permanent mitigation (if enabled), you apply a constant first level of filtering through our Shield hardware.<br>
-All traffic at all times gets through the mitigation system before reaching the server. We recommend enabling this mode for services under frequent attacks.<br>
+- **Permanent mitigation**: This mode can be enabled or disabled via the OVHcloud Control Panel. With permanent mitigation (if enabled), you apply a constant first level of filtering through our Shield hardware.<br>
+All traffic at all times gets through the mitigation system before reaching the server. We do not recomend enabling this permanently, rather using it as an on/off switch for the protection when necessary.
 Please note that as permanent mitigation is part our Anti-DDoS (VAC) solution, you can activate it on your IP without enabling the Network Firewall.
 
-To enable it, click on the `Bare Metal Cloud`{.action} menu and open `IP`{.action}. Next, click on the `...`{.action} to the right of the relevant IPv4 and select `Mitigation: permanent mode`{.action}.
+To enable it, click on the `Bare Metal Cloud`{.action} menu and open `IP`{.action}. Next, click on the `...`{.action} button to the right of the relevant IPv4 and select `Mitigation: permanent mode`{.action}.
 
-**Forced mitigation**: This mode is automatically enabled once an attack is detected on the server. Once enabled on our Anti-DDoS infrastructure, it cannot be disabled. In order to protect our infrastructure, it will be enabled throughout the attack until it is completely mitigated.
+- **Forced mitigation**: This mode is automatically enabled once an attack is detected on the server. Once enabled on our Anti-DDoS infrastructure, it cannot be disabled. In order to protect our infrastructure, it will be enabled throughout the attack until it is completely mitigated.
+
+> [!success]
+> **Tips**
+> You can create attack-only rules that will apply only after the Network firewall enters Forced mitigation mode. To do that,firewall rules must be created but disabled. 
+>
 
 > [!warning]
->
 > If our Anti-DDoS solution mitigates an attack, your Network Firewall rules will eventually be applied, even if you have disabled the firewall. If you have disabled your firewall, remember to delete your rules as well.
 > 
 > Since the mitigation is part of our Anti-DDoS (VAC) solution, it cannot be disabled on a service. All OVHcloud products are delivered with the Anti-DDoS protection.
-
-### Configuring Armor
-
-> [!primary]
-> By default, Armor is pre-configured with certain rules that OVHcloud has determined work with the most common games. However, for customers with a Game Dedicated Server, we allow you to go a step further and configure rules for ports as well.
 >
 
-In order to configure rules for your ports in Armor, you will first need to log into the OVHcloud Control Panel.<br>
-Go to the `Bare Metal Cloud`{.action} menu and open `IP`{.action}. Next, click on the `...`{.action} next to the IP address of your Game Server and click on `Configure the GAME firewall`{.action}.
+## Network Security Dashboard
 
-![Game_wall](images/GAMEwall2021.png){.thumbnail}
-
-On the following screen, click the `Add a rule`{.action} button to add a rule to Armor.
-
-You can set up to **30 rules per IP**.
-
-![Configure_Armor](images/ConfigureArmor2021.png){.thumbnail}
-
-Enable the ports as needed on the following screen and click on the `Confirm`{.action} button when you are finished adding your rules. You have now successfully configured Armor.
+You can read more information about our [Network Security Dashboard](/pages/bare_metal_cloud/dedicated_servers/network_security_dashboard) in order to get more details about your traffic.
 
 ### Conclusion
 
-Having read this tutorial, you should now be able to configure the Network Firewall as well as Armor (for Game dedicated servers) to enhance the security of your OVHcloud services.
+Having read this tutorial, you should now be able to configure the Network Firewall to enhance the security of your OVHcloud services.
 
 ## Go further
+
+- [Protecting a GAME server with the application firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_game_ddos)
 
 Join our community of users on <https://community.ovh.com/en/>.
