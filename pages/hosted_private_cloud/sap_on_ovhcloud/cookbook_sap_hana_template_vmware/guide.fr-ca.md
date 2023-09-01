@@ -12,7 +12,7 @@ Ce guide vous détaille les étapes pour le déploiement d'une machine virtuelle
 
 - Un accès à l’[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
 - Une [solution VMware on OVHcloud](https://www.ovhcloud.com/fr-ca/hosted-private-cloud/vmware/) déployée.
-- [Un projet Public Cloud](/pages/platform/public-cloud/create_a_public_cloud_project) dans votre compte OVHcloud.
+- [Un projet Public Cloud](public_cloud/compute/create_a_public_cloud_project) dans votre compte OVHcloud.
 - [Un bucket Object Storage S3](/pages/storage_and_backup/object_storage/s3_create_bucket).
 - [Un utilisateur S3](/pages/storage_and_backup/object_storage/s3_identity_and_access_management#creation-dun-utilsateur) avec le droit de lecture.
 - [Un second bucket Object Storage S3](/pages/storage_and_backup/object_storage/s3_create_bucket).

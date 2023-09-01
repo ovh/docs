@@ -15,7 +15,7 @@ OVHcloud Backint Agent for SAP HANA allows you to back up your SAP HANA database
   
 ## Requirements
 
-- [A Public Cloud project](/pages/platform/public-cloud/create_a_public_cloud_project) deployed.
+- [A Public Cloud project](public_cloud/compute/create_a_public_cloud_project) deployed.
 - An [S3 user](/pages/storage_and_backup/object_storage/s3_identity_and_access_management#creating-a-user) created.
 - An [S3 Object Storage bucket](/pages/storage_and_backup/object_storage/s3_create_bucket) created.
 - [The read and write rights configured](/pages/storage_and_backup/object_storage/s3_identity_and_access_management#manage-access-to-a-bucket-via-a-profile) on the S3 Object Storage bucket for the S3 user.
