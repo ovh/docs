@@ -123,7 +123,7 @@ Gehen Sie dann zum Unterbereich "Role Services" von "Remote Access" und haken Si
 
 Wählen Sie im Bereich "Confirmation" die Option `Restart the destination server automatically if required` aus und klicken Sie auf `Install`{.action}.
 
-#### Virtueller Switch erstellen
+#### Virtuellen Switch erstellen
 
 In den neuesten Versionen von Windows Server sind virtuelle Hyper-V-Switches auf einem LBFO-basierten Netzwerkadaptercluster veraltet. Daher müssen wir den Switch manuell mithilfe von PowerShell erstellen. Führen Sie den folgenden Befehl aus und ersetzen Sie "vSwitch_Name" durch den Namen Ihrer Wahl und "NIC_Team_Name" durch den Namen der zuvor erstellten Team-Kundenkennung:
 
