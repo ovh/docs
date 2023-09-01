@@ -1040,7 +1040,6 @@
         + [PHP](web-cloud-hosting-php)
             + [Changing a Web Hosting plan’s PHP version](web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014)
             + [Installing Composer on a Web Hosting plan](web_cloud/web_hosting/composer_install_composer)
-            + [Enabling PHP optimisation with a Web Hosting plan](web_cloud/web_hosting/phpfpm_how_to_enable_it)
         + [Website optimisation](web-cloud-hosting-website-optimisation)
             + [Optimising the security of your website](web_cloud/web_hosting/secure_your_website)
             + [Changing your web hosting plan offer](web_cloud/web_hosting/how_to_upgrade_web_hosting_offer)
