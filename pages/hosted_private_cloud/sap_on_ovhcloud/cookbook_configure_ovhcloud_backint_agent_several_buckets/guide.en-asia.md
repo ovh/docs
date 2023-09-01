@@ -19,7 +19,7 @@ The advantage of using several S3 Object Storage buckets is to separate the data
 
 - [A Public Cloud project](public_cloud/compute/create_a_public_cloud_project) deployed.
 - [An S3 user](/pages/storage_and_backup/object_storage/s3_identity_and_access_management#creating-a-user) created.
-- [At least two S3 Object Storage buckets](pages/cloud/storage/object_storage/s3_create_bucket) created.
+- [At least two S3 Object Storage buckets](/pages/storage_and_backup/object_storage/s3_create_bucket) created.
 - [The read and write rights configured](/pages/storage_and_backup/object_storage/s3_identity_and_access_management#manage-access-to-a-bucket-via-a-profile) on the S3 Object Storage buckets for the S3 user.
 - An SAP HANA database installed.
 - [OVHcloud Backint Agent for SAP HANA installed](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook-install-ovhcloud-backint-agent#ovhcloud-backint-agent-for-sap-hana).
