@@ -30,7 +30,7 @@ updated: 2023-08-25
 
 The OVHcloud Managed Private Registry service, a cloud-native registry built on Harbor, allows you to store, manage and access your container images (OCI artifacts) and Helm charts.
 
-By default, to log in to your OVHloud Managed private registries you have to generate credentials (from the OVHcloud Control Panel, the APIv6 or Terraform), then log in with this user and administrate other users in the Harbor HMI.
+By default, to log in to your OVHcloud Managed private registries you have to generate credentials (from the OVHcloud Control Panel, the APIv6 or Terraform), then log in with this user and administrate other users in the Harbor HMI.
 
 However, you can also configure an Open ID Connect (OIDC) provider, for the OVHcloud Managed Private registry authentication, such as Keycloack.
 
