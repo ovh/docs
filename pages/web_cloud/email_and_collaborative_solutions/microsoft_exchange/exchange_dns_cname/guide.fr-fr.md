@@ -31,7 +31,7 @@ Dans le cadre de nos offres [**Hosted Exchange**](https://www.ovhcloud.com/fr/em
 
 Dans le schéma ci-dessous, la plateforme e-mail ([Exchange](https://www.ovhcloud.com/fr/emails/) ou [Email Pro](https://www.ovhcloud.com/fr/emails/email-pro/)) est représentée par le cadre vert.<br>
 Pour former les adresses e-mail vous ajoutez des comptes (ici représentés par « **contact** », « **john.smith** » et « **mary.johnson** »).<br>
-Le nom de domaine **mydomain.ovh** a été ajouté à la plateforme e-mail (référez-vous au guide « [Ajouter un nom de domaine sur une plateforme e-mail](/pages/web/microsoft-collaborative-solutions/exchange_adding_domain »)).<br>
+Le nom de domaine **mydomain.ovh** a été ajouté à la plateforme e-mail (référez-vous au guide « [Ajouter un nom de domaine sur une plateforme e-mail](/pages/web/microsoft-collaborative-solutions/exchange_adding_domain) »).<br>
 Un code de validation est généré par la plateforme (sous la forme « **abcd1-check** » dans notre exemple).<br>
 Si la zone DNS du nom de domaine **mydomain.ovh** n'est pas gérée dans le même compte client OVHcloud ou est gérée depuis une interface de gestion externe, ce code doit alors être ajouté sous la forme d'un enregistrement CNAME. Cet enregistrement est représenté par le cadre bleu dans l'exemple.<br>
 La plateforme e-mail est en mesure d'observer les enregistrements DNS du nom de domaine **mydomain.ovh** pour vérifier la présence du code de validation.
