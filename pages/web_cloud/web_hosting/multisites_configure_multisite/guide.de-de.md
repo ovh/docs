@@ -1,6 +1,6 @@
 ---
-title: 'Mehrere Websites auf einem Webhosting einrichten'
-excerpt: 'Erfahren Sie hier, wie Sie ein Webhosting für mehrere Websites verwenden'
+title: Mehrere Websites auf einem Webhosting einrichten
+excerpt: Erfahren Sie hier, wie Sie ein Webhosting für mehrere Websites verwenden
 updated: 2023-08-25
 ---
 
@@ -8,7 +8,7 @@ updated: 2023-08-25
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
 >
 
-## Ziel 
+## Ziel
 
 Sie können mehrere Websites auf einem einzigen Webhosting-Angebot hosten, auch wenn die Domainnamen nicht bei OVHcloud registriert sind.
 
@@ -25,14 +25,16 @@ Sie können mehrere Websites auf einem einzigen Webhosting-Angebot hosten, auch 
 
 > [!primary]
 >
-> Die meisten [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} Angebote verfügen über eine Inklusiv-Option zur Erstellung personalisierter E-Mail-Adressen mit Ihrer Domain.
-> Diese E-Mail-Option kann für **einen einzelnen** Domainnamen aktiviert werden. Wenn Sie also *Multisite* mit mehreren verschiedenen Domainnamen betreiben, können Sie diese Option nur für einen Ihrer Domainnamen aktivieren.
+> Die meisten Angebote der Reihe [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} inkludieren eine Option zur Erstellung von E-Mail-Accounts mit Adressen, die Ihren Domainnamen verwenden.
+>
+> Diese Option kann für **nur einen** Domainnamen aktiviert werden. Während *Multisite* mit mehreren verschiedenen Domainnamen funktioniert, können Sie die E-Mail-Option nur für einen Ihrer Domainnamen aktivieren.
+>
 > Weitere Informationen zur Aktivierung dieser Option finden Sie in unserer [Anleitung](/pages/web_cloud/web_hosting/activate-email-hosting).
 >
 
 ### Schritt 1: Auf die Multisite-Verwaltung zugreifen
 
-Loggen Sie sich zunächst in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und wählen Sie `Web Cloud`{.action} aus. Klicken Sie auf `Hosting-Pakete`{.action}, wählen Sie den betreffenden Dienst aus und gehen Sie zum Tab `Multisite`{.action}.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und wählen Sie `Web Cloud`{.action} aus. Klicken Sie auf `Hosting-Pakete`{.action}, wählen Sie den betreffenden Dienst aus und gehen Sie zum Tab `Multisite`{.action}.
 
 Die angezeigte Tabelle listet alle Domains und Subdomains auf, die Ihrer Webhosting-Lösung hinzugefügt wurden. Einige wurden bei der Installation Ihres Hostings automatisch hinzugefügt.
 
