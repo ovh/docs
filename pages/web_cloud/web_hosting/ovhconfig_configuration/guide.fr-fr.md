@@ -23,7 +23,7 @@ La modification du fichier .ovhconfig peut se réaliser de deux manières :
 
 - **en modifiant manuellement le fichier .ovhconfig** : cette solution est technique et nécessite d'être connecté à votre espace de stockage. Dans cette documentation, nous aborderons exclusivement cette méthode ;
 
-- **via un assistant de configuration depuis votre espace client OVHcloud** : cette solution est moins technique et nécessite d'être connecté à votre espace client, où vous pourrez choisir les changements à réaliser. Reportez-vous aux instructions décrites dans notre documentation [« Modifier la configuration de son hébergement web »](/pages/web_cloud/web_hosting/ovhconfig_modify_system_runtime).
+- **via un assistant de configuration depuis votre espace client OVHcloud** : cette solution est moins technique et nécessite d'être connecté à votre espace client, où vous pourrez choisir les changements à réaliser. Reportez-vous aux instructions décrites dans notre documentation [« Modifier la configuration de son hébergement web »](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014).
 
 Poursuivez la lecture de cette documentation si vous souhaitez modifier manuellement le fichier .ovhconfig. 
 

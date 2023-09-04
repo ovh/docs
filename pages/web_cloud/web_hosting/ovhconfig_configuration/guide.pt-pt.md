@@ -23,7 +23,7 @@ A alteração do ficheiro .ovhconfig pode ser realizada de duas formas:
 
 - **alterando manualmente o ficheiro .ovhconfig**: esta solução é mais técnica e precisa de aceder ao seu espaço de armazenamento. Este manual apenas irá abordar este método;
 
-- **através de um assistente de configuração a partir da Área de Cliente OVH**: esta solução é menos técnica e requer uma ligação à Área de Cliente, onde poderá escolher as alterações que pretende realizar. Para mais informações, consulte o manual [“Alterar a configuração do alojamento web”](/pages/web_cloud/web_hosting/ovhconfig_modify_system_runtime){.external}.
+- **através de um assistente de configuração a partir da Área de Cliente OVH**: esta solução é menos técnica e requer uma ligação à Área de Cliente, onde poderá escolher as alterações que pretende realizar. Para mais informações, consulte o manual [“Alterar a configuração do alojamento web”](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014){.external}.
 
 Caso pretenda alterar o ficheiro .ovhconfig manualmente, continue a ler este manual. 
 

@@ -23,7 +23,7 @@ Możesz zmienić plik .ovhconfig na dwa sposoby:
 
 - **modyfikując ręcznie plik .ovhconfig**: to rozwiązanie wymagające wiedzy technicznej i połączenia z przestrzenią dyskową FTP. W tym przewodniku opiszemy tylko tę metodę.
 
-- **za pomocą asystenta konfiguracji w Panelu klienta**: to rozwiązanie jest mniej techniczne i wymaga zalogowania do Panelu klienta, gdzie możesz wybrać zmiany, które chcesz przeprowadzić. Skorzystaj z instrukcji zawartych w przewodniku OVH: [Zmiana konfiguracji hostingu](/pages/web_cloud/web_hosting/ovhconfig_modify_system_runtime){.external}.
+- **za pomocą asystenta konfiguracji w Panelu klienta**: to rozwiązanie jest mniej techniczne i wymaga zalogowania do Panelu klienta, gdzie możesz wybrać zmiany, które chcesz przeprowadzić. Skorzystaj z instrukcji zawartych w przewodniku OVH: [Zmiana konfiguracji hostingu](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014){.external}.
 
 Kontynuuj lekturę przewodnika, jeśli chcesz zmodyfikować ręcznie plik .ovhconfig. 
 
