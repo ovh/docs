@@ -1,7 +1,7 @@
 ---
 title: 'Ativar e utilizar o modo rescue'
 excerpt: 'Como ativar e utilizar o modo rescue num servidor dedicado'
-updated: 2023-02-07
+updated: 2023-04-09
 ---
 
 > [!primary]
@@ -77,8 +77,8 @@ De seguida, deverá aceder ao servidor através de uma linha de comandos ou atra
 Por exemplo:
 
 ```bash
-ssh root@your_server_IP
-root@your_server_password:
+ssh root@ns3956771.ip-169-254-10.eu
+root@ns3956771.ip-169-254-10.eu's password:
 ```
 
 > [!warning]
@@ -95,7 +95,7 @@ A maior parte das modificações efetuadas no seu servidor através de SSH em mo
 Para montar as partições, utilize o comando `mount` em SSH. Deverá listar as suas partições com antecedência para poder recuperar o nome da partição que pretende montar. Aqui tem alguns exemplos de códigos:
 
 ```bash
-rescue-customer:~# fdisk -l
+fdisk -l
 
 Disk /dev/hda 40.0 GB, 40020664320 bytes
 255 heads, 63 sectors/track, 4865 cylinders
@@ -117,7 +117,7 @@ Device Boot Start End Blocks Id System
 Depois de identificar o nome da partição que pretende montar, utilize o seguinte comando:
 
 ```bash
-rescue-customer:~# mount /dev/hda1 /mnt/
+mount /dev/hda1 /mnt/
 ```
 
 > [!primary]
@@ -131,52 +131,37 @@ Para sair do modo rescue, redefina o modo de arranque em `Fazer boot no disco r�
 
 ##### Montagem de um datastore
 
-Pode montar um datastore VMware da forma descrita no segmento anterior. Em primeiro lugar, instale o package necessário:
+Pode montar um datastore VMware da mesma forma que descrito no passo anterior.
+
+Liste as suas partições para recuperar o nome da partição do datastore:
 
 ```bash
-rescue-customer:~# apt-get update && apt-get install vmfs-tools
+fdisk -l
 ```
 
-De seguida, retorize as suas partições para recuperar o nome da partição do datastore:
+Monte a partição com o seguinte comando, substituindo `sdbX` pelo valor identificado no passo anterior:
 
 ```bash
-rescue-customer:~# fdisk -l
+vmfs-fuse /dev/sdbX /mnt
 ```
 
-Agora, execute o seguinte comando para montar a partição, substituindo `sdbX` pelo valor indicado na etapa anterior:
+Se possui datastores `VMFS 6`, aceda à pasta `sbin` e crie a pasta de montagem:
 
 ```bash
-rescue-customer:~# vmfs-fuse /dev/sdbX /mnt
+cd /usr/local/sbin/
+mkdir /mnt/datastore
 ```
 
-Se possui datastores do tipo `VMFS 6`, deve instalar manualmente a ferramenta `vmfs6-tools` no ambiente do modo rescue:
+Liste as suas partições para recuperar o nome da partição do datastore:
 
 ```bash
-rescue-customer:~# apt-get update && apt-get upgrade
-# apt-get install git uuid-dev libfuse-dev pkg-config gcc
-# git clone https://salsa.debian.org/debian/vmfs6-tools.git
-# cd vmfs6-tools
-# make
-# make install
+fdisk -l
 ```
 
-Aceda à pasta `sbin` para criar a pasta de montagem:
+Monte a partição com o seguinte comando, substituindo `sdbX` pelo valor identificado no passo anterior:
 
 ```bash
-rescue-customer:~# cd /usr/local/sbin/
-# mkdir /mnt/datastore
-```
-
-De seguida, retorize as suas partições para recuperar o nome da partição do datastore:
-
-```bash
-rescue-customer:~# fdisk -l
-```
-
-Agora, execute o seguinte comando para montar a partição, substituindo `sdbX` pelo valor indicado na etapa anterior:
-
-```bash
-rescue-customer:~# vmfs6-fuse /dev/sdbX /mnt/datastore/
+vmfs6-fuse /dev/sdbX /mnt/datastore/
 ```
 
 Para sair do modo rescue, redefina o modo de arranque em `Fazer boot no disco rígido`{.action} na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e reinicie o servidor em linha de comandos.

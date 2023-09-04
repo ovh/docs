@@ -1,7 +1,7 @@
 ---
 title: 'Activating and using rescue mode'
 excerpt: 'Find out how to activate and use rescue mode on a dedicated server'
-updated: 2023-02-07
+updated: 2023-04-09
 ---
 
 ## Objective
@@ -70,9 +70,9 @@ You will then need to access your server via the command line or an SSH tool, us
 
 For example:
 
-```
-ssh root@your_server_IP
-root@your_server_password:
+```bash
+ssh root@ns3956771.ip-169-254-10.eu
+root@ns3956771.ip-169-254-10.eu's password:
 ```
 
 > [!warning]
@@ -87,7 +87,7 @@ For most changes you make to your server via SSH while in rescue mode, you will 
 You can mount partitions using the `mount` command in SSH. Firstly, list your partitions in order to retrieve the name of the partition you need to mount. You can refer to the following code examples:
 
 ```bash
-rescue-customer:~# fdisk -l
+fdisk -l
 
 Disk /dev/hda 40.0 GB, 40020664320 bytes
 255 heads, 63 sectors/track, 4865 cylinders
@@ -109,7 +109,7 @@ Device Boot Start End Blocks Id System
 Once you have found the name of the partition you want to mount, use the command below:
 
 ```bash
-rescue-customer:~# mount /dev/hda1 /mnt/
+mount /dev/hda1 /mnt/
 ```
 
 > [!primary]
@@ -123,52 +123,37 @@ To exit rescue mode, change the boot mode back to `Boot from the hard disk`{.act
 
 #### Mounting a datastore
 
-You can mount a VMware datastore in a similar way as described in the previous segment. Firstly, install the necessary package:
+You can mount a VMware datastore in a similar way as described in the previous segment.
+
+List your partitions in order to retrieve the name of the datastore partition:
 
 ```bash
-rescue-customer:~# apt-get update && apt-get install vmfs-tools
+fdisk -l
 ```
 
-Then list your partitions in order to retrieve the name of the datastore partition:
+Mount the partition with the following command, replacing `sdbX` with the value identified in the previous step:
 
 ```bash
-rescue-customer:~# fdisk -l
+vmfs-fuse /dev/sdbX /mnt
 ```
 
-Now mount the partition with the following command, replacing `sdbX` with the value identified in the previous step:
+If you have `VMFS 6` datastores, access the `sbin` folder and create the mount folder:
 
 ```bash
-rescue-customer:~# vmfs-fuse /dev/sdbX /mnt
+cd /usr/local/sbin/
+mkdir /mnt/datastore
 ```
 
-If you have `VMFS 6` datastores, you need to manually install the `vmfs6-tools` in the rescue mode environment:
+List your partitions in order to retrieve the name of the datastore partition:
 
 ```bash
-rescue-customer:~# apt-get update && apt-get upgrade
-# apt-get install git uuid-dev libfuse-dev pkg-config gcc
-# git clone https://salsa.debian.org/debian/vmfs6-tools.git
-# cd vmfs6-tools
-# make
-# make install
+fdisk -l
 ```
 
-Access the `sbin` folder, to create the mount folder: 
+Mount the partition with the following command, replacing `sdbX` with the value identified in the previous step:
 
 ```bash
-rescue-customer:~# cd /usr/local/sbin/
-# mkdir /mnt/datastore
-```
-
-Then list your partitions in order to retrieve the name of the datastore partition:
-
-```bash
-rescue-customer:~# fdisk -l
-```
-
-Now mount the partition with the following command, replacing `sdbX` with the value identified in the previous step:
-
-```bash
-rescue-customer:~# vmfs6-fuse /dev/sdbX /mnt/datastore/
+vmfs6-fuse /dev/sdbX /mnt/datastore/
 ```
 
 To exit rescue mode, change the boot mode back to `Boot from the hard disk`{.action} in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg) and restart the server from the command line.
