@@ -1,7 +1,7 @@
 ---
 title: 'Premiers pas avec un serveur dédié Kimsufi, So You Start ou Rise'
 excerpt: 'Découvrez comment procéder après la livraison de votre serveur dédié Kimsufi, So You Start ou Rise'
-updated: 2023-02-28
+updated: 2023-09-05
 ---
 
 ## Objectif
@@ -24,7 +24,7 @@ Lorsque votre serveur dédié est configuré pour la première fois au cours du 
 
 Vous pouvez facilement réinstaller votre serveur et choisir une autre image d'OS dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Sous l'onglet `Informations générales`{.action}, cliquez sur `...`{.action} en face du système d'exploitation, puis cliquez sur `Installer`{.action}.
 
-![Bouton Réinstaller](images/reinstalling-your-server-00.png){.thumbnail}
+![Bouton Réinstaller](images/reinstalling-your-server-01.png){.thumbnail}
 
 Dans la fenêtre qui apparaît, sélectionnez l'une des options d'installation :
 
@@ -49,7 +49,7 @@ Après avoir choisi `Installer à partir d'un template OVH`{.action}, vous pouve
 
 Si vous devez modifier le schéma de partitionnement de votre système d'exploitation, cochez la case « Personnaliser la configuration des partitions » avant de cliquer sur `Suivant`{.action}.
 
-![Personnaliser la configuration des partitions](images/SSH_02.png){.thumbnail}
+![Personnaliser la configuration des partitions](images/reinstalling-your-server-04.png){.thumbnail}
 
 Une fois les ajustements terminés, cliquez sur `Suivant`{.action} pour accéder à la page de résumé.
 
@@ -57,23 +57,23 @@ Une fois les ajustements terminés, cliquez sur `Suivant`{.action} pour accéder
 
 Si vous installez un système d'exploitation GNU/Linux, vous pouvez ajouter votre clé SSH à la dernière étape du processus d'installation.
 
-![Personnaliser la configuration de la partition](images/SSH_03.png){.thumbnail}
+![configuration SSH](images/SSH_01.png){.thumbnail}
 
 Si une clé SSH est déjà enregistrée, elle apparaît dans le menu déroulant sous « Clés SSH » en bas. Sinon, vous devrez d'abord en ajouter une dans la section « Mes services ».
 
 Pour ce faire, ouvrez la barre latérale en cliquant sur votre nom dans le coin supérieur droit et utilisez le raccourci `Produits et services`{.action}.
 
-![Personnaliser la configuration de la partition](images/SSH_keys_panel_2022.png){.thumbnail}
+![configuration SSH](images/SSH_02.png){.thumbnail}
 
 Dans « Mes services », basculez vers l'onglet `Clés SSH`{.action} et cliquez sur `Ajouter une clé SSH`{.action}.
 
-![Personnaliser la configuration de la partition](images/SSH_14.png){.thumbnail}
+![configuration SSH](images/SSH_03.png){.thumbnail}
 
 Comme il s'agit de l'installation d'un serveur dédié, veillez à sélectionner « Dédié » dans le menu déroulant (également compatible avec un VPS).
 
 Dans la nouvelle fenêtre, entrez un ID (nom de votre choix) et la clé elle-même (de type RSA, ECDSA ou Ed25519) dans les champs correspondants.
 
-![Personnaliser la configuration de la partition](images/SSH_12.png){.thumbnail}
+![configuration SSH](images/SSH_04.png){.thumbnail}
 
 Pour obtenir une explication détaillée sur la génération de clés SSH, reportez-vous à notre [guide](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated).
 
