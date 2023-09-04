@@ -12,23 +12,24 @@ You can host multiple websites on a single Web Hosting plan, even if the domain 
 
 ## Requirements
 
-- a compatible [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-au/web-hosting/){.external}
-- one or more [domain names](https://www.ovhcloud.com/en-au/domains/){.external}
-- the right to modify your domain name's configuration (the [DNS Zone](/pages/web_cloud/domains/dns_zone_edit))
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au){.external}
+- A compatible [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-au/web-hosting/){.external}
+- One or more [domain names](https://www.ovhcloud.com/en-au/domains/){.external}
+- The right to modify your domain name's configuration (the [DNS Zone](/pages/web_cloud/domains/dns_zone_edit))
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au){.external}
 
 ## Instructions
 
 > [!primary]
 >
-> Most [OVHcloud Web Hosting](https://www.ovhcloud.com/en-au/web-hosting/){.external} offers include the option of creating custom email addresses with your domain name.
-> This email option can be enabled for **only one** domain name. This means that if you use *multisite* with several different domain names, you can only enable this option for one of your domain names.
+> Most [OVHcloud Web Hosting](https://www.ovhcloud.com/en-au/web-hosting/){.external} offers include the option of creating email accounts with custom addresses using your domain name. This email option can be enabled for **only one** domain name.
+>
+> This means that if you use *multisite* with several different domain names, you can only enable this option for one of your domain names.
 > Please refer to our [guide](/pages/web_cloud/web_hosting/activate-email-hosting) for more details on how to enable this option.
 >
 
 ### Step 1: Access multisite management
 
-First, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au){.external} and select `Web Cloud`{.action}. Click `Hosting plans`{.action} , select the plan concerned, then choose the `Multisite`{.action} tab.
+First, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au){.external} and select `Web Cloud`{.action}. Click `Hosting plans`{.action}, select the plan concerned, then choose the `Multisite`{.action} tab.
 
 The table displayed will list all of the domain names and subdomains added to your Web Hosting plan. Some of these will have been created automatically, when your hosting was set up.
 

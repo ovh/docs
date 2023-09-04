@@ -1,6 +1,6 @@
 ---
 title: Block Storage Volume bearbeiten
-excerpt: "So ändern Sie den Typ eines Block Storage Volumes mit OpenStack"
+excerpt: "Erfahren Sie hier, wie Sie den Typ eines Block Storage Volumes mit OpenStack ändern"
 updated: 2023-08-08
 ---
 
@@ -10,20 +10,20 @@ updated: 2023-08-08
 
 ## Ziel
 
-Ziel dieser Anleitung ist es, Ihnen zu zeigen, wie Sie einen Block Storage-Volume-Typ von Classic oder High Speed auf High Speed gen2 ändern können.
+In dieser Anleitung wird erläutert, wie Sie einen Block Storage Volume vom Typ *Classic* oder *High speed* auf *High speed gen2* ändern können.
 
 ## Voraussetzungen
 
-- [Auf das Horizon-Interface zugreifen](/pages/public_cloud/compute/introducing_horizon)
-- Ein [Block Storage](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance) Volume, das in Ihrem [Public Cloud Projekt erstellt wird](https://www.ovhcloud.com/de/public-cloud/)
+- Sie haben Zugriff auf das [Horizon Interface](/pages/platform/public-cloud/introducing_horizon).
+- Sie haben ein [Block Storage Volume](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance) in Ihrem [Public Cloud Projekt](https://www.ovhcloud.com/de/public-cloud/) erstellt.
 
 ## In der praktischen Anwendung
 
-Wenn Sie einen Block Storage-Volume-Typ in ein "High Speed gen2"-Volume ändern, muss die Migrationsrichtlinie von `Never` in `On Demand` geändert werden.
+Wenn Sie einen Block Storage Volume Typ auf *High speed gen2* ändern, muss die Migrationsrichtlinie von `Never` auf `On Demand` gewechselt werden.
 
-Standardmäßig ist die Migrationsrichtlinie auf `Never` eingestellt, da das Volume auf demselben CEPH Cluster verbleibt. Für das "High Speed gen2" muss das Volume jedoch auf einen neuen Cluster migriert werden.
+Als Standard ist die Migrationsrichtlinie auf `Never` eingestellt, da das Volume auf demselben CEPH Cluster verbleibt. Für *High speed gen2* muss das Volume jedoch auf ein neues Cluster migriert werden.
 
-Diese Änderung kann über Horizon oder die OpenStack-Befehlszeilenschnittstelle vorgenommen werden.
+Diese Änderung kann über Horizon oder OpenStack CLI vorgenommen werden.
 
 ### Über das Horizon-Interface
 
@@ -33,24 +33,24 @@ Loggen Sie sich ins [Horizon Interface](https://horizon.cloud.ovh.net/auth/login
 
 Klicken Sie links im Menü `Volumes`{.action} auf `Volumes`{.action}.
 
-Klicken Sie auf den Dropdownpfeil neben `Volume`{.action} bearbeiten, und wählen Sie `Volume Type`{.action} ändern aus.
+Klicken Sie auf den Pfeil neben `Edit Volume`{.action}, und wählen Sie `Change Volume Type`{.action} aus.
 
 ![Wahl der Option](images/selectoption.png){.thumbnail}
 
-Klicken Sie im angezeigten Fenster auf das Dropdown-Menü unter `Type` und wählen Sie `high-speed-gen-2`{.action}. Klicken Sie dann auf den Dropdownpfeil unter `Migration Policy` und wählen Sie `On Demand`{.action}.
+Klicken Sie im angezeigten Fenster auf das Dropdown-Menü unter `Type` und wählen Sie `high-speed-gen-2`{.action}. Klicken Sie dann auf den Ppfeil unter `Migration Policy` und wählen Sie `On Demand`{.action}.
 
-Wenn Sie diese Aktionen ausgeführt haben, klicken Sie auf `Change Volume Type`{.action}, um die Änderung zu bestätigen..
+Wenn Sie diese Aktionen ausgeführt haben, klicken Sie auf `Change Volume Type`{.action}, um die Änderung zu bestätigen.
 
 ![Wahl der Option](images/changevolume.png){.thumbnail}
 
-### Über die OpenStack CLI
+### Über OpenStack CLI
 
-Bevor Sie fortfahren, empfehlen wir Ihnen folgende Anleitungen:
+Bevor Sie fortfahren, empfehlen wir folgende Anleitungen:
 
-- [Vorbereitung Ihrer Umgebung zur Verwendung der OpenStack API](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api)
-- [Konfigurieren der OpenStack-Umgebungsvariablen](/pages/public_cloud/compute/loading_openstack_environment_variables)
+- [Vorbereitung Ihrer Umgebung zur Verwendung der OpenStack API](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api)
+- [Konfigurieren der OpenStack-Umgebungsvariablen](/pages/platform/public-cloud/loading_openstack_environment_variables)
 
-Zunächst können Sie die in Ihrer Region verfügbaren Volume-Typen mit folgendem Befehl auflisten:
+Sie können die in Ihrer Region verfügbaren Volume-Typen mit folgendem Befehl auflisten:
 
 ```bash
 #~$ openstack image list
@@ -64,10 +64,10 @@ Zunächst können Sie die in Ihrer Region verfügbaren Volume-Typen mit folgende
 ```
 
 > [!warning]
-> Bitte beachten Sie: Wenn der Volume-Typ "high-speed-gen2" nicht in der Liste angezeigt wird, ist er in dieser Region nicht verfügbar.
+> Beachten Sie: Wenn der Volume Typ "*high-speed-gen2*" nicht in der Liste angezeigt wird, ist er in dieser Region nicht verfügbar.
 >
 
-Ändern Sie anschließend den Volume-Typ mit folgendem Befehl:
+Ändern Sie anschließend den Volume Typ mit folgendem Befehl:
 
 ```bash
 $ openstack volume set --type high-speed-gen2 --retype-policy on-demand VOLUME_NAME_OR_ID
