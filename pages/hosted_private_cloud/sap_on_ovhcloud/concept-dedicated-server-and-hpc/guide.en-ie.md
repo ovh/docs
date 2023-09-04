@@ -6,7 +6,7 @@ updated: 2023-03-15
 
 ## Objective
 
-The following concept allows you to build an architecture with an SAP HANA database up to 1.5 TB, and takes advantage of all VMware on OVHcloud features (templates, Zerto, NSX, DRS, Fault Tolerance, High Availability) for your SAP Application Servers in a single OVHcloud location or multiple OVHcloud locations.
+The following concept allows you to build an architecture with a SAP HANA database up to 1.5 TB, and takes advantage of all VMware on OVHcloud features (templates, Zerto, NSX, DRS, Fault Tolerance, High Availability) for your SAP Application Servers in a single OVHcloud location or multiple OVHcloud locations.
 
 ![schema](images/concept-hybrid.png){.thumbnail}
 
@@ -29,11 +29,11 @@ A prerequisite for updating your servers and for SAP Support access is to config
 
 ### SAP HANA database
 
-The SAP HANA database is hosted on a dedicated server of the SAP HANA on Bare Metal server range (references HGR-SAP-1/2/3). To know how to deploy an SAP HANA database on an OVHcloud dedicated server, please refer to [our documentation](/pages/hosted_private_cloud/sap_on_ovhcloud/install-sap-hana-sles).
+The SAP HANA database is hosted on a dedicated server of the SAP HANA on Bare Metal server range (references HGR-SAP-1/2/3). To know how to deploy a SAP HANA database on an OVHcloud dedicated server, please refer to [our documentation](/pages/hosted_private_cloud/sap_on_ovhcloud/install-sap-hana-sles).
 
 To ensure the recovery of the SAP HANA configuration (INI files), we suggest to set the value `true` for the parameter `include_configuration_backup`. This parameter enables the backup of all settings stored in INI files during the data backup of the SAP HANA database.
 
-Deploying an SAP HANA database on a dedicated server offers a [cost-effective infrastructure](https://www.ovhcloud.com/en-ie/bare-metal/uc-sap-hana/) that meets compliance and regulatory requirements.
+Deploying a SAP HANA database on a dedicated server offers a [cost-effective infrastructure](https://www.ovhcloud.com/en-ie/bare-metal/uc-sap-hana/) that meets compliance and regulatory requirements.
 
 In order to reduce the RPO and the RTO in a single OVHcloud location, you can add another SAP HANA database on a second dedicated server and configure SAP HANA System Replication between these databases. Please refer to the SAP official documentation available on the [SAP Help Portal](https://help.sap.com/docs/SAP_HANA_PLATFORM/6b94445c94ae495c83a19646e7c3fd56/86267e1ed56940bb8e4a45557cee0e43.html?locale=en-US). In this context, you could use a replication SYNC mode.
 
@@ -98,7 +98,7 @@ As with the primary OVHcloud location, we recommend using OVHcloud Connect. If t
 
 The SAP HANA System Replication called SAP HSR is used to replicate the data and configuration of OVHcloud location 1 (primary OVHcloud location) to OVHcloud location 2 (secondary OVHcloud location). This replication allows you to secure your data in another SAP HANA database and thus achieve the lowest RPO possible.
 
-To configure an SAP HANA replication, please refer to the official SAP documentation which is available on the [SAP Help Portal](https://help.sap.com/docs/SAP_HANA_PLATFORM/6b94445c94ae495c83a19646e7c3fd56/86267e1ed56940bb8e4a45557cee0e43.html?locale=en-US). However, within the scope of this concept with two OVHcloud locations, we advise you to enable the data and log compression and use the ASYNC replication mode. Find more information on the [SAP Help Portal](https://help.sap.com/docs/SAP_HANA_PLATFORM/6b94445c94ae495c83a19646e7c3fd56/92447e0a105c4facad3553b28aaec318.html).
+To configure a SAP HANA replication, please refer to the official SAP documentation which is available on the [SAP Help Portal](https://help.sap.com/docs/SAP_HANA_PLATFORM/6b94445c94ae495c83a19646e7c3fd56/86267e1ed56940bb8e4a45557cee0e43.html?locale=en-US). However, within the scope of this concept with two OVHcloud locations, we advise you to enable the data and log compression and use the ASYNC replication mode. Find more information on the [SAP Help Portal](https://help.sap.com/docs/SAP_HANA_PLATFORM/6b94445c94ae495c83a19646e7c3fd56/92447e0a105c4facad3553b28aaec318.html).
 
 > [!warning]
 > If you trigger a takeover to another OVHcloud location, you should switch the SAP Application Servers too, to guarantee the performance between the SAP Application Servers and the SAP HANA database.

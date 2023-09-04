@@ -1,16 +1,16 @@
 ---
-title: Back up an SAP HANA database solution
-excerpt: This guide provides you with general guidelines on how to back up an SAP HANA database.
+title: Backup a SAP HANA database solution
+excerpt: This guide provides you with general guidelines on how to backup a SAP HANA database.
 updated: 2022-03-28
 ---
 
 ## Overview
 
-OVHcloud provides SAP certified hardware on which to build an SAP HANA solution.
+OVHcloud provides SAP certified hardware on which to build a SAP HANA solution.
 
-This guide provides you with general guidelines on how to back up an SAP HANA database hosted on OVHcloud hardware.
+This guide provides you with general guidelines on how to backup a SAP HANA database hosted on OVHcloud hardware.
 
-We will be setting up an SAP HANA backup architecture using the OVHcloud Veeam Backup & Replication Enterprise offer.
+We will be setting up a SAP HANA backup architecture using the OVHcloud Veeam Backup & Replication Enterprise offer.
 
 Veeam Enterprise is an OVHcloud service that enables you to use Veeam Backup & Replication on your own infrastructure with a Veeam Enterprise Plus level licence.
 

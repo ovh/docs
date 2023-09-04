@@ -458,7 +458,7 @@
         + [Getting started](hosted-private-cloud-sap-ovhcloud-getting-started)
             + [SAP HANA on Bare Metal - Installing SAP HANA on SLES 15 for SAP](hosted_private_cloud/sap_on_ovhcloud/install-sap-hana-sles)
         + [Advanced usage](hosted-private-cloud-sap-ovhcloud-advanced-usage)
-            + [Back up an SAP HANA database solution](hosted_private_cloud/sap_on_ovhcloud/backup-sap-hana)
+            + [Backup a SAP HANA database solution](hosted_private_cloud/sap_on_ovhcloud/backup-sap-hana)
 + Public Cloud
     + [Compute](public-cloud-compute)
         + [Getting started](public-cloud-compute-getting-started)

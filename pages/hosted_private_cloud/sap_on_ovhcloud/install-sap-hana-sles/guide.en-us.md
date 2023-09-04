@@ -200,7 +200,7 @@ zypper install -y saptune
 <ol start="2">
   <li>Depending on your future SAP system, you have two possibilities.</li>
 </ol>
-&ensp;&thinsp;a. The first choice is `HANA` for running an SAP HANA database of a SAP NetWeaver system.<br>
+&ensp;&thinsp;a. The first choice is `HANA` for running a SAP HANA database of a SAP NetWeaver system.<br>
 &ensp;&thinsp;b. The second choice is `S4HANA-DBSERVER` for running the SAP HANA database of a SAP S/4HANA system.
 
 To set these parameters after choosing your solution, run this following command:
@@ -231,7 +231,7 @@ saptune solution verify <HANA|S4HANA-DBSERVER>
 > - [2578899 - SUSE Linux Enterprise Server 15: Installation Note](https://launchpad.support.sap.com/#/notes/2578899)
 > - [1275776 - Linux: Preparing SLES for SAP environments](https://launchpad.support.sap.com/#/notes/1275776)
 
-Your dedicated server is now ready to host an SAP HANA database.
+Your dedicated server is now ready to host a SAP HANA database.
 
 You can proceed to its installation following the [official SAP guide](https://help.sap.com/docs/SAP_HANA_PLATFORM/2c1988d620e04368aa4103bf26f17727/88e3e9a612bc484cac335725ad0978d3.html).
 
