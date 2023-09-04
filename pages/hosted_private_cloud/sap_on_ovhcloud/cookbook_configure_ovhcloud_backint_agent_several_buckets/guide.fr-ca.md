@@ -16,7 +16,7 @@ L'intérêt d'utiliser plusieurs buckets Object Storage S3 est de séparer les s
 
 ## Prérequis
 
-- [Un projet Public Cloud](public_cloud/compute/create_a_public_cloud_project) déployé.
+- [Un projet Public Cloud](/pages/public_cloud/compute/create_a_public_cloud_project)déployé.
 - [Un utilisateur S3](/pages/storage_and_backup/object_storage/s3_identity_and_access_management#creating-a-user) créé.
 - [Deux buckets Object Storage S3](/pages/storage_and_backup/object_storage/s3_create_bucket) créé.
 - [Configurer les droits 'Lecture et Écriture'](/pages/storage_and_backup/object_storage/s3_identity_and_access_management#manage-access-to-a-bucket-via-a-profile) pour l'utilisateur S3 sur les buckets Object Storage S3.

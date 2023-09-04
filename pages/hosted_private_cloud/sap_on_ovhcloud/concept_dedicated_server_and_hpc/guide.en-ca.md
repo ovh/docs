@@ -27,7 +27,7 @@ To guarantee the quality of communication between your local site and your SAP i
 
 Instead of using OVHcloud Connect, a point-to-point VPN can also be deployed with NSX Edge. To learn how to configure an NSX Edge Gateway VPN with OVHcloud, please refer to [our documentation](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx_configurer_un_vpn_via_une_gateway_edge).
 
-A prerequisite for updating your servers and for SAP Support access is to configure an Additional IP. A public IP subnet will be used as outbound link on your NSX Edge. Find more information in the [Additional IP documentation](/pages/platform/network-services/additional-ip-buy).
+A prerequisite for updating your servers and for SAP Support access is to configure an Additional IP. A public IP subnet will be used as outbound link on your NSX Edge. Find more information in the [Additional IP documentation](/pages/public_cloud/public_cloud_network_services/additional-ip-buy).
 
 ### SAP HANA database
 

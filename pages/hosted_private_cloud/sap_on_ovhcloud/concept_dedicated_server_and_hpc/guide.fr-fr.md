@@ -27,7 +27,7 @@ Afin de garantir la qualité de la liaison entre vos locaux et votre infrastruct
 
 Si vous ne souhaitez pas utiliser OVHcloud Connect, un VPN point-à-point peut également être déployé avec NSX Edge. Pour connaître les étapes de configuration d'une passerelle VPN NSX Edge avec OVHcloud, veuillez vous référer à [notre documentation](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx_configurer_un_vpn_via_une_gateway_edge).
 
-Un prérequis pour mettre à jour vos serveurs et pour l'accès du support SAP est de configurer une Additional IP. Un sous-réseau d'adresses IP publiques vous sera attribué et une adresse IP publique de ce sous-réseau sera utilisée comme passerelle sur votre NSX Edge. Retrouvez plus d'informations dans la [documentation Additional IP](/pages/platform/network-services/additional-ip-buy).
+Un prérequis pour mettre à jour vos serveurs et pour l'accès du support SAP est de configurer une Additional IP. Un sous-réseau d'adresses IP publiques vous sera attribué et une adresse IP publique de ce sous-réseau sera utilisée comme passerelle sur votre NSX Edge. Retrouvez plus d'informations dans la [documentation Additional IP](/pages/public_cloud/public_cloud_network_services/additional-ip-buy).
 
 ### Base de données SAP HANA
 
