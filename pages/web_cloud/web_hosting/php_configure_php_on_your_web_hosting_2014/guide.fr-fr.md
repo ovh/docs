@@ -29,6 +29,13 @@ Ces paramètres de configuration sont modifiables de deux manières :
 
 En résumé, modifier la configuration de votre hébergement web depuis l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) ou modifier les valeurs présentes dans le fichier « .ovhconfig » revient à réaliser la même opération.
 
+### Sommaire
+
+- [1 - Description des paramètres de configuration disponibles sur les hébergements web OVHcloud](#all-parameters)
+- [2 - Méthode 1 : Modifier la configuration de l'hébergement web depuis l'espace client OVHcloud](#setting-ovh-manager)
+- [3 - Méthode 2 : Modifier la configuration de l'hébergement web depuis le fichier « .ovhconfig »](#setting-ovhconfig)
+- [4 - Utiliser de manière avancée les fichiers « .ovhconfig »](#ovhconfig-more)
+
 **Découvrez comment modifier l'environnement d'exécution, la version PHP, le pare-feu applicatif, le moteur, le mode et l'« .ovhconfig » d'un hébergement web.**
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/X31MNMLw064" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
@@ -39,9 +46,6 @@ En résumé, modifier la configuration de votre hébergement web depuis l'[espac
 - Avoir accès à votre offre d’hébergement web depuis l’[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) ou connaître les informations permettant de se connecter à l'[espace de stockage FTP](/pages/web_cloud/web_hosting/ftp_connection). 
 
 ## En pratique
-
-D'abord, nous vous présenterons [l'ensemble des paramètres de configuration disponibles sur les hébergements web OVHcloud](#all-parameters) et leurs valeurs techniques.
-Ensuite, nous vous expliquerons les 2 méthodes pour modifier ces paramètres [depuis votre espace client OVHcloud](#setting-ovh-manager) ou directement à [depuis le fichier « .ovhconfig »](#setting-ovhconfig).
 
 ### 1 - Description des paramètres de configuration disponibles sur les hébergements web OVHcloud <a name="all-parameters"></a>
 
@@ -337,7 +341,7 @@ container.image=stable64
 
 Une fois le fichier « .ovhconfig » modifié, téléchargez-le sur votre [espace de stockage FTP](/pages/web_cloud/web_hosting/ftp_connection). Pour cela, reconnectez-vous à votre [espace de stockage FTP](/pages/web_cloud/web_hosting/ftp_connection) et positionnez-vous à la racine votre [espace de stockage FTP](/pages/web_cloud/web_hosting/ftp_connection) (que l'on peut symboliser par un « / »). Chargez le fichier « .ovhconfig » que vous venez de modifier dans votre [espace de stockage FTP](/pages/web_cloud/web_hosting/ftp_connection). Si le fichier existe déjà, remplacez-le.
 
-### Utiliser de manière avancée les fichiers « .ovhconfig »
+### 4 - Utiliser de manière avancée les fichiers « .ovhconfig » <a name="ovhconfig-more"></a>
 
 Si vous utilisez votre hébergement web pour y héberger plusieurs sites web (en *multisites*), diverses raisons peuvent vous amener à vouloir bénéficier d'une version de PHP différente pour certains de vos *multisites*.
 
