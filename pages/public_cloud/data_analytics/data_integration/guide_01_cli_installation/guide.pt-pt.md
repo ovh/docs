@@ -1,8 +1,11 @@
 ---
 title: Data Integration - CLI - Installation
 excerpt: Learn how to install the Data Integration CLI
-updated: 2023-07-07
+updated: 2023-09-04
 ---
+
+> [!primary]
+> The Data Integration product is in `beta`. During the beta-testing phase, the infrastructure’s availability and performances are not guaranteed. Please do not use this service for applications that are in production while this phase is not finished.
 
 ## Objective
 
@@ -91,7 +94,6 @@ Go back to your terminal and use your newly created API keys to complete the CLI
 - Finally copy the `consumer key` from your browser and paste it.
 
 You should receive a feedback message informing you that you are now logged in.
-
 ![image](images/03_login_success.png){.thumbnail}
 
 Finalize the login process by setting the service name corresponding to your Public Cloud project identifier:
