@@ -1,7 +1,7 @@
 ---
 title: Data Integration - CLI - Commands reference
 excerpt: Learn how to use the Data Integration CLI
-updated: 2023-09-01
+updated: 2023-09-04
 ---
 
 > [!primary]
