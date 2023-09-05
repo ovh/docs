@@ -219,8 +219,8 @@ Limites
 - La liste des adresses IP et des blocs renvoyés par l'API est classée par taille de préfixe réseau. Nous travaillons pour fournir une solution permettant de répertorier les adresses IP par ordre numérique.
 - Une fois découpés, les petits blocs ne sont pas déplaçables en dehors du campus choisi lors de la commande du produit.
 - Déplacer un bloc /24 sur les campus français ne fonctionnera pas si :
- - Il a été réagrégé à partir d'un découpage précédent
- - Le bloc /24 a été importé à partir d'un bloc plus gros (/23 à /19)
+    - Il a été réagrégé à partir d'un découpage précédent
+    - Le bloc /24 a été importé à partir d'un bloc plus gros (/23 à /19)
 
 ## FAQ
 

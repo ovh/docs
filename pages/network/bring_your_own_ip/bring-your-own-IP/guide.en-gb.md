@@ -217,8 +217,8 @@ Limitations
 - The listing of IP addresses and blocks returned by API is ordered by network prefixe size. We are working to provide a solution to list IP by numerical order.
 - Once sliced, smaller blocks are not movable outside the campus chosen during the order of the product.
 - Moving a /24 block across french campuses won't work if :
- - It has been reaggregted from a previous slicing
- - The /24 block was imported from a bigger block (/23 to /19)
+    - It has been reaggregted from a previous slicing
+    - The /24 block was imported from a bigger block (/23 to /19)
 
 ## FAQ
 
