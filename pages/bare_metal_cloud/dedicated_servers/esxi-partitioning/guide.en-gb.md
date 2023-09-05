@@ -1,12 +1,12 @@
 ---
-title: Dedicated Server - ESXi Partitioning
+title: Dedicated Servers - ESXi Partitioning
 excerpt: Use the OVHcloud Control Panel or the OVHcloud API to customize ESXi system partitions
-updated: 2023-09-06
+updated: 2023-09-05
 ---
 
 ## Objective
 
-With [OVHcloud Dedicated Servers](https://www.ovhcloud.com/en-gb/bare-metal/), you can [configure partitioning](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh). This gives the customer a very wide freedom for all OSes except for ESXi OSes because of their specificities: UNIX based and proprietary OS with a proprietary installer. OVHcloud is therefore dependent of the software editor for the OS installation. Since ESXi 7.0 it's possible to choose between 4 different pre-defined partitioning layouts. This article will show you how to choose a different partitioning layout in the [OVHcloud Control Panel](https://ovh.com/manager/#/dedicated/configuration) or via the [OVHcloud API](https://api.ovh.com/).
+With [OVHcloud Dedicated Servers](https://www.ovhcloud.com/en-gb/bare-metal/), you can [configure partitioning](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh). This gives the customer a very wide freedom for all OSs except for ESXi OSs because of their specificities: UNIX based and proprietary OS with a proprietary installer. OVHcloud is therefore dependent of the software editor for the OS installation. Since ESXi 7.0 it's possible to choose between 4 different pre-defined partitioning layouts. This article will show you how to choose a different partitioning layout in the [OVHcloud Control Panel](https://ovh.com/manager/#/dedicated/configuration) or via the [OVHcloud API](https://api.ovh.com/).
 
 > [!primary]
 >
@@ -18,14 +18,12 @@ With [OVHcloud Dedicated Servers](https://www.ovhcloud.com/en-gb/bare-metal/), y
 - A [dedicated server](https://www.ovhcloud.com/en-gb/bare-metal/) **ready to be installed/re-installed** in your OVHcloud account that is compatible with ESXi, whatever the version is.
 - Access to the [OVHcloud Control Panel](https://ovh.com/manager/#/dedicated/configuration) and/or the [OVHcloud API](https://api.ovh.com/).
 
-> [!warning]
+> [!alert]
 >
 > Reinstalling a dedicated server deletes all data currently stored on it.
 >
 
 ## Instructions
-
-### Overview
 
 ESXi 7.0 has introduced a [boot option to configure the size of ESXi system partitions](https://kb.vmware.com/s/article/81166). This feature has been introduced by the software editor because some customers complained about the useless presence of a datastore that fills all the remaining space of the installation disk or an OS that uses an oversized system partition. OVHcloud is now offering this feature that is available via the [OVHcloud Control Panel](https://ovh.com/manager/#/dedicated/configuration) and/or the [OVHcloud API](https://api.ovh.com/).
 
@@ -53,9 +51,9 @@ As you can see, all the space of that installation disk is used except for the `
 > [VMware on OVHcloud solutions](https://www.ovhcloud.com/en-gb/hosted-private-cloud/vmware/) are based on ESXi with the partitioning layout `small`.
 >
 
-### How to select the partitioning layout ?
+### How to select the partitioning scheme ?
 
-As you can guess, if no partitioning layout is provided, the `default` partitioning layout will be used.
+As you can guess, if no partitioning scheme is provided, the `default` partitioning scheme will be used.
 
 #### Via the OVHcloud Control Panel
 
@@ -92,13 +90,13 @@ Click `Next`{.action} to continue.
 
 ![ESXi selection](images/reinstalling-your-server-02.png){.thumbnail}
 
-In the `Partitioning scheme`{.action} dropdown menu, select the partitionin scheme you want to have: the overview is updated as soon as you select another partitioning scheme, so you can get an idea of how your partitioning will look like on your dedicated server.
+In the `Partitioning scheme`{.action} dropdown menu, select the partitioning scheme you want to have: the overview is updated as soon as you select another partitioning scheme, so you can get an idea of how your partitioning will look like on your dedicated server.
 
-Fill the other details and click `Confirm`{.action} to start the ESXi installation on your dedicated server.
+Fill in the other details and click `Confirm`{.action} to start the ESXi installation on your dedicated server.
 
 > [!primary]
 >
-> `Number of disks partitioned`{.action} is grayed out and set to 1 even if your server has more than 1 disk on the disks group target for OS installation as explained below.
+>  The `Number of disks partitioned`{.action} field is greyed out and set to 1, even if your server has more than 1 disk on the disks group target for OS installation, as explained above.
 >
 
 ![Partitioning Scheme selection](images/esxi-custom-scheme-00.png){.thumbnail}
@@ -112,7 +110,7 @@ When triggering an OS installation, the customer can optionally provide a `parti
 > @api {POST} /dedicated/server/{serviceName}/install/start
 >
 
-Example of payload
+Example of payload:
 
 ```json
 {
@@ -122,7 +120,7 @@ Example of payload
 }
 ```
 
-To list the different available partitioning schemes for an OVHcloud template you can use the following API call:
+To list the different available partitioning schemes for an OVHcloud template, you can use the following API call:
 
 > [!api]
 >
@@ -147,7 +145,7 @@ In order to get the details of the partitioning scheme dynamically, you can use 
 > @api {GET}  /dedicated/installationTemplate/{templateName}/partitionScheme/{schemeName}/partition
 >
 
-You can use the following API call to get the detail for each partition:
+You can use the following API call to get the details for each partition:
 
 > [!api]
 >
