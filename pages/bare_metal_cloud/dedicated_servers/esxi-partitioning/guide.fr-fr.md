@@ -37,15 +37,15 @@ Malgré le fait que votre serveur ait plusieurs disques, l'installation d'ESXi n
 |---|---|---|
 |`default`|130 Gio|Tout l'epace restant²|
 |`min`|32 Gio|Tout l'epace restant²|
-|`small`|64 Gio|❌⁴|
+|`small`|64 Gio|Tout l'epace restant²|
 |`max`|Tout l'espace disponible²|❌⁴|
 
-¹ Seulement le premier disque de la grappe de disques sélectionnée pour l'installation de l'OS.<br />
+¹ Seul le premier disque de la grappe de disques sélectionnée pour l'installation de l'OS.<br />
 ² Espace disque sur lequel l'OS va être installé.<br />
 ³ Un datastore est une partition de disque (parfois aussi appelée « container ») que ESXi va utiliser pour stocker ses machines virtuelles. Retrouvez plus de détails sur [cette documentation VMware (EN)](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.storage.doc/GUID-5EE84941-366D-4D37-8B7B-767D08928888.html).<br />
 ⁴ Le client pourra toujours [ajouter un datastore](/pages/bare_metal_cloud/hgrstor2_system_configuration#add-datastore) par la suite, mais uniquement sur les autres disques.<br />
 
-Comme vous pouvez le constater, tout l'espace du disque d'installation est utilisé sauf pour le schéma `small`.
+Comme vous pouvez le constater, le schéma `max` ne contient pas de datastore.
 
 > [!primary]
 >
@@ -74,7 +74,7 @@ Cliquez sur `Suivant`{.action} pour continuer.
 
 ![Sélection de template](images/reinstalling-your-server-01.png){.thumbnail}
 
-Ensuite, choisissez `Virtualisation`{.action}, `UNIX`{.action} et choisissez la version d'ESXi que vous souhaitez installer sur votre serveur dédié.
+Ensuite, choisissez `Virtualisation`{.action}, `UNIX`{.action} et sélectionnez la version d'ESXi que vous souhaitez installer sur votre serveur dédié.
 
 > [!primary]
 >
@@ -86,13 +86,13 @@ Ensuite, choisissez `Virtualisation`{.action}, `UNIX`{.action} et choisissez la 
 > Comme vous pouvez le constater, vous ne pouvez pas cocher l'option `Personnaliser la configuration des partitions`{.action}, comme expliqué ci-dessus.
 >
 
-Choisissez la grappe de disques sur laquelle vous souhaitez qu'ESXi soit installé. Notez que seulement le premier disque de la grappe va être utilisé pour installer le système d'exploitation. Retrouvez plus d'information dans [ce guide](/pages/bare_metal_cloud/dedicated_servers/install_hybrid).
+Choisissez la grappe de disques sur laquelle vous souhaitez qu'ESXi soit installé. Notez que seul le premier disque de la grappe va être utilisé pour installer le système d'exploitation. Retrouvez plus d'information dans [ce guide](/pages/bare_metal_cloud/dedicated_servers/install_hybrid).
 
 Cliquez sur `Suivant`{.action} pour continuer.
 
 ![Choix d'ESXi comme OS à installer](images/reinstalling-your-server-02.png){.thumbnail}
 
-Dans la liste déroulante `Schéma de partitionnement`{.action}, sélectionnez le schéma de partitionnement que vous souhaitez avoir. L'aperçu est mis à jour dès que vous basculez vers un autre schéma de partitionnement, de telle sorte que vous puissiez avoir une idée de la configuration sur votre serveur dédié.
+Dans la liste déroulante `Schéma de partitionnement`{.action}, sélectionnez le schéma de partitionnement désiré. L'aperçu est mis à jour dès que vous basculez vers un autre schéma de partitionnement, de telle sorte que vous puissiez avoir une idée de la configuration sur votre serveur dédié.
 
 Complétez les autres détails et cliquez sur `Confirmer`{.action} afin de démarrer l'installation d'ESXi sur votre serveur dédié.
 
@@ -111,7 +111,7 @@ Lorsque vous lancez une installation d'OS, vous pouvez fournir une option `parti
 > @api {POST} /dedicated/server/{serviceName}/install/start
 >
 
-Exemple de charge utile :
+Exemple de requête :
 
 ```json
 {

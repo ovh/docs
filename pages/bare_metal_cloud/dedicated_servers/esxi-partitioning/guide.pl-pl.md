@@ -6,12 +6,12 @@ updated: 2023-09-05
 
 ## Objective
 
-With [OVHcloud dedicated servers](https://www.ovhcloud.com/pl/bare-metal/), you can freely [configure partitioning](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh). This gives customers a wide range of options when installing an operating system. ESXi is an exception because it is a UNIX based, proprietary system with a proprietary installer.<br />
-OVHcloud installations of ESXi are therefore compliant with the configuration set by the software publisher. Since ESXi 7.0 it is possible to choose between 4 different predefined partitioning layouts. This guide will show you how to select a partitioning layout in the [OVHcloud Control Panel](https://ovh.com/manager/#/dedicated/configuration) or via the [OVHcloud API](https://api.ovh.com/).
+With [OVHcloud dedicated servers](https://www.ovhcloud.com/pl/bare-metal/), you can freely [configure partitioning](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh). This gives customers a wide range of options when installing an operating system. ESXi is an exception because it is a UNIX-based, proprietary system with a proprietary installer.<br />
+OVHcloud installations of ESXi are therefore compliant with the configuration set by the software publisher. Since ESXi 7.0, it is possible to choose between 4 different predefined partitioning layouts. This guide will show you how to select a partitioning layout in the [OVHcloud Control Panel](https://ovh.com/manager/#/dedicated/configuration) or via the [OVHcloud API](https://api.ovh.com/).
 
 > [!primary]
 >
-> ESXi 7.0 is often used as an example but this documentation is valid for any further versions of ESXi 7.0 as well.
+> ESXi 7.0 is often used as an example but this documentation is valid for any further versions of ESXi as well.
 >
 
 ## Requirements
@@ -26,7 +26,7 @@ OVHcloud installations of ESXi are therefore compliant with the configuration se
 
 ## Instructions
 
-ESXi 7.0 has introduced a [boot option to configure the size of ESXi system partitions](https://kb.vmware.com/s/article/81166) because some customers had complained about the useless presence of a datastore that fills all the remaining space of the installation disk or an OS that uses an oversized system partition. OVHcloud includes this feature in the [OVHcloud Control Panel](https://ovh.com/manager/#/dedicated/configuration) and the [OVHcloud API](https://api.ovh.com/).
+ESXi 7.0 introduced a [boot option to configure the size of ESXi system partitions](https://kb.vmware.com/s/article/81166) because the increased size of the system partition could cause issues, especially on systems with small disks. OVHcloud includes this feature in the [OVHcloud Control Panel](https://ovh.com/manager/#/dedicated/configuration) and the [OVHcloud API](https://api.ovh.com/).
 
 Even with multiple disks available on a server, the ESXi OS installation uses only the first disk of the targeted disk group (see [Choosing the disk group to install an operating system](/pages/bare_metal_cloud/dedicated_servers/install_hybrid)). Other disks may be configured afterwards to be used for virtual machines (see [How to add a datastore](/pages/bare_metal_cloud/hgrstor2_system_configuration#add-datastore)).
 
@@ -40,11 +40,11 @@ There are 4 different values:
 |`max`|All available space²|❌⁴|
 
 ¹ On the first disk of the targeted disk group for the OS installation.<br />
-² Space of the disk on which the OS will be installed.<br />
+² Space on the disk on which the OS will be installed.<br />
 ³ A datastore is a disk partition (sometimes also called "container") that ESXi will use to store the virtual machines. [More details](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.storage.doc/GUID-5EE84941-366D-4D37-8B7B-767D08928888.html).<br />
 ⁴ Customers can still [add a datastore](/pages/bare_metal_cloud/hgrstor2_system_configuration#add-datastore) afterwards on the other disks.
 
-As you can see, all the space of that installation disk will be used except if you choose the `small` partitioning layout.
+As you can see, `max` partitioning layout doesn't have any datastore.
 
 > [!primary]
 >

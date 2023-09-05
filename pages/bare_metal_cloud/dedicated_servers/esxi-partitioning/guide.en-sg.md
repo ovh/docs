@@ -6,12 +6,12 @@ updated: 2023-09-05
 
 ## Objective
 
-With [OVHcloud dedicated servers](https://www.ovhcloud.com/en-sg/bare-metal/), you can freely [configure partitioning](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh). This gives customers a wide range of options when installing an operating system. ESXi is an exception because it is a UNIX based, proprietary system with a proprietary installer.<br />
-OVHcloud installations of ESXi are therefore compliant with the configuration set by the software publisher. Since ESXi 7.0 it is possible to choose between 4 different predefined partitioning layouts. This guide will show you how to select a partitioning layout in the [OVHcloud Control Panel](https://ovh.com/manager/#/dedicated/configuration) or via the [OVHcloud API](https://ca.api.ovh.com/).
+With [OVHcloud dedicated servers](https://www.ovhcloud.com/en-sg/bare-metal/), you can freely [configure partitioning](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh). This gives customers a wide range of options when installing an operating system. ESXi is an exception because it is a UNIX-based, proprietary system with a proprietary installer.<br />
+OVHcloud installations of ESXi are therefore compliant with the configuration set by the software publisher. Since ESXi 7.0, it is possible to choose between 4 different predefined partitioning layouts. This guide will show you how to select a partitioning layout in the [OVHcloud Control Panel](https://ovh.com/manager/#/dedicated/configuration) or via the [OVHcloud API](https://ca.api.ovh.com/).
 
 > [!primary]
 >
-> ESXi 7.0 is often used as an example but this documentation is valid for any further versions of ESXi 7.0 as well.
+> ESXi 7.0 is often used as an example but this documentation is valid for any further versions of ESXi as well.
 >
 
 ## Requirements
@@ -40,11 +40,11 @@ There are 4 different values:
 |`max`|All available space²|❌⁴|
 
 ¹ On the first disk of the targeted disk group for the OS installation.<br />
-² Space of the disk on which the OS will be installed.<br />
+² Space on the disk on which the OS will be installed.<br />
 ³ A datastore is a disk partition (sometimes also called "container") that ESXi will use to store the virtual machines. [More details](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.storage.doc/GUID-5EE84941-366D-4D37-8B7B-767D08928888.html).<br />
 ⁴ Customers can still [add a datastore](/pages/bare_metal_cloud/hgrstor2_system_configuration#add-datastore) afterwards on the other disks.
 
-As you can see, all the space of that installation disk will be used except if you choose the `small` partitioning layout.
+As you can see, `max` partitioning layout doesn't have any datastore.
 
 > [!primary]
 >
