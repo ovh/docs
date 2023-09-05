@@ -213,8 +213,8 @@ Note : this feature is currently available via API only. It will be added to the
 
 Limitations
 
-- Configuration elements associated to individual IP addesses (/32) such as firewall rules or reverse DNS entries will be kept after slicing/merging operations.
-- The listing of IP addresses and blocks returned by API is order by network prefixe size. We are working to provide a solution to list IP by numerical order.
+- Configuration elements associated to individual IP addresses (/32) such as firewall rules or reverse DNS entries will be kept after slicing/merging operations.
+- The listing of IP addresses and blocks returned by API is ordered by network prefixe size. We are working to provide a solution to list IP by numerical order.
 - Once sliced, smaller blocks are not movable outside the campus chosen during the order of the product.
 - Moving a /24 block across french campuses won't work if :
  - It has been reaggregted from a previous slicing
