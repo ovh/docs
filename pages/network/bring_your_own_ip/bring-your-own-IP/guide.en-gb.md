@@ -196,6 +196,8 @@ with following parameters:
 
 The resulting block will be an aggregate of all its children blocks.
 
+Note : This API call is asynchronous, the re-aggregated blocks are made available shortly after the call.
+
 You can preview all the possible configurations of aggregated blocks for a given IP block, by using the following API call:
 
 > [!api]
@@ -209,15 +211,16 @@ with following parameters:
 
 This call returns a list of possible aggregated blocks and for each one of them, gives the list of children blocks to be merged back.
 
-Note : this feature is currently available via API only. It will be added to the control panel in the near future.
 
 Limitations
 
+- This feature is currently available via API only. It will be added to the control panel in the near future.
 - Configuration elements associated to individual IP addresses (/32) such as firewall rules or reverse DNS entries will be kept after slicing/merging operations.
+- Slice/Aggregate API tasks cannot be followed up by the asynchronous task number returned by API, as associated IP objects will be destroyed in the slice/aggregate process.
 - The listing of IP addresses and blocks returned by API is ordered by network prefixe size. We are working to provide a solution to list IP by numerical order.
 - Once sliced, smaller blocks are not movable outside the campus chosen during the order of the product.
 - Moving a /24 block across french campuses won't work if :
-    - It has been reaggregted from a previous slicing
+    - It has been reaggregated from a previous slicing
     - The /24 block was imported from a bigger block (/23 to /19)
 
 ## FAQ

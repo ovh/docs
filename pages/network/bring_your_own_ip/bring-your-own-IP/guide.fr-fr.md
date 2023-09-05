@@ -198,6 +198,8 @@ avec les paramètres suivants :
 
 Le bloc résultant sera un agrégat de tous ses blocs enfants.
 
+Remarque : Cet appel API est asynchrone, les blocs nouvellement fusionnés sont rendus disponibles peu de temps après l'appel.
+
 Vous pouvez prévisualiser toutes les configurations possibles des blocs agrégés pour un bloc IP donné, en utilisant l'appel API suivant :
 
 > [!api]
@@ -216,6 +218,7 @@ Limites
 
 - Cette fonctionnalité est actuellement disponible via API uniquement. Il sera ajouté au panneau de contrôle dans un avenir proche.
 - Les éléments de configuration associés aux adresses IP individuelles (/32) tels que les règles de pare-feu ou les entrées reverse DNS seront conservés après les opérations de découpage/fusion.
+- Les tâches API découpage/fusion ne peuvent pas être suivies par le numéro de tâche asynchrone renvoyé par l'API, car les objets IP associés seront détruits dans le processus de découpage/fusion.
 - La liste des adresses IP et des blocs renvoyés par l'API est classée par taille de préfixe réseau. Nous travaillons pour fournir une solution permettant de répertorier les adresses IP par ordre numérique.
 - Une fois découpés, les petits blocs ne sont pas déplaçables en dehors du campus choisi lors de la commande du produit.
 - Déplacer un bloc /24 sur les campus français ne fonctionnera pas si :
