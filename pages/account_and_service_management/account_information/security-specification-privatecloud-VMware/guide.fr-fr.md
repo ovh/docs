@@ -15,7 +15,6 @@ En complément au [modèle de responsabilité entre OVHcloud et le client sur le
 - ISO/IEC 27018
 - HDS
 - PCI DSS
-- SecNumCloud
 - SOC 1 type II
 - SOC 2 type II
 - CSA type II
