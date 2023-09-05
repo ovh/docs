@@ -152,7 +152,7 @@ To activate the announcement of your imported IP range on the Internet, simply a
 
 ### Range slicing
 
-Any imported block can be further split into smaller blocks and/or individual addresses.
+Any imported IP block can be further split into smaller blocks and/or individual addresses.
 
 > [!warning] 
 > To be able to slice/merge an existing IP block, it must be unused (i.e. in the parking area) and there must not be any pending task associated with it (e.g. no pending move operation).
@@ -196,7 +196,7 @@ with following parameters:
 
 The resulting block will be an aggregate of all its children blocks.
 
-You can preview all the possible configuration of aggregated blocks for a given IP block, by using the following API call:
+You can preview all the possible configurations of aggregated blocks for a given IP block, by using the following API call:
 
 > [!api]
 >
@@ -218,7 +218,7 @@ Limitations
 - Once sliced, smaller blocks are not movable outside the campus chosen during the order of the product.
 - Moving a /24 block across french campuses won't work if :
  - It has been reaggregted from a previous slicing
- - The /24 block is imported from a bigger block (/23 to /19)
+ - The /24 block was imported from a bigger block (/23 to /19)
 
 ## FAQ
 
@@ -230,7 +230,7 @@ No, the minimum accepted size is a /24.
 
 Not at product launch, but feel free to contact us to discuss this.
 
-### Is splitting the imported /24 into smaller block size (/25, /26, /27, /28, /29 /30) or into /32 supported?
+### Is splitting the imported /24 into smaller block size (/25, /26, /27, /28, /29, /30) or into /32 supported?
 
 Yes, please see section "Range slicing" for more details.
 
