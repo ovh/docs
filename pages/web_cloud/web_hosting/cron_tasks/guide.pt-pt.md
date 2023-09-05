@@ -144,7 +144,7 @@ Para mais informações, consulte o nosso guia ["Consultar as estatísticas e os
 
 ## Saiba mais
 
-[Configurar o ficheiro .ovhconfig do alojamento web](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014)
+[Configurar o ficheiro .ovhconfig do alojamento web](/pages/web_cloud/web_hosting/configure_your_web_hosting)
 
 [Utilizar o acesso SSH do seu alojamento web](/pages/web_cloud/web_hosting/ssh_on_webhosting)
 

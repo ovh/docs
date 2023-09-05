@@ -37,7 +37,7 @@ Para iniciar esta operação, aceda à [Área de Cliente OVHcloud](https://www.o
 > [!primary]
 > Se o botão `Alterar configuração`{.action} estiver cinzento, é possível que esteja a decorrer uma verificação da **versão global de PHP**. Se for o caso, aparecerá um símbolo redondo azul junto da versão, indicando que a verificação está em curso. Aguarde alguns minutos para que o botão `Alterar configuração`{.action} volte a ficar acessível.
 >
-> Se a opção `Versão PHP Globale`{.action} não aparecer no seu [Espaço Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), verifique que existe um ficheiro "**.ovhconfig**" na raiz FTP do seu alojamento partilhado OVHcloud através do nosso guia sobre a [configuração do ficheiro ".ovhconfig"](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014).
+> Se a opção `Versão PHP Globale`{.action} não aparecer no seu [Espaço Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), verifique que existe um ficheiro "**.ovhconfig**" na raiz FTP do seu alojamento partilhado OVHcloud através do nosso guia sobre a [configuração do ficheiro ".ovhconfig"](/pages/web_cloud/web_hosting/configure_your_web_hosting).
 >
 
 #### 2 - Alterar a configuração do alojamento web
@@ -90,7 +90,7 @@ Alterar o ambiente de execução permite modificar determinados valores técnico
 Existem duas possibilidades para realizar esta alteração:
 
 - **através da Área de Cliente**: utilize as instruções indicadas na secção [Alterar a configuração do alojamento web a partir da Área de Cliente](./#alterar-a-configuracao-do-alojamento-web-a-partir-da-area-de-cliente){.external} deste manual;
-- **alterando manualmente o ficheiro “.ovhconfig**”: esta solução é mais técnica e precisa de aceder ao seu espaço de armazenamento. Caso pretenda alterar o ficheiro “**.ovhconfig**”, consulte as instruções do nosso manual [Configurar o ficheiro .ovhconfig do alojamento web](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014){.external}.
+- **alterando manualmente o ficheiro “.ovhconfig**”: esta solução é mais técnica e precisa de aceder ao seu espaço de armazenamento. Caso pretenda alterar o ficheiro “**.ovhconfig**”, consulte as instruções do nosso manual [Configurar o ficheiro .ovhconfig do alojamento web](/pages/web_cloud/web_hosting/configure_your_web_hosting){.external}.
 
 #### Versão de PHP
 
@@ -103,7 +103,7 @@ Existem várias formas de alterar a versão de PHP do seu alojamento web:
 - **através da Área de Cliente**: utilize as instruções indicadas na secção [Alterar a configuração do alojamento web a partir da Área de Cliente](./#alterar-a-configuracao-do-alojamento-web-a-partir-da-area-de-cliente){.external} deste manual;
 - **alterando manualmente um ficheiro no seu espaço de armazenamento**: esta solução é mais técnica e precisa de aceder ao seu espaço de armazenamento. 
 
-Para mais informações sobre a alteração de uma versão de PHP, consulte o nosso manual [Mudar a versão de PHP do alojamento web](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014){.external}.
+Para mais informações sobre a alteração de uma versão de PHP, consulte o nosso manual [Mudar a versão de PHP do alojamento web](/pages/web_cloud/web_hosting/configure_your_web_hosting){.external}.
 
 #### Motor PHP
 
@@ -112,7 +112,7 @@ A escolha do motor PHP permite ativar ou desativar o acelerador PH (PHP-FPM), qu
 Pode alterar o motor PHP utilizado pelo seu alojamento web de duas formas:
 
 - **através da Área de Cliente**: utilize as instruções indicadas na secção [Alterar a configuração do alojamento web a partir da Área de Cliente](./#alterar-a-configuracao-do-alojamento-web-a-partir-da-area-de-cliente){.external} deste manual. Para ativar o acelerador PHP (PHP-FPM), selecione a opção “php” enquanto motor. Para o desativar, escolha a opção “phpcgi”;
-- **alterando manualmente o ficheiro “.ovhconfig**”: esta solução é mais técnica e precisa de aceder ao seu espaço de armazenamento. Caso pretenda alterar o ficheiro “**.ovhconfig**”, consulte as instruções do nosso manual [Configurar o ficheiro .ovhconfig do alojamento web](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014){.external}.
+- **alterando manualmente o ficheiro “.ovhconfig**”: esta solução é mais técnica e precisa de aceder ao seu espaço de armazenamento. Caso pretenda alterar o ficheiro “**.ovhconfig**”, consulte as instruções do nosso manual [Configurar o ficheiro .ovhconfig do alojamento web](/pages/web_cloud/web_hosting/configure_your_web_hosting){.external}.
 
 #### Modo
 
@@ -131,7 +131,7 @@ A escolha do modo permite gerir o comportamento da cache dos ficheiros estático
 Pode alterar o modo utilizado pelo seu alojamento web de duas formas:
 
 - **através da Área de Cliente**: utilize as instruções indicadas na secção [Alterar a configuração do alojamento web a partir da Área de Cliente](./#alterar-a-configuracao-do-alojamento-web-a-partir-da-area-de-cliente){.external} deste manual;
-- **alterando manualmente o ficheiro “.ovhconfig**”: esta solução é mais técnica e precisa de aceder ao seu espaço de armazenamento. Caso pretenda alterar o ficheiro “**.ovhconfig**”, consulte as instruções do nosso manual [Configurar o ficheiro .ovhconfig do alojamento web](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014){.external}.
+- **alterando manualmente o ficheiro “.ovhconfig**”: esta solução é mais técnica e precisa de aceder ao seu espaço de armazenamento. Caso pretenda alterar o ficheiro “**.ovhconfig**”, consulte as instruções do nosso manual [Configurar o ficheiro .ovhconfig do alojamento web](/pages/web_cloud/web_hosting/configure_your_web_hosting){.external}.
 
 ## Quer saber mais?
 

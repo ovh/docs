@@ -210,7 +210,7 @@ Please also refer to our guide on [how to secure your website](/pages/web_cloud/
 
 [Logging in to your Web Hosting plan’s storage space](/pages/web_cloud/web_hosting/ftp_connection)
 
-[Modify your Web Hosting plan’s configuration](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014)
+[Modify your Web Hosting plan’s configuration](/pages/web_cloud/web_hosting/configure_your_web_hosting)
 
 [Enable Application Firewall](/pages/web_cloud/web_hosting/multisites_activating_application_firewall)
 

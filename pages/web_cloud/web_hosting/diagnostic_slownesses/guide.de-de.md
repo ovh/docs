@@ -198,11 +198,11 @@ Im Folgenden finden Sie die notwendigen Aktionen, um die Quelle(n) der Langsamke
 
 #### 2.1 - Überprüfen Sie die Konfiguration Ihres Webhostings
 
-Überprüfen Sie die auf Ihrem Webhosting verwendete PHP-Engine, PHP-Version und Ausführungsumgebung. Lesen Sie hierzu unsere Anleitung zur [Konfiguration Ihres Webhostings](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014).
+Überprüfen Sie die auf Ihrem Webhosting verwendete PHP-Engine, PHP-Version und Ausführungsumgebung. Lesen Sie hierzu unsere Anleitung zur [Konfiguration Ihres Webhostings](/pages/web_cloud/web_hosting/configure_your_web_hosting).
 
 Wenn Sie auf Ihrem Webhosting eine überholte PHP-Version einsetzen, sowie die Engine **PHP CGI** und/oder die Umgebung **legacy** und **wenn Ihre Website kompatibel ist**, verwenden Sie die Engine **PHP** (PHP FPM) mit **stable64** und die aktuellste PHP-Version.
 
-Um die verfügbaren PHP-Versionen je nach Ausführungsumgebung zu vergleichen, lesen Sie **Schritt 2** der Anleitung zur [Konfiguration der PHP-Version auf Ihrem Hosting](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014).
+Um die verfügbaren PHP-Versionen je nach Ausführungsumgebung zu vergleichen, lesen Sie **Schritt 2** der Anleitung zur [Konfiguration der PHP-Version auf Ihrem Hosting](/pages/web_cloud/web_hosting/configure_your_web_hosting).
 
 Die Verwendung einer aktuellen PHP-Version, die Ausführungsumgebung **stable** oder **stable64** mit der Engine **PHP** (PHP FPM) macht Ihre Website deutlich flüssiger und schneller. Zur Information: Die Engine **PHP** (PHP FPM) kann bis zu 50 Mal leistungsfähiger bei Auführungen sein als die Engine **PHP CGI**.
 

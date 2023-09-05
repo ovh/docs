@@ -23,7 +23,7 @@ The .ovhconfig file can be edited in two ways:
 
 - **By manually editing the .ovhconfig file.** This method is technical in nature, and requires you to be connected to your storage space. In this guide, we will focus on this method.
 
-- **Through a configuration wizard in the OVHcloud Control Panel.** This solution is less technical and requires you to be logged in to the OVHcloud Control Panel, where you can select the changes to be made. Please refer to the instructions set out in our guide: [Modifying the configuration of a Web Hosting plan](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014){.external}.
+- **Through a configuration wizard in the OVHcloud Control Panel.** This solution is less technical and requires you to be logged in to the OVHcloud Control Panel, where you can select the changes to be made. Please refer to the instructions set out in our guide: [Modifying the configuration of a Web Hosting plan](/pages/web_cloud/web_hosting/configure_your_web_hosting){.external}.
 
 Continue reading if you wish to edit the .ovhconfig file manually. 
 

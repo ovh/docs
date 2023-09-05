@@ -138,7 +138,7 @@ Please refer to [this guide](/pages/web_cloud/web_hosting/logs_and_statistics) f
 
 ## Go further
 
-[Configuring the .ovhconfig file of your Web Hosting plan](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014)
+[Configuring the .ovhconfig file of your Web Hosting plan](/pages/web_cloud/web_hosting/configure_your_web_hosting)
 
 [Using SSH on a Web Hosting plan](/pages/web_cloud/web_hosting/ssh_on_webhosting)
 

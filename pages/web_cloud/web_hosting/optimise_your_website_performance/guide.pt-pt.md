@@ -60,9 +60,9 @@ Algumas variáveis do servidor são alteradas através da utilização do PHP-FP
 |max_input_vars|2000|16000|
 |memory_limit|128M|512M|
 
-Pode obter informações sobre como atualizar o PHP [neste guia](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014){.external}.
+Pode obter informações sobre como atualizar o PHP [neste guia](/pages/web_cloud/web_hosting/configure_your_web_hosting){.external}.
 
-Para mudar para a utilização do PHP-FPM na versão _estável_ ou para obter detalhes sobre opções mais avançadas do seu alojamento web, consulte [este guia](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014){.external}.
+Para mudar para a utilização do PHP-FPM na versão _estável_ ou para obter detalhes sobre opções mais avançadas do seu alojamento web, consulte [este guia](/pages/web_cloud/web_hosting/configure_your_web_hosting){.external}.
 
 O ficheiro _.ovhconfig_ funciona na raiz do pacote de alojamento ou num subdiretório de nível 1 (por ex.: _/www/_), mas não em diretórios de nível 2 ou superiores (por ex.: _/www/test/_ , _/www/test/test2/_)
 
@@ -212,7 +212,7 @@ Se, apesar de todas as alterações e otimizações realizadas, a base de dados 
 
 ## Vá mais longe
 
-[Alterar a configuração de um plano de alojamento web](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014){.external}
+[Alterar a configuração de um plano de alojamento web](/pages/web_cloud/web_hosting/configure_your_web_hosting){.external}
 
 [Gestão de uma base de dados num pacote de alojamento web](/pages/web_cloud/web_hosting/sql_create_database){.external}
 

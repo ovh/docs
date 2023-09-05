@@ -37,7 +37,7 @@ First of all, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?a
 > [!primary]
 > If the `Modify configuration`{.action} button is greyed out, it may be because of an ongoing **global PHP version** verification. If this is the case, a blue wheel will appear next to the version, indicating that a verification is in progress. Wait a few minutes for the `Modify configuration`{.action} button to become accessible again.
 >
-> If the `Global PHP version`{.action} option does not appear in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), check that a "**.ovhconfig**" file does exist in the FTP root of your OVHcloud shared hosting plan by referring to our guide on [configuring the ".ovhconfig" file](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014).
+> If the `Global PHP version`{.action} option does not appear in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), check that a "**.ovhconfig**" file does exist in the FTP root of your OVHcloud shared hosting plan by referring to our guide on [configuring the ".ovhconfig" file](/pages/web_cloud/web_hosting/configure_your_web_hosting).
 >
 
 #### Step 2: Check your Web Hosting plan’s configuration.
@@ -90,7 +90,7 @@ By changing the runtime environment, you can edit certain technical values for y
 Once you have chosen your runtime environment, you can change it in two different ways:
 
 - **Via the OVHcloud Control Panel.** Use the instructions provided in the [Modify the Web Hosting plan configuration via the OVHcloud Control Panel](/pages/web/hosting/ovhconfig_modify_system_runtime#modify-your-web-hosting-plans-configuration-via-the-control-panel){.external} section of this guide.
-- **Editing the .ovhconfig file.** This method is more technical, and you will need to be connected to your storage space. If you would like to modify the **.ovhconfig** file, please refer to our guide to [Configuring the .ovhconfig file on an OVHcloud Web Hosting plan](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014){.external}.
+- **Editing the .ovhconfig file.** This method is more technical, and you will need to be connected to your storage space. If you would like to modify the **.ovhconfig** file, please refer to our guide to [Configuring the .ovhconfig file on an OVHcloud Web Hosting plan](/pages/web_cloud/web_hosting/configure_your_web_hosting){.external}.
 
 #### PHP version
 
@@ -103,7 +103,7 @@ There are several ways you can modify your Web Hosting plan’s PHP version:
 - **Via the OVHcloud Control Panel.** Use the instructions provided in the [Modify the Web Hosting plan configuration via the OVHcloud Control Panel](/pages/web/hosting/ovhconfig_modify_system_runtime#modify-your-web-hosting-plans-configuration-via-the-control-panel){.external} section of this guide.
 - **By manually modifying file on your storage space.** This solution is more technical, and you will need to be connected to your storage space. 
 
-Generally, if you want more information on changing from one PHP version to another, please follow the instructions in our guide to [Configuring PHP versions on an OVHcloud Web Hosting plan](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014){.external}.
+Generally, if you want more information on changing from one PHP version to another, please follow the instructions in our guide to [Configuring PHP versions on an OVHcloud Web Hosting plan](/pages/web_cloud/web_hosting/configure_your_web_hosting){.external}.
 
 #### PHP engine
 
@@ -112,7 +112,7 @@ With the PHP engine you use, you can enable or disable the PHP accelerator (PHP-
 There are two ways of modifying the PHP motor used by your Web Hosting plan:
 
 - **Via the OVHcloud Control Panel.** Use the instructions provided in the [Modify the Web Hosting plan configuration via the OVHcloud Control Panel](/pages/web/hosting/ovhconfig_modify_system_runtime#modify-your-web-hosting-plans-configuration-via-the-control-panel){.external} section of this guide. To activate the PHP accelerator (PHP-FPM), choose ‘php’ as a motor. To deactivate it, choose phpcgi.
-- **Editing the .ovhconfig file.** This method is more technical, and you will need to be connected to your storage space. If you would like to modify the **.ovhconfig** file, please refer to our guide to [Configuring the .ovhconfig file on an OVHcloud Web Hosting plan](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014){.external}.
+- **Editing the .ovhconfig file.** This method is more technical, and you will need to be connected to your storage space. If you would like to modify the **.ovhconfig** file, please refer to our guide to [Configuring the .ovhconfig file on an OVHcloud Web Hosting plan](/pages/web_cloud/web_hosting/configure_your_web_hosting){.external}.
 
 #### Mode
 
@@ -131,7 +131,7 @@ By choosing a mode, you can manage how your website’s cached static files (e.g
 There are two ways of modifying the mode used by your Web Hosting plan:
 
 - **Via the OVHcloud Control Panel.** Use the instructions provided in the [Modify the Web Hosting plan configuration via the OVHcloud Control Panel](/pages/web/hosting/ovhconfig_modify_system_runtime#modify-your-web-hosting-plans-configuration-via-the-control-panel){.external} section of this guide.
-- **Editing the .ovhconfig file.** This method is more technical, and you will need to be connected to your storage space. If you would like to modify the **.ovhconfig** file, please refer to our guide to [Configuring the .ovhconfig file on an OVHcloud Web Hosting plan](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014){.external}.
+- **Editing the .ovhconfig file.** This method is more technical, and you will need to be connected to your storage space. If you would like to modify the **.ovhconfig** file, please refer to our guide to [Configuring the .ovhconfig file on an OVHcloud Web Hosting plan](/pages/web_cloud/web_hosting/configure_your_web_hosting){.external}.
 
 ## Go further
 

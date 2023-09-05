@@ -86,7 +86,7 @@ Für alle "Fehler 500", die mit der Datenbank Ihrer Website in Zusammenhang steh
 
 ### Ihre Website auf einen vorherigen Zustand zurücksetzen <a name="restore"></a>
 
-Wenn der "Fehler 500" nach dem Ändern der PHP-Konfiguration Ihres Webhostings aufgetreten ist, kehren Sie zur vorherigen Einstellung zurück, indem Sie [unserer Anleitung folgen](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014).
+Wenn der "Fehler 500" nach dem Ändern der PHP-Konfiguration Ihres Webhostings aufgetreten ist, kehren Sie zur vorherigen Einstellung zurück, indem Sie [unserer Anleitung folgen](/pages/web_cloud/web_hosting/configure_your_web_hosting).
 
 > [!warning]
 >

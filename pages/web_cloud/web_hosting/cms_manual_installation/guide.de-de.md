@@ -172,7 +172,7 @@ Nachfolgend finden Sie die Download-Seiten für die CMS, die in dieser Anleitung
 > - [Drupal](https://www.drupal.org/docs/getting-started/system-requirements/php-requirements){.external}
 > - [Prestashop](https://www.prestashop.com/en/system-requirements){.external}
 >
-> Konfigurieren Sie anschließend die PHP-Version mithilfe unserer Anleitung zur [Änderung der PHP-Version eines Webhostings](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014).
+> Konfigurieren Sie anschließend die PHP-Version mithilfe unserer Anleitung zur [Änderung der PHP-Version eines Webhostings](/pages/web_cloud/web_hosting/configure_your_web_hosting).
 >
 > Wenn Sie bereits eine kompatible PHP-Version verwenden, also die mindestens erforderliche Version oder eine neuere, ist keine Änderung erforderlich.
 >

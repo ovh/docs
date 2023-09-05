@@ -81,7 +81,7 @@ También le recomendamos que compruebe regularmente la **validez de las formas d
 
 Compruebe regularmente las actualizaciones de su sitio web siguiendo las instrucciones de esta [guía](/pages/web/hosting/diagnostic_403_forbidden#22-actualizar-el-sitio-web).
 
-No olvide utilizar una versión reciente del [lenguaje PHP](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014) en su alojamiento.
+No olvide utilizar una versión reciente del [lenguaje PHP](/pages/web_cloud/web_hosting/configure_your_web_hosting) en su alojamiento.
 
 ### Etapa 7: active el https
 

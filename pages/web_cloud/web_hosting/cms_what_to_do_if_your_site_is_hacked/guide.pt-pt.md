@@ -213,7 +213,7 @@ Consulte também o nosso manual sobre [como proteger o seu website](/pages/web_c
 
 [Aceder ao espaço de armazenamento do alojamento web](/pages/web_cloud/web_hosting/ftp_connection)
 
-[Alterar a configuração do alojamento web](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014)
+[Alterar a configuração do alojamento web](/pages/web_cloud/web_hosting/configure_your_web_hosting)
 
 [Ativar firewall da aplicação](/pages/web_cloud/web_hosting/multisites_activating_application_firewall)
 

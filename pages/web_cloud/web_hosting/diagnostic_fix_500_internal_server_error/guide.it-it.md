@@ -98,7 +98,7 @@ Per ripristinare il codice sorgente del tuo sito, consulta la guida Ripristinare
 
 Se il tuo sito contiene un database, consulta la nostra guida [Importare un backup nel database di un hosting Web](/pages/web/hosting/sql_importing_mysql_database#ripristino-dallo-spazio-cliente-ovh) per ripristinarlo in uno stato precedente.
 
-Se l'errore 500 è apparso a seguito di un aggiornamento della versione PHP del tuo hosting, consulta la nostra guida "[Modificare la versione di PHP su un hosting Web](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014)" per ritornare alla configurazione precedente.
+Se l'errore 500 è apparso a seguito di un aggiornamento della versione PHP del tuo hosting, consulta la nostra guida "[Modificare la versione di PHP su un hosting Web](/pages/web_cloud/web_hosting/configure_your_web_hosting)" per ritornare alla configurazione precedente.
 
 ## Per saperne di più <a name="gofurther"></a>
 

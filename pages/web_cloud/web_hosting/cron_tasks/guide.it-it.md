@@ -144,7 +144,7 @@ Consulta la nostra guida ["Consulta le statistiche e i log del tuo sito su un'of
 
 ## Per saperne di più
 
-[Configurare il file .ovhconfig di un hosting Web](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014)
+[Configurare il file .ovhconfig di un hosting Web](/pages/web_cloud/web_hosting/configure_your_web_hosting)
 
 [Utilizza l'accesso SSH di un hosting Web](/pages/web_cloud/web_hosting/ssh_on_webhosting)
 

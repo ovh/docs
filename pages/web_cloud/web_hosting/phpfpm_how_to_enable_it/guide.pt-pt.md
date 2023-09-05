@@ -12,7 +12,7 @@ Está compilado com o opcode-caching que permite minimizar os pedidos ao sistema
 Obtemos desta forma performances que se revelaram nos laboratórios de testes, 7 vezes mais rápidas quanto comparadas ao anterior mecanismo.
 
 ## No seu Espaço cliente
-Encontrará neste guia a explicação sobre como ativar o PHP FPM e como definir a versão de PHP graças ao ficheiro .ovhconfig, embora possa, de forma simples, realizá-lo no seu espaço cliente com a ajuda do [seguinte guia](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014).
+Encontrará neste guia a explicação sobre como ativar o PHP FPM e como definir a versão de PHP graças ao ficheiro .ovhconfig, embora possa, de forma simples, realizá-lo no seu espaço cliente com a ajuda do [seguinte guia](/pages/web_cloud/web_hosting/configure_your_web_hosting).
 
 Atenção: a partir de PHP-FPM, e por razões de segurança, as seguintes opções são desativadas (depreciadas pelo PHP):
 

@@ -99,8 +99,8 @@ Il est recommandé d'utiliser la version de PHP la plus récente possible. **Ava
 
 Pour vérifier cette configuration, consultez nos guides sur le sujet :
 
-- [Modifier la configuration de son hébergement web](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014)
-- [Configurer le fichier .ovhconfig de son hébergement web](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014)
+- [Modifier la configuration de son hébergement web](/pages/web_cloud/web_hosting/configure_your_web_hosting)
+- [Configurer le fichier .ovhconfig de son hébergement web](/pages/web_cloud/web_hosting/configure_your_web_hosting)
 
 ### « Une erreur s'est produite lors du chargement des informations (There is not enough space on your hosting (you need at least xxx MB)) »
 

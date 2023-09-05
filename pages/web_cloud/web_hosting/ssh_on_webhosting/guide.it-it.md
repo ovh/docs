@@ -105,8 +105,8 @@ A seconda della versione di PHP che vuoi utilizzare, potrebbe essere necessario 
 
 ## Per saperne di più
 
-[Modificare la configurazione di un hosting Web](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014)
+[Modificare la configurazione di un hosting Web](/pages/web_cloud/web_hosting/configure_your_web_hosting)
 
-[Configurare il file .ovhconfig di un hosting Web](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014)
+[Configurare il file .ovhconfig di un hosting Web](/pages/web_cloud/web_hosting/configure_your_web_hosting)
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

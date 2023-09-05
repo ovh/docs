@@ -87,8 +87,8 @@ Weitere Informationen zur Verwaltung von Datenbanken finden Sie in der Anleitung
 
 - Sie können die PHP Versions Ihres Webhostings ändern, entweder über das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) („**Konfiguration**“) oder indem Sie die Datei .ovhconfig entsprechend bearbeiten. Es sind auch gemischte Konfigurationen möglich. Ausführliche Instruktionen finden Sie in folgenden Anleitungen:
 
-[.ovhconfig-Datei Ihres Webhostings konfigurieren](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014)  
-[Konfiguration Ihres Webhostings bearbeiten](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014)
+[.ovhconfig-Datei Ihres Webhostings konfigurieren](/pages/web_cloud/web_hosting/configure_your_web_hosting)  
+[Konfiguration Ihres Webhostings bearbeiten](/pages/web_cloud/web_hosting/configure_your_web_hosting)
 
 > [!primary]
 > Die .ovhconfig-Datei funktioniert im Wurzelverzeichnis des Webhostings oder in einem Unterverzeichnis erster Ordnung (i.d.R. _/www/_). Der einzige Weg, um die Hauptparameter der .ovhconfig-Datei zu ersetzen, ist, eine weitere .ovhconfig-Datei in einem Unterordner zu verwenden.

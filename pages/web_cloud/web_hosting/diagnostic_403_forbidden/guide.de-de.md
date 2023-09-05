@@ -195,7 +195,7 @@ Die Ausgabe "**200 Permissions changed on /**" bestätigt, dass die Änderung er
 
 [Aktivieren der Web Application Firewall](/pages/web_cloud/web_hosting/multisites_activating_application_firewall)
 
-[PHP-Version Ihres Webhostings ändern](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014)
+[PHP-Version Ihres Webhostings ändern](/pages/web_cloud/web_hosting/configure_your_web_hosting)
 
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
 

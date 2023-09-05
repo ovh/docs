@@ -173,7 +173,7 @@ A continuación se muestran los enlaces a las páginas de descarga de los CMS qu
 > - [Prestashop](https://www.prestashop.com/en/system-requirements){.external}
 >
 >
-> Configure la versión de PHP en su alojamiento web con nuestra guía sobre [el cambio de versión PHP de un alojamiento web](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014).
+> Configure la versión de PHP en su alojamiento web con nuestra guía sobre [el cambio de versión PHP de un alojamiento web](/pages/web_cloud/web_hosting/configure_your_web_hosting).
 >
 Si ya utiliza una versión de PHP igual o superior a la necesaria, no es necesario realizar ningún cambio.
 >

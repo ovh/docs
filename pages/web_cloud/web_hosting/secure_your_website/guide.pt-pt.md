@@ -81,7 +81,7 @@ Além disso, recomendamos que verifique regularmente a **validade dos métodos d
 
 Verifique regularmente as atualizações do seu site seguindo as instruções deste [guia](/pages/web/hosting/diagnostic_403_forbidden#22-atualizar-o-website).
 
-Também pode usar uma versão recente da [linguagem PHP](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014) no seu alojamento.
+Também pode usar uma versão recente da [linguagem PHP](/pages/web_cloud/web_hosting/configure_your_web_hosting) no seu alojamento.
 
 ### Etapa 7: ative o https
 

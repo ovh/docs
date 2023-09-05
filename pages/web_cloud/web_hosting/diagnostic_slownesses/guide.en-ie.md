@@ -195,11 +195,11 @@ Below, you will find the actions you need to take to identify the source(s) of t
 
 #### 2.1 - Check your web hosting plan’s configuration
 
-Check the PHP engine, PHP version and runtime environment used on your Web Hosting plan, using our guide to [configuring your Web Hosting plan](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014).
+Check the PHP engine, PHP version and runtime environment used on your Web Hosting plan, using our guide to [configuring your Web Hosting plan](/pages/web_cloud/web_hosting/configure_your_web_hosting).
 
 If you are using an outdated PHP version on your web hosting plan, the "**PHP CGI**" engine and/or the "**legacy**" environment, and **if your website is compatible**, you should use the "**PHP**" engine (PHP FPM), the "**stable**" environment, or "**stable64**" with the most recent PHP version possible.
 
-To compare the available PHP versions depending on the runtime environment you are using, see **Step 2** in the guide on [configuring the PHP version on your hosting system](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014).
+To compare the available PHP versions depending on the runtime environment you are using, see **Step 2** in the guide on [configuring the PHP version on your hosting system](/pages/web_cloud/web_hosting/configure_your_web_hosting).
 
 Using a recent PHP version, the "**stable**" or "**stable64**" runtime environment with the "**PHP**" engine (PHP FPM) makes your website much smoother and faster. As a guide, the "**PHP**" engine (PHP FPM) can be up to 50 times more efficient than the "**PHP CGI**" engine to perform its tasks.
 

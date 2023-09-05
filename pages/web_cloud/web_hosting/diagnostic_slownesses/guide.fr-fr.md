@@ -195,11 +195,11 @@ Retrouvez ci-après les actions à réaliser pour identifier la ou les source(s)
 
 #### 2.1 - Vérifiez la configuration de votre hébergement web
 
-Vérifiez le moteur PHP, la version PHP et l'environnement d'exécution utilisés sur votre hébergement web, en vous aidant de notre guide sur la [configuration de votre hébergement web](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014).
+Vérifiez le moteur PHP, la version PHP et l'environnement d'exécution utilisés sur votre hébergement web, en vous aidant de notre guide sur la [configuration de votre hébergement web](/pages/web_cloud/web_hosting/configure_your_web_hosting).
 
 Si vous utilisez sur votre hébergement web une version de PHP obsolète, le moteur « **PHP CGI** » et/ou l'environnement « **legacy** » et **si votre site web est compatible**, privilégiez l'utilisation du moteur « **PHP** » (PHP FPM), l'environnement « **stable** » ou « **stable64** » avec la version de PHP la plus récente possible.
 
-Pour comparer les versions de PHP disponibles en fonction de l'environnement d'exécution utilisé, consultez **l'étape 2** du guide sur la [configuration de la version PHP sur votre hébergement](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014).
+Pour comparer les versions de PHP disponibles en fonction de l'environnement d'exécution utilisé, consultez **l'étape 2** du guide sur la [configuration de la version PHP sur votre hébergement](/pages/web_cloud/web_hosting/configure_your_web_hosting).
 
 Utiliser une version de PHP récente, l'environnement d'exécution « **stable** » ou « **stable64** » avec le moteur « **PHP** » (PHP FPM) rend votre site beaucoup plus fluide et rapide. A titre indicatif, le moteur « **PHP** » (PHP FPM) peut être jusqu'à 50 fois plus performant que le moteur « **PHP CGI** » pour exécuter ses tâches.
 

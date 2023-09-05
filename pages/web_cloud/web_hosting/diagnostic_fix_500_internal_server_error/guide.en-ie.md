@@ -82,7 +82,7 @@ For any 500 errors that may be related to your website’s database, please refe
 
 ### Restore your website to its previous state <a name="restore"></a>
 
-If the 500 error appeared after modifying the PHP configuration of your web hosting, return to the previous one by following our guide [Changing a Web Hosting plan’s PHP version](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014).
+If the 500 error appeared after modifying the PHP configuration of your web hosting, return to the previous one by following our guide [Changing a Web Hosting plan’s PHP version](/pages/web_cloud/web_hosting/configure_your_web_hosting).
 
 > [!warning]
 >

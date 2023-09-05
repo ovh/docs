@@ -81,7 +81,7 @@ Ti consigliamo inoltre di verificare regolarmente la **validità dei metodi di p
 
 Verifica regolarmente gli aggiornamenti del tuo sito seguendo le istruzioni di questa [guida](/pages/web/hosting/diagnostic_403_forbidden#22-aggiorna-il-sito-internet).
 
-Utilizza anche una versione recente del [linguaggio PHP](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014) sul tuo hosting.
+Utilizza anche una versione recente del [linguaggio PHP](/pages/web_cloud/web_hosting/configure_your_web_hosting) sul tuo hosting.
 
 ### Step 7: attiva l'https
 

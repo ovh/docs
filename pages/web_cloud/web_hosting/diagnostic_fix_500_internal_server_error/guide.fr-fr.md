@@ -94,7 +94,7 @@ Pour restaurer le code source de votre site, consultez notre guide « [Restaurer
 
 Si votre site comporte une base de données, consultez notre guide « [Restaurer une sauvegarde de votre base de données](/pages/web/hosting/sql_importing_mysql_database#restaurer-une-sauvegarde-depuis-lespace-client) » afin de la restaurer à un état antérieur.
 
-Enfin, si l'erreur 500 est apparue suite à une mise à jour de la version PHP de votre hébergement, consultez notre guide « [Configurer le PHP sur son hébergement](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014) » pour revenir à la configuration précédente.
+Enfin, si l'erreur 500 est apparue suite à une mise à jour de la version PHP de votre hébergement, consultez notre guide « [Configurer le PHP sur son hébergement](/pages/web_cloud/web_hosting/configure_your_web_hosting) » pour revenir à la configuration précédente.
 
 ## Aller plus loin <a name="gofurther"></a>
 

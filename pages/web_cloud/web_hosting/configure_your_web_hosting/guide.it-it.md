@@ -64,18 +64,18 @@ Quando tutto è pronto, passa allo Step 2.
 
 La versione di PHP dell'hosting Web può essere modificata in due modi:
 
-- **tramite un assistente di configurazione dal tuo Spazio Cliente OVH**: accedendo allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), è possibile scegliere la nuova versione di PHP desiderata tra le altre impostazioni. Per utilizzare questa modalità, segui la procedura descritta nella guida [Modificare la configurazione di un hosting Web](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014){.external}.
+- **tramite un assistente di configurazione dal tuo Spazio Cliente OVH**: accedendo allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), è possibile scegliere la nuova versione di PHP desiderata tra le altre impostazioni. Per utilizzare questa modalità, segui la procedura descritta nella guida [Modificare la configurazione di un hosting Web](/pages/web_cloud/web_hosting/configure_your_web_hosting){.external}.
 
-- **modificando manualmente un file sullo spazio di storage**: questa soluzione è più tecnica e richiede l'accesso allo [spazio di storage FTP](/pages/web_cloud/web_hosting/ftp_connection), dove sarà necessario modificare il file `.ovhconfig`. Per effettuare l'operazione segui la procedura descritta nella guida [Configurare il file.ovhconfig di un hosting Web](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014){.external}.
+- **modificando manualmente un file sullo spazio di storage**: questa soluzione è più tecnica e richiede l'accesso allo [spazio di storage FTP](/pages/web_cloud/web_hosting/ftp_connection), dove sarà necessario modificare il file `.ovhconfig`. Per effettuare l'operazione segui la procedura descritta nella guida [Configurare il file.ovhconfig di un hosting Web](/pages/web_cloud/web_hosting/configure_your_web_hosting){.external}.
 
 > [!primary]
 >
 > La modifica della versione di PHP tramite un file ".htaccess" non è più possibile sulle ultime offerte di[hosting web OVHcloud](https://www.ovhcloud.com/it/web-hosting/){.external}.<br>
 > Il comando che permette di modificare la versione di PHP nel file ".htaccess" non permette di utilizzare le versioni recenti di PHP sulle nostre infrastrutture.<br>
-> Per effettuare questa operazione, è necessario utilizzare il file `.ovhconfig` e consultare la nostra documentazione ["Configura il file.ovhconfig di un hosting Web"](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014){.external}.
+> Per effettuare questa operazione, è necessario utilizzare il file `.ovhconfig` e consultare la nostra documentazione ["Configura il file.ovhconfig di un hosting Web"](/pages/web_cloud/web_hosting/configure_your_web_hosting){.external}.
 >
 
-Alcune versioni di PHP funzionano solo con alcuni ambienti di esecuzione. Di seguito trovi le versioni di PHP disponibili sugli hosting condivisi OVHcloud e [gli ambienti di esecuzione](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014) compatibili:
+Alcune versioni di PHP funzionano solo con alcuni ambienti di esecuzione. Di seguito trovi le versioni di PHP disponibili sugli hosting condivisi OVHcloud e [gli ambienti di esecuzione](/pages/web_cloud/web_hosting/configure_your_web_hosting) compatibili:
 
 |Versioni PHP| Ambienti di esecuzione compatibili|
 |---|---|
@@ -85,9 +85,9 @@ Alcune versioni di PHP funzionano solo con alcuni ambienti di esecuzione. Di seg
 
 ## Per saperne di più
 
-[Modifica la configurazione di un hosting Web](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014){.external}
+[Modifica la configurazione di un hosting Web](/pages/web_cloud/web_hosting/configure_your_web_hosting){.external}
 
-[Configurare il file.ovhconfig di un hosting Web](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014){.external}
+[Configurare il file.ovhconfig di un hosting Web](/pages/web_cloud/web_hosting/configure_your_web_hosting){.external}
 
 [Accedere allo spazio di storage di un hosting Web](/pages/web_cloud/web_hosting/ftp_connection){.external}
 

@@ -60,9 +60,9 @@ Certaines variables du serveur sont modifiées par l’utilisation de PHP-FPM :
 |max_input_vars|2 000|16 000|
 |memory_limit|128 Mo|512 Mo|
 
-Pour plus d’information sur les mises à jour PHP, veuillez vous référer à [ce guide](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014){.externe}.
+Pour plus d’information sur les mises à jour PHP, veuillez vous référer à [ce guide](/pages/web_cloud/web_hosting/configure_your_web_hosting){.externe}.
 
-Pour basculer vers l’utilisation de PHP-FPM en version _stable_ ou pour en savoir plus sur les options avancées de votre hébergement web, veuillez consulter [ce guide](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014){.external}.
+Pour basculer vers l’utilisation de PHP-FPM en version _stable_ ou pour en savoir plus sur les options avancées de votre hébergement web, veuillez consulter [ce guide](/pages/web_cloud/web_hosting/configure_your_web_hosting){.external}.
 
 Le fichier _.ovhconfig_ fonctionne à la racine de l’hébergement ou dans un sous-répertoire de niveau 1 (ex. : _/www/_) mais pas dans des répertoires de niveau 2 ou supérieurs (ex. : _/www/test/_ , _/www/test/test2/_)
 
@@ -222,7 +222,7 @@ Par exemple :
 
 ## Aller plus loin
 
-[Modifier la configuration d’un d’hébergement web](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014){.externe}
+[Modifier la configuration d’un d’hébergement web](/pages/web_cloud/web_hosting/configure_your_web_hosting){.externe}
 
 [Créer une base de données sur son hébergement web](/pages/web_cloud/web_hosting/sql_create_database){.external}
 

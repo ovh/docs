@@ -66,18 +66,18 @@ Kiedy jesteś gotowy do zmiany wersji PHP, przejdź do etapu 2.
 
 Istnieją dwa sposoby modyfikacji wersji PHP na Twoim hostingu:
 
-- **poprzez asystenta konfiguracji w Panelu klienta** : po zalogowaniu się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) możesz wybrać nową wersję PHP spośród innych parametrów. Zapoznaj się z instrukcjami zawartymi w przewodniku OVHcloud ["Zmiana konfiguracji hostingu"](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014){.external} i przeprowadź operację w tym celu.
+- **poprzez asystenta konfiguracji w Panelu klienta** : po zalogowaniu się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) możesz wybrać nową wersję PHP spośród innych parametrów. Zapoznaj się z instrukcjami zawartymi w przewodniku OVHcloud ["Zmiana konfiguracji hostingu"](/pages/web_cloud/web_hosting/configure_your_web_hosting){.external} i przeprowadź operację w tym celu.
 
-- **modyfikując ręcznie plik na Twojej przestrzeni dyskowej**: to rozwiązanie jest bardziej techniczne i wymaga podłączenia do [przestrzeni FTP](/pages/web_cloud/web_hosting/ftp_connection), gdzie należy zmienić plik `.ovhconfig`. Zapoznaj się z instrukcjami zawartymi w przewodniku OVHcloud ["Konfiguracja pliku .ovhconfig na hostingu WWW"](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014){.external}, aby przeprowadzić operację za pomocą tego pliku.
+- **modyfikując ręcznie plik na Twojej przestrzeni dyskowej**: to rozwiązanie jest bardziej techniczne i wymaga podłączenia do [przestrzeni FTP](/pages/web_cloud/web_hosting/ftp_connection), gdzie należy zmienić plik `.ovhconfig`. Zapoznaj się z instrukcjami zawartymi w przewodniku OVHcloud ["Konfiguracja pliku .ovhconfig na hostingu WWW"](/pages/web_cloud/web_hosting/configure_your_web_hosting){.external}, aby przeprowadzić operację za pomocą tego pliku.
 
 > [!primary]
 >
 > Zmiana wersji PHP za pomocą pliku ".htaccess" nie jest już możliwa w najnowszych ofertach [hostingu www OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external}.<br>
 > Komenda pozwalająca na zmianę wersji PHP w pliku ".htaccess" nie pozwala na korzystanie z najnowszych wersji PHP na naszych infrastrukturach.<br>
-> W tym celu konieczne jest użycie pliku `.ovhconfig`, aby uzyskać pomoc w naszej dokumentacji ["Konfiguracja pliku .ovhconfig na hostingu www"](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014){.external}.
+> W tym celu konieczne jest użycie pliku `.ovhconfig`, aby uzyskać pomoc w naszej dokumentacji ["Konfiguracja pliku .ovhconfig na hostingu www"](/pages/web_cloud/web_hosting/configure_your_web_hosting){.external}.
 >
 
-Niektóre wersje PHP działają tylko w niektórych środowiskach. Wersje PHP dostępne na hostingu OVHcloud i [środowiska uruchomieniowe](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014) są kompatybilne:
+Niektóre wersje PHP działają tylko w niektórych środowiskach. Wersje PHP dostępne na hostingu OVHcloud i [środowiska uruchomieniowe](/pages/web_cloud/web_hosting/configure_your_web_hosting) są kompatybilne:
 
 |Wersje PHP|Kompatybilne środowiska wykonawcze|
 |---|---|
@@ -87,9 +87,9 @@ Niektóre wersje PHP działają tylko w niektórych środowiskach. Wersje PHP do
 
 ## Sprawdź również
 
-[Zmiana konfiguracji hostingu](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014){.external}
+[Zmiana konfiguracji hostingu](/pages/web_cloud/web_hosting/configure_your_web_hosting){.external}
 
-[Konfiguracja pliku .ovhconfig na hostingu WWW](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014){.external}
+[Konfiguracja pliku .ovhconfig na hostingu WWW](/pages/web_cloud/web_hosting/configure_your_web_hosting){.external}
 
 [Logowanie do przestrzeni dyskowej hostingu www](/pages/web_cloud/web_hosting/ftp_connection){.external}
 

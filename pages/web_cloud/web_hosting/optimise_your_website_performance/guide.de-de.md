@@ -62,9 +62,9 @@ Einige Servervariablen werden über die Verwendung von PHP-FPM geändert:
 |max_input_vars|2000|16000|
 |memory_limit|128 M|512 M|
 
-Informationen zum Aktualisieren von PHP finden Sie in [dieser Anleitung](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014){.external}.
+Informationen zum Aktualisieren von PHP finden Sie in [dieser Anleitung](/pages/web_cloud/web_hosting/configure_your_web_hosting){.external}.
 
-Informationen zur Verwendung von PHP-FPM in der _stabilen_ Version oder Details zu erweiterten Optionen Ihres Webhostings finden Sie in [dieser Anleitung](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014){.external}.
+Informationen zur Verwendung von PHP-FPM in der _stabilen_ Version oder Details zu erweiterten Optionen Ihres Webhostings finden Sie in [dieser Anleitung](/pages/web_cloud/web_hosting/configure_your_web_hosting){.external}.
 
 Die Datei _.ovhconfig_ befindet sich im Stammverzeichnis des Hosting-Pakets oder in einem Unterverzeichnis der Ebene 1 (z.B.: _/www/_), jedoch nicht in Verzeichnissen der Ebene 2 oder darunter (z.B.: _/www/test/_ , _/www/test/test2/_)
 
@@ -212,7 +212,7 @@ Wenn die Datenbank trotz aller Änderungen und Optimierungen, die Sie vorgenomme
 
 ## Weiterführende Informationen
 
-[Konfiguration Ihres Webhostings bearbeiten](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014){.external}
+[Konfiguration Ihres Webhostings bearbeiten](/pages/web_cloud/web_hosting/configure_your_web_hosting){.external}
 
 [Verwaltung einer Datenbank in Ihrem Webhosting](/pages/web_cloud/web_hosting/sql_create_database){.external}
 

@@ -77,7 +77,7 @@ Nous vous recommandons aussi de vérifier régulièrement la **validité des moy
 
 Vérifiez régulièrement les mises à jour de votre site en suivant les instructions de ce [guide](/pages/web/hosting/diagnostic_403_forbidden#22-mettre-a-jour-votre-site-internet).
 
-Pensez également à utiliser une version récente du [langage informatique PHP](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014) sur votre hébergement.
+Pensez également à utiliser une version récente du [langage informatique PHP](/pages/web_cloud/web_hosting/configure_your_web_hosting) sur votre hébergement.
 
 ### Étape 7. Activez le https
 

@@ -23,7 +23,7 @@ Per modificare il file .ovhconfig è possibile utilizzare due metodi:
 
 - **agire manualmente sul file .ovhconfig**: questa soluzione è tecnica e richiede l’accesso allo spazio di storage. In questa guida ci concentreremo soltanto su questa procedura.
 
-- **utilizzare l’assistente di configurazione dallo Spazio Cliente OVH**: questa soluzione è meno tecnica e richiede l’accesso allo Spazio Cliente, dove sarà possibile selezionare le modifiche da apportare. Per utilizzare questa modalità, segui la procedura descritta nella guida [Modificare la configurazione di un hosting Web](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014){.external}.
+- **utilizzare l’assistente di configurazione dallo Spazio Cliente OVH**: questa soluzione è meno tecnica e richiede l’accesso allo Spazio Cliente, dove sarà possibile selezionare le modifiche da apportare. Per utilizzare questa modalità, segui la procedura descritta nella guida [Modificare la configurazione di un hosting Web](/pages/web_cloud/web_hosting/configure_your_web_hosting){.external}.
 
 Se invece vuoi modificare manualmente il file, prosegui nella lettura di questa guida. 
 
@@ -157,7 +157,7 @@ Se utilizzi il tuo hosting per ospitare più siti, hai sicuramente attivato l’
 
 ## Per saperne di più
 
-[Modificare la configurazione di un hosting Web](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014){.external}
+[Modificare la configurazione di un hosting Web](/pages/web_cloud/web_hosting/configure_your_web_hosting){.external}
 
 [Mettere online un sito Internet su un hosting Web](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online){.external}
 

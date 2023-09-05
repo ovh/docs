@@ -173,7 +173,7 @@ Di seguito trovi i link alle pagine di download dei CMS citati in questo tutoria
 > - [Drupal](https://www.drupal.org/docs/getting-started/system-requirements/php-requirements){.external}
 > - [Prestashop](https://www.prestashop.com/en/system-requirements){.external}
 >
-> Configura la versione di PHP sul tuo hosting Web consultando la nostra guida su [modifica della versione PHP di un hosting Web](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014).
+> Configura la versione di PHP sul tuo hosting Web consultando la nostra guida su [modifica della versione PHP di un hosting Web](/pages/web_cloud/web_hosting/configure_your_web_hosting).
 >
 > Se utilizzi già una versione di PHP superiore o uguale a quella richiesta, non è necessario apportare modifiche.
 >

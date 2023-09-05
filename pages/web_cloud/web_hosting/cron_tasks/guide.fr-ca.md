@@ -142,7 +142,7 @@ Consultez notre guide [« Consulter les statistiques et les logs de mon site hé
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
 
-[Configurer le fichier .ovhconfig de son hébergement web](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014)
+[Configurer le fichier .ovhconfig de son hébergement web](/pages/web_cloud/web_hosting/configure_your_web_hosting)
 
 [Utiliser l’accès SSH de son hébergement web](/pages/web_cloud/web_hosting/ssh_on_webhosting)
 

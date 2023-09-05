@@ -13,7 +13,7 @@ PHP-FPM wurde mit Opcode-Caching kompiliert, was es erlaubt, die Festplattenaufr
 Dadurch haben wir bei unseren Labortests im Vergleich zu dem alten Mechanismus eine bis zu siebenfache Steigerung der Performance beobachten können.
 
 ## In Ihrem Kundencenter
-In dieser Anleitung erfahren Sie, wie Sie PHP-FPM aktivieren und die PHP-Version mithilfe der .ovhconfig Datei definieren. Noch einfacher geht das über Ihr Kundencenter - wie, das erfahren Sie in [folgender Anleitung](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014).
+In dieser Anleitung erfahren Sie, wie Sie PHP-FPM aktivieren und die PHP-Version mithilfe der .ovhconfig Datei definieren. Noch einfacher geht das über Ihr Kundencenter - wie, das erfahren Sie in [folgender Anleitung](/pages/web_cloud/web_hosting/configure_your_web_hosting).
 
 Achtung: Wenn Sie PHP-FPM verwenden, sind folgende Optionen aus Sicherheitsgründen deaktiviert:
 

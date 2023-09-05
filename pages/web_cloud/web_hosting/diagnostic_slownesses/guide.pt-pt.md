@@ -199,11 +199,11 @@ Encontre aqui as ações a realizar para identificar a(s) fonte(s) da(s) lentid�
 
 #### 2.1 - Verifique a configuração do seu alojamento web
 
-Verifique o motor PHP, a versão PHP e o ambiente de execução utilizados no seu alojamento web, através do nosso guia sobre a [configuração do seu alojamento web](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014).
+Verifique o motor PHP, a versão PHP e o ambiente de execução utilizados no seu alojamento web, através do nosso guia sobre a [configuração do seu alojamento web](/pages/web_cloud/web_hosting/configure_your_web_hosting).
 
 Se utiliza no seu alojamento web uma versão de PHP obsoleta, o motor "**PHP CGI**" e/ou o ambiente "**legacy**" e **se o seu website for compatível**, dê preferência à utilização do motor "**PHP**" (PHP FPM), o ambiente "**stable**" ou "**stable64**" com a versão de PHP mais recente possível.
 
-Para comparar as versões de PHP disponíveis em função do ambiente de execução utilizado, consulte ***a etapa 2** do guia sobre a [configuração da versão PHP no seu alojamento](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014).
+Para comparar as versões de PHP disponíveis em função do ambiente de execução utilizado, consulte ***a etapa 2** do guia sobre a [configuração da versão PHP no seu alojamento](/pages/web_cloud/web_hosting/configure_your_web_hosting).
 
 Utilizar uma versão de PHP recente, o ambiente de execução "**stable**" ou "**stable64**" com o motor "**PHP**" (PHP FPM) torna o seu site muito mais fluido e rápido. A título indicativo, o motor "**PHP**" (PHP FPM) pode ter um desempenho 50 vezes superior ao do motor "**PHP CGI**" para executar as suas tarefas.
 

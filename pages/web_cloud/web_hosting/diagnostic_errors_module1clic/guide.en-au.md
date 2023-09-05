@@ -96,8 +96,8 @@ We recommend using the most recent PHP version possible. **Before** you change t
 
 To check this configuration, please refer to our guides on the subject:
 
-- [Modify your web hosting plan’s configuration](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014)
-- [Configure the .ovhconfig file of your web hosting plan](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014)
+- [Modify your web hosting plan’s configuration](/pages/web_cloud/web_hosting/configure_your_web_hosting)
+- [Configure the .ovhconfig file of your web hosting plan](/pages/web_cloud/web_hosting/configure_your_web_hosting)
 
 ### "An error has occurred loading the information. (There is not enough space on your hosting (you need at least xxx MB))"
 

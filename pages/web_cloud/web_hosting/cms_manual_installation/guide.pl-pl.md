@@ -173,7 +173,7 @@ Poniżej znajdziesz linki do stron pobierania CMS wymienionych w niniejszym tuto
 > - [Drupal](https://www.drupal.org/docs/getting-started/system-requirements/php-requirements){.external}
 > - [Prestashop](https://www.prestashop.com/en/system-requirements){.external}
 >
-> Skonfiguruj następnie wersję PHP na Twoim hostingu, korzystając z dokumentacji [OVHcloud dotyczącej zmiany wersji PHP na hostingu](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014).
+> Skonfiguruj następnie wersję PHP na Twoim hostingu, korzystając z dokumentacji [OVHcloud dotyczącej zmiany wersji PHP na hostingu](/pages/web_cloud/web_hosting/configure_your_web_hosting).
 >
 > Jeśli używasz już wersji PHP większej lub równej tej, której potrzebujesz, nie musisz wprowadzać żadnych zmian.
 >
