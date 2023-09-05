@@ -1,7 +1,7 @@
 ---
 title: Utiliser la fonctionnalité Bring Your Own IP
 excerpt: Découvrez comment importer facilement votre propre adresse IP comme Additional IP dans votre compte OVHcloud
-updated: 2023-07-19
+updated: 2023-09-05
 ---
 
 ## Objectif
@@ -152,7 +152,7 @@ Pour activer l'annonce de votre plage IP importée sur Internet, il vous suffit 
 
 Lors de la livraison, nous créerons des zones ARPA sur nos serveurs DNS et toute modification de *reverse DNS* via l'espace client ou l'API OVHcloud y sera appliquée. Ces modifications seront visibles au public lorsque nos serveurs DNS auront reçu les délégations des zones ARPA par le RIR (ceci est facultatif, si vous voulez continuer à gérer votre *reverse DNS* par vous-même, vous pouvez le faire).
 
-### Découpage de plages d'adresses
+### Découpage de plages d'adresses <a name="range-slicing"></a>
 
 Tout bloc IP importé peut être divisé en blocs plus petits et/ou en adresses individuelles.
 
@@ -166,23 +166,24 @@ Pour découper un bloc, utilisez l'appel API suivant :
 > @api {POST} /ip/{ip}/bringYourOwnIp/slice
 >
 
-avec les paramètres suivants :
+Avec les paramètres suivants :
 
-- ip : le bloc IP que vous souhaitez découper, en notation CIDR
+- ip : le bloc IP que vous souhaitez découper, en notation CIDR.
 - slicingSize : la taille résultante des blocs découpés, exprimée en taille de préfixe réseau, en bits. Par exemple, si vous souhaitez découper un bloc /24 en 2 blocs plus petits de taille /25, vous devez saisir la valeur "25".
 
-Remarque : Cet appel API est asynchrone, les blocs nouvellement créés sont rendus disponibles peu de temps après l'appel. Ils seront utilisables comme tout autre bloc IP supplémentaire ou adresse individuelle.
+> [!primary]
+> Cet appel API est asynchrone, les blocs nouvellement créés sont rendus disponibles peu de temps après l'appel. Ils seront utilisables comme tout autre bloc IP supplémentaire ou adresse individuelle.
 
-Vous pouvez prévisualiser les blocs résultants qui seraient créés pour chaque taille de bloc, à l'aide de l'appel d'API suivant :
+Vous pouvez prévisualiser les blocs résultants qui seraient créés pour chaque taille de bloc, à l'aide de l'appel API suivant :
 
 > [!api]
 >
 > @api {GET} /ip/{ip}/bringYourOwnIp/slice
 >
 
-avec les paramètres suivants :
+Avec les paramètres suivants :
 
-- ip : le bloc IP que vous souhaitez découper, en notation CIDR
+- ip : le bloc IP que vous souhaitez découper, en notation CIDR.
 
 Pour fusionner un bloc dans un bloc parent, utilisez cet appel API :
 
@@ -191,14 +192,15 @@ Pour fusionner un bloc dans un bloc parent, utilisez cet appel API :
 > @api {POST} /ip/{ip}/bringYourOwnIp/aggregate
 >
 
-avec les paramètres suivants :
+Avec les paramètres suivants :
 
-- ip : le bloc IP que vous souhaitez découper, en notation CIDR
-- aggregationIp : le bloc résultant, en notation CIDR
+- ip : le bloc IP que vous souhaitez découper, en notation CIDR.
+- aggregationIp : le bloc résultant, en notation CIDR.
 
 Le bloc résultant sera un agrégat de tous ses blocs enfants.
 
-Remarque : Cet appel API est asynchrone, les blocs nouvellement fusionnés sont rendus disponibles peu de temps après l'appel.
+> [!primary]
+> Cet appel API est asynchrone, les blocs nouvellement fusionnés sont rendus disponibles peu de temps après l'appel.
 
 Vous pouvez prévisualiser toutes les configurations possibles des blocs agrégés pour un bloc IP donné, en utilisant l'appel API suivant :
 
@@ -207,23 +209,22 @@ Vous pouvez prévisualiser toutes les configurations possibles des blocs agrég�
 > @api {GET} /ip/{ip}/bringYourOwnIp/aggregate
 >
 
-avec les paramètres suivants :
+Avec les paramètres suivants :
 
-- ip : le bloc IP que vous souhaitez fusionner dans un bloc parent, en notation CIDR
+- ip : le bloc IP que vous souhaitez fusionner dans un bloc parent, en notation CIDR.
 
-Cet appel renvoie une liste de blocs agrégés possibles et pour chacun d'eux, donne la liste des blocs enfants à fusionner.
+Cet appel renvoie une liste de blocs agrégés possibles et, pour chacun d'eux, donne la liste des blocs enfants à fusionner.
 
+**Limites** :
 
-Limites
-
-- Cette fonctionnalité est actuellement disponible via API uniquement. Il sera ajouté au panneau de contrôle dans un avenir proche.
+- Cette fonctionnalité est actuellement disponible via API uniquement. Elle sera ajoutée dans l'espace client OVHcloud dans un avenir proche.
 - Les éléments de configuration associés aux adresses IP individuelles (/32) tels que les règles de pare-feu ou les entrées reverse DNS seront conservés après les opérations de découpage/fusion.
 - Les tâches API découpage/fusion ne peuvent pas être suivies par le numéro de tâche asynchrone renvoyé par l'API, car les objets IP associés seront détruits dans le processus de découpage/fusion.
 - La liste des adresses IP et des blocs renvoyés par l'API est classée par taille de préfixe réseau. Nous travaillons pour fournir une solution permettant de répertorier les adresses IP par ordre numérique.
 - Une fois découpés, les petits blocs ne sont pas déplaçables en dehors du campus choisi lors de la commande du produit.
 - Déplacer un bloc /24 sur les campus français ne fonctionnera pas si :
-    - Il a été réagrégé à partir d'un découpage précédent
-    - Le bloc /24 a été importé à partir d'un bloc plus gros (/23 à /19)
+    - Il a été réagrégé à partir d'un découpage précédent.
+    - Le bloc /24 a été importé à partir d'un bloc plus gros (/23 à /19).
 
 ## FAQ
 
@@ -237,7 +238,7 @@ Pas au lancement de l'offre BYOIP. Cependant, si tel est votre souhait, nous vou
 
 ### Le fractionnement d'un bloc importé /24 en une taille de bloc plus petite (/25, /26, /27, /28, /29, /30) ou en /32 est-il pris en charge ?
 
-Oui, veuillez vous reporter à la section "Découpage de plages d'addresses" ci-dessus, pour plus d'information.
+Oui. Pour plus d'informations, veuillez vous reporter à la section [Découpage de plages d'addresses](#range-slicing) ci-dessus.
 
 ### Puis-je importer une plage d'adresses IP ARIN dans des campus acceptant uniquement des plages d'adresses IP RIPE et inversement ?
 
