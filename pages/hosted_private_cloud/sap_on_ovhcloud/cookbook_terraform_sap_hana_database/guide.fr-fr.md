@@ -83,7 +83,7 @@ module "sap-hana-database" {
 ```
 
 > [!primary]
-> Où « SAP HANA VM Storage Policy » a été auparavant créée dans l'interface vSphere avec une politique de provisionnement *thick*. Pour en savoir plus sur les recommandations à propos de cette politique de stockage, nous vous conseillons [ce guide](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook-sap-hana-template-vmware/#configure-advanced-parameters).
+> Où « SAP HANA VM Storage Policy » a été auparavant créée dans l'interface vSphere avec une politique de provisionnement *thick*. Pour en savoir plus sur les recommandations à propos de cette politique de stockage, nous vous conseillons [ce guide](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook_sap_hana_template_vmware/#configure-advanced-parameters).
 >
 
 Pour connaître toutes les entrées que vous pouvez passer à ce module, veuillez vous référer au README sur [GitHub](https://github.com/ovh/terraform-vsphere-sap-hana-database).
