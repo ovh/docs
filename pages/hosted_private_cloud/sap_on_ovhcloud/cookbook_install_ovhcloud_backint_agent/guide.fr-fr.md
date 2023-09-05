@@ -115,7 +115,7 @@ su - <sid>adm -c "/usr/sap/<SID>/SYS/global/hdb/opt/hdbbackint -v"
 
 Éditez le contenu du fichier `hdbbackint.cfg` et remplacez les valeurs entre parenthèses par les informations liées à votre bucket Object Storage S3.
 
-```
+```{.console}
 [trace]
 default = INFO
 destination = outputfile
