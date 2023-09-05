@@ -78,7 +78,7 @@ Si vous n'avez pas créé de Network Firewall et de règles de filtrage réseau 
 >> - Port de destination : 3299
 >> - Drapeaux : Aucun
 >>
->> ![create_rule](images/network-firewall/4_create_rule.png){.thumbnail width="500" height="500"}
+>> ![create_rule](images/network-firewall/4_create_rule.png){.thumbnail width="349" height="500"}
 >>
 >> Retrouvez plus d'information sur les adresses IP publiques du support SAP sur le [site du support SAP](https://support.sap.com/en/tools/connectivity-tools/saprouter/install-saprouter.html?anchorId=section_498561288).
 >>
