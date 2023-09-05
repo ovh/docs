@@ -263,9 +263,6 @@ container.image=stable64
 
 Personnalisez les valeurs des variables selon la configuration que vous souhaitez utiliser avec votre hébergement web.
 
-- [le pare-feu applicatif](#firewall)
-- 
-
 |Variables|Détail|
 |---|---|
 |app.engine|Permet de modifier [le moteur PHP](#php-runtime) utilisé par l'hébergement. Renseignez **php** pour activer l'accélérateur PHP-FPM et **phpcgi** pour le désactiver.|
