@@ -84,7 +84,7 @@ Click on the type of product to be cancelled in the following list of main OVHcl
 
 To cancel your [dedicated server](https://www.ovhcloud.com/en-gb/bare-metal/), log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), click on your name in the top right-hand corner, then on `Products and services`{.action}.
 
-Next, click on the `...`{.action} button to the right of the service you want to cancel, then on `Cancel`{.action}.
+Next, click on the `...`{.action} button to the right of the service you want to cancel, then on `Cancel subscription`{.action}.
 
 Specify the reasons for your cancellation request, then click on `Confirm`{.action}.
 
@@ -92,7 +92,7 @@ Specify the reasons for your cancellation request, then click on `Confirm`{.acti
 
 To cancel your [VPS](https://www.ovhcloud.com/en-gb/vps/), log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), click on your name in the top right-hand corner, then on `Products and services`{.action}.
 
-Next, click on the `...`{.action} button to the right of the service you want to cancel, then on `Cancel`{.action}.
+Next, click on the `...`{.action} button to the right of the service you want to cancel, then on `Cancel subscription`{.action}.
 
 Specify the reasons for your cancellation request, then click on `Confirm`{.action}.
 
@@ -104,7 +104,7 @@ To cancel your [Managed Bare Metal](https://www.ovhcloud.com/en-gb/managed-bare-
 
 To cancel your [HA-NAS](https://www.ovh.co.uk/nas/) service, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), click on your name in the top right-hand corner, then on `Products and services`{.action}.
 
-Next, click on the `...`{.action} button to the right of the service you want to cancel, then on `Cancel`{.action}.
+Next, click on the `...`{.action} button to the right of the service you want to cancel, then on `Cancel subscription`{.action}.
 
 Specify the reasons for your cancellation request, then click on `Confirm`{.action}.
 
@@ -112,7 +112,7 @@ Specify the reasons for your cancellation request, then click on `Confirm`{.acti
 
 To cancel your [Load Balancer](https://www.ovh.co.uk/solutions/load-balancer/) solution, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), click on your name in the top right-hand corner, then on `Products and services`{.action}.
 
-Next, click on the `...`{.action} button to the right of the service you want to cancel, then on `Cancel`{.action}.
+Next, click on the `...`{.action} button to the right of the service you want to cancel, then on `Cancel subscription`{.action}.
 
 Specify the reasons for your cancellation request, then click on `Confirm`{.action}.
 
@@ -120,7 +120,7 @@ Specify the reasons for your cancellation request, then click on `Confirm`{.acti
 
 To cancel a licence purchased from OVHcloud, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), click on your name in the top right-hand corner, then on `Products and services`{.action}.
 
-Next, click on the `...`{.action} button to the right of the licence you want to end, then on `Cancel`{.action}.
+Next, click on the `...`{.action} button to the right of the licence you want to end, then on `Cancel subscription`{.action}.
 
 Specify the reasons for your cancellation request, then click on `Confirm`{.action}.
 
@@ -134,7 +134,7 @@ To cancel your [Hosted Private Cloud powered by VMware](https://www.ovhcloud.com
 
 To cancel your [Veeam Cloud Connect](https://www.ovhcloud.com/en-gb/storage-solutions/veeam-cloud-connect/) service, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), click on your name in the top right-hand corner, then on `Products and services`{.action}.
 
-Next, click on the `...`{.action} button to the right of the service you want to cancel, then on `Cancel`{.action}.
+Next, click on the `...`{.action} button to the right of the service you want to cancel, then on `Cancel subscription`{.action}.
 
 Specify the reasons for your cancellation request, then click on `Confirm`{.action}.
 
@@ -159,7 +159,7 @@ You can also [view your current resource usage](/pages/platform/public-cloud/ana
 
 To cancel your [domain name](https://www.ovhcloud.com/en-gb/domains/), log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), click on your name in the top right-hand corner, then on `Products and services`{.action}.
 
-Next, click on the `...`{.action} button to the right of the service you want to cancel, then on `Cancel`{.action}.
+Next, click on the `...`{.action} button to the right of the service you want to cancel, then on `Cancel subscription`{.action}.
 
 Specify the reasons for your cancellation request, then click on `Confirm`{.action}.
 
@@ -167,7 +167,7 @@ Specify the reasons for your cancellation request, then click on `Confirm`{.acti
 
 To cancel your [Web Hosting](https://www.ovhcloud.com/en-gb/web-hosting/), log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), click on your name in the top right-hand corner, then on `Products and services`{.action}.
 
-Next, click on the `...`{.action} button to the right of the service you want to cancel, then on `Cancel`{.action}.
+Next, click on the `...`{.action} button to the right of the service you want to cancel, then on `Cancel subscription`{.action}.
 
 Specify the reasons for your cancellation request, then click on `Confirm`{.action}.
 
@@ -179,7 +179,7 @@ You cannot cancel [Sectigo SSL services](https://www.ovhcloud.com/en-gb/web-host
 
 To cancel your [Web PaaS solution](https://www.ovhcloud.com/en-gb/web-paas/), log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), click on your name in the top right-hand corner, then on `Products and services`{.action}.
 
-Next, click on the `...`{.action} button to the right of the service you want to cancel, then on `Cancel`{.action}.
+Next, click on the `...`{.action} button to the right of the service you want to cancel, then on `Cancel subscription`{.action}.
 
 Specify the reasons for your cancellation request, then click on `Confirm`{.action}.
 
@@ -187,7 +187,7 @@ Specify the reasons for your cancellation request, then click on `Confirm`{.acti
 
 To cancel your [Web Cloud Databases](https://www.ovh.co.uk/cloud/cloud-databases/) solution, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), click on your name in the top right-hand corner, then on `Products and services`{.action}.
 
-Next, click on the `...`{.action} button to the right of the service you want to cancel, then on `Cancel`{.action}.
+Next, click on the `...`{.action} button to the right of the service you want to cancel, then on `Cancel subscription`{.action}.
 
 Specify the reasons for your cancellation request, then click on `Confirm`{.action}.
 
@@ -236,7 +236,7 @@ If you would like to cancel the entire platform, we advise you to start by delet
 
 - To delete an individual Sharepoint account, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) in the `Web Cloud`{.action} section. Click on `Microsoft`{.action}, `Sharepoint`{.action} and then on your Sharepoint platform. <br>On the `Users`{.action} tab, click on the `...`{.action} button to the right of the account you want to delete, then on `Disable account`{.action}. Review the information and click on `Confirm`{.action}.
 
-- To cancel your entire SharePoint platform, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), click on your name in the top right-hand corner, then on `Products and services`{.action}. <br>Then click on the `...`{.action} button to the right of the SharePoint platform you want to cancel, then on `Cancel`{.action}. Specify the reasons for your cancellation request, then click on `Confirm`{.action}.
+- To cancel your entire SharePoint platform, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), click on your name in the top right-hand corner, then on `Products and services`{.action}. <br>Then click on the `...`{.action} button to the right of the SharePoint platform you want to cancel, then on `Cancel subscription`{.action}. Specify the reasons for your cancellation request, then click on `Confirm`{.action}.
 
 ### Telecom <a name="telecom"></a>
 
@@ -252,7 +252,7 @@ If you would like to delete an SMS account, please create a support request via 
 
 To cancel your [SSL Gateway](https://www.ovhcloud.com/en-gb/) solution, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), click on your name in the top right-hand corner, then on `Products and services`{.action}.
 
-Next, click on the `...`{.action} button to the right of the service you want to cancel, then on `Cancel`{.action}.
+Next, click on the `...`{.action} button to the right of the service you want to cancel, then on `Cancel subscription`{.action}.
 
 Specify the reasons for your cancellation request, then click on `Confirm`{.action}.
 
