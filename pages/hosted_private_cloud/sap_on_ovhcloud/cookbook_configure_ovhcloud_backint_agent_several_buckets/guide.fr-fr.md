@@ -70,7 +70,7 @@ s3api put-bucket-versioning \
 
 Éditez le contenu du fichier `hdbbackint.cfg` et remplacez les valeurs entre parenthèses par les informations de votre premier bucket Object Storage S3.
 
-```
+```{.console}
 [trace]
 default = INFO
 destination = outputfile
