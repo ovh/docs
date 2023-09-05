@@ -91,7 +91,7 @@ Certaines versions de PHP ne fonctionnent qu'avec certains environnements d'exé
 |---|---|
 |5.4, 5.5, 5.6 et 7.0|Legacy, Stable|
 |7.1, 7.2 et 7.3|Stable|
-|7.4, 8.0 et 8.1 (bêta)|stable64|
+|7.4, 8.0, 8.1 et 8.2|stable64|
 
 > [!primary]
 >
@@ -143,7 +143,11 @@ Les moteurs d'exécutions PHP sont des programmes permettant d'exécuter des act
 
 Sur les hébergements web OVHcloud, nous proposons **2** moteurs d'exécutions PHP : *php* (« PHP-FPM ») et *phpcgi*.
 
-Le choix du moteur *php* permet d'activer ou de désactiver l'accélérateur PHP (« PHP-FPM »). Ce dernier a été adapté à notre infrastructure dans le but d'accélérer la vitesse d'exécution des scripts PHP. En comparaison, l'accélérateur PHP (« PHP-FPM ») offre un gain de performance jusqu'à sept fois plus rapide par rapport à l'utilisation du moteur *phpcgi*. 
+Le choix du moteur *php* permet d'activer ou de désactiver l'accélérateur PHP (« PHP-FPM »). Ce dernier a été adapté à notre infrastructure dans le but d'accélérer la vitesse d'exécution des scripts PHP. 
+
+En effet, le moteur *phpcgi* exécute les requêtes « en série » contrairement au moteur *php* (« PHP-FPM ») qui les exécute « en parallèle ».
+
+En comparaison, l'accélérateur PHP (« PHP-FPM ») offre un gain de performance jusqu'à sept fois plus rapide par rapport à l'utilisation du moteur *phpcgi*. 
 
 ####  1.4 - Le pare-feu applicatif <a name="firewall"></a>
 
@@ -351,7 +355,7 @@ Consultez notre guide « [Configurer un multisite sur votre hébergement web](/p
 
 > [!warning]
 >
-> **Il n'est pas possible de spécifier un second [environnement d'exécution](#runtime-evironment)** sur un même hébergement web. Seul celui renseigné dans le fichier « .ovhconfig » se trouvant à la racine de votre [espace de stockage FTP](/pages/web_cloud/web_hosting/ftp_connection) est pris en compte.
+> **Il n'est pas possible de spécifier un second [environnement d'exécution](#runtime-evironment), un second [mode d'exécution](#runtime-mod) et/ou un second [moteur d'exécution PHP](#php-runtime)** sur un même hébergement web. Seuls ceux renseignés dans le fichier « .ovhconfig » se trouvant à la racine de votre [espace de stockage FTP](/pages/web_cloud/web_hosting/ftp_connection) seront pris en compte.
 > 
 
 ![ovhconfig](images/ovhconfig-step3.png){.thumbnail}
