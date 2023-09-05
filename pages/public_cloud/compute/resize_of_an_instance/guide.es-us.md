@@ -1,6 +1,6 @@
 ---
-title: Redimensionar una instancia
-excerpt: Cómo redimensionar una instancia en Horizon.
+title: Redimensionar una instancia a través de Horizon
+excerpt: Descubra cómo redimensionar una instancia desde la interfaz Horizon.
 legacy_guide_number: g1778
 updated: 2023-05-24
 ---

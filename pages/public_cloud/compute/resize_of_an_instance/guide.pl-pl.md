@@ -1,6 +1,6 @@
 ---
-title: Zmiana rozmiaru instancji
-excerpt: Jak zmienić rozmiar instancji w interfejsie Horizon.
+title: Skaluj instancję w interfejsie Horizon
+excerpt: Dowiedz się, jak zmienić rozmiar instancji w interfejsie Horizon.
 legacy_guide_number: g1778
 updated: 2023-05-24
 ---

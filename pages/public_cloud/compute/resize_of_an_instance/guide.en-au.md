@@ -1,5 +1,5 @@
 ---
-title: Resize an instance
+title: Resize an instance via Horizon
 excerpt: "Find out how to resize an instance in the Horizon interface"
 legacy_guide_number: 1778
 updated: 2023-05-24
