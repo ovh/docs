@@ -152,7 +152,12 @@ To activate the announcement of your imported IP range on the Internet, simply a
 
 ### Range slicing
 
-Any imported block can be further split into smaller blocks and/or individual addresses. To slice a block, use the following API call :
+Any imported block can be further split into smaller blocks and/or individual addresses.
+
+> [!warning] 
+> To be able to slice/merge an existing IP block, it must be unused (i.e. in the parking area) and there must not be any pending task associated with it (e.g. no pending move operation).
+
+To slice a block, use the following API call :
 
 > [!api]
 >
@@ -177,7 +182,7 @@ with following parameters:
 
 - ip : the IP block you want to slice, in CIDR notation
 
-To merge back a block into a bigger one, use this API call :
+To merge back a block into a parent block, use this API call :
 
 > [!api]
 >
@@ -200,11 +205,20 @@ You can preview all the possible configuration of aggregated blocks for a given 
 
 with following parameters:
 
-- ip : the IP block you want to slice, in CIDR notation
+- ip : the IP block you want to merge into a parent block, in CIDR notation
 
 This call returns a list of possible aggregated blocks and for each one of them, gives the list of children blocks to be merged back.
 
 Note : this feature is currently available via API only. It will be added to the control panel in the near future.
+
+Limitations
+
+- Configuration elements associated to individual IP addesses (/32) such as firewall rules or reverse DNS entries will be kept after slicing/merging operations.
+- The listing of IP addresses and blocks returned by API is order by network prefixe size. We are working to provide a solution to list IP by numerical order.
+- Once sliced, smaller blocks are not movable outside the campus chosen during the order of the product.
+- Moving a /24 block across french campuses won't work if :
+ - It has been reaggregted from a previous slicing
+ - The /24 block is imported from a bigger block (/23 to /19)
 
 ## FAQ
 
