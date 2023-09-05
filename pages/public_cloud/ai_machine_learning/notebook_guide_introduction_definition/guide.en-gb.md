@@ -1,7 +1,7 @@
 ---
 title: AI Notebooks - Getting started
 excerpt: Learn how to simply bootstrap an AI Notebook
-updated: 2022-11-24
+updated: 2023-09-05
 ---
 
 ## Objective

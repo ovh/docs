@@ -1,7 +1,7 @@
 ---
 title: AI Training - Job concept
 excerpt: Learn the concept behind AI Training jobs
-updated: 2021-05-18
+updated: 2023-09-05
 ---
 
 ## Definition
