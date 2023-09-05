@@ -14,7 +14,6 @@ En complément au [modèle de responsabilité entre OVHcloud et le client sur le
 - ISO/IEC 27017
 - ISO/IEC 27018
 - HDS
-- PCI DSS
 - SecNumCloud
 - SOC 1 type II
 - SOC 2 type II
@@ -157,9 +156,9 @@ La même opération peut être réalisée si vous optez pour l'utilisation d'un 
 
 Le mode d'emploi est disponible via [ce lien](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vm_encrypt-vnkp).
 
-### 9.2.6 6 Sécurité avancée avec HDS et PCI DSS
+### 9.2.6 6 Sécurité avancée avec HDS
 
-Vous pouvez bénéficier d'un pack sécurité avancée en activant les options HDS ou PCI DSS sur votre infrastructure.
+Vous pouvez bénéficier d'un pack sécurité avancée en activant les options HDS sur votre infrastructure.
 
 Le pack comprend plusieurs fonctionnalités telles que [token validator](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/interface-secure), accès via 2FA, session Timeout, Fail2ban, hids, forcer le protocole TLS v1.2, etc.
 
