@@ -137,9 +137,11 @@ Si vous souhaitez bénéficier de l'installation automatisée de votre base de d
 
 <ol start="10"><li>
 Si vous souhaitez bénéficier de l’installation automatisée d'OVHcloud Backint Agent for SAP HANA pour sauvegarder votre base de données sur un Object Storage S3, cochez l'activation de l'installation et renseignez les informations de la catégorie <code class="action">OVHcloud Backint Agent installation</code>.
-
-<div class="callout warning">Cette option est uniquement disponible dans le cas où vous avez activé l'installation de SAP HANA dans la précédente catégorie.</div>
 </li></ol>
+
+> [!warning]
+> Cette option est uniquement disponible dans le cas où vous avez activé l'installation de SAP HANA dans la précédente catégorie.
+>
 
 ![ovhcloud-backint-agent-installation](images/step-10.png){.thumbnail}
 
