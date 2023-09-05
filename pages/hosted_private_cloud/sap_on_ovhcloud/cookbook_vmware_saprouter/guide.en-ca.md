@@ -80,7 +80,7 @@ If you didn't create a Network Firewall and a firewall rule for the public IP ad
 >> - Flags: None
 >>
 >>
->> ![create_rule](images/network-firewall/4_create_rule.png){.thumbnail width="500" height="500"}
+>> ![create_rule](images/network-firewall/4_create_rule.png){.thumbnail width="349" height="500"}
 >>
 >> Find more information about the SAP support public IP address on the [SAP support website](https://support.sap.com/en/tools/connectivity-tools/saprouter/install-saprouter.html?anchorId=section_498561288).
 >>
