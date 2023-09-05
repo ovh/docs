@@ -49,6 +49,7 @@ As you can see, all the space of that installation disk will be used except if y
 > [!primary]
 >
 > Did you know?
+> 
 > [VMware on OVHcloud solutions](https://www.ovhcloud.com/en-gb/hosted-private-cloud/vmware/) are based on ESXi with the partitioning layout `small`.
 >
 
