@@ -69,7 +69,7 @@ Click on the type of product to be cancelled in the following list of main OVHcl
 
 To cancel your [dedicated server](https://www.ovhcloud.com/en-au/bare-metal/), log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au), click on your name in the top right-hand corner, then on `Products and services`{.action}.
 
-Next, click on the `...`{.action} button to the right of the service you want to cancel, then on `Cancel`{.action}.
+Next, click on the `...`{.action} button to the right of the service you want to cancel, then on `Cancel subscription`{.action}.
 
 Specify the reasons for your cancellation request, then click on `Confirm`{.action}.
 
@@ -77,7 +77,7 @@ Specify the reasons for your cancellation request, then click on `Confirm`{.acti
 
 To cancel your [VPS](https://www.ovhcloud.com/en-au/vps/), log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au), click on your name in the top right-hand corner, then on `Products and services`{.action}.
 
-Next, click on the `...`{.action} button to the right of the service you want to cancel, then on `Cancel`{.action}.
+Next, click on the `...`{.action} button to the right of the service you want to cancel, then on `Cancel subscription`{.action}.
 
 Specify the reasons for your cancellation request, then click on `Confirm`{.action}.
 
@@ -89,7 +89,7 @@ To cancel your [Managed Bare Metal](https://www.ovhcloud.com/en-au/managed-bare-
 
 To cancel your [Load Balancer](https://www.ovh.com.au/solutions/load-balancer/) solution, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au), click on your name in the top right-hand corner, then on `Products and services`{.action}.
 
-Next, click on the `...`{.action} button to the right of the service you want to cancel, then on `Cancel`{.action}.
+Next, click on the `...`{.action} button to the right of the service you want to cancel, then on `Cancel subscription`{.action}.
 
 Specify the reasons for your cancellation request, then click on `Confirm`{.action}.
 
@@ -97,7 +97,7 @@ Specify the reasons for your cancellation request, then click on `Confirm`{.acti
 
 To cancel a licence purchased from OVHcloud, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au), click on your name in the top right-hand corner, then on `Products and services`{.action}.
 
-Next, click on the `...`{.action} button to the right of the licence you want to end, then on `Cancel`{.action}.
+Next, click on the `...`{.action} button to the right of the licence you want to end, then on `Cancel subscription`{.action}.
 
 Specify the reasons for your cancellation request, then click on `Confirm`{.action}.
 
@@ -111,7 +111,7 @@ To cancel your [Hosted Private Cloud powered by VMware](https://www.ovhcloud.com
 
 To cancel your [Veeam Cloud Connect](https://www.ovhcloud.com/en-au/storage-solutions/veeam-cloud-connect/) service, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au), click on your name in the top right-hand corner, then on `Products and services`{.action}.
 
-Next, click on the `...`{.action} button to the right of the service you want to cancel, then on `Cancel`{.action}.
+Next, click on the `...`{.action} button to the right of the service you want to cancel, then on `Cancel subscription`{.action}.
 
 Specify the reasons for your cancellation request, then click on `Confirm`{.action}.
 
@@ -136,7 +136,7 @@ You can also [view your current resource usage](/pages/platform/public-cloud/ana
 
 To cancel your [domain name](https://www.ovhcloud.com/en-au/domains/), log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au), click on your name in the top right-hand corner, then on `Products and services`{.action}.
 
-Next, click on the button `...`{.action} to the right of the service you want to cancel, then on `Cancel`{.action}.
+Next, click on the button `...`{.action} to the right of the service you want to cancel, then on `Cancel subscription`{.action}.
 
 Specify the reasons for your cancellation request, then click on `Confirm`{.action}.
 
@@ -144,7 +144,7 @@ Specify the reasons for your cancellation request, then click on `Confirm`{.acti
 
 To cancel your [Web Hosting](https://www.ovhcloud.com/en-au/web-hosting/), log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au), click on your name in the top right-hand corner, then on `Products and services`{.action}.
 
-Next, click on the `...`{.action} button to the right of the service you want to cancel, then on `Cancel`{.action}.
+Next, click on the `...`{.action} button to the right of the service you want to cancel, then on `Cancel subscription`{.action}.
 
 Specify the reasons for your cancellation request, then click on `Confirm`{.action}.
 
