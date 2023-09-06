@@ -1,6 +1,7 @@
 ---
-title: "Spécifications de sécurité du service Hosted Private Cloud VMware sous la qualification SecNumCloud "
-updated: 2023-08-25
+title: "Spécifications de sécurité du service Hosted Private Cloud VMware sous la qualification SecNumCloud"
+excerpt: "Découvrez les particularités et fonctions de sécurité ainsi que les bonnes pratiques pour l'utilisation des service VMware on OVHcloud sous la qualification SecNumCloud"
+updated: 2023-09-06
 ---
 
 ## Objectif
@@ -156,7 +157,7 @@ La même opération peut être réalisée si vous optez pour l'utilisation d'un 
 
 Le mode d'emploi est disponible via [ce lien](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vm_encrypt-vnkp).
 
-### 9.2.6 6 Sécurité avancée avec HDS
+### 9.2.6 Sécurité avancée avec HDS
 
 Vous pouvez bénéficier d'un pack sécurité avancée en activant les options HDS sur votre infrastructure.
 

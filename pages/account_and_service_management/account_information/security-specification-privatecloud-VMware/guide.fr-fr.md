@@ -1,6 +1,7 @@
 ---
 title: "Spécifications de sécurité du service Hosted Private Cloud VMware "
-updated: 2023-08-28
+excerpt: "Découvrez les particularités et fonctions de sécurité ainsi que les bonnes pratiques pour l'utilisation des service VMware on OVHcloud"
+updated: 2023-09-06
 ---
 
 ## Objectif
