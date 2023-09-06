@@ -839,7 +839,7 @@ Si le statut reste rouge après 24h, vérifiez l'état du sélecteur que vous av
 Voici les 4 états ayant pour résultat l'icône DKIM en rouge dans votre espace client:
 
  - `WaitingRecord` : les enregistrements DNS sont en attente de configuration ou en cours de validation dans la zone DNS du nom de domaine. Une vérification automatique régulière est faite pour constater si l'enregistrement DNS est présent et correctement renseigné. Selon vote offre, suivez **l'étape 5** dans la section « [Configuration complète du DKIM](#firststep) » pour configurer correctement la zone DNS du nom de domaine concerné.
- - `ready` : les enregistrements DNS sont présents dans la zone. Le DKIM peut maintenant être activé. Il vous suffira d'activer le sélecteur en vous appuyant de la section [« Activer ou changer un sélecteur DKIM »](#enable-switch).
+ - `ready` : les enregistrements DNS sont présents dans la zone. Le DKIM peut maintenant être activé. Il vous suffira d'activer le sélecteur en vous appuyant sur la section « [Activer ou changer un sélecteur DKIM](#enable-switch) ».
  - `deleting` : le DKIM est en cours de suppression. Après suppression, il vous faudra suivre la section [« Configuration complète du DKIM »](#firststep).
  - `disabling` : le DKIM est en cours de désactivation. Après cette opération vous pourrez activer le sélecteur en vous appuyant de la section [« Activer ou changer un sélecteur DKIM »](#enable-switch).
  - `todo` : la tâche a été initialisée, elle doit se lancer. Au-delà de 24 heures, si votre sélecteur est toujours dans cet état, nous vous invitons à ouvrir un ticket auprès du support en précisant le numéro du sélecteur concerné.
