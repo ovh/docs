@@ -786,7 +786,7 @@ Cliquez sur l'onglet ci-dessous correspondant à votre offre.
 
 > [!tabs]
 > **Exchange**
->> Pour basculer sur le deuxieme sélecteur, utilisez l'appel API suivant:
+>> Pour basculer sur le deuxième sélecteur, utilisez l'appel API suivant :
 >> 
 >> > [!api]
 >> >
