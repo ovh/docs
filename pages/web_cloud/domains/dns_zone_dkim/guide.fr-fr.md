@@ -56,7 +56,7 @@ L'enregistrement DKIM (**D**omain**K**eys **I**dentified **M**ail) permet de sig
     - [Pourquoi a-t-on besoin de configurer les serveurs DNS ?](#dns-and-dkim)
     - [Exemple d'un e-mail envoyé en utilisant le DKIM](#example)
     - [Qu'est-ce qu'un sélecteur DKIM ?](#selector)
-- [Configurer le DKIM automatiquement pour une offre e-mail Exchange ou E-mail Pro OVHcloud](#internal-dkim)
+- [Configurer le DKIM automatiquement pour une offre e-mail Exchange ou E-mail Pro OVHcloud](#auto-dkim)
 - [Configurer le DKIM manuellement pour une offre e-mail Exchange ou E-mail Pro OVHcloud](#internal-dkim)
     - [Configuration complète du DKIM](#firststep)
         - [Pour Exchange](#confex)
