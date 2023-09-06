@@ -72,7 +72,7 @@ Po zakończeniu zadań w trybie Rescue pamiętaj o ponownym ustawieniu netbootu 
 
 Po restarcie serwera otrzymasz e-mail z danymi do połączenia w trybie Rescue. E-mail ten jest również dostępny w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Kliknij nazwę powiązaną z Twoim identyfikatorem klienta w prawym górnym rogu Panelu klienta, a następnie `E-maile od działu wsparcia`{.action}.
 
-Zaloguj się do serwera za pomocą wiersza poleceń lub narzędzia [SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction, używając wygenerowanego hasła root dla trybu Rescue.
+Zaloguj się do serwera za pomocą wiersza poleceń lub narzędzia [SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction), używając wygenerowanego hasła root dla trybu Rescue.
 
 Przykład:
 
