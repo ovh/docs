@@ -252,7 +252,7 @@ Suivez les **5 étapes** ci-dessous en cliquant sur chacun des onglets.
 >> 
 >> > [!primary]
 >> >
->> > Nous vous conseillons de réaliser cette opération à deux reprises pour chacun des sélecteurs précédement listés. Le deuxième sélecteur vous permettra d'éffectuer un changement de paire de clés lorsque cela sera necessaire. **Ne cochez pas la case `autoEnableDKIM` lorsque vous créez le deuxième sélecteurs** pour ne pas créer un conflit avec l'activation du premier sélecteur. Nous vous invitons à consulter notre cas d'usage [« Comment changer sa paire de clé DKIM »](#2selectors) lorsque vous souhaiterez basculer sur le deuxième sélecteurs.
+>> > Nous vous conseillons de réaliser cette opération à deux reprises pour chacun des sélecteurs précédemment listés. Le deuxième sélecteur vous permettra d'effectuer un changement de paire de clés lorsque cela sera necessaire. **Ne cochez pas la case `autoEnableDKIM`{.action} lorsque vous créez le deuxième sélecteur** pour ne pas créer un conflit avec l'activation du premier sélecteur. Nous vous invitons à consulter notre cas d'usage [« Comment changer sa paire de clés DKIM »](#2selectors) lorsque vous souhaiterez basculer sur le deuxième sélecteur.
 >> <br>
 >>
 >> *Exemple de résultat :*
