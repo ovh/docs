@@ -1,6 +1,7 @@
 ---
 title: "Spécifications de sécurité du service Hosted Private Cloud VMware "
-updated: 2023-08-28
+excerpt: "Découvrez les particularités et fonctions de sécurité ainsi que les bonnes pratiques pour l'utilisation des service VMware on OVHcloud"
+updated: 2023-09-06
 ---
 
 ## Objectif
@@ -15,7 +16,6 @@ En complément au [modèle de responsabilité entre OVHcloud et le client sur le
 - ISO/IEC 27018
 - HDS
 - PCI DSS
-- SecNumCloud
 - SOC 1 type II
 - SOC 2 type II
 - CSA type II
