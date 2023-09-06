@@ -471,7 +471,7 @@ Suivez les **5 étapes** ci-dessous en cliquant sur chacun des onglets.
 >>
 >> ![email](images/dns-dkim-api02.png){.thumbnail} <br>
 >> 
->> Une fois les valeurs saisies, cliquez sur `Suivant`{.action} puis `Valider`{.action}.<br>
+>> Une fois les valeurs saisies, cliquez sur `Suivant`{.action} puis sur `Valider`{.action}.<br>
 >>
 >> **Répétez cette opération pour le deuxième sélecteur si vous l'avez créé.**<br>
 >>
