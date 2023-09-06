@@ -1,7 +1,7 @@
 ---
 title: 'Primeiros passos com um servidor dedicado'
 excerpt: 'Saiba como utilizar o seu novo servidor dedicado'
-updated: 2023-08-24
+updated: 2023-09-05
 ---
 
 > [!primary]
@@ -34,7 +34,7 @@ Quando o seu servidor dedicado for configurado pela primeira vez durante o proce
 
 Pode facilmente reinstalar o seu servidor e escolher outra imagem de OS na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). No separador `Informações gerais`{.action}, clique em `...`{.action} em frente do sistema operativo e, a seguir, em `Instalar`{.action}.
 
-![Botão Reinstalar](images/reinstalling-your-server-00.png){.thumbnail}
+![Botão Reinstalar](images/reinstalling-your-server-01.png){.thumbnail}
 
 Na nova janela, selecione uma das opções de instalação:
 
@@ -59,7 +59,7 @@ Depois de escolher `Instalar a partir de um template OVHcloud`{.action}, pode se
 
 Se tiver de alterar o esquema de particionamento do seu sistema operativo, selecione a opção "Personalizar a configuração das partições" antes de clicar em `Seguinte`{.action}.
 
-![Personalizar a configuração das partições](images/SSH_02.png){.thumbnail}
+![Personalizar a configuração das partições](images/reinstalling-your-server-04.png){.thumbnail}
 
 Depois de finalizar os ajustamentos, clique em `Seguinte`{.action} para aceder à página de resumo.
 
@@ -67,23 +67,23 @@ Depois de finalizar os ajustamentos, clique em `Seguinte`{.action} para aceder �
 
 Se instalar um sistema operativo GNU/Linux, pode adicionar a sua chave SSH à última etapa do processo de instalação.
 
-![Personalizar a configuração da partição](images/SSH_03.png){.thumbnail}
+![Personalizar SSH](images/SSH_01.png){.thumbnail}
 
 Se uma chave SSH já estiver registada, aparecerá no menu pendente em "Chaves SSH" na parte inferior. Caso contrário, terá de adicionar uma na secção "Serviços".
 
 Para isso, abra a barra lateral ao clicar no canto superior direito e utilize o atalho `Produtos e serviços`{.action}.
 
-![Personalizar a configuração da partição](images/SSH_keys_panel_2022.png){.thumbnail}
+![Personalizar SSH](images/SSH_02.png){.thumbnail}
 
 Em "Os meus serviços", passe para o separador `Chaves SSH`{.action} e clique em `Adicionar uma chave SSH`{.action}.
 
-![Personalizar a configuração da partição](images/SSH_14.png){.thumbnail}
+![Personalizar SSH](images/SSH_03.png){.thumbnail}
 
 Uma vez que se trata da instalação de um servidor dedicado, tenha o cuidado de selecionar "Dedicado" no menu pendente (compatível com um VPS também).
 
 Na nova janela, introduza um ID (nome da sua escolha) e a própria chave (do tipo RSA, ECDSA ou Ed25519) nos campos correspondentes.
 
-![Personalizar a configuração da partição](images/SSH_12.png){.thumbnail}
+![Personalizar SSH](images/SSH_04.png){.thumbnail}
 
 Para obter uma explicação detalhada sobre a geração de chaves SSH, consulte o nosso [guia](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated).
 
