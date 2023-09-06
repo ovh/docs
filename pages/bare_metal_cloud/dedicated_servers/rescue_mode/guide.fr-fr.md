@@ -62,7 +62,7 @@ Lorsque vous aurez terminé vos tâches en mode rescue, n'oubliez pas de redéfi
 
 Après le redémarrage de votre serveur, vous recevrez un e-mail avec vos identifiants de connexion en mode rescue. Cet e-mail est également disponible dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Cliquez sur le nom associé à votre identifiant client dans le coin supérieur droit de votre espace client, puis sur `E-mails de service`{.action}.
 
-Vous devrez ensuite accéder à votre serveur en ligne de commande ou via un outil SSH, en utilisant le mot de passe root généré pour le mode rescue.
+Vous devrez ensuite accéder à votre serveur en ligne de commande ou via un outil [SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction, en utilisant le mot de passe root généré pour le mode rescue.
 
 Par exemple :
 
