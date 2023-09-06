@@ -780,7 +780,7 @@ Pour récupérer l'en-tête d'un e-mail, consulter notre guide « [Récupérer l
 
 Lorsque vous activez pour la première fois le DKIM sur votre service e-mail, il est possible de créer 2 sélecteurs qui contiennent chacun une paire de clés. Le deuxième sélecteur sert de successeur à celui qui est en cours d'utilisation.
 
-Pour éviter les tentatives de déchiffrement de la clé DKIM, il est conseillé de changer régulièrement de paire de clés. Pour cela, assurez-vous d'avoir bien configurer vos 2 sélecteurs en vérifiant que le premier est en status `inProduction`et le second en status `ready`. vous pouvez vérifier cette état en vous référant à la section [« Les différents états du DKIM »](#dkim-status).
+Pour éviter les tentatives de déchiffrement de la clé DKIM, il est conseillé de changer régulièrement de paire de clés. Pour cela, assurez-vous d'avoir bien configuré vos 2 sélecteurs en vérifiant que le premier est en status `inProduction`et le second en status `ready`. Vous pouvez vérifier cet état en vous référant à la section [« Les différents états du DKIM »](#dkim-status).
 
 Cliquez sur l'onglet ci-dessous correspondant à votre offre.
 
