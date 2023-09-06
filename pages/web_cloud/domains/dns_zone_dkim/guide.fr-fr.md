@@ -166,7 +166,7 @@ Pour activer le DKIM, il vous suffit maintenant de cliquer sur la pastille `DKIM
 
 ![email](images/dkim-auto02.png){.thumbnail}
 
-L'activation automatique du DKIM dure entre 30 minutes et 24 heures maximum. Pour vérifier que votre DKIM est fonctionnel, il vous suffit de retourner dans l'onglet `Domaines associés` de votre plateforme e-mail et vous assurer que la pastille `DKIM` est passée au vert.
+L'activation automatique du DKIM dure entre 30 minutes et 24 heures maximum. Pour vérifier que votre DKIM est fonctionnel, il vous suffit de retourner dans l'onglet `Domaines associés`{.action} de votre plateforme e-mail et de vous assurer que la pastille `DKIM` est devenue verte.
 
 ![email](images/dkim-auto03.png){.thumbnail}
 
