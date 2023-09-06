@@ -261,22 +261,22 @@ container.image=stable64
 
 > [!success]
 >
-> Si vous venez de créer le fichier « .ovhconfig », copiez le code ci-dessus dans votre fichier puis poursuivez la lecture de ce guide.
+> Jeśli właśnie utworzyłeś plik ".ovhconfig", skopiuj powyższy kod do pliku i kontynuuj lekturę tego przewodnika.
 >
 
-Personnalisez les valeurs des variables selon la configuration que vous souhaitez utiliser avec votre hébergement web.
+Wpisz wartości zmiennych odpowiadające konfiguracji, którą chcesz zastosować na Twoim hostingu.
 
-|Variables|Détail|
-|---|---|
-|app.engine|Permet de modifier [le moteur PHP](#php-runtime) utilisé par l'hébergement. Renseignez **php** pour activer l'accélérateur PHP-FPM et **phpcgi** pour le désactiver.|
-|app.engine.version|Permet de définir [la version de PHP](#php-versions) utilisée par l'hébergement parmi [celles qu'OVHcloud propose](https://www.ovhcloud.com/fr/web-hosting/uc-programming-language/){.external}. Renseignez la version de votre choix (en adéquation avec l'environnement d'exécution que vous avez choisi d'utiliser).|
-|http.firewall|Permet d'activer ou de désactiver le [firewall fourni avec les hébergements web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/options/){.external}. Renseignez **security** pour l'activer ou **none** pour le désactiver.|
-|environment|Permet de gérer le comportement du cache des fichiers statiques de votre site web ainsi que le traitement des erreurs PHP. Cela correspond au [mode d'exécution](#runtime-mod). Renseignez **production** pour maximiser la mise en cache et masquer les erreurs PHP ou **development** pour qu'aucun cache ne soit appliqué et que les erreurs PHP s'affichent.|
-|container.image|Permet de modifier [l'environnement d'exécution](#runtime-environment) utilisé par l'hébergement. Renseignez l'environnement d'exécution (**legacy**,**stable** ou **stable64**) de votre choix. Si vous choisissez l'environnement d'éxecution **stable64**, vérifiez que votre site est compatible avec l'architecture 64 bits.|
+|Zmienne|Szczegóły|
+|---|---| 
+|app.engine|Pozwala zmodyfikować [silnik PHP](#php-runtime) używany przez hosting. Wpisz **php**, aby włączyć akcelerator PHP-FPM i **phpcgi**, aby go wyłączyć.|
+|app.engine.version|Pozwala zdefiniować [wersja PHP](#php-versions) używana przez hosting spośród [wersji proponowanych przez OVHcloud](https://www.ovhcloud.com/pl/web-hosting/uc-programming-language/){.external}. Wpisz wybraną przez Ciebie wersję (odpowiednią dla wybranego środowiska wykonawczego).|
+|http.firewall|Umożliwia włączenie lub wyłączenie [firewalla dostarczonego z hostingiem OVHcloud](https://www.ovhcloud.com/pl/web-hosting/options/){.external}. Wpisz **security**, aby go włączyć lub **none**, aby go wyłączyć.|
+|environment|Pozwala zarządzać mechanizmem pamięci podręcznej dla plików statycznych Twojej strony WWW, a także przetwarzaniem błędów PHP. Odpowiada to [tryb wykonania](#runtime-mod). Wpisz **production**, aby zmaksymalizować buforowanie i ukryć błędy PHP lub **development**, aby pamięć podręczna nie była stosowana a błędy PHP były wyświetlane.|
+|container.image|Pozwala zmodyfikować [środowisko uruchomieniowe](#runtime-environment) używane przez hosting. Wprowadź środowisko uruchomieniowe (**legacy**,**stable** lub **stable64**). Jeśli wybierzesz środowisko uruchomieniowe **stable64**, sprawdź, czy Twoja strona jest zgodna z architekturą 64-bitową.|
 
-Si besoin, retournez à la première partie « [Description des paramètres de configuration disponibles sur les hébergements web OVHcloud](#all-parameters) » de ce guide.
+W razie potrzeby wróć do pierwszej części "[Opis ustawień konfiguracyjnych dostępnych na hostingu WWW OVHcloud](#all-parameters)" niniejszego przewodnika.
 
-Si nécessaire, retrouvez ci-dessous la description technique détaillée du fichier « .ovhconfig » :
+Jeśli to konieczne, zapoznaj się ze szczegółowym opisem technicznym pliku ".ovhconfig":
 
 ```php
 ; ovhconfig

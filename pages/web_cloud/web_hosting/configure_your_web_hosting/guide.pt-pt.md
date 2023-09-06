@@ -94,7 +94,7 @@ Certas versões de PHP só funcionam com certos ambientes de execução. Encontr
 |Versões PHP|Ambientes de execução compatíveis|
 |---|---| 
 |5.4, 5.5, 5.6 e 7.0|Legacy, Stable|
-|7.1, 7.2 e 7.3|Estável|
+|7.1, 7.2 e 7.3|Stable|
 |7.4, 8.0, 8.1 e 8.2|stable64|
 
 > [!primary]
