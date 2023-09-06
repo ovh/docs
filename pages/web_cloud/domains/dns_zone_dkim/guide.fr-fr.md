@@ -806,7 +806,7 @@ Cliquez sur l'onglet ci-dessous correspondant à votre offre.
 >> > @api {POST} /email/pro/{service}/domain/{domainName}/dkim/{selectorName}/enable
 >> >
 >>
->> - `service` : saisissez le nom de votre plateforme E-mail Pro se présentant sous la forme « emailpro-zz111111-1 » . <br>
+>> - `service` : saisissez le nom de votre plateforme E-mail Pro se présentant sous la forme « emailpro-zz111111-1 ». <br>
 >> - `selectorName` : saisissez le nom du sélecteur sur lequel vous souhaitez basculer. <br>
 >> - `domainName` : saisissez le nom de domaine attaché à votre plateforme E-mail Pro sur lequel le DKIM doit être présent.<br>
 >>
