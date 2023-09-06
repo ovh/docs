@@ -834,7 +834,7 @@ Cliquez sur l'onglet ci-dessous correspondant à votre offre, pour constater l'�
 
 Si vous venez de configurer le DKIM, cela signifie que l'activation du DKIM n'est pas terminée, **il est conseillé de patienter 24h**.
 
-Si le statut reste rouge après 24h, vérifiez l'état du sélecteur que vous avez activé. Pour cela appuyez-vous sur la section [Les différents états du DKIM](#dkim-status) de ce guide.
+Si le statut reste rouge après 24h, vérifiez l'état du sélecteur que vous avez activé. Pour cela, appuyez-vous sur la section « [Les différents états du DKIM](#dkim-status) » de ce guide.
 
 Voici les 4 états ayant pour résultat l'icône DKIM en rouge dans votre espace client:
 
