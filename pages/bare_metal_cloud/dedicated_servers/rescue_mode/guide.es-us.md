@@ -72,7 +72,7 @@ Una vez que haya finalizado las tareas en modo de rescate, no olvide redefinir e
 
 Una vez reiniciado el servidor, recibirá por correo electrónico las claves de acceso en modo de rescate. Este mensaje de correo electrónico también está disponible en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws). En la esquina superior derecha del área de cliente, haga clic en el nombre asociado a su identificador de cliente y seleccione `Emails de servicio`{.action}.
 
-A continuación, acceda al servidor en línea de comandos o a través de una herramienta SSH, utilizando la contraseña root generada para el modo de rescate.
+A continuación, acceda al servidor en línea de comandos o a través de una herramienta [SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction, utilizando la contraseña root generada para el modo de rescate.
 
 por ejemplo,
 
