@@ -799,7 +799,7 @@ Cliquez sur l'onglet ci-dessous correspondant à votre offre.
 >> - `domainName` : saisissez le nom de domaine attaché à votre plateforme Exchange. <br>
 >>
 > **E-mail Pro**
->> Pour basculer sur le deuxieme sélecteur, utilisez l'appel API suivant:
+>> Pour basculer sur le deuxième sélecteur, utilisez l'appel API suivant :
 >>
 >> > [!api]
 >> >
