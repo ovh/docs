@@ -1,68 +1,91 @@
 ---
-title: 'Repartitionner un VPS suite à un upgrade'
-excerpt: 'Découvrez comment augmenter votre espace de stockage après un upgrade de votre VPS'
-updated: 2021-05-18
+title: Repartitionner un VPS après un upgrade de stockage
+excerpt: Découvrez comment augmenter l'espace disque utilisable suite à une mise à niveau
+updated: 2023-09-05
 ---
 
 ## Objectif
 
-Lors de l’upgrade de votre VPS, il est possible qu’un repartitionnement de votre espace de stockage soit nécessaire.
+Après avoir augmenté la capacité de stockage de votre VPS, vous devrez repartitionner l'espace disque pour profiter de la taille réelle. Les étapes suivantes décrivent comment procéder.
 
 > [!warning]
 >
 > Le repartitionnement peut endommager définitivement vos données. OVHcloud ne pourra être tenu responsable de leur détérioration ou de leur perte. Avant de faire quoi que ce soit, pensez donc à bien sauvegarder vos informations. 
 >
 
-**Découvrez comment augmenter votre espace de stockage après un upgrade de votre VPS.**
+**Ce guide vous explique comment augmenter votre espace de stockage après une mise à niveau de disque.**
 
 ## Prérequis
 
-- Avoir un accès administrateur au VPS (Windows).
-- Avoir redémarré le serveur en [mode rescue](/pages/bare_metal_cloud/virtual_private_servers/rescue) (Linux).
+- Avoir un accès administrateur au VPS ([Windows](#windows)).
+- Avoir redémarré le serveur en [mode rescue](/pages/bare_metal_cloud/virtual_private_servers/rescue) (Linux uniquement).
 
 ## En pratique
 
-Suite à un upgrade, la mémoire vive (RAM) et le processeur (CPU) seront automatiquement ajustés. Cela ne sera pas nécessairement le cas pour l’espace de stockage.
+Après une mise à niveau de la mémoire (RAM) ou du processeur (vCores), ces ressources de votre VPS sont automatiquement ajustées. L'espace disque utilisable n'est cependant pas automatiquement augmenté lors de l'upgrade de stockage de votre VPS.
 
 ### Linux
 
 #### Sauvegarder vos données
 
-La tentative d’étendre une partition peut entraîner une perte de données. Par conséquent, **nous vous recommandons vivement** de sauvegarder les informations de votre VPS.
+La tentative d’étendre une partition peut entraîner une perte de données. Il est donc **fortement recommandé** de faire une sauvegarde des données de votre VPS.
 
-#### Démonter la partition
+#### Activer le mode rescue et vérifier les partitions
 
-Sur les anciennes gammes de VPS, vos partitions seront automatiquement montées en mode rescue. Utilisez la commande suivante pour identifier l'emplacement de montage de votre partition :
+Si le VPS n'est pas encore en mode rescue, activez-le grâce à [notre guide](/pages/bare_metal_cloud/virtual_private_servers/rescue).
 
-```sh
+Vous pourrez ensuite vérifier la configuration des disques :
+
+```bash
 lsblk
 ```
 
-La partition correspondant au mode rescue sera celle montée dans le répertoire `/`, qui est en réalité la racine du système. En revanche, la partition de votre VPS sera probablement placée dans un répertoire associé à « /mnt ».
+La partition correspondant au mode rescue (`sda1` dans cet exemple) est montée dans le répertoire `/` et le disque du VPS est nommé `sdb` et ne doit avoir aucun point de montage.
 
-Cependant, si votre VPS appartient à la gamme actuelle, la partition ne sera pas automatiquement montée. Si la colonne MOUNTPOINT du résultat le confirme, vous pouvez alors ignorer l'étape de démontage.
+Par exemple :
 
-```sh
+```console
 NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
 sda 254:0 0 10G 0 disk
 └─sda1 254:1 0 10G 0 part /
 sdb 254:16 0 25G 0 disk
+└─sdb1 254:17 0 25G 0 part
+```
+
+Si votre résultat ressemble à la sortie ci-dessus et que la colonne `MOUNTPOINT` est vide dans la ligne correspondante, vous pouvez passer à [l'étape suivante](#checkfs).
+
+Cependant, si votre résultat montre qu'il y a un point de montage pour la partition VPS, elle doit d'abord être démontée.
+
+Par exemple :
+
+```console
+sdb 254:16 0 25G 0 disk
 └─sdb1 254:17 0 25G 0 part /mnt/sdb1
 ```
 
-Pour redimensionner la partition, vous devez la démonter. Pour démonter votre partition, utilisez la commande suivante :
+Dans l'exemple de sortie ci-dessus, la partition `sdb1` est montée à `/mnt/`. Pour redimensionner la partition, celle-ci ne doit pas être montée.
 
-```sh
+Pour démonter votre partition, utilisez la commande suivante :
+
+```bash
+umount /dev/partition_name
+```
+
+Dans cet exemple de configuration, la commande serait :
+
+```bash
 umount /dev/sdb1
 ```
 
-#### Vérifier le système de fichiers
+#### Vérifier le système de fichiers <a name="checkfs"></a>
 
-Une fois la partition démontée, il convient de vérifier le système de fichiers (`filesystem check`) pour s’assurer de l’absence d’erreurs. La commande est la suivante :
+Avant de continuer, il est recommandé de vérifier le système de fichiers (`filesystem check`) pour voir s'il y a des erreurs dans la partition. La commande est la suivante :
 
 ```sh
 e2fsck -yf /dev/sdb1
- 
+```
+
+```console
 e2fsck 1.42.9 (4-Feb-2014)
 Pass 1: Checking inodes, blocks, and sizes
 Pass 2: Checking directory structure
@@ -95,7 +118,7 @@ fdisk -u /dev/sdb
 
 Avant de supprimer l'ancienne partition, il est recommandé de noter le numéro correspondant au premier secteur de la partition. Vous pouvez obtenir cette information avec la commande `p`{.action}. Elle est indiquée sous le champ `Start`. Conservez cette donnée pour plus tard.
 
-```sh
+```console
 Command (m for help): p
  
 Disk /dev/sdb: 21.5 GB, 21474836480 bytes
@@ -116,7 +139,7 @@ Device Boot Start End Blocks Id System
 
 Supprimez alors la partition avec la commande `d`{.action}.
 
-```sh
+```console
 Command (m for help): d
 Selected partition 1
 ```
@@ -127,7 +150,7 @@ L’unique partition sera automatiquement effacée.
 
 Vous devez maintenant créer une nouvelle partition avec la commande `n`{.action}. Nous vous recommandons d'utiliser les valeurs par défaut.
 
-```sh
+```console
 Command (m for help): n
 Partition type:
 p primary (0 primary, 0 extended, 4 free)
@@ -144,7 +167,7 @@ Dans la ligne `First sector`, assurez-vous que la valeur par défaut est la mêm
 
 Vous devez maintenant vous assurer que la partition est amorçable (<i>bootable</i>). Pour ce faire, utilisez la commande `a`{.action} :
 
-```sh
+```console
 Command (m for help): a
  
 Partition number (1-4): 1
@@ -152,7 +175,7 @@ Partition number (1-4): 1
 
 Enregistrez vos changements et quittez l’application avec la commande `w`{.action} :
 
-```sh
+```console
 Command (m for help): w
  
 The partition table has been altered!
@@ -167,7 +190,9 @@ La partition a été étendue, mais son système de fichiers (<i>filesystem</i>)
 
 ```sh
 resize2fs /dev/sdb1
- 
+```
+
+```console
 resize2fs 1.42.9 (4-Feb-2014)
 Resizing the filesystem on /dev/sdb1 to 5242624 (4k) blocks.
 The filesystem on /dev/sdb1 is now 5242624 blocks long.
@@ -182,7 +207,9 @@ mount /dev/sdb1 /mnt
 ```
 ```sh
 df -h
- 
+```
+
+```console
 Filesystem Size Used Avail Use% Mounted on
 /dev/sda1 991M 793M 132M 86% /
 none 4.0K 0 4.0K 0% /sys/fs/cgroup
@@ -202,7 +229,9 @@ Si la commande `e2fsck`{.action} renvoie le message d'erreur `bad magic number i
 
 ```sh
 dumpe2fs /dev/sdb1 | grep superblock
- 
+```
+
+```console
 Primary superblock at 0, Group descriptors at 1-6
 Backup superblock at 32768, Group descriptors at 32769-32774
 Backup superblock at 98304, Group descriptors at 98305-98310
@@ -226,7 +255,7 @@ Utilisez enfin le premier superblock de sauvegarde, afin de vérifier et répare
 fsck -b 32768 /dev/sdb1
 ```
 
-### Windows
+### Windows <a name="windows"></a>
 
 #### Accéder à File and Storage Services
 

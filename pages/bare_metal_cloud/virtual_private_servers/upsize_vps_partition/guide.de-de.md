@@ -1,66 +1,96 @@
 ---
-title: 'VPS-Partitionierung nach einem Upgrade'
-excerpt: Erfahren Sie hier, wie Sie Ihren Speicherplatz nach einem Upgrade vergrößern
-updated: 2021-05-18
+title: VPS-Partitionierung nach einem Storage-Upgrade
+excerpt: Erfahren Sie hier, wie Sie den verwendbaren Speicherplatz nach einem Upgrade vergrößern
+updated: 2023-09-05
 ---
+
+> [!primary]
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
+>
+
 
 ## Ziel
 
-Nach einem Upgrade Ihres Virtual Private Server (VPS) kann eine erneute Partitionierung Ihres Speicherplatzes erforderlich sein. Im Folgenden wird die Vorgehensweise hierzu beschrieben.
+Nach einem Upgrade der Storage-Kapazität Ihres VPS ist eine Neupartitionierung des Speicherplatzes erforderlich, um die gesamte Größe nutzen zu können. Im Folgenden wird die Vorgehensweise hierzu beschrieben.
 
 > [!warning]
 >
-> Die Partitionierung kann Ihre Daten dauerhaft beschädigen. OVHcloud übernimmt keine Haftung für Verlust oder Beschädigung Ihrer Daten. Vergessen Sie nicht, Ihre Daten zu speichern, bevor Sie die nächsten Schritte einleiten.
+> Eine Neupartitionierung kann Ihre Daten dauerhaft beschädigen. OVHcloud übernimmt keine Haftung für Verlust oder Beschädigung Ihrer Daten. Vergessen Sie nicht, Ihre Daten zu sichern, bevor Sie die nächsten Schritte einleiten.
 >
 
 ## Voraussetzungen
 
-- Sie haben administrativen Zugriff auf Ihren VPS (nur für Windows-Systeme). 
-- Der Server wurde im [Rescue-Modus](/pages/bare_metal_cloud/virtual_private_servers/rescue) neu gestartet (nur für GNU/Linux-Systeme).
+- Sie haben administrativen Zugriff auf Ihren VPS (für [Windows-Systeme](#windows)).
+- Der Server wurde im [Rescue-Modus](/pages/bare_metal_cloud/virtual_private_servers/rescue) neu gestartet (nur für GNU/Linux-Systeme notwendig).
 
-## Beschreibung
+## In der praktischen Anwendung
 
-Nach einem Upgrade werden RAM und Prozessor (CPU) automatisch angepasst. Für den Speicherplatz erfolgt dagegen keine systematische Anpassung.
+Nach einer Erweiterung von RAM oder Prozessor (vCores) werden diese Ressourcen Ihres VPS automatisch angepasst. Der verwendbare Speicherplatz hingegen wird bei einem Upgrade nicht automatisch vergrößert.
 
-**In dieser Anleitung wird Ihnen Schritt für Schritt erklärt, wie Sie Ihren Speicherplatz vergrößern**.
+**Diese Anleitung erklärt, wie Sie Ihren Speicherplatz nach einem Disk-Upgrade erweitern.**
 
-### Sichern Ihrer Daten
+### Linux
+
+#### Sichern Ihrer Daten
 
 Da eine Partitionierung zum Verlust von Daten führen kann, wird **dringend empfohlen**, vorab die Daten, die sich auf Ihrem VPS befinden, zu sichern.
 
-### Aushängen der Partition
+#### Rescue-Modus aktivieren und Disk überprüfen
 
-Bei den älteren VPS Reihen werden Ihre Partitionen im Rescue-Modus automatisch erstellt. Sie können den folgenden Befehl verwenden, um festzustellen, wo Ihre Partition eingehängt ist:
+Wenn sich der VPS noch nicht im Rescue-Modus befindet, aktivieren Sie ihn mithilfe von [unserer Anleitung](/pages/bare_metal_cloud/virtual_private_servers/rescue).
 
-```sh
+Anschließend können Sie die verfügbaren Disks und ihre Größe mit diesem Befehl überprüfen:
+
+```bash
 lsblk
 ```
 
-Die dem Rescue-Modus entsprechende Partition ist die Partition, die im Verzeichnis `/` Verzeichnis gespeichert ist, was in Wirklichkeit das Rootverzeichnis des Systems ist. Die Partition Ihres VPS wird wahrscheinlich in einem mit "/mnt" verbundenen Verzeichnis platziert.
+Die Partition für den Rescue-Modus (`sda1` in diesem Beispiel) ist im Verzeichnis `/` gemountet, und die Disk des VPS (hier: `sdb`) sollte keinen Mountpunkt haben.
 
-Wenn Ihr VPS jedoch zur aktuellen Reihe gehört, wird die Partition nicht automatisch gemountet. Wenn die Spalte MOUNTPOINT des Ergebnisses dies bestätigt, können Sie das Aushängen der Partition ("unmount") überspringen.
+Beispiel:
 
-```sh
+```console
 NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
 sda 254:0 0 10G 0 disk
 └─sda1 254:1 0 10G 0 part /
 sdb 254:16 0 25G 0 disk
+└─sdb1 254:17 0 25G 0 part
+```
+
+Wenn Ihr Ergebnis ähnlich aussieht wie die Ausgabe oben und die Spalte `MOUNTPOINT` in der entsprechenden Zeile leer ist, können Sie mit dem [nächsten Schritt](#checkfs) fortfahren.
+
+Wenn Ihr Ergebnis jedoch zeigt, dass es einen Mountpunkt für die VPS-Partition gibt, muss sie zuerst ausgehängt werden (*unmount*).
+
+Beispiel:
+
+```console
+sdb 254:16 0 25G 0 disk
 └─sdb1 254:17 0 25G 0 part /mnt/sdb1
 ```
 
-Um die Größe der Partition zu ändern, muss sie erst ausgehängt werden. Um Ihre Partition auszuhängen, verwenden Sie den folgenden Befehl:
+Im obigen Beispiel ist die Partition `sdb1` unter `/mnt/` gemountet. Damit die Größe der Partition geändert werden kann, darf diese Partition nicht gemountet sein.
 
-```sh
+Um die Partition auszuhängen, verwenden Sie den folgenden Befehl:
+
+```bash
+umount /dev/partition_name
+```
+
+In dieser Beispielkonfiguration wäre der Befehl:
+
+```bash
 umount /dev/sdb1
 ```
 
 ### Überprüfung des Dateisystems
 
-Nachdem die Partition ausgehängt ist, sollte das Dateisystem auf mögliche Fehler in der Partition überprüft werden (`filesystem check`). Der Befehl lautet wie folgt:
+Bevor Sie fortfahren sollte das Dateisystem auf mögliche Fehler in der Partition überprüft werden (`filesystem check`). Der Befehl lautet wie folgt:
 
 ```sh
 e2fsck -yf /dev/sdb1
- 
+```
+
+```console
 e2fsck 1.42.9 (4-Feb-2014)
 Pass 1: Checking inodes, blocks, and sizes
 Pass 2: Checking directory structure
@@ -95,7 +125,7 @@ fdisk -u /dev/sdb
 
 Es wird empfohlen, vor dem Löschen der vorherigen Partition die dem ersten Sektor entsprechende Zahl der Partition aufzubewahren. Diese Information erhalten Sie über den Befehl `p`{.action}. Sie steht unter dem Feld `Start`. Bewahren Sie diese Angabe für später auf.
 
-```sh
+```console
 Command (m for help): p
  
 Disk /dev/sdb: 21.5 GB, 21474836480 bytes
@@ -116,7 +146,7 @@ Device Boot Start End Blocks Id System
 
 Löschen Sie anschließend die Partition mit dem Befehl `d`{.action}.
 
-```sh
+```console
 Command (m for help): d
 Selected partition 1
 ```
@@ -127,7 +157,7 @@ Die einzige Partition wird automatisch gelöscht.
 
 Jetzt muss über den Befehl `n`{.action} eine neue Partition erstellt werden. Die Verwendung von Standardwerten wird empfohlen.
 
-```sh
+```console
 Command (m for help): n
 Partition type:
 p primary (0 primary, 0 extended, 4 free)
@@ -144,7 +174,7 @@ Vergewissern Sie sich, dass der Standardwert in der Zeile `First sector` mit dem
 
 Jetzt muss sichergestellt werden, dass die Partition bootfähig ist. Das ist über den Befehl `a`{.action} möglich.
 
-```sh
+```console
 Command (m for help): a
  
 Partition number (1-4): 1
@@ -152,7 +182,7 @@ Partition number (1-4): 1
 
 Speichern Sie Ihre Änderungen und verlassen Sie die Anwendung über den Befehl `w`{.action}:
 
-```sh
+```console
 Command (m for help): w
  
 The partition table has been altered!
@@ -167,7 +197,9 @@ Die Partition wurde erweitert, das Dateisystem belegt allerdings immer noch so v
 
 ```sh
 resize2fs /dev/sdb1
- 
+```
+
+```console
 resize2fs 1.42.9 (4-Feb-2014)
 Resizing the filesystem on /dev/sdb1 to 5242624 (4k) blocks.
 The filesystem on /dev/sdb1 is now 5242624 blocks long.
@@ -183,7 +215,9 @@ mount /dev/sdb1 /mnt
 
 ```sh
 df -h
- 
+```
+
+```console
 Filesystem Size Used Avail Use% Mounted on
 /dev/sda1 991M 793M 132M 86% /
 none 4.0K 0 4.0K 0% /sys/fs/cgroup
@@ -203,7 +237,9 @@ Wenn nach Eingabe des Befehls `e2fsck`{.action} die Fehlermeldung `bad magic num
 
 ```sh
 dumpe2fs /dev/sdb1 | grep superblock
- 
+```
+
+```console
 Primary superblock at 0, Group descriptors at 1-6
 Backup superblock at 32768, Group descriptors at 32769-32774
 Backup superblock at 98304, Group descriptors at 98305-98310
@@ -227,7 +263,7 @@ Verwenden Sie zum Überprüfen und Reparieren des Dateisystems den ersten Backup
 fsck -b 32768 /dev/sdb1
 ```
 
-### Windows
+### Windows <a name="windows"></a>
 
 #### Zugang zu File and Storage Services
 

@@ -1,6 +1,6 @@
 ---
 title: 'Zmiana rozmiaru partycji na serwerze VPS po zmianie oferty'
-updated: 2021-05-18
+updated: 2023-09-05
 ---
 
 > [!primary]
@@ -43,7 +43,7 @@ Partycja odpowiadająca trybowi Rescue to ta zamontowana w katalogu `/`, który 
 
 Jeśli jednak Twój VPS należy do aktualnej gamy, partycja nie zostanie automatycznie zamontowana. Jeśli potwierdzi to kolumna MOUNTPOINT, możesz pominąć etap demontażu.
 
-```sh
+```console
 NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
 sda 254:0 0 10G 0 disk
 └─sda1 254:1 0 10G 0 part /
@@ -63,7 +63,9 @@ Po odmontowaniu partycji należy sprawdzić system plików za pomocą `filesyste
 
 ```sh
 e2fsck -yf /dev/sdb1
- 
+```
+
+```console
 e2fsck 1.42.9 (4-Feb-2014)
 Pass 1: Checking inodes, blocks, and sizes
 Pass 2: Checking directory structure
@@ -98,7 +100,7 @@ fdisk -u /dev/sdb
 
 Przed skasowaniem starej partycji zaleca się zanotowanie wartości liczbowej odpowiadającej pierwszemu sektorowi partycji. Informację tę można uzyskać za pomocą polecenia `p`{.action}. Znajduje się ona w polu `Start`. Zachowaj tę wartość na później.
 
-```sh
+```console
 Command (m for help): p
  
 Disk /dev/sdb: 21.5 GB, 21474836480 bytes
@@ -119,7 +121,7 @@ Device Boot Start End Blocks Id System
 
 Następnie skasuj partycję za pomocą polecenia `d`{.action}.
 
-```sh
+```console
 Command (m for help): d
 Selected partition 1
 ```
@@ -130,7 +132,7 @@ Jedyna partycja zostanie automatycznie skasowana.
 
 Teraz należy utworzyć nową partycję za pomocą polecenia `n`{.action}. Zaleca się użycie wartości domyślnych.
 
-```sh
+```console
 Command (m for help): n
 Partition type:
 p primary (0 primary, 0 extended, 4 free)
@@ -147,7 +149,7 @@ Musisz upewnić się, że wartość domyślna w wierszu `First sector` jest taka
 
 Teraz należy upewnić się, że partycja jest bootowalna. Możesz to zrobić za pomocą polecenia `a`{.action}.
 
-```sh
+```console
 Command (m for help): a
  
 Partition number (1-4): 1
@@ -155,7 +157,7 @@ Partition number (1-4): 1
 
 Zapisz zmiany i wyjdź z aplikacji za pomocą polecenia `w`{.action} :
 
-```sh
+```console
 Command (m for help): w
  
 The partition table has been altered!
@@ -170,7 +172,9 @@ Partycja została rozszerzona, ale jej system plików (filesystem) zajmuje wcią
 
 ```sh
 resize2fs /dev/sdb1
- 
+```
+
+```console
 resize2fs 1.42.9 (4-Feb-2014)
 Resizing the filesystem on /dev/sdb1 to 5242624 (4k) blocks.
 The filesystem on /dev/sdb1 is now 5242624 blocks long.
@@ -186,7 +190,9 @@ mount /dev/sdb1 /mnt
 
 ```sh
 df -h
- 
+```
+
+```console
 Filesystem Size Used Avail Use% Mounted on
 /dev/sda1 991M 793M 132M 86% /
 none 4.0K 0 4.0K 0% /sys/fs/cgroup
@@ -206,7 +212,9 @@ Jeśli polecenie `e2fsck`{.action} zwraca komunikat błędu `bad magic number in
 
 ```sh
 dumpe2fs /dev/sdb1 | grep superblock
- 
+```
+
+```console
 Primary superblock at 0, Group descriptors at 1-6
 Backup superblock at 32768, Group descriptors at 32769-32774
 Backup superblock at 98304, Group descriptors at 98305-98310
