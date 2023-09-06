@@ -16,7 +16,7 @@ Na serwerach współdzielonych możesz zmienić następujące parametry hostingu
 - [środowisko uruchomieniowe](#runtime-environment)
 - [wersja PHP](#php-versions)
 - [Silnik PHP](#php-runtime)
-- [Firewall aplikacyjny](#Firewall)
+- [Firewall aplikacyjny](#firewall)
 - [tryb wykonania](#runtime-mod)
 
 Te ustawienia konfiguracji można zmienić na dwa sposoby:
@@ -118,7 +118,7 @@ OVHcloud zapewnia instalację najnowszych wersji PHP na swoich serwerach, jednak
 
 W razie potrzeby sprawdź wersję PHP aktualnie używaną przez Twój hosting na dwa sposoby:
 
-- **W Panelu klienta OVHcloud**. Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i przejdź do sekcji `Web Cloud`{.action}. W lewej kolumnie kliknij `Hosting`{.action}, następnie wybierz odpowiedni hosting. W zakładce 'Informacje ogólne`{.action} znajdź wersję poniżej *Ogólna wersja PHP*. 
+- **W Panelu klienta OVHcloud**. Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i przejdź do sekcji `Web Cloud`{.action}. W lewej kolumnie kliknij `Hosting`{.action}, następnie wybierz odpowiedni hosting. W zakładce `Informacje ogólne`{.action} znajdź wersję poniżej *Ogólna wersja PHP*. 
 
 ![phpversion](images/change-php-version-step1.png){.thumbnail}
 
@@ -151,7 +151,7 @@ Wybór silnika *php* pozwala aktywować lub dezaktywować akcelerator PHP ("PHP-
 
 Dzieje się tak, ponieważ silnik *phpcgi* wykonuje zapytania "szeregowo", w przeciwieństwie do silnika *php* ("PHP-FPM"), który wykonuje je "równolegle".
 
-W porównaniu do silnika, akcelerator PHP ("PHP-FPM") pozwala zwiększyć wydajność do siedmiu razy. 
+Dla porównania, akcelerator PHP ("PHP-FPM") oferuje nawet siedmiokrotny wzrost wydajności w porównaniu do silnika *phpcgi*.
 
 #### 1.4 - Zapora aplikacyjna <a name="firewall"></a>
 
@@ -169,7 +169,7 @@ Więcej szczegółów na ten temat można znaleźć w przewodniku "[Aktywacja za
 
 Tryby wykonywania umożliwiają zarządzanie pamięcią podręczną plików statycznych Twojej strony WWW (np. obrazów), jak również przetwarzanie błędów PHP (przydatne, gdy strona WWW wyświetla na przykład pustą stronę). 
 
-Dostępne są **2** tryby, które możesz aktywować: *Produkcja* i *Rozwój*.
+Dostępne są **2** tryby, które możesz aktywować: *Production* i *Development*.
 
 |Tryb|Pamięć podręczna plików statycznych|Przetwarzanie błędów PHP|
 |---|---|---| 
@@ -187,13 +187,12 @@ Teraz już znasz różne modyfikowalne ustawienia Twojego hostingu WWW OVHcloud,
 
 > [!warning]
 >
-> Przypominamy, że zmiana co najmniej jednego z tych elementów może mieć wpływ na wyświetlanie lub prawidłowe działanie Twojej strony WWW. **Upewnij się wcześniej, czy Twoja strona WWW jest zgodna ze zmianami, które chcesz wprowadzić w konfiguracji Twojego hostingu.** W przypadku wątpliwości lub trudności skontaktuj się z [wyspecjalizowanym dostawcą](https://partner.ovhcloud.com/fr/directory/).
+> Przypominamy, że zmiana co najmniej jednego z tych elementów może mieć wpływ na wyświetlanie lub prawidłowe działanie Twojej strony WWW. **Upewnij się wcześniej, czy Twoja strona WWW jest zgodna ze zmianami, które chcesz wprowadzić w konfiguracji Twojego hostingu.** W przypadku wątpliwości lub trudności skontaktuj się z [wyspecjalizowanym dostawcą](https://partner.ovhcloud.com/pl/directory/).
 >
 
 #### 2.1 - Dostęp do interfejsu zarządzania konfiguracją hostingu WWW
 
-Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i przejdź do sekcji `Web Cloud`{.action}. W lewej kolumnie kliknij `Hosting`{.action}, następnie wybierz odpowiedni hosting. Następnie przejdź do zakładki
-`Informacje ogólne`{.action}. Z prawej strony wzmianki `Ogólna wersja PHP`{.action} znajdującej się prawie na środku strony, kliknij przycisk`...`{.action}, a następnie `Zmień konfigurację`{.action}.
+Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i przejdź do sekcji `Web Cloud`{.action}. W lewej kolumnie kliknij `Hosting`{.action}, następnie wybierz odpowiedni hosting. Następnie przejdź do zakładki `Informacje ogólne`{.action}. Z prawej strony wzmianki `Ogólna wersja PHP`{.action} znajdującej się prawie na środku strony, kliknij przycisk `...`{.action}, a następnie `Zmień konfigurację`{.action}.
 
 ![HostingConfiguration](images/change-hosting-configuration-step1.png){.thumbnail}
 
@@ -273,7 +272,7 @@ Personnalisez les valeurs des variables selon la configuration que vous souhaite
 |app.engine.version|Permet de définir [la version de PHP](#php-versions) utilisée par l'hébergement parmi [celles qu'OVHcloud propose](https://www.ovhcloud.com/fr/web-hosting/uc-programming-language/){.external}. Renseignez la version de votre choix (en adéquation avec l'environnement d'exécution que vous avez choisi d'utiliser).|
 |http.firewall|Permet d'activer ou de désactiver le [firewall fourni avec les hébergements web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/options/){.external}. Renseignez **security** pour l'activer ou **none** pour le désactiver.|
 |environment|Permet de gérer le comportement du cache des fichiers statiques de votre site web ainsi que le traitement des erreurs PHP. Cela correspond au [mode d'exécution](#runtime-mod). Renseignez **production** pour maximiser la mise en cache et masquer les erreurs PHP ou **development** pour qu'aucun cache ne soit appliqué et que les erreurs PHP s'affichent.|
-|container.image|Permet de modifier [l'environnement d'exécution](#runtime-evironment) utilisé par l'hébergement. Renseignez l'environnement d'exécution (**legacy**,**stable** ou **stable64**) de votre choix. Si vous choisissez l'environnement d'éxecution **stable64**, vérifiez que votre site est compatible avec l'architecture 64 bits.|
+|container.image|Permet de modifier [l'environnement d'exécution](#runtime-environment) utilisé par l'hébergement. Renseignez l'environnement d'exécution (**legacy**,**stable** ou **stable64**) de votre choix. Si vous choisissez l'environnement d'éxecution **stable64**, vérifiez que votre site est compatible avec l'architecture 64 bits.|
 
 Si besoin, retournez à la première partie « [Description des paramètres de configuration disponibles sur les hébergements web OVHcloud](#all-parameters) » de ce guide.
 

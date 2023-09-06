@@ -1,11 +1,11 @@
 ---
-title: "Web hosting - Entorno, versión PHP, «.ovhconfig»"
-excerpt: "Descubra cómo cambiar el entorno de ejecución, la versión PHP, el firewall de aplicaciones, el motor, el modo y el «.ovhconfig» de un alojamiento web"
+title: "Web hosting - Entorno, versión PHP, ".ovhconfig""
+excerpt: "Descubra cómo cambiar el entorno de ejecución, la versión PHP, el firewall de aplicaciones, el motor, el modo y el ".ovhconfig" de un alojamiento web"
 updated: 2023-09-05
 ---
 
 > [!primary]
-> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón "Contribuir" de esta página.
 >
 
 ## Objetivo
@@ -13,34 +13,34 @@ updated: 2023-09-05
 Los planes de [hosting de OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/){.external} permiten alojar el sitio web que usted quiera, siempre que sea compatible con la [configuración de nuestras infraestructuras compartidas](https://webhosting-infos.hosting.ovh.net){.external}.
 No obstante, en nuestras infraestructuras compartidas, puede modificar los siguientes parámetros para su alojamiento web:
 
-- [el entorno de ejecución](#runtime-evironment)
-- [la versión de PHP](#php-versions)
-- [el motor de ejecución PHP](#php-runtime)
-- [firewall de aplicación](#firewall)
-- [modo de ejecución](#runtime-mod)
+- [El entorno de ejecución](#runtime-environment)
+- [La versión de PHP](#php-versions)
+- [El motor de ejecución PHP](#php-runtime)
+- [El firewall de aplicación](#firewall)
+- [El modo de ejecución](#runtime-mod)
 
 Estas opciones de configuración se pueden modificar de dos formas:
 
-- desde su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es);
-- desde el espacio de almacenamiento FTP de su alojamiento web de OVHcloud mediante un archivo denominado «.ovhconfig».
+- desde su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) ;
+- desde el espacio de almacenamiento FTP de su alojamiento web de OVHcloud mediante un archivo denominado ".ovhconfig".
 
 > [!primary]
 >
-> Los archivos «.ovhconfig» son archivos de configuración del servidor y son reconocidos automáticamente como tales por la infraestructura de alojamiento compartido.
-> Están presentes nativa y por defecto en la «raíz FTP» del espacio de almacenamiento FTP de su alojamiento web.
+> Los archivos ".ovhconfig" son archivos de configuración del servidor y son reconocidos automáticamente como tales por la infraestructura de alojamiento compartido.
+> Están presentes nativa y por defecto en la "raíz FTP" del espacio de almacenamiento FTP de su alojamiento web.
 > Contienen los valores de los elementos mencionados arriba.
 >
 
-En resumen, modificar la configuración de un alojamiento web desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) o modificar los valores presentes en el archivo «.ovhconfig» equivale a realizar la misma operación.
+En resumen, modificar la configuración de un alojamiento web desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) o modificar los valores presentes en el archivo ".ovhconfig" equivale a realizar la misma operación.
 
 ### Sumario
 
 - [1 - Descripción de los parámetros de configuración disponibles en los alojamientos web de OVHcloud](#all-parameters)
 - [2 - Método 1: Modificar la configuración del alojamiento web desde el área de cliente de OVHcloud](#setting-ovh-manager)
-- [3 - Método 2: Modificar la configuración del alojamiento web desde el archivo «.ovhconfig»](#setting-ovhconfig)
-- [4 - Uso avanzado de los archivos «.ovhconfig»](#ovhconfig-more)
+- [3 - Método 2: Modificar la configuración del alojamiento web desde el archivo ".ovhconfig"](#setting-ovhconfig)
+- [4 - Uso avanzado de los archivos ".ovhconfig"](#ovhconfig-more)
 
-**Descubra cómo modificar el entorno de ejecución, la versión PHP, el firewall de aplicaciones, el motor, el modo y el archivo «.ovhconfig» de un alojamiento web.**
+**Descubra cómo modificar el entorno de ejecución, la versión PHP, el firewall de aplicaciones, el motor, el modo y el archivo ".ovhconfig" de un alojamiento web.**
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/X31MNMLw064" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -60,7 +60,7 @@ A continuación ofrecemos una descripción técnica de cada uno de los parámetr
 > Cambiar al menos uno de estos elementos puede afectar a la visualización o al buen funcionamiento del sitio web. **Asegúrese previamente de que su sitio web es compatible con los cambios que desea realizar en la configuración de su alojamiento web**. En caso de duda o de dificultad, puede ponerse en contacto con un [proveedor especializado](https://partner.ovhcloud.com/es-es/directory/).
 >
 
-#### 1.1 - Entornos de ejecución <a name="runtime-evironment"></a>
+#### 1.1 - Entornos de ejecución <a name="runtime-environment"></a>
 
 Los entornos de ejecución contienen un conjunto de lenguajes de programación. En función del entorno de ejecución elegido, los lenguajes están disponibles en versiones más o menos avanzadas. El objetivo de estos entornos es permitirle ejecutar correctamente los archivos que componen su sitio web, en función de sus necesidades técnicas.
 
@@ -74,7 +74,7 @@ Consulte a continuación los elementos contenidos en nuestros distintos entornos
 |OpenSSL|1.0.1t|1.0.1t|1.1.1n|
 |Python|2.7 y 3.4|2.7 y 3.7|2.7 y 3.7|
 |Ruby|2.1|2.1|2.5|
-|Guías|4.1|4.1|5.2|
+|Rails|4.1|4.1|5.2|
 |Perl|5.20|5.20|5.28|
 |git|2.1|2.1|2.20|
 
@@ -89,7 +89,7 @@ PHP es un lenguaje de programación dinámico utilizado para crear sitios web. P
 
 Existen varias versiones del lenguaje de programación PHP. Las actualizaciones de versión ofrecen diversos parches, así como la adición o interrupción de funcionalidades. OVHcloud ofrece las últimas versiones mayores de PHP, que puede consultar [aquí](https://www.ovhcloud.com/es-es/web-hosting/uc-programming-language/).
 
-Algunas versiones de PHP solo funcionan en determinados entornos de ejecución. A continuación se indican las versiones de PHP disponibles en los alojamientos compartidos de OVHcloud y [los entornos de ejecución](#runtime-evironment) compatibles:
+Algunas versiones de PHP solo funcionan en determinados entornos de ejecución. A continuación se indican las versiones de PHP disponibles en los alojamientos compartidos de OVHcloud y [los entornos de ejecución](#runtime-environment) compatibles:
 
 |Versiones PHP|Entornos de ejecución compatibles|
 |---|---|
@@ -136,29 +136,29 @@ A continuación, póngalo en línea en su [espacio de almacenamiento FTP](/pages
 
 > [!warning]
 >
-> La modificación de la versión de PHP mediante un archivo «.htaccess» ya no es posible en los últimos [planes de hosting de OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/).<br>
-> El comando que permite cambiar la versión de PHP en el archivo «.htaccess» tampoco permite utilizar las versiones recientes de PHP en nuestras infraestructuras.
-> Es obligatorio utilizar el archivo «.ovhconfig».
+> La modificación de la versión de PHP mediante un archivo ".htaccess" ya no es posible en los últimos [planes de hosting de OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/).<br>
+> El comando que permite cambiar la versión de PHP en el archivo ".htaccess" tampoco permite utilizar las versiones recientes de PHP en nuestras infraestructuras.
+> Es obligatorio utilizar el archivo ".ovhconfig".
 >
 
 #### 1.3 - Los motores de ejecución PHP <a name="php-runtime"></a>
 
 Los motores de ejecución PHP son programas que permiten realizar acciones en el servidor web según un método determinado. Normalmente, esta configuración se modifica para afectar a la velocidad de ejecución de las peticiones generadas por los visitantes de su sitio web.
 
-En los planes de hosting de OVHcloud ofrecemos **2** motores de ejecución PHP: *php* («PHP-FPM») y *phpcgi*.
+En los planes de hosting de OVHcloud ofrecemos **2** motores de ejecución PHP: *php* ("PHP-FPM") y *phpcgi*.
 
 La elección del motor *php* permite activar o desactivar el acelerador PHP (PHP-FPM). Este último ha sido adaptado a nuestra infraestructura para acelerar la velocidad de ejecución de los scripts PHP. 
 
-En efecto, el motor *phpcgi* ejecuta las peticiones «en serie», a diferencia del motor *php* («PHP-FPM»), que las ejecuta «en paralelo».
+En efecto, el motor *phpcgi* ejecuta las peticiones "en serie", a diferencia del motor *php* ("PHP-FPM"), que las ejecuta "en paralelo".
 
 En comparación, el acelerador PHP (PHP-FPM) ofrece un rendimiento hasta siete veces más rápido que el motor *phpcgi*. 
 
 #### 1.4 - Firewall de aplicaciones <a name="firewall"></a>
 
-Un cortafuegos es una seguridad que filtra las peticiones entrantes de su alojamiento web. En nuestros alojamientos web, esta opción de configuración funciona como una opción **activable** o **desactivable**.
+Un firewall es una seguridad que filtra las peticiones entrantes de su alojamiento web. En nuestros alojamientos web, esta opción de configuración funciona como una opción **activable** o **desactivable**.
 Esto se debe a que no podrá cambiar la configuración de filtrado del firewall en sí.
 
-Para más información, consulte nuestra guía «[Activación del firewall de aplicaciones](/pages/web_cloud/web_hosting/multisites_activating_application_firewall)».
+Para más información, consulte nuestra guía "[Activación del firewall de aplicaciones](/pages/web_cloud/web_hosting/multisites_activating_application_firewall)".
 
 > [!warning]
 >
@@ -203,7 +203,7 @@ Conéctese a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=
 >
 > Si la opción `Version PHP Global`{.action} no aparece en su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), compruebe que el archivo *.ovhconfig* existe en la raíz FTP de su alojamiento compartido de OVHcloud.
 >
-> Encontrará toda la información relativa al archivo *.ovhconfig* en la tercera parte «[Método 2: modificar la configuración del alojamiento web desde el archivo «.ovhconfig»](#setting-ovhconfig)» de esta guía.
+> Encontrará toda la información relativa al archivo *.ovhconfig* en la tercera parte "[Método 2: modificar la configuración del alojamiento web desde el archivo ".ovhconfig"](#setting-ovhconfig)" de esta guía.
 >
 
 #### 2.2 - Cambiar la configuración del alojamiento web
@@ -213,7 +213,7 @@ Se abrirá una ventana en la que podrá elegir entre dos opciones. Seleccione la
 |Elección|Detalle|
 |---|---|
 |`Volver a la configuración anterior`|Después de seleccionar esta opción, elija la configuración que desea restaurar junto a `Elección histórica`. Es posible que esta opción no esté disponible si no ha realizado ningún cambio anteriormente.|
-|`Modificar la configuración actual`|Después de seleccionar esta opción, elija los cambios que desea realizar en la configuración entre los campos disponibles. Si es necesario, vuelva a la primera parte «[Descripción de los parámetros de configuración disponibles en los alojamientos web de OVHcloud](#all-parameters)» de esta guía.|
+|`Modificar la configuración actual`|Después de seleccionar esta opción, elija los cambios que desea realizar en la configuración entre los campos disponibles. Si es necesario, vuelva a la primera parte "[Descripción de los parámetros de configuración disponibles en los alojamientos web de OVHcloud](#all-parameters)" de esta guía.|
 
 > [!primary]
 >
@@ -224,31 +224,31 @@ Cuando esté listo, haga clic en `Aceptar`{.action} para aplicar el cambio. Espe
 
 ![hostingconfiguration](images/change-hosting-configuration-step3.png){.thumbnail}
 
-### 3 - Método 2: modificar la configuración del alojamiento web desde el archivo «.ovhconfig» <a name="setting-ovhconfig"></a>
+### 3 - Método 2: modificar la configuración del alojamiento web desde el archivo ".ovhconfig" <a name="setting-ovhconfig"></a>
 
 #### 3.1 - Conectarse al espacio de almacenamiento FTP de su alojamiento web
 
 Localice su usuario FTP principal, su contraseña y la dirección del servidor FTP.
 Para ello, conéctese a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} y acceda a la sección `Web Cloud`{.action} de la columna izquierda. En la columna izquierda, haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. A continuación, abra la pestaña `FTP - SSH`{.action}. En ella encontrará la información necesaria para conectarse. 
 
-Para conocer la contraseña del usuario FTP, consulte las instrucciones de la guía «[Cambiar la contraseña de un usuario FTP](/pages/web_cloud/web_hosting/ftp_change_password)».
+Para conocer la contraseña del usuario FTP, consulte las instrucciones de la guía "[Cambiar la contraseña de un usuario FTP](/pages/web_cloud/web_hosting/ftp_change_password)".
 
 ![ovhconfig](images/ovhconfig-step1.png){.thumbnail}
 
-#### 3.2 - Obtener o crear el archivo «.ovhconfig»
+#### 3.2 - Obtener o crear el archivo ".ovhconfig"
 
-Una vez conectado a su [espacio de almacenamiento FTP](/pages/web_cloud/web_hosting/ftp_connection), podrá ver todos los archivos alojados actualmente en este último. En la raíz del alojamiento (representada por el símbolo de barra: «/»). Encontrará el archivo «.ovhconfig».
+Una vez conectado a su [espacio de almacenamiento FTP](/pages/web_cloud/web_hosting/ftp_connection), podrá ver todos los archivos alojados actualmente en este último. En la raíz del alojamiento (representada por el símbolo de barra: "/"). Encontrará el archivo ".ovhconfig".
 
 ![ovhconfig](images/ovhconfig-step2.png){.thumbnail}
 
 Existen dos posibilidades:
 
-- **El archivo «.ovhconfig» está presente** : Descárguelo en su propio ordenador o dispositivo. Haga una copia antes de modificarlo. Esta le permitirá restaurar el archivo original si es necesario.
-- **el archivo «.ovhconfig» no existe** : Puede crearlo en su propia máquina o dispositivo y asignarle el nombre «.ovhconfig».
+- **El archivo ".ovhconfig" está presente** : Descárguelo en su propio ordenador o dispositivo. Haga una copia antes de modificarlo. Esta le permitirá restaurar el archivo original si es necesario.
+- **el archivo ".ovhconfig" no existe** : Puede crearlo en su propia máquina o dispositivo y asignarle el nombre ".ovhconfig".
 
-#### 3.3 - Modificar el contenido del archivo «.ovhconfig» <a name="update-ovhconfig"></a>
+#### 3.3 - Modificar el contenido del archivo ".ovhconfig" <a name="update-ovhconfig"></a>
 
-Una vez que tenga el archivo «.ovhconfig», edítelo. Para ello, utilice un programa como un editor de texto. El archivo «.ovhconfig» debe contener un código similar al siguiente:
+Una vez que tenga el archivo ".ovhconfig", edítelo. Para ello, utilice un programa como un editor de texto. El archivo ".ovhconfig" debe contener un código similar al siguiente:
 
 ```php
 app.engine=php
@@ -262,7 +262,7 @@ container.image=stable64
 
 > [!success]
 >
-> Si acaba de crear el archivo «.ovhconfig», copie el código anterior en su archivo y continúe leyendo esta guía.
+> Si acaba de crear el archivo ".ovhconfig", copie el código anterior en su archivo y continúe leyendo esta guía.
 >
 
 Personalice los valores de las variables según la configuración que quiera utilizar con su alojamiento web.
@@ -273,11 +273,11 @@ Personalice los valores de las variables según la configuración que quiera uti
 |app.engine.version|Permite definir [la versión de PHP](#php-versions) utilizada por el alojamiento entre [las que ofrece OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/uc-programming-language/){.external}. Introduzca la versión que desee (en función del entorno de ejecución que haya elegido).|
 |http.firewall|Permite activar o desactivar el [firewall incluido con los alojamientos web de OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/options/){.external}. Introduzca **security** para activarlo o **none** para desactivarlo.|
 |environment|Permite gestionar el comportamiento de la caché de los archivos estáticos de su sitio web y el tratamiento de los errores PHP. Esto corresponde al [modo de ejecución](#runtime-mod). Introduzca **production** para maximizar el almacenamiento en caché y ocultar los errores PHP o **development** para que no se aplique ninguna caché y se muestren los errores PHP.|
-|container.image|Permite modificar [el entorno de ejecución](#runtime-evironment) utilizado por el alojamiento. Introduzca el entorno de ejecución (**legacy**,**stable** o **stable64**) que desee. Si elige el entorno de ejecución **stable64**, compruebe que su sitio web es compatible con la arquitectura de 64 bits.|
+|container.image|Permite modificar [el entorno de ejecución](#runtime-environment) utilizado por el alojamiento. Introduzca el entorno de ejecución (**legacy**,**stable** o **stable64**) que desee. Si elige el entorno de ejecución **stable64**, compruebe que su sitio web es compatible con la arquitectura de 64 bits.|
 
-Si lo necesita, vuelva a la sección «[Descripción de los parámetros de configuración disponibles en los alojamientos web de OVHcloud](#all-parameters)» de esta guía.
+Si lo necesita, vuelva a la sección "[Descripción de los parámetros de configuración disponibles en los alojamientos web de OVHcloud](#all-parameters)" de esta guía.
 
-En caso necesario, consulte a continuación la descripción técnica detallada del archivo «.ovhconfig»:
+En caso necesario, consulte a continuación la descripción técnica detallada del archivo ".ovhconfig":
 
 ```php
 ; ovhconfig
@@ -341,21 +341,21 @@ environment=production
 container.image=stable64
 ```
 
-#### 3.4 - Descargar el archivo «.ovhconfig» en el espacio de almacenamiento
+#### 3.4 - Descargar el archivo ".ovhconfig" en el espacio de almacenamiento
 
-Una vez modificado el archivo «.ovhconfig», cárguelo en su [espacio de almacenamiento FTP](/pages/web_cloud/web_hosting/ftp_connection). Para ello, vuelva a conectarse a su [espacio de almacenamiento FTP](/pages/web_cloud/web_hosting/ftp_connection) y sitúese en la raíz de su [espacio de almacenamiento FTP](/pages/web_cloud/web_hosting/ftp_connection) (representada por un símbolo de «/»). Cargue el archivo «.ovhconfig» que acaba de modificar en su [espacio de almacenamiento FTP](/pages/web_cloud/web_hosting/ftp_connection). Si el archivo ya existe, reemplácelo.
+Una vez modificado el archivo ".ovhconfig", cárguelo en su [espacio de almacenamiento FTP](/pages/web_cloud/web_hosting/ftp_connection). Para ello, vuelva a conectarse a su [espacio de almacenamiento FTP](/pages/web_cloud/web_hosting/ftp_connection) y sitúese en la raíz de su [espacio de almacenamiento FTP](/pages/web_cloud/web_hosting/ftp_connection) (representada por un símbolo de "/"). Cargue el archivo ".ovhconfig" que acaba de modificar en su [espacio de almacenamiento FTP](/pages/web_cloud/web_hosting/ftp_connection). Si el archivo ya existe, reemplácelo.
 
-### 4 - Uso avanzado de los archivos «.ovhconfig» <a name="ovhconfig-more"></a>
+### 4 - Uso avanzado de los archivos ".ovhconfig" <a name="ovhconfig-more"></a>
 
 Si utiliza su alojamiento web para alojar varios sitios web (en *multisites*), existen diversos motivos por los que podría tener que disfrutar de una versión de PHP diferente para algunos de sus *multisites*.
 
-Cree un archivo «.ovhconfig» que contenga la versión de PHP deseada para el o los *multisites* afectados. Si necesita ayuda para realizar las operaciones descritas en el apartado «[3.3 - Modificar el contenido del archivo «.ovhconfig»](#update-ovhconfig) de esta guía. Cuando descargue el archivo «.ovhconfig» en su [espacio de almacenamiento FTP](/pages/web_cloud/web_hosting/ftp_connection), hágalo en la carpeta raíz en la que se encuentren los archivos que componen el sitio web «*multisites*» en cuestión. Consulte la carpeta raíz de sus *multisites* desde su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) en la pestaña `Multisite`{.action} del alojamiento correspondiente.
+Cree un archivo ".ovhconfig" que contenga la versión de PHP deseada para el o los *multisites* afectados. Si necesita ayuda para realizar las operaciones descritas en el apartado "[3.3 - Modificar el contenido del archivo ".ovhconfig"](#update-ovhconfig) de esta guía. Cuando descargue el archivo ".ovhconfig" en su [espacio de almacenamiento FTP](/pages/web_cloud/web_hosting/ftp_connection), hágalo en la carpeta raíz en la que se encuentren los archivos que componen el sitio web "*multisites*" en cuestión. Consulte la carpeta raíz de sus *multisites* desde su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) en la pestaña `Multisite`{.action} del alojamiento correspondiente.
 
-Si lo necesita, consulte nuestra guía «[Configurar un multisitio en un alojamiento web](/pages/web_cloud/web_hosting/multisites_configure_multisite)».
+Si lo necesita, consulte nuestra guía "[Configurar un multisitio en un alojamiento web](/pages/web_cloud/web_hosting/multisites_configure_multisite)".
 
 > [!warning]
 >
-> **No es posible especificar un segundo [entorno de ejecución](#runtime-evironment), un segundo [modo de ejecución](#runtime-mod) ni un segundo [motor de ejecución PHP](#php-runtime)** en un mismo alojamiento web. Solo se tendrán en cuenta los datos introducidos en el archivo «.ovhconfig» que se encuentra en la raíz de su [espacio de almacenamiento FTP](/pages/web_cloud/web_hosting/ftp_connection).
+> **No es posible especificar un segundo [entorno de ejecución](#runtime-environment), un segundo [modo de ejecución](#runtime-mod) ni un segundo [motor de ejecución PHP](#php-runtime)** en un mismo alojamiento web. Solo se tendrán en cuenta los datos introducidos en el archivo ".ovhconfig" que se encuentra en la raíz de su [espacio de almacenamiento FTP](/pages/web_cloud/web_hosting/ftp_connection).
 >
 
 ![ovhconfig](images/ovhconfig-step3.png){.thumbnail}

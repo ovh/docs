@@ -13,7 +13,7 @@ updated: 2023-09-05
 Le offerte di [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/){.external} permettono di ospitare il sito Web che si desidera, purché sia compatibile con la [configurazione delle nostre infrastrutture condivise](https://webhosting-infos.hosting.ovh.net){.external}.
 Tuttavia, sulle nostre infrastrutture condivise, è possibile modificare i seguenti parametri per il tuo hosting Web:
 
-- [ambiente di esecuzione](#runtime-evironment)
+- [ambiente di esecuzione](#runtime-environment)
 - [versione di PHP](#php-versions)
 - [il motore d'esecuzione PHP](#php-runtime)
 - [firewall applicativo](#firewall)
@@ -89,7 +89,7 @@ PHP è un linguaggio di programmazione dinamico utilizzato per realizzare siti W
 
 Esistono diverse versioni del linguaggio di programmazione PHP. Le modifiche apportate alle versioni apportano patch di vario tipo e aggiungono o rimuovono alcune funzionalità. OVHcloud propone le ultime versioni principali di PHP, disponibili nella lista [qui](https://www.ovhcloud.com/it/web-hosting/uc-programming-language/).
 
-Alcune versioni di PHP funzionano solo con certi ambienti di esecuzione. Di seguito trovi le versioni di PHP disponibili sugli hosting condivisi OVHcloud e [gli ambienti di esecuzione](#runtime-evironment) compatibili:
+Alcune versioni di PHP funzionano solo con certi ambienti di esecuzione. Di seguito trovi le versioni di PHP disponibili sugli hosting condivisi OVHcloud e [gli ambienti di esecuzione](#runtime-environment) compatibili:
 
 |Versioni PHP|Ambienti di esecuzione compatibili|
 |---|---| 
@@ -273,7 +273,7 @@ Personalizza i valori delle variabili in base alla configurazione che vuoi utili
 |app.engine.version|Permette di definire [la versione di PHP](#php-versions) utilizzata dall’hosting tra [quelle proposte da OVHcloud](https://www.ovhcloud.com/it/web-hosting/uc-programming-language/){.external}. Inserisci la versione scelta (in base all’ambiente di esecuzione che hai scelto di utilizzare).|
 |http.firewall|Permette di attivare o disattivare il [firewall incluso negli hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/options/){.external}. Inserisci **security** per attivarlo o **none** per disattivarlo.|
 |environment|Permette di gestire il comportamento della cache dei file statici del tuo sito Web e la gestione degli errori PHP. Questa è la [modalità di esecuzione](#runtime-mod). Inserisci **production** per massimizzare la memorizzazione in cache e nascondere gli errori PHP o **development** per disattivare la cache e visualizzare gli errori PHP.|
-|container.image|Permette di modificare [l’ambiente di esecuzione](#runtime-evironment) utilizzato dall’hosting. Inserisci l'ambiente di esecuzione (**legacy**,**stable** o **stable64**) che preferisci. Se scegli l'ambiente di esecuzione **stable64**, verifica che il tuo sito sia compatibile con l'architettura a 64 bit.|
+|container.image|Permette di modificare [l’ambiente di esecuzione](#runtime-environment) utilizzato dall’hosting. Inserisci l'ambiente di esecuzione (**legacy**,**stable** o **stable64**) che preferisci. Se scegli l'ambiente di esecuzione **stable64**, verifica che il tuo sito sia compatibile con l'architettura a 64 bit.|
 
 Se necessario, torna alla prima parte "[Descrizione dei parametri di configurazione disponibili sugli hosting Web OVHcloud](#all-parameters)" di questa guida.
 
@@ -355,7 +355,7 @@ Se necessario, consulta la nostra guida "[Configurare un multisito su un hosting
 
 > [!warning]
 >
-> **Non è possibile specificare un secondo [ambiente di esecuzione](#runtime-evironment), un secondo [modo di esecuzione](#runtime-mod) e/o un secondo [motore di esecuzione PHP](#php-runtime)** sullo stesso hosting Web. Saranno presi in considerazione solo quelli inseriti nel file ".ovhconfig" che si trova nella root del tuo [spazio di storage FTP](/pages/web_cloud/web_hosting/ftp_connection).
+> **Non è possibile specificare un secondo [ambiente di esecuzione](#runtime-environment), un secondo [modo di esecuzione](#runtime-mod) e/o un secondo [motore di esecuzione PHP](#php-runtime)** sullo stesso hosting Web. Saranno presi in considerazione solo quelli inseriti nel file ".ovhconfig" che si trova nella root del tuo [spazio di storage FTP](/pages/web_cloud/web_hosting/ftp_connection).
 >
 
 ![ovhconfig](images/ovhconfig-step3.png){.thumbnail}

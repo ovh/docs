@@ -9,7 +9,7 @@ updated: 2023-09-05
 The [OVHcloud Web Hosting](https://www.ovhcloud.com/en-gb/web-hosting/){.external} offers  allow you to host the website you want, provided that it is compatible with the [configuration of our shared infrastructure](https://webhosting-infos.hosting.ovh.net){.external}.
 However, on our shared infrastructure, you can modify the following settings for your web hosting plan:
 
-- [runtime environment](#runtime-evironment)
+- [runtime environment](#runtime-environment)
 - [PHP version](#php-versions)
 - [the PHP runtime environment](#php-runtime)
 - [the application firewall](#firewall)
@@ -85,7 +85,7 @@ PHP is a dynamic programming language used to build websites. For your website, 
 
 There are several versions of the PHP programming language. Version upgrades provide various patches and add or remove features. OVHcloud offers the latest major versions of PHP, a list of which can be found [here](https://www.ovhcloud.com/en-gb/web-hosting/uc-programming-language/).
 
-Some PHP versions only work with certain runtime environments. Below are the PHP versions available on OVHcloud web hosting plans and compatible [runtime environments](#runtime-evironment):
+Some PHP versions only work with certain runtime environments. Below are the PHP versions available on OVHcloud web hosting plans and compatible [runtime environments](#runtime-environment):
 
 |PHP Versions|Compatible runtime environments|
 |---|---|
@@ -269,7 +269,7 @@ Customize the values of the variables depending on the configuration you want to
 |app.engine.version|Allows you to define [the PHP version](#php-versions) used by the hosting plan among [the ones OVHcloud offers](https://www.ovhcloud.com/en-gb/web-hosting/uc-programming-language/){.external}. Enter the version of your choice (appropriate for the runtime environment you have chosen to use).|
 |http.firewall|Enables or disables the [firewall supplied with OVHcloud web hosting plans](https://www.ovhcloud.com/en-gb/web-hosting/options/){.external}. Enter **security** to enable it, or **none** to disable it.|
 |environment|Allows you to manage the behavior of your website's static file cache, as well as PHP error processing. This corresponds to [execution mode](#runtime-mod). Enter **production** to maximize caching and hide PHP errors, or **development** so that no cache is applied and PHP errors are displayed.|
-|container.image|Allows you to modify the [runtime environment](#runtime-evironment) used by the hosting. Enter the runtime environment (**legacy**,**stable** or **stable64**) of your choice. If you choose the **stable64** runtime environment, ensure that your site is compatible with 64-bit architecture.|
+|container.image|Allows you to modify the [runtime environment](#runtime-environment) used by the hosting. Enter the runtime environment (**legacy**,**stable** or **stable64**) of your choice. If you choose the **stable64** runtime environment, ensure that your site is compatible with 64-bit architecture.|
 
 If you need to, go back to the first part “[Description of the configuration settings available on OVHcloud web hosting plans](#all-parameters)” of this guide.
 
@@ -351,7 +351,7 @@ Refer to our guide on Configuring a multisite on your web hosting plan (/pages/w
 
 > [!warning]
 >
-> **You cannot specify a second [runtime environment](#runtime-evironment), a second [runtime mode](#runtime-mod) and/or a second [PHP runtime environment](#php-runtime)** on the same web hosting plan. Only those entered in the .ovhconfig file located in the root of your [FTP storage space](/pages/web_cloud/web_hosting/ftp_connection) will be taken into account.
+> **You cannot specify a second [runtime environment](#runtime-environment), a second [runtime mode](#runtime-mod) and/or a second [PHP runtime environment](#php-runtime)** on the same web hosting plan. Only those entered in the .ovhconfig file located in the root of your [FTP storage space](/pages/web_cloud/web_hosting/ftp_connection) will be taken into account.
 >
 
 ![ovhconfig](images/ovhconfig-step3.png){.thumbnail}

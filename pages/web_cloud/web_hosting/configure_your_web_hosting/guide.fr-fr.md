@@ -9,7 +9,7 @@ updated: 2023-09-04
 Les offres d'[hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/){.external} permettent d’héberger le site web que vous souhaitez, tant que celui-ci est compatible avec la [configuration de nos infrastructures mutualisées](https://webhosting-infos.hosting.ovh.net){.external}.
 Toutefois, sur nos infrastructures mutualisées, vous pouvez modifier les paramètres suivants pour votre hébergement web :
 
-- [l'environnement d'exécution](#runtime-evironment)
+- [l'environnement d'exécution](#runtime-environment)
 - [la version de PHP](#php-versions)
 - [le moteur d'exécution PHP](#php-runtime)
 - [le pare-feu applicatif](#firewall)
@@ -56,7 +56,7 @@ Avant de commencer, retrouvez ci-après la description technique de chacun des p
 > Modifier au moins l'un de ces éléments peut avoir des conséquences sur l'affichage ou le bon fonctionnement de votre site web. **Assurez-vous au préalable que votre site web est compatible avec les changements que vous souhaitez effectuer dans la configuration de votre hébergement web**. Contactez un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) en cas de doutes ou si vous rencontrez des difficultés.
 >
 
-####  1.1 - Les environnements d'exécution <a name="runtime-evironment"></a>
+####  1.1 - Les environnements d'exécution <a name="runtime-environment"></a>
 
 Les environnements d'exécution contiennent un ensemble de langages de programmation. En fonction de l'environnement d'exécution choisi, les langages sont disponibles dans des versions plus ou moins avancées. L'objectif de ces environnements est de vous permettre d'exécuter correctement les fichiers qui composent votre site web, en adéquation avec vos besoins techniques.
 
@@ -85,7 +85,7 @@ PHP est un langage de programmation dynamique utilisé pour réaliser des sites 
 
 Plusieurs versions du langage de programmation PHP existent. Les évolutions de versions apportent des correctifs divers ainsi que l'ajout ou l'arrêt de fonctionnalités. OVHcloud propose les dernières versions majeures de PHP dont vous pouvez retrouver la liste [ici](https://www.ovhcloud.com/fr/web-hosting/uc-programming-language/).
 
-Certaines versions de PHP ne fonctionnent qu'avec certains environnements d'exécution. Vous trouverez ci-dessous les versions de PHP disponibles sur les hébergements mutualisés OVHcloud et [les environnements d'exécution](#runtime-evironment) compatibles :
+Certaines versions de PHP ne fonctionnent qu'avec certains environnements d'exécution. Vous trouverez ci-dessous les versions de PHP disponibles sur les hébergements mutualisés OVHcloud et [les environnements d'exécution](#runtime-environment) compatibles :
 
 |Versions PHP|Environnements d'exécution compatibles|
 |---|---|
@@ -269,7 +269,7 @@ Personnalisez les valeurs des variables selon la configuration que vous souhaite
 |app.engine.version|Permet de définir [la version de PHP](#php-versions) utilisée par l'hébergement parmi [celles qu'OVHcloud propose](https://www.ovhcloud.com/fr/web-hosting/uc-programming-language/){.external}. Renseignez la version de votre choix (en adéquation avec l'environnement d'exécution que vous avez choisi d'utiliser).|
 |http.firewall|Permet d'activer ou de désactiver le [firewall fourni avec les hébergements web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/options/){.external}. Renseignez **security** pour l'activer ou **none** pour le désactiver.|
 |environment|Permet de gérer le comportement du cache des fichiers statiques de votre site web ainsi que le traitement des erreurs PHP. Cela correspond au [mode d'exécution](#runtime-mod). Renseignez **production** pour maximiser la mise en cache et masquer les erreurs PHP ou **development** pour qu'aucun cache ne soit appliqué et que les erreurs PHP s'affichent.|
-|container.image|Permet de modifier [l'environnement d'exécution](#runtime-evironment) utilisé par l'hébergement. Renseignez l'environnement d'exécution (**legacy**,**stable** ou **stable64**) de votre choix. Si vous choisissez l'environnement d'éxecution **stable64**, vérifiez que votre site est compatible avec l'architecture 64 bits.|
+|container.image|Permet de modifier [l'environnement d'exécution](#runtime-environment) utilisé par l'hébergement. Renseignez l'environnement d'exécution (**legacy**,**stable** ou **stable64**) de votre choix. Si vous choisissez l'environnement d'éxecution **stable64**, vérifiez que votre site est compatible avec l'architecture 64 bits.|
 
 Si besoin, retournez à la première partie « [Description des paramètres de configuration disponibles sur les hébergements web OVHcloud](#all-parameters) » de ce guide.
 
@@ -351,7 +351,7 @@ Consultez notre guide « [Configurer un multisite sur votre hébergement web](/p
 
 > [!warning]
 >
-> **Il n'est pas possible de spécifier un second [environnement d'exécution](#runtime-evironment), un second [mode d'exécution](#runtime-mod) et/ou un second [moteur d'exécution PHP](#php-runtime)** sur un même hébergement web. Seuls ceux renseignés dans le fichier « .ovhconfig » se trouvant à la racine de votre [espace de stockage FTP](/pages/web_cloud/web_hosting/ftp_connection) seront pris en compte.
+> **Il n'est pas possible de spécifier un second [environnement d'exécution](#runtime-environment), un second [mode d'exécution](#runtime-mod) et/ou un second [moteur d'exécution PHP](#php-runtime)** sur un même hébergement web. Seuls ceux renseignés dans le fichier « .ovhconfig » se trouvant à la racine de votre [espace de stockage FTP](/pages/web_cloud/web_hosting/ftp_connection) seront pris en compte.
 >
 
 ![ovhconfig](images/ovhconfig-step3.png){.thumbnail}

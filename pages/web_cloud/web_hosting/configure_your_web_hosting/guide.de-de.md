@@ -13,7 +13,7 @@ updated: 2023-09-05
 Mit den [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} Angeboten können Sie Ihre gewünschte Website hosten, solange diese mit der [Konfiguration unserer Shared Hosting Infrastrukturen](https://webhosting-infos.hosting.ovh.net){.external} kompatibel ist.
 Auf unseren Shared Hosting Infrastrukturen können Sie jedoch die folgenden Einstellungen für Ihr Webhosting ändern:
 
-- [Ausführungsumgebung](#runtime-evironment)
+- [Ausführungsumgebung](#runtime-environment)
 - [die PHP-Version](#php-versions)
 - [PHP Runtime Engine](#php-runtime)
 - [Application Firewall](#firewall)
@@ -60,7 +60,7 @@ Bevor Sie beginnen, finden Sie im Folgenden die technische Beschreibung jeder de
 > Das Ändern von mindestens einem dieser Elemente kann sich auf die Anzeige oder das ordnungsgemäße Funktionieren Ihrer Website auswirken. **Stellen Sie im Vorfeld sicher, dass Ihre Website mit den Änderungen kompatibel ist, die Sie an der Konfiguration Ihres Webhostings vornehmen möchten**. Bei Zweifeln oder Schwierigkeiten wenden Sie sich an einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/).
 >
 
-#### 1.1 - Laufzeitumgebungen <a name="runtime-evironment"></a>
+#### 1.1 - Laufzeitumgebungen <a name="runtime-environment"></a>
 
 Ausführungsumgebungen enthalten eine Reihe von Programmiersprachen. Abhängig von der ausgewählten Laufzeitumgebung sind die Programmiersprachen in verschiedenen Versionen verfügbar. Der Zweck dieser Umgebungen besteht darin, Ihnen die Möglichkeit zu geben, die Dateien, aus denen sich Ihre Website zusammensetzt, korrekt auszuführen und Ihren technischen Anforderungen anzupassen.
 
@@ -89,7 +89,7 @@ PHP ist eine dynamische Programmiersprache, die zur Erstellung von Websites verw
 
 Es gibt mehrere Versionen der Programmiersprache PHP. Versionsänderungen bringen verschiedene Korrekturen sowie das Hinzufügen oder Beenden von Features. OVHcloud bietet die neuesten PHP-Hauptversionen an, deren Liste Sie [hier](https://www.ovhcloud.com/de/web-hosting/uc-programming-language/) einsehen können.
 
-Einige PHP-Versionen funktionieren nur in bestimmten Ausführungsumgebungen. Nachfolgend finden Sie die auf den Shared Hosting Angeboten von OVHcloud und den kompatiblen [Ausführungsumgebungen](#runtime-evironment) verfügbaren PHP-Versionen:
+Einige PHP-Versionen funktionieren nur in bestimmten Ausführungsumgebungen. Nachfolgend finden Sie die auf den Shared Hosting Angeboten von OVHcloud und den kompatiblen [Ausführungsumgebungen](#runtime-environment) verfügbaren PHP-Versionen:
 
 |PHP-Versionen|Kompatible Ausführungsumgebungen|
 |---|---|
@@ -273,7 +273,7 @@ Passen Sie die Werte der Variablen entsprechend der Konfiguration an, die Sie mi
 Mit |app.engine.version|können Sie die vom Hosting verwendete [PHP-Version](#php-versions) unter [den von OVHcloud angebotenen Versionen](https://www.ovhcloud.com/de/web-hosting/uc-programming-language/){.external} definieren. Geben Sie die gewünschte Version ein (die der ausgewählten Laufzeitumgebung entspricht).|
 |http.firewall|Hier können Sie die [mit den OVHcloud Webhostings gelieferte Firewall](https://www.ovhcloud.com/de/web-hosting/options/){.external} aktivieren oder deaktivieren. Geben Sie **security** ein, um es zu aktivieren, oder **none**, um es zu deaktivieren.|
 |environment|Ermöglicht die Verwaltung des Cacheverhaltens der statischen Dateien Ihrer Website sowie der PHP-Fehlerbehandlung. Dies entspricht dem [Ausführungsmodus](#runtime-mod). Geben Sie **production** ein, um das Caching zu maximieren und PHP-Fehler zu verbergen. **development**, damit kein Cache angewendet wird und PHP-Fehler angezeigt werden.|
-|container.image|Ermöglicht das Ändern der [Ausführungsumgebung](#runtime-evironment), die vom Hosting verwendet wird. Geben Sie die gewünschte Ausführungsumgebung ein (**legacy**,**stable** oder **stable64**). Wenn Sie die Laufzeitumgebung **stable64** wählen, überprüfen Sie, ob Ihre Website mit der 64-Bit-Architektur kompatibel ist.|
+|container.image|Ermöglicht das Ändern der [Ausführungsumgebung](#runtime-environment), die vom Hosting verwendet wird. Geben Sie die gewünschte Ausführungsumgebung ein (**legacy**,**stable** oder **stable64**). Wenn Sie die Laufzeitumgebung **stable64** wählen, überprüfen Sie, ob Ihre Website mit der 64-Bit-Architektur kompatibel ist.|
 
 Bei Bedarf kehren Sie zum ersten Teil „[Beschreibung der auf den OVHcloud Webhostings verfügbaren Konfigurationseinstellungen](#all-parameters)“ dieser Anleitung zurück.
 
@@ -355,7 +355,7 @@ Lesen Sie bei Bedarf unsere Anleitung „[Eine Multisite auf Ihrem Webhosting ko
 
 > [!warning]
 >
-> **Es ist nicht möglich, eine zweite [Ausführungsumgebung](#runtime-evironment), eine zweite [Entwicklungsmodus](#runtime-mod) und/oder eine zweite [PHP-Engine](#php-runtime)** auf demselben Webhosting anzugeben. Es werden nur diejenigen berücksichtigt, die in der Datei “.ovhconfig“ im Wurzelverzeichnis Ihres [FTP-Speicherplatzes](/pages/web_cloud/web_hosting/ftp_connection) angegeben sind.
+> **Es ist nicht möglich, eine zweite [Ausführungsumgebung](#runtime-environment), eine zweite [Entwicklungsmodus](#runtime-mod) und/oder eine zweite [PHP-Engine](#php-runtime)** auf demselben Webhosting anzugeben. Es werden nur diejenigen berücksichtigt, die in der Datei “.ovhconfig“ im Wurzelverzeichnis Ihres [FTP-Speicherplatzes](/pages/web_cloud/web_hosting/ftp_connection) angegeben sind.
 >
 
 ![ovhconfig](images/ovhconfig-step3.png){.thumbnail}
