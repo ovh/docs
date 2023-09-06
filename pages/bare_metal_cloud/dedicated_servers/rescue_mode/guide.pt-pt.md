@@ -1,7 +1,7 @@
 ---
 title: 'Ativar e utilizar o modo rescue'
 excerpt: 'Como ativar e utilizar o modo rescue num servidor dedicado'
-updated: 2023-04-09
+updated: 2023-09-05
 ---
 
 > [!primary]
@@ -96,7 +96,9 @@ Para montar as partições, utilize o comando `mount` em SSH. Deverá listar as 
 
 ```bash
 fdisk -l
+```
 
+```console
 Disk /dev/hda 40.0 GB, 40020664320 bytes
 255 heads, 63 sectors/track, 4865 cylinders
 Units = cylinders of 16065 * 512 = 8225280 bytes

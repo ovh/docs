@@ -1,7 +1,7 @@
 ---
 title: 'Activer et utiliser le mode rescue'
 excerpt: 'Comment activer et utiliser le mode rescue sur un serveur dédié'
-updated: 2023-04-09
+updated: 2023-09-05
 ---
 
 ## Objectif
@@ -86,7 +86,9 @@ Le montage des partitions est réalisé à l’aide de la commande `mount` en SS
 
 ```bash
 fdisk -l
+```
 
+```console
 Disk /dev/hda 40.0 GB, 40020664320 bytes
 255 heads, 63 sectors/track, 4865 cylinders
 Units = cylinders of 16065 * 512 = 8225280 bytes

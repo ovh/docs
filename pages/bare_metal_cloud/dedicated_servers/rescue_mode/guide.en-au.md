@@ -1,7 +1,7 @@
 ---
 title: 'Activating and using rescue mode'
 excerpt: 'Find out how to activate and use rescue mode on a dedicated server'
-updated: 2023-04-09
+updated: 2023-09-05
 ---
 
 ## Objective
@@ -66,7 +66,7 @@ Remember to change the netboot back to `Boot from the hard disk`{.action} before
 
 Once your server has rebooted, you will receive an email with your rescue mode access credentials. This email is also available in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au) as soon as it is sent: Click on the name associated with your NIC handle (Customer ID) in the menu bar in the top right-hand corner, then select `Service emails`{.action}.
 
-You will then need to access your server via the command line or an SSH tool, using the root password generated for the rescue mode.
+You will then need to access your server via the command line or an [SSH tool](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction), using the root password generated for the rescue mode.
 
 For example:
 
@@ -88,7 +88,9 @@ You can mount partitions using the `mount` command in SSH. Firstly, list your pa
 
 ```bash
 fdisk -l
+```
 
+```console
 Disk /dev/hda 40.0 GB, 40020664320 bytes
 255 heads, 63 sectors/track, 4865 cylinders
 Units = cylinders of 16065 * 512 = 8225280 bytes
