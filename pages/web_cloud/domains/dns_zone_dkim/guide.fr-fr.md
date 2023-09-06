@@ -842,7 +842,7 @@ Voici les 4 états ayant pour résultat l'icône DKIM en rouge dans votre espace
  - `ready` : les enregistrements DNS sont présents dans la zone. Le DKIM peut maintenant être activé. Il vous suffira d'activer le sélecteur en vous appuyant sur la section « [Activer ou changer un sélecteur DKIM](#enable-switch) ».
  - `deleting` : le DKIM est en cours de suppression. Après suppression, il vous faudra suivre la section « [Configuration complète du DKIM](#firststep) ».
  - `disabling` : le DKIM est en cours de désactivation. Après cette opération vous pourrez activer le sélecteur en vous appuyant de la section « [Activer ou changer un sélecteur DKIM](#enable-switch) ».
- - `todo` : la tâche a été initialisée, elle doit se lancer. Au-delà de 24 heures, si votre sélecteur est toujours dans cet état, nous vous invitons à ouvrir un ticket auprès du support en précisant le numéro du sélecteur concerné.
+ - `todo` : la tâche a été initialisée, elle doit se lancer. Au-delà de 24 heures, si votre sélecteur est toujours dans cet état, nous vous invitons à ouvrir un [ticket auprès du support](https://help.ovhcloud.com/csm?id=csm_cases_requests) en précisant le numéro du sélecteur concerné.
 
 ## Aller plus loin
 
