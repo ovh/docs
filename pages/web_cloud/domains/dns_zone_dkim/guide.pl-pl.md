@@ -105,19 +105,19 @@ Istnieją dwa sposoby szyfrowania asymetrycznego:
 
 #### W jaki sposób stosowane są szyfrowanie i szyfrowanie asymetryczne? <a name="encrypt-and-hash"></a>
 
-W ramach platformy e-mail DKIM będzie używać hakowania do tworzenia podpisu [z określonych elementów nagłówka e-maila](/pages/web/emails/diagnostic_headers) i treści e-maila (zawartość e-maila).
+W ramach platformy e-mail DKIM będzie używać hakowania do tworzenia podpisu [z określonych elementów nagłówka e-maila](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/diagnostic_headers) i treści e-maila (zawartość e-maila).
 
 Podpis jest następnie szyfrowany kluczem prywatnym, używając asymetrycznego szyfrowania.
 
 #### Dlaczego trzeba skonfigurować serwery DNS? <a name="dns-and-dkim"></a>
 
-Aby odbiorca mógł zweryfikować podpis DKIM nadawcy, będzie potrzebował parametrów DKIM, a przede wszystkim klucza publicznego, aby go odszyfrować. [Strefa DNS](/pages/web/domains/dns_zone_edit) domeny jest dostępna do wiadomości publicznej. W związku z tym dodano wpis DNS w celu przekazania odbiorcy klucza publicznego oraz parametrów DKIM.
+Aby odbiorca mógł zweryfikować podpis DKIM nadawcy, będzie potrzebował parametrów DKIM, a przede wszystkim klucza publicznego, aby go odszyfrować. [Strefa DNS](/pages/web_cloud/domains/dns_zone_edit) domeny jest dostępna do wiadomości publicznej. W związku z tym dodano wpis DNS w celu przekazania odbiorcy klucza publicznego oraz parametrów DKIM.
 
 #### Co to jest selekcja DKIM <a name="selector"></a>
 
 Po włączeniu DKIM działa on z parą klucza publicznego / klucza prywatnego. Możesz przypisać kilka par kluczy do Twojej domeny, na przykład w trakcie rotacji. W przypadku zmiany pary kluczy stara para powinna pozostać aktywna tak długo, jak wszystkie e-maile wysłane przez Ciebie z dawnym kluczem nie poniosą porażki w weryfikacji DKIM na serwerze poczty przychodzącej.
 
-Aby zasada rotacji działała, użyjemy tzw. **selektorów DKIM**. Wybieracz DKIM zawiera parę klucza prywatnego/klucza publicznego. Jest on widoczny w postaci łańcucha znaków w podpisze DKIM w wiadomości e-mail przez argument `s=`. Podpis ten jest widoczny [w nagłówku wiadomości e-mail](/pages/web/emails/diagnostic_headers).
+Aby zasada rotacji działała, użyjemy tzw. **selektorów DKIM**. Wybieracz DKIM zawiera parę klucza prywatnego/klucza publicznego. Jest on widoczny w postaci łańcucha znaków w podpisze DKIM w wiadomości e-mail przez argument `s=`. Podpis ten jest widoczny [w nagłówku wiadomości e-mail](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/diagnostic_headers).
 
 **Przykład części podpisu DKIM**
 
@@ -162,7 +162,7 @@ Upewnij się również, czy domena, której chcesz używać do obsługi e-maili 
 
 Aby skonfigurować DKIM, wejdź na stronę <https://api.ovh.com/console/> WWW, zaloguj się przyciskiem `Login`{.action} w prawym górnym rogu i wprowadź dane identyfikacyjne OVHcloud.
 
-> Skorzystaj z naszego przewodnika ["Dowiedz się, jak korzystać z API OVHcloud"](/pages/account/api/first-steps), jeśli nigdy wcześniej nie korzystałeś z API.
+> Skorzystaj z naszego przewodnika ["Dowiedz się, jak korzystać z API OVHcloud"](/pages/manage_and_operate/api/first-steps), jeśli nigdy wcześniej nie korzystałeś z API.
 
 Przejdź do sekcji `/e-mail/exchange` (oferty Exchange) lub `/e-mail/pro` (oferta E-mail Pro) API i wpisz "dkim" w polu `Filter`, aby wyświetlić tylko API powiązane z DKIM.
 
@@ -720,7 +720,7 @@ ARC-Authentication-Results: i=1; mx.example.com;
 Return-Path: <test-dkim@mydomain.ovh>
 </code></pre>
 
-Aby pobrać nagłówek wiadomości e-mail, zapoznaj się z naszym przewodnikiem "[Pobierz nagłówek wiadomości](/pages/web/emails/diagnostic_headers)".
+Aby pobrać nagłówek wiadomości e-mail, zapoznaj się z naszym przewodnikiem "[Pobierz nagłówek wiadomości](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/diagnostic_headers)".
 
 ## Sprawdź również
 

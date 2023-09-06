@@ -105,19 +105,19 @@ Existem duas utilizações da encriptação assimétrica:
 
 #### Como é que a picadura e a encriptação assimétrica são utilizadas para o DKIM? <a name="encrypt-and-hash"></a>
 
-A partir da plataforma de e-mail, o DKIM vai utilizar a trituração para criar uma assinatura a partir de certos elementos [do cabeçalho do e-mail](/pages/web/emails/diagnostic_headers) e do corpo do e-mail (conteúdo do e-mail).
+A partir da plataforma de e-mail, o DKIM vai utilizar a trituração para criar uma assinatura a partir de certos elementos [do cabeçalho do e-mail](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/diagnostic_headers) e do corpo do e-mail (conteúdo do e-mail).
 
 A assinatura é depois encriptada com a chave privada utilizando a encriptação assimétrica.
 
 #### Porque é que precisamos de configurar os servidores DNS? <a name="dns-and-dkim"></a>
 
-Para que o destinatário possa verificar a assinatura DKIM do remetente, precisará dos parâmetros DKIM e, sobretudo, da chave pública para a decifrar. A [zona DNS](/pages/web/domains/dns_zone_edit) de um nome de domínio é pública, pelo que é acrescentado um registo DNS para transmitir a chave pública e os parâmetros DKIM ao destinatário.
+Para que o destinatário possa verificar a assinatura DKIM do remetente, precisará dos parâmetros DKIM e, sobretudo, da chave pública para a decifrar. A [zona DNS](/pages/web_cloud/domains/dns_zone_edit) de um nome de domínio é pública, pelo que é acrescentado um registo DNS para transmitir a chave pública e os parâmetros DKIM ao destinatário.
 
 #### O que é um seletor DKIM <a name="selector"></a>
 
 Quando ativa o DKIM, este funciona com um par de chave pública / chave privada. É possível atribuir vários pares de chaves ao seu domínio, no quadro de uma rotação, por exemplo. Com efeito, quando muda de par de chaves, o antigo par deve permanecer ativo enquanto o conjunto dos e-mails que enviou com a antiga chave não encontrar falha na verificação do DKIM no servidor de receção.
 
-Para que este princípio de rotação funcione, vamos utilizar o que chamamos os **seletores DKIM**. Um seletor DKIM inclui um par de chave privada/chave pública. É visível sob a forma de um canal de caráter na assinatura DKIM de um e-mail pelo argumento `s=`. Esta assinatura é visível [no cabeçalho do e-mail](/pages/web/emails/diagnostic_headers).
+Para que este princípio de rotação funcione, vamos utilizar o que chamamos os **seletores DKIM**. Um seletor DKIM inclui um par de chave privada/chave pública. É visível sob a forma de um canal de caráter na assinatura DKIM de um e-mail pelo argumento `s=`. Esta assinatura é visível [no cabeçalho do e-mail](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/diagnostic_headers).
 
 **Exemplo de uma parte de assinatura DKIM**
 
@@ -162,7 +162,7 @@ Certifique-se também de que o domínio que pretende utilizar para os seus e-mai
 
 Para configurar o DKIM, aceda ao website <https://api.ovh.com/console/>através do botão `Login`{.action} no canto superior direito e introduza as suas credenciais OVHcloud.
 
-> Apoie-se no nosso guia ["Descubra como utilizar as API OVHcloud"](/pages/account/api/first-steps) se nunca utilizou as API.
+> Apoie-se no nosso guia ["Descubra como utilizar as API OVHcloud"](/pages/manage_and_operate/api/first-steps) se nunca utilizou as API.
 
 Dirija-se à secção `/email/exchange` (ofertas Exchanges) ou `/email/pro` (oferta E-mail Pro) das API e introduza "dkim" na casa `Filter` para aparecer apenas as API relativas ao DKIM.
 
@@ -720,7 +720,7 @@ ARC-Authentication-Results: i=1; mx.example.com;
 Return-Path: <test-dkim@mydomain.ovh>
 </code></pre>
 
-Para obter o cabeçalho de um e-mail, consulte o nosso manual "[Obter o cabeçalho de um e-mail](/pages/web/emails/diagnostic_headers)".
+Para obter o cabeçalho de um e-mail, consulte o nosso manual "[Obter o cabeçalho de um e-mail](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/diagnostic_headers)".
 
 ## Saiba mais
 

@@ -105,19 +105,19 @@ Esistono due utilizzi della cifratura asimmetrica:
 
 #### Come vengono utilizzati la classificazione e la crittografia asimmetrica per il DKIM? <a name="encrypt-and-hash"></a>
 
-Dalla piattaforma email, il DKIM utilizzerà l'hash per creare una firma a partire da alcuni elementi [dell'intestazione dell'email](/pages/web/emails/diagnostic_headers) e del corpo dell'email (contenuto dell'email).
+Dalla piattaforma email, il DKIM utilizzerà l'hash per creare una firma a partire da alcuni elementi [dell'intestazione dell'email](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/diagnostic_headers) e del corpo dell'email (contenuto dell'email).
 
 La firma viene poi cifrata con la chiave privata utilizzando la crittografia asimmetrica.
 
 #### Perché è necessario configurare i server DNS? <a name="dns-and-dkim"></a>
 
-Affinché il destinatario possa verificare la firma DKIM del mittente, avrà bisogno dei parametri DKIM e soprattutto della chiave pubblica per decifrarla. La [zona DNS](/pages/web/domains/dns_zone_edit) di un dominio è pubblica, motivo per cui è stato aggiunto un record DNS per trasmettere la chiave pubblica e i parametri DKIM al destinatario.
+Affinché il destinatario possa verificare la firma DKIM del mittente, avrà bisogno dei parametri DKIM e soprattutto della chiave pubblica per decifrarla. La [zona DNS](/pages/web_cloud/domains/dns_zone_edit) di un dominio è pubblica, motivo per cui è stato aggiunto un record DNS per trasmettere la chiave pubblica e i parametri DKIM al destinatario.
 
 #### Cos'è un selettore DKIM <a name="selector"></a>
 
 Quando attivate il DKIM, questo funziona con una coppia di chiavi pubbliche / chiave privata. È possibile attribuire più coppie di chiavi al tuo dominio, ad esempio tramite rotazione. Quando cambi coppie di chiavi, la vecchia coppia deve rimanere attiva per il tempo che tutte le email che hai inviato con la vecchia chiave non incontrano errori nella verifica del DKIM sul server di ricezione.
 
-Perché questo principio di rotazione funzioni, utilizzeremo quello che chiamiamo gli **elettori DKIM**. Un selettore DKIM comprende una coppia di chiavi private/chiave pubblica. È visibile come stringa nella firma DKIM di un'email con l'argomento `s=`. Questa firma è visibile nell'intestazione [dell'email](/pages/web/emails/diagnostic_headers).
+Perché questo principio di rotazione funzioni, utilizzeremo quello che chiamiamo gli **elettori DKIM**. Un selettore DKIM comprende una coppia di chiavi private/chiave pubblica. È visibile come stringa nella firma DKIM di un'email con l'argomento `s=`. Questa firma è visibile nell'intestazione [dell'email](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/diagnostic_headers).
 
 **Esempio di una parte della firma DKIM**
 
@@ -162,7 +162,7 @@ Assicurati anche che il dominio da utilizzare per le tue email sia attivo nella 
 
 Per configurare il DKIM, accedi al sito <https://api.ovh.com/console/> utilizzando il pulsante `Login`{.action} in alto a destra e inserisci le credenziali OVHcloud.
 
-> Clicca sulla nostra guida ["Scopri come utilizzare le API OVHcloud"](/pages/account/api/first-steps) se non hai mai utilizzato le API.
+> Clicca sulla nostra guida ["Scopri come utilizzare le API OVHcloud"](/pages/manage_and_operate/api/first-steps) se non hai mai utilizzato le API.
 
 Clicca sulla sezione `/email/exchange` (offerte Exchange) o `/email/pro` (offerta Email Pro) delle API e digita "dkim" nella casella `Filter` per far apparire solo le API relative al DKIM.
 
@@ -720,7 +720,7 @@ ARC-Authentication-Results: i=1; mx.example.com;
 Return-Path: &lt;test-dkim@mydomain.ovh>
 </code></pre>
 
-Per recuperare l'intestazione di un'email, consulta la guida [Recuperare l'intestazione di un'email](/pages/web/emails/diagnostic_headers).
+Per recuperare l'intestazione di un'email, consulta la guida [Recuperare l'intestazione di un'email](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/diagnostic_headers).
 
 ## Per saperne di più
 
