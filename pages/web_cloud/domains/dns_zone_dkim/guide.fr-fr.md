@@ -811,7 +811,7 @@ Cliquez sur l'onglet ci-dessous correspondant à votre offre.
 >> - `domainName` : saisissez le nom de domaine attaché à votre plateforme E-mail Pro sur lequel le DKIM doit être présent.<br>
 >>
 
-Après avoir basculé sur le nouveau sélecteur, conservez l'ancien durant 7 jours avant de le supprimer et de créer un nouveau.
+Après avoir basculé sur le nouveau sélecteur, conservez l'ancien durant 7 jours avant de le supprimer et d'en créer un nouveau.
 
 #### Pourquoi le DKIM n'est pas fonctionnel et apparait en rouge dans l'espace client ? <a name="reddkim"></a>
 
