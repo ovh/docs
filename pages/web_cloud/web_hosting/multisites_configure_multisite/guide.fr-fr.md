@@ -1,7 +1,7 @@
 ---
 title: 'Partager son hébergement entre plusieurs sites'
 excerpt: "Découvrez comment héberger différents sites Internet sur votre offre d'hébergement web"
-updated: 2023-08-24
+updated: 2023-09-06
 ---
 
 ## Objectif
@@ -9,6 +9,14 @@ updated: 2023-08-24
 Vous pouvez héberger plusieurs sites Internet sur une même offre d'hébergement web, même si les noms de domaine ne sont pas enregistrés chez OVHcloud.
 
 **Découvrez comment héberger différents sites Internet sur votre offre d'hébergement web.**
+
+### Sommaire
+
+- 1 : [Accéder à la gestion multisite](#multisite-menu)
+- 2 : [Ajouter un domaine ou un sous-domaine](#add-domain)
+    - 2.1 : [Ajouter un domaine enregistré chez OVHcloud](#add-ovhcloud-domain)
+    - 2.2 : [Ajouter un nom de domaine externe](#add-external-domain)
+- 3 : [Mettre votre site web en ligne](#site-online)
 
 ## Prérequis
 
@@ -26,7 +34,7 @@ Vous pouvez héberger plusieurs sites Internet sur une même offre d'hébergemen
 > N'hésitez pas à consulter notre [guide](/pages/web_cloud/web_hosting/activate-email-hosting) pour plus de détails sur l'activation de cette option.
 >
 
-### Étape 1 : accéder à la gestion multisite
+### Étape 1 : accéder à la gestion multisite <a name="multisite-menu"></a>
 
 Tout d'abord, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} et sélectionnez `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action}, sélectionnez l'offre concernée, puis choisissez l'onglet `Multisite`{.action}.
 
@@ -39,7 +47,7 @@ Le tableau qui s'affiche liste tous les noms de domaine et sous-domaines ajouté
 
 ![multisite](images/access-multisite-ovh.png){.thumbnail}
 
-### Étape 2 : ajouter un domaine ou un sous-domaine
+### Étape 2 : ajouter un domaine ou un sous-domaine <a name="add-domain"></a>
 
 Pour ajouter un nouveau nom de domaine ou sous-domaine à votre hébergement web, cliquez sur le bouton `Actions`{.action} situé à gauche de l'écran puis sur `Ajouter un domaine ou sous domaine`{.action} et effectuez votre choix dans la fenêtre qui s’affiche.
 
