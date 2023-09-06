@@ -158,7 +158,7 @@ Cliquez sur l'onglet ci-dessous correspondant à votre offre.
 >>
 >> Depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), dans l'onglet `Web Cloud`{.action}, cliquez sur `E-mails Pro`{.action}, puis sur le nom du service E-mail Pro concerné. Enfin, allez dans l'onglet `Domaines associés`{.action}.
 >>
->> À droite du nom de domaine concerné, vous pouvez observer la pastille `DKIM` est gris.
+>> À droite du nom de domaine concerné, vous pouvez observer que la pastille `DKIM` est grise.
 >>
 >> ![email](images/dkim-auto01.png){.thumbnail}
 
