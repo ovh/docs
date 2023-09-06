@@ -162,7 +162,7 @@ Cliquez sur l'onglet ci-dessous correspondant à votre offre.
 >>
 >> ![email](images/dkim-auto01.png){.thumbnail}
 
-Maintenant, pour activer le DKIM, il vous suffit de cliquer sur la pastille `DKIM` en gris puis sur `Valider`{.action} depuis la fenêtre d'activation qui apparait.
+Pour activer le DKIM, il vous suffit maintenant de cliquer sur la pastille `DKIM` grise puis sur `Valider`{.action} depuis la fenêtre d'activation qui apparaît.
 
 ![email](images/dkim-auto02.png){.thumbnail}
 
