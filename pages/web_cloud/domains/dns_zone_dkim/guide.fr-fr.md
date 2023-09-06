@@ -141,7 +141,7 @@ Le destinataire **recipient@otherdomain.ovh** pourra déchiffrer cette signature
 
 La configuration automatique du DKIM est accessible pour les offres e-mail [Exchange](https://www.ovhcloud.com/fr/emails/) et [E-mail Pro](https://www.ovhcloud.com/fr/emails/email-pro/).
 
-Par défaut le DKIM n'est pas activé lorsque vous ajoutez un nom de domaine à votre plateforme. Il faut donc lancer le processus de configuration automatique via l'espace client.
+Par défaut le DKIM n'est pas activé lorsque vous ajoutez un nom de domaine à votre plateforme. Vous devez donc lancer le processus de configuration automatique via l'espace client.
 
 Cliquez sur l'onglet ci-dessous correspondant à votre offre.
 
