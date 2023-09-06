@@ -390,7 +390,7 @@ Suivez les **5 étapes** ci-dessous en cliquant sur chacun des onglets.
 >> <br>
 >> > [!primary]
 >> >
->> > Nous vous conseillons de réaliser cette opération à deux reprises pour chacun des sélecteurs précédement listés. Le deuxième sélecteur vous permettra d'éffectuer un changement de paire de clés lorsque cela sera necessaire. Nous vous invitons à consulter notre cas d'usage [« Comment changer sa paire de clé DKIM »](#2selectors).
+>> > Nous vous conseillons de réaliser cette opération à deux reprises pour chacun des sélecteurs précédemment listés. Le deuxième sélecteur vous permettra d'effectuer un changement de paire de clés lorsque cela sera necessaire. Nous vous invitons à consulter notre cas d'usage [« Comment changer sa paire de clés DKIM »](#2selectors).
 >> <br>
 >> Pour cela, utilisez l'appel API suivant :<br>
 >>
