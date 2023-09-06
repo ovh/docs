@@ -274,7 +274,7 @@ Suivez les **5 étapes** ci-dessous en cliquant sur chacun des onglets.
 >> - votre plateforme Exchange est liée à un nom de domaine qui est géré dans un autre bureau d'enregistrement ;<br>
 >> - vous avez choisi de ne pas cocher la case `configureDkim` à l'étape précédente.<br>
 >>
->> Pour configurez votre zone DNS, vous devez récupérer les valeurs de l'enregistrement DNS **pour chaques sélecteurs si vous avez créé les deux**. Pour cela, utilisez l'appel API suivant :
+>> Pour configurez votre zone DNS, vous devez récupérer les valeurs de l'enregistrement DNS **pour chaque sélecteur si vous en avez créé deux**. Pour cela, utilisez l'appel API suivant :
 >>
 >> > [!api]
 >> >
