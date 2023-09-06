@@ -1,7 +1,7 @@
 ---
 title: Configurer un enregistrement DKIM
 excerpt: Découvrez comment configurer un enregistrement DKIM sur votre nom de domaine et votre plateforme e-mail OVHcloud
-updated: 2023-08-14
+updated: 2023-09-06
 ---
 
 <style>
