@@ -42,7 +42,7 @@ The DKIM (**D**omain**K**eys **I**dentified **M**ail) record allows you to sign 
 >
 > If your domain name does not use OVHcloud DNS servers, you will need to modify the DKIM records in the interface of the service provider that manages your domain name configuration.
 >
-> If your domain name is registered with OVHcloud, you can check if it is using the OVHcloud configuration in your [Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we). To do this, go to the `DNS servers`{.action} tab, and select the domain concerned.
+> If your domain name is registered with OVHcloud, you can check if it is using the OVHcloud configuration in your [Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we). To do this, go to the `DNS Zone`{.action} tab, and select the domain concerned.
 >
 
 ## Instructions
@@ -140,6 +140,8 @@ Click on the tab below for your solution.
 In the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we), in the `Web Cloud`{.action} tab, click `Microsoft`{.action}, then `Exchange`{.action}. Next, click on the name of the Exchange service concerned. By default, your platform name will match its reference number, or it will be visible under the name you have given it (see image below).
 
 ![email](images/dns-dkim-platform-exchange.png){.thumbnail}
+
+
 
 Also, make sure that the domain name you want to use for your emails is active in the `Associated domains`{.action} section.
 
@@ -349,6 +351,8 @@ To enable DKIM on a selector, use the following API call:
 - `exchangeService`: Type the name of your Exchange platform in the form "hosted-zz1111111-1" or "private-zz111111-1".<br>
 - `domainName`: Enter the domain name attached to your Exchange platform on which you want to enable DKIM.<br>
 
+
+
 > [!primary]
 >
 > During a DKIM selector rotation, you can directly activate the second selector you have created to switch over to it, while keeping the first selector active until all emails delivered with it are properly scanned by their recipient.
@@ -357,7 +361,9 @@ To enable DKIM on a selector, use the following API call:
 
 > [!warning]
 >
-> The DKIM selector must be in `inProduction` status before it can be disabled.
+> The DKIM selector must be in `inProduction` or `ready` status before it can be disabled.
+
+
 
 If you want to disable the DKIM without removing the selector and its key pair, use the following API call:
 
@@ -382,6 +388,8 @@ If you want to delete the DKIM selector and its key pair, use the following API 
 - `selectorName`: Enter the name of the selector you want to delete. <br>
 - `exchangeService`: Type the name of your Exchange platform in the form "hosted-zz1111111-1" or "private-zz111111-1". <br>
 - `domainName`: Enter the domain name attached to your Exchange platform. <br>
+
+
 
 ### Configuring DKIM for an email solution outside of your OVHcloud account <a name="external-dkim"></a>
 
@@ -467,7 +475,7 @@ v=DKIM1;t=s;p= MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA77VDAIfyhjtoF0DIE5V7 
 
 The CNAME record is an alias. This means that the target value points to a URL that will itself provide the DKIM record to the server that will query the CNAME record. This type of CNAME record for setting the DKIM is common when using a Microsoft email server.
 
-This record type is used to enable DKIM on a domain name declared for an OVHcloud Exchange solution.
+This record type is used to enable DKIM on a domain name declared for an OVHcloud Exchange solution. This way, your email solution provider can manage security and update the DKIM for you.
 
 ### Test your DKIM <a name="test-dkim"></a>
 
@@ -481,6 +489,7 @@ ARC-Authentication-Results: i=1; mx.example.com;
        spf=pass (example.com: domain of test-dkim@mydomain.ovh designates 54.36.141.6 as permitted sender) smtp.mailfrom=test-dkim@mydomain.ovh
 Return-Path: <test-dkim@mydomain.ovh>
 </code></pre>
+
 
 To retrieve the header of an email, please read our guide on [Retrieving email headers](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/diagnostic_headers).
 
