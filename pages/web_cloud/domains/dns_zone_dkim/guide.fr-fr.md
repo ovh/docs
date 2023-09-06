@@ -776,7 +776,7 @@ Pour récupérer l'en-tête d'un e-mail, consulter notre guide « [Récupérer l
 
 ### Cas d'usages <a name="usecases"></a>
 
-#### Comment changer sa paire de clés DKIM et pourquoi le faire ? <a name="2selectors"></a>
+#### Comment et pourquoi changer sa paire de clés DKIM ? <a name="2selectors"></a>
 
 Lorsque vous activez pour la première fois le DKIM sur votre service e-mail, il est possible de créer 2 sélecteurs qui contiennent chacun une paire de clés. Le deuxième sélecteur sert de successeur à celui qui est en cours d'utilisation.
 
