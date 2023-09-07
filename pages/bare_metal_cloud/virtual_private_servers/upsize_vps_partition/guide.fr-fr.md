@@ -28,7 +28,7 @@ Après une mise à niveau de la mémoire (RAM) ou du processeur (vCores), ces re
 
 #### Sauvegarder vos données
 
-La tentative d’étendre une partition peut entraîner une perte de données. Il est donc **fortement recommandé** de faire une sauvegarde des données de votre VPS.
+La tentative d’étendre une partition peut entraîner une perte de données. Il est donc **vivement recommandé** de faire une sauvegarde des données de votre VPS.
 
 #### Activer le mode rescue et vérifier les partitions
 
