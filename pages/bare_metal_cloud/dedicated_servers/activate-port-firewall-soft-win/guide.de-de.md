@@ -73,7 +73,7 @@ Geben Sie im nächsten Schritt den Typ des zu aktivierenden Ports an:
 
 > [!primary]
 >
->- TCP (Transmission Control Protocol))
+>- TCP (Transmission Control Protocol)
 >TCP ist ein verbindungsorientiertes Protokoll, d.h. mit TCP können Verbindungen hergestellt werden, um Datenströme zu senden. Dieses Protokoll gewährleistet, dass die Datenpakete dem Empfänger fehlerfrei und in der gleichen Reihenfolge, in der sie versendet wurden, geliefert werden.
 >
 >- UDP (User Datagram Protocol)
