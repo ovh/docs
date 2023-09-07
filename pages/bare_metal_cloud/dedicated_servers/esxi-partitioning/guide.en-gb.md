@@ -36,7 +36,7 @@ There are 4 different values:
 |---|---|---|
 |`default`|130 GiB|All remaining space²|
 |`min`|32 GiB|All remaining space²|
-|`small`|64 GiB|❌⁴|
+|`small`|64 GiB|All remaining space²|
 |`max`|All available space²|❌⁴|
 
 ¹ On the first disk of the targeted disk group for the OS installation.<br />
@@ -44,12 +44,12 @@ There are 4 different values:
 ³ A datastore is a disk partition (sometimes also called "container") that ESXi will use to store the virtual machines. [More details](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.storage.doc/GUID-5EE84941-366D-4D37-8B7B-767D08928888.html).<br />
 ⁴ Customers can still [add a datastore](/pages/bare_metal_cloud/dedicated_servers/hgrstor2_system_configuration#add-datastore) afterwards on the other disks.
 
-As you can see, `max` partitioning layout doesn't have any datastore.
+As you can see, no datastore is created on the first disk with the `max` partitioning layout.
 
 > [!primary]
 >
 > Did you know?
-> 
+>
 > [VMware on OVHcloud solutions](https://www.ovhcloud.com/en-gb/hosted-private-cloud/vmware/) are based on ESXi with the partitioning layout `small`.
 >
 

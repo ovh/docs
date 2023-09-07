@@ -6,7 +6,7 @@ updated: 2023-09-05
 
 ## Objectif
 
-Avec les [serveurs dédiés OVHcloud](https://www.ovhcloud.com/fr/bare-metal/), vous pouvez [personnaliser le partitionnement](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh). Cela vous donne des possibilités de configuration assez vastes pour tous les OS à l'exception d'ESXi à cause de ses spécificités car il s'agit d'un système propriétaire UNIX avec un installateur propriétaire. Par conséquent, OVHcloud est dépendant de l'éditeur pour l'installation de l'OS. Depuis ESXi 7.0, il est possible de choisir entre 4 schémas de partitionnement prédéfinis par l'éditeur. 
+Avec les [serveurs dédiés OVHcloud](https://www.ovhcloud.com/fr/bare-metal/), vous pouvez [personnaliser le partitionnement](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh). Cela vous donne des possibilités de configuration assez vastes pour tous les OS à l'exception d'ESXi à cause de ses spécificités car il s'agit d'un système propriétaire UNIX avec un installateur propriétaire. Par conséquent, OVHcloud est dépendant de l'éditeur pour l'installation de l'OS. Depuis ESXi 7.0, il est possible de choisir entre 4 schémas de partitionnement prédéfinis par l'éditeur.
 
 **Cet article a pour objectif de vous montrer comment choisir un schéma de partitionnement dans l'[espace client OVHcloud](https://www.ovh.com/manager/#/dedicated/configuration) ou l’[API OVHcloud](https://api.ovh.com/).**
 
@@ -45,7 +45,7 @@ Malgré le fait que votre serveur ait plusieurs disques, l'installation d'ESXi n
 ³ Un datastore est une partition de disque (parfois aussi appelée « container ») que ESXi va utiliser pour stocker ses machines virtuelles. Retrouvez plus de détails sur [cette documentation VMware (EN)](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.storage.doc/GUID-5EE84941-366D-4D37-8B7B-767D08928888.html).<br />
 ⁴ Le client pourra toujours [ajouter un datastore](/pages/bare_metal_cloud/dedicated_servers/hgrstor2_system_configuration#add-datastore) par la suite, mais uniquement sur les autres disques.<br />
 
-Comme vous pouvez le constater, le schéma `max` ne contient pas de datastore.
+Comme vous pouvez le constater, aucun datastore n'est créé sur le premier disque lors de l'utilisation du schéma `max`.
 
 > [!primary]
 >
