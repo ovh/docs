@@ -13,7 +13,7 @@ Après avoir augmenté la capacité de stockage de votre VPS, vous devrez repart
 > Le repartitionnement peut endommager définitivement vos données. OVHcloud ne pourra être tenu responsable de leur détérioration ou de leur perte. Avant de faire quoi que ce soit, pensez donc à bien sauvegarder vos informations. 
 >
 
-**Ce guide vous explique comment augmenter votre espace de stockage après une mise à niveau de disque.**
+**Découvrez comment augmenter votre espace de stockage après une mise à niveau de disque.**
 
 ## Prérequis
 
