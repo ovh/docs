@@ -348,7 +348,7 @@ Finally, *configure your job* and choose at least `1 GPU`.
 
 #### Create your training job via ovhai CLI
 
-The following command starts the training.
+The following command starts the training:
 
 ```bash
 ovhai job run \
