@@ -344,7 +344,7 @@ You can create the job that will train your model and export it to ONNX model. S
 
 Then attach your *Object Storage container* `cnn-model-onnx` and precise the mount directory: `/workspace/models`.
 
-Finally, *configure your job* and choose the at least `1 GPU`.
+Finally, *configure your job* and choose at least `1 GPU`.
 
 #### Create your training job via ovhai CLI
 
