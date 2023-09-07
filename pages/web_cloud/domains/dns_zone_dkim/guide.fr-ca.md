@@ -6,23 +6,24 @@ updated: 2023-05-17
 
 <style>
  pre {
-     font-size: 14px;
+     font-size: 14px !important;
  }
- pre.console {
-   background-color: #fff; 
-   color: #000;
-   font-family: monospace;
-   padding: 5px;
-   margin-bottom: 5px;
- }
- pre.console code {
-   border: solid 0px transparent;
+ pre.bgwhite {
+   background-color: #fff !important;
+   color: #000 !important;
    font-family: monospace !important;
-   font-size: 0.90em;
-   color: #000;
+   padding: 5px !important;
+   margin-bottom: 5px !important;
+ }
+ pre.bgwhite code {
+   background-color: #fff !important;
+   border: solid 0px transparent !important;
+   font-family: monospace !important;
+   font-size: 0.90em !important;
+   color: #000 !important;
  }
  .small {
-     font-size: 0.90em;
+     font-size: 0.90em !important;
  }
 </style>
 
@@ -115,7 +116,7 @@ Pour que ce principe de rotation fonctionne, on va utiliser ce qu'on appelle les
 
 **Exemple d'une partie de signature DKIM**
 
-<pre class="console"><code>
+<pre class="bgwhite"><code>
 DKIM-Signature: v=1; a=rsa-sha256; d=mydomain.ovh; s=ovhex123456-selector1; c=relaxed/relaxed; t=1681877341; 
 </code></pre>
 
@@ -482,7 +483,7 @@ Nous vous conseillons d'envoyer un e-mail depuis un compte de votre plateforme E
 
 Voici ce que vous pourrez trouver dans l'en-tête de l'e-mail reçu :
 
-<pre class="console"><code>
+<pre class="bgwhite"><code>
 ARC-Authentication-Results: i=1; mx.example.com;
        dkim=pass header.i=@mydomain.ovh header.s=ovhex123456-selector1 header.b=KUdGjiMs;
        spf=pass (example.com: domain of test-dkim@mydomain.ovh designates 54.36.141.6 as permitted sender) smtp.mailfrom=test-dkim@mydomain.ovh

@@ -7,23 +7,24 @@ updated: 2021-11-19
 
 <style>
  pre {
-     font-size: 14px;
+     font-size: 14px !important;
  }
- pre.console {
-   background-color: #fff; 
-   color: #000;
-   font-family: monospace;
-   padding: 5px;
-   margin-bottom: 5px;
- }
- pre.console code {
-   border: solid 0px transparent;
+ pre.bgwhite {
+   background-color: #fff !important;
+   color: #000 !important;
    font-family: monospace !important;
-   font-size: 0.90em;
-   color: #000;
+   padding: 5px !important;
+   margin-bottom: 5px !important;
+ }
+ pre.bgwhite code {
+   background-color: #fff !important;
+   border: solid 0px transparent !important;
+   font-family: monospace !important;
+   font-size: 0.90em !important;
+   color: #000 !important;
  }
  .small {
-     font-size: 0.90em;
+     font-size: 0.90em !important;
  }
 </style>
 
@@ -56,7 +57,7 @@ Der Header setzt sich aus mehreren Elementen zusammen, die den Verlauf der E-Mai
 Im Folgenden finden Sie eine nicht erschöpfende Liste der Elemente, aus denen ein Header bestehen kann, sowie deren Bedeutung. 
 
 - Ein `Received` Eintrag ist im Header für jedem Durchgang der E-Mail auf einen Ausgangsserver (SMTP) enthalten. Der Hostname des Servers wird in der Regel mit seiner IP-Adresse und einem Zeitstempel angegeben. Die Einträge für `Received` sind vom letzten Durchgang zum ältesten Durchgang auf einem Server sortiert:
-<pre class="console"><code>
+<pre class="bgwhite"><code>
 Received: from mxplan7.mail.ovh.net (unknown [10.109.143.250])
 	by mo3005.mail-out.ovh.net (Postfix) with ESMTPS id 448F4140309
 	for &lt;john@mydomain.ovh&gt; ;Wed, 30 Jun 2021 13:12:40 +0000 (UTC)
@@ -64,37 +65,37 @@ Received: from mxplan7.mail.ovh.net (unknown [10.109.143.250])
 *Hier wurde die E-Mail vom Server mxplan7.mail.ovh.net zum Server mo3005.mail-out.ovh.net am 30. Juni 2021 um 13:12:40 Uhr (UTC-Zeitzone) übertragen.*
 
 - Der Eintrag `Return-Path` entspricht der Rücksendeadresse, wenn der Versand der Nachricht fehlgeschlagen ist. Die Rücksendeadresse ist im Allgemeinen die Versandadresse. 
-<pre class="console"><code>
+<pre class="bgwhite"><code>
 Return-Path: &lt;john@mydomain.ovh&gt;
 </code></pre>
 
 - Der `From`-Eintrag enthält die Adresse des Absenders der E-Mail und den Anzeigenamen.
-<pre class="console"><code>
+<pre class="bgwhite"><code>
 From: John &lt;john@mydomain.ovh&gt;
 </code></pre>
 
 - Der `To`-Eintrag enthält die Adresse des E-Mail-Empfängers und den Anzeigenamen.
-<pre class="console"><code>
+<pre class="bgwhite"><code>
 To: Robert &lt;robert@hisdomain.ovh&gt;
 </code></pre>
 
 - `Subject` ist der Betreff der E-Mail.
-<pre class="console"><code>
+<pre class="bgwhite"><code>
 Subject: Hello my friend
 </code></pre>
 
 - Der Eintrag `Message-ID` bezeichnet die eindeutige Kennung der E-Mail und endet mit dem Namen des Versendungsservers (nach "@"). 
-<pre class="console"><code>
+<pre class="bgwhite"><code>
 Message-ID: &lt;Dc55+mK3j7hdZkf5_r-ff=fjq380ozc2h5@mailserver.domain.ovh&gt;
 </code></pre>
 
 - Im Feld `Received-SPF` wird das Ergebnis der [SPF](/pages/web_cloud/domains/dns_zone_spf) Überprüfung des Domainnamens des Absenders angezeigt. Mit dem `client-ip`-Argument wird unter anderem die IP-Adresse des Servers ermittelt, der für den Versand der E-Mail verwendet wurde. 
-<pre class="console"><code>
+<pre class="bgwhite"><code>
 Received-SPF: Pass (mailfrom) identity=mailfrom; client-ip=000.11.222.33; helo=mail-smtp-001.domain.ovh; envelope-from=john@mydomain.ovh; receiver=robert@hisdomain.ovh
 </code></pre>
 
 - Die `X-`Einträge sind individuelle Felder und dienen als Ergänzung zu den Standardfeldern. Sie werden implementiert von den Servern, die E-Mails übertragen.
-<pre class="console"><code>
+<pre class="bgwhite"><code>
 X-OVH-Remote: 000.11.222.33 (mail-smtp-001.domain.ovh)
 X-Ovh-Tracer-Id: 1234567891011121314
 X-VR-SPAMSTATE: OK
