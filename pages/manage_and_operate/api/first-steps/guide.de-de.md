@@ -126,11 +126,6 @@ Die Tabs `PHP` und `Python` enthalten die Elemente, die entsprechend der Anwendu
 
 #### Schlüssel für Ihre Anwendung erstellen
 
-> [!success]
->
-> Die OVHcloud API ist mit dem Protokoll Oauth2 kompatibel. Weitere Informationen finden Sie in der Anleitung zur [Verwendung von Service Accounts zur Authentifizierung über OVHcloud APIs (EN)](/pages/account_and_service_management/account_information/authenticate-api-with-service-account).
->
-
 Jede Anwendung, die mit der OVHcloud API kommunizieren möchte, muss zuerst freigegeben werden.
 
 Klicken Sie hierzu auf folgenden Link: [https://eu.api.ovh.com/createToken/](https://eu.api.ovh.com/createToken/){.external}.

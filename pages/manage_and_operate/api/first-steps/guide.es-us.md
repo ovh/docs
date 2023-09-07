@@ -127,11 +127,6 @@ Las pestañas `PHP` y `Python` contienen los elementos que se añadirán al scri
 
 #### Crear las claves de su aplicación
 
-> [!success]
->
-> Las API de OVHcloud ya son compatibles con el protocolo Oauth2. Para más información, consulte la guía «[Cómo autenticarse en la API de OVHcloud con Oauth2 (EN)](/pages/account_and_service_management/account_information/authenticate-api-with-service-account)».
->
-
 Todas las aplicaciones que quieran comunicarse con la API de OVHcloud deben notificarse con antelación.
 
 Para ello, haga clic en el siguiente enlace: [https://ca.api.ovh.com/createToken/](https://ca.api.ovh.com/createToken/){.external}.

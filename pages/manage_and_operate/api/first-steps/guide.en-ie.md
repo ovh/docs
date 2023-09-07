@@ -104,11 +104,6 @@ For example, if you do not want to keep the DNS record that you added to your DN
 
 ##### **API parameters**
 
-> [!success]
->
-> OVHcloud APIs are now compatible with the Oauth2 protocol. Find more information in our guide on [How to authenticate on the OVHcloud API with Oauth2](/pages/account_and_service_management/account_information/authenticate-api-with-service-account).
->
-
 After you click the API you want, the **Parameters** section allows you to assign variables for its application.
  
 For example, when adding a TXT record to your DNS zone, you will optimise the following settings:
