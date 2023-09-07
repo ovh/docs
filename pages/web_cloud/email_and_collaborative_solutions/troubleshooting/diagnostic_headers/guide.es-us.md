@@ -7,23 +7,24 @@ updated: 2021-11-19
 
 <style>
  pre {
-     font-size: 14px;
+     font-size: 14px !important;
  }
- pre.console {
-   background-color: #fff; 
-   color: #000;
-   font-family: monospace;
-   padding: 5px;
-   margin-bottom: 5px;
- }
- pre.console code {
-   border: solid 0px transparent;
+ pre.bgwhite {
+   background-color: #fff !important;
+   color: #000 !important;
    font-family: monospace !important;
-   font-size: 0.90em;
-   color: #000;
+   padding: 5px !important;
+   margin-bottom: 5px !important;
+ }
+ pre.bgwhite code {
+   background-color: #fff !important;
+   border: solid 0px transparent !important;
+   font-family: monospace !important;
+   font-size: 0.90em !important;
+   color: #000 !important;
  }
  .small {
-     font-size: 0.90em;
+     font-size: 0.90em !important;
  }
 </style>
 
@@ -56,7 +57,7 @@ El encabezamiento consta de varios elementos que indican la ruta del correo elec
 A continuación se muestra una lista no exhaustiva de los elementos que pueden componer una cabecera, así como su significado. 
 
 - El campo `Received` aparece en la cabecera cada vez que pasa el email a un servidor de envío (SMTP). Por lo general, el nombre del host del servidor aparece con la dirección IP y la fecha. Los campos `Received` están clasificados desde el paso más reciente hasta el paso más antiguo de un servidor:
-<pre class="console"><code>
+<pre class="bgwhite"><code>
 Received: from mxplan7.mail.ovh.net (unknown [10.109.143.250])
 	by mo3005.mail-out.ovh.net (Postfix) with ESMTPS id 448F4140309
 	for &lt;john@mydomain.ovh&gt; ;Wed, 30 Jun 2021 13:12:40 +0000 (UTC)
@@ -64,37 +65,37 @@ Received: from mxplan7.mail.ovh.net (unknown [10.109.143.250])
   *Aquí el mensaje de correo electrónico se transmitió desde el servidor mxplan7.mail.ovh.net al servidor mo3005.mail-out.ovh.net el 30 de junio de 2021 a las 13:12:40 (zona horaria UTC)*
 
 - El campo `Return-Path` corresponde a la dirección de retorno cuando el mensaje no ha podido enviarse. La dirección de vuelta es generalmente la que ha realizado el envío.
-<pre class="console"><code>
+<pre class="bgwhite"><code>
 Return-Path: &lt;john@mydomain.ovh&gt;
 </code></pre>
 
 - El campo `From` designa la dirección del remitente del email y su nombre de visualización.
-<pre class="console"><code>
+<pre class="bgwhite"><code>
 From: John &lt;john@mydomain.ovh&gt;
 </code></pre>
 
 - El campo `To` designa la dirección del destinatario del mensaje de correo electrónico y su nombre de visualización.
-<pre class="console"><code>
+<pre class="bgwhite"><code>
 To: Robert &lt;robert@hisdomain.ovh&gt;
 </code></pre>
 
 - El campo `Subject` designa el objeto del mensaje de correo electrónico.
-<pre class="console"><code>
+<pre class="bgwhite"><code>
 Subject: Hello my friend
 </code></pre>
 
 - El campo `Message-ID` designa el identificador único del mensaje y termina por el nombre del servidor de envío (después de "@"). 
-<pre class="console"><code>
+<pre class="bgwhite"><code>
 Message-ID: &lt;Dc55+mK3j7hdZkf5_r-ff=fjq380ozc2h5@mailserver.domain.ovh&gt;
 </code></pre>
 
 - El campo `Received-SPF` muestra el resultado del control [SPF](/pages/web_cloud/domains/dns_zone_spf) realizado sobre el dominio del remitente. El argumento `client-ip` permite, entre otras cosas, encontrar la dirección IP del servidor que ha utilizado para enviar el mensaje de correo. 
-<pre class="console"><code>
+<pre class="bgwhite"><code>
 Received-SPF: Pass (mailfrom) identity=mailfrom; client-ip=000.11.222.33; helo=mail-smtp-001.domain.ovh; envelope-from=john@mydomain.ovh; receiver=robert@hisdomain.ovh 
 </code></pre>
 
 - Los campos `X-` son campos personalizados y se utilizan como complemento de los campos estándar. Estos servicios se implementan en los servidores en los que transitan los mensajes de correo.
-<pre class="console"><code>
+<pre class="bgwhite"><code>
 X-OVH-Remote: 000.11.222.33 (mail-smtp-001.domain.ovh)
 X-Ovh-Tracer-Id: 1234567891011121314
 X-VR-SPAMSTATE: OK
