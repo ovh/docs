@@ -1,6 +1,6 @@
 ---
-title: Cycle de vie du Hosted Private Cloud powered by VMware
-excerpt: Hosted Private Cloud Powered by VMware
+title: Cycle de vie de la solution VMware on OVHcloud
+excerpt: VMware on OVHcloud
 updated: 2023-06-26
 ---
 
@@ -11,7 +11,7 @@ updated: 2023-06-26
 
 ## Objectif
 
-**Cette page donne un aperçu de la politique de cycle de vie des services OVHcloud Hosted Private Cloud powered by VMware.**
+**Cette page donne un aperçu de la politique de cycle de vie des services VMware on OVHcloud.**
 
 Le service Hosted Private Cloud d'OVHcloud propose une infrastructure dédiée basée sur les technologies VMware SDDC ainsi que sur les technologies d'autres partenaires (Veeam, Zerto...).
 

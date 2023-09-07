@@ -1,6 +1,6 @@
 ---
-title: "Cykl życia usługi Hosted Private Cloud powered by VMware - Określenie działań, jakie należy podjąć (EN)"
-excerpt: Find out what to do with your Hosted Private Cloud powered by VMware solution, depending on its features
+title: "Cykl życia usługi VMware on OVHcloud - Określenie działań, jakie należy podjąć (EN)"
+excerpt: Find out what to do with your VMware on OVHcloud solution, depending on its features
 updated: 2022-12-27
 ---
 
@@ -16,7 +16,7 @@ In this guide, we detail the actions to take for the topics in progress:
 - vSphere version prior to vCSA 7.0 (build 20845200)
 - Version of NSX-v before 6.4.14
 
-**Find out what to do with your Hosted Private Cloud powered by VMware solution, depending on its features.**
+**Find out what to do with your VMware on OVHcloud solution, depending on its features.**
 
 ## Requirements
 

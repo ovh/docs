@@ -6,7 +6,7 @@ updated: 2023-01-26
 
 ## Objective
 
-The aim of this guide is to explain the implementation details of **vSphere Native Key Provider** and then perform a virtual machine encryption in the OVHcloud **Hosted Private Cloud powered by VMware** solution.
+The aim of this guide is to explain the implementation details of **vSphere Native Key Provider** and then perform a virtual machine encryption in the OVHcloud **VMware on OVHcloud** solution.
 
 **Find out how to implement virtual machine encryption using vSphere Native Key Provider.**
 
@@ -18,7 +18,7 @@ The aim of this guide is to explain the implementation details of **vSphere Nati
 
 ## Requirements
 
-- a [Hosted Private Cloud powered by VMware solution](https://www.ovhcloud.com/es/enterprise/products/hosted-private-cloud/)
+- a [VMware on OVHcloud solution](https://www.ovhcloud.com/es/enterprise/products/hosted-private-cloud/)
 - You must be logged in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
 - access to the vSphere management interface
 - you must have vSphere version and hosts version 7.0 Update 2 minimum.
@@ -26,7 +26,7 @@ The aim of this guide is to explain the implementation details of **vSphere Nati
 
 > [!warning]
 >
-> Your **Hosted Private Cloud powered by VMware** cluster may not be in version 7.0 Update 2. If so, please contact support to upgrade your infrastructure.
+> Your **VMware on OVHcloud** cluster may not be in version 7.0 Update 2. If so, please contact support to upgrade your infrastructure.
 >
 
 ## Presentation
@@ -79,7 +79,7 @@ Type a name in `Name`.
 
 > [!warning]
 >
-> If your Private Cloud solution is older than **Premier Hosted Private Cloud powered by VMware**, untick the `Use key provider only with TPM protected ESXi hosts (recommended)` box.
+> If your Private Cloud solution is older than **Premier VMware on OVHcloud**, untick the `Use key provider only with TPM protected ESXi hosts (recommended)` box.
 >
 
 Click `ADD KEY PROVIDER`{.action}.

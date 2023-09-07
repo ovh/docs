@@ -74,9 +74,9 @@ We invite you to follow the [NCSC incident management guidance](https://www.ncsc
 
 Not to our knowledge on this wave of attack.
 
-### Is the Hosted Private Cloud powered by VMware affected by this incident?
+### Is the VMware on OVHcloud affected by this incident?
 
-Our customers using [Hosted Private Cloud powered by VMware](https://www.ovhcloud.com/en-gb/hosted-private-cloud/) solutions are not affected by the ransomware. Specifically, the SSL gateway makes it possible to avoid this type of attack by blocking external access to this port (OpenSLP 427).
+Our customers using [VMware on OVHcloud](https://www.ovhcloud.com/en-gb/hosted-private-cloud/) solutions are not affected by the ransomware. Specifically, the SSL gateway makes it possible to avoid this type of attack by blocking external access to this port (OpenSLP 427).
 
 ## Go further
 

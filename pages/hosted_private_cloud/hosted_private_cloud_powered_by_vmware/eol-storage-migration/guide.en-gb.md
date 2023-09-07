@@ -13,7 +13,7 @@ updated: 2023-03-02
 
 ## Objective
 
-Some storages will no longer be available at the end of March 2023 as they will no longer be maintained, as described in this guide: [Life cycle of Hosted Private Cloud powered by VMware](/pages/cloud/private-cloud/lifecycle_policy#datastores-stockage).
+Some storages will no longer be available at the end of March 2023 as they will no longer be maintained, as described in this guide: [Life cycle of VMware on OVHcloud](/pages/cloud/private-cloud/lifecycle_policy#datastores-stockage).
 
 We will go through all the steps to migrate your data to more recent storage and disable your obsolete storage.
 

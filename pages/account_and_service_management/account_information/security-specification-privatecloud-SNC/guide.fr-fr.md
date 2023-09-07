@@ -1,12 +1,12 @@
 ---
-title: "Spécifications de sécurité du service Hosted Private Cloud VMware sous la qualification SecNumCloud"
+title: "Spécifications de sécurité du service VMware on OVHcloud sous la qualification SecNumCloud"
 excerpt: "Découvrez les particularités et fonctions de sécurité ainsi que les bonnes pratiques pour l'utilisation des service VMware on OVHcloud sous la qualification SecNumCloud"
 updated: 2023-09-06
 ---
 
 ## Objectif
 
-En complément au [modèle de responsabilité entre OVHcloud et le client sur le service Hosted Private Cloud powered by VMware sous la qualification SecNumcloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/SNC-responsibility-sharing), cette fiche a pour objectif de présenter les particularités et fonctions de sécurité propres à ce service. Elle met aussi en avant des bonnes pratiques qui permettront au client de l'exploiter au mieux.
+En complément au [modèle de responsabilité entre OVHcloud et le client sur le service VMware on OVHcloud sous la qualification SecNumcloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/SNC-responsibility-sharing), cette fiche a pour objectif de présenter les particularités et fonctions de sécurité propres à ce service. Elle met aussi en avant des bonnes pratiques qui permettront au client de l'exploiter au mieux.
 
 ## 1 - Certifications
 

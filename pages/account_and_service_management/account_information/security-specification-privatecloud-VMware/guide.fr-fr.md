@@ -1,12 +1,12 @@
 ---
-title: "Spécifications de sécurité du service Hosted Private Cloud VMware "
+title: "Spécifications de sécurité du service VMware on OVHcloud"
 excerpt: "Découvrez les particularités et fonctions de sécurité ainsi que les bonnes pratiques pour l'utilisation des service VMware on OVHcloud"
 updated: 2023-09-06
 ---
 
 ## Objectif
 
-En complément au [modèle de responsabilité entre OVHcloud et le client sur le service Hosted Private Cloud powered by VMware](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/responsibility-sharing), cette page a pour objectif de présenter les particularités et fonctions de sécurité propres à ce service. Elle met aussi en avant des bonnes pratiques qui vous permettront de l'exploiter au mieux.
+En complément au [modèle de responsabilité entre OVHcloud et le client sur le service VMware on OVHcloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/responsibility-sharing), cette page a pour objectif de présenter les particularités et fonctions de sécurité propres à ce service. Elle met aussi en avant des bonnes pratiques qui vous permettront de l'exploiter au mieux.
 
 ## 1 - Certifications
 
