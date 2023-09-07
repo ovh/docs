@@ -299,7 +299,7 @@ docker build . -t train-cnn-model-export-onnx:latest
 
 > [!warning]
 >
-> The shared registry of AI Deploy should only be used for testing purposes. Please consider attaching your own docker registry. More information about this can be found [here](/pages/public_cloud/ai_machine_learning/training_guide_05_howto_add_registry).
+> The shared registry of AI Deploy should only be used for testing purposes. Please consider attaching your own docker registry. More information about this can be found [here](/pages/public_cloud/ai_machine_learning/gi_07_manage_registry).
 >
 
 Find the address of your shared registry by launching this command:
