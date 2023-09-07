@@ -99,7 +99,7 @@ Weitere Informationen zur Ausübung ihres Widerrufsrechts finden Sie in unseren 
 >
 > Außerdem gilt das Widerrufsrecht nicht für unbezahlte Bestellungen, da diese automatisch annulliert werden, sobald der Bestellschein ausläuft.
 >
-> Weiterhin gilt es nicht für besondere Dienstleistungen, etwa [Domainnamen](https://www.ovhcloud.com/de/domains/) und [Sectigo SSL-Zertifikate](https://www.ovhcloud.com/de/web-hosting/options/ssl/)).
+> Weiterhin gilt es nicht für besondere Dienstleistungen, etwa [Domainnamen](https://www.ovhcloud.com/de/domains/) und [Sectigo SSL-Zertifikate](https://www.ovhcloud.com/de/web-hosting/options/ssl/).
 >
 
 Wenn die Voraussetzungen für das Widerrufsrecht erfüllt sind, kann es direkt über das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ausgeübt werden:

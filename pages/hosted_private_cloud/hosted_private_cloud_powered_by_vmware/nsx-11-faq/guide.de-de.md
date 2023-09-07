@@ -104,7 +104,7 @@ This feature is coming soon.
 
 ### Can I use the OVHcloud API to configure and use NSX?
 
-Yes, it it possible to do so.
+Yes, it is possible to do so.
 
 <a name="nsxterraform"></a>
 
