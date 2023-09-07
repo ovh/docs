@@ -5,7 +5,7 @@ updated: 2021-05-05
 
 ## Objectif
 
-Ce document est la politique de réversibilité du produit [Hosted Private Cloud Powered by VMware](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/).
+Ce document est la politique de réversibilité du produit [VMware on OVHcloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/).
 
 Cette politique vise à mettre en oeuvre les principes généraux de réversibilité et notre conformité au [code de conduite IaaS SWIPO pour les fournisseurs Cloud](https://swipo.eu/download-section/copyrighted-downloads/){.external}.
 

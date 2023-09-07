@@ -57,7 +57,7 @@ Clique no tipo de produto a rescindir na seguinte lista das principais ofertas O
 &emsp;&emsp;[Licenças](#licences)<br />
 
 [Hosted Private Cloud](#privatecloud)<br />
-&emsp;&emsp;[Hosted Private Cloud powered by VMware](#hostedprivatecloud-vmware)<br />
+&emsp;&emsp;[VMware on OVHcloud](#hostedprivatecloud-vmware)<br />
 &emsp;&emsp;[Veeam Cloud Connect](#veeamcloudconnect)<br />
 
 [Public Cloud](#publiccloud)<br />
@@ -127,9 +127,9 @@ Indique as razões do seu pedido de rescisão e clique em `Validar`{.action}.
 
 ### Hosted Private Cloud <a name="privatecloud"></a>
 
-#### Hosted Private Cloud powered by VMware <a name="hostedprivatecloud-vmware"></a>
+#### VMware on OVHcloud <a name="hostedprivatecloud-vmware"></a>
 
-Para rescindir a sua oferta [Hosted Private Cloud powered by VMware](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/), siga as instruções deste [guia](/pages/account_and_service_management/managing_billing_payments_and_services/comment_resilier_le_private_cloud).
+Para rescindir a sua oferta [VMware on OVHcloud](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/), siga as instruções deste [guia](/pages/account_and_service_management/managing_billing_payments_and_services/comment_resilier_le_private_cloud).
 
 #### Veeam Cloud Connect <a name="veeamcloudconnect"></a>
 

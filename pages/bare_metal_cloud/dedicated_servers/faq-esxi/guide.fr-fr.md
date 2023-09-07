@@ -74,9 +74,9 @@ Nous vous invitons à suivre les [recommandations du CERT-FR](https://www.cert.s
 
 Pas à notre connaissance sur cette vague d'attaque.
 
-### Est-ce que l'offre Hosted Private Cloud powered by VMware est concernée par cet incident ?
+### Est-ce que l'offre VMware on OVHcloud est concernée par cet incident ?
 
-Nos clients utilisant les solutions [Hosted Private Cloud powered by VMware](https://www.ovhcloud.com/fr/hosted-private-cloud/) ne sont pas concernés par le ransomware. Concrètement, la SSL gateway permet d’éviter cette typologie d’attaque en bloquant l’accès externe à ce port (OpenSLP 427).
+Nos clients utilisant les solutions [VMware on OVHcloud](https://www.ovhcloud.com/fr/hosted-private-cloud/) ne sont pas concernés par le ransomware. Concrètement, la SSL gateway permet d’éviter cette typologie d’attaque en bloquant l’accès externe à ce port (OpenSLP 427).
 
 ## Aller plus loin
 

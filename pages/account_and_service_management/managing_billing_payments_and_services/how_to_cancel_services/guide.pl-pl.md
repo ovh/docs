@@ -57,7 +57,7 @@ Kliknij na rodzaj produktu, który chcesz zrezygnować z usługi na poniższej l
 &emsp;&emsp;[Licencje](#licences)<br />
 
 [Hosted Private Cloud](#privatecloud)<br />
-&emsp;&emsp;[Hosted Private Cloud powered by VMware](#hostedprivatecloud-vmware)<br />
+&emsp;&emsp;[VMware on OVHcloud](#hostedprivatecloud-vmware)<br />
 &emsp;&emsp;[Veeam Cloud Connect](#veeamcloudconnect)<br />
 
 [Public Cloud](#publiccloud)<br />
@@ -127,9 +127,9 @@ Podaj przyczynę rezygnacji, a następnie kliknij `Zatwierdź`{.action}.
 
 ### Hosted Private Cloud <a name="privatecloud"></a>
 
-#### Hosted Private Cloud powered by VMware <a name="hostedprivatecloud-vmware"></a>
+#### VMware on OVHcloud <a name="hostedprivatecloud-vmware"></a>
 
-Aby zrezygnować z usługi [Hosted Private Cloud powered by VMware](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/), postępuj zgodnie z instrukcjami zawartymi w tym [przewodniku](/pages/account_and_service_management/managing_billing_payments_and_services/comment_resilier_le_private_cloud).
+Aby zrezygnować z usługi [VMware on OVHcloud](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/), postępuj zgodnie z instrukcjami zawartymi w tym [przewodniku](/pages/account_and_service_management/managing_billing_payments_and_services/comment_resilier_le_private_cloud).
 
 #### Veeam Cloud Connect <a name="veeamcloudconnect"></a>
 
