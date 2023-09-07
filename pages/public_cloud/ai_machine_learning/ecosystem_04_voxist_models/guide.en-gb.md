@@ -316,7 +316,7 @@ async def run_test(uri):
         await websocket.send('{"eof" : 1}')
         print(await websocket.recv())
 
-asyncio.run(run_test("ws://<ovh_app_endpoint>"))
+asyncio.run(run_test("wss://<ovh_app_endpoint>"))
 ```
 
 > [!primary]
