@@ -61,7 +61,7 @@ In this tutorial, the `conda` framework is used.
 
 #### Resources
 
-Using GPUs is recommended to train the image classification modèle: **densenet121**.
+Using GPUs is recommended to train the image classification model: **densenet121**.
 
 > [!primary]
 >
