@@ -8,7 +8,7 @@ updated: 2023-09-05
 
 Avec les [serveurs dédiés OVHcloud](https://www.ovhcloud.com/fr-ca/bare-metal/), vous pouvez [personnaliser le partitionnement](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh). Cela vous donne des possibilités de configuration assez vastes pour tous les OS à l'exception d'ESXi à cause de ses spécificités car il s'agit d'un système propriétaire UNIX avec un installateur propriétaire. Par conséquent, OVHcloud est dépendant de l'éditeur pour l'installation de l'OS. Depuis ESXi 7.0, il est possible de choisir entre 4 schémas de partitionnement prédéfinis par l'éditeur.
 
-**Cet article a pour objectif de vous montrer comment choisir un schéma de partitionnement dans l'[espace client OVHcloud](https://www.ovh.com/manager/#/dedicated/configuration) ou l’[API OVHcloud](https://ca.api.ovh.com/).**
+**Cet article a pour objectif de vous montrer comment choisir un schéma de partitionnement dans l'[espace client OVHcloud](https://ovh.com/manager/manager/#/dedicated/configuration) ou l’[API OVHcloud](https://ca.api.ovh.com/).**
 
 > [!primary]
 >
@@ -27,7 +27,7 @@ Avec les [serveurs dédiés OVHcloud](https://www.ovhcloud.com/fr-ca/bare-metal/
 
 ## En pratique
 
-ESXi 7.0 introduit une [option d'amorçage permettant de configurer la taille de la partition système ESXi](https://kb.vmware.com/s/article/81166). Cette fonctionnalité a été introduite par l'éditeur parce que certains clients se plaignaient de la présence parfois superflue d'un datastore qui remplissait tout l'espace disque ou un d'un OS qui avait une partition système surdimensionnée. OVHcloud propose désormais cette fonctionnalité qui est disponible aussi bien depuis l'[espace client OVHcloud](https://www.ovh.com/manager/#/dedicated/configuration) que via l’[API OVHcloud](https://ca.api.ovh.com/).
+ESXi 7.0 introduit une [option d'amorçage permettant de configurer la taille de la partition système ESXi](https://kb.vmware.com/s/article/81166). Cette fonctionnalité a été introduite par l'éditeur parce que certains clients se plaignaient de la présence parfois superflue d'un datastore qui remplissait tout l'espace disque ou un d'un OS qui avait une partition système surdimensionnée. OVHcloud propose désormais cette fonctionnalité qui est disponible aussi bien depuis l'[espace client OVHcloud](https://ovh.com/manager/manager/#/dedicated/configuration) que via l’[API OVHcloud](https://ca.api.ovh.com/).
 
 Malgré le fait que votre serveur ait plusieurs disques, l'installation d'ESXi n'est possible que sur le premier disque de la grappe de disques sélectionnée pour l'installation (voir « [Choisir une grappe de disques pour installer un système d’exploitation](/pages/bare_metal_cloud/dedicated_servers/install_hybrid) » ), les autres disques pouvant être configurés par la suite par l'utilisateur pour être utilisés pour stocker les machines virtuelles (voir « [Configuration du stockage d'un serveur HGR-STOR-2](/pages/bare_metal_cloud/dedicated_servers/hgrstor2_system_configuration#add-datastore) » ).
 
@@ -64,7 +64,7 @@ Comme vous pouvez le deviner, si le schéma n'est pas spécifié, le schéma de 
 > Cette procédure est très similaire à celle [des autres OS](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server), à l'exception qu'il n'est pas possible de sélectionner `Personnaliser la configuration des partitions`{.action} et qu'il y a une liste déroulante permettant de sélectionner le schéma de partitionnment à la quatrième et dernière étape.
 >
 
-Dans l'[espace client OVHcloud](https://www.ovh.com/manager/#/dedicated/configuration), sous l'onglet `Informations générales`{.action}, cliquez sur `...`{.action} en face du système d'exploitation puis cliquez sur `Installer`{.action}.
+Dans l'[espace client OVHcloud](https://ovh.com/manager/manager/#/dedicated/configuration), sous l'onglet `Informations générales`{.action}, cliquez sur `...`{.action} en face du système d'exploitation puis cliquez sur `Installer`{.action}.
 
 ![Bouton Réinstaller](images/reinstalling-your-server-00.png){.thumbnail}
 
