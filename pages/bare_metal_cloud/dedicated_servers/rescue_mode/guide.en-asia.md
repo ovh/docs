@@ -66,7 +66,7 @@ Remember to change the netboot back to `Boot from the hard disk`{.action} before
 
 Once your server has rebooted, you will receive an email with your rescue mode access credentials. This email is also available in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia) as soon as it is sent: Click on the name associated with your NIC handle (Customer ID) in the menu bar in the top right-hand corner, then select `Service emails`{.action}.
 
-You will then need to access your server via the command line or an [[SSH tool](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction)](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction), using the root password generated for the rescue mode.
+You will then need to access your server via the command line or an [SSH tool](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction)(/pages/bare_metal_cloud/dedicated_servers/ssh_introduction), using the root password generated for the rescue mode.
 
 For example:
 
