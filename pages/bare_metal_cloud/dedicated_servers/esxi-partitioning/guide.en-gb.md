@@ -50,7 +50,7 @@ As you can see, no datastore is created on the first disk with the `max` partiti
 >
 > Did you know?
 >
-> [VMware on OVHcloud solutions](https://www.ovhcloud.com/en-gb/hosted-private-cloud/vmware/) is based on ESXi with the partitioning layout `small`.
+> [VMware on OVHcloud solutions](https://www.ovhcloud.com/en-gb/hosted-private-cloud/vmware/) are based on ESXi with the partitioning layout `small`.
 >
 
 ### How to select the partitioning scheme
