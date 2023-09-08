@@ -1,7 +1,7 @@
 ---
 title: 'Primeros pasos con las API de OVHcloud'
 excerpt: 'Cómo utilizar las API de OVHcloud'
-updated: 2023-08-24
+updated: 2023-09-08
 ---
 
 > [!primary]

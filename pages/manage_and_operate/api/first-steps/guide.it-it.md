@@ -1,7 +1,7 @@
 ---
 title: Iniziare a utilizzare le API OVHcloud
 excerpt: Come utilizzare le API OVHcloud
-updated: 2023-08-24
+updated: 2023-09-08
 ---
 
 > [!primary]
