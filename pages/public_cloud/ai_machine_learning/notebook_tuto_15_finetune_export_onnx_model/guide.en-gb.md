@@ -1,7 +1,7 @@
 ---
-title: AI Notebooks - Tutorial - Fine-Tune and export AI model to ONNX
-excerpt: Learn how to train and export PyTorch model to ONNX for optimized inference
-updated: 2023-09-06
+title: AI Notebooks - Tutorial - Fine-Tune and export an AI model to ONNX
+excerpt: Learn how to train and export a PyTorch model to ONNX for optimized inference
+updated: 2023-09-08
 ---
 
 ## Objective
@@ -15,7 +15,7 @@ For this purpose, we use an **image classification** model: [DenseNet](https://p
 > DenseNet models are pre-trained on [ImageNet](https://www.image-net.org/) dataset.
 >
 
-The goal is to Fine-Tune model **DenseNet121** to classify daily life images with the **CIFAR-10** dataset. It is composed of 10 classes:
+The goal is to Fine-Tune a **DenseNet121** model to classify daily life images with the **CIFAR-10** dataset. It is composed of 10 classes:
 
 - airplane
 - automobile
@@ -80,7 +80,7 @@ To access the different versions of `conda` available, run the following command
 ovhai capabilities framework get conda -o yaml
 ```
 
-You will also need to choose the number of GPUs to use in your notebook using `<nb-gpus>`.
+You will also need to choose the number of GPUs to use in your notebook, using `<nb-gpus>`.
 
 To launch your notebook, run the following command:
 

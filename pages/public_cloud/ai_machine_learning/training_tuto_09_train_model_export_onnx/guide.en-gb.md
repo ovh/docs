@@ -14,12 +14,12 @@ Exporting your model in ONNX format allows you to **optimize the inference** of 
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
-- A Public Cloud project created
-- The ovhai CLI interface installed on your system (more information [here](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli))
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
+- A Public Cloud project created.
+- The ovhai CLI interface installed on your system (more information [here](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli)).
 - [Docker](https://www.docker.com/get-started) installed and configured to build images.
 - An OCI / Docker image registry. You can use a public registry (such as [Docker Hub](https://hub.docker.com/) for example) or a private registry. Refer to the [Creating a private registry](/pages/public_cloud/containers_orchestration/managed_private_registry/creating-a-private-registry) documentation to create a private registry based on Harbor.
-- Knowledge about building images with [Dockerfile](https://docs.docker.com/engine/reference/builder/)
+- Knowledge about building images with [Dockerfile](https://docs.docker.com/engine/reference/builder/).
 
 ## Instructions
 
@@ -29,9 +29,9 @@ To be able to retrieve and use the ONNX model at the end of training, you need t
 
 #### Create your bucket via UI (Control Panel)
 
-If you do not feel comfortable with commands, this way will be more intuitive for you.
+If you do not feel comfortable with commands, this method may be more intuitive.
 
-First, go to the `OVHcloud Public Cloud` section of the [Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
+First, go to the `Public Cloud` section of the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
 
 Then, select the `Object Storage` section (in the Storage category) and create a new object container by clicking `Storage` > `Object Storage` > `Create an object container`.
 
@@ -41,7 +41,7 @@ You can create the bucket that will store your ONNX model at the end of the trai
 
 To follow this part, make sure you have installed the [ovhai CLI](https://cli.bhs.ai.cloud.ovh.net/) on your computer or on an instance.
 
-As in the Control Panel, you will have to specify the `region`, the `name` (**cnn-model-onnx**) of your bucket. Create your Object Storage bucket as follow:
+As in the Control Panel, you will have to specify the `region`and the `name` (**cnn-model-onnx**) of your bucket. Create your Object Storage bucket as follows:
 
 ```bash
 ovhai bucket create <region> cnn-model-onnx
@@ -237,7 +237,7 @@ if __name__ == '__main__':
 
 > [!primary]
 >
-> Find the **full Python code** on our [GitHub repository]https://github.com/ovh/ai-training-examples/blob/main/jobs/onnx/train_image_classification.py).
+> Find the **full Python code** on our [GitHub repository](https://github.com/ovh/ai-training-examples/blob/main/jobs/onnx/train_image_classification.py).
 >
 
 
@@ -283,9 +283,9 @@ docker build . -t train-cnn-model-export-onnx:latest
 
 > [!primary]
 >
-> The dot `.` argument indicates that your build context (place of the **Dockerfile** and other needed files) is the current directory.
+> - The dot `.` argument indicates that your build context (place of the **Dockerfile** and other needed files) is the current directory.
 >
-> The `-t` argument allows you to choose the identifier to give to your image. Usually image identifiers are composed of a **name** and a **version tag** `<name>:<version>`. For this example we chose **train-cnn-model-export-onnx:latest**.
+> - The `-t` argument allows you to choose the identifier to give to your image. Usually image identifiers are composed of a **name** and a **version tag** `<name>:<version>`. For this example we chose **train-cnn-model-export-onnx:latest**.
 >
 
 > [!warning]
@@ -320,6 +320,7 @@ Push the compiled image into the shared registry:
 docker tag train-cnn-model-export-onnx:latest <shared-registry-address>/train-cnn-model-export-onnx:latest
 docker push <shared-registry-address>/train-cnn-model-export-onnx:latest
 ```
+
 Once your Docker image is created and pushed into the registry, you can directly use the `ovhai` command to create your model training.
 You can launch the training specifying more or less GPU depending on the speed you want for your training.
 
@@ -334,15 +335,15 @@ You can launch the training job using the UI or the CLI.
 
 #### Create your training job via UI (Control Panel)
 
-If you do not feel comfortable with commands, this way will be more intuitive for you.
+If you do not feel comfortable with commands, this method may be more intuitive.
 
-First, go to the `OVHcloud Public Cloud` section of the [Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
+First, go to the `Public Cloud` section of the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
 
 Then, select the `AI Training` section (in the AI & Machine Learning category) and create a new job by clicking `AI Training` > `Launch a new job`.
 
 You can create the job that will train your model and export it to ONNX model. Select the *region* and add your *custom docker image* (`<shared-registry-address>/train-cnn-model-export-onnx:latest`).
 
-Then attach your *Object Storage container* `cnn-model-onnx` and precise the mount directory: `/workspace/models`.
+Then attach your *Object Storage container* `cnn-model-onnx` and define the mount directory: `/workspace/models`.
 
 Finally, *configure your job* and choose at least `1 GPU`.
 
@@ -358,7 +359,7 @@ ovhai job run \
 	<shared-registry-address>/train-cnn-model-export-onnx:latest
 ```
 
-Then you can check the training evolution through the job logs.
+Then you can check the training evolution through the job logs:
 
 ```bash
 ovhai job logs <job_id>
