@@ -95,7 +95,7 @@ Weitere Informationen zur Ausübung ihres Widerrufsrechts finden Sie in unseren 
 > Das Widerrufsrecht gilt nur für Privatpersonen und gilt nur für Neubestellungen. Sie können es also nicht in den folgenden Fällen geltend machen:
 >
 > - Verlängerungsbestellungen
-> - Ihre OVHcloud Kundenkennung ist nicht vom Typ [Privatperson](/pages/account/customer/all_about_username#account-typ-andern)
+> - Ihre OVHcloud Kundenkennung ist nicht vom Typ [Privatperson](/pages/account_and_service_management/account_information/all_about_username#account-typ-andern)
 >
 > Außerdem gilt das Widerrufsrecht nicht für unbezahlte Bestellungen, da diese automatisch annulliert werden, sobald der Bestellschein ausläuft.
 >

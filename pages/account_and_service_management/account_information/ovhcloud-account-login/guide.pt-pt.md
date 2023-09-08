@@ -68,7 +68,7 @@ Neste caso, o procedimento de reinicialização da palavra-passe não pode ser e
 
 Pode contactar o suporte da OVHcloud em +351 213 155 642 para que este endereço de SOS se torne o endereço de e-mail principal.
 
-Uma vez efetuada esta ação, é essencial [introduzir um **novo** endereço de e-mail de SOS](/pages/account/customer/all_about_username#backup-email) na sua conta.
+Uma vez efetuada esta ação, é essencial [introduzir um **novo** endereço de e-mail de SOS](/pages/account_and_service_management/account_information/all_about_username#backup-email) na sua conta.
 
 #### Se não indicou um endereço de e-mail de SOS ou se este endereço também é inválido
 

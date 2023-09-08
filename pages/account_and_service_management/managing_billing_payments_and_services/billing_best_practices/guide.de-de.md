@@ -40,7 +40,7 @@ Im Bereich `Mein Profil`{.action} rechts auf Ihrem Bildschirm (klicken Sie erneu
 
 ![Myprofil](images/myprofile.png){.thumbnail}
 
-Weitere Informationen finden Sie in der Anleitung [OVHcloud Kunden-Account absichern und persönliche Informationen verwalten](/pages/account/customer/all_about_username#meine-personlichen-angaben-andern).
+Weitere Informationen finden Sie in der Anleitung [OVHcloud Kunden-Account absichern und persönliche Informationen verwalten](/pages/account_and_service_management/account_information/all_about_username#meine-personlichen-angaben-andern).
 
 Vergewissern Sie sich, dass Ihre E-Mail-Adresse stets **aktuell, gesichert und erreichbar** ist. Die E-Mails unserer Dienste werden an diese Adresse versendet, darunter auch **Wiederherstellungsnachrichten** bei Verlust Ihres Passworts.
 

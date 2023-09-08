@@ -42,13 +42,13 @@ Sprawdź bezpieczeństwo komputera Windows, Mac lub Linux:
 
 - sprawdź aktualizacje maszyny;
 - uruchom pełen skaner swojego komputera po aktualizacji oprogramowania antywirusowego / anty-malware;
-- regularnie zmieniaj hasło administratora dla swojego stanowiska (aby uzyskać więcej informacji na temat wyboru hasła, postępuj zgodnie z instrukcjami zawartymi w tym [przewodniku](/pages/account/customer/all_about_username#utworz-silne-i-unikalne-haslo)).
+- regularnie zmieniaj hasło administratora dla swojego stanowiska (aby uzyskać więcej informacji na temat wyboru hasła, postępuj zgodnie z instrukcjami zawartymi w tym [przewodniku](/pages/account_and_service_management/account_information/all_about_username#utworz-silne-i-unikalne-haslo)).
 
 ### Etap 2: zabezpiecz swój panel klienta OVHcloud
 
 Aby zabezpieczyć Twoje konto klienta, [włącz weryfikację dwuetapową](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa) i postępuj zgodnie z [instrukcjami zawartymi w tym przewodniku](/pages/account_and_service_management/account_information/all_about_username).
 
-Pamiętaj, aby zaktualizować [dane przypisane do Twojego konta klienta](/pages/account/customer/all_about_username#jak-zarzadzac-danymi-osobowymi) i dodać do niego zapasowy **e-mail**.<br>
+Pamiętaj, aby zaktualizować [dane przypisane do Twojego konta klienta](/pages/account_and_service_management/account_information/all_about_username#jak-zarzadzac-danymi-osobowymi) i dodać do niego zapasowy **e-mail**.<br>
 W przypadku utraty danych do logowania i/lub niedostępności głównego adresu e-mail przypisanego do Twojego konta klienta OVHcloud, potrzebujemy wiadomości e-mail zapasowej lub aktualnych danych osobowych, które pomogą Ci w znalezieniu dostępu do Twoich rozwiązań.
 
 ### Etap 3: wykonuj regularnie kopie zapasowe swojej strony <a name="backup"></a>

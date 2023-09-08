@@ -68,7 +68,7 @@ In diesem Fall kann das Passwort nicht über die Loginseite zurückgesetzt werde
 
 Kontaktieren Sie den OVHcloud Support unter +49 681 906730, um diese Backup-Adresse als Haupt-E-Mail-Adresse einzurichten.
 
-Nachdem diese Umstellung erfolgt ist, [richten Sie **erneut** eine Backup-Adresse](/pages/account/customer/all_about_username#backup-email) ein.
+Nachdem diese Umstellung erfolgt ist, [richten Sie **erneut** eine Backup-Adresse](/pages/account_and_service_management/account_information/all_about_username#backup-email) ein.
 
 #### Wenn Sie keine sekundäre E-Mail-Adresse hinterlegt haben oder diese ebenfalls ungültig ist
 

@@ -68,7 +68,7 @@ In questo caso, la procedura di reimpostazione della password non può essere ef
 
 Contatta il supporto OVHcloud al +39 02 5560 0423 per fare in modo che questo indirizzo di recupero diventi l'indirizzo email principale.
 
-Una volta completata l'operazione, è fondamentale [inserire un **nuovo** indirizzo email di recupero](/pages/account/customer/all_about_username#backup-email) nel tuo account.
+Una volta completata l'operazione, è fondamentale [inserire un **nuovo** indirizzo email di recupero](/pages/account_and_service_management/account_information/all_about_username#backup-email) nel tuo account.
 
 #### Se non hai inserito un indirizzo email di recupero o se questo non è valido
 

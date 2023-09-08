@@ -38,13 +38,13 @@ Vérifiez donc tout d'abord la sécurité de votre poste Windows, Mac ou Linux :
 
 - vérifiez les mises à jour de votre machine;
 - lancez un scan complet de votre poste, après avoir mis à jour votre logiciel antivirus / anti-malware;
-- changez régulièrement le mot de passe administrateur de votre poste (pour plus d'informations sur le choix des mots de passe, suivez les instructions de ce [guide](/pages/account/customer/all_about_username#creer-un-mot-de-passe-solide-et-unique)).
+- changez régulièrement le mot de passe administrateur de votre poste (pour plus d'informations sur le choix des mots de passe, suivez les instructions de ce [guide](/pages/account_and_service_management/account_information/all_about_username#creer-un-mot-de-passe-solide-et-unique)).
 
 ### Étape 2. Sécurisez votre espace client OVHcloud
 
 Pour sécuriser votre compte client, [activez la double authentification](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa) et suivez les instructions de ce [guide](/pages/account_and_service_management/account_information/all_about_username).
 
-Pensez notamment à mettre à jour les [informations de votre compte client](/pages/account/customer/all_about_username#modifier-mes-informations-personnelles) et à y ajouter un **e-mail de secours**.<br>
+Pensez notamment à mettre à jour les [informations de votre compte client](/pages/account_and_service_management/account_information/all_about_username#modifier-mes-informations-personnelles) et à y ajouter un **e-mail de secours**.<br>
 En cas de perte de vos identifiants et/ou d'indisponibilité de l'adresse e-mail principale de votre compte client OVHcloud, un e-mail de secours ou des informations personnelles à jour nous seront indispensables pour vous aider à retrouver l'accès à vos solutions.
 
 ### Étape 3. Effectuez régulièrement des sauvegardes de votre site <a name="backup"></a>

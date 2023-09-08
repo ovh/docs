@@ -64,7 +64,7 @@ In this case, the password reset procedure cannot be performed from the login pa
 
 You can contact the OVHcloud Customer Service (dial 00333 370 0425) so that this backup address becomes the primary email address.
 
-Once this action has been completed, please [enter a **new** backup email address](/pages/account/customer/all_about_username#backup-email) in your account settings.
+Once this action has been completed, please [enter a **new** backup email address](/pages/account_and_service_management/account_information/all_about_username#backup-email) in your account settings.
 
 #### If you have not entered a backup email address, or it is also invalid
 

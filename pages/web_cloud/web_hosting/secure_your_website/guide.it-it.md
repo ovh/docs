@@ -42,13 +42,13 @@ Per prima cosa verifica la sicurezza della tua postazione Windows, Mac o Linux:
 
 - verificate gli aggiornamenti della vostra macchina;
 - esegui una scansione completa della tua postazione dopo aver aggiornato il software antivirus/anti-malware;
-- modificare regolarmente la password amministratore del tuo dispositivo (per maggiori informazioni sulla scelta delle password, segui le istruzioni di questa [guida](/pages/account/customer/all_about_username#creare-una-password-solida-e-unica)).
+- modificare regolarmente la password amministratore del tuo dispositivo (per maggiori informazioni sulla scelta delle password, segui le istruzioni di questa [guida](/pages/account_and_service_management/account_information/all_about_username#creare-una-password-solida-e-unica)).
 
 ### Step 2: proteggi il tuo Spazio Cliente OVHcloud
 
 Per rendere sicuro il tuo account cliente, [attiva la doppia autenticazione](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa) e segui le istruzioni di questa [guida](/pages/account_and_service_management/account_information/all_about_username).
 
-In particolare, aggiorna le [informazioni del tuo account cliente](/pages/account/customer/all_about_username#modifica-le-tue-informazioni-personali) e aggiungi un **email di recupero**.<br>
+In particolare, aggiorna le [informazioni del tuo account cliente](/pages/account_and_service_management/account_information/all_about_username#modifica-le-tue-informazioni-personali) e aggiungi un **email di recupero**.<br>
 In caso di perdita delle credenziali e/o indisponibilità dell'indirizzo email principale dell'account cliente OVHcloud, per aiutarti a trovare il tuo servizio è necessario un'email di recupero o informazioni personali aggiornate.
 
 ### Step 3: effettua regolarmente backup del tuo sito <a name="backup"></a>

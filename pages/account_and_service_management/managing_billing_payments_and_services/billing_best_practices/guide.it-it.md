@@ -40,7 +40,7 @@ Nella sezione `Il tuo profilo`{.action} a destra dello schermo (clicca di nuovo 
 
 ![myprofile](images/myprofile.png){.thumbnail}
 
-Per maggiori informazioni, consulta la guida [Rendere sicuro il tuo account OVHcloud e gestire i tuoi dati personali](/pages/account/customer/all_about_username#come-gestire-le-tue-informazioni-personali).
+Per maggiori informazioni, consulta la guida [Rendere sicuro il tuo account OVHcloud e gestire i tuoi dati personali](/pages/account_and_service_management/account_information/all_about_username#come-gestire-le-tue-informazioni-personali).
 
 Assicurati che il tuo indirizzo email sia sempre **aggiornato, sicuro e accessibile.** Le email provenienti dai nostri servizi ti verranno inviate a questo indirizzo, compresi i **messaggi di reimpostazione** in caso di perdita della password.
 
