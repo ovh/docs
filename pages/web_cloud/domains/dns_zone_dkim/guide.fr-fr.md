@@ -171,7 +171,7 @@ Pour activer le DKIM, il vous suffit maintenant de cliquer sur la pastille `DKIM
 >
 > Pour que la zone DNS du nom de domaine concerné soit automatiquement configurée, il est nécessaire que celle-ci soit gérée depuis le même compte client OVHcloud que votre plateforme e-mail. Dans le cadre d'une zone DNS gérée depuis un autre compte client OVHcloud ou un nom de domaine externe à OVHcloud, il sera nécessaire de saisir manuellement les enregistrements DNS.
 >
-> Pour cela, aidez-vous de l'étape « **3.Récupérer l'enregistrement DNS** » de la rubrique [Configuration complète du DKIM](#firststep), en suivant le chapitre correspondant à votre offre e-mail, ([Exchange](#confex) ou [E-mail Pro](#confemp)).
+> Pour cela, aidez-vous de l'étape « **3.Récupérer l'enregistrement DNS** » de la rubrique [Configuration complète du DKIM](#firststep), en suivant le chapitre correspondant à votre offre e-mail, [Exchange](#confex) ou [E-mail Pro](#confemp).
 
 L'activation automatique du DKIM dure entre 30 minutes et 24 heures maximum. Pour vérifier que votre DKIM est fonctionnel, il vous suffit de retourner dans l'onglet `Domaines associés`{.action} de votre plateforme e-mail et de vous assurer que la pastille `DKIM` est devenue verte.
 
@@ -233,7 +233,7 @@ Suivez les **5 étapes** ci-dessous en cliquant sur chacun des onglets.
 >> - `domainName` : saisissez le nom de domaine attaché à votre plateforme Exchange sur lequel vous souhaitez activer DKIM. <br>
 >>
 >> *Exemple de résultat:*
->> ```{.console}
+>> ``` console
 >> "ovhex123456-selector1"
 >> "ovhex123456-selector2"
 >> ```
@@ -263,7 +263,7 @@ Suivez les **5 étapes** ci-dessous en cliquant sur chacun des onglets.
 >> <br>
 >>
 >> *Exemple de résultat :*
->> ```{.console}
+>> ``` console
 >> status: "todo",
 >> function: "addExchangeDomainDKIM",
 >> id : 107924143,
@@ -294,7 +294,7 @@ Suivez les **5 étapes** ci-dessous en cliquant sur chacun des onglets.
 >> - `domainName` : saisissez le nom de domaine attaché à votre plateforme Exchange sur lequel vous souhaitez configurer le DKIM.
 >>
 >> *Exemple de résultat :*
->> ```{.console}
+>> ``` console
 >> targetRecord: "ovhex123456-selector1._domainkey.1675.ac.dkim.mail.ovh.net"
 >> recordType: "CNAME"
 >> header: "from;to;subject;date"
@@ -328,7 +328,7 @@ Suivez les **5 étapes** ci-dessous en cliquant sur chacun des onglets.
 >>
 >> Si vous configurez votre zone DNS dans une interface tierce hors OVHcloud, votre enregistrement CNAME doit avoir la forme suivante :
 >>
->> ```{.console}
+>> ``` console
 >> ovhex123456-selector1._domainkey IN CNAME ovhex123456-selector1._domainkey.1500.ab.dkim.mail.ovh.net.
 >> ```
 >>
@@ -354,7 +354,7 @@ Suivez les **5 étapes** ci-dessous en cliquant sur chacun des onglets.
 >> - `domainName` : saisissez le nom de domaine attaché à votre plateforme Exchange sur lequel vous souhaitez activer le DKIM.
 >>
 >> *Exemple de résultat :*
->> ```{.console}
+>> ``` console
 >> id: 108716876
 >> todoDate: "2023-05-05T11:30:11+02:00"
 >> finishDate: null
@@ -387,7 +387,7 @@ Suivez les **5 étapes** ci-dessous en cliquant sur chacun des onglets.
 >> - `domainName` : saisissez le nom de domaine attaché à votre plateforme E-mail Pro sur lequel vous souhaitez activer DKIM. <br>
 >>
 >> *Exemple de résultat:* 
->> ```{.console}
+>> ``` console
 >> "ovhemp123456-selector1"
 >> "ovhemp123456-selector2"
 >> ```
@@ -420,7 +420,7 @@ Suivez les **5 étapes** ci-dessous en cliquant sur chacun des onglets.
 >> <br>
 >>
 >> *Exemple de résultat :*
->> ```{.console}
+>> ``` console
 >> status: "todo",
 >> function: "addDomainDKIM",
 >> id : 107924143,
@@ -450,7 +450,7 @@ Suivez les **5 étapes** ci-dessous en cliquant sur chacun des onglets.
 >> - `domainName` : saisissez le nom de domaine attaché à votre plateforme E-mail Proe sur lequel vous souhaitez configurer le DKIM.
 >>
 >> *Exemple de résultat :*
->> ```{.console}
+>> ``` console
 >> targetRecord: "ovhemp123456-selector1._domainkey.1675.ac.dkim.mail.ovh.net"
 >> recordType: "CNAME"
 >> header: "from;to;subject;date"
@@ -484,7 +484,7 @@ Suivez les **5 étapes** ci-dessous en cliquant sur chacun des onglets.
 >>
 >> Si vous configurez votre zone DNS dans une interface tierce hors OVHcloud, votre enregistrement CNAME doit avoir la forme suivante :
 >>
->> ```{.console}
+>> ``` console
 >> ovhemp123456-selector1._domainkey IN CNAME ovhemp123456-selector1._domainkey.1500.ab.dkim.mail.ovh.net.
 >> ```
 >>
@@ -509,7 +509,7 @@ Suivez les **5 étapes** ci-dessous en cliquant sur chacun des onglets.
 >> - `domainName` : saisissez le nom de domaine attaché à votre plateforme E-mail Pro sur lequel vous souhaitez activer le DKIM.
 >>
 >> *Exemple de résultat :*
->> ```{.console}
+>> ``` console
 >> id: 108716876
 >> todoDate: "2023-05-05T11:30:11+02:00"
 >> finishDate: null
@@ -551,7 +551,7 @@ Sélectionnez l'offre e-mail concernée dans les onglets suivant:
 >>
 >> Si vous rencontrez l'erreur suivante lorsque vous lancez l'appel API, cela signifie que le sélecteur n'existe pas ou a été supprimé. Il faudra le créer.
 >>
->> ```{.console}
+>> ``` console
 >> Not Found (404)
 >> { "message": "The requested object (selectorName = ovhemp123456-selector1) does not exist" }
 >> ```
@@ -578,7 +578,7 @@ Sélectionnez l'offre e-mail concernée dans les onglets suivant:
 >>
 >> Si vous rencontrez l'erreur suivante lorsque vous lancez l'appel API, cela signifie que le sélecteur n'existe pas ou a été supprimé. Il faudra le créer.
 >>
->> ```{.console}
+>> ``` console
 >> Not Found (404)
 >> { "message": "The requested object (selectorName = ovhemp123456-selector1) does not exist" }
 >> ```
@@ -702,7 +702,7 @@ Cet enregistrement est nommé DKIM sur l'interface mais il s'agit en réalité d
 
 *exemple:*
 
-```{.console}
+``` console
   selector-name._domainkey.mydomain.ovh.
 ```
 
@@ -750,13 +750,13 @@ Pour bien comprendre la composition de l'enregistrement DKIM, consultez la parti
 
 - sous-domaine :
 
-```{.console}
+``` console
 selector-name._domainkey.mydomain.ovh.
 ```
 
 - cible :
 
-```{.console}
+``` console
 v=DKIM1;t=s;p= MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA77VDAIfyhjtoF0DIE5V7 rev1EKk4L0nxdBpD5O/jPrM4KP0kukeuB6IMpVplkkq52MSDeRcjoO50h0DmwZOr RUkyGjQwOnAh0VhY3fqkuwBYftEX7vWo8C2E1ylzimABkwPpSL62jZ1DheoXcil9 1M35wWBKtlYdXVedKjCQKOEnwTo+0hdNe38rU9NMgq6nbTIMjDntvxoVI+yF3kcx q/VpAY8BIYbcAXkVFvUyfUBABnnKpf0SfblsfcLW0Koy/FRxPDFOvnjNxXeOxMFR UI6K6PaW2WvtbJG2v+gHLY5M4tB0+/FNJU9emZfkPOk3DmRhZ8ENi7+oZa2ivUDj OQIDAQAB
 ```
 
