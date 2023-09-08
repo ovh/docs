@@ -1,6 +1,6 @@
 ---
-title: AI Training - Tutorial - Train a PyTorch model and export it to ONNX
-excerpt: How to train and export an image classification model to ONNX using AI Training
+title: "AI Training - Tutoriel - Entraîner un modèle PyTorch et l'exporter au format ONNX (EN)"
+excerpt: "Comment entraîner et exporter un modèle de classification d'images au format ONNX avec AI Training"
 updated: 2023-09-08
 ---
 
@@ -14,7 +14,7 @@ Exporting your model in ONNX format allows you to **optimize the inference** of 
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
 - A Public Cloud project created.
 - The ovhai CLI interface installed on your system (more information [here](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli)).
 - [Docker](https://www.docker.com/get-started) installed and configured to build images.
@@ -31,7 +31,7 @@ To be able to retrieve and use the ONNX model at the end of training, you need t
 
 If you do not feel comfortable with commands, this method may be more intuitive.
 
-First, go to the `Public Cloud` section of the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
+First, go to the `Public Cloud` section of the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
 
 Then, select the `Object Storage` section (in the Storage category) and create a new object container by clicking `Storage` > `Object Storage` > `Create an object container`.
 
@@ -337,7 +337,7 @@ You can launch the training job using the UI or the CLI.
 
 If you do not feel comfortable with commands, this method may be more intuitive.
 
-First, go to the `Public Cloud` section of the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
+First, go to the `Public Cloud` section of the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
 
 Then, select the `AI Training` section (in the AI & Machine Learning category) and create a new job by clicking `AI Training` > `Launch a new job`.
 

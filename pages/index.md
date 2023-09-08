@@ -866,7 +866,7 @@
                 + [AI Training - Tutorial - Compare models with W&B for audio classification task](public_cloud/ai_machine_learning/training_tuto_06_models_comparaison_weights_and_biases)
                 + [AI Training - Tutorial - Train a Rasa chatbot with Docker and AI Training](public_cloud/ai_machine_learning/training_tuto_07_train_rasa_chatbot)
                 + [AI Training - Tutorial - Train a model to recognize marine mammal sounds](public_cloud/ai_machine_learning/training_tuto_08_train_marine_mammal_sound)
-                + [AI Training - Tutorial - Train a PyTorch model and export it to ONNX](public_cloud/ai_machine_learning/training_tuto_10_train_model_export_onnx)
+                + [AI Training - Tutorial - Train a PyTorch model and export it to ONNX](public_cloud/ai_machine_learning/training_tuto_09_train_model_export_onnx)
         + [AI Deploy](public-cloud-ai-and-machine-learning-ai-deploy)
             + [Guides](public-cloud-ai-and-machine-learning-ai-deploy-guides)
                 + [AI Deploy - Features, Capabilities and Limitations](public_cloud/ai_machine_learning/deploy_guide_01_capabilities)
