@@ -1,7 +1,7 @@
 ---
 title: 'Activer et utiliser le mode rescue'
 excerpt: 'Comment activer et utiliser le mode rescue sur un serveur dédié'
-updated: 2023-04-09
+updated: 2023-09-05
 ---
 
 ## Objectif
@@ -62,7 +62,7 @@ Lorsque vous aurez terminé vos tâches en mode rescue, n'oubliez pas de redéfi
 
 Après le redémarrage de votre serveur, vous recevrez un e-mail avec vos identifiants de connexion en mode rescue. Cet e-mail est également disponible dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc). Cliquez sur le nom associé à votre identifiant client dans le coin supérieur droit de votre espace client, puis sur `E-mails de service`{.action}.
 
-Vous devrez ensuite accéder à votre serveur en ligne de commande ou via un outil SSH, en utilisant le mot de passe root généré pour le mode rescue.
+Vous devrez ensuite accéder à votre serveur en ligne de commande ou via un outil [SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction), en utilisant le mot de passe root généré pour le mode rescue.
 
 Par exemple :
 
@@ -86,7 +86,9 @@ Le montage des partitions est réalisé à l’aide de la commande `mount` en SS
 
 ```bash
 fdisk -l
+```
 
+```console
 Disk /dev/hda 40.0 GB, 40020664320 bytes
 255 heads, 63 sectors/track, 4865 cylinders
 Units = cylinders of 16065 * 512 = 8225280 bytes

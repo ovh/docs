@@ -1,8 +1,7 @@
 ---
 title: 'Attivare e utilizzare il Rescue mode'
 excerpt: 'Come riavviare il tuo server dedicato in modalità Rescue'
-legacy_guide_number: g920
-updated: 2023-04-09
+updated: 2023-09-05
 ---
 
 > [!primary]
@@ -74,7 +73,7 @@ Una volta terminate le operazioni in modalità Rescue, ricordate di ridefinire i
 
 Dopo il riavvio del server, riceverai un'email con le credenziali di accesso in modalità Rescue. Questa email è disponibile anche nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Clicca sul nome associato al tuo identificativo cliente nell'angolo in alto a destra del tuo Spazio Cliente e poi su `Email di servizio`{.action}.
 
-A questo punto dovrai accedere al tuo server da riga di comando o tramite un tool SSH, utilizzando la password di root generata per la modalità Rescue.
+A questo punto dovrai accedere al tuo server da riga di comando o tramite un tool [SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction), utilizzando la password di root generata per la modalità Rescue.
 
 ad esempio:
 
@@ -98,7 +97,9 @@ Il mount delle partizioni viene realizzato con il comando `mount` in SSH. Dovrai
 
 ```bash
 fdisk -l
+```
 
+```console
 Disk /dev/hda 40.0 GB, 40020664320 bytes
 255 heads, 63 sectors/track, 4865 cylinders
 Units = cylinders of 16065 * 512 = 8225280 bytes

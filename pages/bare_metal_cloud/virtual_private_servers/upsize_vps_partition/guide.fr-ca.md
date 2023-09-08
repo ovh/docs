@@ -1,7 +1,7 @@
 ---
 title: 'Repartitionner un VPS suite à un upgrade'
 excerpt: 'Découvrez comment augmenter votre espace de stockage après un upgrade de votre VPS'
-updated: 2021-05-18
+updated: 2023-09-05
 ---
 
 ## Objectif
@@ -42,7 +42,7 @@ La partition correspondant au mode rescue sera celle montée dans le répertoire
 
 Cependant, si votre VPS appartient à la gamme actuelle, la partition ne sera pas automatiquement montée. Si la colonne MOUNTPOINT du résultat le confirme, vous pouvez alors ignorer l'étape de démontage.
 
-```sh
+```console
 NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
 sda 254:0 0 10G 0 disk
 └─sda1 254:1 0 10G 0 part /
@@ -62,7 +62,9 @@ Une fois la partition démontée, il convient de vérifier le système de fichie
 
 ```sh
 e2fsck -yf /dev/sdb1
- 
+```
+
+```console
 e2fsck 1.42.9 (4-Feb-2014)
 Pass 1: Checking inodes, blocks, and sizes
 Pass 2: Checking directory structure
@@ -95,7 +97,7 @@ fdisk -u /dev/sdb
 
 Avant de supprimer l'ancienne partition, il est recommandé de noter le numéro correspondant au premier secteur de la partition. Vous pouvez obtenir cette information avec la commande `p`{.action}. Elle est indiquée sous le champ `Start`. Conservez cette donnée pour plus tard.
 
-```sh
+```console
 Command (m for help): p
  
 Disk /dev/sdb: 21.5 GB, 21474836480 bytes
@@ -116,7 +118,7 @@ Device Boot Start End Blocks Id System
 
 Supprimez alors la partition avec la commande `d`{.action}.
 
-```sh
+```console
 Command (m for help): d
 Selected partition 1
 ```
@@ -127,7 +129,7 @@ L’unique partition sera automatiquement effacée.
 
 Vous devez maintenant créer une nouvelle partition avec la commande `n`{.action}. Nous vous recommandons d'utiliser les valeurs par défaut.
 
-```sh
+```console
 Command (m for help): n
 Partition type:
 p primary (0 primary, 0 extended, 4 free)
@@ -144,7 +146,7 @@ Dans la ligne `First sector`, assurez-vous que la valeur par défaut est la mêm
 
 Vous devez maintenant vous assurer que la partition est amorçable (<i>bootable</i>). Pour ce faire, utilisez la commande `a`{.action} :
 
-```sh
+```console
 Command (m for help): a
  
 Partition number (1-4): 1
@@ -152,7 +154,7 @@ Partition number (1-4): 1
 
 Enregistrez vos changements et quittez l’application avec la commande `w`{.action} :
 
-```sh
+```console
 Command (m for help): w
  
 The partition table has been altered!
@@ -167,7 +169,9 @@ La partition a été étendue, mais son système de fichiers (<i>filesystem</i>)
 
 ```sh
 resize2fs /dev/sdb1
- 
+```
+
+```console
 resize2fs 1.42.9 (4-Feb-2014)
 Resizing the filesystem on /dev/sdb1 to 5242624 (4k) blocks.
 The filesystem on /dev/sdb1 is now 5242624 blocks long.
@@ -182,7 +186,9 @@ mount /dev/sdb1 /mnt
 ```
 ```sh
 df -h
- 
+```
+
+```console
 Filesystem Size Used Avail Use% Mounted on
 /dev/sda1 991M 793M 132M 86% /
 none 4.0K 0 4.0K 0% /sys/fs/cgroup
@@ -202,7 +208,9 @@ Si la commande `e2fsck`{.action} renvoie le message d'erreur `bad magic number i
 
 ```sh
 dumpe2fs /dev/sdb1 | grep superblock
- 
+```
+
+```console
 Primary superblock at 0, Group descriptors at 1-6
 Backup superblock at 32768, Group descriptors at 32769-32774
 Backup superblock at 98304, Group descriptors at 98305-98310
