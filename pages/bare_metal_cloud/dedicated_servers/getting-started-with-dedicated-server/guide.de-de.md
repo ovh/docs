@@ -1,7 +1,7 @@
 ---
 title: 'Erste Schritte mit einem Dedicated Server'
 excerpt: 'Erfahren Sie hier, wie Sie Ihren neuen Dedicated Server verwalten'
-updated: 2023-09-05
+updated: 2023-09-11
 ---
 
 > [!primary]
@@ -10,7 +10,7 @@ updated: 2023-09-05
 
 ## Ziel
 
-Ein dedizierter Server ist ein physischer Server in einem unserer Rechenzentren. Im Gegensatz zum Webhosting (auch "Shared Hosting" genannt), bei dem die technische Verwaltung von OVHcloud geleistet wird, sind Sie allein für die Verwaltung Ihres Servers verantwortlich.
+Ein dedizierter Server ist ein physischer Server in einem unserer Rechenzentren. Im Gegensatz zum Webhosting (auch "Shared Hosting" genannt), bei dem die technische Verwaltung von OVHcloud geleistet wird, sind Sie für die Verwaltung Ihres Servers allein verantwortlich.
 
 **Diese Anleitung erläutert einige Grundlagen zur Erstverwendung eines OVHcloud Dedicated Server.**
 
@@ -18,7 +18,7 @@ Ein dedizierter Server ist ein physischer Server in einem unserer Rechenzentren.
 
 ## Voraussetzungen
 
-- Sie verfügen über einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/){.external} in Ihrem Kunden-Account.
+- Sie verfügen über einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/) in Ihrem Kunden-Account.
 - Sie haben administrativen Zugriff (Root) auf Ihren Server über SSH oder RDP (optional). 
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
@@ -53,7 +53,7 @@ Klicken Sie auf `Weiter`{.action}, um fortzufahren.
 
 ![Template-Auswahl](images/reinstalling-your-server-02.png){.thumbnail}
 
-Nachdem Sie `Installation mit einem OVH Template`{.action} ausgewählt haben, können Sie das gewünschte Betriebssystem in den Menüs auswählen.
+Nachdem Sie `Installation mit einem OVHcloud Template`{.action} ausgewählt haben, können Sie das gewünschte Betriebssystem in den Menüs auswählen.
 
 ![Operationelle Auswahl](images/reinstalling-your-server-03.png){.thumbnail}
 
@@ -141,7 +141,7 @@ Wenn Sie Windows Server einsetzen, verwenden Sie [diese Anleitung](/pages/bare_m
 
 ### OVHcloud Monitoring <a name="monitoring-server"></a> 
 
-Sie können den Monitoring-Status eines Servers im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) vom Tab `Allgemeine Informationen`{.action} aus kontrollieren (Abschnitt **Dienststatus**).
+Sie können den Monitoring-Status eines Servers im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) vom Tab `Allgemeine Informationen`{.action} aus einrichten (Abschnitt **Dienststatus**).
 
 ![Monitoring](images/monitoring-your-server.png){.thumbnail}
 

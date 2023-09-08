@@ -1,7 +1,7 @@
 ---
 title: 'Pierwsze kroki z serwerem dedykowanym'
 excerpt: 'Poznaj podstawy korzystania z serwera dedykowanego'
-updated: 2023-09-05
+updated: 2023-09-11
 ---
 
 > [!primary]
@@ -18,9 +18,9 @@ Serwer dedykowany to fizyczny serwer zlokalizowany w jednym z naszych centrów d
 
 ## Wymagania początkowe
 
-- Posiadanie [serwera dedykowanego](https://www.ovhcloud.com/pl/bare-metal/){.external}
-- Połączenie przez SSH (dostęp root) z systemem Linux lub jako administrator z systemem Windows
-- Zalogowanie do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
+- Posiadanie [serwera dedykowanego](https://www.ovhcloud.com/pl/bare-metal/).
+- Połączenie przez SSH (dostęp root) z systemem Linux lub jako administrator z systemem Windows.
+- Zalogowanie do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 
 > [!primary]
 >
@@ -152,6 +152,8 @@ Kliknij przycisk `Skonfiguruj`{.action}. W oknie, które się pojawi, masz trzy 
 - **Aktywny bez aktywnej interwencji**: Otrzymasz e-mail z komunikatem ostrzegawczym, jeśli serwer przestanie odpowiadać. Aby rozpocząć interwencję, należy aktywować opcję aktywną interwencją.
 
 ![Monitoring](images/monitoring-your-server2.png){.thumbnail}
+
+Kliknij na `Zatwierdź`{.action}, aby zaktualizować konfigurację monitorowania.
 
 Więcej informacji na temat monitoringu OVHcloud znajdziesz w [tym przewodniku](/pages/bare_metal_cloud/dedicated_servers/network_ip_monitoring).
 

@@ -1,7 +1,7 @@
 ---
 title: 'Premiers pas avec un serveur dédié'
 excerpt: 'Découvrez comment prendre en main votre nouveau serveur dédié'
-updated: 2023-09-05
+updated: 2023-09-11
 ---
 
 ## Objectif
@@ -14,7 +14,7 @@ Un serveur dédié est un serveur physique situé dans l'un de nos datacenters. 
 
 ## Prérequis
 
-- Disposer d'un [serveur dédié](https://www.ovhcloud.com/fr-ca/bare-metal/){.external} dans votre espace client OVHcloud.
+- Disposer d'un [serveur dédié](https://www.ovhcloud.com/fr-ca/bare-metal/) dans votre espace client OVHcloud.
 - Être connecté à votre serveur en SSH (accès root) sous Linux ou via un bureau distant sous Windows.
 - Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
 
@@ -42,7 +42,7 @@ Dans la fenêtre qui apparaît, sélectionnez l'une des options d'installation :
 >
 > Certains systèmes d'exploitation ou plates-formes propriétaires tels que Plesk ou Windows nécessitent des licences qui génèrent des frais supplémentaires. Vous pouvez acheter des licences [auprès de OVHcloud](https://www.ovhcloud.com/fr-ca/bare-metal/os/) ou auprès d'un revendeur externe. Vous devrez ensuite appliquer votre licence, dans le système d'exploitation lui-même ou à l'aide de votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
 >
-Vous pouvez gérer toutes vos licences dans la section `Bare Metal Cloud`{.action} sous `Licences`{.action}. Dans cette section, vous pouvez également commander des licences ou ajouter des licences existantes via le bouton `Actions`{.action}.
+> Vous pouvez gérer toutes vos licences dans la section `Bare Metal Cloud`{.action} sous `Licences`{.action}. Dans cette section, vous pouvez également commander des licences ou ajouter des licences existantes via le bouton `Actions`{.action}.
 >
 
 Cliquez sur `Suivant`{.action} pour continuer.
@@ -135,7 +135,7 @@ Comme expliqué dans la section « Objectif » de ce guide, vous êtes l'adminis
 
 Si vous utilisez un serveur Windows, rendez-vous sur [ce guide](/pages/bare_metal_cloud/dedicated_servers/activate-port-firewall-soft-win).
 
-### Monitoring OVHcloud  <a name="monitoring-server"></a>
+### Monitoring OVHcloud <a name="monitoring-server"></a>
 
 Vous pouvez activer ou désactiver le monitoring d'un serveur dédié à partir de l'onglet `Informations générales`{.action} de votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc). L'option se situe dans la section `État des services`.
 
@@ -148,6 +148,8 @@ Cliquez sur le bouton `Configurer`{.action}. Dans la fenêtre qui apparaît, vou
 - **Activé sans intervention proactive** : vous recevrez un message d'alerte par e-mail au cas où le serveur ne répondrait plus. Pour lancer une intervention, il est nécessaire d'activer l'option avec intervention proactive.
 
 ![Monitoring](images/monitoring-your-server2.png){.thumbnail}
+
+Cliquez sur `Confirmer`{.action} pour mettre à jour votre configuration du monitoring.
 
 Vous trouverez plus d'informations sur le monitoring OVHcloud dans [ce guide](/pages/bare_metal_cloud/dedicated_servers/network_ip_monitoring).
 
@@ -197,4 +199,4 @@ Pour activer et utiliser l'option Backup Storage, consultez [ce guide](/pages/ba
 
 Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr-ca/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
-Rejoignez notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
