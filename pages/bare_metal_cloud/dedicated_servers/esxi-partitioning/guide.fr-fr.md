@@ -1,14 +1,14 @@
 ---
-title: Serveurs Dédiés - Partitionnement de ESXi
-excerpt: "Découvrez comment l'API OVHcloud vous permet de personnaliser la configuration du partitionnement lors de l'installation de l'OS sur votre serveur"
-updated: 2023-09-05
+title: "Serveurs Dédiés - Partitionnement d'ESXi"
+excerpt: "Utilisez l'espace client OVHcloud ou l'API OVHcloud pour personnaliser la taille de la partition système d'ESXi"
+updated: 2023-09-08
 ---
 
 ## Objectif
 
-Avec les [serveurs dédiés OVHcloud](https://www.ovhcloud.com/fr/bare-metal/), vous pouvez [personnaliser le partitionnement](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh). Cela vous donne des possibilités de configuration assez vastes pour tous les OS à l'exception d'ESXi à cause de ses spécificités car il s'agit d'un système propriétaire UNIX avec un installateur propriétaire. Par conséquent, OVHcloud est dépendant de l'éditeur pour l'installation de l'OS. Depuis ESXi 7.0, il est possible de choisir entre 4 schémas de partitionnement prédéfinis par l'éditeur.
+Avec les [serveurs dédiés OVHcloud](https://www.ovhcloud.com/fr/bare-metal/), vous pouvez [personnaliser le partitionnement](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh). Cela vous donne des possibilités de configuration assez vastes lors de l'installation du système d'exploitation. ESXi ne le permet pas à cause de ses spécificités car il s'agit d'un système propriétaire UNIX avec un installateur propriétaire. Par conséquent, OVHcloud est dépendant de l'éditeur pour l'installation de l'OS. Depuis ESXi 7.0, il est possible de choisir entre 4 schémas de partitionnement prédéfinis par l'éditeur.
 
-**Cet article a pour objectif de vous montrer comment choisir un schéma de partitionnement dans l'[espace client OVHcloud](https://www.ovh.com/manager/#/dedicated/configuration) ou l’[API OVHcloud](https://api.ovh.com/).**
+**Cet article a pour objectif de vous montrer comment choisir un schéma de partitionnement dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) ou l'[API OVHcloud](https://api.ovh.com/).**
 
 > [!primary]
 >
@@ -18,7 +18,7 @@ Avec les [serveurs dédiés OVHcloud](https://www.ovhcloud.com/fr/bare-metal/), 
 ## Prérequis
 
 - Un [serveur dédié](https://www.ovhcloud.com/fr/bare-metal/) dans votre compte OVHcloud, **prêt à être installé/réinstallé**.
-- Avoir accès à l'[API OVHcloud](https://api.ovh.com/).
+- Avoir accès à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et/ou à l'[API OVHcloud](https://api.ovh.com/).
 
 > [!alert]
 >
@@ -27,9 +27,9 @@ Avec les [serveurs dédiés OVHcloud](https://www.ovhcloud.com/fr/bare-metal/), 
 
 ## En pratique
 
-ESXi 7.0 introduit une [option d'amorçage permettant de configurer la taille de la partition système ESXi](https://kb.vmware.com/s/article/81166). Cette fonctionnalité a été introduite par l'éditeur parce que certains clients se plaignaient de la présence parfois superflue d'un datastore qui remplissait tout l'espace disque ou un d'un OS qui avait une partition système surdimensionnée. OVHcloud propose désormais cette fonctionnalité qui est disponible aussi bien depuis l'[espace client OVHcloud](https://www.ovh.com/manager/#/dedicated/configuration) que via l’[API OVHcloud](https://api.ovh.com/).
+ESXi 7.0 introduit une [option d'amorçage permettant de configurer la taille de la partition système ESXi](https://kb.vmware.com/s/article/81166). Cette fonctionnalité a été introduite par l'éditeur car l'augmentation de la taille de la partition système pouvait poser problème, en particulier sur les machines où les disques sont de petite taille. OVHcloud propose désormais cette fonctionnalité qui est disponible aussi bien depuis l'[espace client OVHcloud](https://www.ovh.com/manager/#/dedicated/configuration) que via l'[API OVHcloud](https://api.ovh.com/).
 
-Malgré le fait que votre serveur ait plusieurs disques, l'installation d'ESXi n'est possible que sur le premier disque de la grappe de disques sélectionnée pour l'installation (voir « [Choisir une grappe de disques pour installer un système d’exploitation](/pages/bare_metal_cloud/dedicated_servers/install_hybrid) » ), les autres disques pouvant être configurés par la suite par l'utilisateur pour être utilisés pour stocker les machines virtuelles (voir « [Configuration du stockage d'un serveur HGR-STOR-2](/pages/bare_metal_cloud/dedicated_servers/hgrstor2_system_configuration#add-datastore) » ).
+Malgré le fait que votre serveur ait plusieurs disques, l'installation d'ESXi n'est possible que sur le premier disque de la grappe de disques sélectionnée pour l'installation (voir « [Choisir une grappe de disques pour installer un système d'exploitation](/pages/bare_metal_cloud/dedicated_servers/install_hybrid) » ), les autres disques pouvant être configurés par la suite par l'utilisateur pour être utilisés pour stocker les machines virtuelles (voir « [Configuration du stockage d'un serveur HGR-STOR-2](/pages/bare_metal_cloud/dedicated_servers/hgrstor2_system_configuration#add-datastore) » ).
 
 4 valeurs sont possibles :
 
@@ -42,14 +42,14 @@ Malgré le fait que votre serveur ait plusieurs disques, l'installation d'ESXi n
 
 ¹ Seul le premier disque de la grappe de disques sélectionnée pour l'installation de l'OS.<br />
 ² Espace disque sur lequel l'OS va être installé.<br />
-³ Un datastore est une partition de disque (parfois aussi appelée « container ») que ESXi va utiliser pour stocker ses machines virtuelles. Retrouvez plus de détails sur [cette documentation VMware (EN)](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.storage.doc/GUID-5EE84941-366D-4D37-8B7B-767D08928888.html).<br />
+³ Un datastore est une partition de disque (parfois aussi appelée « container ») qu'ESXi va utiliser pour stocker ses machines virtuelles. Retrouvez plus de détails sur [cette documentation VMware (EN)](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.storage.doc/GUID-5EE84941-366D-4D37-8B7B-767D08928888.html).<br />
 ⁴ Le client pourra toujours [ajouter un datastore](/pages/bare_metal_cloud/dedicated_servers/hgrstor2_system_configuration#add-datastore) par la suite, mais uniquement sur les autres disques.<br />
 
 Comme vous pouvez le constater, aucun datastore n'est créé sur le premier disque lors de l'utilisation du schéma `max`.
 
 > [!primary]
 >
-> La saviez-vous ?
+> Le saviez-vous ?
 > Les solutions [VMware on OVHcloud](https://www.ovhcloud.com/fr/hosted-private-cloud/vmware/) sont basées sur des installations ESXi avec le schéma de partitionnement `small`.
 >
 
@@ -64,7 +64,7 @@ Comme vous pouvez le deviner, si le schéma n'est pas spécifié, le schéma de 
 > Cette procédure est très similaire à celle [des autres OS](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server), à l'exception qu'il n'est pas possible de sélectionner `Personnaliser la configuration des partitions`{.action} et qu'il y a une liste déroulante permettant de sélectionner le schéma de partitionnment à la quatrième et dernière étape.
 >
 
-Dans l'[espace client OVHcloud](https://www.ovh.com/manager/#/dedicated/configuration), sous l'onglet `Informations générales`{.action}, cliquez sur `...`{.action} en face du système d'exploitation puis cliquez sur `Installer`{.action}.
+Dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), sous l'onglet `Informations générales`{.action}, cliquez sur `...`{.action} en face du système d'exploitation puis cliquez sur `Installer`{.action}.
 
 ![Bouton Réinstaller](images/reinstalling-your-server-00.png){.thumbnail}
 
@@ -163,7 +163,7 @@ Vous pouvez utiliser l'appel API suivant afin d'obtenir le détail de chaque par
 
 [API OVHcloud & Partitionnement](/pages/bare_metal_cloud/dedicated_servers/partitioning_ovh)
 
-[Choisir une grappe de disques pour installer un système d’exploitation](/pages/bare_metal_cloud/dedicated_servers/install_hybrid)
+[Choisir une grappe de disques pour installer un système d'exploitation](/pages/bare_metal_cloud/dedicated_servers/install_hybrid)
 
 [Gestion du RAID matériel](/pages/bare_metal_cloud/dedicated_servers/raid_hard)
 
