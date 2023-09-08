@@ -20,8 +20,8 @@ Moduły za pomocą 1 kliknięcia umożliwiają łatwą i szybką instalację str
 
 - Posiadanie [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/) zawierającej co najmniej jedną bazę danych..
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
-- Korzystanie z [kompatybilnej wersji PHP](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014) na Twoim hostingu.
-- Posiadanie [poprawnie skonfigurowany plik .ovhconfig](/pages/web_cloud/web_hosting/ovhconfig_configuration)
+- Korzystanie z [kompatybilnej wersji PHP](/pages/web_cloud/web_hosting/configure_your_web_hosting) na Twoim hostingu.
+- Posiadanie [poprawnie skonfigurowany plik .ovhconfig](/pages/web_cloud/web_hosting/configure_your_web_hosting)
 - Katalog (katalog główny), w którym zostanie zainstalowany "moduł za 1 kliknięciem", musi być pusty lub w chwili obecnej nie istnieje.
 - Domena (wraz z subdomeną, jeśli jest potrzebna), która zostanie użyta na Twojej stronie WWW powinna zostać zadeklarowana jako [MultiSite](/pages/web_cloud/web_hosting/multisites_configure_multisite) na Twoim hostingu OVHcloud.
 

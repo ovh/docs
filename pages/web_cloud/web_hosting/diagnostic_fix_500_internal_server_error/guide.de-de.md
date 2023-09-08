@@ -48,7 +48,7 @@ Lesen Sie zuerst [diese Anleitung](/pages/web_cloud/web_hosting/logs_and_statist
 
 ### Ihre Website in den Entwicklermodus versetzen
 
-Um mögliche PHP-Fehler anzuzeigen, versetzen Sie Ihr Hosting anschließend mithilfe [dieser Instruktionen](/pages/web_cloud/web_hosting/ovhconfig_modify_system_runtime#schritt-2-webhosting-konfiguration-bearbeiten) in den Entwicklermodus (`development`).
+Um mögliche PHP-Fehler anzuzeigen, versetzen Sie Ihr Hosting anschließend mithilfe [dieser Instruktionen](/pages/web_cloud/web_hosting/configure_your_web_hosting#schritt-2-webhosting-konfiguration-bearbeiten) in den Entwicklermodus (`development`).
 
 ### Die .htaccess Datei testen
 
@@ -86,7 +86,7 @@ Für alle "Fehler 500", die mit der Datenbank Ihrer Website in Zusammenhang steh
 
 ### Ihre Website auf einen vorherigen Zustand zurücksetzen <a name="restore"></a>
 
-Wenn der "Fehler 500" nach dem Ändern der PHP-Konfiguration Ihres Webhostings aufgetreten ist, kehren Sie zur vorherigen Einstellung zurück, indem Sie [unserer Anleitung folgen](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014).
+Wenn der "Fehler 500" nach dem Ändern der PHP-Konfiguration Ihres Webhostings aufgetreten ist, kehren Sie zur vorherigen Einstellung zurück, indem Sie [unserer Anleitung folgen](/pages/web_cloud/web_hosting/configure_your_web_hosting).
 
 > [!warning]
 >

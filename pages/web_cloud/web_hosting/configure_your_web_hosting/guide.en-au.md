@@ -59,18 +59,18 @@ Once you are ready to make the change, continue to step 2.
 
 There are two ways to modify your Web Hosting plan’s PHP version:
 
-- **Using the configuration assistant in your Control Panel**: Once you have logged in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au), you can choose the new PHP version you want from other settings. Please refer to the instructions set out in our guide [“Modifying the configuration of a Web Hosting plan”](/pages/web_cloud/web_hosting/ovhconfig_modify_system_runtime){.external} to use this method.
+- **Using the configuration assistant in your Control Panel**: Once you have logged in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au), you can choose the new PHP version you want from other settings. Please refer to the instructions set out in our guide [“Modifying the configuration of a Web Hosting plan”](/pages/web_cloud/web_hosting/configure_your_web_hosting){.external} to use this method.
 
-- **By manually editing a file in your storage space**: This solution is more technical. You need to log in to your [FTP storage](/pages/web_cloud/web_hosting/ftp_connection) and edit the .ovhconfig file. Please refer to the instructions set out in our guide [“Configuring the .ovhconfig file of your Web Hosting plan”](/pages/web_cloud/web_hosting/ovhconfig_configuration){.external} to do this.
+- **By manually editing a file in your storage space**: This solution is more technical. You need to log in to your [FTP storage](/pages/web_cloud/web_hosting/ftp_connection) and edit the .ovhconfig file. Please refer to the instructions set out in our guide [“Configuring the .ovhconfig file of your Web Hosting plan”](/pages/web_cloud/web_hosting/configure_your_web_hosting){.external} to do this.
 
 > [!primary]
 >
 > You can no longer modify the PHP version via a .htaccess file on the latest [OVHcloud web hosting](https://www.ovhcloud.com/en-au/web-hosting/){.external} offers.<br>
 > The command that changes the PHP version in the .htaccess file cannot be used to use the recent PHP versions on our infrastructures.<br>
-> To do this, you will need to use the `.ovhconfig` file as explained our guide [“Configuring the .ovhconfig file of your Web Hosting plan”](/pages/web_cloud/web_hosting/ovhconfig_configuration){.external}.
+> To do this, you will need to use the `.ovhconfig` file as explained our guide [“Configuring the .ovhconfig file of your Web Hosting plan”](/pages/web_cloud/web_hosting/configure_your_web_hosting){.external}.
 >
 
-Some PHP versions only work with certain runtime environments. The following are the PHP versions available on OVHcloud web hosting plans and compatible [runtime environments](/pages/web_cloud/web_hosting/ovhconfig_modify_system_runtime):
+Some PHP versions only work with certain runtime environments. The following are the PHP versions available on OVHcloud web hosting plans and compatible [runtime environments](/pages/web_cloud/web_hosting/configure_your_web_hosting):
 
 |PHP versions|Compatible runtime environments|
 |---|---|
@@ -80,9 +80,9 @@ Some PHP versions only work with certain runtime environments. The following are
 
 ## Go further
 
-[Modifying the configuration of a Web Hosting plan](/pages/web_cloud/web_hosting/ovhconfig_modify_system_runtime){.external}
+[Modifying the configuration of a Web Hosting plan](/pages/web_cloud/web_hosting/configure_your_web_hosting){.external}
 
-[Configuring the .ovhconfig file of your Web Hosting plan](/pages/web_cloud/web_hosting/ovhconfig_configuration){.external}
+[Configuring the .ovhconfig file of your Web Hosting plan](/pages/web_cloud/web_hosting/configure_your_web_hosting){.external}
 
 [Logging in to your Web Hosting plan’s storage space](/pages/web_cloud/web_hosting/ftp_connection){.external}
 

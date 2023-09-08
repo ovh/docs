@@ -49,7 +49,7 @@ Zapoznaj się najpierw z tym [przewodnikiem](/pages/web_cloud/web_hosting/logs_a
 
 ### Przejdź na tryb programowania
 
-Aby wyświetlić ewentualne błędy PHP, przejdź do trybu `programowania`, korzystając z tych [wskazówek](/pages/web_cloud/web_hosting/ovhconfig_modify_system_runtime#etap-2-zmiana-konfiguracji-hostingu).
+Aby wyświetlić ewentualne błędy PHP, przejdź do trybu `programowania`, korzystając z tych [wskazówek](/pages/web_cloud/web_hosting/configure_your_web_hosting#etap-2-zmiana-konfiguracji-hostingu).
 
 ### Przetestuj plik .htaccess
 
@@ -97,7 +97,7 @@ Aby przywrócić kod źródłowy Twojej strony, zapoznaj się z naszym przewodni
 
 Jeśli Twoja strona WWW zawiera bazę danych, zapoznaj się z naszym przewodnikiem "[Import kopii zapasowej do bazy danych hostingu](/pages/web_cloud/web_hosting/sql_importing_mysql_database#przywracanie-kopii-zapasowej-w-panelu-klienta)", aby przywrócić ją do poprzedniego stanu.
 
-Jeśli po aktualizacji wersji PHP na Twoim hostingu wystąpił błąd 500, zapoznaj się z naszym przewodnikiem "[Zmiana wersji PHP na hostingu](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014)" i wróć do poprzedniej konfiguracji.
+Jeśli po aktualizacji wersji PHP na Twoim hostingu wystąpił błąd 500, zapoznaj się z naszym przewodnikiem "[Zmiana wersji PHP na hostingu](/pages/web_cloud/web_hosting/configure_your_web_hosting)" i wróć do poprzedniej konfiguracji.
 
 ## Sprawdź również <a name="gofurther"></a>
 

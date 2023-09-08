@@ -81,7 +81,7 @@ Zalecamy również regularne sprawdzanie **ważności zarejestrowanych sposobów
 
 Regularnie sprawdź aktualizacje Twojej strony, postępując zgodnie z instrukcjami zawartymi w tym [przewodniku](/pages/web_cloud/web_hosting/diagnostic_403_forbidden#22-aktualizacja-strony-www).
 
-Pamiętaj, aby na Twoim hostingu zainstalować najnowszą wersję [języka PHP](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014).
+Pamiętaj, aby na Twoim hostingu zainstalować najnowszą wersję [języka PHP](/pages/web_cloud/web_hosting/configure_your_web_hosting).
 
 ### Etap 7: włącz https
 
