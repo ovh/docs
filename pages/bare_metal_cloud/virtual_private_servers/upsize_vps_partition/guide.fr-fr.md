@@ -1,6 +1,6 @@
 ---
 title: Repartitionner un VPS après un upgrade de stockage
-excerpt: Découvrez comment augmenter l'espace disque utilisable suite à une mise à niveau
+excerpt: "Découvrez comment augmenter l'espace disque utilisable suite à une mise à niveau"
 updated: 2023-09-05
 ---
 
@@ -13,7 +13,7 @@ Après avoir augmenté la capacité de stockage de votre VPS, vous devrez repart
 > Le repartitionnement peut endommager définitivement vos données. OVHcloud ne pourra être tenu responsable de leur détérioration ou de leur perte. Avant de faire quoi que ce soit, pensez donc à bien sauvegarder vos informations. 
 >
 
-**Découvrez comment augmenter votre espace de stockage après une mise à niveau de disque.**
+**Découvrez comment augmenter votre espace de stockage après un upgrade de disque.**
 
 ## Prérequis
 
@@ -22,7 +22,7 @@ Après avoir augmenté la capacité de stockage de votre VPS, vous devrez repart
 
 ## En pratique
 
-Après une mise à niveau de la mémoire (RAM) ou du processeur (vCores), ces  deux ressources sont automatiquement ajustées sur votre VPS ; Contrairement à l'espace disque lors de l'upgrade de stockage de votre VPS.
+Après une mise à niveau de la mémoire (RAM) ou du processeur (vCores), ces  deux ressources sont automatiquement ajustées sur votre VPS, contrairement à l'espace disque lors de l'upgrade de stockage de votre VPS.
 
 ### Linux
 
