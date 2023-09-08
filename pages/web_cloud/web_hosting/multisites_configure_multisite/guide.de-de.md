@@ -1,7 +1,7 @@
 ---
 title: Mehrere Websites auf einem Webhosting einrichten
 excerpt: Erfahren Sie hier, wie Sie ein Webhosting für mehrere Websites verwenden
-updated: 2023-08-25
+updated: 2023-09-08
 ---
 
 > [!primary]
@@ -13,6 +13,14 @@ updated: 2023-08-25
 Sie können mehrere Websites auf einem einzigen Webhosting-Angebot hosten, auch wenn die Domainnamen nicht bei OVHcloud registriert sind.
 
 **Diese Anleitung erklärt, wie Sie mehrere Websites über ein Webhosting bereitstellen.**
+
+### Inhaltsverzeichnis
+
+- 1 : [Auf die Multisite-Verwaltung zugreifen](#multisite-menu)
+- 2 : [Eine Domain oder Subdomain hinzufügen](#add-domain)
+    - 2.1 : [Eine bei OVHcloud registrierte Domain hinzufügen](#add-ovhcloud-domain)
+    - 2.2 : [Eine externe Domain hinzufügen](#add-external-domain)
+- 3 : [Ihre Website online stellen](#site-online)
 
 ## Voraussetzungen
 
@@ -32,7 +40,7 @@ Sie können mehrere Websites auf einem einzigen Webhosting-Angebot hosten, auch 
 > Weitere Informationen zur Aktivierung dieser Option finden Sie in unserer [Anleitung](/pages/web_cloud/web_hosting/activate-email-hosting).
 >
 
-### Schritt 1: Auf die Multisite-Verwaltung zugreifen
+### Schritt 1: Auf die Multisite-Verwaltung zugreifen <a name="multisite-menu"></a>
 
 Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und wählen Sie `Web Cloud`{.action} aus. Klicken Sie auf `Hosting-Pakete`{.action}, wählen Sie den betreffenden Dienst aus und gehen Sie zum Tab `Multisite`{.action}.
 
@@ -45,7 +53,7 @@ Die angezeigte Tabelle listet alle Domains und Subdomains auf, die Ihrer Webhost
 
 ![Multisite](images/access-multisite-ovh.png){.thumbnail}
 
-### Schritt 2: Eine Domain oder Subdomain hinzufügen
+### Schritt 2: Eine Domain oder Subdomain hinzufügen <a name="add-domain"></a>
 
 Um eine neue Domain oder Subdomain zu Ihrem Webhosting hinzuzufügen, klicken Sie links auf den Button `Aktionen`{.action}, dann auf `Eine Domain oder Subdomain hinzufügen`{.action} und wählen Sie den Domainnamen im angezeigten Fenster aus.
 

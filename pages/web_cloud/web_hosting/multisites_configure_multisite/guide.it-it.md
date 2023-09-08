@@ -1,7 +1,7 @@
 ---
 title: 'Ospitare più siti su uno stesso hosting'
 excerpt: 'Questa guida ti mostra come condividere il tuo hosting Web tra più siti Internet'
-updated: 2023-08-25
+updated: 2023-09-08
 ---
 
 > [!primary]
