@@ -1778,6 +1778,7 @@
                 + [Pushing logs from software - Apache](manage_and_operate/observability/logs_data_platform/ingestion_apache)
                 + [Pushing logs from a Kubernetes cluster to Logs Data Platform using Fluent Bit](manage_and_operate/observability/logs_data_platform/ingestion_kubernetes_fluent_bit)
             + [Visualizing, querying and exploiting your logs](observability-logs-data-platform-visualizing-querying-exploiting)
+                + [Exposing your logs to third-party tools via the OpenSearch API](manage_and_operate/observability/logs_data_platform/integration_opensearch_api)
                 + [Using OpenSearch Dashboards with Logs Data Platform](manage_and_operate/observability/logs_data_platform/visualization_opensearch_dashboards)
                 + [Using Grafana with Logs Data Platform](manage_and_operate/observability/logs_data_platform/visualization_grafana)
                 + [CLI - ldp-tail, a tool to follow your logs in real-time](manage_and_operate/observability/logs_data_platform/cli_ldp_tail)
