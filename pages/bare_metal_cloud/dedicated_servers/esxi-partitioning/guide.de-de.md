@@ -50,7 +50,7 @@ As you can see, no datastore is created on the first disk with the `max` partiti
 >
 > Did you know?
 >
-> [VMware on OVHcloud solutions](https://www.ovhcloud.com/de/hosted-private-cloud/vmware/) are based on ESXi with the partitioning layout `small`.
+> [OVHcloud's Hosted Private Cloud solution](https://www.ovhcloud.com/de/hosted-private-cloud/vmware/) is based on ESXi with the partitioning layout `small`.
 >
 
 ### How to select the partitioning scheme
@@ -61,7 +61,7 @@ The `default` partitioning scheme will be used unless another one is selected.
 
 > [!primary]
 >
-> The procedure is very similar [to other operating systems](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server), with the exception that you cannot tick the checkbox `Customise the partitioning configuration`{.action} and that you have a dropdown menu to choose the partitioning layout at the 4th and final step.
+> The procedure is very similar [to other operating systems](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server), with the exception that you cannot tick the checkbox `Customise the partitioning configuration`{.action} and that you have a dropdown menu to choose the partitioning layout at the fourth and final step.
 >
 
 Log in to the [OVHcloud Control Panel](https://ovh.com/manager/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de). From the `General information`{.action} tab, click the `...`{.action} button next to the operating system and then click `Install`{.action}.
@@ -74,16 +74,16 @@ Click `Next`{.action} to continue.
 
 ![Template selection](images/reinstalling-your-server-01.png){.thumbnail}
 
-Then choose `Virtualisation`{.action}, `UNIX`{.action} and choose the version of ESXi you want to install on your dedicated server.
+Then choose `Virtualisation`{.action}, `UNIX`{.action} and select the version of ESXi you want to install on your dedicated server.
 
 > [!primary]
 >
-> The option `Customise the hardware RAID configuration`{.action} is available only if your dedicated server has a hardware RAID controller.
+> The `Customise the hardware RAID configuration`{.action} option is only available if your dedicated server has a hardware RAID controller.
 >
 
 > [!primary]
 >
-> The option `Customise the partition configuration`{.action} is not available, for the reasons explained above.
+> The `Customise the partition configuration`{.action} option is not available, for the above reasons.
 >
 
 Choose the disk group on which you want ESXi to be installed. Note that only the first disk of this group will be used to install the OS. Find more information in [this guide](/pages/bare_metal_cloud/dedicated_servers/install_hybrid).
@@ -92,13 +92,13 @@ Click `Next`{.action} to continue.
 
 ![ESXi selection](images/reinstalling-your-server-02.png){.thumbnail}
 
-In the `Partitioning scheme`{.action} dropdown menu, select the partitioning scheme you want to have. The overview is updated as soon as you select another partitioning scheme, so you can get an idea of how your partitioning will look like on your dedicated server.
+In the `Partitioning scheme`{.action} dropdown menu, select the desired partitioning scheme. The overview is updated as soon as you select another partitioning scheme, so you can get an idea of how the partitioning will look like on your dedicated server.
 
 Fill in the other details and click `Confirm`{.action} to start the ESXi installation on your dedicated server.
 
 > [!primary]
 >
->  The `Number of disks partitioned`{.action} field is greyed out and set to 1, even if your server has more than 1 disk on the disks group target for OS installation, as explained above.
+>  The `Number of disks partitioned`{.action} field is greyed out and set to 1, even if your server has more than 1 disk on the target disks group for OS installation, as explained above.
 >
 
 ![Partitioning Scheme selection](images/esxi-custom-scheme-00.png){.thumbnail}
