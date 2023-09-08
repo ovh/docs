@@ -48,7 +48,7 @@ Diese Nachricht enthält:
 - den Namen der zu bestätigenden Operation
 - die ID der Operation
 - den Token für die Bestätigung
-- einen Link zur Bestätigung der Operation (Achtung: Wenn Ihr Telefon nicht mit einem Netzwerk verbunden ist, dessen [IP zugelassen](/pages/cloud/private-cloud/manager_ovh_private_cloud#sicherheit) ist, wird die Seite nicht angezeigt.)
+- einen Link zur Bestätigung der Operation (Achtung: Wenn Ihr Telefon nicht mit einem Netzwerk verbunden ist, dessen [IP zugelassen](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/manager_ovh_private_cloud#sicherheit) ist, wird die Seite nicht angezeigt.)
 
 Um die Operation zu bestätigen, loggen Sie sich über den in der Nachricht enthaltenen Link ein. Gehen Sie dann in den Bereich `Operation validation`{.action}.
 

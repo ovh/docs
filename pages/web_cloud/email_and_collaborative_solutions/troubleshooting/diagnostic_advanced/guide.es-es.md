@@ -30,7 +30,7 @@ updated: 2023-08-30
 
 Para que sus mensajes de correo funcionen, debe tener un servicio de correo activo. Si su servicio de correo está asociado a un plan de alojamiento, compruebe que este no haya expirado. Puede comprobar esta información directamente desde el área de cliente. Asimismo, el dominio también debe estar activo.
 
-En primer lugar, compruebe que está actualizado en los [pagos](/pages/account/billing/invoice_management#pay-bills) y [renovaciones](/pages/account/billing/how_to_use_automatic_renewal#renewal-management) de sus servicios.
+En primer lugar, compruebe que está actualizado en los [pagos](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) y [renovaciones](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) de sus servicios.
 
 Compruebe que los servicios están correctamente operativos:
 

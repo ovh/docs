@@ -25,7 +25,7 @@ Tiene la posibilidad de administrar la renovación y la baja de sus servicios en
 
 - Tener acceso al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
 - Tener servicios de OVHcloud activos.
-- Ser [contacto de facturación](/pages/account/customer/managing_contacts#definicion) de sus servicios de OVHcloud.
+- Ser [contacto de facturación](/pages/account_and_service_management/account_information/managing_contacts#definicion) de sus servicios de OVHcloud.
 
 ## Procedimiento
 
@@ -35,9 +35,9 @@ Pero también es posible configurar determinados productos (dominios, alojamient
 
 Le recomendamos que lea las guías siguientes y que se centre en las operaciones que desee:
 
-- [Consultar el estado de renovación de los servicios](/pages/account/billing/how_to_use_automatic_renewal#consultar-el-estado-de-la-renovacion-de-los-servicios): esta guía explica cómo comprobar si los servicios se renuevan automáticamente. así como la fecha en la que se renovarán o expirarán;
+- [Consultar el estado de renovación de los servicios](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#consultar-el-estado-de-la-renovacion-de-los-servicios): esta guía explica cómo comprobar si los servicios se renuevan automáticamente. así como la fecha en la que se renovarán o expirarán;
 
-- [Gestionar la renovación de los servicios](/pages/account/billing/how_to_use_automatic_renewal#la-renovacion-en-ovhcloud): Esta guía explica cómo activar o desactivar la renovación automática o modificar la frecuencia de pago de un servicio, así como cómo pagar las renovaciones antes de su expiración.
+- [Gestionar la renovación de los servicios](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#la-renovacion-en-ovhcloud): Esta guía explica cómo activar o desactivar la renovación automática o modificar la frecuencia de pago de un servicio, así como cómo pagar las renovaciones antes de su expiración.
 
 - [Gestionar las formas de pago.](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods): esta guía explica cómo comprobar si dispone de una forma de pago registrada para abonar las próximas renovaciones. También puede añadir y eliminar formas de pago si fuera necesario.
 

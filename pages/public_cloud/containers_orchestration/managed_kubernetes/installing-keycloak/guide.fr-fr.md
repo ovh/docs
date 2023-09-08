@@ -390,7 +390,7 @@ Address: 135.125.84.194
 >
 > This `PersistentVolume` will be provided through the Cinder storage class which is the default storage class used by Managed Kubernetes Service at OVHcloud *(this volume will be billed)*.  
 >
-> For more information, please refer to the following documentation: [Setting-up a Persistent Volume on OVHcloud Managed Kubernetes](/pages/platform/kubernetes-k8s/setting-up-a-persistent-volume#persistent-volumes-pv-and-persistent-volume-claims-pvc)
+> For more information, please refer to the following documentation: [Setting-up a Persistent Volume on OVHcloud Managed Kubernetes](/pages/public_cloud/containers_orchestration/managed_kubernetes/setting-up-a-persistent-volume#persistent-volumes-pv-and-persistent-volume-claims-pvc)
 
 ### Keycloak installation
 

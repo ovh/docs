@@ -73,13 +73,13 @@ Dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager
 
 #### Solution n°4 : installer votre module sur une base de données déjà utilisée
 
-Pour installer votre module sur une base de données déjà utilisée, vous devrez utiliser le [mode avancé](/pages/web/hosting/cms_install_1_click_modules#installation-avancee-dun-module) d'installation d'un nouveau **Module en 1 clic**.
+Pour installer votre module sur une base de données déjà utilisée, vous devrez utiliser le [mode avancé](/pages/web_cloud/web_hosting/cms_install_1_click_modules#installation-avancee-dun-module) d'installation d'un nouveau **Module en 1 clic**.
 
-Pour retrouver les identifiants de votre base de données, consultez ce [guide](/pages/web/hosting/cms_install_1_click_modules#configurer-le-module).
+Pour retrouver les identifiants de votre base de données, consultez ce [guide](/pages/web_cloud/web_hosting/cms_install_1_click_modules#configurer-le-module).
 
 > [!primary]
 >
-> Vous pourrez sauvegarder les données d'un seul site dans cette situation en utilisant un [script PHP ou une commande SSH](/pages/web/hosting/sql_database_export#recuperer-une-sauvegarde-depuis-linterface-web-phpmyadmin).
+> Vous pourrez sauvegarder les données d'un seul site dans cette situation en utilisant un [script PHP ou une commande SSH](/pages/web_cloud/web_hosting/sql_database_export#recuperer-une-sauvegarde-depuis-linterface-web-phpmyadmin).
 >
 > Pour toute question sur les manipulations à réaliser, contactez la [communauté OVHcloud](https://community.ovh.com) ou l'un de nos [partenaires](https://partner.ovhcloud.com/fr/directory/).<br>
 > Nous ne serons pas en mesure de vous apporter une assistance sur ce sujet.
@@ -116,7 +116,7 @@ Pour vérifier cette configuration, consultez nos guides sur le sujet :
 
 Ce message indique que l'[espace de stockage](/pages/web_cloud/web_hosting/ftp_connection) de votre hébergement comporte un volume de données trop important. Vous devez donc en supprimer ou en déplacer avant de pouvoir installer un nouveau [module en 1 clic](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
 
-Dans cette situation, [connectez-vous en FTP](/pages/web_cloud/web_hosting/ftp_connection) à votre hébergement, [sauvegardez localement](/pages/web/hosting/ftp_filezilla_user_guide#transfert-des-fichiers) vos données puis supprimez les fichiers qui ne sont pas nécessaires au fonctionnement de votre site.
+Dans cette situation, [connectez-vous en FTP](/pages/web_cloud/web_hosting/ftp_connection) à votre hébergement, [sauvegardez localement](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide#transfert-des-fichiers) vos données puis supprimez les fichiers qui ne sont pas nécessaires au fonctionnement de votre site.
 
 > [!primary]
 >
@@ -130,7 +130,7 @@ Dans cette situation, [connectez-vous en FTP](/pages/web_cloud/web_hosting/ftp_c
 
 Après avoir lancé l'installation de votre module en mode avancé, vous avez reçu un e-mail indiquant que votre module ne peut pas se connecter à la base de données indiquée.
 
-Vous devez donc vérifier les identifiants de votre base de données. Pour les retrouver, consultez ce [guide](/pages/web/hosting/cms_install_1_click_modules#configurer-le-module).
+Vous devez donc vérifier les identifiants de votre base de données. Pour les retrouver, consultez ce [guide](/pages/web_cloud/web_hosting/cms_install_1_click_modules#configurer-le-module).
 
 Supprimez ensuite votre module via l'onglet `Modules en 1 clic`{.action} :
 
@@ -142,11 +142,11 @@ Puis relancez l'installation d'un nouveau module.
 
 ![insufficient_rights](images/insufficient_rights.png){.thumbnail}
 
-Votre base de données ne peut plus être modifiée car la quantité de données qu'elle contient dépasse la limite autorisée. Ce message apparaît lors de l'installation d'un module en [mode avancé](/pages/web/hosting/cms_install_1_click_modules#installation-avancee-dun-module).
+Votre base de données ne peut plus être modifiée car la quantité de données qu'elle contient dépasse la limite autorisée. Ce message apparaît lors de l'installation d'un module en [mode avancé](/pages/web_cloud/web_hosting/cms_install_1_click_modules#installation-avancee-dun-module).
 
-Dans cette situation, installez votre module en passant par le [mode « simple »](/pages/web/hosting/cms_install_1_click_modules#installation-simple-dun-module) ou choisissez une autre base de données lors de son installation en mode avancé. Si besoin, commandez une [offre de bases de données](https://www.ovhcloud.com/fr/web-hosting/options/start-sql/) complémentaire.
+Dans cette situation, installez votre module en passant par le [mode « simple »](/pages/web_cloud/web_hosting/cms_install_1_click_modules#installation-simple-dun-module) ou choisissez une autre base de données lors de son installation en mode avancé. Si besoin, commandez une [offre de bases de données](https://www.ovhcloud.com/fr/web-hosting/options/start-sql/) complémentaire.
 
-Si vous ne disposez pas d'autres bases de données et que vous ne souhaitez pas commander une offre complémentaire, [importez localement une copie de votre base](/pages/web/hosting/sql_database_export#en-pratique) puis supprimez les données inutiles.
+Si vous ne disposez pas d'autres bases de données et que vous ne souhaitez pas commander une offre complémentaire, [importez localement une copie de votre base](/pages/web_cloud/web_hosting/sql_database_export#en-pratique) puis supprimez les données inutiles.
 
 > [!warning]
 >
@@ -160,17 +160,17 @@ Si vous ne disposez pas d'autres bases de données et que vous ne souhaitez pas 
 
 ![cant_connect](images/cant_connect.png){.thumbnail}
 
-Vous avez lancé l'installation d'un module en 1 clic en [mode avancé](/pages/web/hosting/cms_install_1_click_modules#installation-avancee-dun-module) sur une base de données située sur un [serveur Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb). Vous avez reçu ce message d'erreur par e-mail. Il signifie que l'utilisateur noté lors de l'installation ne possède pas les droits suffisants sur la base de données ou que les identifiants indiqués sont incorrects.
+Vous avez lancé l'installation d'un module en 1 clic en [mode avancé](/pages/web_cloud/web_hosting/cms_install_1_click_modules#installation-avancee-dun-module) sur une base de données située sur un [serveur Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb). Vous avez reçu ce message d'erreur par e-mail. Il signifie que l'utilisateur noté lors de l'installation ne possède pas les droits suffisants sur la base de données ou que les identifiants indiqués sont incorrects.
 
-Dans cette situation, modifiez tout d'abord les [droits de l'utilisateur](/pages/web/clouddb/create-db-and-user-on-db-server#gerer-les-droits-des-utilisateurs) concerné, afin qu'il dispose des droits **Administrateur** ou en **Lecture/écriture** sur la base de données.
+Dans cette situation, modifiez tout d'abord les [droits de l'utilisateur](/pages/web_cloud/web_cloud_databases/create-db-and-user-on-db-server#gerer-les-droits-des-utilisateurs) concerné, afin qu'il dispose des droits **Administrateur** ou en **Lecture/écriture** sur la base de données.
 
-Vérifiez également ses identifiants en vous [connectant directement](/pages/web/clouddb/connecting-to-database-on-database-server#en-pratique) à votre serveur de bases de données puis relancez l'installation de votre module.
+Vérifiez également ses identifiants en vous [connectant directement](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server#en-pratique) à votre serveur de bases de données puis relancez l'installation de votre module.
 
 ### « Can't connect to database 'xxxxxxxx' at 'xxxxxxxx.mysql.db'. The error is: Unknown MySQL server host 'xxxxxxxx.mysql.db' »
 
 ![cant_connect_server](images/cant_connect_server.png){.thumbnail}
 
-Vous avez lancé l'installation d'un module en 1 clic en [mode avancé](/pages/web/hosting/cms_install_1_click_modules#installation-avancee-dun-module) sur une base de données située sur un [serveur Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb). Vous avez reçu ce message d'erreur par e-mail. Il signifie que le nom de serveur de bases de données que vous avez indiqué est incorrect.
+Vous avez lancé l'installation d'un module en 1 clic en [mode avancé](/pages/web_cloud/web_hosting/cms_install_1_click_modules#installation-avancee-dun-module) sur une base de données située sur un [serveur Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb). Vous avez reçu ce message d'erreur par e-mail. Il signifie que le nom de serveur de bases de données que vous avez indiqué est incorrect.
 
 Cliquez sur la partie `Web cloud`{.action} de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) puis sur l'onglet `Bases de données`{.action}.
 
@@ -184,8 +184,8 @@ Cliquez sur l’onglet `Multisite`{.action} puis effectuez les vérifications su
 
 |Scénario|Action à entreprendre|
 |---|---|
-|Le domaine ou le sous-domaine lié au site que vous souhaitez créer n'apparaît pas dans le `Multisite`{.action}.|Ajoutez votre domaine en suivant [ces indications](/pages/web/hosting/multisites_configure_multisite#etape-2-ajouter-un-domaine-ou-un-sous-domaine).|
-|Le nom de domaine a été supprimé du multisite sans action de votre part.|Si votre domaine ou sa [Zone DNS](/pages/web/domains/dns_zone_edit#comprendre-la-notion-de-dns) ne sont pas gérés depuis votre compte OVHcloud, ajoutez votre domaine au `Multisite`{.action} en suivant [ce guide](/pages/web/hosting/multisites_configure_multisite#etape-22-ajouter-un-nom-de-domaine-externe).|
+|Le domaine ou le sous-domaine lié au site que vous souhaitez créer n'apparaît pas dans le `Multisite`{.action}.|Ajoutez votre domaine en suivant [ces indications](/pages/web_cloud/web_hosting/multisites_configure_multisite#etape-2-ajouter-un-domaine-ou-un-sous-domaine).|
+|Le nom de domaine a été supprimé du multisite sans action de votre part.|Si votre domaine ou sa [Zone DNS](/pages/web_cloud/domains/dns_zone_edit#comprendre-la-notion-de-dns) ne sont pas gérés depuis votre compte OVHcloud, ajoutez votre domaine au `Multisite`{.action} en suivant [ce guide](/pages/web_cloud/web_hosting/multisites_configure_multisite#etape-22-ajouter-un-nom-de-domaine-externe).|
 
 ### Votre module s'affiche sur une adresse web de type « xxxxx.cluster0xx.hosting.ovh.net »
 
@@ -197,13 +197,13 @@ Après avoir réalisé toutes les sauvegardes nécessaires, [supprimez votre mod
 
 Cette anomalie peut avoir plusieurs causes :
 
-- Vous avez effectué récemment un changement dans votre zone ou vos serveurs [DNS](/pages/web/domains/dns_zone_edit#comprendre-la-notion-de-dns) ou un [transfert de nom de domaine](/pages/web_cloud/domains/transfer_incoming_generic_domain). Patientez jusqu'à ce que ces opérations soient finalisées (48 heures pour des changements dans vos DNS). Pensez également à redémarrer vos appareils (PC, smartphone, box, etc.) et à vider le cache de votre navigateur.
+- Vous avez effectué récemment un changement dans votre zone ou vos serveurs [DNS](/pages/web_cloud/domains/dns_zone_edit#comprendre-la-notion-de-dns) ou un [transfert de nom de domaine](/pages/web_cloud/domains/transfer_incoming_generic_domain). Patientez jusqu'à ce que ces opérations soient finalisées (48 heures pour des changements dans vos DNS). Pensez également à redémarrer vos appareils (PC, smartphone, box, etc.) et à vider le cache de votre navigateur.
 
-- Votre nom de domaine est toujours relié à votre ancien hébergement. Modifiez dans ce cas votre [Zone DNS](/pages/web/domains/dns_zone_edit#editer-la-zone-dns-ovhcloud-de-votre-nom-domaine) ou vos [serveurs DNS](/pages/web/domains/dns_server_general_information#modifier-les-serveurs-dns) ou contactez votre ancien hébergeur à ce sujet.
+- Votre nom de domaine est toujours relié à votre ancien hébergement. Modifiez dans ce cas votre [Zone DNS](/pages/web_cloud/domains/dns_zone_edit#editer-la-zone-dns-ovhcloud-de-votre-nom-domaine) ou vos [serveurs DNS](/pages/web_cloud/domains/dns_server_general_information#modifier-les-serveurs-dns) ou contactez votre ancien hébergeur à ce sujet.
 
 ### Le mot de passe « Administrateur » d'accès au « back-office » de votre module en 1 clic ne fonctionne plus <a name="adminpassword"></a>
 
-En cas de rejet de votre mot de passe actuel d'accès à l’interface d’administration de votre CMS, consultez le paragraphe « Modifier le mot de passe de votre module » de notre documentation sur la [gestion de votre module en 1 clic](/pages/web/hosting/cms_manage_1_click_module#password-change).
+En cas de rejet de votre mot de passe actuel d'accès à l’interface d’administration de votre CMS, consultez le paragraphe « Modifier le mot de passe de votre module » de notre documentation sur la [gestion de votre module en 1 clic](/pages/web_cloud/web_hosting/cms_manage_1_click_module#password-change).
 
 ## Aller plus loin <a name="aller-plus-loin"></a>
 

@@ -23,7 +23,7 @@ Renseignez votre IP ou nom de serveur dans un navigateur pour déterminer si un 
 
 ### Je suis une victime du ransomware, comment récupérer mes données ?
 
-Si vous souhaitez tenter de récupérer les données présentes sur votre serveur, vous pouvez vous appuyer sur les étapes de la documentation suivante : [Activer et utiliser le mode rescue - Montage d'un datastore](/pages/cloud/dedicated/rescue_mode#montage-dun-datastore).
+Si vous souhaitez tenter de récupérer les données présentes sur votre serveur, vous pouvez vous appuyer sur les étapes de la documentation suivante : [Activer et utiliser le mode rescue - Montage d'un datastore](/pages/bare_metal_cloud/dedicated_servers/rescue_mode#montage-dun-datastore).
 Cependant, nous ne disposons pas de tous les dispositifs nécessaires pour récupérer l'ensemble de vos données.
 
 L'agence nationale américaine pour la cybersécurité et la sécurité des infrastructures ([CISA](https://www.cisa.gov/uscert/ncas/current-activity/2023/02/07/cisa-releases-esxiargs-ransomware-recovery-script){.external}) a également mis à disposition [un outil](https://github.com/cisagov/ESXiArgs-Recover) pour récupérer les données d'un serveur ESXi ciblé par le ransomware ESXIArgs.<br>
@@ -46,7 +46,7 @@ Lorsque vous commandez votre serveur dédié, aucun protocole de sécurité n’
 ### Comment réinstaller et sécuriser mon serveur dédié ESXi ?
 
 1. Sécurisez l'accès à votre serveur dédié via le [Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network) ou votre propre système de pare-feu.
-2. Installez la version VMware ESXi 7.0 U3c disponible [via votre interface d'administration du serveur dédié](/pages/cloud/dedicated/getting-started-with-dedicated-server#installation-ou-reinstallation-de-votre-serveur-dedie).
+2. Installez la version VMware ESXi 7.0 U3c disponible [via votre interface d'administration du serveur dédié](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server#installation-ou-reinstallation-de-votre-serveur-dedie).
 3. L'impossibilité de vous connecter après avoir installé ESXi 7 provient du système de sécurité de VMWare. Vos règles de pare-feu ne comportent aucune règle bloquante. Il ne sera pas possible de réinitialiser le mot de passe administrateur sous VMware.
 4. [Sécurisez votre serveur dédié](/pages/bare_metal_cloud/dedicated_servers/securing-a-dedicated-server).
 

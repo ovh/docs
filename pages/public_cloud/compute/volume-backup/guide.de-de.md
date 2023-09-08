@@ -38,7 +38,7 @@ Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=
 
 Öffnen Sie anschließend das Menü `Block Storage`{.action} im linken Menü unter **Storage**.
 
-Klicken Sie rechts neben dem betreffenden Volume auf den Button `...`{.action} und dann auf `Backup erstellen`{.action}. Es ist nicht notwendig, zuerst das Volume von seiner Instanz zu trennen. Wenn Sie Ihr Volume jedoch von Ihrer Instanz trennen möchten, lesen Sie [diesen Abschnitt für Linux](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance#unter-linux) und [diesen Abschnitt für Windows](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance#unter-windows).
+Klicken Sie rechts neben dem betreffenden Volume auf den Button `...`{.action} und dann auf `Backup erstellen`{.action}. Es ist nicht notwendig, zuerst das Volume von seiner Instanz zu trennen. Wenn Sie Ihr Volume jedoch von Ihrer Instanz trennen möchten, lesen Sie [diesen Abschnitt für Linux](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance#unter-linux) und [diesen Abschnitt für Windows](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance#unter-windows).
 
 ![Volume Backup - Erstellung](images/volumebackup01.png){.thumbnail}
 

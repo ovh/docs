@@ -7,7 +7,7 @@ updated: 2021-05-11
 
 While Web PaaS is great as a tool for hosting an application during both development and production, it's naturally not the ideal place to edit code.  You can't, in fact, as the file system is read-only (as it should be). The proper place to edit your code is on your computer.
 
-You must have an [SSH key](/pages/web/web-paas/development-tools#ssh) already configured on your account, and have both [Git](/pages/web/web-paas/development-tools#git) and the [Web PaaS CLI](/pages/web_cloud/web_paas_powered_by_platform_sh/development/development-cli) installed before continuing.
+You must have an [SSH key](/pages/web_cloud/web_paas_powered_by_platform_sh/development/development-tools#ssh) already configured on your account, and have both [Git](/pages/web_cloud/web_paas_powered_by_platform_sh/development/development-tools#git) and the [Web PaaS CLI](/pages/web_cloud/web_paas_powered_by_platform_sh/development/development-cli) installed before continuing.
 
 ## Download the code
 

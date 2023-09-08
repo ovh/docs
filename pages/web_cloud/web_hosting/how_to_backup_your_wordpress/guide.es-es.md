@@ -148,7 +148,7 @@ Aplicando estas buenas prácticas, podrá volver a una versión anterior sana.
 ## Más información <a name="go-further"></a>
 
 - [Sitio oficial de WordPress](https://wordpress.org){.external}
-- [Más información sobre las copias de seguridad de su alojamiento web](/pages/web/hosting/hosting_technical_specificities#informacion-tecnica-de-su-alojamiento-web)
+- [Más información sobre las copias de seguridad de su alojamiento web](/pages/web_cloud/web_hosting/hosting_technical_specificities#informacion-tecnica-de-su-alojamiento-web)
 
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
 

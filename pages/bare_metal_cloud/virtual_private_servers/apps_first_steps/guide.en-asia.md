@@ -45,7 +45,7 @@ No further steps are necessary to complete the first configuration of this appli
 > [!faq]
 >
 > Can I use my own nameservers?
->> Yes, you can. But you need to make sure you create glue records with your domain registrar. For example if you want "ns1.mydomain.com" and "ns2.mydomain.com", you must set up glue records for both which must point to the IP of your server. If your domain is registered with OVHcloud, you can follow [this guide](/pages/web/domains/glue_registry#step-1-add-the-glue-records). Please note that this can take 24 hours to create.
+>> Yes, you can. But you need to make sure you create glue records with your domain registrar. For example if you want "ns1.mydomain.com" and "ns2.mydomain.com", you must set up glue records for both which must point to the IP of your server. If your domain is registered with OVHcloud, you can follow [this guide](/pages/web_cloud/domains/glue_registry#step-1-add-the-glue-records). Please note that this can take 24 hours to create.
 > Why set root password?
 >> WHM by default uses the root user for authentication and the one time link allows access to complete first setup and change root password. Next time you log in to WHM you must use the root user and the password you have set.
 > Where is my licence for cPanel?

@@ -25,7 +25,7 @@ Diese Anleitung enthält die wichtigsten Punkte, die für eine ordnungsgemäße 
 
 #### Sichern Sie Ihren Account
 
-- [Erstellen Sie ein sicheres Passwort](/pages/account/customer/manage-ovh-password#ein-adaquates-passwort-erstellen) um Ihren Account zu schützen.
+- [Erstellen Sie ein sicheres Passwort](/pages/account_and_service_management/account_information/manage-ovh-password#ein-adaquates-passwort-erstellen) um Ihren Account zu schützen.
 
 - [Aktivieren Sie die Zwei-Faktor-Authentifizierung](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa), um unbefugten Zugriff auf Ihr Kundencenter zu vermeiden.
 

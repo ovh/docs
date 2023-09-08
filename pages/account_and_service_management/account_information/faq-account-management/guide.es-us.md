@@ -35,7 +35,7 @@ Puede consultar su ID de cliente en cualquier momento desde el área de cliente,
 
 Existen diversos motivos por los que esto puede ocurrir: no recuerda su contraseña, no tiene acceso a su cuenta de correo electrónico o su teléfono móvil para identificarse por SMS, etc.
 
-Si no puede identificarse o conectarse a su área de cliente, consulte [la siguiente guía](/pages/account/customer/ovhcloud-account-login#login-failure).
+Si no puede identificarse o conectarse a su área de cliente, consulte [la siguiente guía](/pages/account_and_service_management/account_information/ovhcloud-account-login#login-failure).
 
 ### ¿Cómo modificar mis datos personales?
 
@@ -77,7 +77,7 @@ Si desea recuperar un dominio del que usted es el propietario registrado en un r
 
 #### Ideas y consejos
 
-Para más información sobre la gestión de contactos, consulte la siguiente guía: [/pages/account/customer/managing_contacts#acceder-a-la-gestion-de-los-contactos](/pages/account/customer/managing_contacts#acceder-a-la-gestion-de-los-contactos)
+Para más información sobre la gestión de contactos, consulte la siguiente guía: [/pages/account_and_service_management/account_information/managing_contacts#acceder-a-la-gestion-de-los-contactos](/pages/account_and_service_management/account_information/managing_contacts#acceder-a-la-gestion-de-los-contactos)
 
 ### ¿Cómo cambiar el contacto de facturación?
 

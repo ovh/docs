@@ -56,7 +56,7 @@ If your `routes.yaml` file would result in too large of a route information valu
 
 The full list of generated route information is often much larger than what is literally specified in the `routes.yaml` file.  For example, by default all HTTPS routes will be duplicated to create an HTTP redirect route.  Also, the `{all}` placeholder will create two routes (one HTTP, one HTTPS) for each domain that is configured.
 
-As a general rule we recommend keeping the defined routes under 100.  Should you find your `routes.yaml` file rejected due to an excessive size the best alternative is to move any redirect routes to the application rather than relying on the router, or collapsing them into a [regular expression-based redirect](/pages/web/web-paas/configuration-routes/redirects#partial-redirects) within a route definition.
+As a general rule we recommend keeping the defined routes under 100.  Should you find your `routes.yaml` file rejected due to an excessive size the best alternative is to move any redirect routes to the application rather than relying on the router, or collapsing them into a [regular expression-based redirect](/pages/web_cloud/web_paas_powered_by_platform_sh/configuration/configuration-routes/redirects#partial-redirects) within a route definition.
 
 Let's Encrypt also limits an environment to 100 configured domains.  If you try to add more than that some of them will fail to get an SSL certificate.
 
@@ -246,7 +246,7 @@ To use WebSocket on a route, `cache` must be disabled because WebSocket is incom
         enabled: false
 ```
 
-You will also need to [disable request buffering](/pages/web/web-paas/configuration-app/web#locations) in the `.platform.app.yaml`.
+You will also need to [disable request buffering](/pages/web_cloud/web_paas_powered_by_platform_sh/configuration/configuration-app/web#locations) in the `.platform.app.yaml`.
 
 ```yaml
 web:

@@ -78,7 +78,7 @@ Une fois prêt, poursuivez la lecture de cette documentation en fonction de la m
 > 
 > Dans ce cas de figure :
 >
-> - Un e-mail est envoyé au [contact administrateur](/pages/account/customer/managing_contacts#acceder-a-la-gestion-des-contacts) de l'hébergement par nos équipes. 
+> - Un e-mail est envoyé au [contact administrateur](/pages/account_and_service_management/account_information/managing_contacts#acceder-a-la-gestion-des-contacts) de l'hébergement par nos équipes. 
 > - Le statut « maintenance » apparaît dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Dans la partie `Web Cloud`{.action}, cliquez sur votre service dans la section `Hébergement`{.action} puis sur l'onglet `Informations générales`{.action}.
 > - Le(s) site(s) hébergé(s) affiche(nt) une page « 403 Forbidden ».
 >

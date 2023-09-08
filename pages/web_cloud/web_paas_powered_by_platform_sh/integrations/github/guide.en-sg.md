@@ -87,7 +87,7 @@ Note that if you have created your account using the GitHub oAuth Login then in 
 
 ### 4. Validate the integration
 
-You can then verify that your integration is functioning properly [using the CLI](/pages/web/web-paas/integrations-overview#validating-integrations) command
+You can then verify that your integration is functioning properly [using the CLI](/pages/web_cloud/web_paas_powered_by_platform_sh/integrations/integrations-overview#validating-integrations) command
 
 ```bash
 webpaas integration:validate
@@ -101,6 +101,6 @@ However, environments based on (non-pull-request) **branches** cannot have paren
 
 ## Clones and commits
 
-When you run `webpaas get <projectID>` or use the clone command shown in the "Git" dropdown in the management console to clone the project, you will actually be cloning from your remote integrated repository, so long as you have the [appropriate access to do so](/pages/web/web-paas/administration-users#user-access-and-integrations).
+When you run `webpaas get <projectID>` or use the clone command shown in the "Git" dropdown in the management console to clone the project, you will actually be cloning from your remote integrated repository, so long as you have the [appropriate access to do so](/pages/web_cloud/web_paas_powered_by_platform_sh/administration/administration-users#user-access-and-integrations).
 
 Your GitHub repository is considered by Web PaaS to be the "source of truth" for the project. The project is only a mirror of that repository, and all commits should be pushed only to GitHub.

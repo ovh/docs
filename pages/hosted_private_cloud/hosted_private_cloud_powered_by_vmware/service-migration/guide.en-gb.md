@@ -82,7 +82,7 @@ As part of a migration process, you can link your PCC services within the same v
 
 If the public IP addresses attached to the source PCC are required on the destination Hosted Private Cloud, it will be necessary to transfer them.
 
-Please consult our guide to [Migrate an IP block between two Hosted Private Cloud services](/pages/cloud/private-cloud/ajout_de_bloc_ip#migrate-an-ip-block-between-two-hosted-private-cloud-solutions).
+Please consult our guide to [Migrate an IP block between two Hosted Private Cloud services](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/ajout_de_bloc_ip#migrate-an-ip-block-between-two-hosted-private-cloud-solutions).
 
 The video below also shows how to migrate an IP block between two Hosted Private Cloud services.
 

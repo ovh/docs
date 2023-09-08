@@ -190,7 +190,7 @@ Jeśli chcesz uzyskać pomoc w zakresie funkcji Twojego CMS-a, skontaktuj się z
 
 [Zarządzanie CMS](/pages/web_cloud/web_hosting/cms_manage_1_click_module)
 
-[Odinstaluj CMS](/pages/web/hosting/cms_manage_1_click_module#etap-3-usun-modul)
+[Odinstaluj CMS](/pages/web_cloud/web_hosting/cms_manage_1_click_module#etap-3-usun-modul)
 
 Poznaj ofertę [Cloud Databases](https://www.ovh.pl/cloud/cloud-databases/){.external}
 

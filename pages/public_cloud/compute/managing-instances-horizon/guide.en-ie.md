@@ -13,7 +13,7 @@ Beside the OVHcloud Control Panel, you can also manage your Public Cloud project
 ## Requirements
 
 - You need to have created a Public Cloud instance in your [OVHcloud Control Panel](/pages/public_cloud/compute/public-cloud-first-steps) or through the [Horizon interface](/pages/public_cloud/compute/create_instance_in_horizon)
-- [An SSH key](/pages/platform/public-cloud/public-cloud-first-steps#step-1-creating-ssh-keys)
+- [An SSH key](/pages/public_cloud/compute/public-cloud-first-steps#step-1-creating-ssh-keys)
 
 ## Access the management interface for the instance
 
@@ -58,8 +58,8 @@ In the management interface for the Instance, select the option you want from th
 
 ![public-cloud](images/list2022.png){.thumbnail}
 
-- Attach Interface: This option allows you to add one or more private interfaces to your instance via the VLAN. For more information, refer to [this section](/pages/platform/network-services/getting-started-07-creating-vrack#adding-a-private-interface) of the corresponding guide.
-- Detach Interface: This option allows you to delete an interface linked to an instance. For more information, refer to [this section](/pages/platform/network-services/getting-started-07-creating-vrack#removing-a-private-interface) of the corresponding guide.
+- Attach Interface: This option allows you to add one or more private interfaces to your instance via the VLAN. For more information, refer to [this section](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack#adding-a-private-interface) of the corresponding guide.
+- Detach Interface: This option allows you to delete an interface linked to an instance. For more information, refer to [this section](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack#removing-a-private-interface) of the corresponding guide.
 - Edit Instance: This option allows you to change the instance name and [security groups](/pages/public_cloud/compute/setup_security_group).
 
 > [!warning]

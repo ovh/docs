@@ -12,14 +12,14 @@ To perform certain administrative functions on your server (e.g. installing pack
 
 ## Requirements
 
-- A [Public Cloud instance](/pages/platform/public-cloud/public-cloud-first-steps#create-instance) in your OVHcloud account
+- A [Public Cloud instance](/pages/public_cloud/compute/public-cloud-first-steps#create-instance) in your OVHcloud account
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}
 
 ## Instructions
 
 ### Setting the root password <a name="settingtherootpassword"></a>
 
-First, establish an [SSH connection](/pages/platform/public-cloud/public-cloud-first-steps#step-4-connecting-to-your-instance) to your server with your default user.
+First, establish an [SSH connection](/pages/public_cloud/compute/public-cloud-first-steps#step-4-connecting-to-your-instance) to your server with your default user.
 
 At the command line, set a password for the root user (for security reasons, the password will not be shown as you type it):
 

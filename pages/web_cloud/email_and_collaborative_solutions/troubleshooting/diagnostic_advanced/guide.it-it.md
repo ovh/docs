@@ -30,7 +30,7 @@ Non è possibile ricevere o inviare email dal tuo client di posta o dalla Webmai
 
 Per una corretta gestione delle email è necessario disporre di un'offerta attiva. Se la tua offerta email è associata a un'offerta di hosting, verifica che non sia scaduta. È possibile verificare questa informazione direttamente dallo Spazio Cliente. Allo stesso modo, anche il tuo dominio deve essere attivo.
 
-Verifica di essere aggiornato sui [pagamenti](/pages/account/billing/invoice_management#pay-bills) e sui [rinnovi](/pages/account/billing/how_to_use_automatic_renewal#renewal-management) dei tuoi servizi.
+Verifica di essere aggiornato sui [pagamenti](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) e sui [rinnovi](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) dei tuoi servizi.
 
 Come verificare che i tuoi servizi siano operativi:
 

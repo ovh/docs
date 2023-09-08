@@ -37,7 +37,7 @@ This means that, before any termination, you must be **certain** that:
 >
 > Termination can only be applied if the following conditions are met:
 >
-> - You are the "administrative contact" for the service (for more information, see [this guide](/pages/account/customer/managing_contacts#definition)).
+> - You are the "administrative contact" for the service (for more information, see [this guide](/pages/account_and_service_management/account_information/managing_contacts#definition)).
 > - The service is not manually renewed.
 > - The service is not suspended, particularly because an invoice has not been paid.
 >
@@ -146,7 +146,7 @@ Each Public Cloud service can be deleted by clicking on the `...`{.action} butto
 
 OVHcloud Public Cloud is based on the principle of *Pay-as-you-go* (more details are available on our information page about the [Public Cloud billing method](/pages/public_cloud/compute/analyze_billing)). At the end of the month, you only pay for the effective resource usage time.
 
-You can also [view your current resource usage](/pages/platform/public-cloud/analyze_billing#view-your-current-resource-usage) in the OVHcloud Control Panel and receive email alerts when your resource usage is projected to exceed a certain threshold.
+You can also [view your current resource usage](/pages/public_cloud/compute/analyze_billing#view-your-current-resource-usage) in the OVHcloud Control Panel and receive email alerts when your resource usage is projected to exceed a certain threshold.
 
 ### Web Cloud <a name="webcloud"></a>
 
@@ -210,23 +210,23 @@ You will then get an email containing the procedure to close your MX Plan, so yo
 
 #### Email Pro <a name="emailpro"></a>
 
-To cancel your [Email Pro](https://www.ovhcloud.com/en-gb/emails/email-pro/) service, follow the instructions of this [guide](/pages/web/emails-pro/manage_billing_emailpro#deleting-accounts).
+To cancel your [Email Pro](https://www.ovhcloud.com/en-gb/emails/email-pro/) service, follow the instructions of this [guide](/pages/web_cloud/email_and_collaborative_solutions/email_pro/manage_billing_emailpro#deleting-accounts).
 
 #### Hosted Exchange <a name="hosted"></a>
 
-To cancel your [Hosted Exchange](https://www.ovhcloud.com/en-gb/emails/hosted-exchange/) service, follow the instructions of this [guide](/pages/web/microsoft-collaborative-solutions/manage_billing_exchange#deleting-accounts).
+To cancel your [Hosted Exchange](https://www.ovhcloud.com/en-gb/emails/hosted-exchange/) service, follow the instructions of this [guide](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_billing_exchange#deleting-accounts).
 
 #### Private Exchange <a name="private"></a>
 
-To cancel your [Private Exchange](https://www.ovhcloud.com/en-gb/emails/private-exchange/) solution, follow the instructions in this [guide](/pages/web/microsoft-collaborative-solutions/manage_billing_exchange#deleting-accounts).
+To cancel your [Private Exchange](https://www.ovhcloud.com/en-gb/emails/private-exchange/) solution, follow the instructions in this [guide](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_billing_exchange#deleting-accounts).
 
 #### Office 365 CSP1 <a name="office-csp1"></a>
 
-To cancel your [Office 365 CSP1](https://www.ovhcloud.com/en-gb/collaborative-tools/microsoft-365/) solution, follow the instructions in this [guide](/pages/web/microsoft-collaborative-solutions/office_csp1#manage-your-subscriptions).
+To cancel your [Office 365 CSP1](https://www.ovhcloud.com/en-gb/collaborative-tools/microsoft-365/) solution, follow the instructions in this [guide](/pages/web_cloud/email_and_collaborative_solutions/microsoft_office/office_csp1#manage-your-subscriptions).
 
 #### Office 365 CSP2 <a name="office-csp2"></a>
 
-To cancel your [Office 365 CSP2](https://www.ovhcloud.com/en-gb/collaborative-tools/microsoft-365/) solution, follow the instructions in this [guide](/pages/web/microsoft-collaborative-solutions/office_csp2#manage-your-subscriptions).
+To cancel your [Office 365 CSP2](https://www.ovhcloud.com/en-gb/collaborative-tools/microsoft-365/) solution, follow the instructions in this [guide](/pages/web_cloud/email_and_collaborative_solutions/microsoft_office/office_csp2#manage-your-subscriptions).
 
 #### Sharepoint <a name="sharepoint"></a>
 

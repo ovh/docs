@@ -18,7 +18,7 @@ Wenn sich Ihre Infrastruktur weiterentwickelt, müssen Sie unter Umständen den 
 
 ## Voraussetzungen
 
-- Sie haben eine [Public Cloud Instanz](/pages/platform/public-cloud/public-cloud-first-steps#schritt-3-instanz-erstellen) mit der Flex-Option.
+- Sie haben eine [Public Cloud Instanz](/pages/public_cloud/compute/public-cloud-first-steps#schritt-3-instanz-erstellen) mit der Flex-Option.
 - Sie haben Zugriff auf das [Horizon Interface](/pages/public_cloud/compute/introducing_horizon).
 
 ## In der praktischen Anwendung
@@ -59,7 +59,7 @@ Mit dem Abschluss der Prozedur ist die Instanz in ein klassisches Modell mit ein
 
 Falls Sie wieder zu einem Flex-Modell wechseln möchten, können Sie dies tun, indem Sie die gleichen Schritte wie [oben](#flavorchoice) ausführen und ein Flex-Modell anstelle eines klassischen Modells auswählen. 
 
-Alternativ können Sie auch im OVHcloud Kundencenter [die Konfiguration der Instanz bearbeiten](/pages/platform/public-cloud/first_steps_with_public_cloud_instance#die-konfiguration-einer-instanz-bearbeiten).
+Alternativ können Sie auch im OVHcloud Kundencenter [die Konfiguration der Instanz bearbeiten](/pages/public_cloud/compute/first_steps_with_public_cloud_instance#die-konfiguration-einer-instanz-bearbeiten).
 
 ## Weiterführende Informationen
 

@@ -190,7 +190,7 @@ Veja a nossa [oferta Web Cloud Databases](https://www.ovh.pt/cloud/cloud-databas
 
 [Gerir o CMS](/pages/web_cloud/web_hosting/cms_manage_1_click_module)
 
-[Desinstalar o seu CMS](/pages/web/hosting/cms_manage_1_click_module#etapa-3-eliminar-o-modulo)
+[Desinstalar o seu CMS](/pages/web_cloud/web_hosting/cms_manage_1_click_module#etapa-3-eliminar-o-modulo)
 
 Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
 

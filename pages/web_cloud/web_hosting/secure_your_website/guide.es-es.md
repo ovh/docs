@@ -26,7 +26,7 @@ Se organiza por etapas en un orden creciente de importancia y dificultad técnic
 ## Requisitos
 
 - un [plan OVHcloud Web Hosting](https://www.ovhcloud.com/es-es/web-hosting/)
-- tener los detalles de [inicio de sesión](/pages/web/hosting/ftp_connection#1-obtener-los-datos-de-conexion) para acceder al espacio de almacenamiento de su plan de alojamiento
+- tener los detalles de [inicio de sesión](/pages/web_cloud/web_hosting/ftp_connection#1-obtener-los-datos-de-conexion) para acceder al espacio de almacenamiento de su plan de alojamiento
 - acceso al [panel de control de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es)
 - acceso a la [interfaz de administración de su sitio web](https://codex.wordpress.org/es:First_Steps_With_WordPress){.external}
 
@@ -74,12 +74,12 @@ Los mensajes de phishing constituyen también una amenaza para la seguridad de s
 En caso de no renovar sus servicios, OVHcloud tiene la obligación legal, una vez haya expirado su suscripción, de eliminar íntegramente los datos asociados a su plan de hosting, así como todas sus copias de seguridad. Enviamos mensajes de recordatorio a nuestros clientes para recordarles sus fechas de renovación.<br>
 No obstante, estos mensajes de correo electrónico pueden aparecer en su spam, o la dirección de correo electrónico asociada a su cuenta de OVHcloud puede ser errónea o no estar disponible.
 
-Si su sitio web tiene un lugar preponderante en su actividad profesional, [active la renovación automática](/pages/account/billing/how_to_use_automatic_renewal#acceder-a-la-configuracion-de-los-servicios) en el conjunto de sus servicios OVHcloud.<br>
+Si su sitio web tiene un lugar preponderante en su actividad profesional, [active la renovación automática](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#acceder-a-la-configuracion-de-los-servicios) en el conjunto de sus servicios OVHcloud.<br>
 También le recomendamos que compruebe regularmente la **validez de las formas de pago** que haya registrado.
 
 ### Etapa 6: compruebe que el sitio web esté actualizado
 
-Compruebe regularmente las actualizaciones de su sitio web siguiendo las instrucciones de esta [guía](/pages/web/hosting/diagnostic_403_forbidden#22-actualizar-el-sitio-web).
+Compruebe regularmente las actualizaciones de su sitio web siguiendo las instrucciones de esta [guía](/pages/web_cloud/web_hosting/diagnostic_403_forbidden#22-actualizar-el-sitio-web).
 
 No olvide utilizar una versión reciente del [lenguaje PHP](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014) en su alojamiento.
 

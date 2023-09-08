@@ -24,7 +24,7 @@ Es ist mit dem Object Storage der OVHcloud Public Cloud kompatibel und kann somi
 ## Voraussetzungen
 
 - [Erstellung von Object Storage Containern](/pages/storage_and_backup/object_storage/pcs_create_container)
-- [Einen Zugang zu Horizon einrichten](/pages/platform/public-cloud/create_and_delete_a_user#erstellung-eines-openstack-benutzers)
+- [Einen Zugang zu Horizon einrichten](/pages/public_cloud/compute/create_and_delete_a_user#erstellung-eines-openstack-benutzers)
 
 ## In der praktischen Anwendung
 

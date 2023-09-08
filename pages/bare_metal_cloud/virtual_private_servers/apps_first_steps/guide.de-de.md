@@ -49,7 +49,7 @@ Es ist kein weiterer Schritt erforderlich, um die erste Konfiguration dieser Anw
 > [!faq]
 >
 > Kann ich meine eigenen DNS Server verwenden?
->> Ja, das können Sie. Stellen Sie sicher, dass Sie bei Ihrem Registrar für Ihre Domain "GLUE" Einträge erstellen. Wenn Sie zum Beispiel "ns1.mydomain.com" und "ns2.mydomain.com" wünschen, müssen Sie "GLUE" Einträge konfigurieren, damit beide auf die IP-Adresse Ihres Servers zeigen. Wenn Ihre Domain bei OVHcloud registriert ist, folgen Sie [dieser Anleitung](/pages/web/domains/glue_registry#schritt-1-glue-eintrage-hinzufugen). Beachten Sie, dass die Erstellung 24 Stunden dauern kann.
+>> Ja, das können Sie. Stellen Sie sicher, dass Sie bei Ihrem Registrar für Ihre Domain "GLUE" Einträge erstellen. Wenn Sie zum Beispiel "ns1.mydomain.com" und "ns2.mydomain.com" wünschen, müssen Sie "GLUE" Einträge konfigurieren, damit beide auf die IP-Adresse Ihres Servers zeigen. Wenn Ihre Domain bei OVHcloud registriert ist, folgen Sie [dieser Anleitung](/pages/web_cloud/domains/glue_registry#schritt-1-glue-eintrage-hinzufugen). Beachten Sie, dass die Erstellung 24 Stunden dauern kann.
 > Warum sollte ich das Root-Passwort festlegen?
 >> WHM verwendet standardmäßig den Root-Benutzer für die Authentifizierung. Mit der Single Use URL können Sie auf die erste Konfiguration zugreifen und das Root-Passwort ändern. Beim nächsten Mal, wenn Sie sich mit WHM verbinden, müssen Sie den Root-Benutzer und das von Ihnen definierte Passwort verwenden.
 > Wo ist meine Lizenz für cPanel?

@@ -6,7 +6,7 @@ updated: 2022-12-09
 
 ## Objectif
 
-L'utilisation de vos bases de données peut entraîner un certain nombre d'anomalies sur votre site ou votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), ainsi que sur l'interface [PhpMyAdmin](/pages/web/hosting/sql_create_database#acceder-a-linterface-phpmyadmin).
+L'utilisation de vos bases de données peut entraîner un certain nombre d'anomalies sur votre site ou votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), ainsi que sur l'interface [PhpMyAdmin](/pages/web_cloud/web_hosting/sql_create_database#acceder-a-linterface-phpmyadmin).
 
 **Découvrez comment résoudre les erreurs liées aux bases de données sur les hébergements mutualisés OVHcloud.**
 
@@ -53,7 +53,7 @@ Connectez-vous en [FTP](/pages/web_cloud/web_hosting/ftp_connection) à l'espace
 > Nous vous recommandons donc de vous rapprocher de l’éditeur du [CMS](/pages/web_cloud/web_hosting/cms_install_1_click_modules) utilisé pour créer votre site ou de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/directory/) en cas de besoin. Nous ne serons pas en mesure de vous fournir une assistance sur ce sujet.
 >
 
-Vérifiez ensuite la correspondance **exacte** entre les identifiants de connexion à [PhpMyAdmin](/pages/web/hosting/sql_create_database#acceder-a-linterface-phpmyadmin) et ceux du fichier de configuration de votre site.
+Vérifiez ensuite la correspondance **exacte** entre les identifiants de connexion à [PhpMyAdmin](/pages/web_cloud/web_hosting/sql_create_database#acceder-a-linterface-phpmyadmin) et ceux du fichier de configuration de votre site.
 
 Changez, si nécessaire, le [mot de passe de votre base de données](/pages/web_cloud/web_hosting/sql_change_password).
 
@@ -85,7 +85,7 @@ Dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&
 
 > [!primary]
 >
-> Si ces manipulations ne vous permettent pas de rétablir l'accès à votre site, [sauvegardez votre base de données](/pages/web_cloud/web_hosting/sql_database_export) puis [restaurez-la à une date antérieure](/pages/web/clouddb/restore-import-on-database-server#1-restaurer-une-sauvegarde-existante) depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
+> Si ces manipulations ne vous permettent pas de rétablir l'accès à votre site, [sauvegardez votre base de données](/pages/web_cloud/web_hosting/sql_database_export) puis [restaurez-la à une date antérieure](/pages/web_cloud/web_cloud_databases/restore-import-on-database-server#1-restaurer-une-sauvegarde-existante) depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
 >
 > Contactez ensuite un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/directory/) si nécessaire. Nous ne serons pas en mesure de vous fournir une assistance sur ce sujet.
 >
@@ -125,12 +125,12 @@ Vous pouvez également migrer vos données sur une nouvelle base :
 
 > [!primary]
 >
-> Si vous disposez d'un hébergement **Performance**, vous pouvez également [activer gratuitement un serveur Web Cloud Databases](/pages/web/clouddb/starting_with_clouddb#activation-de-votre-serveur-clouddb-inclus-avec-votre-offre-dhebergement-web).
+> Si vous disposez d'un hébergement **Performance**, vous pouvez également [activer gratuitement un serveur Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb#activation-de-votre-serveur-clouddb-inclus-avec-votre-offre-dhebergement-web).
 >
 
 #### Méthode 3 : supprimer les données inutiles
 
-Après avoir effectué une [sauvegarde de votre base de données](/pages/web_cloud/web_hosting/sql_database_export), connectez-vous à votre interface [PhpMyAdmin](/pages/web/hosting/sql_create_database#acceder-a-linterface-phpmyadmin) afin de supprimer les données inutiles grâce aux commandes Drop, Delete et Truncate.
+Après avoir effectué une [sauvegarde de votre base de données](/pages/web_cloud/web_hosting/sql_database_export), connectez-vous à votre interface [PhpMyAdmin](/pages/web_cloud/web_hosting/sql_create_database#acceder-a-linterface-phpmyadmin) afin de supprimer les données inutiles grâce aux commandes Drop, Delete et Truncate.
 
 Relancez ensuite le calcul du quota utilisé depuis l'onglet `Bases de données`{.action} de l'hébergement concerné : cliquez sur le bouton `...`{.action} concerné puis sur `Recalculer le quota`{.action}.
 
@@ -141,7 +141,7 @@ Relancez ensuite le calcul du quota utilisé depuis l'onglet `Bases de données`
 
 #### Méthode 4 : optimiser votre base de données
 
-Pour optimiser votre base de données, suivez les instructions de notre guide « [Configurer votre serveur de bases de données](/pages/web/clouddb/configure-database-server#optimiser-vos-bases-de-donnees) ». Relancez ensuite le calcul du quota utilisé depuis l'onglet `Bases de données`{.action} de votre hébergement, en cliquant sur le bouton `...`{.action} de la base de données concernée.
+Pour optimiser votre base de données, suivez les instructions de notre guide « [Configurer votre serveur de bases de données](/pages/web_cloud/web_cloud_databases/configure-database-server#optimiser-vos-bases-de-donnees) ». Relancez ensuite le calcul du quota utilisé depuis l'onglet `Bases de données`{.action} de votre hébergement, en cliquant sur le bouton `...`{.action} de la base de données concernée.
 
 > [!warning]
 >
@@ -154,7 +154,7 @@ Le message suivant dans la partie `Bases de données`{.action} de votre [espace 
 
 ![quota_exceeding](images/quota_exceeding.png){.thumbnail}
 
-Dans cette situation, vous pouvez augmenter la [quantité de mémoire RAM](/pages/web/clouddb/configure-database-server#modifier-loffre-du-serveur-de-bases-de-donnees) disponible depuis la partie `Bases de données`{.action} de votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc). Dans l'onglet `Informations générales`{.action}, cliquez sur le bouton `...`{.action} dans la rubrique `RAM`.
+Dans cette situation, vous pouvez augmenter la [quantité de mémoire RAM](/pages/web_cloud/web_cloud_databases/configure-database-server#modifier-loffre-du-serveur-de-bases-de-donnees) disponible depuis la partie `Bases de données`{.action} de votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc). Dans l'onglet `Informations générales`{.action}, cliquez sur le bouton `...`{.action} dans la rubrique `RAM`.
 
 > [!warning]
 >
@@ -165,7 +165,7 @@ Dans cette situation, vous pouvez augmenter la [quantité de mémoire RAM](/page
 > Dans la zone `Configuration`, cliquez sur le bouton `...`{.action} à droite de l'entrée de la `Base de données privée` puis cliquez sur le bouton `Délier`{.action}.
 >
 
-Vous pouvez également optimiser votre base de données en suivant les instructions de notre guide « [Configurer votre serveur de bases de données](/pages/web/clouddb/configure-database-server#optimiser-vos-bases-de-donnees) ».
+Vous pouvez également optimiser votre base de données en suivant les instructions de notre guide « [Configurer votre serveur de bases de données](/pages/web_cloud/web_cloud_databases/configure-database-server#optimiser-vos-bases-de-donnees) ».
 
 > [!primary]
 >
@@ -186,7 +186,7 @@ Assurez-vous tout d'abord que votre base de données est vide depuis l'onglet `B
 
 Dans le cas contraire, [sauvegardez les données présentes](/pages/web_cloud/web_hosting/sql_database_export) dans votre base puis supprimez-les avant de relancer l'opération d'import.
 
-Vous pouvez également cocher la case `Vider la base de données actuelle`{.action} juste avant de [lancer l'import](/pages/web/hosting/sql_importing_mysql_database#importer-votre-propre-sauvegarde-depuis-lespace-client) :
+Vous pouvez également cocher la case `Vider la base de données actuelle`{.action} juste avant de [lancer l'import](/pages/web_cloud/web_hosting/sql_importing_mysql_database#importer-votre-propre-sauvegarde-depuis-lespace-client) :
 
 ![database-import-empty](images/database-import-empty.png){.thumbnail}
 
@@ -218,15 +218,15 @@ USE `Database-Name`;
 > **« ERROR 2006 : MySQL server has gone away »**
 >
 
-Ce message d'erreur apparaît lors de [l'import d'une base de données](/pages/web/clouddb/restore-import-on-database-server#2-importer-une-sauvegarde-locale) sur un serveur [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb). Il est lié la plupart du temps à la quantité trop importante de données à importer ou à un manque d'optimisation des requêtes SQL dans le script d'import.
+Ce message d'erreur apparaît lors de [l'import d'une base de données](/pages/web_cloud/web_cloud_databases/restore-import-on-database-server#2-importer-une-sauvegarde-locale) sur un serveur [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb). Il est lié la plupart du temps à la quantité trop importante de données à importer ou à un manque d'optimisation des requêtes SQL dans le script d'import.
 
 Pour résoudre cette anomalie, vous pouvez :
 
-- Augmenter la [quantité de mémoire vive (RAM)](/pages/web/clouddb/configure-database-server#suivre-la-ram-consommee). Pour cela, rendez vous sur le [serveur Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) concerné dans la rubrique `Bases de données`{.action} de votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc). Cliquez ensuite sur le bouton `...`{.action} dans la partie `RAM`, puis sur `Changer la quantité de RAM`{.action}.
+- Augmenter la [quantité de mémoire vive (RAM)](/pages/web_cloud/web_cloud_databases/configure-database-server#suivre-la-ram-consommee). Pour cela, rendez vous sur le [serveur Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) concerné dans la rubrique `Bases de données`{.action} de votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc). Cliquez ensuite sur le bouton `...`{.action} dans la partie `RAM`, puis sur `Changer la quantité de RAM`{.action}.
 
 - Fractionner votre base de données, afin de l'importer en plusieurs opérations au lieu d'une seule (pour toute question sur les manipulations à réaliser, contactez notre [communauté d'utilisateurs](https://community.ovh.com) ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/directory/). En effet, nous ne serons pas en mesure de vous fournir une assistance sur ce sujet.)
 
-- [Optimisez votre base de données](/pages/web/clouddb/configure-database-server#optimiser-vos-bases-de-donnees) puis répétez les opérations d'export / import.
+- [Optimisez votre base de données](/pages/web_cloud/web_cloud_databases/configure-database-server#optimiser-vos-bases-de-donnees) puis répétez les opérations d'export / import.
 
 ### Impossible d'accéder à PhpMyAdmin
 
@@ -236,11 +236,11 @@ Pour résoudre cette anomalie, vous pouvez :
 > **« mysqli::real_connect(): (HY000/1045): Access denied for user »**
 >
 
-Ce message d'erreur peut apparaître lors de la connexion à votre base de données par [PhpMyAdmin](/pages/web/hosting/sql_create_database#acceder-a-linterface-phpmyadmin). Elle indique que les identifiants renseignés sont erronés.
+Ce message d'erreur peut apparaître lors de la connexion à votre base de données par [PhpMyAdmin](/pages/web_cloud/web_hosting/sql_create_database#acceder-a-linterface-phpmyadmin). Elle indique que les identifiants renseignés sont erronés.
 
 ![access_denied_for_user](images/access_denied_for_user.png){.thumbnail}
 
-Dans cette situation, [vérifiez les identifiants renseignés](/pages/web/clouddb/connecting-to-database-on-database-server#en-pratique) et modifiez si besoin le [mot de passe de votre base de données](/pages/web_cloud/web_hosting/sql_change_password).
+Dans cette situation, [vérifiez les identifiants renseignés](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server#en-pratique) et modifiez si besoin le [mot de passe de votre base de données](/pages/web_cloud/web_hosting/sql_change_password).
 
 #### « Too many connections »
 
@@ -252,9 +252,9 @@ Le nombre maximal de connexions actives pour les bases de données livrées avec
 
 Ce nombre est de **200** pour les bases des serveurs [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) et [Cloud Databases](https://www.ovh.com/fr/cloud-databases/)  (Ce paramètre est modifiable dans la partie `Configuration`{.action} de votre serveur de base de données).
 
-Ce message apparaît lors de la [connexion à PhpMyAdmin](/pages/web/hosting/sql_create_database#acceder-a-linterface-phpmyadmin) lorsque ce nombre maximal de connexions est dépassé.
+Ce message apparaît lors de la [connexion à PhpMyAdmin](/pages/web_cloud/web_hosting/sql_create_database#acceder-a-linterface-phpmyadmin) lorsque ce nombre maximal de connexions est dépassé.
 
-Dans cette situation, vous devrez [optimiser vos bases de données](/pages/web/clouddb/configure-database-server#optimiser-vos-bases-de-donnees) afin de réduire le nombre de connexions actives.
+Dans cette situation, vous devrez [optimiser vos bases de données](/pages/web_cloud/web_cloud_databases/configure-database-server#optimiser-vos-bases-de-donnees) afin de réduire le nombre de connexions actives.
 
 > [!warning]
 >
@@ -267,7 +267,7 @@ Dans cette situation, vous devrez [optimiser vos bases de données](/pages/web/c
 > **« mysqli::real_connect(): (HY000/2002): php_network_getaddresses: getaddrinfo failed: Name or service not known »**
 >
 
-Ce message d'erreur apparaît lors de la [connexion à PhpMyAdmin](/pages/web/clouddb/connecting-to-database-on-database-server#en-pratique) lorsque le nom de serveur renseigné est incorrect.
+Ce message d'erreur apparaît lors de la [connexion à PhpMyAdmin](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server#en-pratique) lorsque le nom de serveur renseigné est incorrect.
 
 ![name_or_service_not_known](images/name_or_service_not_known.png){.thumbnail}
 
@@ -284,7 +284,7 @@ Vérifiez le nom du serveur à inscrire dans votre [espace client OVHcloud](http
 
 Disposer d'un serveur [Cloud Databases](/products/web-cloud-clouddb) vous permet de vous [connecter à vos bases de données](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server) depuis votre ordinateur ou un serveur extérieur à l'infrastructure d'OVHcloud.
 
-Si cette connexion s'avère impossible, commencez par vérifier que vous avez bien [autorisé votre adresse IP publique](/pages/web/clouddb/starting_with_clouddb#autoriser-une-adresse-ip) à se connecter au serveur de bases de données.
+Si cette connexion s'avère impossible, commencez par vérifier que vous avez bien [autorisé votre adresse IP publique](/pages/web_cloud/web_cloud_databases/starting_with_clouddb#autoriser-une-adresse-ip) à se connecter au serveur de bases de données.
 
 Si cette opération a bien été réalisée, contactez votre Fournisseur d'Accès à Internet ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/directory/). Nous ne serons pas en mesure de vous fournir une assistance dans cette situation.
 

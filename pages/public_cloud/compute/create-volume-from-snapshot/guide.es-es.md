@@ -63,7 +63,7 @@ El proceso de vinculación del disco a la instancia comenzará en ese momento y 
 Debe evitar la navegación fuera de la pestaña en curso al asociar el disco. Esto puede interrumpir el proceso.
 >
 
-Una vez realizado el apego, puede seguir los siguientes pasos [en Linux](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance#con-linux) o [Windows](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance#con-windows).
+Una vez realizado el apego, puede seguir los siguientes pasos [en Linux](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance#con-linux) o [Windows](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance#con-windows).
 
 ## Más información
 

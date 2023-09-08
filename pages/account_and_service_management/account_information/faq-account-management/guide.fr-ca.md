@@ -30,7 +30,7 @@ Si vous n’avez toujours pas retrouvé votre identifiant, vous avez la possibil
 ### Que faire si je ne parviens pas à me connecter à mon compte client ?
 
 Il peut arriver, pour différentes raisons, tel que l'oubli de votre mot de passe, la perte d’accès à votre adresse e-mail, ou à votre téléphone mobile pour une identification par SMS, que vous ne parveniez pas à vous identifier ou à vous connecter à votre espace client.
-Nous vous invitons, si cela vous arrive, à suivre [cette documentation](/pages/account/customer/ovhcloud-account-login#login-failure), qui vous permettra de résoudre ce type de situation.
+Nous vous invitons, si cela vous arrive, à suivre [cette documentation](/pages/account_and_service_management/account_information/ovhcloud-account-login#login-failure), qui vous permettra de résoudre ce type de situation.
 
 ### Comment modifier mes informations personnelles ?
 
@@ -71,7 +71,7 @@ Si vous souhaitez récupérer un nom de domaine dont vous êtes le propriétaire
 
 #### Trucs et astuces
 
-Un guide complet sur la gestion des contacts est disponible [ici](/pages/account/customer/managing_contacts#acceder-a-la-gestion-des-contacts).
+Un guide complet sur la gestion des contacts est disponible [ici](/pages/account_and_service_management/account_information/managing_contacts#acceder-a-la-gestion-des-contacts).
 
 ### Comment paramétrer ou modifier un contact de facturation ?
 

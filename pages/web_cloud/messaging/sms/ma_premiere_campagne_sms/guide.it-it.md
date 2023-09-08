@@ -55,7 +55,7 @@ Di default, l’invio di SMS da un account OVHcloud in Francia si effettua da un
 
 ![firstsms](images/firstsms05.png){.thumbnail}
 
-A questo proposito, consulta la sezione dedicata alla scelta del mittente per i tuoi SMS della guida [“Inviare sms dallo Spazio Cliente”](/pages/telecom/sms/envoyer_des_sms_depuis_mon_espace_client#step-3-scegli-il-mittente-del-tuo-sms).
+A questo proposito, consulta la sezione dedicata alla scelta del mittente per i tuoi SMS della guida [“Inviare sms dallo Spazio Cliente”](/pages/web_cloud/messaging/sms/envoyer_des_sms_depuis_mon_espace_client#step-3-scegli-il-mittente-del-tuo-sms).
 
 ### Step 3: invio di una campagna SMS
 

@@ -113,7 +113,7 @@ Para abonar las facturas pendientes de pago, haga clic en el menú `Acciones mas
 
 ![Abonar el importe pendiente](images/pay_debt.png){.thumbnail}
 
-Se generará una [orden de pedido de regularización](/pages/account/billing/managing_ovh_orders#la-orden-de-pedido). Una vez abonado el importe pendiente, se regularizará su situación.
+Se generará una [orden de pedido de regularización](/pages/account_and_service_management/managing_billing_payments_and_services/managing_ovh_orders#la-orden-de-pedido). Una vez abonado el importe pendiente, se regularizará su situación.
 
 #### Solicitar la cancelación de una factura
 

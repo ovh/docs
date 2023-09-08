@@ -92,7 +92,7 @@ Changer l'environnement d'exécution permet de modifier certaines valeurs techni
 
 Une fois votre choix effectué, il existe deux possibilités pour réaliser ce changement :
 
-- **depuis votre espace client** : utilisez les intructions décrites dans la section [« Modifier la configuration de l'hébergement web depuis l'espace client »](/pages/web/hosting/ovhconfig_modify_system_runtime#modifier-la-configuration-de-lhebergement-web-depuis-lespace-client){.external} de cette documentation ;
+- **depuis votre espace client** : utilisez les intructions décrites dans la section [« Modifier la configuration de l'hébergement web depuis l'espace client »](/pages/web_cloud/web_hosting/ovhconfig_modify_system_runtime#modifier-la-configuration-de-lhebergement-web-depuis-lespace-client){.external} de cette documentation ;
 - **en modifiant manuellement le fichier « .ovhconfig** » : cette solution est plus technique et nécessite d'être connecté à votre espace de stockage. Si vous souhaitez modifier le fichier « **.ovhconfig** », reportez-vous aux instructions décrites dans notre documentation [« Configurer le fichier .ovhconfig de mon hébergement web »](/pages/web_cloud/web_hosting/ovhconfig_configuration){.external}.
 
 #### Version de PHP
@@ -103,7 +103,7 @@ Du fait que certaines fonctionnalités peuvent ne pas être maintenues au fil de
 
 Il existe plusieurs manières de modifier la version de PHP de votre hébergement web :
 
-- **depuis votre espace client** : utilisez les intructions décrites dans la section [« Modifier la configuration de l'hébergement web depuis l'espace client »](/pages/web/hosting/ovhconfig_modify_system_runtime#modifier-la-configuration-de-lhebergement-web-depuis-lespace-client){.external} de cette documentation ;
+- **depuis votre espace client** : utilisez les intructions décrites dans la section [« Modifier la configuration de l'hébergement web depuis l'espace client »](/pages/web_cloud/web_hosting/ovhconfig_modify_system_runtime#modifier-la-configuration-de-lhebergement-web-depuis-lespace-client){.external} de cette documentation ;
 - **en modifiant manuellement un fichier sur votre espace de stockage** : cette solution est plus technique et nécessite d'être connecté à votre espace de stockage. 
 
 De manière générale, si vous souhaitez obtenir plus d'informations sur le changement d'une version de PHP, reportez-vous aux instructions décrites dans notre documentation [« Changer la version de PHP d’un hébergement web OVHcloud »](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014){.external}.
@@ -114,7 +114,7 @@ Le choix du moteur PHP permet d'activer ou de désactiver l'accélérateur PHP (
 
 Il existe deux possibilités pour modifier le moteur PHP utilisé par votre hébergement web :
 
-- **depuis votre espace client** : utilisez les intructions décrites dans la section [« Modifier la configuration de l'hébergement web depuis l'espace client »](/pages/web/hosting/ovhconfig_modify_system_runtime#modifier-la-configuration-de-lhebergement-web-depuis-lespace-client){.external} de cette documentation. Pour activer l'accélérateur PHP (« PHP-FPM »), choisissez « php » en tant que moteur. Pour le désactiver, choisissez « phpcgi » ;
+- **depuis votre espace client** : utilisez les intructions décrites dans la section [« Modifier la configuration de l'hébergement web depuis l'espace client »](/pages/web_cloud/web_hosting/ovhconfig_modify_system_runtime#modifier-la-configuration-de-lhebergement-web-depuis-lespace-client){.external} de cette documentation. Pour activer l'accélérateur PHP (« PHP-FPM »), choisissez « php » en tant que moteur. Pour le désactiver, choisissez « phpcgi » ;
 - **en modifiant manuellement le fichier « .ovhconfig** » : cette solution est plus technique et nécessite d'être connecté à votre espace de stockage. Si vous souhaitez modifier le fichier « **.ovhconfig** », reportez-vous aux instructions décrites dans notre documentation [« Configurer le fichier .ovhconfig de mon hébergement web »](/pages/web_cloud/web_hosting/ovhconfig_configuration){.external}.
 
 #### Mode
@@ -133,7 +133,7 @@ Le choix du mode permet de gérer le comportement du cache des fichiers statique
 
 Pour modifier le mode utilisé par votre hébergement web, il existe deux possibilités :
 
-- **depuis votre espace client** : utilisez les intructions décrites dans la section [« Modifier la configuration de l'hébergement web depuis l'espace client »](/pages/web/hosting/ovhconfig_modify_system_runtime#modifier-la-configuration-de-lhebergement-web-depuis-lespace-client){.external} de cette documentation ;
+- **depuis votre espace client** : utilisez les intructions décrites dans la section [« Modifier la configuration de l'hébergement web depuis l'espace client »](/pages/web_cloud/web_hosting/ovhconfig_modify_system_runtime#modifier-la-configuration-de-lhebergement-web-depuis-lespace-client){.external} de cette documentation ;
 - **en modifiant manuellement le fichier « .ovhconfig** » : cette solution est plus technique et nécessite d'être connecté à votre espace de stockage. Si vous souhaitez modifier le fichier « **.ovhconfig** », reportez-vous aux instructions décrites dans notre documentation [« Configurer le fichier .ovhconfig de mon hébergement web »](/pages/web_cloud/web_hosting/ovhconfig_configuration){.external}.
 
 ## Aller plus loin

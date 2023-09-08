@@ -382,7 +382,7 @@ Le transfert des fichiers se fait via un protocole dédié : le **FTP** (pour **
 
 ### Déployer son site en FTP
 
-Pour déposer vos fichiers sur votre hébergement, reportez-vous au guide sur l'[utilisation de FileZilla](/pages/web/hosting/ftp_filezilla_user_guide#connexion-avec-filezilla-en-ftp).
+Pour déposer vos fichiers sur votre hébergement, reportez-vous au guide sur l'[utilisation de FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide#connexion-avec-filezilla-en-ftp).
 
 Une fois les fichiers totalement transférés sur votre hébergement, vous pouvez visualiser le résultat en tapant votre nom de domaine dans la barre d'adresse de votre navigateur ou en appuyant sur la touche `F5` de votre clavier pour recharger la page si vous êtes déjà sur votre site.
 

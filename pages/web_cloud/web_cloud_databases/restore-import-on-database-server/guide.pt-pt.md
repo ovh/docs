@@ -82,7 +82,7 @@ Em certos casos, a RAM disponível no seu servidor de bases de dados não permit
 
 #### Importar uma base MySQL ou MariaDB a partir do phpMyAdmin
 
-Para importar uma base de dados diretamente a partir do phpMyAdmin, antes de mais tem de se conectar a ela. Consulte a secção [«Conexão a uma base de dados MySQL ou MariaDB»](/pages/web/clouddb/connecting-to-database-on-database-server#conexao-a-uma-base-de-dados-mysql-ou-mariadb).
+Para importar uma base de dados diretamente a partir do phpMyAdmin, antes de mais tem de se conectar a ela. Consulte a secção [«Conexão a uma base de dados MySQL ou MariaDB»](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server#conexao-a-uma-base-de-dados-mysql-ou-mariadb).
 
 Depois de se ter conectado ao phpMyAdmin, clique no nome da base de dados.
 

@@ -77,7 +77,7 @@ Klicken Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=go
 
 #### Lösung 4: Ihr Modul auf einer bereits genutzten Datenbank installieren
 
-Um Ihr Modul auf einer bereits genutzten Datenbank zu installieren, verwenden Sie den [fortgeschrittenen Modus](/pages/web/hosting/cms_install_1_click_modules#erweiterte-installation-eines-moduls).
+Um Ihr Modul auf einer bereits genutzten Datenbank zu installieren, verwenden Sie den [fortgeschrittenen Modus](/pages/web_cloud/web_hosting/cms_install_1_click_modules#erweiterte-installation-eines-moduls).
 
 ### “Das Installationsverzeichnis ist nicht leer“
 
@@ -110,7 +110,7 @@ Um diese Konfiguration zu überprüfen, lesen Sie unsere Anleitungen zu diesem T
 
 Diese Nachricht zeigt an, dass der [Speicherplatz](/pages/web_cloud/web_hosting/ftp_connection) Ihres Hostings zu viele Daten enthält. Sie müssen zuerst Dateien löschen oder verschieben, bevor Sie ein neues [1-Klick-Modul](/pages/web_cloud/web_hosting/cms_install_1_click_modules) installieren können.
 
-In diesem Fall verbinden Sie sich via [FTP mit Ihrem Hosting](/pages/web_cloud/web_hosting/ftp_connection), [sichern Sie die Daten lokal](/pages/web/hosting/ftp_filezilla_user_guide#ubertragen-von-dateien) und löschen Sie dann die Dateien, die für den Betrieb Ihrer Website nicht notwendig sind.
+In diesem Fall verbinden Sie sich via [FTP mit Ihrem Hosting](/pages/web_cloud/web_hosting/ftp_connection), [sichern Sie die Daten lokal](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide#ubertragen-von-dateien) und löschen Sie dann die Dateien, die für den Betrieb Ihrer Website nicht notwendig sind.
 
 > [!primary]
 >
@@ -124,7 +124,7 @@ In diesem Fall verbinden Sie sich via [FTP mit Ihrem Hosting](/pages/web_cloud/w
 
 Nachdem Sie die Installation Ihres Moduls im Experten-Modus gestartet haben, erhalten Sie über E-Mail den Hinweis, dass Ihr Modul sich nicht mit der angegebenen Datenbank verbinden kann. 
 
-Überprüfen Sie zunächst Ihre [Login-Daten](/pages/web/hosting/cms_install_1_click_modules#datenbank-auswahlen) für die Datenbank.
+Überprüfen Sie zunächst Ihre [Login-Daten](/pages/web_cloud/web_hosting/cms_install_1_click_modules#datenbank-auswahlen) für die Datenbank.
 
 Löschen Sie anschließend Ihr Modul über den Tab `1-Klick-Module`{.action}.
 
@@ -136,11 +136,11 @@ Starten Sie anschließend die Installation eines neuen Moduls.
 
 ![insufficient_rights](images/insufficient_rights.png){.thumbnail}
 
-Ihre Datenbank kann nicht mehr bearbeitet werden, da die darin enthaltene Datenmenge die maximale Schwelle überschreitet. Diese Nachricht wird bei der Installation eines 1-Klick-Moduls im [Experten-Modus](/pages/web/hosting/cms_install_1_click_modules#erweiterte-installation-eines-moduls) angezeigt.
+Ihre Datenbank kann nicht mehr bearbeitet werden, da die darin enthaltene Datenmenge die maximale Schwelle überschreitet. Diese Nachricht wird bei der Installation eines 1-Klick-Moduls im [Experten-Modus](/pages/web_cloud/web_hosting/cms_install_1_click_modules#erweiterte-installation-eines-moduls) angezeigt.
 
-Installieren Sie in diesem Fall Ihr Modul über den [einfachen Modus](/pages/web/hosting/cms_install_1_click_modules#einfache-installation-eines-moduls) oder wählen Sie bei der Installation im Experten-Modus eine andere Datenbank aus. Wenn nötig, bestellen Sie eine zusätzlichen [Datenbank-Dienst](https://www.ovh.de/hosting/sql-optionen.xml).
+Installieren Sie in diesem Fall Ihr Modul über den [einfachen Modus](/pages/web_cloud/web_hosting/cms_install_1_click_modules#einfache-installation-eines-moduls) oder wählen Sie bei der Installation im Experten-Modus eine andere Datenbank aus. Wenn nötig, bestellen Sie eine zusätzlichen [Datenbank-Dienst](https://www.ovh.de/hosting/sql-optionen.xml).
 
-Wenn Sie nicht über weitere Datenbanken verfügen und kein zusätzliches Angebot verwenden möchten, [importieren Sie eine Kopie Ihrer Datenbank](/pages/web/hosting/sql_database_export#beschreibung) und löschen Sie anschließend unnötige Daten.
+Wenn Sie nicht über weitere Datenbanken verfügen und kein zusätzliches Angebot verwenden möchten, [importieren Sie eine Kopie Ihrer Datenbank](/pages/web_cloud/web_hosting/sql_database_export#beschreibung) und löschen Sie anschließend unnötige Daten.
 
 > [!warning]
 >
@@ -154,17 +154,17 @@ Wenn Sie nicht über weitere Datenbanken verfügen und kein zusätzliches Angebo
 
 ![cant_connect](images/cant_connect.png){.thumbnail}
 
-Sie haben die Installation eines 1-Klick-Moduls im [Experten-Modus](/pages/web/hosting/cms_install_1_click_modules#erweiterte-installation-eines-moduls) unter Angabe einer Datenbank auf einem [Web Cloud Databases Server](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) gestartet. Sie erhalten diese Fehlermeldung per E-Mail, wenn der bei der Installation angegebene Benutzer nicht über ausreichende Datenbankrechte verfügt oder die angegebenen Kennungen nicht korrekt sind.
+Sie haben die Installation eines 1-Klick-Moduls im [Experten-Modus](/pages/web_cloud/web_hosting/cms_install_1_click_modules#erweiterte-installation-eines-moduls) unter Angabe einer Datenbank auf einem [Web Cloud Databases Server](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) gestartet. Sie erhalten diese Fehlermeldung per E-Mail, wenn der bei der Installation angegebene Benutzer nicht über ausreichende Datenbankrechte verfügt oder die angegebenen Kennungen nicht korrekt sind.
 
-Ändern Sie in diesem Fall zunächst die betreffenden [Rechte des Benutzers](/pages/web/clouddb/create-db-and-user-on-db-server#verwaltung-der-benutzerrechte), damit dieser über die Rechte **Administrator** oder **Lesen/Schreiben** auf der Datenbank verfügt.
+Ändern Sie in diesem Fall zunächst die betreffenden [Rechte des Benutzers](/pages/web_cloud/web_cloud_databases/create-db-and-user-on-db-server#verwaltung-der-benutzerrechte), damit dieser über die Rechte **Administrator** oder **Lesen/Schreiben** auf der Datenbank verfügt.
 
-Überprüfen Sie auch die Zugangsdaten, indem Sie sich [mit Ihrem Datenbankserver verbinden](/pages/web/clouddb/connecting-to-database-on-database-server#in-der-praktischen-anwendung) und anschließend die Installation Ihres Moduls neu starten.
+Überprüfen Sie auch die Zugangsdaten, indem Sie sich [mit Ihrem Datenbankserver verbinden](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server#in-der-praktischen-anwendung) und anschließend die Installation Ihres Moduls neu starten.
 
 ### “Verbindung nicht möglich zur Datenbank 'xxxxxxxx' auf 'xxxxxxxx.mysql.db'. Fehler: Unbekannter MySQL Server Host 'xxxxxx.mysql.db'“
 
 ![cant_connect_server](images/cant_connect_server.png){.thumbnail}
 
-Sie haben die Installation eines 1-Klick-Moduls im [Experten-Modus](/pages/web/hosting/cms_install_1_click_modules#erweiterte-installation-eines-moduls) unter Angabe einer Datenbank auf einem [Web Cloud Databases Server](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) gestartet. Sie erhalten diese Fehlermeldung per E-Mail, wenn der angegebene Name des Datenbankservers nicht korrekt ist.
+Sie haben die Installation eines 1-Klick-Moduls im [Experten-Modus](/pages/web_cloud/web_hosting/cms_install_1_click_modules#erweiterte-installation-eines-moduls) unter Angabe einer Datenbank auf einem [Web Cloud Databases Server](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) gestartet. Sie erhalten diese Fehlermeldung per E-Mail, wenn der angegebene Name des Datenbankservers nicht korrekt ist.
 
 Klicken Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) auf den Bereich `Web Cloud`{.action} und anschließend auf das Menü `Datenbanken`{.action}.
 
@@ -178,8 +178,8 @@ Klicken Sie auf den Tab `Multisite`{.action} und führen Sie folgende Schritte d
 
 |Szenario|Erforderliche Maßnahme|
 |---|---|
-|Die Domain oder Subdomain der zu erstellenden Website erscheint nicht unter `Multisite`{.action}.|Fügen Sie Ihre Domain mithilfe [dieser Anleitung](/pages/web/hosting/multisites_configure_multisite#schritt-21-eine-bei-ovhcloud-registrierte-domain-hinzufugen) hinzu.|
-|Die Domain wurde ohne Aktion Ihrerseits aus dem `Multisite`{.action} Bereich gelöscht.|Wenn Ihre Domain oder deren [DNS-Zone](/pages/web/domains/dns_zone_edit#dns-konzept-verstehen) nicht über Ihren OVHcloud Kunden-Account verwaltet wird, fügen Sie Ihre Domain zur `Multisite`{.action} gemäß [dieser Anleitung](/pages/web/hosting/multisites_configure_multisite#schritt-22-eine-externe-domain-hinzufugen) hinzu.|
+|Die Domain oder Subdomain der zu erstellenden Website erscheint nicht unter `Multisite`{.action}.|Fügen Sie Ihre Domain mithilfe [dieser Anleitung](/pages/web_cloud/web_hosting/multisites_configure_multisite#schritt-21-eine-bei-ovhcloud-registrierte-domain-hinzufugen) hinzu.|
+|Die Domain wurde ohne Aktion Ihrerseits aus dem `Multisite`{.action} Bereich gelöscht.|Wenn Ihre Domain oder deren [DNS-Zone](/pages/web_cloud/domains/dns_zone_edit#dns-konzept-verstehen) nicht über Ihren OVHcloud Kunden-Account verwaltet wird, fügen Sie Ihre Domain zur `Multisite`{.action} gemäß [dieser Anleitung](/pages/web_cloud/web_hosting/multisites_configure_multisite#schritt-22-eine-externe-domain-hinzufugen) hinzu.|
 
 ### Ihr Modul wird unter einer Webadresse der Art “xxxxx.cluster0xx.hosting.ovh.net“ angezeigt
 
@@ -191,13 +191,13 @@ Nachdem Sie alle notwendigen Backups durchgeführt haben, [löschen Sie Ihr Modu
 
 Dies kann mehrere Ursachen haben: 
 
-- Sie haben kürzlich eine Änderung Ihrer [DNS-Zone](/pages/web/domains/dns_zone_edit#dns-konzept-verstehen) oder DNS-Server durchgeführt, oder einen [Domain Transfer](/pages/web_cloud/domains/transfer_incoming_generic_domain). Warten Sie, bis diese Operationen abgeschlossen sind (48 Stunden bei Änderungen an Ihren DNS-Servern). Denken Sie auch daran, Ihre Geräte (PC, Smartphone, Internetverbindung usw.) neuzustarten und den Cache Ihres Browsers zu leeren.
+- Sie haben kürzlich eine Änderung Ihrer [DNS-Zone](/pages/web_cloud/domains/dns_zone_edit#dns-konzept-verstehen) oder DNS-Server durchgeführt, oder einen [Domain Transfer](/pages/web_cloud/domains/transfer_incoming_generic_domain). Warten Sie, bis diese Operationen abgeschlossen sind (48 Stunden bei Änderungen an Ihren DNS-Servern). Denken Sie auch daran, Ihre Geräte (PC, Smartphone, Internetverbindung usw.) neuzustarten und den Cache Ihres Browsers zu leeren.
 
-- Ihre Domain ist noch immer mit Ihrem alten Webhosting verbunden. Bearbeiten Sie in diesem Fall Ihre [DNS-Zone](/pages/web/domains/dns_zone_edit#bearbeiten-der-ovhcloud-dns-zone-ihrer-domain) oder Ihre [DNS-Server](/pages/web/domains/dns_server_general_information#dns-server-andern) oder kontaktieren Sie Ihren bisherigen Hosting-Anbieter, um diese Anpassung durchzuführen.
+- Ihre Domain ist noch immer mit Ihrem alten Webhosting verbunden. Bearbeiten Sie in diesem Fall Ihre [DNS-Zone](/pages/web_cloud/domains/dns_zone_edit#bearbeiten-der-ovhcloud-dns-zone-ihrer-domain) oder Ihre [DNS-Server](/pages/web_cloud/domains/dns_server_general_information#dns-server-andern) oder kontaktieren Sie Ihren bisherigen Hosting-Anbieter, um diese Anpassung durchzuführen.
 
 ### Das Administrator-Passwort für den Zugriff auf das Backend Ihres 1-Klick-Moduls funktioniert nicht mehr <a name="adminpassword"></a>
 
-Wenn das aktuelle Passwort für den Zugriff auf das Verwaltungsinterface Ihres CMS abgelehnt wird, lesen Sie den Abschnitt "Passwort Ihres Moduls ändern" in unserer Anleitung zur [Verwaltung Ihres 1-Klick-Moduls](/pages/web/hosting/cms_manage_1_click_module#password-change).
+Wenn das aktuelle Passwort für den Zugriff auf das Verwaltungsinterface Ihres CMS abgelehnt wird, lesen Sie den Abschnitt "Passwort Ihres Moduls ändern" in unserer Anleitung zur [Verwaltung Ihres 1-Klick-Moduls](/pages/web_cloud/web_hosting/cms_manage_1_click_module#password-change).
 
 ## Weiterführende Informationen <a name="gofurther"></a>
 

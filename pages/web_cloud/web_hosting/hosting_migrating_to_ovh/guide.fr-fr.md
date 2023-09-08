@@ -149,8 +149,8 @@ Recréez à l'identique les adresses e-mail présentes chez votre fournisseur e-
 
 Si vous avez opté pour une solution « Email Pro » ou « Exchange », consultez notre documentation sur le sujet pour créer vos adresses e-mail :
 
-- Pour « Email-Pro » : </pages/web/emails-pro/first_config>
-- Pour « Exchange » : </pages/web/microsoft-collaborative-solutions/exchange_starting_hosted>
+- Pour « Email-Pro » : </pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config>
+- Pour « Exchange » : </pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_starting_hosted>
 
 ### Etape 6 : déclarer les serveurs e-mail OVHcloud dans la zone DNS active de votre nom de domaine <a name="step6"></a>
 
@@ -201,7 +201,7 @@ Une fois vos anciennes adresses e-mail migrées chez OVHcloud, reconfigurez vos 
 
 #### Pour les comptes e-mail « MX Plan » : 
 
-- Retrouvez l'ensemble des paramètres de configuration dans notre guide « [Généralités sur les e-mails MX Plan](/pages/web/emails/email_generalities#2-utiliser-le-logiciel-de-votre-choix) ». Vous y trouverez également les liens vers les guides de configuration personnalisés pour les principaux logiciels de messagerie.
+- Retrouvez l'ensemble des paramètres de configuration dans notre guide « [Généralités sur les e-mails MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities#2-utiliser-le-logiciel-de-votre-choix) ». Vous y trouverez également les liens vers les guides de configuration personnalisés pour les principaux logiciels de messagerie.
 
 #### Pour les comptes « Email-Pro » :
 

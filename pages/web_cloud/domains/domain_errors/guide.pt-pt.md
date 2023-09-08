@@ -17,7 +17,7 @@ A criação de um nome de domínio, a sua transferência, a sua mudança de prop
 
 - Dispor de um ou vários domínios.
 - Estar ligado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
-- Estar atualizado em [pagamentos](/pages/account/billing/invoice_management#pay-bills) e [renovações](/pages/account/billing/how_to_use_automatic_renewal#renewal-management) dos serviços associados (nome de domínio e alojamento web).
+- Estar atualizado em [pagamentos](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) e [renovações](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) dos serviços associados (nome de domínio e alojamento web).
 
 ## Instruções
 
@@ -46,7 +46,7 @@ Neste guia, vamos focar as operações **em erro** através de exemplos recorren
 >
 > A lista de exemplos abaixo é não exaustiva. Se encontrar um erro que não é detalhado neste guia:
 >
-> - Verifique que está atualizado nas [renovações](/pages/account/billing/how_to_use_automatic_renewal#renewal-management) e [pagamentos](/pages/account/billing/invoice_management#pay-bills) de domínios.
+> - Verifique que está atualizado nas [renovações](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) e [pagamentos](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) de domínios.
 > - Verifique se pode agir clicando no botão `...`{.action} à direita da operação em causa.
 > - Leia a mensagem descritiva e verifique se esta lhe permite resolver o erro.
 >

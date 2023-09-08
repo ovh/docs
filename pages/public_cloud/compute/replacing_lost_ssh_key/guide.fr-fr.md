@@ -25,7 +25,7 @@ Pour récupérer l'accès, nous avons mis à votre disposition un [mode rescue](
 Si vous souhaitez enregistrer une clé SSH dans l'espace client OVHcloud, nous vous recommandons d'utiliser le chiffrement RSA ou ECDSA. ED25519 n'est actuellement pas pris en charge.
 >
 
-Après avoir monté le disque de votre instance en [mode rescue](/pages/platform/public-cloud/put_an_instance_in_rescue_mode#acceder-a-vos-donnees), vous serez en mesure d'accéder à l'ensemble de vos fichiers.
+Après avoir monté le disque de votre instance en [mode rescue](/pages/public_cloud/compute/put_an_instance_in_rescue_mode#acceder-a-vos-donnees), vous serez en mesure d'accéder à l'ensemble de vos fichiers.
 
 Le fichier contenant vos clés SSH est le fichier :
 

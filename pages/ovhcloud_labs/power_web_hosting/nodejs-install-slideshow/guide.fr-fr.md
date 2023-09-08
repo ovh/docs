@@ -47,9 +47,9 @@ Supposons que vous avez la configuration normale pour un hébergement web POWER 
 
 > [!primary]
 >
-> Vous pouvez appeler l'API OVHcloud pour [visualiser la configuration active](/pages/labs/web-power/getting-started#api-get-active-configuration)
+> Vous pouvez appeler l'API OVHcloud pour [visualiser la configuration active](/pages/ovhcloud_labs/power_web_hosting/getting-started#api-get-active-configuration)
 
-[Accédez via SSH](/pages/labs/web-power/getting-started#ssh) à votre hébergement web POWER. Commencez par recupérer les sources du projet :
+[Accédez via SSH](/pages/ovhcloud_labs/power_web_hosting/getting-started#ssh) à votre hébergement web POWER. Commencez par recupérer les sources du projet :
 
 ```sh
 rm -rf www
@@ -64,7 +64,7 @@ npm install --save
 ln -fs server.js index.js
 ```
 
-[Redémarrez votre instance](/pages/labs/web-power/getting-started#restart), votre application de présentation de slides sera alors en ligne.
+[Redémarrez votre instance](/pages/ovhcloud_labs/power_web_hosting/getting-started#restart), votre application de présentation de slides sera alors en ligne.
 
 ![Slideshow](images/nodejs-install-slideshow-01.png){.thumbnail}
 

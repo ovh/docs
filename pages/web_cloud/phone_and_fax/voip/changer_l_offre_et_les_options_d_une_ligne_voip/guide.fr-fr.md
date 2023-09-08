@@ -55,7 +55,7 @@ Vous pouvez adapter le nombre d'appels simultanés sur une ligne VoIP Entreprise
 > [!primary]
 >
 > Une ligne VoIP découverte est limitée à 1 seul appel simultané. 
->Si vous souhaitez augmenter le nombre d'appels simultanés sur une ligne VoIP Découverte, il sera nécessaire de la [convertir en ligne VoIP Entreprise](/pages/telecom/voip/changer_l_offre_et_les_options_d_une_ligne_voip#changer-doffre-voip).
+>Si vous souhaitez augmenter le nombre d'appels simultanés sur une ligne VoIP Découverte, il sera nécessaire de la [convertir en ligne VoIP Entreprise](/pages/web_cloud/phone_and_fax/voip/changer_l_offre_et_les_options_d_une_ligne_voip#changer-doffre-voip).
 >
 
 Sélectionnez votre ligne VoIP puis l'onglet `Gestion des appels`{.action} (1). Cliquez alors sur `Appels simultanés`{.action} (2).
@@ -121,7 +121,7 @@ Vous devez alors:
 
 Toute demande de conversion sera prise en compte lors de votre prochaine facturation. Jusqu'à cette date, l'annulation d'une conversion restera possible.
 
-Une fois la conversion effectuée, vous disposerez d'une ligne SIP seule, sans matériel associé. Vous pourrez lui [associer un téléphone Plug & Phone OVHcloud](/pages/telecom/voip/commander_associer_ou_changer_un_telephone#obtenir-un-telephone-plug-phone-ovhcloud) ou enregistrer la ligne sur votre propre matériel ou logiciel.<br>
+Une fois la conversion effectuée, vous disposerez d'une ligne SIP seule, sans matériel associé. Vous pourrez lui [associer un téléphone Plug & Phone OVHcloud](/pages/web_cloud/phone_and_fax/voip/commander_associer_ou_changer_un_telephone#obtenir-un-telephone-plug-phone-ovhcloud) ou enregistrer la ligne sur votre propre matériel ou logiciel.<br>
 Dans ce dernier cas de figure, nous vous invitons de sécuriser votre ligne en suivant les instructions de [ce guide](/pages/web_cloud/phone_and_fax/voip/secure-sip-line).
 
 ### Résilier une ligne SIP / Trunk <a name="resilier-sip-trunk"></a>

@@ -186,7 +186,7 @@ Découvrez nos [offres Web Cloud Databases](https://www.ovh.com/fr/cloud/cloud-d
 
 [Gérer votre CMS](/pages/web_cloud/web_hosting/cms_manage_1_click_module)
 
-[Désinstaller votre CMS](/pages/web/hosting/cms_manage_1_click_module#etape-3-supprimer-votre-module)
+[Désinstaller votre CMS](/pages/web_cloud/web_hosting/cms_manage_1_click_module#etape-3-supprimer-votre-module)
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
 

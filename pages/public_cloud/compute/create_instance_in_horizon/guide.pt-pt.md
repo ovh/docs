@@ -54,7 +54,7 @@ Deverá preencher as diferentes informações. Caso seja necessário, consulte a
 
 > [!warning]
 > 
-> Embora o campo "Key Pair" não seja obrigatório na interface Horizon aquando da criação de uma instância, o registo de uma chave SSH é absolutamente necessário para poder ligar-se a uma instância. Sem chave SSH, será obrigado a reiniciar a instância em modo rescue para poder criar uma palavra-passe ou adicionar uma chave SSH ao ficheiro adequado (para mais informações, consulte o guia [Alterar a chave SSH em caso de perda](/pages/platform/public-cloud/replacing_lost_ssh_key#instrucoes)).
+> Embora o campo "Key Pair" não seja obrigatório na interface Horizon aquando da criação de uma instância, o registo de uma chave SSH é absolutamente necessário para poder ligar-se a uma instância. Sem chave SSH, será obrigado a reiniciar a instância em modo rescue para poder criar uma palavra-passe ou adicionar uma chave SSH ao ficheiro adequado (para mais informações, consulte o guia [Alterar a chave SSH em caso de perda](/pages/public_cloud/compute/replacing_lost_ssh_key#instrucoes)).
 >
 
 Assim que estiver pronto para lançar a(s) instância(s) pretendida(s), clique no botão `Launch Instance`{.action}.

@@ -107,7 +107,7 @@ Por último, confirme la contraseña de la dirección de correo de origen (la qu
 >
 >![exchange](images/account_migration_adddomain.png){.thumbnail}
 >
-> Para más información sobre la adición de un dominio, consulte [la guía Email Pro](/pages/web/emails-pro/first_config#2-anadir-su-nombre-de-dominio) o [la guía Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain).
+> Para más información sobre la adición de un dominio, consulte [la guía Email Pro](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config#2-anadir-su-nombre-de-dominio) o [la guía Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain).
 
 La migración de su MXPlan se realizará en 3 grandes etapas: **Renombrar**, **Crear** y **Migrar**.
 

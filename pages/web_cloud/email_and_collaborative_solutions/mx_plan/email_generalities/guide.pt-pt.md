@@ -120,9 +120,9 @@ Para isso, é preciso criar um reencaminhamento.
 
 Pode realizar de duas formas:
 
-- criar o seu reencaminhamento a partir do webmail, através das regras de caixa de entrada. Para isso, siga o manual [Regras da caixa de entrada na interface OWA](/pages/web/emails/creating-inbox-rules-in-owa-mx-plan#exemplo-1-redirecionar-e-mails-para-outro-endereco).
+- criar o seu reencaminhamento a partir do webmail, através das regras de caixa de entrada. Para isso, siga o manual [Regras da caixa de entrada na interface OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/creating-inbox-rules-in-owa-mx-plan#exemplo-1-redirecionar-e-mails-para-outro-endereco).
 
-- criar o seu reencaminhamento a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Este método permite-lhe, por exemplo, criar um alias, ou seja, reencaminhar um endereço de e-mail que não existe para um endereço de e-mail existente. Para isso, siga o nosso manual [Utilizar os reencaminhamentos de e-mail](/pages/web/emails/feature_redirections#nova-versao-da-oferta-mx-plan).
+- criar o seu reencaminhamento a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Este método permite-lhe, por exemplo, criar um alias, ou seja, reencaminhar um endereço de e-mail que não existe para um endereço de e-mail existente. Para isso, siga o nosso manual [Utilizar os reencaminhamentos de e-mail](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections#nova-versao-da-oferta-mx-plan).
 
 ##### **Voicemail**
 
@@ -223,7 +223,7 @@ Se pretender obter mais informações sobre os elementos necessários para confi
 
 Deseja reencaminhar os seus e-mails para outro destinatário, criar um alias ou ainda fazer sistematicamente uma cópia de outro endereço de e-mail.
 
-Para isso, é preciso criar um reencaminhamento. Sugerimos que siga o nosso manual [Utilizar os reencaminhamentos de e-mail](/pages/web/emails/feature_redirections#versao-antiga-da-oferta-mx-plan).
+Para isso, é preciso criar um reencaminhamento. Sugerimos que siga o nosso manual [Utilizar os reencaminhamentos de e-mail](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections#versao-antiga-da-oferta-mx-plan).
 
 ##### **Voicemail**
 

@@ -51,7 +51,7 @@ Cliquez sur le bouton `Ajouter une IP`{.action} pour ajouter des adresses IP à 
 
 ### Gestion des expéditeurs et des crédits
 
-Consultez nos guides sur la [gestion des expéditeurs](/pages/telecom/sms/envoyer_des_sms_depuis_mon_espace_client#etape-3-choisir-votre-expediteur-sms) et sur la [gestion des crédits SMS et la recharge automatique](/pages/web_cloud/messaging/sms/activer_la_recharge_automatique_du_credit_sms).
+Consultez nos guides sur la [gestion des expéditeurs](/pages/web_cloud/messaging/sms/envoyer_des_sms_depuis_mon_espace_client#etape-3-choisir-votre-expediteur-sms) et sur la [gestion des crédits SMS et la recharge automatique](/pages/web_cloud/messaging/sms/activer_la_recharge_automatique_du_credit_sms).
 
 ## Aller plus loin
 

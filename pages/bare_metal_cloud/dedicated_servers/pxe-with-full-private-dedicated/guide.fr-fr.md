@@ -29,7 +29,7 @@ Vous avez donc la possiblité d'utiliser/déclarer vos réseaux *publics* et *pr
 
 Nous allons présenter le cas de [serveur(s) dédié(s)](https://www.ovhcloud.com/fr/bare-metal/) configuré(s) en mode **OLA**, c'est-à-dire possédant **uniquement** des réseaux privés.
 Ce choix propose à votre infrastructure la meilleure isolation/protection possible pour votre service hébergé.<br>
-La seule différence majeure notable est que les [réseaux privés](/pages/cloud/ovhcloud-connect/occ-concepts-overview#prive) n'ont donc pas accès à tout ce qui n'appartient pas à votre infrastructure.<br>
+La seule différence majeure notable est que les [réseaux privés](/pages/network/ovhcloud_connect/occ-concepts-overview#prive) n'ont donc pas accès à tout ce qui n'appartient pas à votre infrastructure.<br>
 Par conséquent, un serveur isolé de par son réseau privé empêche le mecanisme de démarrage. C'est à dire que lorsque les systèmes sont démarrés via le méthode **Netboot** (Network Boot), ces derniers s'appuient sur le réseau interne d'OVHcloud et ses services mutualisés.
 
 ### Présentation rapide d'un démarrage en Netboot

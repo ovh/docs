@@ -13,7 +13,7 @@ updated: 2023-03-02
 
 ## Objectif
 
-Certains stockages ne seront plus disponibles à la fin Mars 2023 car ils ne seront plus maintenus, comme indiqué dans notre guide sur le [cycle de vie du Hosted Private Cloud powered by VMware](/pages/cloud/private-cloud/lifecycle_policy#datastores-stockage).
+Certains stockages ne seront plus disponibles à la fin Mars 2023 car ils ne seront plus maintenus, comme indiqué dans notre guide sur le [cycle de vie du Hosted Private Cloud powered by VMware](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/lifecycle_policy#datastores-stockage).
 
 **Découvrez les étapes de migration de vos données vers un stockage plus récent et comment désactiver votre stockage obsolète.** 
 
@@ -41,7 +41,7 @@ Cliquez sur l'icône de `stockage`{.action}, choisissez à gauche votre Datastor
 
 ![01 check existing VM on datastore 01](images/01-check-existing-vm-on-datastore01.png){.thumbnail}
 
-Faites un clic-droit sur chacune des machines virtuelles qui se trouvent sur ce datastore, choisissez `Migrer`{.action} et aidez-vous du guide « [VMware Storage vMotion](/pages/cloud/private-cloud/vmware_storage_vmotion#finaliser-le-vmotion) » pour effectuer la migration vers un datastore plus récent.
+Faites un clic-droit sur chacune des machines virtuelles qui se trouvent sur ce datastore, choisissez `Migrer`{.action} et aidez-vous du guide « [VMware Storage vMotion](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_storage_vmotion#finaliser-le-vmotion) » pour effectuer la migration vers un datastore plus récent.
 
 ![01 check existing VM on datastore 02](images/01-check-existing-vm-on-datastore02.png){.thumbnail}
 

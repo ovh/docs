@@ -204,7 +204,7 @@ You can then disconnect from your account and log in again with your AD FS as id
 
 ### Connect via SSO
 
-On the [OVHcloud login page](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca), enter your [NIC handle](/pages/account/customer/ovhcloud-account-creation#what-is-my-nic-handle) followed by **/idp** without entering a password, and click the `Login`{.action} button.
+On the [OVHcloud login page](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca), enter your [NIC handle](/pages/account_and_service_management/account_information/ovhcloud-account-creation#what-is-my-nic-handle) followed by **/idp** without entering a password, and click the `Login`{.action} button.
 
 ![OVHcloud federation login](images/ovhcloud_federation_login_1.png){.thumbnail}
 

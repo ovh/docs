@@ -31,7 +31,7 @@ Caso pretenda alterar o ficheiro .ovhconfig manualmente, continue a ler este man
 
 #### 1 - Aceder ao espaço de armazenamento
 
-Tenha consigo o seu nome de utilizador FTP, a respetiva palavra-passe e o endereço do servidor FTP. De seguida, ligue-se ao seu espaço de armazenamento. Para mais informações, consulte o manual “[Aceder ao espaço de armazenamento](/pages/web/hosting/hosting_how_to_get_my_website_online#2-log-in-to-your-storage-space){.external}” (versão em inglês).
+Tenha consigo o seu nome de utilizador FTP, a respetiva palavra-passe e o endereço do servidor FTP. De seguida, ligue-se ao seu espaço de armazenamento. Para mais informações, consulte o manual “[Aceder ao espaço de armazenamento](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online#2-log-in-to-your-storage-space){.external}” (versão em inglês).
 
 **Se já não possuir estas informações**, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} e clique em `Alojamentos`{.action}. De seguida, selecione o nome do alojamento correspondente e aceda à janela `FTP - SSH`{.action}. Aqui, poderá encontrar todas as informações que lhe permitem ligar-se. Para mais informações sobre a palavra-passe do utilizador FTP, consulte o manual [“Modificar a palavra-passe de um utilizador FTP”](/pages/web_cloud/web_hosting/ftp_change_password) (versão em inglês).
 
@@ -70,7 +70,7 @@ Personalize os valores das variáveis em função da configuração que pretende
 |app.engine.version|Permite definir a [versão de PHP](https://www.ovhcloud.com/pt/web-hosting/uc-programming-language/){.external} utilizada pelo alojamento. Indique a versão que pretende utilizar.|
 |http.firewall|Permite ativar ou desativar a [firewall fornecida com os alojamentos web da OVHcloud](https://www.ovhcloud.com/pt/web-hosting/options/){.external}. Insira “security” para ativar ou “none” para desativar.|
 |environment|Permite gerir o comportamento da cache dos ficheiros estáticos do seu website, assim como o tratamento dos erros PHP. Insira “production” para maximizar a implementação de cache e ocultar os erros PHP, ou “development” para não aplicar nenhuma cache e apresentar os erros PHP.|
-|container.image|Permite alterar o ambiente de execução utilizado pelo alojamento. Indique um motor à sua escolha. Para mais informações, consulte a secção [“Descobrir as configurações disponíveis”](/pages/web/hosting/ovhconfig_modify_system_runtime#descobrir-as-configuracoes-disponiveis){.external} do manual "Alterar a configuração do alojamento web".|
+|container.image|Permite alterar o ambiente de execução utilizado pelo alojamento. Indique um motor à sua escolha. Para mais informações, consulte a secção [“Descobrir as configurações disponíveis”](/pages/web_cloud/web_hosting/ovhconfig_modify_system_runtime#descobrir-as-configuracoes-disponiveis){.external} do manual "Alterar a configuração do alojamento web".|
 
 > [!warning]
 >
@@ -148,7 +148,7 @@ Depois de alterar o ficheiro .ovhconfig, só precisa de o descarregar para o seu
 
 Se utiliza o seu alojamento web para alojar vários websites, terá certamente configurado multi-sites. São várias as razões pelas quais poderá querer beneficiar de uma versão de PHP diferente para determinados multi-sites.
 
-Para isso, deverá criar um ficheiro .ovhconfig para os multi-sites que contêm a versão de PHP desejada. Para mais informações, consulte a secção [“Alterar o ficheiro .ovhconfig”](/pages/web/hosting/ovhconfig_configuration#alterar-o-ficheiro-ovhconfig){.external} deste manual. Quando descarregar o ficheiro .ovhconfig para o seu espaço de armazenamento, certifique-se de que o faz na pasta raiz do multi-site. Pode encontrar a pasta raiz dos seus multi-sites na Área de Cliente, na janela `Multi-site`{.action} do alojamento correspondente.
+Para isso, deverá criar um ficheiro .ovhconfig para os multi-sites que contêm a versão de PHP desejada. Para mais informações, consulte a secção [“Alterar o ficheiro .ovhconfig”](/pages/web_cloud/web_hosting/ovhconfig_configuration#alterar-o-ficheiro-ovhconfig){.external} deste manual. Quando descarregar o ficheiro .ovhconfig para o seu espaço de armazenamento, certifique-se de que o faz na pasta raiz do multi-site. Pode encontrar a pasta raiz dos seus multi-sites na Área de Cliente, na janela `Multi-site`{.action} do alojamento correspondente.
 
 > [!warning]
 >

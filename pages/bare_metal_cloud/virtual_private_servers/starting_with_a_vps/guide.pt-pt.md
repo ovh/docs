@@ -79,7 +79,7 @@ passwd: password updated successfully
 
 #### Ativação das ligações root
 
-Por razões de segurança, a ligação ao utilizador "root" é desativada de forma padrão. Para autorizar este tipo de ligações, consulte as instruções [deste manual](/pages/cloud/vps/root_password#ativar-a-password-root).
+Por razões de segurança, a ligação ao utilizador "root" é desativada de forma padrão. Para autorizar este tipo de ligações, consulte as instruções [deste manual](/pages/bare_metal_cloud/virtual_private_servers/root_password#ativar-a-password-root).
 
 #### Reinicialização do VPS (gama atual) <a name="reboot-current-range"></a>
 

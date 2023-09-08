@@ -71,7 +71,7 @@ Para isso, aceda à Área de Cliente OVHcloud (https://www.ovh.com/auth/?action=
 
 Na página `Informações gerais`{.action}, encontra-se no centro da página uma caixa intitulada `Configuração`{.action}. À direita da menção `Web Cloud Databases`{.action}, clique no botão `...`{.action} depois `Desassociar`{.action}. Escolha a duração da renovação mais curta e prossiga até à validação da encomenda.
 
-Para mais informações, consulte o nosso guia sobre a ["Configuração de uma oferta Web Cloud Databases"](/pages/web/clouddb/configure-database-server#modify-ram-web-cloud-db)
+Para mais informações, consulte o nosso guia sobre a ["Configuração de uma oferta Web Cloud Databases"](/pages/web_cloud/web_cloud_databases/configure-database-server#modify-ram-web-cloud-db)
 
 **Esta ação é irreversível e a oferta Web Cloud Databases será depois faturada independentemente do seu alojamento web Performance.**
 
@@ -134,7 +134,7 @@ Se o website aparecer com este URL após uma manipulação, volte-o para o estad
 
 Para restaurar o código fonte do seu site, consulte o nosso manual [Restaurar o espaço de armazenamento do alojamento web](/pages/web_cloud/web_hosting/ftp_save_and_backup).
 
-Se o seu site tiver uma base de dados, consulte o nosso manual [Importar um backup para a base de dados de um alojamento web](/pages/web/hosting/sql_importing_mysql_database#restaurar-um-backup-a-partir-da-area-de-cliente).
+Se o seu site tiver uma base de dados, consulte o nosso manual [Importar um backup para a base de dados de um alojamento web](/pages/web_cloud/web_hosting/sql_importing_mysql_database#restaurar-um-backup-a-partir-da-area-de-cliente).
 
 ### O que fazer se o meu webmail for redirecionado para o webmail OVHcloud?
 
@@ -150,9 +150,9 @@ De seguida, tome nota dos servidores DNS indicados e aceda ao separador `Zona DN
 
 Compare os `Alvo` das entradas do tipo `NS` indicadas no separador `Zona DNS`{.action} com os `Servidores DNS` indicados no separador do mesmo nome:
 
-- Se os elementos forem idênticos, substitua o alvo `213.186.33.5` pelo código de quatro números indicado no separador `Informações gerais` com a menção `IPv4` (para mais informações sobre as operações a efetuar, siga as instruções [deste guia](/pages/web/domains/dns_zone_edit#instrucoes)).
+- Se os elementos forem idênticos, substitua o alvo `213.186.33.5` pelo código de quatro números indicado no separador `Informações gerais` com a menção `IPv4` (para mais informações sobre as operações a efetuar, siga as instruções [deste guia](/pages/web_cloud/domains/dns_zone_edit#instrucoes)).
 
-- Se os elementos não forem idênticos mas os `Servidores DNS` indicados no separador do mesmo nome aparecerem na [lista](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP), efetue uma reinicialização de acordo com as instruções [deste manual](/pages/web/domains/dns_server_general_information#reinicializar-os-servidores-dns).
+- Se os elementos não forem idênticos mas os `Servidores DNS` indicados no separador do mesmo nome aparecerem na [lista](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP), efetue uma reinicialização de acordo com as instruções [deste manual](/pages/web_cloud/domains/dns_server_general_information#reinicializar-os-servidores-dns).
 
 - Se os elementos não forem idênticos e os `Servidores DNS` indicados no separador do mesmo nome não aparecerem [nesta lista](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP), contacte o seu Webmaster ou procure um fornecedor especializado através da página dos [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
 
@@ -171,7 +171,7 @@ Restaure o seu site para o estado anterior :
 
 - Para restaurar o código fonte do seu site, consulte o nosso manual [Restaurar o espaço de armazenamento do alojamento web](/pages/web_cloud/web_hosting/ftp_save_and_backup).
 
-- Se o seu site tiver uma base de dados, consulte o nosso manual [Restaurar um backup da sua base de dados](/pages/web/hosting/sql_importing_mysql_database#restaurar-um-backup-a-partir-da-area-de-cliente).
+- Se o seu site tiver uma base de dados, consulte o nosso manual [Restaurar um backup da sua base de dados](/pages/web_cloud/web_hosting/sql_importing_mysql_database#restaurar-um-backup-a-partir-da-area-de-cliente).
 
 Se os restauros não lhe permitem restabelecer o acesso ao seu site, contacte o seu Webmaster ou procure um fornecedor especializado no site dos [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
 

@@ -38,7 +38,7 @@ Conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=go
 
 Abra el menú `Block Storage`{.action} en la barra de navegación a la izquierda con **Storage**.
 
-A la derecha del volumen correspondiente, haga clic en el botón `...`{.action} y, seguidamente, en `Crear una copia de seguridad`{.action}. No es necesario desvincular en primer lugar el volumen de su instancia. No obstante, si desea desvincular su volumen de su instancia, consulte esta [sección](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance#en-linux) de la guía correspondiente para Linux y esta [sección](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance#en-windows) para Windows.
+A la derecha del volumen correspondiente, haga clic en el botón `...`{.action} y, seguidamente, en `Crear una copia de seguridad`{.action}. No es necesario desvincular en primer lugar el volumen de su instancia. No obstante, si desea desvincular su volumen de su instancia, consulte esta [sección](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance#en-linux) de la guía correspondiente para Linux y esta [sección](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance#en-windows) para Windows.
 
 ![Volumen de backup - creación](images/volumebackup01.png){.thumbnail}
 

@@ -71,7 +71,7 @@ accedendo allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotoma
 
 Nella pagina `Informazioni generali`{.action}, in alto a sinistra, è possibile trovare un riquadro `Configurazione`{.action}. A destra della menzione `Web Cloud Databases`{.action}, clicca sul pulsante `...`{.action}, quindi su `Scollega`{.action}. Scegli la durata minima del rinnovo e prosegui fino alla conferma dell'ordine.
 
-Per maggiori informazioni, consulta la nostra guida sulla ["Configurazione di un'offerta Web Cloud Databases"](/pages/web/clouddb/configure-database-server#modify-ram-web-cloud-db)
+Per maggiori informazioni, consulta la nostra guida sulla ["Configurazione di un'offerta Web Cloud Databases"](/pages/web_cloud/web_cloud_databases/configure-database-server#modify-ram-web-cloud-db)
 
 **Questa azione è irreversibile e l'offerta Web Cloud Database sarà fatturata indipendentemente dal tuo hosting Web Performance.**
 
@@ -134,7 +134,7 @@ Se il tuo sito viene visualizzato con questo URL a seguito di un'operazione, rip
 
 Per ripristinare il codice sorgente del tuo sito, consulta la guida [Ripristinare i dati dello spazio di storage di un hosting Web](/pages/web_cloud/web_hosting/ftp_save_and_backup).
 
-Se il tuo sito contiene un database, consulta la guida [Importare un backup nel database di un hosting Web](/pages/web/hosting/sql_importing_mysql_database#ripristino-dallo-spazio-cliente-ovh).
+Se il tuo sito contiene un database, consulta la guida [Importare un backup nel database di un hosting Web](/pages/web_cloud/web_hosting/sql_importing_mysql_database#ripristino-dallo-spazio-cliente-ovh).
 
 ### Cosa fare se il tuo sito reindirizza verso la Webmail OVHcloud?
 
@@ -150,9 +150,9 @@ Annota i server DNS indicati e clicca sulla scheda `Zona DNS`{.action}.
 
 Confronta i `Destinazione` degli record di tipo `NS` indicati nella scheda `Zona DNS`{.action} con i `Server DNS` indicati nella scheda con lo stesso nome:
 
-- Se gli elementi sono identici, sostituisci il record `213.186.33.5` con il codice a quattro cifre riportato nella scheda `Informazioni generali` con il nome `IPv4` (per maggiori informazioni sulle operazioni da effettuare, segui le istruzioni di [questa guida](/pages/web/domains/dns_zone_edit#procedura)).
+- Se gli elementi sono identici, sostituisci il record `213.186.33.5` con il codice a quattro cifre riportato nella scheda `Informazioni generali` con il nome `IPv4` (per maggiori informazioni sulle operazioni da effettuare, segui le istruzioni di [questa guida](/pages/web_cloud/domains/dns_zone_edit#procedura)).
 
-- Se gli elementi non corrispondono, ma i `Server DNS` indicati nella scheda con lo stesso nome appaiono in [questa lista](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP), effettua una reinizializzazione seguendo le indicazioni di [questa guida](/pages/web/domains/dns_server_general_information#reinizializza-i-server-dns).
+- Se gli elementi non corrispondono, ma i `Server DNS` indicati nella scheda con lo stesso nome appaiono in [questa lista](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP), effettua una reinizializzazione seguendo le indicazioni di [questa guida](/pages/web_cloud/domains/dns_server_general_information#reinizializza-i-server-dns).
 
 - Se gli elementi non corrispondono e i `Server DNS` indicati nella scheda con lo stesso nome non compaiono in [questa lista](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP), contatta il tuo Webmaster o cerca un [provider specializzato](https://partner.ovhcloud.com/it/directory/) tramite la pagina dei [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
 
@@ -171,7 +171,7 @@ Ripristina il tuo sito allo stato precedente:
 
 - Per ripristinare il codice sorgente del tuo sito, consulta la guida [Ripristinare i dati dello spazio di storage di un hosting Web](/pages/web_cloud/web_hosting/ftp_save_and_backup).
 
-- Se il tuo sito contiene un database, consulta la guida [Importare un backup nel database di un hosting Web](/pages/web/hosting/sql_importing_mysql_database#ripristino-dallo-spazio-cliente-ovh).
+- Se il tuo sito contiene un database, consulta la guida [Importare un backup nel database di un hosting Web](/pages/web_cloud/web_hosting/sql_importing_mysql_database#ripristino-dallo-spazio-cliente-ovh).
 
 Se il ripristino non ti consente di ripristinare l'accesso al tuo sito, contatta il tuo Webmaster o cerca un [provider specializzato](https://partner.ovhcloud.com/it/directory/) sul sito dei [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
 

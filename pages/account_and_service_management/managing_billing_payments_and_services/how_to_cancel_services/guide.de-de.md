@@ -41,7 +41,7 @@ Das bedeutet, dass Sie vor einer Kündigung **sicherstellen** sollten dass Folge
 >
 > Die Kündigung kann nur vorgenommen werden, wenn folgende Bedingungen erfüllt sind:
 >
-> - Sie sind der “Administrator-Kontakt“ des Dienstes (für weitere Informationen lesen Sie [diese Anleitung](/pages/account/customer/managing_contacts#definition)).
+> - Sie sind der “Administrator-Kontakt“ des Dienstes (für weitere Informationen lesen Sie [diese Anleitung](/pages/account_and_service_management/account_information/managing_contacts#definition)).
 > - Der Dienst wird nicht manuell verlängert.
 > - Der Dienst befindet sich nicht im Zustand "Geschlossen", insbesondere aufgrund Zahlungsverzugs.
 >
@@ -147,7 +147,7 @@ Jeder Public Cloud Dienst kann gelöscht werden, indem Sie rechts neben dem betr
 
 Die OVHcloud Public Cloud basiert auf dem Prinzip *Pay as you go* (weitere Details finden Sie auf unserer Seite zum [Abrechnungsmodus Public Cloud](/pages/public_cloud/compute/analyze_billing)). Sie zahlen am Monatsende nur für die Zeit, in der die Ressourcen tatsächlich genutzt werden.
 
-Sie können Ihren [aktuellen Verbrauch](/pages/platform/public-cloud/analyze_billing#aktuelle-ressourcennutzung-anzeigen) auch über das OVHcloud Kundencenter einsehen und per E-Mail benachrichtigt werden, wenn die Projektion Ihres Verbrauchs einen bestimmten Grenzwert überschreitet.
+Sie können Ihren [aktuellen Verbrauch](/pages/public_cloud/compute/analyze_billing#aktuelle-ressourcennutzung-anzeigen) auch über das OVHcloud Kundencenter einsehen und per E-Mail benachrichtigt werden, wenn die Projektion Ihres Verbrauchs einen bestimmten Grenzwert überschreitet.
 
 ### Web Cloud <a name="webcloud"></a>
 
@@ -211,23 +211,23 @@ Sie erhalten in diesem Fall eine E-Mail mit der Vorgehensweise zur Schließung I
 
 #### E-Mail Pro <a name="emailpro"></a>
 
-Um Ihr [E-Mail Pro](https://www.ovhcloud.com/de/emails/email-pro/) zu kündigen, folgen Sie den Anweisungen in dieser [Anleitung](/pages/web/emails-pro/manage_billing_emailpro#konten-entfernen).
+Um Ihr [E-Mail Pro](https://www.ovhcloud.com/de/emails/email-pro/) zu kündigen, folgen Sie den Anweisungen in dieser [Anleitung](/pages/web_cloud/email_and_collaborative_solutions/email_pro/manage_billing_emailpro#konten-entfernen).
 
 #### Hosted Exchange <a name="hosted"></a>
 
-Um Ihr [Hosted Exchange](https://www.ovhcloud.com/de/emails/hosted-exchange/) zu kündigen, folgen Sie den Anweisungen in dieser [Anleitung](/pages/web/microsoft-collaborative-solutions/manage_billing_exchange#accounts-entfernen).
+Um Ihr [Hosted Exchange](https://www.ovhcloud.com/de/emails/hosted-exchange/) zu kündigen, folgen Sie den Anweisungen in dieser [Anleitung](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_billing_exchange#accounts-entfernen).
 
 #### Private Exchange <a name="private"></a>
 
-Um Ihr [Private Exchange](https://www.ovhcloud.com/de/emails/private-exchange/) zu kündigen, folgen Sie den Anweisungen in dieser [Anleitung](/pages/web/microsoft-collaborative-solutions/manage_billing_exchange#accounts-entfernen).
+Um Ihr [Private Exchange](https://www.ovhcloud.com/de/emails/private-exchange/) zu kündigen, folgen Sie den Anweisungen in dieser [Anleitung](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_billing_exchange#accounts-entfernen).
 
 #### Office 365 CSP1 <a name="office-csp1"></a>
 
-Um Ihr [Office 365 CSP1](https://www.ovhcloud.com/de/collaborative-tools/microsoft-365/) zu kündigen, folgen Sie den Anweisungen in dieser [Anleitung](/pages/web/microsoft-collaborative-solutions/office_csp1#ihre-abonnements-verwalten).
+Um Ihr [Office 365 CSP1](https://www.ovhcloud.com/de/collaborative-tools/microsoft-365/) zu kündigen, folgen Sie den Anweisungen in dieser [Anleitung](/pages/web_cloud/email_and_collaborative_solutions/microsoft_office/office_csp1#ihre-abonnements-verwalten).
 
 #### Office 365 CSP2 <a name="office-csp2"></a>
 
-Um Ihr [Office 365 CSP2](https://www.ovhcloud.com/de/collaborative-tools/microsoft-365/) zu kündigen, folgen Sie den Anweisungen in dieser [Anleitung](/pages/web/microsoft-collaborative-solutions/office_csp2#ihre-abos-verwalten).
+Um Ihr [Office 365 CSP2](https://www.ovhcloud.com/de/collaborative-tools/microsoft-365/) zu kündigen, folgen Sie den Anweisungen in dieser [Anleitung](/pages/web_cloud/email_and_collaborative_solutions/microsoft_office/office_csp2#ihre-abos-verwalten).
 
 #### Sharepoint <a name="sharepoint"></a>
 

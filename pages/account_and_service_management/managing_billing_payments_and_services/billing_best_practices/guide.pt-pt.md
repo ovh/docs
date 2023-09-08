@@ -25,7 +25,7 @@ Este guia contém os elementos indispensáveis a uma boa gestão da sua conta e 
 
 #### Proteja a sua conta
 
-- [Crie uma palavra-passe forte](/pages/account/customer/manage-ovh-password#gerar-uma-boa-palavra-passe) que assegurará a confidencialidade da sua conta.
+- [Crie uma palavra-passe forte](/pages/account_and_service_management/account_information/manage-ovh-password#gerar-uma-boa-palavra-passe) que assegurará a confidencialidade da sua conta.
 
 - [Ative a dupla autenticação](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa) para evitar qualquer acesso fraudulento à sua Área de Cliente.
 

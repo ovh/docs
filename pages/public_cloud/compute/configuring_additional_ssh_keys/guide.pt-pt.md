@@ -33,7 +33,7 @@ Para criar uma nova chave SSH, consulte o [guia dos primeiros passos com o Publi
 
 ### Configuração do novo utilizador
 
-[Ligue-se à sua instância em SSH](/pages/platform/public-cloud/public-cloud-first-steps#connect-to-instance) e crie um novo utilizador através dos comandos abaixo:
+[Ligue-se à sua instância em SSH](/pages/public_cloud/compute/public-cloud-first-steps#connect-to-instance) e crie um novo utilizador através dos comandos abaixo:
 
 ```bash
 ~$ sudo adduser user2

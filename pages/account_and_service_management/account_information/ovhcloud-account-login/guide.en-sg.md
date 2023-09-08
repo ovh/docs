@@ -54,7 +54,7 @@ Once you have logged in, you can display your NIC handle in your Control Panel b
 
 ### I have lost my password
 
-If you have lost or forgotten your password, please follow [this guide detailing the steps to take in order to change it](/pages/account/customer/manage-ovh-password#if-you-have-forgotten-your-current-password).
+If you have lost or forgotten your password, please follow [this guide detailing the steps to take in order to change it](/pages/account_and_service_management/account_information/manage-ovh-password#if-you-have-forgotten-your-current-password).
 
 ### I have lost my password and my primary email address is no longer valid
 
@@ -68,7 +68,7 @@ Once this action has been completed, please [enter a **new** backup email addres
 
 In this case, you can use two-factor authentication emergency codes, use another device, or disable two-factor authentication.
 
-Please refer to our guide on [Securing your OVHcloud account with two-factor authentication](/pages/account/customer/secure-ovhcloud-account-with-2fa#what-do-i-do-if-i-lose-one-of-my-devices-or-if-it-stops-working) for the appropriate steps.
+Please refer to our guide on [Securing your OVHcloud account with two-factor authentication](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa#what-do-i-do-if-i-lose-one-of-my-devices-or-if-it-stops-working) for the appropriate steps.
 
 ### I have not enabled two-factor authentication on my account, but I am still being asked for a code
 

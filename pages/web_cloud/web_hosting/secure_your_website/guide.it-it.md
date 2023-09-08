@@ -26,7 +26,7 @@ Il progetto è organizzato gradualmente in ordine crescente di importanza e diff
 ## Prerequisiti
 
 - un [piano OVHcloud Web Hosting](https://www.ovhcloud.com/it/web-hosting/)
-- avere le [informazioni di accesso](/pages/web/hosting/ftp_connection#step-1-recupera-i-dati-necessari-a-effettuare-laccesso) per accedere allo spazio di archiviazione del piano di hosting
+- avere le [informazioni di accesso](/pages/web_cloud/web_hosting/ftp_connection#step-1-recupera-i-dati-necessari-a-effettuare-laccesso) per accedere allo spazio di archiviazione del piano di hosting
 - accesso a [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 - accesso all'interfaccia [admin per il sito Web](https://codex.wordpress.org/it:Primi_passi_con_WordPress){.external}
 
@@ -74,12 +74,12 @@ Le email di phishing rappresentano una minaccia per la sicurezza del tuo sito, i
 In caso di mancato rinnovo dei servizi, OVHcloud ha l'obbligo legale, alla scadenza del tuo abbonamento, di eliminare integralmente i dati associati alla tua offerta di hosting e tutti i loro backup. Invitiamo i nostri clienti a ricordare i termini di rinnovo.<br>
 ma è possibile che le email di recupero arrivino nello spam o l'indirizzo email associato all'account OVHcloud possa essere errato o non essere più disponibile.
 
-Se il tuo sito occupa un posto preminente nella tua attività professionale, [attiva il rinnovo automatico](/pages/account/billing/how_to_use_automatic_renewal#accedere-alle-impostazioni-dei-servizi) su tutti i tuoi servizi OVHcloud.<br>
+Se il tuo sito occupa un posto preminente nella tua attività professionale, [attiva il rinnovo automatico](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#accedere-alle-impostazioni-dei-servizi) su tutti i tuoi servizi OVHcloud.<br>
 Ti consigliamo inoltre di verificare regolarmente la **validità dei metodi di pagamento** registrati.
 
 ### Step 6: verifica che il tuo sito sia aggiornato
 
-Verifica regolarmente gli aggiornamenti del tuo sito seguendo le istruzioni di questa [guida](/pages/web/hosting/diagnostic_403_forbidden#22-aggiorna-il-sito-internet).
+Verifica regolarmente gli aggiornamenti del tuo sito seguendo le istruzioni di questa [guida](/pages/web_cloud/web_hosting/diagnostic_403_forbidden#22-aggiorna-il-sito-internet).
 
 Utilizza anche una versione recente del [linguaggio PHP](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014) sul tuo hosting.
 

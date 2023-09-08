@@ -212,7 +212,7 @@ Cela aura pour effet de modifier les droits du dossier en question, ainsi que de
 >
 > Indépendamment d'une action de votre part, votre hébergement peut être désactivé suite à la détection de fichiers malveillants ou non autorisés sur votre hébergement par nos systèmes de sécurité.
 >
-> Vous devez alors [sécuriser vos solutions](/pages/web/hosting/diagnostic_403_forbidden#etape-2-securiser-vos-solutions) tout en corrigeant les failles de sécurité évoquées dans la notification de blocage reçue par e-mail.
+> Vous devez alors [sécuriser vos solutions](/pages/web_cloud/web_hosting/diagnostic_403_forbidden#etape-2-securiser-vos-solutions) tout en corrigeant les failles de sécurité évoquées dans la notification de blocage reçue par e-mail.
 >
 
 Cliquez ensuite sur `Serveur`{.action} puis sélectionnez `Saisir une commande personnalisée`{.action} (cette option peut aussi s'appeler `Entrez une commande FTP`{.action}).

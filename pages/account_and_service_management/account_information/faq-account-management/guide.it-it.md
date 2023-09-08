@@ -30,7 +30,7 @@ L’identificativo cliente è disponibile anche nello Spazio Cliente: viene most
 ### Cosa fare in caso di impossibilità ad accedere all’account cliente?
 
 Per diversi motivi potrebbe risultare impossibile identificarsi o accedere allo Spazio Cliente, ad esempio in caso di password dimenticata, perdita di accesso all’indirizzo email oppure al telefono cellulare per l'identificazione via SMS.
-In questa evenienza, consigliamo di consultare [questa documentazione](/pages/account/customer/ovhcloud-account-login#login-failure), che spiega come risolvere questo tipo di problema.
+In questa evenienza, consigliamo di consultare [questa documentazione](/pages/account_and_service_management/account_information/ovhcloud-account-login#login-failure), che spiega come risolvere questo tipo di problema.
 
 ### Come modificare le informazioni personali di un account OVHcloud?
 
@@ -78,7 +78,7 @@ Se vuoi recuperare un dominio di cui risulti proprietario presso il Registro (ve
 
 #### Consigli e suggerimenti
 
-Per maggiori informazioni sulla gestione dei contatti, consulta la guida [/pages/account/customer/managing_contacts#accedi-alla-pagina-di-gestione-dei-contatti](/pages/account/customer/managing_contacts#accedi-alla-pagina-di-gestione-dei-contatti)
+Per maggiori informazioni sulla gestione dei contatti, consulta la guida [/pages/account_and_service_management/account_information/managing_contacts#accedi-alla-pagina-di-gestione-dei-contatti](/pages/account_and_service_management/account_information/managing_contacts#accedi-alla-pagina-di-gestione-dei-contatti)
 
 ### Come configurare o modificare il contatto di fatturazione?
 

@@ -16,14 +16,14 @@ Per eseguire alcune funzioni amministrative sul tuo server (ad esempio l'install
 
 ## Prerequisiti
 
-- Un'[istanza Public Cloud](/pages/platform/public-cloud/public-cloud-first-steps#step-3-crea-unistanza) nel tuo account OVHcloud
+- Un'[istanza Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps#step-3-crea-unistanza) nel tuo account OVHcloud
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 
 ## Procedura
 
 ### Impostare la password di root  <a name="settingtherootpassword"></a>
 
-Per prima cosa accedi al server utilizzando una [connessione SSH](/pages/platform/public-cloud/public-cloud-first-steps#step-4-accedi-alla-tua-istanza) con il tuo utente predefinito.
+Per prima cosa accedi al server utilizzando una [connessione SSH](/pages/public_cloud/compute/public-cloud-first-steps#step-4-accedi-alla-tua-istanza) con il tuo utente predefinito.
 
 Esegui il comando qui sotto e definisci una password per l’utente “root” (per motivi di sicurezza, la password non verrà mostrata):
 

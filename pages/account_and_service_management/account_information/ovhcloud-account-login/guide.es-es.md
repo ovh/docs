@@ -58,7 +58,7 @@ Una vez conectado, podrá tomar nota de su identificador, que se muestra en el �
 
 ### He perdido mi contraseña
 
-Si ha perdido o no recuerda su contraseña, consulte [esta guía, en la que se explican los pasos que deberá seguir para cambiarla](/pages/account/customer/manage-ovh-password#en-caso-de-haber-olvidado-la-contrasena-actual).
+Si ha perdido o no recuerda su contraseña, consulte [esta guía, en la que se explican los pasos que deberá seguir para cambiarla](/pages/account_and_service_management/account_information/manage-ovh-password#en-caso-de-haber-olvidado-la-contrasena-actual).
 
 ### He perdido mi contraseña y mi dirección de correo electrónico principal ya no es válida
 
@@ -83,7 +83,7 @@ Debe seguir este [procedimiento](https://www.ovh.es/cgi-bin/es/procedure/procedu
 
 En este caso, puede utilizar los códigos de seguridad de la doble autenticación, utilizar otro periférico o desactivar la doble autenticación.
 
-Consulte los pasos adecuados en nuestra guía "[Proteger su cuenta de OVHcloud con la doble autenticación](/pages/account/customer/secure-ovhcloud-account-with-2fa#que-se-debe-hacer-en-caso-de-perdida-o-averia-de-uno-de-los-dispositivos)".
+Consulte los pasos adecuados en nuestra guía "[Proteger su cuenta de OVHcloud con la doble autenticación](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa#que-se-debe-hacer-en-caso-de-perdida-o-averia-de-uno-de-los-dispositivos)".
 
 ### No he activado la doble autenticación en mi cuenta, pero se me pregunta un código
 

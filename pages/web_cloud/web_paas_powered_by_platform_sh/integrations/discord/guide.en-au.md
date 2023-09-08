@@ -7,7 +7,7 @@ updated: 2021-05-11
 
 The following example activity script will post a message to a Discord channel every time it is triggered.
 
-To use it, paste it as-is into a `.js` file and then add it as a new [script integration](/pages/web/web-paas/integrations-activity#installing).  Be sure to specify which events it should trigger on using the `--events` switch, and if desired which `--environments` you want.
+To use it, paste it as-is into a `.js` file and then add it as a new [script integration](/pages/web_cloud/web_paas_powered_by_platform_sh/integrations/integrations-activity#installing).  Be sure to specify which events it should trigger on using the `--events` switch, and if desired which `--environments` you want.
 
 Second, create a new Discord webhook through your Discord administrative interface.  [Discord's documentation](https://support.discord.com/hc/en-us/articles/228383668-Intro-to-Webhooks) explains how to do so.  You can name the bot however you wish, and specify the channel to which it should post messages.  Once it's created, click the "Copy Webhook URL" button to get the URL.
 

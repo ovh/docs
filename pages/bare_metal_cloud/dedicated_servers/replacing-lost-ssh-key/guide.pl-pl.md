@@ -34,7 +34,7 @@ Możesz jednak zalogować się do swojego serwera w [trybie Rescue OVHcloud](/pa
 
 Aby uzyskać dostęp do serwera w trybie Rescue, należy najpierw wyłączyć aktywny klucz SSH.
 
-Zaloguj się do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i przejdź do sekcji `Klucze SSH`{.action}. W razie potrzeby skorzystaj z naszego przewodnika ["Tworzenie kluczy SSH"](/pages/cloud/dedicated/creating-ssh-keys-dedicated#cpsshkey).
+Zaloguj się do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i przejdź do sekcji `Klucze SSH`{.action}. W razie potrzeby skorzystaj z naszego przewodnika ["Tworzenie kluczy SSH"](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated#cpsshkey).
 
 Klucz publiczny przechowywany w Panelu klienta jest niepotrzebny bez odpowiedniego klucza prywatnego, możesz więc go usunąć. Kliknij przycisk <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> po prawej stronie klucza i wybierz `Usuń klucz`{.action}.
 

@@ -89,7 +89,7 @@ Jeśli nie chcesz już korzystać ze swoich sposobów płatności, możesz je us
 
 ![manage-payment-methods](images/managepaymentmethods4.png){.thumbnail}
 
-Jeśli chcesz usunąć wszystkie Twoje sposoby płatności, wszystkie Twoje usługi muszą być [odnawiane ręcznie](/pages/account/billing/how_to_use_automatic_renewal#odnowienie-reczne).
+Jeśli chcesz usunąć wszystkie Twoje sposoby płatności, wszystkie Twoje usługi muszą być [odnawiane ręcznie](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#odnowienie-reczne).
 
 #### Usuwanie sposobu płatności przez API OVHcloud
 
@@ -122,7 +122,7 @@ Następnie usuń sposób płatności, używając identyfikatora uzyskanego na po
 
 *Konto prepaid* jest widoczne w Twoim [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) od chwili jego utworzenia. Umożliwia zasilenie konta klienta z wyprzedzeniem i wykorzystanie tych środków do opłacania zamówień oraz faktur za odnowienie.
 
-Tworząc regularnie konto, będziesz mógł sprawdzić, czy [automatyczne odnawianie](/pages/account/billing/how_to_use_automatic_renewal#odnowienie-automatyczne) usług nie zostanie przerwane z powodu braku płatności.
+Tworząc regularnie konto, będziesz mógł sprawdzić, czy [automatyczne odnawianie](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#odnowienie-automatyczne) usług nie zostanie przerwane z powodu braku płatności.
 
 W tym celu przejdź do sekcji `Sposoby płatności` w Panelu klienta:
 

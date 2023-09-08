@@ -24,7 +24,7 @@ Panel klienta OVHcloud pozwala również na zarządzanie danymi osobowymi i na d
 - Zalogowanie do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
 
 > [!primary]
-> W przypadku problemów z logowaniem do konta, zapoznaj się z sekcją "[Nie mogę się zalogować](/pages/account/customer/ovhcloud-account-login#login-failure)" w przewodniku "[Logowanie do Panelu klienta OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-login)".
+> W przypadku problemów z logowaniem do konta, zapoznaj się z sekcją "[Nie mogę się zalogować](/pages/account_and_service_management/account_information/ovhcloud-account-login#login-failure)" w przewodniku "[Logowanie do Panelu klienta OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-login)".
 >
 
 ## W praktyce
@@ -47,7 +47,7 @@ Wszystkie nasze zalecenia dotyczące haseł znajdują się w przewodniku [Zmiana
 
 #### Zapisz hasło
 
-Jeśli jeszcze tego nie zrobiłeś, zapisz hasło w [menedżerze haseł](/pages/account/customer/manage-ovh-password#uzycie-managera-hasel).
+Jeśli jeszcze tego nie zrobiłeś, zapisz hasło w [menedżerze haseł](/pages/account_and_service_management/account_information/manage-ovh-password#uzycie-managera-hasel).
 
 > [!primary]
 > Oprogramowanie **KeePass** i **Bitwarden** to darmowe i wolne od praw menedżery haseł.
@@ -159,7 +159,7 @@ Zarządzanie administracyjne **lub** techniczne **lub** księgowe jedną lub kil
 
 ### Co zrobić w przypadku podejrzenia kradzieży tożsamości?
 
-Jeśli otrzymasz e-mail informujący o nieznanym logowaniu do panelu klienta, zalecamy natychmiastową [zmianę hasła do konta](/pages/account/customer/manage-ovh-password#zmiana-hasla) i [zabezpieczenie konta weryfikacją dwuetapową](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa).
+Jeśli otrzymasz e-mail informujący o nieznanym logowaniu do panelu klienta, zalecamy natychmiastową [zmianę hasła do konta](/pages/account_and_service_management/account_information/manage-ovh-password#zmiana-hasla) i [zabezpieczenie konta weryfikacją dwuetapową](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa).
 
 Jeśli zauważysz podejrzaną aktywność na koncie, [skontaktuj się z zespołem OVHcloud](https://www.ovh.com/fr/support/nous-contacter/) na dzień 71 750 02 00, aby nasi pracownicy mogli Ci pomóc w podjęciu odpowiednich kroków.
 
@@ -171,6 +171,6 @@ Jeśli zauważysz podejrzaną aktywność na koncie, [skontaktuj się z zespołe
 
 [Zaloguj się do Panelu klienta OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-login)
 
-[W przypadku braku połączenia z Panelem klienta](/pages/account/customer/ovhcloud-account-login#login-failure)
+[W przypadku braku połączenia z Panelem klienta](/pages/account_and_service_management/account_information/ovhcloud-account-login#login-failure)
 
 Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com/en/>.

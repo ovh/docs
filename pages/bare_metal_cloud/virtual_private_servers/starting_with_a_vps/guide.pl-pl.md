@@ -78,7 +78,7 @@ passwd: password updated successfully
 
 #### Aktywacja połączeń root
 
-Ze względów bezpieczeństwa połączenie z użytkownikiem "root" zostało wyłączone. Jeśli chcesz zezwolić na tego typu połączenia, skorzystaj z instrukcji zawartych w [tym przewodniku](/pages/cloud/vps/root_password#wlacz-haslo-root).
+Ze względów bezpieczeństwa połączenie z użytkownikiem "root" zostało wyłączone. Jeśli chcesz zezwolić na tego typu połączenia, skorzystaj z instrukcji zawartych w [tym przewodniku](/pages/bare_metal_cloud/virtual_private_servers/root_password#wlacz-haslo-root).
 
 #### Restart Twojego serwera VPS (gama aktualna) <a name="reboot-current-range"></a>
 

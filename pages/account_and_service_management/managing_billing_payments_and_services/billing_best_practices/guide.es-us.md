@@ -25,7 +25,7 @@ Esta guía explica los requisitos necesarios para una buena gestión de su cuent
 
 #### Proteja su cuenta
 
-- [Cree una contraseña segura](/pages/account/customer/manage-ovh-password#generar-una-contrasena-adecuada) para garantizar la confidencialidad de su cuenta.
+- [Cree una contraseña segura](/pages/account_and_service_management/account_information/manage-ovh-password#generar-una-contrasena-adecuada) para garantizar la confidencialidad de su cuenta.
 
 - [Active la doble autenticación](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa) para evitar todo acceso fraudulento al área de cliente.
 

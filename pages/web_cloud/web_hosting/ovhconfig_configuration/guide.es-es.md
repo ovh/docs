@@ -31,7 +31,7 @@ A continuación explicamos cómo editar manualmente el archivo .ovhconfig.
 
 #### 1. Conectarse al espacio de almacenamiento
 
-Para conectarse al espacio de almacenamiento, necesitará el usuario FTP principal y la contraseña FTP, así como la dirección del servidor FTP. Conéctese al espacio de almacenamiento. Si necesita ayuda, consulte el apartado «Conectarse al espacio de almacenamiento» de la guía [Publicar un sitio web en internet.](/pages/web/hosting/hosting_how_to_get_my_website_online#22-conectarse-al-espacio-de-almacenamiento){.external}
+Para conectarse al espacio de almacenamiento, necesitará el usuario FTP principal y la contraseña FTP, así como la dirección del servidor FTP. Conéctese al espacio de almacenamiento. Si necesita ayuda, consulte el apartado «Conectarse al espacio de almacenamiento» de la guía [Publicar un sitio web en internet.](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online#22-conectarse-al-espacio-de-almacenamiento){.external}
 
 Si no conoce los datos anteriores, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} y, haga clic en `Alojamientos`{.action}. Seleccione el alojamiento correspondiente y abra la pestaña `FTP - SSH`{.action}. En la tabla podrá consultar los datos de conexión. Si no conoce la contraseña FTP, consulte nuestra guía [Cambiar la contraseña de un usuario FTP](/pages/web_cloud/web_hosting/ftp_change_password){.external}.
 
@@ -70,7 +70,7 @@ Personalice los valores de las variables según la configuración que quiera uti
 |app.engine.version|Permite elegir la versión de PHP que utiliza el alojamiento entre [las que ofrece OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/uc-programming-language/){.external}. Introduzca la versión de PHP que quiera utilizar.|
 |http.firewall|Permite activar o desactivar el [firewall incluido con todos los planes de hosting de OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/options/){.external}. Introduzca «security» para activarlo o «none» para desactivarlo.|
 |environment|Permite administrar el comportamiento de la caché de los archivos estáticos en su sitio web y el tratamiento de los errores PHP. Introduzca «production» para maximizar el almacenamiento en caché y ocultar los errores de PHP o «development» para que no se aplique ninguna caché y mostrar los errores PHP.|
-|container.image|Permite cambiar el entorno de ejecución que utiliza el alojamiento. Introduzca el motor que quiera utilizar. Puede consultar los distintos motores en el apartado «Opciones de configuración disponibles» de la guía [Modificar la configuración de un alojamiento web](/pages/web/hosting/ovhconfig_modify_system_runtime#motor-de-php){.external}.|
+|container.image|Permite cambiar el entorno de ejecución que utiliza el alojamiento. Introduzca el motor que quiera utilizar. Puede consultar los distintos motores en el apartado «Opciones de configuración disponibles» de la guía [Modificar la configuración de un alojamiento web](/pages/web_cloud/web_hosting/ovhconfig_modify_system_runtime#motor-de-php){.external}.|
 
 > [!warning]
 >
@@ -148,7 +148,7 @@ Una vez que haya editado el archivo .ovhconfig, solo queda colocarlo en el espac
 
 Si utiliza el alojamiento para varios sitios web, probablemente haya configurado un multisitio. En esta situación, existe la posibilidad de que necesite una versión de PHP diferente para alguno de los sitios web.
 
-En ese caso, debe crear un archivo .ovhconfig específico para el sitio web correspondiente con la versión de PHP que necesite. Para más información, consulte el apartado [Editar el archivo .ovhconfig](/pages/web/hosting/ovhconfig_configuration#editar-el-archivo-ovhconfig){.external} de esta guía. Al cargar el archivo .ovhconfig en el espacio de almacenamiento, asegúrese de hacerlo en la carpeta raíz del sitio web configurado como multisitio. Puede consultar la carpeta raíz de cada uno de sus sitios web en el área de cliente, en la pestaña `Multisitio`{.action} del alojamiento correspondiente.
+En ese caso, debe crear un archivo .ovhconfig específico para el sitio web correspondiente con la versión de PHP que necesite. Para más información, consulte el apartado [Editar el archivo .ovhconfig](/pages/web_cloud/web_hosting/ovhconfig_configuration#editar-el-archivo-ovhconfig){.external} de esta guía. Al cargar el archivo .ovhconfig en el espacio de almacenamiento, asegúrese de hacerlo en la carpeta raíz del sitio web configurado como multisitio. Puede consultar la carpeta raíz de cada uno de sus sitios web en el área de cliente, en la pestaña `Multisitio`{.action} del alojamiento correspondiente.
 
 > [!warning]
 >

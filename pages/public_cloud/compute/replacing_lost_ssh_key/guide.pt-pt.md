@@ -30,7 +30,7 @@ Para recuperar o acesso, disponibilizámos-lhe um [modo de rescue](/pages/public
 Se pretender guardar uma chave SSH na Área de Cliente OVHcloud, recomendamos que utilize a encriptação RSA ou ECDSA. ED25519 não está atualmente a ser utilizado.
 >
 
-Depois de montar o disco da sua instância em [modo rescue](/pages/platform/public-cloud/put_an_instance_in_rescue_mode#aceder-a-sua-informacao), poderá aceder ao conjunto dos seus ficheiros.
+Depois de montar o disco da sua instância em [modo rescue](/pages/public_cloud/compute/put_an_instance_in_rescue_mode#aceder-a-sua-informacao), poderá aceder ao conjunto dos seus ficheiros.
 
 O ficheiro que contém as suas chaves SSH é o seguinte:
 

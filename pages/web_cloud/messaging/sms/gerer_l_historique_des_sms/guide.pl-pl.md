@@ -78,7 +78,7 @@ Oto szczegóły informacji zawartych w tej historii:
 |  tag |  znacznik przydzielony ręcznie przez API (jednej lub kilku wiadomościom SMS) lub automatycznie przez nasze serwery każdej wysłanej wiadomości SMS (lub każdej kampanii SMS) |
 |  message |  treść wiadomości SMS |
 
-Więcej szczegółów na temat kodów ptt i różnych identyfikatorów DLR znajdziesz w ostatniej sekcji przewodnika [Informacje o użytkownikach wiadomości SMS](/pages/telecom/sms/tout_savoir_sur_les_utilisateurs_sms#etap-5-okreslanie-adresu-url-wywolania-zwrotnego).
+Więcej szczegółów na temat kodów ptt i różnych identyfikatorów DLR znajdziesz w ostatniej sekcji przewodnika [Informacje o użytkownikach wiadomości SMS](/pages/web_cloud/messaging/sms/tout_savoir_sur_les_utilisateurs_sms#etap-5-okreslanie-adresu-url-wywolania-zwrotnego).
  
 ## Sprawdź również
 

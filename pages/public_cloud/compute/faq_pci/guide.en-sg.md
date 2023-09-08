@@ -108,7 +108,7 @@ cat /sys/devices/system/cpu/vulnerabilities/mds
 
 If the result is `Vulnerable`, don't worry, the hypervisor hosting your instance is protecting you.
 
-Anyway, if you want to mitigate this inside your instance as well, you should hard reboot your instance, either doing it from the [OVHcloud Control Panel](/pages/platform/public-cloud/first_steps_with_public_cloud_instance#restarting-the-instance), or with a command like this:
+Anyway, if you want to mitigate this inside your instance as well, you should hard reboot your instance, either doing it from the [OVHcloud Control Panel](/pages/public_cloud/compute/first_steps_with_public_cloud_instance#restarting-the-instance), or with a command like this:
 
 ```bash
 openstack server reboot --hard $serverID

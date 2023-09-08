@@ -84,7 +84,7 @@ Per maggiori informazioni sulla gestione dei database, consulta la guida [Creare
 > La modifica del file **php.ini** non è disponibile sulle offerte di hosting condiviso. La configurazione PHP è globale per l'intera infrastruttura condivisa.
 >
 
-- È possibile verificare i dettagli della configurazione del tuo hosting Web. Per farlo, consulta la rubrica \[”Informazioni tecniche del tuo hosting Web”\](/pages/web/hosting/hosting_technical_specificities#informazioni-tecniche-del-tuo-hosting-web) in fondo a questa guida. 
+- È possibile verificare i dettagli della configurazione del tuo hosting Web. Per farlo, consulta la rubrica \[”Informazioni tecniche del tuo hosting Web”\](/pages/web_cloud/web_hosting/hosting_technical_specificities#informazioni-tecniche-del-tuo-hosting-web) in fondo a questa guida. 
 
 - È possibile modificare la versione PHP del tuo hosting Web dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)(“**Configurazione**”) oppure modificando il file .ovhconfig.  In questo ultimo caso sono possibili anche configurazioni miste. Per maggiori dettagli, consulta le nostre guide:
 

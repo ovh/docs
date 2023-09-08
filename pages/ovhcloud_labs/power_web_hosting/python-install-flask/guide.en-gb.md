@@ -49,11 +49,11 @@ Let's suppose you have the default configuration for Python hosting:
 
 > [!primary]
 >
-> To verify your configuration, you can use the [Retrieve active configuration](/pages/labs/web-power/getting-started#api-get-active-configuration) API endpoint.
+> To verify your configuration, you can use the [Retrieve active configuration](/pages/ovhcloud_labs/power_web_hosting/getting-started#api-get-active-configuration) API endpoint.
 
 To use [Python WSGI](https://www.fullstackpython.com/wsgi-servers.html) frameworks, using [virtualenv](https://pypi.org/project/virtualenv/) is the simplest choice. 
 
-[Connect via SSH](/pages/labs/web-power/getting-started#ssh) to your POWER web hosting and activate `virtualenv`:
+[Connect via SSH](/pages/ovhcloud_labs/power_web_hosting/getting-started#ssh) to your POWER web hosting and activate `virtualenv`:
 
 ```sh
 cd www
@@ -87,7 +87,7 @@ def hello_world():
     return 'Hello, World!'
 ```
 
-Then [restart your instance](/pages/labs/web-power/getting-started#restart) and your Flask project will be online.
+Then [restart your instance](/pages/ovhcloud_labs/power_web_hosting/getting-started#restart) and your Flask project will be online.
 
 ![Flask](images/python-install-flask-01.png){.thumbnail}
 

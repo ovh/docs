@@ -53,7 +53,7 @@ Nel menu `Server Dedicati`{.action}, clicca sul server che preferisci per accede
 **Stato dei servizi**
 
 - Stato: clicca sui `...`{.action} in corrispondenza di questa opzione per riavviare o eliminare il tuo server.
-- Monitoraggio: clicca su `Configura`{.action} per modificare le [impostazioni di monitoraggio del tuo server](/pages/cloud/dedicated/getting-started-with-dedicated-server#monitoring-server).
+- Monitoraggio: clicca su `Configura`{.action} per modificare le [impostazioni di monitoraggio del tuo server](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server#monitoring-server).
 
 **Rete**
 

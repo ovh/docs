@@ -116,7 +116,7 @@ Si vous ne parvenez pas à effectuer ces vérifications, contactez l'hébergeur 
 > Toutes les modifications effectuées dans votre zone DNS entraînent un délai de propagation de 4 à 24 heures.
 >
 
-- Récupérez [les informations nécessaires pour vous connecter à l'espace FTP de votre hébergement web](/pages/web/hosting/ftp_connection#etape-1-recuperer-les-informations-necessaires-pour-se-connecter).
+- Récupérez [les informations nécessaires pour vous connecter à l'espace FTP de votre hébergement web](/pages/web_cloud/web_hosting/ftp_connection#etape-1-recuperer-les-informations-necessaires-pour-se-connecter).
 - Récupérez les accès à la base de données de votre offre d'hébergement web si elle existe déjà, ou créez-en une à l'aide de notre [documentation](/pages/web_cloud/web_hosting/sql_create_database).
 
 #### 1.3 - Installer le client FTP gratuit « FileZilla »
@@ -129,7 +129,7 @@ Les CMS ont besoin d'une base de données pour fonctionner. Nos offres d'[héber
 
 Utilisez notre documentation pour [créer une base de données depuis votre offre d'hébergement web](/pages/web_cloud/web_hosting/sql_create_database).
 
-Si vous disposez d'une offre Web Cloud Databases en MySQL ou MariaDB et que vous souhaitez l'utiliser pour installer manuellement votre CMS, consultez notre documentation sur la [création d'une base de données sur un service Web Cloud Databases](/pages/web/clouddb/create-db-and-user-on-db-server#creer-une-base-de-donnees).
+Si vous disposez d'une offre Web Cloud Databases en MySQL ou MariaDB et que vous souhaitez l'utiliser pour installer manuellement votre CMS, consultez notre documentation sur la [création d'une base de données sur un service Web Cloud Databases](/pages/web_cloud/web_cloud_databases/create-db-and-user-on-db-server#creer-une-base-de-donnees).
 
 Une fois la base de données créée, récupérez les paramètres de connexion (serveur, nom de la base de données, nom d'utilisateur et mot de passe) et conservez-les pour [l'étape 3](#step3) de ce guide.
 
@@ -137,11 +137,11 @@ Une fois la base de données créée, récupérez les paramètres de connexion (
 >
 > Si vous souhaitez installer votre CMS avec une base de données déjà existante, récupérez vos paramètres de connexion à votre base de données directement dans les fichiers du site liés à celle-ci.
 >
-> S'il s'agit aussi d'un CMS identique à celui que vous devez installer, vous pouvez utiliser [ce guide](/pages/web/hosting/sql_change_password#etape-3-modifier-le-mot-de-passe-de-la-base-de-donnees-de-votre-site-dans-son-fichier-de-configuration) pour identifier les fichiers de configuration dans votre [espace de stockage FTP](/pages/web_cloud/web_hosting/ftp_connection).
+> S'il s'agit aussi d'un CMS identique à celui que vous devez installer, vous pouvez utiliser [ce guide](/pages/web_cloud/web_hosting/sql_change_password#etape-3-modifier-le-mot-de-passe-de-la-base-de-donnees-de-votre-site-dans-son-fichier-de-configuration) pour identifier les fichiers de configuration dans votre [espace de stockage FTP](/pages/web_cloud/web_hosting/ftp_connection).
 >
 > Connectez-vous ensuite à votre base de données pour recenser les « préfixes » des tables déjà présentes à l'intérieur. Ceci afin de ne pas choisir un « préfixe » de table déjà utilisé par un autre de vos sites.
 >
-> - Pour vous connecter à votre base de données liée à votre offre d'hébergement web, consultez [ce guide](/pages/web/hosting/sql_create_database#acceder-a-linterface-phpmyadmin).
+> - Pour vous connecter à votre base de données liée à votre offre d'hébergement web, consultez [ce guide](/pages/web_cloud/web_hosting/sql_create_database#acceder-a-linterface-phpmyadmin).
 > - Pour vous connecter à une base de données présente sur un Web Cloud Databases, consultez [ce guide](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server).
 >
 

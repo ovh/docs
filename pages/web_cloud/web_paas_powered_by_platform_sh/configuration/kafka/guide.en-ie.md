@@ -21,7 +21,7 @@ It is a framework for storing, reading and analyzing streaming data. See the [Ka
 
 ## Relationship
 
-The format exposed in the ``$PLATFORM_RELATIONSHIPS`` [environment variable](/pages/web/web-paas/development-variables#platformsh-provided-variables):
+The format exposed in the ``$PLATFORM_RELATIONSHIPS`` [environment variable](/pages/web_cloud/web_paas_powered_by_platform_sh/development/development-variables#platformsh-provided-variables):
 
 ```json  
 {

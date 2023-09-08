@@ -58,7 +58,7 @@ Una volta effettuato l'accesso, accedi allo Spazio Cliente e clicca sul tuo nome
 
 ### Ho perso la password
 
-Se hai dimenticato o perso la password, [questa guida ti spiega la procedura da seguire per modificarla](/pages/account/customer/manage-ovh-password#se-non-ricordi-piu-la-password).
+Se hai dimenticato o perso la password, [questa guida ti spiega la procedura da seguire per modificarla](/pages/account_and_service_management/account_information/manage-ovh-password#se-non-ricordi-piu-la-password).
 
 ### Ho perso la password e il mio indirizzo email principale non è più valido
 
@@ -82,7 +82,7 @@ Segui questa [procedura](https://www.ovh.it/cgi-bin/it/procedure/procedureChange
 
 In questo caso, puoi utilizzare i codici di sicurezza della doppia autenticazione, utilizzare un'altra periferica o disattivare la doppia autenticazione.
 
-Consulta la nostra guida [Proteggere un account OVHcloud con la doppia autenticazione](/pages/account/customer/secure-ovhcloud-account-with-2fa#che-fare-se-uno-dei-miei-dispositivi-e-stato-smarrito-o-ha-smesso-di-funzionare).
+Consulta la nostra guida [Proteggere un account OVHcloud con la doppia autenticazione](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa#che-fare-se-uno-dei-miei-dispositivi-e-stato-smarrito-o-ha-smesso-di-funzionare).
 
 ### Non ho attivato l'autenticazione a due fattori sul mio account, ma mi è stato chiesto comunque un codice
 

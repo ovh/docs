@@ -30,7 +30,7 @@ Não é possível receber ou enviar e-mails a partir do seu software de correio 
 
 Para que os seus e-mails sejam funcionais, deve possuir uma oferta de e-mail ativa. Se a sua oferta de e-mail estiver associada a uma oferta de alojamento, verifique se esta não expirou. Pode verificar esta informação diretamente na Área de Cliente. Da mesma forma, o seu domínio também deve estar ativo.
 
-Comece por verificar que está atualizado nos [pagamentos](/pages/account/billing/invoice_management#pay-bills) e nas [renovações](/pages/account/billing/how_to_use_automatic_renewal#renewal-management) dos seus serviços.
+Comece por verificar que está atualizado nos [pagamentos](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) e nas [renovações](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) dos seus serviços.
 
 Eis como verificar que os seus serviços estão corretamente operacionais:
 

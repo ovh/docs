@@ -46,15 +46,15 @@ Selecione o alojamento correspondente na lista e clique no separador `Multisite`
 |Cenário|Medidas a adotar|
 |---|---|
 |O nome do seu site aparece na tabela.|Se acabou de adicionar o nome do seu site na parte multisite do seu alojamento, aguarde cerca de 20 minutos e atualize a cache do seu browser. Se a mensagem "Site não instalado" aparecer, passe para o [passo 2](#checkdomainlink).|
-|O domínio ou subdomínio associado ao seu site não aparece na tabela.|Adicione o seu domínio ao `Multisite`{.action} seguindo a secção dedicada do guia [Partilhar o alojamento entre vários sites - adicionar um domínio ou subdomínio](/pages/web/hosting/multisites_configure_multisite#2-adicionar-um-dominio-ou-subdominio).|
-|O domínio foi eliminado do multi-site sem nenhuma ação da sua parte.|O seu domínio ou a sua zona DNS podem ser geridos a partir de outra conta. Adicione o seu domínio ao multisite seguindo a secção dedicada do guia [Partilhar o alojamento entre vários sites - adicionar um domínio externo](/pages/web/hosting/multisites_configure_multisite#etapa-22-adicionar-um-dominio-externo).|
+|O domínio ou subdomínio associado ao seu site não aparece na tabela.|Adicione o seu domínio ao `Multisite`{.action} seguindo a secção dedicada do guia [Partilhar o alojamento entre vários sites - adicionar um domínio ou subdomínio](/pages/web_cloud/web_hosting/multisites_configure_multisite#2-adicionar-um-dominio-ou-subdominio).|
+|O domínio foi eliminado do multi-site sem nenhuma ação da sua parte.|O seu domínio ou a sua zona DNS podem ser geridos a partir de outra conta. Adicione o seu domínio ao multisite seguindo a secção dedicada do guia [Partilhar o alojamento entre vários sites - adicionar um domínio externo](/pages/web_cloud/web_hosting/multisites_configure_multisite#etapa-22-adicionar-um-dominio-externo).|
 
 ### Etapa 2 : verificar a zona DNS do seu domínio <a name="checkdomainlink"></a>
 
 > [!primary]
 >
 > Este passo destina-se a verificar que o seu domínio, através da sua `Zona DNS`{.action}, está ligado ao alojamento do seu site.
-> Para saber mais sobre a noção de DNS, consulte o nosso guia [Editar uma zona DNS da OVHcloud](/pages/web/domains/dns_zone_edit#compreender-a-nocao-de-dns).
+> Para saber mais sobre a noção de DNS, consulte o nosso guia [Editar uma zona DNS da OVHcloud](/pages/web_cloud/domains/dns_zone_edit#compreender-a-nocao-de-dns).
 
 #### 2.1 Identificar o endereço IP do seu alojamento OVHcloud
 
@@ -72,7 +72,7 @@ Para isso, aceda à secção `Nomes de domínio`{.action}, selecione o seu domí
 |---|---|
 |Na zona DNS, o seu domínio está ligado ao endereço IP do seu alojamento com uma entrada do tipo A (para IPv4) ou AAAA (para IPv6) :<br><br>![zonaDNS_IP2](images/zonedns_ip2.png){.thumbnail}|Isto indica que a configuração do seu domínio está correta.<br><br>Após as últimas modificações nos seus DNS, o seu site será apresentado num prazo máximo de 48 horas.<br><br>Também pode reiniciar os seus dispositivos (PC, smartphone, Internet box, etc.) e esvaziar a cache do seu browser.|
 |A zona DNS não inclui nenhuma entrada de tipo A ou AAAA que associe o seu domínio ao endereço IP do seu alojamento. Ou a entrada existente aponta para outro endereço IP.|Adicione uma nova entrada de tipo A ou AAAA ou corrija a entrada existente seguindo [este guia](/pages/web_cloud/domains/dns_zone_edit).|
-|O seu domínio não aparece na secção `Nomes de domínio`{.action} da sua Área de Cliente.<br><br>Ou o separador `Zona DNS`{.action} do seu domínio apresenta-se da seguinte forma :<br><br>![zonedns_ndd_pas_sobre_lec2](images/zonedns_ndd_pas_sur_lec2.png){.thumbnail}|Isto significa que o seu domínio não é gerido a partir da Área de Cliente OVHcloud.<br><br>Determine o seu registar através da nossa ferramenta [WHOIS](https://www.ovh.pt/suporte/ferramentas/check_whois.pl) e os servidores DNS aos quais está associado.<br><br>Encontre e modifique a zona DNS em causa em conformidade, de acordo com [este guia](/pages/web/hosting/multisites_configure_multisite#etapa-22-adicionar-um-dominio-externo).|
+|O seu domínio não aparece na secção `Nomes de domínio`{.action} da sua Área de Cliente.<br><br>Ou o separador `Zona DNS`{.action} do seu domínio apresenta-se da seguinte forma :<br><br>![zonedns_ndd_pas_sobre_lec2](images/zonedns_ndd_pas_sur_lec2.png){.thumbnail}|Isto significa que o seu domínio não é gerido a partir da Área de Cliente OVHcloud.<br><br>Determine o seu registar através da nossa ferramenta [WHOIS](https://www.ovh.pt/suporte/ferramentas/check_whois.pl) e os servidores DNS aos quais está associado.<br><br>Encontre e modifique a zona DNS em causa em conformidade, de acordo com [este guia](/pages/web_cloud/web_hosting/multisites_configure_multisite#etapa-22-adicionar-um-dominio-externo).|
 |Este aviso aparece no separador Zona `DNS`{.action} :<br><br>![aviso_zonedns_pas_sur_srv_Dns](images/avertissement_zonedns_pas_sur_srv_dns.png){.thumbnail}|Assim, deverá alterar os servidores DNS do seu domínio de acordo com [este guia](/pages/web_cloud/domains/dns_server_general_information).|
 
 ## Quer saber mais? <a name="gofurther"></a>

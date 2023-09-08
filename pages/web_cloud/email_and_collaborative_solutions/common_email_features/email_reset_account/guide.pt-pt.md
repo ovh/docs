@@ -29,7 +29,7 @@ Deseja:
 A OVHcloud propõe 3 soluções de e-mail, a noção de eliminação de conta é diferente consoante a sua oferta.
 
 - **E-mail MXplan**: esta oferta é vendida sob a forma de um pack de várias contas de e-mail. Quando eliminar uma conta, liberta um espaço no seu pack. 
-- **Email Pro** e **Hosted Exchange**: estas duas ofertas estão 'à la carte', encomenda uma subscrição individual por conta de e-mail. Se deseja eliminar um endereço de e-mail, trata-se de efetuar uma **reinicialização**. Uma vez a conta de e-mail reinicializada, pode reutilizar esta conta para criar um novo endereço de e-mail. Também pode [cancelar a assinatura](/pages/web/microsoft-collaborative-solutions/manage_billing_exchange#eliminar-contas) desta conta se pretender eliminá-la definitivamente.
+- **Email Pro** e **Hosted Exchange**: estas duas ofertas estão 'à la carte', encomenda uma subscrição individual por conta de e-mail. Se deseja eliminar um endereço de e-mail, trata-se de efetuar uma **reinicialização**. Uma vez a conta de e-mail reinicializada, pode reutilizar esta conta para criar um novo endereço de e-mail. Também pode [cancelar a assinatura](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_billing_exchange#eliminar-contas) desta conta se pretender eliminá-la definitivamente.
 
 ### Eliminar ou reinicializar uma conta de e-mail
 

@@ -62,7 +62,7 @@ In manchen Fällen kann es sein, dass der auf Ihrem Datenbankserver verfügbare 
 
 ##### 1\.1 MySQL oder MariaDB Datenbank über OVHcloud phpMyAdmin exportieren 
 
-Um Ihre Datenbank direkt über phpMyAdmin zu exportieren, müssen Sie sich zuerst mit ihr verbinden. Folgen Sie hierzu den Schritten im Abschnitt ["Mit einer MySQL oder MariaDB Datenbank verbinden"](/pages/web/clouddb/connecting-to-database-on-database-server#mit-einer-mysql-oder-mariadb-datenbank-verbinden).
+Um Ihre Datenbank direkt über phpMyAdmin zu exportieren, müssen Sie sich zuerst mit ihr verbinden. Folgen Sie hierzu den Schritten im Abschnitt ["Mit einer MySQL oder MariaDB Datenbank verbinden"](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server#mit-einer-mysql-oder-mariadb-datenbank-verbinden).
 
 Wenn Sie in phpMyAdmin eingeloggt sind, klicken Sie auf den Namen der Datenbank, die Sie exportieren möchten, und anschließend auf den Tab `Exportieren`{.action}.
 

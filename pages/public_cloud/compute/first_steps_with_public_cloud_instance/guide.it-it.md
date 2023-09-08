@@ -58,7 +58,7 @@ Visualizzi una nuova pagina con una versione modificata delle opzioni [di creazi
 
 - **Modifica il nome**: per facilitare l'identificazione, assegna un nome all'istanza.
 - **Modifica l'immagine**: è possibile scegliere un altro sistema operativo per l'istanza (ricordati che la reinstallazione di un'istanza comporta la cancellazione di tutti i dati).
-- **Modifica il modello**: è possibile modificare il modello di istanza Per maggiori informazioni sulle opzioni, consulta [questa guida](/pages/platform/public-cloud/public-cloud-first-steps#step-3-crea-unistanza).
+- **Modifica il modello**: è possibile modificare il modello di istanza Per maggiori informazioni sulle opzioni, consulta [questa guida](/pages/public_cloud/compute/public-cloud-first-steps#step-3-crea-unistanza).
 - **Modifica il periodo di fatturazione**: è possibile modificare il periodo di fatturazione dell'istanza da una fatturazione oraria a mensile. Per maggiori informazioni, consulta [questa guida](/pages/account_and_service_management/managing_billing_payments_and_services/changing_hourly_monthly_billing).
 
 #### Crea un backup di un'istanza
@@ -71,13 +71,13 @@ Per maggiori informazioni, consulta la guida [Salva un'istanza](/pages/public_cl
 
 Clicca su `Crea un backup automatizzato`{.action}.
 
-Per maggiori informazioni, consulta la guida [Salva un'istanza](/pages/platform/public-cloud/save_an_instance#creare-un-backup-automatizzato-di-unistanza).
+Per maggiori informazioni, consulta la guida [Salva un'istanza](/pages/public_cloud/compute/save_an_instance#creare-un-backup-automatizzato-di-unistanza).
 
 #### Sospendi un'istanza
 
 Clicca su `Arrestare`{.action}.
 
-L'azione sospenderà l'istanza. Per maggiori informazioni, consulta la nostra guida [Sospendi o metti in pausa un’istanza](/pages/platform/public-cloud/suspend_or_pause_an_instance#nello-spazio-cliente-ovhcloud).
+L'azione sospenderà l'istanza. Per maggiori informazioni, consulta la nostra guida [Sospendi o metti in pausa un’istanza](/pages/public_cloud/compute/suspend_or_pause_an_instance#nello-spazio-cliente-ovhcloud).
 
 Clicca su `Avvia`{.action} per riattivare l'istanza.
 
@@ -102,7 +102,7 @@ Conferma la richiesta di riavvio nella nuova finestra.
 
 Clicca su `Sospendere`{.action}.
 
-Questa azione posizionerà l'istanza nello stato "*shelved*", visualizzato come `Suspended`. Per maggiori informazioni sui diversi stati di sospensione dell'istanza, consulta la guida [Sospendi o metti in pausa un’istanza](/pages/platform/public-cloud/suspend_or_pause_an_instance#sospendere-shelve-unistanza).
+Questa azione posizionerà l'istanza nello stato "*shelved*", visualizzato come `Suspended`. Per maggiori informazioni sui diversi stati di sospensione dell'istanza, consulta la guida [Sospendi o metti in pausa un’istanza](/pages/public_cloud/compute/suspend_or_pause_an_instance#sospendere-shelve-unistanza).
 
 Clicca su `Riattiva`{.action} per ripristinare lo stato `Attivato` dell'istanza.
 
@@ -132,7 +132,7 @@ Clicca sulla scheda `Console VNC`{.action}.
 
 La console VNC fornisce un accesso diretto all'istanza. Per il corretto funzionamento dell'accesso, è necessario configurare un nome utente e una password sull'istanza. 
 
-Per maggiori informazioni, consulta la nostra guida [Creare e connettersi a un’istanza Public Cloud](/pages/platform/public-cloud/public-cloud-first-steps#connect-to-instance) a essa.
+Per maggiori informazioni, consulta la nostra guida [Creare e connettersi a un’istanza Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps#connect-to-instance) a essa.
 
 ## Per saperne di più
 

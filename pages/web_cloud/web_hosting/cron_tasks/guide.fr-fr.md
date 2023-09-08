@@ -100,7 +100,7 @@ Veillez toujours à utiliser des chemins d'accès absolus aux fichiers de vos sc
 
 Dans [les logs]  de votre hébergement Web, accessibles depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, vous verrez la catégorie de log intitulée « CRON ».
 
-Consultez notre guide [« Consulter les statistiques et les logs de mon site hébergé sur une offre mutualisée »](/pages/web/hosting/logs_and_statistics#logs) pour plus de détails.
+Consultez notre guide [« Consulter les statistiques et les logs de mon site hébergé sur une offre mutualisée »](/pages/web_cloud/web_hosting/logs_and_statistics#logs) pour plus de détails.
 
 ##### **Exemple de logs**
 

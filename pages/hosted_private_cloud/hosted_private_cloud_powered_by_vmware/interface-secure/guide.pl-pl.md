@@ -48,7 +48,7 @@ Wiadomość ta zawiera następujące informacje:
 - nazwa operacji wymagająca zatwierdzenia;
 - ID operacji;
 - token do zatwierdzenia operacji;
-- link umożliwiający zatwierdzenie operacji (pamiętaj, że jeśli Twój telefon nie jest podłączony do sieci z [autoryzowanym IP](/pages/cloud/private-cloud/manager_ovh_private_cloud#bezpieczenstwo), strona się nie wyświetli).
+- link umożliwiający zatwierdzenie operacji (pamiętaj, że jeśli Twój telefon nie jest podłączony do sieci z [autoryzowanym IP](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/manager_ovh_private_cloud#bezpieczenstwo), strona się nie wyświetli).
 
 Aby zatwierdzić operację, kliknij link otrzymany w wiadomości. Następnie przejdź do sekcji `Operation validation`{.action}.
 

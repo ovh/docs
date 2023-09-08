@@ -114,7 +114,7 @@ Añadir o modificar directrices en el archivo de configuración **wp-config.php*
 
 > [!warning]
 >
-> Antes de seguir los pasos que se indican a continuación, deberá redirigir el protocolo HTTP a HTTPS. Para ello, siga las indicaciones de nuestra guía ["Habilitar HTTPS en un sitio web con certificado SSL"](/pages/web/hosting/ssl-activate-https-website#1-activar-el-certificado-ssl-en-el-alojamiento-web).
+> Antes de seguir los pasos que se indican a continuación, deberá redirigir el protocolo HTTP a HTTPS. Para ello, siga las indicaciones de nuestra guía ["Habilitar HTTPS en un sitio web con certificado SSL"](/pages/web_cloud/web_hosting/ssl-activate-https-website#1-activar-el-certificado-ssl-en-el-alojamiento-web).
 
 ### Impedir la visualización de directorios y subdirectorios
 

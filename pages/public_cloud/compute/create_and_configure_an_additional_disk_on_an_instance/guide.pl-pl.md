@@ -67,7 +67,7 @@ Poniższe przykłady zakładają, że jesteś zalogowany jako użytkownik z odpo
 
 #### Linux
 
-Otwórz [połączenie SSH z Twoją instancją](/pages/platform/public-cloud/public-cloud-first-steps#connect-to-instance), następnie użyj poniższej komendy, aby wyświetlić powiązane dyski.
+Otwórz [połączenie SSH z Twoją instancją](/pages/public_cloud/compute/public-cloud-first-steps#connect-to-instance), następnie użyj poniższej komendy, aby wyświetlić powiązane dyski.
 
 ```bash
 ~$ admin@server-1:~$ lsblk
@@ -318,7 +318,7 @@ Jeśli chcesz odłączyć wolumen od instancji, najlepszym rozwiązaniem jest od
 
 #### Linux
 
-Otwórz [połączenie SSH z Twoją instancją](/pages/platform/public-cloud/public-cloud-first-steps#krok-3-tworzenie-instancji), a następnie wpisz poniższe polecenie, aby wyświetlić powiązane dyski.
+Otwórz [połączenie SSH z Twoją instancją](/pages/public_cloud/compute/public-cloud-first-steps#krok-3-tworzenie-instancji), a następnie wpisz poniższe polecenie, aby wyświetlić powiązane dyski.
 
 ```bash
 ~$ admin@server-1:~$ lsblk

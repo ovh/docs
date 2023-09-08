@@ -81,7 +81,7 @@ Cochez, si vous le désirez, **« Vider la base de données actuelle »** avant 
 Dans certains cas, la RAM disponible dans votre serveur de bases de données ne permet pas de réaliser l'import souhaité en dehors de l'espace client. Si tel est le cas, nous vous recommandons d'utiliser l'outil OVHcloud dans l'espace client. Reportez-vous à la section [« Restaurer et importer une base de données depuis l'espace client »](./#sauvegarde-restauration-et-importation-depuis-lespace-client) de cette documentation.
 
 #### Importer ma base MySQL ou MariaDB depuis phpMyAdmin
-Pour importer votre base de données directement depuis phpMyAdmin, il est nécessaire de vous y connecter au préalable, vous pouvez pour cela vous aider du paragraphe [« Se connecter a une base de données MySQL ou MariaDB »](/pages/web/clouddb/connecting-to-database-on-database-server#se-connecter-a-une-base-de-donnees-mysql-ou-mariadb)
+Pour importer votre base de données directement depuis phpMyAdmin, il est nécessaire de vous y connecter au préalable, vous pouvez pour cela vous aider du paragraphe [« Se connecter a une base de données MySQL ou MariaDB »](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server#se-connecter-a-une-base-de-donnees-mysql-ou-mariadb)
 
 Une fois connecté sur phpMyAdmin, sélectionnez votre base de données en cliquant sur son nom.
 

@@ -80,7 +80,7 @@ Po usunięciu danych z baz danych pamiętaj o przeliczeniu rozmiaru używanego w
 
 #### 2 - Web Cloud Databases
 
-Jeśli korzystasz z oferty [Web Cloud Databases](/pages/web/clouddb/starting_with_clouddb#wlaczenie-prywatnego-clouddb-zawartego-w-ofercie-hostingu) zawartej w ofercie hostingu [Performance](https://www.ovhcloud.com/pl/web-hosting/performance-offer/) i chcesz przejść na ofertę hostingu [Pro](https://www.ovhcloud.com/pl/web-hosting/professional-offer/), przejdź do części 'Hosting{.action} w Twoim panelu klienta.<br>
+Jeśli korzystasz z oferty [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb#wlaczenie-prywatnego-clouddb-zawartego-w-ofercie-hostingu) zawartej w ofercie hostingu [Performance](https://www.ovhcloud.com/pl/web-hosting/performance-offer/) i chcesz przejść na ofertę hostingu [Pro](https://www.ovhcloud.com/pl/web-hosting/professional-offer/), przejdź do części 'Hosting{.action} w Twoim panelu klienta.<br>
 Kliknij przycisk `...`{.action} w części `Prywatna baza danych`{.action} a następnie na `Odłącz`{.action}.
 
 ![Web Cloud Databases](images/clouddb.png){.thumbnail}
