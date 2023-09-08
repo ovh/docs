@@ -36,7 +36,7 @@ Dans la section `Mon profil`{.action} à droite de votre écran (cliquez à nouv
 
 ![myprofile](images/myprofile.png){.thumbnail}
 
-Pour plus d'informations, consultez le guide [Sécuriser mon compte OVHcloud et gérer mes informations personnelles](/pages/account/customer/all_about_username#comment-gerer-mes-informations-personnelles).
+Pour plus d'informations, consultez le guide [Sécuriser mon compte OVHcloud et gérer mes informations personnelles](/pages/account_and_service_management/account_information/all_about_username#comment-gerer-mes-informations-personnelles).
 
 Assurez-vous que votre adresse e-mail est toujours **à jour, sécurisée et accessible.** Les e-mails émanant de nos services vous seront envoyés à cette adresse, y compris les **messages de réinitialisation** en cas de perte de votre mot de passe.
 

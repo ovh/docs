@@ -42,13 +42,13 @@ Compruebe en primer lugar la seguridad de su equipo Windows, Mac o Linux:
 
 - compruebe las actualizaciones de su máquina;
 - una vez que haya actualizado el software antivirus/anti-malware, lance una exploración completa de su equipo;
-- cambie regularmente la contraseña de administrador de su puesto (para más información sobre la elección de las contraseñas, siga las instrucciones de esta [guía](/pages/account/customer/all_about_username#crear-una-contrasena-solida-y-unica).
+- cambie regularmente la contraseña de administrador de su puesto (para más información sobre la elección de las contraseñas, siga las instrucciones de esta [guía](/pages/account_and_service_management/account_information/all_about_username#crear-una-contrasena-solida-y-unica).
 
 ### Etapa 2: proteja su área de cliente de OVHcloud
 
 Para proteger su cuenta de cliente, [active la doble autenticación](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa) y siga las instrucciones de este [guía](/pages/account_and_service_management/account_information/all_about_username).
 
-Actualice la [información de su cuenta de cliente](/pages/account/customer/all_about_username#editar-mis-datos-personales) y añada un **email de seguridad**.<br>
+Actualice la [información de su cuenta de cliente](/pages/account_and_service_management/account_information/all_about_username#editar-mis-datos-personales) y añada un **email de seguridad**.<br>
 Si pierde sus claves de acceso o no está disponible la dirección de correo electrónico principal de su cuenta de cliente de OVHcloud, necesitaremos un correo electrónico alternativo o información personal actualizada para ayudarle a recuperar el acceso a sus soluciones.
 
 ### Etapa 3: realice regularmente copias de seguridad de su sitio web <a name="backup"></a>

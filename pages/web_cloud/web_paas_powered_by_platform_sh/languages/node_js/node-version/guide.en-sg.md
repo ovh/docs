@@ -49,7 +49,7 @@ variables:
         N_PREFIX: /app/.global
 ```
 
-**Step 4: Install the specified version of Node.js in a [`build` hook](/pages/web_cloud/web_paas_powered_by_platform_sh/configuration/configuration-app/build#build-hook).**
+**Step 4: Install the specified version of Node.js in a [`build` hook](/pages/web_cloud/web_paas_powered_by_platform_sh/configuration/build#build-hook).**
 
 ```yaml 
 {location=".platform.app.yaml"}

@@ -39,13 +39,13 @@ First, check the security of your Windows, Mac or Linux desktop:
 
 - Check your OS and software for updates.
 - Run a full scan of your desktop, after updating your antivirus/anti-malware software.
-- Change your desktop admin password regularly (for more information on how to create strong passwords, follow the instructions of this [guide](/pages/account/customer/all_about_username#creating-a-strong-unique-password).
+- Change your desktop admin password regularly (for more information on how to create strong passwords, follow the instructions of this [guide](/pages/account_and_service_management/account_information/all_about_username#creating-a-strong-unique-password).
 
 ### Step 2 - Secure the access to your OVHcloud Control Panel
 
 To secure your customer account, [enable two-factor authentication](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa) and follow the instructions of this [guide](/pages/account_and_service_management/account_information/all_about_username).
 
-Remember to update your [customer account information](/pages/account/customer/all_about_username#changing-your-personal-details) and to add a **backup email** to your account.<br>
+Remember to update your [customer account information](/pages/account_and_service_management/account_information/all_about_username#changing-your-personal-details) and to add a **backup email** to your account.<br>
 In the event of your login details being lost and/or the primary email address for your OVHcloud customer account being unavailable, a backup email as well as updated personal information will be essential to help you regain access to your services.
 
 ### Step 3 - Back up your website regularly <a name="backup"></a>

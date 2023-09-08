@@ -61,9 +61,9 @@ is related to Web PaaS's subdomain highjacking prevention assumptions, and likel
 
 ## Error provisioning the new certificate
 
-One reason [Let's Encrypt certificates](/pages/web_cloud/web_paas_powered_by_platform_sh/configuration/configuration-routes/https#lets-encrypt) may fail to provision on your environments has to do with the 64 character limit Let's Encrypt places on URLs. If the names of your branches are too long, the Web PaaS generated environment URL will go over this limit, and the certificate will be rejected.
+One reason [Let's Encrypt certificates](/pages/web_cloud/web_paas_powered_by_platform_sh/configuration/https#lets-encrypt) may fail to provision on your environments has to do with the 64 character limit Let's Encrypt places on URLs. If the names of your branches are too long, the Web PaaS generated environment URL will go over this limit, and the certificate will be rejected.
 
-See [Let's Encrypt limits and branch names](/pages/web_cloud/web_paas_powered_by_platform_sh/configuration/configuration-routes/https#lets-encrypt-limits-and-branch-names) for a more detailed breakdown of this issue.  
+See [Let's Encrypt limits and branch names](/pages/web_cloud/web_paas_powered_by_platform_sh/configuration/https#lets-encrypt-limits-and-branch-names) for a more detailed breakdown of this issue.  
 
 ## Total disk usage exceeds project maximum
 
@@ -93,7 +93,7 @@ Filesystem                                                       Size  Used Avai
 /dev/mapper/platform-tmp--syd7waxqy4n5q--master--7rqtwti----app  3.9G   42M  3.8G   2% /tmp
 ```
 
-The first line shows the storage device that is shared by all of your [persistent disk mounts](/pages/web_cloud/web_paas_powered_by_platform_sh/configuration/configuration-app/storage#mounts).  All defined mounts use a common storage pool.  In this example, the application container has allocated 2 GB of the total disk space. Of those 2GB, 2% (37 MB) is used by all defined mounts.
+The first line shows the storage device that is shared by all of your [persistent disk mounts](/pages/web_cloud/web_paas_powered_by_platform_sh/configuration/storage#mounts).  All defined mounts use a common storage pool.  In this example, the application container has allocated 2 GB of the total disk space. Of those 2GB, 2% (37 MB) is used by all defined mounts.
 
 The second line is the operating system `temporary directory`, which is always the same size.
   While you can write to the `/tmp` directory files there are not guaranteed to persist and may be deleted on deploy.
@@ -112,7 +112,7 @@ The sum of all disk keys defined in your project's `.platform.app.yaml` and `.pl
 
   Check the following resources for more details:
 
-   - [Application's disk space](/pages/web_cloud/web_paas_powered_by_platform_sh/configuration/configuration-app/storage#disk)
+   - [Application's disk space](/pages/web_cloud/web_paas_powered_by_platform_sh/configuration/storage#disk)
    - [Services' disk space](/pages/web_cloud/web_paas_powered_by_platform_sh/configuration/configuration-services#disk)
 
 ## No space left on device
@@ -187,7 +187,7 @@ Alternatively, if your worker is idle for too long it can self-terminate.  Web P
 
 ### Packet size limitations
 
-Another cause of the "MySQL server has gone away" errors can be the size of the database packets. If that is the case, the logs may show warnings like  "Error while sending QUERY packet" before the error. One way to resolve the issue is to use the `max_allowed_packet` parameter described [above](/pages/web_cloud/web_paas_powered_by_platform_sh/configuration/configuration-services/mysql#adjusting-mariadb-configuration).
+Another cause of the "MySQL server has gone away" errors can be the size of the database packets. If that is the case, the logs may show warnings like  "Error while sending QUERY packet" before the error. One way to resolve the issue is to use the `max_allowed_packet` parameter described [above](/pages/web_cloud/web_paas_powered_by_platform_sh/configuration/mysql#adjusting-mariadb-configuration).
 
 ## ERROR: permission denied to create database
 
@@ -349,7 +349,7 @@ time $cmd # Print execution time
 strace -T $cmd # Print a system call report
 ```
 
-Related documentation: [Build and deploy hooks](/pages/web_cloud/web_paas_powered_by_platform_sh/configuration/configuration-app/build#hooks)
+Related documentation: [Build and deploy hooks](/pages/web_cloud/web_paas_powered_by_platform_sh/configuration/build#hooks)
 
 ### Cron jobs
 
@@ -360,5 +360,5 @@ For that reason, make sure your custom cron jobs execution times are low and tha
 **note**
 Drupal's `drush core-cron` run installed module's cron task. Those can be, for example; evicting invalid cache, updating database records, regenerating assets. Be sure to frequently benchmark the `drush core-cron` command in all your environments, as it is a common source of performance issues.
 
-Related documentation: [Cron and scheduled tasks](/pages/web_cloud/web_paas_powered_by_platform_sh/configuration/configuration-app/cron#cron-jobs)
+Related documentation: [Cron and scheduled tasks](/pages/web_cloud/web_paas_powered_by_platform_sh/configuration/cron#cron-jobs)
 

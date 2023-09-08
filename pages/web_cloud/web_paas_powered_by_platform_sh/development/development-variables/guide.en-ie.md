@@ -35,7 +35,7 @@ Application variables are available at both build time and runtime.
 
 ### Create project variables
 
-Add secrets for all environments in project variables using [the management console](/pages/web_cloud/web_paas_powered_by_platform_sh/administration/administration-web/configure-project#variables) or the CLI.
+Add secrets for all environments in project variables using [the management console](/pages/web_cloud/web_paas_powered_by_platform_sh/administration/configure-project#variables) or the CLI.
 
 For example, to create the project variable `foo` with the value `bar`, run:
 
@@ -72,7 +72,7 @@ Note that any changes to project variables require you to deploy your environmen
 
 ### Create environment variables
 
-Set variables for specific environments using [the management console](/pages/web_cloud/web_paas_powered_by_platform_sh/administration/administration-web/configure-environment#variables) or the CLI.
+Set variables for specific environments using [the management console](/pages/web_cloud/web_paas_powered_by_platform_sh/administration/configure-environment#variables) or the CLI.
 
 For example, to create the environment variable `foo` with the value `bar` on the current environment, run:
 
@@ -191,7 +191,7 @@ For more information, read more about [how builds work](/pages/web_cloud/web_paa
 
 ## Accessing variables
 
-You can get a list of all variables defined on a given environment using either [the management console](/pages/web_cloud/web_paas_powered_by_platform_sh/administration/administration-web/configure-environment#variables) or the CLI:
+You can get a list of all variables defined on a given environment using either [the management console](/pages/web_cloud/web_paas_powered_by_platform_sh/administration/configure-environment#variables) or the CLI:
 
 ```bash
 $ webpaas var

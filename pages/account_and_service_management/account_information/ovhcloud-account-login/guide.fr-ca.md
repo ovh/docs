@@ -64,7 +64,7 @@ Dans ce cas de figure, la procédure de réinitialisation du mot de passe ne peu
 
 Si vous avez renseigné une adresse e-mail de secours, vous pouvez contacter le support OVHcloud au 1-855-684-5463 afin que cette adresse de secours devienne l'adresse e-mail principale.
 
-Une fois cette action effectuée, il est essentiel de [renseigner une **nouvelle** adresse e-mail de secours](/pages/account/customer/all_about_username#backup-email) dans votre compte.
+Une fois cette action effectuée, il est essentiel de [renseigner une **nouvelle** adresse e-mail de secours](/pages/account_and_service_management/account_information/all_about_username#backup-email) dans votre compte.
 
 ### La double authentification est active sur mon compte mais mon téléphone a été volé
 

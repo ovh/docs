@@ -43,13 +43,13 @@ Darüber hinaus kann das an Bedeutung zunehmende Phänomen "[Ransomware](https:/
 
 - Überprüfen Sie Ihr Betriebssystem und Ihre Software auf Updates.
 - Führen Sie einen vollständigen Scan aus, nachdem Sie Ihr Anti-Virus-/Anti-Malware-Programm aktualisiert haben.
-- Ändern Sie regelmäßig das Administratorpasswort Ihrer Systeme (für mehr Informationen zu angemessenen Passwörtern folgen Sie den Anweisungen in [dieser Anleitung](/pages/account/customer/all_about_username#ein-starkes-und-einzigartiges-passwort-erstellen)).
+- Ändern Sie regelmäßig das Administratorpasswort Ihrer Systeme (für mehr Informationen zu angemessenen Passwörtern folgen Sie den Anweisungen in [dieser Anleitung](/pages/account_and_service_management/account_information/all_about_username#ein-starkes-und-einzigartiges-passwort-erstellen)).
 
 ### Schritt 2: Sichern Sie Ihr OVHcloud Kundencenter
 
 Um Ihren Kunden-Account zu schützen, aktivieren Sie die [Zwei-Faktor-Authentifizierung](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa) und folgen Sie den Anweisungen in dieser [Anleitung](/pages/account_and_service_management/account_information/all_about_username).
 
-Denken Sie daran, [Ihre Account-Informationen](/pages/account/customer/all_about_username#personliche-daten-im-account-verwalten) zu aktualisieren und eine **Zweit-E-Mail-Adresse** hinzuzufügen.<br>
+Denken Sie daran, [Ihre Account-Informationen](/pages/account_and_service_management/account_information/all_about_username#personliche-daten-im-account-verwalten) zu aktualisieren und eine **Zweit-E-Mail-Adresse** hinzuzufügen.<br>
 Wenn Ihre Zugangsdaten verloren gehen und/oder die Haupt-E-Mail-Adresse Ihres OVHcloud Kunden-Accounts nicht verfügbar ist, sind eine Backup-E-Mail-Adresse sowie aktuelle persönliche Daten wichtig, um Ihnen schnell weiterhelfen zu können.
 
 ### Schritt 3: Führen Sie regelmäßig Sicherungen Ihrer Seite durch <a name="backup"></a>

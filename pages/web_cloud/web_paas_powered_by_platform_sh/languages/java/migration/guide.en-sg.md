@@ -54,15 +54,15 @@ web:
 
 1\. [A Java version](/pages/web_cloud/web_paas_powered_by_platform_sh/languages/java/languages-java#supported-versions), e,g.: `java:11`
 
-2\. [Hooks define what happens when building the application](/pages/web_cloud/web_paas_powered_by_platform_sh/configuration/configuration-app/build#build). This build process typically generates an executable file such as a uber-jar e.g.: `mvn clean package`
+2\. [Hooks define what happens when building the application](/pages/web_cloud/web_paas_powered_by_platform_sh/configuration/build#build). This build process typically generates an executable file such as a uber-jar e.g.: `mvn clean package`
 
-3\. [The commands key defines the command to launch the application](/pages/web_cloud/web_paas_powered_by_platform_sh/configuration/configuration-app/web#commands). E.g.:  `java -jar file.jar`
+3\. [The commands key defines the command to launch the application](/pages/web_cloud/web_paas_powered_by_platform_sh/configuration/web#commands). E.g.:  `java -jar file.jar`
 
 4\. In the start's command needs to receive the port where the application will execute thought the `PORT` environment. That's best when your app follows the port bind principle. E.g.: `java -jar jar --port=$PORT`
 
 > [!primary]  
 > 
-> Be aware that after the build, it creates a read-only system. You have the [mount option to create a writable folder](/pages/web_cloud/web_paas_powered_by_platform_sh/configuration/configuration-app/storage#mounts).
+> Be aware that after the build, it creates a read-only system. You have the [mount option to create a writable folder](/pages/web_cloud/web_paas_powered_by_platform_sh/configuration/storage#mounts).
 > 
 > 
 

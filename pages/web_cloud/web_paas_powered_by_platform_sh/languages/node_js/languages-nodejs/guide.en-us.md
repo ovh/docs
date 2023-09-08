@@ -133,7 +133,7 @@ web:
 ## Dependencies
 
 By default, Web PaaS assumes you're using npm as a package manager.
-If you have a `package.json` file in your code, the default [build flavor is run](/pages/web_cloud/web_paas_powered_by_platform_sh/configuration/configuration-app/build#build):
+If you have a `package.json` file in your code, the default [build flavor is run](/pages/web_cloud/web_paas_powered_by_platform_sh/configuration/build#build):
 
 ```bash
 npm prune --userconfig .npmrc && npm install --userconfig .npmrc

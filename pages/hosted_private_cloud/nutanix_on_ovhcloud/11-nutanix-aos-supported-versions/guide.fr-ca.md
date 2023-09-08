@@ -69,7 +69,7 @@ Le résultat de la requête apparaît en dessous de `availableVersions` avec les
 
 [Plan de mise à jours Nutanix AOS](https://portal.nutanix.com/page/documents/kbs/details?targetId=kA00e000000LIi9CAG)
 
-[Utilisation de l'API OVHcloud](/products/infrastructure-as-code-api-apiv6)
+[Utilisation de l'API OVHcloud](/products/manage-operate-api-apiv6)
 
 Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr-ca/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 

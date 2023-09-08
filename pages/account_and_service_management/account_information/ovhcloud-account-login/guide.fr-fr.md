@@ -66,7 +66,7 @@ Dans ce cas de figure, la procédure de réinitialisation du mot de passe ne peu
 
 Vous pouvez contacter le support OVHcloud au 1007 (composez le 0033 9 72 10 10 07 depuis une ligne en dehors de la France) afin que cette adresse de secours devienne l'adresse e-mail principale.
 
-Une fois cette action effectuée, il est essentiel de [renseigner une **nouvelle** adresse e-mail de secours](/pages/account/customer/all_about_username#backup-email) dans votre compte.
+Une fois cette action effectuée, il est essentiel de [renseigner une **nouvelle** adresse e-mail de secours](/pages/account_and_service_management/account_information/all_about_username#backup-email) dans votre compte.
 
 #### Si vous n'avez pas renseigné d'adresse e-mail de secours ou que celle-ci est également invalide
 
