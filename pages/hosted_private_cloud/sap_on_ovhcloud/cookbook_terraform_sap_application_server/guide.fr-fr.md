@@ -32,7 +32,7 @@ Ce module a été écrit pour être compatible avec Terraform v1.4 ou supérieur
 
 ### Utilisation du module Terraform
 
-Plusieurs exemples sont disponibles dans le [repository GitHub](https://github.com/ovh/terraform-vsphere-sap-application-server/examples/) pour déployer des machines virtuelles de serveur d'application SAP.
+Plusieurs exemples sont disponibles dans le [repository GitHub](https://github.com/ovh/terraform-vsphere-sap-application-server/tree/master/examples/) pour déployer des machines virtuelles de serveur d'application SAP.
 
 Trois principaux fichiers sont requis pour utiliser comme attendu ce module Terraform :
 
@@ -208,7 +208,7 @@ sap_application_servers_ids = {
 
 Si l'exécution s'est déroulée sans erreur, vous avez créé votre première machine virtuelle de serveur d'application SAP sur votre solution VMware on OVHcloud avec Terraform.
 
-Nous vous suggérons de prendre connaissance des [exemples](https://github.com/ovh/terraform-vsphere-sap-application-server/examples) et du [README](https://github.com/ovh/terraform-vsphere-sap-application-server) pour découvrir toutes les possibilités.
+Nous vous suggérons de prendre connaissance des [exemples](https://github.com/ovh/terraform-vsphere-sap-application-server/tree/master/examples) et du [README](https://github.com/ovh/terraform-vsphere-sap-application-server) pour découvrir toutes les possibilités.
 
 À tout moment, vous avez la possibilité de changer la configuration de la machine virtuelle (plus de vCPU, plus de mémoire ou ajout d'un nouveau disque par exemple) et relancer l'exécution de Terraform.
 
