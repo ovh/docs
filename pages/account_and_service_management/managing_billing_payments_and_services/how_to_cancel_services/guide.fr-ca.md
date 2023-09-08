@@ -133,7 +133,7 @@ Chaque service [Public Cloud](https://www.ovhcloud.com/fr-ca/public-cloud/) peut
 
 Le Public Cloud OVHcloud repose sur le principe du *Pay as you go* (plus de détails sur notre page d'[informations concernant le mode de facturation Public Cloud](/pages/public_cloud/compute/analyze_billing)). Vous ne payez en fin de mois que pour le temps d'utilisation effectif des ressources.
 
-Vous pouvez également [consulter votre consommation actuelle](/pages/platform/public-cloud/analyze_billing#consulter-sa-consommation-actuelle) depuis l'espace client OVHcloud et être alerté par e-mail lorsque la projection de votre consommation dépasse un certain seuil.
+Vous pouvez également [consulter votre consommation actuelle](/pages/public_cloud/compute/analyze_billing#consulter-sa-consommation-actuelle) depuis l'espace client OVHcloud et être alerté par e-mail lorsque la projection de votre consommation dépasse un certain seuil.
 
 ### Web Cloud <a name="webcloud"></a>
 

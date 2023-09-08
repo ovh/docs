@@ -75,7 +75,7 @@ Pass 5: Checking group summary information
 
 Se verificar algum erro, deverá adotar as medidas adequadas para cada situação. Estes são alguns dos exemplos mais frequentes:
 
-- `bad magic number in superblock`: não continuar. Para resolver este problema, consulte a secção “[Como corrigir os erros *bad magic number in superblock*](/pages/cloud/vps/upsize_vps_partition#como-corrigir-os-erros-bad-magic-number-in-superblock)” deste manual.
+- `bad magic number in superblock`: não continuar. Para resolver este problema, consulte a secção “[Como corrigir os erros *bad magic number in superblock*](/pages/bare_metal_cloud/virtual_private_servers/upsize_vps_partition#como-corrigir-os-erros-bad-magic-number-in-superblock)” deste manual.
 
 - `/dev/vdb1 has unsupported feature(s): metadata_csum` seguido de `e2fsck: Get a newer version of e2fsck!`: atualizar “e2fsck”. Se a última versão não estiver disponível através de `apt` (ou outro gestor de pacotes), deverá compilá-la a partir do código fonte.
 

@@ -20,7 +20,7 @@ Les sauvegardes sont réalisées à l'aide d'une machine virtuelle (VM) située 
 * Être connecté au client vSphere.
 * Avoir activé la [haute disponibilité (HA)](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_ha_high_availability){.external}.
 * Avoir activé le [Distributed Ressource Scheduler (DRS)](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_drs_distributed_ressource_scheduler_new){.external} sur le ou les clusters.
-* Mettre en place la [gestion des licences Windows](/pages/cloud/private-cloud/facturation_private_cloud#licences-windows){.external} sur le Private Cloud.
+* Mettre en place la [gestion des licences Windows](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/facturation_private_cloud#licences-windows){.external} sur le Private Cloud.
 
 ## En pratique
 

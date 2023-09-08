@@ -150,7 +150,7 @@ Chaque service [Public Cloud](https://www.ovhcloud.com/fr/public-cloud/) peut ê
 
 Le Public Cloud OVHcloud repose sur le principe du *Pay as you go* (plus de détails sur notre page d'[informations concernant le mode de facturation Public Cloud](/pages/public_cloud/compute/analyze_billing)). Vous ne payez en fin de mois que pour le temps d'utilisation effectif des ressources.
 
-Vous pouvez également [consulter votre consommation actuelle](/pages/platform/public-cloud/analyze_billing#consulter-sa-consommation-actuelle) depuis l'espace client OVHcloud et être alerté par e-mail lorsque la projection de votre consommation dépasse un certain seuil.
+Vous pouvez également [consulter votre consommation actuelle](/pages/public_cloud/compute/analyze_billing#consulter-sa-consommation-actuelle) depuis l'espace client OVHcloud et être alerté par e-mail lorsque la projection de votre consommation dépasse un certain seuil.
 
 ### Web Cloud <a name="webcloud"></a>
 
@@ -214,7 +214,7 @@ Un e-mail contenant la procédure de fermeture de votre MX Plan vous sera alors 
 
 #### E-mail Pro <a name="emailpro"></a>
 
-Pour résilier votre offre [E-mail Pro](https://www.ovhcloud.com/fr/emails/email-pro/), suivez les instructions de ce [guide](/pages/web/emails-pro/manage_billing_emailpro#supprimer-un-compte).
+Pour résilier votre offre [E-mail Pro](https://www.ovhcloud.com/fr/emails/email-pro/), suivez les instructions de ce [guide](/pages/web_cloud/email_and_collaborative_solutions/email_pro/manage_billing_emailpro#supprimer-un-compte).
 
 #### Hosted Exchange <a name="hosted"></a>
 

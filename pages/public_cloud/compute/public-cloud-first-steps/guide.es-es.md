@@ -242,7 +242,7 @@ Si tiene problemas con la conexión a través de sus claves SSH, consulte nuestr
 
 > [!primary]
 >
-Si ha creado una instancia sin llave SSH, a través de la API OVHcloud o la interfaz Openstack Horizon, solo podrá añadir una llave SSH a su instancia a través del [modo de rescate](/pages/public_cloud/compute/put_an_instance_in_rescue_mode) siguiendo las instrucciones descritas en [esta sección de la guía adecuada](/pages/platform/public-cloud/replacing_lost_ssh_key#procedimiento).
+Si ha creado una instancia sin llave SSH, a través de la API OVHcloud o la interfaz Openstack Horizon, solo podrá añadir una llave SSH a su instancia a través del [modo de rescate](/pages/public_cloud/compute/put_an_instance_in_rescue_mode) siguiendo las instrucciones descritas en [esta sección de la guía adecuada](/pages/public_cloud/compute/replacing_lost_ssh_key#procedimiento).
 >
 
 #### Conexión a una instancia Linux en Linux o Mac

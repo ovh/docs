@@ -107,7 +107,7 @@ cat /sys/devices/system/cpu/vulnerabilities/mds
 
 Si le résultat est `Vulnerable`, n'ayez aucune crainte, l'hyperviseur sous-jacent vous protège.
 
-Cependant, il est possible de mitiger cette faille directement dans votre instance en faisant un hard reboot de votre instance, soit [par le biais de l'espace client OVHcloud](/pages/platform/public-cloud/first_steps_with_public_cloud_instance#redemarrer-une-instance), soit avec une commande comme celle-ci :
+Cependant, il est possible de mitiger cette faille directement dans votre instance en faisant un hard reboot de votre instance, soit [par le biais de l'espace client OVHcloud](/pages/public_cloud/compute/first_steps_with_public_cloud_instance#redemarrer-une-instance), soit avec une commande comme celle-ci :
 
 ```bash
 openstack server reboot --hard $serverID

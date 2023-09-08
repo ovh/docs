@@ -124,7 +124,7 @@ Pour continuer la configuration du vRack depuis l'espace client OVHcloud, poursu
 
 #### Depuis les APIv6 OVHcloud
 
-Pour activer et gérer un vRack depuis les APIv6 OVHcloud, cliquez [ici](/pages/platform/network-services/getting-started-08-creating-vrack-with-api#etape-1-activer-et-gerer-un-vrack) pour consulter le guide spécifique à cette méthode.
+Pour activer et gérer un vRack depuis les APIv6 OVHcloud, cliquez [ici](/pages/public_cloud/public_cloud_network_services/getting-started-08-creating-vrack-with-api#etape-1-activer-et-gerer-un-vrack) pour consulter le guide spécifique à cette méthode.
 
 ### Étape 2 : Créer un réseau privé dans le vRack
 
@@ -170,7 +170,7 @@ Cliquez à présent sur `Créer un réseau privé`{.action}. La page suivante vo
 
 **Créez une Gateway et connectez-vous au réseau privé**
 
-Sélectionnez cette option si vous avez l'intention de créer des instances avec un réseau privé uniquement. Pour plus d’informations, nous vous invitons à consulter les guides suivants : [Créer un réseau privé avec une Gateway](/pages/public_cloud/public_cloud_network_services/getting-started-02-create-private-network-gateway) et [Créer une première instance Public Cloud et s’y connecter](/pages/platform/public-cloud/public-cloud-first-steps#etape-3-creer-une-instance).
+Sélectionnez cette option si vous avez l'intention de créer des instances avec un réseau privé uniquement. Pour plus d’informations, nous vous invitons à consulter les guides suivants : [Créer un réseau privé avec une Gateway](/pages/public_cloud/public_cloud_network_services/getting-started-02-create-private-network-gateway) et [Créer une première instance Public Cloud et s’y connecter](/pages/public_cloud/compute/public-cloud-first-steps#etape-3-creer-une-instance).
 
 > [!warning]
 > Si l'option est grisée, cela signifie qu'elle est incompatible avec la région sélectionnée. Pour plus d’informations, veuillez vous référer à notre page sur la [disponibilité des produits Public Cloud pour chaque région](https://www.ovhcloud.com/fr-ca/public-cloud/regions-availability/).
@@ -200,7 +200,7 @@ Une fois vos choix faits, cliquez sur `Créer`{.action} pour lancer le processus
 
 #### Créer un réseau privé depuis les APIv6 OVHcloud <a name="vlansetup"></a>
 
-Pour créer un réseau privé depuis les APIv6 OVHcloud, cliquez [ici](/pages/platform/network-services/getting-started-08-creating-vrack-with-api#etape-3-creer-un-vlan-dans-le-vrack) pour consulter le guide spécifique à cette méthode.
+Pour créer un réseau privé depuis les APIv6 OVHcloud, cliquez [ici](/pages/public_cloud/public_cloud_network_services/getting-started-08-creating-vrack-with-api#etape-3-creer-un-vlan-dans-le-vrack) pour consulter le guide spécifique à cette méthode.
 
 #### Créer un réseau privé via le CLI OpenStack
 
@@ -249,7 +249,7 @@ Deux situations peuvent se présenter à vous :
 
 ##### **Depuis l'espace client OVHcloud**
 
-Consultez le guide [Créer une instance depuis l’espace client](/pages/platform/public-cloud/public-cloud-first-steps#create-instance). Lors de la création d'une instance, vous pouvez choisir, à l'étape 5, un mode réseau, puis un réseau privé dans lequel intégrer votre instance.
+Consultez le guide [Créer une instance depuis l’espace client](/pages/public_cloud/compute/public-cloud-first-steps#create-instance). Lors de la création d'une instance, vous pouvez choisir, à l'étape 5, un mode réseau, puis un réseau privé dans lequel intégrer votre instance.
 
 ![attach new instance](images/network-selection.png){.thumbnail}
 
@@ -260,7 +260,7 @@ Consultez le guide [Créer une instance depuis l’espace client](/pages/platfor
 
 ##### **Depuis les APIv6 OVHcloud**
 
-Cliquez [ici](/pages/platform/network-services/getting-started-08-creating-vrack-with-api#etape-4-integrer-une-instance-dans-le-vrack) pour consulter le guide spécifique à cette méthode.
+Cliquez [ici](/pages/public_cloud/public_cloud_network_services/getting-started-08-creating-vrack-with-api#etape-4-integrer-une-instance-dans-le-vrack) pour consulter le guide spécifique à cette méthode.
 
 ##### **Depuis les API OpenStack**
 
@@ -455,7 +455,7 @@ Dans la pop-up qui apparaît, sélectionnez le ou les réseaux privés à attach
 
 ##### **Gestion des interfaces réseaux depuis les APIv6 OVHcloud**
 
-Cliquez [ici](/pages/platform/network-services/getting-started-08-creating-vrack-with-api#cas-dune-instance-deja-existante) pour consulter le guide spécifique à cette méthode.
+Cliquez [ici](/pages/public_cloud/public_cloud_network_services/getting-started-08-creating-vrack-with-api#cas-dune-instance-deja-existante) pour consulter le guide spécifique à cette méthode.
 
 ##### **Gestion des interfaces réseaux depuis OpenStack Horizon**
 

@@ -147,7 +147,7 @@ Jeder Public Cloud Dienst kann gelöscht werden, indem Sie rechts neben dem betr
 
 Die OVHcloud Public Cloud basiert auf dem Prinzip *Pay as you go* (weitere Details finden Sie auf unserer Seite zum [Abrechnungsmodus Public Cloud](/pages/public_cloud/compute/analyze_billing)). Sie zahlen am Monatsende nur für die Zeit, in der die Ressourcen tatsächlich genutzt werden.
 
-Sie können Ihren [aktuellen Verbrauch](/pages/platform/public-cloud/analyze_billing#aktuelle-ressourcennutzung-anzeigen) auch über das OVHcloud Kundencenter einsehen und per E-Mail benachrichtigt werden, wenn die Projektion Ihres Verbrauchs einen bestimmten Grenzwert überschreitet.
+Sie können Ihren [aktuellen Verbrauch](/pages/public_cloud/compute/analyze_billing#aktuelle-ressourcennutzung-anzeigen) auch über das OVHcloud Kundencenter einsehen und per E-Mail benachrichtigt werden, wenn die Projektion Ihres Verbrauchs einen bestimmten Grenzwert überschreitet.
 
 ### Web Cloud <a name="webcloud"></a>
 
@@ -211,7 +211,7 @@ Sie erhalten in diesem Fall eine E-Mail mit der Vorgehensweise zur Schließung I
 
 #### E-Mail Pro <a name="emailpro"></a>
 
-Um Ihr [E-Mail Pro](https://www.ovhcloud.com/de/emails/email-pro/) zu kündigen, folgen Sie den Anweisungen in dieser [Anleitung](/pages/web/emails-pro/manage_billing_emailpro#konten-entfernen).
+Um Ihr [E-Mail Pro](https://www.ovhcloud.com/de/emails/email-pro/) zu kündigen, folgen Sie den Anweisungen in dieser [Anleitung](/pages/web_cloud/email_and_collaborative_solutions/email_pro/manage_billing_emailpro#konten-entfernen).
 
 #### Hosted Exchange <a name="hosted"></a>
 

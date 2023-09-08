@@ -12,14 +12,14 @@ Pour exécuter certaines fonctions administratives sur votre serveur (l’instal
 
 ## Prérequis
 
-* [Avoir créé une instance Public Cloud dans votre compte](/pages/platform/public-cloud/public-cloud-first-steps#etape-3-creer-une-instance)
+* [Avoir créé une instance Public Cloud dans votre compte](/pages/public_cloud/compute/public-cloud-first-steps#etape-3-creer-une-instance)
 * Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}
 
 ## En pratique
 
 ### Définir le mot de passe root <a name="settingtherootpassword"></a>
 
-Pour commencer, établissez une [connexion SSH](/pages/platform/public-cloud/public-cloud-first-steps#etape-4-connexion-a-votre-instance) à votre serveur avec votre utilisateur par défaut.
+Pour commencer, établissez une [connexion SSH](/pages/public_cloud/compute/public-cloud-first-steps#etape-4-connexion-a-votre-instance) à votre serveur avec votre utilisateur par défaut.
 
 Utilisez la commande ci-dessous pour définir un mot de passe pour l’utilisateur root (pour des raisons de sécurité, celui-ci ne sera pas affiché lors de la saisie) :
 

@@ -147,7 +147,7 @@ Ogni servizio [Public Cloud](https://www.ovhcloud.com/it/public-cloud/) può ess
 
 Il Public Cloud OVHcloud si basa sul principio del *Pay as you go* (per maggiori informazioni, consulta la pagina [relativa alla fatturazione Public Cloud](/pages/public_cloud/compute/analyze_billing)). Alla fine del mese viene fatturato solo il tempo di utilizzo effettivo delle risorse.
 
-Accedi allo Spazio Cliente OVHcloud per [consultare i tuoi consumi correnti](/pages/platform/public-cloud/analyze_billing#consulta-lo-stato-dei-tuoi-consumi) e vieni avvisato via email quando la proiezione dei tuoi consumi supera una determinata soglia.
+Accedi allo Spazio Cliente OVHcloud per [consultare i tuoi consumi correnti](/pages/public_cloud/compute/analyze_billing#consulta-lo-stato-dei-tuoi-consumi) e vieni avvisato via email quando la proiezione dei tuoi consumi supera una determinata soglia.
 
 ### Web Cloud <a name="webcloud"></a>
 
@@ -211,7 +211,7 @@ Riceverai un'email con la procedura da seguire per la disattivazione del tuo MX 
 
 #### E-mail Pro <a name="emailpro"></a>
 
-Per disattivare la tua offerta [Email Pro](https://www.ovhcloud.com/it/emails/email-pro/), segui le indicazioni di questa [guida](/pages/web/emails-pro/manage_billing_emailpro#elimina-account).
+Per disattivare la tua offerta [Email Pro](https://www.ovhcloud.com/it/emails/email-pro/), segui le indicazioni di questa [guida](/pages/web_cloud/email_and_collaborative_solutions/email_pro/manage_billing_emailpro#elimina-account).
 
 #### Hosted Exchange <a name="hosted"></a>
 

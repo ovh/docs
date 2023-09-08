@@ -79,7 +79,7 @@ The only difference will be the user's autonomy in token validation.
 ### Application access permission
 
 Multiple third-party applications can be used that require connection to the vCenter.
-These applications must first be authorised through the vCenter access policy that is settable in your OVHcloud [Control Panel](/pages/cloud/private-cloud/manager_ovh_private_cloud#security).
+These applications must first be authorised through the vCenter access policy that is settable in your OVHcloud [Control Panel](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/manager_ovh_private_cloud#security).
 
 These applications will then be able to access our infrastructures, but they will not necessarily handle two-factor authentication.
 

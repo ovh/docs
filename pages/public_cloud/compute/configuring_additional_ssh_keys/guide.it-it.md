@@ -33,7 +33,7 @@ Per creare una nuova chiave SSH, consulta la [guida sui primi step con il Public
 
 ### Configurazione del nuovo utente
 
-[Accedi alla tua istanza in SSH](/pages/platform/public-cloud/public-cloud-first-steps#connect-to-instance) e crea un nuovo utente utilizzando questi comandi:
+[Accedi alla tua istanza in SSH](/pages/public_cloud/compute/public-cloud-first-steps#connect-to-instance) e crea un nuovo utente utilizzando questi comandi:
 
 ```bash
 ~$ sudo adduser user2

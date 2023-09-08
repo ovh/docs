@@ -8,7 +8,7 @@ updated: 2023-02-14
 
 Le [vRack](https://www.ovh.com/fr/solutions/vrack/) OVHcloud est un réseau privé qui vous permet de configurer l'adressage entre deux ou plusieurs [Serveurs dédiés](https://www.ovh.com/fr/serveurs_dedies/) OVHcloud. Mais il vous permet également d'ajouter des [instances Public Cloud](https://www.ovh.com/fr/public-cloud/instances/) à votre réseau privé afin de créer une infrastructure de ressources physiques et virtuelles.
 
-**Ce guide vous montre comment configurer le réseau privé entre une [instance Public Cloud](/pages/platform/public-cloud/public-cloud-first-steps#etape-3-creer-une-instance) et un [Serveur dédié](https://www.ovhcloud.com/fr/bare-metal/).**
+**Ce guide vous montre comment configurer le réseau privé entre une [instance Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps#etape-3-creer-une-instance) et un [Serveur dédié](https://www.ovhcloud.com/fr/bare-metal/).**
 
 ## Prérequis
 
@@ -58,11 +58,11 @@ Deux situations peuvent se présenter à vous :
 
 #### Cas d’une nouvelle instance
 
-Si vous avez besoin d’aide, consultez le guide [Créer une instance Public Cloud](/pages/platform/public-cloud/public-cloud-first-steps#etape-3-creer-une-instance){.external}. Lors de la création d’une instance, vous pourrez spécifier, durant l’étape 4, un réseau privé dans lequel intégrer votre instance. Choisissez alors, dans le menu déroulant présenté, votre vRack précédemment créé.
+Si vous avez besoin d’aide, consultez le guide [Créer une instance Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps#etape-3-creer-une-instance){.external}. Lors de la création d’une instance, vous pourrez spécifier, durant l’étape 4, un réseau privé dans lequel intégrer votre instance. Choisissez alors, dans le menu déroulant présenté, votre vRack précédemment créé.
 
 #### Cas d’une instance déjà existante
 
-Vous pouvez associer une instance existante à un réseau privé. Pour plus d'informations, vous pouvez consulter [cette section du guide correspondant](/pages/platform/network-services/getting-started-07-creating-vrack#cas-dune-instance-deja-existante).
+Vous pouvez associer une instance existante à un réseau privé. Pour plus d'informations, vous pouvez consulter [cette section du guide correspondant](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack#cas-dune-instance-deja-existante).
 
 ### Créer un VLAN ID
 
@@ -70,7 +70,7 @@ Pour que les deux services puissent communiquer entre eux, ils doivent être « 
 
 #### Utilisation du VLAN ID par défaut
 
-Sur les serveurs dédiés, par défaut, vous êtes sur le VLAN **0**. Si vous souhaitez utiliser cet ID, il sera nécessaire de « tagguer » le réseau privé lié à votre instance avec le VLAN **0**. Pour cela, vous devez passer par [l’API OVHcloud](/pages/platform/network-services/getting-started-08-creating-vrack-with-api#etape-3-creer-un-vlan-dans-le-vrack).
+Sur les serveurs dédiés, par défaut, vous êtes sur le VLAN **0**. Si vous souhaitez utiliser cet ID, il sera nécessaire de « tagguer » le réseau privé lié à votre instance avec le VLAN **0**. Pour cela, vous devez passer par [l’API OVHcloud](/pages/public_cloud/public_cloud_network_services/getting-started-08-creating-vrack-with-api#etape-3-creer-un-vlan-dans-le-vrack).
 
 > [!primary]
 > Sur le Public Cloud, vous définissez un VLAN ID unique par réseau privé.

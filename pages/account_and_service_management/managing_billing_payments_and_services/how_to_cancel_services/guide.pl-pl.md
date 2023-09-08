@@ -147,7 +147,7 @@ Każda usługa [Public Cloud](https://www.ovhcloud.com/pl/public-cloud/) może z
 
 Public Cloud OVHcloud opiera się na zasadzie *Pay as you go* (więcej szczegółów na naszej stronie [informacyjnej o sposobie rozliczania usługi Public Cloud](/pages/public_cloud/compute/analyze_billing)). Płacisz pod koniec miesiąca tylko za czas rzeczywistego wykorzystania zasobów.
 
-Możesz również [sprawdzić aktualne](/pages/platform/public-cloud/analyze_billing#sprawdzic-obecne-zuzycie) zużycie zasobów w Panelu klienta OVHcloud i otrzymywać powiadomienie e-mailem, jeśli prognoza zużycia zasobów przekroczy określony próg.
+Możesz również [sprawdzić aktualne](/pages/public_cloud/compute/analyze_billing#sprawdzic-obecne-zuzycie) zużycie zasobów w Panelu klienta OVHcloud i otrzymywać powiadomienie e-mailem, jeśli prognoza zużycia zasobów przekroczy określony próg.
 
 ### Web Cloud <a name="webcloud"></a>
 
@@ -211,7 +211,7 @@ Otrzymasz e-mail z opisem procedury zamknięcia usługi MX Plan.
 
 #### E-mail Pro <a name="emailpro"></a>
 
-Aby zrezygnować z usługi [E-mail Pro](https://www.ovhcloud.com/pl/emails/email-pro/), postępuj zgodnie z instrukcjami zawartymi w tym [przewodniku](/pages/web/emails-pro/manage_billing_emailpro#usuwanie-kont).
+Aby zrezygnować z usługi [E-mail Pro](https://www.ovhcloud.com/pl/emails/email-pro/), postępuj zgodnie z instrukcjami zawartymi w tym [przewodniku](/pages/web_cloud/email_and_collaborative_solutions/email_pro/manage_billing_emailpro#usuwanie-kont).
 
 #### Hosted Exchange <a name="hosted"></a>
 

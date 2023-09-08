@@ -64,7 +64,7 @@ For these use cases, and other ones as well, you can do operations on Nodes. And
 
 ### Cluster creation
 
-Follow the [cluster creation](/pages/platform/kubernetes-k8s/label-nodeaffinity-node-pools#cluster-creation) step by step guide.
+Follow the [cluster creation](/pages/public_cloud/containers_orchestration/managed_kubernetes/label-nodeaffinity-node-pools#cluster-creation) step by step guide.
 
 ### Second node pool creation
 

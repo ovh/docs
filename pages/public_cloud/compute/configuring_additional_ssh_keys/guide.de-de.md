@@ -29,11 +29,11 @@ Wenn Sie einen SSH-Schlüssel im OVHcloud Kundencenter speichern möchten, empfe
 
 ### SSH-Schlüssel erstellen
 
-Folgen Sie zunächst unserer Anleitung zu den [ersten Schritten](/pages/platform/public-cloud/public-cloud-first-steps#schritt-1-ssh-schlussel-erstellen), um einen SSH-Schlüssel zu erstellen.
+Folgen Sie zunächst unserer Anleitung zu den [ersten Schritten](/pages/public_cloud/compute/public-cloud-first-steps#schritt-1-ssh-schlussel-erstellen), um einen SSH-Schlüssel zu erstellen.
 
 ### Einen neuen Benutzer konfigurieren
 
-[Verbinden Sie sich über SSH](/pages/platform/public-cloud/public-cloud-first-steps#connect-to-instance) mit Ihrer Instanz und erstellen Sie mithilfe des folgenden Befehls einen neuen Benutzer:
+[Verbinden Sie sich über SSH](/pages/public_cloud/compute/public-cloud-first-steps#connect-to-instance) mit Ihrer Instanz und erstellen Sie mithilfe des folgenden Befehls einen neuen Benutzer:
 
 ```bash
 ~$ sudo adduser user2

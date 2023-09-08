@@ -150,7 +150,7 @@ Cada servicio [Public Cloud](https://www.ovhcloud.com/es-es/public-cloud/) puede
 
 El Public Cloud de OVHcloud se basa en el principio de *pago por consumo* (para más información, consulte nuestra página de [información sobre el modo de facturación de Public Cloud](/pages/public_cloud/compute/analyze_billing)). Solo tendrá que pagar a final de mes por el tiempo de uso efectivo de los recursos.
 
-También puede [consultar su consumo actual](/pages/platform/public-cloud/analyze_billing#consumo-actual) desde el área de cliente de OVHcloud y recibir una notificación por correo electrónico cuando la proyección del consumo supere un determinado umbral.
+También puede [consultar su consumo actual](/pages/public_cloud/compute/analyze_billing#consumo-actual) desde el área de cliente de OVHcloud y recibir una notificación por correo electrónico cuando la proyección del consumo supere un determinado umbral.
 
 ### Web Cloud <a name="webcloud"></a>
 
@@ -214,7 +214,7 @@ Recibirá por correo electrónico un mensaje con el procedimiento de cierre de s
 
 #### Email Pro <a name="emailpro"></a>
 
-Para dar de baja su servicio [Email Pro](https://www.ovhcloud.com/es-es/emails/email-pro/), siga las indicaciones de esta [guía](/pages/web/emails-pro/manage_billing_emailpro#eliminar-cuentas).
+Para dar de baja su servicio [Email Pro](https://www.ovhcloud.com/es-es/emails/email-pro/), siga las indicaciones de esta [guía](/pages/web_cloud/email_and_collaborative_solutions/email_pro/manage_billing_emailpro#eliminar-cuentas).
 
 #### Hosted Exchange <a name="hosted"></a>
 

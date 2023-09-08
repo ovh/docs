@@ -25,8 +25,8 @@ Usługa NAS-HA OVHcloud pozwala na zarządzanie przestrzenią dyskową plików d
 - Posiadanie oferty [NAS-HA OVHcloud](https://www.ovhcloud.com/pl/storage-solutions/nas-ha/)
 - Posiadanie usługi OVHcloud, do której przypisany jest publiczny adres IP (Hosted Private Cloud, serwer dedykowany, VPS, instancja Public Cloud, etc.)
 - Posiadanie systemu operacyjnego kompatybilnego z NFS zainstalowanego na Twoim serwerze
-- [Utworzenie partycji dla Twojej usługi przy użyciu protokołu NFS](/pages/cloud/storage/file_storage/nas_get_started#partition)
-- [Posiadanie wpisu ACL dla adresu IP serwera](/pages/cloud/storage/file_storage/nas_get_started#addaccess)
+- [Utworzenie partycji dla Twojej usługi przy użyciu protokołu NFS](/pages/storage_and_backup/file_storage/ha_nas/nas_get_started#partition)
+- [Posiadanie wpisu ACL dla adresu IP serwera](/pages/storage_and_backup/file_storage/ha_nas/nas_get_started#addaccess)
 - Dostęp administracyjny (root) do serwera przez SSH lub GUI
 
 ## W praktyce

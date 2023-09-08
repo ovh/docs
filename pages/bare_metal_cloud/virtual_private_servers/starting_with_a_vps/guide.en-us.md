@@ -71,7 +71,7 @@ passwd: password updated successfully
 
 #### Enabling root logins
 
-Connecting with the "root" user is disabled by default as a security measure. If you need to permit these connections, refer to the instructions in [this guide](/pages/cloud/vps/root_password#enabling-root-login).
+Connecting with the "root" user is disabled by default as a security measure. If you need to permit these connections, refer to the instructions in [this guide](/pages/bare_metal_cloud/virtual_private_servers/root_password#enabling-root-login).
 
 #### Restarting your VPS (current VPS range) <a name="reboot-current-range"></a>
 

@@ -143,7 +143,7 @@ Each [Public Cloud](https://www.ovhcloud.com/en-ie/public-cloud/) service can be
 
 OVHcloud Public Cloud is based on the principle of *Pay-as-you-go* (more details are available on our information page about the [Public Cloud billing method](/pages/public_cloud/compute/analyze_billing)). At the end of the month, you only pay for the effective resource usage time.
 
-You can also [view your current resource usage](/pages/platform/public-cloud/analyze_billing#view-your-current-resource-usage) in the OVHcloud Control Panel and receive email alerts when your resource usage is projected to exceed a certain threshold.
+You can also [view your current resource usage](/pages/public_cloud/compute/analyze_billing#view-your-current-resource-usage) in the OVHcloud Control Panel and receive email alerts when your resource usage is projected to exceed a certain threshold.
 
 ### Web Cloud <a name="webcloud"></a>
 
@@ -207,7 +207,7 @@ You will then get an email containing the procedure to close your MX Plan, so yo
 
 #### Email Pro <a name="emailpro"></a>
 
-To cancel your [Email Pro](https://www.ovhcloud.com/en-ie/emails/email-pro/) service, follow the instructions of this [guide](/pages/web/emails-pro/manage_billing_emailpro#deleting-accounts).
+To cancel your [Email Pro](https://www.ovhcloud.com/en-ie/emails/email-pro/) service, follow the instructions of this [guide](/pages/web_cloud/email_and_collaborative_solutions/email_pro/manage_billing_emailpro#deleting-accounts).
 
 #### Hosted Exchange <a name="hosted"></a>
 

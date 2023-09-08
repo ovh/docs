@@ -17,7 +17,7 @@ Además del área de cliente de OVHcloud, también puede gestionar sus proyectos
 ## Requisitos
 
 - Haber creado una instancia de Public Cloud desde el [área de cliente de OVHcloud](/pages/public_cloud/compute/public-cloud-first-steps) o a través de la [interfaz de Horizon](/pages/public_cloud/compute/create_instance_in_horizon).
-- [Haber creado una llave SSH](/pages/platform/public-cloud/public-cloud-first-steps#1-crear-claves-ssh).
+- [Haber creado una llave SSH](/pages/public_cloud/compute/public-cloud-first-steps#1-crear-claves-ssh).
 
 ## Procedimiento
 
@@ -64,8 +64,8 @@ Seleccione la opción que desee en el panel de control de la instancia.
 
 ![public-cloud](images/list2022.png){.thumbnail}
 
-- Attach Interface: esta opción permite añadir una o más interfaces privadas a su instancia a través de la VLAN. Para más información, consulte [esta parte](/pages/platform/network-services/getting-started-07-creating-vrack#anadir-una-interfaz-privada) de la guía correspondiente.
-- Detach Interface: esta opción permite eliminar una interfaz vinculada a una instancia. Para más información, consulte [esta parte](/pages/platform/network-services/getting-started-07-creating-vrack#eliminacion-de-una-interfaz-privada) de la guía correspondiente.
+- Attach Interface: esta opción permite añadir una o más interfaces privadas a su instancia a través de la VLAN. Para más información, consulte [esta parte](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack#anadir-una-interfaz-privada) de la guía correspondiente.
+- Detach Interface: esta opción permite eliminar una interfaz vinculada a una instancia. Para más información, consulte [esta parte](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack#eliminacion-de-una-interfaz-privada) de la guía correspondiente.
 - Edit Instance : esta opción permite cambiar el nombre de la instancia y los [grupos de seguridad](/pages/public_cloud/compute/setup_security_group).
 
 > [!warning]

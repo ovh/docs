@@ -80,7 +80,7 @@ In diesem Fall kann das standardmäßige IPv6-Gateway wie folgt geschrieben werd
 
 #### Schritt 1: SSH für die Verbindung mit Ihrem Server verwenden
 
-Weitere Informationen finden Sie in [dieser Anleitung](/pages/cloud/dedicated/getting-started-with-dedicated-server#auf-dem-server-einloggen).
+Weitere Informationen finden Sie in [dieser Anleitung](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server#auf-dem-server-einloggen).
 
 #### Schritt 2: Netzwerkkonfigurationsdatei Ihres Servers öffnen
 
@@ -135,7 +135,7 @@ Wenn Sie diese IPv6-Adresse nicht anpingen können, überprüfen Sie Ihre Konfig
 
 #### Schritt 1: SSH für die Verbindung mit Ihrem Server verwenden
 
-Weitere Informationen finden Sie in [dieser Anleitung](/pages/cloud/dedicated/getting-started-with-dedicated-server#auf-dem-server-einloggen).
+Weitere Informationen finden Sie in [dieser Anleitung](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server#auf-dem-server-einloggen).
 
 #### Schritt 2: Netzwerkkonfigurationsdatei Ihres Servers öffnen
 
@@ -184,7 +184,7 @@ Wenn Sie diese IPv6-Adresse nicht anpingen können, überprüfen Sie Ihre Konfig
 
 #### Schritt 1: SSH für die Verbindung mit Ihrem Server verwenden
 
-Weitere Informationen finden Sie in [dieser Anleitung](/pages/cloud/dedicated/getting-started-with-dedicated-server#auf-dem-server-einloggen).
+Weitere Informationen finden Sie in [dieser Anleitung](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server#auf-dem-server-einloggen).
 
 #### Schritt 2: Netzwerkkonfigurationsdatei Ihres Servers öffnen
 
@@ -230,7 +230,7 @@ Wenn Sie diese IPv6-Adresse nicht anpingen können, überprüfen Sie Ihre Konfig
 
 #### Schritt 1: SSH für die Verbindung mit Ihrem Server verwenden
 
-Weitere Informationen finden Sie in [dieser Anleitung](/pages/cloud/dedicated/getting-started-with-dedicated-server#auf-dem-server-einloggen).
+Weitere Informationen finden Sie in [dieser Anleitung](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server#auf-dem-server-einloggen).
 
 #### Schritt 2: Netzwerkkonfigurationsdatei Ihres Servers öffnen
 
@@ -322,7 +322,7 @@ rtt min/avg/max/mdev = 4.075/4.079/4.083/0.045 ms
 
 #### Schritt 1: RDP für die Verbindung mit Ihrem Server verwenden
 
-Weitere Informationen finden Sie in [dieser Anleitung](/pages/cloud/dedicated/getting-started-with-dedicated-server#auf-dem-server-einloggen).
+Weitere Informationen finden Sie in [dieser Anleitung](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server#auf-dem-server-einloggen).
 
 #### Schritt 2: Netzwerkkonfiguration Ihres Servers öffnen
 

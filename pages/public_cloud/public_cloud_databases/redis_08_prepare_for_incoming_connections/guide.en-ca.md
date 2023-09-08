@@ -49,7 +49,7 @@ Once created or updated, the user has to be ready and with the "Enabled" status 
 >
 > Follow the [Commands Official Documentation](https://redis.io/commands/) to learn more.
 >
-> Follow this [guide](/pages/platform/databases/redis_01_capabilities#users-and-roles) to learn more about users and roles capabilities and limitations.
+> Follow this [guide](/pages/public_cloud/public_cloud_databases/redis_01_capabilities#users-and-roles) to learn more about users and roles capabilities and limitations.
 >
 
 #### Step 2: Authorise incoming connections from the Redis client

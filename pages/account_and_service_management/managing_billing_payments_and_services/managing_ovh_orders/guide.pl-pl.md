@@ -95,7 +95,7 @@ Opcję skorzystania z prawa do odstąpienia od umowy znajdziesz w dalszym ciągu
 > Prawo do wycofania dotyczy wyłącznie osób fizycznych i ma zastosowanie jedynie do nowych zamówień. Nie można więc twierdzić, że:
 >
 > - w przypadku odnowienia;
-> - jeśli Twoje konto klienta OVHcloud jest [innego typu niż](/pages/account/customer/all_about_username#zmien-typ-konta) OVHcloud.
+> - jeśli Twoje konto klienta OVHcloud jest [innego typu niż](/pages/account_and_service_management/account_information/all_about_username#zmien-typ-konta) OVHcloud.
 >
 > Ponadto prawo do odstąpienia od umowy nie ma zastosowania do zamówień nieopłaconych, ponieważ zamówienia są automatycznie anulowane po wygaśnięciu zamówienia.
 >

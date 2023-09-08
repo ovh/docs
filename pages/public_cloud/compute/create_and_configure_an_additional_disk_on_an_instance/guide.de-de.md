@@ -66,7 +66,7 @@ Die folgenden Beispiele setzen voraus, dass Sie als Benutzer mit erhöhten Recht
 
 #### Unter Linux
 
-Stellen Sie eine [SSH-Verbindung](/pages/platform/public-cloud/public-cloud-first-steps#connect-to-instance) zur Instanz her und verwenden Sie den folgenden Befehl, um die eingehängten Disks aufzulisten.
+Stellen Sie eine [SSH-Verbindung](/pages/public_cloud/compute/public-cloud-first-steps#connect-to-instance) zur Instanz her und verwenden Sie den folgenden Befehl, um die eingehängten Disks aufzulisten.
 
 ```bash
 ~$ admin@server-1:~$ lsblk
@@ -317,7 +317,7 @@ Wenn Sie ein Volume von Ihrer Instanz trennen möchten, ist die beste Vorgehensw
 
 #### Unter Linux <a name="linux"></a>
 
-Stellen Sie eine [SSH-Verbindung](/pages/platform/public-cloud/public-cloud-first-steps#connect-to-instance) zur Instanz her und verwenden Sie den folgenden Befehl, um die eingehängten Disks aufzulisten.
+Stellen Sie eine [SSH-Verbindung](/pages/public_cloud/compute/public-cloud-first-steps#connect-to-instance) zur Instanz her und verwenden Sie den folgenden Befehl, um die eingehängten Disks aufzulisten.
 
 ```bash
 ~$ admin@server-1.~$ lsblk

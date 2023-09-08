@@ -53,7 +53,7 @@ Klicken Sie im Menü `Dedicated Server`{.action} auf den Server Ihrer Wahl, um a
 **Dienststatus**
 
 - Status: Klicken Sie auf `...`{.action} neben dieser Option, um Ihren Server neu zu starten oder zu löschen.
-- Monitoring: Klicken Sie auf `Konfigurieren`{.action}, um die [Monitoring-Einstellungen Ihres Servers zu ändern](/pages/cloud/dedicated/getting-started-with-dedicated-server#monitoring-server).
+- Monitoring: Klicken Sie auf `Konfigurieren`{.action}, um die [Monitoring-Einstellungen Ihres Servers zu ändern](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server#monitoring-server).
 
 **Network**
 

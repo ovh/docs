@@ -95,7 +95,7 @@ Troverai tutte le modalità di applicazione del diritto di recesso nel prosieguo
 > Il diritto di recesso riguarda soltanto i privati e si applica solo ai nuovi ordini. Non è quindi applicabile nei seguenti casi:
 >
 > - rinnovi;
-> - se il tuo account cliente OVHcloud è di [tipo diverso da Privato](/pages/account/customer/all_about_username#modifica-il-tipo-di-account).
+> - se il tuo account cliente OVHcloud è di [tipo diverso da Privato](/pages/account_and_service_management/account_information/all_about_username#modifica-il-tipo-di-account).
 >
 > Inoltre, il diritto di recesso non si applica agli ordini non pagati, in quanto questi vengono automaticamente annullati quando scade il buono d'ordine.
 >

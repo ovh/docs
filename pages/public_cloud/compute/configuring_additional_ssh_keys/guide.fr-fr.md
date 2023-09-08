@@ -29,7 +29,7 @@ Pour créer une nouvelle clé SSH, consultez le [guide des premières étapes av
 
 ### Configuration du nouvel utilisateur
 
-[Connectez-vous à votre instance en SSH](/pages/platform/public-cloud/public-cloud-first-steps#etape-4-connexion-a-votre-instance) et créez un nouvel utilisateur à l'aide de commande ci-dessous :
+[Connectez-vous à votre instance en SSH](/pages/public_cloud/compute/public-cloud-first-steps#etape-4-connexion-a-votre-instance) et créez un nouvel utilisateur à l'aide de commande ci-dessous :
 
 ```bash
 ~$ sudo adduser user2

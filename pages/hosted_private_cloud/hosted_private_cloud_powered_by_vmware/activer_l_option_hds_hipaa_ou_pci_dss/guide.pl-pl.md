@@ -35,7 +35,7 @@ Jeśli pożądana opcja nie jest aktywna, włącz ją, klikając przycisk `...`{
 
 Zalecamy posiadanie co najmniej dwóch uprawnionych adresów IP, aby zawsze móc się połączyć. Z oczywistych względów związanych z dostępnością, muszą one być stałe, a nie dynamiczne.
 
-- **Dane użytkownika „admin” są kompletne, a on sam ma dysponuje niezbędnym uprawnieniem**\: w karcie „Użytkownicy”  upewnij się, że w przypadku użytkownika „admin” podano numer telefonu i adres e-mail, a dodatkowo posiada on uprawnienie „**token validator**”. W razie potrzeby można dostosować właściwości użytkownika – wystarczy kliknąć przycisk `...`{.action}, a następnie `Edytuj`{.action}. Nasza dokumentacja „[Prezentacja panelu klienta Private Cloud OVH](/pages/cloud/private-cloud/manager_ovh_private_cloud#uzytkownicy)” zawiera więcej informacji na ten temat.
+- **Dane użytkownika „admin” są kompletne, a on sam ma dysponuje niezbędnym uprawnieniem**\: w karcie „Użytkownicy”  upewnij się, że w przypadku użytkownika „admin” podano numer telefonu i adres e-mail, a dodatkowo posiada on uprawnienie „**token validator**”. W razie potrzeby można dostosować właściwości użytkownika – wystarczy kliknąć przycisk `...`{.action}, a następnie `Edytuj`{.action}. Nasza dokumentacja „[Prezentacja panelu klienta Private Cloud OVH](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/manager_ovh_private_cloud#uzytkownicy)” zawiera więcej informacji na ten temat.
 
 Zalecamy posiadanie co najmniej dwóch kont użytkownika z wymaganymi danymi i uprawnieniami (z różnymi adresami e-mail i numerami telefonu), aby zawsze móc połączyć się z vCenter.
 

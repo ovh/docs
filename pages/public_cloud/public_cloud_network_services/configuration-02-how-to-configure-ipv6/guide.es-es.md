@@ -20,7 +20,7 @@ Por defecto solo está configurada la IPv4.
 
 > [!primary]
 > 
-> Actualmente las opciones Floating IP y Gateway no permiten la IPv6. La IPv6 solo puede utilizarse con las instancias en [modo público](/pages/platform/network-services/concepts-01-public-cloud-networking-concepts#publicmode).
+> Actualmente las opciones Floating IP y Gateway no permiten la IPv6. La IPv6 solo puede utilizarse con las instancias en [modo público](/pages/public_cloud/public_cloud_network_services/concepts-01-public-cloud-networking-concepts#publicmode).
 >
 
 ## Requisitos

@@ -410,7 +410,7 @@ For OVHcloud and the purpose of the tutorial, it makes sense to rely on the `S3`
 
 OVHcloud provides two types of S3 compatible Object Storage solutions:
 
-- To create Target for the `OVHcloud Object Storage using S3 Swift API`, use [this link](/pages/cloud/storage/object_storage/pcs_create_container#creating-an-object-storage-container-from-the-ovhcloud-control-panel).
+- To create Target for the `OVHcloud Object Storage using S3 Swift API`, use [this link](/pages/storage_and_backup/object_storage/pcs_create_container#creating-an-object-storage-container-from-the-ovhcloud-control-panel).
 - To create Target for the `OVHcloud Object Storage using High Performance`, use [this link](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage)
 
 Create an S3 user in the tab next to Object Storage Container. Now, from `Users and Roles`{.action}, assign the Administrator priviledges to the S3 user.
@@ -419,7 +419,7 @@ Next, create an Access Key and Secret Key to access the S3 Object Storage Contai
  
 > [!primary]
 >
-> If you have created a container with High Performance then follow the [Getting started with S3 High Performance](/pages/cloud/storage/object_storage/s3_getting_started_with_object_storage#using-aws-cli) documentation.
+> If you have created a container with High Performance then follow the [Getting started with S3 High Performance](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage#using-aws-cli) documentation.
 
 Save the Access key and Secret key used in AWS CLI `~/.aws/credentails` file. It is required to create a target `secret` later.
 Take a note of the S3 endpoint URL `s3.endpoint_url`, and the region name `region` provided in the AWS CLI `~/.aws/config` file. It is required to create a `Target` later.
@@ -1098,7 +1098,7 @@ An important aspect to keep in mind is that whenever you destroy an OVHcloud Man
 
 Now, delete the whole OVHcloud Managed Kubernetes Cluster using the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au).
 
-Next, re-create the cluster as described in [Creating a OVHcloud Managed Kubernetes Cluster](/pages/platform/kubernetes-k8s/creating-a-cluster#instructions).
+Next, re-create the cluster as described in [Creating a OVHcloud Managed Kubernetes Cluster](/pages/public_cloud/containers_orchestration/managed_kubernetes/creating-a-cluster#instructions).
 
 To perform the restore operation, you need to install the TVK application as described in [Step 1 - Installing TrilioVault for Kubernetes](#step-1---installing-triliovault-for-kubernetes). Please make sure to use the **same Helm Chart version** - this is important!
 

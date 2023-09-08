@@ -58,7 +58,7 @@ Na nowej stronie, która się wyświetla pojawi zmieniona wersja opcji [tworzeni
 
 - **Zmień nazwę**: możesz nadać instancji nazwę, aby ułatwić jej identyfikację.
 - **Zmień obraz**: możesz wybrać inny system operacyjny dla instancji (pamiętaj, że reinstalacja instancji spowoduje usunięcie wszystkich zawartych w niej danych).
-- **Zmień model**: możesz zmienić model instancji. Więcej informacji na temat opcji znajdziesz w [tym przewodniku](/pages/platform/public-cloud/public-cloud-first-steps#krok-3-tworzenie-instancji).
+- **Zmień model**: możesz zmienić model instancji. Więcej informacji na temat opcji znajdziesz w [tym przewodniku](/pages/public_cloud/compute/public-cloud-first-steps#krok-3-tworzenie-instancji).
 - **Zmień okres fakturowania**: możesz zmienić okres fakturowania instancji z godzinowego na miesięczny. Więcej informacji znajdziesz w [tym przewodniku](/pages/account_and_service_management/managing_billing_payments_and_services/changing_hourly_monthly_billing).
 
 #### Utwórz kopię zapasową instancji
@@ -71,13 +71,13 @@ Aby uzyskać więcej informacji, zapoznaj się z przewodnikiem "[Tworzenie kopii
 
 Kliknij `Utwórz automatyczną`{.action} kopię zapasową.
 
-Aby uzyskać więcej informacji, zapoznaj się z przewodnikiem "[Tworzenie kopii zapasowej instancji](/pages/platform/public-cloud/save_an_instance#tworzenie-zautomatyzowanych-kopii-zapasowych-instancji)".
+Aby uzyskać więcej informacji, zapoznaj się z przewodnikiem "[Tworzenie kopii zapasowej instancji](/pages/public_cloud/compute/save_an_instance#tworzenie-zautomatyzowanych-kopii-zapasowych-instancji)".
 
 #### Zawieś instancję
 
 Kliknij przycisk `Zatrzymaj`{.action}.
 
-Działanie to spowoduje zawieszenie instancji. Więcej informacji znajdziesz w przewodniku "[Wstrzymanie lub uśpienie instancji](/pages/platform/public-cloud/suspend_or_pause_an_instance#zatrzymaj-suspend-instancje)".
+Działanie to spowoduje zawieszenie instancji. Więcej informacji znajdziesz w przewodniku "[Wstrzymanie lub uśpienie instancji](/pages/public_cloud/compute/suspend_or_pause_an_instance#zatrzymaj-suspend-instancje)".
 
 Kliknij `Uruchom`{.action}, aby ponownie włączyć instancję.
 
@@ -102,7 +102,7 @@ Potwierdź zlecenie restartu w oknie, które się wyświetli.
 
 Kliknij `Zawieś`{.action}.
 
-Wówczas instancja stanie się "*shelved*" wyświetlanym tutaj jako `Suspended`. Zapoznaj się z przewodnikiem "[Wstrzymanie lub uśpienie instancji](/pages/platform/public-cloud/suspend_or_pause_an_instance#zawies-shelve-instancje)", aby uzyskać więcej informacji na temat różnych stanów zawieszenia instancji.
+Wówczas instancja stanie się "*shelved*" wyświetlanym tutaj jako `Suspended`. Zapoznaj się z przewodnikiem "[Wstrzymanie lub uśpienie instancji](/pages/public_cloud/compute/suspend_or_pause_an_instance#zawies-shelve-instancje)", aby uzyskać więcej informacji na temat różnych stanów zawieszenia instancji.
 
 Kliknij `Reaktywuj`{.action}, aby przywrócić stan `Włączony` instancji.
 
@@ -132,7 +132,7 @@ Następnie kliknij kartę `Konsola VNC`{.action}.
 
 Konsola VNC zapewnia bezpośredni dostęp do Twojej instancji. Aby dostęp ten działał, najpierw skonfiguruj nazwę użytkownika i hasło dla instancji. 
 
-Aby uzyskać więcej informacji, zapoznaj się z naszym przewodnikiem "[Tworzenie pierwszej instancji Public Cloud i łączenie się z nią](/pages/platform/public-cloud/public-cloud-first-steps#connect-to-instance)".
+Aby uzyskać więcej informacji, zapoznaj się z naszym przewodnikiem "[Tworzenie pierwszej instancji Public Cloud i łączenie się z nią](/pages/public_cloud/compute/public-cloud-first-steps#connect-to-instance)".
 
 ## Sprawdź również
 

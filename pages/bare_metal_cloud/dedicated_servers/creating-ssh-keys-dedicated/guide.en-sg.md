@@ -297,7 +297,7 @@ You can then connect to the VPS with the alias name you have defined as `Host`:
 ssh ubuntu@vps
 ```
 
-Only the server IP and the key file were specified in the previous example but more details can be added. To configure an SSH connection to a second server with the username "rocky", the [modified SSH port](/pages/cloud/vps/secure_your_vps#changesshport) "49160" and the private key in the file "myserver_rsa", extend the file content as shown in this example:
+Only the server IP and the key file were specified in the previous example but more details can be added. To configure an SSH connection to a second server with the username "rocky", the [modified SSH port](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps#changesshport) "49160" and the private key in the file "myserver_rsa", extend the file content as shown in this example:
 
 ```console
 Host vps

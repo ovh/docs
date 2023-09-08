@@ -33,7 +33,7 @@ Sie können sich jedoch weiterhin über den [OVHcloud Rescue-Modus](/pages/bare_
 
 Um auf Ihren Server im Rescue-Modus zuzugreifen, muss zuerst der aktuell genutzte SSH-Schlüssel deaktiviert werden.
 
-Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und gehen Sie zum Bereich `SSH-Schlüssel`{.action}. Folgen hierzu Sie bei Bedarf unserer Anleitung zu [SSH-Schlüsseln](/pages/cloud/dedicated/creating-ssh-keys-dedicated#cpsshkey).
+Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und gehen Sie zum Bereich `SSH-Schlüssel`{.action}. Folgen hierzu Sie bei Bedarf unserer Anleitung zu [SSH-Schlüsseln](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated#cpsshkey).
 
 Da der im Kundencenter hinterlegte öffentliche Schlüssel ohne den zugehörigen privaten Schlüssel nutzlos ist, können Sie diesen einfach entfernen. Klicken Sie auf den Button <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> in der Zeile des Schlüssels und wählen Sie `Schlüssel löschen`{.action}.
 

@@ -53,7 +53,7 @@ Geben Sie dann die angeforderten Informationen ein. Falls Sie beim Ausfüllen de
 
 > [!warning] 
 >
-> Obwohl das Feld "Key Pair" bei der Erstellung einer Instanz im Horizon-Interface nicht obligatorisch ist, ist die Speicherung eines SSH-Schlüssels notwendig, um sich mit einer Instanz verbinden zu können. Ohne SSH-Schlüssel müssen Sie die Instanz im Rescue-Modus neu starten, um ein Passwort zu erstellen oder einen SSH-Schlüssel in der entsprechenden Datei hinzuzufügen (Für weitere Informationen lesen Sie die Anleitung [Änderung des SSH-Schlüssels bei Verlust](/pages/platform/public-cloud/replacing_lost_ssh_key#in-der-praktischen-anwendung)).
+> Obwohl das Feld "Key Pair" bei der Erstellung einer Instanz im Horizon-Interface nicht obligatorisch ist, ist die Speicherung eines SSH-Schlüssels notwendig, um sich mit einer Instanz verbinden zu können. Ohne SSH-Schlüssel müssen Sie die Instanz im Rescue-Modus neu starten, um ein Passwort zu erstellen oder einen SSH-Schlüssel in der entsprechenden Datei hinzuzufügen (Für weitere Informationen lesen Sie die Anleitung [Änderung des SSH-Schlüssels bei Verlust](/pages/public_cloud/compute/replacing_lost_ssh_key#in-der-praktischen-anwendung)).
 >
 
 Um die gewünschten Instanzen zu starten, klicken Sie auf den Button `Launch Instance`{.action}.

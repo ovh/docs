@@ -51,7 +51,7 @@ Si tiene varios servidores, el botón `Todos mis servidores`{.action} le permite
 **Estado de los servicios**
 
 - Estado: haga clic en los `...`{.action} junto a esta esta opción para reiniciar o eliminar su servidor.
-- Monitorización: haga clic en `Configurar`{.action} para cambiar la [configuración de supervisión de su servidor](/pages/cloud/dedicated/getting-started-with-dedicated-server#monitoring-server).
+- Monitorización: haga clic en `Configurar`{.action} para cambiar la [configuración de supervisión de su servidor](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server#monitoring-server).
 
 **Red**
 
