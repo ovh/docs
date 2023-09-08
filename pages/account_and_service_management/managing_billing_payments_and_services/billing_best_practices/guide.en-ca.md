@@ -21,7 +21,7 @@ This guide contains the essential elements for managing your account and the bil
 
 #### Account security
 
-[Create a strong password](/pages/account/customer/manage-ovh-password#generate-a-strong-password) which will ensure your OVHcloud account's privacy.
+[Create a strong password](/pages/account_and_service_management/account_information/manage-ovh-password#generate-a-strong-password) which will ensure your OVHcloud account's privacy.
 
 [Enable two factor authentification](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa) to prevent any fraudulent access.
 

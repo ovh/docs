@@ -33,7 +33,7 @@ Um unbefugte Transferanfragen zu verhindern, sind Domainnamen in der Regel vom R
 
 > [!primary]
 >
-> Wenn Sie der **Inhaber** des Domainnamens sind, dessen Verwaltung Ihnen im OVHcloud Kundencenter jedoch nicht möglich ist, weder über Ihren eigenen Zugang noch den Administrator-Kontakt des Domainnamens, konsultieren Sie [diese Anleitung](/pages/account/customer/managing_contacts#sonderfall-bei-domaininhabern), bevor Sie fortfahren.
+> Wenn Sie der **Inhaber** des Domainnamens sind, dessen Verwaltung Ihnen im OVHcloud Kundencenter jedoch nicht möglich ist, weder über Ihren eigenen Zugang noch den Administrator-Kontakt des Domainnamens, konsultieren Sie [diese Anleitung](/pages/account_and_service_management/account_information/managing_contacts#sonderfall-bei-domaininhabern), bevor Sie fortfahren.
 >
 
 ## In der praktischen Anwendung

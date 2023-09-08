@@ -80,7 +80,7 @@ Der einzige Unterschied besteht in der Autonomie des Benutzers, Token zu validie
 
 Es ist möglich, mehrere Drittanwendungen zu verwenden, die Zugriff auf vCenter benötigen.
 
-Diese Anwendungen müssen zuerst über die vCenter-Zugangseinstellungen, die Sie über Ihr [Kundencenter](/pages/cloud/private-cloud/manager_ovh_private_cloud#sicherheit) festlegen, autorisiert werden.
+Diese Anwendungen müssen zuerst über die vCenter-Zugangseinstellungen, die Sie über Ihr [Kundencenter](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/manager_ovh_private_cloud#sicherheit) festlegen, autorisiert werden.
 
 Daraufhin können die Anwendungen auf unsere Infrastrukturen zugreifen; das heißt allerdings nicht, dass sie zwangsweise auch die Zwei-Faktor-Authentifizierung verarbeiten.
 

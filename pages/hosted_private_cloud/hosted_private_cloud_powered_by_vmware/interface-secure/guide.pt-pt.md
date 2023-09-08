@@ -48,7 +48,7 @@ Esta mensagem inclui:
 - o nome da operação que requer uma validação
 - o ID da operação
 - o token de validação
-- uma ligação que permite validar a operação (atenção: se o seu telefone não estiver ligado a uma rede cujo [o endereço IP](/pages/cloud/private-cloud/manager_ovh_private_cloud#seguranca) não foi autorizado, a página não aparecerá).
+- uma ligação que permite validar a operação (atenção: se o seu telefone não estiver ligado a uma rede cujo [o endereço IP](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/manager_ovh_private_cloud#seguranca) não foi autorizado, a página não aparecerá).
 
 Para validar a operação, ligue-se através da ligação apresentada na mensagem. A seguir, consulte a secção `Operation Validation`{.action}.
 

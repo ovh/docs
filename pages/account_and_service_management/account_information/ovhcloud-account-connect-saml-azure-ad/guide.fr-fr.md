@@ -239,7 +239,7 @@ Le groupe créé doit apparaître sur la liste.
 
 ### Connexion via SSO
 
-Sur [la page de connexion OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), renseignez votre [identifiant](/pages/account/customer/ovhcloud-account-creation#quel-est-mon-identifiant-client) client suivi de **/idp** sans mot de passe puis cliquez sur le bouton `Login`{.action} .
+Sur [la page de connexion OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), renseignez votre [identifiant](/pages/account_and_service_management/account_information/ovhcloud-account-creation#quel-est-mon-identifiant-client) client suivi de **/idp** sans mot de passe puis cliquez sur le bouton `Login`{.action} .
 
 ![Ovhcloud SSO Login step 1](images/ovhcloud_sso_login_1.png){.thumbnail}
 
@@ -255,7 +255,7 @@ Entrez le mot de passe de l'utilisateur de l'application Azure AD puis cliquez s
 
 ![Azure AD Login étape 3](images/azure_ad_login_3.png){.thumbnail}
 
-Vous êtes maintenant connecté avec le même [nichandle](/pages/account/customer/ovhcloud-account-creation#quel-est-mon-identifiant-client), mais via votre utilisateur Active Directory et en utilisant votre SSO d'application Azure AD.
+Vous êtes maintenant connecté avec le même [nichandle](/pages/account_and_service_management/account_information/ovhcloud-account-creation#quel-est-mon-identifiant-client), mais via votre utilisateur Active Directory et en utilisant votre SSO d'application Azure AD.
 
 ![Ovhcloud SSO Login step 2](images/ovhcloud_sso_login_2.png){.thumbnail}
 

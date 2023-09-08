@@ -147,7 +147,7 @@ Wenn Sie diese bewährten Verfahren anwenden, können Sie Ihre Website stets zu 
 ## Weiterführende Informationen <a name="go-further"></a>
 
 - [Offizielle Website von WordPress](https://wordpress.org){.external}
-- [Mehr Informationen zu den Sicherungen Ihres Webhostings](/pages/web/hosting/hosting_technical_specificities#informationen-zu-den-automatischen-backups)
+- [Mehr Informationen zu den Sicherungen Ihres Webhostings](/pages/web_cloud/web_hosting/hosting_technical_specificities#informationen-zu-den-automatischen-backups)
 
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
 

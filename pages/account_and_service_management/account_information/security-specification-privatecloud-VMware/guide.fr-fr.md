@@ -88,7 +88,7 @@ Le client bénéficiant d'une infrastructure Hosted Private Cloud a la possibili
 
 ### 7.1 - Control Plane
 
-A travers votre espace client OVHcloud, vous avez la possibilité de gérer le service à l'aide de [trois contacts types](/pages/account/customer/managing_contacts#definition).
+A travers votre espace client OVHcloud, vous avez la possibilité de gérer le service à l'aide de [trois contacts types](/pages/account_and_service_management/account_information/managing_contacts#definition).
 
 Afin de référencer chaque client ayant souscrit à un ou plusieurs services, OVHcloud utilise un compte propriétaire avec un *NIC* interne. 
 

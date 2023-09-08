@@ -36,7 +36,7 @@ On [this webpage](https://www.ovh.ie/sms/prices/), you can view the price in cre
 >
 > An SMS message can only contain a limited number of characters, depending on its encoding. The details on encoding and valid characters is available in the following guide:
 > 
-> [Sending SMS messages via the OVHcloud Control Panel](/pages/telecom/sms/envoyer_des_sms_depuis_mon_espace_client#step-2-compose-your-sms-message)
+> [Sending SMS messages via the OVHcloud Control Panel](/pages/web_cloud/messaging/sms/envoyer_des_sms_depuis_mon_espace_client#step-2-compose-your-sms-message)
 >
 
 ### Automatic re-credit

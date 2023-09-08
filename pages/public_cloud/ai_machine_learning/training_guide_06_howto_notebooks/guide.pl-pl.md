@@ -18,7 +18,7 @@ This guide covers the process of starting a simple interactive notebook leveragi
 
 ### Step 1 - Begin as classic job submission
 
-Follow the same steps as a classic job submission described [here](/pages/public_cloud/ai_machine_learning/training_guide_02_howto_submit_job) until you reach the [Step 5 - Providing a Docker image](/pages/platform/ai/training_guide_02_howto_submit_job#step-5-providing-a-docker-image).
+Follow the same steps as a classic job submission described [here](/pages/public_cloud/ai_machine_learning/training_guide_02_howto_submit_job) until you reach the [Step 5 - Providing a Docker image](/pages/public_cloud/ai_machine_learning/training_guide_02_howto_submit_job#step-5-providing-a-docker-image).
 
 ### Step 2 - Select the notebook corresponding to your needs
 
@@ -42,7 +42,7 @@ Once your image is chosen, click `Next`{.action}.
 
 ### Step 3 - Continue as a classic job submission
 
-Continue to follow the same steps as a classic job submission described [here](/pages/public_cloud/ai_machine_learning/training_guide_02_howto_submit_job) until you reach the [Step 10 - Consulting your job](/pages/platform/ai/training_guide_02_howto_submit_job#step-10-consulting-your-job).
+Continue to follow the same steps as a classic job submission described [here](/pages/public_cloud/ai_machine_learning/training_guide_02_howto_submit_job) until you reach the [Step 10 - Consulting your job](/pages/public_cloud/ai_machine_learning/training_guide_02_howto_submit_job#step-10-consulting-your-job).
 
 > [!warning]
 > If you want to be able to save your notebook files on your object storage we strongly advise to plug a **read** and **write** volume on your job before submitting. That volume will be synchronized with your object storage at the end of the job.

@@ -116,7 +116,7 @@ If you are unable to perform these checks, contact the hosting provider for your
 > Any changes you make to your DNS zone can take between 4 and 24 hours to propagate.
 >
 
-- Get [the information you need to log in to your Web Hosting plan’s FTP space](/pages/web/hosting/ftp_connection#step-1-retrieve-your-login-information).
+- Get [the information you need to log in to your Web Hosting plan’s FTP space](/pages/web_cloud/web_hosting/ftp_connection#step-1-retrieve-your-login-information).
 - Retrieve access to your Web Hosting plan’s database if it already exists, or create one using our [documentation](/pages/web_cloud/web_hosting/sql_create_database).
 
 #### 1.3 Install the free FTP client FileZilla
@@ -129,7 +129,7 @@ CMSs need a database to work. Our [Web Hosting](https://www.ovhcloud.com/en-ie/w
 
 Use our documentation to [create a database from your web hosting plan](/pages/web_cloud/web_hosting/sql_create_database).
 
-If you have a Cloud Databases web hosting plan in MySQL or MariaDB and you would like to use it to manually install your CMS, please refer to our guide on [creating a database on a Cloud Databases web service](/pages/web/clouddb/create-db-and-user-on-db-server#creating-a-database).
+If you have a Cloud Databases web hosting plan in MySQL or MariaDB and you would like to use it to manually install your CMS, please refer to our guide on [creating a database on a Cloud Databases web service](/pages/web_cloud/web_cloud_databases/create-db-and-user-on-db-server#creating-a-database).
 
 Once you have created the database, retrieve the connection settings (server, database name, user name, and password) and save them for [step 3](#step3) in this guide.
 
@@ -137,11 +137,11 @@ Once you have created the database, retrieve the connection settings (server, da
 >
 > If you would like to install your CMS with an existing database, you can retrieve the connection settings for your database directly from the website files linked to it.
 >
-> If this is also the same CMS you need to install, you can use [this guide](/pages/web/hosting/sql_change_password#step-3-change-the-password-for-your-websites-database-in-its-configuration-file) to identify the configuration files in your [FTP storage space](/pages/web_cloud/web_hosting/ftp_connection).
+> If this is also the same CMS you need to install, you can use [this guide](/pages/web_cloud/web_hosting/sql_change_password#step-3-change-the-password-for-your-websites-database-in-its-configuration-file) to identify the configuration files in your [FTP storage space](/pages/web_cloud/web_hosting/ftp_connection).
 >
 > Then log in to your database to list the prefixes of the tables already inside. This is to avoid choosing a table "prefix" already used by another of your sites.
 >
-> - To connect to your database linked to your Web Hosting plan, see [this guide](/pages/web/hosting/sql_create_database#accessing-the-phpmyadmin-interface).
+> - To connect to your database linked to your Web Hosting plan, see [this guide](/pages/web_cloud/web_hosting/sql_create_database#accessing-the-phpmyadmin-interface).
 > - To connect to a database on a Web Cloud Databases solution, see [this guide](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server).
 >
 

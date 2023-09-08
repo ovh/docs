@@ -31,7 +31,7 @@ Continue reading if you wish to edit the .ovhconfig file manually.
 
 #### Step 1: Log in to your storage space.
 
-Get your main FTP username, its password and the FTP server address. Once you have all these elements, log in to your storage space. If you are unsure how to do this, refer to the following guide: [Log in to your storage space](/pages/web/hosting/hosting_how_to_get_my_website_online#2-log-in-to-your-storage-space){.external}.
+Get your main FTP username, its password and the FTP server address. Once you have all these elements, log in to your storage space. If you are unsure how to do this, refer to the following guide: [Log in to your storage space](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online#2-log-in-to-your-storage-space){.external}.
 
 **If you no longer have that information**, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, then click on `Hosting plans`{.action}. Select the name of the hosting plan concerned,and click on the `FTP - SSH`{.action} tab. There you will find the information you need to log in. With regards to the FTP user password, please refer to the instructions set out in our guide to [Modifying a FTP user password](/pages/web_cloud/web_hosting/ftp_change_password){.external}, if necessary.
 
@@ -70,7 +70,7 @@ Customise the values of the variables according to the configuration you wish to
 |app.engine.version|Allows you to define the PHP version used by the hosting plan from [the ones proposed by OVHcloud](https://www.ovhcloud.com/en-gb/web-hosting/uc-programming-language/){.external}. Enter the version of your choice.|
 |http.firewall|Allows you to enable or disable the  [firewall supplied with all OVHcloud Web Hosting plans](https://www.ovhcloud.com/en-gb/web-hosting/options/){.external}. Enter “security” to enable it or “none” to disable it.|
 |environment|Allows you to manage cache behaviour for the static files of your website, as well as PHP error processing. Enter “production” to maximise caching and hide PHP errors or “development”, so that no cache is applied and PHP error are displayed.|
-|container.image|Allows you to modify the runtime environment used by the hosting plan. Enter the search engine of your choice. You can find them here: [View the configurations available](/pages/web/hosting/ovhconfig_modify_system_runtime#view-the-configurations-available){.external}.|
+|container.image|Allows you to modify the runtime environment used by the hosting plan. Enter the search engine of your choice. You can find them here: [View the configurations available](/pages/web_cloud/web_hosting/ovhconfig_modify_system_runtime#view-the-configurations-available){.external}.|
 
 > [!warning]
 >
@@ -147,7 +147,7 @@ Once the .ovhconfig file has been edited, all you have to do is download it to y
 
 If you host several websites on your hosting space, you have almost certainly configured a few Multisites. There are a number of reasons why you might decide to use a different PHP version on some of your Multisites.
 
-To do this, you must create an .ovhconfig file for the Multisite(s), containing the desired PHP version. You can refer to the instructions set out in the [Editing the .ovhconfig file](/pages/web/hosting/ovhconfig_configuration#editing-the-ovhconfig-file){.external} section of this guide, if necessary. When you download the .ovhconfig file to your storage space, be sure to do so inside the Multisite's root folder. You can access the root folders through the OVHcloud Control Panel, under the`Multisite`{.action} tab of the relevant hosting plan.
+To do this, you must create an .ovhconfig file for the Multisite(s), containing the desired PHP version. You can refer to the instructions set out in the [Editing the .ovhconfig file](/pages/web_cloud/web_hosting/ovhconfig_configuration#editing-the-ovhconfig-file){.external} section of this guide, if necessary. When you download the .ovhconfig file to your storage space, be sure to do so inside the Multisite's root folder. You can access the root folders through the OVHcloud Control Panel, under the`Multisite`{.action} tab of the relevant hosting plan.
 
 > [!warning]
 >

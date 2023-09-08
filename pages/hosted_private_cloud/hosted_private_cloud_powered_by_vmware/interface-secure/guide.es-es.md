@@ -19,7 +19,7 @@ La interfaz segura puede utilizarse para confirmar operaciones sensibles (como c
 
 Los usuarios que disponen del permiso «**token validator**» son los únicos que pueden confirmar las operaciones sensibles desde la interfaz segura. El administrador ya tiene este permiso (imprescindible para activar la opción **Seguridad avanzada**), 
 
-Es posible asignárselo también a otros usuarios desde el área de cliente de OVHcloud. Para ello, consulte la guía [Presentación del área de cliente del Private Cloud de OVHcloud](/pages/cloud/private-cloud/manager_ovh_private_cloud#usuarios).
+Es posible asignárselo también a otros usuarios desde el área de cliente de OVHcloud. Para ello, consulte la guía [Presentación del área de cliente del Private Cloud de OVHcloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/manager_ovh_private_cloud#usuarios).
 
 Desde la interfaz segura puede realizar tres operaciones. Consulte la sección correspondiente a cada tarea en esta guía:
 
@@ -48,7 +48,7 @@ Este mensaje contiene:
 - El nombre de la operación que requiere confirmación
 - El ID de la operación
 - El token de confirmación
-- Una URL que le permitirá confirmar la operación (atención: si su teléfono no está conectado a una red [cuya IP haya sido autorizada](/pages/cloud/private-cloud/manager_ovh_private_cloud#seguridad), la página no se cargará).
+- Una URL que le permitirá confirmar la operación (atención: si su teléfono no está conectado a una red [cuya IP haya sido autorizada](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/manager_ovh_private_cloud#seguridad), la página no se cargará).
 
 Para confirmar la operación, conéctese a la URL que se indica en el mensaje recibido. A continuación, acceda a la sección `Operation calidation`{.action}
 

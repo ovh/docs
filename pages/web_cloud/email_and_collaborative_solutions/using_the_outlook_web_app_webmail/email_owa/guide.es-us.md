@@ -194,7 +194,7 @@ En la barra de la izquierda de la página nueva, haga clic en `Firma de correo e
 
 Introduzca su firma electrónica en el cuadro de edición. Puede especificar si quiere incluir la firma por defecto solo en los correos nuevos o también en respuestas o correos reenviados. Una vez haya terminado, haga clic en `Guardar`{.action} para confirmar.
 
-Para obtener instrucciones sobre la creación de firmas automáticas mediante el uso de plantillas para todos los dominios, consulte nuestra guía: [Creación de firmas automáticas]/pages/web/microsoft-collaborative-solutions/feature_footers).
+Para obtener instrucciones sobre la creación de firmas automáticas mediante el uso de plantillas para todos los dominios, consulte nuestra guía: [Creación de firmas automáticas]/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_footers).
 
 ### Acceder a la sección de opciones
 

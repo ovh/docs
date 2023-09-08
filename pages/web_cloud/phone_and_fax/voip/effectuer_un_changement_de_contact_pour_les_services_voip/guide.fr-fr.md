@@ -71,7 +71,7 @@ Un e-mail va être envoyé aux deux contacts impliqués dans ce processus de mod
 
 > [!primary]
 >
-> Cette étape est identique à celle décrite dans le [guide de changement de contacts](/pages/account/customer/managing_contacts#valider-refuser-ou-suivre-un-changement-de-contact) pour tous les services OVHcloud.
+> Cette étape est identique à celle décrite dans le [guide de changement de contacts](/pages/account_and_service_management/account_information/managing_contacts#valider-refuser-ou-suivre-un-changement-de-contact) pour tous les services OVHcloud.
 >
 
 Pour suivre et gérer les demandes en cours, cliquez sur le nom rattaché à votre identifiant client dans la barre de menu en haut à droite, puis sur `Mes contacts`{.action} et enfin sur `Mes demandes`{.action}. C’est ici que vous pourrez accepter ou refuser une demande.

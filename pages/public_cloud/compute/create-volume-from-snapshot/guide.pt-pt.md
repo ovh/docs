@@ -63,7 +63,7 @@ O processo de conexão do disco à sua instância vai então começar e pode lev
 Deve evitar a navegação fora do separador em curso durante a conexão do disco. Isto pode interromper o processo.
 >
 
-Uma vez efetuada a associação, pode seguir os passos indicados [em Linux](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance#utilizando-o-linux) ou [em Windows](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance#utilizando-o-windows).
+Uma vez efetuada a associação, pode seguir os passos indicados [em Linux](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance#utilizando-o-linux) ou [em Windows](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance#utilizando-o-windows).
 
 ## Saiba mais
 

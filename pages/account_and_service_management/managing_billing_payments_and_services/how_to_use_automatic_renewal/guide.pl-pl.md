@@ -26,7 +26,7 @@ Odnawianiem i rezygnacją z usług możesz zarządzać w Panelu klienta.
 
 - Dostęp do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl);
 - Posiadanie aktywnych usług OVHcloud;
-- Posiadanie [kontaktu księgowego](/pages/account/customer/managing_contacts#definicja) za usługi OVHcloud.
+- Posiadanie [kontaktu księgowego](/pages/account_and_service_management/account_information/managing_contacts#definicja) za usługi OVHcloud.
 
 ## W praktyce
 
@@ -36,7 +36,7 @@ Możesz również skonfigurować niektóre produkty (Domeny, Hosting, VPS, Serwe
 
 Przejdź do opisu operacji, którą chcesz wykonać:
 
-- [Wyświetl status odnowienia Twoich usług](/pages/account/billing/how_to_use_automatic_renewal#wyswietlenie-statusu-odnowienia-uslug): niniejszy przewodnik pomaga w sprawdzeniu, czy Twoje usługi są odnawiane automatycznie. Możesz również otrzymać datę odnowienia lub wygaśnięcia usługi;
+- [Wyświetl status odnowienia Twoich usług](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#wyswietlenie-statusu-odnowienia-uslug): niniejszy przewodnik pomaga w sprawdzeniu, czy Twoje usługi są odnawiane automatycznie. Możesz również otrzymać datę odnowienia lub wygaśnięcia usługi;
 
 - [Zarządzanie odnawianiem usług](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal): niniejszy przewodnik wyjaśnia, jak włączyć lub wyłączyć automatyczne odnawianie usług, zmienić częstotliwość płatności za usługę oraz zapłacić za odnowienie usługi przed ich terminem;
 

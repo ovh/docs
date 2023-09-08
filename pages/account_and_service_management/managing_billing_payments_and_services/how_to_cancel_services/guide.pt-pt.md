@@ -41,7 +41,7 @@ Isto implica que, antes de qualquer rescisão, deve ter a **certeza**:
 >
 > A rescisão só pode ser aplicada se estiverem preenchidas as seguintes condições:
 >
-> * é o "contacto administrador" do serviço (para mais informações, consulte [este guia](/pages/account/customer/managing_contacts#definicao));
+> * é o "contacto administrador" do serviço (para mais informações, consulte [este guia](/pages/account_and_service_management/account_information/managing_contacts#definicao));
 > * o serviço não está em renovação manual;
 > * o serviço não é suspenso, nomeadamente devido a uma falta de regularização de uma fatura.
 >
@@ -147,7 +147,7 @@ Cada serviço [Public Cloud](https://www.ovhcloud.com/pt/public-cloud/) pode ser
 
 O Public Cloud da OVHcloud baseia-se no princípio do *Pay as you go* (mais pormenores na nossa página de [informações sobre o modo de faturação Public Cloud](/pages/public_cloud/compute/analyze_billing)). No final do mês, apenas paga pelo tempo de utilização efetivo dos recursos.
 
-Também pode [consultar o seu consumo atual](/pages/platform/public-cloud/analyze_billing#consultar-o-consumo-atual) a partir da Área de Cliente OVHcloud e ser alertado por e-mail quando a projeção do seu consumo ultrapassar um determinado limite.
+Também pode [consultar o seu consumo atual](/pages/public_cloud/compute/analyze_billing#consultar-o-consumo-atual) a partir da Área de Cliente OVHcloud e ser alertado por e-mail quando a projeção do seu consumo ultrapassar um determinado limite.
 
 ### Web Cloud <a name="webcloud"></a>
 
@@ -211,23 +211,23 @@ Receberá então um e-mail com o procedimento de encerramento do seu MX Plan, qu
 
 #### E-mail Pro <a name="emailpro"></a>
 
-Para rescindir a sua oferta [E-mail Pro](https://www.ovhcloud.com/pt/emails/email-pro/), siga as instruções deste [guia](/pages/web/emails-pro/manage_billing_emailpro#eliminar-contas).
+Para rescindir a sua oferta [E-mail Pro](https://www.ovhcloud.com/pt/emails/email-pro/), siga as instruções deste [guia](/pages/web_cloud/email_and_collaborative_solutions/email_pro/manage_billing_emailpro#eliminar-contas).
 
 #### Hosted Exchange <a name="hosted"></a>
 
-Para rescindir a sua oferta [Hosted Exchange](https://www.ovhcloud.com/pt/emails/hosted-exchange/), siga as instruções deste [guia](/pages/web/microsoft-collaborative-solutions/manage_billing_exchange#eliminar-contas).
+Para rescindir a sua oferta [Hosted Exchange](https://www.ovhcloud.com/pt/emails/hosted-exchange/), siga as instruções deste [guia](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_billing_exchange#eliminar-contas).
 
 #### Private Exchange <a name="private"></a>
 
-Para rescindir a sua oferta [Private Exchange](https://www.ovhcloud.com/pt/emails/private-exchange/), siga as instruções deste [guia](/pages/web/microsoft-collaborative-solutions/manage_billing_exchange#eliminar-contas).
+Para rescindir a sua oferta [Private Exchange](https://www.ovhcloud.com/pt/emails/private-exchange/), siga as instruções deste [guia](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_billing_exchange#eliminar-contas).
 
 #### Office 365 csp 1 <a name="office-csp1"></a>
 
-Para rescindir a sua oferta [Office 365 csp 1](https://www.ovhcloud.com/pt/collaborative-tools/microsoft-365/), siga as instruções deste [guia](/pages/web/microsoft-collaborative-solutions/office_csp1/#gerir-as-suas-assinaturas).
+Para rescindir a sua oferta [Office 365 csp 1](https://www.ovhcloud.com/pt/collaborative-tools/microsoft-365/), siga as instruções deste [guia](/pages/web_cloud/email_and_collaborative_solutions/microsoft_office/office_csp1/#gerir-as-suas-assinaturas).
 
 #### Office 365 csp 2 <a name="office-csp2"></a>
 
-Para rescindir a sua oferta [Office 365 csp 2](https://www.ovhcloud.com/pt/collaborative-tools/microsoft-365/reseller/), siga as instruções deste [guia](/pages/web/microsoft-collaborative-solutions/office_csp2#gerir-as-suas-subscricoes).
+Para rescindir a sua oferta [Office 365 csp 2](https://www.ovhcloud.com/pt/collaborative-tools/microsoft-365/reseller/), siga as instruções deste [guia](/pages/web_cloud/email_and_collaborative_solutions/microsoft_office/office_csp2#gerir-as-suas-subscricoes).
 
 #### Sharepoint <a name="sharepoint"></a>
 

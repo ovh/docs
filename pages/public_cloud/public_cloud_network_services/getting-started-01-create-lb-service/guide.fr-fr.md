@@ -34,7 +34,7 @@ openstack router add subnet my_router my_subnet
 openstack router set --external-gateway Ext-Net my_router
 ```
 
-Vous pouvez maintenant attacher vos instances à ce nouveau réseau. Nous vous recommandons de suivre la documentation pour [attacher vos instances au vRack](/pages/platform/network-services/getting-started-07-creating-vrack#instance-integration). 
+Vous pouvez maintenant attacher vos instances à ce nouveau réseau. Nous vous recommandons de suivre la documentation pour [attacher vos instances au vRack](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack#instance-integration). 
 
 Prenez note des adresses de vos instances dans votre réseau avec la commande suivante :
 

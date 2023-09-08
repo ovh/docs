@@ -52,7 +52,7 @@ En la pestaña de su navegador que muestra la ventana de estadísticas, consulte
 
 > [!warning] 
 >
-> Si ha activado los logs separados en una [entrada multisitio](/pages/web/hosting/multisites_configure_multisite#2-anadir-un-dominio-o-subdominio), los usuarios creados aquí no pueden acceder a las estadísticas de esta entrada multisitio.
+> Si ha activado los logs separados en una [entrada multisitio](/pages/web_cloud/web_hosting/multisites_configure_multisite#2-anadir-un-dominio-o-subdominio), los usuarios creados aquí no pueden acceder a las estadísticas de esta entrada multisitio.
 >
 
 ### Estadísticas de visitas

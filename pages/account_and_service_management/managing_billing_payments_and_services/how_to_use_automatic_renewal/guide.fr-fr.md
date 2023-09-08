@@ -21,7 +21,7 @@ Vous avez la possibilité d'administrer le renouvellement et la résiliation de 
 
 - Avoir accès à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) ;
 - Posséder des services OVHcloud actifs ;
-- Être [contact facturation](/pages/account/customer/managing_contacts#definition) de vos services OVHcloud.
+- Être [contact facturation](/pages/account_and_service_management/account_information/managing_contacts#definition) de vos services OVHcloud.
 
 ## En pratique
 
@@ -31,9 +31,9 @@ Mais il est également possible de paramétrer certains produits (Domaines, Héb
 
 Nous vous recommandons de lire les guides suivants, ainsi que de vous concentrer sur les opérations que vous souhaitez effectuer :
 
-- [Afficher les statuts de renouvellement de vos services](/pages/account/billing/how_to_use_automatic_renewal#afficher-les-statuts-de-renouvellement-de-vos-services) : ce guide vous aide à vérifier si vos services sont renouvelés automatiquement. Il vous permet également d'obtenir leur date de renouvellement ou d'expiration ;
+- [Afficher les statuts de renouvellement de vos services](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#afficher-les-statuts-de-renouvellement-de-vos-services) : ce guide vous aide à vérifier si vos services sont renouvelés automatiquement. Il vous permet également d'obtenir leur date de renouvellement ou d'expiration ;
 
-- [Gérer le renouvellement de vos services](/pages/account/billing/how_to_use_automatic_renewal#le-renouvellement-chez-ovhcloud) : ce guide vous aide à activer ou désactiver le renouvellement automatique, à modifier la fréquence de paiement d'un service, ainsi qu'à payer les renouvellements avant leur échéance ;
+- [Gérer le renouvellement de vos services](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#le-renouvellement-chez-ovhcloud) : ce guide vous aide à activer ou désactiver le renouvellement automatique, à modifier la fréquence de paiement d'un service, ainsi qu'à payer les renouvellements avant leur échéance ;
 
 - [Gérer vos moyens de paiement.](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods) : ce guide vous permet de vérifier que vous disposez d'un moyen de paiement enregistré pour les futurs renouvellements. Vous pouvez également ajouter et supprimer des moyens de paiement si nécessaire.
 

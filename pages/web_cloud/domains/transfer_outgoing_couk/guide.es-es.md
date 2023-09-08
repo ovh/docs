@@ -44,7 +44,7 @@ Si también debe cambiar el **propietario** del dominio, debe hacerlo **antes** 
 >
 > Si el dominio ha expirado desde **menos de 90 días**, puede transferirse siempre. Por favor, contacte con nuestro equipo de soporte técnico creando una solicitud de soporte en su Panel de control de OVHcloud para desbloquear el dominio para la transferencia.
 >
-> Si usted es el **propietario** del dominio pero su gestión en el área de cliente de OVHcloud no está disponible, ya sea a través de su propio acceso o a través del contacto administrativo del dominio, consulte [esta guía](/pages/account/customer/managing_contacts#caso-particular-de-un-propietario-de-dominio) antes de continuar.
+> Si usted es el **propietario** del dominio pero su gestión en el área de cliente de OVHcloud no está disponible, ya sea a través de su propio acceso o a través del contacto administrativo del dominio, consulte [esta guía](/pages/account_and_service_management/account_information/managing_contacts#caso-particular-de-un-propietario-de-dominio) antes de continuar.
 >
 
 ## Procedimiento

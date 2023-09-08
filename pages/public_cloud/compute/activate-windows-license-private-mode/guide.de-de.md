@@ -29,7 +29,7 @@ Wir empfehlen, die [Einführung in das Horizon Interface](/pages/public_cloud/co
 
 #### Über das Horizon-Interface
 
-Loggen Sie sich in [Horizon-interface](https://horizon.cloud.ovh.net/auth/login/) mit der im [ersten Teil dieser Anleitung](/pages/platform/network-services/getting-started-07-creating-vrack#horizon) beschriebenen Methode ein. 
+Loggen Sie sich in [Horizon-interface](https://horizon.cloud.ovh.net/auth/login/) mit der im [ersten Teil dieser Anleitung](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack#horizon) beschriebenen Methode ein. 
 
 Wählen Sie die korrekte Zone im Menü aus.
 

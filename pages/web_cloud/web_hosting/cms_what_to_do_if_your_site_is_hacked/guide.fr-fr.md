@@ -75,7 +75,7 @@ Concernant OVHcloud, utilisez notre documentation pour :
 - [Modifier le mot de passe d'accès à l'espace de stockage FTP de votre hébergement Web](/pages/web_cloud/web_hosting/ftp_change_password).
 - [Changer le mot de passe d'accès à votre base de données](/pages/web_cloud/web_hosting/sql_change_password).
 
-Nous vous recommandons également d'utiliser un [gestionnaire de mots de passe](/pages/account/customer/manage-ovh-password#utiliser-un-gestionnaire-de-mots-de-passe).
+Nous vous recommandons également d'utiliser un [gestionnaire de mots de passe](/pages/account_and_service_management/account_information/manage-ovh-password#utiliser-un-gestionnaire-de-mots-de-passe).
 
 > [!warning]
 > 
@@ -148,7 +148,7 @@ Faites coïncider au maximum les dates de restauration de votre espace de stocka
 > Si votre hébergement est en état « désactivé », les robots de restauration automatique disponibles depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) seront désactivés également.
 > Vous devrez obligatoirement effectuer une restauration « manuelle » de votre site, supprimer les éléments malveillants résiduels puis corriger toutes les failles de sécurité présentes dans cette sauvegarde. Ceci **avant** de réactiver votre hébergement.
 >
-> Pour réactiver l'hébergement Web, suivez les instructions de l'étape 4 de ce [guide](/pages/web/hosting/diagnostic_403_forbidden#reactivate-web-hosting).
+> Pour réactiver l'hébergement Web, suivez les instructions de l'étape 4 de ce [guide](/pages/web_cloud/web_hosting/diagnostic_403_forbidden#reactivate-web-hosting).
 >
 
 Votre site devrait réaparaître si ces actions ont été correctement effectuées.
@@ -167,7 +167,7 @@ Pour cela, consultez nos 2 guides sur le sujet :
 >
 > Si votre hébergement est en état « désactivé », effectuez une restauration « manuelle » de votre site, supprimez les éléments malveillants résiduels puis corrigez toutes les failles de sécurité présentes dans cette sauvegarde. Ceci **avant** de réactiver votre hébergement.
 >
-> Pour réactiver l'hébergement Web, suivez les instructions de l'étape 4 de ce [guide](/pages/web/hosting/diagnostic_403_forbidden#reactivate-web-hosting).
+> Pour réactiver l'hébergement Web, suivez les instructions de l'étape 4 de ce [guide](/pages/web_cloud/web_hosting/diagnostic_403_forbidden#reactivate-web-hosting).
 >
 
 Votre site devrait réaparaître si ces actions ont été correctement effectuées.
@@ -185,7 +185,7 @@ Pour vous connecter à l'espace de stockage de votre hébergement, consultez [no
 >
 > Si votre hébergement est en état « désactivé », supprimez les éléments malveillants résiduels puis corrigez toutes les failles de sécurité présentes dans cette sauvegarde **avant** de réactiver votre hébergement.
 >
-> Pour réactiver l'hébergement Web, suivez les instructions de l'étape 4 de ce [guide](/pages/web/hosting/diagnostic_403_forbidden#reactivate-web-hosting).
+> Pour réactiver l'hébergement Web, suivez les instructions de l'étape 4 de ce [guide](/pages/web_cloud/web_hosting/diagnostic_403_forbidden#reactivate-web-hosting).
 >
 
 Votre site devrait réaparaître si ces actions ont été correctement effectuées.
@@ -196,7 +196,7 @@ Mettez à jour votre site web au niveau de son code source, des paramètres de s
 
 Vérifiez les droits d'accès FTP « CHMOD » pour chacun de vos dossiers et fichiers hébergés dans votre espace de stockage.
 Par défaut, nous recommandons d'utiliser au maximum les droits « CHMOD » **705** pour les dossiers et **604** pour les fichiers.
-Retrouvez plus de détails sur les droits « CHMOD » dans la section « Informations utiles » de notre [tutoriel sur l'utilisation du client FTP Filezilla](/pages/web/hosting/ftp_filezilla_user_guide#useful-information).
+Retrouvez plus de détails sur les droits « CHMOD » dans la section « Informations utiles » de notre [tutoriel sur l'utilisation du client FTP Filezilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide#useful-information).
 
 Si vous utilisez un CMS (Wordpress, Joomla!, PrestaShop, Drupal, ...), mettez à jour vos plugins, votre thème et le CMS en lui-même.
 Privilégiez l'utilisation de plugins/thèmes « officiels » et maintenez à jour votre site web le plus régulièrement possible et de manière exhaustive.

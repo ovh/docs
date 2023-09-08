@@ -47,7 +47,7 @@ Per maggiori informazioni sulle password, consulta la guida [Modificare la passw
 
 #### Salva la password
 
-Se non l'hai ancora fatto, salva la password in un [gestore di password](/pages/account/customer/manage-ovh-password#utilizza-un-software-per-la-gestione-di-password).
+Se non l'hai ancora fatto, salva la password in un [gestore di password](/pages/account_and_service_management/account_information/manage-ovh-password#utilizza-un-software-per-la-gestione-di-password).
 
 > [!primary]
 > I software **KeePass** e **Bitwarden** sono gestioni di password gratuite e senza diritti.
@@ -159,7 +159,7 @@ Per maggiori informazioni, consulta la [guida sulla gestione degli utenti](/page
 
 ### Che fare in caso di sospetta usurpazione d’identità?
 
-Se ricevi una email che indica un accesso sconosciuto al tuo Spazio Cliente, ti consigliamo di [modificare immediatamente la password del tuo account](/pages/account/customer/manage-ovh-password#modifica-la-password) e di [proteggerlo tramite l’attivazione della doppia autenticazione](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa).
+Se ricevi una email che indica un accesso sconosciuto al tuo Spazio Cliente, ti consigliamo di [modificare immediatamente la password del tuo account](/pages/account_and_service_management/account_information/manage-ovh-password#modifica-la-password) e di [proteggerlo tramite l’attivazione della doppia autenticazione](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa).
 
 Se riscontri un'attività sospetta sul tuo account, [contatta il supporto OVHcloud](https://www.ovhcloud.com/it/contact/) al +39 02 5560 0423 affinché i nostri team ti assistano nei passi da compiere.
 
@@ -171,6 +171,6 @@ Se riscontri un'attività sospetta sul tuo account, [contatta il supporto OVHclo
 
 [Accedi allo Spazio Cliente OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-login)
 
-[Se la connessione allo Spazio Cliente OVH non funziona](/pages/account/customer/ovhcloud-account-login#login-failure)
+[Se la connessione allo Spazio Cliente OVH non funziona](/pages/account_and_service_management/account_information/ovhcloud-account-login#login-failure)
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

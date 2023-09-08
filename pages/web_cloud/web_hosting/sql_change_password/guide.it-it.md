@@ -16,11 +16,11 @@ La connessione a questo database è possibile tramite un **file di configurazion
 
 La modifica della password di un database deve quindi essere sempre effettuata:
 
-- Nel [file di configurazione](/pages/web/hosting/cms_manage_1_click_module#step-1-identifica-il-database-associato-al-tuo-modulo) del tuo sito tramite lo [spazio FTP del tuo hosting](/pages/web_cloud/web_hosting/ftp_connection);
+- Nel [file di configurazione](/pages/web_cloud/web_hosting/cms_manage_1_click_module#step-1-identifica-il-database-associato-al-tuo-modulo) del tuo sito tramite lo [spazio FTP del tuo hosting](/pages/web_cloud/web_hosting/ftp_connection);
 
 - **E** nel server che contiene il suo database attraverso lo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
 
-Finché la modifica non sarà effettuata **in entrambi i punti**, il tuo sito mostrerà un "[errore di connessione al database](/pages/web/hosting/diagnosis_database_errors#error-establishing-a-database-connection)".
+Finché la modifica non sarà effettuata **in entrambi i punti**, il tuo sito mostrerà un "[errore di connessione al database](/pages/web_cloud/web_hosting/diagnosis_database_errors#error-establishing-a-database-connection)".
 
 Per modificare la password del database è quindi necessario eseguire **tutte le operazioni** indicate in questa guida. In caso di dubbi sulle operazioni da effettuare, contatta il tuo webmaster o rivolgiti a un [provider specializzato](https://partner.ovhcloud.com/it/directory/).
 

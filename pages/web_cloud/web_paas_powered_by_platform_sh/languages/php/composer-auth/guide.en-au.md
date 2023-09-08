@@ -7,7 +7,7 @@ updated: 2022-06-02
 
 Some PHP projects may need to use a private, third party Composer repository in addition to the public Packagist.org repository. Often, such third party repositories require authentication in order to download packages. These credentials shouldn't be located in the Git repository source code for security reasons.
 
-To handle that situation, you can define a `env:COMPOSER_AUTH` [project variable](/pages/web/web-paas/development-variables#create-project-variables) which allows you to set up authentication as an environment variable. The contents of the variable should be a JSON formatted object containing an `http-basic` object (see [composer-auth specifications](https://getcomposer.org/doc/03-cli.md#composer-auth)).
+To handle that situation, you can define a `env:COMPOSER_AUTH` [project variable](/pages/web_cloud/web_paas_powered_by_platform_sh/development/development-variables#create-project-variables) which allows you to set up authentication as an environment variable. The contents of the variable should be a JSON formatted object containing an `http-basic` object (see [composer-auth specifications](https://getcomposer.org/doc/03-cli.md#composer-auth)).
 
 The advantage is that you can control who in your team has access to those variables.
 

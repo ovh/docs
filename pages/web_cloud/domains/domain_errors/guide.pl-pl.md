@@ -17,7 +17,7 @@ Rejestracja domeny, jej transfer, zmiana właściciela to operacje, w których m
 
 - Posiadanie jednej lub kilku domen
 - Zalogowanie do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
-- Aktualizacja w [płatności](/pages/account/billing/invoice_management#pay-bills) i [odnowienie](/pages/account/billing/how_to_use_automatic_renewal#renewal-management) powiązanych usług (domena i hosting)
+- Aktualizacja w [płatności](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) i [odnowienie](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) powiązanych usług (domena i hosting)
 ## W praktyce
 
 W [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) przejdź do sekcji `Web Cloud`{.action}, a następnie nazwy `Domeny`{.action}. Kliknij `Operacje w toku`{.action} nad listą domen.
@@ -45,7 +45,7 @@ W niniejszym przewodniku przyjrzymy się operacjom **z błędem**, posługując 
 >
 > Poniższa lista przykładów nie jest wyczerpująca. Jeśli pojawi się błąd, który nie jest opisany w tym przewodniku:
 >
-> - Sprawdź, czy jesteś na bieżąco w [płatnościach](/pages/account/billing/invoice_management#pay-bills) i [odnowieniach](/pages/account/billing/how_to_use_automatic_renewal#renewal-management) Twoich domen.
+> - Sprawdź, czy jesteś na bieżąco w [płatnościach](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) i [odnowieniach](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) Twoich domen.
 > - Sprawdź, czy możesz działać klikając przycisk `...`{.action} znajdujący się po prawej stronie wybranej operacji.
 > - Przeczytaj komunikat opisowy i sprawdź, czy pozwala on rozwiązać błąd.
 >

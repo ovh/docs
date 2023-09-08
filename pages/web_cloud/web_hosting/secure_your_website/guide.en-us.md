@@ -23,7 +23,7 @@ However, if you experience any difficulties completing some of these steps, plea
 ## Requirements
 
 - an [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en/web-hosting/)
-- having the [login details](/pages/web/hosting/ftp_connection#step-1-retrieve-your-login-information) to access your hosting plan’s storage space
+- having the [login details](/pages/web_cloud/web_hosting/ftp_connection#step-1-retrieve-your-login-information) to access your hosting plan’s storage space
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
 - access to the [admin interface for your website](https://wordpress.org/support/article/first-steps-with-wordpress/){.external}
 
@@ -71,12 +71,12 @@ Phishing emails are a security threat to your website because they can contain o
 If your services are not renewed, OVHcloud has the legal obligation to delete all data associated with your hosting plan, as well as all of their backups, when your subscription expires. We systemically send follow-up e-mails to our customers reminding them of their renewal dates before the end of their actual subscription.<br>
 However, these follow-up emails may arrive in your spam or you may have the email address associated with your OVHcloud account may have been typed incorrectly by mistake or may no longer be available.
 
-If your website plays a major role in your professional activity, [enable automatic renewal](/pages/account/billing/how_to_use_automatic_renewal#access-your-services-settings) across all of your OVHcloud services.<br>
+If your website plays a major role in your professional activity, [enable automatic renewal](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#access-your-services-settings) across all of your OVHcloud services.<br>
 We also recommend checking regularly the **validity of the payment methods** you have registered.
 
 ### Step 6 - Check that your website is up to date
 
-Check your website updates regularly, following the instructions in this [guide](/pages/web/hosting/diagnostic_403_forbidden#22-update-your-website).
+Check your website updates regularly, following the instructions in this [guide](/pages/web_cloud/web_hosting/diagnostic_403_forbidden#22-update-your-website).
 
 Also remember to use a recent version of the [PHP programming language](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014) on your hosting plan.
 

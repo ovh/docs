@@ -25,7 +25,7 @@ Questa guida ti mostra gli elementi essenziali per una corretta gestione del tuo
 
 #### Proteggi il tuo account
 
-- [Crea una password potente](/pages/account/customer/manage-ovh-password#genera-una-password-efficace) che garantisce la riservatezza del tuo account.
+- [Crea una password potente](/pages/account_and_service_management/account_information/manage-ovh-password#genera-una-password-efficace) che garantisce la riservatezza del tuo account.
 
 - [Attiva la doppia autenticazione](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa) per evitare qualsiasi accesso fraudolento al tuo Spazio Cliente.
 

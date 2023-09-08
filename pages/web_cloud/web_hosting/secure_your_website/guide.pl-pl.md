@@ -26,7 +26,7 @@ Jest on organizowany etapami w coraz większym stopniu w zakresie znaczenia i tr
 ## Wymagania początkowe
 
 - [OVHcloud Web Hosting plan](https://www.ovhcloud.com/pl/web-hosting/)
-- posiadanie [login details](/pages/web/hosting/ftp_connection#etap-1-pobranie-informacji-niezbednych-do-logowania) w celu uzyskania dostępu do przestrzeni dyskowej planu hostingu
+- posiadanie [login details](/pages/web_cloud/web_hosting/ftp_connection#etap-1-pobranie-informacji-niezbednych-do-logowania) w celu uzyskania dostępu do przestrzeni dyskowej planu hostingu
 - dostęp do [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
 - dostęp do [admin interface for your website](https://wordpress.org/support/article/first-steps-with-wordpress/){.external}
 
@@ -74,12 +74,12 @@ Wiadomości typu phishing stanowią zagrożenie dla bezpieczeństwa Twojej stron
 W przypadku nieodnowienia Twoich usług, OVHcloud ma prawny obowiązek, w dniu wygaśnięcia Twojego abonamentu, usunięcia w całości danych związanych z Twoją usługą hostingową oraz wszystkich kopii zapasowych. Wysyłamy do naszych klientów przypomnienia o harmonogramie ich odnowienia.<br>
 E-maile ożywienia mogą pojawić się w Twojej spamie lub adres e-mail powiązany z Twoim kontem OVHcloud może być nieprawidłowy lub nie może być już dostępny.
 
-Jeśli Twoja strona WWW ma duże znaczenie dla Twojej działalności zawodowej, [włącz automatyczne odnawianie](/pages/account/billing/how_to_use_automatic_renewal#uzyskiwanie-dostepu-do-konfiguracji-uslug) dla wszystkich Twoich usług OVHcloud<br>
+Jeśli Twoja strona WWW ma duże znaczenie dla Twojej działalności zawodowej, [włącz automatyczne odnawianie](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#uzyskiwanie-dostepu-do-konfiguracji-uslug) dla wszystkich Twoich usług OVHcloud<br>
 Zalecamy również regularne sprawdzanie **ważności zarejestrowanych sposobów płatności**.
 
 ### Etap 6: sprawdź, czy Twoja strona jest aktualna
 
-Regularnie sprawdź aktualizacje Twojej strony, postępując zgodnie z instrukcjami zawartymi w tym [przewodniku](/pages/web/hosting/diagnostic_403_forbidden#22-aktualizacja-strony-www).
+Regularnie sprawdź aktualizacje Twojej strony, postępując zgodnie z instrukcjami zawartymi w tym [przewodniku](/pages/web_cloud/web_hosting/diagnostic_403_forbidden#22-aktualizacja-strony-www).
 
 Pamiętaj, aby na Twoim hostingu zainstalować najnowszą wersję [języka PHP](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014).
 

@@ -113,7 +113,7 @@ Para abonar las facturas pendientes de pago, haga clic en el menú `Acciones mas
 
 ![Abonar el importe pendiente](images/pay_debt.png){.thumbnail}
 
-Se generará una [orden de pedido de regularización](/pages/account/billing/managing_ovh_orders#la-orden-de-pedido). Una vez abonado el importe pendiente, se regularizará su situación.
+Se generará una [orden de pedido de regularización](/pages/account_and_service_management/managing_billing_payments_and_services/managing_ovh_orders#la-orden-de-pedido). Una vez abonado el importe pendiente, se regularizará su situación.
 
 #### Solicitar la cancelación de una factura
 
@@ -122,7 +122,7 @@ Se generará una [orden de pedido de regularización](/pages/account/billing/man
 > Para solicitar la baja al vencimiento del servicio, siga las indicaciones de esta [guía](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services).
 >
 
-Si ha recibido una factura que no considera legítima y desea solicitar el reembolso o hacer valer su [derecho de desistimiento](/pages/account/billing/managing_ovh_orders#ejercer-el-derecho-de-desistimiento), puede realizar una reclamación a través de su [área de cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), sujeto a la aplicación de nuestras [Condiciones Generales de Servicio](https://www.ovh.es/soporte/documentos_legales/CondicionesGeneralesServicio.pdf).
+Si ha recibido una factura que no considera legítima y desea solicitar el reembolso o hacer valer su [derecho de desistimiento](/pages/account_and_service_management/managing_billing_payments_and_services/managing_ovh_orders#ejercer-el-derecho-de-desistimiento), puede realizar una reclamación a través de su [área de cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), sujeto a la aplicación de nuestras [Condiciones Generales de Servicio](https://www.ovh.es/soporte/documentos_legales/CondicionesGeneralesServicio.pdf).
 <br> Haga clic en su nombre en la esquina superior derecha de la pantalla y seleccione `Crear un tíquet`{.action}.
 
 ### Seguimiento de los pagos

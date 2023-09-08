@@ -30,7 +30,7 @@ Il vous est impossible de recevoir ou envoyer vos e-mails depuis votre logiciel 
 
 Pour que vos e-mails soient fonctionnels, vous devez posséder une offre e-mail active. Si votre offre e-mail est associée à une offre d'hébergement, vérifiez que celle-ci n'est pas expirée. Vous pouvez vérifier cette information directement dans l'espace client. De la même façon, votre nom de domaine doit lui aussi être actif.
 
-Commencez par vérifier que vous êtes à jour dans les [paiements](/pages/account/billing/invoice_management#pay-bills) et [renouvellements](/pages/account/billing/how_to_use_automatic_renewal#renewal-management) de vos services.
+Commencez par vérifier que vous êtes à jour dans les [paiements](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) et [renouvellements](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) de vos services.
 
 Voici comment vérifier que vos services sont bien opérationnels :
 

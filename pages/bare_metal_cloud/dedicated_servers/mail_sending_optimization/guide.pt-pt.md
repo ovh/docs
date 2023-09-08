@@ -62,7 +62,7 @@ Sempre com o objetivo de otimizar o envio e de reduzir os riscos de bloqueio dos
 
 Em primeiro lugar, deve criar um registo A na zona DNS do seu domínio com o endereço IP do seu servidor como alvo.
 
-Se os seus servidores DNS são geridos pela OVHcloud, consulte este [guia](/pages/web/domains/dns_zone_edit#aceder-a-gestao-de-uma-zona-dns-da-ovhcloud).
+Se os seus servidores DNS são geridos pela OVHcloud, consulte este [guia](/pages/web_cloud/domains/dns_zone_edit#aceder-a-gestao-de-uma-zona-dns-da-ovhcloud).
 
 Depois de alterar a zona DNS do domínio, é necessário aguardar 24 horas até que as alterações sejam efetivas.
 

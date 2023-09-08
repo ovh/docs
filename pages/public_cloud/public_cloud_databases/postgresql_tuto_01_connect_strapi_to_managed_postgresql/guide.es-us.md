@@ -118,7 +118,7 @@ Your database is ready when cluster status is "Ready", node status is green, and
 
 #### Add your IPs to the DB authorized list
 
-Following the related documentation on how to [authorize the suitable IP addresses](/pages/platform/databases/mongodb_02_manage_control_panel#configuring-authorized-ips), add your IPs to the authorized list.
+Following the related documentation on how to [authorize the suitable IP addresses](/pages/public_cloud/public_cloud_databases/mongodb_02_manage_control_panel#configuring-authorized-ips), add your IPs to the authorized list.
 
 ![Green statuses and authorized IPs setted on Database Control Panel](images/postgresql-tuto-01-connect-strapi-to-managed-postgresql10.png){.thumbnail}
 

@@ -30,7 +30,7 @@ Możesz dodać serwer zapasowy lub zastąpić tę konfigurację Twoją. Serwery 
 
 ## W praktyce
 
-Zaloguj się do instancji przez SSH. Więcej informacji na ten temat znajdziesz w przewodniku "[Logowanie do instancji Public Cloud](/pages/platform/public-cloud/public-cloud-first-steps#connect-to-instance)".
+Zaloguj się do instancji przez SSH. Więcej informacji na ten temat znajdziesz w przewodniku "[Logowanie do instancji Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps#connect-to-instance)".
 
 Przejdź do użytkownika root. Jeśli potrzebujesz, skorzystaj z naszego przewodnika, aby [zmienić hasło root](/pages/public_cloud/compute/become_root_and_change_password).
 
@@ -133,7 +133,7 @@ DNS configuration:
 
 ### Windows
 
-Zaloguj się do instancji za pomocą sesji zdalnego pulpitu lub konsoli VNC. Więcej informacji na ten temat znajdziesz w przewodniku "[Logowanie do instancji Public Cloud](/pages/platform/public-cloud/public-cloud-first-steps#connect-to-instance)".
+Zaloguj się do instancji za pomocą sesji zdalnego pulpitu lub konsoli VNC. Więcej informacji na ten temat znajdziesz w przewodniku "[Logowanie do instancji Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps#connect-to-instance)".
 
 Otwórz `Parametry sieci`{.action}.
 

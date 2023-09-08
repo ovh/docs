@@ -45,7 +45,7 @@ Per visualizzare il tuo sito Web, accedi alla sezione `Multisito`{.action} del t
 
 > [!primary]
 >
-> Per collegare temporaneamente il tuo dominio a una `Cartella root` che non contiene file **index.php** o **index.html***, puoi vietare la visualizzazione della lista delle cartelle del tuo sito seguendo questo [tutorial](/pages/web/hosting/htaccess_what_else_can_you_do#impedire-il-listing-del-contenuto-di-una-directory). È inoltre possibile proteggere l'accesso alle cartelle tramite una [password](/pages/web_cloud/web_hosting/htaccess_protect_directory_by_password).
+> Per collegare temporaneamente il tuo dominio a una `Cartella root` che non contiene file **index.php** o **index.html***, puoi vietare la visualizzazione della lista delle cartelle del tuo sito seguendo questo [tutorial](/pages/web_cloud/web_hosting/htaccess_what_else_can_you_do#impedire-il-listing-del-contenuto-di-una-directory). È inoltre possibile proteggere l'accesso alle cartelle tramite una [password](/pages/web_cloud/web_hosting/htaccess_protect_directory_by_password).
 >
 > In caso di difficoltà nell'implementare questa configurazione, ti consigliamo di rivolgerti a un [provider specializzato](https://partner.ovhcloud.com/it/directory/). Il nostro team di supporto non sarà infatti in grado di fornirti assistenza su eventuali modifiche della programmazione interna del tuo sito.
 

@@ -190,7 +190,7 @@ Per maggiori informazioni sulle funzionalità del tuo CMS, contatta il produttor
 
 [Gestire il vostro CMS](/pages/web_cloud/web_hosting/cms_manage_1_click_module)
 
-[Disinstallare il tuo CMS](/pages/web/hosting/cms_manage_1_click_module#step-3-elimina-il-tuo-modulo)
+[Disinstallare il tuo CMS](/pages/web_cloud/web_hosting/cms_manage_1_click_module#step-3-elimina-il-tuo-modulo)
 
 Scopri la nostra soluzione [Web Cloud Database](https://www.ovh.it/cloud/cloud-databases/){.external}
 

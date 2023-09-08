@@ -72,7 +72,7 @@ If you would like to retrieve a domain name that you are the registered owner of
 
 #### Tips and tricks
 
-A full contact management guide is available here: [/pages/account/customer/managing_contacts#access-contact-management](/pages/account/customer/managing_contacts#access-contact-management)
+A full contact management guide is available here: [/pages/account_and_service_management/account_information/managing_contacts#access-contact-management](/pages/account_and_service_management/account_information/managing_contacts#access-contact-management)
 
 ### How do I set and change a billing contact?
 

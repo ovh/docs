@@ -38,7 +38,7 @@ La seguridad de sus soluciones depende de la eficacia de la contraseña de acces
 
 Existen varios métodos eficaces para crear contraseñas. Entre ellos, le recomendamos el **método de las primeras letras** y el **método fonético** que se explican en [esta guía del sitio web de la Oficina de Seguridad del Intaernauta (OSI)](https://www.osi.es/es/contrasenas#robustas){.external}.
 
-Para ahondar más en el tema, consulte la sección [«Más información»](/pages/account/customer/manage-ovh-password#utilizar-un-gestor-de-contrasenas){.external} al final de esta guía.
+Para ahondar más en el tema, consulte la sección [«Más información»](/pages/account_and_service_management/account_information/manage-ovh-password#utilizar-un-gestor-de-contrasenas){.external} al final de esta guía.
 
 ### Utilizar un gestor de contraseñas 
 

@@ -30,7 +30,7 @@ Wenn Sie in Ihrem Kundencenter angemeldet sind, sehen Sie Ihre Kundenkennung jed
 ### Ich habe keinen Zugriff mehr auf meinen Kunden-Account. Was soll ich tun?
 
 Wenn Sie sich nicht anmelden oder mit Ihrem Kundencenter verbinden können, kann dies verschiedene Ursachen haben; ein vergessenes Passwort, oder vielleicht können Sie nicht mehr auf Ihre E-Mail-Adresse und Ihr Mobiltelefon zugreifen. Daran kann dann die Identifikation per SMS scheitern.
-In diesem Fall empfehlen wir [Ihnen diese Hilfestellung](/pages/account/customer/ovhcloud-account-login#login-failure)
+In diesem Fall empfehlen wir [Ihnen diese Hilfestellung](/pages/account_and_service_management/account_information/ovhcloud-account-login#login-failure)
 
 ### Wie kann ich meine persönlichen Angaben ändern?
 
@@ -78,7 +78,7 @@ Möchten Sie einen Domainnamen abrufen, als dessen Inhaber Sie bei der Registry 
 
 #### Gut zu wissen
 
-Weitere Informationen zur Kontaktverwaltung finden Sie hier: [/pages/account/customer/managing_contacts#auf-die-kontaktverwaltung-zugreifen](/pages/account/customer/managing_contacts#auf-die-kontaktverwaltung-zugreifen)
+Weitere Informationen zur Kontaktverwaltung finden Sie hier: [/pages/account_and_service_management/account_information/managing_contacts#auf-die-kontaktverwaltung-zugreifen](/pages/account_and_service_management/account_information/managing_contacts#auf-die-kontaktverwaltung-zugreifen)
 
 ### Wie kann ich einen Rechnungskontakt einstellen oder ändern?
 
@@ -132,7 +132,7 @@ Damit Sie Ihren Account wieder nutzen können, werden wir Sie dazu auffordern, I
 
 ### Ich habe eine E-Mail erhalten, die ein Versuch von Phishing sein könnte. Angeblich kommt sie von OVHcloud. Wie kann ich eine Überprüfung veranlassen?
 
-Wie Sie einen Phishing-Versuch durch eine E-Mail oder eine SMS identifizieren und melden können, erfahren Sie in unserer Anleitung dazu [/pages/account/customer/phishing_care](/pages/account_and_service_management/account_information/phishing_care)
+Wie Sie einen Phishing-Versuch durch eine E-Mail oder eine SMS identifizieren und melden können, erfahren Sie in unserer Anleitung dazu [/pages/account_and_service_management/account_information/phishing_care](/pages/account_and_service_management/account_information/phishing_care)
 
 ### Wie kann ich als Opfer missbräuchliches Verhalten oder rechtswidrige Inhalte melden, für die bei OVHcloud gehostete Dienste genutzt werden?
 

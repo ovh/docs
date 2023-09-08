@@ -18,7 +18,7 @@ Sie können mehrere Websites auf einem einzigen Webhosting-Angebot hosten, auch 
 
 - Sie haben ein kompatibles [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) in Ihrem Kunden-Account.
 - Sie besitzen eine oder mehrere [Domainnamen](https://www.ovhcloud.com/de/domains/){.external}.
-- Sie sind berechtigt, die Konfiguration Ihrer Domainnamen (die [DNS-Zone](/pages/web/domains/dns_zone_edit#dns-konzept-verstehen)) zu ändern.
+- Sie sind berechtigt, die Konfiguration Ihrer Domainnamen (die [DNS-Zone](/pages/web_cloud/domains/dns_zone_edit#dns-konzept-verstehen)) zu ändern.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 ## In der praktischen Anwendung
@@ -115,7 +115,7 @@ Nachdem die Domain hinzugefügt wurde, gehen Sie zu [Schritt 3: Ihre Website onl
 >
 > |Feld|Wo finde ich die Information?|Durchzuführende Maßnahme|
 > |---|---|---|
-> |TXT|Tab `Multisite`{.action}, klicken Sie auf `Konfiguration des Tokens ovhcontrol`{.action}|OVHcloud stellt sicher, dass das Hinzufügen jeder externen Domain legitim ist. Achten Sie darauf, den TXT-Eintrag mit der Subdomain `ovhcontrol` (z.B. `ovhcontrol.mydomain.ovh`) in der DNS-Zone zu erstellen, die für die hinzuzufügende Domain zuständig ist.<br></br>Bitte beachten Sie, wenn Sie `blog.mydomain.ovh` hinzufügen möchten, dass der Eintrag für die Subdomain `ovhcontrol.mydomain.ovh` sein muss, und nicht `ovhcontrol.blog.mydomain.ovh`.<br></br> Um die relevante DNS-Zone zu bearbeiten, prüfen Sie, welche [DNS-Server](/pages/web/domains/dns_server_general_information#dns-konzept-verstehen) Ihre Domain verwendet. Sie müssen nur die Hauptdomain validieren, nicht alle Subdomains.|
+> |TXT|Tab `Multisite`{.action}, klicken Sie auf `Konfiguration des Tokens ovhcontrol`{.action}|OVHcloud stellt sicher, dass das Hinzufügen jeder externen Domain legitim ist. Achten Sie darauf, den TXT-Eintrag mit der Subdomain `ovhcontrol` (z.B. `ovhcontrol.mydomain.ovh`) in der DNS-Zone zu erstellen, die für die hinzuzufügende Domain zuständig ist.<br></br>Bitte beachten Sie, wenn Sie `blog.mydomain.ovh` hinzufügen möchten, dass der Eintrag für die Subdomain `ovhcontrol.mydomain.ovh` sein muss, und nicht `ovhcontrol.blog.mydomain.ovh`.<br></br> Um die relevante DNS-Zone zu bearbeiten, prüfen Sie, welche [DNS-Server](/pages/web_cloud/domains/dns_server_general_information#dns-konzept-verstehen) Ihre Domain verwendet. Sie müssen nur die Hauptdomain validieren, nicht alle Subdomains.|
 >
 > ![Multisite](images/add-multisite-external-step3.png){.thumbnail}
 >

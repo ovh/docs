@@ -185,7 +185,7 @@ Explore our [Web Cloud Database solutions](https://www.ovhcloud.com/asia/web-clo
 
 [Managing your CMS](/pages/web_cloud/web_hosting/cms_manage_1_click_module)
 
-[Uninstalling your CMS](/pages/web/hosting/cms_manage_1_click_module#step-3-delete-your-module)
+[Uninstalling your CMS](/pages/web_cloud/web_hosting/cms_manage_1_click_module#step-3-delete-your-module)
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/asia/directory/).
 

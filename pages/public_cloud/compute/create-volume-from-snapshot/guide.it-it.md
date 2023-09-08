@@ -63,7 +63,7 @@ Il processo di associazione del disco all'istanza sta per iniziare e potrebbe ri
 Evitare la navigazione fuori dalla scheda in corso durante l'associazione del disco. Ciò può interrompere il processo.
 >
 
-Una volta effettuato l'associazione, puoi seguire gli step successivi [con Linux](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance#da-linux) o [Windows](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance#da-windows).
+Una volta effettuato l'associazione, puoi seguire gli step successivi [con Linux](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance#da-linux) o [Windows](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance#da-windows).
 
 ## Per saperne di più
 

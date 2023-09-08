@@ -61,7 +61,7 @@ Aby sprawdzać szybciej, czy rekordy MX już istnieją, za pomocą filtra znajdu
 
 Kliknij przycisk `Dodaj rekord`{.action} po prawej stronie tabeli, następnie wybierz `MX`{.action}. Wpisz wymagane informacje w zależności od wybranego rozwiązania poczty elektronicznej:
 
-- **jeśli używasz rozwiązania poczty elektronicznej OVHcloud**: wykorzystaj informacje opisane w [etapie 2: znajomość konfiguracji MX OVHcloud](/pages/web/domains/dns_zone_mx#etap-2-znajomosc-konfiguracji-mx-ovh){.external};
+- **jeśli używasz rozwiązania poczty elektronicznej OVHcloud**: wykorzystaj informacje opisane w [etapie 2: znajomość konfiguracji MX OVHcloud](/pages/web_cloud/domains/dns_zone_mx#etap-2-znajomosc-konfiguracji-mx-ovh){.external};
 
 - **jeśli używasz innego rozwiązania**: wykorzystaj informacje podane przez dostawcę Twojej usługi.
 

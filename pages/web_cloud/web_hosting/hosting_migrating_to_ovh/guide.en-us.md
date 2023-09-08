@@ -142,7 +142,7 @@ After DNS propagation, the website displayed with your domain name will be the o
 
 Create new email accounts and name them according to your current email addresses hosted by your email provider. Use our guide on [Creating MX Plan email addresses](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_creation).
 
-If you have opted for an Exchange solution, please read our documentation on this topic to create your email addresses: </pages/web/microsoft-collaborative-solutions/exchange_starting_hosted>
+If you have opted for an Exchange solution, please read our documentation on this topic to create your email addresses: </pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_starting_hosted>
 
 ### Step 6: Declare the OVHcloud email servers in your domain name’s active DNS zone <a name="step6"></a>
 
@@ -193,7 +193,7 @@ Once you have migrated your email accounts to OVHcloud, reconfigure your email s
 
 #### For MX Plan email accounts: 
 
-- You can find all of the configuration settings in our guide “[Getting started with the MX Plan solution](/pages/web/emails/email_generalities#2-using-the-software-of-your-choice)”. You will also find links to custom configuration guides for major email software.
+- You can find all of the configuration settings in our guide “[Getting started with the MX Plan solution](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities#2-using-the-software-of-your-choice)”. You will also find links to custom configuration guides for major email software.
 
 #### For Exchange email accounts:
 

@@ -71,7 +71,7 @@ Para ello, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth
 
 En la página Información general{.action}, encontrará un recuadro titulado `Configuración`{.action} en el centro de la página. Haga clic en el botón `...`{.action} a la derecha de la mención `Web Cloud Databases`{.action} y luego en `Desvincular`{.action}. Seleccione la duración de renovación más corta y continúe hasta la validación del pedido.
 
-Para más información, consulte nuestra guía ["Configuración de un plan de hosting Cloud Databases"](/pages/web/clouddb/configure-database-server#modify-ram-web-cloud-db)
+Para más información, consulte nuestra guía ["Configuración de un plan de hosting Cloud Databases"](/pages/web_cloud/web_cloud_databases/configure-database-server#modify-ram-web-cloud-db)
 
 **Esta acción es irreversible y la solución Web Cloud Databases se facturará a continuación, independientemente de su plan de hosting Performance.**
 
@@ -134,7 +134,7 @@ Si el sitio web aparece con esta URL debido a una manipulación, vuelva a su est
 
 Para restaurar el código fuente del sitio web, consulte nuestra guía [Restaurar el espacio de almacenamiento de un alojamiento web](/pages/web_cloud/web_hosting/ftp_save_and_backup).
 
-Si su sitio web incluye una base de datos, consulte nuestra guía [Restaurar una copia de seguridad de la base de datos](/pages/web/hosting/sql_importing_mysql_database#restaurar-una-copia-de-seguridad-desde-el-area-de-cliente).
+Si su sitio web incluye una base de datos, consulte nuestra guía [Restaurar una copia de seguridad de la base de datos](/pages/web_cloud/web_hosting/sql_importing_mysql_database#restaurar-una-copia-de-seguridad-desde-el-area-de-cliente).
 
 ### ¿Qué hacer si mi sitio web redirige al webmail de OVHcloud?
 
@@ -152,7 +152,7 @@ Compare los `Objetivos` de las entradas de tipo `NS` indicadas en la pestaña `Z
 
 - Si los elementos son idénticos, sustituya el objetivo `213.186.33.5` por el código de cuatro cifras indicado en la pestaña `Información general` con la mención `IPv4` (para más información sobre las operaciones a realizar, consulte las instrucciones de [esta guía](/pages/web_cloud/domains/dns_zone_edit)).
 
-- Si los elementos no son idénticos, pero los `servidores DNS` indicados en la pestaña del mismo nombre aparecen en [esta lista](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP), siga las instrucciones de [esta guía](/pages/web/domains/dns_server_general_information#restaurar-los-servidores-dns) para restaurarlos.
+- Si los elementos no son idénticos, pero los `servidores DNS` indicados en la pestaña del mismo nombre aparecen en [esta lista](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP), siga las instrucciones de [esta guía](/pages/web_cloud/domains/dns_server_general_information#restaurar-los-servidores-dns) para restaurarlos.
 
 - Si los elementos no son idénticos y los `servidores DNS` indicados en la pestaña del mismo nombre no aparecen en [esta lista](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP), contacte con su Webmaster o busque un [proveedor especializado](https://partner.ovhcloud.com/es-es/directory/) a través de la página de [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
 
@@ -171,7 +171,7 @@ Restaure su sitio web a su estado anterior:
 
 - Para restaurar el código fuente del sitio web, consulte nuestra guía [Restaurar el espacio de almacenamiento de un alojamiento web](/pages/web_cloud/web_hosting/ftp_save_and_backup).
 
-- Si su sitio web incluye una base de datos, consulte nuestra guía [Importar una copia de seguridad en la base de datos de un alojamiento web](/pages/web/hosting/sql_importing_mysql_database#restaurar-una-copia-de-seguridad-desde-el-area-de-cliente).
+- Si su sitio web incluye una base de datos, consulte nuestra guía [Importar una copia de seguridad en la base de datos de un alojamiento web](/pages/web_cloud/web_hosting/sql_importing_mysql_database#restaurar-una-copia-de-seguridad-desde-el-area-de-cliente).
 
 Si las restauraciones no le permiten restablecer el acceso a su sitio web, contacte con su Webmaster o busque un [proveedor especializado](https://partner.ovhcloud.com/es-es/directory/) en la web de los [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
 

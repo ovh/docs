@@ -68,7 +68,7 @@ No, this is not possible for Tier-1. Different tools are available in NSX to add
 
 ### How can I add more Public IPs?
 
-As indicated in [this guide](/pages/cloud/private-cloud/nsx-01-first-steps#displaying-the-ha-vip-virtual-ip-address), at the moment it is not possible to create new virtual IP addresses, but this feature should be available soon.
+As indicated in [this guide](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx-01-first-steps#displaying-the-ha-vip-virtual-ip-address), at the moment it is not possible to create new virtual IP addresses, but this feature should be available soon.
 
 <a name="ipblockdistribution"></a>
 

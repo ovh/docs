@@ -120,7 +120,7 @@ Se non riesci a effettuare queste verifiche, contatta il provider della tua zona
 > Le modifiche effettuate nella tua zona DNS comportano un tempo di propagazione da 4 a 24 ore.
 >
 
-- Recupera [le informazioni necessarie per accedere allo spazio FTP del tuo hosting web](/pages/web/hosting/ftp_connection#step-1-recupera-i-dati-necessari-a-effettuare-laccesso).
+- Recupera [le informazioni necessarie per accedere allo spazio FTP del tuo hosting web](/pages/web_cloud/web_hosting/ftp_connection#step-1-recupera-i-dati-necessari-a-effettuare-laccesso).
 - Recupera gli accessi al database della tua offerta di hosting Web se esiste già, o creane una utilizzando la nostra [guida](/pages/web_cloud/web_hosting/sql_create_database).
 
 #### 1.3 - Installare il client FTP gratuito "FileZilla"
@@ -133,7 +133,7 @@ I CMS necessitano di un database per funzionare. Le nostre offerte di [hosting w
 
 Utilizza la nostra documentazione per [creare un database dalla tua offerta di hosting web](/pages/web_cloud/web_hosting/sql_create_database).
 
-Se disponi di un'offerta Web Cloud Databases in MySQL o MariaDB e desideri utilizzarla per installare manualmente il tuo CMS, consulta la nostra guida sulla [creazione di un database su un servizio Web Cloud Databases](/pages/web/clouddb/create-db-and-user-on-db-server#crea-un-database).
+Se disponi di un'offerta Web Cloud Databases in MySQL o MariaDB e desideri utilizzarla per installare manualmente il tuo CMS, consulta la nostra guida sulla [creazione di un database su un servizio Web Cloud Databases](/pages/web_cloud/web_cloud_databases/create-db-and-user-on-db-server#crea-un-database).
 
 Una volta creato il database, recupera i parametri di connessione (server, nome del database, nome utente e password) e conservali per [step 3](#step3) di questa guida.
 
@@ -141,11 +141,11 @@ Una volta creato il database, recupera i parametri di connessione (server, nome 
 >
 > Per installare il tuo CMS con un database già esistente, recupera le impostazioni di connessione al tuo database direttamente nei file del sito ad esso associati.
 >
-> Se il CMS è identico a quello da installare, puoi utilizzare [questa guida](/pages/web/hosting/sql_change_password#step-3-modifica-la-password-del-database-del-tuo-sito-nel-file-di-configurazione) per identificare i file di configurazione nel tuo [spazio di storage FTP](/pages/web_cloud/web_hosting/ftp_connection).
+> Se il CMS è identico a quello da installare, puoi utilizzare [questa guida](/pages/web_cloud/web_hosting/sql_change_password#step-3-modifica-la-password-del-database-del-tuo-sito-nel-file-di-configurazione) per identificare i file di configurazione nel tuo [spazio di storage FTP](/pages/web_cloud/web_hosting/ftp_connection).
 >
 > Accedi al tuo database per censire i "prefissi" delle tabelle già presenti all'interno. per non scegliere un "prefisso" da tavolo già utilizzato da un altro sito.
 >
-> - Per connetterti al tuo database associato alla tua offerta di hosting Web, consulta [questa guida](/pages/web/hosting/sql_create_database#accedi-allinterfaccia-phpmyadmin).
+> - Per connetterti al tuo database associato alla tua offerta di hosting Web, consulta [questa guida](/pages/web_cloud/web_hosting/sql_create_database#accedi-allinterfaccia-phpmyadmin).
 > - Per connetterti a un database presente su un Web Cloud Databases, consulta [questa guida](https://help.ovhcloud.com/csm/it-web-cloud-db-connecting-database-server?id=kb_article_view&sysparm_article=KB0051461).
 >
 

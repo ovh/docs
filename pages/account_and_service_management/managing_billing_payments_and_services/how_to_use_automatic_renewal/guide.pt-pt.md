@@ -26,7 +26,7 @@ Tem a possibilidade de administrar a renovação e a rescisão dos seus serviço
 
 - Ter acesso à Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt);
 - Dispor de serviços ativos da OVHcloud;
-- Ter [contacto de faturação](/pages/account/customer/managing_contacts#definicao) dos seus serviços OVHcloud.
+- Ter [contacto de faturação](/pages/account_and_service_management/account_information/managing_contacts#definicao) dos seus serviços OVHcloud.
 
 ## Instruções
 
@@ -36,9 +36,9 @@ Mas também é possível configurar certos produtos (Domínios, Alojamentos, VPS
 
 Recomendamos que consulte os seguintes guias e se concentre nas operações que deseja efetuar:
 
-- [Apresentar os estados de renovação dos seus serviços](/pages/account/billing/how_to_use_automatic_renewal#visualizar-o-estado-da-renovacao-dos-servicos): este guia ajuda a verificar se os seus serviços são renovados automaticamente. Permite-lhe igualmente obter a sua data de renovação ou de expiração;
+- [Apresentar os estados de renovação dos seus serviços](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#visualizar-o-estado-da-renovacao-dos-servicos): este guia ajuda a verificar se os seus serviços são renovados automaticamente. Permite-lhe igualmente obter a sua data de renovação ou de expiração;
 
-- [Gerir a renovação dos seus serviços](/pages/account/billing/how_to_use_automatic_renewal#a-renovacao-na-ovhcloud): este guia ajuda a ativar ou desativar a renovação automática, a modificar a frequência de pagamento de um serviço, assim como a pagar as renovações antes do seu vencimento;
+- [Gerir a renovação dos seus serviços](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#a-renovacao-na-ovhcloud): este guia ajuda a ativar ou desativar a renovação automática, a modificar a frequência de pagamento de um serviço, assim como a pagar as renovações antes do seu vencimento;
 
 - [Gerir os métodos de pagamento.](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods): este guia permite-lhe verificar se dispõe de um método de pagamento registado para as futuras renovações. Pode também adicionar e eliminar métodos de pagamento, se necessário.
 

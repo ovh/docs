@@ -34,7 +34,7 @@ Para crear una nueva llave SSH, consulte la [guía de las primeras etapas con Pu
 
 ### Configuración del nuevo usuario
 
-[Conéctese a su instancia por SSH](/pages/platform/public-cloud/public-cloud-first-steps#connect-to-instance) y cree un nuevo usuario con los siguientes comandos:
+[Conéctese a su instancia por SSH](/pages/public_cloud/compute/public-cloud-first-steps#connect-to-instance) y cree un nuevo usuario con los siguientes comandos:
 
 ```bash
 ~$ sudo adduser user2

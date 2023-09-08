@@ -317,7 +317,7 @@ Sie können sich dann mit dem Alias-Namen, den Sie als `Host` festgelegt haben, 
 ssh ubuntu@vps
 ```
 
-Im vorherigen Beispiel wurden nur die Server-IP und die Schlüsseldatei angegeben, es können jedoch weitere Details hinzugefügt werden. Um eine SSH-Verbindung zu einem zweiten Server mit dem Benutzernamen "rocky", dem [geänderten SSH-Port](/pages/cloud/vps/secure_your_vps#changesshport) "49160" und dem privaten Schlüssel in der Datei "myserver_rsa" einzurichten, erweitern Sie den Inhalt der Datei wie in diesem Beispiel:
+Im vorherigen Beispiel wurden nur die Server-IP und die Schlüsseldatei angegeben, es können jedoch weitere Details hinzugefügt werden. Um eine SSH-Verbindung zu einem zweiten Server mit dem Benutzernamen "rocky", dem [geänderten SSH-Port](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps#changesshport) "49160" und dem privaten Schlüssel in der Datei "myserver_rsa" einzurichten, erweitern Sie den Inhalt der Datei wie in diesem Beispiel:
 
 ```console
 Host vps

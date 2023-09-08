@@ -30,7 +30,7 @@ You can see the Notebook step in the tutorial: [Audio analysis and classificatio
 ### Create object storage for data
 
 To train the model you'll need data and a place where to save the trained model.
-You can reuse the previous object storage used in the Notebook tutorial [Audio analysis and classification with AI](/pages/public_cloud/ai_machine_learning/notebook_tuto_06_marine_mammal_sounds_classification) or follow the step [Uploading your dataset on Public Cloud Storage](/pages/platform/ai/notebook_tuto_06_marine_mammal_sounds_classification#uploading-your-dataset-on-public-cloud-storage) of this same tutorial.
+You can reuse the previous object storage used in the Notebook tutorial [Audio analysis and classification with AI](/pages/public_cloud/ai_machine_learning/notebook_tuto_06_marine_mammal_sounds_classification) or follow the step [Uploading your dataset on Public Cloud Storage](/pages/public_cloud/ai_machine_learning/notebook_tuto_06_marine_mammal_sounds_classification#uploading-your-dataset-on-public-cloud-storage) of this same tutorial.
 
 ### Train your model
 

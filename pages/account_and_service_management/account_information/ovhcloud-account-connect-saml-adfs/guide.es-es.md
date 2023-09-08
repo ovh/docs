@@ -208,7 +208,7 @@ A continuación, podrá desconectarse de su cuenta y reconectarse con su AD FS c
 
 ### Conexión mediante SSO
 
-En [la página de identificación de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), introduzca su [ID de cliente](/pages/account/customer/ovhcloud-account-creation#cual-es-mi-id-de-cliente) seguido de **/idp** sin contraseña y haga clic en el botón `Login`{.action} .
+En [la página de identificación de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), introduzca su [ID de cliente](/pages/account_and_service_management/account_information/ovhcloud-account-creation#cual-es-mi-id-de-cliente) seguido de **/idp** sin contraseña y haga clic en el botón `Login`{.action} .
 
 ![Conexión a la federación OVHcloud](images/ovhcloud_federation_login_1.png){.thumbnail}
 

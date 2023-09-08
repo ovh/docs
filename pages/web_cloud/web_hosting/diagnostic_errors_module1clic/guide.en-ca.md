@@ -72,9 +72,9 @@ In the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from
 
 #### Solution 4: install your module on a database you already use
 
-To install your module on an existing database, you will need to use the [advanced mode](/pages/web/hosting/cms_install_1_click_modules#advanced-module-installation).
+To install your module on an existing database, you will need to use the [advanced mode](/pages/web_cloud/web_hosting/cms_install_1_click_modules#advanced-module-installation).
 
-To find your database login details, please check this [guide](/pages/web/hosting/cms_install_1_click_modules#advanced-module-installation).
+To find your database login details, please check this [guide](/pages/web_cloud/web_hosting/cms_install_1_click_modules#advanced-module-installation).
 
 ### "The installation directory is not empty"
 
@@ -107,7 +107,7 @@ To check this configuration, please refer to our guides on the subject:
 
 This message indicates that the [storage space](/pages/web_cloud/web_hosting/ftp_connection) of your hosting has too much data. You must delete or move one before you can install a new [1-click module](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
 
-In this situation, [log in via FTP](/pages/web_cloud/web_hosting/ftp_connection) to your hosting plan, [back up locally](/pages/web/hosting/ftp_filezilla_user_guide#file-transfers) your data, then delete the files that are not necessary for your website to work properly.
+In this situation, [log in via FTP](/pages/web_cloud/web_hosting/ftp_connection) to your hosting plan, [back up locally](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide#file-transfers) your data, then delete the files that are not necessary for your website to work properly.
 
 > [!primary]
 >
@@ -121,7 +121,7 @@ In this situation, [log in via FTP](/pages/web_cloud/web_hosting/ftp_connection)
 
 After launching your module installation in advanced mode, you receive an email stating that your module cannot connect to the specified database.
 
-First check your [database credentials](/pages/web/hosting/cms_install_1_click_modules#advanced-module-installation).
+First check your [database credentials](/pages/web_cloud/web_hosting/cms_install_1_click_modules#advanced-module-installation).
 
 Then delete your module via the `1-click modules`{.action} tab.
 
@@ -137,8 +137,8 @@ Click on the `Multisite`{.action} tab and perform the following checks:
 
 |Scenario|What to do|
 |---|---|
-|The domain or subdomain linked to the website you want to create does not appear in the `Multisite`{.action} section.|Add your domain by following [this guide](/pages/web/hosting/multisites_configure_multisite#step-21-adding-an-ovhcloud-registered-domain).|
-|The domain name has been deleted from the `Multisite`{.action} without any action on your side.|If your domain or its [DNS zone](/pages/web/domains/dns_zone_edit#understanding-dns) is not managed from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca), follow this [guide](/pages/web/hosting/multisites_configure_multisite#step-22-adding-an-external-domain) to add your domain name to the `Multisite`{.action}.|
+|The domain or subdomain linked to the website you want to create does not appear in the `Multisite`{.action} section.|Add your domain by following [this guide](/pages/web_cloud/web_hosting/multisites_configure_multisite#step-21-adding-an-ovhcloud-registered-domain).|
+|The domain name has been deleted from the `Multisite`{.action} without any action on your side.|If your domain or its [DNS zone](/pages/web_cloud/domains/dns_zone_edit#understanding-dns) is not managed from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca), follow this [guide](/pages/web_cloud/web_hosting/multisites_configure_multisite#step-22-adding-an-external-domain) to add your domain name to the `Multisite`{.action}.|
 
 ### Your module appears under a web address such as "xxxxx.cluster0xx.hosting.ovh.net”
 
@@ -150,13 +150,13 @@ Back up the actual **1-click module** and its **Database**, if necessary. Then, 
 
 This can have several causes: 
 
-- You have recently changed your [DNS Zone](/pages/web/domains/dns_zone_edit#understanding-dns) or DNS servers, or you have [transferred your domain name](/pages/web_cloud/domains/transfer_incoming_generic_domain). Wait until these operations are completed (48 hours for changes on your `DNS servers`). Restart your devices regularly (PC, smartphone, internet connection, etc.) and refresh your web browser’s cache.
+- You have recently changed your [DNS Zone](/pages/web_cloud/domains/dns_zone_edit#understanding-dns) or DNS servers, or you have [transferred your domain name](/pages/web_cloud/domains/transfer_incoming_generic_domain). Wait until these operations are completed (48 hours for changes on your `DNS servers`). Restart your devices regularly (PC, smartphone, internet connection, etc.) and refresh your web browser’s cache.
 
-- Your domain name is still linked to your old hosting plan. In this case, edit your [DNS Zone](/pages/web/domains/dns_zone_edit#edit-your-domain-names-ovhcloud-dns-zone) or [DNS servers](/pages/web/domains/dns_server_general_information#modifying-dns-servers), or contact your old hosting provider to do so.
+- Your domain name is still linked to your old hosting plan. In this case, edit your [DNS Zone](/pages/web_cloud/domains/dns_zone_edit#edit-your-domain-names-ovhcloud-dns-zone) or [DNS servers](/pages/web_cloud/domains/dns_server_general_information#modifying-dns-servers), or contact your old hosting provider to do so.
 
 ### The "Administrator" password to access the "back-office" of your 1-click module no longer works <a name="adminpassword"></a>
 
-If your current password to access your CMS admin interface is rejected, please read the “Change your module password” paragraph in our documentation on [managing your 1-click module](/pages/web/hosting/cms_manage_1_click_module#password-change).
+If your current password to access your CMS admin interface is rejected, please read the “Change your module password” paragraph in our documentation on [managing your 1-click module](/pages/web_cloud/web_hosting/cms_manage_1_click_module#password-change).
 
 ## Go further <a name="#gofurther"></a>
 

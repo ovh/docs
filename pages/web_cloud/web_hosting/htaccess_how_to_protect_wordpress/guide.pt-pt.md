@@ -114,7 +114,7 @@ Existem várias formas de definir e modificar os parâmetros que irão modificar
 
 > [!warning]
 >
-> Antes de seguir os passos abaixo, é necessário reencaminhar o protocolo HTTP para HTTPS. Para isso, siga as instruções do nosso manual ["Ativar o HTTPS num website com certificado SSL"](/pages/web/hosting/ssl-activate-https-website#1-ativar-o-certificado-ssl-no-alojamento).
+> Antes de seguir os passos abaixo, é necessário reencaminhar o protocolo HTTP para HTTPS. Para isso, siga as instruções do nosso manual ["Ativar o HTTPS num website com certificado SSL"](/pages/web_cloud/web_hosting/ssl-activate-https-website#1-ativar-o-certificado-ssl-no-alojamento).
 
 ### Impedir a apresentação dos diretórios e sub-diretórios
 

@@ -130,7 +130,7 @@ Si no ha configurado ninguna forma de pago pero tiene servicios con renovación 
 #### Ideas y consejos
 
 Tenga a mano su ID de cliente y su contraseña de OVHcloud. Los necesitará para abonar las facturas.
-Asimismo, puede consultar el apartado «Abonar el importe pendiente» de nuestra guía [Gestionar las facturas de OVHcloud](/pages/account/billing/invoice_management#abonar-el-importe-pendiente).
+Asimismo, puede consultar el apartado «Abonar el importe pendiente» de nuestra guía [Gestionar las facturas de OVHcloud](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#abonar-el-importe-pendiente).
 
 ### ¿Cómo conocer el estado de un pago?
 

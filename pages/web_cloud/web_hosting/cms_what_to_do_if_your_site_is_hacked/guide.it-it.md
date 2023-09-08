@@ -80,7 +80,7 @@ Per OVHcloud, consulta la nostra guida:
 - [Modificare la password di accesso allo spazio di storage FTP del tuo hosting Web](/pages/web_cloud/web_hosting/ftp_change_password).
 - [Modifica la password di accesso al tuo database](/pages/web_cloud/web_hosting/sql_change_password).
 
-Consigliamo inoltre di utilizzare un [gestore di password](/pages/account/customer/manage-ovh-password#utilizza-un-software-per-la-gestione-di-password).
+Consigliamo inoltre di utilizzare un [gestore di password](/pages/account_and_service_management/account_information/manage-ovh-password#utilizza-un-software-per-la-gestione-di-password).
 
 > [!warning]
 > 
@@ -201,7 +201,7 @@ Aggiorna il tuo sito Web al suo codice sorgente, ai parametri di sicurezza di cu
 
 Verifica i diritti di accesso FTP "CHMOD" per ogni cartelle e file ospitati nel tuo spazio di archiviazione.
 Di default, consigliamo di utilizzare al massimo i diritti "CHMOD" **705** per i fascicoli e **604** per i file.
-Per maggiori informazioni sui permessi "CHMOD", consulta la sezione "Informazioni utili" del nostro [tutorial sull'utilizzo del client FTP Filezilla](/pages/web/hosting/ftp_filezilla_user_guide#useful-information).
+Per maggiori informazioni sui permessi "CHMOD", consulta la sezione "Informazioni utili" del nostro [tutorial sull'utilizzo del client FTP Filezilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide#useful-information).
 
 Se utilizzi un CMS (Wordpress, Joomla!, PrestaShop, Drupal...), aggiorna i tuoi plugin, il tuo tema e il CMS in sé.
 Utilizza plugin/temi "ufficiali" e aggiorna il tuo sito Web il più regolarmente possibile ed esaustivamente.

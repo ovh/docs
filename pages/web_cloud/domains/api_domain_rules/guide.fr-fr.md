@@ -497,7 +497,7 @@ Partons d'un exemple n'imposant qu'une seule règle pour la commande d'un nom de
 >> }
 >> ```
 
-Avec cette règle, lors de la commande, le domaine doit obligatoirement avoir une [configuration](/pages/web/domains/api_domain_order#configurations-management) ayant pour label `ACCEPT_CONDITIONS` avec une valeur booléenne à `true`, `1` ou `"1"`.
+Avec cette règle, lors de la commande, le domaine doit obligatoirement avoir une [configuration](/pages/web_cloud/domains/api_domain_order#configurations-management) ayant pour label `ACCEPT_CONDITIONS` avec une valeur booléenne à `true`, `1` ou `"1"`.
 
 ### Les opérateurs "and" et "or"
 

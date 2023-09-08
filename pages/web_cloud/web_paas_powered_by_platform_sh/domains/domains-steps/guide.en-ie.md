@@ -37,7 +37,7 @@ If you are planning to host multiple subdomains on different projects, see the a
 > If using a CDN, skip this step. The CDN should already have been configured in advance to point to Web PaaS as its upstream.
 > 
 
-This step will tell the Web PaaS edge layer where to route requests for your web site. You can do this through the CLI with `webpaas domain:add example.com` or  [using the managment console](/pages/web/web-paas/administration-web/configure-project#domains).
+This step will tell the Web PaaS edge layer where to route requests for your web site. You can do this through the CLI with `webpaas domain:add example.com` or  [using the managment console](/pages/web_cloud/web_paas_powered_by_platform_sh/administration/administration-web/configure-project#domains).
 
 You can add multiple domains to point to your project. Each domain can have its own custom SSL certificate, or use the default one provided.
 

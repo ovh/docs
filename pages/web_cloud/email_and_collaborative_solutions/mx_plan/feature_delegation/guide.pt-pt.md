@@ -32,7 +32,7 @@ A delegação dá ao utilizador de uma conta de e-mail a possibilidade de gerir 
 |Versão antiga da oferta MX Plan|Nova versão da oferta MX Plan|
 |---|---|
 |![email](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> Consulte o tipo de oferta na secção «Subscrição».|![email](images/mxplan-starter-new-step1.png){.thumbnail}<br>Consulte a Referência do servidor na secção "Resumo".|
-|Consulte este manual a partir da secção "[Instruções](#oldmxplan)".|Consulte o nosso manual "[Consultar a sua conta Exchange a partir da interface OWA](/pages/web/emails/email_owa#alterar-a-palavra-passe)"|
+|Consulte este manual a partir da secção "[Instruções](#oldmxplan)".|Consulte o nosso manual "[Consultar a sua conta Exchange a partir da interface OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa#alterar-a-palavra-passe)"|
 
 ## Instruções <a name="oldmxplan"></a>
 

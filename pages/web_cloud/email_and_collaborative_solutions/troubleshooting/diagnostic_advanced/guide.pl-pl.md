@@ -30,7 +30,7 @@ Nie można odbierać ani wysyłać e-maili przy użyciu programu pocztowego lub 
 
 Aby Twoje e-maile działały, musisz posiadać aktywną ofertę e-mail. Jeśli Twoja usługa e-mail jest przypisana do hostingu, sprawdź, czy oferta nie wygasła. Informacje te możesz sprawdzić bezpośrednio w Panelu klienta. Podobnie Twoja domena musi być aktywna.
 
-Sprawdź, czy jesteś na bieżąco z [płatnościami](/pages/account/billing/invoice_management#pay-bills) i [odnawianiem](/pages/account/billing/how_to_use_automatic_renewal#renewal-management) usług.
+Sprawdź, czy jesteś na bieżąco z [płatnościami](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) i [odnawianiem](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) usług.
 
 Sprawdź, czy Twoje usługi działają poprawnie:
 

@@ -57,7 +57,7 @@ Reminder of its definition and operating principle:
 > 
 > If this system triggers and you want to log into your ESXi immediately, you will need to manually unlock the administrator account.
 >
-> To do this, you will need to [reboot](/pages/cloud/dedicated/getting-started-with-dedicated-server#restarting-your-dedicated-server) your ESXi server via the OVHcloud Control Panel.
+> To do this, you will need to [reboot](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server#restarting-your-dedicated-server) your ESXi server via the OVHcloud Control Panel.
 > 
 
 You can view the access log history in the following files via SSH:

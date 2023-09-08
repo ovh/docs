@@ -26,7 +26,7 @@ Este guia permite-lhe adquirir conhecimentos fundamentais para assegurar a dispo
 ## Requisitos
 
 - um [plano OVHcloud Web Hosting](https://www.ovhcloud.com/pt/web-hosting/)
-- ter os [detalhes de login](/pages/web/hosting/ftp_connection#1-recuperar-as-informacoes-de-acesso) para acessar o espaço de armazenamento do seu plano de hospedagem
+- ter os [detalhes de login](/pages/web_cloud/web_hosting/ftp_connection#1-recuperar-as-informacoes-de-acesso) para acessar o espaço de armazenamento do seu plano de hospedagem
 - acesso ao [Painel de Controlo da Nuvem OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
 - acesso à [interface admin para o seu site](https://codex.wordpress.org/pt-br:Primeiros_Passos_com_o_WordPress){.external}
 
@@ -74,12 +74,12 @@ Os e-mails de phishing também constituem uma ameaça para a segurança do seu s
 Em caso de não renovação dos seus serviços, a OVHcloud tem a obrigação legal, no final da subscrição, de eliminar integralmente os dados associados à sua oferta de alojamento, bem como a totalidade dos seus backups. Enviamos mensagens de aviso aos nossos clientes para lhes recordar os prazos de renovação.<br>
 No entanto, estes e-mails de relance podem chegar aos seus spams, ou o endereço de e-mail associado à sua conta OVHcloud pode estar errado ou já não estar disponível.
 
-Se o seu site tem um lugar preponderante na sua atividade profissional, [ative a renovação automática](/pages/account/billing/how_to_use_automatic_renewal#aceder-a-parametrizacao-dos-seus-servicos) no conjunto dos seus serviços OVHcloud.<br>
+Se o seu site tem um lugar preponderante na sua atividade profissional, [ative a renovação automática](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#aceder-a-parametrizacao-dos-seus-servicos) no conjunto dos seus serviços OVHcloud.<br>
 Além disso, recomendamos que verifique regularmente a **validade dos métodos de pagamento** que registou.
 
 ### Etapa 6: verifique que o seu site está atualizado
 
-Verifique regularmente as atualizações do seu site seguindo as instruções deste [guia](/pages/web/hosting/diagnostic_403_forbidden#22-atualizar-o-website).
+Verifique regularmente as atualizações do seu site seguindo as instruções deste [guia](/pages/web_cloud/web_hosting/diagnostic_403_forbidden#22-atualizar-o-website).
 
 Também pode usar uma versão recente da [linguagem PHP](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014) no seu alojamento.
 

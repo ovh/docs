@@ -79,7 +79,7 @@ W przypadku OVHcloud skorzystaj z naszej dokumentacji dotyczącej:
 - [Zmień hasło dostępowe do przestrzeni dyskowej FTP Twojego hostingu](/pages/web_cloud/web_hosting/ftp_change_password).
 - [Zmiana hasła do bazy danych](/pages/web_cloud/web_hosting/sql_change_password).
 
-Zalecamy również użycie [menedżera haseł](/pages/account/customer/manage-ovh-password#uzycie-managera-hasel).
+Zalecamy również użycie [menedżera haseł](/pages/account_and_service_management/account_information/manage-ovh-password#uzycie-managera-hasel).
 
 > [!warning]
 > 
@@ -200,7 +200,7 @@ Zaktualizuj Twoją stronę WWW, używaj jej kodu źródłowego, dostępnych para
 
 Sprawdź uprawnienia dostępu FTP "CHMOD" dla każdego z Twoich katalogów i plików przechowywanych w Twojej przestrzeni dyskowej.
 Domyślnie zalecamy maksymalne wykorzystanie uprawnień "CHMOD" **705** w przypadku katalogów i **604** w przypadku plików.
-Więcej informacji na temat uprawnień "CHMOD" znajduje się w sekcji "Przydatne informacje" w naszym [tutorial dotyczący korzystania z klienta FTP Filezilla](/pages/web/hosting/ftp_filezilla_user_guide#useful-information).
+Więcej informacji na temat uprawnień "CHMOD" znajduje się w sekcji "Przydatne informacje" w naszym [tutorial dotyczący korzystania z klienta FTP Filezilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide#useful-information).
 
 Jeśli korzystasz z CMS (Wordpress, Joomla!, PrestaShop, Drupal,...), aktualizuj wtyczki, temat i sam CMS.
 Uruchom wtyczki/tematy "oficjalne" i aktualizuj stronę internetową tak regularnie, jak to możliwe i wyczerpująco.

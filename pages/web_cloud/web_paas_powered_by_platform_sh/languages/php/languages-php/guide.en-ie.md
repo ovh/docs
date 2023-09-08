@@ -172,7 +172,7 @@ because the dependencies aren't yet present.
 To resolve this, you have two options:
 
 - Have your script `include` dependencies instead of `require` and fail gracefully if the dependencies aren't there.
-- Enable preloading with a variable that [isn't available during the build](/pages/web/web-paas/development-variables#setting-variables). Then preloading happens only on deploy.
+- Enable preloading with a variable that [isn't available during the build](/pages/web_cloud/web_paas_powered_by_platform_sh/development/development-variables#setting-variables). Then preloading happens only on deploy.
 
 ## FFI
 

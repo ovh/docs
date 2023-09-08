@@ -20,7 +20,7 @@ Actualmente, hay una ingente cantidad de sitios web en la red. Tanto si quiere c
 - Haber recibido el email de confirmación de la instalación de su alojamiento web.
 - Disponer de un [dominio](https://www.ovhcloud.com/es/domains/){.external} con el que poder acceder a su sitio web.
 - Estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.
-- Estar actualizado en los [pagos](/pages/account/billing/invoice_management#pay-bills) y [renovaciones](/pages/account/billing/how_to_use_automatic_renewal#renewal-management) de los servicios asociados (dominio y alojamiento web).
+- Estar actualizado en los [pagos](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) y [renovaciones](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) de los servicios asociados (dominio y alojamiento web).
 
 ## Procedimiento
 

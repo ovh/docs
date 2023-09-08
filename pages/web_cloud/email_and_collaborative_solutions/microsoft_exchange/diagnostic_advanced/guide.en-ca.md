@@ -15,7 +15,7 @@ Since there is a multitude of reasons why errors might occur on Exchange email a
 - an [OVHcloud Exchange solution](https://www.ovhcloud.com/en-ca/emails/hosted-exchange/) already set up
 - credentials for the Exchange account to be checked
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
-- being up to date in the [payments](/pages/account/billing/invoice_management#pay-bills) for this service and the related domain name.
+- being up to date in the [payments](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) for this service and the related domain name.
 
 ## Instructions
 
@@ -54,7 +54,7 @@ Please follow the instructions in [this guide](/pages/web_cloud/email_and_collab
 ### Subscription to the account has expired <a name="expired"></a>
 
 Your subscription is no longer active, sending and receiving has been disabled.<br>
-To reactivate your subscription, simply reconfigure its [billing frequency](/pages/web/microsoft-collaborative-solutions/manage_billing_exchange#periodicity) in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca).
+To reactivate your subscription, simply reconfigure its [billing frequency](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_billing_exchange#periodicity) in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca).
 
 ### Account locked due to the security policy
 

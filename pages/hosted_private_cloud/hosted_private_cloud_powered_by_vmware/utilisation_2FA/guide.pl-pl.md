@@ -80,7 +80,7 @@ Jedyna różnica będzie polegała na tym, czy użytkownik będzie mógł samodz
 
 Możliwe jest korzystanie z kilku aplikacji innych firm, które wymagają zalogowania do vCenter.
 
-Aplikacje te muszą wcześniej uzyskać autoryzację poprzez politykę dostępu do vCenter, którą możesz skonfigurować w [Panelu klienta](/pages/cloud/private-cloud/manager_ovh_private_cloud#bezpieczenstwo).
+Aplikacje te muszą wcześniej uzyskać autoryzację poprzez politykę dostępu do vCenter, którą możesz skonfigurować w [Panelu klienta](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/manager_ovh_private_cloud#bezpieczenstwo).
 
 Aplikacje te będą mogły uzyskać dostęp do infrastruktur OVH, ale nie będą zarządzać bezpośrednio weryfikacją dwuetapową.
 

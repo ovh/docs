@@ -41,7 +41,7 @@ Oznacza to, że przed rozwiązaniem umowy musisz być **pewny**:
 >
 > Rozwiązanie umowy może być stosowane tylko wówczas, gdy spełnione są następujące warunki:
 >
-> * jesteś "kontaktem administracyjnym" usługi (więcej informacji znajdziesz w [tym przewodniku](/pages/account/customer/managing_contacts#definicja));
+> * jesteś "kontaktem administracyjnym" usługi (więcej informacji znajdziesz w [tym przewodniku](/pages/account_and_service_management/account_information/managing_contacts#definicja));
 > * usługa nie jest odnawiana ręcznie;
 > * usługa nie zostaje zawieszona, w szczególności z powodu nieuregulowania faktury.
 >
@@ -147,7 +147,7 @@ Każda usługa [Public Cloud](https://www.ovhcloud.com/pl/public-cloud/) może z
 
 Public Cloud OVHcloud opiera się na zasadzie *Pay as you go* (więcej szczegółów na naszej stronie [informacyjnej o sposobie rozliczania usługi Public Cloud](/pages/public_cloud/compute/analyze_billing)). Płacisz pod koniec miesiąca tylko za czas rzeczywistego wykorzystania zasobów.
 
-Możesz również [sprawdzić aktualne](/pages/platform/public-cloud/analyze_billing#sprawdzic-obecne-zuzycie) zużycie zasobów w Panelu klienta OVHcloud i otrzymywać powiadomienie e-mailem, jeśli prognoza zużycia zasobów przekroczy określony próg.
+Możesz również [sprawdzić aktualne](/pages/public_cloud/compute/analyze_billing#sprawdzic-obecne-zuzycie) zużycie zasobów w Panelu klienta OVHcloud i otrzymywać powiadomienie e-mailem, jeśli prognoza zużycia zasobów przekroczy określony próg.
 
 ### Web Cloud <a name="webcloud"></a>
 
@@ -211,23 +211,23 @@ Otrzymasz e-mail z opisem procedury zamknięcia usługi MX Plan.
 
 #### E-mail Pro <a name="emailpro"></a>
 
-Aby zrezygnować z usługi [E-mail Pro](https://www.ovhcloud.com/pl/emails/email-pro/), postępuj zgodnie z instrukcjami zawartymi w tym [przewodniku](/pages/web/emails-pro/manage_billing_emailpro#usuwanie-kont).
+Aby zrezygnować z usługi [E-mail Pro](https://www.ovhcloud.com/pl/emails/email-pro/), postępuj zgodnie z instrukcjami zawartymi w tym [przewodniku](/pages/web_cloud/email_and_collaborative_solutions/email_pro/manage_billing_emailpro#usuwanie-kont).
 
 #### Hosted Exchange <a name="hosted"></a>
 
-Aby zrezygnować z usługi [Hosted Exchange](https://www.ovhcloud.com/pl/emails/hosted-exchange/), postępuj zgodnie z instrukcjami zawartymi w tym [przewodniku](/pages/web/microsoft-collaborative-solutions/manage_billing_exchange#usuwanie-kont).
+Aby zrezygnować z usługi [Hosted Exchange](https://www.ovhcloud.com/pl/emails/hosted-exchange/), postępuj zgodnie z instrukcjami zawartymi w tym [przewodniku](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_billing_exchange#usuwanie-kont).
 
 #### Private Exchange <a name="private"></a>
 
-Aby zrezygnować z usługi [Private Exchange](https://www.ovhcloud.com/pl/emails/private-exchange/), postępuj zgodnie z instrukcjami zawartymi w tym [przewodniku](/pages/web/microsoft-collaborative-solutions/manage_billing_exchange#usuwanie-kont).
+Aby zrezygnować z usługi [Private Exchange](https://www.ovhcloud.com/pl/emails/private-exchange/), postępuj zgodnie z instrukcjami zawartymi w tym [przewodniku](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_billing_exchange#usuwanie-kont).
 
 #### Office 365 csp 1 <a name="office-csp1"></a>
 
-Aby zrezygnować z usługi [Office 365](https://www.ovhcloud.com/pl/collaborative-tools/microsoft-365/) csp 11, postępuj zgodnie z instrukcjami zawartymi w tym [przewodniku](/pages/web/microsoft-collaborative-solutions/office_csp1#zarzadzaj-subskrypcjami).
+Aby zrezygnować z usługi [Office 365](https://www.ovhcloud.com/pl/collaborative-tools/microsoft-365/) csp 11, postępuj zgodnie z instrukcjami zawartymi w tym [przewodniku](/pages/web_cloud/email_and_collaborative_solutions/microsoft_office/office_csp1#zarzadzaj-subskrypcjami).
 
 #### Office 365 csp 2 <a name="office-csp2"></a>
 
-Aby zrezygnować z usługi [Office 365 csp](https://www.ovhcloud.com/pl/collaborative-tools/microsoft-365/) 22, postępuj zgodnie z instrukcjami zawartymi w tym [przewodniku](/pages/web/microsoft-collaborative-solutions/office_csp2#zarzadzanie-subskrypcjami).
+Aby zrezygnować z usługi [Office 365 csp](https://www.ovhcloud.com/pl/collaborative-tools/microsoft-365/) 22, postępuj zgodnie z instrukcjami zawartymi w tym [przewodniku](/pages/web_cloud/email_and_collaborative_solutions/microsoft_office/office_csp2#zarzadzanie-subskrypcjami).
 
 #### Sharepoint <a name="sharepoint"></a>
 

@@ -37,7 +37,7 @@ This means that, before any termination, you must be **certain** that:
 >
 > Termination can only be applied if the following conditions are met:
 >
-> - You are the "administrative contact" for the service (for more information, see [this guide](/pages/account/customer/managing_contacts#definition)).
+> - You are the "administrative contact" for the service (for more information, see [this guide](/pages/account_and_service_management/account_information/managing_contacts#definition)).
 > - The service is not manually renewed.
 > - The service is not suspended, particularly because an invoice has not been paid.
 >
@@ -136,7 +136,7 @@ Each [Public Cloud](https://www.ovhcloud.com/en-ca/public-cloud/) service can be
 
 OVHcloud Public Cloud is based on the principle of *Pay-as-you-go* (more details are available on our information page about the [Public Cloud billing method](/pages/public_cloud/compute/analyze_billing)). At the end of the month, you only pay for the effective resource usage time.
 
-You can also [view your current resource usage](/pages/platform/public-cloud/analyze_billing#view-your-current-resource-usage) in the OVHcloud Control Panel and receive email alerts when your resource usage is projected to exceed a certain threshold.
+You can also [view your current resource usage](/pages/public_cloud/compute/analyze_billing#view-your-current-resource-usage) in the OVHcloud Control Panel and receive email alerts when your resource usage is projected to exceed a certain threshold.
 
 ### Web Cloud <a name="webcloud"></a>
 
@@ -184,7 +184,7 @@ You will then get an email containing the procedure to close your MX Plan, so yo
 
 #### Hosted Exchange <a name="hosted"></a>
 
-To cancel your [Hosted Exchange](https://www.ovhcloud.com/en-ca/emails/hosted-exchange/) service, follow the instructions of this [guide](/pages/web/microsoft-collaborative-solutions/manage_billing_exchange#deleting-accounts).
+To cancel your [Hosted Exchange](https://www.ovhcloud.com/en-ca/emails/hosted-exchange/) service, follow the instructions of this [guide](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_billing_exchange#deleting-accounts).
 
 ### Transversal solutions <a name="transversal"></a>
 

@@ -242,7 +242,7 @@ In caso di problemi di connessione, ad esempio errori relativi alle chiavi SSH, 
 
 > [!primary]
 >
-Se hai creato un'istanza senza chiave SSH tramite l'API OVHcloud o l'interfaccia Openstack Horizon, puoi aggiungere una chiave SSH alla tua istanza solo attraverso [modalità rescue](/pages/public_cloud/compute/put_an_instance_in_rescue_mode), seguendo le istruzioni descritte in [questa sezione della guida appropriata](/pages/platform/public-cloud/replacing_lost_ssh_key#procedura).
+Se hai creato un'istanza senza chiave SSH tramite l'API OVHcloud o l'interfaccia Openstack Horizon, puoi aggiungere una chiave SSH alla tua istanza solo attraverso [modalità rescue](/pages/public_cloud/compute/put_an_instance_in_rescue_mode), seguendo le istruzioni descritte in [questa sezione della guida appropriata](/pages/public_cloud/compute/replacing_lost_ssh_key#procedura).
 >
 
 #### Connettersi a un’istanza Linux da Linux/Mac

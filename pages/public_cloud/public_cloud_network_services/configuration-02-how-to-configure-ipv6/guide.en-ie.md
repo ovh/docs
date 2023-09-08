@@ -16,7 +16,7 @@ By default, only the IPv4 address is configured.
 
 > [!primary]
 > 
-> Floating IP and Gateway currently do not support IPv6. You can only use IPv6 with instances in [Public Mode](/pages/platform/network-services/concepts-01-public-cloud-networking-concepts#publicmode).
+> Floating IP and Gateway currently do not support IPv6. You can only use IPv6 with instances in [Public Mode](/pages/public_cloud/public_cloud_network_services/concepts-01-public-cloud-networking-concepts#publicmode).
 >
 
 ## Requirements

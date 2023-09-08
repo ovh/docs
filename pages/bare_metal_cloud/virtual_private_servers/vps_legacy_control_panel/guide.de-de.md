@@ -74,7 +74,7 @@ Bei der Reinstallation Ihres VPS erhalten Sie eine E-Mail mit Ihrem Root-Passwor
 
 Der Benutzer **root** wird standardmäßig auf GNU/Linux-Systemen erstellt. Dies ist die höchste Zugriffsebene auf das Betriebssystem. Es kann gefährlich sein, Ihren VPS über den Root-Benutzer und dessen Passwort zugänglich zu belassen, da dieser irreversibel schädliche Operationen durchführen kann.
 
-Root-Logins über das SSH-Protokoll sollten deaktiviert werden. [Erstellen Sie einen neuen Benutzer](/pages/cloud/vps/secure_your_vps#createuser), bevor Sie mit den nachfolgenden Schritten fortfahren.
+Root-Logins über das SSH-Protokoll sollten deaktiviert werden. [Erstellen Sie einen neuen Benutzer](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps#createuser), bevor Sie mit den nachfolgenden Schritten fortfahren.
 
 Verwenden Sie einen Text-Editor wie *vim* oder *nano*, um diese Konfigurationsdatei zu bearbeiten:
 

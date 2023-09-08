@@ -28,7 +28,7 @@ La délégation donne la possibilité à l'utilisateur d'un compte e-mail de gé
 |Version historique de l'offre MX Plan|Nouvelle version de l'offre MX Plan|
 |---|---|
 |![email](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> Repérez l'offre dans le cadre « Abonnement »|![email](images/mxplan-starter-new-step1.png){.thumbnail}<br>Repérez la « Référence serveur » dans le cadre « Résumé »|
-|Poursuivez la lecture de ce guide à partir de la section « [En pratique](#oldmxplan) »|Consultez notre guide « [Consulter son compte Exchange depuis l’interface OWA](/pages/web/emails/email_owa#modifier-le-mot-de-passe) »|
+|Poursuivez la lecture de ce guide à partir de la section « [En pratique](#oldmxplan) »|Consultez notre guide « [Consulter son compte Exchange depuis l’interface OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa#modifier-le-mot-de-passe) »|
 
 ## En pratique <a name="oldmxplan"></a>
 

@@ -26,7 +26,7 @@ Puoi gestire il rinnovo e l’annullamento dei tuoi servizi dallo Spazio Cliente
 
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 - Disporre di servizi OVHcloud attivi
-- Essere [contatto fatturazione](/pages/account/customer/managing_contacts#definizione) dei servizi OVHcloud
+- Essere [contatto fatturazione](/pages/account_and_service_management/account_information/managing_contacts#definizione) dei servizi OVHcloud
 
 ## Procedura
 
@@ -36,9 +36,9 @@ ma è anche possibile configurare alcuni prodotti (Domini, Hosting, VPS, Server 
 
 Ti consigliamo di leggere queste guide e concentrarti sulle operazioni che vuoi effettuare:
 
-- [Visualizza lo stato del rinnovo dei servizi](/pages/account/billing/how_to_use_automatic_renewal#accedere-alle-impostazioni-dei-servizi) : questa guida ti aiuta a verificare se i tuoi servizi sono rinnovati automaticamente. permette inoltre di ottenere la data di rinnovo o di scadenza.
+- [Visualizza lo stato del rinnovo dei servizi](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#accedere-alle-impostazioni-dei-servizi) : questa guida ti aiuta a verificare se i tuoi servizi sono rinnovati automaticamente. permette inoltre di ottenere la data di rinnovo o di scadenza.
 
-- [Gestire il rinnovo dei servizi](/pages/account/billing/how_to_use_automatic_renewal#gestire-il-rinnovo-dei-servizi-ovhcloud) : questa guida ti mostra come attivare o disattivare il rinnovo automatico, modificare la frequenza di pagamento di un servizio e pagare i rinnovi prima della scadenza.
+- [Gestire il rinnovo dei servizi](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#gestire-il-rinnovo-dei-servizi-ovhcloud) : questa guida ti mostra come attivare o disattivare il rinnovo automatico, modificare la frequenza di pagamento di un servizio e pagare i rinnovi prima della scadenza.
 
 - [Gestire i metodi di pagamento](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods) : questa guida ti mostra come utilizzare un metodo di pagamento registrato per rinnovare i tuoi servizi. Se necessario, è possibile aggiungere o rimuovere metodi di pagamento.
 

@@ -53,7 +53,7 @@ Introduzca la información solicitada. Si necesita ayuda para completar los dist
 
 > [!warning]
 > 
-> Aunque el campo "Key Pair" no es obligatorio en la interfaz Horizon al crear una instancia, es absolutamente necesario registrar una llave SSH para poder conectarse a una instancia. Sin una llave SSH, deberá reiniciar la instancia en modo de rescate para poder crear una contraseña o añadir una llave SSH al archivo correspondiente (para más información, consulte la guía [Modificar su llave SSH en caso de pérdida](/pages/platform/public-cloud/replacing_lost_ssh_key#procedimiento)).
+> Aunque el campo "Key Pair" no es obligatorio en la interfaz Horizon al crear una instancia, es absolutamente necesario registrar una llave SSH para poder conectarse a una instancia. Sin una llave SSH, deberá reiniciar la instancia en modo de rescate para poder crear una contraseña o añadir una llave SSH al archivo correspondiente (para más información, consulte la guía [Modificar su llave SSH en caso de pérdida](/pages/public_cloud/compute/replacing_lost_ssh_key#procedimiento)).
 >
 
 Una vez que haya terminado de configurar la instancia o instancias, haga clic en el botón `Launch Instance`{.action} para lanzarlas.

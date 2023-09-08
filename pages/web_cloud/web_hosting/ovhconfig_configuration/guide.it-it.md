@@ -31,7 +31,7 @@ Se invece vuoi modificare manualmente il file, prosegui nella lettura di questa 
 
 #### Step 1: accedi allo spazio di storage
 
-Recupera nome utente FTP principale, password, indirizzo del server FTP ed effettua il login allo spazio di storage. In caso di necessità, consulta il paragrafo “Connettersi allo spazio di storage” della guida [Mettere online un sito Internet su un hosting Web](/pages/web/hosting/hosting_how_to_get_my_website_online#2-connettersi-allo-spazio-di-storage){.external}. 
+Recupera nome utente FTP principale, password, indirizzo del server FTP ed effettua il login allo spazio di storage. In caso di necessità, consulta il paragrafo “Connettersi allo spazio di storage” della guida [Mettere online un sito Internet su un hosting Web](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online#2-connettersi-allo-spazio-di-storage){.external}. 
 
 **Se non disponi più di questi dati**, accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, seleziona il tuo servizio nella sezione `Hosting`{.action} e clicca sulla scheda `FTP - SSH`{.action}.  In questa pagina sono riportate le informazioni necessarie per accedere allo storage. Se non ricordi la tua password FTP, consulta la guida [Modificare la password di un utente FTP](/pages/web_cloud/web_hosting/ftp_change_password){.external}.
 
@@ -70,7 +70,7 @@ Sostituisci le variabili con i valori della configurazione che intendi utilizzar
 |app.engine.version|Permette di definire la versione di PHP utilizzata dall’hosting tra [quelle proposte da OVHcloud](https://www.ovhcloud.com/it/web-hosting/uc-programming-language/){.external}. Inserisci la versione che vuoi utilizzare.|
 |http.firewall|Permette di attivare o disattivare il [firewall incluso sugli hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/options/){.external}: inserisci “security” per attivarlo e “none” per disattivarlo.|
 |environment|Permette di gestire il comportamento della cache dei file statici del tuo sito e gli errori PHP.  Inserisci “production” per ottimizzare la memorizzazione in cache e nascondere gli errori PHP o “development” per disattivare la cache e visualizzare gli errori PHP.|
-|container.image|Permette di modificare l’ambiente di esecuzione utilizzato dall’hosting. Per conoscere i motori disponibili, consulta la sezione   “Opzioni di configurazione disponibili” della guida [Modificare la configurazione di un hosting Web](/pages/web/hosting/ovhconfig_modify_system_runtime#opzioni-di-configurazione-disponibili){.external}.|
+|container.image|Permette di modificare l’ambiente di esecuzione utilizzato dall’hosting. Per conoscere i motori disponibili, consulta la sezione   “Opzioni di configurazione disponibili” della guida [Modificare la configurazione di un hosting Web](/pages/web_cloud/web_hosting/ovhconfig_modify_system_runtime#opzioni-di-configurazione-disponibili){.external}.|
 
 > [!warning]
 >
@@ -146,7 +146,7 @@ Una volta modificato il file .ovhconfig, non ti resta che caricarlo nello storag
 
 ### Utilizzo avanzato del file .ovhconfig 
 
-Se utilizzi il tuo hosting per ospitare più siti, hai sicuramente attivato l’opzione multisito.  Se hai bisogno di una diversa versione di PHP per alcuni di essi è necessario creare, per ognuno di questi siti, un file .ovhconfig specifico contenente la versione da utilizzare. Per effettuare l’operazione, torna alla sezione [Modifica il file .ovhconfig](/pages/web/hosting/ovhconfig_configuration#modifica-il-file-ovhconfig){.external} di questa guida. Quando dovrai caricare il file .ovhconfig nello spazio di storage, assicurati di farlo nella cartella root del sito Web configurato come multisito (questa cartella è disponibile nello Spazio Cliente OVHcloud, nella scheda `Multisito`{.action} dell’hosting in questione).
+Se utilizzi il tuo hosting per ospitare più siti, hai sicuramente attivato l’opzione multisito.  Se hai bisogno di una diversa versione di PHP per alcuni di essi è necessario creare, per ognuno di questi siti, un file .ovhconfig specifico contenente la versione da utilizzare. Per effettuare l’operazione, torna alla sezione [Modifica il file .ovhconfig](/pages/web_cloud/web_hosting/ovhconfig_configuration#modifica-il-file-ovhconfig){.external} di questa guida. Quando dovrai caricare il file .ovhconfig nello spazio di storage, assicurati di farlo nella cartella root del sito Web configurato come multisito (questa cartella è disponibile nello Spazio Cliente OVHcloud, nella scheda `Multisito`{.action} dell’hosting in questione).
 
 > [!warning]
 >

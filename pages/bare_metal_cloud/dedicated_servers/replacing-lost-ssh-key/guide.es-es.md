@@ -34,7 +34,7 @@ No obstante, podrá conectarse al servidor utilizando el [modo de rescate de OVH
 
 Para acceder al servidor en modo de rescate, es necesario desactivar primero la llave SSH actual.
 
-Inicie sesión en el [Panel de configuración de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y acceda al apartado `Llaves SSH`{.action}. Si necesita ayuda, consulte nuestra guía ["Crear claves SSH"](/pages/cloud/dedicated/creating-ssh-keys-dedicated#cpsshkey).
+Inicie sesión en el [Panel de configuración de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y acceda al apartado `Llaves SSH`{.action}. Si necesita ayuda, consulte nuestra guía ["Crear claves SSH"](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated#cpsshkey).
 
 La clave pública almacenada en el área de cliente no es necesaria sin la clave privada correspondiente, por lo que puede eliminarla. Haga clic en el botón <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> situado a la derecha de la llave y seleccione `Eliminar la llave`{.action}.
 

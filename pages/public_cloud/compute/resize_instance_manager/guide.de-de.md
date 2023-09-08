@@ -27,7 +27,7 @@ Durch einen Anstieg der Last oder aufgrund neuer Anforderungen kann es mit der Z
 
 ## Voraussetzungen
 
-- Sie haben eine [Public Cloud Instanz](/pages/platform/public-cloud/public-cloud-first-steps#schritt-3-instanz-erstellen) in Ihrem Kunden-Account.
+- Sie haben eine [Public Cloud Instanz](/pages/public_cloud/compute/public-cloud-first-steps#schritt-3-instanz-erstellen) in Ihrem Kunden-Account.
 - Sie haben Zugriff auf das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 ## In der praktischen Anwendung

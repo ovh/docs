@@ -28,7 +28,7 @@ Sollten Sie jedoch Schwierigkeiten haben, einige der hier beschriebenen Operatio
 
 - Sie haben ein [OVHcloud Webhosting](https://www.ovh.de/hosting) in Ihrem Kunden-Account.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
-- Sie verfügen über die [Login-Daten](/pages/web/hosting/ftp_connection#schritt-1-erforderliche-verbindungsinformationen-abrufen) für den Speicherplatz Ihres Hostings.
+- Sie verfügen über die [Login-Daten](/pages/web_cloud/web_hosting/ftp_connection#schritt-1-erforderliche-verbindungsinformationen-abrufen) für den Speicherplatz Ihres Hostings.
 - Sie haben Zugriff auf das [Admin-Interface für Ihre Webseite](https://wordpress.org/support/article/first-steps-with-wordpress/){.external}.
 
 ## In der praktischen Anwendung
@@ -75,12 +75,12 @@ Phishing-E-Mails stellen ebenfalls eine Bedrohung für die Sicherheit Ihrer Webs
 Wenn Ihre Dienste nicht verlängert werden, ist OVHcloud gesetzlich verpflichtet, nach Ablauf Ihres Abonnements alle Daten aus Ihrem Hosting-Angebot sowie alle zugehörigen Backups vollständig zu löschen. Wir senden unseren Kunden Ablaufbenachrichtigungen, um sie an die Verlängerungsfristen zu erinnern.<br>
 Diese E-Mails können jedoch in Ihren Spam-Ordnern eingehen, oder die primäre E-Mail-Adresse Ihres OVHcloud Kunden-Accounts ist möglicherweise unverfügbar.
 
-Wenn Ihre Website ein wichtiger Teil Ihrer Geschäftstätigkeiten ist, [aktivieren Sie die automatische Verlängerung](/pages/account/billing/how_to_use_automatic_renewal#ubersicht-meine-dienste-aufrufen) für alle Ihre OVHcloud Dienste.<br>
+Wenn Ihre Website ein wichtiger Teil Ihrer Geschäftstätigkeiten ist, [aktivieren Sie die automatische Verlängerung](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#ubersicht-meine-dienste-aufrufen) für alle Ihre OVHcloud Dienste.<br>
 Wir empfehlen Ihnen auch, die **Gültigkeit der von Ihnen hinterlegten Zahlungsmittel** regelmäßig zu überprüfen.
 
 ### Schritt 6: Überprüfen Sie, dass Ihre Website aktuell ist
 
-Prüfen Sie regelmäßig auf Updates für Ihre Website gemäß den Anweisungen in [dieser Anleitung](/pages/web/hosting/diagnostic_403_forbidden#22-ihre-website-aktualisieren).
+Prüfen Sie regelmäßig auf Updates für Ihre Website gemäß den Anweisungen in [dieser Anleitung](/pages/web_cloud/web_hosting/diagnostic_403_forbidden#22-ihre-website-aktualisieren).
 
 Denken Sie auch daran, eine aktuelle Version von [PHP](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014) auf Ihrem Hosting zu verwenden.
 

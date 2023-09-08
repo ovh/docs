@@ -22,7 +22,7 @@ This tutorial explains how to create an online store with the open-source plugin
 - A [domain name](https://www.ovhcloud.com/en-sg/domains/).
 - [WordPress installed](/pages/web_cloud/web_hosting/cms_install_1_click_modules) on your web hosting plan
 
-If one is not already installed, [add an SSL certificate](/pages/web/hosting/ssl-activate-https-website#step-1-activate-the-ssl-certificate-on-the-web-hosting-plan) for the domain name associated with your website before you continue.
+If one is not already installed, [add an SSL certificate](/pages/web_cloud/web_hosting/ssl-activate-https-website#step-1-activate-the-ssl-certificate-on-the-web-hosting-plan) for the domain name associated with your website before you continue.
   
 ## Instructions
   

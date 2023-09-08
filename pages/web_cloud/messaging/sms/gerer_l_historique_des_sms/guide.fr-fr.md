@@ -77,7 +77,7 @@ Voici le détail des informations contenues dans cet historique :
 |  tag |  le tag attribué manuellement via les API (à un ou plusieurs SMS) ou automatiquement par nos serveurs à chacun des SMS (ou chaque campagne de SMS) envoyés |
 |  message |  le contenu du SMS |
 
-Vous trouverez plus de détails sur les codes ptt et les différents ID du DLR en consultant la dernière section du guide [Tout savoir sur les utilisateurs SMS](/pages/telecom/sms/tout_savoir_sur_les_utilisateurs_sms#etape-5-specifier-une-url-de-callback).
+Vous trouverez plus de détails sur les codes ptt et les différents ID du DLR en consultant la dernière section du guide [Tout savoir sur les utilisateurs SMS](/pages/web_cloud/messaging/sms/tout_savoir_sur_les_utilisateurs_sms#etape-5-specifier-une-url-de-callback).
  
 ## Aller plus loin
 

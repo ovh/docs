@@ -53,7 +53,7 @@ Identifizieren Sie die Problemursache, beheben Sie sie und entsperren Sie dann I
 - Beenden Sie den Versand von E-Mails (zum Beispiel: jegliche E-Mail-Software wie qmail, Postfix, Sendmail usw. abschalten).
 - Überprüfen Sie die Warteschlange der E-Mails (zum Beispiel: qmHandle für qmail, postqueue -p für Postfix) und leeren Sie diese.
 - Analysieren Sie Ihre Logs mithilfe der **Message-ID** im Sperralarm.  
-- Wenn Sie den Versand von SPAM oder missbräuchlicher E-Mails bestätigen können, beheben Sie dessen Ursache, **bevor** Sie die IP-Adresse entsperren. In diesem Leitfaden erfahren Sie mehr über [*best practices* (EN)](/pages/cloud/dedicated/antispam_best_practices#bestpractices) beim Versand von E-Mails. 
+- Wenn Sie den Versand von SPAM oder missbräuchlicher E-Mails bestätigen können, beheben Sie dessen Ursache, **bevor** Sie die IP-Adresse entsperren. In diesem Leitfaden erfahren Sie mehr über [*best practices* (EN)](/pages/bare_metal_cloud/dedicated_servers/antispam_best_practices#bestpractices) beim Versand von E-Mails. 
 
 Wenn das Problem gelöst ist, können Sie Ihre IP-Adresse entsperren, indem Sie die folgenden Schritte ausführen.
 
@@ -212,7 +212,7 @@ Die IP-Adresse wird nun entsperrt. Es kann einige Minuten dauern, bis die Operat
 
 ### False Positives
 
-In einigen Fällen kann es sich bei der SPAM-Warnung um einen falschen Alarm handeln. Wenn Sie nachgeprüft und festgestellt haben, dass die **Message-ID** einer legitimen E-Mail zugeordnet ist, stellen Sie sicher, dass Ihre E-Mails den [RFC (EN)](/pages/cloud/dedicated/antispam_best_practices#rfc) und den [*Best Practices* (EN)](/pages/cloud/dedicated/antispam_best_practices#bestpractices) entsprechen.
+In einigen Fällen kann es sich bei der SPAM-Warnung um einen falschen Alarm handeln. Wenn Sie nachgeprüft und festgestellt haben, dass die **Message-ID** einer legitimen E-Mail zugeordnet ist, stellen Sie sicher, dass Ihre E-Mails den [RFC (EN)](/pages/bare_metal_cloud/dedicated_servers/antispam_best_practices#rfc) und den [*Best Practices* (EN)](/pages/bare_metal_cloud/dedicated_servers/antispam_best_practices#bestpractices) entsprechen.
 
 ## Weiterführende Informationen
  

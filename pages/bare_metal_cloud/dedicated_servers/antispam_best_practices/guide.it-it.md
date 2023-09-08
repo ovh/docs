@@ -53,7 +53,7 @@ L'operazione consiste nell'identificare il problema, risolverlo e sbloccare il t
 - Fermate l'invio di email (ad esempio: arrestare tutti i client di posta come qmail, Postfix, Sendmail, ecc.)
 - Verifica la coda di attesa delle email (ad esempio qmHandle per qmail, postcoda -p per Postfix) e svuotala.
 - Analizza i tuoi log grazie al **Message-ID** presente nell'alert di blocco.
-- Se invia correttamente SPAM o email illegittime, ti consigliamo vivamente di risolvere il problema **prima** di sbloccare l'indirizzo IP. Consultare questa guida per le [migliori pratiche (EN)](/pages/cloud/dedicated/antispam_best_practices#bestpractices) di invio delle e-mail.
+- Se invia correttamente SPAM o email illegittime, ti consigliamo vivamente di risolvere il problema **prima** di sbloccare l'indirizzo IP. Consultare questa guida per le [migliori pratiche (EN)](/pages/bare_metal_cloud/dedicated_servers/antispam_best_practices#bestpractices) di invio delle e-mail.
 
 Una volta risolto il problema, puoi sbloccare il tuo indirizzo IP seguendo gli step successivi.
 
@@ -212,7 +212,7 @@ Lo sblocco dell'indirizzo IP è in corso. L'operazione potrebbe richiedere alcun
 
 ### In caso di falsi positivi
 
-In alcuni casi, l'avviso di spam potrebbe essere un falso positivo. Se avete verificato e trovato che il **Message-ID** è associato a un'e-mail legittima, dovete assicurarvi che le vostre e-mail siano conformi alle [RFC (EN)](/pages/cloud/dedicated/antispam_best_practices#rfc) e alle [buone pratiche (EN)](/pages/cloud/dedicated/antispam_best_practices#bestpractices).
+In alcuni casi, l'avviso di spam potrebbe essere un falso positivo. Se avete verificato e trovato che il **Message-ID** è associato a un'e-mail legittima, dovete assicurarvi che le vostre e-mail siano conformi alle [RFC (EN)](/pages/bare_metal_cloud/dedicated_servers/antispam_best_practices#rfc) e alle [buone pratiche (EN)](/pages/bare_metal_cloud/dedicated_servers/antispam_best_practices#bestpractices).
 
 ## Per saperne di più
   

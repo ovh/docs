@@ -500,7 +500,7 @@ Let's start with an example imposing only one rule for ordering a domain name. T
 >> }
 >> ```
 
-With this rule, when ordering, the domain must have a [configuration](/pages/web/domains/api_domain_order#configurations-management) labelled `ACCEPT_CONDITIONS` with a boolean value of `true`, `1` or `"1"`.
+With this rule, when ordering, the domain must have a [configuration](/pages/web_cloud/domains/api_domain_order#configurations-management) labelled `ACCEPT_CONDITIONS` with a boolean value of `true`, `1` or `"1"`.
 
 ### The operators "and" and "or"
 

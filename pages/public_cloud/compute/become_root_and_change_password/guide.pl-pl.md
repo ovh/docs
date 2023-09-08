@@ -16,14 +16,14 @@ Aby wykonywać niektóre działania administracyjne na Twoim serwerze (np. insta
 
 ## Wymagania początkowe
 
-- [Instancja Public Cloud](/pages/platform/public-cloud/public-cloud-first-steps#krok-3-tworzenie-instancji) na Twoim koncie OVHcloud
+- [Instancja Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps#krok-3-tworzenie-instancji) na Twoim koncie OVHcloud
 - Dostęp do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
 
 ## W praktyce
 
 ### Ustawianie hasła root <a name="settingtherootpassword"></a>
 
-Po pierwsze nawiąż [połączenie SSH](/pages/platform/public-cloud/public-cloud-first-steps#krok-4-polaczenie-z-instancja) z serwerem przy użyciu domyślnego użytkownika.
+Po pierwsze nawiąż [połączenie SSH](/pages/public_cloud/compute/public-cloud-first-steps#krok-4-polaczenie-z-instancja) z serwerem przy użyciu domyślnego użytkownika.
 
 W wierszu polecenia ustaw hasło dla użytkownika "root" (ze względów bezpieczeństwa hasło to nie będzie się wyświetlało podczas jego wprowadzania):
 

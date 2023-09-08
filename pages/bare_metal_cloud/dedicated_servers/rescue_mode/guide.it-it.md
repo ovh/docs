@@ -33,7 +33,7 @@ Se non disponi ancora di backup recenti, effettua un backup dei tuoi dati.
 ## Procedura
 
 > [!warning]
-> Ti ricordiamo che se hai impostato una chiave SSH di default nel tuo spazio per i prodotti dedicati, non riceverai una password di root durante il riavvio di un server in modalità Rescue. In questo caso, è necessario disattivare di default la chiave SSH prima di riavviare il server in modalità Rescue. Per effettuare questa operazione, consulta questa [sezione](/pages/cloud/dedicated/creating-ssh-keys-dedicated#disablesshkey) della guida corrispondente.
+> Ti ricordiamo che se hai impostato una chiave SSH di default nel tuo spazio per i prodotti dedicati, non riceverai una password di root durante il riavvio di un server in modalità Rescue. In questo caso, è necessario disattivare di default la chiave SSH prima di riavviare il server in modalità Rescue. Per effettuare questa operazione, consulta questa [sezione](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated#disablesshkey) della guida corrispondente.
 >
 
 La modalità Rescue può essere attivata solo dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Seleziona il tuo server nella sezione `Bare Metal Cloud`{.action} e poi `Server dedicati`{.action}.

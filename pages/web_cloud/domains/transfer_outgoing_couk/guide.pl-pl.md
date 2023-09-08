@@ -42,7 +42,7 @@ Proces zmiany operatora domeny *najwyższego poziomu* (*top-level domain*, lub *
 
 > [!primary]
 >
-> Jeśli jesteś **właścicielem** domeny, ale zarządzanie nią w Panelu klienta OVHcloud jest niedostępne, zarówno poprzez własny dostęp, jak i poprzez kontakt administracyjny domeny, zapoznaj się z [tym przewodnikiem](/pages/account/customer/managing_contacts#przypadek-wlasciciela-domeny).
+> Jeśli jesteś **właścicielem** domeny, ale zarządzanie nią w Panelu klienta OVHcloud jest niedostępne, zarówno poprzez własny dostęp, jak i poprzez kontakt administracyjny domeny, zapoznaj się z [tym przewodnikiem](/pages/account_and_service_management/account_information/managing_contacts#przypadek-wlasciciela-domeny).
 >
 > Jeśli domena wygasła na **mniej niż 90 dni**, nadal może być przeniesiona. Prosimy o kontakt z naszym zespołem pomocy technicznej poprzez utworzenie wniosku o wsparcie w Panelu client OVHcloud, aby odblokować nazwę domeny do transferu.
 >

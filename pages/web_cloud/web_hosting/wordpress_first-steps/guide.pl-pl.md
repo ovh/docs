@@ -30,7 +30,7 @@ Tutorial ten pozwoli Ci na tworzenie pierwszych treści, ich organizację, umies
 
 ## W praktyce
 
-Jeśli tak się nie stało i zanim przejdziesz dalej, [dodaj certyfikat SSL](/pages/web/hosting/ssl-activate-https-website#etap-1-aktywacja-certyfikatu-ssl-na-hostingu) w nazwie domeny przypisanej do Twojej strony WWW.
+Jeśli tak się nie stało i zanim przejdziesz dalej, [dodaj certyfikat SSL](/pages/web_cloud/web_hosting/ssl-activate-https-website#etap-1-aktywacja-certyfikatu-ssl-na-hostingu) w nazwie domeny przypisanej do Twojej strony WWW.
 
 Podczas instalacji systemu CMS za 1 kliknięciem otrzymałeś e-mail z elementami niezbędnymi do kontynuowania tego tutoriala:
 

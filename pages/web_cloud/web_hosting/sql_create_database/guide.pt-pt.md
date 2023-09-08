@@ -110,7 +110,7 @@ Deve sempre usar o nome da base de dados nos scripts e ficheiros de configuraç�
 
 Se a base de dados de um alojamento web exceder o espaço de armazenamento recomendado, passará automaticamente para o modo «read only»/«select only». O administrador receberá uma notificação por e-mail.
 
-Depois de a base de dados ser otimizada (limpa), pode recalcular a sua dimensão na Área de Cliente OVHcloud para a desbloquear. O melhor a fazer é descarregar a base de dados, gerir a revisão localmente e voltar a carregá-la por importação. Para mais informações, consulte [este guia](/pages/web/hosting/optimise_your_website_performance#passo-7-otimizar-a-sua-base-de-dados).
+Depois de a base de dados ser otimizada (limpa), pode recalcular a sua dimensão na Área de Cliente OVHcloud para a desbloquear. O melhor a fazer é descarregar a base de dados, gerir a revisão localmente e voltar a carregá-la por importação. Para mais informações, consulte [este guia](/pages/web_cloud/web_hosting/optimise_your_website_performance#passo-7-otimizar-a-sua-base-de-dados).
 
 ## Saiba mais
 

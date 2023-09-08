@@ -31,7 +31,7 @@ Per creare un account OVHcloud, clicca su [questa pagina](https://www.ovh.com/au
 |---|---|
 |Nome - Cognome|Inserisci **qui un nome e un cognome** comuni.|
 |Indirizzo email|Inserisci un indirizzo email **valido al quale hai accesso**.<br><br>Evita di utilizzare un indirizzo email associato a un dominio che gestisci dal tuo Spazio Cliente. In caso di interruzione di questo dominio, non riceverai più le nostre notifiche.|
-|Password|La password deve essere unica (creata e utilizzata solo per il tuo account OVHcloud) e sufficientemente complessa.<br><br>Per creare una password efficace, consulta [la nostra guida sulla gestione della password](/pages/account/customer/manage-ovh-password#procedura).|
+|Password|La password deve essere unica (creata e utilizzata solo per il tuo account OVHcloud) e sufficientemente complessa.<br><br>Per creare una password efficace, consulta [la nostra guida sulla gestione della password](/pages/account_and_service_management/account_information/manage-ovh-password#procedura).|
 
 Una volta completato il primo form, ricevi un codice monouso all'indirizzo email inserito. Questo codice permette di convalidare il tuo indirizzo email. Inseriscilo nelle caselle previste.
 

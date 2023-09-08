@@ -68,7 +68,7 @@ webpaas integration:delete nadbowmhd67do
 
 Activity logs are available through their own CLI command, `webpaas integration:activities`.  Every time your activity script runs it will generate a new log entry, including the output from the script.  Any output produced by `console.log` will be available in the activity log, and that is the recommended way to debug scripts.
 
-See the [activity log](/pages/web/web-paas/integrations-overview#debugging-integrations) documentation for further details.
+See the [activity log](/pages/web_cloud/web_paas_powered_by_platform_sh/integrations/integrations-overview#debugging-integrations) documentation for further details.
 
 To get a more readable output of a variable you're trying to debug, you can make `JSON.stringify` use human-friendly formatting.
 
@@ -118,7 +118,7 @@ Underscore.js 1.9.2 is available out-of-the-box to make writing Activity scripts
 
 Every activity script has a global variable `activity` that contains detailed information about the activity, including embedded, JSON-ified versions of the routes configuration and relevant `.platform.app.yaml` files.  The `activity` variable is the same as the [webhook payload](/pages/web_cloud/web_paas_powered_by_platform_sh/integrations/webhooks).  See the documentation there for details and a complete example.
 
-Several of the utility functions below work by pulling out common portions of the `activity` object.  Most notably, scripts can be configured via [Project-level variables](/pages/web/web-paas/development-variables#project-variables) that can be accessed from the `activity` object.
+Several of the utility functions below work by pulling out common portions of the `activity` object.  Most notably, scripts can be configured via [Project-level variables](/pages/web_cloud/web_paas_powered_by_platform_sh/development/development-variables#project-variables) that can be accessed from the `activity` object.
 
 ### `project`
 

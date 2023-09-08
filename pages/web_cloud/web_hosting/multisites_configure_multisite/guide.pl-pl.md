@@ -18,7 +18,7 @@ Na jednym hostingu możesz zainstalować kilka stron WWW, nawet jeśli domeny ni
 
 - Posiadanie kompatybilnego [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external}.
 - Zarejestrowana domena lub kilka [domen](https://www.ovhcloud.com/pl/domains/){.external}.
-- Możliwość modyfikacji konfiguracji Twoich domen ([strefy DNS](/pages/web/domains/dns_zone_edit#zrozumienie-pojecia-dns))
+- Możliwość modyfikacji konfiguracji Twoich domen ([strefy DNS](/pages/web_cloud/domains/dns_zone_edit#zrozumienie-pojecia-dns))
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 
 ## W praktyce
@@ -113,7 +113,7 @@ Po dodaniu domeny przejdź do [etapu 3: umieszczenie strony WWW online](#site-on
 >
 > |Pole|Gdzie znaleźć informację?|Działania|
 > |---|---|---|
-> |TXT|Zakładka `MultiSite`{.action}, następnie kliknij `Konfiguracja tokena ovhcontrol`{.action}|Pozwala OVHcloud upewnić się, że dodanie każdej domeny zewnętrznej jest uprawnione. Utwórz pole TXT z subdomeną ovhcontrol (na przykład ovhcontrol.mydomain.ovh) w strefie DNS, która ma uprawnienia do dodawania domeny.<br></br>Pamiętaj, że jeśli chcesz dodać `blog.mydomain.ovh`, powinieneś utworzyć rekord dla subdomeny `ovhcontrol.mydomain.ovh` i nie `ovhcontrol.blog.mydomain.ovh`.<br></br>Aby odnaleźć domenę, znajdziesz [serwery DNS](/pages/web/domains/dns_server_general_information#zrozumienie-pojecia-dns), z którymi powiązana jest Twoja domena. Zatwierdź tylko domenę główną, nie wszystkie subdomeny.|
+> |TXT|Zakładka `MultiSite`{.action}, następnie kliknij `Konfiguracja tokena ovhcontrol`{.action}|Pozwala OVHcloud upewnić się, że dodanie każdej domeny zewnętrznej jest uprawnione. Utwórz pole TXT z subdomeną ovhcontrol (na przykład ovhcontrol.mydomain.ovh) w strefie DNS, która ma uprawnienia do dodawania domeny.<br></br>Pamiętaj, że jeśli chcesz dodać `blog.mydomain.ovh`, powinieneś utworzyć rekord dla subdomeny `ovhcontrol.mydomain.ovh` i nie `ovhcontrol.blog.mydomain.ovh`.<br></br>Aby odnaleźć domenę, znajdziesz [serwery DNS](/pages/web_cloud/domains/dns_server_general_information#zrozumienie-pojecia-dns), z którymi powiązana jest Twoja domena. Zatwierdź tylko domenę główną, nie wszystkie subdomeny.|
 >
 > ![MultiSite](images/add-multisite-external-step3.png){.thumbnail}
 >

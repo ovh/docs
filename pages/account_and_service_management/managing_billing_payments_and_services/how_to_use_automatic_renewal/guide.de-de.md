@@ -25,7 +25,7 @@ Sie können die Verlängerung und die Kündigung Ihrer Dienste in Ihrem Kundence
 
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 - Sie haben aktive OVHcloud Dienste.
-- Sie sind [Rechnungskontakt](/pages/account/customer/managing_contacts#definition) für Ihre OVHcloud Dienste.
+- Sie sind [Rechnungskontakt](/pages/account_and_service_management/account_information/managing_contacts#definition) für Ihre OVHcloud Dienste.
 
 ## In der praktischen Anwendung
 
@@ -35,9 +35,9 @@ Es ist aber auch möglich, einige Dienste (Domainnamen, Webhosting, VPS, Dedicat
 
 Wir empfehlen Ihnen, folgende Anleitungen zu verwenden, um die jeweils gewünschten Operationen durchzuführen:
 
-- [Verlängerungsstatus Ihrer Dienste anzeigen](/pages/account/billing/how_to_use_automatic_renewal#verlangerungsstatus-ihrer-dienste-anzeigen): Diese Anleitung beschreibt, wie Sie die automatische Verlängerung Ihrer Dienste überprüfen und deren Verlängerungs- oder Ablaufdatum abrufen.
+- [Verlängerungsstatus Ihrer Dienste anzeigen](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#verlangerungsstatus-ihrer-dienste-anzeigen): Diese Anleitung beschreibt, wie Sie die automatische Verlängerung Ihrer Dienste überprüfen und deren Verlängerungs- oder Ablaufdatum abrufen.
 
-- [Verlängerung Ihrer Dienstleistungen verwalten](/pages/account/billing/how_to_use_automatic_renewal#die-verlangerung-bei-ovhcloud): In dieser Anleitung erfahren Sie, wie Sie die automatische Verlängerung aktivieren oder deaktivieren, die Zahlungsfrequenz eines Dienstes ändern und Verlängerungen vor Ablauf bezahlen.
+- [Verlängerung Ihrer Dienstleistungen verwalten](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#die-verlangerung-bei-ovhcloud): In dieser Anleitung erfahren Sie, wie Sie die automatische Verlängerung aktivieren oder deaktivieren, die Zahlungsfrequenz eines Dienstes ändern und Verlängerungen vor Ablauf bezahlen.
 
 - [Zahlungsarten verwalten](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods): Mithilfe dieser Anleitung können Sie überprüfen, ob Sie ein gültiges Zahlungsmittel für künftige Verlängerungen hinterlegt haben, und bei Bedarf Zahlungsarten hinzufügen oder entfernen.
 

@@ -299,7 +299,7 @@ Vous pourrez ensuite vous connecter au VPS avec le nom d'alias que vous avez dé
 ssh ubuntu@vps
 ```
 
-Seuls l'IP du serveur et le fichier de clé ont été spécifiés dans l'exemple précédent mais des détails supplémentaires peuvent être ajoutés. Pour configurer une connexion SSH à un second serveur avec le nom d'utilisateur « rocky », le [port SSH modifié](/pages/cloud/vps/secure_your_vps#changesshport) « 49160 » et la clé privée dans le fichier « myserver_rsa », étendez le contenu du fichier comme indiqué dans cet exemple :
+Seuls l'IP du serveur et le fichier de clé ont été spécifiés dans l'exemple précédent mais des détails supplémentaires peuvent être ajoutés. Pour configurer une connexion SSH à un second serveur avec le nom d'utilisateur « rocky », le [port SSH modifié](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps#changesshport) « 49160 » et la clé privée dans le fichier « myserver_rsa », étendez le contenu du fichier comme indiqué dans cet exemple :
 
 ```console
 Host vps

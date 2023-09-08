@@ -49,11 +49,11 @@ Supposons que vous avez la configuration normale pour un hébergement web POWER 
 
 > [!primary]
 >
-> Vous pouvez appeler l'API OVHcloud pour [visualiser la configuration active](/pages/labs/web-power/getting-started#api-get-active-configuration)
+> Vous pouvez appeler l'API OVHcloud pour [visualiser la configuration active](/pages/ovhcloud_labs/power_web_hosting/getting-started#api-get-active-configuration)
 
 Pour utiliser les frameworks [Python WSGI](https://www.fullstackpython.com/wsgi-servers.html), le plus simple est d'utiliser [virtualenv](https://pypi.org/project/virtualenv/).
 
-[Accédez via SSH](/pages/labs/web-power/getting-started#ssh) à votre hébergement web POWER et activez `virtualenv`: 
+[Accédez via SSH](/pages/ovhcloud_labs/power_web_hosting/getting-started#ssh) à votre hébergement web POWER et activez `virtualenv`: 
 
 ```sh
 ~$ cd www
@@ -125,7 +125,7 @@ Django doit déclarer les hôtes autorisés pour le site Web. Dans `config/setti
 ALLOWED_HOSTS = ['yourdomainname', 'www.yourdomainname', 'yourftpuser.cluster000.hosting.ovh.net']
 ```
 
-[Redémarrez votre instance](/pages/labs/web-power/getting-started#restart), votre Django sera en ligne.
+[Redémarrez votre instance](/pages/ovhcloud_labs/power_web_hosting/getting-started#restart), votre Django sera en ligne.
 
 ![Django](images/python-install-django-01.png){.thumbnail}
 

@@ -68,7 +68,7 @@ Los siguientes ejemplos implican que está conectado como usuario con los permis
 
 #### En Linux
 
-Abra una [conexión SSH a su instancia](/pages/platform/public-cloud/public-cloud-first-steps#connect-to-instance) y utilice el siguiente comando para mostrar los discos asociados.
+Abra una [conexión SSH a su instancia](/pages/public_cloud/compute/public-cloud-first-steps#connect-to-instance) y utilice el siguiente comando para mostrar los discos asociados.
 
 ```bash
 ~$ admin@server-1:~$ lsblk
@@ -319,7 +319,7 @@ Si desea desvincular un volumen de su instancia, la mejor práctica es desmontar
 
 #### En Linux
 
-Abra una [conexión SSH a su instancia](/pages/platform/public-cloud/public-cloud-first-steps#3-crear-una-instancia) y utilice el siguiente comando para mostrar los discos asociados.
+Abra una [conexión SSH a su instancia](/pages/public_cloud/compute/public-cloud-first-steps#3-crear-una-instancia) y utilice el siguiente comando para mostrar los discos asociados.
 
 ```bash
 ~$ admin@server-1:~$ lsblk

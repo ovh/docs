@@ -29,7 +29,7 @@ Vuoi:
 OVHcloud propone 3 soluzioni email, la nozione di eliminazione di un account è diversa a seconda della tua offerta.
 
 - **Email MXplan**: questa offerta è venduta sotto forma di un pack di più account email. Una volta eliminato un account, libera una posizione sul tuo pack. 
-- **Email Pro** e **Hosted Exchange**: queste due offerte sono on demand, ordinerai un abbonamento individuale per account email. Per eliminare un indirizzo email è necessario procedere alla **reinizializzazione**. Una volta reimpostato l'account email, è possibile riutilizzarlo per creare un nuovo indirizzo email. Per [eliminare definitivamente l'abbonamento](/pages/web/microsoft-collaborative-solutions/manage_billing_exchange#elimina-account), è possibile disattivare l'account.
+- **Email Pro** e **Hosted Exchange**: queste due offerte sono on demand, ordinerai un abbonamento individuale per account email. Per eliminare un indirizzo email è necessario procedere alla **reinizializzazione**. Una volta reimpostato l'account email, è possibile riutilizzarlo per creare un nuovo indirizzo email. Per [eliminare definitivamente l'abbonamento](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_billing_exchange#elimina-account), è possibile disattivare l'account.
 
 ### Elimina o reinizializza un account email
 

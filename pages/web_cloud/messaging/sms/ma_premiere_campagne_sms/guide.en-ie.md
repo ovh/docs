@@ -51,7 +51,7 @@ By default, SMS messages from an OVHcloud account in France are sent from a shor
 
 ![firstsms](images/firstsms05.png){.thumbnail}
 
-To do this, you can refer to the [section on choosing an SMS sender, in our guide on sending SMS messages via the OVHcloud Control Panel.](/pages/telecom/sms/envoyer_des_sms_depuis_mon_espace_client#step-3-choose-an-sms-sender)
+To do this, you can refer to the [section on choosing an SMS sender, in our guide on sending SMS messages via the OVHcloud Control Panel.](/pages/web_cloud/messaging/sms/envoyer_des_sms_depuis_mon_espace_client#step-3-choose-an-sms-sender)
 
 ### Step 3: Sending an SMS campaign
 

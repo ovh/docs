@@ -24,7 +24,7 @@ Desde el área de cliente de OVHcloud podrá gestionar sus datos personales y de
 - Haber iniciado sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
 
 > [!primary]
-> Si necesita ayuda para conectarse a su cuenta, consulte la sección "[No consigo conectarme](/pages/account/customer/ovhcloud-account-login#login-failure)" de nuestra guía "[Conectarse al área de cliente de OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-login)".
+> Si necesita ayuda para conectarse a su cuenta, consulte la sección "[No consigo conectarme](/pages/account_and_service_management/account_information/ovhcloud-account-login#login-failure)" de nuestra guía "[Conectarse al área de cliente de OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-login)".
 >
 
 ## Procedimiento
@@ -47,7 +47,7 @@ Consulte todas nuestras recomendaciones sobre las contraseñas en nuestra guía 
 
 #### Guardar la contraseña
 
-Si todavía no lo ha hecho, guarde su contraseña en un [gestor de contraseñas](/pages/account/customer/manage-ovh-password#utilizar-un-gestor-de-contrasenas).
+Si todavía no lo ha hecho, guarde su contraseña en un [gestor de contraseñas](/pages/account_and_service_management/account_information/manage-ovh-password#utilizar-un-gestor-de-contrasenas).
 
 > [!primary]
 > Los programas **KeePass** y **Bitwarden** son gestores de contraseñas libres y de impuestos.
@@ -155,7 +155,7 @@ Para más información, consulte la [guía sobre la gestión de usuarios](/pages
 
 ### ¿Qué hacer si sospecha de una usurpación de identidad?
 
-Si recibe un mensaje de correo electrónico en el que se le informa de un inicio de sesión desconocido en su área de cliente, le recomendamos [cambiar inmediatamente la contraseña de su cuenta](/pages/account/customer/manage-ovh-password#modificar-la-contrasena) y [protegerla con la doble autenticación](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa).
+Si recibe un mensaje de correo electrónico en el que se le informa de un inicio de sesión desconocido en su área de cliente, le recomendamos [cambiar inmediatamente la contraseña de su cuenta](/pages/account_and_service_management/account_information/manage-ovh-password#modificar-la-contrasena) y [protegerla con la doble autenticación](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa).
 
 Si advierte una actividad sospechosa en su cuenta, [póngase en contacto con el equipo de asistencia de OVHcloud](https://www.ovhcloud.com/es/contact/) para que le informe del procedimiento que deberá seguir.
 
@@ -167,6 +167,6 @@ Si advierte una actividad sospechosa en su cuenta, [póngase en contacto con el 
 
 [Conectarse al área de cliente de OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-login)
 
-[En caso de fallo de la conexión al área de cliente](/pages/account/customer/ovhcloud-account-login#login-failure)
+[En caso de fallo de la conexión al área de cliente](/pages/account_and_service_management/account_information/ovhcloud-account-login#login-failure)
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

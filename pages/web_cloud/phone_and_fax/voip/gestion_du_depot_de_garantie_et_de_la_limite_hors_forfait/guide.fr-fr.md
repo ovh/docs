@@ -50,13 +50,13 @@ Il ne reste donc plus que 10€ HT (150-(50+90)=10) de hors-forfait autorisé po
 
 Selon vos besoins, deux méthodes existent pour augmenter l'autorisation de hors-forfait. Ces deux méthodes peuvent être cumulées.
 
-Vous pouvez augmenter la limite de base du groupe à 300€ sans verser d'argent, en [suivant ces instructions.](/pages/telecom/voip/gestion_du_depot_de_garantie_et_de_la_limite_hors_forfait#augmenter-la-limite-de-base)
+Vous pouvez augmenter la limite de base du groupe à 300€ sans verser d'argent, en [suivant ces instructions.](/pages/web_cloud/phone_and_fax/voip/gestion_du_depot_de_garantie_et_de_la_limite_hors_forfait#augmenter-la-limite-de-base)
 
 Pour l'exemple cité plus haut :
 
 ![hors-forfait voip](images/HFvoip2.png){.thumbnail}
 
-Vous pouvez également augmenter votre dépôt de garantie en [suivant cette méthode](/pages/telecom/voip/gestion_du_depot_de_garantie_et_de_la_limite_hors_forfait#augmenter-le-depot-de-garantie). 
+Vous pouvez également augmenter votre dépôt de garantie en [suivant cette méthode](/pages/web_cloud/phone_and_fax/voip/gestion_du_depot_de_garantie_et_de_la_limite_hors_forfait#augmenter-le-depot-de-garantie). 
 
 Pour l'exemple cité plus haut :
 
@@ -65,7 +65,7 @@ Pour l'exemple cité plus haut :
 > [!primary]
 >
 > En cas de dépassement du hors-forfait autorisé sur votre groupe de téléphonie, vous ne pourrez pas augmenter la limite de base du groupe. Vous devrez alors augmenter votre dépôt de garantie.
-> Pour en savoir plus, reportez-vous à la partie [Qu'arrive t-il en cas de dépassement ?](/pages/telecom/voip/gestion_du_depot_de_garantie_et_de_la_limite_hors_forfait#quarrive-t-il-en-cas-de-depassement) en bas de ce guide.
+> Pour en savoir plus, reportez-vous à la partie [Qu'arrive t-il en cas de dépassement ?](/pages/web_cloud/phone_and_fax/voip/gestion_du_depot_de_garantie_et_de_la_limite_hors_forfait#quarrive-t-il-en-cas-de-depassement) en bas de ce guide.
 >
 
 ## En pratique
@@ -159,7 +159,7 @@ Dans l'onglet `Facturation`{.action}, cliquez sur `Consommation générale`{.act
 
 Si vous constatez des anomalies, commencez par [sécuriser votre ligne SIP](/pages/web_cloud/phone_and_fax/voip/secure-sip-line). 
 
-Une fois ces vérifications effectuées, vous pouvez débloquer le groupe en [augmentant le dépôt de garantie du groupe](/pages/telecom/voip/gestion_du_depot_de_garantie_et_de_la_limite_hors_forfait#augmenter-le-depot-de-garantie).
+Une fois ces vérifications effectuées, vous pouvez débloquer le groupe en [augmentant le dépôt de garantie du groupe](/pages/web_cloud/phone_and_fax/voip/gestion_du_depot_de_garantie_et_de_la_limite_hors_forfait#augmenter-le-depot-de-garantie).
 
 ## Aller plus loin
 

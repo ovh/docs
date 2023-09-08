@@ -53,7 +53,7 @@ W menu `Serwery dedykowane`{.action} kliknij wybrany serwer, aby uzyskać dostę
 **Stan usług**
 
 - Status: kliknij `...`{.action} obok tej opcji, aby uruchomić lub usunąć serwer.
-- Monitoring: kliknij na `Skonfiguruj`{.action} aby zmienić [ustawienia monitorowania serwera](/pages/cloud/dedicated/getting-started-with-dedicated-server#monitoring-server).
+- Monitoring: kliknij na `Skonfiguruj`{.action} aby zmienić [ustawienia monitorowania serwera](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server#monitoring-server).
 
 **Sieć**
 

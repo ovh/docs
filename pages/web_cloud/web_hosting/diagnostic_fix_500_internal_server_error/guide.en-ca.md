@@ -25,7 +25,7 @@ These errors may also come from updates carried out **automatically** by compone
 
 - an [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-ca/web-hosting/)
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca)
-- being up-to-date in the [payments](/pages/account/billing/invoice_management#pay-bills) and [renewals](/pages/account/billing/how_to_use_automatic_renewal#renewal-management) of related services (domain name and web hosting plan)
+- being up-to-date in the [payments](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) and [renewals](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) of related services (domain name and web hosting plan)
 
 ## Instructions
 
@@ -44,7 +44,7 @@ First, please check your logs with this [guide](/pages/web_cloud/web_hosting/log
 
 ### Put your website in development mode
 
-To reveal any PHP errors, switch your web hosting to `development` mode with these [instructions](/pages/web/hosting/ovhconfig_modify_system_runtime#step-2-check-your-web-hosting-plans-configuration).
+To reveal any PHP errors, switch your web hosting to `development` mode with these [instructions](/pages/web_cloud/web_hosting/ovhconfig_modify_system_runtime#step-2-check-your-web-hosting-plans-configuration).
 
 ### Test the .htaccess file
 
@@ -64,7 +64,7 @@ An incorrect level of access rights on a folder or a file may create a 500 error
 
 To access these files, log on your [FTP server](/pages/web_cloud/web_hosting/ftp_connection).
 
-The [FileZilla guide](/pages/web/hosting/ftp_filezilla_user_guide#file-and-folder-permissions) will then help you check the following points:
+The [FileZilla guide](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide#file-and-folder-permissions) will then help you check the following points:
 
 - The **root** of your hosting plan (this is the directory marked `/` or `.` on Filezilla) must have 705 access rights (these are the default permissions). Do not change this level of permissions.
 - Folders must have 705 access rights.
@@ -93,7 +93,7 @@ If the 500 error appeared after modifying the PHP configuration of your web host
 
 To restore your website’s source code, read our guide [Restoring your Web Hosting plan’s storage space](/pages/web_cloud/web_hosting/ftp_save_and_backup). Keep in mind that this operation alone is not a permanent solution.
 
-If your website uses a database, read our guide [Importing a backup into a Web Hosting plan database](/pages/web/hosting/sql_importing_mysql_database#restore-a-backup-from-the-control-panel).
+If your website uses a database, read our guide [Importing a backup into a Web Hosting plan database](/pages/web_cloud/web_hosting/sql_importing_mysql_database#restore-a-backup-from-the-control-panel).
 
 ## Go further <a name="gofurther"></a>
 

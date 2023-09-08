@@ -21,7 +21,7 @@ Ce guide contient les éléments indispensables à une bonne gestion de votre co
 
 #### Sécurisez votre compte
 
-- [Créez un mot de passe fort](/pages/account/customer/manage-ovh-password#generer-un-bon-mot-de-passe) qui assurera la confidentialité de votre compte.
+- [Créez un mot de passe fort](/pages/account_and_service_management/account_information/manage-ovh-password#generer-un-bon-mot-de-passe) qui assurera la confidentialité de votre compte.
 
 - [Activez la double authentification](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa) pour éviter tout accès frauduleux à votre espace client.
 

@@ -23,7 +23,7 @@ Enter your IP or server name in a browser to determine if a ransom message is di
 
 ### I am a victim of ransomware, how to recover my data?
 
-If you want to attempt to recover the data on your server, you can rely on the steps in the following documentation: [Enable and use rescue mode - Mounting a datastore](/pages/cloud/dedicated/rescue_mode#mounting-a-datastore).
+If you want to attempt to recover the data on your server, you can rely on the steps in the following documentation: [Enable and use rescue mode - Mounting a datastore](/pages/bare_metal_cloud/dedicated_servers/rescue_mode#mounting-a-datastore).
 However, we don't have all the devices we need to recover all of your data.
 
 The US National Cybersecurity and Infrastructure Security Agency ([CISA](https://www.cisa.gov/uscert/ncas/current-activity/2023/02/07/cisa-releases-esxiargs-ransomware-recovery-script){.external}) also made available [a tool](https://github.com/cisagov/ESXiArgs-Recover) to retrieve data from an ESXi server targeted by the ESXiArgs ransomware.<br>
@@ -46,7 +46,7 @@ When you order your dedicated server, no security protocols are implemented nati
 ### How do I reinstall and secure my dedicated ESXi server?
 
 1. Secure access to your dedicated server through [Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network) or your own firewall system.
-2. Install the VMware ESXi 7.0 U3c version available [via your dedicated server administration interface](/pages/cloud/dedicated/getting-started-with-dedicated-server#installing-or-reinstalling-your-dedicated-server).
+2. Install the VMware ESXi 7.0 U3c version available [via your dedicated server administration interface](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server#installing-or-reinstalling-your-dedicated-server).
 3. The inability to connect after installing ESXi 7 comes from VMWare's security system. There are no blocking rules in your firewall. It will not be possible to reset the administrator password on VMware.
 4. [Secure your dedicated server](/pages/bare_metal_cloud/dedicated_servers/securing-a-dedicated-server).
 
