@@ -1,7 +1,7 @@
 ---
 title: Pushing logs from a Kubernetes cluster to Logs Data Platform using Fluent Bit
 excerpt: All the logs of your pods in one place
-updated: 2023-09-07
+updated: 2023-09-08
 ---
 
 ## Objective
@@ -41,7 +41,7 @@ kubectl create namespace logging
 
 ### Configuration
 
-Once the namespace created, we can proceed to the next steps: define a secret for the *X-OVH-TOKEN* value of your stream token.
+Once the namespace is created, we can proceed to the next steps: define a secret for the *X-OVH-TOKEN* value of your stream token.
 
 #### Token Secret creation
 
@@ -55,14 +55,13 @@ We create a *ldp-token* secret with only one key named *ldp-token* as the value 
 
 #### Helm Values
 
-The Helm installation is documented here: [https://docs.fluentbit.io/manual/installation/](https://docs.fluentbit.io/manual/installation/kubernetes). We will customize the values used byu the Helm installation in order to change the configuration of Fluent Bit before its deployment.
+The Helm installation is documented here: [https://docs.fluentbit.io/manual/installation/](https://docs.fluentbit.io/manual/installation/kubernetes). We will customize the values used by the Helm installation in order to change the configuration of Fluent Bit before its deployment.
 
-The default values if the configuration file of the Helm package are located here: [https://github.com/fluent/helm-charts/blob/main/charts/fluent-bit/values.yaml](https://github.com/fluent/helm-charts/blob/main/charts/fluent-bit/values.yaml).
+The default values in the configuration file of the Helm package are located here: [https://github.com/fluent/helm-charts/blob/main/charts/fluent-bit/values.yaml](https://github.com/fluent/helm-charts/blob/main/charts/fluent-bit/values.yaml).
 
-For brievety sake, we will just detail the part where we change the default values. Be sure to check the default values in thewhle file to adadpt it to your Kubernetes configuration.
+For brievety sake, we will just detail the part where we change the default values. Make sure to check the default values in the whole file to adadpt it to your Kubernetes configuration.
 
-
-Look for the *env:* configuration in the file and add the following values to use your secret as a environment variable.
+Look for the *env:* configuration in the file and add the following values to use your secret as an environment variable.
 
 ```yaml
 env:
@@ -73,7 +72,7 @@ env:
              key: ldp-token
 ```
 
-We now need to add several filter in order to add the token, format logs records for teh GELF output of Fluent Bit.
+We now need to add several filters in order to add the token and format logs records for the GELF output of Fluent Bit.
 
 
 ```yaml
@@ -110,14 +109,13 @@ We now need to add several filter in order to add the token, format logs records
         Add log "none"
 ```
 
-- The first filter parse the incoming messages and add all metadata information (pod, container, images)
-- The second filter adds the **X-OVH-TOKEN** by using the environment variable we configured earlier
-- The third filter ensure all kubernetes metadata are flatten on the first level of the record so that they could be used as fields.
-- The fourth filter copy the name of the pod in the key **host** so that this value is properly set. You are free to use any other metadata value that will suit your needs here.
-- The final filter ensures there is always a value for the field log. This field will be used as the *short_message* key for the GELF output and thus cannot be empty. Some software might have their log message in another field than *log*. This will prevent these log messages to be lost.
+- The first filter parses the incoming messages and add all metadata information (pod, container, images).
+- The second filter adds the **X-OVH-TOKEN** by using the environment variable we configured earlier.
+- The third filter ensures all kubernetes metadata are flattened on the first level of the record so that they could be used as fields.
+- The fourth filter copies the name of the pod in the key **host** so that this value is properly set. You are free to use any other metadata value that will suit your needs here.
+- The final filter ensures there is always a value for the field log. This field will be used as the *short_message* key for the GELF output and thus cannot be empty. Some softwares might have their log messages in another field than *log*. This will prevent these log messages from being lost.
 
-Now we can provide the output configuration that will sent logs to Logs Data Platform in GELF format.
-
+Now we can provide the output configuration that will send logs to Logs Data Platform in GELF format.
 
 ```yaml
     [OUTPUT]
@@ -131,12 +129,11 @@ Now we can provide the output configuration that will sent logs to Logs Data Pla
         Gelf_Short_Message_Key log
 ```
 
-In this [GELF output configuration](https://docs.fluentbit.io/manual/pipeline/outputs/gelf) configuration we use the address **graX.logs.ovh.com**. Please change it to the actual address of your Logs Data Platform account. The port used is the one for GELF and *tls* is activated. Note that *Gelf_Short_Message_Key* is put to **log**, because that's where the main kubernetes log field is.
-
+In this [GELF output configuration](https://docs.fluentbit.io/manual/pipeline/outputs/gelf) we use the address **graX.logs.ovh.com**. Please change it to the actual address of your Logs Data Platform account. The port used is the one for GELF and *tls* is activated. Note that *Gelf_Short_Message_Key* is put to **log**, because that's where the main kubernetes log field is.
 
 ### Launch Fluent Bit
 
-You must first add teh Helm repository with the following command:
+You must first add the Helm repository with the following command:
 
 ```bash
 helm repo add fluent https://fluent.github.io/helm-charts
@@ -148,14 +145,15 @@ Then use the following helm command to deploy Fluent Bit on your platform:
 helm upgrade --install --namespace logging  -f values.yaml fluent-bit fluent/fluent-bit
 ```
 
-**values.yaml** is the file that contains the modifid configuration.
+**values.yaml** is the file that contains the modified configuration.
+
 Verify that the pods are running correctly with the command:
 
 ```bash
 kubectl get pods --namespace logging
 ```
 
-You can now fly to the stream interface to witness your beautifully structured logs
+You can now fly to the stream interface to witness your beautifully structured logs.
 
 ![kube_graylog](images/kube_graylog.png){.thumbnail}
 
