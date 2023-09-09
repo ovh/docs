@@ -114,16 +114,16 @@ You can then use the service in a configuration file of your application with so
 
 > [!tabs]      
 > Go     
->> [MySQL - Go](https://github.com/ovh/docs/blob/develop/pages/web/web-paas/static/files/fetch/examples/golang/mysql)  
+>> [MySQL - Go](https://github.com/ovh/docs/blob/develop/pages/web_cloud/web_paas_powered_by_platform_sh/static/files/fetch/examples/golang/mysql)  
 >>      
 > Java     
->> [MySQL - Java](https://github.com/ovh/docs/blob/develop/pages/web/web-paas/static/files/fetch/examples/java/mysql)  
+>> [MySQL - Java](https://github.com/ovh/docs/blob/develop/pages/web_cloud/web_paas_powered_by_platform_sh/static/files/fetch/examples/java/mysql)  
 >>      
 > PHP     
->> [MySQL - PHP](https://github.com/ovh/docs/blob/develop/pages/web/web-paas/static/files/fetch/examples/php/mysql)  
+>> [MySQL - PHP](https://github.com/ovh/docs/blob/develop/pages/web_cloud/web_paas_powered_by_platform_sh/static/files/fetch/examples/php/mysql)  
 >>      
 > Python     
->> [MySQL - Python](https://github.com/ovh/docs/blob/develop/pages/web/web-paas/static/files/fetch/examples/python/mysql)  
+>> [MySQL - Python](https://github.com/ovh/docs/blob/develop/pages/web_cloud/web_paas_powered_by_platform_sh/static/files/fetch/examples/python/mysql)  
 >>      
 
 > [!primary]  
