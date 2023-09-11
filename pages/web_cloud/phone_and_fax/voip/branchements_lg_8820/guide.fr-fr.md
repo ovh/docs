@@ -1,8 +1,5 @@
 ---
 title: Branchements LG 8820
-legacy_guide_number: '7536677'
-space_key: CRTEL
-space_name: Téléphonie
 hidden: true
 updated: 2018-03-26
 ---

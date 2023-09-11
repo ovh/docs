@@ -6,7 +6,7 @@ updated: 2023-01-26
 
 ## Objectif
 
-Ce guide a pour objectif d'expliquer les détails de la mise en œuvre de **vSphere Native Key Provider** pour ensuite effectuer un chiffrement d'une machine virtuelle dans l'offre **Hosted Private Cloud powered by VMware** d'OVHcloud.
+Ce guide a pour objectif d'expliquer les détails de la mise en œuvre de **vSphere Native Key Provider** pour ensuite effectuer un chiffrement d'une machine virtuelle dans l'offre **VMware on OVHcloud** d'OVHcloud.
 
 **Découvrez comment mettre en œuvre le chiffrement de vos machines virtuelles à l'aide de vSphere Native Key Provider.**
 
@@ -18,7 +18,7 @@ Ce guide a pour objectif d'expliquer les détails de la mise en œuvre de **vSph
 
 ## Prérequis
 
-- Avoir souscrit une offre [Hosted Private Cloud powered by VMware](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/).
+- Avoir souscrit une offre [VMware on OVHcloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/).
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 - Avoir accès à l’interface de gestion vSphere.
 - Avoir la version de vSphere et des hôtes en version 7.0 Update 2 minimum.
@@ -26,7 +26,7 @@ Ce guide a pour objectif d'expliquer les détails de la mise en œuvre de **vSph
 
 > [!warning]
 >
-> Il est possible que votre cluster **Hosted Private Cloud powered by VMware** ne soit pas en version 7.0 Update 2. Dans ce cas, contactez le support pour faire évoluer votre infrastructure.
+> Il est possible que votre cluster **VMware on OVHcloud** ne soit pas en version 7.0 Update 2. Dans ce cas, contactez le support pour faire évoluer votre infrastructure.
 >
 
 ## Présentation
@@ -41,7 +41,7 @@ La clé **DEK** est chiffrée à l'aide de la **KDK**. Elle est stockée et chif
 
 ## En pratique
 
-### Autorisation d'un utilisateur à administrer le chiffrement sur un cluster Hosted Private Cloud powered by VMware 
+### Autorisation d'un utilisateur à administrer le chiffrement sur un cluster VMware on OVHcloud 
 
 Connectez-vous à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur `Hosted Private Cloud`{.action} et choisissez votre cluster. Positionnez vous sur `Utilisateurs`{.action} et cliquez sur le bouton `...`{.action}.
 
@@ -81,7 +81,7 @@ Saisissez un nom dans `Nom`.
 
 > [!warning]
 >
-> Si votre offre Private Cloud est plus ancienne que **Premier Hosted Private Cloud powered by VMware**, décochez la case `Utiliser le fournisseur de clés uniquement avec les hôtes ESXi protégés par TPM (recommandé)`.
+> Si votre offre Private Cloud est plus ancienne que **Premier VMware on OVHcloud**, décochez la case `Utiliser le fournisseur de clés uniquement avec les hôtes ESXi protégés par TPM (recommandé)`.
 >
 
 Cliquez sur `AJOUTER UN FOURNISSEUR DE CLÉS`{.action}.

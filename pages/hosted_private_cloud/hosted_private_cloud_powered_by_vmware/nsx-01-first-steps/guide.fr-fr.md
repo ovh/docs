@@ -6,7 +6,7 @@ updated: 2023-08-30
 
 ## Objectif
 
-NSX est une solution de gestion de réseau logicielle **Software Defined Networking (SDN)** fournie par VMware. OVHcloud propose ce service en remplacement de NSX-v dans son offre Hosted Private Cloud Powered by VMware. Deux hôtes sont déployés avec, sur chacun d'entre eux, une machine virtuelle dédiée à NSX, ce qui permet une redondance en cas de défaillance d'un des hôtes.
+NSX est une solution de gestion de réseau logicielle **Software Defined Networking (SDN)** fournie par VMware. OVHcloud propose ce service en remplacement de NSX-v dans son offre VMware on OVHcloud. Deux hôtes sont déployés avec, sur chacun d'entre eux, une machine virtuelle dédiée à NSX, ce qui permet une redondance en cas de défaillance d'un des hôtes.
 
 Lorsqu'un client souscrit à l'offre NSX et qu'elle est activée, une préconfiguration est appliquée avec ces deux passerelles :
 
@@ -35,7 +35,7 @@ Par défaut, les routes ne sont pas activées. Les segments créés derrière la
 
 ## Prérequis
 
-- Être contact administrateur de l'infrastructure [Hosted Private Cloud powered by VMware](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), celui-ci recevant les identifiants de connexion.
+- Être contact administrateur de l'infrastructure [VMware on OVHcloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), celui-ci recevant les identifiants de connexion.
 - Avoir un identifiant utilisateur actif avec les droits spécifiques pour NSX (créé dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr))
 
 ## En pratique

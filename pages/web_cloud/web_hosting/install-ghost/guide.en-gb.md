@@ -60,7 +60,7 @@ Now that Node.js has been enabled as a runtime environment, you will need to lin
 
 ![ghostcloudweb](images/ghost-cloud-web-step3.png){.thumbnail}
 
-Two columns should stand out in the table below. Check that the Node.js runtime environment is correctly linked to the domain names concerned, and that the root file is correct. Use the information below if you need to. If if it is correctly linked, go to step 3 - [Create a MySQL database](./#step-3-create-a-mysql-database).
+Two columns should stand out in the table below. Check that the Node.js runtime environment is correctly linked to the domain names concerned, and that the root file is correct. Use the information below if you need to. If it is correctly linked, go to step 3 - [Create a MySQL database](./#step-3-create-a-mysql-database).
 
 |Column|Description| 
 |---|---| 

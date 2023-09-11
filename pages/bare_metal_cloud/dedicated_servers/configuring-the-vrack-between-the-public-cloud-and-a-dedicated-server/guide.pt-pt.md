@@ -50,7 +50,7 @@ Na lista dos serviços elegíveis, selecione o projeto que deseja adicionar ao v
 ![adicionar um projeto ao vrack](images/addprojectvrack.png){.thumbnail}
 
 <ol start="2">
-  <li>Ao <a href="/pages/platform/network-services/getting-started-07-creating-vrack#etapa-1-ativar-e-gerir-um-vrack">criar ou adicionar um serviço vRack existente</a> na secção Public Cloud.</li>
+  <li>Ao <a href="/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack#etapa-1-ativar-e-gerir-um-vrack">criar ou adicionar um serviço vRack existente</a> na secção Public Cloud.</li>
 </ol>
 
 ### Integrar uma instância no vRack
@@ -62,11 +62,11 @@ Existem duas situações:
 
 #### Caso de uma nova instância
 
-Se precisar de ajuda, consulte o guia: [Criar uma instância Public Cloud](/pages/platform/public-cloud/public-cloud-first-steps#3o-passo-criacao-de-uma-instancia){.external}. Ao criar uma instância, poderá especificar, na etapa 4, uma rede privada na qual poderá integrar a sua instância. Escolha, no menu pendente apresentado, o seu vRack criado anteriormente.
+Se precisar de ajuda, consulte o guia: [Criar uma instância Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps#3o-passo-criacao-de-uma-instancia){.external}. Ao criar uma instância, poderá especificar, na etapa 4, uma rede privada na qual poderá integrar a sua instância. Escolha, no menu pendente apresentado, o seu vRack criado anteriormente.
 
 #### Caso de uma instância já existente
 
-Pode associar uma instância existente a uma rede privada. Para mais informações, consulte [esta secção](/pages/platform/network-services/getting-started-07-creating-vrack#caso-de-uma-instancia-existente) do guia correspondente.
+Pode associar uma instância existente a uma rede privada. Para mais informações, consulte [esta secção](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack#caso-de-uma-instancia-existente) do guia correspondente.
 
 ### Criar uma VLAN ID
 
@@ -74,7 +74,7 @@ Para que os dois serviços possam comunicar entre si, devem ser « etiquetados �
 
 #### Utilização da VLAN ID por predefinição
 
-Nos servidores dedicados, por predefinição, está na VLAN **0**. Se deseja utilizar este ID, será necessário « etiquetar » a rede privada associada à sua instância com a VLAN **0**. Para o fazer, terá de passar pela [OVHcloud APIv6 (EN)](/pages/platform/network-services/getting-started-08-creating-vrack-with-api#step-3-creating-a-vlan-in-the-vrack).
+Nos servidores dedicados, por predefinição, está na VLAN **0**. Se deseja utilizar este ID, será necessário « etiquetar » a rede privada associada à sua instância com a VLAN **0**. Para o fazer, terá de passar pela [OVHcloud APIv6 (EN)](/pages/public_cloud/public_cloud_network_services/getting-started-08-creating-vrack-with-api#step-3-creating-a-vlan-in-the-vrack).
 
 > [!primary]
 > No Public Cloud, define uma VLAN ID única por rede privada.

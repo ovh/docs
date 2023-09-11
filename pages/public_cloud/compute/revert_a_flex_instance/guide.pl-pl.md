@@ -18,7 +18,7 @@ Dzięki stale zmieniającej się infrastrukturze możesz zwiększyć przestrzeń
 
 ## Wymagania
 
-- Posiadanie [instancji Public Cloud](/pages/platform/public-cloud/public-cloud-first-steps#krok-3-tworzenie-instancji) typu *flex*
+- Posiadanie [instancji Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps#krok-3-tworzenie-instancji) typu *flex*
 - [Utworzenie dostępu do interfejsu Horizon](/pages/public_cloud/compute/introducing_horizon)
 
 ## W praktyce
@@ -59,7 +59,7 @@ Po zakończeniu procesu Twoja instancja zostanie przeniesiona na model klasyczny
 
 Jeśli chcesz zmienić model *flex*, możesz to zrobić wykonując te same kroki, o których mowa [powyżej](#flavorchoice), wybierając szablon *flex* zamiast klasycznego szablonu. 
 
-Możesz również [edycja-konfiguracji-instancji](/pages/platform/public-cloud/first_steps_with_public_cloud_instance#edycja-konfiguracji-instancji) w Panelu klienta.
+Możesz również [edycja-konfiguracji-instancji](/pages/public_cloud/compute/first_steps_with_public_cloud_instance#edycja-konfiguracji-instancji) w Panelu klienta.
 
 ## Sprawdź również
  

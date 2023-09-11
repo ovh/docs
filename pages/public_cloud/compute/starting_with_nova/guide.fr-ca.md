@@ -1,7 +1,6 @@
 ---
 title: "Débuter avec l’API OpenStack"
 excerpt: "Découvrez comment gérer vos instances à l'aide du client Python OpenStack"
-legacy_guide_number: 1935
 updated: 2022-10-13
 ---
 

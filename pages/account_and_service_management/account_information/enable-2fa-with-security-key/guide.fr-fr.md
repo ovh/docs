@@ -84,7 +84,7 @@ Tous les choix que vous avez activés apparaîtront alors.
 
 [Sécuriser son compte OVHcloud avec la double authentification](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa)
 
-[Désactiver la double authentification sur son compte OVHcloud](/pages/account/customer/secure-ovhcloud-account-with-2fa#desactivation)
+[Désactiver la double authentification sur son compte OVHcloud](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa#desactivation)
 
 Le site officiel de la [FIDO Alliance](https://fidoalliance.org/){.external}.
 

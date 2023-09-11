@@ -22,7 +22,7 @@ updated: 2020-07-15
       <li>General information about these vulnerabilities ;</li>
       <li>A detailled list of all OVH products and all actions in progress and/or actions you need to do (<u><strong><span style="color: rgb(255,0,0);">please read carefully this section</span></strong></u>)<br><br></li>
    </ol>
-   <p><span style="color: rgb(0,0,0);">&nbsp;</span><span style="color: rgb(0,0,0);">&nbsp;</span>To help you, we also offer you <a class="external-link" href="/pages/cloud/dedicated/meltdown_spectre_fixes_os" rel="nofollow">a non-exhaustive table</a> listing the updates available for the main versions of the operating systems.&nbsp;</p>
+   <p><span style="color: rgb(0,0,0);">&nbsp;</span><span style="color: rgb(0,0,0);">&nbsp;</span>To help you, we also offer you <a class="external-link" href="/pages/bare_metal_cloud/dedicated_servers/meltdown_spectre_fixes_os" rel="nofollow">a non-exhaustive table</a> listing the updates available for the main versions of the operating systems.&nbsp;</p>
    <p>&nbsp;</p>
    <h2 id="SummaryOles-Generalinformartion">General informartion</h2>
    <p>&nbsp;</p>
@@ -136,7 +136,7 @@ updated: 2020-07-15
                      <p><span><br></span></p>
                      <p><span>It is available in kernel vanilla 4.14.11+, 4.9.75+, 4.4.110+</span></p>
                      <p><span><br></span></p>
-                     <p>Linux distributions are backporting the patches themselves in their own kernel versions, refer to <a class="external-link" href="/pages/cloud/dedicated/meltdown_spectre_fixes_os" rel="nofollow">our list of patches available per distribution </a>for more information.</p>
+                     <p>Linux distributions are backporting the patches themselves in their own kernel versions, refer to <a class="external-link" href="/pages/bare_metal_cloud/dedicated_servers/meltdown_spectre_fixes_os" rel="nofollow">our list of patches available per distribution </a>for more information.</p>
                   </div>
                </td>
             </tr>
@@ -161,7 +161,7 @@ updated: 2020-07-15
                         <p>&nbsp;</p>
                         <div>B) Install the latest Windows security updates that integrates the patches that are using the new CPU MSR, made available by the microcode update in A) to successfully mitigate the vulnerability. Note that you must also have a compatible Antivirus for this security install to be available, refer to the OS matrix for details.</div>
                      </div>
-                     <p>Status:&nbsp;<span><span><span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">DONE</span> <span>refer to the </span><a class="external-link" href="/pages/cloud/dedicated/meltdown_spectre_fixes_os" rel="nofollow">OS matrix </a><span>for details</span></span></span></p>
+                     <p>Status:&nbsp;<span><span><span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">DONE</span> <span>refer to the </span><a class="external-link" href="/pages/bare_metal_cloud/dedicated_servers/meltdown_spectre_fixes_os" rel="nofollow">OS matrix </a><span>for details</span></span></span></p>
                      <p>&nbsp;</p>
                   </div>
                </td>
@@ -344,7 +344,7 @@ updated: 2020-07-15
                      <p>Linux: <span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">PROTECTABLE</span><span>&nbsp;</span></p>
                      <p>&nbsp;</p>
                      Windows: <span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">PROTECTABLE</span>
-                     <p><a class="external-link" href="/pages/cloud/dedicated/meltdown_spectre_fixes_os" rel="nofollow"><em>Clic here for more information</em></a></p>
+                     <p><a class="external-link" href="/pages/bare_metal_cloud/dedicated_servers/meltdown_spectre_fixes_os" rel="nofollow"><em>Clic here for more information</em></a></p>
                   </div>
                </td>
                <td class="confluenceTd">
@@ -352,7 +352,7 @@ updated: 2020-07-15
                      <p>Linux:&nbsp; <span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">PROTECTABLE</span></p>
                      <p>&nbsp;</p>
                      <p>Windows: <span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">PROTECTABLE</span></p>
-                     <p><a class="external-link" href="/pages/cloud/dedicated/meltdown_spectre_fixes_os" rel="nofollow"><em>Clic here for more information</em></a></p>
+                     <p><a class="external-link" href="/pages/bare_metal_cloud/dedicated_servers/meltdown_spectre_fixes_os" rel="nofollow"><em>Clic here for more information</em></a></p>
                   </div>
                </td>
                <td class="confluenceTd">
@@ -361,7 +361,7 @@ updated: 2020-07-15
                      <p>Linux : 4.14.14 and 4.9.77 are available via Netboot : <strong>please update your kenel or use Netboot</strong>.&nbsp;</p>
                      <p>&nbsp;</p>
                      <p>Windows:&nbsp;<span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">PROTECTABLE</span></p>
-                     <p><a class="external-link" href="/pages/cloud/dedicated/meltdown_spectre_fixes_os" rel="nofollow"><em>Clic here for more information</em></a></p>
+                     <p><a class="external-link" href="/pages/bare_metal_cloud/dedicated_servers/meltdown_spectre_fixes_os" rel="nofollow"><em>Clic here for more information</em></a></p>
                      <p>&nbsp;</p>
                   </div>
                </td>
@@ -419,7 +419,7 @@ updated: 2020-07-15
                      <p>Linux:&nbsp;<span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">PROTECTABLE</span></p>
                      <p>&nbsp;</p>
                      Windows: <span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">PROTECTABLE</span>
-                     <p><a class="external-link" href="/pages/cloud/dedicated/meltdown_spectre_fixes_os" rel="nofollow"><em>Clic here for more information</em></a></p>
+                     <p><a class="external-link" href="/pages/bare_metal_cloud/dedicated_servers/meltdown_spectre_fixes_os" rel="nofollow"><em>Clic here for more information</em></a></p>
                   </div>
                </td>
                <td class="confluenceTd">
@@ -427,7 +427,7 @@ updated: 2020-07-15
                      <p>Linux:&nbsp;<span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">PROTECTABLE</span></p>
                      <p>&nbsp;</p>
                      Windows: <span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">PROTECTABLE</span>
-                     <p><a class="external-link" href="/pages/cloud/dedicated/meltdown_spectre_fixes_os" rel="nofollow"><em>Clic here for more information</em></a></p>
+                     <p><a class="external-link" href="/pages/bare_metal_cloud/dedicated_servers/meltdown_spectre_fixes_os" rel="nofollow"><em>Clic here for more information</em></a></p>
                   </div>
                </td>
                <td class="confluenceTd">
@@ -540,7 +540,7 @@ updated: 2020-07-15
                      <p>Linux:&nbsp;<span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">PROTECTABLE</span></p>
                      <p>&nbsp;</p>
                      Windows: <span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">PROTECTABLE</span>
-                     <p><a class="external-link" href="/pages/cloud/dedicated/meltdown_spectre_fixes_os" rel="nofollow"><em>Clic here for more information</em></a></p>
+                     <p><a class="external-link" href="/pages/bare_metal_cloud/dedicated_servers/meltdown_spectre_fixes_os" rel="nofollow"><em>Clic here for more information</em></a></p>
                   </div>
                </td>
                <td class="confluenceTd">
@@ -548,7 +548,7 @@ updated: 2020-07-15
                      <p>Linux:&nbsp;<span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">PROTECTABLE</span></p>
                      <p>&nbsp;</p>
                      Windows: <span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">PROTECTABLE</span>
-                     <p><a class="external-link" href="/pages/cloud/dedicated/meltdown_spectre_fixes_os" rel="nofollow"><em>Clic here for more information</em></a></p>
+                     <p><a class="external-link" href="/pages/bare_metal_cloud/dedicated_servers/meltdown_spectre_fixes_os" rel="nofollow"><em>Clic here for more information</em></a></p>
                   </div>
                </td>
                <td class="confluenceTd">
@@ -556,7 +556,7 @@ updated: 2020-07-15
                      <p>Linux:&nbsp;<span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">PROTECTABLE</span></p>
                      <p>&nbsp;</p>
                      Windows:&nbsp;<span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">PROTECTABLE</span>
-                     <p><a class="external-link" href="/pages/cloud/dedicated/meltdown_spectre_fixes_os" rel="nofollow"><em>Clic here for more information</em></a></p>
+                     <p><a class="external-link" href="/pages/bare_metal_cloud/dedicated_servers/meltdown_spectre_fixes_os" rel="nofollow"><em>Clic here for more information</em></a></p>
                   </div>
                </td>
             </tr>
@@ -637,7 +637,7 @@ updated: 2020-07-15
                      <p>Linux:&nbsp;<span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">PROTECTABLE</span> Cloud-IaaS/Baremetal</p>
                      <p>&nbsp;</p>
                      Windows: <span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">PROTECTABLE</span>
-                     <p><a class="external-link" href="/pages/cloud/dedicated/meltdown_spectre_fixes_os" rel="nofollow"><em>Clic here for more information</em></a></p>
+                     <p><a class="external-link" href="/pages/bare_metal_cloud/dedicated_servers/meltdown_spectre_fixes_os" rel="nofollow"><em>Clic here for more information</em></a></p>
                   </div>
                </td>
                <td class="confluenceTd">
@@ -645,7 +645,7 @@ updated: 2020-07-15
                      <p>Linux:&nbsp;<span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">PROTECTABLE</span> Cloud-IaaS/Baremetal</p>
                      <p>&nbsp;</p>
                      <p><span>Windows: </span><span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">PROTECTABLE</span><span>&nbsp;</span></p>
-                     <p><span><a class="external-link" href="/pages/cloud/dedicated/meltdown_spectre_fixes_os" rel="nofollow"><em>Clic here for more information</em></a><br></span></p>
+                     <p><span><a class="external-link" href="/pages/bare_metal_cloud/dedicated_servers/meltdown_spectre_fixes_os" rel="nofollow"><em>Clic here for more information</em></a><br></span></p>
                      <p>&nbsp;</p>
                   </div>
                </td>
@@ -712,7 +712,7 @@ updated: 2020-07-15
                      <p>Linux:&nbsp;<span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">PROTECTABLE</span> Cloud-IaaS/Baremetal</p>
                      <p>&nbsp;</p>
                      Windows: <span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">PROTECTABLE</span>
-                     <p><a class="external-link" href="/pages/cloud/dedicated/meltdown_spectre_fixes_os" rel="nofollow"><em>Clic here for more information</em></a></p>
+                     <p><a class="external-link" href="/pages/bare_metal_cloud/dedicated_servers/meltdown_spectre_fixes_os" rel="nofollow"><em>Clic here for more information</em></a></p>
                   </div>
                </td>
                <td class="confluenceTd">
@@ -720,7 +720,7 @@ updated: 2020-07-15
                      <p>Linux:&nbsp;<span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">PROTECTABLE</span> Cloud-IaaS/Baremetal</p>
                      <p>&nbsp;</p>
                      Windows: <span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">PROTECTABLE</span>
-                     <p><a class="external-link" href="/pages/cloud/dedicated/meltdown_spectre_fixes_os" rel="nofollow"><em>Clic here for more information</em></a></p>
+                     <p><a class="external-link" href="/pages/bare_metal_cloud/dedicated_servers/meltdown_spectre_fixes_os" rel="nofollow"><em>Clic here for more information</em></a></p>
                   </div>
                </td>
                <td class="confluenceTd">
@@ -728,7 +728,7 @@ updated: 2020-07-15
                      <p>Linux:&nbsp;<span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">PROTECTABLE</span></p>
                      <p>&nbsp;</p>
                      Windows:&nbsp;<span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">PROTECTABLE</span>
-                     <p><a class="external-link" href="/pages/cloud/dedicated/meltdown_spectre_fixes_os" rel="nofollow"><em>Clic here for more information</em></a></p>
+                     <p><a class="external-link" href="/pages/bare_metal_cloud/dedicated_servers/meltdown_spectre_fixes_os" rel="nofollow"><em>Clic here for more information</em></a></p>
                   </div>
                </td>
             </tr>
@@ -1380,7 +1380,7 @@ updated: 2020-07-15
                      <p>Status:&nbsp;<span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">NOT EXPOSED</span></p>
                      <p>&nbsp;</p>
                      <p>Windows:&nbsp;<span>&nbsp;</span><span><span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">PROTECTED</span></span></p>
-                     <p><a class="external-link" href="/pages/cloud/dedicated/meltdown_spectre_fixes_os" rel="nofollow"><em>Clic here for more information</em></a></p>
+                     <p><a class="external-link" href="/pages/bare_metal_cloud/dedicated_servers/meltdown_spectre_fixes_os" rel="nofollow"><em>Clic here for more information</em></a></p>
                   </div>
                </td>
             </tr>
@@ -1413,7 +1413,7 @@ updated: 2020-07-15
                      <p>Status:&nbsp;<span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">NOT EXPOSED</span></p>
                      <p>&nbsp;</p>
                      <p>Windows:&nbsp;<span>&nbsp;</span><span><span class="status-macro aui-lozenge aui-lozenge-success conf-macro output-inline" data-hasbody="false" data-macro-name="status">PROTECTED</span></span></p>
-                     <p><a class="external-link" href="/pages/cloud/dedicated/meltdown_spectre_fixes_os" rel="nofollow"><em>Clic here for more information</em></a></p>
+                     <p><a class="external-link" href="/pages/bare_metal_cloud/dedicated_servers/meltdown_spectre_fixes_os" rel="nofollow"><em>Clic here for more information</em></a></p>
                   </div>
                </td>
             </tr>

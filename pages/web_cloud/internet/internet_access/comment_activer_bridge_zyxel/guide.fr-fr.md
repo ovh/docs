@@ -81,7 +81,7 @@ Validez le changement, le bridge est désormais activé sur les ports LAN 1, 2 e
 
 ### Étape 5 : Revenir en mode routeur
 
-Pour revenir en mode routeur suivez le guide [Redémarrer ou réinitialiser une box OVHcloud](/pages/telecom/xdsl/restart_reboot_modem#reinitialiser-votre-box-ovh) pour réinitialiser votre modem Zyxel et rétablir sa configuration par défaut.
+Pour revenir en mode routeur suivez le guide [Redémarrer ou réinitialiser une box OVHcloud](/pages/web_cloud/internet/internet_access/restart_reboot_modem#reinitialiser-votre-box-ovh) pour réinitialiser votre modem Zyxel et rétablir sa configuration par défaut.
 
 ## Aller plus loin
 

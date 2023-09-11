@@ -58,7 +58,7 @@ Uma vez ligado, poderá tomar nota do seu identificador que é apresentado na su
 
 ### Perdi a minha palavra-passe
 
-Em caso de perda da palavra-passe, consulte [este guia](/pages/account/customer/manage-ovh-password#se-nao-se-lembrar-da-sua-palavra-passe-atual), que explica o que deverá fazer para a alterar.
+Em caso de perda da palavra-passe, consulte [este guia](/pages/account_and_service_management/account_information/manage-ovh-password#se-nao-se-lembrar-da-sua-palavra-passe-atual), que explica o que deverá fazer para a alterar.
 
 ### Perdi a minha palavra-passe e o meu endereço de e-mail principal já não é válido
 
@@ -68,7 +68,7 @@ Neste caso, o procedimento de reinicialização da palavra-passe não pode ser e
 
 Pode contactar o suporte da OVHcloud em +351 213 155 642 para que este endereço de SOS se torne o endereço de e-mail principal.
 
-Uma vez efetuada esta ação, é essencial [introduzir um **novo** endereço de e-mail de SOS](/pages/account/customer/all_about_username#backup-email) na sua conta.
+Uma vez efetuada esta ação, é essencial [introduzir um **novo** endereço de e-mail de SOS](/pages/account_and_service_management/account_information/all_about_username#backup-email) na sua conta.
 
 #### Se não indicou um endereço de e-mail de SOS ou se este endereço também é inválido
 
@@ -82,7 +82,7 @@ Deve seguir este [procedimento](https://www.ovh.pt/cgi-bin/pt/procedure/procedur
 
 Neste caso, pode utilizar os códigos de segurança da dupla autenticação, utilizar outro periférico ou desativar a dupla autenticação.
 
-Consulte o manual "[Proteger a sua conta OVHcloud com a dupla autenticação](/pages/account/customer/secure-ovhcloud-account-with-2fa#o-que-devo-fazer-se-um-dos-meus-perifericos-estiver-perdido-ou-parar-de-funcionar)" para obter mais informações.
+Consulte o manual "[Proteger a sua conta OVHcloud com a dupla autenticação](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa#o-que-devo-fazer-se-um-dos-meus-perifericos-estiver-perdido-ou-parar-de-funcionar)" para obter mais informações.
 
 ### Não ativei a dupla autenticação na minha conta, mas ainda assim estão a pedir-me um código
 

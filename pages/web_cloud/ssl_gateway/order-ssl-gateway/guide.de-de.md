@@ -1,7 +1,7 @@
 ---
 title: Ein SSL Gateway bestellen
 links: 
-   - docs/web/ssl-gateway/use_ssl_gateway/
+   - docs/web_cloud/ssl_gateway/use_ssl_gateway/
 excerpt: Sichern Sie die Verbindungen zu Ihrer Website
 updated: 2022-12-01
 ---

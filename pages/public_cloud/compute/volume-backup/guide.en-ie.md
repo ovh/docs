@@ -31,7 +31,7 @@ Both volume snapshot and volume backup allow you to:
 Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned. Then open `Block Storage`{.action} in the left-hand navigation bar under **Storage**.
 
 In the row of the volume concerned, click on the `...`{.action} button and select `Create a backup`{.action}.<br>
-It is not required to detach the volume from its instance first. However, if you wish to do so, please consult this [section](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance#on-linux) of the corresponding guide for Linux and this [section](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance#on-windows) for Windows.
+It is not required to detach the volume from its instance first. However, if you wish to do so, please consult this [section](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance#on-linux) of the corresponding guide for Linux and this [section](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance#on-windows) for Windows.
 
 ![Volume Backup creation](images/volumebackup01.png){.thumbnail}
 

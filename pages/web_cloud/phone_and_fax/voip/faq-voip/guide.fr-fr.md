@@ -90,7 +90,7 @@ Si vous souhaitez des informations complémentaires, nous vous invitons à consu
 
 ### Pourquoi l'enregistrement de mes appels dysfonctionne ?
 
-Ce dysfonctionnement peut provenir d'une mauvaise configuration. Pour le vérifier, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Sélectionnez l'onglet `Télécom` puis `Téléphonie`. Choisissez alors le numéro configuré en « Contact Center Solution ». Au sein de cette configuration, cliquez sur le menu « Consulter les enregistrements ». Vérifiez que la case « Enregistrement des appels » est bien cochée. Retrouvez plus de détails dans le guide [Configurer un Contact Center Solution](/pages/telecom/voip/contact-center-solution#consulter-les-enregistrements).
+Ce dysfonctionnement peut provenir d'une mauvaise configuration. Pour le vérifier, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Sélectionnez l'onglet `Télécom` puis `Téléphonie`. Choisissez alors le numéro configuré en « Contact Center Solution ». Au sein de cette configuration, cliquez sur le menu « Consulter les enregistrements ». Vérifiez que la case « Enregistrement des appels » est bien cochée. Retrouvez plus de détails dans le guide [Configurer un Contact Center Solution](/pages/web_cloud/phone_and_fax/voip/contact-center-solution#consulter-les-enregistrements).
 
 #### Trucs et astuces
 

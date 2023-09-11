@@ -1,7 +1,6 @@
 ---
 title: Zarządzanie snapshotami instancji w horizon
 excerpt: Jak zarządzać snapshotami instancji w interfejsie Horizon.
-legacy_guide_number: g1770
 updated: 2022-01-31
 ---
 
@@ -17,7 +16,7 @@ Możliwe jest tworzenie zrzutów instancji, które będą mogły zostać wykorzy
 
 ## Wymagania początkowe
 
-- Utworzenie [instancji Public Cloud](/pages/platform/public-cloud/public-cloud-first-steps#krok-3-tworzenie-instancji) na Twoim koncie OVHcloud
+- Utworzenie [instancji Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps#krok-3-tworzenie-instancji) na Twoim koncie OVHcloud
 - [Dostęp do interfejsu Horizon](/pages/public_cloud/compute/introducing_horizon)
 
 ## W praktyce

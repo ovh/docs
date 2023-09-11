@@ -52,7 +52,7 @@ Dalla scheda del tuo browser che visualizza la finestra di statistiche, recupera
 
 > [!warning] 
 >
-> Se hai attivato i log separati su un [record multisito](/pages/web/hosting/multisites_configure_multisite#step-2-aggiungi-un-dominio-o-un-sottodominio), gli utenti creati qui non possono accedere alle statistiche di questo record multisito.
+> Se hai attivato i log separati su un [record multisito](/pages/web_cloud/web_hosting/multisites_configure_multisite#step-2-aggiungi-un-dominio-o-un-sottodominio), gli utenti creati qui non possono accedere alle statistiche di questo record multisito.
 >
 
 ### Statistiche delle visite

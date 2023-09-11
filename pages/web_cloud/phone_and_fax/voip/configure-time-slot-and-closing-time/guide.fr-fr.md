@@ -91,7 +91,7 @@ Pour compléter vos plages horaires, vous avez la possibilité de créer des fer
 
 > [!primary]
 >
-> Les fermetures exceptionnelles complètent [vos plages horaires paramétrées](/pages/telecom/voip/configure-time-slot-and-closing-time#gerer-les-plages-horaires){.external}. Il est donc indispensable que ces dernières soient activées pour que les fermetures exceptionnelles s’appliquent.
+> Les fermetures exceptionnelles complètent [vos plages horaires paramétrées](/pages/web_cloud/phone_and_fax/voip/configure-time-slot-and-closing-time#gerer-les-plages-horaires){.external}. Il est donc indispensable que ces dernières soient activées pour que les fermetures exceptionnelles s’appliquent.
 >
 
 Pour démarrer la manipulation, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, partie Télécom. Cliquez sur `Téléphonie`{.action} dans la barre de services à gauche, puis sélectionnez la ligne concernée.

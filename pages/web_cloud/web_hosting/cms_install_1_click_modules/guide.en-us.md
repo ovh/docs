@@ -16,8 +16,8 @@ OVHcloud 1-click modules allow quick and easy website setups (without technical 
 
 - An [OVHcloud web hosting plan](https://www.ovhcloud.com/en/web-hosting/) that contains at least one database in your customer account.
 - You have access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we).
-- Your web hosting uses a [compatible PHP version](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014).
-- You have [correctly configured your .ovhconfig file](/pages/web_cloud/web_hosting/ovhconfig_configuration).
+- Your web hosting uses a [compatible PHP version](/pages/web_cloud/web_hosting/configure_your_web_hosting).
+- You have [correctly configured your .ovhconfig file](/pages/web_cloud/web_hosting/configure_your_web_hosting).
 - The directory (root folder) where your 1-click module will be installed must be empty or currently nonexistent.
 - The domain name (with subdomain if desired) that will be used for your website must be declared as a [Multisite](/pages/web_cloud/web_hosting/multisites_configure_multisite) on your OVHcloud web hosting plan.
 
@@ -185,7 +185,7 @@ Explore our [Web Cloud Database solutions](https://www.ovhcloud.com/en/web-cloud
 
 [Managing your CMS](/pages/web_cloud/web_hosting/cms_manage_1_click_module)
 
-[Uninstalling your CMS](/pages/web/hosting/cms_manage_1_click_module#step-3-delete-your-module)
+[Uninstalling your CMS](/pages/web_cloud/web_hosting/cms_manage_1_click_module#step-3-delete-your-module)
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en/directory/).
 

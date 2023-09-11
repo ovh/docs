@@ -32,7 +32,7 @@ This module has been written to be compatible with Terraform v1.4 or higher. To 
 
 ### Usage of the Terraform module
 
-Several examples are available in the [GitHub repository](https://github.com/ovh/terraform-vsphere-sap-system/examples/) to deploy an SAP system infrastructure.
+Several examples are available in the [GitHub repository](https://github.com/ovh/terraform-vsphere-sap-system/tree/master/examples/) to deploy an SAP system infrastructure.
 
 Three main files are required to use as expected this Terraform module:
 
@@ -308,7 +308,7 @@ sap_hana_databases_ids = {
 
 If the execution ran without issue, you have created your first SAP system infrastructure with all the virtual machines on your VMware on OVHcloud solution with Terraform.
 
-We suggest that you look the [examples folder](https://github.com/ovh/terraform-vsphere-sap-system/examples) and [README](https://github.com/ovh/terraform-vsphere-sap-system) to discover all possibilities.
+We suggest that you look the [examples folder](https://github.com/ovh/terraform-vsphere-sap-system/tree/master/examples) and [README](https://github.com/ovh/terraform-vsphere-sap-system) to discover all possibilities.
 
 At any moment, you have the possibility to change the configuration of the virtual machines (more vCPU, more memory or add a new disk, for example) and relaunch the Terraform execution.
 

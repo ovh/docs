@@ -1,7 +1,6 @@
 ---
 title: 'Charger les variables d’environnement OpenStack'
 excerpt: 'Apprenez à charger vos variables d’environnement pour utiliser l’API d’OpenStack'
-legacy_guide_number: 1852
 updated: 2021-08-18
 ---
 

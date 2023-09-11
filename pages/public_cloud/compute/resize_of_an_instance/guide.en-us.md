@@ -1,7 +1,6 @@
 ---
 title: Resize an instance via Horizon
 excerpt: "Find out how to resize an instance in the Horizon interface"
-legacy_guide_number: 1778
 updated: 2023-05-24
 ---
 
@@ -29,7 +28,7 @@ As a result of increased activity, or simply new needs, your instance may not be
 
 ## Requirements
 
-- An [OVHcloud Public Cloud instance](/pages/platform/public-cloud/public-cloud-first-steps#create-instance)
+- An [OVHcloud Public Cloud instance](/pages/public_cloud/compute/public-cloud-first-steps#create-instance)
 - [Access to the Horizon interface](/pages/public_cloud/compute/introducing_horizon)
 
 ## Instructions

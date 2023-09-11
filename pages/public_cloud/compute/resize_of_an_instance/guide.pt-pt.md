@@ -1,7 +1,6 @@
 ---
 title: Redimensionar uma instância através do Horizon
 excerpt: Saiba como redimensionar uma instância a partir da interface Horizon
-legacy_guide_number: g1778
 updated: 2023-05-24
 ---
 
@@ -34,7 +33,7 @@ No seguimento de um crescimento da sua atividade, ou simplesmente porque tem nov
 
 ## Requisitos
 
-- Ter [criado uma instância Public Cloud](/pages/platform/public-cloud/public-cloud-first-steps#3o-passo-criacao-de-uma-instancia) na sua conta OVHcloud
+- Ter [criado uma instância Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps#3o-passo-criacao-de-uma-instancia) na sua conta OVHcloud
 - [Aceder à interface Horizon](/pages/public_cloud/compute/introducing_horizon)
 
 ## Instruções

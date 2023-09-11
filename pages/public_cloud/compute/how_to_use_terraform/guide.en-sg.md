@@ -124,7 +124,7 @@ $ export OVH_CONSUMER_KEY=Your_token(or_CK)
 
 The "alias" is a unique identifier for a provider. For example, if you have two OpenStack providers with different credentials, you must precise each provider in the resource.
 
-You now need to [create a new OpenStack user](/pages/public_cloud/compute/create_and_delete_a_user), then [generate the OpenRC file](/pages/platform/public-cloud/loading_openstack_environment_variables#step-1-retrieve-the-variables) containing all of the credentials you want to export as environment variables.
+You now need to [create a new OpenStack user](/pages/public_cloud/compute/create_and_delete_a_user), then [generate the OpenRC file](/pages/public_cloud/compute/loading_openstack_environment_variables#step-1-retrieve-the-variables) containing all of the credentials you want to export as environment variables.
 
 Load this file, then enter the password for the user you created earlier:
 

@@ -64,7 +64,7 @@ Una vez que haya eliminado los datos de sus bases de datos, vuelva a calcular el
 
 #### 2 - Web Cloud Databases
 
-Si utiliza el producto [Web Cloud Databases](/pages/web/clouddb/starting_with_clouddb#activacion-de-su-servidor-clouddb-incluido-con-su-plan-de-hosting) incluido con su alojamiento [Performance](https://www.ovhcloud.com/es-es/web-hosting/performance-offer/) y desea cambiar su alojamiento a un plan [Pro](https://www.ovhcloud.com/es-es/web-hosting/professional-offer/), acceda al apartado `Alojamientos`{.action} del área de cliente.<br>
+Si utiliza el producto [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb#activacion-de-su-servidor-clouddb-incluido-con-su-plan-de-hosting) incluido con su alojamiento [Performance](https://www.ovhcloud.com/es-es/web-hosting/performance-offer/) y desea cambiar su alojamiento a un plan [Pro](https://www.ovhcloud.com/es-es/web-hosting/professional-offer/), acceda al apartado `Alojamientos`{.action} del área de cliente.<br>
 Haga clic en el botón `...`{.action} en la sección `Bases de datos privadas`{.action} y, seguidamente, en `Desvincular`{.action}.
 
 ![Web Cloud Databases](images/clouddb.png){.thumbnail}

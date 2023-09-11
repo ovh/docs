@@ -128,7 +128,7 @@ Plusieurs causes peuvent expliquer cet état. Nous vous conseillons alors de :
 
 > [!primary]
 >
-> Si vous n'utilisez pas une connexion Wi-Fi, poursuivez dès à présent vers la vérification suivante : « [3. Vérifier la configuration réseau de votre modem](/pages/telecom/xdsl/resoudre-interruption-lenteurs-navigation#3-verifier-la-configuration-reseau-de-votre-modem){.external} ».
+> Si vous n'utilisez pas une connexion Wi-Fi, poursuivez dès à présent vers la vérification suivante : « [3. Vérifier la configuration réseau de votre modem](/pages/web_cloud/internet/internet_access/resoudre-interruption-lenteurs-navigation#3-verifier-la-configuration-reseau-de-votre-modem){.external} ».
 >
 
 Votre connexion Wi-Fi n'est toujours pas fonctionnelle ? Deux vérifications peuvent ici vous permettre de rétablir votre accès.

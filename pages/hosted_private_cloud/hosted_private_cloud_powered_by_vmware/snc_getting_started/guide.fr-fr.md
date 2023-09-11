@@ -124,7 +124,7 @@ Si vous ne confirmez pas cette opération avant l'expiration, elle sera annulée
 
 Le guide suivant vous décrit comment effectuer cette manipulation :
 
-* [Valider une opération avec un token](/pages/cloud/private-cloud/interface-secure#valider-une-operation-avec-un-jeton)
+* [Valider une opération avec un token](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/interface-secure#valider-une-operation-avec-un-jeton)
 
 A l'issue de cette étape, vous serez en capacité d'ouvrir une session sur l'interface vSphere et valider toutes les opérations sensibles sur l'infrastructure lors les prochaines étapes.
 
@@ -134,7 +134,7 @@ La mise en place d'un VPN est nécessaire pour vous permettre de vous connecter 
 
 Le guide suivant vous décrit comment effectuer cette manipulation :
 
-* [Configurer un VPN IPSec via une Gateway Edge](/pages/cloud/private-cloud/nsx_configurer_un_vpn_via_une_gateway_edge#ipsec-vpn)
+* [Configurer un VPN IPSec via une Gateway Edge](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx_configurer_un_vpn_via_une_gateway_edge#ipsec-vpn)
 
 ### Etape 4 : activer la private gateway
 

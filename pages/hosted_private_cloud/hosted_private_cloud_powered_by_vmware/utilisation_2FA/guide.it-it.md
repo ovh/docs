@@ -76,7 +76,7 @@ L’unica differenza consisterà nell’autonomia dell’utente per confermare i
 
 È possibile utilizzare diverse applicazioni terze che richiedono la connessione al vCenter.
 
-Queste applicazioni devono essere precedentemente autorizzate attraverso una politica di accesso al vCenter che può essere configurata nello [Spazio Cliente](/pages/cloud/private-cloud/manager_ovh_private_cloud#sicurezza).
+Queste applicazioni devono essere precedentemente autorizzate attraverso una politica di accesso al vCenter che può essere configurata nello [Spazio Cliente](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/manager_ovh_private_cloud#sicurezza).
 
 Queste applicazioni potranno accedere alle nostre infrastrutture ma non supporteranno necessariamente l’autenticazione a due fattori.
 

@@ -1,7 +1,6 @@
 ---
 title: 'Public Cloud Quote erhöhen'
 excerpt: 'Erfahren Sie hier, wie Sie eine Erhöhung Ihrer Kontingente für Public Cloud beantragen'
-legacy_guide_number: 1904
 updated: 2023-05-03
 ---
 

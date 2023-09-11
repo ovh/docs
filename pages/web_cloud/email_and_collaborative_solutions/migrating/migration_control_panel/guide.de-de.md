@@ -107,7 +107,7 @@ Bestätigen Sie anschließend das Passwort des Quell-Accounts (die Adresse, die 
 >
 >![exchange](images/account_migration_adddomain.png){.thumbnail}
 >
-> Weitere Informationen zum Hinzufügen eines Domainnamens finden Sie in den Hilfen zu [E-Mail Pro](/pages/web/emails-pro/first_config#schritt-2-ihre-domain-hinzufugen) und [Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain).
+> Weitere Informationen zum Hinzufügen eines Domainnamens finden Sie in den Hilfen zu [E-Mail Pro](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config#schritt-2-ihre-domain-hinzufugen) und [Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain).
 
 Die Migration Ihres MX Plan erfolgt in 3 Schritten: **Umbenennen**, **Erstellen** und **Migrieren**.
 

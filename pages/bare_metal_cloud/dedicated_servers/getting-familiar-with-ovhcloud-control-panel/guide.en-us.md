@@ -48,7 +48,7 @@ Once you are in the `Dedicated Servers`{.action} menu, click on the server of yo
 **Service status**
 
 - Status: Click on the `...`{.action} next to this option to reboot or delete your server.
-- Monitoring: Click on `Configure`{.action} to change the [monitoring settings of your server](/pages/cloud/dedicated/getting-started-with-dedicated-server#monitoring-server).
+- Monitoring: Click on `Configure`{.action} to change the [monitoring settings of your server](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server#monitoring-server).
 
 **Network**
 

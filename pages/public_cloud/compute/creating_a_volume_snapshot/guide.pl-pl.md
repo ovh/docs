@@ -35,7 +35,7 @@ Zaloguj się do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotoma
 
 ![Snapshoty wolumenów](images/volume_snapshot01.png){.thumbnail}
 
-Po prawej stronie wybranego wolumenu kliknij `...`{.action} a następnie `Utwórz snapshot`{.action} (nie ma potrzeby odłączania wolumenu od instancji.) Jeśli jednak chcesz odłączyć wolumen, zapoznaj się z [tą sekcją](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance#linux_1) odpowiedniego przewodnika dla systemu Linux i [tą sekcją](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance#windows_1) dla systemu Windows.
+Po prawej stronie wybranego wolumenu kliknij `...`{.action} a następnie `Utwórz snapshot`{.action} (nie ma potrzeby odłączania wolumenu od instancji.) Jeśli jednak chcesz odłączyć wolumen, zapoznaj się z [tą sekcją](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance#linux_1) odpowiedniego przewodnika dla systemu Linux i [tą sekcją](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance#windows_1) dla systemu Windows.
 
 ![Snapshoty wolumenów](images/volume_snapshot02.png){.thumbnail}
 

@@ -1,6 +1,5 @@
 ---
 title: Object Storage Swift - Optimised method for uploading files to Object Storage
-legacy_guide_number: g1951
 updated: 2021-10-27
 ---
 

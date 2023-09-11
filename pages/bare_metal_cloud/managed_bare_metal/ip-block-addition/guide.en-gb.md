@@ -1,7 +1,6 @@
 ---
 title: Adding an IP block
 excerpt: Find out how to order an IP block for a Managed Bare Metal project
-legacy_guide_number: '7766457'
 updated: 2020-11-18
 ---
 

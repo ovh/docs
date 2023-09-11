@@ -33,7 +33,7 @@ Aby utworzyć nowy klucz SSH, zapoznaj się z [przewodnikiem dotyczącym pierwsz
 
 ### Konfiguracja nowego użytkownika
 
-[Zaloguj się do instancji przez SSH](/pages/platform/public-cloud/public-cloud-first-steps#connect-to-instance) i utwórz nowego użytkownika za pomocą poniższych poleceń:
+[Zaloguj się do instancji przez SSH](/pages/public_cloud/compute/public-cloud-first-steps#connect-to-instance) i utwórz nowego użytkownika za pomocą poniższych poleceń:
 
 ```bash
 ~$ sudo adduser user2

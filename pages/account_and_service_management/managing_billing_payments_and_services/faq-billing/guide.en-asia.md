@@ -89,7 +89,7 @@ To change your default payment method, see our [payment methods management guide
 
 #### Tips and tricks
 
-If your pre-paid OVHcloud account contains credit, it will always be used by default for renewals. If if you have less credit than your bill total, the remaining amount will be charged to your registered payment method. Finally, if you do not register any payment methods, you will be sent an invoice via email to settle the outstanding amount.
+If your pre-paid OVHcloud account contains credit, it will always be used by default for renewals. If you have less credit than your bill total, the remaining amount will be charged to your registered payment method. Finally, if you do not register any payment methods, you will be sent an invoice via email to settle the outstanding amount.
 
 ### When is my next payment due date?
 

@@ -103,7 +103,7 @@ Finally, confirm the password for the source email account (the one you want to 
 >
 >![exchange](images/account_migration_adddomain.png){.thumbnail}
 >
-> To find out more about adding a domain name, follow the [Email Pro guide](/pages/web/emails-pro/first_config#step-2-add-your-domain-name) or the [Exchange guide](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain).
+> To find out more about adding a domain name, follow the [Email Pro guide](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config#step-2-add-your-domain-name) or the [Exchange guide](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain).
 
 Your MXPlan migration will be done in 3 main steps: **Renaming**, **Creating** and **Migrating**.
 

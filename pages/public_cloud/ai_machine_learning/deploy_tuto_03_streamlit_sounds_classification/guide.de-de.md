@@ -62,7 +62,7 @@ Create the function that allows to save the uploaded sounds in an `Object Contai
 def save_file(sound_file):
     # save your sound file in the right folder by following the path
     with open(os.path.join('audio_files/', sound_file.name),'wb') as f:
-         f.write(sound_file.getbuffer())
+         f.write(sound_file.getbuffer(
     return sound_file.name
 ```
 

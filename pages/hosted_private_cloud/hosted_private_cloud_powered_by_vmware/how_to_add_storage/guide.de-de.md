@@ -1,7 +1,6 @@
 ---
 title: Wie füge ich ein Storage hinzu? (EN)
 excerpt: Learn how to add storage to your infrastructure
-legacy_guide_number: g606
 updated: 2022-02-01
 ---
 

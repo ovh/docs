@@ -59,7 +59,7 @@ Suite à la suppression de données sur vos bases, pensez à recalculer le quota
 
 #### 2 - Web Cloud Databases
 
-Si vous utilisez l'offre [Web Cloud Databases](/pages/web/clouddb/starting_with_clouddb#activation-de-votre-serveur-clouddb-inclus-avec-votre-offre-dhebergement-web) incluse avec votre hébergement [Performance](https://www.ovhcloud.com/fr/web-hosting/performance-offer/) et que vous souhaitez passer votre hébergement sur une offre [Pro](https://www.ovhcloud.com/fr/web-hosting/professional-offer/), rendez-vous dans la partie `Hébergements`{.action} de votre espace client.<br>
+Si vous utilisez l'offre [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb#activation-de-votre-serveur-clouddb-inclus-avec-votre-offre-dhebergement-web) incluse avec votre hébergement [Performance](https://www.ovhcloud.com/fr/web-hosting/performance-offer/) et que vous souhaitez passer votre hébergement sur une offre [Pro](https://www.ovhcloud.com/fr/web-hosting/professional-offer/), rendez-vous dans la partie `Hébergements`{.action} de votre espace client.<br>
 Cliquez sur le bouton `...`{.action} dans la partie `Bases de données privée`{.action} puis sur `Délier`{.action}.
 
 ![Web Cloud Databases](images/clouddb.png){.thumbnail}
@@ -68,7 +68,7 @@ Cette action vous permettra de commander une offre Web Cloud Databases indépend
 
 Si vous ne souhaitez pas conserver ces données, vous pouvez aussi supprimer votre SQL privé avant de passer sur l'offre *Pro* : 
 
-1. Sauvegardez vos données en suivant les instructions de ce [guide](/pages/web/clouddb/save-export-on-database-server#en-pratique).<br>
+1. Sauvegardez vos données en suivant les instructions de ce [guide](/pages/web_cloud/web_cloud_databases/save-export-on-database-server#en-pratique).<br>
 2. Supprimez votre serveur Web Cloud Databases via votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Pour cela, cliquez en haut à droite sur votre nom puis sur `Gestion des services`{.action}. Cliquez ensuite sur le bouton `...`{.action} à droite de la ligne concernée puis sur `Supprimer mon hébergement SQL privé`{.action}.
 
 #### 3 - Espace FTP

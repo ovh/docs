@@ -58,7 +58,7 @@ Po zalogowaniu się, w prawym górnym rogu kliknij nazwę użytkownika, która j
 
 ### Zgubiłem hasło
 
-Jeśli utracisz hasło lub je zapomnisz, zapoznaj się z [przewodnikiem dotyczącym sposobu zmiany hasła](/pages/account/customer/manage-ovh-password#jesli-nie-znasz-swojego-aktualnego-hasla).
+Jeśli utracisz hasło lub je zapomnisz, zapoznaj się z [przewodnikiem dotyczącym sposobu zmiany hasła](/pages/account_and_service_management/account_information/manage-ovh-password#jesli-nie-znasz-swojego-aktualnego-hasla).
 
 ### Straciłem hasło, a główny adres e-mail przestał być ważny
 
@@ -68,7 +68,7 @@ W tym przypadku nie można przeprowadzić resetu hasła ze strony logowania.
 
 Możesz skontaktować się z zespołem obsługi klienta OVHcloud 71 750 02 00, aby adres zapasowy stał się głównym adresem e-mail.
 
-Po przeprowadzeniu tego kroku należy [wpisać do Twojego konta **nowy** adres zapasowy](/pages/account/customer/all_about_username#backup-email).
+Po przeprowadzeniu tego kroku należy [wpisać do Twojego konta **nowy** adres zapasowy](/pages/account_and_service_management/account_information/all_about_username#backup-email).
 
 #### Jeśli nie masz zapasowego adresu e-mail lub adres ten jest również nieprawidłowy
 
@@ -82,7 +82,7 @@ Należy postępować zgodnie z tą [procedurą](https://www.ovh.pl/cgi-bin/pl/pr
 
 W tym przypadku możesz użyć kodów zapasowych weryfikacji dwuetapowej, użyć innego urządzenia lub wyłączyć weryfikację dwuetapową.
 
-Zapoznaj się z przewodnikiem dotyczącym [Zabezpieczenia konta OVHcloud za pomocą weryfikacji dwuetapowej](/pages/account/customer/secure-ovhcloud-account-with-2fa#co-moge-zrobic-jesli-zgubie-jedno-z-moich-urzadzen-lub-tez-przestanie-ono-dzialac).
+Zapoznaj się z przewodnikiem dotyczącym [Zabezpieczenia konta OVHcloud za pomocą weryfikacji dwuetapowej](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa#co-moge-zrobic-jesli-zgubie-jedno-z-moich-urzadzen-lub-tez-przestanie-ono-dzialac).
 
 ### Nie włączyłem weryfikacji dwuetapowej na moim koncie, ale ktoś mnie pyta o kod
 

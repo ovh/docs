@@ -13,7 +13,7 @@ Outre l'espace client OVHcloud, vous pouvez également gérer vos projets Public
 ## Prérequis
 
 - Avoir créé une instance Public Cloud depuis votre [espace client OVHcloud](/pages/public_cloud/compute/public-cloud-first-steps) ou à travers l'[interface Horizon](/pages/public_cloud/compute/create_instance_in_horizon).
-- [Avoir créé une clé SSH](/pages/platform/public-cloud/public-cloud-first-steps#etape-1-creer-des-cles-ssh).
+- [Avoir créé une clé SSH](/pages/public_cloud/compute/public-cloud-first-steps#etape-1-creer-des-cles-ssh).
 
 ## En pratique
 
@@ -60,8 +60,8 @@ Dans l’interface de gestion de l’instance, sélectionnez l'option souhaitée
 
 ![public-cloud](images/list2022.png){.thumbnail}
 
-- Attach Interface : cette option permet d'ajouter une ou plusieurs interfaces privées à votre instance via le VLAN. Pour plus d'informations, consultez [cette partie](/pages/platform/network-services/getting-started-07-creating-vrack#ajout-dune-interface-privee) du guide correspondant.
-- Detach Interface : cette option permet de supprimer une interface liée à une instance. Pour plus d'informations, consultez [cette partie](/pages/platform/network-services/getting-started-07-creating-vrack#suppression-dune-interface-privee) du guide correspondant.
+- Attach Interface : cette option permet d'ajouter une ou plusieurs interfaces privées à votre instance via le VLAN. Pour plus d'informations, consultez [cette partie](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack#ajout-dune-interface-privee) du guide correspondant.
+- Detach Interface : cette option permet de supprimer une interface liée à une instance. Pour plus d'informations, consultez [cette partie](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack#suppression-dune-interface-privee) du guide correspondant.
 - Edit Instance : cette option permet de changer le nom de l'instance et les [groupes de sécurité](/pages/public_cloud/compute/setup_security_group).
 
 > [!warning]

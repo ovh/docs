@@ -52,7 +52,7 @@ Geben Sie hier die angeforderten Informationen ein.
 |Vorname|Geben Sie einen Vornamen an.|
 |Name|Geben Sie einen Nachnamen an.|
 |Anzeigename|Geben Sie den Namen an, der als Absender angezeigt werden soll, wenn E-Mails mit dieser Adresse verschickt werden.|
-|Passwort|[Legen Sie ein Passwort fest](/pages/account/customer/manage-ovh-password#in-der-praktischen-anwendung) und bestätigen Sie dieses. Aus Sicherheitsgründen empfehlen wir Ihnen, ein neues zu generieren, das keinerlei Zusammenhang mit Ihren persönlichen Angaben hat (vermeiden Sie beispielsweise Ihren Namen, Vornamen oder Ihr Geburtsdatum), und dieses regelmäßig zu ändern.|
+|Passwort|[Legen Sie ein Passwort fest](/pages/account_and_service_management/account_information/manage-ovh-password#in-der-praktischen-anwendung) und bestätigen Sie dieses. Aus Sicherheitsgründen empfehlen wir Ihnen, ein neues zu generieren, das keinerlei Zusammenhang mit Ihren persönlichen Angaben hat (vermeiden Sie beispielsweise Ihren Namen, Vornamen oder Ihr Geburtsdatum), und dieses regelmäßig zu ändern.|
 
 Wenn Sie die Felder ausgefüllt haben, klicken Sie auf `Weiter`{.action} und überprüfen Sie die in der Zusammenfassung angezeigten Informationen. Sind diese korrekt, klicken Sie auf `Bestätigen`{.action}. Führen Sie diesen Schritt so oft wie nötig durch (je nach Anzahl Ihrer Accounts).
 
@@ -115,9 +115,9 @@ Sie können Ihre E-Mails an einen anderen Empfänger weiterleiten oder einen Ali
 
 Dazu können Sie Weiterleitungen erstellen. Sie können dies auf zwei Arten tun:
 
-- Ihre Weiterleitung über das Webmail-Interface mithilfe der Posteingangsregeln erstellen. Folgen Sie hierzu unserer Anleitung "[Posteingangsregeln in OWA erstellen](/pages/web/emails/creating-inbox-rules-in-owa-mx-plan#beispiel-1-e-mails-an-eine-andere-adresse-umleiten)".
+- Ihre Weiterleitung über das Webmail-Interface mithilfe der Posteingangsregeln erstellen. Folgen Sie hierzu unserer Anleitung "[Posteingangsregeln in OWA erstellen](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/creating-inbox-rules-in-owa-mx-plan#beispiel-1-e-mails-an-eine-andere-adresse-umleiten)".
 
-- Ihre Weiterleitung über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) anlegen. Mit dieser Methode können Sie zum Beispiel einen Alias erstellen, d.h. eine E-Mail-Adresse, die nicht existiert, auf eine bestehende E-Mail Adresse weiterleiten. Folgen Sie hierzu unserer Anleitung "[E-Mail-Weiterleitungen verwenden](/pages/web/emails/feature_redirections#neue-mx-plan-version)".
+- Ihre Weiterleitung über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) anlegen. Mit dieser Methode können Sie zum Beispiel einen Alias erstellen, d.h. eine E-Mail-Adresse, die nicht existiert, auf eine bestehende E-Mail Adresse weiterleiten. Folgen Sie hierzu unserer Anleitung "[E-Mail-Weiterleitungen verwenden](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections#neue-mx-plan-version)".
 
 ##### **Auto-Antworten**
 
@@ -164,7 +164,7 @@ Geben Sie hier die angeforderten Informationen ein.
 |Account-Name|Geben Sie die E-Mail-Adresse ein (zum Beispiel Vorname.Name). Der Domainname der E-Mail-Adresse wird automatisch angehängt.|  
 |Account-Beschreibung:|Geben Sie eine kurze Beschreibung ein, damit Sie diesen Account später von anderen Accounts in Ihrem OVHcloud Kundencenter unterscheiden können.|  
 |Account-Größe:|Wählen Sie die gewünschte Account-Größe aus. Hierbei handelt es sich um den Speicherplatz Ihres Accounts zum Speichern von Nachrichten.|  
-|Passwort|[Legen Sie ein Passwort fest](/pages/account/customer/manage-ovh-password#in-der-praktischen-anwendung) und bestätigen Sie dieses. Aus Sicherheitsgründen empfehlen wir Ihnen, ein neues zu generieren, das keinerlei Zusammenhang mit Ihren persönlichen Angaben hat (vermeiden Sie beispielsweise Ihren Namen, Vornamen oder Ihr Geburtsdatum), und dieses regelmäßig zu ändern.|
+|Passwort|[Legen Sie ein Passwort fest](/pages/account_and_service_management/account_information/manage-ovh-password#in-der-praktischen-anwendung) und bestätigen Sie dieses. Aus Sicherheitsgründen empfehlen wir Ihnen, ein neues zu generieren, das keinerlei Zusammenhang mit Ihren persönlichen Angaben hat (vermeiden Sie beispielsweise Ihren Namen, Vornamen oder Ihr Geburtsdatum), und dieses regelmäßig zu ändern.|
 
 Wenn Sie die Felder ausgefüllt haben, klicken Sie auf `Weiter`{.action} und überprüfen Sie die in der Zusammenfassung angezeigten Informationen. Sind diese korrekt, klicken Sie auf `Bestätigen`{.action}. Führen Sie diesen Schritt so oft wie nötig durch (je nach Anzahl Ihrer Accounts).
 
@@ -219,7 +219,7 @@ Wenn Sie nur die Einstellungsdetails zur Konfiguration Ihrer E-Mail-Adresse ben�
 
 Sie können Ihre E-Mails an einen anderen Empfänger weiterleiten oder einen Alias erstellen.
 
-Dazu können Sie Weiterleitungen erstellen. Folgen Sie hierzu unserer Anleitung "[E-Mail-Weiterleitungen verwenden](/pages/web/emails/feature_redirections#historische-mx-plan-version)".
+Dazu können Sie Weiterleitungen erstellen. Folgen Sie hierzu unserer Anleitung "[E-Mail-Weiterleitungen verwenden](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections#historische-mx-plan-version)".
 
 ##### **Auto-Antworten**
 

@@ -62,7 +62,7 @@ Aby zoptymalizować wysyłkę i zmniejszyć ryzyko blokady kont e-mail, należy 
 
 Najpierw należy utworzyć rekord A w strefie DNS domeny, używając adresu IP Twojego serwera jako celu.
 
-Jeśli Twoje Rewers DNS są zarządzane przez OVHcloud, zapoznaj się z tym [przewodnikiem](/pages/web/domains/dns_zone_edit#dostep-do-interfejsu-zarzadzania-strefa-dns).
+Jeśli Twoje Rewers DNS są zarządzane przez OVHcloud, zapoznaj się z tym [przewodnikiem](/pages/web_cloud/domains/dns_zone_edit#dostep-do-interfejsu-zarzadzania-strefa-dns).
 
 Czas propagacji wprowadzonych w strefie DNS zmian wynosi maksymalnie 24 godziny.
 

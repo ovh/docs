@@ -1,12 +1,12 @@
 ---
-title: Responsibility sharing for the Hosted Private Cloud powered by VMware service
+title: Responsibility sharing for the VMware on OVHcloud service
 excerpt: "Shared responsibility between OVHcloud and the customer for the use of the VMware on OVHcloud product"
 updated: 2023-03-07
 ---
 
 ## Objective
 
-The RACI below details shared responsibilities between OVHcloud and the customer. This model is designed to help the customer make the best use of the Hosted Private Cloud powered by VMware service provided by OVHcloud.
+The RACI below details shared responsibilities between OVHcloud and the customer. This model is designed to help the customer make the best use of the VMware on OVHcloud service provided by OVHcloud.
 
 | Roles |
 | --- |

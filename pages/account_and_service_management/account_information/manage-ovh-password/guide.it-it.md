@@ -40,7 +40,7 @@ Esistono diversi modi efficaci per creare una password, come il **metodo fonetic
 
 In rete sono inoltre disponibili numerosi strumenti gratuiti che permettono di generare password del tutto sicure, difficili da decifrare e semplici da ricordare.
 
-Per maggiori informazioni sulla sicurezza delle password, consulta la sezione [Per saperne di più](/pages/account/customer/manage-ovh-password#per-saperne-di-piu){.external} di questa guida.
+Per maggiori informazioni sulla sicurezza delle password, consulta la sezione [Per saperne di più](/pages/account_and_service_management/account_information/manage-ovh-password#per-saperne-di-piu){.external} di questa guida.
 
 ### Utilizza un software per la gestione di password 
 

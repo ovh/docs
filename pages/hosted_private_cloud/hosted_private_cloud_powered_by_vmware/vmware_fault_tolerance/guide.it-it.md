@@ -1,7 +1,6 @@
 ---
 title: VMware Fault Tolerance
 excerpt: Come garantire la disponibilità continua delle VM con il servizio Fault Tolerance
-legacy_guide_number: '2163251'
 updated: 2020-07-07
 ---
 

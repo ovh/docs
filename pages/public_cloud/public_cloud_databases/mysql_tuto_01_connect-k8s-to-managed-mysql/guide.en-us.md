@@ -121,7 +121,7 @@ Get your Kubernetes cluster nodes IP addresses from the Compute / Instances menu
 
 ![Nodes IPs list on Instances Control Panel](images/connect-kubernetes-to-managed-mysql09.png){.thumbnail}
 
-Following the related documentation on how to [authorise the suitable IP addresses](/pages/platform/databases/mongodb_02_manage_control_panel#configuring-authorised-ips), add your Kubernetes cluster node IPs to the authorised list.
+Following the related documentation on how to [authorise the suitable IP addresses](/pages/public_cloud/public_cloud_databases/mongodb_02_manage_control_panel#configuring-authorised-ips), add your Kubernetes cluster node IPs to the authorised list.
 
 ![Green statuses and authorized IPs setted on Database Control Panel](images/connect-kubernetes-to-managed-mysql10.png){.thumbnail}
 
@@ -183,7 +183,7 @@ For this tutorial we are using the [WordPress Helm chart](https://github.com/bit
 
 #### Pre-requisites
 
-As described in the [Installing WordPress on OVHcloud Managed Kubernetes](/pages/platform/kubernetes-k8s/installing-wordpress#installing-the-wordpress-helm-chart) tutorial, remove the default storage class and install the new one.
+As described in the [Installing WordPress on OVHcloud Managed Kubernetes](/pages/public_cloud/containers_orchestration/managed_kubernetes/installing-wordpress#installing-the-wordpress-helm-chart) tutorial, remove the default storage class and install the new one.
 
 ```sh
 kubectl delete storageclasses.storage.k8s.io csi-cinder-high-speed

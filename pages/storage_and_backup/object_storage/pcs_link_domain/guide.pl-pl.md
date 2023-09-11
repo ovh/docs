@@ -1,7 +1,6 @@
 ---
 title: Object Storage Swift - Umieszczenie kontenera Object Storage za domeną
 excerpt: Umieszczenie kontenera Object Storage za domeną
-legacy_guide_number: g2006
 updated: 2021-10-27
 ---
 

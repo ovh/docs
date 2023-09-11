@@ -42,7 +42,7 @@ Tenga en cuenta los siguientes datos antes de introducir firmas para los usuario
 ![exchangesig](images/exchange-footer-step5.png){.thumbnail}
 
 - La firma se agregará al cuerpo del correo electrónico sin espacios, por lo que es recomendable comenzar la firma con al menos una línea en blanco.
-- OWA no indica si una firma está habilitada en este dominio y **no se sincroniza**. Cuando los usuarios agregan sus [propias firmas](/pages/web/emails/email_owa#anadir-una-firma), los correos electrónicos incluyen tanto el pie del mensaje individual como el de todo el dominio.
+- OWA no indica si una firma está habilitada en este dominio y **no se sincroniza**. Cuando los usuarios agregan sus [propias firmas](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa#anadir-una-firma), los correos electrónicos incluyen tanto el pie del mensaje individual como el de todo el dominio.
 - El editor admite formato HTML, hipervínculos, imágenes, etc. Sin embargo, las firmas no deben abusar de estas opciones. Es posible que los destinatarios utilicen clientes de correo electrónico incompatibles con HTML y las imágenes incrustadas, o que las firmas se muestren de forma diferente a la previsualizada. Tenga en cuenta que las etiquetas HTML se eliminarán por completo si se envía un mensaje como «Texto sin formato» desde OWA.
 - Las «iniciales» no están activadas en el servicio, por lo que agregar esta variable no tendrá ningún efecto.
 

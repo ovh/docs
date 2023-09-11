@@ -1,7 +1,6 @@
 ---
 title: 'Modificar o hostname de uma instância Public Cloud'
 excerpt: 'Saiba como modificar o hostname de uma instância Public Cloud'
-legacy_guide_number: 1928
 updated: 2018-09-18
 ---
 
@@ -25,7 +24,7 @@ O módulo cloud-init permite configurar a [instância Public Cloud](https://www.
 ## Requisitos
 
 - Ter criado uma [instância Public Cloud](https://www.ovh.pt/public-cloud/instances/){.external}.
-- [Estar ligado através do protocolo SSH](/pages/platform/public-cloud/public-cloud-first-steps#4o-passo-conexao-a-instancia){.external} (root) à instância.
+- [Estar ligado através do protocolo SSH](/pages/public_cloud/compute/public-cloud-first-steps#4o-passo-conexao-a-instancia){.external} (root) à instância.
 
 ## Instruções
 

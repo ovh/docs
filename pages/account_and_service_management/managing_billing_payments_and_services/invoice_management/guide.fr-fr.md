@@ -110,7 +110,7 @@ Afin de procéder au règlement de vos factures en attente de paiement, il vous 
 
 ![Paiement de la dette](images/pay_debt.png){.thumbnail}
 
-Un [bon de commande de régularisation](/pages/account/billing/managing_ovh_orders#le-bon-de-commande) sera alors créé. Une fois le paiement effectué, la situation sera régularisée.
+Un [bon de commande de régularisation](/pages/account_and_service_management/managing_billing_payments_and_services/managing_ovh_orders#le-bon-de-commande) sera alors créé. Une fois le paiement effectué, la situation sera régularisée.
 
 > [!primary]
 >
@@ -124,7 +124,7 @@ Un [bon de commande de régularisation](/pages/account/billing/managing_ovh_orde
 > Pour demander la résiliation de votre service à échéance, suivez les instructions de ce [guide](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services).
 >
 
-Si vous avez reçu une facture que vous ne considérez pas comme légitime et souhaitez en demander le remboursement, ou faire valoir votre [droit de rétractation](/pages/account/billing/managing_ovh_orders#appliquer-le-droit-de-retractation), vous pouvez effectuer une réclamation via votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), sous réserve de l'application de nos [Conditions Générales de Service](https://contract.eu.ovhapis.com/1.0/pdf/contrat_genServices-fr.pdf).
+Si vous avez reçu une facture que vous ne considérez pas comme légitime et souhaitez en demander le remboursement, ou faire valoir votre [droit de rétractation](/pages/account_and_service_management/managing_billing_payments_and_services/managing_ovh_orders#appliquer-le-droit-de-retractation), vous pouvez effectuer une réclamation via votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), sous réserve de l'application de nos [Conditions Générales de Service](https://contract.eu.ovhapis.com/1.0/pdf/contrat_genServices-fr.pdf).
 <br> Cliquez en haut à droite de votre écran sur votre nom, puis sur `Créer un ticket`{.action}.
 
 ### Suivre vos paiements

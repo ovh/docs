@@ -78,7 +78,7 @@ Follow this [guide](/pages/public_cloud/compute/public-cloud-first-steps) to cre
 
 > [!primary]
 >
->If you want to test the access from an existing instance, read this tutorial to connect it to the vRack: [Configuring vRack for Public Cloud](/pages/platform/network-services/getting-started-07-creating-vrack#in-case-of-an-existing-instance).
+>If you want to test the access from an existing instance, read this tutorial to connect it to the vRack: [Configuring vRack for Public Cloud](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack#in-case-of-an-existing-instance).
 >
 
 ### Step 5 - Example of verification with a Public Cloud Databases for Redis

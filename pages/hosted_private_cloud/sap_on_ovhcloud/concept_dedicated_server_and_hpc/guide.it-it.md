@@ -3,7 +3,7 @@ title: "SAP HANA on Bare Metal and SAP Application Servers on VMware on OVHcloud
 excerpt: "This concept page demonstrates a hybrid architecture using a HGR-SAP dedicated server and VMware on OVHcloud"
 updated: 2023-03-15
 routes:
-    canonical: '/pages/hosted_private_cloud/sap_on_ovhcloud/concept-dedicated-server-and-hpc'
+    canonical: '/pages/hosted_private_cloud/sap_on_ovhcloud/concept_dedicated_server_and_hpc'
 ---
 
 **Last updated 15th March 2023**

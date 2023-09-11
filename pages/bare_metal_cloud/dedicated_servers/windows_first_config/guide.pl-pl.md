@@ -23,7 +23,7 @@ Po ponownym zainstalowaniu systemu operacyjnego Windows Server na serwerze zdaln
 
 ### Etap 1: dostęp do KVM
 
-Aby uzyskać dostęp do konsoli KVM Twojego serwera, zapoznaj się z [przewodnikiem KVM](/pages/cloud/dedicated/using_ipmi_on_dedicated_servers#korzystanie-z-kvm-przez-przegladarke-internetowa-tylko-dla-najnowszych-serwerow).
+Aby uzyskać dostęp do konsoli KVM Twojego serwera, zapoznaj się z [przewodnikiem KVM](/pages/bare_metal_cloud/dedicated_servers/using_ipmi_on_dedicated_servers#korzystanie-z-kvm-przez-przegladarke-internetowa-tylko-dla-najnowszych-serwerow).
 
 ### Etap 2: zakończenie instalacji systemu Windows
 
@@ -65,7 +65,7 @@ Twój serwer powinien odpowiadać na zapytania wykorzystujące te protokoły.
 
 Aktywacja logów startowych (*boot log*) Windows może być przydatna przy diagnostyce błędów serwera.
 
-Zaloguj się do serwera przez sesję "zdalny pulpit" lub [KVM](/pages/cloud/dedicated/using_ipmi_on_dedicated_servers#korzystanie-z-kvm-przez-przegladarke-internetowa-tylko-dla-najnowszych-serwerow). Otwórz menu Start systemu Windows i kliknij `Uruchom`{.action}.
+Zaloguj się do serwera przez sesję "zdalny pulpit" lub [KVM](/pages/bare_metal_cloud/dedicated_servers/using_ipmi_on_dedicated_servers#korzystanie-z-kvm-przez-przegladarke-internetowa-tylko-dla-najnowszych-serwerow). Otwórz menu Start systemu Windows i kliknij `Uruchom`{.action}.
 
 ![Bootlog](images/windowsboot1.png){.thumbnail}
 

@@ -1,7 +1,6 @@
 ---
 title: 'Aggiungere un record MX alla configurazione di un dominio'
 excerpt: 'Come creare un nuovo record MX per il tuo dominio OVHcloud'
-legacy_guide_number: g2012
 updated: 2018-05-30
 ---
 

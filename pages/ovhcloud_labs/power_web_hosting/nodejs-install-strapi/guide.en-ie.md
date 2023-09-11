@@ -49,9 +49,9 @@ Let's suppose you have the default configuration for Node.js hosting:
 
 > [!primary]
 >
-> To verify your configuration, you can use the [Retrieve active configuration](/pages/labs/web-power/getting-started#api-get-active-configuration) API endpoint.
+> To verify your configuration, you can use the [Retrieve active configuration](/pages/ovhcloud_labs/power_web_hosting/getting-started#api-get-active-configuration) API endpoint.
 
-[Connect via SSH](/pages/labs/web-power/getting-started#ssh) to your POWER web hosting.
+[Connect via SSH](/pages/ovhcloud_labs/power_web_hosting/getting-started#ssh) to your POWER web hosting.
 Let's begin by cleaning the `www` folder and installing Strapi:
 
 ```sh
@@ -81,7 +81,7 @@ Create also an `.htaccess` file to manage HTTPS redirection:
 RewriteCond %{ENV:HTTPS} !on
 RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 ```
-Then [restart your instance](/pages/labs/web-power/getting-started#restart) and your Strapi headless CMS will be online.
+Then [restart your instance](/pages/ovhcloud_labs/power_web_hosting/getting-started#restart) and your Strapi headless CMS will be online.
 
 ![Strapi](images/nodejs-install-strapi-01.png){.thumbnail}
 

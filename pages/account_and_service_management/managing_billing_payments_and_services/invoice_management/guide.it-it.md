@@ -113,7 +113,7 @@ Per procedere al saldo delle fatture in attesa di pagamento, clicca sul menu `Az
 
 ![Pagamento dell’importo dovuto](images/pay_debt.png){.thumbnail}
 
-Verrà creato un [buono d'ordine](/pages/account/billing/managing_ovh_orders#il-buono-dordine). Una volta effettuato il pagamento, la situazione risulterà regolarizzata.
+Verrà creato un [buono d'ordine](/pages/account_and_service_management/managing_billing_payments_and_services/managing_ovh_orders#il-buono-dordine). Una volta effettuato il pagamento, la situazione risulterà regolarizzata.
 
 #### Richiedi l'annullamento di una fattura
 
@@ -122,7 +122,7 @@ Verrà creato un [buono d'ordine](/pages/account/billing/managing_ovh_orders#il-
 > Per richiedere la disattivazione del tuo servizio alla data di scadenza, segui le indicazioni di questa [guida](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services).
 >
 
-Se hai ricevuto una fattura che non consideri legittima e vuoi richiederne il rimborso o far valere il tuo [diritto di recesso](/pages/account/billing/managing_ovh_orders#esercita-il-diritto-di-recesso), puoi inviare un reclamo tramite il tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), con riserva dell'applicazione delle nostre [Condizioni Generali di Servizio](https://www.ovh.it/supporto//documenti_legali/condizioni_generali_servizio.pdf).
+Se hai ricevuto una fattura che non consideri legittima e vuoi richiederne il rimborso o far valere il tuo [diritto di recesso](/pages/account_and_service_management/managing_billing_payments_and_services/managing_ovh_orders#esercita-il-diritto-di-recesso), puoi inviare un reclamo tramite il tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), con riserva dell'applicazione delle nostre [Condizioni Generali di Servizio](https://www.ovh.it/supporto//documenti_legali/condizioni_generali_servizio.pdf).
 <br> Clicca sul tuo nome in alto a destra e seleziona `Crea un ticket`{.action}.
 
 ### Controlla i tuoi pagamenti

@@ -1,7 +1,6 @@
 ---
 title: 'Riavvia la tua istanza in modalità di ripristino (Rescue mode)'
 excerpt: 'Come riavviare un’istanza in modalità di ripristino (Rescue mode)'
-legacy_guide_number: g2029
 updated: 2023-01-04
 ---
 

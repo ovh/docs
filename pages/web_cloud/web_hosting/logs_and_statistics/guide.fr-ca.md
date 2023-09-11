@@ -48,7 +48,7 @@ Depuis l'onglet de votre navigateur qui affiche la fenêtre de statistiques, ré
 
 > [!warning]
 >
-> Si vous avez activé les logs séparés sur une [entrée multisite](/pages/web/hosting/multisites_configure_multisite#etape-2-ajouter-un-domaine-ou-un-sous-domaine), les utilisateurs créés ici ne peuvent pas accéder aux statistiques de cette entrée multisite.
+> Si vous avez activé les logs séparés sur une [entrée multisite](/pages/web_cloud/web_hosting/multisites_configure_multisite#etape-2-ajouter-un-domaine-ou-un-sous-domaine), les utilisateurs créés ici ne peuvent pas accéder aux statistiques de cette entrée multisite.
 >
 
 ### Statistiques des visites

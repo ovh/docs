@@ -1,7 +1,6 @@
 ---
 title: Quel format de disque choisir
 excerpt: Découvrez les différents types de formats de disque 
-legacy_guide_number: '1441955'
 updated: 2022-02-02
 ---
 

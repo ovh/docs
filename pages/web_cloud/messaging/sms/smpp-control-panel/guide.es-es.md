@@ -55,7 +55,7 @@ Haga clic en el botón `Añadir una IP`{.action} para añadir direcciones IP a e
 
 ### Gestión de remitentes y créditos
 
-Consulte nuestras guías sobre [gestión de remitentes](/pages/telecom/sms/envoyer_des_sms_depuis_mon_espace_client#3-elegir-el-remitente-del-sms) y [gestión de créditos de SMS y recarga automática](/pages/web_cloud/messaging/sms/activer_la_recharge_automatique_du_credit_sms).
+Consulte nuestras guías sobre [gestión de remitentes](/pages/web_cloud/messaging/sms/envoyer_des_sms_depuis_mon_espace_client#3-elegir-el-remitente-del-sms) y [gestión de créditos de SMS y recarga automática](/pages/web_cloud/messaging/sms/activer_la_recharge_automatique_du_credit_sms).
 
 ## Más información
 

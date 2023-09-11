@@ -152,8 +152,8 @@ Erstellen Sie neue E-Mail-Accounts und verwenden Sie dabei die gleichen E-Mail-A
 
 Wenn Sie sich für eins der E-Mail-Angebote Email Pro oder Exchange entschieden haben, lesen Sie unsere entsprechenden Anleitungen, um Ihre E-Mail-Adressen zu erstellen:
 
-- Email Pro: </pages/web/emails-pro/first_config>
-- Exchange: </pages/web/microsoft-collaborative-solutions/exchange_starting_hosted>
+- Email Pro: </pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config>
+- Exchange: </pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_starting_hosted>
 
 ### Schritt 6: OVHcloud E-Mail-Server in der aktiven DNS-Zone Ihres Domainnamens hinterlegen <a name="step6"></a>
 
@@ -203,7 +203,7 @@ Sobald Ihre E-Mail-Accounts bei OVHcloud eingerichtet und bestehende Inhalte mig
 
 #### Für MX Plan E-Mail-Accounts: 
 
-- Alle Konfigurationseinstellungen finden Sie in unserer Anleitung "[Erste Schritte mit MX Plan](/pages/web/emails/email_generalities#2-e-mail-client-verwenden)". Sie finden dort auch Links zu den Konfigurationsanleitungen für die wichtigsten E-Mail-Clients.
+- Alle Konfigurationseinstellungen finden Sie in unserer Anleitung "[Erste Schritte mit MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities#2-e-mail-client-verwenden)". Sie finden dort auch Links zu den Konfigurationsanleitungen für die wichtigsten E-Mail-Clients.
 
 #### Für E-Mail Pro E-Mail-Accounts:
 

@@ -67,7 +67,7 @@ The database is now connected to the virtual network, we can use it from any com
 
 ### Step 4 - Adding a Public Cloud Instance to the vRack
 
-Follow this [guide](/pages/platform/public-cloud/public-cloud-first-steps#create-instance) to create a new Public Cloud Instance
+Follow this [guide](/pages/public_cloud/compute/public-cloud-first-steps#create-instance) to create a new Public Cloud Instance
 
 > [!primary]
 >
@@ -78,7 +78,7 @@ Follow this [guide](/pages/platform/public-cloud/public-cloud-first-steps#create
 
 > [!primary]
 >
->If you want to test the access from an existing instance, read this tutorial to connect it to the vRack: [Configuring vRack for Public Cloud](/pages/platform/network-services/getting-started-07-creating-vrack#in-case-of-an-existing-instance).
+>If you want to test the access from an existing instance, read this tutorial to connect it to the vRack: [Configuring vRack for Public Cloud](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack#in-case-of-an-existing-instance).
 >
 
 ### Step 5 - Example of verification with a Public Cloud Databases for Redis

@@ -20,7 +20,7 @@ Domyślnie skonfigurowany jest tylko adres IPv4.
 
 > [!primary]
 > 
-> Aktualnie usługi Floating IP i Gateway nie obsługują IPv6. IPv6 można używać tylko z instancjami w [trybie publicznym](/pages/platform/network-services/concepts-01-public-cloud-networking-concepts#publicmode).
+> Aktualnie usługi Floating IP i Gateway nie obsługują IPv6. IPv6 można używać tylko z instancjami w [trybie publicznym](/pages/public_cloud/public_cloud_network_services/concepts-01-public-cloud-networking-concepts#publicmode).
 >
 
 ## Wymagania początkowe

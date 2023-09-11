@@ -1,7 +1,7 @@
 ---
 title: How to use the Bring Your Own IP feature (EN)
 excerpt: Find out how to easily import your own IP as Additional IP to your OVHcloud account
-updated: 2023-07-19
+updated: 2023-09-05
 ---
 
 ## Objective
@@ -150,6 +150,80 @@ To activate the announcement of your imported IP range on the Internet, simply a
 
 <br>During the delivery, we will create ARPA zones on our DNS servers and any reverse DNS modification via the OVHcloud Control Panel/API will be applied on them. However, these modifications will be visible to the public when our DNS servers receive delegations of the ARPA zones by the RIR. (This is optional, if you want to continue managing your reverse DNS on your own, you can).
 
+### Range slicing <a name="range-slicing"></a>
+
+Any imported IP block can be further split into smaller blocks and/or individual addresses.
+
+> [!warning] 
+> To be able to slice/merge an existing IP block, it must be unused (i.e. in the parking area) and there must not be any pending task associated with it (e.g. no pending move operation).
+
+To slice a block, use the following API call :
+
+> [!api]
+>
+> @api {POST} /ip/{ip}/bringYourOwnIp/slice
+>
+
+Use the following parameters:
+
+- ip : the IP block you want to slice, in CIDR notation.
+- slicingSize : the resulting size of the sliced blocks, expressed as a network prefix size, in bits. For example if you want to slice a /24 block into 2 smaller blocks of size /25, you should enter the value "25".
+
+> [!primary]
+> This API call is asynchronous, the newly created blocks are made available shortly after the call. They will be usable as any other Additional IP block or individual address.
+
+You can preview the resulting blocks that would be created for each block size, by using the following API call:
+
+> [!api]
+>
+> @api {GET} /ip/{ip}/bringYourOwnIp/slice
+>
+
+Use the following parameters:
+
+- ip : the IP block you want to slice, in CIDR notation.
+
+To merge back a block into a parent block, use this API call :
+
+> [!api]
+>
+> @api {POST} /ip/{ip}/bringYourOwnIp/aggregate
+>
+
+Use the following parameters:
+
+- ip : the IP block you want to slice, in CIDR notation.
+- aggregationIp : the resulting block, in CIDR notation.
+
+The resulting block will be an aggregate of all its children blocks.
+
+> [!primary]
+> This API call is asynchronous, the re-aggregated blocks are made available shortly after the call.
+
+You can preview all the possible configurations of aggregated blocks for a given IP block, by using the following API call:
+
+> [!api]
+>
+> @api {GET} /ip/{ip}/bringYourOwnIp/aggregate
+>
+
+Use the following parameters:
+
+- ip : the IP block you want to merge into a parent block, in CIDR notation.
+
+This call returns a list of possible aggregated blocks and, for each one of them, gives the list of children blocks to be merged back.
+
+**Limitations**:
+
+- This feature is currently available via API only. It will be added to the OVHcloud Control Panel in the near future.
+- Configuration elements associated to individual IP addresses (/32) such as firewall rules or reverse DNS entries will be kept after slicing/merging operations.
+- Slice/Aggregate API tasks cannot be followed up by the asynchronous task number returned by API, as associated IP objects will be destroyed in the slice/aggregate process.
+- The listing of IP addresses and blocks returned by API is ordered by network prefix size. We are working to provide a solution to list IPs by numerical order.
+- Once sliced, smaller blocks are not movable outside the campus chosen during the order of the product.
+- Moving a /24 block across french campuses won't work if :
+    - It has been reaggregated from a previous slicing.
+    - The /24 block was imported from a bigger block (/23 to /19).
+
 ## FAQ
 
 ### Is it possible to import an IP range lower than a /24?
@@ -160,9 +234,9 @@ No, the minimum accepted size is a /24.
 
 Not at product launch, but feel free to contact us to discuss this.
 
-### Is splitting the imported /24 into smaller block size (/25, /26, /27, /28, /29 /30) or into /32 supported?
+### Is splitting the imported /24 into smaller block size (/25, /26, /27, /28, /29, /30) or into /32 supported?
 
-Not for the moment.
+Yes, please see the [Range slicing](#range-slicing) section for more details.
 
 ### Can I import an ARIN range in campuses accepting only RIPE ranges, and vice-versa?
 

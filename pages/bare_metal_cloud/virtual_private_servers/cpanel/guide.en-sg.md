@@ -63,7 +63,7 @@ Now you should be able to login to WHM and SSH using the root user with the pass
 
 We recommend that you take further additional steps to ensure you secure your WHM and VPS. For this we recommend reading the recommendations provided by cPanel [here](https://docs.cpanel.net/knowledge-base/security/tips-to-make-your-server-more-secure/).
 
-Furthermore we recommend setting up the [OVHcloud network firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network) and [set up a backup solution](/pages/cloud/vps/secure_your_vps#backing-up-your-system-and-your-data) on your VPS.
+Furthermore we recommend setting up the [OVHcloud network firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network) and [set up a backup solution](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps#backing-up-your-system-and-your-data) on your VPS.
 
 ## Go further
 

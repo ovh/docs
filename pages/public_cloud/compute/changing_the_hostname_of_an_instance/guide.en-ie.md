@@ -1,7 +1,6 @@
 ---
 title: Changing the hostname of an instance
 excerpt: Changing the hostname of an instance
-legacy_guide_number: g1928
 updated: 2018-09-18
 ---
 
@@ -21,7 +20,7 @@ With the cloud-init module, you can configure your [Public Cloud instance](https
 ## Requirements
 
 - An [OVHcloud Public Cloud instance](https://www.ovhcloud.com/en-ie/public-cloud/){.external}
-- [Root access](/pages/platform/public-cloud/public-cloud-first-steps#step-4-connecting-to-your-instance) (via SSH) to the instance
+- [Root access](/pages/public_cloud/compute/public-cloud-first-steps#step-4-connecting-to-your-instance) (via SSH) to the instance
 
 ## Instructions
 

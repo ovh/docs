@@ -20,8 +20,8 @@ Los módulos en 1 clic permiten instalar un sitio web fácil y rápidamente (sin
 
 - Tener contratado un [plan de hosting](https://www.ovhcloud.com/es/web-hosting/) que incluya al menos una base de datos.
 - Estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we).
-- Utilizar [una versión de PHP compatible](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014) en su alojamiento web.
-- Haber [configurado correctamente su archivo .ovhconfig](/pages/web_cloud/web_hosting/ovhconfig_configuration).
+- Utilizar [una versión de PHP compatible](/pages/web_cloud/web_hosting/configure_your_web_hosting) en su alojamiento web.
+- Haber [configurado correctamente su archivo .ovhconfig](/pages/web_cloud/web_hosting/configure_your_web_hosting).
 - El directorio (directorio raíz) en el que se instalará el módulo en 1 clic debe estar vacío o no existe actualmente.
 - El dominio (y el subdominio si así lo desea) que vaya a utilizar para su sitio web debe estar declarado como [Multisitio](/pages/web_cloud/web_hosting/multisites_configure_multisite) en su alojamiento web de OVHcloud.
 
@@ -190,7 +190,7 @@ Descubra nuestras [ofertas Web Cloud Databases](https://www.ovhcloud.com/es/web-
 
 [Gestionar su CMS](/pages/web_cloud/web_hosting/cms_manage_1_click_module)
 
-[Desinstalar su CMS](/pages/web/hosting/cms_manage_1_click_module#etapa-3-eliminar-el-modulo)
+[Desinstalar su CMS](/pages/web_cloud/web_hosting/cms_manage_1_click_module#etapa-3-eliminar-el-modulo)
 
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es/directory/).
 

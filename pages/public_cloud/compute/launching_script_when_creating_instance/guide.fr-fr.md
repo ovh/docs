@@ -1,6 +1,5 @@
 ---
 title: Lancer un script lors de la creation d’une instance
-legacy_guide_number: 1932
 updated: 2022-03-18
 ---
 

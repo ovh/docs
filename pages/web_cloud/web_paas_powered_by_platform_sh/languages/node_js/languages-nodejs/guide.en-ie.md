@@ -133,7 +133,7 @@ web:
 ## Dependencies
 
 By default, Web PaaS assumes you're using npm as a package manager.
-If you have a `package.json` file in your code, the default [build flavor is run](/pages/web/web-paas/configuration-app/build#build):
+If you have a `package.json` file in your code, the default [build flavor is run](/pages/web_cloud/web_paas_powered_by_platform_sh/configuration/build#build):
 
 ```bash
 npm prune --userconfig .npmrc && npm install --userconfig .npmrc
@@ -178,25 +178,25 @@ To configure a given service, see the page dedicated to that service.
 
 > [!tabs]      
 > Elasticsearch     
->> [Elasticsearch - example](https://github.com/ovh/docs/blob/develop/pages/web/web-paas/static/files/fetch/examples/nodejs/elasticsearch)  
+>> [Elasticsearch - example](https://github.com/ovh/docs/blob/develop/pages/web_cloud/web_paas_powered_by_platform_sh/static/files/fetch/examples/nodejs/elasticsearch)  
 >>      
 > Memcached     
->> [Memcached - example](https://github.com/ovh/docs/blob/develop/pages/web/web-paas/static/files/fetch/examples/nodejs/memcached)  
+>> [Memcached - example](https://github.com/ovh/docs/blob/develop/pages/web_cloud/web_paas_powered_by_platform_sh/static/files/fetch/examples/nodejs/memcached)  
 >>      
 > MongoDB     
->> [MongoDB - example](https://github.com/ovh/docs/blob/develop/pages/web/web-paas/static/files/fetch/examples/nodejs/mongodb)  
+>> [MongoDB - example](https://github.com/ovh/docs/blob/develop/pages/web_cloud/web_paas_powered_by_platform_sh/static/files/fetch/examples/nodejs/mongodb)  
 >>      
 > MySQL     
->> [MySQL - example](https://github.com/ovh/docs/blob/develop/pages/web/web-paas/static/files/fetch/examples/nodejs/mysql)  
+>> [MySQL - example](https://github.com/ovh/docs/blob/develop/pages/web_cloud/web_paas_powered_by_platform_sh/static/files/fetch/examples/nodejs/mysql)  
 >>      
 > PostgreSQL     
->> [PostgreSQL - example](https://github.com/ovh/docs/blob/develop/pages/web/web-paas/static/files/fetch/examples/nodejs/postgresql)  
+>> [PostgreSQL - example](https://github.com/ovh/docs/blob/develop/pages/web_cloud/web_paas_powered_by_platform_sh/static/files/fetch/examples/nodejs/postgresql)  
 >>      
 > Redis     
->> [Redis - example](https://github.com/ovh/docs/blob/develop/pages/web/web-paas/static/files/fetch/examples/nodejs/redis)  
+>> [Redis - example](https://github.com/ovh/docs/blob/develop/pages/web_cloud/web_paas_powered_by_platform_sh/static/files/fetch/examples/nodejs/redis)  
 >>      
 > Solr     
->> [Solr - example](https://github.com/ovh/docs/blob/develop/pages/web/web-paas/static/files/fetch/examples/nodejs/solr)  
+>> [Solr - example](https://github.com/ovh/docs/blob/develop/pages/web_cloud/web_paas_powered_by_platform_sh/static/files/fetch/examples/nodejs/solr)  
 >>      
 
 [`platformsh-config` package](https://github.com/platformsh/config-reader-nodejs)

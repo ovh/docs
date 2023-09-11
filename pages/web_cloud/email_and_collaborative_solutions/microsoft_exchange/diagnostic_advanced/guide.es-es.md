@@ -19,7 +19,7 @@ Los errores en las cuentas de correo Exchange pueden tener múltiples causas. Un
 - Tener una [solución Exchange de OVHcloud](https://www.ovhcloud.com/es-es/emails/hosted-exchange/) ya instalada.
 - Disponer de las claves de acceso para la cuenta Exchange que debe verificar.
 - Estar conectado al [área de cliente de OVHcloud.](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
-- Estar actualizado en los [pagos](/pages/account/billing/invoice_management#pay-bills) de este servicio y del dominio asociado.
+- Estar actualizado en los [pagos](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) de este servicio y del dominio asociado.
 
 ## Procedimiento
 
@@ -58,7 +58,7 @@ Consulte nuestra guía ¿[Qué hacer en caso de cuenta bloqueada por spam?](/pag
 ### La suscripción a la cuenta ha expirado. <a name="expired"></a>
 
 Su suscripción ya no está activa, por lo que se ha desactivado el envío y la recepción.<br>
-Para reactivar la suscripción, solo tiene que reconfigurar su [frecuencia de facturación](/pages/web/microsoft-collaborative-solutions/manage_billing_exchange#periodicity) en el[área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
+Para reactivar la suscripción, solo tiene que reconfigurar su [frecuencia de facturación](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_billing_exchange#periodicity) en el[área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
 
 ### La cuenta está bloqueada por la política de seguridad.
 

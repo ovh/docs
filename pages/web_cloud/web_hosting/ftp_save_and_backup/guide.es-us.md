@@ -82,7 +82,7 @@ Una vez que haya elegido el método de restauración más adecuado en función d
 > 
 > En este caso:
 >
-> - Nuestro equipo envía un mensaje de correo electrónico al [contacto administrador](/pages/account/customer/managing_contacts#acceder-a-la-gestion-de-los-contactos) del alojamiento. 
+> - Nuestro equipo envía un mensaje de correo electrónico al [contacto administrador](/pages/account_and_service_management/account_information/managing_contacts#acceder-a-la-gestion-de-los-contactos) del alojamiento. 
 > - El estado de mantenimiento aparecerá en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}. En la sección `Web Cloud`{.action}, haga clic en su servicio en la sección `Alojamientos`{.action} y seleccione la pestaña `Información general`{.action}.
 > - Los sitios web alojados muestran una página "403 Forbidden".
 >

@@ -21,7 +21,7 @@ This guide contains the essential elements for managing your account and the bil
 
 #### Account security
 
-[Create a strong password](/pages/account/customer/manage-ovh-password#generate-a-strong-password) which will ensure your OVHcloud account's privacy.
+[Create a strong password](/pages/account_and_service_management/account_information/manage-ovh-password#generate-a-strong-password) which will ensure your OVHcloud account's privacy.
 
 [Enable two factor authentification](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa) to prevent any fraudulent access.
 
@@ -36,7 +36,7 @@ In the `My profile`{.action} section on the right of your screen (click on your 
 
 ![myprofile](images/myprofile.png){.thumbnail}
 
-For more information, read the guide [Securing my OVHcloud account and managing my personal information](/pages/account/customer/all_about_username#how-to-manage-your-personal-details).
+For more information, read the guide [Securing my OVHcloud account and managing my personal information](/pages/account_and_service_management/account_information/all_about_username#how-to-manage-your-personal-details).
 
 Ensure your email address is always **up to date, accessible and secured**. Email messages from our services will be sent to this address, including the ones meant to reset your Control Panel's password.
 

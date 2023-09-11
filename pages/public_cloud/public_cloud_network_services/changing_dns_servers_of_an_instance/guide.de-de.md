@@ -1,7 +1,6 @@
 ---
 title: "DNS Server einer Public Cloud Instanz ändern"
 excerpt: 'Erfahren Sie hier, wie Sie den vorkonfigurierten DNS-Server einer Public Cloud Instanz anpassen'
-legacy_guide_number: 1985
 updated: 2021-10-29
 ---
 
@@ -30,7 +29,7 @@ Sie können einen sekundären Server hinzufügen oder diese Konfiguration durch 
 
 ## In der praktischen Anwendung
 
-Verbinden Sie sich über SSH mit Ihrer Instanz. Weitere Informationen hierzu finden Sie in der Anleitung zum [Einloggen auf einer Instanz](/pages/platform/public-cloud/public-cloud-first-steps#connect-to-instance).
+Verbinden Sie sich über SSH mit Ihrer Instanz. Weitere Informationen hierzu finden Sie in der Anleitung zum [Einloggen auf einer Instanz](/pages/public_cloud/compute/public-cloud-first-steps#connect-to-instance).
 
 Wechseln Sie zum Root-Benutzer. Falls nötig lesen Sie unsere [Anleitung zu diesem Thema](/pages/public_cloud/compute/become_root_and_change_password).
 
@@ -133,7 +132,7 @@ DNS configuration:
 
 ### Windows
 
-Loggen Sie sich über eine Remote-Verbindung (RDP) oder mit der VNC-Konsole auf der Instanz ein. Weitere Informationen hierzu finden Sie in der Anleitung zum [Einloggen auf einer Instanz](/pages/platform/public-cloud/public-cloud-first-steps#connect-to-instance).
+Loggen Sie sich über eine Remote-Verbindung (RDP) oder mit der VNC-Konsole auf der Instanz ein. Weitere Informationen hierzu finden Sie in der Anleitung zum [Einloggen auf einer Instanz](/pages/public_cloud/compute/public-cloud-first-steps#connect-to-instance).
 
 Öffnen Sie die `Netzwerkeinstellungen`{.action}.
 

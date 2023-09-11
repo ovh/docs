@@ -64,7 +64,7 @@ No seguimento da eliminação de dados nas suas bases de dados, pense em recalcu
 
 #### 2 - Web Cloud Databases
 
-Se utiliza a oferta [Web Cloud Databases](/pages/web/clouddb/starting_with_clouddb#ativacao-do-seu-servidor-clouddb-incluido-com-o-seu-plano-de-alojamento-web) incluída com o seu alojamento [Performance](https://www.ovhcloud.com/pt/web-hosting/performance-offer/) e deseja migrar o seu alojamento para uma oferta [Pro](https://www.ovhcloud.com/pt/web-hosting/professional-offer/), aceda à parte `Alojamentos`{.action} da sua Área de Cliente.<br>
+Se utiliza a oferta [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb#ativacao-do-seu-servidor-clouddb-incluido-com-o-seu-plano-de-alojamento-web) incluída com o seu alojamento [Performance](https://www.ovhcloud.com/pt/web-hosting/performance-offer/) e deseja migrar o seu alojamento para uma oferta [Pro](https://www.ovhcloud.com/pt/web-hosting/professional-offer/), aceda à parte `Alojamentos`{.action} da sua Área de Cliente.<br>
 Clique no botão `...`{.action} na parte `Bases de dados privada`{.action} depois `Desassociar`{.action}.
 
 ![Web Cloud Databases](images/clouddb.png){.thumbnail}

@@ -1,7 +1,6 @@
 ---
 title: Envoyer des Fax via l’imprimante virtuelle EcoFax - macOS X
 excerpt: Comment envoyer des Fax depuis EcoFax en utilisant l'imprimante virtuelle - Version macOS X
-legacy_guide_number: g1684
 updated: 2022-06-24
 ---
 

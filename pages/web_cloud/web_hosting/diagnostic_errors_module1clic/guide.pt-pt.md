@@ -77,9 +77,9 @@ Na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from
 
 #### Solução n°4: instalar o módulo numa base de dados já utilizada
 
-Para instalar o módulo numa base de dados já utilizada, deverá utilizar o [modo avançado](/pages/web/hosting/cms_install_1_click_modules#instalacao-avancada) de instalação de um novo **Módulo 1 clique**.
+Para instalar o módulo numa base de dados já utilizada, deverá utilizar o [modo avançado](/pages/web_cloud/web_hosting/cms_install_1_click_modules#instalacao-avancada) de instalação de um novo **Módulo 1 clique**.
 
-Para encontrar as credenciais da sua base de dados, consulte a nossa [guia](/pages/web/hosting/cms_install_1_click_modules#configurar-o-modulo).
+Para encontrar as credenciais da sua base de dados, consulte a nossa [guia](/pages/web_cloud/web_hosting/cms_install_1_click_modules#configurar-o-modulo).
 
 ### "O diretório de instalação não está vazio"
 
@@ -103,8 +103,8 @@ Recomenda-se a utilização da versão de PHP mais recente possível. **Antes** 
 
 Para verificar esta configuração, consulte os nossos manuais sobre:
 
-- [Alterar a configuração do alojamento web](/pages/web_cloud/web_hosting/ovhconfig_modify_system_runtime)
-- [Configurar o ficheiro .ovhconfig do alojamento web](/pages/web_cloud/web_hosting/ovhconfig_configuration)
+- [Alterar a configuração do alojamento web](/pages/web_cloud/web_hosting/configure_your_web_hosting)
+- [Configurar o ficheiro .ovhconfig do alojamento web](/pages/web_cloud/web_hosting/configure_your_web_hosting)
 
 ### "Ocorreu um erro durante o carregamento das informações (There is not enough space on your hosting (you need at least xxx MB))"
 
@@ -112,7 +112,7 @@ Para verificar esta configuração, consulte os nossos manuais sobre:
 
 Esta mensagem indica que o[espaço de armazenamento](/pages/web_cloud/web_hosting/ftp_connection) do seu alojamento tem um volume de dados demasiado elevado. Deve eliminar ou deslocar um novo [módulo 1 clique](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
 
-Neste caso, [ligue-se em FTP](/pages/web_cloud/web_hosting/ftp_connection) ao seu alojamento, [salvaguarde localmente](/pages/web/hosting/ftp_filezilla_user_guide#transferencia-de-ficheiros) os seus dados e elimine os ficheiros que não são necessários para o funcionamento do seu site.
+Neste caso, [ligue-se em FTP](/pages/web_cloud/web_hosting/ftp_connection) ao seu alojamento, [salvaguarde localmente](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide#transferencia-de-ficheiros) os seus dados e elimine os ficheiros que não são necessários para o funcionamento do seu site.
 
 > [!primary]
 >
@@ -126,7 +126,7 @@ Neste caso, [ligue-se em FTP](/pages/web_cloud/web_hosting/ftp_connection) ao se
 
 Depois de lançar a instalação do módulo em modo avançado, recebeu um e-mail indicando que o seu módulo não pode ligar-se à base de dados indicada. 
 
-Por isso, deve verificar os dados de acesso à sua base de dados. Para as encontrar, consulte a nossa [guia](/pages/web/hosting/cms_install_1_click_modules#configurar-o-modulo).
+Por isso, deve verificar os dados de acesso à sua base de dados. Para as encontrar, consulte a nossa [guia](/pages/web_cloud/web_hosting/cms_install_1_click_modules#configurar-o-modulo).
 
 De seguida, elimine o módulo através do separador `Módulos 1 clique`{.action}:
 
@@ -138,11 +138,11 @@ De seguida, execute a instalação de um novo módulo.
 
 ![insufficient_rights](images/insufficient_rights.png){.thumbnail}
 
-A sua base de dados não pode ser alterada uma vez que a quantidade de dados que contém excede o limite autorizado. Esta mensagem aparece durante a instalação de um módulo em [modo avançado](/pages/web/hosting/cms_install_1_click_modules#instalacao-avancada).
+A sua base de dados não pode ser alterada uma vez que a quantidade de dados que contém excede o limite autorizado. Esta mensagem aparece durante a instalação de um módulo em [modo avançado](/pages/web_cloud/web_hosting/cms_install_1_click_modules#instalacao-avancada).
 
-Nesta situação, instale o seu módulo passando pelo [modo "simples"](/pages/web/hosting/cms_install_1_click_modules#instalacao-simples) ou escolha outra base de dados aquando da sua instalação em modo avançado. Se necessário, encomende uma oferta de bases de dados (https://www.ovhcloud.com/pt/web-hosting/options/start-sql/) complementar.
+Nesta situação, instale o seu módulo passando pelo [modo "simples"](/pages/web_cloud/web_hosting/cms_install_1_click_modules#instalacao-simples) ou escolha outra base de dados aquando da sua instalação em modo avançado. Se necessário, encomende uma oferta de bases de dados (https://www.ovhcloud.com/pt/web-hosting/options/start-sql/) complementar.
 
-Se não dispõe de outras bases de dados e não deseja encomendar uma oferta complementar, [importe localmente uma cópia da sua base de dados](/pages/web/hosting/sql_database_export#instrucoes) e elimine os dados inúteis.
+Se não dispõe de outras bases de dados e não deseja encomendar uma oferta complementar, [importe localmente uma cópia da sua base de dados](/pages/web_cloud/web_hosting/sql_database_export#instrucoes) e elimine os dados inúteis.
 
 > [!warning]
 >
@@ -156,15 +156,15 @@ Se não dispõe de outras bases de dados e não deseja encomendar uma oferta com
 
 ![cant_connect](images/cant_connect.png){.thumbnail}
 
-Iniciou a instalação de um módulo 1 clique em [modo avançado](/pages/web/hosting/cms_install_1_click_modules#instalacao-avancada) numa base de dados situada num [servidor Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb). Recebeu esta mensagem de erro por e-mail. Isto significa que o utilizador notado durante a instalação não possui direitos suficientes sobre a base de dados ou que os identificadores indicados são incorretos.
+Iniciou a instalação de um módulo 1 clique em [modo avançado](/pages/web_cloud/web_hosting/cms_install_1_click_modules#instalacao-avancada) numa base de dados situada num [servidor Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb). Recebeu esta mensagem de erro por e-mail. Isto significa que o utilizador notado durante a instalação não possui direitos suficientes sobre a base de dados ou que os identificadores indicados são incorretos.
 
-Verifique também as suas credenciais ao [ligar diretamente](/pages/web/clouddb/connecting-to-database-on-database-server#instrucoes) ao seu servidor de bases de dados e, de seguida, execute novamente a instalação do seu módulo.
+Verifique também as suas credenciais ao [ligar diretamente](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server#instrucoes) ao seu servidor de bases de dados e, de seguida, execute novamente a instalação do seu módulo.
 
 ### Can't connect to database 'xxxxxxxx' at 'xxxxxxxx.mysql.db'. The error is: Unknown MySQL server host 'xxxxxxxx.mysql.db'
 
 ![cant_connect_server](images/cant_connect_server.png){.thumbnail}
 
-Iniciou a instalação de um módulo 1 clique em [modo avançado](/pages/web/hosting/cms_install_1_click_modules#instalacao-avancada) numa base de dados situada num [servidor Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb). Recebeu esta mensagem de erro por e-mail. Isto significa que o nome do servidor de bases de dados que indicou está incorreto.
+Iniciou a instalação de um módulo 1 clique em [modo avançado](/pages/web_cloud/web_hosting/cms_install_1_click_modules#instalacao-avancada) numa base de dados situada num [servidor Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb). Recebeu esta mensagem de erro por e-mail. Isto significa que o nome do servidor de bases de dados que indicou está incorreto.
 
 Clique na parte `Web cloud`{.action} do seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), depois no separador `Bases de dados`{.action}.
 
@@ -178,8 +178,8 @@ Clique no separador `Multisite`{.action} e, em seguida, efetue as seguintes veri
 
 |Cenário|Medidas a adotar|
 |---|---|
-|O domínio ou subdomínio associado ao site que pretende criar não aparece na `Multisite`{.action}.|Adicione o seu domínio seguindo [estas indicações](/pages/web/hosting/multisites_configure_multisite#2-adicionar-um-dominio-ou-subdominio).|
-|O domínio foi eliminado do multi-site sem nenhuma ação da sua parte.|Se o seu domínio ou a sua [Zona DNS](/pages/web/domains/dns_zone_edit#compreender-a-nocao-de-dns) não são geridos a partir da sua conta OVHcloud, adicione o seu domínio ao `Multisite`{.action} seguindo [este guia](/pages/web/hosting/multisites_configure_multisite#etapa-22-adicionar-um-dominio-externo).|
+|O domínio ou subdomínio associado ao site que pretende criar não aparece na `Multisite`{.action}.|Adicione o seu domínio seguindo [estas indicações](/pages/web_cloud/web_hosting/multisites_configure_multisite#2-adicionar-um-dominio-ou-subdominio).|
+|O domínio foi eliminado do multi-site sem nenhuma ação da sua parte.|Se o seu domínio ou a sua [Zona DNS](/pages/web_cloud/domains/dns_zone_edit#compreender-a-nocao-de-dns) não são geridos a partir da sua conta OVHcloud, adicione o seu domínio ao `Multisite`{.action} seguindo [este guia](/pages/web_cloud/web_hosting/multisites_configure_multisite#etapa-22-adicionar-um-dominio-externo).|
 
 ### O seu módulo é apresentado num endereço web do tipo "xxxx.cluster0xx.hosting.ovh.net"
 
@@ -191,13 +191,13 @@ Depois de realizar todos os backups necessários, [elimine o módulo](#delete-mo
 
 Esta anomalia pode ter várias causas: 
 
-- Efetuou recentemente uma alteração na sua zona ou nos seus servidores [DNS](/pages/web/domains/dns_zone_edit#compreender-a-nocao-de-dns) ou uma [transferência de nome de domínio](/pages/web_cloud/domains/transfer_incoming_generic_domain). Aguarde até que estas operações estejam finalizadas (48 horas para as alterações nos seus DNS). Também pode reiniciar os seus dispositivos (PC, smartphone, box, etc.) e esvaziar a cache do seu browser.
+- Efetuou recentemente uma alteração na sua zona ou nos seus servidores [DNS](/pages/web_cloud/domains/dns_zone_edit#compreender-a-nocao-de-dns) ou uma [transferência de nome de domínio](/pages/web_cloud/domains/transfer_incoming_generic_domain). Aguarde até que estas operações estejam finalizadas (48 horas para as alterações nos seus DNS). Também pode reiniciar os seus dispositivos (PC, smartphone, box, etc.) e esvaziar a cache do seu browser.
 
-- O seu domínio está sempre associado ao seu antigo alojamento. Neste caso, altere a sua [Zona DNS](/pages/web/domains/dns_zone_edit#editar-a-zona-dns-da-ovhcloud-do-seu-dominio) ou os seus [Servidores DNS](/pages/web/domains/dns_server_general_information#modificar-os-servidores-dns) ou contacte o seu antigo fornecedor de serviços.
+- O seu domínio está sempre associado ao seu antigo alojamento. Neste caso, altere a sua [Zona DNS](/pages/web_cloud/domains/dns_zone_edit#editar-a-zona-dns-da-ovhcloud-do-seu-dominio) ou os seus [Servidores DNS](/pages/web_cloud/domains/dns_server_general_information#modificar-os-servidores-dns) ou contacte o seu antigo fornecedor de serviços.
 
 ### A palavra-passe "Administrador" de acesso ao "back-office" do seu módulo 1 clique deixou de funcionar <a name="adminpassword"></a>
 
-Se a sua palavra-passe de acesso à interface de gestão do CMS for rejeitada, consulte o parágrafo "Alterar a palavra-passe do módulo" do nosso manual [sobre a gestão do módulo 1 clique](/pages/web/hosting/cms_manage_1_click_module#password-change).
+Se a sua palavra-passe de acesso à interface de gestão do CMS for rejeitada, consulte o parágrafo "Alterar a palavra-passe do módulo" do nosso manual [sobre a gestão do módulo 1 clique](/pages/web_cloud/web_hosting/cms_manage_1_click_module#password-change).
 
 ## Quer saber mais? <a name="gofurther"></a>
 

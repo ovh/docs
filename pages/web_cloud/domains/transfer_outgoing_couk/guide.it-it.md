@@ -42,7 +42,7 @@ Il processo di modifica del Registrar (*registrar*) per i domini di primo livell
 
 > [!primary]
 >
-> Se sei il **proprietario** del dominio ma la sua gestione nello Spazio Cliente OVHcloud non è disponibile, tramite il tuo accesso o tramite il contatto amministrativo del dominio, consulta [questa guida](/pages/account/customer/managing_contacts#caso-specifico-di-un-proprietario-di-dominio) prima di continuare.
+> Se sei il **proprietario** del dominio ma la sua gestione nello Spazio Cliente OVHcloud non è disponibile, tramite il tuo accesso o tramite il contatto amministrativo del dominio, consulta [questa guida](/pages/account_and_service_management/account_information/managing_contacts#caso-specifico-di-un-proprietario-di-dominio) prima di continuare.
 >
 > Se il dominio è scaduto da **meno di 90 giorni**, può sempre essere trasferito. Per sbloccare il dominio per il trasferimento, contatta i nostri team di supporto tecnico creando una richiesta di supporto nel tuo Spazio Cliente OVHcloud.
 >

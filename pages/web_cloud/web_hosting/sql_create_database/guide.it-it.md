@@ -110,7 +110,7 @@ I database di Web Hosting hanno un limite di 30 connessioni simultanee (variabil
 
 Se il database di un Hosting Web supera lo spazio di storage consigliato, passerà automaticamente in modalità “read only” / ”select only”. L’amministratore riceverà una notifica via email.
 
-Una volta ottimizzato il database, è possibile ricalcolarne le dimensioni dallo Spazio Cliente OVHcloud per sbloccarlo di nuovo. Ti consigliamo di scaricare il database, effettuarne la revisione localmente e poi sostituirlo tramite importazione. Per maggiori informazioni, consulta [questa guida](/pages/web/hosting/optimise_your_website_performance#step-7-ottimizza-il-tuo-database).
+Una volta ottimizzato il database, è possibile ricalcolarne le dimensioni dallo Spazio Cliente OVHcloud per sbloccarlo di nuovo. Ti consigliamo di scaricare il database, effettuarne la revisione localmente e poi sostituirlo tramite importazione. Per maggiori informazioni, consulta [questa guida](/pages/web_cloud/web_hosting/optimise_your_website_performance#step-7-ottimizza-il-tuo-database).
 
 ## Per saperne di più
 

@@ -19,7 +19,7 @@ Os erros nas contas de e-mail Exchange podem ter várias causas. Um diagnóstico
 - Dispor de uma [solução Exchange OVHcloud](https://www.ovhcloud.com/pt/emails/hosted-exchange/) já instalada
 - Dispor das informações de identificação para a conta Exchange a verificar
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
-- Estar atualizado nos [pagamentos](/pages/account/billing/invoice_management#pay-bills) deste serviço e do domínio associado.
+- Estar atualizado nos [pagamentos](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) deste serviço e do domínio associado.
 
 ## Instruções
 
@@ -58,7 +58,7 @@ Consulte o nosso guia [O que fazer em caso de conta bloqueada por spam?](/pages/
 ### A subscrição à conta expirou <a name="expired"></a>
 
 Uma vez que a sua assinatura deixou de estar ativa, o envio e a receção foram desativados.<br>
-Para reativar a subscrição, basta reconfigurar a [periodicidade de faturação](/pages/web/microsoft-collaborative-solutions/manage_billing_exchange#periodicity) na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+Para reativar a subscrição, basta reconfigurar a [periodicidade de faturação](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_billing_exchange#periodicity) na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 
 ### A conta está bloqueada pela política de segurança
 

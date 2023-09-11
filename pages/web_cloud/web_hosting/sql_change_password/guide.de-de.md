@@ -16,11 +16,11 @@ Die Verbindung zu dieser Datenbank wird durch eine **Konfigurationsdatei** im [F
 
 Die Änderung des Passworts einer Datenbank muss deshalb immer an zwei Orten durchgeführt werden:
 
-- In der [Konfigurationsdatei](/pages/web/hosting/cms_manage_1_click_module#schritt-1-die-zu-ihrem-modul-gehorige-datenbank-identifizieren) Ihrer Website, im [FTP-Bereich Ihres Hostings](/pages/web_cloud/web_hosting/ftp_connection).
+- In der [Konfigurationsdatei](/pages/web_cloud/web_hosting/cms_manage_1_click_module#schritt-1-die-zu-ihrem-modul-gehorige-datenbank-identifizieren) Ihrer Website, im [FTP-Bereich Ihres Hostings](/pages/web_cloud/web_hosting/ftp_connection).
 
 - **Und** auf dem Server, der die entsprechende Datenbank enthält, über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
-Bis diese Änderung **an beiden Stellen** durchgeführt wurde, wird auf Ihrer Seite ein Verbindungsfehler “[Error establishing a database connection](/pages/web/hosting/diagnosis_database_errors#verbindungsfehler-error-establishing-a-database-connection)“ angezeigt.
+Bis diese Änderung **an beiden Stellen** durchgeführt wurde, wird auf Ihrer Seite ein Verbindungsfehler “[Error establishing a database connection](/pages/web_cloud/web_hosting/diagnosis_database_errors#verbindungsfehler-error-establishing-a-database-connection)“ angezeigt.
 
 Wenn Sie das Passwort Ihrer Datenbank ändern möchten, müssen daher die in dieser Anleitung **beschriebenen Operationen vollständig** durchgeführt werden. Bei Zweifeln an den durchzuführenden Aktionen wenden Sie sich an Ihren Webmaster oder kontaktieren Sie einen [[spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/)](https://partner.ovhcloud.com/de/directory/).
 

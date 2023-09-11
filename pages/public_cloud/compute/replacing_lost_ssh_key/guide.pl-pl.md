@@ -1,7 +1,6 @@
 ---
 title: Zmiana klucza SSH w przypadku utraty
 excerpt: Zmiana klucza SSH w przypadku utraty
-legacy_guide_number: g2069
 updated: 2022-02-10
 ---
 
@@ -30,7 +29,7 @@ Aby odzyskać dostęp, udostępniliśmy [tryb Rescue](/pages/public_cloud/comput
 Jeśli chcesz zapisać klucz SSH w Panelu klienta OVHcloud, zalecamy użycie szyfrowania RSA lub ECDSA. ED25519 nie jest aktualnie obsługiwany.
 >
 
-Po zamontowaniu dysku Twojej instancji w [trybie Rescue](/pages/platform/public-cloud/put_an_instance_in_rescue_mode#dostep-do-danych), będziesz mógł uzyskać dostęp do wszystkich Twoich plików.
+Po zamontowaniu dysku Twojej instancji w [trybie Rescue](/pages/public_cloud/compute/put_an_instance_in_rescue_mode#dostep-do-danych), będziesz mógł uzyskać dostęp do wszystkich Twoich plików.
 
 Plik zawierający klucze SSH to:
 

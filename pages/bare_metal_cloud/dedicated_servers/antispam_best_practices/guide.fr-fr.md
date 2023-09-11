@@ -229,7 +229,7 @@ Si le volume de vos e-mails sortants est très important, il est conseillé de :
 
 - réserver un bloc d'adresses IP dédié uniquement à l'utilisation des e-mails.
 - fournir une adresse *abuse* sur ce bloc afin de recevoir les plaintes.
-- configurer correctement les [Reverses](/pages/cloud/dedicated/mail_sending_optimization#configurer-le-reverse-ip) sur toutes les adresses IP. 
+- configurer correctement les [Reverses](/pages/bare_metal_cloud/dedicated_servers/mail_sending_optimization#configurer-le-reverse-ip) sur toutes les adresses IP. 
 
 Cette dernière opération vous permettra d’isoler simultanément l’IP et la réputation du domaine si vous envoyez des e-mails de différents domaines, de recevoir les plaintes et ainsi de faire le nécessaire pour être débloqué par les différentes organisations. Le *reverse* permet également de localiser plus rapidement un problème sur un formulaire utilisant le domaine X ou Y, car les e-mails ne sont pas envoyés depuis la même IP et n'ont pas le même *reverse*.
 
@@ -263,7 +263,7 @@ Pour plus d'informations sur les services ci-dessus, consultez notre guide « [O
 
 - **Vers un serveur Microsoft (Outlook, etc.)**
 
-Microsoft utilise une politique de liste blanche. Cela signifie que tout serveur se trouve initialement sur une liste noire. Une procédure spécifique est alors nécessaire pour faire valider votre serveur e-mail. Pour plus d’informations, nous vous invitons à consulter [cette section](/pages/cloud/dedicated/mail_sending_optimization#vers-un-serveur-microsoft-outlook-etc) du guide correspondant.
+Microsoft utilise une politique de liste blanche. Cela signifie que tout serveur se trouve initialement sur une liste noire. Une procédure spécifique est alors nécessaire pour faire valider votre serveur e-mail. Pour plus d’informations, nous vous invitons à consulter [cette section](/pages/bare_metal_cloud/dedicated_servers/mail_sending_optimization#vers-un-serveur-microsoft-outlook-etc) du guide correspondant.
 
 - **Vers un serveur Gmail**
 

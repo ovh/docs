@@ -1,7 +1,6 @@
 ---
 title: Zugriffs- und Sicherheitseinstellungen in Horizon
 excerpt: Erfahren Sie hier, wie Sie sicheren Zugang zu Ihren Instanzen einrichten
-legacy_guide_number: g1774
 updated: 2021-05-26
 ---
 
@@ -38,7 +37,7 @@ In diesem Bereich können Sie SSH-Schlüsselpaare anlegen und verwalten. Sie kö
 
 Wenn Sie einen vorhandenen Schlüssel hinzufügen möchten, klicken Sie auf `Import Public Key`{.action}. Im Popup-Fenster können Sie dann den Schlüssel direkt oder über eine Datei hinzufügen.
 
-Dieser Teil der Benutzeroberfläche enthält einige grundlegende Anweisungen; ausführlichere Informationen zu SSH-Schlüsseln finden Sie in [dieser Anleitung](/pages/platform/public-cloud/public-cloud-first-steps#schritt-1-ssh-schlussel-erstellen).
+Dieser Teil der Benutzeroberfläche enthält einige grundlegende Anweisungen; ausführlichere Informationen zu SSH-Schlüsseln finden Sie in [dieser Anleitung](/pages/public_cloud/compute/public-cloud-first-steps#schritt-1-ssh-schlussel-erstellen).
 
 - **Security Groups** (unter `Project`{.action} / `Network`{.action})
 

@@ -1,7 +1,6 @@
 ---
 title: 'Crea e configura un disco aggiuntivo sulla tua istanza'
 excerpt: 'Come associare un nuovo volume alla tua istanza Public Cloud'
-legacy_guide_number: g1863
 updated: 2023-03-03
 ---
 
@@ -68,7 +67,7 @@ Gli esempi che seguono presuppongono che tu sia connesso come utente con autoriz
 
 #### Con Linux
 
-Apri una [connessione SSH alla tua istanza](/pages/platform/public-cloud/public-cloud-first-steps#connect-to-instance) e utilizza il comando qui sotto per visualizzare i dischi associati.
+Apri una [connessione SSH alla tua istanza](/pages/public_cloud/compute/public-cloud-first-steps#connect-to-instance) e utilizza il comando qui sotto per visualizzare i dischi associati.
 
 ```bash
 ~$ admin@server-1:~$ lsblk
@@ -319,7 +318,7 @@ Per scollegare un volume dall'istanza, la migliore pratica è smontare il volume
 
 #### Con Linux
 
-Apri una [connessione SSH alla tua istanza](/pages/platform/public-cloud/public-cloud-first-steps#step-3-crea-unistanza) e utilizza il comando qui sotto per visualizzare i dischi associati.
+Apri una [connessione SSH alla tua istanza](/pages/public_cloud/compute/public-cloud-first-steps#step-3-crea-unistanza) e utilizza il comando qui sotto per visualizzare i dischi associati.
 
 ```bash
 ~$ admin@server-1:~$ lsblk

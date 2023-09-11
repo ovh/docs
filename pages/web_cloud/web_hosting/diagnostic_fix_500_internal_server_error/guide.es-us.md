@@ -29,7 +29,7 @@ A veces también se actualizan **automáticamente** en un componente del sitio w
 
 - Tener un [plan de hosting](https://www.ovhcloud.com/es/web-hosting/).
 - Estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
-- Estar actualizado en los [pagos](/pages/account/billing/invoice_management#pay-bills) y [renovaciones](/pages/account/billing/how_to_use_automatic_renewal#renewal-management) de los servicios asociados (dominio y alojamiento web).
+- Estar actualizado en los [pagos](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) y [renovaciones](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) de los servicios asociados (dominio y alojamiento web).
 
 ## Procedimiento
 
@@ -49,7 +49,7 @@ En primer lugar, consulte esta [guía](/pages/web_cloud/web_hosting/logs_and_sta
 
 ### Poner un sitio web en modo de desarrollo
 
-Para identificar los posibles errores de PHP, ponga el alojamiento en modo `desarrollo` utilizando estas [indicaciones](/pages/web/hosting/ovhconfig_modify_system_runtime#2-comprobar-la-configuracion-del-alojamiento-web).
+Para identificar los posibles errores de PHP, ponga el alojamiento en modo `desarrollo` utilizando estas [indicaciones](/pages/web_cloud/web_hosting/configure_your_web_hosting#2-comprobar-la-configuracion-del-alojamiento-web).
 
 ### Probar el archivo .htaccess
 
@@ -69,7 +69,7 @@ Un error 500 puede estar relacionado con un nivel de permisos de acceso incorrec
 
 Para acceder a estos archivos, conéctese por FTP al alojamiento siguiendo la [guía](/pages/web_cloud/web_hosting/ftp_connection).
 
-La guía "[Uso de FileZilla con el alojamiento](/pages/web/hosting/ftp_filezilla_user_guide#permisos-de-los-archivos-y-carpetas)" le ayudará a comprobar lo siguiente :
+La guía "[Uso de FileZilla con el alojamiento](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide#permisos-de-los-archivos-y-carpetas)" le ayudará a comprobar lo siguiente :
 
 - La **raíz** del alojamiento (es el directorio anotado `/` o `.` en su programa FTP) debe estar obligatoriamente en permisos 705 (estos son los permisos por defecto). Le recomendamos que no modifique este nivel de permisos.
 - Los expedientes deben estar en los derechos 705.
@@ -96,9 +96,9 @@ Para más información sobre los errores que puedan estar relacionados con la ba
 
 Para restaurar el código fuente del sitio web, consulte nuestra guía [Restaurar el espacio de almacenamiento de un alojamiento web](/pages/web_cloud/web_hosting/ftp_save_and_backup).
 
-Si su sitio web incluye una base de datos, consulte nuestra guía [Importar una copia de seguridad en la base de datos de un alojamiento web](/pages/web/hosting/sql_importing_mysql_database#restaurar-una-copia-de-seguridad-desde-el-area-de-cliente) para restaurarla a un estado anterior.
+Si su sitio web incluye una base de datos, consulte nuestra guía [Importar una copia de seguridad en la base de datos de un alojamiento web](/pages/web_cloud/web_hosting/sql_importing_mysql_database#restaurar-una-copia-de-seguridad-desde-el-area-de-cliente) para restaurarla a un estado anterior.
 
-Por último, si se ha producido un error al actualizar la versión PHP del alojamiento, consulte nuestra guía "[Cambiar la versión de PHP de un alojamiento web](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014)" para volver a la configuración anterior.
+Por último, si se ha producido un error al actualizar la versión PHP del alojamiento, consulte nuestra guía "[Cambiar la versión de PHP de un alojamiento web](/pages/web_cloud/web_hosting/configure_your_web_hosting)" para volver a la configuración anterior.
 
 ## Más información <a name="gofurther"></a>
 

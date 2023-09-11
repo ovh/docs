@@ -84,7 +84,7 @@ Nello Spazio Cliente OVHcloud (https://www.ovh.com/auth/?action=gotomanager&from
 - **my_server.mysql.db** deve corrispondere a quanto riportato su `Indirizzo del server`.
 
 > [!primary]
-> Se queste operazioni non ti permettono di ripristinare l'accesso al tuo sito, [salva il tuo database](/pages/web_cloud/web_hosting/sql_database_export) e [ripristina il database](/pages/web/clouddb/restore-import-on-database-server#ripristina-e-importa-un-database-dallo-spazio-cliente) dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
+> Se queste operazioni non ti permettono di ripristinare l'accesso al tuo sito, [salva il tuo database](/pages/web_cloud/web_hosting/sql_database_export) e [ripristina il database](/pages/web_cloud/web_cloud_databases/restore-import-on-database-server#ripristina-e-importa-un-database-dallo-spazio-cliente) dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
 >
 > Contatta uno specialista del settore (https://partner.ovhcloud.com/it/directory/) se necessario. Non saremo in grado di fornirti assistenza al riguardo.
 >
@@ -123,7 +123,7 @@ Puoi anche migrare i tuoi dati su un nuovo database:
 - Inserisci gli identificativi del nuovo database nel [file di configurazione](#config_file) del tuo sito.
 
 > [!primary]
-> Se disponi di un hosting **Performance**, puoi anche [attivare gratuitamente un server Web Cloud Databases](/pages/web/clouddb/starting_with_clouddb#attiva-il-tuo-server-clouddb-incluso-con-la-tua-offerta-di-hosting-web).
+> Se disponi di un hosting **Performance**, puoi anche [attivare gratuitamente un server Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb#attiva-il-tuo-server-clouddb-incluso-con-la-tua-offerta-di-hosting-web).
 >
 
 ##### Metodo 3: eliminare i dati non necessari
@@ -139,7 +139,7 @@ Esegui il calcolo della quota utilizzando la scheda `Database`{.action} dell'hos
 
 #### Metodo 4: ottimizzare il tuo database
 
-Per ottimizzare il tuo database, segui le istruzioni della nostra guida [Configura il tuo server di database](/pages/web/clouddb/configure-database-server#ottimizza-i-tuoi-database). Clicca sulla scheda `Database`{.action} del tuo hosting e poi riavvia il calcolo della quota `...`{.action} del database in questione.
+Per ottimizzare il tuo database, segui le istruzioni della nostra guida [Configura il tuo server di database](/pages/web_cloud/web_cloud_databases/configure-database-server#ottimizza-i-tuoi-database). Clicca sulla scheda `Database`{.action} del tuo hosting e poi riavvia il calcolo della quota `...`{.action} del database in questione.
 
 > [!warning]
 >
@@ -152,7 +152,7 @@ Nella sezione `Database`{.action} del tuo [Spazio Cliente OVHcloud](https://www.
 
 ![quota_exceeding](images/quota_exceeding.png){.thumbnail}
 
-In questa situazione è possibile aumentare la [quantità di memoria RAM](/pages/web/clouddb/configure-database-server#monitora-la-ram-consumata) disponibile nella sezione `Database`{.action} del tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Nella scheda `Informazioni generali`{.action}, clicca sul pulsante `...`{.action} nella sezione `RAM`.
+In questa situazione è possibile aumentare la [quantità di memoria RAM](/pages/web_cloud/web_cloud_databases/configure-database-server#monitora-la-ram-consumata) disponibile nella sezione `Database`{.action} del tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Nella scheda `Informazioni generali`{.action}, clicca sul pulsante `...`{.action} nella sezione `RAM`.
 
 > [!warning]
 >
@@ -163,7 +163,7 @@ In questa situazione è possibile aumentare la [quantità di memoria RAM](/pages
 > Nella zona `Configurazione`, clicca sui `...`{.action} in corrispondenza dell'entrata della `Database Privato` e clicca su `Scollega`{.action}.
 >
 
-Per ottimizzare il tuo database, segui le istruzioni della nostra guida "[Configurare il tuo server di database](/pages/web/clouddb/configure-database-server#ottimizza-i-tuoi-database)".
+Per ottimizzare il tuo database, segui le istruzioni della nostra guida "[Configurare il tuo server di database](/pages/web_cloud/web_cloud_databases/configure-database-server#ottimizza-i-tuoi-database)".
 
 > [!primary]
 > Se riscontri difficoltà nell'utilizzo delle risorse sul tuo server di database e non desideri aumentarle, contatta la nostra [Community di utenti](https://community.ovh.com/en/) o i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/). Non saremo in grado di fornirti assistenza al riguardo.
@@ -210,11 +210,11 @@ USE `Database-Name`;
 > **"404 ERROR MySQL server has gone away"**
 >
 
-Questo messaggio di errore compare durante l'[importazione di un database](/pages/web/clouddb/restore-import-on-database-server#importa-un-backup-locale) su un server [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb). È legato per la maggior parte del tempo alla quantità troppo elevata di dati da importare o alla mancanza di ottimizzazione delle richieste SQL nello script di importazione.
+Questo messaggio di errore compare durante l'[importazione di un database](/pages/web_cloud/web_cloud_databases/restore-import-on-database-server#importa-un-backup-locale) su un server [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb). È legato per la maggior parte del tempo alla quantità troppo elevata di dati da importare o alla mancanza di ottimizzazione delle richieste SQL nello script di importazione.
 
 Per risolvere questa anomalia, puoi:
 
-- Aumentare la [quantità di RAM](/pages/web/clouddb/configure-database-server#monitora-la-ram-consumata). accedendo alla sezione `Database` del tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Clicca sul pulsante `...`{.action} nella sezione `RAM` e clicca su `Modifica la quantità di RAM`{.action}.
+- Aumentare la [quantità di RAM](/pages/web_cloud/web_cloud_databases/configure-database-server#monitora-la-ram-consumata). accedendo alla sezione `Database` del tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Clicca sul pulsante `...`{.action} nella sezione `RAM` e clicca su `Modifica la quantità di RAM`{.action}.
 
 - Per importare il tuo database in più operazioni anziché in una sola pagina (per maggiori informazioni sulle operazioni da effettuare, contatta la nostra [Community di utenti](https://community.ovh.com/en/) o i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/) OVHcloud non potrà fornirti alcuna assistenza al riguardo).
 

@@ -61,11 +61,11 @@ Nun, da die Delegation eingerichtet ist, können Sie die vergebenen Berechtigung
 
 Die Vorgehensweise für die Nutzung variiert je nach den vergebenen Rechten und der Software bzw. dem Webinterface, das Sie für den Zugang zu Ihrem E-Mail Account verwenden. Folgen Sie dieser Anleitung deshalb entsprechend der Berechtigungen, die Sie vergeben haben.
 
-- [Zugangsrechte nutzen](/pages/web/microsoft-collaborative-solutions/feature_delegation#21-zugangsrechte-nutzen){.external}
+- [Zugangsrechte nutzen](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_delegation#21-zugangsrechte-nutzen){.external}
 
-- [„Senden als“-Berechtigung nutzen](/pages/web/microsoft-collaborative-solutions/feature_delegation#22-senden-als-berechtigung-nutzen){.external}
+- [„Senden als“-Berechtigung nutzen](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_delegation#22-senden-als-berechtigung-nutzen){.external}
 
-- [„Senden im Auftrag von“-Berechtigung nutzen](/pages/web/microsoft-collaborative-solutions/feature_delegation#23-senden-im-auftrag-von-berechtigung-nutzen){.external}
+- [„Senden im Auftrag von“-Berechtigung nutzen](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_delegation#23-senden-im-auftrag-von-berechtigung-nutzen){.external}
 
 > [!warning]
 >

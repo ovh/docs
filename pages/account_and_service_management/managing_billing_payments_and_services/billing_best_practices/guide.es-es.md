@@ -25,7 +25,7 @@ Esta guía explica los requisitos necesarios para una buena gestión de su cuent
 
 #### Proteja su cuenta
 
-- [Cree una contraseña segura](/pages/account/customer/manage-ovh-password#generar-una-contrasena-adecuada) para garantizar la confidencialidad de su cuenta.
+- [Cree una contraseña segura](/pages/account_and_service_management/account_information/manage-ovh-password#generar-una-contrasena-adecuada) para garantizar la confidencialidad de su cuenta.
 
 - [Active la doble autenticación](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa) para evitar todo acceso fraudulento al área de cliente.
 
@@ -40,7 +40,7 @@ En la sección `Mi perfil`{.action} a la derecha de su pantalla (haga clic de nu
 
 ![myprofile](images/myprofile.png){.thumbnail}
 
-Para más información, consulte la guía [Proteger mi cuenta de OVHcloud y gestionar mis datos personales](/pages/account/customer/all_about_username#editar-mis-datos-personales).
+Para más información, consulte la guía [Proteger mi cuenta de OVHcloud y gestionar mis datos personales](/pages/account_and_service_management/account_information/all_about_username#editar-mis-datos-personales).
 
 Asegúrese de que su dirección de correo electrónico esté siempre **actualizada, segura y accesible.** Recibirá los mensajes de correo procedentes de nuestros servicios en esta dirección, incluyendo los **mensajes de restauración** en caso de perder su contraseña.
 

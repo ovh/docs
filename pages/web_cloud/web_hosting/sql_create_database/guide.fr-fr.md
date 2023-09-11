@@ -110,7 +110,7 @@ La meilleure pratique consiste à toujours utiliser le nom réel de la base de d
 
 Si une base de données d'hébergement web dépasse l'espace de stockage recommandé, elle basculera automatiquement en « Lecture seule » / « Sélection seule ». L’administrateur recevra une notification par e-mail.
 
-Une fois que la base de données a été optimisée (purgée), vous pouvez recalculer son quota dans votre espace client OVHcloud pour le débloquer à nouveau. La meilleure pratique consiste à télécharger la base de données, à gérer la révision localement et à la remplacer ensuite par importation. Vous pouvez consulter notre guide [Optimisation des performances de votre site](/pages/web/hosting/optimise_your_website_performance#etape-7-optimisation-de-votre-base-de-donnees) pour de plus amples informations.
+Une fois que la base de données a été optimisée (purgée), vous pouvez recalculer son quota dans votre espace client OVHcloud pour le débloquer à nouveau. La meilleure pratique consiste à télécharger la base de données, à gérer la révision localement et à la remplacer ensuite par importation. Vous pouvez consulter notre guide [Optimisation des performances de votre site](/pages/web_cloud/web_hosting/optimise_your_website_performance#etape-7-optimisation-de-votre-base-de-donnees) pour de plus amples informations.
 
 ## Aller plus loin
 

@@ -109,7 +109,7 @@ To pay bills that are awaiting payment, simply click on the `Batch actions`{.act
 
 ![Pay a due amount](images/pay_debt.png){.thumbnail}
 
-A [settlement purchase order](/pages/account/billing/managing_ovh_orders#purchase-order) will then be created. Once the payment has been made, your account will be balanced again.
+A [settlement purchase order](/pages/account_and_service_management/managing_billing_payments_and_services/managing_ovh_orders#purchase-order) will then be created. Once the payment has been made, your account will be balanced again.
 
 #### Request invoice cancellation
 

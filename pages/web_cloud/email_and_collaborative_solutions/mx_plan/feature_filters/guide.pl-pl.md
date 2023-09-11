@@ -1,7 +1,6 @@
 ---
 title: 'Konfiguracja filtrów e-mail w Panelu klienta'
 excerpt: 'Dowiedz się, jak utworzyć i skonfigurować filtr na Twoim koncie e-mail'
-legacy_guide_number: g1973
 updated: 2021-09-27
 ---
 

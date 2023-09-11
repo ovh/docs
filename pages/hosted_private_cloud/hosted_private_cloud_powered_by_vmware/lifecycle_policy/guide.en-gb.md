@@ -1,6 +1,6 @@
 ---
 title: Hosted Private Cloud VMware Lifecycle Policy
-excerpt: 'Lifecycle policy for Hosted Private Cloud powered by VMware'
+excerpt: 'Lifecycle policy for VMware on OVHcloud'
 updated: 2023-06-26
 ---
 
@@ -11,7 +11,7 @@ updated: 2023-06-26
 
 ## Objective
 
-**This page provides an overview of the lifecycle policy of OVHcloud Hosted Private Cloud powered by VMware services.**
+**This page provides an overview of the lifecycle policy of VMware on OVHcloud services.**
 
 OVHcloud's Hosted Private Cloud VMware service proposes dedicated infrastructure based on VMware SDDC technologies as well as other editors' technologies (such as Veeam or Zerto).
 

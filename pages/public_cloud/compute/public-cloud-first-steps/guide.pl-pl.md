@@ -242,7 +242,7 @@ W przypadku problemów z połączeniem, tj. błędów dotyczących kluczy SSH, z
 
 > [!primary]
 >
-Jeśli utworzyłeś instancję bez klucza SSH, przez API OVHcloud lub interfejs Openstack Horizon, możesz dodać klucz SSH do instancji tylko przez [tryb Rescue](/pages/public_cloud/compute/put_an_instance_in_rescue_mode), postępując zgodnie z instrukcjami podanymi w [tej sekcji odpowiedniego przewodnika](/pages/platform/public-cloud/replacing_lost_ssh_key#w-praktyce).
+Jeśli utworzyłeś instancję bez klucza SSH, przez API OVHcloud lub interfejs Openstack Horizon, możesz dodać klucz SSH do instancji tylko przez [tryb Rescue](/pages/public_cloud/compute/put_an_instance_in_rescue_mode), postępując zgodnie z instrukcjami podanymi w [tej sekcji odpowiedniego przewodnika](/pages/public_cloud/compute/replacing_lost_ssh_key#w-praktyce).
 >
 
 #### Połączenie z instancją z systemem operacyjnym Linux z systemu Linux/Mac

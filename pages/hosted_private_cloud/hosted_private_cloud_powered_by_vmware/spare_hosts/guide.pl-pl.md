@@ -1,7 +1,6 @@
 ---
 title: 'Host zapasowy'
 excerpt: 'Mechanizm wymiany hosta'
-legacy_guide_number: g860
 updated: 2020-06-29
 ---
 

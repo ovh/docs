@@ -29,7 +29,7 @@ Por vezes, provêm também de uma atualização efetuada **automaticamente** por
 
 - Dispor de uma [oferta de alojamento partilhado](https://www.ovhcloud.com/pt/web-hosting/)
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
-- Estar atualizado em [pagamentos](/pages/account/billing/invoice_management#pay-bills) e [renovações](/pages/account/billing/how_to_use_automatic_renewal#renewal-management) dos serviços associados (nome de domínio e alojamento web)
+- Estar atualizado em [pagamentos](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) e [renovações](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) dos serviços associados (nome de domínio e alojamento web)
 
 ## Instruções
 
@@ -49,7 +49,7 @@ Consulte primeiro este [guia](/pages/web_cloud/web_hosting/logs_and_statistics) 
 
 ### Passar o seu site em modo de desenvolvimento
 
-Para que apareçam eventuais erros PHP, passe o seu alojamento em modo de `desenvolvimento` graças a estas [indicações](/pages/web/hosting/ovhconfig_modify_system_runtime#2-alterar-a-configuracao-do-alojamento-web).
+Para que apareçam eventuais erros PHP, passe o seu alojamento em modo de `desenvolvimento` graças a estas [indicações](/pages/web_cloud/web_hosting/configure_your_web_hosting#2-alterar-a-configuracao-do-alojamento-web).
 
 ### Testar o ficheiro.htaccess
 
@@ -69,7 +69,7 @@ Um erro 500 pode estar associado a um nível de direitos de acesso incorreto em 
 
 Para aceder a estes ficheiros, ligue-se ao seu alojamento através de FTP, seguindo a nossa [documentação](/pages/web_cloud/web_hosting/ftp_connection).
 
-O guia "[Partilhado : Guia de utilização do FileZilla](/pages/web/hosting/ftp_filezilla_user_guide#permissoes-de-pastas-e-ficheiros)" ajudá-lo-á a verificar os seguintes elementos :
+O guia "[Partilhado : Guia de utilização do FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide#permissoes-de-pastas-e-ficheiros)" ajudá-lo-á a verificar os seguintes elementos :
 
 - A **raiz** do seu alojamento (Trata-se do diretório notado `/` ou `.` no seu software FTP) deve ter obrigatoriamente permissões 705 (são permissões padrão). Aconselhamos que não altere este nível de direitos.
 - Os dossiers devem estar em permissões 705.
@@ -96,9 +96,9 @@ Para qualquer erro 500 que possa estar relacionado com a base de dados do seu we
 
 Para restaurar o código fonte do seu site, consulte o nosso manual "[Restaurar o espaço de armazenamento do alojamento web](/pages/web_cloud/web_hosting/ftp_save_and_backup)".
 
-Se o seu site tiver uma base de dados, consulte o nosso manual "[Importar um backup para a base de dados de um alojamento web](/pages/web/hosting/sql_importing_mysql_database#restaurar-um-backup-a-partir-da-area-de-cliente)" para a restaurar para um estado anterior.
+Se o seu site tiver uma base de dados, consulte o nosso manual "[Importar um backup para a base de dados de um alojamento web](/pages/web_cloud/web_hosting/sql_importing_mysql_database#restaurar-um-backup-a-partir-da-area-de-cliente)" para a restaurar para um estado anterior.
 
-Por fim, se o erro 500 aparecer após uma atualização da versão PHP do seu alojamento, consulte o nosso guia "[Mudar a versão de PHP do alojamento web](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014)" para voltar à configuração anterior.
+Por fim, se o erro 500 aparecer após uma atualização da versão PHP do seu alojamento, consulte o nosso guia "[Mudar a versão de PHP do alojamento web](/pages/web_cloud/web_hosting/configure_your_web_hosting)" para voltar à configuração anterior.
 
 ## Saiba mais <a name="gofurther"></a>
 

@@ -1,7 +1,6 @@
 ---
 title: 'Crear filtros para sus direcciones de correo'
 excerpt: 'Cómo crear y configurar un filtro en una dirección de correo electrónico'
-legacy_guide_number: g1973
 updated: 2021-09-27
 ---
 

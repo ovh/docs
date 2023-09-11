@@ -63,7 +63,7 @@ Si la connexion aboutit, la page suivante de phpMyAdmin apparaîtra.
 
 > [!warning]
 >
-> Si vous utilisez une offre "Web Cloud Databases"/"SQL Privé", n'oubliez pas d'autoriser votre IP à l'aide du guide sur la [configuration de votre serveur de base de données](/pages/web/clouddb/configure-database-server#gerer-vos-acces).
+> Si vous utilisez une offre "Web Cloud Databases"/"SQL Privé", n'oubliez pas d'autoriser votre IP à l'aide du guide sur la [configuration de votre serveur de base de données](/pages/web_cloud/web_cloud_databases/configure-database-server#gerer-vos-acces).
 >
 
 Afin de vous connecter à votre base de données, assurez-vous de récupérer les informations suivantes :

@@ -23,7 +23,7 @@ Dopo una nuova installazione di un sistema operativo Windows Server su un server
 
 ### Step 1: accesso al KVM
 
-Per accedere alla console KVM del tuo server dedicato, consulta la [guida KVM](/pages/cloud/dedicated/using_ipmi_on_dedicated_servers#utilizza-kvm-sul-tuo-browser-web-solo-per-i-server-piu-recenti).
+Per accedere alla console KVM del tuo server dedicato, consulta la [guida KVM](/pages/bare_metal_cloud/dedicated_servers/using_ipmi_on_dedicated_servers#utilizza-kvm-sul-tuo-browser-web-solo-per-i-server-piu-recenti).
 
 ### Step 2: completare l'installazione di Windows
 
@@ -65,7 +65,7 @@ A questo punto il tuo server dovrebbe rispondere alle richieste che utilizzano q
 
 L'attivazione dei log di avvio (*boot log*) Windows può essere utile per la diagnostica di errori sul server.
 
-Accedi al tuo server tramite una sessione "Remote Desktop" (desktop remoto) o [KVM](/pages/cloud/dedicated/using_ipmi_on_dedicated_servers#utilizza-kvm-sul-tuo-browser-web-solo-per-i-server-piu-recenti). Apri il menu Start di Windows e clicca su `Esegui`{.action}.
+Accedi al tuo server tramite una sessione "Remote Desktop" (desktop remoto) o [KVM](/pages/bare_metal_cloud/dedicated_servers/using_ipmi_on_dedicated_servers#utilizza-kvm-sul-tuo-browser-web-solo-per-i-server-piu-recenti). Apri il menu Start di Windows e clicca su `Esegui`{.action}.
 
 ![Bootlog](images/windowsboot1.png){.thumbnail}
 

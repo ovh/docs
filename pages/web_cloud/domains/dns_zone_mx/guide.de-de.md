@@ -60,7 +60,7 @@ Um zu überprüfen, ob bereits MX-Einträge vorhanden sind, wählen Sie mithilfe
 
 Um Einträge hinzuzufügen, klicken Sie rechts auf `Eintrag hinzufügen`{.action} und wählen Sie dann `MX`{.action} aus. Tragen Sie die angeforderten Informationen für die ausgewählte E-Mail-Lösung ein:
 
-- **OVHcloud E-Mail-Lösung**: Lesen Sie in dieser Anleitung „[Schritt 2: OVHcloud MX-Konfiguration kennenlernen](/pages/web/domains/dns_zone_mx#schritt-2-ovh-mx-konfiguration-kennenlernen){.external}“.
+- **OVHcloud E-Mail-Lösung**: Lesen Sie in dieser Anleitung „[Schritt 2: OVHcloud MX-Konfiguration kennenlernen](/pages/web_cloud/domains/dns_zone_mx#schritt-2-ovh-mx-konfiguration-kennenlernen){.external}“.
 
 - **E-Mail-Lösung eines anderen Anbieters**: Informieren Sie sich über die MX-Konfiguration beim Anbieter Ihres E-Mail-Dienstes.
 

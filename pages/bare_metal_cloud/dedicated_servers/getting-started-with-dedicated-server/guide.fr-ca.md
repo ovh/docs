@@ -1,7 +1,7 @@
 ---
 title: 'Premiers pas avec un serveur dédié'
 excerpt: 'Découvrez comment prendre en main votre nouveau serveur dédié'
-updated: 2023-08-24
+updated: 2023-09-11
 ---
 
 ## Objectif
@@ -14,7 +14,7 @@ Un serveur dédié est un serveur physique situé dans l'un de nos datacenters. 
 
 ## Prérequis
 
-- Disposer d'un [serveur dédié](https://www.ovhcloud.com/fr-ca/bare-metal/){.external} dans votre espace client OVHcloud.
+- Disposer d'un [serveur dédié](https://www.ovhcloud.com/fr-ca/bare-metal/) dans votre espace client OVHcloud.
 - Être connecté à votre serveur en SSH (accès root) sous Linux ou via un bureau distant sous Windows.
 - Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
 
@@ -30,7 +30,7 @@ Lorsque votre serveur dédié est configuré pour la première fois au cours du 
 
 Vous pouvez facilement réinstaller votre serveur et choisir une autre image d'OS dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc). Sous l'onglet `Informations générales`{.action}, cliquez sur `...`{.action} en face du système d'exploitation, puis cliquez sur `Installer`{.action}.
 
-![Bouton Réinstaller](images/reinstalling-your-server-00.png){.thumbnail}
+![Bouton Réinstaller](images/reinstalling-your-server-01.png){.thumbnail}
 
 Dans la fenêtre qui apparaît, sélectionnez l'une des options d'installation :
 
@@ -42,7 +42,7 @@ Dans la fenêtre qui apparaît, sélectionnez l'une des options d'installation :
 >
 > Certains systèmes d'exploitation ou plates-formes propriétaires tels que Plesk ou Windows nécessitent des licences qui génèrent des frais supplémentaires. Vous pouvez acheter des licences [auprès de OVHcloud](https://www.ovhcloud.com/fr-ca/bare-metal/os/) ou auprès d'un revendeur externe. Vous devrez ensuite appliquer votre licence, dans le système d'exploitation lui-même ou à l'aide de votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
 >
-Vous pouvez gérer toutes vos licences dans la section `Bare Metal Cloud`{.action} sous `Licences`{.action}. Dans cette section, vous pouvez également commander des licences ou ajouter des licences existantes via le bouton `Actions`{.action}.
+> Vous pouvez gérer toutes vos licences dans la section `Bare Metal Cloud`{.action} sous `Licences`{.action}. Dans cette section, vous pouvez également commander des licences ou ajouter des licences existantes via le bouton `Actions`{.action}.
 >
 
 Cliquez sur `Suivant`{.action} pour continuer.
@@ -55,7 +55,7 @@ Après avoir choisi `Installer à partir d'un template OVHcloud`{.action}, vous 
 
 Si vous devez modifier le schéma de partitionnement de votre système d'exploitation, cochez la case « Personnaliser la configuration des partitions » avant de cliquer sur `Suivant`{.action}.
 
-![Personnaliser la configuration des partitions](images/SSH_02.png){.thumbnail}
+![Personnaliser la configuration des partitions](images/reinstalling-your-server-04.png){.thumbnail}
 
 Une fois les ajustements terminés, cliquez sur `Suivant`{.action} pour accéder à la page de résumé.
 
@@ -63,23 +63,23 @@ Une fois les ajustements terminés, cliquez sur `Suivant`{.action} pour accéder
 
 Si vous installez un système d'exploitation GNU/Linux, vous pouvez ajouter votre clé SSH à la dernière étape du processus d'installation.
 
-![Personnaliser la configuration de la partition](images/SSH_03.png){.thumbnail}
+![configuration SSH](images/SSH_01.png){.thumbnail}
 
 Si une clé SSH est déjà enregistrée, elle apparaît dans le menu déroulant sous « Clés SSH » en bas. Sinon, vous devrez d'abord en ajouter une dans la section « Mes services ».
 
 Pour ce faire, ouvrez la barre latérale en cliquant sur votre nom dans le coin supérieur droit et utilisez le raccourci `Produits et services`{.action}.
 
-![Personnaliser la configuration de la partition](images/SSH_keys_panel_2022.png){.thumbnail}
+![configuration SSH](images/SSH_02.png){.thumbnail}
 
 Dans « Mes services », basculez vers l'onglet `Clés SSH`{.action} et cliquez sur `Ajouter une clé SSH`{.action}.
 
-![Personnaliser la configuration de la partition](images/SSH_14.png){.thumbnail}
+![configuration SSH](images/SSH_03.png){.thumbnail}
 
 Comme il s'agit de l'installation d'un serveur dédié, veillez à sélectionner « Dédié » dans le menu déroulant (compatible avec un VPS également).
 
 Dans la nouvelle fenêtre, entrez un ID (nom de votre choix) et la clé elle-même (de type RSA, ECDSA ou Ed25519) dans les champs correspondants.
 
-![Personnaliser la configuration de la partition](images/SSH_12.png){.thumbnail}
+![configuration SSH](images/SSH_04.png){.thumbnail}
 
 Pour obtenir une explication détaillée sur la génération de clés SSH, reportez-vous à notre [guide](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated).
 
@@ -135,7 +135,7 @@ Comme expliqué dans la section « Objectif » de ce guide, vous êtes l'adminis
 
 Si vous utilisez un serveur Windows, rendez-vous sur [ce guide](/pages/bare_metal_cloud/dedicated_servers/activate-port-firewall-soft-win).
 
-### Monitoring OVHcloud  <a name="monitoring-server"></a>
+### Monitoring OVHcloud <a name="monitoring-server"></a>
 
 Vous pouvez activer ou désactiver le monitoring d'un serveur dédié à partir de l'onglet `Informations générales`{.action} de votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc). L'option se situe dans la section `État des services`.
 
@@ -149,6 +149,8 @@ Cliquez sur le bouton `Configurer`{.action}. Dans la fenêtre qui apparaît, vou
 
 ![Monitoring](images/monitoring-your-server2.png){.thumbnail}
 
+Cliquez sur `Confirmer`{.action} pour mettre à jour votre configuration du monitoring.
+
 Vous trouverez plus d'informations sur le monitoring OVHcloud dans [ce guide](/pages/bare_metal_cloud/dedicated_servers/network_ip_monitoring).
 
 ### Configuration réseau
@@ -159,7 +161,7 @@ Le mode bridge est l'action entreprise par l'équipement réseau pour créer un 
 
 Il s'agit d'une configuration qui est le plus souvent utilisée dans le cadre de la virtualisation pour permettre à chaque machine virtuelle d’avoir sa propre adresse IP publique.
 
-Pour plus d'informations sur le mode bridge, reportez-vous à notre guide: [Mode bridge IP](/pages/bare_metal_cloud/dedicated_servers/network_bridging).
+Pour plus d'informations sur le mode bridge, reportez-vous à notre guide : [Mode bridge IP](/pages/bare_metal_cloud/dedicated_servers/network_bridging).
 
 #### Alias IP
 
@@ -197,4 +199,4 @@ Pour activer et utiliser l'option Backup Storage, consultez [ce guide](/pages/ba
 
 Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr-ca/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
-Rejoignez notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

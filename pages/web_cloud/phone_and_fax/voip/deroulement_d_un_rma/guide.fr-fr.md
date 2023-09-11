@@ -1,9 +1,6 @@
 ---
 title: 'Déroulement d’un RMA'
 excerpt: 'Découvrez les étapes de restitution d’un téléphone fourni par OVHcloud'
-legacy_guide_number: '7536653'
-space_key: CRTEL
-space_name: Téléphonie
 updated: 2023-01-04
 ---
 

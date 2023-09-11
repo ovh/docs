@@ -114,7 +114,7 @@ Istnieje kilka sposobów definiowania i modyfikowania parametrów, które zmieni
 
 > [!warning]
 >
-> Przed przejściem przez kolejne etapy, należy przekierować protokół HTTP na HTTPS. W tym celu postępuj zgodnie z instrukcjami zawartymi w naszym przewodniku ["Aktywacja protokołu HTTPS na stronie WWW za pomocą certyfikatu SSL"](/pages/web/hosting/ssl-activate-https-website#etap-1-aktywacja-certyfikatu-ssl-na-hostingu).
+> Przed przejściem przez kolejne etapy, należy przekierować protokół HTTP na HTTPS. W tym celu postępuj zgodnie z instrukcjami zawartymi w naszym przewodniku ["Aktywacja protokołu HTTPS na stronie WWW za pomocą certyfikatu SSL"](/pages/web_cloud/web_hosting/ssl-activate-https-website#etap-1-aktywacja-certyfikatu-ssl-na-hostingu).
 
 ### Nie wyświetlaj katalogów i podkatalogów
 

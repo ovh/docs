@@ -1,7 +1,6 @@
 ---
 title: 'Crear, lanzar y eliminar imágenes en Horizon'
 excerpt: 'Crear, lanzar y eliminar imágenes en Horizon'
-legacy_guide_number: g1784
 updated: 2021-12-30
 ---
 

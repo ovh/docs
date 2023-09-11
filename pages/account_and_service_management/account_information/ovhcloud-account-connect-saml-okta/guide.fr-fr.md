@@ -141,7 +141,7 @@ Vous pourrez ensuite vous déconnecter de votre compte et vous reconnecter avec 
 
 ### Connexion via SSO
 
-Sur [la page d'identification OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), renseignez votre [identifiant](/pages/account/customer/ovhcloud-account-creation#quel-est-mon-identifiant-client) suivi de **/idp** sans mot de passe et cliquez sur le bouton `Connexion`{.action}.
+Sur [la page d'identification OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), renseignez votre [identifiant](/pages/account_and_service_management/account_information/ovhcloud-account-creation#quel-est-mon-identifiant-client) suivi de **/idp** sans mot de passe et cliquez sur le bouton `Connexion`{.action}.
 
 ![Connexion à la fédération OVHcloud](images/ovhcloud_federation_login_1.png){.thumbnail}
 

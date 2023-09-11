@@ -51,7 +51,7 @@ Par défaut, l'envoi de vos SMS depuis un compte OVHcloud en France se fait depu
 
 ![firstsms](images/firstsms05.png){.thumbnail}
 
-À cet effet, vous pouvez consulter [la section dédiée au choix de votre expéditeur SMS au sein du guide "Envoyer des sms depuis mon espace client".](/pages/telecom/sms/envoyer_des_sms_depuis_mon_espace_client#etape-3-choisir-votre-expediteur-sms)
+À cet effet, vous pouvez consulter [la section dédiée au choix de votre expéditeur SMS au sein du guide "Envoyer des sms depuis mon espace client".](/pages/web_cloud/messaging/sms/envoyer_des_sms_depuis_mon_espace_client#etape-3-choisir-votre-expediteur-sms)
 
 ### Étape 3 : l'envoi d'une campagne SMS
 
@@ -75,7 +75,7 @@ Composez alors votre message et choisissez entre un envoi immédiat ou planifié
 
 ![firstsms](images/firstsms08.png){.thumbnail}
 
-Pour plus d'informations sur la taille des SMS à caractère commercial ainsi que sur le format des messages, consultez notre guide dédié à [l'envoi de messages depuis l'espace client OVHcloud](/pages/telecom/sms/envoyer_des_sms_depuis_mon_espace_client#taille-des-sms-a-caractere-commercial) .
+Pour plus d'informations sur la taille des SMS à caractère commercial ainsi que sur le format des messages, consultez notre guide dédié à [l'envoi de messages depuis l'espace client OVHcloud](/pages/web_cloud/messaging/sms/envoyer_des_sms_depuis_mon_espace_client#taille-des-sms-a-caractere-commercial) .
 
 Il ne vous reste plus qu'à cliquer sur le bouton `Envoi`{.action} pour que votre campagne soit envoyée ou planifiée.
 

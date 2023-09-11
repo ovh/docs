@@ -14,7 +14,7 @@ La gestion des autorisations et mots de passe des utilisateurs du client vSphere
 ## Prérequis
 
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}
-- Disposer d'un compte utilisateur créé depuis l'espace client OVHcloud. Pour plus d'informations, consultez [ce guide](/pages/cloud/managed-bare-metal/manager-ovhcloud#utilisateurs).
+- Disposer d'un compte utilisateur créé depuis l'espace client OVHcloud. Pour plus d'informations, consultez [ce guide](/pages/bare_metal_cloud/managed_bare_metal/manager-ovhcloud#utilisateurs).
 
 ## En pratique
 

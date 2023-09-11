@@ -1,7 +1,6 @@
 ---
 title: Utilizar o VMware Update Manager
 excerpt: Utilize a ferramenta VMware para manter os seus hosts atualizados
-legacy_guide_number: g591
 updated: 2021-12-09
 ---
 

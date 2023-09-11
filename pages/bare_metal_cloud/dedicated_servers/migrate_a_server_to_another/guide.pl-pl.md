@@ -60,7 +60,7 @@ Opcja [Backup Storage](https://www.ovhcloud.com/pl/bare-metal/backup-storage/) u
 
 Możesz zezwolić na dostęp do usługi backup storage z Twojego nowego serwera. W ten sposób zyskujesz dostęp do bramki umożliwiającej transfer danych.
 
-Aby uzyskać więcej informacji, zapoznaj się z przewodnikiem dotyczącym [Korzystanie z Backup Storage na serwerze dedykowanym](/pages/cloud/dedicated/services_backup_storage#korzystanie-z-backup-storage){.external}.
+Aby uzyskać więcej informacji, zapoznaj się z przewodnikiem dotyczącym [Korzystanie z Backup Storage na serwerze dedykowanym](/pages/bare_metal_cloud/dedicated_servers/services_backup_storage#korzystanie-z-backup-storage){.external}.
 
 ### Przeniesienie adresu Additional IP (dostępnego tylko w OVHcloud i So you Start)
 

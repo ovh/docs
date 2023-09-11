@@ -37,7 +37,7 @@ Ceci implique que, avant toute résiliation, vous devez être **certain** :
 >
 > La résiliation ne peut être appliquée que si les conditions suivantes sont remplies :
 >
-> * vous êtes le « contact administrateur » du service (pour plus d'informations, consultez [ce guide](/pages/account/customer/managing_contacts#definition));
+> * vous êtes le « contact administrateur » du service (pour plus d'informations, consultez [ce guide](/pages/account_and_service_management/account_information/managing_contacts#definition));
 > * le service n'est pas en renouvellement manuel;
 > * le service n'est pas suspendu, notamment en raison d'un défaut de régularisation d'une facture.
 >
@@ -53,7 +53,7 @@ Cliquez sur le type de produit à résilier dans la liste suivante des principal
 &emsp;&emsp;[Licences](#licences)<br />
 
 [Hosted Private Cloud](#privatecloud)<br />
-&emsp;&emsp;[Hosted Private Cloud powered by VMware](#hostedprivatecloud-vmware)<br />
+&emsp;&emsp;[VMware on OVHcloud](#hostedprivatecloud-vmware)<br />
 &emsp;&emsp;[Veeam Cloud Connect](#veeamcloudconnect)<br />
 
 [Public Cloud](#publiccloud)<br />
@@ -113,9 +113,9 @@ Précisez les raisons de votre demande de résiliation puis cliquez sur `Valider
 
 ### Hosted Private Cloud <a name="privatecloud"></a>
 
-#### Hosted Private Cloud powered by VMware <a name="hostedprivatecloud-vmware"></a>
+#### VMware on OVHcloud <a name="hostedprivatecloud-vmware"></a>
 
-Pour résilier votre offre [Hosted Private Cloud powered by VMware](https://www.ovhcloud.com/fr-ca/enterprise/products/hosted-private-cloud/), suivez les instructions de ce [guide](/pages/account_and_service_management/managing_billing_payments_and_services/comment_resilier_le_private_cloud).
+Pour résilier votre offre [VMware on OVHcloud](https://www.ovhcloud.com/fr-ca/enterprise/products/hosted-private-cloud/), suivez les instructions de ce [guide](/pages/account_and_service_management/managing_billing_payments_and_services/comment_resilier_le_private_cloud).
 
 #### Veeam Cloud Connect <a name="veeamcloudconnect"></a>
 
@@ -133,7 +133,7 @@ Chaque service [Public Cloud](https://www.ovhcloud.com/fr-ca/public-cloud/) peut
 
 Le Public Cloud OVHcloud repose sur le principe du *Pay as you go* (plus de détails sur notre page d'[informations concernant le mode de facturation Public Cloud](/pages/public_cloud/compute/analyze_billing)). Vous ne payez en fin de mois que pour le temps d'utilisation effectif des ressources.
 
-Vous pouvez également [consulter votre consommation actuelle](/pages/platform/public-cloud/analyze_billing#consulter-sa-consommation-actuelle) depuis l'espace client OVHcloud et être alerté par e-mail lorsque la projection de votre consommation dépasse un certain seuil.
+Vous pouvez également [consulter votre consommation actuelle](/pages/public_cloud/compute/analyze_billing#consulter-sa-consommation-actuelle) depuis l'espace client OVHcloud et être alerté par e-mail lorsque la projection de votre consommation dépasse un certain seuil.
 
 ### Web Cloud <a name="webcloud"></a>
 
@@ -181,7 +181,7 @@ Un e-mail contenant la procédure de fermeture de votre MX Plan vous sera alors 
 
 #### Hosted Exchange <a name="hosted"></a>
 
-Pour résilier votre offre [Hosted Exchange](https://www.ovhcloud.com/fr-ca/emails/hosted-exchange/), suivez les instructions de ce [guide](/pages/web/microsoft-collaborative-solutions/manage_billing_exchange#supprimer-des-comptes).
+Pour résilier votre offre [Hosted Exchange](https://www.ovhcloud.com/fr-ca/emails/hosted-exchange/), suivez les instructions de ce [guide](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_billing_exchange#supprimer-des-comptes).
 
 ### Solutions transverses <a name="transversal"></a>
 
