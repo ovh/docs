@@ -18,7 +18,7 @@ Los módulos en 1 clic permiten instalar un sitio web fácil y rápidamente (sin
 
 ## Requisitos
 
-- Tener contratado un [plan de hosting](https://www.ovhcloud.com/es-es/web-hosting/) que incluya al menos una base de datos. Para comprobar si aún tiene bases de datos disponibles, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y acceda a la sección `Web Cloud`{.action}. En la columna izquierda, haga clic en la pestaña `Alojamientos`{.action}, seleccione el alojamiento en el que quiere instalar un «módulo en un clic» y haga clic en la pestaña `Bases de datos`{.action}.
+- Tener contratado un [plan de hosting](https://www.ovhcloud.com/es-es/web-hosting/) que incluya al menos una base de datos. Para comprobar si aún tiene bases de datos disponibles, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y acceda a la sección `Web Cloud`{.action}. En la columna izquierda, haga clic en la pestaña `Alojamientos`{.action}, seleccione el alojamiento en el que quiere instalar un "módulo en un clic" y haga clic en la pestaña `Bases de datos`{.action}.
 Haga clic en el botón `Acciones`{.action} situado sobre la tabla que aparece y que muestra las bases de datos ya creadas con su plan de hosting. Si el botón `Crear una base de datos`{.action} aparece atenuado, no queda ninguna base de datos disponible. 
 Si lo necesita, haga clic en uno de los dos botones siguientes debajo del botón `Crear una base de datos`{.action}:
 
@@ -106,7 +106,7 @@ Introduzca los datos de conexión a la base de datos.
 
 > [!warning]
 >
-Si los datos introducidos son incorrectos, la instalación no llegará a su fin. Para evitar que esto suceda, le recomendamos que pruebe primero la conexión a su base de datos.
+> Si los datos introducidos son incorrectos, la instalación no llegará a su fin. Para evitar que esto suceda, le recomendamos que pruebe primero la conexión a su base de datos.
 > 
 > Para obtener las claves de conexión a su base de datos incluida con su alojamiento web, consulte [esta guía](/pages/web_cloud/web_hosting/sql_create_database).
 >
