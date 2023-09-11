@@ -14,7 +14,12 @@ OVHcloud 1-click modules allow quick and easy website setups (without technical 
 
 ## Requirements
 
-- An [OVHcloud web hosting plan](https://www.ovhcloud.com/asia/web-hosting/) that contains at least one database in your customer account.
+- An [OVHcloud web hosting plan](https://www.ovhcloud.com/asia/web-hosting/) that contains at least one database in your customer account. To check if you have any databases available, log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia) then go to the `Web Cloud`{.action} section. In the left-hand column, click on the `Hosting plans`{.action} tab, select the hosting plan on which you want to install a 1-click module, then click on the `Databases`{.action} tab.
+Click the `Actions`{.action} button above the table that appears, listing the databases already created with your Web Hosting plan. If the `Create a database`{.action} button is grayed out, you will no longer have a database available. 
+If necessary and below the `Create a database`{.action} button, click one of the following two buttons:
+
+- `Order a database`{.action} to order a database similar to the databases listed in the table that lists the databases already created with your Web Hosting plan.
+- `Order a Web Cloud Database`{.action} to order a database server [Web Cloud Databases](https://www.ovhcloud.com/asia/web-cloud/databases/){.external}.
 - You have access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia).
 - Your web hosting uses a [compatible PHP version](/pages/web_cloud/web_hosting/configure_your_web_hosting).
 - You have [correctly configured your .ovhconfig file](/pages/web_cloud/web_hosting/configure_your_web_hosting).
@@ -79,6 +84,11 @@ Choose the domain name for your CMS, verify the target directory that will appea
 
 Once the installation is complete, you will receive an email containing the login details for your CMS administrator interface (back office). Log in to the interface to customise your website.
 
+> [!primary]
+>
+> It may take up to 15 minutes for the email to be installed and received after you click the `Install`{.action} button in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia).
+>
+
 #### Advanced installation of a 1-click module
 
 To perform this installation method, ensure that the `Installation in advanced mode`{.action} box is ticked, then click `Next`{.action}:
@@ -88,6 +98,15 @@ To perform this installation method, ensure that the `Installation in advanced m
 ##### Choose a database
 
 Enter the information required to connect to your database.
+
+> [!warning]
+>
+> If the information you enter is incorrect, the installation will not complete successfully. To avoid this, we recommend that you test the connection to your database.
+> 
+> To retrieve the login details for your database included in your Web Hosting plan, please refer to [this guide](/pages/web_cloud/web_hosting/sql_create_database).
+>
+> To retrieve the login details for a database created on a Cloud Databases Web instance, please refer to [this guide](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
+>
 
 ![Database for advanced installation](images/advanced_installation_database.png){.thumbnail}
 
@@ -118,15 +137,6 @@ The remaining information requested for the database is as follows:
 - *Password*: It was sent to you by email when the database was created. You may have modified it in the meantime.
 
 Once you have entered this information, click `Next`{.action}.
-
-> [!warning]
->
-> If the information you enter is incorrect, the installation will not complete successfully. To avoid this, we recommend that you test the connection to your database.
-> 
-> To retrieve the login details for your database included in your Web Hosting plan, please refer to [this guide](/pages/web_cloud/web_hosting/sql_create_database).
->
-> To retrieve the login details for a database created on a Cloud Databases Web instance, please refer to [this guide](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
->
 
 ##### Configure the module
 
