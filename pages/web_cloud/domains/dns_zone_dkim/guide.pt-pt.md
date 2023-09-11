@@ -788,7 +788,7 @@ Para obter o cabeçalho de um e-mail, consulte o nosso manual "[Obter o cabeçal
 
 Quando ativar pela primeira vez o DKIM no seu serviço de e-mail, é possível criar 2 seletores, cada um contendo um par de chaves. O segundo seletor serve de sucessor ao que está em curso de utilização.
 
-Para evitar tentativas de desencriptação da chave DKIM, é aconselhável alterar regularmente o par de chaves. Para isso, certifique-se de que configurou corretamente os seus 2 seletores, verificando que o primeiro está em status `inProduction`e o segundo em status `ready`. Você pode verificar este status consultando a secção [« Os vários estados do DKIM »](#dkim-status).
+Para evitar tentativas de desencriptação da chave DKIM, é aconselhável alterar regularmente o par de chaves. Para isso, certifique-se de que configurou corretamente os seus 2 seletores, verificando que o primeiro está em status `inProduction`e o segundo em status `ready`. Você pode verificar este status consultando a secção "[Os vários estados do DKIM](#dkim-status)".
 
 Clique no separador seguinte da sua oferta.
 
