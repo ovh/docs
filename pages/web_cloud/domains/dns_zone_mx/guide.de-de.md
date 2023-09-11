@@ -29,7 +29,7 @@ Der MX-Eintrag erlaubt die Verbindung eines Domainnamens mit dem Server seiner E
 
 ### Grundlegendes zur Rolle von MX-Einträgen 
 
-MX-Einträge (**M**ail **eX**change) werden verwendet, um Ihre Domain mit den empfangenden E-Mail-Servern zu verbinden, die mit Ihrem E-Mail-Dienst verbunden sind. Wir werden uns auf ein Beispiel stützen.
+MX-Einträge (**M**ail **e**Xchange) werden verwendet, um Ihre Domain mit den empfangenden E-Mail-Servern zu verbinden, die mit Ihrem E-Mail-Dienst verbunden sind. Wir werden uns auf ein Beispiel stützen.
 
 Wenn die Adresse **sender@otherdomain.ovh** eine E-Mail an **contact@mydomain.ovh** sendet, wird der Server, der die E-Mail sendet (**Outgoing mail server**):
 - **(1)** Abfrage der DNS Zone der Domain **mydomain.ovh** und Lesen der **MX** Einträge.
