@@ -1,7 +1,7 @@
 ---
 title: Konfiguracja rekordu DKIM
 excerpt: Dowiedz się, jak skonfigurować rekord DKIM w Twojej domenie i platformie e-mail OVHcloud
-updated: 2023-05-17
+updated: 2023-09-07
 ---
 
 <style>

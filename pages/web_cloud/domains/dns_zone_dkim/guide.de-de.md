@@ -1,7 +1,7 @@
 ---
 title: DKIM-Eintrag konfigurieren
 excerpt: Erfahren Sie hier, wie Sie einen DKIM-Eintrag für Domainnamen und OVHcloud E-Mail-Dienste einrichten
-updated: 2023-05-17
+updated: 2023-09-07
 ---
 
 <style>
