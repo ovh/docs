@@ -62,7 +62,7 @@ Diese MX-Einträge müssen in der DNS-Zone Ihrer Domain konfiguriert werden.
 
 ### MX-Eintrag in einer OVHcloud DNS-Zone konfigurieren
 
-Um MX-Einträge in der OVHcloud Konfiguration Ihrer Domain zu erstellen oder zu bearbeiten, loggen Sie sich in Ihrem OVHcloud [Kundencenter ein](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de). Gehen Sie in den Bereich `Domainnamen`{.action}, klicken Sie auf die betreffende Domain und anschließend in den Tab DNS `Zone`{.action}.
+Um MX-Einträge in der OVHcloud Konfiguration Ihrer Domain zu erstellen oder zu bearbeiten, loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein. Gehen Sie in den Bereich `Domainnamen`{.action}, klicken Sie auf die betreffende Domain und anschließend in den Tab DNS `Zone`{.action}.
 
 Die Tabelle zeigt die OVHcloud Konfiguration Ihrer Domain an. Jede Zeile entspricht einem DNS-Eintrag.
 
