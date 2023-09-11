@@ -846,7 +846,7 @@ Si el estado permanece rojo después de las 24 horas, compruebe el estado del se
 
 Estos son los 4 estados que tienen como resultado el icono DKIM en rojo en su área de cliente:
 
- - `WaitingRecord`: los registros DNS están pendientes de configuración o se están validando en la zona DNS del dominio. Se realiza una comprobación automática periódica para comprobar si el registro DNS está presente y se ha completado correctamente. En función de su plan, siga el **paso 5** del apartado «[Configuración completa del DKIM](#firststep) » para configurar correctamente la zona DNS del dominio.
+ - `WaitingRecord`: los registros DNS están pendientes de configuración o se están validando en la zona DNS del dominio. Se realiza una comprobación automática periódica para comprobar si el registro DNS está presente y se ha completado correctamente. En función de su plan, siga el **paso 5** del apartado "[Configuración completa del DKIM](#firststep)" para configurar correctamente la zona DNS del dominio.
  - `ready`: los registros DNS están presentes en la zona. El DKIM ya puede activarse. Para activar el selector, pulse en la sección «[Activar o cambiar un selector DKIM](#enable-switch)».
  - `deleting`: se está eliminando el DKIM. Una vez eliminado, siga la sección «[Configuración completa del DKIM](#firststep)».
  - `disabling`: se está desactivando el DKIM. Una vez hecho esto, puede activar el selector en la sección «[Activar o cambiar un selector DKIM](#enable-switch)».
