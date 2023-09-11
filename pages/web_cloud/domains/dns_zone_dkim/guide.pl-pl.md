@@ -788,7 +788,7 @@ Aby pobrać nagłówek wiadomości e-mail, zapoznaj się z naszym przewodnikiem 
 
 Po pierwszym włączeniu DKIM w Twojej usłudze e-mail możesz utworzyć 2 selektory, z których każdy zawiera parę kluczy. Drugi selektor jest następcą bieżącego selektora.
 
-Aby uniknąć prób odszyfrowania klucza DKIM, zaleca się regularne zmiany pary kluczy. Upewnij się, że skonfigurowałeś 2 selektory, sprawdzając, czy pierwszy jest w statusie `inProduction`a drugi w statusie `ready`. Możesz sprawdzić ten stan, odwołując się do sekcji ["Różne stany DKIM"] (#dkim-status).
+Aby uniknąć prób odszyfrowania klucza DKIM, zaleca się regularne zmiany pary kluczy. Upewnij się, że skonfigurowałeś 2 selektory, sprawdzając, czy pierwszy jest w statusie `inProduction`a drugi w statusie `ready`. Możesz sprawdzić ten stan, odwołując się do sekcji ["Różne stany DKIM"](#dkim-status).
 
 Kliknij na zakładkę odnoszącą się do Twojej oferty.
 
