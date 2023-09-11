@@ -849,7 +849,7 @@ Eis os 4 estados que têm por resultado o ícone DKIM a vermelho na sua Área de
  - `WaitingRecord`: os registos DNS estão a aguardar uma configuração ou em curso de validação na zona DNS do domínio. É efetuada uma verificação automática regular para verificar se o registo DNS está presente e corretamente indicado. Consoante a sua oferta, siga a **etapa 5** na secção "[Configuração completa do DKIM](#firststep)" para configurar corretamente a zona DNS do domínio em questão.
  - `ready`: os registos DNS estão presentes na zona. O DKIM pode agora ser ativado. Basta que ative o seletor recorrendo à secção "[Ativar ou alterar um seletor DKIM](#enable-switch)".
  - `deleting`: o DKIM está em curso de eliminação. Após a eliminação, deverá seguir a secção "[Configuração completa do DKIM](#firststep)".
- - `disabling`: o DKIM está em curso de desativação. Após esta operação, poderá ativar o seletor recorrendo à secção « [Ativar ou alterar um seletor DKIM](#enable-switch) ».
+ - `disabling`: o DKIM está em curso de desativação. Após esta operação, poderá ativar o seletor recorrendo à secção "[Ativar ou alterar um seletor DKIM](#enable-switch)".
  - `todo`: a tarefa foi inicializada e deverá iniciar-se. Acima das 24 horas, se o seletor ainda estiver nesse estado, convidamo-lo a abrir um [ticket junto do suporte](https://help.ovhcloud.com/csm?id=csm_cases_requests) especificando o número do seletor em causa.
 
 ## Saiba mais
