@@ -1,7 +1,6 @@
 ---
 title: 'Crear y configurar un disco adicional en una instancia'
 excerpt: 'Cómo asociar un nuevo volumen a una instancia de Public Cloud'
-legacy_guide_number: g1863
 updated: 2023-03-03
 ---
 

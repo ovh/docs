@@ -1,7 +1,6 @@
 ---
 title: 'Erstellung, Start und Löschung von Abbildern (Images) in Horizon'
 excerpt: 'Erstellung, Start und Löschung von Abbildern (Images) in Horizon'
-legacy_guide_number: g1784
 updated: 2021-12-30
 ---
 

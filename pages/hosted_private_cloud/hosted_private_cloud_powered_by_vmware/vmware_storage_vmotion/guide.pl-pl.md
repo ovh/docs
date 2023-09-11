@@ -1,7 +1,6 @@
 ---
 title: 'VMware Storage VMotion'
 excerpt: ''
-legacy_guide_number: g687
 updated: 2020-07-10
 ---
 

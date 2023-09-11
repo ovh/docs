@@ -1,7 +1,6 @@
 ---
 title: 'Korzystanie z wtyczki OVH Network'
 excerpt: 'Dowiedz się, jak korzystać z wtyczki OVH Network w usłudze Managed Bare Metal'
-legacy_guide_number: '7766560'
 updated: 2020-11-18
 ---
 

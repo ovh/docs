@@ -1,6 +1,5 @@
 ---
 title: Iniziare con la gestione dei volumi con l'API OpenStack
-legacy_guide_number: 2071
 updated: 2021-05-19
 ---
 

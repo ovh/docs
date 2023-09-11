@@ -1,7 +1,6 @@
 ---
 title: Sostituisci la tua chiave SSH in caso di perdita
 excerpt: Sostituisci la tua chiave SSH in caso di perdita
-legacy_guide_number: g2069
 updated: 2022-02-10
 ---
 

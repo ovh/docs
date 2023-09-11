@@ -1,6 +1,5 @@
 ---
 title: Configurer le firewall distribué NSX-v
-legacy_guide_number: '7766505'
 updated: 2021-12-01
 ---
 

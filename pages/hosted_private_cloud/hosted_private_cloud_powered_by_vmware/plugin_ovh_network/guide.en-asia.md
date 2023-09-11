@@ -1,7 +1,6 @@
 ---
 title: 'Using the OVHcloud Network plugin'
 excerpt: 'Find out how to use the OVHcloud Network plugin with your Hosted Private Cloud'
-legacy_guide_number: '7766560'
 updated: 2020-07-01
 ---
 

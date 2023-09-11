@@ -1,7 +1,6 @@
 ---
 title: 'Web Cloud Databases - primeira utilização'
 excerpt: 'Saiba como começar a usar e a gerir o serviço Web Cloud Databases'
-legacy_guide_number: 2216
 updated: 2023-05-31
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: 'Getting started with a dedicated server'
 excerpt: 'Find out how to proceed after the delivery of your dedicated server'
-updated: 2023-09-05
+updated: 2023-09-11
 ---
 
 ## Objective
@@ -61,7 +61,7 @@ After you have finished your adjustments, click `Next`{.action} to arrive at the
 
 #### Adding an SSH key (optional)
 
-If you are installing a GNU/Linux-based based operating system, you can add your SSH key in the last step of the installation process.
+If you are installing a GNU/Linux-based operating system, you can add your SSH key in the last step of the installation process.
 
 ![SSH key configuration](images/SSH_01.png){.thumbnail}
 

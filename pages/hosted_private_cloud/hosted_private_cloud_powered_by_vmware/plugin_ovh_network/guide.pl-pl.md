@@ -1,7 +1,6 @@
 ---
 title: 'Korzystanie z wtyczki OVHcloud Network'
 excerpt: Dowiedz się, jak korzystać z wtyczki OVHcloud Network w usłudze Private Cloud
-legacy_guide_number: '7766560'
 updated: 2020-07-01
 ---
 

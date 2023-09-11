@@ -1,7 +1,6 @@
 ---
 title: 'Sistema di fatturazione dei servizi Cloud'
 excerpt: 'Come funziona il sistema di fatturazione dei servizi Public Cloud'
-legacy_guide_number: g2031
 updated: 2022-08-29
 ---
 

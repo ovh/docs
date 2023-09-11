@@ -1,7 +1,6 @@
 ---
 title: ZMotion
 excerpt: Comprendre le mécanisme de Zmotion
-legacy_guide_number: '4161650'
 updated: 2020-07-13
 ---
 

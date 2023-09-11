@@ -1,7 +1,6 @@
 ---
 title: 'Criar e configurar um disco suplementar numa instância'
 excerpt: 'Saiba como associar um novo volume à sua instância Public Cloud'
-legacy_guide_number: g1863
 updated: 2023-03-03
 ---
 

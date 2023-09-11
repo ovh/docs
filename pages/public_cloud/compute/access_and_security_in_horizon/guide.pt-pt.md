@@ -1,7 +1,6 @@
 ---
 title: Parâmetros de acesso e de segurança no Horizon
 excerpt: Saiba como gerir e proteger o acesso às suas instâncias
-legacy_guide_number: g1774
 updated: 2021-05-26
 ---
 

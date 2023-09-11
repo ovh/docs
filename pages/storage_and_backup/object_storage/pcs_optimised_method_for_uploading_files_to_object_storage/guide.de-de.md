@@ -1,6 +1,5 @@
 ---
 title: Object Storage Swift - Upload auf Object Storage optimieren
-legacy_guide_number: g1951
 updated: 2021-10-27
 ---
 

@@ -1,6 +1,5 @@
 ---
 title: 'Envio ou receção de e-mails impossível'
-legacy_guide_number: 2117
 excerpt: "Saiba como reagir em caso de problemas de envio ou receção de e-mails na OVHcloud"
 updated: 2023-08-30
 ---

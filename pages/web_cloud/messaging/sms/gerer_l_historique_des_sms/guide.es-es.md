@@ -1,9 +1,6 @@
 ---
 title: 'Historial de envíos'
 excerpt: 'Cómo gestionar el historial de envíos de sus SMS desde una cuenta de OVHcloud'
-legacy_guide_number: '8650753'
-space_key: CRSMSFAX
-space_name: SMS
 updated: 2022-08-05
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: Utiliser le protocole SSLv3 sur Private Cloud
 excerpt: Vérifier l'état du protocole SSLv3 sur votre Private Cloud
-legacy_guide_number: '1442264'
 updated: 2019-02-15
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: 'Trasferire il backup di un’istanza tra datacenter'
 excerpt: 'Come migrare un backup da un datacenter a un altro conservando la configurazione e lo stato dell’istanza'
-legacy_guide_number: g1853
 updated: 2019-03-29
 ---
 

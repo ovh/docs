@@ -1,7 +1,6 @@
 ---
 title: 'Eliminar um datastore'
 excerpt: 'Saiba como eliminar um datastore do Private Cloud'
-legacy_guide_number: '7766789'
 updated: 2020-07-01
 ---
 

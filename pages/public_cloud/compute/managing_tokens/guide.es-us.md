@@ -1,7 +1,6 @@
 ---
 title: 'Gestión de los tokens'
 excerpt: 'Gestión de los tokens'
-legacy_guide_number: g1872
 updated: 2023-06-15
 ---
 

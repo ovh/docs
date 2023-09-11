@@ -1,7 +1,6 @@
 ---
 title: 'Objekt über eine temporäre URL teilen'
 excerpt: 'So teilen Sie ein Objekt, ohne persönliche Informationen weiterzugeben'
-legacy_guide_number: g2007
 updated: 2021-01-11
 ---
 

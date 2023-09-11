@@ -1,7 +1,6 @@
 ---
 title: Gestire il rinnovo dei servizi OVHcloud
 excerpt: Come visualizzare e amministrare il rinnovo delle tue soluzioni dallo Spazio Cliente OVHcloud
-legacy_guide_number: g1271
 updated: 2022-04-07
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: 'Iniziare a utilizzare la soluzione MX Plan'
 excerpt: 'Come eseguire le prime operazioni sul servizio MX Plan'
-legacy_guide_number: g1474
 updated: 2021-07-19
 ---
 

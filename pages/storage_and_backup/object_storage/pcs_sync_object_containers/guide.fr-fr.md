@@ -1,6 +1,5 @@
 ---
 title: Object Storage Swift - Synchroniser des conteneurs d’objets
-legacy_guide_number: 1919
 updated: 2022-11-16
 ---
 

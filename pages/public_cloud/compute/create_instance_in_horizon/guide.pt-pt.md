@@ -1,7 +1,6 @@
 ---
 title: 'Criar uma instância a partir da interface Horizon'
 excerpt: 'Saiba como criar uma instância a partir da interface Horizon'
-legacy_guide_number: g1772
 updated: 2022-08-01
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: Gerir a renovação dos serviços
 excerpt: Saiba como gerir a renovação dos seus serviços OVHcloud na sua Área de Cliente
-legacy_guide_number: g1271
 updated: 2022-04-07
 ---
 

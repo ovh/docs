@@ -1,6 +1,5 @@
 ---
 title: Shelve or pause an instance
-legacy_guide_number: 1781
 updated: 2023-06-20
 ---
 

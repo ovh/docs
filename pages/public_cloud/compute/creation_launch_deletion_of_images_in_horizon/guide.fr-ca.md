@@ -1,6 +1,5 @@
 ---
 title: Création, lancement et suppression d’images dans Horizon
-legacy_guide_number: 1784
 updated: 2021-12-30
 ---
 

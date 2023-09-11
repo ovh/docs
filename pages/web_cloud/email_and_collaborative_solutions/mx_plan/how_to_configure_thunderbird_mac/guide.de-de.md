@@ -1,6 +1,5 @@
 ---
 title: 'Konfiguration Ihrer E-Mail-Adresse mit Thunderbird für macOS'
-legacy_guide_number: 1297
 excerpt: 'Erfahren Sie hier, wie Sie Ihren Mailaccount in Thunderbird für macOS einrichten'
 updated: 2021-08-26
 ---

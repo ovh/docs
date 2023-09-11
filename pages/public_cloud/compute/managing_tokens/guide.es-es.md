@@ -1,7 +1,6 @@
 ---
 title: 'Gestión de los tokens'
 excerpt: 'Cómo utilizar los token a través de la API Keystone'
-legacy_guide_number: g1872
 updated: 2023-06-15
 ---
 

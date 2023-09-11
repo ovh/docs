@@ -1,7 +1,6 @@
 ---
 title: 'VMware Update Manager'
 excerpt: 'Dowiedz się, jak korzystać z VMware Update Manager'
-legacy_guide_number: g591
 updated: 2021-12-09
 ---
 

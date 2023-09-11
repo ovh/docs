@@ -1,7 +1,6 @@
 ---
 title: 'Crear o restaurar un servidor virtual a partir de un snapshot'
 excerpt: 'Crear o restaurar un servidor virtual a partir de un snapshot'
-legacy_guide_number: g1882
 updated: 2021-03-19
 ---
 

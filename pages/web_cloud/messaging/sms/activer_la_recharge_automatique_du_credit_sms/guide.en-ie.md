@@ -1,7 +1,6 @@
 ---
 title: 'Managing SMS credits and enabling automatic re-crediting'
 excerpt: 'Find out how to manage your OVHcloud SMS credits'
-legacy_guide_number: '16254520'
 updated: 2023-02-09
 ---
 

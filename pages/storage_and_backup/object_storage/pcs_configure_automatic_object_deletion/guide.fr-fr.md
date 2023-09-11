@@ -1,7 +1,6 @@
 ---
 title: Object Storage Swift - Configurer la suppression automatique des objets
 excerpt: 'Découvrez comment configurer la suppression automatique des fichiers après une période donnée ou à une date précise'
-legacy_guide_number: g1950
 updated: 2021-10-27
 ---
 

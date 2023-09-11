@@ -1,6 +1,5 @@
 ---
 title: Pobierz nagłówek wiadomości e-mail
-legacy_guide_number: 1365
 excerpt: Dowiedz się, jak pobrać nagłówek e-mail do klienta poczty elektronicznej
 updated: 2021-11-19
 ---

@@ -1,7 +1,7 @@
 ---
-title: 'Primeros pasos con un servidor dedicado'
+title: Primeros pasos con un servidor dedicado
 excerpt: 'Cómo empezar a utilizar un servidor dedicado'
-updated: 2023-09-05
+updated: 2023-09-11
 ---
 
 > [!primary]
@@ -18,7 +18,7 @@ Un servidor dedicado es un servidor físico situado en uno de nuestros datacente
 
 ## Requisitos
 
-- Tener un [servidor dedicado](https://www.ovhcloud.com/es/bare-metal/){.external} en el área de cliente de OVHcloud.
+- Tener un [servidor dedicado](https://www.ovhcloud.com/es/bare-metal/) en el área de cliente de OVHcloud.
 - Estar conectado al servidor por SSH (acceso root) en Linux o a través de un escritorio remoto en Windows.
 - Haber iniciado sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
 
@@ -203,4 +203,4 @@ Para activar y utilizar la opción Backup Storage, consulte [esta guía](/pages/
 
 Si necesita formación o asistencia técnica para implantar nuestras soluciones, póngase en contacto con su representante de ventas o haga clic en [este enlace](https://www.ovhcloud.com/es/professional-services/) para obtener un presupuesto y solicitar un análisis personalizado de su proyecto a nuestros expertos del equipo de Servicios Profesionales.
 
-Únase a nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

@@ -1,7 +1,6 @@
 ---
 title: Crear un contestador para su dirección de correo
 excerpt: Cómo configurar un contestador de correo
-legacy_guide_number: g2052
 hidden: true
 updated: 2021-04-20
 ---

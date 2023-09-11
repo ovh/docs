@@ -1,7 +1,7 @@
 ---
 title: Getting started with a Kimsufi, So You Start or Rise dedicated server
 excerpt: 'Find out how to proceed after the delivery of your Kimsufi, So You Start or Rise dedicated server'
-updated: 2023-09-05
+updated: 2023-09-11
 ---
 
 ## Objective
@@ -59,7 +59,7 @@ If you are installing a GNU/Linux-based operating system, you can add your SSH k
 
 ![SSH key configuration](images/SSH_01.png){.thumbnail}
 
-If you already have an SSH key registered, it will be listed in the drop-down menu under "SSH keys" at the bottom. Otherwise, you will need to add one in the "My services" section first.
+If you already have an SSH key registered, it will be listed in the drop down menu under "SSH keys" at the bottom. Otherwise, you will need to add one in the "My services" section first.
 
 To achieve this, open the sidebar navigation by clicking on your name in the top right corner and use the shortcut `Products and services`{.action}.
 
@@ -69,7 +69,7 @@ In "My services", switch to the `SSH keys`{.action} tab and click on `Add an SSH
 
 ![SSH key configuration](images/SSH_03.png){.thumbnail}
 
-As we are installing a dedicated server, make sure to select "Dedicated" from the drop-down menu (viable for a VPS as well).
+As you are installing a dedicated server, make sure to select "Dedicated" from the drop-down menu (viable for a VPS as well).
 
 In the new window, enter an ID (a name of your choice) and the key itself (of type RSA, ECDSA or Ed25519) into the respective fields.
 
@@ -129,7 +129,7 @@ As explained in the “Objective” section of this guide, you are the administr
 
 If your server runs Windows, use [this guide](/pages/bare_metal_cloud/dedicated_servers/activate-port-firewall-soft-win) instead.
 
-### OVHcloud Monitoring
+### OVHcloud Monitoring <a name="monitoring-server"></a>
 
 You can set the monitoring status for a dedicated server from the `General information`{.action} tab in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) (section **Service status**).
 
@@ -179,7 +179,7 @@ OVHcloud dedicated servers are delivered with a /64 IPv6 block. To use the addre
 
 ### Rescue mode
 
-For any kind of issue the first general troubleshooting step to take is rebooting your server into rescue mode from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie). It is important to identify server issues in this mode to exclude software-related problems before contacting our support teams.
+For any kind of issue, the first general troubleshooting step to take is rebooting your server into rescue mode from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie). It is important to identify server issues in this mode to exclude software-related problems before contacting our support teams.
 
 Please refer to the [rescue mode guide](/pages/bare_metal_cloud/dedicated_servers/rescue_mode).
 
@@ -190,7 +190,7 @@ Please refer to the [rescue mode guide](/pages/bare_metal_cloud/dedicated_server
 > Please note that this option is not available for the **Kimsufi** range.
 >
 
-OVHcloud deploys dedicated servers with an IPMI (Intelligent Platform Management Interface) console which runs in your browser or from a Java applet, and enables you to connect directly to your server even if it has no network connection. This makes it a useful tool for troubleshooting issues that may have taken your server offline.
+OVHcloud deploys all dedicated servers with an IPMI (Intelligent Platform Management Interface) console which runs in your browser or from a Java applet, and enables you to connect directly to your server even if it has no network connection. This makes it a useful tool for troubleshooting issues that may have taken your server offline.
 
 For more information, please refer to our guide: [Using the IPMI with dedicated servers](/pages/bare_metal_cloud/dedicated_servers/using_ipmi_on_dedicated_servers).
 

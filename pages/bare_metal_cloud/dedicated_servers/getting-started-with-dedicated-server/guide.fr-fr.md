@@ -1,7 +1,7 @@
 ---
 title: 'Premiers pas avec un serveur dédié'
 excerpt: 'Découvrez comment prendre en main votre nouveau serveur dédié'
-updated: 2023-09-05
+updated: 2023-09-11
 ---
 
 ## Objectif
@@ -14,7 +14,7 @@ Un serveur dédié est un serveur physique situé dans l'un de nos datacenters. 
 
 ## Prérequis
 
-- Disposer d'un [serveur dédié](https://www.ovhcloud.com/fr/bare-metal/){.external} dans votre espace client OVHcloud.
+- Disposer d'un [serveur dédié](https://www.ovhcloud.com/fr/bare-metal/) dans votre espace client OVHcloud.
 - Être connecté à votre serveur en SSH (accès root) sous Linux ou via un bureau distant sous Windows.
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 
@@ -149,6 +149,8 @@ Cliquez sur le bouton `Configurer`{.action}. Dans la fenêtre qui apparaît, vou
 
 ![Monitoring](images/monitoring-your-server2.png){.thumbnail}
 
+Cliquez sur `Confirmer`{.action} pour mettre à jour votre configuration du monitoring.
+
 Vous trouverez plus d'informations sur le monitoring OVHcloud dans [ce guide](/pages/bare_metal_cloud/dedicated_servers/network_ip_monitoring).
 
 ### Configuration réseau
@@ -159,7 +161,7 @@ Le mode bridge est l'action entreprise par l'équipement réseau pour créer un 
 
 Il s'agit d'une configuration qui est le plus souvent utilisée dans le cadre de la virtualisation pour permettre à chaque machine virtuelle d’avoir sa propre adresse IP publique.
 
-Pour plus d'informations sur le mode bridge, reportez-vous à notre guide: [Mode bridge IP](/pages/bare_metal_cloud/dedicated_servers/network_bridging).
+Pour plus d'informations sur le mode bridge, reportez-vous à notre guide : [Mode bridge IP](/pages/bare_metal_cloud/dedicated_servers/network_bridging).
 
 #### Alias IP
 
@@ -197,4 +199,4 @@ Pour activer et utiliser l'option Backup Storage, consultez [ce guide](/pages/ba
 
 Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
-Rejoignez notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

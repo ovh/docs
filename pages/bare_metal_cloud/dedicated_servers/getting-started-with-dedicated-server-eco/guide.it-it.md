@@ -1,7 +1,7 @@
 ---
 title: Iniziare a utilizzare un server dedicato Kimsufi, So You Start o Rise
 excerpt: Come eseguire le prime operazioni sul tuo nuovo server dedicato Kimsufi, So You Start o Rise
-updated: 2023-09-05
+updated: 2023-09-11
 ---
 
 > [!primary]
@@ -98,13 +98,13 @@ Utilizza questi esempi per connetterti al tuo server e sostituisci le informazio
 **Esempio con root:**
 
 ```bash
-sh ssh root@IPv4_del_tuo_server 
+ssh root@IPv4_del_tuo_server 
 ```
 
 **Esempio con un utente preconfigurato:**
 
 ```bash
-ssh root@nome_di_riferimento_del_tuo_server
+ssh ubuntu@nome_di_riferimento_del_tuo_server
 ```
 
 Per saperne di più su SSH, consulta la nostra guida [Introduzione a SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction).
@@ -133,7 +133,7 @@ Come spiegato nella parte iniziale di questa guida, in quanto amministratore del
 
 Se utilizzi un server Windows, consulta [questa guida](/pages/bare_metal_cloud/dedicated_servers/activate-port-firewall-soft-win).
 
-### Monitoraggio OVHcloud
+### Monitoraggio OVHcloud <a name="monitoring-server"></a>
 
 È possibile attivare o disattivare il monitoraggio di un server dedicato dalla scheda `Informazioni generali`{.action} dello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). L'opzione si trova nella sezione `Stato dei servizi`.
 
@@ -210,6 +210,10 @@ I server dedicati OVHcloud includono uno spazio di storage con controllo degli a
 Per attivare e utilizzare l'opzione Backup Storage, consulta [questa guida](/pages/bare_metal_cloud/dedicated_servers/services_backup_storage).
 
 ## Per saperne di più
+
+[Mettere in sicurezza un server dedicato](/pages/bare_metal_cloud/dedicated_servers/securing-a-dedicated-server)
+
+[Attivare e utilizzare il Rescue mode](/pages/bare_metal_cloud/dedicated_servers/rescue_mode)
 
 Se avete bisogno di formazione o di assistenza tecnica per implementare le nostre soluzioni, contattate il vostro rappresentante o cliccate su [questo link](https://www.ovhcloud.com/it/professional-services/) per ottenere un preventivo e richiedere un'analisi personalizzata del vostro progetto da parte dei nostri esperti del team Professional Services.
 

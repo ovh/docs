@@ -1,7 +1,6 @@
 ---
 title: 'Przełączenie instancji w tryb rescue'
 excerpt: 'Ten przewodnik zawiera informacje o przełączaniu instancji w tryb ratunkowy (rescue)'
-legacy_guide_number: g2029
 updated: 2023-01-04
 ---
 

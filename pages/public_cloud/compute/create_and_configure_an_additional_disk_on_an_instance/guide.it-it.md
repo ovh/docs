@@ -1,7 +1,6 @@
 ---
 title: 'Crea e configura un disco aggiuntivo sulla tua istanza'
 excerpt: 'Come associare un nuovo volume alla tua istanza Public Cloud'
-legacy_guide_number: g1863
 updated: 2023-03-03
 ---
 
