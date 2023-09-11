@@ -1,35 +1,26 @@
 ---
-title: Resize an instance using OpenStack
-excerpt: Find out how to resize an instance using the OpenStack CLI
-updated: 2023-08-29
+title: Resize a Public Cloud instance using the OpenStack CLI
+excerpt: Find out how to scale up your instance resources to address an increased activity
+updated: 2023-09-11
 ---
 
 ## Objective
 
-As a result of increased activity, or simply new needs, your instance may not be able to meet this new burden due to a lack of resources. However, with the Public Cloud, you can increase the resources available to your instance, and this can be done with just a steps.
+As a result of increased activity, or simply to address new needs, your instance may not be able to meet this new burden due to a lack of resources. However, with OVHcloud Public Cloud, you can increase the resources available to your instance with just a few steps.
 
-**This guide will show you how to resize your instance using the OpenStack CLI.**
+**This guide will show you how to resize your Public Cloud instance using the OpenStack CLI.**
 
-> [!warning]
+> [!primary]
+> **Limitations:**
 >
-> Only upscaling is possible for classic models.
-> In addition, this manipulation causes the instance to be shut down for the time of the operation.
->
-
-> [!warning]
->
-> Metal instances can only be resized to and from other Metal flavors.
->
-
-> [!success]
->
-> Flex instances allow resizing to higher or lower models due to a locked single disk size.
+> - Only upscaling is possible for classic models.
+> - [Metal instances](https://www.ovhcloud.com/en-gb/public-cloud/metal-instances/) can only be resized to and from other Metal flavors.
+> - *Flex* instances allow resizing to higher or lower models due to a locked single disk size.
 >
 
 ## Requirements
 
 - A [Public Cloud instance](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}
 - An [OpenStack user account](/pages/platform/public-cloud/create_and_delete_a_user)
 - An [OpenStack CLI ready environment](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api)
 - [Set OpenStack environment variables](/pages/platform/public-cloud/loading_openstack_environment_variables)
@@ -37,9 +28,14 @@ As a result of increased activity, or simply new needs, your instance may not be
 
 ## Instructions
 
+> [!warning]
+>
+> This manipulation causes the instance to be shut down for the time of the operation.
+>
+
 ### Perform a backup
 
-When performing a resize, the instance is shut down for the time of the operation. We therefore recommend that you back up your instance and stop all running processes before proceeding. For more information on how to backup your instance, consult the following [guide](/pages/platform/public-cloud/save_an_instance).
+When performing a resize, the instance is shut down for the time of the operation. We therefore recommend that you back up your instance and stop all running processes before proceeding. For more information on how to backup your instance, read the following [guide](/pages/platform/public-cloud/save_an_instance).
 
 ### Image list
 
@@ -55,7 +51,6 @@ $ openstack server list
 | 8f9a08a6-f0fe-xxxx-xxxx-xxxxxxxxxxxx | OVHcloudinstance | Debian 12    | b2-7 |        | ACTIVE | Ext-Net=111.112.113.200, 2607:5300:xxx:xxxx::9a3                                  
 +--------------------------------------+----------------------------------------------------------------+--------+----------------------------------------------+
 ```
-
 
 ### Flavor list
 
@@ -89,13 +84,13 @@ $ openstack flavor list
 
 ### Resize image
 
-Once you have retrieved the necessary information, you can now resize your instance.
+Once you have retrieved the necessary information, you can now resize your instance:
 
 ```bash
 $  openstack server resize --flavor <FLAVOR-ID> <INSTANCE-NAME>
 ```
 
-To resize our OVHcloudinstance:
+To resize our "OVHcloudinstance":
 
 ```bash
 $ openstack server resize --flavor 098889e6-d1fc-4967-baea-19fd97fd83a8 OVHcloudinstance
@@ -123,5 +118,9 @@ $ openstack server show OVHcloudinstance
 ```
 
 ## Go further
+
+[Resize a Public Cloud instance via the OVHcloud Control Panel](/pages/public_cloud/compute/resize_instance_manager)
+
+[Resize a Public Cloud instance via Horizon](/pages/public_cloud/compute/resize_of_an_instance)
 
 Join our community of users on <https://community.ovh.com/en/>.
