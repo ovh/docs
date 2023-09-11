@@ -160,7 +160,7 @@ Le mode bridge est l'action entreprise par l'équipement réseau pour créer un 
 
 Il s'agit d'une configuration qui est le plus souvent utilisée dans le cadre de la virtualisation pour permettre à chaque machine virtuelle d’avoir sa propre adresse IP publique.
 
-Pour plus d'informations sur le mode bridge, reportez-vous à notre guide: [Mode bridge IP](/pages/bare_metal_cloud/dedicated_servers/network_bridging).
+Pour plus d'informations sur le mode bridge, reportez-vous à notre guide : [Mode bridge IP](/pages/bare_metal_cloud/dedicated_servers/network_bridging).
 
 #### Alias IP
 
