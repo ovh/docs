@@ -18,7 +18,13 @@ Los módulos en 1 clic permiten instalar un sitio web fácil y rápidamente (sin
 
 ## Requisitos
 
-- Tener contratado un [plan de hosting](https://www.ovhcloud.com/es-es/web-hosting/) que incluya al menos una base de datos.
+- Tener contratado un [plan de hosting](https://www.ovhcloud.com/es-es/web-hosting/) que incluya al menos una base de datos. Para comprobar si aún tiene bases de datos disponibles, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y acceda a la sección `Web Cloud`{.action}. En la columna izquierda, haga clic en la pestaña `Alojamientos`{.action}, seleccione el alojamiento en el que quiere instalar un «módulo en un clic» y haga clic en la pestaña `Bases de datos`{.action}.
+Haga clic en el botón `Acciones`{.action} situado sobre la tabla que aparece y que muestra las bases de datos ya creadas con su plan de hosting. Si el botón `Crear una base de datos`{.action} aparece atenuado, no queda ninguna base de datos disponible. 
+Si lo necesita, haga clic en uno de los dos botones siguientes debajo del botón `Crear una base de datos`{.action}:
+
+- `Contratar una base de datos`{.action} para contratar una base de datos similar a las bases de datos que figuran en la tabla que enumera las bases de datos ya creadas con su plan de hosting.
+- `Contratar una base de datos Web Cloud Databases`{.action} para contratar un servidor de bases de datos [Web Cloud Databases](https://www.ovhcloud.com/es-es/web-cloud/databases/){.external}.
+
 - Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
 - Utilizar [una versión de PHP compatible](/pages/web_cloud/web_hosting/configure_your_web_hosting) en su alojamiento web.
 - Haber [configurado correctamente su archivo .ovhconfig](/pages/web_cloud/web_hosting/configure_your_web_hosting).
@@ -83,6 +89,11 @@ Elija el dominio de su CMS, controle el directorio de destino que aparece autom�
 
 Una vez finalizada la instalación, recibirá por correo electrónico los datos de conexión a la interfaz de administrador (*back office*) de su CMS. Conéctese a ella para personalizar su sitio web.
 
+> [!primary]
+>
+> La instalación y recepción del mensaje de correo electrónico puede tardar hasta 15 minutos a partir del momento en que haga clic en el botón `Instalar`{.action} en su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
+>
+
 #### Instalación avanzada de un "módulo en 1 clic"
 
 Para realizar este método de instalación, asegúrese de que la casilla `Instalación en modo avanzado`{.action} esté marcada y haga clic en el botón `Siguiente`{.action} :
@@ -92,6 +103,15 @@ Para realizar este método de instalación, asegúrese de que la casilla `Instal
 ##### Seleccione la base de datos
 
 Introduzca los datos de conexión a la base de datos. 
+
+> [!warning]
+>
+Si los datos introducidos son incorrectos, la instalación no llegará a su fin. Para evitar que esto suceda, le recomendamos que pruebe primero la conexión a su base de datos.
+> 
+> Para obtener las claves de conexión a su base de datos incluida con su alojamiento web, consulte [esta guía](/pages/web_cloud/web_hosting/sql_create_database).
+>
+> Para obtener las claves de conexión a la base de datos creada en una instancia de Web Cloud Databases, consulte [esta guía](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
+>
 
 ![Base de datos para instalación avanzada](images/advanced_installation_database.png){.thumbnail}
 
@@ -123,15 +143,6 @@ Para las bases de datos creadas en un plan de hosting Cloud Databases, consulte 
 - *Contraseña* : le hemos enviado un mensaje de correo electrónico al crear la base de datos. Es posible que lo haya cambiado.
 
 Una vez introducidos los datos, haga clic en el botón `Siguiente`{.action}.
-
-> [!warning]
->
-Si los datos introducidos son incorrectos, la instalación no llegará a su fin. Para evitar que esto suceda, le recomendamos que pruebe primero la conexión a su base de datos.
-> 
-> Para obtener las claves de conexión a su base de datos incluida con su alojamiento web, consulte [esta guía](/pages/web_cloud/web_hosting/sql_create_database).
->
-> Para obtener las claves de conexión a la base de datos creada en una instancia de Web Cloud Databases, consulte [esta guía](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
->
 
 ##### Configurar el módulo
 
