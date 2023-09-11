@@ -18,7 +18,12 @@ Moduły za pomocą 1 kliknięcia umożliwiają łatwą i szybką instalację str
 
 ## Wymagania początkowe
 
-- Posiadanie [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/) zawierającej co najmniej jedną bazę danych..
+- Posiadanie [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/) zawierającej co najmniej jedną bazę danych. Aby sprawdzić, czy są dostępne bazy danych, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i przejdź do sekcji `Web Cloud`{.action}. W lewej kolumnie kliknij zakładkę `Hosting`{.action}, wybierz hosting, na którym chcesz zainstalować "moduł za 1 kliknięciem", następnie kliknij zakładkę `Bazy danych`{.action}.
+Kliknij przycisk `Operacje`{.action} nad tabelą, która się wyświetli. Zawiera ona listę baz danych utworzonych wcześniej w ramach Twojej oferty hostingu. Jeśli przycisk `Tworzenie bazy danych`{.action} jest wyszarzony, nie masz już dostępnej bazy danych. 
+W razie potrzeby pod przyciskiem `Tworzenie bazy danych`{.action} kliknij jeden z dwóch następujących przycisków:
+
+- `Zamów bazę danych`{.action}, aby zamówić bazę danych podobną do baz danych zawartych w tabeli wyszczególniającej bazy danych już utworzone z Twoją ofertą hostingu.
+- `Zamów bazę danych Web Cloud Databases`{.action}, aby zamówić serwer bazy danych [Web Cloud Databases](https://www.ovhcloud.com/pl/web-cloud/databases/){.external}.
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
 - Korzystanie z [kompatybilnej wersji PHP](/pages/web_cloud/web_hosting/configure_your_web_hosting) na Twoim hostingu.
 - Posiadanie [poprawnie skonfigurowany plik .ovhconfig](/pages/web_cloud/web_hosting/configure_your_web_hosting)
@@ -83,6 +88,11 @@ Wybierz nazwę domeny Twojego CMS, sprawdź katalog docelowy, który pojawi się
 
 Po zakończeniu instalacji otrzymasz e-mail z danymi do logowania do interfejsu administratora (*back office*) Twojego CMS-a. Zaloguj się do Panelu klienta i personalizuj Twoją stronę WWW.
 
+> [!primary]
+>
+> Instalacja i odbiór e-maili mogą potrwać do 15 minut od momentu kliknięcia przycisku `Instaluj`{.action} w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+>
+
 #### Zaawansowana instalacja modułu za 1 kliknięciem
 
 Aby przeprowadzić tę metodę instalacji, upewnij się, że pole `Instalacja w trybie zaawansowanym`{.action} jest zaznaczone, następnie kliknij przycisk `Dalej`{.action}:
@@ -94,6 +104,15 @@ W celu przeprowadzenia tej instalacji upewnij się, że pole wyboru `Instalacja 
 ##### Wybierz bazę danych
 
 Wpisz dane do logowania do bazy danych.
+
+> [!warning]
+>
+> Jeśli podane informacje są nieprawidłowe, instalacja nie zostanie zakończona. Aby tego uniknąć, zachęcamy najpierw do przetestowania logowania się do bazy danych.
+> 
+> Dane do logowania do bazy danych zawartej w pakiecie hostingowym znajdziesz w [przewodniku](/pages/web_cloud/web_hosting/sql_create_database).
+>
+> Dane do logowania do bazy danych utworzonej na instancji Web Cloud Databases znajdują się w [przewodniku](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
+>
 
 ![Baza danych do instalacji zaawansowanej](images/advanced_installation_database.png){.thumbnail}
 
@@ -125,15 +144,6 @@ W przypadku baz danych utworzonych w ramach usługi Web Cloud Databases, zapozna
 - *Hasło*: otrzymasz e-mail podczas tworzenia bazy danych. Możliwe, że zmieniłeś ją w międzyczasie.
 
 Po uzupełnieniu informacji kliknij przycisk `Dalej`{.action}.
-
-> [!warning]
->
-> Jeśli podane informacje są nieprawidłowe, instalacja nie zostanie zakończona. Aby tego uniknąć, zachęcamy najpierw do przetestowania logowania się do bazy danych.
-> 
-> Dane do logowania do bazy danych zawartej w pakiecie hostingowym znajdziesz w [przewodniku](/pages/web_cloud/web_hosting/sql_create_database).
->
-> Dane do logowania do bazy danych utworzonej na instancji Web Cloud Databases znajdują się w [przewodniku](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
->
 
 ##### Konfiguracja modułu
 

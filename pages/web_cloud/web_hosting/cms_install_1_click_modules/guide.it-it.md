@@ -18,7 +18,12 @@ I "moduli in 1 click" permettono l'installazione semplice e rapida di un sito We
 
 ## Prerequisiti
 
-- Disporre di una soluzione di [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/) che includa almeno un database
+- Disporre di una soluzione di [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/) che includa almeno un database. Per verificare se sono disponibili altri database, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e clicca su `Web Cloud`{.action}. Nella colonna di sinistra, clicca sulla scheda `Hosting`{.action}, seleziona l’hosting su cui vuoi installare un "modulo in 1 click" e poi clicca sulla scheda `Database`{.action}.
+Clicca sul pulsante `Azioni`{.action} in alto nella tabella che appare per visualizzare l’elenco dei database creati con il piano di hosting Web. Se il pulsante `Crea un database`{.action} è ombreggiato, non sono disponibili altri database. 
+Se necessario, clicca su uno dei due pulsanti seguenti sotto il pulsante `Crea un database`{.action}:
+
+- `Ordinare un database`{.action} per ordinare un database simile ai database presenti nella tabella che elenca i database già creati con il piano di hosting Web.
+- `Ordinare un database Web Cloud Databases`{.action} per ordinare un server di database [Web Cloud Databases](https://www.ovhcloud.com/it/web-cloud/databases/){.external}.
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
 - Utilizzare [una versione di PHP compatibile](/pages/web_cloud/web_hosting/configure_your_web_hosting) sul tuo hosting Web.
 - Aver [configurato correttamente il file.ovhconfig](/pages/web_cloud/web_hosting/configure_your_web_hosting)
@@ -85,6 +90,11 @@ Scegli il dominio del tuo CMS, controlla la directory di destinazione che appare
 
 Una volta completata l'installazione, riceverai un'email con le informazioni di connessione all'interfaccia amministratore (*back office*) del tuo CMS. Accedi alla pagina per personalizzare il tuo sito Web.
 
+> [!primary]
+>
+> L’installazione e la ricezione dell’email possono richiedere fino a 15 minuti a partire dal momento in cui hai cliccato sul pulsante `Installa`{.action} nel tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
+>
+
 #### Installazione avanzata di un "modulo in 1 click"
 
 Assicurati che la casella `Installazione avanzata`{.action} sia selezionata e clicca su `Continua`{.action}:
@@ -94,6 +104,15 @@ Assicurati che la casella `Installazione avanzata`{.action} sia selezionata e cl
 ##### Scegli il database
 
 Inserisci le informazioni di connessione al tuo database.
+
+> [!warning]
+>
+> Se le informazioni fornite non sono corrette, l'installazione non verrà completata. Per evitare questo problema, ti consigliamo di testare la connessione al tuo database.
+> 
+> Per recuperare le credenziali di accesso al tuo database incluso nel tuo hosting Web, consulta [questa guida](/pages/web_cloud/web_hosting/sql_create_database).
+>
+> Per recuperare le credenziali di accesso al database creato su un'istanza Web Cloud Databases, consulta [questa guida](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
+>
 
 ![Database per l'installazione avanzata](images/advanced_installation_database.png){.thumbnail}
 
@@ -125,15 +144,6 @@ Per i database creati su un'offerta Web Cloud Database, consulta le informazioni
 - *Password*: ti è stato inviato via email durante la creazione del database. È possibile che tu l'abbia modificato nel frattempo.
 
 Una volta inseriti tutti i dati, clicca su `Continua`{.action}.
-
-> [!warning]
->
-> Se le informazioni fornite non sono corrette, l'installazione non verrà completata. Per evitare questo problema, ti consigliamo di testare la connessione al tuo database.
-> 
-> Per recuperare le credenziali di accesso al tuo database incluso nel tuo hosting Web, consulta [questa guida](/pages/web_cloud/web_hosting/sql_create_database).
->
-> Per recuperare le credenziali di accesso al database creato su un'istanza Web Cloud Databases, consulta [questa guida](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
->
 
 ##### Configura il modulo
 
