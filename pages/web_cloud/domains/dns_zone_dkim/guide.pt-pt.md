@@ -182,7 +182,7 @@ A ativação automática do DKIM dura entre 30 minutos e 24 horas, no máximo. P
 
 ![email](images/dkim-auto03.png){.thumbnail}
 
-Se a etiqueta `DKIM` for vermelha após 24 horas, consulte a secção [« Porque é que o DKIM não está funcional e aparece a vermelho na Área de Cliente? »](#reddkim) deste guia.
+Se a etiqueta `DKIM` for vermelha após 24 horas, consulte a secção "[Porque é que o DKIM não está funcional e aparece a vermelho na Área de Cliente?](#reddkim)" deste guia.
 
 ### Configurar o DKIM manualmente para um serviço de e-mail Exchange ou E-mail Pro da OVHcloud <a name="internal-dkim"></a>
 
