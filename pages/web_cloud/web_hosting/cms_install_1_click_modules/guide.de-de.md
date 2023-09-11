@@ -1,7 +1,7 @@
 ---
 title: "Installation Ihrer Website mit 1-Klick-Modulen (CMS)"
 excerpt: "Erfahren Sie hier, wie Sie Ihre Website mithilfe unserer 1-Klick-Module installieren"
-updated: 2023-03-28
+updated: 2023-09-11
 ---
 
 > [!primary]
@@ -18,7 +18,13 @@ updated: 2023-03-28
 
 ## Voraussetzungen
 
-- Sie verfügen über ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) mit mindestens einer Datenbank.
+- Sie verfügen über ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) mit mindestens einer Datenbank. Um zu überprüfen, ob noch Datenbanken verfügbar sind, loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf den Tab `Hosting-Pakete`{.action}, wählen Sie das Hosting aus, auf dem Sie ein „1 Klick Modul“ installieren möchten, und klicken Sie dann auf den Tab `Datenbanken`{.action}.
+Klicken Sie auf den Button `Aktionen`{.action} über der angezeigten Tabelle, die alle Datenbanken auflistet, die bereits mit Ihrem Webhosting erstellt wurden. Wenn die Schaltfläche `Datenbank erstellen`{.action} abgeblendet angezeigt wird, ist keine Datenbank mehr verfügbar. 
+Klicken Sie bei Bedarf unter der Schaltfläche `Datenbank erstellen`{.action} auf eine der folgenden beiden Schaltflächen:
+
+- `Eine Datenbank bestellen`{.action} Eine Datenbank ähnlich den Datenbanken in der Tabelle, die bereits mit Ihrem Webhosting Angebot erstellte Datenbanken auflistet, bestellen.
+- `Eine Datenbank mit der Lösung „Web Cloud Databases“ bestellen`{.action} für einen [Web Cloud Databases](https://www.ovhcloud.com/de/web-cloud/databases/){.external}-Datenbankserver.
+
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 - Sie verwenden eine [kompatible PHP-Version](/pages/web_cloud/web_hosting/configure_your_web_hosting) auf Ihrem Webhosting. 
 - Ihre [.ovhconfig-Datei ist korrekt konfiguriert](/pages/web_cloud/web_hosting/configure_your_web_hosting).
@@ -83,15 +89,29 @@ Wählen Sie den Domainnamen für Ihr CMS aus. Überprüfen Sie das Zielverzeichn
 
 Sobald die Installation abgeschlossen ist, erhalten Sie eine E-Mail mit Login-Daten. Damit können Sie sich in das Administrator-Interface (Backend) Ihres CMS einloggen.
 
+> [!primary]
+>
+> Die Installation und der Empfang der E-Mail können bis zu 15 Minuten dauern, nachdem Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) auf `Installieren`{.action} geklickt haben.
+>
+
 #### Erweiterte Installation eines Moduls
 
 Um die erweiterte Installation durchzuführen, vergewissern Sie sich, dass im Feld `Installation im Experten-Modus`{.action} ein Haken gesetzt ist, und klicken Sie anschließend auf `Weiter`{.action}:
 
 ![Erweiterte Installation eines Moduls](images/advanced_installation.png){.thumbnail}
 
-###### Datenbank auswählen
+##### Datenbank auswählen
 
 Geben Sie die Verbindungsdaten zu Ihrer Datenbank ein. 
+
+> [!warning]
+>
+> Wenn die von Ihnen angegebenen Informationen nicht korrekt sind, wird die Installation abgebrochen. Um dies zu vermeiden, testen Sie zunächst die Verbindung zu Ihrer Datenbank.
+> 
+> Um die Login-Daten zu Ihrer Webhosting-Datenbank zu erfahren, lesen Sie [diese Anleitung](/pages/web_cloud/web_hosting/sql_create_database).
+>
+> Um die Login-Daten zu einer auf Web Cloud Databases erstellten Datenbank zu erfahren, lesen Sie [diese Anleitung](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
+>
 
 ![Datenbank für erweiterte Installation](images/advanced_installation_database.png){.thumbnail}
 
@@ -122,15 +142,6 @@ Für die Datenbank sind folgende Angaben erforderlich:
 - *Passwort*: Das Passwort wurde Ihnen bei der Erstellung der Datenbank per E-Mail gesendet. Möglicherweise haben Sie es inzwischen geändert.
 
 Wenn Sie alle Informationen eingegeben haben, klicken Sie auf den Button `Weiter`{.action}.
-
-> [!warning]
->
-> Wenn die von Ihnen angegebenen Informationen nicht korrekt sind, wird die Installation abgebrochen. Um dies zu vermeiden, testen Sie zunächst die Verbindung zu Ihrer Datenbank.
-> 
-> Um die Login-Daten zu Ihrer Webhosting-Datenbank zu erfahren, lesen Sie [diese Anleitung](/pages/web_cloud/web_hosting/sql_create_database).
->
-> Um die Login-Daten zu einer auf Web Cloud Databases erstellten Datenbank zu erfahren, lesen Sie [diese Anleitung](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
->
 
 ##### Konfiguration des Moduls
 
