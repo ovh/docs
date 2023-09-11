@@ -1053,7 +1053,7 @@
             + [Tutorial - What do I do when my database is full?](web_cloud/web_hosting/sql_overquota_database)
             + [SQL Database EOS and EOL announcements](web_cloud/web_hosting/sql_eos_eol)
         + [PHP](web-cloud-hosting-php)
-            + [Web Hosting - Environment, PHP version, ".ovhconfig"](web_cloud/web_hosting/configure_php_on_your_web_hosting)
+            + [Web Hosting - Environment, PHP version, ".ovhconfig"](web_cloud/web_hosting/configure_your_web_hosting)
             + [Installing Composer on a Web Hosting plan](web_cloud/web_hosting/composer_install_composer)
             + [Enabling PHP optimisation with a Web Hosting plan](web_cloud/web_hosting/phpfpm_how_to_enable_it)
         + [Website optimisation](web-cloud-hosting-website-optimisation)
