@@ -1,7 +1,7 @@
 ---
 title: Primeros pasos con un servidor dedicado Kimsufi, So you Start o Rise
 excerpt: 'Cómo empezar a utilizar un servidor dedicado Kimsufi, So you Start o Rise'
-updated: 2023-09-05
+updated: 2023-09-11
 ---
 
 > [!primary]
@@ -104,7 +104,7 @@ ssh root@IPv4_del_servidor
 **Ejemplo de usuario preconfigurado:**
 
 ```bash
-ssh root@nombre_de_referencia_del_servidor
+ssh ubuntu@nombre_de_referencia_del_servidor
 ```
 
 Para más información sobre SSH, consulte nuestra guía [Introducción al SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction).
@@ -133,7 +133,7 @@ Como se recuerda en el apartado Objetivo de esta guía, usted es el administrado
 
 Si utiliza un servidor Windows, consulte [esta guía](/pages/bare_metal_cloud/dedicated_servers/activate-port-firewall-soft-win).
 
-### Monitorización OVHcloud
+### Monitorización OVHcloud <a name="monitoring-server"></a>
 
 Puede activar o desactivar la monitorización de un servidor dedicado desde la pestaña `Información general`{.action} de su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws). La opción se encuentra en la sección `Estado de los servicios`.
 
@@ -210,6 +210,10 @@ Los servidores dedicados de OVHcloud incluyen un espacio de almacenamiento con c
 Para activar y utilizar la opción Backup Storage, consulte [esta guía](/pages/bare_metal_cloud/dedicated_servers/services_backup_storage).
 
 ## Más información
+
+[Proteger un servidor dedicado](/pages/bare_metal_cloud/dedicated_servers/securing-a-dedicated-server)
+
+[Activar y utilizar el modo de rescate](/pages/bare_metal_cloud/dedicated_servers/rescue_mode)
 
 Si necesita formación o asistencia técnica para implantar nuestras soluciones, póngase en contacto con su representante de ventas o haga clic en [este enlace](https://www.ovhcloud.com/es/professional-services/) para obtener un presupuesto y solicitar un análisis personalizado de su proyecto a nuestros expertos del equipo de Servicios Profesionales.
 

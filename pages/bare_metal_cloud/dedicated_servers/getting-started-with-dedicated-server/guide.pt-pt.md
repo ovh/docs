@@ -1,7 +1,7 @@
 ---
 title: 'Primeiros passos com um servidor dedicado'
 excerpt: 'Saiba como utilizar o seu novo servidor dedicado'
-updated: 2023-09-05
+updated: 2023-09-11
 ---
 
 > [!primary]
@@ -18,9 +18,9 @@ Um servidor dedicado é um servidor físico situado num dos nossos datacenters. 
 
 ## Requisitos
 
-- Ter um [servidor dedicado](https://www.ovhcloud.com/pt/bare-metal/){.external}.
+- Ter um [servidor dedicado](https://www.ovhcloud.com/pt/bare-metal/).
 - Estar conectado em SSH (acesso root) em Linux ou enquanto administrador em Windows.
-- Estar ligado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 
 > [!primary]
 >
@@ -152,6 +152,8 @@ Clique no botão `Configurar`{.action}. Na janela que aparece, tem três opçõe
 - **Ativado sem intervenção proactiva**: No caso de o servidor deixar de responder, receberá uma mensagem de alerta por e-mail. Para dar início a uma intervenção, é necessário ativar a opção com intervenção proactiva.
 
 ![Monitoring](images/monitoring-your-server2.png){.thumbnail}
+
+Clique em `Confirmar`{.action} para atualizar a sua configuração de vigilância.
 
 Para mais informações sobre o sistema de monitorização, consulte [este manual](/pages/bare_metal_cloud/dedicated_servers/network_ip_monitoring).
 
