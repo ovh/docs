@@ -1,5 +1,5 @@
 ---
-title: Redimensionner une instance via l'espace client OVHcloud
+title: "Redimensionner une instance via l'espace client OVHcloud"
 excerpt: "Découvrez comment redimensionner une instance depuis l'espace client OVHcloud"
 updated: 2022-08-24
 ---
