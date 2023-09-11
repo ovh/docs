@@ -402,7 +402,7 @@ Siga os **5 passos** abaixo ao clicar em cada separador.
 >><br>
 >> > [!primary]
 >> >
->> > Aconselhamos que efetue esta operação duas vezes para cada um dos seletores anteriormente listados. O segundo seletor permitirá que você faça uma mudança de par de chaves quando for necessário. Sugerimos que consulte o nosso caso de utilização [« Como alterar o par de chaves DKIM »](#2selectors).
+>> > Aconselhamos que efetue esta operação duas vezes para cada um dos seletores anteriormente listados. O segundo seletor permitirá que você faça uma mudança de par de chaves quando for necessário. Sugerimos que consulte o nosso caso de utilização "[Como alterar o par de chaves DKIM](#2selectors)".
 >> <br>
 >> Para isso, utilize a seguinte chamada API:<br>
 >>
