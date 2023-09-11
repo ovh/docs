@@ -765,7 +765,7 @@ v=DKIM1;t=s;p= MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA77VDAIfyhjtoF0DIE5V7 
 
 Wpis CNAME to alias. Oznacza to, że wartość docelowa odnosi się do adresu URL, który sam zapewni rekord DKIM serwerowi, który będzie odpytywał rekord CNAME. Ten rodzaj rekordu CNAME, aby skonfigurować DKIM, jest często używany w przypadku korzystania z serwera e-mail Microsoft.
 
-Chodzi o rodzaj rekordu używany do aktywowania DKIM w odniesieniu do domeny zgłoszonej do oferty Exchange OVHcloud. W ten sposób dostawca Twojego rozwiązania poczty elektronicznej może zarządzać bezpieczeństwem i aktualizacją DKIM.W ten sposób dostawca Twojego rozwiązania poczty elektronicznej zarządza bezpieczeństwem i aktualizacją DKIM.
+Chodzi o rodzaj rekordu używany do aktywowania DKIM w odniesieniu do domeny zgłoszonej do oferty Exchange OVHcloud. W ten sposób dostawca Twojego rozwiązania poczty elektronicznej może zarządzać bezpieczeństwem i aktualizacją DKIM. W ten sposób dostawca Twojego rozwiązania poczty elektronicznej zarządza bezpieczeństwem i aktualizacją DKIM.
 
 ### Przetestuj DKIM <a name="test-dkim"></a>
 
