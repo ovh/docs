@@ -199,7 +199,7 @@ Kliknij kartę poniżej odnoszącą się do Twojej oferty.
 >>
 > **E-mail Pro**
 >>
->> W [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) w zakładce `Web Cloud`{.action} kliknij `E-maile Pro`{.action}, a następnie nazwę odpowiedniej usługi E-mail Pro. Domyślnie nazwa Twojej platformy odpowiada jej nazwie lub będzie widoczna pod przypisaną jej nazwą (patrz obrazek poniżej).
+>> W [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) w zakładce `Web Cloud`{.action} kliknij `E-mail Pro`{.action}, a następnie nazwę odpowiedniej usługi E-mail Pro. Domyślnie nazwa Twojej platformy odpowiada jej nazwie lub będzie widoczna pod przypisaną jej nazwą (patrz obrazek poniżej).
 >>
 >> ![email](images/dns-dkim-platform-emailpro.png){.thumbnail}
 
@@ -798,7 +798,7 @@ Kliknij na zakładkę odnoszącą się do Twojej oferty.
 >> 
 >> > [!API]
 >> >
->> > @api {POST} /email/exchange/{organizationName}/usługa/{exchangeService}/domena/{domainName}/dkim/{selectorName}/enable
+>> > @api {POST} /email/exchange/{organizationName}/service/{exchangeService}/domain/{domainName}/dkim/{selectorName}/enable
 >> >
 >>
 >> - `organizationName` : wprowadź nazwę platformy Exchange w formie "hosted-zz111111-1" lub "private-zz111111-1". <br>
@@ -836,7 +836,7 @@ Kliknij na poniższą zakładkę odnoszącą się do Twojej oferty, aby sprawdzi
 >>
 > **E-mail Pro**
 >>
->> W [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=pl) w zakładce `Web Cloud`{.action} kliknij `E-maile Pro`{.action}, a następnie nazwę danej usługi E-mail Pro.<br><br> W rubryce `Przypisane domeny`{.action} sprawdź kolor ikony `DKIM` po prawej stronie odpowiedniej domeny (patrz obrazek poniżej).
+>> W [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=pl) w zakładce `Web Cloud`{.action} kliknij `E-mail Pro`{.action}, a następnie nazwę danej usługi E-mail Pro.<br><br> W rubryce `Przypisane domeny`{.action} sprawdź kolor ikony `DKIM` po prawej stronie odpowiedniej domeny (patrz obrazek poniżej).
 >>
 >> ![email](obrazy/red-dkim.png){.thumbnail}
 
