@@ -6,7 +6,7 @@ updated: 2023-09-08
 
 ## Objective
 
-As explained in our [introductory documentation](/pages/manage_and_operate/observability/logs-data-platform/getting_started_introduction_to_LDP), Logs Data Platform heavily relies on [OpenSearch](https://github.com/opensearch-project/OpenSearch) to work. 
+As explained in our [introductory documentation](/pages/manage_and_operate/observability/logs_data_platform/getting_started_introduction_to_LDP), Logs Data Platform heavily relies on [OpenSearch](https://github.com/opensearch-project/OpenSearch) to work. 
 
 **This documentation will explain to you how you can use third-party software that integrate with OpenSearch.**
 
@@ -24,7 +24,7 @@ When attached to *streams*, an *alias* allows you to expose the content of your 
 
 #### Logs ingestion
 
-If you want to ingest logs to a *stream* using the OpenSearch API, we have a mutualized input that works as a special *alias* that is pre-configured for this purpose and accessible to any Logs Data Platform user. You can follow [this documentation](/pages/manage_and_operate/observability/logs-data-platform/ingestion_opensearch_api_mutualized_input) to use it. This specific *alias* is write-only instead of read-only.
+If you want to ingest logs to a *stream* using the OpenSearch API, we have a mutualized input that works as a special *alias* that is pre-configured for this purpose and accessible to any Logs Data Platform user. You can follow [this documentation](/pages/manage_and_operate/observability/logs_data_platform/ingestion_opensearch_api_mutualized_input) to use it. This specific *alias* is write-only instead of read-only.
 
 #### Creating an alias
 
@@ -64,22 +64,22 @@ To connect to your alias as if it were an OpenSearch index, third-party tools us
 
 We currently have specific documentation illustrating the usage of *aliases* in three cases:
 
-- Using our managed OpenSearch Dashboards instances to visualize logs: [here](/pages/manage_and_operate/observability/logs-data-platform/visualization_opensearch_dashboards).
-- Using Grafana to visualize logs: [here](/pages/manage_and_operate/observability/logs-data-platform/visualization_grafana).
-- Using ElastAlert to set up alerting on logs: [here](/pages/manage_and_operate/observability/logs-data-platform/alerting_elastalert).
+- Using our managed OpenSearch Dashboards instances to visualize logs: [here](/pages/manage_and_operate/observability/logs_data_platform/visualization_opensearch_dashboards).
+- Using Grafana to visualize logs: [here](/pages/manage_and_operate/observability/logs_data_platform/visualization_grafana).
+- Using ElastAlert to set up alerting on logs: [here](/pages/manage_and_operate/observability/logs_data_platform/alerting_elastalert).
 
 ### Alias for OpenSearch *indices* 
 
-If you use a single [managed OpenSearch index as a service](/pages/manage_and_operate/observability/logs-data-platform/opensearch_index), the configuration of any third-party software is straightforward. However, as mentioned above, you can also attach multiple *indices* to an *alias*. In that case, the creation of an *alias* and configuration of your third-party software follow the same steps as described above.
+If you use a single [managed OpenSearch index as a service](/pages/manage_and_operate/observability/logs_data_platform/opensearch_index), the configuration of any third-party software is straightforward. However, as mentioned above, you can also attach multiple *indices* to an *alias*. In that case, the creation of an *alias* and configuration of your third-party software follow the same steps as described above.
 
 ### Alias access management
 
-Like most features of Logs Data Platform, aliases can be shared with other Logs Data Platform users, using [this documentation](/pages/manage_and_operate/observability/logs-data-platform/getting_started_roles_permission). Due to their nature, they can only be shared in read-only mode.
+Like most features of Logs Data Platform, aliases can be shared with other Logs Data Platform users, using [this documentation](/pages/manage_and_operate/observability/logs_data_platform/getting_started_roles_permission). Due to their nature, they can only be shared in read-only mode.
 
 ## Go further
 
-- [Introduction to Logs Data Platform](/pages/manage_and_operate/observability/logs-data-platform/getting_started_introduction_to_LDP)
-- [Getting Started with Logs Data Platform](/pages/manage_and_operate/observability/logs-data-platform/getting_started_quick_start)
+- [Introduction to Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_introduction_to_LDP)
+- [Getting Started with Logs Data Platform](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start)
 - [Our documentation](/products/public-cloud-data-platforms-logs-data-platform)
 - Community hub: [https://community.ovh.com](https://community.ovh.com/en/c/Platform/data-platforms){.external}
 - Create an account: [Try it!](https://www.ovh.com/fr/order/express/#/express/review?products=~(~(planCode~'logs-account~productId~'logs))){.external}
