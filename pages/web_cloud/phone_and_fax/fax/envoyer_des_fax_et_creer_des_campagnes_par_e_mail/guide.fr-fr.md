@@ -1,7 +1,6 @@
 ---
 title: Envoyer des fax par e-mail
 excerpt: Découvrez comment envoyer des fax ou des campagnes de fax par e-mail
-legacy_guide_number: '8355851'
 updated: 2022-06-23
 ---
 

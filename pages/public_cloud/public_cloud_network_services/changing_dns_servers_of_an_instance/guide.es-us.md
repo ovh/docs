@@ -1,7 +1,6 @@
 ---
 title: 'Cambiar los servidores DNS de una instancia'
 excerpt: 'Cambiar los servidores DNS por defecto de una instancia Public Cloud'
-legacy_guide_number: 1985
 updated: 2021-10-29
 ---
 

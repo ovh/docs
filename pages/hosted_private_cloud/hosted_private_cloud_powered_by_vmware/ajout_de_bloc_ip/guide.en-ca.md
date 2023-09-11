@@ -1,7 +1,6 @@
 ---
 title: Adding an IP block
 excerpt: Find out how to order an IP block on your Private Cloud
-legacy_guide_number: '7766457'
 updated: 2022-04-06
 ---
 

@@ -1,6 +1,5 @@
 ---
 title: Utilizar el servicio SSL Gateway
-legacy_guide_number: 2370
 excerpt: Proteja las conexiones a su sitio web
 updated: 2022-12-01
 ---

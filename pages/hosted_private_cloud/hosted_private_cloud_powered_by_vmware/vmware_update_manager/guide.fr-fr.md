@@ -1,7 +1,6 @@
 ---
 title: VMware Update Manager
 excerpt: Utilisez l'outil de VMware pour maintenir à jour vos hôtes
-legacy_guide_number: '2163146'
 updated: 2021-12-09
 ---
 

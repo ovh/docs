@@ -1,7 +1,6 @@
 ---
 title: 'Crea/ripristina il tuo server virtuale da un backup'
 excerpt: 'Crea/ripristina il tuo server virtuale da un backup'
-legacy_guide_number: g1882
 updated: 2021-03-19
 ---
 

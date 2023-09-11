@@ -1,7 +1,6 @@
 ---
 title: "Comprendre l'interface vScope"
 excerpt: "Découvrez comment utiliser l'interface vScope pour surveiller votre infrastructure"
-legacy_guide_number: '2163183'
 updated: 2022-01-28
 ---
 

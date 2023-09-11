@@ -1,7 +1,6 @@
 ---
 title: 'Optimising your website’s performance'
 excerpt: 'Find out how to analyse latency on your website and how to improve it'
-legacy_guide_number: g1396
 updated: 2022-02-03
 ---
 

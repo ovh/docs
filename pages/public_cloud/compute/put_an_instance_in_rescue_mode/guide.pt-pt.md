@@ -1,7 +1,6 @@
 ---
 title: 'Passar uma instância em modo de rescue'
 excerpt: 'Passar uma instância em modo de rescue'
-legacy_guide_number: g2029
 updated: 2023-01-04
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: 'Zwiększenie limitów Public Cloud'
 excerpt: 'Dowiedz się, jak zwiększyć limity Public Cloud'
-legacy_guide_number: g1904
 updated: 2023-05-03
 ---
 

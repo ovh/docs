@@ -1,7 +1,6 @@
 ---
 title: Como adicionar um host ? (EN)
 excerpt: Learn how to add compute capabilities to your infrastructure
-legacy_guide_number: g605
 updated: 2022-02-01
 ---
 

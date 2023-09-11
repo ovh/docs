@@ -1,6 +1,5 @@
 ---
 title: 'Payer une commande en tant qu’administration publique'
-legacy_guide_number: g1362
 updated: 2018-05-31
 ---
 

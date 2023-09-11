@@ -1,7 +1,6 @@
 ---
 title: 'Zmiana hostname instancji Public Cloud'
 excerpt: 'Dowiedz się, jak zmienić hostname instancji Public Cloud'
-legacy_guide_number: g1928
 updated: 2018-09-18
 ---
 

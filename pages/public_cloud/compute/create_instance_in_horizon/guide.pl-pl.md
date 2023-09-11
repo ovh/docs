@@ -1,7 +1,6 @@
 ---
 title: 'Tworzenie instancji w interfejsie Horizon'
 excerpt: 'Dowiedz się, jak utworzyć instancję w interfejsie Horizon'
-legacy_guide_number: g1772
 updated: 2022-08-01
 ---
 

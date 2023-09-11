@@ -1,7 +1,6 @@
 ---
 title: 'Udostępnianie obiektu za pomocą tymczasowego adresu'
 excerpt: 'Dowiedz się, jak udostępnić obiekt bez ujawniania danych osobowych'
-legacy_guide_number: g2007
 updated: 2021-01-11
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: Conectarse a la interfaz vSphere
 excerpt: Cómo conectarse a la interfaz vSphere
-legacy_guide_number: g600
 updated: 2020-11-18
 ---
 

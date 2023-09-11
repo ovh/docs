@@ -1,6 +1,5 @@
 ---
 title: 'Delegue a gestão das suas contas de e-mail a outra pessoa'
-legacy_guide_number: 1933
 excerpt: 'Saiba como delegar a gestão das contas de e-mail da sua oferta MX Plan'
 updated: 2021-10-08
 ---

@@ -1,7 +1,6 @@
 ---
 title: Dodawanie bloku IP
 excerpt: Jak zamówić blok IP dla swojej usługi Managed Bare Metal
-legacy_guide_number: '7766457'
 updated: 2020-11-18
 ---
 

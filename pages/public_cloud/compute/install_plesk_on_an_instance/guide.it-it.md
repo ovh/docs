@@ -1,7 +1,6 @@
 ---
 title: 'Installare Plesk su un’istanza'
 excerpt: 'Come installare e configurare Plesk su un’istanza Public Cloud OVH'
-legacy_guide_number: g1998
 updated: 2018-03-26
 ---
 

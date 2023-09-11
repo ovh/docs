@@ -1,7 +1,6 @@
 ---
 title: Statistiques sur la QoS des appels
 excerpt: Statistiques sur la QoS des appels
-legacy_guide_number: g1716
 updated: 2018-03-26
 ---
 

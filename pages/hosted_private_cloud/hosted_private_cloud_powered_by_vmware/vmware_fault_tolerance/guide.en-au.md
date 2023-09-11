@@ -1,7 +1,6 @@
 ---
 title: VMware Fault Tolerance
 excerpt: Find out how to assure continuous availability of your virtual machine by using Fault Tolerance
-legacy_guide_number: '2163251'
 updated: 2020-07-07
 ---
 

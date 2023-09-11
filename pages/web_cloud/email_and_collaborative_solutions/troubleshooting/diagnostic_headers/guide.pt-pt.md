@@ -1,6 +1,5 @@
 ---
 title: "Obter o cabeçalho de um e-mail"
-legacy_guide_number: 1365
 excerpt: 'Saiba como obter um cabeçalho de e-mail no seu cliente de e-mail'
 updated: 2021-11-19
 ---

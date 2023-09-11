@@ -1,7 +1,6 @@
 ---
 title: 'Créer / restaurer un serveur virtuel a partir d’une sauvegarde'
 excerpt: 'Découvrez comment créer ou restaurer la sauvegarde d’une instance'
-legacy_guide_number: 1882
 updated: 2021-03-19
 ---
 

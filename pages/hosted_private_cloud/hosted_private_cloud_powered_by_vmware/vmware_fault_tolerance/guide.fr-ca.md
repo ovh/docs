@@ -1,7 +1,6 @@
 ---
 title: VMware Fault Tolerance
 excerpt: Assurer la continuité de votre machine virtuelle avec fault Tolerance
-legacy_guide_number: '2163251'
 updated: 2020-07-07
 ---
 

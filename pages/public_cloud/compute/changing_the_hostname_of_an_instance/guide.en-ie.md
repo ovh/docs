@@ -1,7 +1,6 @@
 ---
 title: Changing the hostname of an instance
 excerpt: Changing the hostname of an instance
-legacy_guide_number: g1928
 updated: 2018-09-18
 ---
 

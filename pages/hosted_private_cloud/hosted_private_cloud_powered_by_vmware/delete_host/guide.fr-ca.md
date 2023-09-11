@@ -1,7 +1,6 @@
 ---
 title: Supprimer un serveur hôte
 excerpt: "Découvrez comment supprimer un serveur hôte d'une infrastructure Private Cloud"
-legacy_guide_number: '1442308'
 updated: 2021-03-19
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: Spare host delivery and return
 excerpt: Find out how the replacement of a host works
-legacy_guide_number: '2883590'
 updated: 2020-06-29
 ---
 

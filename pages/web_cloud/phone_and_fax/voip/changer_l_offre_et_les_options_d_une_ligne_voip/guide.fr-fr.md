@@ -1,9 +1,6 @@
 ---
 title: 'Gérer vos services VoIP'
 excerpt: "Découvrez comment gérer vos services VoIP depuis l'espace client OVHcloud"
-legacy_guide_number: '7536704'
-space_key: CRTEL
-space_name: Téléphonie
 updated: 2022-02-15
 ---
 

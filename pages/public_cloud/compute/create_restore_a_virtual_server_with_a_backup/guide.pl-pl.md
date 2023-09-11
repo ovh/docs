@@ -1,7 +1,6 @@
 ---
 title: 'Tworzenie / przywracanie serwera wirtualnego na podstawie kopii zapasowej'
 excerpt: 'Dowiedz się, jak utworzyć lub przywrócić kopię zapasową instancji'
-legacy_guide_number: g1882
 updated: 2021-03-19
 ---
 

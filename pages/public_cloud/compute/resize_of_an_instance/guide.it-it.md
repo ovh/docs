@@ -1,7 +1,6 @@
 ---
 title: Ridimensiona un’istanza
 excerpt: Ridimensiona un'istanza con Horizon
-legacy_guide_number: g1778
 updated: 2023-05-24
 ---
 

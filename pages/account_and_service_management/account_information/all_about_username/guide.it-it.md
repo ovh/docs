@@ -1,7 +1,6 @@
 ---
 title: 'Rendere sicuro il tuo account OVHcloud e gestire i tuoi dati personali'
 excerpt: "Scopri come ottimizzare la sicurezza del tuo account OVHcloud, gestire le tue informazioni personali e delegare l'accesso al tuo account."
-legacy_guide_number: g2123
 updated: 2021-07-01
 ---
 

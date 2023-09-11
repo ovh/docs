@@ -1,9 +1,6 @@
 ---
 title: VMware HA (High Availability)
 excerpt: Zarządzanie polityką restartowania przy użyciu funkcji HA
-legacy_guide_number: '2163279'
-space_key: VS
-space_name: vSphere as a Service
 updated: 2020-04-30
 ---
 

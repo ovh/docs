@@ -1,7 +1,6 @@
 ---
 title: Zarządzanie snapshotami instancji w horizon
 excerpt: Jak zarządzać snapshotami instancji w interfejsie Horizon.
-legacy_guide_number: g1770
 updated: 2022-01-31
 ---
 

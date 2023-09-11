@@ -1,7 +1,6 @@
 ---
 title: Transferir o backup de um volume de um datacenter para outro
 excerpt: Transferir o backup de um volume de um datacenter para outro
-legacy_guide_number: g1941
 updated: 2021-01-19
 ---
 

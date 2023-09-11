@@ -1,6 +1,5 @@
 ---
 title: 'Delegowanie zarządzania kontami e-mail innej osobie'
-legacy_guide_number: 1933
 excerpt: 'Dowiedz się, jak delegować uprawnienia do zarządzania kontami e-mail w ramach usługi MX Plan'
 updated: 2021-10-08
 ---

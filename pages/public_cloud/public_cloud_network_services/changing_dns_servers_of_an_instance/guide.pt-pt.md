@@ -1,7 +1,6 @@
 ---
 title: "Modificar os servidores DNS de uma instância Public Cloud"
 excerpt: "Saiba como alterar os servidores DNS predefinidos de uma instância Public Cloud"
-legacy_guide_number: g1985
 updated: 2021-10-29
 ---
 
