@@ -1,4 +1,4 @@
----
+>---
 title: Configuring a DKIM record
 excerpt: Find out how to configure a DKIM record on your OVHcloud domain name and email platform
 updated: 2023-09-07
@@ -57,8 +57,8 @@ The DKIM (**D**omain**K**eys **I**dentified **M**ail) record allows you to sign 
     - [Why do we need to configure DNS servers?](#dns-and-dkim)
     - [Example of an email sent using DKIM](#example)
     - [What is a DKIM selector?](#selector)
-- [Configure the DKIM automatically for an OVHcloud Exchange or Email Pro solution](#auto-dkim)
-- [Configuring the DKIM manually for an Exchange email or OVHcloud Email Pro solution ](#internal-dkim)
+- [Configuring DKIM automatically for an OVHcloud Exchange or Email Pro solution](#auto-dkim)
+- [Configuring DKIM manually for an OVHcloud Exchange or OVHcloud Email Pro solution](#internal-dkim)
     - [Full DKIM configuration](#firststep)
         - [For Exchange](#confex)
         - [For Email Pro](#confemp)
@@ -139,9 +139,9 @@ The recipient **recipient@otherdomain.ovh** can decrypt this signature with the 
 
 ![email](images/dns-dkim-receive.gif){.thumbnail}
 
-### Configure the DKIM automatically for an Exchange email or OVHcloud Email Pro solution <a name="auto-dkim"></a>
+### Configuring DKIM automatically for an OVHcloud Exchange or Email Pro solution <a name="auto-dkim"></a>
 
-The automatic configuration of DKIM is accessible for email solutions [Exchange](https://www.ovhcloud.com/en-gb/emails/) and [Email Pro](https://www.ovhcloud.com/en-gb/emails/email-pro/).
+The automatic configuration of DKIM is accessible for the email solutions [Exchange](https://www.ovhcloud.com/en-gb/emails/) and [Email Pro](https://www.ovhcloud.com/en-gb/emails/email-pro/).
 
 By default, the DKIM is not activated when you add a domain name to your platform. You will need to launch the automatic configuration process via the OVHcloud Control Panel.
 
@@ -172,19 +172,19 @@ To activate the DKIM, simply click on the gray `DKIM` box, then `Confirm`{.actio
 >
 > For the domain name’s DNS zone to be automatically configured, it is necessary for it to be managed from the same OVHcloud customer account as your email platform. If you have a DNS zone managed from another OVHcloud customer account, or a domain name external to OVHcloud, you will need to enter the DNS records manually.
 >
-> To do this, you can use the **3.Retrieve the DNS record** step in the [Full DKIM configuration](#firststep) section, by following the chapter corresponding to your email solution, [Exchange](#confex) or [Email Pro](#confemp).
+> To do this, you can use the information in **3. Retrieve the DNS record** in the [Full DKIM configuration](#firststep) section, by following the chapter corresponding to your email solution, [Exchange](#confex) or [Email Pro](#confemp).
 
-The automatic activation of the DKIM lasts between 30 minutes and 24 hours maximum. To check that your DKIM is functional, simply go back to the `Associated domains`{.action} tab of your email platform and make sure that the `DKIM` box has turned green.
+The automatic activation of the DKIM takes between 30 minutes and 24 hours. To check that your DKIM is functional, simply go back to the `Associated domains`{.action} tab of your email platform and make sure that the `DKIM` box has turned green.
 
 ![email](images/dkim-auto03.png){.thumbnail}
 
-After 24 hours, if your `DKIM` box is red, please refer to the [“Why does DKIM not work and appear in red in the OVHcloud Control Panel?”](#reddkim) section of this guide.
+After 24 hours, if your `DKIM` box is red, please refer to the section [“Why does DKIM not work and appear in red in the OVHcloud Control Panel?”](#reddkim) of this guide.
 
-### Configuring the DKIM manually for an Exchange email or OVHcloud Email Pro solution <a name="internal-dkim"></a>
+### Configuring DKIM manually for an OVHcloud Exchange or OVHcloud Email Pro solution <a name="internal-dkim"></a>
 
 To configure your DKIM, you will first need to retrieve the reference for your Exchange or Email Pro platform. 
 
-Click on the tab below for your solution.
+Click on the tab below corresponding to your solution.
 
 > [!tabs]
 > **Exchange**
@@ -273,7 +273,7 @@ Follow the **5 steps** below by clicking on each tab.
 >> ```
 >> > [!primary]
 >> >
->> > If your domain name is managed in the same OVHcloud customer account as your platform, and you have ticked `autoEnableDKIM` and `configureDkim`, go directly to the [**Different DKIM states**](#dkim-status) section below to track DKIM activation.
+>> > If your domain name is managed in the same OVHcloud customer account as your platform, and you have ticked `autoEnableDKIM` and `configureDkim`, go directly to the section [**The different states of DKIM**](#dkim-status) below to track DKIM activation.
 >>
 > **3. Retrieve the DNS record**
 >> You must manually configure your domain name’s DNS zone **in the following cases**:
@@ -325,7 +325,7 @@ Follow the **5 steps** below by clicking on each tab.
 >> 
 >> Once you have entered the values, click `Next`{.action}, then `Confirm`{.action}.
 >>
->> **Repeat for the second selector if you created it.**<br>
+>> **Repeat for the second selector if you have created one.**<br>
 >>
 >> If you configure your DNS zone in a third-party interface other than OVHcloud, your CNAME record must have the following format:
 >>
@@ -365,7 +365,7 @@ Follow the **5 steps** below by clicking on each tab.
 >>
 >> > [!success]
 >> >
->> > You have now made all the changes to enable DKIM. To ensure that DKIM is enabled, please refer to the [**Different DKIM states**](#dkim-status) section of this guide to check that the `status:` value is `inProduction`. If this is the case, your DKIM is now active.<br><br> **If you have created two selectors**, the second selector should be in `status: "ready"`.
+>> > You have now made all the changes to enable DKIM. To ensure that DKIM is enabled, please refer to the section [**The different states of DKIM**](#dkim-status)  of this guide to check that the `status:` value is `inProduction`. If this is the case, your DKIM is now active.<br><br> **If you have created two selectors**, the second selector should have the `status:` value `ready`.
 >>
 
 ##### **For Email Pro** <a name="confemp"></a>
@@ -425,7 +425,7 @@ Follow the **5 steps** below by clicking on each tab.
 >> ```
 >> > [!primary]
 >> >
->> > If your domain name is managed in the same OVHcloud customer account as your platform, and you have ticked `autoEnableDKIM` and `configureDkim`, go directly to the [**Different DKIM states**](#dkim-status) section below to track DKIM activation.
+>> > If your domain name is managed in the same OVHcloud customer account as your platform, and you have ticked `autoEnableDKIM` and `configureDkim`, go directly to the [**The different states of DKIM**](#dkim-status) section below to track DKIM activation.
 >>
 > **3. Retrieve the DNS record**
 >> You must manually configure your domain name’s DNS zone **in the following cases**:
@@ -467,7 +467,7 @@ Follow the **5 steps** below by clicking on each tab.
 >> Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). In the `Web Cloud`{.action} section, click on `Domain names`{.action} in the left column and select the relevant domain name of your Email Pro platform.<br>
 >> Go to the `DNS Zone`{.action} tab, then click on `Add an entry`{.action}. In the window that appears, choose `CNAME`, then enter the information according to the values retrieved previously.<br>
 >>
->> If we take the values of the example in step **3.Retrieve the DNS record**:
+>> If we take the values of the example in step **3. Retrieve the DNS record**:
 >>
 >> - `customerRecord: "ovhemp123456-selector1._domainkey.mydomain.ovh"` is the subdomain of the CNAME record. We only keep `ovhemp123456-selector1._domainkey` because `.mydomain.ovh` is already prefilled. <br>
 >> - `targetRecord: "ovhemp123456-selector1._domainkey.1500.ab.dkim.mail.ovh.net"` is the target of the record. Add a full stop at the end to punctuate the value: `ovhemp123456-selector1._domainkey.1500.ab.dkim.mail.ovh.net.`<br>
@@ -476,7 +476,7 @@ Follow the **5 steps** below by clicking on each tab.
 >> 
 >> Once you have entered the values, click `Next`{.action}, then `Confirm`{.action}.<br>
 >>
->> **Repeat for the second selector if you created it.**<br>
+>> **Repeat for the second selector if you have created one.**<br>
 >>
 >> If you configure your DNS zone in a third-party interface other than OVHcloud, your CNAME record must have the following format:
 >>
@@ -515,7 +515,7 @@ Follow the **5 steps** below by clicking on each tab.
 >>
 >> > [!success]
 >> >
->> > You have now made all the changes to enable DKIM. To ensure that DKIM is enabled, please refer to the [**Different DKIM states**](#dkim-status) section of this guide to check that the value `status:` is `inProduction`. If this is the case, your DKIM is now active.
+>> > You have now made all the changes to enable DKIM. To ensure that DKIM is enabled, please refer to the [**The different states of DKIM**](#dkim-status) section of this guide to check that the value `status:` is `inProduction`. If this is the case, your DKIM is now active.
 >>
 
 #### The different states of DKIM <a name="dkim-status"></a>
@@ -785,7 +785,7 @@ To retrieve the header of an email, please read our guide on [Retrieving email h
 
 When you enable DKIM for the first time on your email service, you can create 2 selectors, each containing a pair of keys. The second selector acts as a successor to the one that is currently in use.
 
-To avoid attempts to decrypt the DKIM key, it is recommended that you change the key pair periodically. To do this, make sure that you have configured your 2 selectors by checking that the first one is in `inProduction`status and the second one is in `ready` status. You can check this status by referring to the [“The various DKIM states”](#dkim-status) section.
+To avoid attempts to decrypt the DKIM key, it is recommended that you change the key pair periodically. To do this, make sure that you have configured your 2 selectors by checking that the first one is in `inProduction` status and the second one is in `ready` status. You can check this status by referring to the [“The different states of DKIM”](#dkim-status) section.
 
 Click on the tab below corresponding to your solution.
 
@@ -799,9 +799,9 @@ Click on the tab below corresponding to your solution.
 >>>
 >>
 >> - `organizationName`: Enter the name of your Exchange platform, which is in the form of "hosted-zz111111-1" or "private-zz11111-1". <br>
->> - `selectorName`—Enter the name of the selector you want to switch to. <br>
+>> - `selectorName`: Enter the name of the selector you want to switch to. <br>
 >> - `exchangeService`: Enter the name of your Exchange platform, which is in the form of "hosted-zz111111-1" or "private-zz11111-1". <br>
->> - `domainName` : enter the domain name attached to your Exchange platform. <br>
+>> - `domainName`: Enter the domain name attached to your Exchange platform. <br>
 >>
 > **Email Pro**
 >> To switch to the second selector, use the following API call:
@@ -811,43 +811,43 @@ Click on the tab below corresponding to your solution.
 >> > @api {POST} /email/pro/{service}/domain/{domainName}/dkim/{selectorName}/enable
 >>>
 >>
->> - `service` : enter the name of your Email Pro platform, in the form "emailpro-zz111111-1". <br>
->> - `selectorName`—Enter the name of the selector you want to switch to. <br>
->> - `domainName` : enter the domain name attached to your Email Pro platform on which the DKIM must be present.<br>
+>> - `service`: Enter the name of your Email Pro platform, in the form "emailpro-zz111111-1". <br>
+>> - `selectorName`: Enter the name of the selector you want to switch to. <br>
+>> - `domainName`: Enter the domain name attached to your Email Pro platform on which the DKIM must be present.<br>
 >>
 
 After switching to the new selector, keep the old one for 7 days before deleting it and creating a new one.
 
 #### Why is the DKIM not functional and appears in red in the Control Panel? <a name="reddkim"></a>
 
-You will notice that your emails have not been signed by the DKIM, despite its activation or configuration. First of all, log in to your Control Panel to check the status of the DKIM.
+If you notice that your emails have not been signed by the DKIM, despite its activation or configuration, log in to your Control Panel to check the status of the DKIM.
 
-Click on the tab below corresponding to your solution, to check the status of the DKIM on your email platform.
+Click on the tab below corresponding to your solution to check the status of the DKIM on your email platform.
 
 > [!tabs]
 > **Exchange**
 >>
->> From your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/en/&ovhSubsidiary=en), in the `Web Cloud`{.action} tab, click `Microsoft`{.action} then on `Exchange`{.action}. Finally, click on the name of the Exchange service concerned.<br><br> In the `Associated domains`{.action} section, check the color of the `DKIM` icon to the right of the domain name concerned (see the image below).
+>> From your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/en/&ovhSubsidiary=en), in the `Web Cloud`{.action} tab, click `Microsoft`{.action} then on `Exchange`{.action}. Finally, click on the name of the Exchange service concerned.<br><br> In the `Associated domains`{.action} section, check the colour of the `DKIM` icon to the right of the domain name concerned (see the image below).
 >>
 >>![email](images/red-dkim.png){.thumbnail}
 >>
 > **Email Pro**
 >>
->> From your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/en/&ovhSubsidiary=en), in the `Web Cloud`{.action} tab, click `Email Pro`{.action} , then on the name of the Email Pro service concerned.<br><br> In the `Associated domains`{.action} section, check the color of the `DKIM` icon to the right of the domain name concerned (see the image below).
+>> From your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/en/&ovhSubsidiary=en), in the `Web Cloud`{.action} tab, click `Email Pro`{.action}, then on the name of the Email Pro service concerned.<br><br> In the `Associated domains`{.action} section, check the colour of the `DKIM` icon to the right of the domain name concerned (see the image below).
 >>
 >>![email](images/red-dkim.png){.thumbnail}
 
-If you have just configured the DKIM, it means that the DKIM activation has not finished, **it is advisable to wait 24 hours**.
+If you have just configured the DKIM, it means that the DKIM activation has not finished. **Wait the full 24 hours**.
 
-If the status remains red after 24 hours, check the status of the selector you have enabled. To do this, click on the “[The various DKIM statuses](#dkim-status)” section of this guide.
+If the status remains red after 24 hours, check the status of the selector you have enabled. To do this, click on the section “[The different states of DKIM](#dkim-status)” of this guide.
 
-Here are the 4 states that result in the DKIM icon in red in your Control Panel:
+Here are the 4 states that result in a red DKIM box in your Control Panel:
 
- - `WaitingRecord`: the DNS records are pending configuration or being validated in the DNS zone of the domain name. A regular automatic check is carried out to see if the DNS record is present and correctly entered. Depending on your solution, follow **step 5** in the “[Full DKIM configuration](#firststep)” section to configure the DNS zone correctly for the domain name concerned.
- - `ready`: the DNS records are present in the zone. The DKIM can now be enabled. Simply activate the selector by going to the [Enable or change a DKIM selector](#enable-switch) section.
- - `deleting`: the DKIM is being deleted. Once you have deleted it, you will need to follow the section “[Full DKIM configuration](#firststep)”.
- - `disabling`: the DKIM is being disabled. Once you have done this, you can activate the selector by going to [Activate or change a DKIM selector](#enable-switch).
- - `todo`: the task has been initialized, it must be launched. After 24 hours, if your selector is still in this state, please open a [support ticket](https://help.ovhcloud.com/csm?id=csm_cases_requests), specifying the number of the selector concerned.
+ - `WaitingRecord`: The DNS records are pending configuration or being validated in the DNS zone. A regular automatic check is carried out to see if the DNS record is present and correctly entered. Depending on your solution, follow **step 5** in the section “[Full DKIM configuration](#firststep)” to configure the DNS zone correctly for the domain name concerned.
+ - `ready`: The DNS  are present in the zone. The DKIM can now be enabled. Simply activate the selector by going to the section [Enable or change a DKIM selector](#enable-switch).
+ - `deleting`: The DKIM is being deleted. Once you have deleted it, you will need to follow the section “[Full DKIM configuration](#firststep)”.
+ - `disabling`: The DKIM is being disabled. Once you have done this, you can activate the selector by going to [Activate or change a DKIM selector](#enable-switch).
+ - `todo`: The task has been initialised, it must be launched. After 24 hours, if your selector is still in this state, please open a [support ticket](https://help.ovhcloud.com/csm?id=csm_cases_requests), specifying the number of the selector concerned.
 
 ## Go further
 
