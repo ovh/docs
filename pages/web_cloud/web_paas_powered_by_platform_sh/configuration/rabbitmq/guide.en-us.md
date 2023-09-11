@@ -86,16 +86,16 @@ You can then use the service in a configuration file of your application with so
 
 > [!tabs]      
 > Go     
->> [RabbitMQ - Go](https://github.com/ovh/docs/blob/develop/pages/web/web-paas/static/files/fetch/examples/golang/rabbitmq)  
+>> [RabbitMQ - Go](https://github.com/ovh/docs/blob/develop/pages/web_cloud/web_paas_powered_by_platform_sh/static/files/fetch/examples/golang/rabbitmq)  
 >>      
 > Java     
->> [RabbitMQ - Java](https://github.com/ovh/docs/blob/develop/pages/web/web-paas/static/files/fetch/examples/java/rabbitmq)  
+>> [RabbitMQ - Java](https://github.com/ovh/docs/blob/develop/pages/web_cloud/web_paas_powered_by_platform_sh/static/files/fetch/examples/java/rabbitmq)  
 >>      
 > PHP     
->> [RabbitMQ - PHP](https://github.com/ovh/docs/blob/develop/pages/web/web-paas/static/files/fetch/examples/php/rabbitmq)  
+>> [RabbitMQ - PHP](https://github.com/ovh/docs/blob/develop/pages/web_cloud/web_paas_powered_by_platform_sh/static/files/fetch/examples/php/rabbitmq)  
 >>     
 > Python     
->> [RabbitMQ - Python](https://github.com/ovh/docs/blob/develop/pages/web/web-paas/static/files/fetch/examples/python/rabbitmq)  
+>> [RabbitMQ - Python](https://github.com/ovh/docs/blob/develop/pages/web_cloud/web_paas_powered_by_platform_sh/static/files/fetch/examples/python/rabbitmq)  
 >>      
 
 (The specific way to inject configuration into your application will vary. Consult your application or framework's documentation.)

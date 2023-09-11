@@ -106,16 +106,16 @@ You can then use the service in a configuration file of your application with so
 
 > [!tabs]      
 > Go     
->> [PostgreSQL - Go](https://github.com/ovh/docs/blob/develop/pages/web/web-paas/static/files/fetch/examples/golang/postgresql)  
+>> [PostgreSQL - Go](https://github.com/ovh/docs/blob/develop/pages/web_cloud/web_paas_powered_by_platform_sh/static/files/fetch/examples/golang/postgresql)  
 >>      
 > Java     
->> [PostgreSQL - Java](https://github.com/ovh/docs/blob/develop/pages/web/web-paas/static/files/fetch/examples/java/postgresql)  
+>> [PostgreSQL - Java](https://github.com/ovh/docs/blob/develop/pages/web_cloud/web_paas_powered_by_platform_sh/static/files/fetch/examples/java/postgresql)  
 >>      
 > PHP     
->> [PostgreSQL - PHP](https://github.com/ovh/docs/blob/develop/pages/web/web-paas/static/files/fetch/examples/php/postgresql)  
+>> [PostgreSQL - PHP](https://github.com/ovh/docs/blob/develop/pages/web_cloud/web_paas_powered_by_platform_sh/static/files/fetch/examples/php/postgresql)  
 >>      
 > Python     
->> [PostgreSQL - Python](https://github.com/ovh/docs/blob/develop/pages/web/web-paas/static/files/fetch/examples/python/postgresql)  
+>> [PostgreSQL - Python](https://github.com/ovh/docs/blob/develop/pages/web_cloud/web_paas_powered_by_platform_sh/static/files/fetch/examples/python/postgresql)  
 >>      
 
 ## Exporting data
