@@ -264,7 +264,7 @@ Siga os **5 passos** abaixo ao clicar em cada separador.
 >> 
 >> > [!primary]
 >> > >
->> > Aconselhamos que efetue esta operação duas vezes para cada um dos seletores anteriormente listados. O segundo seletor permitirá que você faça uma mudança de par de chaves quando for necessário. **Não marque a caixa de verificação `autoEnableDKIM`{.action} quando criar o segundo seletor** para não criar um conflito com a ativação do primeiro seletor. Sugerimos que consulte o nosso caso de utilização [« Como alterar o par de chaves DKIM »](#2selectors) quando pretender migrar para o segundo seletor.
+>> > Aconselhamos que efetue esta operação duas vezes para cada um dos seletores anteriormente listados. O segundo seletor permitirá que você faça uma mudança de par de chaves quando for necessário. **Não marque a caixa de verificação `autoEnableDKIM`{.action} quando criar o segundo seletor** para não criar um conflito com a ativação do primeiro seletor. Sugerimos que consulte o nosso caso de utilização "[Como alterar o par de chaves DKIM](#2selectors)" quando pretender migrar para o segundo seletor.
 >> <br>
 >>
 >> *Exemplo de resultado:*
