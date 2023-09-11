@@ -1,7 +1,6 @@
 ---
 title: 'Pierwsze kroki z usługą MX Plan'
 excerpt: 'Dowiedz się, jak rozpocząć korzystanie z usługi MX Plan'
-legacy_guide_number: g1474
 updated: 2021-07-19
 ---
 

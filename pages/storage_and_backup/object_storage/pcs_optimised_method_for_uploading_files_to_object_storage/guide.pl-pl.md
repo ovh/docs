@@ -1,6 +1,5 @@
 ---
 title: Object Storage Swift - Optymalizacja wysyłki do Object Storage
-legacy_guide_number: g1951
 updated: 2021-10-27
 ---
 

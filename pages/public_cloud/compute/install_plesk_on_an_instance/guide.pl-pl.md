@@ -1,7 +1,6 @@
 ---
 title: 'Instalacja Pleska na instancji'
 excerpt: 'Dowiedz się, jak wdrożyć Plesk na instancji Public Cloud'
-legacy_guide_number: g1998
 updated: 2018-03-26
 ---
 

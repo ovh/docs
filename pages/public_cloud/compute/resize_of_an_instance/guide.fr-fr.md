@@ -1,7 +1,6 @@
 ---
 title: Redimensionner une instance
 excerpt: "Découvrez comment redimensionner une instance depuis l'interface Horizon"
-legacy_guide_number: 1778
 updated: 2023-05-24
 ---
 

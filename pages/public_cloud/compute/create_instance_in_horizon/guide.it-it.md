@@ -1,7 +1,6 @@
 ---
 title: 'Creare un’istanza dall’interfaccia Horizon'
 excerpt: 'Come creare un’istanza dall’interfaccia Horizon'
-legacy_guide_number: g1772
 updated: 2022-08-01
 ---
 

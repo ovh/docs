@@ -1,6 +1,5 @@
 ---
 title: Suspender ou colocar em pausa uma instância
-legacy_guide_number: g1781
 updated: 2023-06-20
 ---
 

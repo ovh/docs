@@ -1,7 +1,6 @@
 ---
 title: Modifica i server DNS di un'istanza Public Cloud
 excerpt: Come modificare i server DNS di default di un'istanza Public Cloud
-legacy_guide_number: g1985
 updated: 2021-10-29
 ---
 

@@ -1,7 +1,7 @@
 ---
 title: Iniziare a utilizzare un server dedicato
 excerpt: Come eseguire le prime operazioni sul tuo nuovo server dedicato
-updated: 2023-09-05
+updated: 2023-09-11
 ---
 
 > [!primary]
@@ -18,7 +18,7 @@ Un server dedicato è una macchina fisica localizzata in uno dei nostri datacent
 
 ## Prerequisiti
 
-- Disporre di un [server dedicato](https://www.ovhcloud.com/it/bare-metal/){.external} nello Spazio Cliente OVHcloud
+- Disporre di un [server dedicato](https://www.ovhcloud.com/it/bare-metal/) nello Spazio Cliente OVHcloud
 - Essere connesso al tuo server in SSH (accesso root) con Linux o tramite un desktop remoto con Windows
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 
@@ -49,7 +49,7 @@ Nella nuova finestra, seleziona una delle opzioni di installazione:
 > Tutte le licenze sono disponibili nella sezione `Bare Metal Cloud`{.action} con `Licenze`{.action}. In questa sezione è possibile anche ordinare licenze o aggiungere licenze esistenti tramite il pulsante `Actions`{.action}.
 >
 
-Clicca su `Avanti`{.action} per continuare
+Clicca su `Avanti`{.action} per continuare.
 
 ![Seleziona template](images/reinstalling-your-server-02.png){.thumbnail}
 
@@ -152,6 +152,8 @@ Clicca sul pulsante `Configura`{.action}. Nella nuova finestra, hai tre opzioni 
 - **Attivato senza intervento proattivo**: Riceverai un alert via email nel caso in cui il server non risponda più. Per avviare un intervento è necessario attivare l'opzione con intervento proattivo.
 
 ![Monitoring](images/monitoring-your-server2.png){.thumbnail}
+
+Clicca su `Conferma`{.action} per aggiornare la tua configurazione di sorveglianza.
 
 Per maggiori informazioni sul monitoraggio, consulta [questa guida](/pages/bare_metal_cloud/dedicated_servers/network_ip_monitoring).
 

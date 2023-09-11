@@ -1,7 +1,7 @@
 ---
 title: 'Getting started with a dedicated server'
 excerpt: 'Find out how to proceed after the delivery of your dedicated server'
-updated: 2023-09-05
+updated: 2023-09-11
 ---
 
 ## Objective
@@ -65,7 +65,7 @@ If you are installing a GNU/Linux-based operating system, you can add your SSH k
 
 ![SSH key configuration](images/SSH_01.png){.thumbnail}
 
-If you already have an SSH key registered, it will be listed in the drop-down menu under "SSH keys" at the bottom. Otherwise, you will need to add one in the "My services" section first.
+If you already have an SSH key registered, it will be listed in the drop down menu under "SSH keys" at the bottom. Otherwise, you will need to add one in the "My services" section first.
 
 To achieve this, open the sidebar navigation by clicking on your name in the top right corner and use the shortcut `Products and services`{.action}.
 

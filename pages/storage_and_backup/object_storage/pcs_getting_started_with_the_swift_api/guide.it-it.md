@@ -1,7 +1,6 @@
 ---
 title: Object Storage Swift - Come utilizzare l’API Swift
 excerpt: Come utilizzare l'API Swift
-legacy_guide_number: g1916
 updated: 2021-05-25
 ---
 

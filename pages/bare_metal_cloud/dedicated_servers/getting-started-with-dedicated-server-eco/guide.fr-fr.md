@@ -1,18 +1,18 @@
 ---
 title: 'Premiers pas avec un serveur dédié Kimsufi, So You Start ou Rise'
-excerpt: 'Découvrez comment procéder après la livraison de votre serveur dédié Kimsufi, So You Start ou Rise'
-updated: 2023-09-05
+excerpt: 'Découvrez comment prendre en main votre nouveau serveur dédié Kimsufi, So You Start ou Rise'
+updated: 2023-09-11
 ---
 
 ## Objectif
 
 Un serveur dédié est un serveur physique situé dans l'un de nos datacenters. Contrairement aux solutions d'hébergement web (décrites comme « mutualisées »), qui sont techniquement gérées par OVHcloud, vous êtes entièrement responsable de l'administration sur votre serveur dédié.
 
-**Ce guide vous accompagne lors des premières étapes de la gestion de votre serveur dédié Kimsufi, So You Start ou Rise.**
+**Découvrez comment prendre en main votre nouveau serveur dédié Kimsufi, So You Start ou Rise.**
 
 ## Prérequis
 
-- Un [serveur dédié](https://www.ovhcloud.com/fr/bare-metal/) des gammes Kimsufi, So You Start ou Rise dans votre compte OVHcloud.
+- Disposer d'un [serveur dédié](https://www.ovhcloud.com/fr/bare-metal/) des gammes Kimsufi, So You Start ou Rise dans votre espace client OVHcloud.
 - Être connecté à votre serveur en SSH (accès root) sous Linux ou via un bureau distant sous Windows.
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 
@@ -43,7 +43,7 @@ Cliquez sur `Suivant`{.action} pour continuer.
 
 ![Sélection de template](images/reinstalling-your-server-02.png){.thumbnail}
 
-Après avoir choisi `Installer à partir d'un template OVH`{.action}, vous pouvez sélectionner le système d'exploitation dans les menus déroulants.
+Après avoir choisi `Installer à partir d'un template OVHcloud`{.action}, vous pouvez sélectionner le système d'exploitation dans les menus déroulants.
 
 ![Sélection opérationnelle](images/reinstalling-your-server-03.png){.thumbnail}
 
@@ -69,7 +69,7 @@ Dans « Mes services », basculez vers l'onglet `Clés SSH`{.action} et cliquez 
 
 ![configuration SSH](images/SSH_03.png){.thumbnail}
 
-Comme il s'agit de l'installation d'un serveur dédié, veillez à sélectionner « Dédié » dans le menu déroulant (également compatible avec un VPS).
+Comme il s'agit de l'installation d'un serveur dédié, veillez à sélectionner « Dédié » dans le menu déroulant (compatible avec un VPS également).
 
 Dans la nouvelle fenêtre, entrez un ID (nom de votre choix) et la clé elle-même (de type RSA, ECDSA ou Ed25519) dans les champs correspondants.
 
@@ -78,7 +78,7 @@ Dans la nouvelle fenêtre, entrez un ID (nom de votre choix) et la clé elle-mê
 Pour obtenir une explication détaillée sur la génération de clés SSH, reportez-vous à notre [guide](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated).
 
 > [!warning]
-> OVHcloud vous fournit des services dont vous êtes responsable en ce qui concerne leur configuration et leur gestion. Vous êtes donc responsable de leur bon fonctionnement.
+>OVHcloud vous fournit des services dont vous êtes responsable en ce qui concerne leur configuration et leur gestion. Vous êtes donc responsable de leur bon fonctionnement.
 >
 >Ce guide est conçu pour vous aider le plus possible dans les tâches courantes. Néanmoins, nous vous recommandons de contacter un prestataire de services spécialisé si vous rencontrez des difficultés ou des doutes concernant l'administration, l'utilisation ou la mise en oeuvre des services sur un serveur.
 >
@@ -119,7 +119,7 @@ Un redémarrage peut être nécessaire pour appliquer des configurations mises �
 reboot
 ```
 
-Vous pouvez cependant effectuer un « hard reboot » à tout moment dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Sous l'onglet `Informations générales`{.action}, cliquez sur `...`{.action} en face de « Statut » dans la zone **Etat des services**, puis cliquez sur `Redémarrer`{.action} et `Valider`{.action} dans la fenêtre contextuelle.
+Cependant, vous pouvez effectuer un « hard reboot » à tout moment dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Sous l'onglet `Informations générales`{.action}, cliquez sur `...`{.action} en face de « Statut » dans la zone **Etat des services**, puis cliquez sur `Redémarrer`{.action} et `Valider`{.action} dans la fenêtre contextuelle.
 
 ![Redémarrage](images/rebooting-your-server.png){.thumbnail}
 
@@ -129,7 +129,7 @@ Comme expliqué dans la section « Objectif » de ce guide, vous êtes l'adminis
 
 Si vous utilisez un serveur Windows, rendez-vous sur [ce guide](/pages/bare_metal_cloud/dedicated_servers/activate-port-firewall-soft-win).
 
-### Monitoring OVHcloud
+### Monitoring OVHcloud <a name="monitoring-server"></a>
 
 Vous pouvez activer ou désactiver le monitoring d'un serveur dédié à partir de l'onglet `Informations générales`{.action} de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). L'option se situe dans la section `État des services`.
 
@@ -160,7 +160,7 @@ Le mode bridge est l'action entreprise par l'équipement réseau pour créer un 
 
 Il s'agit d'une configuration qui est le plus souvent utilisée dans le cadre de la virtualisation pour permettre à chaque machine virtuelle d’avoir sa propre adresse IP publique.
 
-Pour plus d'informations sur le mode bridge, reportez-vous à notre guide « [Mode bridge IP](/pages/bare_metal_cloud/dedicated_servers/network_bridging) ».
+Pour plus d'informations sur le mode bridge, reportez-vous à notre guide : [Mode bridge IP](/pages/bare_metal_cloud/dedicated_servers/network_bridging).
 
 #### Alias IP
 
@@ -207,6 +207,10 @@ Pour activer et utiliser l'option Backup Storage, consultez [ce guide](/pages/ba
 
 ## Allez plus loin
 
+[Sécuriser un serveur dédié](/pages/bare_metal_cloud/dedicated_servers/securing-a-dedicated-server)
+
+[Activer et utiliser le mode rescue](/pages/bare_metal_cloud/dedicated_servers/rescue_mode)
+
 Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

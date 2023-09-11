@@ -1,6 +1,5 @@
 ---
 title: Getting started with managing volumes in the OpenStack API
-legacy_guide_number: 2071
 updated: 2021-05-19
 ---
 

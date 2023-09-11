@@ -1,7 +1,6 @@
 ---
 title: "Servizio Email: come recuperare gli header di un’email"
 excerpt: "In questa guida ti mostriamo come recuperare gli header di un'email"
-legacy_guide_number: g1365
 updated: 2021-11-19
 ---
 

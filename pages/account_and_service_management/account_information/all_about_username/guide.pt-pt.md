@@ -1,7 +1,6 @@
 ---
 title: 'Proteger a minha conta OVHcloud e gerir as minhas informações pessoais'
 excerpt: 'Saiba como otimizar a segurança da sua conta OVHcloud, gerir os seus dados pessoais e delegar o acesso à sua conta.'
-legacy_guide_number: g2123
 updated: 2021-07-01
 ---
 

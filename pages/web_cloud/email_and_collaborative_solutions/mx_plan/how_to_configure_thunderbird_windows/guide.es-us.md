@@ -1,6 +1,5 @@
 ---
 title: 'Configurar una cuenta de correo electrónico en Thunderbird para Windows'
-legacy_guide_number: g1297 
 excerpt: 'Aquí encontrará la información necesaria para configurar su dirección de correo electrónico en Thunderbird'
 updated: 2021-08-26
 ---

@@ -1,7 +1,6 @@
 ---
 title: 'Usuarios de la API'
 excerpt: 'Descubra las funcionalidades de los usuarios de la API de SMS'
-legacy_guide_number: g2144
 updated: 2022-08-05
 ---
 

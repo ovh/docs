@@ -1,7 +1,6 @@
 ---
 title: 'Host-Server löschen'
 excerpt: 'Erfahren Sie hier, wie Sie einen Host-Server aus Ihrer Private Cloud entfernen'
-legacy_guide_number: '1442308'
 updated: 2021-03-19
 ---
 

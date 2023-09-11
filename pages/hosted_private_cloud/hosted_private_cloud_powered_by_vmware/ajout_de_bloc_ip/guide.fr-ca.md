@@ -1,7 +1,6 @@
 ---
 title: Ajout de bloc IP
 excerpt: Commander un bloc IP sur votre Private Cloud
-legacy_guide_number: '7766457'
 updated: 2022-04-06
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: 'Transfer an Instance backup from one datacentre to another'
 excerpt: 'This guide will show you how to transfer an Instance backup from one datacentre to another while preserving the configuration and state of the Instance'
-legacy_guide_number: g1853
 updated: 2019-03-29
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: Object Storage Swift - Gestionar el Object Storage con Cyberduck
 excerpt: 'Gestionar el Object Storage con Cyberduck'
-legacy_guide_number: g1868
 updated: 2021-06-18
 ---
 

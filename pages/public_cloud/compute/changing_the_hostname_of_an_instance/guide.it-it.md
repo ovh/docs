@@ -1,7 +1,6 @@
 ---
 title: 'Modificare l’hostname di un’istanza Public Cloud'
 excerpt: "Modifica l'hostname della tua istanza"
-legacy_guide_number: g1928
 updated: 2018-09-18
 ---
 

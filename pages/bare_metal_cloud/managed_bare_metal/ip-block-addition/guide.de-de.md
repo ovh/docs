@@ -1,7 +1,6 @@
 ---
 title: IP-Block hinzufügen
 excerpt: Erfahren Sie hier, wie Sie einen IP-Block für Ihr Managed Bare Metal Projekt bestellen
-legacy_guide_number: '7766457'
 updated: 2020-11-18
 ---
 

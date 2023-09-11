@@ -1,7 +1,6 @@
 ---
 title: Modificar su llave SSH en caso de pérdida
 excerpt: Modificar su llave SSH en caso de pérdida
-legacy_guide_number: g2069
 updated: 2022-02-10
 ---
 

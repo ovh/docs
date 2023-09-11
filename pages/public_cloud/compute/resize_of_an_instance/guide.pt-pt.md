@@ -1,7 +1,6 @@
 ---
 title: Redimensionar uma instância
 excerpt: Como redimensionar uma instância
-legacy_guide_number: g1778
 updated: 2023-05-24
 ---
 

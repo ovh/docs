@@ -1,6 +1,5 @@
 ---
 title: 'Configuring an email address on Thunderbird for macOS'
-legacy_guide_number: 1297
 excerpt: 'Find out how to configure your email address in Thunderbird'
 updated: 2021-08-26
 ---

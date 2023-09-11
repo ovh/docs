@@ -1,6 +1,5 @@
 ---
 title: 'Déléguer la gestion de vos e-mails à une autre personne'
-legacy_guide_number: 1933
 excerpt: 'Ce guide vous aidera a deleguer la gestion de vos emails a un autre identifiant OVHcloud.'
 updated: 2021-10-08
 ---

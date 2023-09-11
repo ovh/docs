@@ -1,7 +1,6 @@
 ---
 title: Object Storage Swift - Konfiguracja automatycznego usuwania obiektów
 excerpt: Konfiguracja automatycznego usuwania obiektów
-legacy_guide_number: g1950
 updated: 2021-10-27
 ---
 

@@ -1,6 +1,5 @@
 ---
 title: 'Créer des filtres pour vos adresses e-mail'
-legacy_guide_number: 1973
 excerpt: 'Découvrez comment créer et configurer un filtre sur votre adresse e-mail'
 updated: 2021-09-27
 ---

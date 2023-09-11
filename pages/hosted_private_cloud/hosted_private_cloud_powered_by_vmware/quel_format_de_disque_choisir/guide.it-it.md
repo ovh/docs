@@ -1,7 +1,6 @@
 ---
 title: Scegliere il formato del disco
 excerpt: Come scegliere tra i diversi tipi di dischi VMware
-legacy_guide_number: '1441955'
 updated: 2022-02-02
 ---
 

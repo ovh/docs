@@ -1,7 +1,6 @@
 ---
 title: 'Modifier le hostname d’une instance Public Cloud'
 excerpt: "Découvrez comment modifier le hostname d'une instance Public Cloud"
-legacy_guide_number: 1928
 updated: 2018-09-18
 ---
 

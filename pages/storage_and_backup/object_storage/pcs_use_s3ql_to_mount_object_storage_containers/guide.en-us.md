@@ -1,6 +1,5 @@
 ---
 title: Object Storage Swift - Use S3QL to mount object storage containers
-legacy_guide_number: g1908
 updated: 2021-10-27
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: 'Removing a host server'
 excerpt: 'Find out how to remove a host server from a Managed Bare Metal infrastructure'
-legacy_guide_number: '1442308'
 updated: 2021-03-19
 ---
 

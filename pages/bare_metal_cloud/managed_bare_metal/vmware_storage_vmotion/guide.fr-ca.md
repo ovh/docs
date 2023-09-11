@@ -1,7 +1,6 @@
 ---
 title: VMware Storage vMotion
 excerpt: Déplacer votre machine virtuelle sur un hôte différent à chaud
-legacy_guide_number: '7767010'
 updated: 2020-11-18
 ---
 

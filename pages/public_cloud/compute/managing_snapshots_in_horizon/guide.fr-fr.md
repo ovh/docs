@@ -1,6 +1,5 @@
 ---
 title: "Gestion des snapshots d’une instance dans horizon"
-legacy_guide_number: 1770
 updated: 2022-01-31
 ---
 

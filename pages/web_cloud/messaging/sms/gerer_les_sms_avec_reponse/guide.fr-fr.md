@@ -1,6 +1,5 @@
 ---
 title: Gérer les SMS avec réponse
-legacy_guide_number: '8650768'
 updated: 2020-09-14
 ---
 

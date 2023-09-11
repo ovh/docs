@@ -1,7 +1,6 @@
 ---
 title: 'Instalação das VMware Tools'
 excerpt: 'Saiba como instalar as VMware Tools em Linux ou Windows'
-legacy_guide_number: g621
 updated: 2022-02-01
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: VMware vMotion
 excerpt: Przeniesienie wirtualnej maszyny na inny host bez jej wyłączania
-legacy_guide_number: '7767025'
 updated: 2020-07-10
 ---
 

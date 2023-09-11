@@ -1,6 +1,5 @@
 ---
 title: 'Creating filters for your email addresses'
-legacy_guide_number: 1973
 excerpt: 'Find out how to create and configure filter rules on your email address'
 updated: 2021-09-27
 ---

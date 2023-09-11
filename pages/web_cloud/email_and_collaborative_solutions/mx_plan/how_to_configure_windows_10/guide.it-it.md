@@ -1,7 +1,6 @@
 ---
 title: 'Configurare un account MX Plan sull’applicazione Posta per Windows 10'
 excerpt: 'Scopri come configurare un account email MX Plan sull’applicazione Posta per Windows'
-legacy_guide_number: g2284
 updated: 2018-04-04
 ---
 

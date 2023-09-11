@@ -1,8 +1,5 @@
 ---
 title: Dépannage SPA504G
-legacy_guide_number: '7536664'
-space_key: CRTEL
-space_name: Téléphonie
 hidden: true
 updated: 2018-03-26
 ---

@@ -1,7 +1,6 @@
 ---
 title: Esegui un test della velocità dei tuoi dischi
 excerpt: Esegui un test della velocità dei tuoi dischi
-legacy_guide_number: g1956
 updated: 2022-01-04
 ---
 

@@ -1,6 +1,5 @@
 ---
 title: 'Eine Website auf Ihrem Webhosting online stellen'
-legacy_guide_number: g1374
 excerpt: 'So stellen Sie eine Website auf Ihrem OVHcloud Webhosting online'
 updated: 2022-07-21
 ---

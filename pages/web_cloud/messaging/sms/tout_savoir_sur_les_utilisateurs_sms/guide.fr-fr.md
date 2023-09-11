@@ -1,7 +1,6 @@
 ---
 title: 'Tout savoir sur les utilisateurs SMS'
 excerpt: 'Découvrez les fonctionnalités des utilisateurs API pour envoyer des SMS'
-legacy_guide_number: g2144
 updated: 2022-08-05
 ---
 
