@@ -214,7 +214,7 @@ Consulta anche la nostra guida su [come proteggere il tuo sito Web](/pages/web_c
 
 [Accedere allo spazio di storage del tuo hosting Web](/pages/web_cloud/web_hosting/ftp_connection)
 
-[Modifica la configurazione di un hosting Web](/pages/web_cloud/web_hosting/ovhconfig_modify_system_runtime)
+[Modifica la configurazione di un hosting Web](/pages/web_cloud/web_hosting/configure_your_web_hosting)
 
 [Attiva il firewall applicativo](/pages/web_cloud/web_hosting/multisites_activating_application_firewall)
 

@@ -144,7 +144,7 @@ Więcej informacji znajdziesz w przewodniku ["Sprawdź statystyki i logi strony 
 
 ## Sprawdź również
 
-[Konfiguracja pliku .ovhconfig w hostingu](/pages/web_cloud/web_hosting/ovhconfig_configuration)
+[Konfiguracja pliku .ovhconfig w hostingu](/pages/web_cloud/web_hosting/configure_your_web_hosting)
 
 [Korzystanie z dostępu SSH do hostingu](/pages/web_cloud/web_hosting/ssh_on_webhosting)
 

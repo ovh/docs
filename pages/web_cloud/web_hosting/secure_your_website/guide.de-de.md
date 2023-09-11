@@ -82,7 +82,7 @@ Wir empfehlen Ihnen auch, die **Gültigkeit der von Ihnen hinterlegten Zahlungsm
 
 Prüfen Sie regelmäßig auf Updates für Ihre Website gemäß den Anweisungen in [dieser Anleitung](/pages/web_cloud/web_hosting/diagnostic_403_forbidden#22-ihre-website-aktualisieren).
 
-Denken Sie auch daran, eine aktuelle Version von [PHP](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014) auf Ihrem Hosting zu verwenden.
+Denken Sie auch daran, eine aktuelle Version von [PHP](/pages/web_cloud/web_hosting/configure_your_web_hosting) auf Ihrem Hosting zu verwenden.
 
 ### Schritt 7: HTTPS aktivieren
 

@@ -49,7 +49,7 @@ Consulte primeiro este [guia](/pages/web_cloud/web_hosting/logs_and_statistics) 
 
 ### Passar o seu site em modo de desenvolvimento
 
-Para que apareçam eventuais erros PHP, passe o seu alojamento em modo de `desenvolvimento` graças a estas [indicações](/pages/web_cloud/web_hosting/ovhconfig_modify_system_runtime#2-alterar-a-configuracao-do-alojamento-web).
+Para que apareçam eventuais erros PHP, passe o seu alojamento em modo de `desenvolvimento` graças a estas [indicações](/pages/web_cloud/web_hosting/configure_your_web_hosting#2-alterar-a-configuracao-do-alojamento-web).
 
 ### Testar o ficheiro.htaccess
 
@@ -98,7 +98,7 @@ Para restaurar o código fonte do seu site, consulte o nosso manual "[Restaurar 
 
 Se o seu site tiver uma base de dados, consulte o nosso manual "[Importar um backup para a base de dados de um alojamento web](/pages/web_cloud/web_hosting/sql_importing_mysql_database#restaurar-um-backup-a-partir-da-area-de-cliente)" para a restaurar para um estado anterior.
 
-Por fim, se o erro 500 aparecer após uma atualização da versão PHP do seu alojamento, consulte o nosso guia "[Mudar a versão de PHP do alojamento web](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014)" para voltar à configuração anterior.
+Por fim, se o erro 500 aparecer após uma atualização da versão PHP do seu alojamento, consulte o nosso guia "[Mudar a versão de PHP do alojamento web](/pages/web_cloud/web_hosting/configure_your_web_hosting)" para voltar à configuração anterior.
 
 ## Saiba mais <a name="gofurther"></a>
 

@@ -49,7 +49,7 @@ En primer lugar, consulte esta [guía](/pages/web_cloud/web_hosting/logs_and_sta
 
 ### Poner un sitio web en modo de desarrollo
 
-Para identificar los posibles errores de PHP, ponga el alojamiento en modo `desarrollo` utilizando estas [indicaciones](/pages/web_cloud/web_hosting/ovhconfig_modify_system_runtime#2-comprobar-la-configuracion-del-alojamiento-web).
+Para identificar los posibles errores de PHP, ponga el alojamiento en modo `desarrollo` utilizando estas [indicaciones](/pages/web_cloud/web_hosting/configure_your_web_hosting#2-comprobar-la-configuracion-del-alojamiento-web).
 
 ### Probar el archivo .htaccess
 
@@ -98,7 +98,7 @@ Para restaurar el código fuente del sitio web, consulte nuestra guía [Restaura
 
 Si su sitio web incluye una base de datos, consulte nuestra guía [Importar una copia de seguridad en la base de datos de un alojamiento web](/pages/web_cloud/web_hosting/sql_importing_mysql_database#restaurar-una-copia-de-seguridad-desde-el-area-de-cliente) para restaurarla a un estado anterior.
 
-Por último, si se ha producido un error al actualizar la versión PHP del alojamiento, consulte nuestra guía "[Cambiar la versión de PHP de un alojamiento web](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014)" para volver a la configuración anterior.
+Por último, si se ha producido un error al actualizar la versión PHP del alojamiento, consulte nuestra guía "[Cambiar la versión de PHP de un alojamiento web](/pages/web_cloud/web_hosting/configure_your_web_hosting)" para volver a la configuración anterior.
 
 ## Más información <a name="gofurther"></a>
 

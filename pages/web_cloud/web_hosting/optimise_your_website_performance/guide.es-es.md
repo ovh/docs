@@ -60,9 +60,9 @@ Algunas variables del servidor se modifican con la utilización de PHP-FPM:
 |max_input_vars|2000|16 000|
 |memory_limit|128 M|512 M|
 
-Averigüe cómo actualizar el lenguaje PHP en [esta guía](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014){.external}.
+Averigüe cómo actualizar el lenguaje PHP en [esta guía](/pages/web_cloud/web_hosting/configure_your_web_hosting){.external}.
 
-Para cambiar al uso de PHP-FPM en la versión _estable_ o para obtener información sobre opciones más avanzadas de su hospedaje web, consulte [esta guía](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014){.external}.
+Para cambiar al uso de PHP-FPM en la versión _estable_ o para obtener información sobre opciones más avanzadas de su hospedaje web, consulte [esta guía](/pages/web_cloud/web_hosting/configure_your_web_hosting){.external}.
 
 El archivo _.ovhconfig_ opera en la raíz del paquete de hospedaje o en un subdirectorio de nivel 1 (p. ej.: _/www/_), pero no en directorios de nivel 2 o superior (p. ej.: _/www/test/_ y _/www/test/test2/_)
 
@@ -217,7 +217,7 @@ Si a pesar de todos los cambios y optimizaciones realizados la base de datos va 
 
 ## Más información
 
-[Modificar la configuración de un plan de hospedaje web](/pages/web_cloud/web_hosting/ovhconfig_modify_system_runtime){.external}
+[Modificar la configuración de un plan de hospedaje web](/pages/web_cloud/web_hosting/configure_your_web_hosting){.external}
 
 [Gestionar una base de datos en un paquete de hospedaje web](/pages/web_cloud/web_hosting/sql_create_database){.external}
 

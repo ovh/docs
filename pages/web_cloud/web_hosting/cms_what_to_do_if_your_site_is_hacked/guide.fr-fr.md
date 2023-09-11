@@ -209,7 +209,7 @@ Consultez également notre guide sur [comment sécuriser votre site Web](/pages/
 
 [Se connecter à l'espace de stockage de son hébergement Web](/pages/web_cloud/web_hosting/ftp_connection)
 
-[Modifier la configuration de son hébergement Web](/pages/web_cloud/web_hosting/ovhconfig_modify_system_runtime)
+[Modifier la configuration de son hébergement Web](/pages/web_cloud/web_hosting/configure_your_web_hosting)
 
 [Activer le pare-feu applicatif](/pages/web_cloud/web_hosting/multisites_activating_application_firewall)
 

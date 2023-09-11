@@ -105,8 +105,8 @@ Según la versión de PHP que utilice, es posible que tenga que modificar el ent
 
 ## Más información
 
-[Modificar la configuración de un alojamiento web](/pages/web_cloud/web_hosting/ovhconfig_modify_system_runtime)
+[Modificar la configuración de un alojamiento web](/pages/web_cloud/web_hosting/configure_your_web_hosting)
 
-[Configurar el archivo .ovhconfig de un alojamiento web](/pages/web_cloud/web_hosting/ovhconfig_configuration)
+[Configurar el archivo .ovhconfig de un alojamiento web](/pages/web_cloud/web_hosting/configure_your_web_hosting)
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

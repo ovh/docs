@@ -213,7 +213,7 @@ Zapoznaj się również z naszym przewodnikiem dotyczącym [jak zabezpieczyć Tw
 
 [Logowanie do przestrzeni dyskowej hostingu WWW](/pages/web_cloud/web_hosting/ftp_connection)
 
-[Zmiana konfiguracji hostingu](/pages/web_cloud/web_hosting/ovhconfig_modify_system_runtime)
+[Zmiana konfiguracji hostingu](/pages/web_cloud/web_hosting/configure_your_web_hosting)
 
 [Włącz firewall aplikacyjny](/pages/web_cloud/web_hosting/multisites_activating_application_firewall)
 

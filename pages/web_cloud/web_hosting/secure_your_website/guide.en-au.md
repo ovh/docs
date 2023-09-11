@@ -78,7 +78,7 @@ We also recommend checking regularly the **validity of the payment methods** you
 
 Check your website updates regularly, following the instructions in this [guide](/pages/web_cloud/web_hosting/diagnostic_403_forbidden#22-update-your-website).
 
-Also remember to use a recent version of the [PHP programming language](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014) on your hosting plan.
+Also remember to use a recent version of the [PHP programming language](/pages/web_cloud/web_hosting/configure_your_web_hosting) on your hosting plan.
 
 ### Step 7 - Activate https
 
