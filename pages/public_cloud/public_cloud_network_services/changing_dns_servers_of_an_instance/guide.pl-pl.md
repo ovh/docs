@@ -1,7 +1,6 @@
 ---
 title: "Zmiana serwerów DNS instancji Public Cloud"
 excerpt: "Dowiedz się, jak zmienić domyślne serwery DNS instancji Public Cloud"
-legacy_guide_number: g1985
 updated: 2021-10-29
 ---
 

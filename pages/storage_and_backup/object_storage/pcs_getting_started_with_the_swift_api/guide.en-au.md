@@ -1,7 +1,6 @@
 ---
 title: Object Storage Swift - Getting started with the Swift API
 excerpt: Find out how to use the Swift API
-legacy_guide_number: g1916
 updated: 2021-05-25
 ---
 

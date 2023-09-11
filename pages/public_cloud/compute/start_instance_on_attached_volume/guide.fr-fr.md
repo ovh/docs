@@ -1,6 +1,5 @@
 ---
 title: Démarrer une instance sur un volume attaché
-legacy_guide_number: 2064
 updated: 2019-05-20
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: 'E-Mail-Header extrahieren'
 excerpt: 'Erfahren Sie hier, wie Sie die Header von E-Mails einsehen können'
-legacy_guide_number: g1365
 updated: 2021-11-19
 ---
 

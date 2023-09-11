@@ -1,7 +1,6 @@
 ---
 title: VMware HA (High Availability)
 excerpt: Gestionar la política de reinicio con la función HA
-legacy_guide_number: '2163279'
 updated: 2020-04-30
 ---
 

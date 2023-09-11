@@ -1,7 +1,6 @@
 ---
 title: Utiliser le plugin OVH Network
 excerpt: Découvrez comment utiliser le plugin OVH Network sur votre offre Managed Bare Metal
-legacy_guide_number: '7766560'
 updated: 2020-11-18
 ---
 

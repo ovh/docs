@@ -1,7 +1,6 @@
 ---
 title: 'Removing a datastore'
 excerpt: 'Find out how to remove a datastore from your Managed Bare Metal'
-legacy_guide_number: '7766789'
 updated: 2020-11-18
 ---
 

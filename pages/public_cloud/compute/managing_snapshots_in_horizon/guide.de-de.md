@@ -1,7 +1,6 @@
 ---
 title: Verwaltung von Snapshots einer Instanz in Horizon
 excerpt: Verwaltung von Snapshots einer Instanz in Horizon
-legacy_guide_number: g1770
 updated: 2022-01-31
 ---
 

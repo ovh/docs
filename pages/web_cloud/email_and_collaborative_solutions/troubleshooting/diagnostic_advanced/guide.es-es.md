@@ -1,7 +1,6 @@
 ---
 title: 'No se puede enviar o recibir mensajes'
 excerpt: Cómo reaccionar ante un fallo de funcionamiento en el envío o recepción de los mensajes de correo electrónico a OVHcloud
-legacy_guide_number: g2117
 updated: 2023-08-30
 ---
 

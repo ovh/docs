@@ -1,6 +1,5 @@
 ---
 title: Présentation de Horizon
-legacy_guide_number: 1776
 updated: 2022-03-16
 ---
 

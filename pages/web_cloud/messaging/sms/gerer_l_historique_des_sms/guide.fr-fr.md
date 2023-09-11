@@ -1,9 +1,6 @@
 ---
 title: 'Gérer l’historique des SMS'
 excerpt: 'Découvrez comment consulter l’historique de vos SMS envoyés depuis votre compte OVHcloud'
-legacy_guide_number: '8650753'
-space_key: CRSMSFAX
-space_name: SMS
 updated: 2022-08-05
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: 'Aumentare le quote Public Cloud'
 excerpt: 'Come aumentare la quota Public Cloud'
-legacy_guide_number: g1904
 updated: 2023-05-03
 ---
 

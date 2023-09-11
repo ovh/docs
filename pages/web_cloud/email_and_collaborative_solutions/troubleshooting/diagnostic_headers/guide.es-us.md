@@ -1,6 +1,5 @@
 ---
 title: Obtener la cabecera de un email
-legacy_guide_number: 1365
 excerpt: Cómo recuperar una cabecera de correo electrónico en su cliente de correo
 updated: 2021-11-19
 ---

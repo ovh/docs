@@ -1,6 +1,5 @@
 ---
 title: 'Transferir la gestión de sus cuentas de correo a otra persona'
-legacy_guide_number: 1933
 excerpt: 'Cómo delegar la gestión de las cuentas de correo de su solución MX Plan'
 updated: 2021-10-08
 ---

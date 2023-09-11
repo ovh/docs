@@ -1,7 +1,6 @@
 ---
 title: 'Hosty zapasowe'
 excerpt: 'Zarządzanie hostami zapasowymi w usłudze Managed Bare Metal'
-legacy_guide_number: g860
 updated: 2020-11-18
 ---
 

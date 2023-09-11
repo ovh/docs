@@ -1,6 +1,5 @@
 ---
 title: Object Storage Swift - Ottimizza il trasferimento dei tuoi file verso l’Object Storage
-legacy_guide_number: g1951
 updated: 2021-10-27
 ---
 

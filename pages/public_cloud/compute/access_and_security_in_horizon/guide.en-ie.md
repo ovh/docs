@@ -1,7 +1,6 @@
 ---
 title: Access and security settings in Horizon
 excerpt: Find out how to manage secure access to your instances
-legacy_guide_number: g1774
 updated: 2021-05-26
 ---
 

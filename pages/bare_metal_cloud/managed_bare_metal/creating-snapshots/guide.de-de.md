@@ -1,7 +1,6 @@
 ---
 title: Snapshots erstellen
 excerpt: So kehren Sie mithilfe von Snapshots zu einem früheren Zustand Ihrer VMs zurück
-legacy_guide_number: '7766547'
 updated: 2020-11-18
 ---
 

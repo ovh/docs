@@ -1,7 +1,6 @@
 ---
 title: Zarządzanie odnawianiem usług
 excerpt: Dowiedz się, jak zarządzać odnawianiem usług OVHcloud w Panelu klienta
-legacy_guide_number: g1271
 updated: 2022-04-07
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: 'Gestire un certificato SSL su un hosting Web'
 excerpt: 'Come attivare e utilizzare un certificato SSL sugli hosting Web OVHcloud'
-legacy_guide_number: g1594
 updated: 2022-08-01
 ---
 

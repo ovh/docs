@@ -1,7 +1,6 @@
 ---
 title: Añadir un bloque de IP
 excerpt: Contratar un bloque de IP en Hosted Private Cloud
-legacy_guide_number: '7766457'
 updated: 2022-04-06
 ---
 

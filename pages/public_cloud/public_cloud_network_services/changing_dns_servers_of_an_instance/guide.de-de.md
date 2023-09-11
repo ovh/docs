@@ -1,7 +1,6 @@
 ---
 title: "DNS Server einer Public Cloud Instanz ändern"
 excerpt: 'Erfahren Sie hier, wie Sie den vorkonfigurierten DNS-Server einer Public Cloud Instanz anpassen'
-legacy_guide_number: 1985
 updated: 2021-10-29
 ---
 

@@ -1,6 +1,5 @@
 ---
 title: 'Konfiguration Ihrer E-Mail-Adresse mit Thunderbird für Windows'
-legacy_guide_number: 1297
 excerpt: 'Erfahren Sie hier, wie Sie Ihren Mailaccount in Thunderbird für Windows einrichten'
 updated: 2021-08-26
 ---

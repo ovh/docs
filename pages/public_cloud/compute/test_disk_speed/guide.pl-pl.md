@@ -1,7 +1,6 @@
 ---
 title: Test prędkości dysków
 excerpt: Test prędkości dysków
-legacy_guide_number: g1956
 updated: 2022-01-04
 ---
 

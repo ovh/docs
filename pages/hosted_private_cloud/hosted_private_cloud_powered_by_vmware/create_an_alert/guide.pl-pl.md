@@ -1,7 +1,6 @@
 ---
 title: 'Tworzenie alertu'
 excerpt: 'Konfiguracja alertów na kliencie vSphere'
-legacy_guide_number: g599
 updated: 2020-07-08
 ---
 

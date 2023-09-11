@@ -1,7 +1,6 @@
 ---
 title: 'Criar / Restaurar um servidor virtual a partir de um backup'
 excerpt: 'Criar / Restaurar um servidor virtual a partir de um backup'
-legacy_guide_number: g1882
 updated: 2021-03-19
 ---
 

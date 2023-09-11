@@ -1,7 +1,6 @@
 ---
 title: Gestão de snapshots de uma instância na interface Horizon
 excerpt: Como gerir as snapshots de uma instância na interface Horizon
-legacy_guide_number: g1770
 updated: 2022-01-31
 ---
 

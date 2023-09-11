@@ -1,7 +1,6 @@
 ---
 title: 'Putting an instance in rescue mode'
 excerpt: 'Find out how to activate rescue mode for your Public Cloud instance'
-legacy_guide_number: g2029
 updated: 2023-01-04
 ---
 

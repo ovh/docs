@@ -1,7 +1,6 @@
 ---
 title: 'Eliminar um datastore'
 excerpt: 'Saiba como eliminar um datastore do Managed Bare Metal'
-legacy_guide_number: '7766789'
 updated: 2020-11-18
 ---
 

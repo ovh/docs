@@ -1,8 +1,5 @@
 ---
 title: Comment configurer le reverse DNS de ma connexion
-legacy_guide_number: '7962659'
-space_key: CRXDSL
-space_name: XDSL
 updated: 2023-09-06
 ---
 

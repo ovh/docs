@@ -1,7 +1,6 @@
 ---
 title: 'Replacing your lost SSH key pair'
 excerpt: 'Find out how to regain SSH access to your Public Cloud Instance'
-legacy_guide_number: g2069
 updated: 2022-02-10
 ---
 

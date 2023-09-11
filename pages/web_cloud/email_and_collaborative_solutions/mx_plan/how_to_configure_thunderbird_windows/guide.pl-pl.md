@@ -1,6 +1,5 @@
 ---
 title: 'Konfiguracja konta e-mail w programie Thunderbird na urządzeniu z systemem Windows'
-legacy_guide_number: g1297
 excerpt: 'Informacje dotyczące konfiguracji Twojego konta e-mail w programie Thunderbird znajdują się tutaj.'
 updated: 2021-08-26
 ---

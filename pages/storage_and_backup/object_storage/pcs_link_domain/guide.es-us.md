@@ -1,7 +1,6 @@
 ---
 title: Object Storage Swift - Colocar un contenedor de Object Storage detrás de un nombre de dominio
 excerpt: Colocar un contenedor de Object Storage detrás de un nombre de dominio
-legacy_guide_number: g2006
 updated: 2021-10-27
 ---
 

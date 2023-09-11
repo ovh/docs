@@ -1,6 +1,5 @@
 ---
 title: "Récupérer l'en-tête d'un e-mail"
-legacy_guide_number: 1365
 excerpt: 'Découvrez comment récupérer un en-tête e-mail sur votre client de messagerie'
 updated: 2021-11-19
 ---

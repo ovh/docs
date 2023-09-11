@@ -1,7 +1,6 @@
 ---
 title: Zugriffs- und Sicherheitseinstellungen in Horizon
 excerpt: Erfahren Sie hier, wie Sie sicheren Zugang zu Ihren Instanzen einrichten
-legacy_guide_number: g1774
 updated: 2021-05-26
 ---
 

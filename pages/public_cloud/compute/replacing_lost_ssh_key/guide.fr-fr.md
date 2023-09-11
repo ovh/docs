@@ -1,6 +1,5 @@
 ---
 title: 'Changer sa clé SSH en cas de perte'
-legacy_guide_number: 2069
 updated: 2022-02-10
 ---
 

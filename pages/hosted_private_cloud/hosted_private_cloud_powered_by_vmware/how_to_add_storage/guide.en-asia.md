@@ -1,7 +1,6 @@
 ---
 title: How to add storage?
 excerpt: Learn how to add storage to your infrastructure
-legacy_guide_number: g606
 updated: 2022-02-01
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: Choosing a disk type
 excerpt: Find out how to choose between the VMware disk types
-legacy_guide_number: '1441955'
 updated: 2022-02-02
 ---
 

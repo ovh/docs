@@ -1,6 +1,5 @@
 ---
 title: VMware vCenter Converter
-legacy_guide_number: '7766516'
 updated: 2018-03-26
 ---
 

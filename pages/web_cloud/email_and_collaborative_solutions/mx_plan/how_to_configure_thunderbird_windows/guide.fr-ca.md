@@ -1,6 +1,5 @@
 ---
 title: 'Configurer son adresse e-mail sur Thunderbird pour Windows'
-legacy_guide_number: 1297
 excerpt: 'Retrouvez ici les informations pour configurer votre adresse e-mail sur Thunderbird.'
 updated: 2021-08-26
 ---

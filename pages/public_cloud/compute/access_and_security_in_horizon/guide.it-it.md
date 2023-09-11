@@ -1,7 +1,6 @@
 ---
 title: Parametri di accesso e sicurezza in Horizon
 excerpt: Come gestire e rendere sicuro l'accesso alle tue istanze
-legacy_guide_number: g1774
 updated: 2021-05-26
 ---
 
