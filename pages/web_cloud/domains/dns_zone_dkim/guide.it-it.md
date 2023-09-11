@@ -765,7 +765,7 @@ v=DKIM1;t=s;p= MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA77VDAIfyhjtoF0DIE5V7 
 
 Il record CNAME è un alias. Questo significa che il valore di riferimento reindirizza verso un URL che fornirà il record DKIM al server che interrogherà il record CNAME. Questo tipo di record CNAME per configurare il DKIM è frequente per l'utilizzo di un server email Microsoft.
 
-È soddisfatto del tipo di record utilizzato per attivare il DKIM su un dominio dichiarato per un'offerta Exchange OVHcloud. Questo processo permette al vostro fornitore di soluzioni email di gestire per voi la sicurezza e l'aggiornamento del DKIM.In questo modo il provider di soluzioni di posta elettronica può gestire la sicurezza e l'aggiornamento di DKIM.
+È soddisfatto del tipo di record utilizzato per attivare il DKIM su un dominio dichiarato per un'offerta Exchange OVHcloud. Questo processo permette al vostro fornitore di soluzioni email di gestire per voi la sicurezza e l'aggiornamento del DKIM. In questo modo il provider di soluzioni di posta elettronica può gestire la sicurezza e l'aggiornamento di DKIM.
 
 ### Testa il tuo DKIM <a name="test-dkim"></a>
 
