@@ -72,7 +72,7 @@ ip a
 
 Ici l'interface qui nous intéresse est `eno2` avec l'adresse MAC `d0:50:99:d6:6b:14` :
 
-![ubuntu VLAN](images/vrack3-ubuntu-01.png)
+![ubuntu VLAN](images/vrack3-ubuntu-01.png){.thumbnail}
 
 Ajoutez la configuration réseau avec le tag du VLAN dans le fichier suivant :
 
@@ -111,7 +111,7 @@ Validez la configuration avec la commande suivante :
 ip a
 ```
 
-![ubuntu VLAN](images/vrack3-ubuntu-02.png)
+![ubuntu VLAN](images/vrack3-ubuntu-02.png){.thumbnail}
 
 #### Debian
 

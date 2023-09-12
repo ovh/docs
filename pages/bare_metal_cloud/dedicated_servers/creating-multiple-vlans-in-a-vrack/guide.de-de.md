@@ -75,7 +75,7 @@ ip a
 
 Das zu konfigurierende Interface ist hier `eno2` mit der MAC Adresse `d0:50:99:d6:6b:14`.
 
-![ubuntu VLAN](images/vrack3-ubuntu-01.png)
+![ubuntu VLAN](images/vrack3-ubuntu-01.png){.thumbnail}
 
 Fügen Sie die Netzwerkkonfiguration für diese Netzwerkschnittstelle und die VLAN-Deklaration in der folgenden Datei hinzu:
 
@@ -114,7 +114,7 @@ Verwenden Sie folgenden Befehl, um die Konfiguration zu bestätigen:
 ip a
 ```
 
-![ubuntu VLAN](images/vrack3-ubuntu-02.png)
+![ubuntu VLAN](images/vrack3-ubuntu-02.png){.thumbnail}
 
 #### Debian
 
@@ -182,7 +182,7 @@ Geben Sie nun das VLAN-Tag an. Klicken Sie im “**NIC Teaming**”-Fenster im P
 
 ![Windows VLAN](images/vrack2-windows-03.png){.thumbnail}
 
-Konfigurieren Sie nun die IP-Adresse des VLANs. Öffnen Sie hierzu über das Startmenü die `Systemsteuerung`{.action}.
+Konfigurieren Sie nun die IP-Adresse des VLANs. Öffnen Sie hierzu über das Startmenü die `Control Panel`{.action}.
 
 ![Windows VLAN](images/vrack2-windows-04.png){.thumbnail}
 

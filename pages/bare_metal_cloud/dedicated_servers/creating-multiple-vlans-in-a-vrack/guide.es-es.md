@@ -69,7 +69,7 @@ network: {config: disabled}
 
 Aquí la interfaz que queremos configurar es `eno2` con dirección MAC: `d0:50:99:d6:6b:14`.
 
-![ubuntu VLAN](images/vrack3-ubuntu-01.png)
+![ubuntu VLAN](images/vrack3-ubuntu-01.png){.thumbnail}
 
 Agregue la configuración de red para esta interfaz de red y la declaración de VLAN en el siguiente archivo:
 
@@ -108,7 +108,7 @@ Utilice el siguiente comando para confirmar la configuración:
 ip a
 ```
 
-![ubuntu VLAN](images/vrack3-ubuntu-02.png)
+![ubuntu VLAN](images/vrack3-ubuntu-02.png){.thumbnail}
 
 #### Debian
 

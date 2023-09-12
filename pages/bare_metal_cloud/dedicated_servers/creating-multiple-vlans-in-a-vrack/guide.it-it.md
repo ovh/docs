@@ -73,9 +73,9 @@ Recupera il nome dell'interfaccia di rete e il suo indirizzo MAC:
 ip a
 ``` 
 
-Ecco l'interfaccia che vogliamo configurare è `eno2` con indirizzo MAC: 'd0:50:99:d6:6b:14'.
+Ecco l'interfaccia che vogliamo configurare è `eno2` con indirizzo MAC: `d0:50:99:d6:6b:14`.
 
-![ubuntu VLAN](images/vrack3-ubuntu-01.png)
+![ubuntu VLAN](images/vrack3-ubuntu-01.png){.thumbnail}
 
 Aggiungere la configurazione di rete per questa interfaccia di rete e la dichiarazione VLAN nel file seguente:
 
@@ -114,7 +114,7 @@ Utilizza il comando seguente per confermare la configurazione:
 ip a
 ``` 
 
-![ubuntu VLAN](images/vrack3-ubuntu-02.png)
+![ubuntu VLAN](images/vrack3-ubuntu-02.png){.thumbnail}
 
 #### Debian
 
@@ -168,23 +168,23 @@ Poi specifica il tag della VLAN. Nel pannello **Adapters and Interfaces** della 
 
 ![Windows VLAN](images/vrack2-windows-03.png){.thumbnail}
 
-Adesso non resta che configurare l’indirizzo IP della VLAN. Clicca sul pulsante `Start`{.action} e poi su `Pannello di controllo`{.action}.
+Adesso non resta che configurare l’indirizzo IP della VLAN. Clicca sul pulsante `Start`{.action} e poi su `Control Panel`{.action}.
 
 ![Windows VLAN](images/vrack2-windows-04.png){.thumbnail}
 
-Poi clicca su `Rete e Internet`{.action}.
+Poi clicca su `Network and Internet`{.action}.
 
 ![Windows VLAN](images/vrack2-windows-05.png){.thumbnail}
 
-Clicca su `Centro connessioni di rete e condivisione`{.action}.
+Clicca su `Network and Sharing Center`{.action}.
 
 ![Windows VLAN](images/vrack2-windows-06.png){.thumbnail}
 
-Poi clicca su `Modifica impostazioni scheda`{.action}.
+Poi clicca su `Modifier les paramètres de l’adaptateur`{.action}.
 
 ![Windows VLAN](images/vrack2-windows-07.png){.thumbnail}
 
-Di seguito, clicca con il tasto destro sull’interfaccia VLAN e poi clicca su `Proprietà`{.action}.
+Di seguito, clicca con il tasto destro sull’interfaccia VLAN e poi clicca su `Properties`{.action}.
 
 ![Windows VLAN](images/vrack2-windows-08.png){.thumbnail}
 
@@ -193,7 +193,7 @@ Fai doppio click su `Internet Protocol Version 4 (TCP/IPv4)`{.action}.
 
 ![Windows VLAN](images/vrack2-windows-09.png){.thumbnail}
 
-Clicca su `Utilizza il seguente indirizzo IP`{.action}: in **IP Address** inserisci un indirizzo IP del tuo intervallo e in **Subnet mask** inserisci 255.255.0.0
+Clicca su `Use the following IP address`{.action}: in **IP Address** inserisci un indirizzo IP del tuo intervallo e in **Subnet mask** inserisci 255.255.0.0
 
 ![Windows VLAN](images/vrack2-windows-10.png){.thumbnail}
 

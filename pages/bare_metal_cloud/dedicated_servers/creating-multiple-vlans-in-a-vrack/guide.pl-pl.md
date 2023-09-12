@@ -71,7 +71,7 @@ ip a
 
 Tutaj interfejs, który chcemy skonfigurować jest `eno2` z adresem MAC: ` d0:50:99:d6:6b:14.
 
-![ubuntu VLAN](images/vrack3-ubuntu-01.png)
+![ubuntu VLAN](images/vrack3-ubuntu-01.png){.thumbnail}
 
 Dodaj konfigurację sieci dla tego interfejsu sieciowego i deklarację sieci VLAN w następującym pliku:
 
@@ -110,7 +110,7 @@ Aby potwierdzić konfigurację, należy użyć następującego polecenia:
 ip a
 ```
 
-![ubuntu VLAN](images/vrack3-ubuntu-02.png)
+![ubuntu VLAN](images/vrack3-ubuntu-02.png){.thumbnail}
 
 #### Debian
 
@@ -176,7 +176,7 @@ Kliknij `Network and Sharing Center`{.action}:
 
 ![Windows VLAN](images/vrack2-windows-06.png){.thumbnail}
 
-Kliknij `Zmodyfikuj parametry adaptera`{.action} :
+Kliknij `Modifier les paramètres de l’adaptateur`{.action} :
 
 ![Windows VLAN](images/vrack2-windows-07.png){.thumbnail}
 
