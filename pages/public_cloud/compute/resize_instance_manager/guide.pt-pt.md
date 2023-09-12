@@ -1,6 +1,6 @@
 ---
-title: Redimensionar uma instância
-excerpt: Como redimensionar uma instância a partir da Área de Cliente OVHcloud
+title: Redimensionar uma instância através da Área de Cliente OVHcloud
+excerpt: Saiba como redimensionar uma instância a partir da Área de Cliente OVHcloud
 updated: 2022-08-24
 ---
 

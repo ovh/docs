@@ -1,5 +1,5 @@
 ---
-title: Redimensionner une instance
+title: Redimensionner une instance via Horizon
 excerpt: "Découvrez comment redimensionner une instance depuis l'interface Horizon"
 updated: 2023-05-24
 ---

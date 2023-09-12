@@ -1,6 +1,6 @@
 ---
-title: Ridimensiona un’istanza
-excerpt: Ridimensiona un'istanza con Horizon
+title: "Ridimensionare un’istanza via Horizon"
+excerpt: "Scopri come ridimensionare un’istanza dall’interfaccia Horizon"
 updated: 2023-05-24
 ---
 

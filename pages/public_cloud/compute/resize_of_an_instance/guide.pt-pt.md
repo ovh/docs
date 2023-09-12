@@ -1,6 +1,6 @@
 ---
-title: Redimensionar uma instância
-excerpt: Como redimensionar uma instância
+title: Redimensionar uma instância através do Horizon
+excerpt: Saiba como redimensionar uma instância a partir da interface Horizon
 updated: 2023-05-24
 ---
 
