@@ -1,7 +1,7 @@
 ---
 title: 'Configurar varios servidores dedicados en el vRack'
 excerpt: 'Cómo configurar varios servidores dedicados en el vRack'
-updated: 2023-08-23
+updated: 2023-09-12
 ---
 
 > [!primary]

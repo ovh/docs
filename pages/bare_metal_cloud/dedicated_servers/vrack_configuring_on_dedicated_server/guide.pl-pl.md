@@ -1,7 +1,7 @@
 ---
 title: 'Konfiguracja kilku serwerów dedykowanych w sieci vRack'
 excerpt: 'Dowiedz się, jak połączyć kilka serwerów w ramach rozwiązania vRack'
-updated: 2023-08-23
+updated: 2023-09-12
 ---
 
 > [!primary]
@@ -198,6 +198,8 @@ Kliknij `Change Adapter Settings`{.action}.
 Kliknij prawym przyciskiem myszy w interfejsie sieci secondary, a następnie kliknij `Właściwości`{.action}.
 
 ![Windows Properties](images/windows_properties_button.png){.thumbnail}
+
+W naszym przykładzie `Ethernet 2` to interfejs używany w sieci vRack. Możliwe jest jednak, że karta sieciowa vRack używa innego interfejsu. Korzystaj z interfejsu, który nie posiada głównego adresu IP serwera lub który używa przypisanego do siebie adresu IP.
 
 Kliknij dwukrotnie `Internet Protocol Version 4 (TCP/IPv4)`{.action}.
 

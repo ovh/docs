@@ -1,7 +1,7 @@
 ---
 title: 'Creare due o più VLAN nella vRack'
 excerpt: 'Scopri come creare molteplici VLAN nella vRack'
-updated: 2023-08-23
+updated: 2023-09-12
 ---
 
 > [!primary]
@@ -157,7 +157,9 @@ Connettiti al tuo server tramite desktop remoto e apri l’applicazione Server M
 ![Windows VLAN](images/vrack2-windows-01.png){.thumbnail}
 
 Clicca con il tasto destro sull’interfaccia di rete e seleziona `Add to New Team`{.action}.
+
 ![Windows vLAN](images/vrack2-windows-02.0.png){.thumbnail}
+
 Nella nuova finestra, crea un nuovo team digitando il nome del team nel campo **Team name**. Al termine dell’operazione clicca su `OK`{.action} per confermare.
 
 ![Windows VLAN](images/vrack2-windows-02.png){.thumbnail}

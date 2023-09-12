@@ -1,7 +1,7 @@
 ---
 title: 'Configurer le vRack sur vos serveurs dédiés'
 excerpt: 'Découvrez comment configurer le vRack sur plusieurs serveurs dédiés'
-updated: 2023-08-23
+updated: 2023-09-12
 ---
 
 ## Objectif

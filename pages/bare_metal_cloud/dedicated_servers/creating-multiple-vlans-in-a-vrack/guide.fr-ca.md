@@ -1,7 +1,7 @@
 ---
 title: 'Créer plusieurs VLAN dans le vRack'
 excerpt: 'Découvrez comment créer plusieurs VLAN dans le vRack'
-updated: 2023-08-23
+updated: 2023-09-12
 ---
 
 ## Objectif
@@ -167,7 +167,11 @@ Connectez-vous à votre serveur via le bureau à distance et ouvrez l'applicatio
 
 ![Windows VLAN](images/vrack2-windows-01.png){.thumbnail}
 
-Après cela, créez une nouvelle équipe en sélectionnant une interface réseau et en tapant un nom d'équipe dans le champ **Team name**. Lorsque vous avez terminé, validez avec `OK`{.action} :
+Faites ensuite un clic droit sur l'interface réseau et sélectionnez `Add to New Team`{.action}.
+
+![Windows vLAN](images/vrack2-windows-02.0.png){.thumbnail}
+
+Dans la fenêtre qui apparaît, créez une nouvelle équipe en entrant un nom d'équipe dans le champ **Team name**. Lorsque vous avez terminé, cliquez sur `OK`{.action}.
 
 ![Windows VLAN](images/vrack2-windows-02.png){.thumbnail}
 
@@ -194,6 +198,8 @@ Cliquez alors sur `Modifier les paramètres de l’adaptateur`{.action} :
 Ensuite, faites un clic droit sur l’interface VLAN, puis cliquez sur `Properties`{.action} :
 
 ![Windows VLAN](images/vrack2-windows-08.png){.thumbnail}
+
+Dans notre exemple, `Ethernet 2` est l'interface utilisée pour le vRack. Cependant, il est possible que le NIC vRack soit une interface différente dans votre configuration. La bonne interface à sélectionner sera celle qui n'a pas l'adresse IP principale du serveur ou qui a une IP auto-attribuée.
 
 Effectuez un double clic sur `Internet Protocol Version 4 (TCP/IPv4)`{.action} :
 

@@ -1,7 +1,7 @@
 ---
 title: 'Tworzenie kilku sieci VLAN w prywatnej sieci vRack'
 excerpt: 'Dowiedz się, jak utworzyć kilka sieci VLAN w prywatnej sieci vRack'
-updated: 2023-08-23
+updated: 2023-09-12
 ---
 
 ## Wprowadzenie
