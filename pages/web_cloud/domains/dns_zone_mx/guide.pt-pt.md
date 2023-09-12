@@ -74,7 +74,7 @@ Selecione o tipo **MX** e valide para apresentar apenas as entradas DNS MX da su
 - Se já existirem e pretender alterá-los, clique no botão `...`{.action} à direita de cada linha da tabela em causa e, a seguir, em `Alterar entrada`{.action}.
 - Se não existir nenhum registo MX presente, clique no botão `Adicionar uma entrada`{.action} à direita da tabela e selecione `MX`{.action}. Introduza as informações necessárias em função da solução de e-mail selecionada:
 
-**Se dispõe de uma solução de e-mail OVHcloud**, consulte as informações fornecidas na etapa « [Conhecer a configuração MX da OVHcloud ](#mxovhcloud) ».
+**Se dispõe de uma solução de e-mail OVHcloud**, consulte as informações fornecidas na etapa "[Conhecer a configuração MX da OVHcloud](#mxovhcloud)".
 
 ![dnsmxrecord](images/mx-records-dns-zone-modif.png){.thumbnail}
 
