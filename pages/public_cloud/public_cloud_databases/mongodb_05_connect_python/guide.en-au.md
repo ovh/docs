@@ -73,7 +73,7 @@ This is compliant with our current MongoDB 5.0 instance.
 ### Configure your MongoDB instance to accept incoming connections
 
 In order to be able to connect to your MongoDB instance, you will need to configure your instance to accept incoming connections from the IP address of your Python environment.
-If you don't know how to retrieve your IP, please visit a website such as [WhatIsMyIP.com](https://www.whatismyip.com/){.external} from the station hosting the Python environment.
+If you don't know how to retrieve your IP, please visit a website such as [myip.ovh](https://myip.ovh/){.external} from the station hosting the Python environment.
 
 Once you know the IP address, follow the steps from this guide : [Configure your MongoDB instance to accept incoming connections](/pages/public_cloud/public_cloud_databases/mongodb_02_manage_control_panel).
 
