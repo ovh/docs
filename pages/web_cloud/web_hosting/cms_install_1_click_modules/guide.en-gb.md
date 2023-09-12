@@ -14,8 +14,8 @@ OVHcloud 1-click modules allow quick and easy website setups (without technical 
 
 ## Requirements
 
-- a [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/) that includes at least one database.
-- You must be logged in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
+- A [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/) that includes at least one database.
+- You have access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
 - Use a recent PHP version and a compatible runtime environment on your OVHcloud web hosting plan. If you need assistance with this, please refer to our [guide](/pages/web_cloud/web_hosting/configure_your_web_hosting) , to change this configuration quickly.
 - The directory (root folder) where your 1-click module will be installed must be empty or currently non-existent.
 - The domain (with subdomain if desired) that will be used for your website must be declared as [Multisite](/pages/web_cloud/web_hosting/multisites_configure_multisite) on your OVHcloud web hosting plan.
