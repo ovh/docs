@@ -244,7 +244,7 @@ Postępuj zgodnie z **5 krokami** poniżej, klikając na każdą z zakładek.
 >>
 > **2.Utwórz wyłącznik**
 >> Teraz utworzysz wyłącznik, wygeneruj parę kluczy i rekord DNS przypisany do domeny.<br>
->><br>
+>> <br>
 >> W tym celu użyj następującego wywołania API:<br>
 >>
 >> > [!api]
@@ -398,7 +398,7 @@ Postępuj zgodnie z **5 krokami** poniżej, klikając na każdą z zakładek.
 >>
 > **2.Utwórz wyłącznik**
 >> Teraz utworzysz wyłącznik, wygeneruj parę kluczy i rekord DNS przypisany do domeny.<br>
->><br>
+>> <br>
 >> > [!primary]
 >> >
 >> > Zalecamy wykonanie tej operacji dwukrotnie dla każdego z wcześniej wymienionych selektorów. Drugi selektor umożliwi zmianę pary kluczy, gdy będzie to konieczne. Zapoznaj się z przykładem zastosowania ["Jak zmienić parę kluczy DKIM"](#2selectors).

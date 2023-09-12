@@ -244,7 +244,7 @@ Clicca sui **5 step** seguenti, cliccando su ciascuna scheda.
 >>
 > **2.Creare un selettore**
 >> A questo punto crei un selettore, genera il suo paio di chiavi e il record DNS associato al dominio.<br>
->><br>
+>> <br>
 >> Per farlo, utilizza questa chiamata API:<br>
 >>
 >> > [!api]
@@ -398,7 +398,7 @@ Clicca sui **5 step** seguenti, cliccando su ciascuna scheda.
 >>
 > **2.Creare un selettore**
 >> A questo punto crei un selettore, genera il suo paio di chiavi e il record DNS associato al dominio.<br>
->><br>
+>> <br>
 >> > [!primary]
 >> > 
 >> > Ti consigliamo di eseguire questa operazione due volte per ciascuno dei selettori elencati in precedenza. Il secondo selettore vi permetterà di effettuare un cambio di coppia di chiavi quando sarà necessario. Ti invitiamo a consultare il nostro case study ["Come cambiare la sua coppia di chiavi DKIM"](#2selectors).

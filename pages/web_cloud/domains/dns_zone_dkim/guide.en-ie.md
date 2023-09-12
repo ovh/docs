@@ -239,7 +239,7 @@ Follow the **5 steps** below by clicking on each tab.
 >>
 > **2. Create a selector**
 >> You will now create a selector, generate its key pair, and generate the DNS record associated with the domain name.<br>
->><br>
+>> <br>
 >> To do this, use the following API call:<br>
 >>
 >> > [!api]
@@ -790,9 +790,9 @@ Click on the tab below corresponding to your solution.
 >> To switch to the second selector, use the following API call:
 >> 
 >> > [!api]
->>>
+>> >
 >> > @api {POST} /email/exchange/{organizationName}/service/{exchangeService}/domain/{domainName}/dkim/{selectorName}/enable
->>>
+>>
 >>
 >> - `organizationName`: Enter the name of your Exchange platform, which is in the form of "hosted-zz111111-1" or "private-zz11111-1". <br>
 >> - `selectorName`: Enter the name of the selector you want to switch to. <br>
@@ -803,9 +803,9 @@ Click on the tab below corresponding to your solution.
 >> To switch to the second selector, use the following API call:
 >>
 >> > [!api]
->>>
+>> >
 >> > @api {POST} /email/pro/{service}/domain/{domainName}/dkim/{selectorName}/enable
->>>
+>>
 >>
 >> - `service`: Enter the name of your Email Pro platform, in the form "emailpro-zz111111-1". <br>
 >> - `selectorName`: Enter the name of the selector you want to switch to. <br>

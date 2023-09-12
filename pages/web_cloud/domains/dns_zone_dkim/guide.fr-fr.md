@@ -239,7 +239,7 @@ Suivez les **5 étapes** ci-dessous en cliquant sur chacun des onglets.
 >>
 > **2.Créer un sélecteur**
 >> Vous allez maintenant créer un sélecteur, générer sa paire de clés et l'enregistrement DNS associé au nom de domaine.<br>
->><br>
+>> <br>
 >> Pour cela, utilisez l'appel API suivant :<br>
 >>
 >> > [!api]

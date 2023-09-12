@@ -243,7 +243,7 @@ Folgen Sie den **5 Schritten**, indem Sie auf jeden Tab klicken.
 >>
 > **2. Selektor erstellen**
 >> In diesem Schritt wird ein Selektor erstellt, ein Schlüsselpaar generiert und der DNS-Eintrag für den Domainnamen hinzugefügt.<br>
->><br>
+>> <br>
 >> Verwenden Sie hierzu folgenden API-Aufruf:<br>
 >>
 >> > [!api]
@@ -397,7 +397,7 @@ Folgen Sie den **5 Schritten**, indem Sie auf jeden Tab klicken.
 >>
 > **2. Selektor erstellen**
 >> In diesem Schritt wird ein Selektor erstellt, ein Schlüsselpaar generiert und der DNS-Eintrag für den Domainnamen hinzugefügt.<br>
->><br>
+>> <br>
 >> > [!primary]
 >> >
 >> > Es wird empfohlen, diesen Vorgang für jeden der Selektoren zweimal auszuführen. Mit der zweiten Auswahl können Sie bei Bedarf ein anderes Schlüsselpaar auswählen. Lesen Sie unter den Use Cases den Abschnitt [Wie ändere ich mein DKIM-Schlüsselpaar?](#2selectors).
