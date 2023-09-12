@@ -1,7 +1,7 @@
 ---
 title: Konfiguracja rekordu MX
 excerpt: Dowiedz się, jak skonfigurować rekord MX dla Twojej domeny w OVHcloud
-Updated: 2023-08-30
+updated: 2023-08-30
 ---
 
 ## Wprowadzenie
