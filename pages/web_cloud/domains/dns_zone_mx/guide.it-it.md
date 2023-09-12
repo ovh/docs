@@ -75,7 +75,7 @@ Seleziona il tipo **MX** e poi conferma per visualizzare solo i record MX DNS de
 - Se esistono record MX e vuoi modificarli, clicca sui tre puntini `...`{.action} a destra di ogni riga della tabella e poi clicca su `Modifica record`{.action}.
 - Se non sono presenti record MX, clicca sul pulsante `Aggiungi un record`{.action} a destra della tabella e seleziona `MX`{.action}. In base alla soluzione email scelta, inserisci le informazioni richieste:
 
-**Se disponi di una soluzione email OVHcloud**, consulta le informazioni fornite nello step "[Conoscere la configurazione MX di OVHcloud ](#mxovhcloud)".
+**Se disponi di una soluzione email OVHcloud**, consulta le informazioni fornite nello step "[Conoscere la configurazione MX di OVHcloud](#mxovhcloud)".
 
 ![dnsmxrecord](images/mx-records-dns-zone-modif.png){.thumbnail}
 
