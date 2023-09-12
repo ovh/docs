@@ -1,7 +1,7 @@
 ---
 title: 'Partilhar o alojamento entre vários sites'
 excerpt: 'Saiba como alojar diferentes websites no seu alojamento web'
-updated: 2023-08-25
+updated: 2023-09-08
 ---
 
 > [!primary]
@@ -13,6 +13,14 @@ updated: 2023-08-25
 Pode alojar vários websites no mesmo alojamento web, mesmo que os nomes de domínio não estejam registados na OVHcloud.
 
 **Saiba como alojar diferentes websites no seu alojamento web.**
+
+### Índice
+
+- 1 : [Aceder à gestão multisite](#multisite-menu)
+- 2 : [Adicionar um domínio ou subdomínio](#add-domain)
+    - 2.1 : [Adicionar um domínio registado na OVHcloud](#add-ovhcloud-domain)
+    - 2.2 : [Adicionar um domínio externo](#add-external-domain)
+- 3 : [Colocar o seu website online](#site-online)
 
 ## Requisitos
 
@@ -30,7 +38,7 @@ Pode alojar vários websites no mesmo alojamento web, mesmo que os nomes de dom�
 > Não hesite em consultar o nosso [guia](/pages/web_cloud/web_hosting/activate-email-hosting) para mais pormenores sobre a ativação desta opção.
 >
 
-### 1 - Aceder à gestão multisite
+### 1 - Aceder à gestão multisite <a name="multisite-menu"></a>
 
 Em primeiro lugar, aceda à Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} e selecione a `Web Cloud`{.action}. Depois, clique em `Alojamentos`{.action}, selecione o serviço correspondente e clique no separador `Multisite`{.action}.
 
@@ -43,7 +51,7 @@ Aparecerá uma tabela com todos os domínios e subdomínios adicionados à sua s
 
 ![multisite](images/access-multisite-ovh.png){.thumbnail}
 
-### 2 - Adicionar um domínio ou subdomínio
+### 2 - Adicionar um domínio ou subdomínio <a name="add-domain"></a>
 
 Para adicionar um novo domínio ou subdomínio ao seu alojamento web, clique no botão `Ações`{.action} situado à esquerda do ecrã e, a seguir, em `Adicionar um domínio ou subdomínio`{.action} e faça a sua escolha na nova janela.
 

@@ -1,7 +1,7 @@
 ---
 title: 'Hosting multiple websites on your Web Hosting plan'
 excerpt: 'Find out how to host several websites on your Web Hosting plan'
-updated: 2023-08-25
+updated: 2023-09-08
 ---
 
 ## Objective
@@ -9,6 +9,14 @@ updated: 2023-08-25
 You can host multiple websites on a single Web Hosting plan, even if the domain names are not registered with OVHcloud.
 
 **Find out how to host several websites on your Web Hosting plan.**
+
+### Content overview
+
+- 1: [Access multisite management](#multisite-menu)
+- 2: [Add a domain or subdomain](#add-domain)
+    - 2.1: [Adding an OVHcloud-registered domain](#add-ovhcloud-domain)
+    - 2.2: [Adding an external domain](#add-external-domain)
+- 3: [Put your website online](#site-online)
 
 ## Requirements
 
@@ -27,7 +35,7 @@ You can host multiple websites on a single Web Hosting plan, even if the domain 
 > Please refer to our [guide](/pages/web_cloud/web_hosting/activate-email-hosting) for more details on how to enable this option.
 >
 
-### Step 1: Access multisite management
+### Step 1: Access multisite management <a name="multisite-menu"></a>
 
 First, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external} and select `Web Cloud`{.action}. Click `Hosting plans`{.action}, select the plan concerned, then choose the `Multisite`{.action} tab.
 
@@ -40,7 +48,7 @@ The table displayed will list all of the domain names and subdomains added to yo
 
 ![multisite](images/access-multisite-ovh.png){.thumbnail}
 
-### Step 2: Add a domain or subdomain
+### Step 2: Add a domain or subdomain <a name="add-domain"></a>
 
 To add a new domain or subdomain to your Web Hosting plan, click on `Actions`{.action} on the left of your screen then `Add a domain or sub-domain`{.action}, then select your domain in the window that appears.
 

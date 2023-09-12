@@ -1,7 +1,7 @@
 ---
 title: 'Instalacja kilku stron WWW na jednym hostingu'
 excerpt: 'Dowiedz się, jak zainstalować kilka stron WWW na hostingu'
-updated: 2023-08-25
+updated: 2023-09-08
 ---
 
 > [!primary]
@@ -13,6 +13,14 @@ updated: 2023-08-25
 Na jednym hostingu możesz zainstalować kilka stron WWW, nawet jeśli domeny nie są zarejestrowane w OVHcloud.
 
 **Dowiedz się, jak zainstalować kilka stron WWW na Twoim hostingu.**
+
+### Podsumowanie
+
+- 1 : [Zarządzanie opcją MultiSite](#multisite-menu)
+- 2 : [Dodanie domeny lub subdomeny](#add-domain)
+    - 2.1 : [Dodaj domenę zarejestrowaną w OVHcloud](#add-ovhcloud-domain)
+    - 2.2 : [Dodaj domenę zewnętrzną](#add-external-domain)
+- 3 : [Umieszczenie strony WWW online](#site-online)
 
 ## Wymagania początkowe
 
@@ -30,7 +38,7 @@ Na jednym hostingu możesz zainstalować kilka stron WWW, nawet jeśli domeny ni
 > Zapoznaj się z [przewodnikiem](/pages/web_cloud/web_hosting/activate-email-hosting), aby uzyskać więcej informacji na temat aktywacji tej opcji.
 >
 
-### Etap 1: zarządzanie opcją MultiSite
+### Etap 1: zarządzanie opcją MultiSite <a name="multisite-menu"></a>
 
 Po pierwsze, zaloguj się do Twojego [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i wybierz `Web Cloud`{.action}. Kliknij `Hosting`{.action}, wybierz odpowiednią ofertę, następnie wybierz zakładkę `MultiSite`{.action}.
 
@@ -43,7 +51,7 @@ Tabela, która się wyświetla zawiera listę wszystkich domen i subdomen dodany
 
 ![MultiSite](images/access-multisite-ovh.png){.thumbnail}
 
-### Etap 2: dodanie domeny lub subdomeny
+### Etap 2: dodanie domeny lub subdomeny <a name="add-domain"></a>
 
 Aby dodać nową domenę lub subdomenę do Twojego hostingu, kliknij przycisk `Operacje`{.action} po lewej stronie ekranu, a następnie `Dodaj domenę lub subdomenę`{.action} i wybierz domenę w oknie, które się wyświetli.
 

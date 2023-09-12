@@ -1,7 +1,7 @@
 ---
 title: 'Ospitare più siti su uno stesso hosting'
 excerpt: 'Questa guida ti mostra come condividere il tuo hosting Web tra più siti Internet'
-updated: 2023-08-25
+updated: 2023-09-08
 ---
 
 > [!primary]
@@ -13,6 +13,14 @@ updated: 2023-08-25
 Su una stessa soluzione di hosting è possibile ospitare più siti Internet, anche se i domini non sono registrati in OVHcloud.
 
 **Questa guida ti mostra come configurare un multisito sul tuo hosting Web OVHcloud.**
+
+### Riepilogo
+
+- 1 : [Accedi alla gestione del multisito](#multisite-menu)
+- 2 : [Aggiungi un dominio o un sottodominio](#add-domain)
+    - 2.1 : [Aggiungere un dominio registrato in OVHcloud](#add-ovhcloud-domain)
+    - 2.2 : [Aggiungere un dominio esterno](#add-external-domain)
+- 3 : [Mettere online il tuo sito Web](#site-online)
 
 ## Prerequisiti
 
@@ -30,7 +38,7 @@ Su una stessa soluzione di hosting è possibile ospitare più siti Internet, anc
 > Per maggiori informazioni sull’attivazione di questa opzione, consulta la nostra [guida](/pages/web_cloud/web_hosting/activate-email-hosting).
 >
 
-### Step 1: accedi alla gestione del multisito
+### Step 1: accedi alla gestione del multisito <a name="multisite-menu"></a>
 
 Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} e seleziona `Web Cloud`{.action}. clicca su `Hosting`{.action}, seleziona il tuo servizio e clicca sulla scheda `Multisito`{.action}.
 
@@ -43,7 +51,7 @@ Visualizzi una tabella con tutti i domini e i sottodomini aggiunti alla tua solu
 
 ![multisito](images/access-multisite-ovh.png){.thumbnail}
 
-### Step 2: aggiungi un dominio o un sottodominio
+### Step 2: aggiungi un dominio o un sottodominio <a name="add-domain"></a>
 
 Per aggiungere un nuovo dominio o sottodominio al tuo hosting Web, clicca sul pulsante `Azioni`{.action} a sinistra e poi su `Aggiungi un dominio o un sottodominio`{.action}, seleziona la scheda che appare.
 

@@ -1,7 +1,7 @@
 ---
 title: 'Alojar varios sitios web en un mismo hosting'
 excerpt: 'Descubra cómo utilizar un plan de hosting para alojar varios sitios web'
-updated: 2023-08-25
+updated: 2023-09-08
 ---
 
 > [!primary]
@@ -13,6 +13,14 @@ updated: 2023-08-25
 Es posible alojar varios sitios web en un mismo plan de hosting, aunque los dominios no estén registrados en OVHcloud.
 
 **Descubra cómo utilizar un plan de hosting para alojar varios sitios web.**
+
+### Índice
+
+- 1 : [Acceder a la gestión del multisitio](#multisite-menu)
+- 2 : [Añadir un dominio o subdominio](#add-domain)
+    - 2.1 : [Añadir un dominio registrado con OVHcloud](#add-ovhcloud-domain)
+    - 2.2 : [Añadir un dominio externo](#add-external-domain)
+- 3 : [Publicar un sitio web en internet](#site-online)
 
 ## Requisitos
 
@@ -30,7 +38,7 @@ Es posible alojar varios sitios web en un mismo plan de hosting, aunque los domi
 > No dude en consultar nuestra [guide](/pages/web_cloud/web_hosting/activate-email-hosting) para más detalles sobre la activación de esta opción.
 >
 
-### 1\. Acceder a la gestión del multisitio
+### 1\. Acceder a la gestión del multisitio <a name="multisite-menu"></a>
 
 En primer lugar, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external} y seleccione `Web Cloud`{.action}. haga clic en `Alojamientos`{.action} y seleccione el alojamiento correspondiente. A continuación, abra la pestaña `Multisitio`{.action}.
 
@@ -43,7 +51,7 @@ Se mostrará una tabla con todos los dominios y subdominios añadidos a su soluc
 
 ![Multisitio](images/access-multisite-ovh.png){.thumbnail}
 
-### 2\. Añadir un dominio o subdominio
+### 2\. Añadir un dominio o subdominio <a name="add-domain"></a>
 
 Para añadir un nuevo dominio o subdominio al alojamiento, haga clic en el botón `Acciones`{.action} situado a la izquierda de la pantalla y seleccione `Añadir un dominio o subdominio`{.action}.
 
