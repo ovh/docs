@@ -195,7 +195,7 @@ Kliknij `Change Adapter Settings`{.action}.
 
 ![Change Adapter Settings](images/windows_change_adapter_settings.png){.thumbnail}
 
-Kliknij prawym przyciskiem myszy w interfejsie sieci secondary, a następnie kliknij `Właściwości`{.action}.
+Kliknij prawym przyciskiem myszy w interfejsie sieci secondary, a następnie kliknij `Properties`{.action}.
 
 ![Windows Properties](images/windows_properties_button.png){.thumbnail}
 

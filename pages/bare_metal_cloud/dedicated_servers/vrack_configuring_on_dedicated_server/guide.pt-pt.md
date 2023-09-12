@@ -191,7 +191,7 @@ Clique em `Change Adapter Settings`{.action}.
 
 ![Change Adapter Settings](images/windows_change_adapter_settings.png){.thumbnail}
 
-Clique com o botão direito do rato na interface de rede secundária e clique em `Propriedades`{.action}.
+Clique com o botão direito do rato na interface de rede secundária e clique em `Properties`{.action}.
 
 ![Windows Properties](images/windows_properties_button.png){.thumbnail}
 
