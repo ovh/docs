@@ -37,7 +37,7 @@ Cuando la dirección **sender@otherdomain.ovh** envía un correo electrónico a 
 
 ![Correo electrónico](images/email-dns-conf-mx01.png){.thumbnail}
 
-El mensaje se enviará al destino **mx0.mail.ovh.net**, precedido del valor **0**. Este valor se denomina prioridad. El valor más bajo se consulta primero y el más alto, después. Esto significa que la presencia de varios registros permite paliar la falta de respuesta del registro MX de menor prioridad.
+El mensaje se enviará al destino **mx0.mail.ovh.net**, precedido del valor **0**. Este valor se denomina prioridad. El valor más bajo se consulta primero y el más alto después. Esto significa que la presencia de varios registros permite paliar la falta de respuesta del registro MX de menor prioridad.
 
 Puede configurar varios registros MX para un mismo dominio. Es necesario definir un número de prioridad para cada uno de ellos. Los registros MX se consultan en orden ascendente, desde el número más bajo hasta el más alto, hasta que el servidor receptor responde.
 
