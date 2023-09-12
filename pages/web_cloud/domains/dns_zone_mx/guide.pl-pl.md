@@ -32,6 +32,7 @@ Rekord MX umożliwia powiązanie domeny z serwerem platformy e-mail. Jest to nie
 Rekordy MX (**M**ail **e**Xchange) umożliwiają powiązanie Twojej domeny z serwerami poczty przychodzącej przypisanymi do Twojej usługi e-mail. Posłużemy się przykładem.
 
 Gdy adres **sender@otherdomain.ovh** wysyła wiadomość na adres **contact@modomain.ovh**, serwer poczty (**Outgoing mail server**) przechodzi:
+
 - **(1)** odpytywanie strefy DNS domeny **mydomain.ovh** i odczytywanie rekordów **MX**.
 - **(2)** Prześlij wiadomość e-mail na adres URL odczytanego rekordu **MX**.
 
