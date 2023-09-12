@@ -127,8 +127,7 @@ Para que este princípio de rotação funcione, vamos utilizar o que chamamos os
 
 **Exemplo de uma parte de assinatura DKIM**
 
-<pre class="bgwhite"><code>
-DKIM-Signature: v=1; a=rsa-sha256; d=mydomain.ovh; s=ovhex123456-selector1; c=relaxed/relaxed; t=1681877341; 
+<pre class="bgwhite"><code>DKIM-Signature: v=1; a=rsa-sha256; d=mydomain.ovh; s=ovhex123456-selector1; c=relaxed/relaxed; t=1681877341; 
 </code></pre>
 
 O valor do seletor é aqui `s=ovhex123456-seletor1`.
@@ -773,8 +772,7 @@ Aconselhamos que envie um e-mail a partir de uma conta da sua plataforma Exchang
 
 Pode consultar o cabeçalho do e-mail recebido:
 
-<pre class="bgwhite"><code>
-ARC-Authentication-Results: i=1; mx.example.com;
+<pre class="bgwhite"><code>ARC-Authentication-Results: i=1; mx.example.com;
        dkim=pass header.i=@mydomain.ovh header.s=ovhex123456-selector1 header.b=KUdGjiMs;
        spf=pass (example.com: domain of test-dkim@mydomain.ovh designates 54.36.141.6 as permitted sender) smtp.mailfrom=test-dkim@mydomain.ovh
 Return-Path: <test-dkim@mydomain.ovh>

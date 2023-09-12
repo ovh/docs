@@ -127,8 +127,7 @@ Perché questo principio di rotazione funzioni, utilizzeremo quello che chiamiam
 
 **Esempio di una parte della firma DKIM**
 
-<pre class="bgwhite"><code>
-DKIM-Firma: v=1; a=rsa-sha256; d=mydomain.ovh; s=ovhex123456-selector1; c=relaxed/relaxed; t=1681877341; 
+<pre class="bgwhite"><code>DKIM-Firma: v=1; a=rsa-sha256; d=mydomain.ovh; s=ovhex123456-selector1; c=relaxed/relaxed; t=1681877341; 
 </code></pre>
 
 Il valore del selettore è `s=ovhex123456-selector1`.
@@ -773,8 +772,7 @@ Ti consigliamo di inviare un'email da un account della tua piattaforma Exchange 
 
 Ecco cosa si trova nell'intestazione dell'email ricevuta:
 
-<pre class="bgwhite"><code>
-ARC-Authentication-Results: i=1; mx.example.com;
+<pre class="bgwhite"><code>ARC-Authentication-Results: i=1; mx.example.com;
        dkim=pass header.i=@mydomain.ovh header.s=ovhex123456-selector1 header.b=KUdGjiMs;
        spf=pass (example.com: domain of test-dkim@mydomain.ovh designates 54.36.141.6 as permitted sender) smtp.mailfrom=test-dkim@mydomain.ovh
 Return-Path: &lt;test-dkim@mydomain.ovh>

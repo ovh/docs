@@ -1,4 +1,4 @@
->---
+---
 title: Configuring a DKIM record
 excerpt: Find out how to configure a DKIM record on your OVHcloud domain name and email platform
 updated: 2023-09-07
@@ -74,14 +74,13 @@ The DKIM (**D**omain**K**eys **I**dentified **M**ail) record allows you to sign 
     - [How do I change my DKIM key pair?](#2selectors)
     - [Why does the DKIM icon appear in red in the Control Panel?](#reddkim)
 
-
 ### How does DKIM work? <a name="how-dkim-work"></a>
 
 To fully understand why DKIM can secure your email exchanges, you need to understand how it works. DKIM uses **hashing** and **asymmetric encryption** to create a secure signature. Your domain name’s **email platform** and **DNS zone** will help deliver DKIM information to your recipients.
 
 #### Hashing <a name="hash"></a>
 
-The principle of a **hash function** is to generate a **signature** (also called a fingerprint) from input data. Its purpose is to create a fixed sequence of characters at the output, regardless of the amount of input data. 
+The principle of a **hash function** is to generate a **signature** (also called a fingerprint) from input data. Its purpose is to create a fixed sequence of characters at the output, regardless of the amount of input data.
 
 On the following diagram, you can see that the output will always be 32 characters using a MD5 (**M**essage **D**igest **5**) hash algorithm, while the input text may vary in size. The slightest character variation in input data completely changes the output hash, making the output signature unpredictable and tamper-proof. In the example below, the input value is passed into the MD5 hash algorithm and the output is its hash value.
 
@@ -93,7 +92,7 @@ The hash function is useful when you want to check the integrity of a message. D
 
 The purpose of **encryption**, as its name suggests, is to encrypt the data it is given. It is **asymmetric** because the encryption key is not the same as the decryption, unlike symmetric encryption, which uses the same key to encrypt and decrypt.
 
-Asymmetric encryption uses a **public key** and a **private key**. The public key is visible and usable by everyone. The private key is only used by the owner and is not visible to all. 
+Asymmetric encryption uses a **public key** and a **private key**. The public key is visible and usable by everyone. The private key is only used by the owner and is not visible to all.
 
 There are two uses for asymmetric encryption:
 
@@ -123,8 +122,7 @@ For this rotation principle to work, we're going to use something called **DKIM 
 
 **Example of a DKIM signature part**
 
-<pre class="bgwhite"><code>
-DKIM-Signature: v=1; a=rsa-sha256; d=mydomain.ovh; s=ovhex123456-selector1; c=relaxed/relaxed; t=1681877341; 
+<pre class="bgwhite"><code>DKIM-Signature: v=1; a=rsa-sha256; d=mydomain.ovh; s=ovhex123456-selector1; c=relaxed/relaxed; t=1681877341; 
 </code></pre>
 
 The value of this selector is `s=ovhex123456-selector1`.
@@ -395,7 +393,7 @@ Follow the **5 steps** below by clicking on each tab.
 >>
 > **2. Create a selector**
 >> You will now create a selector, generate its key pair, and generate the DNS record associated with the domain name.<br>
->><br>
+>> <br>
 >> > [!primary]
 >> >
 >> > We recommend that you do this twice for each of the selectors listed above. The second selector will allow you to change the key pair when necessary. Please refer to our use case ["How to change a DKIM key pair"](#2selectors).
@@ -769,8 +767,7 @@ We recommend sending an email from an account on your Exchange platform to an em
 
 Here is what you will find in the header of the received email:
 
-<pre class="bgwhite"><code>
-ARC-Authentication-Results: i=1; mx.example.com;
+<pre class="bgwhite"><code>ARC-Authentication-Results: i=1; mx.example.com;
        dkim=pass header.i=@mydomain.ovh header.s=ovhex123456-selector1 header.b=KUdGjiMs;
        spf=pass (example.com: domain of test-dkim@mydomain.ovh designates 54.36.141.6 as permitted sender) smtp.mailfrom=test-dkim@mydomain.ovh
 Return-Path: <test-dkim@mydomain.ovh>

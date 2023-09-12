@@ -126,8 +126,7 @@ Damit dieses Prinzip der Rotation funktioniert, werden **DKIM-Selektoren** einge
 
 **Beispiel einer DKIM-Signatur**
 
-<pre class="bgwhite"><code>
-DKIM-Signature: v=1; a=rsa-sha256; d=mydomain.ovh; s=ovhex123456-selector1; c=relaxed/relaxed; t=1681877341; 
+<pre class="bgwhite"><code>DKIM-Signature: v=1; a=rsa-sha256; d=mydomain.ovh; s=ovhex123456-selector1; c=relaxed/relaxed; t=1681877341; 
 </code></pre>
 
 Der Wert des Selektors ist hier `s=ovhex123456-selector`.
@@ -772,8 +771,7 @@ Wir empfehlen, eine E-Mail von einem Exchange-Account aus an eine E-Mail-Adresse
 
 Im Header der empfangenen E-Mail finden Sie folgendes:
 
-<pre class="bgwhite"><code>
-ARC-Authentication-Results: i=1; mx.example.com;
+<pre class="bgwhite"><code>ARC-Authentication-Results: i=1; mx.example.com;
        dkim=pass header.i=@mydomain.ovh header.s=ovhex123456-selector1 header.b=KUdGjiMs;
        spf=pass (example.com: domain of test-dkim@mydomain.ovh designates 54.36.141.6 as permitted sender) smtp.mailfrom=test-dkim@mydomain.ovh
 Return-Path: <test-dkim@mydomain.ovh>

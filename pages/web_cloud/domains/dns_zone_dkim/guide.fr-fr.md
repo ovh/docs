@@ -122,8 +122,7 @@ Pour que ce principe de rotation fonctionne, on va utiliser ce qu'on appelle les
 
 **Exemple d'une partie de signature DKIM**
 
-<pre class="bgwhite"><code>
-DKIM-Signature: v=1; a=rsa-sha256; d=mydomain.ovh; s=ovhex123456-selector1; c=relaxed/relaxed; t=1681877341; 
+<pre class="bgwhite"><code>DKIM-Signature: v=1; a=rsa-sha256; d=mydomain.ovh; s=ovhex123456-selector1; c=relaxed/relaxed; t=1681877341; 
 </code></pre>
 
 La valeur du sélecteur est ici `s=ovhex123456-selector1`.
@@ -772,8 +771,7 @@ Nous vous conseillons d'envoyer un e-mail depuis un compte de votre plateforme E
 
 Voici ce que vous pourrez trouver dans l'en-tête de l'e-mail reçu :
 
-<pre class="bgwhite"><code>
-ARC-Authentication-Results: i=1; mx.example.com;
+<pre class="bgwhite"><code>ARC-Authentication-Results: i=1; mx.example.com;
        dkim=pass header.i=@mydomain.ovh header.s=ovhex123456-selector1 header.b=KUdGjiMs;
        spf=pass (example.com: domain of test-dkim@mydomain.ovh designates 54.36.141.6 as permitted sender) smtp.mailfrom=test-dkim@mydomain.ovh
 Return-Path: <test-dkim@mydomain.ovh>
