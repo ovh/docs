@@ -21,7 +21,7 @@ Il record MX permette di collegare un dominio al server della sua piattaforma di
 >
 > - Se il dominio non utilizza i server DNS di OVHcloud, la modifica dei record MX deve essere eseguita dall’interfaccia del provider che gestisce la configurazione del dominio.
 >
-> - Se il dominio è registrato presso OVHcloud, è possibile verificarne la configurazione attraverso lo [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), sezione `Server DNS`{.action} > Dominio pertinente > scheda `informazioni generali`{.action}. Se la voce `Attivo` è presente alla voce "**server DNS**", utilizza i server DNS di OVHcloud.
+> - Se il dominio è registrato presso OVHcloud, è possibile verificarne la configurazione attraverso lo [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), sezione `Server DNS`{.action} > Dominio pertinente > scheda `Informazioni Generali`{.action}. Se la voce `Attivo` è presente alla voce "**server DNS**", utilizza i server DNS di OVHcloud.
 >
 > ![email](images/email-dns-conf-mx00.png){.thumbnail}
 
