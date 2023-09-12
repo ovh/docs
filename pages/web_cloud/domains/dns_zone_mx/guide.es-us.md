@@ -4,6 +4,10 @@ excerpt: 'Cómo añadir un registro MX a la configuración de un dominio en OVHc
 updated: 2018-05-30
 ---
 
+> [!primary]
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+>
+
 ## Objetivo
 
 El registro MX permite asociar un dominio a un servidor de correo para que los servidores que tengan que enviar mensajes hacia sus direcciones de correo sepan a dónde tienen que enviarlos. Es probable que su proveedor disponga de varios servidores de correo, en cuyo caso deberá crear varios registros MX.

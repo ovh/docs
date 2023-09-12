@@ -4,6 +4,10 @@ excerpt: So konfigurieren Sie einen MX-Eintrag für Ihre Domain bei OVHcloud
 updated: 2023-08-30
 ---
 
+> [!primary]
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
+>
+
 ## Ziel
 
 Der MX-Eintrag erlaubt die Verbindung eines Domainnamens mit dem Server seiner E-Mail-Plattform. Es ist notwendig, damit der E-Mail-Dienst des Absenders den des Empfängers erreichen kann.

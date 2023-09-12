@@ -4,6 +4,10 @@ excerpt: Come configurare un record MX su un dominio in OVHcloud
 updated: 2023-08-30
 ---
 
+> [!primary]
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
+>
+
 ## Obiettivo
 
 Il record MX permette di collegare un dominio al server della sua piattaforma di posta. È indispensabile perché il servizio email del mittente possa raggiungere quello del destinatario.

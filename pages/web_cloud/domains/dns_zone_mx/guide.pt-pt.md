@@ -4,6 +4,10 @@ excerpt: Saiba como configurar um registo MX no seu domínio da OVHcloud
 updated: 2023-08-30
 ---
 
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
+
 ## Objetivo
 
 O registo MX permite associar um domínio ao servidor da sua plataforma de e-mail. É indispensável para que o serviço de e-mail do remetente possa atingir o do destinatário.
@@ -15,7 +19,7 @@ O registo MX permite associar um domínio ao servidor da sua plataforma de e-mai
 - Ter acesso à gestão da zona DNS do domínio na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 - O domínio em questão deve utilizar a configuração da OVHcloud (ou seja, os servidores DNS da OVHcloud).
-- Dispor de uma oferta MX Plan (incluída na oferta de [alojamento web](https://www.ovhcloud.com/fr/web-hosting/), no [alojamento gratuito 100M](https://www.ovhcloud.com/fr/domains/free-web-hosting/) ou na oferta MX Plan encomendada separadamente), uma das nossas [ofertas de e-mail OVHcloud](https://www.ovhcloud.com/fr/emails/), ou um serviço de e-mail externo.
+- Dispor de uma oferta MX Plan (incluída na oferta de [alojamento web](https://www.ovhcloud.com/pt/web-hosting/), no [alojamento gratuito 100M](https://www.ovhcloud.com/pt/domains/free-web-hosting/) ou na oferta MX Plan encomendada separadamente), uma das nossas [ofertas de e-mail OVHcloud](https://www.ovhcloud.com/pt/emails/), ou um serviço de e-mail externo.
 
 > [!primary]
 >
@@ -27,7 +31,7 @@ O registo MX permite associar um domínio ao servidor da sua plataforma de e-mai
 
 ## Instruções
 
-### Compreender a função dos registos MX 
+### Compreender a função dos registos MX
 
 Os registos MX (**M**ail e**X**change) permitem associar o seu domínio aos servidores de e-mail de receção associados ao seu serviço de e-mail. Vamos citar um exemplo.
 
@@ -44,11 +48,11 @@ Pode configurar vários registos MX para o mesmo domínio. É então necessário
 > [!warning]
 >
 > De forma geral, **alterar os registos MX na zona DNS do domínio é uma operação delicada** : uma manipulação incorreta pode impossibilitar a receção de e-mails nos seus endereços. Por isso, sugerimos que tenha atenção durante a realização desta operação.
-> Em caso de dúvida, sugerimos que recorra a um [fornecedor especializado](https://partner.ovhcloud.com/fr/directory/).
+> Em caso de dúvida, sugerimos que recorra a um [fornecedor especializado](https://partner.ovhcloud.com/pt/directory/).
 
 ### Valores da configuração MX da OVHcloud <a name="mxovhcloud"></a>
 
-Consulte abaixo a configuração MX da OVHcloud que deve utilizar nas soluções MX Plan (só ou incluída numa oferta de [alojamento web da OVHcloud](https://www.ovhcloud.com/fr/web-hosting/)), [E-mail Pro](https://www.ovhcloud.com/fr/emails/email-pro/) e [Exchange](https://www.ovhcloud.com/fr/emails/). Os nossos servidores de e-mail dispõem de um antisspam e antivírus integrado.
+Consulte abaixo a configuração MX da OVHcloud que deve utilizar nas soluções MX Plan (só ou incluída numa oferta de [alojamento web da OVHcloud](https://www.ovhcloud.com/pt/web-hosting/)), [E-mail Pro](https://www.ovhcloud.com/pt/emails/email-pro/) e [Exchange](https://www.ovhcloud.com/pt/emails/). Os nossos servidores de e-mail dispõem de um antisspam e antivírus integrado.
 
 |Domínio|TTL|Tipo de registo|Prioridade|Destino|
 |---|---|---|---|---|
@@ -97,8 +101,8 @@ Conclua os passos e clique em `Validar`{.action}.
 
 [Configurar um registo DKIM](/pages/web_cloud/domains/dns_zone_dkim)
 
-Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/fr/).
+Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/).
 
-Se pretender beneficiar de uma assistência ao uso e à configuração das suas soluções OVHcloud, sugerimos que consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/fr/support-levels/).
+Se pretender beneficiar de uma assistência ao uso e à configuração das suas soluções OVHcloud, sugerimos que consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
 
 Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
