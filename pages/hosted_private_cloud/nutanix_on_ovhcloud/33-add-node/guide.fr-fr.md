@@ -36,6 +36,65 @@ Les nœuds à rajouter doivent avoir la même version d'**AOS** que ceux du clus
 
 ## En pratique
 
+### Vérification de la livraison du Noeud.
+
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), vérifiez qu'un noeud supplementaire apparait bien dans le cluster Nutanix.
+
+![Nouveau Noeud](images/scaleup1.png){.thumbnail}
+
+Vous pouvez également vérifier sur l'[API OVHcloud](https://api.ovh.com/console/#/nutanix/%7BserviceName%7D~GET)
+Utilisez l'appel API suivant :
+
+> [!api]
+>
+> @api {get} /nutanix/{serviceName}
+>
+- `serviceName` : entrez le nom du cluster
+
+![Nouveau Noeud via APIV6](images/scaleup2.png){.thumbnail}
+
+Le nouveau apparait avec des ip à 0.0.0.0.
+
+### Installation du Noeud.
+
+Pour installer le nouveau noeud vous devez utiliser l'[Api OVHcloud](https://api.ovh.com/console/#/nutanix/%7BserviceName%7D~PUT)
+
+Vous devez modifier les propriété du cluster en faisant un "PUT" sur le cluster.
+> [!warning]
+> Decochez la case redeployCluster
+
+Cochez ensuite la case "scaleUp".
+Saisissez les informations suivantes en dessous de **nodes :**
+
+- **ahvip :** `Adresse IP de l'hyperviseur du nouveau nœud`.
+- **cvmip :** `Adresse IP de la CVM du nouveau nœud`.
+
+> [!warning]
+> Ces ip ne doivent pas être déjà utilisées et correpondre avec votre plan d'adressage.
+
+Vous devez également completer la version de deployment.
+Elle peut ne pas correspondre avec la version courante de votre cluster, pas d'inquiétude, le noeud sera modifié par l'installer Nutanix lors de l'ajout dans le cluster via Prism Element.
+
+![PUT scaleUp via APIV6](images/scaleup3.png){.thumbnail} 
+
+Cliquez sur Execute{.action} pour envoyer la requete.
+
+
+Dans l'onglet "Result" le nouveau noeud apparait avec la nouvelle ip.
+A la fin de l'installation vous recevrez un email pour vous indiquer que le noeud est prêt.
+
+ ```
+ Dear Customer,
+
+Your server has just been installed.
+
+You must now add it back to your Nutanix cluster by connecting to Prism Central: https://cluster-xxxx.nutanix.ovh.net:9440
+
+We remain at your disposal for any further information.
+
+The OVHcloud Team
+```
+
 ### Ajout d'un nœud dans un cluster Nutanix.
 
 Connectez-vous à **Prism Element** au travers de **Prism Central**.
