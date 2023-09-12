@@ -14,13 +14,13 @@ Sie können mehrere Websites auf einem einzigen Webhosting-Angebot hosten, auch 
 
 **Diese Anleitung erklärt, wie Sie mehrere Websites über ein Webhosting bereitstellen.**
 
-### Inhaltsverzeichnis
+### Inhaltsübersicht
 
-- 1 : [Auf die Multisite-Verwaltung zugreifen](#multisite-menu)
-- 2 : [Eine Domain oder Subdomain hinzufügen](#add-domain)
-    - 2.1 : [Eine bei OVHcloud registrierte Domain hinzufügen](#add-ovhcloud-domain)
-    - 2.2 : [Eine externe Domain hinzufügen](#add-external-domain)
-- 3 : [Ihre Website online stellen](#site-online)
+- 1. [Auf die Multisite-Verwaltung zugreifen](#multisite-menu)
+- 2. [Eine Domain oder Subdomain hinzufügen](#add-domain)
+    - 2.1 [Eine bei OVHcloud registrierte Domain hinzufügen](#add-ovhcloud-domain)
+    - 2.2 [Eine externe Domain hinzufügen](#add-external-domain)
+- 3. [Ihre Website online stellen](#site-online)
 
 ## Voraussetzungen
 
