@@ -12,11 +12,11 @@ You can host multiple websites on a single Web Hosting plan, even if the domain 
 
 ### Content overview
 
-- 1 : [Access multisite management](#multisite-menu)
-- 2 : [Add a domain or subdomain](#add-domain)
-    - 2.1 : [Adding an OVHcloud-registered domain](#add-ovhcloud-domain)
-    - 2.2 : [Adding an external domain](#add-external-domain)
-- 3 : [Put your website online](#site-online)
+- 1: [Access multisite management](#multisite-menu)
+- 2: [Add a domain or subdomain](#add-domain)
+    - 2.1: [Adding an OVHcloud-registered domain](#add-ovhcloud-domain)
+    - 2.2: [Adding an external domain](#add-external-domain)
+- 3: [Put your website online](#site-online)
 
 ## Requirements
 
