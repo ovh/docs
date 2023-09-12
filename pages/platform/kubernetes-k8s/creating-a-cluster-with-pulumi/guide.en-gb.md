@@ -1,10 +1,10 @@
 ---
 title: Creating a cluster with Pulumi
 excerpt: 'Creates an OVHcloud Managed Kubernetes Service cluster with Pulumi'
-updated: 2023-08-25
+updated: 2023-09-12
 ---
 
-**Last updated 25th August 2023**
+**Last updated 12th September 2023**
 
 <style>
  pre {
@@ -36,6 +36,8 @@ You know you can do it through Terraform thanks to our OVHcloud provider but do 
 
 ## Pulumi
 
+![Pulumi](images/pulumi.jpg)
+
 [Pulumi](https://www.pulumi.com/) is an Infrastructure as code (IasC) tool that allows you to build your infrastructures with a programming language, in Golang of example ;-).
 Users defined the desired state in Pulumi programs and Pulumi create the desired resources.
 
@@ -58,19 +60,18 @@ Verify the Pulumi CLI is successfully installed in your machine with `pulumi ver
 You should have a result like this:
 
 <pre class="console"><code>$ pulumi version
-v3.77.1
+v3.81.0
 </code></pre>
 
 ## OVHcloud Pulumi provider
 
-In order to create a Kubernetes cluster and other resources, you will use the [OVHcloud Pulumi provider](https://github.com/scraly/pulumi-ovh). This provider is a bridge to our official [Terraform provider](https://registry.terraform.io/providers/ovh/ovh/latest){.external}.
-
-TODO: quand le repo GH sera officiel sur le registry de pulumi
-TODO: change scraly to ovh orga
+In order to create a Kubernetes cluster and other resources, you will use the [OVHcloud Pulumi provider](https://github.com/ovh/pulumi-ovh). This provider is a bridge to our official [Terraform provider](https://registry.terraform.io/providers/ovh/ovh/latest){.external}.
 
 All available Pulumi resources have their definition and [documentation](https://www.pulumi.com/registry/packages/ovh).
 
 In this guide, we will create two resources:
+
+TODO: fix with correct link in pulumi registry
 
 * a [Kube resource](https://www.pulumi.com/registry/packages/ovh/api-docs/cloudproject/kube/){.external}, that represents an OVHcloud managed Kubernetes cluster
 * and a [KubeNodePool resource](https://www.pulumi.com/registry/packages/ovh/api-docs/cloudproject/kubenodepool/){.external}, that represents a Kubernetes Node Pool
@@ -121,7 +122,20 @@ export OVH_CONSUMER_KEY="xxx"
 
 ## Instructions 
 
-### Create our Pulumi project and initialize our Go program
+One advantage with Pulumi is that allows you to build your infrastructures with a programming language of your choice. It supports a variety of programming languages.
+
+In this tutorial you will be able to deploy your Kubernetes cluster and its node pool in Go. Our OVH Pulumi provider supports crrently Go but also Python, Node.js/Typescript and C#/Dotnet.
+
+Follow our examples:
+
+* [Python](https://github.com/ovh/pulumi-ovh/tree/main/examples/ovh-python)
+* [Typescript](https://github.com/ovh/pulumi-ovh/tree/main/examples/ovh-typescript)
+* [C#](https://github.com/ovh/pulumi-ovh/tree/main/examples/ovh-csharp)
+* [Go](https://github.com/ovh/pulumi-ovh/tree/main/examples/ovh-go)
+
+### Deploy our Kubernetes cluster in Go / Golang
+
+### Pulumi project creation and initialization
 
 Infrastructure in Pulumi is organized into projects. In the Pulumi ecosystem, a project represents a Pulumi program that, when run, declares the desired infrastructure for Pulumi to manage. 
 First, create a folder `pulumi_ovh_kube` that represent our project and go into it.
@@ -167,9 +181,8 @@ The command create a `dev` stack and the code organization of your project:
 
 Now we need to install the Pulumi OVH provider.
 
-TODO: change to ovh orga
 ```bash
-go get github.com/scraly/pulumi-ovh/sdk
+go get github.com/ovh/pulumi-ovh/sdk/go/...
 ```
 
 In order to create a OVHcloud MKS cluster we need to define the `serviceName`.
@@ -192,7 +205,7 @@ package main
 import (
 	"github.com/pulumi/pulumi/sdk/v3/go/pulumi"
 	"github.com/pulumi/pulumi/sdk/v3/go/pulumi/config"
-	"github.com/scraly/pulumi-ovh/sdk/go/ovh/cloudproject"
+	"github.com/ovh/pulumi-ovh/sdk/go/ovh/cloudproject"
 )
 
 func main() {
@@ -252,23 +265,23 @@ Then, run `go mod tidy` command` to ask Go to download and install the necessary
 go mod tidy
 ```
 
-### Create our cluster through Pulumi
+### Create our Kubernetes cluster through Pulumi
 
 Now we can deploy our cluster and the node pool, to do that just execute the `pulumi up` comand.
 This will display the plan/the preview of the desireed state. A prompt will ask you to choose the stack (`dev` by default) and to confirm of you want to perform/apply the changes.
 
-TODO: change scraly to ovh orga
 ```
 $ pulumi up
-Please choose a stack, or create a new one: dev
 Previewing update (dev)
 
-View in Browser (Ctrl+O): https://app.pulumi.com/scraly/pulumi_ovh_kube/dev/previews/cf1a0da4-xxxx-xxxx-xxxx-053bf2bfdda0
+View in Browser (Ctrl+O): https://app.pulumi.com/scraly/go-pulumi/dev/previews/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
 
-     Type                              Name                 Plan       
- +   pulumi:pulumi:Stack               pulumi_ovh_kube-dev  create     
- +   ├─ ovh:CloudProject:Kube          my_desired_cluster   create     
- +   └─ ovh:CloudProject:KubeNodePool  my-desired-pool      create     
+Downloading plugin: 18.02 MiB / 18.02 MiB [=========================] 100.00% 5s
+                                                                                [resource plugin ovh-0.34.0] installing
+     Type                              Name                Plan
+ +   pulumi:pulumi:Stack               go-pulumi-dev       create
+ +   ├─ ovh:CloudProject:Kube          my_desired_cluster  create
+ +   └─ ovh:CloudProject:KubeNodePool  my-desired-pool     create
 
 
 Outputs:
@@ -281,17 +294,17 @@ Resources:
 Do you want to perform this update? yes
 Updating (dev)
 
-View in Browser (Ctrl+O): https://app.pulumi.com/scraly/pulumi_ovh_kube/dev/updates/4
+View in Browser (Ctrl+O): https://app.pulumi.com/scraly/go-pulumi/dev/updates/1
 
      Type                              Name                 Status             
  +   pulumi:pulumi:Stack               pulumi_ovh_kube-dev  created (394s)     
- +   ├─ ovh:CloudProject:Kube          my_desired_cluster   created (241s)     
+ +   ├─ ovh:CloudProject:Kube          my_desired_cluster   created (241s)    
  +   └─ ovh:CloudProject:KubeNodePool  my-desired-pool      created (150s)     
 
 
 Outputs:
     kubeconfig: [secret]
-    nodePoolID: "06519a68-xxxx-xxxx-xxxx-18ac624e169d"
+    nodePoolID: "xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx"
 
 Resources:
     + 3 created
@@ -312,8 +325,7 @@ Our node pool is created too.
 
 Perfect!
 
-## Connect to the cluster
-
+### Connect to the cluster
 
 Our cluster is created, now we need to connect to it in order to check our nodes, existing pods and to deploy our applications.
 
@@ -338,7 +350,7 @@ Display the list of Nodes:
 ```
 $ kubectl --kubeconfig=kubeconfig.yaml get node
 NAME                          STATUS   ROLES    AGE    VERSION
-my-desired-pool-node-a90c09   Ready    <none>   115s   v1.26.4
+my-desired-pool-node-a90c09   Ready    <none>   115s   v1.27.4
 ```
 
 Awesome!
@@ -351,22 +363,20 @@ You can now deploy your applications and/or create new clusters through Pulumi.
 
 If you have the following error, it means you forget to export needed OVH environment variables.
 
-TODO: change scraly to ovh orga
-
 ```bash
 $ pulumi up
 Previewing update (dev)
 
-View in Browser (Ctrl+O): https://app.pulumi.com/scraly/pulumi_ovh_kube/dev/previews/7ddcd60c-xxxx-xxxx-xxxx-6e14e388c577
+View in Browser (Ctrl+O): https://app.pulumi.com/scraly/pulumi_ovh_kube/dev/previews/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx
 
      Type                     Name                                              Plan       Info
  +   pulumi:pulumi:Stack      pulumi_ovh_kube-dev                              create     1 message
-     └─ pulumi:providers:ovh  default_github_/api.github.com/scraly/pulumi-ovh             1 error
+     └─ pulumi:providers:ovh  default_github_/api.github.com/ovh/pulumi-ovh             1 error
 
 
 Diagnostics:
-  pulumi:providers:ovh (default_github_/api.github.com/scraly/pulumi-ovh):
-    error: pulumi:providers:ovh resource 'default_github_/api.github.com/scraly/pulumi-ovh' has a problem: Provider is missing a required configuration key, try `pulumi config set ovh:endpoint`: The OVH API endpoint to target (ex: "ovh-eu").
+  pulumi:providers:ovh (default_github_/api.github.com/ovh/pulumi-ovh):
+    error: pulumi:providers:ovh resource 'default_github_/api.github.com/ovh/pulumi-ovh' has a problem: Provider is missing a required configuration key, try `pulumi config set ovh:endpoint`: The OVH API endpoint to target (ex: "ovh-eu").
 
   pulumi:pulumi:Stack (pulumi_ovh_kube-dev):
     2023/08/10 07:04:39 {0xc0001e25b0}
@@ -402,8 +412,8 @@ Diagnostics:
 
   ovh:CloudProject:KubeNodePool (my_desired_pool):
     error: 1 error occurred:
-        * calling Post /cloud/project/xxxxxxxxxx/kube/22980f3b-xxxx-xxxx-xxxx-19ddb026cf45/nodepool with params my_desired_pool(b2-7): 1/1/3:
-         OVHcloud API error (status code 400): Client::BadRequest: "[InvalidDataError] 400: Node pool name my_desired_pool is invalid, only lowercase characters, digits and '-' are accepted (regex: '^[a-z0-9]([-a-z0-9]*[a-z0-9])?$') (request ID: xxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxx)" (X-OVH-Query-Id: EU.ext-3.64d4d2ba.66772.xxxxxxxxxxxxxxxxx)
+        * calling Post /cloud/project/xxxxxxxxxx/kube/xxxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/nodepool with params my_desired_pool(b2-7): 1/1/3:
+         OVHcloud API error (status code 400): Client::BadRequest: "[InvalidDataError] 400: Node pool name my_desired_pool is invalid, only lowercase characters, digits and '-' are accepted (regex: '^[a-z0-9]([-a-z0-9]*[a-z0-9])?$') (request ID: xxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxx)" (X-OVH-Query-Id: EU.ext-3.xxxxxxxx.xxxxx.xxxxxxxxxxxxxxxxx)
 
 Resources:
     + 2 created
@@ -414,7 +424,7 @@ Duration: 3m47s
 If you get this error message, the issue is that you name the flavor or the node pool with an invalid character: "_" or ".".
 
 The API don't support these characters so that's the reason why you obtained this error message.
-In order to fix it, change the flavor name and/or the pool name to a correct one, for example:
+In order to fix it, change the flavor name and/or the pool name to a correct one, for example in Go:
 
 ```go
 nodePool, err := cloudproject.NewKubeNodePool(ctx, "my-desired-pool", &cloudproject.KubeNodePoolArgs{
@@ -446,14 +456,12 @@ In order to check your quotas and increase them, please follow this tutorial:
 
 If you want to easily destroy created resources, you can use `pulumi destroy` command.
 
-TODO: change scraly to ovh orga
-
 ```
 $ pulumi destroy
 Please choose a stack: dev
 Previewing destroy (dev)
 
-View in Browser (Ctrl+O): https://app.pulumi.com/scraly/pulumi_ovh_kube/dev/previews/0d349055-xxxx-xxxx-xxxx-8821daab3d43
+View in Browser (Ctrl+O): https://app.pulumi.com/ovh/pulumi_ovh_kube/dev/previews/0d349055-xxxx-xxxx-xxxx-8821daab3d43
 
      Type                              Name                 Plan       
  -   pulumi:pulumi:Stack               pulumi_ovh_kube-dev  delete     
@@ -471,7 +479,7 @@ Resources:
 Do you want to perform this destroy? yes
 Destroying (dev)
 
-View in Browser (Ctrl+O): https://app.pulumi.com/scraly/pulumi_ovh_kube/dev/updates/3
+View in Browser (Ctrl+O): https://app.pulumi.com/ovh/pulumi_ovh_kube/dev/updates/3
 
      Type                              Name                 Status            
      pulumi:pulumi:Stack               pulumi_ovh_kube-dev                    
@@ -495,6 +503,16 @@ If you want to remove the stack completely, run `pulumi stack rm dev`.
 Perfect, your Kubernetes cluster and associated resources (Nodes, Pods...) have been correctly destroyed!
 
 ## Go further
+
+In this tuturial we deployed an OVHcloud Managed Kubernetes cluster and his node pool with Pulumi in Go, but don't be afraid you can also create it in another programing language:
+
+* Typescript
+* Python
+* C# / Dotnet
+
+TODO: xx  follow the examples
+If you want .. support another programing language, ask us...
+
 
 To have an overview of OVHcloud Managed Kubernetes service, you can go to the [OVHcloud Managed Kubernetes page](https://www.ovhcloud.com/en/public-cloud/kubernetes/).
 
