@@ -32,6 +32,7 @@ Il record MX permette di collegare un dominio al server della sua piattaforma di
 I record MX (**M**ail **e**Xchange) permettono di collegare il dominio ai server di posta associati al servizio di posta. Ci baseremo su un esempio.
 
 Quando l'indirizzo **sender@otherdomain.ovh** invia un’email a **contact@mydomain.ovh**, il server di invio delle email (**Outgoing mail server**):
+
 - **(1)** interrogare la zona DNS del dominio **mydomain.ovh** e leggere i record **MX**.
 - **(2)** trasmettere l’email verso l’URL del record **MX** letto.
 
