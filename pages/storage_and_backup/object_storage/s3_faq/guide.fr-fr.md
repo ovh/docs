@@ -1,7 +1,7 @@
 ---
 title: Object Storage - FAQ
 excerpt: "FAQ sur la solution Object Storage"
-updated: 2023-09-01
+updated: 2023-09-12
 ---
 
 ## Questions générales
@@ -131,7 +131,7 @@ La bande passante est mutualisée et non garantie. Nous offrons un maximum de 1 
 
 Les prix sont définis et affichés sur [le site OVHcloud](https://www.ovhcloud.com/fr/public-cloud/prices/#439).
 
-Un serveur OVHcloud est un serveur opéré pour un service OVHcloud, par exemple un serveur de la gamme Bare Metal Cmpid, Public Cloud ou Hosted Private Cloud (Serveur Dédié / VPS / Public Cloud / Hosted Private Cloud / So You Start / Kimsufi / xDSL).
+Un serveur OVHcloud est un serveur opéré pour un service OVHcloud, par exemple un serveur de la gamme Bare Metal Cloud, Public Cloud ou Hosted Private Cloud (Serveur Dédié / VPS / Public Cloud / Hosted Private Cloud / So You Start / Kimsufi / xDSL).
 
 Le trafic interne entrant est représenté par la donnée téléchargée d’un serveur OVHcloud vers un serveur OVHcloud.
 

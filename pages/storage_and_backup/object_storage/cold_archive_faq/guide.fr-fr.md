@@ -1,7 +1,7 @@
 ---
 title: Cold Archive - FAQ
 excerpt: FAQ sur la solution Cold Archive
-updated: 2023-09-01
+updated: 2023-09-12
 ---
 
 ## Informations Générales
