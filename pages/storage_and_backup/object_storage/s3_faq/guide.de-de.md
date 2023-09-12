@@ -166,7 +166,7 @@ Lifecycle options are not yet available. Please follow our [public GitHub roadma
 
 ### How do I upload large volumes of data?
 
-To upload large volumes of data, we recommend that you parallelize the connections (*multithread upload*). Multiple requests are in progress in parallel, and the bandwidth is multiplied (1 Gbps per connection). You can find more details on the methodology in the following guide: [Optimize the sending of your files to S3 Object Storage](/pages/storage_and_backup/object_storage/s3_optimizes_the_sending_of_your_files).
+To upload large volumes of data, we recommend that you parallelize the connections (*multithread upload*). Multiple requests are in progress in parallel, and the bandwidth is multiplied (1 Gbps per connection). You can find more details on the methodology in the following guide: [Optimize the sending of your files to S3 Object Storage](/pages/storage_and_backup/object_storage/s3_optimise_the_sending_of_your_files).
 
 ### What is the performance difference between the High Performance and Standard Performance storage classes?
 
