@@ -1,5 +1,5 @@
 ---
-title: Cold Archive - FAQ
+title: Cold Archive - FAQ (EN)
 excerpt: Frequently Asked Questions on the Cold Archive solution
 updated: 2023-09-12
 ---
@@ -25,7 +25,7 @@ Find an overview of the solution on [this page](/pages/storage_and_backup/object
 To use the service, you will need to meet the following requirements:
 
 - You must have a [Public Cloud project](/pages/public_cloud/compute/create_a_public_cloud_project) in your OVHcloud account. 
-- You must be logged in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
+- You must be logged in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 - You must have created a [S3 user](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage).
 
 ### What S3 features are available with the Cold Archive storage class? 
@@ -139,7 +139,7 @@ Billing stops when the archive is deleted (*delete-ovh-archive*).
 
 A 7% discount is applied for a data volume greater than 3 PB.
 
-You can find pricing details on [this page](https://www.ovhcloud.com/en-gb/public-cloud/prices/).
+You can find pricing details on [this page](https://www.ovhcloud.com/pl/public-cloud/prices/).
 
 ### Is there a minimum commitment period?
 
@@ -180,7 +180,7 @@ Incoming internal traffic is free.
 
 Outgoing internal traffic is free (traffic from an OVHcloud server to an OVHcloud server, including servers from the Public Cloud, Bare Metal Cloud and Hosted Private Cloud solutions)
 
-External bandwidth from OVHcloud to the outside is charged. Prices are detailed on [this page](https://www.ovhcloud.com/en-gb/public-cloud/prices/).
+External bandwidth from OVHcloud to the outside is charged. Prices are detailed on [this page](https://www.ovhcloud.com/pl/public-cloud/prices/).
 
 ## Durability
 
@@ -235,7 +235,7 @@ The redundancy of the data is done by an 8+4 Erasure Coding mechanism. Data can 
 
 ### What is the SLA of the service?
 
-The service’s SLA is available on [this page](https://www.ovhcloud.com/en-gb/terms-and-conditions/contracts/).
+The service’s SLA is available on [this page](https://www.ovhcloud.com/pl/terms-and-conditions/contracts/).
 
 It corresponds to the availability of the Object Storage service (RBX-archive endpoint) at 99.9% and the associated features (S3 API and tiering).
 
