@@ -1,7 +1,7 @@
 ---
 title: MongoDB - Connect with Python
 excerpt: Connect to your Public Cloud Databases for MongoDB using the Python programming language
-updated: 2022-07-27
+updated: 2022-09-12
 ---
 
 ## Objective
@@ -67,15 +67,15 @@ laptop$ pip list | grep pymongo
 pymongo    4.2.0
 ```
 
-In our case, we can find **Python 3.9.5**, and **PyMongo 4.2**. Based on official MongoDB compatibility matrix linked previously, we will be able to connect to MongoDB instances in versions 4.x, 5.0 and 6.0.
+In our case, we can find **Python 3.9.5**, and **PyMongo 4.2**. Based on the official MongoDB compatibility matrix linked previously, we will be able to connect to MongoDB instances in versions 4.x, 5.0 and 6.0.
 This is compliant with our current MongoDB 5.0 instance.
 
 ### Configure your MongoDB instance to accept incoming connections
 
-In order to be able to connect to your mongodb instance, you will need to configure your instance to accept incoming connections from the IP address of your Python environment.
-If you don't know how to get your IP, please visit a website like [WhatIsMyIP.com](https://www.whatismyip.com/){.external} from the station hosting the Python environment.
+In order to be able to connect to your MongoDB instance, you will need to configure your instance to accept incoming connections from the IP address of your Python environment.
+If you don't know how to retrieve your IP, please visit a website such as [WhatIsMyIP.com](https://www.whatismyip.com/){.external} from the station hosting the Python environment.
 
-Once with the IP address, you will need to follow the guide : [Configure your MongoDB instance to accept incoming connections](/pages/public_cloud/public_cloud_databases/mongodb_02_manage_control_panel)
+Once you know the IP address, follow the steps from this guide : [Configure your MongoDB instance to accept incoming connections](/pages/public_cloud/public_cloud_databases/mongodb_02_manage_control_panel).
 
 We will now follow the official MongoDB documentation to perform our first connection with Python.
 
