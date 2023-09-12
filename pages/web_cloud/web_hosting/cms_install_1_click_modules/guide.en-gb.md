@@ -14,20 +14,18 @@ OVHcloud 1-click modules allow quick and easy website setups (without technical 
 
 ## Requirements
 
-- You have access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
-- You have an [OVHcloud web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/) that contains at least one database. To check if you have any databases available, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) then go to the `Web Cloud`{.action} section. In the left-hand column, click on the `Hosting plans`{.action} tab, select the hosting plan on which you want to install a 1-click module, then click on the `Databases`{.action} tab.
-Click the `Actions`{.action} button above the table listing the databases already installed on this web hosting plan. If the `Create a database`{.action} button is greyed out, no more databases are available.
-If necessary, click one of the following two buttons below the button `Create a database`{.action}: 
-
-- `Order a database`{.action} to order an additional SQL database (comparable to the databases included with your web hosting plan).
-- `Order a Web Cloud Database`{.action} to order a [Web Cloud Database](https://www.ovhcloud.com/en-gb/web-cloud/databases/){.external} server instance.
-
-- Your web hosting uses a [compatible PHP version](/pages/web_cloud/web_hosting/configure_your_web_hosting).
-- You have [correctly configured your .ovhconfig file](/pages/web_cloud/web_hosting/configure_your_web_hosting).
-- The directory (root folder) where your 1-click module will be installed must be empty or currently nonexistent.
-- The domain name (with subdomain if desired) that will be used for your website must be declared as a [Multisite](/pages/web_cloud/web_hosting/multisites_configure_multisite) on your OVHcloud web hosting plan.
+- a [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/) that includes at least one database.
+- You must be logged in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
+- Use a recent PHP version and a compatible runtime environment on your OVHcloud web hosting plan. If you need assistance with this, please refer to our [guide](/pages/web_cloud/web_hosting/configure_your_web_hosting) , to change this configuration quickly.
+- The directory (root folder) where your 1-click module will be installed must be empty or currently non-existent.
+- The domain (with subdomain if desired) that will be used for your website must be declared as [Multisite](/pages/web_cloud/web_hosting/multisites_configure_multisite) on your OVHcloud web hosting plan.
 
 ## Instructions
+
+> [!primary]
+>
+> If you are blocked during any of the steps described below, please refer to our specific documentation regarding [the most common errors related to 1-click modules](/pages/web_cloud/web_hosting/diagnostic_errors_module1click). 
+>
 
 ### Step 1: Decide on a CMS to use
 
