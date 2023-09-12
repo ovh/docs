@@ -32,6 +32,7 @@ El registro MX permite asociar un dominio al servidor de su plataforma de correo
 Los registros MX (**M**ail **e**Xchange) permiten asociar su dominio a los servidores de correo de recepción asociados al servicio de correo. Vamos a basarnos en un ejemplo.
 
 Cuando la dirección **sender@otherdomain.ovh** envía un correo electrónico a **contact@mydomain.ovh**, el servidor de envío de correo (**Outgoing mail server**) envía el siguiente mensaje:
+
 - **(1)** consultar la zona DNS del dominio **mydomain.ovh** y leer los registros **MX**.
 - **(2)** reenviar el mensaje de correo electrónico a la URL del registro **MX** leído.
 
