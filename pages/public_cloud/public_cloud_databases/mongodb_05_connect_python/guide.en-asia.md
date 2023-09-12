@@ -1,7 +1,7 @@
 ---
 title: MongoDB - Connect with Python
 excerpt: Connect to your Public Cloud Databases for MongoDB using the Python programming language
-updated: 2022-07-27
+updated: 2023-09-12
 ---
 
 ## Objective
@@ -60,33 +60,22 @@ laptop$ python --version
 Python 3.9.5
 ```
 
-In the same console, by typing a **pip list** check if **pymongo** is correctly installed :
+In the same console, by typing **pip list | grep pymongo** check if **pymongo** is correctly installed :
 
 ```python
-laptop$  pip list           
-Package                Version
----------------------- -------------------
-brotlipy               0.7.0
-certifi                2021.5.30
-cffi                   1.14.6
-chardet                4.0.0
-conda                  4.10.3
-conda-package-handling 1.7.3
-cryptography           3.4.7
-idna                   2.10
-pip                    21.1.3
-pycosat                0.6.3
-pycparser              2.20
-pymongo                3.12.0
-(...)
+laptop$ pip list | grep pymongo
+pymongo    4.2.0
 ```
 
-In my case, I can find **Python 3.9.5**, and **PyMongo 3.12**. Based on official MongoDB compatibility matrix linked previously, I will be able to connect to MongoDB instances in versions 4.x and 5.
-This is compliant with my current MongoDB 4.4 instance.
+In our case, we can find **Python 3.9.5**, and **PyMongo 4.2**. Based on the official MongoDB compatibility matrix linked previously, we will be able to connect to MongoDB instances in versions 4.x, 5.0 and 6.0.
+This is compliant with our current MongoDB 5.0 instance.
 
-Finally, copy the IP address of your Python environment and save it for later.
-If you don't know how to get your IP, please visit a website like [www.WhatismyIP.com](https://www.whatismyip.com/){.external} from your station hosting the Python environment.
-In our example, we will use the (fake) IP 109.190.200.59.
+### Configure your MongoDB instance to accept incoming connections
+
+In order to be able to connect to your MongoDB instance, you will need to configure your instance to accept incoming connections from the IP address of your Python environment.
+If you don't know how to retrieve your IP, please visit a website such as [myip.ovh](https://myip.ovh/){.external} from the station hosting the Python environment.
+
+Once you know the IP address, follow the steps from this guide : [Configure your MongoDB instance to accept incoming connections](/pages/public_cloud/public_cloud_databases/mongodb_02_manage_control_panel).
 
 We will now follow the official MongoDB documentation to perform our first connection with Python.
 
