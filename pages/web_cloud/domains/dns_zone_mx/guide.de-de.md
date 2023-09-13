@@ -57,11 +57,11 @@ Nachfolgend finden Sie die Konfiguration für OVHcloud MX Plan (Standalone oder 
 
 |Domain|TTL|Eintrag|Priorität|Ziel|
 |---|---|---|---|---|
-|*leer lassen*|3600|MX|1|mx0.mail.ovh.net.|
-|*leer lassen*|3600|MX|5|mx1.mail.ovh.net.|
-|*leer lassen*|3600|MX|50|mx2.mail.ovh.net.|
-|*leer lassen*|3600|MX|100|mx3.mail.ovh.net.|
-|*leer lassen*|3600|MX|200|mx4.mail.ovh.net.|
+|*Leer lassen*|3600|MX|1|mx0.mail.ovh.net.|
+|*Leer lassen*|3600|MX|5|mx1.mail.ovh.net.|
+|*Leer lassen*|3600|MX|50|mx2.mail.ovh.net.|
+|*Leer lassen*|3600|MX|100|mx3.mail.ovh.net.|
+|*Leer lassen*|3600|MX|200|mx4.mail.ovh.net.|
 
 Diese MX-Einträge müssen in der DNS-Zone Ihres Domainnamens konfiguriert werden, wenn Sie einen OVHcloud E-Mail-Dienst nutzen.
 
