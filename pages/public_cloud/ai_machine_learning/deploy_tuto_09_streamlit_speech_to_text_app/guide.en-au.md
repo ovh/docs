@@ -142,7 +142,7 @@ docker build . -t streamlit_app:latest
 
 > [!warning]
 >
-> The shared registry of AI Deploy should only be used for testing purposes. Please consider attaching your own Docker registry. More information about this can be found [here](/pages/public_cloud/ai_machine_learning/training_guide_05_howto_add_registry).
+> The shared registry should only be used for testing purposes. Please consider creating and attaching your own registry. More information about this can be found [here](/pages/public_cloud/ai_machine_learning/gi_07_manage_registry).
 >
 
 Find the address of your shared registry by launching this command:
