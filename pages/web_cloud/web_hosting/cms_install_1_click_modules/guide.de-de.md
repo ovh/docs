@@ -18,17 +18,17 @@ updated: 2023-09-11
 
 ## Voraussetzungen
 
-- Sie verfügen über ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) mit mindestens einer Datenbank.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
-- Verwenden Sie eine neuere PHP-Version und eine kompatible Ausführungsumgebung auf Ihrem OVHcloud Webhosting. Wenn nötig, lesen Sie unsere [Anleitung](/pages/web_cloud/web_hosting/configure_your_web_hosting) zu diesem Thema, um diese Konfiguration schnell zu ändern.
-- Das Verzeichnis (Wurzelverzeichnis), in dem Ihr 1-Klick-Modul installiert wird, muss leer sein oder noch nicht vorhanden.
-- Der Domainname (und gegebenenfalls die Subdomain) Ihrer Website ist auf Ihrem OVHcloud Webhosting als [Multisite](/pages/web_cloud/web_hosting/multisites_configure_multisite) deklariert.
+- Sie verfügen über ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) mit mindestens einer freien Datenbank.
+- Ihr OVHcloud Webhosting verwendet eine aktuelle PHP-Version und eine kompatible Ausführungsumgebung. Wenn nötig, nutzen Sie unsere [Anleitung](/pages/web_cloud/web_hosting/configure_your_web_hosting) zu diesem Thema, um diese Konfiguration schnell anpassen zu können.
+- Falls ein bereits vorhandenes Verzeichnis zur Installation des 1-Klick-Moduls verwendet werden soll, muss dieses leer sein.
+- Der Domainname (und gegebenenfalls die Subdomain) den Sie für Ihre Website verwenden möchten, ist auf Ihrem OVHcloud Webhosting als [Multisite](/pages/web_cloud/web_hosting/multisites_configure_multisite) deklariert.
 
 ## In der praktischen Anwendung
 
 > [!primary]
 >
-> Falls Sie Probleme haben, indem Sie einen der unten beschriebenen Schritte ausführen, lesen Sie unsere spezifische Dokumentation zu den [häufigsten 1-Klick-Modulfehlern](/pages/web_cloud/web_hosting/diagnostic_errors_module1clic).
+> Falls Sie auf Schwierigkeiten beim Ausführen der unten beschriebenen Schritte stoßen, finden Sie Lösungen in unserer [Dokumentation zu den häufigsten Fehlermeldungen bei 1-Klick-Modulen](/pages/web_cloud/web_hosting/diagnostic_errors_module1clic).
 >
 
 ### Schritt 1: Ein CMS auswählen
@@ -89,7 +89,7 @@ Sobald die Installation abgeschlossen ist, erhalten Sie eine E-Mail mit Login-Da
 
 > [!primary]
 >
-> Die Installation und der Empfang der E-Mail können bis zu 15 Minuten dauern, nachdem Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) auf `Installieren`{.action} geklickt haben.
+> Die Installation kann bis zu 15 Minuten dauern, nachdem Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) auf `Installieren`{.action} geklickt haben.
 >
 
 #### Erweiterte Installation eines Moduls
@@ -106,9 +106,9 @@ Geben Sie die Verbindungsdaten zu Ihrer Datenbank ein.
 >
 > Wenn die von Ihnen angegebenen Informationen nicht korrekt sind, wird die Installation abgebrochen. Um dies zu vermeiden, testen Sie zunächst die Verbindung zu Ihrer Datenbank.
 > 
-> Um die Login-Daten zu Ihrer Webhosting-Datenbank zu erfahren, lesen Sie [diese Anleitung](/pages/web_cloud/web_hosting/sql_create_database).
+> Um die Login-Daten zu Ihrer Webhosting-Datenbank zu ermitteln, lesen Sie [diese Anleitung](/pages/web_cloud/web_hosting/sql_create_database).
 >
-> Um die Login-Daten zu einer auf Web Cloud Databases erstellten Datenbank zu erfahren, lesen Sie [diese Anleitung](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
+> Um die Login-Daten zu einer mit Web Cloud Databases erstellten Datenbank herauszufinden, lesen Sie [diese Anleitung](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
 >
 
 ![Datenbank für erweiterte Installation](images/advanced_installation_database.png){.thumbnail}
