@@ -93,7 +93,7 @@ WORKDIR /workspace
 
 > [!primary]
 >
-> This last step is mandatory because streamit needs to be able to write inside the `HOME` directory of the owner of the process in order to work properly.
+> This last step is mandatory because Streamlit needs to be able to write inside the `HOME` directory of the owner of the process in order to work properly.
 
 -   More information about Dockerfiles can be found [here](https://docs.docker.com/engine/reference/builder/)
 -   Direct link to the full Dockerfile can be found here [here](https://github.com/ovh/ai-training-examples/tree/main/apps/streamlit/simple-app/Dockerfile)

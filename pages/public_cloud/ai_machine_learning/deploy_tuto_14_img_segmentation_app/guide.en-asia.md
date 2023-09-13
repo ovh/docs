@@ -175,7 +175,7 @@ Once your data is uploaded, it can be accessed from all OVHcloud AI tools, eithe
 
 ### Build the Docker image from the Dockerfile
 
-Before continuing, **make sure you are in the directory containing the application files** (requirements.txt, packages.txt, Dockerfile, python files).
+Before continuing, **make sure you are in the directory containing the application files** (requirements.txt, Dockerfile, python files).
 
 Once you are in it, launch the following command to build your application image:
 
