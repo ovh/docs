@@ -14,20 +14,18 @@ Les « modules en 1 clic » permettent l'installation facile et rapide d'un site
 
 ## Prérequis
 
-- Disposer d'une offre d'[hébergement web OVHcloud](https://www.ovhcloud.com/fr-ca/web-hosting/) incluant au moins une base de données. Pour vérifier s'il vous reste des bases de données disponibles, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) puis rendez-vous dans la partie `Web Cloud`{.action}. Dans la colonne de gauche, cliquez sur l'onglet `Hébergements`{.action}, choisissez l'hébergement sur lequel vous souhaitez installer un « module en 1 clic » puis cliquez sur l'onglet `Bases de données`{.action}.
-Cliquez sur le bouton `Actions`{.action} au dessus du tableau qui s'affiche et qui liste les bases de données déjà créées avec votre offre d'hébergement web. Si le bouton `Créer une base de données`{.action} est grisée, vous n'avez plus de base de données disponible. 
-Au besoin et en dessous du bouton `Créer une base de données`{.action}, cliquez sur l'un des deux boutons suivants :
-
-- `Commander une base de données`{.action} pour commander une base de données similaire aux bases de données présentes dans le tableau listant les bases de données déjà créées avec votre offre d'hébergement web.
-- `Commander une base de données Web Cloud Databases`{.action} pour commander un serveur de base de données [Web Cloud Databases](https://www.ovhcloud.com/fr-ca/web-cloud/databases/){.external}.
-
+- Disposer d'une offre d'[hébergement web OVHcloud](https://www.ovhcloud.com/fr-ca/web-hosting/) incluant au moins une base de données. 
 - Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
-- Utiliser [une version de PHP compatible](/pages/web_cloud/web_hosting/configure_your_web_hosting) sur votre hébergement web OVHcloud.
-- Avoir [configuré correctement votre fichier .ovhconfig](/pages/web_cloud/web_hosting/configure_your_web_hosting).
+- Utiliser une version récente de PHP et un environnement d'exécution compatible sur votre hébergement web OVHcloud. Si besoin, consultez notre [guide](/pages/web_cloud/web_hosting/configure_your_web_hosting) sur le sujet pour changer rapidement cette configuration.
 - Le répertoire (dossier racine) où sera installé votre « module en 1 clic » doit être vide ou actuellement inexistant.
 - Le domaine (avec sous-domaine si souhaité) qui sera utilisé pour votre site web doit être déclaré en tant que [Multisite](/pages/web_cloud/web_hosting/multisites_configure_multisite) sur votre hébergement web OVHcloud.
 
 ## En pratique
+
+> [!primary]
+>
+> Si vous rencontrez des difficultés en suivant l'une des étapes décrites ci-dessous, consultez notre documentation spécifique sur les [erreurs les plus fréquentes liées aux « modules en 1 clic »](/pages/web_cloud/web_hosting/diagnostic_errors_module1clic). 
+>
 
 ### Étape 1 - choisir correctement son CMS
 
