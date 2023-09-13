@@ -236,7 +236,7 @@ L'API suivante permet d'ajouter de nouveaux serveurs de noms sur votre nom de do
 >> }
 >> ```
 
-Cette route va ajouter les nouveaux serveurs de noms sur le nom de domaine et lancer une tâche de synchronisation `DomainDnsUpdate` auprès du registre. Vous pourrez suivre cette tâche via les [APIs dédiées](/pages/web/domains/api_domain_tasks#view-pending-tasks).
+Cette route va ajouter les nouveaux serveurs de noms sur le nom de domaine et lancer une tâche de synchronisation `DomainDnsUpdate` auprès du registre. Vous pourrez suivre cette tâche via les [APIs dédiées](/pages/web_cloud/domains/api_domain_tasks#view-pending-tasks).
 
 Il est aussi possible de remplacer complètement la déclaration des serveurs de noms d'un domaine en passant par l'API suivante :
 
@@ -276,7 +276,7 @@ Il est aussi possible de remplacer complètement la déclaration des serveurs de
 >> }
 >> ```
 
-Cette route va remplacer la déclaration des serveurs de noms sur le nom de domaine et, comme la route précédente, lancer une tâche de synchronisation `DomainDnsUpdate` auprès du registre que vous pourrez suivre via les [APIs dédiées](/pages/web/domains/api_domain_tasks#view-pending-tasks).
+Cette route va remplacer la déclaration des serveurs de noms sur le nom de domaine et, comme la route précédente, lancer une tâche de synchronisation `DomainDnsUpdate` auprès du registre que vous pourrez suivre via les [APIs dédiées](/pages/web_cloud/domains/api_domain_tasks#view-pending-tasks).
 
 Il est aussi possible de supprimer un serveur de noms déclaré sur un nom de domaine via l'API suivante :
 
@@ -307,7 +307,7 @@ Il est aussi possible de supprimer un serveur de noms déclaré sur un nom de do
 >> }
 >> ```
 
-Cette route va supprimer le serveur de noms déclaré sur votre nom de domaine et lancer une tâche de mise à jour `DomainDnsUpdate` auprès du registre que vous pourrez suivre via les [APIs dédiées](/pages/web/domains/api_domain_tasks#view-pending-tasks).
+Cette route va supprimer le serveur de noms déclaré sur votre nom de domaine et lancer une tâche de mise à jour `DomainDnsUpdate` auprès du registre que vous pourrez suivre via les [APIs dédiées](/pages/web_cloud/domains/api_domain_tasks#view-pending-tasks).
 
 ## Déclaration des glue records <a name="glue-records"></a>
 
@@ -429,7 +429,7 @@ L'API suivante permet d'ajouter un **glue record** sur votre nom de domaine.
 >> }
 >> ```
 
-Cette route va lancer une tâche `DomainHostCreate` pour créer le **host** auprès du registre du nom de domaine. Vous pourrez suivre cette tâche via les [APIs dédiées](/pages/web/domains/api_domain_tasks#view-pending-tasks).
+Cette route va lancer une tâche `DomainHostCreate` pour créer le **host** auprès du registre du nom de domaine. Vous pourrez suivre cette tâche via les [APIs dédiées](/pages/web_cloud/domains/api_domain_tasks#view-pending-tasks).
 
 > [!warning]
 >
@@ -477,7 +477,7 @@ Il est aussi possible de mettre à jour un **glue record** via l'API suivante :
 >> ```
 
 Cette route va lancer une tâche `DomainHostUpdate` pour modifier le **host** auprès du registre du nom de domaine.
-Vous pourrez suivre cette tâche via les [APIs dédiées](/pages/web/domains/api_domain_tasks#view-pending-tasks).
+Vous pourrez suivre cette tâche via les [APIs dédiées](/pages/web_cloud/domains/api_domain_tasks#view-pending-tasks).
 Vous n'aurez pas besoin de redéclarer le serveur de nom sur le nom de domaine.
 
 Il aussi possible de supprimer un **glue record** mais, pour cela, il faudra commencer par enlever le **host** de la déclaration faite sur le nom de domaine en utilisant les [APIs des serveurs de nom](#modify-name-servers-declared).
@@ -514,4 +514,4 @@ Vous pouvez appeler l'API suivante pour supprimer le **glue record** :
 >> ```
 
 Cette route va lancer une tâche `DomainHostDelete` pour supprimer le **host** auprès du registre du nom de domaine.
-Vous pourrez suivre cette tâche via les [APIs dédiées](/pages/web/domains/api_domain_tasks#view-pending-tasks).
+Vous pourrez suivre cette tâche via les [APIs dédiées](/pages/web_cloud/domains/api_domain_tasks#view-pending-tasks).

@@ -82,7 +82,7 @@ Una volta scelto il metodo di ripristino più adatto alle tue esigenze, prosegui
 > 
 > In questo caso:
 >
-> - I nostri team inviano un'email al [contatto amministratore](/pages/account/customer/managing_contacts#accedi-alla-pagina-di-gestione-dei-contatti) dell'hosting. 
+> - I nostri team inviano un'email al [contatto amministratore](/pages/account_and_service_management/account_information/managing_contacts#accedi-alla-pagina-di-gestione-dei-contatti) dell'hosting. 
 > - Lo stato di "manutenzione" compare nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Nella sezione `Web Cloud`{.action}, clicca sul tuo servizio nella sezione `Hosting`{.action} e poi sulla scheda `Informazioni generali`{.action}.
 > - Il(i) sito(i) ospita(i) mostra(no) una pagina "403 Forbidden".
 >

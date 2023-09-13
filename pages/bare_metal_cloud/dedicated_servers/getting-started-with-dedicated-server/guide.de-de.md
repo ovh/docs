@@ -1,7 +1,7 @@
 ---
 title: 'Erste Schritte mit einem Dedicated Server'
 excerpt: 'Erfahren Sie hier, wie Sie Ihren neuen Dedicated Server verwalten'
-updated: 2023-08-24
+updated: 2023-09-11
 ---
 
 > [!primary]
@@ -10,7 +10,7 @@ updated: 2023-08-24
 
 ## Ziel
 
-Ein dedizierter Server ist ein physischer Server in einem unserer Rechenzentren. Im Gegensatz zum Webhosting (auch "Shared Hosting" genannt), bei dem die technische Verwaltung von OVHcloud geleistet wird, sind Sie allein für die Verwaltung Ihres Servers verantwortlich.
+Ein dedizierter Server ist ein physischer Server in einem unserer Rechenzentren. Im Gegensatz zum Webhosting (auch "Shared Hosting" genannt), bei dem die technische Verwaltung von OVHcloud geleistet wird, sind Sie für die Verwaltung Ihres Servers allein verantwortlich.
 
 **Diese Anleitung erläutert einige Grundlagen zur Erstverwendung eines OVHcloud Dedicated Server.**
 
@@ -18,7 +18,7 @@ Ein dedizierter Server ist ein physischer Server in einem unserer Rechenzentren.
 
 ## Voraussetzungen
 
-- Sie verfügen über einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/){.external} in Ihrem Kunden-Account.
+- Sie verfügen über einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/) in Ihrem Kunden-Account.
 - Sie haben administrativen Zugriff (Root) auf Ihren Server über SSH oder RDP (optional). 
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
@@ -34,7 +34,7 @@ Wenn Ihr Dedicated Server während des Bestellprozesses zum ersten Mal konfiguri
 
 Sie können Ihren Server in wenigen Schritten in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) reinstallieren und ein anderes Betriebssystem auswählen. Klicken Sie im Tab `Allgemeine Informationen`{.action} auf `...`{.action} neben `System (OS)` und danach auf `Installieren`{.action}.
 
-![Button Reinstallieren](images/reinstalling-your-server-00.png){.thumbnail}
+![Button Reinstallieren](images/reinstalling-your-server-01.png){.thumbnail}
 
 Wählen Sie im Popup-Fenster eine der Installationsoptionen aus:
 
@@ -53,13 +53,13 @@ Klicken Sie auf `Weiter`{.action}, um fortzufahren.
 
 ![Template-Auswahl](images/reinstalling-your-server-02.png){.thumbnail}
 
-Nachdem Sie `Installation mit einem OVH Template`{.action} ausgewählt haben, können Sie das gewünschte Betriebssystem in den Menüs auswählen.
+Nachdem Sie `Installation mit einem OVHcloud Template`{.action} ausgewählt haben, können Sie das gewünschte Betriebssystem in den Menüs auswählen.
 
 ![Operationelle Auswahl](images/reinstalling-your-server-03.png){.thumbnail}
 
 Wenn Sie das Partitionsschema Ihres Betriebssystems ändern müssen, setzen Sie einen Haken in dem Feld "Konfiguration der Partitionen anpassen", bevor Sie auf `Weiter`{.action} klicken.
 
-![Konfiguration der Partitionen anpassen](images/SSH_02.png){.thumbnail}
+![Konfiguration der Partitionen anpassen](images/reinstalling-your-server-04.png){.thumbnail}
 
 Klicken Sie nach Abschluss der Anpassungen auf `Weiter`{.action}, um zur Zusammenfassung zu gelangen.
 
@@ -67,23 +67,23 @@ Klicken Sie nach Abschluss der Anpassungen auf `Weiter`{.action}, um zur Zusamme
 
 Wenn Sie ein GNU/Linux-Betriebssystem installieren, können Sie Ihren SSH-Schlüssel im letzten Schritt des Installationsprozesses hinzufügen.
 
-![Partitionskonfiguration personalisieren](images/SSH_03.png){.thumbnail}
+![SSH-Schlüssel personalisieren](images/SSH_01.png){.thumbnail}
 
 Wenn ein SSH-Schlüssel bereits hinterlegt ist, erscheint er unten im Drop-down-Menü unter "SSH-Schlüssel". Falls nicht, fügen Sie zuerst einen im Bereich "Meine Dienstleistungen" hinzu.
 
 Öffnen Sie hierzu die Seitenleiste, indem Sie oben rechts auf Ihren Namen klicken und nutzen Sie dann den Shortcut `Produkte und Dienstleistungen`{.action}.
 
-![Partitionskonfiguration personalisieren](images/SSH_keys_panel_2022.png){.thumbnail}
+![SSH-Schlüssel personalisieren](images/SSH_02.png){.thumbnail}
 
 Gehen Sie in "Meine Dienste" auf den Tab `SSH-Schlüssel`{.action} und klicken Sie auf `SSH-Schlüssel hinzufügen`{.action}.
 
-![Partitionskonfiguration personalisieren](images/SSH_14.png){.thumbnail}
+![SSH-Schlüssel personalisieren](images/SSH_03.png){.thumbnail}
 
 Da es sich um die Einrichtung eines Dedicated Servers handelt, wählen Sie im Drop-down-Menü "Dedicated" aus (ebenso gültig für einen VPS).
 
 Geben Sie im neuen Fenster eine ID (Name Ihrer Wahl) und den Schlüssel selbst (vom Typ RSA, ECDSA oder Ed25519) in die entsprechenden Felder ein.
 
-![Partitionskonfiguration personalisieren](images/SSH_12.png){.thumbnail}
+![SSH-Schlüssel personalisieren](images/SSH_04.png){.thumbnail}
 
 Weitere Informationen zur Erstellung von SSH-Schlüsseln finden Sie in unserer [Anleitung](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated).
 
@@ -141,7 +141,7 @@ Wenn Sie Windows Server einsetzen, verwenden Sie [diese Anleitung](/pages/bare_m
 
 ### OVHcloud Monitoring <a name="monitoring-server"></a> 
 
-Sie können den Monitoring-Status eines Servers im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) vom Tab `Allgemeine Informationen`{.action} aus kontrollieren (Abschnitt **Dienststatus**).
+Sie können den Monitoring-Status eines Servers im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) vom Tab `Allgemeine Informationen`{.action} aus einrichten (Abschnitt **Dienststatus**).
 
 ![Monitoring](images/monitoring-your-server.png){.thumbnail}
 

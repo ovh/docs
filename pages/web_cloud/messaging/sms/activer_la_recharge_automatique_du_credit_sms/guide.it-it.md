@@ -39,7 +39,7 @@ Per visualizzare i costi, in crediti, per l’invio dei tuoi SMS in base alle lo
 >
 > Un SMS può contenere un numero limitato di caratteri in base alla codifica. Per maggiori dettagli sulla codifica e i caratteri autorizzati, consulta questa guida: 
 > 
-> [Inviare SMS dallo Spazio Cliente OVHcloud](/pages/telecom/sms/envoyer_des_sms_depuis_mon_espace_client#step--2-scrivi-il-tuo-sms)
+> [Inviare SMS dallo Spazio Cliente OVHcloud](/pages/web_cloud/messaging/sms/envoyer_des_sms_depuis_mon_espace_client#step--2-scrivi-il-tuo-sms)
 >
 
 ### Ricarica automatica

@@ -1,7 +1,6 @@
 ---
 title: Configurer le NSX-v Edge Firewall
 excerpt: Créer des règles de pare-feu
-legacy_guide_number: '7766384'
 updated: 2021-11-25
 ---
 

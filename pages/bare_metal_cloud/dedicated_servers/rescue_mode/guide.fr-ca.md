@@ -1,7 +1,7 @@
 ---
 title: 'Activer et utiliser le mode rescue'
 excerpt: 'Comment activer et utiliser le mode rescue sur un serveur dédié'
-updated: 2023-02-07
+updated: 2023-09-05
 ---
 
 ## Objectif
@@ -29,7 +29,7 @@ Prenez soin d'effectuer une sauvegarde de vos données si vous ne disposez pas e
 ## En pratique
 
 > [!warning]
-> Veuillez noter que si vous avez défini une clé SSH par défaut dans votre espace pour les produits dédiés, vous ne recevrez pas de mot de passe root lors du redémarrage d'un serveur en mode rescue. Dans ce cas, vous devez d'abord désactiver la clé SSH par défaut avant de redémarrer le serveur en mode rescue. Pour ce faire, nous vous invitons à consulter cette [section](/pages/cloud/dedicated/creating-ssh-keys-dedicated#disablesshkey) du guide correspondant.
+> Veuillez noter que si vous avez défini une clé SSH par défaut dans votre espace pour les produits dédiés, vous ne recevrez pas de mot de passe root lors du redémarrage d'un serveur en mode rescue. Dans ce cas, vous devez d'abord désactiver la clé SSH par défaut avant de redémarrer le serveur en mode rescue. Pour ce faire, nous vous invitons à consulter cette [section](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated#disablesshkey) du guide correspondant.
 >
 
 Le mode rescue ne peut être activé que depuis votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc). Sélectionnez votre serveur en allant dans la partie `Bare Metal Cloud`{.action}, puis `Serveurs dédiés`{.action}. 
@@ -62,13 +62,13 @@ Lorsque vous aurez terminé vos tâches en mode rescue, n'oubliez pas de redéfi
 
 Après le redémarrage de votre serveur, vous recevrez un e-mail avec vos identifiants de connexion en mode rescue. Cet e-mail est également disponible dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc). Cliquez sur le nom associé à votre identifiant client dans le coin supérieur droit de votre espace client, puis sur `E-mails de service`{.action}.
 
-Vous devrez ensuite accéder à votre serveur en ligne de commande ou via un outil SSH, en utilisant le mot de passe root généré pour le mode rescue.
+Vous devrez ensuite accéder à votre serveur en ligne de commande ou via un outil [SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction), en utilisant le mot de passe root généré pour le mode rescue.
 
 Par exemple :
 
 ```bash
-ssh root@your_server_IP
-root@your_server_password:
+ssh root@ns3956771.ip-169-254-10.eu
+root@ns3956771.ip-169-254-10.eu's password:
 ```
 
 > [!warning]
@@ -85,8 +85,10 @@ La plupart des modifications apportées à votre serveur via SSH en mode rescue 
 Le montage des partitions est réalisé à l’aide de la commande `mount` en SSH. Vous devez préalablement lister vos partitions, afin de pouvoir récupérer le nom de celle que vous souhaitez monter. Vous pouvez vous référer aux exemples de code suivants :
 
 ```bash
-rescue-customer:~# fdisk -l
+fdisk -l
+```
 
+```console
 Disk /dev/hda 40.0 GB, 40020664320 bytes
 255 heads, 63 sectors/track, 4865 cylinders
 Units = cylinders of 16065 * 512 = 8225280 bytes
@@ -107,7 +109,7 @@ Device Boot Start End Blocks Id System
 Lorsque vous avez identifié le nom de la partition que vous voulez monter, utilisez la commande ci-dessous :
 
 ```bash
-rescue-customer:~# mount /dev/hda1 /mnt/
+mount /dev/hda1 /mnt/
 ```
 
 > [!primary]
@@ -121,52 +123,37 @@ Pour quitter le mode rescue, redéfinissez le mode de démarrage sur `Booter sur
 
 #### Montage d'un datastore
 
-Vous pouvez monter un datastore VMware de la même manière que décrite précédemment. Tout d'abord, installez le paquet nécessaire :
+Vous pouvez monter un datastore VMware de la même manière que décrite dans l'étape précédente.
+
+Listez vos partitions afin de récupérer le nom de la partition du datastore :
 
 ```bash
-rescue-customer:~# apt-get update && apt-get install vmfs-tools
+fdisk -l
 ```
 
-Listez ensuite vos partitions afin de récupérer le nom de la partition du datastore :
+Montez la partition avec la commande suivante, en remplaçant `sdbX` par la valeur identifiée à l'étape précédente :
 
 ```bash
-rescue-customer:~# fdisk -l
+vmfs-fuse /dev/sdbX /mnt
 ```
 
-À présent, montez la partition avec la commande suivante, en remplaçant `sdbX` par la valeur identifiée à l'étape précédente :
+Si vous avez des datastores `VMFS 6`, accédez au dossier `sbin` et créez le dossier de montage :
 
 ```bash
-rescue-customer:~# vmfs-fuse /dev/sdbX /mnt
+cd /usr/local/sbin/
+mkdir /mnt/datastore
 ```
 
-Si vous possédez des datastores de type `VMFS 6`, vous devez installer manuellement l'outil `vmfs6-tools` dans l'environnement du mode rescue :
+Listez vos partitions afin de récupérer le nom de la partition du datastore :
 
 ```bash
-rescue-customer:~# apt-get update && apt-get upgrade
-# apt-get install git uuid-dev libfuse-dev pkg-config gcc
-# git clone https://salsa.debian.org/debian/vmfs6-tools.git
-# cd vmfs6-tools
-# make
-# make install
+fdisk -l
 ```
 
-Accédez au dossier `sbin` pour créer le dossier de montage :
+Montez la partition avec la commande suivante, en remplaçant `sdbX` par la valeur identifiée à l'étape précédente :
 
 ```bash
-rescue-customer:~# cd /usr/local/sbin/
-# mkdir /mnt/datastore
-```
-
-Listez ensuite vos partitions afin de récupérer le nom de la partition du datastore :
-
-```bash
-rescue-customer:~# fdisk -l
-```
-
-À présent, montez la partition avec la commande suivante, en remplaçant `sdbX` par la valeur identifiée à l'étape précédente :
-
-```bash
-rescue-customer:~# vmfs6-fuse /dev/sdbX /mnt/datastore/
+vmfs6-fuse /dev/sdbX /mnt/datastore/
 ```
 
 Pour quitter le mode rescue, redéfinissez le mode de démarrage sur `Booter sur le disque dur`{.action} dans l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) et redémarrez le serveur en ligne de commande.

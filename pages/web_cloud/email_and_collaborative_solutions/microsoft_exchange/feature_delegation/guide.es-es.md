@@ -61,9 +61,9 @@ Una vez configurada la delegación, ya puede empezar a utilizarla. Compruebe que
 
 El procedimiento es distinto según el permiso, y depende también de la aplicación (cliente de correo local o web) que utilice para conectarse a su cuenta de correo. Continúe leyendo esta guía en el apartado correspondiente al permiso o permisos que haya delegado.
 
-- [Utilizar el permiso de acceso completo](/pages/web/microsoft-collaborative-solutions/feature_delegation#21-utilizar-el-permiso-de-acceso-completo){.external}
-- [Utilizar el permiso de «enviar como»](/pages/web/microsoft-collaborative-solutions/feature_delegation#22-utilizar-el-permiso-de-enviar-como){.external}
-- [Utilizar el permiso de «enviar en nombre de»](/pages/web/microsoft-collaborative-solutions/feature_delegation#23-utilizar-el-permiso-de-enviar-en-nombre-de){.external}
+- [Utilizar el permiso de acceso completo](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_delegation#21-utilizar-el-permiso-de-acceso-completo){.external}
+- [Utilizar el permiso de «enviar como»](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_delegation#22-utilizar-el-permiso-de-enviar-como){.external}
+- [Utilizar el permiso de «enviar en nombre de»](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_delegation#23-utilizar-el-permiso-de-enviar-en-nombre-de){.external}
 
 > [!warning]
 >

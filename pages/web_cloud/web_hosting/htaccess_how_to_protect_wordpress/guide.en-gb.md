@@ -110,7 +110,7 @@ There are several ways to modify the settings that will change the server's beha
 
 > [!warning]
 >
-> Before following the steps below, you must redirect HTTP requests to HTTPS. To do this, follow the instructions in our guide [“Activating HTTPS on your website with an SSL certificate”](/pages/web/hosting/ssl-activate-https-website#step-1-activate-the-ssl-certificate-on-the-web-hosting-plan).
+> Before following the steps below, you must redirect HTTP requests to HTTPS. To do this, follow the instructions in our guide [“Activating HTTPS on your website with an SSL certificate”](/pages/web_cloud/web_hosting/ssl-activate-https-website#step-1-activate-the-ssl-certificate-on-the-web-hosting-plan).
 
 ### Prevent the display of directories and subdirectories
 

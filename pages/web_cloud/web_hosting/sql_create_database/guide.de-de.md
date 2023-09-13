@@ -110,7 +110,7 @@ Es wird empfohlen, für Skripte und Konfigurationsdateien immer den tatsächlich
 
 Übersteigt eine Webhosting-Datenbank den empfohlenen Speicherplatz, wird diese automatisch in den Modus "read only" / "select only" versetzt. Der Administrator erhält eine Benachrichtigung per E-Mail.
 
-Nachdem die Datenbank optimiert (bereinigt) wurde, können Sie Ihre Quota über Ihr OVHcloud Kundencenter neu berechnen, damit die Datenbank entsperrt wird. Es wird empfohlen, die Datenbank herunterzuladen, den Inhalt lokal zu überarbeiten und die Datenbank anschließend per Import zu ersetzen. Weitere Informationen hierzu finden Sie in [dieser Anleitung](/pages/web/hosting/optimise_your_website_performance#schritt-7-ihre-datenbank-optimieren).
+Nachdem die Datenbank optimiert (bereinigt) wurde, können Sie Ihre Quota über Ihr OVHcloud Kundencenter neu berechnen, damit die Datenbank entsperrt wird. Es wird empfohlen, die Datenbank herunterzuladen, den Inhalt lokal zu überarbeiten und die Datenbank anschließend per Import zu ersetzen. Weitere Informationen hierzu finden Sie in [dieser Anleitung](/pages/web_cloud/web_hosting/optimise_your_website_performance#schritt-7-ihre-datenbank-optimieren).
 
 ## Weiterführende Informationen
 

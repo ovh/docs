@@ -1,6 +1,6 @@
 ---
 title: Rescheduling a maintenance on your Hosted Private Cloud
-excerpt: Find out how to postpone a planned maintenance on your Hosted Private Cloud powered by VMware
+excerpt: Find out how to postpone a planned maintenance on your VMware on OVHcloud solution
 updated: 2022-11-30
 ---
 
@@ -13,12 +13,12 @@ When a maintenance is scheduled on your Hosted Private Cloud service, you will b
 >
 > For your information, when a maintenance date can be changed by you, the proposed new dates are within a reduced time interval.
 
-**This guide explains how to move the date of a scheduled maintenance on your Hosted Private Cloud powered by VMware, via your OVHcloud Control Panel or the OVHcloud API.**
+**This guide explains how to move the date of a scheduled maintenance on your VMware on OVHcloud solution, via your OVHcloud Control Panel or the OVHcloud API.**
 
 ## Requirements
 
 - You have received a maintenance notification email specifically stating that you can **change the maintenance date**. Otherwise, the maintenance cannot be rescheduled.
-- You are the administrative or technical contact for the [Hosted Private Cloud powered by VMware](https://www.ovhcloud.com/en/enterprise/products/hosted-private-cloud/) infrastructure.
+- You are the administrative or technical contact for the [VMware on OVHcloud solution](https://www.ovhcloud.com/en/enterprise/products/hosted-private-cloud/) infrastructure.
 - You have access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) or the [API console for your services](https://ca.api.ovh.com/).
 
 ## Instructions

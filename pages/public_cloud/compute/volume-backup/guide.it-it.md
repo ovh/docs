@@ -38,7 +38,7 @@ Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanag
 
 Apri il menu `Block Storage`{.action} nella barra di navigazione a sinistra con **Storage**.
 
-A destra del volume, clicca sul pulsante `...`{.action} poi su `Crea un backup`{.action}. Non è necessario scollegare il volume dell'istanza Se vuoi scollegare il tuo volume dall'istanza, consulta questa [sezione](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance#con-linux) della guida corrispondente per Linux e questa [sezione](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance#con-windows) per Windows.
+A destra del volume, clicca sul pulsante `...`{.action} poi su `Crea un backup`{.action}. Non è necessario scollegare il volume dell'istanza Se vuoi scollegare il tuo volume dall'istanza, consulta questa [sezione](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance#con-linux) della guida corrispondente per Linux e questa [sezione](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance#con-windows) per Windows.
 
 ![Volume Backup - creazione](images/volumebackup01.png){.thumbnail}
 

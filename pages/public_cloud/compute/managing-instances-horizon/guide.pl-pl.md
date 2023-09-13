@@ -17,7 +17,7 @@ Oprócz Panelu klienta OVHcloud możesz również zarządzać projektami Public 
 ## Wymagania początkowe
 
 - Utworzenie instancji Public Cloud w [Panelu klienta OVHcloud](/pages/public_cloud/compute/public-cloud-first-steps) lub w [interfejsie Horizon](/pages/public_cloud/compute/create_instance_in_horizon).
-- [Utworzenie klucza SSH](/pages/platform/public-cloud/public-cloud-first-steps#krok-1-utworzenie-kluczy-ssh).
+- [Utworzenie klucza SSH](/pages/public_cloud/compute/public-cloud-first-steps#krok-1-utworzenie-kluczy-ssh).
 
 ## W praktyce
 
@@ -64,8 +64,8 @@ W interfejsie zarządzania instancją wybierz odpowiednią opcję z rozwijanej l
 
 ![public-cloud](images/list2022.png){.thumbnail}
 
-- Attach Interface: ta opcja pozwala na dodanie jednego lub kilku prywatnych interfejsów do Twojej instancji za pośrednictwem sieci VLAN. Więcej informacji znajdziesz w [tej części](/pages/platform/network-services/getting-started-07-creating-vrack#dodawanie-prywatnego-interfejsu) odpowiedniego przewodnika.
-- Detach Interface: ta opcja pozwala na usunięcie interfejsu związanego z instancją. Więcej informacji znajdziesz w [tej części](/pages/platform/network-services/getting-started-07-creating-vrack#usuwanie-prywatnego-interfejsu) odpowiedniego przewodnika.
+- Attach Interface: ta opcja pozwala na dodanie jednego lub kilku prywatnych interfejsów do Twojej instancji za pośrednictwem sieci VLAN. Więcej informacji znajdziesz w [tej części](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack#dodawanie-prywatnego-interfejsu) odpowiedniego przewodnika.
+- Detach Interface: ta opcja pozwala na usunięcie interfejsu związanego z instancją. Więcej informacji znajdziesz w [tej części](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack#usuwanie-prywatnego-interfejsu) odpowiedniego przewodnika.
 - Edit Instance: ta opcja pozwala na zmianę nazwy instancji i [grup zabezpieczeń](/pages/public_cloud/compute/setup_security_group).
 
 > [!warning]

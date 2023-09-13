@@ -56,7 +56,7 @@ Une fois connecté, vous pourrez prendre note de votre identifiant qui est affic
 
 ### J'ai perdu mon mot de passe
 
-En cas de perte ou d'oubli de votre mot de passe, consultez [ce guide détaillant la marche à suivre pour le modifier](/pages/account/customer/manage-ovh-password#si-vous-ne-connaissez-plus-votre-mot-de-passe-actuel).
+En cas de perte ou d'oubli de votre mot de passe, consultez [ce guide détaillant la marche à suivre pour le modifier](/pages/account_and_service_management/account_information/manage-ovh-password#si-vous-ne-connaissez-plus-votre-mot-de-passe-actuel).
 
 ### J'ai perdu mon mot de passe et mon adresse e-mail principale n'est plus valide
 
@@ -64,13 +64,13 @@ Dans ce cas de figure, la procédure de réinitialisation du mot de passe ne peu
 
 Si vous avez renseigné une adresse e-mail de secours, vous pouvez contacter le support OVHcloud au 1-855-684-5463 afin que cette adresse de secours devienne l'adresse e-mail principale.
 
-Une fois cette action effectuée, il est essentiel de [renseigner une **nouvelle** adresse e-mail de secours](/pages/account/customer/all_about_username#backup-email) dans votre compte.
+Une fois cette action effectuée, il est essentiel de [renseigner une **nouvelle** adresse e-mail de secours](/pages/account_and_service_management/account_information/all_about_username#backup-email) dans votre compte.
 
 ### La double authentification est active sur mon compte mais mon téléphone a été volé
 
 Dans ce cas de figure, vous pouvez utiliser les codes de secours de la double authentification, utiliser un autre périphérique, ou désactiver la double authentification.
 
-Consultez les démarches appropriées sur notre guide « [Sécuriser son compte OVHcloud avec la double authentification](/pages/account/customer/secure-ovhcloud-account-with-2fa#que-faire-si-lun-de-mes-peripheriques-est-perdu-ou-cesse-de-fonctionner) ».
+Consultez les démarches appropriées sur notre guide « [Sécuriser son compte OVHcloud avec la double authentification](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa#que-faire-si-lun-de-mes-peripheriques-est-perdu-ou-cesse-de-fonctionner) ».
 
 ### Je n'ai pas activé la double authentification sur mon compte mais on me demande quand même un code
 

@@ -1,7 +1,6 @@
 ---
 title: Object Storage Swift - Configure automatic object deletion
 excerpt: Configure automatic object deletion
-legacy_guide_number: g1950
 updated: 2021-10-27
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: 'Aumentar las cuotas de Public Cloud'
 excerpt: 'Cómo aumentar el límite en Public Cloud'
-legacy_guide_number: g1904
 updated: 2023-05-03
 ---
 

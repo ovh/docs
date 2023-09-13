@@ -78,7 +78,7 @@ In the Managed Kubernetes Service Dashboard, we can see the cluster, with the ch
 
 ### Setting up the PCI
 
-Now we can create a new Public Cloud instance inside the vRack, by following the [Integrating an instance into vRack](/pages/platform/network-services/getting-started-07-creating-vrack#step-3-integrating-an-instance-into-vrack) guide.
+Now we can create a new Public Cloud instance inside the vRack, by following the [Integrating an instance into vRack](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack#step-3-integrating-an-instance-into-vrack) guide.
 
 We are going to create an Ubuntu instance:
 

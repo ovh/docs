@@ -22,4 +22,4 @@ Secure Shell (SSH) is a secure, encrypted connection between your computer and t
 
 Certificate-based authentication will be used automatically when you use the [WebPaas CLI](/pages/web_cloud/web_paas_powered_by_platform_sh/development/development-cli) and run `webpaas ssh`.  You may force a login using `webpaas login -f` on the command line, provided you have a web browser available.
 
-If you wish to use keypair authentication, see the [SSH page](/pages/web/web-paas/development-ssh#keypair-based-authentication).
+If you wish to use keypair authentication, see the [SSH page](/pages/web_cloud/web_paas_powered_by_platform_sh/development/development-ssh#keypair-based-authentication).

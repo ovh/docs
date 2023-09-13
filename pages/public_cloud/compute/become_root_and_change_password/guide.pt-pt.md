@@ -16,14 +16,14 @@ Para realizar determinadas tarefas num servidor (como a instalação de pacotes,
 
 ## Requisitos
 
-- Uma [instância Public Cloud ](/pages/platform/public-cloud/public-cloud-first-steps#3o-passo-criacao-de-uma-instancia) na sua conta OVHcloud
+- Uma [instância Public Cloud ](/pages/public_cloud/compute/public-cloud-first-steps#3o-passo-criacao-de-uma-instancia) na sua conta OVHcloud
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
 
 ## Instruções
 
 ### Definição da password "root" <a name="settingtherootpassword"></a>
 
-Em primeiro lugar, estabelecer uma [ligação SSH](/pages/platform/public-cloud/public-cloud-first-steps#4o-passo-conexao-a-instancia) ao seu servidor com o seu utilizador predefinido.
+Em primeiro lugar, estabelecer uma [ligação SSH](/pages/public_cloud/compute/public-cloud-first-steps#4o-passo-conexao-a-instancia) ao seu servidor com o seu utilizador predefinido.
 
 Para isso, utilize o comando indicado abaixo e defina uma palavra-passe para o utilizador “root” (por motivos de segurança, a palavra-passe não é mostrada):
 

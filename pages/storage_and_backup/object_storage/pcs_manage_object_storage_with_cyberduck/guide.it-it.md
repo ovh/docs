@@ -1,7 +1,6 @@
 ---
 title: Object Storage Swift - Gestisci il tuo Object Storage con CyberDuck
 excerpt: Come utilizzare il tuo Object Storage con Cyberduck
-legacy_guide_number: g1868
 updated: 2021-06-18
 ---
 
@@ -27,7 +26,7 @@ Se non conosci la gestione dello storage da riga di comando, alcune soluzioni gr
 ## Prerequisiti
 
 - Scarica e installa [Cyberduck](https://cyberduck.io/).
-- Disporre delle credenziali utente (*OS_USERNAME*) e progetto (*OS_PROJECT_NAME* o *OS_TENANT_NAME*) è possibile scaricare il file "OpenRC" nel menu [Users and Roles](/pages/platform/public-cloud/loading_openstack_environment_variables#step-1-recupera-le-variabili) dallo [Spazio Cliente Public Cloud OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
+- Disporre delle credenziali utente (*OS_USERNAME*) e progetto (*OS_PROJECT_NAME* o *OS_TENANT_NAME*) è possibile scaricare il file "OpenRC" nel menu [Users and Roles](/pages/public_cloud/compute/loading_openstack_environment_variables#step-1-recupera-le-variabili) dallo [Spazio Cliente Public Cloud OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
 - Disporre della password utente OpenStack
 
 Per modificare la password utente OpenStack, consulta [questa guida](/pages/public_cloud/compute/change_openstack_user_password_in_horizon).

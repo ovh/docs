@@ -55,7 +55,7 @@ Kliknij przycisk `Dodaj adres IP`{.action}, aby dodać adresy IP do tej listy.
 
 ### Zarządzanie nadawcami i zasileniami
 
-Zapoznaj się z naszymi przewodnikami na temat [zarządzanie nadawcami](/pages/telecom/sms/envoyer_des_sms_depuis_mon_espace_client#etap-3-wybor-nadawcy-wiadomosci-sms) oraz na temat [zarządzanie zasileniami SMS i automatycznym doładowaniem](/pages/web_cloud/messaging/sms/activer_la_recharge_automatique_du_credit_sms).
+Zapoznaj się z naszymi przewodnikami na temat [zarządzanie nadawcami](/pages/web_cloud/messaging/sms/envoyer_des_sms_depuis_mon_espace_client#etap-3-wybor-nadawcy-wiadomosci-sms) oraz na temat [zarządzanie zasileniami SMS i automatycznym doładowaniem](/pages/web_cloud/messaging/sms/activer_la_recharge_automatique_du_credit_sms).
 
 ## Sprawdź również
 

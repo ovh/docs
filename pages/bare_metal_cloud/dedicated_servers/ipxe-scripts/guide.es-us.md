@@ -111,7 +111,7 @@ Observará que el valor del atributo `bootScript` es ahora cero.
 
 ## Más información <a name="gofurther"></a>
 
-[Reinicio del servidor dedicado](/pages/cloud/dedicated/getting-started-with-dedicated-server#reboot)
+[Reinicio del servidor dedicado](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server#reboot)
 
 [Activar y utilizar el modo de rescate](/pages/bare_metal_cloud/dedicated_servers/rescue_mode)
 

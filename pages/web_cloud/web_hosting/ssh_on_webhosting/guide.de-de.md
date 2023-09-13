@@ -105,8 +105,8 @@ Je nach der PHP-Version, die Sie verwenden möchten, kann es sein, dass die Ausf
 
 ## Weiterführende Informationen
 
-[Konfiguration Ihres Webhostings bearbeiten](/pages/web_cloud/web_hosting/ovhconfig_modify_system_runtime)
+[Konfiguration Ihres Webhostings bearbeiten](/pages/web_cloud/web_hosting/configure_your_web_hosting)
 
-[.ovhconfig-Datei Ihres Webhostings konfigurieren](/pages/web_cloud/web_hosting/ovhconfig_configuration)
+[.ovhconfig-Datei Ihres Webhostings konfigurieren](/pages/web_cloud/web_hosting/configure_your_web_hosting)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

@@ -6,23 +6,24 @@ updated: 2023-05-17
 
 <style>
  pre {
-     font-size: 14px;
+     font-size: 14px !important;
  }
- pre.console {
-   background-color: #fff; 
-   color: #000;
-   font-family: monospace;
-   padding: 5px;
-   margin-bottom: 5px;
- }
- pre.console code {
-   border: solid 0px transparent;
+ pre.bgwhite {
+   background-color: #fff !important;
+   color: #000 !important;
    font-family: monospace !important;
-   font-size: 0.90em;
-   color: #000;
+   padding: 5px !important;
+   margin-bottom: 5px !important;
+ }
+ pre.bgwhite code {
+   background-color: #fff !important;
+   border: solid 0px transparent !important;
+   font-family: monospace !important;
+   font-size: 0.90em !important;
+   color: #000 !important;
  }
  .small {
-     font-size: 0.90em;
+     font-size: 0.90em !important;
  }
 </style>
 
@@ -46,7 +47,7 @@ El registro DKIM (**D**omain**K**eys **I**dentified **M**ail) permite firmar los
 >
 > Si el dominio no utiliza los servidores DNS de OVHcloud, deberá editar el DKIM desde el panel que le ofrezca el proveedor que gestione la configuración de su dominio.
 >
-> Si el dominio está registrado en OVHcloud, puede comprobar si utiliza nuestra configuración de OVHcloud desde el [área de cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), en la pestaña `Servidores DNS`{.action}, después de seleccionar el dominio correspondiente.
+> Si el dominio está registrado en OVHcloud, puede comprobar si utiliza nuestra configuración de OVHcloud desde el [área de cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), en la pestaña `Zona DNS`{.action}, después de seleccionar el dominio correspondiente.
 >
 
 ## Procedimiento
@@ -121,7 +122,7 @@ Para que funcione este principio de rotación, usaremos lo que se llama **select
 
 **Ejemplo de una parte de la firma DKIM**
 
-<pre class="console"><code>
+<pre class="bgwhite"><code>
 DKIM-Firma: v=1; a=rsa-sha256; d=mydomain.ovh; s=ovhex123456-selector1; c=relajación/relajación; t=1681877341; 
 </code></pre>
 
@@ -566,7 +567,7 @@ Seleccione el servicio de correo en las siguientes pestañas:
 
 > [!warning]
 >
-> El selector DKIM debe estar en estado `inProduction` antes de poder desactivarlo.
+> El selector DKIM debe estar en estado `inProduction` o `ready` antes de poder desactivarlo.
 
 Seleccione el servicio de correo en las siguientes pestañas:
 
@@ -619,6 +620,7 @@ Seleccione el servicio de correo en las siguientes pestañas:
 >> - `selectorName`: escriba el nombre del selector que desee eliminar. <br>
 >> - `domainName`: introduzca el dominio asociado a la plataforma Email Pro. <br>
 >>
+
 
 ### Configurar el DKIM para una solución de correo electrónico fuera de su cuenta de OVHcloud <a name="external-dkim"></a>
 
@@ -704,7 +706,7 @@ v=DKIM1;t=s;p= MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA77VDAIfyhjtoF0DIE5V7 
 
 El registro CNAME es un alias. Esto significa que el valor de destino devuelve a una URL que proporcionará el registro DKIM al servidor que desee que aparezca el registro CNAME. Este tipo de registro CNAME para configurar el DKIM es frecuente cuando se utiliza un servidor de correo Microsoft.
 
-Este es precisamente el tipo de registro utilizado para activar el DKIM en un dominio declarado para una solución Exchange de OVHcloud.
+Este es precisamente el tipo de registro utilizado para activar el DKIM en un dominio declarado para una solución Exchange de OVHcloud. Este procedimiento permite que su proveedor de soluciones de correo gestione por usted la seguridad y la actualización del DKIM.
 
 ### Probar su DKIM <a name="test-dkim"></a>
 
@@ -712,7 +714,7 @@ Le recomendamos que envíe un mensaje de correo electrónico desde una cuenta de
 
 En la cabecera del mensaje de correo electrónico recibido encontrará lo siguiente:
 
-<pre class="console"><code>
+<pre class="bgwhite"><code>
 ARC-Authentication-Results: i=1; mx.example.com;
        dkim=pass header.i=@mydomain.ovh header.s=ovhex123456-selector1 header.b=KUdGjiMs;
        spf=pass (example.com: domain of test-dkim@mydomain.ovh designnates 54.36.141.6 as permitted sender) smtp.mailfrom=test-dkim@mydomain.ovh

@@ -63,8 +63,8 @@ Opiszemy 4 główne etapy, które należy wykonać, aby chronić dostęp do kata
 > 
 > Aby zmienić wersję PHP swoich stron www na Twoim hostingu, zapoznaj się z następującymi przewodnikami:
 > 
-> - [Zmień konfigurację hostingu](/pages/web_cloud/web_hosting/ovhconfig_modify_system_runtime)
-> - [Zmień wersję PHP hostingu](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014)
+> - [Zmień konfigurację hostingu](/pages/web_cloud/web_hosting/configure_your_web_hosting)
+> - [Zmień wersję PHP hostingu](/pages/web_cloud/web_hosting/configure_your_web_hosting)
 >
 > Skrypty i informacje opisane poniżej w tym tutorialu działają jedynie w środowisku wykonawczym oraz w najnowszej wersji PHP.
 > 

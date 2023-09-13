@@ -46,9 +46,9 @@ Choose `SFTP`{.action} or `Enabled`{.action} (to enable SSH on your hosting), cl
 
 ### I transferred my files with FTP software, but my website does not appear.
 
-First of all, check that your website’s files and folders are in the [root folder](/pages/web/hosting/hosting_how_to_get_my_website_online#3-upload-the-files-to-the-storage-space) of your Web Hosting plan.
+First of all, check that your website’s files and folders are in the [root folder](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online#3-upload-the-files-to-the-storage-space) of your Web Hosting plan.
 
-If you have modified your [DNS servers or DNS zone](/pages/web/domains/dns_zone_edit#understanding-dns) less than 48 hours ago, please wait and restart your devices regularly in order to clear their cache.
+If you have modified your [DNS servers or DNS zone](/pages/web_cloud/domains/dns_zone_edit#understanding-dns) less than 48 hours ago, please wait and restart your devices regularly in order to clear their cache.
 
 ### My FTP credentials are not working.
 
@@ -80,7 +80,7 @@ This link is installed by default on OVHcloud Web Hosting plans. It displays thi
 
 ![site_under_construction](images/site_under_construction.png){.thumbnail}
 
-If you did not use the "[1-click module](/pages/web_cloud/web_hosting/cms_install_1_click_modules)" feature to create your website, you will need to use the [Net2FTP](/pages/web/hosting/ftp_connection#1-log-in-via-ftp-explorer) software accessible via the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au) in order to manually delete the "Website under construction" page.
+If you did not use the "[1-click module](/pages/web_cloud/web_hosting/cms_install_1_click_modules)" feature to create your website, you will need to use the [Net2FTP](/pages/web_cloud/web_hosting/ftp_connection#1-log-in-via-ftp-explorer) software accessible via the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au) in order to manually delete the "Website under construction" page.
 
 ## Go further <a name="gofurther"></a>
 

@@ -1,6 +1,5 @@
 ---
 title: Shelve or pause an instance
-legacy_guide_number: 1781
 updated: 2023-06-20
 ---
 
@@ -16,7 +15,7 @@ As part of the configuration of a high-availability infrastructure, you may enco
 
 ## Requirements
 
-- An [OVHcloud Public Cloud instance](/pages/platform/public-cloud/public-cloud-first-steps#step-3-creating-an-instance) on **hourly** billing
+- An [OVHcloud Public Cloud instance](/pages/public_cloud/compute/public-cloud-first-steps#step-3-creating-an-instance) on **hourly** billing
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia){.external} or [Horizon interface](/pages/public_cloud/compute/introducing_horizon)
 - Knowledge of [Openstack API](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api) and [Openstack variables](/pages/public_cloud/compute/loading_openstack_environment_variables)
 

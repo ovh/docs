@@ -107,7 +107,7 @@ You can now see that the attribute value `bootScript` is null.
 
 ## Go further <a name="gofurther"></a>
 
-[Restarting your dedicated server](/pages/cloud/dedicated/getting-started-with-dedicated-server#reboot)
+[Restarting your dedicated server](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server#reboot)
 
 [Activating and using rescue mode](/pages/bare_metal_cloud/dedicated_servers/rescue_mode)
 

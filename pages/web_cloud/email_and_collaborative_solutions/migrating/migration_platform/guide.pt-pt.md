@@ -34,13 +34,13 @@ Deseja migrar os seus endereços de e-mail presentes numa plataforma Exchange ou
 
 ### Configurar a plataforma de destino
 
-Antes de iniciar a migração, caso tenha encomendado a nova oferta de e-mail, adicione o domínio à plataforma [E-mail Pro](/pages/web/emails-pro/first_config#2-adicionar-o-dominio) ou [Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain). Se migrar para uma plataforma MX Plan, o domínio associado é "fixo", pode passar diretamente para [o passo seguinte](#accountsmigration).
+Antes de iniciar a migração, caso tenha encomendado a nova oferta de e-mail, adicione o domínio à plataforma [E-mail Pro](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config#2-adicionar-o-dominio) ou [Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain). Se migrar para uma plataforma MX Plan, o domínio associado é "fixo", pode passar diretamente para [o passo seguinte](#accountsmigration).
 
 > Selecione o separador `Domínios associados`{.action} na sua plataforma e clique em `Adicionar domínio`{.action}. Configure o seu domínio em **nonauthoritative**. Uma vez adicionado o domínio, certifique-se de que a menção `OK` está presente na coluna `Estado`.
 >
 > ![email-migração](images/migration_platform02.png){.thumbnail}
 >
-> Para mais informações sobre a adição de um domínio, siga [o guia E-mail Pro](/pages/web/emails-pro/first_config#2-adicionar-o-dominio) ou [o guia Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain).
+> Para mais informações sobre a adição de um domínio, siga [o guia E-mail Pro](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config#2-adicionar-o-dominio) ou [o guia Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain).
 
 ### Migrar as contas de e-mail <a name="accountsmigration"></a>
 
@@ -85,7 +85,7 @@ No separador `Contas de e-mail`{.action} da sua plataforma, clique no botão `..
 
 Migre a conta de e-mail "source" para a sua nova plataforma com a ajuda da nossa ferramenta [OMM](https://omm.ovh.net/) (OVH Mail Migrator).
 
-> Se tiver de migrar várias contas de e-mail, sugerimos que utilize o modo [Project](/pages/web/emails/migration_omm#project) via [OMM](https://omm.ovh.net/Project/Create), o que lhe permitirá importar uma tabela em formato CSV contendo as informações das contas de e-mail a migrar.
+> Se tiver de migrar várias contas de e-mail, sugerimos que utilize o modo [Project](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm#project) via [OMM](https://omm.ovh.net/Project/Create), o que lhe permitirá importar uma tabela em formato CSV contendo as informações das contas de e-mail a migrar.
 
 Para mais informações sobre OMM, consulte o nosso guia [Migrar contas de e-mail através do OVH Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm).
 

@@ -14,7 +14,7 @@ La restauration peut prendre un certain temps car elle doit être lue sur des ba
 
 ## Prérequis
 
-- [Premiers pas avec Object Storage](/pages/cloud/storage/object_storage/s3_getting_started_with_object_storage#utilisation-de-aws-cli)
+- [Premiers pas avec Object Storage](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage#utilisation-de-aws-cli)
 - `awscli` version >= 1.16.62
 
 ## En pratique

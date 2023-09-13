@@ -29,7 +29,7 @@ In order to prevent unauthorised domain transfers, domain names are usually lock
 
 > [!primary]
 >
-> If you are the domain name's **owner** but you are currently not able to manage it in the OVHcloud Control Panel, neither by using your own access nor via your domain name's administrative contact, please consult [this guide](/pages/account/customer/managing_contacts#special-case-of-a-domain-owner) first before proceeding.
+> If you are the domain name's **owner** but you are currently not able to manage it in the OVHcloud Control Panel, neither by using your own access nor via your domain name's administrative contact, please consult [this guide](/pages/account_and_service_management/account_information/managing_contacts#special-case-of-a-domain-owner) first before proceeding.
 >
 
 ## Instructions

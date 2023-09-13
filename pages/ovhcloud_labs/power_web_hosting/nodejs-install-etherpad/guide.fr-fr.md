@@ -47,9 +47,9 @@ Supposons que vous avez la configuration normale pour un hébergement web POWER 
 
 > [!primary]
 >
-> Vous pouvez appeler l'API OVHcloud pour [visualiser la configuration active](/pages/labs/web-power/getting-started#api-get-active-configuration).
+> Vous pouvez appeler l'API OVHcloud pour [visualiser la configuration active](/pages/ovhcloud_labs/power_web_hosting/getting-started#api-get-active-configuration).
 
-[Accédez via SSH](/pages/labs/web-power/getting-started#ssh) à votre hébergement web POWER et récupérez les sources d'Etherpad dans le répertoire `www` :
+[Accédez via SSH](/pages/ovhcloud_labs/power_web_hosting/getting-started#ssh) à votre hébergement web POWER et récupérez les sources d'Etherpad dans le répertoire `www` :
 
 ```sh
 cd www
@@ -69,7 +69,7 @@ bash bin/installDeps.sh
 ln -fs node_modules/ep_etherpad-lite/node/server.js index.js
 ```
 
-[Redémarrez votre instance](/pages/labs/web-power/getting-started#restart), votre Etherpad sera alors en ligne.
+[Redémarrez votre instance](/pages/ovhcloud_labs/power_web_hosting/getting-started#restart), votre Etherpad sera alors en ligne.
 
 ![Etherpad](images/nodejs-install-etherpad-01.png){.thumbnail}
 

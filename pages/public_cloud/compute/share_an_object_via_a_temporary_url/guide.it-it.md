@@ -1,7 +1,6 @@
 ---
 title: 'Condividere un oggetto con un indirizzo temporaneo'
 excerpt: 'Come condividere un oggetto senza fornire informazioni personali'
-legacy_guide_number: g2007
 updated: 2021-01-11
 ---
 

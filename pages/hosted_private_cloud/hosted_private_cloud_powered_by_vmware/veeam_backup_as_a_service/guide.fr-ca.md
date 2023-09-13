@@ -1,7 +1,6 @@
 ---
 title: Activer et utiliser Veeam Managed Backup
 excerpt: Découvrez comment activer et utiliser l'option Veeam Managed Backup
-legacy_guide_number: '2883711'
 updated: 2021-12-07
 ---
 

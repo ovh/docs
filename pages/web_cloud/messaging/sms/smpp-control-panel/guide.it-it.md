@@ -56,7 +56,7 @@ Clicca su `Aggiungi un IP`{.action} per aggiungere indirizzi IP a questa lista.
 
 ### Gestione mittenti e crediti
 
-Consulta le nostre guide sulla [gestione mittenti](/pages/telecom/sms/envoyer_des_sms_depuis_mon_espace_client#step-3-scegli-il-mittente-del-tuo-sms) e sulla [gestione dei crediti SMS e ricarica automatica](/pages/web_cloud/messaging/sms/activer_la_recharge_automatique_du_credit_sms).
+Consulta le nostre guide sulla [gestione mittenti](/pages/web_cloud/messaging/sms/envoyer_des_sms_depuis_mon_espace_client#step-3-scegli-il-mittente-del-tuo-sms) e sulla [gestione dei crediti SMS e ricarica automatica](/pages/web_cloud/messaging/sms/activer_la_recharge_automatique_du_credit_sms).
 
 ## Per saperne di più
 

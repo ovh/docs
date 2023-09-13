@@ -1,7 +1,6 @@
 ---
 title: 'Envoyer des SMS avec l’API OVHcloud en Node.js'
 excerpt: 'Comment envoyer des SMS avec l’API OVHcloud RESTful en Node.js'
-legacy_guide_number: g1651
 updated: 2020-06-18
 ---
 

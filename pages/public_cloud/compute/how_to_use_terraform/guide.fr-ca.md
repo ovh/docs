@@ -124,7 +124,7 @@ provider "ovh" {
 
 Un « alias » est un identifiant unique pour un type de fournisseur. Par exemple, si vous avez deux fournisseurs OpenStack avec des informations d'identification différentes, vous devez spécifier chaque fournisseur dans la ressource.
 
-Il faut maintenant [créer un nouvel utilisateur OpenStack](/pages/public_cloud/compute/create_and_delete_a_user), puis [générer le fichier OpenRC ](/pages/platform/public-cloud/loading_openstack_environment_variables#etape-1-recuperer-les-variables) contenant tous les identifiants que vous souhaitez exporter en tant qu'environnement variables.
+Il faut maintenant [créer un nouvel utilisateur OpenStack](/pages/public_cloud/compute/create_and_delete_a_user), puis [générer le fichier OpenRC ](/pages/public_cloud/compute/loading_openstack_environment_variables#etape-1-recuperer-les-variables) contenant tous les identifiants que vous souhaitez exporter en tant qu'environnement variables.
 
 Chargez ce fichier, puis entrez le mot de passe de l'utilisateur que vous avez créé précédemment :
 

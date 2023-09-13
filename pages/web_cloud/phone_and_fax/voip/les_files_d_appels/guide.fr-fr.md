@@ -105,7 +105,7 @@ Dès qu'au moins une ligne est présente dans votre file, vous avez la possibili
 
 - **« Numéro à afficher »** : définissez le numéro qui sera visible sur le téléphone de la personne qui reçoit l’appel ;
 
-- **« Stratégie de sonnerie »** : définissez la manière dont les lignes de votre file d'appels sonneront. Selon celle choisie, vous serez peut-être amené à [modifier l'ordre des lignes de la file](/pages/telecom/voip/les_files_d_appels#3-organiser-les-lignes-de-la-file-dappels) ;
+- **« Stratégie de sonnerie »** : définissez la manière dont les lignes de votre file d'appels sonneront. Selon celle choisie, vous serez peut-être amené à [modifier l'ordre des lignes de la file](/pages/web_cloud/phone_and_fax/voip/les_files_d_appels#3-organiser-les-lignes-de-la-file-dappels) ;
 
 - **« Appliquer les renvois définis sur les lignes »** : définissez si les renvois d'appels configurés sur les lignes de la file doivent être appliqués ou non. Sauf besoin spécifique, nous vous conseillons de laisser cette option décochée. 
 

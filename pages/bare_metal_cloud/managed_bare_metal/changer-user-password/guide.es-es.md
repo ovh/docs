@@ -14,7 +14,7 @@ Es posible gestionar los permisos y contraseñas de los usuarios del cliente vSp
 ## Requisitos
 
 - Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
-- Haber creado una cuenta de usuario desde el área de cliente de OVHcloud. Para más información, consulte [esta guía](/pages/cloud/managed-bare-metal/manager-ovhcloud#usuarios)
+- Haber creado una cuenta de usuario desde el área de cliente de OVHcloud. Para más información, consulte [esta guía](/pages/bare_metal_cloud/managed_bare_metal/manager-ovhcloud#usuarios)
 
 ## Procedimiento
 

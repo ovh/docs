@@ -1,7 +1,6 @@
 ---
 title: Parâmetros de acesso e de segurança no Horizon
 excerpt: Saiba como gerir e proteger o acesso às suas instâncias
-legacy_guide_number: g1774
 updated: 2021-05-26
 ---
 
@@ -44,7 +43,7 @@ Esta secção permite-lhe armazenar e gerir os pares de chaves SSH. Pode simples
 
 Se deseja adicionar uma chave pré-existente, clique em `Import Public Key`{.action}. Na nova janela, pode introduzir uma chave ou selecionar um ficheiro de chave.
 
-Esta secção da interface contém instruções básicas. Para mais informações sobre as chaves SSH, consulte [este guia](/pages/platform/public-cloud/public-cloud-first-steps#1o-passo-criacao-de-chaves-ssh).
+Esta secção da interface contém instruções básicas. Para mais informações sobre as chaves SSH, consulte [este guia](/pages/public_cloud/compute/public-cloud-first-steps#1o-passo-criacao-de-chaves-ssh).
 
 - **Security Groups** (em `Projeto`{.action} e `Network`{.action})
 

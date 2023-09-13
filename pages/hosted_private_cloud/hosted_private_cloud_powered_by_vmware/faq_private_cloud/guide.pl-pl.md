@@ -1,7 +1,6 @@
 ---
 title: 'FAQ Najczęściej zadawane pytania o Private Cloud'
 excerpt: ''
-legacy_guide_number: g598
 updated: 2018-03-26
 ---
 

@@ -60,7 +60,7 @@ Para verificar mais rapidamente se já existem campos MX, selecione, com o filtr
 
 Para isso, clique no botão `Adicionar uma entrada`{.action} à direita da tabela e selecione a opção `MX`{.action}. Introduza as informações necessárias em função da solução de e-mail selecionada:
 
-- **se possuir uma solução de e-mail da OVHcloud**: consulte as informações no passo [“2 - Conhecer a configuração MX da OVHcloud”](/pages/web/domains/dns_zone_mx#2-conhecer-a-configuracao-mx-da-ovh){.external};
+- **se possuir uma solução de e-mail da OVHcloud**: consulte as informações no passo [“2 - Conhecer a configuração MX da OVHcloud”](/pages/web_cloud/domains/dns_zone_mx#2-conhecer-a-configuracao-mx-da-ovh){.external};
 
 - **se possuir outra solução de e-mail**: consulte as informações comunicadas pelo seu fornecedor de serviço de e-mail.
 

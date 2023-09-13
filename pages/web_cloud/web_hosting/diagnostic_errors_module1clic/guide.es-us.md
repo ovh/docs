@@ -77,9 +77,9 @@ En el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager
 
 #### Solución nº4: instalar el módulo en una base de datos ya utilizada
 
-Para instalar su módulo en una base de datos ya utilizada, deberá utilizar el [modo avanzado](/pages/web/hosting/cms_install_1_click_modules#instalacion-avanzada-de-un-modulo) de instalación de un nuevo **módulo en 1 clic**.
+Para instalar su módulo en una base de datos ya utilizada, deberá utilizar el [modo avanzado](/pages/web_cloud/web_hosting/cms_install_1_click_modules#instalacion-avanzada-de-un-modulo) de instalación de un nuevo **módulo en 1 clic**.
 
-Para encontrar los detalles de inicio de sesión de la base de datos, por favor, compruebe esta [guía](/pages/web/hosting/cms_install_1_click_modules#configurar-el-modulo).
+Para encontrar los detalles de inicio de sesión de la base de datos, por favor, compruebe esta [guía](/pages/web_cloud/web_hosting/cms_install_1_click_modules#configurar-el-modulo).
 
 ### "El directorio de instalación no está vacío"
 
@@ -103,16 +103,16 @@ Le recomendamos que utilice la versión de PHP más reciente. **Antes** de modif
 
 Para comprobar esta configuración, consulte nuestras guías sobre este tema:
 
-- [Modificar la configuración de un alojamiento web](/pages/web_cloud/web_hosting/ovhconfig_modify_system_runtime)
-- [Configurar el archivo .ovhconfig de un alojamiento web](/pages/web_cloud/web_hosting/ovhconfig_configuration)
+- [Modificar la configuración de un alojamiento web](/pages/web_cloud/web_hosting/configure_your_web_hosting)
+- [Configurar el archivo .ovhconfig de un alojamiento web](/pages/web_cloud/web_hosting/configure_your_web_hosting)
 
 ### "Si è verificato un errore durante il caricamento delle informazioni (There is not enough space on your hosting (you need at least xxx MB))"
 
 ![not_enough_space](images/not_enough_space.png){.thumbnail}
 
-Este mensaje indica que el[espacio de almacenamiento](/pages/web/hosting/cms_install_1_click_modules#instalacion-avanzada-de-un-modulo) de su alojamiento tiene un volumen de datos demasiado grande. Es necesario eliminar o mover uno antes de poder instalar un nuevo [módulo en 1 clic](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
+Este mensaje indica que el[espacio de almacenamiento](/pages/web_cloud/web_hosting/cms_install_1_click_modules#instalacion-avanzada-de-un-modulo) de su alojamiento tiene un volumen de datos demasiado grande. Es necesario eliminar o mover uno antes de poder instalar un nuevo [módulo en 1 clic](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
 
-En ese caso, [conéctese por FTP](/pages/web_cloud/web_hosting/ftp_connection) a su alojamiento, [guarde localmente sus datos](/pages/web/hosting/ftp_filezilla_user_guide#transferencia-de-los-archivos) y luego elimine los archivos que no sean necesarios para el funcionamiento de su sitio web.
+En ese caso, [conéctese por FTP](/pages/web_cloud/web_hosting/ftp_connection) a su alojamiento, [guarde localmente sus datos](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide#transferencia-de-los-archivos) y luego elimine los archivos que no sean necesarios para el funcionamiento de su sitio web.
 
 > [!primary]
 >
@@ -125,7 +125,7 @@ En ese caso, [conéctese por FTP](/pages/web_cloud/web_hosting/ftp_connection) a
 
 Una vez que haya iniciado la instalación del módulo en modo avanzado, recibirá un mensaje de correo electrónico indicándole que el módulo no puede conectarse a la base de datos indicada. 
 
-Primero compruebe sus [credenciales de base de datos](/pages/web/hosting/cms_install_1_click_modules#configurar-el-modulo).
+Primero compruebe sus [credenciales de base de datos](/pages/web_cloud/web_hosting/cms_install_1_click_modules#configurar-el-modulo).
 
 A continuación, elimine el módulo en la pestaña `Módulos en 1 clic`{.action}:
 
@@ -137,11 +137,11 @@ A continuación, vuelva a instalar un nuevo módulo.
 
 ![insufficient_rights](images/insufficient_rights.png){.thumbnail}
 
-Su base de datos no puede modificarse porque la cantidad de datos que contiene supera el límite autorizado. Este mensaje aparece al instalar un módulo en [modo avanzado](/pages/web/hosting/cms_install_1_click_modules#instalacion-avanzada-de-un-modulo).
+Su base de datos no puede modificarse porque la cantidad de datos que contiene supera el límite autorizado. Este mensaje aparece al instalar un módulo en [modo avanzado](/pages/web_cloud/web_hosting/cms_install_1_click_modules#instalacion-avanzada-de-un-modulo).
 
-En ese caso, instale el módulo pasando por el [modo "simple"](/pages/web/hosting/cms_install_1_click_modules#instalacion-simple-de-un-modulo) o seleccione otra base de datos cuando se instale en modo avanzado. Si lo necesita, contrate una [oferta de bases de datos](https://www.ovh.es/hosting/opciones-sql.xml) adicional.
+En ese caso, instale el módulo pasando por el [modo "simple"](/pages/web_cloud/web_hosting/cms_install_1_click_modules#instalacion-simple-de-un-modulo) o seleccione otra base de datos cuando se instale en modo avanzado. Si lo necesita, contrate una [oferta de bases de datos](https://www.ovh.es/hosting/opciones-sql.xml) adicional.
 
-Si no tiene bases de datos adicionales y no desea contratar una solución adicional, [importe una copia de la base de datos](/pages/web/hosting/sql_database_export#procedimiento) y elimine los datos innecesarios.
+Si no tiene bases de datos adicionales y no desea contratar una solución adicional, [importe una copia de la base de datos](/pages/web_cloud/web_hosting/sql_database_export#procedimiento) y elimine los datos innecesarios.
 
 > [!warning]
 >
@@ -159,8 +159,8 @@ Abra la pestaña `Multisitio`{.action} y realice las siguientes comprobaciones:
 
 |Escenario|Medidas que deberá adoptar|
 |---|---|
-|El dominio o subdominio asociado al sitio que quiere crear no aparece en el `multisitio`{.action}.|Añada su dominio siguiendo [estas indicaciones](/pages/web/hosting/multisites_configure_multisite#2-anadir-un-dominio-o-subdominio).|
-|El nombre de dominio se ha eliminado del multisitio sin que usted haga nada al respecto.|Si su dominio o su [zona DNS](/pages/web_cloud/domains/dns_zone_edit) no están gestionados desde su cuenta de OVHcloud, añada su dominio al `multisitio`{.action} siguiendo [esta guía](/pages/web/hosting/multisites_configure_multisite#22-anadir-un-dominio-externo).|
+|El dominio o subdominio asociado al sitio que quiere crear no aparece en el `multisitio`{.action}.|Añada su dominio siguiendo [estas indicaciones](/pages/web_cloud/web_hosting/multisites_configure_multisite#2-anadir-un-dominio-o-subdominio).|
+|El nombre de dominio se ha eliminado del multisitio sin que usted haga nada al respecto.|Si su dominio o su [zona DNS](/pages/web_cloud/domains/dns_zone_edit) no están gestionados desde su cuenta de OVHcloud, añada su dominio al `multisitio`{.action} siguiendo [esta guía](/pages/web_cloud/web_hosting/multisites_configure_multisite#22-anadir-un-dominio-externo).|
 
 ### Su módulo se muestra en una dirección web de tipo "xxxxx.cluster0xx.hosting.ovh.net"
 
@@ -174,11 +174,11 @@ Esta anomalía puede tener varias causas:
 
 - Recientemente ha realizado un cambio en la zona o servidores [DNS](/pages/web_cloud/domains/dns_zone_edit) o una [transferencia de dominio](/pages/web_cloud/domains/transfer_incoming_generic_domain). Espere a que estas operaciones se completen (48 horas para realizar cambios en sus DNS). También puede reiniciar los dispositivos (PC, smartphone, box, etc.) y vaciar la caché de su navegador.
 
-- Su dominio siempre está asociado a su antiguo alojamiento. Cambie en este caso su [Zona DNS](/pages/web/domains/dns_zone_edit#editar-la-zona-dns-de-ovhcloud-de-su-dominio) o sus [Servidores DNS](/pages/web/domains/dns_server_general_information#2-editar-los-servidores-dns-de-un-dominio) o contacte con su antiguo proveedor de hosting.
+- Su dominio siempre está asociado a su antiguo alojamiento. Cambie en este caso su [Zona DNS](/pages/web_cloud/domains/dns_zone_edit#editar-la-zona-dns-de-ovhcloud-de-su-dominio) o sus [Servidores DNS](/pages/web_cloud/domains/dns_server_general_information#2-editar-los-servidores-dns-de-un-dominio) o contacte con su antiguo proveedor de hosting.
 
 ### La contraseña "Administrador" de acceso al "back-office" de su módulo en 1 clic ya no funciona <a name="adminpassword"></a>
 
-En caso de que se rechace la contraseña actual de acceso al panel de administración de su CMS, consulte el apartado "Cambiar la contraseña de su módulo" de nuestra documentación sobre la [gestión de su módulo en 1 clic](/pages/web/hosting/cms_manage_1_click_module#password-change).
+En caso de que se rechace la contraseña actual de acceso al panel de administración de su CMS, consulte el apartado "Cambiar la contraseña de su módulo" de nuestra documentación sobre la [gestión de su módulo en 1 clic](/pages/web_cloud/web_hosting/cms_manage_1_click_module#password-change).
 
 ## Más información <a name="gofurther"></a>
 

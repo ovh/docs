@@ -22,7 +22,7 @@ The advantage of using several S3 Object Storage buckets is to separate the data
 - [At least two S3 Object Storage buckets](/pages/storage_and_backup/object_storage/s3_create_bucket) created.
 - [The read and write rights configured](/pages/storage_and_backup/object_storage/s3_identity_and_access_management#manage-access-to-a-bucket-via-a-profile) on the S3 Object Storage buckets for the S3 user.
 - An SAP HANA database installed
-- [OVHcloud Backint Agent for SAP HANA installed](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook-install-ovhcloud-backint-agent#ovhcloud-backint-agent-for-sap-hana)
+- [OVHcloud Backint Agent for SAP HANA installed](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook_install_ovhcloud_backint_agent#ovhcloud-backint-agent-for-sap-hana)
 
 > [!warning]
 > The access key and the secret key should not be communicated. They grant the rights to write, read and delete the data which will be stored in the S3 Object Storage bucket.
@@ -71,7 +71,7 @@ s3api put-bucket-versioning \
 
 Edit the content of the `hdbbackint.cfg` file and replace all values between round brackets by your S3 Object Storage bucket information.
 
-```
+```{.console}
 [trace]
 default = INFO
 destination = outputfile
@@ -108,7 +108,7 @@ ALTER SYSTEM ALTER CONFIGURATION('global.ini','SYSTEM') SET('backup','log_backup
 ```
 
 > [!primary]
-> To discover all backup parameters for SAP HANA, we recommend the [SAP documentation]((https://help.sap.com/docs/SAP_HANA_PLATFORM/009e68bc5f3c440cb31823a3ec4bb95b/e28fbdf1024c40e1a97fca48380aad98.html?locale=en-US)). In the column "Section", set "Backup".
+> To discover all backup parameters for SAP HANA, we recommend the [SAP documentation](https://help.sap.com/docs/SAP_HANA_PLATFORM/009e68bc5f3c440cb31823a3ec4bb95b/e28fbdf1024c40e1a97fca48380aad98.html?locale=en-US). In the column "Section", set "Backup".
 >
 
 ### Backup

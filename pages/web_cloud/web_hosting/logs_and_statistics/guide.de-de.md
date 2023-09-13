@@ -52,7 +52,7 @@ Rufen Sie im Tab Ihres Browsers, in dem das Statistikfenster angezeigt wird, den
 
 > [!warning] 
 >
-> Wenn Sie die separaten Logs bei einem [Multisite-Eintrag](/pages/web/hosting/multisites_configure_multisite#schritt-2-eine-domain-oder-subdomain-hinzufugen) aktiviert haben, können die hier erstellten Benutzer nicht auf die Statistiken dieses Multisite-Eintrags zugreifen.
+> Wenn Sie die separaten Logs bei einem [Multisite-Eintrag](/pages/web_cloud/web_hosting/multisites_configure_multisite#schritt-2-eine-domain-oder-subdomain-hinzufugen) aktiviert haben, können die hier erstellten Benutzer nicht auf die Statistiken dieses Multisite-Eintrags zugreifen.
 >
 
 ### Besucherstatistiken

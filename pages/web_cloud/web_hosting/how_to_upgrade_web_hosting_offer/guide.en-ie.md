@@ -59,7 +59,7 @@ If you have deleted data from your databases, you can recalculate the quota from
 
 #### 2 - Web Cloud Databases
 
-If you are using the [Web Cloud Databases](/pages/web/clouddb/starting_with_clouddb#clouddb-server-activation-included-with-your-web-hosting-plan) solution included with your [Performance](https://www.ovhcloud.com/en-ie/web-hosting/performance-offer/) hosting plan, and you wish to switch your hosting plan to a [Pro](https://www.ovhcloud.com/en-ie/web-hosting/professional-offer/) solution, go to the `Hosting plans`{.action} section in your Control Panel.<br>
+If you are using the [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb#clouddb-server-activation-included-with-your-web-hosting-plan) solution included with your [Performance](https://www.ovhcloud.com/en-ie/web-hosting/performance-offer/) hosting plan, and you wish to switch your hosting plan to a [Pro](https://www.ovhcloud.com/en-ie/web-hosting/professional-offer/) solution, go to the `Hosting plans`{.action} section in your Control Panel.<br>
 Click the `... `{.action} button in the `Private database`{.action} section, then `Detach`{.action}.
 
 ![Web Cloud Databases](images/clouddb.png){.thumbnail}

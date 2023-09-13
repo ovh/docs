@@ -68,7 +68,7 @@ Non, c'est impossible pour le Tier-1. Différents outils sont disponibles dans N
 
 ### Comment puis-je ajouter des IP publiques ?
 
-Comme indiqué dans [ce guide](/pages/cloud/private-cloud/nsx-01-first-steps#display-the-ha-vip-virtual-ip-address), il n'est actuellement pas possible de créer de nouvelles adresses IP virtuelles, mais cette fonctionnalité devrait être disponible prochainement.
+Comme indiqué dans [ce guide](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx-01-first-steps#display-the-ha-vip-virtual-ip-address), il n'est actuellement pas possible de créer de nouvelles adresses IP virtuelles, mais cette fonctionnalité devrait être disponible prochainement.
 
 <a name="ipblockdistribution"></a>
 

@@ -42,7 +42,7 @@ O processo de mudança de agente de registo (*registar*) para os domínios de pr
 
 > [!primary]
 >
-> Se é o **proprietário** do domínio mas a sua gestão na Área de Cliente OVHcloud está indisponível, seja através do seu próprio acesso ou através do contacto administrativo do domínio, consulte [este guia](/pages/account/customer/managing_contacts#caso-especifico-de-um-proprietario-de-dominio) antes de continuar.
+> Se é o **proprietário** do domínio mas a sua gestão na Área de Cliente OVHcloud está indisponível, seja através do seu próprio acesso ou através do contacto administrativo do domínio, consulte [este guia](/pages/account_and_service_management/account_information/managing_contacts#caso-especifico-de-um-proprietario-de-dominio) antes de continuar.
 >
 > Se o domínio expirou há **menos de 90 dias**, pode ainda ser transferido. Contacte as nossas equipas de suporte técnico criando um pedido de suporte no seu Área de Cliente OVHcloud para desbloquear o domínio para a transferência.
 >

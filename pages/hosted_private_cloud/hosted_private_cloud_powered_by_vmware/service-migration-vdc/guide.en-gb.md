@@ -175,7 +175,7 @@ You can add a destination vDC following those steps:
 <a name="addhostandds"></a>
 #### Step 2.2 Add new hosts and Datastores
 
-In the OVHcloud Control Panel, you will see your new vDC attached to your existing service. You can proceed with ordering new hosts and datastores (selected in step 1) in the new Destination vDC following this [Information about Hosted Private Cloud billing](/pages/cloud/private-cloud/information_about_dedicated_cloud_billing#add-resources-billed-monthly) guide.
+In the OVHcloud Control Panel, you will see your new vDC attached to your existing service. You can proceed with ordering new hosts and datastores (selected in step 1) in the new Destination vDC following this [Information about Hosted Private Cloud billing](/pages/account_and_service_management/managing_billing_payments_and_services/information_about_dedicated_cloud_billing#add-resources-billed-monthly) guide.
 <a name="converttoglobal"></a>
 #### Step 2.3 Convert a datastore to a global datastore
 
@@ -306,7 +306,7 @@ Here is a checklist of aspects to take into account:
 - Teaming and Failover settings
 - Customer network resource allocation
 
-For more information, consult OVHcloud's guide [How to create a V(x)LAN within a vRack](/pages/cloud/private-cloud/creation_vlan#vlan-vrack) and VMware's documentation on [how to edit general distributed port group settings](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.networking.doc/GUID-FCA2AE5E-83D7-4FEE-8DFF-540BDB559363.html){.external}.
+For more information, consult OVHcloud's guide [How to create a V(x)LAN within a vRack](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/creation_vlan#vlan-vrack) and VMware's documentation on [how to edit general distributed port group settings](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.networking.doc/GUID-FCA2AE5E-83D7-4FEE-8DFF-540BDB559363.html){.external}.
 
 **Automation tips:** Powercli cmdlet “Export-VDPortGroup” can retrieve Distibuted Virtual Portgroup information which can then be imported into the destination Distributed Switch with the use of the “New-VDPortgroup -BackupPath” cmdlet.
 
@@ -596,14 +596,14 @@ Affinity rules are based on VM objects so rules can only be created after VMs ha
 <a name="privategw"></a>
 #### Step 6.4 Reconfigure the Private Gateway (if relevant)
 
-To "move" Private Gateway to destination vDC, you must first disable it by following the steps in [Disable the private gateway](/pages/cloud/private-cloud/private_gateway#disablegw).
+To "move" Private Gateway to destination vDC, you must first disable it by following the steps in [Disable the private gateway](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/private_gateway#disablegw).
 
 > [!warning]
 >
 > If you have enabled a compliancy or a security level that require the use of the Private Gateway, you alone are responsible for reactivating it (launch enabling).
 >
 
-Then enable it again by following the steps in [Enable the private gateway](/pages/cloud/private-cloud/private_gateway#enablegw) and choose the datacentreId of the new vDC.
+Then enable it again by following the steps in [Enable the private gateway](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/private_gateway#enablegw) and choose the datacentreId of the new vDC.
 
 <a name="hostmm"></a>
 #### Step 6.5 Put hosts in maintenance mode

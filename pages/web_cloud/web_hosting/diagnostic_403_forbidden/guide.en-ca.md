@@ -191,7 +191,7 @@ The response "**200 Permissions changed on /**" confirms that the change was suc
 
 [Activating the application firewall](/pages/web_cloud/web_hosting/multisites_activating_application_firewall)
 
-[Changing a web hosting plan’s PHP version](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014)
+[Changing a web hosting plan’s PHP version](/pages/web_cloud/web_hosting/configure_your_web_hosting)
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-ca/directory/).
 

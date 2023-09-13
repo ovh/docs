@@ -1,7 +1,6 @@
 ---
 title: 'Gérer mes carnets d’adresses SMS'
 excerpt: 'Découvrez comment créer un carnet d’adresses SMS dans votre compte OVHcloud'
-legacy_guide_number: g2118
 updated: 2022-08-05
 ---
 

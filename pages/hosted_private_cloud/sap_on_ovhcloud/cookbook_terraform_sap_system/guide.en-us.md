@@ -32,7 +32,7 @@ This module has been written to be compatible with Terraform v1.4 or higher. To 
 
 ### Usage of the Terraform module
 
-Several examples are available in the [GitHub repository](https://github.com/ovh/terraform-vsphere-sap-system/examples/) to deploy an SAP system infrastructure.
+Several examples are available in the [GitHub repository](https://github.com/ovh/terraform-vsphere-sap-system/tree/master/examples/) to deploy an SAP system infrastructure.
 
 Three main files are required to use as expected this Terraform module:
 
@@ -110,7 +110,7 @@ module "sap-hana-database" {
 ```
 
 > [!primary]
-> Where "SAP HANA VM Storage Policy" has been previously created on vSphere interface with a thick provisioning policy. To know more about our recommendations about this VM Storage Policy, we advise you to read [this guide](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook-sap-hana-template-vmware/#configure-advanced-parameters).
+> Where "SAP HANA VM Storage Policy" has been previously created on vSphere interface with a thick provisioning policy. To know more about our recommendations about this VM Storage Policy, we advise you to read [this guide](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook_sap_hana_template_vmware/#configure-advanced-parameters).
 >
 
 To know all inputs that you can pass to this module, please refer to the README on [GitHub](https://github.com/ovh/terraform-vsphere-sap-system).
@@ -308,7 +308,7 @@ sap_hana_databases_ids = {
 
 If the execution ran without issue, you have created your first SAP system infrastructure with all the virtual machines on your VMware on OVHcloud solution with Terraform.
 
-We suggest that you look the [examples folder](https://github.com/ovh/terraform-vsphere-sap-system/examples) and [README](https://github.com/ovh/terraform-vsphere-sap-system) to discover all possibilities.
+We suggest that you look the [examples folder](https://github.com/ovh/terraform-vsphere-sap-system/tree/master/examples) and [README](https://github.com/ovh/terraform-vsphere-sap-system) to discover all possibilities.
 
 At any moment, you have the possibility to change the configuration of the virtual machines (more vCPU, more memory or add a new disk, for example) and relaunch the Terraform execution.
 

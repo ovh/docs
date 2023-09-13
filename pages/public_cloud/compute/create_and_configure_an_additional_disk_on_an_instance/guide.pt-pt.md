@@ -1,7 +1,6 @@
 ---
 title: 'Criar e configurar um disco suplementar numa instância'
 excerpt: 'Saiba como associar um novo volume à sua instância Public Cloud'
-legacy_guide_number: g1863
 updated: 2023-03-03
 ---
 
@@ -68,7 +67,7 @@ Os exemplos abaixo pressupõem que está ligado enquanto utilizador com autoriza
 
 #### Em Linux
 
-Abra uma [ligação SSH à sua instância](/pages/platform/public-cloud/public-cloud-first-steps#connect-to-instance) e utilize o comando abaixo para listar os discos ligados.
+Abra uma [ligação SSH à sua instância](/pages/public_cloud/compute/public-cloud-first-steps#connect-to-instance) e utilize o comando abaixo para listar os discos ligados.
 
 ```bash
 ~$ admin@server-1:~$ lsblk
@@ -319,7 +318,7 @@ Se deseja desassociar um volume da sua instância, a melhor prática é desmonta
 
 #### Em Linux
 
-Abra uma [ligação SSH à sua instância](/pages/platform/public-cloud/public-cloud-first-steps#etapa-3-criacao-de-uma-instancia) e utilize o comando abaixo para listar os discos ligados.
+Abra uma [ligação SSH à sua instância](/pages/public_cloud/compute/public-cloud-first-steps#etapa-3-criacao-de-uma-instancia) e utilize o comando abaixo para listar os discos ligados.
 
 ```bash
 admin@server-1:~$ lsblk

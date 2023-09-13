@@ -21,7 +21,7 @@ You can manage renewals and cancellations for your services via the OVHcloud Con
 
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
 - Active OVHcloud services
-- Access as a [billing contact](/pages/account/customer/managing_contacts#definition) to your OVHcloud services
+- Access as a [billing contact](/pages/account_and_service_management/account_information/managing_contacts#definition) to your OVHcloud services
 
 ## Instructions
 
@@ -31,9 +31,9 @@ You can also set certain products (domain names, Web Hosting plans, VPS, dedicat
 
 We recommend reading the following guides and focusing on the operations you wish to carry out:
 
-- [Display the renewal statuses for your services](/pages/account/billing/how_to_use_automatic_renewal#display-the-renewal-statuses-for-your-services): This guide will help you check if your services are renewed automatically. You can also retrieve their renewal or expiry dates.
+- [Display the renewal statuses for your services](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#display-the-renewal-statuses-for-your-services): This guide will help you check if your services are renewed automatically. You can also retrieve their renewal or expiry dates.
 
-- [Manage renewal for your services](/pages/account/billing/how_to_use_automatic_renewal#renewal-at-ovhcloud): This guide will help you enable or disable automatic renewal, change a service’s payment frequency and pay for renewals before their expiry date.
+- [Manage renewal for your services](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-at-ovhcloud): This guide will help you enable or disable automatic renewal, change a service’s payment frequency and pay for renewals before their expiry date.
 
 - [Manage your payment methods](/pages/account_and_service_management/managing_billing_payments_and_services/manage-payment-methods): Using this guide, you can check that you have a saved payment method for future renewals. You can also add and delete payment methods, if required.
 

@@ -32,7 +32,7 @@ This can be created via the [OVHcloud Control Panel](https://ca.ovh.com/auth/?ac
 >>
 >> Click on `Gateway`{.action} in the left-hand menu under **Network**.
 >>
->> Please note that you need to have activated the vRack before proceeding, if you do not have a vRack, please consult [this section](/pages/platform/network-services/getting-started-07-creating-vrack#activation) of the relevant guide.
+>> Please note that you need to have activated the vRack before proceeding, if you do not have a vRack, please consult [this section](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack#activation) of the relevant guide.
 >> 
 >> Next, click on `Create a Gateway`{.action}. 
 >>

@@ -110,7 +110,7 @@ Le recomendamos que utilice siempre el nombre de la base de datos en los scripts
 
 Si la base de datos de un alojamiento web supera el espacio de almacenamiento asignado, pasará automáticamente al modo «read only»/«select only». El administrador recibirá una notificación por correo electrónico.
 
-Una vez que la base de datos haya sido optimizada, podrá recalcular su espacio desde el área de cliente de OVHcloud para desbloquear este modo. Le recomendamos que descargue la base de datos, realice una revisión localmente y después vuelva a importarla. Para más información, consulte el paso 7 de nuestra guía [Optimizar el rendimiento de su sitio web](/pages/web/hosting/optimise_your_website_performance#paso-7-optimizar-su-base-de-datos).
+Una vez que la base de datos haya sido optimizada, podrá recalcular su espacio desde el área de cliente de OVHcloud para desbloquear este modo. Le recomendamos que descargue la base de datos, realice una revisión localmente y después vuelva a importarla. Para más información, consulte el paso 7 de nuestra guía [Optimizar el rendimiento de su sitio web](/pages/web_cloud/web_hosting/optimise_your_website_performance#paso-7-optimizar-su-base-de-datos).
 
 ## Más información
 

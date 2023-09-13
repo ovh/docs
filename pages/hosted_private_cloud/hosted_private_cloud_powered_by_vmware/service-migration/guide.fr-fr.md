@@ -83,7 +83,7 @@ Vous pouvez, dans le cadre d'une migration, lier vos services Hosted Private Clo
 
 Si les adresses IP publiques attachées à l'infrastructure d'origine sont nécessaires sur le Hosted Private Cloud de destination, il sera nécessaire d'en effectuer le transfert.
 
-Consultez notre guide pour [migrer des blocs IP entre deux services Hosted Private Cloud](/pages/cloud/private-cloud/ajout_de_bloc_ip#migrer-un-bloc-ip-entre-deux-hosted-private-cloud).
+Consultez notre guide pour [migrer des blocs IP entre deux services Hosted Private Cloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/ajout_de_bloc_ip#migrer-un-bloc-ip-entre-deux-hosted-private-cloud).
 
 La vidéo ci-dessous vous détaillera également comment déplacer un bloc d'adresses IP entre deux Hosted Private Cloud.
 
@@ -162,7 +162,7 @@ Voici une liste des éléments à prendre en compte:
 - Paramètres de Teaming et de Failover
 - Allocation des ressources réseau du client
 
-Pour plus d'informations, consultez le guide OVHcloud sur [comment créer un V(x)LAN dans un vRack](/pages/cloud/private-cloud/creation_vlan#vlan-vrack) et la documentation de VMware sur [comment modifier les paramètres des groupes de ports distribués](https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.networking.doc/GUID-FCA2AE5E-83D7-4FEE-8DFF-540BDB559363.html){.external}.
+Pour plus d'informations, consultez le guide OVHcloud sur [comment créer un V(x)LAN dans un vRack](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/creation_vlan#vlan-vrack) et la documentation de VMware sur [comment modifier les paramètres des groupes de ports distribués](https://docs.vmware.com/en/VMware-vSphere/6.5/com.vmware.vsphere.networking.doc/GUID-FCA2AE5E-83D7-4FEE-8DFF-540BDB559363.html){.external}.
 
 **Conseils d'automatisation :** L'applet de commande Powercli « Export-VDPortGroup » peut récupérer des informations de Portgroups virtuels distribués qui peuvent ensuite être importées dans le Distributed Switch de destination à l'aide de l'applet de commande « New-VDPortgroup -BackupPath ».
 

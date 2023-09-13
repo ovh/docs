@@ -76,7 +76,7 @@ The easiest way to enable the autoscaler is using the Kubernetes API, for exampl
 
 #### Using Kubernetes API
 
-When the autoscaler is enabled on a node pool, it uses a [default configuration](/pages/platform/kubernetes-k8s/configuring-cluster-autoscaler#cluster-autoscaler-configuration).
+When the autoscaler is enabled on a node pool, it uses a [default configuration](/pages/public_cloud/containers_orchestration/managed_kubernetes/configuring-cluster-autoscaler#cluster-autoscaler-configuration).
 
 To list node pools, you can use:
 

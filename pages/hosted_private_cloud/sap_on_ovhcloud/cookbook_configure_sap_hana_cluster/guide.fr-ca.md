@@ -15,7 +15,7 @@ Cette configuration réduit la durée maximale d'interruption admissible, en cas
 ## Prérequis
 
 - Un accès à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
-- Un [pack SAP HANA sur VMware on OVHcloud](put the link) déployé.
+- Un pack SAP HANA sur VMware on OVHcloud déployé.
 - Deux machines virtuelles SAP HANA déployées avec la même version SAP HANA installée.
 
 ## En pratique

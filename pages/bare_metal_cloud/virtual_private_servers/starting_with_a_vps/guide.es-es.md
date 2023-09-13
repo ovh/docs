@@ -79,7 +79,7 @@ passwd: password updated successfully
 
 #### Activación de las conexiones root
 
-Por motivos de seguridad, la conexión con el usuario root está desactivada por defecto. Si debe autorizar este tipo de conexiones, consulte las instrucciones de [esta guía](/pages/cloud/vps/root_password#activar-la-contrasena-root).
+Por motivos de seguridad, la conexión con el usuario root está desactivada por defecto. Si debe autorizar este tipo de conexiones, consulte las instrucciones de [esta guía](/pages/bare_metal_cloud/virtual_private_servers/root_password#activar-la-contrasena-root).
 
 #### Reinicio de su VPS (gama actual de VPS) <a name="reboot-current-range"></a>
 

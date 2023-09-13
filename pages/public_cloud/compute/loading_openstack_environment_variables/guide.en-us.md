@@ -1,7 +1,6 @@
 ---
 title: 'Setting OpenStack environment variables'
 excerpt: 'Find out how to set your environment variables to use the OpenStack API'
-legacy_guide_number: 1852
 updated: 2021-08-18
 ---
 

@@ -100,7 +100,7 @@ Si ya no desea utilizar alguna de sus formas de pago, puede eliminarla haciendo 
 
 ![manage-payment-methods](images/managepaymentmethods4.png){.thumbnail}
 
-Si quiere eliminar todas sus formas de pago, todos sus servicios deben estar [renovados manualmente](/pages/account/billing/how_to_use_automatic_renewal#renovacion-manual).
+Si quiere eliminar todas sus formas de pago, todos sus servicios deben estar [renovados manualmente](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renovacion-manual).
 
 #### Eliminar una forma de pago a través de las API OVHcloud
 

@@ -1,6 +1,5 @@
 ---
 title: 'Configuring an email address on Thunderbird for Windows'
-legacy_guide_number: 1297
 excerpt: 'Find out how to configure your email address in Thunderbird'
 updated: 2021-08-26
 ---
@@ -48,11 +47,11 @@ For **POP** configuration, the values are:
 
 Once you have configured your email address, you can start using it! You can now send and receive emails.
 
-OVHcloud also has a web application you can use to access your email address from your browser. You can access this application at <https://www.ovh.ie/mail/>. You can log in using your email credentials. If you have any questions about how to use this interface, please refer to our guides on [Using the Outlook Web App](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa) and [Using an email address with RoundCube](/pages/web/emails/email_roundcube#ou-et-comment-se-connecter-au-webmail-roundcube) respectively.
+OVHcloud also has a web application you can use to access your email address from your browser. You can access this application at <https://www.ovh.ie/mail/>. You can log in using your email credentials. If you have any questions about how to use this interface, please refer to our guides on [Using the Outlook Web App](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa) and [Using an email address with RoundCube](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube#ou-et-comment-se-connecter-au-webmail-roundcube) respectively.
 
 ### Retrieving a backup of your email address
 
-If you need to make a change that could lead to the loss of your email account data, we advise you to make a backup of the email account concerned beforehand. To do this, please read the “**Exporting**” part of the “**Thunderbird**” section in our guide on [Manually migrating an email address](/pages/web/emails/manual_email_migration#exporting).
+If you need to make a change that could lead to the loss of your email account data, we advise you to make a backup of the email account concerned beforehand. To do this, please read the “**Exporting**” part of the “**Thunderbird**” section in our guide on [Manually migrating an email address](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration#exporting).
 
 ### Modifying existing settings
 

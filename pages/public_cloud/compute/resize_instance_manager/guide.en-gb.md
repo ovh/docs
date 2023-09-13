@@ -1,5 +1,5 @@
 ---
-title: Resize an instance
+title: Resize an instance via the OVHcloud Control Panel
 excerpt: "Find out how to resize an instance in the OVHcloud Manager"
 updated: 2022-08-24
 ---

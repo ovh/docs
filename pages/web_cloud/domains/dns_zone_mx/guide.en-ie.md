@@ -61,7 +61,7 @@ To check if MX records already exist, use the filter above the DNS table to sele
 
 To add a record, click `Add record`{.action} button to the right of the table, then select `MX`{.action}. Fill in the information required, depending on the email solution you have ordered:
 
-- **If you have an OVHcloud email solution:** Please refer to the information provided in [Step 2: Familiarise yourself with the OVHcloud MX configuration](/pages/web/domains/dns_zone_mx#step-2-familiarise-yourself-with-the-ovh-mx-configuration){.external}.
+- **If you have an OVHcloud email solution:** Please refer to the information provided in [Step 2: Familiarise yourself with the OVHcloud MX configuration](/pages/web_cloud/domains/dns_zone_mx#step-2-familiarise-yourself-with-the-ovh-mx-configuration){.external}.
 
 - **If you are using an email solution from another service provider:** Please refer to the information given by your service provider.
 

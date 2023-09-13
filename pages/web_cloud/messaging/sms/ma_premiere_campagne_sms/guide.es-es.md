@@ -57,7 +57,7 @@ Sin embargo, en algunos casos puede ser más apropiado utilizar un remitente alf
 
 ![firstsms](images/firstsms05.png){.thumbnail}
 
-Para ello, consulte el apartado de la guía «[Enviar SMS desde el área de cliente](/pages/telecom/sms/envoyer_des_sms_depuis_mon_espace_client#3-elegir-el-remitente-del-sms)» relativo a la elección de remitentes.
+Para ello, consulte el apartado de la guía «[Enviar SMS desde el área de cliente](/pages/web_cloud/messaging/sms/envoyer_des_sms_depuis_mon_espace_client#3-elegir-el-remitente-del-sms)» relativo a la elección de remitentes.
 
 ### 3. El envío de una campaña de SMS
 

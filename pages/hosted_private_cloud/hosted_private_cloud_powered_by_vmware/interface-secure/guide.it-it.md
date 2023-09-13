@@ -48,7 +48,7 @@ Questo messaggio contiene:
 - il nome dell’operazione che richiede la conferma
 - l’ID dell'operazione
 - il token
-- un link che consente di confermare l’operazione (attenzione: se l’indirizzo IP della rete a cui è connesso il telefono [non è autorizzato](/pages/cloud/private-cloud/manager_ovh_private_cloud#sicurezza), la pagina non verrà visualizzata).
+- un link che consente di confermare l’operazione (attenzione: se l’indirizzo IP della rete a cui è connesso il telefono [non è autorizzato](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/manager_ovh_private_cloud#sicurezza), la pagina non verrà visualizzata).
 
 Per confermare l’operazione, clicca sul link presente nell’SMS ricevuto  e seleziona `Operation Validation`{.action}.
 

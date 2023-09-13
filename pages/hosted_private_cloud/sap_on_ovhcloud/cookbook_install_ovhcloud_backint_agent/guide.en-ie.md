@@ -15,7 +15,7 @@ OVHcloud Backint Agent for SAP HANA allows you to back up your SAP HANA database
   
 ## Requirements
 
-- [A Public Cloud project](/pages/public_cloud/compute/create_a_public_cloud_project)deployed.
+- [A Public Cloud project](/pages/public_cloud/compute/create_a_public_cloud_project) deployed.
 - An [S3 user](/pages/storage_and_backup/object_storage/s3_identity_and_access_management#creating-a-user) created.
 - An [S3 Object Storage bucket](/pages/storage_and_backup/object_storage/s3_create_bucket) created.
 - [The read and write rights configured](/pages/storage_and_backup/object_storage/s3_identity_and_access_management#manage-access-to-a-bucket-via-a-profile) on the S3 Object Storage bucket for the S3 user.
@@ -116,7 +116,7 @@ su - <sid>adm -c "/usr/sap/<SID>/SYS/global/hdb/opt/hdbbackint -v"
 
 Edit the content of the `hdbbackint.cfg` file and replace all values between round brackets by your S3 Object Storage bucket information.
 
-```
+```{.console}
 [trace]
 default = INFO
 destination = outputfile
@@ -151,7 +151,7 @@ ALTER SYSTEM ALTER CONFIGURATION('global.ini','SYSTEM') SET('backup','log_backup
 ```
 
 > [!primary]
-> To discover all backup parameters for SAP HANA, we recommend the [SAP documentation]((https://help.sap.com/docs/SAP_HANA_PLATFORM/009e68bc5f3c440cb31823a3ec4bb95b/e28fbdf1024c40e1a97fca48380aad98.html?locale=en-US)). In the column "Section", set "Backup".
+> To discover all backup parameters for SAP HANA, we recommend the [SAP documentation](https://help.sap.com/docs/SAP_HANA_PLATFORM/009e68bc5f3c440cb31823a3ec4bb95b/e28fbdf1024c40e1a97fca48380aad98.html?locale=en-US). In the column "Section", set "Backup".
 >
 
 ### Backup
@@ -301,6 +301,6 @@ Once the recovery has been done successfully, your SAP HANA database is started 
 ## Go further
 
 - To improve the security of your backups, we advise you to set the [object immutability](/pages/storage_and_backup/object_storage/s3_managing_object_lock).
-- You also have the possibility to [trigger SAP HANA backup to several S3 Object Storage buckets](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook-configure-ovhcloud-backint-agent-several-buckets).
+- You also have the possibility to [trigger SAP HANA backup to several S3 Object Storage buckets](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook_configure_ovhcloud_backint_agent_several_buckets).
 
 Join our community of users on <https://community.ovh.com/en/>.

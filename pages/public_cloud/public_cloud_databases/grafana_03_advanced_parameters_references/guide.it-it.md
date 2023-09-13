@@ -46,7 +46,7 @@ This guide lists all the supported advanced parameters that allow you to configu
 
 ### Using API
 
-Please refer to this [guide](/pages/platform/databases/databases_03_advanced_configuration#using-api) to find out how to change your advanced parameters from the OVHcloud API.
+Please refer to this [guide](/pages/public_cloud/public_cloud_databases/databases_03_advanced_configuration#using-api) to find out how to change your advanced parameters from the OVHcloud API.
 
 ### Advanced parameters for Grafana
 

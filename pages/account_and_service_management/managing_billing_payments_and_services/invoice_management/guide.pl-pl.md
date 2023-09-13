@@ -113,7 +113,7 @@ Aby uregulować zaległe płatności, kliknij menu `Masowe operacje`{.action}, a
 
 ![Spłata zaległej należności](images/pay_debt.png){.thumbnail}
 
-Zostanie wówczas [utworzone zamówienie](/pages/account/billing/managing_ovh_orders#zamowienie) do opłacania faktur. Po dokonaniu płatności saldo zostanie uregulowane.
+Zostanie wówczas [utworzone zamówienie](/pages/account_and_service_management/managing_billing_payments_and_services/managing_ovh_orders#zamowienie) do opłacania faktur. Po dokonaniu płatności saldo zostanie uregulowane.
 
 #### Zlecenie anulowania faktury
 
@@ -122,7 +122,7 @@ Zostanie wówczas [utworzone zamówienie](/pages/account/billing/managing_ovh_or
 > Aby zlecić rezygnację z usługi w dniu jej wygaśnięcia, postępuj zgodnie z instrukcjami zawartymi w tym [przewodniku](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services).
 >
 
-Jeśli otrzymałeś fakturę, której nie uważasz za słuszną i chcesz zwrócić się o jej zwrot lub skorzystać z prawa do odstąpienia od umowy (/pages/account/billing/managing_ovh_orders#korzystanie-z-prawa-do-odstapienia-od-umowy), możesz złożyć skargę w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), z zastrzeżeniem zastosowania naszych [Ogólnych warunków korzystania z Usług](https://contract.eu.ovhapis.com/1.0/pdf/contrat_genServices-pl.pdf).
+Jeśli otrzymałeś fakturę, której nie uważasz za słuszną i chcesz zwrócić się o jej zwrot lub skorzystać z prawa do odstąpienia od umowy (/pages/account_and_service_management/managing_billing_payments_and_services/managing_ovh_orders#korzystanie-z-prawa-do-odstapienia-od-umowy), możesz złożyć skargę w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), z zastrzeżeniem zastosowania naszych [Ogólnych warunków korzystania z Usług](https://contract.eu.ovhapis.com/1.0/pdf/contrat_genServices-pl.pdf).
 <br> Kliknij w prawym górnym rogu ekranu Twojej nazwy użytkownika, a następnie kliknij przycisk `Utwórz zgłoszenie`{.action}.
 
 ### Monitoruj płatności

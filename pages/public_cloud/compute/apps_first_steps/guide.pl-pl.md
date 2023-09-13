@@ -16,7 +16,7 @@ OVHcloud udostępnia klientom Public Cloud obrazy wstępnie zainstalowanych apli
 
 ## Wymagania początkowe
 
-- Instancja [Public Cloud](/pages/platform/public-cloud/public-cloud-first-steps#krok-3-tworzenie-instancji) na Twoim koncie OVHcloud.
+- Instancja [Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps#krok-3-tworzenie-instancji) na Twoim koncie OVHcloud.
 
 ## W praktyce
 
@@ -135,7 +135,7 @@ Nie musisz wykonywać żadnych innych kroków, aby zakończyć pierwszą konfigu
 > [!faq]
 >
 > Czy mogę korzystać z własnych serwerów DNS?
->> Tak, możesz. Upewnij się, że tworzysz rekordy GLUE z Twoim operatorem domeny. Na przykład, jeśli chcesz "ns1.mydomain.com" i "ns2.mydomain.com", musisz skonfigurować rekordy "GLUE", aby oba wskazywały na adres IP Twojego serwera. Jeśli Twoja domena jest zarejestrowana w OVHcloud, zapoznaj się [z tym przewodnikiem.](/pages/web/domains/glue_registry#etap-1-dodanie-rekordow-glue) Tworzenie może trwać 24 godziny.
+>> Tak, możesz. Upewnij się, że tworzysz rekordy GLUE z Twoim operatorem domeny. Na przykład, jeśli chcesz "ns1.mydomain.com" i "ns2.mydomain.com", musisz skonfigurować rekordy "GLUE", aby oba wskazywały na adres IP Twojego serwera. Jeśli Twoja domena jest zarejestrowana w OVHcloud, zapoznaj się [z tym przewodnikiem.](/pages/web_cloud/domains/glue_registry#etap-1-dodanie-rekordow-glue) Tworzenie może trwać 24 godziny.
 > Dlaczego warto zdefiniować hasło root?
 >> WHM używa domyślnie użytkownika root do uwierzytelniania. Unikalny adres URL umożliwia dostęp do pierwszej konfiguracji i zmianę hasła root. Następnym razem, gdy zalogujesz się do WHM, będziesz musiał użyć użytkownika root i hasła, które ustaliłeś.
 > Gdzie moja licencja na cPanel?

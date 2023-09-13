@@ -1,6 +1,5 @@
 ---
 title: 'Eine Website auf Ihrem Webhosting online stellen'
-legacy_guide_number: g1374
 excerpt: 'So stellen Sie eine Website auf Ihrem OVHcloud Webhosting online'
 updated: 2022-07-21
 ---
@@ -21,7 +20,7 @@ Im Internet gibt es viele verschiedene Websites. Egal ob Sie einen Blog einricht
 - Sie haben die Bestätigungs-E-Mail zur Installation Ihres Webhostings erhalten.
 - Sie besitzen eine [Domain](https://www.ovhcloud.com/de/domains/){.external}, über die Ihre Website erreichbar sein wird.
 - Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} eingeloggt.
-- Sie haben keine ausstehenden [Zahlungen](/pages/account/billing/invoice_management#pay-bills) und [Verlängerungen](/pages/account/billing/how_to_use_automatic_renewal#renewal-management) der dazugehörigen Dienstleistungen (Domainname und Webhosting).
+- Sie haben keine ausstehenden [Zahlungen](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) und [Verlängerungen](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) der dazugehörigen Dienstleistungen (Domainname und Webhosting).
 
 ## In der praktischen Anwendung
 

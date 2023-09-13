@@ -1,6 +1,6 @@
 ---
 title: 'Partizionare un VPS in seguito a un upgrade'
-updated: 2021-05-18
+updated: 2023-09-05
 ---
 
 > [!primary]
@@ -43,7 +43,7 @@ La partizione corrispondente al Rescue mode sarà quella montata nella directory
 
 Tuttavia, se il tuo VPS appartiene alla gamma attuale, la partizione non verrà automaticamente aumentata. Se la colonna MOUNTPOINT del risultato lo conferma, puoi ignorare lo step di rimozione.
 
-```sh
+```console
 NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
 sda 254:0 0 10G 0 disk
 └─sda1 254:1 0 10G 0 part /
@@ -63,7 +63,9 @@ Una volta effettuata questa operazione, è opportuno assicurarsi che non siano p
 
 ```sh
 e2fsck -yf /dev/sdb1
- 
+```
+
+```console
 e2fsck 1.42.9 (4-Feb-2014)
 Pass 1: Checking inodes, blocks, and sizes
 Pass 2: Checking directory structure
@@ -98,7 +100,7 @@ fdisk -u /dev/sdb
 
 Prima di eliminare la vecchia partizione, ti consigliamo di conservare il numero corrispondente al primo settore. Puoi ottenere questa informazione utilizzando il comando `p`{.action}. Il valore corrispondente è indicato sotto il campo `Start`. Conserva questo dato per gli step successivi.
 
-```sh
+```console
 Command (m for help): p
  
 Disk /dev/sdb: 21.5 GB, 21474836480 bytes
@@ -119,7 +121,7 @@ Device Boot Start End Blocks Id System
 
 Elimina la partizione eseguendo il comando `d`{.action}.
 
-```sh
+```console
 Command (m for help): d
 Selected partition 1
 ```
@@ -130,7 +132,7 @@ La rimozione verrà effettuata automaticamente.
 
 A questo punto, è necessario creare una nuova partizione con il comando `n`{.action}.  Ti consigliamo di utilizzare i valori predefiniti.
 
-```sh
+```console
 Command (m for help): n
 Partition type:
 p primary (0 primary, 0 extended, 4 free)
@@ -147,7 +149,7 @@ Assicurati che il valore predefinito indicato nella riga `First sector` corrispo
 
 Per assicurarti che la partizione sia avviabile, esegui il comando `a`{.action}: 
 
-```sh
+```console
 Command (m for help): a
  
 Partition number (1-4): 1
@@ -155,7 +157,7 @@ Partition number (1-4): 1
 
 Salva le modifiche ed esci dall’applicazione utilizzando il comando `w`{.action}:
 
-```sh
+```console
 Command (m for help): w
  
 The partition table has been altered!
@@ -170,7 +172,9 @@ Hai aumentato la partizione ma il suo filesystem occupa ancora lo stesso spazio.
 
 ```sh
 resize2fs /dev/sdb1
- 
+```
+
+```console
 resize2fs 1.42.9 (4-Feb-2014)
 Resizing the filesystem on /dev/sdb1 to 5242624 (4k) blocks.
 The filesystem on /dev/sdb1 is now 5242624 blocks long.
@@ -186,7 +190,9 @@ mount /dev/sdb1 /mnt
 
 ```sh
 df -h
- 
+```
+
+```console
 Filesystem Size Used Avail Use% Mounted on
 /dev/sda1 991M 793M 132M 86% /
 none 4.0K 0 4.0K 0% /sys/fs/cgroup
@@ -206,7 +212,9 @@ Se il comando `e2fsck`{.action} restituisce il messaggio di errore `bad magic nu
 
 ```sh
 dumpe2fs /dev/sdb1 | grep superblock
- 
+```
+
+```console
 Primary superblock at 0, Group descriptors at 1-6
 Backup superblock at 32768, Group descriptors at 32769-32774
 Backup superblock at 98304, Group descriptors at 98305-98310

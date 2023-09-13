@@ -14,7 +14,7 @@ OVHcloud Backint Agent pour SAP HANA vous permet de sauvegarder votre base de do
 
 ## Prérequis
 
-- [Un projet Public Cloud](/pages/public_cloud/compute/create_a_public_cloud_project)déjà déployé dans votre compte OVHcloud.
+- [Un projet Public Cloud](/pages/public_cloud/compute/create_a_public_cloud_project) déjà déployé dans votre compte OVHcloud.
 - [Un utilisateur S3](/pages/storage_and_backup/object_storage/s3_identity_and_access_management#creating-a-user) déjà créé.
 - [Un bucket Object Storage S3](/pages/storage_and_backup/object_storage/s3_create_bucket) déjà créé.
 - [Configurer les droits 'Lecture et Écriture'](/pages/storage_and_backup/object_storage/s3_identity_and_access_management#manage-access-to-a-bucket-via-a-profile) pour l'utilisateur S3 sur le bucket Object Storage S3.
@@ -115,7 +115,7 @@ su - <sid>adm -c "/usr/sap/<SID>/SYS/global/hdb/opt/hdbbackint -v"
 
 Éditez le contenu du fichier `hdbbackint.cfg` et remplacez les valeurs entre parenthèses par les informations liées à votre bucket Object Storage S3.
 
-```
+```{.console}
 [trace]
 default = INFO
 destination = outputfile
@@ -301,6 +301,6 @@ Une fois la restauration réalisée avec succès, votre base de données SAP HAN
 ## Aller plus loin
 
 - Afin d'améliorer la sécurité de vos sauvegardes, nous vous conseillons de mettre en place la [gestion de l'immutabilité](/pages/storage_and_backup/object_storage/s3_managing_object_lock/)
-- Vous pouvez également [réaliser les sauvegardes SAP HANA avec OVHcloud Backint Agent pour SAP HANA sur plusieurs buckets Object Storage](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook-configure-ovhcloud-backint-agent-several-buckets/)
+- Vous pouvez également [réaliser les sauvegardes SAP HANA avec OVHcloud Backint Agent pour SAP HANA sur plusieurs buckets Object Storage](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook_configure_ovhcloud_backint_agent_several_buckets/)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

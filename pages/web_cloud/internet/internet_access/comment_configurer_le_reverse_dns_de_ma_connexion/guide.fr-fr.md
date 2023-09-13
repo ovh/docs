@@ -1,9 +1,6 @@
 ---
 title: Comment configurer le reverse DNS de ma connexion
-legacy_guide_number: '7962659'
-space_key: CRXDSL
-space_name: XDSL
-updated: 2022-06-02
+updated: 2023-09-06
 ---
 
 ## Objectif
@@ -79,6 +76,9 @@ Dans les caractéristiques sur la droite, vous verrez apparaître votre IP publi
 
 - Saisissez votre IP publique et le sous domaine souhaité puis validez.
 - Saisissez le nom de domaine ou sous-domaine et cliquez sur `Suivant`{.action}. Validez à la page suivante.
+
+![reverse DNS](images/telecom-reversedns-add-reverse.png){.thumbnail}
+
 
 Quelques minutes seront nécessaires pour que la nouvelle valeur de votre DNS soit visible sur votre espace client.
 

@@ -16,7 +16,7 @@ OVHcloud [vRack](https://www.ovh.de/loesungen/vrack/){.external} ist ein private
 
 ## Voraussetzungen
 
-- Sie haben eine [Public Cloud Instanz](/pages/platform/public-cloud/public-cloud-first-steps#schritt-3-instanz-erstellen) in Ihrem Kunden-Account.
+- Sie haben eine [Public Cloud Instanz](/pages/public_cloud/compute/public-cloud-first-steps#schritt-3-instanz-erstellen) in Ihrem Kunden-Account.
 - Sie haben ein [vRack](https://www.ovh.de/loesungen/vrack/) in Ihrem Kunden-Account eingerichtet.
 - Sie haben einen [Dedicated Server](https://www.ovhcloud.com/de/bare-metal/) (kompatibel mit vRack) in Ihrem Kunden-Account.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
@@ -49,7 +49,7 @@ Wählen Sie in der Liste der verfügbaren Dienstleistungen das Projekt aus, das 
 
 ![Projekt zum vRack hinzufügen](images/addprojectvrack.png){.thumbnail}
 
-#### Option 2: Im Public Cloud Interface ein [neues vRack erstellen oder ein bestehendes hinzufügen](/pages/platform/network-services/getting-started-07-creating-vrack#schritt-1-vrack-aktivieren-und-verwalten).
+#### Option 2: Im Public Cloud Interface ein [neues vRack erstellen oder ein bestehendes hinzufügen](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack#schritt-1-vrack-aktivieren-und-verwalten).
 
 ### Instanz in das vRack integrieren
 
@@ -60,11 +60,11 @@ Es können zwei Situationen auftreten:
 
 #### Fälle einer neuen Instanz
 
-Wenn Sie Hilfe benötigen, folgen Sie zunächst diesem Leitfaden: [Erstellen Ihrer ersten Public Cloud-Instanz](/pages/platform/public-cloud/public-cloud-first-steps#schritt-3-instanz-erstellen){.external}. Bei der Erstellung einer Instanz können Sie in Schritt 4 ein privates Netzwerk angeben, in das Ihre Instanz integriert werden kann. Wählen Sie dann im dargestellten Drop-down-Menü Ihr zuvor erstelltes vRack aus.
+Wenn Sie Hilfe benötigen, folgen Sie zunächst diesem Leitfaden: [Erstellen Ihrer ersten Public Cloud-Instanz](/pages/public_cloud/compute/public-cloud-first-steps#schritt-3-instanz-erstellen){.external}. Bei der Erstellung einer Instanz können Sie in Schritt 4 ein privates Netzwerk angeben, in das Ihre Instanz integriert werden kann. Wählen Sie dann im dargestellten Drop-down-Menü Ihr zuvor erstelltes vRack aus.
 
 #### Im Fall einer bereits bestehenden Instanz
 
-Sie können eine bestehende Instanz einem privaten Netzwerk zuweisen. Weitere Informationen finden Sie in [diesem Abschnitt](/pages/platform/network-services/getting-started-07-creating-vrack#im-fall-einer-bestehenden-instanz) der zugehörigen Anleitung.
+Sie können eine bestehende Instanz einem privaten Netzwerk zuweisen. Weitere Informationen finden Sie in [diesem Abschnitt](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack#im-fall-einer-bestehenden-instanz) der zugehörigen Anleitung.
 
 ### VLAN ID erstellen
 
@@ -72,7 +72,7 @@ Damit beide Dienste miteinander kommunizieren können, müssen sie mit derselben
 
 #### Verwendung der Standard-ID
 
-Die VLAN ID für dedizierte Server ist standardmäßig **0**. Um diese VLAN ID zu verwenden, müssen Sie das mit Ihrer Instanz verbundene private Netzwerk als VLAN **0** "taggen". Dazu muss die [OVHcloud API (EN)](/pages/platform/network-services/getting-started-08-creating-vrack-with-api#step-3-creating-a-vlan-in-the-vrack) verwendet werden.
+Die VLAN ID für dedizierte Server ist standardmäßig **0**. Um diese VLAN ID zu verwenden, müssen Sie das mit Ihrer Instanz verbundene private Netzwerk als VLAN **0** "taggen". Dazu muss die [OVHcloud API (EN)](/pages/public_cloud/public_cloud_network_services/getting-started-08-creating-vrack-with-api#step-3-creating-a-vlan-in-the-vrack) verwendet werden.
 
 > [!primary]
 > In der Public Cloud definieren Sie eine einzige VLAN ID pro privatem Netzwerk.

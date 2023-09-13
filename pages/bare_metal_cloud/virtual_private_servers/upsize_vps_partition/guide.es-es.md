@@ -1,6 +1,6 @@
 ---
 title: 'Reparticionar un VPS tras un upgrade'
-updated: 2021-05-18
+updated: 2023-09-05
 ---
 
 > [!primary]
@@ -43,7 +43,7 @@ La partición correspondiente al modo de rescate será la montada en el director
 
 No obstante, si su VPS pertenece a la gama actual, la partición no se montará automáticamente. Si la columna del resultado "MOUNTPOINT" lo confirma, puede ignorar el paso de desmontaje.
 
-```sh
+```console
 NAME   MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
 sda 254:0 0 10G 0 disk
 └─sda1 254:1 0 10G 0 part /
@@ -63,7 +63,9 @@ Una vez desmontada la partición, es aconsejable comprobar el sistema de archivo
 
 ```sh
 e2fsck -yf /dev/sdb1
- 
+```
+
+```console
 e2fsck 1.42.9 (4-Feb-2014)
 Pass 1: Checking inodes, blocks, and sizes
 Pass 2: Checking directory structure
@@ -75,7 +77,7 @@ Pass 5: Checking group summary information
 
 Si encuentra un error, deberá adoptar las medidas adecuadas en cada caso. Estos son algunos de los errores más frecuentes:
 
-- **bad magic number in superblock**: No continúe. Para solucionar este problema, consulte el apartado [Cómo solucionar los errores «bad magic number in superblock»](/pages/cloud/vps/upsize_vps_partition#como-solucionar-los-errores-bad-magic-number-in-superblock){.external} de esta guía.
+- **bad magic number in superblock**: No continúe. Para solucionar este problema, consulte el apartado [Cómo solucionar los errores «bad magic number in superblock»](/pages/bare_metal_cloud/virtual_private_servers/upsize_vps_partition#como-solucionar-los-errores-bad-magic-number-in-superblock){.external} de esta guía.
 
 - **/dev/vdb1 has unsupported feature(s): metadata_csum**, seguido de **e2fsck: Get a newer version of e2fsck!**: Actualice **e2fsck**. Si la última versión no está disponible a través de **apt** o cualquier otro gestor de paquetes, deberá compilarla a partir del código fuente.
 
@@ -98,7 +100,7 @@ fdisk -u /dev/sdb
 
 Antes de eliminar la antigua partición, le recomendamos que anote el número correspondiente al primer sector de la partición. Puede obtener esta información con el comando `p`. El número es el que aparece en el campo «Start». Conserve esta información, ya que la necesitará más adelante.
 
-```sh
+```console
 Command (m for help): p
  
 Disk /dev/sdb: 21.5 GB, 21474836480 bytes
@@ -119,7 +121,7 @@ Device Boot Start End Blocks Id System
 
 A continuación, elimine la partición con el comando `d`.
 
-```sh
+```console
 Command (m for help): d
 Selected partition 1
 ```
@@ -130,7 +132,7 @@ La partición se eliminará automáticamente.
 
 Ahora deberá crear la nueva partición con el comando `n`. Le recomendamos que utilice los valores por defecto.
 
-```sh
+```console
 Command (m for help): n
 Partition type:
 p primary (0 primary, 0 extended, 4 free)
@@ -147,7 +149,7 @@ En la línea «First sector», asegúrese de que el valor por defecto coincide c
 
 A continuación, asegúrese de que la partición sea de arranque (*bootable*). Puede hacerlo con el comando `a`.
 
-```sh
+```console
 Command (m for help): a
  
 Partition number (1-4): 1
@@ -155,7 +157,7 @@ Partition number (1-4): 1
 
 Guarde los cambios y salga de la aplicación con el comando `w`.
 
-```sh
+```console
 Command (m for help): w
  
 The partition table has been altered!
@@ -170,7 +172,9 @@ Ahora ya ha ampliado la partición, pero el sistema de archivos sigue ocupando e
 
 ```sh
 resize2fs /dev/sdb1
- 
+```
+
+```console
 resize2fs 1.42.9 (4-Feb-2014)
 Resizing the filesystem on /dev/sdb1 to 5242624 (4k) blocks.
 The filesystem on /dev/sdb1 is now 5242624 blocks long.
@@ -186,7 +190,9 @@ mount /dev/sdb1 /mnt
 
 ```sh
 df -h
- 
+```
+
+```console
 Filesystem Size Used Avail Use% Mounted on
 /dev/sda1 991M 793M 132M 86% /
 none 4.0K 0 4.0K 0% /sys/fs/cgroup
@@ -206,7 +212,9 @@ Si el comando `e2fsck` devuelve el mensaje de error «**bad magic number in supe
 
 ```sh
 dumpe2fs /dev/sdb1 | grep superblock
- 
+```
+
+```console
 Primary superblock at 0, Group descriptors at 1-6
 Backup superblock at 32768, Group descriptors at 32769-32774
 Backup superblock at 98304, Group descriptors at 98305-98310

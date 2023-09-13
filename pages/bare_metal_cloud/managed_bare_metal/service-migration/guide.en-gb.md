@@ -68,7 +68,7 @@ As part of a migration process, you can link your Managed Mare Metal services wi
 
 If the public IP addresses attached to the source infrastructure are required on the destination Managed Bare Metal, it will be necessary to transfer them.
 
-Please consult our guide to [Migrate an IP block between two Managed Bare Metal services](/pages/cloud/managed-bare-metal/ip-block-addition#migrate-an-ip-block-between-two-managed-bare-metal-solutions).
+Please consult our guide to [Migrate an IP block between two Managed Bare Metal services](/pages/bare_metal_cloud/managed_bare_metal/ip-block-addition#migrate-an-ip-block-between-two-managed-bare-metal-solutions).
 
 The video below also shows how to migrate an IP block between two Hosted Private Cloud services. This method also applies for Managed Bare Metal.
 

@@ -27,7 +27,7 @@ This tutorial will help you create your first content, organise it, put it onlin
 
 ## Instructions
 
-If one is not already installed, [add an SSL certificate](/pages/web/hosting/ssl-activate-https-website#step-1-activate-the-ssl-certificate-on-the-web-hosting-plan) for the domain name associated with your website before you continue.
+If one is not already installed, [add an SSL certificate](/pages/web_cloud/web_hosting/ssl-activate-https-website#step-1-activate-the-ssl-certificate-on-the-web-hosting-plan) for the domain name associated with your website before you continue.
 
 When you installed your 1-click CMS, you received an email containing the information you need to follow this tutorial:
 

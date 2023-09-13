@@ -30,13 +30,13 @@ You want to migrate your email addresses on an Exchange or Email Pro platform to
 
 ### Configuring the destination platform
 
-Before you begin your migration, if you have just ordered your new email solution, first add the domain name to your [Email Pro](/pages/web/emails-pro/first_config#step-2-add-your-domain-name) or [Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain) platform. If you are migrating to an MX Plan platform, where the attached domain name is fixed, you can proceed directly to [the next step](#accountsmigration).
+Before you begin your migration, if you have just ordered your new email solution, first add the domain name to your [Email Pro](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config#step-2-add-your-domain-name) or [Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain) platform. If you are migrating to an MX Plan platform, where the attached domain name is fixed, you can proceed directly to [the next step](#accountsmigration).
 
 > Select the `Associated domains`{.action} tab for your platform, then click on the button `Add a domain`{.action}. Configure your domain name as **non-authoritative**. Once you have added your domain name, ensure that `OK` appears in the `Status` column.
 >
 > ![email-migration](images/migration_platform02.png){.thumbnail}
 >
-> For more details on adding a domain name, follow the [Email Pro guide](/pages/web/emails-pro/first_config#step-2-add-your-domain-name)  or the [Exchange guide](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain).
+> For more details on adding a domain name, follow the [Email Pro guide](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config#step-2-add-your-domain-name)  or the [Exchange guide](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain).
 
 ### Migrate email accounts <a name="accountsmigration"></a>
 
@@ -81,7 +81,7 @@ In the `Email accounts`{.action} tab for your platform, click on the `...`{.acti
 
 Migrate the source email account to your new platform account using our [OMM](https://omm.ovh.net/) tool (OVH Mail Migrator).
 
-> If you need to migrate several email accounts, we recommend using the [Project](/pages/web/emails/migration_omm#project) mode via [OMM](https://omm.ovh.net/Project/Create). You can use this mode to import a CSV table containing the information for the email accounts you want to migrate.
+> If you need to migrate several email accounts, we recommend using the [Project](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm#project) mode via [OMM](https://omm.ovh.net/Project/Create). You can use this mode to import a CSV table containing the information for the email accounts you want to migrate.
 
 For more information on OMM, please read our guide on [Migrating email accounts via the OVH Mail Migrator](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_omm).
 

@@ -1,6 +1,5 @@
 ---
 title: Criar filtros para os seus endereços de e-mail
-legacy_guide_number: 1973
 excerpt: Saiba como criar e configurar um filtro no seu endereço de e-mail
 updated: 2021-09-27
 ---

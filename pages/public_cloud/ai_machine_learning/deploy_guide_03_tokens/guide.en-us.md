@@ -92,7 +92,7 @@ This Operator token will be scoped on a specific AI Deploy app and we will use t
 
 ![token generation input operator](images/07-token-gen-input-op.png){.thumbnail}
 
-Additional information about the use of a token to manage an AI Training resource can be found [here](/pages/platform/ai/cli_13_howto_app_token_cli#use-the-app-token).
+Additional information about the use of a token to manage an AI Training resource can be found [here](/pages/public_cloud/ai_machine_learning/cli_13_howto_app_token_cli#use-the-app-token).
 
 ### Using a token to query an AI Deploy app
 

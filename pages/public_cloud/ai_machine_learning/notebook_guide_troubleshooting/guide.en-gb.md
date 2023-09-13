@@ -125,7 +125,7 @@ Once the ovhai CLI is installed, you need to authenticate with a Public Cloud us
 ovhai login
 ```
 
-If you want to find this information, check the [documentation](/pages/platform/ai/cli_10_howto_install_cli#instructions).
+If you want to find this information, check the [documentation](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli#instructions).
 
 ### I have compatibility issues between my installed packages
 

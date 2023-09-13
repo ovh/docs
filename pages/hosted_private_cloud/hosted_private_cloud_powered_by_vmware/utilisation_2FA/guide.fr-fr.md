@@ -80,7 +80,7 @@ La seule différence sera l'autonomie ou non de l'utilisateur pour la validation
 
 Il est possible d'utiliser plusieurs applications tierces nécessitant la connexion au vCenter.
 
-Ces applications doivent être préalablement autorisées au travers de la politique d'accès au vCenter qui est paramétrable dans votre [espace client](/pages/cloud/private-cloud/manager_ovh_private_cloud#securite)
+Ces applications doivent être préalablement autorisées au travers de la politique d'accès au vCenter qui est paramétrable dans votre [espace client](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/manager_ovh_private_cloud#securite)
 
 Ces applications vont alors pouvoir accéder à nos infrastructures, mais ne vont pas forcément gérer la double authentification.
 

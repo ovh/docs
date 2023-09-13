@@ -73,7 +73,7 @@ Podczas reinstalacji serwera VPS otrzymasz e-mail z hasłem root, aby zalogować
 
 Użytkownik **root** jest tworzony domyślnie w systemach GNU/Linux. Jest to najwyższy poziom dostępu do systemu operacyjnego. Może być niebezpieczne, jeśli udostępniasz Twój VPS za pośrednictwem użytkownika root i hasła, ponieważ to konto może wykonywać operacje nieodwracalne.
 
-Połączenia użytkowników root można wyłączyć za pomocą protokołu SSH. Przed przejściem [do opisanych poniżej etapów, utwórz innego użytkownika](/pages/cloud/vps/secure_your_vps#createuser).
+Połączenia użytkowników root można wyłączyć za pomocą protokołu SSH. Przed przejściem [do opisanych poniżej etapów, utwórz innego użytkownika](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps#createuser).
 
 Do edycji tego pliku konfiguracyjnego użyj edytora tekstu, takiego jak *vim* lub *nano*:
 

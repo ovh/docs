@@ -14,7 +14,7 @@ Le autorizzazioni e le password associate agli utenti del client vSphere possono
 ## Prerequisiti
 
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
-- Disporre di un account utente creato dallo Spazio Cliente OVHcloud. Per maggiori informazioni, consulta [questa guida](/pages/cloud/private-cloud/manager_ovh_private_cloud#utenti)
+- Disporre di un account utente creato dallo Spazio Cliente OVHcloud. Per maggiori informazioni, consulta [questa guida](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/manager_ovh_private_cloud#utenti)
 
 ## Procedura
 

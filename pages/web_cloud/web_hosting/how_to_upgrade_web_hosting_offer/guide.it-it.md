@@ -64,7 +64,7 @@ Una volta eliminati i dati sui tuoi database, utilizza la scheda `Database`{.act
 
 #### 2 - Web Cloud Databases
 
-Se utilizzi l'offerta [Web Cloud Databases](/pages/web/clouddb/starting_with_clouddb#attiva-il-tuo-server-clouddb-incluso-con-la-tua-offerta-di-hosting-web) inclusa con il tuo hosting [Performance](https://www.ovhcloud.com/it/web-hosting/performance-offer/) e vuoi passare al tuo hosting su un'offerta [Pro](https://www.ovhcloud.com/it/web-hosting/professional-offer/), accedi alla sezione `Hosting`{.action} del tuo Spazio Cliente OVHcloud.<br>
+Se utilizzi l'offerta [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb#attiva-il-tuo-server-clouddb-incluso-con-la-tua-offerta-di-hosting-web) inclusa con il tuo hosting [Performance](https://www.ovhcloud.com/it/web-hosting/performance-offer/) e vuoi passare al tuo hosting su un'offerta [Pro](https://www.ovhcloud.com/it/web-hosting/professional-offer/), accedi alla sezione `Hosting`{.action} del tuo Spazio Cliente OVHcloud.<br>
 Clicca sul pulsante `...`{.action} nella sezione `Database privato`{.action} > `Scollega`{.action}.
 
 ![Web Cloud Databases](images/clouddb.png){.thumbnail}

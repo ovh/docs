@@ -1,7 +1,6 @@
 ---
 title: 'Sharing an object via a temporary URL'
 excerpt: 'Find out how to share an object via a temporary URL'
-legacy_guide_number: g2007
 updated: 2021-01-11
 ---
 

@@ -20,7 +20,7 @@ I siti Internet presenti in rete sono di tanti tipi diversi: blog, e-commerce, s
 - Aver ricevuto l'email di conferma dell'installazione del tuo hosting Web 
 - Disporre di un [dominio](https://www.ovhcloud.com/it/domains/){.external} attivo, che corrisponderà all’indirizzo del sito
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
-- Essere aggiornato nei [pagamenti](/pages/account/billing/invoice_management#pay-bills) e [rinnovi](/pages/account/billing/how_to_use_automatic_renewal#renewal-management) dei servizi associati (dominio e hosting web)
+- Essere aggiornato nei [pagamenti](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) e [rinnovi](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) dei servizi associati (dominio e hosting web)
 
 ## Procedura
 

@@ -1,7 +1,6 @@
 ---
 title: 'Increasing Public Cloud quotas'
 excerpt: 'Find out how to apply for a Public Cloud quota extension'
-legacy_guide_number: 1904
 updated: 2023-05-03
 ---
 

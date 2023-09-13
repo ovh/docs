@@ -141,7 +141,7 @@ De seguida, poderá desligar a sua conta e voltar a ligar-se ao seu Okta enquant
 
 ### Ligação via SSO
 
-Na [página de identificação da OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), introduza o seu [identificador](/pages/account/customer/ovhcloud-account-creation#qual-e-o-meu-identificador-de-cliente) seguido de **/idp** sem password e clique no botão `Ligação`{.action}.
+Na [página de identificação da OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), introduza o seu [identificador](/pages/account_and_service_management/account_information/ovhcloud-account-creation#qual-e-o-meu-identificador-de-cliente) seguido de **/idp** sem password e clique no botão `Ligação`{.action}.
 
 ![Ligação à Federação OVHcloud](images/ovhcloud_federation_login_1.png){.thumbnail}
 

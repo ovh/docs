@@ -1,7 +1,6 @@
 ---
 title: Compreender a interface vScope (EN)
 excerpt: The vScope interface allows you to monitor your infrastructure
-legacy_guide_number: g718
 updated: 2022-01-28
 ---
 

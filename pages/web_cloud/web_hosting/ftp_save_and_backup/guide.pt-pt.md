@@ -82,7 +82,7 @@ Aceda à informação correspondente ao método de restauração escolhido.
 > 
 > Nesse caso:
 >
-> - As nossas equipas enviam um e-mail ao [administrador](/pages/account/customer/managing_contacts#aceder-a-area-de-gestao-dos-contactos) do alojamento. 
+> - As nossas equipas enviam um e-mail ao [administrador](/pages/account_and_service_management/account_information/managing_contacts#aceder-a-area-de-gestao-dos-contactos) do alojamento. 
 > - O estado "manutenção" aparece na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Na secção `Web Cloud`{.action}, clique no serviço na secção `Alojamento`{.action} e, a seguir, no separador `Informações gerais`{.action}.
 > - O(s) site(s) alojado(s) apresenta(m) uma página "403 Forbidden".
 >

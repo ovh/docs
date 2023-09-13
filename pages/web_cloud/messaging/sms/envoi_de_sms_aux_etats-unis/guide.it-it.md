@@ -97,7 +97,7 @@ Una volta creato e convalidato il proprio modello di messaggio, l’invio di un 
 
 Se invii un SMS negli Stati Uniti senza aver prima creato e convalidato un modello, l’SMS sarà rifiutato e riceverai un Premium Tracking Transaction Code (PTT code) 1999. Questo codice corrisponde al messaggio di errore “No templates available” (nessun modello disponibile).
 
-Per conoscere i codici PTT, consulta [questa guida](/pages/telecom/sms/tout_savoir_sur_les_utilisateurs_sms#step-5-specifica-un-url-di-callback).
+Per conoscere i codici PTT, consulta [questa guida](/pages/web_cloud/messaging/sms/tout_savoir_sur_les_utilisateurs_sms#step-5-specifica-un-url-di-callback).
 
 ## Per saperne di più
 

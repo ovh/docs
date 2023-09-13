@@ -115,7 +115,7 @@ cat database_name.sql | mysql --host=server --user=user --port=port --password=p
 
 > [!primary]
 >
-> In manchen Fällen kann es sein, dass das in Ihrer Web Cloud Databases Instanz verfügbare RAM nicht den gewünschten Export oder Import durchführen kann. Ist das der Fall, empfehlen wir Ihnen die Verwendung des OVHcloud Tools im Kundencenter. Folgen Sie dazu der Anleitung "[Erste Schritte mit Web Cloud Databases](/pages/web/clouddb/starting_with_clouddb#datenbank-importieren)", falls erforderlich.
+> In manchen Fällen kann es sein, dass das in Ihrer Web Cloud Databases Instanz verfügbare RAM nicht den gewünschten Export oder Import durchführen kann. Ist das der Fall, empfehlen wir Ihnen die Verwendung des OVHcloud Tools im Kundencenter. Folgen Sie dazu der Anleitung "[Erste Schritte mit Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb#datenbank-importieren)", falls erforderlich.
 >
 
 ## Weiterführende Informationen

@@ -58,7 +58,7 @@ Die neue Seite zeigt eine modifizierte Ansicht der Optionen zur [Erstellung von 
 
 - **Instanz-Name ändern**: Sie können der Instanz einen Namen geben, um die Identifikation zu vereinfachen.
 - **Image ändern**: Sie können ein anderes Betriebssystem für die Instanz auswählen. (Beachten Sie, dass bei der Reinstallation einer Instanz alle darauf liegenden Daten gelöscht werden.)
-- **Modell ändern**: Sie können auf einen anderen Instanz-Typ wechseln. Weitere Informationen zu diesen Optionen finden Sie in [dieser Anleitung](/pages/platform/public-cloud/public-cloud-first-steps#schritt-3-instanz-erstellen).
+- **Modell ändern**: Sie können auf einen anderen Instanz-Typ wechseln. Weitere Informationen zu diesen Optionen finden Sie in [dieser Anleitung](/pages/public_cloud/compute/public-cloud-first-steps#schritt-3-instanz-erstellen).
 - **Abrechnungszeitraum ändern**: Sie können die Abrechnungsart der Instanz von stündlicher auf monatliche Abrechnung ändern. Weitere Informationen finden Sie in [dieser Anleitung](/pages/account_and_service_management/managing_billing_payments_and_services/changing_hourly_monthly_billing).
 
 #### Backup einer Instanz erstellen
@@ -71,13 +71,13 @@ Weitere Informationen finden Sie in der Anleitung "[Backup einer Instanz erstell
 
 Klicken Sie auf `Automatisches Backup erstellen`{.action}.
 
-Weitere Informationen finden Sie in der Anleitung "[Backup einer Instanz erstellen](/pages/platform/public-cloud/save_an_instance#automatisches-backup-einer-instanz-erstellen)".
+Weitere Informationen finden Sie in der Anleitung "[Backup einer Instanz erstellen](/pages/public_cloud/compute/save_an_instance#automatisches-backup-einer-instanz-erstellen)".
 
 #### Instanz anhalten (*suspend*)
 
 Klicken Sie auf `Anhalten`{.action}.
 
-Diese Aktion wird die Instanz anhalten. Weitere Informationen finden Sie in unserer Anleitung zum [Aussetzen oder Pausieren einer Instanz](/pages/platform/public-cloud/suspend_or_pause_an_instance#anhalten-einer-instanz-suspend).
+Diese Aktion wird die Instanz anhalten. Weitere Informationen finden Sie in unserer Anleitung zum [Aussetzen oder Pausieren einer Instanz](/pages/public_cloud/compute/suspend_or_pause_an_instance#anhalten-einer-instanz-suspend).
 
 Klicken Sie auf `Starten`{.action}, um die Instanz zu reaktivieren.
 
@@ -102,7 +102,7 @@ Bestätigen Sie die Anfrage zum Neustart im angezeigten Fenster.
 
 Klicken Sie auf `Aussetzen`{.action}.
 
-Dadurch wird die Instanz in den Zustand "*shelved*" versetzt, hier als `Ausgesetzt` angezeigt. Genauere Informationen zu den Aussetzungszuständen einer Instanz finden Sie in unserer Anleitung "[Aussetzen oder Pausieren einer Instanz](/pages/platform/public-cloud/suspend_or_pause_an_instance#aussetzen-einer-instanz-shelve)".
+Dadurch wird die Instanz in den Zustand "*shelved*" versetzt, hier als `Ausgesetzt` angezeigt. Genauere Informationen zu den Aussetzungszuständen einer Instanz finden Sie in unserer Anleitung "[Aussetzen oder Pausieren einer Instanz](/pages/public_cloud/compute/suspend_or_pause_an_instance#aussetzen-einer-instanz-shelve)".
 
 Klicken Sie auf `Reaktivieren`{.action}, um den Status `Aktiviert` der Instanz wiederherzustellen.
 
@@ -132,7 +132,7 @@ Wechseln Sie dann vom Dashboard zum Tab `VNC-Konsole`{.action}.
 
 Die VNC-Konsole bietet direkten Zugriff auf Ihre Instanz. Damit dieser Zugang funktioniert, müssen Sie zuerst einen Benutzernamen und ein Passwort auf der Instanz konfigurieren. 
 
-Weitere Informationen zu den notwendigen Schritten finden Sie in unserer Anleitung zur [Erstellung einer Public Cloud Instanz](/pages/platform/public-cloud/public-cloud-first-steps#connect-to-instance)".
+Weitere Informationen zu den notwendigen Schritten finden Sie in unserer Anleitung zur [Erstellung einer Public Cloud Instanz](/pages/public_cloud/compute/public-cloud-first-steps#connect-to-instance)".
 
 ## Weiterführende Informationen
 

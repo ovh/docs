@@ -1,6 +1,5 @@
 ---
 title: 'Konfiguration Ihrer E-Mail-Adresse mit Thunderbird für Windows'
-legacy_guide_number: 1297
 excerpt: 'Erfahren Sie hier, wie Sie Ihren Mailaccount in Thunderbird für Windows einrichten'
 updated: 2021-08-26
 ---
@@ -57,7 +56,7 @@ OVHcloud bietet auch eine Webanwendung an, mit der Sie über Ihren Webbrowser au
 
 ### Backup Ihrer E-Mail-Adresse
 
-Wenn Sie eine Änderung vornehmen, die den Verlust der Daten Ihres E-Mail-Accounts zur Folge haben könnte, empfehlen wir Ihnen eine vorherige Sicherung des betreffenden E-Mail-Accounts. Folgen Sie hierzu dem Abschnitt "**Exportieren**" im Bereich "**Thunderbird**" der Anleitung zur [manuellen Migration eines Accounts](/pages/web/emails/manual_email_migration#exportieren).
+Wenn Sie eine Änderung vornehmen, die den Verlust der Daten Ihres E-Mail-Accounts zur Folge haben könnte, empfehlen wir Ihnen eine vorherige Sicherung des betreffenden E-Mail-Accounts. Folgen Sie hierzu dem Abschnitt "**Exportieren**" im Bereich "**Thunderbird**" der Anleitung zur [manuellen Migration eines Accounts](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration#exportieren).
 
 ### Bestehende Einstellungen ändern
 

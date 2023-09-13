@@ -30,7 +30,7 @@ Po zalogowaniu do swojej strefy klienta, identyfikator znajdziesz w prawym górn
 ### Co zrobić, jeśli nie mogę zalogować się do mojego konta klienta?
 
 Może się zdarzyć z różnych powodów, takich jak zapomnienie hasła, utrata dostępu do konta e-mail lub do telefonu komórkowego służącego do identyfikacji za pomocą SMS, że użytkownik nie jest w stanie zalogować się do Panelu klienta.
-W takiej sytuacji zachęcamy do zapoznania się z poniższą [dokumentacją](/pages/account/customer/ovhcloud-account-login#login-failure), z której dowiesz się, jak rozwiązać ten problem.
+W takiej sytuacji zachęcamy do zapoznania się z poniższą [dokumentacją](/pages/account_and_service_management/account_information/ovhcloud-account-login#login-failure), z której dowiesz się, jak rozwiązać ten problem.
 
 ### Jak zmienić dane osobowe?
 
@@ -78,7 +78,7 @@ Jeśli chcesz odzyskać domenę, której jesteś właścicielem zarejestrowanym 
 
 #### Wskazówki i porady
 
-Pełna instrukcja zarządzania kontaktami dostępna jest tutaj: [/pages/account/customer/managing_contacts#dostep-do-zarzadzania-kontaktami](/pages/account/customer/managing_contacts#dostep-do-zarzadzania-kontaktami)
+Pełna instrukcja zarządzania kontaktami dostępna jest tutaj: [/pages/account_and_service_management/account_information/managing_contacts#dostep-do-zarzadzania-kontaktami](/pages/account_and_service_management/account_information/managing_contacts#dostep-do-zarzadzania-kontaktami)
 
 ### W jaki sposób skonfigurować lub zmienić kontakt księgowy?
 

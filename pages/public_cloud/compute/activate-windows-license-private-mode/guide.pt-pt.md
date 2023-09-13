@@ -29,7 +29,7 @@ Recomendamos que consulte o guia "[Aceder à interface Horizon](/pages/public_cl
 
 #### A partir da interface Horizon
 
-Ligue-se à interface [Horizon](https://horizon.cloud.ovh.net/auth/login/) de acordo com o método indicado na [primeira parte deste guia](/pages/platform/network-services/getting-started-07-creating-vrack#interface-horizon).
+Ligue-se à interface [Horizon](https://horizon.cloud.ovh.net/auth/login/) de acordo com o método indicado na [primeira parte deste guia](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack#interface-horizon).
 
 Ligue-se bem à sua zona de trabalho:
 

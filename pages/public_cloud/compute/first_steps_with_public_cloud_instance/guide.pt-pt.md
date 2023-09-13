@@ -58,7 +58,7 @@ A nova página que aparece apresenta uma versão modificada das opções [de cri
 
 - **Modificar o nome**: pode atribuir um nome à instância para uma maior facilidade de identificação.
 - **Modificar a imagem**: pode escolher outro sistema operativo para a instância (tenha em atenção que a reinstalação de uma instância eliminará todos os dados que contém).
-- **Modificar o modelo**: pode alterar o modelo de instância. Para mais informações sobre as opções, consulte [este manual](/pages/platform/public-cloud/public-cloud-first-steps#3o-passo-criacao-de-uma-instancia).
+- **Modificar o modelo**: pode alterar o modelo de instância. Para mais informações sobre as opções, consulte [este manual](/pages/public_cloud/compute/public-cloud-first-steps#3o-passo-criacao-de-uma-instancia).
 - **Alterar o período de faturação**: pode alterar o período de faturação da instância de uma faturação à hora para uma faturação mensal. Para mais informações, consulte [este guia](/pages/account_and_service_management/managing_billing_payments_and_services/changing_hourly_monthly_billing).
 
 #### Criar um backup de uma instância
@@ -71,13 +71,13 @@ Para mais informações, consulte o manual "[Guardar uma instância](/pages/publ
 
 Clique em `Criar um backup automatizado`{.action}.
 
-Para mais informações, consulte o manual "[Guardar uma instância](/pages/platform/public-cloud/save_an_instance#criar-um-backup-automatizado-de-uma-instancia)".
+Para mais informações, consulte o manual "[Guardar uma instância](/pages/public_cloud/compute/save_an_instance#criar-um-backup-automatizado-de-uma-instancia)".
 
 #### Suspender uma instância
 
 Clique em `Parar`{.action}.
 
-Esta ação terá por efeito suspender a instância. Para mais informações, consulte o nosso manual "[Suspender ou colocar em pausa uma instância](/pages/platform/public-cloud/suspend_or_pause_an_instance#parar-suspend-uma-instancia)".
+Esta ação terá por efeito suspender a instância. Para mais informações, consulte o nosso manual "[Suspender ou colocar em pausa uma instância](/pages/public_cloud/compute/suspend_or_pause_an_instance#parar-suspend-uma-instancia)".
 
 Clique em `Iniciar`{.action} para reativar a instância.
 
@@ -102,7 +102,7 @@ Confirme o pedido de reboot na janela que aparecer.
 
 Clique em `Suspender`{.action}.
 
-Isto colocará a instância no estado "*shelved*", apresentado aqui como `Suspended`. Consulte o nosso manual "[Suspender ou colocar em pausa uma instância](/pages/platform/public-cloud/suspend_or_pause_an_instance#suspender-shelve-uma-instancia)" para obter mais informações sobre os diferentes estados de suspensão de uma instância.
+Isto colocará a instância no estado "*shelved*", apresentado aqui como `Suspended`. Consulte o nosso manual "[Suspender ou colocar em pausa uma instância](/pages/public_cloud/compute/suspend_or_pause_an_instance#suspender-shelve-uma-instancia)" para obter mais informações sobre os diferentes estados de suspensão de uma instância.
 
 Clique em `Reativar`{.action} para restaurar o estado `Ativado` da instância.
 
@@ -132,7 +132,7 @@ A seguir, clique no separador `Console VNC`{.action}.
 
 A consola VNC fornece um acesso direto à sua instância. Para que este acesso funcione, primeiro tem de configurar um nome de utilizador e uma palavra-passe na instância. 
 
-Para mais informações, consulte o nosso manual "[Criação e conexão a uma primeira instância Public Cloud](/pages/platform/public-cloud/public-cloud-first-steps#connect-to-instance)".
+Para mais informações, consulte o nosso manual "[Criação e conexão a uma primeira instância Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps#connect-to-instance)".
 
 ## Quer saber mais?
 

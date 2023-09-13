@@ -1,7 +1,7 @@
 ---
 title: 'Pierwsze kroki z serwerem dedykowanym Kimsufi, So You Start lub Rise'
 excerpt: 'Poznaj podstawy korzystania z serwera dedykowanego Kimsufi, So You Start lub Rise'
-updated: 2023-02-28
+updated: 2023-09-11
 ---
 
 > [!primary]
@@ -18,7 +18,7 @@ Serwer dedykowany to fizyczny serwer zlokalizowany w jednym z naszych centrów d
 
 - Posiadanie [serwera dedykowanego](https://www.ovhcloud.com/pl/bare-metal/) z oferty Kimsufi, So You Start lub Rise na Twoim koncie OVHcloud.
 - Połączenie przez SSH (dostęp root) z systemem Linux lub jako administrator z systemem Windows.
-- Dostęp do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+- Zalogowanie do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 
 ## W praktyce
 
@@ -28,7 +28,7 @@ Jeśli Twój serwer dedykowany jest po raz pierwszy skonfigurowany w trakcie pro
 
 W prosty sposób możesz przeprowadzić reinstalację serwera i wybrać inny obraz systemu operacyjnego w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). W zakładce `Informacje ogólne`{.action} kliknij `...`{.action} naprzeciwko systemu operacyjnego, a następnie wybierz `Zainstaluj`{.action}.
 
-![Przycisk Reinstalacja](images/reinstalling-your-server-00.png){.thumbnail}
+![Przycisk Reinstalacja](images/reinstalling-your-server-01.png){.thumbnail}
 
 W oknie, które się pojawi wybierz jedną z opcji instalacji:
 
@@ -53,7 +53,7 @@ Po wybraniu `Instalacji z szablonu OVHcloud`{.action}, możesz wybrać system op
 
 Jeśli musisz zmienić układ partycji systemu operacyjnego, zaznacz kratkę "Personalizacja konfiguracji partycji", zanim klikniesz na `Dalej`{.action}.
 
-![Personalizuj konfigurację partycji](images/SSH_02.png){.thumbnail}
+![Personalizuj konfigurację partycji](images/reinstalling-your-server-04.png){.thumbnail}
 
 Po zakończeniu korekt kliknij Dalej, aby `uzyskać dostęp`{.action} do strony podsumowania.
 
@@ -61,23 +61,23 @@ Po zakończeniu korekt kliknij Dalej, aby `uzyskać dostęp`{.action} do strony 
 
 Jeśli instalujesz system operacyjny GNU/Linux, możesz dodać klucz SSH do ostatniego etapu procesu instalacji.
 
-![Spersonalizuj konfigurację partycji](images/SSH_03.png){.thumbnail}
+![Spersonalizuj konfigurację SSH](images/SSH_01.png){.thumbnail}
 
 Jeśli klucz SSH jest już zarejestrowany, pojawi się on w rozwijanym menu w polu "Klucze SSH" na dole. Jeśli nie, najpierw należy dodać jedną z nich w sekcji "Moje usługi".
 
 Aby to zrobić, otwórz pasek boczny klikając swoją nazwę w prawym górnym rogu i użyj skrótu `Produkty i usługi`{.action}.
 
-![Spersonalizuj konfigurację partycji](images/SSH_keys_panel_2022.png){.thumbnail}
+![Spersonalizuj konfigurację SSH](images/SSH_02.png){.thumbnail}
 
 W sekcji "Moje usługi" przejdź do zakładki `Klucze SSH`{.action} i kliknij `Dodaj klucz SSH`{.action}.
 
-![Spersonalizuj konfigurację partycji](images/SSH_14.png){.thumbnail}
+![Spersonalizuj konfigurację SSH](images/SSH_03.png){.thumbnail}
 
 Ponieważ chodzi o instalację serwera dedykowanego, z rozwijanego menu wybierz "Dedykowany" (kompatybilny również z serwerem VPS).
 
 W nowym oknie wprowadź ID (wybraną nazwę) i klucz (typu RSA, ECDSA lub Ed25519) w odpowiednich polach.
 
-![Spersonalizuj konfigurację partycji](images/SSH_12.png){.thumbnail}
+![Spersonalizuj konfigurację SSH](images/SSH_04.png){.thumbnail}
 
 Aby uzyskać szczegółowe wyjaśnienie dotyczące generowania kluczy SSH, zapoznaj się z naszym [przewodnikiem](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated).
 
@@ -104,7 +104,7 @@ ssh root@IP_Twojego_serwera
 **Przykład dla wstępnie skonfigurowanego użytkownika:**
 
 ```bash
-ssh root@nazwa_serwera
+ssh ubuntu@nazwa_serwera
 ```
 
 Więcej informacji na temat SSH znajdziesz w przewodniku "[Wprowadzenie do SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction)".
@@ -123,7 +123,7 @@ Restart może być niezbędny do aktualizacji konfiguracji lub rozwiązania prob
 reboot
 ```
 
-W każdej chwili możesz jednak wykonać "reboot hard" w Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). W zakładce `Informacje ogólne`{.action} kliknij `...`{.action} naprzeciwko "Status" w strefie **Stan usług**, następnie `Restart`{.action} ponownie i `Zatwierdź`{.action} w oknie kontekstowym.
+W każdej chwili możesz jednak wykonać "reboot hard" w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). W zakładce `Informacje ogólne`{.action} kliknij `...`{.action} naprzeciwko "Status" w strefie **Stan usług**, następnie `Restart`{.action} ponownie i `Zatwierdź`{.action} w oknie kontekstowym.
 
 ![Restart](images/rebooting-your-server.png){.thumbnail}
 
@@ -133,7 +133,7 @@ Zgodnie z informacją w części “Wprowadzenie” niniejszego przewodnika, jes
 
 Jeśli korzystasz z serwera Windows, zapoznaj się z [tym przewodnikiem](/pages/bare_metal_cloud/dedicated_servers/activate-port-firewall-soft-win).
 
-### Monitoring OVHcloud
+### Monitoring OVHcloud <a name="monitoring-server"></a>
 
 Możesz włączyć lub wyłączyć monitoring serwera dedykowanego w zakładce `Informacje ogólne`{.action} w Twoim [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Wariant ten znajduje się w sekcji `Status usług`.
 
@@ -210,6 +210,10 @@ Serwery dedykowane OVHcloud dysponują przestrzenią dyskową z kontrolowanym do
 Aby włączyć i korzystać z opcji Backup Storage, zapoznaj się [z tym przewodnikiem](/pages/bare_metal_cloud/dedicated_servers/services_backup_storage).
 
 ## Sprawdź również
+
+[Zabezpieczanie serwera dedykowanego](/pages/bare_metal_cloud/dedicated_servers/securing-a-dedicated-server)
+
+[Uruchamianie i korzystanie z trybu Rescue](/pages/bare_metal_cloud/dedicated_servers/rescue_mode)
 
 Jeśli potrzebujesz szkolenia lub pomocy technicznej w celu wdrożenia naszych rozwiązań, skontaktuj się z przedstawicielem handlowym lub kliknij [ten link](https://www.ovhcloud.com/pl/professional-services/), aby uzyskać wycenę i poprosić o spersonalizowaną analizę projektu od naszych ekspertów z zespołu Professional Services.
 

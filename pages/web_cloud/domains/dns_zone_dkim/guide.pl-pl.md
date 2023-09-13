@@ -6,23 +6,24 @@ updated: 2023-05-17
 
 <style>
  pre {
-     font-size: 14px;
+     font-size: 14px !important;
  }
- pre.console {
-   background-color: #fff; 
-   color: #000;
-   font-family: monospace;
-   padding: 5px;
-   margin-bottom: 5px;
- }
- pre.console code {
-   border: solid 0px transparent;
+ pre.bgwhite {
+   background-color: #fff !important;
+   color: #000 !important;
    font-family: monospace !important;
-   font-size: 0.90em;
-   color: #000;
+   padding: 5px !important;
+   margin-bottom: 5px !important;
+ }
+ pre.bgwhite code {
+   background-color: #fff !important;
+   border: solid 0px transparent !important;
+   font-family: monospace !important;
+   font-size: 0.90em !important;
+   color: #000 !important;
  }
  .small {
-     font-size: 0.90em;
+     font-size: 0.90em !important;
  }
 </style>
 
@@ -46,7 +47,7 @@ Wpis DKIM (**D**omain**K**eys **I**dentified **M**ail) pozwala na podpisanie e-m
 >
 > Jeśli Twoja domena nie używa serwerów DNS OVHcloud, przeprowadź zmianę DKIM w interfejsie dostawcy zarządzającego konfiguracją Twojej domeny.
 >
-> Jeśli Twoja domena jest zarejestrowana w OVHcloud, możesz sprawdzić, czy używa ona konfiguracji OVHcloud w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) w zakładce `Serwery DNS`{.action}, po wybraniu domeny.
+> Jeśli Twoja domena jest zarejestrowana w OVHcloud, możesz sprawdzić, czy używa ona konfiguracji OVHcloud w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) w zakładce `Strefa DNS`{.action}, po wybraniu domeny.
 >
 
 ## W praktyce
@@ -121,7 +122,7 @@ Aby zasada rotacji działała, użyjemy tzw. **selektorów DKIM**. Wybieracz DKI
 
 **Przykład części podpisu DKIM**
 
-<pre class="console"><code>
+<pre class="bgwhite"><code>
 DKIM-Podpis: v=1; a=rsa-sha256; d=mydomain.ovh; s=ovhex123456-selector1; c=relaxed/relaxed; t=1681877341; 
 </code></pre>
 
@@ -566,7 +567,7 @@ Wybierz odpowiednią ofertę e-mail w następujących zakładkach:
 
 > [!warning]
 >
-> Wybieracz DKIM musi mieć status `inProduction`, zanim zostanie wyłączony.
+> Wybieracz DKIM musi mieć status `inProduction` lub `ready`, zanim zostanie wyłączony.
 
 Wybierz odpowiednią ofertę e-mail w następujących zakładkach:
 
@@ -619,6 +620,7 @@ Wybierz odpowiednią ofertę e-mail w następujących zakładkach:
 >> - `selectorName`: wprowadź nazwę wybranego przełącznika, który chcesz usunąć. <br>
 >> - `domainName`: wprowadź nazwę domeny przypisanej do Twojej platformy E-mail Pro. <br>
 >>
+
 
 ### Konfiguracja DKIM w przypadku oferty e-mail poza Twoim kontem OVHcloud <a name="external-dkim"></a>
 
@@ -704,7 +706,7 @@ v=DKIM1;t=s;p= MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA77VDAIfyhjtoF0DIE5V7 
 
 Wpis CNAME to alias. Oznacza to, że wartość docelowa odnosi się do adresu URL, który sam zapewni rekord DKIM serwerowi, który będzie odpytywał rekord CNAME. Ten rodzaj rekordu CNAME, aby skonfigurować DKIM, jest często używany w przypadku korzystania z serwera e-mail Microsoft.
 
-Chodzi o rodzaj rekordu używany do aktywowania DKIM w odniesieniu do domeny zgłoszonej do oferty Exchange OVHcloud.
+Chodzi o rodzaj rekordu używany do aktywowania DKIM w odniesieniu do domeny zgłoszonej do oferty Exchange OVHcloud. W ten sposób dostawca Twojego rozwiązania poczty elektronicznej może zarządzać bezpieczeństwem i aktualizacją DKIM.
 
 ### Przetestuj DKIM <a name="test-dkim"></a>
 
@@ -712,7 +714,7 @@ Zalecamy wysłanie e-maila z konta w Twojej platformie Exchange na adres e-mail,
 
 Oto co możesz znaleźć w nagłówku otrzymanego e-maila:
 
-<pre class="console"><code>
+<pre class="bgwhite"><code>
 ARC-Authentication-Results: i=1; mx.example.com;
        dkim=pass header.i=@mydomain.ovh header.s=ovhex123456-selector1 header.b=KUdGjiMs;
        spf=pass (example.com: domain of test-dkim@mydomain.ovh designates 54.36.141.6 as permitted sender) smtp.mailfrom=test-dkim@mydomain.ovh

@@ -34,7 +34,7 @@ Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?actio
 
 Ouvrez ensuite le menu `Block Storage`{.action} dans la barre de navigation à gauche sous **Storage**.
 
-A droite du volume concerné, cliquez sur le bouton `...`{.action} puis sur `Créer une sauvegarde`{.action}. Il n'est pas nécessaire de détacher d'abord le volume de son instance. Cependant, si vous souhaitez détacher votre volume de son instance, consultez cette [section](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance#sous-linux) du guide correspondant pout Linux, et cette [section](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance#sous-windows) pour Windows.
+A droite du volume concerné, cliquez sur le bouton `...`{.action} puis sur `Créer une sauvegarde`{.action}. Il n'est pas nécessaire de détacher d'abord le volume de son instance. Cependant, si vous souhaitez détacher votre volume de son instance, consultez cette [section](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance#sous-linux) du guide correspondant pout Linux, et cette [section](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance#sous-windows) pour Windows.
 
 ![Volume Backup - création](images/volumebackup01.png){.thumbnail}
 

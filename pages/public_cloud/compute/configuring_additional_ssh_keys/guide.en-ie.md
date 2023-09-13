@@ -29,7 +29,7 @@ To create a new SSH key, consult the [Public Cloud first steps guide](/pages/pub
 
 ### Configuring the new user
 
-[Connect to your instance with SSH](/pages/platform/public-cloud/public-cloud-first-steps#connect-to-instance) and use the command below to create a new user:
+[Connect to your instance with SSH](/pages/public_cloud/compute/public-cloud-first-steps#connect-to-instance) and use the command below to create a new user:
 
 ```bash
 ~$ sudo adduser user2

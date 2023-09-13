@@ -1,7 +1,6 @@
 ---
 title: Comprobar la velocidad de los discos
 excerpt: Comprobar la velocidad de los discos
-legacy_guide_number: g1956
 updated: 2022-01-04
 ---
 

@@ -1,7 +1,6 @@
 ---
 title: Weryfikacja maszyny w przypadku spowolnienia w działaniu (EN)
 excerpt: 'Troubleshoot performance issues on a VM'
-legacy_guide_number: g601
 updated: 2022-01-17
 ---
 

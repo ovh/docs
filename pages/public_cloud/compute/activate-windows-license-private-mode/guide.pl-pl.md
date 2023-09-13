@@ -29,7 +29,7 @@ Zalecamy zapoznanie się z przewodnikiem  "[Dostęp do interfejsu Horizon](/page
 
 #### W interfejsie Horizon
 
-Zaloguj się do interfejsu [Horizon](https://horizon.cloud.ovh.net/auth/login/), postępując zgodnie z instrukcjami zawartymi w [pierwszej części tego przewodnika](/pages/platform/network-services/getting-started-07-creating-vrack#interfejs-horizon).
+Zaloguj się do interfejsu [Horizon](https://horizon.cloud.ovh.net/auth/login/), postępując zgodnie z instrukcjami zawartymi w [pierwszej części tego przewodnika](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack#interfejs-horizon).
 
 Zaloguj się do Twojego obszaru pracy:
 
