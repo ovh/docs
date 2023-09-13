@@ -18,20 +18,18 @@ updated: 2023-09-11
 
 ## Voraussetzungen
 
-- Sie verfügen über ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) mit mindestens einer Datenbank. Um zu überprüfen, ob noch Datenbanken verfügbar sind, loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf den Tab `Hosting-Pakete`{.action}, wählen Sie das Hosting aus, auf dem Sie ein „1 Klick Modul“ installieren möchten, und klicken Sie dann auf den Tab `Datenbanken`{.action}.
-Klicken Sie auf den Button `Aktionen`{.action} über der angezeigten Tabelle, die alle Datenbanken auflistet, die bereits mit Ihrem Webhosting erstellt wurden. Wenn die Schaltfläche `Datenbank erstellen`{.action} abgeblendet angezeigt wird, ist keine Datenbank mehr verfügbar. 
-Klicken Sie bei Bedarf unter der Schaltfläche `Datenbank erstellen`{.action} auf eine der folgenden beiden Schaltflächen:
-
-- `Eine Datenbank bestellen`{.action} Eine Datenbank ähnlich den Datenbanken in der Tabelle, die bereits mit Ihrem Webhosting Angebot erstellte Datenbanken auflistet, bestellen.
-- `Eine Datenbank mit der Lösung „Web Cloud Databases“ bestellen`{.action} für einen [Web Cloud Databases](https://www.ovhcloud.com/de/web-cloud/databases/){.external}-Datenbankserver.
-
+- Sie verfügen über ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) mit mindestens einer Datenbank.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
-- Sie verwenden eine [kompatible PHP-Version](/pages/web_cloud/web_hosting/configure_your_web_hosting) auf Ihrem Webhosting. 
-- Ihre [.ovhconfig-Datei ist korrekt konfiguriert](/pages/web_cloud/web_hosting/configure_your_web_hosting).
+- Verwenden Sie eine neuere PHP-Version und eine kompatible Ausführungsumgebung auf Ihrem OVHcloud Webhosting. Wenn nötig, lesen Sie unsere [Anleitung](/pages/web_cloud/web_hosting/configure_your_web_hosting) zu diesem Thema, um diese Konfiguration schnell zu ändern.
 - Das Verzeichnis (Wurzelverzeichnis), in dem Ihr 1-Klick-Modul installiert wird, muss leer sein oder noch nicht vorhanden.
 - Der Domainname (und gegebenenfalls die Subdomain) Ihrer Website ist auf Ihrem OVHcloud Webhosting als [Multisite](/pages/web_cloud/web_hosting/multisites_configure_multisite) deklariert.
 
 ## In der praktischen Anwendung
+
+> [!primary]
+>
+> Falls Sie Probleme haben, indem Sie einen der unten beschriebenen Schritte ausführen, lesen Sie unsere spezifische Dokumentation zu den [häufigsten 1-Klick-Modulfehlern](/pages/web_cloud/web_hosting/diagnostic_errors_module1clic).
+>
 
 ### Schritt 1: Ein CMS auswählen
 

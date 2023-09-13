@@ -24,7 +24,7 @@ OVHcloud 1-click modules allow quick and easy website setups (without technical 
 
 > [!primary]
 >
-> If you are blocked during any of the steps described below, please refer to our specific documentation regarding [the most common errors related to 1-click modules](/pages/web_cloud/web_hosting/diagnostic_errors_module1click). 
+> If you encounter any difficulties by following any of the steps described below, please refer to our specific documentation on [the most common errors related to 1-click modules](/pages/web_cloud/web_hosting/diagnostic_errors_module1click). 
 >
 
 ### Step 1: Decide on a CMS to use

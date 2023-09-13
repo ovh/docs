@@ -24,7 +24,7 @@ Les « modules en 1 clic » permettent l'installation facile et rapide d'un site
 
 > [!primary]
 >
-> Si vous êtes bloqué au cours de l'une des étapes décrites ci-dessous, consultez notre documentation spécifique concernant les [erreurs les plus fréquentes liées aux « modules en 1 clic »](/pages/web_cloud/web_hosting/diagnostic_errors_module1clic). 
+> Si vous rencontrez des difficultés en suivant l'une des étapes décrites ci-dessous, consultez notre documentation spécifique sur les [erreurs les plus fréquentes liées aux « modules en 1 clic »](/pages/web_cloud/web_hosting/diagnostic_errors_module1clic). 
 >
 
 ### Étape 1 - choisir correctement son CMS
