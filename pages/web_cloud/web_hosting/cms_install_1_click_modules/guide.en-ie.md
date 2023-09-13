@@ -14,11 +14,11 @@ OVHcloud 1-click modules allow quick and easy website setups (without technical 
 
 ## Requirements
 
-- A [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/) that contains at least one database.
 - You have access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie).
-- Use a recent PHP version and a compatible runtime environment on your OVHcloud web hosting plan. If you need assistance with this, please refer to our [guide](/pages/web_cloud/web_hosting/configure_your_web_hosting) , to change this configuration quickly.
-- The directory (root folder) where your 1-click module will be installed must be empty or currently non-existent.
-- The domain (with subdomain if desired) that will be used for your website must be declared as [Multisite](/pages/web_cloud/web_hosting/multisites_configure_multisite) on your OVHcloud web hosting plan.
+- You have an [OVHcloud web hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/) that contains at least one unused database.
+- Your OVHcloud web hosting uses a recent PHP version and a compatible runtime environment. If you need assistance with this, please refer to our [guide](/pages/web_cloud/web_hosting/configure_your_web_hosting), to change this configuration quickly.
+- If you want to install the 1-click module in an existing folder, this folder must be empty.
+- The domain name (with subdomain if desired) that will be used for your website must be declared as a [Multisite](/pages/web_cloud/web_hosting/multisites_configure_multisite) on your OVHcloud web hosting plan.
 
 ## Instructions
 
@@ -35,7 +35,7 @@ Of all CMSs, OVHcloud offers 4 with its 1-click modules, which can be installed 
 
 Using this solution, you will need to choose from the 4 CMSs listed above. If you have already made your choice, continue reading the steps in this guide. Otherwise, please refer to our [CMS comparison](https://www.ovhcloud.com/en-ie/web-hosting/uc-cms-comparison/) to make your choice.
 
-If you would like to install a CMS that is not available with our 1-click modules, you can install it manually on your web hosting plan. This is provided that the CMS is compatible with our [OVHcloud web hosting offers](https://www.ovhcloud.com/en-ie/web-hosting/).
+If you would like to install a CMS that is not available as a 1-click modules, you can install it manually on your web hosting plan. This is provided that the CMS is compatible with our [OVHcloud web hosting offers](https://www.ovhcloud.com/en-ie/web-hosting/).
 
 ![CMS logos](images/CMS_logo.png){.thumbnail}
 
