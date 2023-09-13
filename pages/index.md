@@ -864,7 +864,6 @@
                 + [AI Training - Getting started](public_cloud/ai_machine_learning/training_guide_02_howto_submit_job)
                 + [AI Training - Job concept](public_cloud/ai_machine_learning/training_guide_03_concepts_jobs)
                 + [AI Training - Monitor your cloud resources](public_cloud/ai_machine_learning/training_guide_04_concepts_resources)
-                + [AI Training - Manage Docker registries](public_cloud/ai_machine_learning/training_guide_05_howto_add_registry)
                 + [AI Training - Start a job with a notebook Docker image](public_cloud/ai_machine_learning/training_guide_06_howto_notebooks)
                 + [AI Training - Troubleshooting](public_cloud/ai_machine_learning/training_guide_07_troubleshooting)
                 + [AI Training - Billing and lifecycle](public_cloud/ai_machine_learning/training_guide_08_billing_concept)
