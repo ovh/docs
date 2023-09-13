@@ -28,7 +28,7 @@ Os "módulos 1 clique" permitem a instalação fácil e rápida de um website (s
 
 > [!primary]
 >
-> Se encontrar dificuldades durante qualquer uma das etapas descritas abaixo, consulte a nossa documentação específica sobre [os erros mais frequentes associados aos « módulos 1 clique »](/pages/web_cloud/web_hosting/diagnostic_errors_module1clic). 
+> Se encontrar dificuldades durante qualquer uma das etapas descritas abaixo, consulte a nossa documentação específica sobre [os erros mais frequentes associados aos "módulos 1 clique"](/pages/web_cloud/web_hosting/diagnostic_errors_module1clic). 
 >
 
 ### Etapa 1 - escolher corretamente o seu CMS
