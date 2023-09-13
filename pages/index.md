@@ -1637,6 +1637,7 @@
             + [Enterprise File Storage - Performance Concepts](storage_and_backup/file_storage/enterprise_file_storage/netapp_concepts_performances)
             + [Managing Enterprise File Storage from the OVHcloud Control Panel](storage_and_backup/file_storage/enterprise_file_storage/netapp_control_panel)
             + [Enterprise File Storage - Manage your snapshot policies](storage_and_backup/file_storage/enterprise_file_storage/netapp_snapshot_policy)
+            + [Enterprise File Storage - Restore volume using snapshot revert API](storage_and_backup/file_storage/enterprise_file_storage/netapp_revert_snapshot)
             + [Enterprise File Storage - API Quickstart](storage_and_backup/file_storage/enterprise_file_storage/netapp_quick_start)
             + [Enterprise File Storage - Managing volumes](storage_and_backup/file_storage/enterprise_file_storage/netapp_volumes)
             + [Enterprise File Storage - Managing volume ACLs](storage_and_backup/file_storage/enterprise_file_storage/netapp_volume_acl)
