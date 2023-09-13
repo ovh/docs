@@ -18,19 +18,18 @@ Moduły za pomocą 1 kliknięcia umożliwiają łatwą i szybką instalację str
 
 ## Wymagania początkowe
 
-- Posiadanie [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/) zawierającej co najmniej jedną bazę danych. Aby sprawdzić, czy są dostępne bazy danych, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i przejdź do sekcji `Web Cloud`{.action}. W lewej kolumnie kliknij zakładkę `Hosting`{.action}, wybierz hosting, na którym chcesz zainstalować "moduł za 1 kliknięciem", następnie kliknij zakładkę `Bazy danych`{.action}.
-Kliknij przycisk `Operacje`{.action} nad tabelą, która się wyświetli. Zawiera ona listę baz danych utworzonych wcześniej w ramach Twojej oferty hostingu. Jeśli przycisk `Tworzenie bazy danych`{.action} jest wyszarzony, nie masz już dostępnej bazy danych. 
-W razie potrzeby pod przyciskiem `Tworzenie bazy danych`{.action} kliknij jeden z dwóch następujących przycisków:
-
-- `Zamów bazę danych`{.action}, aby zamówić bazę danych podobną do baz danych zawartych w tabeli wyszczególniającej bazy danych już utworzone z Twoją ofertą hostingu.
-- `Zamów bazę danych Web Cloud Databases`{.action}, aby zamówić serwer bazy danych [Web Cloud Databases](https://www.ovhcloud.com/pl/web-cloud/databases/){.external}.
+- Posiadanie [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/) zawierającej co najmniej jedną bazę danych.
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
-- Korzystanie z [kompatybilnej wersji PHP](/pages/web_cloud/web_hosting/configure_your_web_hosting) na Twoim hostingu.
-- Posiadanie [poprawnie skonfigurowany plik .ovhconfig](/pages/web_cloud/web_hosting/configure_your_web_hosting)
+- Użycie najnowszej wersji PHP i kompatybilnego środowiska wykonawczego na Twoim hostingu OVHcloud. W razie potrzeby sprawdź [przewodnik](/pages/web_cloud/web_hosting/configure_your_web_hosting), aby szybko zmienić tę konfigurację.
 - Katalog (katalog główny), w którym zostanie zainstalowany "moduł za 1 kliknięciem", musi być pusty lub w chwili obecnej nie istnieje.
 - Domena (wraz z subdomeną, jeśli jest potrzebna), która zostanie użyta na Twojej stronie WWW powinna zostać zadeklarowana jako [MultiSite](/pages/web_cloud/web_hosting/multisites_configure_multisite) na Twoim hostingu OVHcloud.
 
 ## W praktyce
+
+> [!primary]
+>
+> Jeśli masz trudności z wykonaniem jednego z opisanych poniżej kroków, zapoznaj się z naszą dokumentacją dotyczącą [najczęstszych błędów związanych z "modułami za 1 kliknięciem"](/pages/web_cloud/web_hosting/diagnostic_errors_module1clic). 
+>
 
 ### Etap 1 - prawidłowy wybór CMS
 

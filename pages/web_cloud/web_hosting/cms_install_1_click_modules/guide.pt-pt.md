@@ -18,20 +18,18 @@ Os "módulos 1 clique" permitem a instalação fácil e rápida de um website (s
 
 ## Requisitos
 
-- Dispor de um serviço de [alojamento web](https://www.ovhcloud.com/pt/web-hosting/) que inclua pelo menos uma base de dados. Para verificar se tem bases de dados disponíveis, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e aceda à secção `Web Cloud`{.action}. Na coluna da esquerda, clique no separador `Alojamentos`{.action}, selecione o alojamento no qual pretende instalar um « módulo 1 clique » e, em seguida, clique no separador `Bases de dados`{.action}.
-Clique no botão `Ações`{.action} no topo da tabela que aparece e que lista as bases de dados já criadas com o seu plano de alojamento web. Se o botão `Criar uma base de dados`{.action} estiver cinzento, deixará de dispor de uma base de dados disponível. 
-Se necessário, e abaixo do botão `Criar uma base de dados`{.action}, clique num dos dois botões seguintes:
-
-- `Encomendar uma base de dados`{.action} para encomendar uma base de dados semelhante às bases de dados presentes na tabela que lista as bases de dados já criadas com o plano de alojamento web.
-- `Encomendar uma base de dados Web Cloud Databases`{.action} para encomendar um servidor de base de dados [Web Cloud Databases](https://www.ovhcloud.com/pt/web-cloud/databases/){.external}.
-
+- Dispor de um serviço de [alojamento web](https://www.ovhcloud.com/pt/web-hosting/) que inclua pelo menos uma base de dados.
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
-- Utilizar [uma versão de PHP compatível](/pages/web_cloud/web_hosting/configure_your_web_hosting) no seu alojamento web.
-- Ter [configurado corretamente o seu ficheiro .ovhconfig](/pages/web_cloud/web_hosting/configure_your_web_hosting).
+- Utilizar uma versão recente de PHP e um ambiente de execução compatível no seu alojamento web da OVHcloud. Caso seja necessário, consulte o nosso [guia](/pages/web_cloud/web_hosting/configure_your_web_hosting) sobre o assumpto, para alterar rapidamente esta configuração.
 - O diretório (pasta raiz) onde será instalado o seu "módulo 1 clique" deve estar vazio ou atualmente inexistente.
 - O domínio (com subdomínio se desejar) que será utilizado no seu website deve ser declarado como [Multi-site](/pages/web_cloud/web_hosting/multisites_configure_multisite) no seu alojamento web da OVHcloud.
 
 ## Instruções
+
+> [!primary]
+>
+> Se encontrar dificuldades durante qualquer uma das etapas descritas abaixo, consulte a nossa documentação específica sobre [os erros mais frequentes associados aos « módulos 1 clique »](/pages/web_cloud/web_hosting/diagnostic_errors_module1clic). 
+>
 
 ### Etapa 1 - escolher corretamente o seu CMS
 

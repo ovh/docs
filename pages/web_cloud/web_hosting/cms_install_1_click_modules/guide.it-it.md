@@ -18,19 +18,18 @@ I "moduli in 1 click" permettono l'installazione semplice e rapida di un sito We
 
 ## Prerequisiti
 
-- Disporre di una soluzione di [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/) che includa almeno un database. Per verificare se sono disponibili altri database, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e clicca su `Web Cloud`{.action}. Nella colonna di sinistra, clicca sulla scheda `Hosting`{.action}, seleziona l’hosting su cui vuoi installare un "modulo in 1 click" e poi clicca sulla scheda `Database`{.action}.
-Clicca sul pulsante `Azioni`{.action} in alto nella tabella che appare per visualizzare l’elenco dei database creati con il piano di hosting Web. Se il pulsante `Crea un database`{.action} è ombreggiato, non sono disponibili altri database. 
-Se necessario, clicca su uno dei due pulsanti seguenti sotto il pulsante `Crea un database`{.action}:
-
-- `Ordinare un database`{.action} per ordinare un database simile ai database presenti nella tabella che elenca i database già creati con il piano di hosting Web.
-- `Ordinare un database Web Cloud Databases`{.action} per ordinare un server di database [Web Cloud Databases](https://www.ovhcloud.com/it/web-cloud/databases/){.external}.
+- Disporre di una soluzione di [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/) che includa almeno un database.
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
-- Utilizzare [una versione di PHP compatibile](/pages/web_cloud/web_hosting/configure_your_web_hosting) sul tuo hosting Web.
-- Aver [configurato correttamente il file.ovhconfig](/pages/web_cloud/web_hosting/configure_your_web_hosting)
+- Utilizzare una versione recente di PHP e un ambiente di esecuzione compatibile sul tuo hosting Web OVHcloud. Se necessario, consulta la nostra [guida](/pages/web_cloud/web_hosting/configure_your_web_hosting) sull’argomento per modificare rapidamente questa configurazione.
 - La directory (cartella di root) in cui sarà installato il tuo "modulo in 1 click" deve essere vuota o al momento inesistente.
 - Il dominio (con sottodominio se necessario) che verrà utilizzato per il tuo sito web deve essere dichiarato come [Multisito](/pages/web_cloud/web_hosting/multisites_configure_multisite) sul tuo hosting Web OVHcloud.
 
 ## Procedura
+
+> [!primary]
+>
+> In caso di difficoltà durante l’esecuzione di uno degli step descritti qui sotto, consulta la nostra documentazione specifica sugli [errori più frequenti associati ai "moduli in 1 click"](/pages/web_cloud/web_hosting/diagnostic_errors_module1clic). 
+>
 
 ### Step 1 - Scegli correttamente il CMS
 
