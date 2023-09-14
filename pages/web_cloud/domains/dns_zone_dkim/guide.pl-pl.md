@@ -157,7 +157,7 @@ Kliknij na zakładkę odnoszącą się do Twojej oferty.
 >>
 >> Po prawej stronie wybranej domeny, możesz zauważyć, że przycisk `DKIM` jest szary.
 >>
->> ![email](obrazy/dkim-auto01.png){.thumbnail}
+>> ![email](images/dkim-auto01.png){.thumbnail}
 >>
 > **E-mail Pro**
 >>
@@ -165,7 +165,7 @@ Kliknij na zakładkę odnoszącą się do Twojej oferty.
 >>
 >> Po prawej stronie wybranej domeny, możesz zauważyć, że przycisk `DKIM` jest szary.
 >>
->> ![email](obrazy/dkim-auto01.png){.thumbnail}
+>> ![email](images/dkim-auto01.png){.thumbnail}
 
 Aby aktywować DKIM, wystarczy kliknąć szary przycisk `DKIM`, a następnie `Zatwierdź`{.action} w oknie aktywacyjnym, które się pojawi.
 
