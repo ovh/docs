@@ -1,7 +1,7 @@
 ---
 title: "Setting up your website with a 1-click module (CMS)"
 excerpt: "Find out how to set up your website using our 1-click modules"
-updated: 2023-09-11
+updated: 2023-09-14
 ---
 
 ## Objective
@@ -24,7 +24,7 @@ OVHcloud 1-click modules allow quick and easy website setups (without technical 
 
 > [!primary]
 >
-> If you encounter any difficulties by following any of the steps described below, please refer to our specific documentation on [the most common errors related to 1-click modules](/pages/web_cloud/web_hosting/diagnostic_errors_module1click). 
+> If you encounter any difficulties by following any of the steps described below, please refer to our specific documentation on [the most common errors related to 1-click modules](/pages/web_cloud/web_hosting/diagnostic_errors_module1clic). 
 >
 
 ## Instructions

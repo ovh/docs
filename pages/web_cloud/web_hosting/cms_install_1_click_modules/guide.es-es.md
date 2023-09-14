@@ -1,7 +1,7 @@
 ---
 title: "Instalar su sitio web con un 'módulo en 1 clic' (CMS)"
 excerpt: Descubra cómo instalar su sitio web a través de nuestros "módulos en 1 clic"
-updated: 2023-09-11
+updated: 2023-09-14
 ---
 
 > [!primary]
