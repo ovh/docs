@@ -15,7 +15,7 @@ With an MX record, you can link a domain name to the server on your email platfo
 - You have access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg).
 - You have the rights to manage the DNS zone for the domain name concerned via the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg).
 - The domain name concerned uses the OVHcloud configuration (i.e. OVHcloud DNS servers).
-- You have an MX Plan solution (included in the [web hosting plan](https://www.ovhcloud.com/en-sg/web-hosting/), a [free 100M hosting](https://www.ovhcloud.com/en-sg/domains/free-web-hosting/), or the MX Plan solution ordered separately), one of our [OVHcloud email offers](https://www.ovhcloud.com/en-sg/emails/), or an external email service.
+- You have an MX Plan solution (included in the [web hosting plan](https://www.ovhcloud.com/en-sg/web-hosting/)), or an external email service.
 
 > [!primary]
 >
@@ -48,7 +48,7 @@ You can set up multiple MX records for the same domain name. It is then necessar
 
 ### OVHcloud MX configuration values <a name="mxovhcloud"></a>
 
-Below, you will find the OVHcloud MX configuration to use for our MX Plan solutions (MX Plan standalone or included in an [OVHcloud web hosting](https://www.ovhcloud.com/en-sg/web-hosting/) plan), [Email Pro](https://www.ovhcloud.com/en-sg/emails/email-pro/) and [Exchange](https://www.ovhcloud.com/en-sg/emails/). Our email servers have antispam and antivirus integrated.
+Below, you will find the OVHcloud MX configuration to use for our MX Plan solutions ( included in an [OVHcloud web hosting](https://www.ovhcloud.com/en-sg/web-hosting/) plan). Our email servers have antispam and antivirus integrated.
 
 |Domain|TTL|Record type|Priority|Target|
 |---|---|---|---|---|

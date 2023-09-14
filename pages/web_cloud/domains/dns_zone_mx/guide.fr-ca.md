@@ -15,7 +15,7 @@ L'enregistrement MX permet de relier un nom de domaine au serveur de sa platefor
 - Disposer d'un accès à la gestion de la zone DNS du nom de domaine concerné depuis l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
 - Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
 - Le nom de domaine concerné doit utiliser la configuration OVHcloud (c'est à dire les serveurs DNS d'OVHcloud).
-- Disposer d'une offre MX Plan (incluse dans l'offre d’[hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/), l'[hébergement gratuit 100M](https://www.ovhcloud.com/fr-ca/domains/free-web-hosting/) ou l'offre MX Plan commandée séparément), une de nos [offres e-mail OVHcloud](https://www.ovhcloud.com/fr-ca/emails/), ou un service e-mail externe.
+- Disposer d'une offre MX Plan (incluse dans l'offre d’[hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/)), [Exchange](https://www.ovhcloud.com/fr-ca/emails/), ou un service e-mail externe.
 
 > [!primary]
 >
@@ -48,7 +48,7 @@ Vous pouvez paramétrer plusieurs enregistrements MX pour un même nom de domain
 
 ### Valeurs de la configuration MX OVHcloud <a name="mxovhcloud"></a>
 
-Retrouvez ci-dessous la configuration MX OVHcloud à utiliser pour nos solutions MX Plan (seule ou incluse dans une offre d’[hébergement web OVHcloud](https://www.ovhcloud.com/fr-ca/web-hosting/)), [E-mail Pro](https://www.ovhcloud.com/fr-ca/emails/email-pro/) et [Exchange](https://www.ovhcloud.com/fr-ca/emails/). Nos serveurs e-mail disposent d'un antispam et d'un antivirus intégré.
+Retrouvez ci-dessous la configuration MX OVHcloud à utiliser pour nos solutions MX Plan ( incluse dans une offre d’[hébergement web OVHcloud](https://www.ovhcloud.com/fr-ca/web-hosting/)) et [Exchange](https://www.ovhcloud.com/fr-ca/emails/). Nos serveurs e-mail disposent d'un antispam et d'un antivirus intégré.
 
 |Domaine|TTL|Type d'enregistrement|Priorité|Cible|
 |---|---|---|---|---|
