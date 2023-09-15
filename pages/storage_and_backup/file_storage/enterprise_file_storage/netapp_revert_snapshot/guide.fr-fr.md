@@ -18,7 +18,7 @@ Dans ce guide, nous allons expliquer comment restaurer un volume à son dernier 
 ## Principes de base
 
 Un snapshot (ou instantané) d'un volume est une copie ponctuelle en lecture seule d'un volume.
-Les snapshots sont créés à partir d'un volume opérationnel existant. Ils ne peuvent exister sans cela.
+Les snapshots sont crées à partir d'un volume existant et opérationnel. Un snapshot ne peut pas être utilisé si le volume auquel il appartient n'existe plus.
 
 > [!warning]
 >
