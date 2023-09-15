@@ -69,7 +69,7 @@ Fill in your OVHcloud customer ID, password, and application name. The name will
 
 You can also add a description of the application and a validity period.
 
-The `Rights` field allows you to restrict the use of the application to certain APIs. You must provide access to the __/cloud/*__ **POST** and **GET** requests and the **/me** **GET** request.
+The `Rights` field allows you to restrict the use of the application to certain APIs. You must provide access to the __/cloud/__ **POST** and **GET** requests and the **/me** **GET** request.
 
 ![image](images/api_key_creation.png){.thumbnail}
 
@@ -101,7 +101,7 @@ You will also need to define an endpoint. You can add it also to the `.env` file
 ENDPOINT=ovh-eu
 ```
 
-The endpoint depends on the API you want to use. List of available endpoints can be found [here](https://github.com/ovh/python-ovh#2-configure-your-application).
+The endpoint depends on the API you want to use. A list of available endpoints can be found [here](https://github.com/ovh/python-ovh#2-configure-your-application).
 
 To access your environment variables, you must install the `python-dotenv` library: 
 
@@ -115,9 +115,9 @@ pip install python-dotenv
 
 Variables are intended for values with infrequent writes and frequent reads.
 
-For example, we can use Variables to **store the UUID** of a Public Cloud Project. To do this, go to your workspace, on the Prefect website, and click on the `Variables` section.
+For example, we can use variables to **store the UUID** of a Public Cloud project. To do this, go to your workspace on the Prefect website and click on the `Variables` section.
 
-Then, click the `+` icon to create your first Prefect Variable. Name it `project_uuid` and assign its value (You can find your `Project UUID` in the Control panel (UI) or via the API).
+Then, click the `+` icon to create your first Prefect variable. Name it `project_uuid` and assign its value (You can find your `Project UUID` in the Control panel (UI) or via the API).
 
 ### Install OVHcloud Python SDK for API
 
@@ -225,7 +225,7 @@ display_project_infos(name="my_first_flow")
 In this python code, we create two tasks:
 
 - The first one is dedicated to the initialization of an OVHcloud client.
-- The second is used to get all of yur Public Cloud project information, based on our Project UUID that we saved in our Prefect Cloud Variables. 
+- The second is used to get all of our Public Cloud project information, based on our Project UUID that we saved in our Prefect Cloud Variables. 
 
 ### Run your Prefect flow locally
 
