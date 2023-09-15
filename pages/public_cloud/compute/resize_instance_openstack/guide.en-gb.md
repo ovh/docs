@@ -1,7 +1,7 @@
 ---
 title: Resize a Public Cloud instance using the OpenStack CLI
 excerpt: Find out how to scale up your instance resources to address an increased activity
-updated: 2023-09-11
+updated: 2023-09-15
 ---
 
 ## Objective
@@ -52,7 +52,7 @@ $ openstack server list
 +--------------------------------------+----------------------------------------------------------------+--------+----------------------------------------------+
 ```
 
-### Flavor list
+### Flavor list <a name="flavorlist"></a>
 
 Next, you need to display the list of flavors available in your region in order to retrieve the ID of the new flavor. In our example, we want to resize our instance to a b2-30 model with ID "098889e6-d1fc-4967-baea-19fd97fd83a8".
 
@@ -116,6 +116,14 @@ $ openstack server show OVHcloudinstance
 | vm_state                            | active           
 +-------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ```
+
+### Scale down an instance
+
+> [!warning]
+> This option is only available for *Flex* models.
+>
+
+In case you wish to scale down your instance, you can do this by performing the same steps mentioned [above](#flavorlist) and use a different ID in the <FLAVOR-ID> field.
 
 ## Go further
 
