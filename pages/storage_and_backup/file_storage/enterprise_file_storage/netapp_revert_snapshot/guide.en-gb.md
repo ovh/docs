@@ -66,7 +66,7 @@ In this case, you want to restore your volume to its latest manual snapshot, cre
 - `{shareId}` is the share to restore
 - `{snapshotID}` is the latest share snapshot
 
-The OVHcloud API will return a, HTTP 202 (Accepted) code and no response body.<br>
+The OVHcloud API will return an HTTP 202 (Accepted) code and no response body.<br>
 The volume status will be set to `reverting` then will go back to `available` once the volume restoration process is complete. At the same time, the snapshot status will be set to `restoring` then will go back to `available` once the volume restoration process is complete.
 
 ![RevertManualSnapshot](images/use_case_1_step_2.png){.thumbnail}
@@ -75,7 +75,7 @@ The volume status will be set to `reverting` then will go back to `available` on
 
 In this case, a snapshot policy takes regular (automatic) snapshots of a volume. You want to restore your volume to the latest snapshot taken by the policy.
 
-You will have to hold the latest snapshot taken by the snapshot policy associated to a volume. This snapshot becomes `manual`. Once the snapshot has the type `manual`, its associated volume can be restored to it.
+You will have to hold the latest snapshot taken by the snapshot policy associated to a volume so that its snapshot becomes a `manual` snapshot. Once the snapshot has the type `manual`, its associated volume can be restored to it.
 
 > [!primary]
 > **Requirements for this scenario:**
@@ -108,6 +108,7 @@ You will have to hold the latest snapshot taken by the snapshot policy associate
 
 - `{serviceName}` is the service unique ID
 - `{shareId}` is the share to restore
+- `{snapshotID}` is the latest automatic snapshot
 
 > [!warning]
 >
