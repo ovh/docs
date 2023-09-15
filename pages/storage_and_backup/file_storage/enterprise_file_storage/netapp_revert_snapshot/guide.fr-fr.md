@@ -134,7 +134,7 @@ Si d'autres snapshots de type `manual` ont été pris avant ce snapshot, ils dev
 
 - `{serviceName}` est l'identifiant unique du service
 - `{shareId}` est la volume à restaurer
-- `{snapshotID}` est le dernier snapshot de volume en date
+- `{snapshotID}` est le dernier snapshot en date du volume
 
 L’API OVHcloud retournera uniquement un code HTTP 202 (*Accepted*).<br>
 L'état du volume passera à `reverting`, puis reviendra à `available` une fois le processus de restauration du volume terminé. De manière simultanée, l'état du snapshot passera à `restoring` puis reviendra à `available` une fois le processus de restauration du volume terminé.
