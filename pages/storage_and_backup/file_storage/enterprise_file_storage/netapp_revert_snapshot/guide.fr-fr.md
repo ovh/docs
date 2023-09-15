@@ -121,7 +121,7 @@ Vous devrez « conserver » (`hold`) le dernier snapshot pris par la Snapshot po
 
 Si d'autres snapshots de type `manual` ont été pris avant ce snapshot, ils devront être supprimés.
 
-4\. Le point de terminaison utilisé pour récupérer la liste des snapshots de volumes de l'étape 1 peut être réutilisé ici.
+4\.  La route API utilisée pour récupérer la liste des snapshots du volume de l'étape 1 peut être réutilisée ici.
 
 ![RevertSnapshot](images/use_case_2_step_3.png){.thumbnail}
 
