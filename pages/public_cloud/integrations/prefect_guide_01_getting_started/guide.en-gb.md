@@ -6,13 +6,14 @@ updated: 2023-05-22
 
 ## Objective
 
-The purpose of this guide is to discover [Prefect](https://docs.prefect.io/), an open source workflow management tool, and connect it to the [OVHcloud API](https://api.ovh.com/).<br>
+The purpose of this guide is to discover [Prefect](https://docs.prefect.io/), an open source workflow management tool, and connect it to the [OVHcloud API](https://api.ovh.com/).
+
 Prefect provides a flexible Python framework to easily combine tasks into workflows, then deploy, schedule, and monitor their execution through the Prefect UI or API. 
 
 ## Requirements
 
+- An active OVHcloud account and its credentials
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
-- Access to the [OVHcloud API](https://api.ovh.com/). You can find more information [here](/pages/manage_and_operate/api/first-steps). Make sure your application token can access the **/cloud** POST and GET requests and the **/me** GET request. 
 - A [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/)
 
 ## Instructions
@@ -49,9 +50,9 @@ As explained before, Prefect is an agent-server software. The agent has to be in
 
 This [Prefect installation tutorial](https://docs.prefect.io/getting-started/installation/) may help you to deploy Prefect on an virtual machine. Prefect provides an interface (UI) to see the flows you run and the state of each flow. 
 
-Alternatively, you can use the Prefect Cloud version. With this version, you will benefit from the same approach but with more features and support, and everything is managed by Prefect. 
+**Alternatively, you can use the Prefect Cloud version**. With this version, you will benefit from the same approach but with more features and support, and everything is managed by Prefect. 
 
-For the next tutorials, we will choose this option. 
+For the next tutorials, we will **choose this option**. 
 
 **To configure your Prefect Cloud account**, go on [their official website and create an account](https://www.prefect.io/). The Prefect Personal free plan is sufficient for the next steps.
 
@@ -70,15 +71,55 @@ Fill in your OVHcloud customer ID, password, and application name. The name will
 
 You can also add a description of the application and a validity period.
 
-The `Rights` field allows you to restrict the use of the application to certain APIs. You must provide access to the **/cloud** POST and GET requests and the **/me** GET request.
+The `Rights` field allows you to restrict the use of the application to certain APIs. You must provide access to the __/cloud/*__ **POST** and **GET** requests and the **/me** **GET** request.
+
+![image](images/api_key_creation.png){.thumbnail}
 
 Once you click `Create keys`{.action}, you will be issued with three keys:
 
 - An **application key**, called AK.
 - A **secret application key**, not to be disclosed, called AS.
-- A **secret “consumer key“**, not to be disclosed, called CK. 
+- A **secret consumer key**, not to be disclosed, called CK. 
 
 Store them safely.
+
+### Store your keys securely in a .env file
+
+API keys are sensitive pieces of information. Hardcoding them directly into our code can expose us to potential security risks. If our codebase is public or shared, our API key could be easily accessed by anyone who views the code. Using a `.env` file will enable us to create environment variables and store securely our API keys.
+
+In the root directory of your project, create a file named `.env`.
+
+Add your application key (AK), your secret application key (AS) and your consumer key (CK) as key-value pairs to the `.env` file, as follows:
+
+```console
+AK=<your-api-key>
+AS=<your-app-secret>
+CK=<your-app-consumer-key>
+```
+
+We will also need to define an endpoint. You can add it also to the `.env` file :
+
+```console
+ENDPOINT=ovh-eu
+```
+
+The endpoint depends on the API we want to use. List of available endpoints can be found [here](https://github.com/ovh/python-ovh#2-configure-your-application).
+
+To access our environment variables, we must install the `python-dotenv` library : 
+
+```console
+pip install python-dotenv
+```
+
+### Prefect cloud variables
+
+[Prefect Cloud Variables](https://docs.prefect.io/latest/guides/variables/) enable you to store and reuse non-sensitive data. Variables are named, mutable string values, much like environment variables. They are scoped to a Prefect server instance or a single workspace in Prefect Cloud.
+
+Variables are intended for values with infrequent writes and frequent reads.
+
+For example, we can use Variables to **store the UUID** of our Public Cloud Project. To do this, go to your workspace, on the Prefect website, and click on the `Variables` section.
+
+Then, click the `+` icon to create your first Prefect Variable. Name it `project_uuid`. You can find your `Project UUID` in the Control panel (UI) or via the API.
 
 ### Install OVHcloud Python SDK for API
 
@@ -95,7 +136,7 @@ So far we don't provide native integration for OVHcloud, but The OVHcloud Python
 
 In these python scripts, we will create our Prefect flows. These flows will connect to the Public Cloud with the help of the application token you create to access the API. 
 
-You can easily install the SDK for the API with pip : `pip install ovh`. SDK is detailed on this [git repository](https://github.com/ovh/python-ovh). 
+You can easily install the SDK for the API with pip : `pip install ovh`. SDK is detailed on this [git repository](https://github.com/ovh/python-ovh).
 
 ### Connect Prefect to Public Cloud
 
@@ -105,70 +146,88 @@ Create a Python file, for example `first_flow.py`. In this file, put this Python
 
 ```python
 # Import the required libraries
-import ovh
-from prefect import flow, task
+import datetime
+from dotenv import load_dotenv
 import json
+import os
+import ovh
+from prefect import flow, task, variables
+from prefect.runtime import flow_run, task_run
+
 
 def generate_task_name():
+    """
+    Generates a unique task name based on the flow name, task name, parameters, and the current date.
+    :return: Formatted string containing the task name
+    """
+
     flow_name = flow_run.flow_name
     task_name = task_run.task_name
-
     parameters = task_run.parameters
     name = parameters["name"]
     date = datetime.datetime.utcnow()
 
     return f"{flow_name}-{task_name}-with-{name}-on-{date}"
 
-def generate_flow_name():
-    flow_name = flow_run.flow_name
 
+def generate_flow_name():
+    """
+    Generates a unique flow name based on the flow name, parameters, and the current date.
+    :return: Formatted string containing the flow name
+    """
+
+    flow_name = flow_run.flow_name
     parameters = flow_run.parameters
     name = parameters["name"]
     date = datetime.datetime.utcnow()
 
     return f"{flow_name}-with-{name}-on-{date}"
 
+
 # Define the task to create a client for your public Cloud.
-@task(name="init_client",
-      task_run_name=generate_task_name)
+@task(name="init_client", task_run_name=generate_task_name)
 def init_ovh(name):
     ovh_client = ovh.Client(
-        endpoint=<your-api-endpoint>,
-        application_key=<your-api-key>,
-        application_secret=<your-app-secret>,
-        consumer_key=<your-app-consumer-key>,
+        endpoint=os.getenv("ENDPOINT"),
+        application_key=os.getenv("AK"),
+        application_secret=os.getenv("AS"),
+        consumer_key=os.getenv("CK"),
     )
     return ovh_client
 
-# Define the task to get all of your notebook
 
-@task(name="get_infos",
-      task_run_name=generate_task_name)
-def get_project_infos(client,project_uuid,name:str):
-    result = client.get(
-        '/cloud/project/'+str(project_uuid))
+# Define the task to get all your Public Cloud Project properties
+@task(name="get_infos", task_run_name=generate_task_name)
+def get_project_infos(client, project_uuid, name:str):
+    result = client.get('/cloud/project/' + str(project_uuid))
     print(json.dumps(result, indent=4))
 
-# Define the flow to run on prefect
 
 # Define the flow to run on prefect
-@flow(flow_run_name=generate_flow_name)
+@flow(name="first_flow", flow_run_name=generate_flow_name)
 def display_project_infos(name:str):
 
-    project_uuid = variables.get("Project UUID", default="<your-project-uuid>")
+    # Retrieve created Prefect Cloud Variable
+    project_uuid = variables.get("project_uuid")
 
-	# Create the OVHcloud client
-    client = init_ovh(name="victor")
-	# This task print all your Public Cloud project infos
-    get_project_infos(client=client, project_uuid=project_uuid,name="victor")	
- 
-display_project_infos(name="victor")
+    # First task - Create an OVHcloud client
+    client = init_ovh(name="my_first_client")
+
+    # Second task - Print all your Public Cloud project infos
+    get_project_infos(client=client, project_uuid=project_uuid, name="Project1")
+
+
+# Look for the .env file
+load_dotenv()
+
+# Launch our flow (composed of two tasks)
+display_project_infos(name="my_first_flow")
 ```
 
 In this python code, we create two tasks:
 
-- One is for the initialization of an OVH_client
-- The second is to get all of your Public Cloud project information, based on your Project UUID that you can find in the Control panel or via the API. 
+- The first one is dedicated to the initialization of an OVHcloud client.
+- The second is used to get all of yur Public Cloud project information, based on our Project UUID that we saved in our Prefect Cloud Variables. 
 
 ### Run your Prefect flow locally
 
@@ -182,24 +241,27 @@ $prefect cloud login
 $python3 first_flow.py
 ```
 
-We will see in our terminal the project information. You should see something similar to this: 
+We will see in our terminal our project's information. You should see something similar to this: 
 
 ![image](images/flow_terminal.png){.thumbnail} 
 
-We can see one flow has been finished and which is in state `Completed()`. This flow has also completed two tasks that we defined before. Prefect Cloud provides a more precise online interface. Let's go and see what it provides to us. 
+We can see our flow has been finished and is in state `Completed()`. This flow has also completed two tasks that we defined before. 
+
+Prefect Cloud provides a more precise online interface. Let's go and see what it provides to us (Go to the `Flow Runs` section).
 
 ![image](images/flow_interface.png){.thumbnail} 
 
-The graph shows us the execution time of the "display-swift-containers" flow based on the time it was executed.<br>
-If you run your flow again, you will see another green point. If the flow had not been completed, the point on the graph would be of a different color.<br>
-We can see below the details of the running flow.<br>
-Note that you can name each flow if you want.
+The graph shows us the execution time of the "first_flow" flow based on the time it was executed.
+
+If you run your flow again, you will see another green point. If the flow had not been completed, the point on the graph would be of a different color.
+
+By clicking your flow, you can get its details (logs, tasks, details, results...).
 
 ## Go further
 
 - Official Prefect website : [Prefect.io](https://prefect.io/)
 - Send an email with prefect : [Send an email through blocks and automation with Prefect](/pages/public_cloud/integrations/prefect_tuto_02_block_automation)
-- Run your first job with Prefect and the OVHcloud API : [Create your first AI pipeline with prefect](/pages/public_cloud/integrations/prefect_tuto_03_ai_pipeline)
+- Run your first AI Training job with Prefect and the OVHcloud API : [Create your first AI pipeline with prefect](/pages/public_cloud/integrations/prefect_tuto_03_ai_pipeline)
 
 ## Feedback
 
