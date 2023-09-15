@@ -59,7 +59,7 @@ Mount the adapter using an `ifup` in your interface.
 
 You can also check the configuration with an `ifconfig`.
 
-If your virtual machine cannot find the network, try checking that the network adapter is configured on *VMNetwork* and not on *LocalPortGroup* or a VLAN. Also check that the adapter connection box is ticked.
+If your virtual machine cannot find the network, try checking that the network adapter is configured on *VMNetwork* and not on *LocalPortGroup* or a VLAN. Also check that the adapter's connection box is ticked.
 
 #### Windows
 
