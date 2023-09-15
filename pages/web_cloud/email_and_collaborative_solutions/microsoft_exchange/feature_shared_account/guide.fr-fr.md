@@ -43,7 +43,7 @@ Renseignez les champs demandés :
 >
 > **exemple:**
 >
-> Vous avez souscrit à 4 comptes Exchange sur votre plateforme, vous avez donc **4 x 5Go**, soit **20 Go** d'espace alloué pour les comptes partagés de votre plateforme
+> Vous avez souscrit à 4 comptes Exchange sur votre plateforme, vous avez donc **4 x 5Go**, soit **20 Go** d'espace alloué pour les comptes partagés de votre plateforme.
 
 Cliquez ensuite sur `Suivant`{.action} pour accéder au récapitulatif. Finalisez l'opération en cliquant sur `Valider`{.action}.
 
