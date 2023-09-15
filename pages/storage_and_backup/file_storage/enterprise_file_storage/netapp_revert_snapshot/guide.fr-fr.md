@@ -85,7 +85,7 @@ Vous devrez « conserver » (`hold`) le dernier snapshot pris par la Snapshot po
 
 > [!primary]
 >
-> Les snapshots pris par la *snapshot policy*  sont de type `automatic`. Pour qu'ils puissent être utilisés pour la restauration de volume, ils doivent être conservés en utilisant la route API `/hold`. Cela empêchera leur rotation par la planification de la Snapshot Policy.
+> Les snapshots pris par la *snapshot policy*  sont de type `automatic`. Pour qu'ils puissent être utilisés pour la restauration de volume, ils doivent être conservés en utilisant la route API `/hold`. Cela empêchera leur rotation par la *Snapshot policy*.
 >
 
 1\. Identifiez le dernier snapshot de volume de type `automatic` à l'aide de l'appel API suivant :
