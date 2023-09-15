@@ -1,7 +1,7 @@
 ---
 title: Enterprise File Storage - Restore a volume using the snapshot revert API
 excerpt: "Find out how to restore your Enterprise File Storage’s volumes using the snapshot revert functionality with the OVHcloud API"
-updated: 2023-09-14
+updated: 2023-09-15
 ---
 
 ## Objective
@@ -13,7 +13,7 @@ In this guide, we will provide an overview of how you can revert a volume to its
 ## Requirements
 
 - An OVHcloud Enterprise File Storage service with an available volume
-- Access to the [OVHcloud API]([https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB](https://api.ovh.com/))
+- Access to the [OVHcloud API](https://api.ovh.com/)
 
 ## Basics
 
