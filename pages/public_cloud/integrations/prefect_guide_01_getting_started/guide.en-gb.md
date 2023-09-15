@@ -20,9 +20,9 @@ Prefect provides a flexible Python framework to easily combine tasks into workfl
 
 ### What is Prefect ? 
 
-Prefect is an open source tool used to build, schedule and monitor workflows. You can compare it to Apache Airflow for the global approach. A workflow management tool is useful to create and automate your pipelines, most often data pipelines or AI pipelines but not only. 
+Prefect is an open source tool used to build, schedule and monitor workflows. We can compare it to Apache Airflow for the global approach. A workflow management tool is useful to create and automate pipelines, most often data pipelines or AI pipelines but not only. 
 
-Prefect works with a local agent on your execution environment (your own computer, a virtual machine, ...) and a server which will interact with your agent. You can install yourself this server (**Self-hosted**) or it can be launched via the Prefect cloud offer..
+Prefect works with a local agent on your execution environment (your own computer, a virtual machine, ...) and a server which will interact with this agent. We can install ourselves this server (**Self-hosted**) or it can be launched via the Prefect cloud offer.
 
 It can be described as follows:
 
@@ -32,15 +32,13 @@ You can find more information on this [Prefect security overview](https://www.pr
 
 #### Key components
 
-You will find below a non-exhaustive list of key elements that you will always meet during in our Prefect tutorials.
-
-Feel free to read their [official Prefect documentation](https://docs.prefect.io/latest/concepts/) for detailed information.
+Here is a non-exhaustive list of key elements that you will always meet during in our Prefect tutorials. Feel free to read their [official Prefect documentation](https://docs.prefect.io/latest/concepts/) for detailed information.
 
 - **Workspace**: an isolated environment within Prefect Cloud for your flows and deployments. You can use workspaces to organize or compartmentalize your workflows. Once created, you can launch your flows.
 
-- **Flow** : a collection of tasks and dependencies between them that defines your work, such as a data pipeline. Flows in Prefect are designed to be composable and modular, allowing users to build complex workflows by piecing together smaller, reusable building blocks. 
+- **Flow**: a collection of tasks and dependencies between them that defines your work, such as a data pipeline. Flows in Prefect are designed to be composable and modular, allowing users to build complex workflows by piecing together smaller, reusable building blocks. 
 
-- **Task** : a unit of computation that performs a specific operation. Tasks can be thought of as the building blocks of a Prefect flow, where each task represents a single step in a larger pipeline.  
+- **Task**: a unit of computation that performs a specific operation. Tasks can be thought of as the building blocks of a Prefect flow, where each task represents a single step in a larger pipeline.  
 
 As an example, if we want to create an AI Pipeline, one task could be a job launch to train a model and another task to deploy the model. With these two tasks, we can create a flow.
 
@@ -48,11 +46,11 @@ As an example, if we want to create an AI Pipeline, one task could be a job laun
 
 As explained before, Prefect is an agent-server software. The agent has to be installed on your local execution environment, and the server can be installed manually or just started with the Prefect Cloud offer.
 
-This [Prefect installation tutorial](https://docs.prefect.io/getting-started/installation/) may help you to deploy Prefect on an virtual machine. Prefect provides an interface (UI) to see the flows you run and the state of each flow. 
+This [Prefect installation tutorial](https://docs.prefect.io/getting-started/installation/) may help you to deploy Prefect on a virtual machine. Prefect provides an interface (UI) to see the flows we run and the state of each flow. 
 
-**Alternatively, you can use the Prefect Cloud version**. With this version, you will benefit from the same approach but with more features and support, and everything is managed by Prefect. 
+**Alternatively, we can use the Prefect Cloud version**. With this version, we will benefit from the same approach but with more features and support, and everything is managed by Prefect. 
 
-For the next tutorials, we will **choose this option**. 
+For the next tutorials, we will **choose this second option**. 
 
 **To configure your Prefect Cloud account**, go on [their official website and create an account](https://www.prefect.io/). The Prefect Personal free plan is sufficient for the next steps.
 
@@ -97,15 +95,15 @@ AS=<your-app-secret>
 CK=<your-app-consumer-key>
 ```
 
-We will also need to define an endpoint. You can add it also to the `.env` file :
+You will also need to define an endpoint. You can add it also to the `.env` file:
 
 ```console
 ENDPOINT=ovh-eu
 ```
 
-The endpoint depends on the API we want to use. List of available endpoints can be found [here](https://github.com/ovh/python-ovh#2-configure-your-application).
+The endpoint depends on the API you want to use. List of available endpoints can be found [here](https://github.com/ovh/python-ovh#2-configure-your-application).
 
-To access our environment variables, we must install the `python-dotenv` library : 
+To access your environment variables, you must install the `python-dotenv` library: 
 
 ```console
 pip install python-dotenv
@@ -117,15 +115,15 @@ pip install python-dotenv
 
 Variables are intended for values with infrequent writes and frequent reads.
 
-For example, we can use Variables to **store the UUID** of our Public Cloud Project. To do this, go to your workspace, on the Prefect website, and click on the `Variables` section.
+For example, we can use Variables to **store the UUID** of a Public Cloud Project. To do this, go to your workspace, on the Prefect website, and click on the `Variables` section.
 
-Then, click the `+` icon to create your first Prefect Variable. Name it `project_uuid`. You can find your `Project UUID` in the Control panel (UI) or via the API.
+Then, click the `+` icon to create your first Prefect Variable. Name it `project_uuid` and assign its value (You can find your `Project UUID` in the Control panel (UI) or via the API).
 
 ### Install OVHcloud Python SDK for API
 
 > [!primary]
 >
-> Don't forget to install Prefect with pip : `pip install prefect`. [Git repo](https://github.com/PrefectHQ/prefect)
+> Don't forget to install Prefect with pip: `pip install prefect`. [Git repo](https://github.com/PrefectHQ/prefect)
 >
 
 To connect Prefect on an OVHcloud Public Cloud project, we will use the OVHcloud API and python. 
@@ -136,7 +134,7 @@ So far we don't provide native integration for OVHcloud, but The OVHcloud Python
 
 In these python scripts, we will create our Prefect flows. These flows will connect to the Public Cloud with the help of the application token you create to access the API. 
 
-You can easily install the SDK for the API with pip : `pip install ovh`. SDK is detailed on this [git repository](https://github.com/ovh/python-ovh).
+You can easily install the SDK for the API with pip: `pip install ovh`. SDK is detailed on this [git repository](https://github.com/ovh/python-ovh).
 
 ### Connect Prefect to Public Cloud
 
@@ -259,9 +257,9 @@ By clicking your flow, you can get its details (logs, tasks, details, results...
 
 ## Go further
 
-- Official Prefect website : [Prefect.io](https://prefect.io/)
-- Send an email with prefect : [Send an email through blocks and automation with Prefect](/pages/public_cloud/integrations/prefect_tuto_02_block_automation)
-- Run your first AI Training job with Prefect and the OVHcloud API : [Create your first AI pipeline with prefect](/pages/public_cloud/integrations/prefect_tuto_03_ai_pipeline)
+- Official Prefect website: [Prefect.io](https://prefect.io/)
+- Send an email with prefect: [Send an email through blocks and automation with Prefect](/pages/public_cloud/integrations/prefect_tuto_02_block_automation)
+- Run your first AI Training job with Prefect and the OVHcloud API: [Create your first AI pipeline with prefect](/pages/public_cloud/integrations/prefect_tuto_03_ai_pipeline)
 
 ## Feedback
 
