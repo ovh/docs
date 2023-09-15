@@ -31,9 +31,19 @@ Fill in the requested fields:
 |Field|Description|
 |---|---|
 |Email account|Choose the name of your shared account. **This must not be an existing email address.**|
-|Quota|Enter the storage quota you want for your shared account. The maximum quota is **10 GB for all of your shared accounts**.|
+|Quota|Enter the desired storage quota for your shared account, [depending on available space](#size).|
 |Display name|The display name you want to appear when sending from your shared account.|
 |Hide the address in the directory|By hiding the address in the directory you can ensure that the shared account is not visible in the address list of your Exchange service.|
+
+<a name="#size"></a>
+
+> [!primary]
+>
+> The space available for creating a shared account depends on the number of accounts subscribed to your platform. Each Exchange account subscribed to your platform unblocks 5 GB for shared accounts.
+>
+> **example:**
+>
+> You have signed up to 4 Exchange accounts on your platform, so you have **4 x 5 GB**, i.e. **20 GB** of allocated space for the shared accounts on your Exchange platform.
 
 Click `Next`{.action} to proceed to the summary. Complete the operation by clicking on `Confirm`{.action}.
 

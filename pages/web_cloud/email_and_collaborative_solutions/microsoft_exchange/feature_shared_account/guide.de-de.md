@@ -1,7 +1,7 @@
 ---
 title: Freigegebenes Postfach erstellen und verwenden
 excerpt: Erfahren Sie hier, wie Sie ein freigegebenes Postfach zu Ihrem Exchange-Dienst hinzufügen und verwenden
-updated: 2021-06-15
+updated: 2023-09-15
 ---
 
 > [!primary]
@@ -35,9 +35,20 @@ Füllen die Felder aus:
 |Funktion|Beschreibung|
 |---|---|
 |E-Mail-Account|Wählen Sie den Namen Ihres freigegebenen Accounts aus. **Es darf sich nicht um eine bestehende E-Mail-Adresse handeln.**|
-|Quota|Geben Sie den gewünschte Speicherplatz für Ihr freigegebenes Postfach an. Das Maximum beträgt **10 GB für alle Ihre freigegebenen Postfächer**.|
+|Quota|Geben Sie das gewünschte Speicherkontingent für Ihren freigegebenen Account an, [abhängig vom verfügbaren Speicherplatz](#size).|
 |Anzeigename|Anzeigename, die Sie beim Versand über Ihr freigegebenes Postfach anzeigen möchten.|
 |Adresse im Adressbuch verbergen|Das Ausblenden der Adresse im Adressbuch sorgt dafür, dass die Adresse des freigegebenen Postfachs nicht vom Exchange-Dienst gelistet wird.|
+
+<a name="#size"></a>
+
+> [!primary]
+>
+> Der für die Erstellung eines gemeinsamen Accounts verfügbare Speicherplatz hängt von der Anzahl der Accounts ab, die für Ihre Plattform abonniert wurden. Jeder Exchange Account, der für Ihre Plattform registriert ist, entsperrt 5 GB für die gemeinsam genutzten Accounts.
+>
+> **Beispiel:**
+>
+> Sie haben 4 Exchange Accounts auf Ihrer Plattform abonniert, sodass Sie **4 x 5 GB** haben. Dies entspricht **20 GB** dem für die freigegebenen Accounts Ihrer Exchange Plattform zugewiesenen Speicherplatz.
+
 
 Klicken Sie auf `Weiter`{.action}, um zur Zusammenfassung zu gelangen und klicken Sie auf `Bestätigen`{.action}.
 
