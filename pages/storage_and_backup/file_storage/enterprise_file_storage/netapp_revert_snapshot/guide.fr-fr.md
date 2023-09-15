@@ -73,7 +73,7 @@ L'état du volume passera à `reverting`, puis reviendra à `available` une fois
 
 ### Scénario 2 : Restaurer un volume depuis un snapshot effectué via la Snapshot policy
 
-Dans ce scénario, une règle de snapshots (*Snapshot policy*) prend des snapshots réguliers (automatiques) d'un volume et vous souhaitez restaurer votre volume au dernier snapshot pris par la stratégie.
+Dans ce scénario, une règle d'une politique de snapshots (*Snapshot policy*) prend des snapshots réguliers (automatiques) d'un volume et vous souhaitez restaurer votre volume au dernier snapshot crée par la *Snapshot policy*.
 
 Vous devrez « conserver » (`hold`) le dernier snapshot pris par la Snapshot policy associée à un volume afin que ce snapshot devienne un snapshot `manual`. Une fois que le snapshot est de type `manual`, son volume associé peut y être restauré.
 
