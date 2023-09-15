@@ -43,7 +43,7 @@ Dans ce scénario, vous souhaitez restaurer votre volume à son dernier snapshot
 > - Vous avez déjà creé un snapshot de type `manual`. Dans le cas contraire, vous pouvez créer un snapshot de type `manual` via l’API OVHcloud ou votre espace client OVHcloud.
 > - Le snapshot de type `manual` doit appartenir au volume que vous souhaitez restaurer.
 
-1\. Identifiez le dernier snapshot de volumed e type `manual` à l'aide de l'appel API suivant :
+1\. Identifiez le dernier snapshot de type `manual` à l'aide de l'appel API suivant :
 
 > [!api]
 >
