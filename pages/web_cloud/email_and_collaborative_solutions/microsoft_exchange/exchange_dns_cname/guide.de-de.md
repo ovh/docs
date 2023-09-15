@@ -1,6 +1,6 @@
 ---
-title: Einen CNAME-Eintrag hinzufügen, um Ihre Domain auf Ihrem E-Mail-Angebot zu validieren
-excerpt: Hier erfahren Sie, wie Sie Ihren Domainnamen auf Ihrer E-Mail-Plattform validieren, indem Sie einen CNAME-Eintrag hinzufügen
+title: CNAME-Eintrag erstellen, um Domainnamen für Ihren E-Mail-Dienst zu validieren
+excerpt: Erfahren Sie hier, wie Sie Domainnamen für Ihren E-Mail-Dienst zu validieren, indem Sie einen CNAME-Eintrag anlegen
 updated: 2023-08-29
 ---
 
@@ -10,108 +10,109 @@ updated: 2023-08-29
 
 ## Ziel
 
-Wenn Sie eine Domain auf Ihrer E-Mail-Plattform hinzufügen, werden Sie möglicherweise aufgefordert, einen CNAME-Eintrag in der DNS-Zone zu konfigurieren. Dadurch wird sichergestellt, dass die betreffende Domain zur Nutzung auf der E-Mail-Plattform berechtigt ist.
+Wenn Sie einen Domainnamen zu Ihrem E-Mail-Dienst hinzufügen, werden Sie möglicherweise aufgefordert, einen CNAME-Eintrag in der DNS-Zone zu konfigurieren. Dies ist notwendig, um nur berechtigten Personen die Verknüpfung eines Domainnamens mit einem E-Mail-Dienst zu erlauben.
 
 > [!primary]
 >
-> Wenn die hinzugefügte Domain in demselben Kundenkonto wie die E-Mail-Plattform verwaltet wird, insbesondere in der DNS-Zone, ist kein CNAME-Eintrag zu konfigurieren.
+> Wenn der hinzugefügte Domainname (bzw. dessen DNS-Zone) in demselben Kunden-Account wie der E-Mail-Dienst verwaltet wird, ist kein CNAME-Eintrag zu konfigurieren.
 
-**Hier erfahren Sie, wie Sie Ihren Domainnamen auf Ihrer E-Mail-Plattform validieren, indem Sie einen CNAME-Eintrag hinzufügen.**
+**Diese Anleitung erklärt, wie Sie Domainnamen für Ihren E-Mail-Dienst validieren, indem Sie einen CNAME-Eintrag erstellen.**
 
 ## Voraussetzungen
 
-- Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) eingeloggt und befinden sich im Bereich `Web Cloud`{.action}.
-- Sie verfügen über eine [Exchange](https://www.ovhcloud.com/de/emails/) oder [Email Pro](https://www.ovhcloud.com/de/emails/email-pro/) Lösung.
-- Sie haben eine Domain zu Ihrer E-Mail-Plattform hinzugefügt. „[ Bei Bedarf können Sie die Anleitung Einen Domainnamen zu einer E-Mail-Plattform hinzufügen ](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain)„ lesen.
-- Sie können die DNS-Zone der betreffenden Domain [über das OVHcloud Kundencenter](/pages/web_cloud/domains/dns_zone_edit) oder das Verwaltungsinterface konfigurieren, in dem sie registriert ist.
+- Sie haben Zugriff auf Ihr Webhosting über das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie verfügen über eine der E-Mail-Lösungen [Exchange](https://www.ovhcloud.com/de/emails/) oder [E-Mail Pro](https://www.ovhcloud.com/de/emails/email-pro/).
+- Sie haben einen Domainnamen zu Ihrem Dienst hinzugefügt, wie in [unserer Anleitung](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_Domainname) beschrieben.
+- Sie sind berechtigt, die DNS-Zone des Domainnamens zu konfigurieren, entweder [im OVHcloud Kundencenter](/pages/web_cloud/Domainnames/dns_zone_edit) oder im Verwaltungsinterface eines externen Providers.
 
 ## In der praktischen Anwendung
 
-### Warum sollte ich einen CNAME-Eintrag erstellen?
+### Warum muss ein CNAME-Eintrag erstellt werden?
 
-Der CNAME-Eintrag wird hier als Alias verwendet, er verweist auf ein Ziel, das wiederum auf eine IP-Adresse verweist. Es handelt sich also naturgemäß nicht um einen mit einem E-Mail-Dienst verbundenen Datensatz.
+Der CNAME-Eintrag wird hier als Alias verwendet. Er verweist auf ein Ziel, das wiederum auf eine IP-Adresse verweist. Dieser Eintrag ist also nicht direkt mit einem E-Mail-Dienst verbunden.
 
-Bei unseren [**Hosted Exchange**](https://www.ovhcloud.com/de/emails/hosted-exchange/) und [**Email Pro**](https://www.ovhcloud.com/de/emails/email-pro/) Angeboten wird dieser CNAME Eintrag als Validierungscode (Token) verwendet, der in der DNS Zone der zu validierenden Domain sichtbar sein wird. So wird sichergestellt, dass der Benutzer der E-Mail-Plattform auch tatsächlich der Manager der Domain ist, die er hinzufügt.
+Der CNAME-Eintrag dient als Validierungscode (Token) für unsere Lösungen [**Hosted Exchange**](https://www.ovhcloud.com/de-emails/hosted-exchange/) und [**Email Pro**](https://www.ovhcloud.com/de-gb/emails/email-pro/). Er wird zur DNS-Zone des Domainnamens hinzugefügt, die Sie für die Verwendung mit Ihren E-Mails nutzen möchten. Damit soll überprüft werden, ob der Benutzer des E-Mail-Dienstes berechtigt ist, den hinzuzufügenden Domainnamen zu verwenden.
 
-In der folgenden Abbildung wird die E-Mail-Plattform ([Exchange](https://www.ovhcloud.com/de/emails/) oder [Email Pro](https://www.ovhcloud.com/de/emails/email-pro/)) durch den grünen Rahmen dargestellt.<br>
-Um E-Mail-Adressen zu trainieren, fügen Sie Accounts hinzu (hier dargestellt durch „**contact**“, „**john.smith**“ und „**mary.johnson**“).<br>
-Die Domain **mydomain.ovh** wurde zur E-Mail-Plattform hinzugefügt (siehe Anleitung „[Domainnamen auf einer E-Mail-Plattform hinzufügen](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain)“).<br>
-Ein Validierungscode wird von der Plattform generiert (in unserem Beispiel im Format „**abcd1-check**“).<br>
-Wenn die DNS-Zone der Domain **mydomain.ovh** nicht im selben OVHcloud Kundenkonto verwaltet oder über ein externes Verwaltungsinterface verwaltet wird, muss dieser Code als CNAME-Eintrag hinzugefügt werden. Dieser Datensatz wird im Beispiel durch den blauen Rahmen dargestellt.<br>
-Die E-Mail-Plattform kann die DNS-Einträge der Domain **mydomain.ovh** einsehen, um das Vorhandensein des Validierungscodes zu überprüfen.
+In der folgenden Abbildung wird Ihr E-Mail-Dienst ([Exchange](https://www.ovhcloud.com/de/emails/) oder [Email Pro](https://www.ovhcloud.com/de/emails/email-pro/)) als 
+grün umrahmtes Feld dargestellt.<br>
+Sie haben Accounts hinzugefügt (**contact**, **john.smith**, **mary.johnson** in diesem Beispiel), für die E-Mail-Adressen erstellt werden sollen.<br>
+Der Domainname **mydomain.ovh** wurde zum E-Mail-Dienst hinzugefügt (siehe Anleitung „[Domainnamen zu Ihrem Exchange Dienst hinzufügen](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain)“).<br>
+E-Mail-Dienst generiert einen Validierungscode (**abcd1-check** in diesem Beispiel).<br>
+Wenn die DNS-Zone des Domainnamens **mydomain.ovh** nicht im selben OVHcloud Kunden-Account oder über ein externes Interface verwaltet wird, muss dieser Code als CNAME-Eintrag hinzugefügt werden. Dieser Eintrag ist in der Abbildung im blauen Rahmen zu sehen.<br>
+Der E-Mail-Dienst prüft automatisch die DNS-Einträge des Domainnamens **mydomain.ovh** auf den Validierungscode.
 
 ![E-Mail](images/email-dns-conf-cname01.png){.thumbnail}
 
-Sobald die E-Mail-Plattform den Validierungscode aus der DNS-Zone der Domain **mydomain.ovh** lesen konnte, können die Adressen **kontakt@mydomain.ovh**, **john.smith@mydomain.ovh** und **mary.johnson@mydomain.ovh** geschult werden.
+Sobald der E-Mail-Dienst den Validierungscode in der DNS-Zone des Domainnamens **mydomain.ovh** bestätigen kann, können die Adressen **kontakt@mydomain.ovh**, **john.smith@mydomain.ovh** und **mary.johnson@mydomain.ovh** angelegt werden.
 
-### Schritt 1 - Die CNAME-Diagnose von OVHcloud verstehen <a name="step1"></a>
+### Schritt 1: Die CNAME-Diagnose bei OVHcloud verstehen <a name="step1"></a>
 
-Das Diagnose-Kästchen **CNAME** erscheint auf der Registerkarte Assoziierte `Domains`{.action} Ihrer E-Mail-Plattform, nachdem Sie Ihren Domainnamen hinzugefügt haben.
+Der Diagnose-Hinweis **CNAME** erscheint nachdem Sie Ihren Domainnamen zu E-Mail-Dienst hinzugefügt haben im Tab `Assoziierte Domains`{.action}.
 
-![cname domain e-mail](images/cname_exchange_diagnostic.png){.thumbnail}
+![cnamee-mail](images/cname_exchange_diagnostic.png){.thumbnail}
 
-Im obigen Beispiel ist das Kästchen rot. Mögliche Ursachen für diese Diagnose sind:
+Im obigen Beispiel ist dieses Feld rot. Folgende Ursachen kommen dafür in Frage:
 
-- **Die angegebene Domain wird nicht in demselben OVHcloud Kundenkonto verwaltet wie Ihre E-Mail**-Plattform: Gehen Sie in der Kundencenter-Oberfläche des OVHcloud Accounts, der die DNS-Zone der Domain verwaltet, zu [Schritt 3](#step3) dieser Anleitung.
-- **Die angegebene Domain verwendet DNS-Server von außerhalb von OVHcloud** : Die Domain ist bei OVHcloud registriert, Sie verwenden jedoch „personalisierte“ DNS-Server. Um dies zu überprüfen, wählen Sie in der linken Spalte im Bereich `Domainnamen`{.action} die betreffende Domain aus. Überprüfen Sie im Tab `Allgemeine Informationen`{.action} die Angabe „DNS-Server“. Wenn die Option `Benutzerdefiniert`{.action} angezeigt wird, müssen Sie sich auf der Registerkarte DNS-Server bei der Verwaltungsschnittstelle für registrierte `DNS-Server`{.action} anmelden
+- **Der hinzugefügte Domainname wird nicht in demselben OVHcloud Kunden-Account verwaltet wie Ihr E-Mail-Dienst**. Gehen Sie im Kundencenter des OVHcloud Accounts, der die DNS-Zone des Domainnamens verwaltet und führen Sie [Schritt 3](#step3) dieser Anleitung aus.
+- **Der hinzugefügte Domainname verwendet keine DNS-Server von OVHcloud**. Der Domainname ist bei OVHcloud registriert, verwendet jedoch externe DNS-Server. Um dies zu überprüfen, wählen Sie in der linken Spalte im Bereich `Domainnamen`{.action} den Domainnamen aus. Prüfen Sie im Tab `Allgemeine Informationen`{.action} den Status unter **DNS-Server**. Wenn dort `Custom`{.action} steht, haben Sie im Tab `DNS-Server`{.action} externe Server angegeben. Verwenden Sie die Verwaltungsoberfläche Ihres DNS-Anbieters, um den CNAME-Eintrag zu bearbeiten.
 
 ![E-Mail](images/email-dns-conf-cname02.png){.thumbnail}
 
-- **Die angegebene Domain ist nicht bei OVHcloud registriert und verwendet keine OVHcloud** DNS-Server: Die Domain ist bei einem anderen Registrar registriert. Überprüfen Sie hierzu das Interface Ihrer Domain-Registrierung und die DNS-Server, die Sie für die Konfiguration der DNS-Zone verwenden.
+- **Der hinzugefügte Domainname ist nicht bei OVHcloud registriert und verwendet keine OVHcloud DNS-Server**. Der Domainname ist bei einem anderen Registrar registriert. Wenden Sie sich an Ihren Domainnamen-Anbieter, um zu erfahren, wie Sie auf die Konfiguration der DNS-Zone zugreifen können.
 
-### Schritt 2 - Bestätigungscode abrufen <a name="step2"></a>
+### Schritt 2: Bestätigungscode abrufen <a name="step2"></a>
 
-Gehen Sie auf den Tab `Assoziierte Domains`{.action} und klicken Sie auf das rote Kästchen `CNAME` in der Spalte „Diagnose“, um die notwendigen Informationen zu erhalten.
+Gehen Sie zum Tab `Assoziierte Domains`{.action} und klicken Sie auf das rote Feld `CNAME` in der Spalte „Diagnose“, um die notwendigen Informationen zu erhalten.
 
-Der CNAME-Eintrag wird im angezeigten Dialogfeld beschrieben.
+Im Dialogfenster finden Sie eine Beschreibung des CNAME-Eintrags.
 
-![cname domain e-mail](images/cname_exchange_informations.png){.thumbnail}
+![cnamee-mail](images/cname_exchange_informations.png){.thumbnail}
 
-Notieren Sie nun den eindeutigen Code in der mittleren Zeile (`a1bcd-check.mydomain.ovh to ovh.com.` im obigen Beispiel).
+Die mittlere Zeile besteht aus dem Verifizierungscode und dem Ziel (`a1bcd-check.mydomain.ovh zu ovh.com.` im obigen Beispiel) für den CNAME-Eintrag.
 
-### Schritt 3 - CNAME-Eintrag erstellen <a name="step3"></a>
+### Schritt 3: CNAME-Eintrag erstellen <a name="step3"></a>
 
-Wählen Sie die Registerkarte aus, die Ihrer Situation entspricht:
+Wählen Sie den Tab für Ihr verwendetes Interface aus:
 
 > [!tabs]
-> **Über das OVHcloud Kundencenter**
+> **OVHcloud Kundencenter**
 >> Klicken Sie im Bereich `Web Cloud`{.action} auf `Domainnamen`{.action} und dann auf den betreffenden Domainnamen. Gehen Sie dann in den Tab `DNS Zone`{.action}.<br>
->> Die Konfiguration Ihrer DNS-Zone wird angezeigt. Um einen CNAME-Eintrag hinzuzufügen, klicken Sie rechts auf den Button `Eintrag hinzufügen`{.action}.<br>
->> Im neuen Fenster stehen Ihnen mehrere DNS-Einträge zur Verfügung. Klicken Sie auf `CNAME`{.action} und füllen Sie die Felder mit den Informationen aus [Schritt 2](#step2) dieser Anleitung aus.<br>
->> Wenn der Validierungscode beispielsweise „**a1bcd-check**“ lautet, muss dieser in das Feld „Subdomain“ eingegeben werden. Geben Sie zum Schluss „**ovh.com.**“ im Bereich „Ziel“ ein und vergessen Sie dabei nicht das abschließende „**.**“.
+>> Die Konfiguration Ihrer DNS-Zone wird angezeigt. Um einen CNAME-Eintrag zu erstellen, klicken Sie rechts auf den Button `Eintrag hinzufügen`{.action}.<br>
+>> Im neuen Fenster stehen Ihnen mehrere DNS-Eintragstypen zur Verfügung. Klicken Sie auf `CNAME`{.action} und füllen Sie die Felder entsprechend der Werte aus [Schritt 2](#step2) dieser Anleitung aus.<br>
+>> Wenn der Validierungscode beispielsweise „**a1bcd-check**“ lautet, ist dieser in das Feld „Subdomain“ einzugeben. Geben Sie „**ovh.com.**“ als das „Ziel“ ein und vergessen Sie dabei nicht den abschließenden „**.**“.
 >>
->> ![cname domain e-mail](images/cname_add_entry_dns_zone.png){.thumbnail}
+>> ![cnamee-mail](images/cname_add_entry_dns_zone.png){.thumbnail}
 >>
->> Wenn Sie die Informationen eingegeben haben, klicken Sie auf `Weiter`{.action}. Stellen Sie sicher, dass die angezeigten Informationen korrekt sind, und klicken Sie dann auf `Bestätigen`{.action}.<br>
->>
->> > [!warning]
->> >
->> > Die Änderung erfordert eine Propagationszeit, die in der Regel in wenigen Minuten angewendet wird. Es kann jedoch bis zu 24 Stunden dauern.
->>
-> **Von einem externen Interface zu OVHcloud**
->>
->> Melden Sie sich bei dem Interface an, das die DNS-Zone der Domain verwaltet, und fügen Sie einen CNAME-Eintrag mit folgenden Einstellungen hinzu:
->>
->> - **Subdomain**: Geben Sie den Wert in der Form „**xxxxx-check**“ ein, indem Sie „**x**“ durch den eindeutigen Code ersetzen, der in Schritt 2 [dieser Anleitung](#step2) aufgeführt wird.
->> - **Ziel**: Geben Sie den Wert „**ovh.com.**“ ein und vergessen Sie dabei nicht das endgültige „**.**“, wenn Ihr Eingabeinterface dies nicht automatisch vornimmt.
->>
->> Bestätigen Sie diese Änderung in Ihrer DNS-Zone.
+>> Wenn Sie alle Daten eingegeben haben, klicken Sie auf `Weiter`{.action}. Stellen Sie sicher, dass alles korrekt ist und klicken Sie auf `Bestätigen`{.action}.<br>
 >>
 >> > [!warning]
 >> >
->> > Diese Änderung erfordert eine Propagationszeit, die in der Regel innerhalb weniger Minuten angewendet wird. Es kann jedoch bis zu 24 Stunden dauern.
+>> > Die Änderung wird in der Regel innerhalb weniger Minuten angewendet, kann aber eine Propagationszeit von bis zu 24 Stunden erfordern.
+>>
+> **Externes Interface***
+>>
+>> Loggen Sie sich in der Verwaltungsoberfläche für Ihre DNS-Zone ein und fügen Sie einen CNAME-Eintrag mit folgenden Einstellungen hinzu:
+>>
+>> - **Subdomain**: Geben Sie den Wert in der Form „**xxxxx-check**“ ein. Ersetzen Sie „**xxxxx**“ mit dem eindeutigen Code aus [Schritt 2](#step2) dieser Anleitung.
+>> - **Ziel**: Geben Sie den Wert „**ovh.com.**“ ein und achten Sie auf den abschließenden „**.**“, wenn Ihr Eingabeinterface dies nicht automatisch vornimmt.
+>>
+>> Bestätigen Sie diese Änderung Ihrer DNS-Zone.
+>>
+>> > [!warning]
+>> >
+>> > Die Änderung wird in der Regel innerhalb weniger Minuten angewendet, kann aber eine Propagationszeit von bis zu 24 Stunden erfordern.
 >> >
 >>
->> Im Folgenden finden Sie ein Beispiel für eine DNS-Antwort nach dem Hinzufügen eines CNAME-Eintrags zur Validierung:
+>> Im Folgenden finden Sie ein Beispiel für eine DNS-Antwort nach dem ein CNAME-Eintrag zur Validierung hinzugefügt wurde:
 >>
->> ```bash
+>> ```text
 >> ab1cd-check.mydomain.ovh. 3600	IN	CNAME	ovh.com.
 >> ```
 
-Um zu überprüfen, dass die Konfiguration des CNAME-Eintrags von Ihrer E-Mail-Plattform gelesen wurde, gehen Sie auf diese Plattform und gehen Sie in den Tab `Assoziierte Domains`{.action}. Wenn das `CNAME`-Kästchen in der Spalte „Diagnose“ nicht mehr angezeigt wird, wird der Domainname korrekt hinzugefügt. Ist das nicht der Fall, kann es sein, dass die Propagationszeit noch nicht abgelaufen ist.
+Um zu überprüfen, dass die Konfiguration des CNAME-Eintrags von Ihrem E-Mail-Dienst gelesen wurde, öffnen Sie im Kundencenter den Tab `Assoziierte Domains`{.action}. Wenn das Feld `CNAME` in der Spalte „Diagnose“ nicht mehr angezeigt wird, wurde der Domainname mit dem Dienst assoziiert. Ist das nicht der Fall, kann es sein, dass die Propagationszeit noch nicht abgelaufen ist.
 
-![cname domain e-mail](images/cname_exchange_diagnostic_green.png){.thumbnail}
+![cnamee-mail](images/cname_exchange_diagnostic_green.png){.thumbnail}
 
 ## Weiterführende Informationen
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com>.
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
