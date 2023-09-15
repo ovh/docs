@@ -107,7 +107,7 @@ Une fois que votre hébergement web dispose d'un certificat SSL fonctionnel, que
 > [!warning]
 >
 > Avant d'entamer toute démarche, nous vous recommandons de récupérer une sauvegarde complète de votre site web, c'est-à-dire contenant aussi bien des fichiers présents sur l'espace de stockage FTP que de la base de données, si le site web en utilise une. 
-> Effectivement, à partir de cette étape, les actions sont à réaliser directement depuis les fichiers qui composent votre site web. N'hésitez pas à contacter un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) si vous éprouvez des difficultés.
+> En effet, à partir de cette étape, les actions sont à réaliser directement depuis les fichiers qui composent votre site web. N'hésitez pas à contacter un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) si vous rencontrez des difficultés.
 >
 
 Il existe de multiples manières d'activer le « HTTPS » sur votre site. Cette opération nécessite de réaliser des manipulations dans la configuration du site internet que vous utilisez. Les informations ci-dessous peuvent vous aider dans cette démarche d'activation, mais elles peuvent aussi se révéler incomplètes ou non pertinentes selon votre cas.
