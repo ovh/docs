@@ -22,7 +22,7 @@ Les snapshots sont crées à partir d'un volume existant et opérationnel. Un sn
 
 > [!warning]
 >
-> Veuillez noter qu'une fois qu'un volume est restauré à l'aide d'une copie de snapshot, tous les fichiers ou snapshots créés ultérieurement seront perdus. Lorsqu'un volume est restauré, toutes les données qu'il contient sont remplacées par les données du snapshot. Cette action est irréversible.
+> Veuillez noter qu'une fois qu'un volume est restauré à l'aide d'un snapshot, tous les fichiers ou snapshots créés ultérieurement seront perdus. Lorsqu'un volume est restauré, toutes les données qu'il contient sont remplacées par les données du snapshot. Cette action est irréversible.
 >
 
 Dans ce guide, un volume est également appelé « *share* » comme dans l’API OVHcloud.
