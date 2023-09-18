@@ -43,7 +43,7 @@ Introduzca los campos solicitados:
 
 > [!primary]
 >
-> El espacio disponible para crear una cuenta compartida depende del número de cuentas contratadas a su plataforma. Cada cuenta Exchange suscrita a su plataforma desbloquea 5 GB para las cuentas compartidas.
+> El espacio disponible para crear una cuenta compartida depende del número de cuentas contratadas en su plataforma. Cada cuenta Exchange suscrita en su plataforma desbloquea 5 GB para las cuentas compartidas.
 >
 > **Ejemplo:**
 >
