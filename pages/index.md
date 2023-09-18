@@ -369,7 +369,7 @@
             + [Load Balancing configuration in NSX](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx-09-configure-loadbalancing)
             + [Adding a new Tier-1 Gateway in NSX](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx-10-add-new-tier1-gateway)
             + [Setting up an IPsec Tunnel with NSX](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx-12-configure-ipsec)
-            + [Getting NSX-T Logs by API](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx-t_get_logs_by_api)
+            + [Getting NSX-T logs via the API](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx-t_get_logs_by_api)
             + [NSX - FAQ](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx-11-faq)
         + [VMware NSX-v](hosted-private-cloud-hosted-private-cloud-powered-by-vmware-nsx-v)
             + [VMware NSX-v - End of Support](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx_nsx-v-eos)
