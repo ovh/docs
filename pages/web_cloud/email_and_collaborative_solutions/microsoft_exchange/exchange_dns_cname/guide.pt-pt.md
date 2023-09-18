@@ -35,7 +35,7 @@ No âmbito das nossas ofertas [**Hosted Exchange**](https://www.ovhcloud.com/pt/
 
 No diagrama abaixo, a plataforma de e-mail ([Exchange](https://www.ovhcloud.com/pt/emails/) ou [Email Pro](https://www.ovhcloud.com/pt/emails/email-pro/)) é representada pelo quadro verde.<br>
 Para formar os endereços de e-mail adicione contas (aqui representadas por " **contacto** ", " **john.smith** " e " **mary.johnson** ").<br>
-O domínio **mydomain.ovh** foi adicionado à plataforma de e-mail (consulte o guia " [Adicionar um domínio a uma plataforma de e-mail](/pages/web_cloud/email_and_colaborative_solutions/microsoft_exchange/exchange_adding_domain) ").<br>
+O domínio **mydomain.ovh** foi adicionado à plataforma de e-mail (consulte o guia " [Adicionar um domínio a uma plataforma de e-mail](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain) ").<br>
 Um código de validação é gerado pela plataforma (sob a forma " **abcd1-check** " no nosso exemplo).<br>
 Se a zona DNS do nome de domínio **mydomain.ovh** não for gerida na mesma conta de cliente OVHcloud ou for gerida a partir de uma interface de gestão externa, este código deve ser adicionado sob a forma de um registo CNAME. Este registo é representado pelo quadro azul no exemplo.<br>
 A plataforma de e-mail é capaz de observar os registos DNS do nome de domínio **mydomain.ovh** para verificar a presença do código de validação.
