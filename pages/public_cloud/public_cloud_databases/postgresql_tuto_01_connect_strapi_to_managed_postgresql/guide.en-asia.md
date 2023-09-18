@@ -4,27 +4,6 @@ excerpt: "Find out how to build a Strapi application connected to an OVHcloud Ma
 updated: 2021-01-11
 ---
 
-<style>
- pre {
-     font-size: 14px;
- }
- pre.console {
-   background-color: #300A24;
-   color: #ccc;
-   font-family: monospace;
-   padding: 5px;
-   margin-bottom: 5px;
- }
- pre.console code {
-   b   font-family: monospace !important;
-   font-size: 0.75em;
-   color: #ccc;
- }
- .small {
-     font-size: 0.75em;
- }
-</style>
-
 ## Objective
 
 In this tutorial, we are going to show you how to build a [Strapi](https://strapi.io/){.external} application using the OVHcloud managed [PostgreSQL](https://www.postgresql.org/){.external} database [service](https://www.ovhcloud.com/asia/public-cloud/postgresql/).
@@ -164,14 +143,15 @@ psql --dbname=defaultdb  --host=postgresql-ab1cd2ef-gh1ij2kl3.database.cloud.ovh
 
 Enter the password and press `Enter`{.action}.
 
-<pre class="console"><code>$ psql --dbname=defaultdb  --host=postgresql-ab1cd2ef-gh1ij2kl3.database.cloud.ovh.net --port=20184 --username=avnadmin  --password
+```console
+$ psql --dbname=defaultdb  --host=postgresql-ab1cd2ef-gh1ij2kl3.database.cloud.ovh.net --port=20184 --username=avnadmin  --password
 Password:
 psql (14.1 (Debian 14.1-1.pgdg110+1))
 SSL connection (protocol: TLSv1.3, cipher: TLS_AES_256_GCM_SHA384, bits: 256, compression: off)
 Type "help" for help.
 
 defaultdb=>
-</code></pre>
+```
 
 Setup is done, your Managed PostgreSQL database is fully operational, let's go further and use it with [Strapi](https://strapi.io/){.external}.
 
@@ -197,9 +177,10 @@ We want to use the latest LTS version of nodejs, so inside your development envi
 nvm use 16.13.1
 ```
 
-<pre class="console"><code>$ nvm use 16.13.1
+```console
+$ nvm use 16.13.1
 Now using node v16.13.1 (npm v8.1.2)
-</code></pre>
+```
 
 ### Setup a new instance of Strapi
 
@@ -213,7 +194,8 @@ yarn create strapi-app my-strapi
 You will be prompted to choose between the Quickstart or Custom method, select `Custom`{.action} and press `Enter`{.action}.
 If you choose the Quickstart one, default parameters will be applied and a server will automatically start.
 
-<pre class="console"><code>$ yarn create strapi-app my-strapi
+```console
+$ yarn create strapi-app my-strapi
 yarn create v1.22.17
 warning package.json: No license field
 [1/4] Resolving packages...
@@ -225,21 +207,21 @@ success Installed "create-strapi-app@4.0.2" with binaries:
 ? Choose your installation type
   Quickstart (recommended)
 ❯ Custom (manual settings)
-</code></pre>
+```
 
 On the next step, select `postgres` and press `Enter`{.action}.
 
-<pre class="console"><code>
+```console
 ? Choose your installation type Custom (manual settings)
 ? Choose your default database client
   sqlite
 ❯ postgres
   mysql
-</code></pre>
+```
 
 Then, enter your PostgreSQL database parameters, and select `Yes`{.action} when prompted for enabling SSL connection.
 
-<pre class="console"><code>
+```console
 ? Choose your installation type Custom (manual settings)
 ? Choose your default database client postgres
 ? Database name: defaultdb
@@ -276,11 +258,12 @@ You can start by doing:
   yarn develop
 
 Done in 662.54s.
-</code></pre>
+```
 
 If you prefer to choose `No` when prompted to enable SSL connection, this is what happens:
 
-<pre class="console"><code>$ yarn develop
+```console
+$ yarn develop
 yarn run v1.22.17
 warning ../../../package.json: No license field
 $ strapi develop
@@ -301,7 +284,7 @@ error: no pg_hba.conf entry for host "109.190.xxxx.xxxx", user "avnadmin", datab
     at TCP.onStreamRead (node:internal/stream_base_commons:199:23)
 error Command failed with exit code 1.
 info Visit https://yarnpkg.com/en/docs/cli/run for documentation about this command.
-</code></pre>
+```
 
 This is a known bug, you can follow the issue here: <https://github.com/strapi/strapi/issues/12058>.
 
@@ -310,7 +293,7 @@ Open the `config/database.js` file.
 
 It should be similar to that:
 
-<pre class="console"><code>
+```console
 module.exports = ({ env }) => ({
   connection: {
     client: 'postgres',
@@ -324,17 +307,19 @@ module.exports = ({ env }) => ({
     },
   },
 });
-</code></pre>
+```
 
 Replace the line:
 
-<pre class="console"><code>ssl: env.bool('DATABASE_SSL', false),
-</code></pre>
+```console
+ssl: env.bool('DATABASE_SSL', false),
+```
 
 with this line:
 
-<pre class="console"><code>ssl: { rejectUnauthorized: env.bool('DATABASE_SSL_SELF', false), },
-</code></pre>
+```console
+ssl: { rejectUnauthorized: env.bool('DATABASE_SSL_SELF', false), },
+```
 
 Save and exit the file.
 
@@ -345,7 +330,7 @@ Now, if you choose `Yes` when prompted to enable SSL connection, get the CA cert
 Save the generated file into the `config` folder, just beside the `database.js` file, and rename it as `ca-certificate.crt`
 Now open the `config/database.js` file and modify the `ssl` block as follows:
 
-<pre class="console"><code>
+```console
 const fs = require('fs');
 
 module.exports = ({ env }) => ({
@@ -363,7 +348,7 @@ module.exports = ({ env }) => ({
     },
   },
 });
-</code></pre>
+```
 
 where `${__dirname}` is the `config` folder location.
 Save and exit the file, the configuration is done!
@@ -376,7 +361,8 @@ Launch the strapi application with the yarn command:
 yarn develop
 ```
 
-<pre class="console"><code>$ yarn develop
+```console
+$ yarn develop
 yarn run v1.22.17
 warning ../../../package.json: No license field
 $ strapi develop
@@ -428,7 +414,7 @@ Create your first administrator 💻 by going to the administration panel at:
 [2021-12-31 13:26:35.989] http: GET /admin/cropper-css.b71d1229.chunk.js (3 ms) 200
 [2021-12-31 13:26:36.006] http: GET /admin/init (40 ms) 200
 [2021-12-31 13:26:36.173] http: GET /admin/fde9b1ad0670d29a2516.png (1 ms) 200
-</code></pre>
+```
 
 Congratulations! You have just finished the setup, the server starts end open your browser on the admin login creation page http://localhost:1337/admin/auth/register-admin.
 
@@ -460,12 +446,13 @@ $ psql --dbname=defaultdb  --host=postgresql-ab1cd2ef-gh1ij2kl3.database.cloud.o
 
 Then find, in the `up_users` table, our previously created entry. Here the user is named "demo":
 
-<pre class="console"><code>defaultdb=> SELECT id,username,email,created_at FROM public.up_users WHERE username='demo';
+```console
+defaultdb=> SELECT id,username,email,created_at FROM public.up_users WHERE username='demo';
  id | username |      email      |       created_at       
 ----+----------+-----------------+------------------------
   1 | demo     | demo@mymail.com | 2021-12-31 13:46:08.04
 (1 row)
-</code></pre>
+```
 
 ### Cleaning up
 

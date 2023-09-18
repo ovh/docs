@@ -4,28 +4,6 @@ excerpt: 'Find out how to set up distributed tracing on OVHcloud Managed Kuberne
 updated: 2022-03-22
 ---
 
-<style>
- pre {
-     font-size: 14px;
- }
- pre.console {
-   background-color: #300A24; 
-   color: #ccc;
-   font-family: monospace;
-   padding: 5px;
-   margin-bottom: 5px;
- }
- pre.console code {
-   border: solid 0px transparent;
-   font-family: monospace !important;
-   font-size: 0.75em;
-   color: #ccc;
- }
- .small {
-     font-size: 0.75em;
- }
-</style>
-
 ## Objective
 
 [Jaeger](https://www.jaegertracing.io/) is an open-source distributed tracing platform.
@@ -79,7 +57,8 @@ helm repo update
 
 These commands will add the Jaeger Helm repository to your local Helm chart repository and update the installed chart repositories:
 
-<pre class="console"><code>$ helm repo add jaegertracing https://jaegertracing.github.io/helm-charts
+```console
+$ helm repo add jaegertracing https://jaegertracing.github.io/helm-charts
 helm repo update
 "jaegertracing" has been added to your repositories
 Hang tight while we grab the latest from your chart repositories...
@@ -87,7 +66,7 @@ Hang tight while we grab the latest from your chart repositories...
 ...
 ...Successfully got an update from the "prometheus-community" chart repository
 Update Complete. ⎈Happy Helming!⎈
-</code></pre>
+```
 
 The Jaeger repository provides two charts: `jaeger` and `jaeger-operator`. For the guide, you will deploy the jaeger-operator chart, which makes it easy to configure a minimal installation. 
 
@@ -101,7 +80,8 @@ helm install jaeger-operator jaegertracing/jaeger-operator --namespace observabi
 
 This command will install the latest version of Jaeger operator and `observability` namespace:
 
-<pre class="console"><code>$ helm install jaeger-operator jaegertracing/jaeger-operator --namespace observability --create-namespace --set rbac.clusterRole=true
+```console
+$ helm install jaeger-operator jaegertracing/jaeger-operator --namespace observability --create-namespace --set rbac.clusterRole=true
 manifest_sorter.go:192: info: skipping unknown hook: "crd-install"
 NAME: jaeger-operator
 LAST DEPLOYED: Thu Mar 17 12:06:49 2022
@@ -115,7 +95,7 @@ jaeger-operator is installed.
 Check the jaeger-operator logs
   export POD=$(kubectl get pods -l app.kubernetes.io/instance=jaeger-operator -lapp.kubernetes.io/name=jaeger-operator --namespace observability --output name)
   kubectl logs $POD --namespace=observability
-</code></pre>
+```
 
 Thanks to the variable overriding `rbac.clusterRole=true`, you ask the operator to watch all namespaces.
 
@@ -125,10 +105,11 @@ Check the Jaeger Operator is running:
 kubectl get pod -n observability
 ```
 
-<pre class="console"><code>$ kubectl get pod -n observability
+```console
+$ kubectl get pod -n observability
 NAME                               READY   STATUS    RESTARTS   AGE
 jaeger-operator-67f8dd68c9-5qj26   1/1     Running   0          3m5s
-</code></pre>
+```
 
 The simplest possible way to create a Jaeger instance is by creating a YAML file that will install the default AllInOne image. This “all-in-one” image includes: agent, collector, query, ingester and Jaeger UI in a single pod, using in-memory storage by default.
 
@@ -158,9 +139,10 @@ kubectl apply -f jaeger.yaml
 
 These commands will create a new CRD `Jaeger` and an instance named `jaeger`:
 
-<pre class="console"><code>$ kubectl apply -f jaeger.yaml
+```console
+$ kubectl apply -f jaeger.yaml
 jaeger.jaegertracing.io/jaeger created
-</code></pre>
+```
 
 You can now check if the Jaeger instance is running with the following commands:
 
@@ -171,24 +153,26 @@ kubectl get pods -l app.kubernetes.io/instance=jaeger
 
 Theses commands will check if the instances were created, list the Jaeger objects and list the pods that are running:
 
-<pre class="console"><code>$ kubectl get jaeger
+```console
+$ kubectl get jaeger
 NAME       STATUS    VERSION   STRATEGY   STORAGE   AGE
 jaeger   Running   1.30.0    allinone   memory    4s
 
 $ kubectl get pods -l app.kubernetes.io/instance=jaeger
 NAME                        READY   STATUS    RESTARTS   AGE
 jaeger-59ccc99bcc-zpscb   1/1     Running   0          80s
-</code></pre>
+```
 
 You can also check that all Jaeger services have been correctly deployed:
 
-<pre class="console"><code>$ kubectl get svc -l app=jaeger
+```console
+$ kubectl get svc -l app=jaeger
 NAME                          TYPE           CLUSTER-IP     EXTERNAL-IP      PORT(S)                                  AGE
 jaeger-agent                ClusterIP      None           <none>           5775/UDP,5778/TCP,6831/UDP,6832/UDP      3d21h
 jaeger-collector            ClusterIP      10.3.197.39    <none>           9411/TCP,14250/TCP,14267/TCP,14268/TCP   3d21h
 jaeger-collector-headless   ClusterIP      None           <none>           9411/TCP,14250/TCP,14267/TCP,14268/TCP   3d21h
 jaeger-query                LoadBalancer   10.3.114.168   51.210.210.101   16686:30598/TCP,16685:30835/TCP          3d21h
-</code></pre>
+```
 
 ### Access to Jaeger UI
 
@@ -201,11 +185,12 @@ echo Jaeger URL: http://$JAEGER_URL:16686
 
 You should obtain the following result:
 
-<pre class="console"><code>$ export JAEGER_URL=$(kubectl get svc jaeger-query -o jsonpath='{.status.loadBalancer.ingress[].ip}')
+```console
+$ export JAEGER_URL=$(kubectl get svc jaeger-query -o jsonpath='{.status.loadBalancer.ingress[].ip}')
 
 $ echo Jaeger URL: http://$JAEGER_URL:16686
 Jaeger URL: http://51.210.210.101:16686
-</code></pre>
+```
 
 Open your browser and go to the Jaeger interface.
 
@@ -392,12 +377,13 @@ kubectl apply -f svc.yaml
 
 Output should be like this:
 
-<pre class="console"><code>$ kubectl apply -f deployment.yml
+```console
+$ kubectl apply -f deployment.yml
 deployment.apps/what-is-my-pod-with-tracing-deployment created
 
 $ kubectl apply -f svc.yml
 service/what-is-my-pod-with-tracing created
-</code></pre>
+```
 
 You can verify if your application is running and service is created by running the following commands:
 
@@ -408,7 +394,8 @@ kubectl get svc -l app=what-is-my-pod-with-tracing
 
 Output should be like this:
 
-<pre class="console"><code>$ kubectl get pod -l app=what-is-my-pod-with-tracing
+```console
+$ kubectl get pod -l app=what-is-my-pod-with-tracing
 NAME                                                      READY   STATUS    RESTARTS   AGE
 what-is-my-pod-with-tracing-deployment-84b56684d8-6kw6z   1/1     Running   0          3m
 what-is-my-pod-with-tracing-deployment-84b56684d8-bcsxh   1/1     Running   0          3m
@@ -417,7 +404,7 @@ what-is-my-pod-with-tracing-deployment-84b56684d8-wbjmz   1/1     Running   0   
 $ kubectl get svc -l app=what-is-my-pod-with-tracing
 NAME                          TYPE           CLUSTER-IP    EXTERNAL-IP      PORT(S)          AGE
 what-is-my-pod-with-tracing   LoadBalancer   10.3.118.87   135.125.84.198   8080:32365/TCP   3m
-</code></pre>
+```
 
 In order to generate traffic you need to get the external IP of your service:
 
@@ -434,7 +421,8 @@ curl http://$APP_URL:8080/
 
 You should obtain the following result:
 
-<pre class="console"><code>$ export APP_URL=$(kubectl get svc what-is-my-pod-with-tracing -o jsonpath='{.status.loadBalancer.ingress[].ip}')
+```console
+$ export APP_URL=$(kubectl get svc what-is-my-pod-with-tracing -o jsonpath='{.status.loadBalancer.ingress[].ip}')
 
 $ echo $APP_URL
 135.125.84.198
@@ -447,7 +435,7 @@ Hello "what-is-my-pod-with-tracing-deployment-84b56684d8-6kw6z"!%
 
 $ curl http://$APP_URL:8080/
 Hello "what-is-my-pod-with-tracing-deployment-84b56684d8-wbjmz"!%
-</code></pre>
+```
 
 ### Visualize traces
 

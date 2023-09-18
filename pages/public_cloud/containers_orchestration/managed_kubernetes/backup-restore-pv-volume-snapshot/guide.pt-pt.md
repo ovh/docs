@@ -4,27 +4,6 @@ excerpt: Find out how to back up and restore your Persistent Volume with Volume 
 updated: 2023-01-11
 ---
 
-<style>
- pre {
-     font-size: 14px;
- }
- pre.console {
-   background-color: #300A24;
-   color: #ccc;
-   font-family: monospace;
-   padding: 5px;
-   margin-bottom: 5px;
- }
- pre.console code {
-   b   font-family: monospace !important;
-   font-size: 0.75em;
-   color: #ccc;
- }
- .small {
-     font-size: 0.75em;
- }
-</style>
-
 In this tutorial, we are using [Kubernetes Volume Snapshots](https://kubernetes.io/docs/concepts/storage/volume-snapshots/) to back up and restore persistent volumes on an OVHcloud Managed Kubernetes cluster.
 
 Volume Snapshots are a Kubernetes feature released in General Availability (GA) on **Kubernetes 1.20**.
@@ -162,7 +141,8 @@ kubectl -n nginx-example exec $POD_NAME -c nginx -- cat /var/log/nginx/access.lo
 
 You should have a result like this:
 
-<pre class="console"><code>$ kubectl apply -f nginx-example-with-pv.yml
+```console
+$ kubectl apply -f nginx-example-with-pv.yml
 namespace/nginx-example created
 persistentvolumeclaim/nginx-logs created
 deployment.apps/nginx-deployment created
@@ -212,7 +192,7 @@ $ kubectl -n nginx-example exec $POD_NAME -c nginx -- cat /var/log/nginx/access.
 
 10.2.0.0 - - [26/Sep/2022:06:56:32 +0000] "HEAD / HTTP/1.1" 200 0 "-" "curl/7.64.1" "-"
 141.94.164.46 - - [26/Sep/2022:06:56:33 +0000] "HEAD / HTTP/1.1" 200 0 "-" "curl/7.64.1" "-"
-</code></pre>
+```
 
 ### Creating a Snapshot
 
@@ -238,14 +218,15 @@ kubectl apply -f nginx-example-snapshot.yml
 
 You should have a result like this:
 
-<pre class="console"><code>$ kubectl apply -f nginx-example-snapshot.yml
+```console
+$ kubectl apply -f nginx-example-snapshot.yml
 
 volumesnapshot.snapshot.storage.k8s.io/nginx-snapshot created
 
 $ kubectl -n nginx-example get VolumeSnapshot
 NAME             READYTOUSE   SOURCEPVC    SOURCESNAPSHOTCONTENT   RESTORESIZE   SNAPSHOTCLASS                    SNAPSHOTCONTENT                                    CREATIONTIME   AGE
 nginx-snapshot   true         nginx-logs                           1Gi           csi-cinder-snapclass-in-use-v1   snapcontent-131c751e-5cdb-4575-b0c0-538273c67d36   5m20s          5m20s
-</code></pre>
+```
 
 ### Simulate a disaster
 
@@ -258,7 +239,8 @@ kubectl -n nginx-example exec $POD_NAME -c nginx -- ls -al /var/log/nginx/
 
 You shoud have a result like this:
 
-<pre class="console"><code>$ kubectl -n nginx-example exec $POD_NAME -c nginx -- rm /var/log/nginx/access.log
+```console
+$ kubectl -n nginx-example exec $POD_NAME -c nginx -- rm /var/log/nginx/access.log
 kubectl -n nginx-example exec $POD_NAME -c nginx -- ls -al /var/log/nginx/
 
 total 24
@@ -266,7 +248,7 @@ drwxr-xr-x 3 root root  4096 Sep 26 07:10 .
 drwxr-xr-x 1 root root  4096 Jan 27  2015 ..
 -rw-r--r-- 1 root root     0 Sep 26 06:54 error.log
 drwx------ 2 root root 16384 Sep 26 06:54 lost+found
-</code></pre>
+```
 
 ### Restoring the Volume
 
@@ -332,7 +314,8 @@ kubectl -n nginx-example exec $POD_NAME -c nginx -- cat /var/log/nginx/access.lo
 
 You should have a result like this:
 
-<pre class="console"><code>$ kubectl -n nginx-example scale deployment/nginx-deployment --replicas=0
+```console
+$ kubectl -n nginx-example scale deployment/nginx-deployment --replicas=0
 kubectl -n nginx-example delete pvc nginx-logs
 deployment.apps/nginx-deployment scaled
 persistentvolumeclaim "nginx-logs" deleted
@@ -373,7 +356,7 @@ $ kubectl -n nginx-example exec $POD_NAME -c nginx -- cat /var/log/nginx/access.
 
 10.2.0.0 - - [26/Sep/2022:06:56:32 +0000] "HEAD / HTTP/1.1" 200 0 "-" "curl/7.64.1" "-"
 141.94.164.46 - - [26/Sep/2022:06:56:33 +0000] "HEAD / HTTP/1.1" 200 0 "-" "curl/7.64.1" "-"
-</code></pre>
+```
 
 ## Clean-up
 

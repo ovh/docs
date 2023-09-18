@@ -4,28 +4,6 @@ excerpt: Find out how to install a FaaS platform on OVHcloud Managed Kubernetes 
 updated: 2020-05-12
 ---
 
-<style>
- pre {
-     font-size: 14px;
- }
- pre.console {
-   background-color: #300A24; 
-   color: #ccc;
-   font-family: monospace;
-   padding: 5px;
-   margin-bottom: 5px;
- }
- pre.console code {
-   border: solid 0px transparent;
-   font-family: monospace !important;
-   font-size: 0.75em;
-   color: #ccc;
- }
- .small {
-     font-size: 0.75em;
- }
-</style>
-
 In this tutorial we are going to guide you with the install of a *Functions as a Service* (FaaS) platform on OVHcloud Managed Kubernetes service. 
 
 The question of *how to install a FaaS platform on OVH* comes recurrently, and in this tutorial you will get some answers with a quick and painless solution: install the FaaS platform over OVHcloud Managed Kubernetes. 
@@ -135,7 +113,8 @@ kubectl --namespace=openfaas get deployments -l "release=openfaas, app=openfaas"
 
 If it's working you should see the list of OpenFaaS `deployment` objects, marked as available:
 
-<pre class="console"><code>$ kubectl --namespace=openfaas get deployments -l "release=openfaas, app=openfaas"
+```console
+$ kubectl --namespace=openfaas get deployments -l "release=openfaas, app=openfaas"
 NAME           DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   AGE
 alertmanager   1         1         1            1           33s
 faas-idler     1         1         1            1           33s
@@ -143,7 +122,7 @@ gateway        1         1         1            1           33s
 nats           1         1         1            1           33s
 prometheus     1         1         1            1           33s
 queue-worker   1         1         1            1           33s
-</code></pre>
+```
 
 ## Install the FaaS CLI and log into the API Gateway
 
@@ -162,10 +141,12 @@ kubectl get svc -n openfaas gateway-external -o wide
 > [!warning]
 > At this moment you can get an `EXTERNAL-IP &lt;none>`, or `EXTERNAL-IP &lt;PENDING>`.
 >
-> <pre class="console"><code>$ kubectl get svc -n openfaas gateway-external -o wide
+> ```console
+$ kubectl get svc -n openfaas gateway-external -o wide
 > NAME               TYPE           CLUSTER-IP    EXTERNAL-IP                        PORT(S)          AGE    
 > gateway-external   LoadBalancer   10.3.xxx.yyy  PENDING                           8080:30012/TCP   10s   
-> </code></pre>
+> 
+```
 >
 >The problem come from the `LoadBalancer` creation, that is asynchronous, and the provisioning of the load balancer can take several minutes.
 > Please try again in a few minutes, and you will normally see the newly assigned URL.
@@ -191,7 +172,8 @@ By default, there is no function installed on your OpenFaaS platform, as you can
 
 In my own deployment (URLs and IP changed), the precedent operations gave:
 
-<pre class="console"><code>$ kubectl get svc -n openfaas gateway-external -o wide
+```console
+$ kubectl get svc -n openfaas gateway-external -o wide
 NAME               TYPE           CLUSTER-IP     EXTERNAL-IP   PORT(S)          AGE     SELECTOR
 gateway-external   LoadBalancer   10.3.xxx.yyy   xy.xy.xy.xy   8080:30012/TCP   9m10s   app=gateway
 
@@ -228,7 +210,7 @@ Provider
 
 $ ./faas-cli list
 Function                      	Invocations    	Replicas
-</code></pre>
+```
 
 ## Deploying and invoking functions
 
@@ -242,7 +224,8 @@ Let's use [some sample functions](https://raw.githubusercontent.com/openfaas/faa
 
 Doing a `faas-cli list` command now will show the deployed functions:
 
-<pre class="console"><code>$ ./faas-cli list
+```console
+$ ./faas-cli list
 Function                      	Invocations    	Replicas
 base64                        	0              	1    
 echoit                        	0              	1    
@@ -250,7 +233,7 @@ hubstats                      	0              	1
 markdown                      	0              	1    
 nodeinfo                      	0              	1    
 wordcount                     	0              	1    
-</code></pre>
+```
 
 Let's invoke one of those functions, for example `wordcount` (a function that takes the syntax of the unix [`wc`](https://en.wikipedia.org/wiki/Wc_(Unix)){.external} command, giving us the number of lines, words and characters on the input data):
 
@@ -258,16 +241,17 @@ Let's invoke one of those functions, for example `wordcount` (a function that ta
 echo 'I love when a plan comes together' | ./faas-cli invoke wordcount
 ```
 
-<pre class="console"><code>
+```console
 $ echo 'I love when a plan comes together' | ./faas-cli invoke wordcount
        1         7        34
-</code></pre>
+```
 
 ## Invoking a function without the CLI
 
 You can use the `faas-cli describe` command to get the public URL of your function, and then call it directly with your favorite HTTP library (or the good old `curl`):
 
-<pre class="console"><code>$ ./faas-cli describe wordcount
+```console
+$ ./faas-cli describe wordcount
 Name:                wordcount
 Status:              Ready
 Replicas:            1
@@ -282,7 +266,7 @@ Annotations:         prometheus.io.scrape : false
 
 $ curl -X POST --data-binary "I love when a plan comes together" "http://xxxxx657xx.lb.c1.gra.k8s.ovh.net:8080/function/wordcount"
        0         7        33
-</code></pre>
+```
 
 ## Containers everywhere...
 

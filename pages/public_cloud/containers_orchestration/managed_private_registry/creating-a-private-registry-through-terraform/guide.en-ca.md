@@ -8,28 +8,6 @@ category_l3: Getting started
 updated: 2023-03-14
 ---
 
-<style>
- pre {
-     font-size: 14px;
- }
- pre.console {
-   background-color: #300A24;
-   color: #ccc;
-   font-family: monospace;
-   padding: 5px;
-   margin-bottom: 5px;
- }
- pre.console code {
-   border: solid 0px transparent;
-   font-family: monospace !important;
-   font-size: 0.75em;
-   color: #ccc;
- }
- .small {
-     font-size: 0.75em;
- }
-</style>
-
 ## Objective
 
 Creating an OVHcloud Managed Private Registry (Harbor) through the OVHcloud Control Panel is cool but do you know you can deploy a private registry programmatically, with Terraform?
@@ -375,7 +353,8 @@ terraform output password
 
 You should see the following:
 
-<pre class="console"><code>$ terraform output registry-url
+```console
+$ terraform output registry-url
 "https://1ab234c5.gra7.container-registry.ovh.net"
 
 $ terraform output user
@@ -383,7 +362,7 @@ $ terraform output user
 
 $ terraform output password
 "mygeneratedpassword"
-</code></pre>
+```
 
 Now go to the private registry URL and login with the credentials you have retrieved.
 

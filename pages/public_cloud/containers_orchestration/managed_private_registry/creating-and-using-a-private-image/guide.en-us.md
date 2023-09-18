@@ -4,27 +4,6 @@ excerpt: 'Find out how to create and use an image stored in an OVHcloud Managed 
 updated: 2022-04-13
 ---
 
-<style>
- pre {
-     font-size: 14px;
- }
- pre.console {
-   background-color: #300A24; 
-   color: #ccc;
-   font-family: monospace;
-   padding: 5px;
-   margin-bottom: 5px;
- }
- pre.console code {
-   b   color: #ccc;
-   font-family: monospace !important;
-   font-size: 0.75em;
- }
- .small {
-     font-size: 0.75em;
- }
-</style>
-
 ## Objective
 
 OVHcloud Managed Private Registry service provides you a managed, authenticated Docker registry where you can privately store your Docker images. This guide will explain how to create a Docker image, store it in the OVHcloud Managed Private Registry service and using it from a Docker client.
@@ -71,13 +50,6 @@ COPY ovh.svg /usr/share/nginx/html/ovh.svg
 <html>
   <head>
     <title>OVHcloud K8S</title>
-    <style>
-      .title {
-      font-size: 3em;
-      padding: 2em;
-      text-align: center;
-      }
-    </style>
   </head>
   <body>
     <div class="title">
@@ -108,7 +80,8 @@ docker build --tag [YOUR_PRIVATE_REGISTRY_URL]/[YOUR_PROJECT]/hello-ovh:1.0.0 .
 
   Here is the result of running the command for my private registry in the `private` project:
 
-<pre class="console"><code>$ docker build --tag 8093ff7x.gra5.container-registry.ovh.net/private/hello-ovh:1.0.0 .
+```console
+$ docker build --tag 8093ff7x.gra5.container-registry.ovh.net/private/hello-ovh:1.0.0 .
 Sending build context to Docker daemon  14.34kB
 Step 1/3 : FROM nginx:1.15-alpine
 1.15-alpine: Pulling from library/nginx
@@ -125,7 +98,7 @@ Step 3/3 : COPY ovh.svg /usr/share/nginx/html/ovh.svg
 ---> 3f803b45da18
 Successfully built 3f803b45da18
 Successfully tagged 8093ff7x.gra5.container-registry.ovh.net/private/hello-ovh:1.0.0
-</code></pre>
+```
 
 - Login to your private registry, using a user with write rights to the project (*private-user* if you followed the [managing users and projects](/pages/public_cloud/containers_orchestration/managed_private_registry/managing-users-and-projects) guide)
 
@@ -135,11 +108,12 @@ docker login [YOUR_PRIVATE_REGISTRY_URL]
 
   In my private registry:
 
-<pre class="console"><code>$ docker login 8093ff7x.gra5.container-registry.ovh.net
+```console
+$ docker login 8093ff7x.gra5.container-registry.ovh.net
 Username: private-user
 Password: 
 Login Succeeded
-</code></pre>
+```
 
 - Upload the image to the private registry
 
@@ -149,7 +123,8 @@ docker push [YOUR_PRIVATE_REGISTRY_URL]/[YOUR_PROJECT]/hello-ovh:1.0.0
 
   In my private registry example:
 
-<pre class="console"><code>$ docker push 8093ff7x.gra5.container-registry.ovh.net/private/hello-ovh:1.0.0
+```console
+$ docker push 8093ff7x.gra5.container-registry.ovh.net/private/hello-ovh:1.0.0
 The push refers to repository [8093ff7x.gra5.container-registry.ovh.net/private/hello-ovh]
 369ed87ef8b1: Pushed 
 d2220a0eb85b: Pushed 
@@ -158,7 +133,7 @@ bf381a670956: Pushed
 a61993362baf: Pushed 
 f1b5933fe4b5: Pushed 
 1.0.0: digest: sha256:f5a6a8f0d7c95cf3926b504a7949c8575e478106b59d8913ab947729aa5bd075 size: 1568
-</code></pre>
+```
 
 If you go to your Harbor UI, you will see that a `hello-ovh` repository in the  *private* project:
 
@@ -178,7 +153,8 @@ docker pull [YOUR_PRIVATE_REGISTRY_URL]/[YOUR_PROJECT]/hello-ovh:1.0.0
 
 In my private registry example:
 
-<pre class="console"><code>$ docker pull 8093ff7x.gra5.container-registry.ovh.net/private/hello-ovh:1.0.0
+```console
+$ docker pull 8093ff7x.gra5.container-registry.ovh.net/private/hello-ovh:1.0.0
 1.0.0: Pulling from private/hello-ovh
 e7c96db7181b: Already exists 
 264026bbe255: Already exists 
@@ -188,7 +164,7 @@ a71634c55d29: Already exists
 5df2876c6416: Pull complete 
 Digest: sha256:f5a6a8f0d7c95cf3926b504a7949c8575e478106b59d8913ab947729aa5bd075
 Status: Downloaded newer image for 8093ff7x.gra5.container-registry.ovh.net/private/hello-ovh:1.0.0
-</code></pre>
+```
 
 And then you can run it:
 
@@ -198,9 +174,10 @@ docker run -d -p 80:80 [YOUR_PRIVATE_REGISTRY_URL]/[YOUR_PROJECT]/hello-ovh:1.0.
 
 In my private registry example:
 
-<pre class="console"><code>$ docker run -d -p 8080:80 8093ff7x.gra5.container-registry.ovh.net/private/hello-ovh:1.0.0
+```console
+$ docker run -d -p 8080:80 8093ff7x.gra5.container-registry.ovh.net/private/hello-ovh:1.0.0
 c18f071c3c8c10ca636ed9be84878c12f3a270b6def131eb756f69435b978da1
-</code></pre>
+```
 
 And now you can test it with the `curl` command:
 
@@ -212,13 +189,6 @@ $ curl localhost:8080
 <head>
 <title>OVH K8S</title>
 </head>
-<style>
-.title {
-font-size: 3em;
-padding: 2em;
-text-align: center;
-}
-</style>
 <body>
 <div class="title">
 <p>Hello from Private Registry!</p>

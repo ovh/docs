@@ -4,28 +4,6 @@ excerpt: Find out how to install Knative on OVHcloud Managed Kubernetes and depl
 updated: 2023-01-02
 ---
 
-<style>
- pre {
-     font-size: 14px;
- }
- pre.console {
-   background-color: #300A24; 
-   color: #ccc;
-   font-family: monospace;
-   padding: 5px;
-   margin-bottom: 5px;
- }
- pre.console code {
-   border: solid 0px transparent;
-   font-family: monospace !important;
-   font-size: 0.75em;
-   color: #ccc;
- }
- .small {
-     font-size: 0.75em;
- }
-</style>
-
 ## Objective
 
 [Knative](https://knative.dev) is a platform to deploy and manage Serverless applications on Kubernetes.
@@ -80,7 +58,8 @@ kn version
 
 Here is an example of the result:
 
-<pre class="console"><code>$ kn version
+```console
+$ kn version
 Version:      v0.26.0
 Build Date:   2021-09-22T09:11:17Z
 Git Revision: 61b8a754
@@ -90,7 +69,7 @@ Supported APIs:
 * Eventing
   - sources.knative.dev/v1 (knative-eventing v0.26.0)
   - eventing.knative.dev/v1 (knative-eventing v0.26.0)
-</code></pre>
+```
 
 ### Installing Knative
 
@@ -106,7 +85,8 @@ kubectl apply -f https://github.com/knative/serving/releases/latest/download/ser
 
 Here is an example of the result:
 
-<pre class="console"><code>$ kubectl apply -f https://github.com/knative/serving/releases/latest/download/serving-crds.yaml
+```console
+$ kubectl apply -f https://github.com/knative/serving/releases/latest/download/serving-crds.yaml
 customresourcedefinition.apiextensions.k8s.io/certificates.networking.internal.knative.dev created
 customresourcedefinition.apiextensions.k8s.io/configurations.serving.knative.dev created
 customresourcedefinition.apiextensions.k8s.io/clusterdomainclaims.networking.internal.knative.dev created
@@ -119,7 +99,7 @@ customresourcedefinition.apiextensions.k8s.io/routes.serving.knative.dev created
 customresourcedefinition.apiextensions.k8s.io/serverlessservices.networking.internal.knative.dev created
 customresourcedefinition.apiextensions.k8s.io/services.serving.knative.dev created
 customresourcedefinition.apiextensions.k8s.io/images.caching.internal.knative.dev created
-</code></pre>
+```
 
 - Install the core components of Knative Serving by running the command:
 
@@ -129,7 +109,8 @@ kubectl apply -f https://github.com/knative/serving/releases/latest/download/ser
 
 Here is an example of the result:
 
-<pre class="console"><code>$ kubectl apply -f https://github.com/knative/serving/releases/latest/download/serving-core.yaml
+```console
+$ kubectl apply -f https://github.com/knative/serving/releases/latest/download/serving-core.yaml
 namespace/knative-serving created
 clusterrole.rbac.authorization.k8s.io/knative-serving-aggregated-addressable-resolver created
 clusterrole.rbac.authorization.k8s.io/knative-serving-addressable-resolver created
@@ -190,7 +171,7 @@ secret/domainmapping-webhook-certs created
 validatingwebhookconfiguration.admissionregistration.k8s.io/validation.webhook.domainmapping.serving.knative.dev created
 validatingwebhookconfiguration.admissionregistration.k8s.io/validation.webhook.serving.knative.dev created
 secret/webhook-certs created
-</code></pre>
+```
 
 #### Installing a networking layer (Ingress Gateway)
 
@@ -213,10 +194,11 @@ kubectl patch configmap/config-network \
 
 As you can see, a new `kourier-system` namespace is created with a deployment:
 
-<pre class="console"><code>$ kubectl get deploy -n kourier-system
+```console
+$ kubectl get deploy -n kourier-system
 NAME                     READY   UP-TO-DATE   AVAILABLE   AGE
 3scale-kourier-gateway   1/1     1            1           104m
-</code></pre>
+```
 
 Fetch the External IP address or CNAME by running the command:
 
@@ -226,10 +208,11 @@ kubectl get service kourier -n kourier-system
 
 Here is an example of the result:
 
-<pre class="console"><code>$ kubectl get service kourier -n kourier-system 
+```console
+$ kubectl get service kourier -n kourier-system 
 NAME      TYPE           CLUSTER-IP    EXTERNAL-IP      PORT(S)                      AGE
 kourier   LoadBalancer   10.3.65.167   135.125.83.166   80:31357/TCP,443:31782/TCP   2m19s
-</code></pre>
+```
 
     Warning: As the `LoadBalancer` creation is asynchronous, and the provisioning of the load balancer can take several minutes, you will surely get a `pending` state for the `EXTERNAL-IP` field. Please try again in a few minutes to get the external IP. 
 
@@ -245,7 +228,8 @@ kubectl get pods -n knative-serving
 
 Here is an example of the result:
 
-<pre class="console"><code>$ kubectl get pods -n knative-serving
+```console
+$ kubectl get pods -n knative-serving
 NAME                                      READY   STATUS    RESTARTS   AGE
 activator-68b7698d74-hwrj6                1/1     Running   0          33m
 autoscaler-6c8884d6ff-6g6pv               1/1     Running   0          33m
@@ -254,7 +238,7 @@ domain-mapping-57fdbf97b-6vdft            1/1     Running   0          33m
 domainmapping-webhook-66c5f7d596-l97d9    1/1     Running   0          33m
 net-kourier-controller-6f68cbb74f-cgqvx   1/1     Running   0          107s
 webhook-7df8fd847b-rm9q2                  1/1     Running   0          33m
-</code></pre>
+```
 
 And we can check the Knative Serving installed version:
 
@@ -264,9 +248,10 @@ kubectl get namespace knative-serving -o 'go-template={{index .metadata.labels "
 
 Here is an example of the result:
 
-<pre class="console"><code>$ kubectl get namespace knative-serving -o 'go-template={{index .metadata.labels "app.kubernetes.io/version"}}'
+```console
+$ kubectl get namespace knative-serving -o 'go-template={{index .metadata.labels "app.kubernetes.io/version"}}'
 v1.8.3
-</code></pre>
+```
 
 Knative Serving version 1.8.3 is correctly deployed in our cluster, Cool!
 
@@ -309,9 +294,10 @@ kubectl create namespace knative-apps
 
 Here is an example of the result:
 
-<pre class="console"><code>$ kubectl create namespace knative-apps
+```console
+$ kubectl create namespace knative-apps
 namespace/knative-apps created
-</code></pre>
+```
 
 Now, let's create our first Knative Service file named `service.yaml`:
 
@@ -339,37 +325,42 @@ kubectl apply -f service.yaml -n knative-apps
 
 Here is an example of the result:
 
-<pre class="console"><code>$ kubectl apply -f service.yaml -n knative-apps
+```console
+$ kubectl apply -f service.yaml -n knative-apps
 service.serving.knative.dev/hello-world created
-</code></pre>
+```
 
 Under the hood, Knative created several Knative and Kubernetes components:
 
 ![Knative Serving components](images/knative-serving.png)
 
 A deployment:
-<pre class="console"><code>$ kubectl get deployment -n knative-apps
+```console
+$ kubectl get deployment -n knative-apps
 NAME                           READY   UP-TO-DATE   AVAILABLE   AGE
 hello-world-00001-deployment   1/1     1            1           8s
-</code></pre>
+```
 
 A pod:
-<pre class="console"><code>$ kubectl get pod -n knative-apps
+```console
+$ kubectl get pod -n knative-apps
 NAME                                            READY   STATUS    RESTARTS   AGE
 hello-world-00001-deployment-797f65cdd9-h47sk   2/2     Running   0          9s
-</code></pre>
+```
 
 Services:
-<pre class="console"><code>$ kubectl get svc -n knative-apps
+```console
+$ kubectl get svc -n knative-apps
 NAME                        TYPE           CLUSTER-IP    EXTERNAL-IP                                         PORT(S)                                      AGE
 hello-world                 ExternalName   <none>        kourier-internal.kourier-system.svc.cluster.local   80/TCP                                       9s
 hello-world-00001           ClusterIP      10.3.82.197   <none>                                              80/TCP                                       12s
 hello-world-00001-private   ClusterIP      10.3.0.240    <none>                                              80/TCP,9090/TCP,9091/TCP,8022/TCP,8012/TCP   12s
-</code></pre>
+```
 
 And also Knative service, route and revision:
 
-<pre class="console"><code>$ kn service list -n knative-apps
+```console
+$ kn service list -n knative-apps
 NAME          URL                                           LATEST              AGE   CONDITIONS   READY   REASON
 hello-world   http://hello-world.knative-apps.example.com   hello-world-00001   26m   3 OK / 3     True
 
@@ -380,15 +371,16 @@ hello-world   http://hello-world.knative-apps.example.com   True
 $ kn revision list -n knative-apps
 NAME                SERVICE       TRAFFIC   TAGS   GENERATION   AGE   CONDITIONS   READY   REASON
 hello-world-00001   hello-world   100%             1            26m   3 OK / 4     True
-</code></pre>
+```
 
 As we can see, by default, 100% of the traffic goes to the `hello-world-00001` revision.
 
 Now, we need to retrieve the route URL:
 
-<pre class="console"><code>$ kn service describe hello-world -n knative-apps -o url
+```console
+$ kn service describe hello-world -n knative-apps -o url
 http://hello-world.knative-apps.example.com
-</code></pre>
+```
 
 With this information, and with the Load Balancer external IP, we can test to call our app:
 
@@ -400,13 +392,6 @@ $ curl -H "Host: hello-world.knative-apps.example.com" http://135.125.83.166:80
 <head>
 <title>OVH K8S</title>
 </head>
-<style>
-.title {
-font-size: 3em;
-padding: 2em;
-text-align: center;
-}
-</style>
 <body>
 <div class="title">
 <p>Hello from Kubernetes!</p>
@@ -422,9 +407,10 @@ One of Knative Serving's powers is built-in automatic scaling (autoscaling). Thi
 
 So, if you don't send requests to your application, Pods will be terminated automatically! :-)
 
-<pre class="console"><code>$ kubectl get po -n knative-apps
+```console
+$ kubectl get po -n knative-apps
 No resources found in knative-apps namespace.
-</code></pre>
+```
 
 Cool!
 

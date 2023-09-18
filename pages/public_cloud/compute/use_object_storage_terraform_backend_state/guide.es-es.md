@@ -4,28 +4,6 @@ excerpt: 'Find out how to use an OVHcloud Object Storage as a Terraform Backend 
 updated: 2023-07-31
 ---
 
-<style>
- pre {
-     font-size: 14px;
- }
- pre.console {
-   background-color: #300A24; 
-   color: #ccc;
-   font-family: monospace;
-   padding: 5px;
-   margin-bottom: 5px;
- }
- pre.console code {
-   border: solid 0px transparent;
-   font-family: monospace !important;
-   font-size: 0.75em;
-   color: #ccc;
- }
- .small {
-     font-size: 0.75em;
- }
-</style>
-
 ## Objective
 
 It is possible to store Terraform state on a remote data store/backend like an AWS S3 bucket, a Google Cloud Storage (GCS), etc. but are you aware that you can also store your Terraform states on an OVHcloud Object Storage container?
@@ -125,7 +103,8 @@ This command initializes the backend (remote or local state).
 
 After executing this command, you should obtain a result like this:
 
-<pre class="console"><code>$ terraform init
+```console
+$ terraform init
 
 Initializing the backend...
 
@@ -141,7 +120,7 @@ should now work.
 If you ever set or change modules or backend configuration for Terraform,
 rerun this command to reinitialize your working directory. If you forget, other
 commands will detect it and remind you to do so if necessary.
-</code></pre>
+```
 
 Now you can define your Terraform configuration files and providers and after running the `terraform apply` command, your Terraform state file will be stored in an OVHcloud Object Storage container.
 

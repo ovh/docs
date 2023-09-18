@@ -4,28 +4,6 @@ excerpt: 'Find out how to install Agones on OVHcloud Managed Kubernetes'
 updated: 2022-12-09
 ---
 
-<style>
- pre {
-     font-size: 14px;
- }
- pre.console {
-   background-color: #300A24;
-   color: #ccc;
-   font-family: monospace;
-   padding: 5px;
-   margin-bottom: 5px;
- }
- pre.console code {
-   border: solid 0px transparent;
-   font-family: monospace !important;
-   font-size: 0.75em;
-   color: #ccc;
- }
- .small {
-     font-size: 0.75em;
- }
-</style>
-
 In this tutorial we are going to guide you with the install of [Agones](https://agones.dev){.external} on your OVHcloud Managed Kubernetes Service. Agones is an open-source, multiplayer, dedicated game-server hosting built on Kubernetes.
 
 And to test your install, you will install a [Xonotic](http://www.xonotic.org/){.external} game server and playing some old-school deathmatches...
@@ -89,9 +67,10 @@ kubectl create clusterrolebinding cluster-admin-binding --clusterrole=cluster-ad
 
 Now we have the [Cluster Role Binding](https://kubernetes.io/docs/reference/access-authn-authz/rbac/#rolebinding-and-clusterrolebinding){.external} needed for the installation:
 
-<pre class="console"><code>$ kubectl create clusterrolebinding cluster-admin-binding --clusterrole=cluster-admin --serviceaccount=kube-system:default
+```console
+$ kubectl create clusterrolebinding cluster-admin-binding --clusterrole=cluster-admin --serviceaccount=kube-system:default
 clusterrolebinding.rbac.authorization.k8s.io/cluster-admin-binding created
-</code></pre>
+```
 
 ## Installing the Agones chart
 
@@ -109,7 +88,8 @@ helm install my-agones --namespace agones-system --create-namespace agones/agone
 
 After some moments, Agones should we installed:
 
-<pre class="console"><code>$ helm repo add agones https://agones.dev/chart/stable
+```console
+$ helm repo add agones https://agones.dev/chart/stable
 "agones" has been added to your repositories
 
 $ helm install my-agones --namespace agones-system --create-namespace agones/agones
@@ -133,7 +113,8 @@ Finally don't forget to explore our documentation and usage guides on how to dev
  - Integrating the Game Server SDK (https://agones.dev/site/docs/guides/client-sdks/)
  - GameServer Health Checking (https://agones.dev/site/docs/guides/health-checking/)
  - Accessing Agones via the Kubernetes API (https://agones.dev/site/docs/guides/access-api/)
- </code></pre>
+ 
+```
 
 > [!warning]
 > The installation we have just done isn't suited for production, as the official install instructions recommend running Agones and the game servers in separate, dedicated pools of nodes.
@@ -149,7 +130,8 @@ kubectl get --namespace agones-system pods
 
 If everything is ok, you should see an `agones-controller` pod with a `Running` status:
 
-<pre class="console"><code>$ kubectl get --namespace agones-system pods
+```console
+$ kubectl get --namespace agones-system pods
 
 NAME                                READY   STATUS    RESTARTS   AGE
 agones-allocator-6db787b757-4vd7r   1/1     Running   0          95s
@@ -158,7 +140,7 @@ agones-allocator-6db787b757-w9mjw   1/1     Running   0          95s
 agones-controller-fc95bcbd7-8zv4q   1/1     Running   0          95s
 agones-ping-6fd4dd9b48-r49qq        1/1     Running   0          95s
 agones-ping-6fd4dd9b48-w6pzd        1/1     Running   0          95s
-</code></pre>
+```
 
 You can also see more details using:
 
@@ -168,7 +150,8 @@ kubectl describe --namespace agones-system pods
 
 Looking at the `agones-controller` description, you should see something like:
 
-<pre class="console"><code>$ kubectl describe --namespace agones-system pods
+```console
+$ kubectl describe --namespace agones-system pods
 Name:                 agones-controller-fc95bcbd7-8zv4q
 Namespace:            agones-system
 [...]
@@ -178,7 +161,7 @@ Conditions:
   Ready             True
   ContainersReady   True
   PodScheduled      True
-</code></pre>
+```
 
 Where all the `Conditions` should have status `True`.
 
@@ -196,9 +179,10 @@ kubectl create -f https://raw.githubusercontent.com/googleforgames/agones/releas
 
 This command installs Xonotic:
 
-<pre class="console"><code>$kubectl create -f https://raw.githubusercontent.com/googleforgames/agones/release-1.27.0/examples/xonotic/gameserver.yaml
+```console
+$kubectl create -f https://raw.githubusercontent.com/googleforgames/agones/release-1.27.0/examples/xonotic/gameserver.yaml
 gameserver.agones.dev/xonotic created
-</code></pre>
+```
 
 The game server deployment can take some moments, so we need to wait until its status is `Ready` or `Unhealthy` before using it. We can fetch the status with:
 
@@ -208,11 +192,12 @@ kubectl get gameserver
 
 We wait until the fetch gives a `Ready` or `Unhealthy` status on our game server:
 
-<pre class="console"><code>$ kubectl get gameserver
+```console
+$ kubectl get gameserver
 
 NAME      STATE   ADDRESS         PORT   NODE                                         AGE
 xonotic   Ready   51.83.xxx.yyy   7410   nodepool-f636da5d-3d0d-481d-aa-node-f4d042   24s
-</code></pre>
+```
 
 When the game server is ready, we also get the address and the port we should use to connect to our deathmatch game (in my example, `51.83.xxx.yyy:7410`).
 
@@ -242,14 +227,16 @@ kubectl get pods
 
 You will see that your game server is running in a pod called `xonotic`:
 
-<pre class="console"><code>$ kubectl get pods
+```console
+$ kubectl get pods
 NAME      READY   STATUS    RESTARTS   AGE
 xonotic   2/2     Running   0          2m28s
-</code></pre>
+```
 
 You can then use `kubectl logs` on it. In the pod there are two containers, the main `xonotic` one and a Agones <em>sidecar</em>, so we must specify that we want the logs of the `xonotic` container:
 
-<pre class="console"><code>$ kubectl logs xonotic xonotic
+```console
+$ kubectl logs xonotic xonotic
 >>> Connecting to Agones with the SDK
 >>> Starting health checking
 >>> Starting wrapper for Xonotic!
@@ -279,7 +266,7 @@ Server listening on address 0.0.0.0:26000
 >>> Found 'listening' statement: 4
 >>> Moving to READY: Server listening on address [0:0:0:0:0:0:0:0]:26000
 Server listening on address [0:0:0:0:0:0:0:0]:26000
-</code></pre>
+```
 
 ### Add some friends
 

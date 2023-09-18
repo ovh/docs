@@ -4,27 +4,6 @@ excerpt: 'Find out how to deploy a "Hello World" application on an OVHcloud Mana
 updated: 2023-06-06
 ---
 
-<style>
- pre {
-     font-size: 14px;
- }
- pre.console {
-   background-color: #300A24;
-   color: #ccc;
-   font-family: monospace;
-   padding: 5px;
-   margin-bottom: 5px;
- }
- pre.console code {
-   b   font-family: monospace !important;
-   font-size: 0.75em;
-   color: #ccc;
- }
- .small {
-     font-size: 0.75em;
- }
-</style>
-
 ## Objective
 
 OVHcloud Managed Kubernetes service provides you with Kubernetes clusters without the hassle of installation or operation. This guide will explain how to deploy a simple *Hello World* application on a OVHcloud Managed Kubernetes cluster.
@@ -101,10 +80,11 @@ kubectl apply -f hello.yml -n hello-app
 
 After applying the YAML file, a new `hello-world` service and the corresponding `hello-world-deployment` deployment are created in the `hello-app` namespace:
 
-<pre class="console"><code>$ kubectl apply -f hello.yml -n hello-app
+```console
+$ kubectl apply -f hello.yml -n hello-app
 service/hello-world created
 deployment.apps/hello-world-deployment created
-</code></pre>
+```
 
 > [!primary]
 > The application you have just deployed is a simple Nginx server with a single static *Hello World* page. 
@@ -120,10 +100,11 @@ kubectl get pods -n hello-app -l app=hello-world
 
 You should see your newly created pod:
 
-<pre class="console"><code>$ kubectl get pods -n hello-app -l app=hello-world
+```console
+$ kubectl get pods -n hello-app -l app=hello-world
 NAME                                           READY     STATUS    RESTARTS   AGE
 hello-world-deployment-d98c6464b-7jqvg         1/1       Running   0          47s
-</code></pre>
+```
 
 > [!primary]
 > In this tutorial, we chose to create a special namespace to isolate our application.
@@ -140,10 +121,11 @@ kubectl get deploy -n hello-app -l app=hello-world
 
 And you will see the `hello-service-deployment`:
 
-<pre class="console"><code>$ kubectl get deploy -n hello-app -l app=hello-world
+```console
+$ kubectl get deploy -n hello-app -l app=hello-world
 NAME                          DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   AGE
 hello-world-deployment        1         1         1            1           1m
-</code></pre>
+```
 
 ### Step 4 - List the services
 
@@ -155,10 +137,11 @@ kubectl get services -n hello-app -l app=hello-world
 
 You should see your newly created service:
 
-<pre class="console"><code>$ kubectl get services -n hello-app -l app=hello-world
+```console
+$ kubectl get services -n hello-app -l app=hello-world
 NAME          TYPE           CLUSTER-IP     EXTERNAL-IP    PORT(S)        AGE
 hello-world   LoadBalancer   10.3.234.211   51.178.69.47   80:31885/TCP   6m54s
-</code></pre>
+```
 
 > [!primary]
 > In case you get `<pending>` under `EXTERNAL-IP`, it may take a minute or two to provision the LoadBalancer, so try again in a few moments.
@@ -167,11 +150,12 @@ hello-world   LoadBalancer   10.3.234.211   51.178.69.47   80:31885/TCP   6m54s
 
 Retrieve the URL of the `hello-world` application:
 
-<pre class="console"><code>$ export SERVICE_URL=$(kubectl get svc hello-world -n hello-app -o jsonpath='{.status.loadBalancer.ingress[].ip}')
+```console
+$ export SERVICE_URL=$(kubectl get svc hello-world -n hello-app -o jsonpath='{.status.loadBalancer.ingress[].ip}')
 
 $ echo "http://$SERVICE_URL/"
 http://135.125.83.30/
-</code></pre>
+```
 
 Copy/paste the URL in your browser to see your new running `hello-world` application:
 
@@ -193,13 +177,6 @@ curl $SERVICE_URL
 <head>
 <title>OVH K8S</title>
 </head>
-<style>
-.title {
-font-size: 3em;
-padding: 2em;
-text-align: center;
-}
-</style>
 <body>
 <div class="title">
 <p>Hello from Kubernetes!</p>
@@ -224,7 +201,8 @@ kubectl delete ns hello-app
 
 If you list the services, the deployments and the pods, you will see that `hello-world` doesn't exist anymore:
 
-<pre class="console"><code>$ kubectl delete service hello-world -n hello-app
+```console
+$ kubectl delete service hello-world -n hello-app
 namespace "hello-app" deleted
 
 $ kubectl get services -l app=hello-world -n hello-app
@@ -235,7 +213,7 @@ No resources found in hello-app namespace.
 
 $ kubectl get pods -n hello-app -l app=hello-world
 No resources found in hello-app namespace.
-</code></pre>
+```
 
 ## Go further
 

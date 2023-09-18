@@ -4,27 +4,6 @@ excerpt: Backing-up Persistent Volumes using Stash
 updated: 2022-09-26
 ---
 
-<style>
- pre {
-     font-size: 14px;
- }
- pre.console {
-   background-color: #300A24;
-   color: #ccc;
-   font-family: monospace;
-   padding: 5px;
-   margin-bottom: 5px;
- }
- pre.console code {
-   b   font-family: monospace !important;
-   font-size: 0.75em;
-   color: #ccc;
- }
- .small {
-     font-size: 0.75em;
- }
-</style>
-
 In this tutorial, we are using [Stash](https://stash.run/){.external} to backup and restore persistent volumes on an OVHcloud Managed Kubernetes cluster.
 
 Stash is an open source tool to safely backup and restore, perform disaster recovery, and migrate Kubernetes persistent volumes.
@@ -66,9 +45,10 @@ source <user_name>-openrc.sh
 
 The shell will ask you for your OpenStack password:
 
-<pre class="console"><code>$ source &lt;user_name>-openrc.sh
+```console
+$ source &lt;user_name>-openrc.sh
 Please enter your OpenStack Password for project &lt;project_name> as user &lt;user_name>:
-</code></pre>
+```
 
 ### Create EC2 credentials
 
@@ -82,7 +62,8 @@ openstack ec2 credentials create
 
 Please write down the **access** and **secret** parameters:
 
-<pre class="console"><code>$ openstack ec2 credentials create
+```console
+$ openstack ec2 credentials create
 +------------+----------------------------------------------------------------------------------------------------------------------------+
 | Field      | Value
 +------------+----------------------------------------------------------------------------------------------------------------------------+
@@ -92,7 +73,8 @@ Please write down the **access** and **secret** parameters:
 | secret     | 925d5fcfcd9f436d8ffcb20548cc53a2
 | trust_id   | None
 | user_id    | d74d05ff121b44bea9216495e7f0df61
-+------------+----------------------------------------------------------------------------------------------------------------------------+</code></pre>
++------------+----------------------------------------------------------------------------------------------------------------------------+
+```
 
 ### Configure awscli client
 
@@ -145,7 +127,8 @@ kubectl create secret generic -n nginx-example s3-secret \
 
 In my case:
 
-<pre class="console"><code>$ kubectl create namespace nginx-example
+```console
+$ kubectl create namespace nginx-example
 namespace/nginx-example created
 
 $ echo -n 'xxxxxxxxxxxxxxxxxxx' > AWS_ACCESS_KEY_ID
@@ -159,7 +142,7 @@ $ kubectl create secret generic -n nginx-example s3-secret \
 >     --from-file=./AWS_ACCESS_KEY_ID \
 >     --from-file=./AWS_SECRET_ACCESS_KEY
 secret/s3-secret created
-</code></pre>
+```
 
 ---
 
@@ -198,7 +181,8 @@ helm install stash appscode/stash          \
 
 In my case:
 
-<pre class="console"><code>$ helm repo add appscode https://charts.appscode.com/stable/
+```console
+$ helm repo add appscode https://charts.appscode.com/stable/
 
 "appscode" has been added to your repositories
 
@@ -239,7 +223,7 @@ NOTES:
 Get the Stash operator pods by running the following command:
 
   kubectl --namespace kube-system get pods
-</code></pre>
+```
 
 ### Verify installation
 
@@ -251,10 +235,11 @@ kubectl get pods -A -l app.kubernetes.io/name=stash-community
 
 If everything is OK, you should get a `stash-stash-community` pod with a status `Running`.
 
-<pre class="console"><code>kubectl get pods -A -l app.kubernetes.io/name=stash-community
+```console
+kubectl get pods -A -l app.kubernetes.io/name=stash-community
 NAMESPACE     NAME                                     READY   STATUS    RESTARTS   AGE
 kube-system   stash-stash-community-84b7f84b7f-ctzv7   2/2     Running   0          35s
-</code></pre>
+```
 
 Now, to confirm CRD groups have been registered by the operator, run the following command:
 
@@ -264,7 +249,8 @@ kubectl get crd | grep stash
 
 You should see a list of the CRD groups:
 
-<pre class="console"><code>$ kubectl get crd | grep stash
+```console
+$ kubectl get crd | grep stash
 
 backupblueprints.stash.appscode.com                   2021-12-21T13:36:47Z
 backupconfigurations.stash.appscode.com               2021-12-21T13:36:46Z
@@ -276,7 +262,7 @@ restics.stash.appscode.com                            2021-12-21T13:36:46Z
 restorebatches.stash.appscode.com                     2021-12-21T13:36:48Z
 restoresessions.stash.appscode.com                    2021-12-21T13:36:47Z
 tasks.stash.appscode.com                              2021-12-21T13:24:18Z
-</code></pre>
+```
 
 ### Install Stash `kubectl` plugin
 
@@ -406,7 +392,8 @@ curl -I <EXTERNAL_IP>
 
 In my case:
 
-<pre class="console"><code>$ kubectl apply -f nginx-example.yml
+```console
+$ kubectl apply -f nginx-example.yml
 
 namespace/nginx-example created
 persistentvolumeclaim/nginx-logs created
@@ -444,7 +431,7 @@ Last-Modified: Tue, 23 Dec 2014 16:25:09 GMT
 Connection: keep-alive
 ETag: "54999765-264"
 Accept-Ranges: bytes
-</code></pre>
+```
 
 ### Verify the logs
 
@@ -464,7 +451,8 @@ And then connect to it and see your access logs:
 
 In my case:
 
-<pre class="console"><code>$ kubectl -n nginx-example get pods
+```console
+$ kubectl -n nginx-example get pods
 
 NAME                                READY   STATUS    RESTARTS   AGE
 nginx-deployment-766444c4d9-cxd2p   1/1     Running   0          28m
@@ -472,7 +460,7 @@ nginx-deployment-766444c4d9-cxd2p   1/1     Running   0          28m
 $ kubectl -n nginx-example exec nginx-deployment-766444c4d9-cxd2p -c nginx -- cat /var/log/nginx/access.log
 10.2.2.0 - - [21/Dec/2021:14:16:20 +0000] "HEAD / HTTP/1.1" 200 0 "-" "curl/7.64.1" "-"
 10.2.0.0 - - [21/Dec/2021:14:16:31 +0000] "HEAD / HTTP/1.1" 200 0 "-" "curl/7.64.1" "-"
-</code></pre>
+```
 
 ### Create a `Repository`
 
@@ -506,9 +494,10 @@ kubectl apply -f repository.yaml
 
 In my case:
 
-<pre class="console"><code>$ kubectl apply -f repository.yaml
+```console
+$ kubectl apply -f repository.yaml
 repository.stash.appscode.com/s3-repo created
-</code></pre>
+```
 
 ### Create a `BackupConfiguration`
 
@@ -552,9 +541,10 @@ kubectl apply -f backup-configuration.yaml
 
 In my case:
 
-<pre class="console"><code>$ kubectl apply -f backup-configuration.yaml
+```console
+$ kubectl apply -f backup-configuration.yaml
 backupconfiguration.stash.appscode.com/nginx-backup created
-</code></pre>
+```
 
 ### Verify `CronJob`
 
@@ -568,10 +558,11 @@ kubectl -n nginx-example get cronjob
 
 In my case
 
-<pre class="console"><code>$ kubectl -n nginx-example get cronjob
+```console
+$ kubectl -n nginx-example get cronjob
 NAME                        SCHEDULE      SUSPEND   ACTIVE   LAST SCHEDULE   AGE
 stash-backup-nginx-backup   */5 * * * *   False     0        33s             3m36s
-</code></pre>
+```
 
 ### Wait for `BackupSession`
 
@@ -585,10 +576,11 @@ kubectl -n nginx-example get backupsession
 
 In my case
 
-<pre class="console"><code>$ kubectl -n nginx-example get backupsessions
+```console
+$ kubectl -n nginx-example get backupsessions
 NAME                      INVOKER-TYPE          INVOKER-NAME   PHASE       AGE
 nginx-backup-1586938564   BackupConfiguration   nginx-backup   Succeeded   77s
-</code></pre>
+```
 
 We can see above that the backup session has succeeded. Now, we are going to verify that the `VolumeSnapshot` has been created and the snapshots has been stored in the respective backend.
 
@@ -620,14 +612,15 @@ kubectl -n nginx-example get backupconfiguration nginx-backup
 
 In my case
 
-<pre class="console"><code>$ kubectl -n nginx-example patch backupconfiguration  nginx-backup --type=
+```console
+$ kubectl -n nginx-example patch backupconfiguration  nginx-backup --type=
 "merge" --patch='{"spec": {"paused": true}}'
 backupconfiguration.stash.appscode.com/nginx-backup patched
 
 $ kubectl -n nginx-example get backupconfiguration nginx-backup
 NAME           TASK   SCHEDULE      PAUSED   AGE
 nginx-backup          */1 * * * *   true     7m18s
-</code></pre>
+```
 
 ### Simulate Disaster
 
@@ -645,7 +638,8 @@ kubectl -n nginx-example exec <POD_NAME> -c nginx -- ls -al /var/log/nginx/
 
 In my case:
 
-<pre class="console"><code>$ kubectl -n nginx-example -c nginx exec nginx-deployment-766444c4d9-cxd2p  -- rm /var/log/nginx/access.log
+```console
+$ kubectl -n nginx-example -c nginx exec nginx-deployment-766444c4d9-cxd2p  -- rm /var/log/nginx/access.log
 
 $ kubectl -n nginx-example exec nginx-deployment-766444c4d9-cxd2p -c nginx -- ls -al /var/log/nginx/
 total 32
@@ -653,7 +647,7 @@ drwxr-xr-x 3 root root  4096 Dec 21 13:42 .
 drwxr-xr-x 1 root root  4096 Jan 27  2015 ..
 -rw-r--r-- 1 root root  1369 Dec 21 14:15 error.log
 drwx------ 2 root root 16384 Dec 21 13:42 lost+found
-</code></pre>
+```
 
 ### Create a `RestoreSession`
 
@@ -696,13 +690,14 @@ kubectl -n nginx-example get restoresession  nginx-restore
 
 In my case:
 
-<pre class="console"><code>$ kubectl apply -f ./examples/stash/restore-session.yaml
+```console
+$ kubectl apply -f ./examples/stash/restore-session.yaml
 restoresession.stash.appscode.com/nginx-restore created
 
 $ kubectl get restoresession -n nginx-example nginx-restore -w
 NAME            REPOSITORY   PHASE       AGE
 nginx-restore   s3-repo      Succeeded   50s
-</code></pre>
+```
 
 ### Verify the data is restored
 
@@ -721,7 +716,8 @@ kubectl -n nginx-example exec <POD_NAME> -c nginx -- cat /var/log/nginx/access.l
 
 In my case:
 
-<pre class="console"><code>$ kubectl -n nginx-example get pods
+```console
+$ kubectl -n nginx-example get pods
 NAME                                READY   STATUS    RESTARTS   AGE
 nginx-deployment-766444c4d9-cxd2p   2/2     Running   0          31s
 
@@ -738,7 +734,7 @@ drwxr-xr-x 1 root root  4096 Jan 27  2015 ..
 -rw-r--r-- 1 root root  1686 Dec 21 15:03 access.log
 -rw-r--r-- 1 root root  1369 Dec 21 14:55 error.log
 drwx------ 2 root root 16384 Dec 21 14:55 lost+found
-</code></pre>
+```
 
 ---
 
@@ -758,12 +754,13 @@ helm uninstall stash -n kube-system
 
 In my case:
 
-<pre class="console"><code>$ kubectl delete namespace nginx-example
+```console
+$ kubectl delete namespace nginx-example
 namespace "nginx-example" deleted
 
 $ helm uninstall stash -n kube-system
 release "stash" uninstalled
-</code></pre>
+```
 
 ## Go further
 

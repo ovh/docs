@@ -4,27 +4,6 @@ excerpt: 'Find out how to get the source IP behind the LoadBalancer on OVHcloud 
 updated: 2022-09-14
 ---
 
-<style>
- pre {
-     font-size: 14px;
- }
- pre.console {
-   background-color: #300A24;
-   color: #ccc;
-   font-family: monospace;
-   padding: 5px;
-   margin-bottom: 5px;
- }
- pre.console code {
-   b   font-family: monospace !important;
-   font-size: 0.75em;
-   color: #ccc;
- }
- .small {
-     font-size: 0.75em;
- }
-</style>
-
 ## Before you begin
 
 This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and you have deployed there an application using the OVHcloud Managed Kubernetes LoadBalancer. If you want to know more on those topics, please look at the [using the OVHcloud Managed Kubernetes LoadBalancer](/pages/public_cloud/containers_orchestration/managed_kubernetes/using-lb) documentation.
@@ -62,7 +41,8 @@ kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/mast
 
 It creates the `namespace`, `serviceaccount`, `role` and all the other Kubernetes objects needed for the Ingress Controller, and then it deploys the controller:
 
-<pre class="console"><code>$ kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/master/deploy/static/provider/cloud/deploy.yaml
+```console
+$ kubectl apply -f https://raw.githubusercontent.com/kubernetes/ingress-nginx/master/deploy/static/provider/cloud/deploy.yaml
 namespace/ingress-nginx created
 serviceaccount/ingress-nginx created
 configmap/ingress-nginx-controller created
@@ -81,7 +61,7 @@ job.batch/ingress-nginx-admission-patch created
 role.rbac.authorization.k8s.io/ingress-nginx-admission created
 rolebinding.rbac.authorization.k8s.io/ingress-nginx-admission created
 serviceaccount/ingress-nginx-admission created
-</code></pre>
+```
 
 #### 2. Installing with the Helm chart
 
@@ -91,7 +71,8 @@ helm install ingress-nginx ingress-nginx/ingress-nginx -n ingress-nginx --create
 
 It creates the `namespace`, `serviceaccount`, `role` and all the other Kubernetes objects needed for the Ingress Controller, and then it deploys the controller:
 
-<pre class="console"><code>$ helm install ingress-nginx ingress-nginx/ingress-nginx -n ingress-nginx --create-namespace
+```console
+$ helm install ingress-nginx ingress-nginx/ingress-nginx -n ingress-nginx --create-namespace
 NAME: ingress-nginx
 LAST DEPLOYED: Fri Jun 11 14:13:09 2021
 NAMESPACE: ingress-nginx
@@ -138,7 +119,7 @@ If TLS is enabled for the Ingress, a Secret containing the certificate and key m
     tls.crt: <base64 encoded cert>
     tls.key: <base64 encoded key>
   type: kubernetes.io/tls
-</code></pre>
+```
 
 #### 3. Check your deployment
 
@@ -150,9 +131,11 @@ kubectl get service ingress-nginx-controller -n ingress-nginx
 
 You should see your newly created Ingress service:
 
-<pre class="console"><code>$ kubectl get service ingress-nginx-controller -n ingress-nginx
+```console
+$ kubectl get service ingress-nginx-controller -n ingress-nginx
 NAME                       TYPE           CLUSTER-IP    EXTERNAL-IP       PORT(S)                      AGE
-ingress-nginx-controller   LoadBalancer   10.3.81.157   xxx.xxx.xxx.xxx   80:xxxxx/TCP,443:xxxxx/TCP   4m32s</code></pre>
+ingress-nginx-controller   LoadBalancer   10.3.81.157   xxx.xxx.xxx.xxx   80:xxxxx/TCP,443:xxxxx/TCP   4m32s
+```
 
 > [!warning]
 > As the `LoadBalancer` creation is asynchronous, and the provisioning of the Load Balancer can take several minutes,  you can get a `<pending>` at `EXTERNAL-IP` while the Load Balancer is setting up. In this case, please wait some minutes and try again.
@@ -172,9 +155,10 @@ kubectl get svc ingress-nginx-controller -n ingress-nginx -o jsonpath="{.metadat
 
 You should see something like this:
 
-<pre class="console"><code>$ kubectl get svc ingress-nginx-controller -n ingress-nginx -o jsonpath="{.metadata.annotations.lb\.k8s\.ovh\.net/egress-ips}"
+```console
+$ kubectl get svc ingress-nginx-controller -n ingress-nginx -o jsonpath="{.metadata.annotations.lb\.k8s\.ovh\.net/egress-ips}"
 aaa.aaa.aaa.aaa/32,bbb.bbb.bbb.bbb/32,ccc.ccc.ccc.ccc/32,ddd.ddd.ddd.ddd/32
-</code></pre>
+```
 
 #### 1b. [PRIVATE NETWORK ONLY] Get the list of the egress load balancer IPs
 
@@ -236,10 +220,12 @@ kubectl -n ingress-nginx patch configmap ingress-nginx-controller -p "$(cat patc
 
 You should see the configuration being patched and the controller pod deleted (and recreated):
 
-<pre class="console"><code>$ kubectl -n ingress-nginx patch service  ingress-nginx-controller -p "$(cat patch-ingress-controller-configmap.yml)"
+```console
+$ kubectl -n ingress-nginx patch service  ingress-nginx-controller -p "$(cat patch-ingress-controller-configmap.yml)"
 configmap/ ingress-nginx-controller patched
 $ kubectl -n ingress-nginx patch configmap  ingress-nginx-controller -p "$(cat patch-ingress-controller-configmap.yml)"
-configmap/ ingress-nginx-controller patched</code></pre>
+configmap/ ingress-nginx-controller patched
+```
 
 #### 3. Patching with Helm
 
@@ -284,7 +270,8 @@ helm upgrade ingress-nginx ingress-nginx/ingress-nginx -n ingress-nginx -f value
 ```
 
 You should see your Helm release being upgraded:
-<pre class="console"><code>$ helm upgrade ingress-nginx ingress-nginx/ingress-nginx -n ingress-nginx -f values.yaml
+```console
+$ helm upgrade ingress-nginx ingress-nginx/ingress-nginx -n ingress-nginx -f values.yaml
 Release "ingress-nginx" has been upgraded. Happy Helming!
 NAME: ingress-nginx
 LAST DEPLOYED: Fri Jun 11 17:08:00 2021
@@ -327,7 +314,8 @@ If TLS is enabled for the Ingress, a Secret containing the certificate and key m
   data:
     tls.crt: <base64 encoded cert>
     tls.key: <base64 encoded key>
-  type: kubernetes.io/tls</code></pre>
+  type: kubernetes.io/tls
+```
 
 ### 4. Testing
 
@@ -415,11 +403,13 @@ And deploy it on your cluster:
 kubectl apply -f echo.yaml
 ```
 
-<pre class="console"><code>$ kubectl apply -f echo.yaml
+```console
+$ kubectl apply -f echo.yaml
 namespace/echo created
 deployment.apps/echo-deployment created
 service/echo-service created
-ingress.extensions/echo-ingress created</code></pre>  
+ingress.extensions/echo-ingress created
+```  
 
 Now you can test it using the LoadBalancer URL:
 
