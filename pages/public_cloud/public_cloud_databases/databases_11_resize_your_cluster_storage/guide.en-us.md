@@ -19,14 +19,14 @@ You can increase or decrease the storage of your service at any time using eithe
 
 > [!primary]
 >
-> When changing the storage space of your service, the system checks that you will have at least 20% of the storage space free after the resize operation. Thus, you might not be able to perform a storage space decrease if the new size you request is too close to your current disk space usage.
+> When changing the storage space of your service, the system checks that at least 20% of you total storage space will remain free after the resize operation. As a consequence, you might not be able to perform a storage space decrease if the new size you request is too close to your current disk space usage.
 >
 
 ### How to adjust the storage space using the Control Panel
 
 #### Requirements
 
-- Access to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) 
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) 
 - A [Public Cloud project](https://www.ovhcloud.com/en/public-cloud/) in your OVHcloud account
 
 #### Instructions
@@ -35,7 +35,7 @@ To adjust the storage space of your cluster, log in to the OVHcloud Control Pane
 
 ![Cluster overview](images/cluster-overview.png)
 
-Click `Edit additional storage`{.action} and adjust the storage space of your cluster: Use the slider to either increase or decrease the storage space.
+Click `Edit additional storage`{.action} and adjust the storage space of your cluster. Use the slider to either increase or decrease the storage space.
 
 ![Edit additional storage](images/edit-additional-storage.png)
 
@@ -48,12 +48,12 @@ Click `Edit additional storage`{.action} and adjust the storage space of your cl
 
 #### Instructions
 
-For e.g. MongoDB services, you can perform a storage space increase or decrease using this endpoint:
+As an example, for MongoDB services, you can perform a storage space increase or decrease using this endpoint:
 
 > [!api]
 > @api {PUT} /cloud/project/{serviceName}/database/mongodb/{clusterId}
 
-Other engines using storage space provide similar endpoints, e.g.:
+Other engines using a storage space provide similar endpoints, e.g.:
 
 > [!api]
 > @api {PUT} /cloud/project/{serviceName}/database/postgresql/{clusterId}
