@@ -4,26 +4,6 @@ excerpt: Find out how to get started with a POWER Web Hosting plan
 updated: 2021-02-04
 ---
 
-<style>
- pre {
-     font-size: 14px;
- }
- pre.console {
-   background-color: #300A24; 
-   color: #ccc;
-   font-family: monospace;
-   padding: 5px;
-   margin-bottom: 5px;
- }
- pre.console code {
-   border: solid 0px transparent;
-   font-family: monospace !important;
- }
- .small {
-     font-size: 0.75em;
- }
-</style>
-
 ## Objective
 
 You've subscribed to a Web POWER web hosting plan to deploy **Node.js**, **Python** or **Ruby** applications, and you want to begin developing your project.
@@ -106,7 +86,8 @@ res.end(msg);
 server.listen(port);
 ```
 
-<pre class="console"><code>~ $ vi www/index.js
+```console
+~ $ vi www/index.js
 const http = require('http');
 const port = 3000;
 const msg = `Hello World from NodeJS ${process.version}\n`;
@@ -118,7 +99,8 @@ res.end(msg);
 server.listen(port);
 
 ~ $ mkdir -p www/tmp
-~ $ touch www/tmp/restart.txt</code></pre>
+~ $ touch www/tmp/restart.txt
+```
 
 Then [restart your instance](#restart).
 
@@ -239,10 +221,12 @@ RewriteCond %{ENV:HTTPS} !on
 RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 ```
 
-<pre class="console"><code>~ $ cd www
+```console
+~ $ cd www
 ~/www $ vi .htaccess
 RewriteCond %{ENV:HTTPS} !on
-RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]</code></pre>
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+```
 
 ### Restart your instance <a name="restart"></a>
 
@@ -250,9 +234,11 @@ Each time you modify your application, you should tell the server to restart it.
 
 In your document root you should `touch` the file `tmp/restart.txt`.
 
-<pre class="console"><code>~ $ cd www
+```console
+~ $ cd www
 ~/www$ mkdir tmp
-~/www$ touch tmp/restart.txt</code></pre>
+~/www$ touch tmp/restart.txt
+```
 
 > [!primary]
 >

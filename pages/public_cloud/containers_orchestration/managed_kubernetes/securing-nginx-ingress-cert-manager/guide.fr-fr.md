@@ -4,27 +4,6 @@ excerpt: 'Find out how to secure a Nginx Ingress with cert-manager on OVHcloud M
 updated: 2022-06-27
 ---
 
-<style>
- pre {
-     font-size: 14px;
- }
- pre.console {
-   background-color: #300A24; 
-   color: #ccc;
-   font-family: monospace;
-   padding: 5px;
-   margin-bottom: 5px;
- }
- pre.console code {
-   b   font-family: monospace !important;
-   font-size: 0.75em;
-   color: #ccc;
- }
- .small {
-     font-size: 0.75em;
- }
-</style>
-
 ## Objective
 
 In this tutorial you are going to:
@@ -101,12 +80,13 @@ kubectl apply -f svc.yaml
 
 Output should be like this:
 
-<pre class="console"><code>$ kubectl apply -f deployment.yaml
+```console
+$ kubectl apply -f deployment.yaml
 deployment.apps/hello-world-deployment created
 
 $ kubectl apply -f svc.yaml
 service/hello-world created
-</code></pre>
+```
 
 You can verify if your application is running and service is created by running the following commands:
 
@@ -117,14 +97,15 @@ kubectl get svc -l app=hello-world
 
 Output should be like this:
 
-<pre class="console"><code>$ kubectl get pod -l app=hello-world
+```console
+$ kubectl get pod -l app=hello-world
 NAME                                      READY   STATUS    RESTARTS   AGE
 hello-world-deployment-559d658ffb-qtxnl   1/1     Running   0          61s
 
 $ kubectl get svc -l app=hello-world
 NAME          TYPE        CLUSTER-IP     EXTERNAL-IP   PORT(S)   AGE
 hello-world   ClusterIP   10.3.213.111   <none>        80/TCP    68s
-</code></pre>
+```
 
 ### Installing the Nginx Ingress Controller Helm chart
 
@@ -141,7 +122,8 @@ helm repo update
 
 These commands will add the Ingress Nginx Helm repository to your local Helm chart repository and update the installed chart repositories:
 
-<pre class="console"><code>$ helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
+```console
+$ helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
 
 helm repo update
 "ingress-nginx" has been added to your repositories
@@ -151,7 +133,7 @@ Hang tight while we grab the latest from your chart repositories...
 ...Successfully got an update from the "ingress-nginx" chart repository
 ...
 Update Complete. ⎈Happy Helming!⎈
-</code></pre>
+```
 
 Install the latest version of Ingress Nginx with `helm install` command:
 
@@ -161,7 +143,8 @@ helm -n ingress-nginx install ingress-nginx ingress-nginx/ingress-nginx --create
 
 The install process will begin and a new `ingress-nginx` namespace will be created.
 
-<pre class="console"><code>$ helm -n ingress-nginx install ingress-nginx ingress-nginx/ingress-nginx --create-namespace
+```console
+$ helm -n ingress-nginx install ingress-nginx ingress-nginx/ingress-nginx --create-namespace
 
 NAME: ingress-nginx
 LAST DEPLOYED: Mon Jun 27 09:53:25 2022
@@ -211,16 +194,17 @@ If TLS is enabled for the Ingress, a Secret containing the certificate and key m
     tls.crt: <base64 encoded cert>
     tls.key: <base64 encoded key>
   type: kubernetes.io/tls
-</code></pre>
+```
 
 As the `LoadBalancer` creation is asynchronous, and the provisioning of the load balancer can take several minutes, you will surely get a `<pending>` `EXTERNAL-IP`. 
 
 If you try again in a few minutes you should get an `EXTERNAL-IP`:
 
-<pre class="console"><code>$ kubectl get svc -n ingress-nginx ingress-nginx-controller
+```console
+$ kubectl get svc -n ingress-nginx ingress-nginx-controller
 NAME                       TYPE           CLUSTER-IP     EXTERNAL-IP       PORT(S)                      AGE
 ingress-nginx-controller   LoadBalancer   10.3.232.157   152.228.168.132   80:30903/TCP,443:31546/TCP   19h
-</code></pre>
+```
 
 You can then access your `nginx-ingress` at `http://[YOUR_LOAD_BALANCER_IP]` via HTTP or `https://[YOUR_LOAD_BALANCER_IP]` via HTTPS.
 
@@ -228,11 +212,12 @@ You can then access your `nginx-ingress` at `http://[YOUR_LOAD_BALANCER_IP]` via
 
 After installing [cert-manager](/pages/public_cloud/containers_orchestration/managed_kubernetes/installing-cert-manager) on your OVHcloud Manager Kubernetes cluster, if you followed the guide, you should have two running ClusterIssuer, one for production and one for staging/dev usages:
 
-<pre class="console"><code>$ kubectl get clusterissuer
+```console
+$ kubectl get clusterissuer
 NAME                  READY   AGE
 letsencrypt-prod      True    7s
 letsencrypt-staging   True    7s
-</code></pre>
+```
 
 If it's not the case, create a `issuer.yaml` file with the following content:
 
@@ -331,20 +316,23 @@ kubectl apply -f ingress-tls.yaml
 
 Output should be like this:
 
-<pre class="console"><code>$ kubectl apply -f ingress-tls.yaml
+```console
+$ kubectl apply -f ingress-tls.yaml
 ingress.networking.k8s.io/ingress configured
-</code></pre>
+```
 
 At this step, a `Certificate` resource has been created:
 
-<pre class="console"><code>$ kubectl get certificate
+```console
+$ kubectl get certificate
 NAME              READY   SECRET            AGE
 hello-world-tls   False   hello-world-tls   111s
-</code></pre>
+```
 
 You can display the events of the certificate to check if the certificate has been correctly created and if it creates the necessary `CertificateRequest`:
 
-<pre class="console"><code>$ kubectl describe certificate
+```console
+$ kubectl describe certificate
 Name:         hello-world-tls
 Namespace:    default
 Labels:       <none>
@@ -361,11 +349,12 @@ Events:
   Normal  Issuing    8m57s  cert-manager-certificates-trigger          Issuing certificate as Secret does not exist
   Normal  Generated  8m57s  cert-manager-certificates-key-manager      Stored new private key in temporary Secret resource "hello-world-tls-krzvj"
   Normal  Requested  8m57s  cert-manager-certificates-request-manager  Created new CertificateRequest resource "hello-world-tls-4fzl2"
-</code></pre>
+```
 
 And you can check that a `CertificateRequest`, an `Order` and a `Challenge` resource have been created:
 
-<pre class="console"><code>$ kubectl describe certificaterequest
+```console
+$ kubectl describe certificaterequest
 Name:         hello-world-tls-4fzl2
 Namespace:    default
 Labels:       <none>
@@ -422,7 +411,7 @@ Events:
   ----    ------     ----  ----                     -------
   Normal  Started    16m   cert-manager-challenges  Challenge scheduled for processing
   Normal  Presented  16m   cert-manager-challenges  Presented challenge using HTTP-01 challenge mechanism
-</code></pre>
+```
 
 You now need to map the Domain Name (DN) and the Load Balancer. In order to do this, create an `A-record` for `[YOUR_DN]` (your domain name ;-) mapped to the value of `$INGRESS_URL`.
 

@@ -4,27 +4,6 @@ excerpt: ''
 updated: 2022-05-17
 ---
 
-<style>
- pre {
-     font-size: 14px;
- }
- pre.console {
-   background-color: #300A24; 
-   color: #ccc;
-   font-family: monospace;
-   padding: 5px;
-   margin-bottom: 5px;
- }
- pre.console code {
-   b   font-family: monospace !important;
-   font-size: 0.75em;
-   color: #ccc;
- }
- .small {
-     font-size: 0.75em;
- }
-</style>
-
 ## Objective
 
 OVHcloud Managed Kubernetes service provides you Kubernetes clusters without the hassle of installing or operating them.
@@ -91,7 +70,8 @@ kubectl patch nodepool <your_nodepool_name> --type="merge" --patch='{"spec": {"a
 ```
 
 In my example cluster:
-<pre class="console"><code>$ kubectl get nodepool nodepool-b2-7 -o json | jq .spec
+```console
+$ kubectl get nodepool nodepool-b2-7 -o json | jq .spec
 {
   "antiAffinity": false,
   "autoscale": true,
@@ -106,13 +86,15 @@ In my example cluster:
   "minNodes": 0,
   "monthlyBilled": false
 }
-</code></pre>
+```
 
-<pre class="console"><code>$ kubectl patch nodepool nodepool-b2-7 --type="merge" --patch='{"spec": {"autoscaling": {"scaleDownUnneededTimeSeconds": 900, "scaleDownUnreadyTimeSeconds": 1500, "scaleDownUtilizationThreshold": "0.7"}}}'
+```console
+$ kubectl patch nodepool nodepool-b2-7 --type="merge" --patch='{"spec": {"autoscaling": {"scaleDownUnneededTimeSeconds": 900, "scaleDownUnreadyTimeSeconds": 1500, "scaleDownUtilizationThreshold": "0.7"}}}'
 nodepool.kube.cloud.ovh.com/nodepool-b2-7 patched
-</code></pre>
+```
 
-<pre class="console"><code>$ kubectl get nodepool nodepool-b2-7 -o json | jq .spec
+```console
+$ kubectl get nodepool nodepool-b2-7 -o json | jq .spec
 {
   "antiAffinity": false,
   "autoscale": true,
@@ -127,7 +109,7 @@ nodepool.kube.cloud.ovh.com/nodepool-b2-7 patched
   "minNodes": 0,
   "monthlyBilled": false
 }
-</code></pre>
+```
 
 For the moment, only these following parameters are editable:
 

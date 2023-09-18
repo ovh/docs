@@ -3,27 +3,6 @@ title: Working with vRack example - Communicating between different private netw
 updated: 2021-07-31
 ---
 
-<style>
- pre {
-     font-size: 14px;
- }
- pre.console {
-   background-color: #300A24; 
-   color: #ccc;
-   font-family: monospace;
-   padding: 5px;
-   margin-bottom: 5px;
- }
- pre.console code {
-   b   font-family: monospace !important;
-   font-size: 0.75em;
-   color: #ccc;
- }
- .small {
-     font-size: 0.75em;
- }
-</style>
-
 ## Objective
 
 OVHcloud [vRack](https://www.ovh.co.uk/solutions/vrack/) is a private networking solution that enables our customers to route traffic between most OVHcloud services (dedicated servers, Public Cloud instances...). You can for example add Public Cloud instances, a baremetal servers and Managed Kubernetes clusters to your private network to create an private infrastructure of physical, virtual and containerized workloads.
@@ -84,7 +63,8 @@ We will be working on GRA5 region, so we download the *Gravelines (GRA5)* file.
 
 Following the steps on the [Setting OpenStack environment variables](/pages/public_cloud/compute/loading_openstack_environment_variables) guide to be sure that the Openstack CLI is working on our workstation.
 
-<pre class="console"><code>~$ source openrc.sh
+```console
+~$ source openrc.sh
 Please enter your OpenStack Password:
 
 ~$ nova list
@@ -94,7 +74,7 @@ Please enter your OpenStack Password:
 | 0bee959e-48fb-4a7d-94d0-35470837320d | horacio-workstation | ACTIVE | -          | Running     | Ext-Net=51.210.xxx.xxx |
   [...]                         
 +--------------------------------------+---------------------+--------+------------+-------------+------------------------+
-</code></pre>
+```
 
 ### Configuring the private networks
 
@@ -117,7 +97,8 @@ openstack subnet set --host-route destination=10.0.1.0/24,gateway=10.0.2.1 $PRIV
 
 In my case:
 
-<pre class="console"><code>~$ PRIV_NET_01=$(openstack subnet list --subnet-range 10.0.1.0/24 --column ID -f value)
+```console
+~$ PRIV_NET_01=$(openstack subnet list --subnet-range 10.0.1.0/24 --column ID -f value)
 ~$ PRIV_NET_02=$(openstack subnet list --subnet-range 10.0.2.0/24 --column ID -f value)
 ~$ $ echo $PRIV_NET_01
 c03017c1-401e-49a0-bad0-852ec0efe7f5
@@ -125,7 +106,7 @@ c03017c1-401e-49a0-bad0-852ec0efe7f5
 f258dbbd-ae0b-40a6-8ce2-76e67837ce95
 ~$ openstack subnet set --host-route destination=10.0.2.0/24,gateway=10.0.1.1 $PRIV_NET_01
 ~$ openstack subnet set --host-route destination=10.0.1.0/24,gateway=10.0.2.1 $PRIV_NET_02
-</code></pre>
+```
 
 ### Setting up a PCI gateway
 
@@ -174,7 +155,8 @@ INSTANCE_IP=54.38.255.196    # Don't forget to replace it with your instance pub
 
 In my case:
 
-<pre class="console"><code>~$ PRIV_NET_01_ID=$(openstack network list --name priv-net-01 --column ID -f value)
+```console
+~$ PRIV_NET_01_ID=$(openstack network list --name priv-net-01 --column ID -f value)
 ~$ PRIV_NET_02_ID=$(openstack network list --name priv-net-02 --column ID -f value)
 ~$ INSTANCE_ID=$(openstack server list --name my-vrack-gateway --column ID -f value)
 ~$ $ echo "$PRIV_NET_01_ID | $PRIV_NET_02_ID | $INSTANCE_ID"
@@ -184,7 +166,7 @@ d2080f3f-285d-464a-aad8-74b935cf75e3 | b3cfb808-b4b7-406a-9e36-223c73747278 | 37
 ~$ openstack server show ${INSTANCE_ID} --column addresses -f value
 Ext-Net=2001:41d0:305:1000::3e88, 54.38.255.196; priv-net-01=10.0.1.1; priv-net-02=10.0.2.1
 ~$ INSTANCE_IP=54.38.255.54 
-</code></pre>
+```
 
 #### Adding and configuring the private network NICs to the gateway instance
 
@@ -240,7 +222,8 @@ sudo netplan apply
 
 In this case:
 
-<pre class="console"><code>~$ ssh ubuntu@$INSTANCE_IP
+```console
+~$ ssh ubuntu@$INSTANCE_IP
 Welcome to Ubuntu 21.04 (GNU/Linux 5.11.0-17-generic x86_64)
 
 ubuntu@my-vrack-gateway:~$ ip addr show
@@ -269,7 +252,7 @@ ubuntu@my-vrack-gateway:~$ ip addr show
        valid_lft forever preferred_lft forever
     inet6 fe80::f816:3eff:fe17:b633/64 scope link
        valid_lft forever preferred_lft forever
-</code></pre>
+```
 
 #### Configuring the gateway instance to route the traffic between the two private networks
 
@@ -286,7 +269,8 @@ sudo DEBIAN_FRONTEND=noninteractive apt-get -yq install iptables-persistent
 
 In this case:
 
-<pre class="console"><code>ubuntu@my-vrack-gateway:~$ sudo sed -i 's/#net.ipv4.ip_forward=1/net.ipv4.ip_forward=1/' /etc/sysctl.conf
+```console
+ubuntu@my-vrack-gateway:~$ sudo sed -i 's/#net.ipv4.ip_forward=1/net.ipv4.ip_forward=1/' /etc/sysctl.conf
 ubuntu@my-vrack-gateway:~$ sudo sysctl -p
 net.ipv4.ip_forward = 1
 ubuntu@my-vrack-gateway:~$ sudo iptables -t nat -A POSTROUTING ! -d 10.0.1.0/24 -o ens8 -j SNAT --to-source 10.0.2.1
@@ -311,7 +295,7 @@ The following NEW packages will be installed:
   iptables-persistent netfilter-persistent
 [...]
 No user sessions are running outdated binaries.
-</code></pre>
+```
 
 ### Setting up the Managed Kubernetes attached to `priv_net_01`
 
@@ -349,7 +333,8 @@ After the instance creation, we can see the connection details in the OVHcloud C
 
 If we log in to the instance using SSH, we can see that it has two network interfaces, one attached to the public IP address we use to log in, the other attached to the private network:
 
-<pre class="console"><code>~$ ssh ubuntu@54.38.254.242
+```console
+~$ ssh ubuntu@54.38.254.242
 Welcome to Ubuntu 21.04 (GNU/Linux 5.11.0-18-generic x86_64)
 
   System information as of Fri Jun 18 04:37:54 UTC 2021
@@ -360,7 +345,7 @@ Welcome to Ubuntu 21.04 (GNU/Linux 5.11.0-18-generic x86_64)
   Swap usage:   0%                IPv4 address for ens4: 10.0.2.142
 
 ubuntu@example-vrack-k8s-pci:~$ exit
-</code></pre>
+```
 
 Please take note of the private network IP address (in my case `10.0.2.142`), as we will need to use it later.
 
@@ -406,7 +391,8 @@ traceroute 10.0.2.142
 
 If everything happens as intended, we can reach the PCI instance in `priv_net_02` via the gateway:
 
-<pre class="console"><code>~$ kubectl apply -f shell-demo.yaml
+```console
+~$ kubectl apply -f shell-demo.yaml
 pod/shell-demo created
 ~$ kubectl get pod shell-demo
 NAME         READY   STATUS    RESTARTS   AGE
@@ -435,7 +421,7 @@ root@nodepool-db0e5587-9718-4faf-b4-node-d69703:/# traceroute 10.0.2.142
 traceroute to 10.0.2.142 (10.0.2.142), 30 hops max, 60 byte packets
  1  10.0.1.1 (10.0.1.1)  1.259 ms  0.683 ms  0.471 ms
  2  10.0.2.142 (10.0.2.142)  1.694 ms * *
-</code></pre>
+```
 
 ### Verifying that we can access the Kubernetes cluster from the PCI
 
@@ -460,7 +446,8 @@ kubectl get nodes -o jsonpath='{.items[0].status.addresses[?(@.type=="InternalIP
 
 We can SSH again into the PCI instance, and do a `traceroute` to see if we can reach the node, and then a curl to the NodePort:
 
-<pre class="console"><code>~$ kubectl run nginx --image=nginx
+```console
+~$ kubectl run nginx --image=nginx
 pod/nginx created
 ~$ kubectl expose pod nginx --port 80 --type NodePort
 service/nginx exposed
@@ -517,7 +504,7 @@ Commercial support is available at
 &lt;p>&lt;em>Thank you for using nginx.&lt;/em>&lt;/p>
 &lt;/body>
 &lt;/html>
-</code></pre>
+```
 
 ## Go further
 

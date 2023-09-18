@@ -4,27 +4,6 @@ excerpt: Find out how to scan for vulnerabilities and misconfigurations of your 
 updated: 2022-06-01
 ---
 
-<style>
- pre {
-     font-size: 14px;
- }
- pre.console {
-   background-color: #300A24; 
-   color: #ccc;
-   font-family: monospace;
-   padding: 5px;
-   margin-bottom: 5px;
- }
- pre.console code {
-   b   font-family: monospace !important;
-   font-size: 0.75em;
-   color: #ccc;
- }
- .small {
-     font-size: 0.75em;
- }
-</style>
-
 ## Objective
 
 [Trivy](https://github.com/aquasecurity/trivy) is a tool that scans for vulnerabilities, secrets and misconfigurations for containers and other artifacts.
@@ -68,13 +47,14 @@ Moreover, follow the [deploying a Hello World application](/pages/public_cloud/c
 
 At this time you should have a running Kubernetes cluster with hello-world deployment and pod like below:
 
-<pre class="console"><code>$ kubectl get po,deploy
+```console
+$ kubectl get po,deploy
 NAME                                          READY   STATUS    RESTARTS   AGE
 pod/hello-world-deployment-559d658ffb-q5t7j   1/1     Running   0          35m
 
 NAME                                     READY   UP-TO-DATE   AVAILABLE   AGE
 deployment.apps/hello-world-deployment   1/1     1            1           35m
-</code></pre>
+```
 
 ## Instructions
 
@@ -90,7 +70,8 @@ brew install aquasecurity/trivy/trivy
 
 The output should be like this:
 
-<pre class="console"><code>$ brew install aquasecurity/trivy/trivy
+```console
+$ brew install aquasecurity/trivy/trivy
 Running `brew update --preinstall`...
 ==> Auto-updated Homebrew!
 Updated 2 taps (homebrew/core and homebrew/cask).
@@ -134,7 +115,7 @@ You should download the Command Line Tools for Xcode 13.3.
 ==> Running `brew cleanup trivy`...
 Disable this behaviour by setting HOMEBREW_NO_INSTALL_CLEANUP.
 Hide these hints with HOMEBREW_NO_ENV_HINTS (see `man brew`).
-</code></pre>
+```
 
 After the installation, check that the `trivy` CLI is working correctly:
 
@@ -144,9 +125,10 @@ trivy version
 
 You should have a behavior like this:
 
-<pre class="console"><code>$ trivy version
+```console
+$ trivy version
 Version: 0.28.1
-</code></pre>
+```
 
 Trivy is correctly installed on your computer, you can now use it to scan your Kubernetes cluster and display a report with existing vulnerabilities and misconfigurations.
 
@@ -183,7 +165,8 @@ trivy k8s -n default --report summary
 
 This command runs tests on all nodes in the `default` namespace and displays a summary report:
 
-<pre class="console"><code>$ trivy k8s -n default --report summary
+```console
+$ trivy k8s -n default --report summary
 5 / 5 [--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------] 100.00% 2 p/s
 
 Summary Report for kubernetes-admin@my-cilium-cluster
@@ -195,7 +178,7 @@ Summary Report for kubernetes-admin@my-cilium-cluster
 │ default   │ Deployment/hello-world-deployment │ 5 │ 9 │ 18 │ 2 │   │   │   │ 3 │ 8 │   │   │   │   │   │   │
 └───────────┴───────────────────────────────────┴───┴───┴────┴───┴───┴───┴───┴───┴───┴───┴───┴───┴───┴───┴───┘
 Severities: C=CRITICAL H=HIGH M=MEDIUM L=LOW U=UNKNOWN
-</code></pre>
+```
 
 As you can see, in our `default` namespace, our OVHcloud Managed Kubernetes cluster (and with an "hello world" application deployed) has several vulnerabilities and misconfigurations.
 
@@ -209,7 +192,8 @@ trivy k8s -n default --report all
 
 You should obtain a report and a list of vulnerabilities and misconfigurations like this:
 
-<pre class="console"><code>$ trivy k8s -n default --report all
+```console
+$ trivy k8s -n default --report all
 5 / 5 [--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------] 100.00% 2 p/s
 
 ovhplatform/hello (alpine 3.8.1)
@@ -289,11 +273,12 @@ See https://avd.aquasec.com/misconfig/ksv021
  127 │                   terminationMessagePath: /dev/termination-log
  128 └                   terminationMessagePolicy: File
 ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
-</code></pre>
+```
 
 The report can be very big. So, in order to take a look at our vulnerabilities and misconfigurations in a new report, you can also display only URGENT vulnerabilities:
 
-<pre class="console"><code>$ trivy k8s -n default --report all --severity MEDIUM,HIGH,CRITICAL
+```console
+$ trivy k8s -n default --report all --severity MEDIUM,HIGH,CRITICAL
 5 / 5 [--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------] 100.00% 3 p/s
 
 ovhplatform/hello (alpine 3.8.1)
@@ -345,7 +330,7 @@ See https://avd.aquasec.com/misconfig/ksv012
  128 └                   terminationMessagePolicy: File
 ────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────
 ...
-</code></pre>
+```
 
 And, finally, for this part, you can also scan only a specific resource, only a specific deployment for example:
 
@@ -355,7 +340,8 @@ trivy k8s -n default --report summary deployment/hello-world-deployment
 
 You should obtain a result like this:
 
-<pre class="console"><code>$ trivy k8s -n default --report summary deployment/hello-world-deployment
+```console
+$ trivy k8s -n default --report summary deployment/hello-world-deployment
 1 / 1 [--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------] 100.00% 1 p/s
 
 Summary Report for kubernetes-admin@my-cilium-cluster
@@ -367,7 +353,7 @@ Summary Report for kubernetes-admin@my-cilium-cluster
 │ default   │ Deployment/hello-world-deployment │ 5 │ 9 │ 18 │ 2 │   │   │   │ 3 │ 8 │   │   │   │   │   │   │
 └───────────┴───────────────────────────────────┴───┴───┴────┴───┴───┴───┴───┴───┴───┴───┴───┴───┴───┴───┴───┘
 Severities: C=CRITICAL H=HIGH M=MEDIUM L=LOW U=UNKNOWN
-</code></pre>
+```
 
 ### Export reports locally
 
@@ -379,13 +365,14 @@ $ trivy k8s -n default --report summary -o trivy-report.txt
 
 This will save the report in your working directory:
 
-<pre class="console"><code>$ trivy k8s -n default --report summary -o trivy-report.txt
+```console
+$ trivy k8s -n default --report summary -o trivy-report.txt
 
 1 / 5 [------------------------------------>__________________________________________________________________________________________________________________________________________________] 20.00% ? p/s5 / 5 [--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------] 100.00% 2 p/s
 
 $ ll trivy-report.txt
 -rw-r--r--  1 aurelievache  staff   1,8K 30 mai 17:00 trivy-report.txt
-</code></pre>
+```
 
 ### Installing Trivy Kubernetes Operator
 
@@ -404,13 +391,14 @@ helm repo update
 
 These commands will add the Trivy Helm repository to your local Helm chart repository and update the installed chart repositories:
 
-<pre class="console"><code>$ helm repo add aqua https://aquasecurity.github.io/helm-charts/
+```console
+$ helm repo add aqua https://aquasecurity.github.io/helm-charts/
 helm repo update
 "aqua" has been added to your repositories
 Hang tight while we grab the latest from your chart repositories...
 ...Successfully got an update from the "aqua" chart repository
 Update Complete. ⎈Happy Helming!⎈
-</code></pre>
+```
 
 Install the latest version of Trivy with `helm install` command:
 
@@ -424,7 +412,8 @@ helm install trivy-operator aqua/trivy-operator \
 
 This command will install the latest version of the Trivy Kubernetes Operator, create a new `trivy-system` namespace and configure it to scan all namespaces, except kube-system and trivy-system:
 
-<pre class="console"><code>$ helm install trivy-operator aqua/trivy-operator \
+```console
+$ helm install trivy-operator aqua/trivy-operator \
    --namespace trivy-system \
    --create-namespace \
    --set="trivy.ignoreUnfixed=true" \
@@ -455,14 +444,15 @@ Inspect created CISKubeBenchReports by:
 Inspect the work log of trivy-operator by:
 
     kubectl logs -n trivy-system deployment/trivy-operator
-</code></pre>
+```
 
 You can check if the Trivy pod is correctly running:
 
-<pre class="console"><code>$ kubectl get po -n trivy-system
+```console
+$ kubectl get po -n trivy-system
 NAME                              READY   STATUS    RESTARTS   AGE
 trivy-operator-7bdc55f8d6-h6kvp   1/1     Running   0          49s
-</code></pre>
+```
 
 Now you can inspect `VulnerabilityReports` for all your namespaces, with the following command:
 
@@ -472,10 +462,11 @@ kubectl get vulnerabilityreports --all-namespaces -o wide
 
 You should obtain a result like this:
 
-<pre class="console"><code>$ kubectl get vulnerabilityreports --all-namespaces -o wide
+```console
+$ kubectl get vulnerabilityreports --all-namespaces -o wide
 NAMESPACE   NAME                                                       REPOSITORY          TAG      SCANNER   AGE   CRITICAL   HIGH   MEDIUM   LOW   UNKNOWN
 default     replicaset-hello-world-deployment-559d658ffb-hello-world   ovhplatform/hello   latest   Trivy     58s   5          9      18       2     0
-</code></pre>
+```
 
 You can check your deployments for several critical, high, medium and low vulnerabilities.
 
@@ -487,10 +478,11 @@ kubectl get configauditreports --all-namespaces -o wide
 
 You should obtain a result like this:
 
-<pre class="console"><code>$ kubectl get vuln --all-namespaces -o wide
+```console
+$ kubectl get vuln --all-namespaces -o wide
 NAMESPACE   NAME                                                       REPOSITORY          TAG      SCANNER   AGE   CRITICAL   HIGH   MEDIUM   LOW   UNKNOWN
 default     replicaset-hello-world-deployment-559d658ffb-hello-world   ovhplatform/hello   latest   Trivy     13m   5          9      18       2     0
-</code></pre>
+```
 
 Thanks to the Kubernetes Operator, it's possible to integrate Trivy into your CI/CD pipeline to check cluster vulnerabilities and misconfiguration issues.
 It thus allows you to automate a way to access reports, export the metrics from the vulnerability reports into Prometheus, add dashboards into Grafana, set up alerting, etc.

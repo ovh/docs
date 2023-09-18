@@ -4,26 +4,6 @@ excerpt: Découvrez comment installer Strapi sur votre hébergement web POWER
 updated: 2021-02-04
 ---
 
-<style>
- pre {
-     font-size: 14px;
- }
- pre.console {
-   background-color: #300A24; 
-   color: #ccc;
-   font-family: monospace;
-   padding: 5px;
-   margin-bottom: 5px;
- }
- pre.console code {
-   border: solid 0px transparent;
-   font-family: monospace !important;
- }
- .small {
-     font-size: 0.75em;
- }
-</style>
-
 ## Objectif
 
 Vous avez souscrit à un hébergement web POWER Node.js et vous souhaitez y déployer un CMS *headless* basé sur [Strapi](https://strapi.io/){.external}.
@@ -85,7 +65,8 @@ RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 Sortie du terminal :
 
-<pre class="console"><code> ~ $ rm -rf www
+```console
+ ~ $ rm -rf www
 
 ~ $ npx create-strapi-app www --quickstart --no-run
 npx : 91 installé(s) en 6.741s
@@ -108,8 +89,7 @@ EOF
 ~/www $ mkdir -p tmp
 
 ~/www $ touch tmp/restart.txt
-
-</code></pre>
+```
 
 ## Aller plus loin
 

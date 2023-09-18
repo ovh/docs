@@ -4,27 +4,6 @@ excerpt: 'Find out how to install cert-manager on OVHcloud Managed Kubernetes'
 updated: 2022-06-27
 ---
 
-<style>
- pre {
-     font-size: 14px;
- }
- pre.console {
-   background-color: #300A24; 
-   color: #ccc;
-   font-family: monospace;
-   padding: 5px;
-   margin-bottom: 5px;
- }
- pre.console code {
-   b   font-family: monospace !important;
-   font-size: 0.75em;
-   color: #ccc;
- }
- .small {
-     font-size: 0.75em;
- }
-</style>
-
 ## Objective
 
 [Cert-manager](https://github.com/cert-manager/cert-manager) is a Kubernetes add-on to automate the management and issuance of TLS certificates from various issuing sources.
@@ -58,7 +37,8 @@ helm repo update
 
 These commands will add the Kyverno Helm repository to your local Helm chart repository and update the installed chart repositories:
 
-<pre class="console"><code>$ helm repo add jetstack https://charts.jetstack.io
+```console
+$ helm repo add jetstack https://charts.jetstack.io
 helm repo update
 "jetstack" already exists with the same configuration, skipping
 Hang tight while we grab the latest from your chart repositories...
@@ -66,7 +46,7 @@ Hang tight while we grab the latest from your chart repositories...
 ...Successfully got an update from the "jetstack" chart repository
 ...
 Update Complete. ⎈Happy Helming!⎈
-</code></pre>
+```
 
 Install the latest version of cert-manager with `helm install` command:
 
@@ -80,7 +60,8 @@ helm install \
 
 This command will install the latest version of cert-manager, create a new `cert-manager` namespace and install the new CRD (CustomResourceDefinitions):
 
-<pre class="console"><code>$ helm install \
+```console
+$ helm install \
   cert-manager jetstack/cert-manager \
   --namespace cert-manager \
   --create-namespace \
@@ -107,16 +88,17 @@ Certificates for Ingress resources, take a look at the `ingress-shim`
 documentation:
 
 https://cert-manager.io/docs/usage/ingress/
-</code></pre>
+```
 
 Check cert-manager have been deployed correctly with `kubectl get pods --namespace cert-manager` command:
 
-<pre class="console"><code>$ kubectl get pods --namespace cert-manager
+```console
+$ kubectl get pods --namespace cert-manager
 NAME                                       READY   STATUS    RESTARTS   AGE
 cert-manager-75cf8df6b6-x2q6l              1/1     Running   0          2m34s
 cert-manager-cainjector-857f5bd88c-gggxw   1/1     Running   0          2m34s
 cert-manager-webhook-5cd99556d6-jq5vk      1/1     Running   0          2m34s
-</code></pre>
+```
 
 Now that the cert-manager is deployed, we need to configure a **cluster-issuer** to perform Let's Encrypt ACME challenges.
 
@@ -177,10 +159,11 @@ kubectl apply -f issuer.yaml
 
 Now, any ingress resources will be able to be annotated with:
 
-<pre class="console"><code>"cert-manager.io/cluster-issuer": "letsencrypt-prod"
+```console
+"cert-manager.io/cluster-issuer": "letsencrypt-prod"
 # Or for tests
 "cert-manager.io/cluster-issuer": "letsencrypt-staging"
-</code></pre>
+```
 
 Please refer to our tutorial on [How to secure a Nginx Ingress with cert-manager on OVHcloud Managed Kubernetes](/pages/public_cloud/containers_orchestration/managed_kubernetes/securing-nginx-ingress-cert-manager) for ingresses configuration.
 

@@ -4,28 +4,6 @@ excerpt: "Find out how to install WordPress on OVHcloud Managed Kubernetes"
 updated: 2021-12-17
 ---
 
-<style>
- pre {
-     font-size: 14px;
- }
- pre.console {
-   background-color: #300A24; 
-   color: #ccc;
-   font-family: monospace;
-   padding: 5px;
-   margin-bottom: 5px;
- }
- pre.console code {
-   border: solid 0px transparent;
-   font-family: monospace !important;
-   font-size: 0.75em;
-   color: #ccc;
- }
- .small {
-     font-size: 0.75em;
- }
-</style>
-
 In this tutorial, we will guide you through the installation of [WordPress](https://wordpress.org/){.external} on your OVHcloud Managed Kubernetes Service.
 
 ## Before you begin
@@ -46,9 +24,10 @@ kubectl delete storageclasses.storage.k8s.io csi-cinder-high-speed
 
 It will delete the existing `StorageClass`:
 
-<pre class="console"><code>$ kubectl delete storageclasses.storage.k8s.io csi-cinder-high-speed
+```console
+$ kubectl delete storageclasses.storage.k8s.io csi-cinder-high-speed
 storageclass.storage.k8s.io "csi-cinder-high-speed" deleted
-</code></pre>
+```
 
 - Create a new `StorageClass` with the required fix
 
@@ -58,9 +37,10 @@ kubectl apply -f https://raw.githubusercontent.com/ovh/docs/develop/pages/public
 
 It will apply the correct `StorageClass` YAML manifest:
 
-<pre class="console"><code>$ kubectl apply -f https://raw.githubusercontent.com/ovh/docs/develop/pages/public_cloud/containers_orchestration/managed_kubernetes/fix-persistent-volumes-permissions/files/fixed-cinder-high-speed-storage-class.yaml
+```console
+$ kubectl apply -f https://raw.githubusercontent.com/ovh/docs/develop/pages/public_cloud/containers_orchestration/managed_kubernetes/fix-persistent-volumes-permissions/files/fixed-cinder-high-speed-storage-class.yaml
 storageclass.storage.k8s.io/csi-cinder-high-speed created
-</code></pre>
+```
 
 If you have already installed a previous version of Bitnami's WordPress Helm chart, please follow the following step by step guide.
 
@@ -87,9 +67,10 @@ kubectl delete pvc data-my-first-k8s-wordpress-mariadb-0
 
 The command will delete the remaining `PersistentVolumeClaim`:
 
-<pre class="console"><code>$ kubectl delete pvc data-my-first-k8s-wordpress-mariadb-0
+```console
+$ kubectl delete pvc data-my-first-k8s-wordpress-mariadb-0
 persistentvolumeclaim "data-my-first-k8s-wordpress-mariadb-0" deleted
-</code></pre>
+```
 
 ## Installing the WordPress Helm chart
 
@@ -116,7 +97,8 @@ This will install the needed elements:
 
 And at the end, it will give you the connection parameters for your new WordPress:
 
-<pre class="console"><code>$ helm install my-first-k8s-wordpress bitnami/wordpress --set allowOverrideNone=true
+```console
+$ helm install my-first-k8s-wordpress bitnami/wordpress --set allowOverrideNone=true
 NAME: my-first-k8s-wordpress
 LAST DEPLOYED: Fri Dec 17 15:42:22 2021
 NAMESPACE: default
@@ -151,7 +133,7 @@ To access your WordPress site from outside the cluster follow the steps below:
 
   echo Username: user
   echo Password: $(kubectl get secret --namespace default my-first-k8s-wordpress -o jsonpath="{.data.wordpress-password}" | base64 --decode)
-</code></pre>
+```
 
 As the instructions say, you will need to wait a few moments to get the `LoadBalancer` URL.
 You can test if the `LoadBalancer` is ready using:
@@ -162,22 +144,24 @@ kubectl get svc --namespace default -w my-first-k8s-wordpress
 
 After some minutes, you will get the `LoadBalancer` URL:
 
-<pre class="console"><code>$ kubectl get svc --namespace default -w my-first-k8s-wordpress
+```console
+$ kubectl get svc --namespace default -w my-first-k8s-wordpress
 NAME                     TYPE           CLUSTER-IP    EXTERNAL-IP     PORT(S)                      AGE
 my-first-k8s-wordpress   LoadBalancer   10.3.83.253   &lt;pending>      80:32296/TCP,443:31838/TCP   2m13s
 my-first-k8s-wordpress   LoadBalancer   10.3.83.253   51.178.69.190   80:32296/TCP,443:31838/TCP   2m13s
-</code></pre>
+```
 
 Then you can follow the instructions to get the Admin URL:
 
-<pre class="console"><code>$ export SERVICE_IP=$(kubectl get svc --namespace default my-first-k8s-wordpress --template "{{ range (index .status.loadBalancer.ingress 0) }}{{.}}{{ end }}")
+```console
+$ export SERVICE_IP=$(kubectl get svc --namespace default my-first-k8s-wordpress --template "{{ range (index .status.loadBalancer.ingress 0) }}{{.}}{{ end }}")
 
 $ echo "WordPress URL: http://$SERVICE_IP/"
 WordPress URL: http://51.178.69.190/
 
 $ echo "WordPress Admin URL: http://$SERVICE_IP/admin"
 WordPress Admin URL: http://51.178.69.190/admin
-</code></pre>
+```
 
 Copy/paste the WordPress URL in your browser to see your new running blog:
 
@@ -187,11 +171,12 @@ In order to log in on the Admin interface, you need to use the instructions give
 
 In my case:
 
-<pre class="console"><code>$ echo Username: user
+```console
+$ echo Username: user
 Username: user
 $ echo Password: $(kubectl get secret --namespace default my-first-k8s-wordpress -o jsonpath="{.data.wordpress-password}" | base64 --decode)
 Password: 9hF2YWSpXB
-</code></pre>
+```
 
 ![Installing WordPress](images/installing-wordpress-02.png){.thumbnail}
 
@@ -209,9 +194,10 @@ helm uninstall my-first-k8s-wordpress
 
 It will delete your WordPress and its associated resources from your cluster:
 
-<pre class="console"><code>$ helm uninstall my-first-k8s-wordpress
+```console
+$ helm uninstall my-first-k8s-wordpress
 release "my-first-k8s-wordpress" uninstalled
-</code></pre>
+```
 
 You also need to remove remaining `PersistentVolumeClaim` manually, for the moment:
 
@@ -221,9 +207,10 @@ kubectl delete pvc data-my-first-k8s-wordpress-mariadb-0
 
 It will delete the `PersistentVolumeClaim` installed by Bitnami WordPress helm chart:
 
-<pre class="console"><code>$ kubectl delete pvc data-my-first-k8s-wordpress-mariadb-0
+```console
+$ kubectl delete pvc data-my-first-k8s-wordpress-mariadb-0
 persistentvolumeclaim "data-my-first-k8s-wordpress-mariadb-0" deleted
-</code></pre>
+```
 
 ## Where do we go from here?
 

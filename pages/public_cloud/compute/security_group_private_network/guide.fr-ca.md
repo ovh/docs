@@ -4,27 +4,6 @@ excerpt: Découvrez le fonctionnement des groupes de sécurité sur Public Cloud
 updated: 2023-03-13
 ---
 
-<style>
- pre {
-     font-size: 14px;
- }
- pre.console {
-   background-color: #300A24; 
-   color: #ccc;
-   font-family: monospace;
-   padding: 5px;
-   margin-bottom: 5px;
- }
- pre.console code {
-   b   font-family: monospace !important;
-   font-size: 0.75em;
-   color: #ccc;
- }
- .small {
-     font-size: 0.75em;
- }
-</style>
-
 ## Objectif
 
 La plateforme OpenStack gère la sécurité des pare-feu en combinant les règles de connexion en **groupes de sécurité**. Les règles sont ensuite appliquées en affectant des groupes de sécurité aux ports réseau.
@@ -78,9 +57,10 @@ openstack port show <port-ID> -f value -c port_security_enabled
 
 Le résultat devrait être similaire à ceci :
 
-<pre class="console"><code>$ openstack port show d7c237cd-8dee-4503-9073-693d986baff3 -f value -c port_security_enabled
+```console
+$ openstack port show d7c237cd-8dee-4503-9073-693d986baff3 -f value -c port_security_enabled
 False
-</code></pre>
+```
 
 #### Pour un nouveau réseau privé :
 

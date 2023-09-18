@@ -4,27 +4,6 @@ excerpt: 'Find out how to use images from OVHcloud Managed Private Registry serv
 updated: 2022-02-28
 ---
 
-<style>
- pre {
-     font-size: 14px;
- }
- pre.console {
-   background-color: #300A24; 
-   color: #ccc;
-   font-family: monospace;
-   padding: 5px;
-   margin-bottom: 5px;
- }
- pre.console code {
-   b   color: #ccc;
-   font-family: monospace !important;
-   font-size: 0.75em;
- }
- .small {
-     font-size: 0.75em;
- }
-</style>
-
 In this tutorial we are going to guide you in using images from OVHcloud Managed Private Registry service on OVHcloud Managed Kubernetes clusters.
 
 ## Before you begin
@@ -52,12 +31,12 @@ docker login [YOUR_PRIVATE_REGISTRY_URL]
 
 For my private registry:
 
-<pre class="console"><code>
+```console
   $ docker login 8093ff7x.gra5.container-registry.ovh.net
   Username: private-user
   Password: 
   Login Succeeded
-</code></pre>
+```
 
 The login process creates or updates a `config.json` file that holds an authorization token.
 
@@ -83,19 +62,21 @@ kubectl create secret generic regcred \
 
 For my private registry:
 
-<pre class="console"><code>$ kubectl create secret generic regcred \
+```console
+$ kubectl create secret generic regcred \
   --from-file=.dockerconfigjson=/Users/avache/.docker/config.json \
   --type=kubernetes.io/dockerconfigjson
 
   secret/regcred created
-</code></pre>
+```
 
 You can check the secret has been correctly deployed in your Kubernetes cluster:
 
-<pre class="console"><code>$ kubectl get secret regcred -o jsonpath="{.data.\.dockerconfigjson}"
+```console
+$ kubectl get secret regcred -o jsonpath="{.data.\.dockerconfigjson}"
 
 ewogICAgICAgICJhdXRocyI6IHsKCQkiaHR0cHM6Ly9pbmRleC5kb2NrZXIuaW8vdjEvIjogewogICAgICAgICAgICAgICAgICAgICAgICAiYXV0aCI6ICJjMk55WVd4NU9qaDBhM00wWm01aiIKICAgICAgICAgICAgICAgIH0sCiAgICAgICAgICAgICAgICAiY3g2ZHMzMGQuZ3JhNy5jb250YWluZXItcmVnaXN0cnkub3ZoLm5ldCI6IHsKICAgICAgICAgICAgICAgICAgICAgICAgImF1dGgiOiAiY0hKcGRtRjBaUzExYzJWeU9sQnlhWFpoZEdWVmMyVnlNUT09IgogICAgICAgICAgICAgICAgfQogICAgICAgIH0KfQo=
-</code></pre>
+```
 
 >[!primary]
 >
@@ -116,20 +97,22 @@ kubectl create secret docker-registry regcred \
 
 For my private registry:
 
-<pre class="console"><code>$ kubectl create secret docker-registry regcred \
+```console
+$ kubectl create secret docker-registry regcred \
     --docker-server=cx6ds30d.gra7.container-registry.ovh.net \
     --docker-username=private-user \
     --docker-password=PrivateUser1
 
   secret/regcred created
-</code></pre>
+```
 
 You can check the secret has been correctly deployed in your Kubernetes cluster:
 
-<pre class="console"><code>$ kubectl get secret regcred -o jsonpath="{.data.\.dockerconfigjson}"
+```console
+$ kubectl get secret regcred -o jsonpath="{.data.\.dockerconfigjson}"
 
 eyJhdXRocyI6eyJjeDZkczMwZC5ncmE3LmNvbnRhaW5lci1yZWdpc3RyeS5vdmgubmV0Ijp7InVzZXJuYW1lIjoicHJpdmF0ZS11c2VyIiwicGFzc3dvcmQiOiJQcml2YXRlVXNlcjEiLCJhdXRoIjoiY0hKcGRtRjBaUzExYzJWeU9sQnlhWFpoZEdWVmMyVnlNUT09In19fQ==
-</code></pre>
+```
 
 >[!primary]
 >
@@ -193,7 +176,8 @@ kubectl apply -f hello-ovh.yaml
 
 After applying the YAML file, a new `hello-world` service and the corresponding `hello-world-deployment` deployment are created:
 
-<pre class="console"><code>$ kubectl apply -f hello-ovh.yaml
+```console
+$ kubectl apply -f hello-ovh.yaml
 
 service/hello-ovh created
 deployment.apps/hello-ovh-deployment created
@@ -201,7 +185,7 @@ deployment.apps/hello-ovh-deployment created
 $ kubectl get po -l app=hello-ovh
 NAME                                    READY   STATUS    RESTARTS   AGE
 hello-ovh-deployment-6df76cb7b8-vbk2b   1/1     Running   0          66s
-</code></pre>
+```
 
 Our Pod is correctly running, so Kubernetes has pulled the image from your private registry with success.
 
