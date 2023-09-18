@@ -917,6 +917,7 @@
             + [Concepts](public-cloud-data-analytics-data-processing-concepts)
                 + [Data Processing Overview](public_cloud/data_analytics/data_processing/00_CONCEPTS_Overview)
                 + [Data Processing Capabilities and Limitations](public_cloud/data_analytics/data_processing/01_CONCEPTS_Capabilities)
+                + [Data Processing End-of-Support and End-of-Life policies](public_cloud/data_analytics/data_processing/02_CONCEPTS_Lifecycle)
             + [Supported computing engines](public-cloud-data-analytics-data-processing-supported-computing-engines)
                 + [Apache Spark Overview](public_cloud/data_analytics/data_processing/10_ENGINES_Spark)
             + [Getting started](public-cloud-data-analytics-data-processing-getting-started)
