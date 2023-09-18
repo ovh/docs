@@ -61,7 +61,7 @@ No exemplo acima, a pastilha é vermelha. Eis as possíveis razões para este di
 
 ### Etapa 2 - Obter o código de validação <a name="step2"></a>
 
-Abra o separador `Domínios associados`{.action} e clique na etiqueta vermelha `CNAME` na coluna " diagnóstico " para obter as informações necessárias.
+Abra o separador `Domínios associados`{.action} e clique na etiqueta vermelha `CNAME` na coluna "diagnóstico" para obter as informações necessárias.
 
 O registo CNAME é descrito na caixa de diálogo que é apresentada.
 
