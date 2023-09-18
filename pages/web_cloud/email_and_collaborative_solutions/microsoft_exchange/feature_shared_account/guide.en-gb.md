@@ -39,7 +39,7 @@ Fill in the requested fields:
 
 > [!primary]
 >
-> The space available for creating a shared account depends on the number of accounts subscribed to your platform. Each Exchange account subscribed to your platform unblocks 5 GB for shared accounts.
+> The space available for creating a shared account depends on the number of accounts subscribed on your platform. Each Exchange account subscribed on your platform unblocks 5 GB for shared accounts.
 >
 > **example:**
 >
