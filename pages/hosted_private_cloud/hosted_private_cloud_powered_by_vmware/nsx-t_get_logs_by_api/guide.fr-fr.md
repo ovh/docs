@@ -6,9 +6,9 @@ updated: 2023-09-23
 
 ## Objectif
 
-NSX est un réseau à définition logicielle ou « *Software-Define Networking* » (SDN) développée par VMware.
+NSX est un réseau à définition logicielle ou « *Software-Define Networking* » (SDN) développé par VMware.
 
-OVHcloud propose ce service à la place de NSX-V dans sa solution [VMware sur OVHcloud](https://www.ovhcloud.com/fr/hosted-private-cloud/vmware/).
+OVHcloud propose ce service à la place de NSX-V dans sa solution [VMware on OVHcloud](https://www.ovhcloud.com/fr/hosted-private-cloud/vmware/).
 
 **Découvrez comment obtenir les logs des noeuds NSX grâce à l'API dédiée.**
 
@@ -50,7 +50,7 @@ N'oubliez pas d'appliquer la nouvelle configuration et de la publier.
 
 ### Récupération des logs
 
-- Pour pouvoir obtenir l'accès aux logs, vous devez identifier l'ID du NSX Edge. Pour cela, utilisez un premier appel API :
+- Pour obtenir l'accès aux logs, vous devez identifier l'ID du NSX Edge. Pour cela, utilisez un premier appel API :
 
 ```bash
 curl -k -u user@pcc-123-123-123-123.ovh.com:<password> https://nsxt.pcc-123-123-123-123.ovh.com/api/v1/transport-nodes/
