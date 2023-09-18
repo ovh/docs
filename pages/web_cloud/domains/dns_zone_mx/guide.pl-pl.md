@@ -1,71 +1,91 @@
 ---
-title: 'Dodanie rekordu MX w konfiguracji domeny'
-excerpt: 'Dowiedz się, jak dodać rekord MX do strefy DNs domeny'
-updated: 2018-05-30
+title: Konfiguracja rekordu MX
+excerpt: Dowiedz się, jak skonfigurować rekord MX dla Twojej domeny w OVHcloud
+updated: 2023-08-30
 ---
+
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zgłóś propozycję modyfikacji” na tej stronie.
+>
 
 ## Wprowadzenie
 
-Pole MX umożliwia powiązanie domeny z serwerem poczty elektronicznej. Dzięki temu serwery poczty wychodzącej kierują wiadomości e-mail do odpowiednich adresów pocztowych. Istnieje prawdopodobieństwo, że dostawca Twoich usług dysponuje kilkoma serwerami poczty elektronicznej. W takim przypadku należy utworzyć kilka rekordów MX.
+Rekord MX umożliwia powiązanie domeny z serwerem platformy e-mail. Jest to niezbędne, aby usługa e-mail nadawcy mogła dotrzeć do usługi e-mail odbiorcy.
 
-**Dowiedz się, jak dodać rekord MX do konfiguracji domeny OVHcloud.**
+**Dowiedz się, jak skonfigurować rekord MX dla Twojej domeny w OVHcloud.**
 
 ## Wymagania początkowe
 
-- Dostęp do interfejsu zarządzania domeną w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
-- Dostęp do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
-- Wybrana domena powinna używać konfiguracji OVHcloud (serwerów DNS OVHcloud)
+- Dostęp do interfejsu zarządzania strefą DNS danej domeny w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+- Wybrana domena musi korzystać z konfiguracji OVHcloud (tzn. z serwerów DNS OVHcloud).
+- Posiadanie konta e-mail MX Plan (zawartego w pakiecie [hostingowym](https://www.ovhcloud.com/pl/web-hosting/), [bezpłatnym hostingu 100M](https://www.ovhcloud.com/pl/domains/free-web-hosting/) lub w ofercie MX Plan zamówionej oddzielnie), jednej z naszych [ofert e-mail OVHcloud](https://www.ovhcloud.com/pl/emails/) lub zewnętrznej usługi e-mail.
 
-> [!warning]
+> [!primary]
 >
-> - Jeśli Twoja domena nie używa serwerów DNS OVHcloud, zmodyfikuj rekordy MX w interfejsie dostawcy zarządzającego konfiguracją Twojej domeny.
+> - Jeśli Twoja domena nie używa serwerów DNS OVHcloud, przeprowadź zmianę wpisów MX w interfejsie dostawcy zarządzającego konfiguracją Twojej domeny.
 >
-> - Jeśli Twoja domena jest zarejestrowana w OVHcloud, możesz sprawdzić w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, w zakładce [Serwery DNS](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, czy używa ona konfiguracji OVHcloud.
+> - Jeśli Twoja domena jest zarejestrowana w OVHcloud, możesz sprawdzić w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), w sekcji `Serwery DNS`{.action}, czy używa ona konfiguracji OVHcloud, w zakładce `Informacje ogólne`{.action}. Jeśli pozycja `Aktywne` znajduje się w sekcji "**Serwery DNS**", korzystasz z serwerów DNS OVHcloud.
 >
+> ![email](images/email-dns-conf-mx00.png){.thumbnail}
 
 ## W praktyce
 
-### Etap 1: podstawowe informacje o rekordzie MX
+### Zrozumienie roli rekordów MX 
 
-Rekord MX służy do powiązania Twojej domeny z serwerem dostarczonym przez dostawcę rozwiązania poczty elektronicznej, np. OVHcloud. Kiedy osoba, z którą korespondujesz wysyła do Ciebie wiadomość e-mail, rekord MX wskazuje serwerowi poczty wychodzącej do jakiego serwera powinien ją skierować.
+Rekordy MX (**M**ail **e**Xchange) umożliwiają powiązanie Twojej domeny z serwerami poczty przychodzącej przypisanymi do Twojej usługi e-mail. Posłużemy się przykładem.
 
-Istnieje możliwość konfiguracji kilku rekordów MX dla jednej domeny. Każdemu z nich należy nadać priorytet. Dzięki temu serwery poczty wychodzącej będą otrzymywały informacje, do których serwerów mają wysyłać wiadomości w pierwszej kolejności. Pamiętaj, że możesz dodawać jedynie rekordy MX należące do tego samego zestawu i od tego samego dostawcy usługi.
+Gdy adres **sender@otherdomain.ovh** wysyła wiadomość na adres **contact@modomain.ovh**, serwer poczty (**Outgoing mail server**) przechodzi:
 
-**Zmiana rekordów MX domeny jest operacją wymagającą wiedzy**: pomyłka w modyfikacji może uniemożliwić spływanie wiadomości e-mail na Twoje konta e-mail. Zalecamy w związku z tym dużą ostrożność podczas wykonywania tej operacji.
+- **(1)** odpytywanie strefy DNS domeny **mydomain.ovh** i odczytywanie rekordów **MX**.
+- **(2)** Prześlij wiadomość e-mail na adres URL odczytanego rekordu **MX**.
 
-### Etap 2: znajomość konfiguracji MX OVHcloud
+![email](images/email-dns-conf-mx01.png){.thumbnail}
 
-Zapoznaj się z przedstawioną poniżej konfiguracją MX OVHcloud przewidzianą dla rozwiązań MX Plan (występującą samodzielnie lub włączoną do oferty [hostingu](https://www.ovhcloud.com/pl/web-hosting/){.external} oraz [Exchange](https://www.ovhcloud.com/pl/emails/){.external}. Na serwerach poczty elektronicznej OVHcloud zainstalowane jest oprogramowanie antyspamowe i antywirusowe.
+Wiadomość e-mail zostanie wysłana na adres docelowy **mx0.mail.ovh.net** poprzedzony wartością **0**. Ta wartość jest nazywana priorytetem. Najniższa jest odpytywana w pierwszej kolejności, a najwyższa w ostatniej. Oznacza to, że obecność wielu rekordów może zapobiec brakowi odpowiedzi rekordu MX o najniższym priorytecie.
+
+Dla tej samej domeny można skonfigurować wiele rekordów MX. W takim przypadku konieczne jest określenie numeru priorytetu dla każdego z nich. Rekordy MX są odpytywane w kolejności rosnącej, od najniższego numeru do najwyższego, aż do uzyskania odpowiedzi z serwera poczty przychodzącej.
+
+> [!warning]
+>
+> Ogólnie rzecz biorąc, **modyfikacja rekordów MX w strefie DNS domeny jest operacją wymagającą wiedzy** : omyłkowe działanie może uniemożliwić spływanie e-maili na Twoje adresy. Zalecamy szczególną ostrożność podczas wykonywania tej operacji.
+> W przypadku wątpliwości zalecamy skorzystanie z pomocy wyspecjalizowanego [usługodawcy](https://partner.ovhcloud.com/pl/directory/).
+
+### Wartości konfiguracji MX OVHcloud <a name="mxovhcloud"></a>
+
+Zapoznaj się z przedstawioną poniżej konfiguracją MX OVHcloud przewidzianą dla rozwiązań MX Plan (występującą samodzielnie lub włączoną do oferty [hostingu WWW OVHcloud](https://www.ovhcloud.com/pl/web-hosting/)), [E-mail Pro](https://www.ovhcloud.com/pl/emails/email-pro/) oraz [Exchange](https://www.ovhcloud.com/pl/emails/). Na serwerach poczty elektronicznej OVH zainstalowane jest oprogramowanie antyspamowe i antywirusowe.
 
 |Domena|TTL|Typ rekordu|Priorytet|Adres docelowy|
 |---|---|---|---|---|
-|*pozostaw puste*|3600 |MX|1|mx0.mail.ovh.net.|
-|*pozostaw puste*|3600 |MX|5|mx1.mail.ovh.net.|
-|*pozostaw puste*|3600 |MX|50 |mx2.mail.ovh.net.|
-|*pozostaw puste*|3600 |MX|100|mx3.mail.ovh.net.|
-|*pozostaw puste*|3600 |MX|200|mx4.mail.ovh.net.|
+|*pozostaw puste*|3600|MX|1|mx0.mail.ovh.net.|
+|*pozostaw puste*|3600|MX|5|mx1.mail.ovh.net.|
+|*pozostaw puste*|3600|MX|50|mx2.mail.ovh.net.|
+|*pozostaw puste*|3600|MX|100|mx3.mail.ovh.net.|
+|*pozostaw puste*|3600|MX|200|mx4.mail.ovh.net.|
 
-Teraz zastosuj rekordy MX w konfiguracji DNS Twojej domeny. Operacja ta została opisana w kolejnym etapie. 
+Rekordy MX muszą być skonfigurowane w strefie DNS Twojej domeny.
 
-### Etap 3: modyfikacja konfiguracji rekordu MX OVHcloud
+### Konfiguracja rekordu MX w strefie DNS OVHcloud
 
-Aby zmodyfikować rekordy MX w konfiguracji OVHcloud Twojej domeny, zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Kliknij `Domeny`{.action}, następnie wybierz domenę i przejdź do zakładki `Strefa DNS`{.action}.
+Aby utworzyć lub zmodyfikować rekordy MX w konfiguracji OVHcloud Twojej domeny, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Przejdź do sekcji `Nazwy domen`{.action}, kliknij odpowiednią domenę, następnie przejdź do zakładki `Strefa DNS`{.action}.
 
-W tabeli, która się wyświetli znajdziesz konfigurację Twojej domeny OVHcloud. Każdy wiersz odpowiada jednemu rekordowi DNS. Zalecamy sprawdzenie w pierwszym kroku, czy jakieś rekordy MX zostały już wcześniej dodane do konfiguracji DNS Twojej domeny. Możesz posłużyć się w tym celu oknem filtrowania.
+W tabeli, która się wyświetli znajdziesz konfigurację Twojej domeny OVHcloud. Każdy wiersz odpowiada jednemu rekordowi DNS.
+
+W pierwszym kroku sprawdź, czy jakieś rekordy MX zostały już wcześniej dodane do konfiguracji DNS OVHcloud Twojej domeny. Pomoże Ci w tym lista filtrów znajdująca się nad tabelą Twojej strefy DNS.<br>
+Wybierz typ **MX**, a następnie potwierdź, aby wyświetlić tylko wpisy DNS MX strefy DNS. Pomóż w zrzucie ekranu poniżej.
 
 ![dnsmxrecord](images/mx-records-dns-zone.png){.thumbnail}
 
-Jeśli istnieją już pola MX i chcesz je zastąpić, kliknij przycisk `...`{.action} po prawej stronie każdego wiersza tabeli, po czym kliknij `Usuń rekord`{.action} wpis. Pamiętaj, aby podczas dodawania żądanych wpisów MX nie pozostawiać domeny bez rekordu MX.
+- Jeśli rekordy MX już istnieją i chcesz je zmienić, kliknij przycisk `...`{.action} po prawej stronie każdego wiersza w tabeli odpowiadającego rekordowi, a następnie kliknij `Zmień rekord`{.action}.
+- Jeśli rekord MX nie jest obecny, kliknij przycisk `Dodaj rekord`{.action} po prawej stronie tabeli i wybierz `MX`{.action}. Uzupełnij wymagane informacje w zależności od wybranego rozwiązania poczty elektronicznej:
 
-Aby sprawdzać szybciej, czy rekordy MX już istnieją, za pomocą filtra znajdującego się nad tabelą DNS wybierz pole typu **MX**, a następnie zatwierdź, aby wyświetlić tylko wpisy DNS MX w strefie DNS.
+**Jeśli dysponujesz rozwiązaniem e-mail OVHcloud**, zapoznaj się z informacjami podanymi w etapie "[Wiedza na temat konfiguracji MX OVHcloud](#mxovhcloud)".
 
-Kliknij przycisk `Dodaj rekord`{.action} po prawej stronie tabeli, następnie wybierz `MX`{.action}. Wpisz wymagane informacje w zależności od wybranego rozwiązania poczty elektronicznej:
-
-- **jeśli używasz rozwiązania poczty elektronicznej OVHcloud**: wykorzystaj informacje opisane w [etapie 2: znajomość konfiguracji MX OVHcloud](/pages/web_cloud/domains/dns_zone_mx#etap-2-znajomosc-konfiguracji-mx-ovh){.external};
-
-- **jeśli używasz innego rozwiązania**: wykorzystaj informacje podane przez dostawcę Twojej usługi.
+![dnsmxrecord](images/mx-records-dns-zone-modif.png){.thumbnail}
 
 Po wpisaniu informacji zakończ ostatni etap, następnie kliknij `Zatwierdź`{.action}.
+
+**Jeśli używasz innego rozwiązania poczty** e-mail, skorzystaj z informacji dostarczonych przez Twojego dostawcę usługi e-mail.
 
 > [!primary]
 >
@@ -74,12 +94,16 @@ Po wpisaniu informacji zakończ ostatni etap, następnie kliknij `Zatwierdź`{.a
 
 ## Sprawdź również
 
-[Informacje na temat serwerów DNS](/pages/web_cloud/domains/dns_server_general_information){.external}
+[Informacje na temat serwerów DNS.](/pages/web_cloud/domains/dns_server_general_information)
 
-[Modyfikacja strefy DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit){.external}
+[Edycja strefy DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
 
-W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/).
+[Konfiguracja rekordu SPF w domenie](/pages/web_cloud/domains/dns_zone_spf)
 
-Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
+[Skonfiguruj rekord DKIM](/pages/web_cloud/domains/dns_zone_dkim)
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>. 
+Jeśli potrzebujesz specjalistycznych usług (SEO, programowanie, etc.), skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/).
+
+Jeśli chcesz uzyskać wsparcie w zakresie użytkowania i konfiguracji Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami wsparcia](https://www.ovhcloud.com/pl/support-levels/).
+
+Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com/en/>.

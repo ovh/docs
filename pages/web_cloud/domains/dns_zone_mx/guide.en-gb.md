@@ -1,41 +1,54 @@
 ---
-title: "Add an MX record to your domain name’s configuration"
-excerpt: "Find out how to add a MX record to your OVHcloud domain name’s configuration"
-updated: 2018-05-30
+title: Configure an MX record
+excerpt: Find out how to configure an MX record on your domain name at OVHcloud
+updated: 2023-08-30
 ---
 
 ## Objective
 
-An MX record is used to point a domain name to an email server. It enables servers sending emails to your email addresses to know where they must transfer them to. Your service provider is likely to have several email servers. Because of this, you will need to create several MX records.
+With an MX record, you can link a domain name to the server on your email platform. It is essential for the sender’s email service to reach the recipient’s email service.
 
-**Find out how to add a MX record to your OVHcloud domain name’s configuration.**
+**Find out how to configure an MX record for your domain name at OVHcloud.**
 
 ## Requirements
 
-- You must have permission to manage the domain name from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}.
-- You must be logged in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}.
-- The domain name must use the OVHcloud configuration (i.e. the OVHcloud DNS servers).
+- You have access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
+- You have the rights to manage the DNS zone for the domain name concerned via the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
+- The domain name concerned uses the OVHcloud configuration (i.e. OVHcloud DNS servers).
+- You have an MX Plan solution (included in the [web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/), a [free 100M hosting](https://www.ovhcloud.com/en-gb/domains/free-web-hosting/), or the MX Plan solution ordered separately), one of our [OVHcloud email offers](https://www.ovhcloud.com/en-gb/emails/), or an external email service.
 
-> [!warning]
+> [!primary]
 >
-> - If your domain name does not use the OVHcloud DNS servers, you will need to modify the MX records using the interface given by the provider that manages your domain name configuration.
+> - If your domain name does not use OVHcloud DNS servers, you will need to modify the MX records using the interface of the service provider that manages your domain name configuration.
 >
-> - If your domain name is registered with OVHcloud, you can check if it is using the OVHcloud configuration in your [Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}. Select the domain, and go to the `DNS servers`{.action} tab.
+> - If your domain name is with OVHcloud, you can check if it uses our OVHcloud configuration in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), in the `DNS Servers`{.action} section. Next, select the domain name concerned, and go to the `General information`{.action} tab. If `Active` is displayed under **DNS servers**, the domain name uses OVHcloud DNS servers.
 >
+> ![email](images/email-dns-conf-mx00.png){.thumbnail}
 
 ## Instructions
 
-### Step 1: Understand the basic purpose of MX records
+### Understanding the role of MX records 
 
-An MX record links your domain name to your email service provider’s servers (e.g. OVHcloud’s servers). When you are sent an email, the server sending the email will use the MX record to find out which server it should deliver to.
+MX (**M**ail e**X**change) records are used to link your domain name to the receiving email servers attached to your email service. We will use an example.
 
-You can add multiple MX records to a single domain name, so you will need to define a priority for each record. By doing so, the servers sending emails to your email address will know which server they should deliver them to, by priority. However, please note that when you add multiple MX records, the servers they point to must belong to the same service provider.
+When the address **sender@otherdomain.ovh** sends an email to **contact@mydomain.ovh**, the **Outgoing mail server** will:
+- **(1)** Query the DNS zone of the domain name **mydomain.ovh** and read the **MX** records.
+- **(2)** Forward the email to the URL of the **MX** record it has found.
 
-Generally speaking, **changing MX records is a tricky task**. If you make any mistakes configuring MX records, your email addresses may be unable to receive new emails as a result. For this reason, we strongly advise that you take great care when carrying out these configuration changes.
+![email](images/email-dns-conf-mx01.png){.thumbnail}
 
-### Step 2: Familiarise yourself with the OVHcloud MX configuration
+The email will be sent to the target **mx0.mail.ovh.net**, which is preceded by a value of **0**. This value is called *priority*. The lowest value is queried first and the highest value is queried last. This means that the presence of several records makes it possible to compensate for an absence of response from the MX record having the lowest priority.
 
-In the table below, we have listed the OVHcloud MX configuration to use for our MX Plan solutions (both as a standalone solution, or included as part of our [OVHcloud Web Hosting plans](https://www.ovhcloud.com/en-gb/web-hosting/){.external}, [Email Pro](https://www.ovhcloud.com/en-gb/emails/email-pro/){.external} and [Exchange](https://www.ovhcloud.com/en-gb/emails/){.external} solutions. Our email servers also have anti-spam and anti-virus protection.
+You can set up multiple MX records for the same domain name. It is then necessary to define a *priority* number for each of them. MX records are queried in ascending order from lowest number to highest number until a response is received from the receiving server.
+
+> [!warning]
+>
+> Generally speaking, **modifying MX records in a domain name’s DNS zone warrants caution**. If you make any mistakes configuring the records, it may make it impossible for emails to reach your email address. Please take care when you carry out this procedure.
+> If you have any doubts, we advise contacting a [specialist provider](https://partner.ovhcloud.com/en-gb/directory/).
+
+### OVHcloud MX configuration values <a name="mxovhcloud"></a>
+
+Below, you will find the OVHcloud MX configuration to use for our MX Plan solutions (MX Plan standalone or included in an [OVHcloud web hosting](https://www.ovhcloud.com/en-gb/web-hosting/) plan), [Email Pro](https://www.ovhcloud.com/en-gb/emails/email-pro/) and [Exchange](https://www.ovhcloud.com/en-gb/emails/). Our email servers have antispam and antivirus integrated.
 
 |Domain|TTL|Record type|Priority|Target|
 |---|---|---|---|---|
@@ -45,40 +58,46 @@ In the table below, we have listed the OVHcloud MX configuration to use for our 
 |*leave blank*|3600|MX|100|mx3.mail.ovh.net.|
 |*leave blank*|3600|MX|200|mx4.mail.ovh.net.|
 
-You will now need to add these MX records to your domain name’s DNS zone configuration. The next step will help you do so, in your domain name’s OVHcloud DNS zone.
+These MX records must be configured in your domain name’s DNS zone.
 
-### Step 3: Modify an OVHcloud MX record’s configuration
+### Configuring an MX record in an OVHcloud DNS zone
 
-To modify the MX records in your domain’s OVHcloud configuration, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}. Select `Domains`{.action}, click on the domain, then go to the `DNS Zone`{.action} tab.
+To create or modify the MX records in your domain name’s OVHcloud configuration, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). Go to the `Domain names`{.action} section, click on the domain concerned, then go to the `DNS Zone`{.action} tab.
 
-This table displays your domain’s OVHcloud configuration. Each row corresponds to a DNS record. To start with, please check if the MX records already exist in your domain name’s OVHcloud DNS zone configuration. You can do this using the search filter.
+The table shows your domain name’s OVHcloud configuration. Each row corresponds to a DNS record.
+
+As a first step, please check whether any MX records already exist in your domain name’s OVHcloud DNS configuration. You can do this using the filtering list located above the table for your DNS zone.<br>
+Select the **MX** type, then confirm to display only the MX DNS records for your DNS zone. Use the screenshot below.
 
 ![dnsmxrecord](images/mx-records-dns-zone.png){.thumbnail}
 
-If there are already MX records and you would like to replace them, click on the `...`{.action} icon  on the right-hand side of each table row, then click `Delete record`{.action}. Please ensure, however, that you don’t delete all MX records before you add the new ones.
+- If MX records already exist and you want to edit them, click the `...`{.action} button to the right of each table row, and then click `Edit Entry`{.action}.
+- If no MX record is present, click the `Add record`{.action} button to the right of the table, then choose `MX`{.action}. Enter the information requested, depending on the email solution you have chosen:
 
-To check if MX records already exist, use the filter above the DNS table to select the **MX** field, then confirm to only display the MX DNS records for your DNS zone.
+**If you have an OVHcloud email solution**, please refer to the information provided in the [OVHcloud MX configuration](#mxovhcloud) step.
 
-To add a record, click `Add record`{.action} button to the right of the table, then select `MX`{.action}. Fill in the information required, depending on the email solution you have ordered:
+![dnsmxrecord](images/mx-records-dns-zone-modif.png){.thumbnail}
 
-- **If you have an OVHcloud email solution:** Please refer to the information provided in [Step 2: Familiarise yourself with the OVHcloud MX configuration](/pages/web_cloud/domains/dns_zone_mx#step-2-familiarise-yourself-with-the-ovh-mx-configuration){.external}.
+Fill in the values, complete the steps, then click `Confirm`{.action}.
 
-- **If you are using an email solution from another service provider:** Please refer to the information given by your service provider.
-
-Once you have entered the information, finalise the steps, then click `Confirm`{.action}.
+**If you have another email solution**, please refer to the information provided by your email service provider.
 
 > [!primary]
 >
-> The change can take 4-24 hours to fully propagate.
+> The change can take between 4 and 24 hours to propagate fully.
 >
 
 ## Go further
 
-[General information about DNS servers](/pages/web_cloud/domains/dns_server_general_information){.external}
+[General information about DNS servers](/pages/web_cloud/domains/dns_server_general_information)
 
-[Web hosting: How to edit your DNS zone](/pages/web_cloud/domains/dns_zone_edit){.external}.
+[Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit)
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/).
+[Configuring an SPF record on your domain name](/pages/web_cloud/domains/dns_zone_spf)
+
+[Configuring a DKIM record](/pages/web_cloud/domains/dns_zone_dkim)
+
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/).
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-gb/support-levels/).
 
