@@ -11,7 +11,7 @@ La migration d'un service Hosted Private Cloud comprend deux aspects :
 - Le contexte Hosted Private Cloud OVHcloud qui comprend la partie client, l'administration de votre infrastructure.
 - Le contexte VMware qui comprend tout l'eco-système VMware, sur l'infrastructure elle-même.
 
-**Découvez comment couvrir tous les aspects liés à la migration vers un service Hosted Private Cloud**
+**Découvrez comment couvrir tous les aspects liés à la migration vers un service Hosted Private Cloud**
 
 > [!primary]
 >

@@ -1,6 +1,6 @@
 ---
 title: Activation du pare-feu applicatif
-excerpt: "Découvez comment activer le pare-feu applicatif sur un offre d'hébergement Web."
+excerpt: "Découvrez comment activer le pare-feu applicatif sur un offre d'hébergement Web."
 updated: 2021-04-26
 ---
 

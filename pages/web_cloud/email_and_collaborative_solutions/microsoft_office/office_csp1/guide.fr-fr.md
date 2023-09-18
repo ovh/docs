@@ -1,6 +1,6 @@
 ---
 title: Gérer un groupe de licences Microsoft 365 OVHcloud (CSP1)
-excerpt: Découvez comment souscrire à une licence Microsoft 365 et la gérer dans votre espace client OVHcloud.
+excerpt: Découvrez comment souscrire à une licence Microsoft 365 et la gérer dans votre espace client OVHcloud.
 updated: 2021-09-09
 ---
 
@@ -15,7 +15,7 @@ Voici la liste des logiciels compris dans la suite:
 - Licences Apps for business : Excel, Word, PowerPoint, Outlook, Note, Publisher.
 - Licences Apps for entreprise : Excel, Word, PowerPoint, Outlook, Note, Publisher, Access.
 
-**Découvez comment souscrire à une licence Microsoft 365 et la gérer dans votre espace client OVHcloud**
+**Découvrez comment souscrire à une licence Microsoft 365 et la gérer dans votre espace client OVHcloud**
 
 ## Prérequis
 

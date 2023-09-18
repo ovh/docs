@@ -1,6 +1,6 @@
 ---
 title: "AI Deploy - Tutoriel - Créer un service web pour reconnaître la langue des signes avec YOLOv7 (EN)"
-excerpt: "Découvez comment construire une application de reconnaissance de la langue des signes avec Streamlit"
+excerpt: "Découvrez comment construire une application de reconnaissance de la langue des signes avec Streamlit"
 updated: 2023-04-03
 ---
 
