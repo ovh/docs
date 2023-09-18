@@ -1,10 +1,10 @@
 ---
 title: Creating a cluster with Pulumi
 excerpt: 'Creates an OVHcloud Managed Kubernetes Service cluster with Pulumi'
-updated: 2023-09-12
+updated: 2023-09-18
 ---
 
-**Last updated 12th September 2023**
+**Last updated 18th September 2023**
 
 <style>
  pre {
@@ -71,8 +71,6 @@ All available Pulumi resources have their definition and [documentation](https:/
 
 In this guide, we will create two resources:
 
-TODO: fix with correct link in pulumi registry
-
 * a [Kube resource](https://www.pulumi.com/registry/packages/ovh/api-docs/cloudproject/kube/){.external}, that represents an OVHcloud managed Kubernetes cluster
 * and a [KubeNodePool resource](https://www.pulumi.com/registry/packages/ovh/api-docs/cloudproject/kubenodepool/){.external}, that represents a Kubernetes Node Pool
 
@@ -80,12 +78,12 @@ TODO: fix with correct link in pulumi registry
 
 ## Getting your cluster/API tokens information
 
-The "OVH provider" needs to be configured with a set of credentials:
+The “OVH provider” needs to be configured with a set of credentials, which can be set using [Pulumi stack configuration](https://www.pulumi.com/docs/concepts/config/) or environment variables:
 
-* an `endpoint` (environment variable: OVH_ENDPOINT)
-* an `applicationKey` (environment variable: OVH_APPLICATION_KEY)
-* an `applicationSecret` (environment variable: OVH_APPLICATION_SECRET)
-* a `consumerKey` (environment variable: OVH_CONSUMER_KEY)
+* `ovh:endpoint` (environment variable: `OVH_ENDPOINT`)
+* `ovh:applicationKey` (environment variable: `OVH_APPLICATION_KEY`)
+* `ovh:applicationSecret` (secret) (environment variable: `OVH_APPLICATION_SECRET`)
+* `ovh:consumerKey` (environment variable: `OVH_CONSUMER_KEY`)
 
 Why?
 
@@ -124,7 +122,8 @@ export OVH_CONSUMER_KEY="xxx"
 
 One advantage with Pulumi is that allows you to build your infrastructures with a programming language of your choice. It supports a variety of programming languages.
 
-In this tutorial you will be able to deploy your Kubernetes cluster and its node pool in Go. Our OVH Pulumi provider supports crrently Go but also Python, Node.js/Typescript and C#/Dotnet.
+In this tutorial you will be able to deploy your Kubernetes cluster and its node pool in Go/Golang programming language.
+For your information, our OVH Pulumi provider supports crrently Go but also Python, Node.js/Typescript and C#/Dotnet.
 
 Follow our examples:
 
