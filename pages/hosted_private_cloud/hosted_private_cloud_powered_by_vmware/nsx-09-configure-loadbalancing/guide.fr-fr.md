@@ -188,7 +188,7 @@ Saisissez `to-lb-virtual-server`{.action} dans le champ **Name** de votre règle
 
 - **Action** : `DNAT`{.action}.
 - **Destination IP** : adresse IP virtuelle de votre T0, telle que `198.51.100.1`.
-- **Translated IP** : adresse IP de votre serveur virtuel, telle que `192.168.102.103`.
+- **Translated IP** : adresse IP de votre serveur virtuel, telle que `192.168.102.3`.
 - **Service PORT** : choisissez le port prédéfini `HTTP| 80`{.action}.
 
 Cliquez ensuite sur `SAVE`{.action}.
