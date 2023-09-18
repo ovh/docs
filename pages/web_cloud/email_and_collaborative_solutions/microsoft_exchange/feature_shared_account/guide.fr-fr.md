@@ -39,7 +39,7 @@ Renseignez les champs demandés :
 
 > [!primary]
 >
-> L'espace disponible pour créer un compte partagé dépend du nombre de comptes souscrits à votre plateforme. Chaque compte Exchange souscrit à votre plateforme débloque 5 Go pour les comptes partagés.
+> L'espace disponible pour créer un compte partagé dépend du nombre de comptes souscrits sur votre plateforme. Chaque compte Exchange souscrit sur votre plateforme débloque 5 Go pour les comptes partagés.
 >
 > **exemple:**
 >
