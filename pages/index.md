@@ -704,6 +704,7 @@
             + [Getting started](public-cloud-containers-orchestration-managed-kubernetes-k8s-getting-started)
                 + [Creating a cluster](public_cloud/containers_orchestration/managed_kubernetes/creating-a-cluster)
                 + [Creating a cluster through Terraform](public_cloud/containers_orchestration/managed_kubernetes/creating-a-cluster-through-terraform)
+                + [Creating a cluster with Pulumi](public_cloud/containers_orchestration/managed_kubernetes/creating-a-cluster-with-pulumi)
                 + [Deploying an application](public_cloud/containers_orchestration/managed_kubernetes/deploying-an-application)
                 + [Persistent Volumes on OVHcloud Managed Kubernetes](public_cloud/containers_orchestration/managed_kubernetes/persistent-volumes-on-ovh-managed-kubernetes)
                 + [Using the OVHcloud Managed Kubernetes LoadBalancer](public_cloud/containers_orchestration/managed_kubernetes/using-lb)
