@@ -830,13 +830,13 @@ Kliknij na poniższą zakładkę odnoszącą się do Twojej oferty, aby sprawdzi
 >>
 >> W [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=pl) w zakładce `Web Cloud`{.action} kliknij na `Microsoft`{.action}, a następnie na `Exchange`{.action}. W kolejnym kroku kliknij na wybraną nazwę usługi Exchange.<br><br> W rubryce `Przypisane domeny`{.action}, sprawdź kolor ikony `DKIM` po prawej stronie odpowiedniej domeny (patrz obrazek poniżej).
 >>
->> ![email](obrazy/red-dkim.png){.thumbnail}
+>> ![email](images/red-dkim.png){.thumbnail}
 >>
 > **E-mail Pro**
 >>
 >> W [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=pl) w zakładce `Web Cloud`{.action} kliknij `E-mail Pro`{.action}, a następnie nazwę danej usługi E-mail Pro.<br><br> W rubryce `Przypisane domeny`{.action} sprawdź kolor ikony `DKIM` po prawej stronie odpowiedniej domeny (patrz obrazek poniżej).
 >>
->> ![email](obrazy/red-dkim.png){.thumbnail}
+>> ![email](images/red-dkim.png){.thumbnail}
 
 Jeśli właśnie skonfigurowałeś DKIM, oznacza to, że aktywacja DKIM nie została zakończona, **zaleca się odczekać 24 godziny**.
 

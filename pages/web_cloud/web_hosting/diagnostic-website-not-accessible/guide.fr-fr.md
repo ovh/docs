@@ -15,7 +15,7 @@ Plusieurs retours d'erreur peuvent apparaître sur votre navigateur en cas d'ina
 |Edge :<br>« Désolé, impossible d’accéder à cette page »|![cantbereached_edge](images/cantbereached_edge.png){.thumbnail}|
 |Safari :<br>« Safari ne parvient pas à trouver le serveur »|![cantbereached_safari](images/cantbereached_safari.png){.thumbnail}|
 
-**Découvez comment résoudre les erreurs du type "Ce site est inaccessible"**
+**Découvrez comment résoudre les erreurs du type "Ce site est inaccessible"**
 
 > [!warning]
 >

@@ -1,6 +1,6 @@
 ---
 title: "Désactiver le serveur DHCP de votre modem"
-excerpt: "Découvrer comment désactiver le DHCP sur les modems des principaux fournisseur d'accès"
+excerpt: "Découvrez comment désactiver le DHCP sur les modems des principaux fournisseur d'accès"
 updated: 2021-04-14
 ---
 

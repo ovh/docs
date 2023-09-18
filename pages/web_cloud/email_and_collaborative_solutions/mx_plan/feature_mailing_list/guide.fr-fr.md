@@ -8,7 +8,7 @@ updated: 2023-08-01
 
 Une mailing list vous permet de contacter des abonnés en masse, c'est à dire de diffuser un message ou une information à plusieurs destinataires à la fois. Cela peut avoir un intérêt dans le cadre d'un mailing d'information, par exemple, sur la sortie d'un nouveau produit (pour un site e-commerce) ou pour informer d'un prochain rassemblement (pour un site communautaire). 
 
-**Découvrer comment gérer vos mailing-lists**
+**Découvrez comment gérer vos mailing-lists**
 
 ### Principe de la modération
 

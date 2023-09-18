@@ -11,7 +11,7 @@ Il est donc essentiel d'adopter des bonnes pratiques sur la gestion de votre com
 
 L'espace client OVHcloud vous permet aussi de gérer vos données personnelles et de déléguer l'accès à vos services à d'autres utilisateurs.
 
-**Découvez les bonnes pratiques de gestion de votre compte et de vos données personnelles.**
+**Découvrez les bonnes pratiques de gestion de votre compte et de vos données personnelles.**
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/odO58c4gJfc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 

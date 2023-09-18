@@ -11,7 +11,7 @@ La migration d'un service Managed Bare Metal comprend deux aspects :
 * Le contexte Managed Bare Metal OVHcloud qui comprend la partie client, l'administration de votre infrastructure.
 * Le contexte VMware qui comprend tout l'eco-système VMware, sur l'infrastructure elle-même.
 
-**Découvez comment couvrir tous les aspects liés à la migration vers un service Managed Bare Metal**
+**Découvrez comment couvrir tous les aspects liés à la migration vers un service Managed Bare Metal**
 
 > [!primary]
 >

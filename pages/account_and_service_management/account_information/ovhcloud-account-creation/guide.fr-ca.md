@@ -9,7 +9,7 @@ updated: 2023-05-23
 Pour utiliser les services OVHcloud, vous devez d'abord créer votre compte.
 La création d'un compte peut s'effectuer avant ou pendant la commande de votre premier service OVHcloud.
 
-**Découvez comment vous créer un compte OVHcloud.**
+**Découvrez comment vous créer un compte OVHcloud.**
 
 ## Prérequis
 
