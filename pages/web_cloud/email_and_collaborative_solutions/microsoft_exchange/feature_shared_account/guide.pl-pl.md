@@ -43,11 +43,11 @@ Wpisz wymagane pola:
 
 > [!primary]
 >
-> Dostępna przestrzeń do utworzenia konta współdzielonego zależy od liczby kont subskrybowanych na platformie. Każde konto Exchange wykupione na platformie odblokowuje 5 GB dla kont współdzielonych.
+> Dostępna przestrzeń do utworzenia konta współdzielonego zależy od liczby kont zamówionych na platformie. Każde konto Exchange wykupione na platformie odblokowuje 5 GB dla kont współdzielonych.
 >
 > **Przykład:**
 >
-> Zamówiłeś 4 konta Exchange na platformie. Masz zatem **4 x 5GB**, czyli **20 GB** przyznanej przestrzeni dla kont współdzielonych platformy Exchange.
+> Na platformie zamówiłeś 4 konta Exchange. W związku z tym masz **4 x 5GB*, czyli **20 GB** przyznanej przestrzeni dla kont współdzielonych.
 
 Kliknij Dalej, aby `uzyskać dostęp`{.action} do podsumowania. Zakończ operację, klikając `Zatwierdź`{.action}.
 

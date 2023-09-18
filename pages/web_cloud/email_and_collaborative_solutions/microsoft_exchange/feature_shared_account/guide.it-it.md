@@ -43,11 +43,11 @@ Inserisci i campi richiesti:
 
 > [!primary]
 >
-> Lo spazio disponibile per creare un account condiviso dipende dal numero di account sottoscritti sulla piattaforma. Ogni account Exchange sottoscritto alla piattaforma sblocca 5 GB per gli account condivisi.
+> Lo spazio disponibile per creare un account condiviso dipende dal numero di account sottoscritti sulla piattaforma. Ogni account Exchange sottoscritto sulla piattaforma sblocca 5 GB per gli account condivisi.
 >
 > **esempio:**
 >
-> Hai attivato 4 account Exchange sulla tua piattaforma, quindi hai **4 x 5 GB**, cioè **20 GB** di spazio assegnato per gli account condivisi della tua piattaforma Exchange.
+> Hai attivato 4 account Exchange sulla tua piattaforma, quindi hai **4 x 5GB**, cioè **20 GB** di spazio assegnato per gli account condivisi della tua piattaforma.
 
 Clicca su `Seguente`{.action} per visualizzare il riepilogo. Per completare l'operazione, clicca su `Conferma`{.action}.
 

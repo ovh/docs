@@ -43,11 +43,11 @@ Füllen die Felder aus:
 
 > [!primary]
 >
-> Der für die Erstellung eines gemeinsamen Accounts verfügbare Speicherplatz hängt von der Anzahl der Accounts ab, die für Ihre Plattform abonniert wurden. Jeder Exchange Account, der für Ihre Plattform registriert ist, entsperrt 5 GB für die gemeinsam genutzten Accounts.
+> Der für die Erstellung eines gemeinsamen Accounts verfügbare Speicherplatz hängt von der Anzahl der auf Ihrer Plattform abonnierten Accounts ab. Jeder auf Ihrer Plattform abonnierte Exchange Account entsperrt 5 GB für die gemeinsam genutzten Accounts.
 >
 > **Beispiel:**
 >
-> Sie haben 4 Exchange Accounts auf Ihrer Plattform abonniert, sodass Sie **4 x 5 GB** haben. Dies entspricht **20 GB** dem für die freigegebenen Accounts Ihrer Exchange Plattform zugewiesenen Speicherplatz.
+> Sie haben 4 Exchange Accounts auf Ihrer Plattform abonniert, sodass Sie **4 x 5 GB** haben. Dies entspricht **20 GB** dem für die freigegebenen Accounts Ihrer Plattform zugewiesenen Speicherplatz.
 
 
 Klicken Sie auf `Weiter`{.action}, um zur Zusammenfassung zu gelangen und klicken Sie auf `Bestätigen`{.action}.

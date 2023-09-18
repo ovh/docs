@@ -43,11 +43,11 @@ Introduza os campos solicitados:
 
 > [!primary]
 >
-> O espaço disponível para criar uma conta partilhada depende do número de contas subscritas à sua plataforma. Cada conta Exchange subscrita à sua plataforma desbloqueia 5 GB para as contas partilhadas.
+> O espaço disponível para criar uma conta partilhada depende do número de contas subscritas na sua plataforma. Cada conta Exchange subscrita na sua plataforma desbloqueia 5 GB para as contas partilhadas.
 >
 > **exemplo:**
 >
-> Subscreveu 4 contas Exchange na sua plataforma, pelo que tem **4 x 5GB**, ou seja **20 GB** de espaço alocado para as contas partilhadas da sua plataforma Exchange.
+> Subscreveu 4 contas Exchange na sua plataforma, pelo que tem **4 x 5GB**, ou seja **20 GB** de espaço alocado para as contas partilhadas da sua plataforma.
 
 Clique em `Seguinte`{.action} para aceder ao resumo. Finalize a operação ao clicar em `Validar`{.action}.
 
