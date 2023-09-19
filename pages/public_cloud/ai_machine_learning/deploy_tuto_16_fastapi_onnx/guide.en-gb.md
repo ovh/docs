@@ -219,6 +219,12 @@ docker build . -t densenet-onnx-fastapi:latest
 > The shared registry of AI Deploy should only be used for testing purpose. Please consider attaching your own Docker registry. More information about this can be found [here](/pages/public_cloud/ai_machine_learning/training_guide_05_howto_add_registry).
 >
 
+> [!warning]
+>
+> In order to run containers using AI products, please make sure that the docker image you will push respects the **linux/AMD64** target architecture. You could, for instance, build your image using **buildx** as follows:
+>
+> `docker buildx build --platform linux/amd64 ...`
+>
 Find the address of your shared registry by launching this command:
 
 ```console
