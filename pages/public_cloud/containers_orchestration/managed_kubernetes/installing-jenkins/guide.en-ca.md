@@ -4,28 +4,6 @@ excerpt: "Find out how to install Jenkins on OVHcloud Managed Kubernetes"
 updated: 2021-12-20
 ---
 
-<style>
- pre {
-     font-size: 14px;
- }
- pre.console {
-   background-color: #300A24; 
-   color: #ccc;
-   font-family: monospace;
-   padding: 5px;
-   margin-bottom: 5px;
- }
- pre.console code {
-   border: solid 0px transparent;
-   font-family: monospace !important;
-   font-size: 0.75em;
-   color: #ccc;
- }
- .small {
-     font-size: 0.75em;
- }
-</style>
-
 In this tutorial we are going to guide you with the install of [Jenkins](https://jenkins.io/){.external} on your OVHcloud Managed Kubernetes Service.
 
 We are going to install Jenkins master and slave cluster utilizing the [Jenkins Kubernetes plugin](https://plugins.jenkins.io/kubernetes/){.external}.
@@ -48,9 +26,10 @@ kubectl delete storageclasses.storage.k8s.io csi-cinder-high-speed
 
 It will delete the existing `StorageClass`:
 
-<pre class="console"><code>$ kubectl delete storageclasses.storage.k8s.io csi-cinder-high-speed
+```console
+$ kubectl delete storageclasses.storage.k8s.io csi-cinder-high-speed
 storageclass.storage.k8s.io "csi-cinder-high-speed" deleted
-</code></pre>
+```
 
 - Create a new `StorageClass` with the required fix
 
@@ -60,9 +39,10 @@ kubectl apply -f https://raw.githubusercontent.com/ovh/docs/develop/pages/public
 
 It will apply the correct `StorageClass` YAML manifest:
 
-<pre class="console"><code>$ kubectl apply -f https://raw.githubusercontent.com/ovh/docs/develop/pages/public_cloud/containers_orchestration/managed_kubernetes/fix-persistent-volumes-permissions/files/fixed-cinder-high-speed-storage-class.yaml
+```console
+$ kubectl apply -f https://raw.githubusercontent.com/ovh/docs/develop/pages/public_cloud/containers_orchestration/managed_kubernetes/fix-persistent-volumes-permissions/files/fixed-cinder-high-speed-storage-class.yaml
 storageclass.storage.k8s.io/csi-cinder-high-speed created
-</code></pre>
+```
 
 ## Installing the Jenkins Helm chart
 
@@ -89,7 +69,8 @@ helm install my-first-jenkins bitnami/jenkins
 
 This will install your Jenkins master:
 
-<pre class="console"><code>$ helm install my-first-jenkins bitnami/jenkins
+```console
+$ helm install my-first-jenkins bitnami/jenkins
 
 NAME: my-first-jenkins
 LAST DEPLOYED: Mon Dec 20 11:30:59 2021
@@ -116,7 +97,7 @@ APP VERSION: 2.319.1
 
   echo Username: user
   echo Password: $(kubectl get secret --namespace default my-first-jenkins -o jsonpath="{.data.jenkins-password}" | base64 --decode)
-</code></pre>
+```
 
 As the instructions say, you will need to wait a few moments to get the `LoadBalancer` URL.
 You can test if the `LoadBalancer` is ready using:
@@ -127,16 +108,18 @@ kubectl get svc --namespace default -w my-first-jenkins
 
 After some minutes, you will get the `LoadBalancer` URL:
 
-<pre class="console"><code>$ kubectl get svc --namespace default -w my-first-jenkins
+```console
+$ kubectl get svc --namespace default -w my-first-jenkins
 
 NAME               TYPE           CLUSTER-IP   EXTERNAL-IP   PORT(S)                      AGE
 my-first-jenkins   LoadBalancer   10.3.3.52    <pending>     80:32193/TCP,443:32260/TCP   49s
 my-first-jenkins   LoadBalancer   10.3.3.52    152.228.169.118   80:32193/TCP,443:32260/TCP   54s
-</code></pre>
+```
 
 The URL under `EXTERNAL-IP` is your Jenkins URL. You can the follow the instructions on the Helm Chart to get the connection parameters. In my case:
 
-<pre class="console"><code>$ export SERVICE_IP=$(kubectl get svc --namespace default my-first-jenkins --template "{{ range (index .status.loadBalancer.ingress 0) }}{{.}}{{ end }}")
+```console
+$ export SERVICE_IP=$(kubectl get svc --namespace default my-first-jenkins --template "{{ range (index .status.loadBalancer.ingress 0) }}{{.}}{{ end }}")
 
 $ echo "Jenkins URL: http://$SERVICE_IP/"
 Jenkins URL: http://152.228.169.118/
@@ -146,7 +129,7 @@ Username: user
 
 $ echo Password: $(kubectl get secret --namespace default my-first-jenkins -o jsonpath="{.data.jenkins-password}" | base64 --decode)
 Password: KMhUs53TJT
-</code></pre>
+```
 
 And putting the URL in your browser will take you to the new Jenkins:
 
@@ -168,9 +151,10 @@ helm delete my-first-jenkins
 
 It will delete your Jenkins and its associated resources from your cluster:
 
-<pre class="console"><code>$ helm delete my-first-jenkins
+```console
+$ helm delete my-first-jenkins
 release "my-first-jenkins" uninstalled
-</code></pre>
+```
 
 ## Go further
 

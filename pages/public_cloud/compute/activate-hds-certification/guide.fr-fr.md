@@ -15,7 +15,7 @@ Les services OVHcloud Public Cloud sont certifiés HDS pour certaines activités
 |Compute, Storage (Block, Object, Archive, Snapshot, Instance Backup)|1,2,3,4,6|
 |Managed Kubernetes Service, Managed Private Registry, AI Training, Data Processing, Public Cloud Databases|1,2,3,4,5,6|
 
-**Découvez comment activer l’option pour l’hébergement des données de santé sur votre projet Public Cloud**
+**Découvrez comment activer l’option pour l’hébergement des données de santé sur votre projet Public Cloud**
 
 ## Prérequis
 

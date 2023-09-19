@@ -4,28 +4,6 @@ excerpt: Find out how to use the power of RBAC to generate customized kubeconfig
 updated: 2023-06-07
 ---
 
-<style>
- pre {
-     font-size: 14px;
- }
- pre.console {
-   background-color: #300A24; 
-   color: #ccc;
-   font-family: monospace;
-   padding: 5px;
-   margin-bottom: 5px;
- }
- pre.console code {
-   border: solid 0px transparent;
-   font-family: monospace !important;
-   font-size: 0.75em;
-   color: #ccc;
- }
- .small {
-     font-size: 0.75em;
- }
-</style>
-
 ## Objective
 
 When a Kubernetes cluster is created, with the OVHcloud Control Panel, the API or the Terraform provider, you can retrieve its `kubeconfig` file in order to access your cluster through the `kubectl` Command Line Interface (CLI).
@@ -75,13 +53,14 @@ Additionally, follow the [deploying a Hello World application](/pages/public_clo
 
 At this point, you should have a running Kubernetes cluster with hello-world deployment and pod such as below:
 
-<pre class="console"><code>$ kubectl get pod,deploy -n hello-app
+```console
+$ kubectl get pod,deploy -n hello-app
 NAME                                          READY   STATUS    RESTARTS   AGE
 pod/hello-world-deployment-5869476bbd-rvtdl   1/1     Running   0          4d2h
 
 NAME                                     READY   UP-TO-DATE   AVAILABLE   AGE
 deployment.apps/hello-world-deployment   1/1     1            1           4d22h
-</code></pre>
+```
 
 The idea is to have a different namespace than the default one and several resources running into it. 
 
@@ -154,19 +133,21 @@ kubectl get ns --kubeconfig=kubeconfig.txt
 
 You should obtain a result like this:
 
-<pre class="console"><code>$ kubectl get ns --kubeconfig=kubeconfig.txt
+```console
+$ kubectl get ns --kubeconfig=kubeconfig.txt
 Error from server (Forbidden): namespaces is forbidden: User "system:serviceaccount:hello-app:sa-pod-reader" cannot list resource "namespaces" in API group "" at the cluster scope
-</code></pre>
+```
 
 As you can see, you executed the `kubectl` command as the ServiceAccount you created with limited access.
 The behaviour is normal because with this `kubeconfig` file you don't have the rights to do this operation.
 
 Instead, list the pods in the `hello-app` namespace:
 
-<pre class="console"><code>$ kubectl get pod -n hello-app --kubeconfig=kubeconfig.txt
+```console
+$ kubectl get pod -n hello-app --kubeconfig=kubeconfig.txt
 NAME                                      READY   STATUS    RESTARTS   AGE
 hello-world-deployment-5869476bbd-rvtdl   1/1     Running   0          4h43m
-</code></pre>
+```
 
 As you can see, the new `kubeconfig` file has a restricted access to your Kubernetes cluster.
 

@@ -5,8 +5,31 @@ hidden: true
 kb: Hosted Private Cloud
 category_l1: Nutanix on OVHcloud
 category_l2: Advanced usage
-updated: 2022-04-05
+updated: 2023-09-14
 ---
+
+<style>
+ pre {
+     font-size: 14px !important;
+ }
+ pre.bgwhite {
+   background-color: #fff !important;
+   color: #000 !important;
+   font-family: monospace !important;
+   padding: 5px !important;
+   margin-bottom: 5px !important;
+ }
+ pre.bgwhite code {
+   background-color: #fff !important;
+   border: solid 0px transparent !important;
+   font-family: monospace !important;
+   font-size: 0.90em !important;
+   color: #000 !important;
+ }
+ .small {
+     font-size: 0.90em !important;
+ }
+</style>
 
 ## Objective
 
@@ -17,12 +40,13 @@ Nutanix clusters are scalable. You can add nodes to an existing cluster.
 > [!warning]
 > OVHcloud provides services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 >
-> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact the [OVHcloud Professional Services team](https://www.ovhcloud.com/en-us/professional-services/) or a [specialist service provider](https://partner.ovhcloud.com/en/directory/) if you have difficulties or doubts concerning the administration, usage or implementation of services on a server.
+> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact the [OVHcloud Professional Services team](https://www.ovhcloud.com/en/professional-services/) or a [specialist service provider](https://partner.ovhcloud.com/en/directory/) if you have difficulties or doubts concerning the administration, usage or implementation of services on a server.
 
 ## Requirements
 
 - A Nutanix cluster in your OVHcloud account
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
+- Access to the [OVHcloud API](https://ca.api.ovh.com/).
 - You must be connected to the cluster via Prism Central
 - A ready-to-configure physical server added to the OVHcloud Control Panel
 
@@ -36,11 +60,77 @@ The nodes to be added must have the same version of **AOS** as the existing clus
 
 ## Instructions
 
+### Checking node delivery.
+
+Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) and check that an additional node appears in the Nutanix cluster.
+
+![New Node](images/scaleup1.png){.thumbnail}
+
+You can also check this via the OVHcloud API.
+
+Use the following API call:
+
+> [!api]
+>
+> @api {GET} /nutanix/{serviceName}
+>
+
+- `serviceName`: enter the cluster name
+
+![New Node via APIV6](images/scaleup2.png){.thumbnail}
+
+The new node appears with 0.0.0.0 IPs.
+
+### Node installation.
+
+To install the new node, you must change the cluster properties by making a `PUT` on the cluster.
+
+To do this, use the following API call:
+
+> [!api]
+>
+> @api {PUT} /nutanix/{serviceName}
+>
+
+> [!warning]
+> Make sure to untick the `redeployCluster` box.
+
+Tick the `scaleUp` box.
+Enter the following information below **nodes**:
+
+- **ahvip** : IP address of the hypervisor of the new node.
+- **cvmip** : IP address of the CVM of the new node.
+
+> [!warning]
+> These IP addresses must not already be used and must match your addressing plan.
+
+You must also complete the deployment version. It may not correspond to the current version of your cluster. This is not an issue as the node will be modified by the Nutanix installer when adding it to the cluster via Prism Element.
+
+![PUT scaleUp via APIV6](images/scaleup3.png){.thumbnail}
+
+Click `Execute`{.action} to send the request.
+
+In the "Result" tab, the new node appears with the new IP address.
+
+At the end of the installation, you will receive an email confirming that the node is ready.
+
+<pre class="bgwhite"><code>
+Dear Customer,
+
+Your server has just been installed.
+
+You must now add it back to your Nutanix cluster by connecting to Prism Central: https://cluster-xxxx.nutanix.ovh.net:9440
+
+We remain at your disposal for any further information.
+
+The OVHcloud Team
+</code></pre>
+
 ### Add a node to a Nutanix cluster.
 
 Connect to **Prism Element** through **Prism Central**.
 
-For more information on connecting to the cluster; see the « [Go further](#gofurther) » section of this guide. 
+For more information on connecting to the cluster, see the « [Go further](#gofurther) » section of this guide. 
 
 On the dashboard, the 3 nodes are visible in the `Hardware Summary`. Click on `View Details`{.action} in the middle left to bring up more details.
 

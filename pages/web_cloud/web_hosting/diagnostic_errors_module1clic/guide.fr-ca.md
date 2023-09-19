@@ -8,7 +8,7 @@ updated: 2023-08-21
 
 La création d'un [Module en 1 clic](/pages/web_cloud/web_hosting/cms_install_1_click_modules) en mode simple ou avancé peut occasionner différentes anomalies.
 
-**Découvez comment diagnostiquer les cas les plus courants d'erreurs liées aux créations de modules en 1 clic**
+**Découvrez comment diagnostiquer les cas les plus courants d'erreurs liées aux créations de modules en 1 clic**
 
 > [!warning]
 >

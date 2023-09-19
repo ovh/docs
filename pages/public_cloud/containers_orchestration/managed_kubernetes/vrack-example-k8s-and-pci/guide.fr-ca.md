@@ -3,27 +3,6 @@ title: Working with vRack example - Managed Kubernetes and Public Cloud instance
 updated: 2021-12-21
 ---
 
-<style>
- pre {
-     font-size: 14px;
- }
- pre.console {
-   background-color: #300A24; 
-   color: #ccc;
-   font-family: monospace;
-   padding: 5px;
-   margin-bottom: 5px;
- }
- pre.console code {
-   b   font-family: monospace !important;
-   font-size: 0.75em;
-   color: #ccc;
- }
- .small {
-     font-size: 0.75em;
- }
-</style>
-
 ## Objective
 
 OVHcloud [vRack](https://www.ovh.co.uk/solutions/vrack/) is a private network solution that enables our customers to route traffic between OVHcloud dedicated servers as well as other OVHcloud services. At the same time, it allows you to add Public Cloud instances and Managed Kubernetes clusters to your private network to create an infrastructure of physical and virtual resources.
@@ -94,7 +73,8 @@ After instance creation, click on the name of the newly created instance, and th
 
 If we log in to the instance using SSH, we can see that it has two network interfaces, one attached to the public IP address we used to log in, the other attached to the private network:
 
-<pre class="console"><code>$ ssh ubuntu@141.95.174.113
+```console
+$ ssh ubuntu@141.95.174.113
 The authenticity of host '141.95.174.113 (141.95.174.113)' can't be established.
 ECDSA key fingerprint is SHA256:+bfW0MhF8CisP+6LmXa1hdJ15owKWk+KKTgeIoFLnOY.
 Are you sure you want to continue connecting (yes/no/[fingerprint])? yes
@@ -116,7 +96,8 @@ Welcome to Ubuntu 21.10 (GNU/Linux 5.13.0-19-generic x86_64)
 To see these additional updates run: apt list --upgradable
 
 The list of available updates is more than a week old.
-To check for new updates run: sudo apt update</code></pre>
+To check for new updates run: sudo apt update
+```
 
 Please take note of the private network IP address (in this case `10.0.64.51`), as we will need to use it to configure WordPress.
 
@@ -132,7 +113,8 @@ sudo apt -y install mariadb-server
 
 That will install MariaDB and all its dependencies:
 
-<pre class="console"><code>ubuntu@b2-7-gra11:~$ sudo apt -y install mariadb-server
+```console
+ubuntu@b2-7-gra11:~$ sudo apt -y install mariadb-server
 Reading package lists... Done
 Building dependency tree... Done
 Reading state information... Done
@@ -162,7 +144,8 @@ No services need to be restarted.
 
 No containers need to be restarted.
 
-No user sessions are running outdated binaries.</code></pre>
+No user sessions are running outdated binaries.
+```
 
 #### Creating a user and a database
 
@@ -196,7 +179,8 @@ flush privileges;
 
 The MariaDB instance is now ready.
 
-<pre class="console"><code>ubuntu@b2-7-gra11:~$ sudo mysql
+```console
+ubuntu@b2-7-gra11:~$ sudo mysql
 Welcome to the MariaDB monitor.  Commands end with ; or \g.
 Your MariaDB connection id is 44
 Server version: 10.5.12-MariaDB-1build1 Ubuntu 21.10
@@ -216,7 +200,7 @@ Query OK, 0 rows affected (0.001 sec)
 
 MariaDB [(none)]> exit
 Bye
-</code></pre>
+```
 
 #### Making MariaDB listen on the private network interface
 
@@ -256,7 +240,8 @@ mysql -h<MARIADB_ADDRESS> -u wordpress_user -pa_strong_password
 
 In this case:
 
-<pre class="console"><code>ubuntu@b2-7-gra11:~$ mysql -h10.0.64.51 -u wordpress_user -pa_strong_password
+```console
+ubuntu@b2-7-gra11:~$ mysql -h10.0.64.51 -u wordpress_user -pa_strong_password
 Welcome to the MariaDB monitor.  Commands end with ; or \g.
 Your MariaDB connection id is 30
 Server version: 10.5.13-MariaDB-0ubuntu0.21.10.1 Ubuntu 21.10
@@ -275,7 +260,7 @@ MariaDB [(none)]> show databases;
 2 rows in set (0.001 sec)
 
 MariaDB [(none)]> 
-</code></pre>
+```
 
 #### Accessing the MariaDB instance from the Managed Kubernetes cluster
 
@@ -305,7 +290,8 @@ And then execute the following comand:
 kubectl run -it --rm --image=mysql:5.6 --restart=Never mysql-client -- mysql -h <MARIADB_ADDRESS> -uwordpress_user  -pa_strong_password
 ```
 
-<pre class="console"><code>$ kubectl run -it --rm --image=mysql:5.6 --restart=Never mysql-client -- mysql -h 10.0.64.51 -uwordpress_user  -pa_strong_password
+```console
+$ kubectl run -it --rm --image=mysql:5.6 --restart=Never mysql-client -- mysql -h 10.0.64.51 -uwordpress_user  -pa_strong_password
 If you don't see a command prompt, try pressing enter.
 
 mysql> show databases;
@@ -320,7 +306,7 @@ mysql> show databases;
 mysql> exit
 Bye
 pod "mysql-client" deleted
-</code></pre>
+```
 
 ### Setting up WordPress
 
@@ -338,9 +324,10 @@ kubectl delete storageclasses.storage.k8s.io csi-cinder-high-speed
 
 It will delete the existing `StorageClass`:
 
-<pre class="console"><code>$ kubectl delete storageclasses.storage.k8s.io csi-cinder-high-speed
+```console
+$ kubectl delete storageclasses.storage.k8s.io csi-cinder-high-speed
 storageclass.storage.k8s.io "csi-cinder-high-speed" deleted
-</code></pre>
+```
 
 - Create a new `StorageClass` with the required fix
 
@@ -350,9 +337,10 @@ kubectl apply -f https://raw.githubusercontent.com/ovh/docs/develop/pages/public
 
 It will apply the correct `StorageClass` YAML manifest:
 
-<pre class="console"><code>$ kubectl apply -f https://raw.githubusercontent.com/ovh/docs/develop/pages/public_cloud/containers_orchestration/managed_kubernetes/fix-persistent-volumes-permissions/files/fixed-cinder-high-speed-storage-class.yaml
+```console
+$ kubectl apply -f https://raw.githubusercontent.com/ovh/docs/develop/pages/public_cloud/containers_orchestration/managed_kubernetes/fix-persistent-volumes-permissions/files/fixed-cinder-high-speed-storage-class.yaml
 storageclass.storage.k8s.io/csi-cinder-high-speed created
-</code></pre>
+```
 
 #### Using the WordPress Helm chart
 
@@ -375,7 +363,8 @@ helm install my-first-k8s-wordpress bitnami/wordpress --set mariadb.enabled=fals
 
 Don't forget to replace `<MARIADB_ADDRESS>` with the private network IP address of the MariaDB instance (in this case `10.0.64.51`).
 
-<pre class="console"><code>$ helm install my-first-k8s-wordpress bitnami/wordpress --set mariadb.enabled=false,externalDatabase.host=10.0.64.51,externalDatabase.user=wordpress_user,externalDatabase.password=a_strong_password,externalDatabase.database=wordpress_db,externalDatabase.port=3306
+```console
+$ helm install my-first-k8s-wordpress bitnami/wordpress --set mariadb.enabled=false,externalDatabase.host=10.0.64.51,externalDatabase.user=wordpress_user,externalDatabase.password=a_strong_password,externalDatabase.database=wordpress_db,externalDatabase.port=3306
 NAME: my-first-k8s-wordpress
 LAST DEPLOYED: Tue Dec 21 10:30:26 2021
 NAMESPACE: default
@@ -410,7 +399,7 @@ To access your WordPress site from outside the cluster follow the steps below:
 
   echo Username: user
   echo Password: $(kubectl get secret --namespace default my-first-k8s-wordpress -o jsonpath="{.data.wordpress-password}" | base64 --decode)
-</code></pre>
+```
 
 Wait until you obtain an external IP:
 
@@ -418,22 +407,24 @@ Wait until you obtain an external IP:
 kubectl get svc --namespace default my-first-k8s-wordpress -w
 ```
 
-<pre class="console"><code>$ kubectl get svc --namespace default my-first-k8s-wordpress -w
+```console
+$ kubectl get svc --namespace default my-first-k8s-wordpress -w
 NAME                     TYPE           CLUSTER-IP   EXTERNAL-IP   PORT(S)                      AGE
 my-first-k8s-wordpress   LoadBalancer   10.3.7.60    <pending>     80:30158/TCP,443:32715/TCP   61s
 my-first-k8s-wordpress   LoadBalancer   10.3.7.60    152.228.251.29   80:30158/TCP,443:32715/TCP   69s
-</code></pre>
+```
 
 Then we can follow the instructions to get the Admin URL:
 
-<pre class="console"><code>export SERVICE_IP=$(kubectl get svc --namespace default my-first-k8s-wordpress --template "{{ range (index .status.loadBalancer.ingress 0) }}{{.}}{{ end }}")
+```console
+export SERVICE_IP=$(kubectl get svc --namespace default my-first-k8s-wordpress --template "{{ range (index .status.loadBalancer.ingress 0) }}{{.}}{{ end }}")
 
 $ echo "WordPress URL: http://$SERVICE_IP/"
 WordPress URL: http://152.228.251.29/
 
 $ echo "WordPress Admin URL: http://$SERVICE_IP/admin"
 WordPress Admin URL: http://152.228.251.29/admin
-</code></pre>
+```
   
 And putting the URL in the browser will take us to the new blog, accessing the MariaDB database from the PCI instance via the vRack.
 

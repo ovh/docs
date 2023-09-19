@@ -4,28 +4,6 @@ excerpt: 'Find out how to manage Helm charts in the OVHcloud Managed Private Reg
 updated: 2022-04-14
 ---
 
-<style>
- pre {
-     font-size: 14px;
- }
- pre.console {
-   background-color: #300A24; 
-   color: #ccc;
-   font-family: monospace;
-   padding: 5px;
-   margin-bottom: 5px;
- }
- pre.console code {
-   border: solid 0px transparent;
-   color: #ccc;
-   font-family: monospace !important;
-   font-size: 0.75em;
- }
- .small {
-     font-size: 0.75em;
- }
-</style>
-
 OVHcloud Managed Private Registry service is a composite cloud-native registry which supports both container image management and [Helm](https://helm.sh/){.external} [chart](https://helm.sh/docs/topics/charts/){.external} management. 
 
 This guide will explain how to manage Helm charts in the OVHcloud Managed Private Registry service: how to upload charts, list the available ones and use them.
@@ -54,11 +32,12 @@ helm fetch bitnami/wordpress
 
 The wordpress Helm chart is downloaded as a `tgz` file.
 
-<pre class="console"><code>$ helm fetch bitnami/wordpress
+```console
+$ helm fetch bitnami/wordpress
 
 $ ls
 wordpress-13.1.4.tgz
-</code></pre>
+```
 
 #### Inspect the chart (optional)
 
@@ -90,7 +69,8 @@ tar zxf wordpress-13.1.4.tgz
 
 As expected, the file is uncompressed into a `wordpress` folder, with the required files and folders inside it:
 
-<pre class="console"><code>$ tar zxf wordpress-13.1.4.tgz
+```console
+$ tar zxf wordpress-13.1.4.tgz
 
 $ ls -l
 total 248
@@ -107,7 +87,7 @@ drwxr-xr-x   7 avache  staff    224 14 avr 08:43 ci
 drwxr-xr-x  23 avache  staff    736 14 avr 08:43 templates
 -rw-r--r--   1 avache  staff   5706 19 mar 16:45 values.schema.json
 -rw-r--r--   1 avache  staff  45756 19 mar 16:45 values.yaml
-</code></pre>
+```
 
 You can now remove the `tgz` file, as we are recreating it.
 
@@ -119,9 +99,10 @@ helm package wordpress
 
 It creates the packaged chart, with the version appended to the filename:
 
-<pre class="console"><code>$ helm package wordpress
+```console
+$ helm package wordpress
 Successfully packaged chart and saved it to: /Users/avache/tmp/test-doc-k8s/helm/wordpress-13.1.4.tgz
-</code></pre>
+```
 
 ### Manage Helm Charts via the Harbor UI
 

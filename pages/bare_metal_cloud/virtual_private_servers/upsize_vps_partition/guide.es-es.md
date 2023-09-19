@@ -1,65 +1,85 @@
 ---
-title: 'Reparticionar un VPS tras un upgrade'
+title: Reparticionar un VPS tras un upgrade de almacenamiento
+excerpt: "Cómo aumentar el espacio en disco útil después de una actualización"
 updated: 2023-09-05
 ---
 
-> [!primary]
-> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
->
-
 ## Objetivo
 
-Al realizar el upgrade de un VPS, es posible que tenga que reparticionar su espacio de almacenamiento.
+Una vez que haya aumentado la capacidad de almacenamiento de su VPS, deberá reparticionar el espacio en disco para disfrutar del tamaño real. En los siguientes pasos se describe cómo hacerlo.
 
 > [!warning]
 >
-> El reparticionamiento de un VPS puede dañar los datos que contiene de forma definitiva. OVHcloud no podrá ser considerado responsable de su deterioro o pérdida. Antes de realizar cualquier acción, le recomendamos que haga una copia de seguridad de sus datos.
+> El reparticionamiento de un VPS puede dañar los datos que contiene de forma definitiva. OVHcloud no podrá ser considerado responsable de su deterioro o pérdida. Por lo tanto, antes de hacer cualquier cosa, no olvide realizar una copia de seguridad de sus datos. 
 >
 
-**Esta guía explica los pasos necesarios para aumentar el espacio de almacenamiento de su VPS**.
+**Esta guía explica cómo aumentar el espacio de almacenamiento tras un upgrade de disco.**
 
 ## Requisitos
 
-- Tener acceso de administrador al VPS (Windows).
-- Haber reiniciado el servidor en [modo de rescate](/pages/bare_metal_cloud/virtual_private_servers/rescue) (Linux).
+- Tener acceso de administrador al VPS ([Windows](#windows)).
+- Haber reiniciado el servidor en [modo de rescate](/pages/bare_metal_cloud/virtual_private_servers/rescue) (solo Linux).
 
 ## Procedimiento
 
-Tras el upgrade, la RAM y el procesador (CPU) se ajustarán de manera automática. Sin embargo, el espacio de almacenamiento no se actualiza sistemáticamente.
+Tras una actualización de la memoria (RAM) o del procesador (vCores), estos dos recursos se ajustan automáticamente en su VPS, a diferencia del espacio en disco durante la mejora del almacenamiento de su VPS.
 
-### Realizar una copia de seguridad de los datos
+### Linux
 
-Ampliar una partición puede provocar la pérdida de datos, por lo que **le recomendamos encarecidamente que realice una copia de seguridad** de los datos de su VPS.
+#### Realizar una copia de seguridad de los datos
 
-### Desmontar la partición
+El intento de extender una partición puede provocar la pérdida de datos. Por lo tanto, le recomendamos **encarecidamente** que realice una copia de seguridad de los datos de su VPS.
 
-En las antiguas gamas de VPS, las particiones se montarán automáticamente en modo de rescate. Utilice el siguiente comando para identificar la ubicación de montaje de la partición:
+#### Activar el modo de rescate y verificar las particiones
 
-```sh
+Si el VPS todavía no está en modo de rescate, actívelo gracias a [nuestra guía](/pages/bare_metal_cloud/virtual_private_servers/rescue).
+
+A continuación, compruebe la configuración de los discos:
+
+```bash
 lsblk
 ```
 
-La partición correspondiente al modo de rescate será la montada en el directorio `/`, que es en realidad la raíz del sistema. En cambio, es probable que la partición del VPS se sitúe en un directorio asociado a "/mnt".
+La partición correspondiente al modo de rescate (`sda1` en este ejemplo) está montada en el directorio `/` .A su vez, el disco del VPS se denomina `sdb` y no debe tener ningún punto de montaje.
 
-No obstante, si su VPS pertenece a la gama actual, la partición no se montará automáticamente. Si la columna del resultado "MOUNTPOINT" lo confirma, puede ignorar el paso de desmontaje.
+por ejemplo,
 
 ```console
-NAME   MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
 sda 254:0 0 10G 0 disk
 └─sda1 254:1 0 10G 0 part /
+sdb 254:16 0 25G 0 disk
+└─sdb1 254:17 0 25G 0 part
+```
+
+Si el resultado es parecido al del ejemplo anterior y la columna `MOUNTPOINT` está vacía en la fila correspondiente, puede pasar al [paso siguiente](#checkfs).
+
+Sin embargo, si el resultado muestra que existe un punto de montaje para la partición VPS, primero deberá desmontarla.
+
+por ejemplo,
+
+```console
 sdb 254:16 0 25G 0 disk
 └─sdb1 254:17 0 25G 0 part /mnt/sdb1
 ```
 
-Para cambiar el tamaño de la partición, debe desmontarla. Para desmontar dicha partición, utilice el siguiente comando:
+En el ejemplo de salida anterior, la partición `sdb1` se monta a `/mnt/`. Para redimensionar la partición, no es necesario montarla.
 
-```sh
+Para desmontar dicha partición, utilice el siguiente comando:
+
+```bash
+umount /dev/partition_name
+```
+
+En este ejemplo de configuración, el comando sería:
+
+```bash
 umount /dev/sdb1
 ```
 
-### Comprobar el sistema de archivos (*filesystem*)
+#### Comprobar sistema de archivos <a name="checkfs"></a>
 
-Una vez desmontada la partición, es aconsejable comprobar el sistema de archivos (*filesystem check*) para detectar posibles errores. Utilice el siguiente comando:
+Antes de continuar, se recomienda comprobar el sistema de archivos (`filesystem check`) para detectar errores en la partición. Utilice el siguiente comando:
 
 ```sh
 e2fsck -yf /dev/sdb1
@@ -238,7 +258,7 @@ A continuación, utilice el primer superbloque de backup para comprobar y repara
 fsck -b 32768 /dev/sdb1
 ```
 
-### Windows
+### Windows <a name="windows"></a>
 
 #### Acceder a File and Storage Services
 

@@ -3,28 +3,6 @@ title: Cluster autoscaler example
 updated: 2022-05-17
 ---
 
-<style>
- pre {
-     font-size: 14px;
- }
- pre.console {
-   background-color: #300A24;
-   color: #ccc;
-   font-family: monospace;
-   padding: 5px;
-   margin-bottom: 5px;
- }
- pre.console code {
-   border: solid 0px transparent;
-   font-family: monospace !important;
-   font-size: 0.75em;
-   color: #ccc;
- }
- .small {
-     font-size: 0.75em;
- }
-</style>
-
 OVHcloud Managed Kubernetes service provides you Kubernetes clusters without the hassle of installing or operating them. 
 
 During the day-to-day life of your cluster, you may want to dynamically adjust the size of your cluster to accommodate to your workloads. The cluster autoscaler simplifies the task by scaling up or down your OVHcloud Managed Kubernetes cluster to meet the demand of your workloads. 
@@ -61,10 +39,11 @@ kubectl get nodepools
 
 In my case I have one node pool in my cluster, called `nodepool-b2-7`, with 3 B2-7 nodes:
 
-<pre class="console"><code>$ kubectl get nodepools
+```console
+$ kubectl get nodepools
 NAME            FLAVOR   AUTO SCALED   MONTHLY BILLED   ANTI AFFINITY   DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   [...]
 nodepool-b2-7   b2-7     false         false            false           3         3         3            3           [...]
-</code></pre>
+```
 
 As you can see, the `AUTO SCALED` field is set to `false`.  Let's see why by looking at the node pool description.
 
@@ -76,7 +55,8 @@ kubectl get nodepools <your_nodepool_name> -o yaml
 
 For my example cluster:
 
-<pre class="console"><code>$ kubectl get nodepools nodepool-b2-7 -o yaml
+```console
+$ kubectl get nodepools nodepool-b2-7 -o yaml
 apiVersion: kube.cloud.ovh.com/v1alpha1
 kind: NodePool
 metadata:
@@ -101,7 +81,7 @@ status:
   currentNodes: 3
   observedGeneration: 2
   upToDateNodes: 3
-</code></pre>
+```
 
 In the `spec` section you can see that the `autoscale` parameter is set to `false`. In order to enable the autoscaler, you need to patch the node pool to set this field to `true`. Set also `desiredNodes` to 1, `minNodes` to 1 and `maxNodes` to 3, to be sure that we begin only with one active node and that we can grow the node pool up to 3 nodes.
 
@@ -111,13 +91,14 @@ kubectl patch nodepool <your_nodepool_name> --type="merge" --patch='{"spec": {"a
 
 As you can see in my example, patching the node pool definition enables the autoscaler:
 
-<pre class="console"><code>$ kubectl patch nodepool nodepool-b2-7 --type="merge" --patch='{"spec": {"autoscale": true}}'
+```console
+$ kubectl patch nodepool nodepool-b2-7 --type="merge" --patch='{"spec": {"autoscale": true}}'
 nodepool.kube.cloud.ovh.com/nodepool-b2-7 patched
 
 $ kubectl get nodepools
 NAME            FLAVOR   AUTO SCALED   [...]   ANTI AFFINITY   DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   MIN   MAX
 nodepool-b2-7   b2-7     true          [...]   false           1         1         1            1           0     3
-</code></pre>
+```
 
 Now we can begin to deploy a test workload on the cluster.
 
@@ -170,7 +151,8 @@ kubectl apply -f prime-number.yaml
 
 In my example cluster, we deploy the simple workload, and we verify that we still have only one node in the cluster.
 
-<pre class="console"><code>$ kubectl apply -f manifests/prime-numbers.yaml
+```console
+$ kubectl apply -f manifests/prime-numbers.yaml
 deployment.apps/prime-numbers created
 
 $ kubectl get pods
@@ -189,7 +171,7 @@ prime-numbers-5ffd8d7b84-wmm7r   1/1     Running   0          92s
 $ kubectl get nodepools
 NAME            FLAVOR   AUTO SCALED   [...]   ANTI AFFINITY   DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   MIN   MAX
 nodepool-b2-7   b2-7     true          [...]   false           1         1         1            1           0     3       
-</code></pre>
+```
 
 ## Scaling up the workload
 
@@ -199,7 +181,8 @@ Now we can patch the *Prime Numbers* deployement to augment the replicas to 12, 
 kubectl patch deployment prime-numbers --type="merge" --patch='{"spec": {"replicas": 12}}'
 ```
 
-<pre class="console"><code>$ kubectl patch deployment prime-numbers --type="merge" --patch='{"spec": {"replicas": 12}}'
+```console
+$ kubectl patch deployment prime-numbers --type="merge" --patch='{"spec": {"replicas": 12}}'
 deployment.apps/prime-numbers patched
 
 $ kubectl get pods
@@ -216,19 +199,19 @@ prime-numbers-5ffd8d7b84-sb9vz   1/1     Running   0          4m57s
 prime-numbers-5ffd8d7b84-tltb8   1/1     Running   0          12m
 prime-numbers-5ffd8d7b84-vbzjw   1/1     Running   0          12m
 prime-numbers-5ffd8d7b84-wj9cf   0/1     Pending   0          22s
-</code></pre>
+```
 
 As you can see then with `kubectl get nodepools`, the autoscaler detects capacity has been reached and asks for a new node:
 
-<pre class="console"><code>
+```console
 $ kubectl get nodepools
 NAME            FLAVOR   AUTO SCALED   [...]   ANTI AFFINITY   DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   MIN   MAX
 nodepool-b2-7   b2-7     true          [...]   false           2         1         1            1           0     3
-</code></pre>
+```
 
 And in a few moments, the new node is created and active, and all the pods are running:
 
-<pre class="console"><code>
+```console
 $ kubectl get nodepools
 NAME            FLAVOR   AUTO SCALED   [...]   ANTI AFFINITY   DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   MIN   MAX
 nodepool-b2-7   b2-7     true          [...]   false           2         2         2            2           0     3
@@ -247,7 +230,7 @@ prime-numbers-5ffd8d7b84-sb9vz   1/1     Running   0          9m9s
 prime-numbers-5ffd8d7b84-tltb8   1/1     Running   0          16m
 prime-numbers-5ffd8d7b84-vbzjw   1/1     Running   0          16m
 prime-numbers-5ffd8d7b84-wj9cf   1/1     Running   0          4m34s
-</code></pre>
+```
 
 The scaling-up works as intended!
 
@@ -259,7 +242,7 @@ kubectl patch deployment prime-numbers --type="merge" --patch='{"spec": {"replic
 
 The autoscaler will detect nodes in `Pending` and add a third node:
 
-<pre class="console"><code>
+```console
 $ kubectl patch deployment prime-numbers --type="merge" --patch='{"spec": {"replicas": 24}}'
 deployment.apps/prime-numbers patched
 
@@ -324,7 +307,7 @@ prime-numbers-5ffd8d7b84-vbzjw   1/1     Running   0          26m
 prime-numbers-5ffd8d7b84-wj9cf   1/1     Running   0          13m
 prime-numbers-5ffd8d7b84-wtlpd   1/1     Running   0          4m34s
 prime-numbers-5ffd8d7b84-z5h49   1/1     Running   0          4m35s
-</code></pre>
+```
 
 ## Scaling down
 
@@ -336,7 +319,7 @@ kubectl patch deployment prime-numbers --type="merge" --patch='{"spec": {"replic
 
 In a few moments, only three pods will remain:
 
-<pre class="console"><code>
+```console
 $ kubectl patch deployment prime-numbers --type="merge" --patch='{"spec": {"replicas": 3}}'
 deployment.apps/prime-numbers patched
 
@@ -345,7 +328,7 @@ NAME                             READY   STATUS    RESTARTS   AGE
 prime-numbers-5ffd8d7b84-8v6xr   1/1     Running   0          8m3s
 prime-numbers-5ffd8d7b84-8xzqm   1/1     Running   0          8m3s
 prime-numbers-5ffd8d7b84-sn296   1/1     Running   0          8m3s
-</code></pre>
+```
 
 The autoscaler will detect that the nodes are under the value `scale-down-utilization-threshold` parameter (the node utilization level, defined as sum of requested resources divided by capacity, below which a node can be considered for  scale down, [by default 0.5](/pages/public_cloud/containers_orchestration/managed_kubernetes/configuring-cluster-autoscaler)), and marks the nodes 2 and 3 as unneeded. 
 
@@ -353,19 +336,19 @@ After some minutes according to the value of `scale-down-unneeded-time` (paramet
 
 After 10 minutes we are back to 2 nodes:
 
-<pre class="console"><code>
+```console
 $ kubectl get nodepools
 NAME            FLAVOR   AUTO SCALED   MONTHLY BILLED   ANTI AFFINITY   DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   MIN   MAX   AGE
 nodepool-b2-7   b2-7     true          false            false           3         2         2            2           0     3     64d
-</code></pre>
+```
 
 And 10 minutes later, we have only one node:
 
-<pre class="console"><code>
+```console
 $ kubectl get nodepools
 NAME            FLAVOR   AUTO SCALED   MONTHLY BILLED   ANTI AFFINITY   DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   MIN   MAX   AGE
 nodepool-b2-7   b2-7     true          false            false           1         1         1            1           0     3     64d
-</code></pre>
+```
 
 ## Cleaning up
 
@@ -375,9 +358,10 @@ To clean up your cluster, simply delete your `prime-numbers` deployment:
 kubectl delete -f manifests/prime-numbers.yaml
 ```
 
-<pre class="console"><code>$ kubectl delete -f manifests/prime-numbers.yaml
+```console
+$ kubectl delete -f manifests/prime-numbers.yaml
 deployment.apps "prime-numbers" deleted
-</code></pre>
+```
 
 ## Conclusion
 

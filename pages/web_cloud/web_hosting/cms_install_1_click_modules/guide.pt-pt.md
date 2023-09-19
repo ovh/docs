@@ -1,7 +1,7 @@
 ---
 title: "Instalar o seu website com um 'módulo 1 clique' (CMS)"
 excerpt: "Descubra como instalar o seu website através dos nossos 'módulos 1 clique'"
-updated: 2023-03-30
+updated: 2023-09-14
 ---
 
 > [!primary]
@@ -20,12 +20,16 @@ Os "módulos 1 clique" permitem a instalação fácil e rápida de um website (s
 
 - Dispor de um serviço de [alojamento web](https://www.ovhcloud.com/pt/web-hosting/) que inclua pelo menos uma base de dados.
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
-- Utilizar [uma versão de PHP compatível](/pages/web_cloud/web_hosting/configure_your_web_hosting) no seu alojamento web.
-- Ter [configurado corretamente o seu ficheiro .ovhconfig](/pages/web_cloud/web_hosting/configure_your_web_hosting).
+- Utilizar uma versão recente de PHP e um ambiente de execução compatível no seu alojamento web da OVHcloud. Caso seja necessário, consulte o nosso [guia](/pages/web_cloud/web_hosting/configure_your_web_hosting) sobre o assumpto, para alterar rapidamente esta configuração.
 - O diretório (pasta raiz) onde será instalado o seu "módulo 1 clique" deve estar vazio ou atualmente inexistente.
 - O domínio (com subdomínio se desejar) que será utilizado no seu website deve ser declarado como [Multi-site](/pages/web_cloud/web_hosting/multisites_configure_multisite) no seu alojamento web da OVHcloud.
 
 ## Instruções
+
+> [!primary]
+>
+> Se encontrar dificuldades durante qualquer uma das etapas descritas abaixo, consulte a nossa documentação específica sobre [os erros mais frequentes associados aos "módulos 1 clique"](/pages/web_cloud/web_hosting/diagnostic_errors_module1clic). 
+>
 
 ### Etapa 1 - escolher corretamente o seu CMS
 
@@ -83,6 +87,11 @@ Escolha o nome de domínio do seu CMS, controle o diretório alvo que aparece au
 
 Uma vez terminada a instalação, receberá um e-mail com as informações de ligação à interface de administrador (*back office*) do seu CMS. Ligue-se a esta para personalizar o seu website.
 
+> [!primary]
+>
+> A instalação e a receção do e-mail podem levar até 15 minutos a contar do momento em que clicar no botão `Instalar`{.action} na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+>
+
 #### Instalação avançada
 
 Para realizar esta instalação, certifica-se que a `Instalação em modo avançado`{.action} selecion ada. De seguida, clique no botão `Seguinte`{.action}:
@@ -92,6 +101,15 @@ Para realizar esta instalação, certifica-se que a `Instalação em modo avanç
 ##### Escolher a base de dados
 
 Insira as informações de ligação à sua base de dados.
+
+> [!warning]
+>
+> Se as informações que indica estiverem incorretas, a instalação não chegará ao seu termo. Para evitar esta falha, sugerimos que teste a ligação à sua base de dados.
+> 
+> Para obter as credenciais de acesso à base de dados incluída no alojamento web, consulte [este guia](/pages/web_cloud/web_hosting/sql_create_database).
+>
+> Para obter os dados de acesso à sua base de dados criada numa instância Web Cloud Databases, consulte [este guia](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
+>
 
 ![Base de dados para instalação avançada](images/advanced_installation_database.png){.thumbnail}
 
@@ -123,15 +141,6 @@ Para as bases de dados criadas numa oferta Web Cloud Databases, consulte as info
 - *Palavra-passe*: foi-lhe enviado por e-mail aquando da criação da base de dados. É possível que a tenha modificado entretanto.
 
 Depois de preencher as informações, clique no botão `Seguinte`{.action}.
-
-> [!warning]
->
-> Se as informações que indica estiverem incorretas, a instalação não chegará ao seu termo. Para evitar esta falha, sugerimos que teste a ligação à sua base de dados.
-> 
-> Para obter as credenciais de acesso à base de dados incluída no alojamento web, consulte [este guia](/pages/web_cloud/web_hosting/sql_create_database).
->
-> Para obter os dados de acesso à sua base de dados criada numa instância Web Cloud Databases, consulte [este guia](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
->
 
 ##### Configurar o módulo
 

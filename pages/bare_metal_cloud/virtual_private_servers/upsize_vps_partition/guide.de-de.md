@@ -84,7 +84,7 @@ umount /dev/sdb1
 
 ### Überprüfung des Dateisystems
 
-Bevor Sie fortfahren sollte das Dateisystem auf mögliche Fehler in der Partition überprüft werden (`filesystem check`). Der Befehl lautet wie folgt:
+Bevor Sie fortfahren sollte das Dateisystem auf mögliche Fehler in der Partition überprüft werden (*filesystem check*). Der Befehl lautet wie folgt:
 
 ```sh
 e2fsck -yf /dev/sdb1

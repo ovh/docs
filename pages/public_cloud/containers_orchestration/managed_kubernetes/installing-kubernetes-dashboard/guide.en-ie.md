@@ -4,28 +4,6 @@ excerpt: 'Find out how to install the Kubernetes Dashboard on your OVHcloud Mana
 updated: 2023-02-16
 ---
 
-<style>
- pre {
-     font-size: 14px;
- }
- pre.console {
-   background-color: #300A24;
-   color: #ccc;
-   font-family: monospace;
-   padding: 5px;
-   margin-bottom: 5px;
- }
- pre.console code {
-   border: solid 0px transparent;
-   font-family: monospace !important;
-   font-size: 0.75em;
-   color: #ccc;
- }
- .small {
-     font-size: 0.75em;
- }
-</style>
-
 The [Kubernetes Dashboard](https://github.com/kubernetes/dashboard){.external} is a general purpose, web-based UI for Kubernetes clusters. It allows users to manage and troubleshoot applications running in their cluster, as well as manage the cluster itself.
 
 ![kubernetes-dashboard](images/kubernetes-dashboard-02.png){.thumbnail}
@@ -48,7 +26,8 @@ kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.7.0/a
 
 It should display something like this:
 
-<pre class="console"><code>$ kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.7.0/aio/deploy/recommended.yaml
+```console
+$ kubectl apply -f https://raw.githubusercontent.com/kubernetes/dashboard/v2.7.0/aio/deploy/recommended.yaml
 namespace/kubernetes-dashboard created
 serviceaccount/kubernetes-dashboard created
 service/kubernetes-dashboard created
@@ -63,7 +42,7 @@ clusterrolebinding.rbac.authorization.k8s.io/kubernetes-dashboard created
 deployment.apps/kubernetes-dashboard created
 service/dashboard-metrics-scraper created
 deployment.apps/dashboard-metrics-scraper created
-</code></pre>
+```
 
 ## Create An Authentication Token (RBAC)
 
@@ -91,9 +70,10 @@ kubectl apply -f dashboard-service-account.yml
 
 It should display something like this:
 
-<pre class="console"><code>$ kubectl apply -f dashboard-service-account.yml
+```console
+$ kubectl apply -f dashboard-service-account.yml
 serviceaccount/admin-user created
-</code></pre>
+```
 
 ### Create a RoleBinding
 
@@ -124,9 +104,10 @@ kubectl apply -f dashboard-cluster-role-binding.yml
 
 It should display something like this:
 
-<pre class="console"><code>$ kubectl apply -f dashboard-cluster-role-binding.yml
+```console
+$ kubectl apply -f dashboard-cluster-role-binding.yml
 clusterrolebinding.rbac.authorization.k8s.io/admin-user created
-</code></pre>
+```
 
 ### Create a Secret ServiceAccountToken
 
@@ -153,9 +134,10 @@ kubectl apply -f service-account-token.yml
 
 It should display something like this:
 
-<pre class="console"><code>$ kubectl apply -f service-account-token.yml
+```console
+$ kubectl apply -f service-account-token.yml
 secret/admin-user-token created
-</code></pre>
+```
 
 ### Bearer Token
 
@@ -167,7 +149,8 @@ kubectl -n kubernetes-dashboard describe secret $(kubectl -n kubernetes-dashboar
 
 It should display something like:
 
-<pre class="console"><code>$ kubectl -n kubernetes-dashboard describe secret $(kubectl -n kubernetes-dashboard get secret | grep admin-user-token | awk '{print $1}')
+```console
+$ kubectl -n kubernetes-dashboard describe secret $(kubectl -n kubernetes-dashboard get secret | grep admin-user-token | awk '{print $1}')
 Name:         admin-user-token
 Namespace:    kubernetes-dashboard
 Labels:       <none>
@@ -181,7 +164,7 @@ Data
 ca.crt:     1801 bytes
 namespace:  20 bytes
 token:      <sensitive>
-</code></pre>
+```
 
 Copy the token and store it securely, as it's your key to the Dashboard.
 
@@ -195,9 +178,10 @@ kubectl proxy
 
 Your kubectl is opening a connection and acting as a proxy from your workstation to the cluster. Any HTTP request to your local port (8001) will be proxified and sent to the cluster API.
 
-<pre class="console"><code>$ kubectl proxy
+```console
+$ kubectl proxy
 Starting to serve on 127.0.0.1:8001
-</code></pre>
+```
 
 Next, access the Dashboard at:  
 <http://localhost:8001/api/v1/namespaces/kubernetes-dashboard/services/https:kubernetes-dashboard:/proxy/>

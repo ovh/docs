@@ -4,27 +4,6 @@ excerpt: Sprawdź działanie grup zabezpieczeń w usłudze Public Cloud
 updated: 2023-03-13
 ---
 
-<style>
- pre {
-     font-size: 14px;
- }
- pre.console {
-   background-color: #300A24; 
-   color: #ccc;
-   font-family: monospace;
-   padding: 5px;
-   margin-bottom: 5px;
- }
- pre.console code {
-   b   font-family: monospace !important;
-   font-size: 0.75em;
-   color: #ccc;
- }
- .small {
-     font-size: 0.75em;
- }
-</style>
-
 > [!primary]
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
 > 
@@ -82,9 +61,10 @@ openstack port show <port-ID> -f value -c port_security_enabled
 
 Wynik powinien być podobny do tego:
 
-<pre class="console"><code>$ openstack port show d7c237cd-8dee-4503-9073-693d986baff3 -f value -c port_security_enabled
+```console
+$ openstack port show d7c237cd-8dee-4503-9073-693d986baff3 -f value -c port_security_enabled
 False
-</code></pre>
+```
 
 #### W przypadku nowej sieci prywatnej:
 

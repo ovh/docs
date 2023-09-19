@@ -4,28 +4,6 @@ excerpt: 'Find out how to set-up and configure sticky sessions/session Affinity 
 updated: 2022-06-27
 ---
 
-<style>
- pre {
-     font-size: 14px;
- }
- pre.console {
-   background-color: #300A24; 
-   color: #ccc;
-   font-family: monospace;
-   padding: 5px;
-   margin-bottom: 5px;
- }
- pre.console code {
-   border: solid 0px transparent;
-   font-family: monospace !important;
-   font-size: 0.75em;
-   color: #ccc;
- }
- .small {
-     font-size: 0.75em;
- }
-</style>
-
 ## Objective
 
 Sticky sessions or session affinity, is a feature that allows you to keep a session alive for a certain period of time. In a Kubernetes cluster, all the traffic from a client to an application, even if you scale from 1 to 3 or more replicas, will be redirected to the same pod.
@@ -109,12 +87,13 @@ kubectl apply -f svc.yml
 
 Output should be like this:
 
-<pre class="console"><code>$ kubectl apply -f deployment.yml
+```console
+$ kubectl apply -f deployment.yml
 deployment.apps/what-is-my-pod-deployment created
 
 $ kubectl apply -f svc.yml
 service/what-is-my-pod created
-</code></pre>
+```
 
 You can verify if your application is running and service is created by running the following commands:
 
@@ -125,7 +104,8 @@ kubectl get svc -l app=what-is-my-pod
 
 Output should be like this:
 
-<pre class="console"><code>$ kubectl get pod -l app=what-is-my-pod
+```console
+$ kubectl get pod -l app=what-is-my-pod
 NAME                                         READY   STATUS    RESTARTS   AGE
 what-is-my-pod-deployment-78f7cd684f-5gtf9   1/1     Running   0          3m
 what-is-my-pod-deployment-78f7cd684f-k2zpp   1/1     Running   0          3m
@@ -134,7 +114,7 @@ what-is-my-pod-deployment-78f7cd684f-xvwvh   1/1     Running   0          3m
 $ kubectl get svc -l app=what-is-my-pod
 NAME             TYPE        CLUSTER-IP    EXTERNAL-IP   PORT(S)    AGE
 what-is-my-pod   ClusterIP   10.3.57.203   <none>        8080/TCP   3m35s
-</code></pre>
+```
 
 ### Installing the Nginx Ingress Controller Helm chart
 
@@ -151,7 +131,8 @@ helm repo update
 
 These commands will add the Ingress Nginx Helm repository to your local Helm chart repository and update the installed chart repositories:
 
-<pre class="console"><code>$ helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
+```console
+$ helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
 
 helm repo update
 "ingress-nginx" has been added to your repositories
@@ -161,7 +142,7 @@ Hang tight while we grab the latest from your chart repositories...
 ...Successfully got an update from the "ingress-nginx" chart repository
 ...
 Update Complete. ⎈Happy Helming!⎈
-</code></pre>
+```
 
 Install the latest version of Ingress Nginx with `helm install` command:
 
@@ -171,7 +152,8 @@ helm -n ingress-nginx install ingress-nginx ingress-nginx/ingress-nginx --create
 
 The install process will begin and a new `ingress-nginx` namespace will be created.
 
-<pre class="console"><code>$ helm -n ingress-nginx install ingress-nginx ingress-nginx/ingress-nginx --create-namespace
+```console
+$ helm -n ingress-nginx install ingress-nginx ingress-nginx/ingress-nginx --create-namespace
 NAME: ingress-nginx
 LAST DEPLOYED: Mon Jun 27 09:53:25 2022
 NAMESPACE: ingress-nginx
@@ -219,16 +201,17 @@ If TLS is enabled for the Ingress, a Secret containing the certificate and key m
     tls.crt: <base64 encoded cert>
     tls.key: <base64 encoded key>
   type: kubernetes.io/tls
-</code></pre>
+```
 
 As the `LoadBalancer` creation is asynchronous, and the provisioning of the load balancer can take several minutes, you will surely get a `<pending>` `EXTERNAL-IP`. 
 
 If you try again in a few minutes you should get an `EXTERNAL-IP`:
 
-<pre class="console"><code>$ kubectl get svc -n ingress-nginx ingress-nginx-controller
+```console
+$ kubectl get svc -n ingress-nginx ingress-nginx-controller
 NAME                       TYPE           CLUSTER-IP     EXTERNAL-IP       PORT(S)                      AGE
 ingress-nginx-controller   LoadBalancer   10.3.232.157   152.228.168.132   80:30903/TCP,443:31546/TCP   19h
-</code></pre>
+```
 
 You can then access your `nginx-ingress` at `http://[YOUR_LOAD_BALANCER_IP]` via HTTP or `https://[YOUR_LOAD_BALANCER_IP]` via HTTPS.
 
@@ -274,9 +257,10 @@ kubectl apply -f ingress-session-affinity.yml
 
 Output should be like this:
 
-<pre class="console"><code>$ kubectl apply -f ingress-session-affinity.yml
+```console
+$ kubectl apply -f ingress-session-affinity.yml
 ingress.networking.k8s.io/ingress created
-</code></pre>
+```
 
 You have set-up and configured a Kubernetes Ingress resource that will maintain sessions for users, as in the illustration below:
 
@@ -294,11 +278,12 @@ kubectl get svc -n ingress-nginx ingress-nginx-controller -o jsonpath='{.status.
 
 You should have a Load-Balancer IP like this:
 
-<pre class="console"><code>$ export INGRESS_URL=$(kubectl get svc -n ingress-nginx ingress-nginx-controller -o jsonpath='{.status.loadBalancer.ingress[0].ip}')
+```console
+$ export INGRESS_URL=$(kubectl get svc -n ingress-nginx ingress-nginx-controller -o jsonpath='{.status.loadBalancer.ingress[0].ip}')
 
 echo http://$INGRESS_URL
 http://152.228.168.143
-</code></pre>
+```
 
 Now you can access this IP through your favorite browser and reload the page several times:
 
@@ -314,7 +299,8 @@ curl --cookie cookie.txt --cookie-jar cookie.txt http://$INGRESS_URL
 
 You can execute the same command several times in a loop to validate that the session is correctly maintained:
 
-<pre class="console"><code>$ for i in {0..5}
+```console
+$ for i in {0..5}
 do
   curl --cookie cookie.txt --cookie-jar cookie.txt http://$INGRESS_URL
   echo ""
@@ -326,7 +312,7 @@ Hello "what-is-my-pod-deployment-78f7cd684f-xvwvh"!
 Hello "what-is-my-pod-deployment-78f7cd684f-xvwvh"!
 Hello "what-is-my-pod-deployment-78f7cd684f-xvwvh"!
 Hello "what-is-my-pod-deployment-78f7cd684f-xvwvh"!
-</code></pre>
+```
 
 > [!primary]
 >

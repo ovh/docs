@@ -1,64 +1,85 @@
 ---
-title: 'Repartitionner un VPS suite à un upgrade'
-excerpt: 'Découvrez comment augmenter votre espace de stockage après un upgrade de votre VPS'
+title: Repartitionner un VPS après un upgrade de stockage
+excerpt: "Découvrez comment augmenter l'espace disque utilisable suite à une mise à niveau"
 updated: 2023-09-05
 ---
 
 ## Objectif
 
-Lors de l’upgrade de votre VPS, il est possible qu’un repartitionnement de votre espace de stockage soit nécessaire.
+Après avoir augmenté la capacité de stockage de votre VPS, vous devrez repartitionner l'espace disque pour profiter de la taille réelle. Les étapes suivantes décrivent comment procéder.
 
 > [!warning]
 >
 > Le repartitionnement peut endommager définitivement vos données. OVHcloud ne pourra être tenu responsable de leur détérioration ou de leur perte. Avant de faire quoi que ce soit, pensez donc à bien sauvegarder vos informations. 
 >
 
-**Découvrez comment augmenter votre espace de stockage après un upgrade de votre VPS.**
+**Découvrez comment augmenter votre espace de stockage après un upgrade de disque.**
 
 ## Prérequis
 
-- Avoir un accès administrateur au VPS (Windows).
-- Avoir redémarré le serveur en [mode rescue](/pages/bare_metal_cloud/virtual_private_servers/rescue) (Linux).
+- Avoir un accès administrateur au VPS ([Windows](#windows)).
+- Avoir redémarré le serveur en [mode rescue](/pages/bare_metal_cloud/virtual_private_servers/rescue) (Linux uniquement).
 
 ## En pratique
 
-Suite à un upgrade, la mémoire vive (RAM) et le processeur (CPU) seront automatiquement ajustés. Cela ne sera pas nécessairement le cas pour l’espace de stockage.
+Après une mise à niveau de la mémoire (RAM) ou du processeur (vCores), ces  deux ressources sont automatiquement ajustées sur votre VPS, contrairement à l'espace disque lors de l'upgrade de stockage de votre VPS.
 
 ### Linux
 
 #### Sauvegarder vos données
 
-La tentative d’étendre une partition peut entraîner une perte de données. Par conséquent, **nous vous recommandons vivement** de sauvegarder les informations de votre VPS.
+La tentative d’étendre une partition peut entraîner une perte de données. Il est donc **vivement recommandé** de faire une sauvegarde des données de votre VPS.
 
-#### Démonter la partition
+#### Activer le mode rescue et vérifier les partitions
 
-Sur les anciennes gammes de VPS, vos partitions seront automatiquement montées en mode rescue. Utilisez la commande suivante pour identifier l'emplacement de montage de votre partition :
+Si le VPS n'est pas encore en mode rescue, activez-le grâce à [notre guide](/pages/bare_metal_cloud/virtual_private_servers/rescue).
 
-```sh
+Vous pourrez ensuite vérifier la configuration des disques :
+
+```bash
 lsblk
 ```
 
-La partition correspondant au mode rescue sera celle montée dans le répertoire `/`, qui est en réalité la racine du système. En revanche, la partition de votre VPS sera probablement placée dans un répertoire associé à « /mnt ».
+La partition correspondant au mode rescue (`sda1` dans cet exemple) est montée dans le répertoire `/`. Quant à lui, le disque du VPS est nommé `sdb` et ne doit avoir aucun point de montage.
 
-Cependant, si votre VPS appartient à la gamme actuelle, la partition ne sera pas automatiquement montée. Si la colonne MOUNTPOINT du résultat le confirme, vous pouvez alors ignorer l'étape de démontage.
+Par exemple :
 
 ```console
 NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
 sda 254:0 0 10G 0 disk
 └─sda1 254:1 0 10G 0 part /
 sdb 254:16 0 25G 0 disk
+└─sdb1 254:17 0 25G 0 part
+```
+
+Si votre résultat ressemble à l'exemple ci-dessus et que la colonne `MOUNTPOINT` est vide dans la ligne correspondante, vous pouvez passer à [l'étape suivante](#checkfs).
+
+Cependant, si votre résultat montre qu'il y a un point de montage pour la partition VPS, elle doit d'abord être démontée.
+
+Par exemple :
+
+```console
+sdb 254:16 0 25G 0 disk
 └─sdb1 254:17 0 25G 0 part /mnt/sdb1
 ```
 
-Pour redimensionner la partition, vous devez la démonter. Pour démonter votre partition, utilisez la commande suivante :
+Dans l'exemple de sortie ci-dessus, la partition `sdb1` est montée à `/mnt/`. Pour redimensionner la partition, celle-ci ne doit pas être montée.
 
-```sh
+Pour démonter votre partition, utilisez la commande suivante :
+
+```bash
+umount /dev/partition_name
+```
+
+Dans cet exemple de configuration, la commande serait :
+
+```bash
 umount /dev/sdb1
 ```
 
-#### Vérifier le système de fichiers
+#### Vérifier le système de fichiers <a name="checkfs"></a>
 
-Une fois la partition démontée, il convient de vérifier le système de fichiers (`filesystem check`) pour s’assurer de l’absence d’erreurs. La commande est la suivante :
+Avant de continuer, il est recommandé de vérifier le système de fichiers (`filesystem check`) pour voir s'il y a des erreurs dans la partition. La commande est la suivante :
 
 ```sh
 e2fsck -yf /dev/sdb1
@@ -234,7 +255,7 @@ Utilisez enfin le premier superblock de sauvegarde, afin de vérifier et répare
 fsck -b 32768 /dev/sdb1
 ```
 
-### Windows
+### Windows <a name="windows"></a>
 
 #### Accéder à File and Storage Services
 

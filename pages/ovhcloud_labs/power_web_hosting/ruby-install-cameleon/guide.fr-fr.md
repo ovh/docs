@@ -4,26 +4,6 @@ excerpt: Découvrez comment installer Camaleon sur votre hébergement web POWER
 updated: 2021-02-04
 ---
 
-<style>
- pre {
-     font-size: 14px;
- }
- pre.console {
-   background-color: #300A24; 
-   color: #ccc;
-   font-family: monospace;
-   padding: 5px;
-   margin-bottom: 5px;
- }
- pre.console code {
-   border: solid 0px transparent;
-   font-family: monospace !important;
- }
- .small {
-     font-size: 0.75em;
- }
-</style>
-
 ## Objectif
 
 Vous avez souscrit à un hébergement web POWER Ruby et vous voulez y déployer [Camaleon](http://camaleon.tuzitio.com/){.external}, un CMS flexible vous permettant de créer une structure de contenu personnalisée sans avoir à coder.
@@ -122,7 +102,8 @@ development:
 
 Sortie de la console:
 
-<pre class="console"><code>~ $ rm -rf www
+```console
+~ $ rm -rf www
 
 ~ $ gem env gempath
 /homez.41/powerlp/.gem/ruby/2.6.0:/usr/local/ruby2.6/lib/ruby/gems/2.6.0
@@ -247,7 +228,7 @@ I, [2021-02-03T21:06:42.781108 #6031]  INFO -- : Creating symlink /home/powerlp/
 ~/www $ mkdir -p tmp
 
 ~/www $ touch tmp/restart.txt
-</code></pre>
+```
 
 ## Aller plus loin
 

@@ -1,65 +1,85 @@
 ---
-title: 'Zmiana rozmiaru partycji na serwerze VPS po zmianie oferty'
-updated: 2023-09-05
+title: Zmiana rozmiaru partycji serwera VPS po zmianie oferty przestrzeni dyskowej
+excerpt: "Dowiedz się, jak zwiększyć przestrzeń dyskową po aktualizacji"
+Updated: 2023-09-05
 ---
-
-> [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
->
 
 ## Wprowadzenie
 
-Podczas zmiany oferty serwera VPS może okazać się konieczna zmiana rozmiaru partycji w Twojej przestrzeni dyskowej. Poniżej przedstawiamy, jakie kroki należy w tym celu wykonać.
+Po zwiększeniu przestrzeni dyskowej Twojego VPS, musisz ponownie rozdzielić przestrzeń dyskową, aby korzystać z rzeczywistego rozmiaru. Następne etapy opisują sposób postępowania.
 
 > [!warning]
 >
-> Zmiana rozmiaru partycji skutkuje nieodwracalną utratą danych. OVHcloud nie ponosi odpowiedzialności za ich zniszczenie lub utratę. Przed przystąpieniem do jakichkolwiek czynności należy wykonać odpowiednią kopię zapasową swoich danych.
+> Zmiana rozmiaru partycji skutkuje nieodwracalną utratą danych. OVHcloud nie ponosi odpowiedzialności za ich zniszczenie lub utratę. Przed przystąpieniem do jakichkolwiek czynności należy wykonać odpowiedną kopię zapasową swoich danych. 
 >
 
-**W niniejszej instrukcji przedstawione są poszczególne kroki, które należy wykonać, aby zwiększyć przestrzeń dyskową.**
+**Dowiedz się, jak zwiększyć przestrzeń dyskową po zmianie dysku.**
 
 ## Wymagania początkowe
 
-- Dostęp administratora do serwera VPS (Windows)
-- Ponowne uruchomienie serwera w [Trybie Rescue](/pages/bare_metal_cloud/virtual_private_servers/rescue) (Linux)
+- Dostęp administratora do serwera VPS ([Windows](#windows)).
+- Zrestartowanie serwera w [trybie Rescue](/pages/bare_metal_cloud/virtual_private_servers/rescue) (tylko w systemie Linux).
 
 ## W praktyce
 
-Po zmianie oferty serwera na wyższą ilość pamięci RAM i procesor (CPU) dostosowywane są automatycznie. Nie dotyczy to jednak przestrzeni dyskowej.
+Po aktualizacji pamięci (RAM) lub procesora (vCores), te dwa zasoby są automatycznie dostosowywane do potrzeb Twojego serwera VPS, w przeciwieństwie do przestrzeni dyskowej podczas zmiany oferty serwera VPS.
 
-### Tworzenie kopii zapasowej danych
+### Linux
 
-Ponieważ w wyniku próby rozszerzenia partycji może dojść do utraty danych, **stanowczo zalecamy** wykonanie kopii zapasowej danych znajdujących się na serwerze VPS.
+#### Tworzenie kopii zapasowej danych
 
-### Odmontowanie partycji
+Próba rozszerzenia partycji może spowodować utratę danych. Zalecamy **więc** wykonanie kopii zapasowej danych znajdujących się na serwerze VPS.
 
-W przypadku starszych gam VPS partycje zostaną automatycznie zamontowane w trybie rescue. Użyj następującego polecenia, aby zidentyfikować lokalizację zamontowania partycji:
+#### Włącz tryb ratunkowy i sprawdź partycje
 
-```sh
+Jeśli serwer VPS nie jest jeszcze w trybie Rescue, włącz go za pomocą [przewodnika](/pages/bare_metal_cloud/virtual_private_servers/rescue).
+
+Następnie możesz sprawdzić konfigurację dysków:
+
+```bash
 lsblk
 ```
 
-Partycja odpowiadająca trybowi Rescue to ta zamontowana w katalogu `/`, który jest w rzeczywistości katalogiem systemu. Natomiast partycja Twojego serwera VPS będzie prawdopodobnie umieszczona w katalogu powiązanym z "/mnt".
+Partycja odpowiadająca trybowi Rescue (`sda1` w tym przykładzie) jest zamontowana w katalogu `/` .Dysk VPS ma nazwę `sdb` i nie może mieć punktu montowania.
 
-Jeśli jednak Twój VPS należy do aktualnej gamy, partycja nie zostanie automatycznie zamontowana. Jeśli potwierdzi to kolumna MOUNTPOINT, możesz pominąć etap demontażu.
+Przykład:
 
 ```console
 NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
 sda 254:0 0 10G 0 disk
 └─sda1 254:1 0 10G 0 part /
 sdb 254:16 0 25G 0 disk
+└─sdb1 254:17 0 25G 0 part
+```
+
+Jeśli Twój wynik wygląda podobnie do powyższego przykładu, a kolumna `MOUNTPOINT` jest pusta w odpowiednim wierszu, możesz przejść do [następnego etapu](#checkfs).
+
+Jeśli jednak Twój wynik wskazuje, że partycja VPS ma punkt montowania, najpierw należy ją odmontować.
+
+Przykład:
+
+```console
+sdb 254:16 0 25G 0 disk
 └─sdb1 254:17 0 25G 0 part /mnt/sdb1
 ```
 
-Aby zmienić rozmiar partycji, należy ją odmontować. W celu odmontowania partycji należy użyć następującego polecenia:
+W powyższym przykładzie wyjściowym partycja `sdb1` jest zamontowana w `/mnt/`. Aby można było zmienić rozmiar partycji, nie musi ona być zamontowana.
 
-```sh
+W celu odmontowania partycji należy użyć następującego polecenia:
+
+```bash
+umount /dev/partition_name
+```
+
+W tym przykładzie konfiguracji, polecenie to będzie:
+
+```bash
 umount /dev/sdb1
 ```
 
-### Sprawdzanie systemu plików
+#### Sprawdzanie systemu plików <a name="checkfs"></a>
 
-Po odmontowaniu partycji należy sprawdzić system plików za pomocą `filesystem check`, czy na partycji nie występują błędy. Tu stosuje się poniższe polecenie:
+Przed kontynuowaniem zaleca się sprawdzenie systemu plików (`filesystem check`) w celu sprawdzenia, czy partycja zawiera błędy. Tu stosuje się poniższe polecenie:
 
 ```sh
 e2fsck -yf /dev/sdb1
@@ -238,7 +258,7 @@ Następnie użyj pierwszego superbloku backupowego w celu sprawdzenia i naprawie
 fsck -b 32768 /dev/sdb1
 ```
 
-### Windows
+### Windows <a name="windows"></a>
 
 #### Dostęp do File and Storage Services
 

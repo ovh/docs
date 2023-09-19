@@ -4,26 +4,6 @@ excerpt: Find out how to install Express  on your POWER web hosting plan
 updated: 2021-02-04
 ---
 
-<style>
- pre {
-     font-size: 14px;
- }
- pre.console {
-   background-color: #300A24; 
-   color: #ccc;
-   font-family: monospace;
-   padding: 5px;
-   margin-bottom: 5px;
- }
- pre.console code {
-   border: solid 0px transparent;
-   font-family: monospace !important;
- }
- .small {
-     font-size: 0.75em;
- }
-</style>
-
 ## Objective
 
 You've subscribed to a Web POWER web hosting plan to deploy **Node.js** applications, and you want to begin developing your project using [Express](https://expressjs.com/){.external}.
@@ -76,7 +56,8 @@ app.listen(port);
 
 Terminal output:
 
-<pre class="console"><code>~/www $ cd www
+```console
+~/www $ cd www
 ~/www $ node -v
 v14.13.0
 ~/www $ npm install express --save
@@ -89,7 +70,8 @@ res.send(msg);
 });
 app.listen(port);
 ~/www $ mkdir -p tmp
-~/www $ touch tmp/restart.txt</code></pre>
+~/www $ touch tmp/restart.txt
+```
 
 ## Go further
 
