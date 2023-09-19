@@ -13,7 +13,7 @@ updated: 2023-09-18
 
 ## Objectif
 
-Our High grade and scale servers offer a scalable option that can allow you to increase your disks space.
+Our High Grade and Scale servers offer a scalable option that can allow you to increase your disks space.
 
 
 ## Requirements
@@ -38,7 +38,9 @@ When you click on the link provided in the email, you will be redirected to the 
 
 ![schedule intervention](images/scheduleintervention.png){.thumbnail}
 
-Check the box underneath `Have you backed up your data?`{.action} and select the available date and time. Please note that a gap of minimum 10 days is required before you can select the a date. Next, click on `Confirm`{.action}.
+Check the box underneath `Have you backed up your data?`{.action} and select the available date and time. Please note that you cannot select a date within the first 11 days of paying the order. 
+
+Next, click on `Confirm`{.action}.
 
 ![confirm intervention](images/confirmintervention.png){.thumbnail}
 
