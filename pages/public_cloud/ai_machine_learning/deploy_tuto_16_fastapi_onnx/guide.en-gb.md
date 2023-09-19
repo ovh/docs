@@ -34,7 +34,7 @@ You are going to follow different steps to build your FastAPI app.
 
 > [!warning]
 > **Warning**
-> You must have previously created an `densenet-cifar10-onnx-model` Object Storage bucket when training your model via [AI Notebooks](/pages/public_cloud/ai_machine_learning/notebook_tuto_15_finetune_export_onnx_model).
+> You must have previously created a `densenet-cifar10-onnx-model` Object Storage bucket when training your model via [AI Notebooks](/pages/public_cloud/ai_machine_learning/notebook_tuto_15_finetune_export_onnx_model).
 >
 > Check that this container contains your **DenseNet weights in ONNX**. They will be necessary for the deployment of the API!
 >
