@@ -269,7 +269,7 @@ It provides a complete dashboard for interacting with the API!
 
 ![APIDocs](images/fastapi-docs-endpoint.png){.thumbnail}
 
-To be able to send an image for classification, select `/uploadimage` in the green box. Click on `Try it out` and add the image of your choice in the dedicated zone.
+To be able to send an image for classification, select `/uploadimage/` in the green box. Click on `Try it out` and add the image of your choice in the dedicated zone.
 
 ![APIImage](images/fastapi-send image.png){.thumbnail}
 
