@@ -1,7 +1,7 @@
 ---
 title: "Zmiana oferty hostingowej"
 excerpt: "Dowiedz się, jak zmienić formułę subskrypcji hostingu OVHcloud"
-updated: 2023-07-16
+updated: 2023-09-19
 ---
 
 > [!primary]

@@ -1,7 +1,7 @@
 ---
 title: "Fazer evoluir a sua oferta de alojamento web"
 excerpt: "Saiba como alterar a fórmula de subscrição da sua oferta de alojamento OVHcloud"
-updated: 2023-07-16
+updated: 2023-09-19
 ---
 
 > [!primary]
