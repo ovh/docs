@@ -55,6 +55,9 @@ If you wish to migrate to VLAN, to help you to configure your network, you can u
 >
 >  Find more information on the OVHcloud API in our guide on [Getting started with the OVHcloud API](/pages/manage_and_operate/api/first-steps).
 
+Once you have confirmed this API call, you will be sent an email. This will contain a suggested mapping between VXLAN and VLAN. 
+This is just a proposal containing a list of your VMs and networks used. You are responsible for ensuring that these VLANs are not used by other OVHcloud services.
+
 To create your VLAN networks, you can follow this documentation: [VLAN Creation](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/creation_vlan)
 
 You will then need to disable NSX-v. You will be notified when the deactivation process is available.
