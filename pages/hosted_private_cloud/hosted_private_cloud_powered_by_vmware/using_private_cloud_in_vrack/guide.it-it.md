@@ -41,7 +41,7 @@ Nel client vSphere, le *VLANs* compatibili con la vRack sono disponibili nello s
 
 ![VLAN](images/vRackVsphere.png){.thumbnail}
 
-È possibile modificare le impostazioni o crearne di nuove seguendo la guida alla [creazione di VxLAN](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/creation_vlan).
+È possibile modificare le impostazioni o crearne di nuove seguendo la guida alla [creazione di VLAN](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/creation_vlan).
 
 Questi *portgroup* possono essere assegnati alle interfacce di rete delle macchine virtuali.
 
