@@ -11,7 +11,7 @@ updated: 2023-09-18
 > The steps in this guide only apply to our new ranges (High Grade and Scale). For older ranges, the request must be made via a support ticket.
 
 
-## Objectif
+## Objective
 
 Our High Grade and Scale servers offer a scalable option that can allow you to increase your disks space.
 
