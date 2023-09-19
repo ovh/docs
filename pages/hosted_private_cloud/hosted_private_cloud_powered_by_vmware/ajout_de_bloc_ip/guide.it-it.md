@@ -52,8 +52,6 @@ Per la creazione del tuo blocco IP è necessario compilare diversi campi.
 > [!success]
 >
 > Prima della consegna, pagherai le spese di attivazione del tuo blocco IP.
->  
-> Le spese per il rinnovo degli indirizzi IP sono gratuite.
 >
 
 Dopo aver confermato l’ultimo step, ottieni il buono d’ordine del tuo blocco IP. Se il buono d’ordine è corretto, non ti resta che procedere al pagamento con uno dei metodi proposti in fondo alla pagina.

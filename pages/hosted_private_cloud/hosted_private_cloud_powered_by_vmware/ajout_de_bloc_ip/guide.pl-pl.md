@@ -52,8 +52,6 @@ Utworzenie bloku IP wymaga wypełnienia następujących pól
 > [!success]
 >
 > Opłać koszty aktywacji bloku IP przed dostawą.
->  
-> Adresy IP są odnawiane za darmo.
 >
 
 Po potwierdzeniu ostatniego etapu otrzymasz formularz zamówienia na blok IP. Jeśli odpowiada on Twoim oczekiwaniom, wystarczy go opłacić za pomocą środków płatności oferowanych na dole strony, aby otrzymać zamówione adresy.

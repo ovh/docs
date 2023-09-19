@@ -52,8 +52,6 @@ Plusieurs champs seront à remplir pour la création de votre bloc IP
 > [!success]
 >
 > Vous devrez vous acquitter des frais d'activation de votre bloc IP avant livraison.
->  
-> Les frais de renouvellement des IPs sont gratuits.
 >
 
 Après avoir confirmé la dernière étape, vous obtenez le bon de commande de votre bloc IP. Si celui-ci est conforme à votre souhait, il vous suffit de le payer avec les moyens de paiement proposés en bas de page afin que celui-ci soit livré.
