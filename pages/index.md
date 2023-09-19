@@ -825,6 +825,7 @@
             + [ovhai CLI - Cheat Sheet](public_cloud/ai_machine_learning/gi_05_ovhai_cheatsheet)
             + [AI Dashboard - Getting started](public_cloud/ai_machine_learning/gi_06_dashboard_getting_started)
             + [Registries - Use & manage registries](public_cloud/ai_machine_learning/gi_07_manage_registry)
+            + [AI Tools - Lifecycle policy](public_cloud/ai_machine_learning/gi_09_lifecycle_policy)
         + [Command Line Interface](public-cloud-ai-and-machine-learning-command-line-interface)
             + [CLI - Installation](public_cloud/ai_machine_learning/cli_10_howto_install_cli)
             + [CLI - Launch an AI notebook](public_cloud/ai_machine_learning/cli_11_howto_run_notebook_cli)
