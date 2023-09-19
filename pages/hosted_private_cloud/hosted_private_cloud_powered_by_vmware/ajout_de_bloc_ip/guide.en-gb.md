@@ -52,8 +52,6 @@ You will need to fill in several fields in order to create your IP block.
 > [!success]
 >
 > There is a one time setup fee for an IP block that will be due before delivery.
->  
-> IP address renewal is free of charge.
 >
 
 Once you have confirmed the final step, you will receive the purchase order for your IP block. If everything looks correct in the purchase order, you will simply need to pay the total using one of the payment methods listed at the bottom of the page, and your order will then be delivered.
