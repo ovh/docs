@@ -73,6 +73,8 @@ session = onnxruntime.InferenceSession("/workspace/models/densenet_onnx_cifar10/
 
 Create the dictionary with class index and name:
 
+*Find out more information about these classes ID and name on the notebook [tutorial](https://github.com/ovh/ai-training-examples/blob/main/notebooks/go-further/onnx/notebook_finetune_densenet_export_onnx.ipynb).*
+
 ```python
 idx_to_class = {0: 'AIRPLANE', 1: 'AUTOMOBILE', 2: 'BIRD', 3: 'CAT', 4: 'DEER', \
                 5: 'DOG', 6: 'FROG', 7: 'HORSE', 8: 'SHIP', 9: 'TRUCK'}
