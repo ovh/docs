@@ -1,7 +1,7 @@
 ---
 title: 'Creare due o più VLAN nella vRack'
 excerpt: 'Scopri come creare molteplici VLAN nella vRack'
-updated: 2022-02-24
+updated: 2023-09-12
 ---
 
 > [!primary]
@@ -73,9 +73,9 @@ Recupera il nome dell'interfaccia di rete e il suo indirizzo MAC:
 ip a
 ``` 
 
-Ecco l'interfaccia che vogliamo configurare è `eno2` con indirizzo MAC: 'd0:50:99:d6:6b:14'.
+Ecco l'interfaccia che vogliamo configurare è `eno2` con indirizzo MAC: `d0:50:99:d6:6b:14`.
 
-![ubuntu VLAN](images/vrack3-ubuntu-01.png)
+![ubuntu VLAN](images/vrack3-ubuntu-01.png){.thumbnail}
 
 Aggiungere la configurazione di rete per questa interfaccia di rete e la dichiarazione VLAN nel file seguente:
 
@@ -114,7 +114,7 @@ Utilizza il comando seguente per confermare la configurazione:
 ip a
 ``` 
 
-![ubuntu VLAN](images/vrack3-ubuntu-02.png)
+![ubuntu VLAN](images/vrack3-ubuntu-02.png){.thumbnail}
 
 #### Debian
 
@@ -156,7 +156,11 @@ Connettiti al tuo server tramite desktop remoto e apri l’applicazione Server M
 
 ![Windows VLAN](images/vrack2-windows-01.png){.thumbnail}
 
-Crea un nuovo team selezionando un’interfaccia di rete e digitando un nome nel campo **Team name**. Al termine dell’operazione clicca su `OK`{.action} per confermare.
+Clicca con il tasto destro sull’interfaccia di rete e seleziona `Add to New Team`{.action}.
+
+![Windows vLAN](images/vrack2-windows-02.0.png){.thumbnail}
+
+Nella nuova finestra, crea un nuovo team digitando il nome del team nel campo **Team name**. Al termine dell’operazione clicca su `OK`{.action} per confermare.
 
 ![Windows VLAN](images/vrack2-windows-02.png){.thumbnail}
 
@@ -164,31 +168,32 @@ Poi specifica il tag della VLAN. Nel pannello **Adapters and Interfaces** della 
 
 ![Windows VLAN](images/vrack2-windows-03.png){.thumbnail}
 
-Adesso non resta che configurare l’indirizzo IP della VLAN. Clicca sul pulsante `Start`{.action} e poi su `Pannello di controllo`{.action}.
+Adesso non resta che configurare l’indirizzo IP della VLAN. Clicca sul pulsante `Start`{.action} e poi su `Control Panel`{.action}.
 
 ![Windows VLAN](images/vrack2-windows-04.png){.thumbnail}
 
-Poi clicca su `Rete e Internet`{.action}.
+Poi clicca su `Network and Internet`{.action}.
 
 ![Windows VLAN](images/vrack2-windows-05.png){.thumbnail}
 
-Clicca su `Centro connessioni di rete e condivisione`{.action}.
+Clicca su `Network and Sharing Center`{.action}.
 
 ![Windows VLAN](images/vrack2-windows-06.png){.thumbnail}
 
-Poi clicca su `Modifica impostazioni scheda`{.action}.
+Poi clicca su `Modifier les paramètres de l’adaptateur`{.action}.
 
 ![Windows VLAN](images/vrack2-windows-07.png){.thumbnail}
 
-Di seguito, clicca con il tasto destro sull’interfaccia VLAN e poi clicca su `Proprietà`{.action}.
+Di seguito, clicca con il tasto destro sull’interfaccia VLAN e poi clicca su `Properties`{.action}.
 
 ![Windows VLAN](images/vrack2-windows-08.png){.thumbnail}
 
+Nel nostro esempio, `Ethernet 2` è l'interfaccia utilizzata per la vRack. ma è possibile che la scheda di rete vRack utilizzi un'interfaccia diversa. Utilizza un'interfaccia che non possiede l'indirizzo IP principale del server o che utilizza un indirizzo IP auto-attribuito.
 Fai doppio click su `Internet Protocol Version 4 (TCP/IPv4)`{.action}.
 
 ![Windows VLAN](images/vrack2-windows-09.png){.thumbnail}
 
-Clicca su `Utilizza il seguente indirizzo IP`{.action}: in **IP Address** inserisci un indirizzo IP del tuo intervallo e in **Subnet mask** inserisci 255.255.0.0
+Clicca su `Use the following IP address`{.action}: in **IP Address** inserisci un indirizzo IP del tuo intervallo e in **Subnet mask** inserisci 255.255.0.0
 
 ![Windows VLAN](images/vrack2-windows-10.png){.thumbnail}
 

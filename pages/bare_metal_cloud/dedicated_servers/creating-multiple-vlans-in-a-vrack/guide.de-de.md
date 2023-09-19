@@ -1,7 +1,7 @@
 ---
 title: Mehrere VLANs im vRack erstellen
 excerpt: 'Erfahren Sie hier, wie Sie mehrere VLANs im vRack erstellen'
-updated: 2022-02-24
+updated: 2023-09-12
 ---
 
 > [!primary]
@@ -75,7 +75,7 @@ ip a
 
 Das zu konfigurierende Interface ist hier `eno2` mit der MAC Adresse `d0:50:99:d6:6b:14`.
 
-![ubuntu VLAN](images/vrack3-ubuntu-01.png)
+![ubuntu VLAN](images/vrack3-ubuntu-01.png){.thumbnail}
 
 Fügen Sie die Netzwerkkonfiguration für diese Netzwerkschnittstelle und die VLAN-Deklaration in der folgenden Datei hinzu:
 
@@ -114,7 +114,7 @@ Verwenden Sie folgenden Befehl, um die Konfiguration zu bestätigen:
 ip a
 ```
 
-![ubuntu VLAN](images/vrack3-ubuntu-02.png)
+![ubuntu VLAN](images/vrack3-ubuntu-02.png){.thumbnail}
 
 #### Debian
 
@@ -170,6 +170,10 @@ Verbinden Sie sich über Remote-Desktop mit Ihrem Server und öffnen Sie die Anw
 
 ![Windows VLAN](images/vrack2-windows-01.png){.thumbnail}
 
+Klicken Sie dann mit der rechten Maustaste auf das Netzwerkinterface und wählen Sie `Add to New Team`{.action}.
+
+![Windows vLAN](images/vrack2-windows-02.0.png){.thumbnail}
+
 Erstellen Sie anschließend ein neues Team, indem Sie ein Netzwerkinterface auswählen und im Feld “**Team name**” einen Teamnamen eingeben. Wenn Sie damit fertig sind, bestätigen Sie mit `OK`{.action}.
 
 ![Windows VLAN](images/vrack2-windows-02.png){.thumbnail}
@@ -178,7 +182,7 @@ Geben Sie nun das VLAN-Tag an. Klicken Sie im “**NIC Teaming**”-Fenster im P
 
 ![Windows VLAN](images/vrack2-windows-03.png){.thumbnail}
 
-Konfigurieren Sie nun die IP-Adresse des VLANs. Öffnen Sie hierzu über das Startmenü die `Systemsteuerung`{.action}.
+Konfigurieren Sie nun die IP-Adresse des VLANs. Öffnen Sie hierzu über das Startmenü die `Control Panel`{.action}.
 
 ![Windows VLAN](images/vrack2-windows-04.png){.thumbnail}
 
@@ -199,6 +203,8 @@ Klicken Sie nun mit der rechten Maustaste auf das VLAN-Interface und klicken Sie
 ![Windows VLAN](images/vrack2-windows-08.png){.thumbnail}
 
 Doppelklicken Sie auf `Internet Protocol Version 4 (TCP/IP/IPv4)`{.action}.
+
+In unserem Beispiel ist `Ethernet 2` das für vRack verwendete Interface. Es ist jedoch möglich, dass das vRack-Interface in Ihrer Konfiguration ein anderes ist. Das hier auszuwählende Interface verwendet nicht die Haupt-IP-Adresse des Servers oder eine selbst zugewiesene IP-Adresse.
 
 ![Windows VLAN](images/vrack2-windows-09.png){.thumbnail}
 
