@@ -23,7 +23,7 @@ Here is an overview of the **image classification** API:
 - A [user for AI Deploy](/pages/public_cloud/ai_machine_learning/gi_01_manage_users)
 - [Docker](https://www.docker.com/get-started) installed on your local computer
 - Some knowledge about building image and [Dockerfile](https://docs.docker.com/engine/reference/builder/)
-- Your weights obtained from fine-tuning **DenseNet model** on the **CIFAR-10 dataset** (refer to the *"Export ONNX model for inference"* part of the [notebook about DenseNet fine-tuning](https://github.com/ovh/ai-training-examples/blob/main/notebooks/go-further/onnx/notebook_finetune_densenet_export_onnx.ipynb)
+- Your weights obtained from fine-tuning **DenseNet model** on the **CIFAR-10 dataset** (refer to the *"Export ONNX model for inference"* part of the [notebook about DenseNet fine-tuning](https://github.com/ovh/ai-training-examples/blob/main/notebooks/go-further/onnx/notebook_finetune_densenet_export_onnx.ipynb))
 
 ## Instructions
 
