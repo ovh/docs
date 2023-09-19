@@ -904,7 +904,7 @@
                 + [AI Deploy - Tutorial - Deploy a Rasa chatbot with a simple Flask app](public_cloud/ai_machine_learning/deploy_tuto_11_rasa_chatbot_flask)
                 + [AI Deploy - Tutorial - Create a web service to recognize sign language with YOLOv7](public_cloud/ai_machine_learning/deploy_tuto_13_streamlit_yolov7)
                 + [AI Deploy - Tutorial - Deploy a brain tumor segmentation app using Streamlit](public_cloud/ai_machine_learning/deploy_tuto_14_img_segmentation_app)
-                + [AI Deploy - Tutorial - Deploy an ONNX model using FastAPI](public_cloud/ai_machine_learning/deploy_tuto_15_fastapi_onnx)
+                + [AI Deploy - Tutorial - Deploy an ONNX model using FastAPI](public_cloud/ai_machine_learning/deploy_tuto_16_fastapi_onnx)
         + [AI Partners Ecosystem](products/public-cloud-ai-and-machine-learning-ai-ecosystem)
             + [AI Partners - Guides](public-cloud-ai-and-machine-learning-ai-ecosystem-guides)
                 + [AI Partners Ecosystem - Lettria - Models features, capabilities and billing](public_cloud/ai_machine_learning/ecosystem_01_lettria_billing_features_capabilities)
