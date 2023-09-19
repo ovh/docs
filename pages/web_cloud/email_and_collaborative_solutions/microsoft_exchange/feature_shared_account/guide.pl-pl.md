@@ -39,7 +39,7 @@ Wpisz wymagane pola:
 |Nazwa, która będzie się wyświetlać.|Nazwa wyświetlacza, którą chcesz wyświetlić podczas wysyłki z konta współdzielonego.|
 |Ukryj adres w książce adresowej|Dzięki ukryciu adresu w książce adresowej adres konta współdzielonego nie jest widoczny na liście adresów Twojej platformy Exchange.|
 
-<a name="#size"></a>
+<a name="size"></a>
 
 > [!primary]
 >

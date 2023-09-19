@@ -39,7 +39,7 @@ Füllen die Felder aus:
 |Anzeigename|Anzeigename, die Sie beim Versand über Ihr freigegebenes Postfach anzeigen möchten.|
 |Adresse im Adressbuch verbergen|Das Ausblenden der Adresse im Adressbuch sorgt dafür, dass die Adresse des freigegebenen Postfachs nicht vom Exchange-Dienst gelistet wird.|
 
-<a name="#size"></a>
+<a name="size"></a>
 
 > [!primary]
 >

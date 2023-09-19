@@ -35,7 +35,7 @@ Fill in the requested fields:
 |Display name|The display name you want to appear when sending from your shared account.|
 |Hide the address in the directory|By hiding the address in the directory you can ensure that the shared account is not visible in the address list of your Exchange service.|
 
-<a name="#size"></a>
+<a name="size"></a>
 
 > [!primary]
 >
