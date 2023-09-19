@@ -263,7 +263,7 @@ By clicking on the link of your AI Deploy app, you will arrive on the following 
 
 You can add `/docs` at the end of the URL of your app.
 
-In our example, the URL is as follows: https://1207af6f-1f5f-4c57-9c64-8738b89a16c8.app.gra.ai.cloud.ovh.net/
+In our example, the URL is as follows: https://1207af6f-1f5f-4c57-9c64-8738b89a16c8.app.gra.ai.cloud.ovh.net/docs
 
 It provides a complete dashboard for interacting with the API!
 
