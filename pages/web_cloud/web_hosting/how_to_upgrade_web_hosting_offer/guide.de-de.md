@@ -183,7 +183,7 @@ Diese Berechnung entspricht der Preisdifferenz zwischen Ihrem ursprünglichen un
 
 Folgen Sie [diesen Anweisungen](#modify), um Ihr Angebot zu wechseln.
 
-## Weitere Informationen <a name="gofurther"></a>
+## Weitere Informationen <a name="go-further"></a>
 
 [Statistiken und Logs einer auf einem Shared Hosting Angebot gehosteten Website einsehen](/pages/web_cloud/web_hosting/logs_and_statistics)
 

@@ -160,7 +160,7 @@ Este cálculo corresponde a la diferencia de precio entre su producto inicial y 
 
 Siga [estas instrucciones](#modify) para cambiar de producto.
 
-## Más información <a name="gofurther"></a>
+## Más información <a name="go-further"></a>
 
 [Consultar las estadísticas y logs de mi sitio web alojado en un plan compartido](/pages/web_cloud/web_hosting/logs_and_statistics)
 

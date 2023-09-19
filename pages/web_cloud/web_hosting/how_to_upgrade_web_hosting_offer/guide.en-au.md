@@ -81,7 +81,7 @@ This calculation corresponds to the price difference between your initial soluti
 
 Please follow [these instructions](#modify) to change your plan.
 
-## Go further <a name="gofurther"></a>
+## Go further <a name="go-further"></a>
 
 [Accessing a website’s logs and statistics on a web hosting](/pages/web_cloud/web_hosting/logs_and_statistics)
 

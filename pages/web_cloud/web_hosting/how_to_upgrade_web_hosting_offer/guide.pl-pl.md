@@ -176,7 +176,7 @@ Obliczenie to odpowiada różnicy w cenie między Twoją ofertą początkową a 
 
 Postępuj zgodnie [z instrukcjami](#modify), aby zmienić ofertę.
 
-## Sprawdź również <a name="gofurther"></a>
+## Sprawdź również <a name="go-further"></a>
 
 [Sprawdź statystyki i logi strony zainstalowanej na hostingu](/pages/web_cloud/web_hosting/logs_and_statistics)
 

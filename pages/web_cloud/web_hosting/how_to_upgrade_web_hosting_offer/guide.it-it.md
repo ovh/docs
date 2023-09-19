@@ -160,7 +160,7 @@ Questo calcolo corrisponde alla differenza di prezzo tra la tua offerta iniziale
 
 Segui [queste istruzioni](#modify) per effettuare la modifica dell'offerta.
 
-## Per saperne di più <a name="gofurther"></a>
+## Per saperne di più <a name="go-further"></a>
 
 [Consulta le statistiche e i log del tuo sito ospitato su un'offerta condivisa](/pages/web_cloud/web_hosting/logs_and_statistics)
 

@@ -160,7 +160,7 @@ Este cálculo corresponde à diferença de preço entre a sua oferta inicial e a
 
 Siga [estas instruções](#modify) para realizar a alteração da oferta.
 
-## Quer saber mais? <a name="gofurther"></a>
+## Quer saber mais? <a name="go-further"></a>
 
 [Consultar as estatísticas e os logs do meu site alojado numa oferta partilhada](/pages/web_cloud/web_hosting/logs_and_statistics)
 
