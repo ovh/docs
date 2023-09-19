@@ -271,7 +271,7 @@ It provides a complete dashboard for interacting with the API!
 
 To be able to send an image for classification, select `/uploadimage/` in the green box. Click on `Try it out` and add the image of your choice in the dedicated zone.
 
-![APIImage](images/fastapi-send image.png){.thumbnail}
+![APIImage](images/fastapi-send-image.png){.thumbnail}
 
 To get the result of the prediction, click on the `Execute button`.
 
