@@ -1,7 +1,7 @@
 ---
 title: VMware NSX-V - End of Life
 excerpt: Analyse your use of the NSX-V features and choose between the different evolution scenarios, from disabling the NSX-V component to the migration to NSX
-updated: 2023-08-14
+updated: 2023-09-19
 ---
 
 ## Objective
@@ -28,6 +28,10 @@ To identify your usage of the NSX-V feature in your Hosted Private Cloud environ
 
 If you do not use any of the above features, we will deactivate NSX-V starting 1st September 2023. 
 You will be notified when the deactivation process is available.
+
+Regardless of your Hosted Private Cloud range, if you want to disable NSX-v, you won't have to migrate to a new Datacentre. You will be able to keep your current resources.
+
+Visit our page on [VMware on OVHcloud lifecycle policy](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/lifecycle_policy).
 
 #### I only use VXLAN
 

@@ -1,7 +1,7 @@
 ---
 title: VMware NSX-v - Fin de prise en charge
 excerpt: "Analysez votre utilisation des fonctionnalités NSX-v et choisissez entre les différents scénarios possibles d’évolution, allant de la désactivation du composant NSX-v jusqu'à la migration vers NSX"
-updated: 2023-08-14
+updated: 2023-09-19
 ---
 
 ## Objectif
@@ -25,6 +25,10 @@ Pour identifier votre utilisation de la fonctionnalité NSX-v dans votre environ
 #### Je n'utilise aucune des fonctionnalités de NSX-v
 
 Si vous n'utilisez aucune des fonctionnalités ci-dessus, vous pourrez désactiver NSX-v. Vous serez notifié lorsque le processus de désactivation sera disponible.
+
+Quelle que soit votre gamme Hosted Private Cloud, si vous souhaitez désactiver NSX-v, vous n'aurez pas à effectuer la migration vers un nouveau Datacenter. Vous pourrez conserver vos ressources actuelles.
+
+Consultez notre page sur le [cycle de vie de la solution VMware on OVHcloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/lifecycle_policy).
 
 #### Je n'utilise que du VXLAN
 
