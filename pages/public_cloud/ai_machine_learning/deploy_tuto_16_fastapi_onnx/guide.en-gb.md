@@ -8,7 +8,8 @@ updated: 2023-09-19
 
 The purpose of this tutorial is to show how to deploy an **ONNX model** for optimized inference thanks to **AI Deploy**.
 
-In order to do this, you will use a **DenseNet model** trained on [CIFAR-10 dataset](https://www.cs.toronto.edu/~kriz/cifar.html) to classify images and [FastAPI](https://fastapi.tiangolo.com/) Python framework to create the API. You will also learn how to build and use a custom Docker image for a FastAPI deployment.
+In order to do this, you will use a **DenseNet model** trained on [CIFAR-10 dataset](https://www.cs.toronto.edu/~kriz/cifar.html) to classify images and [FastAPI](https://fastapi.tiangolo.com/) Python framework to create the API. Developing an API will enable you to use your Machine Learning model for inference.
+You will also learn how to build and use a custom Docker image for a FastAPI deployment.
 
 For more information on how to train DenseNet on a CIFAR-10 dataset, refer to the following [documentation](/pages/public_cloud/ai_machine_learning/notebook_tuto_15_finetune_export_onnx_model).
 
