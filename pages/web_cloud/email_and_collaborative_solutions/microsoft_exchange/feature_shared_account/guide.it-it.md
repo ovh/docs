@@ -39,7 +39,7 @@ Inserisci i campi richiesti:
 |Nome da visualizzare|Il nome visualizzato durante un invio dal tuo account condiviso.|
 |Nascondi l'indirizzo nella rubrica|Nascondere l'indirizzo nella rubrica permette di garantire che l'indirizzo dell'account condiviso non sia visibile nella lista degli indirizzi della tua piattaforma Exchange.|
 
-<a name="#size"></a>
+<a name="size"></a>
 
 > [!primary]
 >

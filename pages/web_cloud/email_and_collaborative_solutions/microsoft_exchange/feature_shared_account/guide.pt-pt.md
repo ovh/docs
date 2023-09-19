@@ -39,7 +39,7 @@ Introduza os campos solicitados:
 |Nome a mostrar|O nome de visualização que pretende apresentar durante um envio a partir da sua conta partilhada.|
 |Ocultar o endereço na lista|Ocultar o endereço na lista de endereços permite que o endereço da conta partilhada não seja visível na lista de endereços da sua plataforma Exchange.|
 
-<a name="#size"></a>
+<a name="size"></a>
 
 > [!primary]
 >

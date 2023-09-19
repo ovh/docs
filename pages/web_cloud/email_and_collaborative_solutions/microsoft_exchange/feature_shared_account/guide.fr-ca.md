@@ -35,7 +35,7 @@ Renseignez les champs demandés :
 |Nom à afficher|Le nom d'affichage que vous souhaitez faire apparaître lors d'un envoi depuis votre compte partagé.|
 |Cacher l'adresse dans l'annuaire|Cacher l’adresse dans l’annuaire permet de faire en sorte que l’adresse du compte partagé ne soit pas visible dans la liste des adresses de votre plateforme Exchange.|
 
-<a name="#size"></a>
+<a name="size"></a>
 
 > [!primary]
 >

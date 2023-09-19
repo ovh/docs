@@ -39,7 +39,7 @@ Introduzca los campos solicitados:
 |Nombre mostrado|El nombre mostrado que quiere que aparezca en un envío desde su cuenta compartida.|
 |Ocultar la dirección en el directorio|Ocultar la dirección en el directorio permite evitar que la dirección de la cuenta compartida sea visible en la lista de direcciones de su plataforma Exchange.|
 
-<a name="#size"></a>
+<a name="size"></a>
 
 > [!primary]
 >
