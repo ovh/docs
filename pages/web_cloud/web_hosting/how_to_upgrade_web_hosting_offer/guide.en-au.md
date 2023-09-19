@@ -1,6 +1,6 @@
 ---
-title: Changing your web hosting plan offer
-excerpt: Find out how to change the subscription offer for your OVHcloud Web Hosting plan
+title: "Web Hosting: how to change your solution?"
+excerpt: "Find out how to change the subscription offer for your OVHcloud Web Hosting"
 updated: 2023-09-19
 ---
 

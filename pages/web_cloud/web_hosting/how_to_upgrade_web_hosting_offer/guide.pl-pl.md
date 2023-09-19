@@ -1,6 +1,6 @@
 ---
-title: "Zmiana oferty hostingowej"
-excerpt: "Dowiedz się, jak zmienić formułę subskrypcji hostingu OVHcloud"
+title: "Hosting: jak zmienić ofertę?"
+excerpt: "Dowiedz się, jak zmienić formułę abonamentu na hosting OVHcloud"
 updated: 2023-09-19
 ---
 

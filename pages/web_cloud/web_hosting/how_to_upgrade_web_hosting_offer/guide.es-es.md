@@ -1,6 +1,6 @@
 ---
-title: Mejorar la solución de alojamiento web
-excerpt: Cómo cambiar la fórmula de suscripción de un plan de hosting de OVHcloud
+title: "Web hosting: ¿Cómo mejorar su solución?"
+excerpt: "Descubra cómo modificar la fórmula de suscripción de un plan de hosting de OVHcloud"
 updated: 2023-09-19
 ---
 

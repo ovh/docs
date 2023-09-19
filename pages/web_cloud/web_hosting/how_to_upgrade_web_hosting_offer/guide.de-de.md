@@ -1,6 +1,6 @@
 ---
-title: Webhosting-Dienst anpassen
-excerpt: "Erfahren Sie hier, wie Sie das Abonnement Ihres OVHcloud Webhosting-Dienstes ändern"
+title: "Webhosting: Wie kann ich mein Angebot weiterentwickeln?"
+excerpt: "Diese Anleitung erklärt, wie Sie das Abonnement Ihres OVHcloud Webhosting-Angebots ändern können"
 updated: 2023-09-19
 ---
 
