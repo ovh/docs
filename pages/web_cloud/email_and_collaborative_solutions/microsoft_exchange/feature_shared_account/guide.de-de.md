@@ -34,8 +34,8 @@ Füllen die Felder aus:
 
 |Funktion|Beschreibung|
 |---|---|
-|E-Mail-Account|Wählen Sie den Namen Ihres freigegebenen Accounts aus. **Es darf sich nicht um eine bestehende E-Mail-Adresse handeln.**|
-|Quota|Geben Sie das gewünschte Speicherkontingent für Ihren freigegebenen Account an, [abhängig vom verfügbaren Speicherplatz](#size).|
+|E-Mail-Account|Vergeben Sie einen Namen für das freigegebene Postfach. **Es darf sich nicht um eine bestehende E-Mail-Adresse handeln.**|
+|Quota|Geben Sie das gewünschte Speicherkontingent für das freigegebene Postfach an, [abhängig vom verfügbaren Speicherplatz](#size).|
 |Anzeigename|Anzeigename, die Sie beim Versand über Ihr freigegebenes Postfach anzeigen möchten.|
 |Adresse im Adressbuch verbergen|Das Ausblenden der Adresse im Adressbuch sorgt dafür, dass die Adresse des freigegebenen Postfachs nicht vom Exchange-Dienst gelistet wird.|
 
@@ -43,11 +43,11 @@ Füllen die Felder aus:
 
 > [!primary]
 >
-> Der für die Erstellung eines gemeinsamen Accounts verfügbare Speicherplatz hängt von der Anzahl der auf Ihrer Plattform abonnierten Accounts ab. Jeder auf Ihrer Plattform abonnierte Exchange Account entsperrt 5 GB für die gemeinsam genutzten Accounts.
+> Der für die Erstellung eines freigegebenen Postfachs verfügbare Speicherplatz hängt von der Anzahl der für Ihrem Dienst gebuchten Accounts ab. Jeder abonnierte Exchange Account fügt 5 GB für freigegebene Postfächer hinzu.
 >
-> **Beispiel:**
+> **Beispiel**:
 >
-> Sie haben 4 Exchange Accounts auf Ihrer Plattform abonniert, sodass Sie **4 x 5 GB** haben. Dies entspricht **20 GB** dem für die freigegebenen Accounts Ihrer Plattform zugewiesenen Speicherplatz.
+> Sie haben 4 Accounts auf Ihrem Exchange abonniert, und damit **4 x 5 GB** erhalten. Sie haben also **20 GB** Speicherplatz für freigegebene Postfächer auf diesem Dienst.
 
 
 Klicken Sie auf `Weiter`{.action}, um zur Zusammenfassung zu gelangen und klicken Sie auf `Bestätigen`{.action}.
