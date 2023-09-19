@@ -257,7 +257,7 @@ ovhai app run <shared-registry-address>/densenet-onnx-fastapi:latest \
 > [!primary]
 > **Notes**
 >
-> - `--gpu 1` indicates that we request 1 GPU for that app.
+> - `--gpu 1` the use of the model requires **GPU** (`device="cuda"`). Please choose at least 1 GPU.
 >
 > - Consider adding the `--unsecure-http` attribute if you want your application to be reachable without any authentication.
 >
