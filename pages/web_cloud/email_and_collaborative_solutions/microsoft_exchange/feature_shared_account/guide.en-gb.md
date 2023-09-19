@@ -13,8 +13,8 @@ A **shared account** is a mailbox shared between several Exchange accounts and c
 
 ## Requirements
 
-- access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
-- an [OVHcloud Exchange solution](https://www.ovhcloud.com/en-gb/emails/hosted-exchange/)
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- An [OVHcloud Exchange solution](https://www.ovhcloud.com/en-gb/emails/hosted-exchange/)
 
 ## Instructions
 
@@ -39,11 +39,11 @@ Fill in the requested fields:
 
 > [!primary]
 >
-> The space available for creating a shared account depends on the number of accounts subscribed on your platform. Each Exchange account subscribed on your platform unblocks 5 GB for shared accounts.
+> The space available for creating a shared account depends on the number of accounts subscribed on the Exchange service. Each account adds 5 GB of space for shared accounts.
 >
-> **example:**
+> **Example**:
 >
-> You have signed up to 4 Exchange accounts on your platform, so you have **4 x 5 GB**, i.e. **20 GB** of allocated space for the shared accounts on your Exchange platform.
+> You have subscribed to 4 accounts on your Exchange service, so you have **4 x 5 GB** i.e. **20 GB** of allocated space for shared accounts on this Exchange service.
 
 Click `Next`{.action} to proceed to the summary. Complete the operation by clicking on `Confirm`{.action}.
 
