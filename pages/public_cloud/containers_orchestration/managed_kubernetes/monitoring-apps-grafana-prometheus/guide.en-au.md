@@ -4,28 +4,6 @@ excerpt: 'Find out how to monitor and visualize metrics with Prometheus and Graf
 updated: 2023-03-17
 ---
 
-<style>
- pre {
-     font-size: 14px;
- }
- pre.console {
-   background-color: #300A24;
-   color: #ccc;
-   font-family: monospace;
-   padding: 5px;
-   margin-bottom: 5px;
- }
- pre.console code {
-   border: solid 0px transparent;
-   font-family: monospace !important;
-   font-size: 0.75em;
-   color: #ccc;
- }
- .small {
-     font-size: 0.75em;
- }
-</style>
-
 ## Objective
 
 In this tutorial we will show you how to monitor your applications/workloads on an OVHcloud Managed Kubernetes cluster.
@@ -67,7 +45,8 @@ helm repo update
 
 This will add the Prometheus repository and update all of your repositories: 
 
-<pre class="console"><code>$ helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
+```console
+$ helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
 "prometheus-community" has been added to your repositories
 
 $ helm repo update
@@ -76,7 +55,7 @@ Hang tight while we grab the latest from your chart repositories...
 ...Successfully got an update from the "prometheus-community" chart repository
 ...
 Update Complete. ⎈Happy Helming!⎈
-</code></pre>
+```
 
 To install the Prometheus Operator Helm chart in your OVHcloud Managed Kubernetes cluster, you need to customize some values.
 To do this, you can set parameters on the command line (`--set param.name=value`) or create a local file based on the values from the chart and pass it on the command line (`--values /tmp/kube-prometheus-stack.values`).
@@ -104,7 +83,8 @@ As you can see, a new `prometheus` namespace will be created and we specified th
 
 You should have a behavior like this:
 
-<pre class="console"><code>$ helm install prometheus-community/kube-prometheus-stack \
+```console
+$ helm install prometheus-community/kube-prometheus-stack \
 --create-namespace --namespace prometheus \
 --generate-name \
 --values /tmp/kube-prometheus-stack.values \
@@ -123,11 +103,12 @@ kube-prometheus-stack has been installed. Check its status by running:
   kubectl --namespace prometheus get pods -l "release=kube-prometheus-stack-1679042344"
 
 Visit https://github.com/prometheus-operator/kube-prometheus for instructions on how to create & configure Alertmanager and Prometheus instances using the Operator.
-</code></pre>
+```
 
 You can also verify by checking the Pods in the new `prometheus` namespace:
 
-<pre class="console"><code>$ kubectl get pods -n prometheus
+```console
+$ kubectl get pods -n prometheus
 NAME                                                              READY   STATUS    RESTARTS        AGE
 alertmanager-kube-prometheus-stack-1679-alertmanager-0            2/2     Running   0               3m3s
 kube-prometheus-stack-1679-operator-9fdc894c9-frqc6               1/1     Running   0               3m12s
@@ -135,11 +116,12 @@ kube-prometheus-stack-1679042344-grafana-86c64879cf-gqqkh         3/3     Runnin
 kube-prometheus-stack-1679042344-kube-state-metrics-754cc98m2gh   1/1     Running   0               3m12s
 kube-prometheus-stack-1679042344-prometheus-node-exporter-2r8mc   1/1     Running   0               3m12s
 prometheus-kube-prometheus-stack-1679-prometheus-0                2/2     Running   0               3m2s
-</code></pre>
+```
 
 You can also check that `Prometheus` and `Grafana` have an external IP:
 
-<pre class="console"><code>$ kubectl get svc -n prometheus
+```console
+$ kubectl get svc -n prometheus
 NAME                                                        TYPE           CLUSTER-IP     EXTERNAL-IP      PORT(S)                      AGE
 alertmanager-operated                                       ClusterIP      None           <none>           9093/TCP,9094/TCP,9094/UDP   15m
 kube-prometheus-stack-1647-alertmanager                     ClusterIP      ZZ.Z.ZZ.ZZ     <none>           9093/TCP                     15m
@@ -149,7 +131,7 @@ kube-prometheus-stack-1647417678-grafana                    LoadBalancer   ZZ.Z.
 kube-prometheus-stack-1647417678-kube-state-metrics         ClusterIP      ZZ.Z.ZZZ.ZZZ   <none>           8080/TCP                     15m
 kube-prometheus-stack-1647417678-prometheus-node-exporter   ClusterIP      ZZ.Z.ZZZ.ZZ    <none>           9100/TCP                     15m
 prometheus-operated                                         ClusterIP      None           <none>           9090/TCP                     14m
-</code></pre>
+```
 
 If it's not the case, please wait until the Load Balancers are correctly created.
 
@@ -169,7 +151,8 @@ echo Grafana URL: http://$GRAFANA_URL
 
 You should obtain the following result:
 
-<pre class="console"><code>$ export PROMETHEUS_URL=$(kubectl get svc -n prometheus -l app=kube-prometheus-stack-prometheus -o jsonpath='{.items[].status.loadBalancer.ingress[].ip}')
+```console
+$ export PROMETHEUS_URL=$(kubectl get svc -n prometheus -l app=kube-prometheus-stack-prometheus -o jsonpath='{.items[].status.loadBalancer.ingress[].ip}')
 
 $ echo Prometheus URL: http://$PROMETHEUS_URL:9090
 Prometheus URL: http://XX.XXX.XXX.XXX:9090
@@ -178,7 +161,7 @@ $ export GRAFANA_URL=$(kubectl get svc -n prometheus -l app.kubernetes.io/name=g
 
 $ echo Grafana URL: http://$GRAFANA_URL
 Grafana URL: http://YY.YYY.YYY.YY
-</code></pre>
+```
 
 Open your browser and go to the Prometheus interface.
 
@@ -214,10 +197,11 @@ For example, you can click on the `General/Kubernetes/Compute Resources/Cluster`
 
 First, execute the `helm list` command in every namespace (with `-A` option) in your Kubernetes cluster to see what you've installed.
 
-<pre class="console"><code>$ helm list -A
+```console
+$ helm list -A
 NAME                            	NAMESPACE    	REVISION	UPDATED                             	STATUS  	CHART                       	APP VERSION
 kube-prometheus-stack-1647417678	prometheus   	1       	2022-03-16 09:01:23.979906 +0100 CET	deployed	kube-prometheus-stack-33.2.1	0.54.1
-</code></pre>
+```
 
 Now, you can delete what you've installed in this tutorial, thanks to `helm uninstall` commands:
 
@@ -227,9 +211,10 @@ helm uninstall kube-prometheus-stack-1647417678 -n prometheus
 
 You should have a behavior like this:
 
-<pre class="console"><code>$ helm uninstall kube-prometheus-stack-1647417678 -n prometheus
+```console
+$ helm uninstall kube-prometheus-stack-1647417678 -n prometheus
 release "kube-prometheus-stack-1647417678" uninstalled
-</code></pre>
+```
 
 ## Go further
 

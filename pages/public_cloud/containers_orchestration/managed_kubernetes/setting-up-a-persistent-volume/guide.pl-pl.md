@@ -4,27 +4,6 @@ excerpt: 'Find out how to create Persistent Volume Claim (PVC) and Persistent Vo
 updated: 2022-11-28
 ---
 
-<style>
- pre {
-     font-size: 14px;
- }
- pre.console {
-   background-color: #300A24;
-   color: #fff;
-   font-family: monospace;
-   padding: 5px;
-   margin-bottom: 5px;
- }
- pre.console code {
-   b   font-family: monospace !important;
-   font-size: 0.75em;
-   color: #fff;
- }
- .small {
-     font-size: 0.75em;
- }
-</style>
-
 In this tutorial we are going to guide you with a simple example of setting-up a [Persistent Volume (PV)](https://kubernetes.io/docs/concepts/storage/persistent-volumes/) on your OVHcloud Managed Kubernetes Service.
 
 You will create a `Persistent Volume Claim` (PVC), that will automatically create a `Persistent Volume` (PV) that will automatically create an asscoiated Public Cloud __Block Storage__ volume.<br>
@@ -90,7 +69,8 @@ kubectl get pvc
 kubectl get pv | grep "test-pvc"
 ```
 
-<pre class="console"><code>$ kubectl apply -f test-pvc.yaml
+```console
+$ kubectl apply -f test-pvc.yaml
 persistentvolumeclaim/test-pvc created
 
 $ kubectl get pvc
@@ -99,7 +79,7 @@ test-pvc   Bound    ovh-managed-kubernetes-dmhe43-pvc-ac9493f5-e65f-41ee-a7fa-45
 
 $ kubectl get pv | grep "test-pvc"
 ovh-managed-kubernetes-dmhe43-pvc-ac9493f5-e65f-41ee-a7fa-45d42fc37fe3   10Gi       RWO            Delete           Bound      default/test-pvc                               csi-cinder-high-speed            4m55s
-</code></pre>
+```
 
 ## Using the PVC
 
@@ -139,7 +119,8 @@ kubectl describe pod test-pvc-pod
 
 You should obtain a result like this:
 
-<pre class="console"><code>$ kubectl apply -f test-pvc-pod.yaml
+```console
+$ kubectl apply -f test-pvc-pod.yaml
 pod/test-pvc-pod created
 
 $ kubectl describe pod test-pvc-pod
@@ -193,17 +174,18 @@ Events:
   Type    Reason     Age   From               Message
   ----    ------     ----  ----               -------
   Normal  Scheduled  7s    default-scheduler  Successfully assigned default/test-pvc-pod to nodepool-f636da5d-3d0d-481d-aa-node-f4d042
-</code></pre>
+```
 
 ## Storage Classes
 
 We currently support two [Storage Classes](https://kubernetes.io/docs/concepts/storage/storage-classes/) on OVHcloud Managed Kubernetes: `csi-cinder-high-speed` and `csi-cinder-classic`, both based on [Cinder](https://docs.openstack.org/cinder/latest/){.external}, the OpenStack Block Storage service. The difference between them is the associated physical storage device. `csi-cinder-high-speed` uses SSD, while `csi-cinder-classic` uses traditional spinning disks. Both are distributed transparently, on three physical local replicas.
 
-<pre class="console"><code>$ kubectl get sc
+```console
+$ kubectl get sc
 NAME                              PROVISIONER                RECLAIMPOLICY   VOLUMEBINDINGMODE   ALLOWVOLUMEEXPANSION   AGE
 csi-cinder-classic                cinder.csi.openstack.org   Delete          Immediate           true                   67d
 csi-cinder-high-speed (default)   cinder.csi.openstack.org   Delete          Immediate           true                   67d
-</code></pre>
+```
 
 When you create a Persistent Volume Claim on your Kubernetes cluster, we provision the Cinder storage into your account. This storage is charged according to the OVH [flexible cloud storage prices](https://www.ovh.com/world/public-cloud/storage/additional-disks/){.external}.
 
@@ -235,10 +217,11 @@ For every [Storage Class](https://kubernetes.io/docs/concepts/storage/storage-cl
 kubectl get pv
 ```
 
-<pre class="console"><code>$ kubectl get pv
+```console
+$ kubectl get pv
 NAME                                       CAPACITY  ACCESS MODES  RECLAIM POLICY  STATUS  CLAIM             STORAGECLASS           AGE
 ovh-managed-kubernetes-btw8lc-pvc-LONG-ID  10Gi      RWO           Delete          Bound   default/test-pvc  csi-cinder-high-speed  15s
-</code></pre>
+```
 
 ## Delete a PVC (and associated PV)
 
@@ -251,7 +234,8 @@ kubectl get pvc
 kubectl get pv | grep "test-pvc"
 ```
 
-<pre class="console"><code>$ kubectl delete po test-pvc-pod
+```console
+$ kubectl delete po test-pvc-pod
 pod "test-pvc-pod" deleted
 
 $ kubectl delete pvc test-pvc
@@ -262,7 +246,7 @@ No resources found.
 
 $ kubectl get pv | grep "test-pvc"
 No resources found.
-</code></pre>
+```
 
 > [!warning]
 >
@@ -297,7 +281,8 @@ Now you can verify that the PV has the right policy:
 kubectl get pv | grep "test-pvc"
 ```
 
-<pre class="console"><code>$ kubectl apply -f test-pvc.yaml
+```console
+$ kubectl apply -f test-pvc.yaml
 persistentvolumeclaim/test-pvc created
 
 $ kubectl get pv | grep "test-pvc"
@@ -310,7 +295,7 @@ persistentvolume/ovh-managed-kubernetes-btw8lc-pvc-LONG-ID patched
 $ kubectl get pv | grep "test-pvc"
 NAME                                       CAPACITY  ACCESS MODES  RECLAIM POLICY  STATUS  CLAIM             STORAGECLASS           AGE
 ovh-managed-kubernetes-btw8lc-pvc-LONG-ID  10Gi      RWO           Retain          Bound   default/test-pvc  csi-cinder-high-speed  19s
-</code></pre>
+```
 
 In the preceding output, you can see that the volume bound to PVC `default/test-pvc` has reclaim policy `Retain`.  
 It will not be automatically deleted when a user deletes PVC `default/test-pvc`

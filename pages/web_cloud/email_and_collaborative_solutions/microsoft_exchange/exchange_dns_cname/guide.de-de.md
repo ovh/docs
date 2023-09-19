@@ -22,8 +22,8 @@ Wenn Sie einen Domainnamen zu Ihrem E-Mail-Dienst hinzufügen, werden Sie mögli
 
 - Sie haben Zugriff auf Ihr Webhosting über das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 - Sie verfügen über eine der E-Mail-Lösungen [Exchange](https://www.ovhcloud.com/de/emails/) oder [E-Mail Pro](https://www.ovhcloud.com/de/emails/email-pro/).
-- Sie haben einen Domainnamen zu Ihrem Dienst hinzugefügt, wie in [unserer Anleitung](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_Domainname) beschrieben.
-- Sie sind berechtigt, die DNS-Zone des Domainnamens zu konfigurieren, entweder [im OVHcloud Kundencenter](/pages/web_cloud/Domainnames/dns_zone_edit) oder im Verwaltungsinterface eines externen Providers.
+- Sie haben einen Domainnamen zu Ihrem Dienst hinzugefügt, wie in [unserer Anleitung](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain) beschrieben.
+- Sie sind berechtigt, die DNS-Zone des Domainnamens zu konfigurieren, entweder [im OVHcloud Kundencenter](/pages/web_cloud/domains/dns_zone_edit) oder im Verwaltungsinterface eines externen Providers.
 
 ## In der praktischen Anwendung
 

@@ -4,28 +4,6 @@ excerpt: Secure Your OVHcloud Managed Kubernetes Cluster with Keycloak, an OpenI
 updated: 2022-11-24
 ---
 
-<style>
- pre {
-     font-size: 14px;
- }
- pre.console {
-   background-color: #300A24; 
-   color: #ccc;
-   font-family: monospace;
-   padding: 5px;
-   margin-bottom: 5px;
- }
- pre.console code {
-   border: solid 0px transparent;
-   font-family: monospace !important;
-   font-size: 0.75em;
-   color: #ccc;
- }
- .small {
-     font-size: 0.75em;
- }
-</style>
-
 ## Objective
 
 The main objective of this tutorial is to secure your OVHcloud Managed Kubernetes Cluster with OpenID Connect (OIDC) and RBAC.
@@ -101,7 +79,8 @@ helm install \
 
 This command will install the cert-manager with the values we defined, create a new cert-manager namespace, and install the new CRD (CustomResourceDefinitions):
 
-<pre class="console"><code>$ helm install \
+```console
+$ helm install \
   ovh-cert-lab jetstack/cert-manager \
   --namespace cert-manager \
   --create-namespace \
@@ -132,11 +111,12 @@ Certificates for Ingress resources, take a look at the `ingress-shim`
 documentation:
 
 https://cert-manager.io/docs/usage/ingress/
-</code></pre>
+```
 
 Check cert-manager have been deployed correctly with `kubectl get all -n cert-manager` command:
 
-<pre class="console"><code>$ kubectl get all -n cert-manager
+```console
+$ kubectl get all -n cert-manager
 NAME                                                        READY   STATUS    RESTARTS   AGE
 pod/ovh-cert-lab-cert-manager-5df67445d5-h89zb              1/1     Running   0          25s
 pod/ovh-cert-lab-cert-manager-cainjector-5b7bfc69b7-w78hp   1/1     Running   0          25s
@@ -151,7 +131,7 @@ NAME                                                              DESIRED   CURR
 replicaset.apps/ovh-cert-lab-cert-manager-5df67445d5              1         1         1       25s
 replicaset.apps/ovh-cert-lab-cert-manager-cainjector-5b7bfc69b7   1         1         1       25s
 replicaset.apps/ovh-cert-lab-cert-manager-webhook-58585dd956      1         1         1       25s
-</code></pre>
+```
 
 You should have new `Deployments`, `Services`, `ReplicaSets` and `Pods` running in your cluster.
 
@@ -199,7 +179,8 @@ kubectl apply -f issuer.yaml
 
 You should have a new `ClusterIssuer` deployed in your cluster:
 
-<pre class="console"><code>$ kubectl apply -f issuer.yaml
+```console
+$ kubectl apply -f issuer.yaml
 clusterissuer.cert-manager.io/letsencrypt-production created
 
 $ kubectl get clusterissuer letsencrypt-production -o yaml -n cert-manager | kubectl neat
@@ -218,7 +199,7 @@ spec:
     - http01:
         ingress:
           class: nginx
-</code></pre>
+```
 
 > [!warning]
 > **Warning!**
@@ -249,7 +230,8 @@ helm install \
 
 This command will install the `ingress-nginx` and create a new `ingress-nginx` namespace:
 
-<pre class="console"><code>$ helm install \
+```console
+$ helm install \
   ovh-ingress-lab ingress-nginx/ingress-nginx \
   --namespace ingress-nginx \
   --create-namespace \
@@ -303,11 +285,12 @@ If TLS is enabled for the Ingress, a Secret containing the certificate and key m
     tls.crt: <base64 encoded cert>
     tls.key: <base64 encoded key>
   type: kubernetes.io/tls
-</code></pre>
+```
 
 You should have new resources in `ingress-nginx` namespace:
 
-<pre class="console"><code>$ kubectl get all -n ingress-nginx
+```console
+$ kubectl get all -n ingress-nginx
 NAME                                                            READY   STATUS    RESTARTS   AGE
 pod/ovh-ingress-lab-ingress-nginx-controller-6f94f9ff8c-w4fqs   1/1     Running   0          6m14s
 
@@ -321,7 +304,7 @@ deployment.apps/ovh-ingress-lab-ingress-nginx-controller   1/1     1            
 NAME                                                                  DESIRED   CURRENT   READY   AGE
 replicaset.apps/ovh-ingress-lab-ingress-nginx-controller-6f94f9ff8c   1         1         1       6m14s
 replicaset.apps/ovh-ingress-lab-ingress-nginx-controller-8466446f66   0         0         0       46d
-</code></pre>
+```
 
 If you need to customize your `ingress-nginx` configuration, please refer to the following documentation: [ingress-nginx values](https://github.com/kubernetes/ingress-nginx/blob/main/charts/ingress-nginx/values.yaml)
 
@@ -338,11 +321,12 @@ kubectl --namespace ingress-nginx get services ovh-ingress-lab-ingress-nginx-con
 
 You should obtain a result similar to this:
 
-<pre class="console"><code>$ kubectl --namespace ingress-nginx get services ovh-ingress-lab-ingress-nginx-controller -o wide
+```console
+$ kubectl --namespace ingress-nginx get services ovh-ingress-lab-ingress-nginx-controller -o wide
 
 NAME                                       TYPE           CLUSTER-IP   EXTERNAL-IP       PORT(S)                      AGE    SELECTOR
 ovh-ingress-lab-ingress-nginx-controller   LoadBalancer   10.3.166.138   135.125.84.194   80:32133/TCP,443:31761/TCP   116s   app.kubernetes.io/component=controller,app.kubernetes.io/instance=ovh-ingress-lab,app.kubernetes.io/name=ingress-nginx
-</code></pre>
+```
 
 Once your LoadBalancer is up and running, get its IP address to configure your domain name zone:
 
@@ -353,11 +337,12 @@ echo $INGRESS_URL
 
 You should obtain a result similar to this:
 
-<pre class="console"><code>$ export INGRESS_URL=$(kubectl get svc -n ingress-nginx ovh-ingress-lab-ingress-nginx-controller -o jsonpath='{.status.loadBalancer.ingress[0].ip}')
+```console
+$ export INGRESS_URL=$(kubectl get svc -n ingress-nginx ovh-ingress-lab-ingress-nginx-controller -o jsonpath='{.status.loadBalancer.ingress[0].ip}')
 
 $ echo $INGRESS_URL
 135.125.84.194
-</code></pre>
+```
 
 If you are using the [OVHcloud Domain name product](https://www.ovhcloud.com/en-ca/domains/), you can follow this documentation to configure your DNS record to link it to the public IPv4 address associated to your LoadBalancer: [Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit).
 
@@ -460,7 +445,8 @@ helm install \
 
 You should obtain the following result:
 
-<pre class="console"><code>$ helm install \
+```console
+$ helm install \
   ovh-keycloak-lab codecentric/keycloak \
   -n keycloak \
   --create-namespace \
@@ -486,7 +472,7 @@ Create a port-forwarding with the following commands:
 export POD_NAME=$(kubectl get pods --namespace keycloak -l "app.kubernetes.io/name=keycloak,app.kubernetes.io/instance=ovh-keycloak-lab" -o name)
 echo "Visit http://127.0.0.1:8080 to use your application"
 kubectl --namespace keycloak port-forward "$POD_NAME" 8080
-</code></pre>
+```
 
 Check if the Keycloak `StatefulSet` is in `Ready` state:
 
@@ -496,12 +482,13 @@ kubectl -n keycloak get statefulsets.apps -o wide
 
 In our example, after waiting a few minutes, our `StatefulSets` are in `Ready` state:
 
-<pre class="console"><code>$ kubectl -n keycloak get statefulsets.apps -o wide
+```console
+$ kubectl -n keycloak get statefulsets.apps -o wide
 
 NAME                          READY   AGE    CONTAINERS                    IMAGES
 ovh-keycloak-lab              1/1     2m2s   keycloak                      docker.io/jboss/keycloak:15.0.2
 ovh-keycloak-lab-postgresql   1/1     2m2s   ovh-keycloak-lab-postgresql   docker.io/bitnami/postgresql:11.11.0-debian-10-r31
-</code></pre>
+```
 
 When they are ready, create a file `nginx-ingress-definition.yaml` with the following content:
 
@@ -723,12 +710,13 @@ kubectl --user=oidc get nodes
 ```
 
 For example:
-<pre class="console"><code>$ kubectl --user=oidc get nodes
+```console
+$ kubectl --user=oidc get nodes
 NAME                                         STATUS   ROLES    AGE   VERSION
 nodepool-d18716fa-e910-4e77-a2-node-79add5   Ready    <none>   2d    v1.22.2
 nodepool-d18716fa-e910-4e77-a2-node-aa7701   Ready    <none>   2d    v1.22.2
 nodepool-d18716fa-e910-4e77-a2-node-f9f18e   Ready    <none>   2d    v1.22.2
-</code></pre>
+```
 
 If you can see the nodes of your Managed Kubernetes Service, congratulations, your Keycloak instance is up and running!
 

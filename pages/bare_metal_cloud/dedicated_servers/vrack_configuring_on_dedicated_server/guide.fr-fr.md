@@ -1,7 +1,7 @@
 ---
 title: 'Configurer le vRack sur vos serveurs dédiés'
 excerpt: 'Découvrez comment configurer le vRack sur plusieurs serveurs dédiés'
-updated: 2022-05-02
+updated: 2023-09-12
 ---
 
 ## Objectif
@@ -192,6 +192,8 @@ Cliquez sur `Change Adapter Settings`{.action}.
 ![Change Adapter Settings](images/windows_change_adapter_settings.png){.thumbnail}
 
 Faites un clic-droit sur l'interface réseau secondaire, puis cliquez sur `Propriétés`{.action}.
+
+Notez que, dans notre exemple, `Ethernet 2` est l'interface utilisée pour le vRack. Cependant, il est possible que la carte réseau vRack utilise une interface différente. Utilisez une interface qui ne possède pas l'adresse IP principale du serveur ou qui utilise une adresse IP auto-attribuée.
 
 ![Windows Properties](images/windows_properties_button.png){.thumbnail}
 

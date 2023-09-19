@@ -4,26 +4,6 @@ excerpt: Find out how to install Flask on your POWER web hosting plan
 updated: 2021-01-05
 ---
 
-<style>
- pre {
-     font-size: 14px;
- }
- pre.console {
-   background-color: #300A24; 
-   color: #ccc;
-   font-family: monospace;
-   padding: 5px;
-   margin-bottom: 5px;
- }
- pre.console code {
-   border: solid 0px transparent;
-   font-family: monospace !important;
- }
- .small {
-     font-size: 0.75em;
- }
-</style>
-
 ## Objective
 
 You've subscribed to a Web POWER web hosting plan to deploy **Python** applications, and you want to deploy [Flask](https://flask.palletsprojects.com/en/1.1.x/){.external} on it.
@@ -93,7 +73,8 @@ Then [restart your instance](/pages/ovhcloud_labs/power_web_hosting/getting-star
 
 Terminal output:
 
-<pre class="console"><code>~ $ cd www
+```console
+~ $ cd www
 
 ~/www $ virtualenv venv
 created virtual environment CPython3.8.7.final.0-64 in 1273ms
@@ -133,7 +114,7 @@ Successfully installed Flask-1.1.2 Jinja2-2.11.3 MarkupSafe-1.1.1 Werkzeug-1.0.1
 ~/www $ mkdir -p tmp
 
 ~/www $ touch tmp/restart.txt
-</code></pre>
+```
 
 ## Go further
 

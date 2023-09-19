@@ -4,28 +4,6 @@ excerpt: ''
 updated: 2022-05-17
 ---
 
-<style>
- pre {
-     font-size: 14px;
- }
- pre.console {
-   background-color: #300A24; 
-   color: #ccc;
-   font-family: monospace;
-   padding: 5px;
-   margin-bottom: 5px;
- }
- pre.console code {
-   border: solid 0px transparent;
-   font-family: monospace !important;
-   font-size: 0.75em;
-   color: #ccc;
- }
- .small {
-     font-size: 0.75em;
- }
-</style>
-
 ## Objective
 
 OVHcloud Managed Kubernetes service provides you Kubernetes clusters without the hassle of installing or operating them.
@@ -108,10 +86,11 @@ kubectl get nodepools
 
 In my case I have one node pool in my cluster, called `nodepool-b2-7`, with 3 B2-7 nodes:
 
-<pre class="console"><code>$ kubectl get nodepools
+```console
+$ kubectl get nodepools
 NAME            FLAVOR   AUTO SCALED   MONTHLY BILLED   ANTI AFFINITY   DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   [...]
 nodepool-b2-7   b2-7     false         false            false           3         3         3            3           [...]
-</code></pre>
+```
 
 As you can see, the `AUTO SCALED` field is set to `false`.  Let's see why by looking at the node pool description.
 
@@ -123,7 +102,8 @@ kubectl get nodepools <your_nodepool_name> -o yaml
 
 For my example cluster:
 
-<pre class="console"><code>$ kubectl get nodepools nodepool-b2-7 -o yaml
+```console
+$ kubectl get nodepools nodepool-b2-7 -o yaml
 apiVersion: kube.cloud.ovh.com/v1alpha1
 kind: NodePool
 metadata:
@@ -151,7 +131,7 @@ status:
   currentNodes: 3
   observedGeneration: 2
   upToDateNodes: 3
-</code></pre>
+```
 
 In the `spec` section you can see that the `autoscale` parameter is set to `false`. In order to enable the autoscaler, you need to patch the node pool to set this field to `true`.
 
@@ -161,13 +141,14 @@ kubectl patch nodepool <your_nodepool_name> --type="merge" --patch='{"spec": {"a
 
 As you can see in my example, patching the node pool definition enables the autoscaler:
 
-<pre class="console"><code>$ kubectl patch nodepool nodepool-b2-7 --type="merge" --patch='{"spec": {"autoscale": true}}'
+```console
+$ kubectl patch nodepool nodepool-b2-7 --type="merge" --patch='{"spec": {"autoscale": true}}'
 nodepool.kube.cloud.ovh.com/nodepool-b2-7 patched
 
 $ kubectl get nodepools
 NAME            FLAVOR   AUTO SCALED   MONTHLY BILLED   ANTI AFFINITY   DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   [...]
 nodepool-b2-7   b2-7     true          false            false           3         3         3            3           [...]   
-</code></pre>
+```
 
 When the autoscaler is enabled on a node pool, it uses a by-default configuration. To better understand the by-default configuration and its parameters, see the [Configuring the cluster autoscaler](/pages/public_cloud/containers_orchestration/managed_kubernetes/configuring-cluster-autoscaler) guide.
 
@@ -184,7 +165,8 @@ kubectl patch nodepool <your_nodepool_name> --type="merge" --patch='{"spec": {"a
 ```
 
 In my example cluster:
-<pre class="console"><code>$ kubectl get nodepool nodepool-b2-7 -o json | jq .spec
+```console
+$ kubectl get nodepool nodepool-b2-7 -o json | jq .spec
 {
   "antiAffinity": false,
   "autoscale": true,
@@ -199,13 +181,15 @@ In my example cluster:
   "minNodes": 0,
   "monthlyBilled": false
 }
-</code></pre>
+```
 
-<pre class="console"><code>$ kubectl patch nodepool nodepool-b2-7 --type="merge" --patch='{"spec": {"autoscaling": {"scaleDownUnneededTimeSeconds": 900, "scaleDownUnreadyTimeSeconds": 1500, "scaleDownUtilizationThreshold": "0.7"}}}'
+```console
+$ kubectl patch nodepool nodepool-b2-7 --type="merge" --patch='{"spec": {"autoscaling": {"scaleDownUnneededTimeSeconds": 900, "scaleDownUnreadyTimeSeconds": 1500, "scaleDownUtilizationThreshold": "0.7"}}}'
 nodepool.kube.cloud.ovh.com/nodepool-b2-7 patched
-</code></pre>
+```
 
-<pre class="console"><code>$ kubectl get nodepool nodepool-b2-7 -o json | jq .spec
+```console
+$ kubectl get nodepool nodepool-b2-7 -o json | jq .spec
 {
   "antiAffinity": false,
   "autoscale": true,
@@ -220,7 +204,7 @@ nodepool.kube.cloud.ovh.com/nodepool-b2-7 patched
   "minNodes": 0,
   "monthlyBilled": false
 }
-</code></pre>
+```
 
 For the moment, only these following parameters are editable:
 

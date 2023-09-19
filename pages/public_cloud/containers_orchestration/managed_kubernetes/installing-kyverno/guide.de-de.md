@@ -4,27 +4,6 @@ excerpt: Find out how to secure your OVHcloud Managed Kubernetes and deploy Kyve
 updated: 2022-08-11
 ---
 
-<style>
- pre {
-     font-size: 14px;
- }
- pre.console {
-   background-color: #300A24; 
-   color: #ccc;
-   font-family: monospace;
-   padding: 5px;
-   margin-bottom: 5px;
- }
- pre.console code {
-   b   font-family: monospace !important;
-   font-size: 0.75em;
-   color: #ccc;
- }
- .small {
-     font-size: 0.75em;
- }
-</style>
-
 ## Objective
 
 [Kyverno](https://kyverno.io) (Greek for “govern”) is a policy engine designed specifically for Kubernetes. 
@@ -100,7 +79,8 @@ cp ./cmd/cli/kubectl-kyverno/kyverno /usr/local/bin/kyverno
 
 You should have results like this:
 
-<pre class="console"><code>$ git clone https://github.com/kyverno/kyverno
+```console
+$ git clone https://github.com/kyverno/kyverno
 Cloning into 'kyverno'...
 remote: Enumerating objects: 64593, done.
 remote: Counting objects: 100% (984/984), done.
@@ -142,7 +122,7 @@ go: downloading github.com/distribution/distribution v2.7.1+incompatible
 go: downloading github.com/dimchansky/utfbom v1.1.1
 
 $ cp ./cmd/cli/kubectl-kyverno/kyverno /usr/local/bin/kyverno
-</code></pre>
+```
 
 After the installation, check that the `kyverno` CLI is working:
 
@@ -152,11 +132,12 @@ kyverno version
 
 You should have a behavior like this:
 
-<pre class="console"><code>$ kyverno version
+```console
+$ kyverno version
 Version: v1.5.0-rc1-223-gf0359f82
 Time: 2022-01-19_12:10:05
 Git commit ID: main/f0359f8272a181923db0704696803d44a43f69f8
-</code></pre>
+```
 
 The Kyverno Command Line Interface (CLI) is designed to **validate** and **test** policies behavior prior to adding them to a cluster.  
 So the best practice is to use the `kyverno` CLI in your CI/CD pipelines to assist with the resource authoring process to ensure they conform to standards prior to them being deployed.
@@ -174,7 +155,8 @@ helm repo update
 
 These commands will add the Kyverno Helm repository to your local Helm chart repository and update the installed chart repositories:
 
-<pre class="console"><code>$ helm repo add kyverno https://kyverno.github.io/kyverno/
+```console
+$ helm repo add kyverno https://kyverno.github.io/kyverno/
 helm repo update
 "kyverno" has been added to your repositories
 Hang tight while we grab the latest from your chart repositories...
@@ -183,7 +165,7 @@ Hang tight while we grab the latest from your chart repositories...
 ...Successfully got an update from the "kyverno" chart repository
 ...
 Update Complete. ⎈Happy Helming!⎈
-</code></pre>
+```
 
 Install the latest version of Kyverno with `helm install` command:
 
@@ -193,7 +175,8 @@ helm install kyverno kyverno/kyverno --namespace kyverno --create-namespace
 
 This command will install the latest version of Kyverno and create a new `kyverno` namespace:
 
-<pre class="console"><code>$ helm install kyverno kyverno/kyverno --namespace kyverno --create-namespace
+```console
+$ helm install kyverno kyverno/kyverno --namespace kyverno --create-namespace
 NAME: kyverno
 LAST DEPLOYED: Wed Jan 19 11:41:15 2022
 NAMESPACE: kyverno
@@ -203,7 +186,7 @@ NOTES:
 Thank you for installing kyverno v2.1.6 😀
 
 Your release is named kyverno, app version v1.5.4
-</code></pre>
+```
 
 > [!primary]
 > You can also [install Kyverno in HA (High Availability) mode](https://kyverno.io/docs/high-availability/) with the following command:  
@@ -211,14 +194,16 @@ Your release is named kyverno, app version v1.5.4
 
 You can check if the Kyverno pod is correctly running:
 
-<pre class="console"><code>$ kubectl get pods -n kyverno
+```console
+$ kubectl get pods -n kyverno
 NAME                       READY   STATUS    RESTARTS   AGE
 kyverno-554ffb4c96-f2lvs   1/1     Running   0          50s
-</code></pre>
+```
 
 And you can check that Kyverno installed several webhooks on your cluster:
 
-<pre class="console"><code>$ kubectl get validatingwebhookconfigurations,mutatingwebhookconfigurations
+```console
+$ kubectl get validatingwebhookconfigurations,mutatingwebhookconfigurations
 NAME                                                                                                  WEBHOOKS   AGE
 validatingwebhookconfiguration.admissionregistration.k8s.io/kyverno-policy-validating-webhook-cfg     1          52s
 validatingwebhookconfiguration.admissionregistration.k8s.io/kyverno-resource-validating-webhook-cfg   2          52s
@@ -227,7 +212,7 @@ NAME                                                                            
 mutatingwebhookconfiguration.admissionregistration.k8s.io/kyverno-policy-mutating-webhook-cfg     1          52s
 mutatingwebhookconfiguration.admissionregistration.k8s.io/kyverno-resource-mutating-webhook-cfg   2          52s
 mutatingwebhookconfiguration.admissionregistration.k8s.io/kyverno-verify-mutating-webhook-cfg     1          52s
-</code></pre>
+```
 
 ### Create and deploy policies
 
@@ -318,13 +303,14 @@ kubectl apply -f policy-disallow-default-namespace.yaml
 
 After applying the policy, check if the policy is correctly applied on the cluster:
 
-<pre class="console"><code>$ kubectl apply -f policy-disallow-default-namespace.yaml
+```console
+$ kubectl apply -f policy-disallow-default-namespace.yaml
 clusterpolicy.kyverno.io/disallow-default-namespace created
 
 $ kubectl get clusterpolicy
 NAME                         BACKGROUND   ACTION     READY
 disallow-default-namespace   true         enforce    true
-</code></pre>
+```
 
 > [!primary]
 > With Kyverno installation, [new CRDs](https://kyverno.io/docs/crds/) have been added. The one that interests us is the new resource type `ClusterPolicy`. So in order to list, display, edit and remove Kyverno policies, you can execute `kubectl` command with `ClusterPolicy` resource object type.  
@@ -352,7 +338,8 @@ Apply it without defining any namespace (namespace is `default` by default):
 kubectl apply -f my-pod.yaml
 ```
 
-<pre class="console"><code>$ kubectl apply -f my-pod.yaml
+```console
+$ kubectl apply -f my-pod.yaml
 Error from server: error when creating "my-pod.yaml": admission webhook "validate.kyverno.svc-fail" denied the request:
 
 resource Pod/default/my-pod was blocked due to the following policies
@@ -360,7 +347,7 @@ resource Pod/default/my-pod was blocked due to the following policies
 disallow-default-namespace:
   validate-namespace: 'validation error: Using "default" namespace is not allowed.
     Rule validate-namespace failed at path /metadata/namespace/'
-</code></pre>
+```
 
 Perfect, you no longer have the ability to deploy a Pod/Deployment/ReplicaSet/Job/StatefulSet in the `default` namespace.
 
@@ -416,14 +403,15 @@ kubectl apply -f policy-generate-cm.yaml
 
 After applying the policy, check if the policy is correctly applied on the cluster:
 
-<pre class="console"><code>$ kubectl apply -f policy-generate-cm.yaml
+```console
+$ kubectl apply -f policy-generate-cm.yaml
 clusterpolicy.kyverno.io/zk-kafka-address created
 
 $ kubectl get cpol -A
 NAME                         BACKGROUND   ACTION    READY
 disallow-default-namespace   true         enforce   true
 zk-kafka-address             true         audit     true
-</code></pre>
+```
 
 The `generate` rule is triggered during the `API CREATE` operation, so for this policy when a new namespace is created.
 
@@ -441,7 +429,8 @@ kubectl get cm -A
 
 You should have results like these:
 
-<pre class="console"><code>$ kubectl create ns test2
+```console
+$ kubectl create ns test2
 namespace/test2 created
 
 $ kubectl get cm -A
@@ -461,7 +450,7 @@ kyverno           kyverno-metrics                      1      7d19h
 test              kube-root-ca.crt                     1      7d16h
 test2             kube-root-ca.crt                     1      2m28s
 test2             zk-kafka-address                     2      2m27s
-</code></pre>
+```
 
 As you can see the ConfigMap `zk-kafka-address` have been created in the new `test2` namespace.
 
@@ -508,7 +497,8 @@ kubectl apply -f policy-add-label.yaml
 
 After applying the policy, check if the policy is correctly applied on the cluster:
 
-<pre class="console"><code>$ kubectl apply -f policy-add-label.yaml
+```console
+$ kubectl apply -f policy-add-label.yaml
 clusterpolicy.kyverno.io/add-label created
 
 $ kubectl get cpol -A
@@ -516,7 +506,7 @@ NAME                         BACKGROUND   ACTION    READY
 add-label                    true         audit
 disallow-default-namespace   true         enforce   true
 zk-kafka-address             true         audit     true
-</code></pre>
+```
 
 Now you can create a new namespace `team-a`, deploy a new Pod into it and check if the new label have been correctly added automatically:
 
@@ -531,7 +521,8 @@ kubectl get pod my-pod -n team-a --show-labels
 
 You should obtain the following results:
 
-<pre class="console"><code>$ kubectl create ns team-a
+```console
+$ kubectl create ns team-a
 namespace/team-a created
 
 $ kubectl apply -f my-pod.yaml -n team-a
@@ -540,7 +531,7 @@ pod/my-pod created
 $ kubectl get pod my-pod -n team-a --show-labels
 NAME     READY   STATUS    RESTARTS   AGE   LABELS
 my-pod   1/1     Running   0          29s   app=my-awesome-app
-</code></pre>
+```
 
 ### Debugging/validating
 
@@ -556,7 +547,8 @@ kyverno validate *.yaml
 
 You should obtain results like these:
 
-<pre class="console"><code>$ kyverno validate *.yaml
+```console
+$ kyverno validate *.yaml
 ----------------------------------------------------------------------
 Policy disallow-default-namespace is valid.
 
@@ -565,7 +557,7 @@ Policy add-label is valid.
 
 ----------------------------------------------------------------------
 Policy zk-kafka-address is valid.
-</code></pre>
+```
 
 ### Troubleshooting
 

@@ -4,28 +4,6 @@ excerpt: 'Find out how to install JFrog Artifactory on an OVHcloud Managed Kuber
 updated: 2022-10-17
 ---
 
-<style>
- pre {
-     font-size: 14px;
- }
- pre.console {
-   background-color: #300A24; 
-   color: #ccc;
-   font-family: monospace;
-   padding: 5px;
-   margin-bottom: 5px;
- }
- pre.console code {
-   border: solid 0px transparent;
-   font-family: monospace !important;
-   font-size: 0.75em;
-   color: #ccc;
- }
- .small {
-     font-size: 0.75em;
- }
-</style>
-
 ## Objective
 
 [JFrog Artifactory](https://jfrog.com/fr/artifactory/) is one of the major solution to manage dependencies and packaged binaries. All these objects are called _artefacts_.
@@ -65,7 +43,7 @@ Hang tight while we grab the latest from your chart repositories...
 ...Successfully got an update from the "ingress-nginx" chart repository
 ...Successfully got an update from the "jfrog" chart repository
 Update Complete. ⎈Happy Helming!⎈
-</code></pre>
+```
 
 ### Configure the master key and the join key
 
@@ -87,7 +65,7 @@ WARNING: can't open config file: /usr/local/etc/openssl/openssl.cnf
 
 $ echo ${MASTER_KEY}
 xxxxxxxxfffffffffffffxxxxxxxxxxxxxxxxxxxxxgggggggggggggxxxxxxxxxx
-</code></pre>
+```
 
 Next, configure the join key as follows:
 
@@ -105,7 +83,7 @@ WARNING: can't open config file: /usr/local/etc/openssl/openssl.cnf
 
 $ echo ${JOIN_KEY}
 xxxxxxxxyyyyyyyyyyyyyxxxxxxxxxxxxxxxxxxxxxyyyyyyyyyyyyxxxxxxxxxx
-</code></pre>
+```
 
 > The two warning messages are not important and have no impact.
 
@@ -155,7 +133,7 @@ Congratulations. You have just deployed JFrog Artifactory!
    Default credential for Artifactory:
    user: admin
    password: password
-</code></pre>
+```
 
 Next, wait until the status of all Pods status are `Running` and _ready_ (i.e the number of Pods desired equals to the actual number in the `Ready` column):
 
@@ -171,7 +149,7 @@ NAME                                             READY   STATUS    RESTARTS   AG
 artifactory-0                                    1/1     Running   0          8m11s
 artifactory-artifactory-nginx-7c556cb56b-x5wvm   1/1     Running   0          8m11s
 artifactory-postgresql-0                         1/1     Running   0          8m11s
-</code></pre>
+```
 
 ### Test the freshly installed JFrog artifactory
 
@@ -208,11 +186,12 @@ $ helm uninstall artifactory -n artifactory
 
 Output should be like this:
 
-<pre class="console"><code>$ helm uninstall artifactory -n artifactory
+```console
+$ helm uninstall artifactory -n artifactory
 <code>$ helm uninstall artifactory -n artifactory
 
 release "artifactory" uninstalled
-</code></pre>
+```
 
 Then delete the `artifactory` namespace:
 

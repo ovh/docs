@@ -4,28 +4,6 @@ excerpt: "Find out how to connect OVHcloud Managed Kubernetes to an OVHcloud Man
 updated: 2021-12-30
 ---
 
-<style>
- pre {
-     font-size: 14px;
- }
- pre.console {
-   background-color: #300A24;
-   color: #ccc;
-   font-family: monospace;
-   padding: 5px;
-   margin-bottom: 5px;
- }
- pre.console code {
-   border: solid 0px transparent;
-   font-family: monospace !important;
-   font-size: 0.75em;
-   color: #ccc;
- }
- .small {
-     font-size: 0.75em;
- }
-</style>
-
 ## Objective
 
 In this tutorial, we are going to show you how to connect your OVHcloud Managed Kubernetes Service to an OVHcloud Managed MySQL database.
@@ -159,7 +137,8 @@ Now connect to the database with the following command
 mysql -uavnadmin -pxxxxxxxxxxxxxx -hmysql-xxxxxxxx-xxxxxxxxx.database.cloud.ovh.net -P20184 defaultdb
 ```
 
-<pre class="console"><code>root@mysql-client:/# mysql -uavnadmin -pxxxxxxxxxxxxxx -hmysql-xxxxxxxx-xxxxxxxxx.database.cloud.ovh.net -P20184 defaultdb
+```console
+root@mysql-client:/# mysql -uavnadmin -pxxxxxxxxxxxxxx -hmysql-xxxxxxxx-xxxxxxxxx.database.cloud.ovh.net -P20184 defaultdb
 mysql: [Warning] Using a password on the command line interface can be insecure.
 Welcome to the MySQL monitor.  Commands end with ; or \g.
 Your MySQL connection id is 3603
@@ -173,7 +152,8 @@ owners.
 
 Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
 
-mysql></code></pre>
+mysql>
+```
 
 Setup is done, your Managed MySQL database is fully operational, let's go further and use it with WordPress hosted in Kubernetes.
 
@@ -213,7 +193,8 @@ externalDatabase.port=20184
 This will install the needed elements (a WordPress pod for the webserver with the WordPress PHP code),
 allocate the persistent volumes and initialize the services. And at the end, it will give you the connection parameters for your new WordPress:
 
-<pre class="console"><code>$ helm install my-wordpress bitnami/wordpress --set allowOverrideNone=true,mariadb.enabled=false,externalDatabase.host=mysql-abcdefgh-ijklmnopq.database.cloud.ovh.net,externalDatabase.user=avnadmin,externalDatabase.password=mYStrongPasswOrdHere,externalDatabase.database=defaultdb,externalDatabase.port=20184
+```console
+$ helm install my-wordpress bitnami/wordpress --set allowOverrideNone=true,mariadb.enabled=false,externalDatabase.host=mysql-abcdefgh-ijklmnopq.database.cloud.ovh.net,externalDatabase.user=avnadmin,externalDatabase.password=mYStrongPasswOrdHere,externalDatabase.database=defaultdb,externalDatabase.port=20184
 NAME: my-wordpress
 LAST DEPLOYED: Thu Dec 23 15:49:33 2021
 NAMESPACE: default
@@ -248,8 +229,7 @@ To access your WordPress site from outside the cluster follow the steps below:
 
   echo Username: user
   echo Password: $(kubectl get secret --namespace default my-wordpress -o jsonpath="{.data.wordpress-password}" | base64 --decode)
-
-</code></pre>
+```
 
 > [!warning]
 > Make sure your MySQL defaultdb database is clean before running the helm install command. If a previous installation is detected, settings such as user and password will not be updated, so the configuration inside of the Kubernetes cluster will not match that of the database.
@@ -263,19 +243,21 @@ kubectl get svc --namespace default -w my-wordpress
 
 After some minutes, you will get the `LoadBalancer` URL:
 
-<pre class="console"><code>$ kubectl get svc --namespace default -w my-wordpress
+```console
+$ kubectl get svc --namespace default -w my-wordpress
 NAME           TYPE           CLUSTER-IP     EXTERNAL-IP      PORT(S)                      AGE
 my-wordpress   LoadBalancer   10.3.193.143   135.125.83.116   80:32027/TCP,443:32293/TCP   4m30s
-</code></pre>
+```
 
 Then you can follow the instructions to get the Admin URL:
 
-<pre class="console"><code>$ export SERVICE_IP=$(kubectl get svc --namespace default my-wordpress --template "{{ range (index .status.loadBalancer.ingress 0) }}{{.}}{{ end }}")
+```console
+$ export SERVICE_IP=$(kubectl get svc --namespace default my-wordpress --template "{{ range (index .status.loadBalancer.ingress 0) }}{{.}}{{ end }}")
 $ echo "WordPress URL: http://$SERVICE_IP/"
 WordPress URL: http://135.125.83.116/
 $ echo "WordPress Admin URL: http://$SERVICE_IP/admin"
 WordPress Admin URL: http://135.125.83.116/admin
-</code></pre>
+```
 
 And putting the URL in your browser will take you to the new blog:
 
@@ -283,11 +265,12 @@ And putting the URL in your browser will take you to the new blog:
 
 You can also use the instructions given by the `helm install` command to get the default username and password for your blog.
 
-<pre class="console"><code>$ echo Username: user
+```console
+$ echo Username: user
 Username: user
 $ echo Password: $(kubectl get secret --namespace default my-wordpress -o jsonpath="{.data.wordpress-password}" | base64 --decode)
 Password: GSPSIXwGok
-</code></pre>
+```
 
 ![WordPress admin dashboard](images/connect-kubernetes-to-managed-mysql13.png){.thumbnail}
 
@@ -303,9 +286,10 @@ helm uninstall my-wordpress
 
 It will delete your WordPress and its associated resources from your cluster:
 
-<pre class="console"><code>$ helm delete my-wordpress
+```console
+$ helm delete my-wordpress
 release "my-wordpress" uninstalled
-</code></pre>
+```
 
 ## We want your feedback!
 

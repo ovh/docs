@@ -4,27 +4,6 @@ excerpt: Find out how to encrypt your Kubernetes Secrets in order to store them 
 updated: 2022-06-06
 ---
 
-<style>
- pre {
-     font-size: 14px;
- }
- pre.console {
-   background-color: #300A24; 
-   color: #ccc;
-   font-family: monospace;
-   padding: 5px;
-   margin-bottom: 5px;
- }
- pre.console code {
-   b   font-family: monospace !important;
-   font-size: 0.75em;
-   color: #ccc;
- }
- .small {
-     font-size: 0.75em;
- }
-</style>
-
 ## Objective
 
 When you want to store your Kubernetes resources, as YAML manifest, the common way is to store/keep them in a Git repository. Thanks to that you can also create, edit and delete automatically with Infrastructure as Code and CI/CD your Kubernetes clusters and resources.
@@ -101,7 +80,8 @@ kubeseal --version
 
 Output should be like this:
 
-<pre class="console"><code>$ brew install kubeseal
+```console
+$ brew install kubeseal
 Running `brew update --preinstall`...
 ==> Auto-updated Homebrew!
 ...
@@ -113,7 +93,7 @@ Hide these hints with HOMEBREW_NO_ENV_HINTS (see `man brew`).
 
 $ kubeseal --version
 kubeseal version: v0.17.3
-</code></pre>
+```
 
 ### Installing Sealed Secrets
 
@@ -128,7 +108,8 @@ helm repo update
 
 These commands will add the Kyverno Helm repository to your local Helm chart repository and update the installed chart repositories:
 
-<pre class="console"><code>$ helm repo add sealed-secrets https://bitnami-labs.github.io/sealed-secrets
+```console
+$ helm repo add sealed-secrets https://bitnami-labs.github.io/sealed-secrets
 
 "sealed-secrets" has been added to your repositories
 
@@ -139,7 +120,7 @@ Hang tight while we grab the latest from your chart repositories...
 ...
 ...Successfully got an update from the "bitnami" chart repository
 Update Complete. ⎈Happy Helming!⎈
-</code></pre>
+```
 
 Install the latest version of Sealed Secrets with `helm install` command:
 
@@ -153,7 +134,8 @@ helm install sealed-secrets-controller sealed-secrets/sealed-secrets --namespace
 
 This command will install the latest version of Sealed Secrets:
 
-<pre class="console"><code>$ helm install sealed-secrets-controller sealed-secrets/sealed-secrets --namespace kube-system
+```console
+$ helm install sealed-secrets-controller sealed-secrets/sealed-secrets --namespace kube-system
 NAME: sealed-secrets-controller
 LAST DEPLOYED: Wed Feb 16 14:59:42 2022
 NAMESPACE: kube-system
@@ -201,7 +183,7 @@ to retrieve the public cert used for encryption and store it locally. You can th
 Running 'kubectl get secret secret-name -o [json|yaml]' will show the decrypted secret that was generated from the sealed secret.
 
 Both the SealedSecret and generated Secret must have the same name and namespace.
-</code></pre>
+```
 
 Once you deploy the Hem chart, it will:
 
@@ -212,10 +194,11 @@ Once you deploy the Hem chart, it will:
 
 You can check if the `sealed-secrets-controller` pod is correctly running:
 
-<pre class="console"><code>$ kubectl get pod -n kube-system -l app.kubernetes.io/name=sealed-secrets
+```console
+$ kubectl get pod -n kube-system -l app.kubernetes.io/name=sealed-secrets
 NAME                                         READY   STATUS    RESTARTS   AGE
 sealed-secrets-controller-5fb95c87fd-pnvmk   1/1     Running   0          2m43s
-</code></pre>
+```
 
 ### Retrieve the generated keypair
 
@@ -229,7 +212,8 @@ kubectl get secret -l sealedsecrets.bitnami.com/sealed-secrets-key -o yaml -n ku
 
 The output should look like this:
 
-<pre class="console"><code>$ kubectl get secret -l sealedsecrets.bitnami.com/sealed-secrets-key -o yaml -n kube-system
+```console
+$ kubectl get secret -l sealedsecrets.bitnami.com/sealed-secrets-key -o yaml -n kube-system
 
 apiVersion: v1
 items:
@@ -252,7 +236,7 @@ kind: List
 metadata:
   resourceVersion: ""
   selfLink: ""
-</code></pre>
+```
 
 With this information you can now base64 decode the `tls.crt` and `tls.key` and store them locally and in your secret management tool in order to use them later to retrieve the sealed secrets.
 
@@ -282,7 +266,8 @@ cat my-token.yaml
 
 The output should like this:
 
-<pre class="console"><code>$ kubectl create secret generic my-token --from-literal=my_token='123456789abc123def456ghi789' --dry-run=client -o yaml -n my-namespace > my-token.yaml
+```console
+$ kubectl create secret generic my-token --from-literal=my_token='123456789abc123def456ghi789' --dry-run=client -o yaml -n my-namespace > my-token.yaml
 
 $ cat my-token.yaml
 apiVersion: v1
@@ -293,7 +278,7 @@ metadata:
   creationTimestamp: null
   name: my-token
   namespace: my-namespace
-</code></pre>
+```
 
 Then seal the secret, with the retrieved generated certificate you saved and stored before:
 
@@ -303,7 +288,8 @@ kubeseal --cert tls.crt --format=yaml < my-token.yaml > mysealedtoken.yaml
 
 The output should look like this:
 
-<pre class="console"><code>$ kubeseal --cert tls.crt --format=yaml < my-token.yaml > mysealedtoken.yaml
+```console
+$ kubeseal --cert tls.crt --format=yaml < my-token.yaml > mysealedtoken.yaml
 
 $ cat mysealedtoken.yaml
 apiVersion: bitnami.com/v1alpha1
@@ -321,7 +307,7 @@ spec:
       creationTimestamp: null
       name: my-token
       namespace: my-namespace
-</code></pre>
+```
 
 Create the new namespace `my-namespace` and apply the SealedSecret resource inside:
 
@@ -332,12 +318,13 @@ kubectl apply -f mysealedtoken.yaml -n my-namespace
 
 The output should look like this:
 
-<pre class="console"><code>$ kubectl create ns my-namespace
+```console
+$ kubectl create ns my-namespace
 kubectl apply -f mycleanedsealedtoken.yaml -n my-namespace
 
 $ kubectl apply -f mysealedtoken.yaml -n my-namespace
 sealedsecret.bitnami.com/my-token created
-</code></pre>
+```
 
 > [!primary]
 >
@@ -353,14 +340,15 @@ kubectl get sealedsecret -n my-namespace
 kubectl get secret -n my-namespace
 ```
 
-<pre class="console"><code>$ kubectl get sealedsecret -n my-namespace
+```console
+$ kubectl get sealedsecret -n my-namespace
 NAME       AGE
 my-token   89s
 
 $ kubectl get secret -n my-namespace
 NAME                  TYPE                                  DATA   AGE
 my-token              Opaque                                1      93s
-</code></pre>
+```
 
 If you already installed the `view-secret` kubectl plugin, you can also check if the generated Secret contains the good token you sealed:
 
@@ -370,10 +358,11 @@ kubectl view-secret my-token -n my-namespace
 
 You should obtain the following output:
 
-<pre class="console"><code>$ kubectl view-secret my-token -n my-namespace
+```console
+$ kubectl view-secret my-token -n my-namespace
 Choosing key: my_token
 123456789abc123def456ghi789%
-</code></pre>
+```
 
 ### Debugging / Troubleshooting
 
@@ -387,7 +376,8 @@ kubectl logs $(kubectl get pod -n kube-system -l app.kubernetes.io/name=sealed-s
 
 When everything is fine, you should see the following output:
 
-<pre class="console"><code>$ kubectl logs $(kubectl get pod -n kube-system -l app.kubernetes.io/name=sealed-secrets -o name) -n kube-system
+```console
+$ kubectl logs $(kubectl get pod -n kube-system -l app.kubernetes.io/name=sealed-secrets -o name) -n kube-system
 
 controller version: 0.17.3
 2022/02/16 13:59:46 Starting sealed-secrets controller version: 0.17.3
@@ -396,7 +386,7 @@ controller version: 0.17.3
 2022/02/16 13:59:46 HTTP server serving on :8080
 2022/02/17 09:43:49 Updating my-namespace/my-token
 2022/02/17 09:43:49 Event(v1.ObjectReference{Kind:"SealedSecret", Namespace:"my-namespace", Name:"my-token", UID:"e2f1778d-67b6-4cb6-b243-c82871886f70", APIVersion:"bitnami.com/v1alpha1", ResourceVersion:"2318609909", FieldPath:""}): type: 'Normal' reason: 'Unsealed' SealedSecret unsealed successfully
-</code></pre>
+```
 
 ## Cleanup
 

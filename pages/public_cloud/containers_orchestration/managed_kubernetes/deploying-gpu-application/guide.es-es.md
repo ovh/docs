@@ -4,28 +4,6 @@ excerpt: 'Find out how to deploy a GPU application on OVHcloud Managed Kubernete
 updated: 2023-04-26
 ---
 
-<style>
- pre {
-     font-size: 14px;
- }
- pre.console {
-   background-color: #300A24;
-   color: #ccc;
-   font-family: monospace;
-   padding: 5px;
-   margin-bottom: 5px;
- }
- pre.console code {
-   border: solid 0px transparent;
-   font-family: monospace !important;
-   font-size: 0.75em;
-   color: #ccc;
- }
- .small {
-     font-size: 0.75em;
- }
-</style>
-
 ## Objective
 
 In this tutorial we will show you how to deploy a GPU application on an OVHcloud Managed Kubernetes cluster.
@@ -125,14 +103,15 @@ helm repo update
 
 This will add the NVIDIA repository and update all of your repositories: 
 
-<pre class="console"><code>$ helm repo add nvidia https://helm.ngc.nvidia.com/nvidia
+```console
+$ helm repo add nvidia https://helm.ngc.nvidia.com/nvidia
 helm repo update
 "nvidia" has been added to your repositories
 Hang tight while we grab the latest from your chart repositories...
 ...Successfully got an update from the "nvidia" chart repository
 [...]
 Update Complete. ⎈Happy Helming!⎈
-</code></pre>
+```
 
 Install the GPU Operator in the `gpu-operator` namespace:
 
@@ -142,7 +121,8 @@ helm install gpu-operator nvidia/gpu-operator -n gpu-operator --create-namespace
 
 You should have a GPU operator installed and running:
 
-<pre class="console"><code>$ helm install gpu-operator nvidia/gpu-operator -n gpu-operator --create-namespace --wait
+```console
+$ helm install gpu-operator nvidia/gpu-operator -n gpu-operator --create-namespace --wait
 
 NAME: gpu-operator
 LAST DEPLOYED: Tue Apr 25 09:59:59 2023
@@ -184,7 +164,7 @@ nvidia-driver-daemonset-v6qgx                                 1/1     Running   
 nvidia-operator-validator-kk6nd                               1/1     Running     0          22m
 nvidia-operator-validator-m9p9k                               1/1     Running     0          22m
 nvidia-operator-validator-s6czx                               1/1     Running     0          22m
-</code></pre>
+```
 
 ### Verify GPU Operator Install
 
@@ -242,14 +222,15 @@ kubectl get pod -n default -w
 
 You should have results like this:
 
-<pre class="console"><code>$ kubectl apply -f vector.yaml -n default
+```console
+$ kubectl apply -f vector.yaml -n default
 pod/cuda-vectoradd created
 
 $ kubectl get pod -n default -w
 NAME             READY   STATUS              RESTARTS   AGE
 cuda-vectoradd   0/1     ContainerCreating   0          4s
 cuda-vectoradd   0/1     Completed   0          35s
-</code></pre>
+```
 
 When the `cuda-vectoradd` has started, run and completed its task, watch the logs with the following command:
 
@@ -257,14 +238,15 @@ When the `cuda-vectoradd` has started, run and completed its task, watch the log
 kubectl logs cuda-vectoradd -n default
 ```
 
-<pre class="console"><code>$ kubectl logs cuda-vectoradd -n default
+```console
+$ kubectl logs cuda-vectoradd -n default
 [Vector addition of 50000 elements]
 Copy input data from the host memory to the CUDA device
 CUDA kernel launch with 196 blocks of 256 threads
 Copy output data from the CUDA device to the host memory
 Test PASSED
 Done
-</code></pre>
+```
 
 Our first GPU workload is just started up and has done its task in our OVHcloud Managed Kubernetes cluster.
 

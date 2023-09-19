@@ -4,28 +4,6 @@ excerpt: 'Find out how to do some operations on specific Nodes and Nodes Pools, 
 updated: 2021-12-23
 ---
 
-<style>
- pre {
-     font-size: 14px;
- }
- pre.console {
-   background-color: #300A24;
-   color: #ccc;
-   font-family: monospace;
-   padding: 5px;
-   margin-bottom: 5px;
- }
- pre.console code {
-   border: solid 0px transparent;
-   font-family: monospace !important;
-   font-size: 0.75em;
-   color: #ccc;
- }
- .small {
-     font-size: 0.75em;
- }
-</style>
-
 ## Objective
 
 We previously showed you how to deploy your applications to specific `Nodes` and `Nodes Pools`, with `labels` and `NodeAffinity` Kubernetes concepts. In this new tutorial we will show you how to do some common operations on `Nodes` and `Nodes Pools` like `taint`, `cordon` and `drain`, on your OVHcloud Managed Kubernetes Service.
@@ -156,7 +134,8 @@ kubectl cordon -l "nodepool=second-node-pool"
 
 In our example, here is the result we got:
 
-<pre class="console"><code>$ kubectl cordon -l "nodepool=second-node-pool"
+```console
+$ kubectl cordon -l "nodepool=second-node-pool"
 
 node/second-node-pool-node-519613 cordoned
 node/second-node-pool-node-5fda8f cordoned
@@ -170,7 +149,7 @@ nodepool-9680a2e9-3e58-48c7-b4-node-c65648   Ready                      <none>  
 second-node-pool-node-519613                 Ready,SchedulingDisabled   <none>   4m23s   v1.22.2
 second-node-pool-node-5fda8f                 Ready,SchedulingDisabled   <none>   4m21s   v1.22.2
 second-node-pool-node-c355db                 Ready,SchedulingDisabled   <none>   4m28s   v1.22.2
-</code></pre>
+```
 
 All the nodes in `second-node-pool` are now marked as `Unschedulable`.
 This means you can't deploy Pods on these nodes, on this node pool.
@@ -185,7 +164,8 @@ kubectl uncordon -l "nodepool=second-node-pool"
 
 In our example:
 
-<pre class="console"><code>$ kubectl uncordon -l "nodepool=second-node-pool"
+```console
+$ kubectl uncordon -l "nodepool=second-node-pool"
 
 node/second-node-pool-node-519613 uncordoned
 node/second-node-pool-node-5fda8f uncordoned
@@ -199,7 +179,7 @@ nodepool-9680a2e9-3e58-48c7-b4-node-c65648   Ready    <none>   2d      v1.22.2
 second-node-pool-node-519613                 Ready    <none>   4m53s   v1.22.2
 second-node-pool-node-5fda8f                 Ready    <none>   4m51s   v1.22.2
 second-node-pool-node-c355db                 Ready    <none>   4m58s   v1.22.2
-</code></pre>
+```
 
 Nodes are in `Ready` state again.
 
@@ -219,7 +199,8 @@ kubectl drain -l "nodepool=second-node-pool"
 
 In our example:
 
-<pre class="console"><code>$ kubectl drain -l "nodepool=second-node-pool"
+```console
+$ kubectl drain -l "nodepool=second-node-pool"
 
 node/second-node-pool-node-519613 cordoned
 node/second-node-pool-node-5fda8f cordoned
@@ -239,7 +220,7 @@ nodepool-9680a2e9-3e58-48c7-b4-node-c65648   Ready                      <none>  
 second-node-pool-node-519613                 Ready,SchedulingDisabled   <none>   5m37s   v1.22.2
 second-node-pool-node-5fda8f                 Ready,SchedulingDisabled   <none>   5m35s   v1.22.2
 second-node-pool-node-c355db                 Ready,SchedulingDisabled   <none>   5m42s   v1.22.2
-</code></pre>
+```
 
 As you can see, Kubernetes can't remove `DaemonSet` objects, so in order to not have this error message, you can add the `--ignore-daemonsets` option:
 
@@ -255,7 +236,8 @@ kubectl uncordon -l "nodepool=second-node-pool"
 
 Nodes are again in `Ready` state.
 
-<pre class="console"><code>$ kubectl uncordon -l "nodepool=second-node-pool"
+```console
+$ kubectl uncordon -l "nodepool=second-node-pool"
 
 node/second-node-pool-node-519613 uncordoned
 node/second-node-pool-node-5fda8f uncordoned
@@ -269,7 +251,7 @@ nodepool-9680a2e9-3e58-48c7-b4-node-c65648   Ready    <none>   2d      v1.22.2
 second-node-pool-node-519613                 Ready    <none>   6m8s    v1.22.2
 second-node-pool-node-5fda8f                 Ready    <none>   6m6s    v1.22.2
 second-node-pool-node-c355db                 Ready    <none>   6m13s   v1.22.2
-</code></pre>
+```
 
 ### Taint a Node
 
@@ -298,7 +280,8 @@ kubectl get nodes  -o=jsonpath='{range .items[*]}{.metadata.name}{"\n"}{.spec.ta
 
 In our example:
 
-<pre class="console"><code>$ kubectl taint node -l "nodepool=second-node-pool" my-key=my-value:NoSchedule
+```console
+$ kubectl taint node -l "nodepool=second-node-pool" my-key=my-value:NoSchedule
 
 node/second-node-pool-node-519613 tainted
 node/second-node-pool-node-5fda8f tainted
@@ -314,7 +297,7 @@ second-node-pool-node-5fda8f
 [{"effect":"NoSchedule","key":"my-key","value":"my-value"}]
 second-node-pool-node-c355db
 [{"effect":"NoSchedule","key":"my-key","value":"my-value"}]
-</code></pre>
+```
 
 You can unpause a node:
 
@@ -324,12 +307,13 @@ kubectl taint node -l "nodepool=second-node-pool" my-key:NoSchedule-
 
 In our example:
 
-<pre class="console"><code>$ kubectl taint node -l "nodepool=second-node-pool" my-key:NoSchedule-
+```console
+$ kubectl taint node -l "nodepool=second-node-pool" my-key:NoSchedule-
 
 node/second-node-pool-node-519613 untainted
 node/second-node-pool-node-5fda8f untainted
 node/second-node-pool-node-c355db untainted
-</code></pre>
+```
 
 ### Taint a Node and create a pod only on these tainted Nodes
 
@@ -344,7 +328,8 @@ kubectl taint node -l "nodepool=second-node-pool" flavor=d2-8:NoSchedule
 
 In our example:
 
-<pre class="console"><code>$ kubectl taint node -l "nodepool=second-node-pool" flavor=d2-8:NoSchedule
+```console
+$ kubectl taint node -l "nodepool=second-node-pool" flavor=d2-8:NoSchedule
 node/second-node-pool-node-519613 tainted
 node/second-node-pool-node-5fda8f tainted
 node/second-node-pool-node-c355db tainted
@@ -359,7 +344,7 @@ second-node-pool-node-5fda8f
 [{"effect":"NoSchedule","key":"flavor","value":"d2-8"}]
 second-node-pool-node-c355db
 [{"effect":"NoSchedule","key":"flavor","value":"d2-8"}]
-</code></pre>
+```
 
 And then you can create a Pod that can be scheduled only on Nodes which have the taint `flavor=d2-8:NoSchedule`.
 
@@ -396,14 +381,15 @@ kubectl get pod -o wide
 
 In our example:
 
-<pre class="console"><code>$ kubectl apply -f my-pod.yaml
+```console
+$ kubectl apply -f my-pod.yaml
 
 pod/my-pod created
 
 $ kubectl get pod -o wide
 NAME     READY   STATUS    RESTARTS   AGE   IP         NODE                           NOMINATED NODE   READINESS GATES
 my-pod   1/1     Running   0          6s    10.2.7.2   second-node-pool-node-519613   <none>           <none>
-</code></pre>
+```
 
 Thanks to the `-o wide` option, you can verify that your Pod is running on `second-node-pool-node-519613` node.
 
