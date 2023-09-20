@@ -1,12 +1,12 @@
 ---
 title: "Protecting a GAME server with the application firewall"
 excerpt: "Learn how to configure the GAME DDoS firewall"
-updated: 2023-08-30
+updated: 2023-09-20
 ---
 
 ## Objective
 
-This guide's objective is to help you better understand our Game DDoS Protection (or Game Firewall) and to provide instructions on how to configure effective protection for servers that support it.
+This guide's objective is to help you better understand our Game DDoS Protection (Game Firewall) and to provide instructions on how to configure effective protection for servers that support it.
 
 > [!primary]
 > Find more information on our Game DDoS Protection on <https://www.ovhcloud.com/en/security/game-ddos-protection/>.
@@ -24,22 +24,22 @@ This guide's objective is to help you better understand our Game DDoS Protection
 
 ## Introduction 
 
-The Anti-DDoS Infrastructure keeps the network safe from common threats on network levels L3-L4 using the Edge Network Firewall. Game DDoS Protection is a layer-7 firewall that focuses on thoroughly examining and protecting specific application protocols (usually using UDP). These two systems work closely together to provide the best possible protection. The key benefits of the Game Firewall are:
+The Anti-DDoS Infrastructure together with Edge Network Firewall are keeping network safe from common threats (mostly focusing on ISO OSI Layer 3 and 4). On the other hand, hosting game applications can be challenging experience in terms of network security. We understand that very well and for this usecase OVHcloud is offering Game DDoS Protection - a Layer-7 (application) firewall that focuses on protecting specific gaming protocols (usually using UDP). It's key benefits are:
 
-- **Distance**: We've created special solutions for each kind of attack. These solutions are put as near as possible to the servers and work together with special hardware.
-- **2-way**: The platform analyzes incoming and outgoing traffic
-- **Instant**: It can distinguish real players from harmful attacks on a server from the very first network packets. 
-- **Always-on**: The ability to detect and stop attacks ensures a smooth experience for sensitive gaming applications without any disruptions.
+- **Distance**: We know that latency and it's stability is crucial for gaming. These solutions are put as close as possible to the servers and work together with a dedicated hardware.
+- **2-way**: The platform analyzes incoming and outgoing traffic for best understanding of every player's situation.
+- **Instant**: It can distinguish real players from harmful attacks on a server from the very first network packets.
+- **Always-on**: The ability to detect and stop attacks ensures a smooth experience for sensitive gaming applications without any disruptions and latency changes.
 
 ## Instructions
 
 ### Enabling the Game DDoS Protection
 
 > [!primary]
-> The Network Firewall protects the IP associated with a server. As a result, if you have a server with multiple IP addresses, you need to configure each IP separately. You cannot configure the firewall on the server as a whole.
+> The Game Firewall protects the IP associated with a server. As a result, if you have a server with multiple IP addresses (i.e. Additional IP addresses), you need to configure each of them separately.
 >
 
-In order to configure rules for your ports in the Game Firewall, you will first need to log in to the OVHcloud Control Panel.
+In order to configure gaming rules in the Game Firewall, you will first need to log in to the OVHcloud Control Panel.
 
 Click the `Bare Metal Cloud`{.action} tab then go to `Network`.{action} and open `Public IP Addresses`{.action}. Next, click on the `...`{.action} button next to the IP address of your Game Server and click on `Configure the GAME firewall`{.action}.
 
@@ -56,6 +56,11 @@ You can set up to **30 rules per IP**.
 ![Configure_Armor](images/ConfigureGameFirewall_newUX.png){.thumbnail}
 
 Enable the ports as needed on the following screen and click on the `Confirm`{.action} button when you are finished adding your rules. You have now successfully configured Game Firewall rules.
+
+> [!primary]
+> It is important to note that Game DDoS Protection will not take any action unless rules are configured. 
+> Moreover, for the best protection we highly recommend to set "Default policy = DROP" which will drop any traffic that is not matching defined rules. This way, listed application will be protected, and nothing else can reach your server.
+> 
 
 > [!warning]
 > It's important to notice that Game DDoS protection applies after the Edge Network Firewall. For a proper functioning, the Edge Network protection can not be too strict and has to forward traffic to the Game DDoS protection. It would be optimal to have one rule on the Edge Network Firewall allowing all UDP traffic, then let the Game DDoS protection filter the specific UDP ports.
@@ -75,7 +80,7 @@ Due to this, we do not plan to release a public FiveM Game firewall profile for 
 
 #### Rust
 
-Game firewall supports Rust with a detiled profile. You can read more about hosting rRst on OVHcloud's servers [here](https://www.ovhcloud.com/en/bare-metal/game/rust-server/).
+Game firewall supports Rust with a detiled profile. You can read more about hosting Rust on OVHcloud's servers [here](https://www.ovhcloud.com/en/bare-metal/game/rust-server/).
 
 #### Minecraft
 
@@ -84,6 +89,10 @@ Minecraft is well supported in the following versions:
 - Minecraft Java edition 
 - Minecraft Pocket Edition
 - Minecraft Query
+
+> [!primary]
+> For now Minecraft Java edition is protected in "default" mode and no additional setup is exposed. If you host bigger Minecraft servers, or with specific requirements - please reach our support using [Help Center](https://help.ovhcloud.com/csm/en-gb-home?id=csm_index) with all the details to tune-up the application profile.
+>
 
 ## Go further
 

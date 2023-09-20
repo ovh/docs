@@ -1,7 +1,7 @@
 ---
 title: "Monitoring DDoS attacks with the Network Security Dashboard"
-excerpt: "Learn how to navigate the Network Security Dashboard"
-updated: 2023-09-01
+excerpt: "Learn how to navigate through the Network Security Dashboard"
+updated: 2023-09-20
 ---
 
 ## Objective
@@ -10,80 +10,83 @@ This guide aims at introducing the Network Security Dashboard and its features.
 
 ## Requirements
 
-- An OVHcloud service with an Edge Network Firewall or Game DDoS Protection ([Dedicated Server](https://www.ovhcloud.com/en-gb/bare-metal/){.external}, [VPS](https://www.ovhcloud.com/en-gb/vps/){.external}, [Public Cloud instance](https://www.ovhcloud.com/en-gb/public-cloud/){.external}, [Hosted Private Cloud](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/){.external}, [Additional IP](https://www.ovhcloud.com/en-gb/network/additional-ip/){.external}, etc.)
+- An OVHcloud service exposed on dedicated public IP address ([Dedicated Server](https://www.ovhcloud.com/en-gb/bare-metal/){.external}, [VPS](https://www.ovhcloud.com/en-gb/vps/){.external}, [Public Cloud instance](https://www.ovhcloud.com/en-gb/public-cloud/){.external}, [Hosted Private Cloud](https://www.ovhcloud.com/en-gb/enterprise/products/hosted-private-cloud/){.external}, [Additional IP](https://www.ovhcloud.com/en-gb/network/additional-ip/){.external}, etc.)
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 
 ## Instructions
 
 ### Network Security 
 
-OVHcloud's Anti-DDoS Infrastructure is a multi-layered defense system. Each mitigation node consists of few stages. Every part is responsible for a particular task and implements different logics. The protection works mostly on layer 3-4 (with few exceptions that take into account layer 7). 
+OVHcloud's Anti-DDoS Infrastructure is a multi-layered, distributed defense system to fight against cyber-attacks. Consists of multiple edge locations and Scrubbing Centers that can analyze and clean-up malicious traffic. Together with the [Edge Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network) and the [Game DDoS Protection](/pages/bare_metal_cloud/dedicated_servers/firewall_game_ddos) offers quality protection that fits number of our customer needs. 
 
-Together with the [Edge network firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network) and the [Game DDoS Protection](/pages/bare_metal_cloud/dedicated_servers/firewall_game_ddos), the Anti-DDoS Infrastructure is constantly analyzing incoming traffic (detection mechanism) and eventually redirects such traffic via our Scrubbing Centers (formerly known as “Mitigation stages”) located in every DataCenter. In such cases, incoming traffic is deeply analyzed and eventually filtered-out from malicious packets. 
+Anti-DDoS Infrastructure is constantly analyzing incoming traffic (detection mechanism) and eventually redirects such traffic via our Scrubbing Centers (also known as “Mitigation”) located in DataCenters around the World. Incoming traffic is then deeply analyzed and eventually filtered-out from malicious packets before reaching your server or service.
 
 > [!warning]
 >
-> The Anti-DDoS Infrastructure protects the IP associated with a server. As a result, if you have a server with multiple IP addresses, you need to configure each IP separately. You cannot configure the firewall on the server as a whole.
+> The Anti-DDoS Infrastructure, Edge Network Firewall or Game DDoS Protection are protecting public IP addresses associated with a server (or service). As a result, if you have a server with multiple IP addresses, you may need to monitor or configure them separately.
 > 
-
-Depending on the nature of the attack, the mechanism automatically detects the different types of threats and operates different actions accordingly:
-
-- In case of an **internal** attack (an attack sourcing from the internal network and targeting external machines), appropriate actions are taken and our Security teams are informed. 
-- In case of an **external** attack, traffic is redirected to the Anti-DDoS Scrubbing Center.
 
 #### What happens when an attack reaches my service's IP? 
 
-Every time an attack is detected towards any IP of your service, you are notified via email with all the details about the attack.
-You will receive a second email notification as soon as the attack is finished. 
+Every time an attack is detected towards any IP of your service, you are notified via email about the fact of re-routing traffic through Anti-DDoS Infrastructure. You will also see this periods on Network Security Dashboard with some more details.
 
-<Image of "Mange IPs" page on new UX with red icon showcasing attack>
+<Image of actual "Mange IPs" page with red line showcasing attack>
 
-During an attack, active mitigation will be indicated by the appropriate icon, visible next to the impacted IP on the `Manage IPs`{.action} section of your Control Panel.
+During an attack, active mitigation action will be indicated by different color on IP listing page (`Manage IPs`{.action} section of your Control Panel).
 
 > [!primary]
 >
->F ind more information on how DDoS Mitigation is achieved at OVHcloud [here](https://www.ovhcloud.com/en/security/anti-ddos/ddos-attack-mitigation/).
+> Find more information on how DDoS Mitigation is achieved at OVHcloud [here](https://www.ovhcloud.com/en/security/anti-ddos/ddos-attack-mitigation/).
 >
 
 ### Network Security Notifications
 
-<Image of "Mange IPs" page on new UX with all icons>
+<Image of "Mange IPs" page with Advanced mode enabled>
 
-In the OVHcloud Control Panel, access the `Bare Metal Cloud`{.action} tab. Then go to `Network`{.action} and click `Manage IPs`{.action} to see the current mode of the Anti-DDoS Infrastructure.
+In the OVHcloud Control Panel, access the `Bare Metal Cloud`{.action} tab. Then go to `Network`{.action} and click `Manage IPs`{.action} ensuring `Advanced mode` is enabled to see  Anti-DDoS Infrastructure status and configuration of it's components.
 
-There are at most 3 visible icons, each of them indicating a sngle status.
+There are columns corresponding Anti-DDoS Scrubbing (Mitigation) status, Edge Network Firewall and GAME firewall indicating feature availability and it's statuses.
 
-- The first icon, starting from the left, indicates the Scrubbing center status:
-    - **Green** - The Scrubbing Center is in **automatic** mode. It is the recommended mode to use.
-    - **Yellow**** - The Scrubbing Center is **permanently enabled**. We do not reccomend it to be enabled at all times, since it can alter efectiveness of attack mitigation.
-    - **Red** - This indicates the Scrubbing Center is **taking action** right now.
+- Mitigation column indicates:
+    - **Automatic** - The Scrubbing Center is in **automatic** mode. It is the recommended mode to use, reroutes traffic for deeper analysis when needed.
+    - **Permanent**** - The Scrubbing Center is **permanently enabled**. We do not reccomend it to be enabled permanently, unless latency jitter is noted due to rerouting traffic back-and-forth.
+    - **Forced** - This indicates the Scrubbing Center is **taking action** right now.
 
-- The second icon shows the GAME DDoS Protection (only available for [OVHcloud **Game** Dedicated Servers](https://www.ovhcloud.com/en-gb/bare-metal/prices/#filterType=range_element&filterValue=game))) status:
-    - **On** - The GAME Firewall **enabled** on this IP.
+- Firewall column indicates Edge Network Firewall state:
+    - **Enabled** - firewall is **enabled** for this IP.
+    - **Disabled** -  firewall is **disabled** for this IP.
+    - **(no status)** - firewall configuration is not created for such IP. This can be turned on using: `...`{.action} button and `Create Firewall`{.action}
+
+- GAME firewall (only available for [OVHcloud **Game** Dedicated Servers](https://www.ovhcloud.com/en-gb/bare-metal/prices/#filterType=range_element&filterValue=game))) status:
+    - **On** - The GAME DDoS Protection is **enabled** on this IP.
     - **Off** - The GAME Firewall is **available** but **disabled** on this IP.
+    - **(no status)** - GAME Firewall is not available for such IP. This means listed IP is not configured on supported product range.
 
-- The third icon indicates the status of the Edge Network Firewall:
-    - **On** - The Edge Network Firewall is **enabled** on this IP.
-    - **Off** - The Edge Network Firewall is **disabled** on this IP.
+- Alerts column may include some additional information, including:
+   - **blocked for SPAM** - IP is blocked due to SPAM reasons
+   - **blocked for antihack** - malicious traffic outgoing from listed IP was detected
+   - **blocked for ARP** - malicious Layer2 traffic was detected
+   - **forced mitigation** - incoming attack detected, Scrubbing Center in use
 
-> [!warning]
->
-> The Edge Network Firewall is enabled automatically whenever a DDoS attack is launched, and cannot be disabled before the attack ends. As a result, all the rules configured in the firewall are applied. This is why it is important to keep your firewall rules up to date.
-> By default, there are no configured rules, so all connections can be set up.
-> If you have configured some rules, we recommend checking them regularly, even if the firewall is disabled.
->
 
 ### Network Security Dashboard
 
-In the OVHcloud Control Panel, access the `Bare Metal Cloud`{.action} tab. Then go to `Network`{.action} and click `Public IP Addresses`{.action} to access the **Network Security Dashboard**.
+In the OVHcloud Control Panel, accessing the dashboard can be done either from IP listing page (for a particular IP) or going directly to Network Security Dashboard in Network menu.
+
+From IP listing: access the `Bare Metal Cloud`{.action} tab, then go to `Network`{.action} and click `Public IP Addresses`{.action}, reach `...`{.action} button and `Network Security Dashboard`{.action}.
 
 <image of "Manage IPs" from new NSD UX showing "..." button clicked>
 
-Click on the `...`{.action} button next to the desired IP then select `Anti DDoS report`{.action}.
+..or directly: access the `Bare Metal Cloud`{.action} tab, then go to `Network`{.action} and select `Network Security Dashboard`{.action}.
+
+<image of "Network menu in Baremetal Cloud" showing "Network Security Dashboard" clicked>
+
+
+From which, you go to Scrubbing Center log page
 
 <image of "Anti-DDoS dashboard" scrubbing center log page>
 
-In the **Scrubbing Center log** tab, you can retrieve all the information about attacks that were detected in the past.
+In the **Scrubbing Center log** tab, you can retrieve all the information about attacks that were detected in the past (or that are ongoing).
 
 In the table, the following columns are present: 
 
@@ -94,11 +97,18 @@ In the table, the following columns are present:
 
 <image of "Anti-DDoS dashboard" traffic chart>
 
-In the **Traffic chart** tab, you can see a graph showing all periods of Scrubbing Center mitigation activity. You can retrieve plenty of information about your service's traffic here, such as: the number of events, Packets dropped, Bandwidth cleaned, Attacks detected, the Pps (packets per second) value of an attack, the Bps (bits per second) value of an attack and Scrubbing center activity periods.
+In the **Traffic chart** tab, you can see a graph showing traffic to your server or service (bps or pps). It includes malicious traffic that was dropped (**in red**), clean traffic reaching your server (**in green**) and also periods of Scrubbing Center activity (**in grey**). There are also basic mitigation statistics displayed, i.e.: how much traffic was cleaned-up or how many attacks were detected for selected IP in given period of time.
 
-### I'm under attack, but still cannot reach my server? What can I do more? 
+### I'm under attack, how can I protect better my server?
 
-If the attack is not properly mitigated, or you are experiencing any difficulties with the Anti-DDoS system, we are ready to help you. P
+Some types of attacks may be so specific that our Anti-DDoS Infrastructure will not be able to detect & clean it up. In such cases, firewall configured on your server can help and we recommend also offloading some of the server firewall rules to the edge of our network - using Edge network Firewall.
+
+For more information how to configure Edge Network Firewall rules, please see our guide: [Edge Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network).
+
+
+### I'm under attack and experience problems on my server. What can I do more? 
+
+If an attack is not properly mitigated, or you are experiencing any difficulties with the Anti-DDoS Infrastructure, we are ready to help you.
 
 Please use our [Help Center](https://help.ovhcloud.com/csm/en-gb-home?id=csm_index) to contact our support teams with details about your issue and follow the next steps.
 
@@ -138,6 +148,15 @@ In any case where adjustments to our Anti-DDoS system will be necessary, it is m
 - Is legitimate traffic being dropped: YES/NO
 - Was connection to the server lost: YES/NO
 - Which type of legitimate traffic is being dropped:
+
+### Why do I see not all of the attacks on the Network Security Dashboard?
+
+Depending on the nature of the attack, different actions may be taken to best eliminate the threat. In both cases attacks are best mitigated as close to the origin as possible:
+
+- In case of an attack comming into OVHcloud network (**external**), traffic is redirected to the Anti-DDoS Scrubbing Centers for cleaning (thus visible on the Dashboard).
+- In case of an attack originating inside OVHcloud network (**internal**), appropriate actions are taken on the origin server (or service) together with our Security teams.
+
+Also, worth mentioning is that Anti-DDoS Infrastructure is a solution designed for best efficiency and wides range of services to protect. In some specific cases, it may need additional tuning (e.g. for application specificity or size). To request that, please visit our [Help Center](https://help.ovhcloud.com/csm/en-gb-home?id=csm_index) and search for appropriate action.
 
 ## Go further
 
