@@ -16,7 +16,7 @@ Mit Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&f
 - mehr FTP-Speicherplatz;
 - zusätzliche Datenbanken; 
 - zusätzliche E-Mail-Adressen;
-- zusätzliche Funktionen wie [Mailinglisten](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_mailing_list) (ab [dem Pro Angebot](https://www.ovhcloud.com/de/web-hosting/professional-offer/)) oder [Web Cloud Databases](https://www.ovhcloud.com/de/web-cloud/databases/){.external} (in [den Performance Angeboten](https://www.ovhcloud.com/fr/web-hosting/performance-offer/).
+- zusätzliche Funktionen wie [Mailinglisten](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_mailing_list) (ab [dem Pro Angebot](https://www.ovhcloud.com/de/web-hosting/professional-offer/)) oder [Web Cloud Databases](https://www.ovhcloud.com/de/web-cloud/databases/){.external} (in [den Performance Angeboten](https://www.ovhcloud.com/de/web-hosting/performance-offer/).
 
 **Diese Anleitung erklärt, wie Sie Ihr OVHcloud Hosting ohne Dienstunterbrechung skalieren können.**
 

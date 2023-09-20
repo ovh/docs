@@ -75,7 +75,7 @@ Después de eliminar los datos de sus bases de datos, vuelva a calcular la cuota
 
 #### 2 - Web Cloud Databases
 
-Si utiliza el servicio [Web Cloud Databases] (/pages/web_cloud/web_cloud_databases/starting_with_clouddb) incluido con su alojamiento web [Performance](https://www.ovhcloud.com/es-es/web-hosting/performance-offer/) y desea cambiar su alojamiento web a un plan [Pro](https://www.ovhcloud.com/es-es/web-hosting/professional-offer/), deberá disociar en primer lugar el servicio Web Cloud Databases de su alojamiento web.<br>
+Si utiliza el servicio [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) incluido con su alojamiento web [Performance](https://www.ovhcloud.com/es-es/web-hosting/performance-offer/) y desea cambiar su alojamiento web a un plan [Pro](https://www.ovhcloud.com/es-es/web-hosting/professional-offer/), deberá disociar en primer lugar el servicio Web Cloud Databases de su alojamiento web.<br>
 Para ello, conéctese a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y acceda a la sección «Web Cloud» de la columna izquierda de la columna izquierda, en la columna izquierda, en la columna izquierda y en la columna izquierda de la página «Servidores dedicados» de OVHcloud > {.action}. En la columna izquierda, haga clic en `Alojamientos`{.action} y seleccione el alojamiento web correspondiente. A continuación, siga en la pestaña `Información general`{.action}. En la columna central `Configuración`, haga clic en el botón `...`{.action} situado a la derecha de `Web Cloud Databases`{.action} y seleccione `Desvincular`{.action}.
 
 ![Web Cloud Databases](images/clouddb.png){.thumbnail}
@@ -89,7 +89,7 @@ Si no desea conservar estos datos, puede eliminar su solución Web Cloud Databas
 
 #### 3 - Espacio de almacenamiento FTP
 
-Asegúrese de que el nuevo plan ofrece [espacio de almacenamiento FTP] (/pages/web_cloud/web_hosting/ftp_connection) suficiente para que sea posible importar los archivos del alojamiento actual.
+Asegúrese de que el nuevo plan ofrece [espacio de almacenamiento FTP](/pages/web_cloud/web_hosting/ftp_connection) suficiente para que sea posible importar los archivos del alojamiento actual.
 
 Para comprobar el espacio de almacenamiento FTP utilizado en su alojamiento web, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y acceda a la sección «Web Cloud» de la página {.action}. En la columna izquierda, haga clic en `Alojamientos`{.action} y seleccione el alojamiento web correspondiente. En la página `Información general`{.action} que aparece, consulte la cuota en la sección `Espacio en disco`.
 
