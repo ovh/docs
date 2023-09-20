@@ -1,14 +1,14 @@
 ---
-title: Comment migrer des données depuis OVHcloud Microsoft SharePoint
-excerpt: Découvrez comment migrer des données de votre cloud Microsoft Sharepoint OVH vers un autre service Microsoft Sharepoint
-updated: 2023-09-04
+title: Comment synchroniser les données de votre SharePoint OVHcloud
+excerpt: Découvrez comment synchroniser les données de votre Sharepoint OVHcloud sur votre ordinateur
+updated: 2023-09-20
 ---
 
 ## Objectif
 
-Si vous souhaitez récupérer les données de votre plateforme sharepoint OVHcloud pour les migrer, vous trouverez dans ce guide les étapes nécessaires pour extraire l'ensemble des données présentes.
+Si vous souhaitez récupérer ou migrer les données de votre plateforme sharepoint OVHcloud, vous trouverez dans ce guide les étapes nécessaires pour extraire l'ensemble des données vers le stockage local de votre orindateur.
 
-**Découvrez comment migrer des données de votre cloud Microsoft Sharepoint OVH vers un autre service Microsoft Sharepoint.**
+**Découvrez comment synchroniser les données de votre Sharepoint OVHcloud sur votre ordinateur.**
 
 ## Prérequis
  
