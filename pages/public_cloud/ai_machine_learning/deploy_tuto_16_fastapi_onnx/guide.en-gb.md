@@ -1,14 +1,14 @@
 ---
 title: AI Deploy - Tutorial - Deploy an ONNX model using FastAPI
-excerpt: How do you deploy the DenseNet model in ONNX format for optimized inference
+excerpt: Learn how to deploy the DenseNet model in ONNX format for optimized inference
 updated: 2023-09-19
 ---
 
 ## Objective
 
-The purpose of this tutorial is to show how to deploy an **ONNX model** for optimized inference thanks to **AI Deploy**.
+The purpose of this tutorial is to show you how to deploy an **ONNX model** for optimized inference thanks to **AI Deploy**.
 
-In order to do this, you will use a **DenseNet model** trained on [CIFAR-10 dataset](https://www.cs.toronto.edu/~kriz/cifar.html) to classify images and [FastAPI](https://fastapi.tiangolo.com/) Python framework to create the API. Developing an API will enable you to use your Machine Learning model for inference.
+In order to do this, you will use a **DenseNet model** trained on [CIFAR-10 dataset](https://www.cs.toronto.edu/~kriz/cifar.html) to classify images and the [FastAPI](https://fastapi.tiangolo.com/) Python framework to create the API. Developing an API will enable you to use your Machine Learning model for inference.
 You will also learn how to build and use a custom Docker image for a FastAPI deployment.
 
 For more information on how to train DenseNet on a CIFAR-10 dataset, refer to the following [documentation](/pages/public_cloud/ai_machine_learning/notebook_tuto_15_finetune_export_onnx_model).
@@ -22,8 +22,8 @@ Here is an overview of the **image classification** API:
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 - An AI Deploy project created inside a Public Cloud project
 - A [user for AI Deploy](/pages/public_cloud/ai_machine_learning/gi_01_manage_users)
-- [Docker](https://www.docker.com/get-started) installed on your local computer or a deployed PCI Docker Instance
-- Some knowledge about building image and [Dockerfile](https://docs.docker.com/engine/reference/builder/)
+- [Docker](https://www.docker.com/get-started) installed on your local computer or a deployed Public Cloud Docker Instance
+- Some knowledge about building images and [Dockerfile](https://docs.docker.com/engine/reference/builder/)
 - Your weights obtained from fine-tuning **DenseNet model** on the **CIFAR-10 dataset** (refer to the *"Export ONNX model for inference"* part of the [notebook about DenseNet fine-tuning](https://github.com/ovh/ai-training-examples/blob/main/notebooks/go-further/onnx/notebook_finetune_densenet_export_onnx.ipynb))
 
 ## Instructions
@@ -31,7 +31,7 @@ Here is an overview of the **image classification** API:
 You are going to follow different steps to build your FastAPI app.
 
 - More information about FastAPI capabilities can be found [here](https://fastapi.tiangolo.com/).
-- Direct link to the full code can be found [here](https://github.com/ovh/ai-training-examples/tree/main/apps/fastapi/image-classification-densenet-onnx-api).
+- A direct link to the full code can be found [here](https://github.com/ovh/ai-training-examples/tree/main/apps/fastapi/image-classification-densenet-onnx-api).
 
 > [!warning]
 > **Warning**
@@ -73,14 +73,14 @@ session = onnxruntime.InferenceSession("/workspace/models/densenet_onnx_cifar10/
 
 Create the dictionary with class index and name:
 
-*Find out more information about these classes ID and name on the notebook [tutorial](https://github.com/ovh/ai-training-examples/blob/main/notebooks/go-further/onnx/notebook_finetune_densenet_export_onnx.ipynb).*
+*Find more information about these classes ID and name on the notebook [tutorial](https://github.com/ovh/ai-training-examples/blob/main/notebooks/go-further/onnx/notebook_finetune_densenet_export_onnx.ipynb).*
 
 ```python
 idx_to_class = {0: 'AIRPLANE', 1: 'AUTOMOBILE', 2: 'BIRD', 3: 'CAT', 4: 'DEER', \
                 5: 'DOG', 6: 'FROG', 7: 'HORSE', 8: 'SHIP', 9: 'TRUCK'}
 ```
 
-Define the Python function that process the input images:
+Define the Python function that processes the input images:
 
 ```python
 def process_img(file) -> Image.Image:
@@ -189,7 +189,7 @@ ENTRYPOINT ["uvicorn"]
 CMD ["app:app", "--host", "0.0.0.0", "--port", "8080"]
 ```
 
-Give correct access rights to **OVHcloud user** (`42420:42420`):
+Give correct access rights to the **OVHcloud user** (`42420:42420`):
 
 ```console
 RUN chown -R 42420:42420 /workspace
@@ -216,7 +216,7 @@ docker build . -t densenet-onnx-fastapi:latest
 
 > [!warning]
 > **Warning**
-> The shared registry of AI Deploy should only be used for testing purpose. Please consider attaching your own Docker registry. More information about this can be found [here](/pages/public_cloud/ai_machine_learning/training_guide_05_howto_add_registry).
+> The shared registry of AI Deploy should only be used for testing purposes. Please consider attaching your own Docker registry. More information about this can be found [here](/pages/public_cloud/ai_machine_learning/training_guide_05_howto_add_registry).
 >
 
 > [!warning]
@@ -225,6 +225,7 @@ docker build . -t densenet-onnx-fastapi:latest
 >
 > `docker buildx build --platform linux/amd64 ...`
 >
+
 Find the address of your shared registry by launching this command:
 
 ```console
@@ -257,14 +258,14 @@ ovhai app run <shared-registry-address>/densenet-onnx-fastapi:latest \
 > [!primary]
 > **Notes**
 >
-> - `--gpu 1` the use of the model requires **GPU** (`device="cuda"`). Please choose at least 1 GPU.
+> - `--gpu 1` : The use of the model requires **GPU** (`device="cuda"`). Please choose at least 1 GPU.
 >
 > - Consider adding the `--unsecure-http` attribute if you want your application to be reachable without any authentication.
 >
 
 ## Interact with the deployed API through the dashboard
 
-By clicking on the link of your AI Deploy app, you will arrive on the following page.
+By clicking on the link of your AI Deploy app, you will land on the following page.
 
 ![APIAccess](images/access-fastapi-url.png){.thumbnail}
 
@@ -282,7 +283,7 @@ To be able to send an image for classification, select `/uploadimage/` in the gr
 
 ![APIImage](images/fastapi-send-image.png){.thumbnail}
 
-To get the result of the prediction, click on the `Execute button`.
+To get the result of the prediction, click on the `Execute`{.action} button.
 
 ![APIPrediction](images/fastapi-get-prediction.png){.thumbnail}
 
@@ -291,6 +292,6 @@ Congratulations! You have obtained the results of the prediction with the labels
 ## Go further
 
 - You can imagine deploying an image segmentation app through this [tutorial](/pages/public_cloud/ai_machine_learning/deploy_tuto_14_img_segmentation_app).
-- Feel free to use **Streamlit** to deploy a Speech-to-Text app [here](/pages/public_cloud/ai_machine_learning/deploy_tuto_09_streamlit_speech_to_text_app).
+- Feel free to use **Streamlit** to [deploy a Speech-to-Text app](/pages/public_cloud/ai_machine_learning/deploy_tuto_09_streamlit_speech_to_text_app).
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
