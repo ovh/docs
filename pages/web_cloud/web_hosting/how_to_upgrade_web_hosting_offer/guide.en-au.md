@@ -92,7 +92,7 @@ Follow [these instructions](#modify) to change your solution.
 
 [View statistics and logs for a website hosted on a shared hosting plan](/pages/web_cloud/web_hosting/logs_and_statistics)
 
-[Optimizing your website’s performance](/pages/web_cloud/web_hosting/optimizing_your_website_performance)
+[Optimizing your website’s performance](/pages/web_cloud/web_hosting/optimise_your_website_performance)
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-au/directory/).
 
