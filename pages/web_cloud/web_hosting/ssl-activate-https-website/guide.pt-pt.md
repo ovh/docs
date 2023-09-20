@@ -111,6 +111,8 @@ Uma vez que o seu alojamento web dispuser de um certificado SSL ativo, que o mul
 > [!warning]
 >
 > Antes de iniciar qualquer operação, recomendamos que guarde um backup completo do website, incluindo tanto os ficheiros presentes no espaço de armazenamento como a base de dados, se for o caso. 
+> Antes de começar, recomendamos que guarde um backup completo do website. Por isso, este backup deve conter não só os ficheiros presentes no espaço de armazenamento FTP, mas também os da base de dados, se o website utilizar um. 
+> A partir desta etapa, as ações devem ser realizadas diretamente a partir dos ficheiros que compõem o seu website. Não hesite em contactar um [fornecedor especializado](https://partner.ovhcloud.com/pt/directory/) se encontrar dificuldades.
 >
 
 Para ativar o protocolo "HTTPS" num website, é necessário efetuar alterações na respetiva configuração. Existem várias formas de o fazer. As informações apresentadas a seguir podem ajudá-lo neste processo de ativação, mas também podem revelar-se incompletas ou desadequadas à sua situação em específico.

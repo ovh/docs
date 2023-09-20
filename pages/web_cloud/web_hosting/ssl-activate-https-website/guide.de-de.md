@@ -110,7 +110,9 @@ Wenn Ihr Webhosting dann über ein funktionales SSL-Zertifikat sowie die betreff
 
 > [!warning]
 >
-> Bevor Sie tatsächlich mit der Umstellung beginnen, empfehlen wir Ihnen, ein vollständiges Backup Ihrer Website zu machen, d. h. sowohl die gespeicherten Dateien zu sichern als auch die Datenbank, falls Ihre Website eine verwendet. 
+> Bevor Sie fortfahren, empfehlen wir Ihnen, ein vollständiges Backup Ihrer Website zu erstellen, d. h. sowohl die Dateien auf dem Speicherplatz als auch die Datenbank zu sichern, falls die Website eine verwendet. 
+> Bevor Sie mit der Durchführung von Maßnahmen beginnen, empfehlen wir Ihnen, ein vollständiges Backup Ihrer Website zu erstellen. Dieses Backup muss also nicht nur die Dateien auf dem FTP-Speicherplatz enthalten, sondern auch die der Datenbank, falls die Website eine verwendet. 
+> In diesem Schritt müssen die Aktionen direkt in den Dateien ausgeführt werden, aus denen Ihre Website besteht. Wenn Sie Probleme haben, wenden Sie sich bitte an einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/).
 >
 
 Es gibt verschiedene Arten, „HTTPS“ für eine Website zu aktivieren. Für den Vorgang sind in jedem Fall mehrere Anpassungen in der Konfiguration der Website notwendig. Die folgenden Informationen sollen Ihnen bei der Aktivierung helfen. Bitte beachten Sie jedoch, dass Sie für Ihren speziellen Fall möglicherweise unvollständig oder nicht zutreffend sind.

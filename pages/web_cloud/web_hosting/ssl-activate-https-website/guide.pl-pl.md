@@ -111,6 +111,8 @@ Jeśli zainstalowałeś i aktywowałeś certyfikat SSL na Twoim hostingu, ustano
 > [!warning]
 >
 > Przed rozpoczęciem jakichkolwiek działań zalecamy wykonanie pełnej kopii zapasowej Twojej strony WWW zawierającej zarówno pliki zapisane na przestrzeni dyskowej, jak również pliki bazy danych, o ile strona używa bazy. 
+> Przed rozpoczęciem jakichkolwiek działań zalecamy wykonanie pełnej kopii zapasowej Twojej strony WWW. Kopia zapasowa powinna zatem zawierać nie tylko pliki zapisane na przestrzeni dyskowej FTP, ale również pliki bazy danych, jeśli strona WWW używa jednego z tych plików. 
+> Operacje należy wykonać bezpośrednio z plików, z których składa się strona WWW. W przypadku trudności skontaktuj się z [wyspecjalizowanym dostawcą](https://partner.ovhcloud.com/pl/directory/).
 >
 
 Istnieje kilka sposobów aktywacji "HTTPS" na Twojej stronie WWW. Operacja ta wymaga przeprowadzenia zmian w konfiguracji strony WWW. Poniższe informacje mogą Ci pomóc w przeprowadzeniu aktywacji, jednak mogą również okazać się dla Ciebie niekompletne lub mogą nie mieć zastosowania w odniesieniu do Twojego konkretnego przypadku.

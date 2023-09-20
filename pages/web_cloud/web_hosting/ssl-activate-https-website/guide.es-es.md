@@ -110,7 +110,9 @@ Una vez que el alojamiento web disponga de un certificado SSL activo, que el mul
 
 > [!warning]
 >
-> Antes de realizar cualquier operación, le recomendamos que guarde una copia de seguridad completa del sitio web, incluyendo tanto los archivos presentes en el espacio de almacenamiento como la base de datos, en su caso. 
+> Antes de realizar cualquier operación, le recomendamos que guarde una copia de seguridad completa del sitio web, incluyendo tanto los archivos presentes en el espacio de almacenamiento como la base de datos, en caso de que el sitio web utilice uno. 
+> Antes de realizar cualquier operación, le recomendamos que guarde una copia de seguridad completa del sitio web. Esta copia de seguridad no solo debe contener los archivos presentes en el espacio de almacenamiento FTP, sino también los de la base de datos si el sitio web utiliza una. 
+> En efecto, a partir de este paso, deberá realizar las acciones directamente desde los archivos que componen su sitio web. No dude en contactar con un [proveedor especializado](https://partner.ovhcloud.com/es-es/directory/) si tiene alguna dificultad.
 >
 
 Para activar el protocolo "HTTPS" en un sitio web, es necesario realizar cambios en su configuración. Hay varias formas de hacerlo. La información que se indica a continuación puede servir de ayuda, pero es posible que no sea completa o no se aplique a su caso particular.

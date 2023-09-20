@@ -105,7 +105,9 @@ Una volta che l’hosting Web dispone di un certificato SSL valido, che il multi
 
 > [!warning]
 >
-> Prima di eseguire qualsiasi operazione ti consigliamo di effettuare un backup completo del tuo sito, ovvero sia dei file presenti nello spazio di storage che dell’eventuale database utilizzato. 
+> Prima di effettuare qualsiasi operazione ti consigliamo di effettuare un backup completo del tuo sito, ovvero sia dei file presenti nello spazio di storage che dell’eventuale database utilizzato. 
+> Prima di effettuare qualsiasi operazione ti consigliamo di effettuare un backup completo del tuo sito Web. Questo backup deve quindi contenere non solo i file presenti sullo spazio di storage FTP, ma anche quelli del database, se il sito Web ne utilizza uno. 
+> A partire da questo step, è possibile eseguire le azioni direttamente dai file che compongono il sito Web. In caso di difficoltà o dubbi, contatta un [provider specializzato](https://partner.ovhcloud.com/it/directory/).
 >
 
 Per attivare l’HTTPS sul tuo sito, è necessario apportare modifiche alla sua configurazione. Le informazioni fornite in questa guida possono essere d’aiuto nella procedura di attivazione, ma potrebbero rivelarsi incomplete o non applicabili al tuo caso.

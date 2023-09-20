@@ -106,7 +106,9 @@ Once your Web Hosting plan has a working SSL certificate, the multisite concerne
 
 > [!warning]
 >
-> Before you make any changes, we strongly recommend creating a full backup of your website — i.e. a backup that contains the files kept on the storage space, as well as any databases it uses. 
+> Before you start making any changes, we recommend creating a full backup of your website — i.e. a backup that contains all of the files stored on your storage space, as well as any databases it uses. 
+> Before you take any steps, we recommend that you retrieve a full backup of your website. This backup must contain not only the files stored on the FTP storage space, but also those in the database, if the website uses one. 
+> You can do this directly from the files that make up your website. Do not hesitate to contact a [specialist provider](https://partner.ovhcloud.com/en-sg/directory/) if you encounter any difficulties.
 >
 
 There are a number of ways you can activate "HTTPS" on your website. For this operation, you will need to make changes to your website’s configuration. This information below is designed to help you with the activation process, but depending on the nature of your website, the information may be incomplete or irrelevant.
