@@ -19,7 +19,7 @@ Here is an overview of the **image classification** API:
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es)
 - An AI Deploy project created inside a Public Cloud project
 - A [user for AI Deploy](/pages/public_cloud/ai_machine_learning/gi_01_manage_users)
 - [Docker](https://www.docker.com/get-started) installed on your local computer or a deployed Public Cloud Docker Instance
@@ -294,4 +294,4 @@ Congratulations! You have obtained the results of the prediction with the labels
 - You can imagine deploying an image segmentation app through this [tutorial](/pages/public_cloud/ai_machine_learning/deploy_tuto_14_img_segmentation_app).
 - Feel free to use **Streamlit** to [deploy a Speech-to-Text app](/pages/public_cloud/ai_machine_learning/deploy_tuto_09_streamlit_speech_to_text_app).
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/es-es/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
