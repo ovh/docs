@@ -1,5 +1,5 @@
 ---
-title : "Enterprise File Storage - Restaurer un volume à l'aide de l'API de restauration de snapshots"
+title: "Enterprise File Storage - Restaurer un volume à l'aide de l'API de restauration de snapshots"
 excerpt: "Découvrez comment restaurer les volumes de votre solution Enterprise File Storage grâce à la fonctionnalité de restauration de snapshots fournie par l'API OVHcloud"
 updated: 2023-09-15
 ---
