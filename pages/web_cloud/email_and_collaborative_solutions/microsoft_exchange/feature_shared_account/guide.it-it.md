@@ -1,7 +1,7 @@
 ---
 title: Crea e utilizza un account condiviso
 excerpt: Aggiungi e utilizza un account condiviso sulla tua soluzione Exchange
-updated: 2021-06-15
+updated: 2023-09-15
 ---
 
 > [!primary]
@@ -35,9 +35,19 @@ Inserisci i campi richiesti:
 |Funzionalità|Descrizione|
 |---|---|
 |Account email|Scegli il nome del tuo account condiviso. **Non deve trattarsi di un indirizzo email esistente.**|
-|Quota|Indica la quota di storage desiderata per il tuo account condiviso. La quota massima è di **10 GB per tutti i tuoi account condivisi**.|
+|Quota|Indica la quota di storage desiderata per il tuo account condiviso, [in base allo spazio disponibile](#size).|
 |Nome da visualizzare|Il nome visualizzato durante un invio dal tuo account condiviso.|
 |Nascondi l'indirizzo nella rubrica|Nascondere l'indirizzo nella rubrica permette di garantire che l'indirizzo dell'account condiviso non sia visibile nella lista degli indirizzi della tua piattaforma Exchange.|
+
+<a name="size"></a>
+
+> [!primary]
+>
+> Lo spazio disponibile per creare un account condiviso dipende dal numero di account sottoscritti sulla piattaforma. Ogni account Exchange sottoscritto sulla piattaforma sblocca 5 GB per gli account condivisi.
+>
+> **esempio:**
+>
+> Hai attivato 4 account Exchange sulla tua piattaforma, quindi hai **4 x 5GB**, cioè **20 GB** di spazio assegnato per gli account condivisi della tua piattaforma.
 
 Clicca su `Seguente`{.action} per visualizzare il riepilogo. Per completare l'operazione, clicca su `Conferma`{.action}.
 

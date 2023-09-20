@@ -1,7 +1,7 @@
 ---
 title: Criar e utilizar uma conta partilhada
 excerpt: Adicionar e utilizar uma conta partilhada na sua oferta E-mail Exchange
-updated: 2021-06-15
+updated: 2023-09-15
 ---
 
 > [!primary]
@@ -35,9 +35,19 @@ Introduza os campos solicitados:
 |Função|Descrição|
 |---|---|
 |Conta de e-mail|Escolha o nome da sua conta partilhada. **Não deve ser um endereço de e-mail existente.**|
-|Limite|Indique o limite de armazenamento desejado para a sua conta partilhada. O limite máximo é de **10GB para o conjunto das suas contas partilhadas**.|
+|Quota|Indique o limite de armazenamento desejado para a sua conta partilhada, [conforme o espaço disponível](#size).|
 |Nome a mostrar|O nome de visualização que pretende apresentar durante um envio a partir da sua conta partilhada.|
 |Ocultar o endereço na lista|Ocultar o endereço na lista de endereços permite que o endereço da conta partilhada não seja visível na lista de endereços da sua plataforma Exchange.|
+
+<a name="size"></a>
+
+> [!primary]
+>
+> O espaço disponível para criar uma conta partilhada depende do número de contas subscritas na sua plataforma. Cada conta Exchange subscrita na sua plataforma desbloqueia 5 GB para as contas partilhadas.
+>
+> **exemplo:**
+>
+> Subscreveu 4 contas Exchange na sua plataforma, pelo que tem **4 x 5GB**, ou seja **20 GB** de espaço alocado para as contas partilhadas da sua plataforma.
 
 Clique em `Seguinte`{.action} para aceder ao resumo. Finalize a operação ao clicar em `Validar`{.action}.
 

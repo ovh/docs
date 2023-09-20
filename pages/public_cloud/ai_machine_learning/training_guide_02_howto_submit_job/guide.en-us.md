@@ -70,7 +70,7 @@ OVHcloud provides a set of images from which you can choose to ease the submissi
 
 Preset images cannot cover all your needs so you can specify your own image if necessary. You can use any image that is accessible from **AI Training**.
 
-This includes public images (e.g. Dockerhub), images within the shared registry or images in your added private registry. For more information, see how to [add a private registry](/pages/public_cloud/ai_machine_learning/training_guide_05_howto_add_registry).
+This includes public images (e.g. Dockerhub), images within the shared registry or images in your added private registry. For more information, see how to [add a private registry](/pages/public_cloud/ai_machine_learning/gi_07_manage_registry).
 
 Once your image is chosen, click `Next`{.action}.
 

@@ -1,7 +1,7 @@
 ---
 title: Creating and using a shared account
 excerpt: Find out how to add and use a shared account on your Exchange email solution
-updated: 2021-06-15
+updated: 2023-09-15
 ---
 
 ## Objective
@@ -31,9 +31,19 @@ Fill in the requested fields:
 |Field|Description|
 |---|---|
 |Email account|Choose the name of your shared account. **This must not be an existing email address.**|
-|Quota|Enter the storage quota you want for your shared account. The maximum quota is **10 GB for all of your shared accounts**.|
+|Quota|Enter the desired storage quota for your shared account, [depending on available space](#size).|
 |Display name|The display name you want to appear when sending from your shared account.|
 |Hide the address in the directory|By hiding the address in the directory you can ensure that the shared account is not visible in the address list of your Exchange service.|
+
+<a name="size"></a>
+
+> [!primary]
+>
+> The space available for creating a shared account depends on the number of accounts subscribed on the Exchange service. Each account adds 5 GB of space for shared accounts.
+>
+> **Example**:
+>
+> You have subscribed to 4 accounts on your Exchange service, so you have **4 x 5 GB** i.e. **20 GB** of allocated space for shared accounts on this Exchange service.
 
 Click `Next`{.action} to proceed to the summary. Complete the operation by clicking on `Confirm`{.action}.
 

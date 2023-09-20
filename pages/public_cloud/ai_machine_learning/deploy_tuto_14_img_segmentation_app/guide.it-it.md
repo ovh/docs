@@ -175,7 +175,7 @@ Once your data is uploaded, it can be accessed from all OVHcloud AI tools, eithe
 
 ### Build the Docker image from the Dockerfile
 
-Before continuing, **make sure you are in the directory containing the application files** (requirements.txt, packages.txt, Dockerfile, python files).
+Before continuing, **make sure you are in the directory containing the application files** (requirements.txt, Dockerfile, python files).
 
 Once you are in it, launch the following command to build your application image:
 
@@ -218,7 +218,7 @@ Once started, your application should be available on `http://localhost:8501`.
 
 > [!warning]
 > **Warning**
-> The shared registry of AI Deploy should only be used for testing purposes. Please consider attaching your own Docker registry. More information about this can be found [here](/pages/public_cloud/ai_machine_learning/training_guide_05_howto_add_registry).
+> The shared registry should only be used for testing purposes. Please consider creating and attaching your own registry. More information about this can be found [here](/pages/public_cloud/ai_machine_learning/gi_07_manage_registry).
 
 Find the address of your shared registry by launching this command:
 

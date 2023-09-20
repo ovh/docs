@@ -1,7 +1,7 @@
 ---
 title: Crear y utilizar una cuenta compartida
 excerpt: Añadir y utilizar una cuenta compartida en su solución Exchange
-updated: 2021-06-15
+updated: 2023-09-15
 ---
 
 > [!primary]
@@ -35,9 +35,19 @@ Introduzca los campos solicitados:
 |Función|Descripción|
 |---|---|
 |Cuenta de correo electrónico|Elija el nombre de su cuenta compartida. **No debe tratarse de una dirección de correo electrónico existente.**|
-|Límites|Indique el límite de almacenamiento que desea asignarle a su cuenta compartida. La capacidad máxima es de **10 GB para todas sus cuentas compartidas**.|
+|Cuota|Indique la cuota de almacenamiento deseada para su cuenta compartida, [en función del espacio disponible](#size).|
 |Nombre mostrado|El nombre mostrado que quiere que aparezca en un envío desde su cuenta compartida.|
 |Ocultar la dirección en el directorio|Ocultar la dirección en el directorio permite evitar que la dirección de la cuenta compartida sea visible en la lista de direcciones de su plataforma Exchange.|
+
+<a name="size"></a>
+
+> [!primary]
+>
+> El espacio disponible para crear una cuenta compartida depende del número de cuentas contratadas en su plataforma. Cada cuenta Exchange suscrita en su plataforma desbloquea 5 GB para las cuentas compartidas.
+>
+> **Ejemplo:**
+>
+> Ha contratado 4 cuentas Exchange en su plataforma, por lo que tiene **4 x 5 GB**, es decir **20 GB** de espacio asignado para las cuentas compartidas de su plataforma Exchange.
 
 Haga clic en `Siguiente`{.action} para acceder al resumen. Haga clic en `Aceptar`{.action} para finalizar la operación.
 

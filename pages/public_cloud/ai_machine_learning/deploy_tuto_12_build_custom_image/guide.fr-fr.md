@@ -260,7 +260,9 @@ Pushing your image to a registry is needed in order for AI Deploy to pull it.
 
 AI Deploy provides a default registry called **Shared registry** where users are able to push their custom images. It is linked with every project by default.
 
-If you prefer using your own private Docker registry instead of the shared one, feel free to use it. Just don't forget to [add your registry in your AI Tools project](/pages/public_cloud/ai_machine_learning/training_guide_05_howto_add_registry) before using it.
+> [!warning]
+>
+> The shared registry should only be used for testing purposes. Please consider creating and attaching your own registry. More information about this can be found [here](/pages/public_cloud/ai_machine_learning/gi_07_manage_registry).
 
 The basic commands to push a Docker image to a registry is:
 
