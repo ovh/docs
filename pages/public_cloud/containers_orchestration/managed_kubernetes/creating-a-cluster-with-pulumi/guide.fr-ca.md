@@ -53,9 +53,10 @@ You should have installed Pulumi CLI on your machine. Verify the Pulumi CLI is s
 
 You should have a result like this:
 
-<pre class="console"><code>$ pulumi version
+```bash
+$ pulumi version
 v3.81.0
-</code></pre>
+```
 
 #### OVHcloud Pulumi provider
 
@@ -147,7 +148,8 @@ pulumi new go -y
 
 The output should be like this:
 
-<pre class="console"><code>$ pulumi new go -y
+```bash
+$ pulumi new go -y
 Created project 'pulumi_ovh_kube'
 
 Please enter your desired stack name.
@@ -161,17 +163,18 @@ Finished installing dependencies
 Your new project is ready to go! 
 
 To perform an initial deployment, run `pulumi up`
-</code></pre>
+```
 
 The command creates a `dev` stack and the code organization of your project:
 
-<pre class="console"><code>$ tree
+```bash
+$ tree
 .
 ├── go.mod
 ├── go.sum
 ├── main.go
 └── Pulumi.yaml
-</code></pre>
+```
 
 Now you need to install the Pulumi OVH provider.
 
@@ -255,7 +258,7 @@ And a Kubernetes Node Pool:
 
 Then, run the `go mod tidy` command to ask Go to download and install the necessary Go providers and dependencies.
 
-```
+```bash
 go mod tidy
 ```
 
@@ -264,7 +267,7 @@ go mod tidy
 Now you can deploy your cluster and the node pool. To do that, just execute the `pulumi up` comand.
 This will display the plan/the preview of the desireed state. You will be prompted to choose the stack (`dev` by default) and to confirm that you want to perform/apply the changes.
 
-```
+```bash
 $ pulumi up
 Previewing update (dev)
 
@@ -331,7 +334,7 @@ You can define it in your `$KUBECONFIG` environment variable or you can use it d
 
 List your Node Pools:
 
-```
+```bash
 $ kubectl --kubeconfig=kubeconfig.yaml get nodepool
 NAME              FLAVOR   AUTOSCALED   MONTHLYBILLED   ANTIAFFINITY   DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   MIN   MAX   AGE
 my-desired-pool   b2-7     false        false           false          1         1         1            1           1     3     3m25s
@@ -339,7 +342,7 @@ my-desired-pool   b2-7     false        false           false          1        
 
 Display the list of Nodes:
 
-```
+```bash
 $ kubectl --kubeconfig=kubeconfig.yaml get node
 NAME                          STATUS   ROLES    AGE    VERSION
 my-desired-pool-node-a90c09   Ready    <none>   115s   v1.27.4
@@ -446,7 +449,7 @@ In order to check your quotas and increase them, please follow this tutorial:
 
 If you want to easily destroy created resources, you can use the `pulumi destroy` command.
 
-```
+```bash
 $ pulumi destroy
 Previewing destroy (dev)
 
