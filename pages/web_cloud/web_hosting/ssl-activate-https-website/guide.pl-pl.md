@@ -1,14 +1,18 @@
 ---
-title: 'Aktywacja protokołu HTTPS na stronie WWW za pomocą certyfikatu SSL'
-excerpt: 'Dowiedz się, jak aktywować protokół HTTPS na stronie WWW za pomocą certyfikatu SSL'
-updated: 2022-10-04
+title: "Hosting WWW: SSL: przełączenie strony WWW na "HTTPS" "
+excerpt: "Dowiedz się, jak ustawić protokół "HTTPS" na Twojej stronie WWW po aktywacji certyfikatu SSL"
+updated: 2023-09-204
 ---
+
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zgłóś propozycję modyfikacji” na tej stronie.
+>
 
 ## Wprowadzenie 
 
 Jeśli wykupiłeś hosting w OVHcloud, możesz uzyskać bezpłatny certyfikat SSL. Certyfikat ten gwarantuje poufność przesyłanych danych, a Twoje strony WWW stają się dostępne za pomocą połączenia HTTPS. Aby Twoje strony WWW mogły korzystać z bezpiecznego połączenia, wykonaj wcześniej kroki opisane w niniejszej dokumentacji.
 
-**Dowiedz się, jak aktywować protokół HTTPS na stronie WWW za pomocą certyfikatu SSL.**
+**Dowiedz się, jak ustawić protokół "HTTPS" na Twojej stronie WWW po aktywacji certyfikatu SSL.**
 
 ## Wymagania początkowe
 
@@ -20,19 +24,19 @@ Jeśli wykupiłeś hosting w OVHcloud, możesz uzyskać bezpłatny certyfikat SS
 
 Bezpieczeństwo jest niezwykle istotnym aspektem korzystania z Internetu. Z pewnością przywiązujesz szczególną wagę do poufności Twoich danych oraz sposobu, w jaki są one przesyłane w Internecie. Internauci bardziej ufają stronom WWW dostępnym za pomocą bezpiecznego połączenia, szczególnie, jeśli przesyłane dane są wrażliwe. 
 
-Kiedy odwiedzasz stronę WWW używającą bezpiecznego połączenia, na pasku adresowym Twojej przeglądarki może być to widoczne na kilka sposobów: logo (zazwyczaj kłódkę), odpowiednia informacja, nazwa firmy zaznaczoną innym kolorem lub protokół HTTPS zamiast HTTP. A zatem, czy Twoja strona WWW używa bezpiecznego połączenia czy też nie, staje się dla internautów coraz bardziej widoczny.
+Kiedy odwiedzasz stronę WWW używającą bezpiecznego połączenia, na pasku adresowym Twojej przeglądarki może być to widoczne na kilka sposobów: logo (zazwyczaj kłódkę), odpowiednia informacja, nazwa firmy zaznaczoną innym kolorem lub protokół "HTTPS" zamiast HTTP. A zatem, czy Twoja strona WWW używa bezpiecznego połączenia czy też nie, staje się dla internautów coraz bardziej widoczny.
 
 ![https na stronie www](images/activate-https-website-ssl-step1.png){.thumbnail}
 
-**Proces uruchomienia protokołu HTTPS na stronie WWW może być wrażliwą operacją.** Składa się on z kilku etapów wymagających zmiany konfiguracji Twojej strony WWW (a dokładniej jej kodu). Jeśli działania nie zostaną przeprowadzone prawidłowo, mogą mieć różne negatywne skutki: gorsze pozycjonowanie strony WWW w wyszukiwarkach internetowych lub nawet niedostępność Twojej strony. 
+**Proces uruchomienia protokołu "HTTPS" na stronie WWW może być wrażliwą operacją.** Składa się on z kilku etapów wymagających zmiany konfiguracji Twojej strony WWW (a dokładniej jej kodu). Jeśli działania nie zostaną przeprowadzone prawidłowo, mogą mieć różne negatywne skutki: gorsze pozycjonowanie strony WWW w wyszukiwarkach internetowych lub nawet niedostępność Twojej strony. 
 
 Poniższa tabela pozwoli Ci lepiej zrozumieć przebieg operacji, którą należy przeprowadzić.
 
 |Etapy|Opis |Szczegóły|
 |---|---|---|
 |1|Aktywacja certyfikatu SSL na hostingu|Umożliwia aktywację certyfikatu SSL lub weryfikację, czy jest on prawidłowo zainstalowany i aktywowany na Twoim hostingu.|
-|2|Weryfikacja środowiska technicznego|Umożliwia sprawdzenie przed podjęciem jakichkolwiek czynności, czy aktywacja protokołu HTTPS na Twojej stronie WWW nie będzie miała negatywnego wpływu na działanie Twojej strony.|
-|3|Aktywacja HTTPS na Twojej stronie WWW.|Umożliwia Twojej stronie WWW korzystanie z protokołu HTTPS. Operacja ta nie jest powszechnie stosowana w odniesieniu do wszystkich stron WWW i będzie różniła się w zależności od strony, jakiej używasz.|
+|2|Weryfikacja środowiska technicznego|Umożliwia sprawdzenie przed podjęciem jakichkolwiek czynności, czy aktywacja protokołu "HTTPS" na Twojej stronie WWW nie będzie miała negatywnego wpływu na działanie Twojej strony.|
+|3|Aktywacja "HTTPS" na Twojej stronie WWW.|Umożliwia Twojej stronie WWW korzystanie z protokołu HTTPS. Operacja ta nie jest powszechnie stosowana w odniesieniu do wszystkich stron WWW i będzie różniła się w zależności od strony, jakiej używasz.|
 |4|Sprawdzenie prawidłowego działania Twojej strony WWW.|Ten ostatni etap pozwala Ci upewnić się po aktywacji HTTPS, czy Twoja strona WWW wyświetla się prawidłowo.|
 
 ### Etap 1: aktywacja certyfikatu SSL na hostingu
@@ -42,7 +46,7 @@ Aktywacja certyfikatu SSL na Twoim hostingu jest wykonywana w [Panelu klienta](h
 |Operacja|Opis |
 |---|---|
 |Aktywacja certyfikatu SSL na hostingu|Umożliwia OVHcloud instalację certyfikatu SSL na Twoim hostingu. Wybierz jeden z typów certyfikatów. Upewnij się, że wybierasz certyfikat najbardziej odpowiedni dla Twojego projektu.|
-|Aktywacja SSL na stronie w opcji MultiSite|Strona WWW, na której chcesz aktywować HTTPS musi być skonfigurowana na Twoim hostingu jako „MultiSite”. Upewnij się, że certyfikat SSL jest aktywny dla tego hostingu. |
+|Aktywacja SSL na stronie w opcji MultiSite|Strona WWW, na której chcesz aktywować "HTTPS" musi być skonfigurowana na Twoim hostingu jako „MultiSite”. Upewnij się, że certyfikat SSL jest aktywny dla tego hostingu. |
 
 Dokładny opis realizacji tych dwóch operacji dostępny jest w naszej dokumentacji [Zarządzanie certyfikatem SSL na hostingu](/pages/web_cloud/web_hosting/ssl_on_webhosting){.external}. Jeśli właśnie wykupiłeś hosting w OVHcloud, możliwe, że jest już na nim zainstalowany bezpłatny certyfikat SSL oraz że jest on już aktywny dla stron w opcji MultiSite.
 
@@ -69,9 +73,9 @@ Zalecamy zatem zastosowanie podanych niżej wskazówek. Pamiętaj, że celem tyc
 > Oddajemy w Twojej ręce niniejszy przewodnik, którego celem jest pomoc w jak najlepszym wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy wyspecjalizowanego webmastera lub kontakt z producentem oprogramowania. Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji „Sprawdź również”. 
 >
 
-#### 2.1 Unikanie mieszania treści HTTP i HTTPS
+#### 2.1 Unikanie mieszania treści "HTTP" i HTTPS
 
-Generalnie, jeśli Twoja strona wyświetla się w trybie HTTPS, powinieneś absolutnie unikać mieszania treści wyświetlanych poprzez HTTP i HTTPS zarówno na danej podstronie, jak i całej stronie WWW. W związku z powyższym, jeśli Twoja strona WWW wyświetla się w HTTPS, całość jej zawartości powinna ładować się z wykorzystaniem protokołu HTTPS.
+Generalnie, jeśli Twoja strona wyświetla się w trybie HTTPS, powinieneś absolutnie unikać mieszania treści wyświetlanych poprzez "HTTP" i "HTTPS" zarówno na danej podstronie, jak i całej stronie WWW. W związku z powyższym, jeśli Twoja strona WWW wyświetla się w HTTPS, całość jej zawartości powinna ładować się z wykorzystaniem protokołu HTTPS.
 
 Jeśli tak się nie dzieje, istnieje ryzyko, że udostępniasz na Twojej stronie WWW treści mieszane odczytywane przez przeglądarki internetowe jako *Mixed Content*. Przypomina to w pewnym sensie sytuację, w której udostępniałbyś treści uznawane za potencjalnie niebezpieczne na stronie WWW oznaczonej jako bezpieczna. Może to mieć dwie konsekwencje w zależności od typu mieszanych treści:
 
@@ -83,7 +87,7 @@ Kluczowe zatem jest upewnienie się, czy całość treści, która została zał
 
 ![https na stronie www](images/activate-https-website-ssl-step4.png){.thumbnail}
 
-Pamiętaj, że nawet jeśli na Twoim hostingu zainstalowany jest certyfikat SSL, treści hostowane na hostingu mogą być ładowane przy użyciu protokołu HTTP lub HTTPS. To zależy od sposobu, w jaki oznaczyłeś te treści w kodzie Twojej strony. Upewnij się zatem, czy treści ładowane z Twojej strony używają protokołu HTTPS.
+Pamiętaj, że nawet jeśli na Twoim hostingu zainstalowany jest certyfikat SSL, treści hostowane na hostingu mogą być ładowane przy użyciu protokołu "HTTP" lub HTTPS. To zależy od sposobu, w jaki oznaczyłeś te treści w kodzie Twojej strony. Upewnij się zatem, czy treści ładowane z Twojej strony używają protokołu HTTPS.
 
 Zwróć na przykład szczególną uwagę na adresy URL używane w kodzie Twojej strony WWW. Jeśli to możliwe:
 
@@ -100,7 +104,7 @@ Zjawisko to może mieć negatywny wpływ na pozycjonowanie Twojej strony WWW. Up
 
 Pamiętaj, że w przypadku gdy używasz strony WWW zbudowanej w oparciu o gotowy system (np. WordPress), struktura strony automatycznie zarządza regułami przepisywania. W tym przypadku nie musisz wprowadzać modyfikacji w kodzie Twojej strony WWW.
 
-### Etap 3: aktywacja HTTPS na Twojej stronie WWW
+### Etap 3: aktywacja "HTTPS" na Twojej stronie WWW
 
 Jeśli zainstalowałeś i aktywowałeś certyfikat SSL na Twoim hostingu, ustanowiłeś połączenie SSL dla MultiSite i upewniłeś się, że Twoja strona WWW jest gotowa do włączenia protokołu HTTPS, możesz przystąpić do jego aktywacji.
 
@@ -109,11 +113,11 @@ Jeśli zainstalowałeś i aktywowałeś certyfikat SSL na Twoim hostingu, ustano
 > Przed rozpoczęciem jakichkolwiek działań zalecamy wykonanie pełnej kopii zapasowej Twojej strony WWW zawierającej zarówno pliki zapisane na przestrzeni dyskowej, jak również pliki bazy danych, o ile strona używa bazy. 
 >
 
-Istnieje kilka sposobów aktywacji HTTPS na Twojej stronie WWW. Operacja ta wymaga przeprowadzenia zmian w konfiguracji strony WWW. Poniższe informacje mogą Ci pomóc w przeprowadzeniu aktywacji, jednak mogą również okazać się dla Ciebie niekompletne lub mogą nie mieć zastosowania w odniesieniu do Twojego konkretnego przypadku.
+Istnieje kilka sposobów aktywacji "HTTPS" na Twojej stronie WWW. Operacja ta wymaga przeprowadzenia zmian w konfiguracji strony WWW. Poniższe informacje mogą Ci pomóc w przeprowadzeniu aktywacji, jednak mogą również okazać się dla Ciebie niekompletne lub mogą nie mieć zastosowania w odniesieniu do Twojego konkretnego przypadku.
 
 - **Używasz strony WWW zbudowanej w oparciu o gotowy system (np. WordPress)**: 
 
-Aktywacja HTTPS wykonywana jest w interfejsie administracyjnym Twojej strony. Czynności, które należy przeprowadzić, aby aktywować HTTPS będą zależały od rodzaju strony, której używasz. 
+Aktywacja "HTTPS" wykonywana jest w interfejsie administracyjnym Twojej strony. Czynności, które należy przeprowadzić, aby aktywować "HTTPS" będą zależały od rodzaju strony, której używasz. 
 
 Przykładowo możesz spotkać się z ustawieniem zatytułowanym „Wymuś HTTPS”, które należy aktywować lub koniecznością modyfikacji linku Twojej strony WWW poprzez dodanie „s”:**http**://mypersonaldomain.ovh zmieni się wówczas w: **https**://mypersonaldomain.ovh”.
 
@@ -121,7 +125,7 @@ Jeśli nie wiesz, jak przeprowadzić tę operację w interfejsie administracyjny
 
 - **Używasz strony WWW, której kod został napisany przez Ciebie lub zewnętrznego wykonawcę**: 
 
-Aktywacja HTTPS powinna zostać przeprowadzona bezpośrednio w kodzie Twojej strony WWW. Jeśli masz odpowiednie kompetencje techniczne, zmodyfikuj kod strony w taki sposób, aby dostosować ją do korzystania z protokołu HTTPS. Jeśli nie wiesz, jak to zrobić, skontaktuj się z webmasterem, który stworzył dla Ciebie tę stronę. 
+Aktywacja "HTTPS" powinna zostać przeprowadzona bezpośrednio w kodzie Twojej strony WWW. Jeśli masz odpowiednie kompetencje techniczne, zmodyfikuj kod strony w taki sposób, aby dostosować ją do korzystania z protokołu HTTPS. Jeśli nie wiesz, jak to zrobić, skontaktuj się z webmasterem, który stworzył dla Ciebie tę stronę. 
 
 Pomocny w przeprowadzeniu tej operacji może być przykładowy skrypt, który zamieszczamy poniżej. Należy dodać do go pliku **.htaccess**. Skrypt ten nie zastąpi jednak wsparcia webmastera. Pamiętaj, aby zastąpić informację ogólną zawartą w skrypcie nazwą Twojej domeny i dostosować ją, jeśli okaże się to konieczne.
 
@@ -143,11 +147,11 @@ RewriteRule ^(.*)$ https://www.mypersonaldomain.ovh/$1 [R,L]
 
 ### Etap 4: sprawdzenie prawidłowego działania Twojej strony WWW
 
-Po aktywowaniu HTTPS na Twojej stronie WWW sprawdź, czy strona działa prawidłowo, i czy jej zawartość wyświetla się tak samo, jak przed operacją. W tym celu spróbuj uzyskać dostęp do strony, sprawdź, czy nie wyświetla się żaden komunikat lub ostrzeżenie i poświęć chwilę, aby sprawdzić layout poszczególnych części Twojej strony. 
+Po aktywowaniu "HTTPS" na Twojej stronie WWW sprawdź, czy strona działa prawidłowo, i czy jej zawartość wyświetla się tak samo, jak przed operacją. W tym celu spróbuj uzyskać dostęp do strony, sprawdź, czy nie wyświetla się żaden komunikat lub ostrzeżenie i poświęć chwilę, aby sprawdzić layout poszczególnych części Twojej strony. 
 
 Jeśli wykryjesz jakąś usterkę, zalecamy jak najszybsze jej usunięcie lub cofnięcie operacji poprzez dezaktywację HTTPS. W przypadku takiej potrzeby możesz również wykorzystać kopię zapasową Twojej strony WWW, którą wykonałeś podczas poprzedniego etapu.
 
-Jeśli Twoja strona wyświetla się poprawnie i nie pojawia się żadne ostrzeżenie po włączeniu HTTPS, oznacza to, że operację wykonałeś prawidłowo. Jeśli chcesz aktywować HTTPS na innej stronie WWW, przeprowadź ponownie wszystkie operacje opisane w niniejszej dokumentacji.
+Jeśli Twoja strona wyświetla się poprawnie i nie pojawia się żadne ostrzeżenie po włączeniu HTTPS, oznacza to, że operację wykonałeś prawidłowo. Jeśli chcesz aktywować "HTTPS" na innej stronie WWW, przeprowadź ponownie wszystkie operacje opisane w niniejszej dokumentacji.
 
 ## Sprawdź również
 

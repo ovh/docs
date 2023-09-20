@@ -1,14 +1,18 @@
 ---
-title: 'Attivare HTTPS su un sito Internet tramite il certificato SSL'
-excerpt: 'Come abilitare il protocollo HTTPS sul tuo sito grazie al certificato SSL'
-updated: 2022-10-04
+title: "Hosting Web: SSL: passare il proprio sito Web in "HTTPS" "
+excerpt: "Questa guida ti mostra come attivare il protocollo "HTTPS" sul tuo sito dopo aver attivato un certificato SSL"
+updated: 2023-09-20
 ---
+
+> [!primary]
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
+>
 
 ## Obiettivo
 
 Gli [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/){.external} includono di default un certificato SSL gratuito, grazie al quale i siti Internet possono stabilire una connessione sicura alla rete ed essere accessibili in HTTPS. Per attivare questo canale di comunicazione sicuro, sono necessari diversi step.
 
-**Questa guida ti mostra come abilitare il protocollo HTTPS sul tuo sito utilizzando un certificato SSL.**
+**Questa guida ti mostra come attivare il protocollo "HTTPS" sul tuo sito dopo aver attivato un certificato SSL.**
 
 ## Prerequisiti
 
@@ -24,7 +28,7 @@ Quando il sito visitato utilizza una connessione sicura, viene indicato nella ba
 
 ![httpswebsite](images/activate-https-website-ssl-step1.png){.thumbnail}
 
-**Attivare il protocollo HTTPS su un sito Web è un’operazione delicata**, che implica operazioni dirette sulla configurazione del sito (il suo codice). Una o più azioni errate potrebbero avere conseguenze negative, come una peggiore indicizzazione sui motori di ricerca o persino l’irraggiungibilità del sito. 
+**Attivare il protocollo "HTTPS" su un sito Web è un’operazione delicata**, che implica operazioni dirette sulla configurazione del sito (il suo codice). Una o più azioni errate potrebbero avere conseguenze negative, come una peggiore indicizzazione sui motori di ricerca o persino l’irraggiungibilità del sito. 
 
 Nella tabella qui sotto sono riportati gli step necessari per abilitare la connessione HTTPS.
 
@@ -32,7 +36,7 @@ Nella tabella qui sotto sono riportati gli step necessari per abilitare la conne
 |---|---|---|
 |1|Attivare il certificato SSL sull’hosting Web|È necessario attivare il certificato SSL o verificare che sia installato correttamente sull’hosting.|
 |2|Verificare l’ambiente tecnico|Prima di proseguire, è necessario verificare che l’installazione dell’HTTPS sul sito non abbia avuto impatto sul suo funzionamento.|
-|3|Attivare il protocollo HTTPS sul sito|A questo punto è necessario attivare il protocollo HTTPS in modo che il sito possa utilizzarlo. Questa operazione non è universale, ma dipende dal tipo di sito Internet implementato.|
+|3|Attivare il protocollo "HTTPS" sul sito|A questo punto è necessario attivare il protocollo "HTTPS" in modo che il sito possa utilizzarlo. Questa operazione non è universale, ma dipende dal tipo di sito Internet implementato.|
 |4|Verificare il corretto funzionamento del sito|L’ultimo step permette di accertarsi che, dopo l’attivazione dell’HTTPS, il sito venga visualizzato correttamente.|
 
 ### Step 1: attiva il certificato SSL sull’hosting
@@ -69,9 +73,9 @@ Le informazioni contenute in questa guida potrebbero esserti di aiuto per effett
 > Questa guida ti aiuta a eseguire le operazioni necessarie per attivare l’HTTPS sul tuo sito. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare uno specialista del settore o il fornitore del servizio. Per maggiori informazioni consulta la sezione “Per saperne di più” di questa guida. 
 >
 
-#### 1\. Evitare di mischiare contenuto HTTP e HTTPS
+#### 1\. Evitare di mischiare contenuto "HTTP" e HTTPS
 
-In generale, se sul tuo sito Internet è abilitata la connessione HTTPS, è necessario evitare di mischiare il contenuto HTTP e HTTPS in una stessa pagina o nell’intero sito: se il tuo sito utilizza questo protocollo, fai quindi in modo che l’intero contenuto si carichi in HTTPS.
+In generale, se sul tuo sito Internet è abilitata la connessione HTTPS, è necessario evitare di mischiare il contenuto "HTTP" e "HTTPS" in una stessa pagina o nell’intero sito: se il tuo sito utilizza questo protocollo, fai quindi in modo che l’intero contenuto si carichi in HTTPS.
 
 In caso contrario il rischio è che si presenti il problema del <i>mixed content</i>, ovvero pagine Web con contenuti misti dove elementi potenzialmente non sicuri sono inseriti in pagine considerate sicure. In base alla tipologia, i contenuti misti possono produrre due effetti:
 
@@ -82,7 +86,7 @@ In caso contrario il rischio è che si presenti il problema del <i>mixed content
 
 ![httpswebsite](images/activate-https-website-ssl-step4.png){.thumbnail}
 
-Ricordati che, anche nel caso in cui l’hosting disponga di un certificato SSL, i file ospitati possono essere caricati in HTTP o HTTPS in base al modo in cui questi elementi sono identificati nel codice del sito. Assicurati che il contenuto del tuo sito utilizzi il protocollo HTTPS, ad esempio prestando una particolare attenzione agli indirizzi presenti nel codice del sito. Se possibile:
+Ricordati che, anche nel caso in cui l’hosting disponga di un certificato SSL, i file ospitati possono essere caricati in "HTTP" o "HTTPS" in base al modo in cui questi elementi sono identificati nel codice del sito. Assicurati che il contenuto del tuo sito utilizzi il protocollo HTTPS, ad esempio prestando una particolare attenzione agli indirizzi presenti nel codice del sito. Se possibile:
 
 - prediligi gli indirizzi relativi, ad esempio `./img/header.png`
 - evita indirizzi assoluti che contengano il protocollo HTTP, ad esempio `http://mypersonaldomain.ovh/img/header.png`
@@ -91,7 +95,7 @@ Se necessario, adatta il codice del tuo sito in modo che segua queste raccomanda
 
 #### 2\. Evitare di generare contenuti duplicati
 
-Verifica il codice del sito per accertarti che le pagine Web non siano accessibili da più indirizzi, ad esempio utilizzando sia HTTP che HTTPS. In questo caso, infatti, lo stesso contenuto sarà disponibile su diversi indirizzi e verrà considerato come contenuto duplicato (o <i>duplicate content</i>) dai motori di ricerca, con conseguente impatto sull’indicizzazione del sito. Per risolvere questo problema, è necessario “forzare” l’utilizzo di HTTPS implementando una regola di riscrittura nel codice del sito.
+Verifica il codice del sito per accertarti che le pagine Web non siano accessibili da più indirizzi, ad esempio utilizzando sia "HTTP" che HTTPS. In questo caso, infatti, lo stesso contenuto sarà disponibile su diversi indirizzi e verrà considerato come contenuto duplicato (o <i>duplicate content</i>) dai motori di ricerca, con conseguente impatto sull’indicizzazione del sito. Per risolvere questo problema, è necessario “forzare” l’utilizzo di "HTTPS" implementando una regola di riscrittura nel codice del sito.
 
 Se utilizzi un CMS (ad esempio, WordPress), le regole di riscrittura sono gestite automaticamente e non dovrebbe quindi essere necessario apportare modifiche.
 
@@ -141,11 +145,11 @@ Sostituisci le informazioni generiche presenti nello script con il tuo dominio e
 
 Una volta attivato l’HTTPS, accertati che le pagine Web siano raggiungibili e che il loro contenuto venga mostrato correttamente: accedi al sito, verifica la presenza di eventuali messaggi e controlla il layout delle varie sezioni. 
 
-In caso di malfunzionamenti, reagisci il più rapidamente possibile ed eventualmente disattiva il protocollo HTTPS fino alla completa risoluzione del problema. Se i tuoi tentativi non sono andati a buon fine, ripristina il backup realizzato nello step precedente.
+In caso di malfunzionamenti, reagisci il più rapidamente possibile ed eventualmente disattiva il protocollo "HTTPS" fino alla completa risoluzione del problema. Se i tuoi tentativi non sono andati a buon fine, ripristina il backup realizzato nello step precedente.
 
 Se non si verificano problemi di visualizzazione e non appaiono messaggi di errore, hai effettuato l’operazione correttamente.
 
-Per attivare il protocollo HTTPS su un altro sito, ripeti la procedura descritta in questa guida.
+Per attivare il protocollo "HTTPS" su un altro sito, ripeti la procedura descritta in questa guida.
 
 ## Per saperne di più
 
