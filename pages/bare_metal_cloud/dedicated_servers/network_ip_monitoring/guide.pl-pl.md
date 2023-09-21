@@ -1,7 +1,7 @@
 ---
 title: Jakie są adresy IP monitoringu OVHcloud?
 excerpt: W tej sekcji odnajdziesz adresy IP, które mają zostać wpisane podczas uruchamiania firewalla. Dzięki temu monitoring OVHcloud będzie nadal działać na Twoim serwerze.
-updated: 2023-07-21
+updated: 2023-09-21
 ---
 
 > [!primary]
@@ -67,18 +67,6 @@ Kliknij przycisk `Skonfiguruj`{.action}. W oknie, które się pojawi, masz trzy 
 ![Monitoring](images/monitoring-server2.png){.thumbnail}
 
 Kliknij na `Zatwierdź`{.action}, aby zaktualizować konfigurację monitorowania.
-
-### Włącz monitoring konkretnych usług
-
-Poza standardowym monitoringiem możesz zezwolić OVHcloud na monitorowanie określonych usług, takich jak HTTP, SSH i inne protokoły.
-
-W tym celu w zakładce `Informacje ogólne`{.action}, a następnie w ramce **Stan usług** kliknij przycisk `...`{.action} obok przycisku "Monitorowane usługi". Kliknij na `Konfiguruj monitoring`{.action}.
-
-![monitoring](images/monitoring02.png){.thumbnail}
-
-Zostaniesz przekierowany na poniższy ekran. Kliknij `Monitoruj usługę`{.action}, a następnie podaj adres IP, protokół, numer portu, odpowiedź serwera i czas pomiędzy weryfikacjami usługi. Kliknij symbol zatwierdzenia (**V**), aby potwierdzić zmiany.
-
-![monitoring](images/monitoring3.png){.thumbnail}
 
 ## Sprawdź również
 
