@@ -60,7 +60,7 @@ Un tableau listant vos bases de données s'affiche sur la partie basse de l'écr
 
 ![phpMyAdmin Access](images/pma_access.png){.thumbnail}
 
-Notez **pour votre base de données saturée** son `Nom d'utilisateur` et son `Adresse du serveur` présents dans le tableau listant vos bases de données. 
+Notez, **pour votre base de données saturée**, son `Nom d'utilisateur` et son `Adresse du serveur` présents dans le tableau listant vos bases de données. 
 
 Toujours depuis l'onglet `Bases de données`{.action}, cliquez sur le bouton `...`{.action} à droite de la base de données qui est saturée puis sur `Accéder à phpMyAdmin`{.action}.
 
