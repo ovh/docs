@@ -1,14 +1,14 @@
 ---
-title: "Sharepoint: synchroniser vos données sur votre ordinateur"
-excerpt: Découvrez comment synchroniser les données de votre Sharepoint OVHcloud sur votre ordinateur
-updated: 2023-09-20
+title: "Sharepoint : synchroniser vos données sur votre ordinateur"
+excerpt: Découvrez comment sauvegarder les données de votre Sharepoint OVHcloud sur votre ordinateur
+updated: 2023-09-21
 ---
 
 ## Objectif
 
 Si vous souhaitez récupérer ou migrer les données de votre plateforme sharepoint OVHcloud, vous trouverez dans ce guide les étapes nécessaires pour extraire l'ensemble des données vers le stockage local de votre ordinateur.
 
-**Découvrez comment synchroniser les données de votre Sharepoint OVHcloud sur votre ordinateur.**
+**Découvrez comment sauvegarder les données de votre Sharepoint OVHcloud sur votre ordinateur.**
 
 ## Prérequis
 
@@ -111,11 +111,17 @@ Pour accéder à l'espace OneDrive des autres utilisateurs de votre plateforme e
 
 Pour cela, dans l'URL qui s'affiche, remplacez la « section » (correspondant à l'utilisateur) qui se trouve entre les parties `/personal/` et `/Documents/`.
 
-Par exemple, pour un utilisateur **intern@domain.name**, il faut remplacer les caractères « **@** » et « **.** » par des « **_** ». Vous obtenez ainsi « intern_domain_name ». Par conséquent, votre lien se présentera de la façon suivante :
+- **Exemple 1** : pour un utilisateur **user@domain.name**, il faut remplacer les caractères « **@** » et « **.** » par des « **_** ». Vous obtenez ainsi « user_domain_name ». Par conséquent, votre lien se présentera de la façon suivante :
 
-``` console
-https://myServiceAddress.spX.ovh.net/mysites/personal/intern_domain_name/Documents/Forms/All.aspx
-```
+![sharepoint](images/sharepoint-eol-11.png){.thumbnail}
+
+- **Exemple 2** : pour un utilisateur **john.smith@example.com**, vous obtenez « john_smith_example_com ». Votre lien se présentera de la façon suivante :
+
+![sharepoint](images/sharepoint-eol-12.png){.thumbnail}
+
+> [!warning]
+>
+> Les URLs ci-dessus sont uniquement données à titre d'exemple. Veillez à bien utiliser l'URL générée par votre plateforme Sharepoint.
 
 Vous pourrez synchroniser les comptes suivants en recommençant cette étape.
 
