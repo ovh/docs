@@ -1,5 +1,5 @@
 ---
-title: "Tutorial - Co robić, gdy moja baza danych jest nasycona?"
+title: "Hosting WWW: moja baza danych jest przeciążona, co robić?"
 excerpt: "Dowiedz się, jak działać, gdy baza danych jest przeciążona"
 updated: 2023-09-21
 ---

@@ -1,6 +1,6 @@
 ---
-title: "Tutorial - O que fazer quando a minha base de dados está saturada?"
-excerpt: "Descubra como agir quando a base de dados está sobrecarregada"
+title: "Alojamento web: a minha base de dados está saturada, o que fazer?"
+excerpt: "Saiba como agir quando a base de dados está sobrecarregada"
 updated: 2023-09-21
 ---
 
@@ -18,7 +18,7 @@ Em certos casos, a base de dados regista uma quantidade de informações tão el
 
 Este tutorial propõe-lhe as ações a empreender quando a sua base de dados partilhada OVHcloud está próxima da saturação ou já está em **overquota**.
 
-**Descubra como agir quando a base de dados está sobrecarregada.**
+**Saiba como agir quando a base de dados está sobrecarregada.**
 
 ## Requisitos
 
