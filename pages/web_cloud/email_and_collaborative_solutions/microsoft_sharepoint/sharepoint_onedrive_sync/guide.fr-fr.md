@@ -69,7 +69,7 @@ Vous êtes maintenant en mesure de synchroniser l'ensemble des espaces OneDrive 
 
 ### Étape 3 - Lancer la migration depuis votre interface Sharepoint <a name="migrationignition"></a>
 
-Accédez à l'interface en ligne de votre service SharePoint. Vous trouverez l'URL d'accès depuis votre espace client dans l'onglet `informations générales`{.action}, sous la mention `URL consultation`.
+Accédez à l'interface en ligne de votre service SharePoint. Vous trouverez l'URL d'accès depuis votre espace client OVHcloud dans l'onglet `Informations générales`{.action}, sous la mention `URL consultation`.
 
 ![sharepoint](images/sharepoint-eol-03.png){.thumbnail}
 
@@ -107,7 +107,7 @@ Une fois cette synchronisation terminée sur votre ordinateur, seules les donné
 
 ### Étape 4 - Migrer le contenu des autres compte Sharepoint <a name="migrationother"></a>
 
-Pour accéder à l'espace OneDrive des autres utilisateurs de votre plateforme et synchroniser les données associées, vous devez modifier l'URL d'accès lorsque vous êtes connecté au OneDrive du compte administrateur, depuis votre navigateur.
+Pour accéder à l'espace OneDrive des autres utilisateurs de votre plateforme et synchroniser les données associées, vous devez modifier l'URL d'accès (depuis votre navigateur) lorsque vous êtes connecté au OneDrive du compte administrateur.
 
 Pour cela, dans l'URL qui s'affiche, remplacez la « section » (correspondant à l'utilisateur) qui se trouve entre les parties `/personal/` et `/Documents/`.
 
@@ -129,7 +129,7 @@ Vous pourrez synchroniser les comptes suivants en recommençant cette étape.
 
 [Activer et gérer votre SharePoint OVHcloud](/pages/web_cloud/email_and_collaborative_solutions/microsoft_sharepoint/sharepoint_manage)
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

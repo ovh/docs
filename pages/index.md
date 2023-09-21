@@ -1384,6 +1384,7 @@
         + [Microsoft Sharepoint](web-cloud-email-collaborative-solutions-microsoft-sharepoint)
             + [Enabling and managing your OVHcloud SharePoint](web_cloud/email_and_collaborative_solutions/microsoft_sharepoint/sharepoint_manage)
             + [Migrer votre Sharepoint via OVHcloud Sharepoint Migrator](web_cloud/email_and_collaborative_solutions/microsoft_sharepoint/sharepoint_migrator)
+            + [Sharepoint: synchronize your data on your computer](web_cloud/email_and_collaborative_solutions/microsoft_sharepoint/sharepoint_onedrive_sync)
     + [Internet](products/web-cloud-internet)
         + [Internet access](products/web-cloud-internet-internet-access)
             + [Getting started](web-cloud-internet-internet-access-getting-started)

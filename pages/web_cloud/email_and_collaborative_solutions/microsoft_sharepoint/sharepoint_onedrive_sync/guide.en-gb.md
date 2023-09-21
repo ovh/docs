@@ -13,8 +13,8 @@ If you would like to retrieve or migrate the data from your OVHcloud SharePoint 
 ## Requirements
 
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
-- An [OVHcloud Sharepoint solution](https://www.ovhcloud.com/fr/collaborative-tools/sharepoint/)
-- You must have a computer that uses the Microsoft Windows operating system to perform the migration steps.
+- An [OVHcloud Sharepoint solution](https://www.ovhcloud.com/en-gb/collaborative-tools/sharepoint/)
+- A computer that uses the Microsoft Windows operating system to perform the migration steps.
 
 ## Instructions
 
@@ -51,7 +51,7 @@ To install it, follow the instructions below:
 
 To access all of the OneDrive spaces within your Sharepoint service, you will need to remove all users' admin rights via the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
 
-Go to the `Web Cloud`{.action} section of your Control Panel. Click `Microsoft`{.action}, click `Sharepoint`{.action}, and select the SharePoint platform.
+Go to the `Web Cloud`{.action} section of your Control Panel. Click `Microsoft`{.action}, click `Sharepoint`{.action} and select the SharePoint platform.
 
 From the `Users`{.action} tab, access your platform's Sharepoint account management. For each account, click the `...`{.action} button on the right, then `Remove administrator rights`{.action}.
 
@@ -59,7 +59,7 @@ From the `Users`{.action} tab, access your platform's Sharepoint account managem
 
 Once you have removed admin rights for all Sharepoint accounts, you will need to designate a single account, which will then have access to all of the platform's OneDrive spaces.
 
-Enable administrator access to the account you have designated.
+Grant administrator access to the account you have designated.
 
 In the `Users`{.action} tab of your Sharepoint platform, click on the `...`{.action} button to the right of the account you have chosen, then `Enable administrator rights`{.action} .
 
@@ -69,7 +69,7 @@ You're now able to sync all of the OneDrive spaces on your Sharepoint platform t
 
 ### Step 3 - Launch the migration from your Sharepoint interface <a name="migrationignition"></a>
 
-Access the online interface for your SharePoint service. You will find the access URL from your customer space in the `General information`{.action} tab, under `Checking URL`.
+Access the online interface for your SharePoint service. You will find the access URL from the OVHcloud Control Panel in the `General information`{.action} tab, under `Checking URL`.
 
 ![sharepoint](images/sharepoint-eol-03.png){.thumbnail}
 
@@ -81,11 +81,11 @@ To access the OneDrive section, click the icon on the top left of the Sharepoint
 
 ![sharepoint](images/sharepoint-eol-05.png){.thumbnail}
 
-To sync the contents of OneDrive to your computer, click the `Sync`{.action} button, and then click `Sync Now`{.action}.
+To sync the contents of OneDrive to your computer, click the `Sync`{.action} button then click `Sync Now`{.action}.
 
 ![sharepoint](images/sharepoint-eol-06.png){.thumbnail}
 
-A window will pop up allowing the website to open the **grvopen** link. To authorize it, tick "Always allow **https://myServiceAddress.spX.ovh.net** to open **grvopen** links" then click `Open link`{.action}.
+You will be prompted to allow the website to open the **grvopen** link. Tick "Always allow **https://myServiceAddress.spX.ovh.net** to open **grvopen** links" then click `Open link`{.action}.
 
 ![sharepoint](images/sharepoint-eol-07.png){.thumbnail}
 
@@ -107,15 +107,15 @@ Once this synchronization is complete on your computer, only the data from the S
 
 ### Step 4 - Migrate the content of other Sharepoint accounts <a name="migrationother"></a>
 
-To access and sync the OneDrive for other users on your platform, you'll need to change the access URL when you're signed in to the OneDrive for the admin account from your browser.
+To access and sync the OneDrive for other users on your platform, you'll need to change the access URL (from your browser) when you're signed in to the OneDrive for your admin account.
 
 To do this, in the URL that appears, replace the “section” (corresponding to the user) between the `/personal/` and `/Documents/` sections.
 
-- **Example 1**: For a user **user@domain.name**, replace the characters **@** and **.** with “**_**”. This will return user_domain_name. Therefore, your link will look like this:
+- **Example 1**: For a **user@domain.name** user, replace the characters **@** and **.** with “**_**”, so to obtain "user_domain_name". Therefore, your link will look like this:
 
 ![sharepoint](images/sharepoint-eol-11.png){.thumbnail}
 
-- **Example 2**: For a user **john.smith@example.com**, you get "john_smith_example_com". Your link will look like this:
+- **Example 2**: For a **john.smith@example.com** user, you obtain "john_smith_example_com". Your link will look like this:
 
 ![sharepoint](images/sharepoint-eol-12.png){.thumbnail}
 
@@ -129,7 +129,7 @@ You can synchronize the following accounts by repeating this step.
 
 [Enabling and managing your OVHcloud SharePoint](/pages/web_cloud/email_and_collaborative_solutions/microsoft_sharepoint/sharepoint_manage)
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/).
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-gb/support-levels/).
 
 Join our community of users on <https://community.ovh.com/en/>
