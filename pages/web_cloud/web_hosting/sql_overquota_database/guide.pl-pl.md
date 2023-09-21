@@ -56,17 +56,21 @@ Pierwszy etap polega na zidentyfikowaniu obszernej(-ych) tabeli(-ych) w Twojej b
 
 #### 1.1 - Logowanie do bazy danych przez phpMyAdmin
 
-Pobierz hasło dostępowe do bazy danych bezpośrednio w pliku konfiguracyjnym Twojej strony WWW. Wykonaj tę operację za pomocą **etapu 1** w naszym przewodniku dotyczącym [zmiany hasła do bazy danych] (/pages/web_cloud/web_hosting/sql_change_password).
+Uzyskaj informacje dotyczące dostępu do bazy danych bezpośrednio w pliku konfiguracyjnym Twojej strony WWW. Operację tę przeprowadź, korzystając z **etapu 1** naszego przewodnika dotyczącego [zmiany hasła bazy danych](/pages/web_cloud/web_hosting/sql_change_password).
 
-Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i wybierz `Web Cloud`{.action} na pasku nawigacyjnym na górze ekranu. Kliknij przycisk `Hosting`{.action}, następnie wybierz hosting powiązany z Twoją bazą danych na hostingu OVHcloud. Teraz przejdź do zakładki `Bazy danych`{.action}.
+Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i wybierz pozycję `Web Cloud`{.action} na górnym pasku nawigacji. Kliknij `Hosting`{.action}, następnie wybierz hosting www powiązany z Twoją bazą danych na hostingu OVHcloud. Teraz przejdź do zakładki `Bazy danych`{.action}.
 
-![phpMyAdmin Access](images/pma_access.png){.thumbnail}
+Tabela z listą baz danych wyświetla się u dołu ekranu.
 
-Zawsze w zakładce `Bazy danych`{.action}, kliknij przycisk `...`{.action} po prawej stronie bazy danych, która jest nasycona, a następnie `Dostęp do phpMyAdmin`{.action}.
+![phpMyAdmin Access](obrazy/pma_access.png){.thumbnail}
+
+Zwróć uwagę, **dla bazy danych, która jest wysycona**, jego `Nazwa użytkownika` i `Adres serwera`, które są zawarte w tabeli zawierającej listę Twoich baz danych. 
+
+W zakładce `Bazy danych`{.action} kliknij przycisk `...`{.action} po prawej stronie bazy danych, która jest wysycona, a następnie kliknij `Dostęp do phpMyAdmin`{.action}.
 
 ![phpMyAdmin Go Login](images/pma_interface.png){.thumbnail}
 
-Wpisz hasło dostępowe do bazy danych jako uzupełnienie wypełnionych wcześniej informacji, a następnie kliknij `Uruchom`{.action}.
+Wprowadź dane dostępowe do Twojej bazy danych, a następnie kliknij `Login`{.action}.
 
 #### 1.2 - Wyszukaj największe tabele
 

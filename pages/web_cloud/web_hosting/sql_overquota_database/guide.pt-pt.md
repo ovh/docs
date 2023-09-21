@@ -56,7 +56,7 @@ A primeira etapa consiste em identificar a ou as tabelas volumosas presentes na 
 
 #### 1.1 - Aceder à base de dados via phpMyAdmin
 
-Recupere as informações de acesso à sua base de dados diretamente no ficheiro de configuração do seu website. Realize esta ação através da**etapa 1** do nosso guia sobre [a alteração da palavra-passe de uma base de dados](/pages/web_cloud/web_hosting/sql_change_password).
+Recupere as informações de acesso à sua base de dados diretamente no ficheiro de configuração do seu website. Realize esta ação através da **etapa 1** do nosso guia sobre [a alteração da palavra-passe de uma base de dados](/pages/web_cloud/web_hosting/sql_change_password).
 
 Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e selecione `Web Cloud`{.action} na barra de navegação no topo do ecrã. Clique em `Alojamentos`{.action} e escolha o alojamento web associado à sua base de dados partilhada da OVHcloud. Por fim, clique no separador `Bases de dados`{.action}.
 
