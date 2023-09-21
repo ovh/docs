@@ -1,7 +1,7 @@
 ---
 title: "NSX-T: récupérer les logs via API"
 excerpt: "Découvrez comment obtenir les logs des noeuds NSX grâce à l'API dédiée"
-updated: 2023-09-19
+updated: 2023-09-21
 ---
 
 ## Objectif
@@ -21,8 +21,6 @@ De plus, les prérequis suivants sont nécessaires :
 - Avoir déployé les hôtes NSX.
 - Avoir un utilisateur ayant les droits d'accès au NSX.
 - Vérifier que le noeud soit activé.
-
-## En pratique
 
 ### Activation des logs
 
@@ -63,7 +61,6 @@ curl -k -u user@pcc-123-123-123-123.ovh.com:<password> https://nsxt.pcc-123-123-
 
       "external_id" : "b35873da-ca7f-48ff-961e-5d6fa8bc5bf7"
 ```
-
 
 - Une fois l'ID de votre noeud Edge obtenu, effectuez un appel API pour obtenir les logs de votre règle :
 
