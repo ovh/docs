@@ -1,5 +1,5 @@
 ---
-title: "Alojamento web: SSL: passar o seu website em "HTTPS" "
+title: "Alojamento web : passar o seu website em "HTTPS" "
 excerpt: "Saiba como passar o seu website em "HTTPS" após ter ativado um certificado SSL"
 updated: 2023-09-20
 ---
