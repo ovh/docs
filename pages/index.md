@@ -910,6 +910,8 @@
             + [AI Partners - Guides](public-cloud-ai-and-machine-learning-ai-ecosystem-guides)
                 + [AI Partners Ecosystem - Lettria - Models features, capabilities and billing](public_cloud/ai_machine_learning/ecosystem_01_lettria_billing_features_capabilities)
                 + [AI Partners Ecosystem - Lettria - Models concept](public_cloud/ai_machine_learning/ecosystem_02_lettria_models)
+                + [AI Partners Ecosystem - Voxist - Models features, capabilities and billing](public_cloud/ai_machine_learning/ecosystem_03_voxist_billing_features_capabilities)
+                + [AI Partners Ecosystem - Voxist - Models concept](public_cloud/ai_machine_learning/ecosystem_04_voxist_models)
     + [Data Analytics](products/public-cloud-data-analytics)
         + [Data Integration](products/public-cloud-data-analytics-data-integration)
             + [Guides](public-cloud-data-analytics-data-integration-guides)
