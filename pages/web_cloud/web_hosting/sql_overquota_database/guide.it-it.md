@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Cosa fare quando il tuo database è saturo?"
 excerpt: "Come agire in caso di saturazione del database"
-updated: 2023-02-16
+updated: 2023-09-21
 ---
 
 > [!primary]

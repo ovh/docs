@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Co robić, gdy moja baza danych jest nasycona?"
 excerpt: "Dowiedz się, jak działać, gdy baza danych jest przeciążona"
-updated: 2023-02-16
+updated: 2023-09-21
 ---
 
 > [!primary]

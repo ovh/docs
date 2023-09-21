@@ -1,7 +1,7 @@
 ---
 title: "Web hosting: mi base de datos está saturada, ¿qué hago?"
 excerpt: "Descubra cómo actuar cuando la base de datos está saturada"
-updated: 2023-02-16
+updated: 2023-09-21
 ---
 
 > [!primary]

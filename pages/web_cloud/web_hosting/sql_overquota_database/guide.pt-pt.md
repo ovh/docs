@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - O que fazer quando a minha base de dados está saturada?"
 excerpt: "Descubra como agir quando a base de dados está sobrecarregada"
-updated: 2023-02-16
+updated: 2023-09-21
 ---
 
 > [!primary]
