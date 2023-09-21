@@ -194,7 +194,7 @@ Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomana
 
 > [!primary]
 >
-> If the `Modify configuration`{.action} button is grayed out, it may be that the **global PHP version** is being verified. If this is the case, a blue round symbol will appear next to the version, indicating that a check is in progress. Wait a few minutes for the `Modify configuration`{.action} button to become accessible again.
+> If the `Modify configuration`{.action} button is greyed out, it may be that the **global PHP version** is being verified. If this is the case, a blue round symbol will appear next to the version, indicating that a check is in progress. Wait a few minutes for the `Modify configuration`{.action} button to become accessible again.
 >
 > If the `Global PHP version`{.action} option does not appear in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), check that the *.ovhconfig* file exists in the FTP root of your OVHcloud web hosting plan.
 >
