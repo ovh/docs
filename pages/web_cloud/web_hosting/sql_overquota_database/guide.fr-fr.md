@@ -1,7 +1,7 @@
 ---
-title: "Tutoriel - Que faire lorsque ma base de données est saturée ?"
+title: "Hébergement web: ma base de données est saturée, que faire ?"
 excerpt: "Découvrez comment agir lorsque votre base de données est saturée"
-updated: 2023-02-16
+updated: 2023-09-21
 ---
 
 ## Objectif
@@ -60,9 +60,14 @@ Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?actio
 
 Toujours depuis l'onglet `Bases de données`{.action}, cliquez sur le bouton `...`{.action} à droite de la base de données qui est saturée puis sur `Accéder à phpMyAdmin`{.action}.
 
+>[!primary]
+>
+> Au cas où les informations de connexion (`Serveur`{.action} et `Utilisateur`{.action}) ne seraient pas pré-remplies sur l'interface de connexion à phpMyAdmin, récupérez-les dans le tableau ci-dessus **avant** de cliquer sur le bouton `Accéder à phpMyAdmin`{.action}.
+>
+
 ![phpMyAdmin Go Login](images/pma_interface.png){.thumbnail}
 
-Renseignez le mot de passe d'accès à votre base de données en complément des informations pré-remplies puis cliquez sur `Exécuter`{.action}.
+Renseignez le mot de passe d'accès à votre base de données en complément des informations pré-remplies puis cliquez sur `Connexion`{.action}.
 
 #### 1.2 - Rechercher les tables les plus volumineuses
 
