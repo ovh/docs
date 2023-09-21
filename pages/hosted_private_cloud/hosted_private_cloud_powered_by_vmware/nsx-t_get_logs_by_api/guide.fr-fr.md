@@ -1,5 +1,5 @@
 ---
-title: "NSX-T: récupérer les logs via API"
+title: "NSX-T : récupérer les logs via API"
 excerpt: "Découvrez comment obtenir les logs des noeuds NSX grâce à l'API dédiée"
 updated: 2023-09-21
 ---
