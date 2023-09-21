@@ -185,7 +185,7 @@ Segui [queste istruzioni](#modify) per modificare l’offerta.
 
 ## Per saperne di più <a name="go-further"></a>
 
-[consultare le statistiche e i log di un sito ospitato su un servizio condiviso](/pages/web_cloud/web_hosting/logs_and_statistics)
+[Consultare le statistiche e i log di un sito ospitato su un servizio condiviso](/pages/web_cloud/web_hosting/logs_and_statistics)
 
 [Ottimizzazione delle prestazioni del sito](/pages/web_cloud/web_hosting/optimise_your_website_performance)
 
@@ -193,4 +193,4 @@ Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [p
 
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
 
-Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>..
+Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.

@@ -32,10 +32,10 @@ Su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&f
 >
 > **Antes** de realizar cualquier cambio en su suscripción actual, compruebe si alguna de estas preguntas le afecta:
 >
-> - [Cómo cambiar mi plan de hosting gratuito de 100M a un plan de hosting?](#100m)
-> - [Cómo disfrutar de un aumento de rendimiento temporal en mi plan de hosting Performance?](#boost)
-> - [Perderé el tiempo restante de mi plan de hosting actual al cambiar de plan?](#billing)
-> - [Es posible cambiar mi plan actual a un plan inferior?](#checks)
+> - [¿Cómo cambiar mi plan de hosting gratuito de 100M a un plan de hosting?](#100m)
+> - [¿Cómo disfrutar de un aumento de rendimiento temporal en mi plan de hosting Performance?](#boost)
+> - [¿Perderé el tiempo restante de mi plan de hosting actual al cambiar de plan?](#billing)
+> - [¿Es posible cambiar mi plan actual a un plan inferior?](#checks)
 >
 
 ### Cambiar su plan de hosting <a name="modify"></a>

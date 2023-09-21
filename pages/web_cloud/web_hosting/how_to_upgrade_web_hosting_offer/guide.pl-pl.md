@@ -76,9 +76,9 @@ Po usunięciu danych z Twoich baz, ponownie oblicz wykorzystany limit. W tym cel
 #### 2 - Web Cloud Databases
 
 Jeśli korzystasz z oferty [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) zawartej w Twoim hostingu [Performance](https://www.ovhcloud.com/pl/web-hosting/performance-offer/) i chcesz przenieść swój hosting na ofertę [Pro](https://www.ovhcloud.com/pl/web-hosting/professional-offer/), musisz najpierw oddzielić ofertę Web Cloud Databases od hostingu.
-W tym celu zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i przejdź do sekcji `Web Cloud`{.action}. W lewej kolumnie kliknij opcję `Hosting`{.action}, a następnie wybierz odpowiedni hosting. Na stronie, która się wyświetli pozostań w zakładce `Informacje ogólne`{.action}. W kolumnie środkowej `Konfiguracja` kliknij przycisk`...`{.action} po prawej stronie pozycji `Web Cloud Databases`{.action}, a następnie `Odłącz`{.action}.
+W tym celu zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i przejdź do sekcji `Web Cloud`{.action}. W lewej kolumnie kliknij opcję `Hosting`{.action}, a następnie wybierz odpowiedni hosting. Na stronie, która się wyświetli pozostań w zakładce `Informacje ogólne`{.action}. W kolumnie środkowej `Konfiguracja` kliknij przycisk `...`{.action} po prawej stronie pozycji `Web Cloud Databases`{.action}, a następnie `Odłącz`{.action}.
 
-![Web Cloud Databases](obrazy/clouddb.png){.thumbnail}
+![Web Cloud Databases](images/clouddb.png){.thumbnail}
 
 Dzięki temu będziesz mógł zamówić ofertę Web Cloud Databases niezależną od abonamentu *Performance*. Dane z Twojego serwera zostaną zachowane.
 
@@ -93,7 +93,7 @@ Upewnij się, czy nowa oferta zawiera wystarczającą [przestrzeń dyskową FTP]
 
 Aby sprawdzić rozmiar przestrzeni dyskowej FTP użytej na Twoim hostingu, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i przejdź do sekcji `Web Cloud`{.action}. W lewej kolumnie kliknij `Hosting`{.action}, a następnie wybierz odpowiedni hosting. Na stronie `Informacje ogólne`{.action}, która się wyświetla, znajdź limit w sekcji `Przestrzeń dyskowa`.
 
-![ftp](obrazy/ftp.png){.thumbnail}
+![ftp](images/ftp.png){.thumbnail}
 
 #### 4 - Adresy e-mail
 
@@ -105,7 +105,7 @@ Jeśli chcesz zachować tę samą liczbę kont e-mail i **przed zmianą hostingu
 
 >[!primary]
 >
-> Jeśli przycisk `...`{.action} jest niedostępny w Twojej ofercie e-mail, możesz odłączyć ofertę e-mail od hostingu. W tym celu zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) w części `Web Cloud`{.action}. W lewej kolumnie kliknij `Hosting`{.action}, a następnie wybierz odpowiedni hosting. Na stronie `Informacje ogólne`{.action}, która się wyświetla i w ramce `Konfiguracja`{.action}, kliknij przycisk`...`{.action} z prawej strony wzmianki `Adresy e-mail`{.action}, a następnie `Odłącz opcję e-mail`{.action}.
+> Jeśli przycisk `...`{.action} jest niedostępny w Twojej ofercie e-mail, możesz odłączyć ofertę e-mail od hostingu. W tym celu zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) w części `Web Cloud`{.action}. W lewej kolumnie kliknij `Hosting`{.action}, a następnie wybierz odpowiedni hosting. Na stronie `Informacje ogólne`{.action}, która się wyświetla i w ramce `Konfiguracja`{.action}, kliknij przycisk `...`{.action} z prawej strony wzmianki `Adresy e-mail`{.action}, a następnie `Odłącz opcję e-mail`{.action}.
 >
 
 #### 5 - Listy mailingowe
@@ -131,7 +131,7 @@ W dolnej części strony, która się wyświetli, znajduje się tabela zawieraj�
 
 Aby usunąć użytkowników FTP, kliknij przycisk `...`{.action} po prawej stronie użytkownika FTP, którego chcesz usunąć, a następnie kliknij `Usuń`{.action}.
 
-![user FTP deletion](images/userFTP.png){.thumbnail} 
+![user FTP deletion](images/userFTP.png){.thumbnail}
 
 ### Zakończenie
 
@@ -185,7 +185,7 @@ Postępuj zgodnie z [tymi instrukcjami](#modify), aby zmienić ofertę.
 
 ## Sprawdź również <a name="go-further"></a>
 
-[sprawdzanie statystyk i logów strony hostowanej w ramach oferty hostingowej](/pages/web_cloud/web_hosting/logs_and_statistics)
+[Sprawdzanie statystyk i logów strony hostowanej w ramach oferty hostingowej](/pages/web_cloud/web_hosting/logs_and_statistics)
 
 [Optymalizacja wydajności strony](/pages/web_cloud/web_hosting/optimise_your_website_performance)
 
@@ -193,4 +193,4 @@ W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>. 
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

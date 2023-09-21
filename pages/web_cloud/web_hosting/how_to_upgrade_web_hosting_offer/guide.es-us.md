@@ -32,8 +32,8 @@ Su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&fr
 >
 > **Antes** de realizar cualquier cambio en su suscripción actual, compruebe si alguna de estas preguntas le afecta:
 >
-> - [Cómo disfrutar de un aumento de rendimiento temporal en mi plan de hosting Performance?](#boost)
-> - [Perderé el tiempo restante de mi plan de hosting actual al cambiar de plan?](#billing)
+> - [¿Cómo disfrutar de un aumento de rendimiento temporal en mi plan de hosting Performance?](#boost)
+> - [¿Perderé el tiempo restante de mi plan de hosting actual al cambiar de plan?](#billing)
 >
 
 ### Cambiar su plan de hosting <a name="modify"></a>

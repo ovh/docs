@@ -66,7 +66,7 @@ Caso contrário, elimine as bases de dados não utilizadas e, se necessário, re
 
 Após a eliminação dos dados das suas bases de dados, recalcule o limite utilizado. Para isso, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e aceda à secção `Web Cloud`{.action}. Na coluna da esquerda, clique em `Alojamento web`{.action} e selecione o alojamento web em causa. Na página que se abrir, aceda ao separador `Bases de dados`{.action} e clique no botão `...`{.action} à direita da base de dados em causa e, a seguir, em `Recalcular o limite`{.action}.
 
-![quota](imagens/quota.png){.thumbnail}
+![quota](images/quota.png){.thumbnail}
 
 > [!primary]
 >
