@@ -103,7 +103,7 @@ Si vous constatez une erreur, prenez-en connaissance et agissez de la manière l
 
 #### Ouvrir l’application fdisk
 
-Si la vérification du système de fichiers se finalise correctement, ouvrez l’application `fdisk`. Dans les paramètres, vous devez entrer le nom du disque et non celui de la partition. Par exemple, si votre partition est `sdb1` au lieu de `vdb1`, le nom du disque sera « /dev/sdb ».
+Si la vérification du système de fichiers se finalise correctement, ouvrez l’application `fdisk`. Dans les paramètres, vous devez entrer le nom du disque et non celui de la partition. Par exemple, si votre partition est `sdb1`, le nom du disque sera `/dev/sdb`.
 
 ```sh
 fdisk -u /dev/sdb

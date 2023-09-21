@@ -1,7 +1,7 @@
 ---
 title: 'Modificare la password amministratore su un server dedicato Windows'
 excerpt: 'Come impostare una nuova password amministratore su un server Windows'
-updated: 2021-01-12
+updated: 2023-09-18
 ---
 
 > [!primary]
@@ -25,20 +25,7 @@ Negli step successivi descriviamo il processo di modifica della password admin l
 
 ### Step 1: riavvia il server in modalità Rescue
 
-Il sistema deve essere avviato in modalità Rescue prima di poter modificare la password admin. Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), accedi alla sezione `Bare Metal Cloud`{.action} e seleziona il tuo server dal menu dei `Server dedicati`{.action}.
-
-Il netboot deve essere trasferito verso "rescue64-pro (Customer rescue system (Linux)". Cerca "Boot" nel riquadro **Informazioni generali** e clicca su `...`{.action} poi su `Modifica`{.action}.
-<br>Nella nuova finestra, seleziona **Avviare in Rescue mode** e seleziona "Rescue64-pro" nel menu. Se le credenziali di accesso devono essere inviate a un indirizzo diverso da quello principale del tuo account, seleziona un indirizzo email nell'ultimo campo. 
-
-Clicca su `Continua`{.action} e poi su `Conferma`{.action}.
-
-![rescuemode](images/adminpw_win_001.png){.thumbnail}
-
-Una volta terminata la modifica, clicca sui tre puntini `...`{.action} in corrispondenza di "Status" nella sezione intitolata **Stato dei servizi**.
-<br>Clicca su `Riavvia`{.action} e il server riavvia in modalità Rescue. Questa operazione potrebbe richiedere alcuni minuti.
-<br>Per verificare lo stato di avanzamento, clicca sulla scheda `Operazioni`{.action}. Riceverai un'email con gli identificativi (inclusa la password di connessione) dell'utente "root" della modalità Rescue.
-
-![rescuereboot](images/adminpw_win_02.png){.thumbnail}
+Il sistema deve essere avviato in modalità Rescue prima di poter modificare la password admin.
 
 Per maggiori informazioni sulla modalità Rescue, consulta [questa guida](/pages/bare_metal_cloud/dedicated_servers/rescue_mode).
 
@@ -47,8 +34,11 @@ Per maggiori informazioni sulla modalità Rescue, consulta [questa guida](/pages
 Accedi al tuo server via SSH. Se necessario, consulta la guida [Introduzione a SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction)
 <br>Trattandosi di un server Windows, le partizioni saranno intitolate "Microsoft LDM data".
 
+```bash
+fdisk -l
 ```
-# fdisk -l
+
+```text
 Disk /dev/sda: 1.8 TiB, 2000398934016 bytes, 3907029168 sectors
 Units: sectors of 1 * 512 = 512 bytes
 Sector size (logical/physical): 512 bytes / 512 bytes
@@ -68,14 +58,17 @@ In questo esempio, "sda4" è la partizione di sistema, determinata dalla sua dim
 
 Salva questa partizione:
 
-```
-# mount /dev/sda4 /mnt
+```bash
+mount /dev/sda4 /mnt
 ```
 
 Verifica il punto di mount:
 
+```bash
+lsblk
 ```
-# lsblk
+
+```text
 NAME   MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
 sdb      8:16   0  1.8T  0 disk
 ├─sdb4   8:20   0  1.8T  0 part
@@ -93,7 +86,7 @@ sda      8:0    0  1.8T  0 disk
 
 Nell'esempio di cui sopra, l'operazione è andata a buon fine. Se il mount non è andato a buon fine, riceverai probabilmente un messaggio di errore simile a questo: 
 
-```
+```text
 The disk contains an unclean file system (0, 0).
 Metadata kept in Windows cache, refused to mount.
 Failed to mount '/dev/sda4': Operation not permitted
@@ -104,20 +97,27 @@ read-only with the 'ro' mount option.
 
 In questo caso, esegui il comando seguente e riprova a montare la partizione.
 
-```
-# ntfsfix /dev/sda4
-# mount /dev/sda4 /mnt
+```bash
+ntfsfix /dev/sda4
+mount /dev/sda4 /mnt
 ```
 
 ### Step 3: eliminare la password corrente
 
 Questo step consiste nella manipolazione del file *SAM* con un tool che permette di cancellare la password dell'utente admin. Accedi alla cartella corretta e individua gli utenti Windows:
 
+```bash
+cd /mnt/Windows/System32/config
+/mnt/Windows/System32/config#
 ```
-# cd /mnt/Windows/System32/config
-/mnt/Windows/System32/config# chntpw -l SAM
 
-chntpw version 1.00 140201, (c) Petter N Hagen
+
+```bash
+chntpw -l SAM
+```
+
+```text
+chntpw version 140201, (c) Petter N Hagen
 Hive <SAM> name (from header): <\SystemRoot\System32\Config\SAM>
 ROOT KEY at offset: 0x001020 * Subkey indexing type is: 686c <lh>
 File size 65536 [10000] bytes, containing 8 pages (+ 1 headerpage)
@@ -131,13 +131,16 @@ Used for data: 359/39024 blocks/bytes, unused: 33/18064 blocks/bytes.
 | 01f8 | WDAGUtilityAccount             |        | dis/lock |
 ```
 
-Se il comando non funziona, installa prima lo strumento: `apt get install chntpw`.
+Se il comando non funziona, installa prima lo strumento: `apt install chntpw`.
 
 Elimina la password dell'utente admin utilizzando il comando seguente. (Scegli "Administrator" se "admin" non esiste)
 
+```bash
+chntpw -u admin SAM
 ```
-# chntpw -u admin SAM
-chntpw version 1.00 140201, (c) Petter N Hagen
+
+```text
+chntpw version 140201, (c) Petter N Hagen
 Hive <SAM> name (from header): <\SystemRoot\System32\Config\SAM>
 ROOT KEY at offset: 0x001020 * Subkey indexing type is: 686c <lh>
 File size 65536 [10000] bytes, containing 8 pages (+ 1 headerpage)
@@ -174,9 +177,9 @@ Total  login count: 5
 Select: [q] >
 ```
 
-Premi "1" e premi Invio (↩). (Utilizza prima l'opzione 2 se in corrispondenza di "Disabled" compare una "X").
+Premi "1" e premi Invio. (Utilizza prima l'opzione 2 se in corrispondenza di "Disabled" compare una "X").
 
-```
+```text
 Select: [q] > 1
 Password cleared!
 ================= USER EDIT ====================
@@ -214,7 +217,7 @@ Select: [q] >
 
 Premi "q" e premi Invio per lasciare il tool. Digita "y" quando sei invitato e premi Invio.
 
-```
+```text
 Select: [q] > q
  
 Hives that have changed:
@@ -230,11 +233,19 @@ Sostituisci il netboot con **Avviare da hard disk** nello [Spazio Cliente OVHclo
 
 Di ritorno da riga di comando, smonta la partizione e riavvia il server con questi comandi:
 
+```bash
+cd
 ```
-# cd
-# umount /mnt
-# reboot
 
+```bash
+umount /mnt
+```
+
+```bash
+reboot
+```
+
+```text
 Broadcast message from root@rescue.ovh.net on pts/0 (Wed 2020-05-27 11:28:53 CEST):
 
 The system is going down for reboot NOW!
@@ -267,8 +278,8 @@ Una volta stabilita la sessione KVM, si aprirà una finestra di riga di comando 
 
 Definisci la password dell'utente attuale ("Administrator"):
 
-```
-net user Administrator*
+```powershell
+net user Administrator *
 ```
 
 ![administratorpw](images/adminpw_win_07.png){.thumbnail}
@@ -282,21 +293,7 @@ Si raccomanda di utilizzare la tastiera virtuale durante l'inserimento della pas
 
 #### Step 1: riavvia il server in modalità Rescue
 
-Il sistema deve essere avviato in modalità Rescue prima di poter modificare la password admin. Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), accedi alla sezione `Bare Metal Cloud`{.action} e seleziona il tuo server dal menu dei `Server dedicati`{.action}.
-
-Il netboot deve essere spostato verso "WinRescue (Rescue System for Windows)". Cerca "Boot" nel riquadro **Informazioni generali** e clicca su `...`{.action} poi su `Modifica`{.action}.
-<br>Nella nuova finestra, seleziona **Avviare in Rescue mode** e seleziona "WinRescue" nel menu. Se le credenziali di accesso devono essere inviate a un indirizzo diverso da quello principale del tuo account, seleziona un indirizzo email nell'ultimo campo. 
-
-Clicca su `Continua`{.action} e poi su `Conferma`{.action}.
-
-![winrescuemode](images/adminpw_win_008.png){.thumbnail}
-
-Una volta terminata la modifica, clicca sui tre puntini `...`{.action} in corrispondenza di "Status" nella sezione intitolata **Stato dei servizi**.
-<br>Clicca su `Riavvia`{.action} e il server riavvia in modalità Rescue. Questa operazione potrebbe richiedere alcuni minuti.
-<br>Per verificare lo stato di avanzamento, clicca sulla scheda `Operazioni`{.action}.
-<br>Riceverai un'email con le credenziali (inclusa la password di accesso) dell'utente "root" della modalità Rescue.
-
-![rescuereboot](images/adminpw_win_02.png){.thumbnail}
+Il sistema deve essere avviato in modalità Rescue (WinRescue) prima di poter modificare la password admin.
 
 Per maggiori informazioni sulla modalità Rescue, consulta [questa guida](/pages/bare_metal_cloud/dedicated_servers/rescue_mode).
 

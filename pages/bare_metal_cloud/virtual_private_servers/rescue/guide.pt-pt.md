@@ -91,7 +91,10 @@ A maior parte das modificações efetuadas no seu servidor através de SSH em mo
 Uma vez ligado, verifique os discos disponíveis com este comando:
 
 ```bash
-[RESCUE] root@vps-x11x11xyy.vps.ovh.net:~ $ lsblk
+lsblk
+```
+
+```text
 NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
 sda 8:0 0 2.5G 0 disk
 └─sda1 8:1 0 2.5G 0 part /
@@ -102,7 +105,7 @@ sdb 8:16 0 80G 0 disk
 A seguir, suba a partição:
 
 ```bash
-[RESCUE] root@vps-x11x11xyy.vps.ovh.net:~ $ mount /dev/sdb1 /mnt
+mount /dev/sdb1 /mnt
 ```
 
 Os seus dados estarão agora acessíveis a partir da pasta `/mnt`.

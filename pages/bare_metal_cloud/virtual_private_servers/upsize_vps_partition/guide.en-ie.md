@@ -98,11 +98,11 @@ If you see any errors, take note of them and resolve them as required. Below is 
 
 - `bad magic number in superblock`: Do not continue. Please read and follow our instructions on [How to fix a **bad magic number in superblock** error](/pages/bare_metal_cloud/virtual_private_servers/upsize_vps_partition#how-to-fix-a-bad-magic-number-in-superblock-error).
 
-- `/dev/vdb1 has unsupported feature(s): metadata_csum` followed by `e2fsck: Get a newer version of e2fsck!`: Update e2fsck. If the latest version is not available via `apt` (or another manager package), you will need to compile it from the sources.
+- `/dev/vdb1 has unsupported feature(s): metadata_csum` followed by `e2fsck: Get a newer version of e2fsck!`: Update e2fsck. If the latest version is not available via `apt` (or another package manager), you will need to compile it from source.
 
 #### Launch the fdisk application
 
-If the filesystem check is completed successfully, launch the `fdisk` application. In the settings, you need to enter the name of the disk and not the name of the partition. For instance, if your partition is `sdb1` instead of `vdb1`, the disk name will be /dev/sdb.
+If the filesystem check is completed successfully, launch the `fdisk` application. In the settings, you need to enter the name of the disk and not the name of the partition. For example, if your partition is `sdb1`, the disk name will be `/dev/sdb`.
 
 ```sh
 fdisk -u /dev/sdb
@@ -110,7 +110,7 @@ fdisk -u /dev/sdb
 
 > [!primary]
 >
-> This application has several sub-commands, which you can view with the command `m`.
+> This application offers several commands, which you can view by entering `m`.
 >
 
 #### Delete the old partition

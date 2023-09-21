@@ -110,7 +110,7 @@ Die obenstehende Liste ist nicht vollständig.
 
 ### Öffnen der Anwendung fdisk
 
-Wenn die Überprüfung des Dateisystems fehlerfrei beendet wird, öffnen Sie die Anwendung `fdisk`. Hier müssen Sie den Namen des Laufwerks und nicht den der Partition als Parameter angeben. Ist Ihre Partition zum Beispiel`sdb1` statt `vdb1`, dann lautet der Name des Laufwerks /dev/sdb.
+Wenn die Überprüfung des Dateisystems fehlerfrei beendet wird, öffnen Sie die Anwendung `fdisk`. Hier müssen Sie den Namen der Disk und nicht den der Partition als Parameter angeben. Ist Ihre Partition zum Beispiel `sdb1`, lautet der Name der Disk `/dev/sdb`.
 
 ```sh
 fdisk -u /dev/sdb

@@ -52,8 +52,8 @@ Siga los pasos que se indican en la guía sobre el [modo de rescate](/pages/bare
 
 Cuando acceda a sus archivos, abra el archivo "*authorized_keys*" correspondiente en un editor de texto. Este archivo almacena las llaves SSH y se encuentra en la carpeta `home` del usuario conectado al servidor. (Sustituya "USER_NAME" por su nombre de usuario.)
 
-```
-rescue-customer:~# sudo nano /mnt/home/USER_NAME/.ssh/authorized_keys
+```bash
+sudo nano /mnt/home/USER_NAME/.ssh/authorized_keys
 ```
 
 Copie su nueva clave pública (creada en el paso 2) en el archivo. El contenido del archivo debería tener el siguiente formato:

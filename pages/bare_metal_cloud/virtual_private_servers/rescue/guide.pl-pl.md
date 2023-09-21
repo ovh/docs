@@ -91,7 +91,10 @@ Większość modyfikacji wprowadzonych na Twoim serwerze przez SSH w trybie Resc
 Po zalogowaniu sprawdź dostępne dyski za pomocą polecenia:
 
 ```bash
-[RESCUE] root@vps-x11x11xyy.vps.ovh.net:~ $ lsblk
+lsblk
+```
+
+```text
 NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
 sda 8:0 0 2.5G 0 disk
 └─sda1 8:1 0 2.5G 0 part /
@@ -102,7 +105,7 @@ sdb 8:16 0 80G 0 disk
 Następnie zamontuj partycję:
 
 ```bash
-[RESCUE] root@vps-x11x11xyy.vps.ovh.net:~ $ mount /dev/sdb1 /mnt
+mount /dev/sdb1 /mnt
 ```
 
 Twoje dane będą teraz dostępne z katalogu `/mnt`.

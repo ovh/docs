@@ -87,7 +87,10 @@ La plupart des modifications apportées à votre serveur via SSH en mode rescue 
 Une fois connecté, vérifiez les disques disponibles avec cette commande :
 
 ```bash
-[RESCUE] root@vps-x11x11xyy.vps.ovh.net:~ $ lsblk
+lsblk
+```
+
+```text
 NAME   MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
 sda      8:0    0  2.5G  0 disk
 └─sda1   8:1    0  2.5G  0 part /
@@ -98,7 +101,7 @@ sdb      8:16   0   80G  0 disk
 Ensuite, montez la partition :
 
 ```bash
-[RESCUE] root@vps-x11x11xyy.vps.ovh.net:~ $ mount /dev/sdb1 /mnt
+mount /dev/sdb1 /mnt
 ```
 
 Vos données seront maintenant accessibles depuis le dossier `/mnt`.

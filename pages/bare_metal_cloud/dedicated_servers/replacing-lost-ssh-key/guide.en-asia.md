@@ -47,8 +47,8 @@ Follow the steps in the [rescue mode guide](/pages/bare_metal_cloud/dedicated_se
 
 When you have access to your files, open the "authorized_keys" file concerned with a text editor. This file stores SSH keys and is located in the `home` folder of the user with which you connect to your server. (Replace "USER_NAME" with your actual user name.)
 
-```
-rescue-customer:~# sudo nano /mnt/home/USER_NAME/.ssh/authorized_keys
+```bash
+sudo nano /mnt/home/USER_NAME/.ssh/authorized_keys
 ```
 
 Copy and paste your new public key (created in step 2) into the file. It should look similar to the following example:

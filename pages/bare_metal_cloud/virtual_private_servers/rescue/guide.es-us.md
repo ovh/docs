@@ -91,7 +91,10 @@ Para realizar la mayoría de los cambios en el servidor por SSH en modo de resca
 Una vez que se haya conectado, compruebe los discos disponibles con el siguiente comando:
 
 ```bash
-[RESCUE] root@vps-x11x11xyy.vps.ovh.net:~ $ lsblk
+lsblk
+```
+
+```text
 NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
 sda 8:0 0 2.5G 0 disk
 └─sda1 8:1 0 2.5G 0 part /
@@ -102,7 +105,7 @@ sdb 8:16 0 80G 0 disk
 A continuación, monte la partición:
 
 ```bash
-[RESCUE] root@vps-x11x11xyy.vps.ovh.net:~ $ mount /dev/sdb1 /mnt
+mount /dev/sdb1 /mnt
 ```
 
 Sus datos serán ahora accesibles desde la carpeta `/mnt`.
