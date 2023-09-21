@@ -22,6 +22,8 @@ Moreover, the following prerequisites are required:
 - A user with NSX access rights.
 - You need to verify that the node is enabled.
 
+## Instructions
+
 ### Enabling logs
 
 Before logs can be retrieved, you will need to enable the `logging` option on the corresponding rule.

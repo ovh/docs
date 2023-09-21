@@ -6,7 +6,7 @@ updated: 2023-09-21
 
 ## Objectif
 
-NSX est un réseau à définition logicielle ou « *Software-Define Networking* » (SDN) développé par VMware. OVHcloud propose ce service à la place de NSX-V dans sa solution [VMware on OVHcloud](https://www.ovhcloud.com/fr/hosted-private-cloud/vmware/).
+NSX est un réseau à définition logicielle ou « *Software-Defined Networking* » (SDN) développé par VMware. OVHcloud propose ce service à la place de NSX-V dans sa solution [VMware on OVHcloud](https://www.ovhcloud.com/fr/hosted-private-cloud/vmware/).
 
 A l'heure actuelle (18 Septembre 2023), en raison de l'implémentation par OVHcloud, il n'est pas possible d'exporter les logs d'un NSX-T par le biais d'un syslog serveur. Pour y remédier, il est possible de récupérer quelques logs via des appels API.
 
@@ -21,6 +21,8 @@ De plus, les prérequis suivants sont nécessaires :
 - Avoir déployé les hôtes NSX.
 - Avoir un utilisateur ayant les droits d'accès au NSX.
 - Vérifier que le noeud soit activé.
+
+## En pratique
 
 ### Activation des logs
 
