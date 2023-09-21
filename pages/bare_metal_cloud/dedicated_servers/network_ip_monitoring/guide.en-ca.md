@@ -1,7 +1,7 @@
 ---
 title: What are the IP addresses of the OVHcloud monitoring?
 excerpt: Find here the IP addresses to fill in when setting up a firewall so that OVHcloud monitoring will continue to work on your server
-updated: 2023-07-21
+updated: 2023-09-21
 ---
 
 ## Objective
@@ -60,18 +60,6 @@ Click on the button `Configure`{.action}. In the popup window, you have three op
 ![Monitoring](images/monitoring-server2.png){.thumbnail}
 
 Click on `Confirm`{.action} to update your monitoring configuration.
-
-### Enabling monitoring for specific services
-
-In addition to standard monitoring, you can authorise OVHcloud to monitor specific services such as HTTP, SSH and other protocols.
-
-In the `General information`{.action} tab, click the `...`{.action} button next to "Monitored services" in the **Service status** box. Click `Monitor my services`{.action}.
-
-![monitoring](images/monitoring02.png){.thumbnail}
-
-You will be redirected to the page below. Click `Monitor a service`{.action}, then enter the IP address, protocol, port number, server response, and time interval between your service checks. Click the validation symbol (**V**) to confirm the changes.
-
-![monitoring](images/monitoring3.png){.thumbnail}
 
 ## Go further
 
