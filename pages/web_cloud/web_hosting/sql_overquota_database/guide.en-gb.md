@@ -1,7 +1,7 @@
 ---
-title: "Tutorial - What do I do when my database is full?"
+title: "Web hosting: my database is full, what should I do?"
 excerpt: "Find out what to do when your database is saturated"
-updated: 2023-02-16
+updated: 2023-09-21
 ---
 
 ## Objective
@@ -52,17 +52,21 @@ The first step is to identify the large table or tables in your database.
 
 #### 1.1 - Connect to the database via phpMyAdmin
 
-Retrieve the password for accessing your database directly from your website’s configuration file. Perform this action using **step 1** in our guide to [changing a database password](/pages/web_cloud/web_hosting/sql_change_password).
+Retrieve your database access information directly in your website’s configuration file. You can do this using the **step 1** of our guide on [changing a database password](/pages/web_cloud/web_hosting/sql_change_password).
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and select `Web Cloud`{.action} in the navigation bar at the top of the screen. Click on `Hosting plans`{.action} and choose the web hosting plan associated with your OVHcloud shared database. Next, go to the `Databases`{.action} tab.
+Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and select `Web Cloud`{.action} in the top navigation bar. Click `Hosting plans`{.action} , then choose the web hosting plan linked to your OVHcloud shared database. Go to the `Databases`{.action} tab.
+
+A table listing your databases will appear at the bottom of the screen.
 
 ![phpMyAdmin Access](images/pma_access.png){.thumbnail}
 
-From the `Databases`{.action} tab, click on the button `...`{.action} to the right of the database that is full, then `Go to phpMyAdmin`{.action}.
+Note that **for your database**, its `User name` and its `Server address` are listed in the table listing your databases. 
+
+In the `Databases`{.action} tab, click the `...`{.action} button to the right of the database that is full, then `Go to phpMyAdmin`{.action}.
 
 ![phpMyAdmin Go Login](images/pma_interface.png){.thumbnail}
 
-Enter your database password in addition to the pre-filled information, then click `Go`{.action}.
+Enter the information for accessing your database, then click `Login`{.action}.
 
 #### 1.2 - Find the largest tables
 
