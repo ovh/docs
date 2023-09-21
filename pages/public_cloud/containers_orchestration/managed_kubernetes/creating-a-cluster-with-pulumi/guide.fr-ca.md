@@ -4,28 +4,6 @@ excerpt: 'Create an OVHcloud Managed Kubernetes Service cluster with Pulumi'
 updated: 2023-09-18
 ---
 
-<style>
- pre {
-     font-size: 14px;
- }
- pre.console {
-   background-color: #300A24; 
-   color: #ccc;
-   font-family: monospace;
-   padding: 5px;
-   margin-bottom: 5px;
- }
- pre.console code {
-   border: solid 0px transparent;
-   font-family: monospace !important;
-   font-size: 0.75em;
-   color: #ccc;
- }
- .small {
-     font-size: 0.75em;
- }
-</style>
-
 ## Objective
 
 You can create an OVHcloud Managed Kubernetes cluster through the OVHcloud Control Panel, but you can also deploy a cluster programmatically, with  Infrastructure as Code (IaC) tools. This can be done through Terraform thanks to our OVHcloud provider, and now also with Pulumi.

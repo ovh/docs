@@ -1241,7 +1241,6 @@
                 + [Jakarta EE/Eclipse MicroProfile](web_cloud/web_paas_powered_by_platform_sh/frameworks/frameworks-jakarta)
             + [Spring](web-cloud-web-paas-powered-by-platformsh-frameworks-spring)
                 + [Spring](web_cloud/web_paas_powered_by_platform_sh/frameworks/frameworks-spring)
-            + [Featured frameworks](web_cloud/web_paas_powered_by_platform_sh/frameworks/frameworks)
         + [Domains](products/web-cloud-web-paas-powered-by-platformsh-domains)
             + [Pre-Launch Checklist](web_cloud/web_paas_powered_by_platform_sh/domains/domains-checklist)
             + [Quick Start](web_cloud/web_paas_powered_by_platform_sh/domains/domains-quick-start)
