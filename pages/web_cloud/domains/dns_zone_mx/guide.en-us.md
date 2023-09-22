@@ -35,9 +35,9 @@ When the address **sender@otherdomain.ovh** sends an email to **contact@mydomain
 - **(1)** Query the DNS zone of the domain name **mydomain.ovh** and read the **MX** records.
 - **(2)** Forward the email to the URL of the **MX** record it has found.
 
-![email](images/email-dns-conf-mx01.png){.thumbnail}
+![email](images/email-dns-conf-mx01-ca.png){.thumbnail}
 
-The email will be sent to the target **mx0.mail.ovh.net**, which is preceded by a value of **0**. This value is called *priority*. The lowest value is queried first and the highest value is queried last. This means that the presence of several records makes it possible to compensate for an absence of response from the MX record having the lowest priority.
+The email will be sent to the target **mx0.mail.ovh.ca**, which is preceded by a value of **0**. This value is called *priority*. The lowest value is queried first and the highest value is queried last. This means that the presence of several records makes it possible to compensate for an absence of response from the MX record having the lowest priority.
 
 You can set up multiple MX records for the same domain name. It is then necessary to define a *priority* number for each of them. MX records are queried in ascending order from lowest number to highest number until a response is received from the receiving server.
 
@@ -52,11 +52,11 @@ Below, you will find the OVHcloud MX configuration to use for our MX Plan soluti
 
 |Domain|TTL|Record type|Priority|Target|
 |---|---|---|---|---|
-|*leave blank*|3600|MX|1|mx0.mail.ovh.net.|
-|*leave blank*|3600|MX|5|mx1.mail.ovh.net.|
-|*leave blank*|3600|MX|50|mx2.mail.ovh.net.|
-|*leave blank*|3600|MX|100|mx3.mail.ovh.net.|
-|*leave blank*|3600|MX|200|mx4.mail.ovh.net.|
+|*leave blank*|3600|MX|1|mx0.mail.ovh.ca.|
+|*leave blank*|3600|MX|5|mx1.mail.ovh.ca.|
+|*leave blank*|3600|MX|50|mx2.mail.ovh.ca.|
+|*leave blank*|3600|MX|100|mx3.mail.ovh.ca.|
+|*leave blank*|3600|MX|200|mx4.mail.ovh.ca.|
 
 These MX records must be configured in your domain name’s DNS zone.
 
