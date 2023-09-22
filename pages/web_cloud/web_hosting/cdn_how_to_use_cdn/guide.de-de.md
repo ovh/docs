@@ -301,7 +301,7 @@ Sie können auch dann vom CDN-Cache profitieren, wenn Sie kein CMS verwenden. Hi
 > Das Caching über HTTP-Header ermöglicht das Zwischenspeichern innerhalb des CDN, aber auch innerhalb des Browsers Ihrer Benutzer. Um zu verhindern, dass Ihre Besucher eine zu alte zwischengespeicherte Version verwenden, wird empfohlen, die Namen der Dateien bei jeder neuen Version zu ändern.
 > 
 
-### Die CDN-Option für eine Website deaktivieren
+### Die CDN-Option für eine Website deaktivieren 
 
 Diese Aktion ermöglicht die Deaktivierung des CDN für einen oder mehrere Ihrer Multisite-Einträge, ohne die CDN-Option von Ihrem Webhosting zu entfernen.
 
