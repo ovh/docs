@@ -42,7 +42,7 @@ features = ["ovh-ldp"]
 
 End then in you `main.rs`:
 
-```rust hl_lines="6"
+```rust
 extern crate gelf_logger;
 #[macro_use]
 extern crate log;
@@ -115,7 +115,7 @@ fn main() {
 
 #### Programmatically constructing a configuration
 
-```rust hl_lines="9"
+```rust
 extern crate log;
 extern crate log4rs;
 extern crate log4rs_gelf;

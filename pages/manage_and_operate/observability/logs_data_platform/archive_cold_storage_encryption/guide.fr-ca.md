@@ -92,7 +92,7 @@ gpg (GnuPG) 2.2.27
 
 Now, let's generate your new keypair. An EdDSA/ECDH with Curve 25519 in this example:
 
-```shell-session hl_lines="18 29 37 40 44 45 46 50"
+```shell-session
 $ gpg --expert --full-gen-key
 gpg (GnuPG) 2.2.27; Copyright (C) 2021 Free Software Foundation, Inc.
 This is free software: you are free to change and redistribute it.

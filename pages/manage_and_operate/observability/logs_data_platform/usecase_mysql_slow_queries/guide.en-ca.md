@@ -116,7 +116,7 @@ $ ldp@ubuntu:~$ sudo filebeat modules enable mysql
 
 It will generate a new module file: **/etc/filebeat/modules.d/mysql.yml**, please change it to include all your MySQL error/slow path files:
 
-```yaml hl_lines="8 16"
+```yaml
 - module: mysql
   # Error logs
   error:
