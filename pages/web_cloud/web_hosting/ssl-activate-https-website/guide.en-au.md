@@ -1,5 +1,5 @@
 ---
-title: "Web Hosting : switch your website to "HTTPS" "
+title: "Web Hosting: switch your website to HTTPS"
 excerpt: "Find out how to switch your website to "HTTPS" after activating an SSL certificate"
 updated: 2023-09-20
 ---
@@ -127,7 +127,7 @@ You will need to activate "HTTPS" directly in your website’s code. If you have
 
 Below, we have provided an example of the script to add to a **.htaccess** file, which may help you with this approach. Please note, however, that this is not a substitute for the support of a webmaster. Please ensure that you replace the generic information present in this script example with your own domain name, and adapt the script as required.
 
-```
+```console
 RewriteEngine On
 RewriteCond %{SERVER_PORT} 80
 RewriteRule ^(.*)$ https://www.mypersonaldomain.ovh/$1 [R,L]

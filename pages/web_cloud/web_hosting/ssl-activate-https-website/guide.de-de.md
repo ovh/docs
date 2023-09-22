@@ -131,7 +131,7 @@ Hier muss „HTTPS“ definitiv direkt im Code Ihrer Website aktiviert werden. W
 
 Als allgemeine Hilfe für diesen Vorgang finden Sie unten ein Beispiel für ein Skript zum Einfügen in die **.htaccess**-Datei. Dies ersetzt jedoch nicht die Beratung durch einen kompetenten Webmaster. Achten Sie darauf, den Platzhalter in diesem Skript durch Ihren eigenen Domainnamen zu ersetzen und das Skript nötigenfalls anzupassen.
 
-```
+```console
 RewriteEngine On
 RewriteCond %{SERVER_PORT} 80
 RewriteRule ^(.*)$ https://www.mypersonaldomain.ovh/$1 [R,L]

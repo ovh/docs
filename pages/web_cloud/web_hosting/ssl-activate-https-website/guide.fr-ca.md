@@ -1,5 +1,5 @@
 ---
-title: "Hébergement web : passer son site web en « HTTPS »"
+title: "Hébergement web : passer son site web en HTTPS"
 excerpt: "Découvrez comment passer votre site web en « HTTPS » après avoir activé un certificat SSL"
 updated: 2023-09-20
 ---
@@ -126,7 +126,7 @@ L'activation du « HTTPS » doit sûrement être effectuée directement dans le 
 
 Si vous en avez besoin, vous trouverez ci-dessous un exemple de script à insérer dans un fichier **.htaccess** pouvant vous aider dans votre démarche. Cependant, celui-ci ne se substitue pas à l’aide d’un webmaster. Prenez soin de remplacer l'information générique présente dans ce script par votre propre nom de domaine et à l'adapter si cela est nécessaire.
 
-```
+```console
 RewriteEngine On
 RewriteCond %{SERVER_PORT} 80
 RewriteRule ^(.*)$ https://www.mypersonaldomain.ovh/$1 [R,L]

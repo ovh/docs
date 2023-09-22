@@ -1,5 +1,5 @@
 ---
-title: "Hosting Web : passare il proprio sito Web in "HTTPS" "
+title: "Hosting Web : passare il proprio sito Web in HTTPS"
 excerpt: "Questa guida ti mostra come attivare il protocollo "HTTPS" sul tuo sito dopo aver attivato un certificato SSL"
 updated: 2023-09-20
 ---
@@ -126,7 +126,7 @@ Per attivare l’HTTPS, è necessario agire direttamente nel codice del tuo sito
 
 Ecco un esempio di script da inserire in un file **.htaccess**:
 
-```
+```console
 RewriteEngine On
 RewriteCond %{SERVER_PORT} 80
 RewriteRule ^(.*)$ https://www.mypersonaldomain.ovh/$1 [R,L]

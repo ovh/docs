@@ -1,5 +1,5 @@
 ---
-title: "Hosting WWW : przełączenie strony WWW na "HTTPS" "
+title: "Hosting WWW : przełączenie strony WWW na HTTPS"
 excerpt: "Dowiedz się, jak ustawić protokół "HTTPS" na Twojej stronie WWW po aktywacji certyfikatu SSL"
 updated: 2023-09-204
 ---
@@ -131,7 +131,7 @@ Aktywacja "HTTPS" powinna zostać przeprowadzona bezpośrednio w kodzie Twojej s
 
 Pomocny w przeprowadzeniu tej operacji może być przykładowy skrypt, który zamieszczamy poniżej. Należy dodać do go pliku **.htaccess**. Skrypt ten nie zastąpi jednak wsparcia webmastera. Pamiętaj, aby zastąpić informację ogólną zawartą w skrypcie nazwą Twojej domeny i dostosować ją, jeśli okaże się to konieczne.
 
-```
+```console
 RewriteEngine On
 RewriteCond %{SERVER_PORT} 80
 RewriteRule ^(.*)$ https://www.mypersonaldomain.ovh/$1 [R,L]

@@ -1,5 +1,5 @@
 ---
-title: "Alojamento web : passar o seu website em "HTTPS" "
+title: "Alojamento web : passar o seu website em HTTPS"
 excerpt: "Saiba como passar o seu website em "HTTPS" após ter ativado um certificado SSL"
 updated: 2023-09-20
 ---
@@ -131,7 +131,7 @@ A ativação do "HTTPS" deve com certeza ser efetuada diretamente no código do 
 
 Se precisar, encontrará a seguir um exemplo de script que deverá inserir num ficheiro **.htaccess**. No entanto, isto não substitui a ajuda de um webmaster. Atenção: substitua a informação genérica presente neste script pela do seu próprio domínio e adapte-a caso seja necessário.
 
-```
+```console
 RewriteEngine On
 RewriteCond %{SERVER_PORT} 80
 RewriteRule ^(.*)$ https://www.mypersonaldomain.ovh/$1 [R,L]

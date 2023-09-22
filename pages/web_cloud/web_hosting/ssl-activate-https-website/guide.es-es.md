@@ -1,5 +1,5 @@
 ---
-title: "Web hosting : cambiar el sitio web a "HTTPS" "
+title: "Web hosting : cambiar el sitio web a HTTPS"
 excerpt: "Descubra cómo cambiar su sitio web a "HTTPS" después de activar un certificado SSL"
 updated: 2023-09-20
 ---
@@ -131,7 +131,7 @@ Seguramente deberá activar "HTTPS" editando directamente el código del sitio w
 
 A continuación le ofrecemos un ejemplo de script que deberá insertar en el archivo **.htaccess**, sin que esto sustituya a la ayuda de un webmaster. No olvide sustituir la información genérica por la de su propio dominio y adaptar el script si es necesario.
 
-```
+```console
 RewriteEngine On
 RewriteCond %{SERVER_PORT} 80
 RewriteRule ^(.*)$ https://www.mypersonaldomain.ovh/$1 [R,L]
