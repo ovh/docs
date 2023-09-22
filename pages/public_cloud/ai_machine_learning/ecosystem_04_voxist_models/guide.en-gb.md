@@ -24,7 +24,7 @@ Speech recognition is supported through two APIs:
 - REST API for **asynchronous** speech recognition, with support for diarization
 - WebSocket API for **synchronous** speech recognition
 
-**Languages supported:** French, English, German, Spanish, Portuguese, Italian, Polish
+**Supported languages:** French, English, German, Spanish, Portuguese, Italian, Polish
 
 > [!primary]
 >
@@ -37,7 +37,7 @@ Speech recognition is supported through two APIs:
 
 #### Transcription
 
-This endpoint transcribe an audio recording into a JSON object. Configuration parameters can be passed to specify language, activate punctuation recognition and diarization.
+This endpoint transcribes an audio recording into a JSON object. Configuration parameters can be passed to specify language, activate punctuation recognition and diarization.
 
 - **URL**: `/transcribe`
 
@@ -57,8 +57,8 @@ Configuration parameters (`config` form-data parameter)
   "wait": Boolean,
 }
 ```
-* **punctuation: `[true, false]`**: enable punctuation in output (default: false)
-* **lang: `["fr", "en", "es", "pt", "it", "de", "pl"]`**: define input audio language (default: "en")
+* **punctuation: `[true, false]`**: enables punctuation in output (default: false)
+* **lang: `["fr", "en", "es", "pt", "it", "de", "pl"]`**: defines input audio language (default: "en")
 * **sample_rate: `[8000, 16000]`**: default is 8Khz.
 * **wait: `[true, false]`**: default is `true`. The request will wait for the transcription to be completed before returning. If set to `false`, the request will return immediately with a job id and an estimate of the completion time.
 
@@ -97,7 +97,7 @@ Configuration parameters (`config` form-data parameter)
 - `Confidence`: Transcription confidence
 - `Start_time`: Segment offset in seconds
 - `Duration`: Segment duration in seconds
-- `Speaker`: if diarization is active, identify speaker with a unique identifier `SPEAKER_00`, `SPEAKER_01`.
+- `Speaker`: if diarization is active, identifies speaker with a unique identifier `SPEAKER_00`, `SPEAKER_01`.
 
 ### Preparing audio files for transcription
 
@@ -271,15 +271,15 @@ The first websocket message sent it:
   "diarization": Boolean,
 }
 ```
-* **punctuation: `[true, false]`**: enable punctuation in output (default: false)
-* **lang: `["fr", "en", "es", "pt", "it", "de", "pl"]`**:  define input audio language (default: "en")
+* **punctuation: `[true, false]`**: enables punctuation in output (default: false)
+* **lang: `["fr", "en", "es", "pt", "it", "de", "pl"]`**:  defines input audio language (default: "en")
 * **sample_rate: `[8000, 16000]`**: default is 8Khz
 
 ### Calling the API in Python
 
 - **Requirement**:
 
-Install the requests package:
+Install the requested packages:
 
 ```console
 pip install asyncio websockets wave
