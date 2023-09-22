@@ -35,9 +35,9 @@ Lorsque l'adresse **sender@otherdomain.ovh** envoie un e-mail vers **contact@myd
 - **(1)** interroger la zone DNS du nom de domaine **mydomain.ovh** et lire les enregistrements **MX**.
 - **(2)** transmettre l'e-mail vers l'URL de l'enregistrement **MX** lu.
 
-![email](images/email-dns-conf-mx01.png){.thumbnail}
+![email](images/email-dns-conf-mx01-ca.png){.thumbnail}
 
-L'e-mail sera envoyé vers la cible **mx0.mail.ovh.net** qui est précédée de la valeur **0**. Cette valeur est appelée priorité. La plus faible valeur est interrogée en premier et la plus élevée en dernier. Cela signifie que la présence de plusieurs enregistrements permet de pallier une absence de réponse de l'enregistrement MX ayant la plus faible priorité.
+L'e-mail sera envoyé vers la cible **mx0.mail.ovh.ca** qui est précédée de la valeur **0**. Cette valeur est appelée priorité. La plus faible valeur est interrogée en premier et la plus élevée en dernier. Cela signifie que la présence de plusieurs enregistrements permet de pallier une absence de réponse de l'enregistrement MX ayant la plus faible priorité.
 
 Vous pouvez paramétrer plusieurs enregistrements MX pour un même nom de domaine. Il est alors nécessaire de définir un numéro de priorité pour chacun d'entre eux. Les enregistrements MX sont interrogés par ordre croissant, du numéro le plus faible au plus élevé, jusqu'à obtenir une réponse du serveur de réception.
 
@@ -52,11 +52,11 @@ Retrouvez ci-dessous la configuration MX OVHcloud à utiliser pour nos solutions
 
 |Domaine|TTL|Type d'enregistrement|Priorité|Cible|
 |---|---|---|---|---|
-|*laisser vide*|3600|MX|1|mx0.mail.ovh.net.|
-|*laisser vide*|3600|MX|5|mx1.mail.ovh.net.|
-|*laisser vide*|3600|MX|50|mx2.mail.ovh.net.|
-|*laisser vide*|3600|MX|100|mx3.mail.ovh.net.|
-|*laisser vide*|3600|MX|200|mx4.mail.ovh.net.|
+|*laisser vide*|3600|MX|1|mx0.mail.ovh.ca.|
+|*laisser vide*|3600|MX|5|mx1.mail.ovh.ca.|
+|*laisser vide*|3600|MX|50|mx2.mail.ovh.ca.|
+|*laisser vide*|3600|MX|100|mx3.mail.ovh.ca.|
+|*laisser vide*|3600|MX|200|mx4.mail.ovh.ca.|
 
 Ces enregistrements MX doivent être configurés dans la zone DNS de votre nom de domaine.
 
