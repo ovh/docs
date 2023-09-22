@@ -37,11 +37,10 @@ The following migration models and available documentation apply to all the feat
 |---|---|---|---|---|
 |VPN Gateway|Une passerelle VPN IPsec qui permet de connecter, à travers un tunnel chiffré, les réseaux externes à l’infrastructure SecNumCloud |N/A|**Migration entrante**: Souscrivez et utilisez le service VPN Gateway inclus dans le périmètre qualifié.  <br><br>**Migration sortante**: Utilisez le service vRack inclus dans d’autres services OVHcloud ou prenez note de l’architecture réseau et reproduisez-là avec des VLAN et un autre tunnel chiffré.|[Présentation de SecNumCloud Connectivity](/pages/hosted_private_clo/hosted_private_cloud_powered_by_vmware/snc-connectivity-concepts-overview)<br><br>[Le VPN-SPN Présentation et concept](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/snc-connectivity-concepts-vpn-spn)<br><br>[VPN personnalisé via la solution NSX](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx_configurer_un_vpn_via_une_gateway_edge)|
 |SPN|Un réseau privé qui permet de connecter les ressources et services disponibles dans l’infrastructure SecNumCloud sur un ou plusieurs sites en zone  SecNumCloud . Il permet aussi de connecter d’autres services OVHcloud ou hébergés chez un tiers en passant par la VPN Gateway.|N/A|**Migration entrante**: Souscrivez et utilisez le service SPN inclus dans le périmètre qualifié.<br><br>**Migration sortante**: Prenez note de l’architecture réseau et reproduisez-là avec les concepts de sous-réseaux et routage|[SPN présentation et concepts ](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/snc-connectivity-concepts-spn)<br><br>[SPN connector](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/snc-connectivity-concepts-spn-connector)|
-
-
-|SPN Inter-DC|xxxxx|N/A|**Migration entrante**: xxxxx<br><br>**Migration sortante**: xxxxxx|[Présentation de SecNumCloud Connectivity](xxxx)<br><br>[Le VPN-SPN Présentation et concept](xxxx)<br><br>[VPN personnalisé via la solution NSX]()|
+|SPN Inter-DC|Liaison chiffrée entre entre deux sites hébergeant des infrastructures SecNumcloud et permettant de connecter les SPN.|N/A|**Migration entrante**: Souscrivez et utilisez le service SPN Inter-DC inclus dans le périmètre qualifié.<br><br>**Migration sortante**: Configurez votre routage IP entre deux sites  hébergeant des infrastructures SecNumcloud hors OVHcloud.|[Option SPN InterDC](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/snc-connectivity-concepts-spn)|
 |vROps|Solution standard de Monitoring VMware.|N/A|**Migration entrante**: vROps est inclus par défaut avec chaque Hosted Private Cloud.<br><br>**Migration sortante**: Installer et configurer vROps dans un environnement vSphere.|[First connection on vROps](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vrops_introduction)|
-|Managed Veeam backup|Solution de sauvegarde en tant que service pour vos VMs|VBK, VIB, VBM|**Migration entrante**: Activez une option de sauvegarde Veeam dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).<br><br>**Migration sortante**: Importez des sauvegardes manuellement, puis restaurez-les.|[Activer et utiliser Veeam Managed Backup](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/veeam_backup_as_a_service)<br><br>[Importer des sauvegardes](https://helpcenter.veeam.com/docs/backup/hyperv/importing_backups.html?ver=110)(EN)|
+|Managed Veeam backup|Solution de sauvegarde en tant que service pour vos VMs|VBK, VIB, VBM|**Migration entrante**: Activez une option de sauvegarde Veeam dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) mais notez que l'import des données ne sera pas possible <br><br>**Migration sortante**: Cette fonctionnalité n’est pas prise en charge actuellement.Le client a la possibilité d’exporter ses données primaires (hors données sauvegardées) et de configurer une solution de sauvegarde de son choix sur le site de destination.|[Activer et utiliser Veeam Managed Backup](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/veeam_backup_as_a_service)|
+
 
 
 ### Fonctionnalités spécifiques <a name="fonctionnalites-specifiques"></a>
@@ -49,8 +48,9 @@ The following migration models and available documentation apply to all the feat
 |Fonction|Description|Formats disponibles|Modèle de migration|Documentation disponible|
 |---|---|---|---|---|
 |Monitoring vScope|Outil de monitoring de l'état et de l'utilisation des ressources conçu par OVHcloud pour Hosted Private Cloud.|N/A|N/A ; vScope est une interface statique.|[Comment utiliser vScope](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/how_to_use_vscope)|
-|Anti-DDoS|L'anti-DDoS est un ensemble d'équipements et de moyens mis en place pour absorber les attaques par déni de service. Il comprend une analyse du trafic, « l’aspiration » vers un réseau spécialisé et la mitigation, assurée par la technologie VAC développée par OVHcloud.|N/A|**Migration entrante**: Le système anti-DDoS est un composant de notre infrastructure, activé par défaut. Aucune action n'est requise.<br><br>**Migration sortante**: Commandez et configurez un anti-DDoS avec le nouveau fournisseur.|[Protection anti-DDoS OVHcloud](https://www.ovh.com/fr/anti-ddos/)<br><br>[Technologie anti-DDoS](https://www.ovh.com/fr/anti-ddos/technologie-anti-ddos.xml)|
-|Sécurité avancée pour SDDC|Ensemble de fonctionnalités améliorant la sécurité, telles que l'implémentation de Sécurité Zero Trust, MFA, IDS pour l'accès vSphere...|N/A|**Migration entrante**: Commandez l'activation de la sécurité avancée depuis l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).<br><br>**Migration sortante**: Commandez et configurez les fonctionnalités de sécurité appropriées avec le nouveau fournisseur.|[SDDC Advanced Security Pack](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/safety-compliance/sddc/)|
+|Anti-DDoS|L'anti-DDoS est un ensemble d'équipements et de moyens mis en place pour absorber les attaques par déni de service. Il comprend une analyse du trafic, « l’aspiration » vers un réseau spécialisé et la mitigation, assurée par la technologie VAC développée par OVHcloud.|N/A|**Migration entrante**: Le système anti-DDoS est un composant de notre infrastructure, activé par défaut. Aucune action n'est requise. Il est activé uniquement sur les IP publiques et ne couvre pas les liaisons du service OVHcloud Connect.<br><br>**Migration sortante**: Commandez et configurez un anti-DDoS avec le nouveau hébergeur.|[Protection anti-DDoS OVHcloud](https://www.ovh.com/fr/anti-ddos/)<br><br>[Technologie anti-DDoS](https://www.ovh.com/fr/anti-ddos/technologie-anti-ddos.xml)|
+|OVHcloud Connect|Service de connectivité, via des points de présence (POP), qui permet de connecter un réseau d’entreprise hébergé à l’extérieur (site Tier) à un service d’infrastructure fournit par OVHcloud, à travers un réseau privé et sans passer par un accès Internet |N/A|**Migration entrante**: Une fois le service livré et après réception de la clé de service (key service), configurez-le à travers d’interface disponible sur votre espace client OVHcloud<br><br>**Migration sortante**:Utilisez les ports de connexion réseau mis à votre disposition et POP OVHcloud  ou POP Provider pour reproduire une nouvelle architecture réseau.[Mise en service de OVHcloud Connect direct ](/pages/network/ovhcloud_connect/occ-direct-control-panel)<br><br>[Mise en service de OVHcloud Connect Provider ](/pages/network/ovhcloud_connect/occ-provider-control-panel)|
+|Sécurité avancée pour SDDC|Ensemble de fonctionnalités améliorant la sécurité, telles que l'implémentation de Sécurité Zero Trust, MFA, IDS pour l'accès vSphere...|N/A|**Migration entrante**: Ces fonctionnalités sont disponibles par défaut sur les infrastructures qualifiées SecNumCloud<br><br>**Migration sortante**: Commandez et configurez les fonctionnalités de sécurité appropriées avec le nouveau fournisseur.|[SDDC Advanced Security Pack](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/safety-compliance/sddc/)|
 
 ### Liste des architectures
 
@@ -58,13 +58,11 @@ Les informations relatives à l'architecture (serveurs, stockage, etc.) sont cen
 
 ### Outils de migration disponibles
 
-[Importer/exporter des machnes virtuelles](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/ovf_tool).
-
 [Convertir une machine physique/virtuelle en une infrastructure Cloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_vcenter_converter).
 
 ### Services Partenaires
 
-Les partenaires OVHcloud sont répertoriés avec le mot clé « Cloud Migration » dans le [répertoire dédié](https://partner.ovhcloud.com/fr/directory/).
+Les partenaires OVHcloud sont répertoriés avec le mot clé « Cloud Migration » dans le [répertoire dédié](https://partner.ovhcloud.com/fr/directory/). Dans le cadre de migrations SecNumCloud, il est recommandé d’utiliser un opérateur de confiance ayant un visa de sécurité de l’ANSSI (PAMS ou PACS).
 
 ### Coût et frais
 
@@ -72,7 +70,7 @@ Aucune facturation supplémentaire n'est prévue de la part de OVHcloud pour les
 
 ### Conservation des données après la résiliation du contrat
 
-Les données sont conservées jusqu'à la fin du mois suivant la résiliation du service, puis supprimées définitivement.
+Les données sont conservées jusqu'à la fin du mois suivant la résiliation du service, puis supprimées définitivement conformément aux engagements des conditions de service SecNumCloud..
 
 ## Aller plus loin
 
