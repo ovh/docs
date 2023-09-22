@@ -8,7 +8,7 @@ updated: 2023-09-26
 
 OVHcloud offers different Artificial Intelligence services through its AI Partners Ecosystem. You will benefit from a catalogue of **ready-to-use applications** provided by our partners which you will be able to easily deploy according to your needs through **AI Deploy**.
 
-**Voxsit is an OVHcloud partner that offers AI services dedicated to Speech to Text (ASR). This guide will introduce Voxist solution features, as well as covering how it works and associated billing.**
+**Voxist is an OVHcloud partner that offers AI services dedicated to Speech to Text (ASR). This guide will introduce Voxist solution features, as well as covering how it works and associated billing.**
 
 ## Introduction
 
@@ -17,7 +17,7 @@ OVHcloud offers different Artificial Intelligence services through its AI Partne
 Speech recognition is supported through two APIs:
 
 - **REST API** for asynchronous speech recognition, with support for diarization
-- **WebSocket API** for synchronous speech recognition
+- **WebSocket API** for synchronous speech recognition, without support for diarization
 
 ## Voxist models features
 
@@ -100,9 +100,9 @@ To launch your Voxist app from the UI, you have to fill in some information:
 
 > [!warning]
 >
-> Please be careful when choosing the image, depending on the required resources.
+> Please be careful with the required image resources.
 >
-> For a `GPU` app, choose the Voxist image containing `gpu` in its tag, then choose one or more GPUs as resources.
+> Voxist apps contain `gpu` in their tags, therefore choose one or more **GPUs** as resources.
 >
 
 - **Resources** - *we advise you to use at least 1 GPU*
@@ -159,12 +159,12 @@ You can use the following example with the following parameters:
 
 > [!warning]
 >
-> Pay attention to the format of your audio file. It must be in **wav** format and **mono** channel.
+> Please be careful with the format of your audio file. Only **wav** format and **mono** channel are supported by Voxist models.
 >
 
 - Audio:
 
-In the following cURL query, we gonna use the following audio file: [audio-sample-en.wav](https://github.com/ovh/ai-training-examples/blob/main/partners-ecosystem/voxist/audios/audio-sample-en.wav).
+In the following cURL query, we will use the following audio file: [audio-sample-en.wav](https://github.com/ovh/ai-training-examples/blob/main/partners-ecosystem/voxist/audios/audio-sample-en.wav).
 
 - cURL query:
 
@@ -214,7 +214,7 @@ curl --request POST \
 
 ## Voxist billing concept
 
-The pricing of Voxist differs slightly from the classic AI Deploy offer. In order to better understand your invoice, we detail the offer below.
+The pricing of Voxist differs slightly from the classic AI Deploy offer. In order for you to better understand your invoice, please find more details below about the [price calculation](https://ovhcloud.ocms-preprod.ovhcloud.tools/fr/public-cloud/prices/).
 
 > [!primary]
 >
