@@ -21,9 +21,9 @@ En raison d'une activité accrue, ou simplement pour répondre à de nouveaux be
 ## Prérequis
 
 - Une [instance Public Cloud](https://www.ovhcloud.com/fr/public-cloud/) dans votre compte OVHcloud
-- Un [utilisateur OpenStack](/pages/platform/public-cloud/create_and_delete_a_user)
-- Avoir un [environnement OpenStack préparé pour le CLI](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api)
-- Avoir défini les [variables d'environnement OpenStack](/pages/platform/public-cloud/loading_openstack_environment_variables)
+- Un [utilisateur OpenStack](/pages/public_cloud/compute/create_and_delete_a_user)
+- Avoir un [environnement OpenStack préparé pour le CLI](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api)
+- Avoir défini les [variables d'environnement OpenStack](/pages/public_cloud/compute/loading_openstack_environment_variables)
 
 ## En pratique
 
@@ -34,7 +34,7 @@ En raison d'une activité accrue, ou simplement pour répondre à de nouveaux be
 
 ### Sauvegarder l'instance
 
-Lors d'un redimensionnement, l'instance est arrêtée pendant toute la durée de l'opération. Avant de procéder, il est donc recommandé de sauvegarder votre instance et d'arrêter tous les processus en cours d'exécution. Retrouvez plus d'informations sur les méthodes de sauvegarde dans le [guide dédié](/pages/platform/public-cloud/save_an_instance).
+Lors d'un redimensionnement, l'instance est arrêtée pendant toute la durée de l'opération. Avant de procéder, il est donc recommandé de sauvegarder votre instance et d'arrêter tous les processus en cours d'exécution. Retrouvez plus d'informations sur les méthodes de sauvegarde dans le [guide dédié](/pages/public_cloud/compute/save_an_instance).
 
 ### Lister les instances
 
