@@ -530,6 +530,7 @@
                 + [Creating and deleting OpenStack users](public_cloud/compute/create_and_delete_a_user)
                 + [Getting started with managing volumes in the OpenStack API](public_cloud/compute/starting_with_managing_volumes_openstack_api)
                 + [Uploading your own image](public_cloud/compute/upload_own_image)
+                + [Resize a Public Cloud instance using the OpenStack CLI](public_cloud/compute/resize_instance_openstack)
                 + [Transfer an instance backup from one data centre to another](public_cloud/compute/transfer_instance_backup_from_one_datacentre_to_another)
                 + [Launching a script when an instance is created](public_cloud/compute/launching_script_when_creating_instance)
                 + [Sharing an object via a temporary URL](public_cloud/compute/share_an_object_via_a_temporary_url)
