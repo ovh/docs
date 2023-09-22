@@ -113,4 +113,8 @@ Según la versión de PHP que utilice, es posible que tenga que modificar el ent
 
 [Configurar el archivo .ovhconfig de un alojamiento web](/pages/web_cloud/web_hosting/configure_your_web_hosting)
 
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
+
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es-es/support-levels/).
+
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
