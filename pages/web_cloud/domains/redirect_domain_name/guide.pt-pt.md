@@ -69,7 +69,7 @@ Encontre aqui os três tipos de reencaminhamentos detalhados etapa a etapa.
 > Independentemente da opção de reencaminhamento escolhida, a propagação das alterações pode demorar entre 4 e 24 horas.
 >
 
-##### Opção 1: reencaminhamento visível permanente para um endereço web
+#### Opção 1: reencaminhamento visível permanente para um endereço web
 
 Esta opção permite, após a introdução do domínio reencaminhado, apresentar o domínio alvo na barra de endereços do seu browser em vez do domínio reencaminhado.
 
@@ -133,7 +133,7 @@ Esta opção permite, após a introdução do domínio reencaminhado, apresentar
 >> >
 >>
 
-##### Opção 2: reencaminhamento visível temporário para um endereço web
+#### Opção 2: reencaminhamento visível temporário para um endereço web
 
 Tal como para a opção 1, esta opção permite apresentar, após a introdução do domínio reencaminhado, o domínio alvo na barra de endereços do seu browser em vez do domínio reencaminhado.
 
@@ -200,7 +200,7 @@ De facto, o posicionamento nos motores de busca é menos eficiente do que com um
 >> >
 >>
 
-##### Opção 3: reencaminhamento invisível para um endereço web
+#### Opção 3: reencaminhamento invisível para um endereço web
 
 Este reencaminhamento permite, após a introdução do domínio reencaminhado, deixá-lo afixado na barra de endereços do seu browser, em vez de o substituir pelo domínio-alvo.<br>
 **Atenção, esta ação não é compatível com todos os sites e afeta o referenciamento do seu site.**.
@@ -304,7 +304,7 @@ Encontre o conjunto da nossa documentação no ".htaccess" na secção ["Quer sa
 
 Encontrará abaixo 4 variáveis para realizar reencaminhamentos através do ficheiro ".htaccess".
 
-##### Variável 1 - "Redirect permanente"
+#### Variável 1 - "Redirect permanente"
 
 Esta variável permite reencaminhar um site no seu conjunto, ou apenas parte de um site, para outro site ou para outra parte de um site. Os visitantes são automaticamente reencaminhados para o endereço/URL correto quando tentam aceder ao seu site através do endereço/URL histórico.
 
@@ -334,7 +334,7 @@ Esta variável permite reencaminhar um site no seu conjunto, ou apenas parte de 
 >> O script devolverá um código HTTP 301. Isto avisará os robôs dos motores de busca de que precisa de atualizar as suas ligações para o novo endereço/URL.
 >>
 
-##### Variável 2 - "Redirect gone"
+#### Variável 2 - "Redirect gone"
 
 Esta variável é útil para os ficheiros eliminados. Substitui a mensagem *404 documento não encontrado* por uma mensagem mais explícita de tipo *410 o documento já não existe*. O visitante do seu site foi informado que o ficheiro que está a tentar chamar já não existe.
 
@@ -350,7 +350,7 @@ Esta variável é útil para os ficheiros eliminados. Substitui a mensagem *404 
 >> O script devolverá um código HTTP 410.
 >>
 
-##### Variável 3 - "Redirect seeother"
+#### Variável 3 - "Redirect seeother"
 
 Se alterar a extensão de um ficheiro, a variável *seeother* permite-lhe modificar o tipo de ficheiro. O visitante que tentar aceder ao antigo ficheiro será automaticamente reencaminhado para o com a extensão correta.
 
@@ -366,7 +366,7 @@ Se alterar a extensão de um ficheiro, a variável *seeother* permite-lhe modifi
 >> O script devolverá um código HTTP 303.
 >>
 
-##### Variável 4 - "Redirect Temp"
+#### Variável 4 - "Redirect Temp"
 
 Esta variável pode ser utilizada quando transfere temporariamente os ficheiros para outro site. Os visitantes que tentam aceder ao seu site através do endereço histórico/URL são automaticamente reencaminhados para o novo endereço/URL temporário.
 
