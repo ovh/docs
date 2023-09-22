@@ -1,7 +1,7 @@
 ---
 title: 'Guia de utilização do acelerador CDN num alojamento web'
 excerpt: 'Melhore o seu site acelerando o seu carregamento no alojamento Web graças ao CDN'
-updated: 2021-12-23
+updated: 2023-09-22
 ---
 
 > [!primary]

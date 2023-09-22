@@ -1,7 +1,7 @@
 ---
 title: 'Speeding up your website with CDN'
 excerpt: 'Find out how to improve your website by reducing loading times on a Web Hosting plan using the CDN'
-updated: 2021-12-23
+updated: 2023-09-22
 ---
 
 ## Objective

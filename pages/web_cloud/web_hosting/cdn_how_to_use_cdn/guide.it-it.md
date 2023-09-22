@@ -1,7 +1,7 @@
 ---
 title: 'Aumentare la velocità di un sito Web con la CDN'
 excerpt: 'Come ottimizzare il tuo sito accelerando la velocità di caricamento dell’hosting Web con la CDN'
-updated: 2021-12-23
+updated: 2023-09-22
 ---
 
 > [!primary]

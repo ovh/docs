@@ -1,7 +1,7 @@
 ---
 title: 'Acelerar un sitio web utilizando la CDN'
 excerpt: 'Cómo acelerar la carga de un sitio web en el alojamiento utilizando el servicio CDN'
-updated: 2021-12-23
+updated: 2023-09-22
 ---
 
 > [!primary]
