@@ -158,7 +158,7 @@ Em comparação, o acelerador PHP ("PHP-FPM") oferece um ganho de performance at
 Uma firewall é uma segurança que filtra os pedidos recebidos do seu alojamento web. Nos nossos alojamentos web, esta definição de configuração funciona como uma opção **ativável** ou **desativável**.
 Não será possível alterar as definições de filtragem da firewall propriamente dita.
 
-Consulte o guia "[Ativação da firewall da aplicação](/pages/web_cloud/web_hosting/multisites_ativating_application_firewall)" para mais informações sobre o assumpto.
+Consulte o guia "[Ativação da firewall da aplicação](/pages/web_cloud/web_hosting/multisites_activating_application_firewall)" para mais informações sobre o assumpto.
 
 > [!warning]
 >
