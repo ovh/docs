@@ -1,45 +1,44 @@
 ---
-title: Resize a Public Cloud instance using the OpenStack CLI
-excerpt: Find out how to scale up your instance resources to address an increased activity
+title: "Redimensionner une instance Public Cloud à l'aide du CLI OpenStack"
+excerpt: Découvrez comment faire évoluer les ressources de votre instance pour faire face à une activité accrue
 updated: 2023-09-22
 ---
 
-## Objective
+## Objectif
 
-As a result of increased activity, or simply to address new needs, your instance may not be able to meet this new burden due to a lack of resources. However, with OVHcloud Public Cloud, you can increase the resources available to your instance with just a few steps.
+En raison d'une activité accrue, ou simplement pour répondre à de nouveaux besoins, votre instance peut manquer de ressources et se retrouver incapable de répondre à une nouvelle charge. Grâce au Public Cloud d’OVHcloud, vous pouvez augmenter les ressources disponibles pour votre instance en quelques étapes seulement.
 
-**This guide will show you how to resize your Public Cloud instance using the OpenStack CLI.**
+**Découvez comment redimensionner votre instance Public Cloud à l'aide du CLI OpenStack.**
 
 > [!primary]
-> **Limitations:**
+> **Limites :**
 >
-> - Only upscaling is possible for classic models.
-> - [Metal instances](https://www.ovhcloud.com/en-gb/public-cloud/metal-instances/) can only be resized to and from other Metal flavors.
-> - *Flex* instances allow resizing to higher or lower models due to a locked single disk size.
+> - Seul le redimensionnement vers un modèle supérieur (*upscaling*) est possible pour les instances classiques.
+> - Une [instance Metal](https://www.ovhcloud.com/fr-ca/public-cloud/metal-instances/) ne peut être redimensionnée que vers un autre modèle **Metal**.
+> - Les instances *Flex* permettent le redimensionnement vers des modèles supérieurs ou inférieurs, en raison d'une taille de disque unique et verrouillée.
 >
 
-## Requirements
+## Prérequis
 
-- A [Public Cloud instance](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account
-- An [OpenStack user account](/pages/platform/public-cloud/create_and_delete_a_user)
-- An [OpenStack CLI ready environment](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api)
-- [Set OpenStack environment variables](/pages/platform/public-cloud/loading_openstack_environment_variables)
+- Une [instance Public Cloud](https://www.ovhcloud.com/fr-ca/public-cloud/) dans votre compte OVHcloud
+- Un [utilisateur OpenStack](/pages/platform/public-cloud/create_and_delete_a_user)
+- Avoir un [environnement OpenStack préparé pour le CLI](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api)
+- Avoir défini les [variables d'environnement OpenStack](/pages/platform/public-cloud/loading_openstack_environment_variables)
 
-
-## Instructions
+## En pratique
 
 > [!warning]
 >
-> This manipulation causes the instance to be shut down for the time of the operation.
+> Cette manipulation provoque l'arrêt de l'instance pendant toute la durée de l'opération.
 >
 
-### Performing a backup
+### Sauvegarder l'instance
 
-When performing a resize, the instance is shut down for the time of the operation. We therefore recommend that you back up your instance and stop all running processes before proceeding. For more information on how to backup your instance, read the following [guide](/pages/platform/public-cloud/save_an_instance).
+Lors d'un redimensionnement, l'instance est arrêtée pendant toute la durée de l'opération. Avant de procéder, il est donc recommandé de sauvegarder votre instance et d'arrêter tous les processus en cours d'exécution. Retrouvez plus d'informations sur les méthodes de sauvegarde dans le [guide dédié](/pages/platform/public-cloud/save_an_instance).
 
-### Listing servers
+### Lister les instances
 
-The first step is to list your servers in order to retrieve the name of the instance you wish to resize. In our example, we want to resize the instance named "OVHcloudinstance".
+La première étape consiste à lister vos instances afin de récupérer le nom de l'instance que vous souhaitez redimensionner. Dans notre exemple, nous souhaitons redimensionner l'instance nommée « OVHcloudinstance ».
 
 ```bash
 $ openstack server list
@@ -52,9 +51,9 @@ $ openstack server list
 +--------------------------------------+----------------------------------------------------------------+--------+----------------------------------------------+
 ```
 
-### Listing flavors <a name="flavorlist"></a>
+### Lister les modèles <a name=« flavorlist »></a>
 
-Next, you need to display the list of flavors available in your region in order to retrieve the ID of the new flavor. In our example, we want to resize our instance to a b2-30 model with ID "098889e6-d1fc-4967-baea-19fd97fd83a8".
+Vous devez afficher à présent la liste des modèles (*flavors*) disponibles dans votre région afin de récupérer l'ID du nouveau modèle. Dans notre exemple, nous voulons redimensionner notre instance sur un modèle b2-30 avec l'ID `098889e6-d1fc-4967-baea-19fd97fd83a8`.
 
 ```bash
 $ openstack flavor list
@@ -79,24 +78,23 @@ $ openstack flavor list
 ```
 
 > [!warning]
-> Please note that you cannot switch OS models when resizing an instance. A resizing can only be done from a Linux model to another Linux model or from a Windows model to another Windows model.
->
+> Veuillez noter que vous pouvez uniquement redimensionner une instance d'un modèle Linux à un autre modèle Linux et d'un modèle Windows à un autre modèle Windows.
 
-### Resizing an instance
+### Redimensionner l'instance
 
-Once you have retrieved the necessary information, you can now resize your instance:
+Une fois les informations récupérées, vous pouvez à présent redimensionner votre instance :
 
 ```bash
 $  openstack server resize --flavor <FLAVOR-ID> <INSTANCE-NAME>
 ```
 
-To resize our "OVHcloudinstance":
+Par exemple, pour redimensionner notre instance « OVHcloudInstance » :
 
 ```bash
 $ openstack server resize --flavor 098889e6-d1fc-4967-baea-19fd97fd83a8 OVHcloudinstance
 ```
 
-You can follow the process by running the following command frequently. The status should appear as `RESIZE`.
+Vous pouvez suivre le processus en exécutant fréquemment la commande suivante. L'état (*status*) doit être `RESIZE`.
 
 ```bash
 $ openstack server show OVHcloudinstance
@@ -117,18 +115,18 @@ $ openstack server show OVHcloudinstance
 +-------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ```
 
-### Scaling down an instance
+### Réduire une instance
 
 > [!warning]
-> This option is only available for *Flex* models.
+> Cette option n'est disponible que pour les modèles *Flex*.
 >
 
-In case you wish to scale down your instance, you can do this by performing the same steps mentioned [above](#flavorlist) and use a different ID in the <FLAVOR-ID> field.
+Si vous souhaitez réduire votre instance, vous pouvez le faire en suivant les mêmes étapes mentionnées [ci-dessus](#flavorlist) et en utilisant un ID différent dans le champ <FLAVOR-ID>.
 
-## Go further
+## Aller plus loin
 
-[Resize a Public Cloud instance via the OVHcloud Control Panel](/pages/public_cloud/compute/resize_instance_manager)
+[Redimensionner une instance Public Cloud via l’espace client OVHcloud](/pages/public_cloud/compute/resize_instance_manager)
 
-[Resize a Public Cloud instance via Horizon](/pages/public_cloud/compute/resize_of_an_instance)
+[Redimensionner une instance Public Cloud via Horizon](/pages/public_cloud/compute/resize_of_an_instance)
 
-Join our community of users on <https://community.ovh.com/en/>.
+Échangez avec notre communauté d’utilisateurs sur <https://community.ovh.com/>.
