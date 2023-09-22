@@ -305,7 +305,7 @@ Cette action permet de désactiver le CDN pour une ou plusieurs de vos entrées 
 > [!warning]
 >
 > Désactiver l'option CDN pour un site web nécessite de changer l'adresse IP à utiliser pour rediriger votre nom de domaine vers votre hébergement web.
-> Ce changement se fait automatiquement si la zone DNS active de votre nom de domaine est également gérée depuis l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) contenant votre hébergement web.
+> Ce changement se fait automatiquement si la zone DNS active de votre nom de domaine est également gérée depuis le [compte OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) contenant votre hébergement web.
 >
 > Dans le cas contraire, vous devrez effectuer les deux actions suivantes :
 >
