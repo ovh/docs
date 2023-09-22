@@ -1,5 +1,5 @@
 ---
-title: "NSX-T: retrieving logs via the API"
+title: "NSX-T: retrieving logs via the API (EN)"
 excerpt: "Find out how to get NSX node logs using the dedicated API"
 updated: 2023-09-22
 ---
