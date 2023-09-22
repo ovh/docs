@@ -1,7 +1,7 @@
 ---
 title: "Web hosting : cambiar el sitio web a HTTPS"
 excerpt: "Descubra cómo cambiar su sitio web a "HTTPS" después de activar un certificado SSL"
-updated: 2023-09-20
+updated: 2023-09-22
 ---
 
 > [!primary]
@@ -137,15 +137,13 @@ RewriteCond %{SERVER_PORT} 80
 RewriteRule ^(.*)$ https://www.mypersonaldomain.ovh/$1 [R,L]
 ```
 
-> [!warning]
->
-> Para los planes de hosting [Cloud Web](https://www.ovhcloud.com/es-es/web-hosting/cloud-web-offer/), utilice el siguiente script:
-> ```
-> RewriteEngine On
-> RewriteCond %{ENV:HTTPS} !on
-> RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
-> ```
->
+**Atención**, para los planes de hosting [Cloud Web](https://www.ovhcloud.com/es-es/web-hosting/cloud-web-offer/), utilice el siguiente script:
+
+```console
+RewriteEngine On
+RewriteCond %{ENV:HTTPS} !on
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+```
 
 ### 4. Comprobar que el sitio web funcione correctamente
 

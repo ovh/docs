@@ -1,7 +1,7 @@
 ---
 title: "Webhosting : website auf „HTTPS“ umstellen"
 excerpt: "Diese Anleitung erklärt, wie Sie nach der Aktivierung eines SSL-Zertifikats Ihre Website auf „HTTPS“ umstellen können"
-updated: 2023-09-20
+updated: 2023-09-22
 ---
 
 > [!primary]
@@ -137,15 +137,13 @@ RewriteCond %{SERVER_PORT} 80
 RewriteRule ^(.*)$ https://www.mypersonaldomain.ovh/$1 [R,L]
 ```
 
-> [!warning]
->
-> Für die [Cloud Web](https://www.ovhcloud.com/de/web-hosting/cloud-web-offer/) Hosting-Angebote ist folgendes Skript zu verwenden:
-> ```
-> RewriteEngine On
-> RewriteCond %{ENV:HTTPS} !on
-> RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
-> ```
->
+**Achtung**, für die [Cloud Web](https://www.ovhcloud.com/de/web-hosting/cloud-web-offer/) Hosting-Angebote ist folgendes Skript zu verwenden:
+
+```console
+RewriteEngine On
+RewriteCond %{ENV:HTTPS} !on
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+```
 
 ### Schritt 4: Korrektes Funktionieren der Website überprüfen
 

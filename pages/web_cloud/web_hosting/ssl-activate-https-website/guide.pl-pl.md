@@ -1,7 +1,7 @@
 ---
 title: "Hosting WWW : przełączenie strony WWW na HTTPS"
-excerpt: "Dowiedz się, jak ustawić protokół "HTTPS" na Twojej stronie WWW po aktywacji certyfikatu SSL"
-updated: 2023-09-204
+excerpt: "Dowiedz się, jak ustawić protokół HTTPS na Twojej stronie WWW po aktywacji certyfikatu SSL"
+updated: 2023-09-22
 ---
 
 > [!primary]
@@ -137,15 +137,13 @@ RewriteCond %{SERVER_PORT} 80
 RewriteRule ^(.*)$ https://www.mypersonaldomain.ovh/$1 [R,L]
 ```
 
-> [!warning]
->
-> W przypadku pakietów hostingowych [Cloud Web](https://www.ovhcloud.com/pl/web-hosting/cloud-web-offer/) użyj następującego skryptu:
-> ```
-> RewriteEngine On
-> RewriteCond %{ENV:HTTPS} !on
-> RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
-> ```
->
+**Uwaga**, w przypadku pakietów hostingowych [Cloud Web](https://www.ovhcloud.com/pl/web-hosting/cloud-web-offer/) użyj następującego skryptu:
+
+```console
+RewriteEngine On
+RewriteCond %{ENV:HTTPS} !on
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+```
 
 ### Etap 4: sprawdzenie prawidłowego działania Twojej strony WWW
 

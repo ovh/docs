@@ -1,7 +1,7 @@
 ---
 title: "Alojamento web : passar o seu website em HTTPS"
-excerpt: "Saiba como passar o seu website em "HTTPS" após ter ativado um certificado SSL"
-updated: 2023-09-20
+excerpt: "Saiba como passar o seu website em HTTPS após ter ativado um certificado SSL"
+updated: 2023-09-22
 ---
 
 > [!primary]
@@ -137,15 +137,13 @@ RewriteCond %{SERVER_PORT} 80
 RewriteRule ^(.*)$ https://www.mypersonaldomain.ovh/$1 [R,L]
 ```
 
-> [!warning]
->
-> Para as ofertas de alojamento [Cloud Web](https://www.ovhcloud.com/pt/web-hosting/cloud-web-offer/), o script a utilizar é o seguinte:
-> ```
-> RewriteEngine On
-> RewriteCond %{ENV:HTTPS} !on
-> RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
-> ```
->
+**Atenção**, para as ofertas de alojamento [Cloud Web](https://www.ovhcloud.com/pt/web-hosting/cloud-web-offer/), o script a utilizar é o seguinte:
+
+```console
+RewriteEngine On
+RewriteCond %{ENV:HTTPS} !on
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+```
 
 ### 4 - Verificar o bom funcionamento do website
 

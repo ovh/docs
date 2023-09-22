@@ -1,7 +1,7 @@
 ---
 title: "Web Hosting: switch your website to HTTPS"
 excerpt: "Find out how to switch your website to "HTTPS" after activating an SSL certificate"
-updated: 2023-09-20
+updated: 2023-09-22
 ---
 
 ## Objective
@@ -133,15 +133,13 @@ RewriteCond %{SERVER_PORT} 80
 RewriteRule ^(.*)$ https://www.mypersonaldomain.ovh/$1 [R,L]
 ```
 
-> [!warning]
->
-> For [Cloud Web](https://www.ovhcloud.com/en-gb/web-hosting/cloud-web-offer/) hosting plans, the script to use is as follows:
-> ```
-> RewriteEngine On
-> RewriteCond %{ENV:HTTPS} !on
-> RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
-> ```
->
+**Warning**, for [Cloud Web](https://www.ovhcloud.com/en-gb/web-hosting/cloud-web-offer/) hosting plans, the script to use is as follows:
+
+```console
+RewriteEngine On
+RewriteCond %{ENV:HTTPS} !on
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+```
 
 ### Step 4: Check that your website is working properly.
 

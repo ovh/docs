@@ -1,7 +1,7 @@
 ---
 title: "Web Hosting: switch your website to HTTPS"
 excerpt: "Find out how to switch your website to "HTTPS" after activating an SSL certificate"
-updated: 2023-09-20
+updated: 2023-09-22
 ---
 
 ## Objective

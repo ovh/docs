@@ -1,7 +1,7 @@
 ---
 title: "Hosting Web : passare il proprio sito Web in HTTPS"
-excerpt: "Questa guida ti mostra come attivare il protocollo "HTTPS" sul tuo sito dopo aver attivato un certificato SSL"
-updated: 2023-09-20
+excerpt: "Questa guida ti mostra come attivare il protocollo HTTPS sul tuo sito dopo aver attivato un certificato SSL"
+updated: 2023-09-22
 ---
 
 > [!primary]
@@ -133,15 +133,13 @@ RewriteRule ^(.*)$ https://www.mypersonaldomain.ovh/$1 [R,L]
 ```
 Sostituisci le informazioni generiche presenti nello script con il tuo dominio e adattalo, se necessario.
 
-> [!warning]
->
-> Per le offerte di hosting [Cloud Web](https://www.ovhcloud.com/it/web-hosting/cloud-web-offer/), utilizza questo script:
-> ```
-> RewriteEngine On
-> RewriteCond %{ENV:HTTPS} !on
-> RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
-> ```
->
+**Attenzione**, per le offerte di hosting [Cloud Web](https://www.ovhcloud.com/it/web-hosting/cloud-web-offer/), utilizza questo script:
+
+```console
+RewriteEngine On
+RewriteCond %{ENV:HTTPS} !on
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+```
 
 ### Step 4: verifica il corretto funzionamento del sito
 
