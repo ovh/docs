@@ -49,7 +49,7 @@ We will configure one virtual Host to send all of its logs to your stream, you w
 
 We use the CustomLog format directive to transform Apache logs in LTSV format and ship them to the Logs Data Platform with the proper OVHcloud token. Note that 3 fields are mandatory with the LTSV format; host, message and time (in the RFC 3339 format). Refer to the examples below to learn how to fill in these fields. Please create the file **/etc/httpd/conf.d/ldp.conf** or **/etc/apache2/conf.d/ldp.conf** (it depends of your distribution) and insert the following:
 
-```ApacheConf hl_lines="1 2"
+```ApacheConf
  LogFormat "X-OVH-TOKEN:XXXXXXXXXXX\tdomain:%V\thost:%h\tserver:%A\ttime:%{sec}t\tident:%l\tuser:%u\tmethod:%m\tpath:%U%q\tprotocol:%H\tstatus_int:%>s\tsize_int:%b\treferer:%{Referer}i\tagent:%{User-Agent}i\tresponse_time_int:%D\tcookie:%{cookie}i\tset_cookie:%{Set-Cookie}o\tmessage:%h %l %u %t \"%r\" %>s %b\n" combined_ltsv
  CustomLog "|/usr/bin/openssl s_client -connect <your_cluster>.logs.ovh.com:12201" combined_ltsv
  ErrorLog syslog:local1
@@ -61,7 +61,7 @@ Note that you will have to replace the address and the port of `<your_cluster>.l
 
 If you want to only send logs from a specific VirtualHost, or send specific information about one VirtualHost, use this configuration to send logs to Logs Data platform:
 
-```ApacheConf hl_lines="9"
+```ApacheConf
 <VirtualHost *:80>
    ServerName www.example.com
    ServerAlias example.com
@@ -85,7 +85,7 @@ If you already have syslog-ng on your host and you want to leverage its features
 
 #### Apache configuration
 
-```ApacheConf hl_lines="1"
+```ApacheConf
  LogFormat "X-OVH-TOKEN:XXXXXXXXXXX\tdomain:%V\thost:%h\tserver:%A\ttime:%{sec}t\tident:%l\tuser:%u\tmethod:%m\tpath:%U%q\tprotocol:%H\tstatus_int:%>s\tsize_int:%b\treferer:%{Referer}i\tagent:%{User-Agent}i\tresponse_time_int:%D\tcookie:%{cookie}i\tset_cookie:%{Set-Cookie}o\tmessage:%h %l %u %t \"%r\" %>s %b\n" combined_ltsv
  CustomLog /var/log/httpd/access.log combined_ltsv
  ErrorLog syslog:local1
@@ -95,7 +95,7 @@ The configuration is pretty similar to the one used in the first part of this do
 
 #### Syslog-ng configuration
 
-```text hl_lines="6 11"
+```text
  source s_apache {
      file("/var/log/httpd/access.log" flags(no-parse));
  };
