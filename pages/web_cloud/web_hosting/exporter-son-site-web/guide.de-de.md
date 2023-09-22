@@ -103,4 +103,8 @@ Nachdem Sie den Logtyp und Monat ausgewählt haben, sind die Logs nach Tag archi
 
 [Backup einer Webhosting-Datenbank exportieren](/pages/web_cloud/web_hosting/sql_database_export)
 
-Für den Austausch mit unserer Community gehen Sie auf <https://community.ovh.com/en/>.
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
+
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
