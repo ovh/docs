@@ -21,9 +21,9 @@ As a result of increased activity, or simply to address new needs, your instance
 ## Requirements
 
 - A [Public Cloud instance](https://www.ovhcloud.com/en-ca/public-cloud/) in your OVHcloud account
-- An [OpenStack user account](/pages/platform/public-cloud/create_and_delete_a_user)
-- An [OpenStack CLI ready environment](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api)
-- [Set OpenStack environment variables](/pages/platform/public-cloud/loading_openstack_environment_variables)
+- An [OpenStack user account](/pages/public_cloud/compute/create_and_delete_a_user)
+- An [OpenStack CLI ready environment](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api)
+- [Set OpenStack environment variables](/pages/public_cloud/compute/loading_openstack_environment_variables)
 
 
 ## Instructions
@@ -35,7 +35,7 @@ As a result of increased activity, or simply to address new needs, your instance
 
 ### Performing a backup
 
-When performing a resize, the instance is shut down for the time of the operation. We therefore recommend that you back up your instance and stop all running processes before proceeding. For more information on how to backup your instance, read the following [guide](/pages/platform/public-cloud/save_an_instance).
+When performing a resize, the instance is shut down for the time of the operation. We therefore recommend that you back up your instance and stop all running processes before proceeding. For more information on how to backup your instance, read the following [guide](/pages/public_cloud/compute/save_an_instance).
 
 ### Listing servers
 
