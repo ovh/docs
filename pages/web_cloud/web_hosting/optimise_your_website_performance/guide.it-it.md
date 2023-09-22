@@ -4,16 +4,19 @@ excerpt: "Guida all'ottimizzazione delle performance del tuo sito"
 updated: 2022-02-03
 ---
 
+> [!primary]
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
+>
+
 ## Obiettivo
+
 Le performance di un sito possono essere influenzate da diversi fattori. 
 Ti proponiamo qualche spunto per risolvere i problemi di un sito lento e per ottimizzarne performance e posizionamento.
 
 **Questa guida ti mostra come migliorare le performance del tuo sito web**.
 
-> [!warning]
-> Questa guida ti mostra come utilizzare una o più soluzioni OVHcloud con strumenti esterni e ti illustra le operazioni da eseguire in un contesto specifico. Ricordati di adattare queste operazioni al tuo caso. In caso di difficoltà, rivolgiti a un fornitore specializzato e/o contatta la nostra Community di utenti all’indirizzo<https://community.ovh.com/en/>. OVHcloud non può fornirti alcuna assistenza a questo proposito.
-
 ## Prerequisiti
+
 - Una [soluzione Web Hosting OVHcloud](https://www.ovhcloud.com/it/web-hosting/){.external}
 - Una email conferma che la tua soluzione di Web Hosting è stato configurato
 - Un [dominio](https://www.ovhcloud.com/it/domains/){.external}per accedere al tuo sito
@@ -24,18 +27,23 @@ Ti proponiamo qualche spunto per risolvere i problemi di un sito lento e per ott
 ### Step 1: Definisci il campo di applicazione
 
 #### Domande da porsi in caso di rallentamenti:
+
 Se il tuo sito Web è lento, può essere utile porsi le seguenti domande per restringere il campo d’indagine.
 
 1. **Da quanto tempo riscontri dei rallentamenti?**
 
 Valuta se il problema è legato a una modifica recente apportata al tuo sito, ad esempio l’aggiunta di un nuovo plugin malfunzionante o di un nuovo tema che effettua numerose richieste e può quindi rallentare il sito.
+
 2. **Il rallentamento è temporaneo o permanente?**
 
 Verifica in quale momento della giornata si presentano questi rallentamenti e se corrispondono a una grande affluenza di traffico al sito, o se contemporaneamente vengono avviati altri task.
+
 3. **Su tutto o su parte del tuo sito?**
 
 Se è interessata una sola pagina e non tutto il sito, è utile analizzarla e verificare quale richiesta o script causa il rallentamento.
+
 4. **Viene rilevato un errore? Se sì, di che tipo?**
+
 Verifica se si generano errori per capire meglio la causa del problema. e poi consulta i log per una migliore visione d’insieme.
 
 Le risposte a queste domande possono aiutarti a concentrarti su aspetti ben specifici e a individuare le aree di miglioramento del tuo sito.
@@ -47,6 +55,7 @@ Ti forniamo alcuni consigli su quale soluzione Hosting Web utilizzare per i CMS 
 Per maggiori informazioni clicca [qui](https://www.ovhcloud.com/it/web-hosting/uc-best-web-hosting/){.external}.
 
 ### Step 2: Verifica la versione PHP
+
 L’utilizzo dell’ultima versione php compatibile con il tuo sito può influenzare significativamente le performance del tuo sito.
 Per verificarne la compatibilità, consulta [la documentazione ufficiale di PHP](https://php.net/eol.php){.external}.
 
@@ -70,6 +79,7 @@ Per passare all’uso di PHP-FPM nella versione _stabile_o per ottenere informaz
 Il file _.ovhconfig_ funziona nella root del tuo hosting o nella sottodirectory di livello 1 (es.:_/www/_), ma non nella directory di livello 2 o superiore (es.: _/www/test/_, _/www/test/test2/_)
 
 ### Step 3: Verifica i contenuti media (immagini, video, ecc.)
+
 Quando si accede ad un sito web tutti i contenuti devono essere scaricati dal browser.
 
 Questa operazione potrebbe risultare particolarmente problematica quando si accede a un sito non ottimizzato da un dispositivo mobile.
@@ -81,6 +91,7 @@ Spetta a te scegliere quelli che più si adattano alle tue esigenze.
 Puoi trovare maggiori informazioni più avanti, allo step 5.
 
 ### Step 4: Ottimizza i tuoi script
+
 Correla i grafici relativi all’utilizzo delle risorse del tuo hosting (ulteriori informazioni qui di seguito) per trovare l’origine dei ritardi e poi consulta i log per rilevare le date dei picchi.
 
 Puoi accedere ai tuoi log, alle statistiche e ai grafici direttamente dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)){.external}.
@@ -121,6 +132,7 @@ Ricordati di selezionare il nome del tuo database e il periodo che ti interessa.
 - **Richieste SQL**: mostra la quantità di richieste
 
 ### Step 5: Controlla le richieste della rete
+
 Uno strumento utile di analisi è rappresentato dal [Network Monitor](https://developer.mozilla.org/en-US/docs/Tools/Network_Monitor){.external}, che è direttamente integrato nel browser Mozilla Firefox e permette di analizzare nel dettaglio i tempi di caricamento di una pagina.
 
 Questo strumento è in grado di verificare quali elementi del tuo sito sono più lenti o più pesanti nel caricare.
@@ -215,6 +227,7 @@ Esempio:
 Ad esempio, evita di utilizzare “HAVING” (che appesantisce le tue richieste) e “GROUP BY” se non strettamente necessario.
 
 #### Web Cloud Databases
+
 Se, nonostante tutte le modifiche e le ottimizzazioni effettuate, il database è lento, o se vengono inviate numerose richieste al database, ti consigliamo di passare alla nostra soluzione Web Cloud Databases per avere più risorse disponibili.
 [Consulta l'offerta Web Cloud Databases sul nostro sito](https://www.ovh.it/cloud/cloud-databases/){.external}.
 
@@ -226,4 +239,8 @@ Se, nonostante tutte le modifiche e le ottimizzazioni effettuate, il database è
 
 [Inziare a utilizzare Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb){.external}
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
+
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
+
+Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.
