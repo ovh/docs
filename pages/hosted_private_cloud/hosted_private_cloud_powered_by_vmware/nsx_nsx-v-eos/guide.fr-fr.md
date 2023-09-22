@@ -1,7 +1,7 @@
 ---
 title: VMware NSX-v - Fin de prise en charge
 excerpt: "Analysez votre utilisation des fonctionnalités NSX-v et choisissez entre les différents scénarios possibles d’évolution, allant de la désactivation du composant NSX-v jusqu'à la migration vers NSX"
-updated: 2023-08-14
+updated: 2023-09-20
 ---
 
 ## Objectif
@@ -26,6 +26,10 @@ Pour identifier votre utilisation de la fonctionnalité NSX-v dans votre environ
 
 Si vous n'utilisez aucune des fonctionnalités ci-dessus, vous pourrez désactiver NSX-v. Vous serez notifié lorsque le processus de désactivation sera disponible.
 
+Quelle que soit votre gamme Hosted Private Cloud, si vous souhaitez désactiver NSX-v, vous n'aurez pas à effectuer la migration vers un nouveau Datacenter. Vous pourrez conserver vos ressources actuelles.
+
+Consultez notre page sur le [cycle de vie de la solution VMware on OVHcloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/lifecycle_policy).
+
 #### Je n'utilise que du VXLAN
 
 Si la seule fonctionnalité que vous utilisez est le VXLAN, les choix suivants s'offre à vous :
@@ -47,6 +51,9 @@ Si vous souhaitez le migrer vers des VLAN, pour vous aider à configurer votre r
 > [!primary]
 >
 > Retrouvez plus d'informations sur l'utilisation des API OVHcloud dans notre guide « [Premiers pas avec les API OVHcloud](/pages/manage_and_operate/api/first-steps) ».
+
+Suite à la validation de ce appel API, un e-mail vous sera envoyé. Ce dernier contiendra une proposition de correspondance entre VXLAN et VLAN. 
+Il s'agit là uniquement d'une proposition contenant une liste de vos VMs et des réseaux utilisés. Il vous appartient de vérifier que ces VLAN ne sont pas utilisés par d'autres services OVHcloud.
 
 Pour créer vos réseaux VLAN, vous pouvez suivre cette documentation : [Création de VLAN](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/creation_vlan).
 

@@ -1,7 +1,7 @@
 ---
 title: Dateisystem auf einem VPS überprüfen
 excerpt: Erfahren Sie hier, wie Sie ein Dateisystem im Rescue-Modus auf Fehler überprüfen
-updated: 2021-04-20
+updated: 2023-09-20
 ---
 
 > [!primary]
@@ -30,32 +30,55 @@ updated: 2021-04-20
 
 Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und starten Sie den Server im Rescue-Modus neu. Wenn nötig, verwenden Sie unsere Anleitung zum [Rescue-Modus](/pages/bare_metal_cloud/virtual_private_servers/rescue).
 
-Bei älteren VPS Diensten werden die Partitionen im Rescue-Modus automatisch erstellt. Sie können dies mit folgendem Befehl überprüfen:
+Anschließend können Sie die verfügbaren Disks mit diesem Befehl überprüfen:
 
 ```bash
-$ lsblk
+lsblk
+```
 
+Die Partition für den Rescue-Modus (`sda1` in diesem Beispiel) ist im Verzeichnis `/` gemountet, und die Disk des VPS (hier: `sdb`) sollte keinen Mountpunkt haben.
+
+Beispiel:
+
+```console
 NAME   MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
 sda      8:0    0  2.5G  0 disk
 └─sda1   8:1    0  2.5G  0 part /
 sdb      8:16   0   80G  0 disk
+└─sdb1   8:17   0   80G  0 part  
+```
+
+Wenn Ihr Ergebnis ähnlich aussieht wie die Ausgabe oben und die Spalte `MOUNTPOINT` in der entsprechenden Zeile (`sdb1`) leer ist, können Sie mit dem [nächsten Schritt](#fscheck) fortfahren.
+
+Wenn Ihr Ergebnis jedoch zeigt, dass es einen Mountpunkt für die VPS-Partition gibt, muss sie zuerst ausgehängt werden (*unmount*).
+
+Beispiel:
+
+```console
+sdb      8:16   0   80G  0 disk
 └─sdb1  8:17   0   80G  0 part  /mnt/sdb1
 ```
 
-Die Beispielausgabe zeigt einen vorhandenen Mountpoint. Dies bedeutet, dass die zu überprüfende Partition zuerst ausgehängt werden muss:
+Im obigen Beispiel ist die Partition `sdb1` unter `/mnt/` gemountet. Damit die Partition überprüft werden kann, darf diese Partition nicht gemountet sein.
+
+Um die Partition auszuhängen, verwenden Sie den folgenden Befehl:
 
 ```bash
-$ umount /dev/sdb1
+umount /dev/partition_name
 ```
 
-> [!primary]
->
-> Wenn Ihr VPS aus der aktuellen Produktreihe stammt, sollte die Spalte `MOUNTPOINT` leer sein und Sie können den vorherigen Schritt ignorieren.
+In dieser Beispielkonfiguration wäre der Befehl:
+
+```bash
+umount /dev/sdb1
+```
+
+<a name="fscheck"></a>
 
 Sie können nun die Partition mit "fsck" überprüfen:
 
 ```bash
-$ fsck /dev/sdb1
+fsck /dev/sdb1
 
 cloudimg-rootfs: clean, 134995/3225600 files, 849881/6525179 blocks
 ```
@@ -63,7 +86,7 @@ cloudimg-rootfs: clean, 134995/3225600 files, 849881/6525179 blocks
 Wenn das Ergebnis leer ist, bedeutet dies normalerweise, dass das Dateisystem fehlerfrei ist. Sie können jedoch eine Überprüfung erzwingen:
 
 ```bash
-$ fsck /dev/sdb1 -f
+fsck /dev/sdb1 -f
 ```
 
 ### VPS mit Windows
@@ -72,33 +95,64 @@ Die obigen Anweisungen gelten in der Regel nicht für einen Windows VPS, da die 
 
 Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und starten Sie den Server im Rescue-Modus neu. Wenn nötig, verwenden Sie unsere Anleitung zum [Rescue-Modus](/pages/bare_metal_cloud/virtual_private_servers/rescue).
 
-Bei älteren VPS Diensten werden die Partitionen im Rescue-Modus automatisch erstellt. Sie können dies mit folgendem Befehl überprüfen:
+Anschließend können Sie die verfügbaren Disks und ihre Größe mit diesem Befehl überprüfen:
 
 ```bash
-$ lsblk
+lsblk
+```
 
+Die Partition für den Rescue-Modus (`sda1` in diesem Beispiel) ist im Verzeichnis `/` gemountet, und die Disk des VPS (hier: `sdb`) sollte keinen Mountpunkt haben.
+
+Beispiel:
+
+```console
 NAME   MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
 sda      8:0    0  2.5G  0 disk
 └─sda1   8:1    0  2.5G  0 part /
 sdb      8:16   0  100G  0 disk
-├─sdb1   8:17   0  350M  0 part /mnt/sdb1
+├─sdb1   8:17   0  350M  0 part 
+├─sdb2   8:18   0 99.7G  0 part 
+```
+
+Wenn Ihr Ergebnis ähnlich aussieht wie die Ausgabe oben und die Spalte `MOUNTPOINT` in der entsprechenden Zeile leer ist, können Sie mit dem [nächsten Schritt](#fscheckwin) fortfahren.
+
+Wenn Ihr Ergebnis jedoch zeigt, dass es einen Mountpunkt für die VPS-Partition gibt, muss sie zuerst ausgehängt werden (*unmount*).
+
+Beispiel:
+
+```console
+sdb      8:16   0  100G  0 disk
+├─sdb1   8:17   0  350M  0 part
 ├─sdb2   8:18   0 99.7G  0 part /mnt/sdb2
 ```
 
-Die Beispielausgabe zeigt einen vorhandenen Mountpoint. Dies bedeutet, dass die zu überprüfende Partition zuerst ausgehängt werden muss:
+Im obigen Beispiel ist die betroffene Partition `sdb2` unter `/mnt/` gemountet. Damit die Partition überprüft werden kann, darf diese Partition nicht gemountet sein.
+
+Um die Partition auszuhängen, verwenden Sie den folgenden Befehl:
 
 ```bash
-$ umount /dev/sdb1
+umount /dev/partition_name
 ```
 
-> [!primary]
->
-> Wenn Ihr VPS aus der aktuellen Produktreihe stammt, sollte die Spalte `MOUNTPOINT` leer sein und Sie können den vorherigen Schritt ignorieren.
+In dieser Beispielkonfiguration wäre der Befehl:
+
+```bash
+umount /dev/sdb2
+```
+
+<a name="fscheckwin"></a>
 
 Der folgende Befehl überprüft die Kohärenz der Partition und versucht, gefundene Fehler zu beheben:
 
+
 ```bash
-$ ntfsfix /dev/sdb1
+ntfsfix /dev/partition_name
+```
+
+In dieser Beispielkonfiguration wäre der Befehl:
+
+```bash
+ntfsfix /dev/sdb2
 ```
 
 ## Weiterführende Informationen

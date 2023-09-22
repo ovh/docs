@@ -1,7 +1,7 @@
 ---
 title: 'Guardar una instancia'
 excerpt: 'Cómo realizar el backup de una instancia de Public Cloud desde el área de cliente de OVHcloud'
-updated: 2023-01-04
+updated: 2023-09-21
 ---
 
 > [!primary]
@@ -85,6 +85,9 @@ Las planificaciones pueden crearse y eliminarse en la sección `Workflow Managem
 Las copias de seguridad de sus instancias se gestionan en la sección `Instance Backup`{.action} del área de cliente de Public Cloud.
 
 ![public-cloud-instance-backup](images/createbackup10.png){.thumbnail}
+
+> [!warning]
+> **Tenga en cuenta que no puede eliminar una copia de seguridad de instancia si una instancia que se ha generado a partir de esta copia de seguridad se está ejecutando en el momento de la acción de eliminación.**
 
 Esta guía explica cómo utilizar las copias de seguridad para clonar o restaurar instancias en [esta guía](/pages/public_cloud/compute/create_restore_a_virtual_server_with_a_backup).
 

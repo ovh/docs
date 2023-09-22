@@ -72,8 +72,8 @@ You will then need to access your server via the command line or an SSH tool, us
 For example:
 
 ```bash
-ssh root@your_server_IP
-root@your_server_password:
+ssh root@vps-x11x11xyy.vps.ovh.net
+root@vps-x11x11xyy.vps.ovh.net's password:
 ```
 
 > [!warning]
@@ -88,7 +88,10 @@ For most changes you make to your server via SSH while in rescue mode, you will 
 Once you are connected, verify the available disks with this command:
 
 ```bash
-[RESCUE] root@vps-111111d:~ $ lsblk
+lsblk
+```
+
+```text
 NAME   MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
 sda      8:0    0  2.5G  0 disk
 └─sda1   8:1    0  2.5G  0 part /
@@ -99,7 +102,7 @@ sdb      8:16   0   80G  0 disk
 Next, mount the partition:
 
 ```bash
-[RESCUE] root@vps-111111d:~ $ mount /dev/sdb1 /mnt
+mount /dev/sdb1 /mnt
 ```
 
 Your data will now be accessible from the `/mnt` folder.

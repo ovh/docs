@@ -49,7 +49,7 @@ Suivez les étapes du guide sur le [mode rescue](/pages/bare_metal_cloud/dedicat
 Lorsque vous avez accès à vos fichiers, ouvrez le fichier « authorized_keys » concerné dans un éditeur de texte. Ce fichier stocke les clés SSH et se trouve dans le dossier `home` de l'utilisateur connecté à votre serveur. (Remplacez « USER_NAME » par votre nom d'utilisateur.)
 
 ```bash
-rescue-customer:~# sudo nano /mnt/home/USER_NAME/.ssh/authorized_keys
+sudo nano /mnt/home/USER_NAME/.ssh/authorized_keys
 ```
 
 Copiez-collez votre nouvelle clé publique (créée à l'étape 2) dans le fichier. Le contenu du fichier devrait ressembler à l'exemple suivant :

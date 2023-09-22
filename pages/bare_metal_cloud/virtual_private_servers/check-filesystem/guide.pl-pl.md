@@ -1,7 +1,7 @@
 ---
 title: Sprawdź system plików na serwerze VPS
 excerpt: Dowiedz się, jak wyszukać błędy w systemie plików w trybie rescue
-updated: 2021-04-20
+updated: 2023-09-20
 ---
 
 > [!primary]
@@ -29,32 +29,55 @@ updated: 2021-04-20
 
 Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i uruchom restart serwera w trybie rescue. W razie potrzeby zapoznaj się z naszym [przewodnikiem dotyczącym trybu Rescue](/pages/bare_metal_cloud/virtual_private_servers/rescue).
 
-W przypadku starszych gam VPS partycje zostaną automatycznie zamontowane w trybie rescue. Możesz to sprawdzić za pomocą polecenia:
+Następnie możesz sprawdzić konfigurację dysków:
 
 ```bash
-$ lsblk
+lsblk
+```
 
+Partycja odpowiadająca trybowi Rescue (`sda1` w tym przykładzie) jest zamontowana w katalogu `/` .Dysk VPS ma nazwę `sdb` i nie może mieć punktu montowania.
+
+Przykład:
+
+```console
 NAME   MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
 sda      8:0    0  2.5G  0 disk
 └─sda1   8:1    0  2.5G  0 part /
 sdb      8:16   0   80G  0 disk
+└─sdb1   8:17   0   80G  0 part  
+```
+
+Jeśli Twój wynik wygląda podobnie do powyższego przykładu, a kolumna `MOUNTPOINT` jest pusta w odpowiednim wierszu (`sdb1`), możesz przejść do [następnego etapu](#fscheck).
+
+Jeśli jednak Twój wynik wskazuje, że partycja VPS ma punkt montowania, najpierw należy ją odmontować.
+
+Przykład:
+
+```console
+sdb      8:16   0   80G  0 disk
 └─sdb1  8:17   0   80G  0 part  /mnt/sdb1
 ```
 
-Poniższy przykład wyniku wyświetla istniejący punkt montowania. Oznacza to, że najpierw należy odmontować partycję:
+W powyższym przykładzie wyjściowym partycja `sdb1` jest zamontowana w `/mnt/`. W celu sprawdzenia partycji nie należy jej zamontować.
+
+W celu odmontowania partycji należy użyć następującego polecenia:
 
 ```bash
-$ umount /dev/sdb1
+umount /dev/partition_name
 ```
 
-> [!primary]
->
-> Jeśli VPS jest nowy, kolumna `MOUNTPOINT` powinna być pusta i możesz pominąć poprzedni etap.
+W tym przykładzie konfiguracji, polecenie to będzie:
+
+```bash
+umount /dev/sdb1
+```
+
+<a name="fscheck"></a>
 
 Teraz możesz sprawdzić partycję za pomocą "fsck":
 
 ```bash
-$ fsck /dev/sdb1
+fsck /dev/sdb1
 
 cloudimg-rootfs: clean, 134995/3225600 kolejki, 849881/6525179 blocks
 ```
@@ -62,7 +85,7 @@ cloudimg-rootfs: clean, 134995/3225600 kolejki, 849881/6525179 blocks
 Jeśli wynik jest pusty, zazwyczaj oznacza to, że system plików jest czysty. Możesz jednak wymusić weryfikację:
 
 ```bash
-$ fsck /dev/sdb1 -f
+fsck /dev/sdb1 -f
 ```
 
 ### VPS Windows
@@ -71,33 +94,63 @@ Powyższe instrukcje zwykle nie mają zastosowania do serwera VPS z systemem Win
 
 Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i uruchom restart serwera w trybie rescue. W razie potrzeby zapoznaj się z naszym [przewodnikiem dotyczącym trybu Rescue](/pages/bare_metal_cloud/virtual_private_servers/rescue).
 
-W przypadku starszych gam VPS partycje zostaną automatycznie zamontowane w trybie rescue. Możesz to sprawdzić za pomocą polecenia:
+Następnie możesz sprawdzić konfigurację dysków:
 
 ```bash
-$ lsblk
+lsblk
+```
 
+Partycja odpowiadająca trybowi Rescue (`sda1` w tym przykładzie) jest zamontowana w katalogu `/`. Dysk VPS ma nazwę `sdb` i nie może mieć punktu montowania.
+
+Przykład:
+
+```console
 NAME   MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
 sda      8:0    0  2.5G  0 disk
 └─sda1   8:1    0  2.5G  0 part /
 sdb      8:16   0  100G  0 disk
-├─sdb1   8:17   0  350M  0 part /mnt/sdb1
+├─sdb1   8:17   0  350M  0 part 
+├─sdb2   8:18   0 99.7G  0 part 
+```
+
+Jeśli Twój wynik wygląda podobnie do powyższego przykładu, a kolumna `MOUNTPOINT` jest pusta w odpowiednim wierszu, możesz przejść do [następnego etapu](#fscheckwin).
+
+Jeśli jednak Twój wynik wskazuje, że partycja VPS ma punkt montowania, najpierw należy ją odmontować.
+
+Przykład:
+
+```console
+sdb      8:16   0  100G  0 disk
+├─sdb1   8:17   0  350M  0 part
 ├─sdb2   8:18   0 99.7G  0 part /mnt/sdb2
 ```
 
-Powyższy przykład pokazuje istniejące punkty montowania. Oznacza to, że najpierw należy odmontować partycję:
+W powyższym przykładzie wyjściowym odpowiednia partycja `sdb2` jest zamontowana w `/mnt/`. W celu sprawdzenia partycji nie należy jej zamontować.
+
+W celu odmontowania partycji należy użyć następującego polecenia:
 
 ```bash
-$ umount /dev/sdb1
+umount /dev/partition_name
 ```
 
-> [!primary]
->
-> Jeśli VPS jest nowy, kolumna `MOUNTPOINT` powinna być pusta i możesz pominąć poprzedni etap.
+W tym przykładzie konfiguracji, polecenie to będzie:
+
+```bash
+umount /dev/sdb2
+```
+
+<a name="fscheckwin"></a>
 
 Poniższe polecenie sprawdza spójność partycji i stara się usunąć ewentualne błędy:
 
 ```bash
-$ ntfsfix /dev/sdb1
+ntfsfix /dev/partition_name
+```
+
+W tym przykładzie konfiguracji, polecenie to będzie:
+
+```bash
+ntfsfix /dev/sdb2
 ```
 
 ## Sprawdź również

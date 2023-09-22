@@ -1,7 +1,7 @@
 ---
 title: 'Accélérer mon site web en utilisant le CDN'
 excerpt: 'Améliorez votre site en accélérant son chargement sur votre hébergement Web grâce au CDN'
-updated: 2021-12-23
+updated: 2023-09-21
 ---
 
 ## Objectif
@@ -301,6 +301,19 @@ Si vous n'utilisez pas de CMS, vous pouvez aussi bénéficier du cache du CDN. P
 ### Désactiver l'option CDN pour un site web
 
 Cette action permet de désactiver le CDN pour une ou plusieurs de vos entrées multisite, sans supprimer l'option CDN de votre hébergement Web.
+
+> [!warning]
+>
+> Désactiver l'option CDN pour un site web nécessite de changer l'adresse IP à utiliser pour rediriger votre nom de domaine vers votre hébergement web.
+> Ce changement se fait automatiquement si la zone DNS active de votre nom de domaine est également gérée depuis le [compte OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) contenant votre hébergement web.
+>
+> Dans le cas contraire, vous devrez effectuer les deux actions suivantes :
+>
+> - récupérez l'adresse IP **par défaut** du cluster où se trouve votre hébergement web à l'aide de notre guide « [Hébergement web : les adresses IP de nos clusters](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP) » ;
+> - modifiez manuellement l'adresse IP dans la zone DNS active de votre nom de domaine, ou contactez votre fournisseur de zone DNS afin qu'il effectue la mise à jour pour vous.
+>
+> La modification d'une entrée dans la zone DNS active d'un nom de domaine entraîne un délai de propagation de **4** à **24** heures pour être pleinement effective. Le temps que cette propagation se finalise, une page contenant le code **520** peut apparaître aléatoirement. Ce phénomène est lié au fait que certaines parties du réseau DNS redirigent encore les requêtes vers l'adresse IP du CDN lié à votre hébergement web.
+>
 
 Rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) puis sélectionnez `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} et choisissez l'offre concernée. Dans l'onglet `Multisite`{.action}, cliquez sur `...`{.action} à droite de l'entrée multisite puis sur `Modifier`{.action}.
 

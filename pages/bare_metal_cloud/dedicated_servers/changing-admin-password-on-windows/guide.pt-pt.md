@@ -1,7 +1,7 @@
 ---
 title: 'Alterar a palavra-passe administrador num servidor dedicado Windows'
 excerpt: 'Saiba como alterar a palavra-passe de um administrador num servidor dedicado Windows'
-updated: 2021-01-12
+updated: 2023-09-18
 ---
 
 > [!primary]
@@ -25,20 +25,7 @@ As etapas seguintes descrevem o processo de modificação da palavra-passe admin
 
 ### 1 - reiniciar o servidor em modo rescue
 
-O sistema deve ser ativado em modo rescue antes de poder alterar a palavra-passe admin. Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), aceda à secção `Bare Metal Cloud`{.action} e selecione o seu servidor de `Servidores dedicados`{.action}.
-
-O netboot deve ser migrado para "rescue64-pro (Customer rescue system (Linux)". Procure "Boot" na zona **Informações gerais** e clique em `...`{.action} e depois em `Alterar`{.action}.
-<br>Na página seguinte, selecione **Fazer boot em modo rescue** e  escolha "rescue64-pro" no menu. Indique um endereço de e-mail no último campo se os dados de acesso tiverem de ser enviados para um endereço diferente do endereço principal da sua conta OVHcloud. 
-
-Clique em `Seguinte`{.action} e depois em `Validar`{.action}.
-
-![prazo](images/adminpw_win_001.png){.thumbnail}
-
-Concluída a alteração, clique em `...`{.action} à direita de "Estado" na zona **Estado dos serviços**.
-<br>Clique em `Reiniciar`{.action} e o servidor será reiniciado em modo rescue. Esta operação pode demorar alguns minutos.
-<br>Pode verificar o progresso sob o separador `Tarefas`{.action}. Receberá um e-mail com os ID (incluindo a palavra-passe de ligação) do utilizador "root" do modo rescue.
-
-![rescuereboot](images/adminpw_win_02.png){.thumbnail}
+O sistema deve ser ativado em modo rescue antes de poder alterar a palavra-passe admin.
 
 Para mais informações sobre o modo rescue, consulte [este guia](/pages/bare_metal_cloud/dedicated_servers/rescue_mode).
 
@@ -46,8 +33,11 @@ Para mais informações sobre o modo rescue, consulte [este guia](/pages/bare_me
 
 Ligue-se ao seu servidor através de SSH. Se necessário, consulte o guia de [introdução ao SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction). Como se trata de um servidor Windows, as partições serão intituladas "Microsoft LDM data".
 
+```bash
+fdisk -l
 ```
-# fdisk -l
+
+```text
 Disk /dev/sda: 1.8 TiB, 2000398934016 bytes, 3907029168 sectors
 Units: sectors of 1 * 512 = 512 bytes
 Sector size (logical/physical): 512 bytes / 512 bytes
@@ -67,14 +57,17 @@ Neste exemplo, "sda4" é a partição do sistema, determinada pelo seu tamanho. 
 
 Agora, monte esta partição:
 
-```
-# mount /dev/sda4 /mnt
+```bash
+mount /dev/sda4 /mnt
 ```
 
 Verifique o ponto de montagem:
 
+```bash
+lsblk
 ```
-# lsblk
+
+```text
 NAME   MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
 sdb      8:16   0  1.8T  0 disk
 ├─sdb4   8:20   0  1.8T  0 part
@@ -92,7 +85,7 @@ sda      8:0    0  1.8T  0 disk
 
 No exemplo acima, a operação foi bem-sucedida. Se a montagem falhou, receberá provavelmente uma mensagem de erro semelhante a esta: 
 
-```
+```text
 The disk contains an unclean file system (0, 0).
 Metadata kept in Windows cache, refused to mount.
 Failed to mount '/dev/sda4': Operation not permitted
@@ -103,20 +96,27 @@ read-only with the 'ro' mount option.
 
 Neste caso, utilize o seguinte comando e tente novamente montar a partição.
 
-```
-# ntfsfix /dev/sda4
-# mount /dev/sda4 /mnt
+```bash
+ntfsfix /dev/sda4
+mount /dev/sda4 /mnt
 ```
 
 ### Etapa 3: eliminar a password atual
 
 Esta etapa consiste em manipular o ficheiro *SAM* com a ajuda de uma ferramenta que permite eliminar a palavra-passe do utilizador admin. Aceda à pasta correta e liste os utilizadores Windows:
 
+```bash
+cd /mnt/Windows/System32/config
+/mnt/Windows/System32/config#
 ```
-# cd /mnt/Windows/System32/config
-/mnt/Windows/System32/config# chntpw -l SAM
 
-chntpw version 1.00 140201, (c) Petter N Hagen
+
+```bash
+chntpw -l SAM
+```
+
+```text
+chntpw version 140201, (c) Petter N Hagen
 Hive <SAM> name (from header): <\SystemRoot\System32\Config\SAM>
 ROOT KEY at offset: 0x001020 * Subkey indexing type is: 686c <lh>
 File size 65536 [10000] bytes, containing 8 pages (+ 1 headerpage)
@@ -130,13 +130,16 @@ Used for data: 359/39024 blocks/bytes, unused: 33/18064 blocks/bytes.
 | 01f8 | WDAGUtilityAccount             |        | dis/lock |
 ```
 
-Se o comando não funcionar, instale a ferramenta primeiro: `apt get install chntpw`.
+Se o comando não funcionar, instale a ferramenta primeiro: `apt install chntpw`.
 
 Apagar a palavra-passe do utilizador admin através do seguinte comando. (Escolha "Administrator" se "admin" não existir.)
 
+```bash
+chntpw -u admin SAM
 ```
-# chntpw -u admin SAM
-chntpw version 1.00 140201, (c) Petter N Hagen
+
+```text
+chntpw version 140201, (c) Petter N Hagen
 Hive <SAM> name (from header): <\SystemRoot\System32\Config\SAM>
 ROOT KEY at offset: 0x001020 * Subkey indexing type is: 686c <lh>
 File size 65536 [10000] bytes, containing 8 pages (+ 1 headerpage)
@@ -173,9 +176,9 @@ Total  login count: 5
 Select: [q] >
 ```
 
-Carregue "1" e carregue em Enter ( ↩). (Utilize a opção 2 se aparecer um X na frente de "Disabled".)
+Carregue "1" e carregue em Enter. (Utilize a opção 2 se aparecer um X na frente de "Disabled".)
 
-```
+```text
 Select: [q] > 1
 Password cleared!
 ================= USER EDIT ====================
@@ -213,7 +216,7 @@ Select: [q] >
 
 Carregue "q" e carregue em Enter para sair da ferramenta. Introduza "y" quando for convidado a fazê-lo e carregue em Enter.
 
-```
+```text
 Select: [q] > q
  
 Hives that have changed:
@@ -229,11 +232,19 @@ Comece por substituir o netboot por **Fazer boot no disco rígido** na [Área de
 
 De volta à linha de comandos, desmonte a partição e reinicie o servidor com os seguintes comandos:
 
+```bash
+cd
 ```
-# cd
-# umount /mnt
-# reboot
 
+```bash
+umount /mnt
+```
+
+```bash
+reboot
+```
+
+```text
 Broadcast message from root@rescue.ovh.net on pts/0 (Wed 2020-05-27 11:28:53 CEST):
 
 The system is going down for reboot NOW!
@@ -266,8 +277,8 @@ Uma janela da linha de comando (cmd) deve abrir-se quando a sessão KVM estiver 
 
 Defina a palavra-passe do utilizador atual ("Administrator"):
 
-```
-user Administrator *
+```powershell
+net user Administrator *
 ```
 
 ![administratorpw](images/adminpw_win_07.png){.thumbnail}
@@ -281,21 +292,7 @@ Recomenda-se a utilização do teclado virtual para introduzir palavras-passe ne
 
 #### 1 - reiniciar o servidor em modo rescue
 
-O sistema deve ser ativado em modo rescue antes de poder alterar a palavra-passe admin. Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), aceda à secção `Bare Metal Cloud`{.action} e selecione o seu servidor de `Servidores dedicados`{.action}.
-
-O netboot deve ser migrado para "WinRescue System for Windows". Procure "Boot" na zona **Informações gerais** e clique em `...`{.action} e depois em `Alterar`{.action}.
-<br>Na página seguinte, selecione **Fazer boot em modo rescue** e escolha "WinRescue" no menu. Indique um endereço de e-mail no último campo se os dados de acesso tiverem de ser enviados para um endereço diferente do endereço principal da sua conta OVHcloud. 
-
-Clique em `Seguinte`{.action} e depois em `Validar`{.action}.
-
-![winrescuemode](images/adminpw_win_008.png){.thumbnail}
-
-Concluída a alteração, clique em `...`{.action} à direita de "Estado" na zona **Estado dos serviços**.
-<br>Clique em `Reiniciar`{.action} e o servidor será reiniciado em modo rescue. Esta operação pode demorar alguns minutos.
-<br>Pode verificar o progresso sob o separador `Tarefas`{.action}.
-<br>Receberá um e-mail com os dados de acesso (incluindo a palavra-passe) do utilizador "root" do modo rescue.
-
-![rescuereboot](images/adminpw_win_02.png){.thumbnail}
+O sistema deve ser ativado em modo rescue (WinRescue) antes de poder alterar a palavra-passe admin.
 
 Para mais informações sobre o modo rescue, consulte [este guia](/pages/bare_metal_cloud/dedicated_servers/rescue_mode).
 

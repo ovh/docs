@@ -46,7 +46,7 @@ Poursuivez la lecture de ce guide en cliquant sur le lien correspondant à votre
 ### Ubuntu 
 Si vous rencontrez un souci de connectivité réseau (par exemple, pas de ping après le remplacement de la carte mère), effectuez les actions suivantes :
 
-1\. Redémarrez le serveur en [mode rescue](/pages/bare_metal_cloud/dedicated_servers/rescue_mode).
+1\. Redémarrez le serveur en [mode rescue](/pages/bare_metal_cloud/dedicated_servers/rescue_mode).<br>
 2\. Montez la partition `/` :
 
 ```bash
@@ -137,7 +137,7 @@ Dans certain cas, il est nécessaire de propager la nouvelle adresse MAC dans le
 
 Si vous rencontrez un souci de connectivité réseau (par exemple, pas de ping après le remplacement de la carte mère), effectuez les actions suivantes : 
 
-1\. Redémarrez le serveur en [mode rescue](/pages/bare_metal_cloud/dedicated_servers/rescue_mode).
+1\. Redémarrez le serveur en [mode rescue](/pages/bare_metal_cloud/dedicated_servers/rescue_mode).<br>
 2\. Montez la partition `/` :
 
 ```bash
@@ -160,7 +160,7 @@ root@rescue:~# cp /mnt/etc/sysconfig/network-scripts/ifcfg-eth0 /mnt/etc/sysconf
 
 Si vous rencontrez un souci de connectivité réseau (par exemple, pas de ping après le remplacement de la carte mère), effectuez les actions suivantes :
 
-1\. Redémarrez le serveur en [mode rescue](/pages/bare_metal_cloud/dedicated_servers/rescue_mode).
+1\. Redémarrez le serveur en [mode rescue](/pages/bare_metal_cloud/dedicated_servers/rescue_mode).<br>
 
 ```bash 
 modprobe zfs
@@ -189,7 +189,7 @@ root@rescue:~# zfs set mountpoint="/usbkey" zones/usbkey
 
 Si vous rencontrez un souci de connectivité réseau (par exemple, pas de ping après le remplacement de la carte mère), effectuez les actions suivantes :
 
-1\. Redémarrez le serveur en mode rescue-bsd.
+1\. Redémarrez le serveur en mode rescue-bsd.<br>
 2\. Exécutez la commande `ifconfig` depuis l'invite du rescue-bsd.
 
 De cette manière, vous pouvez repérer l'appellation de votre interface réseau :
@@ -467,7 +467,7 @@ Si vous rencontrez un souci de connectivité réseau (par exemple, pas de ping a
 
 Effectuez les actions suivantes :
 
-1\. Redémarrez le serveur en [mode rescue](/pages/bare_metal_cloud/dedicated_servers/rescue_mode).
+1\. Redémarrez le serveur en [mode rescue](/pages/bare_metal_cloud/dedicated_servers/rescue_mode).<br>
 
 ```bash
 root@rescue:~# cat /mnt/etc/network/interfaces
@@ -633,7 +633,7 @@ root@rescue:~# WORKINGDIR=/home/ovh/esxi
 root@rescue:~# cd $WORKINGDIR
 ```
 
-4\. Effectuez une extraction du contenu de `state.tgz` vers `$WORKINGDIR`, pour ensuite extraire le contenu de `local.tgz`.
+4\. Effectuez une extraction du contenu de `state.tgz` vers `$WORKINGDIR`, pour ensuite extraire le contenu de `local.tgz`.<br>
 5\. Editez le fichier `esx.conf` obtenu :
 
 ```bash
@@ -698,22 +698,22 @@ Il existe 2 méthodes :
 
 #### Via IPMI/KVM
 
-1\. Connectez-vous en tant qu'administrateur à partir de l'interface [IPMI/KVM](/pages/bare_metal_cloud/dedicated_servers/using_ipmi_on_dedicated_servers).
+1\. Connectez-vous en tant qu'administrateur à partir de l'interface [IPMI/KVM](/pages/bare_metal_cloud/dedicated_servers/using_ipmi_on_dedicated_servers).<br>
 2\. Ouvrez l’utilitaire `Exécuter`{.action} (touche de logo Windows + `R`{.action}) puis, à travers l'invite `run`, exécutez la commande `devmgmt.msc` :
 
 ![win_device_manager](images/win_device_manager_edited.png){.thumbnail}
 
-3\. Ouvrez `Network adapters`{.action} et sélectionnez l'adaptateur correspondant à `eth0`.
-4\. Faites un clic-droit sur `Properties`{.action} > `Advanced`{.action}.
-5\. Repérez `Locally Administered Address`.
+3\. Ouvrez `Network adapters`{.action} et sélectionnez l'adaptateur correspondant à `eth0`.<br>
+4\. Faites un clic-droit sur `Properties`{.action} > `Advanced`{.action}.<br>
+5\. Repérez `Locally Administered Address`.<br>
 6\. Renseignez la nouvelle valeur de l'adresse MAC (chiffres uniquement, sans espaces).
 
 ![win_advanced](images/win_advanced_edited.png){.thumbnail}
 
 #### Via WinPE
 
-1\. Redémarrez le serveur en mode `WinPE`.
-2\. Lancez la commande `regedit` via l'invite de commande `run`.
+1\. Redémarrez le serveur en mode `WinPE`.<br>
+2\. Lancez la commande `regedit` via l'invite de commande `run`.<br>
 3\. Chargez la base de registre locale à travers celle disponible dans `WinPE` puis cliquez sur `HKEY_LOCAL_MACHINE`{.action} :
 
 ![win_regedit_1](images/win_regedit_1_edited.png){.thumbnail}
@@ -788,7 +788,7 @@ SUBSYSTEM=="net", ACTION=="add", DRIVERS=="?*", ATTR{address}=="xx:xx:xx:xx:xx:x
 SUBSYSTEM=="net", ACTION=="add", DRIVERS=="?*", ATTR{address}=="xx:xx:xx:xx:xx:xx", ATTR{dev_id}=="0x0", ATTR{type}=="1", KERNEL=="eth*", NAME="private"
 ```
 
-4\. Allez dans le repertoire `/boot/grub/` et créez une sauvegarde du fichier `grub.cfg`.
+4\. Allez dans le repertoire `/boot/grub/` et créez une sauvegarde du fichier `grub.cfg`.<br>
 5\. Editez le fichier `/etc/default/grub` et modifiez la ligne commençant par `GRUB_CMDLINE_LINUX` pour obtenir ceci :
 
 ```bash
@@ -822,7 +822,7 @@ Il existe 2 méthodes, via le mode rescue ou via le BIOS
 
 - Cas d'usage : le système installé (ici Proxmox) n'est plus bootable après le remplacement du disque (aucune entrée EFI n'est visible à travers le BIOS).
 
-1\. Redémarrez le serveur en [mode rescue](/pages/bare_metal_cloud/dedicated_servers/rescue_mode).
+1\. Redémarrez le serveur en [mode rescue](/pages/bare_metal_cloud/dedicated_servers/rescue_mode).<br>
 2\. Repérez le disque possédant la partition EFI d'origine :
 
 ```bash

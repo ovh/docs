@@ -1,6 +1,6 @@
 ---
-title: 'Resetting a Windows password'
-excerpt: 'Guide to resetting a Windows password'
+title: Resetting a Windows password
+excerpt: Find out how to reset your Windows account password
 updated: 2020-11-25
 ---
 

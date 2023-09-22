@@ -1,7 +1,7 @@
 ---
 title: Comprobar el sistema de archivos en un VPS
 excerpt: Cómo buscar errores en un sistema de archivos en modo de rescate
-updated: 2021-04-20
+updated: 2023-09-20
 ---
 
 > [!primary]
@@ -29,32 +29,55 @@ updated: 2021-04-20
 
 Inicie sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y reinicie el servidor en modo de rescate. Si lo necesita, consulte nuestra [guía sobre el modo de rescate](/pages/bare_metal_cloud/virtual_private_servers/rescue).
 
-En las antiguas gamas de VPS, las particiones se montarán automáticamente en modo de rescate. Para comprobarlo, utilice el siguiente comando:
+A continuación, compruebe la configuración de los discos:
 
 ```bash
-$ lsblk
+lsblk
+```
 
+La partición correspondiente al modo de rescate (`sda1` en este ejemplo) está montada en el directorio `/`. A su vez, el disco del VPS se denomina `sdb` y no debe tener ningún punto de montaje.
+
+por ejemplo,
+
+```console
 NAME   MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
 sda      8:0    0  2.5G  0 disk
 └─sda1   8:1    0  2.5G  0 part /
 sdb      8:16   0   80G  0 disk
+└─sdb1   8:17   0   80G  0 part  
+```
+
+Si el resultado es parecido al del ejemplo anterior y la columna `MOUNTPOINT` está vacía en la fila correspondiente (`sdb1`), puede pasar al [paso siguiente](#fscheck).
+
+Sin embargo, si el resultado muestra que existe un punto de montaje para la partición VPS, primero deberá desmontarla.
+
+por ejemplo,
+
+```console
+sdb      8:16   0   80G  0 disk
 └─sdb1  8:17   0   80G  0 part  /mnt/sdb1
 ```
 
-El ejemplo anterior muestra un punto de montaje existente. Esto significa que la partición que se va a comprobar debe desmontarse en primer lugar:
+En el ejemplo de salida anterior, la partición `sdb1` se monta a `/mnt/`. Para comprobar la partición, no debe montarla.
+
+Para desmontar dicha partición, utilice el siguiente comando:
 
 ```bash
-$ umount /dev/sdb1
+umount /dev/partition_name
 ```
 
-> [!primary]
->
-> Si su VPS es reciente, la columna `MOUNTPOINT` debería estar vacía y puede ignorar el paso anterior.
+En este ejemplo de configuración, el comando sería:
+
+```bash
+umount /dev/sdb1
+```
+
+<a name="fscheck"></a>
 
 Compruebe la partición con "fsck":
 
 ```bash
-$ fsck /dev/sdb1
+fsck /dev/sdb1
 
 cloudimg-rootfs: clean, 134995/3225600 files, 849881/6525179 blocks
 ```
@@ -62,7 +85,7 @@ cloudimg-rootfs: clean, 134995/3225600 files, 849881/6525179 blocks
 Si el resultado está vacío, normalmente significa que el sistema de archivos está limpio. No obstante, puede forzar una comprobación:
 
 ```bash
-$ fsck /dev/sdb1 -f
+fsck /dev/sdb1 -f
 ```
 
 ### VPS Windows
@@ -71,33 +94,63 @@ Las instrucciones anteriores no suelen aplicarse a un VPS con Windows, ya que la
 
 Inicie sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y reinicie el servidor en modo de rescate. Si lo necesita, consulte nuestra [guía sobre el modo de rescate](/pages/bare_metal_cloud/virtual_private_servers/rescue).
 
-En las antiguas gamas de VPS, las particiones se montarán automáticamente en modo de rescate. Puede comprobarlo utilizando el siguiente comando:
+A continuación, compruebe la configuración de los discos:
 
 ```bash
-$ lsblk
+lsblk
+```
 
+La partición correspondiente al modo de rescate (`sda1` en este ejemplo) está montada en el directorio `/` .A su vez, el disco del VPS se denomina `sdb` y no debe tener ningún punto de montaje.
+
+por ejemplo,
+
+```console
 NAME   MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
 sda      8:0    0  2.5G  0 disk
 └─sda1   8:1    0  2.5G  0 part /
 sdb      8:16   0  100G  0 disk
-├─sdb1   8:17   0  350M  0 part /mnt/sdb1
+├─sdb1   8:17   0  350M  0 part 
+├─sdb2   8:18   0 99.7G  0 part 
+```
+
+Si el resultado es parecido al del ejemplo anterior y la columna `MOUNTPOINT` está vacía en la fila correspondiente, puede pasar al [paso siguiente](#fscheckwin).
+
+Sin embargo, si el resultado muestra que existe un punto de montaje para la partición VPS, primero deberá desmontarla.
+
+por ejemplo,
+
+```console
+sdb      8:16   0  100G  0 disk
+├─sdb1   8:17   0  350M  0 part
 ├─sdb2   8:18   0 99.7G  0 part /mnt/sdb2
 ```
 
-El ejemplo de resultado anterior muestra los puntos de montaje existentes. Esto significa que la partición que se va a comprobar debe desmontarse en primer lugar:
+En el ejemplo de salida anterior, la partición en cuestión `sdb2` está montada en `/mnt/`. Para comprobar la partición, no debe montarla.
+
+Para desmontar dicha partición, utilice el siguiente comando:
 
 ```bash
-$ umount /dev/sdb1
+umount /dev/partition_name
 ```
 
-> [!primary]
->
-> Si su VPS es reciente, la columna `MOUNTPOINT` debería estar vacía y puede ignorar el paso anterior.
+En este ejemplo de configuración, el comando sería:
+
+```bash
+umount /dev/sdb2
+```
+
+<a name="fscheckwin"></a>
 
 El siguiente comando comprueba la coherencia de la partición e intenta solucionar los posibles errores:
 
 ```bash
-$ ntfsfix /dev/sdb1
+ntfsfix /dev/partition_name
+```
+
+En este ejemplo de configuración, el comando sería:
+
+```bash
+ntfsfix /dev/sdb2
 ```
 
 ## Más información

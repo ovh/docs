@@ -33,8 +33,8 @@ $ helm repo update
 
 Output should be like this:
 
-<pre class="console">
-<code>$ helm repo add jfrog https://charts.jfrog.io
+```console
+$ helm repo add jfrog https://charts.jfrog.io
 "jfrog" has been added to your repositories
 
 $ helm repo update
@@ -59,8 +59,8 @@ $ echo ${MASTER_KEY}
 
 Output should be like this:
 
-<pre class="console">
-<code>$ export MASTER_KEY=$(openssl rand -hex 32)
+```console
+$ export MASTER_KEY=$(openssl rand -hex 32)
 WARNING: can't open config file: /usr/local/etc/openssl/openssl.cnf
 
 $ echo ${MASTER_KEY}
@@ -77,8 +77,8 @@ $ echo ${JOIN_KEY}
 
 Output should be like this:
 
-<pre class="console">
-<code>$ export JOIN_KEY=$(openssl rand -hex 32)
+```console
+$ export JOIN_KEY=$(openssl rand -hex 32)
 WARNING: can't open config file: /usr/local/etc/openssl/openssl.cnf
 
 $ echo ${JOIN_KEY}
@@ -106,8 +106,8 @@ $ helm upgrade --install artifactory \
 
 Output should be like this:
 
-<pre class="console">
-<code>$ helm upgrade --install artifactory \
+```console
+$ helm upgrade --install artifactory \
 --set artifactory.masterKey=${MASTER_KEY} \
 --set artifactory.joinKey=${JOIN_KEY} \
 --namespace artifactory jfrog/artifactory
@@ -143,8 +143,8 @@ $ kubectl get pods -n artifactory -w
 
 Output should be like this:
 
-<pre class="console">
-<code>$ kubectl get pods -n artifactory -w
+```console
+$ kubectl get pods -n artifactory -w
 NAME                                             READY   STATUS    RESTARTS   AGE
 artifactory-0                                    1/1     Running   0          8m11s
 artifactory-artifactory-nginx-7c556cb56b-x5wvm   1/1     Running   0          8m11s
@@ -188,8 +188,6 @@ Output should be like this:
 
 ```console
 $ helm uninstall artifactory -n artifactory
-<code>$ helm uninstall artifactory -n artifactory
-
 release "artifactory" uninstalled
 ```
 

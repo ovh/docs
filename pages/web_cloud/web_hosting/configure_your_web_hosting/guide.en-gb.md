@@ -1,5 +1,5 @@
 ---
-title: Web Hosting - Environment, PHP version, .ovhconfig
+title: "Web Hosting - Environment, PHP version, .ovhconfig"
 excerpt: Find out how to modify a web hosting plan’s runtime environment, PHP version, application firewall, engine, mode and .ovhconfig
 updated: 2023-09-11
 ---
@@ -194,7 +194,7 @@ Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotoman
 
 > [!primary]
 >
-> If the `Modify configuration`{.action} button is grayed out, it may be that the **global PHP version** is being verified. If this is the case, a blue round symbol will appear next to the version, indicating that a check is in progress. Wait a few minutes for the `Modify configuration`{.action} button to become accessible again.
+> If the `Modify configuration`{.action} button is greyed out, it may be that the **global PHP version** is being verified. If this is the case, a blue round symbol will appear next to the version, indicating that a check is in progress. Wait a few minutes for the `Modify configuration`{.action} button to become accessible again.
 >
 > If the `Global PHP version`{.action} option does not appear in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), check that the *.ovhconfig* file exists in the FTP root of your OVHcloud web hosting plan.
 >

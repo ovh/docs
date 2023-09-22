@@ -105,7 +105,7 @@ La lista anterior no es exhaustiva.
 
 ### Abrir la aplicación fdisk
 
-Una vez haya comprobado que no existe ningún error en el sistema de archivos, abra la aplicación **fdisk**. Una vez allí, deberá introducir el nombre del disco (y no el de la partición) como parámetro. Si su partición es «sdb1» en lugar de «vdb1», por ejemplo, el nombre del disco será «/dev/sdb».
+Una vez haya comprobado que no existe ningún error en el sistema de archivos, abra la aplicación **fdisk**. Una vez allí, deberá introducir el nombre del disco (y no el de la partición) como parámetro. Si su partición es `sdb1`, por ejemplo, el nombre del disco será `/dev/sdb`.
 
 ```sh
 fdisk -u /dev/sdb
