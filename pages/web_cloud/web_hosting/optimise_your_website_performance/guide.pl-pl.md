@@ -4,16 +4,19 @@ excerpt: 'Dowiedz się, jak analizować opóźnienia w witrynie internetowej i u
 updated: 2022-02-03
 ---
 
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zgłóś propozycję modyfikacji” na tej stronie.
+>
+
 ## Wprowadzenie 
+
 Ten przewodnik jest przeznaczony dla klientów, którzy chcą poprawić wydajność witryny internetowej.
 Zawiera podstawowe informacje o tym, co wpływa na wydajność witryn internetowych.
 
 **Dowiedz się, jak poprawić wydajność witryny internetowej.**
 
-> [!warning]
-> W tym przykładzie zastosowania opisano korzystanie z rozwiązań OVHcloud wraz z narzędziami zewnętrznymi oraz działania do wykonania w konkretnym kontekście. Działania te trzeba dostosować do poszczególnych sytuacji. W przypadku trudności z wykonaniem działań należy się skontaktować z dostawcą konkretnych usług i/lub omówić problem ze społecznością na stronie <https://community.ovh.com/en/>. OVHcloud nie może zapewnić wsparcia technicznego w tym zakresie.
-
 ## Wymagania początkowe
+
 - [plan hostingu WWW OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external}
 - e-mail potwierdzający skonfigurowanie planu hostingu WWW
 - [nazwa domeny](https://www.ovhcloud.com/pl/domains/){.external} umożliwiająca dostęp do witryny internetowej
@@ -24,15 +27,23 @@ Zawiera podstawowe informacje o tym, co wpływa na wydajność witryn internetow
 ### Krok 1: zdefiniowanie zakresu
 
 #### Pytania, które należy sobie zadać:
+
 Jeśli witryna internetowa działa powoli, odpowiedzi na poniższe pytania pomogą zawęzić zakres poszukiwania przyczyn.
 
 1. **Kiedy witryna internetowa zaczęła działać powoli?**
+
 Odpowiedź pomoże w ustaleniu, czy opóźnienie jest spowodowane niedawną modyfikacją strony internetowej. na przykład nieprawidłową optymalizacją nowej wtyczki lub nową kompozycją, która mogłoby powodować wysyłanie wielu zapytań wychodzących i spowalniać działanie witryny.
+
 2. **Czy problem pojawia się od czasu do czasu, czy też występuje stałe spowolnienie?**
+
 Warto sprawdzić, o jakiej porze dnia witryna internetowa działa wolniej, a następnie określić, czy jest to związane z dużym ruchem na witrynie lub wykonywaniem innych zadań hostingu w tym samym czasie.
+
 3. **Czy problem dotyczy całej witryny internetowej, czy tylko jej części?**
+
 Jeśli nie cała witryna, ale tylko jedna strona internetowa działa powoli, warto przeanalizować tę konkretną stronę i sprawdzić, które żądania lub skrypty mogą powodować opóźnienia.
+
 4. **Czy pojawia się komunikat o błędzie? Jeśli tak, jakiego typu?**
+
 Sprawdź, czy pojawiają się błędy. Umożliwi to identyfikację źródła opóźnienia. Aby dowiedzieć się więcej o występujących błędach w hostingu, zajrzyj do logów.
 
 Odpowiedzi na te pytania pomogą skoncentrować się na konkretnych kwestiach i określić obszary do ulepszenia.
@@ -44,6 +55,7 @@ Na [stronie produktu](https://www.ovhcloud.com/pl/web-hosting/){.external} przes
 Więcej informacji na temat wyboru właściwego planu znajdziesz na [tej stronie](https://www.ovhcloud.com/pl/web-hosting/uc-best-web-hosting/){.external}.
 
 ### Krok 2: sprawdzenie wersji PHP
+
 Na wydajność witryny internetowej znacząco może wpłynąć korzystanie ze zgodnej z nią, najnowszej wersji języka PHP.
 Aby sprawdzić, czy witryna jest kompatybilna z najnowszą wersją PHP, zapoznaj się z [oficjalną dokumentacją języka PHP](https://php.net/eol.php){.external}.
 
@@ -67,6 +79,7 @@ Aby zmienić wersję PHP-FPM na _stabilną_ lub uzyskać szczegółowe informacj
 Plik _.ovhconfig_ działa w katalogu głównym hostingu albo w podkatalogu poziomu 1 (na przykład: _/www/_), ale nie w katalogach poziomu drugiego lub wyższego (na przykład: _/www/test/_, _/www/test/test2/_).
 
 ### Krok 3: sprawdzenie treści multimedialnej
+
 Podczas korzystania z witryny internetowej cała jej treść musi zostać pobrana przez przeglądarkę.
 
 Może to stanowić szczególny problem w przypadku witryn internetowych, które nie są zoptymalizowane pod kątem urządzeń mobilnych.
@@ -78,6 +91,7 @@ Można więc wybrać sposób, który najlepiej zaspokoi konkretne potrzeby.
 Więcej informacji na ten temat zawiera poniższy krok 5.
 
 ### Krok 4: optymalizacja skryptów
+
 Aby znaleźć źródło opóźnień, przejrzyj wykresy wykorzystania zasobów hostingu (więcej informacji poniżej). Następnie sprawdź w logach wpisy z okresów, w których wystąpiło szczytowe wykorzystanie.
 
 Logi, statystyki i wykresy są dostępne bezpośrednio w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.
@@ -116,6 +130,7 @@ Aby je wyświetlić, wybierz nazwę bazy danych i okres.
 - **Żądania SQL**: wyświetla liczbę żądań.
 
 ### Krok 5: sprawdzenie żądań sieciowych
+
 Użytecznym narzędziem do analizy jest [Network Monitor](https://developer.mozilla.org/en-US/docs/Tools/Network_Monitor){.external}. Narzędzie jest zintegrowane z przeglądarką Mozilla Firefox i umożliwia szczegółowe analizowane czasu ładowania strony internetowej.
 
 Dzięki niemu możesz sprawdzić, które elementy witryny internetowej ładują się najwolniej i stanowią największe obciążenie.
@@ -204,6 +219,7 @@ Przykład:
 ```
 
 #### Unikaj opcji wykorzystujących dużo zasobów:
+
 Na przykład klauzuli „HAVING”, która może spowolnić zapytania. Nie używaj też klauzuli „GROUP BY”, o ile nie jest naprawdę niezbędna.
 
 #### Web Cloud Databases
@@ -218,4 +234,8 @@ Jeśli pomimo wprowadzonych zmian i optymalizacji baza danych działa powoli, al
 
 [Pierwsze kroki z usługą Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb){.external}
 
-Dołącz do naszej społeczności użytkowników: <https://community.ovh.com/en/>.
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
+
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>. 

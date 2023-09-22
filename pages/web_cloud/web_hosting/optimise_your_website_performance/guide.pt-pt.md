@@ -4,16 +4,19 @@ excerpt: 'Saiba como analisar a latência do seu website e como a melhorar'
 updated: 2022-02-03
 ---
 
-## Sumário
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
+
+## Objetivo
+
 Este guia destina-se a clientes que pretendem melhorar o desempenho do seu website.
 Este guia irá fornecer-lhe informações básicas sobre os pontos que podem afetar o desempenho dos websites.
 
 **Saiba como melhorar o desempenho do seu website.**
 
-> [!warning]
-> Este caso de uso irá mostrar-lhe como utilizar uma ou mais soluções OVHcloud com ferramentas externas e irá descrever as ações a executar num contexto específico. Lembre-se de adaptar estas ações à sua situação. Em caso de dificuldade durante a execução destas ações, contacte um fornecedor especializado e/ou discuta a situação com a nossa comunidade em <https://community.ovh.com/en/>. A OVHcloud não lhe poderá prestar apoio técnico nesta questão.
-
 ## Requisitos
+
 - um [plano de Alojamento Web OVHcloud](https://www.ovhcloud.com/pt/web-hosting/){.external}
 - um e-mail a confirmar a configuração do seu plano de Alojamento Web
 - um [nome de domínio](https://www.ovhcloud.com/pt/domains/){.external} que pode ser utilizado para aceder ao seu website
@@ -24,15 +27,23 @@ Este guia irá fornecer-lhe informações básicas sobre os pontos que podem afe
 ### Passo 1: Definir o âmbito
 
 #### Questões que deve colocar:
+
 Se o seu website está lento, pode ser útil analisar as questões abaixo para o ajudar a restringir o âmbito da investigação.
 
 1. **Quando é que o seu website começou a ficar lento?**
+
 Desta forma, pode identificar se a latência é provocada por uma alteração recente no website, por exemplo, a adição de um novo plugin mal otimizado ou de um novo tema que possa estar a enviar muitas consultas externas e a tornar o seu website lento.
+
 2. **Esta lentidão é pontual ou constante?**
+
 Poderá ser útil verificar se existe um período do dia em que o website está lento, e depois identificar se é provocado por um pico no tráfego, ou por outras tarefas que começam a ser executadas no pacote de alojamento em simultâneo.
+
 3. **Está a afetar todo o website ou apenas parte do mesmo?**
+
 Se afeta apenas uma página web e não todo o website, é útil analisar essa página em particular e verificar quais os pedidos ou scripts que estão a causar a latência.
+
 4. **Obtém uma página de erro? Se sim, que tipo de erro?**
+
 Verifique se os erros são gerados para identificar a origem da latência. Para obter uma melhor visão geral dos erros que ocorrem no seu alojamento, consulte os logs.
 
 A resposta a estas questões pode ajudá-lo a centrar-se em pontos específicos e a diagnosticar áreas de melhoria.
@@ -44,6 +55,7 @@ Fornecemos recomendações sobre a oferta de alojamento web a utilizar para os C
 Encontrará mais informações acerca do plano a escolher [nesta página](https://www.ovhcloud.com/pt/web-hosting/uc-best-web-hosting/){.external}.
 
 ### Passo 2: Verificar a versão PHP
+
 A utilização da versão php mais recente do seu site pode ter um impacto significativo no desempenho.
 Para verificar se o seu website é compatível com a versão PHP mais recente, pode consultar [a documentação oficial do PHP](https://php.net/eol.php){.external}.
 
@@ -67,6 +79,7 @@ Para mudar para a utilização do PHP-FPM na versão _estável_ ou para obter de
 O ficheiro _.ovhconfig_ funciona na raiz do pacote de alojamento ou num subdiretório de nível 1 (por ex.: _/www/_), mas não em diretórios de nível 2 ou superiores (por ex.: _/www/test/_ , _/www/test/test2/_)
 
 ### Passo 3: Verificar o conteúdo multimédia (imagens, vídeos...)
+
 Ao aceder a um website, todos os conteúdos têm de ser descarregados pelo browser.
 
 Isto pode ser especialmente problemático durante o acesso a um website não otimizado através de um dispositivo móvel.
@@ -78,6 +91,7 @@ Cabe-lhe a si escolher os mais adequados às suas necessidades específicas.
 Encontrará mais informações sobre este tópico no Passo 5 abaixo.
 
 ### Passo 4: Otimizar os seus scripts
+
 Correlacione os gráficos da utilização de recursos do seu alojamento (mais informações abaixo) para encontrar a origem dos atrasos e consultar os logs nas datas destes picos.
 
 Pode aceder aos seus logs, estatísticas e gráficos diretamente a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
@@ -116,6 +130,7 @@ Não se esqueça de selecionar o nome da sua base de dados e o período desejado
 - **Pedidos SQL**: Apresenta o número de pedidos.
 
 ### Passo 5: Analisar os pedidos de rede
+
 Uma ferramenta útil para análise é a [Network Monitor](https://developer.mozilla.org/en-US/docs/Tools/Network_Monitor){.external} que está diretamente integrada no browser Mozilla Firefox e permite analisar em detalhe o tempo de carregamento de uma página.
 
 Esta ferramenta permite analisar quais os elementos do seu site mais lentos/pesados a carregar.
@@ -204,13 +219,14 @@ Exemplo:
 ```
 
 #### Evitar as opções que utilizam muitos recursos:
+
 Evite utilizar a cláusula “HAVING”, por exemplo, que atrasa as suas consultas. Deve ainda evitar a utilização de “GROUP BY”, a menos que seja estritamente necessário.
 
 #### Web Cloud Databases
 Se, apesar de todas as alterações e otimizações realizadas, a base de dados estiver lenta, ou se for efetuado um grande número de consultas na base de dados, é aconselhável mudar para a nossa oferta de Web Cloud Databases para ter mais recursos disponíveis.
 [Consultar a oferta Web Cloud Databases no nosso site](https://www.ovh.pt/cloud/cloud-databases/){.external}.
 
-## Vá mais longe
+## Quer saber mais?
 
 [Alterar a configuração de um plano de alojamento web](/pages/web_cloud/web_hosting/configure_your_web_hosting){.external}
 
@@ -218,4 +234,8 @@ Se, apesar de todas as alterações e otimizações realizadas, a base de dados 
 
 [Web Cloud Databases - primeira utilização](/pages/web_cloud/web_cloud_databases/starting_with_clouddb){.external}
 
-Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
+
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
+
+Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>. 

@@ -159,4 +159,8 @@ If you would like to configure your email address on an email client or device (
 
 [How to set up an email address](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_creation)
 
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en/directory/).
+
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en/support-levels/).
+
 Join our community of users on <https://community.ovh.com/en/>.

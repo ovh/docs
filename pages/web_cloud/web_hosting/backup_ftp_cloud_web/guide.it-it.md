@@ -94,7 +94,7 @@ Una volta scaricati i file, potrai [accedere al tuo spazio FTP](/pages/web_cloud
 
 [Accedi con il client Filezilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
 
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, consulta le nostre [soluzioni di supporto](https://www.ovhcloud.com/it/support-levels/).
 

@@ -1,19 +1,22 @@
 ---
 title: 'Optimizar el rendimiento de su sitio web'
-excerpt: 'Cómo analizar la latencia de su sitio web y cómo mejorarla'
+excerpt: 'Descubra cómo analizar la latencia de su sitio web y cómo mejorarla'
 updated: 2022-02-03
 ---
 
+> [!primary]
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+>
+
 ## Objetivo
+
 Esta guía ha sido creada para aquellos clientes que deseen mejorar el rendimiento de su sitio web.
 Esta guía le ayudará a obtener un entendimiento básico de los puntos que pueden afectar al rendimiento de los sitios web.
 
 **Descubra cómo mejorar el rendimiento de su sitio web.**
 
-> [!warning]
-> Este caso práctico le mostrará cómo usar una o más soluciones de OVHCloud con herramientas externas. También recoge las acciones que se han de realizar en un contexto específico. Recuerde adaptar dichas acciones para que se adecúen a su situación. Si tiene dificultades a la hora de realizar dichas acciones, póngase en contacto con un proveedor de servicios especializados y/o comente su problema con nuestra comunidad en <https://community.ovh.com/en/>. OVHCloud no puede proporcionarle asistencia técnica a este respecto.
-
 ## Requisitos
+
 - Un [plan de hospedaje web de OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/){.external}
 - Un mensaje de correo electrónico que confirme que su plan de hospedaje web ha sido contratado
 - Un [nombre de dominio](https://www.ovhcloud.com/es-es/domains/){.external} que pueda utilizarse para acceder a su sitio web
@@ -24,15 +27,23 @@ Esta guía le ayudará a obtener un entendimiento básico de los puntos que pued
 ### Paso 1: definir el alcance
 
 #### Preguntas que debe hacerse a sí mismo:
+
 Si el sitio web se carga lentamente, sería de utilidad que se hiciera las siguientes preguntas para ayudar a reducir el ámbito de la investigación.
 
 1. **¿Cuándo empezó a cargarse lentamente el sitio web?**
+
 De esta forma, puede identificar si la latencia es debida a una modificación reciente del sitio web, como un nuevo complemento mal optimizado o un nuevo tema que envía un gran número de consultas salientes y lentifica su sitio web.
+
 2. **¿Es un hecho aislado o la baja velocidad de carga es permanente?**
+
 Podría ser útil comprobar a qué horas del día el sitio web va lento y, a continuación, identificar si la causa se debe a un pico en el tráfico o a si han empezado a ejecutarse otras tareas en el paquete de hospedaje al mismo tiempo.
+
 3. **¿Afecta a todo el sitio web o solo a una parte?**
+
 Si solo está afectada una página y no todo el sitio web, sería conveniente analizar dicha página en particular y comprobar que consulta o secuencia de comandos podría estar causando la latencia.
+
 4. **¿La página genera algún error? Si es así, ¿de qué tipo?**
+
 Compruebe si se generan errores para identificar la causa de la latencia. Para obtener una visión más completa de los errores que se producen en su hospedaje, consulte los registros.
 
 Responder a estas preguntas puede ayudarle a centrarse en puntos concretos y áreas de diagnóstico susceptibles de mejoras.
@@ -44,6 +55,7 @@ Proporcionamos recomendaciones sobre qué oferta de hospedaje web utilizar para 
 Puede encontrar más información sobre qué plan elegir en [esta página](https://www.ovhcloud.com/es-es/web-hosting/uc-best-web-hosting/){.external}.
 
 ### Paso 2: comprobar la versión del lenguaje PHP
+
 Utilizar la última versión compatible del lenguaje PHP en su sitio puede tener un efecto significativo en el rendimiento.
 Para comprobar si su sitio web es compatible con la última versión del lenguaje PHP, puede consultar [la documentación oficial del PHP](https://php.net/eol.php){.external}.
 
@@ -67,6 +79,7 @@ Para cambiar al uso de PHP-FPM en la versión _estable_ o para obtener informaci
 El archivo _.ovhconfig_ opera en la raíz del paquete de hospedaje o en un subdirectorio de nivel 1 (p. ej.: _/www/_), pero no en directorios de nivel 2 o superior (p. ej.: _/www/test/_ y _/www/test/test2/_)
 
 ### Paso 3: comprobar el contenido multimedia (imágenes, vídeos, etc.)
+
 A la hora de acceder a un sitio web, el navegador debe descargar todo el contenido.
 
 Esto puede resultar especialmente problemático cuando se accede a un sitio web no optimizado desde un dispositivo móvil.
@@ -78,6 +91,7 @@ Usted elige los que mejor se adapten a sus necesidades específicas.
 Puede encontrar más información sobre este tema más adelante, en el paso 5.
 
 ### Paso 4: optimizar las secuencias de comandos
+
 Correlacione los gráficos de recursos utilizados de su hospedaje (más información a continuación) para descubrir el origen de los retrasos y consulte los registros de las fechas de dichos picos.
 
 Puede acceder a sus registros, estadísticas y gráficos directamente desde el panel de control, iniciando sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es)){.external}.
@@ -120,6 +134,7 @@ No se olvide de seleccionar el nombre de su base de datos y el periodo deseado.
 - **Peticiones SQL**: Muestra el número de peticiones.
 
 ### Paso 5: comprobar las peticiones de la red
+
 Una herramienta de análisis muy útil es el [monitor de red](https://developer.mozilla.org/es/docs/Tools/Monitor_de_Red){.external}, el cual está directamente integrado en el navegador Mozilla Firefox y permite analizar con detalle el tiempo de carga de una página web.
 
 Con dicha herramienta puede comprobar qué elementos de su sitio entrañan una carga más lenta o pesada.
@@ -208,6 +223,7 @@ Ejemplo:
 ```
 
 #### Evite opciones intensivas de recursos:
+
 Evite usar la cláusula «HAVING», ya que puede lentificar las consultas. También debería evitar el uso de «GROUP BY», a menos que sea estrictamente necesario.
 
 #### Web Cloud Databases
@@ -222,5 +238,9 @@ Si a pesar de todos los cambios y optimizaciones realizados la base de datos va 
 [Gestionar una base de datos en un paquete de hospedaje web](/pages/web_cloud/web_hosting/sql_create_database){.external}
 
 [Primeros pasos con el servicio Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb){.external}
+
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
+
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es-es/support-levels/).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

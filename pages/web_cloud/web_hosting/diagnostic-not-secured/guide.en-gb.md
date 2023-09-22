@@ -4,7 +4,6 @@ excerpt: How to react to a security error message on your website
 updated: 2021-07-08
 ---
 
- 
 ## Objective <a name="objective"></a>
 
 Several error messages may appear if your website is inaccessible. The examples below indicate that your Web Hosting plan does not contain any [SSL certificate](/pages/web_cloud/web_hosting/ssl_on_webhosting) (if your website does not display one of the anomalies described in this guide, please refer to the "[Go further](#gofurther)" section): 

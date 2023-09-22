@@ -4,7 +4,11 @@ excerpt: So starten Sie mit Ihrem Webhosting
 updated: 2022-11-11
 ---
 
-## Einleitung
+> [!primary]
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
+>
+
+## Ziel 
 
 Sie haben vor Kurzem ein Webhosting bestellt, um Ihre eigene Website zu erstellen. Auf diesem Hosting können Sie eine gebrauchsfertige Lösung (z. B. WordPress, PrestaShop) installieren oder Ihre eigene Plattform auf den dauerhaft verfügbaren Servern entwickeln. Wir danken Ihnen für Ihr Vertrauen in OVHcloud und zeigen Ihnen in dieser Anleitung, wie Sie Ihre Website ganz einfach einrichten können.
 
@@ -17,7 +21,7 @@ Sie haben vor Kurzem ein Webhosting bestellt, um Ihre eigene Website zu erstelle
 - Sie besitzen eine [Domain](https://www.ovhcloud.com/de/domains/){.external}, über die Ihre Website erreichbar sein wird.
 - Sie sind in Ihrem [Kundencenter](https://ovh.com/auth/?action=gotomanager){.external} eingeloggt.
 
-## Beschreibung
+## In der praktischen Anwendung
 
 ### Schritt 1: Ihr Projekt definieren
 
@@ -160,5 +164,9 @@ Wenn Sie mehr Informationen über die Verwendung von RoundCube benötigen, werfe
 [Eine E-Mail-Adresse erstellen](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_creation){.external}
 
 [Verwendung von RoundCube](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube){.external}
+
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

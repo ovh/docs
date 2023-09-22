@@ -4,15 +4,16 @@ excerpt: 'Erfahren Sie hier, wie Sie Latenzen auf Webseiten analysieren und verb
 updated: 2022-02-03
 ---
 
+> [!primary]
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
+>
+
 ## Ziel 
+
 Diese Anleitung richtet sich an Kunden, die die Performance ihrer Webauftritte optimieren möchten.
 Die erläuterten Stichpunkte helfen Ihnen dabei, ein grundlegendes Verständnis dafür zu erlangen, welche Kriterien die Geschwindigkeit von Webseiten beeinflussen können.
 
 **Erfahren Sie, wie Sie die Performance Ihrer Webseite verbessern können.**
-
-> [!warning]
-> In diesem Tutorial zeigen wir Ihnen (unter anderem) die Verwendung einer oder mehrerer OVHcloud Lösungen mit externen Tools. Die durchgeführten Aktionen werden in einem bestimmten Kontext beschrieben. Denken Sie daran, diese an Ihre Situation anzupassen. Bei Schwierigkeiten kontaktieren Sie bitte einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) und/oder stellen Ihre Fragen in der OVHcloud Community unter https://community.ovh.com/ (Englisch). Leider können wir Ihnen für externe Dienstleistungen keine weitergehende Unterstützung anbieten.
->
 
 ## Voraussetzungen
 

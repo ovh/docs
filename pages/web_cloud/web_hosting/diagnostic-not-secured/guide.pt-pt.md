@@ -8,7 +8,6 @@ updated: 2021-07-08
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em « Contribuir » nesta página.
 >
 
- 
 ## Objetivo <a name="objective"></a>
 
 Em caso de inacessibilidade do seu site, podem surgir várias mensagens de erro. Os exemplos abaixo indicam que o seu alojamento Web não contém [certificado SSL](/pages/web_cloud/web_hosting/ssl_on_webhosting) (se o seu site não apresentar uma das anomalias descritas neste guia, consulte a secção « [Quer saber mais?](#gofurther) »): 
