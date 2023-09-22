@@ -312,7 +312,7 @@ Cette action permet de désactiver le CDN pour une ou plusieurs de vos entrées 
 > - récupérez l'adresse IP **par défaut** du cluster où se trouve votre hébergement web à l'aide de notre guide « [Hébergement web : les adresses IP de nos clusters](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP) » ;
 > - changer manuellement l'adresse IP dans la zone DNS active de votre nom de domaine ou contacter votre fournisseur de zone DNS afin qu'il effectue la mise à jour pour vous.
 >
-> La modification d'une entrée dans la zone DNS active d'un nom de domaine entraîne un délai de propagation de **4** à **24** heures pour être pleinement effectif. Le temps que cette propagation se finalise, une page contenant le code **520** peut apparaître aléatoirement. Ce phénomène est lié au fait que certaines parties du réseau DNS redirigent encore les requêtes vers l'adresse IP du CDN lié à votre hébergement web.
+> La modification d'une entrée dans la zone DNS active d'un nom de domaine entraîne un délai de propagation de **4** à **24** heures pour être pleinement effective. Le temps que cette propagation se finalise, une page contenant le code **520** peut apparaître aléatoirement. Ce phénomène est lié au fait que certaines parties du réseau DNS redirigent encore les requêtes vers l'adresse IP du CDN lié à votre hébergement web.
 >
 
 Rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) puis sélectionnez `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} et choisissez l'offre concernée. Dans l'onglet `Multisite`{.action}, cliquez sur `...`{.action} à droite de l'entrée multisite puis sur `Modifier`{.action}.
