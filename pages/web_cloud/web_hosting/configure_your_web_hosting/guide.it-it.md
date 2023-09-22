@@ -158,7 +158,7 @@ In confronto, l'acceleratore PHP ("PHP-FPM") offre performance fino a sette volt
 Un firewall è una sicurezza che filtra le richieste in entrata del tuo hosting Web. Sui nostri hosting Web, questa impostazione di configurazione funziona sotto forma di opzione **attivabile** o **disattivabile**.
 Non sarà infatti possibile modificare le impostazioni di filtro del firewall.
 
-Per maggiori informazioni, consulta la nostra guida "[Attivazione del firewall applicativo](/pages/web_cloud/web_hosting/multisiti_activating_application_firewall)".
+Per maggiori informazioni, consulta la nostra guida "[Attivazione del firewall applicativo](/pages/web_cloud/web_hosting/multisites_activating_application_firewall)".
 
 > [!warning]
 >
