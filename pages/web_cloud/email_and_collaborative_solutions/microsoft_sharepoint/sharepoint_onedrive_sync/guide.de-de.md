@@ -1,5 +1,5 @@
 ---
-title: „SharePoint: Daten auf dem Computer synchronisieren“
+title: "SharePoint: Daten auf dem Computer synchronisieren"
 excerpt: Hier erfahren Sie, wie Sie die Daten Ihres OVHcloud SharePoint auf Ihrem Computer sichern
 updated: 2023-09-21
 ---

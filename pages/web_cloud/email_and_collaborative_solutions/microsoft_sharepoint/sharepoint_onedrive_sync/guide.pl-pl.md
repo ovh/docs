@@ -1,7 +1,7 @@
 ---
 title: "Sharepoint: synchronizacja danych na komputerze"
 excerpt: Dowiedz się, jak utworzyć kopię zapasową danych z usługi Sharepoint OVHcloud na Twoim komputerze
-Updated: 2023-09-21
+updated: 2023-09-21
 ---
 
 ## Wprowadzenie
