@@ -78,4 +78,6 @@ curl -k -u user@pcc-123-123-123-123.ovh.com:<password> https://nsxt.pcc-123-123-
 
 ## Go further
 
+Documentation NSX-T Datacenter Rest API : <https://developer.vmware.com/apis/1707/>
+
 Join our community of users on <https://community.ovh.com/en/>.
