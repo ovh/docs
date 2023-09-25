@@ -87,7 +87,7 @@ In this example, we will use the **REST API** Docker image.
 
 ### Launch a Voxist app
 
-To launch an AI Deploy app, there are several possibilities. You can do it from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) or the CLI `ovhai`.
+To launch an AI Deploy app, there are several possibilities. You can do it from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) or the CLI `ovhai`.
 
 #### Launch an app from the OVHcloud Control Panel
 
@@ -110,7 +110,7 @@ To launch your Voxist app from the UI, you have to fill in some information:
 
 > [!primary]
 >
-> To know how to launch an app from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), refer to this [guide](/pages/public_cloud/ai_machine_learning/deploy_guide_02_getting_started).
+> To know how to launch an app from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we), refer to this [guide](/pages/public_cloud/ai_machine_learning/deploy_guide_02_getting_started).
 >
 
 #### Launch an app with ovhai CLI
@@ -214,7 +214,7 @@ curl --request POST \
 
 ## Voxist billing concept
 
-The pricing of Voxist differs slightly from the usual AI Deploy offer. In order for you to better understand your invoice, please find more details below about the [price calculation](https://www.ovhcloud.com/en-gb/public-cloud/prices/).
+The pricing of Voxist differs slightly from the usual AI Deploy offer. In order for you to better understand your invoice, please find more details below about the [price calculation](https://www.ovhcloud.com/en/public-cloud/prices/).
 
 > [!primary]
 >
@@ -275,7 +275,7 @@ Total price = Resources price + Voxist model licencing price
 >
 > To learn more about the basic cost (resource price) of an app launched with AI Deploy, please refer to this [documentation](/pages/public_cloud/ai_machine_learning/deploy_guide_06_billing_concept).
 >
-> Please refer to the [OVHcloud Public Cloud website](https://www.ovhcloud.com/en-gb/public-cloud/prices/) for all information about resources and partners models prices.
+> Please refer to the [OVHcloud Public Cloud website](https://www.ovhcloud.com/en/public-cloud/prices/) for all information about resources and partners models prices.
 >
 
 ### Examples
