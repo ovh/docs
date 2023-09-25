@@ -1,7 +1,7 @@
 ---
 title: Billing and payment FAQ
 excerpt: Find the most frequently asked questions about billing and payment
-updated: 2023-06-05
+updated: 2023-09-28
 ---
 
 ## Objective
@@ -174,6 +174,12 @@ The accounts ledger is only issued by the requesting party’s accounts departme
 However, OVHcloud offers you access to all of your invoices in an Excel file (.csv).
 
 To download the file, go to the `Invoices`{.action} section, accessible via the dashboard in the OVHcloud Control Panel. Click on the `Actions`{.action} button, then select `Export as CSV`{.action}.
+
+### For customers in India only : what part of my invoice should I pay directly to OVHcloud?
+
+- If you are a B2B company and your yearly revenue is > 30 000 INR, you mandatorily need to pay TDS directly to the government.
+- If you are a B2B company and your yearly revenue is < 30 000 INR, TDS will be collected by OVHcloud.
+- For  Individual and Organization registered customers (B2C), TDS will apply normally. The GST amount will be displayed on your bill.
 
 ## Go further
   
