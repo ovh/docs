@@ -1,6 +1,6 @@
 ---
-title: "Die Größe einer Public Cloud Instanz mit dem OpenStack CLI ändern"
-excerpt: Hier erfahren Sie, wie Sie die Ressourcen Ihrer Instanz skalieren, um mit steigenden Aktivitäten fertig zu werden
+title: "Die Größe einer Public Cloud Instanz über OpenStack CLI ändern"
+excerpt: Erfahren Sie hier, wie Sie die Ressourcen Ihrer Instanz skalieren können, um auf erhöhte Anforderungen zu reagieren
 updated: 2023-09-22
 ---
 
@@ -10,39 +10,39 @@ updated: 2023-09-22
 
 ## Ziel
 
-Ihre Instanz kann aufgrund erhöhter Aktivität oder einfach aufgrund neuer Anforderungen nicht mehr über genügend Ressourcen verfügen, um eine neue Last zu bewältigen. Mit der OVHcloud Public Cloud können Sie die verfügbaren Ressourcen für Ihre Instanz in nur wenigen Schritten erhöhen.
+Ihre Instanz kann aufgrund erhöhter Aktivität oder einfach aufgrund neuer Anforderungen nicht mehr über genügend Ressourcen verfügen, um zusätzliche Lasten zu bewältigen. Mit der OVHcloud Public Cloud können Sie die verfügbaren Ressourcen für Ihre Instanz in nur wenigen Schritten erhöhen.
 
-**In dieser Anleitung erfahren Sie, wie Sie die Größe Ihrer Public Cloud Instanz mithilfe der OpenStack-CLI ändern.**
+**Diese Anleitung erklärt, wie Sie die Größe Ihrer Public Cloud Instanz über OpenStack CLI ändern.**
 
 > [!primary]
-> **Limits**
+> **Limitierungen**
 >
 > - Bei klassischen Instanzen ist nur eine Größenänderung auf ein höheres Modell (*Upscaling*) möglich.
-> - Die Größe einer [Metal instance](https://www.ovhcloud.com/de/public-cloud/metal-instances/)  kann nur in ein anderes **Metal** Modell geändert werden.
-> - Die *Flex* Instanzen ermöglichen die Größenänderung auf höhere oder niedrigere Modelle aufgrund einer einzelnen, gesperrten Festplattengröße.
+> - Eine [Metal Instanz](https://www.ovhcloud.com/de/public-cloud/metal-instances/) kann nur auf ein anderes Modell der Reihe **Metal** geändert werden.
+> - *Flex*-Instanzen ermöglichen die Größenänderung auf größere oder keinere Modelle aufgrund einer fixen Diskgröße.
 >
 
 ## Voraussetzungen
 
-- Sie haben eine [Public Cloud Instanz](https://www.ovhcloud.com/de/public-cloud/) in Ihrem Account erstellt
-- Sie haben einen [OpenStack User erstellt](/pages/public_cloud/compute/create_and_delete_a_user)
-- Sie haben eine [OpenStack Umgebung für die CLI vorbereitet](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api)
-- Sie haben die [OpenStack Umgebungsvariablen festgelegt](/pages/platform/public-cloud/loading_openstack_environment_variables)
+- Sie verfügen über eine [Public Cloud Instanz](https://www.ovhcloud.com/de/public-cloud/).
+- Sie haben einen [OpenStack User erstellt](/pages/public_cloud/compute/create_and_delete_a_user).
+- Sie haben [OpenStack CLI auf Ihrem System installiert](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api).
+- Sie haben die [OpenStack Umgebungsvariablen konfiguriert](/pages/platform/public-cloud/loading_openstack_environment_variables).
 
 ## In der praktischen Anwendung
 
 > [!warning]
 >
-> Durch diesen Vorgang wird die Instanz für die Dauer der Operation angehalten.
+> Die Instanz wird für die Dauer der Operation angehalten.
 >
 
 ### Instanz sichern
 
-Bei einer Größenänderung wird die Instanz für die Dauer der Operation angehalten. Es wird daher empfohlen, vor dem Fortfahren eine Sicherungskopie Ihrer Instanz zu erstellen und alle laufenden Prozesse zu stoppen. Weitere Informationen zu den Backup-Methoden finden Sie in der entsprechenden [Anleitung](/pages/platform/public-cloud/save_an_instance).
+Bei einer Größenänderung wird die Instanz für die Dauer der Operation angehalten. Es wird daher empfohlen, vor dem Fortfahren eine Sicherungskopie Ihrer Instanz zu erstellen und alle laufenden Prozesse zu stoppen. Weitere Informationen zu den Backup-Methoden finden Sie in [unserer Anleitung](/pages/platform/public-cloud/save_an_instance).
 
 ### Instanzen auflisten
 
-Im ersten Schritt müssen Sie Ihre Instanzen auflisten, um den Namen der Instanz abzurufen, deren Größe Sie ändern möchten. In unserem Beispiel möchten wir die Größe der Instanz „OVHcloudInstance“ ändern.
+Als ersten Schritt können Sie Ihre Instanzen auflisten, um den Namen der Instanz abzurufen, deren Größe Sie ändern möchten. In unserem Beispiel möchten wir die Größe der Instanz „OVHcloudInstance“ ändern.
 
 ```bash
 $ OpenStack Server List
@@ -57,7 +57,7 @@ $ OpenStack Server List
 
 ### Modelle auflisten <a name="flavorlist"></a>
 
-Sie müssen nun die Liste der in Ihrer Region verfügbaren Vorlagen (*Flavors*) anzeigen, um die ID der neuen Vorlage abzurufen. In unserem Beispiel möchten wir die Größe unserer Instanz auf einem Modell b2-30 mit der ID `098889e6-d1fc-4967-baea-19fd97fd83a8` ändern.
+Sie müssen nun aus der Liste der in Ihrer Region verfügbaren Modelle (*Flavors*) die ID des neuen Modells abrufen. In unserem Beispiel möchten wir die Größe unserer Instanz auf einem Modell b2-30 mit der ID `098889e6-d1fc-4967-baea-19fd97fd83a8` ändern.
 
 ```bash
 $ OpenStack Flavor List
@@ -82,7 +82,7 @@ $ OpenStack Flavor List
 ```
 
 > [!warning]
-> Beachten Sie, dass Sie die Größe einer Instanz nur von einer Linux-Vorlage auf eine andere und von einer Windows-Vorlage auf eine andere Windows-Vorlage ändern können.
+> Beachten Sie, dass Sie Instanzen nicht von Linux-Modellen auf Windows-Modelle und umgekehrt ändern können.
 
 ### Größe der Instanz ändern
 
@@ -98,7 +98,7 @@ Zum Beispiel, um die Größe unserer "OVHcloudInstance" Instanz zu ändern:
 $ openstack server resize --flavor 098889e6-d1fc-4967-baea-19fd97fd83a8 OVHcloudinstance
 ```
 
-Sie können den Vorgang durch häufiges Ausführen des folgenden Befehls verfolgen. Der Status (*status*) muss `RESIZE` sein.
+Sie können den Vorgang durch wiederholtes Ausführen des folgenden Befehls verfolgen. Der Status sollte `RESIZE` sein.
 
 ```bash
 $ openstack server show OVHcloudInstance
@@ -119,13 +119,13 @@ $ openstack server show OVHcloudInstance
 +-------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ```
 
-### Instanz reduzieren
+### Instanz abstufen
 
 > [!warning]
-> Diese Option ist nur für *Flex* Modelle verfügbar.
+> Diese Option ist nur für *Flex*-Modelle verfügbar.
 >
 
-Wenn Sie Ihre Instanz verkleinern möchten, können Sie dies tun, indem Sie die gleichen Schritte wie [oben](#flavorlist) ausführen und im Feld <FLAVOR-ID> eine andere ID verwenden.
+Wenn Sie Ihre Instanz verkleinern möchten, können Sie dies tun, indem Sie die gleichen Schritte wie [oben](#flavorlist) ausführen und im Feld <FLAVOR-ID> eine andere ID auswählen.
 
 ## Weiterführende Informationen
 
