@@ -12,7 +12,7 @@ OVHcloud offers different Artificial Intelligence services through its AI Partne
 
 > [!primary]
 >
-> To find out more about Voxist billing, launching and capabilities, please refer to this [guide](/pages/platform/ai/ecosystem_03_voxist_billing_features_capabilities).
+> To find out more about Voxist billing, launching and capabilities, please refer to this [guide](/pages/public_cloud/ai_machine_learning/ecosystem_03_voxist_billing_features_capabilities).
 >
 
 ## Introduction
@@ -37,7 +37,7 @@ Speech recognition is supported through two APIs:
 
 #### Transcription
 
-This endpoint transcribes an audio recording into a JSON object. Configuration parameters can be passed to specify language, activate punctuation recognition and diarization.
+This endpoint transcribes an audio recording into a JSON object. Configuration parameters can be passed to a specify language, activate punctuation recognition and diarization.
 
 - **URL**: `/transcribe`
 
@@ -48,6 +48,7 @@ This endpoint transcribes an audio recording into a JSON object. Configuration p
 Upload configuration parameters and audio files using `multipart/form-data` Content-Type.
 
 Configuration parameters (`config` form-data parameter)
+
 ```json
 {
   "punctuation": Boolean,
@@ -57,12 +58,13 @@ Configuration parameters (`config` form-data parameter)
   "wait": Boolean,
 }
 ```
-* **punctuation: `[true, false]`**: enables punctuation in output (default: false)
-* **lang: `["fr", "en", "es", "pt", "it", "de", "pl"]`**: defines input audio language (default: "en")
-* **sample_rate: `[8000, 16000]`**: default is 8Khz.
-* **wait: `[true, false]`**: default is `true`. The request will wait for the transcription to be completed before returning. If set to `false`, the request will return immediately with a job id and an estimate of the completion time.
 
-- **Configuration example**:
+- **punctuation: `[true, false]`**: enables punctuation in output (default: false)
+- **lang: `["fr", "en", "es", "pt", "it", "de", "pl"]`**: defines input audio language (default: "en")
+- **sample_rate: `[8000, 16000]`**: default is 8Khz.
+- **wait: `[true, false]`**: default is `true`. The request will wait for the transcription to be completed before returning. If set to `false`, the request will return immediately with a job id and an estimate of the completion time.
+
+**Configuration example**:
 
 ```json
 {
@@ -101,7 +103,7 @@ Configuration parameters (`config` form-data parameter)
 
 ### Preparing audio files for transcription
 
-To be successfully transcribed, audio files should be mono (single channel) WAV file. You can use FFmpeg to convert convert your input audio to the appropriate format with the following steps:
+To be successfully transcribed, audio files should be mono (single channel) WAV files. You can use FFmpeg to convert your input audio to the appropriate format with the following steps:
 
 1. **Installation**:
    First, ensure you have FFmpeg installed on your machine. If not, download and install it from the [official website](https://ffmpeg.org/download.html) or use your package manager if you're on Linux.
@@ -203,8 +205,8 @@ The API will return immediately with:
 }
 ```
 
-* `jobid`: a UUID representing the job execution
-* `estimated_time`: conservative estimated  time for transcription in seconds. It is strongly recommended to query the job after this time.
+- `jobid`: a UUID representing the job execution
+- `estimated_time`: conservative estimated time for transcription in seconds. It is strongly recommended to query the job after this time.
 
 Fetch transcription :
 
@@ -271,9 +273,10 @@ The first websocket message sent it:
   "diarization": Boolean,
 }
 ```
-* **punctuation: `[true, false]`**: enables punctuation in output (default: false)
-* **lang: `["fr", "en", "es", "pt", "it", "de", "pl"]`**:  defines input audio language (default: "en")
-* **sample_rate: `[8000, 16000]`**: default is 8Khz
+
+- **punctuation: `[true, false]`**: enables punctuation in output (default: false)
+- **lang: `["fr", "en", "es", "pt", "it", "de", "pl"]`**:  defines input audio language (default: "en")
+- **sample_rate: `[8000, 16000]`**: default is 8Khz
 
 ### Calling the API in Python
 

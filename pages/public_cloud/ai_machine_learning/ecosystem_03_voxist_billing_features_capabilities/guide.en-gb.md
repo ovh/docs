@@ -31,7 +31,7 @@ To take advantage of these different features, you have two types of APIs to cho
 
 ### REST
 
-Voxist gives you the possibility to transcribe audio into text. The principle is to send an audio file with your needed configuration. For example, **Voxist REST API** will allow you to benefit from **diarization** and **punctuation** features.
+Voxist gives you the possibility to transcribe audio into text. The principle is to send an audio file with your needed configuration. For example, the **Voxist REST API** will allow you to benefit from **diarization** and **punctuation** features.
 
 - Input configuration:
 
@@ -82,7 +82,7 @@ In this example, we will use the **REST API** Docker image.
 
 > [!primary]
 >
-> To know how to use the **WebSocket API**, please follow this [guide](/pages/platform/ai/ecosystem_04_voxist_models).
+> To know how to use the **WebSocket API**, please follow this [guide](/pages/public_cloud/ai_machine_learning/ecosystem_04_voxist_models).
 >
 
 ### Launch a Voxist app
@@ -110,12 +110,12 @@ To launch your Voxist app from the UI, you have to fill in some information:
 
 > [!primary]
 >
-> To know how to launch an app from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), refer to this [guide](/pages/platform/ai/deploy_guide_02_getting_started).
+> To know how to launch an app from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), refer to this [guide](/pages/public_cloud/ai_machine_learning/deploy_guide_02_getting_started).
 >
 
 #### Launch an app with ovhai CLI
 
-You can also start this app with the `ovhai` [CLI](/pages/platform/ai/cli_10_howto_install_cli) by running the following command:
+You can also start this app with the `ovhai` [CLI](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli) by running the following command:
 
 ```console
 ovhai app run \
@@ -127,12 +127,12 @@ ovhai app run \
 
 > [!primary]
 >
-> Replace `<label=name>` by the variables corresponding to your **token**. To know more about the management of the token, refer to this [documentation](/pages/platform/ai/deploy_guide_03_tokens).
+> Replace `<label=name>` by the variables corresponding to your **token**. To know more about the management of the token, refer to this [documentation](/pages/public_cloud/ai_machine_learning/deploy_guide_03_tokens).
 >
 
 #### Access to your Voxist app
 
-Once the app is launched and in `RUNNING` status, you can copy the URL and access your app. To be able to access the API documentation, add `/docs` endpoint at the end of the app URL.
+Once the app is launched and in `RUNNING` status, you can copy the URL and access your app. To be able to access the API documentation, add the `/docs` endpoint at the end of the app URL.
 
 ![VoxistApi](images/voxist-api-doc.png){.thumbnail}
 
@@ -142,24 +142,24 @@ You can now use the **Voxist Service** to transcribe audio files.
 
 > [!primary]
 >
-> For more detailed information on Voxist models, please refer to this [documentation](/pages/platform/ai/ecosystem_04_voxist_models).
+> For more detailed information on Voxist models, please refer to this [documentation](/pages/public_cloud/ai_machine_learning/ecosystem_04_voxist_models).
 >
 
 #### Generate a cURL query
 
 Now that your Voxist app is running with AI Deploy, you are ready for questioning the AI models.
 
-You can use the following example with the following parameters:
+You can use the following example and parameters:
 
 - url of the app - *replace `<app_url>` with yours*
 - access token (since we are on restricted access) - *replace `<your_token_bearer>` with yours*
 - data format
 - audio to process - *replace `<path_wav_file>` by the local path to your audio file named `tts_definition.wav`*
-- transcription configuration - *set up your required configuration, for more information about the features, follow this [documentation](/pages/platform/ai/ecosystem_04_voxist_models)*
+- transcription configuration - *set up your required configuration, for more information about the features, follow this [documentation](/pages/public_cloud/ai_machine_learning/ecosystem_04_voxist_models)*
 
 > [!warning]
 >
-> Please be careful with the format of your audio file. Only **wav** format and **mono** channel are supported by Voxist models.
+> Please be careful with the format of your audio file. Only the **wav** format and **mono** channel are supported by Voxist models.
 >
 
 - Audio:
@@ -247,7 +247,7 @@ The first step consists in calculating the price of an AI Deploy app according t
 Resources price = (nb app) x (nb gpu resources) x (nb replicas) x [ (unit price per hour HT) x (nb hour) ]
 ```
 
-To learn more about the basic cost of an app launched with AI Deploy, please refer to this [documentation](/pages/platform/ai/deploy_guide_06_billing_concept).
+To learn more about the basic cost of an app launched with AI Deploy, please refer to this [documentation](/pages/public_cloud/ai_machine_learning/deploy_guide_06_billing_concept).
 
 #### Voxist model licenses price
 
@@ -273,7 +273,7 @@ Total price = Resources price + Voxist model licencing price
 
 > [!primary]
 >
-> To learn more about the basic cost (resource price) of an app launched with AI Deploy, please refer to this [documentation](/pages/platform/ai/deploy_guide_06_billing_concept).
+> To learn more about the basic cost (resource price) of an app launched with AI Deploy, please refer to this [documentation](/pages/public_cloud/ai_machine_learning/deploy_guide_06_billing_concept).
 >
 > Please refer to the [OVHcloud Public Cloud website](https://www.ovhcloud.com/en-gb/public-cloud/prices/) for all information about resources and partners models prices.
 >
@@ -300,7 +300,7 @@ Price calculation for **Voxist service**: 0,88€ (price /hour /gpu) x 5 (hours)
 
 #### Example 2: 2 GPUs for 250 000 minutes
 
-Deploy one Voxist app with 2 CPUs, and we keep it running for 250 000 minutes.
+We deploy one Voxist app with 2 CPUs, and we keep it running for 250 000 minutes.
 
 *You receive thousands of calls: it's included (no pay per call provided, you pay running compute).*
 
