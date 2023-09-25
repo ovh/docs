@@ -208,7 +208,7 @@ The API will return immediately with:
 - `jobid`: a UUID representing the job execution
 - `estimated_time`: conservative estimated time for transcription in seconds. It is strongly recommended to query the job after this time.
 
-Fetch transcription :
+Fetch transcription:
 
 ```bash
 curl "$OVH_ENDPOINT/transcription_result/c1fabb36-12e0-42cd-8670-61bcbf9665dc" \

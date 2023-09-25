@@ -214,7 +214,7 @@ curl --request POST \
 
 ## Voxist billing concept
 
-The pricing of Voxist differs slightly from the classic AI Deploy offer. In order for you to better understand your invoice, please find more details below about the [price calculation](https://ovhcloud.ocms-preprod.ovhcloud.tools/fr/public-cloud/prices/).
+The pricing of Voxist differs slightly from the usual AI Deploy offer. In order for you to better understand your invoice, please find more details below about the [price calculation](https://ovhcloud.ocms-preprod.ovhcloud.tools/fr/public-cloud/prices/).
 
 > [!primary]
 >
@@ -236,7 +236,7 @@ The total price is composed of two different parts:
 
 The first step consists in calculating the price of an AI Deploy app according to the chosen computing resources.
 
-*Please keep in mind we bill per second although pricing is displayed per hour HT for a more user-friendly experience.*
+*Please keep in mind we bill per second although pricing is displayed per hour ex. VAT for a more user-friendly experience.*
 
 > [!primary]
 >
@@ -244,7 +244,7 @@ The first step consists in calculating the price of an AI Deploy app according t
 >
 
 ```console
-Resources price = (nb app) x (nb gpu resources) x (nb replicas) x [ (unit price per hour HT) x (nb hour) ]
+Resources price = (nb app) x (nb gpu resources) x (nb replicas) x [ (unit price per hour ex. VAT) x (nb hours) ]
 ```
 
 To learn more about the basic cost of an app launched with AI Deploy, please refer to this [documentation](/pages/public_cloud/ai_machine_learning/deploy_guide_06_billing_concept).
