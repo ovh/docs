@@ -17,7 +17,7 @@ Sie können ein Volume mithilfe der Funktion *snapshot revert* auf den Stand des
 ## Voraussetzungen
 
 - Sie nutzen [OVHcloud Enterprise File Storage](https://www.ovhcloud.com/en-gb/storage-solutions/enterprise-file-storage/) und verfügen über ein Volume.
-- Sie können sich in der [OVHcloud API-Konsole](https://api.ovh.com/console/) einloggen.
+- Sie können sich in der [OVHcloud API-Konsole](https://api.ovh.com/) einloggen.
 
 ## Grundlagen
 
