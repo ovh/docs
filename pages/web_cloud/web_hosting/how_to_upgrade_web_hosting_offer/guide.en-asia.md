@@ -6,21 +6,20 @@ updated: 2023-09-19
 
 ## Objective
 
-Your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia) will increase the capacity of your [web hosting plans](https://www.ovhcloud.com/asia/web-hosting/). You can have:
+In your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), you can increase the capacity of your [web hosting plans](https://www.ovhcloud.com/asia/web-hosting/). A subscription upgrade provides the following advantages:
 
-- more powerful hosting;
-- more FTP storage space;
-- additional databases; 
-- additional email addresses;
-- additional features such as [mailing-lists](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_mailing_list) (from [the Professional offer](https://www.ovhcloud.com/asia/web-hosting/professional-offer/)) or the [Web Cloud Databases service](https://www.ovhcloud.com/asia/web-cloud/databases/){.external} (included in [the Performance offers](https://www.ovhcloud.com/asia/web-hosting/performance-offer/)).
+- More powerful hosting
+- More FTP storage space
+- Additional databases
+- Additional email accounts
+- Additional features such as [mailing lists](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_mailing_list) (from [the Professional offer](https://www.ovhcloud.com/asia/web-hosting/professional-offer/)) or the [Web Cloud Databases service](https://www.ovhcloud.com/asia/web-cloud/databases/){.external} (included in [the Performance offers](https://www.ovhcloud.com/asia/web-hosting/performance-offer/))
 
-**Find out how to upgrade your OVHcloud hosting plan without any service interruptions.**
+**This guide explains how to upgrade your OVHcloud hosting plan without any service interruptions.**
 
 ## Requirements
 
 - An [OVHcloud web hosting plan](https://www.ovhcloud.com/asia/web-hosting/)
-- Access to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia)
-- At a minimum, you must be a contact of the "[Administrator](/pages/account_and_service_management/account_information/managing_contacts)" services for which you would like to modify your subscription.
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia) with the required permissions to manage the Web Hosting plan ([Administrator contact](/pages/account_and_service_management/account_information/managing_contacts))
 
 ## Instructions
 
@@ -32,12 +31,12 @@ Your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=h
 > - [Will I lose the time remaining on my current hosting plan when I change plans?](#billing)
 >
 
-### Modify your web hosting plan <a name="modify"></a>
+### Modifying your web hosting plan <a name="modify"></a>
 
 > [!warning]
-> Subscription switching to a lower plan is not available to our customers whose services are hosted in a datacentre outside of Europe.
+> Subscription switching to a lower plan is not available to our customers whose services are hosted in a data centre outside of Europe.
 >
-> If you would like to change your subscription to a lower plan, please follow the steps in our guide on "[▲Migrating your website and emails to OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)".
+> If you would like to change your subscription to a lower plan, please follow the steps in our guide on "[Migrating your website and emails to OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)".
 >
 
 To modify your subscription, go to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia) in the `Web Cloud`{.action} section. Click `Hosting plans`{.action} and select the hosting plan concerned.
@@ -63,7 +62,7 @@ If the **Boost** option is right for you, please find instructions below on how 
 > [!tabs]
 > **Enable the Boost option**
 >>
->> To enable the Boost option, log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia) then go to the `Web Cloud`{.action} section. In the left-hand column, click `Hosting plans`{.action} , then select the Web Hosting plan concerned. In the `General information` box on the page that opens, click the `...`{.action} button to the right of `Boost`, then `Boost my hosting plan`{.action}.<br><br>
+>> To enable the Boost option, log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia) then go to the `Web Cloud`{.action} section. In the left-hand column, click `Hosting plans`{.action}, then select the Web Hosting plan concerned. In the `General information` box on the page that opens, click the `...`{.action} button to the right of `Boost`, then `Boost my hosting plan`{.action}.<br><br>
 >>![boost](images/enable_boost.png){.thumbnail}<br>
 >>
 > **Disable the Boost option**
@@ -74,25 +73,25 @@ If the **Boost** option is right for you, please find instructions below on how 
 
 #### Billing when you change plans <a name="billing"></a>
 
-When you upgrade your plan to a higher plan, a *pro rata calculation will be applied until the next renewal date for this initial subscription.
+When you upgrade your plan to a higher plan, a *pro rata* calculation will be applied until the next renewal date for this initial subscription.
 This calculation is the price difference between your original plan and your new plan.
 
 > **Example:**<br>
 >
-> You have subscribed to a [Personal](https://www.ovhcloud.com/asia/web-hosting/personal-offer/) subscription as of 1 January 2022.
+> You have subscribed to a [Personal](https://www.ovhcloud.com/asia/web-hosting/personal-offer/) subscription on 1 January 2022.
 >
-> On October 31, 2022, you will upgrade from this **Personal** plan to a subscription on the [Pro](https://www.ovhcloud.com/asia/web-hosting/professional-offer/) plan.<br>
+> On October 31, 2022, you upgrade this **Personal** plan to the [Pro](https://www.ovhcloud.com/asia/web-hosting/professional-offer/) plan.<br>
 >
-> Therefore, the amount corresponding to the remaining duration on the **Personal** subscription (2 months, from 01 November 2022 to 01 January 2023) is automatically deducted from the cost of the new **Pro** subscription, until 01 January 2023. You'll only pay the difference.
-> From 01 January 2023, the **Pro** subscription will then be billed at the price in effect.
+> Therefore, the amount corresponding to the remaining duration on the **Personal** subscription (2 months, from 01 November 2022 to 01 January 2023) is automatically deducted from the cost of the new **Pro** subscription, until 01 January 2023. You will only pay the difference.
+> From 01 January 2023, the **Pro** subscription will then be billed at its current price.
 
 Follow [these instructions](#modify) to change your solution.
 
 ## Go further <a name="go-further"></a>
 
-[View statistics and logs for a website hosted on a shared hosting plan](/pages/web_cloud/web_hosting/logs_and_statistics)
+[Accessing a website’s logs and statistics on a web hosting](/pages/web_cloud/web_hosting/logs_and_statistics)
 
-[Optimizing your website’s performance](/pages/web_cloud/web_hosting/optimise_your_website_performance)
+[Optimising your website’s performance](/pages/web_cloud/web_hosting/optimise_your_website_performance)
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/asia/directory/).
 
