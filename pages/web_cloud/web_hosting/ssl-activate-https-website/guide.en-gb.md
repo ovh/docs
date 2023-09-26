@@ -1,6 +1,6 @@
 ---
 title: "Web Hosting: Switch your website to HTTPS"
-excerpt: "Find out how to activate HTTPS for your website after you have installed an SSL certificate on your Web Hosting"
+excerpt: "Find out how to activate HTTPS on your website after you have installed an SSL certificate"
 updated: 2023-09-22
 ---
 
@@ -20,7 +20,7 @@ With an OVHcloud Web Hosting plan, you can get a free SSL certificate. An SSL ce
 
 With strong cyber security gaining increasing importance, it is absolutely essential to take special care regarding data privacy and the ways in which your data is transferred online. Generally, web users trust the sites they visit to provide secure connections, especially when the data they provide is sensitive. 
 
-When you visit a website with a secure connection, your web browser will show this in the URL address bar in the form of a logo (usually a padlock), a message, a colour code, or the use of *HTTPS* protocol rather than HTTP. With this many visible indicators of a secure connection, websites that do not offer this security are becoming increasingly conspicuous.
+When you visit a website with a secure connection, your web browser will show this in the URL address bar in the form of a logo (usually a padlock), a message, a colour code, or the use of *HTTPS* protocol rather than *HTTP*. With this many visible indicators of a secure connection, websites that do not offer this security are becoming increasingly conspicuous.
 
 ![httpswebsite](images/activate-https-website-ssl-step1.png){.thumbnail}
 
