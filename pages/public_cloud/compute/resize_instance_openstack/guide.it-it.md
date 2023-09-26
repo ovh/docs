@@ -1,7 +1,7 @@
 ---
 title: "Ridimensionare un’istanza Public Cloud con il CLI OpenStack"
 excerpt: Scopri come modificare le risorse dell’istanza per adattarle a un aumento dell’attività
-updated: 2023-09-22
+updated: 2023-09-26
 ---
 
 > [!primary]
@@ -12,14 +12,14 @@ updated: 2023-09-22
 
 A causa di un aumento dell'attività o semplicemente per rispondere a nuove esigenze, l'istanza potrebbe esaurire le risorse e non essere in grado di rispondere a un nuovo carico. Grazie al Public Cloud di OVHcloud è possibile aumentare le risorse disponibili per l'istanza in pochi step.
 
-**Scopri come ridimensionare un’istanza Public Cloud con il CLI OpenStack.**
+**Scopri come ridimensionare un’istanza utilizzando la CLI di OpenStack.**
 
 > [!primary]
 > **Limiti:**
 >
-> - Per le istanze classiche è possibile solo il ridimensionamento verso un modello superiore (*upscaling*).
-> - Un [Metal instance](https://www.ovhcloud.com/it/public-cloud/metal-instances/) può essere ridimensionata solo verso un altro modello **Metal**.
-> - Le istanze *Flex* consentono il ridimensionamento verso modelli superiori o inferiori, a causa di una dimensione del disco unica e bloccata.
+> - Solo il ridimensionamento a un modello superiore (*upscaling*) è possibile per le istanze classiche.
+> - Un [istanza Metal](https://www.ovhcloud.com/it/public-cloud/metal-instances/) può essere ridimensionata solo verso un altro modello **Metal**.
+> - Le istanze *Flex* consentono il ridimensionamento verso modelli superiori o inferiori, grazie a una singola dimensione del disco bloccata.
 >
 
 ## Prerequisiti
@@ -82,7 +82,7 @@ $ openstack flavor list
 ```
 
 > [!warning]
-> Ricordare che è possibile ridimensionare un'istanza solo da un modello Linux a un altro modello Linux e da un modello Windows a un altro modello Windows.
+> Si noti che è possibile ridimensionare un'istanza solo da un modello Linux a un altro modello Linux e da un modello Windows a un altro modello Windows.
 
 ### Ridimensiona l’istanza
 

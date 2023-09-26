@@ -1,7 +1,7 @@
 ---
 title: "Die Größe einer Public Cloud Instanz über OpenStack CLI ändern"
 excerpt: Erfahren Sie hier, wie Sie die Ressourcen Ihrer Instanz skalieren können, um auf erhöhte Anforderungen zu reagieren
-updated: 2023-09-22
+updated: 2023-09-26
 ---
 
 > [!primary]

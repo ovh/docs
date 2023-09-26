@@ -1,7 +1,7 @@
 ---
 title: Redimensionar uma instância de Public Cloud usando a CLI do OpenStack
 excerpt: Descubra como fazer evoluir os recursos da sua instância para fazer face a uma atividade acrescida
-updated: 2023-09-22
+updated: 2023-09-26
 ---
 
 > [!primary]
@@ -18,7 +18,7 @@ Devido a uma atividade acrescida, ou simplesmente para responder a novas necessi
 > **Limites:**
 >
 > - Apenas é possível o redimensionamento para um modelo superior (*upscaling*) nas instâncias clássicas.
-> - Uma [Metal instance](https://www.ovhcloud.com/pt/public-cloud/metal-instances/) só pode ser redimensionada para outro modelo **Metal**.
+> - Uma [instância Metal](https://www.ovhcloud.com/pt/public-cloud/metal-instances/) só pode ser redimensionada para outro modelo **Metal**.
 > - As instâncias *Flex* permitem o redimensionamento para modelos superiores ou inferiores, devido ao tamanho de disco único e bloqueado.
 >
 
@@ -26,8 +26,8 @@ Devido a uma atividade acrescida, ou simplesmente para responder a novas necessi
 
 - Uma [instância Public Cloud](https://www.ovhcloud.com/pt/public-cloud/) na sua conta OVHcloud
 - Um [utilizador OpenStack](/pages/platform/public-cloud/create_and_delete_a_user)
-- Ter um [ambiente OpenStack preparado para o CLI](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api)
-- Ter definido as [variáveis de ambiente OpenStack](/pages/platform/public-cloud/loading_openstack_environment_variables)
+- Ter um [ambiente OpenStack preparado para CLI](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api)
+- Ter definido as [variáveis de ambiente do OpenStack](/pages/platform/public-cloud/loading_openstack_environment_variables)
 
 ## Instruções
 
@@ -92,18 +92,13 @@ Una vez que haya recuperado la información, ya puede redimensionar su instancia
 $  openstack server resize --flavor <FLAVOR-ID> <INSTANCE-NAME>
 ```
 
-Por ejemplo, para redimensionar nuestra instancia OVHcloudInstance:
+Por ejemplo, para redimensionar nuestra instancia "OVHcloudInstance":
 
 ```bash
 $ openstack server resize --flavor 098889e6-d1fc-4967-baea-19fd97fd83a8 OVHcloudinstance
 ```
 
-> [!warning]
-> Tenha em conta que só pode redimensionar uma instância de um modelo Linux para outro modelo Linux e de um modelo Windows para outro modelo Windows.
-
-### Redimensionar a instância
-
-Depois de recuperar as informações, pode redimensionar a sua instância:
+Pode acompanhar o processo executando frequentemente o seguinte comando. O estado (*status*) deve ser `RESIZE`.
 
 ```bash
 $ openstack server show OVHcloudinstance

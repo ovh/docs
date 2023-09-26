@@ -1,7 +1,7 @@
 ---
 title: Redimensionar una instancia de Public Cloud utilizando la CLI de OpenStack
-excerpt: Cómo escalar los recursos de una instancia para hacer frente a una mayor actividad
-updated: 2023-09-22
+excerpt: Descubra cómo adaptar sus recursos para hacer frente a una mayor actividad
+updated: 2023-09-26
 ---
 
 > [!primary]
@@ -12,13 +12,13 @@ updated: 2023-09-22
 
 Debido al aumento de la actividad, o simplemente para responder a nuevas necesidades, su instancia puede quedarse sin recursos y ser incapaz de responder a una nueva carga. Gracias al Public Cloud de OVHcloud, podrá aumentar los recursos disponibles para su instancia en solo unos pasos.
 
-**Esta guía explica cómo redimensionar una instancia de Public Cloud utilizando el CLI de OpenStack.**
+**Descubra cómo redimensionar su instancia de Public Cloud utilizando la CLI de OpenStack.**
 
 > [!primary]
 > **Límites:**
 >
 > - Para las instancias clásicas sólo es posible cambiar el tamaño a un modelo superior (*upscaling*).
-> - Una [Metal instance](https://www.ovhcloud.com/es/public-cloud/metal-instances/) sólo puede redimensionarse a otro modelo **Metal**.
+> - Una [instancia Metal](https://www.ovhcloud.com/es/public-cloud/metal-instances/) sólo puede redimensionarse a otro modelo **Metal**.
 > - Las instancias *Flex* permiten el redimensionamiento a modelos superiores o inferiores, debido a un tamaño de disco único y bloqueado.
 >
 
@@ -26,7 +26,7 @@ Debido al aumento de la actividad, o simplemente para responder a nuevas necesid
 
 - Una [instancia de Public Cloud](https://www.ovhcloud.com/es/public-cloud/) en su cuenta de OVHcloud
 - Un [usuario de OpenStack](/pages/platform/public-cloud/create_and_delete_a_user)
-- Tener un [entorno OpenStack preparado para CLI](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api)
+- Disponga de un [entorno OpenStack preparado para CLI](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api)
 - Haber definido las [variables de entorno OpenStack](/pages/platform/public-cloud/loading_openstack_environment_variables)
 
 ## Procedimiento
@@ -92,7 +92,7 @@ Una vez que haya recuperado la información, ya puede redimensionar su instancia
 $  openstack server resize --flavor <FLAVOR-ID> <INSTANCE-NAME>
 ```
 
-Por ejemplo, para redimensionar nuestra instancia OVHcloudInstance:
+Por ejemplo, para redimensionar nuestra instancia « OVHcloudInstance »:
 
 ```bash
 $ openstack server resize --flavor 098889e6-d1fc-4967-baea-19fd97fd83a8 OVHcloudinstance
@@ -119,13 +119,13 @@ $ openstack server show OVHcloudinstance
 +-------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ```
 
-### Contraer una instancia
+### Reducir una instancia
 
 > [!warning]
 > Esta opción sólo está disponible para modelos *Flex*.
 >
 
-Si quiere reducir su instancia, puede hacerlo siguiendo los mismos pasos >.
+Si desea reducir su instancia, puede hacerlo siguiendo los mismos pasos mencionados [arriba](#flavorlist) y utilizando un ID diferente en el campo <FLAVOR-ID>.
 
 ## Más información
 

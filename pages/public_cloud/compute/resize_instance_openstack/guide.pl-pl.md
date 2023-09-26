@@ -1,7 +1,7 @@
 ---
 title: Zmiana rozmiaru instancji Public Cloud przy użyciu CLI OpenStack
 excerpt: "Dowiedz się, jak skalować zasoby instancji w celu zwiększenia aktywności"
-Updated: 2023-09-22
+updated: 2023-09-26
 ---
 
 > [!primary]
@@ -12,13 +12,13 @@ Updated: 2023-09-22
 
 Ze względu na zwiększoną aktywność lub po prostu w celu zaspokojenia nowych potrzeb, instancji może brakować zasobów i nie być w stanie odpowiedzieć na nowe obciążenie. Dzięki usłudze Public Cloud od OVHcloud możesz w kilku krokach zwiększyć zasoby dostępne dla Twojej instancji.
 
-**Dowiedz się, jak zmienić rozmiar instancji Public Cloud za pomocą CLI OpenStack.**
+**Dowiedz się, jak zmienić rozmiar instancji Public Cloud za pomocą interfejsu OpenStack CLI.**
 
 > [!primary]
 > **Limity:**
 >
 > - W przypadku klasycznych instancji możliwa jest wyłącznie zmiana rozmiaru instancji na wyższy model (*upscaling*).
-> - Rozmiar [Metal instance](https://www.ovhcloud.com/pl/public-cloud/metal-instances/) można zmienić tylko na inny model **Metal**.
+> - [Instancja Metal](https://www.ovhcloud.com/pl/public-cloud/metal-instances/) można zmienić tylko na inny model **Metal**.
 > - Instancje *Flex* umożliwiają zmianę rozmiaru na wyższy lub niższy model ze względu na pojedynczy zablokowany rozmiar dysku.
 >
 
@@ -26,8 +26,8 @@ Ze względu na zwiększoną aktywność lub po prostu w celu zaspokojenia nowych
 
 - Utworzenie [instancji Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps#krok-3-tworzenie-instancji) na Twoim koncie OVHcloud
 - [Użytkownik OpenStack](/pages/platform/public-cloud/create_and_delete_a_user)
-- Środowisko [OpenStack przygotowane na potrzeby CLI](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api)
-- Zdefiniowanie [zmiennych środowiskowych OpenStack](/pages/platform/public-cloud/loading_openstack_environment_variables)
+- Przygotuj [środowisko OpenStack dla CLI](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api)
+- Zdefiniowano [zmienne środowiskowe OpenStack](/pages/platform/public-cloud/loading_openstack_environment_variables)
 
 ## W praktyce
 
@@ -36,11 +36,11 @@ Ze względu na zwiększoną aktywność lub po prostu w celu zaspokojenia nowych
 > Operacja ta spowoduje zatrzymanie instancji na czas jej trwania.
 >
 
-### Kopia zapasowa instancji
+### Zapisz instancję
 
 W przypadku zmiany rozmiaru instancja jest zatrzymywana na czas trwania operacji. Zalecamy, aby przed wykonaniem tej operacji wykonać kopię zapasową instancji i zatrzymać wszystkie uruchomione procesy. Więcej informacji na temat metod tworzenia kopii zapasowych znajdziesz w przewodniku [dotyczącym](/pages/platform/public-cloud/save_an_instance) tych metod.
 
-### Wyświetl listę instancji
+### Lista instancji
 
 W pierwszym kroku wyświetl listę instancji, w celu pobrania nazwy instancji, którą chcesz zmienić. W poniższym przykładzie chcemy zmienić rozmiar instancji o nazwie "OVHcloudinstance".
 
@@ -55,9 +55,9 @@ $ openstack server list
 +--------------------------------------+----------------------------------------------------------------+--------+----------------------------------------------+
 ```
 
-### Wyświetl szablony <a name="flavorlist"></a>
+### Lista modeli <a name="flavorlist"></a>
 
-Teraz musisz wyświetlić listę dostępnych szablonów (*flavors*) w Twoim regionie, aby pobrać identyfikator nowego szablonu. W naszym przykładzie chcemy zmienić rozmiar instancji na model b2-30 o ID `098889e6-d1fc-4967-baea-19fd97fd83a8`.
+Teraz należy wyświetlić listę modeli (*flavors*) dostępnych w danym regionie, aby pobrać identyfikator nowego modelu. W naszym przykładzie chcemy zmienić rozmiar naszej instancji na model b2-30 o ID `098889e6-d1fc-4967-baea-19fd97fd83a8`.
 
 ```bash
 $ openstack flavor list
@@ -82,9 +82,9 @@ $ openstack flavor list
 ```
 
 > [!warning]
-> Pamiętaj, że możesz zmienić rozmiar instancji tylko z jednego modelu Linux na inny, a z jednego modelu Windows na inny.
+> Należy pamiętać, że można zmienić rozmiar instancji tylko z jednego modelu Linux na inny model Linux i z jednego modelu Windows na inny model Windows.
 
-### Skaluj instancję
+### Zmiana rozmiaru instancji
 
 Po pobraniu informacji możesz teraz zmienić rozmiar instancji:
 
@@ -98,7 +98,7 @@ Na przykład, aby zmienić rozmiar instancji "OVHcloudInstance":
 $ openstack server resize --flavor 098889e6-d1fc-4967-baea-19fd97fd83a8 OVHcloudinstance
 ```
 
-Możesz śledzić ten proces, często uruchamiając następujące polecenie. Status musi mieć wartość `RESIZE`.
+Możesz śledzić proces, często uruchamiając następujące polecenie. Status (*status*) musi być `RESIZE`.
 
 ```bash
 $ openstack server show OVHcloudinstance
@@ -119,7 +119,7 @@ $ openstack server show OVHcloudinstance
 +-------------------------------------+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ```
 
-### Minimalizuj instancję
+### Zmniejszanie instancji
 
 > [!warning]
 > Ta opcja jest dostępna tylko dla modeli *Flex*.
