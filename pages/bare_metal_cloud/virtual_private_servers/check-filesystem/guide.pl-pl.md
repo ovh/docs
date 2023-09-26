@@ -25,7 +25,7 @@ updated: 2023-09-20
 
 ## W praktyce
 
-#### VPS GNU/Linux
+### VPS GNU/Linux
 
 Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i uruchom restart serwera w trybie rescue. W razie potrzeby zapoznaj się z naszym [przewodnikiem dotyczącym trybu Rescue](/pages/bare_metal_cloud/virtual_private_servers/rescue).
 
