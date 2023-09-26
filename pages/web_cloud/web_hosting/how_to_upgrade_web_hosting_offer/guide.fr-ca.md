@@ -12,7 +12,7 @@ Votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=
 - de plus d'espace de stockage FTP ;
 - de bases de données supplémentaires ; 
 - d'adresses e-mails additionnelles ;
-- de fonctionnalités supplémentaires comme les [mailing-lists](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_mailing_list) (à partir de [l'offre Pro](https://www.ovhcloud.com/fr/web-hosting/professional-offer/)) ou le [service Web Cloud Databases](https://www.ovhcloud.com/fr-ca/web-hosting/professional-offer/){.external} (compris dans [les offres Performance](https://www.ovhcloud.com/fr-ca/web-hosting/performance-offer/)).
+- de fonctionnalités supplémentaires comme les [mailing-lists](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_mailing_list) (à partir de [l'offre Pro](https://www.ovhcloud.com/fr-ca/web-hosting/professional-offer/)) ou le [service Web Cloud Databases](https://www.ovhcloud.com/fr-ca/web-hosting/professional-offer/){.external} (compris dans [les offres Performance](https://www.ovhcloud.com/fr-ca/web-hosting/performance-offer/)).
 
 **Découvrez comment faire évoluer votre offre d'hébergement OVHcloud, sans interruption de service.**
 
@@ -40,7 +40,7 @@ Votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=
 > Si vous souhaitez modifier votre abonnement pour passer à une offre inférieure, veuillez suivre les étapes de notre guide « [Migrer son site et ses e-mails vers OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh) ».
 > 
 
-Pour modifier votre abonnement, rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) dans la partie `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} et sélectionnez l'hébergement concerné.
+Pour modifier votre abonnement, rendez-vous dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) dans la partie `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} et sélectionnez l'hébergement concerné.
 
 Dans le cadre `Abonnement`, cliquez sur le bouton `...`{.action} à droite de `Offre` puis sur `Changer d'offre`{.action}.
 
@@ -88,7 +88,7 @@ Ce calcul correspond à la différence de tarif entre votre offre initiale et vo
 
 Suivez [ces instructions](#modify) pour réaliser votre changement d'offre.
 
-## Aller plus loin <a name="gofurther"></a>
+## Aller plus loin <a name="go-further"></a>
 
 [Consulter les statistiques et les logs d'un site hébergé sur une offre mutualisée](/pages/web_cloud/web_hosting/logs_and_statistics)
 

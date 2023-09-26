@@ -81,7 +81,7 @@ Cette action vous permettra de commander une offre Web Cloud Databases indépend
 Si vous ne souhaitez pas conserver ces données, vous pouvez aussi supprimer votre offre Web Cloud Databases avant de passer sur l'offre *Pro* : 
 
 1. Sauvegardez vos données en suivant les instructions de ce [guide](/pages/web_cloud/web_cloud_databases/save-export-on-database-server).<br>
-2. Supprimez votre serveur Web Cloud Databases via votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Pour cela, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez en haut à droite sur votre nom puis sur l'icône `Gestion des services`{.action}. Cliquez ensuite sur le bouton `...`{.action} à droite de la ligne de l'offre Web Cloud Databases/SQL Privé concernée puis sur `Supprimer mon hébergement SQL privé`{.action}.
+2. Supprimez votre serveur Web Cloud Databases via votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Pour cela, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez en haut à droite sur votre nom puis sur l'icône `Produits et services`{.action}. Cliquez ensuite sur le bouton `...`{.action} à droite de la ligne de l'offre Web Cloud Databases/SQL Privé concernée puis sur `Supprimer mon hébergement SQL privé`{.action}.
 
 #### 3 - Espace de stockage FTP
 
@@ -179,7 +179,7 @@ Ce calcul correspond à la différence de tarif entre votre offre initiale et vo
 
 Suivez [ces instructions](#modify) pour réaliser votre changement d'offre.
 
-## Aller plus loin <a name="gofurther"></a>
+## Aller plus loin <a name="go-further"></a>
 
 [Consulter les statistiques et les logs d'un site hébergé sur une offre mutualisée](/pages/web_cloud/web_hosting/logs_and_statistics)
 

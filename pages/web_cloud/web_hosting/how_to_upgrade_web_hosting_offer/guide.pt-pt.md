@@ -1,7 +1,7 @@
 ---
-title: "Fazer evoluir a sua oferta de alojamento web"
-excerpt: "Saiba como alterar a fórmula de subscrição da sua oferta de alojamento OVHcloud"
-updated: 2023-07-16
+title: "Alojamento web: como fazer evoluir a sua oferta?"
+excerpt: "Saiba como alterar a forma de subscrição do seu plano de alojamento web da OVHcloud"
+updated: 2023-09-19
 ---
 
 > [!primary]
@@ -10,164 +10,187 @@ updated: 2023-07-16
 
 ## Objetivo
 
-A sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) permite-lhe aumentar as capacidades das suas [ofertas de alojamento Web](https://www.ovhcloud.com/pt/web-hosting/), de forma a dispor de um alojamento mais potente, de mais espaço de armazenamento, de bases de dados, de endereços de e-mail ou de funcionalidades suplementares como as [mailing-lists](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_mailing_list) (a partir da [oferta Pro](https://www.ovhcloud.com/pt/web-hosting/professional-offer/)) ou o [serviço SQL privado](https://www.ovhcloud.com/pt/web-hosting/options/private-sql/) (incluído com as ofertas da gama [Performance](https://www.ovhcloud.com/pt/web-hosting/performance-offer/)).
+A sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) permite aumentar as capacidades dos seus [planos de alojamento web](https://www.ovhcloud.com/pt/web-hosting/). Assim, pode dispor de:
 
-**Descubra como fazer evoluir a sua oferta de alojamento OVHcloud sem interrupção.**
+- de um alojamento mais potente;
+- mais espaço de armazenamento FTP;
+- de bases de dados suplementares; 
+- endereços de e-mail adicionais;
+- de funcionalidades suplementares como as [mailing-lists](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_mailing_list) (a partir de [a oferta Pro](https://www.ovhcloud.com/pt/web-hosting/professional-offer/)) ou o [serviço Web Cloud Databases](https://www.ovhcloud.com/pt/web-cloud/databases/){.external} (incluído em [oferta Performance](https://www.ovhcloud.com/pt/web-hosting/performance-offer/).
+
+**Saiba como fazer evoluir a sua oferta de alojamento OVHcloud, sem interrupção de serviço.**
 
 ## Requisitos
 
-- Ter um [serviço de alojamento web](https://www.ovhcloud.com/pt/web-hosting/)
+- Dispor de um [plano de alojamento web](https://www.ovhcloud.com/pt/web-hosting/)
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
+- Ser, no mínimo, o contacto « [Administrador](/pages/account_and_service_management/account_information/managing_contact) » dos serviços para os quais pretende alterar a subscrição.
 
 ## Instruções
 
 > [!warning]
 >
-> **Antes** de alterar a sua subscrição atual, verifique se tem alguma destas questões:
+> **Antes** de efetuar qualquer alteração na subscrição atual, verifique se alguma das seguintes questões se aplica a si:
 >
-> - [Como fazer evoluir a minha oferta alojamento gratuito 100M para uma oferta de alojamento web?](#start10m)
-> - [Como beneficiar de um ganho de desempenho temporário na minha oferta de alojamento Performance?](#boost)
-> - [Vou perder o tempo que resta na minha oferta de alojamento atual quando mudar de oferta?](#billing)
-> - [É possível mudar a minha oferta atual para uma oferta inferior?](#checks)
+> - [Como fazer evoluir o meu alojamento gratuito 100M para uma oferta de alojamento web?](#100m)
+> - [Como beneficiar de um ganho temporário de desempenho na minha oferta de alojamento Performance?](#boost)
+> - [Vou perder o tempo restante na minha oferta de alojamento atual quando mudar para outro serviço?](#billing)
+> - [É possível alterar a minha oferta atual para uma oferta inferior?](#checks)
 >
 
-### Alterar a sua oferta de alojamento <a name="modify"></a>
+### Alterar a oferta de alojamento web <a name="modify"></a>
 
-Para alterar a subscrição, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), na secção `Web Cloud`{.action}. Clique em `Alojamentos`{.action} e selecione o alojamento em causa.
+Para alterar a sua subscrição, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) na parte `Web Cloud`{.action}. Clique em `Alojamentos`{.action} e selecione o alojamento correspondente.
 
-No quadro `Subscrição`, clique no botão `...`{.action} à direita de `Oferta`, `Mudar de oferta`{.action}.
+No quadro `Subscrição`, clique no botão `...`{.action} à direita de `Oferta` e, a seguir, em `Mudar de oferta`{.action}.
 
 ![change_plan](images/change_plan.png){.thumbnail}
 
-De seguida, selecione a sua nova subscrição e a sua duração. Valide os contratos correspondentes e clique em `Enviar`{.action}.
+De seguida, selecione a nova subscrição e a respetiva duração. Valide os contratos correspondentes e clique em `Enviar`{.action}.
 
-### Verificar que o seu alojamento é compatível com uma oferta inferior <a name="checks"></a>
+### Verifique se o seu alojamento web é compatível com uma oferta da gama inferior <a name="checks"></a>
 
-> [!primary]
+> [!warning]
 >
-> A modificação da sua assinatura para uma oferta que emite menos recursos só é possível se se trata da oferta **imediatamente inferior**. 
-> Por exemplo, não poderá passar de uma fórmula *Performance 2* para uma fórmula *Pro* numa única operação.
-> Deverá **primeiro** fazer evoluir o seu alojamento a partir da fórmula *Performance 2* para a oferta *Performance 1* e **depois** para a oferta *Pro*.
->
+> A alteração da subscrição para uma oferta da gama baixa só é possível se for a oferta **imediatamente inferior**.
+> Por exemplo, não pode passar de uma fórmula *Performance 2* para uma fórmula *Pro* numa única operação.
+> **Deverá** fazer evoluir o seu alojamento web a partir da fórmula *Performance 2* para a oferta *Performance 1** e depois** para a oferta *Pro*.
 
-Antes de realizar a mudança para um jogo inferior, verifique os 6 elementos seguintes:
+**Antes de alterar para uma gama inferior**, verifique as 6 seguintes opções:
 
 #### 1 - Bases de dados Start SQL
 
-Antes de passar o seu alojamento numa oferta inferior, certifique-se de que a nova oferta inclui suficientes [bases de dados](https://www.ovhcloud.com/pt/web-hosting/options/start-sql/). Verifique também que têm tamanhos suficientes.
+Certifique-se de que a nova oferta inclui suficientes [bases de dados](https://www.ovhcloud.com/pt/web-hosting/options/start-sql/). Verifique também se o tamanho é suficiente.
 
-Caso contrário, elimine as bases de dados não utilizadas e reduza, se necessário, a quantidade de dados que contêm. Esta quantidade não deve exceder o tamanho máximo das bases de dados da nova oferta (para qualquer pedido de assistência sobre as operações a efetuar, contacte os [parceiros da OVHcloud](https://partner.ovhcloud.com/pt/directory/)).
+Caso contrário, elimine as bases de dados não utilizadas e, se necessário, reduza a quantidade de dados nelas contida. Esta quantidade não deverá ultrapassar a dimensão máxima das bases de dados da nova oferta. Para qualquer pedido de assistência sobre as manipulações a efetuar, contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/diretory/).
 
-No seguimento da eliminação de dados nas suas bases de dados, pense em recalcular a quota utilizada a partir do separador `Bases de dados`{.action} na parte `Alojamentos`{.action} do seu Espaço Cliente. Clique no botão `...`{.action} à direita da base em questão e depois `Recalcular o limite`{.action}.
+Após a eliminação dos dados das suas bases de dados, recalcule o limite utilizado. Para isso, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e aceda à secção `Web Cloud`{.action}. Na coluna da esquerda, clique em `Alojamento web`{.action} e selecione o alojamento web em causa. Na página que se abrir, aceda ao separador `Bases de dados`{.action} e clique no botão `...`{.action} à direita da base de dados em causa e, a seguir, em `Recalcular o limite`{.action}.
 
 ![quota](images/quota.png){.thumbnail}
 
+> [!primary]
+>
+> Recalcular o limite da sua base de dados pode levar até **15 minutos**. Não hesite em recarregar a página a partir do seu browser Internet se o limite recalculado não for apresentado espontaneamente.
+>
+
 #### 2 - Web Cloud Databases
 
-Se utiliza a oferta [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb#ativacao-do-seu-servidor-clouddb-incluido-com-o-seu-plano-de-alojamento-web) incluída com o seu alojamento [Performance](https://www.ovhcloud.com/pt/web-hosting/performance-offer/) e deseja migrar o seu alojamento para uma oferta [Pro](https://www.ovhcloud.com/pt/web-hosting/professional-offer/), aceda à parte `Alojamentos`{.action} da sua Área de Cliente.<br>
-Clique no botão `...`{.action} na parte `Bases de dados privada`{.action} depois `Desassociar`{.action}.
+Se utilizar a oferta [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) incluída com o seu alojamento web [Performance](https://www.ovhcloud.com/pt/web-hosting/performance-offer/) e pretender colocar o seu alojamento web numa oferta [Pro](https://www.ovhcloud.com/pt/web-hosting/professional-offer/), deverá primeiro dissociar a oferta Web Cloud Databases do seu alojamento web.<br>
+Para isso, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e aceda à secção `Web Cloud`{.action}. Na coluna da esquerda, clique em `Alojamento web`{.action} e selecione o alojamento web em causa. Na página que vai aparecer, permaneça no separador `Informações gerais`{.action}. Na coluna central `Configuração`, clique no botão `...`{.action} à direita da menção `Web Cloud Databases`{.action} e, a seguir, em `Desassociar`{.action}.
 
 ![Web Cloud Databases](images/clouddb.png){.thumbnail}
 
 Esta ação permitir-lhe-á encomendar uma oferta Web Cloud Databases independente da sua subscrição *Performance*. Os dados do seu servidor serão conservados.
 
-Se não deseja conservar estes dados, pode também eliminar o seu SQL privado antes de passar para a oferta *Pro*: 
+Se não deseja conservar estes dados, pode igualmente eliminar o seu serviço Web Cloud Databases antes de passar para a oferta *Pro* : 
 
-1. Faça o backup dos seus dados seguindo as instruções deste [guia](/pages/web_cloud/web_cloud_databases/save-export-on-database-server).<br>
-2. Elimine o seu servidor Web Cloud Databases através da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Para isso, clique no canto superior direito no seu nome e depois em `Gestão dos serviços`{.action}. A seguir, clique no botão `...`{.action} à direita da linha em questão e depois `Eliminar o meu alojamento SQL privado`{.action}.
+1. Efetue o backup dos seus dados conforme indicado neste [guia](/pages/web_cloud/web_cloud_databases/save-export-on-database-server).<br>
+2. Elimine o seu servidor Web Cloud Databases através da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Para isso, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), clique no canto superior direito do rato sobre o seu nome e, a seguir, clique no ícone `Produtos e serviços`{.action}. Clique então no botão `...`{.action} à direita da linha da oferta Web Cloud Databases/SQL Privado em causa e depois em `Eliminar o meu alojamento SQL Privado`{.action}.
 
-#### 3 - Espaço FTP
+#### 3 - Espaço de armazenamento FTP
 
-Antes de passar o seu alojamento numa oferta inferior, certifique-se de que a nova oferta tem espaço de [armazenamento FTP suficiente](/pages/web_cloud/web_hosting/ftp_connection) para que os ficheiros do seu alojamento atual possam ser importados.
+Certifique-se de que a nova oferta oferece um espaço de armazenamento [FTP](/pages/web_cloud/web_hosting/ftp_connection) suficiente para que seja possível a importação dos ficheiros do seu alojamento atual.
 
-A quota utilizada no seu alojamento FTP está visível na secção `Alojamentos`{.action}, na Área de Cliente. Clique no separador `Informações gerais`{.action}, e encontrará a quota no `Espaço de disco`.
+Para verificar a quota de espaço de armazenamento FTP utilizado no seu alojamento web, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e aceda à secção `Web Cloud`{.action}. Na coluna da esquerda, clique em `Alojamentos`{.action} e selecione o alojamento web em causa. Na página `Informações gerais`{.action} que é apresentada, encontre a quota sob a menção `Espaço de disco`.
 
 ![ftp](images/ftp.png){.thumbnail}
 
 #### 4 - Endereços de e-mail
 
-Verifique também que a nova oferta inclui um número suficiente de endereços de e-mail disponíveis. Caso contrário, elimine endereços supérfluos, depois de os ter [guardado](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration), se necessário.
+Certifique-se de que a nova oferta inclui endereços de correio eletrónico suficientes disponíveis. Caso contrário, remova os endereços de e-mail não utilizados após [copiar](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration) os respetivos conteúdos, se necessário.
 
-Se pretender manter o mesmo número de caixas de correio antes de passar o seu alojamento numa oferta inferior, pode igualmente encomendar uma nova oferta de e-mail **MX Plan**. Na parte `E-mails`{.action}, clique na oferta em causa e, a seguir, no botão `...`{.action} à direita de `Oferta`. Finalmente, clique em `Mudar de oferta`{.action}.
+Se pretender conservar o mesmo número de caixas de correio e **antes de passar o seu alojamento web para uma oferta inferior**, é igualmente possível encomendar uma nova oferta de correio eletrónico **MX Plan**. Para isso, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e aceda à secção `Web Cloud`{.action}. Na coluna da esquerda, clique em `E-mails`{.action} e selecione o serviço de e-mail em causa. Na página que se abrir, na caixa `Subscrição`{.action} e à direita da menção `Oferta`{.action}, clique no botão `...`{.action} e, a seguir, em `Mudar de oferta`{.action}.
 
 ![mxplan](images/mxplan.png){.thumbnail}
 
+>[!primary]
+>
+> Se o botão `...`{.action} estiver indisponível no seu serviço de e-mail, pode desassociar o serviço de e-mail do seu alojamento web. Para isso, fique ligado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) na parte `Web Cloud`{.action}. Na coluna da esquerda, clique em `Alojamentos`{.action} e selecione o alojamento web em causa. Na página `Informações gerais`{.action} que se abrir, e na caixa `Configuração`{.action}, clique no botão `...`{.action} à direita da menção `Endereços de e-mail`{.action} e, a seguir, em `Desassociar a minha opção de e-mail`{.action}.
+>
+
 #### 5 - Mailing lists
 
-A funcionalidade [Mailing lists](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_mailing_list) está disponível como opção nos alojamentos [Perso](https://www.ovhcloud.com/pt/web-hosting/personal-offer/).
+A funcionalidade [Mailing lists](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_mailing_list) é opcional nos alojamentos [Perso](https://www.ovhcloud.com/pt/web-hosting/personal-offer/).
 
-Para passar o seu alojamento numa oferta [Perso](https://www.ovhcloud.com/pt/web-hosting/personal-offer/), deverá eliminar as mailing lists ou encomendar uma oferta de e-mail que inclua esta funcionalidade (**MX Plan 100** ou **MX Plan Full**) a partir do seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+Para passar o seu alojamento web para uma oferta [Perso](https://www.ovhcloud.com/pt/web-hosting/personal-offer/), deverá em primeiro lugar eliminar as mailing lists ou encomendar uma oferta de correio eletrónico que inclua esta funcionalidade (**MX Plan 100** ou **MX Plan Full**) a partir da sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 
-Na parte `E-mails`{.action}, selecione o serviço em causa e clique em `...`{.action} à direita de `Oferta`. Finalmente, clique em `Mudar de oferta`{.action}.
+Para isso, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e aceda à secção `Web Cloud`{.action}. Na coluna da esquerda, clique em `E-mails`{.action} e selecione o serviço de e-mail em causa. Na página que se abrir, na caixa `Subscrição`{.action} e à direita da menção `Oferta`{.action}, clique no botão `...`{.action} e, a seguir, em `Mudar de oferta`{.action}.
+
+>[!primary]
+>
+> Se o botão `...`{.action} estiver indisponível no seu serviço de e-mail, pode desassociar o serviço de e-mail do seu alojamento web. Para isso, fique ligado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) na parte `Web Cloud`{.action}. Na coluna da esquerda, clique em `Alojamentos`{.action} e selecione o alojamento web em causa. Na página `Informações gerais`{.action} que se abrir, e na caixa `Configuração`{.action}, clique no botão `...`{.action} à direita da menção `Endereços de e-mail`{.action} e, a seguir, em `Desassociar a minha opção de e-mail`{.action}.
+>
 
 #### 6 - Utilizadores FTP
 
-Antes de migrar o seu alojamento para uma oferta inferior, certifique-se de que a nova oferta inclui um número suficiente de utilizadores FTP.
+Certifique-se de que a nova oferta oferece utilizadores FTP em número suficiente.
 
-O número de utilizadores FTP é visível na sua Área de Cliente OVHcloud. Aceda à secção `Web Cloud`{.action} e selecione o alojamento em causa na secção `Alojamentos`{.action} à esquerda. Na página que aparece, clique no separador `FTP-SSH`{.action}. Na parte inferior da página seguinte, uma tabela lista todos os utilizadores FTP criados para o seu alojamento web.
+O número de utilizadores FTP pode ser consultado na Área de Cliente OVHcloud. Uma vez ligado, aceda à secção `Web Cloud`{.action}. Na coluna da esquerda, clique em `Alojamentos`{.action} e selecione o alojamento web em causa. Na página que se abrir, clique no separador `FTP-SSH`{.action}.
 
-Para eliminar utilizadores FTP, clique no botão `...`{.action} à direita do utilizador FTP que deseja eliminar e, a seguir, `Eliminar`{.action}.
+Na parte inferior da página que aparece, há uma tabela que lista todos os utilizadores FTP criados para o seu alojamento web.
 
-![user FTP deletion](images/userFTP.png){.thumbnail}
+Para eliminar utilizadores FTP, clique no botão `...`{.action} à direita do utilizador FTP que pretende eliminar e, a seguir, em `Eliminar`{.action}.
+
+![user FTP deletion](images/userFTP.png){.thumbnail} 
 
 #### Finalização
 
-Depois de verificar estes 7 elementos, pode realizar a sua [alteração da oferta](#modify).
+Depois de verificar estes 6 pontos, pode realizar o seu [alteração da oferta](#modify).
 
-### Casos especiais
+### Casos particulares
 
-#### Possui uma oferta alojamento gratuito 100M <a name="start10m"></a>
+#### Possui uma oferta de alojamento gratuito 100M <a name="100m"></a>
 
-No âmbito de uma alteração da oferta [Alojamento gratuito 100M](/pages/web_cloud/web_hosting/activate_start10m), apenas [a oferta Perso](https://www.ovhcloud.com/pt/web-hosting/personal-offer/) ser-lhe-á proposta. No entanto, após uma mudança para a oferta Perso, poderá fazer evoluir esta última para o conjunto das nossas [ofertas de alojamento Web](https://www.ovhcloud.com/pt/web-hosting/).
+Se efetuar uma alteração a partir de uma oferta de [alojamento gratuito 100M](pages/web_cloud/web_hosting/activate_start10m), apenas [a oferta Perso](https://www.ovhcloud.com/pt/web-hosting/personal-offer/) lhe será proposta. No entanto, após uma alteração para a oferta Perso, poderá fazer evoluir esta última para o conjunto dos nossos [alojamentos web](https://www.ovhcloud.com/pt/web-hosting/).
 
-Siga [estas instruções](#modify) para realizar a alteração da oferta.
+Siga [estas instruções](#modify) para realizar a sua alteração de oferta.
 
-#### Dar boost temporário ao seu alojamento Performance <a name="boost"></a>
+#### Boost temporariamente ao seu alojamento Performance <a name="boost"></a>
 
-Com a [opção Boost](https://www.ovhcloud.com/pt/web-hosting/options/boost/), disponível nas nossas ofertas *Performance*, pode aumentar temporariamente os recursos CPU e RAM do seu alojamento para absorver um aumento pontual do tráfego. Se este aumento se prolonga no tempo, poderá também [migrar para a oferta Performance de nível superior](#modify) de forma a dispor destes recursos de forma permanente.
+Com a [opção Boost](https://www.ovhcloud.com/pt/web-hosting/options/boost/), disponível nas nossas ofertas *Performance*, pode aumentar temporariamente os recursos de CPU e RAM do seu alojamento web para absorver um aumento pontual do tráfego. Se este aumento se prolongar no tempo, pode igualmente [migrar para a oferta Performance de nível superior](#modify) de forma a dispor destes recursos de forma permanente.
 
 > [!warning]
 >
-> Quando decide ativar a opção Boost, esta fica ativa e faturada **até a desativar**.
+> Quando decide ativar a opção Boost, esta continua ativa e faturada **enquanto não a desativar**.
 
-Se precisar da opção **Boost**, encontrará abaixo as instruções para **ativar** ou **desativar** esta opção no alojamento.
+Se a opção **Boost** for adequada às suas necessidades, encontrará abaixo as instruções para **ativar** ou **desativar** esta opção no seu alojamento.
 
->  [!tabs]
+> [!tabs]
 > **Ativar a opção Boost**
->>
->> No quadro `Informações gerais` do seu alojamento, clique no botão `...`{.action} à direita de `Boost` e, a seguir, em `Booster a minha oferta`{.action}.<br><br>
->> ![boost](images/enable_boost.png){.thumbnail}<br>
->>
+>>>
+>>> Para ativar a opção Boost, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e aceda à secção `Web Cloud`{.action}. Na coluna da esquerda, clique em `Alojamentos`{.action} e selecione o alojamento web em causa. No quadro "Informações gerais" da página que se abrir, clique no botão `...`{.action} à direita de `Boost` e, a seguir, em `Aplicar opção boost ao serviço`{.action}.<br><br>
+>>![boost](images/enable_boost.png){.thumbnail}<br>
+>>>
 > **Desativar a opção Boost**
->>
->> No separador `Plus` do seu alojamento, clique em `Booster a minha oferta`{.action}.<br>
->> Aparecerá a tabela de utilização da opção Boost, clique em `Desativar a oferta boost`{.action}.<br><br>
->> ![boost](images/disable_boost.png){.thumbnail}<br>
+>>>
+>>> Para desativar a opção Boost, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e aceda à secção `Web Cloud`{.action}. Na coluna da esquerda, clique em `Alojamentos`{.action} e selecione o alojamento web em causa. Na página que se abrir, aceda ao separador `Mais` e clique em `Aplicar opção boost ao serviço`{.action}.<br>
+>>> Aparece o quadro de utilização da opção Boost, clique em `Desativar a opção boost`{.action}.<br><br>
+>>![boost](images/disable_boost.png){.thumbnail}<br>
 
 #### A faturação em caso de alteração da oferta <a name="billing"></a>
 
-Ao alterar a sua oferta inicial para uma oferta superior, é aplicado um cálculo *pro rata temporis* até à próxima data de renovação desta subscrição inicial.
+Quando altera a sua oferta inicial para uma oferta superior, é aplicado um cálculo *pro rata temporis* até à próxima data de renovação dessa subscrição inicial.
 Este cálculo corresponde à diferença de preço entre a sua oferta inicial e a sua nova oferta.
 
-> **Por exemplo:**<br>
+> **Exemplo:**<br>
 >
-> Subscreveu uma subscrição [Perso](https://www.ovhcloud.com/pt/web-hosting/personal-offer/) em 1 de janeiro de 2022.
+> Subscreveu a subscrição [Perso](https://www.ovhcloud.com/pt/web-hosting/personal-offer/) em 1 de janeiro de 2022.
 >
-> No dia 31 de outubro de 2022, passará desta oferta **Perso** para uma subscrição da oferta [Pro](https://www.ovhcloud.com/pt/web-hosting/professional-offer/).<br>
+> Em 31 de outubro de 2022, a renovação desta oferta **Perso** passa para uma subscrição da oferta [Pro](https://www.ovhcloud.com/pt/web-hosting/professional-offer/).<br>
 >
-> Por conseguinte, o montante correspondente à duração restante da subscrição **Perso** (2 meses, de 1 de novembro de 2022 a 1 de janeiro de 2023) é automaticamente subtraído do custo da nova subscrição **Pro** até 1 de janeiro de 2023. Apenas pagarão a diferença.
-> A partir de 1 de janeiro de 2023, a subscrição Pro é faturada ao preço em vigor.
+> Por conseguinte, o montante correspondente à duração restante da subscrição **Perso** (2 meses, de 1 de novembro de 2022 a 1 de janeiro de 2023) é automaticamente subtraído do custo da nova subscrição **Pro* até 1 de janeiro de 2023. Você só pagará a diferença.
+> A partir de 1 de janeiro de 2023, a subscrição **Pro** é faturada ao preço atual.
 
-Siga [estas instruções](#modify) para realizar a alteração da oferta.
+Siga [estas instruções](#modify) para realizar a sua alteração de oferta.
 
-## Quer saber mais? <a name="gofurther"></a>
+## Quer saber mais? <a name="go-further"></a>
 
-[Consultar as estatísticas e os logs do meu site alojado numa oferta partilhada](/pages/web_cloud/web_hosting/logs_and_statistics)
+[Consultar as estatísticas e os logs de um site alojado numa oferta partilhada](/pages/web_cloud/web_hosting/logs_and_statistics)
 
-[Otimizar o desempenho do seu site](/pages/web_cloud/web_hosting/optimise_your_website_performance)
+[Otimização das performances do seu site](/pages/web_cloud/web_hosting/optimise_your_website_performance)
 
-Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
 
-Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, convidamo-lo a consultar as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
 
-Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
+Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>. 
