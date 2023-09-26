@@ -302,15 +302,15 @@ This action allows you to deactivate the CDN for one or more of your Multisite e
 
 > [!warning]
 >
-> Disabling the CDN option for a website requires changing the IP address to use to redirect your domain name to your web hosting plan.
-> This change is done automatically if your domain name’s active DNS zone is also managed from the [OVHcloud account](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) containing your web hosting plan.
+> Disabling the CDN option for a website requires changing the IP address to use to redirect your domain name to your Web Hosting plan.
+> This change is done automatically if your domain name’s active DNS zone is also managed from the [OVHcloud account](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) containing your Web Hosting plan.
 >
 > Otherwise, you will need to do two things:
 >
-> - Retrieve the **default** IP address of the cluster where your Web Hosting plan is located using our guide “[Web Hosting: the IP addresses of our clusters](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)”;
+> - Retrieve the **default** IP address of the cluster where your Web Hosting plan is located using our guide “[Web Hosting: The IP addresses of our clusters](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)”.
 > - Manually change the IP address in your domain name’s active DNS zone, or contact your DNS zone provider to update it for you.
 >
-> Modifying an entry in a domain name’s active DNS zone will take between **4** and **24** hours to propagate fully. By the time this propagation finishes, a page containing the code **520** may appear randomly. This phenomenon is linked to the fact that some parts of the DNS network still redirect requests to the CDN IP address linked to your web hosting plan.
+> Modifying an entry in a domain name’s active DNS zone will take between **4** and **24** hours to propagate fully. By the time this propagation finishes, a page containing the code **520** may appear randomly. This occurs because some parts of the DNS network still redirect requests to the CDN IP address linked to your Web Hosting plan.
 >
 
 Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and select `Web Cloud`{.action} in the top navigation bar. Click `Hosting plans`{.action}, then choose the relevant the Web Hosting plan. On the `Multisite`{.action} tab, click on `...`{.action} to the right of the Multisite entry, then click on `Modify domain`{.action}.
