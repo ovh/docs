@@ -1,6 +1,6 @@
 ---
 title: "Webhosting: Was tun, wenn meine Datenbank voll ist?"
-excerpt: "Diese Anleitung erklärt, wie Sie vorgehen, wenn Ihre Datenbank voll ist"
+excerpt: "Erfahren Sie hier, wie Sie vorgehen, wenn Ihre Datenbank voll ist"
 updated: 2023-09-21
 ---
 
@@ -55,17 +55,17 @@ Im ersten Schritt werden die großen Tabellen in der Datenbank identifiziert.
 
 #### 1.1 - Verbindung zur Datenbank über phpMyAdmin
 
-Rufen Sie die Zugangsinformationen zu Ihrer Datenbank direkt in der Konfigurationsdatei Ihrer Website ab. Führen Sie diese Aktion aus, indem Sie den **Schritt 1** unserer Anleitung zur [Änderung des Datenbankpassworts verwenden](/pages/web_cloud/web_hosting/sql_change_password).
+Das Passwort für den Zugriff auf Ihre Datenbank erhalten Sie direkt aus der Konfigurationsdatei Ihrer Seite. Führen Sie diese Aktion mithilfe von **Schritt 1** in unserer Anleitung zur [Änderung des Datenbankpassworts](/pages/web_cloud/web_hosting/sql_change_password) durch.
 
-Verbinden Sie sich mit Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) und wählen Sie `Web Cloud`{.action} in der Navigationsleiste oben auf dem Bildschirm aus. Klicken Sie auf `Hosting-Pakete`{.action} und wählen Sie das Webhosting aus, das Ihrer Shared-Datenbank von OVHcloud zugeordnet ist. Gehen Sie dann auf den Tab `Datenbanken`{.action}.
+Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie in der Navigationsleiste oben `Web Cloud`{.action} aus. Klicken Sie auf `Hosting-Pakete`{.action} und wählen Sie den relevanten Dienst mit der Datenbank aus. Gehen Sie anschließend zum Tab `Datenbanken`{.action}.
 
 Unten auf dem Bildschirm wird eine Tabelle mit den Datenbanken angezeigt.
 
 ![phpMyAdmin Access](images/pma_access.png){.thumbnail}
 
-Beachten Sie **für Ihre überlastete Datenbank** den `Benutzernamen` und die `Server-Adresse` in der Tabelle Ihrer Datenbanken. 
+Beachten Sie für Ihre **überlastete Datenbank** den `Benutzernamen` und die `Server-Adresse` in der Tabelle Ihrer Datenbanken. 
 
-Bleiben Sie im Tab `Datenbanken`{.action} und klicken Sie auf den Button `...`{.action} rechts neben der Datenbank, die voll ist, und dann auf `Zugang zu phpMyAdmin`{.action} gehen.
+Klicken Sie auf den Button `...`{.action} rechts neben der relevanten Datenbank und dann auf `Zugang zu phpMyAdmin`{.action}.
 
 ![phpMyAdmin Go Login](images/pma_interface.png){.thumbnail}
 
