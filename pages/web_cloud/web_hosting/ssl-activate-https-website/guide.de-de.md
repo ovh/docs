@@ -70,7 +70,7 @@ Wir empfehlen Ihnen jedoch dringend, die unten aufgeführten Aspekte zu berücks
 >
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 >
-> Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) und/oder den Herausgeber des Dienstes zu kontaktieren. Für externe Dienstleistungen bietet OVHcloud leider keine Unterstützung. Genauere Informationen finden Sie im Teil „Weiterführende Informationen" dieser Anleitung. 
+> Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) und/oder den Herausgeber des Dienstes zu kontaktieren. Für externe Dienstleistungen bietet OVHcloud leider keine Unterstützung. Genauere Informationen finden Sie im Teil "Weiterführende Informationen" dieser Anleitung. 
 >
 
 #### 2.1 Mischen von HTTP- und HTTPS-Inhalten vermeiden
@@ -91,14 +91,14 @@ Beachten Sie, dass auch wenn Ihr Hosting über ein SSL-Zertifikat verfügt, die 
 
 Achten Sie beispielsweise auf im Code Ihrer Website verwendete Adressen. Wenn möglich:
 
-- verwenden Sie bevorzugt relative Adressen wie `./img/header.png` und
-- vermeiden Sie absolute Adressen, die das *HTTP*-Protokoll verwenden, etwa `http://mypersonaldomain.ovh/img/header.png`.
+- Verwenden Sie bevorzugt relative Adressen wie `./img/header.png`.
+- Vermeiden Sie absolute Adressen, die das *HTTP*-Protokoll verwenden, etwa `http://mypersonaldomain.ovh/img/header.png`.
 
 Falls nötig, muss der Code Ihrer Website entsprechend angepasst werden. Wenn Sie jedoch eine schlüsselfertige Website (z.B. WordPress) verwenden, ist deren Struktur in der Regel unmittelbar für den Wechsel auf *HTTPS* verwendbar. In diesem Fall müssen Sie also keine Anpassungen im Code vornehmen.
 
 #### 2.2 <i>Duplicate Content</i> vermeiden
 
-Je nachdem, wie Ihre Website codiert ist, muss sichergestellt werden, dass sie nicht über verschiedene Adressen erreichbar ist, etwa sowohl über *HTTP* als auch *HTTPS*. Wenn dies nämlich der Fall ist, sind dieselben Inhalte über unterschiedliche Adressen aufrufbar, was Suchmaschinen als *Duplicate Content* („doppelten Inhalt“) erkennen.
+Je nachdem, wie Ihre Website codiert ist, muss sichergestellt werden, dass sie nicht über verschiedene Adressen erreichbar ist, etwa sowohl über *HTTP* als auch *HTTPS*. Wenn dies nämlich der Fall ist, sind dieselben Inhalte über unterschiedliche Adressen aufrufbar, was Suchmaschinen als *Duplicate Content* (duplizierter Inhalt) erkennen.
 
 Auch dies kann sich negativ auf das Suchmaschinenranking Ihrer Website auswirken. Daher ist es sinnvoll sicherzustellen, dass die Website die Verwendung von *HTTPS* „erzwingt“. Das funktioniert über eine „<i>Rewrite</i>-Regel“, die Sie in den Code Ihrer Website implementieren sollten, wenn Sie *HTTPS* aktivieren möchten.
 
