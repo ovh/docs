@@ -1,26 +1,26 @@
 ---
-title: 'Transfer an Instance backup from one OpenStack region to another'
-excerpt: 'This guide will show you how to transfer an Instance backup from one OpenStack region to another while preserving the configuration and state of the Instance'
+title: Transfer an instance backup from one OpenStack region to another
+excerpt: Find out how to transfer an instance backup from one OpenStack region to another while preserving the configuration and state of the instance
 updated: 2023-09-25
 ---
 
 ## Objective
 
-A situation may arise where you need to move your [Public Cloud Instance](https://www.ovhcloud.com/en-gb/public-cloud/){.external} from one OpenStack region to another, either because you would prefer to move to a newly available OpenStack region or because you want to migrate from OVHcloud Labs to Public Cloud. 
+A situation may arise where you need to move your [Public Cloud instance](https://www.ovhcloud.com/en-gb/public-cloud/){.external} from one OpenStack region to another, either because you would prefer to move to a newly available OpenStack region or because you want to migrate from OVHcloud Labs to Public Cloud. 
 
-**This guide will show you how to transfer an Instance backup from one OpenStack region to another while preserving the configuration and state of the Instance.**
+**This guide will show you how to transfer an instance backup from one OpenStack region to another while preserving the configuration and state of the instance.**
 
 ## Requirements
 
 In order to do the transfer, you will need an environment with:
 
-* OpenStack CLI. This guide details you how to [prepare the environment to use the OpenStack API](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api){.external}
-* connectivity to OVHCloud OpenStack APIs.
-* available storage that matches the instance disk size (for temporary backup storage)
+* OpenStack CLI. This guide details you how to [prepare the environment to use the OpenStack API](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api){.external}.
+* Connectivity to OVHCloud OpenStack APIs.
+* Available storage that matches the instance disk size (for temporary backup storage).
 
-This environment will be used as a 'Jump host' to transfer the backup from one region to another. This environment can be an instance hosted on OVHCloud or your local machine. 
+This environment will be used as a "Jump host" to transfer the backup from one region to another. This environment can be an instance hosted on OVHCloud or your local machine. 
 
-You will also need a [Public Cloud Instance](https://www.ovhcloud.com/en-gb/public-cloud/){.external} in your OVHcloud account
+You will also need a [Public Cloud instance](https://www.ovhcloud.com/en-gb/public-cloud/){.external} in your OVHcloud account.
 
 
 ## Instructions
@@ -38,7 +38,7 @@ $ openstack server list
 +--------------------------------------+-----------+--------+--------------------------------------------------+--------------+
 ```
 
-Next, run the following command to create a backup of your Instance:
+Next, run the following command to create a backup of your instance:
 
 ```bash 
 $ openstack server image create --name snap_server1 aa7115b3-83df-4375-b2ee-19339041dcfa
@@ -46,7 +46,7 @@ $ openstack server image create --name snap_server1 aa7115b3-83df-4375-b2ee-1933
 
 ### Download the backup
 
-Next, run this command to list available Instances:
+Next, run this command to list available instances:
 
 ```bash
 $ openstack image list
@@ -64,9 +64,9 @@ $ openstack image list
 | 9c9b3772-5320-414a-90bf-60307ff60436 | Debian 8 - Docker                             | active |
 ```
 
-Now identify the Instance backup from the list:
+Now identify the instance backup from the list:
 
-```
+```text
 | 825b785d-8a34-40f5-bdcd-0a3c3c350c5a | snap_server1 | qcow2 | bare | 1598029824 | active |
 ```
 
@@ -125,9 +125,9 @@ $ openstack image create --disk-format qcow2 --container-format bare --file snap
 +------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ```
 
-### Create an Instance from your backup
+### Create an instance from your backup
 
-To create an Instance from your backup, use the backup ID as the image with this command:
+To create an instance from your backup, use the backup ID as the image with this command:
 
 ```bash
 $ openstack server create --key-name SSHKEY --flavor 98c1e679-5f2c-4069-b4da-4a4f7179b758 --image 0a3f5901-2314-438a-a7af-ae984dcbce5c Server1_from_snap
