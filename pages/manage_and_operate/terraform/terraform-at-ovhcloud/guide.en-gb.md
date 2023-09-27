@@ -1,7 +1,7 @@
 ---
 title: Using Terraform with OVHcloud
 excerpt: Find out about useful resources in order to use Terraform with OVHcloud
-updated: 2023-08-07
+updated: 2023-09-27
 ---
 
 ## Introduction
