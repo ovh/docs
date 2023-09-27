@@ -1,5 +1,5 @@
 ---
-title : "Enterprise File Storage - Restaurer un volume à l'aide de l'API de restauration de snapshots"
+title: "Enterprise File Storage - Restaurer un volume à l'aide de l'API de restauration de snapshots"
 excerpt: "Découvrez comment restaurer les volumes de votre solution Enterprise File Storage grâce à la fonctionnalité de restauration de snapshots fournie par l'API OVHcloud"
 updated: 2023-09-15
 ---
@@ -121,7 +121,7 @@ Vous devrez « conserver » (`hold`) le dernier snapshot pris par la Snapshot po
 
 Si d'autres snapshots de type `manual` ont été pris avant ce snapshot, ils devront être supprimés.
 
-4\.  La route API utilisée pour récupérer la liste des snapshots du volume de l'étape 1 peut être réutilisée ici.
+4\. La route API utilisée pour récupérer la liste des snapshots du volume de l'étape 1 peut être réutilisée ici.
 
 ![RevertSnapshot](images/use_case_2_step_3.png){.thumbnail}
 
