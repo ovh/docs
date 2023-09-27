@@ -188,4 +188,4 @@ This universe is currently not supported by Terraform providers
 
 - [Registry entry](https://registry.terraform.io/providers/ovh/ovh/latest)
 - [Documentation](https://registry.terraform.io/providers/ovh/ovh/latest/docs)
-- Source code on [GitHub](https://github.com/ovh/terraform-provider-ovh) (contributions are welcome !): 
+- Source code on [GitHub](https://github.com/ovh/terraform-provider-ovh) (contributions are welcome) 
