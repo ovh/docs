@@ -1,6 +1,6 @@
 ---
 title: "Web Hosting: Switch your website to HTTPS"
-excerpt: "Find out how to activate HTTPS on your website after you have installed an SSL certificate"
+excerpt: Find out how to activate HTTPS on your website after you have installed an SSL certificate
 updated: 2023-09-22
 ---
 
@@ -8,7 +8,7 @@ updated: 2023-09-22
 
 With an OVHcloud Web Hosting plan, you can get a free SSL certificate. An SSL certificate provides one or more of your websites with secure connections by making them accessible via *HTTPS*. You will need to follow several steps to ensure that your websites can use this secure connection.
 
-**Find out how to switch your website to *HTTPS* after you have activated an SSL certificate.**
+**Find out how to switch your website to HTTPS after you have activated an SSL certificate.**
 
 ## Requirements
 
@@ -32,12 +32,12 @@ The table below provides a breakdown of the changes you will need to make.
 |---|---|---|
 |1|Activate the SSL certificate on the Web Hosting plan.|Allows you to activate the SSL certificate, check that it has been set up properly on your Web Hosting plan, and that it has been activated for your website.|
 |2|Check the technical environment.|Allows you to check that the switch to *HTTPS* has not caused any issues for your website before you make any changes.|
-|3|Activate *HTTPS* for your website.|By activating *HTTPS*, your website can then use *HTTPS* protocol. There is no universal method for making this change. The method you need to use will vary, depending on your website.|
+|3|Activate HTTPS for your website.|By activating *HTTPS*, your website can then use *HTTPS* protocol. There is no universal method for making this change. The method you need to use will vary, depending on your website.|
 |4|Check that your website is working properly.|With this final step, you can ensure that your website displays correctly after you have activated *HTTPS*.|
 
 ### Step 1: Activate the SSL certificate on the Web Hosting plan
 
-You can activate the SSL certificate on your Web Hosting plan via the  [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}. To do this, you will need to make two separate changes:
+You can activate the SSL certificate on your Web Hosting plan via the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}. To do this, you will need to make two separate changes:
 
 |Change|Description|
 |---|---|
@@ -83,7 +83,7 @@ For this reason, it is absolutely vital to ensure that all of the content loaded
 
 ![httpswebsite](images/activate-https-website-ssl-step4.png){.thumbnail}
 
-Please note that even if your Web Hosting plan has an SSL certificate, the content hosted on it can be loaded in *HTTP* or HTTPS. This will depend on the way you have identified the content in your website’s code. As a result, you will need to ensure that the content loaded from your website uses *HTTPS* protocol.
+Please note that even if your Web Hosting plan has an SSL certificate, the content hosted on it can be loaded in *HTTP* or *HTTPS*. This will depend on the way you have identified the content in your website’s code. As a result, you will need to ensure that the content loaded from your website uses *HTTPS* protocol.
 
 For example, pay special attention to the addresses you use in your website’s code. If possible:
 
@@ -94,7 +94,7 @@ You may need to adapt your entire website’s code like this. However, if you ar
 
 #### 2.2: Avoid generating duplicate content
 
-Depending on how your website’s code is written, you will need to ensure that is not accessible via different URLs — for example, the first using *HTTP* and the second using HTTPS. If the same content can be accessed via different URLs, then search engines will treat it as duplicate content.
+Depending on how your website’s code is written, you will need to ensure that is not accessible via different URLs — for example, the first using *HTTP* and the second using *HTTPS*. If the same content can be accessed via different URLs, then search engines will treat it as duplicate content.
 
 This will have a negative effect on your SEO ranking. For this reason, you need to ensure that you force an *HTTPS* connection on your website. You can do this by implementing a rewrite rule in your website’s code when you want to activate *HTTPS*.
 

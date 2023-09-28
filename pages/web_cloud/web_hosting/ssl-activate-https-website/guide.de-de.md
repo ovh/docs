@@ -1,6 +1,6 @@
 ---
 title: "Webhosting: Website auf HTTPS umstellen"
-excerpt: "Erfahren Sie hier, wie Sie nach der Aktivierung eines SSL-Zertifikats Ihre Website auf HTTPS umstellen können"
+excerpt: Erfahren Sie hier, wie Sie nach der Aktivierung eines SSL-Zertifikats Ihre Website auf HTTPS umstellen können
 updated: 2023-09-22
 ---
 
@@ -12,7 +12,7 @@ updated: 2023-09-22
 
 Bei Ihrem OVHcloud Webhosting können Sie ein SSL-Zertifikat verwenden. Damit haben Sie die Möglichkeit, eine oder mehrere Ihrer Websites mit einer sicheren Verbindung auszustatten und über *HTTPS* verfügbar zu machen. Bevor Sie allerdings alle Vorteile der sicheren SSL-Verbindung nutzen können, sind noch ein paar Schritte nötig.
 
-**Diese Anleitung erklärt, wie Sie Ihre Website auf *HTTPS* umstellen, nachdem Sie ein SSL-Zertifikat installiert und aktiviert haben.**
+**Diese Anleitung erklärt, wie Sie Ihre Website auf HTTPS umstellen, nachdem Sie ein SSL-Zertifikat installiert und aktiviert haben.**
 
 ## Voraussetzungen
 
@@ -22,13 +22,13 @@ Bei Ihrem OVHcloud Webhosting können Sie ein SSL-Zertifikat verwenden. Damit ha
 
 ## In der praktischen Anwendung
 
-Sicherheit wird im Internet immer wichtiger. Auch Sie selbst achten sicherlich ganz besonders auf die Vertraulichkeit Ihrer Daten und die Art und Weise, wie diese über das Internet übertragen werden. Im Allgemeinen vertrauen Internetnutzer eher solchen Seiten, die eine sichere Verbindung ermöglichen, und dies natürlich ganz besonders bei der Weitergabe vertraulicher Daten. 
+Sicherheit wird im Internet immer wichtiger. Auch Sie selbst achten sicherlich besonders auf die Vertraulichkeit Ihrer Daten und die Art und Weise, wie diese über das Internet übertragen werden. Im Allgemeinen vertrauen Internetnutzer eher solchen Seiten, die eine sichere Verbindung ermöglichen, insbesondere bei der Weitergabe vertraulicher Daten. 
 
-Wenn Sie eine Internetseite mit sicherer Verbindung besuchen, kann Ihr Browser dies in der Adresszeile gleich auf mehrere Arten anzeigen: ein kleines Icon (normalerweise ein Vorhängeschloss), eine Meldung, manchmal eine farbige Hervorhebung und nicht zuletzt die Verwendung des *HTTPS*-Protokolls statt *HTTP*. Es ist also für jeden Besucher offensichtlich, ob Ihre Website gesichert ist oder nicht.
+Wenn Sie eine Internetseite mit sicherer Verbindung besuchen, kann Ihr Browser dies in der Adresszeile auf mehrere Arten anzeigen: ein Icon (normalerweise ein Vorhängeschloss), eine Meldung, eine farbige Hervorhebung und nicht zuletzt die Verwendung des *HTTPS*-Protokolls statt *HTTP*. Es ist also für jeden Besucher offensichtlich, ob Ihre Website gesichert ist oder nicht.
 
 ![HTTPS Website](images/activate-https-website-ssl-step1.png){.thumbnail}
 
-**Die Umstellung Ihrer Website auf *HTTPS* ist ein heikler Vorgang.** Sie umfasst einige Schritte, bei denen insbesondere Änderungen an der Konfiguration Ihrer Website (dem Code) nötig sind. Wenn diese nicht korrekt durchgeführt werden, kann dies verschiedene negative Folgen haben, etwa ein schlechteres SEO-Ranking oder schlimmstenfalls die Nichtverfügbarkeit Ihrer Website. 
+**Die Umstellung Ihrer Website auf *HTTPS* ist ein heikler Vorgang.** Sie umfasst einige Schritte, bei denen Änderungen an der Konfiguration Ihrer Website (dem Code) nötig sind. Wenn diese nicht korrekt durchgeführt werden, kann dies verschiedene negative Folgen haben, etwa ein schlechteres SEO-Ranking oder schlimmstenfalls die Nichtverfügbarkeit Ihrer Website. 
 
 Folgende Tabelle enthält eine Übersicht der verschiedenen Schritte der Umstellung.
 
