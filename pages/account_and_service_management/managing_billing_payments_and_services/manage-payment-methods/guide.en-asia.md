@@ -1,7 +1,7 @@
 ---
 title: Managing payment methods
 excerpt: Find out how to add and manage payment methods within the OVHcloud Control Panel
-updated: 2022-05-18
+updated: 2023-09-28
 ---
 
 ## Objective
@@ -57,6 +57,10 @@ To register a new bank card, you will be redirected to our payment provider's se
 No amount will be charged and your credit card will be activated in a few minutes.
 
 #### PayPal account
+
+> [!primary]
+>
+> PayPal® is not available for our customers in India.
 
 ![paypal_no_sepa](images/paypal_no_sepa.png){.thumbnail}
 

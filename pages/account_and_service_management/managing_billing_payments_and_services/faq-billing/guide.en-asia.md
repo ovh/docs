@@ -1,7 +1,7 @@
 ---
 title: Billing and payment FAQ
 excerpt: Find the most frequently asked questions about billing and payment
-updated: 2023-06-05
+updated: 2023-09-28
 ---
 
 ## Objective
@@ -170,10 +170,15 @@ For further information, please read this detailed guide: [Information regarding
 ### How do I see the accounts ledger?
 
 The accounts ledger is only issued by the requesting party’s accounts department.
-
+s
 However, OVHcloud offers you access to all of your invoices in an Excel file (.csv).
 
 To download the file, go to the `Invoices`{.action} section, accessible via the dashboard in the OVHcloud Control Panel. Click on the `Actions`{.action} button, then select `Export as CSV`{.action}.
+
+### For customers in India only : what part of my invoice should I pay directly to OVHcloud?
+
+- If you are a B2B company, you receive a bill reduced by 10% and you will have to pay TDS by yourself (if you have validated the GST certificate during the KYC).
+- If you are a B2C company, you pay the full billing amount including TDS.
 
 ## Go further
   
