@@ -1,12 +1,16 @@
 ---
-title: "Sharepoint: sincronizar los datos en el ordenador"
+title: "Sharepoint : sincronizar los datos en el ordenador"
 excerpt: Cómo guardar una copia de seguridad de los datos de su SharePoint de OVHcloud en su ordenador
 updated: 2023-09-21
 ---
 
+> [!primary]
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+>
+
 ## Objetivo
 
-Si desea recuperar o migrar los datos de su plataforma de SharePoint de OVHcloud, esta guía explica los pasos necesarios para extraer todos los datos al almacenamiento local de su ordenador.
+Si desea recuperar o migrar los datos de su plataforma de SharePoint de OVHcloud, esta guía explica los etapas necesarios para extraer todos los datos al almacenamiento local de su ordenador.
 
 **Esta guía explica cómo realizar una copia de seguridad de los datos de su SharePoint de OVHcloud en su ordenador.**
 
@@ -14,18 +18,18 @@ Si desea recuperar o migrar los datos de su plataforma de SharePoint de OVHcloud
 
 - Haber iniciado sesión en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
 - Tener una [solución SharePoint de OVHcloud](https://www.ovhcloud.com/es-es/collaborative-tools/sharepoint/)
-- Tener un equipo que utilice el sistema operativo Microsoft Windows para realizar los pasos de migración.
+- Tener un equipo que utilice el sistema operativo Microsoft Windows para realizar los etapas de migración.
 
 ## Procedimiento
 
 Esta guía se divide en 4 etapas:
 
-- [Paso 1 - Instalar OneDrive para la Empresa](#installonedrive): OneDrive para la Empresa le permitirá transferir los datos de Sharepoint a su equipo
-- [Paso 2 - Preparar la migración desde el área de cliente de OVHcloud](#controlpanelconfig): configure su plataforma Sharepoint designando una única cuenta de administrador que podrá transferir el contenido de OneDrive de cada cuenta Sharepoint.
-- [Paso 3 - Iniciar la migración desde la interfaz de Sharepoint](#migrationignition): inicie sesión en la cuenta designada en el paso 2 para transferir el contenido a su ordenador.
-- [Paso 4. Migrar el contenido de otras cuentas de Sharepoint](#migrationother): sigue el proceso para ver y sincronizar el espacio de OneDrive de cada cuenta en la plataforma de Sharepoint.
+- [Etapa 1 - Instalar OneDrive para la Empresa](#installonedrive): OneDrive para la Empresa le permitirá transferir los datos de Sharepoint a su equipo
+- [Etapa 2 - Preparar la migración desde el área de cliente de OVHcloud](#controlpanelconfig): configure su plataforma Sharepoint designando una única cuenta de administrador que podrá transferir el contenido de OneDrive de cada cuenta Sharepoint.
+- [Etapa 3 - Iniciar la migración desde la interfaz de Sharepoint](#migrationignition): inicie sesión en la cuenta designada en el etapa 2 para transferir el contenido a su ordenador.
+- [Etapa 4 - Migrar el contenido de otras cuentas de Sharepoint](#migrationother): sigue el proceso para ver y sincronizar el espacio de OneDrive de cada cuenta en la plataforma de Sharepoint.
 
-### Paso 1 - Instalar OneDrive para la Empresa <a name="installonedrive"></a>
+### Etapa 1 - Instalar OneDrive para la Empresa <a name="installonedrive"></a>
 
 Para migrar los datos de su servicio SharePoint de OVHcloud, debe utilizar la aplicación OneDrive para la Empresa, cuyo nombre técnico es «Groove.exe».
 
@@ -39,7 +43,7 @@ Para instalarlo, siga estas instrucciones:
 
 > [!warning]
 >
-> Si el archivo `setup.bat` no se inicia correctamente (en el paso 4), puede copiar el contenido del archivo `onedrive.iso` en una carpeta del escritorio del equipo e intentar de nuevo el paso 4.
+> Si el archivo `setup.bat` no se inicia correctamente (en el etapa 4), puede copiar el contenido del archivo `onedrive.iso` en una carpeta del escritorio del equipo e intentar de nuevo el etapa 4.
 
 ![sharepoint](images/sharepoint-eol-00.gif){.thumbnail}
 
@@ -47,7 +51,7 @@ Para instalarlo, siga estas instrucciones:
 >
 > Si este método no funciona en el equipo, puede instalar OneDrive para la Empresa siguiendo [el procedimiento oficial de Microsoft](https://learn.microsoft.com/sharepoint/install-previous-sync-app#install-groove-exe-with-office-2016).
 
-### Paso 2 - Preparar la migración desde el área de cliente de OVHcloud <a name="controlpanelconfig"></a>
+### Etapa 2 - Preparar la migración desde el área de cliente de OVHcloud <a name="controlpanelconfig"></a>
 
 Para acceder a todos los espacios de OneDrive del servicio de SharePoint, debe quitar el derecho de administrador de todos los usuarios desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
 
@@ -67,7 +71,7 @@ En la pestaña `Usuarios`{.action} de su plataforma SharePoint, haga clic en el 
 
 Ahora puede sincronizar todos los espacios de OneDrive de su plataforma de SharePoint con esta cuenta.
 
-### Paso 3 - Iniciar la migración desde la interfaz de Sharepoint <a name="migrationignition"></a>
+### Etapa 3 - Iniciar la migración desde la interfaz de Sharepoint <a name="migrationignition"></a>
 
 Acceda a la interfaz en línea del servicio SharePoint. La URL de acceso se encuentra en el área de cliente de OVHcloud, en la pestaña `Información general`{.action}, bajo el epígrafe `URL de consulta`.
 
@@ -89,7 +93,7 @@ Se abrirá una ventana en la que podrá abrir el vínculo **grvopen**. Para auto
 
 ![sharepoint](images/sharepoint-eol-07.png){.thumbnail}
 
-Introduzca las claves de la cuenta de administrador de Sharepoint. Utilice el usuario con permisos de administrador (configurado en [el paso 2](#controlpanelconfig)).
+Introduzca las claves de la cuenta de administrador de Sharepoint. Utilice el usuario con permisos de administrador (configurado en [el etapa 2](#controlpanelconfig)).
 
 ![sharepoint](images/sharepoint-eol-08.png){.thumbnail}
 
@@ -103,9 +107,9 @@ Seleccione la plantilla de biblioteca «**Form Templates**» en la ventana "Sele
 
 Una vez completada la sincronización en el equipo, sólo se transferirán al equipo los datos de la cuenta de SharePoint a la que ha iniciado sesión.
 
-**Para transferir el contenido de OneDrive de cada cuenta de la plataforma de SharePoint, siga el paso 4 a continuación.**
+**Para transferir el contenido de OneDrive de cada cuenta de la plataforma de SharePoint, siga el etapa 4 a continuación.**
 
-### Paso 4 - Migrar el contenido de otras cuentas de Sharepoint <a name="migrationother"></a>
+### Etapa 4 - Migrar el contenido de otras cuentas de Sharepoint <a name="migrationother"></a>
 
 Para tener acceso al OneDrive de otros usuarios de tu plataforma y sincronizar los datos asociados, debes cambiar la URL de acceso (desde tu explorador) cuando inicies sesión en OneDrive de la cuenta de administrador.
 
@@ -123,7 +127,7 @@ Para ello, en la URL que se muestra, sustituya la «sección» (correspondiente 
 >
 > Las direcciones URL anteriores solo se proporcionan a modo de ejemplo. Asegúrese de utilizar la URL generada por su plataforma de SharePoint.
 
-Puede sincronizar las siguientes cuentas repitiendo este paso.
+Puede sincronizar las siguientes cuentas repitiendo este etapa.
 
 ## Más información
 

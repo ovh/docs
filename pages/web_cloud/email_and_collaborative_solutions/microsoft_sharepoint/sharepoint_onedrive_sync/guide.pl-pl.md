@@ -1,8 +1,12 @@
 ---
-title: "Sharepoint: synchronizacja danych na komputerze"
+title: "Sharepoint : synchronizacja danych na komputerze"
 excerpt: Dowiedz się, jak utworzyć kopię zapasową danych z usługi Sharepoint OVHcloud na Twoim komputerze
 updated: 2023-09-21
 ---
+
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zgłóś propozycję modyfikacji” na tej stronie.
+>
 
 ## Wprowadzenie
 
@@ -20,10 +24,10 @@ Jeśli chcesz pobrać lub przenieść dane z Twojej platformy SharePoint OVHclou
 
 Przewodnik podzielony jest na 4 etapy:
 
-- [Krok 1 - Zainstaluj usługę OneDrive dla Firm](#installonedrive): usługa OneDrive dla Firm umożliwia przeniesienie danych z programu Sharepoint na komputer
+- [Etap 1 - Zainstaluj usługę OneDrive dla Firm](#installonedrive): usługa OneDrive dla Firm umożliwia przeniesienie danych z programu Sharepoint na komputer
 - [Etap 2 - Przygotowanie migracji w Panelu klienta OVHcloud](#controlpanelconfig): skonfiguruj platformę Sharepoint, wyznaczając jedno konto administratora, które będzie mogło przenieść zawartość usługi OneDrive z każdego konta Sharepoint.
 - [Etap 3 - Rozpocznij migrację za pomocą interfejsu Sharepoint](#migrationignition): zaloguj się na konto wskazane w etapie 2, aby przenieść zawartość do komputera.
-- [Etap 4 — Migruj zawartość innych kont programu](#migrationother) Sharepoint — postępuj zgodnie z procedurą wyświetlania i synchronizowania zawartości usługi OneDrive dla każdego konta na platformie Sharepoint.
+- [Etap 4 - Migruj zawartość innych kont programu](#migrationother) Sharepoint — postępuj zgodnie z procedurą wyświetlania i synchronizowania zawartości usługi OneDrive dla każdego konta na platformie Sharepoint.
 
 ### Etap 1 — Zainstaluj aplikację OneDrive dla Firm <a name="installonedrive"></a>
 
@@ -39,7 +43,7 @@ Aby ją zainstalować, postępuj zgodnie z poniższymi instrukcjami:
 
 > [!warning]
 >
-> Jeśli plik `setup.bat` nie zostanie poprawnie uruchomiony (w etapie 4), można skopiować zawartość pliku `onedrive.iso` do folderu na pulpicie komputera i ponownie spróbować wykonać krok 4.
+> Jeśli plik `setup.bat` nie zostanie poprawnie uruchomiony (w etapie 4), można skopiować zawartość pliku `onedrive.iso` do folderu na pulpicie komputera i ponownie spróbować wykonać etap 4.
 
 ![sharepoint](images/sharepoint-eol-00.gif){.thumbnail}
 
@@ -103,13 +107,13 @@ Wybierz szablon biblioteki "**Form Templates**" w oknie "Select the library you 
 
 Po zakończeniu tej synchronizacji na komputerze będą przesyłane na ten komputer tylko dane z konta programu Sharepoint, do którego użytkownik jest zalogowany.
 
-**Aby przenieść zawartość z usługi OneDrive do każdego konta w platformie Sharepoint, wykonaj poniższy krok 4.**
+**Aby przenieść zawartość z usługi OneDrive do każdego konta w platformie Sharepoint, wykonaj poniższy etap 4.**
 
-### Etap 4 — migrowanie zawartości innych kont programu Sharepoint <a name="migrationother"></a>
+### Etap 4 - migrowanie zawartości innych kont programu Sharepoint <a name="migrationother"></a>
 
 Aby uzyskać dostęp do usługi OneDrive innych użytkowników platformy i synchronizować powiązane dane, musisz zmienić adres URL (w przeglądarce) po zalogowaniu się do usługi OneDrive konta administratora.
 
-W tym celu w wyświetlającym się adresie URL zastąp "sekcję" (odpowiadającą użytkownikowi), która znajduje się między częściami `/personal/` i`/Documents/`.
+W tym celu w wyświetlającym się adresie URL zastąp "sekcję" (odpowiadającą użytkownikowi), która znajduje się między częściami `/personal/` i `/Documents/`.
 
 - **Przykład 1**: w przypadku użytkownika **user@domain.name** znaki "**@**" i "**.**" należy zamienić na "**_**". Otrzymujesz "user_domain_name". W związku z tym Twój link będzie wyglądał następująco:
 
@@ -123,7 +127,7 @@ W tym celu w wyświetlającym się adresie URL zastąp "sekcję" (odpowiadając�
 >
 > Poniższe adresy URL są podane tylko w celach przykładowych. Pamiętaj, aby używać adresu URL wygenerowanego przez Twoją platformę Sharepoint.
 
-Kolejne konta będą mogły być synchronizowane przez ponowne wykonanie tego kroku.
+Kolejne konta będą mogły być synchronizowane przez ponowne wykonanie tego etapu.
 
 ## Sprawdź również
 

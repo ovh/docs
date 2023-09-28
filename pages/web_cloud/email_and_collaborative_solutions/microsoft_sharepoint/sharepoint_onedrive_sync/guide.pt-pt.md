@@ -4,6 +4,10 @@ excerpt: Saiba como efetuar o backup dos dados do seu Sharepoint OVHcloud no seu
 updated: 2023-09-21
 ---
 
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
+
 ## Objetivo
 
 Se pretende recuperar ou migrar os dados da sua plataforma SharePoint OVHcloud, encontrará neste guia as etapas necessárias para extrair o conjunto dos dados para o armazenamento local do seu computador.
@@ -32,7 +36,7 @@ Para migrar os dados do seu serviço SharePoint OVHcloud, deve utilizar a aplica
 Para instalá-lo, siga as instruções seguintes:
 
 1. Descarregue o ficheiro ISO a partir do link <https://download.mail.ovh.net/sharepoint/onedrive.iso>
-2. No seu computador, clique com o botão direito do rato no ficheiro `onedrive.iso`, abra as suas `Propriedades`{.action}, selecione a opção `Desbloquear`{.action}, clique em `Aplicar`{.action} e, a seguir, `em OK`{.action}.
+2. No seu computador, clique com o botão direito do rato no ficheiro `onedrive.iso`, abra as suas `Propriedades`{.action}, selecione a opção `Desbloquear`{.action}, clique em `Aplicar`{.action} e, a seguir, em `OK`{.action}.
 3. Faça duplo clique em `onedrive.iso` para abrir o ficheiro.
 4. Faça duplo clique no ficheiro `setup.bat` para iniciar a instalação.
 5. Aguarde, pois esta operação pode demorar alguns minutos. **Aguarde que a janela seja fechada** para que a instalação seja concluída.

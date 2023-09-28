@@ -32,7 +32,7 @@ Pour migrer les données de votre service SharePoint OVHcloud, vous devez utilis
 Pour l'installer, suivez les instructions ci-dessous:
 
 1. Téléchargez le fichier ISO à partir du lien <https://download.mail.ovh.net/sharepoint/onedrive.iso>
-2. Depuis votre ordinateur, faites un clic droit sur le fichier `onedrive.iso`, ouvrez ses `Propriétés`{.action}, cochez la case `Débloquer`{.action}, cliquez sur `Appliquer`{.action} puis sur`OK`{.action}.
+2. Depuis votre ordinateur, faites un clic droit sur le fichier `onedrive.iso`, ouvrez ses `Propriétés`{.action}, cochez la case `Débloquer`{.action}, cliquez sur `Appliquer`{.action} puis sur `OK`{.action}.
 3. Double-cliquez sur `onedrive.iso` pour l'ouvrir.
 4. Double-cliquez sur le fichier `setup.bat` pour lancer l'installation.
 5. Patientez car cette opération peut durer quelques minutes, **attendez bien que la fenêtre se ferme** pour que l'installation soit terminée.
