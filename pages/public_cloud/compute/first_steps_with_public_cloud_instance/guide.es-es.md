@@ -122,7 +122,7 @@ Esta acción eliminará definitivamente la instancia y todos sus datos.
 
 Confirme la solicitud de eliminación en la nueva ventana.
 
-### Acceder a la consola VNC
+### Acceder a la consola VNC <a name="accessvnc"></a>
 
 En el menú de la izquierda, haga clic en `Instances`{.action}. En la página de gestión de las instancias, haga clic en el nombre de la instancia en la tabla.
 
