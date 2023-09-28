@@ -161,4 +161,8 @@ Si desea configurar su dirección de correo electrónico en un cliente de correo
 
 [Crear una dirección de correo electrónico](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_creation)
 
-Interactúe con nuestra comunidad de usuarios en [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es/directory/).
+
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es/support-levels/).
+
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

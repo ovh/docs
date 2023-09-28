@@ -1,7 +1,7 @@
 ---
-title: "Hosting WWW - Środowisko, wersja PHP, ".ovhconfig""
-excerpt: "Dowiedz się, jak zmienić środowisko uruchomieniowe, wersję PHP, zaporę aplikacyjną, silnik, tryb i ".ovhconfig" na hostingu WWW"
-Updated: 2023-09-05
+title: "Hosting WWW : środowisko, wersja PHP, .ovhconfig"
+excerpt: "Dowiedz się, jak zmienić środowisko uruchomieniowe, wersję PHP, zaporę aplikacyjną, silnik, tryb i .ovhconfig na hostingu WWW"
+updated: 2023-09-05
 ---
 
 > [!primary]
@@ -221,7 +221,7 @@ W oknie, które się pojawi, masz do wyboru dwie opcje. Wybierz opcję odpowiada
 
 Kiedy wszystko jest gotowe, kliknij `Zatwierdź`{.action}, aby zastosować modyfikację. Odczekaj kilka chwil, aż zmiany staną się widoczne.
 
-![HostingConfiguration](images/change-hosting-konfiguracja-step3.png){.thumbnail}
+![HostingConfiguration](images/change-hosting-configuration-step3.png){.thumbnail}
 
 ### 3 - Metoda 2: zmiana konfiguracji hostingu WWW z poziomu pliku ".ovhconfig" <a name="setting-ovhconfig"></a>
 
@@ -350,7 +350,7 @@ Jeśli instalujesz na Twoim hostingu kilka stron WWW (w opcji MultiSite*), może
 
 Utwórz plik ".ovhconfig" zawierający wybraną wersję PHP dla jednej lub kilku stron podpiętych w opcji MultiSite*. W razie potrzeby skorzystaj z operacji opisanych w części "[3.3 - Modyfikowanie zawartości pliku ".ovhconfig"](#update-ovhconfig)" niniejszego przewodnika. Po zapisaniu pliku ".ovhconfig" na Twojej [przestrzeni dyskowej FTP](/pages/web_cloud/web_hosting/ftp_connection) prześlij go do katalogu głównego, w którym znajdują się pliki tworzące daną stronę WWW "*multisites*". Wyszukaj katalog główny Twoich *stron podpiętych w opcji MultiSite* w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) w zakładce `MultiSite`{.action} odpowiedniego hostingu.
 
-Zapoznaj się z naszym przewodnikiem "[Konfiguracja MultiSite na Twoim hostingu](/pages/web_cloud/web_hosting/multisite_configure_multisite)", jeśli jest to wymagane.
+Zapoznaj się z naszym przewodnikiem "[Konfiguracja MultiSite na Twoim hostingu](/pages/web_cloud/web_hosting/multisites_configure_multisite)", jeśli jest to wymagane.
 
 > [!warning]
 >

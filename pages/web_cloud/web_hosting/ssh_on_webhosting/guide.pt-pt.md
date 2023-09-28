@@ -4,6 +4,10 @@ excerpt: 'Saiba como se conectar e utilizar o acesso SSH do seu alojamento web O
 updated: 2022-01-19
 ---
 
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
+
 ## Objetivo
 
 Os planos de alojamento web da OVHcloud dão-lhe acesso a um espaço de armazenamento que permite publicar ficheiros nos seus sites ou aplicações. O acesso a este espaço é possível através de um utilizador FTP ou SSH e das respetivas palavras-passe.
@@ -109,4 +113,8 @@ Em função da versão de PHP que deseja usar, é possível que o ambiente de ex
 
 [Configurar o ficheiro .ovhconfig do alojamento web](/pages/web_cloud/web_hosting/configure_your_web_hosting)
 
-Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
+
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
+
+Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>. 

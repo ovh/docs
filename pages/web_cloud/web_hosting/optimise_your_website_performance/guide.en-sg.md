@@ -5,6 +5,7 @@ updated: 2022-02-03
 ---
 
 ## Objective
+
 This guide is designed for customers who wish to improve the performance of their website.
 This guide will help you get a basic understanding on what points can affect performance on websites.
 
@@ -14,6 +15,7 @@ This guide will help you get a basic understanding on what points can affect per
 > This use case will show you how to use one or more OVHcloud solutions with external tools, and will describe the actions to be carried out in a specific context. Please remember to adapt these actions to fit your situation. If you encounter any difficulties performing these actions, please contact a [specialist service provider](https://partner.ovhcloud.com/en-sg/directory/) and/or discuss the issue with our community on <https://community.ovh.com/en/>. OVHcloud cannot provide you with technical support in this regard.
 
 ## Requirements
+
 - an [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-sg/web-hosting/)
 - an email confirming that your Web Hosting plan has been set up
 - a [domain name](https://www.ovhcloud.com/en-sg/domains/) that can be used to access your website
@@ -24,15 +26,23 @@ This guide will help you get a basic understanding on what points can affect per
 ### Step 1: Define the scope
 
 #### Questions to ask yourself:
+
 If your website is slow, it can be helpful to ask yourself the questions below to help narrow down the scope of investigation.
 
 1. **When did your website start being slow?**
+
 This way you can identify if the latency is caused by a recent website modification, such as an incorrectly optimised new plugin or a new theme, which would send a lot of outgoing queries and slow down your website.
+
 2. **Is it a one-off or is the slow speed permanent?**
+
 It may be useful to check when in the day website is slow, then identify if it's caused by a spike in traffic, or if other tasks began running on the hosting package at the same time.
+
 3. **Is it affecting your entire website or just part of it?**
+
 If only one web page is affected and not the entire website, it's useful to analyse this page in particular, and to check which request or script could be causing the latency.
+
 4. **Do you get an error page? If yes, which type?**
+
 Check if errors are generated in order to identify the source of the latency. To get a better overview of occurring errors on your hosting, please consult the logs.
 
 Answering those questions can help to focus on specific points and diagnose areas for improvement.
@@ -44,6 +54,7 @@ We provide recommendations on what web hosting offer to use for the above listed
 You can find more informations regarding which plan to choose from on [this page](https://www.ovhcloud.com/en-sg/web-hosting/uc-best-web-hosting/){.external}.
 
 ### Step 2: Checking the PHP version
+
 Using the latest php version compatible with your site can impact performance significantly.
 To check if your website is compatible with the latest PHP version, you can consult [the official documentation of PHP](https://php.net/eol.php){.external}.
 
@@ -67,6 +78,7 @@ To switch to use PHP-FPM in the _stable_ version or to get details on more advan
 The _.ovhconfig_ file works at the root of the hosting package or in a level 1 sub-directory (ex.: _/www/_) but not in level two or higher directories (ex.: _/www/test/_ , _/www/test/test2/_)
 
 ### Step 3: Checking the media content (images, videos, ...)
+
 When accessing a website all content has to be downloaded by the browser.
 
 This can especially be problematic when accessing an non-optimised website via a mobile device.
@@ -78,6 +90,7 @@ It's up to you to choose the ones fitting your specific needs.
 You can find more details on this topic in the Step 5 below.
 
 ### Step 4: Optimising your scripts
+
 Correlate the graphs of resource usage of your hosting (more information below) to find the origin of the delays and consult the logs at the dates of these peaks.
 
 You can access your logs, statistics and graphs directly from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg).
@@ -118,6 +131,7 @@ Don't forget to select the name of your database and the desired period.
 - **SQL requests**: Displays the amount of requests.
 
 ### Step 5: Checking network requests
+
 One useful tool for analysis is the [Network Monitor](https://developer.mozilla.org/en-US/docs/Tools/Network_Monitor){.external} which is directly integrated in the Mozilla Firefox browser and allows to analyze a web page's loading time in detail.
 
 With it you can check which elements of your site have the slowest loading/heaviest load.
@@ -206,6 +220,7 @@ Example:
 ```
 
 #### Avoid resource intensive options:
+
 Avoid using the "HAVING" clause which can slow down queries. You should also avoid using "GROUP BY", unless strictly necessary.
 
 ## Go further
@@ -213,5 +228,9 @@ Avoid using the "HAVING" clause which can slow down queries. You should also avo
 [Modifying the configuration of a Web Hosting plan](/pages/web_cloud/web_hosting/configure_your_web_hosting)
 
 [Creating and managing a database in your Web Hosting plan](/pages/web_cloud/web_hosting/sql_create_database)
+
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-sg/directory/).
+
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-sg/support-levels/).
 
 Join our community of users on <https://community.ovh.com/en/>.

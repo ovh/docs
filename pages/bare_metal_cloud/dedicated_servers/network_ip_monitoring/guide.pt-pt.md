@@ -1,7 +1,7 @@
 ---
 title: Quais são os endereços IP do monitoring OVHcloud?
 excerpt: Encontre aqui os endereços IP a introduzir aquando da implementação de uma firewall, para que o sistema de monitorização OVHcloud continue a funcionar no seu servidor.
-updated: 2023-07-21
+updated: 2023-09-21
 ---
 
 > [!primary]
@@ -67,18 +67,6 @@ Clique no botão `Configurar`{.action}. Na janela que aparece, tem três opçõe
 ![Monitoring](images/monitoring-server2.png){.thumbnail}
 
 Clique em `Confirmar`{.action} para atualizar a sua configuração de vigilância.
-
-### Ativar a monitorização de serviços específicos
-
-Além do sistema de monitorização standard, pode autorizar a OVHcloud a monitorizar serviços específicos como HTTP, SSH e outros protocolos.
-
-Para isso, no separador `Informações gerais`{.action} e, a seguir, o quadro **Estado dos serviços**, clique no botão `...`{.action} junto de "Serviços monitorizados". Clique em `Monitorizar os meus serviços`{.action}.
-
-![monitoring](images/monitoring02.png){.thumbnail}
-
-Será redirecionado para o ecrã abaixo. Clique em `Monitorizar um serviço`{.action} e introduza o endereço IP, o protocolo, o número de porta, a resposta do servidor e o intervalo de tempo entre as verificações do seu serviço. Clique no símbolo de validação (**V**) para confirmar as modificações.
-
-![monitoring](images/monitoring3.png){.thumbnail}
 
 ## Quer saber mais?
 

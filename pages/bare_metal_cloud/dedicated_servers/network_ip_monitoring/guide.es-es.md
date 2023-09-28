@@ -1,7 +1,7 @@
 ---
 title: ¿Cuáles son las direcciones IP monitorización de OVHcloud?
 excerpt: Encuentre aquí las direcciones IP que debe completar al configurar un firewall para que el sistema de monitorización de OVHcloud continúe funcionando en su servidor.
-updated: 2023-07-21
+updated: 2023-09-21
 ---
 
 > [!primary]
@@ -63,18 +63,6 @@ Haga clic en el botón `Configurar`{.action}. En el cuadro de diálogo, se mostr
 ![Monitoring](images/monitoring-server2.png){.thumbnail}
 
 Haga clic en `Confirmar`{.action} para actualizar su configuración de monitorización.
-
-### Activar la monitorización de servicios específicos
-
-Además de la monitorización estándar, también puede autorizar a OVHcloud a supervisar servicios específicos como el HTTP, el SSH y otros protocolos.
-
-Para ello, abra la pestaña `Información general`{.action} y haga clic en el recuadro **Estado de los servicios** en el botón `...`{.action} situado junto a "Servicios monitorizados". Haga clic en `Monitorizar mis servicios`{.action}.
-
-![monitoring](images/monitoring02.png){.thumbnail}
-
-El sistema le redirigirá a la pantalla de abajo. Haga clic en `Monitorizar un servicio`{.action} e introduzca la dirección IP, el protocolo, el número de puerto, la respuesta del servidor y el tiempo entre las verificaciones de su servicio. Haga clic en el símbolo de validación (**V**) para confirmar los cambios.
-
-![monitoring](images/monitoring3.png){.thumbnail}
 
 ## Más información
 

@@ -1,7 +1,7 @@
 ---
 title: Backup einer Instanz erstellen
 excerpt: Erfahren Sie hier, wie Sie eine Public Cloud Instanz in Ihrem OVHcloud Kundencenter sichern
-updated: 2023-01-04
+updated: 2023-09-21
 ---
 
 > [!primary]
@@ -85,6 +85,9 @@ Zeitplanungen können im Bereich `Workflow Management`{.action} Ihres Public Clo
 Die Backups Ihrer Instanzen werden im Bereich `Instance Backup`{.action} in Ihrem Public Cloud Kundencenter verwaltet.
 
 ![public-cloud-instance-backup](images/createbackup10.png){.thumbnail}
+
+> [!warning]
+> **Beachten Sie, dass Sie ein Instanz-Backup nicht löschen können, wenn eine Instanz, die aus diesem Backup erzeugt wurde, zum Zeitpunkt des Löschvorgangs ausgeführt wird.**
 
 Erfahren Sie in [dieser Anleitung](/pages/public_cloud/compute/create_restore_a_virtual_server_with_a_backup), wie Sie Sicherungen verwenden, um Instanzen zu klonen oder wiederherzustellen.
 

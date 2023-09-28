@@ -1,6 +1,6 @@
 ---
-title: "Alojamento web - Ambiente, versão PHP, ".ovhconfig""
-excerpt: "Saiba como alterar o ambiente de execução, a versão PHP, a firewall aplicacional, o motor, o modo e o ".ovhconfig" de um alojamento web"
+title: "Alojamento web : ambiente, versão PHP, .ovhconfig"
+excerpt: "Saiba como alterar o ambiente de execução, a versão PHP, a firewall aplicacional, o motor, o modo e o .ovhconfig de um alojamento web"
 updated: 2023-09-05
 ---
 
@@ -158,7 +158,7 @@ Em comparação, o acelerador PHP ("PHP-FPM") oferece um ganho de performance at
 Uma firewall é uma segurança que filtra os pedidos recebidos do seu alojamento web. Nos nossos alojamentos web, esta definição de configuração funciona como uma opção **ativável** ou **desativável**.
 Não será possível alterar as definições de filtragem da firewall propriamente dita.
 
-Consulte o guia "[Ativação da firewall da aplicação](/pages/web_cloud/web_hosting/multisites_ativating_application_firewall)" para mais informações sobre o assumpto.
+Consulte o guia "[Ativação da firewall da aplicação](/pages/web_cloud/web_hosting/multisites_activating_application_firewall)" para mais informações sobre o assumpto.
 
 > [!warning]
 >
@@ -351,7 +351,7 @@ Se utiliza o seu alojamento web para alojar vários websites (em *multi-sites*),
 
 Crie um ficheiro ".ovhconfig" que contenha a versão de PHP pretendida para os *multisites* em causa. Recorra às operações descritas na parte "[3.3 - Alterar o conteúdo do ficheiro ".ovhconfig"](#update-ovhconfig)" deste guia, se necessário. Quando descarregar o ficheiro ".ovhconfig" para o seu [espaço de armazenamento FTP](/pages/web_cloud/web_hosting/ftp_connection), deverá fazê-lo na pasta raiz onde estão localizados os ficheiros que compõem o website "*multisites*" em causa. Encontre a pasta raiz dos seus *multisites* a partir da sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) no separador `Multisite`{.action} do alojamento em causa.
 
-Consulte o guia "[Configurar um multisite no alojamento web](/pages/web_cloud/web_hosting/multisites_configurado_multisite)" se necessário.
+Consulte o guia "[Configurar um multisite no alojamento web](/pages/web_cloud/web_hosting/multisites_configure_multisite)" se necessário.
 
 > [!warning]
 >

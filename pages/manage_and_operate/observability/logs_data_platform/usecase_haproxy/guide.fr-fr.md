@@ -206,7 +206,7 @@ For the first action you will need the collector certificate and its hostname, y
 
 Copy the certificate in a file **logstash.pem** and copy the hostname and your port. Depending of your flavor of rsylog and HAProxy, your configuration file may be already present at a particular location. If you do not have any HAProxy related file in the directory **/etc/rsyslog.d/**, create a new file in this directory. If the directory does not exist , simply edit the **/etc/rsyslog.conf** file. Don't hesitate to review [the rsyslog documentation](http://www.rsyslog.com/doc/master/configuration/index.html){.external} to have more information. On Debian flavors for example, if you used the rsyslog and HAProxy packages you may have a file located in **/etc/rsyslog.d/46-haproxy.conf**. In that case, you should prefer editing this file.
 
-```text hl_lines="4 10"
+```text
  $AddUnixListenSocket /var/lib/haproxy/dev/log
  $template haproxy,"%timestamp:::date-rfc3339% %HOSTNAME% %syslogtag%%msg%\n"
 
@@ -245,7 +245,7 @@ Rsyslog configuration will be enhanced by using a LTSV template instead of the d
 
 Here is the rsyslog configuration:
 
-```text hl_lines="23 24"
+```text
 # Remove invalid utf-8 character (need rsyslog >=8.3.1, remove this part for older rsyslog)
 module(load="mmutf8fix")
 action(type="mmutf8fix")

@@ -26,15 +26,23 @@ Il vous permettra d’acquérir des connaissances fondamentales au sujet des fac
 ### Étape 1 : Définir la portée du problème
 
 #### Les questions auxquelles vous devez répondre :
+
 Si votre site web est lent, il est important de poser les questions ci-dessous pour préciser la portée du problème.
 
 1. **Quand avez-vous remarqué un ralentissement sur votre site web ?**
+
 Cette question vous aide à déterminer si le temps de latence est provoqué par une modification récente au site web, notamment un plugin mal optimisé ou un nouveau thème, susceptible d’envoyer de nombreuses demandes sortantes, qui pourraient être à l’origine du ralentissement de votre site web.
+
 2. **S’agit-il d’un problème ponctuel ou le ralentissement est-il permanent?**
+
 Il serait judicieux de noter la date à laquelle vous avez constaté un ralentissement sur votre site, de déterminer ensuite si ce ralentissement est imputable à une pointe de trafic, ou si d’autres tâches ont commencé à s’exécuter sur l'hébergement au même moment.
+
 3. **Le ralentissement affecte-t-il tout le site web ou juste une partie de celui-ci?**
+
 Si le problème concerne seulement une seule page et non tout le site web, il est impératif d’analyser cette page en particulier et de vérifier la requête ou le script qui serait à l’origine du temps de latence.
+
 4. **Le site affiche-t-il une page d’erreur ? Si oui, de quel type ?**
+
 Vérifiez si des erreurs sont créées pour identifier la source du temps de latence. Pour avoir un meilleur aperçu des erreurs qui surviennent sur votre hébergement, veuillez consulter les fichiers journaux.
 
 Les réponses à ces questions peuvent vous aider à cibler certains points spécifiques et à identifier les zones problématiques pour améliorer le rendement du site.
@@ -46,6 +54,7 @@ Nous fournissons des recommandations sur les solutions offertes par l’héberge
 Pour plus d’information sur les différents forfaits offerts, veuillez consulter [cette page](https://www.ovhcloud.com/fr/web-hosting/uc-best-web-hosting/){.external}.
 
 ### Étape 2 : Vérification de la version PHP
+
 Utiliser la dernière version de PHP compatible avec votre site peut avoir une influence considérable sur son rendement.
 Pour vérifier si votre site web est compatible avec la dernière version PHP, veuillez vous référer à [la documentation officielle de PHP](https://php.net/eol.php){.external}.
 
@@ -171,7 +180,9 @@ Toutefois, il existe un grand nombre de guides externes qui traitent le sujet.
 
 - Cliquez sur les 3 points `...`{.action} à droite de votre base de données pour accéder à phpMyAdmin.
 
-**Pourquoi optimiser une base de données?** Vous devez entretenir votre base de données pour qu’elle continue de bien fonctionner. Autrement dit, les informations contenues dans la base de données doivent être renvoyées au script qui les a demandées le plus tôt possible. Pour ce faire, la base de données doit être bien structurée et optimisée. Nous allons voir comment optimiser votre base de données.
+**Pourquoi optimiser une base de données?** 
+
+Vous devez entretenir votre base de données pour qu’elle continue de bien fonctionner. Autrement dit, les informations contenues dans la base de données doivent être renvoyées au script qui les a demandées le plus tôt possible. Pour ce faire, la base de données doit être bien structurée et optimisée. Nous allons voir comment optimiser votre base de données.
 
 #### Dans la base de données
 
@@ -220,6 +231,7 @@ Par exemple :
 ```
 
 #### Éviter les options qui font appel à une utilisation intensive des ressources :
+
 Évitez d’utiliser la clause « HAVING » qui peut ralentir les recherches. Évitez également la clause « GROUP BY », à moins que son utilisation soit absolument nécessaire.
 
 #### Web Cloud Databases
@@ -234,4 +246,8 @@ Si, en dépit de toutes les modifications et mesures d’optimisation que vous a
 
 [Premiers pas avec le service Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb){.external}
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
+
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

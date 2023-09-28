@@ -4,6 +4,10 @@ excerpt: 'Cómo conectarse y utilizar el acceso SSH en un alojamiento web de OVH
 updated: 2022-01-19
 ---
 
+> [!primary]
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+>
+
 ## Objetivo
 
 Los planes de hosting de OVHcloud permiten disponer de un espacio de almacenamiento en el que publicar los archivos de sus sitios web o aplicaciones. Para acceder a este espacio de almacenamiento, es necesario tener un usuario FTP o SSH y las contraseñas asociadas.
@@ -108,5 +112,9 @@ Según la versión de PHP que utilice, es posible que tenga que modificar el ent
 [Modificar la configuración de un alojamiento web](/pages/web_cloud/web_hosting/configure_your_web_hosting)
 
 [Configurar el archivo .ovhconfig de un alojamiento web](/pages/web_cloud/web_hosting/configure_your_web_hosting)
+
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es/directory/).
+
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es/support-levels/).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

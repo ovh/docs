@@ -40,9 +40,9 @@ Cuando la dirección **sender@otherdomain.ovh** envía un correo electrónico a 
 - **(1)** consultar la zona DNS del dominio **mydomain.ovh** y leer los registros **MX**.
 - **(2)** reenviar el mensaje de correo electrónico a la URL del registro **MX** leído.
 
-![Correo electrónico](images/email-dns-conf-mx01.png){.thumbnail}
+![Correo electrónico](images/email-dns-conf-mx01-ca.png){.thumbnail}
 
-El mensaje se enviará al destino **mx0.mail.ovh.net**, precedido del valor **0**. Este valor se denomina prioridad. El valor más bajo se consulta primero y el más alto después. Esto significa que la presencia de varios registros permite paliar la falta de respuesta del registro MX de menor prioridad.
+El mensaje se enviará al destino **mx0.mail.ovh.ca**, precedido del valor **0**. Este valor se denomina prioridad. El valor más bajo se consulta primero y el más alto después. Esto significa que la presencia de varios registros permite paliar la falta de respuesta del registro MX de menor prioridad.
 
 Puede configurar varios registros MX para un mismo dominio. Es necesario definir un número de prioridad para cada uno de ellos. Los registros MX se consultan en orden ascendente, desde el número más bajo hasta el más alto, hasta que el servidor receptor responde.
 
@@ -57,11 +57,11 @@ A continuación ofrecemos la configuración MX de OVHcloud que deberá utilizar 
 
 |Dominio|TTL|Registro|Prioridad|Destino|
 |---|---|---|---|---|
-|*Dejar el campo vacío*|3600|MX|1|mx0.mail.ovh.net.|
-|*Dejar el campo vacío*|3600|MX|5|mx1.mail.ovh.net.|
-|*Dejar el campo vacío*|3600|MX|50|mx2.mail.ovh.net.|
-|*Dejar el campo vacío*|3600|MX|100|mx3.mail.ovh.net.|
-|*Dejar el campo vacío*|3600|MX|200|mx4.mail.ovh.net.|
+|*Dejar el campo vacío*|3600|MX|1|mx0.mail.ovh.ca.|
+|*Dejar el campo vacío*|3600|MX|5|mx1.mail.ovh.ca.|
+|*Dejar el campo vacío*|3600|MX|50|mx2.mail.ovh.ca.|
+|*Dejar el campo vacío*|3600|MX|100|mx3.mail.ovh.ca.|
+|*Dejar el campo vacío*|3600|MX|200|mx4.mail.ovh.ca.|
 
 Estos registros MX deben estar configurados en la zona DNS del dominio.
 

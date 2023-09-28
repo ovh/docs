@@ -28,7 +28,7 @@ Please put this file under the **C:\\Program Files(x86)\\nxlog\\cert** folder.
 
 The configuration is pretty much straightforward. Here is the configuration file that allows you to configure your NXLog.
 
-```ApacheConf hl_lines="26 36 38"
+```ApacheConf
  ## This is a sample configuration file. See the nxlog reference manual about the
  ## configuration options. It should be installed locally and is also available
  ## online at https://docs.nxlog.co/userguide/documentation.html

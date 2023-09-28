@@ -1,7 +1,7 @@
 ---
 title: Backing up an instance
 excerpt: Find out how to back up a Public Cloud instance in the OVHcloud Control Panel
-updated: 2023-01-04
+updated: 2023-09-21
 ---
 
 ## Objective
@@ -81,6 +81,9 @@ Schedules can be created and removed in the Public Cloud `Workflow Management`{.
 Your instance backups are managed in the Public Cloud `Instance Backup`{.action} section.
 
 ![public-cloud-instance-backup](images/createbackup10.png){.thumbnail}
+
+> [!warning]
+> **Note that you cannot delete an instance backup if an instance that has been spawned from this backup is running at the time of the delete action.**
 
 Find out how to use backups to clone or restore instances in [this guide](/pages/public_cloud/compute/create_restore_a_virtual_server_with_a_backup).
 

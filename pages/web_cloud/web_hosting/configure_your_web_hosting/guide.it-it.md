@@ -1,6 +1,6 @@
 ---
-title: "Hosting Web - Ambiente, versione PHP, ".ovhconfig""
-excerpt: "Questa guida ti mostra come modificare ambiente di esecuzione, versione PHP, firewall applicativo, motore, modalità e ".ovhconfig" di un hosting Web"
+title: "Hosting Web : ambiente, versione PHP, .ovhconfig"
+excerpt: "Questa guida ti mostra come modificare ambiente di esecuzione, versione PHP, firewall applicativo, motore, modalità e .ovhconfig di un hosting Web"
 updated: 2023-09-05
 ---
 
@@ -158,7 +158,7 @@ In confronto, l'acceleratore PHP ("PHP-FPM") offre performance fino a sette volt
 Un firewall è una sicurezza che filtra le richieste in entrata del tuo hosting Web. Sui nostri hosting Web, questa impostazione di configurazione funziona sotto forma di opzione **attivabile** o **disattivabile**.
 Non sarà infatti possibile modificare le impostazioni di filtro del firewall.
 
-Per maggiori informazioni, consulta la nostra guida "[Attivazione del firewall applicativo](/pages/web_cloud/web_hosting/multisiti_activating_application_firewall)".
+Per maggiori informazioni, consulta la nostra guida "[Attivazione del firewall applicativo](/pages/web_cloud/web_hosting/multisites_activating_application_firewall)".
 
 > [!warning]
 >
@@ -351,7 +351,7 @@ Se utilizzi l’hosting Web per ospitare più siti Web (in *multisiti*), per div
 
 Crea un file ".ovhconfig" contenente la versione di PHP desiderata per i *multisiti* interessati. Se necessario, guida alle operazioni descritte nella sezione "[3.3 - Modificare il contenuto del file ".ovhconfig"](#update-ovhconfig)" di questa guida. Quando carichi il file ".ovhconfig" sul tuo [spazio di storage FTP](/pages/web_cloud/web_hosting/ftp_connection), accedi alla cartella root in cui si trovano i file che compongono il sito Web "*multisiti*" interessato. Consulta la cartella root dei tuoi *multisiti* nel tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) nella scheda `Multisito`{.action} dell’hosting interessato.
 
-Se necessario, consulta la nostra guida "[Configurare un multisito su un hosting Web](/pages/web_cloud/web_hosting/multisiti_configure_multisito)".
+Se necessario, consulta la nostra guida "[Configurare un multisito su un hosting Web](/pages/web_cloud/web_hosting/multisites_configure_multisite)".
 
 > [!warning]
 >

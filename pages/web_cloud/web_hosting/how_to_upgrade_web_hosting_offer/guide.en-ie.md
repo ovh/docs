@@ -1,35 +1,41 @@
 ---
-title: Changing your web hosting plan offer
-excerpt: Find out how to change the subscription offer for your OVHcloud Web Hosting plan
-updated: 2023-07-16
+title: "Web Hosting: how to change your solution?"
+excerpt: "Find out how to change the subscription offer for your OVHcloud Web Hosting"
+updated: 2023-09-19
 ---
 
 ## Objective
 
-In your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), you can increase the capacity of your [web hosting offers](https://www.ovhcloud.com/en-ie/web-hosting/) to have more compute resources, storage space, databases or email accounts. Additional features such as [mailing lists](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_mailing_list) (from the [Pro plan](https://www.ovhcloud.com/en-ie/web-hosting/professional-offer/)) or [Private SQL](https://www.ovhcloud.com/en-ie/web-hosting/options/private-sql/) (included with the offers of the [Performance range](https://www.ovhcloud.com/en-ie/web-hosting/performance-offer/)) will also become available with a subscription upgrade.
+In your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), you can increase the capacity of your [web hosting plans](https://www.ovhcloud.com/en-ie/web-hosting/). A subscription upgrade provides the following advantages:
 
-**Find out how to scale your OVHcloud hosting plan without any service interruptions.**
+- More powerful hosting
+- More FTP storage space
+- Additional databases
+- Additional email accounts
+- Additional features such as [mailing lists](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_mailing_list) (from [the Professional offer](https://www.ovhcloud.com/en-ie/web-hosting/professional-offer/)) or the [Web Cloud Databases service](https://www.ovhcloud.com/en-ie/web-cloud/databases/){.external} (included in [the Performance offers](https://www.ovhcloud.com/en-ie/web-hosting/performance-offer/))
+
+**This guide explains how to upgrade your OVHcloud hosting plan without any service interruptions.**
 
 ## Requirements
 
 - An [OVHcloud web hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/)
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) with the required permissions to manage the Web Hosting plan ([Administrator contact](/pages/account_and_service_management/account_information/managing_contacts))
 
 ## Instructions
 
 > [!warning]
 >
-> **Before** you make any changes to your current subscription, check to see if you have any of these questions:
+> **Before** you make any changes to your current subscription, please check if you are affected by any of these questions:
 >
-> - [How do I upgrade my 100M free hosting solution to a web hosting plan?](#start10m)
+> - [How do I upgrade my free 100M hosting plan to a web hosting plan?](#100m)
 > - [How do I get a temporary performance boost on my Performance hosting plan?](#boost)
-> - [Will I waste the time remaining on my current hosting plan when I change plans?](#billing)
-> - [Can I upgrade my current plan to a lower plan?](#checks)
+> - [Will I lose the time remaining on my current hosting plan when I change plans?](#billing)
+> - [Can I downgrade my current plan?](#checks)
 >
 
-### Modifying your hosting plan <a name="modify"></a>
+### Modifying your web hosting plan <a name="modify"></a>
 
-To change your subscription, go to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) in the `Web Cloud`{.action} section. Click `Hosting plans`{.action} and select the plan concerned.
+To modify your subscription, go to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) in the `Web Cloud`{.action} section. Click `Hosting plans`{.action} and select the hosting plan concerned.
 
 In the `Plan` box, click the `...`{.action} button to the right of `Solution`, then `Change plan`{.action}.
 
@@ -37,125 +43,142 @@ In the `Plan` box, click the `...`{.action} button to the right of `Solution`, t
 
 Then select your new subscription and its duration. Confirm the corresponding contracts, then click `Send`{.action}.
 
-### Checking that your hosting plan is compatible with a lower plan <a name="checks"></a>
+### Checking that your web hosting plan is compatible with a lower range solution <a name="checks"></a>
 
 > [!warning]
 >
-> You can only change your subscription to a lower range plan if it is the **immediate lower range** plan.
-> For example, you cannot switch from *Performance 2* to *Pro* in a single operation.
-> You will **first** need to downgrade your web hosting plan from the *Performance 2* plan to the *Performance 1* plan, **and then** to the *Pro* plan.
+> You can only change your subscription to a lower range plan if it is the **next lower plan**.
+> For example, you cannot switch from a *Performance 2* plan to a *Pro* plan in a single operation.
+> You will **first** need to downgrade your web hosting plan from the *Performance 2* plan to the *Performance 1* plan, and **then** to the to the *Pro* plan.
 
-Before you make your switch to a lower range, check the following 6 items:
+**Before changing to a lower range**, please check the following 6 points:
 
 #### 1 - Start SQL databases
 
-Before moving your hosting to a lower plan, please ensure that the new plan has enough [databases](https://www.ovhcloud.com/en-ie/web-hosting/options/start-sql/). Also make sure they are of sufficient size.
+Make sure there are enough [databases](https://www.ovhcloud.com/en-ie/web-hosting/options/start-sql/) in the new plan. Also check that they are of sufficient size.
 
-Otherwise, delete unused databases and reduce the amount of data they contain, if necessary. This quantity must not exceed the maximum size of the databases in the new solution (for any requests for assistance with the operations to be carried out, contact the [OVHcloud partners](https://partner.ovhcloud.com/en-ie/directory/)).
+Otherwise, delete unused databases and reduce the amount of data in them, if necessary. This quantity must not exceed the maximum database size for the new solution. If you need assistance with how to proceed, please contact [OVHcloud partners](https://partner.ovhcloud.com/en-ie/directory/).
 
-If you have deleted data from your databases, you can recalculate the quota from the `Databases`{.action} tab in the `Hosting plans`{.action} section of the OVHcloud Control Panel. Click on the `...`{.action} button to the right of the database concerned, then `Recalculate the quota`{.action}.
+Once you have deleted data from your databarrrrrses, recalculate the quota used. To do this, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) and go to the `Web Cloud`{.action} section. In the left-hand column, click `Hosting plans`{.action} , then select the Web Hosting plan concerned. On the page that pops up, go to the `Databases`{.action} tab, then click the `...`{.action} button to the right of the database concerned, then `Recalculate the quota`{.action}.
 
 ![quota](images/quota.png){.thumbnail}
 
+> [!primary]
+>
+> Recalculating your database quota may take up to **15 minutes**. Refresh the page in your web browser if the recalculated quota does not appear after that time.
+>
+
 #### 2 - Web Cloud Databases
 
-If you are using the [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb#clouddb-server-activation-included-with-your-web-hosting-plan) solution included with your [Performance](https://www.ovhcloud.com/en-ie/web-hosting/performance-offer/) hosting plan, and you wish to switch your hosting plan to a [Pro](https://www.ovhcloud.com/en-ie/web-hosting/professional-offer/) solution, go to the `Hosting plans`{.action} section in your Control Panel.<br>
-Click the `... `{.action} button in the `Private database`{.action} section, then `Detach`{.action}.
+If you are using the [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) solution included with your web hosting plan [Performance](https://www.ovhcloud.com/en-ie/web-hosting/performance-offer/), and you want to change your web hosting plan to a [Pro](https://www.ovhcloud.com/en-ie/web-hosting/professional-offer/) solution, you will need to detach the Web Cloud Databases solution from your web hosting plan.<br>
+To do this, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) and go to the `Web Cloud`{.action} section. In the left-hand column, click `Hosting plans`{.action} , then select the Web Hosting plan concerned. On the page that pops up, stay in the `General information`{.action} tab. In the central `Configuration` column, click the `...`{.action}' button to the right of the `Web Cloud Databases`{.action} heading, then `Detach`{.action}.
 
 ![Web Cloud Databases](images/clouddb.png){.thumbnail}
 
-With this action, you can order a Web Cloud Databases solution independent of your *Performance* subscription. Your server data will be stored.
+With this action, you can order a Web Cloud Databases solution that is independent of your *Performance* subscription. Your server data will be stored.
 
-If you do not want to keep this data, you can also delete your Private SQL before going to the *Pro* offer: 
+If you do not want to keep this data, you can also delete your Web Cloud Databases solution before switching to the *Pro* solution: 
 
 1. Back up your data by following the instructions in this [guide](/pages/web_cloud/web_cloud_databases/save-export-on-database-server).<br>
-2. Delete your Web Cloud Databases server via your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie). To do this, click on your name in the top right-hand corner, then `Service management`{.action}. Then click on the `...`{.action} button to the right of the row concerned, then `Delete my Private SQL hosting service`{.action}.
+2. Delete your Web Cloud Databases server via your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie). To do this, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), click on your name in the top right-hand corner, then on the `Products and services`{.action} icon. Next, click the `...`{.action} button to the right of the line for the Web Cloud Databases/Private SQL solution concerned, then `Delete my Private SQL hosting plan`{.action}.
 
-#### 3 - FTP space
+#### 3 - FTP storage space
 
-Before switching your hosting plan to a lower plan, please ensure that the new plan includes enough [FTP storage space](/pages/web_cloud/web_hosting/ftp_connection) so that you can import files from your current hosting plan.
+Make sure that the new solution offers enough [FTP storage space](/pages/web_cloud/web_hosting/ftp_connection) for you to be able to import files from your current hosting plan.
 
-The quota used on your FTP hosting plan is visible in the `Hosting plans`{.action} section of the OVHcloud Control Panel. Click on the `General information`{.action} tab, and you will see the quota under `Disk space`.
+To check the FTP storage space quota used on your web hosting plan, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) then go to the `Web Cloud`{.action} section. In the left-hand column, click `Web Hosting`{.action} , then select the Web Hosting plan concerned. On the `General information`{.action} page that pops up, you will find the quota under the heading `Disk space`.
 
 ![ftp](images/ftp.png){.thumbnail}
 
 #### 4 - Email accounts
 
-Please also check that your new solution has a sufficient number of available email accounts. Otherwise, delete the extra accounts, after you have [backed up](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration) the contents if necessary.
+Check that your new solution has a sufficient number of available email accounts. Otherwise, delete any unused email accounts after you have [saved](/pages/web_cloud/email_and_collaborative_solutions/migrating/manual_email_migration) their content, if necessary.
 
-If you would like to keep the same number of email accounts, before moving your web hosting to a lower plan, you can also order a new **MX Plan** email solution. In the `Emails`{.action} section of the OVHcloud Control Panel, click on the solution concerned, then on the `...`{.action} button to the right of `Solution`. Next, click `Change solution`{.action}.
+If you would like to keep the same number of mailboxes and **before downgrading your web hosting plan to a lower plan**, you can also order a new **MX Plan** email solution. To do this, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) and go to the `Web Cloud`{.action} section. In the left-hand column, click `Emails`{.action}, then select the email solution concerned. On the page that opens, in the `Subscription`{.action} box, to the right of `Solution`{.action}, click the `...`{.action} button, then `Change solution`{.action}.
 
 ![mxplan](images/mxplan.png){.thumbnail}
+
+>[!primary]
+>
+> If the `...`{.action} button is unavailable on your email solution, you can unlink the email solution from your web hosting plan. To do this, stay connected to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) in the `Web Cloud`{.action} section. In the left-hand column, click `Hosting plans`{.action}, then select the Web Hosting plan concerned. On the `General information`{.action} page that appears, and in the `Configuration`{.action} box, click the `...`{.action} button to the right of `Email addresses`{.action}, then click `Detach my email option`{.action}.
+>
 
 #### 5 - Mailing lists
 
 The [Mailing lists](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_mailing_list) feature is optional on [Personal](https://www.ovhcloud.com/en-ie/web-hosting/personal-offer/) hosting plans.
 
-To set up your hosting plan on a [Personal](https://www.ovhcloud.com/en-ie/web-hosting/personal-offer/) solution, you will need to delete the mailing lists first, or order an email solution with this feature (**MX Plan 100** or **MX Plan Full**) from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie).
+To upgrade your web hosting plan to a [Personal] plan (https://www.ovhcloud.com/en-ie/web-hosting/personal-offer/), you will first need to delete the mailing lists, or order an email solution that includes this feature (**MX Plan 100** or **MX Plan Full**) from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie).
 
-In the `Emails`{.action} section of your Control Panel, select the solution concerned, then click on `...`{.action} to the right of `Solution`{.action}. Next, click `Change solution`{.action}.
+To do this, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) and go to the `Web Cloud`{.action} section. In the left-hand column, click `Emails`{.action}, then select the email solution concerned. On the page that opens, in the `Subscription`{.action} box, to the right of `Solution`{.action}, click the `...`{.action} button, then `Change solution`{.action}.
+
+>[!primary]
+>
+> If the `...`{.action} button is unavailable on your email solution, you can unlink the email solution from your web hosting plan. To do this, stay connected to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) in the `Web Cloud`{.action} section. In the left-hand column, click `Hosting plans`{.action} , then select the Web Hosting plan concerned. On the `General information`{.action} page that appears, and in the `Configuration`{.action} box, click the `...`{.action} button to the right of `Email addresses`{.action} , then click `Detach my email option`{.action}.
+>
 
 #### 6 - FTP users
 
-Before switching your hosting plan to a lower plan, ensure that the new plan has enough FTP users.
+Make sure that the new plan offers enough FTP users.
 
-You can view the number of FTP users in your OVHcloud Control Panel. Go to the `Web Cloud`{.action} section, then select the plan concerned in the `Hosting plans`{.action} section on the left-hand side. On the page that appears, click on the `FTP-SSH`{.action} tab. In the lower part of the next page, a table lists all FTP users created for your Web Hosting plan.
+You can view the number of FTP users in your OVHcloud Control Panel. Once you have logged in, go to the `Web Cloud`{.action} section. In the left-hand column, click `Hosting plans`{.action} , then select the Web Hosting plan concerned. On the page that pops up, click on the `FTP-SSH`{.action} tab.
 
-To delete FTP users, click the `...`{.action} to the right of the FTP user you want to delete, then `Delete`{.action}.
+At the bottom of the page that pops up, a table will appear listing all of the FTP users created for your Web Hosting plan.
 
-![user FTP deletion](images/userFTP.png){.thumbnail}
+To delete FTP users, click the `...`{.action} button to the right of the FTP user you want to delete, then `Delete`{.action}.
 
-#### Completion
+![user FTP deletion](images/userFTP.png){.thumbnail} 
 
-Once you have checked these 7 elements, you can [change your plan](#modify).
+#### Finalisation
+
+Once these 6 points have been verified, you can complete your [solution change](#modify).
 
 ### Special cases
 
-#### You have a 100M free hosting solution <a name="start10m"></a>
+#### You have a free 100M hosting plan <a name="100m"></a>
 
-If you change your [100M free hosting](/pages/web_cloud/web_hosting/activate_start10m) solution, you will only be offered the [Personal Hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/personal-offer/). However, once you have switched to the Personal hosting plan, you can migrate it to all of our [web hosting plans](https://www.ovhcloud.com/en-ie/web-hosting/).
+If you are changing your plan from a [100M free hosting](/pages/web_cloud/web_hosting/activate_start10m) plan, only [the Personal plan](https://www.ovhcloud.com/en-ie/web-hosting/personal-offer/) will be available. However, after changing to the Personal plan, you can upgrade it to all of our [web hosting plans](https://www.ovhcloud.com/en-ie/web-hosting/).
 
-Please follow [these instructions](#modify) to change your plan.
+Follow [these instructions](#modify) to change your solution.
 
-#### Boost your Performance web hosting plan temporarily <a name="boost"></a>
+#### Temporarily boost your Performance hosting <a name="boost"></a>
 
-With the [Boost option](https://www.ovhcloud.com/en-ie/web-hosting/options/boost/), available on our *Performance* plans, you can temporarily increase your hosting system’s CPU and RAM resources to absorb seasonal traffic spikes. If this increase is prolonged over time, you can also [switch to a higher-level Performance plan](#modify) to have these resources permanently.
+With the [Boost option](https://www.ovhcloud.com/en-ie/web-hosting/options/boost/), available on our *Performance* plans, you can temporarily increase your web hosting plan’s CPU and RAM resources to absorb a one-off increase in traffic. If this increase continues over time, you can also [switch to the higher-level Performance plan](#modify) so that you have these resources permanently.
 
 > [!warning]
 >
-> When you choose to enable the Boost option, the option remains active and is billed **until you disable it**.
+> When you choose to enable the Boost option, it will remain active and billed **until you disable it**.
 
-If the **Boost** option suits your needs, below are the instructions for **enabling** or **disabling** this option on your web hosting plan.
+If the **Boost** option is right for you, please find instructions below on how to **enable** or **disable** this option on your web hosting plan.
 
 > [!tabs]
 > **Enable the Boost option**
 >>
->> In the `General information` section of your Web Hosting plan, click on the `...`{.action} button to the right of `Boost`, then `Boost my plan`{.action}.<br><br>
->> ![boost](images/enable_boost.png){.thumbnail}<br>
+>> To enable the Boost option, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) then go to the `Web Cloud`{.action} section. In the left-hand column, click `Hosting plans`{.action}, then select the Web Hosting plan concerned. In the `General information` box on the page that opens, click the `...`{.action} button to the right of `Boost`, then `Boost my hosting plan`{.action}.<br><br>
+>>![boost](images/enable_boost.png){.thumbnail}<br>
 >>
 > **Disable the Boost option**
 >>
->> In the `More` tab of your web hosting plan, click `Boost my plan`{.action}.<br>
->> The Boost option usage table will appear, click `Disable boost plan`{.action}.<br><br>
->> ![boost](images/disable_boost.png){.thumbnail}<br>
+>> To disable the Boost option, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) then go to the `Web Cloud`{.action} section. In the left-hand column, click `Hosting plans`{.action}, then select the Web Hosting plan concerned. On the page that pops up, go to the `More` tab, then click `Boost my hosting plan`{.action}.<br>
+>> The usage table for the Boost option will appear. Click `Disable boost plan`{.action}.<br><br>
+>>![boost](images/disable_boost.png){.thumbnail}<br>
 
-#### Billing in case of a change of offer <a name="billing"></a>
+#### Billing when you change plans <a name="billing"></a>
 
-When you upgrade your original plan to a higher plan, a *prorata temporis* calculation will be applied until the next renewal date for your original plan.
-This calculation corresponds to the price difference between your initial solution and your new solution.
+When you upgrade your plan to a higher plan, a *pro rata* calculation will be applied until the next renewal date for this initial subscription.
+This calculation is the price difference between your original plan and your new plan.
 
 > **Example:**<br>
 >
-> You subscribed to a [Personal Hosting](https://www.ovhcloud.com/en-ie/web-hosting/personal-offer/) subscription on January 1, 2022.
+> You subscribed to a [Personal](https://www.ovhcloud.com/en-ie/web-hosting/personal-offer/) subscription on 1 January 2022.
 >
-> On October 31, 2022, you upgrade from this **Personal** plan to a [Pro plan](https://www.ovhcloud.com/en-ie/web-hosting/professional-offer/).<br>
+> On October 31, 2022, you upgrade this **Personal** plan to the [Pro](https://www.ovhcloud.com/en-ie/web-hosting/professional-offer/) plan.<br>
 >
-> Therefore, the amount corresponding to the remaining duration on the **Personal** subscription (2 months, from November 1, 2022 to January 1, 2023) is automatically deducted from the cost of the new **Pro** subscription, until January 1, 2023. You will only pay the difference.
-> From 1st January 2023, you will then be billed for your Pro subscription at its current price.
+> Therefore, the amount corresponding to the remaining duration on the **Personal** subscription (2 months, from 01 November 2022 to 01 January 2023) is automatically deducted from the cost of the new **Pro** subscription, until 01 January 2023. You will only pay the difference.
+> From 01 January 2023, the **Pro** subscription will then be billed at its current price.
 
-Please follow [these instructions](#modify) to change your plan.
+Follow [these instructions](#modify) to change your solution.
 
-## Go further <a name="gofurther"></a>
+## Go further <a name="go-further"></a>
 
 [Accessing a website’s logs and statistics on a web hosting](/pages/web_cloud/web_hosting/logs_and_statistics)
 

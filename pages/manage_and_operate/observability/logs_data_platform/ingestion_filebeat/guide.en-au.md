@@ -47,7 +47,7 @@ Filebeat expects a configuration file named **filebeat.yml** .
 
 #### Filebeat configuration
 
-```yaml hl_lines="90 91 92 104"
+```yaml
 ###################### Filebeat Configuration Example #########################
 
 # This file is an example configuration file highlighting only the most common
@@ -248,7 +248,7 @@ $ ldp@ubuntu:~$ sudo filebeat modules enable system
 
 Once again, it will generate a file **/etc/filebeat/modules.d/system.yml**
 
-```yaml hl_lines="8 16"
+```yaml
 - module: system
   # Syslog
   syslog:

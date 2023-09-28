@@ -52,7 +52,7 @@ In the Logs Data Platform manager, create a Logstash collector. On the creation 
 
 Once your collector has been created, head to the configuration page, this is where the real fun begins! To configure your input plugin, you need the Twitter Keys created before. Here is a configuration snippet of the Twitter plugin input:
 
-```ruby hl_lines="2 3 4 5"
+```ruby
 twitter {
     consumer_key => "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
     consumer_secret => "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx"
