@@ -23,7 +23,7 @@ Our High Grade and Scale servers offer a scalable option that can allow you to i
 
 ## Instructions
 
-Log into your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). Switch to the `Bare Metal Cloud`{.action} section and select your server from **Dedicated Servers**. From the `Hardware`{.action} tab, click on `Increase Storage`{.action}. If you wish to increase the RAM instead, click on `Increase RAM`{.action}.
+Log into your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). Switch to the `Bare Metal Cloud`{.action} section and select your server from **Dedicated Servers**. In the `Hardware`{.action} tab, click on Increase storage{.action}. If you wish to increase RAM instead, click on `Increase RAM`{.action}.
 
 ![increase storage](images/increasestorage.png){.thumbnail}
 
@@ -31,20 +31,19 @@ In the next tab, select the desired storage option and click on `Order`{.action}
 
 ![storage option](images/selectstorage.png){.thumbnail}
 
-Once the order has been paid, an email will be sent to your account with the instructions on how to schedule or modify the intervention for the hardware upgrade.
-
+Once the order is paid, a confirmation email will be sent to your account with link to schedule the intervention.
 
 When you click on the link provided in the email, you will be redirected to the dedicated server's dashboard. This time, click on `Schedule your intervention`{.action}.
 
 ![schedule intervention](images/scheduleintervention.png){.thumbnail}
 
-Check the box underneath `Have you backed up your data?`{.action} and select the available date and time. Please note that you cannot select a date within the first 11 days of paying the order. 
+Check the box underneath `Have you backed up your data?`{.action} and select the available date and time. Please note that our data center technicians require a preparation period, so the first date of availability is set after a minimum period of 10 days.
 
 Next, click on `Confirm`{.action}.
 
 ![confirm intervention](images/confirmintervention.png){.thumbnail}
 
-Once done, an email will be sent to your account with the confirmation of the intervention.
+Once done, you will receive an email with the date and time of the intervention.
 
 ## Go further
 
