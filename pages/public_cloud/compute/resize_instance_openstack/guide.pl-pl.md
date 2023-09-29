@@ -25,9 +25,9 @@ Ze względu na zwiększoną aktywność lub po prostu w celu zaspokojenia nowych
 ## Wymagania początkowe
 
 - Utworzenie [instancji Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps#krok-3-tworzenie-instancji) na Twoim koncie OVHcloud
-- [Użytkownik OpenStack](/pages/platform/public-cloud/create_and_delete_a_user)
-- Przygotuj [środowisko OpenStack dla CLI](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api)
-- Zdefiniowano [zmienne środowiskowe OpenStack](/pages/platform/public-cloud/loading_openstack_environment_variables)
+- [Użytkownik OpenStack](/pages/public_cloud/compute/create_and_delete_a_user)
+- Przygotuj [środowisko OpenStack dla CLI](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api)
+- Zdefiniowano [zmienne środowiskowe OpenStack](/pages/public_cloud/compute/loading_openstack_environment_variables)
 
 ## W praktyce
 
@@ -38,7 +38,7 @@ Ze względu na zwiększoną aktywność lub po prostu w celu zaspokojenia nowych
 
 ### Zapisz instancję
 
-W przypadku zmiany rozmiaru instancja jest zatrzymywana na czas trwania operacji. Zalecamy, aby przed wykonaniem tej operacji wykonać kopię zapasową instancji i zatrzymać wszystkie uruchomione procesy. Więcej informacji na temat metod tworzenia kopii zapasowych znajdziesz w przewodniku [dotyczącym](/pages/platform/public-cloud/save_an_instance) tych metod.
+W przypadku zmiany rozmiaru instancja jest zatrzymywana na czas trwania operacji. Zalecamy, aby przed wykonaniem tej operacji wykonać kopię zapasową instancji i zatrzymać wszystkie uruchomione procesy. Więcej informacji na temat metod tworzenia kopii zapasowych znajdziesz w przewodniku [dotyczącym](/pages/public_cloud/compute/save_an_instance) tych metod.
 
 ### Lista instancji
 

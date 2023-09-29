@@ -25,9 +25,9 @@ Devido a uma atividade acrescida, ou simplesmente para responder a novas necessi
 ## Requisitos
 
 - Uma [instância Public Cloud](https://www.ovhcloud.com/pt/public-cloud/) na sua conta OVHcloud
-- Um [utilizador OpenStack](/pages/platform/public-cloud/create_and_delete_a_user)
-- Ter um [ambiente OpenStack preparado para CLI](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api)
-- Ter definido as [variáveis de ambiente do OpenStack](/pages/platform/public-cloud/loading_openstack_environment_variables)
+- Um [utilizador OpenStack](/pages/public_cloud/compute/create_and_delete_a_user)
+- Ter um [ambiente OpenStack preparado para CLI](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api)
+- Ter definido as [variáveis de ambiente do OpenStack](/pages/public_cloud/compute/loading_openstack_environment_variables)
 
 ## Instruções
 
@@ -38,7 +38,7 @@ Devido a uma atividade acrescida, ou simplesmente para responder a novas necessi
 
 ### Guardar a instância
 
-Aquando de um redimensionamento, a instância é interrompida durante toda a duração da operação. Por isso, antes de realizar esta operação, recomendamos que guarde a sua instância e interrompa todos os processos em execução. Encontre mais informações sobre os métodos de backup no [guia dedicado](/pages/platform/public-cloud/save_an_instance).
+Aquando de um redimensionamento, a instância é interrompida durante toda a duração da operação. Por isso, antes de realizar esta operação, recomendamos que guarde a sua instância e interrompa todos os processos em execução. Encontre mais informações sobre os métodos de backup no [guia dedicado](/pages/public_cloud/compute/save_an_instance).
 
 ### Listar as instâncias
 

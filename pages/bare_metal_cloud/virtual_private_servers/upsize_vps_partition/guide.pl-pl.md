@@ -1,7 +1,7 @@
 ---
 title: Zmiana rozmiaru partycji serwera VPS po zmianie oferty przestrzeni dyskowej
 excerpt: "Dowiedz się, jak zwiększyć przestrzeń dyskową po aktualizacji"
-Updated: 2023-09-05
+updated: 2023-09-05
 ---
 
 ## Wprowadzenie
