@@ -123,7 +123,7 @@ Sobald Sie festgestellt haben, ob der Inhalt der Tabellen für das Funktionieren
 
 Führen Sie ein Upgrade Ihres Datenbankdienstes auf ein Angebot durch, das mehr Speicherplatz für Datenbanken enthält.
 
-Konsultieren Sie unser Angebot [Web Cloud Databasess](https://www.ovh.de/cloud/cloud-databases/), um sich über die Optionen zu informieren. 
+Konsultieren Sie unser Angebot [Web Cloud Databasess](https://www.ovhcloud.com/de/web-cloud/databases/), um sich über die Optionen zu informieren. 
 
 Wir empfehlen diese Lösung für große Datenbanken.
 

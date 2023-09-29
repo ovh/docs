@@ -120,7 +120,7 @@ Once you have determined whether or not the contents of your tables are necessar
 
 You will need to upgrade your database service to one that includes more space for databases.
 
-Consult our [Web Cloud Databasess](https://www.ovh.co.uk/cloud/cloud-databases/) offer to choose your new database service. 
+Consult our [Web Cloud Databasess](https://www.ovhcloud.com/en-us/web-cloud/databases/) offer to choose your new database service. 
 
 We recommend this solution for large databases.
 
