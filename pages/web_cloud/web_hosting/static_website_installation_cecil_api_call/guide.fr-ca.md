@@ -1,6 +1,6 @@
 ---
 title: "Tutoriel - Ajouter du contenu dynamique dans une page web statique générée avec Cecil"
-excerpt: "Découvrez comment ajouter un appel vers une API externe depuis votre page page web statique"
+excerpt: "Découvrez comment ajouter un appel vers une API externe depuis votre page web statique"
 updated: 2023-01-16
 ---
 
@@ -8,7 +8,7 @@ updated: 2023-01-16
 
 Ce tutoriel vous décrit comment utiliser le générateur de site [Cecil](https://cecil.app/fr/){.external} pour afficher le contenu d'une page dynamique. Le tout en appelant une API pour récupérer et afficher des informations sur une page générée via **Cecil**.
 
-**Découvrez comment ajouter un appel vers une API externe depuis votre page page web statique.**
+**Découvrez comment ajouter un appel vers une API externe depuis votre page web statique.**
 
 > [!warning]
 >

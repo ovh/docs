@@ -34,7 +34,7 @@ D'autres guides sont disponibles dans le corpus documentaire dédié au service 
 
 ### 2.2 - Scan de vulnérabilités
 
-Vous êtes autorisé à à réaliser des scans de vulnérabilités sur le service que vous avez souscrit chez OVHcloud, depuis n'importe quel service. OVHcloud n'a pas besoin d'être prévenu préalablement aux tests. Les mesures de sécurité déployées par OVHcloud (notamment les protections réseau) ne sont pas désactivables, à plus forte raison dans le cadre de ce type d'audits qui doivent établir une vision claire de la sécurité de l'infrastructure du client.
+Vous êtes autorisé à réaliser des scans de vulnérabilités sur le service que vous avez souscrit chez OVHcloud, depuis n'importe quel service. OVHcloud n'a pas besoin d'être prévenu préalablement aux tests. Les mesures de sécurité déployées par OVHcloud (notamment les protections réseau) ne sont pas désactivables, à plus forte raison dans le cadre de ce type d'audits qui doivent établir une vision claire de la sécurité de l'infrastructure du client.
 
 Vous n'êtes pas autorisé à utiliser votre service pour scanner d'autres infrastructures.
 

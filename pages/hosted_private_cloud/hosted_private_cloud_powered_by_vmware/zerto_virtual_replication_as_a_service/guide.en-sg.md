@@ -220,7 +220,7 @@ After having configured your VPG and once the initial replication has completed,
 
 > [!warning]
 >
-> A failover test has **NO** impact on the production site, you only need to make sure that the VMs that are being failed-over are are starting in an isolated network and/or different IPs to avoid network conflicts.
+> A failover test has **NO** impact on the production site, you only need to make sure that the VMs that are being failed-over are starting in an isolated network and/or different IPs to avoid network conflicts.
 > All the VMs instantiated during the failover test are fully managed by Zerto. You should not remove or modifiy them; they will be removed automatically at the end of the failover test.
 > The replication keeps running during the failover tests and is not impacted in any way.
 >
@@ -345,7 +345,7 @@ Validate the successfull start of VMs on secondary platform.
 
 ![Zerto Live Failover](images/zerto_OvhToOvh_live_10.png){.thumbnail}
 
-After the failover has completed, you will see an pending task as long as you have not committed or failed back the operation (through the small icons near the VPG name).
+After the failover has completed, you will see a pending task as long as you have not committed or failed back the operation (through the small icons near the VPG name).
 
 ![Zerto Live Failover](images/zerto_OvhToOvh_live_11.png){.thumbnail}
 

@@ -117,7 +117,7 @@ installation should now be secure.
 Thanks for using MariaDB!
 ```
 
-If you have configured MariaDB access in the recommended way (*unix_socket*), you now have automatic admin access (*root*) to it whenever you are logged on to the server as a user with with elevated permissions (*sudo*).
+If you have configured MariaDB access in the recommended way (*unix_socket*), you now have automatic admin access (*root*) to it whenever you are logged on to the server as a user with elevated permissions (*sudo*).
 
 > [!primary]
 >
