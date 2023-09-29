@@ -25,9 +25,9 @@ Debido al aumento de la actividad, o simplemente para responder a nuevas necesid
 ## Requisitos
 
 - Una [instancia de Public Cloud](https://www.ovhcloud.com/es-es/public-cloud/) en su cuenta de OVHcloud
-- Un [usuario de OpenStack](/pages/platform/public-cloud/create_and_delete_a_user)
-- Disponga de un [entorno OpenStack preparado para CLI](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api)
-- Haber definido las [variables de entorno OpenStack](/pages/platform/public-cloud/loading_openstack_environment_variables)
+- Un [usuario de OpenStack](/pages/public_cloud/compute/create_and_delete_a_user)
+- Disponga de un [entorno OpenStack preparado para CLI](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api)
+- Haber definido las [variables de entorno OpenStack](/pages/public_cloud/compute/loading_openstack_environment_variables)
 
 ## Procedimiento
 
@@ -38,7 +38,7 @@ Debido al aumento de la actividad, o simplemente para responder a nuevas necesid
 
 ### Guardar copia de seguridad de la instancia
 
-Al cambiar el tamaño, la instancia se detiene durante toda la operación. Por lo tanto, antes de continuar, se recomienda realizar una copia de seguridad de la instancia y detener todos los procesos en ejecución. Para más información sobre los métodos de backup, consulte la [guía dedicada](/pages/platform/public-cloud/save_an_instance).
+Al cambiar el tamaño, la instancia se detiene durante toda la operación. Por lo tanto, antes de continuar, se recomienda realizar una copia de seguridad de la instancia y detener todos los procesos en ejecución. Para más información sobre los métodos de backup, consulte la [guía dedicada](/pages/public_cloud/compute/save_an_instance).
 
 ### Lista de instancias
 

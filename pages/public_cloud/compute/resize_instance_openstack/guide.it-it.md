@@ -25,9 +25,9 @@ A causa di un aumento dell'attività o semplicemente per rispondere a nuove esig
 ## Prerequisiti
 
 - Disporre di un'istanza [Public Cloud](https://www.ovhcloud.com/it/public-cloud/) sul proprio account OVHcloud
-- Un [utente OpenStack](/pages/platform/public-cloud/create_and_delete_a_user)
-- Disporre di un [ambiente OpenStack predisposto per la CLI](/pages/platform/public-cloud/prepare_the_environment_for_using_the_openstack_api)
-- Aver definito le [variabili d’ambiente OpenStack](/pages/platform/public-cloud/loading_openstack_environment_variables)
+- Un [utente OpenStack](/pages/public_cloud/compute/create_and_delete_a_user)
+- Disporre di un [ambiente OpenStack predisposto per la CLI](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api)
+- Aver definito le [variabili d’ambiente OpenStack](/pages/public_cloud/compute/loading_openstack_environment_variables)
 
 ## Procedura
 
@@ -38,7 +38,7 @@ A causa di un aumento dell'attività o semplicemente per rispondere a nuove esig
 
 ### Effettua il backup dell’istanza
 
-Durante il ridimensionamento, l'istanza viene arrestata per tutta la durata dell'operazione. Prima di procedere, ti consigliamo di effettuare il backup dell’istanza e arrestare tutti i processi in esecuzione. Per maggiori informazioni sui metodi di backup consulta la [guida dedicata](/pages/platform/public-cloud/save_an_instance).
+Durante il ridimensionamento, l'istanza viene arrestata per tutta la durata dell'operazione. Prima di procedere, ti consigliamo di effettuare il backup dell’istanza e arrestare tutti i processi in esecuzione. Per maggiori informazioni sui metodi di backup consulta la [guida dedicata](/pages/public_cloud/compute/save_an_instance).
 
 ### Elenca le istanze
 

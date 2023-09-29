@@ -24,7 +24,7 @@ A sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&f
 
 - Dispor de um [plano de alojamento web](https://www.ovhcloud.com/pt/web-hosting/)
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
-- Ser, no mínimo, o contacto « [Administrador](/pages/account_and_service_management/account_information/managing_contact) » dos serviços para os quais pretende alterar a subscrição.
+- Ser, no mínimo, o contacto « [Administrador](/pages/account_and_service_management/account_information/managing_contacts) » dos serviços para os quais pretende alterar a subscrição.
 
 ## Instruções
 
