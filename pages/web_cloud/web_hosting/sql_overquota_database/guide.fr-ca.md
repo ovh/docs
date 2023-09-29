@@ -120,15 +120,15 @@ Une fois que vous avez déterminé si le contenu de vos tables est nécessaire o
 
 Vous devrez basculer votre base de données sur une base de données plus volumineuse.
 
-Consultez notre offre de bases de données [SQL Privé/Web Cloud Databases](https://www.ovhcloud.com/fr-ca/web-hosting/options/) pour choisir votre nouveau service de base de données. 
+Consultez notre offre de bases de données [Web Cloud Databasess](https://www.ovh.com/fr-ca/cloud-databases/) pour choisir votre nouveau service de base de données.
 
 Nous recommandons cette offre pour les bases de données volumineuses.
 
 Suivez ensuite nos guides pour déplacer le contenu de votre ancienne base de données vers la nouvelle :
 
 - [Exporter votre base de données existante](/pages/web_cloud/web_hosting/sql_database_export)
-- [Premiers pas avec l'offre SQL Privé/Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)
-- [Importer votre ancienne base de données dans votre offre SQL Privé/Web Cloud Databases](/pages/web_cloud/web_cloud_databases/restore-import-on-database-server)
+- [Premiers pas avec l'offre Web Cloud Databasess](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)
+- [Importer votre ancienne base de données dans votre offre Web Cloud Databasess](/pages/web_cloud/web_cloud_databases/restore-import-on-database-server)
 
 #### Cas n°2 - Une partie ou l'ensemble du contenu de la table volumineuse n'est pas nécessaire au fonctionnement de votre site
 

@@ -1,7 +1,7 @@
 ---
-title: "Tutorial - ¿Qué hacer cuando la base de datos está saturada?"
-excerpt: "Cómo actuar cuando la base de datos está saturada"
-updated: 2023-02-16
+title: "Web hosting: mi base de datos está saturada, ¿qué hago?"
+excerpt: "Descubra cómo actuar cuando la base de datos está saturada"
+updated: 2023-09-21
 ---
 
 > [!primary]
@@ -56,17 +56,21 @@ En primer lugar, es necesario identificar las tablas de gran tamaño de la base 
 
 #### 1.1 - Conectarse a la base de datos a través de phpMyAdmin
 
-Descargue la contraseña de acceso a su base de datos directamente en el archivo de configuración de su sitio web. Para ello, consulte el apartado [Cambio de la contraseña de una base de datos](/pages/web_cloud/web_hosting/sql_change_password) de nuestra guía (**etapa 1**) .
+Recupere la información de acceso a su base de datos directamente en el archivo de configuración de su sitio web. Realice esta acción utilizando el **paso 1** de nuestra guía sobre [el cambio de la contraseña de una base de datos](/pages/web_cloud/web_hosting/sql_change_password).
 
-Conéctese a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y seleccione `Web Cloud`{.action} en la barra de navegación en la parte superior de la pantalla. Haga clic en `Alojamientos`{.action} y seleccione el alojamiento web asociado a la base de datos en alojamiento compartido de OVHcloud. A continuación, abra la pestaña `Bases de datos`{.action}.
+Conéctese a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y seleccione `Web Cloud`{.action} en la barra de navegación superior. Haga clic en `Alojamientos`{.action} y seleccione el alojamiento web asociado a su base de datos compartida de OVHcloud. A continuación, abra la pestaña `Bases de datos`{.action}.
+
+En la parte inferior de la pantalla aparece una tabla con las bases de datos.
 
 ![phpMyAdmin Access](images/pma_access.png){.thumbnail}
 
-Abra la pestaña `Base de datos`{.action} y haga clic en el botón `...`{.action} a la derecha de la base de datos saturada y después seleccione `Acceder a phpMyAdmin`{.action}.
+Tenga en cuenta que **para su base de datos saturada**, su `Nombre de usuario` y su `Dirección del servidor` aparecen en la tabla que enumera sus bases de datos. 
+
+En la pestaña `Bases de datos`{.action}, haga clic en el botón `...`{.action} a la derecha de la base de datos que está llena y luego en `Acceder a phpMyAdmin`{.action}.
 
 ![phpMyAdmin Go Login](images/pma_interface.png){.thumbnail}
 
-Introduzca la contraseña de acceso a la base de datos, completando la información que se haya completado, y haga clic en `Ejecutar`{.action}.
+Introduzca los datos de acceso a la base de datos y haga clic en `Conexión`{.action}.
 
 #### 1.2 - Buscar las tablas más voluminosas
 
@@ -120,7 +124,7 @@ Una vez que haya determinado si el contenido de las tablas es necesario para el 
 
 Deberá bascular su base de datos con una base de datos más voluminosa.
 
-Consulte nuestra oferta de bases de datos [Web Cloud Databasess](https://www.ovh.es/cloud/cloud-databases/) para elegir su nuevo servicio de bases de datos. 
+Consulte nuestra oferta de bases de datos [Web Cloud Databasess](https://www.ovhcloud.com/es-es/web-cloud/databases/) para elegir su nuevo servicio de bases de datos. 
 
 Es recomendable para bases de datos de gran tamaño.
 

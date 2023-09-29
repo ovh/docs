@@ -1,7 +1,7 @@
 ---
-title: "Tutorial - What do I do when my database is full?"
+title: "Web hosting: My database is full, what should I do?"
 excerpt: "Find out what to do when your database is saturated"
-updated: 2023-02-16
+updated: 2023-09-21
 ---
 
 ## Objective
@@ -52,17 +52,21 @@ The first step is to identify the large table or tables in your database.
 
 #### 1.1 - Connect to the database via phpMyAdmin
 
-Retrieve the password for accessing your database directly from your website’s configuration file. Perform this action using **step 1** in our guide to [changing a database password](/pages/web_cloud/web_hosting/sql_change_password).
+Retrieve your database access data directly from your website’s configuration file. Perform this action using **step 1** in our guide to [changing a database password](/pages/web_cloud/web_hosting/sql_change_password).
 
-Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg) and select `Web Cloud`{.action} in the navigation bar at the top of the screen. Click on `Hosting plans`{.action} and choose the web hosting plan associated with your OVHcloud shared database. Next, go to the `Databases`{.action} tab.
+Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg) and select `Web Cloud`{.action} in the top navigation bar. Click `Hosting plans`{.action} , then choose the web hosting plan associated to your OVHcloud shared database. Go to the `Databases`{.action} tab.
+
+A table listing your databases will appear at the bottom of the screen.
 
 ![phpMyAdmin Access](images/pma_access.png){.thumbnail}
 
-From the `Databases`{.action} tab, click on the button `...`{.action} to the right of the database that is full, then `Go to phpMyAdmin`{.action}.
+Note that `User name` and `Server address` of your database are listed in the table.
+
+In the `Databases`{.action} tab, click the `...`{.action} button to the right of the database that is full, then `Go to phpMyAdmin`{.action}.
 
 ![phpMyAdmin Go Login](images/pma_interface.png){.thumbnail}
 
-Enter your database password in addition to the pre-filled information, then click `Go`{.action}.
+Enter the login information for your database, then click `Login`{.action}.
 
 #### 1.2 - Find the largest tables
 
@@ -116,15 +120,15 @@ Once you have determined whether or not the contents of your tables are necessar
 
 You will need to upgrade your database service to one that includes more space for databases.
 
-Consult our [Private SQL/Web Cloud Databases](https://www.ovhcloud.com/en-sg/web-hosting/options/) offer to choose your new database service. 
+Consult our [Web Cloud Databasess](https://www.ovhcloud.com/en-sg/web-cloud/databases/) offer to choose your new database service. 
 
 We recommend this solution for large databases.
 
 Then follow our guides to move the content from your old database to the new one:
 
 - [Export your existing database](/pages/web_cloud/web_hosting/sql_database_export)
-- [First steps with Private SQL/Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)
-- [Import your old database into your Private SQL/Web Cloud Databases](/pages/web_cloud/web_cloud_databases/restore-import-on-database-server)
+- [First steps with Web Cloud Databasess](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)
+- [Import your old database into your Web Cloud Databasess solution](/pages/web_cloud/web_cloud_databases/restore-import-on-database-server)
 
 #### Case 2 - Some or all of the contents of the large table are not necessary for your site to work
 

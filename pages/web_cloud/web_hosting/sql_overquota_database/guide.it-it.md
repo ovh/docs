@@ -1,7 +1,7 @@
 ---
-title: "Tutorial - Cosa fare quando il tuo database è saturo?"
-excerpt: "Come agire in caso di saturazione del database"
-updated: 2023-02-16
+title: "Hosting Web: il mio database è saturo, cosa fare?"
+excerpt: "Questa guida ti mostra come agire in caso di saturazione del database"
+updated: 2023-09-21
 ---
 
 > [!primary]
@@ -56,17 +56,21 @@ Il primo step consiste nell'identificare le tavole voluminose presenti nel tuo d
 
 #### 1.1 - Connettersi al database tramite phpMyAdmin
 
-Recupera la password di accesso al tuo database direttamente nel file di configurazione del tuo sito Web. Esegui questa operazione utilizzando lo **step 1** della nostra guida su [modifica della password di un database](/pages/web_cloud/web_hosting/sql_change_password).
+Recupera le informazioni di accesso al database direttamente nel file di configurazione del tuo sito Web. Per effettuare questa operazione, utilizza lo step 1** della nostra guida su [modificare la password di un database](/pages/web_cloud/web_hosting/sql_change_password).
 
-Accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e seleziona `Web Cloud`{.action} nella barra di navigazione in alto nello schermo. Clicca su `Hosting`{.action} e seleziona l'hosting Web associato al tuo database condiviso OVHcloud. e clicca sulla scheda `Database`{.action}.
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e seleziona `Web Cloud`{.action} nella barra di navigazione in alto a sinistra. Clicca su `Hosting`{.action} e seleziona l'hosting Web associato al database condiviso OVHcloud. e clicca sulla scheda `Database`{.action}.
+
+Visualizzi una tabella con tutti i database disponibili nella parte inferiore dello schermo.
 
 ![phpMyAdmin Access](images/pma_access.png){.thumbnail}
 
-Sempre nella scheda `Database`{.action}, clicca sul pulsante `...`{.action} a destra del database, saturato e poi su `Accedi a phpMyAdmin`{.action}.
+Ti ricordiamo che **per un database saturo**, il suo `Nome utente` e il suo `Indirizzo del server` sono presenti nella tabella che elenca i tuoi database. 
+
+Sempre nella scheda `Database`{.action}, clicca sul pulsante `...`{.action} a destra del database che è pieno e poi su `Accedi a phpMyAdmin`{.action}.
 
 ![phpMyAdmin Go Login](images/pma_interface.png){.thumbnail}
 
-Inserisci la password di accesso al tuo database in aggiunta alle informazioni pre-compilate e clicca su `Esegui`{.action}.
+Inserisci le informazioni di accesso al database e clicca su `Connetti`{.action}.
 
 #### 1.2 - Ricerca le tavole più voluminose
 
