@@ -62,7 +62,7 @@ Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotom
 
 Tabela z listą baz danych wyświetla się u dołu ekranu.
 
-![phpMyAdmin Access](obrazy/pma_access.png){.thumbnail}
+![phpMyAdmin Access](images/pma_access.png){.thumbnail}
 
 Zwróć uwagę, **dla bazy danych, która jest wysycona**, jego `Nazwa użytkownika` i `Adres serwera`, które są zawarte w tabeli zawierającej listę Twoich baz danych. 
 
