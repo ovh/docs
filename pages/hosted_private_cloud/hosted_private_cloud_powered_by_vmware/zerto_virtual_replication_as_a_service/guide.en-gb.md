@@ -277,7 +277,10 @@ You can launch a full failover from the secondary site, in case the primary site
 
 > [!warning]
 > If you trigger an actual failover when the primary site is still available, you have the possibility to properly shut down the VMs on the primary site.
+>
 > If not, be careful with the network configuration to make sure to prevent IP conflicts between primary and secondary instances of VMs.
+>
+>Furthermore, if the two Private Cloud solutions are located in 2 different countries, it is not possible to move your IP block from one Private Cloud solution to another!
 >
 > Please note that, contrary to what happens during a test failover, replication operations are stopped during an actual failover.
 >
