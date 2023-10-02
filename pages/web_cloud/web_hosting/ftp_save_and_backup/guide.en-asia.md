@@ -152,7 +152,7 @@ You will need to enter your primary username (or FTP login) with a suffix determ
 |Last Sunday, at 01:00 (UTC+1)|-snap3|ftpuser**-snap3**|
 |Sunday, 2 weeks ago, at 01:00 (UTC+1)|-snap4|ftpuser**-snap4**|
 
-Please ensure that you replace ‘ftpuser’ with with your own primary FTP username in the above examples. Keep the suffix defining the backup date you would like to access.
+Please ensure that you replace ‘ftpuser’ with your own primary FTP username in the above examples. Keep the suffix defining the backup date you would like to access.
 
 The method for connecting to your storage space will differ depending on the interface or software you are using. Below, we have included an image showing how to connect via the FTP Explorer interface.
 

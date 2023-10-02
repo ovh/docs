@@ -75,7 +75,7 @@ Cliquez sur `Suivant`{.action} puis sur `Valider`{.action}.
 
 ### Déplacer une IP via les API
 
-Connectez-vous sur la page page web des [API OVHcloud](https://api.ovh.com/).
+Connectez-vous sur la page web des [API OVHcloud](https://api.ovh.com/).
 
 Dans un premier temps, il est préférable de vérifier si l'adresse IP peut bien être déplacée.
 <br>Pour vérifier si l'IP peut être déplacée vers un de vos serveurs dédiés, utilisez l'appel suivant :

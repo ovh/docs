@@ -74,7 +74,7 @@ Another solution to accelerate the recovery of your virtual machine is to deploy
 
 Veeam Backup and Replication allows you to back up and restore snapshots of your virtual machines. It ensures a quick recovery in case of an issue with your VMware on OVHcloud solution.
 
-For help with the the installation process of a Veeam Backup and Replication server in your VMware on OVHcloud solution, please refer to the [OVHcloud documentation](/pages/storage_and_backup/backup_and_disaster_recovery_solutions/veeam/veeam_veeam_backup_replication).
+For help with the installation process of a Veeam Backup and Replication server in your VMware on OVHcloud solution, please refer to the [OVHcloud documentation](/pages/storage_and_backup/backup_and_disaster_recovery_solutions/veeam/veeam_veeam_backup_replication).
 
 ### Long term and archive storage
 
