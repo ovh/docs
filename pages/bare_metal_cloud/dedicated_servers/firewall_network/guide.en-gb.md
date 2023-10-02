@@ -31,7 +31,7 @@ To protect all means exposed on public IP addresses, OVHcloud offers a firewall 
 
 ## Instructions
 
-### Enable the Network Firewall
+### Enable Edge Network Firewall
 
 > [!primary]
 >
@@ -73,15 +73,15 @@ You can set up to **20 rules per IP**.
 
 > [!primary]
 >
-> - The UDP fragmentation is blocked (DROP) by default. When you enable the Network Firewall, if you use a VPN, remember to configure your maximum transmission unit (MTU) correctly. For example, on OpenVPN, you can tick `MTU test`{.action}.
-> - The Network Firewall is not taken into account within the OVHcloud network, so the rules set up do not affect the connections withing OVHcloud ecosystem.
+> - The UDP fragmentation is blocked (DROP) by default. When you enable the Edge Network Firewall, if you use a VPN, remember to configure your maximum transmission unit (MTU) correctly. For example, on OpenVPN, you can tick `MTU test`{.action}.
+> - The Edge Network Firewall is not taken into account within the OVHcloud network, so the rules set up do not affect the connections withing OVHcloud ecosystem.
 >
 
 
-### Configure the Network Firewall
+### Configure the Edge Network Firewall
 
 > [!warning]
-> Please note that the OVHcloud Network Firewall cannot be used to open ports on a server. To open ports on a server, you must go through the firewall of the operating system installed on the server. 
+> Please note that the OVHcloud Edge Network Firewall cannot be used to open ports on a server. To open ports on a server, you must go through the firewall of the operating system installed on the server. 
 > For more information, please refer to the following guides: [Configuring the firewall on Windows](/pages/bare_metal_cloud/dedicated_servers/activate-port-firewall-soft-win) and [Configuring the firewall on Linux with iptables](/pages/bare_metal_cloud/dedicated_servers/firewall-Linux-iptable).
 >
 
@@ -143,7 +143,7 @@ To enable it, click on the `Bare Metal Cloud`{.action} menu and open `IP`{.actio
 
 > [!success]
 > **Tips**
-> You can create attack-only firewall rules that will apply only after an attack is detected. To do that, Edge Network Firewall rules must be created but disabled. 
+> You can create attack-only firewall rules that will apply only after an attack is detected. To do that, Edge Network Firewall rules must be created but disabled.
 >
 
 > [!warning]
@@ -158,7 +158,7 @@ You can read more information about our [Network Security Dashboard](/pages/bare
 
 ### Conclusion
 
-Having read this tutorial, you should now be able to configure the Network Firewall to enhance the security of your OVHcloud services.
+Having read this tutorial, you should now be able to configure the Edge Network Firewall to enhance the security of your OVHcloud services.
 
 ## Go further
 
