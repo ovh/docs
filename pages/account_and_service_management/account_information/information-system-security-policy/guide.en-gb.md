@@ -1,6 +1,6 @@
 ---
 title: Information System Security Policy (ISSP)
-updated: 2022-07-21
+updated: 2023-09-29
 ---
 
 ## Objective
@@ -79,42 +79,113 @@ OVHcloud is managing certain processes and projects with the assistance of subco
 
 ## OVHcloud Security Commitments
 
-### Deploy a Large-Scale Industrial Approach to Security
+OVHcloud's services are built on a human, physical, technological and organizational cybersecurity framework that supports all the company’s activities in support of OVHcloud services. The guiding principles are industrialization, in-depth knowledge of technologies and team's accountability.
 
-OVHcloud teams are committed to innovating continuously to meet the ever-changing needs of customers in terms of technology, functionality and performance. Security is integrated into the life cycle of product development. The security team is constantly involved in challenging and assisting all decisions that may have an impact on security.
+Our security approach targets to primarily protect customers data and workloads, but also to protect OVHcloud's Information System that continuously evolves to support OVHcloud's business. Our efforts are prioritized according to a structured model balanced between a long term approach and efficient operations at tactical level.
 
-OVHcloud's security is based on the responsibility of each employee for data security. Our developers and administrators are chosen for their technological expertise. The security team ensures the consistency of security tools, processes and knowledge with OVHcloud's security policy.
+### Build trustable cloud services
 
-We implement and operate appropriate security measures to prevent and reduce security risks. We want this approach to be straightforward and transparent in order to strengthen the confidence of our clients and partners. We design and operate a wide range of systems. Our approach is based on standardized security measures, secure architectures from the outset and formal, proven, highly automated processes. These security measures are based on OVHcloud's experience, our contractual commitments, legal and regulatory obligations and recognized good business practices. They allow us to ensure security at the OVHcloud scale.
+#### Consistent foundations managed with an industrial approach
 
-Formal management of security risks allows to take into account the specificity of each project. In this way, we complement our standard security measures with measures specific to these projects. The management of events, incidents, vulnerabilities, threats and gathering of security information remains standardized within a unified approach.
+Our approach is based on standardized secure building blocks and security measures, in-depth secure architectures by design and formal, proven, highly automated processes. We want this security approach to be an enabler for Information System efficiency and consistency, so we build a set of tools and processes to be used by every team to ease security adoption.
 
-Finally, OVHcloud operates a permanent threat analysis framework linked to continuous monitoring system. This way, we systematically adapt operational practices to immediate risks and respond effectively to security incidents. The organization of the security teams allows the rapid mobilization of experts to investigate and resolve security incidents. In this way, we minimize potential impacts and implement corrective actions as quickly as possible in a sustainable way.
+We build our Systems:
 
-### Position OVHcloud as a trusted player within the ecosystem
+- On robust proven technologies, either open source or proprietary to meet our very demanding needs for performance and resiliency. Our systems in support for productions shall be as deterministic as possible, and configured to optimize security. We seek this goal by developing for every technology we use strong expertise by a progressive adoption and in-depth testing, a high level of automation with "as-code" operational model, and life-cycle management to ensure the software is maintained and supported.
+- On internally built software assets, developed according to strict processes to meet specific needs in terms of functionalities, performances or in-depth controls in OVHcloud's context.
 
-As a global cloud provider, OVHcloud has a great responsibility in fighting security threats. We deploy protection tools on a large scale. We automate the protection of our customers’ systems from these threats. We detect vulnerable systems. We share our innovations and knowledge with the security community. We manage millions of public IP addresses on behalf of our customers. These addresses are essential assets of information systems in the cloud and their reputations are one of our concerns.
+Security is not the only outcomes of this very structured approach. However, it is a strong enabler for security by design and capability to manage security consistently over time.
 
-OVHcloud’s security team and technical experts maintain strong operational relationships with security expert communities, authorities, software publishers, and hardware manufacturers. This way, we anticipate new threats and vulnerabilities. This way, we reduce the associated risks. We share our innovations and knowledge with the security community and promote responsible disclosure.
+#### Support every type of customers in their growth in the cloud
 
-We are constantly challenging our security. We implement a structured program of reviews, tests and controls, both internal and external. Our security management organization is based on internationally recognized standards, in particular ISO/IEC 27001 which highlights these principles. We regularly evaluate our security features using trusted third parties and recognized audit benchmarks.
+OVHcloud's products use open-source technologies and proven technology standards to facilitate adoption and reversibility for our customers when managing their systems in the cloud.
 
-### Operate a Trusted Cloud for All
+Security is integrated into the life cycle of product development. The security team is constantly involved in challenging and assisting all decisions that may have an impact on security. Our product security approach is risk-driven, based on deployment scale and adoption pace. We take into account the security culture of our customer's persona to meet common uses cases associated to each product. This way, we enrich our standard security framework with specific security measures adapted to technologies specificities and customer use cases.
 
-OVHcloud offers its solutions to any type of client in all fields of activity: startup, SME, large business, administration, multinational. Every OVHcloud client has a particular security approach, depending of its business or sovereignty context that we need to take into account. Security is one of the pillars in support of our customers trust.
+Implementing configuration best practices and security lifecycle management for the technologies in support of our products is key in the value delivered to our customer and a strong incentive for them to move to cloud. This duty is fully embedded in the product lifecycle.
 
-The security of a system in the cloud is a shared responsibility between the cloud provider and the client. OVHcloud provides security measures on the services provided and the underlying infrastructures. Our customers are ultimately responsible for the security of their information systems in the cloud. We offer them a high level of transparency on the security measures implemented by OVHcloud to support them in their global security risk mitigation plan. We clearly define their areas of responsibility in order to avoid any vulnerability arising from insufficient awareness.
+While the security posture may vary depending on the products specificities, the management of events, incidents, vulnerabilities, threats and gathering of security information remains standardized within a unified approach. Moreover, we are building a compliance program to unify and standardize security assurance to ease appropriation by customers.
 
-OVHcloud provides and develops a set of tools, features and configurations to improve the security of client systems in the cloud. Most security features are included for all customers. Additional security features are also available to help our customers reduce the specific risks they face.
+#### Support every customers to manage their own specific risks
 
-OVHcloud is also committed to privacy protection, as a data controller for our customers’ data and as a data processor in the event that our customers are themselves data controllers. Information systems security policy includes this commitment by defining, implementing and improving security features that ensure the protection of hosted personal data.
+OVHcloud offers its solutions to any type of customer in all fields of activity: startup, SME, large business, administration, multinational. Every OVHcloud customer has a particular security approach, depending on its business or operation context that we need to take into account.
 
-OVHcloud products use open source technologies and/or proven technology standards. The adoption and reversibility of the product are facilitated. This strategic choice ensures that our customers can deploy standard systems in the cloud. They can add their own security solutions, take advantage of their teams' common skills and tools. A wide range of security solutions and services is available with OVHcloud partners and other vendors.
+The security of a system in the cloud is a shared responsibility between the cloud provider and the customer. Our customers are ultimately responsible for the security of their information systems in the cloud. We clearly define their areas of operational responsibilities to avoid any vulnerability arising from insufficient awareness.
 
-### How does OVHcloud commits?
+OVHcloud provides and develops a set of tools, features and configurations to improve the security of client systems in the cloud. Most security features are included for all customers. Additional security features are also available to help our customers to reduce the specific risks they face.
 
-OVHcloud's commitment to its customers and partners is primarily driven by the contractual relationship that formalizes and articulates it.
+Customers shall be able to add their own security solutions and tools. We develop a wide range of security solutions and services within our solutions catalog. This catalog is completed with a large range of technological means or services provided by OVHcloud partners within a rich ecosystem. Our product are designed to facilitate the use of third parties or community solutions to help our customers to customize their risk mitigation means.
+
+### Cybersecurity in support of information system and transformation
+
+Building a production environment for our customers and their systems in the cloud is at the center of our cybersecurity commitment. This approach should be consistently cascaded into every OVHcloud information systems, even if not directly in support to the service delivered to our customers.
+
+We follow the same methodology for any information systems under the responsibility of OVHcloud. Security of all IT assets is a key to ensure the data related to our customer and OVHcloud data and information are protected.
+
+OVHcloud' security team implement a structured program of reviews, controls and audits, both internal and external to constantly challenge our security. We challenge our security implementation against commonly use security compliance scheme. Continuous improvement is strictly followed by a dedicated team in direct support of systems owners to ensure the adequate implementation of improvement to increase security level continuously to ensure risks mitigation and compliance to our commitments
+
+Security teams provide to project teams and system owners security tools to ease implementation of security practices in the systems, ensuring consistency across the systems on most critical security topics.
+
+We manage the security of all production systems in support of operations with a strong support of security team:
+
+- Improving the coverage of security controls to cover all sensitive data and workloads at OVHcloud
+- Ensuring security is included in the full lifecycle of our Information Systems and specifically taken into account during projects gates.
+- The security team work permanently with all systems owners to ensure the coordination is built over the time and to ensure the follow-up of decisions related to security.
+
+As OVHcloud is evolving in a very dynamic context, information system transformation is a permanent challenge to address all the issues related to our market positioning.
+Within the objective to grow geographically, technically and in terms of customer base, we integrate into our security posture the strategic decision of OVHcloud to ensure the necessary information system transformations are planned and deploy in respect of the security principles we follow.
+
+### An operational security culture
+
+OVHcloud's security framework is constantly evolving to align with our operating model and services on one side and to adapt to the threat environment and new attack methods on the other side.
+
+OVHcloud operates a permanent threat analysis framework linked to continuous monitoring system. This way, we systematically adapt operational practices to immediate risks and respond effectively to security incidents. The organization of the security teams allows the rapid mobilization of experts to investigate and resolve security incidents. In this way, we minimize potential impacts and implement corrective actions as quickly as possible sustainably.
+
+OVHcloud’s security team and technical experts maintain strong operational relationships with security expert communities, authorities, software publishers, and hardware manufacturers. This way, we anticipate new threats and vulnerabilities and mitigate the associated risks. We share our innovations and knowledge with the security community and promote responsible disclosure. We are running a public bug bounty program to leverage security community expertise to improve our systems.
+
+Tactical and ad-hoc decisions to mitigate risks in day-to-day operations are consolidated within our management framework to extend best practices across the company and build an effective continuous improvement cycle.
+
+OVHcloud's teams are regularly trained to the security framework and to adopt the best practices in every situation that could generate a security risk, immediate or future in there work. OVHcloud's security team is continuously monitoring critical systems to detect misbehavior and to ensure a quick response to deviation.
+
+## How does OVHcloud commits?
+
+OVHcloud's commitment to its customers and partners is primarily driven by the contractual relationship that formalizes and articulates it. We document and communicate security roles and responsibilities matrix for our services.
 
 OVHcloud respects the laws and regulations applicable in the provision of services in each country. OVHcloud is also committed to compliance with specific industry specific regulations, for example for health and financial information systems.
 
+Our security management organization is based on internationally recognized standards, in particular ISO/IEC 27001 which highlights these principles. We regularly evaluate our security features using trusted third parties and recognized audit benchmarks, and we communicate the compliance reports and certificates to our customers when appropriate.
+
 Beyond contractual links, OVHcloud engages with its ecosystem, its customers and prospects, ensuring clarity and transparency of messages in all circumstances.
+
+## OVHcloud Security implementation
+
+OVHcloud is maintaining its own security framework in support of the ISMS federating all requirements from our interested parties. This framework is based on different industry standards, and adapted to OVHcloud organization and operations.
+
+1. Define and maintain security governance (Security governance)
+2. Maintain consistent security principles and documentation (Security model)
+3. Provide to customer appropriate security features to manage their risks (Customer Security Features)
+4. Implement appropriate data protection for any data managed or hosted (Data Protection)
+5. Demonstrate compliance with OVHcloud commitments (Security compliance)
+6. Promote risk-based decisions (Security risks management)
+7. Build, develop and maintain relationship with security ecosystem (Security ecosystem)
+8. Protect customer's cloud usage (Security Protection for Customer)
+9. Protect OVHcloud technical reputation (External technical reputation)
+10. Assess security and implement continuous improvement (Audits and controls)
+11. Assets management
+12. Ensure alignment of resources with security objectives and develop a security culture (Human resources, Awareness and Training)
+13. Identity, Authentication and Access Management
+14. Protect end-user information system (End user information system)
+15. Supply Chain and Service Provider Management
+16. Support IT and product developments (Project management)
+17. Manage security in IS evolution (Change management)
+18. Secure continuous delivery
+19. Use strong Cryptography (Cryptography)
+20. Deploy and maintain secure configuration and hardening (Configuration and hardening)
+21. Ensure Network security (Network security)
+22. Operations and Maintenance in Security Conditions
+23. Logging, security monitoring and detection
+24. Vulnerability and patch management
+25. Security incident management
+26. Datacenter security
+27. Office security
+28. Resilience
