@@ -1,39 +1,35 @@
 ---
-title: 'Transfer an Instance backup from one datacentre to another'
-excerpt: 'This guide will show you how to transfer an Instance backup from one datacentre to another while preserving the configuration and state of the Instance'
-updated: 2019-03-29
+title: Transfer an instance backup from one OpenStack region to another
+excerpt: Find out how to transfer an instance backup from one OpenStack region to another while preserving the configuration and state of the instance
+updated: 2023-09-25
 ---
 
 ## Objective
 
-A situation may arise where you need to move your [Public Cloud Instance](https://www.ovhcloud.com/en-gb/public-cloud/){.external} from one datacentre to another, either because you would prefer to move to a newly available datacentre or because you want to migrate from OVHcloud Labs to Public Cloud. 
+A situation may arise where you need to move your [Public Cloud instance](https://www.ovhcloud.com/en-gb/public-cloud/){.external} from one OpenStack region to another, either because you would prefer to move to a newly available OpenStack region or because you want to migrate from OVHcloud Labs to Public Cloud. 
 
-**This guide will show you how to transfer an Instance backup from one datacentre to another while preserving the configuration and state of the Instance.**
+**This guide will show you how to transfer an instance backup from one OpenStack region to another while preserving the configuration and state of the instance.**
 
 ## Requirements
 
-Before following these steps, it's recommended that you first complete this guide:
+In order to do the transfer, you will need an environment with:
 
-* [Prepare the environment to use the OpenStack API](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api){.external}
+* OpenStack CLI. This guide details you how to [prepare the environment to use the OpenStack API](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api){.external}.
+* Connectivity to OVHCloud OpenStack APIs.
+* Available storage that matches the instance disk size (for temporary backup storage).
 
-You will also need the following:
+This environment will be used as a "Jump host" to transfer the backup from one region to another. This environment can be an instance hosted on OVHCloud or your local machine. 
 
-* a [Public Cloud Instance](https://www.ovhcloud.com/en-gb/public-cloud/){.external} in your OVHcloud account
-* administrative (root) access to your instance/operating system via SSH
+You will also need a [Public Cloud instance](https://www.ovhcloud.com/en-gb/public-cloud/){.external} in your OVHcloud account.
 
-> [!primary]
->
-The commands in this guide are based on the OpenStack CLI, as opposed to the `NOVA` and `GLANCE` APIs.
->
 
 ## Instructions
 
 ### Create a backup
 
-First, establish an SSH connection to your instance/OS and then run the following command to list your existing instances:
 
-```
-#root@server:~$ openstack server list
+```bash
+$ openstack server list
  
 +--------------------------------------+-----------+--------+--------------------------------------------------+--------------+
 | ID                                   | Name      | Status | Networks                                         | Image Name   |
@@ -42,18 +38,18 @@ First, establish an SSH connection to your instance/OS and then run the followin
 +--------------------------------------+-----------+--------+--------------------------------------------------+--------------+
 ```
 
-Next, run the following command to create a backup of your Instance:
+Next, run the following command to create a backup of your instance:
 
-```
-openstack server image create --name snap_server1 aa7115b3-83df-4375-b2ee-19339041dcfa
+```bash 
+$ openstack server image create --name snap_server1 aa7115b3-83df-4375-b2ee-19339041dcfa
 ```
 
 ### Download the backup
 
-Next, run this command to list available Instances:
+Next, run this command to list available instances:
 
-```
-#root@server:~$ openstack image list
+```bash
+$ openstack image list
 +--------------------------------------+-----------------------------------------------+--------+
 | ID                                   | Name                                          | Status |
 +--------------------------------------+-----------------------------------------------+--------+
@@ -68,16 +64,16 @@ Next, run this command to list available Instances:
 | 9c9b3772-5320-414a-90bf-60307ff60436 | Debian 8 - Docker                             | active |
 ```
 
-Now identify the Instance backup from the list:
+Now identify the instance backup from the list:
 
-```
+```text
 | 825b785d-8a34-40f5-bdcd-0a3c3c350c5a | snap_server1 | qcow2 | bare | 1598029824 | active |
 ```
 
-Finally, run this command to download the backup:
+Finally, run this command to download the backup on the 'jump host':
 
-```
-#root@server:~$ openstack image save --file snap_server1.qcow 825b785d-8a34-40f5-bdcd-0a3c3c350c5a
+```bash
+$ openstack image save --file snap_server1.qcow 825b785d-8a34-40f5-bdcd-0a3c3c350c5a
 ```
 
 ### Transfer the backup to another datacentre
@@ -86,23 +82,23 @@ To start the transfer process, you first need to load new environment variables.
 
 > [!warning]
 >
-If you are transfering your backup to a datacentre within the same project, you will need to change the OS_REGION_NAME variable.
+If you are transferring your backup to an OpenStack region within the same project, you will need to change the OS_REGION_NAME variable.
 >
 
-```
-#root@server:~$ export OS_REGION_NAME=SBG1
-```
-
-If you are transfering your backup to another project or account, you will have to reload the environment variables linked to that account using the following command:
-
-```
-#root@server:~$ source openrc.sh
+```bash
+$ export OS_REGION_NAME=SBG1
 ```
 
-To transfer the backup to the new datacentre, use this command:
+If you are transferring your backup to another project or account, you will have to reload the environment variables linked to that account using the following command:
 
+```bash
+$ source openrc.sh
 ```
-#root@server:~$ openstack image create --disk-format qcow2 --container-format bare --file snap_server1.qcow snap_server1
+
+To transfer the backup to the new OpenStack region, use this command:
+
+```bash
+$ openstack image create --disk-format qcow2 --container-format bare --file snap_server1.qcow snap_server1
  
 +------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Field            | Value                                                                                                                                                                                     |
@@ -129,12 +125,12 @@ To transfer the backup to the new datacentre, use this command:
 +------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 ```
 
-### Create an Instance from your backup
+### Create an instance from your backup
 
-To create an Instance from your backup, use the backup ID as the image with this command:
+To create an instance from your backup, use the backup ID as the image with this command:
 
-```
-#root@server:~$ openstack server create --key-name SSHKEY --flavor 98c1e679-5f2c-4069-b4da-4a4f7179b758 --image 0a3f5901-2314-438a-a7af-ae984dcbce5c Server1_from_snap
+```bash
+$ openstack server create --key-name SSHKEY --flavor 98c1e679-5f2c-4069-b4da-4a4f7179b758 --image 0a3f5901-2314-438a-a7af-ae984dcbce5c Server1_from_snap
 ```
 
 ## Go further

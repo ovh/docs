@@ -71,6 +71,7 @@
             + [Web Hosting Reversibility Policy](account_and_service_management/reversibility/04-web-hosting-reversibility-policy)
             + [Public Cloud Reversibility Policy](account_and_service_management/reversibility/03-public-cloud-reversibility-policy)
             + [Hosted Private Cloud Reversibility Policy](account_and_service_management/reversibility/02-hosted-private-cloud-reversibility-policy)
+            + [Politique de réversibilité de VMware on OVHcloud sous la qualification SecNumCloud](account_and_service_management/reversibility/05-snc-vmware-reversibility-policy)
             + [Dedicated Servers Reversibility Policy](account_and_service_management/reversibility/01-dedicated-servers-reversibility-policy)
     + [Responsibility sharing](account-and-service-management-responsibility-sharing)
         + [Dedicated servers - Shared Responsibility](account_and_service_management/responsibility_sharing/dedicated-servers)

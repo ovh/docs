@@ -76,7 +76,7 @@ vdb 254:16 0 10G 0 disk
 
 > [!primary]
 >
-`vda` in this example refers to the default disk of the instance. The additional disk will then be labelled `vdb`.
+> `vda` in this example refers to the default disk of the instance. The additional disk will then be labelled `vdb`.
 >
 
 Create a partition on the additional disk using the commands below.

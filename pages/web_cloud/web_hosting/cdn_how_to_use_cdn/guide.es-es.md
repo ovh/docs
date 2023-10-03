@@ -1,7 +1,7 @@
 ---
 title: 'Acelerar un sitio web utilizando la CDN'
 excerpt: 'Cómo acelerar la carga de un sitio web en el alojamiento utilizando el servicio CDN'
-updated: 2021-12-23
+updated: 2023-09-22
 ---
 
 > [!primary]
@@ -302,6 +302,19 @@ En caso de no utilizar ningún sistema de gestión de contenidos, puede disponer
 ### Desactivar la opción CDN para un sitio web
 
 Esta acción permite desactivar la CDN para uno o más de sus registros multisitio, sin eliminar la opción CDN de su alojamiento web.
+
+> [!warning]
+>
+> Desactivar la opción CDN para un sitio web requiere cambiar la dirección IP que se utiliza para redirigir el dominio hacia el alojamiento web.
+> Este cambio se realiza automáticamente si la zona DNS activa del dominio también se gestiona desde la [cuenta de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) que contiene el alojamiento web.
+>
+> En caso contrario, deberá realizar las dos acciones siguientes:
+>
+> - Obtenga la dirección IP **por defecto** del cluster en el que se encuentra su alojamiento web, mediante la guía "[Web hosting: direcciones IP de nuestros clusters](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)";
+> - modifique manualmente la dirección IP en la zona DNS activa de su dominio o póngase en contacto con el proveedor de la zona DNS para que la actualice por usted.
+>
+> La modificación de un registro en la zona DNS activa de un dominio conlleva un retraso de propagación de **4** a **24** horas para ser plenamente efectiva. Una página con el código **520** puede aparecer aleatoriamente hasta que se complete la propagación. Este fenómeno se debe a que determinadas partes de la red DNS redirigen aún las peticiones hacia la dirección IP de la CDN asociada a su alojamiento web.
+>
 
 Acceda al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y seleccione `Web Cloud`{.action}.Haga clic en `Alojamientos`{.action} y seleccione el plan correspondiente. En la pestaña `Multisitio`{.action}, haga clic en `...`{.action} a la derecha de la entrada multisitio y seleccione `Editar`{.action}.
 

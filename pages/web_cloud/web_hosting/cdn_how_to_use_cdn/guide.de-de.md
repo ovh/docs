@@ -1,7 +1,7 @@
 ---
 title: 'Ihre Webseiten mit CDN beschleunigen'
 excerpt: 'Erfahren Sie hier, wie Sie die Ladezeiten Ihres Webhostings mit der CDN-Option verbessern'
-updated: 2021-12-23
+updated: 2023-09-22
 ---
 
 > [!primary]
@@ -304,6 +304,19 @@ Sie können auch dann vom CDN-Cache profitieren, wenn Sie kein CMS verwenden. Hi
 ### Die CDN-Option für eine Website deaktivieren
 
 Diese Aktion ermöglicht die Deaktivierung des CDN für einen oder mehrere Ihrer Multisite-Einträge, ohne die CDN-Option von Ihrem Webhosting zu entfernen.
+
+> [!warning]
+>
+> Die Deaktivierung der CDN-Option für eine Website erfordert die Änderung der IP-Adresse, die für die Weiterleitung Ihres Domainnamens auf Ihr Webhosting verwendet wird.
+> Diese Änderung erfolgt automatisch, wenn die aktive DNS-Zone Ihres Domainnamens auch über den [OVHcloud Account](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) verwaltet wird, der Ihr Webhosting enthält.
+>
+> Wenn dies nicht der Fall ist, müssen Sie die beiden folgenden Aktionen ausführen:
+>
+> - Ermitteln Sie mithilfe unserer Anleitung „[Webhosting: Die IP-Adressen unserer Cluster](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)“ die **Standard-IP-Adresse** des Clusters ab, auf dem sich Ihr Webhosting befindet.
+> - Ändern Sie die IP-Adresse in der aktiven DNS-Zone Ihres Domainnamens manuell oder wenden Sie sich an Ihren DNS-Anbieter, um das Update für Sie durchzuführen.
+>
+> Die Änderung eines Eintrags in der aktiven DNS-Zone eines Domainnamens führt zu einer Propagationsverzögerung von **4** bis **24** Stunden, um voll wirksam zu sein. Bis diese Propagierung abgeschlossen ist, wird möglicherweise eine Seite mit dem Code **520** angezeigt. Dies hängt damit zusammen, dass Teile des DNS-Netzwerks die Anfragen immer noch an die IP-Adresse des CDN weiterleiten, das mit Ihrem Webhosting verbunden ist.
+>
 
 Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und klicken Sie im Bereich `Web`{.action} und dann auf `Hosting-Pakete`{.action}. Wählen Sie das betreffende Hosting aus. Klicken Sie auf dem Tab `Multisite`{.action} auf `...`{.action} rechts neben dem Multisite-Eintrag und dann auf `Domain bearbeiten`{.action}.
 

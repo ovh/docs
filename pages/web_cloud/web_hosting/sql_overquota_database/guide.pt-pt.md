@@ -1,7 +1,7 @@
 ---
-title: "Tutorial - O que fazer quando a minha base de dados está saturada?"
-excerpt: "Descubra como agir quando a base de dados está sobrecarregada"
-updated: 2023-02-16
+title: "Alojamento web: a minha base de dados está saturada, o que fazer?"
+excerpt: "Saiba como agir quando a base de dados está sobrecarregada"
+updated: 2023-09-21
 ---
 
 > [!primary]
@@ -18,7 +18,7 @@ Em certos casos, a base de dados regista uma quantidade de informações tão el
 
 Este tutorial propõe-lhe as ações a empreender quando a sua base de dados partilhada OVHcloud está próxima da saturação ou já está em **overquota**.
 
-**Descubra como agir quando a base de dados está sobrecarregada.**
+**Saiba como agir quando a base de dados está sobrecarregada.**
 
 ## Requisitos
 
@@ -56,17 +56,21 @@ A primeira etapa consiste em identificar a ou as tabelas volumosas presentes na 
 
 #### 1.1 - Aceder à base de dados via phpMyAdmin
 
-Obtenha a palavra-passe de acesso à sua base de dados diretamente no ficheiro de configuração do seu website. Para isso, utilize o **etapa 1** do nosso manual sobre [a alteração da palavra-passe de uma base de dados](/pages/web_cloud/web_hosting/sql_change_password).
+Recupere as informações de acesso à sua base de dados diretamente no ficheiro de configuração do seu website. Realize esta ação através da **etapa 1** do nosso guia sobre [a alteração da palavra-passe de uma base de dados](/pages/web_cloud/web_hosting/sql_change_password).
 
-Ligue-se ao seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e selecione `Web Cloud`{.action} na barra de navegação no topo do ecrã. Clique em `Alojamentos`{.action} e escolha o alojamento web associado à sua base de dados partilhada OVHcloud. Por fim, clique no separador `Bases de dados`{.action}.
+Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e selecione `Web Cloud`{.action} na barra de navegação no topo do ecrã. Clique em `Alojamentos`{.action} e escolha o alojamento web associado à sua base de dados partilhada da OVHcloud. Por fim, clique no separador `Bases de dados`{.action}.
+
+Na parte inferior do ecrã será apresentada uma tabela com a lista das bases de dados.
 
 ![phpMyAdmin Access](images/pma_access.png){.thumbnail}
 
-Ainda no separador `Bases de dados`{.action}, clique no botão `...`{.action} à direita da base de dados que está saturada e depois sur `Acceder a phpMyAdmin`{.action}.
+Anote, **para a sua base de dados saturada**, o seu `Nome de utilizador` e o seu `Endereço do servidor` presentes na tabela que lista as suas bases de dados. 
+
+Ainda no separador `Bases de dados`{.action}", clique no botão `...`{.action} à direita da base de dados que está saturada e, a seguir, em `Aceder ao phpMyAdmin`{.action}".
 
 ![phpMyAdmin Go Login](images/pma_interface.png){.thumbnail}
 
-Introduza a password de acesso à sua base de dados para além das informações pré-preenchidas e clique em `Executar`{.action}.
+Introduza as informações de acesso à sua base de dados e depois clique em `Entrada`{.action}.
 
 #### 1.2 - Pesquisar as tabelas mais volumosas
 
