@@ -6,12 +6,12 @@ updated: 2023-09-22
 
 ## Objectif
 
-Si vous disposez d’un hébergement web OVHCloud, vous pouvez accéder à un espace de stockage qui vous permet de gérer votre site internet. L’accès à cet espace de stockage est possible à distance, via SFTP. Même s’il est possible de se connecter via un terminal, vous pouvez également utiliser l’IDE (environnement de développement intégré) VSCode pour gérer à distance les dossiers et fichiers de votre site web. 
+Si vous disposez d’un hébergement web OVHcloud, vous pouvez accéder à un espace de stockage qui vous permet de gérer votre site internet. L’accès à cet espace de stockage est possible à distance, via SFTP. Même s’il est possible de se connecter via un terminal, vous pouvez également utiliser l’IDE (environnement de développement intégré) Visual Studio Code pour gérer à distance les dossiers et fichiers de votre site web. 
 
 **Ce guide vous explique comment administrer à distance votre site internet via VSCode.**
   
 ## Prérequis
-- Disposer d'une offre d'[hébergement web OVHCloud](https://www.ovhcloud.com/fr/web-hosting/){.external} bénéficiant d'un accès SSH
+- Disposer d'une offre d'[hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/){.external} bénéficiant d'un accès SSH
 
 - Avoir installé VSCode sur sa machine
 
