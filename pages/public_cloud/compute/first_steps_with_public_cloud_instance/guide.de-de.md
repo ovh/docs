@@ -122,7 +122,7 @@ Die Instanz und alle zugehörigen Daten werden damit endgültig entfernt.
 
 Bestätigen Sie die Löschungsanfrage im angezeigten Fenster.
 
-### Auf die VNC-Konsole zugreifen
+### Auf die VNC-Konsole zugreifen <a name="accessvnc"></a>
 
 Klicken Sie im linken Menü auf `Instances`{.action}. Klicken Sie auf der Instanzverwaltungsseite in der Tabelle auf den Namen der Instanz.
 
