@@ -6,27 +6,25 @@ updated: 2023-09-25
 
 ## Objectif
 
-Il peut arriver que vous deviez déplacer votre [instance Public Cloud](https://www.ovhcloud.com/fr/public-cloud/) d'une région OpenStack à une autre, soit parce que vous préférez migrer vers une nouvelle région OpenStack disponible, soit parce que vous souhaitez migrer d'OVHcloud Labs vers Public Cloud.
+Vous pourriez être amené à déplacer votre [instance Public Cloud](https://www.ovhcloud.com/fr/public-cloud/) d'une région OpenStack à une autre. Soit parce que vous préférez migrer vers une nouvelle région OpenStack disponible ou parce que vous souhaitez migrer d'OVHcloud Labs vers Public Cloud.
 
-**Ce guide vous explique comment transférer une sauvegarde d'instance d'une région OpenStack à une autre tout en préservant la configuration et l'état de l'instance.**
+**Découvrez comment transférer une sauvegarde d'instance d'une région OpenStack à une autre tout en préservant la configuration et l'état de l'instance.**
 
 ## Prérequis
 
 Pour effectuer le transfert, vous aurez besoin d'un environnement avec :
 
-- CLI OpenStack. Utilisez [notre guide pour savoir comment préparer l'environnement pour utiliser l'API OpenStack](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api).
-- Connectivité aux API OVHcloud OpenStack.
-- Stockage disponible correspondant à la taille du disque de l'instance (pour le stockage de sauvegarde temporaire).
+- CLI OpenStack. Consultez notre guide « [Comment préparer l'environnement pour utiliser l'API OpenStack](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api) ».
+- La Connectivité aux API OVHcloud OpenStack.
+- De l'espace de stockage disponible correspondant à la taille du disque de l'instance (pour le stockage de sauvegarde temporaire).
 
-Cet environnement sera utilisé comme « jump host » pour transférer la sauvegarde d'une région à une autre. Cet environnement peut être une instance hébergée sur OVHcloud ou votre machine locale.
+Cet environnement sera utilisé comme « jump host » pour transférer la sauvegarde d'une région à une autre. Cet environnement peut être une instance hébergée sur OVHcloud ou sur votre machine locale.
 
-Vous aurez également besoin d’une [instance Public Cloud](https://www.ovhcloud.com/fr/public-cloud/) dans votre compte OVHcloud.
-
+Vous aurez également besoin d’une [instance Public Cloud](https://www.ovhcloud.com/fr/public-cloud/) sur votre compte OVHcloud.
 
 ## En pratique
 
 ### Créer une sauvegarde
-
 
 ```bash
 $ openstack server list
@@ -40,7 +38,7 @@ $ openstack server list
 
 Exécutez ensuite la commande suivante pour créer une sauvegarde de votre instance :
 
-```bash 
+```bash
 $ openstack server image create --name snap_server1 aa7115b3-83df-4375-b2ee-19339041dcfa
 ```
 
@@ -82,7 +80,7 @@ Pour démarrer le processus de transfert, vous devez d'abord charger de nouvelle
 
 > [!warning]
 >
-Si vous transférez votre sauvegarde vers une région OpenStack au sein du même projet, vous devrez changer la variable `OS_REGION_NAME`.
+> Si vous transférez votre sauvegarde vers une région OpenStack au sein du même projet, vous devrez changer la variable `OS_REGION_NAME`.
 >
 
 ```bash
