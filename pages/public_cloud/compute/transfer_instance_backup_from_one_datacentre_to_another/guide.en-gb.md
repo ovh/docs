@@ -1,5 +1,5 @@
 ---
-title: Transfer an instance backup from one OpenStack region to another
+title: Transferring an instance backup from one OpenStack region to another
 excerpt: Find out how to transfer an instance backup from one OpenStack region to another while preserving the configuration and state of the instance
 updated: 2023-09-25
 ---
@@ -8,17 +8,17 @@ updated: 2023-09-25
 
 A situation may arise where you need to move your [Public Cloud instance](https://www.ovhcloud.com/en-gb/public-cloud/){.external} from one OpenStack region to another, either because you would prefer to move to a newly available OpenStack region or because you want to migrate from OVHcloud Labs to Public Cloud. 
 
-**This guide will show you how to transfer an instance backup from one OpenStack region to another while preserving the configuration and state of the instance.**
+**This guide explains how to transfer an instance backup from one OpenStack region to another while preserving the configuration and state of the instance.**
 
 ## Requirements
 
 In order to do the transfer, you will need an environment with:
 
-* OpenStack CLI. This guide details you how to [prepare the environment to use the OpenStack API](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api){.external}.
-* Connectivity to OVHCloud OpenStack APIs.
-* Available storage that matches the instance disk size (for temporary backup storage).
+- OpenStack CLI. Use [our guide to know how to prepare the environment to use the OpenStack API](/pages/public_cloud/compute/prepare_the_environment_for_using_the_openstack_api){.external}.
+- Connectivity to OVHCloud OpenStack APIs.
+- Available storage that matches the instance disk size (for temporary backup storage).
 
-This environment will be used as a "Jump host" to transfer the backup from one region to another. This environment can be an instance hosted on OVHCloud or your local machine. 
+This environment will be used as a "jump host" to transfer the backup from one region to another. This environment can be an instance hosted on OVHCloud or your local machine. 
 
 You will also need a [Public Cloud instance](https://www.ovhcloud.com/en-gb/public-cloud/){.external} in your OVHcloud account.
 
@@ -70,19 +70,19 @@ Now identify the instance backup from the list:
 | 825b785d-8a34-40f5-bdcd-0a3c3c350c5a | snap_server1 | qcow2 | bare | 1598029824 | active |
 ```
 
-Finally, run this command to download the backup on the 'jump host':
+Finally, run this command to download the backup on the jump host:
 
 ```bash
 $ openstack image save --file snap_server1.qcow 825b785d-8a34-40f5-bdcd-0a3c3c350c5a
 ```
 
-### Transfer the backup to another datacentre
+### Transfer the backup to another OpenStack region
 
 To start the transfer process, you first need to load new environment variables.
 
 > [!warning]
 >
-If you are transferring your backup to an OpenStack region within the same project, you will need to change the OS_REGION_NAME variable.
+If you are transferring your backup to an OpenStack region within the same project, you will need to change the variable `OS_REGION_NAME`.
 >
 
 ```bash
@@ -99,7 +99,9 @@ To transfer the backup to the new OpenStack region, use this command:
 
 ```bash
 $ openstack image create --disk-format qcow2 --container-format bare --file snap_server1.qcow snap_server1
- 
+```
+
+```text
 +------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Field            | Value                                                                                                                                                                                     |
 +------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
