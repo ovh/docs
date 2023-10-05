@@ -171,11 +171,11 @@ Once you have obtained your three keys (**AK**, **AS**, **CK**), you can sign AP
 To simplify the development of your applications, OVHcloud provides API wrappers in multiple languages.
 Using them will help you to avoid worrying about signing requests, so that you can focus on developing your application.
 
+- *Go* : <https://github.com/ovh/go-ovh>
 - *Perl* : <https://github.com/ovh/perl-ovh>
 - *Python* : <https://github.com/ovh/python-ovh>
 - *PHP* : <https://github.com/ovh/php-ovh>
 - *Node.js* : <https://github.com/ovh/node-ovh>
-- *Swift* : <https://github.com/ovh/swift-ovh>
 - *C#* : <https://github.com/ovh/csharp-ovh>
 
 Here is an example of how to use the `/me` section to manage your OVHcloud account:
