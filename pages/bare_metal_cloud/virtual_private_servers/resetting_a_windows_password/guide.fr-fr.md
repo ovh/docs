@@ -6,36 +6,36 @@ updated: 2020-11-25
 
 ## Objectif
 
-Lors de l'installation ou de la réinstallation d'un système d'exploitation Windows Server, un mot de passe vous est fourni pour l'accès administratif (compte *Administrator*).
+Lors de l'installation ou réinstallation d'un système d'exploitation Windows Server, un mot de passe administrateur vous est fourni (compte *Administrator*).
 
 Si vous avez perdu votre mot de passe administrateur, vous pouvez le réinitialiser via le mode rescue d'OVHcloud.
 
-**Ce guide vous explique comment réinitialiser le mot de passe du compte administrateur d'un système d'exploitation Windows Server en mode rescue OVHcloud.**
+**Découvrez comment réinitialiser le mot de passe du compte administrateur d'un système d'exploitation Windows Server via le mode rescue OVHcloud.**
 
 ## Prérequis
 
-- Un [VPS](https://www.ovhcloud.com/fr/vps/) ou une [instance Public Cloud](https://www.ovhcloud.com/fr/public-cloud/) dans votre compte OVHcloud
+- Disposer d'un [VPS](https://www.ovhcloud.com/fr/vps/) ou d'une [instance Public Cloud](https://www.ovhcloud.com/fr/public-cloud/) dans votre compte OVHcloud
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 
 ## En pratique
 
 ### Étape 1 : redémarrer le serveur en mode rescue
 
-Le mode Rescue doit être activé pour que le mot de passe admin puisse être modifié.
+Le mode rescue doit être activé pour que le mot de passe admininistrateur puisse être modifié.
 
-Utilisez le guide correspondant pour redémarrer votre service OVHcloud en mode rescue :
+Consultez le guide correspondant à votre service pour le redémarrer en mode rescue :
 
 - [VPS](/pages/bare_metal_cloud/virtual_private_servers/rescue)
 - [Instance Public Cloud](/pages/public_cloud/compute/put_an_instance_in_rescue_mode)
 
 ### Étape 2 : monter la partition système
 
-Connectez-vous à votre serveur via SSH. (Consultez le [guide d'introduction SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction) si nécessaire.)
+Connectez-vous à votre serveur via SSH. (Consultez notre [guide d'introduction SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction) si nécessaire.)
 
-Vous pouvez également ouvrir une connexion de serveur en utilisant [KVM (VPS)](/pages/bare_metal_cloud/virtual_private_servers/using_kvm_for_vps) ou la [console VNC (instance Public Cloud)](/pages/public_cloud/compute/first_steps_with_public_cloud_instance#accessvnc).
+Vous pouvez également ouvrir une connexion au serveur en utilisant [KVM (VPS)](/pages/bare_metal_cloud/virtual_private_servers/using_kvm_for_vps) ou la [console VNC (instance Public Cloud)](/pages/public_cloud/compute/first_steps_with_public_cloud_instance#accessvnc).
 
 Tapez les commandes suivantes pour monter le système de fichiers Windows :
- 
+
 ```bash
 ntfsfix /dev/sdb2
 ```
@@ -46,7 +46,7 @@ mount -t ntfs-3g /dev/sdb2 /mnt
 
 ### Étape 3 : effacer le mot de passe actuel
 
-Au cours de cette étape, le fichier *SAM* est modifié à l'aide d'un outil en mode rescue. Lister les utilisateurs Windows avec cette commande :
+Dans cette étape, le fichier *SAM* est modifié à l'aide d'un outil en mode rescue. Listez les utilisateurs Windows avec cette commande :
 
 ```bash
 chntpw -l /mnt/Windows/System32/config/SAM
@@ -61,7 +61,6 @@ chntpw -l /mnt/Windows/System32/config/SAM
 ```
 
 Dans cet exemple de sortie, `Administrator` est le compte d'administrateur local. Démarrez la procédure de réinitialisation avec la commande suivante. (Utilisez `admin` si `Administrator` n'existe pas.)
-
 
 ```bash
 chntpw -u Administrator /mnt/Windows/System32/config/SAM
@@ -122,18 +121,16 @@ Vous pouvez maintenant quitter le mode rescue et redémarrer le serveur. Le cas 
 - [VPS](/pages/bare_metal_cloud/virtual_private_servers/rescue)
 - [Instance Public Cloud](/pages/public_cloud/compute/put_an_instance_in_rescue_mode)
 
-
 ### Étape 5 : définir un nouveau mot de passe (KVM / VNC)
 
 > [!warning]
 >
-> Ne pas ignorer cette étape. Un compte Administrateur non protégé représente un risque de sécurité important.
+> N'ignorez pas cette étape. Un compte Administrateur non protégé représente un risque de sécurité important.
 >
 
 Connectez-vous à votre serveur et entrez `cmd` dans la barre de recherche pour ouvrir l'invite de commandes.
 
 Définissez le mot de passe de l'utilisateur actuel (« Administrator ») :
-
 
 ```powershell
 net user Administrator *
