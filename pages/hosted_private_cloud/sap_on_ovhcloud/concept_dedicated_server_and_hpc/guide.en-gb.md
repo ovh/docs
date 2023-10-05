@@ -31,7 +31,7 @@ The SAP HANA database is hosted on a dedicated server of the SAP HANA on Bare Me
 
 Deploying a SAP HANA database on a dedicated server offers a [cost-effective infrastructure](https://www.ovhcloud.com/en-gb/bare-metal/uc-sap-hana/) that meets compliance and regulatory requirements.
 
-In order to reduce the RPO and the RTO in a single OVHcloud location, you can add another SAP HANA database on a second dedicated server and configure SAP HANA System Replication between these databases. To discover all supported replication mode by SAP HAHA, please refer to the SAP official documentation available on the [SAP Help Portal](https://help.sap.com/docs/SAP_HANA_PLATFORM/6b94445c94ae495c83a19646e7c3fd56/86267e1ed56940bb8e4a45557cee0e43.html?locale=en-US). In this context, you could use a replication SYNC mode.
+In order to reduce the RPO and the RTO in a single OVHcloud location, you can add another SAP HANA database on a second dedicated server and configure SAP HANA System Replication between these databases. To discover all supported replication modes by SAP HAHA, please refer to the SAP official documentation available on the [SAP Help Portal](https://help.sap.com/docs/SAP_HANA_PLATFORM/6b94445c94ae495c83a19646e7c3fd56/86267e1ed56940bb8e4a45557cee0e43.html?locale=en-US). In this context, you could use a replication SYNC mode.
 
 This architecture prevents outages caused by hardware incidents on your SAP HANA database hosted in a single OVHcloud location.
 
@@ -77,7 +77,7 @@ To learn how to install a Veeam Enterprise Plus server in your VMware on OVHclou
 
 Some data needs to be stored and backed up with long retention for legal and/or technical reasons, ideally in a dedicated storage space with limited access once the data has been written. OVHcloud offers a Cold Archive solution for this application, featuring the highest security for your data by design.
 
-For more information, please refer to the [OVHcloud documentation](https://www.ovhcloud.com/en/public-cloud/cold-archive/).
+For more information, please refer to the [OVHcloud documentation](https://www.ovhcloud.com/en-gb/public-cloud/cold-archive/).
 
 ### 6 - SAP Support connection
 
@@ -141,7 +141,7 @@ To guarantee the connection continuity with the SAP Support, we recommend config
 - [Setting up Zerto Virtual Replication between two OVHcloud datacenters](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/zerto_virtual_replication_as_a_service)
 - [Setting up Veeam Backup & Replication](/pages/storage_and_backup/backup_and_disaster_recovery_solutions/veeam/veeam_veeam_backup_replication)
 - [Installing SAProuter](https://support.sap.com/en/tools/connectivity-tools/saprouter/install-saprouter.html)
-- [Deploy an SAProuter with NSX](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook_vmware_saprouter) to set a SAProuter with VMware on OVHcloud and NSX.
+- [Deploy an SAProuter with NSX](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook_vmware_saprouter) to set a SAProuter with VMware on OVHcloud and NSX
 - [Install and use OVHcloud Backint Agent for SAP HANA](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook_install_ovhcloud_backint_agent)
 - [Use OVHcloud Backint Agent with several S3 Object Storage buckets](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook_configure_ovhcloud_backint_agent_several_buckets)
 
