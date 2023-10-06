@@ -24,7 +24,7 @@ Pour identifier votre utilisation de la fonctionnalité NSX-v dans votre environ
 
 #### Je n'utilise aucune des fonctionnalités de NSX-v
 
-Si vous n'utilisez aucune des fonctionnalités ci-dessus, vous pourrez désactiver NSX-v. Vous serez notifié lorsque le processus de désactivation sera disponible.
+Si vous n'utilisez aucune des fonctionnalités ci-dessus, nous désactiverons NSX-V le 1 Décembre 2023. Vous serez notifié lorsque le processus de désactivation sera disponible.
 
 Quelle que soit votre gamme Hosted Private Cloud, si vous souhaitez désactiver NSX-v, vous n'aurez pas à effectuer la migration vers un nouveau Datacenter. Vous pourrez conserver vos ressources actuelles.
 
