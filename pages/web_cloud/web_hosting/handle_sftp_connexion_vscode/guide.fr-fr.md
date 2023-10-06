@@ -1,26 +1,45 @@
 ---
-title: "Administrer son site internet à distance avec VSCode"
-excerpt: "Administrer le site internet de son hébergement web à distance sur VSCode grâce à une extension SFTP"
+title: "Administrer son site internet à distance avec Visual Studio Code"
+excerpt: "Administrer le site internet de son hébergement web à distance sur Visual Studio Code grâce à une extension SFTP"
 updated: 2023-09-22
 ---
 
 ## Objectif
 
-Si vous disposez d’un hébergement web OVHcloud, vous pouvez accéder à un espace de stockage qui vous permet de gérer votre site internet. L’accès à cet espace de stockage est possible à distance, via SFTP. Même s’il est possible de se connecter via un terminal, vous pouvez également utiliser l’IDE (environnement de développement intégré) Visual Studio Code pour gérer à distance les dossiers et fichiers de votre site web. 
+Si vous disposez d’un hébergement web OVHcloud, vous pouvez accéder à un espace de stockage qui vous permet de gérer votre site internet. L’accès à cet espace de stockage est possible à distance, via SFTP. Même s’il est possible de se connecter via un terminal, vous pouvez également utiliser l’IDE (environnement de développement intégré) Visual Studio Code pour gérer à distance les dossiers et fichiers de votre site web.
 
-**Ce guide vous explique comment administrer à distance votre site internet via VSCode.**
+> [!warning]
+>
+>
+Si vous souhaitez administrer votre site web à distance sans utiliser Visual Studio Code, vous pouvez le faire avec un client FTP comme FileZilla. Ce [guide](https://help.ovhcloud.com/csm/fr-web-hosting-filezilla?id=kb_article_view&sysparm_article=KB0052749){.external} vous expliquera comment utiliser FileZilla avec votre hébergement OVHcloud. Si vous souhaitez vous connecter à votre site web en SSH, lisez ce [guide](https://help.ovhcloud.com/csm/fr-web-hosting-ssh-access?id=kb_article_view&sysparm_article=KB0053116){.external}.
+
+>
+
+**Ce guide vous explique comment administrer à distance votre site internet via Visual Studio Code.**
   
 ## Prérequis
-- Disposer d'une offre d'[hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/){.external} bénéficiant d'un accès SSH
+- Disposer d'une offre d'[hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/){.external}
 
-- Avoir installé VSCode sur sa machine
+- Avoir installé Visual Studio Code sur sa machine
 
 
 ## En pratique
   
-### Installer l’extension SFTP pour VSCode
+### Installer l’extension SFTP pour Visual Studio Code
 
-Après avoir démarré VSCode, sélectionnez `Ctrl + Shift + X` pour chercher une extension. En haut à gauche de l’interface, entrez le nom de l’extension « SFTP/FTP sync » de Natizyskunk et cliquez sur  `Install`{.action}.
+> [!warning]
+>
+>
+Dans ce guide, nous choisissons arbitrairement l'extension « SFTP/FTP sync » de Natizyskunk. Bien sûr, vous êtes libre d'en choisir une autre. Gardez à l'esprit qu'une extension est un logiciel souvent créé par un développeur indépendant, lequel peut stopper à tout moment le développement de l'extension.
+>
+
+Après avoir démarré Visual Studio Code, dirigez-vous dans le menu horizontal en haut de l'interface, et cliquez sur `View`{.action} puis `Extensions`{.action}.
+
+![hosting](images/view_extensions.png){.thumbnail}
+
+Pour effectuer la même action avec le raccourci clavier, sélectionnez `Ctrl + Shift + X` si vous êtes sur Windows, `Maj + Command + X` si vous êtes sur Mac.
+
+En haut à gauche de l’interface, entrez le nom de l’extension « SFTP/FTP sync » de Natizyskunk et cliquez sur  `Install`{.action}.
 
 ![hosting](images/extensions.png){.thumbnail}
 
@@ -28,13 +47,17 @@ Il est également possible d’installer l’[extension](https://marketplace.vis
   
 ### Initialiser le projet en local
 
-Pour synchroniser les fichiers de votre site web présents sur l’hébergement web avec votre machine, vous devez indiquer à VSCode l’emplacement de votre projet en local. Pour cela, créez un dossier à l’emplacement souhaité.
+Pour synchroniser les fichiers de votre site web présents sur l’hébergement web avec votre machine, vous devez indiquer à Visual Studio Code l’emplacement de votre projet en local. Pour cela, créez un dossier à l’emplacement souhaité.
 
-Retournez dans VSCode, sélectionnez `Ctrl + Shift + P` et entrez la commande suivante : `SFTP: Config`.
+Retournez dans Visual Studio Code et, dans le menu horizontal en haut de l'interface, cliquez sur `View`{.action} puis `Command Palette`{.action} pour afficher l'éditeur de commandes.
+
+Pour effectuer la même action avec le raccourci clavier, sélectionnez `Ctrl + Shift + P` si vous êtes sur Windows, `Maj + Command + P` si vous êtes sur Mac.
+
+Entrez la commande suivante : `SFTP: Config`.
 
 ![hosting](images/SFTP_config.png){.thumbnail}
 
-Grâce à cette commande, VSCode va créer le fichier de configuration sftp.json à la racine du dossier local précédemment créé. Mais comme VSCode ne connait pas encore l’emplacement de votre projet en local, le message suivant devrait apparaitre :
+Grâce à cette commande, Visual Studio Code va créer le fichier de configuration sftp.json à la racine du dossier local précédemment créé. Mais comme Visual Studio Code ne connait pas encore l’emplacement de votre projet en local, le message suivant devrait apparaitre :
 
 ![hosting](images/SFTP_folder.png){.thumbnail}
 
@@ -42,7 +65,7 @@ Cliquez sur `Open Folder`{.action}, dirigez-vous à l’emplacement du dossier l
 
 ![hosting](images/select_folder.png){.thumbnail}
 
-Dans VSCode, entrez à nouveau la commande `SFTP: Config`. Cette fois-ci, un fichier de configuration nommé sftp.json apparaît alors dans VSCode.
+Dans Visual Studio Code, entrez à nouveau la commande `SFTP: Config`. Cette fois-ci, un fichier de configuration nommé sftp.json apparaît alors dans Visual Studio Code.
 
 ![hosting](images/sftp_json_default.png){.thumbnail}
 
@@ -53,7 +76,10 @@ Ce fichier est présent dans le dossier .vscode, lui-même positionné à la rac
 Avant de travailler sur votre projet, vous devez le télécharger dans votre dossier local précédemment créé. Mais dans un premier temps, il vous faut configurer convenablement le fichier «sftp.json». Les informations utiles sont présentes dans votre [espace client OVHcloud](https://www.ovh.com/manager/#/hub){.external}. Dans la partie `Web Cloud`{.action}, cliquez sur `Hébergements`{.action}. Sélectionnez l'hébergement concerné, puis cliquez sur l'onglet `FTP - SSH`{.action}.
 
 Dans le fichier «sftp.json», rentrez les valeurs pour les entrées suivantes :
-- name : repérez le aux deux emplacements surlignés en orange
+
+#### name 
+
+Repérez le aux deux emplacements surlignés en orange.
 
 ![hosting](images/hosting_name.png){.thumbnail}
 
@@ -62,18 +88,26 @@ Dans le fichier «sftp.json», rentrez les valeurs pour les entrées suivantes :
 > Notez bien que la valeur de `name` est arbitraire, et que vous pouvez attribuer la valeur que vous souhaitez. Cependant, si vous configurez plusieurs fichiers «sftp.json», il est préférable d'entrer les valeurs indiqués ci-dessus pour des raions de cohérence et de simplicité.
 >
 
-- host : toujours dans l’onglet `FTP-SSH`{.action}, repérez-le sous la mention Serveur `FTP et SFTP`{.action}
+#### host
+
+Toujours dans l’onglet `FTP-SSH`{.action}, repérez-le sous la mention Serveur `FTP et SFTP`{.action}.
 
 ![hosting](images/ftp_host_name.png){.thumbnail}
 
-- username : repérez le dans la colonne `Login`{.action} du tableau
-- remotePath : repérez-le sous la mention `chemin du répertoire home`{.action}. Cependant, si vous possédez plusieurs utilisateurs, le chemin indiqué n’est peut-être pas exact. À la place, essayez `home/<username>`
+#### username
 
-Enfin, n'oubliez pas d'ajouter cette ligne dans le fichier «sftp.json» :`"openSsh": true`
+Repérez le dans la colonne `Login`{.action} du tableau.
+
+#### remotePath
+
+Repérez-le sous la mention `chemin du répertoire home`{.action}. Cependant, si vous possédez plusieurs utilisateurs, le chemin indiqué n’est peut-être pas exact. À la place, essayez `home/<username>`.
+
+
+Enfin, n'oubliez pas d'ajouter cette ligne dans le fichier «sftp.json» : `"openSsh": true`
 
 > [!primary]
 >
-> Pour ne pas avoir à entrer votre mot de passe après chaque commande dans VSCode, vous pouvez l’enregistrer une fois pour toute dans le fichier «sftp.json» en ajoutant la ligne : `"password": "<password>"`
+> Pour ne pas avoir à entrer votre mot de passe après chaque commande dans Visual Studio Code, vous pouvez l’enregistrer une fois pour toute dans le fichier «sftp.json» en ajoutant la ligne : `"password": "<password>"`
 >
 
 
@@ -82,8 +116,8 @@ Voici un exemple de fichier «sftp.json» :
 ```json
 
 {
-    "name": "cicdwee.cluster026.hosting.ovh.net",
-    "host": "ftp.cluster026.hosting.ovh.net",
+    "name": "<name>",
+    "host": "<host>",
     "protocol": "sftp",
     "port": 22,
     "username": "myusername",
@@ -96,17 +130,17 @@ Voici un exemple de fichier «sftp.json» :
 
 ```
 
-Pour plus de détail concernant les options de sftp.json, reportez vous au [wiki](https://github.com/Natizyskunk/vscode-sftp/wiki/configuration){.external} du projet.
+Pour plus de détail concernant les options de sftp.json, reportez-vous au [wiki](https://github.com/Natizyskunk/vscode-sftp/wiki/configuration){.external} du projet.
 
 ### Télécharger le projet en local
 
-Une fois le fichier «sftp.json» configuré, vous pouvez télécharger le contenu de votre projet afin de récupérer l’ensemble des dossiers et fichiers de votre site web. Pour ce faire, allez dans VSCode et entrez la commande suivante : `SFTP: Download Project`.
+Une fois le fichier «sftp.json» configuré, vous pouvez télécharger le contenu de votre projet afin de récupérer l’ensemble des dossiers et fichiers de votre site web. Pour ce faire, allez dans Visual Studio Code et entrez la commande suivante : `SFTP: Download Project`.
 
-VSCode vous demande alors de sélectionner le dossier que vous souhaitez télécharger sur votre hébergement web. Entrez la valeur que vous avez indiqué pour l’entrée `name` du fichier «sftp.json» (`cicdwee.cluster026.hosting.ovh.net` dans notre exemple).
+Visual Studio Code vous demande alors de sélectionner le dossier que vous souhaitez télécharger sur votre hébergement web. Entrez la valeur que vous avez indiqué pour l’entrée `name` du fichier «sftp.json».
 
 ![hosting](images/download_project.png){.thumbnail}
 
-S'il vous est demandé, entrez ensuite le mot de passe lié à l’utilisateur que vous avez indiqué dans le fichier «sftp.json», puis validez. Le téléchargement se lance. Une fois celui-ci achevé, vous pouvez voir l’ensemble des dossiers et fichiers de votre projet dans l’explorateur de fichiers, à gauche de l’interface VSCode.
+S'il vous est demandé, entrez ensuite le mot de passe lié à l’utilisateur que vous avez indiqué dans le fichier «sftp.json», puis validez. Le téléchargement se lance. Une fois celui-ci achevé, vous pouvez voir l’ensemble des dossiers et fichiers de votre projet dans l’explorateur de fichiers, à gauche de l’interface Visual Studio Code.
 
 ![hosting](images/explorer.png){.thumbnail}
 
@@ -118,18 +152,30 @@ S'il vous est demandé, entrez ensuite le mot de passe lié à l’utilisateur q
 
 ### Effectuer des modifications sur les fichiers
 
-Maintenant que le projet est téléchargé en local sur votre machine, vous pouvez facilement éditer, ajouter ou supprimer des fichiers sur VSCode.
+Maintenant que le projet est téléchargé en local sur votre machine, vous pouvez facilement éditer, ajouter ou supprimer des fichiers sur Visual Studio Code.
 
 Si vous souhaitez que vos modifications locales soient synchronisées chaque fois que vous sauvegardez un fichier, ajoutez cette ligne dans le fichier sftp.json : ` "uploadOnSave": true`
 
 Gardez la valeur à false dans le cas contraire.
 
-À présent, vous êtes capable d'accéder au site internet de votre hébérgement web via VSCode. Vous pouvez désormais modifier, ajouter et supprimer des fichiers, et tout ça à distance.
+Jusqu'à maintenant, nous avons effectué deux commandes : `SFTP: Config` et `SFTP: Download Project`. Bien évidemment, il existe de nombreuses autres commandes que vous pouvez voir en tappant `SFTP:` dans l'éditeur de commande.
+
+![hosting](images/list_commands.png){.thumbnail}
+
+Retrouvez la liste des commandes [ici](https://github.com/Natizyskunk/vscode-sftp/wiki/Commands){.external}.
+
+À présent, vous êtes capable d'accéder au site internet de votre hébérgement web via Visual Studio Code. Vous pouvez désormais modifier, ajouter et supprimer des fichiers, tout ça à distance.
 
 ## Aller plus loin
 
-Gardez à l'esprit que ce guide présente une manière rapide et efficace pour administrer votre projet à distance. Idéal pour des petits projets ou une première expérience, cette solution présente des limites. En effet, si vous modifiez plusieurs fichiers et que ceux-ci sont synchronisés sur votre hébérgement, il vous est impossible de voir l'historique de vos modifications pour éventuellement revenir dessus ou rattraper une erreur.
-Pour ce faire, vous devez installer ou brancher sur VSCode des outils tel que Git, Github ou encore Github Action qui améliorerons grandement l'historisation et l'intégration des changements sur votre site web. Pour plus d'information à ce sujet, suivez ce [guide].
-<!--- TODO mettre à jour le lien quand dispo -->
+Gardez à l'esprit que ce guide présente une manière rapide et efficace pour administrer votre projet à distance sur Visual Studio Code. Idéal pour des petits projets ou une première expérience, cette solution présente des limites. En effet, si vous modifiez plusieurs fichiers et que ceux-ci sont synchronisés sur votre hébérgement web, il vous est impossible de voir l'historique de vos modifications pour éventuellement revenir dessus ou rattraper une erreur.
+<!--- Pour ce faire, vous devez installer ou brancher des outils qui améliorerons grandement l'historisation et l'intégration des changements sur votre site web. Pour plus d'information à ce sujet, suivez ce [guide].
+ TODO mettre à jour le lien quand dispo -->
+
+[Se connecter à l'espace de stockage FTP de son hébergement web](https://help.ovhcloud.com/csm/fr-web-hosting-ftp-storage-connection?id=kb_article_view&sysparm_article=KB0052702)
+
+[Utiliser FileZilla avec votre hébergement OVHcloud](https://help.ovhcloud.com/csm/fr-web-hosting-filezilla?id=kb_article_view&sysparm_article=KB0052749)
+
+[Utiliser l'accès SSH de son hébergement web](https://help.ovhcloud.com/csm/fr-web-hosting-ssh-access?id=kb_article_view&sysparm_article=KB0053116). N'oubliez pas que pour utiliser le SSH, vous devez disposer d'une [offre d'hébergement Pro ou Performance](https://www.ovhcloud.com/fr/web-hosting/){.external}.
 
 Échangez avec notre communauté d’utilisateurs sur <https://community.ovh.com/>
