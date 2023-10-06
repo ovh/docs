@@ -22,8 +22,8 @@ Check out [Zerto between two OVHcloud datacenters](/pages/hosted_private_cloud/h
 
 >[!warning]
 >
-> OVHcloud supports the N-1 version of Zerto
-> You can find the different versions available here : <https://help.zerto.com/kb/000004585>.
+> OVHcloud supports the N-1 version of Zerto.
+> You can find the different versions available here: <https://help.zerto.com/kb/000004585>.
 >
 
 ### Solution overview
