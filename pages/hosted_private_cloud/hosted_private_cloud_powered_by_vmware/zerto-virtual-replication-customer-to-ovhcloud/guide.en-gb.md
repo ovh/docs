@@ -20,6 +20,12 @@ Check out [Zerto between two OVHcloud datacenters](/pages/hosted_private_cloud/h
 - VRAs (Virtual Replication Appliances) on both sides that are able to connect to the counterpart on TCP ports 4007 and 4008
 - Zerto administration consoles or ZVMs (Zerto Virtual Managers) that are able to connect to the counterpart on TCP port 9081
 
+>[!warning]
+>
+> OVHcloud supports the N-1 version of Zerto.
+> You can find the different versions available here: <https://help.zerto.com/kb/000004585>.
+>
+
 ### Solution overview
 
 ![](images/image-EN-1.png){.thumbnail}

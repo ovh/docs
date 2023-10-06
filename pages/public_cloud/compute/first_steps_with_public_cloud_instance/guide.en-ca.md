@@ -118,7 +118,7 @@ This action will permanently delete the instance, as well as all of the data sto
 
 Confirm the request in the popup window.
 
-### Accessing the VNC console
+### Accessing the VNC console <a name="accessvnc"></a>
 
 Click on `Instances`{.action} the left-hand menu. On the instance management page, click on the name of the instance in the table.
 

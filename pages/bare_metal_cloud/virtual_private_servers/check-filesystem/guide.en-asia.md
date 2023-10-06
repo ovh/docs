@@ -21,7 +21,7 @@ updated: 2023-09-20
 
 ## Instructions
 
-#### GNU/Linux VPS
+### GNU/Linux VPS
 
 Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia) and initiate a server reboot in rescue mode. Follow our [rescue mode guide](/pages/bare_metal_cloud/virtual_private_servers/rescue) if necessary.
 

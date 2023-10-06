@@ -1,14 +1,12 @@
 ---
 title: "SAP HANA on Bare Metal and SAP Application Servers on VMware on OVHcloud"
 excerpt: "This concept page demonstrates a hybrid architecture using a HGR-SAP dedicated server and VMware on OVHcloud"
-updated: 2023-03-15
+updated: 2023-09-28
 ---
-
-**Last updated 15th March 2023**
 
 ## Objective
 
-The following concept allows you to build an architecture with a SAP HANA database up to 1.5 TB, and takes advantage of all VMware on OVHcloud features (templates, Zerto, NSX, DRS, Fault Tolerance, High Availability) for your SAP Application Servers in a single OVHcloud location or multiple OVHcloud locations.
+The following concept allows you to build an architecture with a SAP HANA database up to 1.5 TB, and takes advantage of all VMware on OVHcloud features (OVA templates, Zerto, NSX, DRS, Fault Tolerance, High Availability) for your SAP Application Servers in a single OVHcloud location or multiple OVHcloud locations.
 
 ![schema](images/concept-hybrid.png){.thumbnail}
 
@@ -21,27 +19,23 @@ The following concept allows you to build an architecture with a SAP HANA databa
 
 ## Concept elements
 
-### Network connectivity
+### 1 - Network connectivity
 
 To guarantee the quality of communication between your local site and your SAP infrastructure hosted at OVHcloud, we recommend using OVHcloud Connect. This solution provides you with a secure and high-performance link between your offices and OVHcloud. To get more information, please refer to the [OVHcloud Connect documentation](https://www.ovhcloud.com/en-ie/network/ovhcloud-connect/).
 
-Instead of using OVHcloud Connect, a point-to-point VPN can also be deployed with NSX Edge. To learn how to configure an NSX Edge Gateway VPN with OVHcloud, please refer to [our documentation](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx_configurer_un_vpn_via_une_gateway_edge).
+Instead of using OVHcloud Connect, a point-to-point VPN can also be deployed with NSX. To learn how to configure an NSX Gateway VPN with OVHcloud, please refer to [our documentation](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx_configurer_un_vpn_via_une_gateway_edge).
 
-A prerequisite for updating your servers and for SAP Support access is to configure an Additional IP. A public IP subnet will be used as outbound link on your NSX Edge. Find more information in the [Additional IP documentation](/pages/public_cloud/public_cloud_network_services/additional-ip-buy).
-
-### SAP HANA database
+### 2 - SAP HANA database
 
 The SAP HANA database is hosted on a dedicated server of the SAP HANA on Bare Metal server range (references HGR-SAP-1/2/3). To know how to deploy a SAP HANA database on an OVHcloud dedicated server, please refer to [our documentation](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook_install_sles_sap_hana_dedicated_server).
 
-To ensure the recovery of the SAP HANA configuration (INI files), we suggest to set the value `true` for the parameter `include_configuration_backup`. This parameter enables the backup of all settings stored in INI files during the data backup of the SAP HANA database.
-
 Deploying a SAP HANA database on a dedicated server offers a [cost-effective infrastructure](https://www.ovhcloud.com/en-ie/bare-metal/uc-sap-hana/) that meets compliance and regulatory requirements.
 
-In order to reduce the RPO and the RTO in a single OVHcloud location, you can add another SAP HANA database on a second dedicated server and configure SAP HANA System Replication between these databases. Please refer to the SAP official documentation available on the [SAP Help Portal](https://help.sap.com/docs/SAP_HANA_PLATFORM/6b94445c94ae495c83a19646e7c3fd56/86267e1ed56940bb8e4a45557cee0e43.html?locale=en-US). In this context, you could use a replication SYNC mode.
+In order to reduce the RPO and the RTO in a single OVHcloud location, you can add another SAP HANA database on a second dedicated server and configure SAP HANA System Replication between these databases. To discover all supported replication modes by SAP HAHA, please refer to the SAP official documentation available on the [SAP Help Portal](https://help.sap.com/docs/SAP_HANA_PLATFORM/6b94445c94ae495c83a19646e7c3fd56/86267e1ed56940bb8e4a45557cee0e43.html?locale=en-US). In this context, you could use a replication SYNC mode.
 
 This architecture prevents outages caused by hardware incidents on your SAP HANA database hosted in a single OVHcloud location.
 
-### SAP Application Servers
+### 3 - SAP Application Servers
 
 The SAP Application Servers infrastructure is hosted on VMware on OVHcloud. We advise to take into consideration the [SAP Note 2161991](https://launchpad.support.sap.com/#/notes/2161991), especially chapter 2 and 3, and the [SAP Note 2015392](https://launchpad.support.sap.com/#/notes/2015392), to set a compliant configuration between SAP and virtual machines.
 
@@ -52,17 +46,22 @@ For SAP Application Servers which do not host a critical service, we recommend e
 
 The vSphere Distributed Resource Scheduler can also be activated with VM/Host rules to avoid running all SAP Application Servers on the same ESXi host.
 
-### Backup infrastructure
+### 4 - Backup infrastructure
 
 We recommend using a S3 Object Storage bucket in a different OVHcloud location from the one on which your workload runs, to protect yourself from a major outage on the primary OVHcloud location.
 
-#### SAP HANA database
+#### 4.1 - SAP HANA database
 
-OVHcloud will soon provide an OVHcloud Backint Agent for SAP HANA certified to backup your SAP HANA database to a S3 Object Storage on OVHcloud.
+OVHcloud provides OVHcloud Backint Agent for SAP HANA to backup your SAP HANA database to a S3 Object Storage on OVHcloud.
 
-This Backint Agent allows you to take advantage of an S3 Object Storage, like retention policy or immutable policy.
+This Backint Agent allows you to take advantage of an S3 Object Storage, like retention policy or immutable policy. To know more about OVHcloud Backint Agent for SAP HANA, we advise you to take consideration of our guides:
 
-#### File systems
+- [Install and use OVHcloud Backint Agent for SAP HANA](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook_install_ovhcloud_backint_agent)
+- [Use OVHcloud Backint Agent with several S3 Object Storage buckets](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook_configure_ovhcloud_backint_agent_several_buckets)
+
+To ensure the recovery of the SAP HANA configuration (INI files), we suggest to set the value `true` for the parameter `include_configuration_backup`. This parameter enables the backup of all settings stored in INI files during the data backup of the SAP HANA database.
+
+#### 4.2 - File systems
 
 To protect the file systems on which important SAP files are stored, a cost-effective solution can be deployed with a daily running of a script which copies the content of these sensible file systems to a S3 Object Storage on OVHcloud.
 
@@ -74,29 +73,31 @@ Veeam Enterprise Plus allows you to back up and restore snapshots of your virtua
 
 To learn how to install a Veeam Enterprise Plus server in your VMware on OVHcloud solution, please refer to the [OVHcloud documentation](/pages/storage_and_backup/backup_and_disaster_recovery_solutions/veeam/veeam_veeam_backup_replication).
 
-### Long-term and archive storage
+### 5 - Long-term and archive storage
 
 Some data needs to be stored and backed up with long retention for legal and/or technical reasons, ideally in a dedicated storage space with limited access once the data has been written. OVHcloud offers a Cold Archive solution for this application, featuring the highest security for your data by design.
 
-For more information, please refer to the [OVHcloud documentation](https://www.ovhcloud.com/en/public-cloud/cold-archive/).
+For more information, please refer to the [OVHcloud documentation](https://www.ovhcloud.com/en-ie/public-cloud/cold-archive/).
 
-### SAP Support connection
+### 6 - SAP Support connection
 
-To allow the connection from SAP Support to your SAP landscape on OVHcloud, we advise you to deploy a virtual machine within your VMware on OVHcloud solution, configure an Additional IP and attach it to NSX Edge. Then install the SAProuter service on this virtual machine, according to the [official SAProuter documentation by SAP Support](https://support.sap.com/en/tools/connectivity-tools/saprouter/install-saprouter.html).
+About the connection from SAP Support to your SAP landscape on OVHcloud, we advise you to deploy a virtual machine within your VMware on OVHcloud solution, configure an Additional IP and attach it to NSX. Then install the SAProuter service on this virtual machine, according to the [official SAProuter documentation by SAP Support](https://support.sap.com/en/tools/connectivity-tools/saprouter/install-saprouter.html).
 
-Configure your NSX Edge to route the ingress traffic to your SAProuter.
+Configure your NSX to route the ingress traffic to your SAProuter.
 
 As this virtual machine is exposed to the Internet, adapt ingress firewall rules to only allow the connection from the SAP IP public range to your SAProuter server. Allow communication from your new SAProuter to your SAP infrastructure for only the needed ports/protocols. All of this information is available on the [SAP Support pages](https://support.sap.com/en/tools/connectivity-tools/saprouter/install-saprouter.html).
 
-### Dual OVHcloud location (optional)
+We propose you a [guide](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook_vmware_saprouter) to set a SAProuter with VMware on OVHcloud and NSX.
+
+### 7 - Dual OVHcloud location (optional)
 
 To eliminate the risk of losing a single OVHcloud location deployment, consider adding a secondary OVHcloud location.
 
-#### Network connectivity
+#### 7.1 - Network connectivity
 
-As with the primary OVHcloud location, we recommend using OVHcloud Connect. If this solution is not suitable for you, a point-to-point VPN can be deployed with NSX Edge for the second OVHcloud location.
+As with the primary OVHcloud location, we recommend using OVHcloud Connect. If this solution is not suitable for you, a point-to-point VPN can be deployed with NSX for the second OVHcloud location.
 
-#### SAP HANA database
+#### 7.2 - SAP HANA database
 
 The SAP HANA System Replication called SAP HSR is used to replicate the data and configuration of OVHcloud location 1 (primary OVHcloud location) to OVHcloud location 2 (secondary OVHcloud location). This replication allows you to secure your data in another SAP HANA database and thus achieve the lowest RPO possible.
 
@@ -104,6 +105,7 @@ To configure a SAP HANA replication, please refer to the official SAP documentat
 
 > [!warning]
 > If you trigger a takeover to another OVHcloud location, you should switch the SAP Application Servers too, to guarantee the performance between the SAP Application Servers and the SAP HANA database.
+>
 
 It is also possible to add another SAP HANA database in the primary OVHcloud location on a second dedicated server and thus minimise the RPO and RTO in the event of a hardware incident in the primary OVHcloud location.
 
@@ -113,7 +115,7 @@ SAP HANA1<sub>(OVHcloud location 1)</sub> -> SAP HANA2<sub>(OVHcloud location 1)
 
 To learn how to configure this replication, please refer to the [SAP Help Portal](https://help.sap.com/docs/SAP_HANA_PLATFORM/6b94445c94ae495c83a19646e7c3fd56/ca6f4c62c45b4c85a109c7faf62881fc.html?locale=en-US).
 
-#### SAP Application Servers
+#### 7.3 - SAP Application Servers
 
 To secure your infrastructure in the event of a major incident in your primary OVHcloud location, we advise you to enable the feature named Zerto for your VMware on OVHcloud solution, allowing you to replicate your virtual machines to another OVHcloud location of another VMware on OVHcloud service. With this feature, you secure your SAP Application Servers in another OVHcloud location with a synchronous replication, and you reduce the RTO and the RPO if you have to switch to your secondary OVHcloud location.
 
@@ -121,24 +123,27 @@ To know how to enable this feature, please refer to the [OVHcloud documentation]
 
 > [!warning]
 > If you trigger a switch to the secondary OVHcloud location through Zerto, the SAP HANA database has to be switched too, to ensure the performance between the SAP Application Servers and the SAP HANA database.
+>
 
-#### Backup infrastructure
+#### 7.4 - Backup infrastructure
 
-As mentioned in the beginning of this guide, we recommend using an S3 Object Storage bucket on a different OVHcloud location from the one on which your workload runs, to avoid a major outage on the primary location. A cross backup is safer for your business data.
+As mentioned previously, we recommend using an S3 Object Storage bucket on a different OVHcloud location from the one on which your workload runs, to avoid a major outage on the primary location. A cross backup is safer for your business data.
 
-#### SAP Support connection
+#### 7.5 - SAP Support connection
 
 To guarantee the connection continuity with the SAP Support, we recommend configuring a second SAProuter with a different public IP address in the second OVHcloud location. If your Disaster Recovery Plan is triggered, and if the SAP Support has to connect to your SAP systems, only the public IP address in the SAP Support LaunchPad should be updated to recover the connection.
 
 ## Go further
 
 - [SAP HANA Administration Guide for SAP HANA Platform](https://help.sap.com/docs/SAP_HANA_PLATFORM/6b94445c94ae495c83a19646e7c3fd56/86267e1ed56940bb8e4a45557cee0e43.html?locale=en-US)
-- [Add flexibility to your applications with Additional IP](https://www.ovhcloud.com/en-ie/network/additional-ip/)
 - [2161991 - VMware vSphere configuration guideline](https://launchpad.support.sap.com/#/notes/2161991)
 - [2015392 - VMware recommendations for latency-sensitive SAP applications](https://launchpad.support.sap.com/#/notes/2015392)
 - [Setting up Zerto Virtual Replication between two OVHcloud datacenters](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/zerto_virtual_replication_as_a_service)
 - [Setting up Veeam Backup & Replication](/pages/storage_and_backup/backup_and_disaster_recovery_solutions/veeam/veeam_veeam_backup_replication)
 - [Installing SAProuter](https://support.sap.com/en/tools/connectivity-tools/saprouter/install-saprouter.html)
+- [Deploy an SAProuter with NSX](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook_vmware_saprouter) to set a SAProuter with VMware on OVHcloud and NSX
+- [Install and use OVHcloud Backint Agent for SAP HANA](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook_install_ovhcloud_backint_agent)
+- [Use OVHcloud Backint Agent with several S3 Object Storage buckets](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook_configure_ovhcloud_backint_agent_several_buckets)
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-ie/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
