@@ -19,6 +19,12 @@ Consultez notre guide « [Zerto entre deux datacenters OVHcloud](/pages/hosted_p
 - Les machines de réplication Zerto (VRA : Virtual Réplication Appliance) coté client et coté OVHCloud doivent pouvoir échanger entre elles sur les ports TCP 4007 et 4008
 - Les machines d’administration Zerto (ZVM : Zerto Virtual Manager) coté client et coté OVHCloud doivent pouvoir échanger entre elles sur les ports TCP 9081
 
+>[!warning]
+>
+> OVHcloud supporte les versions N-1 de Zerto
+> Vous pouvez retrouver les différentes versions disponibles ici : <https://help.zerto.com/kb/000004585>.
+>
+
 ## En pratique
 
 ### Présentation de l'architecture de la solution
