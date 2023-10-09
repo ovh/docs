@@ -1,5 +1,5 @@
 ---
-title: Politique de réversibilité da la solution VMware on OVHcloud sous la qualification SecNumCloud
+title: Politique de réversibilité pour la solution VMware on OVHcloud sous la qualification SecNumCloud
 updated: 2023-09-28
 ---
 
