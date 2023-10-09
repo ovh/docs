@@ -123,7 +123,7 @@ Avant de nous contacter, vous devez réunir les éléments justificatifs suivant
 Une fois vos justificatifs réunis, contactez le support OVHcloud par téléphone:
 
 - **Canada** : 1-855-684-5463.
-- **France**: 1007 (composez le 0033 9 72 10 10 07 depuis une ligne en dehors de la France).
+- **France** : 1007 (composez le 0033 9 72 10 10 07 depuis une ligne en dehors de la France).
 
 > [!warning]
 >
