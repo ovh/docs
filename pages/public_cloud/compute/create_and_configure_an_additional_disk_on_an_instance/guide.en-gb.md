@@ -22,6 +22,7 @@ This can be useful in cases where:
 - Administrative (root) access to your instance via SSH (Linux) or RDP (Windows)
 
 > [!warning]
+>
 > This feature is currently not available for Metal instances.
 >
 
@@ -54,7 +55,8 @@ In the popup window, choose an instance from the list and click on `Confirm`{.ac
 The process of attaching the disk to your instance will now begin. This may take a few minutes to complete.
 
 > [!warning]
-Make sure to not leave the current page in your OVHcloud Control Panel while the disk is being attached. This might interrupt the process.
+>
+> Make sure to not leave the current page in your OVHcloud Control Panel while the disk is being attached. This might interrupt the process.
 >
 
 ### Configuring the new disk
@@ -66,7 +68,7 @@ The examples below presume you are logged in as a user with elevated permissions
 Establish an [SSH connection to your instance](/pages/public_cloud/compute/public-cloud-first-steps#connect-to-instance), then use the command below to list the attached disks.
 
 ```bash
-~$ admin@server-1:~$ lsblk
+~$ lsblk
 
 NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
 vda 254:0 0 10G 0 disk
@@ -81,8 +83,10 @@ vdb 254:16 0 10G 0 disk
 
 Create a partition on the additional disk using the commands below.
 
+If your additional disk is less than 2TB:
+
 ```bash
-~$ admin@server-1:~$ sudo fdisk /dev/vdb
+~$ sudo fdisk /dev/vdb
 
 Welcome to fdisk (util-linux 2.25.2).
 Changes will remain in memory only, until you decide to write them.
@@ -90,9 +94,7 @@ Be careful before using the write command.
 
 Device does not contain a recognized partition table.
 Created a new DOS disklabel with disk identifier 0x95c4adcc.
-```
 
-```bash
 Command (m for help): n
 
 Partition type
@@ -105,9 +107,7 @@ First sector (2048-20971519, default 2048):
 Last sector, +sectors or +size{K,M,G,T,P} (2048-20971519, default 20971519):
 
 Created a new partition 1 of type 'Linux' and of size 10 GiB.
-```
 
-```bash
 Command (m for help): w
 
 The partition table has been altered.
@@ -115,10 +115,42 @@ Calling ioctl() to re-read partition table.
 Syncing disks.
 ```
 
+If your additional disk is larger than 2TB:
+
+```bash
+~$ sudo parted /dev/vdb
+GNU Parted 3.5
+Using /dev/vdb
+Welcome to GNU Parted! Type 'help' to view a list of commands.
+(parted) help                                                             
+  align-check TYPE N                       check partition N for TYPE(min|opt) alignment
+  help [COMMAND]                           print general help, or help on COMMAND
+  mklabel,mktable LABEL-TYPE               create a new disklabel (partition table)
+  mkpart PART-TYPE [FS-TYPE] START END     make a partition
+  name NUMBER NAME                         name partition NUMBER as NAME
+  print [devices|free|list,all]            display the partition table, or available devices, or free space, or all found partitions
+  quit                                     exit program
+  rescue START END                         rescue a lost partition near START and END
+  resizepart NUMBER END                    resize partition NUMBER
+  rm NUMBER                                delete partition NUMBER
+  select DEVICE                            choose the device to edit
+  disk_set FLAG STATE                      change the FLAG on selected device
+  disk_toggle [FLAG]                       toggle the state of FLAG on selected device
+  set NUMBER FLAG STATE                    change the FLAG on partition NUMBER
+  toggle [NUMBER [FLAG]]                   toggle the state of FLAG on partition NUMBER
+  unit UNIT                                set the default unit to UNIT
+  version                                  display the version number and copyright information of GNU Parted
+(parted) mklabel gpt                                                      
+(parted) mkpart primary 0 3750G                                           
+Warning: The resulting partition is not properly aligned for best performance: 34s % 2048s != 0s
+Ignore/Cancel? I                                                          
+(parted) quit
+```
+
 Next, format the new partition `vdb1` using the command below.
 
 ```bash
-~$ admin@server-1:~$ sudo mkfs.ext4 /dev/vdb1
+~$ sudo mkfs.ext4 /dev/vdb1
 mke2fs 1.42.12 (29-Aug-2014)
 Creating filesystem with 2621184 4k blocks and 655360 inodes
 Filesystem UUID: 781be788-c4be-462b-b946-88429a43c0cf
@@ -134,14 +166,14 @@ Writing superblocks and filesystem accounting information: done
 Mount the partition with the following commands:
 
 ```bash
-admin@server-1:~$ sudo mkdir /mnt/disk
-admin@server-1:~$ sudo mount /dev/vdb1 /mnt/disk/
+~$ sudo mkdir /mnt/disk
+~$ sudo mount /dev/vdb1 /mnt/disk/
 ```
 
 Finally, check the mount point using this command:
 
 ```bash
-~$ admin@server-1:~$ df -h
+~$ df -h
 
 Filesystem Size Used Avail Use% Mounted on
 /dev/vda1 9.8G 840M 8.6G 9% /
@@ -161,7 +193,7 @@ The mounting is not persistent because the disk will be detached when the instan
 First, retrieve the UUID (block ID) of the new volume:
 
 ```bash
-~$ admin@server-1:~$ sudo blkid
+~$ sudo blkid
 
 /dev/vda1: UUID="51ba13e7-398b-45f3-b5f3-fdfbe556f62c" TYPE="ext4" PARTUUID="000132ff-01"
 /dev/vdb1: UUID="2e4a9012-bf0e-41ef-bf9a-fbf350803ac5" TYPE="ext4" PARTUUID="95c4adcc-01"
@@ -169,7 +201,7 @@ First, retrieve the UUID (block ID) of the new volume:
 
 Open `/etc/fstab` with a text editor:
 
-```
+```bash
 ~$ sudo nano /etc/fstab
 ```
 
@@ -207,9 +239,9 @@ Then right-click it again and this time select `Initialise Disk`{.action}.
 
 ![offline disk](images/disk-management-03.png){.thumbnail}
 
-Next, select `MBR`{.action} and click `OK`{.action}.
+Next, select `MBR`{.action} if your additional disk is less than 2TB, or `GPT`[.action] if it is more than 2TB, then click `OK`{.action}.
 
-![initialise disk](images/initialise-disk.png){.thumbnail}
+![initialise disk](images/initialize_disk.png){.thumbnail}
 
 ##### **Initialising the disk with DISKPART** <a name="initDiskpart"></a>
 
@@ -229,13 +261,11 @@ C:\> diskpart
 
 Use the following series of DISKPART commands to set the disk to `online`:
 
-```
+```console
 DISKPART> san
 
 SAN Policy : Offline Shared
-```
 
-```
 DISKPART> san policy = OnlineAll
 
 DiskPart successfully changed the SAN policy for the current operating system .
@@ -247,21 +277,15 @@ Disk ### Status Size Free Dyn Gpt
 -------- ------------- ------- ------- --- ---
 Disk 0 Online 200 GB 0 B
 * Disk 1 Offline 10 GB 1024 KB
-```
 
-``` 
 DISKPART> select disk 1
 
 Disk 1 is now the selected disk.
-```
 
-```
 DISKPART> attributes disk clear readonly
 
 Disk attributes cleared successfully.
-```
 
-```
 DISKPART> attributes disk
 
 Current Read-only State : No
@@ -271,9 +295,7 @@ Pagefile Disk : No
 Hibernation File Disk : No
 Crashdump Disk : No
 Clustered Disk : No
-```
 
-```
 DISKPART> online disk
 
 DiskPart successfully onlined the selected disk.
@@ -317,7 +339,7 @@ If you wish to detach a volume from your instance, the best practice is to unmou
 Establish an [SSH connection to your instance](/pages/public_cloud/compute/public-cloud-first-steps#connect-to-instance), then use the command below to list the attached disks.
 
 ```bash
-~$ admin@server-1:~$ lsblk
+~$ lsblk
 
 NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
 vda 254:0 0 10G 0 disk
@@ -329,13 +351,13 @@ vdb       8:0    0   10G  0 disk
 Unmount the partition using the command below:
 
 ```bash
-~$ admin@server-1:~$ sudo umount /dev/vdb1
+~$ sudo umount /dev/vdb1
 ```
 
 Remove the device ID from the fstab to complete the unmount process, if this is not done, the partition will be mounted right back after a reboot.
 
 ```bash
-~$ admin@server-1:~$ sudo nano /etc/fstab
+~$ sudo nano /etc/fstab
 ```
 
 Save and exit the editor.
