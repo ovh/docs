@@ -1,26 +1,24 @@
 ---
-title: "Administrer son site internet à distance avec Visual Studio Code"
-excerpt: "Administrer le site internet de son hébergement web à distance sur Visual Studio Code grâce à une extension SFTP"
+title: "Gérer son hébergement web avec Visual Studio Code via SFTP"
+excerpt: "Administrer un site internet sur un hébergement web avec Visual Studio Code grâce à une extension SFTP"
 updated: 2023-09-22
 ---
 
 ## Objectif
 
-Si vous disposez d’un hébergement web OVHcloud, vous pouvez accéder à un espace de stockage qui vous permet de gérer votre site internet. L’accès à cet espace de stockage est possible à distance, via SFTP. Même s’il est possible de se connecter via un terminal, vous pouvez également utiliser l’IDE (environnement de développement intégré) Visual Studio Code pour gérer à distance les dossiers et fichiers de votre site web.
+Si vous disposez d’un hébergement web OVHcloud, vous pouvez accéder à un espace de stockage qui vous permet de gérer votre site internet. L’accès à cet espace de stockage est possible via SFTP. Même s’il est possible de se connecter avec un terminal, vous pouvez également utiliser l’IDE (environnement de développement intégré) Visual Studio Code pour gérer les dossiers et fichiers de votre site web.
 
-> [!warning]
+> [!primary]
 >
->
-Si vous souhaitez administrer votre site web à distance sans utiliser Visual Studio Code, vous pouvez le faire avec un client FTP comme FileZilla. Ce [guide](https://help.ovhcloud.com/csm/fr-web-hosting-filezilla?id=kb_article_view&sysparm_article=KB0052749){.external} vous expliquera comment utiliser FileZilla avec votre hébergement OVHcloud. Si vous souhaitez vous connecter à votre site web en SSH, lisez ce [guide](https://help.ovhcloud.com/csm/fr-web-hosting-ssh-access?id=kb_article_view&sysparm_article=KB0053116){.external}.
-
+> Si vous souhaitez administrer votre site web à distance sans utiliser Visual Studio Code, vous pouvez le faire avec un client FTP comme FileZilla. N'hésitez pas à consulter notre guide [Utiliser FileZilla avec votre hébergement OVHcloud](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide). Si vous souhaitez vous connecter à votre site web en SSH, lisez notre page [Utiliser l'accès SSH de son hébergement web](https://help.ovhcloud.com/csm/fr-web-hosting-ssh-access?id=kb_article_view&sysparm_article=KB0053116)(/pages/web_cloud/web_hosting/ssh_on_webhosting).
 >
 
-**Ce guide vous explique comment administrer à distance votre site internet via Visual Studio Code.**
+**Découvrez comment administrer votre site internet via Visual Studio Code.**
   
 ## Prérequis
-- Disposer d'une offre d'[hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/){.external}
+- Disposer d'une offre d'[hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/)
 
-- Avoir installé Visual Studio Code sur sa machine
+- Installer [Microsoft Visual Studio Code](https://visualstudio.microsoft.com/#vscode-section) sur votre machine
 
 
 ## En pratique
@@ -29,35 +27,34 @@ Si vous souhaitez administrer votre site web à distance sans utiliser Visual St
 
 > [!warning]
 >
->
-Dans ce guide, nous choisissons arbitrairement l'extension « SFTP/FTP sync » de Natizyskunk. Bien sûr, vous êtes libre d'en choisir une autre. Gardez à l'esprit qu'une extension est un logiciel souvent créé par un développeur indépendant, lequel peut stopper à tout moment le développement de l'extension.
+> Dans ce guide, nous avons choisi l'extension « SFTP/FTP sync » de *Natizyskunk*. Vous êtes libre d'en choisir une autre. Cependant, il est à noter qu'une extension sur Visual Studio Code est un logiciel souvent créé par un développeur indépendant, lequel peut stopper à tout moment son développement.
 >
 
 Après avoir démarré Visual Studio Code, dirigez-vous dans le menu horizontal en haut de l'interface, et cliquez sur `View`{.action} puis `Extensions`{.action}.
 
 ![hosting](images/view_extensions.png){.thumbnail}
 
-Pour effectuer la même action avec le raccourci clavier, sélectionnez `Ctrl + Shift + X` si vous êtes sur Windows, `Maj + Command + X` si vous êtes sur Mac.
+Pour effectuer la même action avec le raccourci clavier, sélectionnez `Ctrl + Shift + X` si vous êtes sur Windows, `Maj + Command + X` si vous êtes sur macOS.
 
-En haut à gauche de l’interface, entrez le nom de l’extension « SFTP/FTP sync » de Natizyskunk et cliquez sur  `Install`{.action}.
+En haut à gauche de l’interface, entrez le nom de l’extension « SFTP/FTP sync » de *Natizyskunk* et cliquez sur `Install`{.action}.
 
 ![hosting](images/extensions.png){.thumbnail}
 
-Il est également possible d’installer l’[extension](https://marketplace.visualstudio.com/items?itemName=Natizyskunk.sftp#sftp-sync-extension-for-vs-code){.external} depuis la marketplace de Visual Studio.
+Il est également possible d’installer l’[extension « SFTP/FTP sync »](https://marketplace.visualstudio.com/items?itemName=Natizyskunk.sftp#sftp-sync-extension-for-vs-code) depuis la marketplace de Visual Studio.
   
 ### Initialiser le projet en local
 
-Pour synchroniser les fichiers de votre site web présents sur l’hébergement web avec votre machine, vous devez indiquer à Visual Studio Code l’emplacement de votre projet en local. Pour cela, créez un dossier à l’emplacement souhaité.
+Pour synchroniser les fichiers de votre site web présents sur l’hébergement web, depuis Visual Studio Code, renseignez l’emplacement de votre projet en local. Pour cela, créez un dossier à l’emplacement souhaité.
 
 Retournez dans Visual Studio Code et, dans le menu horizontal en haut de l'interface, cliquez sur `View`{.action} puis `Command Palette`{.action} pour afficher l'éditeur de commandes.
 
-Pour effectuer la même action avec le raccourci clavier, sélectionnez `Ctrl + Shift + P` si vous êtes sur Windows, `Maj + Command + P` si vous êtes sur Mac.
+Pour effectuer la même action avec le raccourci clavier, sélectionnez `Ctrl + Shift + P` si vous êtes sur Windows, `Maj + Command + P` si vous êtes sur macOS.
 
 Entrez la commande suivante : `SFTP: Config`.
 
 ![hosting](images/SFTP_config.png){.thumbnail}
 
-Grâce à cette commande, Visual Studio Code va créer le fichier de configuration sftp.json à la racine du dossier local précédemment créé. Mais comme Visual Studio Code ne connait pas encore l’emplacement de votre projet en local, le message suivant devrait apparaitre :
+Grâce à cette commande, Visual Studio Code va créer le fichier de configuration « sftp.json » à la racine du dossier local précédemment créé. Mais comme Visual Studio Code ne connait pas encore l’emplacement de votre projet en local, le message suivant devrait apparaitre :
 
 ![hosting](images/SFTP_folder.png){.thumbnail}
 
@@ -65,7 +62,7 @@ Cliquez sur `Open Folder`{.action}, dirigez-vous à l’emplacement du dossier l
 
 ![hosting](images/select_folder.png){.thumbnail}
 
-Dans Visual Studio Code, entrez à nouveau la commande `SFTP: Config`. Cette fois-ci, un fichier de configuration nommé sftp.json apparaît alors dans Visual Studio Code.
+Dans Visual Studio Code, entrez à nouveau la commande `SFTP: Config`. Un fichier de configuration nommé « sftp.json » apparaît dans Visual Studio Code.
 
 ![hosting](images/sftp_json_default.png){.thumbnail}
 
@@ -73,24 +70,24 @@ Ce fichier est présent dans le dossier .vscode, lui-même positionné à la rac
 
 ### Configurer le fichier sftp.json
 
-Avant de travailler sur votre projet, vous devez le télécharger dans votre dossier local précédemment créé. Mais dans un premier temps, il vous faut configurer convenablement le fichier «sftp.json». Les informations utiles sont présentes dans votre [espace client OVHcloud](https://www.ovh.com/manager/#/hub){.external}. Dans la partie `Web Cloud`{.action}, cliquez sur `Hébergements`{.action}. Sélectionnez l'hébergement concerné, puis cliquez sur l'onglet `FTP - SSH`{.action}.
+Avant de travailler sur votre projet, vous devez le télécharger dans votre dossier local précédemment créé. Mais dans un premier temps, il vous faut configurer convenablement le fichier « sftp.json » . Les informations utiles sont présentes dans votre [espace client OVHcloud](https://www.ovh.com/manager/#/hub). Dans la partie `Web Cloud`{.action}, cliquez sur `Hébergements`{.action}. Sélectionnez l'hébergement concerné, puis cliquez sur l'onglet `FTP - SSH`{.action}.
 
-Dans le fichier «sftp.json», rentrez les valeurs pour les entrées suivantes :
+Dans le fichier « sftp.json » , rentrez les valeurs pour les entrées suivantes :
 
 #### name 
 
-Repérez le aux deux emplacements surlignés en orange.
+Repérez-le aux deux emplacements surlignés en orange.
 
 ![hosting](images/hosting_name.png){.thumbnail}
 
 > [!primary]
 >
-> Notez bien que la valeur de `name` est arbitraire, et que vous pouvez attribuer la valeur que vous souhaitez. Cependant, si vous configurez plusieurs fichiers «sftp.json», il est préférable d'entrer les valeurs indiqués ci-dessus pour des raions de cohérence et de simplicité.
+> La valeur `name`(nom) étant personnalisable, vous pouvez attribuer celle de votre choix. Cependant, si vous configurez plusieurs fichiers « sftp.json » , il est préférable de prendre comme référence les valeurs visibles ci-dessus pour des raisons d'organisation.
 >
 
 #### host
 
-Toujours dans l’onglet `FTP-SSH`{.action}, repérez-le sous la mention Serveur `FTP et SFTP`{.action}.
+Toujours dans l’onglet `FTP-SSH`{.action}, le nom d'hôte (`host`) est visible sous la mention Serveur `FTP et SFTP`{.action}.
 
 ![hosting](images/ftp_host_name.png){.thumbnail}
 
@@ -103,15 +100,15 @@ Repérez le dans la colonne `Login`{.action} du tableau.
 Repérez-le sous la mention `chemin du répertoire home`{.action}. Cependant, si vous possédez plusieurs utilisateurs, le chemin indiqué n’est peut-être pas exact. À la place, essayez `home/<username>`.
 
 
-Enfin, n'oubliez pas d'ajouter cette ligne dans le fichier «sftp.json» : `"openSsh": true`
+Enfin, n'oubliez pas d'ajouter cette ligne dans le fichier « sftp.json » : `"openSsh": true`
 
 > [!primary]
 >
-> Pour ne pas avoir à entrer votre mot de passe après chaque commande dans Visual Studio Code, vous pouvez l’enregistrer une fois pour toute dans le fichier «sftp.json» en ajoutant la ligne : `"password": "<password>"`
+> Pour ne pas avoir à entrer votre mot de passe après chaque commande dans Visual Studio Code, vous pouvez l’enregistrer une fois pour toute dans le fichier « sftp.json » en ajoutant la ligne : `"password": "<password>"`
 >
 
 
-Voici un exemple de fichier «sftp.json» :
+Voici un exemple de fichier « sftp.json » :
 
 ```json
 
@@ -130,23 +127,23 @@ Voici un exemple de fichier «sftp.json» :
 
 ```
 
-Pour plus de détail concernant les options de sftp.json, reportez-vous au [wiki](https://github.com/Natizyskunk/vscode-sftp/wiki/configuration){.external} du projet.
+Pour plus de détail concernant les options de « sftp.json » , reportez-vous au [wiki](https://github.com/Natizyskunk/vscode-sftp/wiki/configuration) du projet.
 
 ### Télécharger le projet en local
 
-Une fois le fichier «sftp.json» configuré, vous pouvez télécharger le contenu de votre projet afin de récupérer l’ensemble des dossiers et fichiers de votre site web. Pour ce faire, allez dans Visual Studio Code et entrez la commande suivante : `SFTP: Download Project`.
+Une fois le fichier « sftp.json » configuré, vous pouvez télécharger le contenu de votre projet afin de récupérer l’ensemble des dossiers et fichiers de votre site web. Pour ce faire, allez dans Visual Studio Code et entrez la commande suivante : `SFTP: Download Project`.
 
-Visual Studio Code vous demande alors de sélectionner le dossier que vous souhaitez télécharger sur votre hébergement web. Entrez la valeur que vous avez indiqué pour l’entrée `name` du fichier «sftp.json».
+Visual Studio Code vous demande alors de sélectionner le dossier que vous souhaitez télécharger sur votre hébergement web. Entrez la valeur que vous avez indiqué pour l’entrée `name` du fichier « sftp.json » .
 
 ![hosting](images/download_project.png){.thumbnail}
 
-S'il vous est demandé, entrez ensuite le mot de passe lié à l’utilisateur que vous avez indiqué dans le fichier «sftp.json», puis validez. Le téléchargement se lance. Une fois celui-ci achevé, vous pouvez voir l’ensemble des dossiers et fichiers de votre projet dans l’explorateur de fichiers, à gauche de l’interface Visual Studio Code.
+S'il vous est demandé, entrez ensuite le mot de passe lié à l’utilisateur que vous avez indiqué dans le fichier « sftp.json » , puis validez. Le téléchargement se lance. Une fois celui-ci achevé, vous pouvez voir l’ensemble des dossiers et fichiers de votre projet dans l’explorateur de fichiers, à gauche de l’interface Visual Studio Code.
 
 ![hosting](images/explorer.png){.thumbnail}
 
 > [!primary]
 >
-> Pour rappel, la bonne configuration du fichier sftp.json est primordiale. En effet, si une erreur s'affiche avant que vous puissiez télécharger votre projet, il est fort probable que votre fichier sftp.json soit mal configuré. Pour toute question, reportez-vous à la [FAQ](https://github.com/Natizyskunk/vscode-sftp/blob/HEAD/FAQ.md){.external}.
+> Pour rappel, la bonne configuration du fichier « sftp.json » est primordiale. En effet, si une erreur s'affiche avant que vous puissiez télécharger votre projet, il est fort probable que votre fichier « sftp.json » soit mal configuré. Pour toute question, reportez-vous à la [FAQ](https://github.com/Natizyskunk/vscode-sftp/blob/HEAD/FAQ.md).
 >
 
 
@@ -154,7 +151,7 @@ S'il vous est demandé, entrez ensuite le mot de passe lié à l’utilisateur q
 
 Maintenant que le projet est téléchargé en local sur votre machine, vous pouvez facilement éditer, ajouter ou supprimer des fichiers sur Visual Studio Code.
 
-Si vous souhaitez que vos modifications locales soient synchronisées chaque fois que vous sauvegardez un fichier, ajoutez cette ligne dans le fichier sftp.json : ` "uploadOnSave": true`
+Si vous souhaitez que vos modifications locales soient synchronisées chaque fois que vous sauvegardez un fichier, ajoutez cette ligne dans le fichier « sftp.json » : ` "uploadOnSave": true`
 
 Gardez la valeur à false dans le cas contraire.
 
@@ -162,7 +159,7 @@ Jusqu'à maintenant, nous avons effectué deux commandes : `SFTP: Config` et `SF
 
 ![hosting](images/list_commands.png){.thumbnail}
 
-Retrouvez la liste des commandes [ici](https://github.com/Natizyskunk/vscode-sftp/wiki/Commands){.external}.
+Retrouvez la liste des commandes [ici](https://github.com/Natizyskunk/vscode-sftp/wiki/Commands).
 
 À présent, vous êtes capable d'accéder au site internet de votre hébérgement web via Visual Studio Code. Vous pouvez désormais modifier, ajouter et supprimer des fichiers, tout ça à distance.
 
@@ -176,6 +173,6 @@ Gardez à l'esprit que ce guide présente une manière rapide et efficace pour a
 
 [Utiliser FileZilla avec votre hébergement OVHcloud](https://help.ovhcloud.com/csm/fr-web-hosting-filezilla?id=kb_article_view&sysparm_article=KB0052749)
 
-[Utiliser l'accès SSH de son hébergement web](https://help.ovhcloud.com/csm/fr-web-hosting-ssh-access?id=kb_article_view&sysparm_article=KB0053116). N'oubliez pas que pour utiliser le SSH, vous devez disposer d'une [offre d'hébergement Pro ou Performance](https://www.ovhcloud.com/fr/web-hosting/){.external}.
+[Utiliser l'accès SSH de son hébergement web](https://help.ovhcloud.com/csm/fr-web-hosting-ssh-access?id=kb_article_view&sysparm_article=KB0053116). N'oubliez pas que pour utiliser le SSH, vous devez disposer d'une [offre d'hébergement Pro ou Performance](https://www.ovhcloud.com/fr/web-hosting/).
 
 Échangez avec notre communauté d’utilisateurs sur <https://community.ovh.com/>
