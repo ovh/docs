@@ -1,7 +1,7 @@
 ---
 title: 'Creating and configuring an additional disk on an instance'
 excerpt: 'Find out how to attach a new volume to your Public Cloud instance'
-updated: 2023-02-09
+updated: 2023-10-09
 ---
 
 ## Objective

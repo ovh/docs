@@ -1,7 +1,7 @@
 ---
 title: 'Créer et configurer un disque supplementaire sur une instance'
 excerpt: 'Découvrez comment attacher un nouveau volume à votre instance Public Cloud'
-updated: 2023-02-09
+updated: 2023-10-09
 ---
 
 ## Objectif
