@@ -254,7 +254,7 @@ Once you have your model ready, deploy the model to use it. This will be done wi
 
 All the source code is available on the [OVHcloud GitHub organization](https://github.com/ovh/ai-training-examples/tree/main/jobs/audio/audio-classification).
 
-To create the application using the trained model, you can follow this tutorial: [Deploy an app for audio classification task using Streamlit](/pages/public_cloud/ai_machine_learning/deploy_tuto_03_streamlit_sounds_classification).
+To create the application using the trained model, you can follow this tutorial: [Deploy an app for playing rock / paper / scissors](/pages/public_cloud/ai_machine_learning/deploy_tuto_15_rock_paper_scissors).
 
 ## Feedback
 
