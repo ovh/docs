@@ -1,7 +1,7 @@
 ---
 title: "Korzystanie z usługi Zerto między OVHcloud a platformą zewnętrzną"
 excerpt: 'Dowiedz się, jak połączyć Zerto OVHcloud z inną platformą'
-updated: 2022-02-11
+updated: 2023-06-10
 ---
 
 > [!primary]
@@ -22,6 +22,12 @@ W drugim przypadku zapoznaj się z naszym przewodnikiem "[Zerto między dwoma ce
 - Lokalizacja klienta musi dysponować działającą instalacją Zerto.
 - Maszyny replikacji Zerto (VRA: Virtual Réplication Appliance) po stronie klienta i po stronie OVHCloud muszą mieć możliwość wymiany informacji na portach TCP 4007 i 4008.
 - Maszyny administracji Zerto (ZVM: Zerto Virtual Manager) po stronie klienta i po stronie OVHCloud muszą mieć możliwość wymiany informacji na portach TCP 9081.
+
+>[!warning]
+>
+> OVHcloud wspiera Zerto w wersji N-1.
+> Dostępne wersje znajdziesz tutaj: <https://help.zerto.com/kb/000004585>.
+>
 
 ## W praktyce
 
