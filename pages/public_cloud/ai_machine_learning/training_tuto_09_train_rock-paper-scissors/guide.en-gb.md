@@ -30,7 +30,7 @@ It is based on the YOLOv8 open source [repository](https://github.com/ultralytic
 ### Create object storage for data
 
 To train the model you'll need data and a place where to save the trained model.
-You can reuse the previous object storage used in the Notebook tutorial [Train YOLOv8 to play to "rock paper scissors"](/pages/public_cloud/ai_machine_learning/notebook_tuto_15_rock-paper-scissors/) or follow the step [Create Object Storage containers](/pages/platform/ai/notebook_tuto_15_rock-paper-scissors/#Create Object Storage containers) of this same tutorial.
+You can reuse the previous object storage used in the Notebook tutorial [Train YOLOv8 to play to "rock paper scissors"](/pages/public_cloud/ai_machine_learning/notebook_tuto_15_rock-paper-scissors/) or follow the step [Create Object Storage containers](/pages/platform/ai/notebook_tuto_15_rock-paper-scissors/) of this same tutorial.
 
 ### Train your model
 
