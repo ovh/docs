@@ -20,7 +20,7 @@ Configuring the reverse DNS resolution for a VPS is especially useful when sendi
 
 ## Instructions
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), switch to the `Bare Metal Cloud`{.action} section and open `IP`{.action}.
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), switch to the `Bare Metal Cloud`{.action} section and open `Network`{.action}. Next, click on `IP`{.action}.
 
 The drop-down menu underneath **"My public IP addresses and associated services"** allows you to filter your services according to category.
 

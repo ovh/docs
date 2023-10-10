@@ -35,7 +35,7 @@ To protect its global infrastructure and its customers’ servers, OVHcloud offe
 > The Network Firewall protects the IP associated with a server. As a result, if you have a server with multiple IP addresses, you need to configure each IP separately. You cannot configure the firewall on the server as a whole.
 > 
 
-In the OVHcloud Control Panel, click on the `Bare Metal Cloud`{.action} menu and open `IP`{.action}. You can use the drop-down menu underneath **"My public IP addresses and associated services"** to filter your services according to category.
+In the OVHcloud Control Panel, click on the `Bare Metal Cloud`{.action} menu and open `Network`{.action}, then click on `IP`{.action}. You can use the drop-down menu underneath **"My public IP addresses and associated services"** to filter your services according to category.
 
 ![filter service](images/selectservice.png){.thumbnail}
 
@@ -119,7 +119,7 @@ Our Anti-DDoS (VAC) solution includes three mitigation modes: automatic, permane
 All traffic at all times gets through the mitigation system before reaching the server. We recommend enabling this mode for services under frequent attacks.<br>
 Please note that as permanent mitigation is part our Anti-DDoS (VAC) solution, you can activate it on your IP without enabling the Network Firewall.
 
-To enable it, click on the `Bare Metal Cloud`{.action} menu and open `IP`{.action}. Next, click on the `...`{.action} to the right of the relevant IPv4 and select `Mitigation: permanent mode`{.action}.
+To enable it, click on the `Bare Metal Cloud`{.action} menu and open `Network`{.action}, then click on `IP`{.action}. Next, click on the `...`{.action} to the right of the relevant IPv4 and select `Mitigation: permanent mode`{.action}.
 
 **Forced mitigation**: This mode is automatically enabled once an attack is detected on the server. Once enabled on our Anti-DDoS infrastructure, it cannot be disabled. In order to protect our infrastructure, it will be enabled throughout the attack until it is completely mitigated.
 
@@ -136,7 +136,7 @@ To enable it, click on the `Bare Metal Cloud`{.action} menu and open `IP`{.actio
 >
 
 In order to configure rules for your ports in Armor, you will first need to log into the OVHcloud Control Panel.<br>
-Go to the `Bare Metal Cloud`{.action} menu and open `IP`{.action}. Next, click on the `...`{.action} next to the IP address of your Game Server and click on `Configure the GAME firewall`{.action}.
+Go to the `Bare Metal Cloud`{.action} menu, click on `Network`{.action} and open `IP`{.action}. Next, click on the `...`{.action} next to the IP address of your Game Server and click on `Configure the GAME firewall`{.action}.
 
 ![Game_wall](images/GAMEwall2021.png){.thumbnail}
 

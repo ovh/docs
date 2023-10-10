@@ -74,9 +74,9 @@ Weitere Informationen zur Verwaltung Ihres Dedicated Servers über das OVHcloud 
 
 ### IP Bereich
 
-Um auf den Bereich **IP** in Ihrem OVHcloud Kundencenter zuzugreifen, klicken Sie auf das Menü `Bare Metal Cloud`{.action} und anschließend auf `IP`{.action}:
+Um auf den Bereich **IP** in Ihrem OVHcloud Kundencenter zuzugreifen, klicken Sie auf das Menü `Bare Metal Cloud`{.action} und öffnen Sie `Network`{.action}. Klicken Sie dann auf `IP`{.action}.
 
-![ip](images/manageIPOVHcloud.png){.thumbnail}
+![ip](images/manageIP2023.png){.thumbnail}
 
 ### Tab Lizenzen (nicht für Kimsufi verfügbar)
 

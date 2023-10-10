@@ -51,7 +51,7 @@ En utilisant PuTTy par exemple, ouvrez simplement l'application et entrez le nom
 
 ![utilisation putty](images/putty1.png){.thumbnail}
 
-Une fois le terminal ouvert, entrez la commande suivante pour vous connecter à votre VPS avec les informations fournies dans l'e-mail (nom d'utilisateur et adresse IPv4):
+Une fois le terminal ouvert, entrez la commande suivante pour vous connecter à votre VPS avec les informations fournies dans l'e-mail (nom d'utilisateur et adresse IPv4) :
 
 ```bash
 ssh nom_d_utilisateur@IPv4_de_votre_VPS
