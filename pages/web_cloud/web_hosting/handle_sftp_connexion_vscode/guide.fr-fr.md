@@ -164,12 +164,9 @@ Jusqu'à présent, nous avons seulement mentionné les commandes : `SFTP: Config
 Retrouvez la liste des commandes [ici](https://github.com/Natizyskunk/vscode-sftp/wiki/Commands).
 
 À présent, vous êtes en mesure d'accéder et de modifier le contenu de votre hébérgement web via Visual Studio Code.
+Gardez à l'esprit que ce guide présente une manière rapide et efficace pour administrer votre projet à distance sur Visual Studio Code. Idéal pour des petits projets ou une première expérience, cette solution présente des limites. En effet, si vous modifiez plusieurs fichiers et que ceux-ci sont synchronisés sur votre hébérgement web, il vous est impossible de voir l'historique de vos modifications pour éventuellement revenir dessus ou rattraper une erreur.
 
 ## Aller plus loin
-
-Gardez à l'esprit que ce guide présente une manière rapide et efficace pour administrer votre projet à distance sur Visual Studio Code. Idéal pour des petits projets ou une première expérience, cette solution présente des limites. En effet, si vous modifiez plusieurs fichiers et que ceux-ci sont synchronisés sur votre hébérgement web, il vous est impossible de voir l'historique de vos modifications pour éventuellement revenir dessus ou rattraper une erreur.
-<!--- Pour ce faire, vous devez installer ou brancher des outils qui améliorerons grandement l'historisation et l'intégration des changements sur votre site web. Pour plus d'information à ce sujet, suivez ce [guide].
- TODO mettre à jour le lien quand dispo -->
 
 [Se connecter à l'espace de stockage FTP de son hébergement web](https://help.ovhcloud.com/csm/fr-web-hosting-ftp-storage-connection?id=kb_article_view&sysparm_article=KB0052702)
 
