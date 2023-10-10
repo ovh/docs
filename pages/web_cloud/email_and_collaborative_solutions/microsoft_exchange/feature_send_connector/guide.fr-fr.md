@@ -77,8 +77,8 @@ Avant de commencer, munissez-vous des informations suivantes. Elles doivent êtr
 
 - l'adresse du serveur d'envoi (SMTP)
 - le port utilisé pour l'envoi (exemple: 587)
-- le nom d'utilisateur associé (exemple: une adresse e-mail)
-- le mot de passe associé au nom d'utilisateur
+- le nom d'utilisateur associé (exemple: une adresse e-mail) , **peut être optionel selon votre connecteur d'envoi**.
+- le mot de passe associé au nom d'utilisateur , **peut être optionel selon votre connecteur d'envoi**.
 
 Ensuite, connectez-vous aux API OVHcloud avec vos identifiants. N'hésitez pas à vous appuyer de notre guide [Premiers pas avec les API OVHcloud ](pages/manage_and_operate/api/first-steps).
 
@@ -95,7 +95,7 @@ Pour ajouter un connecteur d'envoi à votre plateforme Exchange, utiliser l'appe
 - `password` : mot de passe attaché à l'utilisateur du connecteur d'envoi.
 - `port` : port utilisé pour l'envoi.
 - `requireTLS` : utiliser le protocole de sécurité TLS à l'envoi.
-- `smartHost` : adresse du connecteur d'envoi.
+- `smartHost` : adresse du connecteur d'envoi (SMTP).
 - `smartHostAuthMechanism` : mécanisme d'authentification utilisé pour le connecteur d'envoi.
 - `user` : utilisateur associé au connecteur d'envoi.
 
