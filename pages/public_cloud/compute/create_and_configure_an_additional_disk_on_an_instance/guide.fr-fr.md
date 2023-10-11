@@ -1,6 +1,6 @@
 ---
-title: 'Créer et configurer un disque supplementaire sur une instance'
-excerpt: 'Découvrez comment attacher un nouveau volume à votre instance Public Cloud'
+title: Créer et configurer un disque supplementaire sur une instance
+excerpt: Découvrez comment attacher un nouveau volume à votre instance Public Cloud
 updated: 2023-10-09
 ---
 
@@ -67,8 +67,10 @@ Les exemples ci-dessous supposent que vous êtes connecté en tant qu'utilisateu
 Ouvrez une [connexion SSH à votre instance](/pages/public_cloud/compute/public-cloud-first-steps#etape-4-connexion-a-votre-instance), puis utilisez la commande ci-dessous pour lister les disques attachés.
 
 ```bash
-~$ lsblk
+lsblk
+```
 
+```console
 NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
 vda 254:0 0 10G 0 disk
 └─vda1 254:1 0 10G 0 part /
@@ -85,8 +87,10 @@ Créez une partition sur le disque supplémentaire via les commandes ci-dessous.
 Si votre disque additionnel est inférieur à 2TB:
 
 ```bash
-~$ sudo fdisk /dev/vdb
+sudo fdisk /dev/vdb
+```
 
+```console
 Welcome to fdisk (util-linux 2.25.2).
 Changes will remain in memory only, until you decide to write them.
 Be careful before using the write command.
@@ -117,7 +121,10 @@ Syncing disks.
 Si votre disque additionnel est supérieur à 2TB:
 
 ```bash
-~$ sudo parted /dev/vdb
+sudo parted /dev/vdb
+```
+
+```console
 GNU Parted 3.5
 Using /dev/vdb
 Welcome to GNU Parted! Type 'help' to view a list of commands.
@@ -149,7 +156,10 @@ Ignore/Cancel? I
 Formatez ensuite la nouvelle partition `vdb1` à l’aide de la commande ci-dessous :
 
 ```bash
-~$ sudo mkfs.ext4 /dev/vdb1
+sudo mkfs.ext4 /dev/vdb1
+```
+
+```console
 mke2fs 1.42.12 (29-Aug-2014)
 Creating filesystem with 2621184 4k blocks and 655360 inodes
 Filesystem UUID: 781be788-c4be-462b-b946-88429a43c0cf
@@ -165,15 +175,19 @@ Writing superblocks and filesystem accounting information: done
 Montez la partition avec les commandes suivantes :
 
 ```bash
-~$ sudo mkdir /mnt/disk
-~$ sudo mount /dev/vdb1 /mnt/disk/
+sudo mkdir /mnt/disk
+
+```bash
+sudo mount /dev/vdb1 /mnt/disk/
 ```
 
 Enfin, vérifiez le point de montage à l’aide de cette commande :
 
 ```bash
-~$ df -h
+df -h
+```
 
+```console
 Filesystem Size Used Avail Use% Mounted on
 /dev/vda1 9.8G 840M 8.6G 9% /
 udev 10M 0 10M 0% /dev
@@ -192,8 +206,10 @@ tmpfs 982M 0 982M 0% /sys/fs/cgroup
 Récupérez tout d'abord l'UUID (block ID) du nouveau volume :
 
 ```bash
-~$ admin@server-1:~$ sudo blkid
+sudo blkid
+```
 
+```console
 /dev/vda1: UUID="51ba13e7-398b-45f3-b5f3-fdfbe556f62c" TYPE="ext4" PARTUUID="000132ff-01"
 /dev/vdb1: UUID="2e4a9012-bf0e-41ef-bf9a-fbf350803ac5" TYPE="ext4" PARTUUID="95c4adcc-01"
 ```
@@ -201,7 +217,7 @@ Récupérez tout d'abord l'UUID (block ID) du nouveau volume :
 Ouvrez `/etc/fstab` avec un éditeur de texte :
 
 ```bash
-~$ sudo nano /etc/fstab
+sudo nano /etc/fstab
 ```
 
 Ajoutez la ligne ci-dessous au fichier et remplacez l'UUID par le vôtre :
@@ -338,8 +354,10 @@ Si vous souhaitez détacher un volume de votre instance, la meilleure pratique e
 Ouvrez une [connexion SSH à votre instance](/pages/public_cloud/compute/public-cloud-first-steps#etape-3-creer-une-instance) puis utilisez la commande ci-dessous pour lister les disques attachés.
 
 ```bash
-~$ lsblk
+lsblk
+```
 
+```console
 NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
 vda 254:0 0 10G 0 disk
 └─vda1 254:1 0 10G 0 part /
@@ -350,13 +368,13 @@ vdb       8:0    0   10G  0 disk
 Démontez la partition en utilisant la commande ci-dessous :
 
 ```bash
-~$ sudo umount /dev/vdb1
+sudo umount /dev/vdb1
 ```
 
 Supprimez l'ID de périphérique du fstab pour terminer le processus de démontage. Si ce n'est pas fait, la partition sera remontée après un redémarrage.
 
 ```bash
-~$ sudo nano /etc/fstab
+sudo nano /etc/fstab
 ```
 
 Enregistrez et quittez l'éditeur.
