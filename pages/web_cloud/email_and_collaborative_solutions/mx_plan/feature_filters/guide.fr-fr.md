@@ -98,6 +98,10 @@ Vous avez le choix entre :
 
 #### Supprimer les spams
 
+> [!warning]
+>
+> Dans notre exemple nous évoquons la mention [SPAM] dans l'object d'un e-mail. Cette mention apparait lorsque l'antispam du serveur de réception délivre les e-mails, qu'il considère comme indésirable, directement dans la boite de réception. Ce qui est le cas de la version historique de l'offre MX Plan.
+
 ||En-tête|Règle|Valeur|Action|
 |---|---|---|---|---|
 |Paramètres du filtre|Sujet du message|contient|[SPAM]|suppression|

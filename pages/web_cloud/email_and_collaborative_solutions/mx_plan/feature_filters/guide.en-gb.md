@@ -98,6 +98,10 @@ You can choose between these types of actions:
 
 #### Deleting spam emails
 
+> [!warning]
+>
+> In our example, we will mention [SPAM] in the subject line of an email. This message appears when the receiving server’s anti-spam solution delivers emails that it considers unwanted directly to the inbox. This is the case with the legacy version of the MX Plan solution.
+
 ||Header|Rule|Value|Action|
 |---|---|---|---|---|
 |Filter settings|Message subject|includes|[SPAM]|deletion|

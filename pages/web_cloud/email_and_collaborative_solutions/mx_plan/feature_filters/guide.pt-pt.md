@@ -102,6 +102,10 @@ Pode escolher entre:
 
 #### Eliminar spams
 
+> [!warning]
+>
+> Neste exemplo, introduzimos [SPAM] no assumpto do e-mail. Esta indicação é apresentada quando o serviço de receção de correio eletrónico anti-spam entrega o correio eletrónico indesejado, o qual é considerado indesejado, diretamente na pasta A receber. Como é o caso da versão antiga da oferta MX Plan.
+
 ||Cabeçalho|Règle|Valor|Cenários|
 |---|---|---|---|---|
 |Parâmetros do filtro|Assumpto da mensagem|contém|\[SPAM]|eliminação|

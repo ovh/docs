@@ -102,6 +102,10 @@ Sie können zwischen diesen Arten von Aktionen wählen:
 
 #### Spam löschen
 
+> [!warning]
+>
+> In unserem Beispiel erwähnen wir [SPAM] im Betreff einer E-Mail. Dieser Hinweis erscheint, wenn das Antispam-Programm des Empfangsservers E-Mails, die er als Junk-E-Mails einstuft, direkt in den Posteingang sendet. Dies gilt auch für die historische MX Plan Version.
+
 ||Header|Regel|Wert|Aktion|
 |---|---|---|---|---|
 |Filtereinstellungen|Betreff der Nachricht|enthält|[SPAM]|löschen|
