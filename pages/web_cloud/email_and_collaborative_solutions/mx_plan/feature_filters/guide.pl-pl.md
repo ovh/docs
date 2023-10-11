@@ -102,6 +102,10 @@ Możesz wybrać:
 
 #### Usuń spam
 
+> [!warning]
+>
+> W naszym przykładzie w temacie wiadomości e-mail mowa jest o wzmiance [SPAM]. Informacja ta pojawia się, gdy antyspam serwera odbierającego dostarcza wiadomości, które uważa za spam, bezpośrednio do skrzynki odbiorczej. Tak jest w przypadku poprzedniej wersji usługi MX Plan.
+
 ||Nagłówek|Zasada|Wartość|Działanie|
 |---|---|---|---|---|
 |Parametry filtra|Temat wiadomości|zawiera|[SPAM]|usuwanie|
