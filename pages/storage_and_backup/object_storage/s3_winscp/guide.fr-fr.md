@@ -8,7 +8,7 @@ updated: 2023-10-09
 
 [WinSCP](https://winscp.net/) est un client SFTP, un client FTP, un client WebDAV, un client S3, un client SCP et un gestionnaire de fichiers pour Windows.
 
-****Découvrez** comment configurer WinSCP pour gérer vos buckets et vos objets.**
+**Découvrez comment configurer WinSCP pour gérer vos buckets et vos objets.**
 
 ## Prérequis
 
