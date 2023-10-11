@@ -127,7 +127,7 @@ Rozwiązanie Anty-DDoS (VAC) obejmuje trzy tryby filtrowania: automatyczne, sta�
 Cały ruch przechodzi przez system mitygacji zanim dotrze do serwera. Zalecamy ten tryb w przypadku usług będących przedmiotem częstych ataków.<br>
 Pamiętaj, że stała mitygacja jest częścią rozwiązania Anty-DDoS (VAC). Możesz ją włączyć dla Twojego IP bez aktywacji Network Firewall.
 
-Aby go aktywować, kliknij menu `Bare Metal Cloud`{.action}i otwórz `Network`{.action}, następnie kliknij `IP`{.action}. Kliknij przycisk `...`{.action} po prawej stronie odpowiedniego IPv4 i wybierz `Filtrowanie: tryb stały`{.action}.
+Aby go aktywować, kliknij menu `Bare Metal Cloud`{.action} i otwórz `Network`{.action}. Następnie kliknij `IP`{.action}. Kliknij przycisk `...`{.action} po prawej stronie odpowiedniego IPv4 i wybierz `Filtrowanie: tryb stały`{.action}.
 
 **Wymuszone filtrowanie**: tryb ten jest aktywowany automatycznie po wykryciu ataku na serwer. Po włączeniu w infrastrukturę Anty-DDoS tryb ten nie może zostać wyłączony. W celu ochrony naszej infrastruktury, ochrona będzie aktywowana przez cały czas trwania ataku, aż zostanie całkowicie mitygowana.
 

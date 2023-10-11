@@ -40,7 +40,7 @@ Per proteggere la propria infrastruttura e i server dei propri clienti, OVHcloud
 > Il Network Firewall protegge l'indirizzo IP associato a un server. Pertanto, se hai un server con più indirizzi IP, devi configurare ciascun IP separatamente. Una configurazione globale del server non è possibile.
 > 
 
-Dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, accedi alla sezione `Bare Metal Cloud`{.action} e clicca su `Network`{.action}. Clicca su `IP`{.action}. 
+Dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, accedi al menu `Bare Metal Cloud`{.action} e clicca su `Network`{.action}. Clicca su `IP`{.action}. 
 
 Puoi utilizzare il menu a tendina "I tuoi indirizzi IP pubblici e servizi associati" per filtrare i tuoi servizi per categoria.
 

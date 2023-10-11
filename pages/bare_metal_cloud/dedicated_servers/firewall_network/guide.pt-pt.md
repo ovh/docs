@@ -126,7 +126,7 @@ A nossa solução Anti-DDoS (VAC) compreende três modos de mitigação: automá
 Todo o tráfego passa de forma permanente pelo sistema de mitigação antes de atingir o servidor. Recomendamos este modo para os serviços que são alvo de ataques frequentes.<br>
 Tenha em conta que a mitigação permanente faz parte da nossa solução Anti-DDoS (VAC), pode ativá-la no seu IP sem ativar a Network Firewall.
 
-Para o ativar, clique no menu `Bare Metal Cloud`{.action} e abra `Network`{.action}, a seguir clique em `IP`{.action}. Clique nas `...`{.action} à direita do IPv4 em causa e selecione `Mitigação: modo permanente`{.action}.
+Para o ativar, clique no menu `Bare Metal Cloud`{.action} e abra `Network`{.action}. A seguir clique em `IP`{.action}. Clique nas `...`{.action} à direita do IPv4 em causa e selecione `Mitigação: modo permanente`{.action}.
 
 **Mitigação forçada**: este modo é ativado automaticamente assim que um ataque é detetado no servidor. Uma vez ativado na nossa infraestrutura Anti-DDoS, este modo não pode ser desativado. De forma a proteger a nossa infraestrutura, a proteção será ativada durante todo o período do ataque, até que seja totalmente mitigada.
 
