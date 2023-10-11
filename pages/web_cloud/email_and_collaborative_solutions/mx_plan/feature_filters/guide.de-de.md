@@ -104,7 +104,7 @@ Sie können zwischen diesen Arten von Aktionen wählen:
 
 > [!warning]
 >
-> In unserem Beispiel erwähnen wir [SPAM] im Betreff einer E-Mail. Dieser Hinweis erscheint, wenn das Antispam-Programm des Empfangsservers E-Mails, die er als Junk-E-Mails einstuft, direkt in den Posteingang sendet. Dies gilt auch für die historische MX Plan Version.
+> Das Beispiel bezieht sich auf den Vermerk [SPAM] im Betreff einer E-Mail. Er wird hinzugefügt, wenn vom Antispam-Programm des Empfangsservers als unerwünscht eingestufte E-Mails im Posteingang abgelegt werden. Dies gilt für den MX Plan in der Version *Legacy*.
 
 ||Header|Regel|Wert|Aktion|
 |---|---|---|---|---|
