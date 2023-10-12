@@ -1,18 +1,16 @@
 ---
 title: What are the IP addresses of the OVHcloud monitoring?
 excerpt: Find here the IP addresses to fill in when setting up a firewall so that OVHcloud monitoring will continue to work on your server
-updated: 2023-09-21
+updated: 2023-10-12
 ---
 
 ## Objective
 
-The monitoring service allows OVHcloud to monitor the status of your machine and automatically trigger the intervention of a technician in the datacenter.
+The monitoring service allows OVHcloud to monitor the status of your machine (if chosen by the client) and triggers the intervention of a technician in the datacenter (if chosen by the client).
 
-All the servers of our customers and the entire network are monitored 24/7 by OVHcloud technical teams.
+All OVHcloud servers are delivered with a monitoring system that can be customized from the OVHcloud Control Panel. For more information on how to customise the monitoring system on your services to optimize your production, please consult [this section](#monitoring).
 
-OVHcloud intervenes as soon as an alert (non-response to the pings) is triggered in order to minimize the downtime of the servers and the network.
-
-To implement a restrictive firewall, especially on ICMP, and continue to benefit from OVHcloud monitoring, it is necessary to authorize the IPs that you will find below.
+If you are implementing a restrictive firewall, especially on ICMP, and have chosen to benefit from the OVHcloud monitoring, it is necessary to authorize the IPs that you will find below.
 
 ## Requirements
 
@@ -43,7 +41,7 @@ Reverse|IP|Protocol|
 > <div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">root@nsXXXX:# tcpdump host server.ip | grep ICMP</span> </pre></div>
 >
 
-### Server monitoring
+### Server monitoring <a name="monitoring"></a>
 
 Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia){.external} and select the `Bare Metal Cloud`{.action} tab. Select the server concerned in the `Dedicated servers`{.action} menu.
 
