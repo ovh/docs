@@ -101,8 +101,9 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 | --- | --- | --- |
 | Gérer le plan d’adressage IP et choisir les protocoles réseaux adéquats | RA | I |
 | Filtrer les accès réseau à l'instance | RA | I |
-| Assurer le fonctionnement des systèmes automatiques de gestion du réseau (architecture, mise en oeuvre, maintenance logicielle et matérielle pour les réseaux publics et privés déployés) | I | RA |
 | Filtrer les connexions réseaux et déployer une architecture sécurisée en fonction des besoins (FW, WAF, IPS/IDS, protocoles sécurisés, etc) | RA |   |
+| Assurer le fonctionnement des systèmes automatiques de gestion du réseau (architecture, mise en oeuvre, maintenance logicielle et matérielle pour les réseaux publics et privés déployés) | I | RA |
+
 
 ##### **3.1.6. Gestion**
 
