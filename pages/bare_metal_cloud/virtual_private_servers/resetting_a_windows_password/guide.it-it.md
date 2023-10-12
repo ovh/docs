@@ -1,7 +1,7 @@
 ---
 title: Modificare la password amministratore su un server Windows
 excerpt: "Questa guida ti mostra come ripristinare la password di un account Windows Administrator su un VPS o un’istanza Public Cloud in Rescue mode"
-updated: 2023-10-29
+updated: 2023-10-12
 ---
 
 > [!primary]
