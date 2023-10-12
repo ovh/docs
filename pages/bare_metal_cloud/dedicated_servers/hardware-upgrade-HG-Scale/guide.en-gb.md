@@ -23,7 +23,7 @@ Our High Grade and Scale servers offer a scalable option that can allow you to i
 
 ## Instructions
 
-Log into your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). Switch to the `Bare Metal Cloud`{.action} section and select your server from **Dedicated Servers**. In the `Hardware`{.action} tab, click on Increase storage{.action}. If you wish to increase RAM instead, click on `Increase RAM`{.action}.
+Log into your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). Switch to the `Bare Metal Cloud`{.action} section and select your server from **Dedicated Servers**. In the `Hardware`{.action} tab, click on `Increase storage`{.action}. If you wish to increase RAM instead, click on `Increase RAM`{.action}.
 
 ![increase storage](images/increasestorage.png){.thumbnail}
 
@@ -31,7 +31,7 @@ In the next tab, select the desired storage option and click on `Order`{.action}
 
 ![storage option](images/selectstorage.png){.thumbnail}
 
-Once the order is paid, a confirmation email will be sent to your account with link to schedule the intervention.
+Once the order is paid, a confirmation email will be sent to your account with a link to schedule the intervention for the hardware upgrade.
 
 When you click on the link provided in the email, you will be redirected to the dedicated server's dashboard. This time, click on `Schedule your intervention`{.action}.
 
