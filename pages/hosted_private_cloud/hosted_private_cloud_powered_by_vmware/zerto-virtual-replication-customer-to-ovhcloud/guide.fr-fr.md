@@ -28,7 +28,7 @@ Consultez notre guide « [Zerto entre deux datacenters OVHcloud](/pages/hosted_p
 
 >[!warning]
 >
-> OVHcloud supporte les versions N-1 de Zerto
+> OVHcloud supporte les versions N-1 de Zerto (Actuellement jusqu'à la version 9.5 incluse)
 > Vous pouvez retrouver les différentes versions disponibles ici : <https://help.zerto.com/kb/000004585>.
 >
 
