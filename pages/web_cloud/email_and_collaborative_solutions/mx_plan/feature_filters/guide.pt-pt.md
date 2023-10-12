@@ -70,14 +70,14 @@ Primeira escolha (em cabeçalho):
 
 - **De:** designa o endereço de e-mail do remetente, por exemplo: "Se o expedidor ..."
 - **A:** designa o endereço de e-mail do destinatário, por exemplo: "Se o destinatário ..."
-- **Assumpto da mensagem:** significa o conteúdo do assumpto da mensagem, por exemplo: "Se o assumpto da mensagem ... ".
-- **Outra:** indique outro elemento no cabeçalho do e-mail.
+- **Assumpto da mensagem:** significa o conteúdo do assumpto da mensagem, por exemplo: "Se o assumpto da mensagem ... "
+- **Outra:** indique outro elemento no cabeçalho do e-mail
 
 Segunda escolha (regra):
 
-- **spf:** Indique um valor do [registo SPF](/pages/web_cloud/domains/dns_zone_spf) a ter em conta, por exemplo: ".. sem registo SPF ... ".
-- **contém:** exemplo: "... contém ... ".
-- **não contém:** exemplo: "... não contém ... ".
+- **spf:** Indique um valor do [registo SPF](/pages/web_cloud/domains/dns_zone_spf) a ter em conta, por exemplo: ".. sem registo SPF ... "
+- **contém:** exemplo: "... contém ..."
+- **não contém:** exemplo: "... não contém ..."
 
 Terceira escolha (valor):
 
