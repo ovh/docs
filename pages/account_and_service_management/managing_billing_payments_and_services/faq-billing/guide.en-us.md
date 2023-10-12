@@ -46,7 +46,7 @@ For further information, please read this detailed guide: [Managing renewal for 
 
 ### How do I disable automatic renewal?
 
-Log in to the OVHcloud Control Panel, and click on the `Products and services`{.action} shortcut in the dashboard. Click on the three dots next to the service concerned, then select `Configure renewal`{.action}. You can then choose manual mode. This mode is not available for certain services — e.g. domain names, web hosting plans, VPS, and dedicated servers.
+Log in to the OVHcloud Control Panel, and click on the `Products and services`{.action} shortcut in the dashboard. Click on the three dots next to the service concerned, then select `Configure renewal`{.action}. You can then choose manual mode. This mode is only available for certain services — e.g. domain names, web hosting plans, VPS, and dedicated servers.
 
 To cancel a service, go to [How do I cancel a service?](#cancelservice)
 
