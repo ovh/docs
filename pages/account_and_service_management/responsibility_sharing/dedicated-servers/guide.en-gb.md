@@ -96,7 +96,7 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 | --- | --- | --- |
 | Ensure that automatic network management systems works (architecture, implementation, software and hardware maintenance for deployed public and private networks, primary IP of dedicated server) | I | RA |
 | Manage IP addressing plan | RA | I |
-| filter network connections and deploy a secured architecture following business needs (FW, WAF, IPS/IDS, trusted protocols, etc ..)  | RA |  |
+| Filter network connections and deploy a secured architecture following business needs (FW, WAF, IPS/IDS, trusted protocols, etc.)  | RA |  |
 
 ##### **3.1.6. Management**
 
