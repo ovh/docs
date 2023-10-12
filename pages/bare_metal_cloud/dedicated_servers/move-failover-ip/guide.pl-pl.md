@@ -60,7 +60,7 @@ Technologia ta pozwala na wymianę adresów IP między poszczególnymi rozwiąza
 > Tylko blok o jednym rozmiarze (/32) będzie można przenieść z serwera dedykowanego na VPS.
 >
 
-Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), kliknij menu `Bare Metal Cloud`{.action}, następnie otwórz sekcję  `IP`{.action}.
+Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), kliknij menu `Bare Metal Cloud`{.action} i otwórz sekcję `Network`{.action}. Następnie kliknij przycisk `IP`{.action}.
 
 Kliknij na zakładkę `Additional IP`{.action}.
 

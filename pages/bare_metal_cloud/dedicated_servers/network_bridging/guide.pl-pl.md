@@ -52,7 +52,7 @@ Dla tego przykładu użyjemy następujących wartości w naszych przykładach ko
 
 ### Przypisz wirtualny adres MAC
 
-Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, kliknij menu `Bare Metal Cloud`{.action}, a następnie wybierz sekcję `IP`{.action}.
+Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, kliknij menu `Bare Metal Cloud`{.action}, a następnie wybierz sekcję `Network`{.action}. Następnie kliknij przycisk `IP`{.action}.
 
 Kliknij na zakładkę `Additional IP`{.action}.
 

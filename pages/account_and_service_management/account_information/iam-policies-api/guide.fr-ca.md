@@ -224,7 +224,7 @@ Vérifiez cela avec `GET /iam/policy`:
 ]
 ```
 
-La politique a été créée avec succès. Maintenant, "***user1***" peut **effectuer des redémarrages et créer des sauvegardes (snapshots))** sur le VPS "***urn:v1:eu:resource:vps:vps-5b48d78b.vps.ovh.net***".
+La politique a été créée avec succès. Maintenant, "***user1***" peut **effectuer des redémarrages et créer des sauvegardes (snapshots)** sur le VPS "***urn:v1:eu:resource:vps:vps-5b48d78b.vps.ovh.net***".
 
 ### Identités
 
