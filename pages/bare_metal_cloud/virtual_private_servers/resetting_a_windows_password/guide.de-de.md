@@ -1,7 +1,7 @@
 ---
 title: Administratorpasswort auf einem Windows-Server ändern
 excerpt: Erfahren Sie hier, wie Sie das Passwort Ihres Administrator-Accounts von Windows auf einem VPS oder einer Public Cloud Instanz mithilfe des OVHcloud Rescue-Modus  zurücksetzen
-updated: 2023-10-29
+updated: 2023-10-12
 ---
 
 > [!primary]

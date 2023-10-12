@@ -1,7 +1,7 @@
 ---
 title: Cambiar la contraseña de administrador en un servidor Windows
 excerpt: "Cómo restaurar la contraseña de la cuenta de administrador de Windows en un VPS o una instancia de Public Cloud utilizando el modo de rescate de OVHcloud"
-updated: 2023-10-29
+updated: 2023-10-12
 ---
 
 > [!primary]

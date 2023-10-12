@@ -1,7 +1,7 @@
 ---
 title: Alterar a palavra-passe de administrador num servidor Windows
 excerpt: "Descubra como redefinir a palavra-passe da sua conta de Administrador Windows num VPS ou numa instância Public Cloud graças ao modo Rescue da OVHcloud"
-updated: 2023-10-29
+updated: 2023-10-12
 ---
 
 > [!primary]
