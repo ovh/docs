@@ -1,7 +1,7 @@
 ---
 title: RACI Serveurs Dédiés
 excerpt: RACI entre OVHcloud et le client pour l'utilisation des Serveurs Dédiés
-updated: 2021-12-01
+updated: 2023-10-12
 ---
 
 ## Objectif
@@ -96,6 +96,7 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 | --- | --- | --- |
 | Assurer le fonctionnement des systèmes automatiques de gestion du réseau (architecture, mise en oeuvre, maintenance logicielle et matérielle pour les réseaux publics et privés déployés, IP primaire du serveur dédié) | I | RA |
 | Gérer le plan d’adressage IP | RA | I |
+| Filtrer les connexions réseaux et déployer une architecture sécurisée en fonction des besoins (FW, WAF, IPS/IDS, protocoles sécurisés, etc)  | RA |  |
 
 ##### **3.1.6. Gestion**
 
