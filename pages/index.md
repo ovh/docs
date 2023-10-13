@@ -1369,6 +1369,7 @@
                 + [Creating and using a shared account](web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_shared_account)
                 + [Creating automatic signatures](web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_footers)
                 + [How to obtain an Outlook licence for Exchange](web_cloud/email_and_collaborative_solutions/microsoft_exchange/office_outlook_license)
+                + [Creating send connector for Private and Trusted Exchange](web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_send_connector)
             + [Setting up an email application on your computer](web-cloud-email-collaborative-solutions-microsoft-exchange-setting-up-email-application-on-computer)
                 + [Configuring your Exchange account in Outlook for Windows](web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016)
                 + [Configuring your Exchange account in Outlook 2016 for Mac](web_cloud/email_and_collaborative_solutions/microsoft_exchange/how_to_configure_outlook_2016_mac)
