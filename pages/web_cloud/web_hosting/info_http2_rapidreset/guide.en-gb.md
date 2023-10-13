@@ -18,20 +18,24 @@ Several variations using different query order resulted from the first behavior 
 
 |Range of products|Products|Impact|
 |---|---|---|
-|Domain & Cloud Web|All products|Not impacted|
-|Network|IPLB|Not impacted|
 |Web hosting|CDN|Not impacted|
+|Web Cloud|Web hosting - Cloud hosting|Not impacted
+|Bare Metal Cloud|Network - Load Balancer|Not impacted|
 
 ## How to mitigate the vulnerability
 
-OVHcloud-initiated mitigation
+### OVHcloud-initiated mitigation
 
-OVHcloud infrastructure is not impacted, no action taken on our side.
+If you are using on the service above, OVHcloud took the appropriate actions to mitigate the vulnerability and you are not impacted.
 Customer-initiated mitigation
 
-Services such as web servers that OVHcloud cannot manage must be patched.
+### Customer-initiated mitigation
 
-## Go further <a name="go-further"></a>
+In the case your website is hosted on a Cloud Instance (Public Cloud or Hosted Private Cloud) or on a Bare Metal Server having HTTP/2 enabled and exposed on the Internet, we recommend you to apply the latest upgrades to improve your resiliency.
+
+The main vendors released advisories and statements in order to guide you and bring more information.
+
+## External references
 
 [National vulnerability database - CVE-2023-44487 Detail](https://nvd.nist.gov/vuln/detail/CVE-2023-44487)
 
@@ -42,9 +46,3 @@ Services such as web servers that OVHcloud cannot manage must be patched.
 [CISA - HTTP/2 Rapid Reset Vulnerability, CVE-2023-44487](https://www.cisa.gov/news-events/alerts/2023/10/10/http2-rapid-reset-vulnerability-cve-2023-44487)
 
 [Google Cloud - How it works: The novel HTTP/2 ‘Rapid Reset’ DDoS attack](https://cloud.google.com/blog/products/identity-security/how-it-works-the-novel-http2-rapid-reset-ddos-attack)
-
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/).
-
-If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-gb/support-levels/).
-
-Join our community of users on <https://community.ovh.com/en/>. 
