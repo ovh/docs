@@ -43,12 +43,8 @@ Per impostare un firewall restrittivo, in particolare sull'ICMP, e continuare a 
 
 > [!primary]
 >
-> Se il tuo server è situato a Roubaix 3, è necessario recuperare l'ultimo IP tramite tcpdump.
->
-> ```
-> tcpdump host ip.fisso.del.server | grep ICMP
-> ```
->
+> Se il tuo server è situato a Roubaix 3, è necessario recuperare l'ultimo IP tramite tcpdump:
+> <pre class="highlight language-console"><code class="language-console">tcpdump host server_ip | grep ICMP</code></pre>
 
 ### Attiva o disattiva il monitoring
 

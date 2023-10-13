@@ -32,7 +32,8 @@ If you do not renew your service before this date, it will simply be suspended, 
 #### Tips and tricks
 
 Check the status of your services, and manage their renewal in the `My services`{.action} section of the OVHcloud Control Panel.
-Log in and manually renew your services on the page <https://www.ovh.co.uk/cgi-bin/order/renew.cgi>
+Log in and manually renew your services on the page <https://www.ovh.co.uk/cgi-bin/order/renew.cgi>.
+
 For further information, please read this detailed guide: [Managing renewal for your services](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal).
 
 ### How do I enable automatic renewal?

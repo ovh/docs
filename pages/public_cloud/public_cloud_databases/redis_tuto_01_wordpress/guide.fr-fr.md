@@ -2,7 +2,7 @@
 title: "Redis - Boostez votre CMS (à partir de l'exemple de WordPress) (EN)"
 keywords: wordpress, redis, dbaas, cms
 excerpt: Boost the performances of your WordPress CMS with the power of Redis
-updated: 2021-11-22
+updated: 2023-10-12
 ---
 
 ## Objective
@@ -106,7 +106,7 @@ define('WP_REDIS_SCHEME', 'tls');
 define('WP_REDIS_HOST', 'my_redis-123456-123456.database.cloud.ovh.net');
 define('WP_REDIS_PORT', '20185');
 define('WP_REDIS_PASSWORD', ['my_redis_user', 'my_password_here']);
-define('WP_CACHE_KEY_SALT', 'myvps_' );
+define('WP_CACHE_KEY_SALT', 'myOVHcloudRedis_' );
 ```
 
 #### Modify the host

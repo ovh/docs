@@ -40,7 +40,7 @@ In questa interfaccia vengono mostrate anche le informazioni principali della tu
 
 ![Informazioni generali](images/web-cloud-databases-General-information.png){.thumbnail}
 
-## Gestisci i tuoi accessi
+### Gestisci i tuoi accessi
 
 Il tuo Web Cloud Databases è accessibile dai tuoi hosting Web OVHcloud o dalla rete pubblica.
 
@@ -138,16 +138,16 @@ Nel riquadro **"Configurazione generale di MySql"** troverai la configurazione a
 > <b>sql_mode</b>:
 >
 > &emsp;&emsp;Modalità di default di MariaDB 10.1:
-> <pre class="highlight command-prompt"> <span class="prompt">NO_ENGINE_SUBSTITUTION,NO_AUTO_CREATE_USER</span> </pre>
+> <pre class="highlight language-console"><code class="language-console">NO_ENGINE_SUBSTITUTION,NO_AUTO_CREATE_USER</code></pre>
 > 
 > &emsp;&emsp;Modalità di default di MariaDB 10.2 e versioni superiori:
-> <pre class="highlight command-prompt"> <span class="prompt">STRICT_TRANS_TABLES,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION</span> </pre>
+> <pre class="highlight language-console"><code class="language-console">STRICT_TRANS_TABLES,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION</code></pre>
 >
 > &emsp;&emsp;Modalità di default di MySQL 5.6:
-> <pre class="highlight command-prompt"> <span class="prompt">NO_ENGINE_SUBSTITUTION</span> </pre>
+> <pre class="highlight language-console"><code class="language-console">NO_ENGINE_SUBSTITUTION</code></pre>
 > 
 > &emsp;&emsp;Modalità di default di MySQL 5.7 e versioni superiori:
-> <pre class="highlight command-prompt"> <span class="prompt">ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION</span> </pre>
+> <pre class="highlight language-console"><code class="language-console">ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION</code></pre>
 >
 > Consigliamo di utilizzare sempre la modalità di default, tranne nel caso in cui il database sia stato aggiornato a partire da una versione con modalità di default differente da quella della versione attuale.
 >

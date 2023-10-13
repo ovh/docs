@@ -43,12 +43,8 @@ Aby wdrożyć restrykcyjny firewall, zwłaszcza w zakresie ICMP i nadal korzysta
 
 > [!primary]
 >
-> Jeśli Twój serwer znajduje się w Roubaix 3, pobierz najnowszy adres IP przez tcpdump.
->
-> ```
-> tcpdump host stały.adres.ip.serwera | grep ICMP
-> ```
->
+> Jeśli Twój serwer znajduje się w Roubaix 3, pobierz najnowszy adres IP przez tcpdump:
+> <pre class="highlight language-console"><code class="language-console">tcpdump host server_ip | grep ICMP</code></pre>
 
 ### Włącz lub wyłącz monitoring
 

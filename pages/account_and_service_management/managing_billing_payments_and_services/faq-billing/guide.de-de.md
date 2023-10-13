@@ -34,6 +34,7 @@ Verlängern Sie Ihren Dienst nicht vor dem Ablaufdatum, wird er gesperrt und nac
 
 Den Status Ihrer Dienste überprüfen und ihre Verlängerung verwalten können Sie im Bereich `Meine Dienstleistungen`{.action} des Kundencenters.
 Nach Anmeldung auf der Seite <https://www.ovh.de/cgi-bin/order/renew.cgi> lassen sich hier Ihre Dienste manuell verlängern.
+
 Diese Anleitung beschreibt die Verlängerung ausführlich: [Verlängerung Ihrer OVHcloud Dienste verwalten](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal)
 
 ### Wie kann ich die automatische Verlängerung aktivieren?
