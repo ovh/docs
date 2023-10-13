@@ -39,12 +39,8 @@ Pour mettre en place un firewall restrictif, notamment sur l'ICMP, et continuer 
 
 > [!primary]
 >
-> Si votre serveur est situé à Roubaix 3, il faut récupérer la dernière IP via tcpdump.
->
-> ```
-> tcpdump host ip.fixe.du.serveur | grep ICMP
-> ```
->
+> Si votre serveur est situé à Roubaix 3, il faut récupérer la dernière IP via tcpdump :
+> <pre class="highlight language-console"><code class="language-console">tcpdump host server_ip | grep ICMP</code></pre>
 
 ### Activer ou désactiver le monitoring
 

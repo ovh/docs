@@ -40,7 +40,7 @@ To implement a restrictive firewall, especially on ICMP, and continue to benefit
 > [!primary]
 >
 > If your server is located in Roubaix 3, you have to retrieve the last IP via tcpdump:
-> <pre class="highlight language-console"><code class="language-console">tcpdump host server.ip | grep ICMP</code></pre>
+> <pre class="highlight language-console"><code class="language-console">tcpdump host server_ip | grep ICMP</code></pre>
 >
 
 ### Server monitoring
