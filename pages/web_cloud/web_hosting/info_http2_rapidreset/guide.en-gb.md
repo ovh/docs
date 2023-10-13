@@ -19,7 +19,7 @@ Several variations using different query orders resulted from the first behaviou
 |Range of products|Products|Impact|
 |---|---|---|
 |Web hosting|CDN|Not impacted|
-|Web Cloud|Web hosting - Cloud hosting|Not impacted
+|Web Cloud|Web hosting - Cloud hosting|Not impacted|
 |Bare Metal Cloud|Network - Load Balancer|Not impacted|
 
 ## How to mitigate the vulnerability
@@ -42,7 +42,3 @@ The main vendors released advisories and statements in order to guide you and pr
 [CVE Numbering Authorities - CVE-2023-44487](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-44487)
 
 [Qualys community - CVE-2023-44487 HTTP/2 Rapid Reset Attack](https://blog.qualys.com/vulnerabilities-threat-research/2023/10/10/cve-2023-44487-http-2-rapid-reset-attack)
-
-[CISA - HTTP/2 Rapid Reset Vulnerability, CVE-2023-44487](https://www.cisa.gov/news-events/alerts/2023/10/10/http2-rapid-reset-vulnerability-cve-2023-44487)
-
-[Google Cloud - How it works: The novel HTTP/2 ‘Rapid Reset’ DDoS attack](https://cloud.google.com/blog/products/identity-security/how-it-works-the-novel-http2-rapid-reset-ddos-attack)
