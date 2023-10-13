@@ -19,7 +19,7 @@ Cette action est rendue possible grâce aux informations renseignées dans un en
 
 Vous devrez donc vous assurer de mettre dans l'enregistrement SPF les sources d'envoi que vous utilisez pour émettre vos e-mails avec votre nom de domaine. Ces sources peuvent être votre propre serveur e-mail, celui de votre prestataire ou l'une des solutions e-mail d'OVHcloud.
 
-> **Exemple** <br> 
+> **Exemple** <br>
 > Vous envoyez un e-mail depuis votre adresse `contact@mydomain.ovh`.
 > Seul le serveur sortant **A** (Outgoing Mail Server **A**) est déclaré dans l'enregistrement SPF du nom de domaine `mydomain.ovh`.
 > Lorsque le serveur de réception (Inbound Mail Server) reçoit l'e-mail, celui-ci va lire la zone DNS de votre nom de domaine `mydomain.ovh` pour inspecter l'enregistrement SPF.
