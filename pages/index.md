@@ -1069,6 +1069,7 @@
             + [Geolocating your website](web_cloud/web_hosting/multisites_geolocation)
             + [Optimising your website’s performance](web_cloud/web_hosting/optimise_your_website_performance)
         + [Troubleshooting](web-cloud-hosting-troubleshooting)
+            + [Information - HTTP2 rapid reset vulnerability](web_cloud/web_hosting/info_http2_rapidreset)
             + [What do I do if my website is down?](web_cloud/web_hosting/diagnostic-website-not-accessible)
             + [My website is slow. What to do?](web_cloud/web_hosting/diagnostic_slownesses)
             + [Resolving the most common 1-click module errors](web_cloud/web_hosting/diagnostic_errors_module1clic)
