@@ -1,5 +1,5 @@
 ---
-title: "Comment atténuer la vulnérabilité HTTP/2 Rapid Reset (EN)"
+title: "Comment gérer la vulnérabilité HTTP/2 Rapid Reset (EN)"
 excerpt: "Find out how to manage the HTTP/2 Rapid Reset vulnerability"
 updated: 2023-10-13
 ---
