@@ -59,7 +59,7 @@ La mise en place d'un connecteur d'envoi se fait en 3 étapes.
 
 - [1. Ajouter le connecteur d'envoi à votre plateforme](#addconnector) : Vous entrez les paramètres du connecteur d'envoi que votre prestataire vous a transmis.
 - [2. Configurer une adresse e-mail sur un connecteur d'envoi](#addaddress) : Vous attachez le connecteur d'envoi à une ou plusieurs adresses e-mail afin qu'elles envoient au travers de ce connecteur lors d'un envoi .
-- [3. Vérifier que votre adresse e-mail utilise le connecteur d'envoi](#checkheader) : réaliser un envoi depuis une adresse e-mail paramètrée avec un connecteur et récupérer l'en-tête de l'e-mail depuis l'adresse e-mail de réception pour vérifier que l'e-mail est bien passé au travers du connecteur d'envoi.
+- [3. Vérifier que votre adresse e-mail utilise le connecteur d'envoi](#checkheader) : réaliser un envoi depuis une adresse e-mail paramétrée avec un connecteur et récupérer l'en-tête de l'e-mail depuis l'adresse e-mail de réception pour vérifier que l'e-mail est bien passé au travers du connecteur d'envoi.
 
 Vous trouverez aussi dans ce guide d'autres opérations utiles concernant les connecteurs d'envoi.
 
@@ -77,8 +77,8 @@ Avant de commencer, munissez-vous des informations suivantes. Elles doivent êtr
 
 - l'adresse du serveur d'envoi (SMTP)
 - le port utilisé pour l'envoi (exemple: 587)
-- le nom d'utilisateur associé (exemple: une adresse e-mail) , **peut être optionel selon votre connecteur d'envoi**.
-- le mot de passe associé au nom d'utilisateur , **peut être optionel selon votre connecteur d'envoi**.
+- le nom d'utilisateur associé (exemple: une adresse e-mail) , **peut être optionnel selon votre connecteur d'envoi**.
+- le mot de passe associé au nom d'utilisateur , **peut être optionnel selon votre connecteur d'envoi**.
 
 Ensuite, connectez-vous aux API OVHcloud avec vos identifiants. N'hésitez pas à vous appuyer de notre guide [Premiers pas avec les API OVHcloud ](pages/manage_and_operate/api/first-steps).
 
@@ -160,7 +160,7 @@ Vous obtenez ce type de résultat :
 
 Pour pouvoir envoyer des e-mails via un connecteur d'envoi, il faut l'associer à une ou plusieurs adresses e-mail.
 
-Utiliser l'appel API de paramètrage d'un compte Exchange afin d'ajouter l'ID de votre connecteur d'envoi sur une adresse e-mail :
+Utiliser l'appel API de paramétrage d'un compte Exchange afin d'ajouter l'ID de votre connecteur d'envoi sur une adresse e-mail :
 
 > [!api]
 >
@@ -241,7 +241,7 @@ From: &lt;newsletter@mydomain.ovh&gt;
 
 ### Retirer un connecteur d'envoi attaché à une adresse e-mail <a name="removeaddress"></a>
 
-Pour retirer un connecteur d'envoi attaché sur un compte de la plateforme Exchange, utilisez l'appel API de paramètrage du compte Exchange concerné afin de changer l'ID de votre connecteur d'envoi par l'ID du serveur d'envoi de votre plateforme Exchange :
+Pour retirer un connecteur d'envoi attaché sur un compte de la plateforme Exchange, utilisez l'appel API de paramétrage du compte Exchange concerné afin de changer l'ID de votre connecteur d'envoi par l'ID du serveur d'envoi de votre plateforme Exchange :
 
 > [!api]
 >
