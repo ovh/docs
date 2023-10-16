@@ -4,10 +4,7 @@ excerpt: "How to create and use a token to connect to all OVHcloud APIs"
 updated: 2023-08-24
 ---
 
-> [!warning]
->
-> This feature is currently in beta. More information can be found at <https://labs.ovhcloud.com/en/>.
->
+
 
 ## Objective
 
