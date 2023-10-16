@@ -1,7 +1,7 @@
 ---
 title: Redis - Connect with Python
 excerpt: Connect to your Public Cloud Databases for Redis using the Python programming language
-updated: 2022-03-24
+updated: 2023-10-16
 ---
 
 ## Objective
@@ -18,7 +18,7 @@ You can find an example on the [Github examples repository](https://github.com/o
 - A [Public Cloud project](https://www.ovhcloud.com/asia/public-cloud/) in your OVHcloud account
 - A Redis database running on your OVHcloud Public Cloud Databases ([this guide](/pages/public_cloud/public_cloud_databases/databases_01_order_control_panel) can help you to meet this requirement)
 - [Configure your Redis instance](/pages/public_cloud/public_cloud_databases/redis_08_prepare_for_incoming_connections) to accept incoming connections
-- A PHP environment with a stable version and public network connectivity (Internet). This guide was made in PHP 7.4.
+- A working Python environment.
 
 ## Concept
 
@@ -44,7 +44,7 @@ Once your Python environment is set up and you begin executing a **python --vers
 
 ```python
 laptop$ python3 --version
-Python 3.9.7
+Python 3.12.0
 ```
 
 In the same console, by typing a **pip list**, check if **redis-py** is correctly installed :
@@ -54,7 +54,7 @@ laptop$  pip list
 Package                Version
 ---------------------- -------
 (...)
-redis                  4.2.0
+redis                  5.0.1
 (...)
 ```
 
@@ -62,7 +62,7 @@ We are now ready to learn how to connect to our Redis instance !
 
 ### Connect with redis-py
 
-In your PHP environment, let's try a connection. To be sure that we are indeed connected, set a data pair and then check we can get the value of it.
+In your Python environment, let's try a connection. To be sure that we are indeed connected, set a data pair and then check we can get the value of it.
 
 *redis-connect.py*
 

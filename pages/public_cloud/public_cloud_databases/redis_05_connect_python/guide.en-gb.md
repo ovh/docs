@@ -1,7 +1,7 @@
 ---
 title: Redis - Connect with Python
 excerpt: Connect to your Public Cloud Databases for Redis using the Python programming language
-updated: 2022-03-24
+updated: 2023-10-16
 ---
 
 ## Objective
