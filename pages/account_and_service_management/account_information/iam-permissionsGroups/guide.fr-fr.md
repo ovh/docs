@@ -7,7 +7,8 @@ updated: 2023-10-16
 
 ## Objectif
 
-Ce guide liste et détail l'ensemble des groupes de permissions mis à disposition par OVHcloud
+OVHcloud met à disposition des groupes de permissions regroupant toutes les actions nécessaires pour des cas d'usage précis.
+Ce guide liste l'ensemble de ces groupes de permissions et détail les actions contenu dans chaque groupe
 
 ## Prérequis
 
@@ -18,6 +19,10 @@ Pour utiliser les groupes de permissions, vous aurez besoin des éléments suiva
 - Savoir [mettre en place des politiques IAM via l'API](/pages/account_and_service_management/account_information/iam-policies-api)
 
 ## En pratique
+
+Les groupes de permissions permettent de mettre en place des politiques d'accès clés en main sans avoir a connaitre la liste exhaustive des actions nécessaires.
+Cette liste est amenée a évoluer avec le temps avec la création de nouveaux groupes de permissions.
+En cas de mise à jour d'un groupe de permission, un nouveau sera crée et l'ancien sera déprécier pour ne pas impacter les politiques IAM existantes.
 
 ### Utiliser les groupes de permissions
 
@@ -5396,7 +5401,7 @@ Donne tout les droits lié à la facturation sur un pack ADSL
 
 #### vRack management
 
-Autorise le rattachement d'un produit à un vRack
+Permet de rattacher de n'importe quel produit du compte client à un vrack
 
 <details>
 <summary>Politique détaillée</summary>
