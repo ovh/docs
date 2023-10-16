@@ -52,7 +52,7 @@ Here is an example for `bash` though other shells are supported:
 
 ``` {.console}
 ovhdata-cli completion bash > ~/ovhdata-cli-completion.sh
-echo 'source ~/ovhdata-cli-completion.sh' > ~/.bashrc
+echo 'source ~/ovhdata-cli-completion.sh' >> ~/.bashrc
 source ~/.bashrc
 ```
 
