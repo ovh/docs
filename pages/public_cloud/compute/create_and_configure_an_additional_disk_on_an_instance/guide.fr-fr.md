@@ -1,7 +1,7 @@
 ---
 title: Créer et configurer un disque supplementaire sur une instance
 excerpt: Découvrez comment attacher un nouveau volume à votre instance Public Cloud
-updated: 2023-10-09
+updated: 2023-10-16
 ---
 
 ## Objectif
@@ -176,8 +176,6 @@ Montez la partition avec les commandes suivantes :
 
 ```bash
 sudo mkdir /mnt/disk
-
-```bash
 sudo mount /dev/vdb1 /mnt/disk/
 ```
 
@@ -244,7 +242,7 @@ Si le disque est indiqué ici comme étant hors-ligne, il doit d'abord être ini
 
 ##### **Initialiser le disque dans Gestion des disques** <a name="initDiskManagement"></a>
 
-Faites un clic-droit sur le disque et sélectionnez `En ligne`{.action}. 
+Faites un clic-droit sur le disque et sélectionnez `En ligne`{.action}.
 
 Si le disque est indiqué ici comme étant hors-ligne, cela est probablement dû à une politique en place sur l'instance. Pour résoudre ce problème, faites un clic-droit sur le disque et sélectionnez `En ligne`{.action}.
 
@@ -254,7 +252,7 @@ Effectuez à nouveau un clic-droit et sélectionnez cette fois-ci `Initialiser l
 
 ![offline disk](images/disk-management-03.png){.thumbnail}
 
-Ensuite, sélectionnez `MBR`{.action} si votre disque additionnel est inférieur à 2TB, ou `GPT`[.action] s'il est supérieur à 2TB, puis cliquez sur `OK`{.action}.
+Ensuite, sélectionnez `MBR`{.action} si votre disque additionnel est inférieur à 2TB, ou `GPT`{.action} s'il est supérieur à 2TB, puis cliquez sur `OK`{.action}.
 
 ![Alt text](images/initialize_disk.png){.thumbnail}
 

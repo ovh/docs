@@ -1,7 +1,7 @@
 ---
 title: Creating and configuring an additional disk on an instance
 excerpt: Find out how to attach a new volume to your Public Cloud instance
-updated: 2023-10-09
+updated: 2023-10-16
 ---
 
 ## Objective
@@ -177,9 +177,6 @@ Mount the partition with the following commands:
 
 ```bash
 sudo mkdir /mnt/disk
-```
-
-```bash
 sudo mount /dev/vdb1 /mnt/disk/
 ```
 
@@ -246,7 +243,7 @@ If the disk is marked as offline here, it needs to be initialised first. You can
 
 ##### **Initialising the disk in Disk Management** <a name="initDiskManagement"></a>
 
-Right-click on the disk and select `Online`{.action}. 
+Right-click on the disk and select `Online`{.action}.
 
 If the disk is marked as offline here, this is likely due to a policy in place on the instance. To fix this, right-click on the disk and select `Online`{.action}.
 
@@ -256,7 +253,7 @@ Then right-click it again and this time select `Initialise Disk`{.action}.
 
 ![offline disk](images/disk-management-03.png){.thumbnail}
 
-Next, select `MBR`{.action} if your additional disk is less than 2TB, or `GPT`[.action] if it is more than 2TB, then click `OK`{.action}.
+Next, select `MBR`{.action} if your additional disk is less than 2TB, or `GPT`{.action} if it is more than 2TB, then click `OK`{.action}.
 
 ![initialise disk](images/initialize_disk.png){.thumbnail}
 
@@ -349,7 +346,7 @@ If you wish to detach a volume from your instance, the best practice is to unmou
 > [!warning]
 >
 > An error message may appear if you have software or processes running on the additional disk. In this case, it is recommended to stop all processes before continuing.
-> 
+>
 
 #### On Linux
 
