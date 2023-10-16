@@ -1,5 +1,5 @@
 ---
-title: Object Storage - Use S3 Object Storage with WinSCP
+title: Object Storage - Utilizza S3 Object Storage con WinSCP (EN)
 excerpt: Learn how to configure WinSCP to manage your buckets and objects
 updated: 2023-10-16
 ---
