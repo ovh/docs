@@ -60,7 +60,7 @@ Below you can find a summary of every configuration option available for Redis s
 |---|---|
 | Parameter | `redis_acl_channels_default` |
 | Value type | string |
-| Minumum | |
+| Minimum | |
 | Maximum | |
 | Values | "allchannels", "resetchannels" |
 | Description | Determines default pub/sub channels' ACL for new users if ACL is not supplied. When this option is not defined, all_channels is assumed to keep backward compatibility. This option doesn't affect Redis configuration acl-pubsub-default. |
@@ -69,7 +69,7 @@ Below you can find a summary of every configuration option available for Redis s
 |---|---|
 | Parameter | `redis_io_threads` |
 | Value type | long |
-| Minumum | 1 |
+| Minimum | 1 |
 | Maximum | 32 |
 | Values | |
 | Description | Redis IO thread count |
@@ -78,7 +78,7 @@ Below you can find a summary of every configuration option available for Redis s
 |---|---|
 | Parameter | `redis_lfu_decay_time` |
 | Value type | long |
-| Minumum | 1 |
+| Minimum | 1 |
 | Maximum | 120 |
 | Values | |
 | Description | LFU maxmemory-policy counter decay time in minutes |
@@ -87,7 +87,7 @@ Below you can find a summary of every configuration option available for Redis s
 |---|---|
 | Parameter | `redis_lfu_log_factor` |
 | Value type | long |
-| Minumum | 0 |
+| Minimum | 0 |
 | Maximum | 100 |
 | Values | |
 | Description | Counter logarithm factor for volatile-lfu and allkeys-lfu maxmemory-policies |
@@ -96,7 +96,7 @@ Below you can find a summary of every configuration option available for Redis s
 |---|---|
 | Parameter | `redis_notify_keyspace_events` |
 | Value type | string |
-| Minumum | |
+| Minimum | |
 | Maximum | |
 | Values | |
 | Description | Set notify-keyspace-events option |
@@ -105,7 +105,7 @@ Below you can find a summary of every configuration option available for Redis s
 |---|---|
 | Parameter | `redis_number_of_databases` |
 | Value type | long |
-| Minumum | 1 |
+| Minimum | 1 |
 | Maximum | 128 |
 | Values | |
 | Description | Set number of redis databases. Changing this will cause a restart of redis service. |
@@ -114,7 +114,7 @@ Below you can find a summary of every configuration option available for Redis s
 |---|---|
 | Parameter | `redis_persistence` |
 | Value type | string |
-| Minumum | |
+| Minimum | |
 | Maximum | |
 | Values | "off", "rdb" |
 | Description | When persistence is 'rdb', Redis does RDB dumps each 10 minutes if any key is changed. Also RDB dumps are done according to backup schedule for backup purposes. When persistence is 'off', no RDB dumps and backups are done, so data can be lost at any moment if service is restarted for any reason, or if service is powered off. Also service can't be forked. |
@@ -123,7 +123,7 @@ Below you can find a summary of every configuration option available for Redis s
 |---|---|
 | Parameter | `redis_pubsub_client_output_buffer_limit` |
 | Value type | long |
-| Minumum | 32 |
+| Minimum | 32 |
 | Maximum | 512 |
 | Values | |
 | Description | Set output buffer limit for pub / sub clients in MB. The value is the hard limit, the soft limit is 1/4 of the hard limit. When setting the limit, be mindful of the available memory in the selected service plan. |
@@ -132,7 +132,7 @@ Below you can find a summary of every configuration option available for Redis s
 |---|---|
 | Parameter | `redis_ssl` |
 | Value type | boolean |
-| Minumum | |
+| Minimum | |
 | Maximum | |
 | Values | |
 | Description | Require SSL to access Redis |
@@ -141,7 +141,7 @@ Below you can find a summary of every configuration option available for Redis s
 |---|---|
 | Parameter | `redis_timeout` |
 | Value type | long |
-| Minumum | 0 |
+| Minimum | 0 |
 | Maximum | 31536000 |
 | Values | |
 | Description | Redis idle connection timeout in seconds |
