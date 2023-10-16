@@ -6,9 +6,9 @@ updated: 2023-10-12
 
 ## Objective
 
-The monitoring service allows OVHcloud to monitor the status of your machine (if chosen by the client) and triggers the intervention of a technician in the datacenter (if chosen by the client).
+The monitoring service allows OVHcloud to monitor the status of your machine and triggers the intervention of a technician in the datacenter (when applicable).
 
-All OVHcloud servers are delivered with a monitoring system that can be customized from the OVHcloud Control Panel. For more information on how to customise the monitoring system on your services to optimize your production, please consult [this section](#monitoring).
+All the servers of our customers and the entire network can be monitored 24/7 by OVHcloud technical teams. In addition, the monitoring system can be customized via the OVHcloud Control Panel. For more information on how to customize it on your services, please consult [this section](#monitoring) of the guide.
 
 If you are implementing a restrictive firewall, especially on ICMP, and have chosen to benefit from the OVHcloud monitoring, it is necessary to authorize the IPs that you will find below.
 
