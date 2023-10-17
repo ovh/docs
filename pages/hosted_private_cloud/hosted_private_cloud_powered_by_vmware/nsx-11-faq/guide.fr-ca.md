@@ -42,12 +42,6 @@ Non, c'est impossible par défaut, la configuration est gérée par OVHcloud et 
 
 Non, c'est impossible pour le Tier-0.
 
-<a name="nsxedgeaddition"></a>
-
-### Est-il possible de modifier ou d'ajouter des VM NSX Edge?
-
-Non, les Edges sont gérés par OVHcloud. Les clients ne peuvent pas les modifier ou en ajouter davantage.
-
 <a name="t1interface capacity"></a>
 
 ### Quel est le nombre maximum d'interfaces (segments connectés) sur une Tier-1 Gateway ?
@@ -93,12 +87,6 @@ Le cluster NSX est totalement compatible avec le vRack. Vous pouvez ajouter le s
 ### Puis-je configurer High Availability (HA) ?
 
 Non, les NSX Edges sont configurées par OVHcloud suivant les bonnes pratiques VMware en matière de HA.
-
-<a name="lb"></a>
-
-### Est-il possible d'utiliser NSX Advanced Load Balancer ?
-
-Cette fonctionnalité sera prochainement disponible.
 
 <a name="api"></a>
 
