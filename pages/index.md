@@ -863,6 +863,7 @@
                 + [AI Notebooks - Tutorial - Fine-tuning LLaMA 2](public_cloud/ai_machine_learning/notebook_tuto_13_fine_tune_llama_v2)
                 + [AI Notebooks - Tutorial - Create and train an image generation model](public_cloud/ai_machine_learning/notebook_tuto_14_image-generation-dcgan)
                 + [AI Notebooks - Tutorial - Fine-Tune and export AI model to ONNX](public_cloud/ai_machine_learning/notebook_tuto_15_finetune_export_onnx_model)
+                + [AI Notebooks - Tutorial - Track your ML models with MLflow inside notebooks](public_cloud/ai_machine_learning/notebook_tuto_16_mlflow)
         + [AI Training](products/public-cloud-ai-and-machine-learning-ai-training)
             + [Guides](public-cloud-ai-and-machine-learning-ai-training-guides)
                 + [AI Training - Features, Capabilities and Limitations](public_cloud/ai_machine_learning/training_guide_01_capabilities)
