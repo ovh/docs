@@ -4377,6 +4377,43 @@ Ce groupe de permissions reprend les droits anciennement porté par le role nicB
 ```
 </details>
 
+#### Control Panel Access
+
+Donne les droits minimum pour accéder à l'espace client OVHcloud.
+
+
+<details>
+<summary>Politique détaillée</summary>
+
+```json
+  {
+    "id": "9a759352-15fa-4d67-9625-e95f093809bf",
+    "urn": "urn:v1:eu:permissionsGroup:ovh:controlPanelAccess",
+    "name": "controlPanelAccess",
+    "owner": "ovh",
+    "description": "Basic rights mandatory to access to the Control Panel",
+    "permissions": {
+      "allow": [
+        {
+          "action": "account:apiovh:me/certificates/get"
+        },
+        {
+          "action": "account:apiovh:me/get"
+        },
+        {
+          "action": "account:apiovh:me/supportLevel/get"
+        },
+        {
+          "action": "account:apiovh:me/tag/get"
+        }
+      ]
+    },
+    "createdAt": "2023-10-17T09:03:53.269511Z",
+    "updatedAt": null
+  }
+```
+</details>
+
 #### Pack ADSL technical
 
 Donne tout les droits techniques sur un pack ADSL
