@@ -4,10 +4,7 @@ excerpt: "How to log in to OpenStack APIs or command lines with OVHcloud service
 updated: 2023-08-24
 ---
 
-> [!warning]
->
-> This feature is currently in beta. Find more information at <https://labs.ovhcloud.com/en/>.
->
+
 
 ## Objective
 

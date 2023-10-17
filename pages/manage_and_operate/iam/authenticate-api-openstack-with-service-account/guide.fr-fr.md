@@ -4,10 +4,7 @@ excerpt: "Comment se connecter aux API ou lignes de commande OpenStack avec ses 
 updated: 2023-08-24
 ---
 
-> [!warning]
->
-> Cette fonctionnalité est actuellement en bêta. Retrouvez plus d'informations sur <https://labs.ovhcloud.com/fr/>.
->
+ 
 
 ## Objectif
 

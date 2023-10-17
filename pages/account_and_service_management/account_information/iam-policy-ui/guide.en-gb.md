@@ -4,10 +4,7 @@ excerpt: "Find out how to give specific access rights to users from an OVHcloud 
 updated: 2023-07-06
 ---
 
-> [!warning]
->
-> This feature is currently in beta. Find more information about it on <https://labs.ovhcloud.com/en/>
->
+
 
 ## Objective
 
