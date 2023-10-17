@@ -8,6 +8,8 @@ updated: 2023-09-12
 
 Routine firmware updates play a pivotal role in upholding your NVMe drives' performance, stability, and security. Such updates often encompass critical bug fixes, enhanced compatibility, and advanced security features that are indispensable for preserving your data integrity and maintaining optimal operational efficiency.
 
+Firmware changelog : <https://last-public-ovh-baremetal.snap.mirrors.ovh.net/hardware/PM9A1/PM9A1_FW_Change_Notification_for_General_customer_v2.1_PDF.pdf>
+
 **The purpose of this guide is to help you upgrade your NVMe Samsung PM9A1 firmware.**
 
 ## Requirements
@@ -82,6 +84,12 @@ If the firmware version for all your drive is already version **GXA7802Q**, your
 On the other hand, if at least one firmware is different from version **GXA7802Q**, you must proceed to the update detailed in step 4.
 
 #### Step 4 - Firmware update
+
+Download the firmware binary on your server :
+
+```bash
+wget https://last-public-ovh-baremetal.snap.mirrors.ovh.net/hardware/PM9A1/GXA7802Q_Noformat.bin
+```
 
 Execute the following command for each identified drive with a firmware different from version **GXA7802Q**:
 
@@ -158,6 +166,12 @@ If the `Firmware Revision` for all your NVMe is already version **GXA7802Q**, yo
 On the other hand, if at least one firmware is different from version **GXA7802Q**, you must proceed to the update detailed in step 3.
 
 #### Step 3 - Firmware update
+
+Download the firmware binary on your server :
+
+```bash
+wget https://last-public-ovh-baremetal.snap.mirrors.ovh.net/hardware/PM9A1/GXA7802Q_Noformat.bin
+```
 
 Execute the following command for each identified drive with a firmware different from version **GXA7802Q**:
 
@@ -262,6 +276,8 @@ If the firmware version for all your drives is already version **GXA7802Q**, you
 On the other hand, if at least one firmware is different from version **GXA7802Q**, you must proceed to the update detailed in step 4.
 
 #### Step 4 - Firmware update
+
+Download the firmware binary on your server : <https://last-public-ovh-baremetal.snap.mirrors.ovh.net/hardware/PM9A1/GXA7802Q_Noformat.bin>
 
 Execute the following command for each identified drive with a firmware different from version **GXA7802Q**:
 
