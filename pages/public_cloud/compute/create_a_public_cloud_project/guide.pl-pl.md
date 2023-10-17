@@ -48,6 +48,12 @@ Po zakończeniu operacji nowy projekt Public Cloud będzie dostępny w sekcji `P
 
 ## Sprawdź również
 
+[Tworzenie pierwszej instancji Public Cloud i łączenie się z nią](/pages/public_cloud/compute/public-cloud-first-steps)
+[Zmiana kontaktów projektu](/pages/public_cloud/compute/change_project_contacts)
+[Delegowanie projektów](/pages/public_cloud/compute/delegate_projects)
+[Usuwanie projektu Public Cloud](/pages/public_cloud/compute/delete_a_project)
+[Rozliczanie należności za usługę Public Cloud](/pages/public_cloud/compute/analyze_billing)
+
 Jeśli potrzebujesz szkolenia lub pomocy technicznej w celu wdrożenia naszych rozwiązań, skontaktuj się z przedstawicielem handlowym lub kliknij [ten link](https://www.ovhcloud.com/pl/professional-services/), aby uzyskać wycenę i poprosić o spersonalizowaną analizę projektu od naszych ekspertów z zespołu Professional Services.
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
