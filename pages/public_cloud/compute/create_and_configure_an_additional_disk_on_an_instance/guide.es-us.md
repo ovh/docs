@@ -178,10 +178,13 @@ Creating journal (32768 blocks): done
 Writing superblocks and filesystem accounting information: done
 ```
 
-monte la partición con los siguientes comandos:
+Monte la partición con los siguientes comandos:
 
 ```bash
 sudo mkdir /mnt/disk
+```
+
+```bash
 sudo mount /dev/vdb1 /mnt/disk/
 ```
 

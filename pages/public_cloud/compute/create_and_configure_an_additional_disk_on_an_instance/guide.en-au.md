@@ -177,6 +177,9 @@ Mount the partition with the following commands:
 
 ```bash
 sudo mkdir /mnt/disk
+```
+
+```bash
 sudo mount /dev/vdb1 /mnt/disk/
 ```
 

@@ -180,8 +180,12 @@ Writing superblocks and filesystem accounting information: done
 
 Monte a partição com os seguintes comandos:
 
+
 ```bash
 sudo mkdir /mnt/disk
+```
+
+```bash
 sudo mount /dev/vdb1 /mnt/disk/
 ```
 

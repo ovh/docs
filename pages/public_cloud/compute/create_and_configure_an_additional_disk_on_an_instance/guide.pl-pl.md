@@ -180,8 +180,12 @@ Writing superblocks and filesystem accounting information: done
 
 Zamontuj partycję za pomocą następujących poleceń:
 
+
 ```bash
 sudo mkdir /mnt/disk
+```
+
+```bash
 sudo mount /dev/vdb1 /mnt/disk/
 ```
 

@@ -179,8 +179,12 @@ Writing superblocks and filesystem accounting information: done
 
 Monta la partizione con questi comandi:
 
+
 ```bash
 sudo mkdir /mnt/disk
+```
+
+```bash
 sudo mount /dev/vdb1 /mnt/disk/
 ```
 
@@ -261,7 +265,7 @@ Quindi, selezionare `MBR`{.action} se il disco aggiuntivo è inferiore a 2TB, o 
 
 ![initialise disk](images/initialize_disk.png){.thumbnail}
 
-##### **Iniziare il disco con DISKpart** <a name="initDiskpart"></a>
+##### **Iniziare il disco con DISKPART** <a name="initDiskpart"></a>
 
 Fai un click con il tasto destro sul pulsante `Inizia`{.action} e apri `Esegui`{.action}.
 
@@ -271,7 +275,7 @@ Clicca su `cmd` e clicca su `OK`{.action} per aprire l'applicazione della riga d
 
 ![run promo](images/run-prompt.png){.thumbnail}
 
-Dal prompt dei comandi, apri DISKpart:
+Dal prompt dei comandi, apri DISKPART:
 
 ```console
 C:\> diskpart

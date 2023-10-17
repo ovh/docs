@@ -1,6 +1,6 @@
 ---
-title: 'Zusätzliches Volume auf einer Instanz erstellen und konfigurieren'
-excerpt: 'Erfahren Sie hier, wie Sie eine neue Disk erstellen zu Ihrer Public Cloud Instanz hinzufügen'
+title: Zusätzliches Volume auf einer Instanz erstellen und konfigurieren
+excerpt: Erfahren Sie hier, wie Sie eine neue Disk erstellen und zu Ihrer Public Cloud Instanz hinzufügen
 updated: 2023-10-16
 ---
 
@@ -160,8 +160,12 @@ Ignore/Cancel? I
 
 Formatieren Sie anschließend die neue Partition `vdb1` mit folgendem Befehl:
 
+
 ```bash
 sudo mkfs.ext4 /dev/vdb1
+```
+
+```console
 mke2fs 1.42.12 (29-Aug-2014)
 Creating filesystem with 2621184 4k blocks and 655360 inodes
 Filesystem UUID: 781be788-c4be-462b-b946-88429a43c0cf
@@ -178,14 +182,20 @@ Mounten Sie die Partition mit folgenden Befehlen:
 
 ```bash
 sudo mkdir /mnt/disk
+```
+
+```bash
 sudo mount /dev/vdb1 /mnt/disk/
 ```
 
 Überprüfen Sie den Mountpunkt mit folgendem Befehl:
 
+
 ```bash
 df -h
+```
 
+```console
 Filesystem Size Used Avail Use% Mounted on
 /dev/vda1 9.8G 840M 8.6G 9% /
 udev 10M 0 10M 0% /dev
@@ -238,21 +248,21 @@ Die neue Disk wird als unbekanntes Volume mit nicht zugewiesenem Speicherplatz a
 
 ![Volume](images/disk-management-01.png){.thumbnail}
 
-Wird die Festplatte als Offline angezeigt, muss sie zuerst initialisiert werden. Sie können hierzu das [Windows GUI](#initDiskManagement) oder das [DISKPART Tool](#initDiskpart) verwenden. Falls nicht, [formatieren Sie nun die Festplatte in der Datenträgerverwaltung](#formatDiskManagement).
+Wird die Disk als `Offline` angezeigt, muss sie zuerst initialisiert werden. Sie können hierzu das [Windows GUI](#initDiskManagement) oder das [DISKPART Tool](#initDiskpart) verwenden. Falls nicht, [formatieren Sie nun die Disk in der Datenträgerverwaltung](#formatDiskManagement).
 
 ##### **Initialisierung der Disk in der Datenträgerverwaltung** <a name="initDiskManagement"></a>
 
 Klicken Sie mit der rechten Maustaste auf die Disk und wählen Sie `Online`{.action}.
 
-Wenn die Festplatte hier als offline angezeigt wird, ist dies wahrscheinlich auf eine auf der Instanz vorhandene Policy zurückzuführen. Um dieses Problem zu lösen, klicken Sie mit der rechten Maustaste auf die Festplatte und wählen Sie `Online`{.action}.
+Wenn die Disk hier als offline angezeigt wird, ist dies wahrscheinlich auf eine auf der Instanz vorhandene Policy zurückzuführen. Um dieses Problem zu lösen, klicken Sie mit der rechten Maustaste auf die Disk und wählen Sie `Online`{.action}.
 
 ![offline disk](images/disk-management-02.png){.thumbnail}
 
-Klicken Sie mit der rechten Maustaste auf die Festplatte und wählen Sie dieses Mal `Festplatte initialisieren`{.action}.
+Klicken Sie mit der rechten Maustaste auf die Disk und wählen Sie dieses Mal `Festplatte initialisieren`{.action}.
 
 ![offline disk](images/disk-management-03.png){.thumbnail}
 
-Wählen Sie als Nächstes `MBR`{.action}, wenn Ihre zusätzliche Festplatte weniger als 2 TB groß ist, oder `GPT`{.action}, wenn sie mehr als 2 TB groß ist, und klicken Sie dann auf `OK`{.action}.
+Wählen Sie als Nächstes `MBR`{.action}, wenn Ihre zusätzliche Disk weniger als 2 TB groß ist, oder `GPT`{.action}, wenn sie mehr als 2 TB groß ist, und klicken Sie dann auf `OK`{.action}.
 
 ![Disk-Initialisierung](images/initialize_disk.png){.thumbnail}
 
