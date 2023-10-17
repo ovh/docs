@@ -98,9 +98,9 @@ You can then reach your notebook’s URL once the notebook is running.
 
 ### Accessing the notebooks
 
-Once our [AI examples repository](https://github.com/ovh/ai-training-examples/) has been cloned in your environment, find the fine-tuning notebook tutorial by following this path: `ai-training-examples` > `notebooks` > `go-further` > `mlflow` > `notebook_tutorial_mlflow.ipynb`.
+Once our [AI examples repository](https://github.com/ovh/ai-training-examples/) has been cloned in your environment, find the fine-tuning notebook tutorial by following this path: `ai-training-examples` > `notebooks` > `go-further` > `mlflow` > `notebook-tutorial-mlflow-integration.ipynb`.
 
-A preview of this notebook can be found on GitHub [here](https://github.com/ovh/ai-training-examples/blob/main/notebooks/go-further/onnx/notebook_finetune_densenet_export_onnx.ipynb).
+A preview of this notebook can be found on GitHub [here](https://github.com/ovh/ai-training-examples/blob/main/notebooks/go-further/mlflow/notebook-tutorial-mlflow-integration.ipynb).
 
 ## Go further
 
