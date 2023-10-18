@@ -155,6 +155,7 @@
             + [Configuring the storage on a HGR-STOR-2 server](bare_metal_cloud/dedicated_servers/hgrstor2_system_configuration)
             + [Choosing the disk group to install an operating system](bare_metal_cloud/dedicated_servers/install_hybrid)
             + [Dedicated Servers - ESXi Partitioning](bare_metal_cloud/dedicated_servers/esxi-partitioning)
+            + [Advance Dedicated Servers - Upgrading your Samsung NVMe PM9A1 firmware](bare_metal_cloud/dedicated_servers/samsung-nvme-fw-upgrade)
         + [Network and IP management](bare-metal-cloud-dedicated-servers-network-and-ip-management)
             + [Moving an Additional IP](bare_metal_cloud/dedicated_servers/move-failover-ip)
             + [Configuring the Network Firewall](bare_metal_cloud/dedicated_servers/firewall_network)
