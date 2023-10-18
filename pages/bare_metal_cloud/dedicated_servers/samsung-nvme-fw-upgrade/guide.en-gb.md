@@ -1,7 +1,7 @@
 ---
 title: Advance Dedicated Servers - Upgrading your Samsung NVMe PM9A1 firmware
 excerpt: Learn how to upgrade your Samsung NVMe PM9A1 firmware for Linux, ESXi and Windows Dedicated Servers
-updated: 2023-09-12
+updated: 2023-10-18
 ---
 
 ## Objective
@@ -103,7 +103,7 @@ sudo nvme fw-activate --slot 0x1 --action 0x1 /dev/nvmeX
 
 - **Example**:
 
-In our previous example both NVMe drives need a firmware update to the latest version GXA7802Q. Here's how we update the 2 NVMe drives and the command line returns :
+In our previous example both NVMe drives need a firmware update to the latest version GXA7802Q. Here's how we update the 2 NVMe drives and the command line returns:
 
 ```bash
 root@labo:/home/ubuntu# sudo nvme fw-download --fw GXA7802Q_Noformat.bin /dev/nvme0
