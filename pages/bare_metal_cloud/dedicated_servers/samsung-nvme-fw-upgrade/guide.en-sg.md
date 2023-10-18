@@ -46,7 +46,7 @@ Firmware changelog : <https://last-public-ovh-baremetal.snap.mirrors.ovh.net/har
 
 #### Step 1 - Install nvme-cli
 
-You can install nvme-cli from your distribution's package manager. 
+You can install nvme-cli from your distribution's package manager.
 
 - For RHEL, CentOS, RockyLinux, AlmaLinux, Fedora and similar:
 
