@@ -6,7 +6,7 @@ updated: 2023-10-18
 
 ## Objective
 
-The aim of this tutorial is to show you how to integer [**MLflow**](https://mlflow.org/) inside AI Notebooks in order to track and compare your Machine Learning models.
+The aim of this tutorial is to show you how to integrate [**MLflow**](https://mlflow.org/) inside AI Notebooks in order to track and compare your Machine Learning models.
 
 **MLflow** is an open-source platform for *Machine Learning workflows management*. You can use this tool for ML model tracking, versioning but also storage and deployment.
 
