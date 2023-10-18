@@ -77,8 +77,8 @@ shutil.copy(exportedMetaData, '/workspace/model/rock-paper-scissors/')
 Then, create a `requirements.txt` file to declare the Python dependencies:
 
 ```
-ultralytics
-opencv-python-headless
+ultralytics==8.0.175
+opencv-python-headless==4.8.0.76
 ```
 
 Then, create a Dockerfile compliant with AI Training.
@@ -101,11 +101,11 @@ RUN chown -R 42420:42420 /workspace
 CMD [ "python3"  , "/workspace/train-rock-paper-scissors.py"]
 ```
 
-Then, build the Docker image and push it in the registry:
+Then, build the Docker image and push it in the shared registry:
 
 ```bash
-docker build . -f Dockerfile -t <regristry-name>/rock-paper-scissors-train:1.0.0
-docker push <regristry-name>/rock-paper-scissors-train:1.0.0
+docker build . -f Dockerfile -t <shared-registry-address>/rock-paper-scissors-train:1.0.0
+docker push <shared-registry-address>/rock-paper-scissors-train:1.0.0
 ```
 
 The output should be similar to this:
@@ -121,6 +121,23 @@ The push refers to repository [my-registry.gra7.container-registry.ovh.net/rock-
 ..
 1.0.0: digest: sha256:72f19493662aafe3d0a3dc35ea5ab76b8472bd6a709de2da1a52e7ebf8ab7ad1 size: 3054 
 ```
+> [!warning]
+> **Warning**
+> The shared registry should only be used for testing purposes. Please consider creating and attaching your own registry. More information about this can be found [here](/pages/public_cloud/ai_machine_learning/gi_07_manage_registry).
+
+You can find the address of your shared registry by launching this command:
+
+```console
+ovhai registry list
+```
+
+Then, log in on your shared registry with your usual OpenStack credentials:
+
+```console
+docker login -u <user> -p <password> <shared-registry-address>
+```
+
+You will then be able to build and push your image on this shared registry.
 
 Once your Docker image is created and pushed into the registry, you can directly use the `ovhai` command to create your model training.
 You can launch the training specifying more or less GPU depending on the speed you want for your training.
@@ -137,7 +154,7 @@ ovhai job run \
 	--volume rock-paper-scissors-data@<region>/:/workspace/data:RO:cache \
 	--volume rock-paper-scissors-model@<region>/:/workspace/model:RW:cache \
     --unsecure-http \
-	<registry name>/rock-paper-scissors-train:1.0.0
+	<shared-registry-address>/rock-paper-scissors-train:1.0.0
 ```
 
 The output should be similar to this:
@@ -255,6 +272,8 @@ Once you have your model ready, deploy the model to use it. This will be done wi
 All the source code is available on the [OVHcloud GitHub organization](https://github.com/ovh/ai-training-examples/tree/main/jobs/audio/audio-classification).
 
 To create the application using the trained model, you can follow this tutorial: [Deploy an app for playing rock / paper / scissors](/pages/public_cloud/ai_machine_learning/deploy_tuto_15_rock_paper_scissors).
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project. 
 
 ## Feedback
 
