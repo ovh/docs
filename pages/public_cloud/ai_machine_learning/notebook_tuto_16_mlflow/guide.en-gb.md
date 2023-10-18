@@ -69,7 +69,7 @@ Using GPUs is recommended to train the **EfficientNet** models.
 
 *If you do not use our CLI yet, follow [this guide](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli) to install it.*
 
-If you want to launch your notebook with the OVHcloud AI CLI, choose the `jupyterlab` editor and the `tensorflow` framework.
+To launch your notebook with the OVHcloud AI CLI, choose the `jupyterlab` editor and the `tensorflow` framework.
 
 To access the different versions of `tensorflow` available, run the following command:
 
