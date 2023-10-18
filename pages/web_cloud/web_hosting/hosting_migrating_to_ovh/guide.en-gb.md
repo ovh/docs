@@ -150,8 +150,8 @@ Create new email accounts and name them according to your current email addresse
 
 If you have opted for an Email Pro or Exchange solution, please read our documentation on this topic to create your email accounts:
 
-- For Email Pro: </pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config>
-- For Exchange: </pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_starting_hosted>
+- [For Email Pro](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config)
+- [For Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_starting_hosted)
 
 ### Step 6: Declare the OVHcloud email servers in your domain name’s active DNS zone <a name="step6"></a>
 
