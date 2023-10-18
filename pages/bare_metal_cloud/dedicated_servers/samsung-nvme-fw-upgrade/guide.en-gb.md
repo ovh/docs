@@ -101,6 +101,25 @@ sudo nvme fw-download --fw GXA7802Q_Noformat.bin /dev/nvmeX
 sudo nvme fw-activate --slot 0x1 --action 0x1 /dev/nvmeX
 ```
 
+- **Example**:
+
+In our previous example both NVMe drives need a firmware update to the latest version GXA7802Q. Here's how we update the 2 NVMe drives and the command line returns :
+
+```bash
+root@labo:/home/ubuntu# sudo nvme fw-download --fw GXA7802Q_Noformat.bin /dev/nvme0
+Firmware download success
+root@labo:/home/ubuntu# sudo nvme fw-activate --slot 0x1 --action 0x1 /dev/nvme0
+Success committing firmware action:1 slot:1
+Multiple Update Detected (MUD) Value: 0
+root@labo:/home/ubuntu# sudo nvme fw-download --fw GXA7802Q_Noformat.bin /dev/nvme1
+Firmware download success
+root@labo:/home/ubuntu# sudo nvme fw-activate --slot 0x1 --action 0x1 /dev/nvme1
+Success committing firmware action:1 slot:1
+Multiple Update Detected (MUD) Value: 0
+```
+
+At this point the firmware update is complete, please reboot your server.
+
 #### Step 5 - Check the firmware version after the server reboot
 
 You can use the same nvme list command which lists all NVMe drives on your server:
