@@ -240,8 +240,6 @@ To do this, you can create a mailing list. Please follow our guide on [Managing 
 
 ## Go further
 
-The legacy MX Plan solutions are being migrated to the new MX Plan solutions. If you would like to migrate your solution as a priority, you can follow the instructions on [this page](https://www.ovh.co.uk/mxplan-migration/#accordion_6001-4).
-
 If your needs change and you want additional features, you can also [migrate an MX Plan email address to an Email Pro or Exchange account](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel).
 
 Join our community of users on <https://community.ovh.com/en/>.
