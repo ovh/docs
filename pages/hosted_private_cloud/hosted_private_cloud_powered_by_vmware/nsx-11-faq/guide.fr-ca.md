@@ -1,12 +1,12 @@
 ---
 title: NSX - FAQ
-excerpt: Retrouvez les questions les plus fréquemment posées concernant NSX
-updated: 2023-06-12
+excerpt: Retrouvez les questions les plus fréquentes concernant NSX
+updated: 2023-10-19
 ---
 
 ## Objectif
 
-**Retrouvez ci-dessous les questions les plus fréquemment posées concernant NSX.**
+**Retrouvez ci-dessous les questions les plus fréquentes concernant NSX.**
 
 ## FAQ
 

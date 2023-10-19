@@ -1,12 +1,12 @@
 ---
 title: NSX - FAQ
-excerpt: Retrouvez les questions les plus fréquemment posées concernant NSX
-updated: 2023-06-12
+excerpt: Retrouvez les questions les plus fréquentes concernant NSX
+updated: 2023-10-19
 ---
 
 ## Objectif
 
-**Retrouvez ci-dessous les questions les plus fréquemment posées concernant NSX.**
+**Retrouvez ci-dessous les questions les plus fréquentes concernant NSX.**
 
 ## FAQ
 
@@ -18,27 +18,27 @@ Tous les packs sont basés sur des jours (1 jour = 8 heures). 1 jour, 2 jours ou
 
 La première approche est la même pour tous les packs avec une phase de découverte, mais la durée du pack dépendra de la complexité de l'environnement et de la maturité du client.
 
-Cette question sera discutée avec l'équipe PS lors d'un premier appel d'évaluation.
+Cette question sera étudiée avec l'équipe PS lors d'un premier appel d'évaluation.
 
 <a name="eofnsxv"></a>
 
-### Quelle est la date limite pour la migration de NSX-T? A quelle date est la fin de vie de NSX-V ?
+### Quelle est la date limite pour la migration de NSX-T? Quelle est la date de fin de vie de NSX-V ?
 
 La fin de vie de NSX-V est prévue pour le 16 janvier 2024, la migration doit être effectuée avant cette date.
 
 <a name="deadlineassistance"></a>
 
-### Quelle est la date maximale à laquelle faire la demande d'accompagnement de migration?
+### Quelle est la date maximale à laquelle faire la demande d'accompagnement de migration ?
 
-La fin de vie de NSX-V est prévue pour le 16 janvier 2024, le plus tôt sera le mieux pour vous laisser le temps d'effectuer votre migration.
+La fin de vie de NSX-V est prévue pour le 16 janvier 2024, vous pouvez le faire dès à présent pour vous laisser le temps d'effectuer votre migration.
 
 <a name="nsxvmigrationend"></a>
 
 ### Que se passe-t-il si nous n’avons pas migré avant le 16 janvier 2023 ?
 
-OVHcloud ne supprime pas le service, mais ne peut garantir aucun SLA. Le client devra signer un document par lequel OVHcloud s’engage à quitter NSX-V à une date donnée. 
+OVHcloud ne supprime pas le service, mais ne peut pas garantir de SLA. Le client devra signer un document par lequel OVHcloud s’engage à quitter NSX-V à une date déterminée.
 
-VMware a décidé de la fin de vie de NSX-V à partir de janvier 2024, des discussions sont toujours en cours avec eux concernant l'extension du support de NSX-V, OVHcloud communiquera dès que possible une déclaration officielle.
+VMware a décidé d'initier la fin de vie de NSX-V à partir de janvier 2024, des discussions sont toujours en cours avec VMware pour prolonger le support de NSX-V, OVHcloud communiquera à ce sujet dès que possible, dans l'attente d'une déclaration officielle de VMware.
 
 <a name="bgp"></a>
 
@@ -66,13 +66,13 @@ Avant la version 4.1.1, il y a un numéro d'AS par environnement provenant du T0
 
 En ouvrant un ticket auprès du Support, vous pouvez demander une modification sur le numéro AS.
 
-Avec la version 4.1.1, vous pourrez mettre en place un AS différent sur le VRF et ne pas nécessairement avoir le numéro AS du T0.
+Avec la version 4.1.1, vous pourrez mettre en place un AS différent sur le VRF et ne pas avoir nécessairement le numéro AS du T0.
 
 <a name="virtualfirewallt0pcc"></a>
 
-### Peut-on mettre un pare-feu virtuel devant le T0 dans le même PCC?
+### Peut-on mettre un pare-feu virtuel devant le T0 dans le même PCC ?
 
-Aujourd'hui, ce n'est pas possible. Le T0 dispose déjà d'une fonctionnalité de pare-feu de passerelle, nous vous recommandons donc de configurer le pare-feu avec le T0.
+Aujourd'hui, ce n'est pas possible. Le T0 dispose déjà d'une fonctionnalité de pare-feu de passerelle, nous vous recommandons de configurer le pare-feu avec le T0.
 
 <a name="t0vst1">
 
@@ -132,22 +132,22 @@ Comme indiqué dans [ce guide](/pages/hosted_private_cloud/hosted_private_cloud_
 
 <a name="ipblockdistribution"></a>
 
-### Est-ce que les blocs d’adresses IP peuvent être utilisés/distribués entre deux DC VMware dans un même PCC?
+### Est-ce que les blocs d’adresses IP peuvent être utilisés/distribués entre deux DC VMware dans un même PCC ?
 
 Les blocs d'adresses IP sont dépendants du PCC et non du vDC. Il est donc possible d'utiliser le même bloc d'adresses IP entre plusieurs datacentres virtuels (sans aucune modification).
 
 <a name="updatensxtvsphere703"></a>
 
-### Est ce qu'il y a besoin de mettre à jour les clusters afin de pouvoir utiliser NSX-T dans un environnement Vsphère 7.0.3?
+### Doit-on mettre à jour les clusters afin de pouvoir utiliser NSX-T dans un environnement Vsphère 7.0.3 ?
 
 Dans ce cas, il n'est pas nécessaire de mettre à jour les clusters.
 
 <a name="managemigrationip"></a>
 
-### Comment sont gérer les IP lors de la migration?
+### Comment sont gérés les IP lors de la migration?
 
-Vous trouverez dans le [guide de migration](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/service-migration-vdc/), comment déplacer votre IP existante depuis votre plateforme NSX-V et les router vers l'IP attachée à la partie T0.
- 
+Vous trouverez dans le [guide de migration](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/service-migration-vdc), comment déplacer votre IP existante depuis votre plateforme NSX-V et les router vers l'IP attachée à la partie T0.
+
 Lorsqu’un vDC NSX-T est livré, nous déployons et configurons un nouveau bloc IP pour NSX T0 ( VIP + NSX EDGES). Vous pourrez réutiliser l'IP attachée au DC NSX-V et les faire pointer vers le nouveau vDC.
 
 <a name="vdcmigration"></a>
@@ -162,7 +162,7 @@ Dans ce cas, une restauration n'est pas possible, il vous faudra commander un no
 
 <a name="nsxmigrationimpact"></a>
 
-### Quel est l’impact client de la migration vers NSX 4.1.1?
+### Quel est l’impact client de la migration vers NSX 4.1.1 ?
 
 Il n'y a normalement pas de temps d'arrêt, une tâche de maintenance sera initiée, y compris un déplacement des bords avec un Vmotion.
 
@@ -172,14 +172,14 @@ Du côté de l'utilisateur, il n'y a pas de tâche spécifique à planifier.
 
 ### Allez-vous fournir des formations et de la documentation pour améliorer les compétences NSX-T ?
 
-[Getting Started with NSX](https://ovh.to/z84huTj)
-[VMware on OVHcloud](https://ovh.to/Zz5A1Nm)
+[Getting Started with NSX](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx-01-first-steps)
+[VMware on OVHcloud](https://help.ovhcloud.com/csm/en-ie-documentation-hosted-private-cloud-hosted-private-cloud-powered-by-vmware?id=kb_browse_cat&kb_id=62e4cfed55d574502d4c6e78b7421953&kb_category=db34d555f49801102d4ca4d466a7fd4f)
 
 <a name="nsxtmigrationpfsense"></a>
 
-### Si on a anticipé la migration NSX-V vers une solution tiers PFSense. Doit-on quand même repartir sur la demande de création d'un nouveau VDC sans NSX-V, on ne peut pas le faire sur le VDC existant?
+### Si une migration NSX-V a été planifiée vers une solution tiers PFSense. Doit-on repartir sur la demande de création d'un nouveau VDC sans NSX-V ? Peut-on le faire sur le vDC existant ?
 
-Dans ce cas, vous n'avez pas besoin de commander un nouveau vDC, mais assurez-vous de désactiver toutes vos fonctionnalités NSX-V afin qu'OVHcloud puisse désactiver le composant.
+Dans ce cas, vous n'avez pas besoin de commander un nouveau DC, mais assurez-vous de désactiver toutes vos fonctionnalités NSX-V afin qu'OVHcloud puisse désactiver le composant.
 
 <a name="internetoutput"></a>
 
@@ -189,29 +189,29 @@ Il n'est pas possible de gérer l'output Internet dans NSX car Edge est géré p
 
 <a name="ipmigrationperblock"></a>
 
-### La migration des IP peut se faire IP par IP ou par bloc RIPE?
+### La migration des IP peut-elle se faire IP par IP ou par bloc RIPE ?
 
 La migration d'IP est effectuée par bloc, vous changez l'étape suivante du bloc d'IP, le bloc global est transitionné vers la partie NSX.
 
 <a name="ipmigrationinterruption"></a>
 
-### Cette migration interrompt elle le service? Si oui combien de temps?
+### Cette migration interrompt-elle le service ? Si oui, combien de temps ?
 
 Cela dépendra des services utilisés. Par exemple, si vous utilisez des tunnels IPSEC et des IP publiques, vous devrez déplacer vos charges de travail et reconfigurer le bloc IP que vous aviez sur votre infrastructure NSX-V vers votre infrastructure NSX-T.
 
-Lors de ce déplacement d'IP, une coupure de service de courte durée peut se produire. En fonction de votre topologie réseau, vous pouvez avoir une continuité via le service vrack des flux entre les différentes charges de travail portées par une exposition des fronts NSX-V, vous déplacez les différentes machines vers le second DC et à travers le vrack le flux continue à remonter vers vos fronts NSX-V précédents .
+Lors de ce déplacement d'IP, une coupure de service de courte durée peut se produire. En fonction de votre topologie réseau, vous pouvez avoir une continuité via le service vrack des flux entre les différentes charges de travail portées par une exposition des fronts NSX-V, vous déplacez les différentes machines vers le second DC et à travers le vrack le flux continu à remonter vers vos fronts NSX-V précédents .
 
 Le temps d'arrêt dépend donc de la complexité de votre environnement.
 
 <a name="bandwidthedgenode"></a>
 
-### Quel sera le débit des cartes des edge-node, sachant que le T0 sera mutualisé?
+### Quel sera le débit des cartes des edge-node, sachant que le T0 sera mutualisé ?
 
 Cela dépendra des services activés (LoadBalancer/NAT/Firewall...)
 
 <a name="vrackwithnsxt"></a>
 
-### Est-ce que le vRack fonctionne avec les NSX-T?
+### Est-ce que le vRack fonctionne avec les NSX-T ?
 
 Oui, le vRack fonctionne avec NSX-T.
 
@@ -231,13 +231,13 @@ Non, les NSX Edges sont configurées par OVHcloud suivant les bonnes pratiques V
 
 <a name="multipleedgeclusters"></a>
 
-### Peut ont avoir plusieur edge cluster?
+### Peut ont avoir plusieur edge cluster ?
 
 Aujourd'hui, 1 seul cluster NSX-T Edge est nécessaire.
 
 <a name="averageconfiguration"></a>
 
-### Actuellement nous avons 300 edges et environ 5000 rdp simultanés. La configuration "moyenne 4 vcpu / 8 Go RAM / 200 Go" va elle tenir pour les flux?
+### Actuellement nous avons 300 edges et environ 5000 rdp simultanés. La configuration "moyenne 4 vcpu / 8 Go RAM / 200 Go" va-t-elle tenir pour les flux ?
 
 Le dimensionnement dépendra des services que vous activerez ou consommerez sur vos edges (firewall ou load balancing...).
 
@@ -247,7 +247,7 @@ Tout dépend de vos cas d’usage et des métriques dont vous disposez sur votre
 
 <a name="VRF"></a>
 
-### Si nous ne voulons pas d'un VRF pour fractionner le T0, quelle serait la solution à part « l'éducation ou l'achat d'un nouveau PCC »?
+### Si nous ne voulons pas d'un VRF pour fractionner le T0, quelle serait la solution à part « l'éducation ou l'achat d'un nouveau PCC » ?
 
 Il est possible de ne pas utiliser le VRF et d'utiliser le T1.
 
@@ -263,41 +263,41 @@ Oui, il est possible de le faire.
 
 <a name="migrationzerto"></a>
 
-### Comment se pase la migration avec Zerto?
+### Comment se passe la migration avec Zerto ?
 
-Il n'y a aucune complexité dans cette partie, vous pouvez suivre étape par étape la documentation fournie par OVHcloud. 
+Suivez simplement les étapes de la documentation fournie par OVHcloud.
 
 <a name="veeamzerto"></a>
 
 ### Que faire de mes options Veeam et Zerto ? Sont-elles toujours compatibles avec NSX ?
 
-Oui mais il faudra les reconfigurer après la migration vDC.
+Oui, mais il faudra les reconfigurer après la migration vDC.
 
 <a name="nsxtwithnsxv"></a>
 
-### Si j' ai bien compris, on peut avoir sur notre pcc nsxv et nsx-t en même temps, pour se familiariser. est ce exact?
+### Est-il possible de faire cohabiter notre pcc nsxv et nsx-t durant la phase de transition ?
 
-Il est possible si vous commandez un nouveau vDC d'obtenir NSX-T.
+Il est possible d'obtenir NSX-T si vous commandez un nouveau vDC .
 
 Veuillez noter que la commande du nouveau vDC déclenchera automatiquement le mécanisme de remboursement pour le mois à venir.
 
 <a name="nsxvtonsxtmigration"></a>
 
-### Combien de temps durera la migration?
+### Combien de temps durera la migration ?
 
 Cela dépendra principalement de la phase de découverte/évaluation de l’infrastructure NSX-V et de la phase de conception côté NSX-T.
 
 La migration elle-même est courte, il s'agit d'une reconfirmation de la stack VMware.
 
-Il est possible de créer un réseau étendu, un VPN entre les deux environnements, vxLAN pour NSX-V et des segments avec NSX-T, permettant de déplacer des VM d'un vDC à un autre et d'effectuer ensuite les étapes de migration. La coupure de service sera ainsi facilitée lors de la transition.
+Il est possible de créer un réseau étendu, un VPN entre les deux environnements, vxLAN pour NSX-V et des segments avec NSX-T, permettant de déplacer des VM d'un vDC à un autre et d'effectuer ensuite les étapes de migration. La coupure de service sera ainsi limitée lors de la transition.
 
-Vous pouvez également inclure Teraform dans votre conception NSX-T afin de pousser votre configuration Teraform directement dans l'environnement que vous venez de commander.
+Vous pouvez également inclure Terraform dans votre conception NSX-T afin de pousser votre configuration Terraform directement dans l'environnement que vous venez de commander.
 
 <a name="nsxmigrationcoordinator"></a>
 
-### Pouvons nous utiliser "migration coordinator" pour la migration entre nsx-v et nsx?
+### Pouvons-nous utiliser "migration coordinator" pour la migration entre nsx-v et nsx ?
 
-Cet outil nécessite des droits d'administration très forts sur l'environnement, notre équipe Professional Services peut exécuter et dupliquer la confirmation. Dans cet outil, il est important de noter que de nombreux éléments ne sont pas pris en charge (options, règles existantes dans NSX-V).
+Cet outil nécessite des droits d'administration très forts sur l'environnement, l'équipe Professional Services peut valider l'exécution et la duplication. Dans cet outil, il est important de noter que de nombreux éléments ne sont pas pris en charge (options, règles existantes dans NSX-V).
 
 La phase de reproduction nécessiterait beaucoup d'adaptation de votre part, ce n'est donc pas un outil recommandé dans la migration.
 
@@ -315,33 +315,33 @@ Oui, c'est possible.
 
 <a name="nsxbackupmanualconfiguration"></a>
 
-### Prenez-vous des backups des configs NSX, y compris le paramétrage à la main du client?
+### Réalisez-vous des backups des configs NSX, y compris le paramétrage manuel du client ?
 
-Oui, OVHcloud réalise des sauvegardes, vous pouvez les retrouver dans votre control plane NSX-T.
+Oui, OVHcloud réalise des sauvegardes, vous pouvez les retrouver dans votre control panel NSX-T.
 
-Cette sauvegarde n'a pas pour but de vous permettre de faire une restauration en cas de mauvaise configuration de votre part mais d'exister en cas de corruption des différents contrôleurs NSX-T.
+Cette sauvegarde n'est pas destinée à la restauration lors d'une mauvaise manipulation, mais de support en cas de corruption des différents contrôleurs NSX-T.
 
 <a name="nsxtinto2016pcc"></a>
 
-### Est-il possible d'avoir la livraison d'un vDC NSX-T dans un PCC 2016, où y a t'il toujours des problèmes de livraison ?
+### Est-il possible d'avoir la livraison d'un vDC NSX-T dans un PCC 2016, existe-t-il des problèmes de livraison ?
 
-Oui, c'est possible, il n'y a pas de contraintes actuelles.
+Oui, c'est possible, il n'y a pas de contraintes actuellement.
 
 <a name="etarelease"></a>
 
-### Est ce qu'il y a une ETA pour la 4.1.1?
+### Avez-vous une date d'ETA pour la 4.1.1?
 
-ETA est prévue pour la fin octobre 2023.
+L'ETA est prévue pour la fin octobre 2023.
 
 <a name="snclimitations"></a>
 
-### Est-ce que des limitation supplementaire sont présente dans un contexte SecNumCloud?
+### Des limitations supplémentaires sont-elles présentes dans un contexte SecNumCloud ?
 
 Il n’y a pas de limitations supplémentaires par rapport à un environnement non-SNC.
 
 <a name="sncmigration"></a>
 
-### En SecNumCloud la migration se déroule de la même façon?
+### Dans un contexte SecNumCloud, la migration se déroule-t-elle de la même façon ?
 
 Oui, les deux migrations sont identiques.
 
@@ -355,13 +355,13 @@ Il n'existe pas de différence entre les sauvegardes SNC et non SNC.
 
 ### Pourquoi y a-t-il une modification tarifaire pour NSX-T et sa version 4.1.1 ?
 
-La hausse des tarifs des offres NSX est basée sur : 
+La hausse des tarifs des offres NSX est basée sur :
 
     - la hausse de nos coûts basée sur l’inflation de l’ensemble de nos services en 2022 et 2023
     - Les frais de licence NSX-T
     - Les coûts liés à l’infrastructure de gestion NSX
 
-Dans l’attente de la disponibilité de la version NSX 4.1.1, les ressources physiques dédiées à l’hébergement de VM NSX Edge ont été reprises par OVHcloud et ne vous ont pas été facturées. 
+Dans l’attente de la disponibilité de la version NSX 4.1.1, les ressources physiques dédiées à l’hébergement de VM NSX Edge ont été reprises par OVHcloud et ne vous ont pas été facturées.
 
 Par conséquent, la transition vers la version 4.1.1 n'aura aucune incidence sur les prix.
 
@@ -375,17 +375,17 @@ Nous vous invitons à prendre contact avec votre interlocuteur privilégié chez
 
 <a name="priceduringmigration"></a>
 
-### Pendant la phase de migration on devra donc payer en double notre plateforme pendant un mois et ensuite se faire rembourser le mois prochain?
+### Pendant la phase de migration, devra-t-on payer en double notre plateforme pendant un mois et ensuite se faire rembourser le mois suivant ?
 
-OVHcloud vous remboursera sur la prochaine facture suite à la commande de votre nouveau VDC, 1 mois de frais d’hébergement et de gestion NSX (1 mois considéré comme 30 jours).
+OVHcloud vous remboursera 1 mois de frais d’hébergement et de gestion NSX sur la prochaine facture après la commande de votre nouveau vDC (1 mois = 30 jours).
 
 <a name="pricealbandipsids"></a>
 
-### Y a-t-il un coût supplémentaire à l'utilisation du LoadBalancer Advanced (avec WAF) et d'un IPS/IDS distribué?
+### Y a-t-il un coût supplémentaire à l'utilisation du LoadBalancer Advanced (avec WAF) et d'un IPS/IDS distribué ?
 
 La version de base d'ALB est déjà incluse dans la version licence NSX-T, sans coût supplémentaire.
 
-IPS/IDS, est prévu de sortir dans le futur sans ETA précise pour le moment, avec un coût supplémentaire.
+IPS/IDS n'est, pour le moment, pas disponible.
 
 ## Aller plus loin
 
