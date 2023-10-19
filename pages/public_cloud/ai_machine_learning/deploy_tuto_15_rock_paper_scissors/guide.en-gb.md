@@ -29,7 +29,7 @@ You are going to follow different steps to build your Streamlit application.
 
 ### Write the Streamlit application
 
-Create a Python file named `app.py` and past the following code:
+Create a Python file named `app.py` and paste the following code:
 
 ```python
 from ultralytics import YOLO
@@ -77,9 +77,9 @@ if __name__ == '__main__':
 The `requirements.txt` file will allow us to write all the modules needed to make our application work. This file will be useful when writing the `Dockerfile`.
 
 ```console
-ultralytics
-opencv-python-headless
-streamlit
+ultralytics==8.0.194 
+opencv-python-headless==4.8.1.78 
+streamlit==1.27.2 
 ```
 
 ### Write the Dockerfile for the application
@@ -114,7 +114,7 @@ ENV HOME=/workspace
 Launch the following command from the **Dockerfile** directory to build your application image:
 
 ```bash
-docker build . -f Dockerfile -t <regristry-name>/rock-paper-scissors-app:1.0.0
+docker build . -f Dockerfile -t <shared-regristry-name>/rock-paper-scissors-app:1.0.0
 ```
 
 ### Push the image into the shared registry
@@ -138,7 +138,7 @@ docker login -u <user> -p <password> <shared-registry-address>
 Push the compiled image into the shared registry:
 
 ```bash
-docker push <regristry-name>/rock-paper-scissors-app:1.0.0
+docker push <shared-registry-address>/rock-paper-scissors-app:1.0.0
 ```
 
 ### Launch the AI Deploy app
@@ -152,7 +152,7 @@ ovhai app run \
 	--default-http-port 8501 \
 	--volume rock-paper-scissors-model@GRA:/workspace/model:R0:cache \
 	--unsecure-http \
-	<regristry-name>/rock-paper-scissors-app:1.0.0
+	<shared-registry-address>/rock-paper-scissors-app:1.0.0
 ```
 
 > [!primary]

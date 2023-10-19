@@ -77,8 +77,8 @@ shutil.copy(exportedMetaData, '/workspace/model/rock-paper-scissors/')
 Then, create a `requirements.txt` file to declare the Python dependencies:
 
 ```
-ultralytics==8.0.175
-opencv-python-headless==4.8.0.76
+ultralytics==8.0.194
+opencv-python-headless==4.8.1.78
 ```
 
 Then, create a Dockerfile compliant with AI Training.
