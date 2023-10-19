@@ -1,7 +1,7 @@
 ---
 title: AI Notebooks - Tutorial - Train YOLOv8 to play to "rock paper scissors"
 excerpt:  How to train the YOLOv8 model on a custom dataset with AI Notebooks
-updated: 2023-09-01
+updated: 2023-10-19
 ---
 
 ## Objective

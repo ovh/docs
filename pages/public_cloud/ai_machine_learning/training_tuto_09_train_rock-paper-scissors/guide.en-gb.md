@@ -1,7 +1,7 @@
 ---
 title: AI Training - Tutorial - Train YOLOv8 to play to "rock paper scissors" 
 excerpt: Understand how simple it is to train a model using AI Training
-updated: 2023-06-10
+updated: 2023-19-10
 ---
 
 ## Objective
@@ -36,7 +36,7 @@ You can reuse the previous object storage used in the Notebook tutorial [Train Y
 
 > [!primary]
 >
-> All source code is available on the GitHub repository [ai-training-examples]().
+> All source code is available on the GitHub repository [ai-training-examples](https://github.com/ovh/ai-training-examples/tree/main/jobs/computer-vision/object-detection/yolov8).
 >
 
 To train the model, we will use AI Training. This powerful tool will allow you to automate your pipelines and build fine-tuning phases easily.

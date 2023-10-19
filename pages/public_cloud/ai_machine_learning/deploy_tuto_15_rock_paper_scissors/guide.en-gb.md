@@ -1,7 +1,7 @@
 ---
 title: AI Deploy - Tutorial - Create an application to play Rock / Paper / Scissors with YoloV8
 excerpt: How to build an application based on the computer vision with YoloV8
-updated: 2023-10-09
+updated: 2023-10-19
 ---
 
 ## Objective
