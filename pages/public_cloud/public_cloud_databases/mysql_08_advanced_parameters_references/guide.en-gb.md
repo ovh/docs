@@ -121,6 +121,15 @@ Below you can find a summary of every configuration option available for MySQL s
 
 | | |
 |---|---|
+| Parameter | `mysql.innodb_ft_server_stopword_table` |
+| Value type | string |
+| Minimum | |
+| Maximum | |
+| Values | |
+| Description | This option is used to specify your own InnoDB FULLTEXT index stopword list for all InnoDB tables. |
+
+| | |
+|---|---|
 | Parameter | `mysql.innodb_lock_wait_timeout` |
 | Value type | long |
 | Minimum | 1 |
