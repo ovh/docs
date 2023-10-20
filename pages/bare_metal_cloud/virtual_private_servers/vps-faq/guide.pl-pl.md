@@ -108,7 +108,7 @@ Zaloguj się na stronie [https://api.ovh.com/](https://api.ovh.com/) i skorzysta
 
 > [!api]
 >
-> @api {POST} vps/{serviceName}/backupftp/access
+> @api {v1} /vps POST /vps/{serviceName}/backupftp/access
 >
 
 Wpisz pola w następujący sposób:
@@ -125,7 +125,7 @@ Aby sprawdzić, czy Twój adres IP jest poprawnie autoryzowany, użyj następuj�
 
 > [!api]
 >
-> @api {GET} /vps/{serviceName}/backupftp/access
+> @api {v1} /vps GET /vps/{serviceName}/backupftp/access
 >
 
 ![get api](images/get-api.png){.thumbnail}

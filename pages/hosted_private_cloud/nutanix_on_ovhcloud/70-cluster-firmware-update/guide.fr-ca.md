@@ -145,7 +145,7 @@ Identifiez le noeud à démarrer en mode rescue en utilisant l'appel API OVHclou
 
 > [!api]
 >
-> @api {GET} /nutanix/{serviceName}
+> @api {v1} /nutanix GET /nutanix/{serviceName}
 >
 
 - `serviceName` : entrez le nom du cluster

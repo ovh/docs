@@ -93,7 +93,7 @@ Descargue en primer lugar la lista de direcciones IP de cada servicio de OVHclou
 
 > [!api]
 >
-> @api {GET} /ip
+> @api {v1} /ip GET /ip
 >
 
 **type** : Introduzca el tipo de IP (Dedicated, Dedicated Cloud, VPS, vRack, PCI, etc.).
@@ -114,7 +114,7 @@ Busque las IP en un estado particular gracias a la siguiente llamada. Si ya cono
 
 > [!api]
 >
-> @api {GET} /ip/{ip}/spam
+> @api {v1} /ip GET /ip/{ip}/spam
 >
 
 **ip** : especifique el bloque IP obtenido en el paso anterior con la máscara de red. Por ejemplo, 122.122.122.121/28.<br>
@@ -130,7 +130,7 @@ Puede obtener información sobre el bloqueo con la siguiente llamada, o bien pas
 
 > [!api]
 >
-> @api {GET} /ip/{ip}/spam/{ipSpamming}
+> @api {v1} /ip GET /ip/{ip}/spam/{ipSpamming}
 >
 
 **ip**: especifique el bloque IP obtenido en el paso anterior con la máscara de red.<br>
@@ -157,7 +157,7 @@ Si desea obtener las estadísticas sobre lo que se ha detectado, utilice la sigu
 
 > [!api]
 >
-> @api {GET} /ip/{ip}/spam/{ipSpamming}/stats
+> @api {v1} /ip GET /ip/{ip}/spam/{ipSpamming}/stats
 >
 
 **ip** : especifique el bloque IP obtenido en el paso anterior con la máscara de red.<br>
@@ -186,7 +186,7 @@ Para desbloquear su dirección IP, utilice la siguiente llamada:
 
 > [!api]
 >
-> @api {POST} /ip/{ip}/spam/{ipSpamming}/unblock
+> @api {v1} /ip POST /ip/{ip}/spam/{ipSpamming}/unblock
 >
 
 **ip** : especifique el bloque de direcciones IP obtenido en el paso anterior con la máscara de red.<br>

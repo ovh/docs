@@ -66,7 +66,7 @@ For example, to retrieve a list of your domain names, use the following API:
  
 > [!api]
 >
-> @api {GET} /domain
+> @api {v1} /domain GET /domain
 >
 
 **POST**
@@ -77,7 +77,7 @@ For example, to add a record to your DNS zone, use the following API:
 
 > [!api]
 >
-> @api {POST} /domain/zone/{zoneName}/record
+> @api {v1} /domain POST /domain/zone/{zoneName}/record
 >
 
 **PUT**
@@ -88,7 +88,7 @@ For example, if you have mistakenly set a record in your DNS zone, use the follo
 
 > [!api]
 >
-> @api {PUT} /domain/zone/{zoneName}/record/{id}
+> @api {v1} /domain PUT /domain/zone/{zoneName}/record/{id}
 >
 
 **DELETE**
@@ -99,7 +99,7 @@ For example, if you do not want to keep the DNS record that you added to your DN
 
 > [!api]
 >
-> @api {DELETE} /domain/zone/{zoneName}/record/{id}
+> @api {v1} /domain DELETE /domain/zone/{zoneName}/record/{id}
 >
 
 ##### **API parameters**

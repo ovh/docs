@@ -104,7 +104,7 @@ Loggen Sie sich auf [https://api.ovh.com/](https://api.ovh.com/) ein und verwend
 
 > [!api]
 >
-> @api {POST} vps/{serviceName}/backupftp/access
+> @api {v1} /vps POST /vps/{serviceName}/backupftp/access
 >
 
 Füllen Sie die Felder wie folgt aus:
@@ -121,7 +121,7 @@ Um zu überprüfen, ob Ihre IP-Adresse erlaubt ist, verwenden Sie folgenden Anru
 
 > [!api]
 >
-> @api {GET} /vps/{serviceName}/backupftp/access
+> @api {v1} /vps GET /vps/{serviceName}/backupftp/access
 >
 
 ![get api](images/get-api.png){.thumbnail}

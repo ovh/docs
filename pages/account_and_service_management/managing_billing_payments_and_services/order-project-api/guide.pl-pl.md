@@ -34,7 +34,7 @@ Użyj tego połączenia, aby utworzyć koszyk:
 
 > [!api]
 >
-> @api {POST} /order/cart
+> @api {v1} /order POST /order/cart
 >
 
 Wybierz swój oddział API OVHcloud. W odpowiedzi zapisz numer koszyka ("cartId"); konieczne będzie zidentyfikowanie tego koszyka.
@@ -43,7 +43,7 @@ Następnie jako artykuł dodaj projekt Public Cloud. Skorzystaj z tego połącze
 
 > [!api]
 >
-> @api {GET} /order/cart/{cartId}/cloud
+> @api {v1} /order GET /order/cart/{cartId}/cloud
 >
 
 W odpowiedzi możesz sprawdzić parametry projektu Public Cloud:
@@ -60,7 +60,7 @@ Skorzystaj z tego połączenia, aby dodać artykuł do koszyka:
 
 > [!api]
 >
-> @api {POST} /order/cart/{cartId}/cloud
+> @api {v1} /order POST /order/cart/{cartId}/cloud
 >
 
 Należy dostarczyć następujące informacje uzyskane w poprzednich etapach:
@@ -77,21 +77,21 @@ Odpowiedź będzie obejmować "itemId", który może być używany (wraz z "cart
 
 > [!api]
 >
-> @api {GET} /order/cart/{cartId}/item/{itemId}
+> @api {v1} /order GET /order/cart/{cartId}/item/{itemId}
 >
 
 Możesz sprawdzić listę parametrów konfiguracji dostępnych dla tego artykułu za pomocą tego połączenia:
 
 > [!api]
 >
-> @api {GET} /order/cart/{cartId}/item/{itemId}/requiredConfiguration
+> @api {v1} /order GET /order/cart/{cartId}/item/{itemId}/requiredConfiguration
 >
 
 Użyj następującego punktu, aby nazwać Twój projekt (`label: "opis"`):
 
 > [!api]
 >
-> @api {POST} /order/cart/{cartId}/item/{itemId}/configuration
+> @api {v1} /order POST /order/cart/{cartId}/item/{itemId}/configuration
 >
 
 |Pole|Wartość|
@@ -107,7 +107,7 @@ Odpowiedzi obejmują "konfiguracjęId", która może być użyta (z "cartId" i "
 
 > [!api]
 >
-> @api {DELETE} /order/cart/{cartId}/item/{itemId}/configuration/{configurationId}
+> @api {v1} /order DELETE /order/cart/{cartId}/item/{itemId}/configuration/{configurationId}
 >
 
 ### Etap 2: zatwierdź koszyk
@@ -116,14 +116,14 @@ Możesz sprawdzić zawartość koszyka za pomocą "cartId":
 
 > [!api]
 >
-> @api {GET} /order/cart/{cartId}/checkout
+> @api {v1} /order GET /order/cart/{cartId}/checkout
 >
 
 Poniższe połączenie pozwoli Ci utworzyć link do zamówienia. Najpierw należy zaznaczyć odpowiednie pole, aby zrezygnować z prawa do odstąpienia od umowy.
 
 > [!api]
 >
-> @api {POST} /order/cart/{cartId}/checkout
+> @api {v1} /order POST /order/cart/{cartId}/checkout
 >
 
 ## Sprawdź również

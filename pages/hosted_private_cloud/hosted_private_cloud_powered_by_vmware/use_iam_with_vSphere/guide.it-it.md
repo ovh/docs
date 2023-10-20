@@ -33,7 +33,7 @@ You can enable the IAM option on your Hosted Private Cloud from the OVHcloud API
 
 > [!api]
 >
-> @api {POST} /dedicatedCloud/{serviceName}/iam/enable
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/iam/enable
 >
 
 This operation may take up to 30 minutes.
@@ -46,7 +46,7 @@ You can create new roles by executing the following call:
 
 > [!api]
 >
-> @api {POST} /dedicatedCloud/{serviceName}/iam/addRole
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/iam/addRole
 >
 
 The management of vSphere permissions for each IAM role is carried out as for any other Hosted Private Cloud user, via the API or from the [OVHcloud Control Panel](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/change_users_rights).
@@ -69,7 +69,7 @@ Execute the following call to disable the connection with the OVHcloud IAM:
 
 > [!api]
 >
-> @api {POST} /dedicatedCloud/{serviceName}/iam/disable
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/iam/disable
 >
 
 ## Go further

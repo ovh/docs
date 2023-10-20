@@ -66,14 +66,14 @@ Para obtener la dirección IPv6 asignada al VPS:
 
 > [!api]
 >
-> @api {GET} /vps/{serviceName}/ips
+> @api {v1} /vps GET /vps/{serviceName}/ips
 >
 
 Para obtener la puerta de enlace IPv6 asignada al VPS:
 
 > [!api]
 >
-> @api {GET} /vps/{serviceName}/ips/{ipAddress}
+> @api {v1} /vps GET /vps/{serviceName}/ips/{ipAddress}
 >
 
 Una vez que haya recuperado las direcciones, vaya al paso 2. [Aplicar la configuración IPv6](#applyipv6).

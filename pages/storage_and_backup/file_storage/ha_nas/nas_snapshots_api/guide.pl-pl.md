@@ -38,7 +38,7 @@ Wszystkie Twoje aktywne usługi można odzyskać przy użyciu następującej dro
 
 > [!api]
 >
-> @api {GET} /dedicated/nasha
+> @api {v1} /dedicated/nasha GET /dedicated/nasha
 >
 
 Snapshot danych wykonywany jest automatycznie co godzinę i zapisywany jest na NAS-HA. Możesz aktywować inne strategie snapshotów, które będą wykonywać snapshoty o określonej częstotliwości.
@@ -53,7 +53,7 @@ Aby wyświetlić aktywne automatyczne planowanie snapshota, użyj następującej
 >
 >> > [!api]
 >> >
->> > @api {GET} /dedicated/nasha/{serviceName}/partition/{partitionName}/snapshot
+>> > @api {v1} /dedicated/nasha GET /dedicated/nasha/{serviceName}/partition/{partitionName}/snapshot
 >> >
 >>
 >
@@ -78,7 +78,7 @@ Aby utworzyć dodatkowe automatyczne snapshoty o wybranej częstotliwości, uży
 >
 >> > [!api]
 >> >
->> > @api {POST} /dedicated/nasha/{serviceName}/partition/{partitionName}/snapshot
+>> > @api {v1} /dedicated/nasha POST /dedicated/nasha/{serviceName}/partition/{partitionName}/snapshot
 >> >
 >>
 >
@@ -107,7 +107,7 @@ Aby uzyskać szczegółowe informacje dotyczące automatycznego snapshota, użyj
 >
 >> > [!api]
 >> >
->> > @api {GET} /dedicated/nasha/{serviceName}/partition/{partitionName}/snapshot/{snapshotType}
+>> > @api {v1} /dedicated/nasha GET /dedicated/nasha/{serviceName}/partition/{partitionName}/snapshot/{snapshotType}
 >> >
 >>
 >
@@ -136,7 +136,7 @@ Użyj następującej drogi, aby usunąć częstotliwość automatycznego snapsho
 >
 >> > [!api]
 >> >
->> > @api {DELETE} /dedicated/nasha/{serviceName}/partition/{partitionName}/snapshot/{snapshotType}
+>> > @api {v1} /dedicated/nasha DELETE /dedicated/nasha/{serviceName}/partition/{partitionName}/snapshot/{snapshotType}
 >> >
 >>
 >
@@ -167,7 +167,7 @@ Użyj następującej drogi, aby pobrać istniejące spersonalizowane snapshoty:
 >
 >> > [!api]
 >> >
->> > @api {GET} /dedicated/nasha/{serviceName}/partition/{partitionName}/customSnapshot
+>> > @api {v1} /dedicated/nasha GET /dedicated/nasha/{serviceName}/partition/{partitionName}/customSnapshot
 >> >
 >>
 >
@@ -192,7 +192,7 @@ Aby dodać ręczny snapshot, użyj następującej drogi:
 >
 >> > [!api]
 >> >
->> > @api {POST} /dedicated/nasha/{serviceName}/partition/{partitionName}/customSnapshot
+>> > @api {v1} /dedicated/nasha POST /dedicated/nasha/{serviceName}/partition/{partitionName}/customSnapshot
 >> >
 >>
 >
@@ -225,7 +225,7 @@ Aby wyświetlić szczegóły spersonalizowanego snapshota, użyj następującej 
 >
 >> > [!api]
 >> >
->> > @api {GET} /dedicated/nasha/{serviceName}/partition/{partitionName}/customSnapshot/{name}
+>> > @api {v1} /dedicated/nasha GET /dedicated/nasha/{serviceName}/partition/{partitionName}/customSnapshot/{name}
 >> >
 >>
 >
@@ -254,7 +254,7 @@ Użyj następującej drogi, aby usunąć spersonalizowany snapshot:
 >
 >> > [!api]
 >> >
->> > @api {DELETE} /dedicated/nasha/{serviceName}/partition/{partitionName}/customSnapshot/{name} 
+>> > @api {v1} /dedicated/nasha GET /dedicated/nasha/{serviceName}/partition/{partitionName}/customSnapshot/{name}
 >> >
 >>
 >

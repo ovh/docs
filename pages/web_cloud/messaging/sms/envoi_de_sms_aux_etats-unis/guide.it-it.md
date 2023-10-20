@@ -68,7 +68,7 @@ Accedi alla pagina [https://api.ovh.com/](https://api.ovh.com/) e poi utilizza l
 
 > [!api]
 >
-> @api {post} /sms/{serviceName}/templatesControl
+> @api {v1} /sms POST /sms/{serviceName}/templatesControl
 >
 
 ![SMS negli Stati Uniti](images/smstousa4.png){.thumbnail}

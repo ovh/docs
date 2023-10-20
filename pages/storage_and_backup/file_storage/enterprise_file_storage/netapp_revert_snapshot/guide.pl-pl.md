@@ -51,7 +51,7 @@ W tym scenariuszu chcesz przywrócić wolumen do ostatniego snapshota typu `manu
 
 > [!api]
 >
-> @api {GET} /storage/netapp/{serviceName}/share/{shareId}/snapshot
+> @api {v1} /storage GET /storage/netapp/{serviceName}/share/{shareId}/snapshot
 >
 
 - `{serviceName}` to unikalny identyfikator usługi
@@ -63,7 +63,7 @@ W tym scenariuszu chcesz przywrócić wolumen do ostatniego snapshota typu `manu
 
 > [!api]
 >
-> @api {POST} /storage/netapp/{serviceName}/share/{shareId}/revert
+> @api {v1} /storage POST /storage/netapp/{serviceName}/share/{shareId}/revert
 >
 
 - `{serviceName}` to unikalny identyfikator usługi
@@ -96,7 +96,7 @@ Należy "zachować" (`hold`) ostatni snapshot wykonany przez politykę wykonywan
 
 > [!api]
 >
-> @api {GET} /storage/netapp/{serviceName}/share/{shareId}/snapshot
+> @api {v1} /storage GET /storage/netapp/{serviceName}/share/{shareId}/snapshot
 >
 
 - `{serviceName}` to unikalny identyfikator usługi
@@ -108,7 +108,7 @@ Należy "zachować" (`hold`) ostatni snapshot wykonany przez politykę wykonywan
 
 > [!api]
 >
-> @api {POST} /storage/netapp/{serviceName}/share/{shareId}/snapshot/{snapshotId}/hold
+> @api {v1} /storage POST /storage/netapp/{serviceName}/share/{shareId}/snapshot/{snapshotId}/hold
 
 - `{serviceName}` to unikalny identyfikator usługi
 - `{shareId}` to wolumen, który chcesz przywrócić
@@ -133,7 +133,7 @@ Jeśli snapshoty typu `manual` zostały utworzone przed tą snapshotem, powinny 
 
 > [!api]
 >
-> @api {POST} /storage/netapp/{serviceName}/share/{shareId}/revert
+> @api {v1} /storage POST /storage/netapp/{serviceName}/share/{shareId}/revert
 >
 
 - `{serviceName}` to unikalny identyfikator usługi

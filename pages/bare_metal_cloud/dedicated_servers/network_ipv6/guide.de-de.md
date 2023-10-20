@@ -51,7 +51,7 @@ Führen Sie den folgenden API-Aufruf unter Angabe des internen Servernamens (Bei
 
 > [!api]
 >
-> @api {GET} /dedicated/server/{serviceName}/specifications/network
+> @api {v1} /dedicated/server GET /dedicated/server/{serviceName}/specifications/network
 >
 
 > [!warning]

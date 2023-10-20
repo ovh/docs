@@ -70,7 +70,7 @@ As a reminder, here is the API endpoint for database creation.
 
 > [!api]
 >
-> @api {POST} /cloud/project/{serviceName}/database/{engine}/
+> @api {v1} /cloud POST /cloud/project/{serviceName}/database/{engine}/
 >
 
 Backup settings must respect the following rules:

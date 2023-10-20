@@ -30,7 +30,7 @@ Die Unterstützung der vMAC-Funktionalität ist eine Voraussetzung für alle Akt
 
 > [!api]
 >
-> @api {GET} /dedicated/server/{serviceName}/specifications/network
+> @api {v1} /dedicated/server GET /dedicated/server/{serviceName}/specifications/network
 >
 
 Geben Sie den internen Servernamen im Feld `serviceName ein` und klicken Sie dann auf `Execute`{.action}.

@@ -36,45 +36,45 @@ For a complete reference to the API functions of the OVH Load Balancer service, 
 
 > [!api]
 >
-> @api {GET} /ipLoadbalancing/{serviceName}/http/frontend
-> @api {GET} /ipLoadbalancing/{serviceName}/tcp/frontend
-> @api {GET} /ipLoadbalancing/{serviceName}/udp/frontend
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/http/frontend
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/tcp/frontend
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/udp/frontend
 > 
 
 ### Create a frontend
 
 > [!api]
 >
-> @api {POST} /ipLoadbalancing/{serviceName}/http/frontend
-> @api {POST} /ipLoadbalancing/{serviceName}/tcp/frontend
-> @api {POST} /ipLoadbalancing/{serviceName}/udp/frontend
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/http/frontend
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/tcp/frontend
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/udp/frontend
 > 
 
 ### Return the parameters applied to a frontend
 
 > [!api]
 >
-> @api {GET} /ipLoadbalancing/{serviceName}/http/frontend/{frontendId}
-> @api {GET} /ipLoadbalancing/{serviceName}/tcp/frontend/{frontendId}
-> @api {GET} /ipLoadbalancing/{serviceName}/udp/frontend/{frontendId}
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/http/frontend/{frontendId}
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/tcp/frontend/{frontendId}
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/udp/frontend/{frontendId}
 > 
 
 ### Edit parameters related to a particular frontend
 
 > [!api]
 >
-> @api {PUT} /ipLoadbalancing/{serviceName}/http/frontend/{frontendId}
-> @api {PUT} /ipLoadbalancing/{serviceName}/tcp/frontend/{frontendId}
-> @api {PUT} /ipLoadbalancing/{serviceName}/udp/frontend/{frontendId}
+> @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/http/frontend/{frontendId}
+> @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/tcp/frontend/{frontendId}
+> @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/udp/frontend/{frontendId}
 > 
 
 ### Delete a frontend
 
 > [!api]
 >
-> @api {DELETE} /ipLoadbalancing/{serviceName}/http/frontend/{frontendId}
-> @api {DELETE} /ipLoadbalancing/{serviceName}/tcp/frontend/{frntendId}
-> @api {DELETE} /ipLoadbalancing/{serviceName}/udp/frontend/{frontendId}
+> @api {v1} /ipLoadbalancing DELETE /ipLoadbalancing/{serviceName}/http/frontend/{frontendId}
+> @api {v1} /ipLoadbalancing DELETE /ipLoadbalancing/{serviceName}/tcp/frontend/{frntendId}
+> @api {v1} /ipLoadbalancing DELETE /ipLoadbalancing/{serviceName}/udp/frontend/{frontendId}
 > 
 
 ## Server farm
@@ -89,45 +89,45 @@ For a complete reference to the API functions of the OVH Load Balancer service, 
 
 > [!api]
 >
-> @api {GET} /ipLoadbalancing/{serviceName}/http/farm
-> @api {GET} /ipLoadbalancing/{serviceName}/tcp/farm
-> @api {GET} /ipLoadbalancing/{serviceName}/udp/farm
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/http/farm
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/tcp/farm
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/udp/farm
 > 
 
 ### Create a Farm
 
 > [!api]
 >
-> @api {POST} /ipLoadbalancing/{serviceName}/http/farm
-> @api {POST} /ipLoadbalancing/{serviceName}/tcp/farm
-> @api {POST} /ipLoadbalancing/{serviceName}/udp/farm
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/http/farm
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/tcp/farm
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/udp/farm
 > 
 
 ### Return the parameters applied to a farm
 
 > [!api]
 >
-> @api {GET} /ipLoadbalancing/{serviceName}/http/farm/{farmId}
-> @api {GET} /ipLoadbalancing/{serviceName}/tcp/farm/{farmId}
-> @api {GET} /ipLoadbalancing/{serviceName}/udp/farm/{farmId}
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/http/farm/{farmId}
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/tcp/farm/{farmId}
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/udp/farm/{farmId}
 > 
 
 ### Edit parameters related to a particular farm
 
 > [!api]
 >
-> @api {PUT} /ipLoadbalancing/{serviceName}/http/farm/{farmId}
-> @api {PUT} /ipLoadbalancing/{serviceName}/tcp/farm/{farmId}
-> @api {PUT} /ipLoadbalancing/{serviceName}/udp/farm/{farmId}
+> @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/http/farm/{farmId}
+> @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/tcp/farm/{farmId}
+> @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/udp/farm/{farmId}
 > 
 
 ### Delete a Farm
 
 > [!api]
 >
-> @api {DELETE} /ipLoadbalancing/{serviceName}/http/farm/{farmId}
-> @api {DELETE} /ipLoadbalancing/{serviceName}/tcp/farm/{farmId}
-> @api {DELETE} /ipLoadbalancing/{serviceName}/udp/farm/{farmId}
+> @api {v1} /ipLoadbalancing DELETE /ipLoadbalancing/{serviceName}/http/farm/{farmId}
+> @api {v1} /ipLoadbalancing DELETE /ipLoadbalancing/{serviceName}/tcp/farm/{farmId}
+> @api {v1} /ipLoadbalancing DELETE /ipLoadbalancing/{serviceName}/udp/farm/{farmId}
 > 
 
 ## Server
@@ -142,45 +142,45 @@ For a complete reference to the API functions of the OVH Load Balancer service, 
 
 > [!api]
 >
-> @api {GET} /ipLoadbalancing/{serviceName}/http/farm/{farmId}/server
-> @api {GET} /ipLoadbalancing/{serviceName}/tcp/farm/{farmId}/server
-> @api {GET} /ipLoadbalancing/{serviceName}/udp/farm/{farmId}/server
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/http/farm/{farmId}/server
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/tcp/farm/{farmId}/server
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/udp/farm/{farmId}/server
 > 
 
 ### Creates a server for a particular farm
 
 > [!api]
 >
-> @api {POST} /ipLoadbalancing/{serviceName}/http/farm/{farmId}/server
-> @api {POST} /ipLoadbalancing/{serviceName}/tcp/farm/{farmId}/server
-> @api {POST} /ipLoadbalancing/{serviceName}/udp/farm/{farmId}/server
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/http/farm/{farmId}/server
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/tcp/farm/{farmId}/server
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/udp/farm/{farmId}/server
 > 
 
 ### Return the parameters of a particular server
 
 > [!api]
 >
-> @api {GET} /ipLoadbalancing/{serviceName}/http/farm/{farmId}/server/{serverId}
-> @api {GET} /ipLoadbalancing/{serviceName}/tcp/farm/{farmId}/server/{serverId}
-> @api {GET} /ipLoadbalancing/{serviceName}/udp/farm/{farmId}/server/{serverId}
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/http/farm/{farmId}/server/{serverId}
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/tcp/farm/{farmId}/server/{serverId}
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/udp/farm/{farmId}/server/{serverId}
 > 
 
 ### Edit settings for a particular server
 
 > [!api]
 >
-> @api {PUT} /ipLoadbalancing/{serviceName}/http/farm/{farmId}/server/{serverId}
-> @api {PUT} /ipLoadbalancing/{serviceName}/tcp/farm/{farmId}/server/{serverId}
-> @api {PUT} /ipLoadbalancing/{serviceName}/udp/farm/{farmId}/server/{serverId}
+> @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/http/farm/{farmId}/server/{serverId}
+> @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/tcp/farm/{farmId}/server/{serverId}
+> @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/udp/farm/{farmId}/server/{serverId}
 > 
 
 ### Delete a server
 
 > [!api]
 >
-> @api {DELETE} /ipLoadbalancing/{serviceName}/http/farm/{farmId}/server/{serverId}
-> @api {DELETE} /ipLoadbalancing/{serviceName}/tcp/farm/{farmId}/server/{serverId}
-> @api {DELETE} /ipLoadbalancing/{serviceName}/udp/farm/{farmId}/server/{serverId}
+> @api {v1} /ipLoadbalancing DELETE /ipLoadbalancing/{serviceName}/http/farm/{farmId}/server/{serverId}
+> @api {v1} /ipLoadbalancing DELETE /ipLoadbalancing/{serviceName}/tcp/farm/{farmId}/server/{serverId}
+> @api {v1} /ipLoadbalancing DELETE /ipLoadbalancing/{serviceName}/udp/farm/{farmId}/server/{serverId}
 > 
 
 ## SSL certificats
@@ -189,28 +189,28 @@ For a complete reference to the API functions of the OVH Load Balancer service, 
 
 > [!api]
 >
-> @api {GET} /ipLoadbalancing/{serviceName}/ssl
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/ssl
 > 
 
 ### Create an SSL certificate
 
 > [!api]
 >
-> @api {POST} /ipLoadbalancing/{serviceName}/ssl
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/ssl
 > 
 
 ### Return the settings for a particular SSL Certificate
 
 > [!api]
 >
-> @api {GET} /ipLoadbalancing/{serviceName}/ssl/{id}
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/ssl/{id}
 > 
 
 ### Delete a SSL certificate 
 
 > [!api]
 >
-> @api {DELETE} /ipLoadbalancing/{serviceName}/ssl/{id}
+> @api {v1} /ipLoadbalancing DELETE /ipLoadbalancing/{serviceName}/ssl/{id}
 > 
 
 ## Tasks
@@ -219,19 +219,19 @@ For a complete reference to the API functions of the OVH Load Balancer service, 
 
 > [!api]
 >
-> @api {POST} /ipLoadbalancing/{serviceName}/refresh
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/refresh
 > 
 
 ### Return the list of task IDs
 
 > [!api]
 >
-> @api {GET} /ipLoadbalancing/{serviceName}/task
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/task
 > 
 
 ### Return the status of a particular task
 
 > [!api]
 >
-> @api {GET} /ipLoadbalancing/{serviceName}/task/{id}
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/task/{id}
 > 

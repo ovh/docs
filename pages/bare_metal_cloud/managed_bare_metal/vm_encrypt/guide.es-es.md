@@ -74,14 +74,14 @@ Para obtener su «serviceName», utilice la siguiente llamada a la API:
 
 > [!api]
 >
-> @api {GET} /dedicatedCloud
+> @api {v1} /dedicatedCloud GET /dedicatedCloud
 >
 
 Para comprobar que el cifrado aun no está activado, utilice esta llamada a la API:
 
 > [!api]
 >
-> @api {GET} /dedicatedCloud/{serviceName}/vmEncryption
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/vmEncryption
 >
 
 ```shell
@@ -92,7 +92,7 @@ Registre el KMS a continuación:
 
 > [!api]
 >
-> @api {POST} /dedicatedCloud/{serviceName}/kms
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/kms
 >
 
 Para realizar esta operación, compruebe que dispone de la siguiente información:

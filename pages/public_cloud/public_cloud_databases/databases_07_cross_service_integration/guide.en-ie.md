@@ -145,7 +145,7 @@ Execute the following API call:
 
 > [!api]
 >
-> @api {GET} /cloud/project
+> @api {v1} /cloud GET /cloud/project
 >
 
 ![serviceName](images/04_advanced_configuration-20220405143910846.png){.thumbnail}
@@ -160,57 +160,57 @@ Open the following API call, paste your service ID into the `serviceName` input 
 > Cassandra
 >> > [!api]
 >> >
->> > @api {GET} /cloud/project/{serviceName}/database/cassandra
+>> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/cassandra
 >> >
 > Grafana
 >> > [!api]
 >> >
->> > @api {GET} /cloud/project/{serviceName}/database/grafana
+>> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/grafana
 >> >
 > Kafka
 >> > [!api]
 >> >
->> > @api {GET} /cloud/project/{serviceName}/database/kafka
+>> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/kafka
 >> >
 > Kafka Connect
 >> > [!api]
 >> >
->> > @api {GET} /cloud/project/{serviceName}/database/kafkaConnect
+>> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/kafkaConnect
 >> >
 > Kafka MirrorMaker
 >> > [!api]
 >> >
->> > @api {GET} /cloud/project/{serviceName}/database/kafkaMirrorMaker
+>> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/kafkaMirrorMaker
 >> >
 > M3 Aggregator
 >> > [!api]
 >> >
->> > @api {GET} /cloud/project/{serviceName}/database/m3aggregator
+>> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/m3aggregator
 >> >
 > M3db
 >> > [!api]
 >> >
->> > @api {GET} /cloud/project/{serviceName}/database/m3db
+>> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/m3db
 >> >
 > MySQL
 >> > [!api]
 >> >
->> > @api {GET} /cloud/project/{serviceName}/database/mysql
+>> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/mysql
 >> >
 > Opensearch
 >> > [!api]
 >> >
->> > @api {GET} /cloud/project/{serviceName}/database/opensearch
+>> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/opensearch
 >> >
 > PostgreSQL
 >> > [!api]
 >> >
->> > @api {GET} /cloud/project/{serviceName}/database/postgresql
+>> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/postgresql
 >> >
 > Redis
 >> > [!api]
 >> >
->> > @api {GET} /cloud/project/{serviceName}/database/redis
+>> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/redis
 >> >
 
 ![Cluster ID](images/04_advanced_configuration-20220405144109794.png){.thumbnail}
@@ -222,47 +222,47 @@ Get integration capabilities related to your Public Cloud Databases service:
 > [!tabs]
 > Cassandra
 >> > [!api]
->> > @api {GET} /cloud/project/{serviceName}/database/cassandra/{clusterId}/capabilities/integration
+>> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/cassandra/{clusterId}/capabilities/integration
 >> >
 > Grafana
 >> > [!api]
->> > @api {GET} /cloud/project/{serviceName}/database/grafana/{clusterId}/capabilities/integration
+>> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/grafana/{clusterId}/capabilities/integration
 >> >
 > Kafka
 >> > [!api]
->> > @api {GET} /cloud/project/{serviceName}/database/kafka/{clusterId}/capabilities/integration
+>> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/kafka/{clusterId}/capabilities/integration
 >> >
 > Kafka Connect
 >> > [!api]
->> > @api {GET} /cloud/project/{serviceName}/database/kafkaConnect/{clusterId}/capabilities/integration
+>> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/kafkaConnect/{clusterId}/capabilities/integration
 >> >
 > Kafka MirrorMaker
 >> > [!api]
->> > @api {GET} /cloud/project/{serviceName}/database/kafkaMirrorMaker/{clusterId}/capabilities/integration
+>> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/kafkaMirrorMaker/{clusterId}/capabilities/integration
 >> >
 > M3 Aggregator
 >> > [!api]
->> > @api {GET} /cloud/project/{serviceName}/database/m3aggregator/{clusterId}/capabilities/integration
+>> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/m3aggregator/{clusterId}/capabilities/integration
 >> >
 > M3db
 >> > [!api]
->> > @api {GET} /cloud/project/{serviceName}/database/m3db/{clusterId}/capabilities/integration
+>> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/m3db/{clusterId}/capabilities/integration
 >> >
 > MySQL
 >> > [!api]
->> > @api {GET} /cloud/project/{serviceName}/database/mysql/{clusterId}/capabilities/integration
+>> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/mysql/{clusterId}/capabilities/integration
 >> >
 > OpenSearch
 >> > [!api]
->> > @api {GET} /cloud/project/{serviceName}/database/opensearch/{clusterId}/capabilities/integration
+>> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/opensearch/{clusterId}/capabilities/integration
 >> >
 > PostgreSQL
 >> > [!api]
->> > @api {GET} /cloud/project/{serviceName}/database/postgresql/{clusterId}/capabilities/integration
+>> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/postgresql/{clusterId}/capabilities/integration
 >> >
 > Redis
 >> > [!api]
->> > @api {GET} /cloud/project/{serviceName}/database/redis/{clusterId}/capabilities/integration
+>> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/redis/{clusterId}/capabilities/integration
 >> >
 
 ![Get Integration Capabilities](images/databases_07_cross_service_integration-20220708142931159.png){.thumbnail}
@@ -276,47 +276,47 @@ For that, you need to create a new integration:
 > [!tabs]
 > Cassandra
 >> > [!api]
->> > @api {POST} /cloud/project/{serviceName}/database/cassandra/{clusterId}/integration
+>> > @api {v1} /cloud POST /cloud/project/{serviceName}/database/cassandra/{clusterId}/integration
 >> >
 > Grafana
 >> > [!api]
->> > @api {POST} /cloud/project/{serviceName}/database/grafana/{clusterId}/integration
+>> > @api {v1} /cloud POST /cloud/project/{serviceName}/database/grafana/{clusterId}/integration
 >> >
 > Kafka
 >> > [!api]
->> > @api {POST} /cloud/project/{serviceName}/database/kafka/{clusterId}/integration
+>> > @api {v1} /cloud POST /cloud/project/{serviceName}/database/kafka/{clusterId}/integration
 >> >
 > Kafka Connect
 >> > [!api]
->> > @api {POST} /cloud/project/{serviceName}/database/kafkaConnect/{clusterId}/integration
+>> > @api {v1} /cloud POST /cloud/project/{serviceName}/database/kafkaConnect/{clusterId}/integration
 >> >
 > Kafka MirrorMaker
 >> > [!api]
->> > @api {POST} /cloud/project/{serviceName}/database/kafkaMirrorMaker/{clusterId}/integration
+>> > @api {v1} /cloud POST /cloud/project/{serviceName}/database/kafkaMirrorMaker/{clusterId}/integration
 >> >
 > M3 Aggregator
 >> > [!api]
->> > @api {POST} /cloud/project/{serviceName}/database/m3aggregator/{clusterId}/integration
+>> > @api {v1} /cloud POST /cloud/project/{serviceName}/database/m3aggregator/{clusterId}/integration
 >> >
 > M3db
 >> > [!api]
->> > @api {POST} /cloud/project/{serviceName}/database/m3db/{clusterId}/integration
+>> > @api {v1} /cloud POST /cloud/project/{serviceName}/database/m3db/{clusterId}/integration
 >> >
 > MySQL
 >> > [!api]
->> > @api {POST} /cloud/project/{serviceName}/database/mysql/{clusterId}/integration
+>> > @api {v1} /cloud POST /cloud/project/{serviceName}/database/mysql/{clusterId}/integration
 >> >
 > OpenSearch
 >> > [!api]
->> > @api {POST} /cloud/project/{serviceName}/database/opensearch/{clusterId}/integration
+>> > @api {v1} /cloud POST /cloud/project/{serviceName}/database/opensearch/{clusterId}/integration
 >> >
 > PostgreSQL
 >> > [!api]
->> > @api {POST} /cloud/project/{serviceName}/database/postgresql/{clusterId}/integration
+>> > @api {v1} /cloud POST /cloud/project/{serviceName}/database/postgresql/{clusterId}/integration
 >> >
 > Redis
 >> > [!api]
->> > @api {POST} /cloud/project/{serviceName}/database/redis/{clusterId}/integration
+>> > @api {v1} /cloud POST /cloud/project/{serviceName}/database/redis/{clusterId}/integration
 >> >
 
 Fill in the form with the information corresponding to the type of integration chosen.
@@ -340,47 +340,47 @@ Then create a second integration from your *Destination* service name:
 > [!tabs]
 > Cassandra
 >> > [!api]
->> > @api {POST} /cloud/project/{serviceName}/database/cassandra/{clusterId}/integration
+>> > @api {v1} /cloud POST /cloud/project/{serviceName}/database/cassandra/{clusterId}/integration
 >> >
 > Grafana
 >> > [!api]
->> > @api {POST} /cloud/project/{serviceName}/database/grafana/{clusterId}/integration
+>> > @api {v1} /cloud POST /cloud/project/{serviceName}/database/grafana/{clusterId}/integration
 >> >
 > Kafka
 >> > [!api]
->> > @api {POST} /cloud/project/{serviceName}/database/kafka/{clusterId}/integration
+>> > @api {v1} /cloud POST /cloud/project/{serviceName}/database/kafka/{clusterId}/integration
 >> >
 > Kafka Connect
 >> > [!api]
->> > @api {POST} /cloud/project/{serviceName}/database/kafkaConnect/{clusterId}/integration
+>> > @api {v1} /cloud POST /cloud/project/{serviceName}/database/kafkaConnect/{clusterId}/integration
 >> >
 > Kafka MirrorMaker
 >> > [!api]
->> > @api {POST} /cloud/project/{serviceName}/database/kafkaMirrorMaker/{clusterId}/integration
+>> > @api {v1} /cloud POST /cloud/project/{serviceName}/database/kafkaMirrorMaker/{clusterId}/integration
 >> >
 > M3 Aggregator
 >> > [!api]
->> > @api {POST} /cloud/project/{serviceName}/database/m3aggregator/{clusterId}/integration
+>> > @api {v1} /cloud POST /cloud/project/{serviceName}/database/m3aggregator/{clusterId}/integration
 >> >
 > M3db
 >> > [!api]
->> > @api {POST} /cloud/project/{serviceName}/database/m3db/{clusterId}/integration
+>> > @api {v1} /cloud POST /cloud/project/{serviceName}/database/m3db/{clusterId}/integration
 >> >
 > MySQL
 >> > [!api]
->> > @api {POST} /cloud/project/{serviceName}/database/mysql/{clusterId}/integration
+>> > @api {v1} /cloud POST /cloud/project/{serviceName}/database/mysql/{clusterId}/integration
 >> >
 > OpenSearch
 >> > [!api]
->> > @api {POST} /cloud/project/{serviceName}/database/opensearch/{clusterId}/integration
+>> > @api {v1} /cloud POST /cloud/project/{serviceName}/database/opensearch/{clusterId}/integration
 >> >
 > PostgreSQL
 >> > [!api]
->> > @api {POST} /cloud/project/{serviceName}/database/postgresql/{clusterId}/integration
+>> > @api {v1} /cloud POST /cloud/project/{serviceName}/database/postgresql/{clusterId}/integration
 >> >
 > Redis
 >> > [!api]
->> > @api {POST} /cloud/project/{serviceName}/database/redis/{clusterId}/integration
+>> > @api {v1} /cloud POST /cloud/project/{serviceName}/database/redis/{clusterId}/integration
 >> >
 
 ![Create Grafana Integration](images/databases_07_cross_service_integration-20220708180105894.png){.thumbnail}

@@ -38,7 +38,7 @@ Todos os seus serviços ativos podem ser recuperados utilizando a seguinte rota:
 
 > [!api]
 >
-> @api {GET} /dedicated/nasha
+> @api {v1} /dedicated/nasha GET /dedicated/nasha
 >
 
 Por predefinição, realiza-se uma snapshot dos seus dados a cada hora e é guardado no seu NAS-HA. Pode ativar outras estratégias de snapshot que irão criar snapshots com frequências predefinidas.
@@ -53,7 +53,7 @@ Para apresentar o planeamento de snapshot automático ativo, utilize a seguinte 
 >
 >> > [!api]
 >> >
->> > @api {GET} /dedicated/nasha/{serviceName}/partition/{partitionName}/snapshot
+>> > @api {v1} /dedicated/nasha GET /dedicated/nasha/{serviceName}/partition/{partitionName}/snapshot
 >> >
 >>
 >
@@ -78,7 +78,7 @@ Para criar snapshots automáticas adicionais a uma frequência selecionada, util
 >
 >> > [!api]
 >> >
->> > @api {POST} /dedicated/nasha/{serviceName}/partition/{partitionName}/snapshot
+>> > @api {v1} /dedicated/nasha POST /dedicated/nasha/{serviceName}/partition/{partitionName}/snapshot
 >> >
 >>
 >
@@ -107,7 +107,7 @@ Para obter os detalhes de uma snapshot automática, utilize a seguinte rota:
 >
 >> > [!api]
 >> >
->> > @api {GET} /dedicated/nasha/{serviceName}/partition/{partitionName}/snapshot/{snapshotType}
+>> > @api {v1} /dedicated/nasha GET /dedicated/nasha/{serviceName}/partition/{partitionName}/snapshot/{snapshotType}
 >> >
 >>
 >
@@ -136,7 +136,7 @@ Utilize a seguinte rota para eliminar uma frequência de snapshot automática:
 >
 >> > [!api]
 >> >
->> > @api {DELETE} /dedicated/nasha/{serviceName}/partition/{partitionName}/snapshot/{snapshotType}
+>> > @api {v1} /dedicated/nasha DELETE /dedicated/nasha/{serviceName}/partition/{partitionName}/snapshot/{snapshotType}
 >> >
 >>
 >
@@ -167,7 +167,7 @@ Utilize a seguinte rota para recuperar snapshots personalizadas existentes:
 >
 >> > [!api]
 >> >
->> > @api {GET} /dedicated/nasha/{serviceName}/partition/{partitionName}/customSnapshot
+>> > @api {v1} /dedicated/nasha GET /dedicated/nasha/{serviceName}/partition/{partitionName}/customSnapshot
 >> >
 >>
 >
@@ -192,7 +192,7 @@ Para adicionar uma snapshot manual, utilize a seguinte rota:
 >
 >> > [!api]
 >> >
->> > @api {POST} /dedicated/nasha/{serviceName}/partition/{partitionName}/customSnapshot
+>> > @api {v1} /dedicated/nasha POST /dedicated/nasha/{serviceName}/partition/{partitionName}/customSnapshot
 >> >
 >>
 >
@@ -225,7 +225,7 @@ Para apresentar os detalhes de uma snapshot personalizada, utilize a seguinte ro
 >
 >> > [!api]
 >> >
->> > @api {GET} /dedicated/nasha/{serviceName}/partition/{partitionName}/customSnapshot/{name}
+>> > @api {v1} /dedicated/nasha GET /dedicated/nasha/{serviceName}/partition/{partitionName}/customSnapshot/{name}
 >> >
 >>
 >
@@ -254,7 +254,7 @@ Utilize a seguinte rota para eliminar uma snapshot personalizada:
 >
 >> > [!api]
 >> >
->> > @api {DELETE} /dedicated/nasha/{serviceName}/partition/{partitionName}/customSnapshot/{name} 
+>> > @api {v1} /dedicated/nasha GET /dedicated/nasha/{serviceName}/partition/{partitionName}/customSnapshot/{name}
 >> >
 >>
 >

@@ -94,7 +94,7 @@ Rufen Sie zunächst die Liste der IPs jedes OVHcloud Dienstes ab (Hosted Private
 
 > [!api]
 >
-> @api {GET} /ip
+> @api {v1} /ip GET /ip
 >
 
 **type**: Geben Sie den Typ der IP-Adresse an (Dedicated, PCC, VPS, vRack, PCI etc.)
@@ -115,7 +115,7 @@ Suchen Sie anschließend mithilfe des folgenden Aufrufs die IP-Adressen in einem
 
 > [!api]
 >
-> @api {GET} /ip/{ip}/spam
+> @api {v1} /ip GET /ip/{ip}/spam
 >
 
 **ip**: Geben Sie den im vorherigen Schritt erhaltenen IP-Block mit der Netzmaske an. Beispiel: 122.122.122.121/28<br>
@@ -131,7 +131,7 @@ Sie erhalten Informationen zur Sperrung mit dem nächsten Aufruf, ansonsten gehe
 
 > [!api]
 >
-> @api {GET} /ip/{ip}/spam/{ipSpamming}
+> @api {v1} /ip GET /ip/{ip}/spam/{ipSpamming}
 >
 
 **ip**: Geben Sie den im vorherigen Schritt erhaltenen IP-Block mit der Netzmaske an.<br>
@@ -158,7 +158,7 @@ Wenn Sie Statistiken über die Ergebnisse sehen möchten, verwenden Sie den folg
 
 > [!api]
 >
-> @api {GET} /ip/{ip}/spam/{ipSpamming}/stats
+> @api {v1} /ip GET /ip/{ip}/spam/{ipSpamming}/stats
 >
 
 **ip**: Geben Sie den im vorherigen Schritt erhaltenen IP-Block mit der Netzmaske an.<br>
@@ -187,7 +187,7 @@ Um Ihre IP-Adresse zu entsperren, verwenden Sie folgenden Aufruf:
 
 > [!api]
 >
-> @api {POST} /ip/{ip}/spam/{ipSpamming}/unblock
+> @api {v1} /ip POST /ip/{ip}/spam/{ipSpamming}/unblock
 >
 
 **ip**: Geben Sie den im vorherigen Schritt erhaltenen IP-Adressblock mit der Netzmaske an.<br>

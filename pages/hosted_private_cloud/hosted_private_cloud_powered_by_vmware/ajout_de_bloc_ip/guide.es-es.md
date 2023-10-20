@@ -67,7 +67,7 @@ Para ello, utilice la siguiente llamada:
 
 > [!api]
 >
-> @api {POST} /ip/{ip}/move
+> @api {v1} /ip POST /ip/{ip}/move
 > 
 
 Rellene los campos utilizando los siguientes parámetros:
@@ -86,7 +86,7 @@ Si más adelante tiene que desvincular el bloque IP, puede utilizar la siguiente
 
 > [!api]
 >
-> @api {POST} /ip/{ip}/park
+> @api {v1} /ip POST /ip/{ip}/park
 > 
 
 > [!warning]

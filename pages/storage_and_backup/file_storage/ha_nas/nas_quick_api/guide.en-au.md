@@ -30,7 +30,7 @@ All your active services can be retrieved by using the following route:
 
 > [!api]
 >
-> @api {GET} /dedicated/nasha
+> @api {v1} /dedicated/nasha GET /dedicated/nasha
 >
 
 ### Creating a partition
@@ -43,7 +43,7 @@ Use the following route to create a new partition:
 >
 >> > [!api]
 >> >
->> > @api {POST} /dedicated/nasha/{serviceName}/partition
+>> > @api {v1} /dedicated/nasha POST /dedicated/nasha/{serviceName}/partition
 >> >
 >>
 >
@@ -87,9 +87,9 @@ You can verify the IP addresses that are eligible for access via the following A
 >
 >> > [!api]
 >> >
->> > @api {GET} /dedicated/nasha/{serviceName}/partition/{partitionName}/authorizableIps
+>> > @api {v1} /dedicated/nasha GET /dedicated/nasha/{serviceName}/partition/{partitionName}/authorizableIps
 >> >
->> > @api {GET} /dedicated/nasha/{serviceName}/partition/{partitionName}/authorizableBlocks
+>> > @api {v1} /dedicated/nasha GET /dedicated/nasha/{serviceName}/partition/{partitionName}/authorizableBlocks
 >> >
 >>
 >
@@ -112,7 +112,7 @@ To create a new ACL entry that will allow you to connect to your partition, use 
 >
 >> > [!api]
 >> >
->> > @api {POST} /dedicated/nasha/{serviceName}/partition/{partitionName}/access
+>> > @api {v1} /dedicated/nasha POST /dedicated/nasha/{serviceName}/partition/{partitionName}/access
 >> >
 >>
 >
@@ -150,7 +150,7 @@ To add a manual snapshot, use the following route:
 >
 >> > [!api]
 >> >
->> > @api {POST} /dedicated/nasha/{serviceName}/partition/{partitionName}/customSnapshot
+>> > @api {v1} /dedicated/nasha POST /dedicated/nasha/{serviceName}/partition/{partitionName}/customSnapshot
 >> >
 >>
 >
@@ -183,7 +183,7 @@ Use the following route to delete a partition:
 >
 >> > [!api]
 >> >
->> > @api {DELETE} /dedicated/nasha/{serviceName}/partition/{partitionName}
+>> > @api {v1} /dedicated/nasha DELETE /dedicated/nasha/{serviceName}/partition/{partitionName}
 >> >
 >>
 >

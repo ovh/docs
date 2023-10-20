@@ -71,7 +71,7 @@ Por exemplo, para obter a lista dos seus nomes de domínio, utilize a seguinte A
  
 > [!api]
 >
-> @api {GET} /domain
+> @api {v1} /domain GET /domain
 >
 
 **POST**
@@ -82,7 +82,7 @@ Por exemplo, para adicionar um registo à sua zona DNS, utilize a seguinte API:
 
 > [!api]
 >
-> @api {POST} /domain/zone/{zoneName}/record
+> @api {v1} /domain POST /domain/zone/{zoneName}/record
 >
 
 **PUT**
@@ -93,7 +93,7 @@ Por exemplo, se se enganou num registo da sua zona DNS, utilize a seguinte API:
 
 > [!api]
 >
-> @api {PUT} /domain/zone/{zoneName}/record/{id}
+> @api {v1} /domain PUT /domain/zone/{zoneName}/record/{id}
 >
 
 **LETE**
@@ -104,7 +104,7 @@ Por exemplo, se não deseja conservar o registo DNS que adicionou à sua zona DN
 
 > [!api]
 >
-> @api {DELETE}  /domain/zone/{zoneName}/record/{id}
+> @api {v1} /domain DELETE /domain/zone/{zoneName}/record/{id}
 >
 
 ##### Parâmetros da API

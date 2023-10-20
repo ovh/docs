@@ -45,7 +45,7 @@ All existing snapshots for a volume can be retrieved using the following route:
 >
 >> > [!api]
 >> >
->> > @api {GET} /storage/netapp/{serviceName}/share/{shareId}/snapshot
+>> > @api {v1} /storage GET /storage/netapp/{serviceName}/share/{shareId}/snapshot
 >> >
 >>
 >
@@ -74,7 +74,7 @@ To create a new snapshot, use the following route:
 >
 >> > [!api]
 >> >
->> > @api {POST} /storage/netapp/{serviceName}/share/{shareId}/snapshot
+>> > @api {v1} /storage POST /storage/netapp/{serviceName}/share/{shareId}/snapshot
 >> >
 >>
 >
@@ -113,7 +113,7 @@ To get information about a snapshot, use the following route:
 >
 >> > [!api]
 >> >
->> > @api {GET} /storage/netapp/{serviceName}/share/{shareId}/snapshot/{snapshotId}
+>> > @api {v1} /storage GET /storage/netapp/{serviceName}/share/{shareId}/snapshot/{snapshotId}
 >> >
 >>
 >
@@ -144,7 +144,7 @@ To remove a snapshot, use the following route:
 >
 >> > [!api]
 >> >
->> > @api {DELETE} /storage/netapp/{serviceName}/share/{shareId}/snapshot/{snapshotId}
+>> > @api {v1} /storage DELETE /storage/netapp/{serviceName}/share/{shareId}/snapshot/{snapshotId}
 >> >
 >>
 >

@@ -71,7 +71,7 @@ Por ejemplo, para consultar la lista de dominios, utilice la siguiente API:
  
 > [!api]
 >
-> @api {GET} /domain
+> @api {v1} /domain GET /domain
 >
 
 **POST**
@@ -82,7 +82,7 @@ Por ejemplo, para añadir un registro a su zona DNS, utilice la siguiente API:
 
 > [!api]
 >
-> @api {POST} /domain/zone/{zoneName}/record
+> @api {v1} /domain POST /domain/zone/{zoneName}/record
 >
 
 **PUT**
@@ -93,7 +93,7 @@ Por ejemplo, si se ha equivocado al guardar la zona DNS, utilice la siguiente AP
 
 > [!api]
 >
-> @api {PUT} /domain/zone/{zoneName}/record/{id}
+> @api {v1} /domain PUT /domain/zone/{zoneName}/record/{id}
 >
 
 **DELETE**
@@ -104,7 +104,7 @@ Por ejemplo, si no desea conservar el registro DNS que ha añadido a su zona DNS
 
 > [!api]
 >
-> @api {DELETE} /domain/zone/{zoneName}/record/{id}
+> @api {v1} /domain DELETE /domain/zone/{zoneName}/record/{id}
 >
 
 ##### Parámetros de la API

@@ -47,14 +47,14 @@ Conéctese a la [API de OVHcloud](https://api.ovh.com/){.external} con su ID de 
 
 > [!api]
 >
-> @api {GET} /vrack
+> @api {v1} /vrack GET /vrack
 > 
 
 Esta llamada a la API permite mostrar la lista de vRacks. Si el nombre mostrado en la API no le permite identificar el vRack, puede consultarlo en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, en la sección `Bare Metal Cloud`{.action}. Haga clic en `Network`{.action} y seleccione `vRack`{.action} en la columna izquierda y se desplegarán los vRacks existentes.
 
 > [!api]
 >
-> @api {POST} /vrack/{serviceName}/ip/{ip}/announceInZone
+> @api {v1} /vrack POST /vrack/{serviceName}/ip/{ip}/announceInZone
 > 
 
 Esta llamada a la API permite modificar el anuncio de un bloque de IP. Complete la información solicitada:

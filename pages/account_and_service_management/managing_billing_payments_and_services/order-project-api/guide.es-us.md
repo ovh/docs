@@ -34,7 +34,7 @@ Utilice esta llamada para crear la cesta:
 
 > [!api]
 >
-> @api {POST} /order/cart
+> @api {v1} /order POST /order/cart
 >
 
 Elija su filial de la API de OVHcloud. Anote el número de cesta ("cartId") en la respuesta. será necesario identificar esta cesta.
@@ -43,7 +43,7 @@ A continuación, añada un proyecto de Public Cloud como artículo. Utilice esta
 
 > [!api]
 >
-> @api {GET} /order/cart/{cartId}/cloud
+> @api {v1} /order GET /order/cart/{cartId}/cloud
 >
 
 En la respuesta, puede comprobar la configuración de un proyecto de Public Cloud:
@@ -60,7 +60,7 @@ Utilice esta llamada para añadir el artículo a su cesta:
 
 > [!api]
 >
-> @api {POST} /order/cart/{cartId}/cloud
+> @api {v1} /order POST /order/cart/{cartId}/cloud
 >
 
 Se facilitará la siguiente información, extraída en las etapas anteriores:
@@ -77,21 +77,21 @@ La respuesta incluirá un "itemId" que puede utilizarse (junto con el "cartId") 
 
 > [!api]
 >
-> @api {GET} /order/cart/{cartId}/item/{itemId}
+> @api {v1} /order GET /order/cart/{cartId}/item/{itemId}
 >
 
 Puede consultar la lista de parámetros disponibles para este artículo con la siguiente llamada:
 
 > [!api]
 >
-> @api {GET} /order/cart/{cartId}/item/{itemId}/requiredConfiguration
+> @api {v1} /order GET /order/cart/{cartId}/item/{itemId}/requiredConfiguration
 >
 
 Utilice el siguiente punto para nombrar su proyecto (`etiqueta: "description"`):
 
 > [!api]
 >
-> @api {POST} /order/cart/{cartId}/item/{itemId}/configuración
+> @api {v1} /order POST /order/cart/{cartId}/item/{itemId}/configuración
 >
 
 |Campo|Valor|
@@ -107,7 +107,7 @@ Las respuestas incluyen un "configuracionId" que puede utilizarse (junto con "ca
 
 > [!api]
 >
-> @api {DELETE} /order/cart/{cartId}/item/{itemId}/configuración/{configurationId}
+> @api {v1} /order DELETE /order/cart/{cartId}/item/{itemId}/configuración/{configurationId}
 >
 
 ### 2\. validar la cesta
@@ -116,14 +116,14 @@ Puede comprobar el contenido de su cesta utilizando "cartId" :
 
 > [!api]
 >
-> @api {GET} /order/cart/{cartId}/checkout
+> @api {v1} /order GET /order/cart/{cartId}/checkout
 >
 
 La siguiente llamada le permite crear un enlace hacia su pedido. En primer lugar, hay que marcar la casilla correspondiente para renunciar al derecho de desistimiento.
 
 > [!api]
 >
-> @api {POST} /order/cart/{cartId}/checkout
+> @api {v1} /order POST /order/cart/{cartId}/checkout
 >
 
 ## Más información

@@ -180,14 +180,14 @@ En primer lugar, obtenga el serviceName:
 
 > [!api]
 >
-> @api {GET} /veeam/veeamEnterprise
+> @api {v1} /veeam/veeamEnterprise GET /veeam/veeamEnterprise
 >
 
 A continuación, regístrelo:
 
 > [!api]
 >
-> @api {POST} /veeam/veeamEnterprise/{serviceName}/register
+> @api {v1} /veeam/veeamEnterprise POST /veeam/veeamEnterprise/{serviceName}/register
 >
 
 Necesitará la siguiente información:
@@ -201,7 +201,7 @@ Puede obtener la dirección IP pública que utiliza Veeam Enterprise para comuni
 
 > [!api]
 >
-> @api {GET} /veeam/veeamEnterprise/{serviceName}
+> @api {v1} /veeam/veeamEnterprise GET /veeam/veeamEnterprise/{serviceName}
 >
 
 > [!primary]

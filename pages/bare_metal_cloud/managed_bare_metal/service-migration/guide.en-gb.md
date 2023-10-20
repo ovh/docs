@@ -159,7 +159,7 @@ Here is a checklist of aspects to take into account:
 
 > [!api]
 >
-> @api {GET} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/vm/{vmId}
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/vm/{vmId}
 >
 
 The “backup” section of the returning json will give information on current backup configuration.

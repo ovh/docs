@@ -35,7 +35,7 @@ La route d'API **/service** regroupe les actions communes à tous types de servi
 
 > [!api]
 >
-> @api {POST} /service/{serviceId}/suspend
+> @api {v1} /service POST /service/{serviceId}/suspend
 >
 
 L'appel change l'état du service pour le passer en suspension :
@@ -50,7 +50,7 @@ Le cas échéant :
 
 > [!api]
 >
-> @api {POST} /service/{serviceId}/reopen
+> @api {v1} /service POST /service/{serviceId}/reopen
 >
 
 L'appel entraîne la réouverture du service et l'édition de la facture sur la période entre la date de suspension et la date de réouverture.
@@ -61,7 +61,7 @@ Pour finir :
 
 > [!api]
 >
-> @api {POST} /service/{serviceId}/terminate
+> @api {v1} /service POST /service/{serviceId}/terminate
 >
 
 L'appel entraîne la suppression du service et des données et l'édition de la facture sur la période entre la date de suspension et la date de suppression.

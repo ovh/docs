@@ -189,7 +189,7 @@ Pour plus d'informations, consultez notre guide pour [activer et utiliser Veeam 
 
 > [!api]
 >
-> @api {GET} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/vm/{vmId}
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/vm/{vmId}
 >
 
 La section « sauvegarde » du fichier json retourné fournit des informations sur la configuration de sauvegarde actuelle.
@@ -282,7 +282,7 @@ Les sauvegardes Veeam fournies par OVHcloud sont configurées par VM. Par consé
 
 > [!api]
 >
-> @api {POST} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/vm/{vmId}
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/vm/{vmId}
 >
 
 ## Aller plus loin

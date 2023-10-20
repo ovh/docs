@@ -45,7 +45,7 @@ Personalisierte Skripte können in folgenden Fällen interessant sein:
 
 > [!api]
 >
-> @api {PUT} /dedicated/server/{serviceName}
+> @api {v1} /dedicated/server PUT /dedicated/server/{serviceName}
 >
 
 Geben Sie Ihr Skript direkt im Attribut `bootScript` ein.
@@ -54,7 +54,7 @@ Geben Sie Ihr Skript direkt im Attribut `bootScript` ein.
 
 > [!api]
 >
-> @api {GET} /dedicated/server/{serviceName}
+> @api {v1} /dedicated/server GET /dedicated/server/{serviceName}
 >
 
 Ihr Skript ist sichtbar im Attribut `bootScript`.
@@ -95,14 +95,14 @@ Sie können nun im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=goto
 
 > [!api]
 >
-> @api {PUT} /dedicated/server/{serviceName}
+> @api {v1} /dedicated/server PUT /dedicated/server/{serviceName}
 >
 
 Wählen Sie `1` für das Attribut `bootId` aus.
 
 > [!api]
 >
-> @api {GET} /dedicated/server/{serviceName}
+> @api {v1} /dedicated/server GET /dedicated/server/{serviceName}
 >
 
 Sie werden feststellen, dass der Wert des Attributs `bootScript` jetzt null ist.

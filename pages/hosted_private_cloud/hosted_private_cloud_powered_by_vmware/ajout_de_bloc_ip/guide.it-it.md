@@ -64,7 +64,7 @@ Utilizza la seguente chiamata API:
 
 > [!api]
 >
-> @api {POST} /ip/{ip}/move
+> @api {v1} /ip POST /ip/{ip}/move
 > 
 
 Completa i campi nel modo seguente:
@@ -83,7 +83,7 @@ Se, in seguito, devi scollegare il blocco IP, puoi utilizzare questa chiamata AP
 
 > [!api]
 >
-> @api {POST} /ip/{ip}/park
+> @api {v1} /ip POST /ip/{ip}/park
 > 
 
 > [!warning]

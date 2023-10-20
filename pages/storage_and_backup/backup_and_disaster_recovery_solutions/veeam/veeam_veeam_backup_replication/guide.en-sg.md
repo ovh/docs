@@ -175,14 +175,14 @@ First, retrieve your serviceName:
 
 > [!api]
 >
-> @api {GET} /veeam/veeamEnterprise
+> @api {v1} /veeam/veeamEnterprise GET /veeam/veeamEnterprise
 >
 
 Then register it:
 
 > [!api]
 >
-> @api {POST} /veeam/veeamEnterprise/{serviceName}/register
+> @api {v1} /veeam/veeamEnterprise POST /veeam/veeamEnterprise/{serviceName}/register
 >
 
 You will need the following information:
@@ -196,7 +196,7 @@ You can retrieve the public IP used by Veeam Enterprise to contact your **Veeam 
 
 > [!api]
 >
-> @api {GET} /veeam/veeamEnterprise/{serviceName}
+> @api {v1} /veeam/veeamEnterprise GET /veeam/veeamEnterprise/{serviceName}
 >
 
 > [!primary]

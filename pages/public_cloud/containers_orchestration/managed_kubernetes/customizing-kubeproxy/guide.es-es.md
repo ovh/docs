@@ -62,7 +62,7 @@ If you go to the [Kubernetes section](https://api.ovh.com/console/#/cloud/projec
 
 > [!api]
 >
-> @api {GET} /cloud/project/{serviceName}/kube/{kubeID}/customization
+> @api {v1} /cloud GET /cloud/project/{serviceName}/kube/{kubeID}/customization
 >
 
 **Result:**
@@ -96,7 +96,7 @@ If you go to the [Kubernetes section](https://api.ovh.com/console/#/cloud/projec
 
 > [!api]
 >
-> @api {POST} /cloud/project/{serviceName}/kube
+> @api {v1} /cloud POST /cloud/project/{serviceName}/kube
 >
 
 ```json
@@ -147,7 +147,7 @@ You can take a look to the [Kube-proxy default values](https://github.com/kubern
 
 > [!api]
 >
-> @api {POST} /cloud/project/{serviceName}/kube/{kubeID}/reset
+> @api {v1} /cloud POST /cloud/project/{serviceName}/kube/{kubeID}/reset
 > 
 
 ```json
@@ -186,7 +186,7 @@ If these fields are not specified, it will reset to default value (ipvs for kube
 
 > [!api]
 >
-> @api {PUT} /cloud/project/{serviceName}/kube/{kubeID}/customization
+> @api {v1} /cloud PUT /cloud/project/{serviceName}/kube/{kubeID}/customization
 > 
 
 ```json
@@ -204,7 +204,7 @@ If these fields are not specified, it will reset to default value (ipvs for kube
 
 > [!api]
 >
-> @api {PUT} /cloud/project/{serviceName}/kube/{kubeID}/customization
+> @api {v1} /cloud PUT /cloud/project/{serviceName}/kube/{kubeID}/customization
 > 
 
 ```json

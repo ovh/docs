@@ -37,7 +37,7 @@ Tous vos services actifs peuvent être récupérés en utilisant la route API su
 
 > [!api]
 >
-> @api {GET} /storage/netapp
+> @api {v1} /storage GET /storage/netapp
 >
 
 ### Créer un nouveau volume
@@ -52,7 +52,7 @@ Pour créer un volume, utilisez la route API suivante :
 >
 >> > [!api]
 >> >
->> > @api {POST} /storage/netapp/{serviceName}/share
+>> > @api {v1} /storage POST /storage/netapp/{serviceName}/share
 >> >
 >>
 >
@@ -102,7 +102,7 @@ Pour créer une nouvelle ACL qui vous permettra de vous connecter à votre volum
 >
 >> > [!api]
 >> >
->> > @api {POST} /storage/netapp/{serviceName}/share/{shareId}/acl
+>> > @api {v1} /storage POST /storage/netapp/{serviceName}/share/{shareId}/acl
 >> >
 >>
 >
@@ -143,7 +143,7 @@ Vérifiez le statut de création de l'ACL à l'aide de la route API suivante :
 >
 >> > [!api]
 >> >
->> > @api {GET} /storage/netapp/{serviceName}/share/{shareId}/acl/{aclRuleId}
+>> > @api {v1} /storage GET /storage/netapp/{serviceName}/share/{shareId}/acl/{aclRuleId}
 >> >
 >>
 >
@@ -177,7 +177,7 @@ Une fois que l'ACL est active, récupérez les chemins d'accès du volume à l'a
 >
 >> > [!api]
 >> >
->> > @api {GET} /storage/netapp/{serviceName}/share/{shareId}/accessPath
+>> > @api {v1} /storage GET /storage/netapp/{serviceName}/share/{shareId}/accessPath
 >> >
 >>
 >
@@ -217,7 +217,7 @@ Vous pouvez supprimer votre volume à l'aide de la route API suivante :
 >
 >> > [!api]
 >> >
->> > @api {DELETE} /storage/netapp/{serviceName}/share/{shareId}
+>> > @api {v1} /storage DELETE /storage/netapp/{serviceName}/share/{shareId}
 >> >
 >>
 >

@@ -11,7 +11,7 @@ When using the Load Balancer, your clients do not connect directly to your serve
 
 > [!api]
 >
-> @api {GET} /ipLoadbalancing/{serviceName}/natIp
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/natIp
 > 
 
 ## How do I know the status of my service?
@@ -21,7 +21,7 @@ Sometimes it may be useful to know the status of your OVHcloud Load Balancer.
 
 > [!api]
 >
-> @api {GET} /ipLoadbalancing/{serviceName}/instancesState
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/instancesState
 > 
 
 The different statuses of the OVHcloud Load Balancer can be `running`{.action} (Active), `reload`{.action} (Refresh in progress), `unknown`{.action} (Not yet started), or `dead`{.action} (inactive).
@@ -33,21 +33,21 @@ An Additional IP is an additional IP in which can be joined with your primary IP
 
 > [!api]
 >
-> @api {POST} /ip/{ip}/move
+> @api {v1} /ip POST /ip/{ip}/move
 > 
 
 - Apply the change :
 
 > [!api]
 >
-> @api {POST} /ipLoadbalancing/{serviceName}/refresh
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/refresh
 > 
 
 ## How to list the Additional IPs routed to the OVHcloud Load Balancer?
 
 > [!api]
 >
-> @api {GET} /ipLoadbalancing/{serviceName}/failover
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/failover
 > 
 
 ## How do I order a free SSL certificate ?
@@ -57,7 +57,7 @@ It is possible to order a free SSL ceritificate for the OVHcloud Load Balancer..
 
 > [!api]
 >
-> @api {POST} /ipLoadbalancing/{serviceName}/freeCertificate
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/freeCertificate
 > 
 
 It is possible to order a multi-domain certificate; the `fqdn` fields accepts a sting type input.
@@ -70,7 +70,7 @@ For the orer to be completed, it is required that the domain name points to your
 
 > [!api]
 >
-> @api {GET} /ipLoadbalancing/{serviceName}/ssl
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/ssl
 >
 
 The SSL certificates that have been ordered (free or not) will appear as `built`. Those added by yourself are will appear as `custom`.
@@ -81,6 +81,6 @@ A SSL certificate appearing as `built_not_routed` is a certificate that has been
 
 > [!api]
 >
-> @api {GET} /ipLoadbalancing/{serviceName}/ssl/{id}
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/ssl/{id}
 >
 

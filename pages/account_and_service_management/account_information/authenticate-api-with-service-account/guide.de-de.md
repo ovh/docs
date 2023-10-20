@@ -113,7 +113,7 @@ To get information on your web hosting plan, you can now make a call on:
 
 > [!api]
 >
-> @api {GET} /hosting/web/xxxxxxx.cluster001.hosting.ovh.net
+> @api {v1} /hosting/web GET /hosting/web/xxxxxxx.cluster001.hosting.ovh.net
 >
 
 To do this, you will need to provide the token retrieved earlier in the header of your request, as follows:

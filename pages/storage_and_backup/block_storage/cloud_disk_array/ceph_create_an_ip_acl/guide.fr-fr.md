@@ -38,7 +38,7 @@ Après la création de la pool d'adresses IP, vous êtes de retour au gestionnai
 
 > [!api]
 >
-> @api {POST} /dedicated/ceph/{serviceName}/acl
+> @api {v1} /dedicated/ceph POST /dedicated/ceph/{serviceName}/acl
 >
 serviceName est le fsid de votre cluster.
 
@@ -46,7 +46,7 @@ Vous pouvez vérifier la création d'une ACL en consultant la liste des ACL.
 
 > [!api]
 >
-> @api {GET} /dedicated/ceph/{serviceName}/acl
+> @api {v1} /dedicated/ceph GET /dedicated/ceph/{serviceName}/acl
 >
 Example:
 

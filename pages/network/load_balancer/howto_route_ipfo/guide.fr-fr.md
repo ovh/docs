@@ -57,14 +57,14 @@ Voici l'appel API pour cela :
 
 > [!api]
 >
-> @api {POST} /ip/{ip}/move
+> @api {v1} /ip POST /ip/{ip}/move
 > 
 
 Vous pouvez ensuite lister les Additional IPs attachées à votre OVHcloud Load Balancer à l'aide de l'appel suivant :
 
 > [!api]
 >
-> @api {GET} /ipLoadbalancing/{serviceName}/failover
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/failover
 >
 
 Les Additional IPs attachées à votre Load Balancer seront disponibles pour tous vos frontends.
@@ -87,21 +87,21 @@ Depuis l'[API OVHcloud](https://api.ovh.com){.external}, l'appel suivant vous pe
 
 > [!api]
 >
-> @api {POST} /ipLoadbalancing/{serviceName}/http/frontend
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/http/frontend
 > 
 
 - protocole TCP
 
 > [!api]
 >
-> @api {POST} /ipLoadbalancing/{serviceName}/tcp/frontend
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/tcp/frontend
 > 
 
 - protocole UDP
 
 > [!api]
 >
-> @api {POST} /ipLoadbalancing/{serviceName}/udp/frontend
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/udp/frontend
 > 
 
 ##### **Mise à jour d'un frontend**
@@ -112,21 +112,21 @@ Toujours depuis l'[API OVHcloud](https://api.ovh.com){.external}, l'appel suivan
 
 > [!api]
 >
-> @api {PUT} /ipLoadbalancing/{serviceName}/http/frontend/{frontendId}
+> @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/http/frontend/{frontendId}
 > 
 
 - protocole TCP
 
 > [!api]
 >
-> @api {PUT} /ipLoadbalancing/{serviceName}/tcp/frontend/{frontendId}
+> @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/tcp/frontend/{frontendId}
 > 
 
 - protocole UDP
 
 > [!api]
 >
-> @api {PUT} /ipLoadbalancing/{serviceName}/udp/frontend/{frontendId}
+> @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/udp/frontend/{frontendId}
 > 
 
 #### Depuis l'espace client OVHcloud

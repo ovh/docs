@@ -36,7 +36,7 @@ Sobald Sie sich auf <https://api.ovh.com/console/> eingeloggt haben, können Sie
 
 > [!api]
 >
-> @api {GET} /dedicated/server
+> @api {v1} /dedicated/server GET /dedicated/server
 >
 
 Um den Namen Ihres Hybridservers abzurufen, klicken Sie auf `Execute`{.action}:
@@ -51,7 +51,7 @@ Verwenden Sie hierzu folgenden API-Aufruf:
 
 > [!api]
 >
-> @api {GET} /dedicated/server/{serviceName}/specifications/hardware
+> @api {v1} /dedicated/server GET /dedicated/server/{serviceName}/specifications/hardware
 >
 
 Geben Sie den zuvor erhaltenen Servernamen in das Feld “**serviceName**” ein und klicken Sie dann auf `Execute`{.action}. Alle Informationen zur Hardware Ihres Servers werden nun angezeigt. Die gewünschte `diskGroupId` finden Sie im Bereich `diskGroups`.
@@ -68,7 +68,7 @@ Rufen Sie hierfür mit folgendem API-Aufruf die Liste der kompatiblen Betriebssy
 
 > [!api]
 >
-> @api {GET} /dedicated/server/{serviceName}/install/compatibleTemplates
+> @api {v1} /dedicated/server GET /dedicated/server/{serviceName}/install/compatibleTemplates
 >
 
 ![Kompatible Templates](images/templates-01.png){.thumbnail}
@@ -77,7 +77,7 @@ Notieren Sie den Template-Namen des gewünschten Betriebssystems und fahren Sie 
 
 > [!api]
 >
-> @api {POST} /dedicated/server/{serviceName}/install/start
+> @api {v1} /dedicated/server POST /dedicated/server/{serviceName}/install/start
 >
 
 Geben Sie den Servernamen in das Feld **serviceName** und die “diskGroupId” (2) in das Feld **diskGroupId** sowie anschließend den Namen des gewünschten Betriebssystems in das Feld **templateName** ein (die übrigen Felder sind optional).
@@ -90,7 +90,7 @@ Ihr Betriebssystem wird nun installiert. Den Fortschritt der Installation könne
 
 > [!api]
 >
-> @api {GET} /dedicated/server/{serviceName}/install/status
+> @api {v1} /dedicated/server GET /dedicated/server/{serviceName}/install/status
 >
 
 ## Weiterführende Informationen

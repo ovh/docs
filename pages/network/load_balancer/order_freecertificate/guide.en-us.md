@@ -29,14 +29,14 @@ In the API, the SSL termination is specified by the ssl boolean: (Don't forget t
 
 > [!api]
 >
-> @api {POST} /ipLoadbalancing/{serviceName}/http/frontend
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/http/frontend
 >
 
 Then apply the changes :
 
 > [!api]
 >
-> @api {POST} /ipLoadbalancing/{serviceName}/refresh
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/refresh
 >
 
 ## Order the free SSL certificate
@@ -51,7 +51,7 @@ In the API, the command is as follows. For the order to be finalized, the chosen
 
 > [!api]
 >
-> @api {POST} /ipLoadbalancing/{serviceName}/freeCertificate
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/freeCertificate
 >
 
 ## Follow-up of the order
@@ -66,14 +66,14 @@ You can specify the action type orderFreeCertificate to refine the search.
 
 > [!api]
 >
-> @api {GET} /ipLoadbalancing/{serviceName}/task
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/task
 >
 
 #### Returning the status of a particular stain
 
 > [!api]
 >
-> @api {GET} /ipLoadbalancing/{serviceName}/task/{id}
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/task/{id}
 >
 
 ## Delivery of the free SSL certificate

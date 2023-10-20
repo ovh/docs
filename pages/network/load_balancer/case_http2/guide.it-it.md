@@ -38,7 +38,7 @@ Di seguito andiamo a mostrare come aggiungere un percorso al servizio.
 >
 >> > [!api]
 >> >
->> > @api {POST} /ipLoadbalancing/{serviceName}/tcp/route
+>> > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/tcp/route
 >> >
 >>
 >
@@ -75,7 +75,7 @@ Ora vediamo come aggiungere una regola al percorso appena creato.
 >
 >> > [!api]
 >> >
->> > @api {POST} /ipLoadbalancing/{serviceName}/tcp/route/{routeId}/rule
+>> > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/tcp/route/{routeId}/rule
 >> >
 >>
 >
@@ -118,7 +118,7 @@ Aggiornamento di una zona:
 >
 >> > [!api]
 >> >
->> > @api {POST} /ipLoadbalancing/{serviceName}/refresh
+>> > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/refresh
 >> >
 >>
 >

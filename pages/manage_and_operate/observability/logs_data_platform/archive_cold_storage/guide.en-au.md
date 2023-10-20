@@ -68,7 +68,7 @@ You will need your OVHcloud service name associated with your account. Your serv
 
 > [!api]
 >
-> @api {GET} /dbaas/logs/{serviceName}/output/graylog/stream
+> @api {v1} /dbaas/logs GET /dbaas/logs/{serviceName}/output/graylog/stream
 >
 
 > Parameters:
@@ -81,7 +81,7 @@ You will need your OVHcloud service name associated with your account. Your serv
 
 > [!api]
 >
-> @api {GET} /dbaas/logs/{serviceName}/output/graylog/stream/{streamId}/archive/{archiveId}
+> @api {v1} /dbaas/logs GET /dbaas/logs/{serviceName}/output/graylog/stream/{streamId}/archive/{archiveId}
 >
 
 > Parameters:
@@ -96,7 +96,7 @@ You will need your OVHcloud service name associated with your account. Your serv
 
 > [!api]
 >
-> @api {POST} /dbaas/logs/{serviceName}/output/graylog/stream/{streamId}/archive/{archiveId}/url
+> @api {v1} /dbaas/logs POST /dbaas/logs/{serviceName}/output/graylog/stream/{streamId}/archive/{archiveId}/url
 >
 
 > Parameters:

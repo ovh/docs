@@ -49,7 +49,7 @@ Per visualizzare i volumi di un servizio, utilizza la rotta API seguente:
 >
 >> > [!api]
 >> >
->> > @api {GET} /storage/netapp/{serviceName}/share
+>> > @api {v1} /storage GET /storage/netapp/{serviceName}/share
 >> >
 >>
 >
@@ -73,7 +73,7 @@ Per recuperare le informazioni relative a un volume, utilizza la via API seguent
 >
 >> > [!api]
 >> >
->> > @api {GET} /storage/netapp/{serviceName}/share/{shareId}
+>> > @api {v1} /storage GET /storage/netapp/{serviceName}/share/{shareId}
 >> >
 >>
 >
@@ -100,7 +100,7 @@ Per creare un nuovo volume, utilizza la strada API seguente:
 >
 >> > [!api]
 >> >
->> > @api {POST} /storage/netapp{serviceNme}/share
+>> > @api {v1} /storage POST /storage/netapp{serviceNme}/share
 >> >
 >>
 >
@@ -127,7 +127,7 @@ Per conoscere il percorso di montaggio di un volume, utilizza la seguente via AP
 >
 >> > [!api]
 >> >
->> > @api {GET} /storage/netapp{serviceName}/share/{shareId}/accessPath
+>> > @api {v1} /storage GET /storage/netapp{serviceName}/share/{shareId}/accessPath
 >> >
 >>
 >
@@ -164,7 +164,7 @@ Per eliminare un volume, utilizza la rotta API seguente:
 >
 >> > [!api]
 >> >
->> > @api {DELETE} /storage/netapp/{serviceName}/share/{shareId}
+>> > @api {v1} /storage DELETE /storage/netapp/{serviceName}/share/{shareId}
 >> >
 >>
 >

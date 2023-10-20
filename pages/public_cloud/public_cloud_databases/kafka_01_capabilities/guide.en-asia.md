@@ -154,7 +154,7 @@ Schema registry is supported and can be activated on a running Kafka service by 
 
 > [!api]
 >
-> @api {PUT} /cloud/project/{serviceName}/database/kafka/{clusterId}
+> @api {v1} /cloud PUT /cloud/project/{serviceName}/database/kafka/{clusterId}
 
 #### Advanced parameters
 

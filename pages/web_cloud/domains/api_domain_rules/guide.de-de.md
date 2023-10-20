@@ -49,7 +49,7 @@ Here is the example of the JSON representation of `.com` that can be obtained vi
 
 > [!api]
 >
-> @api {GET} /domain/configurationRule
+> @api {v1} /domain GET /domain/configurationRule
 
 The rule format will be explained and detailed in the following sections.
 
@@ -2777,7 +2777,7 @@ Let’s start with the API used to retrieve an eligibility rule. The return valu
 
 > [!api]
 >
-> @api {GET} /domain/configurationRule
+> @api {v1} /domain GET /domain/configurationRule
 
 | Parameter | Required | Description                                                  |
 | --------- | -------- | ------------------------------------------------------------ |
@@ -2795,7 +2795,7 @@ Although it is possible to check the rules on the client side, you can also use 
 
 > [!api]
 >
-> @api {POST} /domain/configurationRule/check
+> @api {v1} /domain POST /domain/configurationRule/check
 
 | Parameter | Required | Description                                                  |
 | --------- | -------- | ------------------------------------------------------------ |

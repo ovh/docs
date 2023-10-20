@@ -65,7 +65,7 @@ L’operazione richiesta può essere confermata anche tramite la seguente API OV
 
 > [!api]
 >
-> @api {POST} /dedicatedCloud/{serviceName}/confirmTermination
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/confirmTermination
 >
 
 In questo caso è necessario inserire il token riportato nell’email di conferma della cancellazione.

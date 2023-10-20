@@ -151,7 +151,7 @@ Consultez notre guide pour [activer et utiliser Veeam Backup Managed](/pages/bar
 
 > [!api]
 >
-> @api {GET} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/vm/{vmId}
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/vm/{vmId}
 >
 
 La section « sauvegarde » du fichier json retourné fournit des informations sur la configuration de sauvegarde actuelle.

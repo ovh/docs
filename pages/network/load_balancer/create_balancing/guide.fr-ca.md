@@ -55,7 +55,7 @@ Cet appel permet de consulter le détail d'une ferme en connaissant son identifi
 
 > [!api]
 >
-> @api {GET} /ipLoadbalancing/{serviceName}/http/farm/{farmId}
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/http/farm/{farmId}
 > 
 
 |Paramètre|Signification|
@@ -79,7 +79,7 @@ Cet appel permet de modifier la configuration d'une ferme en connaissant son ide
 
 > [!api]
 >
-> @api {PUT} /ipLoadbalancing/{serviceName}/http/farm/{id}
+> @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/http/farm/{id}
 > 
 
 |Paramètre|Signification|
@@ -92,7 +92,7 @@ Cet appel permet de modifier la configuration d'une ferme en connaissant son ide
 
 > [!api]
 >
-> @api {POST} /ipLoadbalancing/{serviceName}/refresh
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/refresh
 > 
 
 |Paramètre|Signification|

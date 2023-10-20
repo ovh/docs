@@ -97,7 +97,7 @@ Se tem um VPS 2014, é possível que encontre um *erro 1006*. O problema poderá
 >
 >> > [!api]
 >> >
->> > @api {POST} /vps/{serviceName}/openConsoleAccess
+>> > @api {v1} /vps POST /vps/{serviceName}/openConsoleAccess
 >> >
 >>
 >
@@ -131,7 +131,7 @@ Em caso de problema com o KVM, esta é a API aconselhada para o acesso ao KVM:
 >
 >> > [!api]
 >> >
->> > @api {POST} /vps/{serviceName}/getConsoleUrl
+>> > @api {v1} /vps POST /vps/{serviceName}/getConsoleUrl
 >> >
 >>
 >

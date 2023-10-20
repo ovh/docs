@@ -49,7 +49,7 @@ Najbezpieczniejszym sposobem pobierania informacji o sieci na Twoim serwerze jes
 
 > [!api]
 >
-> @api {GET} /dedicated/server/{serviceName}/specifications/network
+> @api {v1} /dedicated/server GET /dedicated/server/{serviceName}/specifications/network
 
 > [!warning]
 > 

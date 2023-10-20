@@ -145,7 +145,7 @@ Identify the node to boot in rescue mode by using the following OVHcloud API cal
 
 > [!api]
 >
-> @api {GET} /nutanix/{serviceName}
+> @api {v1} /nutanix GET /nutanix/{serviceName}
 >
 
 - `serviceName`: Enter the cluster name.

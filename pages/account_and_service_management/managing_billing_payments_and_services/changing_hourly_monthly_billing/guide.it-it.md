@@ -58,7 +58,7 @@ Utilizza questa chiamata:
 
 > [!api]
 >
-> @api {POST} /cloud/project/{serviceName}/instance/{instanceId}/activeMonthlyBilling
+> @api {v1} /cloud POST /cloud/project/{serviceName}/instance/{instanceId}/activeMonthlyBilling
 >
 ### Da uno script Terraform
 

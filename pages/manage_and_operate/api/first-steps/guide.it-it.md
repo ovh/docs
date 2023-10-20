@@ -71,7 +71,7 @@ Ad esempio, per recuperare la lista dei tuoi domini, utilizza questa API:
  
 > [!api]
 >
-> @api {GET} /domain
+> @api {v1} /domain GET /domain
 >
 
 **POST**
@@ -82,7 +82,7 @@ Ad esempio, per aggiungere un record alla tua zona DNS, utilizza questa API:
 
 > [!api]
 >
-> @api {POST} /domain/zone/{zoneName}/record
+> @api {v1} /domain POST /domain/zone/{zoneName}/record
 >
 
 **PUT**
@@ -93,7 +93,7 @@ Ad esempio, in caso di errore nel record della tua zona DNS, utilizza questa API
 
 > [!api]
 >
-> @api {PUT} /domain/zone/{zoneName}/record/{id}
+> @api {v1} /domain PUT /domain/zone/{zoneName}/record/{id}
 >
 
 **DELETE**
@@ -104,7 +104,7 @@ Ad esempio, se non vuoi conservare il record DNS che hai aggiunto alla tua zona 
 
 > [!api]
 >
-> @api {DELETE} /domain/zone/{zoneName}/record/{id}
+> @api {v1} /domain DELETE /domain/zone/{zoneName}/record/{id}
 >
 
 ##### Impostazioni dell'API

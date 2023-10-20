@@ -387,7 +387,7 @@ L'API OVHcloud vous permet d'associer une Floating IP uniquement à une instance
 >>
 >> > [!api]
 >> >
->> > @api {GET} /cloud/project
+>> > @api {v1} /cloud GET /cloud/project
 >>
 >>
 >> > [!primary]
@@ -395,7 +395,7 @@ L'API OVHcloud vous permet d'associer une Floating IP uniquement à une instance
 >> 
 >> > [!api]
 >> >
->> >@api {GET} /cloud/project/{serviceName}
+>> >@api {v1} /cloud GET /cloud/project/{serviceName}
 >>
 >> > [!primary]
 >> > Cet appel identifie le projet via le champ "description".
@@ -406,7 +406,7 @@ L'API OVHcloud vous permet d'associer une Floating IP uniquement à une instance
 >>
 >> > [!api]
 >> >
->> > @api {GET} /cloud/project/{serviceName}/instance
+>> > @api {v1} /cloud GET /cloud/project/{serviceName}/instance
 >>
 >> > [!primary]
 >> > Complétez les champs avec les informations précédemment obtenues :
@@ -422,7 +422,7 @@ L'API OVHcloud vous permet d'associer une Floating IP uniquement à une instance
 >> 
 >> > [!api]
 >> >
->> > @api {POST} /cloud/project/{serviceName}/region/{regionName}/instance/{instanceId}/floatingIp 
+>> > @api {v1} /cloud GET /cloud/project/{serviceName}/instance
 >>
 >> Remplissez les champs selon le tableau suivant :
 >>
@@ -453,7 +453,7 @@ Pour l'identifiant du projet, les appels ci-dessous vous permettent de le récup
 
 > [!api]
 >
-> @api {GET} /cloud/project
+> @api {v1} /cloud GET /cloud/project
 
 > [!primary]
 > Cet appel récupère la liste des projets.
@@ -461,7 +461,7 @@ Pour l'identifiant du projet, les appels ci-dessous vous permettent de le récup
 
 > [!api]
 >
-> @api {GET} /cloud/project/{serviceName}
+> @api {v1} /cloud GET /cloud/project/{serviceName}
 >
 
 > [!primary]
@@ -472,7 +472,7 @@ Récupérez l'identifiant de la Floating IP avec l'appel ci-dessous :
 
 > [!api]
 >
-> @api {GET} /cloud/project/{serviceName}/region/{regionName}/floatingip
+> @api {v1} /cloud GET /cloud/project/{serviceName}/region/{regionName}/floatingip
 >
 
 > [!primary]
@@ -485,7 +485,7 @@ Une fois les informations récupérées, utilisez l'appel suivant pour supprimer
 
 > [!api]
 >
-> @api {DELETE} /cloud/project/{serviceName}/region/{regionName}/floatingip/{floatingIpId}
+> @api {v1} /cloud DELETE /cloud/project/{serviceName}/region/{regionName}/floatingip/{floatingIpId}
 >
 
 > [!primary]

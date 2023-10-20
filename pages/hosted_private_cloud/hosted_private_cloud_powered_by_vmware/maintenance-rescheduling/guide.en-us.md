@@ -56,7 +56,7 @@ Run the following API call:
 
 > [!api]
 >
-> @api {POST} /dedicatedCloud/{serviceName}/task/{taskId}/changeMaintenanceExecutionDate
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/task/{taskId}/changeMaintenanceExecutionDate
 >
 
 Enter the following values:

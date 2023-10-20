@@ -85,7 +85,7 @@ Log in to [api.ovh.com](https://api.ovh.com/) and use the following call:
 
 > [!api]
 >
-> @api {POST} /dedicated/server/{serviceName}/features/backupFTP/access
+> @api {v1} /dedicated/server POST /dedicated/server/{serviceName}/features/backupFTP/access
 >
 
 Fill in the fields as follows:
@@ -102,7 +102,7 @@ To verify that your IP address is authorised, use the following call:
 
 > [!api]
 >
-> @api {GET} /dedicated/server/{serviceName}/features/backupFTP/access
+> @api {v1} /dedicated/server GET /dedicated/server/{serviceName}/features/backupFTP/access
 >
 
 ![apiacladdress](images/aclapi02.png){.thumbnail}

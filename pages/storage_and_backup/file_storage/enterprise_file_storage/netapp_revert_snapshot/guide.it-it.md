@@ -51,7 +51,7 @@ In questo scenario, vuoi ripristinare l’ultimo Snapshot di tipo `manual` creat
 
 > [!api]
 >
-> @api {GET} /storage/netapp/{serviceName}/share/{shareId}/snapshot
+> @api {v1} /storage GET /storage/netapp/{serviceName}/share/{shareId}/snapshot
 >
 
 - `{serviceName}` è l’identificativo unico del servizio
@@ -63,7 +63,7 @@ In questo scenario, vuoi ripristinare l’ultimo Snapshot di tipo `manual` creat
 
 > [!api]
 >
-> @api {POST} /storage/netapp/{serviceName}/share/{shareId}/revert
+> @api {v1} /storage POST /storage/netapp/{serviceName}/share/{shareId}/revert
 >
 
 - `{serviceName}` è l’identificativo unico del servizio
@@ -96,7 +96,7 @@ In questo scenario, una regola di una politica di Snapshot (*Snapshot policy*) p
 
 > [!api]
 >
-> @api {GET} /storage/netapp/{serviceName}/share/{shareId}/snapshot
+> @api {v1} /storage GET /storage/netapp/{serviceName}/share/{shareId}/snapshot
 >
 
 - `{serviceName}` è l’identificativo unico del servizio
@@ -108,7 +108,7 @@ In questo scenario, una regola di una politica di Snapshot (*Snapshot policy*) p
 
 > [!api]
 >
-> @api {POST} /storage/netapp/{serviceName}/share/{shareId}/snapshot/{snapshotId}/hold
+> @api {v1} /storage POST /storage/netapp/{serviceName}/share/{shareId}/snapshot/{snapshotId}/hold
 
 - `{serviceName}` è l’identificativo unico del servizio
 - `{shareId}` è il volume da ripristinare
@@ -133,7 +133,7 @@ Se sono stati effettuati altri Snapshot di tipo `manual` prima di questo Snapsho
 
 > [!api]
 >
-> @api {POST} /storage/netapp/{serviceName}/share/{shareId}/revert
+> @api {v1} /storage POST /storage/netapp/{serviceName}/share/{shareId}/revert
 >
 
 - `{serviceName}` è l’identificativo unico del servizio

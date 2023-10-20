@@ -110,7 +110,7 @@ Get Ceph cluster details with a simple HTTP call.
 
 > [!api]
 >
-> @api {GET} /dedicated/ceph/{serviceName}
+> @api {v1} /dedicated/ceph GET /dedicated/ceph/{serviceName}
 >
 Example:
 
@@ -138,7 +138,7 @@ Get Ceph cluster health:
 
 > [!api]
 >
-> @api {GET} /dedicated/ceph/{serviceName}/health
+> @api {v1} /dedicated/ceph GET /dedicated/ceph/{serviceName}/health
 >
 
 ```bash

@@ -66,7 +66,7 @@ Verwenden Sie hierzu folgenden Befehl:
 
 > [!api]
 >
-> @api {POST} /ip/{ip}/move
+> @api {v1} /ip POST /ip/{ip}/move
 > 
 
 Die Felder müssen wie folgt ausgefüllt werden:
@@ -85,7 +85,7 @@ Wenn Sie anschließend den IP-Block abtrennen müssen, können Sie diesen API-Au
 
 > [!api]
 >
-> @api {POST} /ip/{ip}/park
+> @api {v1} /ip POST /ip/{ip}/park
 > 
 
 > [!warning]

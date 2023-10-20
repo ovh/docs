@@ -30,7 +30,7 @@ Utilisez cet appel pour créer le panier :
 
 > [!api]
 >
-> @api {POST} /order/cart
+> @api {v1} /order POST /order/cart
 >
 
 Veillez à bien choisir votre filiale d'API OVHcloud. Notez le numéro de panier (« cartId ») dans la réponse ; il sera nécessaire d'identifier ce panier.
@@ -39,7 +39,7 @@ Vous devez ensuite ajouter un projet Public Cloud en tant qu'article. Utilisez c
 
 > [!api]
 >
-> @api {GET} /order/cart/{cartId}/cloud
+> @api {v1} /order GET /order/cart/{cartId}/cloud
 >
 
 Dans la réponse, vous pouvez vérifier les paramètres relatifs à un projet Public Cloud :
@@ -56,7 +56,7 @@ Utilisez cet appel pour ajouter l'article à votre panier :
 
 > [!api]
 >
-> @api {POST} /order/cart/{cartId}/cloud
+> @api {v1} /order POST /order/cart/{cartId}/cloud
 >
 
 Les informations suivantes, extraites au cours des étapes précédentes, doivent être fournies :
@@ -73,21 +73,21 @@ La réponse inclura un « itemId » qui peut être utilisé (avec le « cartId �
 
 > [!api]
 >
-> @api {GET} /order/cart/{cartId}/item/{itemId}
+> @api {v1} /order GET /order/cart/{cartId}/item/{itemId}
 >
 
 Vous pouvez vérifier la liste des paramètres de configuration disponibles pour cet article avec cet appel :
 
 > [!api]
 >
-> @api {GET} /order/cart/{cartId}/item/{itemId}/requiredConfiguration
+> @api {v1} /order GET /order/cart/{cartId}/item/{itemId}/requiredConfiguration
 >
 
 Utilisez le endpoint suivant pour nommer votre projet (`label: « description »`) :
 
 > [!api]
 >
-> @api {POST} /order/cart/{cartId}/item/{itemId}/configuration
+> @api {v1} /order POST /order/cart/{cartId}/item/{itemId}/configuration
 >
 
 |Champ|Valeur|
@@ -103,7 +103,7 @@ Les réponses incluent un « configurationId » qui peut être utilisé (avec «
 
 > [!api]
 >
-> @api {DELETE} /order/cart/{cartId}/item/{itemId}/configuration/{configurationId}
+> @api {v1} /order DELETE /order/cart/{cartId}/item/{itemId}/configuration/{configurationId}
 >
 
 ### Étape 2 : valider le panier
@@ -112,14 +112,14 @@ Vous pouvez vérifier le contenu de votre panier à l'aide de « cartId » :
 
 > [!api]
 >
-> @api {GET} /order/cart/{cartId}/checkout
+> @api {v1} /order GET /order/cart/{cartId}/checkout
 >
 
 L'appel suivant vous permet de créer un lien vers votre commande. Il faut d'abord cocher la case correspondante afin de renoncer au droit de rétractation.
 
 > [!api]
 >
-> @api {POST} /order/cart/{cartId}/checkout
+> @api {v1} /order POST /order/cart/{cartId}/checkout
 >
 
 ## Aller plus loin

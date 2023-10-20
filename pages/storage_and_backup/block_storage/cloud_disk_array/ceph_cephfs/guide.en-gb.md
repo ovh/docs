@@ -18,14 +18,14 @@ First step is to list your current CephFS:
 
 > [!api]
 >
-> @api {GET} /dedicated/ceph/{serviceName}/cephfs
+> @api {v1} /dedicated/ceph GET /dedicated/ceph/{serviceName}/cephfs
 >
 
 By default you'll get an empty list. Let's enable (create) a filesystem:
 
 > [!api]
 >
-> @api {POST} /dedicated/ceph/{serviceName}/cephfs/{fsName}/enable
+> @api {v1} /dedicated/ceph POST /dedicated/ceph/{serviceName}/cephfs/{fsName}/enable
 >
 
 Your CephFS should be available within few minutes. You can verify that directly on your cluster by using:
@@ -48,14 +48,14 @@ You can remove your filesystem when no longer needed. There are two steps here:
 
 > [!api]
 >
-> @api {POST} /dedicated/ceph/{serviceName}/cephfs/{fsName}/disable
+> @api {v1} /dedicated/ceph POST /dedicated/ceph/{serviceName}/cephfs/{fsName}/disable
 >
 
  * purge filesystem data - this can only be done on disabled filesystem
 
  > [!api]
  >
- > @api {DELETE} /dedicated/ceph/{serviceName}/cephfs/{fsName}
+ > @api {v1} /dedicated/ceph DELETE /dedicated/ceph/{serviceName}/cephfs/{fsName}
  >
 
 ## CephFS access management
@@ -64,14 +64,14 @@ To manage access to CephFS, the same set of IP ACL is used as for whole CDA. How
 
 > [!api]
 >
-> @api {POST} /dedicated/ceph/{serviceName}/user
+> @api {v1} /dedicated/ceph POST /dedicated/ceph/{serviceName}/user
 >
 
 You'll also need to grant that user read and write access to CephFS data and metadata pools, called ```cephfs.fs-default.data``` and ```cephfs.fs-default.meta``` respectively. Do it using the following API call:
 
 > [!api]
 >
-> @api {POST} /dedicated/ceph/{serviceName}/user/{userName}/pool
+> @api {v1} /dedicated/ceph POST /dedicated/ceph/{serviceName}/user/{userName}/pool
 >
 
 Grants you need are `read`, `write`.
@@ -96,14 +96,14 @@ FSID is the service name of your CDA. ```mon host``` IPs can be fetched using th
 
 > [!api]
 >
-> @api {GET} /dedicated/ceph/{serviceName}
+> @api {v1} /dedicated/ceph GET /dedicated/ceph/{serviceName}
 >
 
 You will also need a second file with key for the user used to connect to the cluster. Fetch his key using:
 
 > [!api]
 >
-> @api {GET} /dedicated/ceph/{serviceName}/user/{userName}
+> @api {v1} /dedicated/ceph GET /dedicated/ceph/{serviceName}/user/{userName}
 >
 
 Create a file called ```/etc/ceph/ceph.client.CEPHFS_USER.keyring``` with following content:

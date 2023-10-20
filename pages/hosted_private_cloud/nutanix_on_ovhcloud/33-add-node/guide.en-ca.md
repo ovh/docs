@@ -72,7 +72,7 @@ Use the following API call:
 
 > [!api]
 >
-> @api {GET} /nutanix/{serviceName}
+> @api {v1} /nutanix GET /nutanix/{serviceName}
 >
 
 - `serviceName`: enter the cluster name
@@ -89,7 +89,7 @@ To do this, use the following API call:
 
 > [!api]
 >
-> @api {PUT} /nutanix/{serviceName}
+> @api {v1} /nutanix PUT /nutanix/{serviceName}
 >
 
 > [!warning]

@@ -64,7 +64,7 @@ Use the following API call:
 
 > [!api]
 >
-> @api {POST} /ip/{ip}/move
+> @api {v1} /ip POST /ip/{ip}/move
 > 
 
 The fields must be completed as follows:
@@ -83,7 +83,7 @@ If you need to detach the IP block, you can use the following API call to move t
 
 > [!api]
 >
-> @api {POST} /ip/{ip}/park
+> @api {v1} /ip POST /ip/{ip}/park
 > 
 
 > [!warning]

@@ -39,7 +39,7 @@ Exécutez l'appel suivant :
 
 > [!api]
 >
-> @api {GET} /dedicatedCloud
+> @api {v1} /dedicatedCloud GET /dedicatedCloud
 >
 
 Vous obtiendrez la liste de vos services, prenez note des **serviceName** obtenus.
@@ -50,7 +50,7 @@ Exécutez l'appel suivant :
 
 > [!api]
 >
-> @api {GET} /dedicatedCloud/{serviceName}/datacenter
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/datacenter
 >
 
 Renseignez les champs de l'appel avec les informations suivantes :
@@ -65,7 +65,7 @@ Exécutez l'appel suivant :
 
 > [!api]
 >
-> @api {GET} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/filer
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/filer
 >
 
 Renseignez les champs de l'appel avec les informations suivantes :
@@ -81,7 +81,7 @@ Exécutez l'appel suivant :
 
 > [!api]
 >
-> @api {GET} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/host
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/host
 >
 
 Renseignez les champs de l'appel avec les informations suivantes :
@@ -108,7 +108,7 @@ Exécutez l'appel suivant :
 
 > [!api]
 >
-> @api {GET}  /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/filer/{filerId}/location
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/filer/{filerId}/location
 >
 
 Renseignez les champs de l'appel avec les informations suivantes :
@@ -131,7 +131,7 @@ Exécutez l'appel suivant :
 
 > [!api]
 >
-> @api {GET} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/filer/{filerId}
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/filer/{filerId}
 >
 
 Renseignez les champs de l'appel avec les informations suivantes :
@@ -158,7 +158,7 @@ Exécutez l'appel suivant :
 
 > [!api]
 >
-> @api {GET} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/filer/{filerId}
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/filer/{filerId}
 >
 
 Renseignez les champs de l'appel avec les informations suivantes :

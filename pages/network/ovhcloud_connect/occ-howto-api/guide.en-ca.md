@@ -29,14 +29,14 @@ Verify that the service is available with the following call:
 
 > [!api]
 >
-> @api {GET} /vrack/{serviceName}/ovhCloudConnect
+> @api {v1} /vrack GET /vrack/{serviceName}/ovhCloudConnect
 >
 
 It will return UUIDs of eligible services. Then you can link OVHcloud Connect with the vRack:
 
 > [!api]
 >
-> @api {POST} /vrack/{serviceName}/ovhCloudConnect
+> @api {v1} /vrack POST /vrack/{serviceName}/ovhCloudConnect
 >
 
 Enter the vRack name as well as the UUID of OVHcloud Connect.
@@ -55,7 +55,7 @@ Your service is attached to an interface with an ID. Use this call to obtain the
 
 > [!api]
 >
-> @api {GET} /ovhCloudConnect/{serviceName}/interface
+> @api {v1} /ovhCloudConnect GET /ovhCloudConnect/{serviceName}/interface
 >
 
 It will return the ID of the interface dedicated to your service.
@@ -64,7 +64,7 @@ The following call provides more service details:
 
 > [!api]
 >
-> @api {GET} /ovhCloudConnect/{serviceName}/interface/{id}
+> @api {v1} /ovhCloudConnect GET /ovhCloudConnect/{serviceName}/interface/{id}
 >
 
 The LightStatus parameter is refreshed every 5 minutes for monitoring purposes.
@@ -75,7 +75,7 @@ This is the simplest configuration. Use this call:
 
 > [!api]
 >
-> @api {POST} /ovhCloudConnect/{serviceName}/config/pop
+> @api {v1} /ovhCloudConnect POST /ovhCloudConnect/{serviceName}/config/pop
 >
 
 - interface ID: enter the ID previously obtained.
@@ -87,7 +87,7 @@ This configuration is more complex because of the required BGP settings:
 
 > [!api]
 >
-> @api {POST} /ovhCloudConnect/{serviceName}/config/pop
+> @api {v1} /ovhCloudConnect POST /ovhCloudConnect/{serviceName}/config/pop
 >
 
 - interface ID: enter the ID previously obtained.
@@ -108,12 +108,12 @@ You can list available data centres for configuration using the following calls:
 
 > [!api]
 >
-> @api {GET} /ovhCloudConnect/{serviceName}/datacenter
+> @api {v1} /ovhCloudConnect GET /ovhCloudConnect/{serviceName}/datacenter
 >
 
 > [!api]
 >
-> @api {GET} /ovhCloudConnect/{serviceName}/datacenter/{id}
+> @api {v1} /ovhCloudConnect GET /ovhCloudConnect/{serviceName}/datacenter/{id}
 >
 
 #### Configuration with Layer 2 (L2)
@@ -122,7 +122,7 @@ Only the ID of the data centre is needed for the L2 configuration:
 
 > [!api]
 >
-> @api {POST} /ovhCloudConnect/{serviceName}/config/pop/{popId}/datacenter
+> @api {v1} /ovhCloudConnect POST /ovhCloudConnect/{serviceName}/config/pop/{popId}/datacenter
 >
 
 - datacenterId: enter the DC ID previously obtained.
@@ -133,7 +133,7 @@ More parameters have to be provided for the L3 configuration:
 
 > [!api]
 >
-> @api {POST} /ovhCloudConnect/{serviceName}/config/pop/{popId}/datacenter
+> @api {v1} /ovhCloudConnect POST /ovhCloudConnect/{serviceName}/config/pop/{popId}/datacenter
 >
 
 - datacenterId: enter the DC ID previously obtained.
@@ -148,7 +148,7 @@ A static route is needed when you have one or more subnets behind a gateway. Thi
 
 > [!api]
 >
-> @api {POST} /ovhCloudConnect/{serviceName}/config/pop/{popId}/datacenter/{datacenterId}/extra
+> @api {v1} /ovhCloudConnect POST /ovhCloudConnect/{serviceName}/config/pop/{popId}/datacenter/{datacenterId}/extra
 >
 
 - nextHop: IP address in the subnet range acting as gateway.
@@ -161,7 +161,7 @@ A BGP session enables dynamic routing from your routing instance with OVHcloud C
 
 > [!api]
 >
-> @api {POST} /ovhCloudConnect/{serviceName}/config/pop/{popId}/datacenter/{datacenterId}/extra
+> @api {v1} /ovhCloudConnect POST /ovhCloudConnect/{serviceName}/config/pop/{popId}/datacenter/{datacenterId}/extra
 >
 
 - bgpNeighborArea: your BGP ASN.
@@ -178,7 +178,7 @@ The following call recursively deletes the entire configuration of an OVHcloud C
 
 > [!api]
 >
-> @api {DELETE} /ovhCloudConnect/{serviceName}/config/pop/{popId} 
+> @api {v1} /ovhCloudConnect DELETE /ovhCloudConnect/{serviceName}/config/pop/{popId}
 >
 
 Each sub-resource's status will change from 'active' to 'toDelete' but it takes some time to see the status change.
@@ -191,21 +191,21 @@ Each resource can be deleted individually using the following call that will del
 
 > [!api]
 >
-> @api {DELETE} /ovhCloudConnect/{serviceName}/config/pop/{popId}/datacenter/{datacenterId}/extra/{extraId} 
+> @api {v1} /ovhCloudConnect DELETE /ovhCloudConnect/{serviceName}/config/pop/{popId}/datacenter/{datacenterId}/extra/{extraId}
 >
 
 The following call removes the DC configuration and recursively deletes any additional sub-resources:
 
 > [!api]
 >
-> @api {DELETE} /ovhCloudConnect/{serviceName}/config/pop/{popId}/datacenter/{datacenterId}
+> @api {v1} /ovhCloudConnect DELETE /ovhCloudConnect/{serviceName}/config/pop/{popId}/datacenter/{datacenterId}
 >
 
 When all sub-resources have been deleted, the PoP configuration can be safely removed:
 
 > [!api]
 >
-> @api {DELETE} /ovhCloudConnect/{serviceName}/config/pop/{popId} 
+> @api {v1} /ovhCloudConnect DELETE /ovhCloudConnect/{serviceName}/config/pop/{popId}
 >
 
 > [!primary]
