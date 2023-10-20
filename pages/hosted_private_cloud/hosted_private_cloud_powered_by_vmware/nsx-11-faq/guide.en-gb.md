@@ -247,7 +247,7 @@ All this will depend on your use cases and the metrics you have on your platform
 
 <a name="VRF"></a>
 
-### If we don't want to have a VRF to split the T0, what would be the solution besides "education or buying a new PCC"?
+### If we don't want to have a VRF to split the T0, what would be the solution besides Training or buying a new PCC ?
 
 It is possible not to use the VRF and use the T1.
 

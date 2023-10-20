@@ -247,7 +247,7 @@ Tout dépend de vos cas d’usage et des métriques dont vous disposez sur votre
 
 <a name="VRF"></a>
 
-### Si nous ne voulons pas d'un VRF pour fractionner le T0, quelle serait la solution à part « l'éducation ou l'achat d'un nouveau PCC » ?
+### Si nous ne voulons pas d’un VRF pour fractionner le T0, quelle serait la solution en dehors de la formation ou de l’achat d’un nouveau PCC ?
 
 Il est possible de ne pas utiliser le VRF et d'utiliser le T1.
 
