@@ -101,6 +101,7 @@ curl -s -H "X-Auth-Token: $TOKEN" -H "Content-Type: application/json" -H "Accept
 ```
 
 - Via Terraform
+
 Avec la resource [networking_network_v2](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/networking_network_v2) du provider OpenStack, vous pouvez définir la valeur de l' attribut [MTU](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/networking_network_v2#mtu)
 
 ### Étape 4 - Vérifier les modifications

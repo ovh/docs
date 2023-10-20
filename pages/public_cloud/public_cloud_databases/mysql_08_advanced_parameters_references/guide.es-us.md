@@ -1,7 +1,7 @@
 ---
 title: MySQL - Advanced parameters references
 excerpt: This guide lists all the supported advanced parameters that allow you to configure your Public Cloud Databases for MySQL according to your use cases
-updated: 2023-02-06
+updated: 2023-10-20
 ---
 
 <style>
@@ -118,6 +118,15 @@ Below you can find a summary of every configuration option available for MySQL s
 | Maximum | 16 |
 | Values | |
 | Description | Minimum length of words that are stored in an InnoDB FULLTEXT index. Changing this parameter will lead to a restart of the MySQL service. |
+
+| | |
+|---|---|
+| Parameter | `mysql.innodb_ft_server_stopword_table` |
+| Value type | string |
+| Minimum | |
+| Maximum | |
+| Values | |
+| Description | This option is used to specify your own InnoDB FULLTEXT index stopword list for all InnoDB tables. |
 
 | | |
 |---|---|
