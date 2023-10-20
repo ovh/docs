@@ -110,7 +110,7 @@ La requête :
 
 > [!api]
 >
-> @api {POST} /connectivity/eligibility/search/cities
+> @api {v1} /connectivity POST /connectivity/eligibility/search/cities
 >
 
 avec les données suivantes :
@@ -158,7 +158,7 @@ La requête :
 
 > [!api]
 >
-> @api {POST} /connectivity/eligibility/search/streets
+> @api {v1} /connectivity POST /connectivity/eligibility/search/streets
 >
 
 avec les données suivantes :
@@ -208,7 +208,7 @@ La requête :
 
 > [!api]
 >
-> @api {POST} /connectivity/eligibility/search/streetNumbers
+> @api {v1} /connectivity POST /connectivity/eligibility/search/streetNumbers
 >
 
 avec les données suivantes :
@@ -253,7 +253,7 @@ La requête :
 
 > [!api]
 >
-> @api {POST} /connectivity/eligibility/search/buildings
+> @api {v1} /connectivity POST /connectivity/eligibility/search/buildings
 >
 
 avec les données suivantes :
@@ -290,7 +290,7 @@ La requête :
 
 > [!api]
 >
-> @api {POST} /connectivity/eligibility/search/buildingsByLine
+> @api {v1} /connectivity POST /connectivity/eligibility/search/buildingsByLine
 >
 
 avec les données suivantes :
@@ -343,7 +343,7 @@ Voici la requête :
 
 > [!api]
 >
-> @api {POST} /connectivity/eligibility/test/line
+> @api {v1} /connectivity POST /connectivity/eligibility/test/line
 >
 
 avec les données POST suivantes :
@@ -551,7 +551,7 @@ La requête :
 
 > [!api]
 >
-> @api {POST} /connectivity/eligibility/search/lines
+> @api {v1} /connectivity POST /connectivity/eligibility/search/lines
 >
 
 avec les données POST suivantes :
@@ -623,7 +623,7 @@ La requête :
 
 > [!api]
 >
-> @api {POST} /connectivity/eligibility/test/address
+> @api {v1} /connectivity POST /connectivity/eligibility/test/address
 >
 
 avec les données suivantes :
@@ -779,7 +779,7 @@ La requête :
 
 > [!api]
 >
-> @api {POST} /connectivity/eligibility/test/building
+> @api {v1} /connectivity POST /connectivity/eligibility/test/building
 >
 
 avec les données suivantes :
@@ -863,7 +863,7 @@ La requête :
 
 > [!api]
 >
-> @api {POST} /connectivity/eligibility/test/otp
+> @api {v1} /connectivity POST /connectivity/eligibility/test/otp
 >
 
 avec les données suivantes :

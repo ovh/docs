@@ -110,14 +110,14 @@ Ottieni l’ID del metodo di pagamento:
 
 > [!api]
 >
-> @api {GET} /me/payment/method
+> @api {v1} /me GET /me/payment/method
 >
 
 Elimina il metodo di pagamento utilizzando l'ID precedentemente ottenuto:
 
 > [!api]
 >
-> @api {DELETE} /me/payment/method/{paymentMethodId}
+> @api {v1} /me DELETE /me/payment/method/{paymentMethodId}
 >
 
 > [!primary]

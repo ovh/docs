@@ -44,21 +44,21 @@ L'utilisation de l'API se fait via ces trois appels APIv6 :
 
 > [!api]
 >
-> @api {GET} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/filer/{filerId}
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/filer/{filerId}
 >
 
 #### Hosts
 
 > [!api]
 >
-> @api {GET} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/host/{hostId}
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/host/{hostId}
 > 
 
 #### Machine virtuelles
 
 > [!api]
 > 
-> @api {GET} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/vm/{vmId}
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/vm/{vmId}
 > 
 
 ### Collecter les données historiques (Graphs)
@@ -75,7 +75,7 @@ Pour l'utilisateur souhaité, utilisez l'appel APIv6 suivant pour récupérer le
 
 > [!api]
 > 
-> @api {POST} /dedicatedCloud/{serviceName}/user/{userId}/metricsToken
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/user/{userId}/metricsToken
 > 
 
 Votre token se trouve dans le champ **token** du résultat.

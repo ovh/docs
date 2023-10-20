@@ -42,7 +42,7 @@ Using a custom script can be interesting in the following use cases:
 
 > [!api]
 >
-> @api {PUT} /dedicated/server/{serviceName}
+> @api {v1} /dedicated/server PUT /dedicated/server/{serviceName}
 >
 
 Specify your script within the `bootScript` attibute directly.
@@ -51,7 +51,7 @@ Specify your script within the `bootScript` attibute directly.
 
 > [!api]
 >
-> @api {GET} /dedicated/server/{serviceName}
+> @api {v1} /dedicated/server GET /dedicated/server/{serviceName}
 >
 
 You can see your script within the `bootScript` attibute.
@@ -93,14 +93,14 @@ You can now switch back to disk or rescue boot from the [OVHcloud Control Panel]
 
 > [!api]
 >
-> @api {PUT} /dedicated/server/{serviceName}
+> @api {v1} /dedicated/server PUT /dedicated/server/{serviceName}
 >
 
 Specify `1` in the `bootId` attribute.
 
 > [!api]
 >
-> @api {GET} /dedicated/server/{serviceName}
+> @api {v1} /dedicated/server GET /dedicated/server/{serviceName}
 >
 
 You can now see that the attribute value `bootScript` is null.

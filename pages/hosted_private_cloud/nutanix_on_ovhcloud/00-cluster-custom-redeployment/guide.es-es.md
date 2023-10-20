@@ -139,7 +139,7 @@ Use the following API call:
 
 > [!api]
 >
-> @api {put} /nutanix/{serviceName}
+> @api {v1} /nutanix PUT /nutanix/{serviceName}
 >
 
 Enter this data:

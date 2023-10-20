@@ -34,7 +34,7 @@ You can view the list of available probes and their settings with the following 
 
 > [!api]
 >
-> @api {GET} /ipLoadbalancing/{serviceName}/availableFarmProbes
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/availableFarmProbes
 > 
 
 For more information on this call, please read the *Available probes* section at the bottom of this guide.
@@ -43,22 +43,22 @@ The probes in this list can be configured on `http` and `tcp` farms via the foll
 
 > [!api]
 >
-> @api {POST} /ipLoadbalancing/{serviceName}/http/farm
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/http/farm
 > 
 
 > [!api]
 >
-> @api {PUT} /ipLoadbalancing/{serviceName}/http/farm/{farmId}
+> @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/http/farm/{farmId}
 > 
 
 > [!api]
 >
-> @api {POST} /ipLoadbalancing/{serviceName}/tcp/farm
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/tcp/farm
 > 
 
 > [!api]
 >
-> @api {PUT} /ipLoadbalancing/{serviceName}/tcp/farm/{farmId}
+> @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/tcp/farm/{farmId}
 > 
 
 For more information on these calls, please read the *Probe configuration* section at the bottom of this guide.
@@ -139,7 +139,7 @@ Probes can be configured on a new farm (`POST`) or an existing one (`PUT`). Sinc
 >
 >> > [!api]
 >> >
->> > @api {PUT} /ipLoadbalancing/{serviceName}/http/farm/{farmId}
+>> > @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/http/farm/{farmId}
 >> >
 >>
 >
@@ -225,7 +225,7 @@ For a probe to be active, it must be configured on the farm and activated on the
 >
 >> > [!api]
 >> >
->> > @api {PUT} /ipLoadbalancing/{serviceName}/http/farm/{farmId}/server/{serverId}
+>> > @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/http/farm/{farmId}/server/{serverId}
 >> >
 >>
 >
@@ -273,7 +273,7 @@ You can get a list of the available probes using the following API call:
 >
 >> > [!api]
 >> >
->> > @api {GET} /ipLoadbalancing/{serviceName}/availableFarmProbes
+>> > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/availableFarmProbes
 >> >
 >>
 >

@@ -84,7 +84,7 @@ En primer lugar, es mejor comprobar si la dirección IP se puede mover correctam
 
 > [!api]
 >
-> @api {GET} /dedicated/server/{serviceName}/ipCanBeMovedTo
+> @api {v1} /dedicated/server GET /dedicated/server/{serviceName}/ipCanBeMovedTo
 >
 
 - `serviceName`: la referencia del servidor dedicado de destino
@@ -94,7 +94,7 @@ Para mover la dirección IP, utilice la siguiente llamada:
 
 > [!api]
 >
-> @api {POST} /dedicated/server/{serviceName}/ipMove
+> @api {v1} /dedicated/server POST /dedicated/server/{serviceName}/ipMove
 >
 
 - `serviceName`: la referencia del servidor dedicado de destino

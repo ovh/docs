@@ -468,7 +468,7 @@ To create a Node Pool with a template (labels, annotations, taints...), you have
 
 > [!api]
 >
-> @api {POST} /cloud/project/{serviceName}/kube/{kubeId}/nodepool
+> @api {v1} /cloud POST /cloud/project/{serviceName}/kube/{kubeId}/nodepool
 >
 
 with the following information:
@@ -596,7 +596,7 @@ To delete a Node Pool with the API, you have to make a call on:
 
 > [!api]
 >
-> @api {DELETE} /cloud/project/{serviceName}/kube/{kubeId}/nodepool/{nodePoolId}
+> @api {v1} /cloud DELETE /cloud/project/{serviceName}/kube/{kubeId}/nodepool/{nodePoolId}
 >
 
 with the following information:

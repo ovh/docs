@@ -46,7 +46,7 @@ To create a service account, use the following API call:
 
 > [!api]
 >
-> @api {POST} /me/api/oauth2/client
+> @api {v1} /me POST /me/api/oauth2/client
 >
 
 With this API call, you can create Oauth2 credentials for several authentication mechanisms. The one we are interested in here is **CLIENT_CREDENTIALS**. This mechanism does not require a callback URL.
@@ -67,7 +67,7 @@ To retrieve the **URN** required to edit an access policy, you can use the follo
 
 > [!api]
 >
-> @api {GET} /me/api/oauth2/client/{clientId}
+> @api {v1} /me GET /me/api/oauth2/client/{clientId}
 >
 
 Use the value of the identifier retrieved from the previous call.<br>
@@ -83,7 +83,7 @@ If you no longer use a service account, or want to permanently delete this acces
 
 > [!api]
 >
-> @api {DELETE} /me/api/oauth2/client/{clientId}
+> @api {v1} /me DELETE /me/api/oauth2/client/{clientId}
 >
 
 > [!warning]
@@ -134,7 +134,7 @@ This example can be used directly within the following call to create a new poli
 
 > [!api]
 >
-> @api {POST} /v2/iam/policy
+> @api {v2} /iam POST /iam/policy
 >
 
 ### Usage of service accounts

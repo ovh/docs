@@ -41,7 +41,7 @@ Vous pouvez activer l'option IAM sur votre Hosted Private Cloud depuis l'API OVH
 
 > [!api]
 >
-> @api {POST} /dedicatedCloud/{serviceName}/iam/enable
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/iam/enable
 >
 
 Cette opération pourra prendre jusqu’à 30 minutes.
@@ -65,7 +65,7 @@ Vous pourrez créer vous même de nouveaux rôles en exécutant l'appel suivant 
 
 > [!api]
 >
-> @api {POST} /dedicatedCloud/{serviceName}/iam/addRole
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/iam/addRole
 >
 
 
@@ -98,7 +98,7 @@ Exécutez l'appel suivant pour désactiver la connexion avec l'IAM OVHcloud :
 
 > [!api]
 >
-> @api {POST} /dedicatedCloud/{serviceName}/iam/disable
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/iam/disable
 >
 
 ## Aller plus loin

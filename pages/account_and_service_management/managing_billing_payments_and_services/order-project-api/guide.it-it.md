@@ -34,7 +34,7 @@ Utilizza questa chiamata per creare il carrello:
 
 > [!api]
 >
-> @api {POST} /order/cart
+> @api {v1} /order POST /order/cart
 >
 
 Scegli la tua filiale OVHcloud annota il numero del carrello ("cartId") nella risposta sarà necessario identificare questo carrello.
@@ -43,7 +43,7 @@ In seguito è necessario aggiungere un progetto Public Cloud come articolo. Util
 
 > [!api]
 >
-> @api {GET} /order/cart/{cartId}/cloud
+> @api {v1} /order GET /order/cart/{cartId}/cloud
 >
 
 Per verificare le impostazioni relative a un progetto Public Cloud, rispondi:
@@ -60,7 +60,7 @@ Utilizza questa chiamata per aggiungere l'articolo al tuo carrello:
 
 > [!api]
 >
-> @api {POST} /order/cart/{cartId}/cloud
+> @api {v1} /order POST /order/cart/{cartId}/cloud
 >
 
 Devono essere fornite le seguenti informazioni, estratte nelle fasi precedenti:
@@ -77,21 +77,21 @@ La risposta includerà un "itemId" che può essere utilizzato (con il "cartId") 
 
 > [!api]
 >
-> @api {GET} /order/cart/{cartId}/item/{itemId}
+> @api {v1} /order GET /order/cart/{cartId}/item/{itemId}
 >
 
 Puoi verificare la lista dei parametri di configurazione disponibili per questo articolo con questa chiamata:
 
 > [!api]
 >
-> @api {GET} /order/cart/{cartId}/item/{itemId}/requiredConfiguration
+> @api {v1} /order GET /order/cart/{cartId}/item/{itemId}/requiredConfiguration
 >
 
 Utilizza questo endpoint per nominare il tuo progetto (`label: "descrizione"`):
 
 > [!api]
 >
-> @api {POST} /order/cart/{cartId}/item/{itemId}/configuration
+> @api {v1} /order POST /order/cart/{cartId}/item/{itemId}/configuration
 >
 
 |Campo|Valore|
@@ -107,7 +107,7 @@ Le risposte includono una "configurazioneId" che può essere utilizzata (con "ca
 
 > [!api]
 >
-> @api {DELETE} /order/cart/{cartId}/item/{itemId}/configurazione/{configurationId}
+> @api {v1} /order DELETE /order/cart/{cartId}/item/{itemId}/configurazione/{configurationId}
 >
 
 ### Step 2: convalidare il carrello
@@ -116,14 +116,14 @@ Per verificare il contenuto del tuo carrello utilizza la scheda "cartId":
 
 > [!api]
 >
-> @api {GET} /order/cart/{cartId}/checkout
+> @api {v1} /order GET /order/cart/{cartId}/checkout
 >
 
 La chiamata successiva ti permette di creare un link verso il tuo ordine. Per rinunciare al diritto di recesso, è necessario contrassegnare la casella corrispondente.
 
 > [!api]
 >
-> @api {POST} /order/cart/{cartId}/checkout
+> @api {v1} /order POST /order/cart/{cartId}/checkout
 >
 
 ## Per saperne di più

@@ -28,7 +28,7 @@ This guide will also show you how to add one or more logins to this sub-account 
 
 > [!api]
 >
-> @api {POST} /me/subAccount
+> @api {v1} /me POST /me/subAccount
 >
 
 Retrieve and save the resulting ID.
@@ -37,7 +37,7 @@ Retrieve and save the resulting ID.
 
 > [!api]
 >
-> @api {POST} /me/subAccount/{id}/createConsumerKey
+> @api {v1} /me POST /me/subAccount/{id}/createConsumerKey
 >
 
 The ConsumerKey allows you to call the OVHcloud API with the identiy of the sub-account.
@@ -48,7 +48,7 @@ With the previously created ConsumerKey.
 
 > [!api]
 >
-> @api {POST} /me/identity/user
+> @api {v1} /me POST /me/identity/user
 >
 
 * email : add an email address for this user

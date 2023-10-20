@@ -228,7 +228,7 @@ Postępuj zgodnie z **5 krokami** poniżej, klikając na każdą z zakładek.
 >>
 >> > [!api]
 >> >
->> > @api {GET} /email/exchange/{organizationName}/service/{exchangeService}/domain/{domainName}/dkimSelector
+>> > @api {v1} /email/exchange GET /email/exchange/{organizationName}/service/{exchangeService}/domain/{domainName}/dkimSelector
 >> >
 >> <br>
 >>
@@ -249,7 +249,7 @@ Postępuj zgodnie z **5 krokami** poniżej, klikając na każdą z zakładek.
 >>
 >> > [!api]
 >> >
->> > @api {POST} /email/exchange/{organizationName}/service/{exchangeService}/domain/{domainName}/dkim
+>> > @api {v1} /email/exchange POST /email/exchange/{organizationName}/service/{exchangeService}/domain/{domainName}/dkim
 >> >
 >>
 >> - `organizationName`: wpisz nazwę Twojej platformy Exchange w postaci "hosted-zz111111-1" lub "private-zz111111-1".
@@ -289,7 +289,7 @@ Postępuj zgodnie z **5 krokami** poniżej, klikając na każdą z zakładek.
 >>
 >> > [!api]
 >> >
->> > @api {GET} /email/exchange/{organizationName}/service/{exchangeService}/domain/{domainName}/dkim/{selectorName}
+>> > @api {v1} /email/exchange GET /email/exchange/{organizationName}/service/{exchangeService}/domain/{domainName}/dkim/{selectorName}
 >> >
 >>
 >> - `organizationName`: wpisz nazwę Twojej platformy Exchange w postaci "hosted-zz111111-1" lub "private-zz111111-1".
@@ -349,7 +349,7 @@ Postępuj zgodnie z **5 krokami** poniżej, klikając na każdą z zakładek.
 >>
 >> > [!api]
 >> >
->> > @api {POST} /email/exchange/{organizationName}/service/{exchangeService}/domain/{domainName}/dkim/{selectorName}/enable
+>> > @api {v1} /email/exchange POST /email/exchange/{organizationName}/service/{exchangeService}/domain/{domainName}/dkim/{selectorName}/enable
 >> >
 >>
 >> - `organizationName`: wpisz nazwę Twojej platformy Exchange w postaci "hosted-zz111111-1" lub "private-zz111111-1".
@@ -383,7 +383,7 @@ Postępuj zgodnie z **5 krokami** poniżej, klikając na każdą z zakładek.
 >>
 >> > [!api]
 >> >
->> > @api {GET} /email/pro/{service}/domain/{domainName}/dkimSelector 
+>> > @api {v1} /email/exchange POST /email/exchange/{organizationName}/service/{exchangeService}/domain/{domainName}/dkim/{selectorName}/enable
 >> >
 >> <br>
 >>
@@ -407,7 +407,7 @@ Postępuj zgodnie z **5 krokami** poniżej, klikając na każdą z zakładek.
 >>
 >> > [!api]
 >> >
->> > @api {POST} /email/pro/{service}/domain/{domainName}/dkim
+>> > @api {v1} /email/pro POST /email/pro/{service}/domain/{domainName}/dkim
 >> >
 >>
 >> - `service`: wpisz nazwę Twojej platformy E-mail Pro w postaci "emailpro-zz111111-1". <br>
@@ -441,7 +441,7 @@ Postępuj zgodnie z **5 krokami** poniżej, klikając na każdą z zakładek.
 >>
 >> > [!api]
 >> >
->> > @api {GET} /email/pro/{service}/domain/{domainName}/dkim/{selectorName}
+>> > @api {v1} /email/pro GET /email/pro/{service}/domain/{domainName}/dkim/{selectorName}
 >> >
 >>
 >> - `service`: wpisz nazwę Twojej platformy E-mail Pro w postaci "emailpro-zz111111-1".
@@ -500,7 +500,7 @@ Postępuj zgodnie z **5 krokami** poniżej, klikając na każdą z zakładek.
 >>
 >> > [!api]
 >> >
->> > @api {POST} /email/pro/{service}/domain/{domainName}/dkim/{selectorName}/enable
+>> > @api {v1} /email/pro POST /email/pro/{service}/domain/{domainName}/dkim/{selectorName}/enable
 >> >
 >>
 >> - `service`: wpisz nazwę Twojej platformy E-mail Pro w postaci "emailpro-zz111111-1".
@@ -531,7 +531,7 @@ Wybierz odpowiednią ofertę e-mail w następujących zakładkach:
 >>
 >> > [!api]
 >> >
->> > @api {GET} /email/exchange/{organizationName}/service/{exchangeService}/domain/{domainName}/dkim/{selectorName}
+>> > @api {v1} /email/exchange GET /email/exchange/{organizationName}/service/{exchangeService}/domain/{domainName}/dkim/{selectorName}
 >> >
 >>
 >> - `organizationName`: wpisz nazwę Twojej platformy Exchange w postaci "hosted-zz111111-1" lub "private-zz111111-1". <br>
@@ -559,7 +559,7 @@ Wybierz odpowiednią ofertę e-mail w następujących zakładkach:
 >>
 >> > [!api]
 >> >
->> > @api {GET} /email/pro/{service}/domain/{domainName}/dkim/{selectorName}
+>> > @api {v1} /email/pro GET /email/pro/{service}/domain/{domainName}/dkim/{selectorName}
 >> >
 >>
 >> - `service`: wpisz nazwę Twojej platformy E-mail Pro w postaci "emailpro-zz111111-1". <br>
@@ -596,7 +596,7 @@ Wybierz odpowiednią ofertę e-mail w następujących zakładkach:
 >>
 >> > [!api]
 >> >
->> > @api {POST} /email/exchange/{organizationName}/service/{exchangeService}/domain/{domainName}/dkim/{selectorName}/enable
+>> > @api {v1} /email/exchange POST /email/exchange/{organizationName}/service/{exchangeService}/domain/{domainName}/dkim/{selectorName}/enable
 >> >
 >>
 >> - `organizationName`: wpisz nazwę Twojej platformy Exchange w postaci "hosted-zz111111-1" lub "private-zz111111-1".<br>
@@ -609,7 +609,7 @@ Wybierz odpowiednią ofertę e-mail w następujących zakładkach:
 >>
 >> > [!api]
 >> >
->> > @api {POST} /email/pro/{service}/domain/{domainName}/dkim/{selectorName}/enable
+>> > @api {v1} /email/pro POST /email/pro/{service}/domain/{domainName}/dkim/{selectorName}/enable
 >> >
 >>
 >> - `service`: wpisz nazwę Twojej platformy E-mail Pro w postaci "emailpro-zz111111-1". <br>
@@ -635,7 +635,7 @@ Wybierz odpowiednią ofertę e-mail w następujących zakładkach:
 >> 
 >> > [!api]
 >> >
->> > @api {POST} /email/exchange/{organizationName}/service/{exchangeService}/domain/{domainName}/dkim/{selectorName}/dism
+>> > @api {v1} /email/exchange POST /email/exchange/{organizationName}/service/{exchangeService}/domain/{domainName}/dkim/{selectorName}/dism
 >> >
 >>
 >> - `organizationName`: wpisz nazwę Twojej platformy Exchange w postaci "hosted-zz111111-1" lub "private-zz111111-1". <br>
@@ -647,7 +647,7 @@ Wybierz odpowiednią ofertę e-mail w następujących zakładkach:
 >>
 >> > [!api]
 >> >
->> > @api {DELETE} /email/exchange/{organizationName}/service/{exchangeService}/domain/{domainName}/dkim/{selectorName}
+>> > @api {v1} /email/exchange DELETE /email/exchange/{organizationName}/service/{exchangeService}/domain/{domainName}/dkim/{selectorName}
 >> >
 >>
 >> - `organizationName`: wpisz nazwę Twojej platformy Exchange w postaci "hosted-zz111111-1" lub ">> private-zz111111-1". <br>
@@ -660,7 +660,7 @@ Wybierz odpowiednią ofertę e-mail w następujących zakładkach:
 >> 
 >> > [!api]
 >> >
->> > @api {POST} /email/pro/{service}/domain/{domainName}/dkim/{selectorName}/dism
+>> > @api {v1} /email/pro POST /email/pro/{service}/domain/{domainName}/dkim/{selectorName}/dism
 >> >
 >>
 >> - `service`: wpisz nazwę Twojej platformy E-mail Pro w postaci "emailpro-zz111111-1". <br>
@@ -671,7 +671,7 @@ Wybierz odpowiednią ofertę e-mail w następujących zakładkach:
 >>
 >> > [!api]
 >> >
->> > @api {DELETE} /email/pro/{service}/domain/{domainName}/dkim/{selectorName}
+>> > @api {v1} /email/pro DELETE /email/pro/{service}/domain/{domainName}/dkim/{selectorName}
 >> >
 >>
 >> - `service`: wpisz nazwę Twojej platformy E-mail Pro w postaci "emailpro-zz111111-1". <br>
@@ -796,7 +796,7 @@ Kliknij na zakładkę odnoszącą się do Twojej oferty.
 >> 
 >> > [!API]
 >> >
->> > @api {POST} /email/exchange/{organizationName}/service/{exchangeService}/domain/{domainName}/dkim/{selectorName}/enable
+>> > @api {v1} /email/exchange POST /email/exchange/{organizationName}/service/{exchangeService}/domain/{domainName}/dkim/{selectorName}/enable
 >> >
 >>
 >> - `organizationName` : wprowadź nazwę platformy Exchange w formie "hosted-zz111111-1" lub "private-zz111111-1". <br>
@@ -809,7 +809,7 @@ Kliknij na zakładkę odnoszącą się do Twojej oferty.
 >>
 >> > [!API]
 >> >
->> @api {POST} /email/pro/{service}/domain/{domainName}/dkim/{selectorName}/enable
+>> @api {v1} /email/pro POST /email/pro/{service}/domain/{domainName}/dkim/{selectorName}/enable
 >> >
 >>
 >> - `service` : wprowadź nazwę Twojej platformy E-mail Pro w formie "emailpro-zz111111-1". <br>

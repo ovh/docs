@@ -36,7 +36,7 @@ Una vez que haya creado la instancia y haya elegido una aplicación preinstalada
 > Llamada a la API
 >> > [!api]
 >> >
->> > @api {POST} /cloud/project/{serviceName}/instancia/{instanceId}/aplicación Access
+>> > @api {v1} /cloud POST /cloud/project/{serviceName}/instance/{instanceId}/applicationAccess
 >> >
 >
 > Configuración

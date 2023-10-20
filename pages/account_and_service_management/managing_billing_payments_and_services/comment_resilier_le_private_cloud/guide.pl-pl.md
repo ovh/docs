@@ -65,7 +65,7 @@ Możesz również zatwierdzić dyspozycję zakończenia usługi za pośrednictw
 
 > [!api]
 >
-> @api {POST} /dedicatedCloud/{serviceName}/confirmTermination
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/confirmTermination
 >
 
 Następnie wprowadź token zatwierdzający podany w przesłanym do Ciebie e-mailu.

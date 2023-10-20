@@ -139,7 +139,7 @@ You can also create manual snapshots at any time, save them without any time lim
 
 > [!api]
 >
-> @api {POST} /dedicated/nasha/{serviceName}/partition/{partitionName}/customSnapshot
+> @api {v1} /dedicated/nasha POST /dedicated/nasha/{serviceName}/partition/{partitionName}/customSnapshot
 >
 
 > [!primary]

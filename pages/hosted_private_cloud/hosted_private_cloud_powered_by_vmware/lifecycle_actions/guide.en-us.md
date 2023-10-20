@@ -39,7 +39,7 @@ Run the following call:
 
 > [!api]
 >
-> @api {GET} /dedicatedCloud
+> @api {v1} /dedicatedCloud GET /dedicatedCloud
 >
 
 You will see a list of your services. Please note the **serviceName** you have retrieved.
@@ -50,7 +50,7 @@ Run the following call:
 
 > [!api]
 >
-> @api {GET} /dedicatedCloud/{serviceName}/datacenter
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/datacenter
 >
 
 Fill in the call fields with the following information:
@@ -65,7 +65,7 @@ Run the following call:
 
 > [!api]
 >
-> @api {GET} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/filer
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/filer
 >
 
 Fill in the call fields with the following information:
@@ -81,7 +81,7 @@ Run the following call:
 
 > [!api]
 >
-> @api {GET} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/host
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/host
 >
 
 Fill in the call fields with the following information:
@@ -108,7 +108,7 @@ Run the following call:
 
 > [!api]
 >
-> @api {GET} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/filer/{filerId}/location
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/filer/{filerId}/location
 >
 
 Fill in the call fields with the following information:
@@ -131,7 +131,7 @@ Run the following call:
 
 > [!api]
 >
-> @api {GET} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/filer/{filerId}
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/filer/{filerId}
 >
 
 Fill in the call fields with the following information:
@@ -158,7 +158,7 @@ Run the following call:
 
 > [!api]
 >
-> @api {GET} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/filer/{filerId}
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/filer/{filerId}
 >
 
 Fill in the call fields with the following information:

@@ -22,7 +22,7 @@ To order a zone via the API, you first need to create a cart.
 
 > [!api]
 >
-> @api {POST} /order/cart
+> @api {v1} /order POST /order/cart
 >
 
 Please make a note of the cart number ("cart"), it will be useful for the rest.
@@ -31,27 +31,27 @@ Then you assign it via
 
 > [!api]
 >
-> @api {POST} /order/cart/{cartId}/assign
+> @api {v1} /order POST /order/cart/{cartId}/assign
 >
 
 You can list the options available on your Load Balancer service via
 
 > [!api]
 >
-> @api {GET} /order/cartServiceOption/ipLoadbalancing/{serviceName}
+> @api {v1} /order GET /order/cartServiceOption/ipLoadbalancing/{serviceName}
 >
 
 When you have found the option corresponding to the desired area, you can add it to your shopping cart ("cart") via
 
 > [!api]
 >
-> @api {POST} /order/cartServiceOption/ipLoadbalancing/{serviceName}
+> @api {v1} /order POST /order/cartServiceOption/ipLoadbalancing/{serviceName}
 >
 
 Finally, you can validate your cart ("cart") via
 
 > [!api]
-> @api {POST} /order/cart/{cartId}/checkout
+> @api {v1} /order POST /order/cart/{cartId}/checkout
 >
 
 Don't forget to pay the order form thus generated.

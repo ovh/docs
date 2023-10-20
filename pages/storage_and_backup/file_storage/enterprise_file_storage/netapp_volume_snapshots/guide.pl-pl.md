@@ -49,7 +49,7 @@ Wszystkie istniejące snapshoty wolumenu można pobrać za pomocą następujące
 >
 >> > [!api]
 >> >
->> > @api {GET} /storage/netapp/{serviceName}/share/{shareId}/snapshot
+>> > @api {v1} /storage GET /storage/netapp/{serviceName}/share/{shareId}/snapshot
 >>
 >>
 >
@@ -78,7 +78,7 @@ Aby utworzyć snapshot, użyj następującej drogi API:
 >
 >> > [!api]
 >> >
->> > @api {POST} /storage/netapp/{serviceName}/share/{shareId}/snapshot
+>> > @api {v1} /storage POST /storage/netapp/{serviceName}/share/{shareId}/snapshot
 >> >
 >>
 >
@@ -117,7 +117,7 @@ Aby uzyskać informacje dotyczące snapshota, użyj następującej drogi API:
 >
 >> > [!api]
 >> >
->> > @api {GET} /storage/netapp/{serviceName}/share/{shareId}/snapshot/{snapshotId}
+>> > @api {v1} /storage GET /storage/netapp/{serviceName}/share/{shareId}/snapshot/{snapshotId}
 >>
 >>
 >
@@ -148,7 +148,7 @@ Aby usunąć snapshot, użyj następującej drogi API:
 >
 >> > [!api]
 >> >
->> > @api {DELETE} /storage/netapp/{serviceName}/share/{shareId}/snapshot/{snapshotId}
+>> > @api {v1} /storage DELETE /storage/netapp/{serviceName}/share/{shareId}/snapshot/{snapshotId}
 >>
 >>
 >

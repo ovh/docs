@@ -28,7 +28,7 @@ Log in to the OVHcloud APIv6 interface according to the relevant guide ([First s
 
 > [!api]
 >
-> @api {POST} /order/cart
+> @api {v1} /order POST /order/cart
 >
 
 > [!primary]
@@ -41,7 +41,7 @@ Log in to the OVHcloud APIv6 interface according to the relevant guide ([First s
 
 > [!api]
 >
-> @api {GET} /order/cart/{cartId}/vrack
+> @api {v1} /order GET /order/cart/{cartId}/vrack
 >
 
 > [!primary]
@@ -53,7 +53,7 @@ Log in to the OVHcloud APIv6 interface according to the relevant guide ([First s
 
 > [!api]
 >
-> @api {POST} /order/cart/{cartId}/vrack
+> @api {v1} /order POST /order/cart/{cartId}/vrack
 >
 
 > [!primary]
@@ -80,7 +80,7 @@ Once you have put all the items in your cart, you will need to validate it:
 
 > [!api]
 >
-> @api {POST} /order/cart/{cartId}/checkout
+> @api {v1} /order POST /order/cart/{cartId}/checkout
 >
 
 > [!primary]
@@ -98,7 +98,7 @@ To validate the order, you have two possibilities:
 
 > [!api]
 >
-> @api {POST} /me/order/{orderId}/payWithRegisteredPaymentMean
+> @api {v1} /me POST /me/order/{orderId}/payWithRegisteredPaymentMean
 >
 
 > [!primary]
@@ -119,7 +119,7 @@ In case the project ID is unknown, the calls below allow you to retrieve it.
 
 > [!api]
 >
-> @api {GET} /cloud/project
+> @api {v1} /cloud GET /cloud/project
 >
 
 > [!primary]
@@ -128,7 +128,7 @@ In case the project ID is unknown, the calls below allow you to retrieve it.
 
 > [!api]
 >
-> @api {GET} /cloud/project/{serviceName}
+> @api {v1} /cloud GET /cloud/project/{serviceName}
 >
 
 > [!primary]
@@ -141,7 +141,7 @@ Once the project ID and the vRack name are known, their association is made thro
 
 > [!api]
 >
-> @api {POST} /vrack/{serviceName}/cloudProject
+> @api {v1} /vrack POST /vrack/{serviceName}/cloudProject
 >
 
 Fill in the fields with the information previously retrieved:
@@ -159,7 +159,7 @@ You can view the progress of the task with this call:
 
 > [!api]
 >
-> @api {GET} /vrack/{serviceName}/cloudProject/{project}
+> @api {v1} /vrack GET /vrack/{serviceName}/cloudProject/{project}
 >
 
 > [!primary]
@@ -198,7 +198,7 @@ Once logged in to the [OVHcloud APIv6 interface](https://ca.api.ovh.com/), follo
 
 > [!api]
 >
-> @api {GET} /cloud/project
+> @api {v1} /cloud GET /cloud/project
 >
 
 > [!primary]
@@ -207,7 +207,7 @@ Once logged in to the [OVHcloud APIv6 interface](https://ca.api.ovh.com/), follo
 
 > [!api]
 >
-> @api {GET} /cloud/project/{serviceName}
+> @api {v1} /cloud GET /cloud/project/{serviceName}
 >
 
 > [!primary]
@@ -218,7 +218,7 @@ Once logged in to the [OVHcloud APIv6 interface](https://ca.api.ovh.com/), follo
 
 > [!api]
 >
-> @api {GET} /cloud/project/{serviceName}/vrack
+> @api {v1} /cloud GET /cloud/project/{serviceName}/vrack
 >
 
 > [!primary]
@@ -229,7 +229,7 @@ Once logged in to the [OVHcloud APIv6 interface](https://ca.api.ovh.com/), follo
 
 > [!api]
 >
-> @api {POST} /cloud/project/{serviceName}/network/private
+> @api {v1} /cloud POST /cloud/project/{serviceName}/network/private
 >
 
 > [!primary]
@@ -250,7 +250,7 @@ You can check your VLAN information with the following call
 
 > [!api]
 >
-> @api {GET} /cloud/project/{serviceName}/network/private
+> @api {v1} /cloud GET /cloud/project/{serviceName}/network/private
 >
 
 > [!primary]
@@ -273,7 +273,7 @@ To do this, once the VLAN is created, you will need to create the subnet for eac
 
 > [!api]
 >
-> @api {POST} /cloud/project/{serviceName}/network/private/{networkId}/subnet
+> @api {v1} /cloud POST /cloud/project/{serviceName}/network/private/{networkId}/subnet
 >
 
 Fill in the fields according the following table.
@@ -319,21 +319,21 @@ Once logged in to the [OVHcloud APIv6 interface](https://ca.api.ovh.com/), follo
 
 > [!api]
 >
-> @api {GET} /cloud/project
+> @api {v1} /cloud GET /cloud/project
 >
 
 ###### Retrieving the networkID of the public network (Ext-Net)
 
 > [!api]
 >
-> @api {GET} /cloud/project/{serviceName}/network/public
+> @api {v1} /cloud GET /cloud/project/{serviceName}/network/public
 >
 
 ###### Retrieving the networkID of the private network (vRack interface previously created)
 
 > [!api]
 >
-> @api {GET} /cloud/project/{serviceName}/network/private
+> @api {v1} /cloud GET /cloud/project/{serviceName}/network/private
 >
 
 > [!primary]
@@ -343,7 +343,7 @@ Once logged in to the [OVHcloud APIv6 interface](https://ca.api.ovh.com/), follo
 
 > [!api]
 >
-> @api {GET} /cloud/project/{serviceName}/flavor
+> @api {v1} /cloud GET /cloud/project/{serviceName}/flavor
 >
 
 > [!primary]
@@ -353,7 +353,7 @@ Once logged in to the [OVHcloud APIv6 interface](https://ca.api.ovh.com/), follo
 
 > [!api]
 >
-> @api {GET} /cloud/project/{serviceName}/image
+> @api {v1} /cloud GET /cloud/project/{serviceName}/image
 >
 
 > [!primary]
@@ -363,14 +363,14 @@ Once logged in to the [OVHcloud APIv6 interface](https://ca.api.ovh.com/), follo
 
 > [!api]
 >
-> @api {GET} /cloud/project/{serviceName}/sshkey
+> @api {v1} /cloud GET /cloud/project/{serviceName}/sshkey
 >
 
 If you have not added an SSH key to your OVHcloud Control Panel yet, you can do so using the following call:
 
 > [!api]
 >
-> @api {POST} /cloud/project/{serviceName}/sshkey
+> @api {v1} /cloud POST /cloud/project/{serviceName}/sshkey
 >
 
 ##### **Deploying the instance**
@@ -379,7 +379,7 @@ Once all the elements necessary for the deployment are gathered, you can use the
 
 > [!api]
 >
-> @api {POST} /cloud/project/{serviceName}/instance
+> @api {v1} /cloud POST /cloud/project/{serviceName}/instance
 >
 
 You will need to fill in at least the following fields:
@@ -426,28 +426,28 @@ For example, if you have a public interface *eth0*, you will add the interface *
 
 > [!api]
 >
-> @api {GET} /cloud/project
+> @api {v1} /cloud GET /cloud/project
 >
 
 ###### Retrieving the instance ID
 
 > [!api]
 >
-> @api {GET} /cloud/project/{serviceName}/instance
+> @api {v1} /cloud GET /cloud/project/{serviceName}/instance
 >
 
 ###### Retrieving the networkID of the public network (Ext-Net)
 
 > [!api]
 >
-> @api {GET} /cloud/project/{serviceName}/network/public
+> @api {v1} /cloud GET /cloud/project/{serviceName}/network/public
 >
 
 ###### Retrieving the networkID of the private network (vRack interface previously created)
 
 > [!api]
 >
-> @api {GET} /cloud/project/{serviceName}/network/private
+> @api {v1} /cloud GET /cloud/project/{serviceName}/network/private
 >
 
 > [!primary]
@@ -459,7 +459,7 @@ Once all the elements necessary are gathered, you can use the following call:
 
 > [!api]
 >
-> @api {POST} /cloud/project/{serviceName}/instance/{instanceId}/interface
+> @api {v1} /cloud POST /cloud/project/{serviceName}/instance/{instanceId}/interface
 >
 
 You will need to fill in at least the following fields:
@@ -492,7 +492,7 @@ Once all the necessary information is retrieved, you can use the following call 
 
 > [!api]
 >
-> @api {DELETE} /cloud/project/{serviceName}/instance/{instanceId}/interface/{interfaceId}
+> @api {v1} /cloud DELETE /cloud/project/{serviceName}/instance/{instanceId}/interface/{interfaceId}
 >
 
 You will need to fill in at least the following fields:

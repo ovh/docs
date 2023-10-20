@@ -36,7 +36,7 @@ Dopo aver creato l'istanza e aver scelto un'applicazione preinstallata, è possi
 > Chiamata API
 >> > [!api]
 >> >
->> > @api {POST} /cloud/project/{serviceName}/instance/{instanceId}/applicationAccess
+>> > @api {v1} /cloud POST /cloud/project/{serviceName}/instance/{instanceId}/applicationAccess
 >> >
 >
 > Impostazioni

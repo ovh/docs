@@ -157,7 +157,7 @@ Pour découper un bloc, utilisez l'appel API suivant :
 
 > [!api]
 >
-> @api {POST} /ip/{ip}/bringYourOwnIp/slice
+> @api {v1} /ip POST /ip/{ip}/bringYourOwnIp/slice
 >
 
 Avec les paramètres suivants :
@@ -172,7 +172,7 @@ Vous pouvez prévisualiser les blocs résultants qui seraient créés pour chaqu
 
 > [!api]
 >
-> @api {GET} /ip/{ip}/bringYourOwnIp/slice
+> @api {v1} /ip GET /ip/{ip}/bringYourOwnIp/slice
 >
 
 Avec les paramètres suivants :
@@ -183,7 +183,7 @@ Pour fusionner un bloc dans un bloc parent, utilisez cet appel API :
 
 > [!api]
 >
-> @api {POST} /ip/{ip}/bringYourOwnIp/aggregate
+> @api {v1} /ip POST /ip/{ip}/bringYourOwnIp/aggregate
 >
 
 Avec les paramètres suivants :
@@ -200,7 +200,7 @@ Vous pouvez prévisualiser toutes les configurations possibles des blocs agrég�
 
 > [!api]
 >
-> @api {GET} /ip/{ip}/bringYourOwnIp/aggregate
+> @api {v1} /ip GET /ip/{ip}/bringYourOwnIp/aggregate
 >
 
 Avec les paramètres suivants :

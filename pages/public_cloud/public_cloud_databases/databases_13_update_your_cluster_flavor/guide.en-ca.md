@@ -45,7 +45,7 @@ In order to be able to downgrade your flavor, you must have a threshold of 20% b
 For instance, if you have a PostgreSQL cluster with db1-15 as flavor and less than 384 GB (80% of 480GB) of disk space used, you can decrease the flavor to db1-7 on that endpoint:
 
 > [!api]
-> @api {PUT} /cloud/project/{serviceName}/database/mongodb/{clusterId}
+> @api {v1} /cloud PUT /cloud/project/{serviceName}/database/mongodb/{clusterId}
 
 ## We want your feedback!
 

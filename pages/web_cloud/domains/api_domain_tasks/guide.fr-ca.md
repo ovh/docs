@@ -65,7 +65,7 @@ Pour lister vos tâches, vous pouvez utiliser l'API suivante :
 
 > [!api]
 >
-> @api {GET} /me/task/domain
+> @api {v1} /me GET /me/task/domain
 
 | Paramètre  | Obligatoire | Description                                  |
 | ---------- | :---------: | -------------------------------------------- |
@@ -79,7 +79,7 @@ Pour récupérer les détails liés à une tâche en particulier, vous pouvez ut
 
 > [!api]
 >
-> @api {GET} /me/task/domain/{id}
+> @api {v1} /me GET /me/task/domain/{id}
 
 Les champs les plus intéressants dans la réponse sont les suivants :
 
@@ -120,7 +120,7 @@ Pour la corriger, il est possible de lister la liste des champs à modifier à l
 
 > [!api]
 >
-> @api {GET} /me/task/domain/{id}/argument
+> @api {v1} /me GET /me/task/domain/{id}/argument
 
 Dans notre cas d'exemple, elle retournera uniquement un champ :
 
@@ -132,7 +132,7 @@ Vous pourrez lister plus d'informations sur la façon de renseigner ce champ et 
 
 > [!api]
 >
-> @api {GET} /me/task/domain/{id}/argument/{key}
+> @api {v1} /me GET /me/task/domain/{id}/argument/{key}
 
 <!-- prettier-ignore -->
 > [!tabs]
@@ -157,7 +157,7 @@ Pour modifier le champ `legitimacyAfnic`, il faudra utiliser l'API suivante en r
 
 > [!api]
 >
-> @api {PUT} /me/task/domain/{id}/argument/{key}
+> @api {v1} /me PUT /me/task/domain/{id}/argument/{key}
 
 <!-- prettier-ignore -->
 > [!tabs]
@@ -172,7 +172,7 @@ Une fois la valeur modifiée, vous pourrez si vous le souhaitez réutiliser l'AP
 
 > [!api]
 >
-> @api {GET} /me/task/domain/{id}/argument/{key}
+> @api {v1} /me GET /me/task/domain/{id}/argument/{key}
 
 pour vérifier qu'elle a bien été prise en compte.
 
@@ -180,7 +180,7 @@ Enfin, il ne restera plus qu'à relancer la tâche via l'API :
 
 > [!api]
 >
-> @api {POST} /me/task/domain/{id}/relaunch
+> @api {v1} /me POST /me/task/domain/{id}/relaunch
 
 Celle-ci devrait s'exécuter dans les minutes à venir et ainsi se terminer correctement.
 

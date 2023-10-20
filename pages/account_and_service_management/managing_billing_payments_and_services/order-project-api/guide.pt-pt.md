@@ -34,7 +34,7 @@ Utilize esta chamada para criar o carrinho:
 
 > [!api]
 >
-> @api {POST} /order/cart
+> @api {v1} /order POST /order/cart
 >
 
 Queira escolher a sua filial da API OVHcloud. Na resposta, tome nota do número do carrinho ("cartId"); será necessário identificar este carrinho.
@@ -43,7 +43,7 @@ De seguida, deverá adicionar um projeto Public Cloud como um artigo. Utilize es
 
 > [!api]
 >
-> @api {GET} /order/cart/{cartId}/cloud
+> @api {v1} /order GET /order/cart/{cartId}/cloud
 >
 
 Na resposta, pode verificar os parâmetros relativos a um projeto Public Cloud:
@@ -60,7 +60,7 @@ Utilize esta chamada para adicionar o artigo ao seu carrinho:
 
 > [!api]
 >
-> @api {POST} /order/cart/{cartId}/cloud
+> @api {v1} /order POST /order/cart/{cartId}/cloud
 >
 
 Devem ser fornecidas as seguintes informações, extraídas nas etapas anteriores:
@@ -77,21 +77,21 @@ A resposta incluirá um itemId que pode ser utilizado (juntamente com o "cartId"
 
 > [!api]
 >
-> @api {GET} /order/cart/{cartId}/item/{itemId}
+> @api {v1} /order GET /order/cart/{cartId}/item/{itemId}
 >
 
 Pode verificar a lista dos parâmetros de configuração disponíveis para este artigo com esta chamada:
 
 > [!api]
 >
-> @api {GET} /order/cart/{cartId}/item/{itemId}/requredConfiguração
+> @api {v1} /order GET /order/cart/{cartId}/item/{itemId}/requredConfiguração
 >
 
 Utilize o seguinte endpoint para nomear o seu projeto (`label: "descrição"`):
 
 > [!api]
 >
-> @api {POST} /order/cart/{cartId}/item/{itemId}/configuração
+> @api {v1} /order POST /order/cart/{cartId}/item/{itemId}/configuração
 >
 
 |Campo|Valor|
@@ -107,7 +107,7 @@ As respostas incluem uma "configuraçãoId" que pode ser utilizada (juntamente c
 
 > [!api]
 >
-> @api {DELETE} /order/cart/{cartId}/item/{itemId}/configuração/{configuraçãoId}
+> @api {v1} /order DELETE /order/cart/{cartId}/item/{itemId}/configuração/{configuraçãoId}
 >
 
 ### Etapa 2: validar o carrinho
@@ -116,14 +116,14 @@ Pode verificar o conteúdo do seu carrinho através do "CartId":
 
 > [!api]
 >
-> @api {GET} /order/cart/{cartId}/checkout
+> @api {v1} /order GET /order/cart/{cartId}/checkout
 >
 
 A seguinte chamada permite-lhe criar um link para a sua encomenda. A casa correspondente deve ser assinalada em primeiro lugar, a fim de renunciar ao direito de retratação.
 
 > [!api]
 >
-> @api {POST} /order/cart/{cartId}/checkout
+> @api {v1} /order POST /order/cart/{cartId}/checkout
 >
 
 ## Quer saber mais?

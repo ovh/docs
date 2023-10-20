@@ -34,7 +34,7 @@ Todos os seus serviços ativos podem ser recuperados utilizando a seguinte rota:
 
 > [!api]
 >
-> @api {GET} /dedicated/nasha
+> @api {v1} /dedicated/nasha GET /dedicated/nasha
 >
 
 ### Lista de todas as partições
@@ -47,7 +47,7 @@ Utilize a seguinte rota para recuperar as partições de um serviço:
 >
 >> > [!api]
 >> >
->> > @api {GET} /dedicated/nasha/{serviceName}/partition
+>> > @api {v1} /dedicated/nasha GET /dedicated/nasha/{serviceName}/partition
 >> >
 >>
 >
@@ -68,7 +68,7 @@ Para visualizar os detalhes de uma partição, utilize a seguinte rota:
 >
 >> > [!api]
 >> >
->> > @api {GET} /dedicated/nasha/{serviceName}/partition/{partitionName}
+>> > @api {v1} /dedicated/nasha GET /dedicated/nasha/{serviceName}/partition/{partitionName}
 >> >
 >>
 >
@@ -93,7 +93,7 @@ Utilize a seguinte rota para recuperar as informações de utilização de uma p
 >
 >> > [!api]
 >> >
->> > @api {GET} /dedicated/nasha/{serviceName}/partition/{partitionName}/use
+>> > @api {v1} /dedicated/nasha GET /dedicated/nasha/{serviceName}/partition/{partitionName}/use
 >> >
 >>
 >
@@ -122,7 +122,7 @@ Utilize a seguinte rota para criar uma nova partição:
 >
 >> > [!api]
 >> >
->> > @api {POST} /dedicated/nasha/{serviceName}/partition
+>> > @api {v1} /dedicated/nasha POST /dedicated/nasha/{serviceName}/partition
 >> >
 >>
 >
@@ -161,7 +161,7 @@ Para alterar uma partição, utilize a seguinte rota:
 >
 >> > [!api]
 >> >
->> > @api {PUT} /dedicated/nasha/{serviceName}/partition/{partitionName}
+>> > @api {v1} /dedicated/nasha PUT /dedicated/nasha/{serviceName}/partition/{partitionName}
 >> >
 >>
 >
@@ -194,7 +194,7 @@ Utilize a seguinte rota para recuperar os parâmetros ZFS:
 >
 >> > [!api]
 >> >
->> > @api {GET} /dedicated/nasha/{serviceName}/partition/{partitionName}/options
+>> > @api {v1} /dedicated/nasha GET /dedicated/nasha/{serviceName}/partition/{partitionName}/options
 >> >
 >>
 >
@@ -224,7 +224,7 @@ Para alterar os parâmetros ZFS, utilize a seguinte rota:
 >
 >> > [!api]
 >> >
->> > @api {POST} /dedicated/nasha/{serviceName}/partition/{partitionName}/options
+>> > @api {v1} /dedicated/nasha POST /dedicated/nasha/{serviceName}/partition/{partitionName}/options
 >> >
 >>
 >
@@ -261,7 +261,7 @@ Utilize a seguinte rota para eliminar uma partição:
 >
 >> > [!api]
 >> >
->> > @api {DELETE} /dedicated/nasha/{serviceName}/partition/{partitionName}
+>> > @api {v1} /dedicated/nasha DELETE /dedicated/nasha/{serviceName}/partition/{partitionName}
 >> >
 >>
 >

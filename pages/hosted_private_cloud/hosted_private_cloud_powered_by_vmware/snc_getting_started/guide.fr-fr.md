@@ -94,7 +94,7 @@ Pour cela il faut confirmer la poursuite des opérations via le call d'API suiva
 
 > [!api]
 >
-> @api {POST} /dedicatedCloud/{serviceName}/securityOptions/resumePendingEnabling
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/securityOptions/resumePendingEnabling
 >
 
 En spécifiant :
@@ -168,7 +168,7 @@ Pour cela, il faut lancer l'opération via le call d'API suivant :
 
 > [!api]
 >
-> @api {POST} /dedicatedCloud/{serviceName}/securityOptions/resumePendingEnabling
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/securityOptions/resumePendingEnabling
 >
 
 En spécifiant :
@@ -191,7 +191,7 @@ Vous allez obtenir une tâche que vous pouvez suivre à l'aide de son **taskId**
 
 > [!api]
 >
-> @api {GET} /dedicatedCloud/{serviceName}/task/{taskId}
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/task/{taskId}
 >
 
 En spécifiant :
@@ -203,7 +203,7 @@ Une fois celle-ci terminée, vous pouvez contrôler qu'il ne reste pas d'action 
 
 > [!api]
 >
-> @api {GET} /dedicatedCloud/{serviceName}/securityOptions/pendingOptions
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/securityOptions/pendingOptions
 >
 
 Une liste vide en retour, comme ci-dessous, vous confirme que l'ensemble des actions ont été faites sur l'environnement et que celui est pleinement opérationnel :

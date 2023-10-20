@@ -94,14 +94,14 @@ Rendez-vous sur le lien <https://api.ovh.com/console/> puis connectez-vous avec 
 
 > [!api]
 >
-> @api {GET} /xdsl/{serviceName}/modem/blocIp
+> @api {v1} /xdsl GET /xdsl/{serviceName}/modem/blocIp
 > 
 
 Permet de récupérer l'état d'activation du bloc IP /29.
 
 > [!api]
 >
-> @api {POST} /xdsl/{serviceName}/modem/blocIp
+> @api {v1} /xdsl POST /xdsl/{serviceName}/modem/blocIp
 > 
 
 Permet d'activer ou de désactiver la configuration du bloc IP /29 sur votre box OVHcloud Technicolor ou Thomson compatible.

@@ -54,7 +54,7 @@ Voici l'exemple de la représentation JSON du `.com` que l'on peut obtenir via l
 
 > [!api]
 >
-> @api {GET} /domain/configurationRule
+> @api {v1} /domain GET /domain/configurationRule
 
 Le format de règle sera expliqué et détaillé dans les sections suivantes.
 
@@ -2786,7 +2786,7 @@ Commençons par l'API permettant la récupération d'une règle d'éligibilité.
 
 > [!api]
 >
-> @api {GET} /domain/configurationRule
+> @api {v1} /domain GET /domain/configurationRule
 
 | Paramètre | Obligatoire | Description                                                  |
 | --------- | ----------- | ------------------------------------------------------------ |
@@ -2804,7 +2804,7 @@ Bien qu'il soit possible de vérifier les règles côté client, vous pouvez ég
 
 > [!api]
 >
-> @api {POST} /domain/configurationRule/check
+> @api {v1} /domain POST /domain/configurationRule/check
 
 En paramètre de requête, nous retrouvons l'action et le domaine souhaité.
 

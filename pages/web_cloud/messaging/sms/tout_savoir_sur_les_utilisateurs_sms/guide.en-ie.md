@@ -115,7 +115,7 @@ To get a description of a specific ptt code, you can use the following API:
 
 > [!api]
 >
-> @api {GET} /sms/ptts
+> @api {v1} /sms GET /sms/ptts
 >
 
 For more information on using OVHcloud APIs, please refer to our guide [Getting started with OVHcloud APIs](/pages/manage_and_operate/api/first-steps).

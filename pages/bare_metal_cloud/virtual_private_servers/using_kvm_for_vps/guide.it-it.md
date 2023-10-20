@@ -97,7 +97,7 @@ Se hai un VPS 2014, puoi riscontrare un *errore 1006*. Controllare l'API tramite
 >
 >> > [!api]
 >> >
->> > @api {POST} /vps/{serviceName}/openConsoleAccess
+>> > @api {v1} /vps POST /vps/{serviceName}/openConsoleAccess
 >> >
 >>
 >
@@ -131,7 +131,7 @@ Con i VPS 2016, l'API consigliata per accedere al KVM è la seguente:
 >
 >> > [!api]
 >> >
->> > @api {POST} /vps/{serviceName}/getConsoleUrl
+>> > @api {v1} /vps POST /vps/{serviceName}/getConsoleUrl
 >> >
 >>
 >

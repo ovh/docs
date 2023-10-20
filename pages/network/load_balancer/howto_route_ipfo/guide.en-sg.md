@@ -56,14 +56,14 @@ The API call for this is as follows:
 
 > [!api]
 >
-> @api {POST} /ip/{ip}/move
+> @api {v1} /ip POST /ip/{ip}/move
 > 
 
 You can then list the Additional IPs linked to your OVH Load Balancer with the following API call:
 
 > [!api]
 >
-> @api {GET} /ipLoadbalancing/{serviceName}/failover
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/failover
 >
 
 The Additional IPs linked to your Load Balancer will be available for all of your front-ends. This is contrary to the following case, in which we will link an Additional IP to a single front-end.
@@ -82,21 +82,21 @@ From the [OVH API](https://ca.api.ovh.com){.external}, you can use the following
 
 > [!api]
 >
-> @api {POST} /ipLoadbalancing/{serviceName}/http/frontend
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/http/frontend
 > 
 
 * TCP protocol
 
 > [!api]
 >
-> @api {POST} /ipLoadbalancing/{serviceName}/tcp/frontend
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/tcp/frontend
 > 
 
 * UDP protocol
 
 > [!api]
 >
-> @api {POST} /ipLoadbalancing/{serviceName}/udp/frontend
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/udp/frontend
 > 
 
 #### If you are updating an existing front-end:
@@ -107,21 +107,21 @@ From the [OVH API](https://ca.api.ovh.com){.external}, you can use the following
 
 > [!api]
 >
-> @api {PUT} /ipLoadbalancing/{serviceName}/http/frontend/{frontendId}
+> @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/http/frontend/{frontendId}
 > 
 
 * TCP protocol
 
 > [!api]
 >
-> @api {PUT} /ipLoadbalancing/{serviceName}/tcp/frontend/{frontendId}
+> @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/tcp/frontend/{frontendId}
 > 
 
 * UDP protocol
 
 > [!api]
 >
-> @api {PUT} /ipLoadbalancing/{serviceName}/udp/frontend/{frontendId}
+> @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/udp/frontend/{frontendId}
 > 
 
 ### Via the OVH Control Panel.

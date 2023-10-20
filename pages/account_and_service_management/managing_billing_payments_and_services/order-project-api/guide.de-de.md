@@ -34,7 +34,7 @@ Verwenden Sie diesen Anruf, um den Warenkorb zu erstellen:
 
 > [!api]
 >
-> @api {POST} /order/cart
+> @api {v1} /order POST /order/cart
 >
 
 Bitte wählen Sie Ihre OVHcloud API-Filiale aus. Geben Sie die Rückmeldung zur Markierungsnummer ("cartId") ein. Der Warenkorb muss identifiziert werden.
@@ -43,7 +43,7 @@ Fügen Sie anschließend ein Public Cloud Projekt als Artikel hinzu. Verwenden S
 
 > [!api]
 >
-> @api {GET} /order/cart/{cartId}/cloud
+> @api {v1} /order GET /order/cart/{cartId}/cloud
 >
 
 In der Antwort können Sie die Einstellungen eines Public Cloud Projekts überprüfen:
@@ -60,7 +60,7 @@ Verwenden Sie diesen Anruf, um den Artikel zu Ihrem Warenkorb hinzuzufügen:
 
 > [!api]
 >
-> @api {POST} /order/cart/{cartId}/cloud
+> @api {v1} /order POST /order/cart/{cartId}/cloud
 >
 
 Folgende Informationen, die in den vorangegangenen Schritten gewonnen wurden, sind vorzulegen:
@@ -77,21 +77,21 @@ Die Antwort umfasst eine itemId, die (zusammen mit der "cartId") verwendet werde
 
 > [!api]
 >
-> @api {GET} /order/cart/{cartId}/item/{itemId}
+> @api {v1} /order GET /order/cart/{cartId}/item/{itemId}
 >
 
 Sie können die Liste der für diesen Artikel verfügbaren Konfigurationseinstellungen mit folgendem Anruf überprüfen:
 
 > [!api]
 >
-> @api {GET} /order/cart/{cartId}/item/{itemId}/requiredConfiguration
+> @api {v1} /order GET /order/cart/{cartId}/item/{itemId}/requiredConfiguration
 >
 
 Verwenden Sie folgenden Endpunkt, um Ihr Projekt zu nennen (`Label: "Beschreibung"`):
 
 > [!api]
 >
-> @api {POST} /order/cart/{cartId}/item/{itemId}/configuration
+> @api {v1} /order POST /order/cart/{cartId}/item/{itemId}/configuration
 >
 
 |Feld|Wert|
@@ -107,7 +107,7 @@ Die Antworten enthalten eine "konfigurationId", die verwendet werden kann (mit "
 
 > [!api]
 >
-> @api {DELETE} /order/cart/{cartId}/item/{itemId}/configuration/{configurationId}
+> @api {v1} /order DELETE /order/cart/{cartId}/item/{itemId}/configuration/{configurationId}
 >
 
 ### Schritt 2: den Warenkorb validieren
@@ -116,14 +116,14 @@ Sie können den Inhalt Ihres Warenkorbs mit "cartId" überprüfen:
 
 > [!api]
 >
-> @api {GET} /order/cart/{cartId}/checkout
+> @api {v1} /order GET /order/cart/{cartId}/checkout
 >
 
 Mit dem folgenden Anruf können Sie einen Link zu Ihrer Bestellung erstellen. Zunächst ist das entsprechende Kästchen anzukreuzen, um auf das Widerrufsrecht zu verzichten.
 
 > [!api]
 >
-> @api {POST} /order/cart/{cartId}/checkout
+> @api {v1} /order POST /order/cart/{cartId}/checkout
 >
 
 ## Weiterführende Informationen

@@ -94,35 +94,35 @@ Para añadir las direcciones IP públicas de sus aplicaciones a esta segunda *li
 
 > [!api]
 >
-> @api {GET} /dedicatedCloud/{serviceName}/twoFAWhitelist
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/twoFAWhitelist
 >
 
 - Añadir una dirección IP a la *omisión* de la doble autenticación.
 
 > [!api]
 >
-> @api {POST} /dedicatedCloud/{serviceName}/twoFAWhitelist
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/twoFAWhitelist
 >
 
 - Mostrar la información de una dirección IP autorizada (se necesita un id. recuperado con la primera llamada).
 
 > [!api]
 >
-> @api {GET} /dedicatedCloud/{serviceName}/twoFAWhitelist/{id}
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/twoFAWhitelist/{id}
 >
 
 - Eliminar una dirección IP de la lista de autorizados.
 
 > [!api]
 >
-> @api {DELETE} /dedicatedCloud/{serviceName}/twoFAWhitelist/{id}
+> @api {v1} /dedicatedCloud DELETE /dedicatedCloud/{serviceName}/twoFAWhitelist/{id}
 >
 
 - Modificar la información de una dirección IP autorizada.
 
 > [!api]
 >
-> @api {POST} /dedicatedCloud/{serviceName}/twoFAWhitelist/{id}/changeProperties
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/twoFAWhitelist/{id}/changeProperties
 >
 
 ## Más información

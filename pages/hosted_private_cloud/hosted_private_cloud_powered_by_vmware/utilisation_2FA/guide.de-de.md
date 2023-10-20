@@ -94,35 +94,35 @@ Um die öffentlichen IP-Adressen Ihrer Anwendungen zu dieser zweiten *Whitelist*
 
 >[!api]
 >
-> @api {GET} /dedicatedCloud/{serviceName}/twoFAWhitelist
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/twoFAWhitelist
 >
 
 - Eine IP-Adresse zur *Bypass*-Whitelist der Zwei-Faktor-Authentifizierung hinzufügen:
 
 >[!api]
 >
-> @api {POST} /dedicatedCloud/{serviceName}/twoFAWhitelist
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/twoFAWhitelist
 >
 
 - Informationen einer autorisierten IP-Adresse anzeigen (hierzu wird eine mit dem vorstehenden Aufruf erhaltene ID benötigt):
 
 >[!api]
 >
-> @api {GET} /dedicatedCloud/{serviceName}/twoFAWhitelist/{id}
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/twoFAWhitelist/{id}
 >
 
 - Eine IP-Adresse von der Autorisierungsliste entfernen:
 
 >[!api]
 >
-> @api {DELETE} /dedicatedCloud/{serviceName}/twoFAWhitelist/{id}
+> @api {v1} /dedicatedCloud DELETE /dedicatedCloud/{serviceName}/twoFAWhitelist/{id}
 >
 
 - Die Informationen einer autorisierten IP-Adresse bearbeiten:
 
 >[!api]
 >
-> @api {POST} /dedicatedCloud/{serviceName}/twoFAWhitelist/{id}/changeProperties
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/twoFAWhitelist/{id}/changeProperties
 >
 
 ## Weiterführende Informationen

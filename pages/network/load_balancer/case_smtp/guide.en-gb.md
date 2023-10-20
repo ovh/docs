@@ -40,7 +40,7 @@ Via the OVH API, in the section:
 
 > [!api]
 >
-> @api {GET} /ipLoadbalancing
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing
 > 
 
 For more information on the API’s features, you can refer to [the following guide in French](/pages/network/load_balancer/use_api_reference).
@@ -71,35 +71,35 @@ Your server farm should appear in the list, in the `Farms`{.action} tab.
 
 > [!api]
 >
-> @api {GET} /ipLoadbalancing/{serviceName}/tcp/farm
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/tcp/farm
 > 
 
 - Details of a specific TCP server:
 
 > [!api]
 >
-> @api {GET} /ipLoadbalancing/{serviceName}/tcp/farm/{farmId}
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/tcp/farm/{farmId}
 > 
 
 - Add a new TCP server farm:
 
 > [!api]
 >
-> @api {POST} /ipLoadbalancing/{serviceName}/tcp/farm
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/tcp/farm
 > 
 
 - Modify a specific server farm:
 
 > [!api]
 >
-> @api {PUT} /ipLoadbalancing/{serviceName}/tcp/farm/{farmId}
+> @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/tcp/farm/{farmId}
 > 
 
 - Delete a specific server farm:
 
 > [!api]
 >
-> @api {DELETE} /ipLoadbalancing/{serviceName}/tcp/farm/{farmId}
+> @api {v1} /ipLoadbalancing DELETE /ipLoadbalancing/{serviceName}/tcp/farm/{farmId}
 > 
 
 ## Add a server.
@@ -131,35 +131,35 @@ Your server should appear in the server list, in the `Farms`{.action} tab, just 
 
 > [!api]
 >
-> @api {GET} /ipLoadbalancing/{serviceName}/tcp/farm/{farmId}/server
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/tcp/farm/{farmId}/server
 > 
 
 - Details of a specific server:
 
 > [!api]
 >
-> @api {GET} /ipLoadbalancing/{serviceName}/tcp/farm/{farmId}/server/{serverId}
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/tcp/farm/{farmId}/server/{serverId}
 > 
 
 - Add a new server:
 
 > [!api]
 >
-> @api {POST} /ipLoadbalancing/{serviceName}/tcp/farm/{farmId}/server
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/tcp/farm/{farmId}/server
 > 
 
 - Modify a specific server:
 
 > [!api]
 >
-> @api {PUT} /ipLoadbalancing/{serviceName}/tcp/farm/{farmId}/server
+> @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/tcp/farm/{farmId}/server
 > 
 
 - Delete a specific server:
 
 > [!api]
 >
-> @api {DELETE} /ipLoadbalancing/{serviceName}/tcp/farm/{farmId}/server
+> @api {v1} /ipLoadbalancing DELETE /ipLoadbalancing/{serviceName}/tcp/farm/{farmId}/server
 > 
 
 ## Add a front-end
@@ -190,35 +190,35 @@ Your front-end must appear in the list, in the `Front-ends`{.action} tab.
 
 > [!api]
 >
-> @api {GET} /ipLoadbalancing/{serviceName}/tcp/frontend
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/tcp/frontend
 > 
 
 - Details of a specific front-end:
 
 > [!api]
 >
-> @api {GET} /ipLoadbalancing/{serviceName}/tcp/frontend/{frontendId}
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/tcp/frontend/{frontendId}
 > 
 
 - Add a new front-end:
 
 > [!api]
 >
-> @api {POST} /ipLoadbalancing/{serviceName}/tcp/frontend
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/tcp/frontend
 > 
 
 - Modify a specific front-end:
 
 > [!api]
 >
-> @api {PUT} /ipLoadbalancing/{serviceName}/tcp/frontend/{frontendId}
+> @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/tcp/frontend/{frontendId}
 > 
 
 - Delete a specific front-end:
 
 > [!api]
 >
-> @api {DELETE} /ipLoadbalancing/{serviceName}/tcp/frontend/{frontendId}
+> @api {v1} /ipLoadbalancing DELETE /ipLoadbalancing/{serviceName}/tcp/frontend/{frontendId}
 > 
 
 ## Apply the modifications
@@ -237,7 +237,7 @@ Go the homepage for the OVH Load Balancer, and click `Apply:Zone`{.action} for e
 
 > [!api]
 >
-> @api {POST} /ipLoadbalancing/{serviceName}/refresh
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/refresh
 > 
 
 ## Postfix configuration.

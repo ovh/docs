@@ -36,7 +36,7 @@ Im Folgenden werden wir eine Route zu unserer Dienstleistung hinzufügen.
 >
 >> > [!api]
 >> >
->> > @api {POST} /ipLoadbalancing/{serviceName}/refresh
+>> > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/refresh
 >> >
 >>
 >
@@ -73,7 +73,7 @@ Wir werden nun eine Regel zu unserer Route hinzufügen.
 >
 >> > [!api]
 >> >
->> > @api {POST} /ipLoadbalancing/{serviceName}/refresh
+>> > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/refresh
 >> >
 >>
 >
@@ -116,7 +116,7 @@ Eine Zone aktualisieren
 >
 >> > [!api]
 >> >
->> > @api {POST} /ipLoadbalancing/{serviceName}/refresh
+>> > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/refresh
 >> >
 >>
 >

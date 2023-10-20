@@ -85,13 +85,13 @@ L'API suivante permet de créer un nichandle OVHcloud.
 
 > [!api]
 >
-> @api {POST} /newAccount
+> @api {v1} /newAccount POST /newAccount
 
 Il est également possible de récupérer les règles de création via l'API.
 
 > [!api]
 >
-> @api {GET} /newAccount/creationRules
+> @api {v1} /newAccount GET /newAccount/creationRules
 
 Une fois créé, toutes les actions liées à ce nichandle se feront via les APIs commençant par `/me/*`.
 
@@ -101,8 +101,8 @@ Vous pouvez récupérer et modifier les informations d'un Nic via ces APIs.
 
 > [!api]
 >
-> @api {GET} /me
-> @api {PUT} /me
+> @api {v1} /me GET /me
+> @api {v1} /me PUT /me
 
 ### Changement de nichandle sur le service domaine
 
@@ -113,7 +113,7 @@ Avec l'API suivante, nous allons initier une "tâche" qui permettra à l'ancien 
 
 > [!api]
 >
-> @api {POST} /domain/{serviceName}/changeContact
+> @api {v1} /domain POST /domain/{serviceName}/changeContact
 
 | Corps de requête | Description                    |
 | ---------------- | ------------------------------ |
@@ -130,11 +130,11 @@ Les APIs suivantes permettent de suivre le traitement de cette tâche, ou de lui
 
 > [!api]
 >
-> @api {GET} /me/task/contactChange
-> @api {GET} /me/task/contactChange/{id}
-> @api {POST} /me/task/contactChange/{id}/accept
-> @api {POST} /me/task/contactChange/{id}/refuse
-> @api {POST} /me/task/contactChange/{id}/resendEmail
+> @api {v1} /me GET /me/task/contactChange
+> @api {v1} /me GET /me/task/contactChange/{id}
+> @api {v1} /me POST /me/task/contactChange/{id}/accept
+> @api {v1} /me POST /me/task/contactChange/{id}/refuse
+> @api {v1} /me POST /me/task/contactChange/{id}/resendEmail
 
 ## Gestion du contact propriétaire
 
@@ -156,10 +156,10 @@ Les APIs suivantes vous permettent de gérer vos contacts.
 
 > [!api]
 >
-> @api {POST} /domain/contact
-> @api {GET} /domain/contact
-> @api {GET} /domain/contact/{contactId}
-> @api {PUT} /domain/contact/{contactId}
+> @api {v1} /domain POST /domain/contact
+> @api {v1} /domain GET /domain/contact
+> @api {v1} /domain GET /domain/contact/{contactId}
+> @api {v1} /domain PUT /domain/contact/{contactId}
 
 > [!primary]
 >
@@ -216,7 +216,7 @@ Les étapes suivantes sont décrites plus en détails dans la documentation port
 
 > [!api]
 >
-> @api {GET} /order/cartServiceOption/domain/{serviceName}
+> @api {v1} /order GET /order/cartServiceOption/domain/{serviceName}
 
 <!-- prettier-ignore -->
 > [!tabs]
@@ -272,13 +272,13 @@ Création du panier :
 
 > [!api]
 >
-> @api {POST} /order/cart
+> @api {v1} /order POST /order/cart
 
 Ajout du changement de propriétaire dans le panier :
 
 > [!api]
 >
-> @api {POST} /order/cartServiceOption/domain/{serviceName}
+> @api {v1} /order POST /order/cartServiceOption/domain/{serviceName}
 
 | Corps de requête | Description                                                 |
 | ---------------- | ----------------------------------------------------------- |
@@ -295,7 +295,7 @@ Pour connaître les configurations requises, il suffit d'appeler l'API suivante 
 
 > [!api]
 >
-> @api {GET} /order/cart/{cartId}/item/{itemId}/requiredConfiguration
+> @api {v1} /order GET /order/cart/{cartId}/item/{itemId}/requiredConfiguration
 
 | Paramètre | Obligatoire | Défaut | Description                                   |
 | --------- | ----------- | ------ | --------------------------------------------- |
@@ -323,7 +323,7 @@ On ajoute ensuite le contact voulu via l'API suivante.
 
 > [!api]
 >
-> @api {POST} /order/cart/{cartId}/item/{itemId}/configuration
+> @api {v1} /order POST /order/cart/{cartId}/item/{itemId}/configuration
 
 | Paramètre | Obligatoire | Défaut | Description                                   |
 | --------- | ----------- | ------ | --------------------------------------------- |
@@ -353,7 +353,7 @@ Cette étape est sans doute la plus importante du processus de commande et se fa
 
 > [!api]
 >
-> @api {GET} /order/cart/{cartId}/checkout
+> @api {v1} /order GET /order/cart/{cartId}/checkout
 
 Elle permet de récupérer le bon de commande dans sa forme finale sans le générer (c'est un "dry-run").
 
@@ -363,7 +363,7 @@ Cet appel permet également de vérifier que les règles d'éligibilité du prop
 
 > [!api]
 >
-> @api {POST} /order/cart/{cartId}/checkout
+> @api {v1} /order POST /order/cart/{cartId}/checkout
 
 | Paramètre                           | Obligatoire | Défaut | Description                                                                                    |
 | ----------------------------------- | ----------- | ------ | ---------------------------------------------------------------------------------------------- |
@@ -377,7 +377,7 @@ Celle-ci peut alors être retrouvée via l'API suivante :
 
 > [!api]
 >
-> @api {POST} /domain/{serviceName}/task
+> @api {v1} /domain POST /domain/{serviceName}/task
 
 Plus de détails sur la gestion des tâches peuvent être trouvés [sur cette page](/pages/web_cloud/domains/api_domain_tasks).
 

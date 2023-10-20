@@ -44,21 +44,21 @@ Z API można korzystać dzięki następujących trzem wywołaniom APIv6:
 
 > [!api]
 >
-> @api {GET} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/filer/{filerId}
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/filer/{filerId}
 >
 
 #### Hosty
 
 > [!api]
 >
-> @api {GET} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/host/{hostId}
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/host/{hostId}
 > 
 
 #### Maszyny wirtualne
 
 > [!api]
 > 
-> @api {GET} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/vm/{vmId}
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/vm/{vmId}
 > 
 
 ### Zbieranie danych historycznych (wykresy)
@@ -75,7 +75,7 @@ Aby uzyskać token odczytu dla danego użytkownika, należy użyć następujące
 
 > [!api]
 > 
-> @api {POST} /dedicatedCloud/{serviceName}/user/{userId}/metricsToken
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/user/{userId}/metricsToken
 > 
 
 Twój token znajduje się w polu wyników**token**.

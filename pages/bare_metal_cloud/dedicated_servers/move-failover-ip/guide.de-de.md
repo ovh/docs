@@ -85,7 +85,7 @@ Es ist am besten, zunächst zu prüfen, ob die IP-Adresse umgezogen werden kann.
 
 > [!api]
 >
-> @api {GET} /dedicated/server/{serviceName}/ipCanBeMovedTo
+> @api {v1} /dedicated/server GET /dedicated/server/{serviceName}/ipCanBeMovedTo
 >
 
 - `serviceName`: die Referenz des Zielservers
@@ -95,7 +95,7 @@ Um die IP-Adresse umzuziehen, verwenden Sie folgenden Call:
 
 > [!api]
 >
-> @api {POST} /dedicated/server/{serviceName}/ipMove
+> @api {v1} /dedicated/server POST /dedicated/server/{serviceName}/ipMove
 >
 
 - `serviceName`: die Referenz des Zielservers

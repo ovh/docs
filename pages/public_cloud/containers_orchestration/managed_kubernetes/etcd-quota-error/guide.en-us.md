@@ -41,7 +41,7 @@ In order to check your current ETCD quota and usage, you can query the OVHcloud 
 
 > [!api]
 >
-> @api {GET} /cloud/project/{serviceName}/kube/{kubeID}/metrics/etcdUsage
+> @api {v1} /cloud GET /cloud/project/{serviceName}/kube/{kubeID}/metrics/etcdUsage
 >
 
 **Result:**

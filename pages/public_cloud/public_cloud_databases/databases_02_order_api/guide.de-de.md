@@ -30,7 +30,7 @@ In order to create a database service, you will need to specify at minimum:
 The _capabilities_ endpoint lists the allowed values for the engine, plan, and flavor the service knows about.
 
 > [!api]
-> @api {GET} /cloud/project/{serviceName}/database/capabilities
+> @api {v1} /cloud GET /cloud/project/{serviceName}/database/capabilities
 
 The call returns an object listing allowed values for:
 
@@ -43,7 +43,7 @@ The call returns an object listing allowed values for:
 The _availability_ endpoint lists what combination of parameters the service allows. For example, a MongoDB `Essential` plan currently allows clusters with a single node, whereas `Business` services allow clusters of 3 to 8 nodes. You should decide what set of parameters among that list best fit your needs.
 
 > [!api]
-> @api {GET} /cloud/project/{serviceName}/database/availability
+> @api {v1} /cloud GET /cloud/project/{serviceName}/database/availability
 
 The call returns an array listing the available set of parameters. Each entry in this array lists (among other data): an _engine_, a _version_, a _plan_, a _flavor_, a _region_, if it supports _public_ or _private networking_, a _minimum number of nodes_ and a _maximum number of nodes_.
 
@@ -55,7 +55,7 @@ The call returns an array listing the available set of parameters. Each entry in
 Use this endpoint to create a new database cluster:
 
 > [!api]
-> @api {POST} /cloud/project/{serviceName}/database/mongodb
+> @api {v1} /cloud POST /cloud/project/{serviceName}/database/mongodb
 
 - **description**: A human-readable description for the service you wish to create
 - **plan**: the desired plan for the service
@@ -75,7 +75,7 @@ The call returns an object describing the cluster you asked for. Initially, its 
 The cluster will take a few minutes to become fully usable. You can check its status using:
 
 > [!api]
-> @api {GET} /cloud/project/{serviceName}/database/mongodb/{clusterId}
+> @api {v1} /cloud GET /cloud/project/{serviceName}/database/mongodb/{clusterId}
 
 The call returns an object describing the cluster. Its **status** property will transition to `READY` when the cluster becomes available.
 
@@ -87,7 +87,7 @@ The call returns an object describing the cluster. Its **status** property will 
 Declare the IP address blocks allowed to connect to your cluster with:
 
 > [!api]
-> @api {POST} /cloud/project/{serviceName}/database/mongodb/{clusterId}/ipRestriction
+> @api {v1} /cloud POST /cloud/project/{serviceName}/database/mongodb/{clusterId}/ipRestriction
 
 - **description** is a human-readable description or label for the IP block
 - **ip** is a string representing an IP block or network, using the syntax `aaa.bbb.ccc.ddd/xy` -- If you want to specify a single IP address, use `aaa.bbb.ccc.ddd/32`
@@ -99,12 +99,12 @@ You can add multiple allowed IP blocks.
 At this point you don't know your cluster primary user's password. List your cluster's users with:
 
 > [!api]
-> @api {GET} /cloud/project/{serviceName}/database/mongodb/{clusterId}/user
+> @api {v1} /cloud GET /cloud/project/{serviceName}/database/mongodb/{clusterId}/user
 
 Note the id of your admin user. Reset its password with:
 
 > [!api]
-> @api {POST} /cloud/project/{serviceName}/database/mongodb/{clusterId}/user/{userId}/credentials/reset
+> @api {v1} /cloud POST /cloud/project/{serviceName}/database/mongodb/{clusterId}/user/{userId}/credentials/reset
 
 Note the new password of the user to later be able to connect to the cluster.
 

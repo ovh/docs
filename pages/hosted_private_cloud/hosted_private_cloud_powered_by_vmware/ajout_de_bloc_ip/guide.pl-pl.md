@@ -66,7 +66,7 @@ Należy zastosować następujące wywołanie API:
 
 > [!api]
 >
-> @api {POST} /ip/{ip}/move
+> @api {v1} /ip POST /ip/{ip}/move
 > 
 
 Pola należy wypełnić w następujący sposób:
@@ -85,7 +85,7 @@ Jeśli po odłączeniu bloku IP będziesz mógł użyć tego połączenia API do
 
 > [!api]
 >
-> @api {POST} /ip/{ip}/park
+> @api {v1} /ip POST /ip/{ip}/park
 > 
 
 > [!warning]

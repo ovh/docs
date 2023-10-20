@@ -81,7 +81,7 @@ Dans un premier temps, il est préférable de vérifier si l'adresse IP peut bie
 
 > [!api]
 >
-> @api {GET} /dedicated/server/{serviceName}/ipCanBeMovedTo
+> @api {v1} /dedicated/server GET /dedicated/server/{serviceName}/ipCanBeMovedTo
 >
 
 - `serviceName` : la référence du serveur dédié de destination
@@ -91,7 +91,7 @@ Pour déplacer l'adresse IP, utilisez l'appel suivant :
 
 > [!api]
 >
-> @api {POST} /dedicated/server/{serviceName}/ipMove
+> @api {v1} /dedicated/server POST /dedicated/server/{serviceName}/ipMove
 >
 
 - `serviceName` : la référence du serveur dédié de destination

@@ -49,7 +49,7 @@ Wszystkie istniejące ACL o pojemności można odzyskać za pomocą następując
 >
 >> > [!api]
 >> >
->> > @api {GET} /storage/netapp/{serviceName}/share/{shareId}/acl
+>> > @api {v1} /storage GET /storage/netapp/{serviceName}/share/{shareId}/acl
 >> >
 >>
 >
@@ -78,7 +78,7 @@ Aby utworzyć nowy ACL, użyj następującej drogi API:
 >
 >> > [!api]
 >> >
->> > @api {POST} /storage/netapp/{serviceName}/share/{shareId}/acl
+>> > @api {v1} /storage POST /storage/netapp/{serviceName}/share/{shareId}/acl
 >> >
 >>
 >
@@ -121,7 +121,7 @@ Aby usunąć ACL, użyj następującej drogi API:
 >
 >> > [!api]
 >> >
->> > @api {DELETE} /storage/netapp/{serviceName}/share/{shareId}/acl/{aclRuleId}
+>> > @api {v1} /storage DELETE /storage/netapp/{serviceName}/share/{shareId}/acl/{aclRuleId}
 >> >
 >>
 >

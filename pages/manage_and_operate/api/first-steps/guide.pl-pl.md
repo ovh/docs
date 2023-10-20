@@ -71,7 +71,7 @@ Na przykład, aby pobrać listę Twoich domen, użyj następującego API:
  
 > [!api]
 >
-> @api {GET} /domena
+> @api {v1} /domena GET /domena
 >
 
 **POST**
@@ -82,7 +82,7 @@ Na przykład, aby dodać rekord do strefy DNS, użyj następującego API:
 
 > [!api]
 >
-> @api {POST} /domena/zone/{zoneName}/record
+> @api {v1} /domena POST /domena/zone/{zoneName}/record
 >
 
 **PUT**
@@ -93,7 +93,7 @@ Na przykład, jeśli popełniłeś błąd podczas zapisywania strefy DNS, użyj 
 
 > [!api]
 >
-> @api {PUT} /domena/zone/{zoneName}/record/{id}
+> @api {v1} /domena PUT /domena/zone/{zoneName}/record/{id}
 >
 
 **DELETE**
@@ -104,7 +104,7 @@ Na przykład, jeśli nie chcesz zachować rekordu DNS, który dodałeś do stref
 
 > [!api]
 >
-> @api {DELETE} /domena/zone/{zoneName}/record/{id}
+> @api {v1} /domena DELETE /domena/zone/{zoneName}/record/{id}
 >
 
 ##### **Parametry API**

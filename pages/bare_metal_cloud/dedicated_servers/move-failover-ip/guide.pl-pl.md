@@ -85,7 +85,7 @@ Najpierw należy sprawdzić, czy adres IP może zostać przeniesiony.
 
 > [!api]
 >
-> @api {GET} /dedicated/server/{serviceName}/ipCanBeMovedTo
+> @api {v1} /dedicated/server GET /dedicated/server/{serviceName}/ipCanBeMovedTo
 >
 
 - `serviceName`: numer serwera dedykowanego docelowego
@@ -95,7 +95,7 @@ Aby przenieść adres IP, użyj następującego połączenia:
 
 > [!api]
 >
-> @api {POST} /dedicated/server/{serviceName}/ipMove
+> @api {v1} /dedicated/server POST /dedicated/server/{serviceName}/ipMove
 >
 
 - `serviceName`: numer serwera dedykowanego docelowego

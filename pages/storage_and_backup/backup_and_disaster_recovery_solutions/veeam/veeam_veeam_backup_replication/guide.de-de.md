@@ -179,14 +179,14 @@ Ermitteln Sie zunächst Ihren *serviceName*:
 
 > [!api]
 >
-> @api {GET} /veeam/veeamEnterprise
+> @api {v1} /veeam/veeamEnterprise GET /veeam/veeamEnterprise
 >
 
 Nehmen Sie dann die Registrierung vor:
 
 > [!api]
 >
-> @api {POST} /veeam/veeamEnterprise/{serviceName}/register
+> @api {v1} /veeam/veeamEnterprise POST /veeam/veeamEnterprise/{serviceName}/register
 >
 
 Sie benötigen folgende Informationen:
@@ -199,7 +199,7 @@ Die öffentliche IP-Adresse, die Veeam Enterprise zur Kommunikation mit Ihrem **
 
 > [!api]
 >
-> @api {GET} /veeam/veeamEnterprise/{serviceName}
+> @api {v1} /veeam/veeamEnterprise GET /veeam/veeamEnterprise/{serviceName}
 >
 
 > [!primary]
