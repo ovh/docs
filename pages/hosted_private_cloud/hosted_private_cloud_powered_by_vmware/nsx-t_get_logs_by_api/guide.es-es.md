@@ -24,7 +24,7 @@ Moreover, the following prerequisites are required:
 
 ## Instructions
 
-### Enabling logs
+### Gather the logs with API
 
 Before logs can be retrieved, you will need to enable the `logging` option on the corresponding rule.
 

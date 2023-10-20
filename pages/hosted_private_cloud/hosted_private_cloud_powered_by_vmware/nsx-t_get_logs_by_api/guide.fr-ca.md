@@ -43,7 +43,7 @@ Les paramètres de la règle sont alors disponibles. Activez l'option `logging`{
 
 N'oubliez pas d'appliquer la nouvelle configuration et de la publier.
 
-### Récupération des logs
+### Récupération des logs via API
 
 - Pour obtenir l'accès aux logs, vous devez identifier l'ID du NSX Edge. Pour cela, utilisez un premier appel API :
 

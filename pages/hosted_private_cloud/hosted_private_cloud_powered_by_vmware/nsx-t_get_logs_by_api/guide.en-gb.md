@@ -43,7 +43,7 @@ The rule settings are then available. Enable the `logging`{.action} option that 
 
 Make sure to apply the new configuration and publish it.
 
-### Gather the logs
+### Gather the logs with API
 
 - To have access to the logs, you must identify the Edge NSX ID. To do this, use this first API call:
 
