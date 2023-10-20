@@ -1,7 +1,7 @@
 ---
 title: Zmiana rozmiaru partycji serwera VPS po zmianie oferty przestrzeni dyskowej
 excerpt: "Dowiedz się, jak zwiększyć przestrzeń dyskową po aktualizacji"
-Updated: 2023-09-05
+updated: 2023-09-05
 ---
 
 ## Wprowadzenie
@@ -105,7 +105,7 @@ Powyższa lista nie jest wyczerpująca.
 
 ### Otwieranie aplikacji fdisk
 
-Jeśli weryfikacja systemu plików zakończyła się pomyślnie, otwórz aplikację `fdisk`. Tu jako parametr trzeba będzie podać nazwę dysku, a nie partycji. Jeśli nazwa Twojej partycji to na przykład `sdb1` zamiast `vdb1`, wówczas nazwą dysku będzie /dev/sdb.
+Jeśli weryfikacja systemu plików zakończyła się pomyślnie, otwórz aplikację `fdisk`. Tu jako parametr trzeba będzie podać nazwę dysku, a nie partycji. Jeśli nazwa Twojej partycji to na przykład `sdb1`, wówczas nazwą dysku będzie `/dev/sdb`.
 
 ```sh
 fdisk -u /dev/sdb

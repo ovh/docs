@@ -1,5 +1,5 @@
 ---
-title: "Web Hosting: how to change your solution?"
+title: "Web Hosting: How to change your solution?"
 excerpt: "Find out how to change the subscription offer for your OVHcloud Web Hosting"
 updated: 2023-09-19
 ---
@@ -49,7 +49,7 @@ Then select your new subscription and its duration. Confirm the corresponding co
 >
 > You can only change your subscription to a lower range plan if it is the **next lower plan**.
 > For example, you cannot switch from a *Performance 2* plan to a *Pro* plan in a single operation.
-> You will **first** need to downgrade your web hosting plan from the *Performance 2* plan to the *Performance 1* plan, and **then** to the to the *Pro* plan.
+> You will **first** need to downgrade your web hosting plan from the *Performance 2* plan to the *Performance 1* plan, and **then** to the *Pro* plan.
 
 **Before changing to a lower range**, please check the following 6 points:
 

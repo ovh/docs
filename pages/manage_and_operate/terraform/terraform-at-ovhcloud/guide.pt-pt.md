@@ -1,7 +1,7 @@
 ---
 title: Using Terraform with OVHcloud (EN)
 excerpt: Find out about useful resources in order to use Terraform with OVHcloud
-updated: 2023-08-07
+updated: 2023-09-27
 ---
 
 ## Introduction
@@ -59,7 +59,7 @@ OVHcloud console GUI (also called "Control Panel" or "Manager") hides some backg
 
 | Control Panel concept | Terraform provider(s) | Resource or Data Source  |
 | --- | --- | --- |
-| Instances & Bare Metal  | openstack | [openstack_compute_instance_v2](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/compute_instance_v2) |
+| Instances (VM & Metal)  | openstack | [openstack_compute_instance_v2](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/compute_instance_v2) |
 
 #### Storage and Backup
 
@@ -67,21 +67,24 @@ OVHcloud console GUI (also called "Control Panel" or "Manager") hides some backg
 | --- | --- | --- |
 | Block Storage  | openstack | [blockstorage_volume_v3](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/blockstorage_volume_v3)|
 | Object Storage (Swift) | openstack | [objectstorage_object_v1](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/objectstorage_object_v1) |
-| S3 storage | Hashicorp aws | [aws_s3_bucket](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket)|
+| Object Storage (S3) | Hashicorp aws | [aws_s3_bucket](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket)|
 | S3 users | ovh | [ovh_cloud_project_user](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/cloud_project_user) with *objectstore_operator* role|
+| Cloud Archive | openstack | [objectstorage_object_v1](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/objectstorage_object_v1) with [storage_policy](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/objectstorage_container_v1#storage_policy) set to “PCA” in order to create an “archive” swift container |
+| Cold Archive | Hashicorp aws | [aws_s3_bucket](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket)|
 | Databases | ovh | [cloud_project_database](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/cloud_project_database) and [cloud_project_database_database](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/cloud_project_database_database)|
 | Volume Snapshot | openstack | [openstack_blockstorage_snapshot_v3](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/data-sources/blockstorage_snapshot_v3)|
-| Scheduled Instance Backup | ovh |[ovh_cloud_project_workflow_backup](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/cloud_project_workflow_backup)|
-| Cloud Archive | openstack | [objectstorage_object_v1](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/objectstorage_object_v1) with [storage_policy](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/objectstorage_container_v1#storage_policy) set to “PCA” in order to create an “archive” swift container |
+| Volume Backup | openstack | [data source] [openstack_blockstorage_volume_v3](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/data-sources/blockstorage_volume_v3)|
+| Instance Backup | openstack |[openstack_images_image_v2](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/images_image_v2)|
 
 #### Network
 
 | Control Panel concept | Terraform provider(s) | Resource or Data Source  |
 | --- | --- | --- |
 | Private network (vRack) | ovh & openstack | - [ovh_vrack_cloudproject](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/vrack_cloudproject) <br/>- [openstack_networking_network_v2](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/data-sources/networking_network_v2) <br/>- [openstack_networking_subnet_v2](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/networking_subnet_v2)|
-|Public IPs - Floating IPs| openstack | [openstack_networking_floatingip_v2](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/networking_floatingip_v2)
+|Load Balancer| openstack |[openstack_lb_loadbalancer_v2](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/lb_loadbalancer_v2)|
+|Public IPs - Floating IPs| openstack | [openstack_networking_floatingip_v2](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/networking_floatingip_v2)|
 |Public IPs - Additional IPs| ovh | [ovh_ip_service](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/ip_service)
-|Gateway| openstack | [openstack_networking_router_v2](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/networking_router_v2)
+|Gateway| openstack | [openstack_networking_router_v2](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/networking_router_v2)|
 
 #### Containers & Orchestration
 
@@ -106,6 +109,7 @@ OVHcloud console GUI (also called "Control Panel" or "Manager") hides some backg
 | Control Panel concept | Terraform provider(s) | Resource or Data Source  |
 | --- | --- | --- |
 | Data Processing | not available||
+| Data Integration | not available||
 | Logs Data Platform | ovh | partially available :<br/>- [ovh_dbaas_logs_graylog_output_stream](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/dbaas_logs_graylog_output_stream) <br/> - [ovh_dbaas_logs_input](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/dbaas_logs_input) <br/>- [ovh_dbaas_logs_cluster](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/dbaas_logs_cluster) <br/>- [data source] [ovh_dbaas_logs_input_engine](https://registry.terraform.io/providers/ovh/ovh/latest/docs/data-sources/dbaas_logs_input_engine)|
 
 #### Settings
@@ -168,7 +172,7 @@ This universe is currently not supported by Terraform providers
 | Control Panel concept | Terraform provider(s) | Resource or Data Source  |
 | --- | --- | --- |
 | Policies | ovh |[ovh_iam_policy](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/iam_policy)|
-|Identities| ovh |- [data source] [ovh_me_identity_user](https://registry.terraform.io/providers/ovh/ovh/latest/docs/data-sources/me_identity_user) <br/>- [data source] [ovh_me_identity_group](https://registry.terraform.io/providers/ovh/ovh/latest/docs/data-sources/me_identity_group)| 
+|Identities| ovh |- [ovh_me_identity_user](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/me_identity_user) <br/>- [ovh_me_identity_group](https://registry.terraform.io/providers/ovh/ovh/latest/docs/resources/me_identity_group)| 
 |Resource groups | not available | |
 
 ## Resources
@@ -184,4 +188,4 @@ This universe is currently not supported by Terraform providers
 
 - [Registry entry](https://registry.terraform.io/providers/ovh/ovh/latest)
 - [Documentation](https://registry.terraform.io/providers/ovh/ovh/latest/docs)
-- Source code on [GitHub](https://github.com/ovh/terraform-provider-ovh) (contributions are welcome !): 
+- Source code on [GitHub](https://github.com/ovh/terraform-provider-ovh) (contributions are welcome) 

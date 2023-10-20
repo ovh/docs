@@ -1,7 +1,7 @@
 ---
-title: "Tutorial - Was tun, wenn meine Datenbank voll ist?"
+title: "Webhosting: Was tun, wenn meine Datenbank voll ist?"
 excerpt: "Erfahren Sie hier, wie Sie vorgehen, wenn Ihre Datenbank voll ist"
-updated: 2023-02-16
+updated: 2023-09-21
 ---
 
 > [!primary]
@@ -57,15 +57,19 @@ Im ersten Schritt werden die großen Tabellen in der Datenbank identifiziert.
 
 Das Passwort für den Zugriff auf Ihre Datenbank erhalten Sie direkt aus der Konfigurationsdatei Ihrer Seite. Führen Sie diese Aktion mithilfe von **Schritt 1** in unserer Anleitung zur [Änderung des Datenbankpassworts](/pages/web_cloud/web_hosting/sql_change_password) durch.
 
-Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie in der Navigationsleiste oben `Web Cloud`{.action} aus. Klicken Sie auf `Hosting-Pakete`{.action} und wählen Sie den relevanten Dienst aus. Gehen Sie anschließend zum Tab `Datenbanken`{.action}.
+Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie in der Navigationsleiste oben `Web Cloud`{.action} aus. Klicken Sie auf `Hosting-Pakete`{.action} und wählen Sie den relevanten Dienst mit der Datenbank aus. Gehen Sie anschließend zum Tab `Datenbanken`{.action}.
+
+Unten auf dem Bildschirm wird eine Tabelle mit den Datenbanken angezeigt.
 
 ![phpMyAdmin Access](images/pma_access.png){.thumbnail}
 
-Klicken Sie im Tab `Datenbanken`{.action} auf den Button `...`{.action} rechts neben der vollen Datenbank und wählen Sie `Zugang zu phpMyAdmin`{.action}.
+Beachten Sie für Ihre **überlastete Datenbank** den `Benutzernamen` und die `Server-Adresse` in der Tabelle Ihrer Datenbanken. 
+
+Klicken Sie auf den Button `...`{.action} rechts neben der relevanten Datenbank und dann auf `Zugang zu phpMyAdmin`{.action}.
 
 ![phpMyAdmin Go Login](images/pma_interface.png){.thumbnail}
 
-Geben Sie zusätzlich zu den bereits ausgefüllten Informationen Ihr Datenbankpasswort ein und klicken Sie dann auf `Ausführen`{.action}.
+Geben Sie die Zugangsdaten für Ihre Datenbank ein und klicken Sie auf `Anmeldung`{.action}.
 
 #### 1.2 - Finden der größten Tabellen
 
@@ -119,7 +123,7 @@ Sobald Sie festgestellt haben, ob der Inhalt der Tabellen für das Funktionieren
 
 Führen Sie ein Upgrade Ihres Datenbankdienstes auf ein Angebot durch, das mehr Speicherplatz für Datenbanken enthält.
 
-Konsultieren Sie unser Angebot [Web Cloud Databasess](https://www.ovh.de/cloud/cloud-databases/), um sich über die Optionen zu informieren. 
+Konsultieren Sie unser Angebot [Web Cloud Databasess](https://www.ovhcloud.com/de/web-cloud/databases/), um sich über die Optionen zu informieren. 
 
 Wir empfehlen diese Lösung für große Datenbanken.
 

@@ -43,12 +43,10 @@ Um insbesondere auf ICMP eine restriktive Firewall einzurichten und weiterhin vo
 
 > [!primary]
 >
-> Wenn Ihr Server sich in Roubaix 3 befindet, muss die letzte IP über `tcpdump` abgerufen werden.
+> Wenn Ihr Server sich in Roubaix 3 befindet, muss die letzte IP über `tcpdump` abgerufen werden:
+> <pre class="highlight language-console"><code class="language-console">tcpdump host server_ip | grep ICMP</code></pre>
 >
-> ```
-> tcpdump host feste.ip.des.servers | grep ICMP
-> ```
->
+
 
 ### Monitoring aktivieren oder deaktivieren
 

@@ -39,12 +39,8 @@ Para implementar un firewall restrictivo, especialmente en ICMP, y continuar ben
 
 > [!primary]
 >
-> Si su servidor está situado en Roubaix 3, deberá obtener la última IP a través de tcpdump.
->
-> ```sh
-> root@nsXXXX:# tcpdump host server.ip | grep ICMP
-> ```
->
+> Si su servidor está situado en Roubaix 3, deberá obtener la última IP a través de tcpdump:
+> <pre class="highlight language-console"><code class="language-console">tcpdump host server_ip | grep ICMP</code></pre>
 
 ### Activar o desactivar la monitorización
 

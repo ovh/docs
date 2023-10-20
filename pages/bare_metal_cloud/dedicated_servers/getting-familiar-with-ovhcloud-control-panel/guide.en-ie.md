@@ -69,7 +69,7 @@ For more information on managing your dedicated server via the OVHcloud Control 
 
 ### Section IP
 
-To access the IP section of the OVHcloud Control Panel, click on the `Bare Metal Cloud`{.action} menu, then open `IP`{.action}.
+To access the IP section of the OVHcloud Control Panel, click on the `Bare Metal Cloud`{.action} menu and open `Network`{.action}. Next, click on `IP`{.action}.
 
 ![ip section](images/manageIP2023.png){.thumbnail}
 

@@ -1,7 +1,7 @@
 ---
 title: 'Utilizza Zerto tra OVHcloud e una piattaforma terza'
 excerpt: "Come connettere il tuo Zerto OVHcloud a un'altra piattaforma"
-updated: 2022-02-11
+updated: 2023-06-10
 ---
 
 > [!primary]
@@ -22,6 +22,12 @@ Per il secondo caso, consulta la nostra guida "[Zerto tra due datacenter OVHclou
 - Una piattaforma Zerto installata e operativa nell'infrastruttura del cliente.
 - Le macchine di replica Zerto (VRA: Virtual Replication Appliance) lato cliente e lato OVHcloud devono essere in grado di comunicare tra di loro sulle porte TCP 4007 e 4008 
 - Le macchine di gestione Zerto (ZVM: Zerto Virtual Manager) lato cliente e lato OVHcloud devono essere in grado di comunicare tra loro sulle porte TCP 9081
+
+>[!warning]
+>
+> OVHcloud supporta le versioni N-1 di Zerto.
+> Le diverse versioni disponibili sono disponibili qui: <https://help.zerto.com/kb/000004585>.
+>
 
 ## Procedura
 

@@ -106,7 +106,7 @@ Questa lista non è esaustiva.
 
 ### Apri l’applicazione fdisk
 
-Se la verifica del filesystem avviene correttamente, esegui l’applicazione `fdisk`. Come parametro sarà necessario inserire il nome del disco, non quello della partizione. Ad esempio, se la tua partizione è `sdb1` invece di `vdb1`, il nome del disco sarà /dev/sdb.
+Se la verifica del filesystem avviene correttamente, esegui l’applicazione `fdisk`. Come parametro sarà necessario inserire il nome del disco, non quello della partizione. Ad esempio, se la tua partizione è `sdb1`, il nome del disco sarà `/dev/sdb`.
 
 ```sh
 fdisk -u /dev/sdb
@@ -151,7 +151,7 @@ La rimozione verrà effettuata automaticamente.
 
 ### Crea una nuova partizione
 
-A questo punto, è necessario creare una nuova partizione con il comando `n`{.action}.  Ti consigliamo di utilizzare i valori predefiniti.
+A questo punto, è necessario creare una nuova partizione con il comando `n`{.action}. Ti consigliamo di utilizzare i valori predefiniti.
 
 ```console
 Command (m for help): n
