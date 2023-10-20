@@ -1,5 +1,5 @@
 ---
-title: NSX - FAQ
+title: NSX - FAQ (EN)
 excerpt: Frequently asked questions on NSX
 updated: 2023-10-19
 ---
