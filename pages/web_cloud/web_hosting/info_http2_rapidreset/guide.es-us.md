@@ -6,7 +6,7 @@ updated: 2023-10-13
 
 ## Introduction
 
-On October 10th 2023, researchers and vendors disclosed an HTTP/2 protocol behaviour allowing to perform a denial-of-service (DoS) using Layer 7.
+On October 10th 2023, researchers and vendors disclosed an HTTP/2 protocol behavior allowing to perform a denial-of-service (DoS) using Layer 7.
 
 Labelled CVE-2023-44487, an attacker can leverage this issue to create additional load on web servers which could lead to denial of service by using HTTP/2 protocol.
 
