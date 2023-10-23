@@ -155,7 +155,7 @@ Maintenant que le projet est téléchargé en local sur votre machine, vous pouv
 
 Si vous souhaitez que vos modifications locales soient synchronisées chaque fois que vous sauvegardez un fichier, ajoutez cette ligne dans le fichier « sftp.json » : `"uploadOnSave": true`
 
-Pour désactiver cette fonction, tout en la gardant dans le fichier « sftp.json », remplacer la valeur `true` par `false`.
+Pour désactiver cette fonction, tout en la gardant dans le fichier « sftp.json », remplacez la valeur `true` par `false`.
 
 Jusqu'à présent, nous avons seulement mentionné les commandes : `SFTP: Config` et `SFTP: Download Project`. Il existe d'autres commandes que vous pouvez observer par autocomplétion en tappant `SFTP:` dans l'éditeur de commande.
 
