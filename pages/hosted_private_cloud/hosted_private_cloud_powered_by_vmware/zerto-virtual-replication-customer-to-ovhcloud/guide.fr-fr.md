@@ -21,7 +21,8 @@ Consultez notre guide « [Zerto entre deux datacenters OVHcloud](/pages/hosted_p
 
 >[!primary]
 >
-> Pour une installation de Zerto opérationnelle
+> Pour une installation de Zerto opérationnelle :
+>
 > - [Téléchargez Zerto](https://www.zerto.com/myzerto/login/?redirect_to=%2Fmyzerto%2Fsupport%2Fdownloads%2F) (il est nécessaire d'avoir un compte).
 > - [Documentation d'installation Zerto](https://help.zerto.com/bundle/Install.VC.HTML/page/Installing_the_Zerto_Solution.htm)
 >
