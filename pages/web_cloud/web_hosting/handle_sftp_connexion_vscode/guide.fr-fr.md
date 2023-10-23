@@ -113,7 +113,6 @@ Retrouvez le chemin distant (`remotePath`) sous la mention `chemin du répertoir
 
 **Exemple** : Si votre nom d'utilisateur est « john-smith » vous obtiendrez `home/john-smith`
 
-
 Enfin, n'oubliez pas d'ajouter cette ligne dans le fichier « sftp.json » : `"openSsh": true`
 
 > [!primary]
