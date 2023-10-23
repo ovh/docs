@@ -10,7 +10,7 @@ Si vous disposez d’un hébergement web OVHcloud, vous pouvez accéder à un es
 
 > [!primary]
 >
-> Si vous souhaitez administrer votre site web à distance sans utiliser Visual Studio Code, vous pouvez le faire avec un client FTP comme FileZilla. N'hésitez pas à consulter notre guide [Utiliser FileZilla avec votre hébergement OVHcloud](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide). Si vous souhaitez vous connecter à votre site web en SSH, lisez notre page [Utiliser l'accès SSH de son hébergement web](https://help.ovhcloud.com/csm/fr-web-hosting-ssh-access?id=kb_article_view&sysparm_article=KB0053116)(/pages/web_cloud/web_hosting/ssh_on_webhosting).
+> Si vous souhaitez administrer votre site web à distance sans utiliser Visual Studio Code, vous pouvez installer le client FTP FileZilla. N'hésitez pas à consulter notre guide « [Utiliser FileZilla avec votre hébergement OVHcloud](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide) ». Si vous souhaitez vous connecter à votre site web en SSH, découvrez notre documentation « [Utiliser l'accès SSH de son hébergement web](/pages/web_cloud/web_hosting/ssh_on_webhosting) ».
 >
 
 **Découvrez comment administrer votre site internet via Visual Studio Code.**
