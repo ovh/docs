@@ -109,7 +109,7 @@ Repérez le nom d'utilisateur (`username`) dans la colonne `Login`{.action} du t
 
 #### remotePath
 
-Vous trouverez le chemin distant (`remotePath`) sous la mention `chemin du répertoire home`{.action}. Cependant, si plusieurs utilisateurs sont configurés, le chemin indiqué peut différer. Dans ce cas, remplacez le nom d'utilisateur mentionné après `home/` par celui de votre choix dans liste `Login`{.action} de votre hébergement.
+Retrouvez le chemin distant (`remotePath`) sous la mention `chemin du répertoire home`{.action}. Cependant, si plusieurs utilisateurs sont configurés, le chemin indiqué peut être différent. Dans ce cas, remplacez le nom d'utilisateur mentionné après `home/` par celui de votre choix dans liste `Login`{.action} de votre hébergement web.
 
 **Exemple** : Si votre nom d'utilisateur est « john-smith » vous obtiendrez `home/john-smith`
 
