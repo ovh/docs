@@ -57,7 +57,10 @@ Pour synchroniser les fichiers de votre site web présents sur l’hébergement 
 
 Retournez dans Visual Studio Code dans le menu horizontal en haut de l'interface, cliquez sur `View`{.action} puis `Command Palette`{.action} pour afficher l'éditeur de commandes.
 
-Pour effectuer la même action avec le raccourci clavier, sélectionnez `Ctrl + Shift + P` si vous êtes sur Windows, `Maj + Command + P` si vous êtes sur macOS.
+Pour effectuer la même action avec le raccourci clavier, sélectionnez :
+
+- `Ctrl + Shift + P` si vous êtes sur Windows, 
+- `Maj + Command + P` si vous êtes sur macOS.
 
 Entrez la commande suivante : `SFTP: Config`.
 
