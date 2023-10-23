@@ -20,7 +20,7 @@ Pour utiliser les groupes de permissions, vous aurez besoin des éléments suiva
 
 ## En pratique
 
-Les groupes de permissions permettent de mettre en place des politiques d'accès clés en main sans avoir a connaitre la liste exhaustive des actions nécessaires.
+Les groupes de permissions permettent de mettre en place des politiques d'accès clés en main sans avoir à connaitre la liste exhaustive des actions nécessaires.
 Cette liste est amenée a évoluer avec le temps avec la création de nouveaux groupes de permissions.
 En cas de mise à jour d'un groupe de permission, un nouveau sera crée et l'ancien sera déprécier pour ne pas impacter les politiques IAM existantes.
 
