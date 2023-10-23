@@ -176,7 +176,7 @@ Ce guide a pour but de présenter d'une manière efficace la gestion d'un projet
 
 [Se connecter à l'espace de stockage FTP de son hébergement web](/pages/web_cloud/web_hosting/ftp_connection)
 
-[Utiliser FileZilla avec votre hébergement OVHcloud](https://help.ovhcloud.com/csm/fr-web-hosting-filezilla?id=kb_article_view&sysparm_article=KB0052749)
+[Utiliser FileZilla avec votre hébergement OVHcloud](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)
 
 [Utiliser l'accès SSH de son hébergement web](https://help.ovhcloud.com/csm/fr-web-hosting-ssh-access?id=kb_article_view&sysparm_article=KB0053116). N'oubliez pas que pour utiliser le SSH, vous devez disposer d'une [offre d'hébergement Pro ou Performance](https://www.ovhcloud.com/fr/web-hosting/).
 
