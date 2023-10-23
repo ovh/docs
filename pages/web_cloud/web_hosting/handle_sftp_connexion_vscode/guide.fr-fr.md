@@ -40,7 +40,10 @@ Après avoir démarré Visual Studio Code, dirigez-vous dans le menu horizontal 
 
 ![hosting](images/view_extensions.png){.thumbnail}
 
-Pour effectuer la même action avec le raccourci clavier, sélectionnez `Ctrl + Shift + X` si vous êtes sur Windows, `Maj + Command + X` si vous êtes sur macOS.
+Pour effectuer la même action avec le raccourci clavier, sélectionnez :
+
+- `Ctrl + Shift + X` si vous êtes sur Windows, 
+- `Maj + Command + X` si vous êtes sur macOS.
 
 En haut à gauche de l’interface, entrez le nom de l’extension « SFTP/FTP sync » de *Natizyskunk* et cliquez sur `Install`{.action}.
 
