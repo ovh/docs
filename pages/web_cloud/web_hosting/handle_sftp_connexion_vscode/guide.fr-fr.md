@@ -6,7 +6,7 @@ updated: 2023-09-22
 
 ## Objectif
 
-Si vous disposez d’un hébergement web OVHcloud, vous pouvez accéder à un espace de stockage qui vous permet de gérer votre site internet. L’accès à cet espace de stockage est possible via SFTP. Même s’il est possible de se connecter avec un terminal, vous pouvez également utiliser l’IDE (environnement de développement intégré) Visual Studio Code pour gérer les dossiers et fichiers de votre site web.
+Si vous disposez d’un hébergement web OVHcloud, vous pouvez accéder à un espace de stockage qui vous permet de gérer votre site internet. L’accès à cet espace de stockage est possible via le protocole SFTP. Même s’il est possible de se connecter avec un terminal, vous pouvez également utiliser l’environnement de développement intégré (IDE) Visual Studio Code pour gérer les dossiers et fichiers de votre site web.
 
 > [!primary]
 >
