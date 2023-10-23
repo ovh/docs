@@ -6,7 +6,7 @@ updated: 2023-09-01
 
 ## Objective
 
-**Triton Inference Server** is part of the **NVIDIA AI Enterprise** (NVAIE). Its goal is to streamline and standardize AI inference.
+**Triton Inference Server** from NVIDIA allows you to streamline and standardize AI inference.
 
 Triton enables users to *deploy*, *run* and *scale* trained AI models from any framework and on any type of resources: **GPU** or **CPU**. It also allows developers to deliver high-performance inference in the Cloud.
 
@@ -498,7 +498,7 @@ ovhai job logs <job_id> --from job
 You should get the following result:
 
 ```console
-2023-08-21T14:47:03Z [job] Image '/workspace/images//dog.jpg':
+2023-08-21T14:47:03Z [job] Image '/workspace/images/dog.jpg':
 2023-08-21T14:47:03Z [job] 12.465825 (264) = CARDIGAN
 2023-08-21T14:47:03Z [job] 11.567661 (263) = PEMBROKE
 2023-08-21T14:47:03Z [job] 9.468060 (151) = CHIHUAHUA
