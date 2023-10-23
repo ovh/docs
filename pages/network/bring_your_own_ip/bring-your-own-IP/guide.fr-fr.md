@@ -35,6 +35,8 @@ Vous devez posséder (voir ci-dessous) un bloc IPv4 public auprès de l'un des R
 
 $${\color{lightgreen}Light \space Green}$$
 
+$\color{red}{your-text-here}$
+
 Il est désormais possible d'utiliser des blocs IP ARIN ou RIPE sur n'importe quel campus OVHcloud. Cette flexibilité améliorée permet une gestion plus efficace et une allocation optimisée des adresses IP pour répondre aux besoins spécifiques de votre entreprise.
 
 Mise à jour de la politique d'utilisation des blocs IP   
