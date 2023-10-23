@@ -174,7 +174,7 @@ Ce guide a pour but de présenter d'une manière efficace la gestion d'un projet
 
 ## Aller plus loin
 
-[Se connecter à l'espace de stockage FTP de son hébergement web](https://help.ovhcloud.com/csm/fr-web-hosting-ftp-storage-connection?id=kb_article_view&sysparm_article=KB0052702)
+[Se connecter à l'espace de stockage FTP de son hébergement web](/pages/web_cloud/web_hosting/ftp_connection)
 
 [Utiliser FileZilla avec votre hébergement OVHcloud](https://help.ovhcloud.com/csm/fr-web-hosting-filezilla?id=kb_article_view&sysparm_article=KB0052749)
 
