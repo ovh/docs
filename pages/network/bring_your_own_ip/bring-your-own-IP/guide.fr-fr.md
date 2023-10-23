@@ -39,7 +39,7 @@ Contrairement à la politique précédente, où un bloc ARIN ne pouvait être ut
 
 Vous pouvez maintenant importer et utiliser des plages d'adresses IP ARIN et RIPE sur n'importe quel campus OVHcloud, offrant ainsi une flexibilité et une adaptabilité accrues pour soutenir vos opérations et votre croissance globales.
 
-$${\color{lightgreen}EndUpdateJulien}$$
+###### EndUpdateJulien
 
 Pour que le bloc soit considéré comme valide, les blocs importés doivent être de type suivants :
 
