@@ -149,7 +149,7 @@ Visual Studio Code vous demande de sélectionner le dossier que vous souhaitez t
 
 ![hosting](images/download_project.png){.thumbnail}
 
-S'il vous est demandé, saisissez le mot de passe assossié à l’utilisateur renseigné dans le fichier « sftp.json » , puis validez. Après le téléchargement, vous pourrez voir l’ensemble des dossiers et fichiers de votre projet dans l’explorateur de fichiers, dans la colonne à gauche de l’interface Visual Studio Code.
+S'il est demandé, saisissez le mot de passe assossié à l’utilisateur renseigné dans le fichier « sftp.json » , puis cliquez sur `valider`. Après le téléchargement, vous visualisez l’ensemble des dossiers et fichiers de votre projet dans l’explorateur de fichiers situé dans la colonne à gauche de l’interface Visual Studio Code.
 
 ![hosting](images/explorer.png){.thumbnail}
 
