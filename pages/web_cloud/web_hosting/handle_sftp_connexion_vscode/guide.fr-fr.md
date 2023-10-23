@@ -18,7 +18,6 @@ Si vous disposez d’un hébergement web OVHcloud, vous pouvez accéder à un es
 ## Prérequis
 
 - Disposer d'une offre d'[hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/)
-
 - Installer [Microsoft Visual Studio Code](https://visualstudio.microsoft.com/#vscode-section) sur votre machine
 
 ## En pratique
