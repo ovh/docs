@@ -8,7 +8,7 @@ updated: 2023-10-16
 ## Objectif
 
 OVHcloud met à disposition des groupes de permissions regroupant toutes les actions nécessaires pour des cas d'usage précis.
-Ce guide liste l'ensemble de ces groupes de permissions et détail les actions contenu dans chaque groupe
+Ce guide liste l'ensemble de ces groupes de permissions et détaille les actions contenues dans chacun des groupes
 
 ## Prérequis
 
@@ -20,15 +20,15 @@ Pour utiliser les groupes de permissions, vous aurez besoin des éléments suiva
 
 ## En pratique
 
-Les groupes de permissions permettent de mettre en place des politiques d'accès clés en main sans avoir a connaitre la liste exhaustive des actions nécessaires.
-Cette liste est amenée a évoluer avec le temps avec la création de nouveaux groupes de permissions.
-En cas de mise à jour d'un groupe de permission, un nouveau sera crée et l'ancien sera déprécier pour ne pas impacter les politiques IAM existantes.
+Les groupes de permissions permettent de mettre en place des politiques d'accès clés en main sans avoir à connaitre la liste exhaustive des actions nécessaires.
+Cette liste est amenée à évoluer avec le temps avec la création de nouveaux groupes de permissions.
+En cas de mise à jour d'un groupe de permission, un nouveau sera créé et l'ancien sera déprécié pour ne pas impacter les politiques IAM existantes.
 
 ### Utiliser les groupes de permissions
 
 #### Lister les groupes de permissions
 
-Les groupes de permissions sont accessible via l'API suivante :
+Les groupes de permissions sont accessibles via l'API suivante :
 
 |**Méthode**|**Chemin**|**Description**|
 | :-: | :-: | :-: |
@@ -226,7 +226,7 @@ Donne les accès en lecture seule existants et à venir sur l'ensemble des produ
 #### Global technicalAccount
 
 Donne tout les droits techniques sur l'ensemble des produits OVHcloud.
-Ce groupe de permissions reprend les droits anciennement porté par le role nicTech
+Ce groupe de permissions reprend les droits anciennement porté par le rôle nicTech
 
 <details>
 <summary>Politique détaillée</summary>
@@ -795,8 +795,8 @@ Ce groupe de permissions reprend les droits anciennement porté par le role nicT
 
 #### Global billingAccount
 
-Donne les droits lié à la facturation sur l'ensemble des produits OVHcloud
-Ce groupe de permissions reprend les droits anciennement porté par le role nicBilling
+Donne les droits liés à la facturation sur l'ensemble des produits OVHcloud
+Ce groupe de permissions reprend les droits anciennement porté par le rôle nicBilling
 
 <details>
 <summary>Politique détaillée</summary>
@@ -4379,7 +4379,7 @@ Ce groupe de permissions reprend les droits anciennement porté par le role nicB
 
 #### Control Panel Access
 
-Donne les droits minimum pour accéder à l'espace client OVHcloud.
+Donne les droits minimums pour accéder à l'espace client OVHcloud.
 
 
 <details>
@@ -4416,7 +4416,7 @@ Donne les droits minimum pour accéder à l'espace client OVHcloud.
 
 #### Pack ADSL technical
 
-Donne tout les droits techniques sur un pack ADSL
+Donne tous les droits techniques sur un pack ADSL
 
 <details>
 <summary>Politique détaillée</summary>
@@ -4640,7 +4640,7 @@ Donne tout les droits techniques sur un pack ADSL
 
 #### Pack ADSL billing
 
-Donne tout les droits lié à la facturation sur un pack ADSL
+Donne tous les droits liés à la facturation sur un pack ADSL
 
 <details>
 <summary>Politique détaillée</summary>
@@ -5466,7 +5466,7 @@ Permet de rattacher de n'importe quel produit du compte client à un vrack
 #### vSphere Admin
 
 Donne accès à la console d'administration de vSphere.
-Ce groupe de permission ne couvre pas l'administration d'un environnement private cloud dans l'espace client
+Ce groupe de permissions ne couvre pas l'administration d'un environnement private cloud dans l'espace client.
 
 <details>
 <summary>Politique détaillée</summary>
@@ -5494,7 +5494,7 @@ Ce groupe de permission ne couvre pas l'administration d'un environnement privat
 #### Openstack Admin
 
 Donne accès à la console d'administration d'Openstack.
-Ce groupe de permission ne couvre pas l'administration d'un projet public cloud dans l'espace client
+Ce groupe de permissions ne couvre pas l'administration d'un projet public cloud dans l'espace client.
 
 <details>
 <summary>Politique détaillée</summary>
