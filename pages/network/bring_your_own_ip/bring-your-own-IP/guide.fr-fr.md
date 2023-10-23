@@ -30,7 +30,7 @@ Vous devez posséder (voir ci-dessous) un bloc IPv4 public auprès de l'un des R
 - [ARIN](https://www.arin.net/)
 - [RIPE](https://www.ripe.net/)
 
-$${\color{lightgreen}StartUpdateJulien}$$
+# $${\color{lightgreen}StartUpdateJulien}$$
 ~~Un bloc ARIN ne peut être utilisé qu’avec des services OVHcloud situés au Canada ou aux Etats-Unis, tandis qu’un bloc RIPE ne peut être utilisé qu’avec des services OVHcloud situés en Europe.~~   
 
 Il est désormais possible d'utiliser des blocs IP ARIN ou RIPE sur n'importe quel campus OVHcloud. Cette flexibilité améliorée permet une gestion plus efficace et une allocation optimisée des adresses IP pour répondre aux besoins spécifiques de votre entreprise.
@@ -39,7 +39,7 @@ Contrairement à la politique précédente, où un bloc ARIN ne pouvait être ut
 
 Vous pouvez maintenant importer et utiliser des plages d'adresses IP ARIN et RIPE sur n'importe quel campus OVHcloud, offrant ainsi une flexibilité et une adaptabilité accrues pour soutenir vos opérations et votre croissance globales.
 
-#$${\color{lightgreen}EndUpdateJulien}$$
+$${\color{lightgreen}EndUpdateJulien}$$
 
 Pour que le bloc soit considéré comme valide, les blocs importés doivent être de type suivants :
 
