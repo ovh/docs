@@ -248,6 +248,19 @@ Pour que les opérations de validation et de renouvellement fonctionnent, il est
 
 Les certificats configurés sur votre service OVHcloud Load Balancer sont automatiquement disponibles pour l'ensemble des frontend de votre service OVHcloud Load Balancer sur lesquels l'options *SSL* est activée.
 
+### Support de TLS 1.3
+Avec l'évolution constante des normes de sécurité sur Internet, OVHcloud s'engage à fournir les technologies les plus récentes et les plus sûres pour vos services. Nous sommes ravis d'annoncer le support de TLS 1.3 pour le Load Balancer OVHcloud.
+
+#### Qu'est-ce que TLS 1.3 ?
+TLS 1.3 est la dernière version du protocole TLS, offrant des améliorations significatives en matière de sécurité et de performance par rapport à TLS 1.2. Les avantages clés incluent un processus de handshake plus rapide, réduisant ainsi le temps nécessaire pour établir des connexions sécurisées, et l'utilisation de suites de chiffrement plus sûres pour renforcer la sécurité des données transmises.
+
+#### Pourquoi utiliser TLS 1.3 avec OVHcloud Load Balancer ?
+En intégrant TLS 1.3, votre Load Balancer OVHcloud bénéficiera d'une sécurité renforcée et d'une performance améliorée, assurant une expérience utilisateur optimale pour vos visiteurs. La réduction du temps de handshake accélère le chargement des pages, tandis que les améliorations de sécurité garantissent que vos données sont protégées avec les normes les plus récentes et les plus sûres.
+
+Pour activer TLS 1.3, suivez les étapes de configuration du certificat SSL/TLS et sélectionnez TLS 1.3 dans les options de protocole. Assurez-vous de tester la configuration pour garantir la compatibilité avec vos applications et services existants.
+
+Pour plus d'informations sur TLS 1.3 et ses avantages, consultez [notre guide détaillé](https://github.com/jtaverne/ovh/blob/main/tls_1.3.md).
+
 #### Depuis l'espace client OVHcloud
 
 La liste des certificats SSL/TLS configurés sur votre service OVHcloud Load Balancer se trouve dans l'onglet `Certificats SSL`{.action}. Cette interface vous propose les 2 options évoquées un peu plus haut, à savoir importer un certificat existant (via le bouton `Ajouter un certificat SSL`{.action}) et `Commander un certificat SSL`{.action} géré automatiquement par votre service OVHcloud Load Balancer.
