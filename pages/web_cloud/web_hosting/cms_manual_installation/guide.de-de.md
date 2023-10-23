@@ -119,7 +119,7 @@ Sollten Sie diese Maßnahmen nicht im Kundencenter durchführen können, kontakt
 > Alle Änderungen in Ihrer DNS-Zone haben eine Propagationszeit von 4 bis 24 Stunden.
 >
 
-- Rufen Sie die für die [Verbindung mit dem FTP-Bereich Ihres Webhostings](/pages/web/hosting/ftp_connection#schritt-1-erforderliche-verbindungsinformationen-abrufen) notwendigen Informationen ab.
+- Rufen Sie die für die [Verbindung mit dem FTP-Bereich Ihres Webhostings](/pages/web_cloud/web_hosting/ftp_connection#schritt-1-erforderliche-verbindungsinformationen-abrufen) notwendigen Informationen ab.
 - Beziehen Sie die Datenbank-Verbindungsinformationen Ihres Webhostings, oder erstellen Sie eine neue Datenbank mithilfe unserer [Dokumentation](/pages/web_cloud/web_hosting/sql_create_database).
 
 #### 1.3 Den kostenlosen FTP-Client FileZilla installieren
@@ -132,7 +132,7 @@ CMS benötigen eine Datenbank, um zu funktionieren. Mit unseren [Webhostings](ht
 
 Verwenden Sie unsere Anleitung zur [Erstellung einer Datenbank über Ihr Webhosting](/pages/web_cloud/web_hosting/sql_create_database).
 
-Wenn Sie das Angebot Web Cloud Databases mit MySQL oder MariaDB nutzen und dieses für die manuelle Installation Ihres CMS verwenden möchten, lesen Sie unsere Anleitung zur [Erstellung einer Datenbank mit Web Cloud Databases](/pages/web/clouddb/create-db-and-user-on-db-server#datenbank-erstellen).
+Wenn Sie das Angebot Web Cloud Databases mit MySQL oder MariaDB nutzen und dieses für die manuelle Installation Ihres CMS verwenden möchten, lesen Sie unsere Anleitung zur [Erstellung einer Datenbank mit Web Cloud Databases](/pages/web_cloud/web_cloud_databases/create-db-and-user-on-db-server#datenbank-erstellen).
 
 Sobald die Datenbank erstellt wurde, rufen Sie die Verbindungseinstellungen (Server, Name der Datenbank, Benutzername und Passwort) ab und speichern Sie diese für [Schritt 3](#step3) dieser Anleitung.
 
@@ -140,11 +140,11 @@ Sobald die Datenbank erstellt wurde, rufen Sie die Verbindungseinstellungen (Ser
 >
 > Wenn Sie Ihr CMS mit einer bereits existierenden Datenbank installieren möchten, können Sie die Verbindungsdaten Ihrer Datenbank direkt in den Dateien der Website abrufen, die die Datenbank nutzt.
 >
-> Wenn es sich dabei um das gleiche CMS handelt, können Sie die Konfigurationsdateien über Ihren [FTP-Speicherplatz](/pages/web_cloud/web_hosting/ftp_connection) anhand [dieser Anleitung](/pages/web/hosting/sql_change_password#schritt-3-passwort-der-datenbank-ihrer-website-in-ihrer-konfigurationsdatei-andern) identifizieren.
+> Wenn es sich dabei um das gleiche CMS handelt, können Sie die Konfigurationsdateien über Ihren [FTP-Speicherplatz](/pages/web_cloud/web_hosting/ftp_connection) anhand [dieser Anleitung](/pages/web_cloud/web_hosting/sql_change_password#schritt-3-passwort-der-datenbank-ihrer-website-in-ihrer-konfigurationsdatei-andern) identifizieren.
 >
 > Loggen Sie sich anschließend in Ihre Datenbank ein, um die Präfixe der existierenden Tabellen zu identifizieren. So vermeiden Sie, dass bereits vorhandene Tabellenpräfixe für das neue CMS genutzt werden und dadurch Fehler verursachen.
 >
-> - Um sich mit Ihrer Webhosting-Datenbank zu verbinden, folgen Sie [dieser Anleitung](/pages/web/hosting/sql_create_database#auf-das-phpmyadmin-interface-zugreifen).
+> - Um sich mit Ihrer Webhosting-Datenbank zu verbinden, folgen Sie [dieser Anleitung](/pages/web_cloud/web_hosting/sql_create_database#auf-das-phpmyadmin-interface-zugreifen).
 > - Um sich mit einer Datenbank von Web Cloud Databases zu verbinden, folgen Sie [dieser Anleitung](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server).
 >
 
@@ -172,7 +172,7 @@ Nachfolgend finden Sie die Download-Seiten für die CMS, die in dieser Anleitung
 > - [Drupal](https://www.drupal.org/docs/getting-started/system-requirements/php-requirements){.external}
 > - [Prestashop](https://www.prestashop.com/en/system-requirements){.external}
 >
-> Konfigurieren Sie anschließend die PHP-Version mithilfe unserer Anleitung zur [Änderung der PHP-Version eines Webhostings](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014).
+> Konfigurieren Sie anschließend die PHP-Version mithilfe unserer Anleitung zur [Änderung der PHP-Version eines Webhostings](/pages/web_cloud/web_hosting/configure_your_web_hosting).
 >
 > Wenn Sie bereits eine kompatible PHP-Version verwenden, also die mindestens erforderliche Version oder eine neuere, ist keine Änderung erforderlich.
 >

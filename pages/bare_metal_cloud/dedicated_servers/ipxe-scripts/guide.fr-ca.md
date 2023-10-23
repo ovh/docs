@@ -107,7 +107,7 @@ Vous observerez que la valeur de l'attribut `bootScript` est désormais nulle.
 
 ## Aller plus loin <a name="gofurther"></a>
 
-[Redémarrage de votre serveur dédié](/pages/cloud/dedicated/getting-started-with-dedicated-server#reboot)
+[Redémarrage de votre serveur dédié](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server#reboot)
 
 [Activer et utiliser le mode rescue](/pages/bare_metal_cloud/dedicated_servers/rescue_mode)
 

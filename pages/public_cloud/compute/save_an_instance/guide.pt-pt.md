@@ -1,7 +1,7 @@
 ---
 title: 'Guardar uma instância'
 excerpt: 'Saiba como efetuar o backup de uma instância Public Cloud a partir da Área de Cliente OVHcloud'
-updated: 2023-01-04
+updated: 2023-09-21
 ---
 
 > [!primary]
@@ -85,6 +85,9 @@ Os planos podem ser criados e eliminados na secção `Workflow Management`{.acti
 Os backups das suas instâncias são geridos na secção `Instance Backup`{.action} da sua Área de Cliente Public Cloud.
 
 ![public-cloud-instance-backup](images/createbackup10.png){.thumbnail}
+
+> [!warning]
+> **Tenha em atenção que não é possível eliminar um backup de instância se uma instância gerada a partir deste backup estiver a ser executada no momento da ação de eliminação.**
 
 Saiba como utilizar os backups para clonar ou restaurar instâncias neste [guia](/pages/public_cloud/compute/create_restore_a_virtual_server_with_a_backup).
 

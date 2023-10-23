@@ -13,11 +13,11 @@ First, assemble your Git repository as appropriate, on your master branch.  Be s
 
 For some applications, such as Drupal you will need to dump configuration to files before proceeding.  You will also need to provide appropriate configuration to read the credentials for your services at runtime and integrate them into your application's configuration.  The details of that integration will vary between systems.  Be sure to see the appropriate project templates for our recommended configuration.
 
-* [Go Templates](/pages/web/web-paas/languages-go#project-templates)
-* [Java Templates](/pages/web/web-paas/languages-java#project-templates)
-* [Node.js Templates](/pages/web/web-paas/languages-nodejs#project-templates)
-* [PHP Templates](/pages/web/web-paas/languages-php#project-templates)
-* [Python Templates](/pages/web/web-paas/languages-python#project-templates)
+* [Go Templates](/pages/web_cloud/web_paas_powered_by_platform_sh/languages/go/languages-go#project-templates)
+* [Java Templates](/pages/web_cloud/web_paas_powered_by_platform_sh/languages/java/languages-java#project-templates)
+* [Node.js Templates](/pages/web_cloud/web_paas_powered_by_platform_sh/languages/node_js/languages-nodejs#project-templates)
+* [PHP Templates](/pages/web_cloud/web_paas_powered_by_platform_sh/languages/php/languages-php#project-templates)
+* [Python Templates](/pages/web_cloud/web_paas_powered_by_platform_sh/languages/python/languages-python#project-templates)
 
 In the management console, click `+ Add project` to create a new Web PaaS project. When asked to select a template pick "Create a blank project".
 

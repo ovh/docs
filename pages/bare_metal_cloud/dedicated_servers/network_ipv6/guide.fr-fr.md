@@ -77,7 +77,7 @@ Dans ce cas, la passerelle IPv6 par défaut peut être écrite ainsi : `fe80::1`
 
 #### Étape 1 : Utiliser SSH pour vous connecter à votre serveur
 
-Retrouvez plus d'informations dans [ce guide](/pages/cloud/dedicated/getting-started-with-dedicated-server#se-connecter-a-votre-serveur).
+Retrouvez plus d'informations dans [ce guide](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server#se-connecter-a-votre-serveur).
 
 #### Étape 2 : Ouvrir le fichier de configuration réseau de votre serveur
 
@@ -132,7 +132,7 @@ Si vous ne parvenez pas à exécuter une commande ping sur cette adresse IPv6, v
 
 #### Étape 1 : Utiliser SSH pour vous connecter à votre serveur
 
-Retrouvez plus d'informations dans [ce guide](/pages/cloud/dedicated/getting-started-with-dedicated-server#se-connecter-a-votre-serveur).
+Retrouvez plus d'informations dans [ce guide](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server#se-connecter-a-votre-serveur).
 
 #### Étape 2 : Ouvrir le fichier de configuration réseau de votre serveur
 
@@ -181,7 +181,7 @@ Si vous ne parvenez pas à exécuter une commande ping sur cette adresse IPv6, v
 
 #### Étape 1 : Utiliser SSH pour vous connecter à votre serveur
 
-Retrouvez plus d'informations dans [ce guide](/pages/cloud/dedicated/getting-started-with-dedicated-server#se-connecter-a-votre-serveur).
+Retrouvez plus d'informations dans [ce guide](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server#se-connecter-a-votre-serveur).
 
 #### Étape 2 : Ouvrir le fichier de configuration réseau de votre serveur
 
@@ -319,7 +319,7 @@ rtt min/avg/max/mdev = 4.075/4.079/4.083/0.045 ms
 
 #### Étape 1 : Utiliser RDP pour vous connecter à votre serveur
 
-Retrouvez plus d'informations dans [ce guide](/pages/cloud/dedicated/getting-started-with-dedicated-server#se-connecter-a-votre-serveur).
+Retrouvez plus d'informations dans [ce guide](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server#se-connecter-a-votre-serveur).
 
 #### Étape 2 : Ouvrir la configuration réseau de votre serveur
 Tout d'abord, faites un clic droit sur l'icône du réseau dans la zone de notification pour accéder au `Network and Sharing Center`{.action}.

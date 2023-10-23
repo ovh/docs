@@ -4,27 +4,6 @@ excerpt: 'Find out how to use Codefresh CI/CD with an OVHcloud Managed Kubernete
 updated: 2019-07-01
 ---
 
-<style>
- pre {
-     font-size: 14px;
- }
- pre.console {
-   background-color: #300A24;
-   color: #ccc;
-   font-family: monospace;
-   padding: 5px;
-   margin-bottom: 5px;
- }
- pre.console code {
-   b   font-family: monospace !important;
-   font-size: 0.75em;
-   color: #ccc;
- }
- .small {
-     font-size: 0.75em;
- }
-</style>
-
 In this tutorial we will see how you can connect [Codefresh](https://codefresh.io){.external}, a CI/CD platform for Kubernetes, to an OVHcloud Managed Kubernetes cluster.
 
 ## Before you begin
@@ -104,11 +83,12 @@ kubectl apply -f codefresh-role-sa-bind.yml
 
 The `Role`, the `ServiceAccount` and the `RoleBinding` are created:
 
-<pre class="console"><code>$ kubectl apply -f codefresh-role-sa-bind.yml
+```console
+$ kubectl apply -f codefresh-role-sa-bind.yml
 clusterrole.rbac.authorization.k8s.io/codefresh-role created
 serviceaccount/codefresh-user created
 clusterrolebinding.rbac.authorization.k8s.io/codefresh-user created
-</code></pre>
+```
 
 ### Getting the *Host*
 
@@ -120,12 +100,13 @@ kubectl cluster-info
 
 The *Host* parameter is the URL of the Kubernetes master.
 
-<pre class="console"><code>$ kubectl cluster-info
+```console
+$ kubectl cluster-info
 Kubernetes master is running at https://xxxxxxxx.c1.gra.k8s.ovh.net
 KubeDNS is running at https://xxxxxxxx.c1.gra.k8s.ovh.net/api/v1/namespaces/kube-system/services/kube-dns:dns/proxy
 
 To further debug and diagnose cluster problems, use 'kubectl cluster-info dump'.
-</code></pre>
+```
 
 In my example cluster, the *Host* is `https://xxxxxxxx.c1.gra.k8s.ovh.net`.
 
@@ -140,9 +121,10 @@ echo $(kubectl get secret --namespace kube-system  -o go-template='{{index .data
 
 Copy the generated certificate into the *Certificate* field on Codefresh.
 
-<pre class="console"><code>$ echo $(kubectl get secret --namespace kube-system -o go-template='{{index .data "ca.crt" }}' $(kubectl get sa codefresh-user --namespace kube-system -o go-template="{{range .secrets}}{{.name}}{{end}}"))
+```console
+$ echo $(kubectl get secret --namespace kube-system -o go-template='{{index .data "ca.crt" }}' $(kubectl get sa codefresh-user --namespace kube-system -o go-template="{{range .secrets}}{{.name}}{{end}}"))
 LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUZtVENDQTRHZ0F3SUJBZ0lCS2pBTkJna3Foa2lHOXcwQkFRc0ZBREF2TVMwd0t3WURWUVFERENReVlqRmsKWVdabFlTMWxNR1l6TFRRNU5UVXRPV1JqWkMxaFpqbGhNemd4TWpobFl6Z3dIaGNOTVRneE1EQTVNVGMxTVRVMQpXaGNOTWpNeE1EQTRNVGMxTVRVMVdqQXZNUzB3S3LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUZtVENDQTRHZ0F3SUJBZ0lCS2pBTkJna3Foa2lHOXcwQkFRc0ZBREF2TVMwd0t3WURWUVFERENReVlqRmsKWVdabFlTMWxNR1l6TFRRNU5UVXRPV1JqWkMxaFpqbGhNemd4TWpobFl6Z3dIaGNOTVRneE1EQTVNVGMxTVRVMQpXaGNOTWpNeE1EQTRNVGMxTVRVMVdqQXZNUzB3S3LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUZtVENDQTRHZ0F3SUJBZ0lCS2pBTkJna3Foa2lHOXcwQkFRc0ZBREF2TVMwd0t3WURWUVFERENReVlqRmsKWVdabFlTMWxNR1l6TFRRNU5UVXRPV1JqWkMxaFpqbGhNemd4TWpobFl6Z3dIaGNOTVRneE1EQTVNVGMxTVRVMQpXaGNOTWpNeE1EQTRNVGMxTVRVMVdqQXZNUzB3S3LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUZtVENDQTRHZ0F3SUJBZ0lCS2pBTkJna3Foa2lHOXcwQkFRc0ZBREF2TVMwd0t3WURWUVFERENReVlqRmsKWVdabFlTMWxNR1l6TFRRNU5UVXRPV1JqWkMxaFpqbGhNemd4TWpobFl6Z3dIaGNOTVRneE1EQTVNVGMxTVRVMQpXaGNOTWpNeE1EQTRNVGMxTVRVMVdqQXZNUzB3S3LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUZtVENDQTRHZ0F3SUJBZ0lCS2pBTkJna3Foa2lHOXcwQkFRc0ZBREF2TVMwd0t3WURWUVFERENReVlqRmsKWVdabFlTMWxNR1l6TFRRNU5UVXRPV1JqWkMxaFpqbGhNemd4TWpobFl6Z3dIaGNOTVRneE1EQTVNVGMxTVRVMQpXaGNOTWpNeE1EQTRNVGMxTVRVMVdqQXZNUzB3S3LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUZtVENDQTRHZ0F3SUJBZ0lCS2pBTkJna3Foa2lHOXcwQkFRc0ZBREF2TVMwd0t3WURWUVFERENReVlqRmsKWVdabFlTMWxNR1l6TFRRNU5UVXRPV1JqWkMxaFpqbGhNemd4TWpobFl6Z3dIaGNOTVRneE1EQTVNVGMxTVRVMQpXaGNOTWpNeE1EQTRNVGMxTVRVMVdqQXZNUzB3S3LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUZtVENDQTRHZ0F3SUJBZ0lCS2pBTkJna3Foa2lHOXcwQkFRc0ZBREF2TVMwd0t3WURWUVFERENReVlqRmsKWVdabFlTMWxNR1l6TFRRNU5UVXRPV1JqWkMxaFpqbGhNemd4TWpobFl6Z3dIaGNOTVRneE1EQTVNVGMxTVRVMQpXaGNOTWpNeE1EQTRNVGMxTVRVMVdqQXZNUzB3S3LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUZtVENDQTRHZ0F3SUJBZ0lCS2pBTkJna3Foa2lHOXcwQkFRc0ZBREF2TVMwd0t3WURWUVFERENReVlqRmsKWVdabFlTMWxNR1l6TFRRNU5UVXRPV1JqWkMxaFpqbGhNemd4TWpobFl6Z3dIaGNOTVRneE1EQTVNVGMxTVRVMQpXaGNOTWpNeE1EQTRNVGMxTVRVMVdqQXZNUzB3S3LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUZtVENDQTRHZ0F3SUJBZ0lCS2pBTkJna3Foa2lHOXcwQkFRc0ZBREF2TVMwd0t3WURWUVFERENReVlqRmsKWVdabFlTMWxNR1l6TFRRNU5UVXRPV1JqWkMxaFpqbGhNemd4TWpobFl6Z3dIaGNOTVRneE1EQTVNVGMxTVRVMQpXaGNOTWpNeE1EQTRNVGMxTVRVMVdqQXZNUzB3S3LS0tLS1CRUdJTiBDRVJUSUZJQ0FURS0tLS0tCk1JSUZtVENDQTRHZ0F3SUJBZ0lCS2pBTkJna3Foa2lHOXcwQkFRc0ZBREF2TVMwd0t3WURWUVFERENReVlqRmsKWVdabFlTMWxNR1l6TFRRNU5UVXRPV1JqWkMxaFpqbGhNemd4TWpobFl6Z3dIaGNOTVRneE1EQTVNVGMxTVRVMQpXaGNOTWpNeE1EQTRNVGMxTVRVMVdqQXZNUzB3S31NBQnUKLS0tLS1FTkQgQ0VSVElGSUNBVEUtLS0tLQo=
-</code></pre>
+```
 
 ### Getting the *Token*
 
@@ -154,9 +136,10 @@ echo $(kubectl get secret --namespace kube-system -o go-template='{{index .data 
 
 Copy the generated token into the *Token* field on Codefresh.
 
-<pre class="console"><code>$ echo $(kubectl get secret -o go-template='{{index .data "token" }}' $(kubectl get sa default -o go-template="{{range .secrets}}{{.name}}{{end}}"))
+```console
+$ echo $(kubectl get secret -o go-template='{{index .data "token" }}' $(kubectl get sa default -o go-template="{{range .secrets}}{{.name}}{{end}}"))
 ZXlKaGJHY2lPaUpTVXpJMU5pSXNJbXRwWkNJNklpSjkuZXlKcGMzTWlPaUpyZFdKbGNtNWxkR1Z6TDNObGNuWnBZMlZoWTJOdmRXNTBJaXdpYTNWaVpYSnVaWFJsY3k1cGJ5OXpaWEoyYVdObFlXTmpiM1Z1ZEM5dVlXMWxjM0JoWTJVaU9pSmtaV1poZFd4MElpd2lhM1ZpWlhKdVpYUmxjeTVwYnk5elpYSjJhV05sWVdOamIzVnVkQzZXlKaGJHY2lPaUpTVXpJMU5pSXNJbXRwWkNJNklpSjkuZXlKcGMzTWlPaUpyZFdKbGNtNWxkR1Z6TDNObGNuWnBZMlZoWTJOdmRXNTBJaXdpYTNWaVpYSnVaWFJsY3k1cGJ5OXpaWEoyYVdObFlXTmpiM1Z1ZEM5dVlXMWxjM0JoWTJVaU9pSmtaV1poZFd4MElpd2lhM1ZpWlhKdVpYUmxjeTVwYnk5elpYSjJhV05sWVdOamIzVnVkQzZXlKaGJHY2lPaUpTVXpJMU5pSXNJbXRwWkNJNklpSjkuZXlKcGMzTWlPaUpyZFdKbGNtNWxkR1Z6TDNObGNuWnBZMlZoWTJOdmRXNTBJaXdpYTNWaVpYSnVaWFJsY3k1cGJ5OXpaWEoyYVdObFlXTmpiM1Z1ZEM5dVlXMWxjM0JoWTJVaU9pSmtaV1poZFd4MElpd2lhM1ZpWlhKdVpYUmxjeTVwYnk5elpYSjJhV05sWVdOamIzVnVkQzZXlKaGJHY2lPaUpTVXpJMU5pSXNJbXRwWkNJNklpSjkuZXlKcGMzTWlPaUpyZFdKbGNtNWxkR1Z6TDNObGNuWnBZMlZoWTJOdmRXNTBJaXdpYTNWaVpYSnVaWFJsY3k1cGJ5OXpaWEoyYVdObFlXTmpiM1Z1ZEM5dVlXMWxjM0JoWTJVaU9pSmtaV1poZFd4MElpd2lhM1ZpWlhKdVpYUmxjeTVwYnk5elpYSjJhV05sWVdOamIzVnVkQzZXlKaGJHY2lPaUpTVXpJMU5pSXNJbXRwWkNJNklpSjkuZXlKcGMzTWlPaUpyZFdKbGNtNWxkR1Z6TDNObGNuWnBZMlZoWTJOdmRXNTBJaXdpYTNWaVpYSnVaWFJsY3k1cGJ5OXpaWEoyYVdObFlXTmpiM1Z1ZEM5dVlXMWxjM0JoWTJVaU9pSmtaV1poZFd4MElpd2lhM1ZpWlhKdVpYUmxjeTVwYnk5elpYSjJhV05sWVdOamIzVnVkQzSmtGQ3lxU01Rb3RqejFhNFc3R3VFQk03MlJjMUhZSUwtOHhSNy1aVzRBQU9jeGdxMVhyZ2F2LVZhRQ==
-</code></pre>
+```
 
 ### Test and save the connection
 

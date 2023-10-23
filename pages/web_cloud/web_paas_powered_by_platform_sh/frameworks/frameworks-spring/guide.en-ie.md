@@ -9,7 +9,7 @@ The [Spring Framework](https://spring.io/projects/spring-framework) provides a c
 
 ## Services
 
-The [configuration reader library](https://github.com/platformsh/config-reader-java) for Java is used in these examples, so be sure to check out the [documentation](/pages/web/web-paas/languages-java#support-libraries) for installation instructions and the latest version.
+The [configuration reader library](https://github.com/platformsh/config-reader-java) for Java is used in these examples, so be sure to check out the [documentation](/pages/web_cloud/web_paas_powered_by_platform_sh/languages/java/languages-java#support-libraries) for installation instructions and the latest version.
 
 ### Apache Solr
 

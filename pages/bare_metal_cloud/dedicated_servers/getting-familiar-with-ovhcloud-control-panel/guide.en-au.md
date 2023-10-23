@@ -48,7 +48,7 @@ Once you are in the `Dedicated Servers`{.action} menu, click on the server of yo
 **Service status**
 
 - Status: Click on the `...`{.action} next to this option to reboot or delete your server.
-- Monitoring: Click on `Configure`{.action} to change the [monitoring settings of your server](/pages/cloud/dedicated/getting-started-with-dedicated-server#monitoring-server).
+- Monitoring: Click on `Configure`{.action} to change the [monitoring settings of your server](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server#monitoring-server).
 
 **Network**
 
@@ -69,7 +69,7 @@ For more information on managing your dedicated server via the OVHcloud Control 
 
 ### Section IP
 
-To access the IP section of the OVHcloud Control Panel, click on the `Bare Metal Cloud`{.action} menu, then open `IP`{.action}.
+To access the IP section of the OVHcloud Control Panel, click on the `Bare Metal Cloud`{.action} menu and open `Network`{.action}. Next, click on `IP`{.action}.
 
 ![ip section](images/manageIP2023.png){.thumbnail}
 

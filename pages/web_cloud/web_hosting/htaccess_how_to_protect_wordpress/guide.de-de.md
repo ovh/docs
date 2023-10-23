@@ -113,7 +113,7 @@ Es gibt mehrere Möglichkeiten, die Einstellungen zu konfigurieren, die das Verh
 
 > [!warning]
 >
-> Bevor Sie den folgenden Schritten folgen, leiten Sie HTTP-Anfragen nach HTTPS um. Folgen Sie hierzu den Anweisungen in unserer Anleitung: [Website mit SSL-Zertifikat auf HTTPS umstellen](/pages/web/hosting/ssl-activate-https-website#schritt-1-ssl-zertifikat-fur-das-hosting-aktivieren)
+> Bevor Sie den folgenden Schritten folgen, leiten Sie HTTP-Anfragen nach HTTPS um. Folgen Sie hierzu den Anweisungen in unserer Anleitung: [Website mit SSL-Zertifikat auf HTTPS umstellen](/pages/web_cloud/web_hosting/ssl-activate-https-website#schritt-1-ssl-zertifikat-fur-das-hosting-aktivieren)
 
 ### Die Anzeige von Verzeichnissen und Unterverzeichnissen verhindern
 

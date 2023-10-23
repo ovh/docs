@@ -1,7 +1,7 @@
 ---
 title: 'Criar várias VLAN no vRack'
 excerpt: 'Saiba como criar várias VLAN no vRack'
-updated: 2022-02-24
+updated: 2023-09-12
 ---
 
 > [!primary]
@@ -75,7 +75,7 @@ ip a
 
 Aqui a interface que queremos configurar é `eno2` com um endereço MAC: `d0:50:99:d6:6b:14`.
 
-![ubuntu VLAN](images/vrack3-ubuntu-01.png)
+![ubuntu VLAN](images/vrack3-ubuntu-01.png){.thumbnail}
 
 Adicione a configuração de rede para esta interface de rede e a declaração de VLAN no seguinte ficheiro:
 
@@ -114,7 +114,7 @@ Utilize o seguinte comando para confirmar a configuração:
 ip a
 ``` 
 
-![ubuntu VLAN](images/vrack3-ubuntu-02.png)
+![ubuntu VLAN](images/vrack3-ubuntu-02.png){.thumbnail}
 
 #### Debian
 
@@ -156,7 +156,13 @@ Ligue-se ao seu servidor através do ambiente de trabalho remoto e abra a aplica
 
 ![Windows VLAN](images/vrack2-windows-01.png){.thumbnail}
 
-Para criar uma nova equipa, selecione uma interface de rede e insira o nome de equipa no campo **Team name**. Clique em `OK`{.action} para terminar:
+Em seguida, clique com o botão direito do rato na interface de rede e selecione `Add to New Team`{.action}.
+
+![Windows vLAN](images/vrack2-windows-02.0.png){.thumbnail}
+
+Na janela que aparece, crie uma nova equipa escrevendo um nome de equipa no campo **Team name**. Clique em `OK`{.action} para terminar:
+
+
 
 ![Windows VLAN](images/vrack2-windows-02.png){.thumbnail}
 
@@ -183,6 +189,8 @@ Clique em `Change adapter settings`{.action}:
 Depois, clique com o botão direito do rato na interface VLAN e, em seguida, em `Properties`{.action}:
 
 ![Windows VLAN](images/vrack2-windows-08.png){.thumbnail}
+
+Note que, no nosso exemplo, o `Ethernet 2` é a interface utilizada para o vRack. No entanto, é possível que a placa de rede vRack utilize uma interface diferente. Utilize uma interface que não possui o endereço IP principal do servidor ou que utiliza um endereço IP autoatribuído.
 
 Clique duas vezes em `Internet Protocol Version 4 (TCP/IP/IPv4)`{.action}:
 

@@ -110,7 +110,7 @@ Il existe plusieurs façons de définir et modifier les paramètres qui changero
 
 > [!warning]
 >
-> Avant de suivre les étapes ci-dessous, il vous faut rediriger le protocole HTTP vers HTTPS. Pour cela, suivez les instructions de notre guide [« Passer son site internet en HTTPS grâce au SSL »](/pages/web/hosting/ssl-activate-https-website#etape-1-activer-le-certificat-ssl-sur-lhebergement).
+> Avant de suivre les étapes ci-dessous, il vous faut rediriger le protocole HTTP vers HTTPS. Pour cela, suivez les instructions de notre guide [« Passer son site internet en HTTPS grâce au SSL »](/pages/web_cloud/web_hosting/ssl-activate-https-website#etape-1-activer-le-certificat-ssl-sur-lhebergement).
 
 ### Empêcher l'affichage des répertoires et sous-répertoires
 

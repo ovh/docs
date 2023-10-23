@@ -1,7 +1,7 @@
 ---
 title: 'vRack auf Ihren Dedicated Servern konfigurieren'
 excerpt: 'Erfahren Sie hier, wie Sie ein vRack auf zwei oder mehr Servern einrichten'
-updated: 2022-05-02
+updated: 2023-09-12
 ---
 
 > [!primary]
@@ -196,6 +196,8 @@ Klicken Sie auf `Change Adapter Settings`{.action}.
 ![Change Adapter Settings](images/windows_change_adapter_settings.png){.thumbnail}
 
 Klicken Sie mit der rechten Maustaste auf das sekundäre Netzwerkinterface und klicken Sie dann auf `Properties`{.action}.
+
+In unserem Beispiel ist `Ethernet 2` das für vRack verwendete Interface. Es ist jedoch möglich, dass das vRack-Interface in Ihrer Konfiguration ein anderes ist. Das hier auszuwählende Interface verwendet nicht die Haupt-IP-Adresse des Servers oder eine selbst zugewiesene IP-Adresse.
 
 ![Windows Properties](images/windows_properties_button.png){.thumbnail}
 

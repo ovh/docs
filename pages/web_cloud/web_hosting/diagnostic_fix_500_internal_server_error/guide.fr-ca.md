@@ -23,7 +23,7 @@ Elles proviennent parfois aussi d'une mise à jour effectuée **automatiquement*
 
 - Disposer d'une [offre d'hébergement mutualisé](https://www.ovhcloud.com/fr-ca/web-hosting/)
 - Etre connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
-- Être à jour dans les [paiements](/pages/account/billing/invoice_management#pay-bills) et [renouvellements](/pages/account/billing/how_to_use_automatic_renewal#renewal-management) des services liés (nom de domaine et hébergement web)
+- Être à jour dans les [paiements](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) et [renouvellements](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) des services liés (nom de domaine et hébergement web)
 
 ## En pratique
 
@@ -43,7 +43,7 @@ Consultez tout d'abord ce [guide](/pages/web_cloud/web_hosting/logs_and_statisti
 
 ### Passer votre site en mode développement
 
-Afin de faire apparaître d'éventuelles erreurs PHP, passez ensuite votre hébergement en mode `développement` grâce à ces [indications](/pages/web/hosting/ovhconfig_modify_system_runtime#modifier-la-configuration-de-lhebergement-web-depuis-lespace-client).
+Afin de faire apparaître d'éventuelles erreurs PHP, passez ensuite votre hébergement en mode `développement` grâce à ces [indications](/pages/web_cloud/web_hosting/configure_your_web_hosting#modifier-la-configuration-de-lhebergement-web-depuis-lespace-client).
 
 ### Tester le fichier .htaccess
 
@@ -63,7 +63,7 @@ Une erreur 500 peut être liée à un niveau de droits d'accès incorrect sur ce
 
 Pour accéder à ces fichiers, connectez-vous en FTP à votre hébergement en suivant notre [documentation](/pages/web_cloud/web_hosting/ftp_connection).
 
-Le guide « [Utilisation du logiciel FileZilla avec votre hébergement](/pages/web/hosting/ftp_filezilla_user_guide#droits-des-fichiers-dossiers) » vous aidera ensuite à vérifier les éléments suivants :
+Le guide « [Utilisation du logiciel FileZilla avec votre hébergement](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide#droits-des-fichiers-dossiers) » vous aidera ensuite à vérifier les éléments suivants :
 
 - La **racine** de votre hébergement (Il s’agit du répertoire noté `/` ou `.` dans votre logiciel FTP) doit être obligatoirement en droits 705 (ce sont les permissions par défaut). Nous vous conseillons de ne pas modifier ce niveau de droits.
 - Les dossiers doivent être en droits 705.
@@ -88,9 +88,9 @@ Pour toute erreur 500 pouvant être en lien avec la base de données de votre si
 
 Pour restaurer le code source de votre site, consultez notre guide « [Restaurer l’espace de stockage de son hébergement web](/pages/web_cloud/web_hosting/ftp_save_and_backup) ».
 
-Si votre site comporte une base de données, consultez notre guide « [Restaurer une sauvegarde de votre base de données](/pages/web/hosting/sql_importing_mysql_database#restaurer-une-sauvegarde-depuis-lespace-client) » afin de la restaurer à un état antérieur.
+Si votre site comporte une base de données, consultez notre guide « [Restaurer une sauvegarde de votre base de données](/pages/web_cloud/web_hosting/sql_importing_mysql_database#restaurer-une-sauvegarde-depuis-lespace-client) » afin de la restaurer à un état antérieur.
 
-Enfin, si l'erreur 500 est apparue suite à une mise à jour de la version PHP de votre hébergement, consultez notre guide « [Configurer le PHP sur son hébergement](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014) » pour revenir à la configuration précédente.
+Enfin, si l'erreur 500 est apparue suite à une mise à jour de la version PHP de votre hébergement, consultez notre guide « [Configurer le PHP sur son hébergement](/pages/web_cloud/web_hosting/configure_your_web_hosting) » pour revenir à la configuration précédente.
 
 ## Aller plus loin <a name="gofurther"></a>
 

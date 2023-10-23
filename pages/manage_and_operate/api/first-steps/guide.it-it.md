@@ -1,7 +1,7 @@
 ---
 title: Iniziare a utilizzare le API OVHcloud
 excerpt: Come utilizzare le API OVHcloud
-updated: 2023-08-24
+updated: 2023-09-08
 ---
 
 > [!primary]
@@ -127,11 +127,6 @@ Le schede `PHP` e `Python` contengono gli elementi da aggiungere al tuo script i
 
 #### Crea le chiavi della tua applicazione
 
-> [!success]
->
-> Le API di OVHcloud sono compatibili con il protocollo Oauth2. Per maggiori informazioni consulta la guida "[Come autenticarsi sull’API OVHcloud con Oauth2 (EN)](/pages/account_and_service_management/account_information/authenticate-api-with-service-account)".
->
-
 Qualsiasi applicazione che desideri comunicare con l'API OVHcloud deve essere dichiarata in anticipo.
 
 Clicca su questo link: [https://eu.api.ovh.com/createToken/](https://eu.api.ovh.com/createToken/){.external}.
@@ -180,11 +175,11 @@ Una volta ottenute le tre chiavi (**AK**, **AS**, **CK**), puoi firmare le richi
 Per semplificare lo sviluppo delle tue applicazioni, OVHcloud mette a disposizione wrappers API in diversi linguaggi.
 Utilizzarli ti permette di non preoccuparti del calcolo della firma e di concentrarti sullo sviluppo della tua applicazione.
 
+- *Go* : <https://github.com/ovh/go-ovh>
 - *Perl* : <https://github.com/ovh/perl-ovh>
 - *Python* : <https://github.com/ovh/python-ovh>
 - *PHP* : <https://github.com/ovh/php-ovh>
 - *Node.js* : <https://github.com/ovh/node-ovh>
-- *Swift* : <https://github.com/ovh/swift-ovh>
 - *C#* : <https://github.com/ovh/csharp-ovh>
 
 Ecco un esempio di utilizzo della sezione `/me` che permette di gestire il tuo account OVHcloud:

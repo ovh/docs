@@ -1,7 +1,7 @@
 ---
 title: 'Sauvegarder une instance'
 excerpt: 'Découvrez comment sauvegarder une instance Public Cloud depuis votre espace client OVHcloud'
-updated: 2023-01-04
+updated: 2023-09-21
 ---
 
 ## Objectif
@@ -81,6 +81,9 @@ Les planifications peuvent être créées et supprimées dans la section `Workfl
 Les sauvegardes de vos instances sont gérées dans la section `Instance Backup`{.action} de votre espace client Public Cloud.
 
 ![public-cloud-instance-backup](images/createbackup10.png){.thumbnail}
+
+> [!warning]
+> **Notez que vous ne pouvez pas supprimer une sauvegarde d'instance si une instance qui a été générée à partir de cette sauvegarde est en cours d'exécution au moment de l'action de suppression.**
 
 Découvrez comment utiliser les sauvegardes pour cloner ou restaurer des instances dans [ce guide](/pages/public_cloud/compute/create_restore_a_virtual_server_with_a_backup).
 

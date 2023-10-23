@@ -75,8 +75,8 @@ Zaloguj się do serwera za pomocą wiersza poleceń lub narzędzia SSH, używaj�
 Przykład:
 
 ```bash
-ssh root@your_server_IP
-root@your_server_password:
+ssh root@vps-x11x11xyy.vps.ovh.net
+root@vps-x11x11xyy.vps.ovh.net's password:
 ```
 
 > [!warning]
@@ -86,11 +86,15 @@ root@your_server_password:
 > Aby obejść ten problem, możesz skomentować odcisk palca Twojego zwykłego systemu dodając `#` przed jego linią w pliku *known_hosts*. Pamiętaj, aby usunąć ten znak przed restartem serwera w trybie normalnym.
 >
 Większość modyfikacji wprowadzonych na Twoim serwerze przez SSH w trybie Rescue wymaga zamontowania partycji. Tryb ten posiada własny system plików tymczasowych. W związku z tym modyfikacje wprowadzane do systemu plików w trybie Rescue zostaną utracone w trakcie restartu serwera w trybie zwykłym.
+>
 
 Po zalogowaniu sprawdź dostępne dyski za pomocą polecenia:
 
 ```bash
-[RESCUE] root@vps-111111d:~ $ lsblk
+lsblk
+```
+
+```text
 NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
 sda 8:0 0 2.5G 0 disk
 └─sda1 8:1 0 2.5G 0 part /
@@ -101,7 +105,7 @@ sdb 8:16 0 80G 0 disk
 Następnie zamontuj partycję:
 
 ```bash
-[RESCUE] root@vps-111111d:~ $ mount /dev/sdb1 /mnt
+mount /dev/sdb1 /mnt
 ```
 
 Twoje dane będą teraz dostępne z katalogu `/mnt`.

@@ -1,6 +1,5 @@
 ---
 title: 'Inziare a utilizzare Web Cloud Databases'
-legacy_guide_number: 2216
 excerpt: 'Scopri come utilizzare la soluzione Web Cloud Databases'
 updated: 2023-05-31
 ---

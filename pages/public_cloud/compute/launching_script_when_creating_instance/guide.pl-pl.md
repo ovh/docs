@@ -1,7 +1,6 @@
 ---
 title: Uruchomienie skryptu podczas tworzenia instancji
 excerpt: Uruchomienie skryptu podczas tworzenia instancji
-legacy_guide_number: g1932
 updated: 2022-03-18
 ---
 

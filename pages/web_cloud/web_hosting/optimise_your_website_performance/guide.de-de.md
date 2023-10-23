@@ -4,15 +4,16 @@ excerpt: 'Erfahren Sie hier, wie Sie Latenzen auf Webseiten analysieren und verb
 updated: 2022-02-03
 ---
 
+> [!primary]
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
+>
+
 ## Ziel 
+
 Diese Anleitung richtet sich an Kunden, die die Performance ihrer Webauftritte optimieren möchten.
 Die erläuterten Stichpunkte helfen Ihnen dabei, ein grundlegendes Verständnis dafür zu erlangen, welche Kriterien die Geschwindigkeit von Webseiten beeinflussen können.
 
 **Erfahren Sie, wie Sie die Performance Ihrer Webseite verbessern können.**
-
-> [!warning]
-> In diesem Tutorial zeigen wir Ihnen (unter anderem) die Verwendung einer oder mehrerer OVHcloud Lösungen mit externen Tools. Die durchgeführten Aktionen werden in einem bestimmten Kontext beschrieben. Denken Sie daran, diese an Ihre Situation anzupassen. Bei Schwierigkeiten kontaktieren Sie bitte einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) und/oder stellen Ihre Fragen in der OVHcloud Community unter https://community.ovh.com/ (Englisch). Leider können wir Ihnen für externe Dienstleistungen keine weitergehende Unterstützung anbieten.
->
 
 ## Voraussetzungen
 
@@ -62,9 +63,9 @@ Einige Servervariablen werden über die Verwendung von PHP-FPM geändert:
 |max_input_vars|2000|16000|
 |memory_limit|128 M|512 M|
 
-Informationen zum Aktualisieren von PHP finden Sie in [dieser Anleitung](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014){.external}.
+Informationen zum Aktualisieren von PHP finden Sie in [dieser Anleitung](/pages/web_cloud/web_hosting/configure_your_web_hosting){.external}.
 
-Informationen zur Verwendung von PHP-FPM in der _stabilen_ Version oder Details zu erweiterten Optionen Ihres Webhostings finden Sie in [dieser Anleitung](/pages/web_cloud/web_hosting/ovhconfig_modify_system_runtime){.external}.
+Informationen zur Verwendung von PHP-FPM in der _stabilen_ Version oder Details zu erweiterten Optionen Ihres Webhostings finden Sie in [dieser Anleitung](/pages/web_cloud/web_hosting/configure_your_web_hosting){.external}.
 
 Die Datei _.ovhconfig_ befindet sich im Stammverzeichnis des Hosting-Pakets oder in einem Unterverzeichnis der Ebene 1 (z.B.: _/www/_), jedoch nicht in Verzeichnissen der Ebene 2 oder darunter (z.B.: _/www/test/_ , _/www/test/test2/_)
 
@@ -212,7 +213,7 @@ Wenn die Datenbank trotz aller Änderungen und Optimierungen, die Sie vorgenomme
 
 ## Weiterführende Informationen
 
-[Konfiguration Ihres Webhostings bearbeiten](/pages/web_cloud/web_hosting/ovhconfig_modify_system_runtime){.external}
+[Konfiguration Ihres Webhostings bearbeiten](/pages/web_cloud/web_hosting/configure_your_web_hosting){.external}
 
 [Verwaltung einer Datenbank in Ihrem Webhosting](/pages/web_cloud/web_hosting/sql_create_database){.external}
 

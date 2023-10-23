@@ -8,28 +8,6 @@ category_l3: Operators
 updated: 2022-04-11
 ---
 
-<style>
- pre {
-     font-size: 14px;
- }
- pre.console {
-   background-color: #300A24; 
-   color: #ccc;
-   font-family: monospace;
-   padding: 5px;
-   margin-bottom: 5px;
- }
- pre.console code {
-   border: solid 0px transparent;
-   font-family: monospace !important;
-   font-size: 0.75em;
-   color: #ccc;
- }
- .small {
-     font-size: 0.75em;
- }
-</style>
-
 ## Objective
 
 [Operators](https://kubernetes.io/docs/concepts/extend-kubernetes/operator/) are one way to extend Kubernetes to automate some actions in the cluster.
@@ -101,7 +79,8 @@ operator-sdk version
 
 Output should be like this:
 
-<pre class="console"><code>$ brew install operator-sdk
+```console
+$ brew install operator-sdk
 ...
 ==> Installing dependencies for operator-sdk: go
 ==> Installing operator-sdk dependency: go
@@ -123,7 +102,7 @@ Hide these hints with HOMEBREW_NO_ENV_HINTS (see `man brew`).
 
 $ operator-sdk version
 operator-sdk version: "v1.17.0", commit: "704b02a9ba86e85f43edb1b20457859e9eedc6e6", kubernetes version: "v1.21", go version: "go1.17.6", GOOS: "darwin", GOARCH: "arm64"
-</code></pre>
+```
 
 ### Develop an operator with Go
 
@@ -156,7 +135,8 @@ For more information about the CLI options see the [documentation](https://sdk.o
 
 Output should be like this:
 
-<pre class="console"><code>$ operator-sdk init --project-name nginx-go-operator --domain ovhcloud.com --repo github.com/ovhcloud-devrel/nginx-go-operator
+```console
+$ operator-sdk init --project-name nginx-go-operator --domain ovhcloud.com --repo github.com/ovhcloud-devrel/nginx-go-operator
 
 Writing kustomize manifests for you to edit...
 Writing scaffold for you to edit...
@@ -166,7 +146,7 @@ Update dependencies:
 $ go mod tidy
 Next: define a resource with:
 $ operator-sdk create api
-</code></pre>
+```
 
 > [!primary]
 >
@@ -236,7 +216,8 @@ operator-sdk create api --group tutorials --version v1 --kind OvhNginx --resourc
 
 Output should be like this:
 
-<pre class="console"><code>$ operator-sdk create api --group tutorials --version v1 --kind OvhNginx --resource --controller
+```console
+$ operator-sdk create api --group tutorials --version v1 --kind OvhNginx --resource --controller
 
 Writing kustomize manifests for you to edit...
 Writing scaffold for you to edit...
@@ -290,7 +271,7 @@ go get: added sigs.k8s.io/yaml v1.3.0
 /Users/sphilipp/dev/ovh/corp/tutorials-code/nginx-go-operator/bin/controller-gen object:headerFile="hack/boilerplate.go.txt" paths="./..."
 Next: implement your new API and generate the manifests (e.g. CRDs,CRs) with:
 $ make manifests
-</code></pre>
+```
 
 Next you can generate your CRD:
 
@@ -300,10 +281,11 @@ make manifests
 
 Output should be like this:
 
-<pre class="console"><code>$ make manifests
+```console
+$ make manifests
 
 /Users/sphilipp/dev/ovh/corp/tutorials-code/nginx-go-operator/bin/controller-gen rbac:roleName=manager-role crd webhook paths="./..." output:crd:artifacts:config=config/crd/bases
-</code></pre>
+```
 
 After this, new things are generated:
 ```bash
@@ -519,10 +501,11 @@ make manifests
 
 Output should be like this:
 
-<pre class="console"><code>$ make manifests
+```console
+$ make manifests
 
 /Users/sphilipp/dev/ovh/corp/tutorials-code/nginx-go-operator/bin/controller-gen rbac:roleName=manager-role crd webhook paths="./..." output:crd:artifacts:config=config/crd/bases
-</code></pre>
+```
 
 Verify that the CRD file `config/crd/bases/tutorials.ovhcloud.com_ovhnginxes.yaml` is updated with the two fields (`port` and `replicaCount`):
 ```yaml
@@ -845,7 +828,8 @@ make install run
 
 Output should be like this:
 
-<pre class="console"><code>$ make install run
+```console
+$ make install run
 /Users/sphilipp/dev/ovh/corp/tutorials-code/nginx-go-operator/bin/controller-gen rbac:roleName=manager-role crd webhook paths="./..." output:crd:artifacts:config=config/crd/bases
 go: creating new go.mod: module tmp
 Downloading sigs.k8s.io/kustomize/kustomize/v3@v3.8.7
@@ -872,7 +856,7 @@ go run ./main.go
 1.647526515027502e+09   INFO    controller.ovhnginx     Starting Controller     {"reconciler group": "tutorials.ovhcloud.com", "reconciler kind": "OvhNginx"}
 1.647526515027501e+09   INFO    Starting server {"kind": "health probe", "addr": "[::]:8081"}
 1.647526515428687e+09   INFO    controller.ovhnginx     Starting workers        {"reconciler group": "tutorials.ovhcloud.com", "reconciler kind": "OvhNginx", "worker count": 1}
-</code></pre>
+```
 
 > [!primary]
 >
@@ -900,10 +884,11 @@ kubectl create ns test-go-operator
 ```
 Output should be like this:
 
-<pre class="console"><code>$ kubectl create ns test-go-operator
+```console
+$ kubectl create ns test-go-operator
 
 namespace/test-go-operator created
-</code></pre>
+```
 
 Then apply the CR to create it in your OVHcloud Managed Kubernetes Cluster:
 ```bash 
@@ -912,10 +897,11 @@ kubectl apply -f ./config/samples/tutorials_v1_ovhnginx.yaml -n test-go-operator
 
 Output should be like this:
 
-<pre class="console"><code>$ kubectl apply -f ./config/samples/tutorials_v1_ovhnginx.yaml -n test-go-operator
+```console
+$ kubectl apply -f ./config/samples/tutorials_v1_ovhnginx.yaml -n test-go-operator
 
 ovhnginx.tutorials.ovhcloud.com/ovhnginx-sample created
-</code></pre>
+```
 
 At this time, the operator which is currently running detects the new CR and does a few things:
 ```bash
@@ -936,14 +922,15 @@ kubectl get pod,svc -n test-go-operator
 ```
 Output should be like this:
 
-<pre class="console"><code>$ kubectl get pod,svc -n test-go-operator
+```console
+$ kubectl get pod,svc -n test-go-operator
 
 NAME                                 READY   STATUS    RESTARTS   AGE
 pod/ovhnginx-sample-d6557f99-jr9sg   1/1     Running   0          14m
 
 NAME                      TYPE           CLUSTER-IP   EXTERNAL-IP      PORT(S)        AGE
 service/ovhnginx-sample   LoadBalancer   10.3.84.52   135.XXX.XXX.206   80:32549/TCP   14m
-</code></pre>
+```
 
 You can now visit the URL at the IP mentioned in the `EXTERNAL-IP` column in the previous output command: `http://135.XXX.XXX.206/`:
 
@@ -968,10 +955,11 @@ kubectl apply -f ./config/samples/tutorials_v1_ovhnginx.yaml -n test-go-operator
 
 Output should be like this:
 
-<pre class="console"><code>$ kubectl apply -f ./config/samples/tutorials_v1_ovhnginx.yaml -n test-go-operator
+```console
+$ kubectl apply -f ./config/samples/tutorials_v1_ovhnginx.yaml -n test-go-operator
 
 ovhnginx.tutorials.ovhcloud.com/ovhnginx-sample configured
-</code></pre>
+```
 
 At this time, the operator which is currently running detects the modifications of the CR:
 ```bash
@@ -997,7 +985,8 @@ kubectl get pod,svc -n test-go-operator
 
 Output should be like this:
 
-<pre class="console"><code>$ kubectl get pod,svc -n test-go-operator
+```console
+$ kubectl get pod,svc -n test-go-operator
 
 NAME                                 READY   STATUS    RESTARTS   AGE
 pod/ovhnginx-sample-d6557f99-86vl8   1/1     Running   0          3m25s
@@ -1005,7 +994,7 @@ pod/ovhnginx-sample-d6557f99-jr9sg   1/1     Running   0          37m
 
 NAME                      TYPE           CLUSTER-IP   EXTERNAL-IP      PORT(S)          AGE
 service/ovhnginx-sample   LoadBalancer   10.3.84.52   135.XXX.XXX.206   8080:32549/TCP   37m
-</code></pre>
+```
 
 Then, to test the service watching you can delete the service manually:
 
@@ -1014,10 +1003,11 @@ kubectl delete svc/ovhnginx-sample -n test-go-operator
 ```
 Output should be like this:
 
-<pre class="console"><code>$ kubectl delete svc/ovhnginx-sample -n test-go-operator
+```console
+$ kubectl delete svc/ovhnginx-sample -n test-go-operator
 
 service "ovhnginx-sample" deleted
-</code></pre>
+```
 
 Your operator detects the service deletion and re-creates it:
 
@@ -1035,10 +1025,11 @@ kubectl delete ovhnginxes.tutorials.ovhcloud.com/ovhnginx-sample -n test-go-oper
 
 Output should be like this:
 
-<pre class="console"><code>$ kubectl delete ovhnginxes.tutorials.ovhcloud.com/ovhnginx-sample -n test-go-operator
+```console
+$ kubectl delete ovhnginxes.tutorials.ovhcloud.com/ovhnginx-sample -n test-go-operator
 
 ovhnginx.tutorials.ovhcloud.com "ovhnginx-sample" deleted
-</code></pre>
+```
 
 At this time, the operator which is currently running detects the deletion of the CR:
 ```bash
@@ -1059,10 +1050,11 @@ kubectl get pod,svc -n test-go-operator
 
 Output should be like this:
 
-<pre class="console"><code>$ kubectl get pod,svc -n test-go-operator
+```console
+$ kubectl get pod,svc -n test-go-operator
 
 No resources found in test-go-operator namespace.
-</code></pre>
+```
 
 You can now stop the local execution of the operator.
 In the next chapter you will package it and you will deploy it in your OVHcloud Managed Kubernetes Cluster.
@@ -1129,7 +1121,8 @@ make docker-build
 
 Output should be like this:
 
-<pre class="console"><code>$ make docker-build
+```console
+$ make docker-build
 /Users/sphilipp/dev/ovh/corp/tutorials-code/nginx-go-operator/bin/controller-gen rbac:roleName=manager-role crd webhook paths="./..." output:crd:artifacts:config=config/crd/bases
 /Users/sphilipp/dev/ovh/corp/tutorials-code/nginx-go-operator/bin/controller-gen object:headerFile="hack/boilerplate.go.txt" paths="./..."
 go fmt ./...
@@ -1201,7 +1194,7 @@ docker build -t myregistryid.xxx1.container-registry.ovh.net/example/nginx-go-op
  => => exporting layers 0.1s
  => => writing image sha256:2793b725e9c6df8d971e7d7782dc38721e08ecc26cf080e13e6de91f22624fd2 0.0s
  => => naming to myregistryid.xxx1.container-registry.ovh.net/example/nginx-go-operator:0.0.1
-</code></pre>
+```
 
 Then, push the image to your favorite registry.
 In order to create a private registry, you can follow the [how to create an OVHcloud private registry](/pages/public_cloud/containers_orchestration/managed_private_registry/creating-a-private-registry) tutorial.
@@ -1213,7 +1206,8 @@ docker push [YOUR_PRIVATE_REGISTRY_URL]/example/nginx-go-operator:0.0.1
 
 Output should be like this:
 
-<pre class="console"><code>$ docker login https://myregistryid.xxx1.container-registry.ovh.net
+```console
+$ docker login https://myregistryid.xxx1.container-registry.ovh.net
 
 Login Succeeded
 
@@ -1228,7 +1222,7 @@ ede2e4397fdc: Pushed
 87cd41b1f9f8: Pushed 
 44f62afd0479: Pushed 
 0.0.1: digest: sha256:509549a6bac0a2e52a19b4bbac80b5411a2c0fe581c5fbd2cc6b4a456e339eb3 size: 1984
-</code></pre>
+```
 
 If you are using a private registry, as in the example, you have to create a secret.<br/>
 First, create a base 64 version of your Docker credentials:
@@ -1239,10 +1233,11 @@ base64 -i ~/.docker/config.json
 
 Output should be like this:
 
-<pre class="console"><code>$ base64 -i ~/.docker/config.json
+```console
+$ base64 -i ~/.docker/config.json
 
 Tm8gaXQncyBub3QgbXkgcGFzc3dvcmQgOik=
-</code></pre>
+```
 
 Then, create a `registry_secret.yaml` file in the directory `./config/rbac`:
 ```yaml
@@ -1304,7 +1299,8 @@ make deploy
 
 Output should be like this:
 
-<pre class="console"><code>$ make deploy
+```console
+$ make deploy
 
 /Users/sphilipp/dev/ovh/corp/tutorials-code/nginx-go-operator/bin/controller-gen rbac:roleName=manager-role crd webhook paths="./..." output:crd:artifacts:config=config/crd/bases
 cd config/manager && /Users/sphilipp/dev/ovh/corp/tutorials-code/nginx-go-operator/bin/kustomize edit set image controller=myregistryid.xxx1.container-registry.ovh.net/example/nginx-go-operator:0.0.1
@@ -1323,7 +1319,7 @@ configmap/nginx-go-operator-manager-config created
 secret/nginx-go-operator-registry-secret created
 service/nginx-go-operator-controller-manager-metrics-service created
 deployment.apps/nginx-go-operator-controller-manager created
-</code></pre>
+```
 
 You can, again, test the operator.<br/>
 If needed, recreate the namespace `test-go-operator`. <br/>
@@ -1335,10 +1331,11 @@ kubectl apply -f ./config/samples/tutorials_v1_ovhnginx.yaml -n test-go-operator
 
 Output should be like this:
 
-<pre class="console"><code>$ kubectl apply -f ./config/samples/tutorials_v1_ovhnginx.yaml -n test-go-operator
+```console
+$ kubectl apply -f ./config/samples/tutorials_v1_ovhnginx.yaml -n test-go-operator
 
 ovhnginx.tutorials.ovhcloud.com/ovhnginx-sample created
-</code></pre>
+```
 
 The operator should have created the Nginx pod and its service:
 
@@ -1348,7 +1345,8 @@ kubectl get pod,svc -n test-go-operator
 
 Output should be like this:
 
-<pre class="console"><code>$ kubectl get pod,svc -n test-go-operator
+```console
+$ kubectl get pod,svc -n test-go-operator
 
 NAME                                 READY   STATUS    RESTARTS   AGE
 pod/ovhnginx-sample-d6557f99-bhlnl   1/1     Running   0          3m13s
@@ -1356,7 +1354,7 @@ pod/ovhnginx-sample-d6557f99-hwjfb   1/1     Running   0          3m13s
 
 NAME                      TYPE           CLUSTER-IP    EXTERNAL-IP       PORT(S)          AGE
 service/ovhnginx-sample   LoadBalancer   10.3.142.85   152.XXX.XXX.209   8080:30946/TCP   3m13s
-</code></pre>
+```
 
 ## Cleanup
 
@@ -1381,7 +1379,8 @@ make undeploy
 
 Output should be like this:
 
-<pre class="console"><code>$ kubectl delete ovhnginxes.tutorials.ovhcloud.com/ovhnginx-sample -n test-go-operator
+```console
+$ kubectl delete ovhnginxes.tutorials.ovhcloud.com/ovhnginx-sample -n test-go-operator
 
 ovhnginx.tutorials.ovhcloud.com "ovhnginx-sample" deleted
 
@@ -1406,7 +1405,7 @@ configmap "nginx-go-operator-manager-config" deleted
 secret "nginx-go-operator-registry-secret" deleted
 service "nginx-go-operator-controller-manager-metrics-service" deleted
 deployment.apps "nginx-go-operator-controller-manager" deleted
-</code></pre>
+```
 
 ## What’s next
 

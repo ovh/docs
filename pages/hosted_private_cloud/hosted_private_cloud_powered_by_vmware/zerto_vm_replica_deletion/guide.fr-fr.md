@@ -1,6 +1,6 @@
 ---
 title: "Supprimer la copie d'une VM du site de récupération Zerto"
-excerpt: Découvez comment supprimer une VM du site de récupération quand elle est effacée du site source
+excerpt: Découvrez comment supprimer une VM du site de récupération quand elle est effacée du site source
 updated: 2021-12-09
 ---
 

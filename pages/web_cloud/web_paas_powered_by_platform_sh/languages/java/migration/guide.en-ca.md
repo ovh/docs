@@ -11,8 +11,8 @@ It is common to have a Java application that you want to migrate to Web PaaS.  W
 
 To run a Java application at Web PaaS you will need:
 
-* [A supported Java version](/pages/web/web-paas/languages-java#supported-versions)
-* [A build management tool](/pages/web/web-paas/languages-java#support-build-automation)
+* [A supported Java version](/pages/web_cloud/web_paas_powered_by_platform_sh/languages/java/languages-java#supported-versions)
+* [A build management tool](/pages/web_cloud/web_paas_powered_by_platform_sh/languages/java/languages-java#support-build-automation)
   * [Gradle](https://docs.gradle.org/current/userguide/gradle_wrapper.html)
   * [Maven](https://maven.apache.org/)
   * [Maven Wrapper](https://www.baeldung.com/maven-wrapper)
@@ -52,17 +52,17 @@ web:
         start: [3]
 ```
 
-1\. [A Java version](/pages/web/web-paas/languages-java#supported-versions), e,g.: `java:11`
+1\. [A Java version](/pages/web_cloud/web_paas_powered_by_platform_sh/languages/java/languages-java#supported-versions), e,g.: `java:11`
 
-2\. [Hooks define what happens when building the application](/pages/web/web-paas/configuration-app/build#build). This build process typically generates an executable file such as a uber-jar e.g.: `mvn clean package`
+2\. [Hooks define what happens when building the application](/pages/web_cloud/web_paas_powered_by_platform_sh/configuration/build#build). This build process typically generates an executable file such as a uber-jar e.g.: `mvn clean package`
 
-3\. [The commands key defines the command to launch the application](/pages/web/web-paas/configuration-app/web#commands). E.g.:  `java -jar file.jar`
+3\. [The commands key defines the command to launch the application](/pages/web_cloud/web_paas_powered_by_platform_sh/configuration/web#commands). E.g.:  `java -jar file.jar`
 
 4\. In the start's command needs to receive the port where the application will execute thought the `PORT` environment. That's best when your app follows the port bind principle. E.g.: `java -jar jar --port=$PORT`
 
 > [!primary]  
 > 
-> Be aware that after the build, it creates a read-only system. You have the [mount option to create a writable folder](/pages/web/web-paas/configuration-app/storage#mounts).
+> Be aware that after the build, it creates a read-only system. You have the [mount option to create a writable folder](/pages/web_cloud/web_paas_powered_by_platform_sh/configuration/storage#mounts).
 > 
 > 
 
@@ -140,7 +140,7 @@ export DB_HOST=`echo $PLATFORM_RELATIONSHIPS | base64 --decode | jq -r ".databas
 | [Payara JPA](https://community.platform.sh/t/how-to-overwrite-variables-to-payara-jpa-access-platform-sh-sql-services/519) | [Source](https://github.com/platformsh-examples/java-overwrite-configuration/blob/master/payara/README.md) |
 
 To reduce the number of lines in the application file and to make it cleaner,
-you have the option to move the variable environment to another file: a [`.environment` file](/pages/web/web-paas/development-variables#shell-variables).
+you have the option to move the variable environment to another file: a [`.environment` file](/pages/web_cloud/web_paas_powered_by_platform_sh/development/development-variables#shell-variables).
 
 E.g.:
 

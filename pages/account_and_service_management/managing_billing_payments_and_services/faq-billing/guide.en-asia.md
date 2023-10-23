@@ -1,7 +1,7 @@
 ---
 title: Billing and payment FAQ
 excerpt: Find the most frequently asked questions about billing and payment
-updated: 2023-06-05
+updated: 2023-09-28
 ---
 
 ## Objective
@@ -32,7 +32,8 @@ If you do not renew your service before this date, it will simply be suspended, 
 #### Tips and tricks
 
 Check the status of your services, and manage their renewal in the `My services`{.action} section of the OVHcloud Control Panel.
-Log in and manually renew your services on the page < https://www.ovh.co.uk/cgi-bin/order/renew.cgi>
+Log in and manually renew your services on the page <https://www.ovh.co.uk/cgi-bin/order/renew.cgi>.
+
 For further information, please read this detailed guide: [Managing renewal for your services](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal).
 
 ### How do I enable automatic renewal?
@@ -46,7 +47,7 @@ For further information, please read this detailed guide: [Managing renewal for 
 
 ### How do I disable automatic renewal?
 
-Log in to the OVHcloud Control Panel, and click on the `Products and services`{.action} shortcut in the dashboard. Click on the three dots next to the service concerned, then select `Configure renewal`{.action}. You can then choose manual mode. This mode is not available for certain services — e.g. domain names, web hosting plans, VPS, and dedicated servers.
+Log in to the OVHcloud Control Panel, and click on the `Products and services`{.action} shortcut in the dashboard. Click on the three dots next to the service concerned, then select `Configure renewal`{.action}. You can then choose manual mode. This mode is only available for certain services — e.g. domain names, web hosting plans, VPS, and dedicated servers.
 
 To cancel a service, go to [How do I cancel a service?](#cancelservice)
 
@@ -89,7 +90,7 @@ To change your default payment method, see our [payment methods management guide
 
 #### Tips and tricks
 
-If your pre-paid OVHcloud account contains credit, it will always be used by default for renewals. If if you have less credit than your bill total, the remaining amount will be charged to your registered payment method. Finally, if you do not register any payment methods, you will be sent an invoice via email to settle the outstanding amount.
+If your pre-paid OVHcloud account contains credit, it will always be used by default for renewals. If you have less credit than your bill total, the remaining amount will be charged to your registered payment method. Finally, if you do not register any payment methods, you will be sent an invoice via email to settle the outstanding amount.
 
 ### When is my next payment due date?
 
@@ -170,10 +171,15 @@ For further information, please read this detailed guide: [Information regarding
 ### How do I see the accounts ledger?
 
 The accounts ledger is only issued by the requesting party’s accounts department.
-
+s
 However, OVHcloud offers you access to all of your invoices in an Excel file (.csv).
 
 To download the file, go to the `Invoices`{.action} section, accessible via the dashboard in the OVHcloud Control Panel. Click on the `Actions`{.action} button, then select `Export as CSV`{.action}.
+
+### For customers in India only : what part of my invoice should I pay directly to OVHcloud?
+
+- If you are a B2B company, you receive a bill reduced by 10% and you will have to pay TDS by yourself (if you have validated the GST certificate during the KYC).
+- If you are a B2C company, you pay the full billing amount including TDS.
 
 ## Go further
   

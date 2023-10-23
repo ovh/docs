@@ -52,7 +52,7 @@ Z karty przeglądarki, która wyświetla okno statystyk, pobierz link, który b�
 
 > [!warning] 
 >
-> Jeśli włączyłeś oddzielne logi w [pozycji MultiSite](/pages/web/hosting/multisites_configure_multisite#etap-2-dodanie-domeny-lub-subdomeny), użytkownicy utworzeni tutaj nie mogą uzyskać dostępu do statystyk dla tego wpisu MultiSite.
+> Jeśli włączyłeś oddzielne logi w [pozycji MultiSite](/pages/web_cloud/web_hosting/multisites_configure_multisite#etap-2-dodanie-domeny-lub-subdomeny), użytkownicy utworzeni tutaj nie mogą uzyskać dostępu do statystyk dla tego wpisu MultiSite.
 >
 
 ### Statystyki odwiedzin

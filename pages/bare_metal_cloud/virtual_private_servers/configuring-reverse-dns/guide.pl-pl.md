@@ -24,7 +24,7 @@ Konfiguracja **rewersu DNS** VPS jest szczególnie przydatna przy wysyłaniu e-m
 
 ## W praktyce
 
-Zaloguj się do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przejdź do sekcji `Bare Metal Cloud`{.action} i kliknij w menu po lewej stronie `IP`{.action}.
+Zaloguj się do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przejdź do sekcji `Bare Metal Cloud`{.action} i otwórz `Network`{.action}. Następnie kliknij przycisk `IP`{.action}.
 
 Tabela na tej stronie zawiera listę usług, które możesz spełnić. Nazwa VPS można filtrować z rozwijanego menu **Service**.
 

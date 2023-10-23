@@ -34,7 +34,7 @@ Per impedire trasferimenti di domini non autorizzati, i domini sono generalmente
 
 > [!primary]
 >
-> Se sei il **proprietario** del dominio ma la sua gestione nello Spazio Cliente OVHcloud non è disponibile, tramite il tuo accesso o tramite il contatto amministrativo del dominio, consulta [questa guida](/pages/account/customer/managing_contacts#caso-specifico-di-un-proprietario-di-dominio) prima di continuare.
+> Se sei il **proprietario** del dominio ma la sua gestione nello Spazio Cliente OVHcloud non è disponibile, tramite il tuo accesso o tramite il contatto amministrativo del dominio, consulta [questa guida](/pages/account_and_service_management/account_information/managing_contacts#caso-specifico-di-un-proprietario-di-dominio) prima di continuare.
 >
 
 ## Procedura

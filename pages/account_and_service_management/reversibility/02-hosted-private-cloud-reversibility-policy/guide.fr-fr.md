@@ -5,7 +5,7 @@ updated: 2021-05-05
 
 ## Objectif
 
-Ce document est la politique de réversibilité du produit [Hosted Private Cloud Powered by VMware](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/).
+Ce document est la politique de réversibilité du produit [VMware on OVHcloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/).
 
 Cette politique vise à mettre en oeuvre les principes généraux de réversibilité et notre conformité au [code de conduite IaaS SWIPO pour les fournisseurs Cloud](https://swipo.eu/download-section/copyrighted-downloads/){.external}.
 
@@ -29,7 +29,7 @@ The following migration models and available documentation apply to all the feat
 
 |Modèle de migration|Documentation disponible|
 |---|---|
-|**Migration entrante**:<br>- Souscrivez un projet Hosted Private Cloud<br>-Commandez le nombre approprié d'hôtes et de datastores sur le projet pour obtenir une capacité comparable à celle de l'infrastructure d'origine.<br>-Migrez à l'aide d'un outil spécialisé (Veeam, Zerto, HCX...)<br><br>**Migration sortante**: <br> -Configurez un hyperviseur vSphere dans l'environnement cible<br>- Planifiez les capacités de l'environnement cible comparativement à l'environnement d'origine<br>- Migrez via un outil spécialisé (par exemple Veeam, Zerto, HCX ...)|La [Documentation vSphere standard](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.vm_admin.doc/GUID-CEFF6D89-8C19-4143-8C26-4B6D6734D2CB.html) s'applique.<br><br>[Déployer un template OVF Linux, Windows Server et Windows SQL Server](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/ovf_template)<br><br>[Déploiement d'une machine virtuelle avec vSphere](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/deploiement_d_une_machine_virtuelle)<br><br>[Création de cluster et activation EVC](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/create_cluster_enable_evc)|
+|**Migration entrante**:<br>- Souscrivez un projet Hosted Private Cloud<br>-Commandez le nombre approprié d'hôtes et de datastores sur le projet pour obtenir une capacité comparable à celle de l'infrastructure d'origine.<br>-Migrez à l'aide d'un outil spécialisé (Veeam, Zerto...)<br><br>**Migration sortante**: <br> -Configurez un hyperviseur vSphere dans l'environnement cible<br>- Planifiez les capacités de l'environnement cible comparativement à l'environnement d'origine<br>- Migrez via un outil spécialisé (par exemple Veeam, Zerto...)|La [Documentation vSphere standard](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.vm_admin.doc/GUID-CEFF6D89-8C19-4143-8C26-4B6D6734D2CB.html) s'applique.<br><br>[Déployer un template OVF Linux, Windows Server et Windows SQL Server](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/ovf_template)<br><br>[Déploiement d'une machine virtuelle avec vSphere](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/deploiement_d_une_machine_virtuelle)<br><br>[Création de cluster et activation EVC](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/create_cluster_enable_evc)|
 
 ### Implémentation OVHcloud <a name="ovhcloud-implementation"></a>
 

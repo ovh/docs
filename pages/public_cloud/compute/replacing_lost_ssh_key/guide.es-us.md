@@ -1,7 +1,6 @@
 ---
 title: Modificar su llave SSH en caso de pérdida
 excerpt: Modificar su llave SSH en caso de pérdida
-legacy_guide_number: g2069
 updated: 2022-02-10
 ---
 
@@ -30,7 +29,7 @@ Para recuperar el acceso, hemos puesto a su disposición un [modo de rescate](/p
 Si quiere registrar una llave SSH en el área de cliente de OVHcloud, le recomendamos que utilice el cifrado RSA o ECDSA. ED25519 no está soportado actualmente.
 >
 
-Una vez que haya montado el disco de su instancia en [modo de rescate](/pages/platform/public-cloud/put_an_instance_in_rescue_mode#acceso-a-sus-datos), podrá acceder a todos sus archivos.
+Una vez que haya montado el disco de su instancia en [modo de rescate](/pages/public_cloud/compute/put_an_instance_in_rescue_mode#acceso-a-sus-datos), podrá acceder a todos sus archivos.
 
 El archivo que contiene las llaves SSH es el siguiente:
 

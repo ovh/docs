@@ -8,28 +8,6 @@ category_l3: Tutorials
 updated: 2022-04-14
 ---
 
-<style>
- pre {
-     font-size: 14px;
- }
- pre.console {
-   background-color: #300A24; 
-   color: #ccc;
-   font-family: monospace;
-   padding: 5px;
-   margin-bottom: 5px;
- }
- pre.console code {
-   border: solid 0px transparent;
-   color: #ccc;
-   font-family: monospace !important;
-   font-size: 0.75em;
- }
- .small {
-     font-size: 0.75em;
- }
-</style>
-
 OVHcloud Managed Private Registry service is a composite cloud-native registry which supports both container image management and [Helm](https://helm.sh/){.external} [chart](https://helm.sh/docs/topics/charts/){.external} management. 
 
 This guide will explain how to deploy a Helm chart from your OVHcloud Managed Private Registry in a Kubernetes cluster.
@@ -56,9 +34,10 @@ kubectl delete storageclasses.storage.k8s.io csi-cinder-high-speed
 
 It will delete the existing `StorageClass`:
 
-<pre class="console"><code>$ kubectl delete storageclasses.storage.k8s.io csi-cinder-high-speed
+```console
+$ kubectl delete storageclasses.storage.k8s.io csi-cinder-high-speed
 storageclass.storage.k8s.io "csi-cinder-high-speed" deleted
-</code></pre>
+```
 
 - Create a new `StorageClass` with the required fix
 
@@ -68,9 +47,10 @@ kubectl apply -f https://raw.githubusercontent.com/ovh/docs/develop/pages/public
 
 It will apply the correct `StorageClass` YAML manifest:
 
-<pre class="console"><code>$ kubectl apply -f https://raw.githubusercontent.com/ovh/docs/develop/pages/public_cloud/containers_orchestration/managed_kubernetes/fix-persistent-volumes-permissions/files/fixed-cinder-high-speed-storage-class.yaml
+```console
+$ kubectl apply -f https://raw.githubusercontent.com/ovh/docs/develop/pages/public_cloud/containers_orchestration/managed_kubernetes/fix-persistent-volumes-permissions/files/fixed-cinder-high-speed-storage-class.yaml
 storageclass.storage.k8s.io/csi-cinder-high-speed created
-</code></pre>
+```
 
 If you have already installed a previous version of Bitnami's WordPress Helm chart, please follow the following step by step guide.
 
@@ -97,9 +77,10 @@ kubectl delete pvc data-my-first-k8s-wordpress-mariadb-0
 
 The command will delete the remaining `PersistentVolumeClaim`:
 
-<pre class="console"><code>$ kubectl delete pvc data-my-first-k8s-wordpress-mariadb-0
+```console
+$ kubectl delete pvc data-my-first-k8s-wordpress-mariadb-0
 persistentvolumeclaim "data-my-first-k8s-wordpress-mariadb-0" deleted
-</code></pre>
+```
 
 ## Instructions
 
@@ -111,9 +92,10 @@ As indicated in the *Before you begin* section, you need to have `helm` installe
 
 Run the command `helm version` to make sure the `helm` CLI is correctly installed locally.
 
-<pre class="console"><code>$ helm version
+```console
+$ helm version
 version.BuildInfo{Version:"v3.7.0", GitCommit:"eeac83883cb4014fe60267ec6373570374ce770b", GitTreeState:"clean", GoVersion:"go1.17"}
-</code></pre>
+```
 
 #### Add your OVHcloud Managed Private Registry to the repository list
 
@@ -140,9 +122,10 @@ helm repo add --username <username> --password <password> <repo name> https://<r
 
 In my example, I added the project in the private registry as a separate index entry point:
 
-<pre class="console"><code>$ helm repo add --username private-user --password xxxxxx privreg https://ab1cd23e.gra7.container-registry.ovh.net/chartrepo/private
+```console
+$ helm repo add --username private-user --password xxxxxx privreg https://ab1cd23e.gra7.container-registry.ovh.net/chartrepo/private
 "privreg" has been added to your repositories
-</code></pre>
+```
 
 #### Install charts
 
@@ -150,14 +133,15 @@ Before installing, make sure your the chart index is synchronized with the `helm
 
 In my case:
 
-<pre class="console"><code>$ helm repo update
+```console
+$ helm repo update
 Hang tight while we grab the latest from your chart repositories...
 ...Successfully got an update from the "gpu-helm-charts" chart repository
 ...
 ...Successfully got an update from the "privreg" chart repository
 ...
 Update Complete. ⎈Happy Helming!⎈
-</code></pre>
+```
 
 Look for your chart:
 
@@ -167,12 +151,13 @@ helm search repo wordpress
 
 In my case, it finds several versions of WordPress chart, the official ones in the `bitnami` Helm repository, and the one in my `privreg` private registry project:
 
-<pre class="console"><code>$ helm search repo wordpress
+```console
+$ helm search repo wordpress
 NAME                   	CHART VERSION	APP VERSION	DESCRIPTION
 bitnami/wordpress      	13.2.1       	5.9.3      	WordPress is the world's most popular blogging ...
 bitnami/wordpress-intel	0.2.0        	5.9.3      	WordPress for Intel is the most popular bloggin...
 privreg/wordpress      	13.1.4       	5.9.2      	WordPress is the world's most popular blogging ...
-</code></pre>
+```
 
 Everything is ready, so now you can install the chart into your Kubernetes:
 
@@ -182,7 +167,8 @@ helm install wordpress --username <username> --password <password> privreg/wordp
 
 In my case:
 
-<pre class="console"><code>$ helm install wordpress --username private-user --password xxxxxx privreg/wordpress
+```console
+$ helm install wordpress --username private-user --password xxxxxx privreg/wordpress
 NAME: wordpress
 LAST DEPLOYED: Thu Apr 14 09:33:33 2022
 NAMESPACE: default
@@ -217,15 +203,16 @@ To access your WordPress site from outside the cluster follow the steps below:
 
   echo Username: user
   echo Password: $(kubectl get secret --namespace default wordpress -o jsonpath="{.data.wordpress-password}" | base64 --decode)
-</code></pre>
+```
 
 Check your WordPress is running correctly:
 
-<pre class="console"><code>$ kubectl get pod -l app.kubernetes.io/instance=wordpress
+```console
+$ kubectl get pod -l app.kubernetes.io/instance=wordpress
 NAME                         READY   STATUS    RESTARTS   AGE
 wordpress-8586785c5d-cttz4   1/1     Running   0          85s
 wordpress-mariadb-0          1/1     Running   0          85s
-</code></pre>
+```
 
 ## Go further
 

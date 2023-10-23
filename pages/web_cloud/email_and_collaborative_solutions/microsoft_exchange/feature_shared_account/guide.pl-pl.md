@@ -1,7 +1,7 @@
 ---
 title: Tworzenie i korzystanie z konta współdzielonego
 excerpt: Dodaj i użyj konta współdzielonego w Twojej usłudze E-mail Exchange
-updated: 2021-06-15
+updated: 2023-09-15
 ---
 
 > [!primary]
@@ -35,9 +35,19 @@ Wpisz wymagane pola:
 |Stanowisko|Opis|
 |---|---|
 |Konto e-mail|Wybierz nazwę konta współdzielonego. **Nie może to być istniejący adres e-mail.**|
-|Limit|Wskaż rozmiar przestrzeni dyskowej dla Twojego konta współdzielonego. **Maksymalny rozmiar konta współdzielonego to 10 GB**.|
+|Quota|Podaj wymagany rozmiar przestrzeni dyskowej dla konta współdzielonego, [w zależności od dostępnej przestrzeni](#size).|
 |Nazwa, która będzie się wyświetlać.|Nazwa wyświetlacza, którą chcesz wyświetlić podczas wysyłki z konta współdzielonego.|
 |Ukryj adres w książce adresowej|Dzięki ukryciu adresu w książce adresowej adres konta współdzielonego nie jest widoczny na liście adresów Twojej platformy Exchange.|
+
+<a name="size"></a>
+
+> [!primary]
+>
+> Dostępna przestrzeń do utworzenia konta współdzielonego zależy od liczby kont zamówionych na platformie. Każde konto Exchange wykupione na platformie odblokowuje 5 GB dla kont współdzielonych.
+>
+> **Przykład:**
+>
+> Na platformie zamówiłeś 4 konta Exchange. W związku z tym masz **4 x 5GB*, czyli **20 GB** przyznanej przestrzeni dla kont współdzielonych.
 
 Kliknij Dalej, aby `uzyskać dostęp`{.action} do podsumowania. Zakończ operację, klikając `Zatwierdź`{.action}.
 

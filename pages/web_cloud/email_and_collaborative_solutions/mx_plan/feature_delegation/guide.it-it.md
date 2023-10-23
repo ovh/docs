@@ -1,6 +1,5 @@
 ---
 title: delegare la gestione dei tuoi account email a un'altra persona
-legacy_guide_number: 1933
 excerpt: Come delegare la gestione degli account email della tua soluzione MX Plan
 updated: 2021-10-08
 ---
@@ -32,7 +31,7 @@ La delega offre all'utente di un account email la possibilità di gestire autono
 |Vecchia versione della soluzione MX Plan|Nuova versione della soluzione MX Plan|
 |---|---|
 |![email](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> Il servizio è indicato nel riquadro “Abbonamento”|![email](images/mxplan-starter-new-step1.png){.thumbnail}<br>Nel riquadro "Riepilogo", individua il "Referenza server"|
-|Prosegui nella lettura di questa guida nella sezione "[Procedura](#oldmxplan)"|Consulta la nostra guida "[Consulta il tuo account Exchange dall'interfaccia OWA](/pages/web/emails/email_owa#modificare-la-password)"|
+|Prosegui nella lettura di questa guida nella sezione "[Procedura](#oldmxplan)"|Consulta la nostra guida "[Consulta il tuo account Exchange dall'interfaccia OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa#modificare-la-password)"|
 
 ## Procedura <a name="oldmxplan"></a>
 

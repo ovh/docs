@@ -1,7 +1,7 @@
 ---
 title: 'Przewodnik dotyczący usługi CDN na hostingu www'
 excerpt: 'Zoptymalizuj Twoją witrynę internetową, przyspieszając jej ładowanie w hostingu WWW dzięki usłudze CDN'
-updated: 2021-12-23
+updated: 2023-09-22
 ---
 
 > [!primary]
@@ -303,6 +303,19 @@ Jeśli nie korzystasz z CMS-a, również możesz korzystać z usługi GeoCache. 
 ### Wyłącz opcję CDN dla strony www
 
 Operacja ta pozwala wyłączyć CDN dla jednej lub kilku pozycji podpiętych w opcji MultiSite, bez usuwania opcji GeoCache z Twojego hostingu WWW.
+
+> [!warning]
+>
+> Wyłączenie opcji GeoCache dla strony www wymaga zmiany adresu IP, którego będziesz używał do przekierowania domeny na hosting.
+> Zmiana ta jest wykonywana automatycznie, jeśli aktywna strefa DNS Twojej domeny jest zarządzana również z poziomu [konto OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) zawierającego Twój hosting.
+>
+> W przeciwnym razie należy wykonać następujące dwa działania:
+>
+> - uzyskaj domyślny adres IP **klastra**, w którym znajduje się Twój hosting, korzystając z naszego przewodnika "[Hosting WWW: adresy IP klastrów OVHcloud](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)";
+> - ręcznie zmień adres IP w aktywnej strefie DNS Twojej domeny lub skontaktuj się z dostawcą strefy DNS, aby zaktualizował się za Ciebie.
+>
+> Modyfikacja wpisu w aktywnej strefie DNS domeny wiąże się z opóźnieniem propagacji wynoszącym **4** do **24** godzin, zanim wejdzie on w życie. W tym czasie może pojawić się losowo strona z kodem **520**. Zjawisko to jest związane z faktem, że niektóre części sieci DNS nadal przekierowują zapytania na adres IP usługi CDN powiązanej z Twoim hostingiem.
+>
 
 Przejdź do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i wybierz `Web Cloud`{.action}. Kliknij przycisk `Hostingi`{.action} i wybierz odpowiednie rozwiązanie. W zakładce `MultiSite`{.action} kliknij `...`{.action} po prawej stronie pozycji MultiSite, a następnie `Zmień`{.action}.
 

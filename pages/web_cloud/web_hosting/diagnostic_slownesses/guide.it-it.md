@@ -199,11 +199,11 @@ Di seguito trovi le azioni da effettuare per identificare la fonte o le fonti de
 
 #### 2.1 - Verifica la configurazione del tuo hosting Web
 
-Per verificare il motore PHP, la versione PHP e l'ambiente di esecuzione utilizzati sull'hosting Web, consulta la guida sulla [configurazione del tuo hosting Web](/pages/web_cloud/web_hosting/ovhconfig_modify_system_runtime).
+Per verificare il motore PHP, la versione PHP e l'ambiente di esecuzione utilizzati sull'hosting Web, consulta la guida sulla [configurazione del tuo hosting Web](/pages/web_cloud/web_hosting/configure_your_web_hosting).
 
 Se utilizzi sul tuo hosting Web una versione di PHP obsoleta, il motore "**PHP CGI**" e/o l'ambiente "**legacy**" e **se il tuo sito Web è compatibile**, preferisci l'utilizzo del motore "**PHP**" (PHP FPM), l'ambiente "**stable**" o "**stable64**" versione di PHP più recente possibile.
 
-Per confrontare le versioni di PHP disponibili in base all'ambiente di esecuzione utilizzato, consulta **lo Step 2** della guida sulla [configurazione della versione PHP sul tuo hosting](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014).
+Per confrontare le versioni di PHP disponibili in base all'ambiente di esecuzione utilizzato, consulta **lo Step 2** della guida sulla [configurazione della versione PHP sul tuo hosting](/pages/web_cloud/web_hosting/configure_your_web_hosting).
 
 Utilizzare una versione di PHP recente, l'ambiente di esecuzione "**stable**" o "**stable64**" con il motore "**PHP**" (PHP FPM) rende il tuo sito molto più fluido e veloce. A titolo indicativo, il motore "**PHP**" (PHP FPM) può essere fino a 50 volte più performante del motore "**PHP CGI**" per eseguire i suoi compiti.
 

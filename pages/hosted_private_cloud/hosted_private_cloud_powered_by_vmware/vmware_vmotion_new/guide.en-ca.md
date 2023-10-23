@@ -1,7 +1,6 @@
 ---
 title: VMware vMotion
 excerpt: Find out how to move your virtual machine to a different host (hot migration)
-legacy_guide_number: '7767025'
 updated: 2020-07-10
 ---
 

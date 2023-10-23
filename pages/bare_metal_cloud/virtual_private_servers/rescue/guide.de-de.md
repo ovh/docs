@@ -77,8 +77,8 @@ Sie müssen dann über die Befehlszeile oder über ein SSH-Tool auf Ihren Server
 Beispiel:
 
 ```sh
-ssh root@your_server_IP
-root@your_server_password:
+ssh root@vps-x11x11xyy.vps.ovh.net
+root@vps-x11x11xyy.vps.ovh.net's password:
 ```
 
 > [!warning]
@@ -88,11 +88,15 @@ root@your_server_password:
 > Um dieses Problem zu umgehen, können Sie den regulären Fingerprint des Systems auskommentieren, indem Sie in der Datei *known_hosts* ein `#` in der entsprechenden Zeile hinzufügen. Achten Sie darauf, dieses Zeichen zu entfernen, bevor Sie den Server im normalen Modus neu starten.
 >
 Für die meisten Änderungen Ihres Servers via SSH im Rescue-Modus muss eine Partition gemountet werden. Dieser Modus verfügt über ein eigenes temporäres Dateisystem. Folglich gehen alle im Rescue-Modus vorgenommenen Änderungen am Dateisystem beim Neustart des Servers im normalen Modus verloren.
+>
 
 Wenn Sie verbunden sind, überprüfen Sie die verfügbaren Disks mit diesem Befehl:
 
 ```bash
-[RESCUE] root@vps-111111d:~ $ lsblk
+lsblk
+```
+
+```text
 NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
 sda 8:0 0 2.5G 0 disk
 └─sda1 8:1 0 2.5G 0 part /
@@ -103,7 +107,7 @@ sdb 8:16 0 80G 0 disk
 Als Nächstes mounten Sie die Partition:
 
 ```bash
-[RESCUE] root@vps-111111d:~ $ mount /dev/sdb1 /mnt
+mount /dev/sdb1 /mnt
 ```
 
 Ihre Daten sind jetzt über den Ordner `/mnt` abrufbar.

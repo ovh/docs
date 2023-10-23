@@ -176,8 +176,8 @@ During the lifetime of an Apache Spark notebook it will transition between the f
 
 To go further and use the Apache Spark notebook, you can follow our tutorials:
 
-- [wordcount-spark](/pages/platform/data-processing/41_TUTORIAL_wordcount#objective)
-- [Calculating π number with Apache Spark](/pages/platform/data-processing/40_TUTORIAL_calculate_pi#objective)
+- [wordcount-spark](/pages/public_cloud/data_analytics/data_processing/41_TUTORIAL_wordcount#objective)
+- [Calculating π number with Apache Spark](/pages/public_cloud/data_analytics/data_processing/40_TUTORIAL_calculate_pi#objective)
 
 Join our community of users on <https://community.ovh.com/en/>.
 

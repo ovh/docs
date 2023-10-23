@@ -91,7 +91,7 @@ The terms and conditions for the right of withdrawal can be found in the remaind
 > The right of withdrawal applies only to individuals and applies only to new orders. You cannot therefore argue:
 >
 > - for renewals;
-> - if your OVHcloud customer account is [different from Private](/pages/account/customer/all_about_username#changing-the-account-type).
+> - if your OVHcloud customer account is [different from Private](/pages/account_and_service_management/account_information/all_about_username#changing-the-account-type).
 >
 > In addition, the right of withdrawal does not apply to unpaid orders, as they are automatically cancelled when the purchase order expires.
 >

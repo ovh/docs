@@ -73,7 +73,7 @@ Here is a breakdown of the information included in the log:
 |  tag |  the tag attributed either manually via the APIs (to one or more SMS messages) or automatically by our servers to each sent SMS (or each SMS campaign) |
 |  message |  the content of the SMS |
 
-Further information about the ptt codes and various DLR IDs can be found in the final section of the guide [Everything you need to know about SMS users](/pages/telecom/sms/tout_savoir_sur_les_utilisateurs_sms#step-5-specify-a-callback-url).
+Further information about the ptt codes and various DLR IDs can be found in the final section of the guide [Everything you need to know about SMS users](/pages/web_cloud/messaging/sms/tout_savoir_sur_les_utilisateurs_sms#step-5-specify-a-callback-url).
  
 ## Go further
 

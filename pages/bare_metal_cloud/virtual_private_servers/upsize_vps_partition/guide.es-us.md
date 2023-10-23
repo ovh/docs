@@ -1,69 +1,91 @@
 ---
-title: 'Reparticionar un VPS tras un upgrade'
-updated: 2021-05-18
+title: Reparticionar un VPS tras un upgrade de almacenamiento
+excerpt: "Cómo aumentar el espacio en disco útil después de una actualización"
+updated: 2023-09-05
 ---
-
-> [!primary]
-> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
->
 
 ## Objetivo
 
-Al realizar el upgrade de un VPS, es posible que tenga que reparticionar su espacio de almacenamiento.
+Una vez que haya aumentado la capacidad de almacenamiento de su VPS, deberá reparticionar el espacio en disco para disfrutar del tamaño real. En los siguientes pasos se describe cómo hacerlo.
 
 > [!warning]
 >
-> El reparticionamiento de un VPS puede dañar los datos que contiene de forma definitiva. OVHcloud no podrá ser considerado responsable de su deterioro o pérdida. Antes de realizar cualquier acción, le recomendamos que haga una copia de seguridad de sus datos.
+> El reparticionamiento de un VPS puede dañar los datos que contiene de forma definitiva. OVHcloud no podrá ser considerado responsable de su deterioro o pérdida. Por lo tanto, antes de hacer cualquier cosa, no olvide realizar una copia de seguridad de sus datos. 
 >
 
-**Esta guía explica los pasos necesarios para aumentar el espacio de almacenamiento de su VPS**.
+**Esta guía explica cómo aumentar el espacio de almacenamiento tras un upgrade de disco.**
 
 ## Requisitos
 
-- Tener acceso de administrador al VPS (Windows).
-- Haber reiniciado el servidor en [modo de rescate](/pages/bare_metal_cloud/virtual_private_servers/rescue) (Linux).
+- Tener acceso de administrador al VPS ([Windows](#windows)).
+- Haber reiniciado el servidor en [modo de rescate](/pages/bare_metal_cloud/virtual_private_servers/rescue) (solo Linux).
 
 ## Procedimiento
 
-Tras el upgrade, la RAM y el procesador (CPU) se ajustarán de manera automática. Sin embargo, el espacio de almacenamiento no se actualiza sistemáticamente.
+Tras una actualización de la memoria (RAM) o del procesador (vCores), estos dos recursos se ajustan automáticamente en su VPS, a diferencia del espacio en disco durante la mejora del almacenamiento de su VPS.
 
-### Realizar una copia de seguridad de los datos
+### Linux
 
-Ampliar una partición puede provocar la pérdida de datos, por lo que **le recomendamos encarecidamente que realice una copia de seguridad** de los datos de su VPS.
+#### Realizar una copia de seguridad de los datos
 
-### Desmontar la partición
+El intento de extender una partición puede provocar la pérdida de datos. Por lo tanto, le recomendamos **encarecidamente** que realice una copia de seguridad de los datos de su VPS.
 
-En las antiguas gamas de VPS, las particiones se montarán automáticamente en modo de rescate. Utilice el siguiente comando para identificar la ubicación de montaje de la partición:
+#### Activar el modo de rescate y verificar las particiones
 
-```sh
+Si el VPS todavía no está en modo de rescate, actívelo gracias a [nuestra guía](/pages/bare_metal_cloud/virtual_private_servers/rescue).
+
+A continuación, compruebe la configuración de los discos:
+
+```bash
 lsblk
 ```
 
-La partición correspondiente al modo de rescate será la montada en el directorio `/`, que es en realidad la raíz del sistema. En cambio, es probable que la partición del VPS se sitúe en un directorio asociado a "/mnt".
+La partición correspondiente al modo de rescate (`sda1` en este ejemplo) está montada en el directorio `/` .A su vez, el disco del VPS se denomina `sdb` y no debe tener ningún punto de montaje.
 
-No obstante, si su VPS pertenece a la gama actual, la partición no se montará automáticamente. Si la columna del resultado MOUNTPOINT lo confirma, puede ignorar el paso de desmontaje.
+por ejemplo,
 
-```sh
-NAME   MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
+```console
+NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
 sda 254:0 0 10G 0 disk
 └─sda1 254:1 0 10G 0 part /
+sdb 254:16 0 25G 0 disk
+└─sdb1 254:17 0 25G 0 part
+```
+
+Si el resultado es parecido al del ejemplo anterior y la columna `MOUNTPOINT` está vacía en la fila correspondiente, puede pasar al [paso siguiente](#checkfs).
+
+Sin embargo, si el resultado muestra que existe un punto de montaje para la partición VPS, primero deberá desmontarla.
+
+por ejemplo,
+
+```console
 sdb 254:16 0 25G 0 disk
 └─sdb1 254:17 0 25G 0 part /mnt/sdb1
 ```
 
-Para cambiar el tamaño de la partición, debe desmontarla. Para desmontar dicha partición, utilice el siguiente comando:
+En el ejemplo de salida anterior, la partición `sdb1` se monta a `/mnt/`. Para redimensionar la partición, no es necesario montarla.
 
-```sh
+Para desmontar dicha partición, utilice el siguiente comando:
+
+```bash
+umount /dev/partition_name
+```
+
+En este ejemplo de configuración, el comando sería:
+
+```bash
 umount /dev/sdb1
 ```
 
-### Comprobar el sistema de archivos (*filesystem*)
+#### Comprobar sistema de archivos <a name="checkfs"></a>
 
-Una vez desmontada la partición, es aconsejable comprobar el sistema de archivos (*filesystem check*) para detectar posibles errores. Utilice el siguiente comando:
+Antes de continuar, se recomienda comprobar el sistema de archivos (`filesystem check`) para detectar errores en la partición. Utilice el siguiente comando:
 
 ```sh
 e2fsck -yf /dev/sdb1
- 
+```
+
+```console
 e2fsck 1.42.9 (4-Feb-2014)
 Pass 1: Checking inodes, blocks, and sizes
 Pass 2: Checking directory structure
@@ -75,7 +97,7 @@ Pass 5: Checking group summary information
 
 Si encuentra un error, deberá adoptar las medidas adecuadas en cada caso. Estos son algunos de los errores más frecuentes:
 
-- **bad magic number in superblock**: No continúe. Para solucionar este problema, consulte el apartado [Cómo solucionar los errores «bad magic number in superblock»](/pages/cloud/vps/upsize_vps_partition#como-solucionar-los-errores-bad-magic-number-in-superblock){.external} de esta guía.
+- **bad magic number in superblock**: No continúe. Para solucionar este problema, consulte el apartado [Cómo solucionar los errores «bad magic number in superblock»](/pages/bare_metal_cloud/virtual_private_servers/upsize_vps_partition#como-solucionar-los-errores-bad-magic-number-in-superblock){.external} de esta guía.
 
 - **/dev/vdb1 has unsupported feature(s): metadata_csum**, seguido de **e2fsck: Get a newer version of e2fsck!**: Actualice **e2fsck**. Si la última versión no está disponible a través de **apt** o cualquier otro gestor de paquetes, deberá compilarla a partir del código fuente.
 
@@ -83,7 +105,7 @@ La lista anterior no es exhaustiva.
 
 ### Abrir la aplicación fdisk
 
-Una vez haya comprobado que no existe ningún error en el sistema de archivos, abra la aplicación **fdisk**. Una vez allí, deberá introducir el nombre del disco (y no el de la partición) como parámetro. Si su partición es «sdb1» en lugar de «vdb1», por ejemplo, el nombre del disco será «/dev/sdb».
+Una vez haya comprobado que no existe ningún error en el sistema de archivos, abra la aplicación **fdisk**. Una vez allí, deberá introducir el nombre del disco (y no el de la partición) como parámetro. Si su partición es `sdb1`, por ejemplo, el nombre del disco será `/dev/sdb`.
 
 ```sh
 fdisk -u /dev/sdb
@@ -98,7 +120,7 @@ fdisk -u /dev/sdb
 
 Antes de eliminar la antigua partición, le recomendamos que anote el número correspondiente al primer sector de la partición. Puede obtener esta información con el comando `p`. El número es el que aparece en el campo «Start». Conserve esta información, ya que la necesitará más adelante.
 
-```sh
+```console
 Command (m for help): p
  
 Disk /dev/sdb: 21.5 GB, 21474836480 bytes
@@ -119,7 +141,7 @@ Device Boot Start End Blocks Id System
 
 A continuación, elimine la partición con el comando `d`.
 
-```sh
+```console
 Command (m for help): d
 Selected partition 1
 ```
@@ -130,7 +152,7 @@ La partición se eliminará automáticamente.
 
 Ahora deberá crear la nueva partición con el comando `n`. Le recomendamos que utilice los valores por defecto.
 
-```sh
+```console
 Command (m for help): n
 Partition type:
 p primary (0 primary, 0 extended, 4 free)
@@ -147,7 +169,7 @@ En la línea «First sector», asegúrese de que el valor por defecto coincide c
 
 A continuación, asegúrese de que la partición sea de arranque (*bootable*). Puede hacerlo con el comando `a`.
 
-```sh
+```console
 Command (m for help): a
  
 Partition number (1-4): 1
@@ -155,7 +177,7 @@ Partition number (1-4): 1
 
 Guarde los cambios y salga de la aplicación con el comando `w`.
 
-```sh
+```console
 Command (m for help): w
  
 The partition table has been altered!
@@ -170,7 +192,9 @@ Ahora ya ha ampliado la partición, pero el sistema de archivos sigue ocupando e
 
 ```sh
 resize2fs /dev/sdb1
- 
+```
+
+```console
 resize2fs 1.42.9 (4-Feb-2014)
 Resizing the filesystem on /dev/sdb1 to 5242624 (4k) blocks.
 The filesystem on /dev/sdb1 is now 5242624 blocks long.
@@ -186,7 +210,9 @@ mount /dev/sdb1 /mnt
 
 ```sh
 df -h
- 
+```
+
+```console
 Filesystem Size Used Avail Use% Mounted on
 /dev/sda1 991M 793M 132M 86% /
 none 4.0K 0 4.0K 0% /sys/fs/cgroup
@@ -206,7 +232,9 @@ Si el comando `e2fsck` devuelve el mensaje de error «**bad magic number in supe
 
 ```sh
 dumpe2fs /dev/sdb1 | grep superblock
- 
+```
+
+```console
 Primary superblock at 0, Group descriptors at 1-6
 Backup superblock at 32768, Group descriptors at 32769-32774
 Backup superblock at 98304, Group descriptors at 98305-98310
@@ -230,7 +258,7 @@ A continuación, utilice el primer superbloque de backup para comprobar y repara
 fsck -b 32768 /dev/sdb1
 ```
 
-### Windows
+### Windows <a name="windows"></a>
 
 #### Acceder a File and Storage Services
 

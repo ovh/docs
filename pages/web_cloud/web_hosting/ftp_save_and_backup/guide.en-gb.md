@@ -79,7 +79,7 @@ Once you are ready to do so, carry on reading the section of this guide that is 
 > 
 > In this case:
 >
-> - Our teams send an email to the hosting [administrator contact](/pages/account/customer/managing_contacts#access-contact-management).
+> - Our teams send an email to the hosting [administrator contact](/pages/account_and_service_management/account_information/managing_contacts#access-contact-management).
 > - The “maintenance” status will appear in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}. In the `Web Cloud`{.action} section, click on your service in the `Hosting plans`{.action} section, then on the `General information`{.action} tab.
 > - The hosted site(s) will display a "403 Forbidden" page.
 >
@@ -152,7 +152,7 @@ You will need to enter your primary username (or FTP login) with a suffix determ
 |Last Sunday, at 01:00 (UTC+1)|-snap3|ftpuser**-snap3**|
 |Sunday, 2 weeks ago, at 01:00 (UTC+1)|-snap4|ftpuser**-snap4**|
 
-Please ensure that you replace ‘ftpuser’ with with your own primary FTP username in the above examples. Keep the suffix defining the backup date you would like to access.
+Please ensure that you replace ‘ftpuser’ with your own primary FTP username in the above examples. Keep the suffix defining the backup date you would like to access.
 
 The method for connecting to your storage space will differ depending on the interface or software you are using. Below, we have included an image showing how to connect via the FTP Explorer interface.
 

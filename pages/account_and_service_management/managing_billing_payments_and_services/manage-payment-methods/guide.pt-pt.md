@@ -89,7 +89,7 @@ Se já não quiser usar um dos métodos de pagamento, poderá eliminá-lo clican
 
 ![manage-payment-methods](images/managepaymentmethods4.png){.thumbnail}
 
-Se deseja eliminar a integralidade dos seus métodos de pagamento, o conjunto dos seus serviços deve ser [renovado manualmente](/pages/account/billing/how_to_use_automatic_renewal#a-renovacao-manual).
+Se deseja eliminar a integralidade dos seus métodos de pagamento, o conjunto dos seus serviços deve ser [renovado manualmente](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#a-renovacao-manual).
 
 #### Eliminar um método de pagamento através das API OVHcloud
 
@@ -122,7 +122,7 @@ De seguida, elimine o método de pagamento utilizando o ID que obteve na etapa a
 
 A *conta pré-paga* está presente na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) assim que for criada. Permite-lhe creditar antecipadamente a sua conta de cliente e utilizar estes fundos para o pagamento das suas encomendas e das suas faturas de renovação.
 
-Ao creditar regularmente a sua conta, certificar-se-á de que a [renovação automática](/pages/account/billing/how_to_use_automatic_renewal#a-renovacao-automatica) dos seus serviços nunca será interrompida por falta de pagamento.
+Ao creditar regularmente a sua conta, certificar-se-á de que a [renovação automática](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#a-renovacao-automatica) dos seus serviços nunca será interrompida por falta de pagamento.
 
 Para isso, aceda à secção `Métodos de pagamento` na Área de Cliente:
 

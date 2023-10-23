@@ -239,7 +239,7 @@ The created group should appear on the list.
 
 ### Connect via SSO
 
-On the [OVHcloud login page](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), enter your [NIC handle](/pages/account/customer/ovhcloud-account-creation#what-is-my-nic-handle) followed by **/idp** without entering a password, and click the `Login`{.action} button.
+On the [OVHcloud login page](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), enter your [NIC handle](/pages/account_and_service_management/account_information/ovhcloud-account-creation#what-is-my-nic-handle) followed by **/idp** without entering a password, and click the `Login`{.action} button.
 
 ![Ovhcloud SSO Login step 1](images/ovhcloud_sso_login_1.png){.thumbnail}
 
@@ -255,7 +255,7 @@ Enter the Azure AD application user password and click on the `Sign In`{.action}
 
 ![Azure AD Login step 3](images/azure_ad_login_3.png){.thumbnail}
 
-You are now logged in with the same [NIC handle](/pages/account/customer/ovhcloud-account-creation#what-is-my-nic-handle), but via your Active Directory user and using your Azure AD application SSO.
+You are now logged in with the same [NIC handle](/pages/account_and_service_management/account_information/ovhcloud-account-creation#what-is-my-nic-handle), but via your Active Directory user and using your Azure AD application SSO.
 
 ![Ovhcloud SSO Login step 2](images/ovhcloud_sso_login_2.png){.thumbnail}
 

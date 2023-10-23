@@ -53,7 +53,7 @@ W menu `Serwery dedykowane`{.action} kliknij wybrany serwer, aby uzyskać dostę
 **Stan usług**
 
 - Status: kliknij `...`{.action} obok tej opcji, aby uruchomić lub usunąć serwer.
-- Monitoring: kliknij na `Skonfiguruj`{.action} aby zmienić [ustawienia monitorowania serwera](/pages/cloud/dedicated/getting-started-with-dedicated-server#monitoring-server).
+- Monitoring: kliknij na `Skonfiguruj`{.action} aby zmienić [ustawienia monitorowania serwera](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server#monitoring-server).
 
 **Sieć**
 
@@ -74,9 +74,9 @@ Aby uzyskać więcej informacji na temat zarządzania serwerem dedykowanym w Pan
 
 ### Sekcja IP
 
-Aby uzyskać dostęp do sekcji **IP** w Panelu klienta OVHcloud, kliknij menu `Bare Metal Cloud`{.action}, a następnie `IP`{.action}.
+Aby uzyskać dostęp do sekcji **IP** w Panelu klienta OVHcloud, kliknij menu `Bare Metal Cloud`{.action} i otwórz `Network`{.action}. Następnie kliknij `IP`{.action}.
 
-![sekcja ip](images/manageIPOVHcloud.png){.thumbnail}
+![sekcja ip](images/manageIP2023.png){.thumbnail}
 
 ### Zakładka Licencje (niedostępna na serwerze Kimsufi)
 

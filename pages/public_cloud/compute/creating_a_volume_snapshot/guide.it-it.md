@@ -35,7 +35,7 @@ Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanag
 
 ![Volume Snapshot](images/volume_snapshot01.png){.thumbnail}
 
-A destra del volume interessato, clicca sui tre puntini `...`{.action} e poi su `Crea uno Snapshot`{.action} (non è necessario scollegare prima il volume dell'istanza). Se vuoi scollegare il tuo volume, consulta [questa sezione](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance#con-linux_1) della relativa guida per Linux e [questa sezione](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance#con-windows_1) per Windows.
+A destra del volume interessato, clicca sui tre puntini `...`{.action} e poi su `Crea uno Snapshot`{.action} (non è necessario scollegare prima il volume dell'istanza). Se vuoi scollegare il tuo volume, consulta [questa sezione](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance#con-linux_1) della relativa guida per Linux e [questa sezione](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance#con-windows_1) per Windows.
 
 ![Volume Snapshot](images/volume_snapshot02.png){.thumbnail}
 

@@ -1,69 +1,91 @@
 ---
-title: 'Zmiana rozmiaru partycji na serwerze VPS po zmianie oferty'
-updated: 2021-05-18
+title: Zmiana rozmiaru partycji serwera VPS po zmianie oferty przestrzeni dyskowej
+excerpt: "Dowiedz się, jak zwiększyć przestrzeń dyskową po aktualizacji"
+updated: 2023-09-05
 ---
-
-> [!primary]
-> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
->
 
 ## Wprowadzenie
 
-Podczas zmiany oferty serwera VPS może okazać się konieczna zmiana rozmiaru partycji w Twojej przestrzeni dyskowej. Poniżej przedstawiamy, jakie kroki należy w tym celu wykonać.
+Po zwiększeniu przestrzeni dyskowej Twojego VPS, musisz ponownie rozdzielić przestrzeń dyskową, aby korzystać z rzeczywistego rozmiaru. Następne etapy opisują sposób postępowania.
 
 > [!warning]
 >
-> Zmiana rozmiaru partycji skutkuje nieodwracalną utratą danych. OVHcloud nie ponosi odpowiedzialności za ich zniszczenie lub utratę. Przed przystąpieniem do jakichkolwiek czynności należy wykonać odpowiednią kopię zapasową swoich danych.
+> Zmiana rozmiaru partycji skutkuje nieodwracalną utratą danych. OVHcloud nie ponosi odpowiedzialności za ich zniszczenie lub utratę. Przed przystąpieniem do jakichkolwiek czynności należy wykonać odpowiedną kopię zapasową swoich danych. 
 >
 
-**W niniejszej instrukcji przedstawione są poszczególne kroki, które należy wykonać, aby zwiększyć przestrzeń dyskową.**
+**Dowiedz się, jak zwiększyć przestrzeń dyskową po zmianie dysku.**
 
 ## Wymagania początkowe
 
-- Dostęp administratora do serwera VPS (Windows)
-- Ponowne uruchomienie serwera w [Trybie Rescue](/pages/bare_metal_cloud/virtual_private_servers/rescue) (Linux)
+- Dostęp administratora do serwera VPS ([Windows](#windows)).
+- Zrestartowanie serwera w [trybie Rescue](/pages/bare_metal_cloud/virtual_private_servers/rescue) (tylko w systemie Linux).
 
 ## W praktyce
 
-Po zmianie oferty serwera na wyższą ilość pamięci RAM i procesor (CPU) dostosowywane są automatycznie. Nie dotyczy to jednak przestrzeni dyskowej.
+Po aktualizacji pamięci (RAM) lub procesora (vCores), te dwa zasoby są automatycznie dostosowywane do potrzeb Twojego serwera VPS, w przeciwieństwie do przestrzeni dyskowej podczas zmiany oferty serwera VPS.
 
-### Tworzenie kopii zapasowej danych
+### Linux
 
-Ponieważ w wyniku próby rozszerzenia partycji może dojść do utraty danych, **stanowczo zalecamy** wykonanie kopii zapasowej danych znajdujących się na serwerze VPS.
+#### Tworzenie kopii zapasowej danych
 
-### Odmontowanie partycji
+Próba rozszerzenia partycji może spowodować utratę danych. Zalecamy **więc** wykonanie kopii zapasowej danych znajdujących się na serwerze VPS.
 
-W przypadku starszych gam VPS partycje zostaną automatycznie zamontowane w trybie rescue. Użyj następującego polecenia, aby zidentyfikować lokalizację zamontowania partycji:
+#### Włącz tryb ratunkowy i sprawdź partycje
 
-```sh
+Jeśli serwer VPS nie jest jeszcze w trybie Rescue, włącz go za pomocą [przewodnika](/pages/bare_metal_cloud/virtual_private_servers/rescue).
+
+Następnie możesz sprawdzić konfigurację dysków:
+
+```bash
 lsblk
 ```
 
-Partycja odpowiadająca trybowi Rescue to ta zamontowana w katalogu `/`, który jest w rzeczywistości katalogiem systemu. Natomiast partycja Twojego serwera VPS będzie prawdopodobnie umieszczona w katalogu powiązanym z "/mnt".
+Partycja odpowiadająca trybowi Rescue (`sda1` w tym przykładzie) jest zamontowana w katalogu `/` .Dysk VPS ma nazwę `sdb` i nie może mieć punktu montowania.
 
-Jeśli jednak Twój VPS należy do aktualnej gamy, partycja nie zostanie automatycznie zamontowana. Jeśli potwierdzi to kolumna MOUNTPOINT, możesz pominąć etap demontażu.
+Przykład:
 
-```sh
+```console
 NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
 sda 254:0 0 10G 0 disk
 └─sda1 254:1 0 10G 0 part /
 sdb 254:16 0 25G 0 disk
+└─sdb1 254:17 0 25G 0 part
+```
+
+Jeśli Twój wynik wygląda podobnie do powyższego przykładu, a kolumna `MOUNTPOINT` jest pusta w odpowiednim wierszu, możesz przejść do [następnego etapu](#checkfs).
+
+Jeśli jednak Twój wynik wskazuje, że partycja VPS ma punkt montowania, najpierw należy ją odmontować.
+
+Przykład:
+
+```console
+sdb 254:16 0 25G 0 disk
 └─sdb1 254:17 0 25G 0 part /mnt/sdb1
 ```
 
-Aby zmienić rozmiar partycji, należy ją odmontować. W celu odmontowania partycji należy użyć następującego polecenia:
+W powyższym przykładzie wyjściowym partycja `sdb1` jest zamontowana w `/mnt/`. Aby można było zmienić rozmiar partycji, nie musi ona być zamontowana.
 
-```sh
+W celu odmontowania partycji należy użyć następującego polecenia:
+
+```bash
+umount /dev/partition_name
+```
+
+W tym przykładzie konfiguracji, polecenie to będzie:
+
+```bash
 umount /dev/sdb1
 ```
 
-### Sprawdzanie systemu plików
+#### Sprawdzanie systemu plików <a name="checkfs"></a>
 
-Po odmontowaniu partycji należy sprawdzić system plików za pomocą `filesystem check`, czy na partycji nie występują błędy. Tu stosuje się poniższe polecenie:
+Przed kontynuowaniem zaleca się sprawdzenie systemu plików (`filesystem check`) w celu sprawdzenia, czy partycja zawiera błędy. Tu stosuje się poniższe polecenie:
 
 ```sh
 e2fsck -yf /dev/sdb1
- 
+```
+
+```console
 e2fsck 1.42.9 (4-Feb-2014)
 Pass 1: Checking inodes, blocks, and sizes
 Pass 2: Checking directory structure
@@ -75,7 +97,7 @@ Pass 5: Checking group summary information
 
 Jeśli stwierdzisz błąd, podejmij działania stosownie do Twojego przypadku. Poniżej podajemy przykłady najczęściej spotykanych błędów:
 
-- `bad magic number in superblock`: nie kontynuuj. Procedura rozwiązania tego problemu została wyjaśniona w części tego przewodnika: [Jak usunąć błędy bad magic number in superblock](/pages/cloud/vps/upsize_vps_partition#jak-naprawiac-bledy-bad-magic-number-in-superblock);
+- `bad magic number in superblock`: nie kontynuuj. Procedura rozwiązania tego problemu została wyjaśniona w części tego przewodnika: [Jak usunąć błędy bad magic number in superblock](/pages/bare_metal_cloud/virtual_private_servers/upsize_vps_partition#jak-naprawiac-bledy-bad-magic-number-in-superblock);
 
 - `/dev/vdb1 has unsupported feature(s): metadata_csum` a następnie `e2fsck: Get a newer version of e2fsck!`: aktualizuj e2fsck. Jeśli ostatnia wersja nie jest dostępna za pośrednictwem `apt` (lub innego managera pakietów), skompiluj ją ze źródeł.
 
@@ -83,7 +105,7 @@ Powyższa lista nie jest wyczerpująca.
 
 ### Otwieranie aplikacji fdisk
 
-Jeśli weryfikacja systemu plików zakończyła się pomyślnie, otwórz aplikację `fdisk`. Tu jako parametr trzeba będzie podać nazwę dysku, a nie partycji. Jeśli nazwa Twojej partycji to na przykład `sdb1` zamiast `vdb1`, wówczas nazwą dysku będzie /dev/sdb.
+Jeśli weryfikacja systemu plików zakończyła się pomyślnie, otwórz aplikację `fdisk`. Tu jako parametr trzeba będzie podać nazwę dysku, a nie partycji. Jeśli nazwa Twojej partycji to na przykład `sdb1`, wówczas nazwą dysku będzie `/dev/sdb`.
 
 ```sh
 fdisk -u /dev/sdb
@@ -98,7 +120,7 @@ fdisk -u /dev/sdb
 
 Przed skasowaniem starej partycji zaleca się zanotowanie wartości liczbowej odpowiadającej pierwszemu sektorowi partycji. Informację tę można uzyskać za pomocą polecenia `p`{.action}. Znajduje się ona w polu `Start`. Zachowaj tę wartość na później.
 
-```sh
+```console
 Command (m for help): p
  
 Disk /dev/sdb: 21.5 GB, 21474836480 bytes
@@ -119,7 +141,7 @@ Device Boot Start End Blocks Id System
 
 Następnie skasuj partycję za pomocą polecenia `d`{.action}.
 
-```sh
+```console
 Command (m for help): d
 Selected partition 1
 ```
@@ -130,7 +152,7 @@ Jedyna partycja zostanie automatycznie skasowana.
 
 Teraz należy utworzyć nową partycję za pomocą polecenia `n`{.action}. Zaleca się użycie wartości domyślnych.
 
-```sh
+```console
 Command (m for help): n
 Partition type:
 p primary (0 primary, 0 extended, 4 free)
@@ -147,7 +169,7 @@ Musisz upewnić się, że wartość domyślna w wierszu `First sector` jest taka
 
 Teraz należy upewnić się, że partycja jest bootowalna. Możesz to zrobić za pomocą polecenia `a`{.action}.
 
-```sh
+```console
 Command (m for help): a
  
 Partition number (1-4): 1
@@ -155,7 +177,7 @@ Partition number (1-4): 1
 
 Zapisz zmiany i wyjdź z aplikacji za pomocą polecenia `w`{.action} :
 
-```sh
+```console
 Command (m for help): w
  
 The partition table has been altered!
@@ -170,7 +192,9 @@ Partycja została rozszerzona, ale jej system plików (filesystem) zajmuje wcią
 
 ```sh
 resize2fs /dev/sdb1
- 
+```
+
+```console
 resize2fs 1.42.9 (4-Feb-2014)
 Resizing the filesystem on /dev/sdb1 to 5242624 (4k) blocks.
 The filesystem on /dev/sdb1 is now 5242624 blocks long.
@@ -186,7 +210,9 @@ mount /dev/sdb1 /mnt
 
 ```sh
 df -h
- 
+```
+
+```console
 Filesystem Size Used Avail Use% Mounted on
 /dev/sda1 991M 793M 132M 86% /
 none 4.0K 0 4.0K 0% /sys/fs/cgroup
@@ -206,7 +232,9 @@ Jeśli polecenie `e2fsck`{.action} zwraca komunikat błędu `bad magic number in
 
 ```sh
 dumpe2fs /dev/sdb1 | grep superblock
- 
+```
+
+```console
 Primary superblock at 0, Group descriptors at 1-6
 Backup superblock at 32768, Group descriptors at 32769-32774
 Backup superblock at 98304, Group descriptors at 98305-98310
@@ -230,7 +258,7 @@ Następnie użyj pierwszego superbloku backupowego w celu sprawdzenia i naprawie
 fsck -b 32768 /dev/sdb1
 ```
 
-### Windows
+### Windows <a name="windows"></a>
 
 #### Dostęp do File and Storage Services
 

@@ -120,7 +120,7 @@ Se não conseguir realizar estas verificações, contacte o alojador da sua zona
 > Todas as modificações efetuadas na sua zona DNS indicam um prazo de propagação de 4 a 24 horas.
 >
 
-- Obtenha [as informações necessárias para se ligar ao espaço FTP do seu alojamento web](/pages/web/hosting/ftp_connection#1-recuperar-as-informacoes-de-acesso).
+- Obtenha [as informações necessárias para se ligar ao espaço FTP do seu alojamento web](/pages/web_cloud/web_hosting/ftp_connection#1-recuperar-as-informacoes-de-acesso).
 - Obtenha os acessos à base de dados do alojamento web, caso já exista, ou crie um através da nossa [documentação](/pages/web_cloud/web_hosting/sql_create_database).
 
 #### 1.3 - Instalar o cliente FTP gratuito "FileZilla"
@@ -133,7 +133,7 @@ Os CMS precisam de uma base de dados para funcionarem. As nossas ofertas de [alo
 
 Utilize o nosso manual para [criar uma base de dados a partir do seu alojamento web](/pages/web_cloud/web_hosting/sql_create_database).
 
-Se tiver à sua disposição uma oferta Web Cloud Databases em MySQL ou MariaDB e pretender utilizá-la para instalar manualmente o seu CMS, consulte o nosso manual sobre a [criação de uma base de dados num serviço Web Cloud Databases](/pages/web/clouddb/create-db-and-user-on-db-server#criar-uma-base-de-dados).
+Se tiver à sua disposição uma oferta Web Cloud Databases em MySQL ou MariaDB e pretender utilizá-la para instalar manualmente o seu CMS, consulte o nosso manual sobre a [criação de uma base de dados num serviço Web Cloud Databases](/pages/web_cloud/web_cloud_databases/create-db-and-user-on-db-server#criar-uma-base-de-dados).
 
 Depois de criar a base de dados, recupere os parâmetros de ligação (servidor, nome da base de dados, nome de utilizador e palavra-passe) e guarde-os para [etapa 3](#step3) deste guia.
 
@@ -141,11 +141,11 @@ Depois de criar a base de dados, recupere os parâmetros de ligação (servidor,
 >
 > Se deseja instalar o seu CMS com uma base de dados já existente, recupere os seus parâmetros de ligação à sua base de dados diretamente nos ficheiros do site ligados a esta.
 >
-> Se for também um CMS idêntico ao que deve instalar, pode utilizar [este guia](/pages/web/hosting/sql_change_password#etapa-3-alterar-a-palavra-passe-da-base-de-dados-do-seu-site-no-seu-ficheiro-de-configuracao) para identificar os ficheiros de configuração no seu [espaço de armazenamento FTP](/pages/web_cloud/web_hosting/ftp_connection).
+> Se for também um CMS idêntico ao que deve instalar, pode utilizar [este guia](/pages/web_cloud/web_hosting/sql_change_password#etapa-3-alterar-a-palavra-passe-da-base-de-dados-do-seu-site-no-seu-ficheiro-de-configuracao) para identificar os ficheiros de configuração no seu [espaço de armazenamento FTP](/pages/web_cloud/web_hosting/ftp_connection).
 >
 > Aceda à sua base de dados para identificar os "prefixos" das tabelas já presentes no seu interior. Isto para não escolher um "prefixo" de mesa já utilizado por outro dos seus websites.
 >
-> - Para aceder à base de dados associada ao alojamento web, consulte o [guia](/pages/web/hosting/sql_create_database#aceder-a-interface-phpmyadmin).
+> - Para aceder à base de dados associada ao alojamento web, consulte o [guia](/pages/web_cloud/web_hosting/sql_create_database#aceder-a-interface-phpmyadmin).
 > - Para aceder a uma base de dados presente numa Web Cloud Databases, consulte [este guia](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server).
 >
 
@@ -173,7 +173,7 @@ Encontre aqui os links para as páginas de download dos CMS evocadas no presente
 > - [Drupal](https://www.drupal.org/docs/getting-started/system-requirements/php-requirements){.external}
 > - [Prestashop](https://www.prestashop.com/en/system-requirements){.external}
 >
-> Configure a versão de PHP no seu alojamento web com a ajuda do nosso manual sobre a [alteração da versão PHP de um alojamento web](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014).
+> Configure a versão de PHP no seu alojamento web com a ajuda do nosso manual sobre a [alteração da versão PHP de um alojamento web](/pages/web_cloud/web_hosting/configure_your_web_hosting).
 >
 > Se já utiliza uma versão de PHP igual ou superior à requerida, não é necessário efetuar qualquer alteração.
 >

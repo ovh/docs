@@ -1,7 +1,6 @@
 ---
 title: 'Tworzenie autorespondera dla konta e-mail'
 excerpt: 'Dowiedz się, jak zainstalować autoresponder e-mail'
-legacy_guide_number: g2052
 updated: 2021-04-20
 ---
 

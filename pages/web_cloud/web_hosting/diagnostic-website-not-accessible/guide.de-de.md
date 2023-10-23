@@ -10,7 +10,7 @@ updated: 2022-08-02
 
 ## Ziel 
 
-Im Browser können mehrere Fehlermeldungen auftreten, wenn Ihre Website nicht erreichbar ist. Die folgenden Beispiele zeigen eine fehlerhafte [DNS-Konfiguration](/pages/web/domains/dns_server_general_information#dns-konzept-verstehen) oder eine angebrochene Domain an (wenn Ihre Website keine der hier beschriebenen Fehlermeldungen zeigt, lesen Sie den Abschnitt [Weiterführende Informationen](#gofurther)):
+Im Browser können mehrere Fehlermeldungen auftreten, wenn Ihre Website nicht erreichbar ist. Die folgenden Beispiele zeigen eine fehlerhafte [DNS-Konfiguration](/pages/web_cloud/domains/dns_server_general_information#dns-konzept-verstehen) oder eine angebrochene Domain an (wenn Ihre Website keine der hier beschriebenen Fehlermeldungen zeigt, lesen Sie den Abschnitt [Weiterführende Informationen](#gofurther)):
 
 |Browser|Betreffende Fehlermeldung|
 |-|---|
@@ -29,8 +29,8 @@ Im Browser können mehrere Fehlermeldungen auftreten, wenn Ihre Website nicht er
 
 ## Voraussetzungen
 
-- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) mit den erforderlichen Berechtigungen zum Verwalten der Domain bzw. der [DNS-Zone](/pages/web/domains/dns_zone_edit#dns-konzept-verstehen) sowie der DNS-Server.
-- Sie haben keine ausstehenden [Zahlungen](/pages/account/billing/invoice_management#pay-bills) und [Verlängerungen](/pages/account/billing/how_to_use_automatic_renewal#renewal-management) der dazugehörigen Dienstleistungen (Domainname und Webhosting).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) mit den erforderlichen Berechtigungen zum Verwalten der Domain bzw. der [DNS-Zone](/pages/web_cloud/domains/dns_zone_edit#dns-konzept-verstehen) sowie der DNS-Server.
+- Sie haben keine ausstehenden [Zahlungen](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) und [Verlängerungen](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) der dazugehörigen Dienstleistungen (Domainname und Webhosting).
 
 ## In der praktischen Anwendung
 
@@ -41,7 +41,7 @@ Im Browser können mehrere Fehlermeldungen auftreten, wenn Ihre Website nicht er
 > Die Verlängerung Ihrer Dienste liegt in Ihrer alleinigen Verantwortung.<br>
 > OVHcloud ist als Hosting-Anbieter verpflichtet, Dienste (Domains, Hosting-Pakete, E-Mail-Accounts etc.), die nicht rechtzeitig verlängert wurden, sowie alle darin enthaltenen Daten unwiderruflich zu löschen.
 >
-> Daher empfehlen wir Ihnen dringend, die [automatische Verlängerung](/pages/account/billing/how_to_use_automatic_renewal#in-der-praktischen-anwendung) für alle Ihre OVHcloud Abonnements zu aktivieren.
+> Daher empfehlen wir Ihnen dringend, die [automatische Verlängerung](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#in-der-praktischen-anwendung) für alle Ihre OVHcloud Abonnements zu aktivieren.
 >
 
 Um die Gültigkeit des Abonnements für Ihre Domain zu überprüfen, klicken Sie oben rechts in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) auf Ihren Namen, um das Kontextmenü anzuzeigen, und dann auf `Produkte und Dienstleistungen`{.action}.
@@ -76,7 +76,7 @@ Eine Warnung im Tab `DNS-Zone`{.action} zeigt an, dass die von Ihrer Domain verw
 
 ![warning_other_ovh_dns_srv](images/warning_other_ovh_dns_srv.png){.thumbnail}
 
-Ändern Sie die DNS Server entsprechend den Anweisungen in dieser [Anleitung](/pages/web/domains/dns_server_general_information#dns-server-andern), damit diese mit den Zielen der Einträge vom Typ `NS` in der `DNS-Zone`{.action} identisch sind.
+Ändern Sie die DNS Server entsprechend den Anweisungen in dieser [Anleitung](/pages/web_cloud/domains/dns_server_general_information#dns-server-andern), damit diese mit den Zielen der Einträge vom Typ `NS` in der `DNS-Zone`{.action} identisch sind.
 
 Ihre Website wird dann innerhalb von maximal 48 Stunden verfügbar sein.
 
@@ -88,7 +88,7 @@ Ihre Website wird dann innerhalb von maximal 48 Stunden verfügbar sein.
 >
 > Kontaktieren Sie in diesem Fall den Hoster Ihrer DNS Zone, Ihren Webmaster oder die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/), bevor Sie die Änderung vornehmen.
 >
-> Es ist möglich, dass die von Ihrer Domain verwendeten DNS Server funktionieren und dass das Problem beim Zugriff auf Ihre Website auf einen fehlenden oder fehlerhaften Eintrag in der [DNS Zone](/pages/web/domains/dns_zone_edit#dns-konzept-verstehen) zurückzuführen ist. Jede Änderung der DNS Server kann dazu führen, dass Ihre E-Mail Adressen oder andere Online-Anwendungen nicht mehr verfügbar sind.
+> Es ist möglich, dass die von Ihrer Domain verwendeten DNS Server funktionieren und dass das Problem beim Zugriff auf Ihre Website auf einen fehlenden oder fehlerhaften Eintrag in der [DNS Zone](/pages/web_cloud/domains/dns_zone_edit#dns-konzept-verstehen) zurückzuführen ist. Jede Änderung der DNS Server kann dazu führen, dass Ihre E-Mail Adressen oder andere Online-Anwendungen nicht mehr verfügbar sind.
 >
 
 #### Szenario 3: In der DNS Zone wird kein Eintrag des Typs "NS" angezeigt
@@ -121,7 +121,7 @@ Kopieren Sie im Tab `Allgemeine Informationen`{.action} die IPv4- und/oder IPv6-
 
 ![ipv4-6](images/ipv4-6.png){.thumbnail}
 
-Tragen Sie diese dann in die [DNS-Zone](/pages/web/domains/dns_zone_edit#bearbeiten-der-ovhcloud-dns-zone-ihrer-domain) Ihrer Domain ein, indem Sie einen oder mehrere Einträge vom Typ `A` bearbeiten oder erstellen.
+Tragen Sie diese dann in die [DNS-Zone](/pages/web_cloud/domains/dns_zone_edit#bearbeiten-der-ovhcloud-dns-zone-ihrer-domain) Ihrer Domain ein, indem Sie einen oder mehrere Einträge vom Typ `A` bearbeiten oder erstellen.
 
 ![ipv4-DNSzone](images/ipv4-DNSzone.png){.thumbnail}
 

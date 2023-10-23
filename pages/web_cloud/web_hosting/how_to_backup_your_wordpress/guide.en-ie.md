@@ -144,8 +144,8 @@ By applying these best practices, you will have the possibility to restore the w
 ## Go further <a name="go-further"></a>
 
 - [WordPress official website](https://wordpress.org){.external}
-- [More information on backups for your web hosting plan](/pages/web/hosting/hosting_technical_specificities#automatic-backup-information)
-- [More information on backups for your Web Hosting plan](/pages/web/hosting/hosting_technical_specificities#automatic-backup-information)
+- [More information on backups for your web hosting plan](/pages/web_cloud/web_hosting/hosting_technical_specificities#automatic-backup-information)
+- [More information on backups for your Web Hosting plan](/pages/web_cloud/web_hosting/hosting_technical_specificities#automatic-backup-information)
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-ie/directory/).
 

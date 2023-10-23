@@ -75,7 +75,7 @@ For OVHcloud services, please use our documentation to:
 - [Change the password for accessing your Web Hosting plan’s FTP storage space](/pages/web_cloud/web_hosting/ftp_change_password).
 - [Change the password for accessing your database](/pages/web_cloud/web_hosting/sql_change_password).
 
-We also recommend using a [password manager](/pages/account/customer/manage-ovh-password#use-a-password-manager).
+We also recommend using a [password manager](/pages/account_and_service_management/account_information/manage-ovh-password#use-a-password-manager).
 
 > [!warning]
 > 
@@ -197,7 +197,7 @@ Update your website with regard to its source code, its security settings and th
 Check the FTP access rights ("CHMOD") for each of your folders and files hosted in your storage space.
 By default, we recommend using "CHMOD" **705** for folders and **604** for files as far as possible.
 
-You can find more details on "CHMOD" rights in the "Useful information" section of our [tutorial on using the Filezilla FTP client](/pages/web/hosting/ftp_filezilla_user_guide#useful-information).
+You can find more details on "CHMOD" rights in the "Useful information" section of our [tutorial on using the Filezilla FTP client](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide#useful-information).
 
 If you use a CMS (WordPress, Joomla!, PrestaShop, Drupal, ...), update your plugins, your theme and the CMS itself.
 Try to use "official" plugins/themes only and keep your website up-to-date as regularly as possible, in a comprehensive manner.
@@ -210,7 +210,7 @@ Please also refer to our guide on [how to secure your website](/pages/web_cloud/
 
 [Logging in to your Web Hosting plan’s storage space](/pages/web_cloud/web_hosting/ftp_connection)
 
-[Modify your Web Hosting plan’s configuration](/pages/web_cloud/web_hosting/ovhconfig_modify_system_runtime)
+[Modify your Web Hosting plan’s configuration](/pages/web_cloud/web_hosting/configure_your_web_hosting)
 
 [Enable Application Firewall](/pages/web_cloud/web_hosting/multisites_activating_application_firewall)
 
@@ -218,6 +218,6 @@ Please also refer to our guide on [how to secure your website](/pages/web_cloud/
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-ca/directory/).
 
-If you would like assistance using and configuring your OVHcloud solutions, please refer to our our [support offers](https://www.ovhcloud.com/en-ca/support-levels/).
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-ca/support-levels/).
 
 Join our community of users on <https://community.ovh.com/en/>.

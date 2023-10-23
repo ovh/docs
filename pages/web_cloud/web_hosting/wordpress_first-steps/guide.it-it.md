@@ -30,7 +30,7 @@ Questa guida ti mostra come creare i tuoi primi contenuti, organizzarli, metterl
 
 ## Procedura
 
-Se non lo hai già fatto e prima di continuare, [aggiungi un certificato SSL](/pages/web/hosting/ssl-activate-https-website#step-1-attiva-il-certificato-ssl-sullhosting) sul dominio associato al tuo sito Web.
+Se non lo hai già fatto e prima di continuare, [aggiungi un certificato SSL](/pages/web_cloud/web_hosting/ssl-activate-https-website#step-1-attiva-il-certificato-ssl-sullhosting) sul dominio associato al tuo sito Web.
 
 Durante l'installazione del tuo CMS in 1 click, hai ricevuto un'email contenente gli elementi necessari a proseguire con questa guida:
 

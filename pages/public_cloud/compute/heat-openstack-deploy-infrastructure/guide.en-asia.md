@@ -4,27 +4,6 @@ excerpt: Find out how to get started with Heat and stacks by deploying your firs
 updated: 2022-03-30
 ---
 
-<style>
- pre {
-     font-size: 14px;
- }
- pre.console {
-   background-color: #300A24; 
-   color: #ccc;
-   font-family: monospace;
-   padding: 5px;
-   margin-bottom: 5px;
- }
- pre.console code {
-   b   font-family: monospace !important;
-   font-size: 0.75em;
-   color: #ccc;
- }
- .small {
-     font-size: 0.75em;
- }
-</style>
-
 ## Objective
 
 Heat is an infrastructure orchestration tool for OpenStack. It takes descriptive files as inputs. These files list the various elements of the infrastructure that need to be managed, as well as the behaviours to adopt following certain events. The purpose of this is to industrialise cloud infrastructure management using code. This is called **Infrastructure as code**.
@@ -136,7 +115,8 @@ openstack stack create -t basic-template.yaml first-stack
 
 You should obtain a result like this:
 
-<pre class="console"><code>$ openstack stack create -t basic-template.yaml first-stack
+```console
+$ openstack stack create -t basic-template.yaml first-stack
 +---------------------+-----------------------------------------------------------------------------+
 | Field               | Value                                                                       |
 +---------------------+-----------------------------------------------------------------------------+
@@ -148,11 +128,12 @@ You should obtain a result like this:
 | stack_status        | CREATE_IN_PROGRESS                                                          |
 | stack_status_reason | Stack CREATE started                                                        |
 +---------------------+-----------------------------------------------------------------------------+
-</code></pre>
+```
 
 The *stack* is being created. After a few seconds, you can check its status:
 
-<pre class="console"><code>$ openstack stack show first-stack
+```console
+$ openstack stack show first-stack
 +-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Field                 | Value                                                                                                                                                |
 +-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -182,21 +163,23 @@ The *stack* is being created. After a few seconds, you can check its status:
 | tags                  | None                                                                                                                                                 |
 | disable_rollback      | True                                                                                                                                                 |
 +-----------------------+------------------------------------------------------------------------------------------------------------------------------------------------------+
-</code></pre>
+```
 
 As with other OpenStack resources, you can list your *stacks*:
 
-<pre class="console"><code>$ openstack stack list
+```console
+$ openstack stack list
 +--------------------------------------+-------------+-----------------+----------------------+--------------+
 | ID                                   | Stack Name  | Stack Status    | Creation Time        | Updated Time |
 +--------------------------------------+-------------+-----------------+----------------------+--------------+
 | f81ec642-96b6-4540-b323-d5184327ae34 | first-stack | CREATE_COMPLETE | 2018-03-27T16:12:36Z | None         |
 +--------------------------------------+-------------+-----------------+----------------------+--------------+
-</code></pre>
+```
 
 As you can see, a *stack* has a status, just like an instance. To see the event list for a *stack*, use:
 
-<pre class="console"><code>$ openstack stack event list first-stack
+```console
+$ openstack stack event list first-stack
 2018-03-27 16:12:38Z [first-stack]: CREATE_IN_PROGRESS Stack CREATE started
 2018-03-27 16:12:38Z [first-stack.my_instance]: CREATE_IN_PROGRESS state changed
 2018-03-27 16:12:39Z [first-stack.my_volume]: CREATE_IN_PROGRESS state changed
@@ -205,11 +188,12 @@ As you can see, a *stack* has a status, just like an instance. To see the event 
 2018-03-27 16:13:00Z [first-stack.my_attachment]: CREATE_IN_PROGRESS state changed
 2018-03-27 16:13:04Z [first-stack.my_attachment]: CREATE_COMPLETE state changed
 2018-03-27 16:13:04Z [first-stack]: CREATE_COMPLETE Stack CREATE completed successfully
-</code></pre>
+```
 
 You can also see the various resources present in the *stack*. In this case, there is only one server:
 
-<pre class="console"><code>$ openstack stack resource list first-stack
+```console
+$ openstack stack resource list first-stack
 +---------------+--------------------------------------+------------------------------+-----------------+----------------------+
 | resource_name | physical_resource_id                 | resource_type                | resource_status | updated_time         |
 +---------------+--------------------------------------+------------------------------+-----------------+----------------------+
@@ -217,15 +201,16 @@ You can also see the various resources present in the *stack*. In this case, the
 | my_attachment | 2fc5d81c-db47-4d21-9179-11895b332944 | OS::Cinder::VolumeAttachment | CREATE_COMPLETE | 2018-03-27T16:12:38Z |
 | my_instance   | 8263d0e0-5ad2-46f5-89a2-5b8ecea43b66 | OS::Nova::Server             | CREATE_COMPLETE | 2018-03-27T16:12:38Z |
 +---------------+--------------------------------------+------------------------------+-----------------+----------------------+
-</code></pre>
+```
 
 As you can see, a *stack* groups together a set of resources, and its lifecycle shows statuses, for which you can view the event list.
 
 We will now delete this *stack*:
 
-<pre class="console"><code>$ openstack stack delete first-stack
+```console
+$ openstack stack delete first-stack
 Are you sure you want to delete this stack(s) [y/N]? y
-</code></pre>
+```
 
 ## Go further
 

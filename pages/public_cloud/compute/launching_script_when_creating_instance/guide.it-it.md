@@ -1,7 +1,6 @@
 ---
 title: Esegui uno script durante la creazione della tua istanza
 excerpt: Esegui uno script durante la creazione della tua istanza
-legacy_guide_number: g1932
 updated: 2022-03-18
 ---
 

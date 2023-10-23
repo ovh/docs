@@ -40,17 +40,17 @@ If you are the domain owner, you may transfer its management to OVHcloud as foll
 
 2. **Order a transfer**: this will consist in the same steps as [ordering a new domain name](/pages/web_cloud/domains/api_domain_order).
 
-    - Only the [offer](/pages/web/domains/api_domain_order#fetch-available-offers) will differ, since the available action will be `transfer` (instead of `create`) and the pricing mode will be `transfer-default`.
+    - Only the [offer](/pages/web_cloud/domains/api_domain_order#fetch-available-offers) will differ, since the available action will be `transfer` (instead of `create`) and the pricing mode will be `transfer-default`.
 
-    - Do not forget to add the authorization code to your order, as the `AUTH_INFO` [configuration value](/pages/web/domains/api_domain_order#add-configuration).
+    - Do not forget to add the authorization code to your order, as the `AUTH_INFO` [configuration value](/pages/web_cloud/domains/api_domain_order#add-configuration).
 
     When the order is complete, it will generate a new `DomainIncomingTransfer` task.
 
-3. **Monitor** the evolution of the `DomainIncomingTransfer` task using the [task API](/pages/web/domains/api_domain_tasks#view-pending-tasks).
+3. **Monitor** the evolution of the `DomainIncomingTransfer` task using the [task API](/pages/web_cloud/domains/api_domain_tasks#view-pending-tasks).
 
 4. If you did not add the authorization code to your order, or if it was invalid, the `DomainIncomingTransfer` task may result in error.
 
-    In that case, use the [task API](/pages/web/domains/api_domain_tasks#fix-and-relaunch-a-task-in-error) to send the valid code with the `authInfo` argument key, then relaunch the task.
+    In that case, use the [task API](/pages/web_cloud/domains/api_domain_tasks#fix-and-relaunch-a-task-in-error) to send the valid code with the `authInfo` argument key, then relaunch the task.
 
 The transfer should be completed by the registry after a few days.
 

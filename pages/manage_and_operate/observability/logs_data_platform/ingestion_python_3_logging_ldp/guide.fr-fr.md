@@ -65,7 +65,7 @@ Finished processing dependencies for logging-ldp==<version>
 
 The following example shows how to send log in Graylog TCP input:
 
-```python hl_lines="6 7"
+```python
 import logging
 from logging_ldp.formatters import LDPGELFFormatter
 from logging_ldp.handlers import LDPGELFTCPSocketHandler
@@ -87,7 +87,7 @@ if __name__ == '__main__':
 To automatically append meta data on all your logs, you can implement an
 alternate Schema:
 
-```python hl_lines="16 17"
+```python
 import logging
 from marshmallow import fields
 from logging_ldp.formatters import LDPGELFFormatter
@@ -116,7 +116,7 @@ if __name__ == '__main__':
 
 The log entry sent to Graylog will be something like:
 
-```json hl_lines="4"
+```json
 {
   "_app_name": "myapp",
   "_app_version": "0.0.1",
@@ -137,7 +137,7 @@ The log entry sent to Graylog will be something like:
 
 To define occasional meta data, you can define a Schema with Nested sub-items:
 
-```python hl_lines="18 20"
+```python
 import logging
 from marshmallow import Schema, fields
 from logging_ldp.formatters import LDPGELFFormatter
@@ -173,7 +173,7 @@ if __name__ == '__main__':
 
 The log entry sent will be:
 
-```json hl_lines="5"
+```json
 {
   "_manager_age_int": 51,
   "_manager_name": "Roger Smith",

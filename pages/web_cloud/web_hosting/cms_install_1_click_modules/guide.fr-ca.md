@@ -1,7 +1,7 @@
 ---
 title: "Installer votre site web avec un « module en 1 clic » (CMS)"
 excerpt: "Découvrez comment installer votre site web via nos « modules en 1 clic »"
-updated: 2023-03-17
+updated: 2023-10-23
 ---
 
 ## Objectif
@@ -14,14 +14,18 @@ Les « modules en 1 clic » permettent l'installation facile et rapide d'un site
 
 ## Prérequis
 
-- Disposer d'une offre d'[hébergement web OVHcloud](https://www.ovhcloud.com/fr-ca/web-hosting/) incluant au moins une base de données.
+- Disposer d'une offre d'[hébergement web OVHcloud](https://www.ovhcloud.com/fr-ca/web-hosting/) incluant au moins une base de données. 
 - Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
-- Utiliser [une version de PHP compatible](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014) sur votre hébergement web OVHcloud.
-- Avoir [configuré correctement votre fichier .ovhconfig](/pages/web_cloud/web_hosting/ovhconfig_configuration).
+- Utiliser une version récente de PHP et un environnement d'exécution compatible sur votre hébergement web OVHcloud. Si besoin, consultez notre [guide](/pages/web_cloud/web_hosting/configure_your_web_hosting) sur le sujet pour changer rapidement cette configuration.
 - Le répertoire (dossier racine) où sera installé votre « module en 1 clic » doit être vide ou actuellement inexistant.
 - Le domaine (avec sous-domaine si souhaité) qui sera utilisé pour votre site web doit être déclaré en tant que [Multisite](/pages/web_cloud/web_hosting/multisites_configure_multisite) sur votre hébergement web OVHcloud.
 
 ## En pratique
+
+> [!primary]
+>
+> Si vous rencontrez des difficultés en suivant l'une des étapes décrites ci-dessous, consultez notre documentation spécifique sur les [erreurs les plus fréquentes liées aux « modules en 1 clic »](/pages/web_cloud/web_hosting/diagnostic_errors_module1clic). 
+>
 
 ### Étape 1 - choisir correctement son CMS
 
@@ -79,6 +83,11 @@ Choisissez le nom de domaine de votre CMS, contrôlez le répertoire cible qui a
 
 Une fois l'installation terminée, vous recevrez un e-mail contenant les informations de connexion à l'interface administrateur (*back office*) de votre CMS. Connectez-vous à celle-ci pour personnaliser votre site web.
 
+> [!primary]
+>
+> L'installation et la réception de l'e-mail peuvent prendre jusqu'à 15 minutes à compter du moment où vous avez cliqué sur le bouton `Installer`{.action} dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
+>
+
 #### Installation avancée d'un « module en 1 clic »
 
 Pour réaliser cette méthode d'installation, assurez-vous que la case `Installation en mode avancé`{.action} est cochée, puis cliquez sur le bouton `Suivant`{.action} :
@@ -88,6 +97,15 @@ Pour réaliser cette méthode d'installation, assurez-vous que la case `Installa
 ##### Choisir la base de données
 
 Renseignez les informations de connexion à votre base de données. 
+
+> [!warning]
+>
+> Si les informations que vous indiquez sont incorrectes, l'installation n'arrivera pas à son terme. Pour éviter cela, nous vous invitons en premier lieu à tester la connexion à votre base de données.
+> 
+> Pour récupérer les identifiants de connexion à votre base de données incluse avec votre hébergement web, consultez [ce guide](/pages/web_cloud/web_hosting/sql_create_database).
+>
+> Pour récupérer les identifiants de connexion à votre base de données créée sur une instance Web Cloud Databases, consultez [ce guide](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
+>
 
 ![Base de données pour installation avancée](images/advanced_installation_database.png){.thumbnail}
 
@@ -119,15 +137,6 @@ Pour les bases de données créées sur une offre Web Cloud Databases, référez
 - *Mot de passe* : il vous a été envoyé par e-mail lors de la création de la base de données. Il est possible que vous l'ayez modifié entre temps.
 
 Une fois les informations complétées, cliquez sur le bouton `Suivant`{.action}.
-
-> [!warning]
->
-> Si les informations que vous indiquez sont incorrectes, l'installation n'arrivera pas à son terme. Pour éviter cela, nous vous invitons en premier lieu à tester la connexion à votre base de données.
-> 
-> Pour récupérer les identifiants de connexion à votre base de données incluse avec votre hébergement web, consultez [ce guide](/pages/web_cloud/web_hosting/sql_create_database).
->
-> Pour récupérer les identifiants de connexion à votre base de données créée sur une instance Web Cloud Databases, consultez [ce guide](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
->
 
 ##### Configurer le module
 
@@ -186,7 +195,7 @@ Découvrez nos [offres Web Cloud Databases](https://www.ovh.com/fr/cloud/cloud-d
 
 [Gérer votre CMS](/pages/web_cloud/web_hosting/cms_manage_1_click_module)
 
-[Désinstaller votre CMS](/pages/web/hosting/cms_manage_1_click_module#etape-3-supprimer-votre-module)
+[Désinstaller votre CMS](/pages/web_cloud/web_hosting/cms_manage_1_click_module#etape-3-supprimer-votre-module)
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/directory/).
 

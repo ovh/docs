@@ -53,7 +53,7 @@ Operacja polega na identyfikacji problemu i jego rozwiązaniu, a następnie odbl
 - Zatrzymaj wysyłkę e-maili (na przykład: zatrzymać wszystkie programy poczty elektronicznej, takie jak qmail, Postfix, Sendmail itp.).
 - Sprawdź kolejkę wiadomości e-mail (np. qmHandle dla qmail, postqueue -p dla Postfix) i wyczyść.
 - Analizuj logi za pomocą **Message-ID** w alercie blokady.
-- Jeśli wysyłasz SPAM lub nieprawidłowe wiadomości e-mail, rekomendujemy rozwiązanie problemu **przed** odblokowaniem adresu IP. Proszę zapoznać się z tym przewodnikiem, aby uzyskać [najlepsze praktyki (EN)](/pages/cloud/dedicated/antispam_best_practices#bestpractices) w zakresie poczty elektronicznej
+- Jeśli wysyłasz SPAM lub nieprawidłowe wiadomości e-mail, rekomendujemy rozwiązanie problemu **przed** odblokowaniem adresu IP. Proszę zapoznać się z tym przewodnikiem, aby uzyskać [najlepsze praktyki (EN)](/pages/bare_metal_cloud/dedicated_servers/antispam_best_practices#bestpractices) w zakresie poczty elektronicznej
 
 Po rozwiązaniu problemu możesz odblokować Destination IP wykonując następujące kroki.
 
@@ -66,7 +66,7 @@ Po rozwiązaniu problemu możesz odblokować Destination IP wykonując następuj
 
 #### Odblokuj adres IP w Panelu klienta
 
-W [Panelu klienta OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) przejdź do sekcji `Bare Metal Cloud`{.action} i kliknij `IP`{.action}.
+W [Panelu klienta OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) przejdź do sekcji `Bare Metal Cloud`{.action} i kliknij `Network`{.action}. Następnie kliknij przycisk `IP`{.action}.
 
 W żółtym ramce dla alertów kliknij rozwijaną strzałkę `Wyświetl wszystkie moje alerty`{.action}, aby wyświetlić wszystkie alerty na Twoim adresie IP.
 
@@ -212,7 +212,7 @@ Odblokowanie adresu IP może zająć kilka minut.
 
 ### W przypadku wyników fałszywie dodatnich
 
-W niektórych przypadkach alert antyspamowy może być fałszywie dodatni. Jeśli sprawdzasz i odkryłeś, że **Message-ID** jest przypisany do poprawnego adresu e-mail, upewnij się,  że Twoje wiadomości e-mail są zgodne z [RFC (EN)](/pages/cloud/dedicated/antispam_best_practices#rfc) i [dobrymi praktykami (EN)](/pages/cloud/dedicated/antispam_best_practices#bestpractices).
+W niektórych przypadkach alert antyspamowy może być fałszywie dodatni. Jeśli sprawdzasz i odkryłeś, że **Message-ID** jest przypisany do poprawnego adresu e-mail, upewnij się,  że Twoje wiadomości e-mail są zgodne z [RFC (EN)](/pages/bare_metal_cloud/dedicated_servers/antispam_best_practices#rfc) i [dobrymi praktykami (EN)](/pages/bare_metal_cloud/dedicated_servers/antispam_best_practices#bestpractices).
 
 ## Sprawdź również
  

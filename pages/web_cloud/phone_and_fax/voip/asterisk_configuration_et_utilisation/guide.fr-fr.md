@@ -1,6 +1,5 @@
 ---
 title: 'Asterisk - configuration et utilisation'
-legacy_guide_number: '7536698'
 updated: 2018-03-26
 ---
 

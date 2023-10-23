@@ -4,26 +4,6 @@ excerpt: Find out how to install Ghost  on your POWER web hosting plan
 updated: 2021-02-04
 ---
 
-<style>
- pre {
-     font-size: 14px;
- }
- pre.console {
-   background-color: #300A24; 
-   color: #ccc;
-   font-family: monospace;
-   padding: 5px;
-   margin-bottom: 5px;
- }
- pre.console code {
-   border: solid 0px transparent;
-   font-family: monospace !important;
- }
- .small {
-     font-size: 0.75em;
- }
-</style>
-
 ## Objective
 
 You've subscribed to a Web POWER web hosting plan to deploy **Node.js** applications, and you want to deploy a [Ghost](https://ghost.org/) blogging platform on it.
@@ -49,9 +29,9 @@ Let's suppose you have the default configuration for Node.js hosting:
 
 > [!primary]
 >
-> To verify your configuration, you can use the [Retrieve active configuration](/pages/labs/web-power/getting-started#api-get-active-configuration) API endpoint
+> To verify your configuration, you can use the [Retrieve active configuration](/pages/ovhcloud_labs/power_web_hosting/getting-started#api-get-active-configuration) API endpoint
 
-[Connect via SSH](/pages/labs/web-power/getting-started#ssh) to your POWER web hosting.
+[Connect via SSH](/pages/ovhcloud_labs/power_web_hosting/getting-started#ssh) to your POWER web hosting.
 Let's begin by configuring the domain name in a `DOMAIN` variable:
 
 ```sh
@@ -92,13 +72,14 @@ VERSION=$(ghost --version | sed -n 's/Ghost version: \([0-9.]*\).*/\1/p')
 ln -fs versions/${VERSION}/index.js index.js
 ```
 
-[Restart your instance](/pages/labs/web-power/getting-started#restart) and your Ghost will be online.
+[Restart your instance](/pages/ovhcloud_labs/power_web_hosting/getting-started#restart) and your Ghost will be online.
 
 ![Ghost](images/nodejs-install-ghost-01.png){.thumbnail}
 
 Terminal output:
 
-<pre class="console"><code> $ echo "Enter your domain (my-domain.ovh for example):"
+```console
+ $ echo "Enter your domain (my-domain.ovh for example):"
 Enter your domain (my-domain.ovh for example):
 
 ~/www $ read DOMAIN
@@ -155,7 +136,7 @@ added 420 packages from 208 contributors and audited 420 packages in 20.791s
 ~/www $ mkdir -p tmp
 
 ~/www $ touch tmp/restart.txt
-</code></pre>
+```
 
 ## Go further
 

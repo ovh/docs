@@ -1,6 +1,5 @@
 ---
 title: 'Delegowanie zarządzania kontami e-mail innej osobie'
-legacy_guide_number: 1933
 excerpt: 'Dowiedz się, jak delegować uprawnienia do zarządzania kontami e-mail w ramach usługi MX Plan'
 updated: 2021-10-08
 ---
@@ -32,7 +31,7 @@ Delegacja uprawnień daje użytkownikowi konta e-mail możliwość samodzielnego
 |Poprzednia wersja usługi MX Plan|Nowa wersja usługi MX Plan|
 |---|---|
 |![email](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> Znajdź nazwę oferty w polu „Abonament”|![email](images/mxplan-starter-new-step1.png){.thumbnail}<br>Znajdź Oznaczenie serwera w polu "Podsumowanie"|
-|Przejdź do sekcji "[W praktyce](#oldmxplan)"|Zapoznaj się z naszym przewodnikiem "[Sprawdź konto Exchange w interfejsie OWA](/pages/web/emails/email_owa#zmiana-hasla)"|
+|Przejdź do sekcji "[W praktyce](#oldmxplan)"|Zapoznaj się z naszym przewodnikiem "[Sprawdź konto Exchange w interfejsie OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa#zmiana-hasla)"|
 
 ## W praktyce <a name="oldmxplan"></a>
 

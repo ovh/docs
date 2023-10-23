@@ -35,7 +35,7 @@ Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?actio
 
 ![Volume Snapshot](images/volume_snapshot01.png){.thumbnail}
 
-Klicken Sie rechts neben dem betreffenden Volume auf `...`{.action} und dann auf `Snapshot erstellen`{.action}. (Es ist nicht notwendig, das Volume zuerst von seiner Instanz zu trennen.) Wenn Sie Ihr Volume jedoch abtrennen möchten, lesen Sie [diesen Abschnitt](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance#linux) der entsprechenden Anleitung für Linux und [diesen Abschnitt](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance#windows) für Windows.
+Klicken Sie rechts neben dem betreffenden Volume auf `...`{.action} und dann auf `Snapshot erstellen`{.action}. (Es ist nicht notwendig, das Volume zuerst von seiner Instanz zu trennen.) Wenn Sie Ihr Volume jedoch abtrennen möchten, lesen Sie [diesen Abschnitt](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance#linux) der entsprechenden Anleitung für Linux und [diesen Abschnitt](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance#windows) für Windows.
 
 ![Volume Snapshot](images/volume_snapshot02.png){.thumbnail}
 

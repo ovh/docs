@@ -1,7 +1,7 @@
 ---
-title: "Tutoriel - Que faire lorsque ma base de données est saturée ?"
+title: "Hébergement web : ma base de données est saturée, que faire ?"
 excerpt: "Découvrez comment agir lorsque votre base de données est saturée"
-updated: 2023-02-16
+updated: 2023-09-21
 ---
 
 ## Objectif
@@ -52,17 +52,21 @@ La première étape consiste à identifier la ou les tables volumineuses présen
 
 #### 1.1 - Se connecter à la base de données via phpMyAdmin
 
-Récupérez le mot de passe d'accès à votre base de données directement dans le fichier de configuration de votre site web. Réalisez cette action à l'aide de l'**étape 1** de notre guide sur [le changement du mot de passe d'une base de données](/pages/web_cloud/web_hosting/sql_change_password).
+Récupérez les informations d'accès à votre base de données directement dans le fichier de configuration de votre site web. Réalisez cette action à l'aide de l'**étape 1** de notre guide sur [le changement du mot de passe d'une base de données](/pages/web_cloud/web_hosting/sql_change_password).
 
 Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) et sélectionnez `Web Cloud`{.action} dans la barre de navigation en haut de l’écran. Cliquez sur `Hébergements`{.action} puis choisissez l’hébergement web associé à votre base de données mutualisée OVHcloud. Positionnez-vous enfin sur l'onglet `Bases de données`{.action}.
 
+Un tableau listant vos bases de données s'affiche sur la partie basse de l'écran.
+
 ![phpMyAdmin Access](images/pma_access.png){.thumbnail}
+
+Notez, **pour votre base de données saturée**, son `Nom d'utilisateur` et son `Adresse du serveur` présents dans le tableau listant vos bases de données. 
 
 Toujours depuis l'onglet `Bases de données`{.action}, cliquez sur le bouton `...`{.action} à droite de la base de données qui est saturée puis sur `Accéder à phpMyAdmin`{.action}.
 
 ![phpMyAdmin Go Login](images/pma_interface.png){.thumbnail}
 
-Renseignez le mot de passe d'accès à votre base de données en complément des informations pré-remplies puis cliquez sur `Exécuter`{.action}.
+Renseignez les informations d'accès à votre base de données puis cliquez sur `Connexion`{.action}.
 
 #### 1.2 - Rechercher les tables les plus volumineuses
 
@@ -116,15 +120,15 @@ Une fois que vous avez déterminé si le contenu de vos tables est nécessaire o
 
 Vous devrez basculer votre base de données sur une base de données plus volumineuse.
 
-Consultez notre offre de bases de données [SQL Privé/Web Cloud Databases](https://www.ovhcloud.com/fr-ca/web-hosting/options/) pour choisir votre nouveau service de base de données. 
+Consultez notre offre de bases de données [Web Cloud Databasess](https://www.ovh.com/fr-ca/cloud-databases/) pour choisir votre nouveau service de base de données.
 
 Nous recommandons cette offre pour les bases de données volumineuses.
 
 Suivez ensuite nos guides pour déplacer le contenu de votre ancienne base de données vers la nouvelle :
 
 - [Exporter votre base de données existante](/pages/web_cloud/web_hosting/sql_database_export)
-- [Premiers pas avec l'offre SQL Privé/Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)
-- [Importer votre ancienne base de données dans votre offre SQL Privé/Web Cloud Databases](/pages/web_cloud/web_cloud_databases/restore-import-on-database-server)
+- [Premiers pas avec l'offre Web Cloud Databasess](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)
+- [Importer votre ancienne base de données dans votre offre Web Cloud Databasess](/pages/web_cloud/web_cloud_databases/restore-import-on-database-server)
 
 #### Cas n°2 - Une partie ou l'ensemble du contenu de la table volumineuse n'est pas nécessaire au fonctionnement de votre site
 

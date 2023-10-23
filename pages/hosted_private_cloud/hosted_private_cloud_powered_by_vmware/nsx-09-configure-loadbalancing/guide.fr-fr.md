@@ -18,7 +18,7 @@ NSX permet l'équilibrage de charge (*Load Balancing*) sur une couche de niveau 
 
 ## Prérequis
 
-- Être contact administrateur de l'infrastructure [Hosted Private Cloud powered by VMware](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), celui-ci recevant les identifiants de connexion.
+- Être contact administrateur de l'infrastructure [VMware on OVHcloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), celui-ci recevant les identifiants de connexion.
 - Avoir un identifiant utilisateur actif avec les droits spécifiques pour NSX (créé dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr))
 - Avoir **NSX** déployé avec deux segments configurés dans votre configuration NSX. Vous pouvez vous aider de notre guide sur la [gestion des segments dans NSX](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx-02-segment-management).
 - Avoir deux machines virtuelles avec le service NGINX activé en HTTP sur un segment.
@@ -188,7 +188,7 @@ Saisissez `to-lb-virtual-server`{.action} dans le champ **Name** de votre règle
 
 - **Action** : `DNAT`{.action}.
 - **Destination IP** : adresse IP virtuelle de votre T0, telle que `198.51.100.1`.
-- **Translated IP** : adresse IP de votre serveur virtuel, telle que `192.168.102.103`.
+- **Translated IP** : adresse IP de votre serveur virtuel, telle que `192.168.102.3`.
 - **Service PORT** : choisissez le port prédéfini `HTTP| 80`{.action}.
 
 Cliquez ensuite sur `SAVE`{.action}.

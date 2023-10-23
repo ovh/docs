@@ -1,7 +1,6 @@
 ---
 title: Object Storage Swift - Configura un dominio su un container del tuo Object Storage
 excerpt: Configura un dominio su un container del tuo Object Storage
-legacy_guide_number: g2006
 updated: 2021-10-27
 ---
 

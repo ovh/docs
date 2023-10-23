@@ -28,7 +28,7 @@ In addition to providing [contacts](/pages/account_and_service_management/accoun
 
 > [!warning]
 >
-> The following instructions describe the most common way to change a domain name owner. They are valid for for most **T**op **L**evel **D**omains (**TLD**). The **TLD** is the domain name extension, i.e. the last part of a domain name, such as *.com*, *.net*, *.fr*, etc.
+> The following instructions describe the most common way to change a domain name owner. They are valid for most **T**op **L**evel **D**omains (**TLD**). The **TLD** is the domain name extension, i.e. the last part of a domain name, such as *.com*, *.net*, *.fr*, etc.
 >
 > The specific rules for processes regarding **TLD**s are defined by the corresponding allocation authority i.e. the **registry**. Registrars such as OVHcloud must adhere to these rules and have no influence on registry decisions.
 >

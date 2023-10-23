@@ -1,7 +1,6 @@
 ---
 title: 'Envoyer des SMS avec l’API OVHcloud en Java'
 excerpt: 'Comment envoyer des SMS avec l’api OVHcloud RESTful en Java'
-legacy_guide_number: g1670
 updated: 2020-06-01
 ---
 

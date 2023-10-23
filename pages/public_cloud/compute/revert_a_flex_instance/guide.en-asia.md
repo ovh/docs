@@ -13,7 +13,7 @@ As your infrastructure is constantly evolving, you may need to increase the stor
 
 ## Requirements
 
-- An [OVHcloud Public Cloud instance](/pages/platform/public-cloud/public-cloud-first-steps#step-3-creating-an-instance) with the flex option
+- An [OVHcloud Public Cloud instance](/pages/public_cloud/compute/public-cloud-first-steps#step-3-creating-an-instance) with the flex option
 - [Access to the Horizon interface](/pages/public_cloud/compute/introducing_horizon)
 
 ## Instructions
@@ -54,7 +54,7 @@ Once the process is completed, your instance will be reverted to a classic model
 
 In case you wish to switch back to a flex model, you can do this by performing the same steps mentioned [above](#flavorchoice) and select a flex « flavor » instead of a classic one. 
 
-Alternatively, you can [edit the configuration of the instance](/pages/platform/public-cloud/first_steps_with_public_cloud_instance#edit-the-configuration-of-an-instance) in the OVHcloud Control Panel.
+Alternatively, you can [edit the configuration of the instance](/pages/public_cloud/compute/first_steps_with_public_cloud_instance#edit-the-configuration-of-an-instance) in the OVHcloud Control Panel.
 
 ## Go further
 

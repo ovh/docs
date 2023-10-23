@@ -1,7 +1,6 @@
 ---
 title: Gestionar las instantáneas de una instancia
 excerpt: Cómo gestionar una instantánea de una instancia en Horizon.
-legacy_guide_number: g1770
 updated: 2022-01-31
 ---
 
@@ -18,7 +17,7 @@ Para ello, puede crear instantáneas (snapshot) de sus instancias, que podrá ut
 
 ## Requisitos
 
-- Haber [creado una instancia de Public Cloud](/pages/platform/public-cloud/public-cloud-first-steps#3-crear-una-instancia) en su cuenta de OVHcloud
+- Haber [creado una instancia de Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps#3-crear-una-instancia) en su cuenta de OVHcloud
 - [Conectarse a Horizon](/pages/public_cloud/compute/introducing_horizon)
 
 ## Procedimiento

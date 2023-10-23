@@ -195,7 +195,7 @@ Una risposta **"200 Permissions changed on /"** conferma che l'operazione è sta
 
 [Attivazione del firewall applicativo](/pages/web_cloud/web_hosting/multisites_activating_application_firewall)
 
-[Modificare la versione di PHP su un hosting Web](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014)
+[Modificare la versione di PHP su un hosting Web](/pages/web_cloud/web_hosting/configure_your_web_hosting)
 
 Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
 

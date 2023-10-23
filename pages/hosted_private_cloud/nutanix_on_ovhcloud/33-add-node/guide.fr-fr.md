@@ -2,11 +2,31 @@
 title: "Ajout d'un nœud dans un cluster Nutanix"
 excerpt: 'Ajouter un nœud et valider son bon fonctionnement'
 hidden: true
-kb: Hosted Private Cloud
-category_l1: Nutanix on OVHcloud
-category_l2: Advanced usage
-updated: 2022-04-05
+updated: 2023-09-14
 ---
+
+<style>
+ pre {
+     font-size: 14px !important;
+ }
+ pre.bgwhite {
+   background-color: #fff !important;
+   color: #000 !important;
+   font-family: monospace !important;
+   padding: 5px !important;
+   margin-bottom: 5px !important;
+ }
+ pre.bgwhite code {
+   background-color: #fff !important;
+   border: solid 0px transparent !important;
+   font-family: monospace !important;
+   font-size: 0.90em !important;
+   color: #000 !important;
+ }
+ .small {
+     font-size: 0.90em !important;
+ }
+</style>
 
 ## Objectif
 
@@ -23,6 +43,7 @@ Les clusters Nutanix sont évolutifs. Il est possible de rajouter des nœuds dan
 
 - Disposer d'un cluster Nutanix dans votre compte OVHcloud
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- Être connecté sur la page des [API OVHcloud](https://api.ovh.com/).
 - Être connecté sur le cluster via Prism Central.
 - Un serveur physique prêt à être configuré ajouté dans l'espace client OVHCloud.
 
@@ -36,11 +57,77 @@ Les nœuds à rajouter doivent avoir la même version d'**AOS** que ceux du clus
 
 ## En pratique
 
+### Vérification de la livraison du nœud.
+
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et vérifiez qu'un nœud supplémentaire apparaît bien dans le cluster Nutanix.
+
+![Nouveau Noeud](images/scaleup1.png){.thumbnail}
+
+Vous pouvez également le vérifier via l'API OVHcloud.
+
+Utilisez l'appel API suivant :
+
+> [!api]
+>
+> @api {GET} /nutanix/{serviceName}
+>
+
+- `serviceName` : saisissez le nom du cluster
+
+![Nouveau Noeud via APIV6](images/scaleup2.png){.thumbnail}
+
+Le nouveau nœud apparaît avec des IP en 0.0.0.0.
+
+### Installation du Noeud.
+
+Pour installer le nouveau nœud, vous devez modifier les propriété du cluster en faisant un `PUT` sur le cluster.
+
+Pour cela, utilisez l'appel API suivant :
+
+> [!api]
+>
+> @api {PUT} /nutanix/{serviceName}
+>
+
+> [!warning]
+> Veillez à décochez la case `redeployCluster`.
+
+Cochez la case `scaleUp`.
+Saisissez les informations suivantes en dessous de **nodes** :
+
+- **ahvip** : Adresse IP de l'hyperviseur du nouveau nœud.
+- **cvmip** : Adresse IP de la CVM du nouveau nœud.
+
+> [!warning]
+> Ces adresses IP ne doivent pas être déjà utilisées et doivent correpondre à votre plan d'adressage.
+
+Vous devez également compléter la version de deployment. Elle peut ne pas correspondre avec la version courante de votre cluster. Cela ne pose pas de problèmes, le nœud sera modifié par le processus d'ajout dans le cluster via Prism Element.
+
+![PUT scaleUp via APIV6](images/scaleup3.png){.thumbnail}
+
+Cliquez sur `Execute`{.action} pour envoyer la requête.
+
+Dans l'onglet « Result », le nouveau nœud apparaît avec la nouvelle adresse IP.
+
+A la fin de l'installation, vous recevrez un email pour vous indiquer que le nœud est prêt.
+
+<pre class="bgwhite"><code>
+Dear Customer,
+
+Your server has just been installed.
+
+You must now add it back to your Nutanix cluster by connecting to Prism Central: https://cluster-xxxx.nutanix.ovh.net:9440
+
+We remain at your disposal for any further information.
+
+The OVHcloud Team
+</code></pre>
+
 ### Ajout d'un nœud dans un cluster Nutanix.
 
 Connectez-vous à **Prism Element** au travers de **Prism Central**.
 
-Pour plus d'informations sur la connexion au cluster; reportez-vous à la section « [Aller plus loin](#gofurther) » de ce guide. 
+Pour plus d'informations sur la connexion au cluster, reportez-vous à la section « [Aller plus loin](#gofurther) » de ce guide. 
 
 Sur le tableau de bord, les 3 nœuds sont visibles dans `Hardware Summary`. Cliquez sur `View Details`{.action} au milieu à gauche pour faire apparaître plus de détails.
 

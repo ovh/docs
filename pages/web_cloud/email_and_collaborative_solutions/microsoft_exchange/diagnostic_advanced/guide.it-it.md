@@ -19,7 +19,7 @@ Gli errori sugli account email Exchange possono avere diverse cause. Una diagnos
 - Disporre di una [soluzione Exchange OVHcloud](https://www.ovhcloud.com/it/emails/hosted-exchange/) già installata
 - Disporre delle credenziali di accesso per l'account Exchange da verificare
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
-- Essere aggiornato nei [pagamenti](/pages/account/billing/invoice_management#pay-bills) di questo servizio e del dominio associato
+- Essere aggiornato nei [pagamenti](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) di questo servizio e del dominio associato
 
 ## Procedura
 
@@ -58,7 +58,7 @@ Consulta la nostra guida [Cosa fare in caso di account bloccato per Spam?](/page
 ### L'abbonamento all'account è scaduto <a name="expired"></a>
 
 Il tuo abbonamento non è più attivo e l'invio e la ricezione sono stati disattivati.<br>
-Per riattivare il tuo abbonamento, è sufficiente riconfigurarne la [periodicità di fatturazione](/pages/web/microsoft-collaborative-solutions/manage_billing_exchange#periodicity) nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
+Per riattivare il tuo abbonamento, è sufficiente riconfigurarne la [periodicità di fatturazione](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_billing_exchange#periodicity) nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
 
 ### La politica di sicurezza ha bloccato l'account
 

@@ -1,7 +1,7 @@
 ---
 title: "Effettuare il backup di un'istanza"
 excerpt: "Come eseguire le prime operazioni su un'istanza Public Cloud dallo Spazio Cliente OVHcloud"
-updated: 2023-01-04
+updated: 2023-09-21
 ---
 
 > [!primary]
@@ -85,6 +85,9 @@ Le pianificazioni possono essere create ed eliminate nella sezione `Workflow Man
 I backup delle istanze sono gestiti nella sezione `Instance Backup`{.action} dello Spazio Cliente Public Cloud.
 
 ![public-cloud-instance-backup](images/createbackup10.png){.thumbnail}
+
+> [!warning]
+> **Si noti che non è possibile eliminare un backup dell'istanza se un'istanza creata da questo backup è in esecuzione al momento dell'azione di eliminazione.**
 
 Questa guida ti mostra come utilizzare i backup per clonare o ripristinare le istanze in [questa guida](/pages/public_cloud/compute/create_restore_a_virtual_server_with_a_backup).
 

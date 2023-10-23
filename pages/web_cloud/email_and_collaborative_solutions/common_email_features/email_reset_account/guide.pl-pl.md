@@ -29,7 +29,7 @@ Chcesz:
 OVHcloud oferuje 3 rozwiązania poczty elektronicznej. Pojęcie usunięcia konta różni się w zależności od wybranej oferty.
 
 - **E-mail MXplan**: oferta ta jest sprzedawana w formie pakietu kilku kont e-mail. Po usunięciu konta, uruchomisz lokalizację dla pakietu. 
-- **Email Pro** i **Hosted Exchange**: obie te oferty są na zamówienie. możesz zamówić indywidualny abonament na konto e-mail. Jeśli chcesz usunąć konto e-mail, musisz wykonać **reset**. Po zresetowaniu konta e-mail możesz ponownie użyć tego konta do utworzenia nowego konta e-mail. Możesz również [zrezygnować z subskrypcji](/pages/web/microsoft-collaborative-solutions/manage_billing_exchange#usuwanie-kont) tego konta, jeśli chcesz go definitywnie usunąć.
+- **Email Pro** i **Hosted Exchange**: obie te oferty są na zamówienie. możesz zamówić indywidualny abonament na konto e-mail. Jeśli chcesz usunąć konto e-mail, musisz wykonać **reset**. Po zresetowaniu konta e-mail możesz ponownie użyć tego konta do utworzenia nowego konta e-mail. Możesz również [zrezygnować z subskrypcji](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_billing_exchange#usuwanie-kont) tego konta, jeśli chcesz go definitywnie usunąć.
 
 ### Usuń lub zresetuj konto e-mail
 

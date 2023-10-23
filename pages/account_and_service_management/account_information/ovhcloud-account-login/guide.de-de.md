@@ -58,7 +58,7 @@ Sobald Sie eingeloggt sind, können Sie Ihre Kundenkennung in Ihrem Kundencenter
 
 ### Ich habe mein Passwort verloren
 
-Wenn Sie das Passwort nicht zur Hand haben, folgen Sie der [Anleitung zur Passwortänderung](/pages/account/customer/manage-ovh-password#wenn-sie-ihr-aktuelles-passwort-nicht-kennen).
+Wenn Sie das Passwort nicht zur Hand haben, folgen Sie der [Anleitung zur Passwortänderung](/pages/account_and_service_management/account_information/manage-ovh-password#wenn-sie-ihr-aktuelles-passwort-nicht-kennen).
 
 ### Ich habe mein Passwort verloren und meine Haupt-E-Mail-Adresse ist nicht mehr gültig
 
@@ -68,7 +68,7 @@ In diesem Fall kann das Passwort nicht über die Loginseite zurückgesetzt werde
 
 Kontaktieren Sie den OVHcloud Support unter +49 681 906730, um diese Backup-Adresse als Haupt-E-Mail-Adresse einzurichten.
 
-Nachdem diese Umstellung erfolgt ist, [richten Sie **erneut** eine Backup-Adresse](/pages/account/customer/all_about_username#backup-email) ein.
+Nachdem diese Umstellung erfolgt ist, [richten Sie **erneut** eine Backup-Adresse](/pages/account_and_service_management/account_information/all_about_username#backup-email) ein.
 
 #### Wenn Sie keine sekundäre E-Mail-Adresse hinterlegt haben oder diese ebenfalls ungültig ist
 
@@ -84,7 +84,7 @@ Dieser Vorgang kann mehrere Tage in Anspruch nehmen, wobei manuelle und automati
 
 In diesem Fall können Sie die Notfall-Codes der Zwei-Faktor-Authentifizierung verwenden, die Authentifizierungsanwendung auf einem anderen Gerät oder die Zwei-Faktor-Authentifizierung deaktivieren.
 
-Die entsprechenden Schritte finden Sie in unserer Anleitung "[Den OVHcloud Kunden-Account mit der Zwei-Faktor-Authentifizierung absichern](/pages/account/customer/secure-ovhcloud-account-with-2fa#was-soll-ich-tun-wenn-eines-meiner-peripheriegerate-verloren-geht-oder-nicht-mehr-funktioniert)".
+Die entsprechenden Schritte finden Sie in unserer Anleitung "[Den OVHcloud Kunden-Account mit der Zwei-Faktor-Authentifizierung absichern](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa#was-soll-ich-tun-wenn-eines-meiner-peripheriegerate-verloren-geht-oder-nicht-mehr-funktioniert)".
 
 ### Ich habe die Zwei-Faktor-Authentifizierung für meinen Account nicht aktiviert, aber trotzdem werde ich um einen Code gebeten
 

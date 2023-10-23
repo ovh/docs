@@ -61,11 +61,11 @@ Teraz możesz zacząć korzystać z uprawnienia. Upewnij się, że posiadasz dan
 
 Sposób postępowania jest inny w zależności od prawa lub praw, jakie przydzieliłeś oraz programu lub interfejsu, którego będziesz używał do dostępu do konta e-mail. Kontynuuj lekturę niniejszego przewodnika w sekcji, która dotyczy prawa lub praw, które Cię dotyczą.
 
-- [Korzystanie z „prawa dostępu”](/pages/web/microsoft-collaborative-solutions/feature_delegation#21-korzystanie-z-prawa-dostepu){.external}
+- [Korzystanie z „prawa dostępu”](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_delegation#21-korzystanie-z-prawa-dostepu){.external}
 
-- [Korzystanie z „prawa do wysyłki poczty”](/pages/web/microsoft-collaborative-solutions/feature_delegation#22-korzystanie-z-prawa-do-wysylki-poczty){.external}
+- [Korzystanie z „prawa do wysyłki poczty”](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_delegation#22-korzystanie-z-prawa-do-wysylki-poczty){.external}
 
-- [Korzystanie z „prawa do wysyłki poczty w imieniu”](/pages/web/microsoft-collaborative-solutions/feature_delegation#23-korzystanie-z-prawa-do-wysylki-poczty-w-imieniu){.external}
+- [Korzystanie z „prawa do wysyłki poczty w imieniu”](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/feature_delegation#23-korzystanie-z-prawa-do-wysylki-poczty-w-imieniu){.external}
 
 > [!warning]
 >

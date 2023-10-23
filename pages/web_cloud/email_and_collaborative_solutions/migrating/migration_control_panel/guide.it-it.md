@@ -107,7 +107,7 @@ Conferma la password associata all'indirizzo email sorgente (quello che vuoi mig
 >
 >![exchange](images/account_migration_adddomain.png){.thumbnail}
 >
-> Per maggiori dettagli sull'aggiunta di un dominio, segui [la guida Email Pro](/pages/web/emails-pro/first_config#step-2-aggiungi-il-dominio) o [la guida Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain).
+> Per maggiori dettagli sull'aggiunta di un dominio, segui [la guida Email Pro](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config#step-2-aggiungi-il-dominio) o [la guida Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain).
 
 La migrazione del tuo MXPlan avverrà in 3 step, **Rinommer**, **Creare** e **Migrare**.
 

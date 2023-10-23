@@ -1,7 +1,7 @@
 ---
 title: MongoDB - Tutoriel - Construire une application NodeJS connectée au service OVHcloud Managed MongoDB (EN)
 excerpt: "Find out how to build a NodeJS application connected to an OVHcloud Managed MongoDB service"
-updated: 2022-07-27
+updated: 2023-10-10
 ---
 
 ## Objective
@@ -55,11 +55,11 @@ After this a `package.json` file will be created:
 
 Our app directory is now set.
 
-The first thing we need to create is a server. In order to create that, we will be making use of a framework named **Express.**
+The first thing we need to do is to create a server. In order to create that, we will be making use of a framework named **Express.**
 
 ### Express.js
 
-Express.js, or simply Express, is a web application framework for Node.js. Express [provides a robust set of features for web and mobile applications](https://expressjs.com/) and a thin layer of fundamental web application features, without obscuring Node.js features.
+[Express.js](https://expressjs.com/), or simply Express, is a web application framework for Node.js. Express provides a robust set of features for web and mobile applications and a thin layer of fundamental web application features, without obscuring Node.js features.
 
 Install Express.js using the following command:
 
@@ -87,7 +87,7 @@ var express = require('express'),
 And we can start listening to a port using the code:
 
 ```javascript
-var server = app.listen(3000, () => {  
+app.listen(3000, () => {  
  console.log('server is running on port', server.address().port);  
 });
 ```
@@ -97,33 +97,41 @@ Now we need to create an HTML file, `index.html`, that displays our UI.
 ```html
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>My First Node App</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+    integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+    integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
+    integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+    crossorigin="anonymous"></script>
 </head>
-<body>
-<div class="container">
-  <div class="jumbotron">
-    <h1 class="display-4">Send Message</h1>
-    <br />
-    <input id = "name" class="form-control" placeholder="Name">
-    <br />
-    <textarea id = "message" class="form-control" placeholder="Your Message Here"></textarea>
-    <br />
-    <button id="send" class="btn btn-success">Send</button>
-  </div>
-  <div id="messages">
 
+<body>
+  <div class="container">
+    <div class="jumbotron">
+      <h1 class="display-4">Send Message</h1>
+      <br />
+      <input id="name" class="form-control" placeholder="Name">
+      <br />
+      <textarea id="message" class="form-control" placeholder="Your Message Here"></textarea>
+      <br />
+      <button id="send" class="btn btn-success">Send</button>
+    </div>
+    <div id="messages">
+
+    </div>
   </div>
-</div>
-<script></script>
+  <script></script>
 </body>
+
 </html>
 ```
 
@@ -256,24 +264,24 @@ In order to connect these routes to the front end we need to add the following c
 
 ```javascript
 $(() => {
-   $("#send").click(()=>{
-       sendMessage({name: $("#name").val(), message: $("#message").val()});
+   $("#send").click(() => {
+      sendMessage({ name: $("#name").val(), message: $("#message").val() });
    })
    getMessages()
 })
 
-function addMessages(message){
+function addMessages(message) {
    $("#messages").append(`<h4> ${message.name} </h4> <p> ${message.message} </p>`)
 }
 
-function getMessages(){
- $.get('http://localhost:3000/messages', (data) => {
-   data.forEach(addMessages);
- })
+function getMessages() {
+   $.get('http://localhost:3000/messages', (data) => {
+      data.forEach(addMessages);
+   })
 }
 
-function sendMessage(message){
- $.post('http://localhost:3000/messages', message)
+function sendMessage(message) {
+   $.post('http://localhost:3000/messages', message)
 }
 ```
 
@@ -384,55 +392,63 @@ Great! You now have a nodeJS chat application up and running, with messages stor
 ```html
 <!DOCTYPE html>
 <html>
+
 <head>
   <title>My First Node App</title>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+    integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
   <script src="https://code.jquery.com/jquery-3.2.1.min.js" crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"
+    integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
+    crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"
+    integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1"
+    crossorigin="anonymous"></script>
   <script src="/socket.io/socket.io.js"></script>
 </head>
+
 <body>
-<div class="container">
-  <div class="jumbotron">
-    <h1 class="display-4">Send Message</h1>
-    <br />
-    <input id = "name" class="form-control" placeholder="Name">
-    <br />
-    <textarea id = "message" class="form-control" placeholder="Your Message Here"></textarea>
-    <br />
-    <button id="send" class="btn btn-success">Send</button>
+  <div class="container">
+    <div class="jumbotron">
+      <h1 class="display-4">Send Message</h1>
+      <br />
+      <input id="name" class="form-control" placeholder="Name">
+      <br />
+      <textarea id="message" class="form-control" placeholder="Your Message Here"></textarea>
+      <br />
+      <button id="send" class="btn btn-success">Send</button>
+    </div>
+    <div id="messages">
+
+    </div>
   </div>
-  <div id="messages">
+  <script>
+    var socket = io();
+    $(() => {
+      $("#send").click(() => {
+        sendMessage({ name: $("#name").val(), message: $("#message").val() });
+      })
+      getMessages()
+    })
 
-  </div>
-</div>
-<script>
-var socket = io();
-$(() => {
-  $("#send").click(()=>{
-    sendMessage({name: $("#name").val(), message: $("#message").val()});
-  })
-  getMessages()
-})
+    socket.on('message', addMessages)
 
-socket.on('message', addMessages)
+    function addMessages(message) {
+      $("#messages").append(`<h4> ${message.name} </h4> <p> ${message.message} </p>`)
+    }
 
-function addMessages(message){
-  $("#messages").append(`<h4> ${message.name} </h4> <p> ${message.message} </p>`)
-}
+    function getMessages() {
+      $.get('http://localhost:3000/messages', (data) => {
+        data.forEach(addMessages);
+      })
+    }
 
-function getMessages(){
-  $.get('http://localhost:3000/messages', (data) => {
-    data.forEach(addMessages);
-  })
-}
-
-function sendMessage(message){
-  $.post('http://localhost:3000/messages', message)
-}
-</script>
+    function sendMessage(message) {
+      $.post('http://localhost:3000/messages', message)
+    }
+  </script>
 </body>
+
 </html>
 ```
 
@@ -440,7 +456,7 @@ function sendMessage(message){
 
 ```javascript
 var express = require('express');
-var bodyParser = require('body-parser')
+var bodyParser = require('body-parser');
 var app = express();
 var http = require('http').Server(app);
 var io = require('socket.io')(http);
@@ -448,59 +464,59 @@ var mongoose = require('mongoose');
 
 app.use(express.static(__dirname));
 app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended: false}))
+app.use(bodyParser.urlencoded({ extended: false }))
 
-var Message = mongoose.model('Message',{
-  name : String,
-  message : String
+var Message = mongoose.model('Message', {
+  name: String,
+  message: String
 })
 
 var dbUrl = 'mongodb+srv://<username>:<password>@mongodb-e49d02ee-o2626ab53.database.cloud.ovh.net/admin?replicaSet=replicaset'
 
 app.get('/messages', (req, res) => {
-  Message.find({},(err, messages)=> {
+  Message.find({}, (err, messages) => {
     res.send(messages);
   })
 })
 
 app.get('/messages/:user', (req, res) => {
   var user = req.params.user
-  Message.find({name: user},(err, messages)=> {
+  Message.find({ name: user }, (err, messages) => {
     res.send(messages);
   })
 })
 
 app.post('/messages', async (req, res) => {
-  try{
+  try {
     var message = new Message(req.body);
-    var savedMessage = await message.save()
-      console.log('saved');
-    var censored = await Message.findOne({message:'badword'});
-    if(censored)
-      await Message.remove({_id: censored.id})
+    await message.save()
+    console.log('saved');
+    var censored = await Message.findOne({ message: 'badword' });
+    if (censored)
+      await Message.remove({ _id: censored.id })
     else
       io.emit('message', req.body);
     res.sendStatus(200);
   }
-  catch (error){
+  catch (error) {
     res.sendStatus(500);
-    return console.log('error',error);
+    return console.log('error', error);
   }
-  finally{
+  finally {
     console.log('Message Posted')
   }
 
 })
 
-io.on('connection', () =>{
+io.on('connection', () => {
   console.log('a user is connected')
 })
 
-mongoose.connect(dbUrl ,{useMongoClient : true} ,(err) => {
-  console.log('mongodb connected',err);
+mongoose.connect(dbUrl, { useMongoClient: true }, (err) => {
+  console.log('mongodb connected', err);
 })
 
-var server = http.listen(3000, () => {
+http.listen(3000, () => {
   console.log('server is running on port', server.address().port);
 });
 ```
@@ -545,15 +561,15 @@ describe('get messages from particular user', () => {
 
 ```json
 {
-  "spec_dir": "spec",
-  "spec_files": [
-    "**/*[sS]pec.js"
-  ],
-  "helpers": [
-    "helpers/**/*.js"
-  ],
-  "stopSpecOnExpectationFailure": false,
-  "random": true
+    "spec_dir": "spec",
+    "spec_files": [
+        "**/*[sS]pec.js"
+    ],
+    "helpers": [
+        "helpers/**/*.js"
+    ],
+    "stopSpecOnExpectationFailure": false,
+    "random": true
 }
 ```
 

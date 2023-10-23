@@ -4,26 +4,6 @@ excerpt: Découvrez comment installer Rails sur votre hébergement web POWER
 updated: 2021-02-04
 ---
 
-<style>
- pre {
-     font-size: 14px;
- }
- pre.console {
-   background-color: #300A24; 
-   color: #ccc;
-   font-family: monospace;
-   padding: 5px;
-   margin-bottom: 5px;
- }
- pre.console code {
-   border: solid 0px transparent;
-   font-family: monospace !important;
- }
- .small {
-     font-size: 0.75em;
- }
-</style>
-
 ## Objectif
 
 Vous avez souscrit à un hébergement web POWER Ruby et vous voulez y déployer [Rails](https://rubyonrails.org/){.external}, le framework de développement d'applications web en Ruby.
@@ -47,9 +27,9 @@ Supposons que vous avez la configuration normale pour un hébergement web POWER 
 
 > [!primary]
 >
-> Vous pouvez appeler l'API OVHcloud pour [visualiser la configuration active](/pages/labs/web-power/getting-started#api-get-active-configuration).
+> Vous pouvez appeler l'API OVHcloud pour [visualiser la configuration active](/pages/ovhcloud_labs/power_web_hosting/getting-started#api-get-active-configuration).
 
-[Accédez via SSH](/pages/labs/web-power/getting-started#ssh) à votre hébergement web POWER.
+[Accédez via SSH](/pages/ovhcloud_labs/power_web_hosting/getting-started#ssh) à votre hébergement web POWER.
 
 Supprimez le dossier racine pour l'initialiser avec Rails. N'oubliez pas d'exporter votre `gempath` ou l'installation du bundle va échouer :
 
@@ -81,7 +61,7 @@ development:
   check_yarn_integrity: false
 ```
 
-[Redémarrez votre instance](/pages/labs/web-power/getting-started#restart), votre Rails sera alors en ligne.
+[Redémarrez votre instance](/pages/ovhcloud_labs/power_web_hosting/getting-started#restart), votre Rails sera alors en ligne.
 
 ![Rails](images/ruby-install-rails-01.png){.thumbnail}
 
@@ -112,7 +92,8 @@ Après redémarrage de votre instance, vous pourrez visualiser votre page dans h
 
 Sortie de la console :
 
-<pre class="console"><code>~ $ rm -rf www
+```console
+~ $ rm -rf www
 
 ~ $ gem env gempath
 /homez.41/powerlp/.gem/ruby/2.6.0:/usr/local/ruby2.6/lib/ruby/gems/2.6.0
@@ -197,7 +178,7 @@ Time: 1102ms
 ~/www $ mkdir -p tmp
 
 ~/www $ touch tmp/restart.txt
-</code></pre>
+```
 
 ### Plus d'information sur Rails
 

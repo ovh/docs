@@ -60,7 +60,7 @@ Questa tecnologia permette di scambiare gli indirizzi IP da una soluzione all'al
 > Solo un blocco di dimensioni singole (/32) potrà essere spostato da un server dedicato a un VPS.
 >
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), clicca sul menu `Bare Metal Cloud`{.action} e apri la sezione `IP`{.action}.
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), clicca sul menu `Bare Metal Cloud`{.action} e apri la sezione `Network`{.action}. Clicca su `IP`{.action}.
 
 Clicca sulla scheda `Additional IP`{.action}.
 

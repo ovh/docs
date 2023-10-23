@@ -88,7 +88,7 @@ Cette étape peut être facultative si vous ne souhaitez pas utiliser les adress
 
 Suivez les informations demandées jusqu'à la création de votre adresse e-mail. Répétez cette étape pour en créer plusieurs. Si vous êtes dans un processus de migration de vos e-mails chez OVHcloud, nous vous invitons à utiliser notre outil [OVH Mail Migrator](https://omm.ovh.net/){.external} afin de vous aider dans vos démarches. 
 
-Si vous désirez obtenir plus d'informations sur la création d'une adresse e-mail ou sur la migration de vos services chez OVHcloud, consultez nos documentations : [Comment créer une adresse e-mail](/pages/web/emails/email_generalities#etape-2-creer-vos-adresses-e-mail){.external} et [Migrer mon site chez OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh){.external} si ce dernier s'applique.
+Si vous désirez obtenir plus d'informations sur la création d'une adresse e-mail ou sur la migration de vos services chez OVHcloud, consultez nos documentations : [Comment créer une adresse e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities#etape-2-creer-vos-adresses-e-mail){.external} et [Migrer mon site chez OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh){.external} si ce dernier s'applique.
 
 ### Étape 4 : vérifier ou modifier la configuration de votre domaine
 
@@ -157,8 +157,12 @@ Si vous souhaitez configurer votre adresse e-mail sur un logiciel de messagerie 
 
 [Installer son site avec les modules en 1 clic](/pages/web_cloud/web_hosting/cms_install_1_click_modules){.external}
 
-[Comment créer une adresse e-mail](/pages/web/emails/email_generalities#etape-2-creer-vos-adresses-e-mail){.external}
+[Comment créer une adresse e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities#etape-2-creer-vos-adresses-e-mail){.external}
 
 [Les certificats SSL sur les hébergements web](/pages/web_cloud/web_hosting/ssl_on_webhosting){.external}
+
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/directory/).
+
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr-ca/support-levels/).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

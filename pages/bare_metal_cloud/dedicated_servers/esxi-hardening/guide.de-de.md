@@ -61,7 +61,7 @@ Hinweis zu Definition und Funktionsprinzip:
 > 
 > Wenn dieser Schutz ausgelöst wurde und Sie sich sofort mit Ihrem ESXi verbinden möchten, müssen Sie das Administratorkonto manuell entsperren.
 >
-> Dazu muss der ESXi Server über das OVHcloud Kundencenter [neu gestartet werden](/pages/cloud/dedicated/getting-started-with-dedicated-server#neustart-ihres-dedicated-servers).
+> Dazu muss der ESXi Server über das OVHcloud Kundencenter [neu gestartet werden](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server#neustart-ihres-dedicated-servers).
 > 
 
 Sie können die Zugrifflogs über eine SSH-Verbindung in folgenden Dateien einsehen:

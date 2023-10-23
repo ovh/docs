@@ -4,25 +4,6 @@ excerpt: "Find out how to migrate Helm Charts From Chartmuseum (Harbor < 2.8) to
 updated: 2023-07-18
 ---
 
-<style>
- pre {
-     font-size: 14px;
- }
- pre.console {
-   background-color: #300A24; 
-   color: #ccc;
-   font-family: monospace;
-   padding: 5px;
-   margin-bottom: 5px;
- }
- pre.console code {
-   border: solid 0px transparent;
-   color: #ccc;
-   font-family: monospace !important;
-   font-size: 0.75em;
- }
-</style>
-
 ## Objective
 
 The OVHcloud Managed Private Registry service provides you a managed, authenticated Docker registry where you can privately store your Docker images and Helm charts.
@@ -82,19 +63,21 @@ docker run -ti --rm goharbor/chartmuseum2oci --url $HARBOR_URL --username $HARBO
 
 During the migration, the tool will give you the amount of charts to migrate and the progression of the migration:
 
-<pre class="console"><code>$ docker run -ti --rm ovhcloud/harbor-chartmuseum-migrator --url $HARBOR_URL --username $HARBOR_USER --password $HARBOR_PASSWORD
+```console
+$ docker run -ti --rm ovhcloud/harbor-chartmuseum-migrator --url $HARBOR_URL --username $HARBOR_USER --password $HARBOR_PASSWORD
 $ docker run -ti --rm ovhcloud/harbor-chartmuseum-migrator --url $HARBOR_URL --username $HARBOR_USER --password $HARBOR_PASSWORD
 2023/06/28 16:17:32 416 Helm charts to migrate from Chartmuseum to OCI
    4% |█████                                                                                                                                        | (19/416, 20 it/min) [56s:19m36s]
-</code></pre>
+```
 
 Then, when the migration is ended:
-<pre class="console"><code>$ docker run -ti --rm ovhcloud/harbor-chartmuseum-migrator --url $HARBOR_URL --username $HARBOR_USER --password $HARBOR_PASSWORD
+```console
+$ docker run -ti --rm ovhcloud/harbor-chartmuseum-migrator --url $HARBOR_URL --username $HARBOR_USER --password $HARBOR_PASSWORD
 $ docker run -ti --rm ovhcloud/harbor-chartmuseum-migrator --url $HARBOR_URL --username $HARBOR_USER --password $HARBOR_PASSWORD
 2023/06/28 16:17:32 416 Helm charts to migrate from Chartmuseum to OCI
    100% |█████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████████| (416/416, 20 it/min)
 2023/06/28 16:38:14 416 Helm charts successfully migrated from Chartmuseum to OCI
-</code></pre>
+```
 
 > [!primary]
 >

@@ -75,8 +75,8 @@ Please refer to [this guide](/pages/web_cloud/web_hosting/sql_create_database) f
 
 - You will be able to change the PHP version for your Web Hosting, either in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au) ("**Configuration**") or by editing the .ovhconfig file. Mixed configurations are also possible with the latter. Detailed instructions are available in our guides:
 
-[Configuring the .ovhconfig file of your Web Hosting plan](/pages/web_cloud/web_hosting/ovhconfig_configuration)  
-[Modifying the configuration of a Web Hosting plan](/pages/web_cloud/web_hosting/ovhconfig_modify_system_runtime)
+[Configuring the .ovhconfig file of your Web Hosting plan](/pages/web_cloud/web_hosting/configure_your_web_hosting)  
+[Modifying the configuration of a Web Hosting plan](/pages/web_cloud/web_hosting/configure_your_web_hosting)
 
 > [!primary]
 >

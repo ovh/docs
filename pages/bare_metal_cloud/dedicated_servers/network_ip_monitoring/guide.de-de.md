@@ -1,7 +1,7 @@
 ---
 title: Welche IP-Adressen nutzt das OVHcloud Monitoring?
 excerpt: Erfahren Sie hier die IP-Adressen zur Einrichtung Ihrer Firewall, um OVHcloud Monitoring auf Ihrem Server zu erlauben
-updated: 2023-07-21
+updated: 2023-09-21
 ---
 
 > [!primary]
@@ -43,12 +43,10 @@ Um insbesondere auf ICMP eine restriktive Firewall einzurichten und weiterhin vo
 
 > [!primary]
 >
-> Wenn Ihr Server sich in Roubaix 3 befindet, muss die letzte IP über `tcpdump` abgerufen werden.
+> Wenn Ihr Server sich in Roubaix 3 befindet, muss die letzte IP über `tcpdump` abgerufen werden:
+> <pre class="highlight language-console"><code class="language-console">tcpdump host server_ip | grep ICMP</code></pre>
 >
-> ```
-> tcpdump host feste.ip.des.servers | grep ICMP
-> ```
->
+
 
 ### Monitoring aktivieren oder deaktivieren
 
@@ -67,20 +65,6 @@ Klicken Sie auf den Button `Konfigurieren`{.action}. Im neu angezeigten Fenster 
 ![Monitoring](images/monitoring-server2.png){.thumbnail}
 
 Klicken Sie auf `Bestätigen`{.action}, um Ihre Monitoring-Konfiguration zu aktualisieren.
-
-### Das Monitoring bestimmter Dienstleistungen aktivieren
-
-Zusätzlich zum Monitoring können Sie OVHcloud erlauben, bestimmte Dienste wie HTTP, SSH und andere Protokolle zu überwachen.
-
-Klicken Sie im Tab `Allgemeine Informationen`{.action} und dann im Rahmen des **Dienststatus** auf den Button `...`{.action} neben "Dienste im Monitoring". Klicken Sie auf `Monitoring meiner Dienstleistungen`{.action}.
-
-![monitoring](images/monitoring02.png){.thumbnail}
-
-Sie werden auf die Seite zur Dienst-Konfiguration weitergeleitet.
-
-![monitoring](images/monitoring3.png){.thumbnail}
-
-Klicken Sie auf `Einen Dienst überwachen`{.action} und geben Sie dann die IP-Adresse, das Protokoll, die Port-Nummer, die Antwort des Servers und den Zeitraum zwischen den Überprüfungen Ihres Dienstes an. Klicken Sie auf das Hakensymbol, um die Änderungen zu bestätigen.
 
 ## Weiterführende Informationen
 

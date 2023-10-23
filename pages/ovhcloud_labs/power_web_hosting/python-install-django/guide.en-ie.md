@@ -4,26 +4,6 @@ excerpt: Find out how to install Django on your POWER web hosting plan
 updated: 2023-01-05
 ---
 
-<style>
- pre {
-     font-size: 14px;
- }
- pre.console {
-   background-color: #300A24; 
-   color: #ccc;
-   font-family: monospace;
-   padding: 5px;
-   margin-bottom: 5px;
- }
- pre.console code {
-   border: solid 0px transparent;
-   font-family: monospace !important;
- }
- .small {
-     font-size: 0.75em;
- }
-</style>
-
 ## Objective
 
 You've subscribed to a Web POWER web hosting plan to deploy **Python** applications, and you want to deploy [Django](https://www.djangoproject.com/){.external} on it.
@@ -49,11 +29,11 @@ Let's suppose you have the default configuration for Python hosting:
 
 > [!primary]
 >
-> To verify your configuration, you can use the [Retrieve active configuration](/pages/labs/web-power/getting-started#api-get-active-configuration) API endpoint.
+> To verify your configuration, you can use the [Retrieve active configuration](/pages/ovhcloud_labs/power_web_hosting/getting-started#api-get-active-configuration) API endpoint.
 
 To use [Python WSGI](https://www.fullstackpython.com/wsgi-servers.html) frameworks, using [virtualenv](https://pypi.org/project/virtualenv/) is the simplest choice. 
 
-[Connect via SSH](/pages/labs/web-power/getting-started#ssh) to your POWER web hosting and activate `virtualenv`:
+[Connect via SSH](/pages/ovhcloud_labs/power_web_hosting/getting-started#ssh) to your POWER web hosting and activate `virtualenv`:
 
 ```sh
 ~$ cd www
@@ -122,13 +102,14 @@ Django needs to declare the allowed hosts used for the website. It's configured 
 ALLOWED_HOSTS = ['yourdomainname', 'www.yourdomainname', 'yourFTPuser.cluster022.hosting.ovh.net']
 ```
 
-Then [restart your instance](/pages/labs/web-power/getting-started#restart) and your Django will be online.
+Then [restart your instance](/pages/ovhcloud_labs/power_web_hosting/getting-started#restart) and your Django will be online.
 
 ![Django](images/python-install-django-01.png){.thumbnail}
 
 Terminal output:
 
-<pre class="console"><code>~ $ cd www
+```console
+~ $ cd www
 
 ~/www $ virtualenv venv
 created virtual environment CPython3.8.7.final.0-64 in 1273ms
@@ -220,7 +201,7 @@ ALLOWED_HOSTS = [ 'power.lostinbrittany.dev', 'xxxx.xxxx.hosting.ovh.net' ]
 ~/www $ mkdir -p tmp
 
 ~/www $ touch tmp/restart.txt
-</code></pre>
+```
 
 ### More information on Django
 

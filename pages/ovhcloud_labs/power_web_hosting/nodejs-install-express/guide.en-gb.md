@@ -4,26 +4,6 @@ excerpt: Find out how to install Express  on your POWER web hosting plan
 updated: 2021-02-04
 ---
 
-<style>
- pre {
-     font-size: 14px;
- }
- pre.console {
-   background-color: #300A24; 
-   color: #ccc;
-   font-family: monospace;
-   padding: 5px;
-   margin-bottom: 5px;
- }
- pre.console code {
-   border: solid 0px transparent;
-   font-family: monospace !important;
- }
- .small {
-     font-size: 0.75em;
- }
-</style>
-
 ## Objective
 
 You've subscribed to a Web POWER web hosting plan to deploy **Node.js** applications, and you want to begin developing your project using [Express](https://expressjs.com/){.external}.
@@ -49,9 +29,9 @@ Let's suppose you have the default configuration for Node.js hosting:
 
 > [!primary]
 >
-> To verify your configuration, you can use the [Retrieve active configuration](/pages/labs/web-power/getting-started#api-get-active-configuration) API endpoint.
+> To verify your configuration, you can use the [Retrieve active configuration](/pages/ovhcloud_labs/power_web_hosting/getting-started#api-get-active-configuration) API endpoint.
 
-[Connect via SSH](/pages/labs/web-power/getting-started#ssh) to your POWER web hosting, and install Express using `npm`:
+[Connect via SSH](/pages/ovhcloud_labs/power_web_hosting/getting-started#ssh) to your POWER web hosting, and install Express using `npm`:
 
 ```sh
 npm install express --save
@@ -70,13 +50,14 @@ res.send(msg);
 app.listen(port);
 ```
 
-[Restart your instance](/pages/labs/web-power/getting-started#restart) and your Express *Hello World* will be online.
+[Restart your instance](/pages/ovhcloud_labs/power_web_hosting/getting-started#restart) and your Express *Hello World* will be online.
 
 ![Express Hello World](images/nodejs-install-express-01.png){.thumbnail}
 
 Terminal output:
 
-<pre class="console"><code>~/www $ cd www
+```console
+~/www $ cd www
 ~/www $ node -v
 v14.13.0
 ~/www $ npm install express --save
@@ -89,7 +70,8 @@ res.send(msg);
 });
 app.listen(port);
 ~/www $ mkdir -p tmp
-~/www $ touch tmp/restart.txt</code></pre>
+~/www $ touch tmp/restart.txt
+```
 
 ## Go further
 

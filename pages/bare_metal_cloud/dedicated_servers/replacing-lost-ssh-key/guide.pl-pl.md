@@ -34,7 +34,7 @@ Możesz jednak zalogować się do swojego serwera w [trybie Rescue OVHcloud](/pa
 
 Aby uzyskać dostęp do serwera w trybie Rescue, należy najpierw wyłączyć aktywny klucz SSH.
 
-Zaloguj się do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i przejdź do sekcji `Klucze SSH`{.action}. W razie potrzeby skorzystaj z naszego przewodnika ["Tworzenie kluczy SSH"](/pages/cloud/dedicated/creating-ssh-keys-dedicated#cpsshkey).
+Zaloguj się do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i przejdź do sekcji `Klucze SSH`{.action}. W razie potrzeby skorzystaj z naszego przewodnika ["Tworzenie kluczy SSH"](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated#cpsshkey).
 
 Klucz publiczny przechowywany w Panelu klienta jest niepotrzebny bez odpowiedniego klucza prywatnego, możesz więc go usunąć. Kliknij przycisk <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> po prawej stronie klucza i wybierz `Usuń klucz`{.action}.
 
@@ -52,8 +52,8 @@ Postępuj zgodnie z instrukcjami zawartymi w przewodniku dotyczącym [trybu Resc
 
 Po uzyskaniu dostępu do plików otwórz odpowiedni plik "authorized_keys" w edytorze tekstu. Plik ten przechowuje klucze SSH i znajduje się w katalogu `home` użytkownika podłączonego do Twojego serwera. (Zastąp "USER_NAME" nazwą użytkownika)
 
-```
-rescue-customer:~# sudo nano /mnt/home/USER_NAME/.ssh/authorized_keys
+```bash
+sudo nano /mnt/home/USER_NAME/.ssh/authorized_keys
 ```
 
 Skopiuj i wklej nowy klucz publiczny (utworzony w etapie 2) do pliku. Zawartość pliku powinna wyglądać jak następujący przykład:

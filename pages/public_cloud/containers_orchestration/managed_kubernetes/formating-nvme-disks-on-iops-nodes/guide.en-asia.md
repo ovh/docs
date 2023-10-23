@@ -4,27 +4,6 @@ excerpt: 'Find out how to partition and format NVMe disks on OVHcloud Managed Ku
 updated: 2023-06-30
 ---
 
-<style>
- pre {
-     font-size: 14px;
- }
- pre.console {
-   background-color: #300A24;
-   color: #ccc;
-   font-family: monospace;
-   padding: 5px;
-   margin-bottom: 5px;
- }
- pre.console code {
-   b   font-family: monospace !important;
-   font-size: 0.75em;
-   color: #ccc;
- }
- .small {
-     font-size: 0.75em;
- }
-</style>
-
 When you order [IOPS nodes](https://www.ovhcloud.com/asia/public-cloud/iops/) for your OVHcloud Managed Kubernetes cluster, the NVMe disks are neither partitioned nor formatted, therefore they cannot be used to create Kubernetes persistent volumes.
 In this tutorial we are going to guide you on how to easily achieve the partitioning and the formatting of your NVMe disks on your existing nodes but also on future ones.
 
@@ -365,10 +344,11 @@ Let's identify the name of our format-nvme pod running on our node-nvme-1:
 kubectl get pods -n kube-system -o wide -l 'name=format-nvme' --field-selector spec.nodeName=node-nvme-1
 ```
 
-<pre class="console"><code>$ kubectl get pods -n kube-system -o wide -l 'name=format-nvme' --field-selector spec.nodeName=node-nvme-1
+```console
+$ kubectl get pods -n kube-system -o wide -l 'name=format-nvme' --field-selector spec.nodeName=node-nvme-1
 NAME                READY   STATUS    RESTARTS   AGE     IP         NODE              NOMINATED NODE   READINESS GATES
 format-nvme-ct84s   1/1     Running   0          8m13s   10.2.0.6   node-nvme-1
-</code></pre>
+```
 
 And enter inside the container:
 

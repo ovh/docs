@@ -1,6 +1,5 @@
 ---
 title: 'Launching a script when an instance is created'
-legacy_guide_number: 1932
 updated: 2022-03-18
 ---
 

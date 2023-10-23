@@ -1,7 +1,6 @@
 ---
 title: Informações sobre a faturação Hosted Private Cloud
 excerpt: Detalhes sobre o funcionamento da faturação do Hosted Private Cloud.
-legacy_guide_number: g677
 updated: 2018-03-26
 ---
 

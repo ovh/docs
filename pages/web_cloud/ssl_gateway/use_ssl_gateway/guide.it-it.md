@@ -1,6 +1,5 @@
 ---
 title: Utilizza il servizio SSL Gateway
-legacy_guide_number: 2370
 excerpt: Come rendere sicure le connessioni al tuo sito Web
 updated: 2022-12-01
 ---

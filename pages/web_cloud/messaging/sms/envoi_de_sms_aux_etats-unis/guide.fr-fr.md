@@ -1,7 +1,6 @@
 ---
 title: 'Envoi de SMS aux Etats-Unis'
 excerpt: 'Découvrez comment envoyer des SMS aux États-Unis'
-legacy_guide_number: g1754
 updated: 2022-08-05
 ---
 

@@ -29,7 +29,7 @@ A volte provengono anche da un aggiornamento effettuato **automaticamente** da u
 
 - Disporre di un'[offerta di hosting condiviso](https://www.ovhcloud.com/it/web-hosting/)
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
-- Essere aggiornato nei [pagamenti](/pages/account/billing/invoice_management#pay-bills) e [rinnovi](/pages/account/billing/how_to_use_automatic_renewal#renewal-management) dei servizi associati (dominio e hosting web)
+- Essere aggiornato nei [pagamenti](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) e [rinnovi](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) dei servizi associati (dominio e hosting web)
 
 ## Procedura
 
@@ -49,7 +49,7 @@ Consulta questa [guida](/pages/web_cloud/web_hosting/logs_and_statistics) per in
 
 ### Passa il tuo sito in modalità sviluppo
 
-Per visualizzare eventuali errori PHP, passa il tuo hosting in modalità `sviluppo` grazie a queste [indicazioni](/pages/web/hosting/ovhconfig_modify_system_runtime#step-2-modifica-la-configurazione-dellhosting-web).
+Per visualizzare eventuali errori PHP, passa il tuo hosting in modalità `sviluppo` grazie a queste [indicazioni](/pages/web_cloud/web_hosting/configure_your_web_hosting#step-2-modifica-la-configurazione-dellhosting-web).
 
 ### Testa il file .htaccess
 
@@ -69,7 +69,7 @@ Un errore 500 potrebbe essere associato a un livello di diritti di accesso non c
 
 Per accedere a questi file, accedi in FTP al tuo hosting seguendo la nostra [documentazione](/pages/web_cloud/web_hosting/ftp_connection).
 
-In seguito, nella guida "[Utilizzare FileZilla con il tuo hosting](/pages/web/hosting/ftp_filezilla_user_guide#diritti-su-file-e-cartelle)", verifica i seguenti elementi :
+In seguito, nella guida "[Utilizzare FileZilla con il tuo hosting](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide#diritti-su-file-e-cartelle)", verifica i seguenti elementi :
 
 - La **radice** del tuo hosting (si tratta della directory registrata `/` o `.` nel tuo software FTP) deve essere obbligatoria con diritti 705 (permessi di default). Ti consigliamo di non modificare questo livello di diritti.
 - Le cartelle devono avere i diritti 705.
@@ -96,9 +96,9 @@ Per tutti gli errori 500 che possono essere associati al database del tuo sito W
 
 Per ripristinare il codice sorgente del tuo sito, consulta la guida Ripristinare [Ripristinare i dati dello spazio di storage di un hosting Web](/pages/web_cloud/web_hosting/ftp_save_and_backup).
 
-Se il tuo sito contiene un database, consulta la nostra guida [Importare un backup nel database di un hosting Web](/pages/web/hosting/sql_importing_mysql_database#ripristino-dallo-spazio-cliente-ovh) per ripristinarlo in uno stato precedente.
+Se il tuo sito contiene un database, consulta la nostra guida [Importare un backup nel database di un hosting Web](/pages/web_cloud/web_hosting/sql_importing_mysql_database#ripristino-dallo-spazio-cliente-ovh) per ripristinarlo in uno stato precedente.
 
-Se l'errore 500 è apparso a seguito di un aggiornamento della versione PHP del tuo hosting, consulta la nostra guida "[Modificare la versione di PHP su un hosting Web](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014)" per ritornare alla configurazione precedente.
+Se l'errore 500 è apparso a seguito di un aggiornamento della versione PHP del tuo hosting, consulta la nostra guida "[Modificare la versione di PHP su un hosting Web](/pages/web_cloud/web_hosting/configure_your_web_hosting)" per ritornare alla configurazione precedente.
 
 ## Per saperne di più <a name="gofurther"></a>
 

@@ -48,7 +48,7 @@ Ce message contient:
 - le nom de l'opération qui nécessite une validation
 - l'ID de l'opération
 - le token de validation
-- un lien permettant de valider l'opération (notez que si votre téléphone n'est pas connecté à un réseau dont [l'adresse IP est autorisée](/pages/cloud/private-cloud/manager_ovh_private_cloud#securite), la page n'apparaîtra pas).
+- un lien permettant de valider l'opération (notez que si votre téléphone n'est pas connecté à un réseau dont [l'adresse IP est autorisée](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/manager_ovh_private_cloud#securite), la page n'apparaîtra pas).
 
 Pour valider l'opération, connectez-vous via le lien affiché dans le message. Accédez ensuite à la section `Operation validation`{.action}.
 

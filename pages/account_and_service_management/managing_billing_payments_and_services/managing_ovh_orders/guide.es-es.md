@@ -95,7 +95,7 @@ Encontrará todas las modalidades de la aplicación de dicho derecho en los sigu
 > El derecho de desistimiento sólo se aplica a los particulares y solo a los nuevos pedidos. Por lo tanto, no puede hacerlo:
 >
 > - renovaciones;
-> - si su cuenta de cliente de OVHcloud es de un [tipo diferente a Particular](/pages/account/customer/all_about_username#cambiar-el-tipo-de-cuenta).
+> - si su cuenta de cliente de OVHcloud es de un [tipo diferente a Particular](/pages/account_and_service_management/account_information/all_about_username#cambiar-el-tipo-de-cuenta).
 >
 > Además, el derecho de desistimiento no se aplica a los pedidos no pagados, ya que estos se cancelan automáticamente cuando la orden de pedido expira.
 >

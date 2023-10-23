@@ -111,7 +111,7 @@ cat nom_de_la_base.sql | mysql --host=serveur --user=utilisateur --port=port --p
 
 > [!primary]
 >
-> Dans certains cas, il se peut que la RAM disponible dans votre instance Web Cloud Databases ne permette pas de réaliser l'export ou l'import souhaité. Si tel est le cas, nous vous recommandons d'utiliser l'outil fourni par OVHcloud dans votre espace client. Reportez-vous à la documentation « [Premiers pas avec le service Web Cloud Databases ](/pages/web/clouddb/starting_with_clouddb#importation-dune-base-de-donnees) » si nécessaire.
+> Dans certains cas, il se peut que la RAM disponible dans votre instance Web Cloud Databases ne permette pas de réaliser l'export ou l'import souhaité. Si tel est le cas, nous vous recommandons d'utiliser l'outil fourni par OVHcloud dans votre espace client. Reportez-vous à la documentation « [Premiers pas avec le service Web Cloud Databases ](/pages/web_cloud/web_cloud_databases/starting_with_clouddb#importation-dune-base-de-donnees) » si nécessaire.
 >
 
 ## Aller plus loin

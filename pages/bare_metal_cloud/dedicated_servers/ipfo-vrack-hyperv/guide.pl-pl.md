@@ -63,7 +63,7 @@ Wyszukaj połączenie sieciowe Twojego serwera, którego chcesz użyć do wirtua
 
 Aby go zidentyfikować, otwórz Command Prompt lub PowerShell i wprowadź komendę `ipconfig /all`.
 
-W naszym przykładzie `Ethernet drugi` to interfejs używany w sieci vRack. Możliwe jest jednak, że karta sieciowa vRack używa innego interfejsu. Korzystaj z interfejsu, który nie posiada głównego adresu IP serwera lub który używa przypisanego do siebie adresu IP (169.254.x.x).
+W naszym przykładzie `Ethernet 2` to interfejs używany w sieci vRack. Możliwe jest jednak, że karta sieciowa vRack używa innego interfejsu. Korzystaj z interfejsu, który nie posiada głównego adresu IP serwera lub który używa przypisanego do siebie adresu IP (169.254.x.x).
 
 ![check-interface](images/ipconfig.png){.thumbnail}
 

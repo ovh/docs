@@ -218,7 +218,7 @@ En savoir plus sur [les disques supplémentaires du Public Cloud](https://www.ov
 Pour ce faire, il vous suffit de suivre les étapes de ce guide : [Créez un disque supplémentaire sur Public Cloud](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance){.external}.
 
 #### Étape 2: Configurer le disque supplémentaire
-Pour ce faire, il vous suffit de suivre les étapes de ce guide : [Configurez un disque supplémentaire sur Public Cloud](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance#depuis-une-instance-sous-linux){.external}.
+Pour ce faire, il vous suffit de suivre les étapes de ce guide : [Configurez un disque supplémentaire sur Public Cloud](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance#depuis-une-instance-sous-linux){.external}.
 
 > [!primary]
 >

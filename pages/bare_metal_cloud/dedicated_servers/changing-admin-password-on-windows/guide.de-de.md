@@ -1,14 +1,14 @@
 ---
-title: 'Administrator-Passwort eines Windows Servers ändern'
-excerpt: 'Erfahren Sie hier, wie Sie das Administrator-Passwort auf einem Windows Dedicated Server ändern'
-updated: 2021-01-12
+title: Administrator-Passwort eines Windows Servers ändern
+excerpt: Erfahren Sie hier, wie Sie den OVHcloud Rescue-Modus verwenden, um das Passwort des Administrator-Accounts auf einem Windows Dedicated Server zurückzusetzen
+updated: 2023-09-18
 ---
 
 ## Ziel
 
 Bei der Installation oder Neuinstallation eines Windows-Betriebssystems wird Ihnen ein Passwort für den Root-Zugriff zugeteilt. Wir empfehlen dringend, dass Sie dieses ursprüngliche Passwort ändern, wie in unserer Anleitung zum [Absichern eines Servers](/pages/bare_metal_cloud/dedicated_servers/securing-a-dedicated-server) beschrieben. Wenn Sie Ihr Administrator-Passwort verloren haben, müssen Sie es im Rescue-Modus zurücksetzen.
 
-**Diese Anleitung führt Sie durch die notwendigen Schritte zur Änderung des Admin-Passworts Ihres Servers mittels der für ein Windows-Betriebssystem verfügbaren Rescue-Modus-Optionen.**
+**Diese Anleitung erklärt, wie Sie das Kennwort des Administrator-Accounts eines Windows Server Betriebssystems über den OVHcloud Rescue-Modus zurücksetzen.**
 
 ## Voraussetzungen
 
@@ -17,33 +17,23 @@ Bei der Installation oder Neuinstallation eines Windows-Betriebssystems wird Ihn
 
 ## In der praktischen Anwendung
 
-Die folgenden Schritte beschreiben den Vorgang zur Änderung des lokalen Admin-Passworts im OVHcloud Rescue-Modus (basierend auf Linux), der jederzeit verfügbar ist. Wenn Sie Windows PE (WinRescue) verwenden möchten, springen Sie zum Ende [dieser Anleitung](#winrescue). 
+Die folgenden Schritte beschreiben den Vorgang zur Änderung des lokalen Admin-Passworts im OVHcloud Rescue-Modus (basierend auf Linux), der jederzeit verfügbar ist. Wenn Sie Windows PE (WinRescue) verwenden möchten, springen Sie zum [Ende dieser Anleitung](#winrescue). 
 
 ### Schritt 1: Server im Rescue-Modus neu starten <a name="bootinrescue"></a>
 
-Das System muss im Rescue-Modus gestartet werden, bevor das Administrator-Passwort geändert werden kann. Loggen Sie sich im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, gehen Sie in den Bereich `Bare Metal Cloud`{.action} und wählen Sie Ihren Server in `Dedicated Server`{.action} aus.
+Das System muss im Rescue-Modus gestartet werden, bevor das Administrator-Passwort geändert werden kann.
 
-Der Netboot-Modus muss auf "rescue64-pro (Customer rescue system (Linux))" umgestellt werden. Suchen Sie nach "Boot" im Bereich **Allgemeine Informationen** und klicken Sie auf `...`{.action}, dann auf `Bearbeiten`{.action}.
-<br>Setzen Sie im angezeigten Fenster einen Haken bei **Im Rescue-Modus booten** und wählen Sie "rescue64-pro" im Menü aus. Geben Sie im letzten Feld eine E-Mail-Adresse an, wenn die Login-Daten an eine andere Adresse als die Hauptadresse Ihres OVHcloud-Accounts gesendet werden sollen.
-
-Klicken Sie auf `Weiter`{.action} und dann auf `Bestätigen`{.action}.
-
-![Rescuemode](images/adminpw_win_001.png){.thumbnail}
-
-Wenn die Änderung abgeschlossen ist, klicken Sie auf `...`{.action}. rechts von "Status" unter **Dienstleistungsstatus**.
-<br>Klicken Sie auf `Neu starten`{.action} starten und der Server wird in den Rescue-Modus versetzt.<br>
-Die Durchführung dieser Operation kann einige Minuten dauern. Sie können den Fortschritt im Tab `Tasks`{.action} überprüfen. Es wird Ihnen eine E-Mail mit zusätzlichen Informationen sowie den Zugangsdaten des Root-Benutzers für den Rescue-Modus zugesandt.
-
-![rescuereboot](images/adminpw_win_02.png){.thumbnail}
-
-Weitere Informationen zum Rescue-Modus finden Sie in [dieser Anleitung](/pages/bare_metal_cloud/dedicated_servers/rescue_mode).
+Genaue Informationen zur Vorgehensweise finden Sie in [der Anleitung zum Rescue-Modus](/pages/bare_metal_cloud/dedicated_servers/rescue_mode).
 
 ### Schritt 2: Systempartition mounten
 
-Verbinden Sie sich via SSH mit Ihrem Server. (Wenn nötig, lesen Sie die Anleitung [zu SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction).) Bei Windows-Servern finden Sie Partitionen vom Typ "Microsoft LDM Data" vor:
+Verbinden Sie sich via SSH mit Ihrem Server. (Wenn nötig, verwenden Sie die [Anleitung zu SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction).) Bei Windows-Servern finden Sie Partitionen vom Typ "Microsoft LDM Data" vor:
 
+```bash
+fdisk -l
 ```
-# fdisk -l
+
+```text
 Disk /dev/sda: 1.8 TiB, 2000398934016 bytes, 3907029168 sectors
 Units: sectors of 1 * 512 = 512 bytes
 Sector size (logical/physical): 512 bytes / 512 bytes
@@ -63,14 +53,17 @@ In diesem Beispiel lässt sich "sda4" anhand der Größe als Systempartition ide
 
 Wählen Sie nun die entsprechende Partition zum Mounten aus:
 
-```
-# mount /dev/sda4 /mnt
+```bash
+mount /dev/sda4 /mnt
 ```
 
 Überprüfen Sie den Mountpoint:
 
+```bash
+lsblk
 ```
-# lsblk
+
+```text
 NAME   MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
 sdb      8:16   0  1.8T  0 disk
 ├─sdb4   8:20   0  1.8T  0 part
@@ -88,7 +81,7 @@ sda      8:0    0  1.8T  0 disk
 
 Im Beispiel oben war die Operation erfolgreich. Wenn das Mounten fehlgeschlagen ist, erhalten Sie wahrscheinlich eine Fehlermeldung wie diese: 
 
-```
+```text
 The disk contains an unclean file system (0, 0).
 Metadata kept in Windows cache, refused to mount.
 Failed to mount '/dev/sda4': Operation not permitted
@@ -99,20 +92,27 @@ read-only with the 'ro' mount option.
 
 Verwenden Sie in diesem Fall den folgenden Befehl und versuchen Sie dann, die Partition erneut zu mounten.
 
-```
-# ntfsfix /dev/sda4
-# mount /dev/sda4 /mnt
+```bash
+ntfsfix /dev/sda4
+mount /dev/sda4 /mnt
 ```
 
 ### Schritt 3: Aktuelles Passwort löschen
 
 In diesem Schritt wird die *SAM*-Datei mit einem Tool (chntpw) editiert, um das Passworts des Admin-Benutzers zu entfernen. Wechseln Sie zum Windows-Systempfad und lassen Sie die Liste der Windows-Benutzer ausgeben:
 
+```bash
+cd /mnt/Windows/System32/config
+/mnt/Windows/System32/config#
 ```
-# cd /mnt/Windows/System32/config
-/mnt/Windows/System32/config# chntpw -l SAM
 
-chntpw version 1.00 140201, (c) Petter N Hagen
+
+```bash
+chntpw -l SAM
+```
+
+```text
+chntpw version 140201, (c) Petter N Hagen
 Hive <SAM> name (from header): <\SystemRoot\System32\Config\SAM>
 ROOT KEY at offset: 0x001020 * Subkey indexing type is: 686c <lh>
 File size 65536 [10000] bytes, containing 8 pages (+ 1 headerpage)
@@ -126,13 +126,16 @@ Used for data: 359/39024 blocks/bytes, unused: 33/18064 blocks/bytes.
 | 01f8 | WDAGUtilityAccount             |        | dis/lock |
 ```
 
-Falls der Befehl nicht funktioniert, installieren Sie zuerst das Tool: `apt get install chntpw`.
+Falls der Befehl nicht funktioniert, installieren Sie zuerst das Tool: `apt install chntpw`.
 
 Löschen Sie das Passwort des Administrator-Benutzers mit folgendem Befehl. (Wählen Sie "Administrator" aus, wenn "admin" nicht existiert.)
 
+```bash
+chntpw -u admin SAM
 ```
-# chntpw -u admin SAM
-chntpw version 1.00 140201, (c) Petter N Hagen
+
+```text
+chntpw version 140201, (c) Petter N Hagen
 Hive <SAM> name (from header): <\SystemRoot\System32\Config\SAM>
 ROOT KEY at offset: 0x001020 * Subkey indexing type is: 686c <lh>
 File size 65536 [10000] bytes, containing 8 pages (+ 1 headerpage)
@@ -169,9 +172,9 @@ Total  login count: 5
 Select: [q] >
 ```
 
-Tippen Sie "1" ein und drücken Sie auf Enter ("↩"). (Verwenden Sie zuerst Option 2, falls ein "X" neben "Disabled" erscheint.)
+Tippen Sie "1" ein und drücken Sie auf Enter. (Verwenden Sie zuerst Option 2, falls ein "X" neben "Disabled" erscheint.)
 
-```
+```text
 Select: [q] > 1
 Password cleared!
 ================= USER EDIT ====================
@@ -209,7 +212,7 @@ Select: [q] >
 
 Tippen Sie "q" ein und drücken Sie auf Enter, um das Tool zu verlassen. Geben Sie "y" ein, wenn Sie dazu aufgefordert werden, und drücken Sie nochmals auf Enter.
 
-```
+```text
 Select: [q] > q
  
 Hives that have changed:
@@ -223,13 +226,21 @@ Write hive files? (y/n) [n] : y
 
 Beginnen Sie damit, den Netboot-Modus im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) wieder auf **Von Festplatte booten** umzustellen (siehe [Schritt 1](#bootinrescue)). 
 
-Über die Kommandozeile trennen Sie die Partition wieder ab und starten den Server neu mit den folgenden Befehlen:
+Zurück in der Kommandozeile hängen Sie die Partition wieder aus und starten den Server neu mit den folgenden Befehlen:
 
+```bash
+cd
 ```
-# cd
-# umount /mnt
-# reboot
 
+```bash
+umount /mnt
+```
+
+```bash
+reboot
+```
+
+```text
 Broadcast message from root@rescue.ovh.net on pts/0 (Wed 2020-05-27 11:28:53 CEST):
 
 System is going down for reboot NOW!
@@ -241,7 +252,7 @@ Gehen Sie im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanage
 
 ![IPMI](images/adminpw_win_03.png){.thumbnail}
 
-#### Schritt 5.1: für eine neuere Windows-Version
+#### Schritt 5.1: Neuere Version von Windows
 
 Das Login-Interface sollte eine Nachricht anzeigen, die den Ablauf des Passworts anzeigt.
 
@@ -256,13 +267,13 @@ Klicken Sie nun auf `OK`{.action} und Sie werden eingeloggt.
 
 ![adminlogin](images/adminpw_win_06.png){.thumbnail}
 
-#### Schritt 5.2: für eine ältere Windows-Version
+#### Schritt 5.2: Ältere Version von Windows
 
-Ein Kommandozeilenfenster (cmd) sollte sich öffnen, wenn die KVM-Sitzung abgeschlossen ist.
+Ein Kommandozeilenfenster (`cmd`) sollte sich öffnen, wenn die KVM-Sitzung abgeschlossen ist.
 
 Legen Sie das Passwort des aktuellen Benutzers ("Administrator") fest:
 
-```
+```powershell
 net user Administrator *
 ```
 
@@ -277,22 +288,9 @@ Es wird empfohlen, bei der Eingabe von Passwörtern in dieses Interface die virt
 
 #### Schritt 1: Server im Rescue-Modus neu starten <a name="bootinwinrescue"></a>
 
-Das System muss im Rescue-Modus gestartet werden, bevor das Administrator-Passwort geändert werden kann. Loggen Sie sich im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, gehen Sie in den Bereich `Bare Metal Cloud`{.action} und wählen Sie Ihren Server in `Dedicated Server`{.action} aus.
+Das System muss im Rescue-Modus (WinRescue) gestartet werden, bevor das Administrator-Passwort geändert werden kann.
 
-Der Netboot-Modus muss auf "WinRescue (Rescue System for Windows)" umgestellt werden. Suchen Sie nach "Boot" im Bereich **Allgemeine Informationen** und klicken Sie auf `...`{.action}, dann auf `Bearbeiten`{.action}.
-<br>Setzen Sie im angezeigten Fenster einen Haken bei **Im Rescue-Modus booten** und wählen Sie "WinRescue" im Menü aus. Geben Sie im letzten Feld eine E-Mail-Adresse an, wenn die Login-Daten an eine andere Adresse als die Hauptadresse Ihres OVHcloud-Accounts gesendet werden sollen. 
-
-Klicken Sie auf `Weiter`{.action} und dann auf `Bestätigen`{.action}.
-
-![Winrescuemode](images/adminpw_win_008.png){.thumbnail}
-
-Wenn die Änderung abgeschlossen ist, klicken Sie auf `...`{.action}. rechts von "Status" unter **Dienstleistungsstatus**.
-<br>Klicken Sie auf `Neu starten`{.action} starten und der Server wird in den Rescue-Modus versetzt.<br>
-Die Durchführung dieser Operation kann einige Minuten dauern. Sie können den Fortschritt im Tab `Tasks`{.action} überprüfen. Es wird Ihnen eine E-Mail mit zusätzlichen Informationen sowie den Zugangsdaten des Root-Benutzers für den Rescue-Modus zugesandt.
-
-![rescuereboot](images/adminpw_win_02.png){.thumbnail}
-
-Weitere Informationen zum Rescue-Modus finden Sie in [dieser Anleitung](/pages/bare_metal_cloud/dedicated_servers/rescue_mode).
+Genaue Informationen zur Vorgehensweise finden Sie in [der Anleitung zum Rescue-Modus](/pages/bare_metal_cloud/dedicated_servers/rescue_mode).
 
 #### Schritt 2: Derzeitiges Passwort löschen
 

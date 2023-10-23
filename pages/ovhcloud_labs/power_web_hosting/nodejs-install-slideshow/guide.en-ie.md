@@ -4,26 +4,6 @@ excerpt: Find out how to install a real-time presentation slide platform on your
 updated: 2021-02-04
 ---
 
-<style>
- pre {
-     font-size: 14px;
- }
- pre.console {
-   background-color: #300A24; 
-   color: #ccc;
-   font-family: monospace;
-   padding: 5px;
-   margin-bottom: 5px;
- }
- pre.console code {
-   border: solid 0px transparent;
-   font-family: monospace !important;
- }
- .small {
-     font-size: 0.75em;
- }
-</style>
-
 ## Objective
 
 You've subscribed to a Web POWER web hosting plan to deploy **Node.js** applications, and you want to deploy a [real-time presentation slide platform](https://nafeu.medium.com/real-time-presentation-slides-with-socket-io-express-node-js-and-javascript-cf08a95ff098){.external} on it.
@@ -49,9 +29,9 @@ Let's suppose you have the default configuration for Node.js hosting:
 
 > [!primary]
 >
-> To verify your configuration, you can use the [Retrieve active configuration](/pages/labs/web-power/getting-started#api-get-active-configuration) API endpoint.
+> To verify your configuration, you can use the [Retrieve active configuration](/pages/ovhcloud_labs/power_web_hosting/getting-started#api-get-active-configuration) API endpoint.
 
-[Connect via SSH](/pages/labs/web-power/getting-started#ssh) to your POWER web hosting.
+[Connect via SSH](/pages/ovhcloud_labs/power_web_hosting/getting-started#ssh) to your POWER web hosting.
 Let's begin by retrieving the sources of the project:
 
 ```sh
@@ -67,13 +47,14 @@ npm install --save
 ln -fs server.js index.js
 ```
 
-Then [restart your instance](/pages/labs/web-power/getting-started#restart) and your slideshow platform will be online.
+Then [restart your instance](/pages/ovhcloud_labs/power_web_hosting/getting-started#restart) and your slideshow platform will be online.
 
 ![Slideshow](images/nodejs-install-slideshow-01.png){.thumbnail}
 
 Terminal output:
 
-<pre class="console"><code> ~ $ rm -rf www
+```console
+ ~ $ rm -rf www
 
 ~ $ git clone https://github.com/nafeu/realtime-slides-tut.git www
 Cloning into 'www'...
@@ -94,8 +75,7 @@ found 18 vulnerabilities (9 low, 3 moderate, 5 high, 1 critical)
 ~/www $ mkdir -p tmp
 
 ~/www $ touch tmp/restart.txt
-
-</code></pre>
+```
 
 ## Go further
 

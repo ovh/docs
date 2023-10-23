@@ -100,7 +100,7 @@ Se non vuoi più utilizzare uno dei tuoi metodi di pagamento, puoi eliminarlo cl
 
 ![manage-payment-methods](images/managepaymentmethods4.png){.thumbnail}
 
-Per eliminare tutti i metodi di pagamento, tutti i servizi devono essere in [rinnovo manuale](/pages/account/billing/how_to_use_automatic_renewal#il-rinnovo-manuale).
+Per eliminare tutti i metodi di pagamento, tutti i servizi devono essere in [rinnovo manuale](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#il-rinnovo-manuale).
 
 #### Eliminare un metodo di pagamento tramite le API OVHcloud
 
@@ -133,7 +133,7 @@ Elimina il metodo di pagamento utilizzando l'ID precedentemente ottenuto:
 
 Il *conto prepagato* è presente nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) al momento della creazione. che permette di accreditare in anticipo il tuo account cliente e utilizzare questi fondi per il pagamento degli ordini e delle fatture di rinnovo.
 
-Ricaricando regolarmente il tuo account, assicurati che il [rinnovo automatico](/pages/account/billing/how_to_use_automatic_renewal#il-rinnovo-automatico) dei tuoi servizi non venga mai interrotto per mancato pagamento.
+Ricaricando regolarmente il tuo account, assicurati che il [rinnovo automatico](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#il-rinnovo-automatico) dei tuoi servizi non venga mai interrotto per mancato pagamento.
 
 Per effettuare questa operazione, accedi alla sezione `Modalità di pagamento` dello Spazio Cliente:
 

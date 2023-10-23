@@ -8,7 +8,6 @@ updated: 2022-12-22
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
 >
 
-  
 ## Ziel
 
 Das Modul "**mod_rewrite**" ist eines der verfügbaren Module des Webservers **Apache**. **Apache** ist auf unserer gesamten Shared-Hosting-Infrastruktur installiert. Dieser Webserver erlaubt die Verwaltung der an Ihr Webhosting gerichtete HTTP-Anfragen.

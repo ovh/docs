@@ -1,7 +1,7 @@
 ---
 title: Quelles sont les adresses IP du monitoring OVHcloud ?
 excerpt: Retrouvez ici les adresses IP a renseigner lors de la mise en place d’un firewall, afin que le monitoring OVHcloud continue de fonctionner sur votre serveur.
-updated: 2023-07-21
+updated: 2023-09-21
 ---
 
 ## Objectif
@@ -39,12 +39,8 @@ Pour mettre en place un firewall restrictif, notamment sur l'ICMP, et continuer 
 
 > [!primary]
 >
-> Si votre serveur est situé à Roubaix 3, il faut récupérer la dernière IP via tcpdump.
->
-> ```
-> tcpdump host ip.fixe.du.serveur | grep ICMP
-> ```
->
+> Si votre serveur est situé à Roubaix 3, il faut récupérer la dernière IP via tcpdump :
+> <pre class="highlight language-console"><code class="language-console">tcpdump host server_ip | grep ICMP</code></pre>
 
 ### Activer ou désactiver le monitoring
 
@@ -63,18 +59,6 @@ Cliquez sur le bouton `Configurer`{.action}. Dans la fenêtre qui apparaît, vou
 ![Monitoring](images/monitoring-server2.png){.thumbnail}
 
 Cliquez sur `Confirmer`{.action} pour mettre à jour votre configuration du monitoring.
-
-### Activer le monitoring de services spécifiques
-
-En plus du monitoring standard, vous pouvez autoriser à OVHcloud de surveiller des services spécifiques comme le HTTP, le SSH et d’autres protocoles.
-
-Pour ce faire, dans l'onglet `Informations générales`{.action} puis le cadre **État des services**, cliquez sur le bouton `...`{.action} à côté de « Services Monitorés ». Cliquez sur `Monitorer mes services`{.action}.
-
-![monitoring](images/monitoring02.png){.thumbnail}
-
-Vous serez redirigé vers l'écran ci-dessous. Cliquez sur `Monitorer un service`{.action} puis renseignez l'adresse IP, le protocole, le numéro de port, la réponse du serveur et l'intervalle de temps entre les vérifications de votre service. Cliquez sur le symbole de validation (**V**) pour confirmer lesmodifications.
-
-![monitoring](images/monitoring3.png){.thumbnail}
 
 ## Aller plus loin
 

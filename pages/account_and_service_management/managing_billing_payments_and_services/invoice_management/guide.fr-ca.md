@@ -110,7 +110,7 @@ Afin de procéder au règlement de vos factures en attente de paiement, il vous 
 
 ![Paiement de la dette](images/pay_debt.png){.thumbnail}
 
-Un [bon de commande de régularisation](/pages/account/billing/managing_ovh_orders#le-bon-de-commande) sera alors créé. Une fois le paiement effectué, la situation sera régularisée.
+Un [bon de commande de régularisation](/pages/account_and_service_management/managing_billing_payments_and_services/managing_ovh_orders#le-bon-de-commande) sera alors créé. Une fois le paiement effectué, la situation sera régularisée.
 
 #### Demander l'annulation d'une facture
 

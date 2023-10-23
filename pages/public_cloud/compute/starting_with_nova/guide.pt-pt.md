@@ -1,7 +1,6 @@
 ---
 title: Primeiros passos com a API OpenStack
 excerpt: Descubra como gerir as suas instâncias com a ajuda do cliente Python OpenStack
-legacy_guide_number: g1935
 updated: 2022-10-13
 ---
 

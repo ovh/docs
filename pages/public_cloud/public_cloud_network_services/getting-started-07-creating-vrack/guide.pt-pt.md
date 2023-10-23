@@ -128,7 +128,7 @@ Para continuar a configuração do vRack a partir da Área de Cliente OVHcloud, 
 
 #### A partir das APIv6 OVHcloud
 
-Para ativar e gerir um vRack a partir das APIv6 OVHcloud, clique [aqui](/pages/platform/network-services/getting-started-08-creating-vrack-with-api#step-1-activating-and-managing-a-vrack) (EN), para consultar o guia específico deste método.
+Para ativar e gerir um vRack a partir das APIv6 OVHcloud, clique [aqui](/pages/public_cloud/public_cloud_network_services/getting-started-08-creating-vrack-with-api#step-1-activating-and-managing-a-vrack) (EN), para consultar o guia específico deste método.
 
 ### Etapa 2: Criar uma rede privada no vRack
 
@@ -174,7 +174,7 @@ Na etapa seguinte, são-lhe apresentadas várias opções:
 
 **Crie um Gateway e ligue-se à rede privada**
 
-Selecione esta opção se pretende criar instâncias apenas com uma rede privada. Para mais informações, consulte os seguintes guias: [Creating a private network with Gateway (EN)](/pages/public_cloud/public_cloud_network_services/getting-started-02-create-private-network-gateway) e [Criação e conexão a uma primeira instância Public Cloud](/pages/platform/public-cloud/public-cloud-first-steps#etapa-3-criacao-de-uma-instancia).
+Selecione esta opção se pretende criar instâncias apenas com uma rede privada. Para mais informações, consulte os seguintes guias: [Creating a private network with Gateway (EN)](/pages/public_cloud/public_cloud_network_services/getting-started-02-create-private-network-gateway) e [Criação e conexão a uma primeira instância Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps#etapa-3-criacao-de-uma-instancia).
 
 > [!warning]
 > Se a opção for "cinzenta", isto significa que é incompatível com a região selecionada. Para mais informações, consulte a nossa página sobre a [disponibilidade dos produtos Public Cloud para cada região](https://www.ovhcloud.com/pt/public-cloud/regions-availability/).
@@ -203,7 +203,7 @@ Depois de fazer as suas escolhas, clique em `Criar`{.action} para lançar o proc
 
 #### Criar uma rede privada a partir da APIv6 OVHcloud <a name="vlansetup"></a>
 
-Para criar uma VLAN a partir da APIv6 OVHcloud, clique [aqui](/pages/platform/network-services/getting-started-08-creating-vrack-with-api#step-3-creating-a-vlan-in-the-vrack) (EN), para consultar o guia específico deste método.
+Para criar uma VLAN a partir da APIv6 OVHcloud, clique [aqui](/pages/public_cloud/public_cloud_network_services/getting-started-08-creating-vrack-with-api#step-3-creating-a-vlan-in-the-vrack) (EN), para consultar o guia específico deste método.
 
 #### Criar uma rede privada através do CLI OpenStack
 
@@ -252,7 +252,7 @@ Existem duas situações:
 
 ##### **A partir da Área de Cliente OVHcloud**
 
-Consulte o guia: [Criar uma instância a partir da Área de Cliente](/pages/platform/public-cloud/public-cloud-first-steps#create-instance). Ao criar uma instância, poderá especificar, na etapa 5, pode escolher um modo de rede e depois uma rede privada na qual possa integrar a sua instância.
+Consulte o guia: [Criar uma instância a partir da Área de Cliente](/pages/public_cloud/compute/public-cloud-first-steps#create-instance). Ao criar uma instância, poderá especificar, na etapa 5, pode escolher um modo de rede e depois uma rede privada na qual possa integrar a sua instância.
 
 ![attach new instance](images/network-selection.png){.thumbnail}
 
@@ -263,7 +263,7 @@ Consulte o guia: [Criar uma instância a partir da Área de Cliente](/pages/plat
 
 ##### **A partir da APIv6 OVHcloud**
 
-Clique [aqui](/pages/platform/network-services/getting-started-08-creating-vrack-with-api#step-4-integrating-an-instance-into-the-vrack) (EN), para consultar o guia específico deste método.
+Clique [aqui](/pages/public_cloud/public_cloud_network_services/getting-started-08-creating-vrack-with-api#step-4-integrating-an-instance-into-the-vrack) (EN), para consultar o guia específico deste método.
 
 ##### **A partir da API OpenStack**
 
@@ -457,7 +457,7 @@ Na pop-up que aparecer, selecione a ou as redes privadas a associar à sua inst�
 
 ##### **Gestão das interfaces de rede a partir da APIv6 OVHcloud**
 
-Clique [aqui](/pages/platform/network-services/getting-started-08-creating-vrack-with-api#in-case-of-an-existing-instance) (EN), para consultar o guia específico deste método.
+Clique [aqui](/pages/public_cloud/public_cloud_network_services/getting-started-08-creating-vrack-with-api#in-case-of-an-existing-instance) (EN), para consultar o guia específico deste método.
 
 ##### **Gestão das interfaces de rede a partir do OpenStack Horizon**
 

@@ -23,8 +23,8 @@ Vous n'avez actuellement pas accès à Internet ou vous rencontrez des coupures 
 
 Avant de débuter, il est essentiel de pouvoir vérifier les voyants lumineux de votre modem afin d'identifier la nature de la coupure que vous rencontrez. Une fois les voyants sous vos yeux, poursuivez la lecture de cette documentation en fonction de l'état de ces derniers.
 
-- [Aucun voyant n'est allumé sur votre modem](/pages/telecom/xdsl/interruption_de_service#si-aucun-voyant-nest-allume){.external}.
-- [Des voyants sont allumés (clignotant ou fixe)](/pages/telecom/xdsl/interruption_de_service#si-des-voyants-sont-allumes-clignotant-ou-fixe){.external}.
+- [Aucun voyant n'est allumé sur votre modem](/pages/web_cloud/internet/internet_access/interruption_de_service#si-aucun-voyant-nest-allume){.external}.
+- [Des voyants sont allumés (clignotant ou fixe)](/pages/web_cloud/internet/internet_access/interruption_de_service#si-des-voyants-sont-allumes-clignotant-ou-fixe){.external}.
 
 ### Si aucun voyant n'est allumé
 

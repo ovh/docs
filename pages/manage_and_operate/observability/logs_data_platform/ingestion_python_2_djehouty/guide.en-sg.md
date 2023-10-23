@@ -81,7 +81,7 @@ The complete list of parameters supported by Djehouty can be found on [github](h
 
 #### Example&#58; Use case with GELF over TCP/TLS
 
-```python hl_lines="7 9"
+```python
 import logging
 from djehouty.libgelf.handlers import GELFTCPSocketHandler
 
@@ -101,7 +101,7 @@ gelf_logger.info('test')
 
 #### Example&#58; Use case with LTSV over TCP/TLS
 
-```python hl_lines="7 9"
+```python
 import logging
 from djehouty.libltsv.handlers import LTSVTCPSocketHandler
 

@@ -1,7 +1,7 @@
 ---
 title: Freigegebenes Postfach erstellen und verwenden
 excerpt: Erfahren Sie hier, wie Sie ein freigegebenes Postfach zu Ihrem Exchange-Dienst hinzufügen und verwenden
-updated: 2021-06-15
+updated: 2023-09-15
 ---
 
 > [!primary]
@@ -34,10 +34,21 @@ Füllen die Felder aus:
 
 |Funktion|Beschreibung|
 |---|---|
-|E-Mail-Account|Wählen Sie den Namen Ihres freigegebenen Accounts aus. **Es darf sich nicht um eine bestehende E-Mail-Adresse handeln.**|
-|Quota|Geben Sie den gewünschte Speicherplatz für Ihr freigegebenes Postfach an. Das Maximum beträgt **10 GB für alle Ihre freigegebenen Postfächer**.|
+|E-Mail-Account|Vergeben Sie einen Namen für das freigegebene Postfach. **Es darf sich nicht um eine bestehende E-Mail-Adresse handeln.**|
+|Quota|Geben Sie das gewünschte Speicherkontingent für das freigegebene Postfach an, [abhängig vom verfügbaren Speicherplatz](#size).|
 |Anzeigename|Anzeigename, die Sie beim Versand über Ihr freigegebenes Postfach anzeigen möchten.|
 |Adresse im Adressbuch verbergen|Das Ausblenden der Adresse im Adressbuch sorgt dafür, dass die Adresse des freigegebenen Postfachs nicht vom Exchange-Dienst gelistet wird.|
+
+<a name="size"></a>
+
+> [!primary]
+>
+> Der für die Erstellung eines freigegebenen Postfachs verfügbare Speicherplatz hängt von der Anzahl der für Ihrem Dienst gebuchten Accounts ab. Jeder abonnierte Exchange Account fügt 5 GB für freigegebene Postfächer hinzu.
+>
+> **Beispiel**:
+>
+> Sie haben 4 Accounts auf Ihrem Exchange abonniert, und damit **4 x 5 GB** erhalten. Sie haben also **20 GB** Speicherplatz für freigegebene Postfächer auf diesem Dienst.
+
 
 Klicken Sie auf `Weiter`{.action}, um zur Zusammenfassung zu gelangen und klicken Sie auf `Bestätigen`{.action}.
 
@@ -51,7 +62,7 @@ Ein freigegebenes Postfach ist nicht direkt erreichbar, da es kein Passwort besi
 
 Es muss daher eine Delegation zwischen einem Exchange Account und dem freigegebenen Postfach eingerichtet werden.
 
-Klicken Sie im Tab Tab `Freigegebene Postfächer`{.action} des Exchange-Dienstes auf den Button `...`{.action} und anschließend auf `Berechtigungen konfigurieren`{.action}. Sie können dann in der Liste auswählen, welche Konten auf das freigegebene Postfach zugreifen können sollen.
+Klicken Sie im Tab `Freigegebene Postfächer`{.action} des Exchange-Dienstes auf den Button `...`{.action} und anschließend auf `Berechtigungen konfigurieren`{.action}. Sie können dann in der Liste auswählen, welche Konten auf das freigegebene Postfach zugreifen können sollen.
 
 ![E-Mails](images/exchange-shared_accounts03.png){.thumbnail}
 

@@ -52,8 +52,6 @@ Vários campos deverão ser preenchidos para criar o seu bloco IP
 > [!success]
 >
 > Antes da entrega, terá de pagar as taxas de ativação do bloco IP.
->  
-> Os custos de renovação dos IP são gratuitos.
 >
 
 Após ter confirmado o último passo, receberá uma nota de encomenda do seu bloco IP. Se esta estiver correta, só precisará de a pagar através dos métodos de pagamento disponíveis na parte inferior da página.

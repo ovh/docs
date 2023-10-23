@@ -4,27 +4,6 @@ excerpt: 'Find out how to resize Persistent Volumes on OVHcloud Managed Kubernet
 updated: 2021-10-19
 ---
 
-<style>
- pre {
-     font-size: 14px;
- }
- pre.console {
-   background-color: #300A24;
-   color: #ccc;
-   font-family: monospace;
-   padding: 5px;
-   margin-bottom: 5px;
- }
- pre.console code {
-   b   font-family: monospace !important;
-   font-size: 0.75em;
-   color: #ccc;
- }
- .small {
-     font-size: 0.75em;
- }
-</style>
-
 In this tutorial we are going to guide you with the resize of [Persistent Volumes](https://kubernetes.io/docs/concepts/storage/persistent-volumes/) (PVs) on your OVHcloud Managed Kubernetes Service.
 
 The Kubernetes `PersistentVolume` subsystem provides an API for users and administrators that abstracts details of how storage is provided from how it is consumed. To do this Kubernetes provides two API resources: `PersistentVolume` (PVs) and `PersistentVolumeClaim` (PVCs).
@@ -134,7 +113,8 @@ kubectl describe deployment mysql
 
 In my example cluster, the precedent commands obtains:
 
-<pre class="console"><code>$ kubectl apply -f mysql/mysql-pvc.yaml
+```console
+$ kubectl apply -f mysql/mysql-pvc.yaml
 persistentvolumeclaim/mysql-pv-claim created
 
 $ kubectl describe pvc mysql-pv-claim
@@ -204,7 +184,7 @@ Events:
   Type    Reason             Age   From                   Message
   ----    ------             ----  ----                   -------
   Normal  ScalingReplicaSet  27s   deployment-controller  Scaled up replica set mysql-c85f7f79c to 1
-</code></pre>
+```
 
 ## Accessing the MySQL instance and initializing a database
 
@@ -227,7 +207,8 @@ SHOW TABLES;
 
 On my example cluster:
 
-<pre class="console"><code>$ kubectl run -it --rm --image=mysql:5.6 --restart=Never mysql-client -- mysql -h mysql -ppassword
+```console
+$ kubectl run -it --rm --image=mysql:5.6 --restart=Never mysql-client -- mysql -h mysql -ppassword
 If you don't see a command prompt, try pressing enter.
 
 mysql> CREATE DATABASE testingResize;
@@ -246,7 +227,7 @@ mysql> SHOW TABLES;
 | anEmptyTable            |
 +-------------------------+
 1 row in set (0.00 sec)
-</code></pre>
+```
 
 ## Expand the PVs
 
@@ -289,7 +270,8 @@ After the pod starts, we can use again `kubectl describe pvc mysql-pv-claim` and
 
 On my example cluster:
 
-<pre class="console"><code>$ kubectl patch deployment mysql -p '{ "spec": { "replicas": 0 }}'
+```console
+$ kubectl patch deployment mysql -p '{ "spec": { "replicas": 0 }}'
 deployment.extensions/mysql patched
 
 $ kubectl get deployment mysql
@@ -365,7 +347,7 @@ Events:
   Normal   ProvisioningSucceeded  8m6s                   cinder.csi.openstack.org_csi-cinder-controllerplugin-0_4da74c15-1973-486d-9dde-2ccf2f19811b  Successfully provisioned volume ovh-managed-kubernetes-btw8lc-pvc-ab896768-b995-453b-85ab-4bcb378de01d
   Normal   Resizing                  5m50s (x9 over 5m54s)  external-resizer cinder.csi.openstack.org  External resizer is resizing volume ovh-managed-kubernetes-btw8lc-pvc-ab896768-b995-453b-85ab-4bcb378de01d
   Normal   FileSystemResizeRequired  5m49s                  external-resizer cinder.csi.openstack.org  Require file system resize of volume on node
-</code></pre>
+```
 
 ## Verifying data integrity
 
@@ -379,7 +361,8 @@ An `SHOW DATABASES;` should allow us to see our `testingResize` database, we can
 
 On my example cluster:
 
-<pre class="console"><code>$ kubectl run -it --rm --image=mysql:5.6 --restart=Never mysql-client -- mysql -h mysql -ppassword
+```console
+$ kubectl run -it --rm --image=mysql:5.6 --restart=Never mysql-client -- mysql -h mysql -ppassword
 If you don't see a command prompt, try pressing enter.
 
 mysql> SHOW DATABASES;
@@ -406,7 +389,7 @@ mysql> SHOW TABLES;
 | anEmptyTable            |
 +-------------------------+
 1 row in set (0.00 sec)
-</code></pre>
+```
 
 ## Where do we go from here?
 

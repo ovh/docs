@@ -96,7 +96,7 @@ Una volta inseriti tutti i dati, clicca su `Conferma`{.action}. A questo punto, 
 |Ambiente dell’applicazione|Specifica se si tratta di un ambiente di produzione (production), di prova (test) o di sviluppo (development). Ti ricordiamo che quest’ultimo ha un comportamento diverso rispetto agli altri, in quanto mostra gli eventuali errori direttamente nell’interfaccia Web.|
 |Script di avvio dell'applicazione|Assegna un nome allo script che invierà la richiesta al motore di esecuzione Ruby.|
 
-Una volta inseriti tutti i dati, clicca su `Conferma`{.action}. A questo punto, verifica che il motore di esecuzione venga correttamente utilizzato dai multisiti corrispondenti. Per eseguire questa operazione, consulta il paragrafo [Step 3: associa il motore di esecuzione a un multisito](/pages/web/cloud-web/manage-runtime#step-3-associa-il-motore-di-esecuzione-a-un-multisito){.external}.
+Una volta inseriti tutti i dati, clicca su `Conferma`{.action}. A questo punto, verifica che il motore di esecuzione venga correttamente utilizzato dai multisiti corrispondenti. Per eseguire questa operazione, consulta il paragrafo [Step 3: associa il motore di esecuzione a un multisito](/pages/web_cloud/web_hosting/manage-runtime#step-3-associa-il-motore-di-esecuzione-a-un-multisito){.external}.
 
 ![cloudweb](images/cloud-web-runtime-step2-1-3.png){.thumbnail}
 
@@ -110,7 +110,7 @@ Una volta inseriti tutti i dati, clicca su `Conferma`{.action}. A questo punto, 
 |Ambiente dell’applicazione|Specifica se si tratta di un ambiente di produzione (production), di prova (test) o di sviluppo (development). Ti ricordiamo che quest’ultimo ha un comportamento diverso rispetto agli altri, in quanto mostra gli eventuali errori direttamente nell’interfaccia Web.|
 |Script di avvio dell'applicazione|Assegna un nome allo script che invierà la richiesta al motore di esecuzione Python.|
 
-Una volta inseriti tutti i dati, clicca su `Conferma`{.action}. A questo punto, verifica che il motore di esecuzione venga correttamente utilizzato dai multisiti corrispondenti. Per eseguire questa operazione, consulta il paragrafo [Step 3: associa il motore di esecuzione a un multisito](/pages/web/cloud-web/manage-runtime#step-3-associa-il-motore-di-esecuzione-a-un-multisito){.external}.
+Una volta inseriti tutti i dati, clicca su `Conferma`{.action}. A questo punto, verifica che il motore di esecuzione venga correttamente utilizzato dai multisiti corrispondenti. Per eseguire questa operazione, consulta il paragrafo [Step 3: associa il motore di esecuzione a un multisito](/pages/web_cloud/web_hosting/manage-runtime#step-3-associa-il-motore-di-esecuzione-a-un-multisito){.external}.
 
 ![cloudweb](images/cloud-web-runtime-step2-1-4.png){.thumbnail}
 
@@ -141,7 +141,7 @@ Una volta selezionato il motore, segui gli step fino al completamento dell’ope
 
 ## Per saperne di più
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
 
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
 

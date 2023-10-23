@@ -55,7 +55,7 @@ The `env:` prefix will expose `MY_ENV_VAR` as a Unix environment variable.  It w
 
 ### Dev/Prod environment variables
 
-For variables that should vary between production and "other" environments, such as API gateway credentials, the most convenient approach is to set the "other" version as a [project-level variable](/pages/web/web-paas/development-variables#project-variables) (shared by all environments, and optionally accessible during build) and then override it just on the production branch (`master`).
+For variables that should vary between production and "other" environments, such as API gateway credentials, the most convenient approach is to set the "other" version as a [project-level variable](/pages/web_cloud/web_paas_powered_by_platform_sh/development/development-variables#project-variables) (shared by all environments, and optionally accessible during build) and then override it just on the production branch (`master`).
 
 1\. Set the project-level "dev mode" variable
 

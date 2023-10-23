@@ -130,7 +130,7 @@ Se não registou um método de pagamento, mas dispõe de serviços com renovaç�
 #### Truques e dicas
 
 Tenha à mão o seu ID de cliente e palavra-passe OVHcloud. Vai precisar destas credenciais para pagar as suas faturas.
-Também pode consultar este manual pormenorizado: [Gerir as minhas faturas OVHcloud - Pagar o montante pendente](/pages/account/billing/invoice_management#pagar-o-montante-pendente).
+Também pode consultar este manual pormenorizado: [Gerir as minhas faturas OVHcloud - Pagar o montante pendente](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pagar-o-montante-pendente).
 
 ### Como verificar o estado do meu pagamento?
 

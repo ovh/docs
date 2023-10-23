@@ -1,7 +1,6 @@
 ---
 title: Dodawanie bloku IP
 excerpt: Jak zamówić blok IP dla swojej usługi Private Cloud
-legacy_guide_number: '7766457'
 updated: 2022-04-06
 ---
 
@@ -53,8 +52,6 @@ Utworzenie bloku IP wymaga wypełnienia następujących pól
 > [!success]
 >
 > Opłać koszty aktywacji bloku IP przed dostawą.
->  
-> Adresy IP są odnawiane za darmo.
 >
 
 Po potwierdzeniu ostatniego etapu otrzymasz formularz zamówienia na blok IP. Jeśli odpowiada on Twoim oczekiwaniom, wystarczy go opłacić za pomocą środków płatności oferowanych na dole strony, aby otrzymać zamówione adresy.

@@ -66,7 +66,7 @@ $ debian@server:~$ sudo nano /etc/syslog-ng/conf.d/ldp.conf
 
 - Copy-paste this configuration. Don't forget to modify the **token value** and the **LDP cluster** by yours.
 
-``` hl_lines="10 15"
+``` console
 template ovhTemplate {
     # important:
     ## Bracket [] no space between inside (opening/closing), space outside.

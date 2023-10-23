@@ -4,28 +4,6 @@ excerpt: 'Find out how to manage nodes with the NodePools CRD'
 updated: 2023-05-11
 ---
 
-<style>
- pre {
-     font-size: 14px;
- }
- pre.console {
-   background-color: #300A24; 
-   color: #ccc;
-   font-family: monospace;
-   padding: 5px;
-   margin-bottom: 5px;
- }
- pre.console code {
-   border: solid 0px transparent;
-   font-family: monospace !important;
-   font-size: 0.75em;
-   color: #ccc;
- }
- .small {
-     font-size: 0.75em;
- }
-</style>
-
 ## Objective
 
 OVHcloud Managed Kubernetes service provides you Kubernetes clusters without the hassle of installing or operating them. This guide will cover one of the first steps after ordering a cluster: managing nodes and node pools, using the NodePools CRD.
@@ -61,7 +39,8 @@ kubectl get crd
 
 You get the list of installed CRDs and inside it the `nodepools.kube.cloud.ovh.com`
 
-<pre class="console"><code>$ kubectl get crd
+```console
+$ kubectl get crd
 NAME                                             CREATED AT
 ...
 ingresses.networking.internal.knative.dev              2023-01-03T07:25:05Z
@@ -83,7 +62,7 @@ podvolumebackups.velero.io                             2022-10-04T06:56:54Z
 podvolumerestores.velero.io                            2022-10-04T06:56:54Z
 probes.monitoring.coreos.com                           2023-04-26T09:19:12Z
 ...
-</code></pre>
+```
 
 You can get the details of the `NodePools` CRD by doing:
 
@@ -177,10 +156,11 @@ kubectl get nodepools
 
 In my case I have one node pool in my cluster, called `my-node-pool`, with 2 B2-7 nodes:
 
-<pre class="console"><code>$ kubectl get nodepools
+```console
+$ kubectl get nodepools
 NAME            FLAVOR   AUTOSCALED   MONTHLY BILLED   ANTIAFFINITY   DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   MIN   MAX   AGE
 nodepool-b2-7   b2-7     false        true             true           2         2         2            2           0     5     14d
-</code></pre>
+```
 
 You can see the state of the node pool, how many nodes you want in the pool (`DESIRED`), how many actually are (`CURRENT`), how many of them are up-to-date (`UP-TO-DATE`) and how many are available to be used (`AVAILABLE`).
 
@@ -222,29 +202,32 @@ kubectl apply -f new-nodepool.yaml
 
 Your new node pool will be created:
 
-<pre class="console"><code>$ kubectl apply -f new-nodepool.yaml
+```console
+$ kubectl apply -f new-nodepool.yaml
 nodepool.kube.cloud.ovh.com/my-new-node-pool created
 
 $ kubectl get nodepools
 NAME               FLAVOR   AUTOSCALED   MONTHLY BILLED   ANTIAFFINITY   DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   MIN   MAX   AGE
 my-new-node-pool   b2-7     false        false            false          3                                            0     100   3s
 nodepool-b2-7      b2-7     false        true             true           2         2         2            2           0     5     14d
-</code></pre>
+```
 
 At the beginning the new node pool is empty, but if you wait a few seconds, you will see how the nodes are progressively created and made available (one after another)...
 
-<pre class="console"><code>$ kubectl get nodepools
+```console
+$ kubectl get nodepools
 NAME               FLAVOR   AUTOSCALED   MONTHLY BILLED   ANTIAFFINITY   DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   MIN   MAX   AGE
 my-new-node-pool   b2-7     false        false            false          3         3         3                        0     100   3s
 nodepool-b2-7      b2-7     false        true             true           2         2         2            2           0     5     14d
-</code></pre>
+```
 
 ## Editing the node pool size
 
 To upsize or downsize your node pool, you can simply edit the YAML file and re-apply it.
 For example, raise the `desiredNodes` to 5 in `new-nodepool.yaml` and apply the file:
 
-<pre class="console"><code>$ kubectl apply -f new-nodepool.yaml
+```console
+$ kubectl apply -f new-nodepool.yaml
 nodepool.kube.cloud.ovh.com/my-new-node-pool configured
 
 > [!primary]
@@ -255,13 +238,14 @@ $ kubectl get nodepools
 NAME               FLAVOR   AUTOSCALED   MONTHLY BILLED   ANTIAFFINITY   DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   MIN   MAX   AGE
 my-new-node-pool   b2-7     false        false            false          5         3         3                        0     100   3s
 nodepool-b2-7      b2-7     false        true             true           2         2         2            2           0     5     14d
-</code></pre>
+```
 
 The `DESIRED` number of nodes has changed, and the two additional nodes will be created.
 
 Then, after some minutes:
 
-<pre class="console"><code>$ kubectl get nodepools
+```console
+$ kubectl get nodepools
 NAME               FLAVOR   AUTOSCALED   MONTHLY BILLED   ANTIAFFINITY   DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   MIN   MAX   AGE
 my-new-node-pool   b2-7     false        false            false          5         5         5            3           0     100   3s
 nodepool-b2-7      b2-7     false        true             true           2         2         2            2           0     5     14d
@@ -270,7 +254,7 @@ $ kubectl get nodepools
 NAME               FLAVOR   AUTOSCALED   MONTHLY BILLED   ANTIAFFINITY   DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   MIN   MAX   AGE
 my-new-node-pool   b2-7     false        false            false          5         5         5            5           0     100   3s
 nodepool-b2-7      b2-7     false        true             true           2         2         2            2           0     5     14d
-</code></pre>
+```
 
 You can also use `kubectl scale —replicas=X` to change the number of desired nodes. For example, let's resize it back to 2 nodes:
 
@@ -278,22 +262,24 @@ You can also use `kubectl scale —replicas=X` to change the number of desired n
 kubectl scale --replicas=2 nodepool my-new-node-pool
 ```
 
-<pre class="console"><code>$ kubectl scale --replicas=2 nodepool my-new-node-pool
+```console
+$ kubectl scale --replicas=2 nodepool my-new-node-pool
 nodepool.kube.cloud.ovh.com/my-new-node-pool scaled
 
 $ kubectl get nodepools
 NAME               FLAVOR   AUTOSCALED   MONTHLY BILLED   ANTIAFFINITY   DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   MIN   MAX   AGE
 my-new-node-pool   b2-7     false        false            false          2         5         5            5           0     100   3s
 nodepool-b2-7      b2-7     false        true             true           2         2         2            2           0     5     14d
-</code></pre>
+```
 
 Then, after some minutes:
 
-<pre class="console"><code>$ kubectl get nodepools
+```console
+$ kubectl get nodepools
 NAME               FLAVOR   AUTOSCALED   MONTHLY BILLED   ANTIAFFINITY   DESIRED   CURRENT   UP-TO-DATE   AVAILABLE   MIN   MAX   AGE
 my-new-node-pool   b2-7     false        false            false          2         2         2            2           0     100   3s
 nodepool-b2-7      b2-7     false        true             true           2         2         2            2           0     5     14d
-</code></pre>
+```
 
 ## Deleting a node pool
 

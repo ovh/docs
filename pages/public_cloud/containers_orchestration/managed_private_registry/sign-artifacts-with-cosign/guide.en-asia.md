@@ -4,28 +4,6 @@ excerpt: 'Find out how to sign OCI artifacts with Cosign OVHcloud Managed Privat
 updated: 2023-08-08
 ---
 
-<style>
- pre {
-     font-size: 14px;
- }
- pre.console {
-   background-color: #300A24; 
-   color: #ccc;
-   font-family: monospace;
-   padding: 5px;
-   margin-bottom: 5px;
- }
- pre.console code {
-   border: solid 0px transparent;
-   color: #ccc;
-   font-family: monospace !important;
-   font-size: 0.75em;
- }
- .small {
-     font-size: 0.75em;
- }
-</style>
-
 ## Objective
 
 OVHcloud Managed Private Registry service, a cloud-native registry built on Harbor, allows you to store, manage and access your container images (OCI artifacts) and Helm charts.
@@ -74,7 +52,8 @@ cosign version
 
 The output should be like this:
 
-<pre class="console"><code>$ cosign version
+```console
+$ cosign version
   ______   ______        _______. __    _______ .__   __.
  /      | /  __  \      /       ||  |  /  _____||  \ |  |
 |  ,----'|  |  |  |    |   (----`|  | |  |  __  |   \|  |
@@ -90,7 +69,7 @@ BuildDate:     2023-06-27T06:57:11Z
 GoVersion:     go1.20.5
 Compiler:      gc
 Platform:      darwin/arm64
-</code></pre>
+```
 
 ### Generate a private key
 
@@ -104,12 +83,13 @@ cosign generate-key-pair
 
 The output should be like this:
 
-<pre class="console"><code>$ cosign generate-key-pair
+```console
+$ cosign generate-key-pair
 Enter password for private key: 
 Enter password for private key again: 
 Private key written to cosign.key
 Public key written to cosign.pub
-</code></pre>
+```
 
 > [!primary]
 > In this guide we generated a private key locally. In a production environment, you can obviously generate the private key and store it in a key management storage such as a Vault or KMS.
@@ -124,7 +104,8 @@ cosign sign --key cosign.key <harbor-instance>/<project>/<image/path>:<image-tag
 
 The output should be like this:
 
-<pre class="console"><code>$ cosign sign --key cosign.key xxxxxx.c1.gra9.container-registry.ovh.net/library/hello-ovh:1.0.0
+```console
+$ cosign sign --key cosign.key xxxxxx.c1.gra9.container-registry.ovh.net/library/hello-ovh:1.0.0
 Enter password for private key: 
 WARNING: Image reference xxxxxx.c1.gra9.container-registry.ovh.net/library/hello-ovh:1.0.0 uses a tag, not a digest, to identify the image to sign.
     This can lead you to sign a different image than the intended one. Please use a
@@ -141,7 +122,7 @@ By typing 'y', you attest that (1) you are not submitting the personal data of a
 Are you sure you would like to continue? [y/N] y
 tlog entry created with index: 30480064
 Pushing signature to: xxxxxx.c1.gra9.container-registry.ovh.net/library/hello-ovh
-</code></pre>
+```
 
 ### Verify the image is signed with Cosign
 

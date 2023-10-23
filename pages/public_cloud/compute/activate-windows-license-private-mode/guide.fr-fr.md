@@ -14,7 +14,7 @@ Dans ce cas, vous devez activer la licence manuellement afin d'avoir accès à t
 ## Prérequis
 
 - Posséder un [projet Public Cloud](/pages/public_cloud/compute/create_a_public_cloud_project) dans votre compte OVHcloud
-- Être connecté à votre [espace client OVHcloud](hhttps://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 - [Avoir créé un utilisateur OpenStack](/pages/public_cloud/compute/create_and_delete_a_user)
 
 Nous vous recommandons de consulter le guide « [Accéder à l’interface Horizon](/pages/public_cloud/compute/introducing_horizon) » pour vous familiariser à Horizon.
@@ -25,7 +25,7 @@ Nous vous recommandons de consulter le guide « [Accéder à l’interface Horiz
 
 #### Depuis l'interface Horizon
 
-Connectez-vous à l’interface [Horizon](https://horizon.cloud.ovh.net/auth/login/) en suivant la méthode indiquée dans la [première partie de ce guide](/pages/platform/network-services/getting-started-07-creating-vrack#interface-horizon).
+Connectez-vous à l’interface [Horizon](https://horizon.cloud.ovh.net/auth/login/) en suivant la méthode indiquée dans la [première partie de ce guide](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack#interface-horizon).
 
 Connectez-vous bien sur votre zone de travail :
 

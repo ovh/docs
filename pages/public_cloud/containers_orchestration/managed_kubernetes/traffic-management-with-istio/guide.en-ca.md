@@ -4,28 +4,6 @@ excerpt: Find out how to manage traffic with Istio on OVHcloud Managed Kubernete
 updated: 2021-09-22
 ---
 
-<style>
- pre {
-     font-size: 14px;
- }
- pre.console {
-   background-color: #300A24; 
-   color: #ccc;
-   font-family: monospace;
-   padding: 5px;
-   margin-bottom: 5px;
- }
- pre.console code {
-   border: solid 0px transparent;
-   font-family: monospace !important;
-   font-size: 0.75em;
-   color: #ccc;
- }
- .small {
-     font-size: 0.75em;
- }
-</style>
-
 [Istio](https://istio.io){.external} is a open source service mesh and platform to reduce the complexity of deploying, securing, controlling and observing distributed services. As the Istio site explains, Istio helps you to:
 
 - Control the flow of traffic between services
@@ -59,7 +37,8 @@ kubectl -n istio-apps get destinationrules -o yaml
 
 In the case of my example cluster:
 
-<pre class="console"><code>$ kubectl -n istio-apps apply -f samples/bookinfo/networking/destination-rule-all-mtls.yaml
+```console
+$ kubectl -n istio-apps apply -f samples/bookinfo/networking/destination-rule-all-mtls.yaml
 destinationrule.networking.istio.io/productpage created
 destinationrule.networking.istio.io/reviews created
 destinationrule.networking.istio.io/ratings created
@@ -93,7 +72,7 @@ items:
       tls:
         mode: ISTIO_MUTUAL
 [...] 
-</code></pre>
+```
 
 ## A/B Testing with Istio
 
@@ -154,7 +133,8 @@ kubectl -n istio-apps get virtualservice reviews -o yaml
 
 In the case of my example cluster:
 
-<pre class="console"><code>$ kubectl apply -n istio-apps -f ./reviews-50-v2-50-v3.yaml 
+```console
+$ kubectl apply -n istio-apps -f ./reviews-50-v2-50-v3.yaml 
 virtualservice.networking.istio.io/reviews created
 
 $ kubectl -n istio-apps get virtualservice reviews -o yaml
@@ -175,7 +155,7 @@ spec:
         host: reviews
         subset: v3
       weight: 50
-</code></pre>
+```
 
 Now, on the `/productpage` of the Bookinfo app (accessing through `http://$GATEWAY_URL/productpage` URL), at every refresh you will see that stars change alternatively between back (`v2`) and red (`v3`).
 

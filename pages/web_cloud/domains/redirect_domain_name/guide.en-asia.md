@@ -346,7 +346,7 @@ This variable is useful for deleted files. It replaces the message *404 document
 >> The script will return HTTP 410 code.
 >>
 
-### Variable 3 - "Redirect seeother"
+#### Variable 3 - "Redirect seeother"
 
 If you change the extension of a file, you can use the *seeother* variable to change the file type. The visitor who tries to access the old file will be automatically redirected to the one with the correct extension.
 

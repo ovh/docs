@@ -8,7 +8,6 @@ updated: 2021-07-08
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em « Contribuir » nesta página.
 >
 
- 
 ## Objetivo <a name="objective"></a>
 
 Em caso de inacessibilidade do seu site, podem surgir várias mensagens de erro. Os exemplos abaixo indicam que o seu alojamento Web não contém [certificado SSL](/pages/web_cloud/web_hosting/ssl_on_webhosting) (se o seu site não apresentar uma das anomalias descritas neste guia, consulte a secção « [Quer saber mais?](#gofurther) »): 
@@ -31,7 +30,7 @@ Em caso de inacessibilidade do seu site, podem surgir várias mensagens de erro.
 
 ## Requisitos
 
-- Ter a gestão dos servidores e da [Zona DNS](/pages/web/domains/dns_zone_edit#compreender-a-nocao-de-dns) do seu nome de domínio
+- Ter a gestão dos servidores e da [Zona DNS](/pages/web_cloud/domains/dns_zone_edit#compreender-a-nocao-de-dns) do seu nome de domínio
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
 
 ## Instruções
@@ -55,7 +54,7 @@ No separador `Informações gerais`{.action}, tome nota do endereço IPV4 e/ou I
 
 #### Verificar o endereço IP na zona DNS
 
-Agora tem de verificar que o endereço IP indicado na [Zona DNS](/pages/web/domains/dns_zone_edit#compreender-a-nocao-de-dns) corresponde ao do seu [alojamento Web Cloud](https://www.ovhcloud.com/pt/web-hosting/).
+Agora tem de verificar que o endereço IP indicado na [Zona DNS](/pages/web_cloud/domains/dns_zone_edit#compreender-a-nocao-de-dns) corresponde ao do seu [alojamento Web Cloud](https://www.ovhcloud.com/pt/web-hosting/).
 
 Clique em `Noms de domínio`{.action} do seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e selecione o nome de domínio do seu site.
 
@@ -70,8 +69,8 @@ Selecione o separador `Zone DNS`{.action} e tome nota do destino do tipo `A` par
 |O endereço IP indicado na [Zona DNS](/pages/web_cloud/domains/dns_zone_edit) corresponde ao do seu alojamento partilhado.|Passe para [Etapa 2](#step2).|
 |O endereço IP indicado na zona não diz respeito a nenhum alojamento do seu [conta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), mas aparece na [lista dos servidores Web Cloud](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP).|Verifique que não possui um alojamento que possua este endereço IP num dos seus outros [contas OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), caso tenha criado vários. Se necessário, contacte o seu webmaster ou os [parceiros da OVHcloud](https://partner.ovhcloud.com/pt/directory/) a este respeito.|
 |O endereço IP indicado na zona não é o do seu alojamento nem aparece na [lista dos servidores Web Cloud](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP).|Contacte o seu webmaster ou os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/) a este respeito.|
-|No separador `Zona DNS`{.action}, uma mensagem indica que o seu domínio utiliza outros servidores [DNS](/pages/web/domains/dns_zone_edit#compreender-a-nocao-de-dns), que aparecem na forma « ns **?** .ovh.net » ou « dns **?** .ovh.net » (substitua « **?** » pelo número do servidor DNS em causa):<br><br>![warning_other_ovh_srv](images/warning_other_ovh_dns_srv.png){.thumbnail}|Modifique os servidores DNS do seu domínio, de modo a que correspondam aos inscritos nas entradas de tipo `NS` da zona. Para efetuar esta operação, siga as instruções do [presente guia](/pages/web/domains/dns_server_general_information#aceder-a-gestao-dos-servidores-dns-da-ovhcloud).|
-|No separador `Zona DNS`{.action}, uma mensagem indica que o seu domínio utiliza outros servidores [DNS](/pages/web/domains/dns_zone_edit#compreender-a-nocao-de-dns) e estes não aparecem na forma « ns **?** .ovh.net » ou « dns **?** .ovh.net »:<br><br>![warning_external_dn_srv](images/warning_external_dns_srv.png){.thumbnail}|Contacte o seu webmaster ou os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/) a este respeito.|
+|No separador `Zona DNS`{.action}, uma mensagem indica que o seu domínio utiliza outros servidores [DNS](/pages/web_cloud/domains/dns_zone_edit#compreender-a-nocao-de-dns), que aparecem na forma « ns **?** .ovh.net » ou « dns **?** .ovh.net » (substitua « **?** » pelo número do servidor DNS em causa):<br><br>![warning_other_ovh_srv](images/warning_other_ovh_dns_srv.png){.thumbnail}|Modifique os servidores DNS do seu domínio, de modo a que correspondam aos inscritos nas entradas de tipo `NS` da zona. Para efetuar esta operação, siga as instruções do [presente guia](/pages/web_cloud/domains/dns_server_general_information#aceder-a-gestao-dos-servidores-dns-da-ovhcloud).|
+|No separador `Zona DNS`{.action}, uma mensagem indica que o seu domínio utiliza outros servidores [DNS](/pages/web_cloud/domains/dns_zone_edit#compreender-a-nocao-de-dns) e estes não aparecem na forma « ns **?** .ovh.net » ou « dns **?** .ovh.net »:<br><br>![warning_external_dn_srv](images/warning_external_dns_srv.png){.thumbnail}|Contacte o seu webmaster ou os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/) a este respeito.|
 |`Noms de domínio`{.action} do seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).<br><br>Ou o separador `Zona DNS`{.action} do seu domínio aparece da seguinte forma:<br><br>![zonedns_ndd_non_sur_lec2](images/zonedns_ndd_pas_sur_lec2.png){.thumbnail}|Isto significa que o seu domínio não é gerido a partir do seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).<br><br>Verifique que o domínio não é gerido a partir de uma das suas outras [contas OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), se tiver criado vários.<br><br>Pode igualmente determinar o seu escritório de's registo e os servidores DNS aos quais está ligado através da nossa ferramenta [WHOIS](https://www.ovh.com/fr/support/outils/check_whois.pl).<br><br>Se necessário, contacte o seu webmaster ou os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).|
 
 ### Etapa 2: verificar o certificado SSL do alojamento <a name="step2"></a>
@@ -86,7 +85,7 @@ Ative um [certificado SSL](https://www.ovhcloud.com/pt/web-hosting/options/ssl/)
 
 #### Cenário 2: o certificado SSL do seu alojamento não funciona
 
-Se gerou um **certificado SSL « Let's Encrypt »**, ative a opção SSL no `Multisite`{.action} do seu alojamento seguindo as instruções deste [guia](/pages/web/hosting/ssl_on_webhosting#ativar-um-certificado-ssl-num-multisite).
+Se gerou um **certificado SSL « Let's Encrypt »**, ative a opção SSL no `Multisite`{.action} do seu alojamento seguindo as instruções deste [guia](/pages/web_cloud/web_hosting/ssl_on_webhosting#ativar-um-certificado-ssl-num-multisite).
 
 Se dispõe de um **certificado SSL importado** e este não funcionar, contacte o seu fornecedor.
 

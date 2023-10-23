@@ -52,7 +52,7 @@ No separador do browser que apresenta a janela de estatísticas, obtenha o link 
 
 > [!warning] 
 >
-> Se ativou os logs separados numa [entrada multi-site](/pages/web/hosting/multisites_configure_multisite#2-adicionar-um-dominio-ou-subdominio), os utilizadores criados aqui não podem aceder às estatísticas desta entrada multi-site.
+> Se ativou os logs separados numa [entrada multi-site](/pages/web_cloud/web_hosting/multisites_configure_multisite#2-adicionar-um-dominio-ou-subdominio), os utilizadores criados aqui não podem aceder às estatísticas desta entrada multi-site.
 >
 
 ### Estatísticas das visitas

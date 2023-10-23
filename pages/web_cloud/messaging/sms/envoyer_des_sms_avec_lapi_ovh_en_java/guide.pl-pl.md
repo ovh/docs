@@ -1,7 +1,6 @@
 ---
 title: 'Wysyłanie wiadomości SMS za pomocą interfejsu API OVHcloud w Javie'
 excerpt: 'Dowiedz się, jak wysyłać wiadomości SMS za pomocą interfejsu API OVHcloud RESTful w Javie'
-legacy_guide_number: g1670
 updated: 2020-06-01
 ---
 

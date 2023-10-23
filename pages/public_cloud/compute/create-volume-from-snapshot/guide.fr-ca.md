@@ -14,7 +14,7 @@ Cela peut être utile dans les cas suivants :
 - Si vous souhaitez disposer d’un espace de stockage hautement disponible et performant avec vos données.
 - Si vous souhaitez déplacer vos données vers une autre instance.
 
-**Découvez comment créer et configurer un disque supplémentaire sur une de vos instances depuis la sauvegarde d'un disque.**
+**Découvrez comment créer et configurer un disque supplémentaire sur une de vos instances depuis la sauvegarde d'un disque.**
 
 ## Prérequis
 
@@ -59,7 +59,7 @@ Le processus d’attachement du disque à votre instance va alors commencer et p
 Vous devez éviter la navigation en dehors de l’onglet en cours pendant l’attachement du disque. Cela peut interrompre le processus.
 >
 
-Une fois l'attachement effectué, vous pouvez suivre les étapes suivantes pour configurer votre disque supplémentaire [sous Linux](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance#sous-linux) ou [sous Windows](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance#sous-windows).
+Une fois l'attachement effectué, vous pouvez suivre les étapes suivantes pour configurer votre disque supplémentaire [sous Linux](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance#sous-linux) ou [sous Windows](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance#sous-windows).
 
 ## Aller plus loin
 

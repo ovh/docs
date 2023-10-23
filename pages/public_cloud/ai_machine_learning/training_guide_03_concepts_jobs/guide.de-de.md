@@ -8,7 +8,7 @@ updated: 2021-05-18
 
 A **job** in **AI Training** is the workload unit submitted to the cluster. A **job** runs as a Docker container within OVHcloud infrastructure.
 
-Each job is linked to a **Public Cloud** project and specifies an amount of resources to use to run the training task along with a Docker image either publicly available, in the **AI Training** shared registry scoped to your project or the private registry of your choosing that you added. For the latter, see the [OVHcloud documentation on how to add a private registry](/pages/public_cloud/ai_machine_learning/training_guide_05_howto_add_registry).
+Each job is linked to a **Public Cloud** project and specifies an amount of resources to use to run the training task along with a Docker image either publicly available, in the **AI Training** shared registry scoped to your project or the private registry of your choosing that you added. For the latter, see the [OVHcloud documentation on how to add use and manage registries](/pages/public_cloud/ai_machine_learning/gi_07_manage_registry)
 
 ## Considerations
 
@@ -33,11 +33,11 @@ During its lifetime the job will transition between the following statuses:
 > * Only jobs in states `QUEUED`, `INITIALIZING`, `PENDING` and `RUNNING` are included in the quota computation.
 
 -   `QUEUED` the job run request is about to be processed
--   `INITIALIZING` the job instance is created and the data is synchronised from the Object Storage. To know more about the data synchronisation check out the [Data How it works](/pages/platform/ai/gi_02_concepts_data#how-it-works) section.
+-   `INITIALIZING` the job instance is created and the data is synchronised from the Object Storage. To know more about the data synchronisation check out the [Data How it works](/pages/public_cloud/ai_machine_learning/gi_02_concepts_data#how-it-works) section.
 -   `PENDING` job is being started
 -   `RUNNING` the job is running
 -   `INTERRUPTING` the job is still running but an interruption order was received and is about to be processed
--   `FINALIZING` the job instance is deleted and the data is synchronised back to the Object Storage. To know more about the data synchronisation check out the [Data How it works](/pages/platform/ai/gi_02_concepts_data#how-it-works) section.
+-   `FINALIZING` the job instance is deleted and the data is synchronised back to the Object Storage. To know more about the data synchronisation check out the [Data How it works](/pages/public_cloud/ai_machine_learning/gi_02_concepts_data#how-it-works) section.
 -   `DONE` the job ended normally
 -   `TIMEOUT` the job is still running but is about to be interrupted because the timeout was reached
 -   `INTERRUPTED` the job is ended and was interrupted

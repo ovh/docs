@@ -1,6 +1,6 @@
 ---
 title: "AI Deploy - Tutoriel - Créer un service web pour reconnaître la langue des signes avec YOLOv7 (EN)"
-excerpt: "Découvez comment construire une application de reconnaissance de la langue des signes avec Streamlit"
+excerpt: "Découvrez comment construire une application de reconnaissance de la langue des signes avec Streamlit"
 updated: 2023-04-03
 ---
 
@@ -239,7 +239,7 @@ Once started, your application should be available on `http://localhost:8501`.
 
 > [!warning]
 > **Warning**
-> The shared registry of AI Deploy should only be used for testing purpose. Please consider attaching your own Docker registry. More information about this can be found [here](/pages/public_cloud/ai_machine_learning/training_guide_05_howto_add_registry).
+> The shared registry should only be used for testing purposes. Please consider creating and attaching your own registry. More information about this can be found [here](/pages/public_cloud/ai_machine_learning/gi_07_manage_registry).
 
 Find the address of your shared registry by launching this command:
 

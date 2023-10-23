@@ -1,7 +1,6 @@
 ---
 title: 'Crear filtros para sus direcciones de correo'
 excerpt: 'Cómo crear y configurar un filtro en una dirección de correo electrónico'
-legacy_guide_number: g1973
 updated: 2021-09-27
 ---
 
@@ -102,6 +101,10 @@ Puede elegir entre:
 ### Ejemplos de filtros
 
 #### Eliminar el spam
+
+> [!warning]
+>
+> En nuestro ejemplo mencionamos la mención [SPAM] en el asunto de un email. Esta mención aparece cuando el antispam del servidor de recepción entrega los mensajes de correo electrónico que considera no deseados, directamente en la bandeja de entrada. Este es el caso de la versión histórica de la solución MX Plan.
 
 ||Cabecera|Regla|Valor|Escenarios posibles|
 |---|---|---|---|---|

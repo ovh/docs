@@ -51,7 +51,7 @@ En utilisant PuTTy par exemple, ouvrez simplement l'application et entrez le nom
 
 ![utilisation putty](images/putty1.png){.thumbnail}
 
-Une fois le terminal ouvert, entrez la commande suivante pour vous connecter à votre VPS avec les informations fournies dans l'e-mail (nom d'utilisateur et adresse IPv4):
+Une fois le terminal ouvert, entrez la commande suivante pour vous connecter à votre VPS avec les informations fournies dans l'e-mail (nom d'utilisateur et adresse IPv4) :
 
 ```bash
 ssh nom_d_utilisateur@IPv4_de_votre_VPS
@@ -78,7 +78,7 @@ passwd: password updated successfully
 
 #### Activation des connexions root
 
-Par mesure de sécurité, la connexion avec l'utilisateur « root » est désactivée par défaut. Si vous devez autoriser ce type de connexions, reportez-vous aux instructions de [ce guide](/pages/cloud/vps/root_password#activer-le-mot-de-passe-root).
+Par mesure de sécurité, la connexion avec l'utilisateur « root » est désactivée par défaut. Si vous devez autoriser ce type de connexions, reportez-vous aux instructions de [ce guide](/pages/bare_metal_cloud/virtual_private_servers/root_password#activer-le-mot-de-passe-root).
 
 #### Redémarrer votre VPS (gamme VPS actuelle) <a name="reboot-current-range"></a>
 

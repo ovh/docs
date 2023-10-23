@@ -57,7 +57,7 @@ Esta tecnologia permite-lhe trocar os endereços IP de uma solução para outra 
 > Apenas um único bloco de tamanho (/32) poderá ser movido de um servidor dedicado para um VPS.
 >
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), clique no menu `Bare Metal Cloud`{.action} e abra a secção `IP`{.action}.
+Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), clique no menu `Bare Metal Cloud`{.action} e abra a secção `Network`{.action}. De seguida, clique em `IP`{.action}.
 
 Clique no separador `Additional IP`{.action}.
 

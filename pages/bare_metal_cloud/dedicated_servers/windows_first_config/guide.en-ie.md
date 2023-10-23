@@ -19,7 +19,7 @@ After a fresh installation of a Windows Server operating system on a Dedicated S
 
 ### Step 1: Log in with KVM
 
-To access the KVM console of your Dedicated Server, please follow the [KVM guide](/pages/cloud/dedicated/using_ipmi_on_dedicated_servers#access-via-the-kvm-tool-from-a-web-browser-only-for-the-latest-servers).
+To access the KVM console of your Dedicated Server, please follow the [KVM guide](/pages/bare_metal_cloud/dedicated_servers/using_ipmi_on_dedicated_servers#access-via-the-kvm-tool-from-a-web-browser-only-for-the-latest-servers).
 
 ### Step 2: Finish the Windows setup
 
@@ -61,7 +61,7 @@ Your server should now be responding to requests using these protocols.
 
 Activating Windows boot logs can be helpful for server error diagnostics.
 
-Connect to your server via a Remote Desktop or [KVM](/pages/cloud/dedicated/using_ipmi_on_dedicated_servers#access-via-the-kvm-tool-from-a-web-browser-only-for-the-latest-servers) session. Open the Windows start menu and click on `Run`{.action}.
+Connect to your server via a Remote Desktop or [KVM](/pages/bare_metal_cloud/dedicated_servers/using_ipmi_on_dedicated_servers#access-via-the-kvm-tool-from-a-web-browser-only-for-the-latest-servers) session. Open the Windows start menu and click on `Run`{.action}.
 
 ![Bootlog](images/windowsboot1.png){.thumbnail}
 

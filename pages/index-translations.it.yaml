@@ -50,7 +50,7 @@ hosted-private-cloud-nutanix-on-ovhcloud-advanced-usage: Utilizzo avanzato
 hosted-private-cloud-nutanix-on-ovhcloud-troubleshooting: Diagnostica
 hosted-private-cloud-nutanix-on-ovhcloud-disaster-recovery-plan: Disaster Recovery Plan
 hosted-private-cloud-nutanix-on-ovhcloud-raci: Condivisione delle responsabilità (RACI)
-hosted-private-cloud-hosted-private-cloud-powered-by-vmware: Hosted Private Cloud powered by VMware
+hosted-private-cloud-hosted-private-cloud-powered-by-vmware: VMware on OVHcloud
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware-getting-started: Per iniziare
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware-access-security: Accesso e sicurezza
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware-managing-virtual-machines: Gestione delle macchine virtuali
@@ -69,6 +69,7 @@ hosted-private-cloud-sap-ovhcloud: SAP on OVHcloud
 hosted-private-cloud-sap-ovhcloud-concepts: Concetti
 hosted-private-cloud-sap-ovhcloud-getting-started: Per iniziare
 hosted-private-cloud-sap-ovhcloud-advanced-usage: Utilizzo avanzato
+hosted-private-cloud-sap-ovhcloud-backups: Backups
 ovhcloud-labs-data-collector: Data Collector
 ovhcloud-labs-data-collector-getting-started: Per iniziare
 ovhcloud-labs-power-web-hosting: POWER Web Hosting

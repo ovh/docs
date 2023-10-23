@@ -26,7 +26,7 @@ Die Konfiguration der umgekehrten DNS-Auflösung für einen VPS ist besonders be
 
 ## In der praktischen Anwendung
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein. Wechseln Sie zum Bereich `Bare Metal Cloud`{.action} und klicken Sie auf `IP`{.action} in der linken Menüleiste.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein. Wechseln Sie zum Bereich `Bare Metal Cloud`{.action}, öffnen Sie das Menü `Network`{.action} und klicken Sie auf `IP`{.action}.
 
 In der Tabelle auf dieser Seite werden Ihre kompatiblen Dienste aufgelistet. Sie können im Drop-Down-Menü unter **Dienst** nach Ihrer Public Cloud Projekt-ID filtern.
 

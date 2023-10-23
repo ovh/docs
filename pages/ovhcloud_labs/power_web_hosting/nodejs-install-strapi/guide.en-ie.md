@@ -4,26 +4,6 @@ excerpt: Find out how to install Strapi headless CMS on your POWER web hosting p
 updated: 2021-02-04
 ---
 
-<style>
- pre {
-     font-size: 14px;
- }
- pre.console {
-   background-color: #300A24; 
-   color: #ccc;
-   font-family: monospace;
-   padding: 5px;
-   margin-bottom: 5px;
- }
- pre.console code {
-   border: solid 0px transparent;
-   font-family: monospace !important;
- }
- .small {
-     font-size: 0.75em;
- }
-</style>
-
 ## Objective
 
 You've subscribed to a Web POWER web hosting plan to deploy **Node.js** applications, and you want to deploy [Strapi](https://strapi.io/){.external} headless CMS on it.
@@ -49,9 +29,9 @@ Let's suppose you have the default configuration for Node.js hosting:
 
 > [!primary]
 >
-> To verify your configuration, you can use the [Retrieve active configuration](/pages/labs/web-power/getting-started#api-get-active-configuration) API endpoint.
+> To verify your configuration, you can use the [Retrieve active configuration](/pages/ovhcloud_labs/power_web_hosting/getting-started#api-get-active-configuration) API endpoint.
 
-[Connect via SSH](/pages/labs/web-power/getting-started#ssh) to your POWER web hosting.
+[Connect via SSH](/pages/ovhcloud_labs/power_web_hosting/getting-started#ssh) to your POWER web hosting.
 Let's begin by cleaning the `www` folder and installing Strapi:
 
 ```sh
@@ -81,13 +61,14 @@ Create also an `.htaccess` file to manage HTTPS redirection:
 RewriteCond %{ENV:HTTPS} !on
 RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 ```
-Then [restart your instance](/pages/labs/web-power/getting-started#restart) and your Strapi headless CMS will be online.
+Then [restart your instance](/pages/ovhcloud_labs/power_web_hosting/getting-started#restart) and your Strapi headless CMS will be online.
 
 ![Strapi](images/nodejs-install-strapi-01.png){.thumbnail}
 
 Terminal output:
 
-<pre class="console"><code> ~ $ rm -rf www
+```console
+ ~ $ rm -rf www
 
 ~ $ npx create-strapi-app www --quickstart --no-run
 npx: 91 installed in 6.741s
@@ -110,8 +91,7 @@ EOF
 ~/www $ mkdir -p tmp
 
 ~/www $ touch tmp/restart.txt
-
-</code></pre>
+```
 
 ## Go further
 

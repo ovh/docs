@@ -18,7 +18,7 @@ It is compatible with the OVHcloud Public Cloud Object Storage and lets you back
 ## Requirements
 
 - [Create an Object Storage container](/pages/storage_and_backup/object_storage/pcs_create_container)
-- [Configure an Openstack user](/pages/platform/public-cloud/create_and_delete_a_user#creating-an-openstack-user)
+- [Configure an Openstack user](/pages/public_cloud/compute/create_and_delete_a_user#creating-an-openstack-user)
 
 ## Instructions
 
@@ -35,7 +35,7 @@ To sync your NAS Synology, you need your OpenStack credentials.
 
 You can retrieve them by downloading the OpenRC file using the first part of the following guide:
 
-[Setting OpenStack environment variables](/pages/platform/public-cloud/loading_openstack_environment_variables#step-1-retrieve-the-variables)
+[Setting OpenStack environment variables](/pages/public_cloud/compute/loading_openstack_environment_variables#step-1-retrieve-the-variables)
 
 #### Configuring the synchronisation point with Cloud Sync
 

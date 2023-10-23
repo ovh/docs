@@ -1,7 +1,6 @@
 ---
 title: Añadir un bloque de IP
 excerpt: Contratar un bloque de IP en Hosted Private Cloud
-legacy_guide_number: '7766457'
 updated: 2022-04-06
 ---
 
@@ -53,8 +52,7 @@ Deberá rellenar diferentes campos para crear su bloque de IP.
 > [!success]
 >
 > Deberá abonar los gastos de activación de su bloque de IP antes de la entrega.
->  
-> La renovación de las IP es gratuita.
+>
 >
 
 Tras haber confirmado este último paso, obtendrá la orden de pedido de su bloque de IP. Si la orden de pedido es correcta, solo tendrá que realizar el pago con cualquiera de los métodos de pago disponibles en la parte inferior de la página.

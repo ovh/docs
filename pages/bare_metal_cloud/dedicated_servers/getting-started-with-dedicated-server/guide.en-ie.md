@@ -1,7 +1,7 @@
 ---
 title: 'Getting started with a dedicated server'
 excerpt: 'Find out how to proceed after the delivery of your dedicated server'
-updated: 2023-08-24
+updated: 2023-09-11
 ---
 
 ## Objective
@@ -30,7 +30,7 @@ When your dedicated server is first set up during the order process, you can sel
 
 You can easily reinstall your server and choose a different OS image in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie). From the `General information`{.action} tab, click on `...`{.action} next to the operating system and then click `Install`{.action}.
 
-![Reinstall button](images/reinstalling-your-server-00.png){.thumbnail}
+![Reinstall button](images/reinstalling-your-server-01.png){.thumbnail}
 
 In the popup window, select one of the installation options:
 
@@ -55,7 +55,7 @@ After choosing `Install from an OVHcloud template`{.action} you can select the o
 
 If you need to modify the partioning scheme of your operating system, check the box "Customise the partition configuration" before clicking on `Next`{.action}.
 
-![Customise the partition configuration](images/SSH_02.png){.thumbnail}
+![SSH key configuration](images/reinstalling-your-server-04.png){.thumbnail}
 
 After you have finished your adjustments, click `Next`{.action} to arrive at the summary page.
 
@@ -63,23 +63,23 @@ After you have finished your adjustments, click `Next`{.action} to arrive at the
 
 If you are installing a GNU/Linux-based operating system, you can add your SSH key in the last step of the installation process.
 
-![Customise the partition configuration](images/SSH_03.png){.thumbnail}
+![SSH key configuration](images/SSH_01.png){.thumbnail}
 
-If you already have an SSH key registered, it will be listed in the drop-down menu under "SSH keys" at the bottom. Otherwise, you will need to add one in the "My services" section first.
+If you already have an SSH key registered, it will be listed in the drop down menu under "SSH keys" at the bottom. Otherwise, you will need to add one in the "My services" section first.
 
 To achieve this, open the sidebar navigation by clicking on your name in the top right corner and use the shortcut `Products and services`{.action}.
 
-![Customise the partition configuration](images/SSH_keys_panel_2022.png){.thumbnail}
+![SSH key configuration](images/SSH_02.png){.thumbnail}
 
 In "My services", switch to the `SSH keys`{.action} tab and click on `Add an SSH key`{.action}.
 
-![Customise the partition configuration](images/SSH_14.png){.thumbnail}
+![SSH key configuration](images/SSH_03.png){.thumbnail}
 
 As you are installing a dedicated server, make sure to select "Dedicated" from the drop-down menu (viable for a VPS as well).
 
 In the new window, enter an ID (a name of your choice) and the key itself (of type RSA, ECDSA or Ed25519) into the respective fields.
 
-![Customise the partition configuration](images/SSH_12.png){.thumbnail}
+![SSH key configuration](images/SSH_04.png){.thumbnail}
 
 For a detailed explanation on how to generate SSH keys, please refer to [this guide](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated).
 

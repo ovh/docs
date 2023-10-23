@@ -12,7 +12,7 @@ Lorsque vous disposez d'un numéro alias chez OVHcloud, qu'il soit nouvellement 
 
 > [!primary]
 >
-> Pour obtenir plus de détails sur la différence entre un **numéro alias** et une **ligne SIP**, consultez notre [FAQ](/pages/telecom/voip/faq-voip#ligne-ou-numero).
+> Pour obtenir plus de détails sur la différence entre un **numéro alias** et une **ligne SIP**, consultez notre [FAQ](/pages/web_cloud/phone_and_fax/voip/faq-voip#ligne-ou-numero).
 >
 
 ## Prérequis

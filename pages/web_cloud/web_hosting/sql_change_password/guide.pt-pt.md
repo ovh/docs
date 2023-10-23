@@ -16,11 +16,11 @@ A ligação a esta base de dados é possível graças a um **ficheiro de configu
 
 Por isso, a alteração da palavra-passe de uma base de dados deve ser sempre efetuada:
 
-- No [ficheiro de configuração](/pages/web/hosting/cms_manage_1_click_module#etapa-1-identificar-a-base-de-dados-do-modulo) do seu site através do [espaço FTP do seu alojamento](/pages/web_cloud/web_hosting/ftp_connection);
+- No [ficheiro de configuração](/pages/web_cloud/web_hosting/cms_manage_1_click_module#etapa-1-identificar-a-base-de-dados-do-modulo) do seu site através do [espaço FTP do seu alojamento](/pages/web_cloud/web_hosting/ftp_connection);
 
 - **E** no servidor que contém a base de dados através da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 
-Enquanto esta alteração não for efetuada **nestes dois locais**, o seu site irá apresentar um "[erro de ligação à base de dados](/pages/web/hosting/diagnosis_database_errors#error-establishing-a-database-connection)".
+Enquanto esta alteração não for efetuada **nestes dois locais**, o seu site irá apresentar um "[erro de ligação à base de dados](/pages/web_cloud/web_hosting/diagnosis_database_errors#error-establishing-a-database-connection)".
 
 Assim, para alterar a palavra-passe da base de dados, é imperativo que realize **o conjunto das operações** indicadas neste guia. Se tiver dúvidas sobre as operações a realizar, contacte o seu webmaster ou um [fornecedor especializado](https://partner.ovhcloud.com/pt/directory/).
 

@@ -1,7 +1,6 @@
 ---
 title: VMware Storage vMotion
 excerpt: Find out how to move your virtual machine to a different datastore (hot migration)
-legacy_guide_number: '7767010'
 updated: 2020-11-18
 ---
 

@@ -75,8 +75,8 @@ A continuación, acceda al servidor en línea de comandos o a través de una her
 Por ejemplo:
 
 ```bash
-ssh root@your_server_IP
-root@your_server_password:
+ssh root@vps-x11x11xyy.vps.ovh.net
+root@vps-x11x11xyy.vps.ovh.net's password:
 ```
 
 > [!warning]
@@ -86,11 +86,15 @@ root@your_server_password:
 > Para evitar este problema, puede comentar la huella de su sistema habitual añadiendo una `#` delante de su línea en el archivo *known_hosts*. Elimine este carácter antes de reiniciar el servidor en modo normal.
 >
 Para realizar la mayoría de los cambios en el servidor por SSH en modo de rescate, es necesario montar una partición. Este modo tiene su propio sistema de archivos temporales. Por lo tanto, los cambios realizados en el sistema de archivos en modo de rescate se perderán al reiniciar el servidor en modo normal.
+>
 
 Una vez que se haya conectado, compruebe los discos disponibles con el siguiente comando:
 
 ```bash
-[RESCUE] root@vps-111111d:~ $ lsblk
+lsblk
+```
+
+```text
 NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
 sda 8:0 0 2.5G 0 disk
 └─sda1 8:1 0 2.5G 0 part /
@@ -101,7 +105,7 @@ sdb 8:16 0 80G 0 disk
 A continuación, monte la partición:
 
 ```bash
-[RESCUE] root@vps-111111d:~ $ mount /dev/sdb1 /mnt
+mount /dev/sdb1 /mnt
 ```
 
 Sus datos serán ahora accesibles desde la carpeta `/mnt`.

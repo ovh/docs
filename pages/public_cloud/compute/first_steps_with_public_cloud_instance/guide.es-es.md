@@ -58,7 +58,7 @@ Se abrirá una nueva página en la que podrá modificar las opciones de [creaci�
 
 - **Cambiar el nombre**: puede asignar un nombre a la instancia para facilitar la identificación.
 - **Modificar la imagen**: puede elegir otro sistema operativo para la instancia (tenga en cuenta que la reinstalación de una instancia eliminará todos los datos que contiene).
-- **Modificar el modelo**: puede cambiar el modelo de instancia. Para más información sobre las opciones, consulte [esta guía](/pages/platform/public-cloud/public-cloud-first-steps#3-crear-una-instancia).
+- **Modificar el modelo**: puede cambiar el modelo de instancia. Para más información sobre las opciones, consulte [esta guía](/pages/public_cloud/compute/public-cloud-first-steps#3-crear-una-instancia).
 - **Modificar el período de facturación**: puede cambiar el período de facturación de la instancia desde una facturación mensual por horas. Para más información, consulte [esta guía](/pages/account_and_service_management/managing_billing_payments_and_services/changing_hourly_monthly_billing).
 
 #### Crear un backup de una instancia
@@ -71,13 +71,13 @@ Para más información, consulte la guía [Guardar una instancia](/pages/public_
 
 Haga clic en `Crear una copia de seguridad automatizada`{.action}.
 
-Para más información, consulte la guía [Guardar una instancia](/pages/platform/public-cloud/save_an_instance#crear-una-copia-de-seguridad-automatizada-de-una-instancia).
+Para más información, consulte la guía [Guardar una instancia](/pages/public_cloud/compute/save_an_instance#crear-una-copia-de-seguridad-automatizada-de-una-instancia).
 
 #### Suspender una instancia
 
 Haga clic en `Detener`{.action}.
 
-Esta acción suspenderá la instancia. Para más información, consulte nuestra guía [Suspender o poner en pausa una instancia](/pages/platform/public-cloud/suspend_or_pause_an_instance#detener-stop-una-instancia).
+Esta acción suspenderá la instancia. Para más información, consulte nuestra guía [Suspender o poner en pausa una instancia](/pages/public_cloud/compute/suspend_or_pause_an_instance#detener-stop-una-instancia).
 
 Haga clic en `Iniciar`{.action} para reactivar la instancia.
 
@@ -102,7 +102,7 @@ Confirme la solicitud de reinicio en la nueva ventana.
 
 Haga clic en `Suspender`{.action}.
 
-Esto hará que la instancia se convierta en "*shelved*", que se muestra aquí como `Suspended`. Para más información sobre el estado de suspensión de una instancia, consulte nuestra guía [Suspender o poner en pausa una instancia](/pages/platform/public-cloud/suspend_or_pause_an_instance#suspender-shelve-una-instancia).
+Esto hará que la instancia se convierta en "*shelved*", que se muestra aquí como `Suspended`. Para más información sobre el estado de suspensión de una instancia, consulte nuestra guía [Suspender o poner en pausa una instancia](/pages/public_cloud/compute/suspend_or_pause_an_instance#suspender-shelve-una-instancia).
 
 Haga clic en `Reactivar`{.action} para restaurar el estado `Activado` de la instancia.
 
@@ -122,7 +122,7 @@ Esta acción eliminará definitivamente la instancia y todos sus datos.
 
 Confirme la solicitud de eliminación en la nueva ventana.
 
-### Acceder a la consola VNC
+### Acceder a la consola VNC <a name="accessvnc"></a>
 
 En el menú de la izquierda, haga clic en `Instances`{.action}. En la página de gestión de las instancias, haga clic en el nombre de la instancia en la tabla.
 
@@ -132,7 +132,7 @@ A continuación, abra la pestaña `Consola VNC`{.action}.
 
 La consola VNC proporciona acceso directo a su instancia. Para que este acceso funcione, es necesario configurar primero un nombre de usuario y una contraseña en la instancia. 
 
-Consulte nuestra guía [Crear y conectarse a una instancia de Public Cloud](/pages/platform/public-cloud/public-cloud-first-steps#4-conectarse-a-una-instancia) para obtener más información.
+Consulte nuestra guía [Crear y conectarse a una instancia de Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps#4-conectarse-a-una-instancia) para obtener más información.
 
 ## Más información
 

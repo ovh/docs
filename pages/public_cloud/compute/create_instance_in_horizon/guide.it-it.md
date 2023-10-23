@@ -1,7 +1,6 @@
 ---
 title: 'Creare un’istanza dall’interfaccia Horizon'
 excerpt: 'Come creare un’istanza dall’interfaccia Horizon'
-legacy_guide_number: g1772
 updated: 2022-08-01
 ---
 
@@ -54,7 +53,7 @@ A questo punto completa i campi con le informazioni richieste aiutandoti, se nec
 
 > [!warning] 
 >
-> Anche se il campo "Key Pair" non è obbligatorio nell'interfaccia Horizon durante la creazione di un'istanza, la registrazione di una chiave SSH è assolutamente necessaria per potersi connettere a un'istanza. Senza chiave SSH, dovrai riavviare l'istanza in modalità Rescue per creare una password o aggiungere una chiave SSH nel file appropriato (per maggiori informazioni, consulta la guida [Sostituisci la tua chiave SSH in caso di perdita](/pages/platform/public-cloud/replacing_lost_ssh_key#procedura)).
+> Anche se il campo "Key Pair" non è obbligatorio nell'interfaccia Horizon durante la creazione di un'istanza, la registrazione di una chiave SSH è assolutamente necessaria per potersi connettere a un'istanza. Senza chiave SSH, dovrai riavviare l'istanza in modalità Rescue per creare una password o aggiungere una chiave SSH nel file appropriato (per maggiori informazioni, consulta la guida [Sostituisci la tua chiave SSH in caso di perdita](/pages/public_cloud/compute/replacing_lost_ssh_key#procedura)).
 >
 
 Quando tutto è pronto, clicca su `Launch Instance`{.action} per avviare le istanze desiderate.

@@ -1,7 +1,7 @@
 ---
 title: Logs Data Platform - Responsibility model
 excerpt: 'Shared responsibilities between OVHcloud and the customer'
-updated: 2023-01-26
+updated: 2023-10-19
 ---
 
 The Logs Data Platform is an interface for collecting, indexing and analyzing logs. Wherever your logs come from, you can use the platform to choose different entry points depending on the protocol, security level and format. You can analyze and use data with a variety of different APIs and web interfaces.
@@ -80,6 +80,7 @@ For your information, a **Log forwarder agent** is considered as a tool (full so
 | Manage OVHcloud teams’ physical access to infrastructures |  | RA |
 | Manage OVHcloud teams’ logical access to infrastructures | I | RA |
 | Manage access to the OVHcloud Control Panel (Manager, network acls, MFA, API, token, ..) | RA | I |
+| Decide to renew password at least on a quarterly basis | RA | I |
 | Manage access to management interfaces specific to Logs Data Platform (streams, dashboards,...) | RA | I |
 | Manage security risks of the log forwarding configuration (transport, protocols, ...) | RA |  |
 | Manage network configuration of the subscribed data gathering tool(s) | RA | I |
@@ -102,6 +103,7 @@ For your information, a **Log forwarder agent** is considered as a tool (full so
 | Manage data immutability | I | RA |
 | Perform storage device maintenance |  | RA |
 | Create, modify, control, restore, delete internal backup jobs on management infrastructure | I | RA |
+| Manage cold storage archives with encryption keys provided by the Customer | AI | R |
 
 ##### **3.1.5. Connectivity**
 

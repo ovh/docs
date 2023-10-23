@@ -1,7 +1,7 @@
 ---
 title: 'Guia de utilização do acelerador CDN num alojamento web'
 excerpt: 'Melhore o seu site acelerando o seu carregamento no alojamento Web graças ao CDN'
-updated: 2021-12-23
+updated: 2023-09-22
 ---
 
 > [!primary]
@@ -307,7 +307,20 @@ Mesmo que não utilize um CMS, poderá beneficiar da cache do CDN. Para isso, de
 
 Esta ação permite desativar o CDN para uma ou várias das suas entradas multisite, sem eliminar a opção CDN do seu alojamento Web.
 
-Aceda à Área de [Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e selecione a opção `Web Cloud`{.action}. Clique em `Alojamentos`{.action} e selecione o plano correspondente. No separador `Multisite`{.action}, clique em `...`{.action} à direita da entrada multisite e depois em `Alterar`{.action}.
+> [!warning]
+>
+> Desativar a opção CDN para um website requer a alteração do endereço IP a utilizar para reencaminhar o seu domínio para o alojamento web.
+> Esta alteração é realizada automaticamente se a zona DNS ativa do seu domínio for também gerida a partir da [conta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) que contém o seu alojamento web.
+>
+> Caso contrário, deverá executar as duas ações seguintes:
+>
+> - Obtenha o endereço IP **predefinido** do cluster onde se encontra o seu alojamento web através do nosso guia "[Alojamento web: os endereços IP dos nossos clusters](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)";
+> - modifique manualmente o endereço IP na zona DNS ativa do seu domínio, ou contacte o seu fornecedor de zona DNS para que efetue a atualização por si.
+>
+> A modificação de uma entrada na zona DNS ativa de um domínio provoca um prazo de propagação de **4** a **24** para ficar plenamente efetiva. Quando esta propagação estiver finalizada, pode aparecer aleatoriamente uma página com o código **520**. Este fenómeno está ligado ao facto de que certas partes da rede DNS reencaminham ainda os pedidos para o endereço IP do CDN associado ao seu alojamento web.
+>
+
+Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e selecione a opção `Web Cloud`{.action}. Clique em `Alojamentos`{.action} e selecione o plano correspondente. No separador `Multisite`{.action}, clique em `...`{.action} à direita da entrada multisite e depois em `Alterar`{.action}.
 
 Desmarque a opção "Ativar o CDN", clique em `Seguinte`{.action} e depois em `Validar`{.action}.
 

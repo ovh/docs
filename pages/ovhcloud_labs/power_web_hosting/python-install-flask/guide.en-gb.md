@@ -4,26 +4,6 @@ excerpt: Find out how to install Flask on your POWER web hosting plan
 updated: 2021-01-05
 ---
 
-<style>
- pre {
-     font-size: 14px;
- }
- pre.console {
-   background-color: #300A24; 
-   color: #ccc;
-   font-family: monospace;
-   padding: 5px;
-   margin-bottom: 5px;
- }
- pre.console code {
-   border: solid 0px transparent;
-   font-family: monospace !important;
- }
- .small {
-     font-size: 0.75em;
- }
-</style>
-
 ## Objective
 
 You've subscribed to a Web POWER web hosting plan to deploy **Python** applications, and you want to deploy [Flask](https://flask.palletsprojects.com/en/1.1.x/){.external} on it.
@@ -49,11 +29,11 @@ Let's suppose you have the default configuration for Python hosting:
 
 > [!primary]
 >
-> To verify your configuration, you can use the [Retrieve active configuration](/pages/labs/web-power/getting-started#api-get-active-configuration) API endpoint.
+> To verify your configuration, you can use the [Retrieve active configuration](/pages/ovhcloud_labs/power_web_hosting/getting-started#api-get-active-configuration) API endpoint.
 
 To use [Python WSGI](https://www.fullstackpython.com/wsgi-servers.html) frameworks, using [virtualenv](https://pypi.org/project/virtualenv/) is the simplest choice. 
 
-[Connect via SSH](/pages/labs/web-power/getting-started#ssh) to your POWER web hosting and activate `virtualenv`:
+[Connect via SSH](/pages/ovhcloud_labs/power_web_hosting/getting-started#ssh) to your POWER web hosting and activate `virtualenv`:
 
 ```sh
 cd www
@@ -87,13 +67,14 @@ def hello_world():
     return 'Hello, World!'
 ```
 
-Then [restart your instance](/pages/labs/web-power/getting-started#restart) and your Flask project will be online.
+Then [restart your instance](/pages/ovhcloud_labs/power_web_hosting/getting-started#restart) and your Flask project will be online.
 
 ![Flask](images/python-install-flask-01.png){.thumbnail}
 
 Terminal output:
 
-<pre class="console"><code>~ $ cd www
+```console
+~ $ cd www
 
 ~/www $ virtualenv venv
 created virtual environment CPython3.8.7.final.0-64 in 1273ms
@@ -133,7 +114,7 @@ Successfully installed Flask-1.1.2 Jinja2-2.11.3 MarkupSafe-1.1.1 Werkzeug-1.0.1
 ~/www $ mkdir -p tmp
 
 ~/www $ touch tmp/restart.txt
-</code></pre>
+```
 
 ## Go further
 

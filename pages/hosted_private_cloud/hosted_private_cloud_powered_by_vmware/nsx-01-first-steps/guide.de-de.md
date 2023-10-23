@@ -6,7 +6,7 @@ updated: 2023-08-30
 
 ## Objective
 
-NSX is a **Software-Defined Networking (SDN)** solution provided by VMware. OVHcloud is offering this service in place of NSX-V in its Hosted Private Cloud Powered by VMware solution. For the ALPHA version of NSX to work, two hosts are deployed with a dedicated virtual machine for NSX on each host, allowing redundancy in the event of one of the hosts failing.
+NSX is a **Software-Defined Networking (SDN)** solution provided by VMware. OVHcloud is offering this service in place of NSX-V in its VMware on OVHcloud solution. For the ALPHA version of NSX to work, two hosts are deployed with a dedicated virtual machine for NSX on each host, allowing redundancy in the event of one of the hosts failing.
 
 When a customer subscribes to the NSX offer and enables it, a pre-configuration is applied with two gateways:
 

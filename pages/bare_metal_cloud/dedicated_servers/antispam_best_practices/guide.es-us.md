@@ -52,7 +52,7 @@ Identifique el problema, solucione y desbloquee la IP.
 - Deje de enviar mensajes de correo electrónico (p. ej.: detener todos los programas de correo (como qmail, Postfix, Sendmail, etc.).
 - Compruebe la cola de espera de los emails (por ejemplo, qmHandle para qmail, postrabo -p para Postfix) y vacídela.
 - Analice sus logs gracias al **Message-ID** presente en la alerta de bloqueo.
-- Si envía spam o mensajes de correo ilegítimos, le recomendamos encarecidamente que resuelva el problema **antes** de desbloquear la dirección IP. Consulte esta guía para conocer las [mejores prácticas (EN)](/pages/cloud/dedicated/antispam_best_practices#bestpractices) al enviar correos electrónicos.
+- Si envía spam o mensajes de correo ilegítimos, le recomendamos encarecidamente que resuelva el problema **antes** de desbloquear la dirección IP. Consulte esta guía para conocer las [mejores prácticas (EN)](/pages/bare_metal_cloud/dedicated_servers/antispam_best_practices#bestpractices) al enviar correos electrónicos.
 
 Una vez resuelto el problema, puede desbloquear la dirección IP realizando las siguientes acciones.
 
@@ -65,7 +65,7 @@ Una vez resuelto el problema, puede desbloquear la dirección IP realizando las 
 
 #### Desbloquear la dirección IP desde el área de cliente
 
-En el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), acceda a la sección `Bare Metal Cloud`{.action} y haga clic en `IP`{.action}.
+En el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), acceda a la sección `Bare Metal Cloud`{.action} y haga clic en `Network`{.action}. A continuación, haga clic en `IP`{.action}.
 
 En el marco amarillo dedicado a las alertas, haga clic en la flecha desplegable `Ver todas mis alertas`{.action} para mostrar todas las alertas en su o sus direcciones IP.
 
@@ -211,7 +211,7 @@ La dirección IP se está desbloqueando. La operación puede tardar varios minut
 
 ### En caso de falsos positivos
 
-En algunos casos, la alerta de spam puede ser un falso positivo. Si ha comprobado que el **Message-ID** está asociado a un correo electrónico legítimo, debe asegurarse de que sus correos electrónicos cumplen con el [RFC (EN)](/pages/cloud/dedicated/antispam_best_practices#rfc) y las [buenas prácticas (EN)](/pages/cloud/dedicated/antispam_best_practices#bestpractices).
+En algunos casos, la alerta de spam puede ser un falso positivo. Si ha comprobado que el **Message-ID** está asociado a un correo electrónico legítimo, debe asegurarse de que sus correos electrónicos cumplen con el [RFC (EN)](/pages/bare_metal_cloud/dedicated_servers/antispam_best_practices#rfc) y las [buenas prácticas (EN)](/pages/bare_metal_cloud/dedicated_servers/antispam_best_practices#bestpractices).
 
 ## Más información
   

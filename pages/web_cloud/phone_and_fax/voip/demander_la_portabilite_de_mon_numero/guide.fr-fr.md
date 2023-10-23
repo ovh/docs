@@ -83,7 +83,7 @@ Vos choix faits, cliquez sur `Suivant`{.action}.
 
 La dernière étape consiste à finaliser votre demande de portabilité. Prenez connaissance des contrats liés à la portabilité et validez leur acceptation. Cliquez ensuite sur `Commander`{.action} et validez le bon de commande qui vous sera présenté. 
 
-Dès lors, pour suivre l'avancement de votre demande, reportez-vous aux informations de l'étape 3 « [Suivre une demande de portabilité](/pages/telecom/voip/demander_la_portabilite_de_mon_numero#etape-3-suivre-une-demande-de-portabilite){.external} » de cette documentation. 
+Dès lors, pour suivre l'avancement de votre demande, reportez-vous aux informations de l'étape 3 « [Suivre une demande de portabilité](/pages/web_cloud/phone_and_fax/voip/demander_la_portabilite_de_mon_numero#etape-3-suivre-une-demande-de-portabilite){.external} » de cette documentation. 
 
 #### Porter une tranche de numéros <a name="tranche-numeros"></a>
 
@@ -132,7 +132,7 @@ Avant la validation manuelle du mandat par nos services techniques, vous pouvez,
 
 ![numberport](images/porting-number-step7-2.png){.thumbnail}
 
-Pour suivre l'avancement de votre demande de portabilité, reportez-vous aux informations décrites dans l'étape 3 « [Suivre une demande de portabilité](/pages/telecom/voip/demander_la_portabilite_de_mon_numero#etape-3-suivre-une-demande-de-portabilite){.external} » de cette documentation.
+Pour suivre l'avancement de votre demande de portabilité, reportez-vous aux informations décrites dans l'étape 3 « [Suivre une demande de portabilité](/pages/web_cloud/phone_and_fax/voip/demander_la_portabilite_de_mon_numero#etape-3-suivre-une-demande-de-portabilite){.external} » de cette documentation.
 
 #### Porter un numéro spécial de Services à Valeur Ajoutée (SVA) <a name="numero-special"></a>
 

@@ -41,7 +41,7 @@ Questo implica che, prima di disattivarsi, devi essere **certo**:
 >
 > La rescissione può essere applicata solo se sono soddisfatte le seguenti condizioni:
 >
-> * sei il "contatto amministratore" del servizio (per maggiori informazioni, consulta [questa guida](/pages/account/customer/managing_contacts#definizione));
+> * sei il "contatto amministratore" del servizio (per maggiori informazioni, consulta [questa guida](/pages/account_and_service_management/account_information/managing_contacts#definizione));
 > * il servizio non è in rinnovo manuale;
 > * il servizio non è sospeso, in particolare a causa di una mancata regolarizzazione di una fattura.
 >
@@ -57,7 +57,7 @@ Clicca sul tipo di prodotto da disattivare nella lista delle principali offerte 
 &emsp;&emsp;[Licenze](#licences)<br />
 
 [Hosted Private Cloud](#privatecloud)<br />
-&emsp;&emsp;[Hosted Private Cloud powered by VMware](#hostedprivatecloud-vmware)<br />
+&emsp;&emsp;[VMware on OVHcloud](#hostedprivatecloud-vmware)<br />
 &emsp;&emsp;[Veeam Cloud Connect](#veeamcloudconnect)<br />
 
 [Public Cloud](#publiccloud)<br />
@@ -127,9 +127,9 @@ Indica i motivi della richiesta di disattivazione e clicca su `Conferma`{.action
 
 ### Hosted Private Cloud <a name="privatecloud"></a>
 
-#### Hosted Private Cloud powered by VMware <a name="hostedprivatecloud-vmware"></a>
+#### VMware on OVHcloud <a name="hostedprivatecloud-vmware"></a>
 
-Per disattivare la soluzione [Hosted Private Cloud powered by VMware](https://www.ovhcloud.com/it/enterprise/products/hosted-private-cloud/), segui le istruzioni di questa [guida](/pages/account_and_service_management/managing_billing_payments_and_services/comment_resilier_le_private_cloud).
+Per disattivare la soluzione [VMware on OVHcloud](https://www.ovhcloud.com/it/enterprise/products/hosted-private-cloud/), segui le istruzioni di questa [guida](/pages/account_and_service_management/managing_billing_payments_and_services/comment_resilier_le_private_cloud).
 
 #### Veeam Cloud Connect <a name="veeamcloudconnect"></a>
 
@@ -147,7 +147,7 @@ Ogni servizio [Public Cloud](https://www.ovhcloud.com/it/public-cloud/) può ess
 
 Il Public Cloud OVHcloud si basa sul principio del *Pay as you go* (per maggiori informazioni, consulta la pagina [relativa alla fatturazione Public Cloud](/pages/public_cloud/compute/analyze_billing)). Alla fine del mese viene fatturato solo il tempo di utilizzo effettivo delle risorse.
 
-Accedi allo Spazio Cliente OVHcloud per [consultare i tuoi consumi correnti](/pages/platform/public-cloud/analyze_billing#consulta-lo-stato-dei-tuoi-consumi) e vieni avvisato via email quando la proiezione dei tuoi consumi supera una determinata soglia.
+Accedi allo Spazio Cliente OVHcloud per [consultare i tuoi consumi correnti](/pages/public_cloud/compute/analyze_billing#consulta-lo-stato-dei-tuoi-consumi) e vieni avvisato via email quando la proiezione dei tuoi consumi supera una determinata soglia.
 
 ### Web Cloud <a name="webcloud"></a>
 
@@ -211,23 +211,23 @@ Riceverai un'email con la procedura da seguire per la disattivazione del tuo MX 
 
 #### E-mail Pro <a name="emailpro"></a>
 
-Per disattivare la tua offerta [Email Pro](https://www.ovhcloud.com/it/emails/email-pro/), segui le indicazioni di questa [guida](/pages/web/emails-pro/manage_billing_emailpro#elimina-account).
+Per disattivare la tua offerta [Email Pro](https://www.ovhcloud.com/it/emails/email-pro/), segui le indicazioni di questa [guida](/pages/web_cloud/email_and_collaborative_solutions/email_pro/manage_billing_emailpro#elimina-account).
 
 #### Hosted Exchange <a name="hosted"></a>
 
-Per disattivare la soluzione [Hosted Exchange](https://www.ovhcloud.com/it/emails/hosted-exchange/), segui le indicazioni di questa [guida](/pages/web/microsoft-collaborative-solutions/manage_billing_exchange#elimina-account).
+Per disattivare la soluzione [Hosted Exchange](https://www.ovhcloud.com/it/emails/hosted-exchange/), segui le indicazioni di questa [guida](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_billing_exchange#elimina-account).
 
 #### Private Exchange <a name="private"></a>
 
-Per disattivare la tua offerta [Private Exchange](https://www.ovhcloud.com/it/emails/private-exchange/), segui le indicazioni di questa [guida](/pages/web/microsoft-collaborative-solutions/manage_billing_exchange#elimina-account).
+Per disattivare la tua offerta [Private Exchange](https://www.ovhcloud.com/it/emails/private-exchange/), segui le indicazioni di questa [guida](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_billing_exchange#elimina-account).
 
 #### Office 365 csp 1 <a name="office-csp1"></a>
 
-Per disattivare la tua offerta [Office 365 csp 1](https://www.ovhcloud.com/it/collaborative-tools/microsoft-365/), segui questa [guida](/pages/web/microsoft-collaborative-solutions/office_csp1#gestisci-i-tuoi-abbonamenti).
+Per disattivare la tua offerta [Office 365 csp 1](https://www.ovhcloud.com/it/collaborative-tools/microsoft-365/), segui questa [guida](/pages/web_cloud/email_and_collaborative_solutions/microsoft_office/office_csp1#gestisci-i-tuoi-abbonamenti).
 
 #### Office 365 csp 2 <a name="office-csp2"></a>
 
-Per disattivare la tua offerta [Office 365 csp 2](https://www.ovhcloud.com/it/collaborative-tools/microsoft-365/reseller/), segui questa [guida](/pages/web/microsoft-collaborative-solutions/office_csp2#gestisci-i-tuoi-abbonamenti).
+Per disattivare la tua offerta [Office 365 csp 2](https://www.ovhcloud.com/it/collaborative-tools/microsoft-365/reseller/), segui questa [guida](/pages/web_cloud/email_and_collaborative_solutions/microsoft_office/office_csp2#gestisci-i-tuoi-abbonamenti).
 
 #### Sharepoint <a name="sharepoint"></a>
 

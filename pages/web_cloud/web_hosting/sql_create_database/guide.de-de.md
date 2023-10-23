@@ -4,6 +4,10 @@ excerpt: 'Erfahren Sie hier, wie Sie in OVHcloud Webhostings enthaltene Datenban
 updated: 2022-02-03
 ---
 
+> [!primary]
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
+>
+
 ## Ziel 
 
 Datenbanken (DBs) werden verwendet, um sogenannte dynamische Elemente wie Kommentare oder Artikel zu speichern. Diese Datenbanken werden heutzutage in praktisch allen modernen Content Management Systemen (CMS) wie WordPress oder Joomla! eingesetzt.
@@ -110,7 +114,7 @@ Es wird empfohlen, für Skripte und Konfigurationsdateien immer den tatsächlich
 
 Übersteigt eine Webhosting-Datenbank den empfohlenen Speicherplatz, wird diese automatisch in den Modus "read only" / "select only" versetzt. Der Administrator erhält eine Benachrichtigung per E-Mail.
 
-Nachdem die Datenbank optimiert (bereinigt) wurde, können Sie Ihre Quota über Ihr OVHcloud Kundencenter neu berechnen, damit die Datenbank entsperrt wird. Es wird empfohlen, die Datenbank herunterzuladen, den Inhalt lokal zu überarbeiten und die Datenbank anschließend per Import zu ersetzen. Weitere Informationen hierzu finden Sie in [dieser Anleitung](/pages/web/hosting/optimise_your_website_performance#schritt-7-ihre-datenbank-optimieren).
+Nachdem die Datenbank optimiert (bereinigt) wurde, können Sie Ihre Quota über Ihr OVHcloud Kundencenter neu berechnen, damit die Datenbank entsperrt wird. Es wird empfohlen, die Datenbank herunterzuladen, den Inhalt lokal zu überarbeiten und die Datenbank anschließend per Import zu ersetzen. Weitere Informationen hierzu finden Sie in [dieser Anleitung](/pages/web_cloud/web_hosting/optimise_your_website_performance#schritt-7-ihre-datenbank-optimieren).
 
 ## Weiterführende Informationen
 

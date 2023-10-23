@@ -113,7 +113,7 @@ Um Ihre ausstehenden Rechnungen zu begleichen, klicken Sie einfach auf das Menü
 
 ![Bezahlung ausstehender Beträge](images/pay_debt.png){.thumbnail}
 
-Es wird dann ein [Bestellschein](/pages/account/billing/managing_ovh_orders#der-bestellschein) entsprechend der Rechnungsbeträge erstellt. Nach Bezahlung ist Ihr Konto ausgeglichen.
+Es wird dann ein [Bestellschein](/pages/account_and_service_management/managing_billing_payments_and_services/managing_ovh_orders#der-bestellschein) entsprechend der Rechnungsbeträge erstellt. Nach Bezahlung ist Ihr Konto ausgeglichen.
 
 #### Die Stornierung einer Rechnung beantragen
 
