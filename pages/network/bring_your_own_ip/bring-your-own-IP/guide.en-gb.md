@@ -270,6 +270,14 @@ Not for the moment.
 
 Yes, but once the BYOIP service has been delivered, you must immediately cancel the annoucement from the other site, as you risk connectivity issues with any services hosted at OVHcloud. In this case, OVHcloud cannot be held responsible.
 
+###### StartUpdateJulien
+###  Can I import IP sub-ranges?
+
+Yes, OVHcloud's Bring Your Own IP (BYOIP) feature allows you to import IP sub-ranges. This feature increases the flexibility of your IP address management, facilitating more precise allocation and use of your IP resources.
+
+
+###### EndUpdateJulien
+
 ## Go further
 
 Join our community of users on <https://community.ovh.com/en/>.
