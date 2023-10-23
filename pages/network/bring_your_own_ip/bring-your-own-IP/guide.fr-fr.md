@@ -276,7 +276,7 @@ Oui, mais une fois la livraison du service BYOIP effectuée, vous devrez immédi
 ###### StartUpdateJulien
 ### Puis-je effectuer une importation de sous-plages d'IP ?
 
-Oui, la fonctionnalité Bring Your Own IP (BYOIP) d'OVHcloud permet désormais l'importation de sous-plages IP. Cette capacité élargit la flexibilité dans la gestion de vos adresses IP, facilitant une allocation et une utilisation plus précises de vos ressources IP.
+Oui, la fonctionnalité Bring Your Own IP (BYOIP) d'OVHcloud permet l'importation de sous-plages IP. Cette capacité élargit la flexibilité dans la gestion de vos adresses IP, facilitant une allocation et une utilisation plus précises de vos ressources IP.
 
 
 ###### EndUpdateJulien
