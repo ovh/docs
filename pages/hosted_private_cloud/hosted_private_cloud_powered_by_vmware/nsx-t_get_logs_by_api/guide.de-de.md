@@ -1,7 +1,7 @@
 ---
-title: "NSX-T: retrieving logs via the API (EN)"
-excerpt: "Find out how to get NSX node logs using the dedicated API"
-updated: 2023-09-22
+title: "NSX-T: retrieving logs (EN)"
+excerpt: "Find out how to get NSX node logs using the dedicated API and/or Bundle"
+updated: 2023-10-20
 ---
 
 ## Objective
@@ -43,7 +43,7 @@ The rule settings are then available. Enable the `logging`{.action} option that 
 
 Make sure to apply the new configuration and publish it.
 
-### Gather the logs
+### Gather the logs with API
 
 - To have access to the logs, you must identify the Edge NSX ID. To do this, use this first API call:
 
@@ -75,6 +75,12 @@ curl -k -u user@pcc-123-123-123-123.ovh.com:<password> https://nsxt.pcc-123-123-
 ```bash
 2023-09-15T13:15:05.548Z edge321-3995b.sbg1a.pcc.ovh.net NSX 5188 FIREWALL [nsx@6876 comp="nsx-edge" subcomp="datapathd" s2comp="firewallpkt" level="INFO"] <30 d612293055f3431f:8b01687591afe36e> INET reason-match DROP 2312 OUT 84 PROTO 1 192.168.211.169->8.8.8.8
 ```
+
+### Retrieving logs with bundle
+
+To download the bundle support for your nodes or cluster to your file server/machine, follow the [official VMware documentation](https://docs.vmware.com/en/VMware-vSphere/7.0/vmware-vsphere-with-tanzu/GUID-794C691E-B950-4838-97E4-A10D9873D852.html)
+
+![infos](images/export-log-bundle.gif){.thumbnail}
 
 ## Go further
 

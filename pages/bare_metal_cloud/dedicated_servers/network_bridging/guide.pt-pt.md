@@ -52,7 +52,7 @@ Para este exemplo, utilizaremos os seguintes valores nos nossos exemplos de cód
 
 ### Atribuir um endereço MAC virtual
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, clique no menu `Bare Metal Cloud`{.action} e depois na secção `IP`{.action}.
+Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, clique no menu `Bare Metal Cloud`{.action} e depois na secção `Network`{.action}. De seguida, clique em `IP`{.action}.
 
 Clique no separador `Additional IP`{.action}.
 

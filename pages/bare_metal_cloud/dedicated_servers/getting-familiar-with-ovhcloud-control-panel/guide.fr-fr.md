@@ -70,7 +70,7 @@ Pour plus d'informations sur la gestion de votre serveur dédié via l'espace cl
 
 ### Section IP
 
-Pour accéder à la section « IP » de votre espace client OVHcloud, cliquez sur le menu `Bare Metal Cloud`{.action} et ensuite sur `IP`{.action} :
+Pour accéder à la section « IP » de votre espace client OVHcloud, cliquez sur le menu `Bare Metal Cloud`{.action} et ouvrez `Network`{.action}. Cliquez ensuite sur `IP`{.action} :
 
 ![section ip](images/manageIP2023.png){.thumbnail}
 

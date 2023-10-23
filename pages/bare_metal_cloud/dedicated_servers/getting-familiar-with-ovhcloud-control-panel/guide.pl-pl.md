@@ -74,9 +74,9 @@ Aby uzyskać więcej informacji na temat zarządzania serwerem dedykowanym w Pan
 
 ### Sekcja IP
 
-Aby uzyskać dostęp do sekcji **IP** w Panelu klienta OVHcloud, kliknij menu `Bare Metal Cloud`{.action}, a następnie `IP`{.action}.
+Aby uzyskać dostęp do sekcji **IP** w Panelu klienta OVHcloud, kliknij menu `Bare Metal Cloud`{.action} i otwórz `Network`{.action}. Następnie kliknij `IP`{.action}.
 
-![sekcja ip](images/manageIPOVHcloud.png){.thumbnail}
+![sekcja ip](images/manageIP2023.png){.thumbnail}
 
 ### Zakładka Licencje (niedostępna na serwerze Kimsufi)
 

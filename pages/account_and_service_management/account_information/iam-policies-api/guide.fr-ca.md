@@ -4,10 +4,7 @@ excerpt: "Découvrez comment donner des droits d'accès spécifiques aux utilisa
 updated: 2023-06-23
 ---
 
-> [!warning]
->
-> Cette fonctionnalité est actuellement en version bêta. Retrouvez plus d'informations sur <https://labs.ovhcloud.com/en/>.
->
+ 
 
 ## Objectif
 
@@ -224,7 +221,7 @@ Vérifiez cela avec `GET /iam/policy`:
 ]
 ```
 
-La politique a été créée avec succès. Maintenant, "***user1***" peut **effectuer des redémarrages et créer des sauvegardes (snapshots))** sur le VPS "***urn:v1:eu:resource:vps:vps-5b48d78b.vps.ovh.net***".
+La politique a été créée avec succès. Maintenant, "***user1***" peut **effectuer des redémarrages et créer des sauvegardes (snapshots)** sur le VPS "***urn:v1:eu:resource:vps:vps-5b48d78b.vps.ovh.net***".
 
 ### Identités
 

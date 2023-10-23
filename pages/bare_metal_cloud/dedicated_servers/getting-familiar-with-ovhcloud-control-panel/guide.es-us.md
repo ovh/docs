@@ -72,9 +72,9 @@ Para más información sobre la gestión de su servidor dedicado desde el área 
 
 ### Sección IP
 
-Para acceder a la sección **IP** del área de cliente de OVHcloud, haga clic en el menú `Bare Metal Cloud`{.action} y seleccione `IP`{.action}.
+Para acceder a la sección **IP** del área de cliente de OVHcloud, haga clic en el menú `Bare Metal Cloud`{.action} y abra `Network`{.action}. A continuación, haga clic en `IP`{.action}.
 
-![Sección ip](images/manageIPOVHcloud.png){.thumbnail}
+![Sección ip](images/manageIP2023.png){.thumbnail}
 
 ### Pestaña Licencias (no disponible en Kimsufi)
 

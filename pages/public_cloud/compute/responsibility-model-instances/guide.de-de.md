@@ -1,7 +1,7 @@
 ---
 title: Public Cloud Instances - Shared responsibilities (EN)
 excerpt: "Shared responsibilities between OVHcloud and the customer for Public Cloud Instances"
-updated: 2022-12-22
+updated: 2023-10-12
 ---
 
 ## Objective

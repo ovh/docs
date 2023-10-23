@@ -39,7 +39,7 @@ Pour la configuration réseau des machines virtuelles pfSense, nous utiliserons 
 
 #### Assigner une adresse MAC virtuelle
 
-Dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), rendez-vous dans la section `Bare Metal Cloud`{.action} et ouvrez le menu `IP`{.action}.
+Dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), rendez-vous dans la section `Bare Metal Cloud`{.action} et cliquez sur `Network`{.action}. Ensuite, ouvrez le menu `IP`{.action}.
 
 Cliquez sur l'onglet `Additional IP`{.action}.
 

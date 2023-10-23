@@ -56,7 +56,7 @@ Below you can find a summary of every configuration option available for Grafana
 |---|---|
 | Parameter | `smtp_server.from_address` |
 | Value type | string |
-| Minumum | |
+| Minimum | |
 | Maximum | |
 | Values | |
 | Description | Address used for sending emails |
@@ -65,7 +65,7 @@ Below you can find a summary of every configuration option available for Grafana
 |---|---|
 | Parameter | `smtp_server.host` |
 | Value type | string |
-| Minumum | |
+| Minimum | |
 | Maximum | |
 | Values | |
 | Description | Server hostname or IP |
@@ -74,7 +74,7 @@ Below you can find a summary of every configuration option available for Grafana
 |---|---|
 | Parameter | `smtp_server.port` |
 | Value type | long |
-| Minumum | 1 |
+| Minimum | 1 |
 | Maximum | 65535  |
 | Values | |
 | Description | SMTP server port |
@@ -83,7 +83,7 @@ Below you can find a summary of every configuration option available for Grafana
 |---|---|
 | Parameter | `smtp_server.skip_verify` |
 | Value type | boolean |
-| Minumum | |
+| Minimum | |
 | Maximum | |
 | Values | |
 | Description | Skip verifying server certificate. Defaults to false |
@@ -92,7 +92,7 @@ Below you can find a summary of every configuration option available for Grafana
 |---|---|
 | Parameter | `smtp_server.starttls_policy` |
 | Value type | string |
-| Minumum | |
+| Minimum | |
 | Maximum | |
 | Values | "MandatoryStartTLS", "NoStartTLS", "OpportunisticStartTLS" |
 | Description | Either OpportunisticStartTLS, MandatoryStartTLS or NoStartTLS. Default is OpportunisticStartTLS. |

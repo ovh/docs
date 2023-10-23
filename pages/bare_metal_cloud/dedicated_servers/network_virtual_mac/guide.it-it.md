@@ -40,7 +40,7 @@ OVHcloud ti permette di associare un indirizzo MAC virtuale a un indirizzo IP al
 
 #### Tramite lo Spazio Cliente OVHcloud
 
-Una volta connesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, accedi al menu `Bare Metal Cloud`{.action} e apri la sezione `IP`{.action}.
+Una volta connesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, accedi al menu `Bare Metal Cloud`{.action} e apri la sezione `Network`{.action}. Quindi, clicca su `IP`{.action}.
 
 Clicca sulla scheda `Additional IP`{.action}.
 
@@ -83,7 +83,7 @@ Utilizza questa chiamata API:
 
 #### Tramite lo Spazio Cliente OVHcloud
 
-Per eliminare un indirizzo MAC virtuale associato a un Additional IP, collegati al tuo [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, accedi al menu `Bare Metal Cloud`{.action} e apri la sezione `IP`{.action}. Seleziona il server per visualizzare gli Additional IP o i blocchi IP associati.
+Per eliminare un indirizzo MAC virtuale associato a un Additional IP, collegati al tuo [Spazio Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, accedi al menu `Bare Metal Cloud`{.action} e apri la sezione `Network`{.action}. Quindi, clicca su `IP`{.action}. Seleziona il server per visualizzare gli Additional IP o i blocchi IP associati.
 
 Infine clicca sul pulsante `...`{.action} sulla destra e seleziona la voce `Elimina il MAC virtuale`{.action}.
 

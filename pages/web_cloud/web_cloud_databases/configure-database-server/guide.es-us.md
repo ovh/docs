@@ -40,7 +40,7 @@ En dicha pestaña podrá consultar la información más importante relativa al s
 
 ![Información general](images/web-cloud-databases-General-information.png){.thumbnail}
 
-## Gestionar los accesos
+### Gestionar los accesos
 
 Puede acceder a su Web Cloud Databases desde su alojamiento web de OVHcloud o desde la red pública.
 
@@ -139,16 +139,16 @@ En el cuadro **"Configuración general de MySql"** encontrará la configuración
 > <b>sql_mode</b>:
 >
 > &emsp;&emsp;Modo por defecto de MariaDB 10.1:
-> <pre class="highlight command-prompt"> <span class="prompt">NO_ENGINE_SUBSTITUTION,NO_AUTO_CREATE_USER</span> </pre>
+> <pre class="highlight language-console"><code class="language-console">NO_ENGINE_SUBSTITUTION,NO_AUTO_CREATE_USER</code></pre>
 > 
 > &emsp;&emsp;Modo por defecto de MariaDB 10.2 y versiones superiores:
-> <pre class="highlight command-prompt"> <span class="prompt">STRICT_TRANS_TABLES,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION</span> </pre>
+> <pre class="highlight language-console"><code class="language-console">STRICT_TRANS_TABLES,ERROR_FOR_DIVISION_BY_ZERO,NO_AUTO_CREATE_USER,NO_ENGINE_SUBSTITUTION</code></pre>
 >
 > &emsp;&emsp;Modo por defecto de MySQL 5.6:
-> <pre class="highlight command-prompt"> <span class="prompt">NO_ENGINE_SUBSTITUTION</span> </pre>
+> <pre class="highlight language-console"><code class="language-console">NO_ENGINE_SUBSTITUTION</code></pre>
 > 
 > &emsp;&emsp;Modo por defecto de MySQL 5.7 y versiones superiores:
-> <pre class="highlight command-prompt"> <span class="prompt">ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION</span> </pre>
+> <pre class="highlight language-console"><code class="language-console">ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION</code></pre>
 >
 > Le recomendamos que utilice siempre el modo por defecto, excepto si su base de datos se ha actualizado desde una versión con un modo por defecto diferente al de la versión actual.
 >

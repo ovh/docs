@@ -102,6 +102,10 @@ Puede elegir entre:
 
 #### Eliminar el spam
 
+> [!warning]
+>
+> En nuestro ejemplo mencionamos la mención [SPAM] en el asunto de un email. Esta mención aparece cuando el antispam del servidor de recepción entrega los mensajes de correo electrónico que considera no deseados, directamente en la bandeja de entrada. Este es el caso de la versión histórica de la solución MX Plan.
+
 ||Cabecera|Regla|Valor|Escenarios posibles|
 |---|---|---|---|---|
 |Configuración del filtro|Asunto del mensaje|contiene|[SPAM]|eliminación|

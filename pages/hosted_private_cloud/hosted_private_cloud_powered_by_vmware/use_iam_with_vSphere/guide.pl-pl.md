@@ -4,10 +4,7 @@ excerpt: "Find out how to connect your vSphere with OVHcloud IAM"
 updated: 2023-07-28
 ---
 
-> [!warning]
->
-> This feature is currently in beta version. You can find more information on <https://labs.ovhcloud.com/en/>.
->
+
 
 ## Objective
 

@@ -4,10 +4,7 @@ excerpt: "How to connect to APIs with OVHcloud service accounts using the Oauth2
 updated: 2023-08-24
 ---
 
-> [!warning]
->
-> This feature is currently in beta. You can find more information on <https://labs.ovhcloud.com/en/>.
->
+ 
 
 ## Objective
 

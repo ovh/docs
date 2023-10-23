@@ -102,6 +102,10 @@ Sie können zwischen diesen Arten von Aktionen wählen:
 
 #### Spam löschen
 
+> [!warning]
+>
+> Das Beispiel bezieht sich auf den Vermerk [SPAM] im Betreff einer E-Mail. Er wird hinzugefügt, wenn vom Antispam-Programm des Empfangsservers als unerwünscht eingestufte E-Mails im Posteingang abgelegt werden. Dies gilt für den MX Plan in der Version *Legacy*.
+
 ||Header|Regel|Wert|Aktion|
 |---|---|---|---|---|
 |Filtereinstellungen|Betreff der Nachricht|enthält|[SPAM]|löschen|

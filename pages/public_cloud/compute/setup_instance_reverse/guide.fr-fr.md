@@ -20,7 +20,7 @@ Configurer la résolution **Reverse DNS** d’une instance est particulièrement
 
 ## En pratique
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), accédez à la section `Bare Metal Cloud`{.action} et cliquez sur `IP`{.action} dans le menu de gauche.
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), accédez à la section `Bare Metal Cloud`{.action}, ouvrez le menu `Network`{.action} et cliquez sur `IP`{.action}.
 
 Le tableau de cette page répertorie vos services éligibles. Vous pouvez filtrer l'ID de votre projet Public Cloud à l'aide du menu déroulant **Service**.
 
