@@ -180,4 +180,8 @@ Ce guide a pour but de présenter d'une manière efficace la gestion d'un projet
 
 [Utiliser l'accès SSH de son hébergement web](https://help.ovhcloud.com/csm/fr-web-hosting-ssh-access?id=kb_article_view&sysparm_article=KB0053116). N'oubliez pas que pour utiliser le SSH, vous devez disposer d'une [offre d'hébergement Pro ou Performance](https://www.ovhcloud.com/fr/web-hosting/).
 
-Échangez avec notre communauté d’utilisateurs sur <https://community.ovh.com/>
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
+
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
