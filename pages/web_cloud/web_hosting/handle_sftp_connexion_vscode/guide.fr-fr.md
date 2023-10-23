@@ -49,7 +49,7 @@ En haut à gauche de l’interface, entrez le nom de l’extension « SFTP/FTP s
 
 ![hosting](images/extensions.png){.thumbnail}
 
-Il est également possible d’installer l’[extension « SFTP/FTP sync »](https://marketplace.visualstudio.com/items?itemName=Natizyskunk.sftp#sftp-sync-extension-for-vs-code) depuis la marketplace de Visual Studio.
+Il est également possible d’installer [l’extension « SFTP/FTP sync »](https://marketplace.visualstudio.com/items?itemName=Natizyskunk.sftp#sftp-sync-extension-for-vs-code) depuis la marketplace de Visual Studio.
   
 ### Initialiser le projet en local
 
