@@ -33,7 +33,7 @@ Si vous disposez d’un hébergement web OVHcloud, vous pouvez accéder à un es
 
 > [!warning]
 >
-> Dans ce guide, nous avons choisi l'extension « SFTP/FTP sync » de *Natizyskunk*. Vous êtes libre d'en choisir une autre. Cependant, il est à noter qu'une extension sur Visual Studio Code est un logiciel souvent créé par un développeur indépendant, lequel peut stopper à tout moment son développement.
+> Dans ce tutoriel, nous avons choisi l'extension « SFTP/FTP sync » de *Natizyskunk*. Vous êtes libre d'en choisir une autre. Cependant, notez qu'une extension sur Visual Studio Code est un logiciel souvent créé par un développeur indépendant, lequel peut stopper à tout moment son développement.
 >
 
 Après avoir démarré Visual Studio Code, dirigez-vous dans le menu horizontal en haut de l'interface, et cliquez sur `View`{.action} puis `Extensions`{.action}.
