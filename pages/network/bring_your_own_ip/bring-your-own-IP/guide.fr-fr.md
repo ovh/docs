@@ -250,10 +250,10 @@ Pas au lancement de l'offre BYOIP. Cependant, si tel est votre souhait, nous vou
 Oui. Pour plus d'informations, veuillez vous reporter à la section [Découpage de plages d'addresses](#range-slicing) ci-dessus.
 
 ### Puis-je importer une plage d'adresses IP ARIN dans des campus acceptant uniquement des plages d'adresses IP RIPE et inversement ?
-$${\color{lightgreen}StartUpdateJulien}$$
+###### StartUpdateJulien
 ~~Pas pour le moment.~~   
 Oui, avec la mise à jour de notre politique, il est désormais possible d'utiliser des blocs IP ARIN ou RIPE sur n'importe quel campus OVHcloud. Nous avons éliminé les restrictions précédentes pour offrir une plus grande flexibilité et efficacité dans la gestion et l'allocation des adresses IP. Vous pouvez importer et utiliser vos blocs IP en fonction de vos besoins spécifiques, indépendamment de la localisation géographique du campus.
-$${\color{lightgreen}EndUpdateJulien}$$
+###### EndUpdateJulien
 
 ### Puis-je importer un numéro AS ARIN avec une plage d'adresses IP RIPE et inversement ?
 
