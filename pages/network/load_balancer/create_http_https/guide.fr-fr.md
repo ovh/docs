@@ -257,8 +257,6 @@ TLS 1.3 est la dernière version du protocole TLS, offrant des améliorations si
 ##### Pourquoi utiliser TLS 1.3 avec OVHcloud Load Balancer ?
 En intégrant TLS 1.3, votre Load Balancer OVHcloud bénéficiera d'une sécurité renforcée et d'une performance améliorée, assurant une expérience utilisateur optimale pour vos visiteurs. La réduction du temps de handshake accélère le chargement des pages, tandis que les améliorations de sécurité garantissent que vos données sont protégées avec les normes les plus récentes et les plus sûres.
 
-Pour activer TLS 1.3, suivez les étapes de configuration du certificat SSL/TLS et sélectionnez TLS 1.3 dans les options de protocole. Assurez-vous de tester la configuration pour garantir la compatibilité avec vos applications et services existants.
-
 Pour plus d'informations sur TLS 1.3 et ses avantages, consultez [notre guide détaillé](https://github.com/jtaverne/ovh/blob/main/tls_1.3.md).
 
 #### Depuis l'espace client OVHcloud
