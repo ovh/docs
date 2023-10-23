@@ -517,7 +517,7 @@ Les groupes de permissions sont accessible via l'API suivante :
 
 |**Méthode**|**Chemin**|**Description**|
 | :-: | :-: | :-: |
-|GET|/iam/reference/resource/type|Récupérer tous les groupes de permissions|
+|GET|/iam/permissionsGroup|Récupérer tous les groupes de permissions|
 
 ```json
 {
@@ -571,7 +571,7 @@ La description complète des groupes de permissions est disponible dans la [docu
 
 |**Méthode**|**Chemin**|**Description**|
 | :-: | :-: | :-: |
-|GET|/iam/permissionsGroup|Récupérer tous les types de ressources|
+|GET|/iam/reference/resource/type|Récupérer tous les types de ressources|
 
 #### Exemple
 
