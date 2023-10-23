@@ -1,7 +1,7 @@
 ---
 title: "Changer le propriétaire d’un domaine avec une Demande d'Opération AFNIC (DOA)"
 excerpt: "Découvrez comment réaliser une Demande d'Opération AFNIC (DOA)"
-updated: 2023-06-13
+updated: 2023-10-23
 ---
 
 ## Objectif
