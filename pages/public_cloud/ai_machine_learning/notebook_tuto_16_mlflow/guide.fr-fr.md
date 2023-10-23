@@ -1,6 +1,6 @@
 ---
-title: AI Notebooks - Tutorial - Track your ML models with MLflow inside notebooks
-excerpt: Learn how to use MLflow for model tracking and versioning
+title: AI Notebooks - Tutorial - Suivez et comparez vos entraînements avec MLflow dans les notebooks (EN)
+excerpt: Découvrez comment utiliser MLflow pour le suivi des modèles et la gestion des versions
 updated: 2023-10-18
 ---
 
