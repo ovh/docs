@@ -1,7 +1,7 @@
 ---
 title: Utiliser Zerto Virtual Replication entre deux datacenters OVHcloud
 excerpt: Découvrez comment mettre en oeuvre Zerto Virtual Replication pour votre Plan de Reprise d'Activité entre deux offres Private Cloud.
-updated: 2022-02-11
+updated: 2023-10-23
 ---
 
 ## Objectif
@@ -302,6 +302,8 @@ En cas d'incident majeur sur le site principal ou dans le cadre d'un exercice en
 > [!warning]
 >
 > Le failover en mode **LIVE** sur Zerto Replication se fait en considérant le site principal comme indisponible, il faut donc faire attention à la configuration réseau afin d'éviter notamment tout conflit d'adressage IP.
+>
+> De plus, dans le cas où les deux Private Cloud se situent dans 2 pays différents, il est impossible de déplacer votre bloc IP d'un Private Cloud à un autre.
 >
 > L'ensemble des ressources qui seront démarrées sur le site secondaire vont devenir actives au niveau du traitement de données.
 >
