@@ -144,7 +144,7 @@ Pour plus de détail concernant les options du fichier « sftp.json » , reporte
 
 Une fois le fichier « sftp.json » configuré, vous pouvez télécharger le contenu de votre projet pour récupérer l’ensemble des dossiers et fichiers de votre site web. Pour ce faire, allez dans Visual Studio Code et entrez la commande suivante : `SFTP: Download Project`.
 
-Visual Studio Code vous demande de sélectionner le dossier que vous souhaitez télécharger sur votre hébergement web. Saisissez la valeur `name` précédement défini dans le fichier « sftp.json » .
+Visual Studio Code vous demande de sélectionner le dossier que vous souhaitez télécharger sur votre hébergement web. Saisissez la valeur `name` précédement définie dans le fichier « sftp.json » .
 
 ![hosting](images/download_project.png){.thumbnail}
 
