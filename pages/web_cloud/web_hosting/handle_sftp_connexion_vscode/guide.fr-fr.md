@@ -158,7 +158,6 @@ S'il est demandé, saisissez le mot de passe assossié à l’utilisateur rensei
 > Pour rappel, la bonne configuration du fichier « sftp.json » est primordiale. Si vous rencontrez une erreur avant le téléchargement de votre projet, elle est généralement causée par un défaut de configuration du fichier « sftp.json ». Pour toute question, reportez-vous à la section [FAQ de l'extension](https://github.com/Natizyskunk/vscode-sftp/blob/HEAD/FAQ.md).
 >
 
-
 ### Effectuer des modifications sur les fichiers
 
 Maintenant que le projet est téléchargé en local sur votre machine, vous pouvez facilement éditer, ajouter ou supprimer des fichiers sur Visual Studio Code.
