@@ -30,7 +30,8 @@ Vous devez posséder (voir ci-dessous) un bloc IPv4 public auprès de l'un des R
 - [ARIN](https://www.arin.net/)
 - [RIPE](https://www.ripe.net/)
 
-  [color=#FF4500] 
+
+[color=#FF4500] 
 ~~Un bloc ARIN ne peut être utilisé qu’avec des services OVHcloud situés au Canada ou aux Etats-Unis, tandis qu’un bloc RIPE ne peut être utilisé qu’avec des services OVHcloud situés en Europe.~~   
 [/color]
 
