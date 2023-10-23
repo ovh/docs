@@ -53,7 +53,7 @@ Il est également possible d’installer [l’extension « SFTP/FTP sync »](htt
   
 ### Initialiser le projet en local
 
-Pour synchroniser les fichiers de votre site web présents sur l’hébergement web, depuis Visual Studio Code, renseignez l’emplacement de votre projet en local. Pour cela, créez un dossier à l’emplacement souhaité.
+Pour synchroniser les fichiers de votre site web présents sur l’hébergement web depuis Visual Studio Code, renseignez l’emplacement de votre projet en local. Pour cela, créez un dossier à l’emplacement souhaité.
 
 Retournez dans Visual Studio Code et, dans le menu horizontal en haut de l'interface, cliquez sur `View`{.action} puis `Command Palette`{.action} pour afficher l'éditeur de commandes.
 
