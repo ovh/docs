@@ -120,7 +120,6 @@ Enfin, n'oubliez pas d'ajouter cette ligne dans le fichier « sftp.json » : `"o
 > Pour ne pas avoir à entrer votre mot de passe après chaque commande dans Visual Studio Code, enregistrez-le dans le fichier « sftp.json » en ajoutant la ligne : `"password": "<password>"`
 >
 
-
 Voici un exemple de fichier « sftp.json » :
 
 ```json
