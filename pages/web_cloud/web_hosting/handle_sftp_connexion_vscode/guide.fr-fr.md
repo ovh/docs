@@ -1,7 +1,7 @@
 ---
 title: "Gérer son hébergement web avec Visual Studio Code via SFTP"
 excerpt: "Administrer un site internet sur un hébergement web avec Visual Studio Code grâce à une extension SFTP"
-updated: 2023-10-24
+updated: 2023-10-23
 ---
 
 ## Objectif
@@ -172,7 +172,7 @@ Jusqu'à présent, nous avons seulement mentionné les commandes : `SFTP: Config
 
 Retrouvez la liste des commandes [ici](https://github.com/Natizyskunk/vscode-sftp/wiki/Commands){.external}.
 
-À présent, vous êtes en mesure d'accéder et de modifier le contenu de votre hébérgement web via Visual Studio Code.
+À présent, vous êtes en mesure d'accéder et de modifier le contenu de votre hébergement web via Visual Studio Code.
 Ce guide a pour but de présenter d'une manière efficace la gestion d'un projet depuis Visual Studio Code. Il convient pour une première expérience. Néanmoins, si vous modifiez plusieurs fichiers et que ces derniers sont synchronisés sur votre hébergement web, il vous sera impossible de voir l'historique de vos modifications pour éventuellement revenir dessus ou rattraper une erreur.
 
 ## Aller plus loin
