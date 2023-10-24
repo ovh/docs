@@ -1,7 +1,7 @@
 ---
 title: "Gérer son hébergement web avec Visual Studio Code via SFTP"
 excerpt: "Administrer un site internet sur un hébergement web avec Visual Studio Code grâce à une extension SFTP"
-updated: 2023-10-23
+updated: 2023-10-24
 ---
 
 ## Objectif
@@ -22,7 +22,7 @@ Si vous disposez d’un hébergement web OVHcloud, vous pouvez accéder à un es
 
 ## En pratique
  
- > [!warning]
+> [!warning]
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
