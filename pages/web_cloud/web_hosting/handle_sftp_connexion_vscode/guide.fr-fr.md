@@ -166,7 +166,7 @@ Si vous souhaitez que vos modifications locales soient synchronisées chaque foi
 
 Pour désactiver cette fonction, tout en la gardant dans le fichier « sftp.json », remplacez la valeur `true` par `false`.
 
-Jusqu'à présent, nous avons seulement mentionné les commandes : `SFTP: Config` et `SFTP: Download Project`. Il existe d'autres commandes que vous pouvez observer par autocomplétion en tapant `SFTP:` dans l'éditeur de commande.
+Jusqu'à présent, nous avons seulement mentionné les commandes : `SFTP: Config` et `SFTP: Download Project`. Il existe d'autres commandes que vous pouvez observer par autocomplétion en saisissant `SFTP:` dans l'éditeur de commande.
 
 ![hosting](images/list_commands.png){.thumbnail}
 
