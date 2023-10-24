@@ -6,12 +6,12 @@ updated: 2023-10-23
 
  
 
-## Objectif
+## Objective
 
 In this guide, you will learn how to transform your OVHcloud Account events as actionable data through Logs Data Platform, a fully managed solution that helps you store, archieve, query and visualize your logs.  
 To discover Logs Data Platform before continuing this guide, please refer to [this documentation](/pages/manage_and_operate/observability/logs_data_platform/getting_started_introduction_to_LDP).
 
-## Prérequis
+## Requirements
 
 - An OVHcloud Account
 - a Logs Data Platform (LDP) account within this OVHcloud Account with at least one active stream configured. [This guide](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start) will walk you through all the necessary steps
@@ -32,20 +32,20 @@ To discover Logs Data Platform before continuing this guide, please refer to [th
 
 **OVH Account policy logs**: Log entries for OVH services access acceptance or denied access due to of a security policy evaluation.
 
-
 ## Instruction
 
 ### OVHcloud Account logs type
 
 OVHcloud account propose 3 level of logs
--	**Audit Logs**: provide a security-relevant, chronological set of records documenting the sequence of actions in your OVHCLOUD Account. (ie. logins, password change, …)
--	**Activity Logs**: provide all of records of actions in your OVHCLOUD Account. (ie. API calls and actions done on the control panel
--	**Access policy logs**: provide all of records of access evaluation in your OVHCLOUD Account. (ie. Actions authorized or unauthorized through IAM policies)
+
+- **Audit Logs**: provide a security-relevant, chronological set of records documenting the sequence of actions in your OVHCLOUD Account. (ie. logins, password change, …)
+- **Activity Logs**: provide all of records of actions in your OVHCLOUD Account. (ie. API calls and actions done on the control panel)
+- **Access policy logs**: provide all of records of access evaluation in your OVHCLOUD Account. (ie. Actions authorized or unauthorized through IAM policies)
 
 ### Enable logs forwarding
 
-Currently, you can only enable the forwarding of the OVHcloud account logs via API. You will have to define the target Stream of one of your LDP account you aim these logs to be forwarded to. The enablement of the forwarding will create a subscription for this stream id.
-Note that the forwarding enablement is free of charge, but you will be charged for the usage of Logs Data Platform service as per standard price plan. For LDP pricing refer to [Logs Data Platform product page](https://www.ovhcloud.com/en-ie/logs-data-platform/).
+Currently, you can only enable the forwarding of the OVHcloud account logs via API. You will have to target a Stream of one of your LDP account. The logs will be forwarded to that Stream. Enabling the forwarding will create a subscription for this stream id.
+Note that enabling the forwarding is free of charge, but you will be charged for the usage of Logs Data Platform service as per standard price plan. For LDP pricing refer to [Logs Data Platform product page](https://www.ovhcloud.com/en-ie/logs-data-platform/).
 
 To enable forwarding, you can use the following APIs:
 |**Method**|**Log type**|**Path**|**Description**|
@@ -63,7 +63,7 @@ POST /me/logs/audit/forward
 }
 ```
 
-The API require a *streamId*, which is the target data stream of your LDP account where you aim your OVHcloud account logs will be forwarded. You will get in response an *operationid*, so you can use it to retrieve the *subscriptionid* further management purposes using [Logs Data Platform read operation endpoint](https://api.ovh.com/console-preview/?section=%2Fdbaas%2Flogs&branch=v1#get-/dbaas/logs/-serviceName-/operation). 
+The API require a *streamId*, which is the target data stream of your LDP account where you aim your OVHcloud account logs will be forwarded. You will get in response an *operationid*, so you can use it to retrieve the *subscriptionid* further management purposes using [Logs Data Platform read operation endpoint](https://api.ovh.com/console-preview/?section=%2Fdbaas%2Flogs&branch=v1#get-/dbaas/logs/-serviceName-/operation).
 
 You can find your streamId, in Logs Data Platform control panel of your account in Data stream” pan when editing a stream:
 
@@ -82,28 +82,30 @@ Alternatively, you can retrieve your streamed using Logs Data Platform API:
 
 ### Access to OVHCLOUD Account logs
 
-Now that your OVHCLOUD Account logs are ingested and stored in your Logs Data Platform data stream, you can query your logs and build dashboards to have a graphical representation of your logs using web-based UI of Graylog. 
--	Retrieve the admin user (<> Logs Data Platform service) and its password in your Logs Data Platform account home page.
--	Open the Graylog web-ui. You can retrieve the linke in your account home page or using your Access point depending of your account region (for example: Gravelines regions https://gra1.logs.ovh.com/ )
+Now that your OVHCLOUD Account logs are ingested and stored in your Logs Data Platform data stream, you can query your logs and build dashboards to have a graphical representation of your logs using web-based UI of Graylog.
+
+- Retrieve the admin user (<> Logs Data Platform service) and its password in your Logs Data Platform account home page.
+- Open the Graylog web-ui. You can retrieve the linke in your account home page or using your Access point depending of your account region (for example: Gravelines regions <https://gra1.logs.ovh.com/> )
 
 ![Access Graylog](images/access_graylog.png){.thumbnail}
 
--	Login Graylog using your **Logs Data Platform service name** and **Password**
+- Login Graylog using your **Logs Data Platform service name** and **Password**
 
 ![Access Graylog](images/access_graylog_2.png){.thumbnail}
 
--	Search your through your logs across the data stream of your Logs Data Platform account. You can refer to [Graylog writing search queries documentation](https://go2docs.graylog.org/4-x/making_sense_of_your_log_data/writing_search_queries.html?tocpath=Searching%20Your%20Log%20Data%7C_____1) for details on search syntax.
+- Search your through your logs across the data stream of your Logs Data Platform account. You can refer to [Graylog writing search queries documentation](https://go2docs.graylog.org/4-x/making_sense_of_your_log_data/writing_search_queries.html?tocpath=Searching%20Your%20Log%20Data%7C_____1) for details on search syntax.
 
 ![Access Graylog](images/access_graylog_3.png){.thumbnail}
 
 For more details about how to use your logs with Logs Data Platform, including:
--	How to setup alerts, 
--	View the logs in real time through a WebSocket, 
--	Build visualization with OpenSearch Dashboards, 
--	Integrate with OpenSearch API 
--	To connect with Grafana 
 
-Refer to according documentations on `Manage and Operate` > `Observability` > `Logs Data Platform` > `Visualizing, querying and exploiting your logs` section.
+- How to setup alerts,
+- View the logs in real time through a WebSocket,
+- Build visualization with OpenSearch Dashboards,
+- Integrate with OpenSearch API,
+- To connect with Grafana
+
+Refer to according documentations [Logs Data Platform - Visualizing, querying and exploiting your logs](/products/observability-logs-data-platform-visualizing-querying-exploiting).
 
 ### Details of logs generated
 
@@ -131,7 +133,7 @@ client_ip_geolocation|String|Geolocalisation of the user who performed the actio
 |source|String|iam.ovhcloud|
 |type|String|LOGIN_SUCCESS|
 
--	**For password change**
+- **For password change**
 
 ![Audit log](images/Audit_log_password_change.png){.thumbnail}
 
@@ -187,24 +189,30 @@ For every action evaluated by the OVHcloud IAM, an entry is generated with the f
 
 ### Manage subscriptions
 
-At any point, you can retrieve subscriptions attached to your Logs Data Platform data stream and choose to disable the forwarding by cancelling your subscription on your stream so that your Logs Data Platform stream doesn't receive your audit logs anymore. 
+At any point, you can retrieve subscriptions attached to your Logs Data Platform data stream and choose to disable the forwarding by cancelling your subscription on your stream so that your Logs Data Platform stream doesn't receive your audit logs anymore.
 
 Note that this doesn't delete the logs that have been stored prior to the subscription cancellation, as data stored in a logs stream is immutable unless you delete the entire stream.
 
-Currently, you can only manage your subscriptions via Logs Data Platform’s API. 
+Currently, you can only manage your subscriptions via Logs Data Platform’s API.
 
 The three following Logs Data Platform’s API routes respectively allow you to:
+
 - retrieve a list of *subscription IDs* associated with a specific logs stream based on its *streamID*
+
 > [!api]
 >
 > @api {GET} /dbaas/logs/{serviceName}/output/graylog/stream/{streamId}/subscription
 >
+
 - retrieve the information (such as the *resource type*, in this case **account-api**, **account-iam** and **account-audit**, and *resource name* – the name of the OVHcloud account) of the service associated with the subscription based on its *subscriptionId*.
+
 > [!api]
 >
 > @api {GET} /dbaas/logs/{serviceName}/output/graylog/stream/{streamId}/subscription/{subscriptionId}
 >
+
 - delete a subscription based on its *subscriptionId*.
+
 > [!api]
 >
 > @api {DELETE} /dbaas/logs/{serviceName}/output/graylog/stream/{streamId}/subscription/{subscriptionId}
