@@ -172,8 +172,8 @@ Du côté de l'utilisateur, il n'y a pas de tâche spécifique à planifier.
 
 ### Allez-vous fournir des formations et de la documentation pour améliorer les compétences NSX-T ?
 
-[Getting Started with NSX](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx-01-first-steps)
-[VMware on OVHcloud](https://help.ovhcloud.com/csm/en-ie-documentation-hosted-private-cloud-hosted-private-cloud-powered-by-vmware?id=kb_browse_cat&kb_id=62e4cfed55d574502d4c6e78b7421953&kb_category=db34d555f49801102d4ca4d466a7fd4f)
+- [Getting Started with NSX](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx-01-first-steps)
+- [VMware on OVHcloud](https://help.ovhcloud.com/csm/fr-documentation-hosted-private-cloud-hosted-private-cloud-powered-by-vmware?id=kb_browse_cat&kb_id=62e4cfed55d574502d4c6e78b7421953&kb_category=db34d555f49801102d4ca4d466a7fd4f)
 
 <a name="nsxtmigrationpfsense"></a>
 
