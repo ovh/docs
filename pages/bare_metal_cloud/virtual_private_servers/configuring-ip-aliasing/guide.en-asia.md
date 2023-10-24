@@ -45,6 +45,8 @@ Concerning different distribution releases, please note that the proper procedur
 |NETWORK_INTERFACE|The name of the network interface|*eth0*, *ens3*|
 |ID|ID of the IP alias, starting with *0* (depending on the number of additional IPs there are to configure)|*0*, *1*|
 
+For example purposes we'll be using an IP block of 123.123.123.123/32 and eth0 and ens3 as network interfaces. We will also be using `nano` as our editing tool.
+
 ### Debian 10/11
 
 #### Step 1: Disable automatic network configuration
@@ -83,6 +85,8 @@ address ADDITIONAL_IP
 netmask 255.255.255.255
 ```
 
+Configuration example: 
+
 #### Step 3: Restart the interface
 
 Apply the changes with the following command:
@@ -91,7 +95,7 @@ Apply the changes with the following command:
 sudo systemctl restart networking
 ```
 
-### Ubuntu 20.04 & Debian 12
+### Ubuntu (20.04 - 23.04) & Debian 12
 
 The configuration file for your Additional IP addresses is located in `/etc/netplan/`. In this example it is called "50-cloud-init.yaml". Before making changes, verify the actual file name in this folder. Each Additional IP address will need its own line within the file.
 
@@ -123,24 +127,31 @@ Open the network configuration file for editing with the following command:
 sudo nano /etc/netplan/50-cloud-init.yaml
 ```
 
-Do not modify the existing lines in the configuration file. Add your Additional IP address by adding a second configuration block for the public interface according to the example below:
+As Netplan does not support virtual interfaces (for example ens3:0, ens3:1), multiple addresses can be assigned to a single interface.
+
+Please note that with the recent distributions, the IPV6 is automatically configured on your service. Do not modify the existing lines in the configuration file, simply replace ADDITIONAL_IP according to the example below:
 
 ```yaml
 network:
     version: 2
     ethernets:
-        NETWORK_INTERFACE:
-            dhcp4: true
-            match:
-                macaddress: fa:xx:xx:xx:xx:63
-            set-name: NETWORK_INTERFACE            
-        NETWORK_INTERFACE:
-            dhcp4: true
-            match:
-                macaddress: fa:xx:xx:xx:xx:63
-            set-name: NETWORK_INTERFACE
+        NETWORKINTERFACE:
+            accept-ra: false
             addresses:
+            - 2607:xxxx:xxx:xxxx::xxc/56
             - ADDITIONAL_IP/32
+            dhcp4: true
+            match:
+                macaddress: fa:xx:xx:xx:xx:50
+            mtu: 1500
+            nameservers:
+                addresses:
+                - 213.186.33.99
+                search: []
+            routes:
+            -   to: ::/0
+                via: 2607:xxxx:xxx:xxxx::1
+            set-name: ens3
 ```
 
 > [!warning]
@@ -165,6 +176,41 @@ sudo netplan apply
 ```
 
 Repeat this procedure for each Additional IP address.
+
+#### Assign an Additional IP temporarily
+
+It is possible to add an additionaly IP temporarily, however, note that the configuration will be lost when the server is rebooted. This process also allows you to label the IP with an virtual alias interface if you wish to. Simply replace `ADDITIONAL_IP`, `NETWORK_INTERFACE` and `NETWORK_INTERFACE:ID` with your parameters.
+
+```bash
+sudo ip address add ADDITIONAL_IP/32 dev NETWORK_INTERFACE label NETWORK_INTERFACE:ID
+```
+
+For example, if we want to temporarily assign IP block `123.123.123.123/32` to our server with network interface **ens3**:
+
+```bash
+sudo ip address add 123.123.123.123/32 dev ens3 label ens3:0
+```
+
+If we run `ip a`, we can see the IP is configured on the main interface with virtual alias **ens3:0**:
+
+```bash
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host
+       valid_lft forever preferred_lft forever
+2: ens3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    link/ether fa:16:3e:a7:13:7d brd ff:ff:ff:ff:ff:ff
+    inet 158.xx.xx.xx/32 scope global dynamic ens3
+       valid_lft 86179sec preferred_lft 86179sec
+    inet 123.123.123.123/32 scope global ens3:0
+       valid_lft forever preferred_lft forever
+    inet6 2607:xxxx:xxx:xxxx::82c/56 scope global
+       valid_lft forever preferred_lft forever
+    inet6 fxxx::fxxxx:3xx:fxxx:xxxx/64 scope link
+       valid_lft forever preferred_lft forever
+```
 
 ### Windows Server 2016
 
@@ -218,21 +264,32 @@ Open the command prompt (cmd) and enter `ipconfig`. The configuration should now
 
 ### cPanel (CentOS 7) / Red Hat derivatives
 
+The main configuration file is located in `/etc/sysconfig/network-scripts/`. In this example it is called "ifcfg-eth0". Before making changes, verify the actual file name in this folder. 
+As the configuration of additional IPs is not directly made in the main configuration file, we have to create an "virtual interfaces or ethernet alias". 
+
+To achieve this, we simply add a consecutive number to the interface name, starting with a value of 0 for the first alias. In our case, our first alias for eth0 will be eth0:0.
+
 #### Step 1: Edit the network configuration file
 
-You can verify your network interface name with this command:
+First, verify your network interface name with this command:
 
 ```bash
 ip a
 ```
 
-Open the network configuration file for editing:
+Once you have identified your network interface, create a network configuration file for editing. Replace `NETWORK_INTERFACE` with your interface name and `ID` with the first value:
 
 ```bash
 sudo nano /etc/sysconfig/network-scripts/ifcfg-NETWORK_INTERFACE:ID
 ```
 
-Then add these lines:
+For example, with a network interface named "eth0", we will create the configuration file below:
+
+```bash
+sudo nano /etc/sysconfig/network-scripts/ifcfg-eth0:0
+```
+
+Then add these lines, replacing `NETWORK_INTERFACE:ID` and `ADDITIONAL_IP` with your own values.
 
 ```bash
 DEVICE=NETWORK_INTERFACE:ID
@@ -243,12 +300,23 @@ BROADCAST=ADDITIONAL_IP
 ONBOOT=yes
 ```
 
+Example:
+
+```bash
+DEVICE=eth0:0
+BOOTPROTO=static
+IPADDR=123.123.123.123
+NETMASK=255.255.255.255
+BROADCAST=123.123.123.123
+ONBOOT=yes
+```
+
 #### Step 2: Restart the interface
 
 Apply the changes with the following command:
 
 ```bash
-sudo systemctl restart networking
+sudo systemctl restart network.service
 ```
 
 ### Plesk
