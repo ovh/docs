@@ -97,13 +97,13 @@ Now that your OVHCLOUD Account logs are ingested and stored in your Logs Data Pl
 ![Access Graylog](images/access_graylog_3.png){.thumbnail}
 
 For more details about how to use your logs with Logs Data Platform, including:
--	how to setup alerts, 
--	view the logs in real time through a WebSocket, 
--	build visualization with OpenSearch Dashboards, 
--	integrate with OpenSearch API 
--	to connect with Grafana 
+-	How to setup alerts, 
+-	View the logs in real time through a WebSocket, 
+-	Build visualization with OpenSearch Dashboards, 
+-	Integrate with OpenSearch API 
+-	To connect with Grafana 
 
-Refer to following documentation [Logs Data Platform - Visualizing, querying and exploiting your logs]().
+Refer to according documentations on `Manage and Operate` > `Observability` > `Logs Data Platform` > `Visualizing, querying and exploiting your logs` section.
 
 ### Details of logs generated
 
