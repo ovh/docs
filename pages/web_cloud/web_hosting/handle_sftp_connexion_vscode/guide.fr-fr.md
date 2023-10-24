@@ -149,7 +149,7 @@ Visual Studio Code vous demande de sélectionner le dossier que vous souhaitez t
 
 ![hosting](images/download_project.png){.thumbnail}
 
-S'il est demandé, saisissez le mot de passe assossié à l’utilisateur renseigné dans le fichier « sftp.json » , puis cliquez sur `valider`. Après le téléchargement, vous visualisez l’ensemble des dossiers et fichiers de votre projet dans l’explorateur de fichiers situé dans la colonne à gauche de l’interface Visual Studio Code.
+S'il est demandé, saisissez le mot de passe associé à l’utilisateur renseigné dans le fichier « sftp.json » , puis cliquez sur `valider`. Après le téléchargement, vous visualisez l’ensemble des dossiers et fichiers de votre projet dans l’explorateur de fichiers situé dans la colonne à gauche de l’interface Visual Studio Code.
 
 ![hosting](images/explorer.png){.thumbnail}
 
@@ -166,13 +166,13 @@ Si vous souhaitez que vos modifications locales soient synchronisées chaque foi
 
 Pour désactiver cette fonction, tout en la gardant dans le fichier « sftp.json », remplacez la valeur `true` par `false`.
 
-Jusqu'à présent, nous avons seulement mentionné les commandes : `SFTP: Config` et `SFTP: Download Project`. Il existe d'autres commandes que vous pouvez observer par autocomplétion en tappant `SFTP:` dans l'éditeur de commande.
+Jusqu'à présent, nous avons seulement mentionné les commandes : `SFTP: Config` et `SFTP: Download Project`. Il existe d'autres commandes que vous pouvez observer par autocomplétion en saisissant `SFTP:` dans l'éditeur de commande.
 
 ![hosting](images/list_commands.png){.thumbnail}
 
 Retrouvez la liste des commandes [ici](https://github.com/Natizyskunk/vscode-sftp/wiki/Commands){.external}.
 
-À présent, vous êtes en mesure d'accéder et de modifier le contenu de votre hébérgement web via Visual Studio Code.
+À présent, vous êtes en mesure d'accéder et de modifier le contenu de votre hébergement web via Visual Studio Code.
 Ce guide a pour but de présenter d'une manière efficace la gestion d'un projet depuis Visual Studio Code. Il convient pour une première expérience. Néanmoins, si vous modifiez plusieurs fichiers et que ces derniers sont synchronisés sur votre hébergement web, il vous sera impossible de voir l'historique de vos modifications pour éventuellement revenir dessus ou rattraper une erreur.
 
 ## Aller plus loin
@@ -183,7 +183,7 @@ Ce guide a pour but de présenter d'une manière efficace la gestion d'un projet
 
 [Utiliser l'accès SSH de son hébergement web](/pages/web_cloud/web_hosting/ssh_on_webhosting). N'oubliez pas que pour utiliser le SSH, vous devez disposer d'une [offre d'hébergement web Pro ou Performance](https://www.ovhcloud.com/fr/web-hosting/).
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
+Pour des prestations spécialisées (référencement, développement, etc.), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
 
