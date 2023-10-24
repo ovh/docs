@@ -1045,6 +1045,7 @@
             + [Tutorial - Using FileZilla with your OVHcloud hosting](web_cloud/web_hosting/ftp_filezilla_user_guide)
             + [Logging in to your Web Hosting plan’s storage space](web_cloud/web_hosting/ftp_connection)
             + [Changing a FTP user password](web_cloud/web_hosting/ftp_change_password)
+            + [Managing your web hosting with Visual Studio Code via SFTP](web_cloud/web_hosting/handle_sftp_connexion_vscode)
             + [Troubleshooting recurring errors when using FTP software](web_cloud/web_hosting/ftp_recurring_ftp_problems)
             + [Using Cyberduck (on Mac)](web_cloud/web_hosting/ftp_cyberduck_user_guide_on_mac)
             + [Restoring your Web Hosting plan’s storage space](web_cloud/web_hosting/ftp_save_and_backup)
