@@ -15,7 +15,7 @@ L'objectif de ce guide est de présenter les différentes méthodes disponibles 
 - Un [compte client OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-creation).
 - Savoir configurer des [politiques d'accès via l'espace client](/pages/account_and_service_management/account_information/iam-policy-ui).
 - Savoir configurer des [politiques d'accès via API](/pages/account_and_service_management/account_information/iam-policies-api).
-- Savoir [envoyer les logs de politiques IAM vers LDP]()
+- Savoir [envoyer les logs de politiques IAM vers LDP](/pages/manage_and_operate/iam/iam-logs-forwarding)
 
 ## En pratique
 
@@ -42,7 +42,7 @@ Pour cela aller dans l'onglet `Network`{.action} et sélectionner la requète re
 
 ### Dans les logs LDP
 
-Si la [transmission des logs du compte OVHcloud]() vers LDP est activée, il est possible de trouver l'information dans les logs des politiques d'accès.
+Si la [transmission des logs du compte OVHcloud](/pages/manage_and_operate/iam/iam-logs-forwarding) vers LDP est activée, il est possible de trouver l'information dans les logs des politiques d'accès.
 
 Dans l'interface de Graylog, faire une recherche sur le login de l'utilisateur concerné et les logs contenant des `unauthorized_actions_array` avec la requete `identities_array:*My_user* AND unauthorized_actions_array:*`
 
