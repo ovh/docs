@@ -1,23 +1,23 @@
 ---
-title: AI Deploy - Tutorial - Create an application to play Rock / Paper / Scissors with YoloV8
+title: AI Deploy - Tutorial - Create an application to play rock paper scissors with YoloV8
 excerpt: How to build an application based on the computer vision with YoloV8
 updated: 2023-10-19
 ---
 
 ## Objective
 
-The purpose of this tutorial is to explain how to deploy an application to play to **Rock / Paper / Scissors game** using YOLOv8 model.
+The purpose of this tutorial is to explain how to deploy an application to play the game "rock paper scissors" using the YOLOv8 model.
 
 In order to do this, you will use [Streamlit](https://streamlit.io/), a Python framework that turns scripts into a shareable web application. You will also learn how to build and use a custom Docker image for a Streamlit application.
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
-- An AI Deploy project created inside a Public Cloud project
-- A [user for AI Deploy](/pages/public_cloud/ai_machine_learning/gi_01_manage_users)
-- [Docker](https://www.docker.com/get-started) installed on your local computer
-- Some knowledge about building image and [Dockerfile](https://docs.docker.com/engine/reference/builder/)
-- Your weights obtained from training YOLOv8 model on the [Rock / Paper / Dataset](https://universe.roboflow.com/roboflow-58fyf/rock-paper-scissors-sxsw), you can use the [_rock / paper / scissors_ notebook tutorial](/pages/public_cloud/ai_machine_learning/notebook_tuto_15_rock-paper-scissors/) to generate these weights
+- You have access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
+- You have created an AI Deploy project inside a Public Cloud project.
+- You have created a [user for AI Deploy](/pages/public_cloud/ai_machine_learning/gi_01_manage_users).
+- You have [Docker](https://www.docker.com/get-started) installed on your machine.
+- You have knowledge about building images with [Dockerfile](https://docs.docker.com/engine/reference/builder/).
+- You have weights obtained from training the YOLOv8 model on the [Rock Paper Scissors Dataset](https://universe.roboflow.com/roboflow-58fyf/rock-paper-scissors-sxsw). You can use the tutorial [Train YOLOv8 to play rock paper scissors](/pages/public_cloud/ai_machine_learning/notebook_tuto_15_rock-paper-scissors/) to generate these weights.
 
 ## Instructions
 
