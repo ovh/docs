@@ -48,6 +48,12 @@ Una volta completato il processo, il nuovo progetto Public Cloud sarà disponibi
 
 ## Per saperne di più
 
+[Creare e connettersi a un’istanza Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps)
+[Modificare i contatti di un progetto](/pages/public_cloud/compute/change_project_contacts)
+[Delega progetti](/pages/public_cloud/compute/delegate_projects)
+[Eliminare un progetto Public Cloud](/pages/public_cloud/compute/delete_a_project)
+[Sistema di fatturazione dei servizi Cloud](/pages/public_cloud/compute/analyze_billing)
+
 Se avete bisogno di formazione o di assistenza tecnica per implementare le nostre soluzioni, contattate il vostro rappresentante o cliccate su [questo link](https://www.ovhcloud.com/it/professional-services/) per ottenere un preventivo e richiedere un'analisi personalizzata del vostro progetto da parte dei nostri esperti del team Professional Services.
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
