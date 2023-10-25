@@ -16,7 +16,7 @@ L'enregistrement **D**omain-based **M**essage **A**uthentication, **R**eporting,
 > 
 > Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce tutoriel.
 >
-> De plus, la mise en place d'un enregistrement **DMARC** quelque soit l'[offre e-mail OVHcloud](https://www.ovhcloud.com/fr/emails/) est indisponible actuellement. Ce guide concerne **uniquement** les clients d'un nom de domaine chez OVHcloud associé à une **solution e-mail externe**.
+> De plus, la mise en place d'un enregistrement **DMARC**, quelle que soit l'[offre e-mail OVHcloud](https://www.ovhcloud.com/fr-ca/emails/), est indisponible actuellement. Ce guide concerne **uniquement** les clients d'un nom de domaine chez OVHcloud associé à une **solution e-mail externe**.
 >
 
 ## Prérequis
