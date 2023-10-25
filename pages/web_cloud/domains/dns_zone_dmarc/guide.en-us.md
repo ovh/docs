@@ -1,7 +1,7 @@
 ---
 title: Configure a DMARC record on your domain name
 excerpt: Find out how DMARC works, and how to set it up for your email service
-updated: 2023-08-07
+updated: 2023-10-25
 ---
 
 ## Objective
@@ -9,6 +9,15 @@ updated: 2023-08-07
 The **D**omain-based **M**essage **A**uthentication, **R**eporting, and **C**ompliance (DMARC) record is an email security mechanism. It is based on the results of the [SPF](/pages/web_cloud/domains/dns_zone_spf) and [DKIM](/pages/web_cloud/domains/dns_zone_dkim) checks.
 
 **Find out how DMARC works, and how to set it up for your email service.**
+
+> [!warning]
+>
+> OVHcloud offers services that you are responsible for configuring, managing and managing. It is therefore up to you to ensure that it works properly.
+> 
+> We have provided you with this guide in order to help you with common tasks. However, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en/directory/) if you experience any difficulties. We will not be able to assist you. More information in the ["Go further"](#go-further) section of this tutorial.
+>
+> In addition, setting up a **DMARC** registration, regardless of the [OVHcloud email solution](https://www.ovhcloud.com/en/emails/), is currently unavailable. This guide is **only** for customers who have an active DNS zone at OVHcloud for their domain name associated with an **external email solution**.
+>
 
 ## Requirements
 
@@ -151,7 +160,7 @@ The result is:
 
 - **ri=86400**: Sets the requested interval between aggregated reports, in seconds. In this case, an aggregated report must be generated at least once every 86400 seconds (i.e. once per day).
 
-## Go further
+## Go further <a name="go-further"></a>
 
 For specialized services (SEO, development, etc.), contact OVHcloud [partners](https://partner.ovhcloud.com/en/directory/).
 
