@@ -1,7 +1,7 @@
 ---
 title: Salvare ed esportare un database sul tuo server di database
 excerpt: Come salvare ed esportare il tuo database
-updated: 2023-02-15
+updated: 2023-10-26
 ---
 
 > [!primary]
@@ -69,7 +69,7 @@ Una volta connesso a phpMyAdmin, clicca sul nome del database da esportare e poi
 
 Avete due possibili modalità di esportazione. Se non hai necessità specifiche, ti consigliamo di utilizzare la modalità **rapida** in formato **SQL**.
 
-![Web Cloud Databases](images/web-cloud-databases-export01.png){.thumbnail}
+![Web Cloud Databases](images/pma-export-backup-web-cloud-db.png){.thumbnail}
 
 ##### 1\.2 Esporta il tuo database MySQL o MariaDB da riga di comando
 
