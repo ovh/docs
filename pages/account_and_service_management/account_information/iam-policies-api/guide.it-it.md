@@ -1,13 +1,8 @@
 ---
 title: "Come utilizzare le policy di IAM utilizzando l’API OVHcloud (EN)"
 excerpt: "Find out how to give specific access rights to users from an OVHcloud account"
-updated: 2023-06-23
+updated: 2023-10-16
 ---
-
-> [!warning]
->
-> This feature is currently in beta. Find more information about it on <https://labs.ovhcloud.com/en/>
->  
 
 ## Objective
 
@@ -508,6 +503,60 @@ It is strongly recommended to specify the **resourceType** as a query-string par
 - **description**: The action description
 - **resourceType**: The resource type targeted by this action
 - **categories**: The categories of this action (CREATE, READ, EDIT, OPERATE, DELETE)
+
+#### Permission group
+
+OVHcloud provides permission groups that group together all of the actions required for specific use cases.
+
+Permission groups are accessible via the following API:
+
+|**Method**|**Path**|**Description**|
+| :-: | :-: | :-: |
+|GET|/iam/permissionsGroup|Retrieve all permission groups|
+
+```json
+{
+    "id": "00000000-0000-0000-0001-000000000001",
+    "urn": "urn:v1:eu:permissionsGroup:ovh:globalAdmin",
+    "name": "globalAdmin",
+    "owner": "ovh",
+    "description": "Give global admin access across all OVHcloud products",
+    "permissions": {
+        "allow": [
+        {
+            "action": "*"
+        }
+        ]
+    },
+    "createdAt": "2023-03-14T09:10:57.40418Z",
+    "updatedAt": null
+},
+```
+
+These permission groups can then be used in addition to or in place of unitary actions in access policies:
+
+```json
+{
+  "description": "",
+  "identities": [...],
+  "name": "",
+  "permissions": {
+    "allow": [
+      {
+        "action": "..."
+      },
+    ]
+  },
+  "permissionsGroups": [
+      {
+        "urn": "urn:v1:eu:permissionsGroup:ovh:globalAdmin"
+      }
+  ],
+  "resources": [...]
+}
+```
+
+A full description of the permission groups can be found in our [dedicated documentation](/pages/account_and_service_management/account_information/iam-permissionsGroups).
 
 ### Resource types
 

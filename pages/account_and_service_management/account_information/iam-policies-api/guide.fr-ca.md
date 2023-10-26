@@ -1,13 +1,8 @@
 ---
 title: "Comment utiliser les politiques IAM via l’API OVHcloud"
 excerpt: "Découvrez comment donner des droits d'accès spécifiques aux utilisateurs d'un compte OVHcloud"
-updated: 2023-06-23
+updated: 2023-10-16
 ---
-
-> [!warning]
->
-> Cette fonctionnalité est actuellement en version bêta. Retrouvez plus d'informations sur <https://labs.ovhcloud.com/en/>.
->
 
 ## Objectif
 
@@ -48,7 +43,7 @@ Les ressources, les groupes de ressources et les actions nécessaires à la cré
 
 #### Définition de l'API
 
-<https://api.ovh.com/console-preview/?section=%2Fiam&branch=v2#get-/iam/policy>
+<https://ca.api.ovh.com/console-preview/?section=%2Fiam&branch=v2#get-/iam/policy>
 
 |**Méthode**|**Chemin**|**Description**|
 | :-: | :-: | :-: |
@@ -234,7 +229,7 @@ Cette section décrit comment récupérer ou créer un utilisateur pour la polit
 
 #### Définition de l'API
 
-<https://api.ovh.com/console-preview/?section=%2Fme&branch=v1#overview>
+<https://ca.api.ovh.com/console-preview/?section=%2Fme&branch=v1#overview>
 
 |**Méthode**|**Chemin**|**Description**|
 | :-: | :-: | :-: |
@@ -321,7 +316,7 @@ Cette section décrit comment récupérer les informations sur les ressources po
 
 #### Définition de l'API
 
-<https://api.ovh.com/console-preview/?section=%2Fiam&branch=v2#get-/iam/resource>
+<https://ca.api.ovh.com/console-preview/?section=%2Fiam&branch=v2#get-/iam/resource>
 
 |**Méthode**|**Chemin**|**Description**|
 | :-: | :-: | :-: |
@@ -380,7 +375,7 @@ Pour faciliter la gestion des politiques pour un grand nombre de ressources, il 
 
 #### Définition de l'API
 
-<https://api.ovh.com/console-preview/?section=%2Fiam&branch=v2#get-/iam/resourceGroup>
+<https://ca.api.ovh.com/console-preview/?section=%2Fiam&branch=v2#get-/iam/resourceGroup>
 
 |**Méthode**|**Chemin**|**Description**|
 | :-: | :-: | :-: |
@@ -473,7 +468,7 @@ Ces actions sont spécifiques à chaque produit, comme le redémarrage d'un serv
 
 #### Définition de l'API
 
-<https://api.ovh.com/console-preview/?section=%2Fiam&branch=v2#get-/iam/reference/action>
+<https://ca.api.ovh.com/console-preview/?section=%2Fiam&branch=v2#get-/iam/reference/action>
 
 |**Méthode**|**Chemin**|**Description**|
 | :-: | :-: | :-: |
@@ -508,6 +503,60 @@ Il est fortement recommandé de spécifier le **resourceType** comme paramètre 
 - **description**: Description de l'action
 - **resourceType**: Le type de ressource ciblé par l'action
 - **categories**: Les catégories de cette action (CREATE, READ, EDIT, OPERATE, DELETE)
+
+#### Groupe de permissions
+
+OVHcloud met à disposition des groupes de permissions regroupant toutes les actions nécessaires pour des cas d'usage précis.
+
+Les groupes de permissions sont accessible via l'API suivante :
+
+|**Méthode**|**Chemin**|**Description**|
+| :-: | :-: | :-: |
+|GET|/iam/permissionsGroup|Récupérer tous les groupes de permissions|
+
+```json
+{
+    "id": "00000000-0000-0000-0001-000000000001",
+    "urn": "urn:v1:eu:permissionsGroup:ovh:globalAdmin",
+    "name": "globalAdmin",
+    "owner": "ovh",
+    "description": "Give global admin access across all OVHcloud products",
+    "permissions": {
+        "allow": [
+        {
+            "action": "*"
+        }
+        ]
+    },
+    "createdAt": "2023-03-14T09:10:57.40418Z",
+    "updatedAt": null
+},
+```
+
+Ces groupes de permissions peuvent ensuite être utilisés en complément ou à la place des actions unitaires dans les politiques d'accès :
+
+```json
+{
+  "description": "",
+  "identities": [...],
+  "name": "",
+  "permissions": {
+    "allow": [
+      {
+        "action": "..."
+      },
+    ]
+  },
+  "permissionsGroups": [
+      {
+        "urn": "urn:v1:eu:permissionsGroup:ovh:globalAdmin"
+      }
+  ],
+  "resources": [...]
+}
+```
+
+La description complète des groupes de permissions est disponible dans la [documentation dédiée](/pages/account_and_service_management/account_information/iam-permissionsGroups)
 
 ### Types de ressources
 

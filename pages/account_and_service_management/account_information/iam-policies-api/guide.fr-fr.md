@@ -4,11 +4,6 @@ excerpt: "Découvrez comment donner des droits d'accès spécifiques aux utilisa
 updated: 2023-10-16
 ---
 
-> [!warning]
->
-> Cette fonctionnalité est actuellement en version bêta. Retrouvez plus d'informations sur <https://labs.ovhcloud.com/en/>.
->
-
 ## Objectif
 
 Ce guide explique comment fournir des droits d'accès spécifiques aux utilisateurs d'un compte OVHcloud.
@@ -562,8 +557,6 @@ Ces groupes de permissions peuvent ensuite être utilisés en complément ou à 
 ```
 
 La description complète des groupes de permissions est disponible dans la [documentation dédiée](/pages/account_and_service_management/account_information/iam-permissionsGroups)
-
-#### Définition de l'API
 
 ### Types de ressources
 
