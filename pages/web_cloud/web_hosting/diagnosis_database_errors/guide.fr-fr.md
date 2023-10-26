@@ -238,7 +238,7 @@ Pour résoudre cette anomalie, vous pouvez :
 
 Ce message d'erreur peut apparaître lors de la connexion à votre base de données par [PhpMyAdmin](/pages/web_cloud/web_hosting/sql_create_database#acceder-a-linterface-phpmyadmin). Elle indique que les identifiants renseignés sont erronés.
 
-![access_denied_for_user](images/access_denied_for_user.png){.thumbnail}
+![access_denied_for_user](images/pma-error-hy000-1045.png){.thumbnail}
 
 Dans cette situation, [vérifiez les identifiants renseignés](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server#en-pratique) et modifiez si besoin le [mot de passe de votre base de données](/pages/web_cloud/web_hosting/sql_change_password).
 
@@ -269,7 +269,7 @@ Dans cette situation, vous devrez [optimiser vos bases de données](/pages/web_c
 
 Ce message d'erreur apparaît lors de la [connexion à PhpMyAdmin](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server#en-pratique) lorsque le nom de serveur renseigné est incorrect.
 
-![name_or_service_not_known](images/name_or_service_not_known.png){.thumbnail}
+![name_or_service_not_known](images/pma-error-hy000-1045.png){.thumbnail}
 
 Vérifiez le nom du serveur à inscrire dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 
