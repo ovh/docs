@@ -4372,8 +4372,6 @@ Ce groupe de permissions reprend les droits anciennement porté par le rôle nic
 "createdAt": "2023-03-14T09:10:57.40418Z",
 "updatedAt": "2023-10-16T12:23:52.788274Z"
 },
-</details>
-
 ```
 </details>
 
