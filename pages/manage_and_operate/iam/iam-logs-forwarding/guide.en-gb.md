@@ -1,5 +1,5 @@
 ---
-title: OVHcloud Account logs Forwarding to LDP
+title: Generating OVHcloud Account logs with Logs Data Platform
 excerpt: "Forwarding OVHcloud Account logs to Logs Data Platform"
 updated: 2023-10-23
 ---
@@ -26,25 +26,19 @@ To discover Logs Data Platform before continuing this guide, please refer to [th
 
 **Logs forwarding Subscription**: when enabling the logs forwarding for a given OVHcloud service to a given LDP data stream, a subscription is created and attached to the data stream for further management by the customer.
 
-**OVH Account audit logs**: Log entries for sensible activities happening within your OVH Account customer main need to collect and use for compliance purposes and other business policy enforcement.
-
-**OVH Account activity logs**: Log entries for all API calls done through OVHCloud API including those triggered when using OVHcloud manager.
-
-**OVH Account policy logs**: Log entries for OVH services access acceptance or denied access due to of a security policy evaluation.
-
 ## Instruction
 
 ### OVHcloud Account logs type
 
-OVHcloud account propose 3 level of logs
+OVHcloud account propose 3 levels of logs
 
 - **Audit Logs**: provide a security-relevant, chronological set of records documenting the sequence of actions in your OVHcloud Account. (ie. logins, password change, …)
-- **Activity Logs**: provide all of records of actions in your OVHcloud Account. (ie. API calls and actions done on the control panel)
-- **Access policy logs**: provide all of records of access evaluation in your OVHcloud Account. (ie. Actions authorized or unauthorized through IAM policies)
+- **Activity Logs**: provide all of records of actions in your OVHcloud Account from API calls and actions done on the control panel
+- **Access policy logs**: provide all of records of access evaluation in your OVHcloud Account, including actions from third party integration. (ie. Actions authorized or unauthorized through IAM policies)
 
 ### Enable logs forwarding
 
-Currently, you can only enable the forwarding of the OVHcloud account logs via API. You will have to target a Stream of one of your LDP account. The logs will be forwarded to that Stream. Enabling the forwarding will create a subscription for this stream id.
+You can enable the forwarding of the OVHcloud account logs via API. You will have to target a Stream of one of your LDP (Logs Data Platform account). The logs will be forwarded to that Stream. Enabling the forwarding will create a subscription for this stream id.
 Note that enabling the forwarding is free of charge, but you will be charged for the usage of Logs Data Platform service as per standard price plan. For LDP pricing refer to [Logs Data Platform product page](https://www.ovhcloud.com/en-ie/logs-data-platform/).
 
 To enable forwarding, you can use the following APIs:
@@ -54,7 +48,7 @@ POST|Audit logs|/me/logs/audit/forward|Forward account audit logs|
 POST|Activity logs|/me/api/logs/forward|Forward API & Customer panel account logs|
 POST|Access policy logs|/iam/logs/forward|Forward account IAM logs to a dedicated logs stream|
 
-For example for Audit logs :
+For instance, for Audit logs :
 
 ```json
 POST /me/logs/audit/forward
