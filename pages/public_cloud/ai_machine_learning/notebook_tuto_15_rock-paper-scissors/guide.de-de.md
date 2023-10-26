@@ -1,6 +1,6 @@
 ---
-title: AI Notebooks - Tutorial - Train YOLOv8 to play to "rock paper scissors"
-excerpt:  How to train the YOLOv8 model on a custom dataset with AI Notebooks
+title: AI Notebooks - Tutorial - Train YOLOv8 to play rock paper scissors (EN)
+excerpt: How to train the YOLOv8 model on a custom dataset with AI Notebooks
 updated: 2023-10-19
 ---
 
@@ -14,8 +14,8 @@ It is based on the YOLOv8 open source [repository](https://github.com/ultralytic
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
-- An AI Notebooks project created inside a [Public Cloud project](https://www.ovhcloud.com/en-ie/public-cloud/) in your OVHcloud account
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de)
+- An AI Notebooks project created inside a [Public Cloud project](https://www.ovhcloud.com/de/public-cloud/) in your OVHcloud account
 - A user for AI Notebooks
 - A [Public Roboflow](https://public.roboflow.com/) account to access and download the [Rock Paper Scissors Dataset](https://universe.roboflow.com/roboflow-58fyf/rock-paper-scissors-sxsw)
 
@@ -30,7 +30,7 @@ This tutorial is based on the [Rock Paper Scissors SXSW Computer Vision Project 
 
 ### Create Object Storage containers
 
-If you want to create it from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), go to the Object Storage section and create a new object container by clicking `Object Storage` > `Create an object container`.
+If you want to create it from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de), go to the Object Storage section and create a new object container by clicking `Object Storage` > `Create an object container`.
 
 ![image](images/new-object-container.png){.thumbnail}
 
@@ -59,10 +59,10 @@ ovhai bucket create <region> rock-paper-scissors-model
 >
 
 ### Launch and access Jupyter notebook with Miniconda framework
-  
+
 You need to attach a volume if your data is in your OVHcloud Object Storage and you want to use it during your experiment, or if you need to save the results of your work in the Object Storage. For more information on data, volumes and permissions, see [our guide on data](/pages/public_cloud/ai_machine_learning/cli_17_how_to_cli_data_notebooks).
 
-If you want to launch it from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), just follow this [guide](/pages/public_cloud/ai_machine_learning/notebook_guide_introduction_definition).
+If you want to launch it from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de), just follow this [guide](/pages/public_cloud/ai_machine_learning/notebook_guide_introduction_definition).
 
 1. `Name your notebook`
 2. `Choose Jupyterlab editor`
@@ -105,7 +105,7 @@ A preview of this notebook can be found on GitHub [here](https://github.com/ovh/
 - Do you want to train your YOLOv8 model? [Here it is](/pages/public_cloud/ai_machine_learning/training_tuto_09_train_rock-paper-scissors/).
 - Do you want to use your YOLOv8 model in an app? [Here it is](/pages/public_cloud/ai_machine_learning/deploy_tuto_15_rock_paper_scissors/).
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-ie/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/de/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 ## Feedback
 

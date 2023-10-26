@@ -1,6 +1,6 @@
 ---
-title: AI Deploy - Tutorial - Create an application to play Rock / Paper / Scissors with YoloV8
-excerpt: How to build an application based on the computer vision with YoloV8
+title: AI Deploy - Tutoriel - Créer une application pour jouer à pierre papier ciseaux avec YOLOv8 (EN)
+excerpt: Comment créer une application basée sur la vision par ordinateur et YOLOv8
 updated: 2023-10-19
 ---
 
@@ -12,7 +12,7 @@ In order to do this, you will use [Streamlit](https://streamlit.io/), a Python f
 
 ## Requirements
 
-- You have access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca).
+- You have access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
 - You have created an AI Deploy project inside a Public Cloud project.
 - You have created a [user for AI Deploy](/pages/public_cloud/ai_machine_learning/gi_01_manage_users).
 - You have [Docker](https://www.docker.com/get-started) installed on your machine.
@@ -43,12 +43,12 @@ import streamlit as st
 
 # Save uploaded photo
 def save_photo(photo):
-    
+
     photoAbsolutePath = '/workspace/' + photo.name
-    
+
     with open(photoAbsolutePath,'wb') as f:
          f.write(photo.getbuffer())
-    
+
     return photoAbsolutePath
 
 # main
@@ -61,7 +61,7 @@ if __name__ == '__main__':
     # 📸 Camera input
     img_file_buffer = st.camera_input("Take your picture in real time:")
     if img_file_buffer is not None:
-      photoPath = save_photo(img_file_buffer) 
+      photoPath = save_photo(img_file_buffer)
 
       # 🔎 Prediction
       results = model.predict(photoPath, verbose=True, save=True, conf=0.5)
@@ -77,9 +77,9 @@ if __name__ == '__main__':
 The `requirements.txt` file will allow us to write all the modules needed to make our application work. This file will be useful when writing the `Dockerfile`.
 
 ```console
-ultralytics==8.0.194 
-opencv-python-headless==4.8.1.78 
-streamlit==1.27.2 
+ultralytics==8.0.194
+opencv-python-headless==4.8.1.78
+streamlit==1.27.2
 ```
 
 ### Write the Dockerfile for the application
@@ -166,7 +166,7 @@ ovhai app run \
 
 ## Go further
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-ca/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/fr-ca/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 ## Feedback
 

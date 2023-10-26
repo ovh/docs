@@ -6,8 +6,8 @@ updated: 2023-10-19
 
 ## Objective
 
+The purpose of this tutorial is to show how to train YOLOv8 to play the game "rock paper scissors".
 
-The purpose of this tutorial is to show how it is possible to train YOLOv8 to play to the game "rock paper scissors"!
 YOLOv8 is an object detection algorithm. Although closely related to image classification, object detection performs image classification on a more precise scale. Object detection locates and categorizes features in images.
 
 It is based on the YOLOv8 open source [repository](https://github.com/ultralytics/ultralytics).
@@ -59,7 +59,7 @@ ovhai bucket create <region> rock-paper-scissors-model
 >
 
 ### Launch and access Jupyter notebook with Miniconda framework
-
+  
 You need to attach a volume if your data is in your OVHcloud Object Storage and you want to use it during your experiment, or if you need to save the results of your work in the Object Storage. For more information on data, volumes and permissions, see [our guide on data](/pages/public_cloud/ai_machine_learning/cli_17_how_to_cli_data_notebooks).
 
 If you want to launch it from the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au), just follow this [guide](/pages/public_cloud/ai_machine_learning/notebook_guide_introduction_definition).
@@ -71,7 +71,7 @@ If you want to launch it from the [OVHcloud Control Panel](https://ca.ovh.com/au
 5. `Select the datacenter location`
 6. `Choose the number of GPUs or CPUs you need`
 7. `Attach your two containers`
-8. `Attach public ssh keys only if you want to`
+8. `Attach public SSH keys only if you want to`
 9. `Check that everything is ok and launch your notebook`
 
 Once the repository has been cloned, find the YOLOv8 notebook by following this path: `ai-training-examples` > `notebooks` > `computer-vision` > `object-detection` > `miniconda` > `yolov8` > `notebook_object_detection_yolov8_rock-paper-scissors.ipynb`.
@@ -93,15 +93,15 @@ ovhai notebook run conda jupyterlab \
 
 You can then reach your notebook’s URL once it is running.
 
-### Experimenting YOLOv8 notebook
+### Experimenting with the YOLOv8 notebook
 
-You are now able to train the YOLOv8 model to play rock / paper / scissors game!
+You are now able to train the YOLOv8 model to play the rock paper scissors game.
 
 A preview of this notebook can be found on GitHub [here](https://github.com/ovh/ai-training-examples/blob/main/notebooks/computer-vision/object-detection/miniconda/yolov8/notebook_object_detection_yolov8_rock-paper-scissors.ipynb).
 
 ### Go further
 
-- Do you want to observe the evolution of your metrics during the training of your model? Click [here](/pages/public_cloud/ai_machine_learning/notebook_tuto_03_weight_biases)!
+- Do you want to observe the evolution of your metrics during the training of your model? Click [here](/pages/public_cloud/ai_machine_learning/notebook_tuto_03_weight_biases).
 - Do you want to train your YOLOv8 model? [Here it is](/pages/public_cloud/ai_machine_learning/training_tuto_09_train_rock-paper-scissors/).
 - Do you want to use your YOLOv8 model in an app? [Here it is](/pages/public_cloud/ai_machine_learning/deploy_tuto_15_rock_paper_scissors/).
 

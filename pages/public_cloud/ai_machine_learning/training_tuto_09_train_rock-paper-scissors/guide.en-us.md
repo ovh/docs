@@ -1,12 +1,13 @@
 ---
 title: AI Training - Tutorial - Train YOLOv8 to play to "rock paper scissors" 
 excerpt: Understand how simple it is to train a model using AI Training
-updated: 2023-19-10
+updated: 2023-10-19
 ---
 
 ## Objective
 
-The purpose of this tutorial is to show how it is possible to train YOLOv8 to play to the game "rock paper scissors"!
+The purpose of this tutorial is to show how to train YOLOv8 to play the game "rock paper scissors".
+
 YOLOv8 is an object detection algorithm. Although closely related to image classification, object detection performs image classification on a more precise scale. Object detection locates and categorizes features in images.
 
 It is based on the YOLOv8 open source [repository](https://github.com/ultralytics/ultralytics).
@@ -18,18 +19,19 @@ It is based on the YOLOv8 open source [repository](https://github.com/ultralytic
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
-- A Public Cloud project created
-- The ovhai CLI interface installed on your system (more information [here](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli))
-- [Docker](https://www.docker.com/get-started) installed and configured to build images.
-- An OCI / Docker image registry. You can use a public registry (such as [Docker Hub](https://hub.docker.com/) for example) or a private registry. Refer to the [Creating a private registry](/pages/public_cloud/containers_orchestration/managed_private_registry/creating-a-private-registry) documentation to create a private registry based on Harbor.
-- Knowledge about building images with [Dockerfile](https://docs.docker.com/engine/reference/builder/)
+- You have access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we).
+- You have created a Public Cloud project.
+- The ovhai CLI interface is installed on your system (find more information [here](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli)).
+- You have [Docker](https://www.docker.com/get-started) installed and configured to build images.
+- You have an OCI / Docker image registry available. You can use a public registry (such as [Docker Hub](https://hub.docker.com/) for example) or a private registry. Refer to the [Creating a private registry](/pages/public_cloud/containers_orchestration/managed_private_registry/creating-a-private-registry) documentation to create a private registry based on Harbor.
+- You have knowledge about building images with [Dockerfile](https://docs.docker.com/engine/reference/builder/).
 
 ## Instructions
 
 ### Create object storage for data
 
 To train the model you'll need data and a place where to save the trained model.
+
 You can reuse the previous object storage used in the Notebook tutorial [Train YOLOv8 to play to "rock paper scissors"](/pages/public_cloud/ai_machine_learning/notebook_tuto_15_rock-paper-scissors/) or follow the step [Create Object Storage containers](/pages/platform/ai/notebook_tuto_15_rock-paper-scissors/) of this same tutorial.
 
 ### Train your model
@@ -82,7 +84,7 @@ opencv-python-headless==4.8.1.78
 ```
 
 Then, create a Dockerfile compliant with AI Training.
-You can copy and paste the following code in a file named `Dockerfile`:
+You can copy and paste the following code into a file named `Dockerfile`:
 
 ```docker
 FROM --platform=linux/x86_64 python:3.8
@@ -121,8 +123,10 @@ The push refers to repository [my-registry.gra7.container-registry.ovh.net/rock-
 ..
 1.0.0: digest: sha256:72f19493662aafe3d0a3dc35ea5ab76b8472bd6a709de2da1a52e7ebf8ab7ad1 size: 3054 
 ```
+
 > [!warning]
 > **Warning**
+> 
 > The shared registry should only be used for testing purposes. Please consider creating and attaching your own registry. More information about this can be found [here](/pages/public_cloud/ai_machine_learning/gi_07_manage_registry).
 
 You can find the address of your shared registry by launching this command:
@@ -242,7 +246,7 @@ Status:
     User Volume Id: bf7b5c4b-c61e-4d17-b6d8-248de56834b6
 ```
 
-You can access to the execution logs of your job with the CLI:
+You can access the execution logs of your job with the CLI:
 
 ```bash
 ovhai job logs <job id> -f       
@@ -263,7 +267,7 @@ Job is running
 ...
 ```
 
-For more explanations about the CLI command for AI Training, please read this guide: [CLI Reference](/pages/public_cloud/ai_machine_learning/cli_15_commands_reference).
+For more explanations about the CLI commands for AI Training, please read this guide: [CLI Reference](/pages/public_cloud/ai_machine_learning/cli_15_commands_reference).
 
 Once you have your model ready, deploy the model to use it. This will be done with the AI Deploy tool.
 
@@ -271,7 +275,7 @@ Once you have your model ready, deploy the model to use it. This will be done wi
 
 All the source code is available on the [OVHcloud GitHub organization](https://github.com/ovh/ai-training-examples/tree/main/jobs/audio/audio-classification).
 
-To create the application using the trained model, you can follow this tutorial: [Deploy an app for playing rock / paper / scissors](/pages/public_cloud/ai_machine_learning/deploy_tuto_15_rock_paper_scissors).
+To create the application using the trained model, you can follow this tutorial: [Deploy an app for playing "rock paper scissors"](/pages/public_cloud/ai_machine_learning/deploy_tuto_15_rock_paper_scissors).
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project. 
 

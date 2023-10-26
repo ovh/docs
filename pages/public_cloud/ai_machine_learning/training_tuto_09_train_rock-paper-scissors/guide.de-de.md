@@ -1,6 +1,6 @@
 ---
-title: AI Training - Tutorial - Train YOLOv8 to play to "rock paper scissors" 
-excerpt: Understand how simple it is to train a model using AI Training
+title: AI Training - Tutorial - Train YOLOv8 to play rock paper scissors (EN)
+excerpt: Find out how simple it is to train a model using AI Training
 updated: 2023-10-19
 ---
 
@@ -19,7 +19,7 @@ It is based on the YOLOv8 open source [repository](https://github.com/ultralytic
 
 ## Requirements
 
-- You have access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia).
+- You have access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 - You have created a Public Cloud project.
 - The ovhai CLI interface is installed on your system (find more information [here](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli)).
 - You have [Docker](https://www.docker.com/get-started) installed and configured to build images.
@@ -119,14 +119,14 @@ $ docker build . -f Dockerfile -t my-registry.gra7.container-registry.ovh.net/ro
 
 $ docker push my-registry.gra7.container-registry.ovh.net/rock-paper-scissors-train:1.0.0                                                     
 The push refers to repository [my-registry.gra7.container-registry.ovh.net/rock-paper-scissors-train]
-6e5b7acfda9e: Pushed 
+6e5b7acfda9e: Pushed
 ..
-1.0.0: digest: sha256:72f19493662aafe3d0a3dc35ea5ab76b8472bd6a709de2da1a52e7ebf8ab7ad1 size: 3054 
+1.0.0: digest: sha256:72f19493662aafe3d0a3dc35ea5ab76b8472bd6a709de2da1a52e7ebf8ab7ad1 size: 3054
 ```
 
 > [!warning]
 > **Warning**
-> 
+>
 > The shared registry should only be used for testing purposes. Please consider creating and attaching your own registry. More information about this can be found [here](/pages/public_cloud/ai_machine_learning/gi_07_manage_registry).
 
 You can find the address of your shared registry by launching this command:
@@ -148,7 +148,7 @@ You can launch the training specifying more or less GPU depending on the speed y
 
 > [!primary]
 >
-> If your images are stored in a private registry, please follow the documentation [Registries - Use & manage your registries](/pages/public_cloud/ai_machine_learning/gi_07_manage_registry) to add your registry. 
+> If your images are stored in a private registry, please follow the documentation [Registries - Use & manage your registries](/pages/public_cloud/ai_machine_learning/gi_07_manage_registry) to add your registry.
 >
 
 ```bash
@@ -277,7 +277,7 @@ All the source code is available on the [OVHcloud GitHub organization](https://g
 
 To create the application using the trained model, you can follow this tutorial: [Deploy an app for playing "rock paper scissors"](/pages/public_cloud/ai_machine_learning/deploy_tuto_15_rock_paper_scissors).
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/asia/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project. 
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/de/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 ## Feedback
 
