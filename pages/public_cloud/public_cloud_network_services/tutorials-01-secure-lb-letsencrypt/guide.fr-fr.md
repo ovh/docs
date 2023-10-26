@@ -105,7 +105,7 @@ openstack loadbalancer member create --subnet-id my_subnet --address <private_ip
 openstack loadbalancer member create --subnet-id my_subnet --address <private_ip_instance_2> --protocol-port 80 pool-tls
 ```
 
-Vous pouvez maintenant accéder à votre Load Balancer de manière sécurisée avec Let's Encrypt.
+Vous pouvez maintenant accéder à votre Load Balancer de manière sécurisée avec Let's Encrypt. Attention toute fois, il faudra renouveler le certificat tous les 3 mois
 
 ## Aller plus loin
 
