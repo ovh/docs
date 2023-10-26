@@ -4,10 +4,7 @@ excerpt: "Comment créer et utiliser un token permettant de se connecter à l'en
 updated: 2023-08-24
 ---
 
-> [!warning]
->
-> Cette fonctionnalité est actuellement en bêta. Retrouvez plus d'informations sur <https://labs.ovhcloud.com/fr/>.
->
+ 
 
 ## Objectif
 

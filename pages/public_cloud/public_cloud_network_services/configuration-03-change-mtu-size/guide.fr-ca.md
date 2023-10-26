@@ -100,6 +100,10 @@ TOKEN=$(openstack token issue -c id -f value)
 curl -s -H "X-Auth-Token: $TOKEN" -H "Content-Type: application/json" -H "Accept: application/json" -X PUT -d '{"network": {"mtu": 1500}}' https://network.compute.<region>.cloud.ovh.net/v2.0/networks/<networkid>
 ```
 
+- Via Terraform
+
+Avec la resource [networking_network_v2](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/networking_network_v2) du provider OpenStack, vous pouvez définir la valeur de l' attribut [MTU](https://registry.terraform.io/providers/terraform-provider-openstack/openstack/latest/docs/resources/networking_network_v2#mtu)
+
 ### Étape 4 - Vérifier les modifications
 
 Affichez les paramètres du réseau privé pour vérifier que la modification est appliquée :

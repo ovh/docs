@@ -1,10 +1,11 @@
 ---
-title: 'Zusätzliches Volume auf einer Instanz erstellen und konfigurieren'
-excerpt: 'Erfahren Sie hier, wie Sie eine neue Disk erstellen zu Ihrer Public Cloud Instanz hinzufügen'
-updated: 2023-03-03
+title: Zusätzliches Volume auf einer Instanz erstellen und konfigurieren
+excerpt: Erfahren Sie hier, wie Sie eine neue Disk erstellen und zu Ihrer Public Cloud Instanz hinzufügen
+updated: 2023-10-16
 ---
 
 > [!primary]
+>
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
 >
 
@@ -25,6 +26,7 @@ Es ist möglich, zusätzliche Volumes für Ihre OVHcloud Public Cloud Instanzen 
 - Sie haben administrativen Zugriff (Root) auf Ihre Instanz über SSH (Linux) oder RDP (Windows).
 
 > [!warning]
+>
 > Diese Funktion ist derzeit für Metal Instanzen nicht verfügbar.
 >
 
@@ -57,6 +59,7 @@ Wählen Sie im angezeigten Fenster eine Instanz aus der Liste aus und klicken Si
 Der Vorgang zum Verbinden mit der Instanz startet nun. Dieser Task kann einige Minuten in Anspruch nehmen.
 
 > [!warning]
+>
 > Achten Sie darauf, nicht vom aktuellen Bereich weg zu navigieren, während das Volume angehängt wird. Der Vorgang könnte unterbrochen werden.
 >
 
@@ -69,8 +72,10 @@ Die folgenden Beispiele setzen voraus, dass Sie als Benutzer mit erhöhten Recht
 Stellen Sie eine [SSH-Verbindung](/pages/public_cloud/compute/public-cloud-first-steps#connect-to-instance) zur Instanz her und verwenden Sie den folgenden Befehl, um die eingehängten Disks aufzulisten.
 
 ```bash
-~$ admin@server-1:~$ lsblk
+lsblk
+```
 
+```console
 NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
 vda 254:0 0 10G 0 disk
 └─vda1 254:1 0 10G 0 part /
@@ -84,18 +89,20 @@ vdb 254:16 0 10G 0 disk
 
 Erstellen Sie eine Partition auf der zusätzlichen Disk indem Sie die nachfolgenden Befehle ausführen.
 
-```bash
-~$ admin@server-1:~$ sudo fdisk /dev/vdb
+Wenn Ihre zusätzliche Festplatte weniger als 2 TB groß ist:
 
+```bash
+sudo fdisk /dev/vdb
+```
+
+```console
 Welcome to fdisk (util-linux 2.25.2).
 Changes will remain in memory only, until you decide to write them.
 Be careful before using the write command.
 
 Device does not contain a recognized partition table.
 Created a new DOS disklabel with disk identifier 0x95c4adcc.
-```
 
-```bash
 Command (m for help): n
 
 Partition type
@@ -108,9 +115,7 @@ First sector (2048-20971519, default 2048):
 Last sector, +sectors or +size{K,M,G,T,P} (2048-20971519, default 20971519):
 
 Created a new partition 1 of type 'Linux' and of size 10 GiB.
-```
 
-```bash
 Command (m for help): w
 
 The partition table has been altered.
@@ -118,10 +123,49 @@ Calling ioctl() to re-read partition table.
 Syncing disks.
 ```
 
-Formatieren Sie anschließend die neue Partition `vdb1` mit folgendem Befehl:
+Wenn Ihre zusätzliche Festplatte größer als 2 TB ist:
 
 ```bash
-~$ admin@server-1:~$ sudo mkfs.ext4 /dev/vdb1
+sudo parted /dev/vdb
+```
+
+```console
+GNU Parted 3.5
+Using /dev/vdb
+Welcome to GNU Parted! Type 'help' to view a list of commands.
+(parted) help                                                             
+  align-check TYPE N                       check partition N for TYPE(min|opt) alignment
+  help [COMMAND]                           print general help, or help on COMMAND
+  mklabel,mktable LABEL-TYPE               create a new disklabel (partition table)
+  mkpart PART-TYPE [FS-TYPE] START END     make a partition
+  name NUMBER NAME                         name partition NUMBER as NAME
+  print [devices|free|list,all]            display the partition table, or available devices, or free space, or all found partitions
+  quit                                     exit program
+  rescue START END                         rescue a lost partition near START and END
+  resizepart NUMBER END                    resize partition NUMBER
+  rm NUMBER                                delete partition NUMBER
+  select DEVICE                            choose the device to edit
+  disk_set FLAG STATE                      change the FLAG on selected device
+  disk_toggle [FLAG]                       toggle the state of FLAG on selected device
+  set NUMBER FLAG STATE                    change the FLAG on partition NUMBER
+  toggle [NUMBER [FLAG]]                   toggle the state of FLAG on partition NUMBER
+  unit UNIT                                set the default unit to UNIT
+  version                                  display the version number and copyright information of GNU Parted
+(parted) mklabel gpt                                                      
+(parted) mkpart primary 0 3750G                                           
+Warning: The resulting partition is not properly aligned for best performance: 34s % 2048s != 0s
+Ignore/Cancel? I                                                          
+(parted) quit
+```
+
+Formatieren Sie anschließend die neue Partition `vdb1` mit folgendem Befehl:
+
+
+```bash
+sudo mkfs.ext4 /dev/vdb1
+```
+
+```console
 mke2fs 1.42.12 (29-Aug-2014)
 Creating filesystem with 2621184 4k blocks and 655360 inodes
 Filesystem UUID: 781be788-c4be-462b-b946-88429a43c0cf
@@ -137,15 +181,21 @@ Writing superblocks and filesystem accounting information: done
 Mounten Sie die Partition mit folgenden Befehlen:
 
 ```bash
-admin@server-1:~$ sudo mkdir /mnt/disk
-admin@server-1:~$ sudo mount /dev/vdb1 /mnt/disk/
+sudo mkdir /mnt/disk
+```
+
+```bash
+sudo mount /dev/vdb1 /mnt/disk/
 ```
 
 Überprüfen Sie den Mountpunkt mit folgendem Befehl:
 
-```bash
-~$ admin@server-1:~$ df -h
 
+```bash
+df -h
+```
+
+```console
 Filesystem Size Used Avail Use% Mounted on
 /dev/vda1 9.8G 840M 8.6G 9% /
 udev 10M 0 10M 0% /dev
@@ -158,22 +208,24 @@ tmpfs 982M 0 982M 0% /sys/fs/cgroup
 
 > [!primary]
 >
-Die vorherige Anpassung ist nicht persistent, da die Disk wieder getrennt wird, wenn die Instanz neu gestartet wird. Zur Automatisierung des Mountvorgangs muss die Datei `fstab` angepasst werden.
+> Die vorherige Anpassung ist nicht persistent, da die Disk wieder getrennt wird, wenn die Instanz neu gestartet wird. Zur Automatisierung des Mountvorgangs muss die Datei `fstab` angepasst werden.
 >
 
 Ermitteln Sie zunächst die UUID (Block-ID) des neuen Volumes:
 
 ```bash
-~$ admin@server-1:~$ sudo blkid
+sudo blkid
+```
 
+```console
 /dev/vda1: UUID="51ba13e7-398b-45f3-b5f3-fdfbe556f62c" TYPE="ext4" PARTUUID="000132ff-01"
 /dev/vdb1: UUID="2e4a9012-bf0e-41ef-bf9a-fbf350803ac5" TYPE="ext4" PARTUUID="95c4adcc-01"
 ```
 
 Öffnen Sie `/etc/fstab` mit einem Texteditor:
 
-```
-~$ sudo nano /etc/fstab
+```bash
+sudo nano /etc/fstab
 ```
 
 Fügen Sie die folgende Zeile zur Datei hinzu und ersetzen Sie die UUID mit Ihrer zuvor ausgelesenen:
@@ -196,23 +248,23 @@ Die neue Disk wird als unbekanntes Volume mit nicht zugewiesenem Speicherplatz a
 
 ![Volume](images/disk-management-01.png){.thumbnail}
 
-Wird die Festplatte als Offline angezeigt, muss sie zuerst initialisiert werden. Sie können hierzu das [Windows GUI](#initDiskManagement) oder das [DISKPART Tool](#initDiskpart) verwenden. Falls nicht, [formatieren Sie nun die Festplatte in der Datenträgerverwaltung](#formatDiskManagement).
+Wird die Disk als `Offline` angezeigt, muss sie zuerst initialisiert werden. Sie können hierzu das [Windows GUI](#initDiskManagement) oder das [DISKPART Tool](#initDiskpart) verwenden. Falls nicht, [formatieren Sie nun die Disk in der Datenträgerverwaltung](#formatDiskManagement).
 
 ##### **Initialisierung der Disk in der Datenträgerverwaltung** <a name="initDiskManagement"></a>
 
-Klicken Sie mit der rechten Maustaste auf die Disk und wählen Sie `Online`{.action}. 
+Klicken Sie mit der rechten Maustaste auf die Disk und wählen Sie `Online`{.action}.
 
-Wenn die Festplatte hier als offline angezeigt wird, ist dies wahrscheinlich auf eine auf der Instanz vorhandene Policy zurückzuführen. Um dieses Problem zu lösen, klicken Sie mit der rechten Maustaste auf die Festplatte und wählen Sie `Online`{.action}.
+Wenn die Disk hier als offline angezeigt wird, ist dies wahrscheinlich auf eine auf der Instanz vorhandene Policy zurückzuführen. Um dieses Problem zu lösen, klicken Sie mit der rechten Maustaste auf die Disk und wählen Sie `Online`{.action}.
 
 ![offline disk](images/disk-management-02.png){.thumbnail}
 
-Klicken Sie mit der rechten Maustaste auf die Festplatte und wählen Sie dieses Mal `Festplatte initialisieren`{.action}.
+Klicken Sie mit der rechten Maustaste auf die Disk und wählen Sie dieses Mal `Festplatte initialisieren`{.action}.
 
 ![offline disk](images/disk-management-03.png){.thumbnail}
 
-Wählen Sie `MBR`{.action} im neuen Fenster aus und klicken Sie auf `OK`{.action}.
+Wählen Sie als Nächstes `MBR`{.action}, wenn Ihre zusätzliche Disk weniger als 2 TB groß ist, oder `GPT`{.action}, wenn sie mehr als 2 TB groß ist, und klicken Sie dann auf `OK`{.action}.
 
-![Disk-Initialisierung](images/initialise-disk.png){.thumbnail}
+![Disk-Initialisierung](images/initialize_disk.png){.thumbnail}
 
 ##### **Initialisierung der Disk mit DISKPART** <a name="initDiskpart"></a>
 
@@ -226,19 +278,17 @@ Geben Sie `cmd` ein und klicken Sie auf `OK`{.action}, um die Kommandozeilenanwe
 
 In der Eingabeaufforderung starten Sie DISKPART:
 
-```
+```console
 C:\> diskpart
 ```
 
 Verwenden Sie folgende Befehle in DISKPART, um die Festplatte als "Online" zu konfigurieren:
 
-```
+```console
 DISKPART> san
 
 SAN Policy : Offline Shared
-```
 
-```
 DISKPART> san policy = OnlineAll
 
 DiskPart successfully changed the SAN policy for the current operating system .
@@ -250,21 +300,15 @@ Disk ### Status Size Free Dyn Gpt
 -------- ------------- ------- ------- --- ---
 Disk 0 Online 200 GB 0 B
 * Disk 1 Offline 10 GB 1024 KB
-```
 
-``` 
 DISKPART> select disk 1
 
 Disk 1 is now the selected disk.
-```
 
-```
 DISKPART> attributes disk clear readonly
 
 Disk attributes cleared successfully.
-```
 
-```
 DISKPART> attributes disk
 
 Current Read-only State : No
@@ -274,9 +318,7 @@ Pagefile Disk : No
 Hibernation File Disk : No
 Crashdump Disk : No
 Clustered Disk : No
-```
 
-```
 DISKPART> online disk
 
 DiskPart successfully onlined the selected disk.
@@ -320,8 +362,10 @@ Wenn Sie ein Volume von Ihrer Instanz trennen möchten, ist die beste Vorgehensw
 Stellen Sie eine [SSH-Verbindung](/pages/public_cloud/compute/public-cloud-first-steps#connect-to-instance) zur Instanz her und verwenden Sie den folgenden Befehl, um die eingehängten Disks aufzulisten.
 
 ```bash
-~$ admin@server-1.~$ lsblk
+lsblk
+```
 
+```console
 NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
 vda 254:0 0 10G 0 disk
 └─ ─ vda1 254:1 0 10G 0 part /
@@ -332,13 +376,13 @@ vdb 8:0 0 10G 0 disk
 Hängen Sie die Partition mit folgendem Befehl aus:
 
 ```bash
-~$ admin@server-1:~$ sudo umount /dev/vdb1
+sudo umount /dev/vdb1
 ```
 
 Löschen Sie die zugehörige UUID aus der Datei `fstab`, um den Prozess abzuschließen. Wird dies nicht durchgeführt, wird die Partition nach einem Neustart automatisch wieder gemountet.
 
 ```bash
-~$ admin@server-1:~$ sudo nano /etc/fstab
+sudo nano /etc/fstab
 ```
 
 Speichern Sie die Änderungen und verlassen Sie den Editor.

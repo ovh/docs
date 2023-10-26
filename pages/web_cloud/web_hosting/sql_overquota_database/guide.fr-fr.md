@@ -1,7 +1,7 @@
 ---
 title: "Hébergement web : ma base de données est saturée, que faire ?"
 excerpt: "Découvrez comment agir lorsque votre base de données est saturée"
-updated: 2023-09-21
+updated: 2023-10-26
 ---
 
 ## Objectif
@@ -79,11 +79,11 @@ Renseignez les informations d'accès à votre base de données puis cliquez sur 
 
 Une fois connecté, la page suivante s'affiche :
 
-![phpMyAdmin Login](images/pma_login.png){.thumbnail}
+![phpMyAdmin Login](images/pma-main-page.png){.thumbnail}
 
 Cliquez sur le `« Nom de votre base de données »`{.action} dans la colonne de gauche puis sur `Taille`{.action} en haut à droite du tableau qui s'affiche :
 
-![phpMyAdmin Tables](images/pma_show_table.png){.thumbnail}
+![phpMyAdmin Tables](images/pma-check-size.png){.thumbnail}
 
 Les tables les plus volumineuses apparaissent en haut du tableau. Identifiez celles-ci puis passez à l'**étape 2**.
 
@@ -151,7 +151,7 @@ Dans le cas d'un overquota ou d'une table volumineuse, **trois commandes** sont 
 
 Vous pouvez directement effectuer ces requêtes depuis l'interface **phpMyAdmin**, via l'onglet `SQL`{.action} :
 
-![phpMyAdmin SQL request](images/pma_sql_request.png){.thumbnail}
+![phpMyAdmin SQL request](images/pma-sql-menu.png){.thumbnail}
 
 - La commande **DELETE** : 
 

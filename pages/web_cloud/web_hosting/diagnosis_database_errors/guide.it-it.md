@@ -1,7 +1,7 @@
 ---
 title: Risolvi gli errori più frequenti associati ai database 
 excerpt: "Diagnostica i casi di errore più frequenti associati ai database"
-updated: 2022-12-09
+updated: 2023-10-26
 ---
 
 > [!primary]
@@ -230,7 +230,7 @@ Per risolvere questa anomalia, puoi:
 
 Questo messaggio di errore può comparire durante la connessione al tuo database da [PhpMyAdmin](/pages/web_cloud/web_hosting/sql_create_database). Essa indica che gli identificativi indicati sono errati.
 
-![access_denied_for_user](images/access_denied_for_user.png){.thumbnail}
+![access_denied_for_user](images/pma-error-hy000-1045.png){.thumbnail}
 
 In questa situazione, [verifica le credenziali inserite](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server) e, se necessario, modifica la [password del tuo database](/pages/web_cloud/web_hosting/sql_change_password).
 
@@ -261,7 +261,7 @@ Per ridurre il numero di connessioni attive, è necessario [ottimizzare i tuoi d
 
 Questo messaggio di errore compare durante la [connessione a PhpMyAdmin](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server) quando il nome del server inserito non è corretto.
 
-![name_or_service_not_known](images/name_or_service_not_known.png){.thumbnail}
+![name_or_service_not_known](images/pma-error-hy000-1045.png){.thumbnail}
 
 Verifica il nome del server da iscrivere nel tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
 

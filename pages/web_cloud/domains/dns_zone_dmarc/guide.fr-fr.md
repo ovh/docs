@@ -1,7 +1,7 @@
 ---
 title: Configurer un enregistrement DMARC sur votre nom de domaine
 excerpt: Découvrez comment fonctionne DMARC et comment le mettre en place pour votre service e-mail
-updated: 2023-08-07
+updated: 2023-10-25
 ---
 
 ## Objectif
@@ -9,6 +9,15 @@ updated: 2023-08-07
 L'enregistrement **D**omain-based **M**essage **A**uthentication, **R**eporting, and **C**onformance (DMARC) est un mécanisme de sécurité e-mail. Il s'appuie sur le résultat des vérifications [SPF](/pages/web_cloud/domains/dns_zone_spf) et [DKIM](/pages/web_cloud/domains/dns_zone_dkim).
 
 **Découvrez comment fonctionne DMARC et comment le mettre en place pour votre service e-mail.**
+
+> [!warning]
+>
+> OVHcloud propose des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
+> 
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce tutoriel.
+>
+> De plus, la mise en place d'un enregistrement **DMARC**, quelle que soit l'[offre e-mail OVHcloud](https://www.ovhcloud.com/fr-ca/emails/), est indisponible actuellement. Ce guide concerne **uniquement** les clients qui possèdent une zone DNS active chez OVHcloud pour leur nom de domaine associé à une **solution e-mail externe**.
+>
 
 ## Prérequis
 
@@ -149,7 +158,7 @@ Nous obtenons le résultat suivant :
 
 - **ri=86400** : définit l'intervalle demandé entre les rapports agrégés, en secondes. Dans ce cas, un rapport agrégé doit être généré au moins une fois toutes les 86400 secondes (soit une fois par jour).
 
-## Aller plus loin
+## Aller plus loin <a name="go-further"></a>
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
 

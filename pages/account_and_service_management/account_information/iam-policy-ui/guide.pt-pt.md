@@ -8,10 +8,6 @@ updated: 2023-07-06
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-> [!warning]
->
-> Esta funcionalidade está atualmente em versão beta. Encontre mais informações em <https://labs.ovhcloud.com/en/>.
->
 
 ## Objetivo
 
