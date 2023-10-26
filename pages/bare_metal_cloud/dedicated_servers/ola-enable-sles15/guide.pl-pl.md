@@ -1,7 +1,7 @@
 ---
 title: "Jak skonfigurować identyfikator klienta do celów agregacji linków OVHcloud w SLES 15"
 excerpt: 'Włącz Link Aggregation na serwerze SLES 15'
-updated: 2023-03-07
+updated: 2023-10-26
 ---
 
 > [!primary]
@@ -55,21 +55,21 @@ STARTMODE='onboot'
 BOOTPROTO='static'
 IPADDR='10.0.0.1/24'
 BONDING_MASTER='yes'
-BONDING_SLAVE_0='eth1'
-BONDING_SLAVE_1='eth2'
+BONDING_SLAVE_0='eth0'
+BONDING_SLAVE_1='eth1'
 BONDING_MODULE_OPTS='mode=802.3ad miimon=100 xmit_hash_policy=layer3+4'
 ```
 
 > [!primary]
 >
 > Możesz korzystać z dowolnego adresu IP i prywatnej podsieci.
-> Jeśli Twój serwer ma więcej niż 2 interfejsów sieciowych, możesz je dodać do konfiguracji, dodając numer parametru `BONDING_SLAVE_`, na przykład `BONDING_SLAVE_2='eth3'`.
+> Jeśli Twój serwer ma więcej niż 2 interfejsów sieciowych, możesz je dodać do konfiguracji, dodając numer parametru `BONDING_SLAVE_`, na przykład `BONDING_SLAVE_2='eth2'`.
 >
 
 Zapisz i wyjdź z pliku po potwierdzeniu, że informacje są poprawne.  Teraz skonfiguruj dwa fizyczne interfejsy. Domyślnie dla serwera OVHcloud tylko *eth* będzie miał plik konfiguracyjny. Otwórz plik za pomocą polecenia:
 
 ```bash
-vi /etc/sysconfig/network/ifcfg-eth1
+vi /etc/sysconfig/network/ifcfg-eth0
 ```
 
 Domyślnie plik będzie wyświetlał następujący tekst:
@@ -104,10 +104,10 @@ STARTMODE='hotplug'
 
 *#* przed linią wskazuje, że serwer zignoruje tę linię podczas odczytu pliku. Oznacza to, że linie te nie będą brane pod uwagę podczas tworzenia pliku interfejsu dla *eth*.
 
-Utwórz plik konfiguracyjny *eth2* za pomocą polecenia:
+Utwórz plik konfiguracyjny *eth1* za pomocą polecenia:
 
 ```bash
-vi /etc/sysconfig/network/ifcfg-eth2
+vi /etc/sysconfig/network/ifcfg-eth1
 ```
 
 Tym razem plik będzie pusty. Dodaj następującą zawartość:

@@ -1,7 +1,7 @@
 ---
 title: "Come configurare il NIC handle per aggregare i link OVHcloud in SLES 15"
 excerpt: Attiva OVHcloud Link Aggregation sul tuo server SLES 15
-updated: 2023-03-07
+updated: 2023-10-26
 ---
 
 > [!primary]
@@ -31,7 +31,7 @@ Clicca sulla scheda `IPMI`{.action} (1) e poi sul pulsante `Da un applet Java (K
 
 Verrà scaricato un software JNLP. Avvia il software per accedere all'IPMI. Accedi utilizzando le informazioni di identificazione associate al server.
 
-Di default, utilizzando un modello OVHcloud, i NIC saranno nominati *eth1* e *eth2*. Se non utilizzi un modello OVHcloud, puoi recuperare i nomi delle interfacce utilizzando il seguente comando:
+Di default, utilizzando un modello OVHcloud, i NIC saranno nominati *eth0* e *eth1*. Se non utilizzi un modello OVHcloud, puoi recuperare i nomi delle interfacce utilizzando il seguente comando:
 
 ```bash
 ip a
@@ -55,8 +55,8 @@ STARTMODE='onboot'
 BOOTPROTO='static'
 IPADDR='10.0.0.1/24'
 BONDING_MASTER='yes'
-BONDING_SLAVE_0='eth1'
-BONDING_SLAVE_1='eth2'
+BONDING_SLAVE_0='eth0'
+BONDING_SLAVE_1='eth1'
 BONDING_MODULE_OPTS='mode=802.3ad miimon=100 xmit_hash_policy=layer3+4'
 ```
 
@@ -66,10 +66,10 @@ BONDING_MODULE_OPTS='mode=802.3ad miimon=100 xmit_hash_policy=layer3+4'
 > Se il tuo server possiede più di 2 interfacce di rete, puoi aggiungerle nella configurazione inserendo il numero del parametro `BONDING_SLAVE_`, ad esempio `BONDING_SLAVE_2='eth3`.
 >
 
-Salva e lascia il file una volta confermato che l'informazione è corretta.  A questo punto è necessario configurare le due interfacce fisiche. Di default, su un server OVHcloud solo *eth1* dispone di un file di configurazione. Apri il comando:
+Salva e lascia il file una volta confermato che l'informazione è corretta.  A questo punto è necessario configurare le due interfacce fisiche. Di default, su un server OVHcloud solo *eth0* dispone di un file di configurazione. Apri il comando:
 
 ```bash
-vi /etc/sysconfig/network/ifcfg-eth1
+vi /etc/sysconfig/network/ifcfg-eth0
 ```
 
 Di default, il file mostrerà questo testo:
@@ -102,12 +102,12 @@ STARTMODE='hotplug'
 > L'indirizzo hardware (indirizzo MAC) del NIC handle può essere recuperato utilizzando il comando `ip utilizzato in precedenza`. Sarà il numero accanto a `link/ether` del risultato visualizzato.
 >
 
-L'*#* davanti a una linea indica che il server non saprà questa linea durante la lettura del file. significa che queste righe non saranno prese in carico durante la creazione del file di interfaccia per *eth1*.
+L'*#* davanti a una linea indica che il server non saprà questa linea durante la lettura del file. significa che queste righe non saranno prese in carico durante la creazione del file di interfaccia per *eth0*.
 
-Per creare il file di configurazione *eth2*, utilizza questo comando:
+Per creare il file di configurazione *eth1*, utilizza questo comando:
 
 ```bash
-vi /etc/sysconfig/network/ifcfg-eth2
+vi /etc/sysconfig/network/ifcfg-eth1
 ```
 
 Questa volta il file sarà vuoto. Aggiungi questo contenuto:
