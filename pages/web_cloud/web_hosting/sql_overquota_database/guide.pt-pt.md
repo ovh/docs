@@ -1,7 +1,7 @@
 ---
 title: "Alojamento web: a minha base de dados está saturada, o que fazer?"
 excerpt: "Saiba como agir quando a base de dados está sobrecarregada"
-updated: 2023-09-21
+updated: 2023-10-26
 ---
 
 > [!primary]
@@ -83,11 +83,11 @@ Introduza as informações de acesso à sua base de dados e depois clique em `En
 
 Uma vez ligado, aparecerá a seguinte página:
 
-![phpMyAdmin Login](images/pma_login.png){.thumbnail}
+![phpMyAdmin Login](images/pma-main-page.png){.thumbnail}
 
 Clique em `"Nome da sua base de dados"`{.action} na coluna da esquerda, depois em `Taille`{.action} no canto superior direito da tabela que aparece:
 
-![phpMyAdmin Tables](images/pma_show_table.png){.thumbnail}
+![phpMyAdmin Tables](images/pma-check-size.png){.thumbnail}
 
 As tabelas mais volumosas figuram no topo da tabela. Identifique-as e passe à **etapa 2**.
 
@@ -155,7 +155,7 @@ No caso de uma overquota ou de uma tabela volumosa, estão disponíveis **três 
 
 Pode efetuar diretamente estes pedidos a partir da interface **phpMyAdmin**, através do separador `SQL`{.action}:
 
-![phpMyAdmin SQL request](images/pma_sql_request.png){.thumbnail}
+![phpMyAdmin SQL request](images/pma-sql-menu.png){.thumbnail}
 
 - A encomenda **DELETE**: 
 

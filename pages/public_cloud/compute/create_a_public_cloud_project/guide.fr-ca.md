@@ -48,6 +48,12 @@ Le processus de création terminé, votre nouveau projet Public Cloud sera dispo
 
 ## Aller plus loin
 
+[Créer une première instance Public Cloud et s'y connecter](/pages/public_cloud/compute/public-cloud-first-steps)
+[Gestion de contacts d’un projet](/pages/public_cloud/compute/change_project_contacts)
+[Déléguer des projets](/pages/public_cloud/compute/delegate_projects)
+[Supprimer un projet Public Cloud](/pages/public_cloud/compute/delete_a_project)
+[Informations concernant le mode de facturation cloud](/pages/public_cloud/compute/analyze_billing)
+
 Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr-ca/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.

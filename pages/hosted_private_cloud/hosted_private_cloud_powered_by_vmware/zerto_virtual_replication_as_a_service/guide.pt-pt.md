@@ -1,7 +1,7 @@
 ---
 title: Utilizar o Zerto Virtual Replication entre dois datacenters da OVHcloud
 excerpt: Saiba como implementar a Zerto Virtual Replication para o seu Plano de Recuperação de Desastres entre dois serviços Private Cloud.
-updated: 2022-02-11
+updated: 2023-10-23
 ---
 
 > [!primary]
@@ -308,6 +308,8 @@ Na eventualidade de um incidente grave no site principal, ou no quadro de um exe
 > [!warning]
 >
 > Na Zerto Replication, o failover em modo **LIVE** é feito com base no princípio de que o site principal se encontra indisponível. Assim, é importante verificar a configuração de rede de modo a evitar, por exemplo, conflitos de endereçamento IP.
+>
+> Além disso, no caso em que os dois Private Cloud se situam em 2 países diferentes, é impossível migrar o seu bloco IP de um Private Cloud para outro.
 >
 > Os recursos inicializados no site secundário vão ativar-se ao nível do tratamento de dados.
 >

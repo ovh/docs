@@ -1,7 +1,7 @@
 ---
 title: "Hosting WWW: moja baza danych jest przeciążona, co robić?"
 excerpt: "Dowiedz się, jak działać, gdy baza danych jest przeciążona"
-updated: 2023-09-21
+updated: 2023-10-26
 ---
 
 > [!primary]
@@ -83,11 +83,11 @@ Wprowadź dane dostępowe do Twojej bazy danych, a następnie kliknij `Login`{.a
 
 Po zalogowaniu wyświetla się następująca strona:
 
-![phpMyAdmin Login](images/pma_login.png){.thumbnail}
+![phpMyAdmin Login](images/pma-main-page.png){.thumbnail}
 
 W kolumnie po lewej stronie kliknij `"Nazwa bazy danych"`{.action}, a następnie `Rozmiar`{.action} w prawym górnym rogu tabeli, która się wyświetli:
 
-![phpMyAdmin Tables](images/pma_show_table.png){.thumbnail}
+![phpMyAdmin Tables](images/pma-check-size.png){.thumbnail}
 
 Największe stoły wyświetlają się na szczycie tabeli. Wyszukaj je i przejdź do **etapu 2**.
 
@@ -155,7 +155,7 @@ W przypadku opcji overquota lub dużego stołu, **trzy zamówienia** są dostęp
 
 Możesz wykonywać te zapytania bezpośrednio w interfejsie **phpMyAdmin**, w zakładce `SQL`{.action}:
 
-![phpMyAdmin SQL request](images/pma_sql_request.png){.thumbnail}
+![phpMyAdmin SQL request](images/pma-sql-menu.png){.thumbnail}
 
 - zamówienie **DELETE** : 
 

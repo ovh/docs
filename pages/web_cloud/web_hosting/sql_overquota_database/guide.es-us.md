@@ -1,7 +1,7 @@
 ---
 title: "Web hosting: mi base de datos está saturada, ¿qué hago?"
 excerpt: "Descubra cómo actuar cuando la base de datos está saturada"
-updated: 2023-09-21
+updated: 2023-10-26
 ---
 
 > [!primary]
@@ -83,11 +83,11 @@ Introduzca los datos de acceso a la base de datos y haga clic en `Conexión`{.ac
 
 Una vez que se haya conectado, se abrirá la siguiente página:
 
-![phpMyAdmin Login](images/pma_login.png){.thumbnail}
+![phpMyAdmin Login](images/pma-main-page.png){.thumbnail}
 
 Haga clic en el botón `"Nombre de la base de datos"`{.action} en la columna izquierda y seleccione `Tamaño`{.action} en la parte superior derecha de la tabla que aparece:
 
-![phpMyAdmin Tablas](images/pma_show_table.png){.thumbnail}
+![phpMyAdmin Tablas](images/pma-check-size.png){.thumbnail}
 
 Las tablas más voluminosas aparecen en la parte superior de la tabla. Identifique estas y vaya al **etapa 2**.
 
@@ -155,7 +155,7 @@ Si se trata de una tabla de overquota o de una voluminosa, puede elegir entre **
 
 Puede realizar estas consultas directamente desde la interfaz **phpMyAdmin**, a través de la pestaña `SQL`{.action} :
 
-![phpMyAdmin SQL request](images/pma_sql_request.png){.thumbnail}
+![phpMyAdmin SQL request](images/pma-sql-menu.png){.thumbnail}
 
 - El pedido **DELETE**: 
 

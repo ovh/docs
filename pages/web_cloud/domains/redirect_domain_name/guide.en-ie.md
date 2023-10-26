@@ -1,7 +1,7 @@
 ---
 title: "Redirecting a domain name managed by OVHcloud"
 excerpt: "Find out about the various redirection types, and how to create one for a domain name managed by OVHcloud"
-updated: 2022-10-06
+updated: 2023-10-24
 ---
 
 ## Objective

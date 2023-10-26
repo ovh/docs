@@ -7,7 +7,7 @@ updated: 2023-07-21
 Here are the most frequently asked questions about Managed Private Registry (Harbor).
 
 ### In which regions is the Private Registry solution available?
-Private Registry is currently available in Western Europe (**GRA**/**DE** regions) and North America (**BHS** region).
+Private Registry is currently available in Western Europe (**GRA**/**DE** regions) and North America (**BHS**/**US-EAST-VA** regions).
 
 ### What are the Managed Private Registry service dependencies?
 
@@ -21,6 +21,7 @@ Find below the exact locations of the dependencies:
 | GRA            |      X       |             GRA7/GRA9             |            GRA             |
 | BHS            |      X       |               BHS5                |            BHS             |
 | DE             |      X       |                DE1                |            DE              |
+| US-EAST-VA     |      X       |            US-EAST-VA-1           |         US-EAST-VA         |
 
 ### What version of Harbor is offered?
 All new Private Registry services expose Harbor 2.x. We regularly backport security and performance patches from the latest versions and will regularly propose new feature upgrades.

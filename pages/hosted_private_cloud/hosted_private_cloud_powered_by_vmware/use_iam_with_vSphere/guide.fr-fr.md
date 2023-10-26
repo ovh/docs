@@ -4,7 +4,6 @@ excerpt: "Découvrez comment connecter votre vSphere avec l'IAM OVHcloud"
 updated: 2023-07-28
 ---
 
-
 ## Objectif
 
 Ce guide vous permettra de connecter votre vSphere avec l'IAM OVHcloud.

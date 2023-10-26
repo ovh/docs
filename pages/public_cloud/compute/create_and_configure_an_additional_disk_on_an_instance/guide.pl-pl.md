@@ -1,12 +1,13 @@
 ---
 title: 'Zarządzanie wolumenem instancji Public Cloud'
 excerpt: 'Dowiedz się, jak przypisać nowy wolumen do instancji Public Cloud'
-updated: 2023-03-03
+updated: 2023-10-16
 ---
 
 > [!primary]
+>
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk "Zgłóś propozycję modyfikacji" na tej stronie.
-> 
+>
 
 ## Wprowadzenie
 
@@ -26,6 +27,7 @@ Może to być przydatne w następujących przypadkach:
 - Dostęp administratora (root) do Twojej instancji przez SSH
 
 > [!warning]
+>
 > Ta funkcja nie jest aktualnie dostępna dla instancji Metal.
 >
 
@@ -58,6 +60,7 @@ W oknie, które się wyświetli wybierz instancję z listy i kliknij `Zatwierdź
 Rozpocznie się proces łączenia dysku z Twoją instancją. Operacja może zająć kilka minut.
 
 > [!warning]
+>
 > Pamiętaj, aby podczas logowania dysk nie opuszczał aktualnej strony w Panelu klienta OVHcloud. Może to zakłócić proces.
 >
 
@@ -70,8 +73,10 @@ Poniższe przykłady zakładają, że jesteś zalogowany jako użytkownik z odpo
 Otwórz [połączenie SSH z Twoją instancją](/pages/public_cloud/compute/public-cloud-first-steps#connect-to-instance), następnie użyj poniższej komendy, aby wyświetlić powiązane dyski.
 
 ```bash
-~$ admin@server-1:~$ lsblk
+lsblk
+```
 
+```console
 NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
 vda 254:0 0 10G 0 disk
 └─vda1 254:1 0 10G 0 part /
@@ -85,18 +90,20 @@ vdb 254:16 0 10G 0 disk
 
 Utwórz partycję na dodatkowym dysku za pomocą poniższych poleceń.
 
-```bash
-~$ admin@server-1:~$ sudo fdisk /dev/vdb
+Jeśli dodatkowy dysk jest mniejszy niż 2 TB:
 
+```bash
+sudo fdisk /dev/vdb
+```
+
+```console
 Welcome to fdisk (util-linux 2.25.2).
 Changes will remain in memory only, until you decide to write them.
 Be careful before using the write command.
 
 Device does not contain a recognized partition table.
 Created a new DOS disklabel with disk identifier 0x95c4adcc.
-```
 
-```bash
 Command (m for help): n
 
 Partition type
@@ -109,9 +116,7 @@ First sector (2048-20971519, default 2048):
 Last sector, +sectors or +size{K,M,G,T,P} (2048-20971519, default 20971519):
 
 Created a new partition 1 of type 'Linux' and of size 10 GiB.
-```
 
-```bash
 Command (m for help): w
 
 The partition table has been altered.
@@ -119,10 +124,48 @@ Calling ioctl() to re-read partition table.
 Syncing disks.
 ```
 
+Jeśli dodatkowy dysk jest większy niż 2 TB:
+
+```bash
+sudo parted /dev/vdb
+```
+
+```console
+GNU Parted 3.5
+Using /dev/vdb
+Welcome to GNU Parted! Type 'help' to view a list of commands.
+(parted) help                                                             
+  align-check TYPE N                       check partition N for TYPE(min|opt) alignment
+  help [COMMAND]                           print general help, or help on COMMAND
+  mklabel,mktable LABEL-TYPE               create a new disklabel (partition table)
+  mkpart PART-TYPE [FS-TYPE] START END     make a partition
+  name NUMBER NAME                         name partition NUMBER as NAME
+  print [devices|free|list,all]            display the partition table, or available devices, or free space, or all found partitions
+  quit                                     exit program
+  rescue START END                         rescue a lost partition near START and END
+  resizepart NUMBER END                    resize partition NUMBER
+  rm NUMBER                                delete partition NUMBER
+  select DEVICE                            choose the device to edit
+  disk_set FLAG STATE                      change the FLAG on selected device
+  disk_toggle [FLAG]                       toggle the state of FLAG on selected device
+  set NUMBER FLAG STATE                    change the FLAG on partition NUMBER
+  toggle [NUMBER [FLAG]]                   toggle the state of FLAG on partition NUMBER
+  unit UNIT                                set the default unit to UNIT
+  version                                  display the version number and copyright information of GNU Parted
+(parted) mklabel gpt                                                      
+(parted) mkpart primary 0 3750G                                           
+Warning: The resulting partition is not properly aligned for best performance: 34s % 2048s != 0s
+Ignore/Cancel? I                                                          
+(parted) quit
+```
+
 Następnie utworz nową partycję `vdb`, używając polecenia:
 
 ```bash
-~$ admin@server-1:~$ sudo mkfs.ext4 /dev/vdb1
+sudo mkfs.ext4 /dev/vdb1
+```
+
+```console
 mke2fs 1.42.12 (29-Aug-2014)
 Creating filesystem with 2621184 4k blocks and 655360 inodes
 Filesystem UUID: 781be788-c4be-462b-b946-88429a43c0cf
@@ -137,16 +180,22 @@ Writing superblocks and filesystem accounting information: done
 
 Zamontuj partycję za pomocą następujących poleceń:
 
+
 ```bash
-admin@server-1:~$ sudo mkdir /mnt/disk
-admin@server-1:~$ sudo mount /dev/vdb1 /mnt/disk/
+sudo mkdir /mnt/disk
+```
+
+```bash
+sudo mount /dev/vdb1 /mnt/disk/
 ```
 
 Sprawdź punkt montowania za pomocą tego polecenia:
 
 ```bash
-~$ admin@server-1:~$ df -h
+df -h
+```
 
+```console
 Filesystem Size Used Avail Use% Mounted on
 /dev/vda1 9.8G 840M 8.6G 9% /
 udev 10M 0 10M 0% /dev
@@ -165,7 +214,10 @@ tmpfs 982M 0 982M 0% /sys/fs/cgroup
 Pobierz UID (blok ID) nowego wolumenu:
 
 ```bash
-~$ admin@server-1:~$ sudo blkid
+sudo blkid
+```
+
+```console
 
 /dev/vda1: UUID="51ba13e7-398b-45f3-b5f3-fdfbe556f62c" TYPE="ext4" PARTUUID="000132ff-01"
 /dev/vdb1: UUID="2e4a9012-bf0e-41ef-bf9a-fbf350803ac5" TYPE="ext4" PARTUUID="95c4adcc-01"
@@ -174,7 +226,7 @@ Pobierz UID (blok ID) nowego wolumenu:
 Otwórz `/etc/fstab` z edytorem tekstu:
 
 ```
-~$ sudo nano /etc/fstab
+sudo nano /etc/fstab
 ```
 
 Dodaj poniższą linię do pliku i zastąp UID Twoją:
@@ -201,7 +253,7 @@ Jeśli dysk jest pokazany tutaj jako offline, musi zostać najpierw zainicjowany
 
 ##### **Zainicjowanie dysku w zarządzaniu dyskami** <a name="initDiskManagement"></a>
 
-Kliknij prawym przyciskiem myszy na dysk i wybierz `Online`{.action}. 
+Kliknij prawym przyciskiem myszy na dysk i wybierz `Online`{.action}.
 
 Jeśli dysk jest pokazany tutaj jako offline, jest to prawdopodobnie wynikiem polityki uruchomionej na instancji. Aby rozwiązać ten problem, kliknij prawym przyciskiem myszy na dysk i wybierz `Online`{.action}.
 
@@ -211,9 +263,9 @@ Kliknij prawym przyciskiem myszy i wybierz tym razem `Zainicjuj dysk`{.action}.
 
 ![offline disk](images/disk-management-03.png){.thumbnail}
 
-Następnie wybierz `MBR`{.action} i kliknij `OK`{.action}.
+Następnie wybierz `MBR`{.action}, jeśli dodatkowy dysk ma mniej niż 2 TB, lub `GPT`{.action}, jeśli ma więcej niż 2 TB, a następnie kliknij `OK`{.action}.
 
-![initialise disk](images/initialise-disk.png){.thumbnail}
+![initialise disk](images/initialize_disk.png){.thumbnail}
 
 ##### **Zainstaluj dysk za pomocą DISKPART** <a name="initDiskpart"></a>
 
@@ -227,19 +279,17 @@ Wpisz `cmd` i kliknij `OK`{.action}, aby otworzyć aplikację wiersza poleceń.
 
 Na zamówienie otwórz DISKPART:
 
-```
+```console
 C:\> diskpart
 ```
 
 Użyj następującej serii poleceń DISKPART, aby umieścić dysk `online`:
 
-```
+```console
 DISKPART> san
 
 SAN Policy : Offline Shared
-```
 
-```
 DISKPART> san policy = OnlineAll
 
 DiskPart successfully changed the SAN policy for the current operating system .
@@ -251,21 +301,15 @@ Disk ### Status Size Free Dyn Gpt
 -------- ------------- ------- ------- --- ---
 Disk 0 Online 200 GB 0 B
 * Disk 1 Offline 10 GB 1024 KB
-```
 
-``` 
 DISKPART> select disk 1
 
 Disk 1 is now the selected disk.
-```
 
-```
 DISKPART> attributes disk clear readonly
 
 Disk attributes cleared successfully.
-```
 
-```
 DISKPART> attributes disk
 
 Current Read-only State : No
@@ -275,9 +319,7 @@ Pagefile Disk : No
 Hibernation File Disk : No
 Crashdump Disk : No
 Clustered Disk : No
-```
 
-```
 DISKPART> online disk
 
 DiskPart successfully onlined the selected disk.
@@ -321,8 +363,10 @@ Jeśli chcesz odłączyć wolumen od instancji, najlepszym rozwiązaniem jest od
 Otwórz [połączenie SSH z Twoją instancją](/pages/public_cloud/compute/public-cloud-first-steps#krok-3-tworzenie-instancji), a następnie wpisz poniższe polecenie, aby wyświetlić powiązane dyski.
 
 ```bash
-~$ admin@server-1:~$ lsblk
+lsblk
+```
 
+```console
 NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
 vda 254:0 0 10G 0 disk
 └ vda1 254:1 0 10G 0 part /
@@ -333,13 +377,13 @@ vdb 8:0 0 10G 0 disk
 Rozpocznij partycję, używając polecenia:
 
 ```bash
-~$ admin@server-1:~$ sudo umount /dev/vdb1
+sudo umount /dev/vdb1
 ```
 
 Usuń ID urządzenia fstab, aby zakończyć proces demontażu. Jeśli nie, partycja zostanie ponownie uruchomiona.
 
 ```bash
-~$ admin@server-1:~$ sudo nano /etc/fstab
+sudo nano /etc/fstab
 ```
 
 Zapisz i wyjdź z edytora.
