@@ -1,7 +1,7 @@
 ---
 title: Zerto Virtual Replication zwischen zwei OVHcloud Rechenzentren verwenden
 excerpt: Erfahren Sie hier, wie Sie Zerto Virtual Replication für Ihren Disaster Recovery Plan einrichten
-updated: 2022-02-11
+updated: 2023-10-23
 ---
 
 > [!primary]
@@ -306,6 +306,8 @@ Im Falle einer schwerwiegenden Störung am Hauptstandort oder einer Übung unter
 > [!warning]
 >
 > Bei einem **LIVE**-Failover mit Zerto Replication wird der Hauptstandort als nicht verfügbar eingestuft. Achten Sie daher auf die Netzwerkkonfiguration, um jeglichen Konflikt in der IP-Adressierung zu vermeiden.
+>
+> Wenn sich die beiden Private Clouds in zwei verschiedenen Ländern befinden, ist es außerdem nicht möglich, Ihren IP-Block von einer Private Cloud in eine andere zu verschieben.
 >
 > Alle Ressourcen, die am sekundären Standort gestartet werden, werden auf Ebene der Datenverarbeitung aktiv.
 >
