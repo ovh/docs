@@ -101,7 +101,7 @@ Wybierz plik kopii zapasowej, klikając `Przeglądaj`{.action} (uwaga, plik nie 
 
 Pozostaw domyślne opcje i kliknij `Uruchom`{.action} import.
 
-![Web Cloud Databases](images/web-cloud-databases-import04.png){.thumbnail}
+![Web Cloud Databases](images/pma-upload-backup-web-cloud-db.png){.thumbnail}
 
 #### Importuj bazę MySQL lub MariaDB za pomocą wiersza poleceń
 

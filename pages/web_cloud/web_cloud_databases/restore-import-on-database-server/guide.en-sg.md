@@ -96,7 +96,7 @@ Select your backup file by clicking `Browse`{.action}. (Please note that the fil
 
 Keep the default options and click `Run`{.action} to start the import.
 
-![Web Cloud Databases](images/web-cloud-databases-import04.png){.thumbnail}
+![Web Cloud Databases](images/pma-upload-backup-web-cloud-db.png){.thumbnail}
 
 #### Exporting a MySQL or MariaDB database from the command line
 

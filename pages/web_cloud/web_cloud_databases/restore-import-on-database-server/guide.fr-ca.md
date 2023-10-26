@@ -96,7 +96,7 @@ Sélectionnez votre fichier de sauvegarde en cliquant `Parcourir`{.action} (atte
 
 Laissez les options par défaut et cliquez sur `Exécuter`{.action} pour lancer l'importation.
 
-![Web Cloud Databases](images/web-cloud-databases-import04.png){.thumbnail}
+![Web Cloud Databases](images/pma-upload-backup-web-cloud-db.png){.thumbnail}
 
 #### Importer ma base MySQL ou MariaDB en ligne de commande
 
