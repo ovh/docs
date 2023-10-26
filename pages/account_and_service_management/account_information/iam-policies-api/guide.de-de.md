@@ -1,7 +1,7 @@
 ---
 title: Verwendung von IAM-Richtlinien mit der OVHcloud API (EN)
 excerpt: "Find out how to give specific access rights to users from an OVHcloud account"
-updated: 2023-06-23
+updated: 2023-10-26
 ---
 
  
@@ -15,7 +15,7 @@ The access management of OVHcloud is based on a policy management system. It is 
 In detail, a policy contains:
 
 - One or more **identities** targeted by this policy. 
-    - It can be account IDs, users or user groups (like the ones used in [Federation](/products/account-and-service-management-account-information-users)
+    - It can be account IDs, users or user groups (like the ones used in [Federation](/products/account-and-service-management-account-information-users)).
 - One or more **resources** impacted by this policy. 
     - A resource is an OVHcloud product that will be impacted by this policy (a domain name, a Nutanix server, a Load Balancer, etc.).
 - One or more **actions** allowed, denied or excepted by this policy.
@@ -119,7 +119,7 @@ The URN can use a `*` wildcard at the beginning or at the end of it.
 - **permissions**: Can be **allow** or **except**: 
   - **allow**: Array of actions allowed for the identities regarding the resources. All actions are denied by default.
   - **deny**: Array of actions explicitely denied for the identities regarding the resources. A denied action will be prevent no matter what others policies could allow
-  - **except**: Extension of the **allow** parameter. Array of actions not to allow even though they are included in the **allow** actions. For instance, this is useful when there is a wildcard allow action but it's necessary to exclude a specific action that otherwise would be included in the wildcard. Contrary to **deny**, **except** is limited to the current policy scope
+  - **except**: Extension of the **allow** parameter. Array of actions not to allow even though they are included in the **allow** actions. For instance, this is useful when there is a wildcard allow action but it is necessary to exclude a specific action that otherwise would be included in the wildcard. Contrary to **deny**, **except** is limited to the current policy scope.
 - **createdAt**: Creation date of the policy.
 - **updateAt**: Last update date of the policy.
 
