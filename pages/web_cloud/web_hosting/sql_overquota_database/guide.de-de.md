@@ -1,7 +1,7 @@
 ---
 title: "Webhosting: Was tun, wenn meine Datenbank voll ist?"
 excerpt: "Erfahren Sie hier, wie Sie vorgehen, wenn Ihre Datenbank voll ist"
-updated: 2023-09-21
+updated: 2023-10-26
 ---
 
 > [!primary]
@@ -82,11 +82,11 @@ Geben Sie die Zugangsdaten für Ihre Datenbank ein und klicken Sie auf `Anmeldun
 
 Sobald die Verbindung hergestellt wurde, wird die folgende Seite angezeigt:
 
-![phpMyAdmin Login](images/pma_login.png){.thumbnail}
+![phpMyAdmin Login](images/pma-main-page.png){.thumbnail}
 
 Klicken Sie in der linken Spalte auf `"Ihr Datenbankname"`{.action} und dann in der rechten oberen Ecke der Tabelle auf `Size`{.action}:
 
-![phpMyAdmin Tables](images/pma_show_table.png){.thumbnail}
+![phpMyAdmin Tables](images/pma-check-size.png){.thumbnail}
 
 Die größten Tabellen werden oben in der sortierten Liste angezeigt. Identifizieren Sie diese, und fahren Sie mit **Schritt 2** fort.
 
@@ -154,7 +154,7 @@ Bei **overquota** oder einer großen Tabelle sind **drei Befehle** verfügbar.
 
 Sie können diese Anfragen über das **phpMyAdmin** Interface, über den Tab `SQL`{.action} durchführen:
 
-![SQL PHPMyAdmin Anfrage](images/pma_sql_request.png){.thumbnail}
+![SQL PHPMyAdmin Anfrage](images/pma-sql-menu.png){.thumbnail}
 
 - Der Befehl **DELETE**:
 

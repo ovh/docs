@@ -1,7 +1,7 @@
 ---
 title: "Hosting Web: il mio database è saturo, cosa fare?"
 excerpt: "Questa guida ti mostra come agire in caso di saturazione del database"
-updated: 2023-09-21
+updated: 2023-10-26
 ---
 
 > [!primary]
@@ -83,11 +83,11 @@ Inserisci le informazioni di accesso al database e clicca su `Connetti`{.action}
 
 Una volta connesso, visualizzi questa pagina:
 
-![phpMyAdmin Login](images/pma_login.png){.thumbnail}
+![phpMyAdmin Login](images/pma-main-page.png){.thumbnail}
 
 Nella colonna di sinistra clicca su `"Nome del database"`{.action} e poi su `Taille`{.action} in alto a destra.
 
-![phpMyAdmin Tables](images/pma_show_table.png){.thumbnail}
+![phpMyAdmin Tables](images/pma-check-size.png){.thumbnail}
 
 Le tavole più voluminose appaiono in cima alla tabella. Identificalo e passa allo **step 2**.
 
@@ -155,7 +155,7 @@ In caso di sovrattassa o di tabella voluminosa, sono disponibili **tre comandi**
 
 Queste richieste possono essere effettuate direttamente dall'interfaccia **phpMyAdmin**, tramite la scheda `SQL`{.action}:
 
-![phpMyAdmin SQL request](images/pma_sql_request.png){.thumbnail}
+![phpMyAdmin SQL request](images/pma-sql-menu.png){.thumbnail}
 
 - Ordine **DELETE**: 
 
