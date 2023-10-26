@@ -14,11 +14,11 @@ La gestion des accès d'OVHcloud est basée sur un système de gestion de « pol
 
 Dans le détail, une politique contient :
 
-- Une ou plusieurs **identités** ciblées par cette politique. 
-    - Il peut s'agir d'identifiants de compte, d'utilisateurs ou de groupes d'utilisateurs (comme ceux utilisés avec la [fédération d'identité](/products/account-and-service-management-account-information-users)). 
-- Une ou plusieurs **ressources** concernées par cette politique. 
+- Une ou plusieurs **identités** ciblées par cette politique.
+    - Il peut s'agir d'identifiants de compte, d'utilisateurs ou de groupes d'utilisateurs (comme ceux utilisés avec la [fédération d'identité](/products/account-and-service-management-account-information-users)).
+- Une ou plusieurs **ressources** concernées par cette politique.
     - Une ressource est un produit OVHcloud qui sera concerné par cette politique (un nom de domaine, un serveur Nutanix, un Load Balancer, etc.)
-- Une ou plusieurs **actions** autorisées ou exclues par cette politique. 
+- Une ou plusieurs **actions** autorisées, interdites ou exclues par cette politique.
     - Les actions sont les droits spécifiques affectés par cette politique (redémarrer le serveur, créer un compte email, résilier un produit, etc).
 
 Par exemple, nous pouvons créer une politique pour donner à un utilisateur appelé John, pour un VPS, l'accès à l'action « reboot ».
@@ -118,7 +118,8 @@ L'URN peut débuter ou finir par un caractère *wildcard* `*`.
 - **resources**: Les ressources concernées par la politique. Elles sont spécifiées par un URN, **resource** pour une ressource, **resourceGroup** pour un groupe de ressources.
 - **permissions**: 
     - **allow**: Ensemble des actions autorisées pour les identités concernant les ressources. Toutes les actions sont refusées par défaut.
-    - **except**: Extension du paramètre d'autorisation **allow**. Ensemble d'actions à ne pas autoriser même si elles sont incluses dans les actions **allow**. Par exemple, ceci est utile lorsqu'il y a une action autorisée par un wildcard mais qu'il est nécessaire d'exclure une action spécifique qui serait autrement incluse dans le wildcard.
+    - **deny**: Ensemble des actions explicitement interdites pour les identitités concernant les ressources. Une action interdite sera refusée quelque soient les actions autorisées dans d'autres politiques.
+    - **except**: Extension du paramètre d'autorisation **allow**. Ensemble d'actions à ne pas autoriser même si elles sont incluses dans les actions **allow**. Par exemple, ceci est utile lorsqu'il y a une action autorisée par un wildcard mais qu'il est nécessaire d'exclure une action spécifique qui serait autrement incluse dans le wildcard. Contrairement au **deny**, **except** est limité au périmètre d'une seule politique.
 - **createdAt**: Date de création de la politique.
 - **updateAt**: Dernière mise à jour de la politique.
 

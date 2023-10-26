@@ -18,7 +18,7 @@ In detail, a policy contains:
     - It can be account IDs, users or user groups (like the ones used in [Federation](/products/account-and-service-management-account-information-users)
 - One or more **resources** impacted by this policy. 
     - A resource is an OVHcloud product that will be impacted by this policy (a domain name, a Nutanix server, a Load Balancer, etc.).
-- One or more **actions** allowed or excepted by this policy.
+- One or more **actions** allowed, denied or excepted by this policy.
     - Actions are the specific rights affected by this policy (reboot a server, create an email account, cancel a subscription, etc.)
 
 For example, we can create a policy to give to a user called John, for a VPS, access to the action "reboot".
@@ -116,9 +116,10 @@ The URN can use a `*` wildcard at the beginning or at the end of it.
 - **readOnly**: If true, it indicates that the policy cannot be edited. It often represents policies managed by OVHcloud.
 - **identities**: The identities concerned by the policy. They are specified by a URN. **account**:**account-id** for the account, **user**:**account-id**/**username** for an account user, **group**:**account-id**/**username** for a user group.
 - **resources**: The resources concerned by the policy. They are specified by a URN. **resource** for a resource, **resourceGroup** for a resource group.
-- **permissions**: Can be **allow** or **except**: 
+- **permissions**: Can be **allow**, **deny** or **except**:
   - **allow**: Array of actions allowed for the identities regarding the resources. All actions are denied by default.
-  - **except**: Extension of the **allow** parameter. Array of actions not to allow even though they are included in the **allow** actions. For instance, this is useful when there is a wildcard allow action but it's necessary to exclude a specific action that otherwise would be included in the wildcard.
+  - **deny**: Array of actions explicitely denied for the identities regarding the resources. A denied action will be prevent no matter what others policies could allow
+  - **except**: Extension of the **allow** parameter. Array of actions not to allow even though they are included in the **allow** actions. For instance, this is useful when there is a wildcard allow action but it's necessary to exclude a specific action that otherwise would be included in the wildcard. Contrary to **deny**, **except** is limited to the current policy scope
 - **createdAt**: Creation date of the policy.
 - **updateAt**: Last update date of the policy.
 
