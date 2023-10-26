@@ -117,7 +117,7 @@ Selon le logiciel utilisé, il est possible que cette connexion nécessite d'êt
 
 OVHcloud fournit un outil en ligne pour la gestion des bases de données : phpMyAdmin. Pour trouver le lien d'accès à cette application, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) puis rendez-vous dans la partie `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} dans la colonne de gauche, choisissez l'offre d'hébergement sur laquelle vous souhaitez récupérer les informations de connexion à votre base de données puis cliquez sur l'onglet `Bases de données`{.action}. Dans le tableau qui s'affiche, cliquez sur le bouton `...`{.action} à droite de la base de données concernée, puis cliquez sur `Accéder à phpMyAdmin`{.action} dans le menu déroulant.
 
-![phpMyAdmin Go Login](images/pma_interface.png){.thumbnail}
+![phpMyAdmin Go Login](images/pma-interface-login.png){.thumbnail}
 
 Renseignez les informations d'accès à votre base de données puis cliquez sur `Connexion`{.action}.
 
