@@ -1,7 +1,7 @@
 ---
 title: Troubleshooting common database errors
 excerpt: Find out how to diagnose the most common cases of database errors
-updated: 2022-12-09
+updated: 2023-10-26
 ---
 
 ## Objective
@@ -232,7 +232,7 @@ To resolve this issue, you can use the following methods:
 
 This error message may appear when connecting to your database by [phpMyAdmin](/pages/web_cloud/web_hosting/sql_create_database#accessing-the-phpmyadmin-interface). It indicates that the credentials entered are incorrect.
 
-![access_denied_for_user](images/access_denied_for_user.png){.thumbnail}
+![access_denied_for_user](images/pma-error-hy000-1045.png){.thumbnail}
 
 In this situation, [check the credentials entered](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server#instructions) and change your [database password](/pages/web_cloud/web_hosting/sql_change_password) if necessary.
 
@@ -263,7 +263,7 @@ In this situation, you will need to [optimise your databases](/pages/web_cloud/w
 
 This error message appears when [connecting to phpMyAdmin](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server) if the server name entered is incorrect.
 
-![name_or_service_not_known](images/name_or_service_not_known.png){.thumbnail}
+![name_or_service_not_known](images/pma-error-hy000-1045.png){.thumbnail}
 
 Check the server name for the relevant database service in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we).
 

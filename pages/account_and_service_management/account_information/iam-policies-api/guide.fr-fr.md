@@ -4,8 +4,6 @@ excerpt: "Découvrez comment donner des droits d'accès spécifiques aux utilisa
 updated: 2023-10-26
 ---
 
- 
-
 ## Objectif
 
 Ce guide explique comment fournir des droits d'accès spécifiques aux utilisateurs d'un compte OVHcloud.
@@ -506,6 +504,60 @@ Il est fortement recommandé de spécifier le **resourceType** comme paramètre 
 - **description**: Description de l'action
 - **resourceType**: Le type de ressource ciblé par l'action
 - **categories**: Les catégories de cette action (CREATE, READ, EDIT, OPERATE, DELETE)
+
+#### Groupe de permissions
+
+OVHcloud met à disposition des groupes de permissions regroupant toutes les actions nécessaires pour des cas d'usage précis.
+
+Les groupes de permissions sont accessible via l'API suivante :
+
+|**Méthode**|**Chemin**|**Description**|
+| :-: | :-: | :-: |
+|GET|/iam/permissionsGroup|Récupérer tous les groupes de permissions|
+
+```json
+{
+    "id": "00000000-0000-0000-0001-000000000001",
+    "urn": "urn:v1:eu:permissionsGroup:ovh:globalAdmin",
+    "name": "globalAdmin",
+    "owner": "ovh",
+    "description": "Give global admin access across all OVHcloud products",
+    "permissions": {
+        "allow": [
+        {
+            "action": "*"
+        }
+        ]
+    },
+    "createdAt": "2023-03-14T09:10:57.40418Z",
+    "updatedAt": null
+},
+```
+
+Ces groupes de permissions peuvent ensuite être utilisés en complément ou à la place des actions unitaires dans les politiques d'accès :
+
+```json
+{
+  "description": "",
+  "identities": [...],
+  "name": "",
+  "permissions": {
+    "allow": [
+      {
+        "action": "..."
+      },
+    ]
+  },
+  "permissionsGroups": [
+      {
+        "urn": "urn:v1:eu:permissionsGroup:ovh:globalAdmin"
+      }
+  ],
+  "resources": [...]
+}
+```
+
+La description complète des groupes de permissions est disponible dans la [documentation dédiée](/pages/account_and_service_management/account_information/iam-permissionsGroups)
 
 ### Types de ressources
 

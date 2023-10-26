@@ -1,7 +1,7 @@
 ---
 title: "Moja strona jest powolny. Co robić? " 
 excerpt: "Dowiedz się, skąd pochodzą opóźnienia Twojej strony WWW i jak je rozwiązać"
-updated: 2022-11-17
+updated: 2023-10-26
 ---
 
  
@@ -159,7 +159,7 @@ Jeśli korzystasz z bazy danych w ofercie **Web Cloud Databases**, zapoznaj się
 
 Jeśli logowanie się powiodło się, otrzymasz następujący interfejs:
 
-![PHPMyAdmin](images/pma.png){.thumbnail}
+![PHPMyAdmin](images/pma-main-page.png){.thumbnail}
 
 > [!warning]
 >

@@ -1,7 +1,7 @@
 ---
 title: Resolver los errores más frecuentes asociados a las bases de datos 
 excerpt: Diagnóstico de los errores más comunes relacionados con las bases de datos
-updated: 2022-12-09
+updated: 2023-10-26
 ---
 
 > [!primary]
@@ -240,7 +240,7 @@ Para resolver esta anomalía, puede:
 
 Este mensaje de error puede aparecer al conectarse a la base de datos por [PhpMyAdmin](/pages/web_cloud/web_hosting/sql_create_database#acceder-a-la-interfaz-phpmyadmin). Indica que los identificadores introducidos son incorrectos.
 
-![access_denied_for_user](images/access_denied_for_user.png){.thumbnail}
+![access_denied_for_user](images/pma-error-hy000-1045.png){.thumbnail}
 
 En ese caso, [compruebe los identificadores indicados](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server#procedimiento) y cambie si es necesario la [contraseña de su base de datos](/pages/web_cloud/web_hosting/sql_change_password).
 
@@ -271,7 +271,7 @@ En ese caso, deberá [optimizar las bases de datos](/pages/web_cloud/web_cloud_d
 
 Este mensaje de error aparece durante [conexión a PhpMyAdmin](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server#procedimiento) cuando el nombre del servidor introducido es incorrecto.
 
-![name_or_service_not_known](images/name_or_service_not_known.png){.thumbnail}
+![name_or_service_not_known](images/pma-error-hy000-1045.png){.thumbnail}
 
 Compruebe el nombre del servidor que quiera registrar en su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
 
