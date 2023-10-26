@@ -1,7 +1,7 @@
 ---
 title: "Meine Website lädt zu langsam. Was soll ich tun?" 
 excerpt: "Ermitteln Sie den Ursprung der Ladezeiten Ihrer Website und erfahren Sie, wie Sie diese Situation verbessern"
-updated: 2022-11-17
+updated: 2023-10-26
 ---
 
  
@@ -158,7 +158,7 @@ Wenn Sie eine Datenbank mit **Web Cloud Databases** nutzen, lesen Sie unsere Anl
 
 Wenn die Verbindung erfolgreich war, gelangen Sie auf folgendes Interface:
 
-![PHPMyAdmin](images/pma.png){.thumbnail}
+![PHPMyAdmin](images/pma-main-page.png){.thumbnail}
 
 > [!warning]
 >
