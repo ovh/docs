@@ -1,7 +1,7 @@
 ---
 title: Przywracanie i importowanie bazy danych na serwer baz danych
 excerpt: 'Dowiedz się, jak przywrócić i importować bazę danych'
-updated: 2023-02-15
+updated: 2023-10-26
 ---
 
 > [!primary]

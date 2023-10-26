@@ -1,7 +1,7 @@
 ---
 title: Ripristinare e importare un database sul tuo server di database
 excerpt: Come ripristinare e importare il database
-updated: 2023-02-15
+updated: 2023-10-26
 ---
 
 > [!primary]

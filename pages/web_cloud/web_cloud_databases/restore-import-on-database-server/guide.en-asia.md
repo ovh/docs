@@ -1,7 +1,7 @@
 ---
 title: 'Restoring and importing a database to your database server'
 excerpt: 'Find out how to restore and import your database'
-updated: 2023-02-15
+updated: 2023-10-26
 ---
 
 ## Objective

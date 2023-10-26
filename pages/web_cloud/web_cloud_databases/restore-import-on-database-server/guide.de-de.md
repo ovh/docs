@@ -1,7 +1,7 @@
 ---
 title: 'Datenbank auf Ihrem Datenbankserver wiederherstellen und importieren'
 excerpt: 'Erfahren Sie hier, wie Sie Ihre Datenbank wiederherstellen und importieren'
-updated: 2023-02-15
+updated: 2023-10-26
 ---
 
 ## Ziel

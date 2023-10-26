@@ -1,7 +1,7 @@
 ---
 title: 'Restaurer et importer une base de données sur votre serveur de bases de données'
 excerpt: 'Découvrez comment restaurer et importer votre base de données'
-updated: 2023-02-15
+updated: 2023-10-26
 ---
 
 ## Objectif

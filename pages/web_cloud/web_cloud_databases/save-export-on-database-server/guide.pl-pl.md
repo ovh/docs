@@ -1,7 +1,7 @@
 ---
 title: 'Tworzenie i eksportowanie bazy danych na serwerze baz danych'
 excerpt: 'Dowiedz się, jak tworzyć kopie zapasowe i eksportować bazę danych'
-updated: 2023-02-15
+updated: 2023-10-26
 ---
 
 > [!primary]
@@ -69,7 +69,7 @@ Po zalogowaniu się do phpMyAdmin kliknij nazwę bazy danych, którą chcesz wye
 
 Masz dwa możliwe sposoby eksportu. Jeśli nie potrzebujesz określonego trybu, zalecamy użycie trybu **szybkiego** w formacie **SQL**.
 
-![Web Cloud Databases](images/web-cloud-databases-export01.png){.thumbnail}
+![Web Cloud Databases](images/pma-export-backup-web-cloud-db.png){.thumbnail}
 
 ##### 1\.2 Eksportowanie bazy MySQL lub MariaDB z wiersza poleceń
 
