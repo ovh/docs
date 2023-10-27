@@ -13,7 +13,7 @@ The access management of OVHcloud is based on a policy management system. It is 
 In detail, a policy contains:
 
 - One or more **identities** targeted by this policy. 
-    - It can be account IDs, users or user groups (like the ones used in [Federation](/products/account-and-service-management-account-information-users)
+    - It can be account IDs, users or user groups (like the ones used in [Federation](/products/account-and-service-management-account-information-users)).
 - One or more **resources** impacted by this policy. 
     - A resource is an OVHcloud product that will be impacted by this policy (a domain name, a Nutanix server, a Load Balancer, etc.).
 - One or more **actions** allowed or excepted by this policy.
@@ -27,7 +27,6 @@ For example, we can create a policy to give to a user called John, for a VPS, ac
 
 ## Requirements
 
-To set up a policy, you will require:
 
 - You have an [OVHcloud account](/pages/account_and_service_management/account_information/ovhcloud-account-creation).
 - You know [how to manage account users](/pages/account_and_service_management/account_information/ovhcloud-users-management).
@@ -556,7 +555,7 @@ These permission groups can then be used in addition to or in place of unitary a
 }
 ```
 
-A full description of the permission groups can be found in our [dedicated documentation](/pages/account_and_service_management/account_information/iam-permissionsGroups).
+A full description of the permission groups can be found in our [dedicated documentation](/pages/account_and_service_management/account_information/iam-permission-groups).
 
 ### Resource types
 
