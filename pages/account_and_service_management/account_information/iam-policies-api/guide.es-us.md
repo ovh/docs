@@ -27,7 +27,6 @@ For example, we can create a policy to give to a user called John, for a VPS, ac
 
 ## Requirements
 
-To set up a policy, you will require:
 
 - You have an [OVHcloud account](/pages/account_and_service_management/account_information/ovhcloud-account-creation).
 - You know [how to manage account users](/pages/account_and_service_management/account_information/ovhcloud-users-management).
@@ -557,7 +556,7 @@ These permission groups can then be used in addition to or in place of unitary a
 }
 ```
 
-A full description of the permission groups can be found in our [dedicated documentation](/pages/account_and_service_management/account_information/iam-permissionsGroups).
+A full description of the permission groups can be found in our [dedicated documentation](/pages/account_and_service_management/account_information/iam-permission-groups).
 
 ### Resource types
 

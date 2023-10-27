@@ -557,7 +557,7 @@ Ces groupes de permissions peuvent ensuite être utilisés en complément ou à 
 }
 ```
 
-La description complète des groupes de permissions est disponible dans la [documentation dédiée](/pages/account_and_service_management/account_information/iam-permissionsGroups)
+La description complète des groupes de permissions est disponible dans la [documentation dédiée](/pages/account_and_service_management/account_information/iam-permission-groups)
 
 ### Types de ressources
 

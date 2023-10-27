@@ -17,7 +17,7 @@ In order to do this, you will use [Streamlit](https://streamlit.io/), a Python f
 - You have created a [user for AI Deploy](/pages/public_cloud/ai_machine_learning/gi_01_manage_users).
 - You have [Docker](https://www.docker.com/get-started) installed on your machine.
 - You have knowledge about building images with [Dockerfile](https://docs.docker.com/engine/reference/builder/).
-- You have weights obtained from training the YOLOv8 model on the [Rock Paper Scissors Dataset](https://universe.roboflow.com/roboflow-58fyf/rock-paper-scissors-sxsw). You can use the tutorial [Train YOLOv8 to play rock paper scissors](/pages/public_cloud/ai_machine_learning/notebook_tuto_15_rock-paper-scissors/) to generate these weights.
+- You have weights obtained from training the YOLOv8 model on the [Rock Paper Scissors Dataset](https://universe.roboflow.com/roboflow-58fyf/rock-paper-scissors-sxsw). You can use the tutorial [Train YOLOv8 to play rock paper scissors](/pages/public_cloud/ai_machine_learning/notebook_tuto_15_rock-paper-scissors) to generate these weights.
 
 ## Instructions
 
