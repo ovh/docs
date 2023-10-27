@@ -4,6 +4,29 @@ excerpt: Scopri come creare task CRON per automatizzare le operazioni pianificat
 updated: 2022-12-01
 ---
 
+<style>
+ pre {
+     font-size: 14px !important;
+ }
+ pre.bgwhite {
+   background-color: #fff !important;
+   color: #000 !important;
+   font-family: monospace !important;
+   padding: 5px !important;
+   margin-bottom: 5px !important;
+ }
+ pre.bgwhite code {
+   background-color: #fff !important;
+   border: solid 0px transparent !important;
+   font-family: monospace !important;
+   font-size: 0.90em !important;
+   color: #000 !important;
+ }
+ .small {
+     font-size: 0.90em !important;
+ }
+</style>
+
 > [!primary]
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
 >
