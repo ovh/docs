@@ -34,8 +34,6 @@ It is now possible to use ARIN or RIPE IP blocks on any OVHcloud campus. This en
 
 Unlike the previous policy, where an ARIN block could only be used with OVHcloud services located in Canada or the USA, and a RIPE block could only be used with OVHcloud services located in Europe, this restriction has been lifted.   
 
-An ARIN block can only be used with OVHcloud services located in Canada or the USA, while a RIPE block can only be used with OVHcloud services located in Europe.
-
 To be considered as a valid owned block, imported blocks must be one of the following types :
 
 - ARIN (object «Network type »)
