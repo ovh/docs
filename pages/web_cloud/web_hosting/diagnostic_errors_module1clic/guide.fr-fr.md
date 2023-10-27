@@ -51,7 +51,7 @@ Si ce message apparaît quand vous lancez l'installation de votre module, c'est 
 
 #### Solution n°1 : commander une nouvelle base de données
 
-Commander une nouvelle base de données reste la solution la plus simple et viable. En commandant une nouvelle [base de données Start SQL](https://www.ovhcloud.com/fr/web-hosting/options/start-sql/), vous pouvez acheter la base de données qu’il vous faut au meilleur prix, puis relancer l’installation du module en 1 clic rapidement. Si vous avez besoin de plus d’espace ( supérieur à 1 GO ) , optez pour notre service [web cloud databases](https://www.ovhcloud.com/fr/web-cloud/databases/). 
+Commander une nouvelle base de données reste la solution la plus simple et viable. En commandant une nouvelle [base de données Start SQL](https://www.ovhcloud.com/fr/web-hosting/options/start-sql/), vous pouvez acheter la base de données qu’il vous faut au meilleur prix, puis relancer l’installation du module en 1 clic rapidement. Si vous avez besoin de plus d’espace (supérieur à 1 GO) , optez pour notre service [web cloud databases](https://www.ovhcloud.com/fr/web-cloud/databases/). 
 
 Dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur `Web Cloud`{.action}, puis sur `Hébergements`{.action}. Dans `Bases de données`{.action}, cliquez sur `Actions`{.action} :
 
@@ -61,7 +61,7 @@ Une fois terminé, relancez l'installation d'un nouveau module.
 
 > [!primary]
 >
-> Consultez nos offres de base de données achetables à l’unité ( [start SQL](https://www.ovhcloud.com/fr/web-hosting/options/start-sql/) ) , ainsi que notre service plus puissant ( [web cloud databases](https://www.ovhcloud.com/fr/web-cloud/databases/) ) . 
+> Consultez nos offres de base de données achetables à l’unité ([start SQL](https://www.ovhcloud.com/fr/web-hosting/options/start-sql/)), ainsi que notre service plus puissant ([web cloud databases](https://www.ovhcloud.com/fr/web-cloud/databases/)) . 
 >
 
 #### Solution n°2 : modifier votre offre d'hébergement
@@ -236,7 +236,7 @@ Dans l'onglet  `1-click modules`, lorsque vous cliquez sur le lien de votre site
 
 Cette anomalie peut avoir plusieurs causes :
 
-- Vérifiez que le nom de domaine que vous êtes en train de consulter ( « mondomaine.fr » ) est bien celui sur lequel vous venez de faire l'installation du module.
+- Vérifiez que le nom de domaine que vous êtes en train de consulter (« mondomaine.fr ») est bien celui sur lequel vous venez de faire l'installation du module.
 
 - Vous avez effectué récemment un changement dans votre zone ou vos serveurs [DNS](/pages/web_cloud/domains/dns_zone_edit#comprendre-la-notion-de-dns) ou un [transfert de nom de domaine](/pages/web_cloud/domains/transfer_incoming_generic_domain). Patientez jusqu'à ce que ces opérations soient finalisées (48 heures pour des changements dans vos DNS). Pensez également à redémarrer vos appareils (PC, smartphone, box, etc.) et à vider le cache de votre navigateur.
 
