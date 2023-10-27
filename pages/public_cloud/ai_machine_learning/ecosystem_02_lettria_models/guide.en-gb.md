@@ -4,6 +4,19 @@ excerpt: Learn how to use Lettria models
 updated: 2023-08-08
 ---
 
+<style>
+details>summary {
+    color:#08c !important;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
+
 ## Objective
 
 OVHcloud offers different Artificial Intelligence services through its AI Partners Ecosystem. You will benefit from a catalogue of **ready-to-use applications** provided by our partners which you will easily be able to deploy according to your needs through **AI Deploy**.
