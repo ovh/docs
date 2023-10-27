@@ -8,7 +8,7 @@ updated: 2022-03-30
 
 You can manage Public Cloud services using commands sent from the system console, once you have downloaded and installed OpenStack tools.
 
-With the OpenStack API, you can automate your management by generating scripts. The OpenStack Nova client can be used to manage instances and disk space. With the OpenStack Glance client, you can manage images and backups, while the Swift client can be used to manage object storage space.
+With the OpenStack API, you can automate your management by generating scripts. 
 
 **Find out how to install these OpenStack tools.**
 
@@ -28,12 +28,14 @@ Update the packet cache using the `apt update` command:
 apt update
 ```
 
-Use the command below to install the OpenStack client, as well as Nova client (compute application) and Swift using python3-pip:
+Use the command below to install the OpenStack client
 
 ```sh
-apt install python3-pip -y
-pip3 install --upgrade pip
-pip3 install python-openstackclient python-novaclient python-swiftclient
+$ apt install python3-pip python3-venv -y
+$ python3 -m venv env
+$ source env/bin/activate
+(env)$ pip3 install --upgrade pip
+(env)$ pip3 install python-openstackclient
 ```
 
 After you have completed this step, we recommend creating a special user without root access.
@@ -42,7 +44,6 @@ To access the help tools, run the following command:
 
 ```sh
 openstack --help
-nova help
 ```
 
 > [!primary]
@@ -60,12 +61,14 @@ Update the packet cache using the following command:
 yum update -y
 ```
 
-Use the command below to install the OpenStack client, as well as Nova client (compute application) and Swift using python3-pip:
+Use the command below to install the OpenStack client
 
 ```sh
 yum install python3-pip -y
-pip3 install --upgrade pip
-pip3 install python-openstackclient python-novaclient python-swiftclient
+$ python3 -m venv env
+$ source env/bin/activate
+(env)$ pip3 install --upgrade pip
+(env)$ pip3 install python-openstackclient
 ```
 
 After you have completed this step, we recommend creating a special user without root access.
@@ -74,7 +77,6 @@ To access the help tools, run the following command:
 
 ```sh
 openstack --help
-nova help
 ```
 
 > [!primary]
@@ -144,27 +146,10 @@ Open the terminal and execute the following command:
 brew install openstackclient
 ```
 
-Use the command below to install the Nova client (compute application) and Swift:
-
-For Python2:
-
-```sh
-pip install python-novaclient
-pip install python-swiftclient
-```
-
-For Python3:
-
-```sh
-pip3 install python-novaclient
-pip3 install python-swiftclient
-```
-
 To access the help tools, run the following command:
 
 ```sh
 openstack --help
-nova help
 ```
 
 ## Go further
