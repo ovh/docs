@@ -47,7 +47,7 @@ If you forget your password, you will need to reset it.
 If the CLIs are already installed, check if they are working properly:
 
 ```bash
-admin@vpsxxxxxx:~$ openstack server list
+(env)$ openstack server list
 +--------------------------------------+------------+--------+-----------------------------------------------+-----------+--------+
 | ID                                   | Name       | Status | Networks                                      | Image     | Flavor |
 +--------------------------------------+------------+--------+-----------------------------------------------+-----------+--------+
