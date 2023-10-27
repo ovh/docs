@@ -7,7 +7,7 @@ updated: 2023-10-13
 ## Objectif
 
 Les « [modules en un clic](/pages/web_cloud/web_hosting/cms_install_1_click_modules) » permettent de créer votre site web de façon simple et rapide. Parfaite pour les personnes ne possédant pas de connaissances techniques, cette technologie vous permet de créer votre site web en utilisant les CMS (Content Management System) les plus connus, comme Wordpress, Joomla!, Drupal ou PrestaShop.
-Mais si des erreurs de de configurations sont commises, il est possible que l’installation du « module en un clic » échoue et occasionne des anomalies.
+Mais si des erreurs de configurations sont commises, il est possible que l’installation du « module en un clic » échoue et occasionne des anomalies.
 
 
 **Découvrez comment diagnostiquer les cas les plus courants d'erreurs liées aux créations de modules en 1 clic**
