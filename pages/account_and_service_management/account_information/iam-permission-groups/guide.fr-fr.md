@@ -32,7 +32,7 @@ Les groupes de permissions sont accessibles via l'API suivante :
 
 |**Méthode**|**Chemin**|**Description**|
 | :-: | :-: | :-: |
-|GET|/iam/reference/resource/type|Récupérer tous les groupes de permissions|
+|GET|/iam/permissionsGroup|Récupérer tous les groupes de permissions|
 
 ```json
 {

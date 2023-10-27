@@ -550,7 +550,7 @@
             + [Change your Block Storage volume type](public_cloud/compute/switch_volume_type)
         + [Tutorials](public-cloud-compute-tutorials)
             + [Configuring additional SSH keys](public_cloud/compute/configuring_additional_ssh_keys)
-            + [Changing the admin password on a Windows server](bare_metal_cloud\virtual_private_servers\resetting_a_windows_password)
+            + [Changing the admin password on a Windows server](bare_metal_cloud/virtual_private_servers/resetting_a_windows_password)
             + [How to use Terraform](public_cloud/compute/how_to_use_terraform)
             + [Using OVHcloud Object Storage as Terraform Backend to store your Terraform state](public_cloud/compute/use_object_storage_terraform_backend_state)
             + [Upgrading your operating system](public_cloud/compute/upgrading_operating_system)
