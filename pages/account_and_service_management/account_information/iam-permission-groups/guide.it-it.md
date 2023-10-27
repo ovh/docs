@@ -34,7 +34,7 @@ The permission groups are accessible via the following API:
 
 |**Method**|**Path**|**Description**|
 | :-: | :-: | :-: |
-|GET|/iam/reference/resource/type|Retrieve all permission groups|
+|GET|/iam/permissionsGroup|Retrieve all permission groups|
 
 ```json
 {
