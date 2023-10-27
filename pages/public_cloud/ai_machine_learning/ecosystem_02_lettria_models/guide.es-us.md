@@ -186,7 +186,7 @@ The Emotion Analysis API is an effective solution for businesses looking to enha
 By reaching the root endpoint `/` of your API, you can access the full API documentation.
 
 <details>
-<summary>The model is trained to detect the folowing emotions</summary>
+<summary>The model is trained to detect the following emotions</summary>
 
 ```json
 {
