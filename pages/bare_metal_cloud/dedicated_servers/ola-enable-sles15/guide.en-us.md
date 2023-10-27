@@ -1,7 +1,7 @@
 ---
 title: How to Configure Your NIC for OVHcloud Link Aggregation in SLES 15
 excerpt: Enable OVHcloud Link Aggregation in your SLES 15 server
-updated: 2023-03-07
+updated: 2023-10-26
 ---
 
 ## Objective
@@ -26,7 +26,7 @@ Next, click the `From a Java applet (KVM)`{.action} button (2).
 
 A JNLP program will be downloaded. Open the program to enter the IPMI. Log in using valid credentials for the server.
 
-By default, using an OVHcloud template, the NICs will be named *eth1* and *eth2*. If you are not using an OVHcloud template, you can find the names of your interfaces using the following command:
+By default, using an OVHcloud template, the NICs will be named *eth0* and *eth1*. If you are not using an OVHcloud template, you can find the names of your interfaces using the following command:
 
 ```bash
 ip a
@@ -50,21 +50,21 @@ STARTMODE='onboot'
 BOOTPROTO='static'
 IPADDR='10.0.0.1/24'
 BONDING_MASTER='yes'
-BONDING_SLAVE_0='eth1'
-BONDING_SLAVE_1='eth2'
+BONDING_SLAVE_0='eth0'
+BONDING_SLAVE_1='eth1'
 BONDING_MODULE_OPTS='mode=802.3ad miimon=100 xmit_hash_policy=layer3+4'
 ```
 
 > [!primary]
 >
 > You can use any private IP address and subnet you wish.
-> If your server has more than 2 network interfaces, you can add them in the configuration, by incrementing the number of the `BONDING_SLAVE_` parameter, for example, `BONDING_SLAVE_2='eth3'`.
+> If your server has more than 2 network interfaces, you can add them in the configuration, by incrementing the number of the `BONDING_SLAVE_` parameter, for example, `BONDING_SLAVE_2='eth2'`.
 >
 
-Save and exit the file once you have confirmed that the information is correct.  Next, you need to configure both physical interfaces. By default, on an OVHcloud server, only *eth1* will have a configuration file. Open it using the following command:
+Save and exit the file once you have confirmed that the information is correct.  Next, you need to configure both physical interfaces. By default, on an OVHcloud server, only *eth0* will have a configuration file. Open it using the following command:
 
 ```bash
-vi /etc/sysconfig/network/ifcfg-eth1
+vi /etc/sysconfig/network/ifcfg-eth0
 ```
 
 By default, the file will appear as follows:
@@ -95,9 +95,9 @@ STARTMODE='hotplug'
 > The hardware address (MAC address) of the NIC can be found using the `ip a` command that you used earlier.  It will be the number next to `link/ether` in the output.
 >
 
-The *#* in front of a line means that the server will ignore this line when reading the file. Thus, please ignore these lines entirely when creating your interface file for *eth1*.
+The *#* in front of a line means that the server will ignore this line when reading the file. Thus, please ignore these lines entirely when creating your interface file for *eth0*.
 
-Create the *eth2* configuration file using the following command:
+Create the *eth1* configuration file using the following command:
 
 ```bash
 vi /etc/sysconfig/network-scripts/ifcfg-eth2
