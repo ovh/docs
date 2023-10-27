@@ -59,7 +59,7 @@ Esta tecnología le permite mover las direcciones IP de un servidor a otro en me
 > Sólo se podrá trasladar un bloque de tamaño único (/32) de un servidor dedicado a un VPS.
 >
 
-Conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), acceda al menú `Bare Metal Cloud`{.action} y abbra `IP`{.action}.
+Conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), haga clic en el menú `Bare Metal Cloud`{.action} y abra la sección `Network`{.action}. A continuación, haga clic en `IP`{.action}.
 
 Haga clic en la pestaña `Additional IP`{.action}.
 

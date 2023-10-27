@@ -1,7 +1,7 @@
 ---
-title: 'Using Zerto between OVHcloud and a third party platform'
-excerpt: 'Learn how to setup Zerto between your OVHcloud Private Cloud and another platform'
-updated: 2023-06-10
+title: Using Zerto between OVHcloud and a third party platform
+excerpt: Learn how to setup Zerto between your OVHcloud Private Cloud and another platform
+updated: 2023-10-23
 ---
 
 ## Objective
@@ -15,14 +15,24 @@ Check out [Zerto between two OVHcloud datacenters](/pages/hosted_private_cloud/h
 
 ## Requirements
 
-- one public IP, available on the target Hosted Private Cloud for the VPN endpoint
-- a Zerto platform installed on the on-premises platform
+- One public IP, available on the target Hosted Private Cloud for the VPN endpoint
+- A Zerto platform installed on the on-premises platform
 - VRAs (Virtual Replication Appliances) on both sides that are able to connect to the counterpart on TCP ports 4007 and 4008
 - Zerto administration consoles or ZVMs (Zerto Virtual Managers) that are able to connect to the counterpart on TCP port 9081
 
+>[!primary]
+>
+> For an operational Zerto installation:
+>
+> [Download Zerto](https://www.zerto.com/myzerto/login/?redirect_to=%2Fmyzerto%2Fsupport%2Fdownloads%2F). (You need to have an account.)
+>
+> [Install Zerto Documentation](https://help.zerto.com/bundle/Install.VC.HTML/page/Installing_the_Zerto_Solution.htm).
+>
+
 >[!warning]
 >
-> OVHcloud supports the N-1 version of Zerto.
+> OVHcloud supports the N-1 version of Zerto (currently up to and including version 9.5).
+>
 > You can find the different versions available here: <https://help.zerto.com/kb/000004585>.
 >
 
@@ -34,16 +44,16 @@ Check out [Zerto between two OVHcloud datacenters](/pages/hosted_private_cloud/h
 
 On-premises side:
 
-- VPN endpoint public IP adress (1)
-- VPN endpoint internal IP adress (2)
-- ZVM internal IP adress (3)
+- VPN endpoint public IP address (1)
+- VPN endpoint internal IP address (2)
+- ZVM internal IP address (3)
 - ZVM internal network (4)
 
 OVHcloud side:
 
-- VPN endpoint public IP adress (5)
+- VPN endpoint public IP address (5)
 - ZVM internal network (6)
-- ZVM internal IP adress (7)
+- ZVM internal IP address (7)
 
 ## Instructions
 
@@ -56,7 +66,7 @@ OVHcloud side:
 
 ### Step 1: Activate Zerto features.
 
-It is easy to activate Zerto features from the OVHcloud Control Panel. You just need to select the datacentre linked to the Hosted Private Cloud solution that you want to use, from the `Disaster Recovery Plan`{.action} tab.
+It is easy to activate Zerto features from the OVHcloud Control Panel. You just need to select the data centre linked to the Hosted Private Cloud solution that you want to use, from the `Disaster Recovery Plan`{.action} tab.
 
 ![](images/image-EN-2-nucp.png){.thumbnail}
 

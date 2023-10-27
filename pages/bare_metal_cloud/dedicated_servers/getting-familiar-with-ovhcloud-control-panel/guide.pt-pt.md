@@ -74,9 +74,9 @@ Para mais informações sobre a gestão do seu servidor dedicado através da Ár
 
 ### Secção IP
 
-Para aceder à secção **IP** da sua Área de Cliente OVHcloud, clique no menu `Bare Metal Cloud`{.action} e, a seguir, em `IP`{.action}.
+Para aceder à secção **IP** da sua Área de Cliente OVHcloud, clique no menu `Bare Metal Cloud`{.action} e abra `Network`{.action}. A seguir, clique em `IP`{.action}.
 
-![secção ip](images/manageIPOVHcloud.png){.thumbnail}
+![secção ip](images/manageIP2023.png){.thumbnail}
 
 ### Separação Licenças (não disponível no Kimsufi)
 

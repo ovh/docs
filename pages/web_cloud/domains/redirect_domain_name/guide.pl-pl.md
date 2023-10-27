@@ -1,7 +1,7 @@
 ---
 title: "Przekierowanie domeny zarządzanej w OVHcloud"
 excerpt: "Poznaj rodzaje przekierowań i dowiedz się, jak utworzyć przekierowanie dla domeny zarządzanej w OVHcloud"
-updated: 2022-10-06
+updated: 2023-10-24
 ---
 
 > [!primary]
@@ -382,9 +382,7 @@ Ta zmienna może być używana podczas tymczasowego przenoszenia plików na inn�
 >> Skrypt wyśle kod HTTP 302.
 >>
 
-## Sprawdź również
-
-<a name="go-further"></a>
+## Sprawdź również <a name="go-further"></a>
 
 [Zablokować dostęp do mojej strony dla niektórych adresów IP przez plik ".htaccess" ](/pages/web_cloud/web_hosting/htaccess_how_to_block_a_specific_ip_address_from_accessing_your_website).
 
@@ -398,6 +396,6 @@ Ta zmienna może być używana podczas tymczasowego przenoszenia plików na inn�
 
 W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
 
-Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi ofertami pomocy (https://www.ovhcloud.com/pl/support-levels/).
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

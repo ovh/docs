@@ -40,7 +40,7 @@ Aby chronić swoją globalną infrastrukturę oraz serwery klientów, OVHcloud u
 > Network Firewall chroni adres IP przypisany do serwera. Dlatego też, jeśli posiadasz serwer z kilkoma adresami IP, musisz samodzielnie skonfigurować każdy adres IP. Nie można przeprowadzić globalnej konfiguracji serwera.
 > 
 
-Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), kliknij menu `Bare Metal Cloud`{.action} i otwórz sekcję `IP`{.action}. 
+Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), kliknij menu `Bare Metal Cloud`{.action} i kliknij `Network`{.action}. Następnie kliknij przycisk `IP`{.action}.
 
 Możesz użyć rozwijanego menu w sekcji "Moje publiczne adresy IP i usługi powiązane", aby sortować Twoje usługi według kategorii.
 
@@ -121,13 +121,13 @@ Na przykład pakiet przeznaczony dla portu 80/TCP zostanie przechwycony przez re
 
 Rozwiązanie Anty-DDoS (VAC) obejmuje trzy tryby filtrowania: automatyczne, stałe lub wymuszone.
 
-**Automatyczne filtrowanie (stałe wykrywanie)**: domyślnie wszystkie adresy IP OVHcloud podlegają automatycznej mitygacji.  Dzięki temu trybowi ruch przechodzi przez system mitygacji tylko wtedy, gdy zostanie wykryty jako "nietypowy" w porównaniu do normalnego ruchu otrzymywanego przez serwer.
+**Automatyczne filtrowanie (stałe wykrywanie)**: domyślnie wszystkie adresy IP OVHcloud podlegają automatycznej mitygacji. Dzięki temu trybowi ruch przechodzi przez system mitygacji tylko wtedy, gdy zostanie wykryty jako "nietypowy" w porównaniu do normalnego ruchu otrzymywanego przez serwer.
 
 **Stałe filtrowanie**: tryb ten może zostać włączony lub wyłączony w Panelu klienta. Dzięki stałej mitygacji (jeśli jest włączona), stosujesz pierwszy stały poziom filtrowania za pomocą sprzętowego systemu Shield.<br>
 Cały ruch przechodzi przez system mitygacji zanim dotrze do serwera. Zalecamy ten tryb w przypadku usług będących przedmiotem częstych ataków.<br>
 Pamiętaj, że stała mitygacja jest częścią rozwiązania Anty-DDoS (VAC). Możesz ją włączyć dla Twojego IP bez aktywacji Network Firewall.
 
-Aby go aktywować, kliknij menu `Bare Metal Cloud`{.action} i otwórz `IP`{.action}. Następnie kliknij przycisk `...`{.action} po prawej stronie odpowiedniego IPv4 i wybierz `Filtrowanie: tryb stały`{.action}.
+Aby go aktywować, kliknij menu `Bare Metal Cloud`{.action} i otwórz `Network`{.action}. Następnie kliknij `IP`{.action}. Kliknij przycisk `...`{.action} po prawej stronie odpowiedniego IPv4 i wybierz `Filtrowanie: tryb stały`{.action}.
 
 **Wymuszone filtrowanie**: tryb ten jest aktywowany automatycznie po wykryciu ataku na serwer. Po włączeniu w infrastrukturę Anty-DDoS tryb ten nie może zostać wyłączony. W celu ochrony naszej infrastruktury, ochrona będzie aktywowana przez cały czas trwania ataku, aż zostanie całkowicie mitygowana.
 
@@ -144,7 +144,7 @@ Aby go aktywować, kliknij menu `Bare Metal Cloud`{.action} i otwórz `IP`{.acti
 >
 
 Aby skonfigurować reguły portów w trybie Armor, należy najpierw zalogować się do Panelu klienta OVHcloud.<br>
-Następnie przejdź do menu `Bare Metal Cloud`{.action} i otwórz sekcję `IP`{.action}. Kliknij `...`{.action} obok adresu IP serwera gier, a następnie `Konfiguracja firewall game`{.action}.
+Następnie przejdź do menu `Bare Metal Cloud`{.action} i kliknij `Network`{.action}, a następnie `IP`{.action}. Kliknij `...`{.action} obok adresu IP serwera gier, a następnie `Konfiguracja firewall game`{.action}.
 
 ![Game_wall](images/GAMEwall2021.png){.thumbnail}
 

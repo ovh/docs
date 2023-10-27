@@ -19,13 +19,13 @@ Ce concept vous permet de construire une architecture basée sur une base de don
 
 ## Éléments du concept
 
-### Connectivité réseau
+### 1 - Connectivité réseau
 
 Afin de garantir la qualité de la liaison entre vos locaux et votre infrastructure SAP hébergée sur OVHcloud, nous recommandons d'utiliser OVHcloud Connect. Cette solution vous fournit un lien sécurisé et performant entre vos locaux et OVHcloud. Pour obtenir plus d'informations, veuillez vous référer à la [documentation OVHcloud Connect](https://www.ovhcloud.com/fr-ca/network/ovhcloud-connect/).
 
 Si vous ne souhaitez pas utiliser OVHcloud Connect, un VPN point-à-point peut également être déployé avec NSX. Pour connaître les étapes de configuration d'une passerelle VPN NSX avec OVHcloud, veuillez vous référer à [notre documentation](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx-12-configure-ipsec).
 
-### Base de données SAP HANA
+### 2 - Base de données SAP HANA
 
 Nous recommandons de prendre connaissance de la [SAP Note 2161991](https://launchpad.support.sap.com/#/notes/2161991), spécifiquement les chapitres 2 et 3, la [SAP Note 2015392](https://launchpad.support.sap.com/#/notes/2015392) ainsi que le [SAP Confluence](https://wiki.scn.sap.com/wiki/pages/viewpage.action?pageId=517013587) pour appliquer une configuration conforme entre SAP et les machines virtuelles.
 
@@ -39,7 +39,7 @@ Nous recommandons d'être attentif avec le « NUMA sharing ». Pour en savoir pl
 
 Si vous souhaitez réduire le temps maximal admissible de coupure de service et de perte de données sur une unique localisation OVHcloud, vous avez la possibilité de gérer un cluster SAP HANA avec SUSE. Nous proposons une [documentation dédiée](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook_configure_sap_hana_cluster) pour vous aider à l'implémentation de cette configuration. Dans ce contexte, nous recommandons de créer des règles d'anti-affinité dans le but d'éviter d'héberger les bases de données SAP HANA sur le même host ESXi.
 
-### Serveurs d'application SAP
+### 3 - Serveurs d'application SAP
 
 La fonctionnalité Fault Tolerance fournit par VMware garantit la disponibilité de vos serveurs d'application SAP en cas d'incident sur un host ESXi. Vos machines virtuelles sont automatiquement activées sur un autre membre de votre cluster VMware. Nous conseillons d'activer cette fonctionnalité sur vos machines virtuelles qui hébergent les services centraux SAP (SCS) et si vous ne gérez pas un cluster SAP pour ce service par un autre moyen. La fonctionnalité Fault Tolerance peut également être activée pour vos serveurs d'application SAP qui hébergent des services critiques. Découvrez comment activer cette fonctionnalité dans [notre guide](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_fault_tolerance).
 
@@ -49,11 +49,11 @@ Pour les serveurs d'application SAP qui n'hébergent pas de service critique, la
 
 Enfin, la fonctionnalité vSphere Distributed Resource Scheduler peut également être activée avec une règle VM/Host dans le but d'éviter d'héberger l'ensemble des serveurs d'application SAP sur un même host ESXi. Pour en savoir plus sur cette fonctionnalité, veuillez vous référer à [notre guide](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_drs_distributed_ressource_scheduler_new).
 
-### Infrastructure de sauvegarde
+### 4 - Infrastructure de sauvegarde
 
 Nous recommandons d'utiliser un bucket Object Storage S3 sur une localisation OVHcloud différente de celle où votre infrastructure est hébergée, pour vous protéger d'un incident majeur sur la localisation OVHcloud principale.
 
-#### Base de données SAP HANA
+#### 4.1 - Base de données SAP HANA
 
 OVHcloud fournit OVHcloud Backint Agent for SAP HANA pour sauvegarder votre base de données SAP sur un bucket Object Storage S3 sur OVHcloud.
 
@@ -64,7 +64,7 @@ Cet agent backint vous permet de tirer parti des avantages d'un Object Storage S
 
 Pour garantir la restauration de la configuration de SAP HANA (fichiers INI), nous suggérons d'appliquer la valeur « true » pour le paramètre `include_configuration_backup`. Ce paramètre active la sauvegarde de tous les paramètres stockés dans les fichiers INI durant la sauvegarde des données de la base de données SAP HANA.
 
-#### Système de fichiers
+#### 4.2 - Système de fichiers
 
 Afin de protéger vos systèmes de fichiers sur lesquels se trouvent des fichiers SAP importants, une solution économique peut être déployée avec l'exécution quotidienne d'un script copiant le contenu de ces systèmes de fichiers sensibles vers un bucket Object Storage S3 sur OVHcloud.
 
@@ -76,13 +76,13 @@ Veeam Backup and Replication vous permet de sauvegarder et de restaurer des snap
 
 Pour en savoir plus sur l'installation d'un serveur Veeam Backup and Replication dans votre solution VMware on OVHcloud, veuillez vous référer à la [documentation OVHcloud](/pages/storage_and_backup/backup_and_disaster_recovery_solutions/veeam/veeam_veeam_backup_replication).
 
-### Longue durée et archivage
+### 5 - Longue durée et archivage
 
 Certaines données nécessitent d'être stockées et sauvegardées avec une rétention longue pour des raisons légales et/ou techniques, idéalement dans un espace de stockage dédié avec des accès limités une fois que la donnée a été écrite. OVHcloud propose une solution nommée Cold Archive pour ce type de besoin, solution ayant un haut niveau de sécurité pour vos données.
 
 Plus d'information sur [OVHcloud](https://www.ovhcloud.com/fr-ca/public-cloud/cold-archive/).
 
-### Connexion du support SAP
+### 6 - Connexion du support SAP
 
 Afin de permettre la connexion du support SAP à votre infrastructure SAP sur OVHcloud, nous vous conseillons de déployer une machine virtuelle dans votre solution VMware on OVHcloud, puis de réaliser l'installation du service SAProuter sur cette machine virtuelle en suivant les instructions de la [documentation officielle SAP](https://support.sap.com/en/tools/connectivity-tools/saprouter/install-saprouter.html).
 
@@ -92,15 +92,15 @@ Comme cette machine virtuelle est exposée sur Internet, adaptez vos règles de 
 
 Nous proposons une [documentation](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook_vmware_saprouter) pour vous aider à déployer d'un SAProuter avec NSX.
 
-### Double localisation OVHcloud (optionnel)
+### 7 - Double localisation OVHcloud (optionnel)
 
 Pour éliminer le risque de perte d'une unique localisation OVHcloud, envisagez d'ajouter une seconde localisation OVHcloud.
 
-#### Connectivité réseau
+#### 7.1 - Connectivité réseau
 
 Comme avec la localisation OVHcloud primaire, nous recommandons d'utiliser OVHcloud Connect. Si cette solution n'est pas envisageable pour vous, un VPN point-à-point peut également être déployé avec NSX pour la seconde localisation OVHcloud.
 
-#### Base de données SAP HANA
+#### 7.2 - Base de données SAP HANA
 
 Le système de réplication SAP HANA appelé SAP HSR est utilisé pour répliquer les données et la configuration de la localisation OVHcloud principale vers votre localisation OVHcloud secondaire. Cette réplication vous permet de sécuriser vos données sur une autre base de données SAP HANA et ainsi réduire la perte de données maximale admissible.
 
@@ -113,7 +113,7 @@ Une autre solution est d'utiliser la fonctionnalité nommée Zerto dans votre so
 
 Si vous êtes intéressés par l'utilisation de Zerto dans un contexte SAP HANA, nous vous conseillons la [documentation Zerto](https://www.zerto.com/wp-content/uploads/2022/08/SAP-HANA-Data-Management-Using-Zerto.pdf).
 
-#### Serveurs d'application SAP
+#### 7.3 - Serveurs d'application SAP
 
 Afin de sécuriser votre infrastructure en cas d'incident majeur sur votre localisation OVHcloud principale, nous vous conseillons d'activer la fonctionnalité Zerto pour votre solution VMware on OVHcloud, vous permettant de répliquer vos machines virtuelles sur une solution VMware on OVHcloud hébergée sur une seconde localisation OVHcloud. Avec cette fonctionnalité, vous sécurisez vos serveurs d'application SAP sur une seconde localisation OVHcloud avec une réplication synchrone. Vous réduisez ainsi le temps de rétablissement du service et la perte de données maximale admissible si vous basculez sur votre localisation secondaire OVHcloud.
 
@@ -122,11 +122,11 @@ Pour découvrir les étapes d'activation de cette fonctionnalité, veuillez vous
 > [!warning]
 > Si vous déclenchez une bascule sur votre localisation OVHcloud secondaire à travers Zerto, la base de données SAP HANA doit également basculer, afin d'assurer la performance entre vos serveurs applicatifs SAP et la base de données SAP HANA.
 
-#### Infrastructure de sauvegarde
+#### 7.4 - Infrastructure de sauvegarde
 
 Comme mentionné précédemment, nous recommandons d'utiliser un bucket Object Storage S3 sur une localisation OVHcloud différente de celle où votre infrastructure SAP est en production, afin d'éviter un incident majeur sur votre localisation OVHcloud principale. Une sauvegarde croisée est plus prudente pour vos données d'entreprise.
 
-#### Connexion du support SAP
+#### 7.5 Connexion du support SAP
 
 Pour garantir la continuité de la connexion avec le support SAP, nous recommandons de configurer un second SAProuter sur la seconde localisation OVHcloud. Si votre plan de reprise d'activité est déclenché et si le support SAP doit se connecter à vos systèmes SAP, seule l'adresse IP publique sur le SAP Support LaunchPad devra être mise à jour pour restaurer la connexion.
 

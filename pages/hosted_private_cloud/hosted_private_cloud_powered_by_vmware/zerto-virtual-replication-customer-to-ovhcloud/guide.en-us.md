@@ -1,7 +1,7 @@
 ---
 title: 'Using Zerto between OVHcloud and a third party platform'
 excerpt: 'Learn how to setup Zerto between your OVHcloud Private Cloud and another platform'
-updated: 2023-06-10
+updated: 2023-10-23
 ---
 
 ## Objective

@@ -106,37 +106,37 @@ Consultez notre guide [« Consulter les statistiques et les logs de mon site hé
 
 - Exemple de fin de script correctement exécuté 
 
-```
+<pre class="bgwhite"><code>
 [2020-08-11 00:36:01] ## OVH ## START - 2020-08-11 00:36:01.524384 executing: /usr/local/php7.2/bin/php /homez.161/myftpusername/www/myscript.sh
 [2020-08-11 00:36:01] 
 [2020-08-11 00:36:01] ## OVH ## END - 2020-08-10 22:39:44.086166 exitcode: 0
-```
+</code></pre>
 
 - Exemple d'échec en raison d'un dépassement du temps d'exécution
 
-```
+<pre class="bgwhite"><code>
 [2020-08-11 00:36:01] ## OVH ## START - 2020-08-11 00:36:01.524384 executing: /usr/local/php7.2/bin/php /homez.161/myftpusername/www/sleep.sh
 
 [2020-08-11 01:36:01] ## OVH ## ERROR - CRON TASK INTERRUPTED BY OVH - reason: your script duration exceeded the maximum permitted (3600 seconds)
 [2020-08-11 01:36:01] ## OVH ## END - 2020-08-11 01:36:01.086166 exitcode: 0
-```
+</code></pre>
 
 - Exemple d'échec car le fichier de script est introuvable dans le chemin d'accès spécifié
 
-```
+<pre class="bgwhite"><code>
 [2020-08-11 00:36:01] ## OVH ## START - 2020-08-11 00:36:01.524384 executing: /usr/local/php7.2/bin/php /homez.161/myftpusername/www/noscript.sh
 
 [2020-08-11 00:36:01] ## OVH ## ERROR command '/homez.161/myftpusername/www/noscript.sh' not found
 [2020-08-11 00:36:01] ## OVH ## END - 2020-08-11 00:36:01.086166 exitcode: 255
-```
+</code></pre>
 
 - Exemple d'échec en raison d'une erreur d'autorisation (chmod) ou d'une configuration incorrecte du fichier .ovhconfig
 
-```
+<pre class="bgwhite"><code>
 [2020-08-11 18:07:10] ## OVH ## Your job could not be initiated for an unknown reason.
 [2020-08-11 18:07:10]
 [2020-08-11 18:07:10] ## OVH ## END - 2020-08-11 18:07:10.969840 exitcode: 255
-```
+</code></pre>
 
 ## Aller plus loin
 

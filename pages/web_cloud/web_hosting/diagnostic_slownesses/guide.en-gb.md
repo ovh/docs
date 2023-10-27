@@ -1,7 +1,7 @@
 ---
 title: "My website is slow. What to do?"
 excerpt: "Identify the cause of your website's slowdowns and find out how to improve this situation"
-updated: 2022-11-17
+updated: 2023-10-26
 ---
 
 ## Objective
@@ -155,7 +155,7 @@ If you are using a database of a **Web Cloud Databases** solution, please refer 
 
 If the connection is successful, you will land on the following interface:
 
-![PHPMyAdmin](images/pma.png){.thumbnail}
+![PHPMyAdmin](images/pma-main-page.png){.thumbnail}
 
 > [!warning]
 >

@@ -1,7 +1,7 @@
 ---
 title: Upgrading Kubernetes version on an OVHcloud Managed Kubernetes cluster
 excerpt: 'Find out how to upgrade the Kubernetes version on an OVHcloud Managed Kubernetes cluster'
-updated: 2023-10-10
+updated: 2023-10-12
 ---
 
 <style>
@@ -30,7 +30,7 @@ updated: 2023-10-10
 
 The OVHcloud Managed Kubernetes service provides you Kubernetes clusters without the hassle of installing or operating them. In this guide we cover how you can easily upgrade your cluster to the next minor version of Kubernetes.
 
-On OVHcloud Managed Kubernetes we have deployed a *Upgrade to the next minor version of Kubernetes* feature to upgrade your cluster from one version to the next (*e.g.* 1.26 to 1.28).
+On OVHcloud Managed Kubernetes we have deployed a *Upgrade to the next minor version of Kubernetes* feature to upgrade your cluster from one version to the next (*e.g.* 1.26 to 1.27).
 
 ## Requirements 
 

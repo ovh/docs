@@ -76,7 +76,7 @@ To find the row for the OVHcloud SPF record, a display filter can be applied to 
 
 ![domain](images/spf_records_check_OVH_configuration.png){.thumbnail}
 
-### Configuring a new SPF record 
+### Configuring a new SPF record
 
 Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au) and switch to `Web Cloud`{.action} in the top navigation bar. In the `Domain names`{.action} section, select the domain name concerned. Click on the `DNS zone`{.action} tab.
 
@@ -93,6 +93,8 @@ In the window that pops up, the configuration assistant offers several different
 ![domain](images/spf_records_add_entry.png){.thumbnail}
 
 #### Use OVHcloud SPF record <a name="spfrecordovhcloud"></a>
+
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/tRiy0YKY8dw?start=48" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 You have chosen the `SPF`{.action} record and would like to apply the OVHcloud configuration. This means that all of the OVHcloud outgoing email servers are included for the following email offers:
 

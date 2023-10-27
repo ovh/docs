@@ -18,8 +18,8 @@ On OVHcloud Web Hostings, you can use scripts to automate certain operations. Cr
 
 ## Requirements
 
-- an [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en/web-hosting/)
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) with the necessary permissions to manage the Web Hosting plan 
+- An [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en/web-hosting/)
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) with the necessary permissions to manage the Web Hosting plan 
 
 ## Instructions
 
@@ -104,37 +104,37 @@ Please refer to [this guide](/pages/web_cloud/web_hosting/logs_and_statistics) f
 
 - Example of a successfully finished execution output
 
-```
+<pre class="bgwhite"><code>
 [2020-08-11 00:36:01] ## OVH ## START - 2020-08-11 00:36:01.524384 executing: /usr/local/php7.2/bin/php /homez.161/myftpusername/www/myscript.sh
 [2020-08-11 00:36:01] 
 [2020-08-11 00:36:01] ## OVH ## END - 2020-08-10 22:39:44.086166 exitcode: 0
-```
+</code></pre>
 
 - Example of a failed execution output due to exceeded execution time
 
-```
+<pre class="bgwhite"><code>
 [2020-08-11 00:36:01] ## OVH ## START - 2020-08-11 00:36:01.524384 executing: /usr/local/php7.2/bin/php /homez.161/myftpusername/www/sleep.sh
 
 [2020-08-11 01:36:01] ## OVH ## ERROR - CRON TASK INTERRUPTED BY OVH - reason: your script duration exceeded the maximum permitted (3600 seconds)
 [2020-08-11 01:36:01] ## OVH ## END - 2020-08-11 01:36:01.086166 exitcode: 0
-```
+</code></pre>
 
 - Example of a failed execution output because the script file was not found in the specified path
 
-```
+<pre class="bgwhite"><code>
 [2020-08-11 00:36:01] ## OVH ## START - 2020-08-11 00:36:01.524384 executing: /usr/local/php7.2/bin/php /homez.161/myftpusername/www/noscript.sh
 
 [2020-08-11 00:36:01] ## OVH ## ERROR command '/homez.161/myftpusername/www/noscript.sh' not found
 [2020-08-11 00:36:01] ## OVH ## END - 2020-08-11 00:36:01.086166 exitcode: 255
-```
+</code></pre>
 
 - Example of a failed execution output because of a permissions error (chmod) or incorrect configuration of the .ovhconfig file
 
-```
+<pre class="bgwhite"><code>
 [2020-08-11 18:07:10] ## OVH ## Your job could not be initiated for an unknown reason.
 [2020-08-11 18:07:10]
 [2020-08-11 18:07:10] ## OVH ## END - 2020-08-11 18:07:10.969840 exitcode: 255
-```
+</code></pre>
 
 ## Go further
 

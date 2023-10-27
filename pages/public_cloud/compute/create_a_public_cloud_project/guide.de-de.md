@@ -48,6 +48,12 @@ Sobald der Prozess abgeschlossen ist, steht Ihr neues Public Cloud Projekt im Be
 
 ## Weiterführende Informationen
 
+[Erste Public Cloud Instanz erstellen und auf dieser einloggen](/pages/public_cloud/compute/public-cloud-first-steps)
+[Kontakte eines Projekts ändern](/pages/public_cloud/compute/change_project_contacts)
+[Projekte delegieren](/pages/public_cloud/compute/delegate_projects)
+[Ein Public Cloud Projekt löschen](/pages/public_cloud/compute/delete_a_project)
+[Informationen zu den Abrechnungsoptionen der Public Cloud](/pages/public_cloud/compute/analyze_billing)
+
 Wenn Sie Schulungen oder technische Unterstützung bei der Implementierung unserer Lösungen benötigen, wenden Sie sich an Ihren Vertriebsmitarbeiter oder klicken Sie auf [diesen Link](https://www.ovhcloud.com/de/professional-services/), um einen Kostenvoranschlag zu erhalten und eine persönliche Analyse Ihres Projekts durch unsere Experten des Professional Services Teams anzufordern.
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

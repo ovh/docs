@@ -1,7 +1,7 @@
 ---
 title: Rozwiąż najczęstsze błędy związane z bazami danych 
 excerpt: "Zdiagnozuj najczęstsze przypadki błędów związanych z bazami danych"
-updated: 2022-12-09
+updated: 2023-10-26
 ---
 
 > [!primary]
@@ -236,7 +236,7 @@ Aby usunąć tę anomalię, możesz:
 
 Ten komunikat błędu może pojawić się podczas logowania do bazy danych przez [phpMyAdmin](/pages/web_cloud/web_hosting/sql_create_database#dostep-do-interfejsu-phpmyadmin). Wskazuje ona, że dane identyfikacyjne są błędne.
 
-![access_denied_for_user](images/access_denied_for_user.png){.thumbnail}
+![access_denied_for_user](images/pma-error-hy000-1045.png){.thumbnail}
 
 W takiej sytuacji [sprawdź wpisane dane](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server#w-praktyce) i w razie potrzeby zmień [hasło do bazy danych](/pages/web_cloud/web_hosting/sql_change_password).
 
@@ -267,7 +267,7 @@ W takiej sytuacji powinieneś [zoptymalizować bazy danych](/pages/web_cloud/web
 
 Ten komunikat błędu pojawia się podczas [logowania do phpMyAdmin](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server#w-praktyce), gdy podana nazwa serwera jest nieprawidłowa.
 
-![name_or_service_not_known](images/name_or_service_not_known.png){.thumbnail}
+![name_or_service_not_known](images/pma-error-hy000-1045.png){.thumbnail}
 
 Sprawdź nazwę serwera, który chcesz zarejestrować w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 

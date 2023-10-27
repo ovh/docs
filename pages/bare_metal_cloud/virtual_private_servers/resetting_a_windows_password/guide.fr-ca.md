@@ -1,7 +1,7 @@
 ---
 title: Changer le mot de passe administrateur sur un serveur Windows
 excerpt: "Découvrez comment réinitialiser le mot de passe de votre compte Administrateur Windows sur un VPS ou une instance Public Cloud grâce au mode Rescue d'OVHcloud"
-updated: 2023-10-29
+updated: 2023-10-12
 ---
 
 ## Objectif

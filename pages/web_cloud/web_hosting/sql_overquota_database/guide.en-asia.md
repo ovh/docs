@@ -1,7 +1,7 @@
 ---
 title: "Web hosting: My database is full, what should I do?"
 excerpt: "Find out what to do when your database is saturated"
-updated: 2023-09-21
+updated: 2023-10-26
 ---
 
 ## Objective
@@ -79,11 +79,11 @@ Enter the login information for your database, then click `Login`{.action}.
 
 Once connected, the following page is displayed:
 
-![phpMyAdmin Login](images/pma_login.png){.thumbnail}
+![phpMyAdmin Login](images/pma-main-page.png){.thumbnail}
 
 Click on `"Your database name"`{.action} in the left-hand column, then on `Size`{.action} in the top right-hand corner of the table that appears:
 
-![phpMyAdmin Tables](images/pma_show_table.png){.thumbnail}
+![phpMyAdmin Tables](images/pma-check-size.png){.thumbnail}
 
 The largest tables appear at the top of the sorted list. Identify them, then go to **Step 2**.
 
@@ -151,7 +151,7 @@ In the case of an overquota or large table, **three commands** are available.
 
 You can perform these requests from the **phpMyAdmin** interface, via the `SQL`{.action} tab:
 
-![phpMyAdmin SQL request](images/pma_sql_request.png){.thumbnail}
+![phpMyAdmin SQL request](images/pma-sql-menu.png){.thumbnail}
 
 - The **DELETE** command
 

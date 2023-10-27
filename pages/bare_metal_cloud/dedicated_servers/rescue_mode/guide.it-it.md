@@ -132,7 +132,7 @@ mount /dev/hda1 /mnt/
 
 Per uscire dalla modalità Rescue, ridefinisci la modalità di avvio su `Avviare da hard disk`{.action} nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e riavvia il server da riga di comando.
 
-#### Installazione di un datastore
+#### VMware - Installazione di un datastore
 
 È possibile creare un datastore VMware nello stesso modo descritto nello step precedente.
 

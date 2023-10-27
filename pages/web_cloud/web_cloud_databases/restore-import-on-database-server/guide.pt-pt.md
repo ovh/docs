@@ -1,7 +1,7 @@
 ---
 title: 'Restaurar e importar uma base de dados no servidor de bases de dados'
 excerpt: 'Saiba como restaurar e importar uma base de dados'
-updated: 2023-02-15
+updated: 2023-10-26
 ---
 
 ## Objetivo
@@ -97,7 +97,7 @@ Selecione o ficheiro de backup clicando em `Percorrer`{.action} (atenção: o fi
 
 Deixe as opções predefinidas e clique em `Executar`{.action} para lançar a importação.
 
-![Web Cloud Databases](images/web-cloud-databases-import04.png){.thumbnail}
+![Web Cloud Databases](images/pma-upload-backup-web-cloud-db.png){.thumbnail}
 
 #### Importar uma base MySQL ou MariaDB a partir da linha de comandos
 

@@ -1,7 +1,7 @@
 ---
 title: 'Sauvegarder et exporter une base de données sur votre serveur de bases de données'
 excerpt: 'Découvrez comment sauvegarder et exporter votre base de données'
-updated: 2023-02-15
+updated: 2023-10-26
 ---
 
 ## Objectif
@@ -65,7 +65,7 @@ Une fois connecté sur phpMyAdmin, cliquez sur le nom de la base de données que
 
 Vous avez deux modes d'exportation possibles. Si vous n'avez pas de besoin spécifique, nous vous conseillons d'utiliser le mode **rapide** au format **SQL**.
 
-![Web Cloud Databases](images/web-cloud-databases-export01.png){.thumbnail}
+![Web Cloud Databases](images/pma-export-backup-web-cloud-db.png){.thumbnail}
 
 ##### 1\.2 Exporter ma base MySQL ou MariaDB en ligne de commande
 

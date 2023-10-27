@@ -250,10 +250,10 @@ On SLES, edit the <code>/etc/chrony.conf</code> file and add the IP address of N
 # Allow NTP client access from local network.
 # Use public servers from the pool.ntp.org project.
 # Please consider joining the pool (https://www.pool.ntp.org/join.html).
-{ip-ntp-server1}
-{ip-ntp-server2}
-{ip-ntp-server3}
-{ip-ntp-server4}
+server {ip-ntp-server1}
+server {ip-ntp-server2}
+server {ip-ntp-server3}
+server {ip-ntp-server4}
 ```
 
 <ul>

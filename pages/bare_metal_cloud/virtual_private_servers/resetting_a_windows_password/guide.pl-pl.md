@@ -1,7 +1,7 @@
 ---
 title: Zmiana hasła administratora na serwerze Windows
 excerpt: "Dowiedz się, jak zresetować hasło do konta administratora Windows na serwerze VPS lub instancji Public Cloud w trybie Rescue OVHcloud"
-updated: 2023-10-29
+updated: 2023-10-12
 ---
 
 > [!primary]

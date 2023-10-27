@@ -60,7 +60,7 @@ Below you can find a summary of every configuration option available for OpenSea
 |---|---|
 | Parameter | `opensearch.action_auto_create_index_enabled` |
 | Value type | boolean |
-| Minumum | |
+| Minimum | |
 | Maximum | |
 | Description | Explicitly allow or block automatic creation of indices. Defaults to true |
 
@@ -68,7 +68,7 @@ Below you can find a summary of every configuration option available for OpenSea
 |---|---|
 | Parameter | `opensearch.cluster_max_shards_per_node` |
 | Value type | long |
-| Minumum | 10 |
+| Minimum | 10 |
 | Maximum | 10000 |
 | Description | Controls the number of shards allowed in the cluster per data node |
 
@@ -76,7 +76,7 @@ Below you can find a summary of every configuration option available for OpenSea
 |---|---|
 | Parameter | `opensearch.cluster_routing_allocation_node_concurrent_recoveries` |
 | Value type | long |
-| Minumum | 2 |
+| Minimum | 2 |
 | Maximum | 16 |
 | Description | How many concurrent incoming/outgoing shard recoveries (normally replicas) are allowed to happen on a node. Defaults to 2. |
 
@@ -84,7 +84,7 @@ Below you can find a summary of every configuration option available for OpenSea
 |---|---|
 | Parameter | `opensearch.http_max_content_length` |
 | Value type | long |
-| Minumum | 1 |
+| Minimum | 1 |
 | Maximum | 2147483647 |
 | Description | Maximum content length for HTTP requests to the OpenSearch HTTP API, in bytes. |
 
@@ -92,7 +92,7 @@ Below you can find a summary of every configuration option available for OpenSea
 |---|---|
 | Parameter | `opensearch.http_max_header_size` |
 | Value type | long |
-| Minumum | 1024 |
+| Minimum | 1024 |
 | Maximum | 262144 |
 | Description | The max size of allowed headers, in bytes |
 
@@ -100,7 +100,7 @@ Below you can find a summary of every configuration option available for OpenSea
 |---|---|
 | Parameter | `opensearch.http_max_initial_line_length` |
 | Value type | long |
-| Minumum | 1024 |
+| Minimum | 1024 |
 | Maximum | 65536 |
 | Description | The max length of an HTTP URL, in bytes |
 
@@ -108,7 +108,7 @@ Below you can find a summary of every configuration option available for OpenSea
 |---|---|
 | Parameter | `opensearch.indices_memory_index_buffer_size` |
 | Value type | long |
-| Minumum | 3 |
+| Minimum | 3 |
 | Maximum | 40 |
 | Description | Percentage value. Default is 10%. Total amount of heap used for indexing buffer, before writing segments to disk. This is an expert setting. Too low value will slow down indexing; too high value will increase indexing performance but causes performance issues for query performance. |
 
@@ -116,7 +116,7 @@ Below you can find a summary of every configuration option available for OpenSea
 |---|---|
 | Parameter | `opensearch.indices_queries_cache_size` |
 | Value type | long |
-| Minumum | 3 |
+| Minimum | 3 |
 | Maximum | 40 |
 | Description | Percentage value. Default is 10%. Maximum amount of heap used for query cache. This is an expert setting. Too low value will decrease query performance and increase performance for other operations; too high value will cause issues with other OpenSearch functionalities. |
 
@@ -124,7 +124,7 @@ Below you can find a summary of every configuration option available for OpenSea
 |---|---|
 | Parameter | `opensearch.indices_query_bool_max_clause_count` |
 | Value type | long |
-| Minumum | 64 |
+| Minimum | 64 |
 | Maximum | 4096 |
 | Description | Maximum number of clauses Lucene BooleanQuery can have. The default value (1024) is relatively high, and increasing it may cause performance issues. Investigate other approaches first before increasing this value. |
 
@@ -132,7 +132,7 @@ Below you can find a summary of every configuration option available for OpenSea
 |---|---|
 | Parameter | `opensearch.indices_recovery_max_bytes_per_sec` |
 | Value type | long |
-| Minumum | 40 |
+| Minimum | 40 |
 | Maximum | 400 |
 | Description | Limits total inbound and outbound recovery traffic for each node. Applies to both peer recoveries as well as snapshot recoveries (i.e., restores from a snapshot). Defaults to 40mb |
 
@@ -140,7 +140,7 @@ Below you can find a summary of every configuration option available for OpenSea
 |---|---|
 | Parameter | `opensearch.indices_recovery_max_concurrent_file_chunks` |
 | Value type | long |
-| Minumum | 2 |
+| Minimum | 2 |
 | Maximum | 5 |
 | Description | Number of file chunks sent in parallel for each recovery. Defaults to 2. |
 
@@ -148,7 +148,7 @@ Below you can find a summary of every configuration option available for OpenSea
 |---|---|
 | Parameter | `opensearch.override_main_response_version` |
 | Value type | boolean |
-| Minumum | |
+| Minimum | |
 | Maximum | |
 | Description | Compatibility mode sets OpenSearch to report its version as 7.10 so clients continue to work. Default is false |
 
@@ -156,7 +156,7 @@ Below you can find a summary of every configuration option available for OpenSea
 |---|---|
 | Parameter | `opensearch.script_max_compilations_rate` |
 | Value type | string |
-| Minumum | |
+| Minimum | |
 | Maximum | |
 | Description | Script compilation circuit breaker limits the number of inline script compilations within a period of time. Default is use-context |
 
@@ -164,7 +164,7 @@ Below you can find a summary of every configuration option available for OpenSea
 |---|---|
 | Parameter | `opensearch.thread_pool_analyze_queue_size` |
 | Value type | long |
-| Minumum | 10 |
+| Minimum | 10 |
 | Maximum | 2000 |
 | Description | Size for the thread pool queue. |
 
@@ -172,7 +172,7 @@ Below you can find a summary of every configuration option available for OpenSea
 |---|---|
 | Parameter | `opensearch.thread_pool_analyze_size` |
 | Value type | long |
-| Minumum | 1 |
+| Minimum | 1 |
 | Maximum | 128 |
 | Description | Size for the thread pool. Do note this may have maximum value depending on CPU count - value is automatically lowered if set to higher than maximum value. |
 
@@ -180,7 +180,7 @@ Below you can find a summary of every configuration option available for OpenSea
 |---|---|
 | Parameter | `opensearch.thread_pool_force_merge_size` |
 | Value type | long |
-| Minumum | 1 |
+| Minimum | 1 |
 | Maximum | 128 |
 | Description | Size for the thread pool. Do note this may have maximum value depending on CPU count - value is automatically lowered if set to higher than maximum value. |
 
@@ -188,7 +188,7 @@ Below you can find a summary of every configuration option available for OpenSea
 |---|---|
 | Parameter | `opensearch.thread_pool_get_queue_size` |
 | Value type | long |
-| Minumum | 10 |
+| Minimum | 10 |
 | Maximum | 2000 |
 | Description | Size for the thread pool queue. |
 
@@ -196,7 +196,7 @@ Below you can find a summary of every configuration option available for OpenSea
 |---|---|
 | Parameter | `opensearch.thread_pool_get_size` |
 | Value type | long |
-| Minumum | 1 |
+| Minimum | 1 |
 | Maximum | 128 |
 | Description | Size for the thread pool. Do note this may have maximum value depending on CPU count - value is automatically lowered if set to higher than maximum value. |
 
@@ -204,7 +204,7 @@ Below you can find a summary of every configuration option available for OpenSea
 |---|---|
 | Parameter | `opensearch.thread_pool_search_queue_size` |
 | Value type | long |
-| Minumum | 10 |
+| Minimum | 10 |
 | Maximum | 2000 |
 | Description | Size for the thread pool queue. |
 
@@ -212,7 +212,7 @@ Below you can find a summary of every configuration option available for OpenSea
 |---|---|
 | Parameter | `opensearch.thread_pool_search_size` |
 | Value type | long |
-| Minumum | 1 |
+| Minimum | 1 |
 | Maximum | 128 |
 | Description | Size for the thread pool. Do note this may have maximum value depending on CPU count - value is automatically lowered if set to higher than maximum value. |
 
@@ -220,7 +220,7 @@ Below you can find a summary of every configuration option available for OpenSea
 |---|---|
 | Parameter | `opensearch.thread_pool_search_throttled_queue_size` |
 | Value type | long |
-| Minumum | 10 |
+| Minimum | 10 |
 | Maximum | 2000 |
 | Description | Size for the thread pool queue. |
 
@@ -228,7 +228,7 @@ Below you can find a summary of every configuration option available for OpenSea
 |---|---|
 | Parameter | `opensearch.thread_pool_search_throttled_size` |
 | Value type | long |
-| Minumum | 1 |
+| Minimum | 1 |
 | Maximum | 128 |
 | Description | Size for the thread pool. Do note this may have maximum value depending on CPU count - value is automatically lowered if set to higher than maximum value. |
 
@@ -236,7 +236,7 @@ Below you can find a summary of every configuration option available for OpenSea
 |---|---|
 | Parameter | `opensearch.thread_pool_write_queue_size` |
 | Value type | long |
-| Minumum | 10 |
+| Minimum | 10 |
 | Maximum | 2000 |
 | Description | Size for the thread pool queue. |
 
@@ -244,7 +244,7 @@ Below you can find a summary of every configuration option available for OpenSea
 |---|---|
 | Parameter | `opensearch.thread_pool_write_size` |
 | Value type | long |
-| Minumum | 1 |
+| Minimum | 1 |
 | Maximum | 128 |
 | Description | Size for the thread pool. Do note this may have maximum value depending on CPU count - value is automatically lowered if set to higher than maximum value. |
 

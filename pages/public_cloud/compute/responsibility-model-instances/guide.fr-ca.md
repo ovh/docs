@@ -1,7 +1,7 @@
 ---
 title: Public Cloud Instances - Partage des responsabilités
 excerpt: "RACI entre OVHcloud et le client pour l'utilisation des instances Public Cloud"
-updated: 2022-12-22
+updated: 2023-10-12
 ---
 
 ## Objectif
@@ -101,6 +101,7 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 | --- | --- | --- |
 | Gérer le plan d’adressage IP et choisir les protocoles réseaux adéquats | RA | I |
 | Filtrer les accès réseau à l'instance | RA | I |
+| Filtrer les connexions réseaux et déployer une architecture sécurisée en fonction des besoins (FW, WAF, IPS/IDS, protocoles sécurisés, etc) | RA |   |
 | Assurer le fonctionnement des systèmes automatiques de gestion du réseau (architecture, mise en oeuvre, maintenance logicielle et matérielle pour les réseaux publics et privés déployés) | I | RA |
 
 ##### **3.1.6. Gestion**
