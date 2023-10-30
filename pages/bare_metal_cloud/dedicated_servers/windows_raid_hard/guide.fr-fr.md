@@ -135,9 +135,21 @@ Dans notre exemple, nous allons créer un RAID 5 sur nos 3 disques, d'une taille
 > [!primary]
 >
 > Il est conseillé de prendre un peu plus d'espace afin d'avoir une partition de la taille minimum voulue, sachant que la configuration nécessite un peu d'espace.
-> 
 
-<div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">root@rescue:~# MegaCli -CfgLdAdd -r5[252:0,252:1,252:2] -sz204800 -a0</span> <span class="blank">&nbsp;</span> <span class="output">Adapter 0: Created VD 0</span> <span class="blank">&nbsp;</span> <span class="output">Adapter 0: Configured the Adapter!!</span> <span class="blank">&nbsp;</span> <span class="output">Exit Code: 0x00</span> </pre></div>
+Exemple :
+
+```shell
+MegaCli -CfgLdAdd -r5[252:0,252:1,252:2] -sz204800 -a0
+```
+
+Retour :
+
+```shell
+Adapter 0: Created VD 0
+Adapter 0: Configured the Adapter!!
+Exit Code: 0x00
+```
+
 Voilà, notre premier volume RAID est créé. Il nous reste désormais plus qu'à assigner le reste de l'espace disponible.
 
 Nous allons donc créer un second volume RAID via la commande suivante : `MegaCli -CfgLdAdd -rX[EncID:SlotID,EncID:SlotID,...] -a0`{.action}
