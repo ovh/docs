@@ -70,7 +70,7 @@ Nous pouvons désormais casser les volumes RAID existant afin de pouvoir ensuite
 
 Pour cela, nous utiliserons la commande ci-dessous à adapater avec le numéro du **Virtual Drive** récupéré précédemment.
 
-`MegaCli -CfgLDDel -Lx -a0 {.action}`
+`MegaCli -CfgLDDel -Lx -a0`{.action}
 
 Le numéro du **Virtual Drive**
 
@@ -99,7 +99,22 @@ Pour cela, nous utiliserons la commande suivante : `MegaCli -PdList -aALL | egre
 
 Exemple :
 
-<div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">root@rescue:~# MegaCli -PdList -aALL | egrep -i "Adapter|Slot|Enclosure Device"</span> <span class="output">Adapter #0</span> <span class="output">Enclosure Device ID: 252</span> <span class="output">Slot Number: 0</span> <span class="output">Enclosure Device ID: 252</span> <span class="output">Slot Number: 1</span> <span class="output">Enclosure Device ID: 252</span> <span class="output">Slot Number: 2</span> </pre></div>
+```shell
+MegaCli -PdList -aALL | egrep -i "Adapter|Slot|Enclosure Device"
+```
+
+Retour :
+
+```shell
+Adapter #0
+Enclosure Device ID: 252
+Slot Number: 0
+Enclosure Device ID: 252
+Slot Number: 1
+Enclosure Device ID: 252
+Slot Number: 2 
+```
+
 Nous constatons que nous possédons 3 disques, dont les **Enclosure ID** et **SlotID** sont respectivement 252:0, 252:1, et 252:2.
 
 ### Créer les nouveaux volumes RAID
