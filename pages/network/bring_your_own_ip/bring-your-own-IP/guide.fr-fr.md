@@ -16,7 +16,6 @@ Ces adresses IP seront importées sous la forme d'un bloc d'adresses IP de taill
 - [Avoir une plage d'IP d'une taille prise en charge](#supportedsize)
 - [Avoir une plage d'IP non utilisée sur Internet](#notinuseontheinternet)
 - [Avoir une plage d'IP ou numéro AS avec une réputation propre](#cleanipreputation)
-- [Choix du campus](#chooseacampus)
 - [Prouver que vous êtes propriétaire de la plage d'IP](#proveownership)
 - [Prouver que vous êtes propriétaire du numéro AS](#proveownershipas)
 - [Permettre à OVHcloud d'annoncer la plage d'IP](#announceip)
@@ -70,40 +69,6 @@ La plage d'IP ne doit pas être annoncée ou utilisée sur Internet (pas d'annon
 
 Nous pouvons refuser l’utilisation d’adresses IP ou de numéros AS ayant une mauvaise réputation, et nous nous réservons le droit de ne plus les annoncer si leur réputation a un impact négatif sur la réputation d’OVHcloud.
 
-### Choix du campus <a name="chooseacampus"></a>
-
-Un campus peut être vu comme une liste de centre de données où une IP peut être utilisée.
-
-Vous devrez choisir un campus où votre IP sera utilisée. Une fois la livraison effectuée, vous pourrez déplacer n’importe quel bloc de taille /24, obtenu à partir de la plage importée, vers n’importe quel service OVHcloud dans le même campus que celui choisi au moment de la commande.
-
-Vous trouverez ci-dessous une liste des campus actuels :
-
-- RBX (Roubaix)
-    - rbx (1-8)
-- GRA (Gravelines)
-    - gra (1-3)
-- SBG (Strasbourg)
-    - sbg (1-5)
-- WAW (Warsaw)
-    - waw1
-- LIM (Limburg)
-    - lim (1,3)
-- ERI (Erith)
-    - eri1
-- BHS (Beauharnois)
-    - bhs (1-8)
-- SGP (Singapore)
-    - sgp1
-- VIN (Vint Hill)
-    - vin1
-- HIL (Hillsboro)
-    - hil1
-
-La liste des campus disponibles dépendra de votre situation géographique et du RIR de l'IP. Vous trouverez ci-dessous la liste de tous les campus IP sur lesquels nous prévoyons de l'offre BYOIP. Cependant, il est possible que tous les campus ne soient pas pris en charge dès le lancement :
-
-|**Le RIR des adresses IP du client est :**|**ARIN**|**RIPE**|
-|---|---|---|
-|**Campus disponibles :** |BHS<br>SGP|RBX<br>GRA<br>SBG<br>WAW<br>LIM<br>ERI|
 
 ### Prouver que vous êtes propriétaire de la plage d'adresses IP <a name="proveownershipontheiprange"></a>
 
@@ -244,7 +209,7 @@ Oui. Pour plus d'informations, veuillez vous reporter à la section [Découpage 
 
 ### Puis-je importer une plage d'adresses IP ARIN dans des campus acceptant uniquement des plages d'adresses IP RIPE et inversement ?
 
-Oui, avec la mise à jour de notre politique, il est désormais possible d'utiliser des blocs IP ARIN ou RIPE sur n'importe quel campus OVHcloud. Nous avons éliminé les restrictions précédentes pour offrir une plus grande flexibilité et efficacité dans la gestion et l'allocation des adresses IP. Vous pouvez importer et utiliser vos blocs IP en fonction de vos besoins spécifiques, indépendamment de la localisation géographique du campus.
+Oui, avec la mise à jour de notre politique, il est désormais possible d'utiliser des blocs IP ARIN ou RIPE sur n'importe quel campus OVHcloud où le produit BYOIP est disponible. Nous avons éliminé les restrictions précédentes pour offrir une plus grande flexibilité et efficacité dans la gestion et l'allocation des adresses IP. Vous pouvez importer et utiliser vos blocs IP en fonction de vos besoins spécifiques, indépendamment de la localisation géographique du campus.
 
 
 ### Puis-je importer un numéro AS ARIN avec une plage d'adresses IP RIPE et inversement ?
