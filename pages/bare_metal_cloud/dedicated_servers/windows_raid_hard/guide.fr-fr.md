@@ -4,6 +4,10 @@ excerpt: Decouvrez ici comment créer un partitionnement pour Windows sur un ser
 updated: 2018-07-24
 ---
 
+## Objectif
+
+Dans cet article, nous vous guidons pas à pas dans la création d'un partitionnement pour Windows sur un serveur équipé d'un Raid Matériel. Face à la complexité technique et aux implications potentielles de la manipulation des configurations RAID, nous mettons à votre disposition des instructions claires et détaillées. Vous apprendrez comment lister les volumes RAID existants, casser les configurations RAID actuelles, récupérer les ID des disques, créer de nouveaux volumes RAID et vérifier leur création. Nous vous fournissons également des précautions et des avertissements pour vous assurer que vous mesurez bien les implications de vos actions, notamment la perte potentielle de données. Notre but est de vous aider à exploiter pleinement les avantages du RAID matériel tout en minimisant les risques associés.
+
 ## Prérequis
 
 > [!warning]
@@ -18,7 +22,7 @@ Pour créer votre partitionnement, il sera nécessaire de créer de nouveaux vol
 - Avoir deux disques identiques au minimum. (Dans ce guide nous avons un serveur avec 3 disques)
 - Avoir accès au mode rescue.
 
-## Procedure
+## En pratique
 
 ### Lister les volumes RAID
 Tout d'abord, nous avons besoin de lister les volumes RAID afin de pouvoir ensuite les supprimer.
@@ -28,6 +32,18 @@ Pour cela, nous utilisons la commande suivante `MegaCli -LDInfo -Lall -aAll`{.ac
 Exemple :
 
 <div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">root@rescue:~# MegaCli -LDInfo -Lall -aAll</span> <span class="blank">&nbsp;</span> <span class="output">Adapter 0 -- Virtual Drive Information:</span> <span class="output">Virtual Drive: 0 (Target Id: 0)</span> <span class="output">Name                :</span> <span class="output">RAID Level          : Primary-5, Secondary-0, RAID Level Qualifier-3</span> <span class="output">Size                : 3.637 TB</span> <span class="output">Sector Size         : 512</span> <span class="output">Is VD emulated      : No</span> <span class="output">Parity Size         : 1.818 TB</span> <span class="output">State               : Optimal</span> <span class="output">Strip Size          : 256 KB</span> <span class="output">Number Of Drives    : 3</span> <span class="output">Span Depth          : 1</span> <span class="output">Default Cache Policy: WriteBack, ReadAhead, Direct, No Write Cache if Bad BBU</span> <span class="output">Current Cache Policy: WriteBack, ReadAhead, Direct, No Write Cache if Bad BBU</span> <span class="output">Default Access Policy: Read/Write</span> <span class="output">Current Access Policy: Read/Write</span> <span class="output">Disk Cache Policy   : Disk's Default</span> <span class="output">Encryption Type     : None</span> <span class="output">Bad Blocks Exist: No</span> <span class="output">PI type: No PI</span> <span class="blank">&nbsp;</span> <span class="output">Is VD Cached: No</span> <span class="blank">&nbsp;</span> <span class="output">Exit Code: 0x00</span> </pre></div>
+
+```shell
+MegaCli -LDInfo -Lall -aAll 
+```
+
+Retour :
+
+```shell
+   Adapter 0 -- Virtual Drive Information: Virtual Drive: 0 (Target Id: 0) Name                : RAID Level          : Primary-5, Secondary-0, RAID Level Qualifier-3 Size                : 3.637 TB Sector Size         : 512 Is VD emulated      : No Parity Size         : 1.818 TB State               : Optimal Strip Size          : 256 KB Number Of Drives    : 3 Span Depth          : 1 Default Cache Policy: WriteBack, ReadAhead, Direct, No Write Cache if Bad BBU Current Cache Policy: WriteBack, ReadAhead, Direct, No Write Cache if Bad BBU Default Access Policy: Read/Write Current Access Policy: Read/Write Disk Cache Policy   : Disk's Default Encryption Type     : None Bad Blocks Exist: No PI type: No PI   Is VD Cached: No   Exit Code: 0x00
+```
+
+
 Nous constatons que nous ne possédons actuellement qu'un seul volume RAID sur le serveur, et que celui-ci possède le **Virtual Drive** 0.
 
 ### Casser les RAID
@@ -110,3 +126,7 @@ Enfin, accédez à votre espace client afin de procéder à l'installation de Wi
 Il vous faudra alors cocher la case `Personnaliser la configuration des partitions`{.action}, modifier le schéma de partition actuel pour spécifier uniquement le disque C, et d'une taille de 200Go maximum.
 
 Une fois le système installé, rendez-vous sur votre système Windows, dans l'utilitaire `Gestionnaire des disques`{.action}, et partitionnez le second disque virtuel (correspondant à notre second RAID qui est affiché comme "non alloué") au format GPT.
+
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
