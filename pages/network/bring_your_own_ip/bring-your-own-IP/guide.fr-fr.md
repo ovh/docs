@@ -16,6 +16,7 @@ Ces adresses IP seront importées sous la forme d'un bloc d'adresses IP de taill
 - [Avoir une plage d'IP d'une taille prise en charge](#supportedsize)
 - [Avoir une plage d'IP non utilisée sur Internet](#notinuseontheinternet)
 - [Avoir une plage d'IP ou numéro AS avec une réputation propre](#cleanipreputation)
+- [Choix du campus](#chooseacampus)
 - [Prouver que vous êtes propriétaire de la plage d'IP](#proveownership)
 - [Prouver que vous êtes propriétaire du numéro AS](#proveownershipas)
 - [Permettre à OVHcloud d'annoncer la plage d'IP](#announceip)
@@ -69,6 +70,33 @@ La plage d'IP ne doit pas être annoncée ou utilisée sur Internet (pas d'annon
 
 Nous pouvons refuser l’utilisation d’adresses IP ou de numéros AS ayant une mauvaise réputation, et nous nous réservons le droit de ne plus les annoncer si leur réputation a un impact négatif sur la réputation d’OVHcloud.
 
+### Choix du campus <a name="chooseacampus"></a>
+
+Un campus peut être vu comme une liste de centre de données où une IP peut être utilisée.
+
+Vous devrez choisir un campus où votre IP sera utilisée. Une fois la livraison effectuée, vous pourrez déplacer n’importe quel bloc de taille /24, obtenu à partir de la plage importée, vers n’importe quel service OVHcloud dans le même campus que celui choisi au moment de la commande.
+
+Vous trouverez ci-dessous une liste des campus actuels :
+
+- RBX (Roubaix)
+    - rbx (1-8)
+- GRA (Gravelines)
+    - gra (1-3)
+- SBG (Strasbourg)
+    - sbg (1-5)
+- WAW (Warsaw)
+    - waw1
+- LIM (Limburg)
+    - lim (1,3)
+- ERI (Erith)
+    - eri1
+- BHS (Beauharnois)
+    - bhs (1-8)
+- SGP (Singapore)
+    - sgp1
+- YNM (Mumbai)
+    - ynm1
+ 
 
 ### Prouver que vous êtes propriétaire de la plage d'adresses IP <a name="proveownershipontheiprange"></a>
 
