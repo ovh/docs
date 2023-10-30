@@ -37,7 +37,7 @@ MegaCli -LDInfo -Lall -aAll
 
 Retour :
 
-```shell
+```
 Adapter 0 -- Virtual Drive Information:
 Virtual Drive: 0 (Target Id: 0)
 Name :
