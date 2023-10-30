@@ -19,7 +19,10 @@ Cette technologie vous permet d’échanger les adresses IP d'une solution à l'
 > Une Additional IP ne peut pas être déplacée d'une zone à l'autre. Par exemple, une IP située dans le datacenter SBG pourra être déplacée vers GRA ou RBX mais ne pourra pas être déplacée vers BHS.
 >
 > La migration ne fonctionne que pour des blocs entiers, il n'est pas possible de migrer des IP individuelles au sein d'un bloc.
->
+
+Le déplacement d'Additional IP joue un rôle essentiel dans la mise en œuvre efficace des solutions de failover, un aspect souvent sous-estimé de la gestion des réseaux. En cas de défaillance d'un serveur principal, due à des problèmes techniques imprévus ou à des pannes matérielles, la capacité de déplacer rapidement l'IP vers un serveur de secours devient une nécessité impérative pour garantir une continuité de service minimale. Cette stratégie proactive non seulement évite les temps d'arrêt prolongés, mais assure également que les applications et services restent accessibles aux utilisateurs finaux, même en cas de problèmes imprévus avec le serveur original, garantissant ainsi l'intégrité et la disponibilité des données.
+
+La flexibilité offerte par le déplacement d'Additional IP est également un atout majeur dans les processus de migration, un autre domaine clé dans la gestion optimale des systèmes informatiques. Que ce soit pour transférer des applications entre des environnements de développement et de production, une tâche courante nécessitant une attention particulière pour éviter les interruptions de service, ou pour déplacer des services vers un nouveau serveur pour des raisons de mise à l'échelle ou de maintenance, la mobilité des IP est cruciale. Elle garantit que les transitions se déroulent en douceur, sans perturber l'expérience utilisateur, assurant ainsi la satisfaction des clients et la performance optimale des systèmes.
 
 **Découvrez comment déplacer une Additional IP depuis votre espace client OVHcloud ou via les API OVHcloud.**
 
