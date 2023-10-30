@@ -38,13 +38,28 @@ MegaCli -LDInfo -Lall -aAll
 Retour :
 
 ```shell
-   Adapter 0 -- Virtual Drive Information: Virtual Drive: 0 (Target Id: 0) Name
-   : RAID Level
-   : Primary-5, Secondary-0, RAID Level Qualifier-3 Size
-   : 3.637 TB Sector Size
-   : 512 Is VD emulated
-   : No Parity Size
-   : 1.818 TB State               : Optimal Strip Size          : 256 KB Number Of Drives    : 3 Span Depth          : 1 Default Cache Policy: WriteBack, ReadAhead, Direct, No Write Cache if Bad BBU Current Cache Policy: WriteBack, ReadAhead, Direct, No Write Cache if Bad BBU Default Access Policy: Read/Write Current Access Policy: Read/Write Disk Cache Policy   : Disk's Default Encryption Type     : None Bad Blocks Exist: No PI type: No PI   Is VD Cached: No   Exit Code: 0x00
+Adapter 0 -- Virtual Drive Information:
+Virtual Drive: 0 (Target Id: 0)
+Name :
+RAID Level : Primary-5, Secondary-0, RAID Level Qualifier-3
+Size : 3.637 TB
+Sector Size   : 512
+Is VD emulated    : No
+Parity Size    : 1.818 TB
+State               : Optimal
+Strip Size          : 256 KB
+Number Of Drives    : 3
+Span Depth          : 1
+Default Cache Policy: WriteBack, ReadAhead, Direct, No Write Cache if Bad BBU Current
+Cache Policy: WriteBack, ReadAhead, Direct, No Write Cache if Bad BBU
+Default Access Policy: Read/Write
+Current Access Policy: Read/Write
+Disk Cache Policy   : Disk's Default
+Encryption Type     : None
+Bad Blocks Exist: No
+PI type: No PI
+Is VD Cached: No
+Exit Code: 0x00
 ```
 
 
