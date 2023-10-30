@@ -6,7 +6,8 @@ updated: 2023-08-08
 
 <style>
 details>summary {
-    color:#08c !important;
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
 }
 details>summary::before {
     content:'\25B6';
