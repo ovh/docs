@@ -20,6 +20,10 @@ With this technology, you can switch IP addresses from one solution to another i
 >
 > Migration only works for whole blocks, it is not possible to migrate individual IPs within a block.
 
+Moving Additional IP plays an essential role in the effective implementation of failover solutions, an often underestimated aspect of network management. In the event of failure of a primary server, due to unforeseen technical problems or hardware failures, the ability to quickly move the IP to a backup server becomes an imperative necessity to guarantee minimum service continuity. This proactive strategy not only avoids prolonged downtime, but also ensures that applications and services remain accessible to end users, even in the event of unforeseen problems with the original server, guaranteeing data integrity and availability.
+
+The flexibility offered by moving Additional IP is also a major asset in migration processes, another key area in the optimal management of IT systems. Whether it's transferring applications between development and production environments, a common task requiring special attention to avoid service interruptions, or moving services to a new server for scaling or maintenance reasons, IP mobility is crucial. It ensures that transitions take place smoothly, without disrupting the user experience, thereby ensuring customer satisfaction and optimum system performance.
+
 **This guide explains how to move an Additional IP in your OVHcloud Control Panel or via the OVHcloud API.**
 
 ## Requirements
