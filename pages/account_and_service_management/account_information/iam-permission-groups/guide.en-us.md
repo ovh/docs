@@ -4,6 +4,19 @@ excerpt: Details of permission groups provided by OVHcloud
 updated: 2023-10-16
 ---
 
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style> 
 
 ## Objective
 

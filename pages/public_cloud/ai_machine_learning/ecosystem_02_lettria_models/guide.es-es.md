@@ -6,7 +6,8 @@ updated: 2023-08-08
 
 <style>
 details>summary {
-    color:#08c !important;
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
 }
 details>summary::before {
     content:'\25B6';
@@ -186,7 +187,7 @@ The Emotion Analysis API is an effective solution for businesses looking to enha
 By reaching the root endpoint `/` of your API, you can access the full API documentation.
 
 <details>
-<summary>The model is trained to detect the folowing emotions</summary>
+<summary>The model is trained to detect the following emotions</summary>
 
 ```json
 {
