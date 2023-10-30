@@ -16,6 +16,7 @@ These IP addresses will be imported in the form of a /24 IP block size and will 
 - [Your IP range must have a supported size](#supportedsize)
 - [Your IP range is not in use on the Internet](#notinuseontheinternet)
 - [Your IP/AS have a clean reputation](#cleanipreputation)
+- [You need to choose a campus](#chooseacampus)
 - [You must prove ownership of the IP range](#proveownershipip)
 - [You must prove ownership of the AS number](#proveownershipas)
 - [You have to allow OVHcloud to announce the IP range](#announceip)
@@ -69,6 +70,32 @@ The range should not be announced or in use on the Internet (no announcement in 
 
 We may refuse using IPs/AS with a bad reputation, and we reserve the right to stop announcing the IPs/AS if their reputation has a negative impact on OVHcloud's reputation.
 
+### You need to choose a campus <a name="chooseacampus"></a>
+
+A campus can be viewed as a list of datacenters where an IP can be used.
+
+You will need to choose one campus where your IP will be used. Once the delivery is done, you will be able to move any /24 size block obtained from the imported range to any OVHcloud services in the same campus as the one chosen at order time.
+
+Below is a list of current campuses:
+
+- RBX (Roubaix)
+    - rbx (1-8)
+- GRA (Gravelines)
+    - gra (1-3)
+- SBG (Strasbourg)
+    - sbg (1-5)
+- WAW (Warsaw)
+    - waw1
+- LIM (Limburg)
+    - lim (1,3)
+- ERI (Erith)
+    - eri1
+- BHS (Beauharnois)
+    - bhs (1-8)
+- SGP (Singapore)
+    - sgp1
+- YNM (Mumbai)
+    - ynm1
 
 ### You must prove ownership of the IP range <a name="proveownershipip"></a>
 
