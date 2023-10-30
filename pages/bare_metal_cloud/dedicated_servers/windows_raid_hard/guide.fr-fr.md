@@ -162,8 +162,16 @@ Correspond aux SlotID des disques récupérés précédemment
 
 Exemple :
 
-<div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">root@rescue:~# MegaCli -CfgLdAdd -r5[252:0,252:1,252:2] -a0</span> <span class="blank">&nbsp;</span> <span class="output">Adapter 0: Created VD 1</span> <span class="blank">&nbsp;</span> <span class="output">Adapter 0: Configured the Adapter!!</span> <span class="blank">&nbsp;</span> <span class="output">Exit Code: 0x00</span> </pre></div>
-C'est chose faite. Il ne nous reste plus qu'à vérifier nos volumes RAID.
+```shell
+MegaCli -CfgLdAdd -r5[252:0,252:1,252:2] -a0   
+```
+
+Retour :
+```shell
+Adapter 0: Created VD 1
+Adapter 0: Configured the Adapter!!
+Exit Code: 0x00
+```
 
 ### Verifier la creation des volumes RAID
 Nous utiliserons alors la première commande de ce guide qui consiste à lister les volumes RAID : `MegaCli -LDInfo -Lall -aALL`{.action}
