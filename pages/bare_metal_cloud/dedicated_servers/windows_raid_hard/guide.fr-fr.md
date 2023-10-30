@@ -70,13 +70,22 @@ Nous pouvons désormais casser les volumes RAID existant afin de pouvoir ensuite
 
 Pour cela, nous utiliserons la commande ci-dessous à adapater avec le numéro du **Virtual Drive** récupéré précédemment.
 
-`MegaCli -CfgLDDel -Lx -a0`{.action}
+`MegaCli -CfgLDDel -Lx -a0 {.action}`
 
 Le numéro du **Virtual Drive**
 
 Exemple :
+```shell
+MegaCli -CfgLDDel -Lx -a0
+```
 
-<div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">root@rescue:~# MegaCli -CfgLDDel -L0 -a0</span> <span class="blank">&nbsp;</span> <span class="output">Adapter 0: Deleted Virtual Drive-0(target id-0)</span> <span class="blank">&nbsp;</span> <span class="output">Exit Code: 0x00</span> </pre></div>
+Retour : 
+
+```shell
+Adapter 0: Deleted Virtual Drive-0(target id-0)
+Exit Code: 0x00 
+```
+
 
 > [!primary]
 >
