@@ -1,7 +1,7 @@
 ---
 title: Créer un partitionnement Windows avec un Raid Hard
 excerpt: Decouvrez ici comment créer un partitionnement pour Windows sur un serveur en Raid Materiel.
-updated: 2018-07-24
+updated: 2023-10-31
 ---
 
 ## Objectif
