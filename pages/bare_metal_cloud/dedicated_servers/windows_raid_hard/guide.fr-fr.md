@@ -29,7 +29,7 @@ Tout d'abord, nous avons besoin de lister les volumes RAID afin de pouvoir ensui
 
 Pour cela, nous utilisons la commande suivante `MegaCli -LDInfo -Lall -aAll`{.action}
 
-Exemple :
+Commande :
 
 ```shell
 MegaCli -LDInfo -Lall -aAll 
@@ -74,7 +74,7 @@ Pour cela, nous utiliserons la commande ci-dessous à adapater avec le numéro d
 
 Le numéro du **Virtual Drive**
 
-Exemple :
+Commande :
 ```shell
 MegaCli -CfgLDDel -Lx -a0
 ```
@@ -97,7 +97,7 @@ Nous allons maintenant récupérer l'**Enclosure ID** et le **SlotID** des disqu
 
 Pour cela, nous utiliserons la commande suivante : `MegaCli -PdList -aALL | egrep -i "Adapter|Slot|Enclosure Device"`{.action}
 
-Exemple :
+Commande :
 
 ```shell
 MegaCli -PdList -aALL | egrep -i "Adapter|Slot|Enclosure Device"
@@ -136,7 +136,7 @@ Dans notre exemple, nous allons créer un RAID 5 sur nos 3 disques, d'une taille
 >
 > Il est conseillé de prendre un peu plus d'espace afin d'avoir une partition de la taille minimum voulue, sachant que la configuration nécessite un peu d'espace.
 
-Exemple :
+Commande :
 
 ```shell
 MegaCli -CfgLdAdd -r5[252:0,252:1,252:2] -sz204800 -a0
@@ -160,7 +160,7 @@ Correspond aux Enclosure ID des disques récupérés précédemment
 
 Correspond aux SlotID des disques récupérés précédemment
 
-Exemple :
+Commande :
 
 ```shell
 MegaCli -CfgLdAdd -r5[252:0,252:1,252:2] -a0   
@@ -176,7 +176,7 @@ Exit Code: 0x00
 ### Verifier la creation des volumes RAID
 Nous utiliserons alors la première commande de ce guide qui consiste à lister les volumes RAID : `MegaCli -LDInfo -Lall -aALL`{.action}
 
-Exemple :
+Commande :
 
 ```shell
 MegaCli -LDInfo -Lall -aALL
@@ -231,7 +231,25 @@ Exit Code: 0x00
 
 Nous pouvons également utiliser la commande `fdisk -l`{.action} afin de consulter nos deux volumes RAID.
 
-<div> <style type="text/css" scoped>span.prompt:before{content:"# ";}</style> <pre class="highlight command-prompt"> <span class="prompt">root@rescue:~# fdisk -l</span> <span class="blank">&nbsp;</span> <span class="output">Disk /dev/sda: 200.2 GiB, 214958080000 bytes, 419840000 sectors</span> <span class="output">Units: sectors of 1 * 512 = 512 bytes</span> <span class="output">Sector size (logical/physical): 512 bytes / 512 bytes</span> <span class="output">I/O size (minimum/optimal): 512 bytes / 512 bytes</span> <span class="blank">&nbsp;</span> <span class="output">Disk /dev/sdb: 3.5 TiB, 3784730214400 bytes, 7392051200 sectors</span> <span class="output">Units: sectors of 1 * 512 = 512 bytes</span> <span class="output">Sector size (logical/physical): 512 bytes / 512 bytes</span> <span class="output">I/O size (minimum/optimal): 512 bytes / 512 bytes</span> </pre></div>
+Commande : 
+
+```shell
+fdisk -l
+```
+
+Retour :
+
+```
+Disk /dev/sda: 200.2 GiB, 214958080000 bytes, 419840000 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+
+Disk /dev/sdb: 3.5 TiB, 3784730214400 bytes, 7392051200 sectors
+Units: sectors of 1 * 512 = 512 bytes
+Sector size (logical/physical): 512 bytes / 512 bytes
+I/O size (minimum/optimal): 512 bytes / 512 bytes
+```
 
 ### Installer Windows depuis l'espace client
 Enfin, accédez à votre espace client afin de procéder à l'installation de Windows sur votre serveur.
