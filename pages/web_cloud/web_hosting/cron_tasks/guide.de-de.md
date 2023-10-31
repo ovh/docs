@@ -88,14 +88,14 @@ Das Interface bietet zwei Wege, um die Frequenz Ihres Tasks zu konfigurieren. Ve
 
 > [!primary]
 >
-> Mit dem Formular `Tage`{.action} können Sie Ausführungshäufigkeiten für einen monatlichen Zyklus festlegen.
+> Mit der Auswahl `Tage`{.action} können Sie die Ausführungsfrequenz für einen monatlichen Zyklus festlegen.
 >
-> Mit dem Formular `Wochentage`{.action} können Sie zusätzliche Ausführungshäufigkeiten festlegen, jedoch in einem wöchentlichen Zyklus.
+> Mit der Auswahl `Wochentage`{.action} können Sie zusätzliche Ausführungszeitpunkte festlegen, jedoch in einem wöchentlichen Zyklus.
 >
 
 |Experten-Modus| 
 |---|
-|Geben Sie numerische Werte ein wie in einem *crontab*. Die Sternchen stehen für "jeden Wert" des Zeitraums, was bedeutet, dass die Aufgabe in diesem Beispiel **einmal pro Stunde täglich** kontinuierlich ausgeführt würde.|
+|Geben Sie numerische Werte ein wie in einem *crontab*. Die Sterne stehen für "jeden Wert" des Zeitraums, was bedeutet, dass die Aufgabe in diesem Beispiel **einmal pro Stunde täglich** kontinuierlich ausgeführt würde.|
 |![cron frequency](images/cron-jobs-4.png){.thumbnail}|
 
 Sie können während der Konfiguration zwischen den beiden Ansichten wechseln, um die Änderungen zu sehen. Beachten Sie auch die [Einschränkungen bei der Task-Planung auf einem Webhosting](./#einschrankungen-bei-geplanten-tasks-auf-ihrem-webhosting).
