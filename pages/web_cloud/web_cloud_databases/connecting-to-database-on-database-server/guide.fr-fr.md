@@ -1,7 +1,7 @@
 ---
-title: 'Se connecter à la base de données de votre serveur de bases de données'
-excerpt: 'Découvrez comment se connecter à votre base de données'
-updated: 2023-10-26
+title: "Se connecter à la base de données de votre serveur de bases de données"
+excerpt: "Découvrez comment se connecter à votre base de données"
+updated: 2023-10-31
 ---
 
 ## Objectif
