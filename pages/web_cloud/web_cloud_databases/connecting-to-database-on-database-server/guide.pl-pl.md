@@ -45,7 +45,7 @@ W zakładce `Informacje ogólne` link dostępowy do phpMyAdmin znajduje się w p
 
 Zostaniesz przekierowany na stronę logowania phpMyAdmin.
 
-![private-sql](images/private-sql-phpma02.png){.thumbnail}
+![private-sql](images/pma-login-web-cloud-db.png){.thumbnail}
 
 - **Serwer**: wprowadź nazwę hosta widocznego w zakładce `Informacje ogólne` w polu **"Zarządzanie bazą danych"** w polu "Nazwa hosta" w części **SQL**.
 - **Użytkownik**: wprowadź nazwę użytkownika utworzoną w karcie `Użytkownicy i uprawnienia` serwera baz danych.
@@ -54,7 +54,7 @@ Zostaniesz przekierowany na stronę logowania phpMyAdmin.
 
 Jeśli połączenie zakończy się pomyślnie, wyświetli się następna strona phpMyAdmin.
 
-![private-sql](images/private-sql-phpma03.png){.thumbnail}
+![private-sql](images/pma-main-page-web-cloud-db.png){.thumbnail}
 
 > [!warning]
 >

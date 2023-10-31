@@ -41,15 +41,24 @@ In the `General information` tab, you will find the access link to phpMyAdmin in
 
 You will land on the phpMyAdmin login page.
 
-![private-sql](images/private-sql-phpma02.png){.thumbnail}
+![private-sql](images/pma-login-web-cloud-db.png){.thumbnail}
 
-- **Server and port**: Enter the host name and port of your server, which you can view in the `General information` tab, in the **Database administration** box, under “Host name” and ”Port” in the **SQL** section. The host name and port must be separated by a space.
-- **User**: Enter the username you created in the `Users and rights` tab of your database server.
-- **Password**: Enter the password for the user concerned.
+Enter the following information to connect to your database:
+
+- **Server:** Enter the *host name* of your database server, followed by its *port number*. The *port number* must be separated from the *host name* by a “**space**” or “**:**”. For example, if the *hostname* is **aaXXXXX-XXX.eu.clouddb.ovh.net** and the *port number* is **12345**, then you would type **aaXXXXX-XXX.eu.clouddb.ovh.net:12345** or **aaXXXXX-XXX.eu.clouddb.ovh.net 12345**. To find the *host name* and *port number* of your Web Cloud Databases server, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} , then go to the `Web Cloud` section. Click on the `Web Cloud Databases`{.action} tab in the left-hand column, then select the name of your database server. On the `General information` page that appears, you will find the *host name* and the *port number* in the `Login information` box.
+
+- **User:** Enter the *username* of your database server. To find the *username* of your database, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} then go to the `Web Cloud` section. Click on the `Web Cloud Databases`{.action} tab in the left-hand column, then select the name of your database server. On the page that opens, click on the `Users and rights`{.action} tab. There, you will find a table listing all of the users created on your Web Cloud Databases solution.
+
+- **Password:** Enter the *password* associated with the *username* concerned. If you can't remember the *password* associated with your *username*, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} , then go to the `Web Cloud` section. Click on the `Web Cloud Databases`{.action} tab in the left-hand column, then select the name of your database server. On the page that opens, click on the `Users and rights`{.action} tab. Click the `...`{.action} button to the right of *the user* concerned to `Change password`{.action}.
+
+> [!warning]
+>
+> If you change a database user password, all applications/websites that access the database must be updated accordingly.
+>
 
 If the connection succeeds, the next page of phpMyAdmin will appear.
 
-![private-sql](images/private-sql-phpma03.png){.thumbnail}
+![private-sql](images/pma-main-page-web-cloud-db.png){.thumbnail}
 
 > [!warning]
 >

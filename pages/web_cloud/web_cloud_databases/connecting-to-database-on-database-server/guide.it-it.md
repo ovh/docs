@@ -45,7 +45,7 @@ Nella scheda `Informazioni generali`, trovi il link di accesso a phpMyAdmin nel 
 
 Si aprirà la pagina di connessione di phpMyAdmin.
 
-![private-sql](images/private-sql-phpma02.png){.thumbnail}
+![private-sql](images/pma-login-web-cloud-db.png){.thumbnail}
 
 - **Server**: inserisci il nome host del tuo server visibile nella scheda `Informazioni generali`, nel riquadro **"Amministrazione del database"** con la voce "Nome host" nella parte **SQL**.
 - **Utente**: inserisci il nome utente creato nella scheda `Utenti e diritti` del tuo database server.
@@ -54,7 +54,7 @@ Si aprirà la pagina di connessione di phpMyAdmin.
 
 Se la connessione avrà successo, comparirà la pagina successiva di phpMyAdmin.
 
-![private-sql](images/private-sql-phpma03.png){.thumbnail}
+![private-sql](images/pma-main-page-web-cloud-db.png){.thumbnail}
 
 > [!warning]
 >
