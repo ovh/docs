@@ -45,6 +45,11 @@ Concerning different distribution releases, please note that the proper procedur
 |NETWORK_INTERFACE|The name of the network interface|*eth0*, *ens3*|
 |ID|ID of the IP alias, starting with *0* (depending on the number of additional IPs there are to configure)|*0*, *1*|
 
+> [!primary]
+>
+> When configuring an Additional IP on a Public Cloud instance, you do not need a gateway and subnet mask.
+> 
+
 ### Debian 11
 
 #### Step 1: Disable automatic network configuration
