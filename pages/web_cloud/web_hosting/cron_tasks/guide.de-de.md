@@ -1,7 +1,7 @@
 ---
-title: 'Automatische Tasks mit einem Webhosting verwenden'
-excerpt: 'Erfahren Sie hier, wie Sie automatisierte Tasks auf Ihrem Webhosting konfigurieren'
-updated: 2022-12-01
+title: "Automatische Tasks mit einem Webhosting verwenden"
+excerpt: "Erfahren Sie hier, wie Sie automatisierte Tasks auf Ihrem Webhosting konfigurieren"
+updated: 2023-10-31
 ---
 
 <style>
@@ -38,9 +38,10 @@ Auf Ihrem OVHcloud Webhosting können Sie Skripte verwenden, um bestimmte Operat
 **Hier erfahren Sie, wie Sie CRON-Tasks erstellen, um Ihre geplanten Tasks auf einem Webhosting zu automatisieren.**
 
 > [!warning]
->OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 >
->Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) und/oder den Herausgeber des Dienstes zu kontaktieren. Für externe Dienstleistungen bietet OVHcloud leider keine Unterstützung. Weitere Hinweise finden Sie im Teil „Weiterführende Informationen” dieser Anleitung.
+> OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
+>
+> Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) und/oder den Herausgeber des Dienstes zu kontaktieren. Für externe Dienstleistungen bietet OVHcloud leider keine Unterstützung. Weitere Hinweise finden Sie im Teil [„Weiterführende Informationen”](#go-further) dieser Anleitung.
 >
 
 ## Voraussetzungen
@@ -84,6 +85,13 @@ Das Interface bietet zwei Wege, um die Frequenz Ihres Tasks zu konfigurieren. Ve
 |---|
 |Verwenden Sie die Auswahlmenüs, um die Uhrzeit, die Tage eines Monats, die Wochentage und die Monate der Ausführung anzugeben.|
 |![cron frequency](images/cron-jobs-3.png){.thumbnail}|
+
+> [!primary]
+>
+> Mit dem Formular `Tage`{.action} können Sie Ausführungshäufigkeiten für einen monatlichen Zyklus festlegen.
+>
+> Mit dem Formular `Wochentage`{.action} können Sie zusätzliche Ausführungshäufigkeiten festlegen, jedoch in einem wöchentlichen Zyklus.
+>
 
 |Experten-Modus| 
 |---|
@@ -165,10 +173,14 @@ Weitere Informationen finden Sie in unserer Anleitung zu [Statistiken und Logs](
 [2020-08-11 18:07:10] ## OVH ## END - 2020-08-11 18:07:10.969840 exitcode: 255
 </code></pre>
 
-## Weiterführende Informationen
+## Weiterführende Informationen <a name="go-further"></a>
 
 [.ovhconfig-Datei Ihres Webhostings konfigurieren](/pages/web_cloud/web_hosting/configure_your_web_hosting)
 
 [SSH-Zugang Ihres Webhostings verwenden](/pages/web_cloud/web_hosting/ssh_on_webhosting)
+
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

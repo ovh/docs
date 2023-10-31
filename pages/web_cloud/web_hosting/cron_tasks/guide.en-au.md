@@ -1,7 +1,7 @@
 ---
-title: 'Using automated tasks on a Web Hosting plan'
-excerpt: 'Find out how to configure scheduled jobs on your Web Hosting'
-updated: 2022-12-01
+title: "Using automated tasks on a Web Hosting plan"
+excerpt: "Find out how to configure scheduled jobs on your Web Hosting"
+updated: 2023-10-31
 ---
 
 <style>
@@ -34,9 +34,10 @@ On OVHcloud Web Hostings, you can use scripts to automate certain operations. Cr
 **This guide explains how to create cron jobs to automate scheduled tasks on a Web Hosting.**
 
 > [!warning]
->OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 >
->This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend contacting a specialised provider and/or the software publisher for the service if you encounter any difficulties. We will not be able to assist you ourselves. You can find more information in the “Go further” section of this guide.
+> OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
+>
+> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend contacting a specialised provider and/or the software publisher for the service if you encounter any difficulties. We will not be able to assist you ourselves. You can find more information in the [“Go further”](#go-further) section of this guide.
 >
 
 ## Requirements
@@ -83,6 +84,13 @@ The interface offers two modes to configure the frequency of your task. Use the 
 |---|
 |Enter numeric values as you would in a *crontab*. The asterisk operator denotes "every value" of the time period, meaning the task would continuously run **once an hour every day** in this example.|
 |![cron frequency](images/cron-jobs-4.png){.thumbnail}|
+
+> [!primary]
+>
+> The `Days`{.action} form allows you to define execution frequencies on a monthly cycle.
+>
+> The `Days of the week`{.action} form allows you to define additional execution frequencies, but on a weekly cycle.
+>
 
 You can switch between the two modes during configuration to view the changes accordingly. Please also note the [limitations when scheduling a task on a Web Hosting](./#limitations-of-web-hosting-tasks).
 
@@ -159,10 +167,14 @@ Please refer to [this guide](/pages/web_cloud/web_hosting/logs_and_statistics) f
 [2020-08-11 18:07:10] ## OVH ## END - 2020-08-11 18:07:10.969840 exitcode: 255
 </code></pre>
 
-## Go further
+## Go further <a name="go-further"></a>
 
 [Configuring the .ovhconfig file of your Web Hosting plan](/pages/web_cloud/web_hosting/configure_your_web_hosting)
 
 [Using SSH on a Web Hosting plan](/pages/web_cloud/web_hosting/ssh_on_webhosting)
+
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-au/directory/).
+
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-au/support-levels/).
 
 Join our community of users on <https://community.ovh.com/en/>.
