@@ -47,10 +47,18 @@ Si aprirà la pagina di connessione di phpMyAdmin.
 
 ![private-sql](images/pma-login-web-cloud-db.png){.thumbnail}
 
-- **Server**: inserisci il nome host del tuo server visibile nella scheda `Informazioni generali`, nel riquadro **"Amministrazione del database"** con la voce "Nome host" nella parte **SQL**.
-- **Utente**: inserisci il nome utente creato nella scheda `Utenti e diritti` del tuo database server.
-- **Password**: inserisci la password associata all'utente
-- **Porta**: inserisci la porta indicata nella scheda `Informazioni generali`, nel riquadro **"Amministrazione del database"** con la voce "Porta" nella parte **SQL**. 
+Per accedere al database, inserisci quanto segue:
+
+- **Server:** inserire il *Nome host* del database server seguito dal *numero di porta*. Il *numero di porta* deve essere separato dal *nome host* da un "**spazio**" o da "**:**". Ad esempio, se il *Nome host* è **aaXXXXX-XXX.eu.clouddb.ovh.net** e il *numero di porta* è **12345**, è necessario inserire **aaXXXXX-XXX.eu.clouddb.ovh.net:12345** o **aaXXXXX-XXX.eu.clouddb.ovh.net 12345**. Per recuperare il *Nome host* e il *numero di porta* del tuo server Web Cloud Databases, accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} e accedi alla sezione `Web Cloud`. Clicca sulla scheda `Web Cloud Databases`{.action} nella colonna di sinistra e seleziona il nome del tuo database server. Nella pagina `Informazioni generali` che appare, troverai il *Nome host* e il *numero di porta* nel riquadro `Informazioni di login`.
+
+- **Utente:** Inserisci il *nome utente* del tuo database server. Per recuperare il *nome utente* del tuo database, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, clicca su `Web Cloud`. Clicca sulla scheda `Web Cloud Databases`{.action} nella colonna di sinistra e seleziona il nome del tuo database server. Clicca sulla scheda `Utenti e diritti`{.action}. Troverai una tabella con tutti gli utenti creati sulla tua soluzione Web Cloud Databases.
+
+- **Password:** Inserisci la *password* associata al *nome utente* pertinente. Se non ricordi più la *password* associata al tuo *nome utente*, accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} e clicca su `Web Cloud`. Clicca sulla scheda `Web Cloud Databases`{.action} nella colonna di sinistra e seleziona il nome del tuo database server. Clicca sulla scheda `Utenti e diritti`{.action}. Clicca sul pulsante `...`{.action} a destra di *l’utente* interessato per `Modifica la password`{.action}.
+
+> [!warning]
+>
+> Se si modifica la password di un utente di database, tutte le applicazioni o i siti Web che accedono al database devono essere aggiornati.
+>
 
 Se la connessione avrà successo, comparirà la pagina successiva di phpMyAdmin.
 
