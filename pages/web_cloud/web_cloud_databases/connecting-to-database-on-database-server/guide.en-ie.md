@@ -1,7 +1,7 @@
 ---
-title: 'Connecting to a database on your database server'
-excerpt: 'Find out how to log in to your database'
-updated: 2023-06-22
+title: "Connecting to a database on your database server"
+excerpt: "Find out how to log in to your database"
+updated: 2023-10-31
 ---
 
 ## Objective
@@ -33,9 +33,9 @@ You can access your database’s content via an interface. There are several way
 
 ####  With OVHcloud phpMyAdmin
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie) and select `Web Cloud`{.action} in the top navigation bar. Click `Web Cloud Databases`{.action}, then choose the SQL instance concerned.
+Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} , then go to the `Web Cloud` section. Click on the `Web Cloud Databases`{.action} tab in the left-hand column, then select the name of your database server.
 
-In the `General information` tab, you will find the access link in the **Database administration** box, under “User interface”.
+In the `General information` tab, you will find the access link to phpMyAdmin in the **“Database administration”** box, under “User interface”.
 
 ![private-sql](images/private-sql-phpma01.png){.thumbnail}
 

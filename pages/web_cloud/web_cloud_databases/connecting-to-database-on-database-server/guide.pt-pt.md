@@ -1,7 +1,7 @@
 ---
-title: 'Conexão à base de dados do servidor de bases de dados'
-excerpt: 'Saiba como se conectar a uma base de dados'
-updated: 2023-02-15
+title: "Conexão à base de dados do servidor de bases de dados"
+excerpt: "Saiba como se conectar a uma base de dados"
+updated: 2023-10-31
 ---
 
 > [!primary]
@@ -37,9 +37,9 @@ Se desejar, pode consultar o conteúdo da sua base de dados através de uma inte
 
 ####  Pelo phpMyAdmin OVHcloud 
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Clique no separador `Web Cloud` e, a seguir, em `Web Cloud Databases`{.action}. Selecione o nome do seu servidor de bases de dados.
+Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} e aceda à secção `Web Cloud`. Clique no separador `Web Cloud Databases`{.action} na coluna à esquerda e selecione o nome do servidor de bases de dados.
 
-No separador `Informações gerais`, vai encontrar o link de acesso no quadro **«Gestão da base de dados»** sob a menção «Interface do utilizador».
+No separador `Informações gerais`, encontrará a ligação de acesso ao phpMyAdmin no quadro **"Gestão da base de dados"** sob a menção "Interface do utilizador".
 
 ![sql-privado](images/private-sql-phpma01.png){.thumbnail}
 

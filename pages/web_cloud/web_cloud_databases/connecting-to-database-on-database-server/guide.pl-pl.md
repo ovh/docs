@@ -1,7 +1,7 @@
 ---
-title: 'Logowanie do bazy danych Twojego serwera baz danych'
-excerpt: 'Dowiedz się, jak się zalogować do bazy danych'
-updated: 2023-02-15
+title: "Logowanie do bazy danych Twojego serwera baz danych"
+excerpt: "Dowiedz się, jak się zalogować do bazy danych"
+updated: 2023-10-31
 ---
 
 > [!primary]
@@ -37,9 +37,9 @@ Możesz sprawdzić zawartość Twojej bazy danych w interfejsie. Aby to zrobić,
 
 ####  Przez phpMyAdmin OVHcloud 
 
-Przejdź do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Kliknij kartę `Web Cloud`, a następnie `Web Cloud Databases`{.action}. Wybierz nazwę serwera baz danych.
+Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} i przejdź do sekcji `Web Cloud`. Kliknij zakładkę `Web Cloud Databases`{.action} w lewej kolumnie, następnie wybierz nazwę Twojego serwera baz danych.
 
-W zakładce `Informacje ogólne` link w polu **"Zarządzanie bazą danych"** znajduje się pod nagłówkiem "Interfejs użytkownika".
+W zakładce `Informacje ogólne` link dostępowy do phpMyAdmin znajduje się w polu **"Administrowanie bazą danych"** pod napisem " Panel użytkownika ".
 
 ![private-sql](images/private-sql-phpma01.png){.thumbnail}
 

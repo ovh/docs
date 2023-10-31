@@ -1,7 +1,7 @@
 ---
-title: Accedere al database del tuo database server
-excerpt: Come connettersi al database
-updated: 2023-02-15
+title: "Accedere al database del tuo database server"
+excerpt: "Questa guida ti mostra come connettersi al database"
+updated: 2023-10-31
 ---
 
 > [!primary]
@@ -37,9 +37,9 @@ updated: 2023-02-15
 
 ####  Per phpMyAdmin OVHcloud 
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Clicca sulla scheda `Web Cloud` e poi su `Web Cloud Databases`{.action}. Seleziona il nome del tuo database server.
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} e seleziona `Web Cloud`. Clicca sulla scheda `Web Cloud Databases`{.action} nella colonna di sinistra e seleziona il nome del tuo database server.
 
-Dalla scheda `Informazioni generali`, il link di accesso nel riquadro **"Amministrazione del database"** è disponibile nella sezione "Interfaccia utente".
+Nella scheda `Informazioni generali`, trovi il link di accesso a phpMyAdmin nel riquadro **"Gestione database"** alla voce "Interfaccia utente".
 
 ![private-sql](images/private-sql-phpma01.png){.thumbnail}
 

@@ -1,7 +1,7 @@
 ---
-title: 'Mit der Datenbank Ihres Datenbankservers verbinden'
-excerpt: 'Erfahren Sie hier, wie Sie sich mit Ihrer Datenbank verbinden können'
-updated: 2023-02-15
+title: "Mit der Datenbank Ihres Datenbankservers verbinden"
+excerpt: "Erfahren Sie hier, wie Sie sich mit Ihrer Datenbank verbinden können"
+updated: 2023-10-31
 ---
 
 > [!primary]
@@ -37,9 +37,9 @@ Sie können den Inhalt Ihrer Datenbank einsehen, indem Sie sich in ein geeignete
 
 #### phpMyAdmin von OVHcloud
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und klicken Sie im Bereich `Web Cloud`{.action} auf `Web Cloud Databases`{.action}. Wählen Sie den Datenbanknamen aus und gehen Sie dann auf den Tab `Allgemeine Informationen`{.action}.
+Verbinden Sie sich mit Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} und gehen Sie dann in den Bereich `Web Cloud`. Klicken Sie in der linken Spalte auf `Web Cloud Databases`{.action} und wählen Sie den Namen Ihres Datenbankservers aus.
 
-Hier finden Sie den Zugangslink im Kasten **Administration der Datenbank** unter "Benutzer-Interface".
+Im Tab `Allgemeine Informationen` finden Sie den Zugriffs-Link zu phpMyAdmin im Rahmen **„Administration der Datenbank“** unter dem Punkt „Benutzer-Interface“.
 
 ![private-sql](images/private-sql-phpma01.png){.thumbnail}
 
