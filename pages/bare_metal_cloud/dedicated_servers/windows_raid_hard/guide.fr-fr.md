@@ -260,4 +260,6 @@ Une fois le système installé, rendez-vous sur votre système Windows, dans l'u
 
 ## Aller plus loin
 
+[Hardware RAID](/pages/bare_metal_cloud/dedicated_servers/raid_hard){.external}.
+
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
