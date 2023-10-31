@@ -1,7 +1,7 @@
 ---
-title: Créer des tâches automatisées (CRON) sur votre hébergement Web
-excerpt: Découvrez comment créer des tâches CRON pour automatiser vos tâches planifiées sur un hébergement web
-updated: 2022-12-01
+title: "Créer des tâches automatisées (CRON) sur votre hébergement Web"
+excerpt: "Découvrez comment créer des tâches CRON pour automatiser vos tâches planifiées sur un hébergement web"
+updated: 2023-10-31
 ---
 
 <style>
@@ -34,9 +34,10 @@ Sur votre hébergement Web OVHcloud, vous pouvez utiliser des scripts pour autom
 **Découvrez comment créer des tâches CRON pour automatiser vos tâches planifiées sur un hébergement web.**
 
 > [!warning]
->OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d’en assurer le bon fonctionnement.
 >
->Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) et/ou de contacter l’éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d’informations dans la section « Aller plus loin » de ce guide. 
+> OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d’en assurer le bon fonctionnement.
+>
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) et/ou de contacter l’éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d’informations dans la section « Aller plus loin » de ce guide. 
 >
 
 ## Prérequis
@@ -46,7 +47,7 @@ Sur votre hébergement Web OVHcloud, vous pouvez utiliser des scripts pour autom
 
 ## En pratique
 
-Rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Cliquez sur  l'onglet `Web Cloud`{.action}, puis sur `Hébergements`{.action}.
+Rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Cliquez sur l'onglet `Web Cloud`{.action}, puis sur `Hébergements`{.action}.
 
 Sélectionnez l'hébergement concerné, cliquez sur l'onglet `Plus`{.action} puis sur `Cron`{.action}.
 
@@ -80,6 +81,13 @@ L'interface offre deux modes pour configurer la fréquence de votre tâche. Util
 |---|
 |Utilisez les menus déroulants pour spécifier l'heure, les jours d'un mois, les jours de la semaine et les mois de la tâche.|
 |![cron frequency](images/cron-jobs-3.png){.thumbnail}|
+
+> [!primary]
+>
+> Le formulaire `Jours`{.action} permet de définir des fréquences d'exécution sur un cycle mensuel.
+>
+> Le formulaire `Jours de la semaine`{.action} permet de définir des fréquences d'exécution complémentaires mais sur un cycle hebdomadaire.
+>
 
 |Mode expert| 
 |---|
