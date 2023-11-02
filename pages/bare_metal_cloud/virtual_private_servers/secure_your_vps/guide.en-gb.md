@@ -72,6 +72,8 @@ Port 22
 Replace the number **22** with the port number of your choice. **Please do not enter a port number already used on your system**. To be safe, use a number between 49152 and 65535.<br>
 Save and exit the configuration file.
 
+If the line is "commented out" (i.e. preceded by a "#"), be sure to remove the "#" before saving the file for the change to take effect.
+
 Restart the service:
 
 ```bash
