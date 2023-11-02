@@ -6,7 +6,7 @@ updated: 2023-10-31
 
 ## Objectif
 
-Il est possible de consulter le contenu de votre base de données via une interface. Pour cela, il existe plusieurs moyens de s'y connecter.
+Il est possible de consulter le contenu de votre base de données via une interface. Pour cela, il existe plusieurs moyens de s'y connecter. 
 
 **Découvrez comment vous connecter à votre base de données sur votre serveur de bases de données.**
 
