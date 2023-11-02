@@ -1,7 +1,7 @@
 ---
-title: Crea task automatizzati (CRON) sul tuo hosting Web
-excerpt: Scopri come creare task CRON per automatizzare le operazioni pianificate su un hosting Web
-updated: 2022-12-01
+title: "Crea task automatizzati (CRON) sul tuo hosting Web"
+excerpt: "Questa guida ti mostra come creare task CRON per automatizzare le operazioni pianificate su un hosting Web"
+updated: 2023-10-31
 ---
 
 <style>
@@ -38,9 +38,10 @@ Sull'hosting Web OVHcloud è possibile utilizzare script per automatizzare alcun
 **Questa guida ti mostra come creare task CRON per automatizzare le operazioni pianificate su un hosting Web.**
 
 > [!warning]
->OVHcloud mette a tua disposizione servizi di cui tu sei responsabile per la configurazione e la gestione. Spetta quindi a te garantirne il buon funzionamento.
 >
->Questa guida ti aiuta a realizzare le operazioni più ricorrenti. Per questo, ti suggeriamo di rivolgerti a un [provider specializzato](https://partner.ovhcloud.com/it/directory/) o di contattare l’amministratore del servizio nel caso in cui dovessi incontrare delle difficoltà. Non saremo effettivamente in grado di fornirti assistenza. Per maggiori informazioni consulta la sezione “Per saperne di più” di questa guida. 
+> OVHcloud mette a tua disposizione servizi di cui tu sei responsabile per la configurazione e la gestione. Spetta quindi a te garantirne il buon funzionamento.
+>
+> Questa guida ti aiuta a realizzare le operazioni più ricorrenti. Per questo, ti suggeriamo di rivolgerti a un [provider specializzato](https://partner.ovhcloud.com/it/directory/) o di contattare l’amministratore del servizio nel caso in cui dovessi incontrare delle difficoltà. Non saremo effettivamente in grado di fornirti assistenza. Per maggiori informazioni consulta la sezione [“Per saperne di più”](#go-further) di questa guida. 
 >
 
 ## Prerequisiti
@@ -84,6 +85,13 @@ L'interfaccia offre due modalità per configurare la frequenza del tuo task. Uti
 |---|
 |Utilizza i menu a tendina per specificare l'ora, i giorni di un mese, i giorni della settimana e i mesi del task.|
 |![cron frequency](images/cron-jobs-3.png){.thumbnail}|
+
+> [!primary]
+>
+> Il modulo `Giorni`{.action} permette di definire le frequenze di esecuzione su un ciclo mensile.
+>
+> Il modulo `Giorni della settimana`{.action} permette di definire frequenze di esecuzione complementari ma su un ciclo settimanale.
+>
 
 |Modalità esperto| 
 |---|
@@ -165,10 +173,14 @@ Consulta la nostra guida ["Consulta le statistiche e i log del tuo sito su un'of
 [2020-08-11 18:07:10] ## OVH ## END - 2020-08-11 18:07:10.969840 exitcode: 255
 </code></pre>
 
-## Per saperne di più
+## Per saperne di più <a name="go-further"></a>
 
 [Configurare il file .ovhconfig di un hosting Web](/pages/web_cloud/web_hosting/configure_your_web_hosting)
 
 [Utilizza l'accesso SSH di un hosting Web](/pages/web_cloud/web_hosting/ssh_on_webhosting)
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
+
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
+
+Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.

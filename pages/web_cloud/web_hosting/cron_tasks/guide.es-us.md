@@ -1,7 +1,7 @@
 ---
-title: Crear tareas automatizadas (CRON) en un alojamiento web
-excerpt: Cómo crear tareas CRON para automatizar las tareas programadas en un alojamiento web
-updated: 2022-12-01
+title: "Crear tareas automatizadas (CRON) en un alojamiento web"
+excerpt: "Descubra cómo crear tareas CRON para automatizar las tareas programadas en un alojamiento web"
+updated: 2023-10-31
 ---
 
 <style>
@@ -38,9 +38,10 @@ En su alojamiento web de OVHcloud, puede utilizar scripts para automatizar deter
 **Esta guía explica cómo crear tareas CRON para automatizar las tareas programadas en un alojamiento web.**
 
 > [!warning]
->La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionan correctamente.
 >
->Esta guía le ayudará a realizar las operaciones más habituales. No obstante, si tiene alguna duda, le recomendamos que contacte con un proveedor de servicios especializado o con el editor del servicio. Nosotros no podremos asistirle. Para más información, consulte el apartado «Más información» de esta guía. 
+> La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionan correctamente.
+>
+> Esta guía le ayudará a realizar las operaciones más habituales. No obstante, si tiene alguna duda, le recomendamos que contacte con un proveedor de servicios especializado o con el editor del servicio. Nosotros no podremos asistirle. Para más información, consulte el apartado ["Más información"](#go-further) de esta guía. 
 >
 
 ## Requisitos
@@ -84,6 +85,13 @@ La interfaz ofrece dos modos para configurar la frecuencia de la tarea. Utilice 
 |---|
 |Utilice los menús desplegables para especificar la hora, los días de un mes, los días de la semana y los meses de la tarea.|
 |![cron frequency](images/cron-jobs-3.png){.thumbnail}|
+
+> [!primary]
+>
+> El formulario `Días`{.action} permite definir frecuencias de ejecución en un ciclo mensual.
+>
+> El formulario `Días de la semana`{.action} permite definir frecuencias de ejecución adicionales, pero en un ciclo semanal.
+>
 
 |Modo experto| 
 |---|
@@ -165,10 +173,14 @@ Para más información, consulte nuestra guía ["Consultar las estadísticas y l
 [2020-08-11 18:07:10] ## OVH ## END - 2020-08-11 18:07:10.969840 exitcode: 255
 </code></pre>
 
-## Más información
+## Más información <a name="go-further"></a>
 
 [Configurar el archivo .ovhconfig de un alojamiento web](/pages/web_cloud/web_hosting/configure_your_web_hosting)
 
 [Utilizar el acceso SSH de un alojamiento web](/pages/web_cloud/web_hosting/ssh_on_webhosting)
+
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es/directory/).
+
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es/support-levels/).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

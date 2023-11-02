@@ -1,7 +1,7 @@
 ---
-title: Tworzenie automatycznych zadań (CRON) na Twoim hostingu
-excerpt: Dowiedz się, jak utworzyć zadania CRON do automatyzacji zaplanowanych zadań na hostingu
-updated: 2022-12-01
+title: "Tworzenie automatycznych zadań (CRON) na Twoim hostingu"
+excerpt: "Dowiedz się, jak utworzyć zadania CRON do automatyzacji zaplanowanych zadań na hostingu"
+updated: 2023-10-31
 ---
 
 <style>
@@ -38,9 +38,10 @@ Na Twoim hostingu OVHcloud możesz użyć skryptów do automatyzacji niektórych
 **Dowiedz się, jak tworzyć zadania CRON do automatyzacji zaplanowanych zadań na hostingu.**
 
 > [!warning]
->OVHcloud udostępnia różnorodne usługi, jednak to Ty odpowiadasz za ich konfigurację i zarządzanie nimi. Jesteś tym samym odpowiedzialny za ich prawidłowe funkcjonowanie.
 >
->Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy wyspecjalizowanego webmastera lub kontakt z producentem oprogramowania. Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji „Sprawdź również”. 
+> OVHcloud udostępnia różnorodne usługi, jednak to Ty odpowiadasz za ich konfigurację i zarządzanie nimi. Jesteś tym samym odpowiedzialny za ich prawidłowe funkcjonowanie.
+>
+> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy wyspecjalizowanego webmastera lub kontakt z producentem oprogramowania. Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji [„Sprawdź również”](#go-further). 
 >
 
 ## Wymagania początkowe
@@ -84,6 +85,13 @@ Interfejs pozwala na skonfigurowanie częstotliwości zadania w dwóch trybach. 
 |---|
 |Użyj rozwijanych menu, aby określić godzinę, dni miesiąca, dni tygodnia i miesiące zadania.|
 |![cron frequency](images/cron-jobs-3.png){.thumbnail}|
+
+> [!primary]
+>
+> Formularz `Dni`{.action} pozwala na zdefiniowanie częstotliwości wykonywania w cyklu miesięcznym.
+>
+> Formularz `Dni tygodnia`{.action} pozwala na zdefiniowanie dodatkowych częstotliwości wykonywania, ale w cyklu tygodniowym.
+>
 
 |Tryb zaawansowany| 
 |---|
@@ -165,10 +173,14 @@ Więcej informacji znajdziesz w przewodniku ["Sprawdź statystyki i logi strony 
 [2020-08-11 18:07:10] ## OVH ## END - 2020-08-11 18:07:10.969840 exitcode: 255
 </code></pre>
 
-## Sprawdź również
+## Sprawdź również <a name="go-further"></a>
 
 [Konfiguracja pliku .ovhconfig w hostingu](/pages/web_cloud/web_hosting/configure_your_web_hosting)
 
 [Korzystanie z dostępu SSH do hostingu](/pages/web_cloud/web_hosting/ssh_on_webhosting)
 
-Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
+
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

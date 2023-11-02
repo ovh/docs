@@ -1,7 +1,7 @@
 ---
-title: 'Using automated tasks on a Web Hosting plan'
-excerpt: 'Find out how to configure scheduled jobs on your Web Hosting'
-updated: 2022-12-01
+title: "Using automated tasks on a Web Hosting plan"
+excerpt: "Find out how to configure scheduled jobs on your Web Hosting"
+updated: 2023-10-31
 ---
 
 <style>
@@ -34,9 +34,10 @@ On OVHcloud Web Hostings, you can use scripts to automate certain operations. Cr
 **This guide explains how to create cron jobs to automate scheduled tasks on a Web Hosting.**
 
 > [!warning]
->OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 >
->This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend contacting a specialised provider and/or the software publisher for the service if you encounter any difficulties. We will not be able to assist you ourselves. You can find more information in the “Go further” section of this guide.
+> OVHcloud provides services that you are responsible for with regard to their configuration and management. It is therefore your responsibility to ensure that they function properly.
+>
+> This guide is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en-gb/directory/) or reach out to the [OVHcloud community](https://community.ovh.com/en/) if you encounter any difficulties. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this guide.
 >
 
 ## Requirements
@@ -84,6 +85,13 @@ The interface offers two modes to configure the frequency of your task. Use the 
 |Enter numeric values as you would in a *crontab*. The asterisk operator denotes "every value" of the time period, meaning the task would continuously run **once an hour every day** in this example.|
 |![cron frequency](images/cron-jobs-4.png){.thumbnail}|
 
+> [!primary]
+>
+> The `Days`{.action} form allows you to define execution frequencies on a monthly cycle.
+>
+> The `Days of the week`{.action} form allows you to define additional execution frequencies, but on a weekly cycle.
+>
+
 You can switch between the two modes during configuration to view the changes accordingly. Please also note the [limitations when scheduling a task on a Web Hosting](./#limitations-of-web-hosting-tasks).
 
 ![cron control panel](images/cron-jobs-5.gif){.thumbnail}
@@ -104,7 +112,7 @@ The task will be ready within a few minutes. You can then modify all of its sett
 |Running time|The time limit for a task is 60 minutes. If a script exceeds this running time, it will be stopped automatically by the system.|
 |Variables|You can only define variables in a script. Adding them to the URL calling the script will not work (Example: www/jobs/cron.php?variable=value).|
 |Data limit|A task can only generate up to 5 MB of data (*stdin/stderr*). For example, if a script writes data into a .txt file, the execution will be stopped automatically once the file reaches 5 MB in size.|
-|Scripts producing errors|If a script is faulty, it will be automatically disabled after 10 failed execution attempts. Simply re-activate it in the Control Panel. (Click on `...`{.action}, then on `Edit`{.action}.)|
+|Scripts producing errors|If a script is faulty, it will be automatically disabled after 10 failed execution attempts. Simply reactivate it in the Control Panel. (Click on `...`{.action}, then on `Edit`{.action}.)|
 |Execution reports|Reports will be sent to your selected email address only once a day (during night hours).|
 
 ### Troubleshooting
@@ -159,10 +167,14 @@ Please refer to [this guide](/pages/web_cloud/web_hosting/logs_and_statistics) f
 [2020-08-11 18:07:10] ## OVH ## END - 2020-08-11 18:07:10.969840 exitcode: 255
 </code></pre>
 
-## Go further
+## Go further <a name="go-further"></a>
 
 [Configuring the .ovhconfig file of your Web Hosting plan](/pages/web_cloud/web_hosting/configure_your_web_hosting)
 
 [Using SSH on a Web Hosting plan](/pages/web_cloud/web_hosting/ssh_on_webhosting)
 
-Join our community of users on <https://community.ovh.com/en/>.
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/).
+
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-gb/support-levels/).
+
+Join our community of users on <https://community.ovh.com/en/>. 
