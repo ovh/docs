@@ -80,7 +80,7 @@ Complétez les informations requises et cliquez sur `Suivant`{.action}.
 
 Vérifiez que toutes les informations affichées dans le résumé sont correctes. Si tel est le cas, cliquez sur `Confirmer`{.action} pour lancer la création de votre base de données.
 
-> [primary]
+> [!primary]
 >
 > Lorsque vous cliquez sur `Confirmer`{.action}, la création de la base de données peut prendre jusqu'à **15 minutes**. Rechargez la page web de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) si la base de données n'apparaît pas automatiquement dans le tableau listant vos bases de données.
 >
