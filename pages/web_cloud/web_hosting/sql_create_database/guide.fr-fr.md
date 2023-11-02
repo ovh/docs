@@ -106,7 +106,7 @@ Si besoin, pour récupérer ces informations de connexion, connectez-vous à vot
 
 Vous retrouverez l'ensemble des informations de connexion à votre base de données dans le tableau qui s'affiche. Ceci à l'exception du *mot de passe* pour des raisons de sécurité.
 
-> [warning]
+> [!warning]
 >
 > Si vous ne vous souvenez plus de votre mot de passe de connexion à votre base de données, consultez notre guide « [Changer le mot de passe de sa base de données](/pages/web_cloud/web_hosting/sql_change_password) ».
 >
