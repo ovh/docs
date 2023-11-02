@@ -123,7 +123,7 @@ OVHcloud bietet ein Online-Tool zur Verwaltung der Datenbanken an: „phpMyAdmin
 
 ![phpMyAdmin Go Login](images/pma-interface-login.png){.thumbnail}
 
-Geben Sie die Zugangsdaten für Ihre Datenbank ein und klicken Sie auf `Verbindung`{.action}.
+Geben Sie die Zugangsdaten für Ihre Datenbank ein und klicken Sie auf `Anmeldung`{.action}.
 
 Falls nötig, lesen Sie den [Schritt 3](#step3) in dieser Anleitung, um die Verbindungsinformationen zu Ihrer Datenbank zu finden.
 
