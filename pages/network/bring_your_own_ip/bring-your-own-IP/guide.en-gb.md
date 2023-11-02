@@ -32,7 +32,7 @@ You need to own (see below) a public IPv4 block with one of the following RIRs:
 
 It is now possible to use ARIN or RIPE IP blocks on any OVHcloud campus. This enhanced flexibility enables more efficient management and optimized allocation of IP addresses to meet your company's specific needs.
 
-Unlike the previous policy, where an ARIN block could only be used with OVHcloud services located in Canada or the USA, and a RIPE block could only be used with OVHcloud services located in Europe, this restriction has been lifted.   
+Unlike the previous policy, where an ARIN block could only be used with OVHcloud services located in Canada or the USA, and a RIPE block could only be used with OVHcloud services located in Europe, this restriction has been lifted.
 
 To be considered as a valid owned block, imported blocks must be one of the following types :
 
@@ -234,7 +234,7 @@ Yes, please see the [Range slicing](#range-slicing) section for more details.
 
 ### Can I import an ARIN range in campuses accepting only RIPE ranges, and vice-versa?
 
-Yes, with our updated policy, it is now possible to use ARIN or RIPE IP blocks on OVHcloud campus where the BYOIP product is available. We've removed previous restrictions to offer greater flexibility and efficiency in IP address management and allocation. You can import and use your IP blocks according to your specific needs, regardless of the geographical location of the campus.    
+Yes, with our updated policy, it is now possible to use ARIN or RIPE IP blocks on OVHcloud campus where the BYOIP product is available. We've removed previous restrictions to offer greater flexibility and efficiency in IP address management and allocation. You can import and use your IP blocks according to your specific needs, regardless of the geographical location of the campus.
 
 ### Can I import an ARIN AS number with a RIPE IP range, and vice-versa?
 

@@ -96,7 +96,6 @@ Vous trouverez ci-dessous une liste des campus actuels :
     - sgp1
 - YNM (Mumbai)
     - ynm1
- 
 
 ### Prouver que vous êtes propriétaire de la plage d'adresses IP <a name="proveownershipontheiprange"></a>
 
@@ -238,7 +237,6 @@ Oui. Pour plus d'informations, veuillez vous reporter à la section [Découpage 
 ### Puis-je importer une plage d'adresses IP ARIN dans des campus acceptant uniquement des plages d'adresses IP RIPE et inversement ?
 
 Oui, avec la mise à jour de notre politique, il est désormais possible d'utiliser des blocs IP ARIN ou RIPE sur n'importe quel campus OVHcloud où le produit BYOIP est disponible. Nous avons éliminé les restrictions précédentes pour offrir une plus grande flexibilité et efficacité dans la gestion et l'allocation des adresses IP. Vous pouvez importer et utiliser vos blocs IP en fonction de vos besoins spécifiques, indépendamment de la localisation géographique du campus.
-
 
 ### Puis-je importer un numéro AS ARIN avec une plage d'adresses IP RIPE et inversement ?
 
