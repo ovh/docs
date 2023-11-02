@@ -136,8 +136,8 @@ Il est recommandé d'utiliser la version de PHP la plus récente possible. **Ava
 
 Pour vérifier cette configuration, consultez nos guides sur le sujet :
 
-- [Modifier la configuration de son hébergement web](/pages/web_cloud/web_hosting/configure_your_web_hosting)
-- [Configurer le fichier .ovhconfig de son hébergement web](/pages/web_cloud/web_hosting/configure_your_web_hosting)
+- [Modifier la configuration de son hébergement web](/pages/web_cloud/web_hosting/configure_your_web_hosting).
+- [Configurer le fichier .ovhconfig de son hébergement web](/pages/web_cloud/web_hosting/configure_your_web_hosting).
 
 ### « Une erreur s'est produite lors du chargement des informations (There is not enough space on your hosting (you need at least xxx MB)) »
 
@@ -231,7 +231,7 @@ Cliquez ensuite sur l'offre concernée : le nom du serveur à utiliser est indiq
 
 ### Votre ancien site web continue de s'afficher
 
-Dans l'onglet  `1-click modules` de l'hébergement web contenant votre site web, lorsque vous cliquez sur le lien de votre site web dans la colonne `path`, un nouvel onglet s'ouvre avec votre site web. Le nom de domaine associé à votre installation s'affiche dans l'adresse de votre navigateur internet. Par exemple, si votre nom de domaine se nomme « mondomaine.fr » , il se peut qu'un autre nom de domaine s'affiche, ou bien une page OVHcloud standard.
+Dans l'onglet `1-click modules` de l'hébergement web contenant votre site web, lorsque vous cliquez sur le lien de votre site web dans la colonne `path`, un nouvel onglet s'ouvre avec votre site web. Le nom de domaine associé à votre installation s'affiche dans l'adresse de votre navigateur internet. Par exemple, si votre nom de domaine se nomme « mondomaine.fr », il se peut qu'un autre nom de domaine s'affiche, ou bien une page OVHcloud standard.
 
 
 Cette anomalie peut avoir plusieurs causes :
@@ -262,7 +262,7 @@ Une fois terminé, relancez l'installation d'un nouveau module.
 
 ### Votre base de données nécessite d'être en version "X", or celle-ci est actuellement en version "Y"
 Ce message reçu par e-mail vous informe que la version de votre base de données est trop ancienne pour installer votre module. Vous retrouverez dans ce même e-mail la version dans laquelle votre base de données doit se trouver. Trois solutions s'offrent à vous :
-- Mise à jour du **S**ystème de **G**estion de **B**ase de **D**onnées (SGBD tels que MySQL, PostgreSQL, MariaDB, etc.) dans une version plus récente
+- Mise à jour du **S**ystème de **G**estion de **B**ase de **D**onnées (SGBD tels que MySQL, PostgreSQL, MariaDB, etc.) dans une version plus récente.
 - Installation d'une nouvelle base de données associée à votre hébergement web. Ceci en vous assurant que le SGDB et la version sont compatibles avec le module souhaité.
 - Si vous possédez un serveur [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb), vérifiez que votre serveur utilise le bon SGBD et la bonne version puis créez la base de données de votre choix.
 
