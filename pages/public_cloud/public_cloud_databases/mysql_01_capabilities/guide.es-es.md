@@ -8,7 +8,7 @@ updated: 2023-08-17
 
 This page provides the technical capabilities and limitations of the Public Cloud Databases' MySQL offer.
 
-We continuously improve our offers. You can follow and submit ideas to add to our roadmap at <https://github.com/ovh/public-cloud-roadmap/projects/2>.
+We continuously improve our offers. You can follow and submit ideas to add to our roadmap at <https://github.com/orgs/ovh/projects/16/views/5>.
 
 ## Capabilities and limitations
 
