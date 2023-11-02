@@ -44,9 +44,9 @@ Wählen Sie im angezeigten Fenster die folgenden Informationen aus:
 
 |Information|Beschreibung|  
 |---|---|
-|**Wählen Sie den Datenbanktyp aus**|Wählen Sie die Größe der Datenbank aus. Diese Größe bezieht sich auf den Speicherplatz, den Ihre Datenbank zum Speichern von Daten hat.|
-|**Hinzuzufügende Datenbank-Engine auswählen**|Wählen Sie die Engine aus, die die Datenbank verwenden soll. Die in Ihrem [OVHcloud Webhosting Angebot](https://www.ovhcloud.com/de/web-hosting/) enthaltenen Datenbanken sind ausschließlich mit der MySQL-Engine verfügbar.|
-|**Wählen Sie die Version der Datenbank aus, die Sie hinzufügen möchten**|Wählen Sie die Version aus, die vom Datenbankmodul verwendet wird. Stellen Sie sicher, dass Ihre Website mit der von Ihnen gewählten Version kompatibel ist. |
+|**Wählen Sie den Typ der Datenbank aus**|Wählen Sie die Größe der Datenbank aus. Diese Größe bezieht sich auf den Speicherplatz, den Ihre Datenbank zum Speichern von Daten hat.|
+|**Wählen Sie die Engine der Datenbank aus**|Wählen Sie die Engine aus, die die Datenbank verwenden soll. Die in Ihrem [OVHcloud Webhosting Angebot](https://www.ovhcloud.com/de/web-hosting/) enthaltenen Datenbanken sind ausschließlich mit der MySQL-Engine verfügbar.|
+|**Wählen Sie die Version der hinzugefügten Datenbank aus**|Wählen Sie die Version aus, die vom Datenbankmodul verwendet wird. Stellen Sie sicher, dass Ihre Website mit der von Ihnen gewählten Version kompatibel ist. |
 
 Klicken Sie dann auf `Weiter`{.action}.
 
