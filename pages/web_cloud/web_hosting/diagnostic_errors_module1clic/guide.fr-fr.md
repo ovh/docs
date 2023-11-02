@@ -126,7 +126,7 @@ Pour relier votre domaine à un autre répertoire, cliquez sur `Modifier le doma
 
 ![modify_root_folder](images/modify_root_folder.png){.thumbnail}
 
-Vous pouvez également vous connecter à votre hébergement via [FTP](/pages/web_cloud/web_hosting/ftp_connection), puis supprimer le contenu du dossier, après l'avoir sauvegardé (ou apres avoir vidé votre répertoire en déplaçant tout son contenu dans un autre répertoire).
+Vous pouvez également vous connecter à votre hébergement via [FTP](/pages/web_cloud/web_hosting/ftp_connection), puis supprimer le contenu du dossier, après l'avoir sauvegardé (ou après avoir vidé votre répertoire en déplaçant tout son contenu dans un autre répertoire).
 
 ### « Either no configuration (ovhConfig or runtime), or the current configuration is not valid (please, double check the module's requirement) (as a reminder, the global configuration is used for module). »
 
@@ -152,7 +152,7 @@ Dans cette situation, [connectez-vous en FTP](/pages/web_cloud/web_hosting/ftp_c
 
 > [!primary]
 >
-> Pour toute question sur les données à supprimer afin de dimininuer la quantité de données sur votre hébergement, contactez notre [communauté d'utilisateurs](https://community.ovh.com) ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).<br>
+> Pour toute question sur les données à supprimer afin de diminuer la quantité de données sur votre hébergement, contactez notre [communauté d'utilisateurs](https://community.ovh.com) ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).<br>
 > Nous ne serons pas en mesure de vous apporter une assistance sur ce sujet.
 >
 
@@ -163,7 +163,7 @@ Dans cette situation, [connectez-vous en FTP](/pages/web_cloud/web_hosting/ftp_c
 > Retrouvez le comparatif de nos différentes [offres d'hébergement web](https://www.ovhcloud.com/fr/web-hosting/).
 >
 
-Dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), rednez-vous dans la partie `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} puis sélectionnez l'hébergement web concerné. Sur la page qui s'affiche, cliquez sur `Changer d'offre` dans la partie `Abonnement` - `Offre` :
+Dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), rendez-vous dans la partie `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} puis sélectionnez l'hébergement web concerné. Sur la page qui s'affiche, cliquez sur `Changer d'offre` dans la partie `Abonnement` - `Offre` :
 
 ![upgrade_hosting](images/upgrade_hosting.png){.thumbnail}
 
@@ -231,7 +231,7 @@ Cliquez ensuite sur l'offre concernée : le nom du serveur à utiliser est indiq
 
 ### Votre ancien site continue de s'afficher
 
-Dans l'onglet  `1-click modules` de l'hébergement web contenant votre sit web, lorsque vous cliquez sur le lien de votre site web dans la colonne `path`, un nouvel onglet s'ouvre avec votre site web. Le nom de domaine associé à votre installation s'affiche dans l'adresse de votre navigateur internet. Par exemple, si votre nom de domaine se nomme « mondomaine.fr » , il se peut qu'un autre nom de domaine s'affiche, ou bien une page OVHcloud standard.
+Dans l'onglet  `1-click modules` de l'hébergement web contenant votre site web, lorsque vous cliquez sur le lien de votre site web dans la colonne `path`, un nouvel onglet s'ouvre avec votre site web. Le nom de domaine associé à votre installation s'affiche dans l'adresse de votre navigateur internet. Par exemple, si votre nom de domaine se nomme « mondomaine.fr » , il se peut qu'un autre nom de domaine s'affiche, ou bien une page OVHcloud standard.
 
 
 Cette anomalie peut avoir plusieurs causes :
@@ -253,7 +253,7 @@ Une fois terminé, relancez l'installation d'un nouveau module.
 
 ### Les DNS du nom de domaine ne pointent pas vers un hébergement web OVHcloud
 Cette erreur vous informe que les DNS du nom de domaine de votre site web ne pointent pas vers un hébergement web OVHcloud. Or il n'est pas possible d'installer un module sur un domaine qui ne pointe pas sur un hébergement OVHcloud.
-Pour résoudre ce problème, vous devez éditer votre zone DNS. Pour en savoir plus sur les adresses IP à renseigner, lisez le guide [Liste des adresses IP des clusters et hebergements web](/pages/web_cloud/web_cloud_databases/configure-database-server). Vous devrez ensuite éditer votre zone DNS. La marche à suivre se trouve dans le guide [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit/).
+Pour résoudre ce problème, vous devez éditer votre zone DNS. Pour en savoir plus sur les adresses IP à renseigner, lisez le guide [Liste des adresses IP des clusters et hébergements web](/pages/web_cloud/web_cloud_databases/configure-database-server). Vous devrez ensuite éditer votre zone DNS. La marche à suivre se trouve dans le guide [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit/).
 Si votre zone DNS n’est pas hébergée chez OVHcloud, contactez votre fournisseur de zone DNS pour plus de renseignements.
 
 Une fois terminé, relancez l'installation d'un nouveau module.
