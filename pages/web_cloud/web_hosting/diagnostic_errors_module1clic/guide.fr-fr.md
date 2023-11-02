@@ -23,7 +23,7 @@ Cependant, si la configuration de ces derniers n'est pas correctement réalisée
 
 - Disposer d'une offre d'[hébergement web](https://www.ovhcloud.com/fr/web-hosting/) compatible.
 - Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
-- Avoir utilisé la fonctionnalité [Module en 1 clic](/pages/web_cloud/web_hosting/cms_install_1_click_modules), afin de créer un nouveau site.
+- Avoir utilisé la fonctionnalité [Module en 1 clic](/pages/web_cloud/web_hosting/cms_install_1_click_modules), afin de créer un nouveau site web.
 
 ## En pratique
 
@@ -102,7 +102,7 @@ Si vous possédez un serveur [Web Cloud Databases](/pages/web_cloud/web_cloud_da
 
 > [!primary]
 >
-> Vous pourrez sauvegarder les données d'un seul site dans cette situation en utilisant un [script PHP ou une commande SSH](/pages/web_cloud/web_hosting/sql_database_export#recuperer-une-sauvegarde-depuis-linterface-web-phpmyadmin).
+> Vous pourrez sauvegarder les données d'un seul site web dans cette situation en utilisant un [script PHP ou une commande SSH](/pages/web_cloud/web_hosting/sql_database_export#recuperer-une-sauvegarde-depuis-linterface-web-phpmyadmin).
 >
 > Pour toute question sur les manipulations à réaliser, contactez la [communauté OVHcloud](https://community.ovh.com) ou l'un de nos [partenaires](https://partner.ovhcloud.com/fr/directory/).<br>
 > Nous ne serons pas en mesure de vous apporter une assistance sur ce sujet.
@@ -148,11 +148,11 @@ Ce message indique que l'[espace de stockage FTP](/pages/web_cloud/web_hosting/f
 #### Solution n°1 : supprimer des données pour libérer de l'espace
 Dans ce cas, vous devrez supprimer des données ou en déplacer avant de pouvoir installer un nouveau [module en 1 clic](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
 
-Dans cette situation, [connectez-vous en FTP](/pages/web_cloud/web_hosting/ftp_connection) à votre hébergement, [sauvegardez localement](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide#transfert-des-fichiers) vos données puis supprimez les fichiers qui ne sont pas nécessaires au fonctionnement de votre site.
+Dans cette situation, [connectez-vous en FTP](/pages/web_cloud/web_hosting/ftp_connection) à votre hébergement, [sauvegardez localement](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide#transfert-des-fichiers) vos données puis supprimez les fichiers qui ne sont pas nécessaires au fonctionnement de votre site web.
 
 > [!primary]
 >
-> Pour toute question sur les données à supprimer afin de diminuer la quantité de données sur votre hébergement, contactez notre [communauté d'utilisateurs](https://community.ovh.com) ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).<br>
+> Pour toute question sur les données à supprimer afin de réduire la quantité de données sur votre hébergement, contactez notre [communauté d'utilisateurs](https://community.ovh.com) ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).<br>
 > Nous ne serons pas en mesure de vous apporter une assistance sur ce sujet.
 >
 
@@ -229,27 +229,29 @@ Cliquez sur la partie `Web cloud`{.action} de votre [espace client OVHcloud](htt
 
 Cliquez ensuite sur l'offre concernée : le nom du serveur à utiliser est indiqué sous la mention `Nom d'hôte` dans la sous-partie `SQL` de `Informations de connexion`.
 
-### Votre ancien site continue de s'afficher
+### Votre ancien site web continue de s'afficher
 
 Dans l'onglet  `1-click modules` de l'hébergement web contenant votre site web, lorsque vous cliquez sur le lien de votre site web dans la colonne `path`, un nouvel onglet s'ouvre avec votre site web. Le nom de domaine associé à votre installation s'affiche dans l'adresse de votre navigateur internet. Par exemple, si votre nom de domaine se nomme « mondomaine.fr » , il se peut qu'un autre nom de domaine s'affiche, ou bien une page OVHcloud standard.
 
 
 Cette anomalie peut avoir plusieurs causes :
 
-- Vérifiez que le nom de domaine que vous consultez (« mondomaine.fr ») est bien celui sur lequel vous venez de faire l'installation du module.
+- Vérifiez que le nom de domaine que vous consultez (« mondomaine.fr ») est bien celui avec lequel vous venez de faire l'installation du module.
 
-- Vous avez effectué récemment un changement dans votre zone ou vos serveurs [DNS](/pages/web_cloud/domains/dns_zone_edit#comprendre-la-notion-de-dns) ou un [transfert de nom de domaine](/pages/web_cloud/domains/transfer_incoming_generic_domain). Patientez jusqu'à ce que ces opérations soient finalisées (48 heures pour des changements dans vos DNS). Pensez également à redémarrer vos appareils (PC, smartphone, box, etc.) et à vider le cache de votre navigateur.
+- Vous avez effectué récemment un changement dans votre zone DNS ou vos serveurs [DNS](/pages/web_cloud/domains/dns_zone_edit#comprendre-la-notion-de-dns) ou un [transfert de nom de domaine](/pages/web_cloud/domains/transfer_incoming_generic_domain). Patientez jusqu'à ce que ces opérations soient finalisées (48 heures pour des changements dans vos DNS). Pensez également à redémarrer vos appareils (PC, smartphone, box, etc.) et à vider le cache de votre navigateur.
 
-- Votre nom de domaine est toujours relié à votre ancien hébergement. Modifiez dans ce cas votre [Zone DNS](/pages/web_cloud/domains/dns_zone_edit#editer-la-zone-dns-ovhcloud-de-votre-nom-domaine) ou vos [serveurs DNS](/pages/web_cloud/domains/dns_server_general_information#modifier-les-serveurs-dns) ou contactez votre ancien hébergeur à ce sujet.
+- Votre nom de domaine est toujours relié à votre ancien hébergement. Modifiez dans ce cas votre [Zone DNS](/pages/web_cloud/domains/dns_zone_edit#editer-la-zone-dns-ovhcloud-de-votre-nom-domaine) ou vos [serveurs DNS](/pages/web_cloud/domains/dns_server_general_information#modifier-les-serveurs-dns). Si la zone DNS active de votre nom de domaine n'est pas gérée chez OVHcloud, contactez votre fournisseur DNS à ce sujet.
 
 ### Le mot de passe « Administrateur » d'accès à « l'interface d'administration » de votre module en 1 clic ne fonctionne pas <a name="adminpassword"></a>
 
 En cas de rejet de votre mot de passe actuel d'accès à l’interface d’administration de votre **C**ontent **M**anagement **S**ystem (**CMS**), consultez le paragraphe « Modifier le mot de passe de votre module » de notre documentation sur la [gestion de votre module en 1 clic](/pages/web_cloud/web_hosting/cms_manage_1_click_module#password-change).
 
-### Le préfix de votre base de données est dupliqué
-Cette erreur vous informe que lors de l'installation du module, vous avez renseigné un préfixe de base de données qui existe déjà sur une autre base de données sur le même serveur (par exemple : wp_). Si vous continuez, vous risquez d'écraser les tables présentes dans cette base de données déjà existante. Pour l'installation de votre module, choisissez un préfix non utilisé. Cette manipulation est possible en sélectionnant le mode avancé de l'installation du module en 1 clic.
+### Le préfixe des tables de votre base de données est déjà utilisé sur votre base de données
+Cette erreur ne concerne que les installations de modules en *mode avancé*.
 
-Une fois terminé, relancez l'installation d'un nouveau module.
+Elle vous informe par e-mail que, lors de la tentative d'installation du module, vous avez renseigné un préfixe de tables déjà utilisé sur la base de données précédemment sélectionnée pour installer votre module. L'installation est alors annulée. 
+
+Relancez l'installation avec un autre préfixe de tables ou une autre base de données pour corriger la situation.
 
 ### Les DNS du nom de domaine ne pointent pas vers un hébergement web OVHcloud
 Cette erreur vous informe que les DNS du nom de domaine de votre site web ne pointent pas vers un hébergement web OVHcloud. Or il n'est pas possible d'installer un module sur un domaine qui ne pointe pas sur un hébergement OVHcloud.
@@ -258,11 +260,11 @@ Si votre zone DNS n’est pas hébergée chez OVHcloud, contactez votre fourniss
 
 Une fois terminé, relancez l'installation d'un nouveau module.
 
-### Votre base de données nécessite d'être en version X, or elle est actuellement en version Y
-Cette erreur vous informe que la version de votre base de données est dans une version trop ancienne. Le message d'erreur vous informe la version dans laquelle votre base de données doit se trouver. Trois solutions s'offrent à vous :
-- Mettez à jour votre SGBD (Système de Gestion de Base de Données) (MySQL, PostgreSQL etc.)
-- Vous pouvez installer une nouvelle base de données sur votre hébergement web
-- Si vous possédez un [serveur Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb), créez la base de données de votre choix.
+### Votre base de données nécessite d'être en version "X", or celle-ci est actuellement en version "Y"
+Ce message reçu par e-mail vous informe que la version de votre base de données est trop ancienne pour installer votre module. Vous retrouverez dans ce même e-mail la version dans laquelle votre base de données doit se trouver. Trois solutions s'offrent à vous :
+- Mise à jour du **S**ystème de **G**estion de **B**ase de **D**onnées (SGBD tels que MySQL, PostgreSQL, MariaDB, etc.) dans une version plus récente
+- Installation d'une nouvelle base de données associée à votre hébergement web. Ceci en vous assurant que le SGDB et la version sont compatibles avec le module souhaité.
+- Si vous possédez un serveur [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb), vérifiez que votre serveur utilise le bon SGBD et la bonne version puis créez la base de données de votre choix.
 
 Une fois terminé, relancez l'installation d'un nouveau module.
 
