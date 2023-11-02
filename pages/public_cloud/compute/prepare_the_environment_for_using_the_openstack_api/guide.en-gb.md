@@ -10,6 +10,11 @@ You can manage Public Cloud services using commands sent from the system console
 
 With the OpenStack API, you can automate your management by generating scripts. 
 
+> [!primary]
+>
+> Openstack requires Python >=3.8
+>
+
 **Find out how to install these OpenStack tools.**
 
 ## Requirements
@@ -17,6 +22,12 @@ With the OpenStack API, you can automate your management by generating scripts.
 - **Root** access to the environment you want to configure
 
 ## Instructions
+
+If you need to configure the Public Cloud Load Balancer you will to run :
+
+```console
+pip3 install python-octaviaclient
+```
 
 ### On Debian
 
@@ -86,7 +97,7 @@ openstack --help
 
 ### On Windows
 
-Download and install Python version 2.7.14. You can choose to add the Python programming language automatically to Path, by ticking this option in the installation configuration:
+Download and install Python version 3.12.0. You can choose to add the Python programming language automatically to Path, by ticking this option in the installation configuration:
 
 ![Automatic installation](images/1_preparation_openstack_environment_windows.png){.thumbnail}
 
@@ -106,7 +117,7 @@ Go to the `Advanced`{.action} tab, and click `Environment Variables`{.action} to
 
 #### Step 3: Configure the environment variables.
 
-In the ‘System variables’ section, select ‘New’, attribute the name “PYTHON_HOME”, and add the access path to Python. By default, it will be: ‘C:\\Python27’.
+In the ‘System variables’ section, select ‘New’, attribute the name “PYTHON_HOME”, and add the access path to Python.
 
 ![Add the access path](images/4_edit_system_variables.png){.thumbnail}
 
@@ -132,7 +143,7 @@ If the operation is completed properly, you will see a summary:
 
 ![Automatic installation](images/5_preparation_openstack_environment_windows.png){.thumbnail}
 
-You can check the installation version in the CMD (command line) window that has just opened, by entering ‘python-V’ from any system location.
+You can check the installation version in the CMD (command line) window that has just opened, by entering `python -V` from any system location.
 
 ![Checking](images/6_preparation_openstack_environment_windows.png){.thumbnail}
 
