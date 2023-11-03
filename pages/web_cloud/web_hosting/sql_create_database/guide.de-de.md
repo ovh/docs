@@ -28,7 +28,7 @@ Verbinden Sie sich mit Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?a
 
 Die Tabelle in diesem Abschnitt enthält alle Datenbanken, die mit Ihrem Webhosting erstellt wurden.
 
-![databaseCreation](images/database-creation-step1.png){.thumbnail}
+![databasecreation](images/database-creation-step1.png){.thumbnail}
 
 ### Schritt 2 - Datenbank erstellen
 
