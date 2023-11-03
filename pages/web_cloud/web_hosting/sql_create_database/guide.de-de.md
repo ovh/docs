@@ -1,7 +1,7 @@
 ---
 title: "Eine Datenbank auf Ihrem Webhosting erstellen"
 excerpt: "Diese Anleitung erklärt, wie Sie eine Datenbank auf Ihrem OVHcloud Webhosting"
-updated: 2023-11-02
+updated: 2023-11-03
 ---
 
 > [!primary]
@@ -46,7 +46,7 @@ Wählen Sie im angezeigten Fenster die folgenden Informationen aus:
 |---|---|
 |**Wählen Sie den Typ der Datenbank aus**|Wählen Sie die Größe der Datenbank aus. Diese Größe bezieht sich auf den Speicherplatz, den Ihre Datenbank zum Speichern von Daten hat.|
 |**Wählen Sie die Engine der Datenbank aus**|Wählen Sie die Engine aus, die die Datenbank verwenden soll. Die in Ihrem [OVHcloud Webhosting Angebot](https://www.ovhcloud.com/de/web-hosting/) enthaltenen Datenbanken sind ausschließlich mit der MySQL-Engine verfügbar.|
-|**Wählen Sie die Version der hinzugefügten Datenbank aus**|Wählen Sie die Version aus, die vom Datenbankmodul verwendet wird. Stellen Sie sicher, dass Ihre Website mit der von Ihnen gewählten Version kompatibel ist. |
+|**Wählen Sie die Version der hinzugefügten Datenbank aus**|Wählen Sie die Version aus, die vom Datenbankmodul verwendet wird. Stellen Sie sicher, dass Ihre Website mit der von Ihnen gewählten Version kompatibel ist.|
 
 Klicken Sie dann auf `Weiter`{.action}.
 

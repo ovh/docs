@@ -39,7 +39,7 @@ W wyświetlonym oknie dialogowym wybierz odpowiednie informacje, a następnie kl
 |Informacje|Opis|  
 |---|---|  
 |Silnik bazy danych|Wybierz silnik, z którego będzie korzystać baza danych. W ramach usługi [hostingu WWW OVHcloud](https://www.ovhcloud.com/pl/web-hosting/) są dostępne tylko bazy danych z silnikiem MySQL.|  
-|Wersja bazy danych|Wybierz wersję silnika bazy danych. Sprawdź, czy Twoja strona internetowa jest zgodna z wybraną wersją. |  
+|Wersja bazy danych|Wybierz wersję silnika bazy danych. Sprawdź, czy Twoja strona internetowa jest zgodna z wybraną wersją.|  
 |Typ bazy danych|Wybierz rozmiar bazy danych. Rozmiar odnosi się do dostępnego miejsca na przechowywanie danych w bazie.|   
 
 Podaj żądane informacje, a następnie kliknij przycisk `Dalej`{.action}.

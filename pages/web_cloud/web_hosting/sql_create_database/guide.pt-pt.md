@@ -39,8 +39,8 @@ Na janela que se abrir, selecione a informação adequada e clique em `Seguinte`
 |Informação|Descrição|  
 |---|---|  
 |Motor da base de dados|Escolha o motor que a base de dados vai usar. As bases de dados incluídas num [plano de alojamento web OVHcloud](https://www.ovhcloud.com/pt/web-hosting/) só dispõem de motores MySQL.|  
-|Versão da base de dados|Escolha a versão usada pelo motor da base de dados. Verifique se o seu site é compatível com a versão que escolheu. |  
-|Tipo de base de dados|Escolha a dimensão da base de dados. Esta dimensão refere-se ao espaço disponível de que a base de dados dispõe para efetuar armazenamento. |   
+|Versão da base de dados|Escolha a versão usada pelo motor da base de dados. Verifique se o seu site é compatível com a versão que escolheu.|  
+|Tipo de base de dados|Escolha a dimensão da base de dados. Esta dimensão refere-se ao espaço disponível de que a base de dados dispõe para efetuar armazenamento.|   
 
 A seguir, introduza as informações pedidas e clique em `Avançar`{.action}.
 

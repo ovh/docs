@@ -39,7 +39,7 @@ In the window that pops up, select the appropriate information, then click on `N
 |Information|Description|  
 |---|---|  
 |Database engine|Select the engine that the database will use. Databases included in an [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/) are available with the MySQL engine only.|  
-|Database version|Select the version used by the database engine. Verify that your website is compatible with the version you have chosen. |  
+|Database version|Select the version used by the database engine. Verify that your website is compatible with the version you have chosen.|  
 |Database type|Select the size of the database. This size refers to the space available to your database for storing data.|   
 
 Then, fill in the information requested, and click `Next`{.action}.
