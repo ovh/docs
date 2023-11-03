@@ -42,7 +42,7 @@ Wenn Sie über ein OVHcloud Webhosting verfügen, können Sie auf einen Speicher
 
 Nachdem Sie Visual Studio-Code gestartet haben, klicken Sie oben auf der Benutzeroberfläche im horizontalen Menü auf `View`{.action} und dann auf `Extensions`{.action}.
 
-![Hosting](images/view_extensions.png){.thumbnail}
+![hosting](images/view_extensions.png){.thumbnail}
 
 Um dieselbe Aktion mit der Tastenkombination durchzuführen, wählen Sie:
 
@@ -51,7 +51,7 @@ Um dieselbe Aktion mit der Tastenkombination durchzuführen, wählen Sie:
 
 Geben Sie oben links im Interface den Namen der Erweiterung „SFTP/FTP sync“ für *Natizyskunk* ein und klicken Sie auf `Install`{.action}.
 
-![Hosting](images/extensions.png){.thumbnail}
+![hosting](images/extensions.png){.thumbnail}
 
 Es ist auch möglich, [die Erweiterung „SFTP/FTP-Sync“](https://marketplace.visualstudio.com/items?itemName=Natizyskunk.sftp#sftp-sync-extension-for-vs-code)“vom Marketplace in Visual Studio aus zu installieren.
   
@@ -76,11 +76,11 @@ Mit diesem Befehl erstellt Visual Studio Code die Konfigurationsdatei „sftp.js
 
 Klicken Sie auf `Open Folder`{.action}, navigieren Sie zum gewünschten Speicherort des lokalen Ordners, und klicken Sie zur Bestätigung auf `Select a folder`{.action}.
 
-![Hosting](images/select_folder.png){.thumbnail}
+![hosting](images/select_folder.png){.thumbnail}
 
 Geben Sie in Visual Studio Code den Befehl `SFTP: Config` erneut ein. Eine Konfigurationsdatei mit dem Namen „sftp.json“ wird in Visual Studio Code angezeigt.
 
-![Hosting](images/sftp_json_default.png){.thumbnail}
+![hosting](images/sftp_json_default.png){.thumbnail}
 
 Diese Datei befindet sich im Ordner .vscode, der sich wiederum im Stammverzeichnis des lokalen Projekts befindet.
 
@@ -151,11 +151,11 @@ Nachdem Sie die Datei „sftp.json“ konfiguriert haben, laden Sie den Inhalt I
 
 Visual Studio Code fordert Sie auf, den Ordner auszuwählen, den Sie auf Ihr Webhosting hochladen möchten. Geben Sie den zuvor in der Datei „sftp.json“ festgelegten Wert `name` ein.
 
-![Hosting](images/download_project.png){.thumbnail}
+![hosting](images/download_project.png){.thumbnail}
 
 Wenn Sie dazu aufgefordert werden, geben Sie das Passwort für den in der Datei „sftp.json“ angegebenen Benutzer ein und klicken Sie dann auf `enter`. Nach dem Herunterladen werden alle Projektordner und -dateien im Datei-Explorer in der linken Spalte der Visual Studio Code-Benutzeroberfläche angezeigt.
 
-![Hosting](images/explorer.png){.thumbnail}
+![hosting](images/explorer.png){.thumbnail}
 
 > [!primary]
 >
@@ -172,7 +172,7 @@ Um diese Funktion zu deaktivieren, aber in der Datei „sftp.json“ zu belassen
 
 Bisher haben wir nur die Befehle: `SFTP: Config` und `SFTP: Download Project` erwähnt. Es gibt weitere Befehle, die Sie durch Autovervollständigung beobachten können, indem Sie im Befehlseditor `SFTP:` eingeben.
 
-![Hosting](images/list_commands.png){.thumbnail}
+![hosting](images/list_commands.png){.thumbnail}
 
 Die Liste der Befehle finden Sie [hier](https://github.com/Natizyskunk/vscode-sftp/wiki/Commands){.external}.
 
