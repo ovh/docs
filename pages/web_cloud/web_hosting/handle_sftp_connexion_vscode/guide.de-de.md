@@ -153,7 +153,7 @@ Visual Studio Code fordert Sie auf, den Ordner auszuwählen, den Sie auf Ihr Web
 
 ![Hosting](images/download_project.png){.thumbnail}
 
-Wenn Sie dazu aufgefordert werden, geben Sie das Passwort für den in der Datei „sftp.json“ angegebenen Benutzer ein und klicken Sie dann auf `Bestätigen`. Nach dem Herunterladen werden alle Projektordner und -dateien im Datei-Explorer in der linken Spalte der Visual Studio Code-Benutzeroberfläche angezeigt.
+Wenn Sie dazu aufgefordert werden, geben Sie das Passwort für den in der Datei „sftp.json“ angegebenen Benutzer ein und klicken Sie dann auf `enter`. Nach dem Herunterladen werden alle Projektordner und -dateien im Datei-Explorer in der linken Spalte der Visual Studio Code-Benutzeroberfläche angezeigt.
 
 ![Hosting](images/explorer.png){.thumbnail}
 
