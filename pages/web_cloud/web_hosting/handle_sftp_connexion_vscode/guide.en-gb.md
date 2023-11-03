@@ -43,7 +43,7 @@ After starting Visual Studio Code, go to the horizontal menu at the top of the i
 To do the same with the keyboard shortcut, select:
 
 - `Ctrl + Shift + X` if you are on Windows, 
-- `Shift + Command + X` if you are on macOS.
+- `Maj + Command + X` if you are on macOS.
 
 In the top left of the interface, enter the name of the *Natizyskunk* “SFTP/FTP sync” extension, and click `Install`{.action}.
 
@@ -60,7 +60,7 @@ Go back to Visual Studio Code in the horizontal menu at the top of the interface
 To do the same with the keyboard shortcut, select:
 
 - `Ctrl + Shift + P` if you are on Windows, 
-- `Shift + Command + P` if you are on macOS.
+- `Maj + Command + P` if you are on macOS.
 
 Enter the following command: `SFTP: Config`.
 
