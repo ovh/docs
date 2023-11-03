@@ -80,6 +80,8 @@ Zamień liczbę **22** na wybrany numer portu.<br>
 Aby zwiększyć bezpieczeństwo, wprowadź numer 49152 i 65535.<br>
 Zapisz i wyjdź z pliku konfiguracyjnego.
 
+Jeśli linia jest "zakomentowana" (tj. poprzedzona znakiem "#"), należy usunąć znak "#" przed zapisaniem pliku, aby zmiana odniosła skutek.
+
 Zrestartuj usługę:
 
 ```bash
