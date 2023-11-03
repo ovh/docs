@@ -9,7 +9,7 @@ updated: 2023-06-01
 With our managed database services, we take care of the database infrastructure and administration, including set-up, backup, scalability and security.
 Choose from a large portfolio of popular engines.
 
-We continuously improve our offers. You can follow and submit ideas to add to our roadmap at <https://github.com/ovh/public-cloud-roadmap/projects/2>.
+We continuously improve our offers. You can follow and submit ideas to add to our roadmap at <https://github.com/orgs/ovh/projects/16/views/5>.
 
 ## Database Engines
 
