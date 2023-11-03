@@ -70,7 +70,7 @@ Grâce à cette commande, Visual Studio Code va créer le fichier de configurati
 
 ![hosting](images/SFTP_folder.png){.thumbnail}
 
-Cliquez sur `Open Folder`{.action}, dirigez-vous à l’emplacement du dossier local de votre choix et cliquez sur  `Sélectionner un dossier`{.action} pour confirmer.
+Cliquez sur `Open Folder`{.action}, dirigez-vous à l’emplacement du dossier local de votre choix et cliquez sur  `Select Folder`{.action} pour confirmer.
 
 ![hosting](images/select_folder.png){.thumbnail}
 
