@@ -131,7 +131,7 @@ mount /dev/hda1 /mnt/
 
 Aby wyłączyć tryb Rescue, zmień sposób uruchamiania serwera w sekcji `Uruchom z dysku twardego.`{.action} w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i zrestartuj serwer z linii poleceń.
 
-### Montaż datastore
+#### VMware - Montaż datastore
 
 Możesz zamontować datastore VMware w taki sam sposób, jak opisano w poprzednim etapie.
 

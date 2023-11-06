@@ -1,7 +1,7 @@
 ---
 title: 'Changer le propriétaire d’un nom de domaine'
 excerpt: 'Retrouvez les différentes informations concernant le changement de propriétaire d’un nom de domaine.'
-updated: 2023-06-16
+updated: 2023-10-23
 ---
 
 ## Objectif
@@ -46,7 +46,7 @@ En dehors de la [gestion des contacts](/pages/account_and_service_management/acc
 
 ### Étape 1 : sélectionner le domaine
 
-Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), dans la section `Web Cloud`{.action}. Cliquez sur `Noms de Domaine`{.action} , sélectionnez le nom domaine générique (gTLD) dont vous souhaitez modifier le propriétaire.
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), dans la section `Web Cloud`{.action}. Cliquez sur `Noms de Domaine`{.action} , sélectionnez le nom de domaine générique (gTLD) dont vous souhaitez modifier le propriétaire.
 
 ### Étape 2 : lancer la procédure de changement de propriétaire
 

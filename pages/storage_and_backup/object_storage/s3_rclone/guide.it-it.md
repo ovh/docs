@@ -25,6 +25,11 @@ Rclone is a backup tool that can sync to and from various storage backends, and 
 
 See our [Getting started with S3 Object Storage](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage) guide.
 
+> [!primary]
+>
+> In order to identify your endpoint corresponding to your storage class, please refer to this guide: [Object Storage - Endpoints and Object Storage geoavailability](/pages/storage_and_backup/object_storage/s3_location).
+>
+
 ## Instructions
 
 To configure Rclone, edit or create the `~/.config/rclone/rclone.conf` file and add this:

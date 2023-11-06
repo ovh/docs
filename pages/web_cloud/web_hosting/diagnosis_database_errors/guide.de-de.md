@@ -1,7 +1,7 @@
 ---
 title: Die häufigsten Datenbankfehler beheben
 excerpt: Erfahren Sie hier, wie Sie Fehler in Zusammenhang mit Datenbanken beheben
-updated: 2022-12-09
+updated: 2023-10-26
 ---
 
 > [!primary]
@@ -235,7 +235,7 @@ Um dieses Problem zu beheben können Sie Maßnahmen anwenden:
 
 Diese Fehlermeldung kann bei der Verbindung zu Ihrer Datenbank mit [phpMyAdmin](/pages/web_cloud/web_hosting/sql_create_database#auf-das-phpmyadmin-interface-zugreifen) angezeigt werden. Sie gibt an, dass die eingegebenen Login-Daten falsch sind.
 
-![access_denied_for_user](images/access_denied_for_user.png){.thumbnail}
+![access_denied_for_user](images/pma-error-hy000-1045.png){.thumbnail}
 
 Überprüfen Sie in diesem Fall die [Login-Daten](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server#in-der-praktischen-anwendung) und ändern Sie bei Bedarf das [Passwort Ihrer Datenbank](/pages/web_cloud/web_hosting/sql_change_password).
 
@@ -266,7 +266,7 @@ In dieser Situation müssen Sie [Ihre Datenbanken optimieren](/pages/web_cloud/w
 
 Diese Fehlermeldung wird bei der [Verbindung über phpMyAdmin](/pages/web_cloud/web_hosting/sql_create_database#auf-das-phpmyadmin-interface-zugreifen) angezeigt, wenn der angegebene Servername nicht korrekt ist.
 
-![name_or_service_not_known](images/name_or_service_not_known.png){.thumbnail}
+![name_or_service_not_known](images/pma-error-hy000-1045.png){.thumbnail}
 
 Überprüfen Sie den Servernamen des betroffenen Dienstes in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 

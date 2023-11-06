@@ -55,7 +55,7 @@ Afin de respecter les bonnes pratiques, veuillez ne renseigner que le champ `Acc
 
 Entrez ensuite votre `clé secrète`
 
-![Clé secrète](images/clé_secrète.png)
+![Clé secrète](images/secret_key.png)
 
 7. Résultat
 

@@ -1,7 +1,7 @@
 ---
 title: "Konfigurieren der OVHcloud Link Aggregation in SLES 15"
 excerpt: "Erfahren Sie hier, wie Sie OLA für Ihren SLES 15 Server aktivieren"
-updated: 2023-03-07
+updated: 2023-10-26
 ---
 
 > [!primary]
@@ -31,7 +31,7 @@ Klicken Sie anschließend auf den Tab `IPMI`{.action} (1) und dann auf den Butto
 
 Ein JNLP-Applet wird heruntergeladen. Öffnen Sie es, um IPMI aufzurufen. Melden Sie sich mit gültigen Anmeldedaten für den Server an.
 
-Bei Verwendung eines OVHcloud Templates werden die NICs standardmäßig mit *eth1* und *eth2* gekennzeichnet. Wenn Sie kein OVHcloud Template verwenden, können Sie die Namen Ihrer Schnittstellen mit dem folgenden Befehl ermitteln:
+Bei Verwendung eines OVHcloud Templates werden die NICs standardmäßig mit *eth0* und *eth1* gekennzeichnet. Wenn Sie kein OVHcloud Template verwenden, können Sie die Namen Ihrer Schnittstellen mit dem folgenden Befehl ermitteln:
 
 ```bash
 ip a
@@ -55,8 +55,8 @@ STARTMODE='onboot'
 BOOTPROTO='static'
 IPADDR='10.0.0.1/24'
 BONDING_MASTER='yes'
-BONDING_SLAVE_0='eth1'
-BONDING_SLAVE_1='eth2'
+BONDING_SLAVE_0='eth0'
+BONDING_SLAVE_1='eth1'
 BONDING_MODULE_OPTS='mode=802.3ad miimon=100 xmit_hash_policy=layer3+4'
 ```
 
@@ -66,10 +66,10 @@ BONDING_MODULE_OPTS='mode=802.3ad miimon=100 xmit_hash_policy=layer3+4'
 > Wenn Ihr Server über mehr als 2 Netzwerkschnittstellen verfügt, können Sie diese in die Konfiguration hinzufügen, indem Sie die Nummer des Parameters `BONDING_SLAVE_` erhöhen, zum Beispiel: `BONDING_SLAVE_2= eth3`.
 >
 
-Speichern und schließen Sie die Datei, sobald Sie bestätigt haben, dass die Informationen korrekt sind. Sie müssen nun beide physischen Interfaces konfigurieren. Standardmäßig existiert auf einem OVHcloud Server nur für *eth1* eine Konfigurationsdatei. Öffnen Sie ihn mit folgendem Befehl:
+Speichern und schließen Sie die Datei, sobald Sie bestätigt haben, dass die Informationen korrekt sind. Sie müssen nun beide physischen Interfaces konfigurieren. Standardmäßig existiert auf einem OVHcloud Server nur für *eth0* eine Konfigurationsdatei. Öffnen Sie ihn mit folgendem Befehl:
 
 ```bash
-vi /etc/sysconfig/network/ifcfg-eth1
+vi /etc/sysconfig/network/ifcfg-eth0
 ```
 
 Standardmäßig wird die Datei folgenden Text anzeigen:
@@ -102,12 +102,12 @@ STARTMODE='hotplug'
 > Die Hardware-Adresse (MAC-Adresse) der NIC kann mit dem zuvor verwendeten Befehl `ip a` gefunden werden. Es handelt sich um den Wert neben `link/ether` in der Ausgabe.
 >
 
-Ein *#* vor einer Zeile bedeutet, dass der Server diese Zeile beim Lesen der Datei überspringt. Ignorieren Sie daher diese Zeilen bei der Erstellung der Schnittstellendatei für *eth2*.
+Ein *#* vor einer Zeile bedeutet, dass der Server diese Zeile beim Lesen der Datei überspringt. Ignorieren Sie daher diese Zeilen bei der Erstellung der Schnittstellendatei für *eth1*.
 
-Erstellen Sie die Konfigurationsdatei für *eth2* mit folgendem Befehl:
+Erstellen Sie die Konfigurationsdatei für *eth1* mit folgendem Befehl:
 
 ```bash
-vi /etc/sysconfig/network/ifcfg-eth2
+vi /etc/sysconfig/network/ifcfg-eth1
 ```
 
 Diese Datei ist leer. Fügen Sie folgenden Inhalt hinzu:

@@ -1,8 +1,31 @@
 ---
-title: 'Using automated tasks on a Web Hosting plan'
-excerpt: 'Find out how to configure scheduled jobs on your Web Hosting'
-updated: 2022-12-01
+title: "Using automated tasks on a Web Hosting plan"
+excerpt: "Find out how to configure scheduled jobs on your Web Hosting"
+updated: 2023-10-31
 ---
+
+<style>
+ pre {
+     font-size: 14px !important;
+ }
+ pre.bgwhite {
+   background-color: #fff !important;
+   color: #000 !important;
+   font-family: monospace !important;
+   padding: 5px !important;
+   margin-bottom: 5px !important;
+ }
+ pre.bgwhite code {
+   background-color: #fff !important;
+   border: solid 0px transparent !important;
+   font-family: monospace !important;
+   font-size: 0.90em !important;
+   color: #000 !important;
+ }
+ .small {
+     font-size: 0.90em !important;
+ }
+</style>
 
 ## Objective
 
@@ -11,15 +34,16 @@ On OVHcloud Web Hostings, you can use scripts to automate certain operations. Cr
 **This guide explains how to create cron jobs to automate scheduled tasks on a Web Hosting.**
 
 > [!warning]
->OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 >
->This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend contacting a specialised provider and/or the software publisher for the service if you encounter any difficulties. We will not be able to assist you ourselves. You can find more information in the “Go further” section of this guide.
+> OVHcloud provides services that you are responsible for with regard to their configuration and management. It is therefore your responsibility to ensure that they function properly.
+>
+> This guide is designed to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en-ca/directory/) or reach out to the [OVHcloud community](https://community.ovh.com/en/) if you encounter any difficulties. We will not be able to assist you. You can find more information in the [Go further](#go-further) section of this guide.
 >
 
 ## Requirements
 
-- an [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-ca/web-hosting/)
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca) with the necessary permissions to manage the Web Hosting plan 
+- An [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-ca/web-hosting/)
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca) with the necessary permissions to manage the Web Hosting plan 
 
 ## Instructions
 
@@ -61,6 +85,13 @@ The interface offers two modes to configure the frequency of your task. Use the 
 |Enter numeric values as you would in a *crontab*. The asterisk operator denotes "every value" of the time period, meaning the task would continuously run **once an hour every day** in this example.|
 |![cron frequency](images/cron-jobs-4.png){.thumbnail}|
 
+> [!primary]
+>
+> The `Days`{.action} form allows you to define execution frequencies on a monthly cycle.
+>
+> The `Days of the week`{.action} form allows you to define additional execution frequencies, but on a weekly cycle.
+>
+
 You can switch between the two modes during configuration to view the changes accordingly. Please also note the [limitations when scheduling a task on a Web Hosting](./#limitations-of-web-hosting-tasks).
 
 ![cron control panel](images/cron-jobs-5.gif){.thumbnail}
@@ -81,7 +112,7 @@ The task will be ready within a few minutes. You can then modify all of its sett
 |Running time|The time limit for a task is 60 minutes. If a script exceeds this running time, it will be stopped automatically by the system.|
 |Variables|You can only define variables in a script. Adding them to the URL calling the script will not work (Example: www/jobs/cron.php?variable=value).|
 |Data limit|A task can only generate up to 5 MB of data (*stdin/stderr*). For example, if a script writes data into a .txt file, the execution will be stopped automatically once the file reaches 5 MB in size.|
-|Scripts producing errors|If a script is faulty, it will be automatically disabled after 10 failed execution attempts. Simply re-activate it in the Control Panel. (Click on `...`{.action}, then on `Edit`{.action}.)|
+|Scripts producing errors|If a script is faulty, it will be automatically disabled after 10 failed execution attempts. Simply reactivate it in the Control Panel. (Click on `...`{.action}, then on `Edit`{.action}.)|
 |Execution reports|Reports will be sent to your selected email address only once a day (during night hours).|
 
 ### Troubleshooting
@@ -104,42 +135,46 @@ Please refer to [this guide](/pages/web_cloud/web_hosting/logs_and_statistics) f
 
 - Example of a successfully finished execution output
 
-```
+<pre class="bgwhite"><code>
 [2020-08-11 00:36:01] ## OVH ## START - 2020-08-11 00:36:01.524384 executing: /usr/local/php7.2/bin/php /homez.161/myftpusername/www/myscript.sh
 [2020-08-11 00:36:01] 
 [2020-08-11 00:36:01] ## OVH ## END - 2020-08-10 22:39:44.086166 exitcode: 0
-```
+</code></pre>
 
 - Example of a failed execution output due to exceeded execution time
 
-```
+<pre class="bgwhite"><code>
 [2020-08-11 00:36:01] ## OVH ## START - 2020-08-11 00:36:01.524384 executing: /usr/local/php7.2/bin/php /homez.161/myftpusername/www/sleep.sh
 
 [2020-08-11 01:36:01] ## OVH ## ERROR - CRON TASK INTERRUPTED BY OVH - reason: your script duration exceeded the maximum permitted (3600 seconds)
 [2020-08-11 01:36:01] ## OVH ## END - 2020-08-11 01:36:01.086166 exitcode: 0
-```
+</code></pre>
 
 - Example of a failed execution output because the script file was not found in the specified path
 
-```
+<pre class="bgwhite"><code>
 [2020-08-11 00:36:01] ## OVH ## START - 2020-08-11 00:36:01.524384 executing: /usr/local/php7.2/bin/php /homez.161/myftpusername/www/noscript.sh
 
 [2020-08-11 00:36:01] ## OVH ## ERROR command '/homez.161/myftpusername/www/noscript.sh' not found
 [2020-08-11 00:36:01] ## OVH ## END - 2020-08-11 00:36:01.086166 exitcode: 255
-```
+</code></pre>
 
 - Example of a failed execution output because of a permissions error (chmod) or incorrect configuration of the .ovhconfig file
 
-```
+<pre class="bgwhite"><code>
 [2020-08-11 18:07:10] ## OVH ## Your job could not be initiated for an unknown reason.
 [2020-08-11 18:07:10]
 [2020-08-11 18:07:10] ## OVH ## END - 2020-08-11 18:07:10.969840 exitcode: 255
-```
+</code></pre>
 
-## Go further
+## Go further <a name="go-further"></a>
 
 [Configuring the .ovhconfig file of your Web Hosting plan](/pages/web_cloud/web_hosting/configure_your_web_hosting)
 
 [Using SSH on a Web Hosting plan](/pages/web_cloud/web_hosting/ssh_on_webhosting)
+
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-ca/directory/).
+
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-ca/support-levels/).
 
 Join our community of users on <https://community.ovh.com/en/>.

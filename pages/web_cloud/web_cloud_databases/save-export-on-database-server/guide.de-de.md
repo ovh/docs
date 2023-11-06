@@ -1,7 +1,7 @@
 ---
 title: 'Eine Datenbank Ihres Datenbankservers sichern und exportieren'
 excerpt: 'Hier erfahren Sie, wie Sie Ihre Datenbank sichern und exportieren können'
-updated: 2023-02-15
+updated: 2023-10-26
 ---
 
 > [!primary]
@@ -68,7 +68,7 @@ Wenn Sie in phpMyAdmin eingeloggt sind, klicken Sie auf den Namen der Datenbank,
 
 Sie haben zwei mögliche Exportmethoden. Wenn Sie keine besonderen Bedürfnisse haben, empfehlen wir Ihnen die Verwendung des Schnellmodus im **SQL**-Format.
 
-![Web Cloud Databases](images/web-cloud-databases-export01.png){.thumbnail}
+![Web Cloud Databases](images/pma-export-backup-web-cloud-db.png){.thumbnail}
 
 ##### 1\.2 MySQL oder MariaDB Datenbank über die Kommandozeile exportieren
 

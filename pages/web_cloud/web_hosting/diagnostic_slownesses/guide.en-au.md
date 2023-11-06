@@ -1,7 +1,7 @@
 ---
 title: "My website is slow. What to do?"
 excerpt: "Identify the cause of your website's slowdowns and find out how to resolve this situation"
-updated: 2022-11-17
+updated: 2023-10-26
 ---
 
 ## Objective
@@ -153,7 +153,7 @@ Log in to your database by following **step 3** in our guide on [web hosting dat
 
 If the connection is successful, you will land on the following interface:
 
-![PHPMyAdmin](images/pma.png){.thumbnail}
+![PHPMyAdmin](images/pma-main-page.png){.thumbnail}
 
 > [!warning]
 >

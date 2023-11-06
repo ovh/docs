@@ -121,7 +121,7 @@ mount /dev/hda1 /mnt/
 
 Pour quitter le mode rescue, redéfinissez le mode de démarrage sur `Booter sur le disque dur`{.action} dans l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et redémarrez le serveur en ligne de commande.
 
-#### Montage d'un datastore
+#### VMware - Montage d'un datastore
 
 Vous pouvez monter un datastore VMware de la même manière que décrite dans l'étape précédente.
 
