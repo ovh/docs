@@ -74,6 +74,7 @@ Si vous possédez déjà une base de données de destination, choisissez d'abord
 -	Base de données Web Cloud : sélectionnez ce choix si vous voulez copier votre base de données source vers une Web Cloud Database (destination).
 
 #### Base de données
+
 Vous venez de sélectionner « Base de données ». Deux listes déroulantes sont affichées. Cliquez sur la première puis sélectionnez l’hébergement sur lequel se trouve votre base de données Start SQL de destination. Une fois l’hébergement sélectionné, cliquez sur la deuxième liste déroulante pour choisir la base de données Start SQL de destination.
 
 Une fois votre choix effectué, cliquez sur `Suivant`{.action}. Le message de confirmation suivant s’affiche :
