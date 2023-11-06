@@ -20,7 +20,7 @@ If you have an OVHcloud web hosting plan, you can access a storage space that al
 - a [OVHcloud web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/)
 - Install [Microsoft Visual Studio Code](https://visualstudio.microsoft.com/#vscode-section) on your machine
 
-## In practice
+## Instructions
  
 > [!warning]
 >
@@ -82,11 +82,11 @@ This file is located in the .vscode folder, which is located at the root of your
 
 ### Configure the sftp.json file
 
-Before you work on your project, upload it to your local folder that you created earlier. However, first, make sure that the “sftp.json” file is correctly configured. Useful information can be found in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). In the `Web Cloud`{.action} section, click `WHosting plans`{.action}. Select the web hosting plan concerned, then click on the `FTP - SSH`{.action} tab.
+Before you work on your project, upload it to your local folder that you created earlier. However, first, make sure that the “sftp.json” file is correctly configured. Useful information can be found in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). In the `Web Cloud`{.action} section, click `Hosting plans`{.action}. Select the web hosting plan concerned, then click on the `FTP - SSH`{.action} tab.
 
 In the "sftp.json" file, enter the values for the following entries:
 
-#### name 
+#### name
 
 Locate it at the two locations highlighted in orange.
 
@@ -94,7 +94,7 @@ Locate it at the two locations highlighted in orange.
 
 > [!primary]
 >
-> The `name`(name) value is customizable, so you can assign the value of your choice. However, if you are configuring multiple "sftp.json" files, it is best to use the values visible above as a reference for organizational reasons.
+> The `name` value is customizable, so you can assign the value of your choice. However, if you are configuring multiple "sftp.json" files, it is best to use the values visible above as a reference for organizational reasons.
 >
 
 #### host
@@ -105,15 +105,15 @@ In the `FTP-SSH`{.action} tab, the host name (`host`) is visible under the menti
 
 #### username
 
-Locate the username (`username`) in the `Login`{.action} column of the table.
+Locate the `username` in the `Login`{.action} column of the table.
 
 #### remotePath
 
-Find the remote path (`remotePath`) under the mention `Home directory path`{.action}. However, if multiple users are configured, the specified path may be different. In this case, replace the username mentioned after `home/` with the one of your choice in the `Login`{.action} list of your web hosting plan.
+Find the `remotePath` under `Home directory path`{.action}. However, if multiple users are configured, the specified path may be different. In this case, replace the username mentioned after `home/` with the one of your choice in the `Login`{.action} list of your web hosting plan.
 
-**Example**: If your username is "john-smith" you will get `home/john-smith`
+**Example**: If your username is "john-smith" you will get `home/john-smith`.
 
-Finally, remember to add this line in the file “sftp.json”: `"openSsh": true`
+Finally, remember to add this line in the file “sftp.json”: `"openSsh": true`.
 
 > [!primary]
 >
@@ -139,7 +139,7 @@ Here is an example of a file called “sftp.json”:
 
 ```
 
-For more details on the options in the sftp.json file, see [project documentation](https://github.com/Natizyskunk/vscode-sftp/wiki/configuration).
+For more details on the options in the sftp.json file, see the [project documentation](https://github.com/Natizyskunk/vscode-sftp/wiki/configuration).
 
 ### Download the project locally
 
@@ -155,14 +155,14 @@ If prompted, enter the user password entered in the “sftp.json” file, then c
 
 > [!primary]
 >
-> As a reminder, it is important to configure the “sftp.json” file correctly. If you encounter an error before downloading your project, it is usually caused by a configuration defect in the “sftp.json” file. If you have any questions, please refer to [Extension FAQ](https://github.com/Natizyskunk/vscode-sftp/blob/HEAD/FAQ.md){.external}.
+> As a reminder, it is important to configure the “sftp.json” file correctly. If you encounter an error before downloading your project, it is usually caused by a configuration defect in the “sftp.json” file. If you have any questions, please refer to the [Extension FAQ](https://github.com/Natizyskunk/vscode-sftp/blob/HEAD/FAQ.md){.external}.
 >
 
 ### Make changes to files
 
-Now that the project is downloaded locally to your machine, you can easily edit, add, or delete files on Visual Studio Code.
+Now that the project is downloaded locally to your machine. You can easily edit, add, or delete files on Visual Studio Code.
 
-If you would like your local changes to be synchronized every time you save a file, add this line to the "sftp.json" file: `"uploadOnSave": true`
+If you would like your local changes to be synchronized every time you save a file, add this line to the "sftp.json" file: `"uploadOnSave": true`.
 
 To disable this feature, while keeping it in the "sftp.json" file, change the value from `true` to `false`.
 
@@ -173,7 +173,8 @@ So far, we have only mentioned the commands: `SFTP: Config` and `SFTP: Download 
 Find the list of commands [here](https://github.com/Natizyskunk/vscode-sftp/wiki/Commands){.external}.
 
 You are now able to access and edit the content of your web hosting plan via Visual Studio Code.
-The purpose of this guide is to provide an effective introduction to managing a project from within Visual Studio Code. It is suitable for a first experience. However, if you edit several files and they are synchronized on your Web Hosting plan, you will be unable to view your change history, and possibly undo the changes.
+
+The purpose of this tutorial is to provide an effective introduction to managing a project from within Visual Studio Code. It is suitable for a first experience. However, if you edit several files and they are synchronized on your Web Hosting plan, you will be unable to view your change history, and possibly undo the changes.
 
 ## Go further <a name="go-further"></a>
 
@@ -181,7 +182,7 @@ The purpose of this guide is to provide an effective introduction to managing a 
 
 [Use FileZilla with your OVHcloud hosting plan](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)
 
-[Use SSH access on your web hosting plan](/pages/web_cloud/web_hosting/ssh_on_webhosting). Please remember that to use SSH, you must have a [Professional or Performance web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/).
+[Use SSH access on your web hosting plan](/pages/web_cloud/web_hosting/ssh_on_webhosting) (only available with a [Professional or Performance web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/))
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/).
 
