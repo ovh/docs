@@ -134,6 +134,7 @@ Votre base de données de destination ne contient pas assez d’espace. Deux sol
 -	Si vous possédez un serveur [Web Cloud Databases](https://www.ovhcloud.com/fr/web-cloud/databases/), mettez-le à jour pour allouer plus d’espace disque à votre base de données.
 
 #### Les bases de données source et destination sont incompatibles
+
 Cette erreur signifie que le **S**ystème de **G**estion de **B**ases de **D**onnées (**SGBD**) de votre base de données source n’est pas le même que le SGBD de votre base de données de destination. Par exemple, cette erreur arrive lorsque vous utilisez MySQL pour votre base de données source, et PostgreSQL pour votre base de données de destination.
 
 
