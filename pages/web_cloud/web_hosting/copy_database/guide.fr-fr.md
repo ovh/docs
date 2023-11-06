@@ -18,7 +18,7 @@ Votre base de données correspond au coeur de votre site web. Pour des raisons d
 ## Prérequis
 
 -	Disposer d’une offre de stockage Start SQL ou Web Cloud Database
--	Être connecté à l’espace client OVHcloud
+-	Être connecté à l’[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 -	Disposer des contacts de gestion suffisants sur l’ensemble des services de base de données concernées. Pour plus de détails, suivez le guide [Gérer les contacts de ses services](/pages/account_and_service_management/account_information/managing_contacts).
 
 
