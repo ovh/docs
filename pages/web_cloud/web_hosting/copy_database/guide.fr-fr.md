@@ -7,6 +7,7 @@ updated: 2023-11-03
 ## Objectif
 
 Votre base de données correspond au coeur de votre site web. Pour des raisons de sécurité, ou si vous changez d’offre de stockage, il est essentiel de pouvoir copier votre base de données pour la transférer vers une nouvelle.
+
 **Découvrez comment copier/transférer le contenu d'une base de données OVHcloud vers une autre.**
 
 Dans ce guide, nous ne parlons pas de migration. Pour la copie et le transfert, la base de données d’origine existe toujours et n’est pas supprimée, contrairement à la migration.
