@@ -26,6 +26,7 @@ Avant de commencer, assurez-vous que :
 -	La taille de la base de données source n’est pas plus grande que la taille de la base de données de destination.
 
 ### Identifier ma base de données source
+
 Vous pouvez copier et transférer une base de données Start SQL ou une base de données Web Cloud. Selon votre choix, le chemin pour accéder à votre base de données source est différent.
 
 #### Base de données Start SQL
