@@ -1,7 +1,7 @@
 ---
 title: AI Training - Tutorial - Get started with NVIDIA Triton Inference Server and AI Training
 excerpt: How to use optimally AI models with NVIDIA Triton Inference Server and AI Training
-updated: 2023-09-01
+updated: 2023-11-06
 ---
 
 ## Objective
