@@ -1,7 +1,7 @@
 ---
 title: Configurer un connecteur d'envoi sur votre plateforme Private ou Trusted Exchange
 excerpt: Découvrez comment ajouter un connecteur d'envoi SMTP sur votre plateforme Exchange OVHcloud
-updated: 2023-10-05
+updated: 2023-11-06
 ---
 
 <style>
@@ -31,7 +31,6 @@ updated: 2023-10-05
 
 Ajouter un connecteur d'envoi SMTP à votre plateforme Exchange permet, pour une ou plusieurs adresses e-mail Exchange, d'envoyer des e-mails en passant par un serveur d'envoi externe à votre plateforme Exchange. Il peut être utilisé, par exemple, dans le cadre de campagne d'envoi massif d'e-mail, ou encore d'utiliser une solution antispam externe. Seules les adresses e-mail attachées au connecteur d'envoi utiliseront ce dernier.
 
-
 **Découvrez comment configurer un connecteur d'envoi sur votre plateforme Private Exchange.**
 
 **Exemple**
@@ -45,7 +44,6 @@ Voici le contexte du schéma ci-dessus:
 - **contact@mydomain.ovh** envoie un e-mail à l'adresse **mary.johnson@guides.ovh** : il s'agit d'un envoi classique, car le connecteur d'envoi n'a pas été attaché à l'adresse **contact@mydomain.ovh**. **mary.johnson@guides.ovh** reçoit donc l'e-mail en provenance du serveur d'envoi de la plateforme Exchange (*Outgoing mail server*).
 - **newsletter@mydomain.ovh** envoie un e-mail à l'adresse **john.smith@guides.ovh** : **newsletter@mydomain.ovh** a été attaché au connecteur d'envoi, **john.smith@guides.ovh** recevra l'e-mail en provenance du serveur d'envoi du connecteur (*Send Connector*) paramétré sur la plateforme Exchange.
 
-
 ## Prérequis
 
 - Avoir souscrit à une plateforme [Private Exchange OVHcloud](https://www.ovhcloud.com/fr/emails/private-exchange/) ou [Trusted Exchange OVHcloud](https://www.ovhcloud.com/fr/enterprise/products/trusted-exchange/).
@@ -58,7 +56,7 @@ Voici le contexte du schéma ci-dessus:
 La mise en place d'un connecteur d'envoi se fait en 3 étapes.
 
 - [1. Ajouter le connecteur d'envoi à votre plateforme](#addconnector) : Vous entrez les paramètres du connecteur d'envoi que votre prestataire vous a transmis.
-- [2. Configurer une adresse e-mail sur un connecteur d'envoi](#addaddress) : Vous attachez le connecteur d'envoi à une ou plusieurs adresses e-mail afin qu'elles envoient au travers de ce connecteur lors d'un envoi .
+- [2. Configurer une adresse e-mail sur un connecteur d'envoi](#addaddress) : Vous attachez le connecteur d'envoi à une ou plusieurs adresses e-mail afin qu'elles envoient au travers de ce connecteur lors d'un envoi.
 - [3. Vérifier que votre adresse e-mail utilise le connecteur d'envoi](#checkheader) : réaliser un envoi depuis une adresse e-mail paramétrée avec un connecteur et récupérer l'en-tête de l'e-mail depuis l'adresse e-mail de réception pour vérifier que l'e-mail est bien passé au travers du connecteur d'envoi.
 
 Vous trouverez aussi dans ce guide d'autres opérations utiles concernant les connecteurs d'envoi.
@@ -327,5 +325,9 @@ Vous obtenez le résultat suivant :
 [Éditer une zone DNS](/pages/web_cloud/domains/dns_zone_edit)
 
 [Ajouter un nom de domaine sur son service Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain)
+
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
+
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
