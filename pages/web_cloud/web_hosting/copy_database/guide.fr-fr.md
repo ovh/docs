@@ -30,6 +30,7 @@ Avant de commencer, assurez-vous que :
 Vous pouvez copier et transférer une base de données Start SQL ou une base de données Web Cloud. Selon votre choix, le chemin pour accéder à votre base de données source est différent.
 
 #### Base de données Start SQL
+
 Dans votre [espace client OVHcloud](https://www.ovh.com/manager/), sélectionnez `Web Cloud`{.action} dans le menu en haut de l'interface. Dans le menu de gauche, dirigez-vous dans l’onglet `Hosting Plans`{.action} et cliquez sur l’hébergement de votre choix.
 
 Image
