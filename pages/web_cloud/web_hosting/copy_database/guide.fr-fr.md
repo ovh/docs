@@ -10,7 +10,10 @@ Votre base de données correspond au coeur de votre site web. Pour des raisons d
 
 **Découvrez comment copier/transférer le contenu d'une base de données OVHcloud vers une autre.**
 
-Dans ce guide, nous ne parlons pas de migration. Pour la copie et le transfert, la base de données d’origine existe toujours et n’est pas supprimée, contrairement à la migration.
+> [!primary]
+>
+>Grâce à la fonctionnalité décrite dans ce qui suit, les bases de données ne sont pas migrées mais uniquement copiées. En effet, la base de données d’origine n’est pas supprimée automatiquement, contrairement à un processus de migration.
+>
 
 ## Prérequis
 
