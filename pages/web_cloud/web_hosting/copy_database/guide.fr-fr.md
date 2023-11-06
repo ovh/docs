@@ -39,7 +39,7 @@ Dans votre [espace client OVHcloud](https://www.ovh.com/manager/), sélectionnez
 
 Image
 
-En cliquant sur l’onglet `Database`{.action}, la liste de vos bases de données Start SQL s’affiche.
+En cliquant sur l’onglet `Bases de données`{.action}, la liste de vos bases de données Start SQL s’affiche.
 
 Image
 
