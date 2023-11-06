@@ -47,7 +47,7 @@ En cliquant sur l’onglet `Bases de données`{.action}, la liste de vos Web Clo
 Image
 
 ### Copier et transférer une base de données
-Cliquez sur les `(...)` à droite de la ligne correspondant à la base de données que vous voulez copier, puis sélectionnez `Copy database`{.action}.
+Cliquez sur le bouton `...`{.action} à droite de la ligne correspondant à la base de données que vous souhaitez copier, puis sélectionnez `Copier la base de données`{.action}.
 
 Image
 
