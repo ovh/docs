@@ -1,7 +1,7 @@
 ---
 title: "Copier une base de données OVHcloud dans une autre"
 excerpt: "Découvrez comment copier une base de données OVHcloud vers une autre"
-updated: 2023-11-03
+updated: 2023-11-07
 ---
 
 ## Objectif
