@@ -12,6 +12,7 @@ Découvrez comment copier et transférer une base de données source vers une ba
 Dans ce guide, nous ne parlons pas de migration. Pour la copie et le transfert, la base de données d’origine existe toujours et n’est pas supprimée, contrairement à la migration.
 
 ## Prérequis
+
 -	Disposer d’une offre de stockage Start SQL ou Web Cloud Database
 -	Être connecté à l’espace client OVHcloud
 -	Disposer des contacts de gestion suffisants sur l’ensemble des services de base de données concernées. Pour plus de détails, suivez le guide [Gérer les contacts de ses services](/pages/account_and_service_management/account_information/managing_contacts).
