@@ -887,6 +887,7 @@
                 + [AI Training - Tutorial - Train a model to recognize marine mammal sounds](public_cloud/ai_machine_learning/training_tuto_08_train_marine_mammal_sound)
                 + [AI Training - Tutorial - Train a PyTorch model and export it to ONNX](public_cloud/ai_machine_learning/training_tuto_09_train_model_export_onnx)
                 + [AI Training - Tutorial - Train YOLOv8 to play rock paper scissors](public_cloud/ai_machine_learning/training_tuto_09_train_rock-paper-scissors)
+                + [AI Training - Tutorial - Get started with NVIDIA Triton Inference Server and AI Training](public_cloud/ai_machine_learning/training_tuto_10_triton_inference_server)
         + [AI Deploy](products/public-cloud-ai-and-machine-learning-ai-deploy)
             + [Guides](public-cloud-ai-and-machine-learning-ai-deploy-guides)
                 + [AI Deploy - Features, Capabilities and Limitations](public_cloud/ai_machine_learning/deploy_guide_01_capabilities)
