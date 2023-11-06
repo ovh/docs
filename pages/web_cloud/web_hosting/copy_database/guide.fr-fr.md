@@ -19,6 +19,7 @@ Dans ce guide, nous ne parlons pas de migration. Pour la copie et le transfert, 
 
 
 ## En pratique
+
 Avant de commencer, assurez-vous que :
 -	Le **S**ystème de **G**estion de **B**ases de **D**onnées (**SGBD** comme MySQL, PostgreSQL etc.) est le même pour votre base de données source et destination.
 -	La version du SGBD est la même pour votre base de données source et destination. Même si la copie peut fonctionner avec des versions différentes, il est préférable que les versions du SGBD soient les mêmes.
