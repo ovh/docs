@@ -24,6 +24,7 @@ Votre base de données correspond au coeur de votre site web. Pour des raisons d
 ## En pratique
 
 Avant de commencer, assurez-vous que :
+
 -	Le **S**ystème de **G**estion de **B**ases de **D**onnées (**SGBD** comme MySQL, PostgreSQL etc.) est le même pour votre base de données source et destination.
 -	La version du SGBD est la même pour votre base de données source et destination. Même si la copie peut fonctionner avec des versions différentes, il est préférable que les versions du SGBD soient les mêmes.
 -	La taille de la base de données source n’est pas plus grande que la taille de la base de données de destination.
