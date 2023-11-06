@@ -1,7 +1,7 @@
 ---
 title: "Zarządzaj hostingiem za pomocą Visual Studio Code przez SFTP"
 excerpt: "Zarządzanie stroną WWW na hostingu za pomocą kodu Visual Studio Code z rozszerzeniem SFTP"
-updated: 2023-11-03
+updated: 2023-11-06
 ---
 
 > [!primary]

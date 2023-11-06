@@ -1,7 +1,7 @@
 ---
 title: "Gestionar un alojamiento web con Visual Studio Code a través de SFTP"
 excerpt: "Administrar un sitio web en un alojamiento web con Visual Studio Code gracias a una extensión SFTP"
-updated: 2023-11-03
+updated: 2023-11-06
 ---
 
 > [!primary]

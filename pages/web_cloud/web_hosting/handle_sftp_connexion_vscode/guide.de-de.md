@@ -1,7 +1,7 @@
 ---
 title: "Webhosting mit Visual Studio Code über SFTP verwalten"
 excerpt: "Eine Website auf einem Webhosting mit Visual Studio Code mithilfe einer SFTP-Erweiterung verwalten"
-updated: 2023-11-03
+updated: 2023-11-06
 ---
 
 > [!primary]
