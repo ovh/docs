@@ -69,7 +69,7 @@ Image
 
 > [!primary]
 >
-> Lorsque vous achetez votre nouvelle base de données, celle-ci n’est pas activée par défaut. Pensez à l'activer. Pour ce faire, cliquez sur `Actions`{.action}, `create a database`{.action} puis suivez les étapes. Pour plus de détails, suivez notre guide [Créer une base de données sur son hébergement web](/pages/web_cloud/web_hosting/sql_create_database).
+> Lorsque vous achetez votre nouvelle base de données, celle-ci n’est pas activée par défaut. N'oubliez pas de l'activer. Pour cela, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), puis rendez-vous dans la partie `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} dans la colonne de gauche, puis sélectionnez l'hébergement web concerné par l'ajout d'une base de données supplémentaire. Sur la page qui s'affiche, cliquez sur l'onglet `Bases de données`{.action}. Appuyez sur le bouton `Actions`{.action} pour commander une base de données supplémentaire, puis sur `Créer une base de données`{.action}. Suivez les étapes jusqu'à la finalisation de la commande de la base de données. Pour plus de détails, suivez notre guide [Créer une base de données sur son hébergement web](/pages/web_cloud/web_hosting/sql_create_database).
 >
 
 Image
