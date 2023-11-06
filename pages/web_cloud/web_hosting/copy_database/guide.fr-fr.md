@@ -123,7 +123,6 @@ Cette erreur signifie que vous ne possédez qu’une seule base de données. Pou
 -	Installer une nouvelle base de données sur votre hébergement web.
 -	Installer une nouvelle base de données sur un serveur [Web Cloud Databases](https://www.ovhcloud.com/fr/web-cloud/databases/).
 
-
 #### Vous avez déjà une action en cours
 
 Cette erreur signifie qu’une tâche est déjà en cours sur votre base de données. Dirigez-vous dans l’onglet `Ongoing Tasks`{.action} et vérifiez que vous avez bien une tâche déjà en cours. Si c’est le cas, attendez qu’elle soit finie pour recommencer la copie de votre base de données.
