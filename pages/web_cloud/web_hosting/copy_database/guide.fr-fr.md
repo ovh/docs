@@ -31,7 +31,7 @@ Avant de commencer, assurez-vous que :
 
 ### Identifier ma base de données source
 
-Vous pouvez copier et transférer une base de données Start SQL ou une base de données Web Cloud. Selon votre choix, le chemin pour accéder à votre base de données source est différent.
+Vous pouvez copier et transférer une base de données [Start SQL](https://www.ovhcloud.com/fr/web-hosting/options/start-sql/) ou une base de données [Web Cloud Databases](https://www.ovhcloud.com/fr/web-cloud/databases/). Selon votre situation, le chemin pour accéder à votre base de données source est différent.
 
 #### Base de données Start SQL
 
