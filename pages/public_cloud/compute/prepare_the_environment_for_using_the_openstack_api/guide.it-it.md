@@ -1,7 +1,7 @@
 ---
 title: 'Preparare l’ambiente per utilizzare l’API OpenStack'
 excerpt: 'Come installare l’ambiente OpenStack per gestire le istanze via API'
-updated: 2022-03-30
+updated: 2023-11-06
 ---
 
 ## Obiettivo

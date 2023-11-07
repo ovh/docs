@@ -1,7 +1,7 @@
 ---
 title: 'Preparar el entorno para utilizar la API de OpenStack'
 excerpt: 'Cómo instalar el entorno OpenStack para controlar las instancias a través de la API'
-updated: 2022-03-30
+updated: 2023-11-06
 ---
 
 ## Objetivo

@@ -1,7 +1,7 @@
 ---
 title: 'Preparar o ambiente para utilizar a API OpenStack'
 excerpt: 'Instale o ambiente OpenStack para controlar as suas instâncias através da API'
-updated: 2022-03-30
+updated: 2023-11-06
 ---
 
 > [!primary]

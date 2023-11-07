@@ -1,7 +1,7 @@
 ---
 title: 'Preparing an environment for using the OpenStack API'
 excerpt: 'Install the OpenStack environment to manage your instances via the API'
-updated: 2023-10-27
+updated: 2023-11-06
 ---
 
 ## Objective
@@ -12,7 +12,7 @@ With the OpenStack API, you can automate your management by generating scripts.
 
 > [!primary]
 >
-> Openstack requires Python >=3.8
+> Openstack requires Python >=3.8.
 >
 
 **Find out how to install these OpenStack tools.**
@@ -23,7 +23,7 @@ With the OpenStack API, you can automate your management by generating scripts.
 
 ## Instructions
 
-If you need to configure the Public Cloud Load Balancer you will to run :
+To configure the Public Cloud Load Balancer you will need to install the Python Octavia client:
 
 ```console
 pip3 install python-octaviaclient
@@ -39,7 +39,7 @@ Update the packet cache using the `apt update` command:
 apt update
 ```
 
-Use the command below to install the OpenStack client
+Use the command below to install the OpenStack client:
 
 ```sh
 $ apt install python3-pip python3-venv -y
@@ -72,7 +72,7 @@ Update the packet cache using the following command:
 yum update -y
 ```
 
-Use the command below to install the OpenStack client
+Use the command below to install the OpenStack client:
 
 ```sh
 yum install python3-pip -y

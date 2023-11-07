@@ -1,7 +1,7 @@
 ---
 title: 'Cargar las variables de entorno necesarias para OpenStack'
 excerpt: 'Cómo cargar sus variables de entorno para utilizar la API de OpenStack'
-updated: 2021-08-18
+updated: 2023-11-06
 ---
 
 > [!primary]
@@ -51,12 +51,12 @@ Si la ha olvidado, deberá crearla nuevamente.
 Si las interfaces de línea de comandos (CLI) ya están instaladas, solo compruebe que funcionen correctamente.
 
 ```bash
-admin@vpsxxxxxx:~$ nova list
-+--------------------------------------+------+--------+------------+-------------+------------------------+
-| ID                                   | Name | Status | Task State | Power State | Networks               |
-+--------------------------------------+------+--------+------------+-------------+------------------------+
-| 2278e269-a529-40cc-9a08-794fda9302d3 | deb8 | ACTIVE | -          | Running     | Ext-Net=xx.xxx.xx.xxx |
-+--------------------------------------+------+--------+------------+-------------+------------------------+
+(env)$ openstack server list
++--------------------------------------+------------+--------+-----------------------------------------------+-----------+--------+
+| ID                                   | Name       | Status | Networks                                      | Image     | Flavor |
++--------------------------------------+------------+--------+-----------------------------------------------+-----------+--------+
+| 8d7c67c0-38e1-4091-88d5-c14844c1f455 | b2-7-gra11 | ACTIVE | Ext-Net=2001:xxxx:xxx:xxx::xxxx, xx.xxx.xx.xx | Debian 12 | b2-7   |
++--------------------------------------+------------+--------+-----------------------------------------------+-----------+--------+
 ```
 
 Tenga en cuenta que puede guardar la contraseña predefinida del usuario de Horizon. Para ello, sustituya:
@@ -95,6 +95,6 @@ set OS_PASSWORD="Contraseña del usuario de Horizon"
 
 ## Más información
 
-Para aprender a utilizar OpenStack: [Documentación de OpenStack](https://docs.openstack.org/train/){.external}
+Para aprender a utilizar OpenStack: [Documentación de OpenStack](https://docs.openstack.org/){.external}
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

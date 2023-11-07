@@ -1,7 +1,7 @@
 ---
 title: 'System für die Verwendung der OpenStack API vorbereiten'
 excerpt: 'Erfahren Sie hier, wie Sie Ihre Arbeitsumgebung zur Verwaltung von Instanzen über die OpenStack API nutzen'
-updated: 2022-03-30
+updated: 2023-11-06
 ---
 
 ## Ziel

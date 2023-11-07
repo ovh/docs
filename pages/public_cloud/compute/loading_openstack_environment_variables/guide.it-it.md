@@ -1,7 +1,7 @@
 ---
 title: "Impostare le variabili d'ambiente OpenStack"
 excerpt: 'Come impostare le variabili d’ambiente per utilizzare l’API  di Openstack'
-updated: 2021-08-18
+updated: 2023-11-06
 ---
 
 ## Obiettivo
@@ -46,12 +46,12 @@ Se l’hai dimenticata, dovrai reimpostarla.
 Se le CLI sono già state installate, verifica che funzionino correttamente.
 
 ```bash
-admin@vpsxxxxxx:~$ nova list
-+--------------------------------------+------+--------+------------+-------------+------------------------+
-| ID                                   | Name | Status | Task State | Power State | Networks               |
-+--------------------------------------+------+--------+------------+-------------+------------------------+
-| 2278e269-a529-40cc-9a08-794fda9302d3 | deb8 | ACTIVE | -          | Running     | Ext-Net=xx.xxx.xx.xxx |
-+--------------------------------------+------+--------+------------+-------------+------------------------+
+(env)$ openstack server list
++--------------------------------------+------------+--------+-----------------------------------------------+-----------+--------+
+| ID                                   | Name       | Status | Networks                                      | Image     | Flavor |
++--------------------------------------+------------+--------+-----------------------------------------------+-----------+--------+
+| 8d7c67c0-38e1-4091-88d5-c14844c1f455 | b2-7-gra11 | ACTIVE | Ext-Net=2001:xxxx:xxx:xxx::xxxx, xx.xxx.xx.xx | Debian 12 | b2-7   |
++--------------------------------------+------------+--------+-----------------------------------------------+-----------+--------+
 ```
 
 È possibile salvare la password utente Horizon sul disco rigido. Per farlo, sostituisci:
@@ -90,6 +90,6 @@ export OS_PASSWORD="Password dell’utente Horizon"
 
 ## Per saperne di più
 
-OpenStack, istruzioni per l'uso: [Documentation OpenStack](https://docs.openstack.org/train/){.external}
+OpenStack, istruzioni per l'uso: [Documentation OpenStack](https://docs.openstack.org/){.external}
 
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
