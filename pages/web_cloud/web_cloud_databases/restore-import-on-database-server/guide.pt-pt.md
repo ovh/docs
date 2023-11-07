@@ -12,7 +12,7 @@ No seguimento de um erro numa base de dados, deve estar preparado para restaurar
 
 ## Requisitos
 
-- Dispor de uma [instância Web Cloud Databases](https://www.ovh.com/pt/cloud/cloud-databases/)  (incluída numa oferta de [alojamento web Performance](https://www.ovhcloud.com/pt/web-hosting/)
+- Dispor de uma [instância Web Cloud Databases](https://www.ovhcloud.com/pt/web-cloud/databases/)  (incluída numa oferta de [alojamento web Performance](https://www.ovhcloud.com/pt/web-hosting/)
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 
 ## Instruções
