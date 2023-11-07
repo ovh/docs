@@ -1,7 +1,7 @@
 ---
 title: "Configuring a secure Load Balancer with Let's Encrypt"
 excerpt: "Discover how to configure a secure Public Cloud Load Balancer with Let's Encrypt"
-updated: 2022-11-02
+updated: 2023-11-06
 ---
 
 ## Objective
@@ -76,14 +76,13 @@ ubuntu@letsencrypt:~$ sudo certbot certonly -d <domain.tld> --standalone -m <ema
 Once the process is completed, your certificate will be located in `/etc/letsencrypt/live/domain.tld`. You will then need to merge the certificate with its certificate private key:
 
 ```bash
-ubuntu@letsencrypt:~$ sudo mkdir /etc/ssl/domain.tld
-ubuntu@letsencrypt:~$ sudo $(cat /etc/letsencrypt/live/domain.tld/fullchain.pem /etc/letsencrypt/live/domain.tld/privkey.pem | tee /etc/ssl/domain.tld.pem)
+ubuntu@letsencrypt:~$ sudo cat /etc/letsencrypt/live/domain.tld/fullchain.pem /etc/letsencrypt/live/domain.tld/privkey.pem | sudo tee /etc/ssl/domain.tld.pem
 ```
 
 Next, create a PKCS#12 package with your certificate in it:
 
 ```bash
-ubuntu@letsencrypt:~$ sudo openssl pkcs12 -export -inkey domain.tld.pem -in domain.tld.pem -out domain.tld.p12
+ubuntu@letsencrypt:~$ sudo openssl pkcs12 -export -inkey /etc/ssl/domain.tld.pem -in /etc/ssl/domain.tld.pem -out /etc/ssl/domain.tld.p12
 ```
 
 You have to download this file directly to your local device in order to send it to OpenStack Barbican ("Secret as a Service").
@@ -94,19 +93,19 @@ openstack secret store --name='LetsEncrypt-cert-domain.tld' -t 'application/octe
 
 ### Configuring the secure Listener on the Load Balancer
 
-With your certificate now created, you can add a secure Listener:
+Now that you have your certificate, you can add a Secure Listener and associate a pool and its members with it :
 
 ```bash
 openstack loadbalancer listener create --protocol-port 443 --protocol TERMINATED_HTTPS --name https-listener --default-tls-container=$(openstack secret list | awk '/ LetsEncrypt-cert-domain.tld / {print $2}') my_load_balancer
 
-openstack loadbalancer pool create --name pool-tls --lb-algorithm ROUND_ROBIN --listener tls-listener --protocol HTTP
+openstack loadbalancer pool create --name pool-tls --lb-algorithm ROUND_ROBIN --listener https-listener --protocol HTTP
 
-openstack loadbalancer member create --subnet-id my_subnet --address <private_ip_instance_1> --protocol-port 80 my_pool
+openstack loadbalancer member create --subnet-id my_subnet --address <private_ip_instance_1> --protocol-port 80 pool-tls
 
-openstack loadbalancer member create --subnet-id my_subnet --address <private_ip_instance_2> --protocol-port 80 my_pool
+openstack loadbalancer member create --subnet-id my_subnet --address <private_ip_instance_2> --protocol-port 80 pool-tls
 ```
 
-You can now securely access your Load Balancer with Let's Encrypt.
+You can now securely access your Load Balancer with Let's Encrypt. Be careful, you will need to renew the certificate every 3 months.
 
 ## Go further
 

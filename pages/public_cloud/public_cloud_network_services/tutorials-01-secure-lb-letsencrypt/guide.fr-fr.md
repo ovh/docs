@@ -1,7 +1,7 @@
 ---
 title: "Configurer un Load Balancer sécurisé avec Let's Encrypt"
 excerpt: "Découvrez comment configurer un Load Balancer Public Cloud sécurisé avec Let's Encrypt"
-updated: 2023-10-25
+updated: 2023-11-06
 ---
 
 ## Objectif
@@ -93,7 +93,7 @@ openstack secret store --name='LetsEncrypt-cert-domain.tld' -t 'application/octe
 
 ### Configurer le Listener sécurisé sur le Load Balancer
 
-Maintenant que vous avez votre certificat, vous pouvez ajouter un Listener sécurisé et y associer un pool et ses membres.
+Maintenant que vous avez votre certificat, vous pouvez ajouter un Listener sécurisé et y associer un pool et ses membres :
 
 ```bash
 openstack loadbalancer listener create --protocol-port 443 --protocol TERMINATED_HTTPS --name https-listener --default-tls-container=$(openstack secret list | awk '/ LetsEncrypt-cert-domain.tld / {print $2}') my_load_balancer
