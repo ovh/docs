@@ -16,14 +16,14 @@ Se desejar, pode consultar o conteúdo da sua base de dados através de uma inte
 
 ## Requisitos
 
-- Dispor de uma [instância Web Cloud Databases](https://www.ovh.com/pt/cloud/cloud-databases/) (incluída numa oferta de [alojamento web Performance](https://www.ovhcloud.com/pt/web-hosting/).
+- Dispor de uma [instância Web Cloud Databases](https://www.ovhcloud.com/pt/web-cloud/databases/) (incluída numa oferta de [alojamento web Performance](https://www.ovhcloud.com/pt/web-hosting/).
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 
 ## Instruções
 
 > [!primary]
 >
-> Note que as ofertas [Web Cloud Databases](https://www.ovh.com/pt/cloud/cloud-databases/) não dão acesso ao sistema de gestão de base de dados, mas às bases de dados alojadas nesse sistema.
+> Note que as ofertas [Web Cloud Databases](https://www.ovhcloud.com/pt/web-cloud/databases/) não dão acesso ao sistema de gestão de base de dados, mas às bases de dados alojadas nesse sistema.
 > <br> - Não existe um acesso super-utilizador "root".
 > <br> - Os comandos SQL genéricos funcionam normalmente e os softwares do tipo HeidiSQL, SQuirreL SQL ou Adminer são plenamente compatíveis.
 >
@@ -183,9 +183,8 @@ Já está conectado à base de dados:
 
 ## Quer saber mais?
 
-Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/).
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
 
 Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>. 
-

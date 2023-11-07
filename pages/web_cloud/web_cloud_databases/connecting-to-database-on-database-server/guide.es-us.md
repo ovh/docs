@@ -16,14 +16,14 @@ Es posible consultar el contenido de la base de datos a través de una interfaz.
 
 ## Requisitos
 
-- Tener una [instancia Web Cloud Databases](https://www.ovh.es/cloud/cloud-databases/) (incluida en un plan de [hosting Performance](https://www.ovhcloud.com/es/web-hosting/))
+- Tener una [instancia Web Cloud Databases](https://www.ovhcloud.com/es/web-cloud/databases/) (incluida en un plan de [hosting Performance](https://www.ovhcloud.com/es/web-hosting/))
 - Haber iniciado sesión en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws).
 
 ## Procedimiento
 
 > [!primary]
 >
-> Tenga en cuenta que las soluciones [Web Cloud Databases](https://www.ovh.es/cloud/cloud-databases/){.external} no permiten acceder al sistema de gestión de bases de datos, sino a las bases de datos alojadas en él.
+> Tenga en cuenta que las soluciones [Web Cloud Databases](https://www.ovhcloud.com/es/web-cloud/databases/){.external} no permiten acceder al sistema de gestión de bases de datos, sino a las bases de datos alojadas en él.
 > <br> - Tenga en cuenta que no hay acceso "root".
 > <br> - Los comandos genéricos SQL funcionan con normalidad, y software como HeidiSQL, SQLuireL o Admin es totalmente compatible.
 
@@ -187,7 +187,7 @@ Se establecerá la conexión a la base de datos:
 
 ## Más información
 
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es/directory/).
 
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es/support-levels/).
 

@@ -16,14 +16,14 @@ Sie können den Inhalt Ihrer Datenbank einsehen, indem Sie sich in ein geeignete
 
 ## Voraussetzungen
 
-- Sie verfügen über eine [Web Cloud Databases Instanz](https://www.ovh.de/cloud-databases/){.external} (in einem [Performance Webhosting](https://www.ovhcloud.com/de/web-hosting/) Angebot enthalten)
+- Sie verfügen über eine [Web Cloud Databases Instanz](https://www.ovhcloud.com/de/web-cloud/databases/){.external} (in einem [Performance Webhosting](https://www.ovhcloud.com/de/web-hosting/) Angebot enthalten)
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 ## In der praktischen Anwendung
 
 > [!primary]
 >
-> Beachten Sie, dass die [Web Cloud Databases Dienste](https://www.ovh.de/cloud-databases/) keinen Zugriff auf den Datenbankserver gewähren, sondern auf die darauf gehosteten Datenbanken. 
+> Beachten Sie, dass die [Web Cloud Databases Dienste](https://www.ovhcloud.com/de/web-cloud/databases/) keinen Zugriff auf den Datenbankserver gewähren, sondern auf die darauf gehosteten Datenbanken. 
 > <br> - Es gibt keinen "root"-Zugang. 
 > <br> - Generische SQL-Befehle funktionieren normal, und Programme wie HeidiSQL, SQuirreL oder Adminer sind vollständig kompatibel.
 > 
@@ -184,7 +184,7 @@ Sie sind nun mit Ihrer Datenbank verbunden.
 ## Weiterführende Informationen
 
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
-
+ 
 Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
-
+ 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

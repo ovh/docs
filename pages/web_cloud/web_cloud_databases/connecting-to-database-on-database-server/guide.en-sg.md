@@ -12,14 +12,14 @@ You can access your database’s content via an interface. There are several way
 
 ## Requirements
 
-- A [Web Cloud Databases instance](https://www.ovh.ie/cloud-databases/){.external} (included in a [Performance web hosting plan](https://www.ovhcloud.com/en-sg/web-hosting/)).
+- A [Web Cloud Databases instance](https://www.ovhcloud.com/en-sg/web-cloud/databases/){.external} (included in a [Performance web hosting plan](https://www.ovhcloud.com/en-sg/web-hosting/)).
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg)
 
 ## Instructions
 
 > [!primary]
 >
-> Please note that the [Web Cloud Databases](https://www.ovh.ie/cloud-databases/){.external} solutions do not give access to the database management system, but to the databases hosted on it.
+> Please note that the [Web Cloud Databases](https://www.ovhcloud.com/en-sg/web-cloud/databases/){.external} solutions do not give access to the database management system, but to the databases hosted on it.
 > <br> - Please note that there is no "root" access.
 > <br> - Generic SQL commands work normally, and software such as HeidiSQL, SQuirreL or Adminer is fully compatible.
 > 
@@ -180,8 +180,8 @@ You are now connected to your database.
 
 ## Go further
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-sg/directory/).
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-sg/support-levels/).
 
-Join our community of users on <https://community.ovh.com/en/>. 
+Join our community of users on <https://community.ovh.com/en/>.

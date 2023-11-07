@@ -16,14 +16,14 @@ updated: 2023-10-31
 
 ## Prerequisiti
 
-- Disporre di una [istanza Web Cloud Databases](https://www.ovh.it/cloud/cloud-databases/){.external} (inclusa in un'offerta di[hosting web Performance](https://www.ovhcloud.com/it/web-hosting/)
+- Disporre di una [istanza Web Cloud Databases](https://www.ovhcloud.com/it/web-cloud/databases/){.external} (inclusa in un'offerta di[hosting web Performance](https://www.ovhcloud.com/it/web-hosting/)
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 
 ## Procedura
 
 > [!primary]
 >
-> Attenzione: le soluzioni [Web Cloud Databases](https://www.ovh.it/cloud/cloud-databases/){.external} non danno accesso al sistema di gestione dei database, ma ai database ospitati su di esso.
+> Attenzione: le soluzioni [Web Cloud Databases](https://www.ovhcloud.com/it/web-cloud/databases/){.external} non danno accesso al sistema di gestione dei database, ma ai database ospitati su di esso.
 > <br> - Attenzione: non sono presenti accessi "root".
 > <br> - I comandi SQL generici funzionano normalmente e software come HeidiSQL, SQuirreL o Adminer sono completamente compatibili.
 >
@@ -183,9 +183,8 @@ Da questo momento sei connesso correttamente al tuo database:
 
 ## Per saperne di più
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
 
-Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni (offerte di supporto)(https://www.ovhcloud.com/it/support-levels/).
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
 
-Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com>.
-
+Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.
