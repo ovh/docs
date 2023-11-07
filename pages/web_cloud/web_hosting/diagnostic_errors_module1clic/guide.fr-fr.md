@@ -168,7 +168,7 @@ Dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager
 
 ![upgrade_hosting](images/upgrade_hosting.png){.thumbnail}
 
-Les offres [Pro](https://www.ovhcloud.com/fr/web-hosting/professional-offer/) et [Performance](https://www.ovhcloud.com/fr/web-hosting/performance-offer/) vous permettront de créer jusqu'à trois « modules en 1 clic » supplémentaires avec une base de données indépendante pour chacun d'eux. Les offres **Performance** vous permettront aussi d'activer gratuitement un serveur [Web Cloud Databases](https://www.ovhcloud.com/fr-ca/web-cloud/databases/).
+Les offres [Pro](https://www.ovhcloud.com/fr/web-hosting/professional-offer/) et [Performance](https://www.ovhcloud.com/fr/web-hosting/performance-offer/) vous permettront de créer jusqu'à trois « modules en 1 clic » supplémentaires avec une base de données indépendante pour chacun d'eux. Les offres **Performance** vous permettront aussi d'activer gratuitement un serveur [Web Cloud Databases](https://www.ovhcloud.com/fr/web-cloud/databases/).
 
 ### « Impossible de se connecter à la base de données » <a name="delete-the-module"></a>
 
@@ -232,7 +232,7 @@ Sur la page qui s'affiche, le nom du serveur à utiliser est indiqué dans l'enc
 
 ### Votre ancien site web continue de s'afficher
 
-Dans l'onglet `1-click modules` de l'hébergement web contenant votre site web, lorsque vous cliquez sur le lien de votre site web dans la colonne `Chemin`, un nouvel onglet s'ouvre avec votre site web. Le nom de domaine associé à votre installation s'affiche dans l'adresse de votre navigateur internet. Par exemple, si votre nom de domaine se nomme « domain.tld », il se peut qu'un autre nom de domaine s'affiche, ou bien une page OVHcloud standard.
+Dans l'onglet `Modules en 1 clic` de l'hébergement web contenant votre site web, lorsque vous cliquez sur le lien de votre site web dans la colonne `Chemin`, un nouvel onglet s'ouvre avec votre site web. Le nom de domaine associé à votre installation s'affiche dans l'adresse de votre navigateur internet. Par exemple, si votre nom de domaine se nomme « domain.tld », il se peut qu'un autre nom de domaine s'affiche, ou bien une page OVHcloud standard.
 
 Ce dysfonctionnement peut avoir plusieurs causes :
 
