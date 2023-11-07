@@ -111,7 +111,7 @@ Una volta terminato, sarà possibile installare un nuovo "modulo in 1 click".
 >
 > In questa situazione, è possibile salvare i dati di un solo sito Web utilizzando uno [script PHP o un comando SSH](/pages/web_cloud/web_hosting/sql_database_export).
 >
-> Per maggiori informazioni sulle operazioni da effettuare, contatta la [Community OVHcloud](https://community.ovh.com) o uno dei nostri [partner](https://partner.ovhcloud.com/it/directory/).<br>
+> Per maggiori informazioni sulle operazioni da effettuare, contatta la [Community OVHcloud](https://community.ovh.com/en/) o uno dei nostri [partner](https://partner.ovhcloud.com/it/directory/).<br>
 > Non saremo in grado di fornirti assistenza.
 >
 
@@ -129,7 +129,7 @@ Dopo aver avviato la creazione del "modulo in 1 click", hai ricevuto un’email 
 
 Questo messaggio indica che la **Cartella radice** associata al dominio contiene già uno o più file o cartelle.
 
-Per associare un dominio a un’altra directory, accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) e clicca su `Web Cloud`{.action}. Clicca su `Hosting`{.action} nella colonna di sinistra e seleziona il nome dell’hosting Web interessato. Clicca sulla scheda `Multisito`{.action}. Nella tabella che appare, clicca sul pulsante `...`{.action} a destra della riga corrispondente al tuo dominio e poi clicca su `Modifica il dominio`{.action}. Infine, inserisci il nome di una nuova **Cartella root** (verrà creata automaticamente una directory vuota sul tuo hosting Web).
+Per associare un dominio a un’altra directory, accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e clicca su `Web Cloud`{.action}. Clicca su `Hosting`{.action} nella colonna di sinistra e seleziona il nome dell’hosting Web interessato. Clicca sulla scheda `Multisito`{.action}. Nella tabella che appare, clicca sul pulsante `...`{.action} a destra della riga corrispondente al tuo dominio e poi clicca su `Modifica il dominio`{.action}. Infine, inserisci il nome di una nuova **Cartella root** (verrà creata automaticamente una directory vuota sul tuo hosting Web).
 
 ![modify_root_folder](images/modify_root_folder.png){.thumbnail}
 
@@ -157,7 +157,7 @@ In questo caso, [accedi in FTP](/pages/web_cloud/web_hosting/ftp_connection) al 
 
 > [!primary]
 >
-> Per informazioni sulla cancellazione dei dati al fine di ridurre la quantità di dati sull’hosting Web, contatta la nostra [Community di utenti](https://community.ovh.com) o i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).<br>
+> Per informazioni sulla cancellazione dei dati al fine di ridurre la quantità di dati sull’hosting Web, contatta la nostra [Community di utenti](https://community.ovh.com/en/) o i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).<br>
 > Il supporto OVHcloud non è autorizzato a fornirti assistenza.
 >
 
@@ -210,7 +210,7 @@ Se non disponi di altri database e non vuoi ordinare un piano aggiuntivo, [impor
 >
 > **Eliminare elementi dal database può causare l'interruzione del sito Web.**
 >
-> Per ulteriori informazioni, contatta la nostra [Community di utenti](https://community.ovh.com) o i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).<br>
+> Per ulteriori informazioni, contatta la nostra [Community di utenti](https://community.ovh.com/en/) o i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).<br>
 > Non saremo in grado di fornirti assistenza.
 >
 
@@ -230,7 +230,7 @@ Verifica le credenziali di accesso [accedi direttamente](/pages/web_cloud/web_cl
 
 Hai avviato l’installazione di un "modulo in 1 click" in [modalità avanzata](/pages/web_cloud/web_hosting/cms_install_1_click_modules) su un database situato su un server [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb). Questo messaggio di errore è stato ricevuto via email. Significa che il nome del database server specificato non è corretto.
 
-Per recuperare il nome del tuo database server, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), clicca su `Web Cloud`{.action}. Clicca su `Web Cloud Databases`{.action} nella colonna di sinistra e seleziona il database server interessato.
+Per recuperare il nome del tuo database server, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), clicca su `Web Cloud`{.action}. Clicca su `Web Cloud Databases`{.action} nella colonna di sinistra e seleziona il database server interessato.
 
 Nella nuova pagina, il nome del server da utilizzare è indicato nel riquadro `Informazioni di connessione`, sottosezione `SQL`, sotto la dicitura `Host Name`.
 
@@ -246,9 +246,9 @@ Questo malfunzionamento può avere diverse cause:
 
 - Il dominio è sempre associato al vecchio hosting Web. In questo caso, modifica la [zona DNS attiva](/pages/web_cloud/domains/dns_zona_edit) associata al dominio o i suoi [server DNS](/pages/web_cloud/domains/dns_server_general_information). Se la zona DNS attiva del dominio non è gestita in OVHcloud, contatta il provider DNS.
 
-### La password "Amministratore" di accesso all'"interfaccia di amministrazione" del tuo modulo in 1 click non funziona <a name="adminpassword"></a>
+### La password "Amministratore" di accesso all'"interfaccia di amministrazione" del tuo "modulo in 1 click" non funziona <a name="adminpassword"></a>
 
-In caso di rifiuto della password di accesso all’interfaccia di gestione del tuo **C**ontent **M**management **S**system (**CMS**), consulta il paragrafo "Modificare la password del tuo modulo" della nostra documentazione relativa alla [gestione del tuo modulo in 1 click](/pages/web_cloud/web_hosting/cms_manage_1_click_module).
+In caso di rifiuto della password di accesso all’interfaccia di gestione del tuo **C**ontent **M**management **S**system (**CMS**), consulta il paragrafo "Modificare la password del tuo modulo" della nostra documentazione relativa alla [gestione del tuo "modulo in 1 click"](/pages/web_cloud/web_hosting/cms_manage_1_click_module).
 
 ### Il prefisso delle tabelle del database è già utilizzato sul database
 
@@ -261,7 +261,7 @@ Rieseguire l'installazione con un prefisso di tabella o un database diverso per 
 ### I DNS del dominio non puntano verso un hosting Web OVHcloud
 
 Questo errore informa che i record DNS del nome di dominio utilizzato per il sito Web non puntano verso un hosting Web OVHcloud. Non è possibile installare un "modulo in 1 click" su un dominio che non punti a un hosting OVHcloud.
-Per risolvere il problema, modifica la zona DNS. Per maggiori informazioni sugli indirizzi IP da inserire, consulta la guida [Elenco degli indirizzi IP di cluster e hosting Web](/pages/web_cloud/web_cloud_databases/configure-database-server). Dopodiché sarà necessario [Modificare la zona DNS](/pages/web_cloud/domains/dns_zone_edit/).
+Per risolvere il problema, modifica la zona DNS. Per maggiori informazioni sugli indirizzi IP da inserire, consulta la guida [Elenco degli indirizzi IP di cluster e hosting Web](/pages/web_cloud/web_cloud_databases/configure-database-server). Dopodiché sarà necessario [Modificare la zona DNS](/pages/web_cloud/domains/dns_zone_edit).
 Se la zona DNS non è ospitata in OVHcloud, contatta il fornitore della zona DNS per richiedere di effettuare le operazioni necessarie.
 
 Una volta terminata, riavvia l'installazione di un nuovo "modulo in 1 click".

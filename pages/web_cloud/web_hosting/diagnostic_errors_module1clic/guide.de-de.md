@@ -261,7 +261,7 @@ Führen Sie die Installation mit einem anderen Tabellenpräfix oder einer andere
 ### Die DNS der Domain verweisen nicht auf ein OVHcloud Webhosting
 
 Dieser Fehler informiert Sie darüber, dass die DNS-Einträge der für Ihre Website verwendeten Domain nicht auf ein OVHcloud Webhosting verweisen. Es ist nicht möglich, ein „1-Klick-Modul“ auf einer Domain zu installieren, die nicht auf ein OVHcloud Hosting verweist.
-Um diese Situation zu beheben, bearbeiten Sie Ihre DNS-Zone. Weitere Informationen zu den einzugebenden IP-Adressen finden Sie in der Anleitung [Liste der IP-Adressen von Clustern und Webhostings](/pages/web_cloud/web_cloud_databases/configure-database-server). Danach müssen Sie [Ihre DNS-Zone bearbeiten](/pages/web_cloud/domains/dns_zone_edit/).
+Um diese Situation zu beheben, bearbeiten Sie Ihre DNS-Zone. Weitere Informationen zu den einzugebenden IP-Adressen finden Sie in der Anleitung [Liste der IP-Adressen von Clustern und Webhostings](/pages/web_cloud/web_cloud_databases/configure-database-server). Danach müssen Sie [Ihre DNS-Zone bearbeiten](/pages/web_cloud/domains/dns_zone_edit).
 Wenn Ihre DNS-Zone nicht bei OVHcloud gehostet wird, wenden Sie sich an Ihren DNS-Zonenanbieter, um die erforderlichen Schritte einzuleiten.
 
 Wenn Sie damit fertig sind, starten Sie die Installation eines neuen „1-Klick-Moduls“ neu.

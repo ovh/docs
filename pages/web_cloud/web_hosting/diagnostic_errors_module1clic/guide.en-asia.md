@@ -257,7 +257,7 @@ Retry the installation with a different table prefix or database to fix the prob
 ### The domain name DNS does not point to an OVHcloud web hosting plan
 
 This error informs you that the DNS records for the domain name used for your website do not point to an OVHcloud web hosting plan. However, you cannot install a "1-click module" on a domain that does not point to an OVHcloud hosting plan.
-To resolve this situation, you must edit your DNS zone. To find out more about the IP addresses you need to enter, read our guide [List of IP addresses for clusters and web hosting plans](/pages/web_cloud/web_cloud_databases/configure-database-server). You will then need to [Edit your DNS zone](/pages/web_cloud/domains/dns_zone_edit/).
+To resolve this situation, you must edit your DNS zone. To find out more about the IP addresses you need to enter, read our guide [List of IP addresses for clusters and web hosting plans](/pages/web_cloud/web_cloud_databases/configure-database-server). You will then need to [Edit your DNS zone](/pages/web_cloud/domains/dns_zone_edit).
 If your DNS zone is not hosted with OVHcloud, contact your DNS zone provider to have them perform the necessary actions.
 
 Once you have finished installing a new "1-click module", restart it.

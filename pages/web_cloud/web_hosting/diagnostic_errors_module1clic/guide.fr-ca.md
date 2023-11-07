@@ -257,7 +257,7 @@ Relancez l'installation avec un autre préfixe de tables ou une autre base de do
 ### Les DNS du nom de domaine ne pointent pas vers un hébergement web OVHcloud
 
 Cette erreur vous informe que les entrées DNS du nom de domaine utilisé pour votre site web ne pointent pas vers un hébergement web OVHcloud. Or il n'est pas possible d'installer un « module en 1 clic » sur un domaine qui ne pointe pas sur un hébergement OVHcloud.
-Pour résoudre cette situation, vous devez éditer votre zone DNS. Pour en savoir plus sur les adresses IP à renseigner, lisez le guide [Liste des adresses IP des clusters et hébergements web](/pages/web_cloud/web_cloud_databases/configure-database-server). Vous devrez ensuite [Éditer votre zone DNS](/pages/web_cloud/domains/dns_zone_edit/).
+Pour résoudre cette situation, vous devez éditer votre zone DNS. Pour en savoir plus sur les adresses IP à renseigner, lisez le guide [Liste des adresses IP des clusters et hébergements web](/pages/web_cloud/web_cloud_databases/configure-database-server). Vous devrez ensuite [Éditer votre zone DNS](/pages/web_cloud/domains/dns_zone_edit).
 Si votre zone DNS n’est pas hébergée chez OVHcloud, contactez votre fournisseur de zone DNS afin qu'il effectue le nécessaire.
 
 Une fois terminé, relancez l'installation d'un nouveau « module en 1 clic ».

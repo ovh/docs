@@ -32,7 +32,7 @@ Jeśli konfiguracja modułu nie zostanie przeprowadzona prawidłowo, instalacja 
 
 > [!primary]
 >
-> Tutaj znajdziesz najczęściej występujące błędy. Jeśli Twoja sytuacja różni się od przedstawionej, sprawdź nasz [FAQ dotyczący hostingu WWW] (/pages/web_cloud/web_hosting/faq-web_hosting).
+> Tutaj znajdziesz najczęściej występujące błędy. Jeśli Twoja sytuacja różni się od przedstawionej, sprawdź nasz [FAQ dotyczący hostingu WWW](/pages/web_cloud/web_hosting/faq-web_hosting).
 >
 
 ### Twoja domena nie jest proponowana podczas tworzenia "modułu za 1 kliknięciem"
@@ -64,7 +64,7 @@ Po jego zakończeniu będziesz mógł zainstalować nowy "moduł za pomocą 1 kl
 
 > [!primary]
 >
-> Przypomnę, że zachęcamy do wcześniejszego zapoznania się z naszą ofertą baz danych [start SQL] (https://www.ovhcloud.com/pl/web-hosting/options/start-sql/) oraz ofertą [Web Cloud Databases] (https://www.ovhcloud.com/pl/web-cloud/databases/).
+> Przypomnę, że zachęcamy do wcześniejszego zapoznania się z naszą ofertą baz danych [start SQL](https://www.ovhcloud.com/pl/web-hosting/options/start-sql/) oraz ofertą [Web Cloud Databases](https://www.ovhcloud.com/pl/web-cloud/databases/).
 >
 
 ### Rozwiązanie nr 2: zmień ofertę hostingową
@@ -103,7 +103,7 @@ Aby zainstalować "moduł za 1 kliknięciem" na istniejącej bazie danych, nale�
 
 Aby odnaleźć dane do logowania do bazy danych, zapoznaj się z naszym przewodnikiem [Instalacja strony WWW za pomocą modułu 1 kliknięcia (CMS)](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
 
-Jeśli posiadasz serwer [Web Cloud Databases] (/pages/web_cloud/web_cloud_databases/starting_with_clouddb), możesz utworzyć bazę danych o wybranym rozmiarze, w ramach przydzielonego miejsca na dysku.
+Jeśli posiadasz serwer [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb), możesz utworzyć bazę danych o wybranym rozmiarze, w ramach przydzielonego miejsca na dysku.
 
 Po jego zakończeniu będziesz mógł zainstalować nowy "moduł za pomocą 1 kliknięcia".
 
@@ -111,7 +111,7 @@ Po jego zakończeniu będziesz mógł zainstalować nowy "moduł za pomocą 1 kl
 >
 > W takiej sytuacji można wykonać kopię zapasową danych pojedynczej strony WWW za pomocą [skryptu PHP lub komendy SSH](/pages/web_cloud/web_hosting/sql_database_export).
 >
-> W przypadku pytań dotyczących wymaganych czynności skontaktuj się z [społecznością OVHcloud] (https://community.ovh.com) lub jednym z [partnerów](https://partner.ovhcloud.com/fr/directory/).<br>
+> W przypadku pytań dotyczących wymaganych czynności skontaktuj się z [społecznością OVHcloud](https://community.ovh.com/en/) lub jednym z [partnerów](https://partner.ovhcloud.com/fr/directory/).<br>
 > Nie będziemy w stanie udzielić Ci pomocy w tej sprawie.
 >
 
@@ -157,7 +157,7 @@ W takiej sytuacji [zaloguj się przez FTP](/pages/web_cloud/web_hosting/ftp_conn
 
 > [!primary]
 >
-> Jeśli masz pytania dotyczące usuwania danych, aby zmniejszyć ilość danych przechowywanych na Twoim hostingu, skontaktuj się z [społecznością użytkowników](https://community.ovh.com) lub z [partnerami OVHcloud](https://partner.ovhcloud.com/fr/directory/).<br>
+> Jeśli masz pytania dotyczące usuwania danych, aby zmniejszyć ilość danych przechowywanych na Twoim hostingu, skontaktuj się z [społecznością użytkowników](https://community.ovh.com/en/) lub z [partnerami OVHcloud](https://partner.ovhcloud.com/fr/directory/).<br>
 > Pomoc OVHcloud nie jest upoważniona do udzielania wsparcia w tym zakresie.
 >
 
@@ -165,7 +165,7 @@ W takiej sytuacji [zaloguj się przez FTP](/pages/web_cloud/web_hosting/ftp_conn
 
 > [!primary]
 >
-> Zapoznaj się z porównaniem naszych ofert [pakiety hostingowe] (https://www.ovhcloud.com/pl/web-hosting/).
+> Zapoznaj się z porównaniem naszych ofert [pakiety hostingowe](https://www.ovhcloud.com/pl/web-hosting/).
 >
 
 [Panel klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/pl/&ovhSubsidiary=pl), przejdź do sekcji `Web Cloud`{.action}. Kliknij opcję `Hosting`{.action}, a następnie wybierz odpowiedni hosting. Na stronie, która się wyświetla w sekcji `Abonament` - `Oferta`, kliknij na przycisk`...`{.action} `Zmień ofertę`{.action}:
@@ -210,7 +210,7 @@ Jeśli nie dysponujesz innymi bazami danych i nie chcesz zamówić pakietu dodat
 >
 > **Usunięcie elementów z bazy danych może spowodować przerwę w działaniu witryny.**
 >
-> W przypadku dodatkowych pytań skontaktuj się z [społecznością użytkowników](https://community.ovh.com) lub z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).<br>
+> W przypadku dodatkowych pytań skontaktuj się z [społecznością użytkowników](https://community.ovh.com/en/) lub z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).<br>
 > Nie będziemy w stanie udzielić Ci pomocy w tej sprawie.
 >
 
@@ -220,7 +220,7 @@ Jeśli nie dysponujesz innymi bazami danych i nie chcesz zamówić pakietu dodat
 
 Rozpoczęto instalację "modułu za 1 kliknięciem" w [trybie zaawansowanym](/pages/web_cloud/web_hosting/cms_install_1_click_modules) w bazie danych znajdującej się na serwerze [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb). Ten komunikat o błędzie został wysłany na e-mail. Oznacza to, że użytkownik wskazany podczas instalacji nie ma wystarczających uprawnień do bazy danych lub że podane dane logowania są nieprawidłowe.
 
-W tej sytuacji najpierw zmodyfikuj odpowiednie uprawnienia [użytkownika] (/pages/web_cloud/web_cloud_databases/create-db-and-user-on-db-server), aby użytkownik dysponował uprawnieniami **Administrator** lub **Odczyt/zapis** dla bazy danych.
+W tej sytuacji najpierw zmodyfikuj odpowiednie uprawnienia [użytkownika](/pages/web_cloud/web_cloud_databases/create-db-and-user-on-db-server), aby użytkownik dysponował uprawnieniami **Administrator** lub **Odczyt/zapis** dla bazy danych.
 
 Sprawdź również dane logowania, logując się [bezpośrednio](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server) do Twojego serwera baz danych, a następnie uruchom ponownie instalację "modułu za pomocą 1 kliknięcia".
 
@@ -248,7 +248,7 @@ Taka nieprawidłowość może mieć kilka przyczyn:
 
 ### Hasło "Administrator" dostępu do "interfejsu administracyjnego" modułu za pomocą 1 kliknięcia nie działa <a name="adminpassword"></a>
 
-W przypadku odrzucenia aktualnego hasła dostępu do interfejsu administracyjnego użytkownika **C**ontent **M**management **S**system (**CMS**), należy zapoznać się z sekcją "Zmiana hasła do modułu" w dokumentacji dotyczącej zarządzania [modułem za pomocą 1 kliknięcia] (/pages/web_cloud/web_hosting/cms_manage_1_click_module).
+W przypadku odrzucenia aktualnego hasła dostępu do interfejsu administracyjnego użytkownika **C**ontent **M**management **S**system (**CMS**), należy zapoznać się z sekcją "Zmiana hasła do modułu" w dokumentacji dotyczącej zarządzania [modułem za pomocą 1 kliknięcia](/pages/web_cloud/web_hosting/cms_manage_1_click_module).
 
 ### Prefiks tabel w bazie danych jest już używany w bazie danych
 
@@ -261,7 +261,7 @@ Uruchom ponownie instalację, używając innego prefiksu tabel lub bazy danych, 
 ### Serwery DNS domeny nie wskazują na hosting WWW OVHcloud
 
 Ten błąd informuje, że wpisy DNS domeny używanej przez Twoją stronę WWW nie wskazują na hosting WWW OVHcloud. Nie można zainstalować "modułu za 1 kliknięciem" dla domeny, która nie wskazuje na hosting OVHcloud.
-Aby rozwiązać ten problem, edytuj strefę DNS. Aby dowiedzieć się więcej o adresach IP, które należy podać, zapoznaj się z przewodnikiem [Lista adresów IP klastrów i hostingów WWW](/pages/web_cloud/web_cloud_databases/configure-database-server). Następnie [Edytuj strefę DNS] (/pages/web_cloud/domains/dns_zone_edit/).
+Aby rozwiązać ten problem, edytuj strefę DNS. Aby dowiedzieć się więcej o adresach IP, które należy podać, zapoznaj się z przewodnikiem [Lista adresów IP klastrów i hostingów WWW](/pages/web_cloud/web_cloud_databases/configure-database-server). Następnie [Edytuj strefę DNS](/pages/web_cloud/domains/dns_zone_edit).
 Jeśli Twoja strefa DNS nie jest hostowana w OVHcloud, skontaktuj się z dostawcą strefy DNS, aby wprowadził niezbędne zmiany.
 
 Po zakończeniu rozpocznij ponownie instalację nowego "modułu za pomocą 1 kliknięcia".
