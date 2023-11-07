@@ -37,11 +37,11 @@ Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?actio
 
 Depuis l'onglet `Informations générales`, vous trouverez le lien d'accès à phpMyAdmin dans le cadre **« Administration de la base de données »** sous la mention « Interface utilisateur ».
 
-![private-sql](images/private-sql-phpma01.png){.thumbnail}
+![web-cloud-databases](images/private-sql-phpma01.png){.thumbnail}
 
 Vous arrivez sur la page de connexion de phpMyAdmin.
 
-![private-sql](images/pma-login-web-cloud-db.png){.thumbnail}
+![web-cloud-databases](images/pma-login-web-cloud-db.png){.thumbnail}
 
 Renseignez les éléments suivants pour vous connecter à votre base de données :
 
@@ -58,7 +58,7 @@ Renseignez les éléments suivants pour vous connecter à votre base de données
 
 Si la connexion aboutit, la page suivante de phpMyAdmin apparaîtra.
 
-![private-sql](images/pma-main-page-web-cloud-db.png){.thumbnail}
+![web-cloud-databases](images/pma-main-page-web-cloud-db.png){.thumbnail}
 
 > [!warning]
 >

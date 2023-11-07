@@ -41,11 +41,11 @@ Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotom
 
 W zakładce `Informacje ogólne` link dostępowy do phpMyAdmin znajduje się w polu **"Administrowanie bazą danych"** pod napisem " Panel użytkownika ".
 
-![private-sql](images/private-sql-phpma01.png){.thumbnail}
+![web-cloud-databases](images/private-sql-phpma01.png){.thumbnail}
 
 Zostaniesz przekierowany na stronę logowania phpMyAdmin.
 
-![private-sql](images/pma-login-web-cloud-db.png){.thumbnail}
+![web-cloud-databases](images/pma-login-web-cloud-db.png){.thumbnail}
 
 Aby zalogować się do bazy danych, wprowadź następujące informacje:
 
@@ -62,7 +62,7 @@ Aby zalogować się do bazy danych, wprowadź następujące informacje:
 
 Jeśli połączenie zakończy się pomyślnie, wyświetli się następna strona phpMyAdmin.
 
-![private-sql](images/pma-main-page-web-cloud-db.png){.thumbnail}
+![web-cloud-databases](images/pma-main-page-web-cloud-db.png){.thumbnail}
 
 > [!warning]
 >
