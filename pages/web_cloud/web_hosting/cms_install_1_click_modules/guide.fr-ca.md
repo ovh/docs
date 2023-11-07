@@ -191,7 +191,7 @@ Si vous désirez obtenir de l'aide concernant les fonctionnalités de votre CMS,
 
 [Gestion d’une base de données depuis un hébergement mutualisé](/pages/web_cloud/web_hosting/sql_create_database){.external}
 
-Découvrez nos [offres Web Cloud Databases](https://www.ovh.com/fr/cloud/cloud-databases/){.external}
+Découvrez nos [offres Web Cloud Databases](https://www.ovhcloud.com/fr-ca/web-cloud/databases/){.external}
 
 [Gérer votre CMS](/pages/web_cloud/web_hosting/cms_manage_1_click_module)
 
