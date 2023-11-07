@@ -39,8 +39,8 @@ Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action
 
 |Scénario|Solution|
 |---|---|
-|Le domaine ou le sous-domaine lié au site web que vous souhaitez créer n'apparaît pas dans le tableau présent dans l'onglet `Multisite`{.action}.|Ajoutez votre domaine en suivant [ces indications](/pages/web_cloud/web_hosting/multisites_configure_multisite#etape-2-ajouter-un-domaine-ou-un-sous-domaine).|
-|Le nom de domaine a été supprimé du multisite sans action de votre part.|Si votre domaine ou sa [Zone DNS](/pages/web_cloud/domains/dns_zone_edit#comprendre-la-notion-de-dns) ne sont pas gérés depuis votre compte OVHcloud, ajoutez votre domaine depuis l'onglet `Multisite`{.action} en suivant [ce guide](/pages/web_cloud/web_hosting/multisites_configure_multisite#etape-22-ajouter-un-nom-de-domaine-externe).|
+|Le domaine ou le sous-domaine lié au site web que vous souhaitez créer n'apparaît pas dans le tableau présent dans l'onglet `Multisite`{.action}.|Ajoutez votre domaine en suivant [ces indications](/pages/web_cloud/web_hosting/multisites_configure_multisite).|
+|Le nom de domaine a été supprimé du multisite sans action de votre part.|Si votre domaine ou sa [Zone DNS](/pages/web_cloud/domains/dns_zone_edit) ne sont pas gérés depuis votre compte OVHcloud, ajoutez votre domaine depuis l'onglet `Multisite`{.action} en suivant [ce guide](/pages/web_cloud/web_hosting/multisites_configure_multisite).|
 
 ### « Une erreur s'est produite lors du chargement des informations (You need at least one free database) »
 
@@ -70,7 +70,7 @@ Une fois terminé, vous serez en mesure d'installer un nouveau « module en 1 cl
 > Retrouvez le comparatif de nos différentes [offres d'hébergement](https://www.ovhcloud.com/fr-ca/web-hosting/).
 >
 
-Dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), cliquez sur `Web Cloud`{.action}, puis sur `Hébergements`{.action}. Choisissez l'hébergement concerné, puis cliquez sur `Changer d'offre` dans la partie `Abonnement` - `Offre` :
+Dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), cliquez sur `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action}, puis sélectionnez l'hébergement web concerné. Sur la page qui s'affiche dans la partie `Abonnement` - `Offre`, cliquez sur le bouton `...`{.action} `Changer d'offre`{.action} :
 
 ![upgrade_hosting](images/upgrade_hosting.png){.thumbnail}
 
@@ -78,7 +78,7 @@ Les offres [Pro](https://www.ovhcloud.com/fr-ca/web-hosting/professional-offer/)
 
 Une fois terminé, vous serez en mesure d'installer un nouveau « module en 1 clic ».
 
-#### Solution n°3 : supprimer une base de données inutilisée <a name="supprimer-la-base"></a>
+#### Solution n°3 : supprimer une base de données inutilisée <a name="delete-the-database"></a>
 
 > [!warning]
 >
@@ -95,9 +95,9 @@ Une fois terminé, vous serez en mesure d'installer un nouveau « module en 1 cl
 
 #### Solution n°4 : installer votre « module en 1 clic » sur une base de données déjà utilisée
 
-Pour installer votre « module en 1 clic » sur une base de données déjà existante, vous devrez utiliser la fonctionnalité d'installation en [mode avancé](/pages/web_cloud/web_hosting/cms_install_1_click_modules#installation-avancee-dun-module) d'un nouveau « module en 1 clic ».
+Pour installer votre « module en 1 clic » sur une base de données déjà existante, vous devrez utiliser la fonctionnalité d'installation en [mode avancé](/pages/web_cloud/web_hosting/cms_install_1_click_modules) d'un nouveau « module en 1 clic ».
 
-Pour retrouver les identifiants de votre base de données, consultez notre guide [Installer votre site web avec un « module en 1 clic » (CMS)](/pages/web_cloud/web_hosting/cms_install_1_click_modules#configurer-le-module).
+Pour retrouver les identifiants de votre base de données, consultez notre guide [Installer votre site web avec un « module en 1 clic » (CMS)](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
 
 Si vous possédez un serveur [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb), vous pouvez créer une base de données de la taille de votre choix, dans la limite de l'espace disque allouée.
 
@@ -105,7 +105,7 @@ Une fois terminé, vous serez en mesure d'installer un nouveau « module en 1 cl
 
 > [!primary]
 >
-> Dans cette situation, vous pourrez sauvegarder les données d'un seul site web en utilisant un [script PHP ou une commande SSH](/pages/web_cloud/web_hosting/sql_database_export#recuperer-une-sauvegarde-depuis-linterface-web-phpmyadmin).
+> Dans cette situation, vous pourrez sauvegarder les données d'un seul site web en utilisant un [script PHP ou une commande SSH](/pages/web_cloud/web_hosting/sql_database_export).
 >
 > Pour toute question sur les manipulations à réaliser, contactez la [communauté OVHcloud](https://community.ovh.com) ou l'un de nos [partenaires](https://partner.ovhcloud.com/fr-ca/directory/).<br>
 > Nous ne serons pas en mesure de vous apporter une assistance sur ce sujet.
@@ -115,7 +115,7 @@ Une fois terminé, vous serez en mesure d'installer un nouveau « module en 1 cl
 
 ![url-cluster](images/url-cluster.png){.thumbnail}
 
-Après avoir réalisé toutes les sauvegardes nécessaires, [supprimez votre « module en 1 clic »](#supprimer-le-module), puis sa [base de données](#supprimer-la-base). Relancez ensuite l'installation de votre « module en 1 clic » sur le nom de domaine souhaité.
+Après avoir réalisé toutes les sauvegardes nécessaires, [supprimez votre « module en 1 clic »](#delete-the-module), puis sa [base de données](#delete-the-database). Relancez ensuite l'installation de votre « module en 1 clic » sur le nom de domaine souhaité.
 
 ### « Le répertoire d'installation n'est pas vide »
 
@@ -149,7 +149,7 @@ Ce message indique que l'[espace de stockage FTP](/pages/web_cloud/web_hosting/f
 
 Dans ce cas, supprimez (ou déplacez) vos données pour installer un nouveau « [module en 1 clic](/pages/web_cloud/web_hosting/cms_install_1_click_modules) ».
 
-Dans cette situation, [connectez-vous en FTP](/pages/web_cloud/web_hosting/ftp_connection) à votre hébergement web, [sauvegardez localement](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide#transfert-des-fichiers) vos données, puis supprimez les fichiers qui ne sont pas nécessaires au fonctionnement de votre site web.
+Dans cette situation, [connectez-vous en FTP](/pages/web_cloud/web_hosting/ftp_connection) à votre hébergement web, [sauvegardez localement](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide) vos données, puis supprimez les fichiers qui ne sont pas nécessaires au fonctionnement de votre site web.
 
 > [!primary]
 >
@@ -164,19 +164,19 @@ Dans cette situation, [connectez-vous en FTP](/pages/web_cloud/web_hosting/ftp_c
 > Retrouvez le comparatif de nos différentes [offres d'hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/).
 >
 
-Dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), rendez-vous dans la partie `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action}, puis sélectionnez l'hébergement web concerné. Sur la page qui s'affiche, cliquez sur `Changer d'offre` dans la partie `Abonnement` - `Offre` :
+Dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), rendez-vous dans la partie `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action}, puis sélectionnez l'hébergement web concerné. Sur la page qui s'affiche dans la partie `Abonnement` - `Offre`, cliquez sur le bouton `...`{.action} `Changer d'offre`{.action} :
 
 ![upgrade_hosting](images/upgrade_hosting.png){.thumbnail}
 
 Les offres [Pro](https://www.ovhcloud.com/fr-ca/web-hosting/professional-offer/) et [Performance](https://www.ovhcloud.com/fr-ca/web-hosting/performance-offer/) vous permettront de créer jusqu'à trois « modules en 1 clic » supplémentaires avec une base de données indépendante pour chacun d'eux. Les offres **Performance** vous permettront aussi d'activer gratuitement un serveur [Web Cloud Databases](https://www.ovhcloud.com/fr-ca/web-cloud/databases/).
 
-### « Impossible de se connecter à la base de données » <a name="supprimer-le-module"></a>
+### « Impossible de se connecter à la base de données » <a name="delete-the-module"></a>
 
 ![wrong_id_database](images/wrong_id_database.png){.thumbnail}
 
 Après avoir lancé l'installation de votre « module en 1 clic » en mode avancé, vous avez reçu un e-mail indiquant que votre « module en 1 clic » ne peut pas se connecter à la base de données indiquée.
 
-Vous devez donc vérifier les identifiants de votre base de données. Pour les retrouver, consultez ce [guide](/pages/web_cloud/web_hosting/cms_install_1_click_modules#configurer-le-module).
+Vous devez donc vérifier les identifiants de votre base de données. Pour les retrouver, consultez ce [guide](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
 
 Supprimez ensuite votre « module en 1 clic ». Pour cela, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), puis rendez-vous dans la partie `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} dans la colonne de gauche, puis sélectionnez l'hébergement Web concerné. Sur la page qui s'affiche, cliquez sur l'onglet `Modules en 1 clic`{.action}. Dans le tableau qui apparaît, cliquez sur le bouton `...`{.action} à droite de la ligne correspondant à votre nom de domaine, puis cliquez sur `Supprimer le module`{.action}.
 
@@ -198,9 +198,9 @@ Puis relancez l'installation d'un nouveau « module en 1 clic ».
 
 Ce message apparaît exclusivement lors de l'installation d'un « module en 1 clic » en **mode avancé**. Votre base de données ne peut plus être modifiée, car la quantité de données qu'elle contient dépasse la limite autorisée. Dans ce cas, votre base de données est bloquée en lecture seule.
 
-Dans cette situation, installez votre « module en 1 clic » en passant par le [mode « simple »](/pages/web_cloud/web_hosting/cms_install_1_click_modules#installation-simple-dun-module) ou choisissez une autre base de données lors de son installation en mode avancé. Si besoin, commandez une [offre de bases de données](https://www.ovhcloud.com/fr-ca/web-hosting/options/start-sql/) complémentaire.
+Dans cette situation, installez votre « module en 1 clic » en passant par le [mode « simple »](/pages/web_cloud/web_hosting/cms_install_1_click_modules) ou choisissez une autre base de données lors de son installation en mode avancé. Si besoin, commandez une [offre de bases de données](https://www.ovhcloud.com/fr-ca/web-hosting/options/start-sql/) complémentaire.
 
-Si vous ne disposez pas d'autres bases de données et que vous ne souhaitez pas commander une offre complémentaire, [importez localement une copie de votre base](/pages/web_cloud/web_hosting/sql_database_export#en-pratique), puis supprimez les données inutiles.
+Si vous ne disposez pas d'autres bases de données et que vous ne souhaitez pas commander une offre complémentaire, [importez localement une copie de votre base](/pages/web_cloud/web_hosting/sql_database_export), puis supprimez les données inutiles.
 
 > [!warning]
 >
@@ -214,17 +214,17 @@ Si vous ne disposez pas d'autres bases de données et que vous ne souhaitez pas 
 
 ![cant_connect](images/cant_connect.png){.thumbnail}
 
-Vous avez lancé l'installation d'un « module en 1 clic » en [mode avancé](/pages/web_cloud/web_hosting/cms_install_1_click_modules#installation-avancee-dun-module) sur une base de données située sur un serveur [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb). Vous avez reçu ce message d'erreur par e-mail. Il signifie que l'utilisateur indiqué lors de l'installation ne possède pas les droits suffisants sur la base de données ou que les identifiants indiqués sont incorrects.
+Vous avez lancé l'installation d'un « module en 1 clic » en [mode avancé](/pages/web_cloud/web_hosting/cms_install_1_click_modules) sur une base de données située sur un serveur [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb). Vous avez reçu ce message d'erreur par e-mail. Il signifie que l'utilisateur indiqué lors de l'installation ne possède pas les droits suffisants sur la base de données ou que les identifiants indiqués sont incorrects.
 
-Dans cette situation, modifiez tout d'abord les [droits de l'utilisateur](/pages/web_cloud/web_cloud_databases/create-db-and-user-on-db-server#gerer-les-droits-des-utilisateurs) concerné, afin qu'il dispose des droits **Administrateur** ou en **Lecture/écriture** sur la base de données.
+Dans cette situation, modifiez tout d'abord les [droits de l'utilisateur](/pages/web_cloud/web_cloud_databases/create-db-and-user-on-db-server) concerné, afin qu'il dispose des droits **Administrateur** ou en **Lecture/écriture** sur la base de données.
 
-Vérifiez également ses identifiants en vous [connectant directement](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server#en-pratique) à votre serveur de bases de données, puis relancez l'installation de votre « module en 1 clic ».
+Vérifiez également ses identifiants en vous [connectant directement](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server) à votre serveur de bases de données, puis relancez l'installation de votre « module en 1 clic ».
 
 ### « Can't connect to database 'xxxxxxxx' at 'xxxxxxxx.mysql.db'. The error is: Unknown MySQL server host 'xxxxxxxx.mysql.db' »
 
 ![cant_connect_server](images/cant_connect_server.png){.thumbnail}
 
-Vous avez lancé l'installation d'un « module en 1 clic » en [mode avancé](/pages/web_cloud/web_hosting/cms_install_1_click_modules#installation-avancee-dun-module) sur une base de données située sur un serveur [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb). Vous avez reçu ce message d'erreur par e-mail. Il signifie que le nom de serveur de bases de données que vous avez indiqué est incorrect.
+Vous avez lancé l'installation d'un « module en 1 clic » en [mode avancé](/pages/web_cloud/web_hosting/cms_install_1_click_modules) sur une base de données située sur un serveur [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb). Vous avez reçu ce message d'erreur par e-mail. Il signifie que le nom de serveur de bases de données que vous avez indiqué est incorrect.
 
 Pour retrouver le nom de votre serveur de bases de données , connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), puis rendez-vous dans la partie `Web Cloud`{.action}. Cliquez sur `Web Cloud Databases`{.action} dans la colonne de gauche, puis sélectionnez le serveur de bases de données concerné.
 
@@ -240,11 +240,11 @@ Ce dysfonctionnement peut avoir plusieurs causes :
 
 - Si vous avez effectué récemment un changement dans la [zone DNS active](/pages/web_cloud/domains/dns_server_general_information)/[serveurs DNS](/pages/web_cloud/domains/dns_zone_edit) de votre nom de domaine ou un [transfert de nom de domaine](/pages/web_cloud/domains/transfer_incoming_generic_domain). Patientez jusqu'à ce que ces opérations soient finalisées (4-24 heures pour une modification dans la zone DNS et 24-48 heures pour une modification des serveurs DNS). N'oubliez pas également de redémarrer vos appareils (PC, smartphone, box, etc.) et à vider le cache de votre navigateur internet.
 
-- Votre nom de domaine est toujours relié à votre ancien hébergement web. Modifiez dans ce cas la [zone DNS active](/pages/web_cloud/domains/dns_zone_edit#editer-la-zone-dns-ovhcloud-de-votre-nom-domaine) associée à votre nom de domaine ou ses [serveurs DNS](/pages/web_cloud/domains/dns_server_general_information#modifier-les-serveurs-dns). Si la zone DNS active de votre nom de domaine n'est pas gérée chez OVHcloud, contactez votre fournisseur DNS à ce sujet.
+- Votre nom de domaine est toujours relié à votre ancien hébergement web. Modifiez dans ce cas la [zone DNS active](/pages/web_cloud/domains/dns_zone_edit) associée à votre nom de domaine ou ses [serveurs DNS](/pages/web_cloud/domains/dns_server_general_information). Si la zone DNS active de votre nom de domaine n'est pas gérée chez OVHcloud, contactez votre fournisseur DNS à ce sujet.
 
 ### Le mot de passe « Administrateur » d'accès à « l'interface d'administration » de votre module en 1 clic ne fonctionne pas <a name="adminpassword"></a>
 
-En cas de rejet de votre mot de passe actuel d'accès à l’interface d’administration de votre **C**ontent **M**anagement **S**ystem (**CMS**), consultez le paragraphe « Modifier le mot de passe de votre module » de notre documentation sur la [gestion de votre module en 1 clic](/pages/web_cloud/web_hosting/cms_manage_1_click_module#password-change).
+En cas de rejet de votre mot de passe actuel d'accès à l’interface d’administration de votre **C**ontent **M**anagement **S**ystem (**CMS**), consultez le paragraphe « Modifier le mot de passe de votre module » de notre documentation sur la [gestion de votre module en 1 clic](/pages/web_cloud/web_hosting/cms_manage_1_click_module).
 
 ### Le préfixe des tables de votre base de données est déjà utilisé sur votre base de données
 
