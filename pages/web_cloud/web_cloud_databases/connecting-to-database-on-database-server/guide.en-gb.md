@@ -1,7 +1,7 @@
 ---
 title: "Connecting to a database on your database server"
 excerpt: "Find out how to log in to your database"
-updated: 2023-10-31
+updated: 2023-11-07
 ---
 
 ## Objective
@@ -18,7 +18,7 @@ You can access your database’s content via an interface. There are several way
 ## Instructions
 
 > [!primary]
-
+>
 > Please note that the [Web Cloud Databases](https://www.ovh.co.uk/cloud/cloud-databases/){.external} solutions do not give access to the database management system, but to the databases hosted on it.
 > <br> - Please note that there is no "root" access.
 > <br> - Generic SQL commands work normally, and software such as HeidiSQL, SQuirreL or Adminer is fully compatible.
@@ -45,9 +45,9 @@ You will land on the phpMyAdmin login page.
 
 Enter the following information to connect to your database:
 
-- **Server:** Enter the *hostname* of your database server, followed by its *port number*. The *port number* must be separated from the *host name* by a “**space**” or “**:**”. For example, if the *hostname* is **aaXXXXX-XXX.eu.clouddb.ovh.net** and the *port number* is **12345**, then you would type **aaXXXXX-XXX.eu.clouddb.ovh.net:12345** or **aaXXXXX-XXX.eu.clouddb.ovh.net 12345**. To find the *hostname* and *port number* of your Web Cloud Databases server, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, then go to the `Web Cloud` section. Click on the `Web Cloud Databases`{.action} tab in the left-hand column, then select the name of your database server. On the `General information` page that appears, you will find the *hostname* and the *port number* in the `Login information` box.
+- **Server:** Enter the *hostname* of your database server, followed by its *port number*. The *port number* must be separated from the *hostname* by a “**space**” or “**:**”. For example, if the *hostname* is **aaXXXXX-XXX.eu.clouddb.ovh.net** and the *port number* is **12345**, then you would type **aaXXXXX-XXX.eu.clouddb.ovh.net:12345** or **aaXXXXX-XXX.eu.clouddb.ovh.net 12345**. To find the *hostname* and *port number* of your Web Cloud Databases server, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, then go to the `Web Cloud` section. Click on the `Web Cloud Databases`{.action} tab in the left-hand column, then select the name of your database server. On the `General information` page that appears, you will find the *hostname* and the *port number* in the `Login information` box.
 
-- **Username:** Enter the *username* of your database server. To find the *username* of your database, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external} and go to the `Web Cloud` section. Click on the `Web Cloud Databases`{.action} tab in the left-hand column, then select the name of your database server. On the page that opens, click on the `Users and rights`{.action} tab. There you will find a table listing all of the users created on your Web Cloud Databases solution.
+- **User:** Enter the *username* of your database server. To find the *username* of your database, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external} and go to the `Web Cloud` section. Click on the `Web Cloud Databases`{.action} tab in the left-hand column, then select the name of your database server. On the page that opens, click on the `Users and rights`{.action} tab. There you will find a table listing all of the users created on your Web Cloud Databases solution.
 
 - **Password:** Enter the *password* associated with the *username* concerned. If you do not have the *password* associated with this *username*, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, then go to the `Web Cloud` section. Click on the `Web Cloud Databases`{.action} tab in the left-hand column, then select the name of your database server. On the page that opens, click on the `Users and rights`{.action} tab. Click the `...`{.action} button to the right of the user concerned to `Change password`{.action}.
 
