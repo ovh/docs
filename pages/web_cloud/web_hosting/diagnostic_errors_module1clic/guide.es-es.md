@@ -29,3 +29,17 @@ No obstante, si la configuración de estos últimos no se realiza correctamente,
 - Haber utilizado la funcionalidad "[Módulo en un clic](/pages/web_cloud/web_hosting/cms_install_1_click_modules)" para crear un nuevo sitio web.
 
 ## Procedimiento
+
+
+
+## Más información <a name="go-further"></a>
+
+[Instalar su sitio web con los módulos en un clic](/pages/web_cloud/web_hosting/cms_install_1_click_modules)
+
+[Problemas recurrentes al utilizar un programa FTP](/pages/web_cloud/web_hosting/ftp_recurring_ftp_problems)
+ 
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
+ 
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es-es/support-levels/).
+ 
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

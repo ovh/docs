@@ -29,3 +29,17 @@ Tuttavia, se la configurazione non viene effettuata correttamente, l’installaz
 - Aver utilizzato la funzionalità "[Modulo in 1 click](/pages/web_cloud/web_hosting/cms_install_1_click_modules)" per creare un nuovo sito Web.
 
 ## Procedura
+
+
+
+## Per saperne di più <a name="go-further"></a>
+
+[Installa il tuo sito con i moduli in 1 click](/pages/web_cloud/web_hosting/cms_install_1_click_modules)
+
+[Problemi ricorrenti nell'utilizzo di un software FTP](/pages/web_cloud/web_hosting/ftp_recurring_ftp_problems)
+ 
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
+ 
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
+ 
+Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.
