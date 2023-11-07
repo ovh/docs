@@ -12,14 +12,14 @@ Il est possible de consulter le contenu de votre base de données via une interf
 
 ## Prérequis
 
-- Disposer d'une [instance Web Cloud Databases](https://www.ovh.com/fr/cloud/cloud-databases/){.external} (incluse dans une offre d'[hébergement web Performance](https://www.ovhcloud.com/fr/web-hosting/)).
+- Disposer d'une [instance Web Cloud Databases](https://www.ovhcloud.com/fr/web-cloud/databases/){.external} (incluse dans une offre d'[hébergement web Performance](https://www.ovhcloud.com/fr/web-hosting/)).
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 
 ## En pratique
 
 > [!primary]
 >
-> Il est à noter que les offres [Web Cloud Databases](https://www.ovh.com/fr/cloud-databases){.external} ne donnent pas accès au système de gestion de base de données, mais aux bases de données hébergées sur celui-ci. 
+> Il est à noter que les offres [Web Cloud Databases](https://www.ovhcloud.com/fr/web-cloud/databases/){.external} ne donnent pas accès au système de gestion de base de données, mais aux bases de données hébergées sur celui-ci. 
 > <br> - Il n'y a pas d'accès super utilisateur « root ». 
 > <br> - Les commandes SQL génériques fonctionnent normalement, et les logiciels de type HeidiSQL, SQuirreL SQL ou Adminer sont pleinement compatibles.
 > 
@@ -37,11 +37,11 @@ Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?actio
 
 Depuis l'onglet `Informations générales`, vous trouverez le lien d'accès à phpMyAdmin dans le cadre **« Administration de la base de données »** sous la mention « Interface utilisateur ».
 
-![private-sql](images/private-sql-phpma01.png){.thumbnail}
+![web-cloud-databases](images/private-sql-phpma01.png){.thumbnail}
 
 Vous arrivez sur la page de connexion de phpMyAdmin.
 
-![private-sql](images/pma-login-web-cloud-db.png){.thumbnail}
+![web-cloud-databases](images/pma-login-web-cloud-db.png){.thumbnail}
 
 Renseignez les éléments suivants pour vous connecter à votre base de données :
 
@@ -58,7 +58,7 @@ Renseignez les éléments suivants pour vous connecter à votre base de données
 
 Si la connexion aboutit, la page suivante de phpMyAdmin apparaîtra.
 
-![private-sql](images/pma-main-page-web-cloud-db.png){.thumbnail}
+![web-cloud-databases](images/pma-main-page-web-cloud-db.png){.thumbnail}
 
 > [!warning]
 >
@@ -180,9 +180,8 @@ Vous êtes maintenant bien connecté à votre base de données :
 
 ## Aller plus loin
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
-
