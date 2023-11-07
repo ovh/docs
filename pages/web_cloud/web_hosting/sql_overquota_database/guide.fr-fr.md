@@ -120,7 +120,7 @@ Une fois que vous avez déterminé si le contenu de vos tables est nécessaire o
 
 Vous devrez basculer votre base de données sur une base de données plus volumineuse.
 
-Consultez notre offre de bases de données [Web Cloud Databasess](https://www.ovh.com/fr/cloud-databases/) pour choisir votre nouveau service de base de données. 
+Consultez notre offre de bases de données [Web Cloud Databasess](https://www.ovhcloud.com/fr/web-cloud/databases/) pour choisir votre nouveau service de base de données. 
 
 Nous recommandons cette offre pour les bases de données volumineuses.
 
