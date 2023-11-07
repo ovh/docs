@@ -16,7 +16,7 @@ W wyniku błędu bazy danych musisz mieć możliwość przywrócenia kopii zapas
 
 ## Wymagania początkowe
 
-- Posiadanie [instancji Web Cloud Databases](https://www.ovh.com/pl/cloud/cloud-databases/) (zawartej w ofercie[hostingu www Performance](https://www.ovhcloud.com/pl/web-hosting/).
+- Posiadanie [instancji Web Cloud Databases](https://www.ovhcloud.com/pl/web-cloud/databases/) (zawartej w ofercie[hostingu www Performance](https://www.ovhcloud.com/pl/web-hosting/).
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 
 ## W praktyce
