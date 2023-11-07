@@ -21,3 +21,11 @@ No obstante, si la configuración de estos últimos no se realiza correctamente,
 >
 > Esta guía le ayudará a realizar las tareas más habituales. No obstante, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/directory/) o con el editor del servicio. Nosotros no podremos asistirle. Para más información, consulte la sección "[Más información](#go-further)" de esta guía.
 >
+
+## Requisitos
+
+- Tener contratado un [plan de hosting](https://www.ovhcloud.com/es-es/web-hosting/) compatible.
+- Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
+- Haber utilizado la funcionalidad "[Módulo en un clic](/pages/web_cloud/web_hosting/cms_install_1_click_modules)" para crear un nuevo sitio web.
+
+## Procedimiento
