@@ -80,7 +80,7 @@ Si vous possédez déjà une base de données de destination, choisissez d'abord
 
 #### Choix 1 - Copier vers une base de données
 
-Vous venez de sélectionner « Base de données ». Deux listes déroulantes sont affichées. Cliquez sur la première puis sélectionnez l’hébergement sur lequel se trouve votre base de données Start SQL de destination. Une fois l’hébergement sélectionné, cliquez sur la deuxième liste déroulante pour choisir la base de données Start SQL de destination.
+Vous venez de sélectionner `Copier vers une base de données`{.action}. Deux listes déroulantes sont affichées. Cliquez sur la première puis sélectionnez l’hébergement web sur lequel se trouve votre base de données Start SQL de destination. Une fois l’hébergement sélectionné, cliquez sur la deuxième liste déroulante pour choisir la base de données Start SQL de destination.
 
 Une fois votre choix effectué, cliquez sur `Suivant`{.action}. Le message de confirmation suivant s’affiche :
 
