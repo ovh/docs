@@ -86,7 +86,7 @@ Une fois votre choix effectué, cliquez sur `Suivant`{.action}. Le message de co
 
 Image
 
-Si vous ne voulez pas écraser la base de données de destination que vous venez de choisir, cliquez sur `Back`{.action} pour modifier votre choix, ou sur `Cancel`{.action} pour annuler. Sinon, cliquez sur `Confirm`{.action} pour confirmer la copie de la base de données.
+Si vous ne voulez pas écraser la base de données de destination choisie, cliquez sur `Précédent`{.action} pour modifier votre choix ou sur `Annuler`{.action} pour annuler. Sinon, cliquez sur `Valider`{.action} pour confirmer la copie de la base de données.
 
 S’il n’y a pas d’erreur, le message de confirmation suivant s’affiche :
 
