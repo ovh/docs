@@ -1,18 +1,18 @@
 ---
-title: "Copier une base de données OVHcloud dans une autre"
+title: "Copier le contenu d'une base de données OVHcloud"
 excerpt: "Découvrez comment copier le contenu d'une base de données OVHcloud vers une autre"
 updated: 2023-11-07
 ---
 
 ## Objectif
 
-Votre base de données correspond au coeur de votre site web. Pour des raisons de sécurité, ou si vous changez d’offre de stockage, il est essentiel de pouvoir copier votre base de données pour la transférer vers une nouvelle.
+Votre base de données correspond au coeur de votre site web. Pour des raisons de sécurité, ou si vous changez d’offre de stockage, il est essentiel de pouvoir copier le contenu de votre base de données vers une autre base de données.
 
-**Découvrez comment copier/transférer le contenu d'une base de données OVHcloud vers une autre.**
+**Découvrez comment copier le contenu d'une base de données OVHcloud vers une autre.**
 
 > [!primary]
 >
->Grâce à la fonctionnalité décrite dans ce qui suit, les bases de données ne sont pas migrées mais uniquement copiées. En effet, la base de données d’origine n’est pas supprimée automatiquement, contrairement à un processus de migration.
+> Grâce à la fonctionnalité décrite dans ce qui suit, les bases de données ne sont pas migrées mais uniquement copiées. En effet, la base de données d’origine n’est pas supprimée automatiquement, contrairement à un processus de migration.
 >
 
 ## Prérequis
@@ -31,11 +31,11 @@ Avant de commencer, assurez-vous que :
 
 ### Identifier ma base de données source
 
-Vous pouvez copier et transférer une base de données [Start SQL](https://www.ovhcloud.com/fr/web-hosting/options/start-sql/) ou une base de données [Web Cloud Databases](https://www.ovhcloud.com/fr/web-cloud/databases/). Selon votre situation, le chemin pour accéder à votre base de données source est différent.
+Vous pouvez copier le contenu d'une base de données [Start SQL](https://www.ovhcloud.com/fr/web-hosting/options/start-sql/) ou le contenu d'une base de données [Web Cloud Databases](https://www.ovhcloud.com/fr/web-cloud/databases/). Selon votre situation, le chemin pour accéder à votre base de données source est différent.
 
 #### Base de données Start SQL
 
-Dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), sélectionnez `Web Cloud`{.action} dans le menu en haut de l'interface. Dans la colonne de gauche, dirigez-vous dans l’onglet `Hébergements`{.action}, puis cliquez sur l’hébergement où se trouve la base de donnée source à copier.
+Dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), sélectionnez `Web Cloud`{.action} dans le menu en haut de l'interface. Dans la colonne de gauche, dirigez-vous dans l’onglet `Hébergements`{.action}, puis cliquez sur l’hébergement web où se trouve la base de donnée source à copier.
 
 Image
 
@@ -53,7 +53,7 @@ En cliquant sur l’onglet `Bases de données`{.action}, la liste de vos Web Clo
 
 Image
 
-### Copier et transférer une base de données
+### Copier le contenu d'une base de données
 
 Cliquez sur le bouton `...`{.action} à droite de la ligne correspondant à la base de données que vous souhaitez copier, puis sélectionnez `Copier la base de données`{.action}.
 
@@ -75,12 +75,12 @@ Image
 Image
 
 Si vous possédez déjà une base de données de destination, choisissez d'abord son type :
--	`Copier vers une base de données`{.action}: sélectionnez ce choix si vous voulez copier la contenu de votre base de données source vers une base de données Start SQL (destination).
--	`Copier vers un Web Cloud Databases`{.action}: sélectionnez ce choix si vous voulez copier le contenu de votre base de données source vers une base de données Web Cloud Database (destination).
+-	`Copier vers une base de données`{.action} : sélectionnez ce choix si vous voulez copier la contenu de votre base de données source vers une base de données Start SQL (destination).
+-	`Copier vers un Web Cloud Databases`{.action} : sélectionnez ce choix si vous voulez copier le contenu de votre base de données source vers une base de données Web Cloud Database (destination).
 
 #### Choix 1 - Copier vers une base de données
 
-Vous venez de sélectionner `Copier vers une base de données`{.action}. Deux listes déroulantes sont affichées. Cliquez sur la première puis sélectionnez l’hébergement web sur lequel se trouve votre base de données Start SQL de destination. Une fois l’hébergement sélectionné, cliquez sur la deuxième liste déroulante pour choisir la base de données Start SQL de destination.
+Vous venez de sélectionner `Copier vers une base de données`{.action}. Deux listes déroulantes sont affichées. Cliquez sur la première puis sélectionnez l’hébergement web sur lequel se trouve votre base de données Start SQL de destination. Une fois l’hébergement web sélectionné, cliquez sur la deuxième liste déroulante pour choisir la base de données Start SQL de destination.
 
 Une fois votre choix effectué, cliquez sur `Suivant`{.action}. Le message de confirmation suivant s’affiche :
 
@@ -111,7 +111,7 @@ Image
 ### Configurer son site web avec sa nouvelle base de données
 
 
-Une fois la copie de votre base de données source effectuée, il reste une dernière action à effectuer si vous voulez utiliser votre nouvelle base de données. Dans l’onglet `Ongoing Tasks`{.action}, assurez-vous que la copie est bien terminée (vous ne devez plus voir apparaître la ligne correspondant à votre copie). Dirigez-vous dans le fichier de configuration de votre **C**ontent **M**anagement **S**ystem (**CMS**) et configurez-le pour que votre site internet utilise votre nouvelle base de données.
+Une fois la copie de votre base de données source effectuée, il reste une dernière action à effectuer si vous voulez utiliser votre nouvelle base de données. Dans l’onglet `Ongoing Tasks`{.action}, assurez-vous que la copie est bien terminée (vous ne devez plus voir apparaître la ligne correspondant à votre copie). Dirigez-vous dans le fichier de configuration de votre **C**ontent **M**anagement **S**ystem (**CMS**) et configurez-le pour que votre site web utilise votre nouvelle base de données.
 Par exemple, si vous utilisez WordPress, ouvrez le fichier de configuration *wp-config.php* présent à la racine FTP de votre site web puis mettez à jour les champs suivants :
 
 -	DB_NAME
