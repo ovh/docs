@@ -79,7 +79,7 @@ En cuanto a OVHcloud, utilice nuestra documentación para:
 - [Cambiar la contraseña de acceso al espacio de almacenamiento FTP de su alojamiento web](/pages/web_cloud/web_hosting/ftp_change_password).
 - [Cambiar la contraseña de acceso a la base de datos](/pages/web_cloud/web_hosting/sql_change_password).
 
-También le recomendamos que utilice un [gestor de contraseñas](/pages/account/customer/manage-ovh-password#utilizar-un-gestor-de-contrasenas).
+También le recomendamos que utilice un [gestor de contraseñas](/pages/account_and_service_management/account_information/manage-ovh-password#utilizar-un-gestor-de-contrasenas).
 
 > [!warning]
 > 
@@ -200,7 +200,7 @@ Actualice su sitio web al nivel de su código fuente, de los parámetros de segu
 
 Compruebe los permisos de acceso FTP CHMOD para cada una de sus carpetas y archivos alojados en su espacio de almacenamiento.
 Por defecto, le recomendamos que utilice al máximo los permisos "CHMOD" **705** para las carpetas y **604** para los archivos.
-Para más información sobre los permisos CHMOD, consulte la sección "Información útil" de nuestro [tutorial sobre el uso del cliente FTP Filezilla](/pages/web/hosting/ftp_filezilla_user_guide#useful-information).
+Para más información sobre los permisos CHMOD, consulte la sección "Información útil" de nuestro [tutorial sobre el uso del cliente FTP Filezilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide#useful-information).
 
 Si utiliza un CMS (WordPress, Joomla, PrestaShop, Drupal...), actualice sus plugins, su tema y el CMS en sí mismo.
 Apueste por utilizar plugins o temas "oficiales" y mantenga actualizado su sitio web con la mayor regularidad posible y de forma completa.
@@ -213,7 +213,7 @@ Consulte nuestra guía sobre cómo proteger su sitio web (/pages/web_cloud/web_h
 
 [Conectarse al espacio de almacenamiento de un alojamiento web](/pages/web_cloud/web_hosting/ftp_connection)
 
-[Modificar la configuración de un alojamiento web](/pages/web_cloud/web_hosting/ovhconfig_modify_system_runtime)
+[Modificar la configuración de un alojamiento web](/pages/web_cloud/web_hosting/configure_your_web_hosting)
 
 [Activar el firewall de aplicación](/pages/web_cloud/web_hosting/multisites_activating_application_firewall)
 

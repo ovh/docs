@@ -54,7 +54,7 @@ La nouvelle page qui s'affiche alors présente une version modifiée des options
 
 - **Modifier le nom** : vous pouvez donner un nom à l'instance pour plus de facilité d'identification.
 - **Modifier l’image** : vous pouvez choisir un autre système d'exploitation pour l'instance (notez que la réinstallation d'une instance supprimera toutes les données qu'elle contient).
-- **Modifier le modèle** : vous pouvez changer de modèle d'instance. Veuillez vous référer à [ce guide](/pages/platform/public-cloud/public-cloud-first-steps#etape-3-creer-une-instance) pour plus d'informations sur les options.
+- **Modifier le modèle** : vous pouvez changer de modèle d'instance. Veuillez vous référer à [ce guide](/pages/public_cloud/compute/public-cloud-first-steps#etape-3-creer-une-instance) pour plus d'informations sur les options.
 - **Modifier la période de facturation** : vous pouvez modifier la période de facturation de l'instance d'une facturation horaire à mensuelle. Veuillez vous référer à [ce guide](/pages/account_and_service_management/managing_billing_payments_and_services/changing_hourly_monthly_billing) pour plus d'informations.
 
 #### Créer un backup d'une instance
@@ -67,13 +67,13 @@ Reportez-vous au guide « [Sauvegarder une instance](/pages/public_cloud/compute
 
 Cliquez sur `Créer une sauvegarde automatisée`{.action}.
 
-Reportez-vous au guide « [Sauvegarder une instance](/pages/platform/public-cloud/save_an_instance#creer-une-sauvegarde-automatisee-dune-instance) » pour plus d'informations.
+Reportez-vous au guide « [Sauvegarder une instance](/pages/public_cloud/compute/save_an_instance#creer-une-sauvegarde-automatisee-dune-instance) » pour plus d'informations.
 
 #### Suspendre une instance
 
 Cliquez sur `Arrêter`{.action}.
 
-Cette action aura pour effet de suspendre l'instance. Référez-vous à notre guide « [Suspendre ou mettre en pause une instance](/pages/platform/public-cloud/suspend_or_pause_an_instance#arreter-suspend-une-instance) » pour plus d'informations.
+Cette action aura pour effet de suspendre l'instance. Référez-vous à notre guide « [Suspendre ou mettre en pause une instance](/pages/public_cloud/compute/suspend_or_pause_an_instance#arreter-suspend-une-instance) » pour plus d'informations.
 
 Cliquez sur `Démarrer`{.action} pour réactiver l'instance.
 
@@ -98,7 +98,7 @@ Confirmez la demande de redémarrage dans la fenêtre qui apparaît.
 
 Cliquez sur `Suspendre`{.action}.
 
-Ceci placera l'instance dans l'état « *shelved* », affiché ici comme `Suspended`. Consultez notre guide « [Suspendre ou mettre en pause une instance](/pages/platform/public-cloud/suspend_or_pause_an_instance#suspendre-shelve-une-instance) » pour plus d'informations sur les différents états de suspension d'une instance.
+Ceci placera l'instance dans l'état « *shelved* », affiché ici comme `Suspended`. Consultez notre guide « [Suspendre ou mettre en pause une instance](/pages/public_cloud/compute/suspend_or_pause_an_instance#suspendre-shelve-une-instance) » pour plus d'informations sur les différents états de suspension d'une instance.
 
 Cliquez sur `Réactiver`{.action} pour restaurer l'état `Activé` de l'instance.
 
@@ -128,7 +128,7 @@ Cliquez alors sur l'onglet `Console VNC`{.action}.
 
 La console VNC fournit un accès direct à votre instance. Pour que cet accès fonctionne, vous devez d'abord configurer un nom d'utilisateur et un mot de passe sur l'instance. 
 
-Consultez notre guide « [Créer une première instance Public Cloud et s'y connecter](/pages/platform/public-cloud/public-cloud-first-steps#etape-4-connexion-a-votre-instance) » pour plus d'informations.
+Consultez notre guide « [Créer une première instance Public Cloud et s'y connecter](/pages/public_cloud/compute/public-cloud-first-steps#etape-4-connexion-a-votre-instance) » pour plus d'informations.
 
 ## Aller plus loin
 

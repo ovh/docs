@@ -25,7 +25,7 @@ Vous souhaitez :
 OVHcloud propose 3 solutions e-mail, la notion de suppression de compte est différente selon votre offre.
 
 - **Email MXplan** : cette offre est vendue sous la forme d'un pack de plusieurs comptes e-mail. Lorsque vous supprimez un compte, vous libérez un emplacement sur votre pack. 
-- **Email Pro** et **Hosted Exchange** : ces deux offres sont à la carte, vous commandez un abonnement individuel par compte e-mail. Lorsque vous voulez supprimer une adresse e-mail, il s'agit alors d'effectuer une **réinitialisation**. Une fois le compte e-mail réinitialisé, vous pouvez réutiliser ce compte pour créer une nouvelle adresse e-mail. Vous pouvez également [résilier l'abonnement](/pages/web/microsoft-collaborative-solutions/manage_billing_exchange#supprimer-des-comptes) de ce compte si vous souhaitez le supprimer définitivement.
+- **Email Pro** et **Hosted Exchange** : ces deux offres sont à la carte, vous commandez un abonnement individuel par compte e-mail. Lorsque vous voulez supprimer une adresse e-mail, il s'agit alors d'effectuer une **réinitialisation**. Une fois le compte e-mail réinitialisé, vous pouvez réutiliser ce compte pour créer une nouvelle adresse e-mail. Vous pouvez également [résilier l'abonnement](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_billing_exchange#supprimer-des-comptes) de ce compte si vous souhaitez le supprimer définitivement.
 
 ### Supprimer ou réinitialiser un compte e-mail
 

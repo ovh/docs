@@ -111,7 +111,7 @@ Ti ricordiamo che il valore dell'attributo `bootScript` è zero.
 
 ## Per saperne di più <a name="gofurther"></a>
 
-[Riavvio del tuo server dedicato](/pages/cloud/dedicated/getting-started-with-dedicated-server#reboot)
+[Riavvio del tuo server dedicato](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server#reboot)
 
 [Attivare e utilizzare la modalità rescue](/pages/bare_metal_cloud/dedicated_servers/rescue_mode)
 

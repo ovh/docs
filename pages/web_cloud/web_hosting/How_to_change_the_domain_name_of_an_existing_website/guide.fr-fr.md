@@ -104,13 +104,13 @@ Les CMS étant développés par des organismes tiers non gérés par OVHcloud, v
 - Drupal : L’éditeur de ce logiciel ne propose pas, à date, de documentation pour changer le domaine d'accès à votre site web. Nous vous invitons à contacter directement l’éditeur sur ce sujet. Pour plus d’informations, consultez les pages officielles [drupal.org](https://drupal.org){.external} ou [drupal.fr](https://drupal.fr){.external}.
 - PrestaShop : L’éditeur de ce logiciel ne propose pas, à date, de documentation pour changer le domaine d'accès à votre site web. Nous vous invitons à contacter directement l’éditeur sur ce sujet. Pour plus d’informations, cliquez [ici](https://help-center.prestashop.com){.external} pour vous rendre sur leur page officielle.
 
-Notez que pour ces CMS, il est également possible d'effectuer ses modifications directement [en base de données](/pages/web/hosting/sql_create_database#acceder-a-linterface-phpmyadmin). Vous devrez changer l'URL d'accès à votre site dans la table prévue à cet effet.
+Notez que pour ces CMS, il est également possible d'effectuer ses modifications directement [en base de données](/pages/web_cloud/web_hosting/sql_create_database#acceder-a-linterface-phpmyadmin). Vous devrez changer l'URL d'accès à votre site dans la table prévue à cet effet.
 
 Pour les autres CMS non proposés en installation automatique par OVHcloud, nous vous invitons également à vous rapprocher de leurs supports respectifs pour effectuer cette réécriture en toute sécurité. 
 
 #### Cas n°2 : votre site web est un site « fait maison »
 
-Pour réécrire vos URLs avec votre nouveau domaine, [connectez-vous à la base de données de votre site](/pages/web/hosting/sql_create_database#acceder-a-linterface-phpmyadmin) puis remplacez votre ancien domaine par le nouveau dans la table correspondante. 
+Pour réécrire vos URLs avec votre nouveau domaine, [connectez-vous à la base de données de votre site](/pages/web_cloud/web_hosting/sql_create_database#acceder-a-linterface-phpmyadmin) puis remplacez votre ancien domaine par le nouveau dans la table correspondante. 
 
 N'oubliez pas de vérifier dans votre fichier `.htaccess` si des réécritures d'URL ne sont pas à mettre à jour avec votre nouveau domaine.
 

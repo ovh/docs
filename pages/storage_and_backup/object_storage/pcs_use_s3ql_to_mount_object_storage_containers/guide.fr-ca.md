@@ -1,6 +1,5 @@
 ---
 title: Object Storage Swift - Utiliser S3QL pour monter un conteneur Object Storage
-legacy_guide_number: g1908
 updated: 2021-10-27
 ---
 

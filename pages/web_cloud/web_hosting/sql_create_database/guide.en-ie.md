@@ -110,7 +110,7 @@ It is best practice to always use the actual database name for scripts and confi
 
 If a Web Hosting database exceeds the recommended storage space, it will be automatically switched to "read only" / "select only". The administrator will receive a notification by email.
 
-After the database has been optimised (purged), you can recalculate its quota in your OVHcloud Control Panel to have it unlocked again. It is best practice to download the database, manage the revision locally and then replace it via import. Please refer to [this guide](/pages/web/hosting/optimise_your_website_performance#step-7-optimise-your-database) for further information.
+After the database has been optimised (purged), you can recalculate its quota in your OVHcloud Control Panel to have it unlocked again. It is best practice to download the database, manage the revision locally and then replace it via import. Please refer to [this guide](/pages/web_cloud/web_hosting/optimise_your_website_performance#step-7-optimise-your-database) for further information.
 
 ## Go further
 

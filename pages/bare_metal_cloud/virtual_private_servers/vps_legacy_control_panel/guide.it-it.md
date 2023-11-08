@@ -73,7 +73,7 @@ Durante la reinstallazione del VPS, riceverai un’email con la password di root
 
 L’utente "**root**" è creato di default sui sistemi GNU/Linux. Si tratta del livello di accesso più elevato a un sistema operativo. Rendere accessibile il VPS tramite l’utente root e la sua password può essere pericoloso, in quanto questo account potrebbe effettuare operazioni irreversibilmente dannose.
 
-Le connessioni utente root possono essere disattivate tramite il protocollo SSH. Prima di eseguire le operazioni seguenti, è consigliabile [creare un altro utente](/pages/cloud/vps/secure_your_vps#createuser).
+Le connessioni utente root possono essere disattivate tramite il protocollo SSH. Prima di eseguire le operazioni seguenti, è consigliabile [creare un altro utente](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps#createuser).
 
 Utilizza un editor di testo come *vim* o *nano* per modificare questo file di configurazione:
 

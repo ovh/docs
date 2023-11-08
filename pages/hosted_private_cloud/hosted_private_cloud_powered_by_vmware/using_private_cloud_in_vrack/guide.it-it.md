@@ -1,7 +1,6 @@
 ---
 title: Utilizzare Hosted Private Cloud all'interno di una vRack
 excerpt:  Scopri come utilizzare la vRack con la tua soluzione Hosted Private Cloud
-legacy_guide_number: g1257
 updated: 2022-03-28
 ---
 

@@ -1,6 +1,5 @@
 ---
 title: Empezar con la gestión de volúmenes en la API OpenStack
-legacy_guide_number: 2071
 updated: 2021-05-19
 ---
 

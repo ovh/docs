@@ -1,7 +1,6 @@
 ---
 title: 'OpenStack Umgebungsvariablen einrichten'
 excerpt: 'Erfahren Sie hier, wie Sie Ihre Umgebungsvariablen für die Nutzung der OpenStack API einrichten'
-legacy_guide_number: 1852
 updated: 2021-08-18
 ---
 

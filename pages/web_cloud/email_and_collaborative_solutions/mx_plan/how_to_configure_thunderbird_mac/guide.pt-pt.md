@@ -1,6 +1,5 @@
 ---
 title: 'Configurar um endereço de e-mail no Thunderbird para macOS'
-legacy_guide_number: g1297
 excerpt: 'Encontre aqui as informações para configurar o seu endereço de e-mail no Thunderbird.'
 updated: 2021-08-26
 ---

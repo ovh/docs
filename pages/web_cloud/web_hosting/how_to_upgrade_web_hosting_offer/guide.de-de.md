@@ -70,7 +70,7 @@ Nachdem Sie Ihre Datenbanken gelöscht haben, denken Sie daran, die genutzte Quo
 
 #### 3 - Web Cloud Databases
 
-Wenn Sie die in Ihrem Hosting der Reihe [Performance](https://www.ovhcloud.com/de/web-hosting/performance-offer/) enthaltene [Web Cloud Databases](/pages/web/clouddb/starting_with_clouddb#aktivierung-des-in-ihrem-webhosting-angebot-enthaltenen-clouddb-servers) verwenden und Ihr Hosting auf [Pro](https://www.ovhcloud.com/de/web-hosting/professional-offer/) umstellen möchten, gehen Sie in den Bereich `Hosting-Pakete`{.action} Ihres Kundencenters.<br>
+Wenn Sie die in Ihrem Hosting der Reihe [Performance](https://www.ovhcloud.com/de/web-hosting/performance-offer/) enthaltene [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb#aktivierung-des-in-ihrem-webhosting-angebot-enthaltenen-clouddb-servers) verwenden und Ihr Hosting auf [Pro](https://www.ovhcloud.com/de/web-hosting/professional-offer/) umstellen möchten, gehen Sie in den Bereich `Hosting-Pakete`{.action} Ihres Kundencenters.<br>
 Klicken Sie im Bereich `Konfiguration`{.action} auf den Button `...`{.action} und dann auf `Abtrennen`{.action}.
 
 ![Web Cloud Databases](images/clouddb.png){.thumbnail}

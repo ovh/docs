@@ -14,7 +14,7 @@ Ce guide fournit des instructions générales pour sauvegarder une base de donn�
 
 - Une base de données SAP HANA installée.
 - Un serveur Windows qui hébergera la solution [Veeam Backup and Replication](https://www.ovhcloud.com/fr-ca/storage-solutions/veeam-enterprise/).
-- Un espace de stockage partagé pour un besoin non SecNumCloud ou une machine virtuelle sur [Hosted Private Cloud powered by VMware qualifié SecNumCloud](https://www.ovhcloud.com/fr-ca/enterprise/products/secnumcloud/) faisant office de serveur NFS ou SMB pour un besoin SecNumCloud.
+- Un espace de stockage partagé pour un besoin non SecNumCloud ou une machine virtuelle sur [VMware on OVHcloud qualifié SecNumCloud](https://www.ovhcloud.com/fr-ca/enterprise/products/secnumcloud/) faisant office de serveur NFS ou SMB pour un besoin SecNumCloud.
 
 ## En pratique
 
@@ -191,7 +191,7 @@ Une fois ces étapes réalisées, vous pouvez continuer ce guide avec le chapitr
 
 La solution Object Storage S3 n'est pour le moment pas qualifiée SecNumCloud. Elle ne peut donc être utilisée pour héberger vos sauvegardes dans un contexte SecNumCloud.
 
-Pour répondre à ce besoin, nous proposons de créer une machine virtuelle sur [Hosted Private Cloud powered by VMware qualifié SecNumCloud](https://www.ovhcloud.com/fr-ca/enterprise/products/secnumcloud/) faisant office de serveur NFS ou SMB.
+Pour répondre à ce besoin, nous proposons de créer une machine virtuelle sur [VMware on OVHcloud qualifié SecNumCloud](https://www.ovhcloud.com/fr-ca/enterprise/products/secnumcloud/) faisant office de serveur NFS ou SMB.
 
 > [!warning]
 > Dans le cas d'une utilisation d'une machine virtuelle pour héberger un serveur NFS ou SMB, veillez à protéger cette machine virtuelle et son contenu en dupliquant ses données sur une autre localisation.

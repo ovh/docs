@@ -246,7 +246,7 @@ Descendez en bas de la liste, vous devez avoir un décompte de 102 disques (ou 5
 
 ![esxi-devices-count](images/esxi-dashboard-view-02.png){.thumbnail}
 
-#### Ajout d'un Datastore
+#### Ajout d'un Datastore <a name="add-datastore"></a>
 
 Sélectionnez `Storage`{.action} puis l'onglet `Datastores`{.action}.
 

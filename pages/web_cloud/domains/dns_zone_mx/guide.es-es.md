@@ -61,7 +61,7 @@ Para comprobar más rápidamente si ya existen registros MX, seleccione, utiliza
 
 Para crear un nuevo registro MX, haga clic en el botón `Añadir un registro`{.action} a la derecha de la tabla y seleccione `MX`{.action}. Complete la información solicitada (en función de la solución de correo de que disponga):
 
-- **Si tiene contratada una solución de correo de OVHcloud**, consulte la información del paso [2. Conocer la configuración MX de OVHcloud](/pages/web/domains/dns_zone_mx#2-conocer-la-configuracion-mx-de-ovh){.external}.
+- **Si tiene contratada una solución de correo de OVHcloud**, consulte la información del paso [2. Conocer la configuración MX de OVHcloud](/pages/web_cloud/domains/dns_zone_mx#2-conocer-la-configuracion-mx-de-ovh){.external}.
 
 - **Si tiene contratada una solución de correo externa**, consulte la información que le haya proporcionado el proveedor de su servicio de correo.
 

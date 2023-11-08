@@ -247,7 +247,7 @@ At the bottom of the list, you must have a count of 102 disks (or 50, depending 
 
 ![esxi-devices-count](images/esxi-dashboard-view-02.png){.thumbnail}
 
-#### Add a datastore
+#### Add a datastore <a name="add-datastore"></a>
 
 Select `Storage`{.action}, then select the `Datastores`{.action} tab.
 

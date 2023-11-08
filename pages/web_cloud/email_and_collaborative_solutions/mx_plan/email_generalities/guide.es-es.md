@@ -119,9 +119,9 @@ Para ello, deberá crear una redirección.
 
 Puede hacerlo de dos formas:
 
-- crear su redirección desde el webmail, a través de las reglas de la bandeja de entrada. Para ello, consulte nuestra guía Reglas de la bandeja de entrada desde la [interfaz OWA](/pages/web/emails/creating-inbox-rules-in-owa-mx-plan#ejemplo-1-redireccionamiento-de-mensajes-de-correo-electronico-a-otra-direccion).
+- crear su redirección desde el webmail, a través de las reglas de la bandeja de entrada. Para ello, consulte nuestra guía Reglas de la bandeja de entrada desde la [interfaz OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/creating-inbox-rules-in-owa-mx-plan#ejemplo-1-redireccionamiento-de-mensajes-de-correo-electronico-a-otra-direccion).
 
-- crear la redirección desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es). Este método permite, por ejemplo, crear un alias, es decir, redirigir una dirección de correo electrónico que no exista a una dirección de correo existente. Para ello, consulte nuestra guía [Utilizar las redirecciones de correo](/pages/web/emails/feature_redirections#nueva-version-de-la-solucion-mx-plan).
+- crear la redirección desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es). Este método permite, por ejemplo, crear un alias, es decir, redirigir una dirección de correo electrónico que no exista a una dirección de correo existente. Para ello, consulte nuestra guía [Utilizar las redirecciones de correo](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections#nueva-version-de-la-solucion-mx-plan).
 
 ##### **Contestador**
 
@@ -222,7 +222,7 @@ A continuación se indican los parámetros necesarios para configurar una cuenta
 
 Desea redirigir los mensajes hacia otro destinatario, crear un alias o copiar sistemáticamente otra dirección de correo.
 
-Para ello, deberá crear una redirección. Para más información, consulte nuestra guía [Utilizar las redirecciones de correo](/pages/web/emails/feature_redirections#version-historica-de-la-solucion-mx-plan).
+Para ello, deberá crear una redirección. Para más información, consulte nuestra guía [Utilizar las redirecciones de correo](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections#version-historica-de-la-solucion-mx-plan).
 
 ##### **Contestador**
 

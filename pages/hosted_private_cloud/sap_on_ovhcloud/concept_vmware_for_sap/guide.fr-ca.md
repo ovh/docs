@@ -31,13 +31,13 @@ Nous recommandons de prendre connaissance de la [SAP Note 2161991](https://launc
 
 OVHcloud propose un template de machine virtuelle SAP HANA. Vous avez la possibilité de l'utiliser pour déployer une machine virtuelle pour SAP HANA avec SUSE Linux Enterprise Server for SAP Application (SLES4SAP) d'installé (en mode BYOL), ainsi que les disques configurés suivant les recommandations de SAP et VMware.
 
-Ce template offre également la possibilité de déployer une base de données SAP HANA et OVHcloud Backint Agent for SAP HANA après avoir rempli un formulaire. Pour en savoir plus à propos de ce template, veuillez vous référer à [notre guide](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook-sap-hana-template-vmware).
+Ce template offre également la possibilité de déployer une base de données SAP HANA et OVHcloud Backint Agent for SAP HANA après avoir rempli un formulaire. Pour en savoir plus à propos de ce template, veuillez vous référer à [notre guide](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook_sap_hana_template_vmware).
 
 La fonctionnalité Fault Tolerance fournie par VMware n'est pas applicable pour protéger les machines virtuelles SAP HANA. Cela est dû aux limitations de gestion des ressources par la fonctionnalité Fault Tolerance. Cependant, nous conseillons d'activer la fonctionnalité vSphere HA qui supervise l'état de santé de chaque host ESXi dans le cluster et redémarre automatiquement les machines virtuelles qui étaient hébergées sur le host ESXi impacté.
 
 Nous recommandons d'être attentif avec le « NUMA sharing ». Pour en savoir plus à ce sujet, veuillez vous référer au [SAP Confluence](https://wiki.scn.sap.com/wiki/display/VIRTUALIZATION/SAP+HANA+on+VMware+vSphere) et à la [SAP Note 2470289](https://launchpad.support.sap.com/#/notes/2470289).
 
-Si vous souhaitez réduire le temps maximal admissible de coupure de service et de perte de données sur une unique localisation OVHcloud, vous avez la possibilité de gérer un cluster SAP HANA avec SUSE. Nous proposons une [documentation dédiée](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook-configure-sap-hana-cluster) pour vous aider à l'implémentation de cette configuration. Dans ce contexte, nous recommandons de créer des règles d'anti-affinité dans le but d'éviter d'héberger les bases de données SAP HANA sur le même host ESXi.
+Si vous souhaitez réduire le temps maximal admissible de coupure de service et de perte de données sur une unique localisation OVHcloud, vous avez la possibilité de gérer un cluster SAP HANA avec SUSE. Nous proposons une [documentation dédiée](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook_configure_sap_hana_cluster) pour vous aider à l'implémentation de cette configuration. Dans ce contexte, nous recommandons de créer des règles d'anti-affinité dans le but d'éviter d'héberger les bases de données SAP HANA sur le même host ESXi.
 
 ### Serveurs d'application SAP
 
@@ -59,8 +59,8 @@ OVHcloud fournit OVHcloud Backint Agent for SAP HANA pour sauvegarder votre base
 
 Cet agent backint vous permet de tirer parti des avantages d'un Object Storage S3, comme la politique de rétention ou encore la politique des objets immuables. Pour en savoir plus sur OVHcloud Backint Agent for SAP HANA, nous conseillons de prendre connaissance de ces guides :
 
-- [Installer et utiliser OVHcloud Backint Agent pour SAP HANA](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook-install-ovhcloud-backint-agent)
-- [Utiliser OVHcloud Backint Agent avec plusieurs buckets Object Storage S3](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook-configure-ovhcloud-backint-agent-several-buckets)
+- [Installer et utiliser OVHcloud Backint Agent pour SAP HANA](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook_install_ovhcloud_backint_agent)
+- [Utiliser OVHcloud Backint Agent avec plusieurs buckets Object Storage S3](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook_configure_ovhcloud_backint_agent_several_buckets)
 
 Pour garantir la restauration de la configuration de SAP HANA (fichiers INI), nous suggérons d'appliquer la valeur « true » pour le paramètre `include_configuration_backup`. Ce paramètre active la sauvegarde de tous les paramètres stockés dans les fichiers INI durant la sauvegarde des données de la base de données SAP HANA.
 
@@ -90,7 +90,7 @@ Sur votre NSX, vous devrez configurer une route entrante afin d'acheminer le tra
 
 Comme cette machine virtuelle est exposée sur Internet, adaptez vos règles de filtrage réseau entrantes pour n'autoriser que la connexion provenant des adresses IP publiques du support SAP. N'autorisez la communication depuis votre SAProuter vers votre infrastructure SAP que sur les ports et protocoles nécessaires. Toutes les informations sont disponibles sur les [pages du support SAP](https://support.sap.com/en/tools/connectivity-tools/saprouter/install-saprouter.html).
 
-Nous proposons une [documentation](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook-vmware-saprouter) pour vous aider à déployer d'un SAProuter avec NSX.
+Nous proposons une [documentation](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook_vmware_saprouter) pour vous aider à déployer d'un SAProuter avec NSX.
 
 ### Double localisation OVHcloud (optionnel)
 
@@ -135,9 +135,9 @@ Pour garantir la continuité de la connexion avec le support SAP, nous recommand
 - [Setting up Zerto Virtual Replication between two OVHcloud datacenters](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/zerto_virtual_replication_as_a_service)
 - [Setting up Veeam Backup & Replication](/pages/storage_and_backup/backup_and_disaster_recovery_solutions/veeam/veeam_veeam_backup_replication)
 - [Installing SAProuter](https://support.sap.com/en/tools/connectivity-tools/saprouter/install-saprouter.html)
-- [Déployer un SAProuter avec NSX](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook-vmware-saprouter)
-- [Installer et utiliser OVHcloud Backint Agent pour SAP HANA](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook-install-ovhcloud-backint-agent)
-- [Utiliser OVHcloud Backint Agent avec plusieurs buckets Object Storage S3](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook-configure-ovhcloud-backint-agent-several-buckets)
+- [Déployer un SAProuter avec NSX](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook_vmware_saprouter)
+- [Installer et utiliser OVHcloud Backint Agent pour SAP HANA](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook_install_ovhcloud_backint_agent)
+- [Utiliser OVHcloud Backint Agent avec plusieurs buckets Object Storage S3](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook_configure_ovhcloud_backint_agent_several_buckets)
 
 Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr-ca/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services. 
 

@@ -20,7 +20,7 @@ Por predefinição, apenas o endereço IPv4 é configurado.
 
 > [!primary]
 > 
-> Atualmente, as ofertas Floating IP e Gateway não tomam a cargo o IPv6. O IPv6 só pode ser utilizado com as instâncias em [modo público](/pages/platform/network-services/concepts-01-public-cloud-networking-concepts#publicmode).
+> Atualmente, as ofertas Floating IP e Gateway não tomam a cargo o IPv6. O IPv6 só pode ser utilizado com as instâncias em [modo público](/pages/public_cloud/public_cloud_network_services/concepts-01-public-cloud-networking-concepts#publicmode).
 >
 
 ## Requisitos

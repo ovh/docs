@@ -1,68 +1,90 @@
 ---
-title: 'Repartitioning a VPS after an upgrade'
-excerpt: 'Find out how to increase your storage space following an upgrade'
-updated: 2021-05-18
+title: Repartitioning a VPS after a storage upgrade
+excerpt: Find out how to increase the usable disk space following an upgrade
+updated: 2023-09-05
 ---
 
 ## Objective
 
-When you upgrade your VPS, you might need to repartition your storage space. Here are the steps to follow.
+After upgrading the storage capacity of your VPS, you will need to repartition the disk space to take advantage of the full size. The following steps describe how to do this.
 
 > [!warning]
 >
-> Repartitioning could permanently damage your data. OVHcloud cannot be held responsible for any loss or damage to your data. Before doing anything, make sure you back up all of your data.
->
+> Repartitioning could permanently damage your data. OVHcloud cannot be held responsible for any loss or damage to your data. Before doing anything, make sure you back up all of your data. 
 
-**This guide explains the steps you need to follow to increase your storage space.**
+**This guide explains how to increase your storage space after a disk upgrade.**
 
 ## Requirements
 
-- Administrative access to your VPS (Windows)
-- Rebooting the server in [rescue mode](/pages/bare_metal_cloud/virtual_private_servers/rescue) (Linux)
+- Administrative access to your VPS ([Windows](#windows))
+- [Rescue mode](/pages/bare_metal_cloud/virtual_private_servers/rescue) activated on the VPS (Linux only)
 
 ## Instructions
 
-Unlike RAM and processor (CPU) of your VPS, the storage space cannot automatically be adjusted after an upgrade.
+After a memory (RAM) or processor (vCores) upgrade, these resources of your VPS are automatically adjusted. The usable disk space however is not automatically increased when you upgrade the storage of your VPS.
 
 ### Linux
 
 #### Back up your data
 
-Attempting to extend a partition can lead to a loss of data. It is therefore **strongly recommended** that you back up the data on your VPS.
+Attempting to extend a partition can lead to data loss. It is therefore **strongly recommended** that you back up the data on your VPS.
 
-#### Unmount the partition
+#### Activate rescue mode and verify the partitions
 
-On older VPS ranges, your partitions will be automatically mounted in rescue mode. You can use the following command to identify where your partition is mounted:
+If the VPS is not already in rescue mode, activate it by using [our guide](/pages/bare_metal_cloud/virtual_private_servers/rescue).
 
-```sh
+You can then verify the configuration of the disks:
+
+```bash
 lsblk
 ```
 
-The partition corresponding to rescue mode will be the one mounted in the directory `/`, which is actually the system root. In contrast, the partition of your VPS will probably be placed in the directory associated with /mnt.
+The partition corresponding to rescue mode (`sda1` in this example) is mounted in the directory `/` and the disk of the VPS is named `sdb` and should have no mount point.
 
-If your VPS is of the current ranges however, the partition will not be automatically mounted. If the MOUNTPOINT column of your output confirms this, you can skip the unmounting step.
+Example:
 
-```sh
+```console
 NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
 sda 254:0 0 10G 0 disk
 └─sda1 254:1 0 10G 0 part /
 sdb 254:16 0 25G 0 disk
+└─sdb1 254:17 0 25G 0 part
+```
+
+If your result looks similar to the output above and the column `MOUNTPOINT` is empty in the corresponding line, you can proceed with the [next step](#checkfs).
+
+However, if your result shows that there is a mount point for the VPS partition, it needs to be unmounted first.
+
+Example:
+
+```console
+sdb 254:16 0 25G 0 disk
 └─sdb1 254:17 0 25G 0 part /mnt/sdb1
 ```
 
-In order to resize the partition, you will need to unmount it. To unmount your partition, use the following command:
+In the example output above, the partition `sdb1` is mounted at `/mnt/`. In order to resize the partition, this partition must not be mounted.
 
-```sh
+To unmount your partition, use the following command:
+
+```bash
+umount /dev/partition_name
+```
+
+In this example configuration, the command would be:
+
+```bash
 umount /dev/sdb1
 ```
 
-#### Check the filesystem
+#### Check the filesystem <a name="checkfs"></a>
 
-After unmounting the partition, you should check the filesystem (`filesystem check`) to see if there are errors in the partition. The command is as follows:
+Before you proceed, it is recommended to check the filesystem (`filesystem check`) to see if there are errors in the partition. The command is as follows:
 
 ```sh
 e2fsck -yf /dev/sdb1
- 
+```
+
+```console
 e2fsck 1.42.9 (4-Feb-2014)
 Pass 1: Checking inodes, blocks, and sizes
 Pass 2: Checking directory structure
@@ -74,7 +96,7 @@ Pass 5: Checking group summary information
 
 If you see any errors, take note of them and resolve them as required. Below is a (non-exhaustive) list of the most common errors you might see:
 
-- `bad magic number in superblock`: Do not continue. Please read and follow our instructions on [How to fix a **bad magic number in superblock** error](/pages/cloud/vps/upsize_vps_partition#how-to-fix-a-bad-magic-number-in-superblock-error).
+- `bad magic number in superblock`: Do not continue. Please read and follow our instructions on [How to fix a **bad magic number in superblock** error](/pages/bare_metal_cloud/virtual_private_servers/upsize_vps_partition#how-to-fix-a-bad-magic-number-in-superblock-error).
 
 - `/dev/vdb1 has unsupported feature(s): metadata_csum` followed by `e2fsck: Get a newer version of e2fsck!`: Update e2fsck. If the latest version is not available via `apt` (or another manager package), you will need to compile it from the sources.
 
@@ -95,7 +117,7 @@ fdisk -u /dev/sdb
 
 Before deleting the old partition, it is recommended that you write down the number corresponding to the first sector of the partition. You can find this information through the command `p`{.action}. The information is listed under the `Start` field. Save this data for later.
 
-```sh
+```console
 Command (m for help): p
  
 Disk /dev/sdb: 21.5 GB, 21474836480 bytes
@@ -116,7 +138,7 @@ Device Boot Start End Blocks Id System
 
 Then delete the partition with the command `d`{.action}.
 
-```sh
+```console
 Command (m for help): d
 Selected partition 1
 ```
@@ -127,7 +149,7 @@ The single partition will automatically be deleted.
 
 You now need to create a new partition with the command `n`{.action}. It is recommended that you use the default values.
 
-```sh
+```console
 Command (m for help): n
 Partition type:
 p primary (0 primary, 0 extended, 4 free)
@@ -144,7 +166,7 @@ On the `First sector` line, check that the default value is the same as the one 
 
 You now need to ensure that the partition is bootable. You can do this using the command `a`{.action}.
 
-```sh
+```console
 Command (m for help): a
  
 Partition number (1-4): 1
@@ -152,7 +174,7 @@ Partition number (1-4): 1
 
 Save your changes and exit the application with the command `w`{.action}:
 
-```sh
+```console
 Command (m for help): w
  
 The partition table has been altered!
@@ -167,7 +189,9 @@ The partition has been extended, but the filesystem still occupies the same spac
 
 ```sh
 resize2fs /dev/sdb1
- 
+```
+
+```console
 resize2fs 1.42.9 (4-Feb-2014)
 Resizing the filesystem on /dev/sdb1 to 5242624 (4k) blocks.
 The filesystem on /dev/sdb1 is now 5242624 blocks long.
@@ -182,7 +206,9 @@ mount /dev/sdb1 /mnt
 ```
 ```sh
 df -h
- 
+```
+
+```console
 Filesystem Size Used Avail Use% Mounted on
 /dev/sda1 991M 793M 132M 86% /
 none 4.0K 0 4.0K 0% /sys/fs/cgroup
@@ -202,7 +228,9 @@ If the command `e2fsck`{.action} returns the error message `bad magic number in 
 
 ```sh
 dumpe2fs /dev/sdb1 | grep superblock
- 
+```
+
+```console
 Primary superblock at 0, Group descriptors at 1-6
 Backup superblock at 32768, Group descriptors at 32769-32774
 Backup superblock at 98304, Group descriptors at 98305-98310
@@ -226,7 +254,7 @@ Then use the first superblock backup to check and repair the filesystem:
 fsck -b 32768 /dev/sdb1
 ```
 
-### Windows
+### Windows <a name="windows"></a>
 
 #### Access File and Storage Services
 
@@ -236,13 +264,13 @@ You can find this in the Server Manager:
 
 #### Resize the volume
 
-Right click on the C: volume and select "Extend Volume..."
+Right click on the C: volume and select `Extend Volume...`{.action}.
 
 You will then be prompted to choose your new volume size:
 
 ![Set New Volume Size](images/extend.png){.thumbnail}
 
-Enter your desired size and hit "OK". Your volume will now be extended.
+Enter your desired size and click `OK`{.action}. Your volume will now be extended.
 
 ## Go further
 

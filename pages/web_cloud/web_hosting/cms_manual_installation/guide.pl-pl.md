@@ -120,7 +120,7 @@ Jeśli nie jesteś w stanie dokonać tych weryfikacji, skontaktuj się z aktywny
 > Wszystkie modyfikacje wprowadzone w strefie DNS spowodują, że czas propagacji wynosi od 4 do 24 godzin.
 >
 
-- Pobierz [informacje potrzebne do zalogowania się do przestrzeni FTP Twojego hostingu](/pages/web/hosting/ftp_connection#etap-1-pobranie-informacji-niezbednych-do-logowania).
+- Pobierz [informacje potrzebne do zalogowania się do przestrzeni FTP Twojego hostingu](/pages/web_cloud/web_hosting/ftp_connection#etap-1-pobranie-informacji-niezbednych-do-logowania).
 - Zdobądź dostęp do bazy danych Twojego hostingu, jeśli już istnieje, lub utwórz bazę danych przy użyciu naszej [dokumentacji](/pages/web_cloud/web_hosting/sql_create_database).
 
 #### 1.3 - Zainstaluj darmowy program FTP "FileZilla"
@@ -133,7 +133,7 @@ CMS potrzebują bazy danych do działania. Nasza oferta[hosting](https://www.ovh
 
 Skorzystaj z naszej dokumentacji, aby [utworzyć bazę danych w ramach Twojego hostingu](/pages/web_cloud/web_hosting/sql_create_database).
 
-Jeśli dysponujesz usługą Web Cloud Databases w MySQL lub MariaDB i chcesz z niej korzystać do ręcznej instalacji CMS-a, zapoznaj się z naszą dokumentacją dotyczącą [utworzenia bazy danych w usłudze Web Cloud Databases](/pages/web/clouddb/create-db-and-user-on-db-server#tworzenie-bazy-danych).
+Jeśli dysponujesz usługą Web Cloud Databases w MySQL lub MariaDB i chcesz z niej korzystać do ręcznej instalacji CMS-a, zapoznaj się z naszą dokumentacją dotyczącą [utworzenia bazy danych w usłudze Web Cloud Databases](/pages/web_cloud/web_cloud_databases/create-db-and-user-on-db-server#tworzenie-bazy-danych).
 
 Po utworzeniu bazy danych pobierz parametry połączenia (serwer, nazwa bazy danych, nazwa użytkownika i hasło) i zachowaj je dla [etap 3](#step3) tego przewodnika.
 
@@ -141,11 +141,11 @@ Po utworzeniu bazy danych pobierz parametry połączenia (serwer, nazwa bazy dan
 >
 > Jeśli chcesz zainstalować CMS-a z istniejącą bazą danych, pobierz parametry połączenia z bazą danych bezpośrednio do powiązanych plików strony WWW.
 >
-> Jeśli jest to również CMS identyczny z tym, który powinieneś zainstalować, możesz użyć [tego przewodnika](/pages/web/hosting/sql_change_password#etap-3-zmiana-hasla-do-bazy-danych-twojej-strony-www-w-pliku-konfiguracyjnym) do identyfikacji plików konfiguracyjnych w [przestrzeni dyskowej FTP](/pages/web_cloud/web_hosting/ftp_connection).
+> Jeśli jest to również CMS identyczny z tym, który powinieneś zainstalować, możesz użyć [tego przewodnika](/pages/web_cloud/web_hosting/sql_change_password#etap-3-zmiana-hasla-do-bazy-danych-twojej-strony-www-w-pliku-konfiguracyjnym) do identyfikacji plików konfiguracyjnych w [przestrzeni dyskowej FTP](/pages/web_cloud/web_hosting/ftp_connection).
 >
 > Połącz się następnie z bazą danych, aby określić "prefiksy" stołów już obecnych w środku. W ten sposób nie możesz wybrać prefiksu tabeli używanego już przez inne Twoje strony.
 >
-> - Aby zalogować się do bazy danych powiązanej z hostingiem, zapoznaj się z [tym przewodnikiem](/pages/web/hosting/sql_create_database#dostep-do-interfejsu-phpmyadmin).
+> - Aby zalogować się do bazy danych powiązanej z hostingiem, zapoznaj się z [tym przewodnikiem](/pages/web_cloud/web_hosting/sql_create_database#dostep-do-interfejsu-phpmyadmin).
 > - Aby zalogować się do bazy danych na stronie WWW Cloud Databases, zapoznaj się z tym przewodnikiem (/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server).
 >
 
@@ -173,7 +173,7 @@ Poniżej znajdziesz linki do stron pobierania CMS wymienionych w niniejszym tuto
 > - [Drupal](https://www.drupal.org/docs/getting-started/system-requirements/php-requirements){.external}
 > - [Prestashop](https://www.prestashop.com/en/system-requirements){.external}
 >
-> Skonfiguruj następnie wersję PHP na Twoim hostingu, korzystając z dokumentacji [OVHcloud dotyczącej zmiany wersji PHP na hostingu](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014).
+> Skonfiguruj następnie wersję PHP na Twoim hostingu, korzystając z dokumentacji [OVHcloud dotyczącej zmiany wersji PHP na hostingu](/pages/web_cloud/web_hosting/configure_your_web_hosting).
 >
 > Jeśli używasz już wersji PHP większej lub równej tej, której potrzebujesz, nie musisz wprowadzać żadnych zmian.
 >

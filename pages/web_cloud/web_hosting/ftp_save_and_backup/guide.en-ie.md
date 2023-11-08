@@ -79,7 +79,7 @@ Once you are ready to do so, carry on reading the section of this guide that is 
 > 
 > In this case:
 >
-> - Our teams send an email to the hosting [administrator contact](/pages/account/customer/managing_contacts#access-contact-management).
+> - Our teams send an email to the hosting [administrator contact](/pages/account_and_service_management/account_information/managing_contacts#access-contact-management).
 > - The “maintenance” status will appear in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}. In the `Web Cloud`{.action} section, click on your service in the `Hosting plans`{.action} section, then on the `General information`{.action} tab.
 > - The hosted site(s) will display a "403 Forbidden" page.
 >

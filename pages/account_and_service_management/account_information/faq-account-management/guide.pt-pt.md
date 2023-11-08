@@ -30,7 +30,7 @@ A qualquer momento, se estiver ligado à sua Área de Cliente, pode encontrar o 
 ### O que devo fazer se não conseguir aceder à minha conta de cliente?
 
 Por várias razões, tais como o esquecimento da sua palavra-passe, a perda de acesso ao seu endereço de e-mail ou ao seu telemóvel para uma identificação por SMS, pode acontecer que não consiga identificar-se ou conectar-se à sua Área de Cliente.
-Se for o caso, siga [este manual](/pages/account/customer/ovhcloud-account-login#login-failure) para resolver este tipo de situação.
+Se for o caso, siga [este manual](/pages/account_and_service_management/account_information/ovhcloud-account-login#login-failure) para resolver este tipo de situação.
 
 ### Como alterar os meus dados pessoais?
 
@@ -78,7 +78,7 @@ Se pretender recuperar um nome de domínio do qual é o proprietário registado 
 
 #### Conselhos e dicas
 
-Pode consultar o seguinte manual sobre a gestão dos contactos: [/pages/account/customer/managing_contacts#aceder-a-area-de-gestao-dos-contactos](/pages/account/customer/managing_contacts#aceder-a-area-de-gestao-dos-contactos)
+Pode consultar o seguinte manual sobre a gestão dos contactos: [/pages/account_and_service_management/account_information/managing_contacts#aceder-a-area-de-gestao-dos-contactos](/pages/account_and_service_management/account_information/managing_contacts#aceder-a-area-de-gestao-dos-contactos)
 
 ### Como configurar ou modificar um contacto de faturação?
 

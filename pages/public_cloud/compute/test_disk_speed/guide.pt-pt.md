@@ -1,7 +1,6 @@
 ---
 title: Testar a velocidade dos discos
 excerpt: Testar a velocidade dos discos
-legacy_guide_number: g1956
 updated: 2022-01-04
 ---
 

@@ -195,7 +195,7 @@ Odpowiedź **"200 Permissions changed on /"** potwierdza, że operacja została 
 
 [Aktywacja zapory systemowej](/pages/web_cloud/web_hosting/multisites_activating_application_firewall)
 
-[Zmiana wersji PHP na hostingu](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014)
+[Zmiana wersji PHP na hostingu](/pages/web_cloud/web_hosting/configure_your_web_hosting)
 
 W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
 

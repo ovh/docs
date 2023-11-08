@@ -30,7 +30,7 @@ Vous pouvez cependant vous connecter à votre serveur via le [mode rescue OVHclo
 
 Afin d'accéder à votre serveur en mode rescue, la clé SSH active doit d'abord être désactivée.
 
-Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) et naviguez jusqu'à la section `Clés SSH`{.action}. Aidez-vous de notre guide [« Créer une clé SSH »](/pages/cloud/dedicated/creating-ssh-keys-dedicated#cpsshkey) si nécessaire.
+Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) et naviguez jusqu'à la section `Clés SSH`{.action}. Aidez-vous de notre guide [« Créer une clé SSH »](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated#cpsshkey) si nécessaire.
 
 La clé publique stockée dans l'espace client est inutile sans la clé privée correspondante, vous pouvez donc la supprimer. Cliquez sur le bouton <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> à droite de la clé et sélectionnez `Supprimer la clé`{.action}.
 

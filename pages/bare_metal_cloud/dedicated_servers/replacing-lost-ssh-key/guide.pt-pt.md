@@ -34,7 +34,7 @@ No entanto, pode ligar-se ao seu servidor através do [modo rescue OVHcloud](/pa
 
 Para aceder ao servidor em modo rescue, a chave SSH ativa deve ser desativada primeiro.
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e navegue até à secção `Chaves SSH`{.action}. Se necessário, consulte o nosso manual ["Criar chaves SSH"](/pages/cloud/dedicated/creating-ssh-keys-dedicated#cpsshkey).
+Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e navegue até à secção `Chaves SSH`{.action}. Se necessário, consulte o nosso manual ["Criar chaves SSH"](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated#cpsshkey).
 
 A chave pública armazenada na Área de Cliente é inútil sem a chave privada correspondente, pode eliminá-la. Clique no botão <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> à direita da chave e selecione a opção `Eliminar a chave`{.action}.
 

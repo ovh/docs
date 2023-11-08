@@ -23,7 +23,7 @@ Das OVHcloud Kundencenter erlaubt es Ihnen auch, Ihre persönlichen Daten zu ver
 - Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) angemeldet.
 
 > [!primary]
-> Bei Verbindungsschwierigkeiten zu Ihrem Account lesen Sie den [entsprechenden Abschnitt in unserer Anleitung "In das OVHcloud Kundencenter einloggen"](/pages/account/customer/ovhcloud-account-login#login-failure).
+> Bei Verbindungsschwierigkeiten zu Ihrem Account lesen Sie den [entsprechenden Abschnitt in unserer Anleitung "In das OVHcloud Kundencenter einloggen"](/pages/account_and_service_management/account_information/ovhcloud-account-login#login-failure).
 >
 
 ## In der praktischen Anwendung
@@ -46,7 +46,7 @@ Alle Empfehlungen zu Passwörtern finden Sie in unserer [Anleitung zur Passwort�
 
 #### Passwort speichern
 
-Wenn Sie das noch nicht getan haben, speichern Sie Ihr Passwort in einem [Passwort-Manager](/pages/account/customer/manage-ovh-password#einen-passwort-manager-verwenden).
+Wenn Sie das noch nicht getan haben, speichern Sie Ihr Passwort in einem [Passwort-Manager](/pages/account_and_service_management/account_information/manage-ovh-password#einen-passwort-manager-verwenden).
 
 > [!primary]
 > **KeePass** und **Bitwarden** sind kostenlose Open-Source-Passwortmanager.
@@ -158,7 +158,7 @@ Sie können die administrative **oder** technische Verwaltung **oder** die Rechn
 
 ### Was sollte ich bei Verdacht auf Identitätsbetrug tun?
 
-Wenn Sie per E-Mail über eine unbekannte Verbindung mit Ihrem Kundencenter informiert werden, empfehlen wir Ihnen, sofort [Ihr Passwort zu ändern](/pages/account/customer/manage-ovh-password#passwort-andern) und Ihren Account zusätzlich [mit Zwei-Faktor-Authentifizierung zu schützen](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa).
+Wenn Sie per E-Mail über eine unbekannte Verbindung mit Ihrem Kundencenter informiert werden, empfehlen wir Ihnen, sofort [Ihr Passwort zu ändern](/pages/account_and_service_management/account_information/manage-ovh-password#passwort-andern) und Ihren Account zusätzlich [mit Zwei-Faktor-Authentifizierung zu schützen](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa).
 
 Wenn Sie eine verdächtige Aktivität auf Ihrem Account feststellen, [kontaktieren Sie den OVHcloud Support](https://www.ovh.com/manager/dedicated/#/support/tickets/new) unter +49 681 906730, damit unsere Teams Sie bei den notwendigen Schritten unterstützen können.
 
@@ -170,6 +170,6 @@ Wenn Sie eine verdächtige Aktivität auf Ihrem Account feststellen, [kontaktier
 
 [In das OVHcloud Kundencenter einloggen](/pages/account_and_service_management/account_information/ovhcloud-account-login)
 
-[Bei fehlschlagendem Login ins Kundencenter](/pages/account/customer/ovhcloud-account-login#login-failure)
+[Bei fehlschlagendem Login ins Kundencenter](/pages/account_and_service_management/account_information/ovhcloud-account-login#login-failure)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

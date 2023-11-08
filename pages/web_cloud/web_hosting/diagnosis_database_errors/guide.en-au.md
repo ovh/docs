@@ -6,7 +6,7 @@ updated: 2022-12-09
 
 ## Objective
 
-Your database usage may result in anomalies on your website or error messages in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au), as well as on the [phpMyAdmin interface](/pages/web/hosting/sql_create_database#accessing-the-phpmyadmin-interface).
+Your database usage may result in anomalies on your website or error messages in the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au), as well as on the [phpMyAdmin interface](/pages/web_cloud/web_hosting/sql_create_database#accessing-the-phpmyadmin-interface).
 
 **Find out how to troubleshoot database errors with OVHcloud Web Hosting plans.**
 
@@ -50,7 +50,7 @@ Log in to the file storage space of your Web Hosting plan by [FTP](/pages/web_cl
 > We recommend that you contact the publisher of the [CMS](/pages/web_cloud/web_hosting/cms_install_1_click_modules) concerned or a [specialised service provider](https://partner.ovhcloud.com/en-au/directory/) if necessary. We will not be able to assist you with this.
 >
 
-Then check the **exact** match between the login details for [phpMyAdmin](/pages/web/hosting/sql_create_database#accessing-the-phpmyadmin-interface) and the login details for your website’s configuration file.
+Then check the **exact** match between the login details for [phpMyAdmin](/pages/web_cloud/web_hosting/sql_create_database#accessing-the-phpmyadmin-interface) and the login details for your website’s configuration file.
 
 If necessary, change your [database password](/pages/web_cloud/web_hosting/sql_change_password).
 
@@ -82,7 +82,7 @@ In your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&fro
 
 > [!primary]
 >
-> If you are unable to restore access to your website as a result of these changes, [back up your database](/pages/web_cloud/web_hosting/sql_database_export) then [restore it to an earlier date](/pages/web/clouddb/restore-import-on-database-server#restoring-a-specific-backup) from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au).
+> If you are unable to restore access to your website as a result of these changes, [back up your database](/pages/web_cloud/web_hosting/sql_database_export) then [restore it to an earlier date](/pages/web_cloud/web_cloud_databases/restore-import-on-database-server#restoring-a-specific-backup) from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au).
 >
 > Contact a [specialised service provider](https://partner.ovhcloud.com/en-au/directory/) if necessary. We will not be able to assist you with this.
 >
@@ -122,12 +122,12 @@ You can also migrate your data to a new database:
 
 > [!primary]
 >
-> If you have a **Performance** Web Hosting plan, you can also [activate a free Web Cloud Databases service](/pages/web/clouddb/starting_with_clouddb#clouddb-server-activation-included-with-your-web-hosting-plan).
+> If you have a **Performance** Web Hosting plan, you can also [activate a free Web Cloud Databases service](/pages/web_cloud/web_cloud_databases/starting_with_clouddb#clouddb-server-activation-included-with-your-web-hosting-plan).
 >
 
 #### Method 3: Delete unnecessary data
 
-Once you have made a [database backup](/pages/web_cloud/web_hosting/sql_database_export), log in to your [phpMyAdmin interface](/pages/web/hosting/sql_create_database#accessing-the-phpmyadmin-interface) to delete any unnecessary data using the Drop, Delete and Truncate commands.
+Once you have made a [database backup](/pages/web_cloud/web_hosting/sql_database_export), log in to your [phpMyAdmin interface](/pages/web_cloud/web_hosting/sql_create_database#accessing-the-phpmyadmin-interface) to delete any unnecessary data using the Drop, Delete and Truncate commands.
 
 Then update the data usage from the `Databases`{.action} tab of the relevant service. Click on the `...`{.action} button next to the database concerned, then select `Recalculate the quota`{.action}.
 
@@ -138,7 +138,7 @@ Then update the data usage from the `Databases`{.action} tab of the relevant ser
 
 #### Method 4: Optimise your database
 
-To optimise your database, follow the instructions in our guide "[Configuring your database server](/pages/web/clouddb/configure-database-server#managing-your-databases)". Then update the data usage from the `Databases`{.action} tab of the relevant service. Click on the `...`{.action} button next to the database concerned, then select `Recalculate the quota`{.action}.
+To optimise your database, follow the instructions in our guide "[Configuring your database server](/pages/web_cloud/web_cloud_databases/configure-database-server#managing-your-databases)". Then update the data usage from the `Databases`{.action} tab of the relevant service. Click on the `...`{.action} button next to the database concerned, then select `Recalculate the quota`{.action}.
 
 > [!warning]
 >
@@ -151,7 +151,7 @@ The following message in the `Databases`{.action} section of your [OVHcloud Cont
 
 ![quota_exceeding](images/quota_exceeding.png){.thumbnail}
 
-In this situation, you can increase the [amount of RAM](/pages/web/clouddb/configure-database-server#modifying-the-database-server-solution) available from the `Databases`{.action} section of your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au). In the `General information`{.action} tab, click on the `...`{.action} in the `RAM` section.
+In this situation, you can increase the [amount of RAM](/pages/web_cloud/web_cloud_databases/configure-database-server#modifying-the-database-server-solution) available from the `Databases`{.action} section of your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au). In the `General information`{.action} tab, click on the `...`{.action} in the `RAM` section.
 
 > [!warning]
 >
@@ -162,7 +162,7 @@ In this situation, you can increase the [amount of RAM](/pages/web/clouddb/confi
 > In the `Configuration` box, click the `...`{.action} button to the right of the `Private database` entry, then click the `Detach`{.action} button.
 > 
 
-You can also optimise your database by following the instructions of our guide "[Configuring your database server](/pages/web/clouddb/configure-database-server#managing-your-databases)".
+You can also optimise your database by following the instructions of our guide "[Configuring your database server](/pages/web_cloud/web_cloud_databases/configure-database-server#managing-your-databases)".
 
 > [!primary]
 >
@@ -181,7 +181,7 @@ This error message means that the database you are trying to import contains ele
 
 First make sure that your database is empty from the `Databases`{.action} tab of the relevant service. Click on the `...`{.action} button next to the database concerned, then select `Recalculate the quota`{.action}. (If you need to save the existing data first, follow the [backup instructions](/pages/web_cloud/web_hosting/sql_database_export), then delete the data and relaunch the import operation.)
 
-You can also tick the `Empty the current database`{.action} box just before [launching the import](/pages/web/hosting/sql_importing_mysql_database#import-your-own-backup-via-your-control-panel):
+You can also tick the `Empty the current database`{.action} box just before [launching the import](/pages/web_cloud/web_hosting/sql_importing_mysql_database#import-your-own-backup-via-your-control-panel):
 
 ![database-import-empty](images/database-import-empty.png){.thumbnail}
 
@@ -212,15 +212,15 @@ Replace `Database-Name` with the name of the database as displayed in your [OVHc
 > **"404 ERROR MySQL server has gone away"**
 >
 
-This error message appears when [importing a database](/pages/web/clouddb/restore-import-on-database-server#importing-a-local-backup) on a [Web Cloud Databases server](/pages/web_cloud/web_cloud_databases/starting_with_clouddb). I most cases, it is caused by the quantity of data to be imported being too large or by non-optimised SQL queries in the import script.
+This error message appears when [importing a database](/pages/web_cloud/web_cloud_databases/restore-import-on-database-server#importing-a-local-backup) on a [Web Cloud Databases server](/pages/web_cloud/web_cloud_databases/starting_with_clouddb). I most cases, it is caused by the quantity of data to be imported being too large or by non-optimised SQL queries in the import script.
 
 To resolve this issue, you can use the following methods:
 
-- Increase the [amount of RAM](/pages/web/clouddb/configure-database-server#modifying-the-database-server-solution): go to the [Web Cloud Databases server](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) concerned in the `Databases` section of your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au). Then click on the `...`{.action} button in the `RAM` section and select `Change the amount of RAM`{.action}.
+- Increase the [amount of RAM](/pages/web_cloud/web_cloud_databases/configure-database-server#modifying-the-database-server-solution): go to the [Web Cloud Databases server](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) concerned in the `Databases` section of your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au). Then click on the `...`{.action} button in the `RAM` section and select `Change the amount of RAM`{.action}.
 
 - Split your database in order to import it through multiple operations instead of one. (For any questions on the necessary steps, contact our [community](https://community.ovh.com/en/) or [OVHcloud partners](https://partner.ovhcloud.com/en-au/directory/). We will not be able to assist you with this.)
 
-- [Optimise your database](/pages/web/clouddb/configure-database-server#managing-your-databases), then repeat the export/import operations.
+- [Optimise your database](/pages/web_cloud/web_cloud_databases/configure-database-server#managing-your-databases), then repeat the export/import operations.
 
 ### Unable to access phpMyAdmin
 
@@ -230,11 +230,11 @@ To resolve this issue, you can use the following methods:
 > **"mysqli::real_connect(): (HY000/1045): Access denied for user"**
 >
 
-This error message may appear when connecting to your database by [phpMyAdmin](/pages/web/hosting/sql_create_database#accessing-the-phpmyadmin-interface). It indicates that the credentials entered are incorrect.
+This error message may appear when connecting to your database by [phpMyAdmin](/pages/web_cloud/web_hosting/sql_create_database#accessing-the-phpmyadmin-interface). It indicates that the credentials entered are incorrect.
 
 ![access_denied_for_user](images/access_denied_for_user.png){.thumbnail}
 
-In this situation, [check the credentials entered](/pages/web/clouddb/connecting-to-database-on-database-server#instructions) and change your [database password](/pages/web_cloud/web_hosting/sql_change_password) if necessary.
+In this situation, [check the credentials entered](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server#instructions) and change your [database password](/pages/web_cloud/web_hosting/sql_change_password) if necessary.
 
 #### "Too many connections"
 
@@ -246,9 +246,9 @@ The maximum number of active connections for databases delivered with a shared h
 
 This number increases to **200** for the [Web Cloud Databases service](/pages/web_cloud/web_cloud_databases/starting_with_clouddb). (This setting can be modified in the `Configuration`{.action} section of your database service.)
 
-A "Too many connections" error when [connecting to phpMyAdmin](/pages/web/hosting/sql_create_database#accessing-the-phpmyadmin-interface) appears, if this maximum number of connections is exceeded.
+A "Too many connections" error when [connecting to phpMyAdmin](/pages/web_cloud/web_hosting/sql_create_database#accessing-the-phpmyadmin-interface) appears, if this maximum number of connections is exceeded.
 
-In this situation, you will need to [optimise your databases](/pages/web/clouddb/configure-database-server#managing-your-databases) in order to reduce the number of active connections.
+In this situation, you will need to [optimise your databases](/pages/web_cloud/web_cloud_databases/configure-database-server#managing-your-databases) in order to reduce the number of active connections.
 
 > [!warning]
 >

@@ -93,7 +93,7 @@ O artigo 12 das [Condições Gerais de Serviço](https://www.ovh.pt/suporte/docu
 > O direito de retração só diz respeito aos particulares e só se aplica às novas encomendas. Assim, não pode invocá-lo:
 >
 > - renovações;
-> - se a sua conta de cliente OVHcloud é de [outro tipo que não Particer](/pages/account/customer/all_about_username#modificar-o-tipo-de-conta).
+> - se a sua conta de cliente OVHcloud é de [outro tipo que não Particer](/pages/account_and_service_management/account_information/all_about_username#modificar-o-tipo-de-conta).
 >
 > Além disso, o direito de retratação não se aplica às encomendas não pagas, uma vez que estas são automaticamente anuladas quando a nota de encomenda expira.
 >

@@ -238,7 +238,7 @@ If you encounter issues with your connection, i.e. errors regarding your SSH key
 
 > [!primary]
 >
-If you created an instance without an SSH key via the OVHcloud API or the Openstack Horizon interface, you will only be able to add an SSH key to your instance via [rescue mode](/pages/public_cloud/compute/put_an_instance_in_rescue_mode) by following the instructions in this [section](/pages/platform/public-cloud/replacing_lost_ssh_key#instructions) of the relevant guide.
+If you created an instance without an SSH key via the OVHcloud API or the Openstack Horizon interface, you will only be able to add an SSH key to your instance via [rescue mode](/pages/public_cloud/compute/put_an_instance_in_rescue_mode) by following the instructions in this [section](/pages/public_cloud/compute/replacing_lost_ssh_key#instructions) of the relevant guide.
 >
 
 #### Connecting to a Linux OS instance from Linux OS / Mac

@@ -21,7 +21,7 @@ L'intérêt d'utiliser plusieurs buckets Object Storage S3 est de séparer les s
 - [Deux buckets Object Storage S3](/pages/storage_and_backup/object_storage/s3_create_bucket) créé.
 - [Configurer les droits 'Lecture et Écriture'](/pages/storage_and_backup/object_storage/s3_identity_and_access_management#manage-access-to-a-bucket-via-a-profile) pour l'utilisateur S3 sur les buckets Object Storage S3.
 - Une base de données SAP HANA installée.
-- [OVHcloud Backint Agent pour SAP HANA installé](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook-install-ovhcloud-backint-agent).
+- [OVHcloud Backint Agent pour SAP HANA installé](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook_install_ovhcloud_backint_agent).
 
 > [!warning]
 > La clé d'accès et la clé secrète ne doivent à aucun moment être communiquées à un tiers. Elles correspondent aux identifiants permettant d'écrire, de lire et de supprimer les données qui seront stockées dans ces buckets Object Storage S3.
@@ -32,7 +32,7 @@ L'intérêt d'utiliser plusieurs buckets Object Storage S3 est de séparer les s
 ### Object Storage S3
 
 > [!primary]
-> Pour obtenir les informations relatives à la configuration et à l'utilisation des commandes AWS S3 CLI, veuillez vous référer à la documentation disponible [Premiers pas avec Object Storage](https://docs.ovh.com/ca/fr/storage/object-storage/s3/getting-started-with-object-storage/).
+> Pour obtenir les informations relatives à la configuration et à l'utilisation des commandes AWS S3 CLI, veuillez vous référer à la documentation disponible [Premiers pas avec Object Storage](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage).
 >
 
 Le versioning des buckets doit être activé afin d'assurer le bon fonctionnement d'OVHcloud Backint Agent.
@@ -70,7 +70,7 @@ s3api put-bucket-versioning \
 
 Éditez le contenu du fichier `hdbbackint.cfg` et remplacez les valeurs entre parenthèses par les informations de votre premier bucket Object Storage S3.
 
-```
+```{.console}
 [trace]
 default = INFO
 destination = outputfile
@@ -289,6 +289,6 @@ Pour restaurer de votre base de données SAP HANA depuis une sauvegarde réalis�
 
 ## Aller plus loin
 
-Afin d'améliorer la sécurité de vos sauvegardes, nous vous conseillons de mettre en place la [gestion de l'immutabilité](https://docs.ovh.com/ca/fr/storage/object-storage/s3/managing-object-lock/).
+Afin d'améliorer la sécurité de vos sauvegardes, nous vous conseillons de mettre en place la [gestion de l'immutabilité](/pages/storage_and_backup/object_storage/s3_managing_object_lock).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

@@ -1,7 +1,6 @@
 ---
 title: 'Changing the DNS servers of Public Cloud instances'
 excerpt: 'Find out how to change the default DNS servers on a Public Cloud instance'
-legacy_guide_number: 1985
 updated: 2021-10-29
 ---
 
@@ -25,7 +24,7 @@ The default DNS server configured on instances you create will be the OVHcloud s
 
 ## Instructions
 
-Log in to your instance via SSH. Refer to our guide on [Connecting to a Public Cloud instance](/pages/platform/public-cloud/public-cloud-first-steps#connect-to-instance) if necessary.
+Log in to your instance via SSH. Refer to our guide on [Connecting to a Public Cloud instance](/pages/public_cloud/compute/public-cloud-first-steps#connect-to-instance) if necessary.
 
 Switch to the root user. Refer to our guide on [Becoming the root user and selecting a password](/pages/public_cloud/compute/become_root_and_change_password) if necessary.
 
@@ -128,7 +127,7 @@ DNS configuration:
 
 ### On Windows
 
-Connect to the instance via remote desktop session or with the VNC console. Refer to our guide on [Connecting to a Public Cloud instance](/pages/platform/public-cloud/public-cloud-first-steps#connect-to-instance) if necessary.
+Connect to the instance via remote desktop session or with the VNC console. Refer to our guide on [Connecting to a Public Cloud instance](/pages/public_cloud/compute/public-cloud-first-steps#connect-to-instance) if necessary.
 
 Open the `Network settings`{.action}.
 

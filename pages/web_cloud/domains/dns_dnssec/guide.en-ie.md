@@ -1,7 +1,6 @@
 ---
 title: 'Securing your domain name with DNSSEC'
 excerpt: 'Protect your domain name from cache poisoning by activating DNSSEC'
-legacy_guide_number: g609
 updated: 2023-07-26
 ---
 

@@ -1,11 +1,12 @@
 ---
-title: "Spécifications de sécurité du service Hosted Private Cloud VMware sous la qualification SecNumCloud "
-updated: 2023-08-25
+title: "Spécifications de sécurité du service VMware on OVHcloud sous la qualification SecNumCloud"
+excerpt: "Découvrez les particularités et fonctions de sécurité ainsi que les bonnes pratiques pour l'utilisation des service VMware on OVHcloud sous la qualification SecNumCloud"
+updated: 2023-09-06
 ---
 
 ## Objectif
 
-En complément au [modèle de responsabilité entre OVHcloud et le client sur le service Hosted Private Cloud powered by VMware sous la qualification SecNumcloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/SNC-responsibility-sharing), cette fiche a pour objectif de présenter les particularités et fonctions de sécurité propres à ce service. Elle met aussi en avant des bonnes pratiques qui permettront au client de l'exploiter au mieux.
+En complément au [modèle de responsabilité entre OVHcloud et le client sur le service VMware on OVHcloud sous la qualification SecNumcloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/SNC-responsibility-sharing), cette fiche a pour objectif de présenter les particularités et fonctions de sécurité propres à ce service. Elle met aussi en avant des bonnes pratiques qui permettront au client de l'exploiter au mieux.
 
 ## 1 - Certifications
 
@@ -14,7 +15,6 @@ En complément au [modèle de responsabilité entre OVHcloud et le client sur le
 - ISO/IEC 27017
 - ISO/IEC 27018
 - HDS
-- PCI DSS
 - SecNumCloud
 - SOC 1 type II
 - SOC 2 type II
@@ -87,7 +87,7 @@ Le client bénéficiant d'une infrastructure Hosted Private Cloud qualifiée Sec
 
 ### 7.1 - Control Plane
 
-A travers votre espace client OVHcloud, vous avez la possibilité de gérer le service à l'aide de [trois contacts types](/pages/account/customer/managing_contacts#definition).
+A travers votre espace client OVHcloud, vous avez la possibilité de gérer le service à l'aide de [trois contacts types](/pages/account_and_service_management/account_information/managing_contacts#definition).
 
 Afin de référencer chaque client ayant souscrit à un ou plusieurs services, OVHcloud utilise un compte propriétaire avec un *NIC* interne. 
 
@@ -157,9 +157,9 @@ La même opération peut être réalisée si vous optez pour l'utilisation d'un 
 
 Le mode d'emploi est disponible via [ce lien](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vm_encrypt-vnkp).
 
-### 9.2.6 6 Sécurité avancée avec HDS et PCI DSS
+### 9.2.6 Sécurité avancée avec HDS
 
-Vous pouvez bénéficier d'un pack sécurité avancée en activant les options HDS ou PCI DSS sur votre infrastructure.
+Vous pouvez bénéficier d'un pack sécurité avancée en activant les options HDS sur votre infrastructure.
 
 Le pack comprend plusieurs fonctionnalités telles que [token validator](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/interface-secure), accès via 2FA, session Timeout, Fail2ban, hids, forcer le protocole TLS v1.2, etc.
 

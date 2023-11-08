@@ -13,7 +13,7 @@ La création d'un nom de domaine, son transfert, son changement de propriétaire
 
 - Posséder un ou plusieurs noms de domaine.
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
-- Être à jour dans les [paiements](/pages/account/billing/invoice_management#pay-bills) et [renouvellements](/pages/account/billing/how_to_use_automatic_renewal#renewal-management) de vos noms de domaine.
+- Être à jour dans les [paiements](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) et [renouvellements](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) de vos noms de domaine.
 
 ## En pratique
 
@@ -42,7 +42,7 @@ Nous allons nous intéresser dans ce guide aux opérations **en erreur** au trav
 >
 > La liste d'exemples ci-dessous est non-exhaustive. Si vous rencontrez une erreur qui n'est pas détaillée dans ce guide :
 >
-> - Vérifiez que vous êtes à jour dans les [paiements](/pages/account/billing/invoice_management#pay-bills) et [renouvellements](/pages/account/billing/how_to_use_automatic_renewal#renewal-management) de vos noms de domaine.
+> - Vérifiez que vous êtes à jour dans les [paiements](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) et [renouvellements](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) de vos noms de domaine.
 > - Vérifiez si vous pouvez agir en cliquant sur le bouton `...`{.action} à droite de l'opération concernée.
 > - Lisez le message descriptif et vérifiez s'il vous permet de résoudre l'erreur.
 >

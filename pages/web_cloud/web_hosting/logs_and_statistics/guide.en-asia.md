@@ -48,7 +48,7 @@ From the tab of your browser that displays the statistics window, retrieve the l
 
 > [!warning] 
 >
-> If you have enabled separate logs on a [multisite entry](/pages/web/hosting/multisites_configure_multisite#step-2-add-a-domain-or-subdomain), users created here cannot access statistics for that multisite entry.
+> If you have enabled separate logs on a [multisite entry](/pages/web_cloud/web_hosting/multisites_configure_multisite#step-2-add-a-domain-or-subdomain), users created here cannot access statistics for that multisite entry.
 >
 
 ### Visit statistics

@@ -61,7 +61,7 @@ Per ottimizzare l'invio e ridurre i rischi di blocco delle tue email, è necessa
 
 Per prima cosa, crea un record A nella zona DNS del tuo dominio con l'indirizzo IP del tuo server come destinazione.
 
-Se i server DNS sono gestiti da OVHcloud, consulta questa [guida](/pages/web/domains/dns_zone_edit#accedere-alla-gestione-di-una-zona-dns-ovhcloud).
+Se i server DNS sono gestiti da OVHcloud, consulta questa [guida](/pages/web_cloud/domains/dns_zone_edit#accedere-alla-gestione-di-una-zona-dns-ovhcloud).
 
 Una volta modificata la zona DNS del dominio, la propagazione delle modifiche potrebbe richiedere fino a 24 ore.
 

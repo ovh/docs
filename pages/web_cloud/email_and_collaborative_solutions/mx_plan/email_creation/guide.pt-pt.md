@@ -1,7 +1,6 @@
 ---
 title: 'Criar um endereço de e-mail com a oferta MX Plan'
 excerpt: 'Saiba como criar um endereço de e-mail com a oferta MX Plan'
-legacy_guide_number: g1343
 updated: 2022-10-11
 ---
 

@@ -1,6 +1,5 @@
 ---
 title: 'Transferir la gestión de sus cuentas de correo a otra persona'
-legacy_guide_number: 1933
 excerpt: 'Cómo delegar la gestión de las cuentas de correo de su solución MX Plan'
 updated: 2021-10-08
 ---
@@ -32,7 +31,7 @@ La delegación ofrece al usuario de una cuenta de correo la posibilidad de gesti
 |Versión histórica de la solución MX Plan|Nueva versión de la solución MX Plan|
 |---|---|
 |![Correo electrónico](images/mxplan-starter-legacy-step1.png){.thumbnail}<br> El nombre del producto aparece en el recuadro «Suscripción», en el epígrafe «Producto».|![Correo electrónico](images/mxplan-starter-new-step1.png){.thumbnail}<br>El nombre del producto aparece en el recuadro Resumen, en el epígrafe Referencia del servidor.|
-|Continúe leyendo esta guía en el apartado "[Procedimiento](#oldmxplan)".|Consulte nuestra guía "[Consultar su cuenta Exchange desde la interfaz OWA](/pages/web/emails/email_owa#cambiar-la-contrasena)"|
+|Continúe leyendo esta guía en el apartado "[Procedimiento](#oldmxplan)".|Consulte nuestra guía "[Consultar su cuenta Exchange desde la interfaz OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa#cambiar-la-contrasena)"|
 
 ## Procedimiento <a name="oldmxplan"></a>
 

@@ -68,7 +68,7 @@ Das Gerät wird über das Betriebssystem erkannt und wie folgt angezeigt: `/dev/
 
 ### Seriennummer einer Festplatte ermitteln (Hardware-RAID)
 
-Für eine detaillierte Übersicht der Befehle sowie die Vorgehensweise beim Testen Ihrer Festplatten lesen Sie folgende [Anleitung (LSI Raid Controller)](/pages/cloud/dedicated/raid_hard#using-the-lsi-raid-controller){.external} (Englisch).
+Für eine detaillierte Übersicht der Befehle sowie die Vorgehensweise beim Testen Ihrer Festplatten lesen Sie folgende [Anleitung (LSI Raid Controller)](/pages/bare_metal_cloud/dedicated_servers/raid_hard#using-the-lsi-raid-controller){.external} (Englisch).
 
 #### MegaRaid-Controller
 

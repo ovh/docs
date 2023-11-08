@@ -47,9 +47,9 @@ Choisissez `SFTP`{.action} ou `Activé`{.action} (pour activer le protocole SSH 
 
 ### J'ai transféré mes fichiers avec un logiciel FTP, mais mon site ne s'affiche pas.
 
-Vérifiez tout d'abord que les fichiers et dossiers de votre site sont bien présents dans le [dossier racine](/pages/web/hosting/hosting_how_to_get_my_website_online#3-telecharger-les-fichiers-sur-lespace-de-stockage) de votre hébergement.
+Vérifiez tout d'abord que les fichiers et dossiers de votre site sont bien présents dans le [dossier racine](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online#3-telecharger-les-fichiers-sur-lespace-de-stockage) de votre hébergement.
 
-Si vous avez réalisé une modification dans vos [serveurs ou votre zone DNS](/pages/web/domains/dns_zone_edit#comprendre-la-notion-de-dns) il y a moins de 48 heures, patientez et redémarrez régulièrement vos appareils afin de vider leur cache.
+Si vous avez réalisé une modification dans vos [serveurs ou votre zone DNS](/pages/web_cloud/domains/dns_zone_edit#comprendre-la-notion-de-dns) il y a moins de 48 heures, patientez et redémarrez régulièrement vos appareils afin de vider leur cache.
 
 ### Mes identifiants FTP ne fonctionnent pas.
 
@@ -81,7 +81,7 @@ Ce lien est installé par défaut sur les hébergements mutualisés OVHcloud. Il
 
 ![site_under_construction](images/site_under_construction.png){.thumbnail}
 
-Si vous n'avez pas utilisé la fonctionnalité « [Module en 1 clic](/pages/web_cloud/web_hosting/cms_install_1_click_modules) » pour créer votre site, vous devrez utiliser le logiciel [Net2FTP](/pages/web/hosting/ftp_connection#1-connexion-via-le-ftp-explorer) accessible via l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) afin de supprimer manuellement la page « Site en construction ».
+Si vous n'avez pas utilisé la fonctionnalité « [Module en 1 clic](/pages/web_cloud/web_hosting/cms_install_1_click_modules) » pour créer votre site, vous devrez utiliser le logiciel [Net2FTP](/pages/web_cloud/web_hosting/ftp_connection#1-connexion-via-le-ftp-explorer) accessible via l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) afin de supprimer manuellement la page « Site en construction ».
 
 ## Aller plus loin <a name="aller-plus-loin"></a>
 

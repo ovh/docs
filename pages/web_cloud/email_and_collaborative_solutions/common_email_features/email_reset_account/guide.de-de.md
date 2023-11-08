@@ -28,7 +28,7 @@ Sie möchten:
 OVHcloud bietet 3 E-Mail-Lösungen an. Das Konzept der Löschung von Accounts variiert je nach ausgewähltem Dienst.
 
 - **MX Plan**: Dieses Angebot enthält eine bestimmte Anzahl an E-Mail-Accounts als Gesamtpaket. Wenn Sie einen E-Mail-Account löschen, wird der "Slot" dieses Accounts freigegeben.
-- **E-Mail Pro** und **Hosted Exchange**: Jedes dieser Angebote besteht aus dem Dienst selbst und individuell abgerechneten E-Mail-Accounts. Wenn Sie einen E-Mail-Account löschen möchten, müssen Sie diesen zuerst **zurücksetzen**. Wenn Sie Ihren E-Mail-Account zurückgesetzt haben, können Sie diesen erneut verwenden, um eine neue E-Mail-Adresse zu erstellen. Um diesen Account endgültig zu löschen, muss sein [Abonnement gekündigt werden](/pages/web/microsoft-collaborative-solutions/manage_billing_exchange#accounts-entfernen).
+- **E-Mail Pro** und **Hosted Exchange**: Jedes dieser Angebote besteht aus dem Dienst selbst und individuell abgerechneten E-Mail-Accounts. Wenn Sie einen E-Mail-Account löschen möchten, müssen Sie diesen zuerst **zurücksetzen**. Wenn Sie Ihren E-Mail-Account zurückgesetzt haben, können Sie diesen erneut verwenden, um eine neue E-Mail-Adresse zu erstellen. Um diesen Account endgültig zu löschen, muss sein [Abonnement gekündigt werden](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_billing_exchange#accounts-entfernen).
 
 ### E-Mail-Account löschen oder zurücksetzen
 

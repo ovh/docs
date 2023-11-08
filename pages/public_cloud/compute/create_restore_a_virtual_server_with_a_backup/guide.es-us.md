@@ -1,7 +1,6 @@
 ---
 title: 'Crear o restaurar un servidor virtual a partir de un snapshot'
 excerpt: 'Crear o restaurar un servidor virtual a partir de un snapshot'
-legacy_guide_number: g1882
 updated: 2021-03-19
 ---
 
@@ -48,7 +47,7 @@ Algunos elementos están predefinidos:
 
 Asigne un nombre a la nueva instancia, la llave SSH, el vRack y el período de facturación y haga clic en el botón `Crear la instancia`{.action}.
 
-Para más información sobre la creación de una instancia, consulte [la presente guía](/pages/platform/public-cloud/public-cloud-first-steps#3-crear-una-instancia).
+Para más información sobre la creación de una instancia, consulte [la presente guía](/pages/public_cloud/compute/public-cloud-first-steps#3-crear-una-instancia).
 
 > [!primary]
 >

@@ -105,8 +105,8 @@ W zależności od wersji PHP, której chcesz używać, środowisko uruchomieniow
 
 ## Sprawdź również
 
-[Zmiana konfiguracji hostingu](/pages/web_cloud/web_hosting/ovhconfig_modify_system_runtime).
+[Zmiana konfiguracji hostingu](/pages/web_cloud/web_hosting/configure_your_web_hosting).
 
-[Konfiguracja pliku .ovhconfig w hostingu](/pages/web_cloud/web_hosting/ovhconfig_configuration).
+[Konfiguracja pliku .ovhconfig w hostingu](/pages/web_cloud/web_hosting/configure_your_web_hosting).
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

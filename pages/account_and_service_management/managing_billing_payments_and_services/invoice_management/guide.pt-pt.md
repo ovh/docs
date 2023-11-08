@@ -118,7 +118,7 @@ Para efetuar o pagamento das suas faturas com pagamento pendente, clique no menu
 
 ![Pagamento da dívida](images/pay_debt.png){.thumbnail}
 
-Será criada uma [nota de encomenda de regularização](/pages/account/billing/managing_ovh_orders#a-nota-de-encomenda). Uma vez realizado o pagamento, a situação ficará regularizada.
+Será criada uma [nota de encomenda de regularização](/pages/account_and_service_management/managing_billing_payments_and_services/managing_ovh_orders#a-nota-de-encomenda). Uma vez realizado o pagamento, a situação ficará regularizada.
 
 #### Pedir a anulação de uma fatura
 
@@ -127,7 +127,7 @@ Será criada uma [nota de encomenda de regularização](/pages/account/billing/m
 > Para solicitar a rescisão do serviço na data de expiração, siga as instruções deste [guia](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_cancel_services).
 >
 
-Se recebeu uma fatura que não considera legítima e deseja pedir o seu reembolso, ou fazer valer o seu [direito de retratação](/pages/account/billing/managing_ovh_orders#direito-de-retratacao), pode efetuar uma reclamação através do seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), sob reserva da aplicação das nossas [Condições Gerais de Serviço](https://www.ovh.pt/suporte/documentos_legais/OVH_COND_GERAIS.pdf).
+Se recebeu uma fatura que não considera legítima e deseja pedir o seu reembolso, ou fazer valer o seu [direito de retratação](/pages/account_and_service_management/managing_billing_payments_and_services/managing_ovh_orders#direito-de-retratacao), pode efetuar uma reclamação através do seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), sob reserva da aplicação das nossas [Condições Gerais de Serviço](https://www.ovh.pt/suporte/documentos_legais/OVH_COND_GERAIS.pdf).
 <br>Clique no canto superior direito do seu ecrã no seu nome e depois em `Criar um ticket`{.action}.
 
 ### Seguir os seus pagamentos

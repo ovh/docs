@@ -47,7 +47,7 @@ Antes de criar assinaturas, tenha em consideração o seguinte:
 ![exchangesig](images/exchange-footer-step5.png){.thumbnail}
 
 - A assinatura será adicionada ao corpo do e-mail sem quebras, pelo que aconselhamos que a comece com pelo menos uma linha em branco.
-- No OWA não se indica se o domínio tem uma assinatura ativa e **não há sincronização**. Se os utilizadores acrescentarem uma [assinatura própria](/pages/web/emails/email_owa#adicionar-assinatura), os e-mails vão incluir tanto a assinatura individual quanto a assinatura associada ao domínio.
+- No OWA não se indica se o domínio tem uma assinatura ativa e **não há sincronização**. Se os utilizadores acrescentarem uma [assinatura própria](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa#adicionar-assinatura), os e-mails vão incluir tanto a assinatura individual quanto a assinatura associada ao domínio.
 - O editor permite formatação HTML, hiperligações, imagens, etc. Contudo, as assinaturas não deverão contar demasiado com estas opções. Os destinatários podem usar clientes de e-mail incompatíveis com HTML e imagens integradas, ou então as assinaturas podem ser exibidas de forma distorcida. Tenha em conta que as tags HTML serão removidas por completo se a mensagem for enviada como «Texto simples» a partir do OWA.
 - O serviço não conta com a opção «Initials». Se introduzir esta variável, não verificará nenhum efeito.
 

@@ -1,7 +1,6 @@
 ---
 title: Creating a snapshot
 excerpt: Find out how to return to a previous status of your VM using snapshots
-legacy_guide_number: '7766547'
 updated: 2020-11-18
 ---
 

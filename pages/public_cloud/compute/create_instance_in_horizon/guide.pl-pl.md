@@ -1,7 +1,6 @@
 ---
 title: 'Tworzenie instancji w interfejsie Horizon'
 excerpt: 'Dowiedz się, jak utworzyć instancję w interfejsie Horizon'
-legacy_guide_number: g1772
 updated: 2022-08-01
 ---
 
@@ -54,7 +53,7 @@ Wprowadź następnie odpowiednie dane. W razie potrzeby skorzystaj z poniższej 
 
 > [!warning] 
 > 
-> Chociaż pole "Key Pair" nie jest obowiązkowe w interfejsie Horizon podczas tworzenia instancji, rejestracja klucza SSH jest absolutnie konieczna, aby móc połączyć się z instancją. Bez klucza SSH będziesz musiał zrestartować instancję w trybie Rescue, aby móc utworzyć hasło lub dodać klucz SSH do odpowiedniego pliku (aby uzyskać więcej informacji, zapoznaj się z przewodnikiem [Zmiana klucza SSH w przypadku utraty](/pages/platform/public-cloud/replacing_lost_ssh_key#w-praktyce)).
+> Chociaż pole "Key Pair" nie jest obowiązkowe w interfejsie Horizon podczas tworzenia instancji, rejestracja klucza SSH jest absolutnie konieczna, aby móc połączyć się z instancją. Bez klucza SSH będziesz musiał zrestartować instancję w trybie Rescue, aby móc utworzyć hasło lub dodać klucz SSH do odpowiedniego pliku (aby uzyskać więcej informacji, zapoznaj się z przewodnikiem [Zmiana klucza SSH w przypadku utraty](/pages/public_cloud/compute/replacing_lost_ssh_key#w-praktyce)).
 >
 
 Kiedy jesteś gotowy, aby uruchomić instancję lub instancje, kliknij przycisk `Launch Instance`{.action}.

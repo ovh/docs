@@ -1,7 +1,6 @@
 ---
 title: Ressourcen einer virtuellen Maschine anpassen
 excerpt: 'Erfahren Sie hier, wie Sie Ihre virtuelle Maschine skalieren'
-legacy_guide_number: g587
 updated: 2020-11-18
 ---
 

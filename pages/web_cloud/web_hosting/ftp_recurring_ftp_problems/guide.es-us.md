@@ -51,9 +51,9 @@ Seleccione `SFTP`{.action} o `Activado`{.action} (para activar el protocolo SSH 
 
 ### He transferido mis archivos con un programa FTP, pero mi sitio web no aparece.
 
-En primer lugar, compruebe que los archivos y carpetas del sitio web estén presentes en la [carpeta raíz](/pages/web/hosting/hosting_how_to_get_my_website_online#23-cargar-los-archivos-en-el-espacio-de-almacenamiento) del alojamiento.
+En primer lugar, compruebe que los archivos y carpetas del sitio web estén presentes en la [carpeta raíz](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online#23-cargar-los-archivos-en-el-espacio-de-almacenamiento) del alojamiento.
 
-Si ha realizado alguna modificación en sus [servidores o su zona DNS](/pages/web/domains/dns_zone_edit#entender-el-concepto-de-dns) hace menos de 48 horas, espere y reinicie regularmente sus dispositivos para vaciar su caché.
+Si ha realizado alguna modificación en sus [servidores o su zona DNS](/pages/web_cloud/domains/dns_zone_edit#entender-el-concepto-de-dns) hace menos de 48 horas, espere y reinicie regularmente sus dispositivos para vaciar su caché.
 
 ### Mis claves FTP no funcionan.
 
@@ -85,7 +85,7 @@ Este enlace se instala por defecto en los alojamientos compartidos de OVHcloud. 
 
 ![site_under_construction](images/site_under_construction.png){.thumbnail}
 
-Si no ha utilizado la funcionalidad "[Módulo en 1 clic](/pages/web_cloud/web_hosting/cms_install_1_click_modules)" para crear su sitio web, deberá utilizar el programa [Net2FTP](/pages/web/hosting/ftp_connection#21-conexion-mediante-un-explorador-ftp) accesible desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) para eliminar manualmente la página "Sitio en construcción".
+Si no ha utilizado la funcionalidad "[Módulo en 1 clic](/pages/web_cloud/web_hosting/cms_install_1_click_modules)" para crear su sitio web, deberá utilizar el programa [Net2FTP](/pages/web_cloud/web_hosting/ftp_connection#21-conexion-mediante-un-explorador-ftp) accesible desde el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) para eliminar manualmente la página "Sitio en construcción".
 
 ## Más información <a name="gofurther"></a>
 

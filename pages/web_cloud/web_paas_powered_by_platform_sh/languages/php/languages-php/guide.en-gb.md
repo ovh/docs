@@ -172,7 +172,7 @@ because the dependencies aren't yet present.
 To resolve this, you have two options:
 
 - Have your script `include` dependencies instead of `require` and fail gracefully if the dependencies aren't there.
-- Enable preloading with a variable that [isn't available during the build](/pages/web/web-paas/development-variables#setting-variables). Then preloading happens only on deploy.
+- Enable preloading with a variable that [isn't available during the build](/pages/web_cloud/web_paas_powered_by_platform_sh/development/development-variables#setting-variables). Then preloading happens only on deploy.
 
 ## FFI
 
@@ -234,28 +234,28 @@ The individual service pages have more information on configuring each service.
 
 > [!tabs]
 > Elasticsearch
->> [PHP - Elasticsearch](https://github.com/ovh/docs/blob/develop/pages/web/web-paas/static/files/fetch/examples/php/elasticsearch)
+>> [PHP - Elasticsearch](https://github.com/ovh/docs/blob/develop/pages/web_cloud/web_paas_powered_by_platform_sh/static/files/fetch/examples/php/elasticsearch)
 >>
 > Memcached     
->> [PHP - Memcached](https://github.com/ovh/docs/blob/develop/pages/web/web-paas/static/files/fetch/examples/php/memcached)
+>> [PHP - Memcached](https://github.com/ovh/docs/blob/develop/pages/web_cloud/web_paas_powered_by_platform_sh/static/files/fetch/examples/php/memcached)
 >>
 > MongoDB     
->> [PHP - MongoDB](https://github.com/ovh/docs/blob/develop/pages/web/web-paas/static/files/fetch/examples/php/mongodb)
+>> [PHP - MongoDB](https://github.com/ovh/docs/blob/develop/pages/web_cloud/web_paas_powered_by_platform_sh/static/files/fetch/examples/php/mongodb)
 >>
 > MySQL     
->> [PHP - MySQL](https://github.com/ovh/docs/blob/develop/pages/web/web-paas/static/files/fetch/examples/php/mysql)
+>> [PHP - MySQL](https://github.com/ovh/docs/blob/develop/pages/web_cloud/web_paas_powered_by_platform_sh/static/files/fetch/examples/php/mysql)
 >>
 > PostgreSQL     
->> [PHP - PostgreSQL](https://github.com/ovh/docs/blob/develop/pages/web/web-paas/static/files/fetch/examples/php/postgresql)
+>> [PHP - PostgreSQL](https://github.com/ovh/docs/blob/develop/pages/web_cloud/web_paas_powered_by_platform_sh/static/files/fetch/examples/php/postgresql)
 >>
 > RabbitMQ     
->> [PHP - RabbitMQ](https://github.com/ovh/docs/blob/develop/pages/web/web-paas/static/files/fetch/examples/php/rabbitmq)
+>> [PHP - RabbitMQ](https://github.com/ovh/docs/blob/develop/pages/web_cloud/web_paas_powered_by_platform_sh/static/files/fetch/examples/php/rabbitmq)
 >>
 > Redis     
->> [PHP - Redis](https://github.com/ovh/docs/blob/develop/pages/web/web-paas/static/files/fetch/examples/php/redis)
+>> [PHP - Redis](https://github.com/ovh/docs/blob/develop/pages/web_cloud/web_paas_powered_by_platform_sh/static/files/fetch/examples/php/redis)
 >>
 > Solr     
->> [PHP - Solr](https://github.com/ovh/docs/blob/develop/pages/web/web-paas/static/files/fetch/examples/php/solr)
+>> [PHP - Solr](https://github.com/ovh/docs/blob/develop/pages/web_cloud/web_paas_powered_by_platform_sh/static/files/fetch/examples/php/solr)
 >>
 
 [Composer library](https://github.com/platformsh/config-reader-php)

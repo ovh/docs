@@ -29,7 +29,7 @@ However, you can still connect to your server via the OVHcloud [rescue mode](/pa
 
 In order to access your server in rescue mode, the currently active SSH key has to be disabled first.
 
-Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg) and navigate to the `SSH keys`{.action} section. Use our [SSH key guide](/pages/cloud/dedicated/creating-ssh-keys-dedicated#cpsshkey) if necessary.
+Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg) and navigate to the `SSH keys`{.action} section. Use our [SSH key guide](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated#cpsshkey) if necessary.
 
 Since the public key stored in the Control Panel is useless without the corresponding private key, you can simply remove it. Click on the <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> button in the row of the key and select `Delete key`{.action}.
 

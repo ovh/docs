@@ -1,7 +1,6 @@
 ---
 title: 'Proteger a minha conta OVHcloud e gerir as minhas informações pessoais'
 excerpt: 'Saiba como otimizar a segurança da sua conta OVHcloud, gerir os seus dados pessoais e delegar o acesso à sua conta.'
-legacy_guide_number: g2123
 updated: 2021-07-01
 ---
 
@@ -24,7 +23,7 @@ A Área de Cliente OVHcloud permite-lhe também gerir os seus dados pessoais e d
 - Estar ligado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 
 > [!primary]
-> Em caso de dificuldades de ligação à sua conta, consulte a secção "[Não consigo conectar](/pages/account/customer/ovhcloud-account-login#login-failure)-me" do nosso manual "[Aceder à Área de Cliente OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-login)".
+> Em caso de dificuldades de ligação à sua conta, consulte a secção "[Não consigo conectar](/pages/account_and_service_management/account_information/ovhcloud-account-login#login-failure)-me" do nosso manual "[Aceder à Área de Cliente OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-login)".
 >
 
 ## Instruções
@@ -47,7 +46,7 @@ Encontre todas as nossas recomendações sobre as palavras-passe no nosso manual
 
 #### Guardar a sua password
 
-Se ainda não o fez, guarde a sua palavra-passe num [gestor de palavras-passe](/pages/account/customer/manage-ovh-password#utilizar-um-gestor-de-palavras-passe).
+Se ainda não o fez, guarde a sua palavra-passe num [gestor de palavras-passe](/pages/account_and_service_management/account_information/manage-ovh-password#utilizar-um-gestor-de-palavras-passe).
 
 > [!primary]
 > Os programas **KeePass** e **Bitwarden** são gestores de palavras-passe gratuitas e sem direitos.
@@ -159,7 +158,7 @@ Para saber mais, consulte o [guia sobre a gestão dos utilizadores](/pages/accou
 
 ### O que fazer em caso de suspeição de usurpação de identidade?
 
-Se receber um e-mail a dar-lhe conta de um acesso incomum à sua Área de Cliente, deve [alterar imediatamente a palavra-passe da sua conta](/pages/account/customer/manage-ovh-password#alterar-a-sua-palavra-passe) e [protegê-la por meio de uma dupla autenticação](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa).
+Se receber um e-mail a dar-lhe conta de um acesso incomum à sua Área de Cliente, deve [alterar imediatamente a palavra-passe da sua conta](/pages/account_and_service_management/account_information/manage-ovh-password#alterar-a-sua-palavra-passe) e [protegê-la por meio de uma dupla autenticação](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa).
 
 Se detetar uma atividade suspeita na sua conta, [contacte o Apoio ao Cliente OVHcloud](https://www.ovhcloud.com/pt/contact/) em +351 213 155 642 para que as nossas equipas o ajudem nas diligências a efetuar.
 
@@ -171,6 +170,6 @@ Se detetar uma atividade suspeita na sua conta, [contacte o Apoio ao Cliente OVH
 
 [Aceder à Área de Cliente OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-login)
 
-[Em caso de falha de ligação à Área de Cliente](/pages/account/customer/ovhcloud-account-login#login-failure)
+[Em caso de falha de ligação à Área de Cliente](/pages/account_and_service_management/account_information/ovhcloud-account-login#login-failure)
 
 Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

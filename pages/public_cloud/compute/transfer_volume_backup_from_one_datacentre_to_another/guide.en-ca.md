@@ -1,7 +1,6 @@
 ---
 title: 'Transfer volume backup from one datacentre to another'
 excerpt: 'This guide will show you how to transfer a volume backup from one datacentre to another'
-legacy_guide_number: g1941
 updated: 2021-01-19
 ---
 

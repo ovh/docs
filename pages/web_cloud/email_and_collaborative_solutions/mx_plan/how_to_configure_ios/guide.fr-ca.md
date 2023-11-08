@@ -20,7 +20,7 @@ Les adresses e-mail de l'offre MX Plan peuvent être configurées sur un logicie
 ## Prérequis
 
 - Disposer d’une adresse e-mail MX Plan (comprise dans l’offre MX Plan ou dans une offre d’[hébergement web OVHcloud](https://www.ovhcloud.com/fr-ca/web-hosting/){.external}.
-- Être à jour dans les [paiements](/pages/account/billing/invoice_management#pay-bills) et [renouvellements](/pages/account/billing/how_to_use_automatic_renewal#renewal-management) des services liés (nom de domaine et hébergement web).
+- Être à jour dans les [paiements](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) et [renouvellements](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) des services liés (nom de domaine et hébergement web).
 - Disposer de l'application Mail installée sur votre appareil iOS.
 - Disposer des identifiants relatifs à l'adresse e-mail que vous souhaitez paramétrer.
 

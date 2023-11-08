@@ -109,7 +109,7 @@ Sie werden feststellen, dass der Wert des Attributs `bootScript` jetzt null ist.
 
 ## Weiterführende Informationen <a name="gofurther"></a>
 
-[Dedicated Server neu starten](/pages/cloud/dedicated/getting-started-with-dedicated-server#reboot)
+[Dedicated Server neu starten](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server#reboot)
 
 [Rescue-Modus](/pages/bare_metal_cloud/dedicated_servers/rescue_mode)
 

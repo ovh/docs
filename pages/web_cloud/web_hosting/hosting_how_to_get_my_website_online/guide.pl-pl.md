@@ -22,7 +22,7 @@ Możesz uruchomić Twoją stronę WWW (bloga, sklep internetowy czy stronę prez
 - Otrzymanie wiadomości e-mail z potwierdzeniem, że Twój hosting został zainstalowany
 - Posiadanie [domeny](https://www.ovhcloud.com/pl/domains/){.external}, pod którą będzie Twoja strona WWW
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}
-- Aktualizacja w [płatności](/pages/account/billing/invoice_management#pay-bills) i [odnowienie](/pages/account/billing/how_to_use_automatic_renewal#renewal-management) powiązanych usług (domena i hosting).
+- Aktualizacja w [płatności](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) i [odnowienie](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) powiązanych usług (domena i hosting).
 
 ## W praktyce
 

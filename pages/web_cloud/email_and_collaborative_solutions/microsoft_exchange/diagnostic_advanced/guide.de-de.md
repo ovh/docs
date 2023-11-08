@@ -19,7 +19,7 @@ Da es eine Vielzahl von Gründen für mögliche Fehler bei Exchange-Accounts gib
 - Sie haben einen [OVHcloud Exchange](https://www.ovhcloud.com/de/emails/hosted-exchange/) Dienst eingerichtet.
 - Sie verfügen über die Login-Daten für den zu überprüfenden Exchange Account.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
-- Sie haben keine ausstehenden [Zahlungen](/pages/account/billing/invoice_management#pay-bills) zu dieser Dienstleistung und der dazugehörigen Domain.
+- Sie haben keine ausstehenden [Zahlungen](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) zu dieser Dienstleistung und der dazugehörigen Domain.
 
 ## In der praktischen Anwendung
 
@@ -58,7 +58,7 @@ Bitte folgen Sie den Anweisungen in [dieser Anleitung](/pages/web_cloud/email_an
 ### Das Abonnement des Accounts ist abgelaufen <a name="expired"></a>
 
 Da Ihr Abonnement nicht mehr aktiv ist, wurden Versand und Empfang deaktiviert.<br>
-Um Ihr Abonnement wieder zu aktivieren genügt es, die [Abrechnungsfrequenz](/pages/web/microsoft-collaborative-solutions/manage_billing_exchange#periodicity) im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) neu zu konfigurieren.
+Um Ihr Abonnement wieder zu aktivieren genügt es, die [Abrechnungsfrequenz](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_billing_exchange#periodicity) im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) neu zu konfigurieren.
 
 ### Account aufgrund der Sicherheitsrichtlinien gesperrt
 

@@ -50,7 +50,7 @@ Thanks to the `Node Pool's template`, you will:
 
 ### Create a Kubernetes cluster
 
-You can follow the Kubernetes cluster creation step by step guide if you want to create it through the [Control Panel](/pages/platform/kubernetes-k8s/label-nodeaffinity-node-pools#cluster-creation) or through [Terraform](/pages/public_cloud/containers_orchestration/managed_kubernetes/creating-a-cluster-through-terraform).
+You can follow the Kubernetes cluster creation step by step guide if you want to create it through the [Control Panel](/pages/public_cloud/containers_orchestration/managed_kubernetes/label-nodeaffinity-node-pools#cluster-creation) or through [Terraform](/pages/public_cloud/containers_orchestration/managed_kubernetes/creating-a-cluster-through-terraform).
 
 ### Create a Node Pool Template with Terraform
 

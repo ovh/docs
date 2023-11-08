@@ -73,7 +73,7 @@ Aquando da reinstalação do seu VPS, ser-lhe-á enviado um e-mail com a palavra
 
 O utilizador **root** é criado por predefinição nos sistemas GNU/Linux. Trata-se do nível de acesso mais elevado a um sistema operativo. Pode ser perigoso deixar o VPS acessível através do utilizador root e da respetiva palavra-passe, pois esta conta pode efetuar operações irreversíveis prejudiciais.
 
-É possível desativar as ligações de utilizadores root através do protocolo SSH. Não se esqueça de [criar um utilizador](/pages/cloud/vps/secure_your_vps#createuser) diferente antes de continuar os passos indicados abaixo.
+É possível desativar as ligações de utilizadores root através do protocolo SSH. Não se esqueça de [criar um utilizador](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps#createuser) diferente antes de continuar os passos indicados abaixo.
 
 Utilize um editor de texto, como *vim* ou *nano*, para editar este ficheiro de configuração:
 

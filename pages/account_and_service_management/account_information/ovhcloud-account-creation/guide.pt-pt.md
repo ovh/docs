@@ -31,7 +31,7 @@ Para criar uma conta OVHcloud, basta aceder a [esta página](https://www.ovh.com
 |---|---|
 |Nome - Nome|Introduza **imperativamente** aqui um nome e um nome usuais.|
 |endereço de e-mail|Introduza um endereço de e-mail **válido e ao qual tem acesso**.<br><br>Não utilize um endereço de e-mail associado a um domínio gerido pela Área de Cliente. Se este domínio for interrompido, já não receberá as nossas notificações.|
-|Palavra-passe|A sua palavra-passe deve ser única (criada e utilizada apenas para a sua conta OVHcloud) e suficientemente complexa.<br><br>Para criar uma palavra-passe eficaz, consulte os conselhos do [nosso guia sobre a gestão da palavra-passe](/pages/account/customer/manage-ovh-password#instrucoes).|
+|Palavra-passe|A sua palavra-passe deve ser única (criada e utilizada apenas para a sua conta OVHcloud) e suficientemente complexa.<br><br>Para criar uma palavra-passe eficaz, consulte os conselhos do [nosso guia sobre a gestão da palavra-passe](/pages/account_and_service_management/account_information/manage-ovh-password#instrucoes).|
 
 Depois de preencher o primeiro formulário, ser-lhe-á enviado um código de utilização única para o endereço de e-mail que introduziu. Este código permitirá validar o seu endereço de e-mail. Introduza-o nas casas previstas para esse efeito.
 

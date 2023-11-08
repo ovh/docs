@@ -21,7 +21,7 @@ L'espace client OVHcloud vous permet aussi de gérer vos données personnelles e
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 
 > [!primary]
-> En cas de difficultés de connexion à votre compte, consultez la partie « [Je ne parviens pas à me connecter](/pages/account/customer/ovhcloud-account-login#login-failure) » de notre guide « [Se connecter à l'espace client OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-login)».
+> En cas de difficultés de connexion à votre compte, consultez la partie « [Je ne parviens pas à me connecter](/pages/account_and_service_management/account_information/ovhcloud-account-login#login-failure) » de notre guide « [Se connecter à l'espace client OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-login)».
 >
 
 ## En pratique
@@ -44,7 +44,7 @@ Retrouvez toutes nos recommandations sur les mots de passe sur notre guide « [M
 
 #### Sauvegarder votre mot de passe
 
-Si vous ne l'avez pas encore fait, sauvegardez votre mot de passe dans un [gestionnaire de mots de passe](/pages/account/customer/manage-ovh-password#utiliser-un-gestionnaire-de-mots-de-passe).
+Si vous ne l'avez pas encore fait, sauvegardez votre mot de passe dans un [gestionnaire de mots de passe](/pages/account_and_service_management/account_information/manage-ovh-password#utiliser-un-gestionnaire-de-mots-de-passe).
 
 > [!primary]
 > Les logiciels **KeePass** et **Bitwarden** sont des gestionnaires de mots de passe gratuits et libres de droits.
@@ -156,7 +156,7 @@ Vous pouvez déléguer la gestion administrative **ou** technique **ou** de fact
 
 ### Que faire en cas de suspicion d'usurpation d'identité ?
 
-Si vous recevez un e-mail vous indiquant une connexion inconnue à votre espace client, nous vous conseillons de [modifier immédiatement le mot de passe de votre compte](/pages/account/customer/manage-ovh-password#modifier-votre-mot-de-passe) et de [sécuriser votre compte avec une double authentification](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa).
+Si vous recevez un e-mail vous indiquant une connexion inconnue à votre espace client, nous vous conseillons de [modifier immédiatement le mot de passe de votre compte](/pages/account_and_service_management/account_information/manage-ovh-password#modifier-votre-mot-de-passe) et de [sécuriser votre compte avec une double authentification](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa).
 
 Si vous constatez une activité suspecte sur votre compte, [contactez le support OVHcloud](https://www.ovh.com/fr/support/nous-contacter/) au 1007 (composez le 0033 9 72 10 10 07 depuis une ligne en dehors de la France) afin que nos équipes vous assistent dans les démarches à entreprendre.
 
@@ -168,6 +168,6 @@ Si vous constatez une activité suspecte sur votre compte, [contactez le support
 
 [Se connecter à l'espace client OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-login)
 
-[En cas d'échec de connexion à l'espace client](/pages/account/customer/ovhcloud-account-login#login-failure)
+[En cas d'échec de connexion à l'espace client](/pages/account_and_service_management/account_information/ovhcloud-account-login#login-failure)
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

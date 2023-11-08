@@ -14,7 +14,7 @@ This guide provides instructions for backuping an SAP HANA database with Veeam B
 
 - An SAP HANA database installed.
 - A Windows server which will host the [Veeam Backup and Replication](https://www.ovhcloud.com/es-es/storage-solutions/veeam-enterprise/) solution.
-- A space on a shared storage for a non-SecNumCloud need or a virtual machine on [SecNumCloud-qualified Hosted Private Cloud powered by VMware](https://www.ovhcloud.com/es-es/enterprise/products/secnumcloud/) acting as an NFS or SMB server for SNC need.
+- A space on a shared storage for a non-SecNumCloud need or a virtual machine on a [SecNumCloud-qualified VMware on OVHcloud solution](https://www.ovhcloud.com/es-es/enterprise/products/secnumcloud/) acting as an NFS or SMB server for SNC need.
 
 ## Instructions
 
@@ -191,7 +191,7 @@ Once these steps have been done, you can continue this guide with the chapter [V
 
 The S3 Object Storage solution is not yet SecNumCloud qualified. It cannot be used to store your backups in a SecNumCloud context.
 
-To meet this need, we propose to create a virtual machine on [SecNumCloud-qualified Hosted Private Cloud powered by VMware](https://www.ovhcloud.com/es-es/enterprise/products/secnumcloud/) acting as a NFS or SMB server.
+To meet this need, we propose to create a virtual machine on a [SecNumCloud-qualified VMware on OVHcloud solution](https://www.ovhcloud.com/es-es/enterprise/products/secnumcloud/) acting as a NFS or SMB server.
 
 > [!warning]
 > In the case of using a virtual machine to host a NFS or SMB server, take care of protect this virtual machine and its content with duplicating its data on another location.

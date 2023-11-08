@@ -1,6 +1,6 @@
 ---
 title: 'Reparticionar um VPS após um upgrade'
-updated: 2021-05-18
+updated: 2023-09-05
 ---
 
 > [!primary]
@@ -43,7 +43,7 @@ A partição correspondente ao modo rescue será montada no diretório `/`, que 
 
 No entanto, se o seu VPS pertencer à gama atual, a partição não será automaticamente montada. Se a coluna MOUNTPOINT do resultado o confirmar, pode ignorar a etapa de desmontagem.
 
-```sh
+```console
 NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
 sda 254:0 0 10G 0 disk
 └─sda1 254:1 0 10G 0 part /
@@ -63,7 +63,9 @@ Depois de desmontar a partição, é necessário analisar o sistema de ficheiros
 
 ```sh
 e2fsck -yf /dev/sdb1
- 
+```
+
+```console
 e2fsck 1.42.9 (4-Feb-2014)
 Pass 1: Checking inodes, blocks, and sizes
 Pass 2: Checking directory structure
@@ -75,7 +77,7 @@ Pass 5: Checking group summary information
 
 Se verificar algum erro, deverá adotar as medidas adequadas para cada situação. Estes são alguns dos exemplos mais frequentes:
 
-- `bad magic number in superblock`: não continuar. Para resolver este problema, consulte a secção “[Como corrigir os erros *bad magic number in superblock*](/pages/cloud/vps/upsize_vps_partition#como-corrigir-os-erros-bad-magic-number-in-superblock)” deste manual.
+- `bad magic number in superblock`: não continuar. Para resolver este problema, consulte a secção “[Como corrigir os erros *bad magic number in superblock*](/pages/bare_metal_cloud/virtual_private_servers/upsize_vps_partition#como-corrigir-os-erros-bad-magic-number-in-superblock)” deste manual.
 
 - `/dev/vdb1 has unsupported feature(s): metadata_csum` seguido de `e2fsck: Get a newer version of e2fsck!`: atualizar “e2fsck”. Se a última versão não estiver disponível através de `apt` (ou outro gestor de pacotes), deverá compilá-la a partir do código fonte.
 
@@ -98,7 +100,7 @@ fdisk -u /dev/sdb
 
 Antes de eliminar a antiga partição, recomendamos que anote o número correspondente ao primeiro setor da partição. Para obter esta informação, execute o comando `p`{.action}. O número é o que aparece no campo `Start`. Conserve esta informação para ser usada mais tarde.
 
-```sh
+```console
 Command (m for help): p
  
 Disk /dev/sdb: 21.5 GB, 21474836480 bytes
@@ -119,7 +121,7 @@ Device Boot Start End Blocks Id System
 
 Em seguida, elimine a partição através do comando `d`{.action}.
 
-```sh
+```console
 Command (m for help): d
 Selected partition 1
 ```
@@ -130,7 +132,7 @@ A única partição será eliminada de forma automática.
 
 Agora é necessário criar uma nova partição executando o comando `n`{.action}. Recomendamos a utilização dos valores predefinidos.
 
-```sh
+```console
 Command (m for help): n
 Partition type:
 p primary (0 primary, 0 extended, 4 free)
@@ -147,7 +149,7 @@ Na linha `First sector`, certifique-se que o valor predefinido é igual ao que f
 
 A seguir, certifique-se de que a partição seja de arranque (bootable). Para tal, utilize o comando `a`{.action}.
 
-```sh
+```console
 Command (m for help): a
  
 Partition number (1-4): 1
@@ -155,7 +157,7 @@ Partition number (1-4): 1
 
 Guarde as alterações e saia da aplicação com o comando`w`{.action}:
 
-```sh
+```console
 Command (m for help): w
  
 The partition table has been altered!
@@ -170,7 +172,9 @@ A partição foi aumentada, mas o sistema de ficheiros (filesystem) ainda ocupa 
 
 ```sh
 resize2fs /dev/sdb1
- 
+```
+
+```console
 resize2fs 1.42.9 (4-Feb-2014)
 Resizing the filesystem on /dev/sdb1 to 5242624 (4k) blocks.
 The filesystem on /dev/sdb1 is now 5242624 blocks long.
@@ -186,7 +190,9 @@ mount /dev/sdb1 /mnt
 
 ```sh
 df -h
- 
+```
+
+```console
 Filesystem Size Used Avail Use% Mounted on
 /dev/sda1 991M 793M 132M 86% /
 none 4.0K 0 4.0K 0% /sys/fs/cgroup
@@ -206,7 +212,9 @@ Se o comando `e2fsck`{.action} devolver a mensagem de erro`bad magic number in s
 
 ```sh
 dumpe2fs /dev/sdb1 | grep superblock
- 
+```
+
+```console
 Primary superblock at 0, Group descriptors at 1-6
 Backup superblock at 32768, Group descriptors at 32769-32774
 Backup superblock at 98304, Group descriptors at 98305-98310

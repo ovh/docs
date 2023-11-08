@@ -1,7 +1,6 @@
 ---
 title: Verificar uma máquina virtual em caso de lentidão (EN)
 excerpt: 'Troubleshoot performance issues on a VM'
-legacy_guide_number: g601
 updated: 2022-01-17
 ---
 

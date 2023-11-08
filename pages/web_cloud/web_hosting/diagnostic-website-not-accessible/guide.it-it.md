@@ -10,7 +10,7 @@ updated: 2022-08-02
 
 ## Obiettivo
 
-In caso di inaccessibilità del sito, sul browser potrebbero comparire diversi errori. Gli esempi che seguono indicano una configurazione errata dei tuoi [DNS](/pages/web/domains/dns_server_general_information#capire-il-concetto-di-dns) o un dominio sospeso (se il tuo sito non mostra uno dei messaggi di errore descritti qui, consulta la sezione [Per saperne di più](#gofurther)):
+In caso di inaccessibilità del sito, sul browser potrebbero comparire diversi errori. Gli esempi che seguono indicano una configurazione errata dei tuoi [DNS](/pages/web_cloud/domains/dns_server_general_information#capire-il-concetto-di-dns) o un dominio sospeso (se il tuo sito non mostra uno dei messaggi di errore descritti qui, consulta la sezione [Per saperne di più](#gofurther)):
 
 |Browser|Messaggio di errore|
 |--|--|
@@ -30,9 +30,9 @@ In caso di inaccessibilità del sito, sul browser potrebbero comparire diversi e
 
 ## Prerequisiti
 
-- Avere la gestione dei server e della [zona DNS](/pages/web/domains/dns_zone_edit#capire-il-concetto-di-dns) del dominio
+- Avere la gestione dei server e della [zona DNS](/pages/web_cloud/domains/dns_zone_edit#capire-il-concetto-di-dns) del dominio
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
-- Essere aggiornato nei [pagamenti](/pages/account/billing/invoice_management#pay-bills) e [rinnovi](/pages/account/billing/how_to_use_automatic_renewal#renewal-management) dei servizi associati (dominio e hosting web)
+- Essere aggiornato nei [pagamenti](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) e [rinnovi](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) dei servizi associati (dominio e hosting web)
 
 ## Procedura
 
@@ -43,7 +43,7 @@ In caso di inaccessibilità del sito, sul browser potrebbero comparire diversi e
 > Il rinnovo delle tue offerte è sotto la tua completa responsabilità.<br>
 > OVHcloud, in qualità di hosting provider, ha l'obbligo di eliminare definitivamente i servizi (domini, hosting, email, ecc.) che non sono stati rinnovati in tempo utile e tutti i dati che contengono.
 >
-> Per questo motivo, ti consigliamo di attivare il [rinnovo automatico](/pages/account/billing/how_to_use_automatic_renewal#procedura) su tutti gli abbonamenti OVHcloud.
+> Per questo motivo, ti consigliamo di attivare il [rinnovo automatico](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#procedura) su tutti gli abbonamenti OVHcloud.
 >
 
 Per verificare la validità dell'abbonamento relativo al tuo dominio, clicca sul tuo nome in alto a destra del tuo Spazio Cliente e poi su `Prodotti e servizi`{.action}.
@@ -78,7 +78,7 @@ Un avviso nella scheda `Zona DNS`{.action} indica che i server DNS utilizzati da
 
 ![warning_other_ovh_dns_srv](images/warning_other_ovh_dns_srv.png){.thumbnail}
 
-Modificare i server DNS seguendo le istruzioni di [questa guida](/pages/web/domains/dns_server_general_information#modifica-i-server-dns) in modo che siano identici agli obiettivi di record di tipo `NS` nella `Zona DNS`{.action}.
+Modificare i server DNS seguendo le istruzioni di [questa guida](/pages/web_cloud/domains/dns_server_general_information#modifica-i-server-dns) in modo che siano identici agli obiettivi di record di tipo `NS` nella `Zona DNS`{.action}.
 
 Il tuo sito Web sarà disponibile entro 48 ore.
 
@@ -90,7 +90,7 @@ Il tuo sito Web sarà disponibile entro 48 ore.
 >
 > In questo caso, contatta l'hosting provider della tua Zona DNS, il tuo webmaster o i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/) prima di effettuare qualsiasi operazione.
 >
-> È possibile che i server DNS utilizzati dal tuo dominio siano funzionali e che il problema di accesso al tuo sito sia legato ad un ingresso mancante o errato nella [zona DNS](/pages/web/domains/dns_zone_edit#capire-il-concetto-di-dns). Qualsiasi modifica dei server DNS in questa situazione può rendere indisponibili i tuoi indirizzi email o altre applicazioni online.
+> È possibile che i server DNS utilizzati dal tuo dominio siano funzionali e che il problema di accesso al tuo sito sia legato ad un ingresso mancante o errato nella [zona DNS](/pages/web_cloud/domains/dns_zone_edit#capire-il-concetto-di-dns). Qualsiasi modifica dei server DNS in questa situazione può rendere indisponibili i tuoi indirizzi email o altre applicazioni online.
 >
 
 #### Scenario 3: nella zona DNS non sono presenti record di tipo NS
@@ -123,7 +123,7 @@ Nella scheda `Informazioni generali`{.action}, copia l'indirizzo IPV4 e/o IPV6 d
 
 ![ipv4-6](images/ipv4-6.png){.thumbnail}
 
-E riportala nella [Zona DNS](/pages/web/domains/dns_zone_edit#modifica-la-zona-dns-ovhcloud-del-dominio) del tuo dominio, modificandola o creando uno o più record di tipo `A`.
+E riportala nella [Zona DNS](/pages/web_cloud/domains/dns_zone_edit#modifica-la-zona-dns-ovhcloud-del-dominio) del tuo dominio, modificandola o creando uno o più record di tipo `A`.
 
 ![ipv4-DNSzone](images/ipv4-DNSzone.png){.thumbnail}
 

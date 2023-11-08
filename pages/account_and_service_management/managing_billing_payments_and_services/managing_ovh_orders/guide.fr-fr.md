@@ -91,7 +91,7 @@ Vous trouverez toutes les modalités d'application du droit de rétractation dan
 > Le droit de rétraction ne concerne que les particuliers et ne s'applique qu'aux nouvelles commandes. Vous ne pouvez donc pas le faire valoir :
 >
 > - pour des renouvellements;
-> - si votre compte client OVHcloud est d'un [autre type que Particulier](/pages/account/customer/all_about_username#modifier-le-type-de-compte).
+> - si votre compte client OVHcloud est d'un [autre type que Particulier](/pages/account_and_service_management/account_information/all_about_username#modifier-le-type-de-compte).
 >
 > De plus, le droit de rétractation ne s'applique pas aux commandes non-payées, car celles-ci sont automatiquement annulées lorsque le bon de commande expire.
 >

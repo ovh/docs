@@ -162,7 +162,7 @@ You will then be able to log out of your account and log back in with your Googl
 
 ### Connecting via SSO
 
-On [the OVHcloud login page](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), enter your [login](/pages/account/customer/ovhcloud-account-creation#what-is-my-nic-handle) followed by **/idp** without a password and click the `Login`{.action} button.
+On [the OVHcloud login page](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), enter your [login](/pages/account_and_service_management/account_information/ovhcloud-account-creation#what-is-my-nic-handle) followed by **/idp** without a password and click the `Login`{.action} button.
 
 ![Connection to OVHcloud federation](images/ovhcloud_federation_login_1.png){.thumbnail}
 

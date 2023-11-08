@@ -13,7 +13,7 @@ Creating a domain name, transfering it, or changing its owner are technical oper
 
 - One or more domain names 
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
-- Being up-to-date in the [payments](/pages/account/billing/invoice_management#pay-bills) and [renewals](/pages/account/billing/how_to_use_automatic_renewal#renewal-management) of related services (domain name and web hosting plan)
+- Being up-to-date in the [payments](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) and [renewals](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) of related services (domain name and web hosting plan)
 
 ## Instructions
 
@@ -42,7 +42,7 @@ In this guide, we will focus on **error** operations, using examples of recurrin
 >
 > The list of examples below is not exhaustive. If you encounter an error that is not detailed in this guide, carry out the following actions:
 >
-> - Verify that you are up to date with [payments](/pages/account/billing/invoice_management#pay-bills) and domain name [renewals](/pages/account/billing/how_to_use_automatic_renewal#renewal-management).
+> - Verify that you are up to date with [payments](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) and domain name [renewals](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management).
 > - Check if you can resolve the issue by clicking the `...`{.action} button to the right of the operation concerned.
 > - Read the descriptive message and see if it helps you resolve the error.
 >

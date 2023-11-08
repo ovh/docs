@@ -1,7 +1,6 @@
 ---
 title: 'Utilizzare il plugin OVHcloud Network'
 excerpt: 'Scopri come utilizzare il plugin OVHcloud Network con la soluzione Managed Bare Metal'
-legacy_guide_number: '7766560'
 updated: 2020-11-18
 ---
 

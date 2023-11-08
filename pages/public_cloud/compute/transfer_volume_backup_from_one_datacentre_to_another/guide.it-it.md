@@ -1,7 +1,6 @@
 ---
 title: Trasferisci il backup di un disco aggiutivo da un datacenter a un altro
 excerpt: Trasferisci il backup di un disco aggiutivo da un datacenter a un altro
-legacy_guide_number: g1941
 updated: 2021-01-19
 ---
 

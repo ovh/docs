@@ -46,7 +46,7 @@ This message contains:
 - the name of the operation that requires validation
 - the operation ID
 - validation token
-- a link to validate the operation (please note, if your phone is not connected to a network whose [IP is authorised](/pages/cloud/private-cloud/manager_ovh_private_cloud#security-tab), the page will not appear).
+- a link to validate the operation (please note, if your phone is not connected to a network whose [IP is authorised](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/manager_ovh_private_cloud#security-tab), the page will not appear).
 
 To validate the operation, log in via the link shown in the message. Then go to the `Operation Validation`{.action} section.
 

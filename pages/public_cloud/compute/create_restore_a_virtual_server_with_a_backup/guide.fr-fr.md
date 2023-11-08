@@ -1,7 +1,6 @@
 ---
 title: 'Créer / restaurer un serveur virtuel a partir d’une sauvegarde'
 excerpt: 'Découvrez comment créer ou restaurer la sauvegarde d’une instance'
-legacy_guide_number: 1882
 updated: 2021-03-19
 ---
 
@@ -44,7 +43,7 @@ Certains éléments sont prédéfinis :
 
 Définissez le nom de la nouvelle instance, la clé SSH, le vRack et la période de facturation, puis cliquez sur le bouton `Créer l'instance`{.action}.
 
-Pour plus d'informations sur la création d'une instance, consultez [ce guide](/pages/platform/public-cloud/public-cloud-first-steps#etape-3-creer-une-instance).
+Pour plus d'informations sur la création d'une instance, consultez [ce guide](/pages/public_cloud/compute/public-cloud-first-steps#etape-3-creer-une-instance).
 
 > [!primary]
 >

@@ -118,7 +118,7 @@ Si no puede realizar estas comprobaciones, póngase en contacto con el proveedor
 > Todos los cambios realizados en la zona DNS conllevan un plazo de propagación de entre 4 y 24 horas.
 >
 
-- Obtenga [la información necesaria para conectarse al espacio FTP de su alojamiento web](/pages/web/hosting/ftp_connection#1-obtener-los-datos-de-conexion).
+- Obtenga [la información necesaria para conectarse al espacio FTP de su alojamiento web](/pages/web_cloud/web_hosting/ftp_connection#1-obtener-los-datos-de-conexion).
 - Consulte los accesos a la base de datos de su plan de hosting, si ya existe, o cree una con ayuda de [documentación](/pages/web_cloud/web_hosting/sql_create_database).
 
 #### 1.3 - Instalar el cliente FTP gratuito "FileZilla"
@@ -139,11 +139,11 @@ Una vez que haya creado la base de datos, deberá descargar los parámetros de c
 >
 > Si desea instalar su CMS con una base de datos ya existente, recupere los parámetros de conexión a su base de datos directamente en los archivos del sitio web asociados a esta.
 >
-> Si también se trata de un CMS idéntico al que tiene que instalar, puede utilizar [esta guía](/pages/web/hosting/sql_change_password#etapa-3-cambiar-la-contrasena-de-la-base-de-datos-del-sitio-web-en-el-archivo-de-configuracion) para identificar los archivos de configuración en su [espacio de almacenamiento FTP](/pages/web_cloud/web_hosting/ftp_connection).
+> Si también se trata de un CMS idéntico al que tiene que instalar, puede utilizar [esta guía](/pages/web_cloud/web_hosting/sql_change_password#etapa-3-cambiar-la-contrasena-de-la-base-de-datos-del-sitio-web-en-el-archivo-de-configuracion) para identificar los archivos de configuración en su [espacio de almacenamiento FTP](/pages/web_cloud/web_hosting/ftp_connection).
 >
 > Conéctese a la base de datos para identificar los "prefijos" de las tablas que ya están en su interior. para no elegir un "prefijo" de tabla que ya utilice otro sitio web.
 >
-> - Para conectarse a la base de datos asociada a su plan de hosting, consulte [esta guía](/pages/web/hosting/sql_create_database#acceder-a-la-interfaz-phpmyadmin).
+> - Para conectarse a la base de datos asociada a su plan de hosting, consulte [esta guía](/pages/web_cloud/web_hosting/sql_create_database#acceder-a-la-interfaz-phpmyadmin).
 > - Para conectarse a una base de datos en un databases de Web Cloud, consulte [esta guía](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server).
 >
 
@@ -173,7 +173,7 @@ A continuación se muestran los enlaces a las páginas de descarga de los CMS qu
 > - [Prestashop](https://www.prestashop.com/en/system-requirements){.external}
 >
 >
-> Configure la versión de PHP en su alojamiento web con nuestra guía sobre [el cambio de versión PHP de un alojamiento web](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014).
+> Configure la versión de PHP en su alojamiento web con nuestra guía sobre [el cambio de versión PHP de un alojamiento web](/pages/web_cloud/web_hosting/configure_your_web_hosting).
 >
 Si ya utiliza una versión de PHP igual o superior a la necesaria, no es necesario realizar ningún cambio.
 >

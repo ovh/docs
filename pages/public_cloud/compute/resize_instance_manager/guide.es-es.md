@@ -1,5 +1,5 @@
 ---
-title: Redimensionar una instancia
+title: Redimensionar una instancia desde el área de cliente de OVHcloud
 excerpt: Cómo redimensionar una instancia desde el área de cliente de OVHcloud
 updated: 2022-08-24
 ---

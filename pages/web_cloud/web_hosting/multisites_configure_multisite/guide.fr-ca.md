@@ -1,7 +1,7 @@
 ---
 title: 'Partager son hébergement entre plusieurs sites'
 excerpt: "Découvrez comment héberger différents sites Internet sur votre offre d'hébergement web"
-updated: 2023-08-25
+updated: 2023-09-06
 ---
 
 ## Objectif
@@ -10,11 +10,19 @@ Vous pouvez héberger plusieurs sites Internet sur une même offre d'hébergemen
 
 **Découvrez comment héberger différents sites Internet sur votre offre d'hébergement web.**
 
+### Sommaire
+
+- 1 : [Accéder à la gestion multisite](#multisite-menu)
+- 2 : [Ajouter un domaine ou un sous-domaine](#add-domain)
+    - 2.1 : [Ajouter un domaine enregistré chez OVHcloud](#add-ovhcloud-domain)
+    - 2.2 : [Ajouter un nom de domaine externe](#add-external-domain)
+- 3 : [Mettre votre site web en ligne](#site-online)
+
 ## Prérequis
 
 - Disposer d'une offre [d'hébergement web OVHcloud](https://www.ovhcloud.com/fr-ca/web-hosting/){.external} compatible.
 - Disposer d'un ou plusieurs [noms de domaine](https://www.ovhcloud.com/fr-ca/domains/){.external}.
-- Pouvoir modifier la configuration de vos noms de domaine (la [zone DNS](/pages/web/domains/dns_zone_edit#comprendre-la-notion-de-dns)).
+- Pouvoir modifier la configuration de vos noms de domaine (la [zone DNS](/pages/web_cloud/domains/dns_zone_edit#comprendre-la-notion-de-dns)).
 - Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
 
 ## En pratique
@@ -26,7 +34,7 @@ Vous pouvez héberger plusieurs sites Internet sur une même offre d'hébergemen
 > N'hésitez pas à consulter notre [guide](/pages/web_cloud/web_hosting/activate-email-hosting) pour plus de détails sur l'activation de cette option.
 >
 
-### Étape 1 : accéder à la gestion multisite
+### Étape 1 : accéder à la gestion multisite <a name="multisite-menu"></a>
 
 Tout d'abord, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external} et sélectionnez `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} dans la barre de services située à gauche, sélectionnez l'offre concernée, puis choisissez l'onglet `Multisite`{.action}.
 
@@ -39,7 +47,7 @@ Le tableau qui s'affiche liste tous les noms de domaine et sous-domaines ajouté
 
 ![multisite](images/access-multisite-ovh.png){.thumbnail}
 
-### Étape 2 : ajouter un domaine ou un sous-domaine
+### Étape 2 : ajouter un domaine ou un sous-domaine <a name="add-domain"></a>
 
 Pour ajouter un nouveau nom de domaine ou sous-domaine à votre hébergement web, cliquez sur le bouton `Actions`{.action} situé à gauche de l'écran puis sur `Ajouter un domaine ou sous domaine`{.action} et effectuez votre choix dans la fenêtre qui s’affiche.
 
@@ -109,7 +117,7 @@ Maintenant que le domaine est ajouté, rendez-vous à l’[étape 3 : mettre vot
 >
 > |Champ|Où trouver l'information ?|Action à réaliser|
 > |---|---|---|
-> |TXT|Onglet `Multisite`{.action} puis cliquez sur `Configuration du token ovhcontrol`{.action}|Permet à OVHcloud de s'assurer que l'ajout de chaque nom de domaine externe est légitime. Veillez à créer le champ TXT avec le sous-domaine ovhcontrol (par exemple, ovhcontrol.mydomain.ovh) dans la zone DNS faisant autorité pour le nom de domaine à ajouter.<br></br>Il est important de noter que si vous souhaitez ajouter `blog.mydomain.ovh`, vous devrez créer l'entrée TXT `ovhcontrol.mydomain.ovh` et non l'entrée `ovhcontrol.blog.mydomain.ovh`.<br></br>Pour retrouver cette dernière, retrouvez les [serveurs DNS](/pages/web/domains/dns_server_general_information#comprendre-la-notion-de-dns) auxquels votre domaine est lié. Vous devrez valider uniquement le domaine principal, pas tous les sous-domaines.|
+> |TXT|Onglet `Multisite`{.action} puis cliquez sur `Configuration du token ovhcontrol`{.action}|Permet à OVHcloud de s'assurer que l'ajout de chaque nom de domaine externe est légitime. Veillez à créer le champ TXT avec le sous-domaine ovhcontrol (par exemple, ovhcontrol.mydomain.ovh) dans la zone DNS faisant autorité pour le nom de domaine à ajouter.<br></br>Il est important de noter que si vous souhaitez ajouter `blog.mydomain.ovh`, vous devrez créer l'entrée TXT `ovhcontrol.mydomain.ovh` et non l'entrée `ovhcontrol.blog.mydomain.ovh`.<br></br>Pour retrouver cette dernière, retrouvez les [serveurs DNS](/pages/web_cloud/domains/dns_server_general_information#comprendre-la-notion-de-dns) auxquels votre domaine est lié. Vous devrez valider uniquement le domaine principal, pas tous les sous-domaines.|
 >
 > ![multisite](images/add-multisite-external-step3.png){.thumbnail}
 >

@@ -16,7 +16,7 @@ Par défaut, seule l'adresse IPv4 est configurée.
 
 > [!primary]
 > 
-> Actuellement, les offres Floating IP et Gateway ne prennent pas en charge l'IPv6. L'IPv6 n'est utilisable qu'avec les instances en [mode public](/pages/platform/network-services/concepts-01-public-cloud-networking-concepts#publicmode).
+> Actuellement, les offres Floating IP et Gateway ne prennent pas en charge l'IPv6. L'IPv6 n'est utilisable qu'avec les instances en [mode public](/pages/public_cloud/public_cloud_network_services/concepts-01-public-cloud-networking-concepts#publicmode).
 >
 
 ## Prérequis

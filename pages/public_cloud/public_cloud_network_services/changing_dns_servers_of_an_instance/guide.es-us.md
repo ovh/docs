@@ -1,7 +1,6 @@
 ---
 title: 'Cambiar los servidores DNS de una instancia'
 excerpt: 'Cambiar los servidores DNS por defecto de una instancia Public Cloud'
-legacy_guide_number: 1985
 updated: 2021-10-29
 ---
 
@@ -30,7 +29,7 @@ Puede añadir un servidor secundario o sustituir esta configuración por la suya
 
 ## Procedimiento
 
-Conéctese a su instancia por SSH. Para más información, consulte la guía [Conectarse a una instancia de Public Cloud](/pages/platform/public-cloud/public-cloud-first-steps#connect-to-instance).
+Conéctese a su instancia por SSH. Para más información, consulte la guía [Conectarse a una instancia de Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps#connect-to-instance).
 
 Cambiar al usuario root. Si lo necesita, consulte nuestra guía para [cambiar a root y establecer una contraseña](/pages/public_cloud/compute/become_root_and_change_password).
 
@@ -133,7 +132,7 @@ DNS configuration:
 
 ### Windows
 
-Conéctese a la instancia a través de una sesión de escritorio remoto o con la consola VNC. Para más información, consulte la guía [Conectarse a una instancia de Public Cloud](/pages/platform/public-cloud/public-cloud-first-steps#connect-to-instance).
+Conéctese a la instancia a través de una sesión de escritorio remoto o con la consola VNC. Para más información, consulte la guía [Conectarse a una instancia de Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps#connect-to-instance).
 
 Abra los `Parámetros de red`{.action}.
 

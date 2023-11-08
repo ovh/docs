@@ -124,7 +124,7 @@ Prenez soin de remplacer les informations génériques dans ce script par les in
 
 #### Étape 2 : télécharger le script sur l'espace de stockage FTP
 
-Une fois le script de sauvegarde correctement créé, vous devez le télécharger sur l'espace de stockage FTP de votre hébergement web. Pour cela, reportez-vous aux informations décrites dans l'étape 2 de la documentation intitulée « [Se connecter à l’espace de stockage](/pages/web/hosting/hosting_how_to_get_my_website_online#2-se-connecter-a-lespace-de-stockage) ».
+Une fois le script de sauvegarde correctement créé, vous devez le télécharger sur l'espace de stockage FTP de votre hébergement web. Pour cela, reportez-vous aux informations décrites dans l'étape 2 de la documentation intitulée « [Se connecter à l’espace de stockage](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online#2-se-connecter-a-lespace-de-stockage) ».
 
 Pour mener à bien les étapes suivantes, téléchargez le script dans le dossier contenant le site web qui utilise la base de données. **Soyez particulièrement attentif quant au nom du fichier du script de sauvegarde.** N'écrasez pas un fichier déjà existant portant le même nom sur l'espace de stockage FTP lorsque vous allez télécharger le script. Si un message d'avertissement de ce type apparaît, modifiez le nom du script nouvellement créé pour puis tentez à nouveau de le télécharger.
 

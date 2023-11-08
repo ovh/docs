@@ -29,7 +29,7 @@ You can therefore use/declare your *public* and *private* networks via our solut
 
 We will present the case of [dedicated server(s)](https://www.ovhcloud.com/en-au/bare-metal/) configured in **OLA** mode, i.e. with **only** private networks.
 This choice offers your infrastructure the best possible isolation/protection for your hosted service.<br>
-The only significant difference is that [private networks](/pages/cloud/ovhcloud-connect/occ-concepts-overview#private-connection) do not have access to everything that does not belong to your infrastructure.<br>
+The only significant difference is that [private networks](/pages/network/ovhcloud_connect/occ-concepts-overview#private-connection) do not have access to everything that does not belong to your infrastructure.<br>
 As a result, a server isolated by its private network prevents the boot mechanism. This means that when systems are booted via the **Netboot** (Network Boot) method, they are based on OVHcloud’s internal network and shared services.
 
 ### Netboot startup overview

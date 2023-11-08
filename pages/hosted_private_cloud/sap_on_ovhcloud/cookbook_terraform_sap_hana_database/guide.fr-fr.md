@@ -32,7 +32,7 @@ Ce module a été écrit pour être compatible avec Terraform v1.4 ou supérieur
 
 ### Utilisation du module Terraform
 
-Plusieurs exemples sont disponibles dans le [repository GitHub](https://github.com/ovh/terraform-vsphere-sap-hana-database/examples/) pour déployer des machines virtuelles de base de données SAP HANA.
+Plusieurs exemples sont disponibles dans le [repository GitHub](https://github.com/ovh/terraform-vsphere-sap-hana-database/tree/master/examples/) pour déployer des machines virtuelles de base de données SAP HANA.
 
 Trois principaux fichiers sont requis pour utiliser comme attendu ce module Terraform :
 
@@ -83,7 +83,7 @@ module "sap-hana-database" {
 ```
 
 > [!primary]
-> Où « SAP HANA VM Storage Policy » a été auparavant créée dans l'interface vSphere avec une politique de provisionnement *thick*. Pour en savoir plus sur les recommandations à propos de cette politique de stockage, nous vous conseillons [ce guide](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook-sap-hana-template-vmware/#configure-advanced-parameters).
+> Où « SAP HANA VM Storage Policy » a été auparavant créée dans l'interface vSphere avec une politique de provisionnement *thick*. Pour en savoir plus sur les recommandations à propos de cette politique de stockage, nous vous conseillons [ce guide](/pages/hosted_private_cloud/sap_on_ovhcloud/cookbook_sap_hana_template_vmware/#configure-advanced-parameters).
 >
 
 Pour connaître toutes les entrées que vous pouvez passer à ce module, veuillez vous référer au README sur [GitHub](https://github.com/ovh/terraform-vsphere-sap-hana-database).
@@ -231,7 +231,7 @@ sap_hana_databases_ids = {
 
 Si l'exécution s'est déroulée sans erreur, vous avez créé votre première machine virtuelle de base de données SAP HANA sur votre solution VMware on OVHcloud avec Terraform.
 
-Nous vous suggérons de prendre connaissance des [exemples](https://github.com/ovh/terraform-vsphere-sap-hana-database/examples) et du [README](https://github.com/ovh/terraform-vsphere-sap-hana-database) pour découvrir toutes les possibilités.
+Nous vous suggérons de prendre connaissance des [exemples](https://github.com/ovh/terraform-vsphere-sap-hana-database/tree/master/examples) et du [README](https://github.com/ovh/terraform-vsphere-sap-hana-database) pour découvrir toutes les possibilités.
 
 À tout moment, vous avez la possibilité de changer la configuration de la machine virtuelle (plus de vCPU, plus de mémoire ou ajout d'un nouveau disque par exemple) et relancer l'exécution de Terraform.
 

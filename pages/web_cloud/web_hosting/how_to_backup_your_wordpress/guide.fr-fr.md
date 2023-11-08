@@ -144,7 +144,7 @@ En appliquant ces bonnes pratiques, vous aurez la possibilité de revenir à une
 ## Aller plus loin <a name="go-further"></a>
 
 - [Site officiel de WordPress](https://wordpress.org){.external}
-- [Plus d'informations sur les sauvegardes de votre hébergement web](/pages/web/hosting/hosting_technical_specificities#informations-sur-les-sauvegardes-automatiques)
+- [Plus d'informations sur les sauvegardes de votre hébergement web](/pages/web_cloud/web_hosting/hosting_technical_specificities#informations-sur-les-sauvegardes-automatiques)
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
 

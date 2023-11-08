@@ -1,6 +1,5 @@
 ---
 title: Suspender o poner en pausa una instancia
-legacy_guide_number: g1781
 updated: 2023-06-20
 ---
 

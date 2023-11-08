@@ -249,7 +249,7 @@ In this archives list, you can see a `PGP encryption keys` column.
 
 #### Download and decrypt your archives
 
-Once your encrypted archives are available, you can retrieve them [following this tutorial](/pages/platform/logs-data-platform/archive_cold_storage#retrieving-the-archives).
+Once your encrypted archives are available, you can retrieve them [following this tutorial](/pages/manage_and_operate/observability/logs_data_platform/archive_cold_storage#retrieving-the-archives).
 To decrypt a given archive, you can use `gpg` on a machine on which your private key is present:
 
 ```shell-session

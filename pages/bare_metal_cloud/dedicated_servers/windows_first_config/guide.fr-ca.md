@@ -19,7 +19,7 @@ Après une nouvelle installation d'un système d'exploitation Windows Server sur
 
 ### Étape 1 : accès au KVM
 
-Pour accéder à la console KVM de votre serveur dédié, consultez le [guide KVM](/pages/cloud/dedicated/using_ipmi_on_dedicated_servers#utiliser-le-kvm-via-votre-navigateur-web-uniquement-pour-les-serveurs-les-plus-recents).
+Pour accéder à la console KVM de votre serveur dédié, consultez le [guide KVM](/pages/bare_metal_cloud/dedicated_servers/using_ipmi_on_dedicated_servers#utiliser-le-kvm-via-votre-navigateur-web-uniquement-pour-les-serveurs-les-plus-recents).
 
 ### Étape 2 : terminer l'installation de Windows
 
@@ -59,7 +59,7 @@ Pour sécuriser votre système Windows avec des règles de pare-feu, consultez n
 
 L'activation des logs de démarrage (*boot logs*) Windows peut être utile pour les diagnostics d'erreurs du serveur.
 
-Connectez-vous à votre serveur via une session « Remote Desktop » (bureau à distance) ou [KVM](/pages/cloud/dedicated/using_ipmi_on_dedicated_servers#utiliser-le-kvm-via-votre-navigateur-web-uniquement-pour-les-serveurs-les-plus-recents). Ouvrez le menu Démarrer de Windows et cliquez sur `Exécuter`{.action}.
+Connectez-vous à votre serveur via une session « Remote Desktop » (bureau à distance) ou [KVM](/pages/bare_metal_cloud/dedicated_servers/using_ipmi_on_dedicated_servers#utiliser-le-kvm-via-votre-navigateur-web-uniquement-pour-les-serveurs-les-plus-recents). Ouvrez le menu Démarrer de Windows et cliquez sur `Exécuter`{.action}.
 
 ![Bootlog](images/windowsboot1.png){.thumbnail}
 

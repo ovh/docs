@@ -1,7 +1,6 @@
 ---
 title: 'Poner una instancia en modo de rescate'
 excerpt: 'Poner una instancia en modo de rescate'
-legacy_guide_number: g2029
 updated: 2023-01-04
 ---
 

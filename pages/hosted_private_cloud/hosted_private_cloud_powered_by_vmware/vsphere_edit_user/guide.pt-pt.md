@@ -1,7 +1,6 @@
 ---
 title: Associar um e-mail a um utilizador vSphere
 excerpt: Saiba como associar um endereço de e-mail ao seu utilizador vSphere
-legacy_guide_number: '1441987'
 updated: 2020-07-07
 ---
 

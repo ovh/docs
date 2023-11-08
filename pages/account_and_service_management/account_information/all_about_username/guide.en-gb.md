@@ -19,7 +19,7 @@ You can also use the OVHcloud Control Panel to manage your personal data, and de
 - access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 
 > [!primary]
-> If you experience any difficulties logging in to your account, please read the “[What do I do if I can't log in?](/pages/account/customer/ovhcloud-account-login#login-failure)” section of our guide on [Logging in to the OVHcloud Control Panel](/pages/account_and_service_management/account_information/ovhcloud-account-login).
+> If you experience any difficulties logging in to your account, please read the “[What do I do if I can't log in?](/pages/account_and_service_management/account_information/ovhcloud-account-login#login-failure)” section of our guide on [Logging in to the OVHcloud Control Panel](/pages/account_and_service_management/account_information/ovhcloud-account-login).
 >
 
 ## Instructions
@@ -42,7 +42,7 @@ You can find all of our password recommendations in our guide on [Setting and ma
 
 #### Saving your password
 
-If you have not already done so, save your password in a [password manager](/pages/account/customer/manage-ovh-password#use-a-password-manager) .
+If you have not already done so, save your password in a [password manager](/pages/account_and_service_management/account_information/manage-ovh-password#use-a-password-manager) .
 
 > [!primary]
 > The **KeePass** and **Bitwarden** software are free and open-source password managers.
@@ -146,7 +146,7 @@ You can delegate admin **or** technical **or** billing management for one or mor
 
 ### What to do in the event of identity theft
 
-If you receive an email notifying you of an unknown connection to your OVHcloud account, we advise [changing your account password immediately](/pages/account/customer/manage-ovh-password#change-your-password) and [securing it with two-factor authentication](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa).
+If you receive an email notifying you of an unknown connection to your OVHcloud account, we advise [changing your account password immediately](/pages/account_and_service_management/account_information/manage-ovh-password#change-your-password) and [securing it with two-factor authentication](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa).
 
 If you observe any suspicious activity on your account, please inform our support team by creating a support request in your [OVHcloud Control Panel](https://www.ovh.com/manager/dedicated/#/support/tickets/new).
 
@@ -158,6 +158,6 @@ If you observe any suspicious activity on your account, please inform our suppor
 
 [Logging in to the OVHcloud Control Panel](/pages/account_and_service_management/account_information/ovhcloud-account-login)
 
-[What do I do if I can't log in?](/pages/account/customer/ovhcloud-account-login#login-failure)
+[What do I do if I can't log in?](/pages/account_and_service_management/account_information/ovhcloud-account-login#login-failure)
 
 Join our community of users on <https://community.ovh.com/en/>.

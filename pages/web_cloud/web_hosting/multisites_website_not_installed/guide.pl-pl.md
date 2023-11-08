@@ -46,15 +46,15 @@ Wybierz odpowiedni hosting z listy, następnie kliknij zakładkę `MultiSite`{.a
 |Scenariusz|Co należy zrobić?|
 |---|---|
 |Nazwa Twojej strony wyświetla się w tabeli.|Jeśli właśnie dodałeś Twoją stronę WWW do hostingu, odczekaj około dwudziestu minut, a następnie odśwież cache przeglądarki. Jeśli komunikat `Strona nie została zainstalowana` nadal się pojawi, przejdź [do etapu drugiego](#checkdomainlink).|
-|Domena lub subdomena przypisana do Twojej strony WWW nie wyświetla się w tabeli.|Dodaj Twoją domenę do `strony podpiętej`{.action} w opcji MultiSite, postępując zgodnie z sekcją poświęconą przewodnikowi [Instalacja kilku stron WWW na jednym hostingu - dodanie domeny lub subdomeny](/pages/web/hosting/multisites_configure_multisite#etap-2-dodanie-domeny-lub-subdomeny).|
-|Domena została usunięta z strony podpiętej w opcji MultiSite bez konieczności wykonywania przez Ciebie żadnych czynności.|Twoja domena lub strefa DNS mogą być zarządzane z innego konta. Dodaj Twoją domenę do strony podpiętej w opcji MultiSite, postępując zgodnie z instrukcjami w przewodniku [Instalacja kilku stron WWW na jednym hostingu - dodaj domenę zewnętrzną](/pages/web/hosting/multisites_configure_multisite#etap-22-dodaj-domene-zewnetrzna).|
+|Domena lub subdomena przypisana do Twojej strony WWW nie wyświetla się w tabeli.|Dodaj Twoją domenę do `strony podpiętej`{.action} w opcji MultiSite, postępując zgodnie z sekcją poświęconą przewodnikowi [Instalacja kilku stron WWW na jednym hostingu - dodanie domeny lub subdomeny](/pages/web_cloud/web_hosting/multisites_configure_multisite#etap-2-dodanie-domeny-lub-subdomeny).|
+|Domena została usunięta z strony podpiętej w opcji MultiSite bez konieczności wykonywania przez Ciebie żadnych czynności.|Twoja domena lub strefa DNS mogą być zarządzane z innego konta. Dodaj Twoją domenę do strony podpiętej w opcji MultiSite, postępując zgodnie z instrukcjami w przewodniku [Instalacja kilku stron WWW na jednym hostingu - dodaj domenę zewnętrzną](/pages/web_cloud/web_hosting/multisites_configure_multisite#etap-22-dodaj-domene-zewnetrzna).|
 
 ### Etap 2 : sprawdzić strefę DNS domeny <a name="checkdomainlink"></a>
 
 > [!primary]
 >
 > Ten etap ma na celu sprawdzenie, czy Twoja domena poprzez `Strefa DNS`{.action} jest powiązana z hostingiem Twojej strony WWW.
-> Więcej informacji na temat koncepcji DNS znajdziesz w przewodniku [Modyfikacja strefy DNS](/pages/web/domains/dns_zone_edit#zrozumienie-pojecia-dns).
+> Więcej informacji na temat koncepcji DNS znajdziesz w przewodniku [Modyfikacja strefy DNS](/pages/web_cloud/domains/dns_zone_edit#zrozumienie-pojecia-dns).
 
 #### 2.1 Identyfikacja adresu IP hostingu OVHcloud
 
@@ -72,7 +72,7 @@ W tym celu przejdź do sekcji `Domeny`{.action}, wybierz domenę i przejdź do z
 |---|---|
 |W strefie DNS Twoja domena jest powiązana z adresem IP hostingu za pomocą wpisu typu A (dla IPv4) lub AAAA (dla IPv6) :<br><br>![strefy DNS_IP2](images/zonedns_ip2.png){.thumbnail}|Oznacza to, że konfiguracja Twojej domeny jest poprawna.<br><br>W związku z ostatnimi zmianami w serwerach DNS Twoja strona będzie wyświetlana w ciągu maksymalnie 48 godzin.<br><br>Pamiętaj, aby zrestartować urządzenia (komputer, smartfon, etc.) i usunąć cache przeglądarki.|
 |W strefie DNS nie ma wpisów typu A lub AAAA łączących domenę z adresem IP Twojego hostingu. Lub istniejący wpis wskazuje na inny adres IP.|Dodaj nowy wpis A lub AAAA lub poprawij istniejący wpis zgodnie z [tym przewodnikiem](/pages/web_cloud/domains/dns_zone_edit).|
-|Twoja domena nie wyświetla się w części `Domeny`{.action} w Panelu klienta.<br><br>Lub zakładka `Strefa DNS`{.action} Twojej domeny wyświetla się w następujący sposób :<br><br>![zonedns_ndd_pas_lec2](images/zonedns_ndd_pas_sur_lec2.png){.thumbnail}|Oznacza to, że Twoja domena nie jest zarządzana w Panelu klienta OVHcloud.<br><br>Określ operatora za pomocą narzędzia [WHOIS](https://www.ovh.pl/pomoc/narzedzia/check_whois.pl) i serwerów DNS.<br><br>W [tym przewodniku](/pages/web/hosting/multisites_configure_multisite#etap-22-dodaj-domene-zewnetrzna) znajdziesz i zmodyfikuj odpowiednią strefę DNS.|
+|Twoja domena nie wyświetla się w części `Domeny`{.action} w Panelu klienta.<br><br>Lub zakładka `Strefa DNS`{.action} Twojej domeny wyświetla się w następujący sposób :<br><br>![zonedns_ndd_pas_lec2](images/zonedns_ndd_pas_sur_lec2.png){.thumbnail}|Oznacza to, że Twoja domena nie jest zarządzana w Panelu klienta OVHcloud.<br><br>Określ operatora za pomocą narzędzia [WHOIS](https://www.ovh.pl/pomoc/narzedzia/check_whois.pl) i serwerów DNS.<br><br>W [tym przewodniku](/pages/web_cloud/web_hosting/multisites_configure_multisite#etap-22-dodaj-domene-zewnetrzna) znajdziesz i zmodyfikuj odpowiednią strefę DNS.|
 |Ostrzeżenie to wyświetla się w zakładce `Strefa DNS`{.action} :<br><br>![ostrzeżenie_zonedns_na_srv_dns](images/avertissement_zonedns_pas_sur_srv_dns.png){.thumbnail}|Należy zatem odpowiednio zmienić serwery DNS Twojej domeny zgodnie z [tym przewodnikiem](/pages/web_cloud/domains/dns_server_general_information).|
 
 ## Sprawdź <a name="gofurther"></a>

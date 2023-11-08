@@ -1,6 +1,5 @@
 ---
 title: Questions fréquentes
-legacy_guide_number: '7766169'
 updated: 2018-03-26
 ---
 

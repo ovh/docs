@@ -301,7 +301,7 @@ A continuación, podrá conectarse al VPS con el nombre de alias que haya defini
 ssh ubuntu@vps
 ```
 
-En el ejemplo anterior sólo se especificaron la IP del servidor y el archivo de clave, pero se pueden agregar más detalles. Para configurar una conexión SSH a un segundo servidor con el nombre de usuario «rocky», el [puerto SSH modificado](/pages/cloud/vps/secure_your_vps#changesshport) «49160» y la clave privada en el archivo «myserver_rsa», extienda el contenido del archivo como se muestra en este ejemplo:
+En el ejemplo anterior sólo se especificaron la IP del servidor y el archivo de clave, pero se pueden agregar más detalles. Para configurar una conexión SSH a un segundo servidor con el nombre de usuario «rocky», el [puerto SSH modificado](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps#changesshport) «49160» y la clave privada en el archivo «myserver_rsa», extienda el contenido del archivo como se muestra en este ejemplo:
 
 ```console
 Host vps

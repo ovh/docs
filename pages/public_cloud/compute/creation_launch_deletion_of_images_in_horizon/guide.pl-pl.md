@@ -1,7 +1,6 @@
 ---
 title: 'Tworzenie, uruchamianie i usuwanie obrazów w interfejsie Horizon'
 excerpt: 'Tworzenie, uruchamianie i usuwanie obrazów w interfejsie Horizon'
-legacy_guide_number: g1784
 updated: 2021-12-30
 ---
 

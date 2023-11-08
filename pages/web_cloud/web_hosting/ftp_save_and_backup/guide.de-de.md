@@ -82,7 +82,7 @@ Folgen Sie dieser Anleitung nun entsprechend der ausgewählten Wiederherstellung
 > 
 > Konkret bedeutet das Folgendes:
 >
-> - Unsere Teams senden eine E-Mail über den Status an den [Administrator-Kontakt](/pages/account/customer/managing_contacts#auf-die-kontaktverwaltung-zugreifen) des Webhostings. 
+> - Unsere Teams senden eine E-Mail über den Status an den [Administrator-Kontakt](/pages/account_and_service_management/account_information/managing_contacts#auf-die-kontaktverwaltung-zugreifen) des Webhostings. 
 > - Der Status "Wartung" wird in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) angezeigt. Klicken Sie im Bereich `Web Cloud`{.action} auf Ihren Dienst unter `Hosting-Pakete`{.action} und dann auf den Tab `Allgemeine Informationen`{.action}.
 > - Die gehosteten Webseiten zeigen eine "403 Forbidden"-Meldung an.
 >

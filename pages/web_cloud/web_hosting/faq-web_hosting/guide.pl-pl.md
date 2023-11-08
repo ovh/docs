@@ -71,7 +71,7 @@ W tym celu zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?a
 
 Na stronie `Informacje ogólne`{.action}, która się wyświetla znajdziesz ramkę zatytułowaną `Konfiguracja`{.action} w centrum strony. Po prawej stronie pozycji `Web Cloud Databases`{.action} kliknij przycisk `...`{.action} a następnie na `Odłącz`{.action}. Wybierz najkrótszy okres odnowienia i postępuj zgodnie z instrukcjami aż do zatwierdzenia zamówienia.
 
-Więcej informacji znajdziesz w naszym przewodniku dotyczącym ["Konfiguracji usługi Web Cloud Databases"](/pages/web/clouddb/configure-database-server#modify-ram-web-cloud-db)
+Więcej informacji znajdziesz w naszym przewodniku dotyczącym ["Konfiguracji usługi Web Cloud Databases"](/pages/web_cloud/web_cloud_databases/configure-database-server#modify-ram-web-cloud-db)
 
 **Operacja ta jest nieodwracalna i usługa Web Cloud Databases będzie odpłatna niezależnie od hostingu Performance.**
 
@@ -134,7 +134,7 @@ Jeśli Twoja strona WWW wyświetla się z tym adresem URL po operacji, przywró�
 
 Aby przywrócić kod źródłowy Twojej strony, zapoznaj się z naszym przewodnikiem [Przywracanie plików z kopii zapasowej OVHcloud](/pages/web_cloud/web_hosting/ftp_save_and_backup).
 
-Jeśli Twoja strona WWW zawiera bazę danych, zapoznaj się z naszym przewodnikiem [Import kopii zapasowej do bazy danych hostingu](/pages/web/hosting/sql_importing_mysql_database#przywracanie-kopii-zapasowej-w-panelu-klienta).
+Jeśli Twoja strona WWW zawiera bazę danych, zapoznaj się z naszym przewodnikiem [Import kopii zapasowej do bazy danych hostingu](/pages/web_cloud/web_hosting/sql_importing_mysql_database#przywracanie-kopii-zapasowej-w-panelu-klienta).
 
 ### Co zrobić, jeśli moja strona przekieruje się na webmail OVHcloud?
 
@@ -150,9 +150,9 @@ Następnie zapisz wskazane serwery DNS i przejdź do zakładki `Strefa DNS`{.act
 
 Porównaj `Adres docelowy` wpisów typu `NS` w zakładce `Strefa DNS`{.action} z `Serwery DNS` w zakładce o tej samej nazwie:
 
-- Jeśli elementy są identyczne, zamień cel `213.186.33.5` na czterocyfrowy kod zapisany w zakładce `Informacje ogólne` pod nagłówkiem `IPv4` (aby uzyskać więcej informacji na temat czynności, jakie należy wykonać, postępuj zgodnie z instrukcjami zawartymi w [tym przewodniku](/pages/web/domains/dns_zone_edit#w-praktyce)).
+- Jeśli elementy są identyczne, zamień cel `213.186.33.5` na czterocyfrowy kod zapisany w zakładce `Informacje ogólne` pod nagłówkiem `IPv4` (aby uzyskać więcej informacji na temat czynności, jakie należy wykonać, postępuj zgodnie z instrukcjami zawartymi w [tym przewodniku](/pages/web_cloud/domains/dns_zone_edit#w-praktyce)).
 
-- Jeśli elementy nie są identyczne, ale `Serwery DNS` wskazane w zakładce tej samej nazwy wyświetlają się na [tej liście](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP), zresetuj zawartość zgodnie z instrukcjami zawartymi w [tym przewodniku](/pages/web/domains/dns_server_general_information#zresetuj-serwery-dns).
+- Jeśli elementy nie są identyczne, ale `Serwery DNS` wskazane w zakładce tej samej nazwy wyświetlają się na [tej liście](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP), zresetuj zawartość zgodnie z instrukcjami zawartymi w [tym przewodniku](/pages/web_cloud/domains/dns_server_general_information#zresetuj-serwery-dns).
 
 - Jeśli elementy nie są identyczne i `serwery DNS` wskazane w zakładce o tej samej nazwie nie figurują na [tej liście](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP), skontaktuj się z Webmasterem lub poszukaj [wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/pl/directory/) na stronie [partnerów OVHcloud](https://partner.ovhcloud.com/pl/directory/).
 
@@ -171,7 +171,7 @@ Przywróć zawartość Twojej strony WWW do poprzedniego stanu:
 
 - Aby przywrócić kod źródłowy Twojej strony, zapoznaj się z naszym przewodnikiem [Przywracanie plików z kopii zapasowej OVHcloud](/pages/web_cloud/web_hosting/ftp_save_and_backup);
 
-- Jeśli Twoja strona WWW zawiera bazę danych, zapoznaj się z naszym przewodnikiem [Przywrócenie kopii zapasowej bazy danych](/pages/web/hosting/sql_importing_mysql_database#przywracanie-kopii-zapasowej-w-panelu-klienta).
+- Jeśli Twoja strona WWW zawiera bazę danych, zapoznaj się z naszym przewodnikiem [Przywrócenie kopii zapasowej bazy danych](/pages/web_cloud/web_hosting/sql_importing_mysql_database#przywracanie-kopii-zapasowej-w-panelu-klienta).
 
 W przypadku braku możliwości przywrócenia dostępu do strony WWW, skontaktuj się z Webmasterem lub poszukaj wyspecjalizowanego webmastera na stronie [partnerów OVHcloud](https://partner.ovhcloud.com/pl/directory/).
 
