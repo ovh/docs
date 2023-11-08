@@ -92,7 +92,7 @@ S’il n’y a pas d’erreur, le message de confirmation suivant s’affiche :
 
 Image
 
-La copie de la base de données peut prendre plusieurs minutes. Pour être sûr que la copie a bien été prise en compte, dirigez-vous dans l’onglet `Ongoing Tasks`{.action}. Dans le tableau, une nouvelle ligne correspondant à votre copie apparaît avec un statut « planifié ». Une fois l’opération finie, la ligne disparaît.
+La copie de la base de données peut prendre plusieurs minutes. Pour être sûr que la copie a bien été prise en compte, dirigez-vous dans l’onglet `Tâches en cours`{.action}. Dans le tableau, une nouvelle ligne correspondant à votre copie apparaît avec un statut « planifié ». Une fois l’opération finie, la ligne disparaît.
 
 Image
 
