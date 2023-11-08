@@ -127,7 +127,7 @@ Pour plus de détail, ou si vous utilisez un autre CMS, suivez le guide [Modifie
 
 ### Gérer et résoudre les erreurs
 
-Tout au long du processus de copie de la base de données, des erreurs peuvent survenir.
+Tout au long du processus de copie du contenu de la base de données, des erreurs peuvent survenir.
 
 #### Aucune base de données ne s’affiche pas dans la liste
 
