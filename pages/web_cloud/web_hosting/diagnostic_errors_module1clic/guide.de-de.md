@@ -37,7 +37,7 @@ Wenn diese jedoch nicht korrekt konfiguriert sind, kann die Installation des „
 
 ### Ihr Domainname wird bei der Erstellung des „1 Klick Moduls“ nicht angeboten
 
-![domainNotProposed](images/domainNotProposed.png){.thumbnail}
+![domainenotproposed](images/domainenotproposed.png){.thumbnail}
 
 Verbinden Sie sich mit Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) und gehen Sie dann in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Hosting-Pakete`{.action} und wählen Sie das Webhosting aus, das installiert werden soll. Klicken Sie auf der angezeigten Seite auf den Tab `Multisite`{.action}, und führen Sie dann die folgenden Überprüfungen durch:
 
@@ -54,7 +54,7 @@ Diese Meldung erscheint, wenn Sie die Installation Ihres „1-Klick-Moduls“ st
 
 #### Lösung 1: Eine neue Datenbank bestellen
 
-Wenn Sie keine Inklusiv-Datenbanken mehr in Ihrem Webhosting haben, können Sie eine neue [Start SQL Datenbank](https://www.ovhcloud.com/de/web-hosting/options/start-sql/) bestellen und mit Ihrem aktuellen Webhosting verbinden. Anschließend können Sie die Installation des „1-Klick-Moduls“ neu starten. Wenn Sie mehr Speicherplatz benötigen (mehr als 1 GB), empfehlen wir Ihnen stattdessen unseren Dienst [Web Cloud Databases](https://www.ovhcloud.com/de-ca/web-cloud/databases/).
+Wenn Sie keine Inklusiv-Datenbanken mehr in Ihrem Webhosting haben, können Sie eine neue [Start SQL Datenbank](https://www.ovhcloud.com/de/web-hosting/options/start-sql/) bestellen und mit Ihrem aktuellen Webhosting verbinden. Anschließend können Sie die Installation des „1-Klick-Moduls“ neu starten. Wenn Sie mehr Speicherplatz benötigen (mehr als 1 GB), empfehlen wir Ihnen stattdessen unseren Dienst [Web Cloud Databases](https://www.ovhcloud.com/de/web-cloud/databases/).
 
 Gehen Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Hosting-Pakete`{.action} und wählen Sie das Webhosting aus, für das Sie eine zusätzliche Datenbank hinzufügen möchten. Klicken Sie auf der angezeigten Seite auf den Tab `Datenbanken`{.action} und dann auf `Aktionen`{.action}, um eine zusätzliche Datenbank zu bestellen:
 
