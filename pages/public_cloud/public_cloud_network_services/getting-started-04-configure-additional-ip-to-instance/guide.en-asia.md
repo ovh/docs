@@ -30,7 +30,7 @@ You may need to configure Additional IP addresses on your instances, for example
 
 ## Instructions
 
-The following sections contain the configurations for the most commonly used distributions/operating systems. The first step is always to log in to your instance via SSH or a GUI login session (VNC for a Windows instance). The examples below presume you are logged in as a user with elevated permissions (Administrator/sudo).
+The following sections contain configurations for the distributions we currently offer and the most commonly used distributions/operating systems. The first step is always to log in to your instance via SSH or a GUI login session (VNC for a Windows instance). The examples below presume you are logged in as a user with elevated permissions (Administrator/sudo).
 
 > [!primary]
 >
@@ -45,7 +45,7 @@ Concerning different distribution releases, please note that the proper procedur
 |NETWORK_INTERFACE|The name of the network interface|*eth0*, *ens3*|
 |ID|ID of the IP alias, starting with *0* (depending on the number of additional IPs there are to configure)|*0*, *1*|
 
-### Debian 11
+### Debian 10/11
 
 #### Step 1: Disable automatic network configuration
 
@@ -62,6 +62,10 @@ network: {config: disabled}
 Creating this configuration file will prevent changes to your network configuration from being made automatically.
 
 #### Step 2: Edit the network configuration file
+
+The main configuration file is located in `/etc/network/interfaces.d/`. In this example it is called "ifcfg-eth0".
+
+In this environment, Additional IPs are configured by creating "virtual interfaces or ethernet aliases" (example, eth0:0, eth0:1 etc...).
 
 You can verify your network interface name with this command:
 
@@ -80,6 +84,15 @@ Then add the following lines:
 auto NETWORK_INTERFACE:ID
 iface NETWORK_INTERFACE:ID inet static
 address ADDITIONAL_IP
+netmask 255.255.255.255
+```
+
+Configuration example:
+
+```bash
+auto eth0:0
+iface eth0:0 inet static
+address 169.254.10.254
 netmask 255.255.255.255
 ```
 

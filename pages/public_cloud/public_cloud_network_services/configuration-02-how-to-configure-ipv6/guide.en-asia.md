@@ -72,7 +72,7 @@ All the information you need is in the **Networks** section.
 
 <br>First of all, connect to your instance via SSH.
 
-#### On Debian
+#### On Debian (excluding Debian 12)
 
 If we assume that your interface is eth0, the configuration should look like this:
 
@@ -100,7 +100,7 @@ pre-down /sbin/ip -6 route del default via 2001:41d0:xxx:xxxx::111 dev eth0
 pre-down /sbin/ip -6 route del 2001:41d0:xxx:xxxx::111 dev eth0
 ```
 
-#### On Ubuntu
+#### On Ubuntu (20.04 -23.04) and Debian 12
 
 The network configuration files are located in the `/etc/netplan/` directory. First, create a copy of the IPv6 configuration file:
 

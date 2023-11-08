@@ -1,7 +1,7 @@
 ---
 title: Configuring IP aliasing
 excerpt: Find out how to add Additional IP addresses to your VPS configuration
-updated: 2023-08-15
+updated: 2023-11-07
 ---
 
 > [!primary]
@@ -30,7 +30,7 @@ IP aliasing refers to a special network configuration for certain OVHcloud servi
 
 ## Instructions
 
-The following sections contain the configurations for the most commonly used distributions/operating systems. The first step is always to log in to your server via SSH or a GUI login session (RDP for a Windows VPS). The examples below presume you are logged in as a user with elevated permissions (Administrator/sudo).
+The following sections contain configurations for the distributions we currently offer and the most commonly used distributions/operating systems. The first step is always to log in to your server via SSH or a GUI login session (RDP for a Windows VPS). The examples below presume you are logged in as a user with elevated permissions (Administrator/sudo).
 
 > [!primary]
 >
@@ -54,6 +54,7 @@ Open the following file path with a text editor:
 ```bash
 sudo nano /etc/cloud/cloud.cfg.d/99-disable-network-config.cfg
 ```
+
 Enter the following line, then save and exit the editor.
 
 ```bash
@@ -62,6 +63,10 @@ network: {config: disabled}
 Creating this configuration file will prevent changes to your network configuration from being made automatically.
 
 #### Step 2: Edit the network configuration file
+
+The main configuration file is located in `/etc/network/interfaces.d/`. In this example it is called "ifcfg-eth0".
+
+In this environment, Additional IPs are configured by creating "virtual interfaces or ethernet aliases" (example, eth0:0, eth0:1 etc...).
 
 You can verify your network interface name with this command:
 
@@ -83,6 +88,15 @@ address ADDITIONAL_IP
 netmask 255.255.255.255
 ```
 
+Configuration example:
+
+```bash
+auto eth0:0
+iface eth0:0 inet static
+address 169.254.10.254
+netmask 255.255.255.255
+```
+
 #### Step 3: Restart the interface
 
 Apply the changes with the following command:
@@ -91,9 +105,11 @@ Apply the changes with the following command:
 sudo systemctl restart networking
 ```
 
-### Ubuntu 20.04 & Debian 12
+### Ubuntu (20.04 - 23.04) & Debian 12
 
 The configuration file for your Additional IP addresses is located in `/etc/netplan/`. In this example it is called "50-cloud-init.yaml". Before making changes, verify the actual file name in this folder. Each Additional IP address will need its own line within the file.
+
+You can configure your Additional IPs directly in the main configuration file, but for a more secure configuration, we strongly recommend that you create separate configuration files for Additional IPs and IPv6 addresses. This way, if you make a mistake, you can simply delete the file and start again.
 
 #### Step 1: Disable automatic network configuration
 
@@ -109,7 +125,7 @@ network: {config: disabled}
 ```
 Creating this configuration file will prevent changes to your network configuration from being made automatically.
 
-#### Step 2: Edit the configuration file
+#### Step 2: Create the configuration file
 
 You can verify your network interface name with this command:
 
@@ -117,30 +133,43 @@ You can verify your network interface name with this command:
 ip a
 ```
 
-Open the network configuration file for editing with the following command:
+Next, create a configuration file with a .yaml extension to configure your additional IPs. As an example, our file is named "51-cloud-init.yaml".
 
-```bash
-sudo nano /etc/netplan/50-cloud-init.yaml
+```sh
+editor /etc/netplan/51-cloud-init.yaml
 ```
 
-Do not modify the existing lines in the configuration file. Add your Additional IP address by adding a second configuration block for the public interface according to the example below:
+Netplan does not support virtual interfaces or ethernet aliases (for example ens3:0, ens3:1), so all Additional IPs are configured on a single network interface.
 
-```yaml
+Next, edit the file with the content below, replacing `INTERFACE_NAME`, `MAC_ADDRESS` and `ADDITIONAL_IP` with your own values:
+
+```
 network:
     version: 2
     ethernets:
-        NETWORK_INTERFACE:
+        INTERFACE_NAME:
             dhcp4: true
             match:
-                macaddress: fa:xx:xx:xx:xx:63
-            set-name: NETWORK_INTERFACE            
-        NETWORK_INTERFACE:
-            dhcp4: true
-            match:
-                macaddress: fa:xx:xx:xx:xx:63
-            set-name: NETWORK_INTERFACE
+                macaddress: MAC_ADDRESS
+            set-name: INTERFACE_NAME
             addresses:
             - ADDITIONAL_IP/32
+```
+
+If you have two Additional IPs to configure, the configuration file should look like this:
+
+```
+network:
+    version: 2
+    ethernets:
+        INTERFACE_NAME:
+            dhcp4: true
+            match:
+                macaddress: MAC_ADDRESS
+            set-name: INTERFACE_NAME
+            addresses:
+            - ADDITIONAL_IP1/32
+            - ADDITIONAL_IP2/32
 ```
 
 > [!warning]
@@ -166,7 +195,190 @@ sudo netplan apply
 
 Repeat this procedure for each Additional IP address.
 
-### Windows Server 2016
+#### Assign an Additional IP temporarily
+
+It is possible to asign an Additional IP temporarily, however, note that the configuration will be lost when the server is rebooted. This process also allows you to label the IP with a virtual interface.
+
+Simply replace `ADDITIONAL_IP`, `NETWORK_INTERFACE` and `NETWORK_INTERFACE:ID` with your own values.
+
+```bash
+sudo ip address add ADDITIONAL_IP/32 dev NETWORK_INTERFACE label NETWORK_INTERFACE:ID
+```
+
+For example, if we want to temporarily assign IP block `169.254.10.254/32` to our server with network interface **ens3**:
+
+```bash
+sudo ip address add 169.254.10.254/32 dev ens3 label ens3:0
+```
+
+If we run `ip a`, we can see the IP is configured on the main interface with virtual interface **ens3:0**:
+
+```bash
+1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+    inet 127.0.0.1/8 scope host lo
+       valid_lft forever preferred_lft forever
+    inet6 ::1/128 scope host
+       valid_lft forever preferred_lft forever
+2: ens3: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    link/ether fb:17:3a:a8:15:7c brd ff:ff:ff:ff:ff:ff
+    inet 123.123.123.123/32 scope global dynamic ens3
+       valid_lft 86179sec preferred_lft 86179sec
+    inet 169.254.10.254/32 scope global ens3:0
+       valid_lft forever preferred_lft forever
+```
+
+### Fedora 37 and following
+
+Fedora now uses keyfiles. NetworkManager previously stored network profiles in ifcfg format in this directory: `/etc/sysconfig/network-scripts/`. However, the ifcfg format is now deprecated. By default, NetworkManager no longer creates new profiles in this format. The configuration file is now found in `/etc/NetworkManager/system-connections/`.
+
+#### Step 1: Create a backup
+
+> [!primary]
+> 
+> Note that the name of the configuration file in our example may differ from your own. Please adjust to your appropriate name. 
+>
+
+First, make a copy of the config file, so that you can revert at any time:
+
+```sh
+cp -r /etc/NetworkManager/system-connections/cloud-init-eth0.nmconnection /etc/NetworkManager/system-connections/cloud-init-eth0.nmconnection.bak
+```
+
+#### Step 2: Edit the config file
+
+Verify your network interface name with this command:
+
+```bash
+ip a
+```
+
+Do not modify the existing lines in the configuration file, add your Additional IP to the config file as follows, replacing `ADDITIONAL_IP/32` with your own.
+
+```sh
+editor /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection
+```
+
+```sh
+[ipv4]
+method=auto
+may-fail=false
+address1=ADDITIONAL_IP/32
+```
+
+If you have two Additional IPs to configure, the configuration file should look like this:
+
+```sh
+[connection]
+id=cloud-init eno1
+uuid=xxxxxxx-xxxx-xxxe-ba9c-6f62d69da711
+type=ethernet
+
+[user]
+org.freedesktop.NetworkManager.origin=cloud-init
+
+[ethernet]
+mac-address=MA:CA:DD:RE:SS:XX
+
+[ipv4]
+method=auto
+may-fail=false
+address1=ADDITIONAL_IP1/32
+address2=ADDITIONAL_IP2/32
+```
+
+#### Step 3: Restart the interface
+
+You now need to restart your interface:
+
+```sh
+systemctl restart NetworkManager
+```
+
+### cPanel (CentOS 7) / AlmaLinux (8 & 9), Rocky Linux (8 & 9) / Red Hat derivatives
+
+The main configuration file is located in `/etc/sysconfig/network-scripts/`. In this example it is called "ifcfg-eth0". Before making changes, verify the actual file name in this folder. 
+We will create a configuration file with a virtual interface for each Additional IP to be configured.
+
+To achieve this, we simply add a consecutive number to the interface name, starting with a value of 0 for the first alias. For example, for network a interface named "eth0" the first alias is "eth0:0".
+
+#### Step 1: Edit the network configuration file
+
+First, verify your network interface name with this command:
+
+```bash
+ip a
+```
+
+Once you have identified your network interface, create a network configuration file for editing. Replace `NETWORK_INTERFACE` with your interface name and `ID` with the first value:
+
+```bash
+sudo nano /etc/sysconfig/network-scripts/ifcfg-NETWORK_INTERFACE:ID
+```
+
+For example, with a network interface named "eth0", we will create the configuration file below:
+
+```bash
+sudo nano /etc/sysconfig/network-scripts/ifcfg-eth0:0
+```
+
+Then add these lines, replacing `NETWORK_INTERFACE:ID` and `ADDITIONAL_IP` with your own values.
+
+```bash
+DEVICE=NETWORK_INTERFACE:ID
+BOOTPROTO=static
+IPADDR=ADDITIONAL_IP
+NETMASK=255.255.255.255
+BROADCAST=ADDITIONAL_IP
+ONBOOT=yes
+```
+
+Configuration example:
+
+```bash
+DEVICE=eth0:0
+BOOTPROTO=static
+IPADDR=169.254.10.254
+NETMASK=255.255.255.255
+BROADCAST=169.254.10.254
+ONBOOT=yes
+```
+
+#### Step 2: Restart the interface
+
+Apply the changes with the following command:
+
+```bash
+sudo systemctl restart network.service
+```
+
+### Plesk
+
+#### Step 1: Access the Plesk IP management section
+
+In the Plesk control panel, choose `Tools & Settings`{.action} from the left-hand sidebar.
+
+![acces to the ip addresses management](images/pleskip1.png){.thumbnail}
+
+Click on `IP Addresses`{.action} under **Tools & Resources**.
+
+#### Step 2: Add the additional IP information
+
+In this section, click on the button `Add IP Address`{.action}.
+
+![add ip information](images/pleskip2-2.png){.thumbnail}
+
+Enter your Additional IP in the form `xxx.xxx.xxx.xxx/32` into the field "IP address and subnet mask", then click on `OK`{.action}.
+
+![add ip information](images/pleskip3-3.png){.thumbnail}
+
+#### Step 3: Check the current IP configuration
+
+Back in the section "IP Addresses", verify that the Additional IP address was added correctly.
+
+![current IP configuration](images/pleskip4-4.png){.thumbnail}
+
+### Windows Server 2016 and later
 
 #### Step 1: Verify the network configuration
 
@@ -215,67 +427,6 @@ To restart it, right-click on it again and then select `Enable`{.action}.
 Open the command prompt (cmd) and enter `ipconfig`. The configuration should now include the new Additional IP address.
 
 ![check current network configuration](images/image8-8.png){.thumbnail}
-
-### cPanel (CentOS 7) / Red Hat derivatives
-
-#### Step 1: Edit the network configuration file
-
-You can verify your network interface name with this command:
-
-```bash
-ip a
-```
-
-Open the network configuration file for editing:
-
-```bash
-sudo nano /etc/sysconfig/network-scripts/ifcfg-NETWORK_INTERFACE:ID
-```
-
-Then add these lines:
-
-```bash
-DEVICE=NETWORK_INTERFACE:ID
-BOOTPROTO=static
-IPADDR=ADDITIONAL_IP
-NETMASK=255.255.255.255
-BROADCAST=ADDITIONAL_IP
-ONBOOT=yes
-```
-
-#### Step 2: Restart the interface
-
-Apply the changes with the following command:
-
-```bash
-sudo systemctl restart networking
-```
-
-### Plesk
-
-#### Step 1: Access the Plesk IP management section
-
-In the Plesk control panel, choose `Tools & Settings`{.action} from the left-hand sidebar.
-
-![acces to the ip addresses management](images/pleskip1.png){.thumbnail}
-
-Click on `IP Addresses`{.action} under **Tools & Resources**.
-
-#### Step 2: Add the additional IP information
-
-In this section, click on the button `Add IP Address`{.action}.
-
-![add ip information](images/pleskip2-2.png){.thumbnail}
-
-Enter your Additional IP in the form `xxx.xxx.xxx.xxx/32` into the field "IP address and subnet mask", then click on `OK`{.action}.
-
-![add ip information](images/pleskip3-3.png){.thumbnail}
-
-#### Step 3: Check the current IP configuration
-
-Back in the section "IP Addresses", verify that the Additional IP address was added correctly.
-
-![current IP configuration](images/pleskip4-4.png){.thumbnail}
 
 ### Troubleshooting
 

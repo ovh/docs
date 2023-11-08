@@ -1,7 +1,7 @@
 ---
 title: 'Configuring IPv6 on a VPS'
 excerpt: 'Find out how to configure IPv6 on your OVHcloud VPS'
-updated: 2022-12-01
+updated: 2023-11-06
 ---
 
 ## Objective
@@ -25,6 +25,13 @@ IPv6 is the latest version of the *Internet Protocol*. Each OVHcloud VPS server 
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia) / to the [OVHcloud API](https://ca.api.ovh.com/)
 
 ## Instructions
+
+The following sections contain configurations for the distributions we currently offer and the most commonly used distributions/operating systems. The first step is always to log in to your server via SSH or a GUI login session (RDP for a Windows VPS). The examples below presume you are logged in as a user with elevated permissions (Administrator/sudo).
+
+> [!warning]
+>
+> Please note that on recent versions of Linux operating systems, the IPv6 address is configured by default. Be sure to check your OS configuration file before making any changes.
+>
 
 Configuring IPv6 on your VPS is done in multiple steps. At several points in the process you will be prompted to enter commands or to customise configuration files of your server.
 
@@ -109,9 +116,9 @@ ip -6 route add default via IPV6_GATEWAY dev eth0
 
 There are two ways to configure your network depending on the operating system installed on your server:
 
-- **for Debian 11 and earlier, Ubuntu 16.04 and earlier**: use the [method based on the *interfaces* files](#interfaces)
+- **for Debian 10 and 11**: use the [method based on the *interfaces* files](#interfaces)
 
-- **for Ubuntu 17.04 and later**: use the [method based on the *Netplan* configuration](#netplan)
+- **for Debian 12, Ubuntu 20.04 and later**: use the [method based on the *Netplan* configuration](#netplan)
 
 In some cases (such as Debian 9), the appropriate method may not be the one specified above. To make sure, browse your system to check which one is active. Visit <https://netplan.io/> for more information, if necessary.<br>
 Moreover, keep in mind that the exact file names may vary.
@@ -185,11 +192,10 @@ rm -f /etc/netplan/50-cloud-init.yaml
 cp /etc/netplan/backup/50-cloud-init.yaml /etc/netplan/50-cloud-init.yaml
 ```
 
-Before editing it, create a copy of the IPv6 configuration file:
+Next, create a configuration file in the directory `/etc/netplan/`. In our example, our file is named "51-cloud-init-ipv6.yaml":
 
 ```bash
-cd /etc/netplan
-cp 50-cloud-init.yaml 51-cloud-init-ipv6.yaml
+nano /etc/netplan/51-cloud-init-ipv6.yaml
 ```
 
 Then edit the `51-cloud-init-ipv6.yaml` file, adding the IPv6 configuration of your server. Replace the generic elements (i.e. *YOUR_IPV6*, *IPV6_PREFIX* and *IPV6_GATEWAY*) as well as the network interface (if your server is not using **eth0**) with your specific values.
@@ -204,10 +210,7 @@ network:
               name: eth0
             addresses:
               - YOUR_IPV6/IPv6_PREFIX
-            gateway6: IPv6_GATEWAY
             routes:
-              - to: IPv6_GATEWAY
-                scope: link
               - to: ::/0
                 via: IPv6_GATEWAY
 ```

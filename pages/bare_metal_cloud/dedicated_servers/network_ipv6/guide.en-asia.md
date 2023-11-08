@@ -60,7 +60,7 @@ For these ranges, the default gateway for your IPv6 block (IPv6_GATEWAY) is `fe8
 
 In this case, the default IPv6 gateway can be written as: `fe80::1`.
 
-### Debian and Debian-based operating systems
+### Debian and Debian-based operating systems (excluding Debian 12)
 
 > [!warning]
 >
@@ -255,7 +255,7 @@ network:
                   scope: link
 ```
 
-### Ubuntu 21.10 and 22.04
+### Ubuntu (22.04 - 23.10) and Debian 12
 
 The configuration file should look like the example below:
 

@@ -1,7 +1,7 @@
 ---
 title: 'Configuring IP aliasing'
 excerpt: 'Find out how to add Additional IP addresses to your server configuration'
-updated: 2023-06-15
+updated: 2023-11-07
 ---
 
 > [!primary]
@@ -35,12 +35,20 @@ IP aliasing is a special network configuration for your OVHcloud dedicated serve
 
 ## Instructions
 
-The following sections contain the configurations for the most commonly used distributions/operating systems.
+The following sections contain configurations for the distributions we currently offer and the most commonly used distributions/operating systems. The first step is always to log in to your server via SSH or a GUI login session (RDP for a Windows VPS). The examples below presume you are logged in as a user with elevated permissions (Administrator/sudo).
 
 > [!primary]
 >
 Concerning different distribution releases, please note that the proper procedure to configure your network interface as well as the file names may have been subject to change. We recommend to consult the manuals and knowledge resources of the respective OS versions if you experience any issues.
 > 
+
+**Please take note of the following terminology that will be used in code examples and instructions of the guide sections below:**
+
+|Term|Description|Examples|
+|---|---|---|
+|ADDITIONAL_IP|An Additional IP address assigned to your service|169.254.10.254|
+|NETWORK_INTERFACE|The name of the network interface|*eth0*, *ens3*|
+|ID|ID of the IP alias, starting with *0* (depending on the number of additional IPs there are to configure)|*0*, *1*|
 
 ### Debian 10/11
 
@@ -120,131 +128,16 @@ You now need to restart your interface:
 /etc/init.d/networking restart
 ```
 
-### Debian 6/7/8 and derivatives
-
-#### Step 1: Create a backup
-
-First, make a copy of the config file, so that you can revert at any time:
-
-```sh
-cp /etc/network/interfaces /etc/network/interfaces.bak
-```
-
-#### Step 2: Edit the config file
-
-> [!primary]
->
-Note that the names of the network interfaces in our examples may differ from your own. Please adjust to your appropriate interface names.
->
-
-You can now modify the config file:
-
-```sh
-editor /etc/network/interfaces
-```
-
-You then need to add a secondary interface:
-
-```bash
-auto eth0:0
-iface eth0:0 inet static
-address ADDITIONAL_IP
-netmask 255.255.255.255
-```
-
-To ensure that the secondary interface is enabled or disabled whenever the `eth0` interface is enabled or disabled, you need to add the following line to the eth0 configuration:
-
-```bash
-post-up /sbin/ifconfig eth0:0 ADDITIONAL_IP netmask 255.255.255.255 broadcast ADDITIONAL_IP
-pre-down /sbin/ifconfig eth0:0 down
-```
-
-If you have two Additional IPs to configure, the `/etc/network/interfaces` file should look like this:
-
-```bash
-auto eth0
-iface eth0 inet static
-address SERVER_IP
-netmask 255.255.255.0
-broadcast xxx.xxx.xxx.255
-gateway xxx.xxx.xxx.254
-
-auto eth0:0
-iface eth0:0 inet static
-address ADDITIONAL_IP1
-netmask 255.255.255.255
-
-auto eth0:1
-iface eth0:1 inet static
-address ADDITIONAL_IP2
-netmask 255.255.255.255
-```
-Or like this:
-```bash
-auto eth0
-iface eth0 inet static
-address SERVER_IP
-netmask 255.255.255.0
-broadcast xxx.xxx.xxx.255
-gateway xxx.xxx.xxx.254
-
-# IP 1
-post-up /sbin/ifconfig eth0:0 ADDITIONAL_IP1 netmask 255.255.255.255 broadcast ADDITIONAL_IP1
-pre-down /sbin/ifconfig eth0:0 down
-
-# IP 2
-post-up /sbin/ifconfig eth0:1 ADDITIONAL_IP2 netmask 255.255.255.255 broadcast ADDITIONAL_IP2
-pre-down /sbin/ifconfig eth0:1 down
-```
-
-#### Step 3: Restart the interface
-
-You now need to restart your interface:
-
-```sh
-/etc/init.d/networking restart
-```
-
-### Debian 9+, Ubuntu 17.04 and Arch Linux
-
-On these distributions, the naming of interfaces as eth0, eth1 (and so on) is abolished. We will therefore use `systemd-network` more generally.
-
-#### Step 1: Create a backup
-
-First, make a copy of the config file, so that you can revert at any time:
-
-```sh
-cp /etc/systemd/network/50-default.network /etc/systemd/network/50-default.network.bak
-```
-
-#### Step 2: Edit the config file
-
-You can now add your Additional IP to the config file, as follows:
-
-```sh
-editor /etc/systemd/network/50-default.network
-```
-```sh
-[Address]
-Address=ADDITIONAL_IP/32
-Label=failover1 # optional
-```
-
-The label is optional. It’s just for distinguishing between your various Additional IPs.
-
-#### Step 3: Restart the interface
-
-You now need to restart your interface:
-
-```sh
-systemctl restart systemd-networkd
-```
-
-### Fedora 36 and following
+### Fedora 37 and following
 
 Fedora now uses keyfiles. NetworkManager previously stored network profiles in ifcfg format in this directory: `/etc/sysconfig/network-scripts/`. However, the ifcfg format is now deprecated. By default, NetworkManager no longer creates new profiles in this format. The configuration file is now found in `/etc/NetworkManager/system-connections/`.
 
 #### Step 1: Create a backup
+
+> [!primary]
+> 
+> Note that the name of the network file in our example may differ from your own. Please adjust to your appropriate name.
+>
 
 First, make a copy of the config file, so that you can revert at any time:
 
@@ -254,16 +147,19 @@ cp -r /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection /etc/N
 
 #### Step 2: Edit the config file
 
-> [!primary]
-> 
-> Note that the name of the network file in our example may differ from your own. Please adjust to your appropriate name. To obtain the name of your network interface so you can edit the proper network file, you can run the following command: `ip a`.
->
-> You can also verify the connected interface with the following command: 
->
-> `nmcli connection show`
-> 
+To obtain the name of your network interface so you can edit the proper network file, you can run one of the following command: 
 
-You can now add your Additional IP to the config file, as follows:
+```sh
+ip a
+```
+
+or 
+
+```sh
+nmcli connection show
+```
+
+Do not modify the existing lines in the configuration file, add your Additional IP to the config file as follows, replacing `ADDITIONAL_IP/32`.
 
 ```sh
 editor /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection
@@ -305,28 +201,31 @@ You now need to restart your interface:
 systemctl restart NetworkManager
 ```
 
-### Ubuntu 17.10 and following
+### Debian 12, Ubuntu 20.04 and following
 
-Each Additional IP address will need its own line in the configuration file. The configuration file is called "50-cloud-init.yaml" and is located in `/etc/netplan`.
+The configuration file is called "50-cloud-init.yaml" and is located in `/etc/netplan`. 
+
+The best practice approach is to create separate configuration files for Additional IPs and IPv6 addresses. This way, you easily revert the changes in case of an error.
 
 #### Step 1: Determine the interface
 
 ```sh
-ifconfig
+ip a
 ```
-Note the interface name and its MAC address
+
+Note the name of the interface (the one on which your server's main IP address is configured) and its MAC address.
 
 #### Step 2: Create the configuration file
 
-Connect to your server via SSH and run the following command:
+Next, create a configuration file with a .yaml extension to configure your additional IPs. As an example, our file is named "51-cloud-init.yaml".
 
 ```sh
-editor /etc/netplan/50-cloud-init.yaml
+editor /etc/netplan/51-cloud-init.yaml
 ```
 
-Next, edit the file with the content below, replacing `INTERFACE_NAME` `MAC_ADDRESS` and `ADDITIONAL_IP`:
+Next, edit the file with the content below, replacing `INTERFACE_NAME`, `MAC_ADDRESS` and `ADDITIONAL_IP` with your own values:
 
-```sh
+```
 network:
     version: 2
     ethernets:
@@ -337,6 +236,22 @@ network:
             set-name: INTERFACE_NAME
             addresses:
             - ADDITIONAL_IP/32
+```
+
+If you have two Additional IPs to configure, the configuration file should look like this:
+
+```
+network:
+    version: 2
+    ethernets:
+        INTERFACE_NAME:
+            dhcp4: true
+            match:
+                macaddress: MAC_ADDRESS
+            set-name: INTERFACE_NAME
+            addresses:
+            - ADDITIONAL_IP1/32
+            - ADDITIONAL_IP2/32
 ```
 
 Save and close the file. You can test the configuration with the following command:
@@ -353,34 +268,52 @@ Next, run the following commands to apply the configuration:
 netplan apply
 ```
 
-### CentOS, AlmaLinux (8 & 9), Rocky Linux (8 & 9), and Fedora (25 and earlier)
+### CentOS 7, AlmaLinux (8 & 9), Rocky Linux (8 & 9)
 
-#### Step 1: Create the config file
+The main configuration file is located in `/etc/sysconfig/network-scripts/`. In this example it is called "ifcfg-eth0". Before making changes, verify the actual file name in this folder. 
 
-First, make a copy of the source file so that you can use it as a template:
+For each additional IP to be configured, we create a configuration file named "ifcfg-NETWORK_INTERFACE:ID" (replacing NETWORK_INTERFACE with the physical interface and ID with the virtual interface number).
 
-```sh
-cp /etc/sysconfig/network-scripts/ifcfg-eth0 /etc/sysconfig/network-scripts/ifcfg-eth0:0
-```
+For the virtual interface number, we simply add a consecutive number to the interface name, starting with a value of 0 for the first alias. For example, for network a interface named "eth0" the first alias is "eth0:0", the second alias is "eth0:1", etc...
 
-#### Step 2: Edit the config file
-
-You can now modify the eth0:0 file in order to replace the IP:
+#### Step 1: Determine the interface
 
 ```sh
-editor /etc/sysconfig/network-scripts/ifcfg-eth0:0
+ifconfig
 ```
 
-First, replace the name of the `device`, then replace the existing IP with the Additional IP you have received:
+Note the name of the interface (the one on which your server's main IP address is configured).
+
+#### Step 2: Create the config file
+
+First, create the configuration file 
+
+```sh
+nano /etc/sysconfig/network-scripts/ifcfg-NETWORK_INTERFACE:ID
+```
+
+Next, edit the file with the content below, replacing `NETWORK_INTERFACE:ID`, and `ADDITIONAL_IP` with your own values:
 
 ```bash
-DEVICE="eth0:0"
+DEVICE="NETWORK_INTERFACE:ID"
 ONBOOT="yes"
 BOOTPROTO="none" # For CentOS use "static"
 IPADDR="ADDITIONAL_IP"
 NETMASK="255.255.255.255"
 BROADCAST="ADDITIONAL_IP"
 ```
+
+Configuration example
+
+```bash
+DEVICE="eth0:0"
+ONBOOT="yes"
+BOOTPROTO="none" # For CentOS use "static"
+IPADDR="169.254.10.254"
+NETMASK="255.255.255.255"
+BROADCAST="169.254.10.254"
+```
+
 
 #### Step 3: Start the alias interface
 
@@ -397,87 +330,6 @@ You need to restart your interface:
 ```sh
 systemctl restart NetworkManager
 ```
-
-### Gentoo
-
-#### Step 1: Create a backup
-
-First, make a copy of the config file, so that you can revert at any time:
-
-```sh
-cp /etc/conf.d/net /etc/conf.d/net.bak
-```
-
-#### Step 2: Edit the config file
-
-Now you have to edit the file to add the Additional IP. In Gentoo, an alias is added directly in the eth0 interface. You do not need to create an eth0:0 interface like in other distributions.
-
-> [!warning]
->
-> The server’s default IP and config_eth0= should stay on the same line. This is to ensure that certain OVHcloud-specific operations work properly.
-> 
-
-All you need to do is add a line break after the netmask **255.255.255.0** and add your Additional IP (SERVER_IP must be replaced by your server’s primary IP).
-
-```sh
-editor /etc/conf.d/net
-```
-
-You therefore need to add the following:
-
-```bash
-config_eth0=( "SERVER_IP netmask 255.255.255.0" "ADDITIONAL_IP netmask 255.255.255.255 brd ADDITIONAL_IP" )
-```
-
-The `/etc/conf.d/net` file must contain the following:
-
-```bash
-#This blank configuration will automatically use DHCP for any net.
-# scripts in /etc/init.d. To create a more complete configuration,
-# please review /etc/conf.d/net.example and save your configuration
-# in /etc/conf.d/net (this file :]!).
-config_eth0=( "SERVER_IP netmask 255.255.255.0"
-"ADDITIONAL_IP netmask 255.255.255.255 brd ADDITIONAL_IP" )
-routes_eth0=( "default gw SERVER_IP.254" )
-```
-
-In order to ping your Additional IP, simply restart the network interface.
-
-#### Step 3: Restart the interface
-
-You now need to restart your interface:
-
-```sh
-/etc/init.d/net.eth0 restart
-```
-
-### openSUSE
-
-#### Step 1: Create a backup
-
-First, make a copy of the config file, so that you can revert at any time:
-
-```sh
-cp /etc/sysconfig/network/ifcfg-ens32 /etc/sysconfig/network/ifcfg-ens32.bak
-```
-
-#### Step 2: Edit the config file
-
-Open the file:
-
-```sh
-editor /etc/sysconfig/network/ifcfg-ens32
-```
-
-Then add the following:
-
-```bash
-IPADDR_1=ADDITIONAL_IP
-NETMASK_1=255.255.255.255
-LABEL_1=ens32:0
-```
-
-Finally, reboot your server to apply the changes.
 
 ### cPanel (on CentOS 7)
 
@@ -619,109 +471,6 @@ Back in the section "IP Addresses", verify that the Additional IP address was ad
 
 ![current IP configuration](images/pleskip4-4.png){.thumbnail}
 
-### FreeBSD
-
-#### Step 1: Determine the interface
-
-Determine the name of your primary network interface. You can use the `ifconfig`{.action} command for this operation:
-
-```sh
-ifconfig
-```
-
-This will return the following:
-
-```sh
-ifconfig
->>> nfe0: flags=8843 metric 0 mtu 1500
->>> options=10b
->>> ether 00:24:8c:d7:ba:11
->>> inet 94.23.196.18 netmask 0xffffff00 broadcast 94.23.196.255
->>> inet 87.98.129.74 netmask 0xffffffff broadcast 87.98.129.74
->>> media: Ethernet autoselect (100baseTX )
->>> status: active
->>> lo0: flags=8049 metric 0 mtu 16384
->>> options=3
->>> inet6 fe80::1%lo0 prefixlen 64 scopeid 0x2
->>> inet6 ::1 prefixlen 128
->>> inet 127.0.0.1 netmask 0xff000000 v comsdvt#
-```
-
-In our example, the name of the interface is therefore **nfe0**.
-
-#### Step 2: Create a backup
-
-Next, make a copy of the config file, so that you can revert at any time:
-
-```sh
-cp /etc/rc.conf /etc/rc.conf.bak
-```
-
-#### Step 3: Edit the config file
-
-Edit the /etc/rc.conf file:
-
-```sh
-editor /etc/rc.conf
-```
-
-Then add this line at the end of the file: `ifconfig_INTERFACE_alias0="inet ADDITIONAL_IP netmask 255.255.255.255 broadcast ADDITIONAL_IP"`.
-
-Replace **INTERFACE** and **ADDITIONAL_IP** with the name of your interface (identified in the first step) and your Additional IP, respectively. Here is an example:
-
-```bash
-ifconfig_nfe0_alias0="inet 87.98.129.74 netmask 255.255.255.255 broadcast 87.98.129.74"
-```
-
-#### Step 4: Restart the interface
-
-You now need to restart your interface:
-
-```sh
-/etc/rc.d/netif restart && /etc/rc.d/routing restart
-```
-
-### Solaris
-
-#### Step 1: Determine the interface
-
-Determine the name of your primary network interface. You can use the `ifconfig`{.action} command for this operation:
-
-```sh
-ifconfig -a
-```
-
-This will return the following:
-
-```sh
-ifconfig -a
-lo0:     flags=2001000849 mtu 8232 index 1 
-         inet 127.0.0.1 netmask ff000000 
-e1000g0: flags=1000843 mtu 1500 index 2 
-         inet 94.23.41.167 netmask ffffff00 broadcast 94.23.41.255 
-         ether 0:1c:c0:f2:be:42
-```
-
-In our example, the name of the interface is therefore **e1000g0**.
-
-#### Step 2: Create the config file
-
-```sh
-editor /etc/hostname.e1000g0:1
-```
-In this file, enter the following: **ADDITIONAL_IP/32 up**, where **ADDITIONAL_IP** is your Additional IP. For example:
-
-```bash
-188.165.171.40/32 up
-```
-
-#### Step 3: Restart the interface
-
-You now need to restart your interface:
-
-```sh
-svcadm restart svc:/network/physical:default
-```
 
 ### Troubleshooting
 
