@@ -96,6 +96,18 @@ La copie de la base de données peut prendre plusieurs minutes. Pour être sûr 
 
 Image
 
+#### Choix 2 - Copier vers un Web Cloud Databases
+
+Vous venez de sélectionner `Copier vers un Web Cloud Databases`{.action}. Deux listes déroulantes sont affichées. Cliquez sur la première puis sélectionnez l'offre Web Cloud Database sur laquelle se trouve votre base de données de destination. Une fois l'offre Web Cloud Database sélectionnée, cliquez sur la deuxième liste déroulante pour choisir la base de données de destination présente sur votre serveur Web Cloud Databases.
+
+Une fois votre choix effectué, cliquez sur `Suivant`{.action}. Le message de confirmation suivant s’affiche :
+
+Image
+
+La copie de la base de données peut prendre plusieurs minutes. Pour être sûr que la copie a bien été prise en compte, dirigez-vous dans l’onglet `Tâches en cours`{.action}. Dans le tableau, une nouvelle ligne correspondant à votre copie apparaît avec un statut « planifié ». Une fois l’opération finie, la ligne disparaît.
+
+Image
+
 ### Configurer son site web avec sa nouvelle base de données
 
 
