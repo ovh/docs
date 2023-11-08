@@ -123,7 +123,7 @@ Pour plus de détail, ou si vous utilisez un autre CMS, suivez le guide [Modifie
 
 > [!primary]
 >
-> Si votre site internet ne fonctionne plus suite à la modification de votre fichier de configuration, il vous suffit de revenir en arrière pour remettre l’ancienne configuration. La copie de votre base de données n’est pas une migration. Gardez à l’esprit que votre base de données source existe toujours tant que vous ne la supprimez pas. Vous ne faites courir aucun risque à votre site internet si vous commettez une erreur de configuration.
+> Si votre site web ne fonctionne plus suite à la modification de votre fichier de configuration, il vous suffit de revenir en arrière pour remettre l’ancienne configuration. La copie de votre base de données n’est pas une migration. Gardez à l’esprit que votre base de données source existe toujours tant que vous ne la supprimez pas. Vous pourrez ainsi toujours reconfigurer votre site web avec son ancienne base de données.
 >
 
 ### Gérer et résoudre les erreurs
