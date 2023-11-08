@@ -112,7 +112,8 @@ Image
 
 
 Une fois la copie de votre base de données source effectuée, il reste une dernière action à effectuer si vous voulez utiliser votre nouvelle base de données. Dans l’onglet `Ongoing Tasks`{.action}, assurez-vous que la copie est bien terminée (vous ne devez plus voir apparaître la ligne correspondant à votre copie). Dirigez-vous dans le fichier de configuration de votre **C**ontent **M**anagement **S**ystem (**CMS**) et configurez-le pour que votre site internet utilise votre nouvelle base de données.
-Par exemple, si vous utilisez WordPress, ouvrez le fichier de configuration wp-config.php présent à la racine de votre projet (www/) et mettez à jour les champs suivants :
+Par exemple, si vous utilisez WordPress, ouvrez le fichier de configuration *wp-config.php* présent à la racine FTP de votre site web puis mettez à jour les champs suivants :
+
 -	DB_NAME
 -	DB_USER
 -	DB_PASSWORD
