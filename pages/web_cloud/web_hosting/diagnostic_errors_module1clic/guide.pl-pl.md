@@ -48,7 +48,7 @@ Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotom
 
 ## "Wystąpił błąd podczas pobierania informacji (You need at least one free database)"
 
-![1freeDB](obrazy/1freeDB.png){.thumbnail}
+![1freeDB](images/1freeDB.png){.thumbnail}
 
 Ten komunikat pojawi się, gdy rozpoczniesz instalację "modułu za 1 kliknięciem", kiedy nie będziesz mógł lub przestanie mieć możliwości utworzenia nowej bazy danych przypisanej do Twojego hostingu.
 
