@@ -31,9 +31,11 @@ apt update
 Use the command below to install the OpenStack client, as well as Nova client (compute application) and Swift using python3-pip:
 
 ```sh
-apt install python3-pip -y
-pip3 install --upgrade pip
-pip3 install python-openstackclient python-novaclient python-swiftclient
+yum install python3-pip -y
+$ python3 -m venv env
+$ source env/bin/activate
+(env)$ pip3 install --upgrade pip
+(env)$ pip3 install python-openstackclient
 ```
 
 After you have completed this step, we recommend creating a special user without root access.
@@ -42,7 +44,6 @@ To access the help tools, run the following command:
 
 ```sh
 openstack --help
-nova help
 ```
 
 > [!primary]
@@ -64,8 +65,10 @@ Use the command below to install the OpenStack client, as well as Nova client (c
 
 ```sh
 yum install python3-pip -y
-pip3 install --upgrade pip
-pip3 install python-openstackclient python-novaclient python-swiftclient
+$ python3 -m venv env
+$ source env/bin/activate
+(env)$ pip3 install --upgrade pip
+(env)$ pip3 install python-openstackclient
 ```
 
 After you have completed this step, we recommend creating a special user without root access.
@@ -74,7 +77,6 @@ To access the help tools, run the following command:
 
 ```sh
 openstack --help
-nova help
 ```
 
 > [!primary]
@@ -84,7 +86,7 @@ nova help
 
 ### On Windows
 
-Download and install Python version 2.7.14. You can choose to add the Python programming language automatically to Path, by ticking this option in the installation configuration:
+Download and install Python version 3.12.0. You can choose to add the Python programming language automatically to Path, by ticking this option in the installation configuration:
 
 ![Automatic installation](images/1_preparation_openstack_environment_windows.png){.thumbnail}
 
@@ -104,7 +106,7 @@ Go to the `Advanced`{.action} tab, and click `Environment Variables`{.action} to
 
 #### Step 3: Configure the environment variables.
 
-In the ‘System variables’ section, select ‘New’, attribute the name “PYTHON_HOME”, and add the access path to Python. By default, it will be: ‘C:\\Python27’.
+In the ‘System variables’ section, select ‘New’, attribute the name “PYTHON_HOME”, and add the access path to Python.
 
 ![Add the access path](images/4_edit_system_variables.png){.thumbnail}
 
@@ -130,7 +132,7 @@ If the operation is completed properly, you will see a summary:
 
 ![Automatic installation](images/5_preparation_openstack_environment_windows.png){.thumbnail}
 
-You can check the installation version in the CMD (command line) window that has just opened, by entering ‘python-V’ from any system location.
+You can check the installation version in the CMD (command line) window that has just opened, by entering `python -V` from any system location.
 
 ![Checking](images/6_preparation_openstack_environment_windows.png){.thumbnail}
 
@@ -164,7 +166,6 @@ To access the help tools, run the following command:
 
 ```sh
 openstack --help
-nova help
 ```
 
 ## Go further

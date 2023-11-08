@@ -12,7 +12,7 @@ With the OpenStack API, you can automate your management by generating scripts.
 
 > [!primary]
 >
-> Openstack requires Python >=3.8.
+> OpenStack requires Python >=3.8.
 >
 
 **Find out how to install these OpenStack tools.**
@@ -165,6 +165,6 @@ openstack --help
 
 ## Go further
 
-[Setting OpenStack environment variables](/pages/public_cloud/compute/loading_openstack_environment_variables).
+[Setting OpenStack environment variables](/pages/public_cloud/compute/loading_openstack_environment_variables)
 
 Join our community of users on <https://community.ovh.com/en/>.

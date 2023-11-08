@@ -6,7 +6,12 @@ updated: 2023-11-06
 
 ## Obiettivo
 
-Per gestire i servizi Public Cloud attraverso un terminale, è possibile scaricare e installare tool OpenStack: le API, per creare diversi script con cui automatizzare le operazioni; il client Nova, per gestire le istanze e lo spazio disco; il client Glance, per gestire ed eseguire operazioni su immagini e backup; Il client Swift, per gestire lo spazio di storage degli oggetti.
+Per gestire i servizi Public Cloud attraverso un terminale, è possibile scaricare e installare tool OpenStack: le API, per creare diversi script con cui automatizzare le operazioni.
+
+> [!primary]
+>
+> OpenStack richiede Python >=3.8.
+>
 
 **Questa guida ti mostra la procedura da seguire per installare i client OpenStack.**
 
@@ -15,6 +20,12 @@ Per gestire i servizi Public Cloud attraverso un terminale, è possibile scarica
 - Disporre di un accesso **root** all’ambiente da configurare
 
 ## Procedura
+
+Per configurare il Load Balancer Public Cloud, installa il client Python Octavia:
+
+```console
+pip3 install python-octaviaclient
+```
 
 ### Con Debian
 
@@ -26,12 +37,14 @@ Aggiorna la cache dei pacchetti utilizzando il comando `apt update`:
 apt update
 ```
 
-Utilizzare il comando seguente per installare i client OpenStack, Nova (applicazione di calcolo) e Swift:
+Utilizzare il comando seguente per installare i client OpenStack:
 
 ```sh
-apt install python3-pip -y
-pip3 install --upgrade pip
-pip3 install python-openstackclient python-novaclient python-swiftclient
+$ apt install python3-pip python3-venv -y
+$ python3 -m venv env
+$ source env/bin/activate
+(env)$ pip3 install --upgrade pip
+(env)$ pip3 install python-openstackclient
 ```
 
 A questo punto ti consigliamo di creare un altro user, in modo da non utilizzare l’utente amministratore.
@@ -40,7 +53,6 @@ Per consultare le guide d’utilizzo OpenStack, esegui questi comandi:
 
 ```sh
 openstack --help
-nova help
 ```
 
 > [!primary]
@@ -58,12 +70,14 @@ Aggiorna la cache dei pacchetti utilizzando questo comando:
 yum update -y
 ```
 
-Utilizzare il comando seguente per installare i client OpenStack, Nova (applicazione di calcolo) e Swift:
+Utilizzare il comando seguente per installare i client OpenStack:
 
 ```sh
-apt install python3-pip -y
-pip3 install --upgrade pip
-pip3 install python-openstackclient python-novaclient python-swiftclient
+yum install python3-pip -y
+$ python3 -m venv env
+$ source env/bin/activate
+(env)$ pip3 install --upgrade pip
+(env)$ pip3 install python-openstackclient
 ```
 
 A questo punto ti consigliamo di creare un altro user, in modo da non utilizzare l’utente amministratore.
@@ -72,7 +86,6 @@ Per consultare le guide d’utilizzo OpenStack, esegui questi comandi:
 
 ```sh
 openstack --help
-nova help
 ```
 
 > [!primary]
@@ -82,7 +95,7 @@ nova help
 
 ### Con Windows
 
-Scarica e installa la versione 2.7.14 di Python. Per aggiungere automaticamente il linguaggio di programmazione Python al Path, seleziona nella finestra di configurazione l’opzione corrispondente:
+Scarica e installa la versione 3.12.0 di Python. Per aggiungere automaticamente il linguaggio di programmazione Python al Path, seleziona nella finestra di configurazione l’opzione corrispondente:
 
 ![Installazione automatica](images/1_preparation_openstack_environment_windows.png){.thumbnail}
 
@@ -102,7 +115,7 @@ Per personalizzare i parametri, seleziona la scheda `Avanzate`{.action} e clicca
 
 #### Step 3: configura le variabili d'ambiente 
 
-Nella sezione **Variabili di sistema**, seleziona `Nuova...`{.action}, assegna il nome `PYTHON_HOME` alla variabile e imposta come valore il percorso di Python che, di default, sarà `C:\\Python27`.
+Nella sezione **Variabili di sistema**, seleziona `Nuova...`{.action}, assegna il nome `PYTHON_HOME` alla variabile e imposta come valore il percorso di Python.
 
 ![Aggiungi il percorso di accesso](images/4_edit_system_variables.png){.thumbnail}
 
@@ -121,7 +134,7 @@ Per rendere effettive le modifiche apportate, riavvia il sistema.
 Accedi come amministratore, avvia il prompt dei comandi (CMD) e installa il client OpenStack eseguendo questo comando:
 
 ```sh
-# pip install python-openstackclient
+pip install python-openstackclient
 ```
 
 Se l’operazione è stata effettuata correttamente, si aprirà una schermata di riepilogo: 
@@ -142,27 +155,10 @@ Apri il terminale e inserisci questo comando:
 brew install openstackclient
 ```
 
-Utilizza i comandi seguenti per installare i client Nova (applicazione di calcolo) e Swift:
-
-Per Python2:
-
-```sh
-pip install python-novaclient
-pip install python-swiftclient
-```
-
-Per Python3:
-
-```sh
-pip3 install python-novaclient
-pip3 install python-swiftclient
-```
-
 Per accedere ai tool di aiuto, esegui questo comando:
 
 ```sh
 openstack --help
-nova help
 ```
 
 ## Per saperne di più
