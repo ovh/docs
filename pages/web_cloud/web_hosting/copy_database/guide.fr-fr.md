@@ -129,7 +129,7 @@ Pour plus de détail, ou si vous utilisez un autre CMS, suivez le guide [Modifie
 
 Tout au long du processus de copie du contenu de la base de données, des erreurs peuvent survenir.
 
-#### Aucune base de données ne s’affiche pas dans la liste
+#### Aucune base de données ne s’affiche dans la liste
 
 Cette erreur signifie que vous ne possédez qu’une seule base de données. Pour copier votre base de données source, il vous faut également une base de données de destination. Vous pouvez :
 
