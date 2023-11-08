@@ -37,26 +37,26 @@ Jeśli konfiguracja modułu nie zostanie przeprowadzona prawidłowo, instalacja 
 
 ### Twoja domena nie jest proponowana podczas tworzenia "modułu za 1 kliknięciem"
 
-![domainenotproposed](obrazy/domainenotproposed.png){.thumbnail}
+![domainenotproposed](images/domainenotproposed.png){.thumbnail}
 
-Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=pl), następnie przejdź do sekcji `Web Cloud`{.action}. W kolumnie po lewej stronie kliknij pozycję `Hosting`{.action}, po czym wybierz odpowiedni hosting WWW. Na stronie, która się wyświetli kliknij zakładkę `Multisite`{.action}, następnie sprawdź, czy spełnione są następujące warunki:
+Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), następnie przejdź do sekcji `Web Cloud`{.action}. W kolumnie po lewej stronie kliknij pozycję `Hosting`{.action}, po czym wybierz odpowiedni hosting WWW. Na stronie, która się wyświetli kliknij zakładkę `MultiSite`{.action}, następnie sprawdź, czy spełnione są następujące warunki:
 
 |Scenariusz|Rozwiązanie|
 |---|---| 
-|Domena lub subdomena powiązana ze stroną WWW, którą chcesz utworzyć nie pojawia się w tabeli w zakładce `Multisite`{.action}.|Dodaj domenę, postępując zgodnie z [te wskazówki](/pages/web_cloud/web_hosting/multisites_configure_multisite).|
-|Domena została usunięta z opcji MultiSite bez żadnego działania ze strony użytkownika.|Jeśli domena lub jej [Strefa DNS](/pages/web_cloud/domains/dns_zone_edit) nie są zarządzane z poziomu konta OVHcloud, dodaj domenę w zakładce Multisite`{.action} zgodnie z [tym przewodnikiem](/pages/web_cloud/web_hosting/multisites_configure_multisite).|
+|Domena lub subdomena powiązana ze stroną WWW, którą chcesz utworzyć nie pojawia się w tabeli w zakładce `MultiSite`{.action}.|Dodaj domenę, postępując zgodnie z [te wskazówki](/pages/web_cloud/web_hosting/multisites_configure_multisite).|
+|Domena została usunięta z opcji MultiSite bez żadnego działania ze strony użytkownika.|Jeśli domena lub jej [Strefa DNS](/pages/web_cloud/domains/dns_zone_edit) nie są zarządzane z poziomu konta OVHcloud, dodaj domenę w zakładce `MultiSite`{.action} zgodnie z [tym przewodnikiem](/pages/web_cloud/web_hosting/multisites_configure_multisite).|
 
-## "Wystąpił błąd podczas pobierania informacji (You need at least one free database)"
+### "Wystąpił błąd podczas pobierania informacji (You need at least one free database)"
 
 ![1freeDB](images/1freeDB.png){.thumbnail}
 
 Ten komunikat pojawi się, gdy rozpoczniesz instalację "modułu za 1 kliknięciem", kiedy nie będziesz mógł lub przestanie mieć możliwości utworzenia nowej bazy danych przypisanej do Twojego hostingu.
 
-### Rozwiązanie nr 1: zamów nową bazę danych
+#### Rozwiązanie nr 1: zamów nową bazę danych
 
 Jeśli nie posiadasz już baz danych zawartych w Twoim hostingu, możesz zamówić nową [bazę danych Start SQL](https://www.ovhcloud.com/pl/web-hosting/options/start-sql/), łącząc ją z Twoim aktualnym hostingiem. Następnie będziesz mógł wznowić instalację "modułu za pomocą 1 kliknięcia". Jeśli potrzebujesz więcej przestrzeni dyskowej (więcej niż 1 GB), zalecamy skorzystanie z naszej usługi [Web Cloud Databases](https://www.ovhcloud.com/pl/web-cloud/databases/).
 
-[Panel klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/pl/&ovhSubsidiary=pl), przejdź do sekcji `Web Cloud`{.action}. W kolumnie po lewej stronie kliknij pozycję `Hosting`{.action}, po czym wybierz odpowiedni hosting WWW poprzez dodanie dodatkowej bazy danych. Na stronie, która się wyświetli kliknij zakładkę `Bazy danych`{.action}, następnie `Actions`{.action}, aby zamówić dodatkową bazę danych:
+[Panel klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przejdź do sekcji `Web Cloud`{.action}. W kolumnie po lewej stronie kliknij pozycję `Hosting`{.action}, po czym wybierz odpowiedni hosting WWW poprzez dodanie dodatkowej bazy danych. Na stronie, która się wyświetli kliknij zakładkę `Bazy danych`{.action}, następnie `Actions`{.action}, aby zamówić dodatkową bazę danych:
 
 ![order_a_database](images/order_a_database.png){.thumbnail}
 
@@ -67,14 +67,14 @@ Po jego zakończeniu będziesz mógł zainstalować nowy "moduł za pomocą 1 kl
 > Przypomnę, że zachęcamy do wcześniejszego zapoznania się z naszą ofertą baz danych [start SQL](https://www.ovhcloud.com/pl/web-hosting/options/start-sql/) oraz ofertą [Web Cloud Databases](https://www.ovhcloud.com/pl/web-cloud/databases/).
 >
 
-### Rozwiązanie nr 2: zmień ofertę hostingową
+#### Rozwiązanie nr 2: zmień ofertę hostingową
 
 > [!primary]
 >
 > Zapoznaj się z porównaniem naszych ofert [pakiety hostingowe](https://www.ovhcloud.com/pl/web-hosting/).
 >
 
-[Panel klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/pl/&ovhSubsidiary=pl), kliknij przycisk `Web Cloud`{.action}. Kliknij opcję `Hosting`{.action}, a następnie wybierz odpowiedni hosting. Na stronie, która się wyświetla w sekcji `Abonament` - `Oferta`, kliknij na przycisk`...`{.action} `Zmień ofertę`{.action}:
+[Panel klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), kliknij przycisk `Web Cloud`{.action}. Kliknij opcję `Hosting`{.action}, a następnie wybierz odpowiedni hosting. Na stronie, która się wyświetla w sekcji `Abonament` - `Oferta`, kliknij na przycisk`...`{.action} `Zmień ofertę`{.action}:
 
 ![upgrade_hosting](images/upgrade_hosting.png){.thumbnail}
 
@@ -82,22 +82,22 @@ Oferty [Pro](https://www.ovhcloud.com/pl/web-hosting/professional-offer/) i [Per
 
 Po jego zakończeniu będziesz mógł zainstalować nowy "moduł za pomocą 1 kliknięcia".
 
-### Rozwiązanie nr 3: usuń nieużywaną bazę danych <a name="delete-the-database"></a>
+#### Rozwiązanie nr 3: usuń nieużywaną bazę danych <a name="delete-the-database"></a>
 
 > [!warning]
 >
 > Operacja usunięcia bazy danych jest definitywna. Wiąże się to również z usunięciem kopii zapasowych odpowiedniej bazy danych. W przypadku wątpliwości skontaktuj się z webmasterem lub jednym z naszych [partnerów](https://partner.ovhcloud.com/pl/directory/).
 >
 
-Aby usunąć bazę danych z poziomu [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=pl), przejdź do sekcji `Web Cloud`{.action}. W kolumnie po lewej stronie kliknij pozycję `Hosting`{.action}, po czym wybierz odpowiedni hosting WWW.
+Aby usunąć bazę danych z poziomu [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przejdź do sekcji `Web Cloud`{.action}. W kolumnie po lewej stronie kliknij pozycję `Hosting`{.action}, po czym wybierz odpowiedni hosting WWW.
 
-Na stronie, która się wyświetli kliknij zakładkę `Bazy danych`{.action}. W tabeli, która się wyświetli kliknij przycisk`...`{.action} po prawej stronie wiersza odpowiadającego bazie danych, którą chcesz usunąć, a następnie kliknij `Usuń bazę danych`{.action}:
+Na stronie, która się wyświetli kliknij zakładkę `Bazy danych`{.action}. W tabeli, która się wyświetli kliknij przycisk `...`{.action} po prawej stronie wiersza odpowiadającego bazie danych, którą chcesz usunąć, a następnie kliknij `Usuń bazę danych`{.action}:
 
 ![delete_a_database](images/delete_a_database.png){.thumbnail}
 
 Po jego zakończeniu będziesz mógł zainstalować nowy "moduł za pomocą 1 kliknięcia".
 
-### Rozwiązanie nr 4: zainstaluj "moduł za 1 kliknięciem" na bazie danych, która jest już używana
+#### Rozwiązanie nr 4: zainstaluj "moduł za 1 kliknięciem" na bazie danych, która jest już używana
 
 Aby zainstalować "moduł za 1 kliknięciem" na istniejącej bazie danych, należy użyć funkcji instalacji w [trybie zaawansowanym](/pages/web_cloud/web_hosting/cms_install_1_click_modules) nowego "modułu za pomocą 1 kliknięcia".
 
@@ -111,7 +111,7 @@ Po jego zakończeniu będziesz mógł zainstalować nowy "moduł za pomocą 1 kl
 >
 > W takiej sytuacji można wykonać kopię zapasową danych pojedynczej strony WWW za pomocą [skryptu PHP lub komendy SSH](/pages/web_cloud/web_hosting/sql_database_export).
 >
-> W przypadku pytań dotyczących wymaganych czynności skontaktuj się z [społecznością OVHcloud](https://community.ovh.com/en/) lub jednym z [partnerów](https://partner.ovhcloud.com/fr/directory/).<br>
+> W przypadku pytań dotyczących wymaganych czynności skontaktuj się z [społecznością OVHcloud](https://community.ovh.com/en/) lub jednym z [partnerów](https://partner.ovhcloud.com/pl/directory/).<br>
 > Nie będziemy w stanie udzielić Ci pomocy w tej sprawie.
 >
 
@@ -129,27 +129,27 @@ Po uruchomieniu tworzenia "modułu za pomocą 1 kliknięcia" otrzymałeś wiadom
 
 Ten komunikat oznacza, że **Katalog główny** powiązany z Twoją nazwą domeny zawiera już jeden lub więcej plików lub folderów.
 
-Aby powiązać domenę z innym katalogiem, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=pl), a następnie przejdź do sekcji `Web Cloud`{.action}. W kolumnie po lewej stronie kliknij pozycję `Hosting`{.action}, po czym wybierz odpowiedni hosting WWW. Na stronie, która się wyświetli kliknij zakładkę `Multisite`{.action}. W tabeli, która się wyświetli kliknij przycisk`...`{.action} po prawej stronie wiersza odpowiadającego nazwie Twojej domeny, następnie kliknij `Zmień domenę`{.action}. Na koniec podaj nazwę nowego **Katalogu głównego** (pusty katalog zostanie automatycznie utworzony na Twoim hostingu).
+Aby powiązać domenę z innym katalogiem, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), a następnie przejdź do sekcji `Web Cloud`{.action}. W kolumnie po lewej stronie kliknij pozycję `Hosting`{.action}, po czym wybierz odpowiedni hosting WWW. Na stronie, która się wyświetli kliknij zakładkę `MultiSite`{.action}. W tabeli, która się wyświetli kliknij przycisk`...`{.action} po prawej stronie wiersza odpowiadającego nazwie Twojej domeny, następnie kliknij `Zmień domenę`{.action}. Na koniec podaj nazwę nowego **Katalog główny** (pusty katalog zostanie automatycznie utworzony na Twoim hostingu).
 
 ![modify_root_folder](images/modify_root_folder.png){.thumbnail}
 
 Możesz również zalogować się do Twojego hostingu za pomocą protokołu [FTP](/pages/web_cloud/web_hosting/ftp_connection), a następnie usunąć zawartość folderu. Operacja ta została wykonana lokalnie lub po usunięciu pliku, poprzez przeniesienie całej jego zawartości do innego katalogu FTP.
 
-## "Either no configuration (ovhConfig or runtime), or the current configuration is not valid (please, double check the module's requirement) (as a reminder, the global configuration is used for module)".
+### "Either no configuration (ovhConfig or runtime), or the current configuration is not valid (please, double check the module's requirement) (as a reminder, the global configuration is used for module).".
 
 Wyświetli się komunikat, że plik ".ovhconfig" nie istnieje lub jest nieprawidłowy. Wystarczy, że zainstalujesz "moduł za 1 kliknięciem". Plik ten zawiera wersję PHP oraz środowisko wykonawcze zastosowane do Twojego hostingu.
 
-Zaleca się korzystanie z najnowszej możliwej wersji PHP. **Przed zmianą konfiguracji pliku ".ovhconfig", jeśli posiadasz inne strony WWW na Twoim hostingu, upewnij się, że są one kompatybilne z nową wersją PHP i/lub nowym środowiskiem wykonawczym, które zastosujesz na Twoim hostingu.
+Zaleca się korzystanie z najnowszej możliwej wersji PHP. **Przed** zmianą konfiguracji pliku ".ovhconfig", jeśli posiadasz inne strony WWW na Twoim hostingu, upewnij się, że są one kompatybilne z nową wersją PHP i/lub nowym środowiskiem wykonawczym, które zastosujesz na Twoim hostingu.
 
 Aby sprawdzić tę konfigurację, zapoznaj się z naszym przewodnikiem "[Zmień konfigurację hostingu WWW](/pages/web_cloud/web_hosting/configure_your_web_hosting)".
 
-## "Wystąpił błąd podczas pobierania informacji (There is not enough space on your hosting (you need at least xxx MB)"
+### "Wystąpił błąd podczas pobierania informacji (There is not enough space on your hosting (you need at least xxx MB)"
 
 ![not_enough_space](images/not_enough_space.png){.thumbnail}
 
 Ten komunikat oznacza, że [przestrzeń dyskowa FTP](/pages/web_cloud/web_hosting/ftp_connection) na Twoim hostingu zawiera zbyt dużą ilość danych. 
 
-### Rozwiązanie nr 1: usuń dane, aby zwolnić przestrzeń FTP
+#### Rozwiązanie nr 1: usuń dane, aby zwolnić przestrzeń FTP
 
 W takim przypadku usuń (lub przenieś) dane, aby zainstalować nowy "[moduł za 1 kliknięciem](/pages/web_cloud/web_hosting/cms_install_1_click_modules)".
 
@@ -157,18 +157,18 @@ W takiej sytuacji [zaloguj się przez FTP](/pages/web_cloud/web_hosting/ftp_conn
 
 > [!primary]
 >
-> Jeśli masz pytania dotyczące usuwania danych, aby zmniejszyć ilość danych przechowywanych na Twoim hostingu, skontaktuj się z [społecznością użytkowników](https://community.ovh.com/en/) lub z [partnerami OVHcloud](https://partner.ovhcloud.com/fr/directory/).<br>
+> Jeśli masz pytania dotyczące usuwania danych, aby zmniejszyć ilość danych przechowywanych na Twoim hostingu, skontaktuj się z [społecznością użytkowników](https://community.ovh.com/en/) lub z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).<br>
 > Pomoc OVHcloud nie jest upoważniona do udzielania wsparcia w tym zakresie.
 >
 
-### Rozwiązanie nr 2: zmień ofertę hostingową
+#### Rozwiązanie nr 2: zmień ofertę hostingową
 
 > [!primary]
 >
 > Zapoznaj się z porównaniem naszych ofert [pakiety hostingowe](https://www.ovhcloud.com/pl/web-hosting/).
 >
 
-[Panel klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/pl/&ovhSubsidiary=pl), przejdź do sekcji `Web Cloud`{.action}. Kliknij opcję `Hosting`{.action}, a następnie wybierz odpowiedni hosting. Na stronie, która się wyświetla w sekcji `Abonament` - `Oferta`, kliknij na przycisk`...`{.action} `Zmień ofertę`{.action}:
+[Panel klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przejdź do sekcji `Web Cloud`{.action}. Kliknij opcję `Hosting`{.action}, a następnie wybierz odpowiedni hosting. Na stronie, która się wyświetla w sekcji `Abonament` - `Usługa`, kliknij na przycisk `...`{.action} `Zmień ofertę`{.action}:
 
 ![upgrade_hosting](images/upgrade_hosting.png){.thumbnail}
 
@@ -182,7 +182,7 @@ Po uruchomieniu instalacji "modułu za pomocą 1 kliknięcia" w trybie zaawansow
 
 W związku z tym sprawdź dane dostępowe do bazy danych. Aby odnaleźć moduły, zapoznaj się z [przewodnikiem](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
 
-Usuń następnie "moduł za 1 kliknięciem". W tym celu zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=pl), a następnie przejdź do sekcji `Web Cloud`{.action}. W kolumnie po lewej stronie kliknij pozycję `Hosting`{.action}, po czym wybierz odpowiedni hosting WWW. Na stronie, która się wyświetli kliknij zakładkę `Modules za 1 kliknięciem {.action}. W tabeli, która się wyświetli kliknij przycisk`...`{.action} po prawej stronie wiersza odpowiadającego nazwie Twojej domeny, następnie kliknij `Usuń moduł`{.action}.
+Usuń następnie "moduł za 1 kliknięciem". W tym celu zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), a następnie przejdź do sekcji `Web Cloud`{.action}. W kolumnie po lewej stronie kliknij pozycję `Hosting`{.action}, po czym wybierz odpowiedni hosting WWW. Na stronie, która się wyświetli kliknij zakładkę `Moduły CMS`{.action}. W tabeli, która się wyświetli kliknij przycisk `...`{.action} po prawej stronie wiersza odpowiadającego nazwie Twojej domeny, następnie kliknij `Usuń moduł`{.action}.
 
 ![delete_a_module](images/delete_a_module.png){.thumbnail}
 
@@ -196,7 +196,7 @@ Usuń następnie "moduł za 1 kliknięciem". W tym celu zaloguj się do [Panelu 
 Następnie rozpocznij od nowa instalację "modułu za pomocą 1 kliknięcia".
 
 
-## "Nie posiadasz wystarczających uprawnień w tej bazie danych".
+### "You have insufficient rights on this database.".
 
 ![insufficient_rights](images/insufficient_rights.png){.thumbnail}
 
@@ -214,7 +214,7 @@ Jeśli nie dysponujesz innymi bazami danych i nie chcesz zamówić pakietu dodat
 > Nie będziemy w stanie udzielić Ci pomocy w tej sprawie.
 >
 
-## "Can't connect to database 'xxxxxxxx' at 'xxxxxx-xxx.eu.clouddb.ovh.net'. The error is: Access denied for user 'xxxx'@'xxxxxxx' (using password: YES)"
+### "Can't connect to database 'xxxxxxxx' at 'xxxxxx-xxx.eu.clouddb.ovh.net'. The error is: Access denied for user 'xxxx'@'xxxxxxxx' (using password: YES)"
 
 ![cant_connect](images/cant_connect.png){.thumbnail}
 
@@ -224,31 +224,31 @@ W tej sytuacji najpierw zmodyfikuj odpowiednie uprawnienia [użytkownika](/pages
 
 Sprawdź również dane logowania, logując się [bezpośrednio](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server) do Twojego serwera baz danych, a następnie uruchom ponownie instalację "modułu za pomocą 1 kliknięcia".
 
-## "Can't connect to database 'xxxxxxxx' at 'xxxxxxxx.mysql.db'". The error is: Unknown MySQL server host 'xxxxxxxx.mysql.db'"
+### "Can't connect to database 'xxxxxxxx' at 'xxxxxxxx.mysql.db'. The error is: Unknown MySQL server host 'xxxxxxxx.mysql.db'"
 
 ![cant_connect_server](images/cant_connect_server.png){.thumbnail}
 
 Rozpoczęto instalację "modułu za 1 kliknięciem" w [trybie zaawansowanym](/pages/web_cloud/web_hosting/cms_install_1_click_modules) w bazie danych znajdującej się na serwerze [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb). Ten komunikat o błędzie został wysłany na e-mail. Oznacza to, że podana nazwa serwera baz danych jest nieprawidłowa.
 
-Aby odnaleźć nazwę Twojego serwera baz danych, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=pl), następnie przejdź do sekcji `Web Cloud`{.action}. W kolumnie po lewej stronie kliknij pozycję `Web Cloud Databases`{.action}, po czym wybierz odpowiedni serwer baz danych.
+Aby odnaleźć nazwę Twojego serwera baz danych, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), następnie przejdź do sekcji `Web Cloud`{.action}. W kolumnie po lewej stronie kliknij pozycję `Web Cloud Databases`{.action}, po czym wybierz odpowiedni serwer baz danych.
 
-Na stronie, która się wyświetli, nazwa serwera, której chcesz użyć jest wyświetlana w ramce `Informacje o logowaniu`, podsekcja `SQL`, pod słowem `Nazwa hosta`.
+Na stronie, która się wyświetli, nazwa serwera, której chcesz użyć jest wyświetlana w ramce `Informacje na temat połączenia`, podsekcja `SQL`, pod słowem `Nazwa hosta`.
 
 ### Twoja stara strona WWW nadal się wyświetla
 
-W zakładce `Moduły` po 1 kliknięciu` hostingu WWW zawierającego Twoją stronę WWW, po kliknięciu na link Twojej strony WWW w kolumnie `Ścieżka` otworzy się nowa zakładka z Twoją stroną WWW. Nazwa domeny przypisanej do Twojej instalacji wyświetla się w adresie Twojej przeglądarki internetowej. Przykładowo, jeśli Twoja domena nosi nazwę "domena.tld", może pojawić się inna domena lub standardowa strona OVHcloud.
+W zakładce `Moduły CMS` hostingu WWW zawierającego Twoją stronę WWW, po kliknięciu na link Twojej strony WWW w kolumnie `Ścieżka` otworzy się nowa zakładka z Twoją stroną WWW. Nazwa domeny przypisanej do Twojej instalacji wyświetla się w adresie Twojej przeglądarki internetowej. Przykładowo, jeśli Twoja domena nosi nazwę "domena.tld", może pojawić się inna domena lub standardowa strona OVHcloud.
 
 Taka nieprawidłowość może mieć kilka przyczyn:
 
 - Upewnij się, że odwiedzana przez Ciebie nazwa domeny ("domain.tld") jest nazwą domeny, dla której zainstalowałeś "moduł za 1 kliknięciem".
 
-- Jeśli ostatnio nastąpiła zmiana w [aktywnej strefie DNS](/pages/web_cloud/domains/dns_server_general_information)/[serwery DNS](/pages/web_cloud/domains/dns_zone_edit) Twojej domeny lub transfer [domeny](/pages/web_cloud/domains/transfer_incoming_generic_domain). Poczekaj, aż operacje zostaną zakończone (4-24 godziny na zmianę w strefie DNS i 24-48 godzin na zmianę serwerów DNS). Pamiętaj, aby również zrestartować swoje urządzenia (PC, smartphone, box, itp.) i wyczyścić pamięć podręczną przeglądarki internetowej.
+- Jeśli ostatnio nastąpiła zmiana w [aktywnej strefie DNS](/pages/web_cloud/domains/dns_server_general_information)/[serwery DNS](/pages/web_cloud/domains/dns_zone_edit) Twojej domeny lub [transfer domeny](/pages/web_cloud/domains/transfer_incoming_generic_domain). Poczekaj, aż operacje zostaną zakończone (4-24 godziny na zmianę w strefie DNS i 24-48 godzin na zmianę serwerów DNS). Pamiętaj, aby również zrestartować swoje urządzenia (PC, smartphone, box, itp.) i wyczyścić pamięć podręczną przeglądarki internetowej.
 
 - Twoja domena jest zawsze powiązana z Twoim starym hostingiem. W tym przypadku zmień [strefę DNS active](/pages/web_cloud/domains/dns_zone_edit) powiązaną z Twoją domeną lub jej [serwery DNS](/pages/web_cloud/domains/dns_server_general_information). Jeśli aktywna strefa DNS Twojej domeny nie jest zarządzana w OVHcloud, skontaktuj się z dostawcą DNS w tej sprawie.
 
 ### Hasło "Administrator" dostępu do "interfejsu administracyjnego" modułu za pomocą 1 kliknięcia nie działa <a name="adminpassword"></a>
 
-W przypadku odrzucenia aktualnego hasła dostępu do interfejsu administracyjnego użytkownika **C**ontent **M**management **S**system (**CMS**), należy zapoznać się z sekcją "Zmiana hasła do modułu" w dokumentacji dotyczącej zarządzania [modułem za pomocą 1 kliknięcia](/pages/web_cloud/web_hosting/cms_manage_1_click_module).
+W przypadku odrzucenia aktualnego hasła dostępu do interfejsu administracyjnego użytkownika **C**ontent **M**anagement **S**ystem (**CMS**), należy zapoznać się z sekcją "Zmiana hasła do modułu" w dokumentacji dotyczącej zarządzania [modułem za pomocą 1 kliknięcia](/pages/web_cloud/web_hosting/cms_manage_1_click_module).
 
 ### Prefiks tabel w bazie danych jest już używany w bazie danych
 
@@ -272,7 +272,7 @@ E-mail ten zawiera informację, że wersja bazy danych jest zbyt stara, aby zain
 
 W tym samym e-mailu znajdziesz wersję, w której powinna się znajdować Twoja baza danych. Masz do wyboru trzy opcje:
 
-- Aktualizacja **S**System **G**Zarządzanie **B**azą **D**danych (DBMS, np. MySQL, PostgreSQL, MariaDB, etc.) w nowszej wersji.
+- Aktualizacja **D**ata**B**ase **M**anagement **S**ystem (DBMS, np. MySQL, PostgreSQL, MariaDB, etc.) w nowszej wersji.
 - Instalacja nowej bazy danych przypisanej do Twojego hostingu. Upewniając się przy tym, że SGDB oraz wersja są kompatybilne z wybranym "modułem za 1 kliknięciem".
 - Jeśli posiadasz serwer [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb), sprawdź, czy Twój serwer używa poprawnego systemu zarządzania bazami danych oraz poprawnej wersji, a następnie utwórz wybraną bazę danych.
 
