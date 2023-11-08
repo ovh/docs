@@ -76,7 +76,7 @@ Image
 
 Si vous possédez déjà une base de données de destination, choisissez d'abord son type :
 -	`Copier vers une base de données`{.action}: sélectionnez ce choix si vous voulez copier la contenu de votre base de données source vers une base de données Start SQL (destination).
--	Base de données Web Cloud : sélectionnez ce choix si vous voulez copier votre base de données source vers une Web Cloud Database (destination).
+-	`Copier vers un Web Cloud Databases`{.action}: sélectionnez ce choix si vous voulez copier le contenu de votre base de données source vers une base de données Web Cloud Database (destination).
 
 #### Base de données
 
