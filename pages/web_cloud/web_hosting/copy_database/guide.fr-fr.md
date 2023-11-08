@@ -126,7 +126,7 @@ Cette erreur signifie que vous ne possédez qu’une seule base de données. Pou
 
 #### Vous avez déjà une action en cours
 
-Cette erreur signifie qu’une tâche est déjà en cours sur votre base de données. Dirigez-vous dans l’onglet `Ongoing Tasks`{.action} et vérifiez que vous avez bien une tâche déjà en cours. Si c’est le cas, attendez qu’elle soit finie pour recommencer la copie de votre base de données.
+Cette erreur signifie qu’une tâche est déjà en cours sur votre base de données. Dirigez-vous dans l’onglet `Tâches en cours`{.action} et vérifiez que vous avez bien une tâche déjà en cours. Si c’est le cas, attendez qu’elle soit finie pour recommencer la copie de votre base de données.
 
 #### Une erreur est survenue pendant la copie de la base de données
 
