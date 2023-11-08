@@ -191,7 +191,6 @@ Supprimez ensuite votre « module en 1 clic ». Pour cela, connectez-vous à vot
 
 Puis relancez l'installation d'un nouveau « module en 1 clic ».
 
-
 ### « You have insufficient rights on this database. »
 
 ![insufficient_rights](images/insufficient_rights.png){.thumbnail}

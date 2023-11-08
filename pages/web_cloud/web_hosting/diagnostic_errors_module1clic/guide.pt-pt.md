@@ -1,7 +1,7 @@
 ---
 title: "Resolver os erros mais frequentes associados aos módulos 1 clique"
 excerpt: "Saiba como diagnosticar os casos mais comuns de erros associados à criação de módulos 1 clique"
-updated: 2023-11-07
+updated: 2023-11-08
 ---
 
 > [!primary]
@@ -194,7 +194,6 @@ Elimine o seu "módulo em 1 clique". Para isso, aceda à [Área de Cliente OVHcl
 >
 
 A seguir, repita a instalação de um novo "módulo em 1 clique".
-
 
 ### "You have insufficient rights on this database."
 

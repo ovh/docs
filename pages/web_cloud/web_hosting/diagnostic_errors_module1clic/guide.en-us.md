@@ -1,7 +1,7 @@
 ---
 title: "Troubleshoot common 1-click module errors"
 excerpt: "Find out how to diagnose the most common cases of 1-click module creation errors"
-updated: 2023-11-07
+updated: 2023-11-08
 ---
 
 ## Objective
@@ -190,7 +190,6 @@ Then delete your "1-click module". To do this, log in to your [OVHcloud Control 
 >
 
 Then relaunch the installation of a new “1-click module”.
-
 
 ### "You have insufficient rights on this database."
 

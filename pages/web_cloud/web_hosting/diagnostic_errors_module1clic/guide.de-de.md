@@ -1,7 +1,7 @@
 ---
 title: "Die häufigsten Fehler bei 1-Klick-Modulen beheben"
 excerpt: "Diese Anleitung erklärt, wie Sie die häufigsten Fehler bei der Erstellung von 1-Klick-Modulen beheben können"
-updated: 2023-11-07
+updated: 2023-11-08
 ---
 
 > [!primary]
@@ -194,7 +194,6 @@ Löschen Sie anschließend Ihr „1-Klick-Modul“. Loggen Sie sich hierzu in Ih
 >
 
 Dann starten Sie die Installation eines neuen „1-Klick-Moduls“.
-
 
 ### „You have insufficient rights on this database.“
 

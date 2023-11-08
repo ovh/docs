@@ -1,7 +1,7 @@
 ---
 title: "Rozwiąż najczęstsze błędy związane z modułami za pomocą 1 kliknięcia"
 excerpt: "Dowiedz się, jak za pomocą 1 kliknięcia zdiagnozować najczęstsze przypadki błędów związane z tworzeniem modułów"
-updated: 2023-11-07
+updated: 2023-11-08
 ---
 
 > [!primary]
@@ -194,7 +194,6 @@ Usuń następnie "moduł za 1 kliknięciem". W tym celu zaloguj się do [Panelu 
 >
 
 Następnie rozpocznij od nowa instalację "modułu za pomocą 1 kliknięcia".
-
 
 ### "You have insufficient rights on this database.".
 

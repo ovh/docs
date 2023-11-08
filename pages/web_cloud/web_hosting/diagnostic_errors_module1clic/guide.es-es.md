@@ -1,7 +1,7 @@
 ---
 title: "Resolver los errores más frecuentes relacionados con los módulos en un clic"
 excerpt: "Descubra cómo diagnóstico de los errores más comunes relacionados con la creación de módulos en 1 clic"
-updated: 2023-11-07
+updated: 2023-11-08
 ---
 
 > [!primary]
@@ -195,7 +195,6 @@ A continuación, elimine el "módulo en un clic". Para ello, conéctese a su [á
 
 A continuación, vuelva a instalar un nuevo "módulo en un clic".
 
-
 ### "You have insufficient rights on this database."
 
 ![insufficient_rights](images/insufficient_rights.png){.thumbnail}
@@ -233,7 +232,6 @@ Ha iniciado la instalación de un "módulo en un clic" en [modo avanzado](/pages
 Para consultar el nombre del servidor de bases de datos, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y acceda a la sección `Web Cloud`{.action}de la página. Haga clic en `Web Cloud Databases`{.action} en la columna izquierda y seleccione el servidor de bases de datos correspondiente.
 
 En la nueva página, el nombre del servidor que debe utilizarse aparece en el recuadro `Datos de conexión`, subparte `SQL`, con la mención `Nombre de host`..
-
 
 ### Su antiguo sitio web sigue apareciendo
 
