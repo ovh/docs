@@ -19,16 +19,16 @@ Here are the most frequently asked questions about `ovhai` CLI & AI Tools.
 > What flavors are available?
 > > Currently, the available hardware for AI Tools is:
 > > - `CPU`: Intel CPU vCores
-> > - `GPU`:  NVIDIA V100S
+> > - `GPU`:  NVIDIA V100S, NVIDIA A100
 > >
 > > You can get the list of available flavors using the ovhai CLI and the following command: `ovhai capabilities flavor list` 
 > >
-> > New flavors will soon be available such as NVIDIA `A100`, `H100` and also `L4` and `L40`.
+> > New flavors will soon be available such as NVIDIA `A100`, `H100` and also `L4` and `L40S`.
 > > 
 > How many resources can I use when working with OVHcloud AI Tools?
 > > For your information, the current limits are:
-> > - `CPU`: 12 per notebook.
-> > - `GPU`: 4 per notebook.
+> > - `CPU`: 12 per notebook / job / app
+> > - `GPU`: 4 for V100S, and 2 for A100
 > >
 > > - Each Public Cloud project grants a customer by default a maximum of 4 GPUs used simultaneously. Reach out to our support if you need to increase this limitation.
 > > 
@@ -37,9 +37,9 @@ Here are the most frequently asked questions about `ovhai` CLI & AI Tools.
 > >
 > > Once you have your **task** ID, simply retrieve its information with: `ovhai <task> get <task-id>`
 > > You will see, among other information, the task's state and if the task has run its exit code.
-> > There is also the `stateInfo` in which you can evaluate the error message, i.e. whether a command failed or the Docker image was not found.
+> > There is also the `stateInfo` in which you can evaluate the error message, i.e. whether a command failed or the Docker image was not found.
 > >
-> > For more information you should consult the **task** logs: `ovhai <task> logs <task-id>`
+> > For more information you should consult the `Info Url` of your task, or its logs, in the case of a job or an app: `ovhai <task> logs <task-id>`
 > >
 > How long can I use my AI tool? 
 > > There is no duration limitation on AI Notebooks, AI Training and AI Deploy executions.
@@ -57,12 +57,12 @@ Here are the most frequently asked questions about `ovhai` CLI & AI Tools.
 > > Depending on how you build your container, make sure that the mapping between your data (/workspace/mybucket for instance) is not already existing within your image.
 > >
 > How to fix file access permission errors?
-> > Within a job, code and users have no root/sudo privileges. To have access to your files, make sure to mount your **data** object at a location available for non-root users. For preset images provided by OVHcloud it is recommended that the destination path is of the form `/workspace/<your-path>` to avoid such errors.
+> > Within AI Tools, code and users have no root/sudo privileges. To have access to your files, make sure to mount your **data** object at a location available for non-root users. For preset images provided by OVHcloud it is recommended that the destination path is of the form `/workspace/<your-path>` to avoid such errors.
 > >
-> Do I need to master Docker to use AI Training?
-> > It is not necessary to master Docker to use AI Training. A set of ready-to-use images is available on the [`ovhcom` organization of Dockerhub](https://hub.docker.com/u/ovhcom) to get you started. All images prefixed by `ai-training` are images to be used with our AI Tools. They usually include classic tools such as JupyterLab or VScode along with some Machine Learning framework such as PyTorch.
+> Do I need to master Docker to use AI Training or AI Deploy?
+> > It is not necessary to master Docker to use our AI Tools. A set of ready-to-use images is available on the [`ovhcom` organization of Dockerhub](https://hub.docker.com/u/ovhcom) to get you started. All images prefixed by `ai-training` are images to be used with our AI Tools. They usually include classic tools such as JupyterLab or VScode along with some Machine Learning framework such as PyTorch.
 > >
-> > However, jobs in **AI Training** are basically Docker containers, so a practical understanding of Docker is required to fully benefit from the service.
+> > However, jobs in **AI Training** and apps in **AI Deploy** are basically Docker containers, so a practical understanding of Docker is required to fully benefit from the service.
 > >
 > Can I use my own Docker image with AI Training & Deploy? How?
 > > While AI Notebooks does not offer this possibility, it is possible with AI Training & AI Deploy Your image needs to be either on the shared registry, a private managed registry, DockerHub, or GitHub packages. You will find more information [here](/pages/public_cloud/ai_machine_learning/gi_07_manage_registry).
@@ -108,7 +108,7 @@ Here are the most frequently asked questions about `ovhai` CLI & AI Tools.
 > >
 > Why can't I access my UI?
 > > Make sure your job is in a « running » state and that your UI is exposed either on the default port or that you specified the correct port in your URL (see [public ports](/pages/public_cloud/ai_machine_learning/training_guide_01_capabilities#available-ports-to-public-network)).
-> > Only the HTTP layer is accessible and check that your UI is correctly binded to the network interfaces (e.g. with tensoboard user the `--bind-all` flag).
+> > Only the HTTP layer is accessible and check that your UI is correctly binded to the network interfaces (e.g. with tensoboard user the `--bind-all` flag).
 > >
 > **Specific to AI Notebooks**
 > >
