@@ -1,7 +1,7 @@
 ---
 title: Configuring IP aliasing
 excerpt: Find out how to add Additional IP addresses to your VPS configuration
-updated: 2023-11-07
+updated: 2023-11-08
 ---
 
 > [!primary]
@@ -30,7 +30,7 @@ IP aliasing refers to a special network configuration for certain OVHcloud servi
 
 ## Instructions
 
-The following sections contain configurations for the distributions we currently offer and the most commonly used distributions/operating systems. The first step is always to log in to your server via SSH or a GUI login session (RDP for a Windows VPS). The examples below presume you are logged in as a user with elevated permissions (Administrator/sudo).
+The following sections contain configurations for the distributions we currently offer, as well as the most commonly used distributions/operating systems. The first step is always to log in to your server via SSH or a GUI login session (RDP for a Windows VPS). The examples below presume you are logged in as a user with elevated permissions (Administrator/sudo).
 
 > [!primary]
 >
@@ -107,9 +107,7 @@ sudo systemctl restart networking
 
 ### Ubuntu (20.04 - 23.04) & Debian 12
 
-The configuration file for your Additional IP addresses is located in `/etc/netplan/`. In this example it is called "50-cloud-init.yaml". Before making changes, verify the actual file name in this folder. Each Additional IP address will need its own line within the file.
-
-You can configure your Additional IPs directly in the main configuration file, but for a more secure configuration, we strongly recommend that you create separate configuration files for Additional IPs and IPv6 addresses. This way, if you make a mistake, you can simply delete the file and start again.
+The configuration file for your Additional IP addresses is located in `/etc/netplan/`. In this example it is called "50-cloud-init.yaml". Before making changes, verify the actual file name in this folder. 
 
 #### Step 1: Disable automatic network configuration
 
@@ -133,7 +131,9 @@ You can verify your network interface name with this command:
 ip a
 ```
 
-Next, create a configuration file with a .yaml extension to configure your additional IPs. As an example, our file is named "51-cloud-init.yaml".
+The best approach is to create a separate configuration file for configuring the Additional IPs in the directory `/etc/netplan/`. This way, if you make a mistake, you can simply delete the file and start again. Each Additional IP address will need its own line within the file.
+
+As an example, our file is named "51-cloud-init.yaml".
 
 ```sh
 editor /etc/netplan/51-cloud-init.yaml
@@ -141,7 +141,7 @@ editor /etc/netplan/51-cloud-init.yaml
 
 Netplan does not support virtual interfaces or ethernet aliases (for example ens3:0, ens3:1), so all Additional IPs are configured on a single network interface.
 
-Next, edit the file with the content below, replacing `INTERFACE_NAME`, `MAC_ADDRESS` and `ADDITIONAL_IP` with your own values:
+Edit the file with the content below, replacing `INTERFACE_NAME`, `MAC_ADDRESS` and `ADDITIONAL_IP` with your own values:
 
 ```
 network:
@@ -297,10 +297,9 @@ systemctl restart NetworkManager
 
 ### cPanel (CentOS 7) / AlmaLinux (8 & 9), Rocky Linux (8 & 9) / Red Hat derivatives
 
-The main configuration file is located in `/etc/sysconfig/network-scripts/`. In this example it is called "ifcfg-eth0". Before making changes, verify the actual file name in this folder. 
-We will create a configuration file with a virtual interface for each Additional IP to be configured.
+The main configuration file is located in `/etc/sysconfig/network-scripts/`. In this example it is called "ifcfg-eth0". Before making changes, verify the actual file name in this folder.
 
-To achieve this, we simply add a consecutive number to the interface name, starting with a value of 0 for the first alias. For example, for network a interface named "eth0" the first alias is "eth0:0".
+For each additional IP to be configured, we'll create a separate configuration file with a virtual interface. To create a virtual interface, we simply add a consecutive number to the interface name, starting with a value of 0 for the first alias. For example, for network a interface named "eth0" the first alias is "eth0:0".
 
 #### Step 1: Edit the network configuration file
 
@@ -310,7 +309,7 @@ First, verify your network interface name with this command:
 ip a
 ```
 
-Once you have identified your network interface, create a network configuration file for editing. Replace `NETWORK_INTERFACE` with your interface name and `ID` with the first value:
+Next, create a network configuration file for editing. Replace `NETWORK_INTERFACE` with your interface name and `ID` with the first alias:
 
 ```bash
 sudo nano /etc/sysconfig/network-scripts/ifcfg-NETWORK_INTERFACE:ID

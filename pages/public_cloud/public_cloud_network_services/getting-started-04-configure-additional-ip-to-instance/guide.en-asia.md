@@ -30,7 +30,7 @@ You may need to configure Additional IP addresses on your instances, for example
 
 ## Instructions
 
-The following sections contain configurations for the distributions we currently offer and the most commonly used distributions/operating systems. The first step is always to log in to your instance via SSH or a GUI login session (VNC for a Windows instance). The examples below presume you are logged in as a user with elevated permissions (Administrator/sudo).
+The following sections contain configurations for the distributions we currently offer, as well as the most commonly used distributions/operating systems. The first step is always to log in to your instance via SSH or a GUI login session (VNC for a Windows instance). The examples below presume you are logged in as a user with elevated permissions (Administrator/sudo).
 
 > [!primary]
 >

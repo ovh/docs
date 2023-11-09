@@ -1,7 +1,7 @@
 ---
 title: 'Configuring IPv6 on a VPS'
 excerpt: 'Find out how to configure IPv6 on your OVHcloud VPS'
-updated: 2023-11-06
+updated: 2023-11-08
 ---
 
 ## Objective
@@ -26,7 +26,7 @@ IPv6 is the latest version of the *Internet Protocol*. Each OVHcloud VPS server 
 
 ## Instructions
 
-The following sections contain configurations for the distributions we currently offer and the most commonly used distributions/operating systems. The first step is always to log in to your server via SSH or a GUI login session (RDP for a Windows VPS). The examples below presume you are logged in as a user with elevated permissions (Administrator/sudo).
+The following sections contain configurations for the distributions we currently offer, as well as the most commonly used distributions/operating systems. The first step is always to log in to your server via SSH or a GUI login session (RDP for a Windows VPS). The examples below presume you are logged in as a user with elevated permissions (Administrator/sudo).
 
 > [!warning]
 >
@@ -120,7 +120,7 @@ There are two ways to configure your network depending on the operating system i
 
 - **for Debian 12, Ubuntu 20.04 and later**: use the [method based on the *Netplan* configuration](#netplan)
 
-In some cases (such as Debian 9), the appropriate method may not be the one specified above. To make sure, browse your system to check which one is active. Visit <https://netplan.io/> for more information, if necessary.<br>
+Visit <https://netplan.io/> for more information, if necessary.<br>
 Moreover, keep in mind that the exact file names may vary.
 
 ##### Configuration of *interfaces* files <a name="interfaces"></a>
@@ -192,7 +192,7 @@ rm -f /etc/netplan/50-cloud-init.yaml
 cp /etc/netplan/backup/50-cloud-init.yaml /etc/netplan/50-cloud-init.yaml
 ```
 
-Next, create a configuration file in the directory `/etc/netplan/`. In our example, our file is named "51-cloud-init-ipv6.yaml":
+The best practice approach is to create a configuration file in the directory `/etc/netplan/`. In our example, our file is named "51-cloud-init-ipv6.yaml":
 
 ```bash
 nano /etc/netplan/51-cloud-init-ipv6.yaml

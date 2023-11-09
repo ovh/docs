@@ -100,37 +100,35 @@ pre-down /sbin/ip -6 route del default via 2001:41d0:xxx:xxxx::111 dev eth0
 pre-down /sbin/ip -6 route del 2001:41d0:xxx:xxxx::111 dev eth0
 ```
 
-#### On Ubuntu (20.04 -23.04) and Debian 12
+#### On Ubuntu and Debian 12
 
-The network configuration files are located in the `/etc/netplan/` directory. First, create a copy of the IPv6 configuration file:
+The network configuration files are located in the `/etc/netplan/` directory. 
+
+The best practice approach is to create a configuration file in the directory `/etc/netplan/`. In our example, our file is named "51-cloud-init-ipv6.yaml":
 
 ```bash
-cd /etc/netplan
-cp 50-cloud-init.yaml 51-cloud-init-ipv6.yaml
+nano /etc/netplan/51-cloud-init-ipv6.yaml
 ```
 
 This allows you to separate the IPv6 configuration and easily revert the changes in case of an error.
 
-If we assume that your interface is eth0, the configuration should look like this:
-
-File to edit (with su privileges): `/etc/netplan/51-cloud-init-ipv6.yaml`
+Then edit the `51-cloud-init-ipv6.yaml` file, adding the IPv6 configuration of your server. Replace the generic elements (i.e. *YOUR_IPV6*, *IPV6_PREFIX* and *IPV6_GATEWAY*) as well as the network interface (if your server is not using **eth0**) with your specific values.
 
 ```yaml
 network:
+    version: 2
     ethernets:
         eth0:
-            dhcp6: false
+            dhcp6: no
             match:
-                macaddress: fb:17:3r:39:56:75
-            set-name: eth0
+              name: eth0
             addresses:
-              - "YOUR_IPV6/IPv6_PREFIX"
-            gateway6: "IPv6_GATEWAY"
+              - YOUR_IPV6/IPv6_PREFIX
             routes:
-              - to: "IPv6_GATEWAY"
-                scope: link
-    version: 2
+              - to: ::/0
+                via: IPv6_GATEWAY
 ```
+
 > [!warning]
 >
 > It is important to respect the alignment of each element in this file as represented in the example above. Do not use the tab key to create your spacing. Only the space key is needed. 

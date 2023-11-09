@@ -1,7 +1,7 @@
 ---
 title: 'Configuring IP aliasing'
 excerpt: 'Find out how to add Additional IP addresses to your server configuration'
-updated: 2023-11-07
+updated: 2023-11-08
 ---
 
 > [!primary]
@@ -35,7 +35,7 @@ IP aliasing is a special network configuration for your OVHcloud dedicated serve
 
 ## Instructions
 
-The following sections contain configurations for the distributions we currently offer and the most commonly used distributions/operating systems. The first step is always to log in to your server via SSH or a GUI login session (RDP for a Windows VPS). The examples below presume you are logged in as a user with elevated permissions (Administrator/sudo).
+The following sections contain configurations for the distributions we currently offer and the most commonly used distributions/operating systems. The first step is always to log in to your server via SSH or a GUI login session (RDP for a Windows server). The examples below presume you are logged in as a user with elevated permissions (Administrator/sudo).
 
 > [!primary]
 >
