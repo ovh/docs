@@ -182,7 +182,7 @@ For simplification, everything is on the cloned [GitHub repository](https://gith
 
 - Create the Dockerfile
 
-First, we will need to create the Dockerfile. As before, this Dockerfile has already been created and is located in the `/front-end/` folder. The file is [here](https://github.com/ovh/ai-training-examples/blob/main/apps/flask/conversational-rasa-chatbot/front-end/flask.Dockerfile) and looks like this:
+First, we will need to create the Dockerfile. As before, this Dockerfile has already been created and is located in the `front-end` folder. The file is [here](https://github.com/ovh/ai-training-examples/blob/main/apps/flask/conversational-rasa-chatbot/front-end/flask.Dockerfile) and looks like this:
 
 ```docker
 FROM python:3.8
