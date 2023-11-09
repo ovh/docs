@@ -214,7 +214,7 @@ For the moment, only these following parameters are editable:
 - minNodes
 - maxNodes
 
-If you consider that we should prioritize the possible customization of other autoscaling parameters, you are welcome to create an issue on our [Public roadmap](https://github.com/ovh/public-cloud-roadmap/projects/1).
+If you consider that we should prioritize the possible customization of other autoscaling parameters, you are welcome to create an issue on our [Public roadmap](https://github.com/orgs/ovh/projects/16/).
 
 ## Go further
 

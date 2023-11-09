@@ -36,7 +36,7 @@ Retrouvez la description des classes des stockage sur [cette page](https://www.o
 
 Les classes de stockage Objet S3 bénéficient de [fonctionnalités enrichies pour gérer au mieux votre donnée](https://www.ovhcloud.com/fr/public-cloud/object-storage/#features).
 
-De nouvelles fonctionnalités sont à venir, nous vous invitons à consulter régulièrement notre [roadmap GitHub publique](https://github.com/ovh/public-cloud-roadmap/projects/3?card_filter_query=label%3A%22object+storage%22).
+De nouvelles fonctionnalités sont à venir, nous vous invitons à consulter régulièrement notre [roadmap GitHub publique](https://github.com/orgs/ovh/projects/16/?card_filter_query=label%3A%22object+storage%22).
 
 ### Quelles sont les API S3 compatibles avec les classes de stockage Object Storage S3 ?
 
@@ -160,7 +160,7 @@ Vous pouvez choisir de synchroniser vos données d'une région à une autre en u
 
 ### Est-il possible de gérer les cycles de vie de la donnée ?
 
-Les options de cycle de vie ne sont pas encore disponibles. Nous vous invitons à suivre notre [roadmap GitHub publique](https://github.com/ovh/public-cloud-roadmap/projects/3?card_filter_query=label%3A%22object+storage%22) pour être informé de leur sortie.
+Les options de cycle de vie ne sont pas encore disponibles. Nous vous invitons à suivre notre [roadmap GitHub publique](https://github.com/orgs/ovh/projects/16/?card_filter_query=label%3A%22object+storage%22) pour être informé de leur sortie.
 
 ## Performances
 
