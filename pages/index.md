@@ -965,6 +965,7 @@
         + [Domain names](products/web-cloud-domains-domain-names)
             + [General guides](web-cloud-domains-domain-names-general-guides)
                 + [Redirecting a domain name managed by OVHcloud](web_cloud/domains/redirect_domain_name)
+		+ [How to create a subdomain](web_cloud/domains/domain_create_subdomains)
                 + [Domains - Shared Responsbility](web_cloud/domains/responsibility_model_domains)
             + [Changing a domain name owner (trade)](web-cloud-domains-domain-names-changing-a-domain-name-owner-trade)
                 + [Changing the owner of a domain name](web_cloud/domains/trade_domain)
