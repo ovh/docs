@@ -60,7 +60,7 @@ print(secrets.token_urlsafe())
 
 The second one will be the algorithm used for the Json web token. The algorithm used will be H256.
 
-You have your two environment variables. Time to save them! Create an `.env` file inside the folder `flask_app`. Your `.env` should look like this:
+You have your two environment variables. Time to save them! Create an `.env` file inside the `flask_app` folder. Your `.env` should look like this:
 
 ```
 JWT_SECRET_KEY=your-jwebtoken-generated-before
@@ -87,7 +87,7 @@ For the chatbot deployment, we will create one object storage bucket. It will co
 To create the volume in GRA (Gravelines data centre) in read-only, go into the folder `ai-training-examples/apps/flask/conversational-rasa-chatbot/back-end/models`. After, you will just have to type:
 
 ```bash
-ovhai bucket object <model-output-container>@GRA 20221220-094914-yellow-foley.tar.gz
+ovhai bucket object upload <model-output-container>@GRA 20221220-094914-yellow-foley.tar.gz
 ```
 
 The model `20221220-094914-yellow-foley.tar.gz` will be added in your container `<model-output-container>`. That's it, now you can deploy your chatbot.
@@ -114,9 +114,7 @@ docker compose -f flask-docker-compose.yml down
 
 For simplicity, we will use the ovhai CLI. With one command line, you will have your model up and running securely with TLS!
 
-If you have already trained your chatbot with **AI Training** and use the same Dockerfile, you don't have to create and push a new image because the two images are the same. In this case, skip the creation of the container and go directly to the creation of the app. 
-
-We will need to create a container in order to deploy the chatbot. Let's create a Dockerfile, build the container and push it to your personal docker account. Here is the Dockerfile:Docker
+We will need to create a container in order to deploy the chatbot. You don't have to create the Dockerfile since an example of it can be found in our GitHub repository. This Dockerfile is [here](https://github.com/ovh/ai-training-examples/blob/main/apps/flask/conversational-rasa-chatbot/back-end/rasa.Dockerfile) and looks like the following:
  
 ```docker
 FROM python:3.8
@@ -135,13 +133,11 @@ EXPOSE 5005
 CMD rasa run -m trained-models --cors "*" --debug --connector socketio --credentials "crendentials.yml" --endpoints "endpoints.yml" & rasa run actions
 ```
 
-This file can be found in the GitHub repository, you don't have to create it. The file is [here](https://github.com/ovh/ai-training-examples/blob/main/apps/flask/conversational-rasa-chatbot/back-end/rasa.Dockerfile).
-
-Now run the following command in this folder (`back-end`) to build and push the container:
+Now run the following command in this folder (`/apps/flask/conversational-rasa-chatbot/back-end/`) to build and push the container:
 
 ```bash
-docker build .  -f rasa.Dockerfile -t <yourdockerhubId>/rasa-chatbot:latest
-docker push <yourdockerhubId>/rasa-chatbot:latest
+docker build .  -f rasa.Dockerfile -t <yourdockerhubId>/rasa-chatbot-backend:latest
+docker push <yourdockerhubId>/rasa-chatbot-backend:latest
 ```
 
 Now that your container is created, let's run our application and deploy our model!
@@ -153,7 +149,7 @@ ovhai app run --name rasa-back \
 --cpu 4 \
 --volume <model-output-container>@GRA:/workspace/trained-models:RO \
 -e JWT_SECRET=<JWT_SECRET_KEY> \
-<yourdockerhubId>/rasa-chatbot:latest
+<yourdockerhubId>/rasa-chatbot-backend:latest
 ```
 
 Explanation of each line:
@@ -177,7 +173,7 @@ Explication of the bash command running the chatbot (you can find it inside the 
 - `--endpoints "endpoints.yml"`: Specify the path of the `endpoints.yml` file.
 - `rasa run actions`: The custom actions you've made before to launch them and use them.
 
-Now, you can wait until your app is started, then go to the URL. Nothing special will happen, just a small message with **hello from Rasa 3.2.0**!
+Now, you can wait until your app is started, then go to the URL. Nothing special will happen, just a small message with **hello from Rasa 3.2.10**!
 
 For better interactions, we will now deploy the Flask frontend.
 For simplification, everything is on the cloned [GitHub repository](https://github.com/ovh/ai-training-examples/tree/main/apps/flask/conversational-rasa-chatbot).
@@ -186,7 +182,7 @@ For simplification, everything is on the cloned [GitHub repository](https://gith
 
 - Create the Dockerfile
 
-First, we will need to create the Dockerfile. This Dockerfile is already created and it is in the folder `front-end`. Here is what it looks like:
+First, we will need to create the Dockerfile. As before, this Dockerfile has already been created and is located in the `front-end` folder. The file is [here](https://github.com/ovh/ai-training-examples/blob/main/apps/flask/conversational-rasa-chatbot/front-end/flask.Dockerfile) and looks like this:
 
 ```docker
 FROM python:3.8
@@ -204,18 +200,18 @@ EXPOSE 5000
 CMD python3 app.py
 ```
 
-Let's now run the app on AI Deploy! To do so, you will need to create a Docker image. Go into the folder `front-end` (`ai-training-examples/apps/flask/conversational-rasa-chatbot/front-end`) and run:
+Let's now run the app on AI Deploy! To do so, you will need to create a Docker image. Go into the `front-end` folder (`ai-training-examples/apps/flask/conversational-rasa-chatbot/front-end`) and run:
 
 ```bash
-docker build . -f flask.Dockerfile -t <yourdockerhubId>/flask-app:latest
-docker push <yourdockerhubId>/flask-app:latest
+docker build . -f flask.Dockerfile -t <yourdockerhubId>/flask-app-frontend:latest
+docker push <yourdockerhubId>/flask-app-frontend:latest
 ```
 
 - Deploy the Docker image
 
 Once built, let's run the Frontend application with the ovhai CLI. 
 
-But first, get the URL of your backend Rasa chatbot. It will be something like this: **https://259b36ff-fc61-46a5-9a25-8d9a7b9f8ff6.app.gra.ai.cloud.ovh.net/**. You can have it with the CLI by listing all of your apps and locating the one you want. 
+But first, get the URL of your backend Rasa chatbot app. It will be something like this: **https://259b36ff-fc61-46a5-9a25-8d9a7b9f8ff6.app.gra.ai.cloud.ovh.net/**. You can have it with the CLI by listing all of your apps and locating the one you want. 
 
 Now you can run this command:
 
@@ -225,7 +221,7 @@ ovhai app run --name flask-app \
 --default-http-port 5000 \
 -e API_URL=<RasaURL_Previously_Copied> \
 --cpu 2 \
-<yourdockerhubId>/flask-app:latest 
+<yourdockerhubId>/flask-app-frontend:latest 
 ```
 
 That's it! On the URL of this app, you can speak to your chatbot. Try to have a simple conversation! If you reload the page, you will notice that the chatbot goes back to zero. So every user is different on each machine.

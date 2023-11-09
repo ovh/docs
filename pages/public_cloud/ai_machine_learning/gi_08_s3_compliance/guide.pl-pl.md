@@ -230,7 +230,7 @@ ovhai bucket object upload my-bucket-s3@S3GRA train-first-model.py
 You are now able to list the content of your S3 bucket:
 
 ```console
-ovhai bucket object list my-bucket-s3@S3-GRA
+ovhai bucket object list my-bucket-s3@S3GRA
 ```
 
 You should see your object (here the python file).
