@@ -12,6 +12,28 @@ This guide's objective is to help you better understand our Game DDoS Protection
 > Find more information on our Game DDoS Protection on <https://www.ovhcloud.com/en/security/game-ddos-protection/>.
 > 
 
+###### **START v1**
+
+At the heart of our range of Bare Metal servers dedicated to gaming is DDoS Game Protection, specifically designed to secure gaming applications against cyber-attacks that threaten the stability and accessibility of servers for gamers. This dedicated protection solution is both robust and easy to use, enabling our customers to concentrate fully on developing their business without being distracted by the fight against cybercrime.
+
+We've recently enhanced the GAME firewall interface for simplified management and greater clarity. Enjoy a clean, user-friendly interface, reflecting our ongoing commitment to optimum security and unrivalled performance.
+
+###### **END v1**
+
+
+###### **START v2 (with more details)**
+
+Our range of Bare Metal servers designed specifically for games includes a crucial feature: Game DDoS Protection. This protection is tailored to the unique needs of online gaming platforms, where speed and stability are key to the user experience. In the competitive world of online gaming, a cyber attack can have disastrous consequences, ranging from degraded performance to complete disruption of service, damaging players' reputation and loyalty.
+
+Recognising the critical importance of service continuity, we have developed our DDoS Game Protection to provide seamless security against attacks, while maintaining optimal performance. Our solution allows game server operators to turn their attention away from security threats and focus on innovating and expanding their game offering.
+
+As part of our commitment to providing not only state-of-the-art security but also an exceptional user experience, we have undertaken a complete redesign of the GAME Firewall interface. This latest update aims to simplify security management, reduce complexity for server administrators and provide greater visibility of the protection measures in place. With an intuitive user interface and simplified controls, users can now navigate security settings with ease and quickly adapt configurations in response to changing threats.
+
+The refreshed interface is the result of careful listening to feedback from our customers and an in-depth analysis of security trends in the gaming industry. It is designed to be not only more pleasing to the eye but also more functional, enabling users to manage DDoS protection effectively, ensuring that servers remain operational and performing, even in the face of the most persistent and sophisticated attacks.
+
+###### **END v2**
+
+
 ## Requirements
 
 - An [OVHcloud **Game** Dedicated Server](https://www.ovhcloud.com/en-gb/bare-metal/prices/#filterType=range_element&filterValue=game))
@@ -22,7 +44,9 @@ This guide's objective is to help you better understand our Game DDoS Protection
 >
 > Please visit our [comparison page](https://eco.ovhcloud.com/en-gb/compare/) for more information.
 
-## Introduction 
+## Instructions
+
+### Introduction 
 
 The Anti-DDoS Infrastructure together with Edge Network Firewall are keeping network safe from common threats (mostly focusing on ISO OSI Layer 3 and 4). On the other hand, hosting game applications can be challenging experience in terms of network security. We understand that very well and for this usecase OVHcloud is offering Game DDoS Protection - a Layer-7 (application) firewall that focuses on protecting specific gaming protocols (usually using UDP). It's key benefits are:
 
@@ -30,8 +54,6 @@ The Anti-DDoS Infrastructure together with Edge Network Firewall are keeping net
 - **2-way**: The platform analyzes incoming and outgoing traffic for best understanding of every player's situation.
 - **Instant**: It can distinguish real players from harmful attacks on a server from the very first network packets.
 - **Always-on**: The ability to detect and stop attacks ensures a smooth experience for sensitive gaming applications without any disruptions and latency changes.
-
-## Instructions
 
 ### Enabling the Game DDoS Protection
 
@@ -41,21 +63,61 @@ The Anti-DDoS Infrastructure together with Edge Network Firewall are keeping net
 
 In order to configure gaming rules in the Game Firewall, you will first need to log in to the OVHcloud Control Panel.
 
-Click the `Bare Metal Cloud`{.action} tab then go to `Network`.{action} and open `Public IP Addresses`{.action}. Next, click on the `...`{.action} button next to the IP address of your Game Server and click on `Configure the GAME firewall`{.action}.
+| ![bare-metal-cloud-tab](images/bare-metal-cloud-tab.png) | 
+|:--:| 
+| Click the `Bare Metal Cloud`{.action} tab |
 
-![Game_wall](images/GAMEwall_newUX.png){.thumbnail}
+| ![network-tab](images/network-tab.png) | 
+|:--:| 
+| Then go to `Network`{.action} |
 
-On the following screen, click the `Add a rule`{.action} button to add a rule to the Game Firewall.
+| ![ip-tab](images/ip-tab.png) | 
+|:--:| 
+| Open `IP`{.action} |
 
-You can set up to **30 rules per IP**.
+| ![game-server](images/game-server.png) | 
+|:--:| 
+| Click on the `...`{.action} button next to the IP address of your Game Server |
+
+| ![configure-game-firewall](images/configure-game-firewall.png) | 
+|:--:| 
+| Click on `Configure the GAME firewall`{.action} |
+
+| ![add-rule-screen](images/add-rule-screen.png) | 
+|:--:| 
+| On the following screen ... |
+
+| ![add-rule-btn](images/add-rule-btn.png) | 
+|:--:| 
+| ... click the `Add a rule`{.action} button to add a rule to the Game Firewall |
+
+
+You can set up to **30 rules per IP** on more than **13 protocols** (all currently supported Game Firewall profiles can be seen [here](https://www.ovhcloud.com/en/security/game-ddos-protection/)):
+
+<center>
+
+| Protocols    |        |
+| -------- |  -------- |
+| Ark Survival Evolved  | Arma |
+| Gta Multi Theft Auto San Andreas | Gta San Andreas Multiplayer Mod |
+| Hl 2 Source | Minecraft Pocket Edition |
+| Minecraft Query | Mumble |
+| Other | Rust |
+| Teamspeak 2 | Teamspeak 3 |
+| Trackmania Shootmania |    |
+
+</center>
+   
 
 > [!primary]
 > By default, the Game Firewall is pre-configured with certain rules that OVHcloud has determined work with the most common games. However, for customers with a Game Dedicated Server, we allow you to go a step further and configure rules for ports as well.
 > 
 
-![Configure_Armor](images/ConfigureGameFirewall_newUX.png){.thumbnail}
 
-Enable the ports as needed on the following screen and click on the `Confirm`{.action} button when you are finished adding your rules. You have now successfully configured Game Firewall rules.
+| ![confirm-new-rule](images/confirm-new-rule.png) | 
+|:--:| 
+| Enable the ports as needed on the following screen and click on the `Confirm`{.action} button when you are finished adding your rules. You have now successfully configured Game Firewall rules |
+
 
 > [!primary]
 > It is important to note that Game DDoS Protection will not take any action unless rules are configured. 
@@ -67,10 +129,6 @@ Enable the ports as needed on the following screen and click on the `Confirm`{.a
 >
 
 ### Important Notices
-
-#### Supported Games
-
-All currently supported Game Firewall profiles can be seen [here](https://www.ovhcloud.com/en/security/game-ddos-protection/).
 
 #### FiveM
 
