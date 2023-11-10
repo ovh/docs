@@ -104,13 +104,13 @@ pre-down /sbin/ip -6 route del 2001:41d0:xxx:xxxx::111 dev eth0
 
 The network configuration files are located in the `/etc/netplan/` directory. 
 
-The best practice approach is to create a configuration file in the directory `/etc/netplan/`. In our example, our file is named "51-cloud-init-ipv6.yaml":
+The best practice approach is to create a seperate configuration file in the directory `/etc/netplan/`. This allows you to separate the IPv6 configuration and easily revert the changes in case of an error.
+
+In our example, our file is named "51-cloud-init-ipv6.yaml":
 
 ```bash
 nano /etc/netplan/51-cloud-init-ipv6.yaml
 ```
-
-This allows you to separate the IPv6 configuration and easily revert the changes in case of an error.
 
 Then edit the `51-cloud-init-ipv6.yaml` file, adding the IPv6 configuration of your server. Replace the generic elements (i.e. *YOUR_IPV6*, *IPV6_PREFIX* and *IPV6_GATEWAY*) as well as the network interface (if your server is not using **eth0**) with your specific values.
 
