@@ -77,6 +77,8 @@ Consulte la guía [creación de una cuenta MX Plan](/pages/web_cloud/email_and_c
 
 [Crear una dirección de correo electrónico con su solución MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_creation){.external}
 
+[Gestionar un certificado SSL en un alojamiento web](/pages/web_cloud/web_hosting/ssl_on_webhosting)
+
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
 
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es-es/support-levels/).
