@@ -113,7 +113,7 @@ Dabei ist die RAID-Nummer anzugeben (/dev/sg0 = RAID 1, /dev/sg1 = RAID 2 etc.)
 
 #### Server mit NVMe-Festplatte
 
-Bei einer NVMe-Festplatte muss der Server in den [Rescue-Modus](/pages/bare_metal_cloud/dedicated_servers/rescue_mode){.external}-Modus versetzt werden und installieren Sie das Tool `nvme-cli`.
+Bei einer NVMe-Festplatte muss der Server in den [Rescue-Modus](/pages/bare_metal_cloud/dedicated_servers/rescue_mode){.external} versetzt werden und installieren Sie das Tool `nvme-cli`.
 
 ```sh
 apt install nvme-cli

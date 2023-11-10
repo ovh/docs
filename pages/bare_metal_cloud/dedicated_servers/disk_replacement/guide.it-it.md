@@ -117,7 +117,7 @@ smartctl -a /dev/sgY
 Nel caso di un disco NVME, è necessario mettere il server in modalità [Rescue mode](/pages/bare_metal_cloud/dedicated_servers/rescue_mode){.external} e installare lo strumento `nvme-cli`.
 
 ```sh
-apt installa nvme-cli
+apt install nvme-cli
 ```
 
 Sarà quindi necessario utilizzare il comando `nvme list` per recuperare i numeri di serie dei dischi:
