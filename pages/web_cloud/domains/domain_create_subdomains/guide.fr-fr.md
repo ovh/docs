@@ -126,7 +126,7 @@ Par exemple, vous pourrez y ajouter :
 > Effectivement et pour des raisons de sécurité, vous devrez également autoriser le sous-domaine à pouvoir accéder au service *cible* (hébergement web, serveur e-mail, etc.).
 >
 
-Dans la partie qui suit, nous allons vous orienter sur la façon d'autoriser un sous-domaine à pouvoir accéder sur différents services de l'univers Web (hébergement web, serveur Exchange, etc.) proposés par OVHcloud.
+Dans la partie qui suit, nous allons vous indiquer quelques exemples sur la façon d'autoriser un sous-domaine à pouvoir accéder sur différents services de l'univers Web (hébergement web, serveur Exchange, etc.) proposés par OVHcloud.
 
 > [!primary]
 >
@@ -135,11 +135,11 @@ Dans la partie qui suit, nous allons vous orienter sur la façon d'autoriser un 
 
 ### Associer, autoriser et configurer votre sous-domaine avec un service OVHcloud
 
-Plusieurs services de l'univers Web cloud peuvent être utilisées avec un sous-domaine. Les procédures d'association sont similaires à celles que vous devriez exécuter s'il s'agissait d'un nom de domaine.
+Plusieurs services de l'univers Web cloud peuvent être utilisées avec un sous-domaine. Les procédures d'association sont similaires à celles que vous devriez exécuter s'il s'agissait d'un nom de domaine. Nous allons ci-après vous exposer uniquement les cas les plus courants.
 
-#### Afficher un site web présent sur mon hébergement web OVHcloud avec un sous-domaine
+#### Cas 1 : Afficher un site web présent sur mon hébergement web OVHcloud avec un sous-domaine
 
-Tout comme pour un nom de domaine, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} et sélectionnez `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} dans la colonne de gauche, sélectionnez l'offre concernée où se trouve votre site web, puis choisissez l'onglet `Multisite`{.action}.
+Tout comme pour un nom de domaine et pour autoriser un sous-domaine à afficher le contenu d'un dossier *cible* présent sur un hébergement web, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} et sélectionnez `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} dans la colonne de gauche, sélectionnez l'offre concernée où se trouve votre site web, puis choisissez l'onglet `Multisite`{.action}.
 
 C'est à cet endroit que vous pourrez autoriser l'accès de votre sous-domaine à votre hébergement web où se trouve votre site web.
 
@@ -149,6 +149,18 @@ Pour plus de détails sur la configuration d'un domaine ou d'un sous-domaine sur
 >
 > L'ajout en multisite d'un nom de domaine ou d'un sous-domaine peut parfois nécessiter la mise en place d'un *token* de validation. Parfois, pour un sous-domaine, ce même *token* n'est pas pris en compte et doit être ajouter non pas pour le sous-domaine mais pour le nom de domaine en lui-même. Dans ce cas, ajouter en complément le *token* sous la forme d'un enregistrement DNS de type TXT pour le nom de domaine, et ce, dans la zone DNS active de votre nom de domaine.
 >
+
+#### Cas 2 - Créer des adresses e-mail Exchange avec un sous-domaine
+
+Tout comme pour un nom de domaine et pour débloquer la création d'adresses e-mail Exchange personnalisées avec un sous-domaine, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} et sélectionnez `Web Cloud`{.action}. Cliquez sur `Microsoft`{.action} dans la colonne de gauche, puis sur `Exchange`{.action}. Sélectionnez ensuite la plateforme Exchange que vous souhaitez utiliser avec votre sous-domaine. Su la page qui s'affiche, rendez-vous dans l'onglet `Domaine associés`{.action} puis cliquez sur le bouton `Ajouter un domaine`{.action} à droite.
+
+Vous pourrez ainsi déclarer votre sous-domaine sur votre plateforme Exchange.
+
+Pour plus de détails sur la configuration d'une plateforme Exchange, n'hésitez pas à consulter les guides suivants :
+
+- [Premiers pas avec le service Hosted Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_starting_hosted)
+- [Ajouter un nom de domaine sur une plateforme e-mail](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain)
+- [Ajouter un enregistrement CNAME pour valider votre domaine sur votre offre e-mail](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_dns_cname)
 
 ## Aller plus loin <a name="go-further"></a>
 
