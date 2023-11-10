@@ -135,13 +135,30 @@ Dans la partie qui suit, nous allons vous orienter sur la façon d'autoriser un 
 
 ### Associer, autoriser et configurer votre sous-domaine avec un service OVHcloud
 
+Plusieurs services de l'univers Web cloud peuvent être utilisées avec un sous-domaine. Les procédures d'association sont similaires à celles que vous devriez exécuter s'il s'agissait d'un nom de domaine.
 
+#### Afficher un site web présent sur mon hébergement web OVHcloud avec un sous-domaine
+
+Tout comme pour un nom de domaine, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} et sélectionnez `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} dans la colonne de gauche, sélectionnez l'offre concernée où se trouve votre site web, puis choisissez l'onglet `Multisite`{.action}.
+
+C'est à cet endroit que vous pourrez autoriser l'accès de votre sous-domaine à votre hébergement web où se trouve votre site web.
+
+Pour plus de détails sur la configuration d'un domaine ou d'un sous-domaine sur un hébergement web, consultez notre guide « [Partager son hébergement entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite) ». Qu'il s'agisse d'un nom de domaine ou un sous-domaine, la procédure est strictement la même.
+
+> [!warning]
+>
+> L'ajout en multisite d'un nom de domaine ou d'un sous-domaine peut parfois nécessiter la mise en place d'un *token* de validation. Parfois, pour un sous-domaine, ce même *token* n'est pas pris en compte et doit être ajouter non pas pour le sous-domaine mais pour le nom de domaine en lui-même. Dans ce cas, ajouter en complément le *token* sous la forme d'un enregistrement DNS de type TXT pour le nom de domaine, et ce, dans la zone DNS active de votre nom de domaine.
+>
 
 ## Aller plus loin <a name="go-further"></a>
 
 [Créer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_create)
 
 [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
+
+[Modifier les serveurs DNS d'un nom de domaine OVHcloud](/pages/web_cloud/domains/dns_server_general_information)
+
+[Partager son hébergement entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite)
  
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
  
