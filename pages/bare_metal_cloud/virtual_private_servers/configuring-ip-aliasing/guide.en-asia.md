@@ -141,7 +141,7 @@ editor /etc/netplan/51-cloud-init.yaml
 
 Netplan does not support virtual interfaces or ethernet aliases (for example ens3:0, ens3:1), so all Additional IPs are configured on a single network interface.
 
-Edit the file with the content below, replacing `INTERFACE_NAME`, `MAC_ADDRESS` and `ADDITIONAL_IP` with your own values:
+Next, edit the file with the content below, replacing `INTERFACE_NAME`, `MAC_ADDRESS` and `ADDITIONAL_IP` with your own values:
 
 ```
 network:
@@ -299,7 +299,7 @@ systemctl restart NetworkManager
 
 The main configuration file is located in `/etc/sysconfig/network-scripts/`. In this example it is called "ifcfg-eth0". Before making changes, verify the actual file name in this folder.
 
-For each additional IP to be configured, we'll create a separate configuration file with a virtual interface. To create a virtual interface, we simply add a consecutive number to the interface name, starting with a value of 0 for the first alias. For example, for network a interface named "eth0" the first alias is "eth0:0".
+For each Additional IP to be configured, we'll create a separate configuration file with a virtual interface. To create a virtual interface, we simply add a consecutive number to the interface name, starting with a value of 0 for the first alias. For example, for a network interface named "eth0" the first alias is "eth0:0".
 
 #### Step 1: Edit the network configuration file
 
