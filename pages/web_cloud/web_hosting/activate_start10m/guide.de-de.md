@@ -1,7 +1,7 @@
 ---
 title: "&laquo;Kostenloses Hosting 100M&raquo; aktivieren"
 excerpt: Erfahren Sie hier, wie Sie Ihr kostenloses Hosting 100M aktivieren
-updated: 2022-09-15
+updated: 2023-11-10
 ---
 
 > [!primary]
@@ -79,6 +79,8 @@ Ziehen Sie die Anleitung zur [Erstellung eines MX Plan E-Mail-Accounts](/pages/w
 [Mit dem Speicherplatz Ihres Webhostings verbinden](/pages/web_cloud/web_hosting/ftp_connection){.external}
 
 [E-Mail-Adresse mit MX Plan erstellen](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_creation){.external}
+
+[SSL-Zertifikat auf einem Webhosting verwalten](/pages/web_cloud/web_hosting/ssl_on_webhosting)
 
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
 
