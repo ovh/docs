@@ -120,7 +120,7 @@ There are two ways to configure your network depending on the operating system i
 
 - **for Debian 12, Ubuntu 20.04 and later**: use the [method based on the *Netplan* configuration](#netplan)
 
-Visit <https://netplan.io/> for more information, if necessary.<br>
+In some cases, the appropriate method may not be the one specified above. To make sure, browse your system to check which one is active. Visit <https://netplan.io/> for more information, if necessary.<br>
 Moreover, keep in mind that the exact file names may vary.
 
 ##### Configuration of *interfaces* files <a name="interfaces"></a>
