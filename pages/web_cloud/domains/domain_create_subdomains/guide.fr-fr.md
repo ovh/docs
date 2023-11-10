@@ -74,6 +74,69 @@ Si, par exemple, vous disposez du nom de domaine *domain.tld*, vous pouvez crée
 > Effectivement, pour reprendre l'un des exemples ci-dessus, vous pouvez tout à fait créer le sous-domaine *preprod.app.domain.tld* pour tester la nouvelle version de votre application web. Ceci sans couper l'accès à la version actuelle de votre application sur *app.domain.tld*.
 >
 
+### Créer un sous-domaine
+
+Les [noms de domaine](https://www.ovhcloud.com/fr/domains/) ont tous besoin d'une **zone DNS**. La zone DNS se compose d’informations techniques, appelées *enregistrements DNS*. Elle est, en quelque sorte, comme un centre d'aiguillage.
+
+Pour plus de détails sur les zones DNS, consultez notre guide « [Créer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_create) ».
+
+**Tous les sous-domaines se configurent dans la zone DNS active du nom de domaine. Ceci en y ajoutant des enregistrements DNS**
+
+#### 1 - Identifier l'endroit où se trouve la zone DNS active de votre nom de domaine
+
+Deux cas de figure sont possibles : 
+
+- La zone DNS active de votre nom de domaine est présente chez OVHcloud;
+- La zone DNS active de votre nom de domaine est hébergée ailleurs.
+
+> [!warning]
+>
+> La zone DNS active de votre nom de domaine n'est pas obligatoirement gérée du même fournisseur que votre nom de domaine. 
+>
+> 1 : Pour identifier l'endroit où se trouve la zone DNS active d'un nom de domaine enregistré chez OVHcloud, vous pouvez vous aider de notre guide « [Modifier les serveurs DNS d'un nom de domaine OVHcloud](/pages/web_cloud/domains/dns_server_general_information) ».
+>
+> 2 : Si votre nom de domaine n'a pas été enregistré chez OVHcloud, rapprochez-vous du *bureau d'enregistrement* actuel de votre nom de domaine afin de connaître l'endroit où est hébergée sa zone DNS active.
+> 
+
+Si les serveurs DNS déclarés pour votre nom de domaine ont l'une des deux formes suivantes :
+
+- *dnsXX.ovh.net* et *nsXX.ovh.net* (ou chacun des « X » représente un chiffre compris entre 0 et 9);
+- *dns200.anycast.me* et *ns200.anycast.me*.
+
+Cela signifie que la zone DNS active de votre nom de domaine est bien présente chez OVHcloud.
+
+Dans le cas contraire, contactez votre fournisseur DNS pour créer des sous-domaines avec votre nom de domaine.
+
+#### 2 - Créer les enregistrements DNS pour vos sous-domaines
+
+Pour ajouter vos sous-domaines, à l'aide d'enregistrements DNS, dans la zone DNS active de votre nom de domaine, consultez notre guide « [Editer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit) ».
+
+Par exemple, vous pourrez y ajouter :
+
+- L'adresse IP (enregistrements DNS de type *A* et *AAAA*) de votre hébergement web pour afficher l'un de vos sites web avec un sous-domaine.
+- Les serveurs e-mail (enregistrements DNS de type *MX*) vers lesquels votre sous-domaine doit rediriger les e-mails qu'il reçoit. Cela vous permet de les consulter sur votre (vos) adresse(s) e-mail(s) personnalisée(s) avec votre sous-domaine.
+- Des informations liées à la sécurité / l'authentification de vos services (hébergement web, serveur web, serveur e-mail, etc.) associés à l'un de vos sous-domaines (enregistrements DNS de type *SPF*, *DKIM*, *DMARC*, etc.).
+
+> [!success]
+>
+> La modification d'une zone DNS associés à un nom de domaine entraine un délai de propagation de **4** à **24** heures maximum pour que celle-ci soit effective.
+>
+> De plus et comme pour un nom de domaine en tant que tel, la création seule d'un enregistrement DNS pour un sous-domaine ne suffit généralement pas à le faire fonctionner avec le service *cible* que vous lui avez défini dans l'enregistrement DNS. 
+>
+> Effectivement et pour des raisons de sécurité, vous devrez également autoriser le sous-domaine à pouvoir accéder au service *cible* (hébergement web, serveur e-mail, etc.).
+>
+
+Dans la partie qui suit, nous allons vous orienter sur la façon d'autoriser un sous-domaine à pouvoir accéder sur différents services de l'univers Web (hébergement web, serveur Exchange, etc.) proposés par OVHcloud.
+
+> [!primary]
+>
+> Si vous souhaitez configurer un sous-domaine pour un service hébergé ailleurs que chez OVHcloud, nous ne serons pas en mesure de vous apporter une assistance sur le sujet. Nous vous invitons à contacter le fournisseur de votre service externe pour poursuivre votre configuration.
+>
+
+### Associer, autoriser et configurer votre sous-domaine avec un service OVHcloud
+
+
+
 ## Aller plus loin <a name="go-further"></a>
 
 [Créer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_create)
