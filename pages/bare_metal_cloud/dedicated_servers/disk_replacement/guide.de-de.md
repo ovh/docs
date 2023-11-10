@@ -1,10 +1,10 @@
 ---
-title: 'Eine defekte Festplatte austauschen'
+title: 'Eine defekte Disk austauschen'
 excerpt: 'In dieser Anleitung erklären wir Ihnen, wie Sie eine defekte Festplatte erkennen und deren Austausch beantragen.'
 updated: 2018-06-21
 ---
 
-## Einleitung
+## Ziel
 
 Wenn Sie feststellen, dass eine Festplatte defekt ist, oder per E-Mail eine Systeminformation über den Ausfall einer Festplatte erhalten haben, sollten Sie schnellstmöglich die notwendigen Maßnahmen ergreifen, um den Austausch der betreffenden Festplatte in die Wege zu leiten.
 
@@ -21,7 +21,7 @@ Wenn Sie feststellen, dass eine Festplatte defekt ist, oder per E-Mail eine Syst
 
 - Sie sind via SSH (*Root*-Zugriff) mit Ihrem [OVHcloud Dedicated Server](https://www.ovh.de/dedicated_server/){.external} verbunden (Linux).
 
-## Beschreibung
+## In der praktischen Anwendung
 
 ### Ihre Daten sichern
 
@@ -111,15 +111,15 @@ smartctl -a /dev/sgY
 
 Dabei ist die RAID-Nummer anzugeben (/dev/sg0 = RAID 1, /dev/sg1 = RAID 2 etc.)
 
-#### Server mit NVMe-Festplatte
+#### Server mit NVMe
 
-Bei einer NVMe-Festplatte muss der Server in den [Rescue-Modus](/pages/bare_metal_cloud/dedicated_servers/rescue_mode){.external} versetzt werden und installieren Sie das Tool `nvme-cli`.
+Bei einer NVMe-Disk muss der Server in erst in den [Rescue-Modus](/pages/bare_metal_cloud/dedicated_servers/rescue_mode){.external} versetzt werden. Installieren Sie dann das Tool `nvme-cli`.
 
 ```sh
 apt install nvme-cli
 ```
 
-Verwenden Sie in diesem Fall den Befehl `nvme list`, um die Seriennummern Ihrer Festplatten in Erfahrung zu bringen:
+Verwenden Sie in den Befehl `nvme list`, um die Seriennummern Ihrer Festplatten in Erfahrung zu bringen:
 
 ```sh
 root@rescue:~# nvme list
