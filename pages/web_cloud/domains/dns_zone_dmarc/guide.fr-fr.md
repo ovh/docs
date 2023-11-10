@@ -10,6 +10,15 @@ L'enregistrement **D**omain-based **M**essage **A**uthentication, **R**eporting,
 
 **Découvrez comment fonctionne DMARC et comment le mettre en place pour votre service e-mail.**
 
+> [!warning]
+>
+> OVHcloud propose des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
+> 
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [« Aller plus loin »](#go-further) de ce tutoriel.
+>
+> De plus, la mise en place d'un enregistrement **DMARC**, quelle que soit l'[offre e-mail OVHcloud](https://www.ovhcloud.com/fr-ca/emails/), est indisponible actuellement. Ce guide concerne **uniquement** les clients qui possèdent une zone DNS active chez OVHcloud pour leur nom de domaine associé à une **solution e-mail externe**.
+>
+
 ## Prérequis
 
 - Disposer d'un accès à la gestion du nom de domaine (attaché à votre solution e-mail) depuis l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
@@ -50,6 +59,8 @@ Il y a deux façons de configurer le DMARC dans votre zone DNS OVHcloud :
 Vous pouvez ajouter l'enregistrement DMARC à votre zone DNS depuis l'espace client OVHcloud. Pour cela, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) puis rendez-vous dans la partie `Web Cloud`{.action}. Dans la colonne de gauche, sélectionnez, dans la section `Noms de domaine`{.action}, le nom de domaine concerné puis cliquez sur l'onglet `Zone DNS`{.action} pour accéder à votre zone DNS.
 
 Une fois votre zone DNS affichée, cliquez sur le bouton `Ajouter une entrée`{.action} puis sur « Champs mails » `DMARC`{.action}.
+
+- **Sous-domaine** : cette entrée doit **obligatoirement débuter par** `_dmarc`. Si vous appliquez votre DMARC à l'ensemble du domaine vous n'inscrivez rien d'autre que `_dmarc` dans cette case. Si vous définissez votre DMARC à un sous-domaine de votre domaine principal, il faudra ajouter votre sous-domaine après `_dmarc`. Par exemple, si vous devez appliquer le DMARC à votre sous-domaine *subdomain.mydomain.ovh*, il faudra saisir `_dmarc.subdomain` dans la case sous-domaine pour le nom de domaine *mydomain.ovh*.
 
 Vous trouverez ci-dessous le descriptif exhaustif des balises utilisées pour **l'enregistrement DMARC** OVHcloud :
 
@@ -92,7 +103,9 @@ Vous pouvez ajouter l'enregistrement TXT à votre zone DNS depuis l'[espace clie
 
 Une fois votre zone DNS affichée, cliquez sur le bouton `Ajouter une entrée`{.action} puis sur « Champs étendus » `TXT`{.action}.
 
-Vous trouverez ci-dessous la liste des balises utilisées pour créer un **enregistrement TXT** avec les paramètres DMARC. Cette liste est complémentaire des balises mentionnées dans la section précédente « [Enregistrement DMARC](#dmarc-record) ».
+- **Sous-domaine** : cette entrée doit **obligatoirement débuter par** `_dmarc`. Si vous appliquez votre DMARC à l'ensemble du domaine vous n'inscrivez rien d'autre que `_dmarc` dans cette case. Si vous définissez votre DMARC à un sous-domaine de votre domaine principal, il faudra ajouter votre sous-domaine après `_dmarc`. Par exemple, si vous devez appliquer le DMARC à votre sous-domaine *subdomain.mydomain.ovh*, il faudra saisir `_dmarc.subdomain` dans la case sous-domaine pour le nom de domaine *mydomain.ovh*.
+
+Vous trouverez ci-dessous la liste des balises utilisées pour créer un **enregistrement TXT** avec les paramètres DMARC. Cette liste est complémentaire avec les balises mentionnées dans la section précédente « [Enregistrement DMARC](#dmarc-record) ».
 
 - **adkim** (la valeur par défaut est `r`) : indique le mode d'alignement DKIM. Les valeurs sont les suivantes :
     - `r`(relaxed) pour le mode souple : les e-mails échouant à l'authentification DKIM sont marqués comme « indésirables » par le serveur destinataire.
