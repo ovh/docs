@@ -76,7 +76,7 @@ Si, par exemple, vous disposez du nom de domaine *domain.tld*, vous pouvez crée
 
 ### Créer un sous-domaine
 
-Les [noms de domaine](https://www.ovhcloud.com/fr/domains/) ont tous besoin d'une **zone DNS**. La zone DNS se compose d’informations techniques, appelées *enregistrements DNS*. Elle est, en quelque sorte, comme un centre d'aiguillage.
+Les [noms de domaine](https://www.ovhcloud.com/fr/domains/) ont tous besoin d'une **zone DNS** pour fonctionner. La zone DNS se compose d’informations techniques, appelées *enregistrements DNS*. Elle est, en quelque sorte, comme un centre d'aiguillage.
 
 Pour plus de détails sur les zones DNS, consultez notre guide « [Créer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_create) ».
 
@@ -91,11 +91,11 @@ Deux cas de figure sont possibles :
 
 > [!warning]
 >
-> La zone DNS active de votre nom de domaine n'est pas obligatoirement gérée du même fournisseur que votre nom de domaine. 
+> La zone DNS active de votre nom de domaine n'est pas obligatoirement gérée auprès du même fournisseur que votre nom de domaine. 
 >
 > 1 : Pour identifier l'endroit où se trouve la zone DNS active d'un nom de domaine enregistré chez OVHcloud, vous pouvez vous aider de notre guide « [Modifier les serveurs DNS d'un nom de domaine OVHcloud](/pages/web_cloud/domains/dns_server_general_information) ».
 >
-> 2 : Si votre nom de domaine n'a pas été enregistré chez OVHcloud, rapprochez-vous du *bureau d'enregistrement* actuel de votre nom de domaine afin de connaître l'endroit où est hébergée sa zone DNS active.
+> 2 : Si votre nom de domaine n'est pas enregistré chez OVHcloud, rapprochez-vous du *bureau d'enregistrement* actuel de votre nom de domaine afin de connaître l'endroit où est hébergée sa zone DNS active.
 > 
 
 Si les serveurs DNS déclarés pour votre nom de domaine ont l'une des deux formes suivantes :
@@ -119,23 +119,25 @@ Par exemple, vous pourrez y ajouter :
 
 > [!success]
 >
-> La modification d'une zone DNS associés à un nom de domaine entraine un délai de propagation de **4** à **24** heures maximum pour que celle-ci soit effective.
+> La modification d'une zone DNS associée à un nom de domaine entraine un délai de propagation de **4** à **24** heures maximum pour que celle-ci soit effective.
 >
 > De plus et comme pour un nom de domaine en tant que tel, la création seule d'un enregistrement DNS pour un sous-domaine ne suffit généralement pas à le faire fonctionner avec le service *cible* que vous lui avez défini dans l'enregistrement DNS. 
 >
-> Effectivement et pour des raisons de sécurité, vous devrez également autoriser le sous-domaine à pouvoir accéder au service *cible* (hébergement web, serveur e-mail, etc.).
+> Effectivement, pour des raisons de sécurité, vous devrez également autoriser le sous-domaine à pouvoir accéder au service *cible* (hébergement web, serveur e-mail, etc.).
 >
 
-Dans la partie qui suit, nous allons vous indiquer quelques exemples sur la façon d'autoriser un sous-domaine à pouvoir accéder sur différents services de l'univers Web (hébergement web, serveur Exchange, etc.) proposés par OVHcloud.
+Dans la partie qui suit, nous allons vous indiquer quelques exemples sur la façon d'autoriser un sous-domaine à pouvoir accéder sur différents services de l'univers « Web cloud » (hébergement web, serveur Exchange, etc.) proposés par OVHcloud.
 
 > [!primary]
 >
-> Si vous souhaitez configurer un sous-domaine pour un service hébergé ailleurs que chez OVHcloud, nous ne serons pas en mesure de vous apporter une assistance sur le sujet. Nous vous invitons à contacter le fournisseur de votre service externe pour poursuivre votre configuration.
+> Si vous souhaitez configurer un sous-domaine pour un service hébergé ailleurs que chez OVHcloud, nous ne serons pas en mesure de vous apporter une assistance sur le sujet. Nous vous invitons à contacter le fournisseur de votre service externe pour poursuivre votre configuration. 
 >
 
 ### Associer, autoriser et configurer votre sous-domaine avec un service OVHcloud
 
-Plusieurs services de l'univers Web cloud peuvent être utilisées avec un sous-domaine. Les procédures d'association sont similaires à celles que vous devriez exécuter s'il s'agissait d'un nom de domaine. Nous allons ci-après vous exposer uniquement les cas les plus courants.
+Plusieurs services de l'univers « Web cloud » peuvent être utilisées avec un sous-domaine. Les procédures d'association sont similaires à celles que vous devriez exécuter avec un nom de domaine. Nous allons ci-après vous exposer uniquement les cas les plus courants. 
+
+Pour les autres services qui ne seraient pas mentionnés ci-après, consultez la documentation relative au service concerné. Ceci afin de savoir si ce dernier peut êre utilisé avec un sous-domaine.
 
 #### Cas 1 : Afficher un site web présent sur mon hébergement web OVHcloud avec un sous-domaine
 
@@ -152,7 +154,7 @@ Pour plus de détails sur la configuration d'un domaine ou d'un sous-domaine sur
 
 #### Cas 2 - Créer des adresses e-mail Exchange avec un sous-domaine
 
-Tout comme pour un nom de domaine et pour débloquer la création d'adresses e-mail Exchange personnalisées avec un sous-domaine, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} et sélectionnez `Web Cloud`{.action}. Cliquez sur `Microsoft`{.action} dans la colonne de gauche, puis sur `Exchange`{.action}. Sélectionnez ensuite la plateforme Exchange que vous souhaitez utiliser avec votre sous-domaine. Su la page qui s'affiche, rendez-vous dans l'onglet `Domaine associés`{.action} puis cliquez sur le bouton `Ajouter un domaine`{.action} à droite.
+Tout comme pour un nom de domaine et pour débloquer la création d'adresses e-mail Exchange personnalisées avec un sous-domaine, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} et sélectionnez `Web Cloud`{.action}. Cliquez sur `Microsoft`{.action} dans la colonne de gauche, puis sur `Exchange`{.action}. Sélectionnez ensuite la plateforme Exchange que vous souhaitez utiliser avec votre sous-domaine. Sur la page qui s'affiche, rendez-vous dans l'onglet `Domaine associés`{.action} puis cliquez sur le bouton `Ajouter un domaine`{.action} à droite.
 
 Vous pourrez ainsi déclarer votre sous-domaine sur votre plateforme Exchange.
 
@@ -164,7 +166,7 @@ Pour plus de détails sur la configuration d'une plateforme Exchange, consultez 
 
 #### Cas 3 - Créer des adresses E-mail Pro avec un sous-domaine
 
-Tout comme pour un nom de domaine et pour débloquer la création d'adresses e-mail Exchange personnalisées avec un sous-domaine, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} et sélectionnez `Web Cloud`{.action}. Cliquez sur `E-mails Pro`{.action}, puis sélectionnez ensuite la plateforme E-mail Pro que vous souhaitez utiliser avec votre sous-domaine. Su la page qui s'affiche, rendez-vous dans l'onglet `Domaine associés`{.action} puis cliquez sur le bouton `Ajouter un domaine`{.action} à droite.
+Tout comme pour un nom de domaine et pour débloquer la création d'adresses E-mail Pro personnalisées avec un sous-domaine, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} et sélectionnez `Web Cloud`{.action}. Cliquez sur `E-mails Pro`{.action}, puis sélectionnez ensuite la plateforme E-mail Pro que vous souhaitez utiliser avec votre sous-domaine. Su la page qui s'affiche, rendez-vous dans l'onglet `Domaine associés`{.action} puis cliquez sur le bouton `Ajouter un domaine`{.action} à droite.
 
 Vous pourrez ainsi déclarer votre sous-domaine sur votre plateforme E-mail Pro.
 
@@ -183,6 +185,14 @@ Pour plus de détails sur la configuration d'une plateforme E-mail Pro, consulte
 [Modifier les serveurs DNS d'un nom de domaine OVHcloud](/pages/web_cloud/domains/dns_server_general_information)
 
 [Partager son hébergement entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite)
+
+[Premiers pas avec le service Hosted Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_starting_hosted)
+
+[Premiers pas avec la solution E-mail Pro](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config)
+
+[Ajouter un nom de domaine sur une plateforme e-mail](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain)
+
+[Ajouter un enregistrement CNAME pour valider votre domaine sur votre offre e-mail](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_dns_cname)
  
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
  
