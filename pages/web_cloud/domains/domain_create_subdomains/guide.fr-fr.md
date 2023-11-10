@@ -6,9 +6,9 @@ updated: 2023-11-09
 
 ## Objectif <a name="goal"></a>
 
-Internet est composé de *serveurs* et d'*appareils* mis en réseau pour interagir entre eux. Ses *serveurs* et ses *appareils* disposent respectivement d'une *adresse IP publique* (équivalent à une adresse postale) unique sur le réseau. Cette *adresse IP* permet, par exemple, à un utilisateur de consulter un site web spécifique grâce à un navigateur Internet installé sur son ordinateur.
+Internet est composé de *serveurs* et d'*appareils* qui interagissent entre eux via un réseau global. Lorsque ces *serveurs* et ses *appareils* sont connectés au réseau Internet, une *adresse IP publique* (équivalent à une adresse postale) leur est attribuée. Cette *adresse IP* permet de joindre à distance un serveur ou un appareil, ainsi, un utilisateur est en mesure de consulter un site web en saisissant cette *adresse IP* grâce à son navigateur Internet installé sur son ordinateur.
 
-Les **noms de domaine** ont été mis en place afin de faciliter l'accès à un site web pour les utilisateurs du réseau Internet. En effet, il est plus facile de retenir le nom d'un site web (sous la forme d'une chaîne de caractères) plutôt que l'*adresse IP* qui lui est associée.
+Les **noms de domaine** ont été instaurés pour faciliter l'accès à un site web pour les utilisateurs du réseau Internet. En effet, il est plus simple de retenir un nom composé d'une chaîne de caractères choisis (exemple: ovhcloud.com), plutôt qu'une suite de chiffres que compose une *adresse IP* (exemple: 54.39.46.56).
 
 Un **nom de domaine** est composé de niveaux. Ces niveaux sont eux-mêmes généralement séparés par un `.` (à l'exception de certaines **extensions** du *premier niveau* comme le *.co.uk*, *.gouv.fr* ou encore *.notaires.fr*):
 
@@ -24,7 +24,7 @@ Un **nom de domaine** est composé de niveaux. Ces niveaux sont eux-mêmes gén�
 
 - Third Level Domain (**subdomain**) : c'est à partir de ce troisième niveau que l'on parle de *sous-domaine*. Nous allons détailler dans le présent guide sa définition et vous expliquer comment les mettre en place avec vos différents services.
   
-**Découvrez la définition d'un sous-domaine et comment en créer chez OVHcloud**
+**Découvrez les sous-domaines et comment en créer chez OVHcloud**
   
 ## Prérequis
 
@@ -37,17 +37,17 @@ Un **nom de domaine** est composé de niveaux. Ces niveaux sont eux-mêmes gén�
 
 ### Définition d'un sous-domaine
 
-Un [nom de domaine](https://www.ovhcloud.com/fr/domains/) peut être associé à plusieurs types de services (serveur e-mail, site web, etc.).
+Un [nom de domaine](https://www.ovhcloud.com/fr/domains/) peut être associé à plusieurs types de services (e-mail, site web, etc.).
 
-L'inconvénient principal d'un nom de domaine est qu'il ne peut être associé qu'à un seul site web à la fois.
+Néanmoins, un nom de domaine ne peut être associé qu'à un seul site web à la fois.
 
 Cependant, certains utilisateurs ou organisations ont besoin de segmenter leurs sites web ou leurs services e-mail tout en gardant le même nom de domaine.
 
-Les sous-domaines (parfois appelés **préfixes**) pallient à cet inconvénient. Ils offrent la possibilité au propriétaire d'un nom de domaine de décliner en plusieurs sous-groupes ou sous-catégories les services web associés à son nom de domaine. Ceci sans pour autant souscrire à un nouveau nom de domaine ou à un nom de domaine différent.
+Les sous-domaines (parfois appelés **préfixes**) répondent au besoin de segmenter un nom de domaine. Ils offrent la possibilité au propriétaire de décliner en plusieurs sous-catégories les services web associés à son nom de domaine, sans devoir souscrire à un nouveau nom de domaine.
 
-En d'autres termes, les sous-domaines permettent de structurer facilement l'ensemble des services web (serveurs DNS, site web, intranet, serveur e-mail, etc.) associés à un même nom de domaine.
+En d'autres termes, les sous-domaines permettent de structurer facilement l'ensemble des services web (serveurs DNS, site web, intranet, e-mail, etc.) associés à un même nom de domaine.
 
-Comme précisé plus haut dans la partie « [objectif](#goal) », les sous-domaines correspondent au *Third Level Domain* (troisième niveau) d'un nom de domaine. Le sous-domaine le plus connu des internautes est, à ce jour, le sous-domaine **W**orld **W**ide **W**eb (**www**).
+Comme précisé plus haut dans la partie « [objectif](#goal) », les sous-domaines correspondent au troisième niveau (*Third Level Domain*) d'un nom de domaine. Le sous-domaine le plus connu des internautes est, à ce jour, le sous-domaine **W**orld **W**ide **W**eb (**www**).
 
 En effet, beaucoup de sites web utilisent encore ce sous-domaine pour être consulté sur Internet.
 
@@ -91,12 +91,12 @@ Deux cas de figure sont possibles :
 
 > [!warning]
 >
-> La zone DNS active de votre nom de domaine n'est pas obligatoirement gérée auprès du même fournisseur que votre nom de domaine. 
+> La zone DNS active de votre nom de domaine n'est pas obligatoirement gérée auprès du même fournisseur que votre nom de domaine.
 >
 > 1 : Pour identifier l'endroit où se trouve la zone DNS active d'un nom de domaine enregistré chez OVHcloud, vous pouvez vous aider de notre guide « [Modifier les serveurs DNS d'un nom de domaine OVHcloud](/pages/web_cloud/domains/dns_server_general_information) ».
 >
 > 2 : Si votre nom de domaine n'est pas enregistré chez OVHcloud, rapprochez-vous du *bureau d'enregistrement* actuel de votre nom de domaine afin de connaître l'endroit où est hébergée sa zone DNS active.
-> 
+>
 
 Si les serveurs DNS déclarés pour votre nom de domaine ont l'une des deux formes suivantes :
 
@@ -115,7 +115,7 @@ Par exemple, vous pourrez y ajouter :
 
 - L'adresse IP (enregistrements DNS de type *A* et *AAAA*) de votre hébergement web pour afficher l'un de vos sites web avec un sous-domaine.
 - Les serveurs e-mail (enregistrements DNS de type *MX*) vers lesquels votre sous-domaine doit rediriger les e-mails qu'il reçoit. Cela vous permet de les consulter sur votre (vos) adresse(s) e-mail(s) personnalisée(s) avec votre sous-domaine.
-- Des informations liées à la sécurité / l'authentification de vos services (hébergement web, serveur web, serveur e-mail, etc.) associés à l'un de vos sous-domaines (enregistrements DNS de type *SPF*, *DKIM*, *DMARC*, etc.).
+- Des informations liées à la sécurité / l'authentification de vos services (hébergement web, serveur web, e-mail, etc.) associés à l'un de vos sous-domaines (enregistrements DNS de type *SPF*, *DKIM*, *DMARC*, etc.).
 
 > [!success]
 >
@@ -123,7 +123,7 @@ Par exemple, vous pourrez y ajouter :
 >
 > De plus et comme pour un nom de domaine en tant que tel, la création seule d'un enregistrement DNS pour un sous-domaine ne suffit généralement pas à le faire fonctionner avec le service *cible* que vous lui avez défini dans l'enregistrement DNS. 
 >
-> Effectivement, pour des raisons de sécurité, vous devrez également autoriser le sous-domaine à pouvoir accéder au service *cible* (hébergement web, serveur e-mail, etc.).
+> Effectivement, pour des raisons de sécurité, vous devrez également autoriser le sous-domaine à pouvoir accéder au service *cible* (hébergement web, e-mail, etc.).
 >
 
 Dans la partie qui suit, nous allons vous indiquer quelques exemples sur la façon d'autoriser un sous-domaine à pouvoir accéder sur différents services de l'univers « Web cloud » (hébergement web, serveur Exchange, etc.) proposés par OVHcloud.
@@ -135,7 +135,7 @@ Dans la partie qui suit, nous allons vous indiquer quelques exemples sur la faç
 
 ### Associer, autoriser et configurer votre sous-domaine avec un service OVHcloud
 
-Plusieurs services de l'univers « Web cloud » peuvent être utilisées avec un sous-domaine. Les procédures d'association sont similaires à celles que vous devriez exécuter avec un nom de domaine. Nous allons ci-après vous exposer uniquement les cas les plus courants. 
+Plusieurs services de l'univers « Web cloud » peuvent être utilisées avec un sous-domaine. Les procédures d'association sont similaires à celles que vous devriez exécuter avec un nom de domaine. Nous allons ci-après vous exposer uniquement les cas les plus courants.
 
 Pour les autres services qui ne seraient pas mentionnés ci-après, consultez la documentation relative au service concerné. Ceci afin de savoir si ce dernier peut êre utilisé avec un sous-domaine.
 
