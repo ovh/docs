@@ -55,7 +55,7 @@ Bitte beachten Sie, dass sich bei unterschiedlichen Distributionen die korrekte 
 
 > [!PRIMARY]
 >
-> Für die Konfiguration einer Additional IP auf einer Public Cloud Instanz ist kein Gateway oder keine Subnetzmaske erforderlich.
+> Für die Konfiguration einer Additional IP auf einer Public Cloud Instanz ist kein Gateway oder Subnetzmaske erforderlich.
 >
 
 ### Debian 11
