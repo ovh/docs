@@ -156,9 +156,21 @@ Tout comme pour un nom de domaine et pour débloquer la création d'adresses e-m
 
 Vous pourrez ainsi déclarer votre sous-domaine sur votre plateforme Exchange.
 
-Pour plus de détails sur la configuration d'une plateforme Exchange, n'hésitez pas à consulter les guides suivants :
+Pour plus de détails sur la configuration d'une plateforme Exchange, consultez les guides suivants :
 
 - [Premiers pas avec le service Hosted Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_starting_hosted)
+- [Ajouter un nom de domaine sur une plateforme e-mail](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain)
+- [Ajouter un enregistrement CNAME pour valider votre domaine sur votre offre e-mail](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_dns_cname)
+
+#### Cas 3 - Créer des adresses E-mail Pro avec un sous-domaine
+
+Tout comme pour un nom de domaine et pour débloquer la création d'adresses e-mail Exchange personnalisées avec un sous-domaine, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} et sélectionnez `Web Cloud`{.action}. Cliquez sur `E-mails Pro`{.action}, puis sélectionnez ensuite la plateforme E-mail Pro que vous souhaitez utiliser avec votre sous-domaine. Su la page qui s'affiche, rendez-vous dans l'onglet `Domaine associés`{.action} puis cliquez sur le bouton `Ajouter un domaine`{.action} à droite.
+
+Vous pourrez ainsi déclarer votre sous-domaine sur votre plateforme E-mail Pro.
+
+Pour plus de détails sur la configuration d'une plateforme E-mail Pro, consultez les guides suivants :
+
+- [Premiers pas avec la solution E-mail Pro](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config)
 - [Ajouter un nom de domaine sur une plateforme e-mail](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain)
 - [Ajouter un enregistrement CNAME pour valider votre domaine sur votre offre e-mail](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_dns_cname)
 
