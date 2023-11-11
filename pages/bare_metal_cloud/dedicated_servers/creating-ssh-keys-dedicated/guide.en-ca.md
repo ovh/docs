@@ -195,6 +195,42 @@ You can learn more about SSH connections in the ["Getting started" guides](#gets
 
 ### Adding SSH keys to your server <a name="addserverkey"></a>
 
+**Public keys created on GNU/Linux, MacOS or BSD based systems**
+
+If you have created your SSH keys on a GNU/Linux, MacOS or BSD based system, you can simply use `ssh-copy-id` to add public key(s) to your server.
+
+The `ssh-copy-id` utility copies public keys to a remote server's `~/.ssh/authorized_keys` file and creates the same directory and file if they are non-existent.
+
+By default, `ssh-copy-id` will try to add all public keys available in your user's `~/.ssh` directory, however, if you wish to add only one public key, you can specify the key by its absolute path preceded by the `-i` switch.
+
+Additionally, you can specify to which user, on the target server, you want to add the public key to. Note that each user on GNU/Linux systems has their own `~/.ssh/authorized_keys` file.
+
+This adds flexibility and another layer of security because different public keys can be used for different users on the server.
+
+Here is how a command could look like:
+
+```bash
+ssh-copy-id -i ~/.ssh/id_rsa.pub username@server-ip
+```
+
+Just like in a normal SSH connection, you will be prompted to enter the user's password. 
+
+Follow the instructions to securely connect to your server and let the `ssh-copy-id` utility copy the public key(s) from your local machine to the server.
+
+If the process was successful, you should see a message similar to the one below.
+
+```bash
+Number of key(s) added: 1
+
+Now try logging into the machine, with:   "ssh 'user@server-ip'"
+and check to make sure that only the key(s) you wanted were added.
+```
+
+Should you not see anything alike and receive an error message, simply add the public keys manually by following the steps below.
+
+
+**Manually adding public keys to a server**
+
 [Connect](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction) to your server and make sure you are in your user's `$HOME` directory. Create the folder `.ssh` (if it does not exist):
 
 ```bash
