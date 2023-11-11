@@ -203,19 +203,18 @@ The `ssh-copy-id` utility copies public keys to a remote server's `~/.ssh/author
 
 By default, `ssh-copy-id` will try to add all public keys available in your user's `~/.ssh` directory, however, if you wish to add only one public key, you can specify the key by its absolute path preceded by the `-i` switch.
 
-Additionally, you can specify to which user, on the target server, you want to add the public key to. Note that each user on GNU/Linux systems has their own `~/.ssh/authorized_keys` file.
+Additionally, you can specify to which user, on the target server, you want to add the public key to. This can be achieved by defining the user in the `user@server-ip` portion. 
+Note that each user on GNU/Linux systems has their own `~/.ssh/authorized_keys` file.
 
-This adds flexibility and another layer of security because different public keys can be used for different users on the server.
+This adds flexibility and another layer of security because different SSH keypairs can be used for different users on the server.
 
-Here is how a command could look like:
+Here is what the command could look like:
 
 ```bash
 ssh-copy-id -i ~/.ssh/id_rsa.pub username@server-ip
 ```
 
-Just like in a normal SSH connection, you will be prompted to enter the user's password. 
-
-Follow the instructions to securely connect to your server and let the `ssh-copy-id` utility copy the public key(s) from your local machine to the server.
+Run the command in a terminal, authenticate with the user's password and let the `ssh-copy-id` utility copy the public key(s) from your local machine to the server.
 
 If the process was successful, you should see a message similar to the one below.
 
