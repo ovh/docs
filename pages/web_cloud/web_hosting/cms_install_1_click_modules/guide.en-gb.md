@@ -59,11 +59,11 @@ If your domain is not in the list, go to the `Multisite`{.action} tab to add it.
 
 > [!primary]
 >
-> Verify, just below the form for selecting a domain name (or subdomain), that `The default installation directory` is the one in which you want to install your 1-click module.
+> Below the form for selecting a domain name (or subdomain), verify that the default `Installation path` is the one in which you want to install your 1-click module.
 >
 > As a reminder, this directory must be completely empty.
 >
-> If you need assistance, please refer to our guide on [Sharing your web hosting plan across several websites](/pages/web_cloud/web_hosting/multisites_configure_multisite) to modify your domain name’s target directory.
+> If you need assistance, please refer to our guide on [Hosting multiple websites on your web hosting plan](/pages/web_cloud/web_hosting/multisites_configure_multisite) to modify your domain name’s target directory.
 >
 
 Once your domain has been correctly added, try adding a 1-click module again.
@@ -158,14 +158,14 @@ Enter the following information for the module configuration:
 
 > [!primary]
 >
-> Check that the `installation path` form is filled in with the directory where you want to install your 1-click module with your domain name.
+> Check that the `Installation path` contains the directory where you want to install your 1-click module with your domain name.
 >
 > As a reminder, this directory must be completely empty.
 >
-> In addition, if you enter a subdirectory in the `installation path`, it will appear in the URL to access your "1-click module".
-> For example, if I enter a *test* subdirectory in the form, the URL to access my 1-click module will look like this: **http://domain.tld/test/**.
+> In addition, if you enter a subdirectory in the `Installation path` field, it will appear in the URL used to access your 1-click module.
+> For example, if you enter the subdirectory *test*, the URL to access the 1-click module will look like this: **http://domain.tld/test/**.
 >
-> If you need assistance, please refer to our guide on [Sharing your web hosting plan across several websites](/pages/web_cloud/web_hosting/multisites_configure_multisite) to modify your domain name’s target directory.
+> If you need assistance, please refer to our guide on [Hosting multiple websites on your web hosting plan](/pages/web_cloud/web_hosting/multisites_configure_multisite) to modify your domain name’s target directory.
 >
 
 Once you have entered this information, click `Next`{.action}:
