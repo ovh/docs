@@ -8,7 +8,7 @@ updated: 2023-11-13
 
 Votre base de données correspond au coeur de votre site web. Pour des raisons de sécurité, ou si vous changez d’offre de stockage, il est essentiel de pouvoir copier le contenu de votre base de données vers une autre base de données.
 
-**Découvrez comment copier le contenu d'une base de données OVHcloud vers une autre.**
+**Découvrez comment copier le contenu d'une base de données OVHcloud dans une autre base de données OVHcloud.**
 
 > [!primary]
 >
