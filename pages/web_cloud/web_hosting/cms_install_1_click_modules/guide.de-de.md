@@ -61,13 +61,13 @@ Wählen Sie im neu angezeigten Fenster das gewünschte CMS aus und dann den Doma
 
 Wenn der Domainname nicht in der Liste steht, gehen Sie in zum Tab `Multisite`{.action}, um ihn hinzuzufügen. Wenn nötig lesen Sie unsere Anleitung "[Mehrere Websites auf einem Webhosting einrichten](/pages/web_cloud/web_hosting/multisites_configure_multisite)".
 
- [!primary]
+[!primary]
 >
-> Überprüfen Sie direkt unterhalb des Formulars zur Auswahl einer Domain (oder Subdomain), dass `Das Standard-Installationsverzeichnis ist` das Verzeichnis ist, in dem Sie Ihr „1-Klick-Modul“ installieren möchten.
+> Überprüfen Sie direkt unterhalb des Formulars zur Auswahl einer Domain (oder Subdomain), dass Ihr `Standard-Installationsverzeichnis` tatsächlich dem Verzeichnis entspricht, in dem Sie Ihr 1-Klick-Modul installieren möchten.
 >
 > Zur Erinnerung: Dieses Verzeichnis muss vollständig leer sein.
 >
-> Wenn nötig, lesen Sie unsere Anleitung „[Wie kann ich mein Webhosting für mehrere Websites freigeben](/pages/web_cloud/web_hosting/multisites_configure_multisite)“, um das Zielverzeichnis Ihrer Domain zu ändern.
+> Wenn nötig, lesen Sie unsere Anleitung „[Mehrere Websites auf einem Webhosting einrichten](/pages/web_cloud/web_hosting/multisites_configure_multisite)“, um das Zielverzeichnis des Domainnamnes zu ändern.
 >
 
 Anschließend versuchen Sie erneut, ein Modul zu installieren.
@@ -162,14 +162,14 @@ Geben Sie die folgenden Informationenein, um das Modul zu konfigurieren:
 
 > [!primary]
 >
-> Überprüfen Sie für das Formular `Installationspfad`, dass das Verzeichnis, in dem Sie Ihr „1-Klick-Modul“ mit Ihrer Domain installieren möchten, korrekt ausgefüllt ist.
+> Überprüfen Sie für das Formular `Installationspfad`, dass das Verzeichnis, in dem Sie Ihr 1-Klick-Modul unter Ihrem Domainnamen installieren möchten, korrekt ausgefüllt ist.
 >
 > Zur Erinnerung: Dieses Verzeichnis muss vollständig leer sein.
 >
-> Wenn Sie außerdem ein Unterverzeichnis im `Installationspfad` eingeben, erscheint es in der Zugriffs-URL Ihres „1-Klick-Moduls“.
-> Wenn ich z. B. ein Verzeichnis unter *test* in das Formular eingebe, erhält die URL für mein „1-Klick-Modul“ die Form **http://domain.tld/test/**.
+> Wenn Sie zusätzlich ein Unterverzeichnis im `Installationspfad` eingeben, erscheint es in der URL unter der Ihr 1-Klick-Modul abrufbar sein wird.
+> Wird also beispielsweise ein Verzeichnis namens *test* in das Formular eingetragen, erhält die URL für das 1-Klick-Modul die Form **http://domain.tld/test/**.
 >
-> Wenn nötig, lesen Sie unsere Anleitung „[Wie kann ich mein Webhosting für mehrere Websites freigeben](/pages/web_cloud/web_hosting/multisites_configure_multisite)“, um das Zielverzeichnis Ihrer Domain zu ändern.
+> Wenn nötig, lesen Sie unsere Anleitung „[Mehrere Websites auf einem Webhosting einrichten](/pages/web_cloud/web_hosting/multisites_configure_multisite)“, um das Zielverzeichnis Ihres Domainnamens zu ändern.
 >
 
 Wenn Sie alle Informationen eingegeben haben, klicken Sie auf `Weiter`{.action}.
