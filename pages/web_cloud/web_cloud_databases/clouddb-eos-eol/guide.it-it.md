@@ -1,6 +1,6 @@
 ---
 title: 'Annunci di fine vendita/vita Web Cloud Databases'
-updated: 2023-08-29
+updated: 2023-11-14
 ---
 
 > [!primary]
@@ -22,7 +22,7 @@ Per maggiori informazioni, consulta la [politica di fine vita dei database gesti
 |MySQL 8.0|Da definire|Da definire|Da definire|
 |PostgreSQL 11|2022-03-29|2023-05-10|2023-11-09|
 |PostgreSQL 12|2023-03-08|2024-05-15|2024-11-14|
-|PostgreSQL 13|Da definire|Da definire|Da definire|
+|PostgreSQL 13|2023-11-14|2025-05-14|2025-11-13|
 |PostgreSQL 14|Da definire|Da definire|Da definire|
 |PostgreSQL 15|Da definire|Da definire|Da definire|
 |Redis 6.0|Da definire|Da definire|Da definire|
