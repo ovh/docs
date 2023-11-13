@@ -63,7 +63,7 @@ Wenn der Domainname nicht in der Liste steht, gehen Sie in zum Tab `Multisite`{.
 
  [!primary]
 >
-> Überprüfen Sie direkt unterhalb des Formulars zur Auswahl einer Domain (oder Subdomain), dass `das Standard-Installationsverzeichnis` das Verzeichnis ist, in dem Sie Ihr „1-Klick-Modul“ installieren möchten.
+> Überprüfen Sie direkt unterhalb des Formulars zur Auswahl einer Domain (oder Subdomain), dass `Wählen Sie die Domain aus, auf der das Modul installiert werden soll` das Verzeichnis ist, in dem Sie Ihr „1-Klick-Modul“ installieren möchten.
 >
 > Zur Erinnerung: Dieses Verzeichnis muss vollständig leer sein.
 >
