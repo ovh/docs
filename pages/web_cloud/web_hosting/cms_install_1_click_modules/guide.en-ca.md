@@ -1,7 +1,7 @@
 ---
 title: "Setting up your website with a 1-click module (CMS)"
 excerpt: "Find out how to set up your website using our 1-click modules"
-updated: 2023-10-23
+updated: 2023-11-13
 ---
 
 ## Objective
