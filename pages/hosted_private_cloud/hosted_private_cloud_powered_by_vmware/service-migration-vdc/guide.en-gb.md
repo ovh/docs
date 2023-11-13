@@ -338,8 +338,6 @@ As a first step, please read our documentation on [getting started with NSX](/pa
 <a name="dfw"></a>
 ##### Step 4.8.1 NSX Distributed Firewall
 
-The NSX distributed firewall automatically protects the entire vDC. The Migration Coordinator tool allows you to do this, though a ticket must be created so that a support agent can trigger it. You can also call our [Professional Services](https://www.ovhcloud.com/en-gb/professional-services/) team to trigger the procedure.
-
 However, it is crucial to understand that objects placed in the Distributed Firewall will correspond to the significant object ID locally. For example, if a vRack VLAN port group is used in a rule in the Distributed Firewall, it will reference the port group from the original vDC only, not from a recreated vRack port group in the destination vDC.
 
 It will be necessary to verify if the Distributed Firewall contains significant local objects and modify the Distributed Firewall so that it can also see the objects in the new vDC. For example, a rule that uses a vRack VLAN port group from the original vDC can be modified to use both the original vRack VLAN port group and the new vRack VLAN port group in the destination vDC.
@@ -368,8 +366,6 @@ Generally, depending on the number of edges deployed via NSX-V in the source vDC
 Additionally, if your production requires zero service interruption, solutions can be implemented to avoid these disruptions.
 
 In both cases mentioned above, our [Professional Services](https://www.ovhcloud.com/en-gb/professional-services/) team can assist you in this process.
-
-Professional Services can also use the Migration Coordinator Tool to generate an NSX network blueprint based on your existing NSX-V architecture, in order to expedite or simplify the migration process.
 
 <a name="t1seg"></a>
 ##### Step 4.8.3.1 Create T1 and segments

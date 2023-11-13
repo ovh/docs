@@ -355,8 +355,6 @@ Dans un premier temps, nous vous invitions à consulter notre documentation sur 
 <a name="dfw"></a>
 ##### Etape 4.8.1 NSX Distributed Firewall
 
-Le pare-feu distribué NSX protège automatiquement l'intégralité du vDC. L'outil Migration Coordinator permet de le faire, cependant un ticket doit être créé afin qu'un intervenant puisse le déclencher. Vous pouvez également faire appel à notre équipe [Professional Services](https://www.ovhcloud.com/fr/professional-services/) pour déclencher la procédure.
-
 Il est extrêmement important de comprendre que les objets placés dans le pare-feu distribué correspondront à l'ID d'objet significatif en local. Par exemple, si un groupe de ports VLAN vRack est utilisé dans une règle dans le pare-feu distribué, il référencera le groupe de ports à partir du vDC d'origine uniquement et non à partir d'un groupe de ports vRack recréé dans le vDC de destination.
 
 Il sera nécessaire de vérifier si le pare-feu distribué contient des objets significatifs en local et de modifier le pare-feu distribué afin qu'il puisse également voir les objets dans le nouveau vDC. Par exemple, une règle qui utilise un groupe de ports VLAN vRack à partir du vDC d'origine peut être modifiée pour utiliser à la fois le groupe de ports VLAN vRack d'origine et le nouveau groupe de ports VLAN vRack dans le vDC de destination.
@@ -384,7 +382,7 @@ De manière générale, en fonction du nombre de *Edges* déployées via NSX-V d
 
 De plus, si votre production nécessite de n'avoir aucune interruption de service, des solutions peuvent être mises en place pour éviter ces coupures.
 
-Dans ces deux cas et comme indiqué plus haut, notre équipe [Professional Services](https://www.ovhcloud.com/fr/professional-services/) peut vous accompagner dans cette démarche. Nos experts de cette équipe peuvent aussi utiliser le Migration Coordinator Tool pour générer un squelette réseau NSX basé sur votre ancienne architecture NSX-V afin d'accélérer / simplifier la procédure de migration.
+Dans ces deux cas et comme indiqué plus haut, notre équipe [Professional Services](https://www.ovhcloud.com/fr/professional-services/) peut vous accompagner dans cette démarche. 
 
 <a name="t1seg"></a>
 ##### Etape 4.8.3.1 Créer les T1 et les segments
