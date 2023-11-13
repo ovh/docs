@@ -61,6 +61,15 @@ Se abrirá una ventana en la que deberá seleccionar el CMS correspondiente y el
 
 Si su dominio no está en la lista, acceda a la pestaña `Multisitio`{.action} para añadirlo. Consulte nuestra guía [Cómo compartir un alojamiento web con varios sitios web](/pages/web_cloud/web_hosting/multisites_configure_multisite){.external} si es necesario.
 
+> [!primary]
+>
+> Compruebe, justo debajo del formulario que permite seleccionar un nombre de dominio (o un subdominio), que `El directorio de instalación por defecto` es el en el que desea instalar su «módulo en un clic».
+>
+> Le recordamos que este directorio debe estar completamente vacío.
+>
+> Si lo necesita, consulte nuestra guía "[Cómo compartir un alojamiento web con varios sitios web](/pages/web_cloud/web_hosting/multisites_configure_multisite)" para modificar el directorio de destino de su dominio.
+>
+
 Una vez que haya añadido correctamente el dominio, vuelva a intentar añadir un módulo en 1 clic.
 
 Una vez seleccionado el CMS, elija entre una instalación **rápida** o **avanzada**:
