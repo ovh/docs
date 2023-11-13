@@ -49,7 +49,7 @@ updated: 2023-11-01
 </style>
 
 
-# Build your AI model from scratch on Data Platform
+## Build your AI model from scratch on Data Platform
 
 If you’ve been hearing about how Artificial Intelligence (AI) can help you make better business decisions and want to add more intelligence and machine learning to the data you have on hand, you're in the right place!
 
@@ -61,7 +61,7 @@ In this tutorial, you'll learn the basics about the ForePaas Platform Artificial
 
 If you have never used the ForePaaS Platform before, we suggest you have a look at the first 3 parts of our Getting Started guide to learn how your [Data Catalog](/pages/public_cloud/data_platform/tutorials/tuto_01_build_a_first_app_from_scratch/tuto_01_build_a_first_app_from_scratch_step1), [Lakehouse Manager](/pages/public_cloud/data_platform/tutorials/tuto_01_build_a_first_app_from_scratch/tuto_01_build_a_first_app_from_scratch_step2) and [Data Processing Engine](/pages/public_cloud/data_platform/tutorials/tuto_01_build_a_first_app_from_scratch/tuto_01_build_a_first_app_from_scratch_step3) work.
 
-## AI in production in five easy steps
+### AI in production in five easy steps
 
 <div class="project-step">
    <a class="landing-link" href="/pages/public_cloud/data_platform/tutorials/tuto_02_build_an_ai_model_from_scratch/tuto_02_build_an_ai_model_from_scratch_step1">

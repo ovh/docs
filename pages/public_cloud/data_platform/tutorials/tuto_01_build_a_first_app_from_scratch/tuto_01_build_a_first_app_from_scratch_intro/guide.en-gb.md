@@ -48,7 +48,7 @@ updated: 2023-11-01
 }
 </style>
 
-# Build your analytics app from scratch on Data Platform
+## Build your analytics app from scratch on Data Platform
 
 The goal of this tutorial is to get you familiar with the ForePaaS Platform so that you can start creating your own applications as soon and as quickly as possible.
 
@@ -61,7 +61,7 @@ We'll walk you through the main steps to **build a data visualization app in les
 
 📥 You will use sample datasets, and all the features and pre-written code provided for you by the ForePaaS Platform.
 
-## Six easy steps
+### Six easy steps
 
 <div class="project-step">
    <a class="landing-link" href="/pages/public_cloud/data_platform/tutorials/tuto_01_build_a_first_app_from_scratch/tuto_01_build_a_first_app_from_scratch_step1">
