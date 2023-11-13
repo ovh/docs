@@ -59,6 +59,15 @@ In the window that pops up, choose the CMS you want to use, then select the doma
 
 If your domain is not in the list, go to the `Multisite`{.action} tab to add it. See our guide [Hosting multiple websites on your web hosting plan](/pages/web_cloud/web_hosting/multisites_configure_multisite){.external} if required.
 
+> [!primary]
+>
+> Verify, just below the form for selecting a domain name (or subdomain), that `The default installation directory` is the one in which you want to install your 1-click module.
+>
+> As a reminder, this directory must be completely empty.
+>
+> If you need assistance, please refer to our guide on [Sharing your web hosting plan across several websites](/pages/web_cloud/web_hosting/multisites_configure_multisite) to modify your domain name’s target directory.
+>
+
 Once your domain has been correctly added, try adding a 1-click module again.
 
 Once you have selected a CMS, choose between a **fast** or **advanced** installation:
@@ -148,6 +157,18 @@ Enter the following information for the module configuration:
 - *Domain:* The domain name you would like to install your CMS with. If you need help with this, please refer to our guide on [How to host multiple websites on your web hosting plan](/pages/web_cloud/web_hosting/multisites_configure_multisite).
 - *Language:* The language in which the CMS will be installed.
 - *Installation path:* This is automatically entered when you select your domain name. You can complete it by entering subdirectories (for informed users).
+
+> [!primary]
+>
+> Check that the `installation path` form is filled in with the directory where you want to install your 1-click module with your domain name.
+>
+> As a reminder, this directory must be completely empty.
+>
+> In addition, if you enter a subdirectory in the `installation path`, it will appear in the URL to access your "1-click module".
+> For example, if I enter a *test* subdirectory in the form, the URL to access my 1-click module will look like this: **http://domain.tld/test/**.
+>
+> If you need assistance, please refer to our guide on [Sharing your web hosting plan across several websites](/pages/web_cloud/web_hosting/multisites_configure_multisite) to modify your domain name’s target directory.
+>
 
 Once you have entered this information, click `Next`{.action}:
 
