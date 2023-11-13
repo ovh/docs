@@ -63,7 +63,7 @@ Si su dominio no está en la lista, acceda a la pestaña `Multisitio`{.action} p
 
 > [!primary]
 >
-> Compruebe, justo debajo del formulario que permite seleccionar un nombre de dominio (o un subdominio), que `El directorio de instalación por defecto` es el en el que desea instalar su «módulo en un clic».
+> Compruebe, justo debajo del formulario que permite seleccionar un nombre de dominio (o un subdominio), que `El directorio de instalación por defecto` es el en el que desea instalar su "módulo en un clic".
 >
 > Le recordamos que este directorio debe estar completamente vacío.
 >
@@ -160,6 +160,18 @@ Introduzca la siguiente información para la configuración del módulo:
 - *dominio :* nombre de dominio con el que quiere instalar su CMS. Si lo necesita, consulte nuestra guía [Cómo alojar varios sitios web en un mismo hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite).
 - *idioma :* Idioma en el que se instalará el CMS.
 - *Ruta de instalación :* Este se indica automáticamente al seleccionar el dominio. Puede completarlo introduciendo subdirectorios (para usuarios expertos).
+
+> [!primary]
+>
+> Compruebe, para el formulario `Ruta de instalación`, que el directorio pre-completado es el que desea instalar el módulo en un clic con su nombre de dominio.
+>
+> Le recordamos que este directorio debe estar completamente vacío.
+>
+> Además, si introduce un subdirectorio en la `Ruta de instalación`, aparecerá en la URL de acceso a su módulo en un clic.
+> Por ejemplo, si introduzco un subdirectorio *test* en el formulario, la URL de acceso a mi "módulo en un clic" tendrá el siguiente formato: **http://domain.tld/test/**.
+>
+> Si lo necesita, consulte nuestra guía "[Cómo compartir un alojamiento web con varios sitios web](/pages/web_cloud/web_hosting/multisites_configure_multisite)" para modificar el directorio de destino de su dominio.
+>
 
 Una vez introducidos los datos, haga clic en el botón `Siguiente`{.action} :
 
