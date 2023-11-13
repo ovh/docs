@@ -1,5 +1,5 @@
 ---
-title: "Copier le contenu d'une base de données OVHcloud"
+title: "Dupliquer le contenu d'une base de données dans une autre"
 excerpt: "Découvrez comment copier le contenu d'une base de données OVHcloud vers une autre"
 updated: 2023-11-07
 ---
