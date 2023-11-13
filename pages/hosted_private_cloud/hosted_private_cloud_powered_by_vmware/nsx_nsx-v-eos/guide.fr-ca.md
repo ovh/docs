@@ -70,9 +70,6 @@ Terminez l'opération et reproduisez-la pour chaque portgroup VXLAN utilisé.
 
 Les Machines Virtuelles ne connaîtront qu’une très brève reconnexion. Dans certains cas, il se peut qu'une seule requête ping soit perdue.
 
-Nous désactiverons NSX-V à partir du 1er septembre 2023 si vous n'utilisez aucune fonctionnalité de NSX-V.
-Vous serez averti lorsque le processus de désactivation sera disponible.
-
 #### J'utilise certaines des fonctionnalités de NSX-v
 
 Nous vous recommandons de migrer vers NSX (voir les [détails](#migration) ci-dessous) pour bénéficier de toutes ses fonctionnalités incluses.

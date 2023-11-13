@@ -72,9 +72,6 @@ Complete your operation and reproduce this for each used vxlan portgroup.
 
 VMs will only experience a very brief reconnection. In some cases, this may only be loss of a single ping request.
 
-We will deactivate NSX-V starting 1st September 2023 if you don't use any features of NSX-V.
-You will be notified when the deactivation process is available.
-
 #### I use some of the NSX-V features
 
 We recommend migrating to NSX (see [details](#migration) below) to benefit from all its included features.
