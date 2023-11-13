@@ -59,7 +59,7 @@ In this tutorial, you'll learn the basics about the ForePaas Platform Artificial
 
 📥 No need to bring your own data or model, we provide them throughout the tutorial to accelerate the process.
 
-If you have never used the ForePaaS Platform before, we suggest you have a look at the first 3 parts of our Getting Started guide to learn how your [Data Catalog](/pages/public_cloud/data_platform/tutorials/tuto_01_build_a_first_app_from_scratch_step1), [Lakehouse Manager](/pages/public_cloud/data_platform/tutorials/tuto_01_build_a_first_app_from_scratch_step2) and [Data Processing Engine](/pages/public_cloud/data_platform/tutorials/tuto_01_build_a_first_app_from_scratch_step3) work.
+If you have never used the ForePaaS Platform before, we suggest you have a look at the first 3 parts of our Getting Started guide to learn how your [Data Catalog](/pages/public_cloud/data_platform/tutorials/tuto_01_build_a_first_app_from_scratch/tuto_01_build_a_first_app_from_scratch_step1), [Lakehouse Manager](/pages/public_cloud/data_platform/tutorials/tuto_01_build_a_first_app_from_scratch/tuto_01_build_a_first_app_from_scratch_step2) and [Data Processing Engine](/pages/public_cloud/data_platform/tutorials/tuto_01_build_a_first_app_from_scratch/tuto_01_build_a_first_app_from_scratch_step3) work.
 
 ## AI in production in five easy steps
 
