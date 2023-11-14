@@ -61,11 +61,11 @@ If your domain is not in the list, go to the `Multisite`{.action} tab to add it.
 
 > [!primary]
 >
-> Verify, just below the form for selecting a domain name (or subdomain), that `The default installation directory` is the one in which you want to install your 1-click module.
+> Below the form for selecting a domain name (or subdomain), verify that the default `Installation path` is the one in which you want to install your 1-click module.
 >
 > As a reminder, this directory must be completely empty.
 >
-> If you need assistance, please refer to our guide on [Sharing your web hosting plan across several websites](/pages/web_cloud/web_hosting/multisites_configure_multisite) to modify your domain name’s target directory.
+> If you need assistance, please refer to our guide on [Hosting multiple websites on your web hosting plan](/pages/web_cloud/web_hosting/multisites_configure_multisite) to modify your domain name’s target directory.
 >
 
 Once your domain has been correctly added, try adding a 1-click module again.
