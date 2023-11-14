@@ -8,7 +8,10 @@ updated: 2023-09-05
 
 La fonctionnalité [Bring Your Own IP (BYOIP)](https://www.ovhcloud.com/fr/network/byoip/) vous permet d'utiliser les plages d'adresses IP que vous possédez déjà en tant qu'adresses Additional IP, directement sur le réseau et les produits OVHcloud.
 
-Ces adresses IP seront importées sous la forme d'un bloc d'adresses IP de taille /24 et se comporteront comme une adresse [Additional IP](https://www.ovhcloud.com/fr/bare-metal/ip/) OVHcloud.
+Ces adresses IP seront importées sous la forme d'un bloc d'adresses IP de taille /24 et se comporteront comme une adresse [Additional IP](https://www.ovhcloud.com/fr/bare-metal/ip/) OVHcloud, garantissant ainsi une continuité et une cohérence dans la gestion de votre réseau.
+
+En outre, la fonctionnalité BYOIP d'OVHcloud se distingue par sa capacité à permettre l'importation de sous-plages IP. Cette fonctionnalité étend considérablement la flexibilité dans la gestion de vos adresses IP, en facilitant une allocation et une utilisation plus précises de vos ressources IP. Que vous cherchiez à optimiser votre infrastructure existante ou à étendre vos capacités réseau, BYOIP offre une solution adaptée à vos besoins, vous permettant de gérer vos adresses IP avec une plus grande efficacité et une meilleure personnalisation.
+
 
 ## Prérequis
 
