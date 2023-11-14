@@ -30,29 +30,17 @@ You need to own (see below) a public IPv4 block with one of the following RIRs:
 - [ARIN](https://www.arin.net/)
 - [RIPE](https://www.ripe.net/)
 
-Here in the list of type we support: :
-| ARIN | RIPE |
-| :--- | :--- |
-| &bull; Direct Allocation <br>&bull; Direct Assignment <br>&bull; Reallocated <br>&bull; Reassigned  |  &bull; Allocated PA <br>&bull; Lir-partitioned PA  <br>&bull; Sub-allocated PA  <br>&bull; Assigned PA  <br>&bull; Assigned PI  <br>&bull; Legacy   |
-
 It is now possible to use ARIN or RIPE IP blocks on any OVHcloud campus. This enhanced flexibility enables more efficient management and optimized allocation of IP addresses to meet your company's specific needs.
 
 Unlike the previous policy, where an ARIN block could only be used with OVHcloud services located in Canada or the USA, and a RIPE block could only be used with OVHcloud services located in Europe, this restriction has been lifted.
 
 To be considered as a valid owned block, imported blocks must be one of the following types :
 
-- ARIN (object «Network type »)
-    - Direct Allocation
-    - Direct Assignment
+| ARIN (object «Network type ») | RIPE (object « status ») |
+| :--- | :--- |
+| &bull; Direct Allocation <br>&bull; Direct Assignment <br>&bull; Reallocated <br>&bull; Reassigned  |  &bull; Allocated PA <br>&bull; Lir-partitioned PA  <br>&bull; Sub-allocated PA  <br>&bull; Assigned PA  <br>&bull; Assigned PI  <br>&bull; Legacy   |
+| **For more information :** <br>&bull; [« Using WhoIs - Network »](https://www.arin.net/resources/registry/whois/#network) <br>&bull; [« Reporting Reassignments »](https://www.arin.net/resources/registry/reassignments/) | **For more information :** <br>[« Description of the INETNUM Object »](https://apps.db.ripe.net/docs/04.RPSL-Object-Types/02-Descriptions-of-Primary-Objects.html#description-of-the-inetnum-object) |
 
-See <https://www.arin.net/resources/registry/whois/#network> and <https://www.arin.net/resources/registry/reassignments/> for more information on Net Types objects.
-
-- RIPE (object « status »)
-    - ASSIGNED PI
-    - LEGACY
-    - ALLOCATED PA
-
-See [« Description of the INETNUM Object »](https://apps.db.ripe.net/docs/04.RPSL-Object-Types/02-Descriptions-of-Primary-Objects.html#description-of-the-inetnum-object) for more information on status objects.
 
 ### Your IP range must have a supported size <a name="supportedsize"></a>
 
