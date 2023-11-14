@@ -6,7 +6,7 @@ updated: 2023-11-13
 
 ## Objectif
 
-Votre base de données correspond au coeur de votre site web. Pour des raisons de sécurité, ou si vous changez d’offre de stockage, il est essentiel de pouvoir copier le contenu de votre base de données vers une autre base de données.
+Votre base de données correspond au coeur de votre site web. Au cours du cycle de vie de votre marque, pour des raisons pratiques ou techniques, il est essentiel de pouvoir copier le contenu de votre base de données vers une autre base de données Start SQL ou Web Cloud Databases.
 
 **Découvrez comment copier le contenu d'une base de données OVHcloud dans une autre base de données OVHcloud.**
 
@@ -37,42 +37,42 @@ Vous pouvez copier le contenu d'une base de données [Start SQL](https://www.ovh
 
 Dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), sélectionnez `Web Cloud`{.action} dans le menu en haut de l'interface. Dans la colonne de gauche, dirigez-vous dans l’onglet `Hébergements`{.action}, puis cliquez sur l’hébergement web où se trouve la base de donnée source à copier.
 
-Image
+![Liste des hébergements](images/list_web_hosting.png){.thumbnail}
 
 En cliquant sur l’onglet `Bases de données`{.action}, la liste de vos bases de données Start SQL s’affiche.
 
-Image
+![Liste des BDD Start SQL](images/list_bdd_startSQL.png){.thumbnail}
 
 #### Web Cloud Databases
 
 Dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), sélectionnez `Web Cloud`{.action} dans le menu en haut de l'interface. Dans la colonne de gauche, dirigez-vous dans l’onglet `Web Cloud Databases`{.action}, puis sélectionnez le serveur Web Cloud Database où se trouve votre base de données source à copier.
 
-Image
+![Liste des serveurs WCD](images/list_WCD_server.png){.thumbnail}
 
 En cliquant sur l’onglet `Bases de données`{.action}, la liste de vos Web Cloud Database s’affiche.
 
-Image
+![Liste des BDD WCD](images/list_BDD_WCD.png){.thumbnail}
 
 ### Copier le contenu d'une base de données
 
 Cliquez sur le bouton `...`{.action} à droite de la ligne correspondant à la base de données que vous souhaitez copier, puis sélectionnez `Copier la base de données`{.action}.
 
-Image
+![CTA_copier_BDD](images/CTA_copyDB.png){.thumbnail}
 
 Une fenêtre s’affiche afin d’identifier votre base de données de destination.
 
-Image
+![Interface copier BDD](images/interface_copy_DB.png){.thumbnail}
 
 Si vous ne possédez pas de base de données de destination, cliquez sur le lien suivant pour acheter une nouvelle base de données :
 
-Image
+![Liste des BDD WCD](images/link_buy_DB.png){.thumbnail}
 
 > [!primary]
 >
 > Lorsque vous achetez votre nouvelle base de données, celle-ci n’est pas activée par défaut. N'oubliez pas de l'activer. Pour cela, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), puis rendez-vous dans la partie `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} dans la colonne de gauche, puis sélectionnez l'hébergement web concerné par l'ajout d'une base de données supplémentaire. Sur la page qui s'affiche, cliquez sur l'onglet `Bases de données`{.action}. Appuyez sur le bouton `Actions`{.action} pour commander une base de données supplémentaire, puis sur `Créer une base de données`{.action}. Suivez les étapes jusqu'à la finalisation de la commande de la base de données. Pour plus de détails, suivez notre guide [Créer une base de données sur son hébergement web](/pages/web_cloud/web_hosting/sql_create_database).
 >
 
-Image
+![Activer une BDD](images/activate_DB.png){.thumbnail}
 
 Si vous possédez déjà une base de données de destination, choisissez d'abord son type :
 -	`Copier vers une base de données`{.action} : sélectionnez ce choix si vous voulez copier la contenu de votre base de données source vers une base de données Start SQL (destination).
@@ -84,17 +84,17 @@ Vous venez de sélectionner `Copier vers une base de données`{.action}. Deux li
 
 Une fois votre choix effectué, cliquez sur `Suivant`{.action}. Le message de confirmation suivant s’affiche :
 
-Image
+![Message de confirmation copier BDD](images/confirmation_copy_DB.png){.thumbnail}
 
 Si vous ne voulez pas écraser la base de données de destination choisie, cliquez sur `Précédent`{.action} pour modifier votre choix ou sur `Annuler`{.action} pour annuler. Sinon, cliquez sur `Valider`{.action} pour confirmer la copie de la base de données.
 
 S’il n’y a pas d’erreur, le message de confirmation suivant s’affiche :
 
-Image
+![Message de succès BDD](images/success_copy_DB.png){.thumbnail}
 
 La copie de la base de données peut prendre plusieurs minutes. Pour être sûr que la copie a bien été prise en compte, dirigez-vous dans l’onglet `Tâches en cours`{.action}. Dans le tableau, une nouvelle ligne correspondant à votre copie apparaît avec un statut « planifié ». Une fois l’opération finie, la ligne disparaît.
 
-Image
+![Tâches en cours](images/ongoing_tasks.png){.thumbnail}
 
 #### Choix 2 - Copier vers un Web Cloud Databases
 
@@ -102,11 +102,11 @@ Vous venez de sélectionner `Copier vers un Web Cloud Databases`{.action}. Deux 
 
 Une fois votre choix effectué, cliquez sur `Suivant`{.action}. Le message de confirmation suivant s’affiche :
 
-Image
+![Message de confirmation copier BDD](images/confirmation_copy_DB.png){.thumbnail}
 
 La copie de la base de données peut prendre plusieurs minutes. Pour être sûr que la copie a bien été prise en compte, dirigez-vous dans l’onglet `Tâches en cours`{.action}. Dans le tableau, une nouvelle ligne correspondant à votre copie apparaît avec un statut « planifié ». Une fois l’opération finie, la ligne disparaît.
 
-Image
+![Tâches en cours](images/ongoing_tasks.png){.thumbnail}
 
 ### Configurer son site web avec sa nouvelle base de données
 
@@ -140,9 +140,6 @@ Cette erreur signifie que vous ne possédez qu’une seule base de données. Pou
 #### Vous avez déjà une action en cours
 
 Cette erreur signifie qu’une tâche est déjà en cours sur votre base de données. Dirigez-vous dans l’onglet `Tâches en cours`{.action} et vérifiez que vous avez bien une tâche déjà en cours. Si c’est le cas, attendez qu’elle soit finie pour recommencer la copie de votre base de données.
-
-#### Une erreur est survenue pendant la copie de la base de données
-
 
 #### La base de données de destination ne contient pas assez d’espace
 
