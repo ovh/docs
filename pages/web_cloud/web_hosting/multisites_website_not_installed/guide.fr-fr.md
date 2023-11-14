@@ -13,6 +13,7 @@ Il est possible de voir apparaître sur votre navigateur Internet la page d'erre
 **Découvrez comment identifier et résoudre la page d'erreur « Site non installé »**
 
 > [!warning]
+>
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 >
 > Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [Aller plus loin](#go-further) de ce guide.
@@ -27,9 +28,9 @@ Il est possible de voir apparaître sur votre navigateur Internet la page d'erre
 
 La page **Site non installé** s’affiche dans deux situations :
 
-1. Votre domaine n’est pas présent dans la partie [Multisite](/pages/web_cloud/web_hosting/multisites_configure_multisite#etape-1-acceder-a-la-gestion-multisite) de votre hébergement.
+1. Votre nom de domaine ou votre sous-domaine n’est pas déclaré correctement sur votre hébergement web. Pour vérifier cela, consultez notre guide « [Partager son hébergement web OVHcloud entre plusieurs sites web](/pages/web_cloud/web_hosting/multisites_configure_multisite) ».
 
-2. Votre domaine n'est pas relié, via sa `Zone DNS`{.action}, à votre hébergement.
+2. Votre nom de domaine n'est pas relié, via sa `Zone DNS`{.action}, à votre hébergement web.
 
 Les étapes suivantes vous permettront de corriger l’erreur `Site non installé` dans ces deux situations.
 
