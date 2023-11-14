@@ -30,7 +30,13 @@ Vous devez posséder (voir ci-dessous) un bloc IPv4 public auprès de l'un des R
 - [ARIN](https://www.arin.net/)
 - [RIPE](https://www.ripe.net/)
 
+Voici la liste des types que nous prenons en charge :
+| ARIN | RIPE |
+| :--- | :--- |
+| &bull; Direct Allocation <br>&bull; Direct Assignment <br>&bull; Reallocated <br>&bull; Reassigned  |  &bull; Allocated PA <br>&bull; Lir-partitioned PA  <br>&bull; Sub-allocated PA  <br>&bull; Assigned PA  <br>&bull; Assigned PI  <br>&bull; Legacy   |
+
 Il est désormais possible d'utiliser des blocs IP ARIN ou RIPE sur n'importe quel campus OVHcloud. Cette flexibilité améliorée permet une gestion plus efficace et une allocation optimisée des adresses IP pour répondre aux besoins spécifiques de votre entreprise.
+
 
 Contrairement à la politique précédente, où un bloc ARIN ne pouvait être utilisé qu'avec des services OVHcloud situés au Canada ou aux États-Unis et un bloc RIPE ne pouvait être utilisé qu'avec des services OVHcloud situés en Europe, cette restriction a été levée.
 
