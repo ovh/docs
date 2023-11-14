@@ -6,7 +6,9 @@ updated: 2023-11-14
 
 ## Objectif
 
-**Découvrez un ensemble de détails techniques sur l'infrastructure d'hébergement Web OVHcloud, en fonction des questions les plus fréquemment posées**
+Les offres d'hébergement web OVHcloud sont mutualisées. Par conséquent, la configuration de ces offres contient certaines spécificités techniques. Nous vous recommandons de connaître ces spécificités *avant* d'utiliser votre hébergement web OVHcloud.
+
+**Découvrez dans ce guide un ensemble de détails techniques sur l'infrastructure d'hébergement Web OVHcloud, en fonction des questions les plus fréquemment posées**
 
 ## Prérequis
 
@@ -28,13 +30,15 @@ updated: 2023-11-14
 
 - Si, lors de la connexion à votre espace de stockage FTP, vous rencontrez l'erreur d'accès « Échec de l'authentification de connexion 530 »: Assurez-vous que les informations d'accès à votre espace FTP sont correctes. Pour cela, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) puis rendez-vous dans la partie `Web Cloud`{.action}. Dans la colonne de gauche, cliquez sur `Hébergements`{.action} puis sélectionnez l'hébergement web concerné. Sur la page qui s'affiche, cliquez sur l'onglet `FTP - SSH`{.action}.
 
-Les mots de passe ne sont jamais affichés, mais ils peuvent être modifiés. 
+Vous y retrouverez l'ensemble des informations de connexion à votre espace de stockage FTP à l'exception du mot de passe.
 
-Retrouvez plus d'informations dans notre guide consulter nos « [Se connecter à l'espace de stockage FTP de son hébergement Web](/pages/web_cloud/web_hosting/ftp_connection) ».
+En effet, les mots de passe ne sont jamais affichés, mais ils peuvent être modifiés. 
+
+Retrouvez plus d'informations sur le sujet dans notre guide « [Se connecter à l'espace de stockage FTP de son hébergement Web](/pages/web_cloud/web_hosting/ftp_connection) ».
 
 ### E-mails <a name="emails"></a>
 
-Afin de garantir une bonne qualité de service sur l'ensemble de l'infrastructure mutualisée et fluidifier l'envoi de vos e-mails vers vos destinataires, nous appliquons des quotas d'envois sur nos services d'hébergement web.
+Afin de garantir une bonne qualité de service sur l'ensemble de l'infrastructure mutualisée et ainsi fluidifier l'envoi de vos e-mails vers vos destinataires, nous appliquons des quotas d'envois sur nos services d'hébergement web.
 
 Sur une période glissante de 3600 secondes (1 heure), votre offre d'hébergement web vous permettra d'envoyer les quotas d'e-mails suivants :
 
@@ -42,8 +46,9 @@ Sur une période glissante de 3600 secondes (1 heure), votre offre d'hébergemen
 |---|---|---|---|---|---|
 |Quantité maximale d'envoi d'e-mails par heure et par service|10|20|100|200|2000|
 
-- En dehors des suspicions de spamming ou de phishing, l'expédition de vos e-mails pourra être différée. Vos e-mails seront conservés dans une file d'attente jusqu'à ce que le nombre d'e-mails envoyés au cours de l'heure écoulée soit inférieur au quota.
-- En cas d'abus, de risque avéré ou de piratage, tout ou partie de votre service sera suspendu (conformément aux CGU/CGV et Conditions particulières de votre offre). Vous serez notifié par e-mail de la suspension de celui-ci. Pour débloquer cette situation, consultez les guides suivants :
+En dehors des suspicions de spamming ou de phishing, l'expédition de vos e-mails pourra être différée. Vos e-mails seront conservés dans une file d'attente jusqu'à ce que le nombre d'e-mails envoyés au cours de l'heure écoulée soit inférieur au quota.
+
+En cas d'abus, de risque avéré ou de piratage, tout ou partie de votre service sera suspendu (conformément aux CGU/CGV et Conditions particulières de votre offre). Vous serez notifié par e-mail de la suspension de celui-ci. Pour débloquer cette situation, consultez les guides suivants :
 
 - [Suivre et gérer les e-mails automatisés de son hébergement web](/pages/web_cloud/web_hosting/mail_function_script_records);
 - [Cas d'usage - Conseils suite au piratage de votre site Web](/pages/web_cloud/web_hosting/cms_what_to_do_if_your_site_is_hacked).
@@ -52,24 +57,24 @@ Sur une période glissante de 3600 secondes (1 heure), votre offre d'hébergemen
 
 #### Connexions simultanées à la base de données
 
-- Sur les offres d'hébergement Web (bases de données partagées), il existe une limite de 30 connexions simultanées par base de données (200 avec une offre [Web Cloud Databases](https://www.ovhcloud.com/fr/web-cloud/databases/)). Veuillez consulter le [détail de nos offres d'hébergement web](https://www.ovhcloud.com/fr/web-hosting/) pour vérifier les options disponibles dans chaque plan d'hébergement Web.
+Sur les offres d'hébergement Web (bases de données partagées), il existe une limite de 30 connexions simultanées par base de données (cette limite passe à 200 si vous utilisez une offre [Web Cloud Databases](https://www.ovhcloud.com/fr/web-cloud/databases/)). Consulter le [détail de nos offres d'hébergement web](https://www.ovhcloud.com/fr/web-hosting/) pour connaître les options disponibles dans chaque offre d'hébergement Web.
 
-- Vous pouvez également commander des offres [Web Cloud Databases](https://www.ovhcloud.com/fr/web-cloud/databases/) supplémentaires, celles-ci disposent d'options de personnalisation :
+Vous pouvez également commander des offres [Web Cloud Databases](https://www.ovhcloud.com/fr/web-cloud/databases/) supplémentaires, celles-ci disposent d'options de personnalisation :
 
-    - *max_connections*: 100 par défaut, avec possibilité de passer à 200
-    - *max_user_connections*: 50 par défaut, avec possibilité de passer à 200
+- *max_connections*: 100 par défaut, avec possibilité de passer à 200;
+- *max_user_connections*: 50 par défaut, avec possibilité de passer à 200.
 
-Pour en savoir plus, consultez les détails de nos [offres d'hébergement](https://www.ovhcloud.com/fr/web-hosting/) et [notre guide](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
+Pour en savoir plus, consultez les détails de nos [offres d'hébergement web](https://www.ovhcloud.com/fr/web-hosting/) et notre guide « [Premiers pas avec votre offre Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) ».
 
 #### Connexions depuis un serveur externe
 
-Pour des raisons de sécurité, il n'est pas possible de se connecter d'un serveur externe à une base de données incluse dans une offre d'hébergement Web OVHcloud. Seuls les serveurs qui contiennent les hébergements Web OVHcloud peuvent se connecter aux serveurs de base de données. Toute autre connexion provoquera l'erreur suivante:
+Pour des raisons de sécurité, il n'est pas possible de se connecter d'un serveur externe à une base de données incluse dans une offre d'hébergement Web OVHcloud. Seuls les serveurs qui contiennent les hébergements Web OVHcloud peuvent se connecter aux serveurs de base de données partagées. Toute autre connexion provoquera l'erreur suivante:
 
 ```bash
 Warning: MySQL Connection Failed: Host ip.your.connection is not allowed to connect ...
 ```
 
-Seuls les serveurs de bases de données [Web Cloud Databases](https://www.ovhcloud.com/fr/web-cloud/databases/) permettent à des serveurs externes de s'y connecter. Ceci en ayant au préalable autorisé l'adresse IP de votre serveur externe sur votre serveur de bases de données. Si besoin, consulter le guide « [Premiers pas avec votre offre Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) ».
+Seuls les serveurs de bases de données [Web Cloud Databases](https://www.ovhcloud.com/fr/web-cloud/databases/) permettent à des serveurs externes de s'y connecter. Ceci en ayant au préalable autorisé l'adresse IP de votre serveur externe sur votre serveur de bases de données. Si besoin, consultez le guide « [Premiers pas avec votre offre Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) ».
 
 #### Variables serveur SQL mutualisé
 
@@ -84,15 +89,15 @@ SHOW VARIABLES;
 > La version MySQL ne peut pas être modifiée pour les bases de données intégrées à l'hébergement Web.
 >
 
-Pour plus d'informations sur la gestion des bases de données et la connection à l'interface *phpMyAdmin*, reportez-vous au guide « [Créer une base de données sur son hébergement web](/pages/web_cloud/web_hosting/sql_create_database) ».
+Pour plus d'informations sur la gestion des bases de données et sur la connection à l'interface *phpMyAdmin*, reportez-vous au guide « [Créer une base de données sur son hébergement web](/pages/web_cloud/web_hosting/sql_create_database) ».
 
 ### PHP
 
-Nous vous recommandons de consulter nos [offres d'hébergement web](https://www.ovhcloud.com/fr/web-hosting/uc-programming-language/) pour vous assurer que le plan d'hébergement Web que vous souhaitez commander sera compatible avec vos besoins.
+Nous vous recommandons de consulter nos [offres d'hébergement web](https://www.ovhcloud.com/fr/web-hosting/uc-programming-language/) pour vous assurer que l'offre d'hébergement Web que vous souhaitez commander sera compatible avec vos besoins.
 
 > [!warning]
 >
-> La modification du fichier **php.ini** est indisponible sur les offres d'hébergements mutualisés. Ceci du fait que la configuration PHP est globale à l'ensemble de l'infrastructure mutualisée.
+> La modification du fichier **php.ini** est indisponible sur les offres d'hébergements web. Ceci du fait que la configuration PHP est globale à l'ensemble de l'infrastructure mutualisée.
 >
 > Cependant, vous pouvez modifier certains éléments comme, le *moteur d'exécution PHP*, l'*environnement d'exécution* ou encore la *version de PHP* de votre hébergement web.
 >
@@ -115,7 +120,7 @@ PHP-FPM est activé par défaut sur l'infrastructure d'hébergement web afin d'a
 
 #### PHP scripts
 
-Une fois connecté à votre hébergement web via SSH, le trafic sortant sera bloqué pour des raisons de sécurité. Nous vous recommandons donc d'utiliser des scripts PHP. Pour plus d'informations, consultez notre [guide SSH](/pages/web_cloud/web_hosting/ssh_on_webhosting). Vous pouvez consulter le manuel officiel « [PHP manual](https://www.php.net/manual/fr/function.system.php) » concernant l'exécution de commandes.
+Une fois connecté à votre hébergement web via SSH, le trafic sortant sera bloqué pour des raisons de sécurité. Nous vous recommandons donc d'utiliser des scripts PHP. Pour plus d'informations, consultez notre [guide SSH](/pages/web_cloud/web_hosting/ssh_on_webhosting). Vous pouvez consulter le « [PHP manual](https://www.php.net/manual/fr/function.system.php) » concernant l'exécution de commandes.
 
 Par exemple, vous pouvez utiliser la fonction *gethostbyaddr()* pour récupérer le nom d'hôte:
 
