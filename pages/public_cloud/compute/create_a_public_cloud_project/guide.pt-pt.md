@@ -49,5 +49,11 @@ Quando o processo estiver concluído, seu novo projeto Public Cloud estará disp
 ## Quer saber mais?
 
 Se precisar de formação ou de assistência técnica para implementar as nossas soluções, contacte o seu representante comercial ou clique em [esta ligação](https://www.ovhcloud.com/pt/professional-services/) para obter um orçamento e solicitar uma análise personalizada do seu projecto aos nossos especialistas da equipa de Serviços Profissionais.
+
+[Criação e conexão a uma primeira instância Public Cloud](/pages/public_cloud/compute/public-cloud-first-steps)
+[Gestão de contactos de um projeto](/pages/public_cloud/compute/change_project_contacts)
+[Delegar projetos](/pages/public_cloud/compute/delegate_projects)
+[Eliminar um projeto Public Cloud](/pages/public_cloud/compute/delete_a_project)
+[Informações sobre o método de faturação cloud](/pages/public_cloud/compute/analyze_billing)
  
 Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

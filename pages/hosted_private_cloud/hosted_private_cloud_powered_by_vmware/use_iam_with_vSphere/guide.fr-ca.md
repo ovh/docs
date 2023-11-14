@@ -1,13 +1,8 @@
 ---
 title: Comment utiliser les politiques IAM avec vSphere
 excerpt: "Découvrez comment connecter votre vSphere avec l'IAM OVHcloud"
-updated: 2023-07-28
+updated: 2023-10-25
 ---
-
-> [!warning]
->
-> Cette fonctionnalité est actuellement en version bêta. Retrouvez plus d'informations sur <https://labs.ovhcloud.com/en/>.
->
 
 ## Objectif
 
@@ -32,6 +27,16 @@ L'IAM d'OVHcloud n'est pas disponible sur les environnements disposant des optio
 
 ### Activer l'IAM sur votre serveur
 
+#### Via l'espace client
+
+Dans le menu de gestion des utilisateur de votre environnment Hosted Private cloud, cliquer sur `Activer l'IAM OVHcloud`{.action}.
+
+![IAM Enable](images/enable_iam.png){.thumbnail}
+
+Cette opération pourra prendre jusqu’à 30 minutes.
+
+#### Via l'API
+
 Vous pouvez activer l'option IAM sur votre Hosted Private Cloud depuis l'API OVHcloud. Exécutez l'appel suivant :
 
 > [!api]
@@ -44,6 +49,18 @@ Cette opération pourra prendre jusqu’à 30 minutes.
 ### Créer des rôles IAM
 
 Une fois l'option activée, des rôles IAM sont créés par défaut et sont utilisable dans les politiques d'accès de l'IAM OVHcloud.
+
+La gestion des permissions de vSphere de chaque rôle IAM s'effectue comme pour n'importe quel autre utilisateur de votre Hosted Private Cloud, via l'API ou dans l'[espace client OVHcloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/change_users_rights)
+
+#### Via l'espace client
+
+Sur le menu de gestion des utilisateurs, cliquer sur "Créer un role IAM"
+
+![IAM users](images/create_iam_user.png){.thumbnail}
+
+Les rôles IAM sont préfixés par "iam-"
+
+#### Via l'API
 Vous pourrez créer vous même de nouveaux rôles en exécutant l'appel suivant : 
 
 > [!api]
@@ -51,7 +68,7 @@ Vous pourrez créer vous même de nouveaux rôles en exécutant l'appel suivant 
 > @api {POST} /dedicatedCloud/{serviceName}/iam/addRole
 >
 
-La gestion des permissions de vSphere de chaque rôle IAM s'effectue comme pour n'importe quel autre utilisateur de votre Hosted Private Cloud, via l'API ou dans l'[espace client OVHcloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/change_users_rights)
+
 
 ### Utilisation des politiques IAM
 
@@ -66,6 +83,16 @@ Cette action doit être indiquée dans la partie « Actions ajoutées manuelleme
 ![IAM Policies](images/action_on_policy.png){.thumbnail}
 
 ### Désactiver l'IAM sur votre serveur
+
+Il est possible de désactiver l'IAM d'OVHcloud sur votre Hosted Private Cloud
+
+#### Via l'espace client
+
+Dans le menu de gestion des utilisateur de votre environnment Hosted Private cloud, cliquer sur `Désactiver l'IAM OVHcloud`{.action}.
+
+![IAM Disable](images/disable_iam.png){.thumbnail}
+
+#### Via l'API
 
 Exécutez l'appel suivant pour désactiver la connexion avec l'IAM OVHcloud :
 

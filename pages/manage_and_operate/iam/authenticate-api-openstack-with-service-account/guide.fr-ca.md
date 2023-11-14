@@ -4,10 +4,7 @@ excerpt: "Comment se connecter aux API ou lignes de commande OpenStack avec ses 
 updated: 2023-08-24
 ---
 
-> [!warning]
->
-> Cette fonctionnalité est actuellement en bêta. Retrouvez plus d'informations sur <https://labs.ovhcloud.com/fr/>.
->
+ 
 
 ## Objectif
 
@@ -161,7 +158,7 @@ clouds:
 L'exemple précédent fonctionne sur la région EMEA. Si vous utilisez les services de OVHcloud depuis la région "Rest of the World", modifiez les lignes suivantes avec ces valeurs :
 
 -  identity_provider: `ovhcloud-world`
--  discovery_endpoint: `https://iam.ovh.ca/role-adapter/urn:v1:eu:resource:publicCloudProject:pci/.well-known/openid-configuration`
+-  discovery_endpoint: `https://iam.ovh.ca/role-adapter/urn:v1:ca:resource:publicCloudProject:pci/.well-known/openid-configuration`
 
 Pour rappel, n'oubliez pas de remplacer les variables de ces exemples par les valeurs correspondant à votre configuration.
 

@@ -8,7 +8,7 @@ updated: 2021-05-19
 You can use the OpenStack API to generate various scripts in order to automate your actions on the Public Cloud. 
 <br>For example, you can create a new high-performance volume to attach to a Public Cloud instance.
 
-**This guide will help you manage manage your volumes using the OpenStack API and the Python client.**
+**This guide will help you manage your volumes using the OpenStack API and the Python client.**
 
 ## Requirements
 

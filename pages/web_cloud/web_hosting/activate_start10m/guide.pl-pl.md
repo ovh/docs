@@ -1,7 +1,7 @@
 ---
 title: 'Włączanie darmowy hosting 100M'
 excerpt: 'Dowiedz się, jak włączyć darmowy hosting 100M'
-updated: 2022-09-15
+updated: 2023-11-10
 ---
 
 > [!primary]
@@ -76,6 +76,8 @@ Zapoznaj się z przewodnikiem [utworzenie konta E-mail MX Plan](/pages/web_cloud
 [Logowanie do przestrzeni dyskowej hostingu www](/pages/web_cloud/web_hosting/ftp_connection){.external}
 
 [Tworzenie konta e-mail w ramach usługi MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_creation){.external}
+
+[Zarządzanie certyfikatem SSL na hostingu](/pages/web_cloud/web_hosting/ssl_on_webhosting)
 
 W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
 

@@ -72,10 +72,11 @@ To train the model, we will use AI Training. This tool is much more powerful. It
 
 AI Training allows you to train models directly from your own Docker images.
 
-First, you need to create a Dockerfile compliant with AI Training. You can find an example here:
+First, you need a Dockerfile compliant with AI Training. You don't have to create this file since an example of it can be found in our GitHub repository. This Dockerfile is [here](https://github.com/ovh/ai-training-examples/tree/main/jobs/rasa-chatbot) and looks like the following:
+
 
 ```docker
-FROM python:3.8
+FROM tensorflow/tensorflow:2.12.0-gpu
 
 WORKDIR /workspace
 ADD . /workspace
@@ -90,8 +91,6 @@ EXPOSE 5005
 
 CMD rasa train --force --out trained-models
 ```
-
-This file can be found in the GitHub repository, you don't have to create it. The file is [here](https://github.com/ovh/ai-training-examples/tree/main/jobs/rasa-chatbot).
 
 Secondly, you have to build the Docker image and push it inside your public repository (such as Dockerhub) or in a private directory.
 Here are the two commands to run inside the folder `rasa_bot`:
@@ -134,7 +133,7 @@ ovhai notebook run conda vscode \
 	--token <token> \
 ```
 
-Then install all the requirements by running in a terminal:
+Then install all the requirements by running in a terminal (Click the menu icon > Terminal > New Terminal):
 
 ```bash 
 pip install -r ~/ai-training-examples/jobs/rasa-chatbot/requirements_rasa.txt 

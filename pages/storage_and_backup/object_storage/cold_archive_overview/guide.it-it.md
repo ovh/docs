@@ -97,7 +97,7 @@ The time it takes to access data depends on its volume. For example, for a retri
 
 ### Compliance
 
-The service will be certified HDS and ISO 27001. You can follow these certifications on our public roadmap page : <https://github.com/ovh/public-cloud-roadmap/projects/3?card_filter_query=label%3Astorage>
+The service will be certified HDS and ISO 27001. You can follow these certifications on our public roadmap page : <https://github.com/orgs/ovh/projects/16/?card_filter_query=label%3Astorage>
 
 ### Low carbon consumption
 

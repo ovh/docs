@@ -1,13 +1,8 @@
 ---
 title: Como criar uma política IAM para permitir que um utilizador se ligue à Área de Cliente OVHcloud (EN)
 excerpt: "Find out how to grant the minimum rights required to log in to the OVHcloud Control Panel"
-updated: 2023-07-03
+updated: 2023-10-25
 ---
-
-> [!warning]
->
-> This feature is currently in beta. Find more informations here: <https://labs.ovhcloud.com/en/>
->
 
 ## Objective
 
@@ -34,9 +29,17 @@ With these rights, a user will be able to log in to the OVHcloud Control Panel. 
 
 Using the UI, you can set up a policy with the following configuration:
 
-- Add a `resourceType` "OVHcloud customer account".
-- Add your account as a resource.
-- Add the 4 rights listed above as an action.
+Add a `resourceType` "OVHcloud customer account" and add your account as a resource.
+
+![Account ressourceType](images/account_ressourceType.png){.thumbnail}
+
+Then you can either use the managed permissions group `controlPanelAccess`
+
+![Control Panel Access](images/controlPanelAccess.png){.thumbnail}
+
+Or add the 4 rights listed above as an action.
+
+![Add actions](images/add_actions.png){.thumbnail}
 
 You can now link your users to this policy to give them the right to log in to the OVHcloud Control Panel.
 

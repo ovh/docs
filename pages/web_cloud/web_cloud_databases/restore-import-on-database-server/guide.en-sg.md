@@ -1,7 +1,7 @@
 ---
 title: 'Restoring and importing a database to your database server'
 excerpt: 'Find out how to restore and import your database'
-updated: 2023-02-15
+updated: 2023-10-26
 ---
 
 ## Objective
@@ -96,7 +96,7 @@ Select your backup file by clicking `Browse`{.action}. (Please note that the fil
 
 Keep the default options and click `Run`{.action} to start the import.
 
-![Web Cloud Databases](images/web-cloud-databases-import04.png){.thumbnail}
+![Web Cloud Databases](images/pma-upload-backup-web-cloud-db.png){.thumbnail}
 
 #### Exporting a MySQL or MariaDB database from the command line
 
@@ -152,7 +152,7 @@ psql --host=server --port=port --user=username --password=password database_name
 
 ## Go further
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory).
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-sg/support-levels/).
 

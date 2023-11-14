@@ -10,7 +10,7 @@ OVHcloud Databases as-a-service (DBaaS) allow you to focus on building and deplo
 
 **This guide explains how to restore a backup of a database solution in the OVHcloud Control Panel.**
 
-We continuously improve our offers. You can follow and submit ideas to add to our roadmap at <https://github.com/ovh/public-cloud-roadmap/projects/2>.
+We continuously improve our offers. You can follow and submit ideas to add to our roadmap at <https://github.com/orgs/ovh/projects/16/views/5>.
 
 ## Requirements
 

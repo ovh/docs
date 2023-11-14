@@ -60,7 +60,7 @@ Below you can find a summary of every configuration option available for Kafka C
 |---|---|
 | Parameter | `kafka_connect.connector_client_config_override_policy` |
 | Value type | string |
-| Minumum | |
+| Minimum | |
 | Maximum | |
 | Values | "All", "None" |
 | Description | Defines which client configurations can be overridden by the connector. Default is None |
@@ -69,7 +69,7 @@ Below you can find a summary of every configuration option available for Kafka C
 |---|---|
 | Parameter | `kafka_connect.consumer_auto_offset_reset` |
 | Value type | string |
-| Minumum | |
+| Minimum | |
 | Maximum | |
 | Values | "earliest", "latest" |
 | Description | What to do when there is no initial offset in Kafka or if the current offset does not exist any more on the server. Default is earliest |
@@ -78,7 +78,7 @@ Below you can find a summary of every configuration option available for Kafka C
 |---|---|
 | Parameter | `kafka_connect.consumer_fetch_max_bytes` |
 | Value type | long |
-| Minumum | 1048576 |
+| Minimum | 1048576 |
 | Maximum | 104857600 |
 | Values | |
 | Description | Records are fetched in batches by the consumer, and if the first record batch in the first non-empty partition of the fetch is larger than this value, the record batch will still be returned to ensure that the consumer can make progress. As such, this is not a absolute maximum. |
@@ -87,7 +87,7 @@ Below you can find a summary of every configuration option available for Kafka C
 |---|---|
 | Parameter | `kafka_connect.consumer_isolation_level` |
 | Value type | string |
-| Minumum | |
+| Minimum | |
 | Maximum | |
 | Values | "read_committed", "read_uncommitted" |
 | Description | Transaction read isolation level. read_uncommitted is the default, but read_committed can be used if consume-exactly-once behavior is desired. |
@@ -96,7 +96,7 @@ Below you can find a summary of every configuration option available for Kafka C
 |---|---|
 | Parameter | `kafka_connect.consumer_max_partition_fetch_bytes` |
 | Value type | long |
-| Minumum | 1048576 |
+| Minimum | 1048576 |
 | Maximum | 104857600 |
 | Values | |
 | Description | Records are fetched in batches by the consumer. If the first record batch in the first non-empty partition of the fetch is larger than this limit, the batch will still be returned to ensure that the consumer can make progress.  |
@@ -105,7 +105,7 @@ Below you can find a summary of every configuration option available for Kafka C
 |---|---|
 | Parameter | `kafka_connect.consumer_max_poll_interval_ms` |
 | Value type | long |
-| Minumum | 1 |
+| Minimum | 1 |
 | Maximum | 2147483647 |
 | Values | |
 | Description | The maximum delay in milliseconds between invocations of poll() when using consumer group management (defaults to 300000). |
@@ -114,7 +114,7 @@ Below you can find a summary of every configuration option available for Kafka C
 |---|---|
 | Parameter | `kafka_connect.consumer_max_poll_records` |
 | Value type | long |
-| Minumum | 1 |
+| Minimum | 1 |
 | Maximum | 10000 |
 | Values | |
 | Description | The maximum number of records returned in a single call to poll() (defaults to 500). |
@@ -123,7 +123,7 @@ Below you can find a summary of every configuration option available for Kafka C
 |---|---|
 | Parameter | `kafka_connect.offset_flush_interval_ms` |
 | Value type | long |
-| Minumum | 1 |
+| Minimum | 1 |
 | Maximum | 100000000 |
 | Values | |
 | Description | The interval at which to try committing offsets for tasks (defaults to 60000). |
@@ -132,7 +132,7 @@ Below you can find a summary of every configuration option available for Kafka C
 |---|---|
 | Parameter | `kafka_connect.offset_flush_timeout_ms` |
 | Value type | long |
-| Minumum | 1 |
+| Minimum | 1 |
 | Maximum | 2147483647 |
 | Values | |
 | Description | Maximum number of milliseconds to wait for records to flush and partition offset data to be committed to offset storage before cancelling the process and restoring the offset data to be committed in a future attempt (defaults to 5000). |
@@ -141,7 +141,7 @@ Below you can find a summary of every configuration option available for Kafka C
 |---|---|
 | Parameter | `kafka_connect.producer_batch_size` |
 | Value type | long |
-| Minumum | 0 |
+| Minimum | 0 |
 | Maximum | 5242880 |
 | Values | |
 | Description | This setting gives the upper bound of the batch size to be sent. If there are fewer than this many bytes accumulated for this partition, the producer will 'linger' for the linger.ms time waiting for more records to show up. A batch size of zero will disable batching entirely (defaults to 16384). |
@@ -150,7 +150,7 @@ Below you can find a summary of every configuration option available for Kafka C
 |---|---|
 | Parameter | `kafka_connect.producer_buffer_memory` |
 | Value type | long |
-| Minumum | 5242880 |
+| Minimum | 5242880 |
 | Maximum | 134217728 |
 | Values | |
 | Description | The total bytes of memory the producer can use to buffer records waiting to be sent to the broker (defaults to 33554432). |
@@ -159,7 +159,7 @@ Below you can find a summary of every configuration option available for Kafka C
 |---|---|
 | Parameter | `kafka_connect.producer_compression_type` |
 | Value type | string |
-| Minumum | |
+| Minimum | |
 | Maximum | |
 | Values | "gzip", "lz4", "none", "snappy", "zstd" |
 | Description | Specify the default compression type for producers. This configuration accepts the standard compression codecs ('gzip', 'snappy', 'lz4', 'zstd'). It additionally accepts 'none' which is the default and equivalent to no compression. |
@@ -168,7 +168,7 @@ Below you can find a summary of every configuration option available for Kafka C
 |---|---|
 | Parameter | `kafka_connect.producer_linger_ms` |
 | Value type | long |
-| Minumum | 0 |
+| Minimum | 0 |
 | Maximum | 5000 |
 | Values | |
 | Description | This setting gives the upper bound on the delay for batching: once there is batch.size worth of records for a partition it will be sent immediately regardless of this setting, however if there are fewer than this many bytes accumulated for this partition the producer will 'linger' for the specified time waiting for more records to show up. Defaults to 0. |
@@ -177,7 +177,7 @@ Below you can find a summary of every configuration option available for Kafka C
 |---|---|
 | Parameter | `kafka_connect.producer_max_request_size` |
 | Value type | long |
-| Minumum | 131072 |
+| Minimum | 131072 |
 | Maximum | 67108864 |
 | Values | |
 | Description | This setting will limit the number of record batches the producer will send in a single request to avoid sending huge requests. |
@@ -186,7 +186,7 @@ Below you can find a summary of every configuration option available for Kafka C
 |---|---|
 | Parameter | `kafka_connect.session_timeout_ms` |
 | Value type | long |
-| Minumum | 1 |
+| Minimum | 1 |
 | Maximum | 2147483647 |
 | Values | |
 | Description | The timeout in milliseconds used to detect failures when using Kafka’s group management facilities (defaults to 10000). |

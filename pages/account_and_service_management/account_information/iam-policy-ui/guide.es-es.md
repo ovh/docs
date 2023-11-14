@@ -8,11 +8,6 @@ updated: 2023-07-06
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón "Contribuir" de esta página.
 >
 
-> [!warning]
->
-> Esta funcionalidad está actualmente en versión beta. Para más información, consulte <https://labs.ovhcloud.com/en/>.
->
-
 ## Objetivo
 
 Esta guía explica cómo proporcionar derechos de acceso específicos a los usuarios de una cuenta de OVHcloud.

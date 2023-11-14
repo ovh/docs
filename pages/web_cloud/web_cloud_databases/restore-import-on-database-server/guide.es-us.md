@@ -1,7 +1,7 @@
 ---
 title: 'Restaurar e importar una base de datos en su servidor de bases de datos'
 excerpt: 'Cómo restaurar e importar la base de datos'
-updated: 2023-02-15
+updated: 2023-10-26
 ---
 
 > [!primary]
@@ -101,7 +101,7 @@ Seleccione el archivo de backup haciendo clic en `Navegar`{.action} (atención: 
 
 Deje las opciones predeterminadas y haga clic en `Ejecutar`{.action} para iniciar la importación.
 
-![Web Cloud Databases](images/web-cloud-databases-import04.png){.thumbnail}
+![Web Cloud Databases](images/pma-upload-backup-web-cloud-db.png){.thumbnail}
 
 #### Importar una base de datos MySQL o MariaDB en línea de comandos
 
@@ -157,7 +157,7 @@ psql —host=servidor —port=puerto —user=usuario —password=contraseña nom
 
 ## Más información
 
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es/directory).
 
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es/support-levels/).
 

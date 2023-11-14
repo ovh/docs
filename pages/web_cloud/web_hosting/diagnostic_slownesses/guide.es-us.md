@@ -1,7 +1,7 @@
 ---
 title: "Mi sitio es lento. ¿Qué hacer?" 
 excerpt: "Identifique el origen de la lentitud de su sitio web y descubra cómo solucionar esta situación"
-updated: 2022-11-17
+updated: 2023-10-26
 ---
 
  
@@ -157,7 +157,7 @@ Conéctese a su base de datos siguiendo **el etapa 3** de nuestra guía sobre la
 
 Si la conexión se ha realizado correctamente, acceda a la siguiente interfaz:
 
-![PHPMyAdmin](images/pma.png){.thumbnail}
+![PHPMyAdmin](images/pma-main-page.png){.thumbnail}
 
 > [!warning]
 >

@@ -8,6 +8,8 @@ updated: 2023-08-22
 
 This guide is intended to help you to use `S3 buckets` with **AI Tools** via the OVHcloud Control Panel and `ovhai` CLI. This will help you to manage your data when working with AI Notebooks, AI Training and AI Deploy.
 
+<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/h9errIk5oOU?si=88u-tnmzOFD5ND0T" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
 ## Requirements
 
 - A **Public Cloud project**.
@@ -230,7 +232,7 @@ ovhai bucket object upload my-bucket-s3@S3GRA train-first-model.py
 You are now able to list the content of your S3 bucket:
 
 ```console
-ovhai bucket object list my-bucket-s3@S3-GRA
+ovhai bucket object list my-bucket-s3@S3GRA
 ```
 
 You should see your object (here the python file).

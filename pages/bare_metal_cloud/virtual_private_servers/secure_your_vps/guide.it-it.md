@@ -79,6 +79,8 @@ Sostituisci il numero **22** con il numero di porta che preferisci.<br>
 Per una maggiore sicurezza, utilizza un numero tra 49152 e 65535.<br>
 Salva e lascia il file di configurazione.
 
+Se la riga è "commentata" (cioè preceduta da un "#"), assicurarsi di rimuovere il "#" prima di salvare il file affinché la modifica abbia effetto.
+
 Riavvia il servizio:
 
 ```bash

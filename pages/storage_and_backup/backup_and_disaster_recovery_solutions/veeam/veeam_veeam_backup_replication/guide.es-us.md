@@ -23,12 +23,6 @@ Veeam Backup & Replication es un programa que permite gestionar la seguridad de 
 
 ### Instalar Veeam Backup & Replication
 
-> [!primary]
-> La última versión de Veeam Backup & Replication (versión 12) es compatible con OVHcloud solo con **bases de datos Microsoft SQL Server**.
->
-> Veeam Backup & Replication v12 es compatible con PostgreSQL [próximamente](https://github.com/ovh/private-cloud-provider/issues/125).
->
-
 Descargue la solución **Veeam Backup & Replication** desde la [web de Veeam](https://www.veeam.com/downloads.html?ad=top-sub-menu){.external}. Si todavía no tiene una cuenta, deberá crear una (es gratuita).
 
 El archivo es una imagen de disco en formato ISO. Después de transferirlo a su servidor, seleccione el lector de CD de la máquina y elija la imagen.

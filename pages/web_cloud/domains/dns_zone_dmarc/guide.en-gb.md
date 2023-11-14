@@ -1,7 +1,7 @@
 ---
 title: Configure a DMARC record on your domain name
 excerpt: Find out how DMARC works, and how to set it up for your email service
-updated: 2023-08-07
+updated: 2023-10-25
 ---
 
 ## Objective
@@ -9,6 +9,16 @@ updated: 2023-08-07
 The **D**omain-based **M**essage **A**uthentication, **R**eporting, and **C**ompliance (DMARC) record is an email security mechanism. It is based on the results of the [SPF](/pages/web_cloud/domains/dns_zone_spf) and [DKIM](/pages/web_cloud/domains/dns_zone_dkim) checks.
 
 **Find out how DMARC works, and how to set it up for your email service.**
+
+> [!warning]
+>
+> OVHcloud provides services for which you are responsible, with regard to their configuration and management. It is therefore your responsibility to ensure that they function correctly.
+>
+> This tutorial is designed to assist you in common tasks as much as possible. Nevertheless, we recommend contacting a [specialist service provider](https://partner.ovhcloud.com/en-gb/directory/) if you experience any issues. OVHcloud cannot provide you with technical support in this regard.
+> You can find more information in the [Go further](#gofurther) section of this tutorial.
+>
+> In addition, the **DMARC** record is currently incompatible with any [OVHcloud email solution](https://www.ovhcloud.com/en-gb/emails/). This tutorial is **only** for customers who have an active DNS zone at OVHcloud for their domain name associated with an **external email solution**.
+>
 
 ## Requirements
 
@@ -81,7 +91,7 @@ Below is a full description of the tags used for the OVHcloud **DMARC record**:
 
 #### TXT record <a name="txt-record"></a>
 
-You can add the TXT record to your DNS zone from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). C lick the `Web Cloud`{.action} tab, go to `Domain names`{.action}, then choose the domain name concerned. Go to the `DNS Zone`{.action} tab.
+You can add the TXT record to your DNS zone from the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). Click the `Web Cloud`{.action} tab, go to `Domain names`{.action}, then choose the domain name concerned. Go to the `DNS Zone`{.action} tab.
 
 Once you have viewed your DNS zone, click on the `Add a record`{.action} button, then click on "Extended fields" in `TXT`{.action}.
 
@@ -151,7 +161,7 @@ The result is:
 
 - **ri=86400**: Sets the requested interval between aggregated reports, in seconds. In this case, an aggregated report must be generated at least once every 86400 seconds (i.e. once per day).
 
-## Go further
+## Go further <a name="go-further"></a>
 
 For specialized services (SEO, development, etc.), contact OVHcloud [partners](https://partner.ovhcloud.com/en-gb/directory/).
 

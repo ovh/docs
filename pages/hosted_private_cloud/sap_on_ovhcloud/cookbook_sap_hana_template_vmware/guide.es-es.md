@@ -167,15 +167,13 @@ Click on the <code class="action">Options VM</code> tab, then expand the <code c
 ![vm-options](images/vm-step-2.png){.thumbnail}
 
 <ol start="3"><li>
-We recommend applying these parameters on your SAP HANA virtual machine:
+These following parameters are included in the OVF template:
 </li></ol>
 
 |           Parameter           |  Value  |
 |:-----------------------------:|:-------:|
 | tools.guestlib.enableHostInfo |  TRUE   |
 | numa.memory.gransize          |  32768  |
-
-![parameters](images/vm-step-3.png){.thumbnail}
 
 To get more details about these parameters, we invite you to take note of the [SAP Note 1606643](https://me.sap.com/notes/1606643/E) as well as the [VMware documentation](https://core.vmware.com/resource/sap-hana-vmware-vsphere-best-practices-and-reference-architecture-guide).
 

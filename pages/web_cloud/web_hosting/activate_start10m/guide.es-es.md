@@ -1,7 +1,7 @@
 ---
 title: 'Activar el Alojamiento gratuito 100M'
 excerpt: 'Esta guía explica cómo activar su Alojamiento gratuito 100M'
-updated: 2022-09-15
+updated: 2023-11-10
 ---
 
 > [!primary]
@@ -76,6 +76,8 @@ Consulte la guía [creación de una cuenta MX Plan](/pages/web_cloud/email_and_c
 [Conectarse al espacio de almacenamiento de su alojamiento web](/pages/web_cloud/web_hosting/ftp_connection){.external}
 
 [Crear una dirección de correo electrónico con su solución MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_creation){.external}
+
+[Gestionar un certificado SSL en un alojamiento web](/pages/web_cloud/web_hosting/ssl_on_webhosting)
 
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
 
