@@ -1,7 +1,7 @@
 ---
 title: "Résoudre l'erreur « Site non installé »"
-excerpt: Découvrez comment identifier et résoudre la page d'erreur « Site non installé »
-updated: 2021-05-18
+excerpt: "Découvrez comment identifier et résoudre la page d'erreur « Site non installé »"
+updated: 2023-11-14
 ---
 
 ## Objectif
@@ -15,7 +15,7 @@ Il est possible de voir apparaître sur votre navigateur Internet la page d'erre
 > [!warning]
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 >
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [Aller plus loin](#allerplusloin) de ce guide.
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [Aller plus loin](#go-further) de ce guide.
 
 ## Prérequis
 
@@ -33,7 +33,7 @@ La page **Site non installé** s’affiche dans deux situations :
 
 Les étapes suivantes vous permettront de corriger l’erreur `Site non installé` dans ces deux situations.
 
-### Étape 1 : vérifier la partie multisite de votre hébergement
+### Étape 1 : vérifier la partie multisite de votre hébergement web
 
 Dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur `Web Cloud`{.action}, puis `Hébergements`{.action}.
 
@@ -45,7 +45,7 @@ Sélectionnez l'hébergement concerné dans la liste, puis cliquez sur l’ongle
 |Le domaine ou le sous-domaine lié à votre site n'apparaît pas dans le tableau.|Ajoutez votre domaine au `Multisite`{.action} en suivant la rubrique dédiée du guide [Partager son hébergement entre plusieurs sites - ajouter un domaine ou un sous-domaine](/pages/web_cloud/web_hosting/multisites_configure_multisite#etape-2-ajouter-un-domaine-ou-un-sous-domaine).|
 |Le nom de domaine a été supprimé du multisite sans action de votre part.|Votre domaine ou sa zone DNS sont peut-être gérés depuis un autre compte. Ajoutez votre domaine au `Multisite` en suivant la rubrique dédiée du guide [Partager son hébergement entre plusieurs sites - ajouter un nom de domaine externe](/pages/web_cloud/web_hosting/multisites_configure_multisite#etape-22-ajouter-un-nom-de-domaine-externe).|
 
-### Étape 2 : vérifier la zone DNS  de votre domaine <a name="checkdomainlink"></a>
+### Étape 2 : vérifier la zone DNS de votre domaine <a name="checkdomainlink"></a>
 
 > [!primary]
 >
@@ -71,10 +71,12 @@ Pour cela, rendez vous dans la partie `Domaines`{.action}, sélectionnez votre d
 |Votre domaine n'apparaît pas dans la partie `Domaines`{.action} de votre espace client.<br><br>Ou l'onglet `Zone DNS`{.action} de votre domaine s'affiche de la façon suivante :<br><br>![zonedns_ndd_pas_sur_lec2](images/zonedns_ndd_pas_sur_lec2.png){.thumbnail}|Cela signifie que votre domaine n'est pas géré depuis votre espace client OVHcloud.<br><br>Déterminez son registrar via notre outil [WHOIS](https://www.ovh.com/fr/support/outils/check_whois.pl) et les serveurs DNS auxquels il est lié. <br><br>Retrouvez et modifiez la zone DNS concernée en conséquence en suivant [ce guide](/pages/web_cloud/web_hosting/multisites_configure_multisite#etape-22-ajouter-un-nom-de-domaine-externe).|
 |Cet avertissement s'affiche dans l'onglet `Zone DNS`{.action} :<br><br>![avertissement_zonedns_pas_sur_srv_dns](images/avertissement_zonedns_pas_sur_srv_dns.png){.thumbnail}|Vous devrez donc modifier les serveurs DNS de votre domaine en conséquence en suivant [ce guide](/pages/web_cloud/domains/dns_server_general_information).|
 
-## Aller plus loin <a name="allerplusloin"></a>
+## Aller plus loin <a name="go-further"></a>
 
 [Liste des adresses IP des clusters et hebergements web](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)
 
-Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/directory/).
+
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr-ca/support-levels/).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
