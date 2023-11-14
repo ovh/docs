@@ -127,6 +127,12 @@ Vous trouverez ci-dessous la liste des balises utilisées pour créer un **enreg
 
 #### Exemples d'enregistrement <a name="record-example"></a>
 
+> [!warning]
+>
+> Dans nos 2 exemples le paramètre `p=`est utilisé sous sa forme restrictive pour illustrer le comportement d'un service e-mail dans ce cas de figure.
+>
+> La configuration du paramètre `p=` peut avoir un impact important sur la délivrabilité des emails de votre nom de domaine. Il est conseillé de configurer `p=none` et effectuer une analyse des rapports d’échec pendant plusieurs semaines pour régler les éventuelles anomalies. Passer en `p=quarantine` ou `p=reject` nécessite une pleine maitrise des paramètres de sécurité e-mail, concernant le [SPF](/pages/web/domains/dns_zone_spf) et le [DKIM](/pages/web/domains/dns_zone_dkim). L’utilisation du facteur `pct=`, présenté en-dessous, permet une transition progressive.
+
 ##### Premier exemple
 
 Pour illustrer ce premier exemple, nous avons utilisé l'[enregistrement DMARC](#dmarc-record) dans la zone DNS et nous lui avons appliqué les paramètres suivants :
@@ -155,7 +161,7 @@ Nous obtenons le résultat suivant :
 
 - **p=quarantine** : les e-mails qui ne passent pas les tests DMARC sont traités comme « suspects ».
 
-- **pct=100** : la politique DMARC s'applique à 100% des messages provenant du flux d'e-mail du propriétaire du domaine.
+- **pct=100** : la politique DMARC s'applique à 50% des messages provenant du flux d'e-mail du propriétaire du domaine.
 
 - **ruf=mailto:report@mydomain.ovh** : adresse e-mail à laquelle les rapports d'échec détaillés doivent être envoyés via l'argument « mailto ».
 
