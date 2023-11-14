@@ -64,7 +64,7 @@ curl -k -u user@pcc-123-123-123-123.ovh.com:<password> https://nsxt.pcc-123-123-
       "external_id" : "b35873da-ca7f-48ff-961e-5d6fa8bc5bf7"
 ```
 
-- Once you have retrieved the ID of your Edge node, make an API call to get the logs for your rule:
+- Once you have retrieved the ID of your Edge node, make an API call to get the logs for your Edge node:
 
 ```bash
 curl -k -u user@pcc-123-123-123-123.ovh.com:<password> https://nsxt.pcc-123-123-123-123.ovh.com/api/v1/transport-nodes/8a8e0033-9eee-4d13-a5e2-7cd2dbdebc6c/node/logs/firewallpkt.log/data
