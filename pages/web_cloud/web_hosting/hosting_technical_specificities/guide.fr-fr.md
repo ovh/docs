@@ -1,12 +1,12 @@
 ---
-title: 'Spécificités techniques liées aux hébergements mutualisés'
-excerpt: 'Vous trouverez dans ce guide différentes informations et spécificités techniques liées aux hébergements mutualisés.'
-updated: 2022-11-18
+title: "Spécificités techniques liées aux hébergements mutualisés"
+excerpt: "Découvrez dans ce guide différentes informations et spécificités techniques liées aux hébergements Web"
+updated: 2023-11-14
 ---
 
 ## Objectif
 
-**Ce guide vous informe des détails techniques de l'infrastructure des hébergement Web OVHcloud, en fonction des questions les plus fréquemment posées**
+**Découvrez un ensemble de détails techniques sur l'infrastructure d'hébergement Web OVHcloud, en fonction des questions les plus fréquemment posées**
 
 ## Prérequis
 
@@ -19,7 +19,7 @@ updated: 2022-11-18
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « [Aller plus loin](#go-further) » de ce guide.
 > 
 
 ### FTP
@@ -177,7 +177,7 @@ Les rapports OVHcloud Web Statistics sont établis à partir de données de traf
 
 Afin d’être utilisées dans le cadre d’OVHcloud Web Statistics, les données citées préalablement sont anonymisées et agrégées à l’aide d’algorithmes opérés par OVHcloud, sur ses propres infrastructures. Notamment, l’adresse IP du visiteur présente dans les données de trafic, afin d’être traitée et analysée pour déterminer sa géolocalisation (limitée à l'échelle de la région), est extraite sous forme anonymisée. Ainsi, aucune donnée à caractère personnel permettant l’identification, directe ou indirecte, des visiteurs cités préalablement n’est conservée dans le cadre d’OVHcloud Web Statistics.  
 
-## Aller plus loin
+## Aller plus loin <a name="go-further"></a>
 
 [Se connecter à l’espace de stockage de son hébergement web](/pages/web_cloud/web_hosting/ftp_connection)
 
@@ -188,5 +188,9 @@ Afin d’être utilisées dans le cadre d’OVHcloud Web Statistics, les donnée
 [Restaurer l’espace de stockage de son hébergement web](/pages/web_cloud/web_hosting/ftp_save_and_backup)
 
 [Récupérer la sauvegarde de la base de données d’un hébergement web](/pages/web_cloud/web_hosting/sql_database_export)
+
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
+
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
