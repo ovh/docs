@@ -60,7 +60,7 @@ En cliquant sur l’onglet `Bases de données`{.action}, la liste des bases de d
 
 ### Copier le contenu d'une base de données
 
-Cliquez sur le bouton `...`{.action} à droite de la ligne correspondant à la base de données que vous souhaitez copier, puis sélectionnez `Copier la base de données`{.action}.
+Toujours dans l'onglet `Bases de données`{.action}, cliquez sur le bouton `...`{.action} à droite de la ligne correspondant à la base de données dont vous souhaitez copier le contenu, puis sélectionnez `Copier la base de données`{.action}.
 
 ![CTA_copier_BDD](images/CTA_copyDB.png){.thumbnail}
 
