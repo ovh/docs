@@ -50,11 +50,11 @@ En cliquant sur l’onglet `Bases de données`{.action}, la liste de vos bases d
 
 #### Web Cloud Databases
 
-Dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), sélectionnez `Web Cloud`{.action} dans le menu en haut de l'interface. Dans la colonne de gauche, dirigez-vous dans l’onglet `Web Cloud Databases`{.action}, puis sélectionnez le serveur Web Cloud Database où se trouve votre base de données source dont le contenu est à copier.
+Dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), sélectionnez `Web Cloud`{.action} dans le menu en haut de l'interface. Dans la colonne de gauche, dirigez-vous dans l’onglet `Web Cloud Databases`{.action}, puis sélectionnez le serveur Web Cloud Databases où se trouve votre base de données source dont le contenu est à copier.
 
 ![Liste des serveurs WCD](images/list-wcd-server.png){.thumbnail}
 
-En cliquant sur l’onglet `Bases de données`{.action}, la liste des bases de données présentes sur votre serveur Web Cloud Database s’affiche.
+En cliquant sur l’onglet `Bases de données`{.action}, la liste des bases de données présentes sur votre serveur Web Cloud Databases s’affiche.
 
 ![Liste des BDD WCD](images/list-database-wcd.png){.thumbnail}
 
@@ -107,7 +107,7 @@ La copie de la base de données peut prendre plusieurs minutes. Pour vérifier q
 
 #### Choix 2 - Copier vers une base de données présente sur un serveur Web Cloud Databases
 
-Vous venez de sélectionner `Copier vers un Web Cloud Databases`{.action}. Deux listes déroulantes s'affichent. Cliquez sur la première puis sélectionnez l'offre Web Cloud Database sur laquelle se trouve votre base de données de destination. Une fois l'offre Web Cloud Database sélectionnée, cliquez sur la deuxième liste déroulante pour choisir la base de données de destination présente sur votre serveur Web Cloud Databases.
+Vous venez de sélectionner `Copier vers un Web Cloud Databases`{.action}. Deux listes déroulantes s'affichent. Cliquez sur la première puis sélectionnez l'offre Web Cloud Databases sur laquelle se trouve votre base de données de destination. Une fois l'offre Web Cloud Databases sélectionnée, cliquez sur la deuxième liste déroulante pour choisir la base de données de destination présente sur votre serveur Web Cloud Databases.
 
 Cliquez sur `Suivant`{.action}. Le message de confirmation suivant s’affiche :
 
