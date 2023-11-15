@@ -6,7 +6,7 @@ updated: 2023-11-22
 
 ## Objectif
 
-Votre base de données est un élément central dans la construction de votre site web dynamique. Au cours du cycle de vie de votre site web, pour des raisons pratiques ou techniques, vous devez pouvoir copier le contenu de votre base de données vers une autre de vos bases de données [start SQL](https://www.ovhcloud.com/fr/web-hosting/options/start-sql/) ou [Web Cloud Databases](https://www.ovhcloud.com/fr/web-cloud/databases/).
+Votre base de données est un élément central dans la construction de votre site web dynamique. Au cours du cycle de vie de votre site web, pour des raisons pratiques ou techniques, vous pouvez être amené à copier le contenu de votre base de données vers une autre de vos bases de données [start SQL](https://www.ovhcloud.com/fr/web-hosting/options/start-sql/) ou [Web Cloud Databases](https://www.ovhcloud.com/fr/web-cloud/databases/).
 
 **Découvrez comment copier le contenu d'une base de données OVHcloud dans une autre de vos bases de données OVHcloud.**
 
