@@ -42,35 +42,35 @@ Selon votre situation, le chemin pour accéder à votre base de données source 
 
 Dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), sélectionnez `Web Cloud`{.action} dans le menu en haut de l'interface. Dans la colonne de gauche, dirigez-vous dans l’onglet `Hébergements`{.action}, puis cliquez sur l’hébergement web où se trouve la base de donnée source dont le contenu est à copier.
 
-![Liste des hébergements](images/list_web_hosting.png){.thumbnail}
+![Liste des hébergements](images/list-web-hosting.png){.thumbnail}
 
 En cliquant sur l’onglet `Bases de données`{.action}, la liste de vos bases de données Start SQL s’affiche.
 
-![Liste des BDD Start SQL](images/list_bdd_startSQL.png){.thumbnail}
+![Liste des BDD Start SQL](images/list-bdd-startsql.png){.thumbnail}
 
 #### Web Cloud Databases
 
 Dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), sélectionnez `Web Cloud`{.action} dans le menu en haut de l'interface. Dans la colonne de gauche, dirigez-vous dans l’onglet `Web Cloud Databases`{.action}, puis sélectionnez le serveur Web Cloud Database où se trouve votre base de données source dont le contenu est à copier.
 
-![Liste des serveurs WCD](images/list_WCD_server.png){.thumbnail}
+![Liste des serveurs WCD](images/list-wcd-server.png){.thumbnail}
 
 En cliquant sur l’onglet `Bases de données`{.action}, la liste des bases de données présentes sur votre serveur Web Cloud Database s’affiche.
 
-![Liste des BDD WCD](images/list_BDD_WCD.png){.thumbnail}
+![Liste des BDD WCD](images/list-database-wcd.png){.thumbnail}
 
 ### Copier le contenu d'une base de données
 
 Toujours dans l'onglet `Bases de données`{.action} et quel que soit votre offre, cliquez sur le bouton `...`{.action} à droite de la ligne correspondant à la base de données dont vous souhaitez copier le contenu, puis sélectionnez `Copier la base de données`{.action}.
 
-![CTA_copier_BDD](images/CTA_copyDB.png){.thumbnail}
+![CTA_copier_BDD](images/cta-copy-database.png){.thumbnail}
 
 Une fenêtre s’affiche afin d’identifier votre base de données de destination.
 
-![Interface copier BDD](images/interface_copy_DB.png){.thumbnail}
+![Interface copier BDD](images/interface-copy-database.png){.thumbnail}
 
 Si vous ne possédez pas de base de données de destination et comme nous le montre la capture écran ci-après, cliquez sur le lien présent pour acheter une nouvelle base de données :
 
-![Liste des BDD WCD](images/link_buy_DB.png){.thumbnail}
+![Liste des BDD WCD](images/link-buy-database.png){.thumbnail}
 
 Vous pourrez choisir entre acheter une offre « [start SQL](https://www.ovhcloud.com/fr/web-hosting/options/start-sql/) » ou un serveur de bases de données « [Web Cloud Databases](https://www.ovhcloud.com/fr/web-cloud/databases/) ».
 
@@ -81,8 +81,6 @@ Vous pourrez choisir entre acheter une offre « [start SQL](https://www.ovhcloud
 > - Pour une base de données « Shared SQL » : suivez notre guide « [Créer une base de données sur son hébergement web](/pages/web_cloud/web_hosting/sql_create_database) »;
 > - Pour une base de données qui sera présente sur un serveur « Web Cloud Databases » : suivez notre guide « [Créer une base de données sur un serveur Web Cloud Databases](/pages/web_cloud/web_cloud_databases/create-db-and-user-on-db-server) ».
 >
-
-![Activer une BDD](images/activate_DB.png){.thumbnail}
 
 Si vous possédez déjà une base de données de destination, choisissez d'abord son type :
 
@@ -95,17 +93,17 @@ Vous venez de sélectionner `Copier vers une base de données`{.action}. Deux li
 
 Cliquez sur `Suivant`{.action}. Le message de confirmation ci-après s’affiche :
 
-![Message de confirmation copier BDD](images/confirmation_copy_DB.png){.thumbnail}
+![Message de confirmation copier BDD](images/confirmation-copy-database.png){.thumbnail}
 
 Si vous ne souhaitez pas écraser la base de données de destination choisie, cliquez sur `Précédent`{.action} pour modifier votre choix ou sur `Annuler`{.action} pour tout annuler. Sinon, cliquez sur `Valider`{.action} pour confirmer la duplication du contenu de la base de données source vers la base de données de destination.
 
 Le message de confirmation suivant s’affiche :
 
-![Message de succès BDD](images/success_copy_DB.png){.thumbnail}
+![Message de succès BDD](images/success-copy-database.png){.thumbnail}
 
 La copie de la base de données peut prendre plusieurs minutes. Pour vérifier que la copie a bien été prise en compte, dirigez-vous dans l’onglet `Tâches en cours`{.action}. Dans le tableau, une nouvelle ligne correspondant à votre copie apparaît avec un statut « planifié ». Une fois l’opération terminée, la ligne disparaît.
 
-![Tâches en cours](images/ongoing_tasks.png){.thumbnail}
+![Tâches en cours](images/ongoing-tasks.png){.thumbnail}
 
 #### Choix 2 - Copier vers une base de données présente sur un serveur Web Cloud Databases
 
@@ -113,13 +111,13 @@ Vous venez de sélectionner `Copier vers un Web Cloud Databases`{.action}. Deux 
 
 Cliquez sur `Suivant`{.action}. Le message de confirmation suivant s’affiche :
 
-![Message de confirmation copier BDD](images/confirmation_copy_DB.png){.thumbnail}
+![Message de confirmation copier BDD](images/confirmation-copy-database.png){.thumbnail}
 
 Si vous ne souhaitez pas écraser la base de données de destination choisie, cliquez sur `Précédent`{.action} pour modifier votre choix ou sur `Annuler`{.action} pour tout annuler. Sinon, cliquez sur `Valider`{.action} pour confirmer la duplication du contenu de la base de données source vers la base de données de destination.
 
 La copie de la base de données peut prendre plusieurs minutes. Pour vérifier que la copie a bien été prise en compte, dirigez-vous dans l’onglet `Tâches en cours`{.action}. Dans le tableau, une nouvelle ligne correspondant à votre copie apparaît avec un statut « planifié ». Une fois l’opération terminée, la ligne disparaît.
 
-![Tâches en cours](images/ongoing_tasks.png){.thumbnail}
+![Tâches en cours](images/ongoing-tasks.png){.thumbnail}
 
 ### Configurer son site web avec sa nouvelle base de données
 
