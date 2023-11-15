@@ -31,7 +31,12 @@ Avant de commencer, assurez-vous que :
 
 ### Identifier ma base de données source
 
-Cette fonctionnalité est disponible pour la copie d'une base de données [Start SQL](https://www.ovhcloud.com/fr/web-hosting/options/start-sql/) (incluse dans certains de nos [hébergements web](https://www.ovhcloud.com/fr/web-hosting/) ou [commandée séparément](https://www.ovhcloud.com/fr/web-hosting/options/start-sql/)) ou celle d'une base de données [Web Cloud Databases](https://www.ovhcloud.com/fr/web-cloud/databases/) (incluse avec nos [hébergements Performance](https://www.ovhcloud.com/fr/web-hosting/performance-offer/) ou [commandée séparément](https://www.ovhcloud.com/fr/web-cloud/databases/)). Selon votre situation, le chemin pour accéder à votre base de données source est différent.
+Cette fonctionnalité est disponible pour la copie  : 
+
+- d'une base de données [Start SQL](https://www.ovhcloud.com/fr/web-hosting/options/start-sql/) (incluse dans certains de nos [hébergements web](https://www.ovhcloud.com/fr/web-hosting/) ou [commandée séparément](https://www.ovhcloud.com/fr/web-hosting/options/start-sql/));
+- d'une base de données présente sur un serveur [Web Cloud Databases](https://www.ovhcloud.com/fr/web-cloud/databases/) (incluse avec nos [hébergements Performance](https://www.ovhcloud.com/fr/web-hosting/performance-offer/) ou [commandée séparément](https://www.ovhcloud.com/fr/web-cloud/databases/)). 
+
+Selon votre situation, le chemin pour accéder à votre base de données source est différent.
 
 #### Base de données Start SQL
 
