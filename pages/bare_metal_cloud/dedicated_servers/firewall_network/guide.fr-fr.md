@@ -29,6 +29,8 @@ Pour protéger son infrastructure globale et les serveurs de ses clients, OVHclo
 
 ## En pratique
 
+OVHcloud a récemment amélioré son offre de sécurité avec l'introduction de l'Edge Network Firewall. Cette fonctionnalité avancée permet de réduire l'exposition aux attaques de réseau en provenance d'Internet, en déplaçant les règles de pare-feu du serveur vers la périphérie du réseau d'OVHcloud. Cela permet de bloquer les attaques entrantes aussi près que possible de leur origine, réduisant ainsi le risque de saturation de la connectivité du serveur ou du rack pour les attaques plus importantes. La gestion des règles de pare-feu peut être complexe, mais grâce à la récente mise à jour de l'interface de l'Edge Network Firewall, cette tâche est désormais plus simple et plus intuitive.
+
 ### Activer le Network Firewall
 
 > [!primary]
@@ -76,21 +78,26 @@ Vous pouvez configurer jusqu'à **20 règles par adresse IP**.
 > Pour plus d'informations, consultez les guides suivants : [Configurer le pare-feu sous Windows](/pages/bare_metal_cloud/dedicated_servers/activate-port-firewall-soft-win) et [Configurer le pare-feu sous Linux avec Iptables](/pages/bare_metal_cloud/dedicated_servers/firewall-Linux-iptable).
 >
 
-Pour ajouter une règle, cliquez sur `Ajouter une règle`{.action}.
+Pour ajouter une règle:
 
-![Ajouter une règle](images/addarule2022.png){.thumbnail}
+| ![add-rule-btn](images/edge-firewall-add-rule.png) | 
+|:--:| 
+| Cliquezr sur `Ajouter une règle`{.action}. |
 
-Pour chaque règle, vous devez choisir :
 
-- une priorité (de 0 à 19, 0 étant la première règle à appliquer) ;
-- une action (`Autoriser`{.action} ou `Refuser`{.action}) ;
-- le protocole ;
-- une adresse IP (facultatif) ;
-- le port source (TCP uniquement) ;
-- le port de destination (TCP uniquement) ;
-- les options TCP (TCP uniquement).
+Pour chaque règle (hors TCP), vous devez choisir :
 
-![Détails sur l'ajout d'une règle](images/ajoutregle4.png){.thumbnail}
+| ![add-rule-btn](images/basic-rule.png) | 
+|:--| 
+| &bull; une priorité (de 0 à 19, 0 étant la première règle à appliquer) <br>&bull; une action (`Autoriser`{.action} ou `Refuser`{.action}) <br>&bull; le protocol <br>&bull; une adresse IP (facultatif) |
+
+
+Pour chaque règle **TCP**, vous devez choisir :
+
+| ![add-rule-btn](images/tcp-rule.png) | 
+|:--| 
+| &bull; une priorité (de 0 à 19, 0 étant la première règle à appliquer) <br>&bull; une action (`Autoriser`{.action} ou `Refuser`{.action}) <br>&bull; le protocol <br>&bull; une adresse IP (facultatif) <br>&bull; le port source <br>&bull; le port de destination <br>&bull; les options <br>&bull; Fragments|
+
 
 > [!primary]
 >
@@ -131,25 +138,6 @@ Pour l'activer, cliquez sur le menu `Bare Metal Cloud`{.action} et ouvrez `IP`{.
 > Si notre solution anti-DDoS limite une attaque, les règles configurées de votre Network Firewall finiront par être appliquées, même si vous avez désactivé le Firewall. Si vous souhaitez qu'aucune règle ne soit appliquée durant une attaque, vous devez supprimer toute règle préalablement créée.
 >
 > La mitigation étant intégrée à notre solution Anti-DDoS (VAC), elle ne peut être désactivée sur un service. Tous les produits OVHcloud sont livrés avec la protection Anti-DDoS.
-
-### Configurer le pare-feu Armor (Firewall Game)
-
-> [!primary]
-> Par défaut, le pare-feu Armor est préconfiguré avec certaines règles qu'OVHcloud a déterminé fonctionner avec les jeux les plus courants. Cependant, pour les clients disposant d’un serveur dédié Game, nous vous permettons d’aller plus loin et de configurer également des règles pour les ports.
->
-
-Afin de configurer les règles de vos ports sur Armor, vous devez d'abord vous connecter à votre espace client OVHcloud.<br>
-Ensuite, rendez-vous dans le menu `Bare Metal Cloud`{.action} et cliquez sur la section `IP`{.action} dans la barre latérale de gauche. Cliquez sur `...`{.action} à côté de l'adresse IP de votre serveur de jeu puis sur `Configurer le firewall game`{.action}.
-
-![Game_wall](images/GAMEwall2021.png){.thumbnail}
-
-Sur l’écran suivant, cliquez sur le bouton `Ajouter une règle`{.action} pour ajouter une règle à Armor.
-
-Vous pouvez configurer jusqu'à **30 règles par adresse IP**.
-
-![Configure_Armor](images/ConfigureArmor2021.png){.thumbnail}
-
-Activez les ports selon vos besoins sur l'écran suivant et cliquez sur le bouton `Confirmer`{.action} lorsque vous avez fini d'ajouter vos règles. Le pare-feu Armor a maintenant été configuré avec succès.
 
 ## Aller plus loin
 
