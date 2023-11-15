@@ -8,5 +8,4 @@ Les produits couverts par ces annonces de fin de vente et de fin de vie sont les
 
 |Version|Annonce de fin de vie|Fin de vente|Fin de support|
 |---|---|---|---|
-|MySQL 5.6|2019-07-29|2020-08-02|2021-02-01|
 |MySQL 5.7|2023-11-16|2024-02-16|2024-05-17|
