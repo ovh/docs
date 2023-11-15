@@ -50,7 +50,7 @@ En cliquant sur l’onglet `Bases de données`{.action}, la liste de vos bases d
 
 #### Web Cloud Databases
 
-Dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), sélectionnez `Web Cloud`{.action} dans le menu en haut de l'interface. Dans la colonne de gauche, dirigez-vous dans l’onglet `Web Cloud Databases`{.action}, puis sélectionnez le serveur Web Cloud Database où se trouve votre base de données source à copier.
+Dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), sélectionnez `Web Cloud`{.action} dans le menu en haut de l'interface. Dans la colonne de gauche, dirigez-vous dans l’onglet `Web Cloud Databases`{.action}, puis sélectionnez le serveur Web Cloud Database où se trouve votre base de données source dont le contenu est à copier.
 
 ![Liste des serveurs WCD](images/list_WCD_server.png){.thumbnail}
 
