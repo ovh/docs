@@ -1,7 +1,7 @@
 ---
 title: "Hébergement web : ma base de données est saturée, que faire ?"
 excerpt: "Découvrez comment agir lorsque votre base de données est saturée"
-updated: 2023-10-26
+updated: 2023-11-22
 ---
 
 ## Objectif
@@ -124,7 +124,9 @@ Consultez notre offre de bases de données [Web Cloud Databasess](https://www.ov
 
 Nous recommandons cette offre pour les bases de données volumineuses.
 
-Suivez ensuite nos guides pour déplacer le contenu de votre ancienne base de données vers la nouvelle :
+Il est possible de dupliquer le contenu de votre base de données OVHcloud directement vers une autre de vos bases de données OVHcloud grâce à une fonctionnalité présente dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc). Pour cela, consultez notre guide « [Dupliquer le contenu d'une base de données dans une autre](/pages/web_cloud/web_hosting/copy_database) ».
+
+Dans le cas d'une migration vers une base de données externe aux offres [Start SQL](https://www.ovhcloud.com/fr-ca/web-hosting/options/start-sql/) et [Web Cloud Databases](https://www.ovhcloud.com/fr-ca/web-cloud/databases/), vous pouvez déplacer manuellement le contenu de votre ancienne base de données vers une nouvelle à l'aide de nos guides:
 
 - [Exporter votre base de données existante](/pages/web_cloud/web_hosting/sql_database_export)
 - [Premiers pas avec l'offre Web Cloud Databasess](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)
@@ -190,6 +192,8 @@ DROP TABLE `table_1`
 > Dans cet exemple, la commande supprime la table **table_1** et l'ensemble des lignes qu'elle contient.
 
 ## Aller plus loin <a name="go-further"></a>
+
+[Dupliquer le contenu d'une base de données dans une autre](/pages/web_cloud/web_hosting/copy_database)
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/directory/).
 
