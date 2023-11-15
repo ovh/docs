@@ -21,7 +21,7 @@ Vous venez d’acquérir un hébergement web pour créer votre site internet. Ce
 
 > [!success]
 >
-> Avant de poursuivre la lecture de ce guide, nous vous recommandons de vous assurer que le nom de domaine ou le sous-domaine que vous souhaitez utiliser avec votre hébergement web OVHcloud est correctement associé et déclaré dessus. Pour cela, consultez notre guide « [Partager son hébergement web OVHcloud entre plusieurs sites web](/pages/web_cloud/web_hosting/multisites_configure_multisite) ».
+> Avant de poursuivre la lecture de ce guide, assurez-vous que le nom de domaine ou le sous-domaine que vous souhaitez utiliser soit correctement associé avec votre hébergement web OVHcloud. Pour cela, consultez notre guide « [Partager son hébergement web OVHcloud entre plusieurs sites web](/pages/web_cloud/web_hosting/multisites_configure_multisite) ».
 >
 
 ### Étape 1 : délimiter votre projet
