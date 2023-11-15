@@ -54,7 +54,7 @@ Dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager
 
 ![Liste des serveurs WCD](images/list_WCD_server.png){.thumbnail}
 
-En cliquant sur l’onglet `Bases de données`{.action}, la liste de votre Web Cloud Database s’affiche.
+En cliquant sur l’onglet `Bases de données`{.action}, la liste des bases de données présentes sur votre serveur Web Cloud Database s’affiche.
 
 ![Liste des BDD WCD](images/list_BDD_WCD.png){.thumbnail}
 
