@@ -1,7 +1,7 @@
 ---
 title: Przeniesienie strony WWW i kont e-mail do OVHcloud
 excerpt: "Dowiedz się, jak migrować Twoją stronę WWW, konta e-mail i domenę do OVHcloud bez przerwy w dostępności usług"
-updated: 2022-11-24
+updated: 2023-11-15
 ---
 
 > [!primary]

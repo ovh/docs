@@ -1,7 +1,7 @@
 ---
 title: 'Erste Schritte mit MX Plan'
 excerpt: 'Erfahren Sie hier, wie Sie Ihr MX Plan Angebot verwenden'
-updated: 2021-07-19
+updated: 2023-11-15
 ---
 
 > [!primary]

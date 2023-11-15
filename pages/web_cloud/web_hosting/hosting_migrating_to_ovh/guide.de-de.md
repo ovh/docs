@@ -1,7 +1,7 @@
 ---
 title: Migration Ihrer Website und E-Mails zu OVH
 excerpt: "Erfahren Sie hier, wie Sie Ihre Website, E-Mails und Domains ohne Dienstunterbrechung zu OVHcloud migrieren"
-updated: 2022-11-24
+updated: 2023-11-15
 ---
 
 > [!primary]
