@@ -38,7 +38,7 @@ To be considered as a valid owned block, imported blocks must be one of the foll
 
 | ARIN (object «Network type ») | RIPE (object « status ») |
 | :--- | :--- |
-| &bull; Direct Allocation <br>&bull; Direct Assignment <br>&bull; Reallocated <br>&bull; Reassigned  |  &bull; Allocated PA <br>&bull; Lir-partitioned PA  <br>&bull; Sub-allocated PA  <br>&bull; Assigned PA  <br>&bull; Assigned PI  <br>&bull; Legacy   |
+| &bull; Direct Allocation <br>&bull; Direct Assignment <br>&bull; Reallocated <br>&bull; Reassigned  |  &bull; ALLOCATED PA <br>&bull; LIR-PARTITIONED PA  <br>&bull; SUB-ALLOCATED PA  <br>&bull; ASSIGNED PA  <br>&bull; ASSIGNED PI  <br>&bull; LEGACY   |
 | **For more information :** <br>&bull; [« Using WhoIs - Network »](https://www.arin.net/resources/registry/whois/#network) <br>&bull; [« Reporting Reassignments »](https://www.arin.net/resources/registry/reassignments/) | **For more information :** <br>[« Description of the INETNUM Object »](https://apps.db.ripe.net/docs/04.RPSL-Object-Types/02-Descriptions-of-Primary-Objects.html#description-of-the-inetnum-object) |
 
 
