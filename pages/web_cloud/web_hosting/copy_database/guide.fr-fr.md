@@ -60,7 +60,7 @@ En cliquant sur l’onglet `Bases de données`{.action}, la liste des bases de d
 
 ### Copier le contenu d'une base de données
 
-Toujours dans l'onglet `Bases de données`{.action}, cliquez sur le bouton `...`{.action} à droite de la ligne correspondant à la base de données dont vous souhaitez copier le contenu, puis sélectionnez `Copier la base de données`{.action}.
+Toujours dans l'onglet `Bases de données`{.action} et quel que soit votre offre, cliquez sur le bouton `...`{.action} à droite de la ligne correspondant à la base de données dont vous souhaitez copier le contenu, puis sélectionnez `Copier la base de données`{.action}.
 
 ![CTA_copier_BDD](images/CTA_copyDB.png){.thumbnail}
 
@@ -68,26 +68,32 @@ Une fenêtre s’affiche afin d’identifier votre base de données de destinati
 
 ![Interface copier BDD](images/interface_copy_DB.png){.thumbnail}
 
-Si vous ne possédez pas de base de données de destination, cliquez sur le lien suivant pour acheter une nouvelle base de données :
+Si vous ne possédez pas de base de données de destination et comme nous le montre la capture écran ci-après, cliquez sur le lien présent pour acheter une nouvelle base de données :
 
 ![Liste des BDD WCD](images/link_buy_DB.png){.thumbnail}
 
+Vous pourrez choisir entre acheter une offre « [start SQL](https://www.ovhcloud.com/fr/web-hosting/options/start-sql/) » ou un serveur de bases de données « [Web Cloud Databases](https://www.ovhcloud.com/fr/web-cloud/databases/) ».
+
 > [!primary]
 >
-> Lorsque vous achetez votre nouvelle base de données, celle-ci n’est pas activée par défaut. N'oubliez pas de l'activer. Pour cela, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), puis rendez-vous dans la partie `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} dans la colonne de gauche, puis sélectionnez l'hébergement web concerné par l'ajout d'une base de données supplémentaire. Sur la page qui s'affiche, cliquez sur l'onglet `Bases de données`{.action}. Appuyez sur le bouton `Actions`{.action} pour commander une base de données supplémentaire, puis sur `Créer une base de données`{.action}. Suivez les étapes jusqu'à la finalisation de la commande de la base de données. Pour plus de détails, suivez notre guide [Créer une base de données sur son hébergement web](/pages/web_cloud/web_hosting/sql_create_database).
+> Lorsque vous achetez votre nouvelle base de données, celle-ci n’est pas activée par défaut. N'oubliez pas de l'activer. Pour cela, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), puis rendez-vous dans la partie `Web Cloud`{.action}.
+> 
+> - Pour une base de données « Shared SQL » : suivez notre guide « [Créer une base de données sur son hébergement web](/pages/web_cloud/web_hosting/sql_create_database) »;
+> - Pour une base de données qui sera présente sur un serveur « Web Cloud Databases » : suivez notre guide « [Créer une base de données sur un serveur Web Cloud Databases](/pages/web_cloud/web_cloud_databases/create-db-and-user-on-db-server) ».
 >
 
 ![Activer une BDD](images/activate_DB.png){.thumbnail}
 
 Si vous possédez déjà une base de données de destination, choisissez d'abord son type :
+
 - `Copier vers une base de données`{.action} : si vous souhaitez copier le contenu de votre base de données source vers une base de données **Start SQL** (destination).
 - `Copier vers un Web Cloud Databases`{.action} : si vous souhaitez copier le contenu de votre base de données source vers une base de données **Web Cloud Databas** (destination).
 
-#### Choix 1 - Copier vers une base de données
+#### Choix 1 - Copier vers une base de données Start SQL
 
 Vous venez de sélectionner `Copier vers une base de données`{.action}. Deux listes déroulantes s'affichent. Cliquez sur la première puis sélectionnez l’hébergement web sur lequel se trouve votre base de données Start SQL de destination. Une fois l’hébergement web sélectionné, cliquez sur la deuxième liste déroulante pour choisir la base de données Start SQL de destination.
 
-Cliquez sur `Suivant`{.action}. Le message de confirmation suivant s’affiche :
+Cliquez sur `Suivant`{.action}. Le message de confirmation ci-après s’affiche :
 
 ![Message de confirmation copier BDD](images/confirmation_copy_DB.png){.thumbnail}
 
@@ -101,7 +107,7 @@ La copie de la base de données peut prendre plusieurs minutes. Pour vérifier q
 
 ![Tâches en cours](images/ongoing_tasks.png){.thumbnail}
 
-#### Choix 2 - Copier vers une base de données Web Cloud Databases
+#### Choix 2 - Copier vers une base de données présente sur un serveur Web Cloud Databases
 
 Vous venez de sélectionner `Copier vers un Web Cloud Databases`{.action}. Deux listes déroulantes s'affichent. Cliquez sur la première puis sélectionnez l'offre Web Cloud Database sur laquelle se trouve votre base de données de destination. Une fois l'offre Web Cloud Database sélectionnée, cliquez sur la deuxième liste déroulante pour choisir la base de données de destination présente sur votre serveur Web Cloud Databases.
 
@@ -152,7 +158,7 @@ Cette erreur signifie que vous ne possédez qu’une seule base de données acti
 
 #### Vous avez déjà une action en cours
 
-Cette erreur signifie qu’une tâche est déjà en cours sur votre base de données. Dirigez-vous dans l’onglet `Tâches en cours`{.action} et vérifiez que vous avez bien une tâche déjà en cours. Si c’est le cas, attendez qu’elle soit terminée pour recommencer la copie de votre base de données.
+Cet message signifie qu’une tâche est déjà en cours sur votre base de données. Dirigez-vous dans l’onglet `Tâches en cours`{.action} et vérifiez que vous avez bien une tâche déjà en cours. Si c’est le cas, attendez qu’elle soit terminée pour recommencer la copie de votre base de données si nécessaire.
 
 #### La base de données de destination ne contient pas assez d’espace
 
@@ -163,7 +169,7 @@ Votre base de données de destination ne contient pas assez d’espace. Deux sol
 
 #### Les bases de données source et destination sont incompatibles
 
-Cette erreur signifie que le **S**ystème de **G**estion de **B**ases de **D**onnées (**SGBD**) de votre base de données source n’est pas le même que le SGBD de votre base de données de destination.
+Cette notification signifie que le **S**ystème de **G**estion de **B**ases de **D**onnées (**SGBD**) de votre base de données source n’est pas le même que le SGBD de votre base de données de destination.
 
 Par exemple, cette erreur peut survenir lorsque vous utilisez MySQL pour votre base de données source, et PostgreSQL pour votre base de données de destination.
 
