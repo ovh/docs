@@ -8,16 +8,16 @@ updated: 2023-11-22
 
 Votre base de données est un élément central dans la construction de votre site web dynamique. Au cours du cycle de vie de votre site web, pour des raisons pratiques ou techniques, vous pouvez être amené à copier le contenu de votre base de données vers une autre de vos bases de données [start SQL](https://www.ovhcloud.com/fr/web-hosting/options/start-sql/) ou [Web Cloud Databases](https://www.ovhcloud.com/fr/web-cloud/databases/).
 
-**Découvrez comment copier le contenu d'une base de données OVHcloud dans une autre de vos bases de données OVHcloud.**
+**Découvrez comment copier le contenu d'une base de données OVHcloud dans une autre base de données OVHcloud.**
 
 > [!primary]
 >
-> Grâce à cette fonctionnalité, les bases de données ne sont pas déplacées mais copiées. En effet, la base de données d’origine n’est pas supprimée automatiquement, contrairement à un processus de migration.
+> Grâce à cette fonctionnalité, les bases de données ne sont pas déplacées mais copiées. En effet, la base de données d’origine n’est pas supprimée automatiquement, contrairement à un processus de migration. Seul le contenu de la base de données source est dupliqué pour être copié dans la base de données de destination.
 >
 
 ## Prérequis
 
-- Disposer d’offres de bases de données [start SQL](https://www.ovhcloud.com/fr/web-hosting/options/start-sql/) et/ou [Web Cloud Databases](https://www.ovhcloud.com/fr/web-cloud/databases/)
+- Disposer d’offres de bases de données [start SQL](https://www.ovhcloud.com/fr/web-hosting/options/start-sql/) et/ou [Web Cloud Databases](https://www.ovhcloud.com/fr/web-cloud/databases/). Les deux bases de données concernées doivent être préalablement créées pour pouvoir utiliser l'outil de duplication.
 - Être connecté à l’[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 - Disposer des droits suffisants sur l’ensemble des services de base de données concernées. Retrouvez plus d'informations sur notre guide [Gérer les contacts de ses services](/pages/account_and_service_management/account_information/managing_contacts).
 
@@ -31,7 +31,7 @@ Avant de commencer, assurez-vous que :
 
 ### Identifier ma base de données source
 
-Cette fonctionnalité est disponible pour la copie  : 
+Cette fonctionnalité est disponible pour la copie : 
 
 - d'une base de données [Start SQL](https://www.ovhcloud.com/fr/web-hosting/options/start-sql/) (incluse dans certains de nos [hébergements web](https://www.ovhcloud.com/fr/web-hosting/) ou [commandée séparément](https://www.ovhcloud.com/fr/web-hosting/options/start-sql/));
 - d'une base de données présente sur un serveur [Web Cloud Databases](https://www.ovhcloud.com/fr/web-cloud/databases/) (incluse avec nos [hébergements Performance](https://www.ovhcloud.com/fr/web-hosting/performance-offer/) ou [commandée séparément](https://www.ovhcloud.com/fr/web-cloud/databases/)). 
@@ -97,7 +97,7 @@ Cliquez sur `Suivant`{.action}. Le message de confirmation ci-après s’affiche
 
 ![Message de confirmation copier BDD](images/confirmation_copy_DB.png){.thumbnail}
 
-Si vous ne souhaitez pas écraser la base de données de destination choisie, cliquez sur `Précédent`{.action} pour modifier votre choix ou sur `Annuler`{.action} pour annuler. Sinon, cliquez sur `Valider`{.action} pour confirmer la copie de la base de données.
+Si vous ne souhaitez pas écraser la base de données de destination choisie, cliquez sur `Précédent`{.action} pour modifier votre choix ou sur `Annuler`{.action} pour tout annuler. Sinon, cliquez sur `Valider`{.action} pour confirmer la duplication du contenu de la base de données source vers la base de données de destination.
 
 Le message de confirmation suivant s’affiche :
 
@@ -115,6 +115,8 @@ Cliquez sur `Suivant`{.action}. Le message de confirmation suivant s’affiche :
 
 ![Message de confirmation copier BDD](images/confirmation_copy_DB.png){.thumbnail}
 
+Si vous ne souhaitez pas écraser la base de données de destination choisie, cliquez sur `Précédent`{.action} pour modifier votre choix ou sur `Annuler`{.action} pour tout annuler. Sinon, cliquez sur `Valider`{.action} pour confirmer la duplication du contenu de la base de données source vers la base de données de destination.
+
 La copie de la base de données peut prendre plusieurs minutes. Pour vérifier que la copie a bien été prise en compte, dirigez-vous dans l’onglet `Tâches en cours`{.action}. Dans le tableau, une nouvelle ligne correspondant à votre copie apparaît avec un statut « planifié ». Une fois l’opération terminée, la ligne disparaît.
 
 ![Tâches en cours](images/ongoing_tasks.png){.thumbnail}
@@ -125,7 +127,7 @@ Une fois la copie de votre base de données source effectuée, vous devrez réal
 
 Dans l’onglet `Tâches en cours`{.action}, assurez-vous que la copie est bien terminée (la ligne correspondante à votre copie a disparu).
 
-Pour connecter la nouvelle base de données à votre site web, éditez le fichier de configuration de votre **C**ontent **M**anagement **S**ystem (**CMS**) et saisissez les coordonnées de la nouvelle base de données.
+Pour connecter la nouvelle base de données à votre site web, éditez le fichier de configuration de votre **C**ontent **M**anagement **S**ystem (**CMS**) et saisissez les informations de connexion de la nouvelle base de données.
 
 > [!warning]
 >
@@ -151,14 +153,15 @@ Durant le processus de copie du contenu de la base de données, vous pouvez renc
 
 #### Aucune base de données ne s’affiche dans la liste
 
-Cette erreur signifie que vous ne possédez qu’une seule base de données active. Pour copier votre base de données source, il vous faut également une base de données de destination active. Pour cela, vous pouvez:
+Cette notification signifie que vous ne possédez qu’une seule base de données active. Pour copier votre base de données source, il vous faut également une base de données de destination active. Pour cela, vous pouvez:
 
-- Configurez une nouvelle base de données disponible sur votre hébergement web.
-- Configurez une nouvelle base de données sur votre serveur [Web Cloud Databases](https://www.ovhcloud.com/fr/web-cloud/databases/).
+- Configurez une nouvelle base de données disponible sur votre hébergement web;
+- Configurez une nouvelle base de données sur votre serveur [Web Cloud Databases](https://www.ovhcloud.com/fr/web-cloud/databases/);
+- Commander une offre « [start SQL](https://www.ovhcloud.com/fr/web-hosting/options/start-sql/) » ou un serveur de bases de données « [Web Cloud Databases](https://www.ovhcloud.com/fr/web-cloud/databases/) »
 
 #### Vous avez déjà une action en cours
 
-Cet message signifie qu’une tâche est déjà en cours sur votre base de données. Dirigez-vous dans l’onglet `Tâches en cours`{.action} et vérifiez que vous avez bien une tâche déjà en cours. Si c’est le cas, attendez qu’elle soit terminée pour recommencer la copie de votre base de données si nécessaire.
+Ce message signifie qu’une tâche est déjà en cours sur votre base de données. Dirigez-vous dans l’onglet `Tâches en cours`{.action} et vérifiez que vous avez bien une opération déjà en cours. Si c’est le cas, attendez qu’elle soit terminée pour recommencer la copie de votre base de données si nécessaire.
 
 #### La base de données de destination ne contient pas assez d’espace
 
