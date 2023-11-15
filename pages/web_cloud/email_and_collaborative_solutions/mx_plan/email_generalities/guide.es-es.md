@@ -244,8 +244,6 @@ Para ello, puede crear una lista de difusión. Siga nuestra guía [Gestionar y u
 
 ## Más información
 
-Migrando los productos MX Plan a los nuevos productos MX Plan en curso. Si desea solicitar la migración de su plan con prioridad, siga las indicaciones de [esta página](https://www.ovh.es/mxplan-migration/#accordion_6001-4).
-
 Si sus necesidades evolucionan y quiere disfrutar de funcionalidades adicionales, también puede [migrar una dirección de correo MX Plan a una cuenta Email Pro o Exchange](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

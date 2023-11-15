@@ -152,8 +152,8 @@ Erstellen Sie neue E-Mail-Accounts und verwenden Sie dabei die gleichen E-Mail-A
 
 Wenn Sie sich für eins der E-Mail-Angebote Email Pro oder Exchange entschieden haben, lesen Sie unsere entsprechenden Anleitungen, um Ihre E-Mail-Adressen zu erstellen:
 
-- Email Pro: </pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config>
-- Exchange: </pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_starting_hosted>
+- [Email-Pro](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config)
+- [Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_starting_hosted)
 
 ### Schritt 6: OVHcloud E-Mail-Server in der aktiven DNS-Zone Ihres Domainnamens hinterlegen <a name="step6"></a>
 

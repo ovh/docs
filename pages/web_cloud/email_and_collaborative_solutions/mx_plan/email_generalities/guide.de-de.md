@@ -241,8 +241,6 @@ Hierzu können Sie eine Mailingliste erstellen, mithilfe unserer Anleitung "[Mai
 
 ## Weiterführende Informationen
 
-Die Migration eines alten MX Plan Dienstes (*Legacy*) auf das neuere MX Plan Angebot kann angefordert werden, wenn Sie nach Beachtung der Hinweise auf [dieser Seite](https://www.ovh.de/mxplan-migration/#accordion_6001-4) die dort angegebene Mailingliste anschreiben (EN/FR).
-
 Wenn Ihre Bedürfnisse sich ändern und Sie zusätzliche Funktionen benötigen, können Sie auch [eine MX Plan E-Mail-Adresse auf einen E-Mail Pro oder Exchange Account migrieren](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel).
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

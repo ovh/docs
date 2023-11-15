@@ -153,8 +153,8 @@ Skorzystaj z naszego przewodnika dotyczącego [tworzenia kont e-mail "MX Plan"](
 
 Jeśli wybrałeś rozwiązanie "Email Pro" lub "Exchange", zapoznaj się z naszą dokumentacją dotyczącą tworzenia kont e-mail:
 
-- Dla "Email-Pro": </pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config>
-- W przypadku "Exchange": </pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_starting_hosted>
+- Dla [Email-Pro](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config)
+- W przypadku [Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_starting_hosted)
 
 ### Etap 6: zadeklarować serwery e-mail OVHcloud w strefie DNS domeny <a name="step6"></a>
 

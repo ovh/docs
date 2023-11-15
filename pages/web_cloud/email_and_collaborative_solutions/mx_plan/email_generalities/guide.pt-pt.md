@@ -244,8 +244,6 @@ Para isso, pode criar uma mailing list. Sugerimos que siga o nosso manual [Gerir
 
 ## Saiba mais
 
-A migração das ofertas históricas MX Plan para as novas ofertas MX Plan está em curso. Se deseja solicitar a migração da sua oferta prioritariamente, pode seguir as indicações [desta página](https://www.ovh.pt/mxplan-migration/#accordion_6001-4).
-
 Se as suas necessidades evoluírem e pretender usufruir de funcionalidades suplementares, pode igualmente [migrar um endereço de e-mail MX Plan para uma conta E-mail Pro ou Exchange](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel).
 
 Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
