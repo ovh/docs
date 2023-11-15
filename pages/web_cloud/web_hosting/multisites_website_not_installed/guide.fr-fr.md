@@ -71,20 +71,37 @@ Vous pouvez également retrouver l'adresse IP associée à votre hébergement we
 
 #### 2\.2 Vérifier l'adresse IP notée dans la zone DNS active de votre nom de domaine
 
-Vous devez maintenant vérifier que l'adresse IP de votre hébergement apparaît dans la zone DNS active de votre domaine.
+Vous devez maintenant vérifier que l'adresse IP de votre hébergement web apparaît dans la zone DNS active de votre nom de domaine.
 
-Pour cela, rendez vous dans la partie `Domaines`{.action}, sélectionnez votre domaine puis allez dans l'onglet `Zone DNS`{.action}.
+> [!primary]
+>
+> Avant de poursuivre, sachez que, dès lors où une modification survient dans la **zone DNS** active d'un nom de domaine, un délai de **4 à 24 heures** est nécessaire à la propagation de cette mise à jour sur le réseau DNS.
+>
+> Si vous modifiez directement les **serveurs DNS** associés à votre nom de domaine, ce délai peut aller jusqu'à **48 heures** maximum.
+>
+
+Pour cela, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), puis rendez-vous dans la partie `Web Cloud`{.action} situé en haut de la page. Rendez vous dans la partie `Domaines`{.action}, sélectionnez votre nom de domaine puis dirigez-vous dans l'onglet `Zone DNS`{.action}.
+
+Un tableau avec différents enregistrements DNS s'affiche.
 
 |Scénarios possibles|Action à entreprendre|
 |---|---|
-|Dans la zone DNS, votre domaine est relié à l'adresse IP de votre hébergement par une entrée de type A (pour IPv4) ou AAAA (pour IPv6).<br><br>![zoneDNS_IP2](images/zonedns_ip2.png){.thumbnail}|Ceci indique que la configuration de votre nom de domaine est correcte.<br><br>Suite aux dernières modifications dans vos DNS, votre site s'affichera sous 48 heures au maximum.<br><br>Pensez également à redémarrer vos appareils (PC, smartphone, box, etc.) et à vider le cache de votre navigateur.|
-|Votre zone DNS ne comporte pas d'entrée de type A ou AAAA reliant votre domaine à l'adresse IP de votre hébergement. Ou l'entrée existante pointe sur une autre adresse IP.|Ajoutez une nouvelle entrée de type A ou AAAA ou corrigez l'entrée existante en suivant [ce guide](/pages/web_cloud/domains/dns_zone_edit).|
-|Votre domaine n'apparaît pas dans la partie `Domaines`{.action} de votre espace client.<br><br>Ou l'onglet `Zone DNS`{.action} de votre domaine s'affiche de la façon suivante :<br><br>![zonedns_ndd_pas_sur_lec2](images/zonedns_ndd_pas_sur_lec2.png){.thumbnail}|Cela signifie que votre domaine n'est pas géré depuis votre espace client OVHcloud.<br><br>Déterminez son registrar via notre outil [WHOIS](https://www.ovh.com/fr/support/outils/check_whois.pl) et les serveurs DNS auxquels il est lié. <br><br>Retrouvez et modifiez la zone DNS concernée en conséquence en suivant [ce guide](/pages/web_cloud/web_hosting/multisites_configure_multisite#etape-22-ajouter-un-nom-de-domaine-externe).|
-|Cet avertissement s'affiche dans l'onglet `Zone DNS`{.action} :<br><br>![avertissement_zonedns_pas_sur_srv_dns](images/avertissement_zonedns_pas_sur_srv_dns.png){.thumbnail}|Vous devrez donc modifier les serveurs DNS de votre domaine en conséquence en suivant [ce guide](/pages/web_cloud/domains/dns_server_general_information).|
+|Dans la zone DNS active, votre nom de domaine/sous-domaine pointe vers l'adresse IP de votre hébergement web avec un enregistrement de type A (pour une IPv4) ou AAAA (pour une IPv6).<br><br>![zoneDNS_IP2](images/zonedns_ip2.png){.thumbnail}|Ceci indique que la configuration de votre nom de domaine est correcte.<br><br> Patientez le temps de la propagation DNS si la modification est récente.<br><br> N'oubliez pas non plus de redémarrer vos appareils (PC, smartphone, box, etc.) et de vider le cache de votre navigateur internet. En effet, l'ancienne configuration de votre nom de domaine peut être mise en cache : ce qui peut ralentir l'affichage de votre mise à jour.|
+|La zone DNS active ne comporte pas d'enregistrements de type A ou AAAA reliant votre nom de domaine/sous-domaine à l'adresse IP de votre hébergement web. Ou l'enregistrement existant pointe sur une autre adresse IP.|Ajoutez le nouvel enregistrement de type A ou AAAA ou corrigez l'enregistrement existant en suivant [ce guide](/pages/web_cloud/domains/dns_zone_edit).|
+|Votre domaine n'apparaît pas dans la partie `Domaines`{.action} de votre espace client OVHcloud.<br><br>Ou l'onglet `Zone DNS`{.action} de votre nom de domaine s'affiche de la façon suivante :<br><br>![zonedns_ndd_pas_sur_lec2](images/zonedns_ndd_pas_sur_lec2.png){.thumbnail}|Cela signifie que votre nom de domaine n'est pas géré depuis votre espace client OVHcloud.<br><br>Déterminez son « registrar » via notre outil [WHOIS](https://www.ovhcloud.com/fr/domains/whois/) et les serveurs DNS auxquels il est associé. <br><br>Retrouvez et modifiez la zone DNS concernée en conséquence en suivant la rubrique dédiée du guide « [Partager son hébergement entre plusieurs sites - ajouter un nom de domaine externe](/pages/web_cloud/web_hosting/multisites_configure_multisite) ».|
+|Cet avertissement s'affiche dans l'onglet `Zone DNS`{.action} :<br><br>![avertissement_zonedns_pas_sur_srv_dns](images/avertissement_zonedns_pas_sur_srv_dns.png){.thumbnail}|Vous devrez donc modifier les serveurs DNS de votre nom de domaine en conséquence en suivant notre guide « [Modifier les serveurs DNS d'un nom de domaine OVHcloud](/pages/web_cloud/domains/dns_server_general_information). »|
 
 ## Aller plus loin <a name="go-further"></a>
 
 [Liste des adresses IP des clusters et hebergements web](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)
+
+[Partager son hébergement entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite)
+
+[Modifier les serveurs DNS d'un nom de domaine OVHcloud](/pages/web_cloud/domains/dns_server_general_information)
+
+[Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
+
+[Créer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_create)
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/directory/).
 
