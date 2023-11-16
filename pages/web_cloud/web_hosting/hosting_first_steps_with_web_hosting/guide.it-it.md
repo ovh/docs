@@ -1,7 +1,7 @@
 ---
-title: Iniziare a utilizzare un hosting Web
-excerpt: Come eseguire le prime operazioni su un hosting Web
-updated: 2022-11-11
+title: "Iniziare a utilizzare un hosting Web"
+excerpt: "Questa guida ti mostra come eseguire le prime operazioni su un hosting Web"
+updated: 2023-11-16
 ---
 
 ## Obiettivo

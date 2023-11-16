@@ -1,7 +1,7 @@
 ---
-title: 'Primeros pasos en un alojamiento web'
-excerpt: 'Cómo empezar con un alojamiento web'
-updated: 2022-11-11
+title: "Primeros pasos en un alojamiento web"
+excerpt: "Descubra cómo empezar con un alojamiento web"
+updated: 2023-11-16
 ---
 
 ## Objetivo

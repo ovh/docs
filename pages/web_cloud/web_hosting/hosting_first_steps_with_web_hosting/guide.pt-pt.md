@@ -1,7 +1,7 @@
 ---
 title: "Alojamento web: primeira utilização"
-excerpt: Saiba como usar e gerir um alojamento web (primeira utilização)
-updated: 2022-11-11
+excerpt: "Saiba como usar e gerir um alojamento web (primeira utilização)"
+updated: 2023-11-16
 ---
 
 ## Sumário

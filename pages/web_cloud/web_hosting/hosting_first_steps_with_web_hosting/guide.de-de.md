@@ -1,7 +1,7 @@
 ---
-title: Erste Schritte mit Ihrem Webhosting
-excerpt: So starten Sie mit Ihrem Webhosting
-updated: 2022-11-11
+title: "Erste Schritte mit Ihrem Webhosting"
+excerpt: "Diese Anleitung erklärt, wie Sie So starten Sie mit Ihrem Webhosting"
+updated: 2023-11-16
 ---
 
 > [!primary]
@@ -12,7 +12,7 @@ updated: 2022-11-11
 
 Sie haben vor Kurzem ein Webhosting bestellt, um Ihre eigene Website zu erstellen. Auf diesem Hosting können Sie eine gebrauchsfertige Lösung (z. B. WordPress, PrestaShop) installieren oder Ihre eigene Plattform auf den dauerhaft verfügbaren Servern entwickeln. Wir danken Ihnen für Ihr Vertrauen in OVHcloud und zeigen Ihnen in dieser Anleitung, wie Sie Ihre Website ganz einfach einrichten können.
 
-**Hier erfahren Sie, wie Sie richtig mit Ihrem Webhosting starten.**
+**Diese Anleitung erklärt, wie Sie richtig mit Ihrem Webhosting starten.**
 
 ## Voraussetzungen
 

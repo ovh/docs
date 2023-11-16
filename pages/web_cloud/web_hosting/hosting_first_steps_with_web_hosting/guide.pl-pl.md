@@ -1,14 +1,14 @@
 ---
-title: Pierwsze kroki z hostingiem OVH
-excerpt: Zobacz, jak właściwie rozpocząć korzystanie z hostingu
-updated: 2022-11-11
+title: "Pierwsze kroki z hostingiem OVHcloud"
+excerpt: "Dowiedz się, jak właściwie rozpocząć korzystanie z hostingu"
+updated: 2023-11-16
 ---
 
 ## Wprowadzenie 
 
 Właśnie kupiłeś hosting, aby stworzyć swoją stronę internetową. Umożliwia on zbudowanie strony opartej na gotowych rozwiązaniach (WordPress, PrestaShop, Joomla!, Drupal) lub własnej strony WWW działającej na stale dostępnych serwerach OVHcloud. Dziękujemy za zaufanie. Przewodnik, który dla Ciebie udostępniamy, zawiera informacje, jak w prosty sposób stworzyć własną stronę internetową.
 
-**Zobacz, jak właściwie rozpocząć korzystanie z hostingu.**
+**Dowiedz się, jak właściwie rozpocząć korzystanie z hostingu.**
 
 ## Wymagania początkowe
 
