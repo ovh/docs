@@ -86,7 +86,7 @@ Une fois vos fichiers téléchargés, vous pourrez vous [connecter à votre espa
 
 ## Aller plus loin 
 
-[Se connecter à l’espace de stockage de son hébergement Web](/pages/web_cloud/web_hosting/ftp_connection){.external}
+[Se connecter à l’espace de stockage de son hébergement Web](/pages/web_cloud/web_hosting/ftp_connection)
 
 [Se connecter à l'aide du logiciel Filezilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)
 
