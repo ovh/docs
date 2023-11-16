@@ -1,7 +1,7 @@
 ---
 title: "Spécificités techniques liées aux hébergements mutualisés"
 excerpt: "Découvrez dans ce guide différentes informations et spécificités techniques liées aux hébergements Web"
-updated: 2023-11-14
+updated: 2023-11-16
 ---
 
 ## Objectif
@@ -45,6 +45,11 @@ Sur une période glissante de 3600 secondes (1 heure), votre offre d'hébergemen
 |Offres|Hébergement gratuit 100M|Starter|Perso|Pro|Performance|
 |---|---|---|---|---|---|
 |Quantité maximale d'envoi d'e-mails par heure et par service|10|20|100|200|2000|
+
+> [!primary]
+>
+> Ces limitations concernent **uniquement** les e-mails émis à l'aide de la fonction *mail()* de PHP et ne concerne pas les autres offres e-mail.
+>
 
 En dehors des suspicions de spamming ou de phishing, l'expédition de vos e-mails pourra être différée. Vos e-mails seront conservés dans une file d'attente jusqu'à ce que le nombre d'e-mails envoyés au cours de l'heure écoulée soit inférieur au quota.
 
