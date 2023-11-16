@@ -1,7 +1,7 @@
 ---
 title: "Recuperar o backup do espaço FTP do seu alojamento Cloud Web"
 excerpt: "Saiba como recuperar um backup do espaço FTP do seu alojamento Cloud Web"
-updated: 2022-09-13
+updated: 2023-11-16
 ---
 
 > [!primary]

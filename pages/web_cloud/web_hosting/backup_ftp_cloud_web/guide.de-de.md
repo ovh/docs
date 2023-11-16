@@ -1,7 +1,7 @@
 ---
 title: "Backup des FTP-Speicherplatzes Ihres Cloud Web Hostings abrufen"
 excerpt: "Hier erfahren Sie, wie Sie ein Backup des FTP-Speicherplatzes Ihres Cloud Web Hostings abrufen"
-updated: 2022-09-13
+updated: 2023-11-16
 ---
 
 > [!primary]
