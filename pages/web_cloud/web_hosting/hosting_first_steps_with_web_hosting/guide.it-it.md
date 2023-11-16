@@ -23,6 +23,11 @@ Uno spazio di hosting ti permette di creare il tuo sito con soluzioni chiavi in 
 
 ## Procedura
 
+> [!success]
+>
+> Prima di continuare la lettura di questa guida, assicurati che il dominio o il sottodominio da utilizzare sia correttamente associato all’hosting Web OVHcloud. Per farlo, consulta la nostra guida "[Condivisione dell’hosting Web OVHcloud tra più siti Web](/pages/web_cloud/web_hosting/multisites_configure_multisite)".
+>
+
 ### Step 1: definisci il tuo progetto
 
 Creare un blog o un e-commerce, condividere una passione o promuovere un’attività professionale online, migrare un sito esistente in OVHcloud... per realizzare al meglio il tuo progetto, è importante avere una visione chiara dell’obiettivo da raggiungere.
