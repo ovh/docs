@@ -1,8 +1,12 @@
 ---
-title: 'Primeros pasos en un alojamiento web'
-excerpt: 'Cómo empezar con un alojamiento web'
-updated: 2022-11-11
+title: "Primeros pasos en un alojamiento web"
+excerpt: "Descubra cómo empezar con un alojamiento web"
+updated: 2023-11-16
 ---
+
+> [!primary]
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+>
 
 ## Objetivo
 
@@ -18,6 +22,11 @@ Los planes de hosting de OVHcloud permiten crear un sitio web de forma fácil y 
 - Estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.
 
 ## Procedimiento
+
+> [!success]
+>
+> Antes de seguir leyendo esta guía, asegúrese de que el dominio o subdominio que quiera utilizar esté correctamente asociado a su alojamiento web de OVHcloud. Para ello, consulte nuestra guía "[Alojar varios sitios web en un mismo hosting de OVHcloud](/pages/web_cloud/web_hosting/multisites_configure_multisite)".
+>
 
 ### 1. Definir el proyecto
 

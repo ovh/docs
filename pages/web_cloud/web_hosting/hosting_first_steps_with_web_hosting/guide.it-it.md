@@ -1,8 +1,12 @@
 ---
-title: Iniziare a utilizzare un hosting Web
-excerpt: Come eseguire le prime operazioni su un hosting Web
-updated: 2022-11-11
+title: "Iniziare a utilizzare un hosting Web"
+excerpt: "Questa guida ti mostra come eseguire le prime operazioni su un hosting Web"
+updated: 2023-11-16
 ---
+
+> [!primary]
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
+>
 
 ## Obiettivo
 
@@ -18,6 +22,11 @@ Uno spazio di hosting ti permette di creare il tuo sito con soluzioni chiavi in 
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}
 
 ## Procedura
+
+> [!success]
+>
+> Prima di continuare la lettura di questa guida, assicurati che il dominio o il sottodominio da utilizzare sia correttamente associato all’hosting Web OVHcloud. Per farlo, consulta la nostra guida "[Condivisione dell’hosting Web OVHcloud tra più siti Web](/pages/web_cloud/web_hosting/multisites_configure_multisite)".
+>
 
 ### Step 1: definisci il tuo progetto
 
