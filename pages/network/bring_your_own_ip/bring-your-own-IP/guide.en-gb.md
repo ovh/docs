@@ -250,7 +250,7 @@ No, an IP range must be used in only one campus.
 
 ### Is changing the campus of an imported IP range possible?
 
-It is not possible to change the campus of an imported IP range. To achieve this you would have to release the product and purchase it again. However, if you have chosen a French campus at the time of the order and if you ordered the service after January 1st, 2023, you will be able to move your IP blocks across all the datacenters located in France (Gravelines, Roubaix and Strasbourg).
+It is not possible to change the campus of an imported IP range for the whole range. However, with the new split functionality, it is now possible to move blocks of size /24 between different French campuses. If you chose a French campus at the time of ordering and the order was placed after 1 January 2023, you can move your /24-sized IP blocks between data centres located in France (Roubaix, Gravelines and Strasbourg). For blocks larger than /24, or for moves between campuses located in different regions, you would have to cancel the product and order it again.
 
 ### How will I know which OVHcloud DNS servers will handle the ARPA zone for my imported IP?
 
