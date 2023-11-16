@@ -19,6 +19,11 @@ This guide is designed for customers who have just purchased a Web Hosting plan 
 
 ## Instructions
 
+> [!success]
+>
+> Before reading this guide any further, please ensure that the domain or subdomain you would like to use is correctly associated with your OVHcloud web hosting plan. To do this, please refer to our guide on "[Sharing an OVHcloud Web Hosting plan across multiple websites](/pages/web_cloud/web_hosting/multisites_configure_multisite)".
+>
+
 ### Step 1: Define your project
 
 Are you looking to create a blog, or an online store? Do you want to share your passion, or boost your company’s online profile? Or do you want to migrate an existing website to OVHcloud? To ensure that your project is a success, it is important to have a clear idea of your objective.
