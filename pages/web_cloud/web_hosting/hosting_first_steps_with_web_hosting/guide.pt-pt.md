@@ -23,6 +23,11 @@ O alojamento web da OVHcloud oferece várias possibilidades de utilização e co
 
 ## Instruções
 
+> [!success]
+>
+> Antes de continuar a ler este manual, certifique-se de que o domínio ou subdomínio que pretende utilizar está corretamente associado ao seu alojamento web da OVHcloud. Para isso, consulte o guia "[Partilhar o alojamento web da OVHcloud entre vários websites](/pages/web_cloud/web_hosting/multisites_configure_multisite)".
+>
+
 ### 1 - Tipo de Projeto: Criar ou Transferir um Site.
 
 O alojamento web OVHcloud permite criar um site novo com toda a facilidade, ou alojar um já existente. Pretende partilhar um hobby ou promover uma atividade profissional? Criar um blogue ou uma loja online? Migrar um site para a OVH? Neste guia existem opções para vários tipos de projeto.
