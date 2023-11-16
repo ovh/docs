@@ -16,7 +16,11 @@ To protect all means exposed on public IP addresses, OVHcloud offers a firewall 
 > You can read more information on our Anti-DDoS solution here: <https://www.ovhcloud.com/en-gb/security/anti-ddos/>.
 > 
 
-![The VAC in detail](images/vac-inside.png){.thumbnail}
+| ![global-schema](images/global_schema.png) | 
+|:--:| 
+| How DDoS mitigation is performed at OVHcloud |
+
+
 
 
 ## Requirements
@@ -131,6 +135,15 @@ For example, a packet for TCP port 80 will be captured by rule 2, and the rules 
 
 ### Mitigation
 
+#### **Global Attack Filtering Capacity: Advanced Protection**
+
+OVHcloud stands out in the management of digital threats with a DDoS attack filtering capacity of over 17 Tbit/s. This robust infrastructure effectively identifies and neutralises attacks before they impact customer servers. Distributed across OVHcloud's global network, this capacity ensures constant protection, regardless of where servers are located.
+
+Designed to absorb a large volume of malicious traffic, this infrastructure guarantees the continuity of business operations, even in the event of major DDoS attacks. It forms an essential part of OVHcloud's security strategy, reinforcing existing measures such as firewalls and anti-intrusion systems.
+
+In short, OVHcloud's global attack filtering capability plays a crucial role in the security of customer data and services, providing reliable protection against modern cyber attacks.
+
+
 Our Anti-DDoS Infrastructure (VAC) includes three operation modes: automatic, permanent or forced. The mitigation process is OVHcloud's automatic scrubbing center. This is the place where our advanced technology is taking a deep look into packets and malicious traffic (DDoS or other known vulnerabilities) is removed while allowing legitimate traffic to pass through.
 
 - **Automatic mitigation**: By default, all OVHcloud IPs are under automatic mitigation. Automatic mitigation will be enabled only if the traffic is detected as "unusual" compared to the normal traffic usually received by the server. We **recommend** using this mode as best automations are applied during malicious traffic mitigation.
@@ -154,6 +167,7 @@ To enable it, click on the `Bare Metal Cloud`{.action} menu and open `IP`{.actio
 > 
 > Please note that Anti-DDoS Infrastucture cannot be disabled on a service. All OVHcloud products are delivered within the scope of protection and this cannot be changed.
 >
+
 
 ## Network Security Dashboard
 

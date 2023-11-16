@@ -33,6 +33,9 @@ The refreshed interface is the result of careful listening to feedback from our 
 
 ###### **END v2**
 
+| ![global-schema](images/global_schema.png) | 
+|:--:| 
+| How DDoS mitigation is performed at OVHcloud |
 
 ## Requirements
 

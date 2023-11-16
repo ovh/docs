@@ -15,7 +15,9 @@ Pour protéger son infrastructure globale et les serveurs de ses clients, OVHclo
 > Pour plus d'informations sur notre solution Anti-DDoS, cliquez ici : <https://www.ovhcloud.com/fr/security/anti-ddos/>.
 > 
 
-![Le VAC en détail](images/vac-inside.png){.thumbnail}
+| ![global-schema](images/global_schema.png) | 
+|:--:| 
+| Comment DDoS mitigation est réalisée chez OVHcloud |
 
 ## Prérequis
 
