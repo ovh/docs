@@ -1,7 +1,7 @@
 ---
 title: "Récupérer la sauvegarde de l'espace FTP de son hébergement Cloud Web"
 excerpt: "Découvrez comment récupérer une sauvegarde de l'espace FTP de votre hébergement Cloud Web"
-updated: 2022-09-13
+updated: 2023-11-16
 ---
 
 ## Objectif
