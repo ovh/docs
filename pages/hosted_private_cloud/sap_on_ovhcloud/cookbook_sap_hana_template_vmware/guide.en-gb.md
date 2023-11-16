@@ -197,7 +197,7 @@ We suggest you perform the following actions before putting your SAP HANA databa
 
 1. Register your SUSE Linux Enterprise Server for SAP Applications operating system and get the latest updates with the command:
 
-    ```console
+    ```bash
     zypper update -y
     ```
 
@@ -223,7 +223,7 @@ We suggest you perform the following actions before putting your SAP HANA databa
 
     Just start and enable this service for next startup:
 
-    ```console
+    ```bash
     systemctl start chronyd.service
     systemctl enable chronyd.service
     ```

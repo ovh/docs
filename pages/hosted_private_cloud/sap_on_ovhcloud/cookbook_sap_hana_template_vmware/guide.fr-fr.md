@@ -200,7 +200,7 @@ Nous vous recommandons de réaliser ces actions avant la mise en production de v
 
 1. Enregistrez votre système d'exploitation SUSE Linux Enterprise Server for SAP Applications et récupérez les dernières mises à jour en exécutant la commande suivante :
 
-    ```console
+    ```bash
     zypper update -y
     ```
 
@@ -226,7 +226,7 @@ Nous vous recommandons de réaliser ces actions avant la mise en production de v
 
     Il vous suffit de démarrer le service et de l'activer pour les prochains démarrages :
 
-    ```console
+    ```bash
     systemctl start chronyd.service
     systemctl enable chronyd.service
     ```
