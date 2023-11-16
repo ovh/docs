@@ -23,6 +23,11 @@ Właśnie kupiłeś hosting, aby stworzyć swoją stronę internetową. Umożliw
 
 ## W praktyce
 
+> [!success]
+>
+> Zanim przejdziesz do dalszej lektury tego przewodnika, upewnij się, że nazwa domeny lub subdomeny, której chcesz użyć, jest poprawnie powiązana z Twoim hostingiem WWW OVHcloud. W tym celu zapoznaj się z przewodnikiem "[Udostępnienie hostingu WWW OVHcloud kilku stronom WWW](/pages/web_cloud/web_hosting/multisites_configure_multisite)".
+>
+
 ### Etap 1: Wybór projektu WWW
 
 Chcesz stworzyć blog czy sklep internetowy? Dzielić się swoją pasją czy promować w Internecie własny biznes? A może chcesz przenieść istniejącą już stronę na serwer OVH? Aby z sukcesem zrealizować projekt, należy jasno określić swój cel.
