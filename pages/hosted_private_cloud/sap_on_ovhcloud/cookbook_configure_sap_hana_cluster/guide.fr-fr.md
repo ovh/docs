@@ -1,26 +1,27 @@
 ---
 title: "Cluster SAP HANA avec SLES sur VMware on OVHcloud"
 excerpt: "Ce guide fournit les instructions pour configurer un cluster SAP HANA avec SLES sur VMware on OVHcloud en utilisant les services corosync et pacemaker"
-updated: 2023-09-05
+updated: 2023-11-16
 ---
 
 ## Objectif
 
 Ce guide fournit les instructions pour configurer un cluster SAP HANA avec SLES sur VMware on OVHcloud en utilisant les services corosync et pacemaker.
 
-Cette configuration réduit la durée maximale d'interruption admissible, en cas de coupure de service de la machine virtuelle ou de l'hôte ESXi sur la même localisation OVHcloud.
+Cette configuration réduit la durée maximale d'interruption admissible (RTO), en cas de coupure de service de la machine virtuelle ou de l'hôte ESXi sur la même localisation OVHcloud.
 
 ![schema](images/sap_hana_cluster.png){.thumbnail}
 
 ## Prérequis
 
 - Un accès à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
-- Un pack SAP HANA sur VMware on OVHcloud déployé.
-- Deux machines virtuelles SAP HANA déployées avec la même version SAP HANA installée.
+- Une solution [SAP HANA on Private Cloud](https://www.ovhcloud.com/fr/hosted-private-cloud/sap-hana/) déployée.
+- Deux machines virtuelles SAP HANA déployées ayant la même version SAP HANA installée.
 
 ## En pratique
 
 > [!primary]
+>
 > Dans tous les blocs de console :
 >
 > - Le nœud primaire SAP HANA est nommé `node1` et le nœud secondaire SAP HANA est nommé `node2`.
@@ -30,13 +31,13 @@ Cette configuration réduit la durée maximale d'interruption admissible, en cas
 
 La disponibilité de SAP HANA pourrait être affectée durant la configuration. Veillez à prendre toutes les précautions nécessaires avant de suivre les instructions de ce guide.
 
-### Créer un utilisateur vSphere
+### Utilisateur vSphere
 
 Pour autoriser le service corosync à obtenir les informations des nœuds SAP HANA, vous devez configurer un utilisateur avec les droits d'accès à l'interface vSphere.
 
-Nous recommandons d'utiliser un utilisateur dédié avec des droits limités pour interagir avec vSphere pour le datacenter où les machines virtuelles SAP HANA sont hébergées.
+Nous recommandons d'utiliser un utilisateur dédié avec des droits limités pour interagir avec vSphere.
 
-Cet utilisateur dédié n'a besoin que du droit en « Lecture seule » pour l'accès vSphere. Pour connaître les étapes de création d'un utilisateur dédié, veuillez vous référer à [notre guide](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/change_users_rights).
+Cet utilisateur dédié n'a besoin que du droit de « Lecture seule » sur le datacenter où sont hébergées les machines virtuelles SAP HANA. Pour connaître les étapes de création d'un utilisateur dédié, veuillez vous référer à [notre guide](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/change_users_rights).
 
 ### Paquets SUSE
 
@@ -50,9 +51,9 @@ SUSEConnect --list-extensions | grep "SUSE Linux Enterprise High Availability Ex
 
 - Résultat attendu :
 
-```bash
-SUSE Linux Enterprise High Availability Extension 15 SP4 x86_64 (Activated)
-```
+  ```bash
+  SUSE Linux Enterprise High Availability Extension 15 SP4 x86_64 (Activated)
+  ```
 
 Dans les autres cas, veuillez exécuter la commande suivante dans laquelle `<ADDITIONAL REGCODE>` est le code d'enregistrement fourni par SUSE dans votre espace client SUSE.
 
@@ -79,249 +80,255 @@ Le provider hook SAP HANA HA/SR améliore la détection d'erreurs SAP HANA.
 
 1. Arrêtez les services SAP HANA sur les deux nœuds :
 
-```bash
-sapcontrol -nr <NI> -function Stop
-```
+    ```bash
+    sapcontrol -nr <NI> -function Stop
+    ```
 
-<ol start=2><li>Ajoutez dans le fichier <code>global.ini</code> sur les deux nœuds :</li></ol>
+2. Ajoutez ce bloc dans le fichier global.ini sur les deux nœuds :
 
-```ini
-[ha_dr_provider_SAPHanaSR]
-provider = SAPHanaSR
-path = /usr/share/SAPHanaSR
-execution_order = 1
+    ```ini
+    [ha_dr_provider_SAPHanaSR]
+    provider = SAPHanaSR
+    path = /usr/share/SAPHanaSR
+    execution_order = 1
 
-[trace]
-ha_dr_saphanasr = info
-```
+    [trace]
+    ha_dr_saphanasr = info
+    ```
 
 #### Système de réplication
 
 1. Démarrez les services SAP HANA sur le nœud primaire :
 
-```bash
-sapcontrol -nr <NI> -function Start
-```
+    ```bash
+    sapcontrol -nr <NI> -function Start
+    ```
 
-<ol start=2><li>Avec l'utilisateur SAP HANA (sid)adm, activez le système de réplication SAP HANA (HSR) sur le nœud primaire qui sera la source de la réplication :</li></ol>
+2. Avec l'utilisateur SAP HANA (sid)adm, activez le système de réplication SAP HANA (HSR) sur le nœud primaire qui sera la source de la réplication :  
 
-```bash
-hdbnsutil -sr_enable --name=node1
-```
+    ```bash
+    hdbnsutil -sr_enable --name=node1
+    ```
 
-> [!primary]
-> L'option `--name` est obligatoire et est utilisée pour définir le nœud SAP HANA dans le système de réplication.
->
+    > [!primary]
+    >
+    > L'option `--name` est obligatoire et est utilisée pour définir le nœud SAP HANA dans le système de réplication.
+    >
 
-<ol start=3><li>Pour autoriser le nœud secondaire à s'enregistrer sur le nœud primaire, vous devez transférer deux fichiers du nœud primaire sur le nœud secondaire :</li></ol>
+3. Pour autoriser le nœud secondaire à s'enregistrer sur le nœud primaire, vous devez transférer deux fichiers du nœud primaire sur le nœud secondaire :
 
-- /usr/sap/`<SID>`/SYS/global/security/rsecssfs/data/SSFS_`<SID>`.DAT
-- /usr/sap/`<SID>`/SYS/global/security/rsecssfs/key/SSFS_`<SID>`.KEY
+    - /usr/sap/`<SID>`/SYS/global/security/rsecssfs/data/SSFS_`<SID>`.DAT
+    - /usr/sap/`<SID>`/SYS/global/security/rsecssfs/key/SSFS_`<SID>`.KEY
 
-```bash
-scp /usr/sap/<SID>/SYS/global/security/rsecssfs/data/SSFS_<SID>.DAT node2:/usr/sap/<SID>/SYS/global/security/rsecssfs/data/SSFS_<SID>.DAT
-scp /usr/sap/<SID>/SYS/global/security/rsecssfs/key/SSFS_<SID>.KEY node2:/usr/sap/<SID>/SYS/global/security/rsecssfs/key/SSFS_<SID>.KEY
-```
+    ```bash
+    scp /usr/sap/<SID>/SYS/global/security/rsecssfs/data/SSFS_<SID>.DAT \
+    node2:/usr/sap/<SID>/SYS/global/security/rsecssfs/data/SSFS_<SID>.DAT
 
-<ol start=4><li>Une fois ces fichiers transférés sur le nœud secondaire, vous pouvez enregistrer le nœud secondaire sur le nœud primaire :</li></ol>
+    scp /usr/sap/<SID>/SYS/global/security/rsecssfs/key/SSFS_<SID>.KEY \
+    node2:/usr/sap/<SID>/SYS/global/security/rsecssfs/key/SSFS_<SID>.KEY
+    ```
 
-```bash
-hdbnsutil -sr_register --name=node2 \
---remoteHost=node1 --remoteInstance=<instance_number> \
---replicationMode=[sync|syncmem|async] \
---operationMode=[delta_datashipping|logreplay|logreplay_readaccess]
-```
+4. Une fois ces fichiers transférés sur le nœud secondaire, vous pouvez enregistrer le nœud secondaire sur le nœud primaire :
 
-Pour connaître les différences entre les modes de réplication et d'opération, prenez connaissance de la [documentation SAP](https://help.sap.com/docs/SAP_HANA_PLATFORM/4e9b18c116aa42fc84c7dbfd02111aba/2dd26de6360046309e1579accbd9e527.html).
+    ```bash
+    hdbnsutil -sr_register --name=node2 \
+    --remoteHost=node1 --remoteInstance=<instance_number> \
+    --replicationMode=[sync|syncmem|async] \
+    --operationMode=[delta_datashipping|logreplay|logreplay_readaccess]
+    ```
 
-Dans le cadre de notre guide, comme les nœuds SAP HANA sont hébergés sur la même localisation OVHcloud et que le but est de réduire la durée maximale d'interruption admissible, nous recommandons d'utiliser les paramètres suivants :
+    Pour connaître les différences entre les modes de réplication et d'opération, nous vous recommandons la [documentation SAP](https://help.sap.com/docs/SAP_HANA_PLATFORM/4e9b18c116aa42fc84c7dbfd02111aba/2dd26de6360046309e1579accbd9e527.html).
 
-|    Paramètre    |   Valeur   |
-|-----------------|------------|
-| replicationMode | sync       |
-| operationMode   | logreplay  |
+    Dans le cadre de notre guide, les deux nœuds SAP HANA sont hébergés sur la même localisation OVHcloud, nous recommandons d'utiliser les paramètres suivants :
 
-<ol start=5><li>Démarrez les services SAP HANA sur le nœud secondaire. Le démarrage des services SAP HANA déclenche la réplication du nœud primaire vers le nœud secondaire :</li></ol>
+    | Paramètre       | Valeur   |
+    |-----------------|------------|
+    | replicationMode | sync       |
+    | operationMode   | logreplay  |
 
-```bash
-sapcontrol -nr <NI> -function Start
-```
+5. Démarrez les services SAP HANA sur le nœud secondaire. Le démarrage des services SAP HANA déclenche l'initialisation de la réplication du nœud primaire vers le nœud secondaire :
 
-Sur le nœud primaire, vous pouvez suivre l'initialisation de la réplication avec la commande suivante :
+    ```bash
+    sapcontrol -nr <NI> -function Start
+    ```
 
-```bash
-cdpy && python systemReplicationStatus.py
-```
+    Sur le nœud primaire, vous pouvez suivre l'initialisation de la réplication avec la commande suivante :
 
-```bash
-|Database   |Host  |Port    |Service Name |Volume ID |Site ID |Site Name |Secondary |Secondary   |Secondary |Secondary |Secondary     |Replication |Replication |Replication    |Secondary    |
-|           |      |        |             |          |        |          |Host      |Port        |Site ID   |Site Name |Active Status |Mode        |Status      |Status Details |Fully Synced |
-|---------- |----- |------- |------------ |--------- |------- |--------- |--------- |----------- |--------- |--------- |------------- |----------- |----------- |-------------- |------------ |
-|SYSTEMDB   |node1 |3<NI>01 |nameserver   |        1 |      1 |node1     |node2     |    3<NI>01 |        2 |node2     |YES           |SYNC        |ACTIVE      |               |        True |
-|<SID>      |node1 |3<NI>07 |xsengine     |        2 |      1 |node1     |node2     |    3<NI>07 |        2 |node2     |YES           |SYNC        |ACTIVE      |               |        True |
-|<SID>      |node1 |3<NI>03 |indexserver  |        3 |      1 |node1     |node2     |    3<NI>03 |        2 |node2     |YES           |SYNC        |ACTIVE      |               |        True |
- 
-status system replication site "2": ACTIVE
-overall system replication status: ACTIVE
- 
-Local System Replication State
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
- 
-mode: PRIMARY
-site id: 1
-site name: node1
-```
+    ```bash
+    cdpy && python systemReplicationStatus.py
+    ```
 
-La réplication peut prendre un certain temps, cela dépend de la taille des données dans votre base de données SAP HANA. Une fois l'initialisation de la réplication terminée, le statut du système de réplication doit être `ACTIVE`.
+    ```bash
+    |Database   |Host  |Port    |Service Name |Volume ID |Site ID |Site Name |Secondary |Secondary   |Secondary |Secondary |Secondary     |Replication |Replication |Replication    |Secondary    |
+    |           |      |        |             |          |        |          |Host      |Port        |Site ID   |Site Name |Active Status |Mode        |Status      |Status Details |Fully Synced |
+    |---------- |----- |------- |------------ |--------- |------- |--------- |--------- |----------- |--------- |--------- |------------- |----------- |----------- |-------------- |------------ |
+    |SYSTEMDB   |node1 |3<NI>01 |nameserver   |        1 |      1 |node1     |node2     |    3<NI>01 |        2 |node2     |YES           |SYNC        |ACTIVE      |               |        True |
+    |<SID>      |node1 |3<NI>07 |xsengine     |        2 |      1 |node1     |node2     |    3<NI>07 |        2 |node2     |YES           |SYNC        |ACTIVE      |               |        True |
+    |<SID>      |node1 |3<NI>03 |indexserver  |        3 |      1 |node1     |node2     |    3<NI>03 |        2 |node2     |YES           |SYNC        |ACTIVE      |               |        True |
+    
+    status system replication site "2": ACTIVE
+    overall system replication status: ACTIVE
+    
+    Local System Replication State
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    
+    mode: PRIMARY
+    site id: 1
+    site name: node1
+    ```
+
+    La réplication peut prendre un certain temps, cela dépend de la taille des données dans votre base de données SAP HANA. Une fois l'initialisation de la réplication terminée, le statut du système de réplication doit être `ACTIVE`.
 
 ### Corosync
 
 > [!primary]
+>
 > Dans ce chapitre, toutes les commandes doivent être exécutées en tant que root.
 >
 
-1. Sur le nœud primaire, générez le fichier `/etc/corosync/authkey` :
+1. Sur le nœud primaire, générez le fichier /etc/corosync/authkey :
 
-```bash
-corosync-keygen
-```
+    ```bash
+    corosync-keygen
+    ```
 
-Ce fichier est la clef privée qui garantit l'authenticité et le chiffrement des messages échangés entre les nœuds du cluster.
+    Ce fichier est la clef privée qui garantit l'authenticité et le chiffrement des messages échangés entre les nœuds du cluster.
 
-<ol start=2><li>Créez le fichier <code>/etc/corosync/corosync.conf</code> sur le nœud primaire et ajoutez la configuration suivante (remplacez <code>&lt;ip_address_node1&gt;</code> et <code>&lt;ip_address_node2&gt;</code> par vos adresses IP) :</li></ol>
+2. Créez le fichier /etc/corosync/corosync.conf sur le nœud primaire et ajoutez la configuration suivante (remplacez `<ip_address_node1>` et `<ip_address_node2>` par vos adresses IP) :
 
-```less
-totem {
-  version: 2
-  token: 5000
-  token_retransmits_before_loss_const: 6
-  secauth: on
-  crypto_hash: sha1
-  crypto_cipher: aes256
-  clear_node_high_bit: yes
-  transport: udpu
-}
-logging {
-  fileline: off
-  to_logfile: yes
-  to_syslog: yes
-  logfile: /var/log/cluster/corosync.log
-  debug: off
-  timestamp: on
-  logger_subsys {
-    subsys: QUORUM
-    debug: off
-  }
-}
-nodelist {
-  node {
-    ring0_addr: <ip_address_node1>
-    nodeid: 1
-  }
-  node {
-    ring0_addr: <ip_address_node2>
-    nodeid: 2
-  }
-}
-quorum {
-  provider: corosync_votequorum
-  expected_votes: 2
-  two_node: 1
-}
-```
+    ```console
+    totem {
+      version: 2
+      token: 5000
+      token_retransmits_before_loss_const: 6
+      secauth: on
+      crypto_hash: sha1
+      crypto_cipher: aes256
+      clear_node_high_bit: yes
+      transport: udpu
+    }
+    logging {
+      fileline: off
+      to_logfile: yes
+      to_syslog: yes
+      logfile: /var/log/cluster/corosync.log
+      debug: off
+      timestamp: on
+      logger_subsys {
+        subsys: QUORUM
+        debug: off
+      }
+    }
+    nodelist {
+      node {
+        ring0_addr: <ip_address_node1>
+        nodeid: 1
+      }
+      node {
+        ring0_addr: <ip_address_node2>
+        nodeid: 2
+      }
+    }
+    quorum {
+      provider: corosync_votequorum
+      expected_votes: 2
+      two_node: 1
+    }
+    ```
 
-> [!primary]
-> Pour découvrir tous les paramètres de configuration, veuillez vous référer au manuel corosync.conf.5 avec la commande `man corosync.conf.5`.
->
+    > [!primary]
+    >
+    > Pour découvrir tous les paramètres de configuration, veuillez vous référer au manuel corosync.conf.5 avec la commande `man corosync.conf.5`.
+    >
 
-<ol start=3><li>Transférez ces fichiers sur le nœud secondaire pour partager la configuration et la clef privée.</li></ol>
+3. Transférez ces fichiers sur le nœud secondaire pour partager la configuration et la clef privée :
 
-```bash
-scp /etc/corosync/authkey node2:/etc/corosync/authkey
-scp /etc/corosync/corosync.conf node2:/etc/corosync/corosync.conf
-```
+    ```bash
+    scp /etc/corosync/authkey node2:/etc/corosync/authkey
+    scp /etc/corosync/corosync.conf node2:/etc/corosync/corosync.conf
+    ```
 
 ### Pacemaker
 
 1. Démarrez les services corosync et pacemaker sur les deux nœuds :
 
-```bash
-service pacemaker start
-service corosync start
-```
+    ```bash
+    service pacemaker start
+    service corosync start
+    ```
 
-<ol start=2><li>Nous conseillons de retarder le démarrage du service corosync durant le démarrage de la machine virtuelle.</li></ol>
+2. Nous conseillons de retarder le démarrage du service corosync durant le démarrage de la machine virtuelle.
 
-Éditez le service corosync sur les deux nœuds :
+    a. Éditez le service corosync sur les deux nœuds :
 
-```bash
-systemctl edit corosync.service
-```
+    ```bash
+    systemctl edit corosync.service
+    ```
 
-- Insérez ces lignes entre les lignes numéro 3 et 6 :
+    b. Insérez ces lignes entre les lignes numéro 3 et 6 :
 
-```bash
-[Service]
-ExecStartPre=/bin/sleep 60
-```
+    ```bash
+    [Service]
+    ExecStartPre=/bin/sleep 60
+    ```
 
-- Rechargez la configuration :
+    c. Rechargez la configuration :
 
-```bash
-systemctl daemon-reload
-```
+    ```bash
+    systemctl daemon-reload
+    ```
 
-- Si la configuration a été correctement chargée, la ligne `-override.conf` apparaît dans le statut du service corosync :
+    d. Si la configuration a été correctement chargée, la ligne `-override.conf` apparaît dans le statut du service corosync :
 
-```bash
-service corosync status
-```
+    ```bash
+    service corosync status
+    ```
 
-```autoit
-* corosync.service - Corosync Cluster Engine
-     Loaded: loaded (/usr/lib/systemd/system/corosync.service; enabled; vendor preset: disabled)
-    Drop-In: /etc/systemd/system/corosync.service.d
-             `-override.conf
-     Active: active (running) since Fri 2023-02-17 14:29:40 CEST; 1h 3min ago
-```
+    ```console
+    * corosync.service - Corosync Cluster Engine
+        Loaded: loaded (/usr/lib/systemd/system/corosync.service; enabled; vendor preset: disabled)
+        Drop-In: /etc/systemd/system/corosync.service.d
+                `-override.conf
+        Active: active (running) since Fri 2023-02-17 14:29:40 CEST; 1h 3min ago
+    ```
 
-- Assurez-vous que les services corosync et pacemaker démarrent automatiquement durant le démarrage de la machine virtuelle :
+    e. Assurez-vous que les services corosync et pacemaker démarrent automatiquement durant le démarrage de la machine virtuelle :
 
-```bash
-systemctl enable pacemaker.service
-systemctl enable corosync.service
-systemctl enable corosync-notifyd.service
-```
+    ```bash
+    systemctl enable pacemaker.service
+    systemctl enable corosync.service
+    systemctl enable corosync-notifyd.service
+    ```
 
-<ol start=3><li>Sur le nœud primaire, configurez les propriétés générales du cluster SUSE pour SAP HANA :</li></ol>
+3. Sur le nœud primaire, configurez les propriétés générales du cluster SUSE pour SAP HANA :
 
-```bash
-crm configure property stonith-enabled="true"
-crm configure property stonith-action="off"
-crm configure property stonith-timeout="150s"
-crm configure property have-watchdog="false"
-crm configure rsc_defaults resource-stickness="1000"
-crm configure rsc_defaults migration-threshold="5000"
-crm configure op_defaults timeout="600"
-```
+    ```bash
+    crm configure property stonith-enabled="true"
+    crm configure property stonith-action="off"
+    crm configure property stonith-timeout="150s"
+    crm configure property have-watchdog="false"
+    crm configure rsc_defaults resource-stickness="1000"
+    crm configure rsc_defaults migration-threshold="5000"
+    crm configure op_defaults timeout="600"
+    ```
 
-<ol start=4><li>Sur le nœud primaire, activez le mode maintenance du cluster :</li></ol>
+4. Sur le nœud primaire, activez le mode maintenance du cluster :
 
-```bash
-crm configure property maintenance-mode=true
-```
+    ```bash
+    crm configure property maintenance-mode=true
+    ```
 
 #### Ressource stonith
 
 > [!primary]
+>
 > Les actions qui vont suivre doivent être réalisées sur le nœud primaire.
 >
 
 La ressource `stonith` vérifie l'état de santé des machines virtuelles à travers vSphere et peut décider d'éteindre la machine virtuelle.
 
-Créez la ressource `stonith` :
-
 > [!primary]
+>
 > L'identifiant et le mot de passe sont les identifiants créés dans le chapitre « [Créer un utilisateur vSphere](#creation-utilisateur-vsphere) ».
 >
 
@@ -335,34 +342,32 @@ crm configure primitive stonith stonith:fence_vmware_rest \
 
 - Résultat attendu :
 
-```bash
-crm status
-```
+    ```bash
+    crm status
+    ```
 
-```autoit
-Cluster Summary:
-  * Stack: corosync
-  * Current DC: node1 (version 2.1.2+20211124.ada5c3b36-150400.4.9.2-2.1.2+20211124.ada5c3b36) - partition with quorum
-  * Last updated: Fri Feb 17 14:35:47 2023
-  * Last change:  Fri Feb 17 14:35:03 2023 by root via crm_attribute on node1
-  * 2 nodes configured
-  * 1 resource instances configured
+    ```console
+    Cluster Summary:
+      * Stack: corosync
+      * Current DC: node1 (version 2.1.2+20211124.ada5c3b36-150400.4.9.2-2.1.2+20211124.ada5c3b36) - partition with quorum
+      * Last updated: Fri Feb 17 14:35:47 2023
+      * Last change:  Fri Feb 17 14:35:03 2023 by root via crm_attribute on node1
+      * 2 nodes configured
+      * 1 resource instances configured
 
-              *** Resource management is DISABLED ***
-  The cluster will not attempt to start, stop or recover services
+                  *** Resource management is DISABLED ***
+      The cluster will not attempt to start, stop or recover services
 
-Node List:
-  * Online: [ node1 node2 ]
+    Node List:
+      * Online: [ node1 node2 ]
 
-Full List of Resources:
-  * stonith	(stonith:fence_vmware_rest):	 Stopped (unmanaged)
-```
+    Full List of Resources:
+      * stonith	(stonith:fence_vmware_rest):	 Stopped (unmanaged)
+    ```
 
 #### Ressource adresse IP flottante
 
-La ressource `res_vip` gère et surveille l'adresse IP flottante qui est le point d'entrée des communications avec le nœud primaire.
-
-Créez la ressource `res_vip_<SID>_HDB<NI>` :
+La ressource `res_vip_<SID>_HDB<NI>` gère et surveille l'adresse IP flottante qui est le point d'entrée des communications avec le nœud primaire.
 
 > [!primary]
 >
@@ -378,209 +383,206 @@ crm configure primitive res_vip_<SID>_HDB<NI> ocf:heartbeat:IPaddr2 \
 
 - Résultat attendu :
 
-```bash
-crm status
-```
+    ```bash
+    crm status
+    ```
 
-```autoit
-Cluster Summary:
-  * Stack: corosync
-  * Current DC: node1 (version 2.1.2+20211124.ada5c3b36-150400.4.9.2-2.1.2+20211124.ada5c3b36) - partition with quorum
-  * Last updated: Fri Feb 17 14:36:32 2023
-  * Last change:  Fri Feb 17 14:36:05 2023 by root via crm_attribute on node1
-  * 2 nodes configured
-  * 2 resource instances configured
+    ```console
+    Cluster Summary:
+      * Stack: corosync
+      * Current DC: node1 (version 2.1.2+20211124.ada5c3b36-150400.4.9.2-2.1.2+20211124.ada5c3b36) - partition with quorum
+      * Last updated: Fri Feb 17 14:36:32 2023
+      * Last change:  Fri Feb 17 14:36:05 2023 by root via crm_attribute on node1
+      * 2 nodes configured
+      * 2 resource instances configured
 
-              *** Resource management is DISABLED ***
-  The cluster will not attempt to start, stop or recover services
+                  *** Resource management is DISABLED ***
+      The cluster will not attempt to start, stop or recover services
 
-Node List:
-  * Online: [ node1 node2 ]
+    Node List:
+      * Online: [ node1 node2 ]
 
-Full List of Resources:
-  * stonith	(stonith:fence_vmware_rest):	 Stopped (unmanaged)
-  * res_vip_<SID>_HDB<NI>	(ocf::heartbeat:IPaddr2):	 Stopped (unmanaged)
-```
+    Full List of Resources:
+      * stonith	(stonith:fence_vmware_rest):	 Stopped (unmanaged)
+      * res_vip_<SID>_HDB<NI>	(ocf::heartbeat:IPaddr2):	 Stopped (unmanaged)
+    ```
 
 #### Ressources SAP HANA
 
-1. La ressource `rsc_SAPHana` gère et surveille les services SAP HANA sur les deux nœuds.
+1. La ressource `rsc_SAPHana_<SID>_HDB<NI>` gère et surveille les services SAP HANA sur les deux nœuds.
 
-Créez la ressource `rsc_SAPHana_<SID>_HDB<NI>` :
+    ```bash
+    crm configure primitive rsc_SAPHana_<SID>_HDB<NI> ocf:suse:SAPHana \
+        op start interval="0" timeout="3600" \
+        op stop interval="0" timeout="3600" \
+        op promote interval="0" timeout="3600" \
+        op demote interval="0" timeout="320" \
+        op monitor interval="60" role="Master" timeout="700" \
+        op monitor interval="61" role="Slave" timeout="700" \
+        params SID="<SID>" InstanceNumber="<NI>" PREFER_SITE_TAKEOVER="true" \
+        DUPLICATE_PRIMARY_TIMEOUT="7200" AUTOMATED_REGISTER="false"
+    
+    crm configure clone msl_SAPHana_<SID>_HDB<NI> rsc_SAPHana_<SID>_HDB<NI> \
+        clone-max="2" clone-node-max="1"
+    ```
 
-```bash
-crm configure primitive rsc_SAPHana_<SID>_HDB<NI> ocf:suse:SAPHana \
-    op start interval="0" timeout="3600" \
-    op stop interval="0" timeout="3600" \
-    op promote interval="0" timeout="3600" \
-    op demote interval="0" timeout="320" \
-    op monitor interval="60" role="Master" timeout="700" \
-    op monitor interval="61" role="Slave" timeout="700" \
-    params SID="<SID>" InstanceNumber="<NI>" PREFER_SITE_TAKEOVER="true" \
-    DUPLICATE_PRIMARY_TIMEOUT="7200" AUTOMATED_REGISTER="false"
- 
-crm configure clone msl_SAPHana_<SID>_HDB<NI> rsc_SAPHana_<SID>_HDB<NI> \
-    clone-max="2" clone-node-max="1"
-```
+    > [!primary]
+    >
+    > Pour découvrir tous les paramètres de cette ressource, veuillez vous référer au manuel ocf_suse_SAPHana avec la commande `man ocf_suse_SAPHana`.
+    >
 
-> [!primary]
-> Pour découvrir tous les paramètres de cette ressource, veuillez vous référer au manuel ocf_suse_SAPHana avec la commande `man ocf_suse_SAPHana`.
->
+2. La ressource `rsc_SAPHanaTopology_<SID>_HDB<NI>` surveille la réplication SAP HANA.
 
-<ol start=2><li>La ressource <code>rsc_SAPHanaTopology</code> surveille la réplication SAP HANA.</li></ol>
+    ```bash
+    crm configure primitive rsc_SAPHanaTopology_<SID>_HDB<NI> ocf:suse:SAPHanaTopology \
+        op monitor interval="10" timeout="600"  \
+        op start interval="0" timeout="600" \
+        op stop interval="0" timeout="300" \
+        params SID="<SID>" InstanceNumber="00"
+    
+    crm configure clone cln_SAPHanaTopology_<SID>_HDB<NI> rsc_SAPHanaTopology_<SID>_HDB<NI> \
+        meta clone-node-max="1" interleave="true"
+    
+    crm configure colocation col_SAPHana_vip_<SID>_HDB<NI> 2000: res_vip_<SID>_HDB<NI>:started \
+        msl_SAPHana_<SID>_HDB<NI>:Master
+    
+    crm configure order ord_SAPHana_<SID>_HDB<NI> Optional: cln_SAPHanaTopology_<SID>_HDB<NI> \
+        msl_SAPHana_<SID>_HDB<NI>
+    ```
 
-Créez la ressource `rsc_SAPHanaTopology` :
+    - Résultat attendu :
 
-```bash
-crm configure primitive rsc_SAPHanaTopology_<SID>_HDB<NI> ocf:suse:SAPHanaTopology \
-    op monitor interval="10" timeout="600"  \
-    op start interval="0" timeout="600" \
-    op stop interval="0" timeout="300" \
-    params SID="<SID>" InstanceNumber="00"
- 
-crm configure clone cln_SAPHanaTopology_<SID>_HDB<NI> rsc_SAPHanaTopology_<SID>_HDB<NI> \
-    meta clone-node-max="1" interleave="true"
- 
-crm configure colocation col_SAPHana_vip_<SID>_HDB<NI> 2000: res_vip_<SID>_HDB<NI>:started \
-    msl_SAPHana_<SID>_HDB<NI>:Master
- 
-crm configure order ord_SAPHana_<SID>_HDB<NI> Optional: cln_SAPHanaTopology_<SID>_HDB<NI> \
-    msl_SAPHana_<SID>_HDB<NI>
-```
+      ```bash
+      crm status
+      ```
 
-- Résultat attendu :
+      ```console
+      Cluster Summary:
+        * Stack: corosync
+        * Current DC: node1 (version 2.1.2+20211124.ada5c3b36-150400.4.9.2-2.1.2+20211124.ada5c3b36) - partition with quorum
+        * Last updated: Fri Feb 17 14:39:35 2023
+        * Last change:  Fri Feb 17 14:39:29 2023 by hacluster via crmd on node2
+        * 2 nodes configured
+        * 6 resource instances configured
 
-```bash
-crm status
-```
+      Node List:
+        * Online: [ node1 node2 ]
 
-```autoit
-Cluster Summary:
-  * Stack: corosync
-  * Current DC: node1 (version 2.1.2+20211124.ada5c3b36-150400.4.9.2-2.1.2+20211124.ada5c3b36) - partition with quorum
-  * Last updated: Fri Feb 17 14:39:35 2023
-  * Last change:  Fri Feb 17 14:39:29 2023 by hacluster via crmd on node2
-  * 2 nodes configured
-  * 6 resource instances configured
+      Full List of Resources:
+        * stonith	(stonith:fence_vmware_rest):	 Started node1
+        * res_vip_<SID>_HDB<NI>	(ocf::heartbeat:IPaddr2):	 Started node1
+        * Clone Set: msl_SAPHana_<SID>_HDB<NI> [rsc_SAPHana_<SID>_HDB<NI>] (promotable, unmanaged):
+          * rsc_SAPHana_<SID>_HDB<NI>	(ocf::suse:SAPHana):	 Slave node2 (unmanaged)
+          * rsc_SAPHana_<SID>_HDB<NI>	(ocf::suse:SAPHana):	 Slave node1 (unmanaged)
+        * Clone Set: cln_SAPHanaTopology_<SID>_HDB<NI> [rsc_SAPHanaTopology_<SID>_HDB<NI>] (unmanaged):
+          * rsc_SAPHanaTopology_<SID>_HDB<NI>	(ocf::suse:SAPHanaTopology):	 Started node2 (unmanaged)
+          * rsc_SAPHanaTopology_<SID>_HDB<NI>	(ocf::suse:SAPHanaTopology):	 Started node1 (unmanaged)
+      ```
 
-Node List:
-  * Online: [ node1 node2 ]
+    > [!primary]
+    >
+    > Pour découvrir tous les paramètres de cette ressource, veuillez vous référer au manuel ocf_suse_SAPHanaTopology avec la commande `man ocf_suse_SAPHanaTopology`.
+    >
 
-Full List of Resources:
-  * stonith	(stonith:fence_vmware_rest):	 Started node1
-  * res_vip_<SID>_HDB<NI>	(ocf::heartbeat:IPaddr2):	 Started node1
-  * Clone Set: msl_SAPHana_<SID>_HDB<NI> [rsc_SAPHana_<SID>_HDB<NI>] (promotable, unmanaged):
-    * rsc_SAPHana_<SID>_HDB<NI>	(ocf::suse:SAPHana):	 Slave node2 (unmanaged)
-    * rsc_SAPHana_<SID>_HDB<NI>	(ocf::suse:SAPHana):	 Slave node1 (unmanaged)
-  * Clone Set: cln_SAPHanaTopology_<SID>_HDB<NI> [rsc_SAPHanaTopology_<SID>_HDB<NI>] (unmanaged):
-    * rsc_SAPHanaTopology_<SID>_HDB<NI>	(ocf::suse:SAPHanaTopology):	 Started node2 (unmanaged)
-    * rsc_SAPHanaTopology_<SID>_HDB<NI>	(ocf::suse:SAPHanaTopology):	 Started node1 (unmanaged)
-```
+    > [!primary]
+    >
+    > Si la ressource `rsc_SAPHana_<SID>_HDB<NI>` est affichée en échec même si les services SAP HANA sont correctement actifs, exécutez la commande suivante pour rafraîchir le statut :
+    >
+    > `crm resource refresh`
+    >
 
-> [!primary]
-> Si la ressource `rsc_SAPHana_<SID>_HDB<NI>` est affichée en échec même si les services SAP HANA sont correctement actifs, exécutez la commande suivante pour rafraîchir le statut :
->
-> `crm resource refresh`
->
+3. Pour éviter un comportement inattendu, nous vous conseillons de désactiver les ressources `rsc_SAPHana_<SID>_HDB<NI>` et `rsc_SAPHanaTopology_<SID>_HDB<NI>`
 
-<ol start=4><li>Pour éviter un comportement inattendu, nous vous conseillons de désactiver les ressources <code>rsc_SAPHana</code> et <code>rsc_SAPHanaTopology</code>.</li></ol>
+    ```bash
+    crm resource unmanage rsc_SAPHana_<SID>_HDB<NI>
+    crm resource unmanage rsc_SAPHanaTopology_<SID>_HDB<NI>
+    ```
 
-```bash
-crm resource unmanage rsc_SAPHana_<SID>_HDB<NI> && crm resource unmanage rsc_SAPHanaTopology_<SID>_HDB<NI>
-```
+4. Quittez le mode maintenance :
 
-<ol start=5><li>Quittez le mode maintenance :</li></ol>
+    ```bash
+    crm configure property maintenance-mode=false
+    'is-managed' conflicts with 'maintenance' in msl_SAPHana_<SID>_HDB<NI>. Remove it (y/n)? n
+    'is-managed' conflicts with 'maintenance' in cln_SAPHanaTopology_<SID>_HDB<NI>. Remove it (y/n)? n
+    ```
 
-```bash
-crm configure property maintenance-mode=false
-'is-managed' conflicts with 'maintenance' in msl_SAPHana_<SID>_HDB<NI>. Remove it (y/n)? n
-'is-managed' conflicts with 'maintenance' in cln_SAPHanaTopology_<SID>_HDB<NI>. Remove it (y/n)? n
-```
+5. Rafraîchissez le cluster sur le nœud primaire :
 
-<ol start=6><li>Rafraîchissez le cluster sur le nœud primaire :</li></ol>
+    ```bash
+    crm resource refresh
+    ```
 
-```bash
-crm resource refresh
-```
+6. Activez les ressources précédemment désactivées à l'étape 3 :
 
-<ol start=7><li>Activez les ressources précédemment désactivées à l'étape 4 :</li></ol>
+    ```bash
+    crm resource manage rsc_SAPHana_<SID>_HDB<NI> && crm resource manage rsc_SAPHanaTopology_<SID>_HDB<NI>
+    ```
 
-```bash
-crm resource manage rsc_SAPHana_<SID>_HDB<NI> && crm resource manage rsc_SAPHanaTopology_<SID>_HDB<NI>
-```
+    - Résultat attendu après plusieurs secondes :
 
-- Résultat attendu après plusieurs secondes :
+      ```bash
+      crm status
+      ```
 
-```bash
-crm status
-```
+      ```console
+      Cluster Summary:
+        * Stack: corosync
+        * Current DC: node1 (version 2.1.2+20211124.ada5c3b36-150400.4.9.2-2.1.2+20211124.ada5c3b36) - partition with quorum
+        * Last updated: Fri Feb 17 14:40:35 2023
+        * Last change:  Fri Feb 17 14:40:29 2023 by hacluster via crmd on node2
+        * 2 nodes configured
+        * 6 resource instances configured
 
-```autoit
-Cluster Summary:
-  * Stack: corosync
-  * Current DC: node1 (version 2.1.2+20211124.ada5c3b36-150400.4.9.2-2.1.2+20211124.ada5c3b36) - partition with quorum
-  * Last updated: Fri Feb 17 14:40:35 2023
-  * Last change:  Fri Feb 17 14:40:29 2023 by hacluster via crmd on node2
-  * 2 nodes configured
-  * 6 resource instances configured
+      Node List:
+        * Online: [ node1 node2 ]
 
-Node List:
-  * Online: [ node1 node2 ]
+      Full List of Resources:
+        * stonith	(stonith:fence_vmware_rest):	 Started node1
+        * res_vip_<SID>_HDB<NI>	(ocf::heartbeat:IPaddr2):	 Started node1
+        * Clone Set: msl_SAPHana_<SID>_HDB<NI> [rsc_SAPHana_<SID>_HDB<NI>] (promotable):
+          * Masters: [ node1 ]
+          * Slaves: [ node2 ]
+        * Clone Set: cln_SAPHanaTopology_<SID>_HDB<NI> [rsc_SAPHanaTopology_<SID>_HDB<NI>]:
+          * Started: [ node1 node2 ]
+      ```
 
-Full List of Resources:
-  * stonith	(stonith:fence_vmware_rest):	 Started node1
-  * res_vip_<SID>_HDB<NI>	(ocf::heartbeat:IPaddr2):	 Started node1
-  * Clone Set: msl_SAPHana_<SID>_HDB<NI> [rsc_SAPHana_<SID>_HDB<NI>] (promotable):
-    * Masters: [ node1 ]
-    * Slaves: [ node2 ]
-  * Clone Set: cln_SAPHanaTopology_<SID>_HDB<NI> [rsc_SAPHanaTopology_<SID>_HDB<NI>]:
-    * Started: [ node1 node2 ]
-```
+    L'adresse IP flottante est attachée sur la carte réseau :
 
-L'adresse IP flottante est attachée sur la carte réseau :
+    ```bash
+    ip a
+    ```
 
-```bash
-ip a
-```
+    ```console
+    1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
+        link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
+        inet 127.0.0.1/8 scope host lo
+          valid_lft forever preferred_lft forever
+    2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
+        link/ether 00:50:56:a8:b7:17 brd ff:ff:ff:ff:ff:ff
+        altname enp11s0
+        altname ens192
+        inet <ip_address> brd <broadcast_ip_address> scope global eth0
+          valid_lft forever preferred_lft forever
+        inet <floating_ip_address> brd <broadcast_ip_address> scope global secondary eth0
+          valid_lft forever preferred_lft forever
+    ```
 
-```autoit
-1: lo: <LOOPBACK,UP,LOWER_UP> mtu 65536 qdisc noqueue state UNKNOWN group default qlen 1000
-    link/loopback 00:00:00:00:00:00 brd 00:00:00:00:00:00
-    inet 127.0.0.1/8 scope host lo
-       valid_lft forever preferred_lft forever
-2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc mq state UP group default qlen 1000
-    link/ether 00:50:56:a8:b7:17 brd ff:ff:ff:ff:ff:ff
-    altname enp11s0
-    altname ens192
-    inet <ip_address> brd <broadcast_ip_address> scope global eth0
-       valid_lft forever preferred_lft forever
-    inet <floating_ip_address> brd <broadcast_ip_address> scope global secondary eth0
-       valid_lft forever preferred_lft forever
-```
+7. Créez le fichier /etc/sudoers.d/SAPHanaSR-srHook et ajoutez le contenu suivant sur les deux nœuds :
 
-> [!primary]
-> Pour découvrir tous les paramètres de cette ressource, veuillez vous référer au manuel ocf_suse_SAPHanaTopology avec la commande `man ocf_suse_SAPHanaTopology`.
->
+    > [!primary]
+    >
+    > - Pour obtenir le nom du siteA et du siteB, exécutez la commande `crm status -A1 | grep site`.
+    > - `<sid>` est le SID SAP HANA en minuscule.
+    >
 
-<ol start=8><li>Créez le fichier <code>/etc/sudoers.d/SAPHanaSR-srHook</code> et ajoutez le contenu suivant sur les deux nœuds :</li></ol>
-
-> [!primary]
-> - Pour obtenir le nom du siteA et du siteB, exécutez la commande `crm status -A1 | grep site`.
-> - `<sid>` est le SID SAP HANA en minuscule.
->
-
-```bash
-# SAPHanaSR-ScaleUp entries for writing srHook cluster attribute
-Cmnd_Alias SOK_SITEA   = /usr/sbin/crm_attribute -n hana_<sid>_site_srHook_<siteA> -v SOK   -t crm_config -s SAPHanaSR
-Cmnd_Alias SFAIL_SITEA = /usr/sbin/crm_attribute -n hana_<sid>_site_srHook_<siteA> -v SFAIL -t crm_config -s SAPHanaSR
-Cmnd_Alias SOK_SITEB   = /usr/sbin/crm_attribute -n hana_<sid>_site_srHook_<siteB> -v SOK   -t crm_config -s SAPHanaSR
-Cmnd_Alias SFAIL_SITEB = /usr/sbin/crm_attribute -n hana_<sid>_site_srHook_<siteB> -v SFAIL -t crm_config -s SAPHanaSR
-<sid>adm ALL=(ALL) NOPASSWD: SOK_SITEA, SFAIL_SITEA, SOK_SITEB, SFAIL_SITEB
-```
-
-> [!success]
-> Félicitations, vous avez configuré avec succès votre cluster SAP HANA avec SLES !
->
+    ```console
+    # SAPHanaSR-ScaleUp entries for writing srHook cluster attribute
+    Cmnd_Alias SOK_SITEA   = /usr/sbin/crm_attribute -n hana_<sid>_site_srHook_<siteA> -v SOK   -t crm_config -s SAPHanaSR
+    Cmnd_Alias SFAIL_SITEA = /usr/sbin/crm_attribute -n hana_<sid>_site_srHook_<siteA> -v SFAIL -t crm_config -s SAPHanaSR
+    Cmnd_Alias SOK_SITEB   = /usr/sbin/crm_attribute -n hana_<sid>_site_srHook_<siteB> -v SOK   -t crm_config -s SAPHanaSR
+    Cmnd_Alias SFAIL_SITEB = /usr/sbin/crm_attribute -n hana_<sid>_site_srHook_<siteB> -v SFAIL -t crm_config -s SAPHanaSR
+    <sid>adm ALL=(ALL) NOPASSWD: SOK_SITEA, SFAIL_SITEA, SOK_SITEB, SFAIL_SITEB
+    ```
 
 ### Test de bascule
 
@@ -606,7 +608,7 @@ Dans ce cas, le comportement attendu est la bascule de toutes les ressources hé
 >>
 >> Toutes les ressources sont correctement gérées et surveillées par le cluster.
 >>
->> ```autoit
+>> ```console
 >> Cluster Summary:
 >>   * Stack: corosync
 >>   * Current DC: node1 (version 2.1.2+20211124.ada5c3b36-150400.4.9.2-2.1.2+20211124.ada5c3b36) - partition with quorum
@@ -632,9 +634,9 @@ Dans ce cas, le comportement attendu est la bascule de toutes les ressources hé
 >>
 >> Le cluster détecte la perte du node1 qui était le Master et déclenche la bascule sur le node2.
 >>
->> La bascule peut prendre plus ou moins de temps, cela dépend de la taille de la base de données SAP HANA.
+>> La bascule peut prendre plusieurs minutes, cela dépend de la taille de la base de données SAP HANA.
 >>
->> ```autoit
+>> ```console
 >> Cluster Summary:
 >>   * Stack: corosync
 >>   * Current DC: node2 (version 2.1.2+20211124.ada5c3b36-150400.4.9.2-2.1.2+20211124.ada5c3b36) - partition with quorum
@@ -664,7 +666,7 @@ Dans ce cas, le comportement attendu est la bascule de toutes les ressources hé
 >>
 >> Une fois le problème réglé sur le node1, vous devez enregistrer le node1 vers le node2 et démarrer les services SAP HANA pour restaurer le cluster dans un état nominal.
 >>
->> ```autoit
+>> ```console
 >> Cluster Summary:
 >>   * Stack: corosync
 >>   * Current DC: node1 (version 2.1.2+20211124.ada5c3b36-150400.4.9.2-2.1.2+20211124.ada5c3b36) - partition with quorum
@@ -700,7 +702,7 @@ Dans ce cas, le comportement attendu est uniquement la détection de la perte du
 >>
 >> Toutes les ressources sont correctement gérées et surveillées par le cluster.
 >>
->> ```autoit
+>> ```console
 >> Cluster Summary:
 >>   * Stack: corosync
 >>   * Current DC: node1 (version 2.1.2+20211124.ada5c3b36-150400.4.9.2-2.1.2+20211124.ada5c3b36) - partition with quorum
@@ -728,7 +730,7 @@ Dans ce cas, le comportement attendu est uniquement la détection de la perte du
 >>
 >> Une fois le problème réglé sur le node2, démarrez les services SAP HANA pour restaurer le cluster dans un état nominal.
 >>
->> ```autoit
+>> ```console
 >> Cluster Summary:
 >>   * Stack: corosync
 >>   * Current DC: node1 (version 2.1.2+20211124.ada5c3b36-150400.4.9.2-2.1.2+20211124.ada5c3b36) - partition with quorum
@@ -760,4 +762,4 @@ Dans ce cas, le comportement attendu est uniquement la détection de la perte du
 
 Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/?_gl=1*835bqy*_gcl_au*MzU3MTAzMzA5LjE2ODY1NTk4MTE.) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
-Échangez avec notre communauté d'utilisateurs sur https://community.ovh.com.
+Échangez avec notre communauté d'utilisateurs sur [https://community.ovh.com](https://community.ovh.com).
