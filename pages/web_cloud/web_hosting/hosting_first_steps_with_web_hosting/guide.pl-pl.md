@@ -4,6 +4,10 @@ excerpt: "Dowiedz się, jak właściwie rozpocząć korzystanie z hostingu"
 updated: 2023-11-16
 ---
 
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zgłóś propozycję modyfikacji” na tej stronie.
+>
+
 ## Wprowadzenie 
 
 Właśnie kupiłeś hosting, aby stworzyć swoją stronę internetową. Umożliwia on zbudowanie strony opartej na gotowych rozwiązaniach (WordPress, PrestaShop, Joomla!, Drupal) lub własnej strony WWW działającej na stale dostępnych serwerach OVHcloud. Dziękujemy za zaufanie. Przewodnik, który dla Ciebie udostępniamy, zawiera informacje, jak w prosty sposób stworzyć własną stronę internetową.
@@ -20,6 +24,7 @@ Właśnie kupiłeś hosting, aby stworzyć swoją stronę internetową. Umożliw
 ## W praktyce
 
 ### Etap 1: Wybór projektu WWW
+
 Chcesz stworzyć blog czy sklep internetowy? Dzielić się swoją pasją czy promować w Internecie własny biznes? A może chcesz przenieść istniejącą już stronę na serwer OVH? Aby z sukcesem zrealizować projekt, należy jasno określić swój cel.
 
 Dzięki hostingowi OVHcloud, możesz stworzyć nową stronę internetową lub przenieść istniejącą już stronę.
@@ -127,7 +132,7 @@ Aby uzyskać dostęp do strefy DNS Twojej domeny OVHcloud wybierz sekcję `Domen
  
 Sprawdź strefę DNS Twojej domeny u usługodawcy, który nią zarządza. Jeżeli to konieczne, zmodyfikuje niezbędne informacje.
 
-- **Przenoszenie usług (stron internetowych i adresów e-mail) na serwer OVH**
+- **Przenoszenie usług (stron internetowych i adresów e-mail) na serwer OVHcloud**
 
 W takim przypadku zmiany wprowadzone w DNS mogą spowodować brak dostępności usług, jeżeli są przeprowadzane w nieodpowiednim momencie. Zgodnie z różnymi etapami opisanymi w dokumentacji [Przenoszenie strony na serwer OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh){.external}, zmiana serwerów DNS domeny powinna odbywać się na końcu procesu.
 
