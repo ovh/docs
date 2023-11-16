@@ -139,6 +139,11 @@ Pour l'activer, cliquez sur le menu `Bare Metal Cloud`{.action} et ouvrez `IP`{.
 >
 > La mitigation étant intégrée à notre solution Anti-DDoS (VAC), elle ne peut être désactivée sur un service. Tous les produits OVHcloud sont livrés avec la protection Anti-DDoS.
 
+
+## Network Security Dashboard
+
+Vous pouvez lire plus d'informations sur notre [Network Security Dashboard](/pages/bare_metal_cloud/dedicated_servers/network_security_dashboard) afin d'obtenir plus de détails sur votre trafic.
+
 ## Aller plus loin
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
