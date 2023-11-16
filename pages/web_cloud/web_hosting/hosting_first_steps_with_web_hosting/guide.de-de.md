@@ -23,6 +23,11 @@ Sie haben vor Kurzem ein Webhosting bestellt, um Ihre eigene Website zu erstelle
 
 ## In der praktischen Anwendung
 
+> [!success]
+>
+> Vergewissern Sie sich, dass die Domain oder Subdomain, die Sie verwenden möchten, korrekt mit Ihrem OVHcloud Webhosting verbunden ist, bevor Sie diese Anleitung lesen. Weitere Informationen finden Sie in unserer Anleitung „[Teilen Sie Ihr OVHcloud Webhosting auf mehrere Websites](/pages/web_cloud/web_hosting/multisites_configure_multisite)“.
+>
+
 ### Schritt 1: Ihr Projekt definieren
 
 Möchten Sie einen Blog oder einen Onlineshop einrichten? Ihre Leidenschaft mit anderen teilen oder die Internetpräsenz Ihres Unternehmens stärken? Oder möchten Sie eine bestehende Website zu OVHcloud migrieren? Um Ihr Vorhaben erfolgreich umzusetzen, ist es wichtig, dass Sie Ihr Ziel klar vor Augen haben.
