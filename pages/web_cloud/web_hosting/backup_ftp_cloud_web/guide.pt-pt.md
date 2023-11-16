@@ -90,7 +90,7 @@ Depois de fazer o download dos seus ficheiros, poderá [ligar-se ao seu espaço 
 
 ## Quer saber mais? 
 
-[Aceder ao espaço de armazenamento do alojamento Web](/pages/web_cloud/web_hosting/ftp_connection){.external}
+[Aceder ao espaço de armazenamento do alojamento Web](/pages/web_cloud/web_hosting/ftp_connection)
 
 [Ligar-se através do software Filezilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)
 

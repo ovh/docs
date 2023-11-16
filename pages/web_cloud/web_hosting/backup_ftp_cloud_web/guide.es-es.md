@@ -90,7 +90,7 @@ Una vez que haya cargado los archivos, podrá [conectarse a su espacio FTP](/pag
 
 ## Más información 
 
-[Conectarse al espacio de almacenamiento de un alojamiento web](/pages/web_cloud/web_hosting/ftp_connection){.external}
+[Conectarse al espacio de almacenamiento de un alojamiento web](/pages/web_cloud/web_hosting/ftp_connection)
 
 [Conectarse mediante Filezilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)
 
