@@ -21,7 +21,7 @@ This guide is designed for customers who have just purchased a Web Hosting plan 
 
 > [!success]
 >
-> Before reading this guide any further, please ensure that the domain or subdomain you would like to use is correctly associated with your OVHcloud web hosting plan. To do this, please refer to our guide on "[Sharing an OVHcloud Web Hosting plan across multiple websites](/pages/web_cloud/web_hosting/multisites_configure_multisite)".
+> Before reading this guide any further, please ensure that the domain or subdomain you would like to use is correctly associated with your OVHcloud web hosting plan. To do this, please refer to our guide on "[Hosting multiple websites on your Web Hosting plan](/pages/web_cloud/web_hosting/multisites_configure_multisite)".
 >
 
 ### Step 1: Define your project
