@@ -1,6 +1,6 @@
 ---
 title: "Erste Schritte mit Ihrem Webhosting"
-excerpt: "Diese Anleitung erklärt, wie Sie So starten Sie mit Ihrem Webhosting"
+excerpt: "Erfahren Sie hier, wie Sie mit Ihrem Webhosting starten"
 updated: 2023-11-16
 ---
 
@@ -12,20 +12,20 @@ updated: 2023-11-16
 
 Sie haben vor Kurzem ein Webhosting bestellt, um Ihre eigene Website zu erstellen. Auf diesem Hosting können Sie eine gebrauchsfertige Lösung (z. B. WordPress, PrestaShop) installieren oder Ihre eigene Plattform auf den dauerhaft verfügbaren Servern entwickeln. Wir danken Ihnen für Ihr Vertrauen in OVHcloud und zeigen Ihnen in dieser Anleitung, wie Sie Ihre Website ganz einfach einrichten können.
 
-**Diese Anleitung erklärt, wie Sie richtig mit Ihrem Webhosting starten.**
+**Diese Anleitung erklärt die ersten Schritte mit Ihrem Webhosting.**
 
 ## Voraussetzungen
 
-- Sie besitzen ein [Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external} Angebot.
-- Sie haben die Bestätigungs-E-Mail zur Installation Ihres Webhostings erhalten.
-- Sie besitzen eine [Domain](https://www.ovhcloud.com/de/domains/){.external}, über die Ihre Website erreichbar sein wird.
-- Sie sind in Ihrem [Kundencenter](https://ovh.com/auth/?action=gotomanager){.external} eingeloggt.
+- Sie verfügen über ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/){.external}.
+- Sie haben die E-Mail zur Installation Ihres Webhostings erhalten.
+- Sie haben einen [Domainnamen](https://www.ovhcloud.com/de/domains/){.external}, über den Ihre Website erreichbar sein wird.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 ## In der praktischen Anwendung
 
 > [!success]
 >
-> Vergewissern Sie sich, dass die Domain oder Subdomain, die Sie verwenden möchten, korrekt mit Ihrem OVHcloud Webhosting verbunden ist, bevor Sie diese Anleitung lesen. Weitere Informationen finden Sie in unserer Anleitung „[Teilen Sie Ihr OVHcloud Webhosting auf mehrere Websites](/pages/web_cloud/web_hosting/multisites_configure_multisite)“.
+> Vergewissern Sie sich, dass die Domain oder Subdomain, die Sie verwenden möchten, korrekt mit Ihrem OVHcloud Webhosting verbunden ist, bevor Sie dieser Anleitung folgen. Weitere Informationen finden Sie in unserer Anleitung „[Mehrere Websites auf einem Webhosting einrichten](/pages/web_cloud/web_hosting/multisites_configure_multisite)“.
 >
 
 ### Schritt 1: Ihr Projekt definieren
