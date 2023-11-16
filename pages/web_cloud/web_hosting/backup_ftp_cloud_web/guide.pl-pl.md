@@ -1,7 +1,6 @@
 ---
 title: "Tworzenie i pobieranie kopii zapasowej przestrzeni FTP na hostingu Cloud Web"
-excerpt: "Dowiedz się, jak pobrać kopię zapasową przestrzeni FTP Twojego hostingu Cloud Web"
-updated: 2023-11-16
+updated: 2022-09-13
 ---
 
 > [!primary]
@@ -91,7 +90,7 @@ Po pobraniu plików możesz [połączyć się z przestrzenią FTP](/pages/web_cl
 
 ## Sprawdź również 
 
-[Logowanie do przestrzeni dyskowej hostingu WWW](/pages/web_cloud/web_hosting/ftp_connection)
+[Logowanie do przestrzeni dyskowej hostingu WWW](/pages/web_cloud/web_hosting/ftp_connection){.external}
 
 [Logowanie za pomocą programu Filezilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)
 

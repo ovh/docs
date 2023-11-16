@@ -1,7 +1,6 @@
 ---
 title: "Exportar la copia de seguridad del espacio FTP de su hosting Cloud Web"
-excerpt: "Descubra cómo descargar una copia de seguridad del espacio FTP de un alojamiento Cloud Web"
-updated: 2023-11-16
+updated: 2022-09-13
 ---
 
 > [!primary]
@@ -91,7 +90,7 @@ Una vez que haya cargado los archivos, podrá [conectarse a su espacio FTP](/pag
 
 ## Más información 
 
-[Conectarse al espacio de almacenamiento de un alojamiento web](/pages/web_cloud/web_hosting/ftp_connection)
+[Conectarse al espacio de almacenamiento de un alojamiento web](/pages/web_cloud/web_hosting/ftp_connection){.external}
 
 [Conectarse mediante Filezilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)
 
