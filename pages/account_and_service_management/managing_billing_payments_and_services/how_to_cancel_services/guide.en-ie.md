@@ -1,7 +1,7 @@
 ---
 title: How to cancel your OVHcloud services
 excerpt: Find out how to discontinue your OVHcloud subscriptions
-updated: 2022-03-22
+updated: 2023-11-16
 ---
 
 ## Objective
@@ -215,7 +215,7 @@ To cancel your [Hosted Exchange](https://www.ovhcloud.com/en-ie/emails/hosted-ex
 
 #### Private Exchange <a name="private"></a>
 
-To cancel your [Private Exchange](https://www.ovhcloud.com/en-ie/emails/private-exchange/) solution, follow the instructions in this [guide](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_billing_exchange#deleting-accounts).
+To cancel your [Private Exchange](https://www.ovhcloud.com/en-ie/emails/private-exchange/) solution, follow the instructions in this [guide](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_billing_exchange#deleting-accounts_1).
 
 #### Office 365 CSP1 <a name="office-csp1"></a>
 
