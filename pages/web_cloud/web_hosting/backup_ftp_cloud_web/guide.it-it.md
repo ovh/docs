@@ -1,6 +1,7 @@
 ---
 title: "Recuperare il backup dello spazio FTP del tuo hosting Cloud Web"
-updated: 2022-09-13
+excerpt: "Questa guida ti mostra come recuperare un backup dello spazio FTP del tuo hosting Cloud Web"
+updated: 2023-11-16
 ---
 
 > [!primary]
@@ -90,7 +91,7 @@ Una volta scaricati i file, potrai [accedere al tuo spazio FTP](/pages/web_cloud
 
 ## Per saperne di più 
 
-[Connettersi allo spazio di storage di un hosting Web](/pages/web_cloud/web_hosting/ftp_connection){.external}
+[Connettersi allo spazio di storage di un hosting Web](/pages/web_cloud/web_hosting/ftp_connection)
 
 [Accedi con il client Filezilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)
 

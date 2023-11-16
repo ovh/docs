@@ -1,6 +1,7 @@
 ---
 title: "Recuperar o backup do espaço FTP do seu alojamento Cloud Web"
-updated: 2022-09-13
+excerpt: "Saiba como recuperar um backup do espaço FTP do seu alojamento Cloud Web"
+updated: 2023-11-16
 ---
 
 > [!primary]
@@ -90,7 +91,7 @@ Depois de fazer o download dos seus ficheiros, poderá [ligar-se ao seu espaço 
 
 ## Quer saber mais? 
 
-[Aceder ao espaço de armazenamento do alojamento Web](/pages/web_cloud/web_hosting/ftp_connection){.external}
+[Aceder ao espaço de armazenamento do alojamento Web](/pages/web_cloud/web_hosting/ftp_connection)
 
 [Ligar-se através do software Filezilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)
 
@@ -99,4 +100,3 @@ Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
 
 Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>
-
