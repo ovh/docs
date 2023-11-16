@@ -23,6 +23,11 @@ Los planes de hosting de OVHcloud permiten crear un sitio web de forma fácil y 
 
 ## Procedimiento
 
+> [!success]
+>
+> Antes de seguir leyendo esta guía, asegúrese de que el dominio o subdominio que quiera utilizar esté correctamente asociado a su alojamiento web de OVHcloud. Para ello, consulte nuestra guía "[Alojar varios sitios web en un mismo hosting de OVHcloud](/pages/web_cloud/web_hosting/multisites_configure_multisite)".
+>
+
 ### 1. Definir el proyecto
 
 ¿Quiere crear un blog o una tienda online? ¿Desea compartir una de sus pasiones o promocionar su actividad profesional en internet? ¿O tal vez quiere migrar un sitio web existente a OVHcloud? Para llevar su proyecto a buen puerto, es importante tener una visión clara de su objetivo.
