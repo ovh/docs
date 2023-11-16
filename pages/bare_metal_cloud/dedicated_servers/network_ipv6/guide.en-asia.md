@@ -1,7 +1,7 @@
 ---
 title: 'Configuring IPv6 on dedicated servers'
 excerpt: 'Find out how to configure IPv6 addresses on our infrastructure'
-updated: 2023-07-04
+updated: 2023-11-14
 ---
 
 ## Objective
@@ -222,40 +222,29 @@ ping6 -c 4 2001:4860:4860::8888
 
 If you are not able to ping this IPv6 address, check your configuration and try again. Also ensure that the machine you are testing from is connected with IPv6. If it still does not work, please test your configuration in [Rescue mode](/pages/bare_metal_cloud/dedicated_servers/rescue_mode).
 
-### Ubuntu 18.04 and 20.04
+### Debian 12, Ubuntu 20.04 and following
 
 #### Step 1: Use SSH to connect to your server
 
 Find more information in [this guide](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server#logging-on-to-your-server).
 
-#### Step 2: Open your server's network configuration file
+#### Step 2: Create the network configuration file
 
-Open the network configuration file located in `/etc/netplan`. For demonstration purposes, our file is called '50-cloud-init.yaml'.
+The network configuration files are located in the directory `/etc/netplan/`. By default, the main configuration file is called "50-cloud-init.yaml".
+
+The best approach is to create a separate configuration file for setting up IPv6 addresses in the `/etc/netplan/` directory. This way, you can easily revert the changes in case of an error.
+
+In our example, our file is named "51-cloud-init-ipv6.yaml":
+
+```bash
+nano /etc/netplan/51-cloud-init-ipv6.yaml
+```
 
 #### Step 3: Amend the network configuration file
 
-Using a text editor, amend the '50-cloud-init.yaml' file by adding the following lines to the relevant sections as shown in the example below.
+Using a text editor, amend the '51-cloud-init-ipv6.yaml' file by adding the following lines to the file as shown in the example below.
 
-Replace the generic elements (i.e. YOUR_IPV6, IPV6_PREFIX and IPV6_GATEWAY) as well as the network interface (if your server is not using enp1s0) with your specific values. 
-
-```yaml
-network:
-    version: 2
-    ethernets:
-        enp1s0:
-            dhcp4: true
-            match:
-                macaddress: 00:04:0p:8b:c6:30
-            set-name: enp1s0
-            addresses:
-              - YOUR_IPV6/IPv6_PREFIX
-            gateway6: IPv6_GATEWAY
-            routes:
-                - to: IPv6_GATEWAY
-                  scope: link
-```
-
-### Ubuntu (22.04 - 23.10) and Debian 12
+Replace the generic elements (i.e. MAC_ADDRESS, YOUR_IPV6, IPV6_PREFIX and IPV6_GATEWAY) as well as the network interface (if your server is not using eno3) with your specific values.
 
 The configuration file should look like the example below:
 
@@ -263,11 +252,11 @@ The configuration file should look like the example below:
 network:
     version: 2
     ethernets:
-        enp1s0:
+        eno3:
             dhcp4: true
             match:
-                macaddress: 00:04:0p:8b:c6:30
-            set-name: enp1s0
+                macaddress: MAC_ADDRESS
+            set-name: eno3
             addresses:
               - YOUR_IPV6/IPv6_PREFIX
             routes:
@@ -313,7 +302,7 @@ PING 2001:4860:4860::8888(2001:4860:4860::8888) 56 data bytes
 rtt min/avg/max/mdev = 4.075/4.079/4.083/0.045 ms
 ```
 
-### Windows Server 2012
+### Windows Server 2016 and later
 
 #### Step 1: Use RDP to connect to your server
 

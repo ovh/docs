@@ -1,7 +1,7 @@
 ---
 title: 'Configuring IP aliasing'
 excerpt: 'Find out how to add Additional IP addresses to your server configuration'
-updated: 2023-11-08
+updated: 2023-11-14
 ---
 
 > [!primary]
@@ -205,7 +205,7 @@ systemctl restart NetworkManager
 
 The configuration file is called "50-cloud-init.yaml" and is located in `/etc/netplan`. 
 
-The best practice approach is to create separate configuration files for Additional IPs and IPv6 addresses. This way, you easily revert the changes in case of an error.
+The best practice approach is to create separate configuration files for Additional IPs and IPv6 addresses. This way, you can easily revert the changes in case of an error.
 
 #### Step 1: Determine the interface
 
@@ -215,17 +215,17 @@ ip a
 
 Note the name of the interface (the one on which your server's main IP address is configured) and its MAC address.
 
-#### Step 2: Create the configuration file
+#### Step 2: Create and edit the configuration file
 
-Next, create a configuration file with a .yaml extension to configure your additional IPs. As an example, our file is named "51-cloud-init.yaml".
+Next, create a configuration file with a .yaml extension to configure your Additional IP(s). As an example, our file is named "51-cloud-init.yaml".
 
 ```sh
 editor /etc/netplan/51-cloud-init.yaml
 ```
 
-Next, edit the file with the content below, replacing `INTERFACE_NAME`, `MAC_ADDRESS` and `ADDITIONAL_IP` with your own values:
+Edit the file with the content below, replacing `INTERFACE_NAME`, `MAC_ADDRESS` and `ADDITIONAL_IP` with your own values:
 
-```
+```yaml
 network:
     version: 2
     ethernets:
@@ -240,7 +240,7 @@ network:
 
 If you have two Additional IPs to configure, the configuration file should look like this:
 
-```
+```yaml
 network:
     version: 2
     ethernets:

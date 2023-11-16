@@ -1,7 +1,7 @@
 ---
 title: Configuring IP aliasing
 excerpt: Find out how to add Additional IP addresses to your VPS configuration
-updated: 2023-11-08
+updated: 2023-11-14
 ---
 
 > [!primary]
@@ -105,9 +105,11 @@ Apply the changes with the following command:
 sudo systemctl restart networking
 ```
 
-### Ubuntu (20.04 - 23.04) & Debian 12
+### Ubuntu 20.04 and following, Debian 12
 
-The configuration file for your Additional IP addresses is located in `/etc/netplan/`. In this example it is called "50-cloud-init.yaml". Before making changes, verify the actual file name in this folder. 
+The network configuration files are located in the `/etc/netplan/` directory. By default, the main configuration file is called "50-cloud-init.yaml". Since netplan does not support virtual interfaces or ethernet aliases (for example ens3:0, ens3:1), all Additional IPs are configured on a single network interface.
+
+The best approach is to create a separate configuration file to set up Additional IPs in the `/etc/netplan/` directory. This way, you can easily revert the changes in case of an error.
 
 #### Step 1: Disable automatic network configuration
 
@@ -123,27 +125,25 @@ network: {config: disabled}
 ```
 Creating this configuration file will prevent changes to your network configuration from being made automatically.
 
-#### Step 2: Create the configuration file
+#### Step 2: Create and edit the configuration file
 
-You can verify your network interface name with this command:
+First, verify your network interface name with this command:
 
 ```bash
 ip a
 ```
 
-The best approach is to create a separate configuration file for configuring the Additional IPs in the directory `/etc/netplan/`. This way, if you make a mistake, you can simply delete the file and start again. Each Additional IP address will need its own line within the file.
+Note the name of the interface (the one on which your server's main IP address is configured) and its MAC address.
 
-As an example, our file is named "51-cloud-init.yaml".
+Next, create a configuration file with a .yaml extension to configure your Additional IP(s). As an example, our file is named "51-cloud-init.yaml".
 
 ```sh
-editor /etc/netplan/51-cloud-init.yaml
+sudo nano /etc/netplan/51-cloud-init.yaml
 ```
 
-Netplan does not support virtual interfaces or ethernet aliases (for example ens3:0, ens3:1), so all Additional IPs are configured on a single network interface.
+Edit the file with the content below, replacing `INTERFACE_NAME`, `MAC_ADDRESS` and `ADDITIONAL_IP` with your own values:
 
-Next, edit the file with the content below, replacing `INTERFACE_NAME`, `MAC_ADDRESS` and `ADDITIONAL_IP` with your own values:
-
-```
+```yaml
 network:
     version: 2
     ethernets:
@@ -158,7 +158,7 @@ network:
 
 If you have two Additional IPs to configure, the configuration file should look like this:
 
-```
+```yaml
 network:
     version: 2
     ethernets:
@@ -301,7 +301,7 @@ The main configuration file is located in `/etc/sysconfig/network-scripts/`. In 
 
 For each Additional IP to be configured, we'll create a separate configuration file with a virtual interface. To create a virtual interface, we simply add a consecutive number to the interface name, starting with a value of 0 for the first alias. For example, for a network interface named "eth0" the first alias is "eth0:0".
 
-#### Step 1: Edit the network configuration file
+#### Step 1: Create and edit the network configuration file
 
 First, verify your network interface name with this command:
 
