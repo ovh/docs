@@ -66,7 +66,7 @@ Cet élément indique la référence commerciale identifiant le modèle de VPS c
 
 Les ressources actuelles de votre VPS sont affichées ici et peuvent être mises à jour séparément en cliquant sur le bouton correspondant. À noter que les mises à niveau sont limitées par le modèle de VPS choisi et peuvent uniquement être disponibles en passant à un [gamme supérieure] (https://www.ovhcloud.com/fr/vps).
 
-IP ####
+#### IP
 
 ##### **IPv4**
 
