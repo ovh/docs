@@ -13,7 +13,7 @@ updated: 2023-11-16
 
 O seu alojamento Cloud Web dispõe de um espaço de armazenamento no qual pode alojar os seus sites ou aplicações.
 
-**Saiba como recuperar um backup do espaço FTP do seu alojamento Cloud Web**.
+**Saiba como recuperar um backup do espaço FTP do seu alojamento Cloud Web**. 
 
 > [!primary]
 > 
