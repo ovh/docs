@@ -31,6 +31,8 @@ To protect all means exposed on public IP addresses, OVHcloud offers a firewall 
 
 ## Instructions
 
+OVHcloud has recently enhanced its security offering with the introduction of Edge Network Firewall. This advanced feature reduces exposure to network attacks from the Internet by moving firewall rules from the server to the edge of the OVHcloud network. This blocks incoming attacks as close as possible to their origin, reducing the risk of server or rack connectivity saturation for larger attacks. Managing firewall rules can be complex, but thanks to the recent update to the Edge Network Firewall interface, this task is now simpler and more intuitive.
+
 ### Enable Edge Network Firewall
 
 > [!primary]
@@ -85,22 +87,23 @@ You can set up to **20 rules per IP**.
 > For more information, please refer to the following guides: [Configuring the firewall on Windows](/pages/bare_metal_cloud/dedicated_servers/activate-port-firewall-soft-win) and [Configuring the firewall on Linux with iptables](/pages/bare_metal_cloud/dedicated_servers/firewall-Linux-iptable).
 >
 
-To add a rule, click on `Add a rule`{.action}:
+To add a rule :
 
-![Add a rule](images/addarule2022.png){.thumbnail}
+| ![add-rule-btn](images/edge-firewall-add-rule.png) | 
+|:--:| 
+| click on `Add a rule`{.action}. |
 
-For each rule you must choose:
+For each rule (excluding TCP), you must choose :
 
-- A priority (from 0 to 19, 0 being the first rule to be applied, followed by the others)
-- An action (`Accept`{.action} or `Deny`{.action})
-- The protocol
-- Source IP (optional)
-- The source port (TCP only)
-- The destination port (TCP only)
-- The TCP state (TCP only, choices: NONE, ESTABLISHED or NEW)
+| ![add-rule-btn](images/basic-rule.png) | 
+|:--| 
+| &bull; A priority (from 0 to 19, 0 being the first rule to be applied, followed by the others) <br>&bull; An action (`Accept`{.action} or `Deny`{.action}) <br>&bull; The protocol <br>&bull; Source IP (optional) |
 
-![Details on adding a rule](images/ajoutregle4.png){.thumbnail}
+For each **TCP** rule, you must choose :
 
+| ![add-rule-btn](images/tcp-rule.png) | 
+|:--| 
+| &bull; A priority (from 0 to 19, 0 being the first rule to be applied, followed by the others) <br>&bull; An action (`Accept`{.action} or `Deny`{.action}) <br>&bull; The protocol <br>&bull; Source IP (optional) <br>&bull; The source port <br>&bull; The destination port <br>&bull; The TCP state <br>&bull; Fragments|
 
 > [!primary]
 >
