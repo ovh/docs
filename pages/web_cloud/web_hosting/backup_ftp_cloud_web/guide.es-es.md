@@ -1,5 +1,6 @@
 ---
 title: "Exportar la copia de seguridad del espacio FTP de su hosting Cloud Web"
+excerpt: "Descubra cómo descargar una copia de seguridad del espacio FTP de un alojamiento Cloud Web"
 updated: 2022-09-13
 ---
 
