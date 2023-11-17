@@ -13,7 +13,7 @@ Pour découvrir Logs Data Platform avant de poursuivre ce guide, référez-vous 
 ## Prérequis
 
 - Disposer d'un [compte client OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-creation).
-- Vous disposez d'un compte Logs Data Platform (LDP) au sein de ce compte OVHcloud avec au moins un flux actif configuré. [Ce guide](/pages/manage_and_operation/observability/logs_data_platform/getting_started_quick_start) vous guidera dans toutes les étapes nécessaires.
+- Disposer d'un compte Logs Data Platform (LDP) au sein de votre compte OVHcloud avec au moins un flux actif configuré. [Ce guide](/pages/manage_and_operation/observability/logs_data_platform/getting_started_quick_start) vous guidera dans toutes les étapes nécessaires.
 
 ## Glossaire
 
@@ -33,7 +33,7 @@ Le compte OVHcloud propose 3 niveaux de logs :
 
 - **Journaux d'audit** : Fournissez un ensemble chronologique d'enregistrements pertinents pour la sécurité, documentant la séquence d'actions dans votre compte OVHcloud. (c'est-à-dire connexions, changement de mot de passe, etc.)
 - **Journaux d'activité** : Fournit tous les enregistrements des actions de votre compte OVHcloud à partir des appels API et des actions effectuées dans l'espace client.
-- **Logs de politique d'accès** : Fournissez tous les enregistrements d'évaluation d'accès dans votre compte OVHcloud, y compris les actions d'intégration tierce (c'est-à-dire les actions autorisées ou non autorisées par les politiques IAM).
+- **Logs de politique d'accès** : Fournit tous les enregistrements d'évaluation d'accès dans votre compte OVHcloud, y compris les actions d'intégration tierce (c'est-à-dire les actions autorisées ou non autorisées par les politiques IAM).
 
 ### Activer le transfert de logs
 
@@ -41,11 +41,11 @@ Vous pouvez activer la redirection des logs des comptes OVHcloud via API. Vous d
 
 Notez que l'activation du transfert est gratuite, mais vous serez facturé pour l'utilisation de votre service Logs Data Platform selon le tarif standard. Pour la tarification du LDP, consultez la [Logs Data Platform product page] (https://www.ovhcloud.com/fr/logs-data-platform/).
 
-Pour activer la redirection, vous pouvez utiliser les API suivantes :
+Pour activer la redirection, utilisez les API suivantes :
 
 |**Méthode**|**Type de journal**|**Chemin**|**Description**|
 | :-: | :-: | :-: | :-: |
-POST|Journaux d'audit|/me/logs/audit/forward|Transférer les journaux d'audit des comptes|
+POST|Journaux d'audit|/me/logs/audit/forward|Transfère les journaux d'audit des comptes|
 POST|Journaux d'activité|/me/api/logs/forward|Journaux de l'API de transfert et des comptes du Panneau de configuration|
 POST|Accéder aux journaux de stratégie|/iam/logs/forward|Transfère les journaux IAM du compte vers un flux de journaux dédié|
 
@@ -118,11 +118,11 @@ Les logs générés sont :
 | :-: | :-: | :-: |
 |account|String|Compte OVHcloud concerné par l'action|
 |authDetails_userDetails_type|ACCOUNT, PROVIDER ou USER|Indiquez si l'utilisateur est un compte racine (ACCOUNT), un utilisateur local (USER) ou un utilisateur issu d'un SSO (PROVIDER)|
-|authDetails_userDetails_user|Chaîne|Nom de l'utilisateur|
+|authDetails_userDetails_user|String|Nom de l'utilisateur|
 |client_ip|String|IP de l'utilisateur qui a effectué l'action|
 |client_ip_geolocation|String|Géolocalisation de l'utilisateur qui a effectué l'action|
 |client_ip_city_name|String|Nom de la ville de l'utilisateur qui a effectué l'action (si disponible)|
-|client_ip_country_code|Chaîne|Code pays de l'utilisateur qui a effectué l'action|
+|client_ip_country_code|String|Code pays de l'utilisateur qui a effectué l'action|
 |loginSuccessDetails_mfaType|String|Indiquez le type d'utilisation de l'authentification multifacteur : BACKUP_COD, MAIL, NONE, SMS, TOTP, U2F, UNKNOWN|
 |loginSuccessDetails_userAgent|String|Agent utilisateur de l'utilisateur|
 |source|String|iam.ovhcloud|
