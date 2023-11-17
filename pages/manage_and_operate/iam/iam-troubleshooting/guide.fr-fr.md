@@ -41,7 +41,7 @@ Pour cela rendez-vous dans l'onglet `Network`{.action} et sélectionnez la requ�
 
 Si la [transmission des logs du compte OVHcloud](/pages/manage_and_operate/iam/iam-logs-forwarding) vers LDP est activée, vous pouvez trouver l'information dans les logs des politiques d'accès.
 
-Dans l'interface de Graylog, faites une recherche sur le login de l'utilisateur concerné et les logs contenant des `unauthorized_actions_array` avec la requete `identities_array:*My_user* AND unauthorized_actions_array:*`.
+Dans l'interface de Graylog, faites une recherche sur le login de l'utilisateur concerné et les logs contenant des `unauthorized_actions_array` avec la requete `identities_array:*My_user* AND _exists_:unauthorized_actions_array`.
 
 ![Graylog research](images/graylog_research.png){.thumbnail}
 
