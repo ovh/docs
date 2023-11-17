@@ -1,9 +1,8 @@
 ---
-title: Comment analyser les résultats de politiques IAM
+title: "Comment analyser les résultats de politiques IAM"
 excerpt: "Utiliser les logs générés pour identifier les droits manquants dans les politiques IAM"
-updated: 2023-10-19
+updated: 2023-11-17
 ---
-
 
 ## Objectif
 
@@ -11,15 +10,15 @@ L'objectif de ce guide est de présenter les différentes méthodes disponibles 
 
 ## Prérequis
 
-- Un [compte client OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-creation).
-- Savoir configurer des [politiques d'accès via l'espace client](/pages/account_and_service_management/account_information/iam-policy-ui) ou des [politiques d'accès via API](/pages/account_and_service_management/account_information/iam-policies-api).
+- Disposer d'un [compte client OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-creation).
+- Savoir configurer des [politiques d'accès via l'espace client OVHcloud](/pages/account_and_service_management/account_information/iam-policy-ui) ou des [politiques d'accès via API](/pages/account_and_service_management/account_information/iam-policies-api).
 - Savoir [envoyer les logs de politiques IAM vers Logs Data Plateform](/pages/manage_and_operate/iam/iam-logs-forwarding)
 
 ## En pratique
 
 ### Dans les réponses HTTP
 
-Lors des call d'API il est possible d'obtenir le nom de l'action manquante dans la réponse de la requete HTTP via le champ `unauthorizedActionsByIAM`
+Lors des appels d'API, il est possible d'obtenir le nom de l'action manquante dans la réponse de la requete HTTP : via le champ `unauthorizedActionsByIAM`.
 Dans l'exemple suivant, l'action manquante est "*vps:apiovh:reboot*"
 
 ```json
@@ -33,16 +32,16 @@ Dans l'exemple suivant, l'action manquante est "*vps:apiovh:reboot*"
 }
 ```
 
-Depuis l'espace client, qui se repose entièrement sur nos API, il est aussi possible d'accéder à cette information à travers les outils de développement du navigateur en analysant les erreurs 403.
-Pour cela aller dans l'onglet `Network`{.action} et sélectionner la requète retournant un statut **403**, puis aller dans l'onglet `Response`{.action}
+Depuis l'espace client OVHcloud, basé entièrement sur nos APIs, il est aussi possible d'accéder à cette information à travers les outils de développement du navigateur internet. Ceci en analysant les erreurs 403.
+Pour cela rendez-vous dans l'onglet `Network`{.action} et sélectionnez la requète retournant un statut **403**, puis rendez-vous dans l'onglet `Response`{.action}.
 
 ![Browser development tool](images/browser_dev_tool.png){.thumbnail}
 
-### Dans Logs Data Platform
+### Dans Logs Data Platform (LDP)
 
-Si la [transmission des logs du compte OVHcloud](/pages/manage_and_operate/iam/iam-logs-forwarding) vers LDP est activée, il est possible de trouver l'information dans les logs des politiques d'accès.
+Si la [transmission des logs du compte OVHcloud](/pages/manage_and_operate/iam/iam-logs-forwarding) vers LDP est activée, vous pouvez trouver l'information dans les logs des politiques d'accès.
 
-Dans l'interface de Graylog, faire une recherche sur le login de l'utilisateur concerné et les logs contenant des `unauthorized_actions_array` avec la requete `identities_array:*My_user* AND unauthorized_actions_array:*`
+Dans l'interface de Graylog, faites une recherche sur le login de l'utilisateur concerné et les logs contenant des `unauthorized_actions_array` avec la requete `identities_array:*My_user* AND unauthorized_actions_array:*`.
 
 ![Graylog research](images/graylog_research.png){.thumbnail}
 
@@ -50,10 +49,14 @@ Les logs ainsi filtrés montrent les actions refusées par l'IAM d'OVHcloud pour
 
 ![Log example](images/IAM_log.png){.thumbnail}
 
-Ici par exemple, l'utilisateur *Ines* a essayé de réaliser l'action *vps:apiovh:reboot* sans succès
+Ici par exemple, l'utilisateur *Ines* a essayé de réaliser l'action *vps:apiovh:reboot* sans succès.
 
 Il est aussi possible de filtrer la recherche sur `authorized_actions_array` pour lister les actions autorisées par l'IAM d'OVHcloud
 
 ## Aller plus loin
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
+
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
