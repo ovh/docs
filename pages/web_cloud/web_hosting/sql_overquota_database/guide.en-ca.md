@@ -1,7 +1,7 @@
 ---
 title: "Web hosting: My database is full, what should I do?"
 excerpt: "Find out what to do when your database is saturated"
-updated: 2023-10-26
+updated: 2023-11-22
 ---
 
 ## Objective
