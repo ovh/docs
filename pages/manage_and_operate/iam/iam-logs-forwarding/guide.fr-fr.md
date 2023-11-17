@@ -1,6 +1,6 @@
 ---
 title: Génération des logs des comptes OVHcloud avec Logs Data Platform
-excerpt: Découvrez comment transférer les logs des comptes clients OVHcloud vers Logs Data Platform
+excerpt: "Découvrez comment transférer les logs des comptes clients OVHcloud vers Logs Data Platform"
 updated: 2023-11-16
 ---
 
@@ -12,7 +12,7 @@ Pour découvrir Logs Data Platform avant de poursuivre ce guide, référez-vous 
 
 ## Prérequis
 
-- Vous avez un [compte client OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-creation).
+- Disposer d'un [compte client OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-creation).
 - Vous disposez d'un compte Logs Data Platform (LDP) au sein de ce compte OVHcloud avec au moins un flux actif configuré. [Ce guide](/pages/manage_and_operation/observability/logs_data_platform/getting_started_quick_start) vous guidera dans toutes les étapes nécessaires.
 
 ## Glossaire
@@ -58,7 +58,7 @@ POST /me/logs/audit/forward
 }
 ```
 
-L'API nécessite un « streamId », qui est le flux de données cible de votre compte LDP vers lequel vos journaux de compte OVHcloud seront transférés. Vous obtiendrez en réponse un `operationid`, afin de pouvoir l'utiliser pour récupérer le `subscriptionid` à des fins de gestion ultérieure à l'aide du point de terminaison de l'opération de lecture de Logs Data Platform (https://api.ovh.com/console-preview/?section=%2Fdbaas%2Flogs&branch=v1#get-/dbaas/logs/-serviceName-/operation).
+L'API nécessite un « streamId », qui correspond au flux de données cible de votre compte LDP vers lequel vos journaux de compte OVHcloud seront transférés. Vous obtiendrez en réponse un `operationid` afin de pouvoir l'utiliser pour récupérer le `subscriptionid`. Ceci à des fins de gestion ultérieure à l'aide du point de terminaison de l'opération de lecture de Logs Data Platform (https://api.ovh.com/console-preview/?section=%2Fdbaas%2Flogs&branch=v1#get-/dbaas/logs/-serviceName-/operation).
 
 Retrouvez votre `streamId` dans l'espace client Logs Data Platform :
 
@@ -141,7 +141,7 @@ Les logs générés sont :
 |client_ip_country_code|Chaîne|Code pays de l'utilisateur qui a effectué l'action|
 |source|String|iam.ovhcloud|
 |type|String|ACCOUNT_PASSWORD_CHANGED, USER_PASSWORD_CHANGED|
-|userPasswordChangedDetails|Chaîne|Connexion de l'utilisateur affecté par la modification du mot de passe|
+|userPasswordChangedDetails|String|Connexion de l'utilisateur affecté par la modification du mot de passe|
 
 #### Activity logs
 
@@ -159,7 +159,7 @@ Pour chaque action effectuée par les utilisateurs via l'API ou l'espace client,
 |identities_array|Array of String|Liste des identités de l'utilisateur qui a effectué l'action (URN utilisateur et URN groupes utilisateur)|
 |method|GET, POST, PUT ou DELETE|Method of the API|
 |path|String|Appel d'API concerné par l'action|
-|request_id|Chaîne|ID unique de la demande|
+|request_id|String|ID unique de la demande|
 |service_name|String|Services OVHcloud concernés par l'action|
 |source|manager ou api|Si l'action a été effectuée via le Panneau de configuration (manager) ou l'API (api)|
 |status_int|Number|Code HTTP du résultat de la demande|
@@ -179,7 +179,7 @@ Pour chaque action évaluée par l’IAM d’OVHcloud, une entrée est généré
 |identities_array|Array of String|Liste des identités de l'utilisateur qui a effectué l'action (URN utilisateur et URN groupes utilisateur)|
 |requested_actions_array|Array of String|Liste des actions demandées par l'utilisateur|
 |resource|String|URN de la ressource OVHcloud concernée par l'action|
-|authorized_actions_array|Tableau de chaînes|Liste des actions autorisées après l'évaluation de la stratégie|
+|authorized_actions_array|Array of String|Liste des actions autorisées après l'évaluation de la stratégie|
 |authorized_actions_array|Tableau de chaînes|Liste des actions non autorisées après l'évaluation de la stratégie|
 
 ### Gérer les abonnements
@@ -215,4 +215,8 @@ Les trois routes API Logs Data Platform suivantes vous permettent respectivement
 
 ## Aller plus loin
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
+
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
