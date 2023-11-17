@@ -252,7 +252,8 @@ Non, une plage d'IP doit être utilisée dans un seul campus.
 
 ### Est-il possible de changer le campus d'une plage IP importée ?
 
-Il n'est pas possible de changer le campus d'une plage IP importée pour l'ensemble de la plage. Cependant, avec la nouvelle fonctionnalité de découpage, il est désormais possible de déplacer des blocs de taille /24 entre différents campus français. Si vous avez choisi un campus français au moment de la commande et que la commande a été effectuée après le 1er janvier 2023, vous pouvez déplacer vos blocs IP de taille /24 entre les datacentres situés en France (Roubaix, Gravelines et Strasbourg). Pour les blocs de taille supérieure à /24, ou pour les déplacements entre des campus situés dans des régions différentes, il vous faudrait résilier le produit et le commander à nouveau.
+Il n'est pas possible de changer le campus d'une plage IP importée. Toutefois, à titre exceptionnel, si vous avez sélectionné Roubaix, Gravelines ou Strasbourg au moment de la commande et que celle-ci a été passée après le 1er janvier 2023, vous pouvez déplacer vos blocs d'IP de taille /24 entre ces centres de données. Veuillez noter que cette opération n'est pas garantie si le bloc /24 a été précédemment découpé en tranches. 
+Pour les blocs plus grands que /24, ou pour déplacer vos blocs entre des campus situés dans d'autres endroits, vous devrez annuler le produit et le commander à nouveau.
 
 ### Comment savoir quels serveurs DNS OVHcloud géreront la zone ARPA de mon IP importée ?
 
