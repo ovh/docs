@@ -66,7 +66,7 @@ Wenn Sie auf den Tab `Datenbanken`{.action} klicken, wird eine Liste der Datenba
 
 Bleiben Sie im Tab `Datenbanken`{.action} und klicken Sie unabhängig von Ihrem Angebot auf den Button `...`{.action} rechts neben der Zeile für die Datenbank, deren Inhalt Sie kopieren möchten, und wählen Sie `Datenbank kopieren`{.action}.
 
-![CTA_copy_BDD](mages/cta-copy-database.png)){.thumbnail}
+![CTA_copy_BDD](images/cta-copy-database.png){.thumbnail}
 
 Es wird ein Fenster angezeigt, in dem Sie Ihre Zieldatenbank identifizieren können.
 

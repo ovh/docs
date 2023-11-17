@@ -169,7 +169,7 @@ Questo messaggio indica che sul database è già in corso un'operazione. Clicca 
 
 Spazio insufficiente nel database di destinazione. Le soluzioni disponibili sono due:
 
-- Ordinare un nuovo database [start-SQL](https://www.ovhcloud.com/it/web-hosting/options/start-sql/) con più spazio.
+- Ordinare un nuovo database [start SQL](https://www.ovhcloud.com/it/web-hosting/options/start-sql/) con più spazio.
 - Se possiedi un server [Web Cloud Databases](https://www.ovhcloud.com/it/web-cloud/databases/), scegli un'offerta Web Cloud Databases con più spazio di storage.
 
 #### I database di origine e di destinazione sono incompatibili
