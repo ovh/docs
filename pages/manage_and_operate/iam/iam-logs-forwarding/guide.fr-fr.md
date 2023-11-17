@@ -31,7 +31,7 @@ Pour découvrir Logs Data Platform avant de poursuivre ce guide, référez-vous 
 
 Le compte OVHcloud propose 3 niveaux de logs :
 
-- **Journaux d'audit** : Fournissez un ensemble chronologique d'enregistrements pertinents pour la sécurité, documentant la séquence d'actions dans votre compte OVHcloud. (c'est-à-dire connexions, changement de mot de passe, etc.)
+- **Journaux d'audit** : Fournit un ensemble chronologique d'enregistrements pertinents pour la sécurité, documentant la séquence d'actions dans votre compte OVHcloud. (connexions, changement de mot de passe, etc.)
 - **Journaux d'activité** : Fournit tous les enregistrements des actions de votre compte OVHcloud à partir des appels API et des actions effectuées dans l'espace client.
 - **Logs de politique d'accès** : Fournit tous les enregistrements d'évaluation d'accès dans votre compte OVHcloud, y compris les actions d'intégration tierce (c'est-à-dire les actions autorisées ou non autorisées par les politiques IAM).
 
@@ -83,7 +83,7 @@ Vous pouvez également récupérer vos flux à l'aide de l'API Logs Data Platfor
 Maintenant que vos logs de compte OVHcloud sont ingérés et stockés dans votre flux Logs Data Platform, vous pouvez interroger vos logs et construire des tableaux de bord pour avoir une représentation graphique à l'aide de l'interface utilisateur web de Graylog.
 
 - Récupérer l'utilisateur admin (nom du service Logs Data Platform) et le mot de passe sur la page d'accueil de votre compte Logs Data Platform.
-- Ouvrez Graylog `web-ui`. Vous pouvez récupérer le lien depuis la page d'accueil de votre compte ou utiliser votre point d'accès en fonction de la région de votre compte (par exemple, les régions de Gravelines : <https://gra1.logs.ovh.com/>).
+- Ouvrez Graylog `web-ui`. Vous pouvez récupérer le lien depuis la page d'accueil de votre compte ou utiliser votre point d'accès en fonction de la région de votre compte (par exemple, la région de Gravelines : <https://gra1.logs.ovh.com/>).
 
 ![Access Graylog](images/access_graylog.png){.thumbnail}
 
