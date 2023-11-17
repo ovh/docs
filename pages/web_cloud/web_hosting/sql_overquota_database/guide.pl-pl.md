@@ -128,7 +128,9 @@ Zapoznaj się z naszą ofertą baz danych [Web Cloud Databasess](https://www.ovh
 
 Zalecamy tę ofertę dla dużych baz danych.
 
-Następnie postępuj zgodnie z naszymi przewodnikami, aby przenieść zawartość Twojej starej bazy danych do nowej:
+Zawartość Twojej bazy danych OVHcloud można duplikować bezpośrednio do innej bazy danych OVHcloud, korzystając z funkcji dostępnej w Twoim [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). W tym celu zapoznaj się z przewodnikiem "[Duplikuj zawartość jednej bazy danych w innej](/pages/web_cloud/web_hosting/copy_database)".
+
+W przypadku migracji na zewnętrzną bazę danych [Start SQL](https://www.ovhcloud.com/pl/web-hosting/options/start-sql/) i [Web Cloud Databases](https://www.ovhcloud.com/pl/web-cloud/databases/) możesz ręcznie przenieść zawartość starej bazy danych do nowej za pomocą naszych przewodników:
 
 - [Eksport istniejącej bazy danych](/pages/web_cloud/web_hosting/sql_database_export)
 - [Pierwsze kroki z usługą Web Cloud Databasess](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)
@@ -194,6 +196,8 @@ DROP TABLE `table_1`
 > W tym przykładzie polecenie usuwa tabelę **table_1** i wszystkie linie, które ona zawiera.
 
 ## Sprawdź również <a name="go-further"></a>
+
+[Duplikuj zawartość jednej bazy danych w innej](/pages/web_cloud/web_hosting/copy_database)
 
 W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
 
