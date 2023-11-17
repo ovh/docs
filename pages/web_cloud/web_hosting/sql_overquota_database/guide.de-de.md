@@ -127,7 +127,9 @@ Konsultieren Sie unser Angebot [Web Cloud Databasess](https://www.ovhcloud.com/d
 
 Wir empfehlen diese Lösung für große Datenbanken.
 
-Folgen Sie dann unseren Anleitungen, um den Inhalt Ihrer alten Datenbank auf die neue zu verschieben:
+Es ist möglich, den Inhalt Ihrer OVHcloud-Datenbank direkt in eine andere Ihrer OVHcloud-Datenbanken zu kopieren, indem Sie eine Funktion in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) nutzen . Weitere Informationen finden Sie in unserer Anleitung „[Inhalt einer Datenbank in eine andere duplizieren](/pages/web_cloud/web_hosting/copy_database)“.
+
+Bei einer Migration auf eine Datenbank außerhalb der Angebote [Start SQL](https://www.ovhcloud.com/de/web-hosting/options/start-sql/) und [Web Cloud Databases](https://www.ovhcloud.com/de/web-cloud/databases/) können Sie den Inhalt Ihrer alten Datenbank mithilfe unserer Anleitungen manuell in eine neue Datenbank verschieben:
 
 - [Exportieren Sie Ihre bestehende Datenbank](/pages/web_cloud/web_hosting/sql_database_export)
 - [Erste Schritte mit Web Cloud Databasess](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)
@@ -193,6 +195,8 @@ DROP TABLE `table_1`
 > In diesem Beispiel löscht der Befehl die Tabelle **table_1** und alle darin enthaltenen Zeilen.
 
 ## Weiterführende Informationen <a name="go-further"></a>
+
+[Inhalt einer Datenbank in eine andere duplizieren](/pages/web_cloud/web_hosting/copy_database)
 
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
 
