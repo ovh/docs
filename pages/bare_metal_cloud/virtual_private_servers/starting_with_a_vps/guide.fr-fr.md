@@ -224,7 +224,7 @@ Veuillez noter que si vous avez sélectionné une **distribution avec applicatio
 
 ### Attacher un nom de domaine
 
-Le passage de votre VPS sur le web passe généralement par l’attribution d’un nom de domaine et sa configuration DNS. Si vous gérez votre nom de domaine chez OVHcloud, vous pouvez consulter notre guide [Éditer une zone DNS OVHcloud](/pages/web/domains/dns_zone_edit) pour obtenir des instructions.
+Le passage de votre VPS sur le web passe généralement par l’attribution d’un nom de domaine et sa configuration DNS. Si vous gérez votre nom de domaine chez OVHcloud, vous pouvez consulter notre guide [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit) pour obtenir des instructions.
 
 ### Sécuriser un nom de domaine avec un certificat SSL
 
@@ -232,7 +232,7 @@ Une fois votre VPS configuré, vous pouvez vouloir sécuriser votre nom de domai
 
 Ce certificat SSL peut être installé manuellement, directement sur le VPS. Reportez-vous à la documentation officielle de votre distribution VPS.
 
-Pour un processus plus automatisé, OVHcloud propose également la solution SSL Gateway. N’hésitez pas à vous référer à la [page produit](https://www.ovh.com/fr/ssl-gateway/) ou à notre [documentation guide](/products/web_cloud/ssl_gateway) pour plus d’informations.
+Pour un processus plus automatisé, OVHcloud propose également la solution SSL Gateway. N’hésitez pas à vous référer à la [page produit](https://www.ovh.com/fr/ssl-gateway/) ou à notre [documentation guide](/products/web-cloud-ssl-gateway) pour plus d’informations.
 
 ## Allez plus loin
 

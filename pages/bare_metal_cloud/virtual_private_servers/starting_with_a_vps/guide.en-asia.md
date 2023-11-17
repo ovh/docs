@@ -223,7 +223,7 @@ Please note that if you have selected a **distribution with application** (Plesk
 
 ### Attaching a domain name
 
-Making your VPS available on the web usually includes attaching a domain name to it via DNS. If you manage your domain name at OVHcloud, you can refer to our guide on [Editing an OVHcloud DNS zone](/pages/web/domains/dns_zone_edit) for instructions.
+Making your VPS available on the web usually includes attaching a domain name to it via DNS. If you manage your domain name at OVHcloud, you can refer to our guide on [Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit) for instructions.
 
 ### Securing a domain name with an SSL certificate
 
