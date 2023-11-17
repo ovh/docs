@@ -17,7 +17,7 @@ To discover Logs Data Platform before continuing with this guide, please refer t
 
 ## Glossary
 
-**Logs Data Platform**: Fully managed and secured log management platform proposed by OVHcloud. Find more information on the [Logs Data Platform service page](https://www.ovhcloud.com/en-gb/logs-data-platform/).
+**Logs Data Platform**: Fully managed and secured log management platform proposed by OVHcloud. Find more information on the [Logs Data Platform service page](https://www.ovhcloud.com/asia/logs-data-platform/).
 
 **Data stream**: A logical partition of logs that you create in an LDP account that you will use when ingesting, visualising or querying your logs. Multiple sources can be stored in the same data stream, and it is the unit for defining a logs pipeline (retention policy, archiving, live streaming, etc.), access rights and alert policies.
 
@@ -39,7 +39,7 @@ OVHcloud account propose 3 levels of logs:
 
 You can enable the forwarding of the OVHcloud account logs via API. You will have to target a stream of one of your LDP accounts. The logs will be forwarded to that stream. Enabling the forwarding will create a subscription for this stream ID.
 
-Note that enabling the forwarding is free of charge, but you will be charged for the usage of your Logs Data Platform service as per the standard price plan. For LDP pricing refer to the [Logs Data Platform product page](https://www.ovhcloud.com/en-gb/logs-data-platform/).
+Note that enabling the forwarding is free of charge, but you will be charged for the usage of your Logs Data Platform service as per the standard price plan. For LDP pricing refer to the [Logs Data Platform product page](https://www.ovhcloud.com/asia/logs-data-platform/).
 
 To enable forwarding, you can use the following APIs:
 
@@ -58,7 +58,7 @@ POST /me/logs/audit/forward
 }
 ```
 
-The API requires a `streamId`, which is the target data stream of your LDP account where your OVHcloud account logs will be forwarded to. You will get in response an `operationid`, so you can use it to retrieve the `subscriptionid` for further management purposes using the [Logs Data Platform read operation endpoint](https://api.ovh.com/console-preview/?section=%2Fdbaas%2Flogs&branch=v1#get-/dbaas/logs/-serviceName-/operation).
+The API requires a `streamId`, which is the target data stream of your LDP account where your OVHcloud account logs will be forwarded to. You will get in response an `operationid`, so you can use it to retrieve the `subscriptionid` for further management purposes using the [Logs Data Platform read operation endpoint](https://ca.api.ovh.com/console-preview/?section=%2Fdbaas%2Flogs&branch=v1#get-/dbaas/logs/-serviceName-/operation).
 
 You can find your `streamId` in the Logs Data Platform control panel:
 
