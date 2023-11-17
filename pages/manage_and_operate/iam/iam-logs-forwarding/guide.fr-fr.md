@@ -215,7 +215,6 @@ Les trois routes API Logs Data Platform suivantes vous permettent respectivement
 
 
 
-
 ## Aller plus loin
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
