@@ -1,7 +1,7 @@
 ---
-title: 'Connecting to a database on your database server'
-excerpt: 'Find out how to log in to your database'
-updated: 2023-06-22
+title: "Connecting to a database on your database server"
+excerpt: "Find out how to log in to your database"
+updated: 2023-11-07
 ---
 
 ## Objective
@@ -12,14 +12,14 @@ You can access your database’s content via an interface. There are several way
 
 ## Requirements
 
-- You must have a [Web Cloud Databases instance](https://www.ovh.ie/cloud-databases/){.external} (included in a [Performance web hosting plan](https://www.ovhcloud.com/en-sg/web-hosting/)).
+- A [Web Cloud Databases instance](https://www.ovhcloud.com/en-sg/web-cloud/databases/){.external} (included in a [Performance web hosting plan](https://www.ovhcloud.com/en-sg/web-hosting/)).
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg)
 
 ## Instructions
 
 > [!primary]
 >
-> Please note that the [Web Cloud Databases](https://www.ovh.ie/cloud-databases/){.external} solutions do not give access to the database management system, but to the databases hosted on it.
+> Please note that the [Web Cloud Databases](https://www.ovhcloud.com/en-sg/web-cloud/databases/){.external} solutions do not give access to the database management system, but to the databases hosted on it.
 > <br> - Please note that there is no "root" access.
 > <br> - Generic SQL commands work normally, and software such as HeidiSQL, SQuirreL or Adminer is fully compatible.
 > 
@@ -33,23 +33,32 @@ You can access your database’s content via an interface. There are several way
 
 ####  With OVHcloud phpMyAdmin
 
-Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg) and select `Web Cloud`{.action} in the top navigation bar. Click `Web Cloud Databases`{.action}, then choose the SQL instance concerned.
+Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg), then go to the `Web Cloud` section. Click on the `Web Cloud Databases`{.action} tab in the left-hand column, then select the name of your database server.
 
-In the `General information` tab, you will find the access link in the **Database administration** box, under “User interface”.
+In the `General information` tab, you will find the access link to phpMyAdmin in the **“Database administration”** box, under “User interface”.
 
-![private-sql](images/private-sql-phpma01.png){.thumbnail}
+![web-cloud-databases](images/private-sql-phpma01.png){.thumbnail}
 
 You will land on the phpMyAdmin login page.
 
-![private-sql](images/private-sql-phpma02.png){.thumbnail}
+![web-cloud-databases](images/pma-login-web-cloud-db.png){.thumbnail}
 
-- **Server and port**: Enter the host name and port of your server, which you can view in the `General information` tab, in the **Database administration** box, under “Host name” and ”Port” in the **SQL** section. The host name and port must be separated by a space.
-- **User**: Enter the username you created in the `Users and rights` tab of your database server.
-- **Password**: Enter the password for the user concerned.
+Enter the following information to connect to your database:
+
+- **Server:** Enter the *hostname* of your database server, followed by its *port number*. The *port number* must be separated from the *hostname* by a “**space**” or “**:**”. For example, if the *hostname* is **aaXXXXX-XXX.eu.clouddb.ovh.net** and the *port number* is **12345**, then you would type **aaXXXXX-XXX.eu.clouddb.ovh.net:12345** or **aaXXXXX-XXX.eu.clouddb.ovh.net 12345**. To find the *hostname* and *port number* of your Web Cloud Databases server, log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg), then go to the `Web Cloud` section. Click on the `Web Cloud Databases`{.action} tab in the left-hand column, then select the name of your database server. On the `General information` page that appears, you will find the *hostname* and the *port number* in the `Login information` box.
+
+- **User:** Enter the *username* of your database server. To find the *username* of your database, log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg){.external} and go to the `Web Cloud` section. Click on the `Web Cloud Databases`{.action} tab in the left-hand column, then select the name of your database server. On the page that opens, click on the `Users and rights`{.action} tab. There, you will find a table listing all of the users created on your Web Cloud Databases solution.
+
+- **Password:** Enter the *password* associated with the *username* concerned. If you do not have the *password* associated with this *username*, log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg), then go to the `Web Cloud` section. Click on the `Web Cloud Databases`{.action} tab in the left-hand column, then select the name of your database server. On the page that opens, click on the `Users and rights`{.action} tab. Click the `...`{.action} button to the right of *the user* concerned to `Change password`{.action}.
+
+> [!warning]
+>
+> If you change a database user password, all application and websites that access the database must be updated accordingly.
+>
 
 If the connection succeeds, the next page of phpMyAdmin will appear.
 
-![private-sql](images/private-sql-phpma03.png){.thumbnail}
+![web-cloud-databases](images/pma-main-page-web-cloud-db.png){.thumbnail}
 
 > [!warning]
 >
@@ -171,8 +180,8 @@ You are now connected to your database.
 
 ## Go further
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-sg/directory/).
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-sg/support-levels/).
 
-Join our community of users on <https://community.ovh.com/en/>. 
+Join our community of users on <https://community.ovh.com/en/>.

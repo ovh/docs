@@ -195,7 +195,7 @@ As seen using Redis cache you will see a performance gain for your CMS. It will 
 
 [How to connect to Redis with PHP](/pages/public_cloud/public_cloud_databases/redis_04_connect_php)
 
-[Redis Roadmap](https://github.com/ovh/public-cloud-roadmap/projects/2?card_filter_query=label%3Aredis)
+[Redis Roadmap](https://github.com/orgs/ovh/projects/16/views/5?card_filter_query=label%3Aredis)
 
 Join our community of users on <https://community.ovh.com/en/>.
 

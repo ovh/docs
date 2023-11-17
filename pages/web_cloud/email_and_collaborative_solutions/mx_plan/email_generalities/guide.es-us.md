@@ -1,7 +1,7 @@
 ---
 title: 'Primeros pasos con la solución de correo electrónico OVHcloud'
 excerpt: 'Cómo empezar a utilizar la solución de correo electrónico OVHcloud'
-updated: 2021-07-19
+updated: 2023-11-15
 ---
 
 ## Objetivo

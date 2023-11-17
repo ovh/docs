@@ -1,7 +1,7 @@
 ---
 title: "Installare il tuo sito Web con un 'CMS in 1 click'"
 excerpt: "Questa guida ti mostra come creare il tuo sito Web con i nostri 'moduli in 1 click'"
-updated: 2023-09-14
+updated: 2023-11-14
 ---
 
 > [!primary]
@@ -60,6 +60,15 @@ Nella nuova finestra, scegli il CMS e seleziona il dominio con cui vuoi installa
 ![Scelta del modulo](images/add_a_module.png){.thumbnail}
 
 Se il tuo dominio non è nella lista, clicca sulla scheda `Multisito`{.action} per aggiungerlo. Consulta la nostra guida [Come condividere un hosting Web tra più siti](/pages/web_cloud/web_hosting/multisites_configure_multisite){.external} in caso di necessità.
+
+> [!primary]
+>
+> Verifica, proprio sotto il modulo che permette di selezionare un dominio (o un sottodominio), che `La directory di installazione predefinita è` sia quella in cui vuoi installare il tuo "modulo in 1 click".
+>
+> Ti ricordiamo che questa directory deve essere completamente vuota.
+>
+> Se necessario, consulta la nostra guida "[Come condividere il tuo hosting Web tra più siti](/pages/web_cloud/web_hosting/multisites_configure_multisite)" per modificare la directory di destinazione del tuo dominio.
+>
 
 Una volta aggiunto correttamente il dominio, prova di nuovo ad aggiungere un "modulo in 1 click".
 
@@ -153,6 +162,18 @@ Per configurare il modulo, inserisci queste informazioni:
 - *dominio:* dominio con cui vuoi installare il tuo CMS. Se necessario, consulta la guida su [Come condividere un hosting Web tra più siti](/pages/web_cloud/web_hosting/multisites_configure_multisite).
 - *lingua:* lingua in cui sarà installato il CMS.
 - *percorso di installazione:* è inserito automaticamente nella selezione del dominio. completandolo con sottocartelle (per utenti esperti).
+
+> [!primary]
+>
+> Verifica, per il modulo `Percorso di installazione`, che la directory precompilata sia quella in cui vuoi installare il tuo "modulo in 1 click" con il tuo dominio.
+>
+> Ti ricordiamo che questa directory deve essere completamente vuota.
+>
+> Inoltre, se inserisci una sottodirectory nel `Percorso di installazione`, questa comparirà nell’URL di accesso al tuo "modulo in 1 click".
+> Ad esempio, se inserisci nel modulo una sottodirectory *test*, l’URL di accesso al tuo "modulo in 1 click" avrà questo formato: **http://domain.tld/test/**.
+>
+> Se necessario, consulta la nostra guida "[Come condividere il tuo hosting Web tra più siti](/pages/web_cloud/web_hosting/multisites_configure_multisite)" per modificare la directory di destinazione del tuo dominio.
+>
 
 Una volta inseriti tutti i dati, clicca su `Continua`{.action}:
 

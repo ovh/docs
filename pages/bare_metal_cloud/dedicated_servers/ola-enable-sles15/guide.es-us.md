@@ -1,7 +1,7 @@
 ---
 title: Cómo configurar el ID de cliente para la agrupación de enlaces OVHcloud en SLES 15
 excerpt: 'Activar OVHcloud Link Aggregation en su servidor SLES 15'
-updated: 2023-03-07
+updated: 2023-10-26
 ---
 
 > [!primary]
@@ -31,7 +31,7 @@ A continuación, abra la pestaña `IPMI`{.action} (1) y haga clic en el botón `
 
 Se descargará un programa JNLP. Lance el programa para acceder a IPMI. Conéctese utilizando las claves de acceso asociadas al servidor.
 
-Por defecto, utilizando el modelo de OVHcloud, los ID de cliente se denominarán *eth1* y *eth2*. Si no utiliza un modelo de OVHcloud, puede encontrar los nombres de las interfaces utilizando el siguiente comando:
+Por defecto, utilizando el modelo de OVHcloud, los ID de cliente se denominarán *eth0* y *eth1*. Si no utiliza un modelo de OVHcloud, puede encontrar los nombres de las interfaces utilizando el siguiente comando:
 
 ```bash
 ip a
@@ -55,21 +55,21 @@ STARTMODE='onboot'
 BOOTPROTO='static'
 IPADDR='10.0.0.1/24'
 BONDING_MASTER='yes'
-BONDING_SLAVE_0='eth1'
-BONDING_SLAVE_1='eth2'
+BONDING_SLAVE_0='eth0'
+BONDING_SLAVE_1='eth1'
 BONDING_MODULE_OPTS='mode=802.3ad miimon=100 xmit_hash_policy=layer3+4'
 ```
 
 > [!primary]
 >
 > Puede utilizar cualquier dirección IP o subred privada que desee.
-> Si su servidor tiene más de 2 interfaces de red, puede añadirlos en la configuración aumentando el número del parámetro `BONDING_SLAVE_`, por ejemplo `BONDING_SLAVE_2='eth3'`.
+> Si su servidor tiene más de 2 interfaces de red, puede añadirlos en la configuración aumentando el número del parámetro `BONDING_SLAVE_`, por ejemplo `BONDING_SLAVE_2='eth2'`.
 >
 
-Guarde y cierre el archivo una vez que haya confirmado que la información es correcta.  Ahora deberá configurar las dos interfaces físicas. Por defecto, para un servidor de OVHcloud, solo *eth1* tendrá un archivo de configuración. Abra con el siguiente comando:
+Guarde y cierre el archivo una vez que haya confirmado que la información es correcta.  Ahora deberá configurar las dos interfaces físicas. Por defecto, para un servidor de OVHcloud, solo *eth0* tendrá un archivo de configuración. Abra con el siguiente comando:
 
 ```bash
-vi /etc/sysconfig/network/ifcfg-eth1
+vi /etc/sysconfig/network/ifcfg-eth0
 ```
 
 De forma predeterminada, el archivo mostrará el siguiente texto:
@@ -102,12 +102,12 @@ STARTMODE='hotplug'
 > La dirección de hardware (dirección MAC) del ID de cliente se puede encontrar con el comando `ip utilizado anteriormente`. Este será el número al lado de `link/ether` del resultado mostrado.
 >
 
-El *#* delante de una línea indica que el servidor ignorará esta línea al leer el archivo. Esto significa que estas líneas no se tendrán en cuenta al crear el archivo de interfaz para *eth1*.
+El *#* delante de una línea indica que el servidor ignorará esta línea al leer el archivo. Esto significa que estas líneas no se tendrán en cuenta al crear el archivo de interfaz para *eth0*.
 
-Para crear el archivo de configuración *eth2*, utilice el siguiente comando:
+Para crear el archivo de configuración *eth1*, utilice el siguiente comando:
 
 ```bash
-vi /etc/sysconfig/network/ifcfg-eth2
+vi /etc/sysconfig/network/ifcfg-eth1
 ```
 
 Esta vez, el archivo estará vacío. Añada el siguiente contenido:

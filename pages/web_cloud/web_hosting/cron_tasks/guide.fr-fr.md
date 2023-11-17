@@ -1,8 +1,31 @@
 ---
-title: Créer des tâches automatisées (CRON) sur votre hébergement Web
-excerpt: Découvrez comment créer des tâches CRON pour automatiser vos tâches planifiées sur un hébergement web
-updated: 2022-12-01
+title: "Créer des tâches automatisées (CRON) sur votre hébergement Web"
+excerpt: "Découvrez comment créer des tâches CRON pour automatiser vos tâches planifiées sur un hébergement web"
+updated: 2023-10-31
 ---
+
+<style>
+ pre {
+     font-size: 14px !important;
+ }
+ pre.bgwhite {
+   background-color: #fff !important;
+   color: #000 !important;
+   font-family: monospace !important;
+   padding: 5px !important;
+   margin-bottom: 5px !important;
+ }
+ pre.bgwhite code {
+   background-color: #fff !important;
+   border: solid 0px transparent !important;
+   font-family: monospace !important;
+   font-size: 0.90em !important;
+   color: #000 !important;
+ }
+ .small {
+     font-size: 0.90em !important;
+ }
+</style>
 
 ## Objectif
 
@@ -11,9 +34,10 @@ Sur votre hébergement Web OVHcloud, vous pouvez utiliser des scripts pour autom
 **Découvrez comment créer des tâches CRON pour automatiser vos tâches planifiées sur un hébergement web.**
 
 > [!warning]
->OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d’en assurer le bon fonctionnement.
 >
->Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) et/ou de contacter l’éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d’informations dans la section « Aller plus loin » de ce guide. 
+> OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d’en assurer le bon fonctionnement.
+>
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) et/ou de contacter l’éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d’informations dans la section [« Aller plus loin »](#go-further) de ce guide. 
 >
 
 ## Prérequis
@@ -23,7 +47,7 @@ Sur votre hébergement Web OVHcloud, vous pouvez utiliser des scripts pour autom
 
 ## En pratique
 
-Rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Cliquez sur  l'onglet `Web Cloud`{.action}, puis sur `Hébergements`{.action}.
+Rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Cliquez sur l'onglet `Web Cloud`{.action}, puis sur `Hébergements`{.action}.
 
 Sélectionnez l'hébergement concerné, cliquez sur l'onglet `Plus`{.action} puis sur `Cron`{.action}.
 
@@ -57,6 +81,13 @@ L'interface offre deux modes pour configurer la fréquence de votre tâche. Util
 |---|
 |Utilisez les menus déroulants pour spécifier l'heure, les jours d'un mois, les jours de la semaine et les mois de la tâche.|
 |![cron frequency](images/cron-jobs-3.png){.thumbnail}|
+
+> [!primary]
+>
+> Le formulaire `Jours`{.action} permet de définir des fréquences d'exécution sur un cycle mensuel.
+>
+> Le formulaire `Jours de la semaine`{.action} permet de définir des fréquences d'exécution complémentaires mais sur un cycle hebdomadaire.
+>
 
 |Mode expert| 
 |---|
@@ -106,41 +137,39 @@ Consultez notre guide [« Consulter les statistiques et les logs de mon site hé
 
 - Exemple de fin de script correctement exécuté 
 
-```
+<pre class="bgwhite"><code>
 [2020-08-11 00:36:01] ## OVH ## START - 2020-08-11 00:36:01.524384 executing: /usr/local/php7.2/bin/php /homez.161/myftpusername/www/myscript.sh
 [2020-08-11 00:36:01] 
 [2020-08-11 00:36:01] ## OVH ## END - 2020-08-10 22:39:44.086166 exitcode: 0
-```
+</code></pre>
 
 - Exemple d'échec en raison d'un dépassement du temps d'exécution
 
-```
+<pre class="bgwhite"><code>
 [2020-08-11 00:36:01] ## OVH ## START - 2020-08-11 00:36:01.524384 executing: /usr/local/php7.2/bin/php /homez.161/myftpusername/www/sleep.sh
 
 [2020-08-11 01:36:01] ## OVH ## ERROR - CRON TASK INTERRUPTED BY OVH - reason: your script duration exceeded the maximum permitted (3600 seconds)
 [2020-08-11 01:36:01] ## OVH ## END - 2020-08-11 01:36:01.086166 exitcode: 0
-```
+</code></pre>
 
 - Exemple d'échec car le fichier de script est introuvable dans le chemin d'accès spécifié
 
-```
+<pre class="bgwhite"><code>
 [2020-08-11 00:36:01] ## OVH ## START - 2020-08-11 00:36:01.524384 executing: /usr/local/php7.2/bin/php /homez.161/myftpusername/www/noscript.sh
 
 [2020-08-11 00:36:01] ## OVH ## ERROR command '/homez.161/myftpusername/www/noscript.sh' not found
 [2020-08-11 00:36:01] ## OVH ## END - 2020-08-11 00:36:01.086166 exitcode: 255
-```
+</code></pre>
 
 - Exemple d'échec en raison d'une erreur d'autorisation (chmod) ou d'une configuration incorrecte du fichier .ovhconfig
 
-```
+<pre class="bgwhite"><code>
 [2020-08-11 18:07:10] ## OVH ## Your job could not be initiated for an unknown reason.
 [2020-08-11 18:07:10]
 [2020-08-11 18:07:10] ## OVH ## END - 2020-08-11 18:07:10.969840 exitcode: 255
-```
+</code></pre>
 
-## Aller plus loin
-
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+## Aller plus loin <a name="go-further"></a>
 
 [Configurer le fichier .ovhconfig de son hébergement web](/pages/web_cloud/web_hosting/configure_your_web_hosting)
 
@@ -148,3 +177,8 @@ Consultez notre guide [« Consulter les statistiques et les logs de mon site hé
 
 [Consulter les statistiques et les logs de mon site hébergé sur une offre mutualisée](/pages/web_cloud/web_hosting/logs_and_statistics)
 
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
+
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

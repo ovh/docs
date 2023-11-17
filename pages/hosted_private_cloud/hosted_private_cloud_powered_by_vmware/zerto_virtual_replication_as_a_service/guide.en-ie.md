@@ -1,12 +1,12 @@
 ---
-title: 'Setting up Zerto Virtual Replication between two OVHcloud datacenters'
-excerpt: 'Discover how to set up Zerto Virtual Replication between your Private Cloud platforms'
-updated: 2022-02-11
+title: Setting up Zerto Virtual Replication between two OVHcloud data centres
+excerpt: Discover how to set up Zerto Virtual Replication between your Private Cloud platforms
+updated: 2023-10-23
 ---
 
 ## Objective
 
-This guide will present the concepts and steps required to setup Zerto Virtual Replication between two OVHcloud datacenters.
+This guide will present the concepts and steps required to setup Zerto Virtual Replication between two OVHcloud data centres.
 
 For instructions for cross platforms set up, please our guide on [using Zerto between OVHcloud and a third party plateform](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/zerto-virtual-replication-customer-to-ovhcloud).
 
@@ -14,8 +14,8 @@ For instructions for cross platforms set up, please our guide on [using Zerto be
 
 ## Requirements 
 
-- having 2 Private Cloud Platforms [Private Cloud](https://www.ovhcloud.com/en-ie/enterprise/products/hosted-private-cloud/hosts/) on 2 different data centres
-- in each data centre, a free public IP must be available
+- 2 Private Cloud platforms [Private Cloud](https://www.ovhcloud.com/en-ie/enterprise/products/hosted-private-cloud/hosts/) on 2 different data centres
+- A public IP must be available in each data centre
 
 ### Zerto Virtual Replication Concepts
 
@@ -197,7 +197,7 @@ In this second step, you have the possibility to override the default recovery n
 
 > [!warning]
 >
-> The modification of the IP adress during failover is only possible for supported OSes with functioning VMware Tools
+> The modification of the IP address during failover is only possible for supported OSes with functioning VMware Tools
 > 
 
 Click `NEXT`{.action}.
@@ -271,20 +271,23 @@ Confirm the end of the test by clicking `STOP`{.action}.
 
 Clean-up operations are launched right away on the remote site.
 
-### Launch a actual failover
+### Launch an actual failover
 
 You can launch a full failover from the secondary site, in case the primary site has been rendered unusable by a disaster.
 
 > [!warning]
 > If you trigger an actual failover when the primary site is still available, you have the possibility to properly shut down the VMs on the primary site.
+>
 > If not, be careful with the network configuration to make sure to prevent IP conflicts between primary and secondary instances of VMs.
+>
+> Furthermore, if the two Private Cloud solutions are located in 2 different countries, it is not possible to move your IP block from one Private Cloud solution to another.
 >
 > Please note that, contrary to what happens during a test failover, replication operations are stopped during an actual failover.
 >
 
 ![Zerto Live Failover](images/zerto_OvhToOvh_live_02.png){.thumbnail}
 
-To start  a complete failover, you need to set the toggle on **LIVE** before pushing the failover button. (The banner at the bottom of the page becomes red to warn you that going further may have an impact on your VMs.)
+To start a complete failover, you need to set the toggle on **LIVE** before pushing the failover button. (The banner at the bottom of the page becomes red to warn you that going further may have an impact on your VMs.)
 
 Click `FAILOVER`{.action}.
 
@@ -316,7 +319,7 @@ We have a summary of the failover parameters:
 There are 3 **Commit Policy** settings:
 
 - Auto-Rollback: If no action is taken, the rollback starts automatically after the timer is elapsed.
-- Auto-Commit: If no action is taken, data changed on the secondary site is now commited on VMs, and to be able to fail back, a reverse replication needs to be setup.
+- Auto-Commit: If no action is taken, data changed on the secondary site is now committed on VMs, and to be able to fail back, a reverse replication needs to be set up.
 - None: **Rollback** or **Commit** have to be launched manually.
 
 ![Zerto Live Failover](images/zerto_OvhToOvh_live_06.png){.thumbnail}

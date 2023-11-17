@@ -1,10 +1,14 @@
 ---
 title: "Alojamento web: primeira utilização"
-excerpt: Saiba como usar e gerir um alojamento web (primeira utilização)
-updated: 2022-11-11
+excerpt: "Saiba como usar e gerir um alojamento web (primeira utilização)"
+updated: 2023-11-16
 ---
 
-## Sumário
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
+
+## Objetivo
 
 O alojamento web da OVHcloud oferece várias possibilidades de utilização e configuração. Esta guia introdutório contém informação para começar a tirar partido dessas possibilidades. 
 
@@ -18,6 +22,11 @@ O alojamento web da OVHcloud oferece várias possibilidades de utilização e co
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
 ## Instruções
+
+> [!success]
+>
+> Antes de continuar a ler este manual, certifique-se de que o domínio ou subdomínio que pretende utilizar está corretamente associado ao seu alojamento web da OVHcloud. Para isso, consulte o guia "[Partilhar o alojamento web da OVHcloud entre vários websites](/pages/web_cloud/web_hosting/multisites_configure_multisite)".
+>
 
 ### 1 - Tipo de Projeto: Criar ou Transferir um Site.
 
@@ -143,9 +152,9 @@ Instalou um CMS com um dos Módulos 1 Clique e recebeu um e-mail com os dados do
 
 Os seus endereços de e-mail podem ser usados com o Roundcube, um serviço de webmail incluído na oferta de alojamento OVHcloud. Aceda a <https://www.ovhcloud.com/pt/mail/>, e preencha os dados associados ao endereço de e-mail criado através do sistema OVHcloud.
 
-Para saber mais sobre o RoundCube, consulte o guia: [Utilização do RoundCube](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube){.external}. Se desejar associar o seu endereço de e-mail a um software (cliente) de correio eletrónico no computador, smartphone ou um tablet, consulte a página:</products/web-cloud-email-collaborative-solutions-mx-plan>.
+Para saber mais sobre o RoundCube, consulte o guia: [Utilização do RoundCube](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube){.external}. Se desejar associar o seu endereço de e-mail a um software (cliente) de correio eletrónico no computador, smartphone ou um tablet, consulte a página: </products/web-cloud-email-collaborative-solutions-mx-plan>.
 
-## Quer saber mais? Veja os guias abaixo
+## Quer saber mais?
 
 [Transferir o meu site para a OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh){.external} (Versão PT disponível em breve)
 

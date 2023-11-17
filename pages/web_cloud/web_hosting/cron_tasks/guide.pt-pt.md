@@ -1,8 +1,31 @@
 ---
-title: Criar tarefas automatizadas (CRON) no seu alojamento Web
-excerpt: Saiba como criar tarefas CRON para automatizar as tarefas programadas num alojamento web
-updated: 2022-12-01
+title: "Criar tarefas automatizadas (CRON) no seu alojamento Web"
+excerpt: "Saiba como criar tarefas CRON para automatizar as tarefas programadas num alojamento web"
+updated: 2023-10-31
 ---
+
+<style>
+ pre {
+     font-size: 14px !important;
+ }
+ pre.bgwhite {
+   background-color: #fff !important;
+   color: #000 !important;
+   font-family: monospace !important;
+   padding: 5px !important;
+   margin-bottom: 5px !important;
+ }
+ pre.bgwhite code {
+   background-color: #fff !important;
+   border: solid 0px transparent !important;
+   font-family: monospace !important;
+   font-size: 0.90em !important;
+   color: #000 !important;
+ }
+ .small {
+     font-size: 0.90em !important;
+ }
+</style>
 
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
@@ -15,9 +38,10 @@ No seu alojamento Web OVHcloud, pode utilizar scripts para automatizar certas op
 **Saiba como criar tarefas CRON para automatizar as tarefas planeadas num alojamento web.**
 
 > [!warning]
->A responsabilidade sobre a configuração e a gestão dos serviços que a OVHcloud disponibiliza recai sobre o utilizador. Assim, deverá certificar-se de que estes funcionam corretamente.
 >
->Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se tiver alguma dúvida, recomendamos que recorra a um fornecedor de serviços especializado e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção “Quer saber mais?” deste manual. 
+> A responsabilidade sobre a configuração e a gestão dos serviços que a OVHcloud disponibiliza recai sobre o utilizador. Assim, deverá certificar-se de que estes funcionam corretamente.
+>
+> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se tiver alguma dúvida, recomendamos que recorra a um fornecedor de serviços especializado e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção [“Quer saber mais?”](#go-further) deste manual. 
 >
 
 ## Requisitos
@@ -61,6 +85,13 @@ A interface oferece dois modos para configurar a frequência da sua tarefa. Util
 |---|
 |Utilize os menus pendente para especificar a hora, os dias de um mês, os dias da semana e os meses da tarefa.|
 |![cron frequency](images/cron-jobs-3.png){.thumbnail}|
+
+> [!primary]
+>
+> O formulário `Dias`{.action} permite definir frequências de execução num ciclo mensal.
+>
+> O formulário `Dias da semana`{.action} permite definir frequências de execução complementares mas com um ciclo semanal.
+>
 
 |Modo expert| 
 |---|
@@ -110,42 +141,46 @@ Para mais informações, consulte o nosso guia ["Consultar as estatísticas e os
 
 - Exemplo de fim de script corretamente executado 
 
-```
+<pre class="bgwhite"><code>
 [2020-08-11 00:36:01] ## OVH ## START - 2020-08-11 00:36:01.524384 executing: /usr/local/php7.2/bin/php /homez.161/myftpusername/www/myscript.sh
 [2020-08-11 00:36:01] 
 [2020-08-11 00:36:01] ## OVH ## END - 2020-08-10 22:39:44.086166 exitcode: 0
-```
+</code></pre>
 
 - Exemplo de insucesso devido a ultrapassagem do tempo de execução
 
-```
+<pre class="bgwhite"><code>
 [2020-08-11 00:36:01] ## OVH ## START - 2020-08-11 00:36:01.524384 executing: /usr/local/php7.2/bin/php /homez.161/myftpusername/www/sleep.sh
 
 [2020-08-11 01:36:01] ## OVH ## ERROR - CRON TASK INTERRUPTED BY OVH - reason: your script duration exceeded the maximum permitted (3600 seconds)
 [2020-08-11 01:36:01] ## OVH ## END - 2020-08-11 01:36:01.086166 exitcode: 0
-```
+</code></pre>
 
 - Exemplo de falha porque o ficheiro de script não pode ser encontrado no caminho de acesso especificado
 
-```
+<pre class="bgwhite"><code>
 [2020-08-11 00:36:01] ## OVH ## START - 2020-08-11 00:36:01.524384 executing: /usr/local/php7.2/bin/php /homez.161/myftpusername/www/noscript.sh
 
 [2020-08-11 00:36:01] ## OVH ## ERROR command '/homez.161/myftpusername/www/noscript.sh' not found
 [2020-08-11 00:36:01] ## OVH ## END - 2020-08-11 00:36:01.086166 exitcode: 255
-```
+</code></pre>
 
 - Exemplo de falha devido a um erro de autorização (chmod) ou a uma configuração incorreta do ficheiro .ovhconfig
 
-```
+<pre class="bgwhite"><code>
 [2020-08-11 18:07:10] ## OVH ## Your job could not be initiated for an unknown reason.
 [2020-08-11 18:07:10]
 [2020-08-11 18:07:10] ## OVH ## END - 2020-08-11 18:07:10.969840 exitcode: 255
-```
+</code></pre>
 
-## Saiba mais
+## Quer saber mais? <a name="go-further"></a>
 
 [Configurar o ficheiro .ovhconfig do alojamento web](/pages/web_cloud/web_hosting/configure_your_web_hosting)
 
 [Utilizar o acesso SSH do seu alojamento web](/pages/web_cloud/web_hosting/ssh_on_webhosting)
 
-Junte-se à nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
+
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
+
+Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>. 

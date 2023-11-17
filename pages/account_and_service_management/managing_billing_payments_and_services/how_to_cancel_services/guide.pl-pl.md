@@ -1,7 +1,7 @@
 ---
 title: Jak zrezygnować z usług OVHcloud
 excerpt: Dowiedz się, jak przerwać subskrypcję OVHcloud
-updated: 2022-03-22
+updated: 2023-11-16
 ---
 
 > [!primary]
@@ -219,7 +219,7 @@ Aby zrezygnować z usługi [Hosted Exchange](https://www.ovhcloud.com/pl/emails/
 
 #### Private Exchange <a name="private"></a>
 
-Aby zrezygnować z usługi [Private Exchange](https://www.ovhcloud.com/pl/emails/private-exchange/), postępuj zgodnie z instrukcjami zawartymi w tym [przewodniku](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_billing_exchange#usuwanie-kont).
+Aby zrezygnować z usługi [Private Exchange](https://www.ovhcloud.com/pl/emails/private-exchange/), postępuj zgodnie z instrukcjami zawartymi w tym [przewodniku](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_billing_exchange#usuwanie-kont_1).
 
 #### Office 365 csp 1 <a name="office-csp1"></a>
 

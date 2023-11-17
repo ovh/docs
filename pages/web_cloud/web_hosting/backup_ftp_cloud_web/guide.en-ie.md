@@ -1,6 +1,7 @@
 ---
 title: "Retrieving the backup of the FTP space on your Cloud Web hosting plan"
-updated: 2022-09-13
+excerpt: "Find out how to retrieve a backup of the FTP space in your Cloud Web hosting plan"
+updated: 2023-11-16
 ---
 
 ## Objective
@@ -85,7 +86,7 @@ Once you have downloaded your files, you can [connect to your FTP space](/pages/
 
 ## Go further 
 
-[Logging in to your Web Hosting plan’s storage space](/pages/web_cloud/web_hosting/ftp_connection){.external}
+[Logging in to your Web Hosting plan’s storage space](/pages/web_cloud/web_hosting/ftp_connection)
 
 [Logging in using the Filezilla software](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)
 

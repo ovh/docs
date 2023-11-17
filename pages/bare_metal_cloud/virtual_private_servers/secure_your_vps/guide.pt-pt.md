@@ -80,6 +80,8 @@ Substitua o número **22** pelo número de porta à sua escolha.<br>
 Para uma maior segurança, utilize um número entre 49152 e 65535.<br>
 Registe e saia do ficheiro de configuração.
 
+Se a linha estiver "comentada" (ou seja, precedida por um "#"), certifique-se de que remove o "#" antes de guardar o ficheiro para que a alteração tenha efeito.
+
 Reinicie o serviço:
 
 ```bash

@@ -1,81 +1,164 @@
 ---
-title: Créer une base de données sur son hébergement web
-excerpt: Apprenez à créer une base de données sur votre hébergement web OVHcloud
-updated: 2022-02-03
+title: "Créer une base de données sur son hébergement web"
+excerpt: "Découvrez comment créer une base de données sur votre hébergement web OVHcloud"
+updated: 2023-10-31
 ---
 
 ## Objectif
 
-Une base de données (*database*, « DB » ou « BDD ») permet de stocker des éléments dits dynamiques, comme des commentaires ou des articles par exemple. Ces bases sont aujourd'hui utilisées par la quasi-totalité des systèmes de gestion de contenu (*Content Management System* ou CMS) comme WordPress, Joomla!.
+Une base de données (BDD) est utilisée pour stocker des éléments dynamiques (données de connexion, données utilisateurs, données d'affichage, données nécessaires au bon fonctionnement de votre site web, etc.). Ces bases de données sont utilisées dans la majorité des systèmes de gestion de contenu (CMS) modernes, tels que *WordPress*, *Joomla!*, *Drupal* ou *PrestaShop*.
 
-**Apprenez à créer une base de données sur votre hébergement web OVHcloud.**
+**Découvrez comment créer une base de données sur votre hébergement web OVHcloud**
 
 ## Prérequis
 
-- Disposer d'une offre d’[hébergement web OVHcloud](https://www.ovhcloud.com/fr-ca/web-hosting/){.external}.
-- Avoir la possibilité de créer des bases de données dans le cadre de votre offre.
-- Disposer d'un accès à la gestion de l'offre d'hébergement web depuis l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
+- Disposer d'une offre d'[hébergement web OVHcloud](https://www.ovhcloud.com/fr-ca/web-hosting/) incluant au moins une base de données.
+- Disposer d'une base de données disponible en « création » parmi celles incluses dans votre offre d'hébergement web.
+- Disposer d'un accès à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) avec les [autorisations nécessaires](/pages/account_and_service_management/account_information/managing_contacts) pour gérer votre hébergement web.
 
 ## En pratique
 
-### Étape 1 : accéder à la gestion des bases de données de l'hébergement
+### Étape 1 - Accéder à l'onglet de gestion des bases de données d'un hébergement web
 
-Pour démarrer la manipulation, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, cliquez sur `Hébergements`{.action}, puis choisissez le nom de l'hébergement concerné. Positionnez-vous enfin sur l'onglet `Bases de données`{.action}.
+Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) puis rendez-vous dans la partie `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} dans la colonne de gauche, choisissez l'offre d'hébergement sur laquelle vous souhaitez créer une base de données puis cliquez sur l'onglet `Bases de données`{.action}.
 
-Le tableau qui s'affiche contient toutes les bases de données créées dans le cadre de votre offre d'hébergement web.
+Le tableau de cette section contient toutes les bases de données créées avec votre hébergement web.
 
 ![databasecreation](images/database-creation-step1.png){.thumbnail}
 
-### Étape 2 : créer la base de données
+### Étape 2 - Créer la base de données
 
-Pour initier la création d'une nouvelle base de données, il existe deux possibilités :
+Il existe deux façons de créer une nouvelle base de données :
 
-- **si vous n'avez pas encore créé de base de données** : cliquez sur le bouton `Créer une base de données`{.action} ;
+- **Si vous n’avez pas encore créé de base de données** : cliquez sur le bouton `Créer une base de données`{.action}.
 
-- **si vous avez déjà créé une base de données** : cliquez sur le bouton `Actions`{.action} puis sur `Créer une base de données`{.action}.
+- **Si vous avez déjà créé une base de données** : cliquez sur le bouton `Actions`{.action} puis sur `Créer une base de données`{.action}.
 
-Dans la fenêtre qui s'affiche, sélectionnez les informations souhaitées, puis cliquez sur `Suivant`{.action}.
+Dans la fenêtre qui s’ouvre, sélectionnez les informations suivantes :
+
+![database-creation-step1](images/database-creation-1.png){.thumbnail}
 
 |Information|Description|  
-|---|---|  
-|Moteur de base de données|Sélectionnez le moteur de base de données qui sera utilisé par cette dernière. Les bases de données comprises dans une offre d'[hébergement web OVHcloud](https://www.ovhcloud.com/fr-ca/web-hosting/){.external} ne proposent que le moteur MySQL.|  
-|Version de la base de données|Sélectionnez la version utilisée par le moteur de la base de données. Veillez à la compatibilité de votre site avec la version choisie. |  
-|Type de base de données|Sélectionnez la capacité de la base de données. Il s'agit de l'espace dont bénéficiera votre base pour stocker des données.|   
+|---|---|
+|**Sélectionnez le type de base de données**|Choisissez la taille de la base de données. Cette taille fait référence à l'espace dont dispose votre base de données pour le stockage des données.|
+|**Sélectionnez le moteur de la base de données à ajouter**|Choisissez le moteur que la base de données doit utiliser. Les bases de données inclues dans votre [offre d’hébergement web OVHcloud](https://www.ovhcloud.com/fr-ca/web-hosting/) sont uniquement disponibles avec le moteur MySQL.|
+|**Sélectionnez la version de la base de données à ajouter**|Choisissez la version utilisée par le moteur de la base de données. Assurez-vous que votre site web soit compatible avec la version que vous avez choisie.|
 
-Complétez ensuite les informations demandées puis cliquez sur `Suivant`{.action}.
+Ensuite, cliquez sur `Suivant`{.action}.
 
-|Information|Description|   
-|---|---|   
-|Utilisateur|Personnalisez le nom d'utilisateur qui sera associé à votre base de données.|   
-|Mot de passe|Définissez un mot de passe pour cet utilisateur, puis confirmez-le.|   
+Une nouvelle fenêtre s'affiche :
 
-Vérifiez alors les informations qui s'affichent dans le récapitulatif ; si celles-ci sont correctes, cliquez sur `Valider`{.action} pour lancer la création de la base de données. Répétez cette manipulation autant de fois que nécessaire pour créer plusieurs bases de données.
+![database-creation-step2](images/database-creation-2.png){.thumbnail}
+
+|Information|Description|
+|---|---|
+|**Utilisateur**|Entrez un nom d'utilisateur qui sera associé à votre base de données (6 caractères maximum en plus du préfixe utilisateur déjà renseigné).|
+|**Mot de passe**|Entrez un mot de passe pour cet utilisateur en respectant les *critères* mentionnés plus bas.|
+|**Confirmation**|Saisissez de nouveau le mot de passe pour cet utilisateur.|
 
 > [!primary]
 >
-> Pour des raisons de sécurité, nous vous invitons à respecter les conditions indiquées lors du choix du mot de passe. Nous vous recommandons également :
+> Pour des raisons de sécurité, suivez les conditions requises lors de la création de votre mot de passe.
 >
-> - de ne pas utiliser deux fois le même mot de passe ;
+> Nous vous recommandons également de :
 >
-> - de choisir un mot de passe qui n'a aucun rapport avec vos informations personnelles (évitez les mentions à votre nom, prénom ou date de naissance, par exemple) ;
->
-> - de renouveler régulièrement vos mots de passe ;
->
-> - de ne pas noter sur un papier ou de vous envoyer vos mots de passe sur votre adresse e-mail ;
->
-> - de ne pas enregistrer vos mots de passe dans votre navigateur internet, même si ce dernier vous le propose.
+> - définir un mot de passe différent pour chacun de vos services;
+> - créer un mot de passe ne contenant aucune informations personnelles (nom, prénom, date de naissance, etc.);
+> - renouveler votre mot de passe régulièrement;
+> - ne pas conserver de traces écrites de votre mot de passe et de ne pas l'envoyer à d'autres personnes (y compris par le biais de votre adresse e-mail);
+> - ne pas sauvegarder votre mot de passe sur votre navigateur internet, même si votre navigateur vous le propose.
 >
 
-![databasecreation](images/database-creation-step2.png){.thumbnail}
+> [!warning]
+>
+> N'oubliez pas que si vous changez le mot de passe d'une base de données, toutes les applications qui accèdent à cette base doivent être mises à jour en conséquence.
+>
 
-### Étape 3 : utiliser votre base de données
+Complétez les informations requises et cliquez sur `Suivant`{.action}.
 
-Il ne reste plus qu'à utiliser votre base de données. Pour cela, munissez-vous des informations permettant de s'y connecter : le nom d'utilisateur et le mot de passe que vous venez de définir, le nom de la base de données que vous venez également de personnaliser, ainsi que de l'adresse du serveur.
+![database-creation-step3](images/database-creation-3.png){.thumbnail}
 
-Ces informations sont indispensables pour relier votre site internet à la base de données. Selon le site internet utilisé, ce lien doit être réalisé manuellement ou via une interface générée par le site lui-même. Ce paramétrage étant inhérent à la configuration de votre site et non à OVHcloud, nous vous recommandons de vous rapprocher de l'éditeur du site internet ou de faire appel à un professionnel comme un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/directory/) si vous souhaitez obtenir de l'aide pour effectuer cette manipulation.
+Vérifiez que toutes les informations affichées dans le résumé sont correctes. Si tel est le cas, cliquez sur `Confirmer`{.action} pour lancer la création de votre base de données.
 
-OVHcloud met à votre disposition un applicatif en ligne : phpMyAdmin. Pour connaître le lien d'accès à ce dernier, toujours positionné sur l'onglet `Bases de données`{.action}, cliquez dans le tableau sur les trois points à droite de la base de données concernée puis sur `Accéder à phpMyAdmin`{.action}. Vous devrez y renseigner les identifiants de la base créée chez OVHcloud.
+> [!primary]
+>
+> Lorsque vous cliquez sur `Confirmer`{.action}, la création de la base de données peut prendre jusqu'à **15 minutes**. Rechargez la page web de votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) si la base de données n'apparaît pas automatiquement dans le tableau listant vos bases de données.
+>
 
-## Aller plus loin
+Répétez ce processus autant de fois que vous le souhaitez afin de créer plusieurs bases de données (dans la limite des bases de données disponibles dans votre offre).
+
+### Étape 3 - Gérer votre base de données <a name="step3"></a>
+
+> [!warning]
+>
+> Ce guide ne remplace pas l’assistance d'un professionnel en développement. Nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/directory/) et/ou de contacter l'éditeur du logiciel de votre solution si vous rencontrez des difficultés. OVHcloud ne sera pas en mesure de vous fournir une assistance à ce propos. Retrouverez plus d’informations dans la section [« Aller plus loin »](#go-further) de ce guide.
+>
+
+À présent, vous pouvez utiliser votre base de données. Pour ce faire, vous aurez besoin de vos informations de connexion :
+
+- le *nom d'utilisateur* et le *mot de passe* que vous avez défini,
+- le *nom de la base de données* que vous avez indiqué,
+- l'*adresse du serveur*.
+
+Ces informations sont essentielles pour que votre site web puisse se connecter à la base de données.
+
+Si besoin, pour récupérer ces informations de connexion, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) puis rendez-vous dans la partie `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} dans la colonne de gauche, choisissez l'offre d'hébergement sur laquelle vous souhaitez récupérer les informations de connexion à votre base de données puis cliquez sur l'onglet `Bases de données`{.action}.
+
+Vous retrouverez l'ensemble des informations de connexion à votre base de données dans le tableau qui s'affiche. Ceci à l'exception du *mot de passe* pour des raisons de sécurité.
+
+> [!warning]
+>
+> Si vous ne vous souvenez plus de votre mot de passe de connexion à votre base de données, consultez notre guide « [Changer le mot de passe de sa base de données](/pages/web_cloud/web_hosting/sql_change_password) ».
+>
+
+Selon le logiciel utilisé, il est possible que cette connexion nécessite d'être configurée manuellement ou via une interface générée par l'interface de configuration (backend) du site web. Étant donné que cette procédure concerne la configuration de votre site web et non votre hébergement OVHcloud, nous vous recommandons de consulter les ressources disponibles en ligne ou de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/directory/).
+
+#### Accéder à l’interface phpMyAdmin
+
+OVHcloud fournit un outil en ligne pour la gestion des bases de données, « phpMyAdmin ». Pour trouver le lien d'accès à cette application, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) puis rendez-vous dans la partie `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} dans la colonne de gauche, choisissez l'offre d'hébergement sur laquelle vous souhaitez récupérer les informations de connexion à votre base de données puis cliquez sur l'onglet `Bases de données`{.action}. Dans le tableau qui s'affiche, cliquez sur le bouton `...`{.action} à droite de la base de données concernée, puis cliquez sur `Accéder à phpMyAdmin`{.action} dans le menu déroulant.
+
+![phpMyAdmin Go Login](images/pma-interface-login.png){.thumbnail}
+
+Renseignez les informations d'accès à votre base de données puis cliquez sur `Connexion`{.action}.
+
+Si besoin, consultez l'[étape 3](#step3) du présent guide pour retrouvez les informations de connexion à votre base de données.
+
+#### Se servir des sauvegardes des bases de données
+
+Pour chaque base de données d'hébergement web, des snapshots sont créés automatiquement chaque jour (jusqu'à 32 maximum). Vous pouvez donc restaurer rapidement une version antérieure d'une base de données à partir de votre espace client OVHcloud.
+
+Pour vérifier les snapshots disponibles ainsi que leur date et heure de création, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) puis rendez-vous dans la partie `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} dans la colonne de gauche, choisissez l'offre d'hébergement sur laquelle vous souhaitez consulter les snapshots disponibles pour votre base de données puis cliquez sur l'onglet `Bases de données`{.action}. Dans le tableau qui s'affiche, cliquez sur le symbole juste à côté du cercle vert. Vous pouvez également télécharger chaque sauvegarde d'une base de données depuis ce même endroit. Retrouvez plus d'informations sur le sujet dans notre guide « [Récupérer la sauvegarde de la base de données d’un hébergement web](/pages/web_cloud/web_hosting/sql_database_export) ».
+
+#### Comprendre les problèmes courants
+
+**Trop de connexions**
+
+Les bases de données d'hébergement web sont limitées à 30 connexions simultanées (variable système *max_connections*). Les demandes SQL doivent donc être optimisées pour éviter ce genre d'erreur. Si les problèmes persistent malgré tout, des mesures alternatives doivent être envisagées. Par exemple, vous pouvez migrer votre base de données sur une base de données [Web Cloud Databases](https://www.ovhcloud.com/fr-ca/web-cloud/databases/) ou encore réaliser une [mise à niveau de votre offre d'hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/uc-best-web-hosting/).
+
+**Erreurs de connexion / « introuvable »**
+
+Apparaît généralement lorsqu'on n'utilise pas le nom réel de la base de données dans le fichier de connexion à la base de données présent dans son site web.
+
+La meilleure pratique consiste à toujours utiliser le nom réel de la base de données pour les scripts et les fichiers de configuration au lieu des adresses IP ou du _localhost_.
+
+**Quota dépassé pour les bases de données**
+
+Si une base de données d'hébergement web dépasse l'espace de stockage recommandé, elle basculera automatiquement en « Lecture seule » / « Sélection seule ». L’administrateur recevra une notification par e-mail.
+
+Une fois que la base de données a été optimisée (purgée), recalculez son quota dans votre espace client OVHcloud pour le débloquer à nouveau. Retrouvez plus d'informations sur le sujet dans notre guide « [Que faire lorsque le quota de stockage de ma base de données est dépassé ?](/pages/web_cloud/web_hosting/sql_overquota_database) »
+
+## Aller plus loin <a name="go-further"></a>
+
+[Modifier le mot de passe de la base de données d'un hébergement web](/pages/web_cloud/web_hosting/sql_change_password)
+
+[Récupérer la sauvegarde de la base de données d'un hébergement web](/pages/web_cloud/web_hosting/sql_database_export)
+
+[Importer une sauvegarde dans la base de données d'un hébergement web](/pages/web_cloud/web_hosting/sql_importing_mysql_database)
+
+[Optimiser les performances de votre site web](/pages/web_cloud/web_hosting/optimise_your_website_performance)
+
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/directory/).
+
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr-ca/support-levels/).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

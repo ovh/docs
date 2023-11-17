@@ -122,7 +122,11 @@ smartctl -a /dev/sgY
 
 #### Servidor con disco NVMe
 
-Si se trata de un disco NVMe, será necesario poner el servidor en modo [rescue-pro](/pages/bare_metal_cloud/dedicated_servers/rescue_mode){.external}, que tiene la herramienta **nvme-cli** instalada por defecto.
+Si se trata de un disco NVMe, será necesario poner el servidor en [modo de rescate](/pages/bare_metal_cloud/dedicated_servers/rescue_mode){.external} e instalar la herramienta `nvme-cli`.
+
+```sh
+apt install nvme-cli
+```
 
 A continuación, utilice el comando `nvme list` para obtener el número de serie de los discos:
 

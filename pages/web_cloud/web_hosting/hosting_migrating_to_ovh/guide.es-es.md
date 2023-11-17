@@ -1,7 +1,7 @@
 ---
 title: 'Migrar un sitio web y el correo a OVHcloud'
 excerpt: "Cómo migrar un sitio web, el correo electrónico y el dominio a OVHcloud sin cortes del servicio"
-updated: 2022-11-24
+updated: 2023-11-15
 ---
 
 > [!primary]
@@ -153,8 +153,8 @@ Utilice nuestra guía sobre la [creación de direcciones de correo electrónico 
 
 Si ha optado por una solución Email Pro o Exchange, consulte nuestra documentación sobre el asunto para crear sus direcciones de correo:
 
-- Para "Email-Pro": </pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config>
-- Para "Exchange": </pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_starting_hosted>
+- Para [Email-Pro](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config)
+- Para [Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_starting_hosted)
 
 ### Etapa 6: Declarar los servidores de correo de OVHcloud en la zona DNS activa de su dominio <a name="step6"></a>
 

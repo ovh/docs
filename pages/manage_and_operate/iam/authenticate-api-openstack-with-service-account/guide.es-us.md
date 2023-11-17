@@ -158,7 +158,7 @@ clouds:
 The previous example works for the EMEA region. If you are using OVHcloud services from the "Rest of the World" regions, edit the following lines with these values:
 
 - identity_provider: `ovhcloud-world`
-- discovery_endpoint: `https://iam.ovh.ca/role-adapter/urn:v1:eu:resource:publicCloudProject:pci/.well-known/openid-configuration`
+- discovery_endpoint: `https://iam.ovh.ca/role-adapter/urn:v1:ca:resource:publicCloudProject:pci/.well-known/openid-configuration`
 
 As a reminder, you must replace the variables in these examples with the values that match your configuration.
 

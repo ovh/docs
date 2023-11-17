@@ -1,7 +1,7 @@
 ---
 title: "Il mio sito è lento. Cosa fare?" 
 excerpt: "Individua l'origine delle lentezze del tuo sito Web e scopri come risolvere questa situazione"
-updated: 2022-11-17
+updated: 2023-10-26
 ---
 
  
@@ -159,7 +159,7 @@ Se utilizzi un database su un'offerta **Web Cloud Databases**, consulta la nostr
 
 Se la connessione è andata a buon fine, accedi all'interfaccia seguente:
 
-![PHPMyAdmin](images/pma.png){.thumbnail}
+![PHPMyAdmin](images/pma-main-page.png){.thumbnail}
 
 > [!warning]
 >

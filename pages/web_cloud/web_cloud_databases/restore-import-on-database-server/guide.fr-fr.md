@@ -1,7 +1,7 @@
 ---
 title: 'Restaurer et importer une base de données sur votre serveur de bases de données'
 excerpt: 'Découvrez comment restaurer et importer votre base de données'
-updated: 2023-02-15
+updated: 2023-10-26
 ---
 
 ## Objectif
@@ -12,7 +12,7 @@ updated: 2023-02-15
 
 ## Prérequis
 
-- Disposer d'une [instance Web Cloud Databases](https://www.ovh.com/fr/cloud/cloud-databases/) (incluse dans une offre d'[hébergement web Performance](https://www.ovhcloud.com/fr/web-hosting/)).
+- Disposer d'une [instance Web Cloud Databases](https://www.ovhcloud.com/fr/web-cloud/databases/) (incluse dans une offre d'[hébergement web Performance](https://www.ovhcloud.com/fr/web-hosting/)).
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 
 ## En pratique
@@ -96,7 +96,7 @@ Sélectionnez votre fichier de sauvegarde en cliquant `Parcourir`{.action} (atte
 
 Laissez les options par défaut et cliquez sur `Exécuter`{.action} pour lancer l'importation.
 
-![Web Cloud Databases](images/web-cloud-databases-import04.png){.thumbnail}
+![Web Cloud Databases](images/pma-upload-backup-web-cloud-db.png){.thumbnail}
 
 #### Importer ma base MySQL ou MariaDB en ligne de commande
 

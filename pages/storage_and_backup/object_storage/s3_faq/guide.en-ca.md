@@ -36,7 +36,7 @@ Find the description of the storage classes on [this page](https://www.ovhcloud.
 
 The S3 Object storage classes benefit from [enhanced features to better manage your data](https://www.ovhcloud.com/en-ca/public-cloud/object-storage/#features).
 
-New features are coming soon, so please check out our [public GitHub roadmap](https://github.com/ovh/public-cloud-roadmap/projects/3?card_filter_query=label%3A%22object+storage%22).
+New features are coming soon, so please check out our [public GitHub roadmap](https://github.com/orgs/ovh/projects/16/?card_filter_query=label%3A%22object+storage%22).
 
 ### Which S3 APIs are compatible with S3 Object Storage classes?
 
@@ -160,7 +160,7 @@ You can choose to synchronize your data from one region to another using rClone.
 
 ### Is it possible to manage data lifecycles?
 
-Lifecycle options are not yet available. Please follow our [public GitHub roadmap](https://github.com/ovh/public-cloud-roadmap/projects/3?card_filter_query=label%3A%22object+storage%22) to be informed of their release.
+Lifecycle options are not yet available. Please follow our [public GitHub roadmap](https://github.com/orgs/ovh/projects/16/?card_filter_query=label%3A%22object+storage%22) to be informed of their release.
 
 ## Performance
 

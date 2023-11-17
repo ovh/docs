@@ -40,7 +40,7 @@ La modification du mot de passe de la base de données de votre site se fait en 
 
 - Disposer d'une [offre d'hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/).
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
-- Utiliser une [base de données associée à votre offre d'hébergement mutualisé](https://www.ovhcloud.com/fr/web-hosting/options/start-sql/) ou à un [serveur Web Cloud Databases](https://www.ovh.com/fr/cloud-databases/).
+- Utiliser une [base de données associée à votre offre d'hébergement mutualisé](https://www.ovhcloud.com/fr/web-hosting/options/start-sql/) ou à un [serveur Web Cloud Databases](https://www.ovhcloud.com/fr/web-cloud/databases/).
 - Être en possession des identifiants FTP permettant de se connecter à l'[espace de stockage](/pages/web_cloud/web_hosting/ftp_connection) de votre hébergement.
 
 ## En pratique
@@ -91,7 +91,7 @@ Retournez ensuite dans votre [espace client OVHcloud](https://www.ovh.com/auth/?
 
 Si vous avez retrouvé dans cette partie de votre espace client le nom de la base indiqué dans le fichier de configuration, passez à [l'étape 3](#step3).
 
-Dans le cas contraire, la base de données de votre site est liée à une offre [Web Cloud Databases](https://www.ovh.com/fr/cloud-databases/).
+Dans le cas contraire, la base de données de votre site est liée à une offre [Web Cloud Databases](https://www.ovhcloud.com/fr/web-cloud/databases/).
 
 Vous devez donc retourner dans le fichier de configuration de votre site, afin de noter le *nom du serveur* ainsi que le *nom d'utilisateur* de votre base de données :
 
@@ -102,7 +102,7 @@ Vous devez donc retourner dans le fichier de configuration de votre site, afin d
 
 Cliquez ensuite, dans la partie `Bases de données`{.action} dans la section `Web Cloud`{.action}.
 
-Dans l'onglet `Informations générales`{.action}, identifiez, dans votre offre [Web Cloud Databases](https://www.ovh.com/fr/cloud-databases/), celle qui contient, sous la mention `Nom d'hôte`{.action}, le nom du serveur de votre base de données trouvé précédemment.
+Dans l'onglet `Informations générales`{.action}, identifiez, dans votre offre [Web Cloud Databases](https://www.ovhcloud.com/fr/web-cloud/databases/), celle qui contient, sous la mention `Nom d'hôte`{.action}, le nom du serveur de votre base de données trouvé précédemment.
 
 Toujours dans cette partie de votre espace client, rendez-vous dans l'onglet `Utilisateur et droits`{.action}, afin de repérer également le `Nom d'utilisateur`{.action} de votre base de données.
 

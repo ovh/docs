@@ -1,14 +1,14 @@
 ---
-title: Getting started with a Web Hosting plan
-excerpt: Building your website and setting up your email addresses 
-updated: 2022-11-11
+title: "Getting started with a Web Hosting plan"
+excerpt: "Find out how to build your website and to set up your email addresses"
+updated: 2023-11-16
 ---
 
 ## Objective
 
 This guide is designed for customers who have just purchased a Web Hosting plan to build and host a website. With your Web Hosting plan, you can set up a website using a turn-key solution (WordPress, PrestaShop), or develop your own platform on permanently available servers. This guide will help you get started with building your website. Thank you for choosing OVHcloud.
 
-**Building your website and setting up your email addresses.**
+**Find out how to build your website and to set up your email addresses.**
 
 ## Requirements
 
@@ -18,6 +18,11 @@ This guide is designed for customers who have just purchased a Web Hosting plan 
 - You must be logged in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg){.external}.
 
 ## Instructions
+
+> [!success]
+>
+> Before reading this guide any further, please ensure that the domain or subdomain you would like to use is correctly associated with your OVHcloud web hosting plan. To do this, please refer to our guide on "[Hosting multiple websites on your Web Hosting plan](/pages/web_cloud/web_hosting/multisites_configure_multisite)".
+>
 
 ### Step 1: Define your project
 

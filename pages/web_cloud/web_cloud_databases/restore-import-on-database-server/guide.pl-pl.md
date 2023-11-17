@@ -1,7 +1,7 @@
 ---
 title: Przywracanie i importowanie bazy danych na serwer baz danych
 excerpt: 'Dowiedz się, jak przywrócić i importować bazę danych'
-updated: 2023-02-15
+updated: 2023-10-26
 ---
 
 > [!primary]
@@ -16,7 +16,7 @@ W wyniku błędu bazy danych musisz mieć możliwość przywrócenia kopii zapas
 
 ## Wymagania początkowe
 
-- Posiadanie [instancji Web Cloud Databases](https://www.ovh.com/pl/cloud/cloud-databases/) (zawartej w ofercie[hostingu www Performance](https://www.ovhcloud.com/pl/web-hosting/).
+- Posiadanie [instancji Web Cloud Databases](https://www.ovhcloud.com/pl/web-cloud/databases/) (zawartej w ofercie[hostingu www Performance](https://www.ovhcloud.com/pl/web-hosting/).
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 
 ## W praktyce
@@ -101,7 +101,7 @@ Wybierz plik kopii zapasowej, klikając `Przeglądaj`{.action} (uwaga, plik nie 
 
 Pozostaw domyślne opcje i kliknij `Uruchom`{.action} import.
 
-![Web Cloud Databases](images/web-cloud-databases-import04.png){.thumbnail}
+![Web Cloud Databases](images/pma-upload-backup-web-cloud-db.png){.thumbnail}
 
 #### Importuj bazę MySQL lub MariaDB za pomocą wiersza poleceń
 
@@ -156,7 +156,7 @@ psql —host=serwer —port=port —user=uzytkownik —password=password nazwa_b
 
 ## Sprawdź również
 
-W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/).
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory).
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
 
