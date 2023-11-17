@@ -213,7 +213,6 @@ Les trois routes API Logs Data Platform suivantes vous permettent respectivement
 > @api {DELETE} /dbaas/logs/{serviceName}/output/graylog/stream/{streamId}/subscription/{subscriptionId}
 >
 
-
 ## Aller plus loin
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
