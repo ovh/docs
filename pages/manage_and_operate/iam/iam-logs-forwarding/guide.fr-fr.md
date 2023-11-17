@@ -1,6 +1,6 @@
 ---
-title: Génération des logs des comptes OVHcloud avec Logs Data Platform
-excerpt: Découvrez comment transférer les logs des comptes clients OVHcloud vers Logs Data Platform
+title: "Génération des logs des comptes OVHcloud avec Logs Data Platform"
+excerpt: "Découvrez comment transférer les logs des comptes clients OVHcloud vers Logs Data Platform"
 updated: 2023-11-16
 ---
 
@@ -12,8 +12,8 @@ Pour découvrir Logs Data Platform avant de poursuivre ce guide, référez-vous 
 
 ## Prérequis
 
-- Vous avez un [compte client OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-creation).
-- Vous disposez d'un compte Logs Data Platform (LDP) au sein de ce compte OVHcloud avec au moins un flux actif configuré. [Ce guide](/pages/manage_and_operation/observability/logs_data_platform/getting_started_quick_start) vous guidera dans toutes les étapes nécessaires.
+- Disposer d'un [compte client OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-creation).
+- Disposer d'un compte Logs Data Platform (LDP) au sein de votre compte OVHcloud avec au moins un flux actif configuré. [Ce guide](/pages/manage_and_operation/observability/logs_data_platform/getting_started_quick_start) vous guidera dans toutes les étapes nécessaires.
 
 ## Glossaire
 
@@ -21,7 +21,7 @@ Pour découvrir Logs Data Platform avant de poursuivre ce guide, référez-vous 
 
 **Flux de données** : partition logique de logs que vous créez dans un compte LDP et que vous utiliserez lors de l'ingestion, la visualisation ou l'interrogation de vos logs. Plusieurs sources peuvent être stockées dans le même flux de données, et il s’agit de l’unité de définition d’un pipeline de logs (politique de rétention, archivage, streaming live, etc.), de droits d’accès et de politiques d’alertes.
 
-**Redirection de logs** : Fonctionnalité intégrée à un produit OVHcloud pour ingérer les logs de ses services vers un flux de données d'un compte LDP dans le même compte OVHcloud. La fonctionnalité doit être activée par le client par service.
+**Redirection de logs** : Fonctionnalité intégrée à un produit OVHcloud pour ingérer les logs de ses services vers un flux de données d'un compte LDP dans le même compte OVHcloud. La fonctionnalité doit être activée par le client pour chaque service.
 
 **Abonnement au transfert de logs** : Lors de l'activation du transfert de logs pour un service OVHcloud donné vers un flux de données LDP donné, un abonnement est créé et attaché au flux de données pour une gestion ultérieure par le client.
 
@@ -31,9 +31,9 @@ Pour découvrir Logs Data Platform avant de poursuivre ce guide, référez-vous 
 
 Le compte OVHcloud propose 3 niveaux de logs :
 
-- **Journaux d'audit** : Fournissez un ensemble chronologique d'enregistrements pertinents pour la sécurité, documentant la séquence d'actions dans votre compte OVHcloud. (c'est-à-dire connexions, changement de mot de passe, etc.)
-- **Journaux d'activité** : Fournissez tous les enregistrements des actions de votre compte OVHcloud à partir des appels API et des actions effectuées dans l'espace client.
-- **Logs de politique d'accès** : Fournissez tous les enregistrements d'évaluation d'accès dans votre compte OVHcloud, y compris les actions d'intégration tierce (c'est-à-dire les actions autorisées ou non autorisées par les politiques IAM).
+- **Journaux d'audit** : Fournit un ensemble chronologique d'enregistrements pertinents pour la sécurité, documentant la séquence d'actions dans votre compte OVHcloud. (connexions, changement de mot de passe, etc.)
+- **Journaux d'activité** : Fournit tous les enregistrements des actions de votre compte OVHcloud à partir des appels API et des actions effectuées dans l'espace client.
+- **Logs de politique d'accès** : Fournit tous les enregistrements d'évaluation d'accès dans votre compte OVHcloud, y compris les actions d'intégration tierce (c'est-à-dire les actions autorisées ou non autorisées par les politiques IAM).
 
 ### Activer le transfert de logs
 
@@ -41,13 +41,13 @@ Vous pouvez activer la redirection des logs des comptes OVHcloud via API. Vous d
 
 Notez que l'activation du transfert est gratuite, mais vous serez facturé pour l'utilisation de votre service Logs Data Platform selon le tarif standard. Pour la tarification du LDP, consultez la [Logs Data Platform product page] (https://www.ovhcloud.com/fr/logs-data-platform/).
 
-Pour activer la redirection, vous pouvez utiliser les API suivantes :
+Pour activer la redirection, utilisez les API suivantes :
 
 |**Méthode**|**Type de journal**|**Chemin**|**Description**|
 | :-: | :-: | :-: | :-: |
-POST|Journaux d'audit|/me/logs/audit/forward|Transférer les journaux d'audit des comptes|
+POST|Journaux d'audit|/me/logs/audit/forward|Transfère les journaux d'audit des comptes|
 POST|Journaux d'activité|/me/api/logs/forward|Journaux de l'API de transfert et des comptes du Panneau de configuration|
-POST|Accéder aux journaux de stratégie|/iam/logs/forward|Transférer les journaux IAM du compte vers un flux de journaux dédié|
+POST|Accéder aux journaux de stratégie|/iam/logs/forward|Transfère les journaux IAM du compte vers un flux de journaux dédié|
 
 Par exemple, pour les journaux d'audit :
 
@@ -58,7 +58,7 @@ POST /me/logs/audit/forward
 }
 ```
 
-L'API nécessite un « streamId », qui est le flux de données cible de votre compte LDP vers lequel vos journaux de compte OVHcloud seront transférés. Vous obtiendrez en réponse un `operationid`, afin de pouvoir l'utiliser pour récupérer le `subscriptionid` à des fins de gestion ultérieure à l'aide du point de terminaison de l'opération de lecture de Logs Data Platform (https://api.ovh.com/console-preview/?section=%2Fdbaas%2Flogs&branch=v1#get-/dbaas/logs/-serviceName-/operation).
+L'API nécessite un « streamId », qui correspond au flux de données cible de votre compte LDP vers lequel vos journaux de compte OVHcloud seront transférés. Vous obtiendrez en réponse un `operationid` afin de pouvoir l'utiliser pour récupérer le `subscriptionid`. Ceci à des fins de gestion ultérieure à l'aide du point de terminaison de l'opération de lecture de Logs Data Platform (https://api.ovh.com/console-preview/?section=%2Fdbaas%2Flogs&branch=v1#get-/dbaas/logs/-serviceName-/operation).
 
 Retrouvez votre `streamId` dans l'espace client Logs Data Platform :
 
@@ -83,7 +83,7 @@ Vous pouvez également récupérer vos flux à l'aide de l'API Logs Data Platfor
 Maintenant que vos logs de compte OVHcloud sont ingérés et stockés dans votre flux Logs Data Platform, vous pouvez interroger vos logs et construire des tableaux de bord pour avoir une représentation graphique à l'aide de l'interface utilisateur web de Graylog.
 
 - Récupérer l'utilisateur admin (nom du service Logs Data Platform) et le mot de passe sur la page d'accueil de votre compte Logs Data Platform.
-- Ouvrez Graylog `web-ui`. Vous pouvez récupérer le lien depuis la page d'accueil de votre compte ou utiliser votre point d'accès en fonction de la région de votre compte (par exemple, les régions de Gravelines : <https://gra1.logs.ovh.com/>).
+- Ouvrez Graylog `web-ui`. Vous pouvez récupérer le lien depuis la page d'accueil de votre compte ou utiliser votre point d'accès en fonction de la région de votre compte (par exemple, la région de Gravelines : <https://gra1.logs.ovh.com/>).
 
 ![Access Graylog](images/access_graylog.png){.thumbnail}
 
@@ -91,7 +91,7 @@ Maintenant que vos logs de compte OVHcloud sont ingérés et stockés dans votre
 
 ![Access Graylog](images/access_graylog_2.png){.thumbnail}
 
-- Parcourez vos logs dans le flux de données de votre compte Logs Data Platform. Vous pouvez consulter la [documentation de Graylog Writing Search Queries](https://go2docs.graylog.org/4-x/making_sense_of_your_log_data/writing_search_queries.html?tocpath=Searching%20Your%20Log%20Data%7C____1) pour plus de détails sur la syntaxe de recherche.
+- Parcourez vos logs dans le flux de données de votre compte Logs Data Platform. Consultez la [documentation de Graylog Writing Search Queries](https://go2docs.graylog.org/4-x/making_sense_of_your_log_data/writing_search_queries.html?tocpath=Searching%20Your%20Log%20Data%7C____1) pour plus de détails sur la syntaxe de recherche.
 
 ![Access Graylog](images/access_graylog_3.png){.thumbnail}
 
@@ -118,13 +118,13 @@ Les logs générés sont :
 | :-: | :-: | :-: |
 |account|String|Compte OVHcloud concerné par l'action|
 |authDetails_userDetails_type|ACCOUNT, PROVIDER ou USER|Indiquez si l'utilisateur est un compte racine (ACCOUNT), un utilisateur local (USER) ou un utilisateur issu d'un SSO (PROVIDER)|
-|authDetails_userDetails_user|Chaîne|Nom de l'utilisateur|
+|authDetails_userDetails_user|String|Nom de l'utilisateur|
 |client_ip|String|IP de l'utilisateur qui a effectué l'action|
 |client_ip_geolocation|String|Géolocalisation de l'utilisateur qui a effectué l'action|
 |client_ip_city_name|String|Nom de la ville de l'utilisateur qui a effectué l'action (si disponible)|
-|client_ip_country_code|Chaîne|Code pays de l'utilisateur qui a effectué l'action|
+|client_ip_country_code|String|Code pays de l'utilisateur qui a effectué l'action|
 |loginSuccessDetails_mfaType|String|Indiquez le type d'utilisation de l'authentification multifacteur : BACKUP_COD, MAIL, NONE, SMS, TOTP, U2F, UNKNOWN|
-|loginSuccessDetails_userAgent|Chaîne|Agent utilisateur de l'utilisateur|
+|loginSuccessDetails_userAgent|String|Agent utilisateur de l'utilisateur|
 |source|String|iam.ovhcloud|
 |type|String|LOGIN_SUCCESS|
 
@@ -138,10 +138,10 @@ Les logs générés sont :
 |client_ip|String|IP de l'utilisateur qui a effectué l'action|
 |client_ip_geolocation|String|Géolocalisation de l'utilisateur qui a effectué l'action|
 |client_ip_city_name|String|Nom de la ville de l'utilisateur qui a effectué l'action (si disponible)|
-|client_ip_country_code|Chaîne|Code pays de l'utilisateur qui a effectué l'action|
+|client_ip_country_code|String|Code pays de l'utilisateur qui a effectué l'action|
 |source|String|iam.ovhcloud|
 |type|String|ACCOUNT_PASSWORD_CHANGED, USER_PASSWORD_CHANGED|
-|userPasswordChangedDetails|Chaîne|Connexion de l'utilisateur affecté par la modification du mot de passe|
+|userPasswordChangedDetails|String|Connexion de l'utilisateur affecté par la modification du mot de passe|
 
 #### Activity logs
 
@@ -155,16 +155,16 @@ Pour chaque action effectuée par les utilisateurs via l'API ou l'espace client,
 |client_ip|String|IP de l'utilisateur qui a effectué l'action|
 |client_ip_geolocation|String|Géolocalisation de l'utilisateur qui a effectué l'action|
 |client_ip_city_name|String|Nom de la ville de l'utilisateur qui a effectué l'action (si disponible)|
-|client_ip_country_code|Chaîne|Code pays de l'utilisateur qui a effectué l'action|
+|client_ip_country_code|String|Code pays de l'utilisateur qui a effectué l'action|
 |identities_array|Array of String|Liste des identités de l'utilisateur qui a effectué l'action (URN utilisateur et URN groupes utilisateur)|
 |method|GET, POST, PUT ou DELETE|Method of the API|
 |path|String|Appel d'API concerné par l'action|
-|request_id|Chaîne|ID unique de la demande|
+|request_id|String|ID unique de la demande|
 |service_name|String|Services OVHcloud concernés par l'action|
 |source|manager ou api|Si l'action a été effectuée via le Panneau de configuration (manager) ou l'API (api)|
 |status_int|Number|Code HTTP du résultat de la demande|
 |url|String|URL appelée sur l'action|
-|user_agent|Chaîne|Agent utilisateur de l'utilisateur qui a effectué l'action|
+|user_agent|String|Agent utilisateur de l'utilisateur qui a effectué l'action|
 |username|String|Nom d'utilisateur de l'utilisateur qui a effectué l'action|
 
 #### Access Policies logs
@@ -179,8 +179,8 @@ Pour chaque action évaluée par l’IAM d’OVHcloud, une entrée est généré
 |identities_array|Array of String|Liste des identités de l'utilisateur qui a effectué l'action (URN utilisateur et URN groupes utilisateur)|
 |requested_actions_array|Array of String|Liste des actions demandées par l'utilisateur|
 |resource|String|URN de la ressource OVHcloud concernée par l'action|
-|authorized_actions_array|Tableau de chaînes|Liste des actions autorisées après l'évaluation de la stratégie|
-|authorized_actions_array|Tableau de chaînes|Liste des actions non autorisées après l'évaluation de la stratégie|
+|authorized_actions_array|Array of String|Liste des actions autorisées après l'évaluation de la stratégie|
+|authorized_actions_array|Array of String|Liste des actions non autorisées après l'évaluation de la stratégie|
 
 ### Gérer les abonnements
 
@@ -213,9 +213,10 @@ Les trois routes API Logs Data Platform suivantes vous permettent respectivement
 > @api {DELETE} /dbaas/logs/{serviceName}/output/graylog/stream/{streamId}/subscription/{subscriptionId}
 >
 
-
-
-
 ## Aller plus loin
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
+
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
