@@ -6,9 +6,9 @@ updated: 2023-11-13
 
 ## Objectif
 
-Un serveur privé virtuel (VPS) est un serveur dédié virtualisé. Contrairement aux offres d’hébergement web d’OVHcloud qui sont gérées au niveau technique par OVHcloud, la configuration et la maintenance d’un système VPS relèvent de votre responsabilité en tant qu’administrateur de serveur.
+Un serveur privé virtuel (VPS) est un serveur dédié virtualisé. Contrairement aux offres d’hébergement web OVHcloud qui sont gérées par OVHcloud, la configuration et la maintenance d’un système VPS relèvent de votre responsabilité en tant qu’administrateur système.
 
-**Ce guide vous apporte toutes les informations nécessaires aux premiers pas sur un VPS.**
+**Découvrez les informations nécessaires pour vos premiers pas sur un VPS.**
 
 <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/0JZ8Qe4otgQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
@@ -21,9 +21,9 @@ Un serveur privé virtuel (VPS) est un serveur dédié virtualisé. Contrairemen
 
 Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), rendez-vous dans la section `Bare Metal Cloud`{.action} et sélectionnez votre serveur sous la partie `Serveur privés virtuels`{.action}.
 
-### Control Panel interface
+### Tableau de bord
 
-Ce tableau de bord (onglet `Accueil`{.action}) contient des informations importantes sur votre service et vous permet d'effectuer des opérations essentielles.
+L'onglet `Accueil`{.action} contient des informations importantes sur votre service et vous permet d'effectuer des opérations essentielles.
 
 #### Votre VPS <a name="yourvps"></a>
 
@@ -31,13 +31,13 @@ Cette section affiche des informations de base sur ce VPS et l'état du service.
 
 ##### **Nom**
 
-Si vous cliquez sur `...`{.action} puis sélectionnez `Changer le nom`{.action}, vous pouvez entrer un nom distinct pour ce VPS. Cette fonctionnalité est utile pour faciliter la navigation dans l’espace client lorsque vous gérez plusieurs services VPS, mais elle n’a aucun impact dans le cas contraire. Le nom du service interne reste au format *vps-XXXXXXX.vps.ovh.net*.
+Si vous cliquez sur `...`{.action} puis sélectionnez `Changer le nom`{.action}, vous pouvez saisir un nom distinct pour ce VPS. Cette fonctionnalité est utile pour faciliter la navigation dans l’espace client lorsque vous gérez plusieurs services VPS. Le nom du service interne reste au format *vps-XXXXXXX.vps.ovh.net*.
 
 ##### **Boot**
 
-Le mode de démarrage affiché ici est soit le mode « normal », dans lequel le système charge le système d'exploitation installé (*LOCAL*), soit le **mode rescue** fourni par OVHcloud à des fins de dépannage. Utilisez le bouton `...`{.action} pour [redémarrer le VPS](#reboot-current-range) ou démarrez-le en mode rescue.
+Le mode de démarrage affiché ici est soit en mode « normal », dans lequel le système charge le système d'exploitation installé (*LOCAL*), soit en **mode rescue** fourni par OVHcloud an cas de dépannage. Utilisez le bouton `...`{.action} pour [redémarrer le VPS](#reboot-current-range) ou démarrez-le en mode rescue.
 
-Vous pouvez trouver plus d'informations dans notre [guide du mode rescue](/pages/bare_metal_cloud/virtual_private_servers/rescue).
+Vous pouvez trouver plus d'informations dans notre guide sur le [mode rescue](/pages/bare_metal_cloud/virtual_private_servers/rescue).
 
 ##### **OS / Distribution**
 
@@ -64,7 +64,7 @@ Cet élément indique la référence commerciale identifiant le modèle de VPS c
 
 ##### **vCores** / **Mémoire** / **Stockage**
 
-Les ressources actuelles de votre VPS sont affichées ici et peuvent être mises à jour séparément en cliquant sur le bouton correspondant. À noter que les mises à niveau sont limitées par le modèle de VPS choisi et peuvent uniquement être disponibles en passant à un [gamme supérieure] (https://www.ovhcloud.com/fr/vps).
+Les ressources actuelles de votre VPS sont affichées ici et peuvent être mises à jour séparément en cliquant sur le bouton correspondant. À noter que les mises à niveau sont limitées par le modèle de VPS choisi et peuvent uniquement être disponibles en passant à une [gamme supérieure] (https://www.ovhcloud.com/fr/vps).
 
 #### IP
 
@@ -84,7 +84,7 @@ Cette fonctionnalité est utile pour héberger des services DNS. Notre guide [Co
 
 Ces options se réfèrent à des services VPS supplémentaires qui peuvent être commandés dans l'espace client.
 
-- L'option `Snapshot` vous permet de créer un snapshot manuel comme point de restauration singulier.
+- L'option `Snapshot` vous permet de créer un snapshot manuel comme point de restauration unique.
 - L'option `Sauvegarde automatisée` vous permet de conserver plusieurs snapshots de votre VPS (hors disques additionnels).
 - L'option `Disques additionnels` permet de rattacher de l'espace de stockage à votre VPS, par exemple pour stocker des données de sauvegarde.
 
@@ -94,9 +94,10 @@ Vous trouverez toutes les informations sur les solutions de sauvegarde disponibl
 
 Ces sections présentent les informations les plus importantes concernant la facturation de votre service. Retrouvez toutes les informations sur ce sujet dans la [documentation correspondante](/products/account-and-service-management-billing-payment-and-services).
 
-### Fonctions VPS disponibles dans l’onglet « Accueil » 
+### Fonctions VPS disponibles dans l’onglet « Accueil »
 
 > [!warning]
+>
 > OVHcloud met à votre disposition des services dont la configuration et la gestion relèvent de votre responsabilité. Il est donc de votre responsabilité de vous assurer de leur bon fonctionnement.
 >
 > Ce guide a pour but de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de contacter un [prestataire de services spécialisé](https://partner.ovhcloud.com/fr/directory/) ou de contacter [notre communauté](https://community.ovh.com/) si vous rencontrez des difficultés ou des doutes concernant l'administration, l'utilisation ou la mise en œuvre de services sur un serveur.
@@ -108,10 +109,9 @@ Les réinstallations peuvent être effectuées depuis votre espace client. Cliqu
 
 ![VPSnewreinstallation](images/2023panel_01.png){.thumbnail}
 
-Dans la fenêtre qui apparaît, choisissez un système d'exploitation dans la liste déroulante. Les options proposées représentent [des images compatibles avec un VPS OVHcloud](/pages/public_cloud/compute/image-life-cycle) et sont immédiatement fonctionnelles après l'installation.
+Dans la fenêtre qui apparaît, choisissez un système d'exploitation dans la liste déroulante. Les options proposées sont [des images compatibles avec un VPS OVHcloud](/pages/public_cloud/compute/image-life-cycle) et sont immédiatement fonctionnelles après l'installation.
 
 Vous pouvez également sélectionner une **clé SSH** à installer sur le système, si vous en avez stocké une précédemment dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Pour tout savoir sur ce sujet, consultez notre guide [Créer et utiliser des clés SSH](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated).
-
 
 > [!primary]
 >
@@ -135,7 +135,6 @@ sudo reboot
 Cependant, vous pouvez effectuer un « redémarrage matériel » à tout moment dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Depuis l'onglet `Accueil`{.action} , cliquez sur `...`{.action} à côté de `Boot` dans la section **Votre VPS**. Sélectionnez `Redémarrer mon VPS`{.action} et cliquez sur `Valider`{.action} dans la fenêtre qui s'affiche.
 
 ![Reboot](images/reboot-vps01.png){.thumbnail}
-
 
 ### Connexion à votre VPS (OS GNU/Linux)
 
@@ -185,7 +184,7 @@ Veuillez noter que si vous avez sélectionné une **distribution avec applicatio
 #### Activation des connexions root
 
 > [!warning]
-> 
+>
 > La connexion avec l'utilisateur « root » est désactivée par défaut par mesure de sécurité. Si vous souhaitez autoriser ces connexions, reportez-vous aux instructions de [ce guide](/pages/bare_metal_cloud/virtual_private_servers/root_password#enable-root-login).
 >
 
@@ -225,7 +224,7 @@ Veuillez noter que si vous avez sélectionné une **distribution avec applicatio
 
 ### Attacher un nom de domaine
 
-La mise à disposition de votre VPS sur le web passe généralement par l’attribution d’un nom de domaine à celui-ci via DNS. Si vous gérez votre nom de domaine chez OVHcloud, vous pouvez consulter notre guide [Éditer une zone DNS OVHcloud](/pages/web/domains/dns_zone_edit) pour obtenir des instructions.
+Le passage de votre VPS sur le web passe généralement par l’attribution d’un nom de domaine et sa configuration DNS. Si vous gérez votre nom de domaine chez OVHcloud, vous pouvez consulter notre guide [Éditer une zone DNS OVHcloud](/pages/web/domains/dns_zone_edit) pour obtenir des instructions.
 
 ### Sécuriser un nom de domaine avec un certificat SSL
 
