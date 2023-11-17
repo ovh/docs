@@ -128,7 +128,9 @@ Consulta la nostra offerta di database [Web Cloud Databasess](https://www.ovh.it
 
 Consigliamo questa offerta per database voluminosi.
 
-Segui le nostre guide per spostare il contenuto del tuo database precedente verso la nuova:
+È possibile duplicare il contenuto del database OVHcloud direttamente verso un altro database grazie a una funzionalità disponibile nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Per farlo, consulta la nostra guida "[Duplicare il contenuto di un database in un altro](/pages/web_cloud/web_hosting/copy_database)".
+
+In caso di migrazione verso un database esterno alle offerte [Start SQL](https://www.ovhcloud.com/it/web-hosting/options/start-sql/) e [Web Cloud Databases](https://www.ovhcloud.com/it/web-cloud/databases/), è possibile spostare manualmente il contenuto del vecchio database verso un nuovo database utilizzando le nostre guide:
 
 - [Esporta il tuo database esistente](/pages/web_cloud/web_hosting/sql_database_export)
 - [Iniziare a utilizzare l'offerta Web Cloud Databasess](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)
@@ -194,6 +196,8 @@ DROP TABLE `table_1`
 > In questo esempio, il comando elimina la tavola **table_1** e tutte le righe che contiene.
 
 ## Spingiti oltre <a name="go-further"></a>
+
+[Duplicare il contenuto di un database in un altro](/pages/web_cloud/web_hosting/copy_database)
 
 Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
 
