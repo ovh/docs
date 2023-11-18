@@ -32,15 +32,32 @@ If you are using an OVHcloud-provided Linux OS template to install your server, 
 
 For example, if we have assigned to your server the IPv6 range: `2607:5300:xxxx:xxxx::/64` you may use as main IPv6 of your server the IPv6: `2607:5300:xxxx:xxxx::1/64`.
 
-### Default Gateway (excluding High Grade and Scale Servers)
+Please take note of the following terminology that will be used in code examples and instructions of the guide sections below:
 
-The default gateway for your IPv6 block (IPv6_GATEWAY) is usually xxxx.xxxx.xxxx.xxFF:FF:FF:FF:FF. Please note that the leading "0's" can be removed in an IPv6 to avoid errors when determining the gateway.                                   
+|Term|Description|Example|
+|---|---|---|
+|YOUR_IPV6|An IPv6 address from the IPv6 block assigned to your server|2607:5300:xxxx:xxxx::1|
+|IPv6_PREFIX|The prefix (or *netmask*) of your IPv6 block, usually 64|2607:5300:xxxx:xxxx::/64|
+|IPv6_GATEWAY|The gateway of your IPv6 block|2607:5300:xxxx:ff:ff:ff:ff:ff|
 
-For example:
+### Default Gateway
 
-- The IPv6 range of the server is `2607:5300:60:62ac::/64` or `2607:5300:60:62ac:0000:0000:0000:0000/64`. The IPv6_GATEWAY will therefore be `2607:5300:60:62FF:FF:FF:FF:FF`.
-- The IPv6 range of the server is `2001:41D0:1:46e::/64` or `2001:41D0:0001:046e:0000:0000:0000:0000/64`. The IPv6_GATEWAY will therefore be `2001:41D0:1:4FF:FF:FF:FF:FF`.                                 
-The safe way to retrieve the networking information for your server is to [use the OVHcloud API](/pages/manage_and_operate/api/first-steps).
+The first step is to identify the IPv6 gateway assigned to your server. There are two ways of doing this:
+
+  - [retrieving the network information via the OVHcloud Control Panel](#viacontrolpanel)
+  - [retrieving the network information via the OVHcloud API](#viaapi)
+
+#### Via the OVHcloud Control Panel <a name="viacontrolpanel"></a>
+
+Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), go to the `Bare Metal Cloud`{.action} section and select your server from `Dedicated servers`{.action}.
+
+The IPv6 gateway assigned to your server will appear in the `Network` section of the `General Information`{.action} tab. Once you have copied it, continue with applying the IPv6 configuration.
+
+![configureipv6](images/ipv6_information.png){.thumbnail}
+
+#### Via the OVHcloud API <a name="viaapi"></a>
+
+Another way to retrieve the networking information for your server is to [use the OVHcloud API](/pages/manage_and_operate/api/first-steps).
 
 Execute the following API call, indicating the internal server name (example: `ns3956771.ip-169-254-10.eu`):
 
@@ -53,12 +70,6 @@ Execute the following API call, indicating the internal server name (example: `n
 >
 > Before modifying a configuration file, always create a backup of the original.
 >
-
-### Default Gateway (for High Grade and Scale Servers)
-
-For these ranges, the default gateway for your IPv6 block (IPv6_GATEWAY) is `fe80:0000:0000:0000:0000:0000:0000:0001`. Please note that the leading "0's" can be removed in an IPv6 to avoid errors.
-
-In this case, the default IPv6 gateway can be written as: `fe80::1`.
 
 ### Debian and Debian-based operating systems (excluding Debian 12)
 
@@ -77,9 +88,19 @@ In this case, the default IPv6 gateway can be written as: `fe80::1`.
 
 Find more information in [this guide](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server#logging-on-to-your-server).
 
-#### Step 2: Open your server's network configuration file
+#### Step 2: Create a backup
 
-Your server's network configuration file is either located in `/etc/network/interfaces` or `/etc/network/interfaces.d`. Use the command line to locate the file and open it for editing. Also consider creating a backup first.
+Your server's network configuration file is either located in `/etc/network/interfaces` or `/etc/network/interfaces.d`.
+
+```sh
+cp /etc/network/interfaces/50-cloud-init /etc/network/interfaces/50-cloud-init.bak
+```
+
+OR
+
+```sh
+cp /etc/network/interfaces.d/50-cloud-init /etc/network/interfaces.d/50-cloud-init.bak
+```
 
 #### Step 3: Amend the network configuration file
 
@@ -88,7 +109,7 @@ Amend the file so that it looks like the example below. In this example, the net
 ```console
 iface eth0 inet6 static 
     address YOUR_IPv6 
-    netmask 128
+    netmask 64
 
 post-up /sbin/ip -f inet6 route add IPv6_GATEWAY dev eth0 
 post-up /sbin/ip -f inet6 route add default via IPv6_GATEWAY 
@@ -96,11 +117,15 @@ pre-down /sbin/ip -f inet6 route del IPv6_GATEWAY dev eth0
 pre-down /sbin/ip -f inet6 route del default via IPv6_GATEWAY
 ```
 
-Additional IPv6 addresses can be added by `up /sbin/ifconfig eth0 inet6 add YOUR_2nd_IPv6/64` lines in the file.
+Additional IPv6 addresses can be added using this `up /sbin/ifconfig eth0 inet6 add YOUR_2nd_IPv6/64` line in the file.
 
 #### Step 4: Save the file and apply the changes
 
-Save your changes to the file and then restart the network or reboot your server to apply the changes.
+Save your changes to the file and then restart the network.
+
+```sh
+sudo /etc/init.d/networking restart
+```
 
 #### Step 5: Test the IPv6 connectivity
 
@@ -122,12 +147,9 @@ ping6 -c 4 2001:4860:4860::8888
 
 If you are not able to ping this IPv6 address, check your configuration and try again. Also ensure that the machine you are testing from is connected with IPv6. If it still does not work, please test your configuration in [Rescue mode](/pages/bare_metal_cloud/dedicated_servers/rescue_mode).
 
-### Fedora 26 and above
+### Fedora 37 and above
 
-> [!warning]
->
-> This example has been made with CentOS 7.0. Results may vary when using other Redhat derivatives.
->
+Fedora now uses keyfiles. NetworkManager previously stored network profiles in ifcfg format in this directory: `/etc/sysconfig/network-scripts/`. However, the ifcfg format is now deprecated. By default, NetworkManager no longer creates new profiles in this format. The configuration file is now found in `/etc/NetworkManager/system-connections/`.
 
 #### Step 1: Use SSH to connect to your server
 
@@ -135,26 +157,39 @@ Find more information in [this guide](/pages/bare_metal_cloud/dedicated_servers/
 
 #### Step 2: Open your server's network configuration file
 
-Your server's network configuration file is located in `/etc/sysconfig/network-scripts/ifcfg-eth0`. Use the command line to locate this file and open it for editing.
+Your server's network configuration file is located in `/etc/NetworkManager/system-connections/`. Use the command line to locate this file and open it for editing.
 
 #### Step 3: Amend the network configuration file
 
-Amend the file so that it looks like the example below. In this example, the network interface is called eth0. The interface on your server may differ. Also, we have omitted the IPv4 configuration to avoid confusion, but the IPv6 configuration is made in the same configuration file.
+Amend the file so that it looks like the example below. Replace the generic elements (i.e. YOUR_IPV6, PREFIX and IPV6_GATEWAY) with your specific values. Also, we have omitted the IPv4 configuration to avoid confusion, but the IPv6 configuration is made in the same configuration file.
 
-```console
-IPV6INIT=yes
-IPV6_AUTOCONF=no
-IPV6_DEFROUTE=yes
-IPV6_FAILURE_FATAL=no
-IPV6ADDR=YOUR_IPv6/64
-IPV6ADDR_SECONDARIES=YOUR_2nd_IPv6/64 YOUR_3rd_IPv6/64
-IPV6_DEFAULTGW=IPv6_GATEWAY
+```bash
+[ipv6]
+method=auto
+may-fail=true
+address1=YOUR_IPV6/PREFIX
+gateway=IPv6_GATEWAY
 ```
-If you need more IPv6 addresses on the machine, add them in the `IPV6ADDR_SECONDARIES` line, separated by whitespace.
+
+If you need to configure more IPv6 addresses, your configuration should look like this:
+
+```bash
+[ipv6]
+method=auto
+may-fail=true
+address1=YOUR_IPV6/PREFIX
+address2=YOUR_2nd_IPV6/PREFIX
+address1=YOUR_3rd_IPV6/PREFIX
+gateway=IPv6_GATEWAY
+```
 
 #### Step 4: Save the file and apply the changes
 
 Save your changes to the file and then restart the network or reboot your server to apply the changes.
+
+```sh
+sudo systemctl restart NetworkManager
+```
 
 #### Step 5: Test the IPv6 connectivity
 
@@ -237,7 +272,7 @@ The best approach is to create a separate configuration file for setting up IPv6
 In our example, our file is named "51-cloud-init-ipv6.yaml":
 
 ```bash
-nano /etc/netplan/51-cloud-init-ipv6.yaml
+sudo nano /etc/netplan/51-cloud-init-ipv6.yaml
 ```
 
 #### Step 3: Amend the network configuration file
@@ -275,18 +310,18 @@ network:
 You can test your configuration using this command:
 
 ```bash
-netplan try
+sudo netplan try
 ```
 
 If it is correct, apply it using the following command:
 
 ```bash
-netplan apply
+sudo netplan apply
 ```
 
 #### Step 5: Test the IPv6 connectivity
 
-You can test the IPv6 connectivity by running the commands shown below:
+You can test the IPv6 connectivity by running the command shown below:
 
 ```bash
 ping6 -c 4 2001:4860:4860::8888

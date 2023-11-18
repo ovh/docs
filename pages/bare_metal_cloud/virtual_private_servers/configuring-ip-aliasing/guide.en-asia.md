@@ -79,7 +79,7 @@ Open the network configuration file for editing with the following command:
 ```bash
 sudo nano /etc/network/interfaces.d/50-cloud-init
 ```
-Then add the following lines:
+Then add the following lines, replacing `NETWORK_INTERFACE` with your interface name and `ID` with the first alias:
 
 ```bash
 auto NETWORK_INTERFACE:ID
@@ -197,7 +197,7 @@ Repeat this procedure for each Additional IP address.
 
 #### Assign an Additional IP temporarily
 
-It is possible to asign an Additional IP temporarily, however, note that the configuration will be lost when the server is rebooted. This process also allows you to label the IP with a virtual interface.
+It is possible to assign an Additional IP temporarily, however, the configuration will be lost when the server is rebooted. This setup also allows you to label the IP with a virtual interface.
 
 Simply replace `ADDITIONAL_IP`, `NETWORK_INTERFACE` and `NETWORK_INTERFACE:ID` with your own values.
 
@@ -256,7 +256,7 @@ ip a
 Do not modify the existing lines in the configuration file, add your Additional IP to the config file as follows, replacing `ADDITIONAL_IP/32` with your own.
 
 ```sh
-editor /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection
+sudo nano /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection
 ```
 
 ```sh
@@ -278,7 +278,7 @@ type=ethernet
 org.freedesktop.NetworkManager.origin=cloud-init
 
 [ethernet]
-mac-address=MA:CA:DD:RE:SS:XX
+mac-address=MAC_ADDRESS
 
 [ipv4]
 method=auto
@@ -292,7 +292,7 @@ address2=ADDITIONAL_IP2/32
 You now need to restart your interface:
 
 ```sh
-systemctl restart NetworkManager
+sudo systemctl restart NetworkManager
 ```
 
 ### cPanel (CentOS 7) / AlmaLinux (8 & 9), Rocky Linux (8 & 9) / Red Hat derivatives

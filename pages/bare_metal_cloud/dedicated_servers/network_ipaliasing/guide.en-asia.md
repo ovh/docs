@@ -24,7 +24,7 @@ IP aliasing is a special network configuration for your OVHcloud dedicated serve
 ## Requirements
 
 - A [dedicated server](https://www.ovhcloud.com/asia/bare-metal/) in your OVHcloud account
-- An [Additional IP address](https://www.ovhcloud.com/asia/bare-metal/ip/) or an Additional IP block (RIPE)
+- An [Additional IP address](https://www.ovhcloud.com/asia/bare-metal/ip/) or an Additional IP block (RIPE or ARIN)
 - Administrative access (root) via SSH or GUI to your server
 - Basic networking and administration knowledge
 
@@ -73,7 +73,7 @@ You can now modify the config file:
 editor /etc/network/interfaces.d/50-cloud-init
 ```
 
-You then need to add a secondary interface:
+You then need to add a virtual interface or an ethernet alias:
 
 ```bash
 auto eth0:0
@@ -82,7 +82,7 @@ address ADDITIONAL_IP
 netmask 255.255.255.255
 ```
 
-To ensure that the secondary interface is enabled or disabled whenever the `eth0` interface is enabled or disabled, you need to add the following line to the eth0 configuration:
+To ensure that the virtual interface is enabled or disabled whenever the `eth0` interface is enabled or disabled, you need to add the following line to the `eth0` configuration:
 
 ```bash
 post-up /sbin/ifconfig eth0:0 ADDITIONAL_IP netmask 255.255.255.255 broadcast ADDITIONAL_IP
@@ -147,7 +147,7 @@ cp -r /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection /etc/N
 
 #### Step 2: Edit the config file
 
-To obtain the name of your network interface so you can edit the proper network file, you can run one of the following command: 
+To obtain the name of your network interface in order to edit the appropriate network file, you can run one of the following commands:
 
 ```sh
 ip a
@@ -159,7 +159,7 @@ or
 nmcli connection show
 ```
 
-Do not modify the existing lines in the configuration file, add your Additional IP to the config file as follows, replacing `ADDITIONAL_IP/32`.
+Do not modify the existing lines in the configuration file, add your Additional IP to the config file as follows, replacing `ADDITIONAL_IP/32` wih your own values:
 
 ```sh
 editor /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection
@@ -205,7 +205,7 @@ systemctl restart NetworkManager
 
 The configuration file is called "50-cloud-init.yaml" and is located in `/etc/netplan`. 
 
-The best practice approach is to create separate configuration files for Additional IPs and IPv6 addresses. This way, you can easily revert the changes in case of an error.
+The best practice approach is to create a separate configuration file to set up Additional IP addresses. This way, you can easily revert the changes in case of an error.
 
 #### Step 1: Determine the interface
 
@@ -217,7 +217,7 @@ Note the name of the interface (the one on which your server's main IP address i
 
 #### Step 2: Create and edit the configuration file
 
-Next, create a configuration file with a .yaml extension to configure your Additional IP(s). As an example, our file is named "51-cloud-init.yaml".
+Next, create a configuration file with a `.yaml` extension. As an example, our file is named "51-cloud-init.yaml".
 
 ```sh
 editor /etc/netplan/51-cloud-init.yaml
@@ -262,7 +262,7 @@ netplan try
 
 #### Step 3: Apply the change
 
-Next, run the following commands to apply the configuration:
+Next, run the following command to apply the configuration:
 
 ```sh
 netplan apply
@@ -272,7 +272,7 @@ netplan apply
 
 The main configuration file is located in `/etc/sysconfig/network-scripts/`. In this example it is called "ifcfg-eth0". Before making changes, verify the actual file name in this folder. 
 
-For each additional IP to be configured, we create a configuration file named "ifcfg-NETWORK_INTERFACE:ID" (replacing NETWORK_INTERFACE with the physical interface and ID with the virtual interface number).
+For each Additional IP to be configured, we create a configuration file named "ifcfg-NETWORK_INTERFACE:ID" (replacing NETWORK_INTERFACE with the physical interface and ID with the virtual interface number).
 
 For the virtual interface number, we simply add a consecutive number to the interface name, starting with a value of 0 for the first alias. For example, for network a interface named "eth0" the first alias is "eth0:0", the second alias is "eth0:1", etc...
 
@@ -284,9 +284,9 @@ ifconfig
 
 Note the name of the interface (the one on which your server's main IP address is configured).
 
-#### Step 2: Create the config file
+#### Step 2: Create the configuration file
 
-First, create the configuration file 
+First, create the configuration file. Replace `NETWORK_INTERFACE:ID` with your own values.
 
 ```sh
 nano /etc/sysconfig/network-scripts/ifcfg-NETWORK_INTERFACE:ID
@@ -324,8 +324,6 @@ ifup eth0:0
 ```
 
 #### For AlmaLinux and Rocky Linux
-
-You need to restart your interface:
 
 ```sh
 systemctl restart NetworkManager

@@ -80,7 +80,7 @@ Open the network configuration file for editing with the following command:
 sudo nano /etc/network/interfaces.d/50-cloud-init
 ```
 
-Then add the following lines:
+Then add the following lines, replacing `NETWORK_INTERFACE` with your interface name and `ID` with the first alias:
 
 ```bash
 auto NETWORK_INTERFACE:ID
@@ -108,7 +108,7 @@ sudo systemctl restart networking
 
 ### Ubuntu 20.04 and following, Debian 12
 
-The configuration file for your Additional IP addresses is located in `/etc/netplan/`. Netplan does not support virtual interfaces or ethernet aliases (for example ens3:0, ens3:1), so all Additional IPs are configured on a single network interface.
+The network configuration files are located in the `/etc/netplan/` directory. Netplan does not support virtual interfaces or ethernet aliases (for example ens3:0, ens3:1), so all Additional IPs are configured on a single network interface.
 
 The best approach is to create a separate configuration file for configuring the Additional IPs in the directory `/etc/netplan/`. This way, you can easily revert the changes in case of an error.
 

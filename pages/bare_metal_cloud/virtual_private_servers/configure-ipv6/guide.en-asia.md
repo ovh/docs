@@ -128,7 +128,7 @@ Moreover, keep in mind that the exact file names may vary.
 The best practice approach is to create a configuration file in the directory `/etc/network/interfaces.d/`:
 
 ```bash
-nano /etc/network/interfaces.d/51-cloud-init-ipv6
+sudo nano /etc/network/interfaces.d/51-cloud-init-ipv6
 ```
 
 This allows you to separate the IPv6 configuration and easily revert the changes in case of an error.
@@ -150,11 +150,11 @@ pre-down /sbin/ip -6 route del IPV6_GATEWAY dev eth0
 Then restart your network service with one of the following commands:
 
 ```bash
-service networking restart
+sudo service networking restart
 ```
 
 ```bash
-systemctl restart networking
+sudo systemctl restart networking
 ```
 
 Alternatively, you can add the configuration above to one of the following files (with *sudo* privileges), depending on the generation of the operating system installed on the server:
@@ -162,7 +162,7 @@ Alternatively, you can add the configuration above to one of the following files
 - the `/etc/network/interfaces` file
 - the `/etc/network/interfaces.d/50-cloud-init.cfg` file
 
-We recommend that you back up up the relevant configuration file. For example, use the following command:
+We recommend that you back up the relevant configuration file. For example, use the following command:
 
 ```bash
 cp /etc/network/interfaces /etc/network/interfaces.back
@@ -184,7 +184,7 @@ The best approach is to create a separate configuration file for setting up IPv6
 In our example, our file is named "51-cloud-init-ipv6.yaml":
 
 ```bash
-nano /etc/netplan/51-cloud-init-ipv6.yaml
+sudo nano /etc/netplan/51-cloud-init-ipv6.yaml
 ```
 
 Then edit the `51-cloud-init-ipv6.yaml` file, adding the IPv6 configuration of your server. Replace the generic elements (i.e. *YOUR_IPV6*, *IPV6_PREFIX* and *IPV6_GATEWAY*) as well as the network interface (if your server is not using **eth0**) with your specific values.
@@ -212,13 +212,13 @@ network:
 You can test your configuration using this command:
 
 ```bash
-netplan try
+sudo netplan try
 ```
 
 If it is correct, apply it using the following command:
 
 ```bash
-netplan apply
+sudo netplan apply
 ```
 
 #### Persistent application on Red Hat and its derivatives (CentOS, ClearOS, etc.) <a name="persistentredhat"></a>
