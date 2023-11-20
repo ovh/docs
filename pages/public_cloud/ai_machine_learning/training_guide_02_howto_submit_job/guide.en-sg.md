@@ -112,7 +112,7 @@ In the final step you get an overview of the **job** you configured before submi
 
 ![submit summary](images/13_submit_summary.png){.thumbnail}
 
-The **AI Training** service is mainly supposed to be used through the **`ovhai` CLI**. The OVHcloud Control Panel only offers a subset of the features and is meant to help you get started before using the CLI.
+The **AI Training** service is mainly supposed to be used through the **`ovhai` CLI**. The OVHcloud Control Panel only offers a subset of the features and is meant to help you get started before using the CLI. Discover how to [install the OVHcloud AI CLI](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli).
 
 Finally click `Submit`{.action} to submit your **job** to the cluster.
 
