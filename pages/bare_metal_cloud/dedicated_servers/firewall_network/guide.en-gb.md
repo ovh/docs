@@ -61,9 +61,9 @@ You will then be asked to confirm.
 > The `Create Firewall`{.action} button will only be available for IPs that have never configured a firewall. If it is not the first time you are configuring your firewall, you can skip this step. 
 >
 
-Then click `Edge Network Firewall configuration`{.action} to start configuring it.
-
-![Enabling the configuration](images/activationconfig.png){.thumbnail}
+| ![Enabling the configuration](images/activationconfig.png) | 
+|:--:| 
+| Then click `Edge Network Firewall configuration`{.action} to start configuring it. |
 
 On this page you can choose to **Enable** or **Disable** the firewall using the switch button. 
 
@@ -144,6 +144,15 @@ Designed to absorb a large volume of malicious traffic, this infrastructure guar
 In short, OVHcloud's global attack filtering capability plays a crucial role in the security of customer data and services, providing reliable protection against modern cyber attacks.
 
 
+#### **Rapid detection and mitigation of DDoS attacks**
+
+OVHcloud has put in place an advanced system to detect and counter DDoS attacks in a matter of seconds, essential to minimising their impact. This system reacts automatically, effectively distinguishing between legitimate and malicious traffic, without requiring manual intervention or increasing workload.
+
+Even in the event of an attack, quality of service is maintained, enabling OVHcloud customers to continue their operations with minimal disruption. This rapid and effective response is a pillar of security at OVHcloud, ensuring that customer data and services are protected and accessible in the face of cyber attacks.
+
+
+#### **Anti-DDoS mitigation modes**
+
 Our Anti-DDoS Infrastructure (VAC) includes three operation modes: automatic, permanent or forced. The mitigation process is OVHcloud's automatic scrubbing center. This is the place where our advanced technology is taking a deep look into packets and malicious traffic (DDoS or other known vulnerabilities) is removed while allowing legitimate traffic to pass through.
 
 - **Automatic mitigation**: By default, all OVHcloud IPs are under automatic mitigation. Automatic mitigation will be enabled only if the traffic is detected as "unusual" compared to the normal traffic usually received by the server. We **recommend** using this mode as best automations are applied during malicious traffic mitigation.
@@ -153,7 +162,17 @@ All traffic permanently gets through the mitigation system before reaching the s
 
 Please note that enabling this mode is **not** increasing level of protection compared to automatic mode.
 
-To enable it, click on the `Bare Metal Cloud`{.action} menu and open `IP`{.action}. Next, click on the `...`{.action} button to the right of the relevant IPv4 and select `Mitigation: permanent mode`{.action}.
+To enable it follow these steps: 
+
+| ![bare-metal-cloud-tab](images/bare-metal-cloud-tab.png) | 
+|:--:| 
+| Click on the `Bare Metal Cloud`{.action} menu |
+
+| ![ip-tab](images/ip-tab.png) | 
+|:--:| 
+| Go to `IP`{.action} section|
+
+ Next, click on the `...`{.action} button to the right of the relevant IPv4 and select `Mitigation: permanent mode`{.action}.
 
 - **Forced mitigation**: This mode is automatically enabled once an attack is detected on the server. Once enabled on our Anti-DDoS infrastructure, it cannot be disabled. In order to protect our infrastructure, it will be enabled throughout the attack until it is completely mitigated.
 
