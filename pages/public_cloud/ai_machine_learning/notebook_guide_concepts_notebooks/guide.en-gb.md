@@ -32,7 +32,7 @@ They include a managed code editor and the Machine Learning framework pre-packag
 
 ## Notebook lifecycle
 
-During its lifetime the notebook will transit between the following states:
+During its lifetime, the notebook will transit between the following states:
 
 > [!primary]
 >
