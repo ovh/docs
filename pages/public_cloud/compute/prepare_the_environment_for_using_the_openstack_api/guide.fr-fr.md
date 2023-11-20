@@ -23,7 +23,7 @@ Grâce à l'API OpenStack, vous pouvez automatiser cette gestion en générant d
 
 ## En pratique
 
-To configure the Public Cloud Load Balancer you will need to install the Python Octavia client:
+Pour configurer le Load Balancer Public Cloud , vous devez installer le client Python Octavia :
 
 ```console
 pip3 install python-octaviaclient
