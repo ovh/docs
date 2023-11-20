@@ -36,7 +36,7 @@ Contrairement à la politique précédente, où un bloc ARIN ne pouvait être ut
 
 Pour que le bloc soit considéré comme valide, les blocs importés doivent être de type suivants :
 
-| ARIN (object «Network type ») | RIPE (object « status ») |
+| ARIN (object « Network type ») | RIPE (object « status ») |
 | :--- | :--- |
 | &bull; Direct Allocation <br>&bull; Direct Assignment <br>&bull; Reallocated <br>&bull; Reassigned  |  &bull; ALLOCATED PA <br>&bull; LIR-PARTITIONED PA  <br>&bull; SUB-ALLOCATED PA  <br>&bull; ASSIGNED PA  <br>&bull; ASSIGNED PI  <br>&bull; LEGACY   |
 | **Pour plus d’informations :** <br>&bull; [« Using WhoIs - Network »](https://www.arin.net/resources/registry/whois/#network) <br>&bull; [« Reporting Reassignments »](https://www.arin.net/resources/registry/reassignments/) | **Pour plus d'informations :** <br>[« Description of the INETNUM Object »](https://apps.db.ripe.net/docs/04.RPSL-Object-Types/02-Descriptions-of-Primary-Objects.html#description-of-the-inetnum-object) |
