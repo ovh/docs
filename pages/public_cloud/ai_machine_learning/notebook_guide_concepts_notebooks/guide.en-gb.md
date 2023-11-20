@@ -46,7 +46,7 @@ During its lifetime, the notebook will transit between the following states:
 - `FAILED` the notebook ended in error, e.g. the process in the notebook finished with a non 0 exit code
 - `ERROR` the notebook ended due to a backend error, you may reach our support
 - `DELETING` the notebook is being removed
-- `DELETE` the notebook and its [workspace](/pages/public_cloud/ai_machine_learning/notebook_guide_workspace) are is fully deleted
+- `DELETE` the notebook and its [workspace](/pages/public_cloud/ai_machine_learning/notebook_guide_workspace) are fully deleted
 
 ![image](images/notebooks_concept.svg){.thumbnail}
 
