@@ -1,7 +1,7 @@
 ---
 title: 'Konfiguracja konta e-mail w interfejsie online programu pocztowego Gmail'
 excerpt: 'Dowiedz się, jak skonfigurować konto e-mail MX Plan w interfejsie online programu pocztowego Gmail'
-updated: 2021-01-08
+updated: 2023-11-20
 ---
 
 ## Wprowadzenie
@@ -21,7 +21,7 @@ Konta e-mail usługi MX Plan mogą być skonfigurowane w jednym z kompatybilnych
 
 - Posiadanie konta e-mail MX Plan (zawartego w usłudze MX Plan lub w usłudze [hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/){.external})
 - Dane do logowania do konta e-mail OVHcloud, które chcesz skonfigurować
-- Dane do konta Gmail, w którym chcesz skonfigurować konto e-mail OVHcloud
+- Dane do konta Gmail (osobiste lub zawodowe), w którym chcesz skonfigurować konto e-mail OVHcloud
 
 > [!primary]
 >
