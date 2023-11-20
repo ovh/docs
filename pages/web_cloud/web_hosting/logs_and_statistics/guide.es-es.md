@@ -1,7 +1,7 @@
 ---
-title: 'Web hosting: Consultar las estadísticas y logs de un sitio web'
-excerpt: Acceso a las estadísticas de su sitio
-updated: 2023-08-04
+title: "Web hosting: Consultar las estadísticas y logs de un sitio web"
+excerpt: "Acceso a las estadísticas de su sitio"
+updated: 2023-11-20
 ---
 
 > [!primary]
@@ -106,5 +106,9 @@ Desde el menú desplegable situado en la parte superior izquierda podrá ver dis
 - Tiempo de respuesta SQL: tiempo de respuesta de las peticiones enviadas a las bases de datos de su alojamiento.
 
 ## Más información
+
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
+
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es-es/support-levels/).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
