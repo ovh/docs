@@ -1,7 +1,7 @@
 ---
-title: 'Consulter les statistiques et les logs de mon site hébergé sur une offre mutualisée'
-excerpt: 'Découvrez comment consulter les statistiques et logs de votre site internet'
-updated: 2023-08-04
+title: "Consulter les statistiques et les logs de mon site hébergé sur une offre mutualisée"
+excerpt: "Découvrez comment consulter les statistiques et logs de votre site internet"
+updated: 2023-11-20
 ---
 
 ## Objectif
@@ -102,5 +102,9 @@ Il est possible d'afficher différent types de graphiques, depuis le menu dérou
 - Temps de réponse SQL : temps de réponse des requêtes émises vers les bases de données de votre hébergement.
 
 ## Aller plus loin
+
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
+
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
