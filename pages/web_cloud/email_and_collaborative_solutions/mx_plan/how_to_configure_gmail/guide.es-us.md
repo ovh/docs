@@ -21,7 +21,7 @@ Es posible configurar sus cuentas MX Plan en el cliente de correo que usted util
 
 - Tener una cuenta MX Plan (incluida en un MX Plan o en un [plan de hosting de OVHcloud](https://www.ovhcloud.com/es/web-hosting/){.external}).
 - Disponer del nombre de usuario y la contraseña de la dirección de correo de OVHcloud que quiera configurar.
-- Disponer de las claves de la cuenta Gmail en la que quiera configurar la dirección de correo de OVHcloud.
+- Disponer de las claves de la cuenta Gmail (Personal o Profesional) en la que quiera configurar la dirección de correo de OVHcloud.
 
 > [!primary]
 >
