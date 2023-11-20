@@ -1,7 +1,7 @@
 ---
 title: 'Configuring IPv6 on dedicated servers'
 excerpt: 'Find out how to configure IPv6 addresses on our infrastructure'
-updated: 2023-11-14
+updated: 2023-11-17
 ---
 
 ## Objective
@@ -38,7 +38,7 @@ Please take note of the following terminology that will be used in code examples
 |---|---|---|
 |YOUR_IPV6|An IPv6 address from the IPv6 block assigned to your server|2607:5300:xxxx:xxxx::1|
 |IPv6_PREFIX|The prefix (or *netmask*) of your IPv6 block, usually 64|2607:5300:xxxx:xxxx::/64|
-|IPv6_GATEWAY|The gateway of your IPv6 block|2607:5300:xxxx:ff:ff:ff:ff:ff|
+|IPv6_GATEWAY|The gateway of your IPv6 block|2607:5300:xxxx:ff:ff:ff:ff:ff or fe80::1|
 
 ### Default Gateway
 
@@ -90,13 +90,13 @@ Find more information in [this guide](/pages/bare_metal_cloud/dedicated_servers/
 
 #### Step 2: Create a backup
 
-Your server's network configuration file is either located in `/etc/network/interfaces` or `/etc/network/interfaces.d`.
+Your server's network configuration file is either located in `/etc/network/interfaces` or `/etc/network/interfaces.d`. Before proceeding, create a backup of your file using one of the following commands:
 
 ```sh
 cp /etc/network/interfaces/50-cloud-init /etc/network/interfaces/50-cloud-init.bak
 ```
 
-OR
+Or
 
 ```sh
 cp /etc/network/interfaces.d/50-cloud-init /etc/network/interfaces.d/50-cloud-init.bak
@@ -117,11 +117,11 @@ pre-down /sbin/ip -f inet6 route del IPv6_GATEWAY dev eth0
 pre-down /sbin/ip -f inet6 route del default via IPv6_GATEWAY
 ```
 
-Additional IPv6 addresses can be added using this `up /sbin/ifconfig eth0 inet6 add YOUR_2nd_IPv6/64` line in the file.
+Additional IPv6 addresses can be added using the `up /sbin/ifconfig eth0 inet6 add YOUR_2nd_IPv6/64` lines in the file.
 
 #### Step 4: Save the file and apply the changes
 
-Save your changes to the file and then restart the network.
+Save your changes to the file and then restart the network or reboot your server to apply the changes.
 
 ```sh
 sudo /etc/init.d/networking restart
@@ -147,7 +147,7 @@ ping6 -c 4 2001:4860:4860::8888
 
 If you are not able to ping this IPv6 address, check your configuration and try again. Also ensure that the machine you are testing from is connected with IPv6. If it still does not work, please test your configuration in [Rescue mode](/pages/bare_metal_cloud/dedicated_servers/rescue_mode).
 
-### Fedora 37 and above
+### Fedora 37 and later
 
 Fedora now uses keyfiles. NetworkManager previously stored network profiles in ifcfg format in this directory: `/etc/sysconfig/network-scripts/`. However, the ifcfg format is now deprecated. By default, NetworkManager no longer creates new profiles in this format. The configuration file is now found in `/etc/NetworkManager/system-connections/`.
 
@@ -155,9 +155,18 @@ Fedora now uses keyfiles. NetworkManager previously stored network profiles in i
 
 Find more information in [this guide](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server#logging-on-to-your-server).
 
-#### Step 2: Open your server's network configuration file
+#### Step 2: Create a backup
 
-Your server's network configuration file is located in `/etc/NetworkManager/system-connections/`. Use the command line to locate this file and open it for editing.
+> [!primary]
+> 
+> Note that the name of the network file in our example may differ from your own. Please adjust to your appropriate name.
+>
+
+First, make a copy of the config file, so that you can revert at any time:
+
+```sh
+cp -r /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection /etc/NetworkManager/system-connections/cloud-init-eno1.nmconnection.bak
+```
 
 #### Step 3: Amend the network configuration file
 
@@ -179,7 +188,7 @@ method=auto
 may-fail=true
 address1=YOUR_IPV6/PREFIX
 address2=YOUR_2nd_IPV6/PREFIX
-address1=YOUR_3rd_IPV6/PREFIX
+address3=YOUR_3rd_IPV6/PREFIX
 gateway=IPv6_GATEWAY
 ```
 
@@ -279,7 +288,7 @@ sudo nano /etc/netplan/51-cloud-init-ipv6.yaml
 
 Using a text editor, amend the '51-cloud-init-ipv6.yaml' file by adding the following lines to the file as shown in the example below.
 
-Replace the generic elements (i.e. MAC_ADDRESS, YOUR_IPV6, IPV6_PREFIX and IPV6_GATEWAY) as well as the network interface (if your server is not using eno3) with your specific values.
+Replace the generic elements (i.e. YOUR_IPV6, IPV6_PREFIX and IPV6_GATEWAY) as well as the network interface (if your server is not using eno3) with your specific values.
 
 The configuration file should look like the example below:
 
@@ -288,17 +297,14 @@ network:
     version: 2
     ethernets:
         eno3:
-            dhcp4: true
+            dhcp6: no
             match:
-                macaddress: MAC_ADDRESS
-            set-name: eno3
+              name: eno3
             addresses:
               - YOUR_IPV6/IPv6_PREFIX
             routes:
-                - to: ::/0
-                  via: IPv6_GATEWAY
-                - to: IPv6_GATEWAY
-                  scope: link
+              - to: ::/0
+                via: IPv6_GATEWAY
 ```
 
 > [!warning]
