@@ -17,7 +17,7 @@ Each AI Notebook is linked to a **Public Cloud** project and specifies the follo
 
 > [!warning]
 >
-> An **AI Notebook** runs continuously until manually interrupted by the user, unless it exceeds **7 days of running**. It will then be automatically stopped. You can choose to automatically restart it using the `auto-restart` option (set this parameter to `True`).The notebook will then restart as is.
+> An **AI Notebook** runs continuously until manually interrupted by the user, unless it exceeds **7 days of running**. It will then be automatically stopped. You can choose to automatically restart it using the `auto-restart` option (set this parameter to `True`). The notebook will then restart as is.
 >
 
 - [Data](/pages/public_cloud/ai_machine_learning/gi_02_concepts_data) can be attached to a notebook to serve either/both as input for your notebook (e.g. code) or output (e.g. model weights).
