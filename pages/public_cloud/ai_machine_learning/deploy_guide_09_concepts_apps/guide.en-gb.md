@@ -17,7 +17,7 @@ Each AI Deploy app is linked to a **Public Cloud** project and specifies an amou
 > An app will run indefinitely until manual interruption.
 >
 
-- [Data](/pages/public_cloud/ai_machine_learning/gi_02_concepts_data) can be attached to a app to serve either/both as input (e.g. model weights).
+- [Data](/pages/public_cloud/ai_machine_learning/gi_02_concepts_data) can be attached to an app to serve as input (e.g. model weights).
 - If you do not customize your resource request, the default requested is 1 GPU (Tesla V100S). Memory is not customizable.
 - [Scaling](/pages/public_cloud/ai_machine_learning/deploy_guide_04_scaling_strategies) for applications depends on the chosen configuration. It can be **static** or **automatic**, and is based on a trigger threshold according to the metric chosen by the user.
 - [Billing](/pages/public_cloud/ai_machine_learning/deploy_guide_06_billing_concept) for **apps** is minute-based and applies during the `SCALING` and `RUNNING` states of the application. Each commenced minute is billed completely.
