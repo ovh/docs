@@ -17,7 +17,7 @@ Pour découvrir Logs Data Platform avant de poursuivre ce guide, référez-vous 
 
 ## Glossaire
 
-** Logs Data Platform** : Plateforme de gestion de logs entièrement gérée et sécurisée proposée par OVHcloud. Retrouvez plus d'informations sur la [Logs Data Platform service page](https://www.ovhcloud.com/fr-ca/logs-data-platform/).
+**Logs Data Platform** : Plateforme de gestion de logs entièrement gérée et sécurisée proposée par OVHcloud. Retrouvez plus d'informations sur la [Logs Data Platform service page](https://www.ovhcloud.com/fr-ca/logs-data-platform/).
 
 **Flux de données** : partition logique de logs que vous créez dans un compte LDP et que vous utiliserez lors de l'ingestion, la visualisation ou l'interrogation de vos logs. Plusieurs sources peuvent être stockées dans le même flux de données, et il s’agit de l’unité de définition d’un pipeline de logs (politique de rétention, archivage, streaming live, etc.), de droits d’accès et de politiques d’alertes.
 
@@ -39,7 +39,7 @@ Le compte OVHcloud propose 3 niveaux de logs :
 
 Vous pouvez activer la redirection des logs des comptes OVHcloud via API. Vous devrez cibler un flux de l’un de vos comptes LDP. Les logs seront transférés vers ce flux. L'activation du transfert créera un abonnement pour cet ID de flux.
 
-Notez que l'activation du transfert est gratuite, mais vous serez facturé pour l'utilisation de votre service Logs Data Platform selon le tarif standard. Pour la tarification du LDP, consultez la [Logs Data Platform product page] (https://www.ovhcloud.com/fr-ca/logs-data-platform/).
+Notez que l'activation du transfert est gratuite, mais vous serez facturé pour l'utilisation de votre service Logs Data Platform selon le tarif standard. Pour la tarification du LDP, consultez la [Logs Data Platform product page](https://www.ovhcloud.com/fr-ca/logs-data-platform/).
 
 Pour activer la redirection, utilisez les API suivantes :
 
@@ -58,7 +58,7 @@ POST /me/logs/audit/forward
 }
 ```
 
-L'API nécessite un « streamId », qui correspond au flux de données cible de votre compte LDP vers lequel vos journaux de compte OVHcloud seront transférés. Vous obtiendrez en réponse un `operationid` afin de pouvoir l'utiliser pour récupérer le `subscriptionid`. Ceci à des fins de gestion ultérieure à l'aide du point de terminaison de l'opération de lecture de Logs Data Platform (https://ca.api.ovh.com/console-preview/?section=%2Fdbaas%2Flogs&branch=v1#get-/dbaas/logs/-serviceName-/operation).
+L'API nécessite un `streamId`, qui correspond au flux de données cible de votre compte LDP vers lequel vos journaux de compte OVHcloud seront transférés. Vous obtiendrez en réponse un `operationid` afin de pouvoir l'utiliser pour récupérer le `subscriptionid`. Ceci à des fins de gestion ultérieure à l'aide du point de terminaison de l'[opération de lecture de Logs Data Platform](https://ca.api.ovh.com/console-preview/?section=%2Fdbaas%2Flogs&branch=v1#get-/dbaas/logs/-serviceName-/operation).
 
 Retrouvez votre `streamId` dans l'espace client Logs Data Platform :
 
