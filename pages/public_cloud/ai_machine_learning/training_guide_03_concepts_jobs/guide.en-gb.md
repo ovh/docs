@@ -14,7 +14,7 @@ Each AI Training job is linked to a **Public Cloud** project and specifies an am
 
 > [!warning]
 >
-> A job will run indefinitely until completion or manual interruption.
+> An **AI Training** job runs continuously until manually interrupted by the user or until it is done, unless it exceeds **7 days of running**. It will then be automatically stopped. You can choose to automatically restart it using the `auto-restart` option (set this parameter to `True`). The job will then restart as is.
 >
 
 -   [Data](/pages/public_cloud/ai_machine_learning/gi_02_concepts_data) can be attached to a job to serve either/both as input for your training workload or output (e.g. model weights).
