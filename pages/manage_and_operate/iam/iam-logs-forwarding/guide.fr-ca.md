@@ -17,7 +17,7 @@ Pour découvrir Logs Data Platform avant de poursuivre ce guide, référez-vous 
 
 ## Glossaire
 
-** Logs Data Platform** : Plateforme de gestion de logs entièrement gérée et sécurisée proposée par OVHcloud. Retrouvez plus d'informations sur la [Logs Data Platform service page](https://www.ovhcloud.com/fr-ca/logs-data-platform/).
+**Logs Data Platform** : Plateforme de gestion de logs entièrement gérée et sécurisée proposée par OVHcloud. Retrouvez plus d'informations sur la [Logs Data Platform service page](https://www.ovhcloud.com/fr-ca/logs-data-platform/).
 
 **Flux de données** : partition logique de logs que vous créez dans un compte LDP et que vous utiliserez lors de l'ingestion, la visualisation ou l'interrogation de vos logs. Plusieurs sources peuvent être stockées dans le même flux de données, et il s’agit de l’unité de définition d’un pipeline de logs (politique de rétention, archivage, streaming live, etc.), de droits d’accès et de politiques d’alertes.
 
