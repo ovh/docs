@@ -21,7 +21,7 @@ Each AI Notebook is linked to a **Public Cloud** project and specifies the follo
 >
 
 - [Data](/pages/public_cloud/ai_machine_learning/gi_02_concepts_data) can be attached to a notebook to serve either/both as input for your notebook (e.g. code) or output (e.g. model weights).
-- If you do not customize your resource request, the default requested is 1 GPU. Memory is not customizable.
+- If you do not customize your resource request, the default requested is 1 GPU (Tesla V100S). Memory is not customizable.
 - [Billing](/pages/public_cloud/ai_machine_learning/notebook_guide_billing_concept) for **notebooks** is minute-based and starts from the beginning to the end of the notebook's `RUNNING` status. Each commenced minute is billed completely.
 - You can read further on notebook limitations [here](/pages/public_cloud/ai_machine_learning/notebook_guide_capabilities).
 
