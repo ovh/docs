@@ -1,7 +1,7 @@
 ---
 title: Configuring an Additional IP
 excerpt: "Find out how to add Additional IP addresses to your instance's configuration"
-updated: 2023-11-14
+updated: 2023-11-17
 ---
 
 > [!primary]
@@ -64,7 +64,7 @@ Creating this configuration file will prevent changes to your network configurat
 
 #### Step 2: Edit the network configuration file
 
-The main configuration file is located in `/etc/network/interfaces.d/`. In this example it is called "ifcfg-eth0".
+The main configuration file is located in `/etc/network/interfaces.d/`. In this example it is called "50-cloud-init".
 
 In this environment, Additional IPs are configured by creating "virtual interfaces or ethernet aliases" (example, eth0:0, eth0:1 etc...).
 
@@ -108,7 +108,7 @@ sudo systemctl restart networking
 
 ### Ubuntu 20.04 and following, Debian 12
 
-The network configuration files are located in the `/etc/netplan/` directory. Netplan does not support virtual interfaces or ethernet aliases (for example ens3:0, ens3:1), so all Additional IPs are configured on a single network interface.
+The network configuration files are located in the `/etc/netplan/` directory. Netplan does not support virtual interfaces or ethernet aliases (for example ens3:0, ens3:1). As a result, the Additional IPs are configured on a single network interface.
 
 The best approach is to create a separate configuration file for configuring the Additional IPs in the directory `/etc/netplan/`. This way, you can easily revert the changes in case of an error.
 
@@ -317,7 +317,7 @@ Open the command prompt (cmd) and enter `ipconfig`. The configuration should now
 
 ![check current network configuration](images/image8-8.png){.thumbnail}
 
-### cPanel (CentOS 7) / Red Hat derivatives
+### cPanel (CentOS 7) / AlmaLinux (8 & 9), Rocky Linux (8 & 9) / Red Hat derivatives
 
 The main configuration file is located in `/etc/sysconfig/network-scripts/`. In this example it is called "ifcfg-eth0". Before making changes, verify the actual file name in this folder.
 

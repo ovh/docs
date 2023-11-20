@@ -1,7 +1,7 @@
 ---
 title: 'Configuring IPv6 on a VPS'
 excerpt: 'Find out how to configure IPv6 on your OVHcloud VPS'
-updated: 2023-11-14
+updated: 2023-11-17
 ---
 
 ## Objective
@@ -177,7 +177,7 @@ cp /etc/network/interfaces.back /etc/network/interfaces
 
 ##### Configuration using Netplan <a name="netplan"></a>
 
-The network configuration files are located in the `/etc/netplan/` directory. By default, the main configuration file is called "50-cloud-init.yaml". 
+The network configuration files are located in the `/etc/netplan/` directory. By default, the main configuration file is called "50-cloud-init.yaml".
 
 The best approach is to create a separate configuration file for setting up IPv6 addresses in the `/etc/netplan/` directory. This way, you can easily revert the changes in case of an error.
 
