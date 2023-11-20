@@ -1,7 +1,7 @@
 ---
 title: 'Configurar una dirección de correo electrónico en la interfaz web de Gmail'
 excerpt: 'Cómo configurar una cuenta MX Plan en la interfaz web de Gmail'
-updated: 2021-01-08
+updated: 2023-11-20
 ---
 
 ## Objetivo
