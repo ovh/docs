@@ -29,7 +29,7 @@ Each AI Deploy app is linked to a **Public Cloud** project and specifies an amou
 
 ## App lifecycle
 
-During its lifetime the app will transit between the following states:
+During its lifetime, the app will transit between the following states:
 
 > [!primary]
 >
