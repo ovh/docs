@@ -1,6 +1,6 @@
 ---
-title: 'Tutorial - Criar a sua página web pessoal na OVHcloud'
-excerpt: 'Saiba como criar a primeira página num Alojamento gratuito 100M'
+title: "Tutorial - Criar a sua página web pessoal na OVHcloud"
+excerpt: "Saiba como criar a primeira página num Alojamento gratuito 100M"
 updated: 2023-07-16
 ---
 
