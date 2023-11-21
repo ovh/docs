@@ -1,6 +1,6 @@
 ---
 title: "Anwendungsbeispiele - Ihre Website ist von einem Hack betroffen"
-excerpt: "Erfahren Sie hier, wie Sie Ihre gehackte Website reparieren"
+excerpt: "Diese Anleitung erklärt, wie Sie Ihre gehackte Website reparieren"
 updated: 2022-11-15
 ---
 

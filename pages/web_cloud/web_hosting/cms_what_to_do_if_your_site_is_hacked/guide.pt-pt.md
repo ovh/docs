@@ -1,6 +1,6 @@
 ---
 title: "Casos de uso - Conselhos após a pirataria do seu website"
-excerpt: "Descubra os nossos conselhos para reparar o seu website pirateado"
+excerpt: "Saiba os nossos conselhos para reparar o seu website pirateado"
 updated: 2022-11-15
 ---
 
@@ -20,7 +20,7 @@ A pirataria pode manifestar - se de várias formas (lista não exaustiva):
 - a base de dados do seu website está subitamente preenchida;
 - recebe a partir do seu alojamento SPAM gerados por scripts infetados.
 
-**Descubra os nossos conselhos para reparar o seu website pirateado**
+**Saiba os nossos conselhos para reparar o seu website pirateado**
 
 > [!warning]
 >
@@ -223,4 +223,4 @@ Para serviços especializados (referenciamento, desenvolvimento, etc), contacte 
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
 
-Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>. 
+Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
