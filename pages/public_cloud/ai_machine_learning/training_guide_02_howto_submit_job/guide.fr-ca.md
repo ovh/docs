@@ -1,7 +1,7 @@
 ---
 title: AI Training - Premiers pas (EN)
 excerpt: "Découvrez comment lancer un job AI Training depuis l'espace client (UI)"
-updated: 2021-05-18
+updated: 2023-11-21
 ---
 
 ## Objective

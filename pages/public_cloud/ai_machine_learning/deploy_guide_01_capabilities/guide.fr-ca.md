@@ -1,7 +1,7 @@
 ---
 title: AI Deploy - Caractéristiques, capacités et limites (EN)
 excerpt: "Découvrez les principales caractéristiques, capacités et limites de AI Deploy"
-updated: 2023-04-04
+updated: 2023-11-21
 ---
 
 > [!primary]

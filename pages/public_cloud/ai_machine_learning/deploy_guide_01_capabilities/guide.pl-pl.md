@@ -1,7 +1,7 @@
 ---
 title: AI Deploy - Features, Capabilities and Limitations
 excerpt: Find out about current features, capabilities and limitations of AI Deploy
-updated: 2023-04-04
+updated: 2023-11-21
 ---
 
 > [!primary]

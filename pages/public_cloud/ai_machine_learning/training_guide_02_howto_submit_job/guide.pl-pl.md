@@ -1,7 +1,7 @@
 ---
 title: AI Training - Getting started
 excerpt: Learn how to submit an AI Training job via UI
-updated: 2021-05-18
+updated: 2023-11-21
 ---
 
 ## Objective

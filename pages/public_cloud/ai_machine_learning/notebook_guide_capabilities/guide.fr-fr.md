@@ -1,7 +1,7 @@
 ---
 title: AI Notebooks - Caractéristiques, capacités et limites (EN)
 excerpt: "Découvrez les principales caractéristiques, capacités et limites des AI Notebooks"
-updated: 2023-04-04
+updated: 2023-11-21
 ---
 
 > [!primary]
