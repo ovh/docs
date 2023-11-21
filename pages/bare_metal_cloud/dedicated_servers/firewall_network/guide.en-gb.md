@@ -168,11 +168,27 @@ To enable it follow these steps:
 |:--:| 
 | Click on the `Bare Metal Cloud`{.action} menu |
 
+| ![network-tab](images/network-tab.png) | 
+|:--:| 
+| Select `Network`{.action} section |
+
 | ![ip-tab](images/ip-tab.png) | 
 |:--:| 
-| Go to `IP`{.action} section|
+| Go to `IP`{.action} section |
 
- Next, click on the `...`{.action} button to the right of the relevant IPv4 and select `Mitigation: permanent mode`{.action}.
+| ![menu-ipv4](images/menu-ipv4.png) | 
+|:--:| 
+|  Next, click on the `...`{.action} button to the right of the relevant IPv4 |
+
+
+| ![mitigation-option](images/mitigation-option.png) | 
+|:--:| 
+|  Select `Mitigation: permanent mode`{.action} |
+
+
+| ![confirm-mitigation](images/confirm-mitigation.png) | 
+|:--:| 
+|  And `Confirm`{.action} |
 
 - **Forced mitigation**: This mode is automatically enabled once an attack is detected on the server. Once enabled on our Anti-DDoS infrastructure, it cannot be disabled. In order to protect our infrastructure, it will be enabled throughout the attack until it is completely mitigated.
 
