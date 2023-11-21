@@ -25,6 +25,7 @@ Specifically, you have to generate these credentials via the [OVHcloud token gen
 - `POST /cloud/project/*/database/*`
 - `PUT /cloud/project/*/database/*`
 - `DELETE /cloud/project/*/database/*`
+
 ## Instructions
 
 The Kubernetes database operator is stored as an Helm chart in [Docker Hub](https://hub.docker.com/r/ovhcom/public-cloud-databases-operator/tags), an OCI registry.

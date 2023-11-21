@@ -21,10 +21,10 @@ In order to generate your OVHcloud API, please follow our [First steps with the 
 
 Specifically, you have to generate these credentials via the [OVHcloud token generation page](https://ca.api.ovh.com/createToken?GET=/cloud/project/*/database/*&POST=/cloud/project/*/database/*&PUT=/cloud/project/*/database/*&DELETE=/cloud/project/*/database/*) with the following rights:
 
-- GET /cloud/project/*/database/*
-- POST /cloud/project/*/database/*
-- PUT /cloud/project/*/database/*
-- DELETE /cloud/project/*/database/*
+- `GET /cloud/project/*/database/*`
+- `POST /cloud/project/*/database/*`
+- `PUT /cloud/project/*/database/*`
+- `DELETE /cloud/project/*/database/*`
 
 ## Instructions
 
