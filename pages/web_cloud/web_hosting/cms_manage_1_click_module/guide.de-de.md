@@ -1,6 +1,6 @@
 ---
-title: 1-Klick-Module verwalten
-excerpt: Erfahren Sie hier, wie Sie Ihr 1-Klick-Modul über Ihr OVHcloud Kundencenter verwalten
+title: "1-Klick-Module verwalten"
+excerpt: "Erfahren Sie hier, wie Sie Ihr 1-Klick-Modul über Ihr OVHcloud Kundencenter verwalten"
 updated: 2022-09-05
 ---
 

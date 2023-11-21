@@ -1,6 +1,7 @@
 ---
-title: 'Lista degli indirizzi IP di cluster e hosting Web'
-updated: 2023-08-22
+title: "Lista degli indirizzi IP di cluster e hosting Web"
+excerpt: "Questa guida ti mostra comme tutti gli indirizzi IP disponibili con i nostri hosting Web"
+updated: 2023-11-21
 ---
 
 > [!primary]
@@ -14,6 +15,8 @@ In questa guida sono elencati tutti gli indirizzi IP degli hosting Web OVHcloud.
 - cluster
 - opzioni (CDN, SSL a pagamento, SSL gratuito, ecc.)
 - Paese
+
+**Questa guida ti mostra comme tutti gli indirizzi IP disponibili con i nostri hosting Web.**
 
 > [!primary]
 >

@@ -1,6 +1,6 @@
 ---
 title: "Tutorial - Instalar manualmente o Joomla!"
-excerpt: "Descubra como instalar manualmente o seu CMS Joomla!"
+excerpt: "Saiba como instalar manualmente o seu CMS Joomla!"
 updated: 2023-04-07
 ---
 
@@ -26,7 +26,7 @@ Aqui, poderá encontrar todos os elementos para instalar manualmente o CMS (Cont
 > Para instalar **manualmente um outro CMS** (WordPress, Drupal, PrestaShop), consulte o nosso manual sobre a [instalação manual de um CMS](/pages/web_cloud/web_hosting/cms_manual_installation).
 >
 
-**Descubra como instalar manualmente o seu CMS Joomla!**
+**Saiba como instalar manualmente o seu CMS Joomla!**
 
 ## Requisitos
 

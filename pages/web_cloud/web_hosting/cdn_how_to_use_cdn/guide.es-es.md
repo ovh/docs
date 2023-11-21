@@ -1,7 +1,7 @@
 ---
-title: 'Acelerar un sitio web utilizando la CDN'
-excerpt: 'Cómo acelerar la carga de un sitio web en el alojamiento utilizando el servicio CDN'
-updated: 2023-09-22
+title: "Acelerar un sitio web utilizando la CDN"
+excerpt: "Descubra cómo acelerar la carga de un sitio web en el alojamiento utilizando el servicio CDN"
+updated: 2023-11-21
 ---
 
 > [!primary]
@@ -12,7 +12,7 @@ updated: 2023-09-22
 
 Si desea mejorar la experiencia de sus usuarios acelerando la carga de su sitio web, la técnica más eficaz es activar una CDN (siglas en inglés de **Content Delivery Network** que significan red de entrega de contenidos). Esta permite guardar en caché los archivos estáticos, como imágenes, CSS y JavaScript en los servidores que se encuentran más cerca de sus clientes.
 
-**Cómo gestionar la opción CDN de su alojamiento web.**
+**Descubra cómo gestionar la opción CDN de su alojamiento web.**
 
 ## Definición
 
@@ -380,5 +380,9 @@ X-IPLB-Instance: 12345
 La ausencia de la indicación "*X-CDN*" confirma que el tráfico de su sitio web no se transmite a través de la CDN.
 
 ## Más información
+
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
+
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es-es/support-levels/).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

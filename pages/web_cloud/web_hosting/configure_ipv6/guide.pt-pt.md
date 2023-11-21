@@ -1,6 +1,6 @@
 ---
 title: "Configure um endereço IPv6 para o seu website"
-excerpt: "Descubra como tornar o seu website compatível com um endereço IPv6"
+excerpt: "Saiba como tornar o seu website compatível com um endereço IPv6"
 updated: 2023-02-10
 ---
 
@@ -20,7 +20,7 @@ Para saber mais, consulte o artigo da [Wikipédia](https://pt.wikipedia.org/wiki
 
 Os nossos alojamentos web são compatíveis com IPv6 desde 2011. Mas a ativação deste protocolo manteve-se até recentemente como uma opção facultativa de configuração. 
 
-**Descubra como verificar se o seu website é compatível com o protocolo IPv6 e como configurá-lo com um endereço IPv6.**
+**Saiba como verificar se o seu website é compatível com o protocolo IPv6 e como configurá-lo com um endereço IPv6.**
 
 ## Requisitos
 

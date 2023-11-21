@@ -1,6 +1,6 @@
 ---
-title: 'Activating the 100M free hosting plan'
-excerpt: 'Find out how to activate your 100M free hosting plan'
+title: "Activating the 100M free hosting plan"
+excerpt: "Find out how to activate your 100M free hosting plan"
 updated: 2023-11-10
 ---
 
