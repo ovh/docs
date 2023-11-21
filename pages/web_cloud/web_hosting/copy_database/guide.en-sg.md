@@ -1,14 +1,14 @@
 ---
-title: "Duplicate the contents of one database in another"
-excerpt: "Find out how to copy the content of an OVHcloud database into another OVHcloud database"
+title: "Duplicating the contents of one database to another"
+excerpt: "Find out how to duplicate the content of an OVHcloud database into another OVHcloud database"
 updated: 2023-11-22
 ---
 
 ## Objective
 
-Your database is a central part of building your dynamic website. During the life cycle of your website, for practical or technical reasons, you may copy the content of your database to another one of your databases [start SQL](https://www.ovhcloud.com/en-sg/web-hosting/options/start-sql/) or [Web Cloud Databases](https://www.ovhcloud.com/en-sg/web-cloud/databases/).
+Your database is a central part of building your dynamic website. During the life cycle of your website, for practical or technical reasons, you may copy the content of one database to a [Start SQL](https://www.ovhcloud.com/en-sg/web-hosting/options/start-sql/) or [Web Cloud Databases](https://www.ovhcloud.com/en-sg/web-cloud/databases/).
 
-**Find out how to copy the content of an OVHcloud database into another OVHcloud database.**
+**This guide explains how to duplicate the content of an OVHcloud database into another OVHcloud database.**
 
 > [!primary]
 >
@@ -17,30 +17,30 @@ Your database is a central part of building your dynamic website. During the lif
 
 ## Requirements
 
-- You must have [start SQL](https://www.ovhcloud.com/en-sg/web-hosting/options/start-sql/) and/or [Web Cloud Databases](https://www.ovhcloud.com/en-sg/web-cloud/databases/) database solutions. The two databases concerned must be created beforehand in order to use the replication tool.
-- access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg)
-- Sufficient rights to all database services concerned. You can find more information in our guide [Managing contacts for your services](/pages/account_and_service_management/account_information/managing_contacts).
+- You are using a [Start SQL](https://www.ovhcloud.com/en-sg/web-hosting/options/start-sql/) and/or [Web Cloud Databases](https://www.ovhcloud.com/en-sg/web-cloud/databases/) solution. The two databases concerned must be created beforehand in order to use the replication tool.
+- You have access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg).
+- You have sufficient rights to all database services concerned. You can find more information in our guide [Managing contacts for your services](/pages/account_and_service_management/account_information/managing_contacts).
 
 ## Instructions
 
 Before you begin, make sure that:
 
 - Your **D**ata**b**ase **M**anagement **S**ystem (MySQL, PostgreSQL, etc.) is the same for your two databases (source and destination).
-- The version of your DBMS is the same for both your databases (source and destination). Although the copy may work with different versions, it is recommended that you use the same versions.
+- The version of your DBMS is the same for both your databases (source and destination). Although the duplication may work with different versions, it is recommended that you use the same versions.
 - The contents of the source database must not exceed the size of the destination database.
 
-### Identify my source database
+### Identify your source database
 
-This feature is available for copying: 
+This feature is available for:
 
-- a database [Start SQL](https://www.ovhcloud.com/en-sg/web-hosting/options/start-sql/) (included in some of our [web hosting](https://www.ovhcloud.com/en-sg/web-hosting/) or [ordered separately](https://www.ovhcloud.com/en-sg/web-hosting/options/start-sql/));
-- a database hosted on a [Web Cloud Databases](https://www.ovhcloud.com/en-sg/web-cloud/databases/) server  (included with our [Performance hosting](https://www.ovhcloud.com/en-sg/web-hosting/performance-offer/) or [ordered separately](https://www.ovhcloud.com/en-sg/web-cloud/databases/)). 
+- A [Start SQL](https://www.ovhcloud.com/en-sg/web-hosting/options/start-sql/) database (included in some of our [web hostings](https://www.ovhcloud.com/en-sg/web-hosting/) or [ordered separately](https://www.ovhcloud.com/en-sg/web-hosting/options/start-sql/)).
+- A database hosted on a [Web Cloud Databases](https://www.ovhcloud.com/en-sg/web-cloud/databases/) server (included with our [Performance web hosting](https://www.ovhcloud.com/en-sg/web-hosting/performance-offer/) or [ordered separately](https://www.ovhcloud.com/en-sg/web-cloud/databases/)). 
 
 Depending on your situation, the path to your source database is different.
 
 #### Start SQL database
 
-In your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg), select `Web Cloud`{.action} in the menu at the top of the interface. In the left-hand column, go to the `Hosting plans`{.action} tab, then click on the web hosting plan that contains the source database whose content you want to copy.
+In your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg), select `Web Cloud`{.action} in the menu at the top of the interface. In the left-hand column, go to the `Hosting plans`{.action} tab, then click on the web hosting plan that contains the source database you want to duplicate.
 
 ![Hosting list](images/list-web-hosting.png){.thumbnail}
 
@@ -50,17 +50,17 @@ By clicking on the `Databases`{.action} tab, you will see a list of your Start S
 
 #### Web Cloud Databases
 
-In your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg), select `Web Cloud`{.action} in the menu at the top of the interface. In the left-hand column, go to the `Web Cloud Databases`{.action} tab, then select the Web Cloud Databases server where your source database whose content you want to copy is located.
+In your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg), select `Web Cloud`{.action} in the menu at the top of the interface. In the left-hand column, go to the `Web Cloud Databases`{.action} tab, then select the Web Cloud Databases server that contains the source database you want to duplicate.
 
 ![WCD Server List](images/list-wcd-server.png){.thumbnail}
 
-By clicking on the `Databases`{.action} tab, you will see a list of the databases on your Cloud Databases Web server.
+By clicking on the `Databases`{.action} tab, you will see a list of the databases on your Web Cloud Databases server.
 
 ![WCD DB List](images/list-database-wcd.png){.thumbnail}
 
 ### Copy the contents of a database
 
-In the `Databases`{.action} tab, regardless of your solution, click the `...`{.action} button to the right of the row corresponding to the database whose contents you want to copy, then select `Copy database`{.action}.
+In the `Databases`{.action} tab, regardless of your solution, click the `...`{.action} button to the right of the row of the database you want to duplicate, then select `Copy database`{.action}.
 
 ![CTA_copy_DB](images/cta-copy-database.png){.thumbnail}
 
@@ -68,28 +68,28 @@ A window will pop up to identify your destination database.
 
 ![Copy DB Interface](images/interface-copy-database.png){.thumbnail}
 
-If you do not have a destination database, and as shown in the screenshot below, click on the link to purchase a new database:
+If you do not have a destination database, click on the link to purchase a new database as shown in the screenshot below.
 
 ![WCD DB List](images/link-buy-database.png){.thumbnail}
 
-You can choose between buying a "[start SQL](https://www.ovhcloud.com/en-sg/web-hosting/options/start-sql/)" solution, or a "[Web Cloud Databases](https://www.ovhcloud.com/en-sg/web-cloud/databases/)" database server.
+You can choose between a [Start SQL](https://www.ovhcloud.com/en-sg/web-hosting/options/start-sql/) solution, or a [Web Cloud Databases](https://www.ovhcloud.com/en-sg/web-cloud/databases/) server.
 
 > [!primary]
 >
-> When you purchase your new database, it is not activated by default. Don't forget to enable it. To do this, log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg), then go to the `Web Cloud`{.action} section.
+> When you purchase your new database, it is not activated by default. To enable it, log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg) and go to the `Web Cloud`{.action} section.
 > 
-> - For a Shared SQL database: follow our guide on "[Creating a database on your Web Hosting plan](/pages/web_cloud/web_hosting/sql_create_database)";
-> - For a database that will be present on a "Web Cloud Databases" server: follow our guide "[Creating a database on a Web Cloud Databases server](/pages/web_cloud/web_cloud_databases/create-db-and-user-on-db-server)".
+> - For a Shared SQL database: Follow our guide on [Creating a database on your Web Hosting plan](/pages/web_cloud/web_hosting/sql_create_database).
+> - For a database on a Web Cloud Databases server: Follow our guide [Creating a database on a Web Cloud Databases server](/pages/web_cloud/web_cloud_databases/create-db-and-user-on-db-server).
 >
 
 If you already have a destination database, first choose its type:
 
--`Copy to database`{.action} : if you want to copy the contents of your source database to a **Start SQL** (destination) database.
--`Copy to a Web Cloud Databases`{.action} : if you want to copy the content from your source database to a **Web Cloud Databases** database (destination).
+-`Copy to database`{.action}: If you want to copy the contents of your source database to a **Start SQL** database.
+-`Copy to a Web Cloud Databases`{.action}: If you want to copy the content from your source database to a **Web Cloud Databases** database.
 
 #### Choice 1 - Copy to a Start SQL database
 
-You have just selected `Copy to database`{.action}. Two drop-down lists appear. Click the first button, then select the web hosting plan your destination Start SQL database is hosted on. Once you have selected a web hosting plan, click on the second dropdown list to choose the destination Start SQL database.
+You have selected `Copy to database`{.action}. Two drop-down lists appear. Click the first button, then select the web hosting plan of your destination Start SQL database. Once you have selected a web hosting plan, click on the second drop-down list to choose the destination Start SQL database.
 
 Click `Next`{.action}. The following confirmation message is displayed:
 
@@ -101,13 +101,13 @@ The following confirmation message is displayed:
 
 ![Database success message](images/success-copy-database.png){.thumbnail}
 
-It may take several minutes to copy the database. To check that the copy has been processed, go to the `Ongoing tasks`{.action} tab. In the table, a new row will appear for your copy with a status of "scheduled". Once the operation is complete, the line disappears.
+It may take several minutes to copy the database. To check the progress, go to the `Ongoing tasks`{.action} tab. In the table, a new row will appear for your copy with a status of "scheduled". Once the operation is complete, the line disappears.
 
 ![Ongoing tasks](images/ongoing-tasks.png){.thumbnail}
 
 #### Choice 2 - Copy to a database on a Web Cloud Databases server
 
-You have just selected `Copy to a Web Cloud Databases`{.action}. Two drop-down lists appear. Click on the first link, then select the Web Cloud Databases solution that your destination database is based on. Once you have selected the Web Cloud Databases solution, click on the second dropdown list to choose the destination database on your Web Cloud Databases server.
+You have selected `Copy to a Web Cloud Databases`{.action}. Two drop-down lists appear. Click on the first link, then select the Web Cloud Databases solution that your destination database is based on. Once you have selected the Web Cloud Databases solution, click on the second drop-down list to choose the destination database on your Web Cloud Databases server.
 
 Click `Next`{.action}. The following confirmation message is displayed:
 
@@ -115,7 +115,7 @@ Click `Next`{.action}. The following confirmation message is displayed:
 
 If you do not want to overwrite the destination database you have chosen, click `Back`{.action} to change your choice, or `Cancel`{.action} to cancel everything. Otherwise, click `Confirm`{.action} to confirm that you want to duplicate the contents of the source database to the destination database.
 
-It may take several minutes to copy the database. To check that the copy has been processed, go to the `Ongoing tasks`{.action} tab. In the table, a new row will appear for your copy with a status of "scheduled". Once the operation is complete, the line disappears.
+It may take several minutes to copy the database. To check the progress, go to the `Ongoing tasks`{.action} tab. In the table, a new row will appear for your copy with a status of "scheduled". Once the operation is complete, the line disappears.
 
 ![Ongoing tasks](images/ongoing-tasks.png){.thumbnail}
 
@@ -123,7 +123,7 @@ It may take several minutes to copy the database. To check that the copy has bee
 
 Once you have made a copy of your source database, you will need to take a final action if you want to use your new database.
 
-In the `Ongoing tasks`{.action} tab, ensure that the copy is complete (the line corresponding to your copy has disappeared).
+In the `Ongoing tasks`{.action} tab, ensure that the duplication is complete (the line corresponding to your copy has disappeared).
 
 To connect the new database to your website, edit the configuration file for your **C**ontent **M**anagement **S**ystem (**CMS**) and enter the connection information for the new database.
 
@@ -145,27 +145,27 @@ For more details, or if you are using another CMS, please refer to our guide on 
 > Copying your database is not a migration. Your source database still exists until you delete it. This way, you can still reconfigure your website with its old database.
 >
 
-### Use cases
+### Troubleshooting
 
 During the process of copying the contents of the database, you may encounter difficulties.
 
 #### No databases are displayed in the list
 
-This notification means that you only have one active database. To copy your source database, you also need an active destination database. To do this, you can:
+This means that you only have one active database. To copy your source database, you also need an active destination database. To do this, you can:
 
-- Configure a new database available on your Web Hosting plan;
-- Configure a new database on your server [Web Cloud Databases](https://www.ovhcloud.com/en-sg/web-cloud/databases/);
-- Order a "[start SQL](https://www.ovhcloud.com/en-sg/web-hosting/options/start-sql/)" solution or a database server "[Web Cloud Databases](https://www.ovhcloud.com/en-sg/web-cloud/databases/)"
+- Configure a new database available on your Web Hosting plan.
+- Configure a new database on your [Web Cloud Databases](https://www.ovhcloud.com/en-sg/web-cloud/databases/) server.
+- Order a [Start SQL](https://www.ovhcloud.com/en-sg/web-hosting/options/start-sql/) solution or a [Web Cloud Databases](https://www.ovhcloud.com/en-sg/web-cloud/databases/) database server.
 
 #### You already have an action in progress
 
-This message means that a task is already in progress on your database. Go to the `Ongoing tasks`{.action} tab, and check that you have an operation already in progress. If so, wait for it to finish before retrying the copy of your database if necessary.
+This message means that a task is already in progress on your database. Go to the `Ongoing tasks`{.action} tab to check this. If so, wait for the task to finish, then restart the duplication process of your database.
 
 #### The destination database does not contain enough space
 
-Your destination database does not contain enough space. There are two ways to do this:
+Your destination database is not of a sufficient size. There are two ways to resolve this:
 
-- Order a new database [start SQL](https://www.ovhcloud.com/en-sg/web-hosting/options/start-sql/) with more space.
+- Order a new [Start SQL](https://www.ovhcloud.com/en-sg/web-hosting/options/start-sql/) database with more space.
 - If you have a [Web Cloud Databases](https://www.ovhcloud.com/en-sg/web-cloud/databases/) server, switch to a Web Cloud Databases solution with more storage space.
 
 #### The source and destination databases are incompatible
