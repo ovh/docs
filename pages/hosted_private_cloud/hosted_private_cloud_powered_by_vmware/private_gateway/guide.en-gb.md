@@ -61,7 +61,7 @@ Start activation with:
 
 > [!api]
 >
-> @api {POST} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/privateGateway/enable
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/privateGateway/enable
 >
 
 The call creates a task that will deploy the virtual machine and make the network configuration.
@@ -86,7 +86,7 @@ Start deactivation with:
 
 > [!api]
 >
-> @api {POST} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/privateGateway/disable
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/privateGateway/disable
 >
 
 ## Go further

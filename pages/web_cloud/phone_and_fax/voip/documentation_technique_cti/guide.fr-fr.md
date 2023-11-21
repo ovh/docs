@@ -61,12 +61,12 @@ Il est possible d'associer un token à une ligne/alias (sipCirpack, mgcpCirpack,
 
 > [!api]
 >
-> @api {GET} /telephony/{billingAccount}/eventToken
+> @api {v1} /telephony GET /telephony/{billingAccount}/eventToken
 > 
 
 > [!api]
 >
-> @api {GET} /telephony/{billingAccount}/service/{serviceName}/eventToken
+> @api {v1} /telephony GET /telephony/{billingAccount}/service/{serviceName}/eventToken
 > 
 
 ## One liner CURL

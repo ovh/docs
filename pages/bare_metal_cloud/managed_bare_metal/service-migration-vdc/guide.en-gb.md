@@ -147,7 +147,7 @@ Please refer to our guide on [activating and using Veeam Managed Backup](/pages/
 
 > [!api]
 >
-> @api {GET} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/vm/{vmId}
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/vm/{vmId}
 >
 
 The “backup” section of the returning json will give information on current backup configuration.

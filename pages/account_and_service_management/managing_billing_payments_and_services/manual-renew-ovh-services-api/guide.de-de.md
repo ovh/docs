@@ -21,14 +21,14 @@ Um die [Verlängerungs-API](https://api.ovh.com/console/#/service/{serviceId}/re
 
 > [!api]
 >
-> @api {GET} /vps/{serviceName}/serviceInfos
+> @api {v1} /vps GET /vps/{serviceName}/serviceInfos
 >
 
 Sie können Ihre Dienste auch über die Dienst-API auflisten:
 
 > [!api]
 >
-> @api {GET} /service
+> @api {v1} /service GET /service
 >
 
 ### Die verschiedenen Verlängerungsstrategien auflisten
@@ -37,7 +37,7 @@ Um alle verfügbaren Verlängerungsstrategien eines Dienstes aufzulisten, verwen
 
 > [!api]
 >
-> @api {GET} /service/{serviceId}/renew
+> @api {v1} /service GET /service/{serviceId}/renew
 >
 
 Es erscheint eine `RenewDescription`-Liste mit zwei Schlüsseln:
@@ -107,7 +107,7 @@ Für mehr Informationen zum Ergebnisformat verwenden Sie bitte die `renew`-Api.
 
 > [!api]
 >
-> @api {GET} /service/{serviceId}/renew
+> @api {v1} /service GET /service/{serviceId}/renew
 >
 
  
@@ -163,7 +163,7 @@ Daraufhin kann der Bestellschein über die API `order` beglichen werden:
      
 > [!api]
 >
-> @api {POST} /me/order/{orderId}/payWithRegisteredPaymentMean
+> @api {v1} /me POST /me/order/{orderId}/payWithRegisteredPaymentMean
 >
 
 ### Beispiel: einen VPS verlängern

@@ -21,14 +21,14 @@ Para utilizar a [API de renovação](https://api.ovh.com/console/#/service/{serv
 
 > [!api]
 >
-> @api {GET} /vps/{serviceName}/serviceInfos
+> @api {v1} /vps GET /vps/{serviceName}/serviceInfos
 >
 
 Também é possível listar os seus serviços através da seguinte API:
 
 > [!api]
 >
-> @api {GET} /service
+> @api {v1} /service GET /service
 >
 
 ### Listar as diferentes estratégias de renovação
@@ -37,7 +37,7 @@ De modo a listar as diferentes estratégias de renovação disponíveis para um 
 
 > [!api]
 >
-> @api {GET} /service/{serviceId}/renew
+> @api {v1} /service GET /service/{serviceId}/renew
 >
 
 Vai aparecer uma lista de `RenewDescription` com duas chaves:
@@ -107,7 +107,7 @@ Recorra à API `renew` para obter mais informações acerca do formato de retorn
 
 > [!api]
 >
-> @api {GET} /service/{serviceId}/renew
+> @api {v1} /service GET /service/{serviceId}/renew
 >
 
  
@@ -163,7 +163,7 @@ Então já será possível pagar a nota de encomenda através da API `order`:
      
 > [!api]
 >
-> @api {POST} /me/order/{orderId}/payWithRegisteredPaymentMean
+> @api {v1} /me POST /me/order/{orderId}/payWithRegisteredPaymentMean
 >
 
 ### Exemplo: renovar um VPS

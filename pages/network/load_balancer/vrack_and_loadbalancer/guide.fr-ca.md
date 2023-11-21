@@ -25,7 +25,7 @@ Le `serviceName` dans l'API ci-dessous est celui de votre vRack, ex : `pn-1234`.
 
 > [!api]
 >
-> @api {GET} /vrack/{serviceName}/allowedServices
+> @api {v1} /vrack GET /vrack/{serviceName}/allowedServices
 >
 
 Vous trouverez vos services Load Balancer à l'index : `ipLoadbalancing`.
@@ -34,7 +34,7 @@ Vous pouvez aussi voir l'éligibilité d'un service Load Balancer particulier gr
 
 > [!api]
 >
-> @api {GET} /ipLoadbalancing/{serviceName}
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}
 >
 >
 
@@ -44,7 +44,7 @@ Pour attacher votre service Load Balancer à votre vRack, voici l'API concernée
 
 > [!api]
 >
-> @api {POST} /vrack/{serviceName}/ipLoadbalancing
+> @api {v1} /vrack POST /vrack/{serviceName}/ipLoadbalancing
 >
 
 Comme précédemment le `serviceName` ici est celui de votre vRack, ex: `pn-1234`.
@@ -55,7 +55,7 @@ Pour fonctionner, votre Load Balancer a besoin de connaître la topologie résea
 
 > [!api]
 >
-> @api {POST} /ipLoadbalancing/{serviceName}/vrack/network
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/vrack/network
 >
 
 Exemple de configuration :
@@ -73,7 +73,7 @@ Pour connaître la taille minimale de la plage à attribuer à natIp, un call AP
 
 > [!api]
 >
-> @api {GET} /ipLoadbalancing/{serviceName}/vrack/networkCreationRules
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/vrack/networkCreationRules
 >
 
 ## Configurer une ferme liée à un vRack
@@ -82,12 +82,12 @@ Vous pouvez maintenant créer votre ferme de serveurs dans le vRack. Pour ce fai
 
 > [!api]
 >
-> @api {POST} /ipLoadbalancing/{serviceName}/http/farm
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/http/farm
 >
 
 > [!api]
 >
-> @api {POST} /ipLoadbalancing/{serviceName}/tcp/farm
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/tcp/farm
 >
 
 ## Suite de la configuration

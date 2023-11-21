@@ -94,7 +94,7 @@ Em primeiro lugar, obtenha a lista dos endereços IP de cada serviço OVHcloud (
 
 > [!api]
 >
-> @api {GET} /ip
+> @api {v1} /ip GET /ip
 >
 
 **tipo**: Indique o tipo de IP (Dedicated, PCC, VPS, vRack, PCI, etc.)
@@ -115,7 +115,7 @@ A seguir, procure os endereços IP num determinado estado graças à seguinte ch
 
 > [!api]
 >
-> @api {GET} /ip/{ip}/spam
+> @api {v1} /ip GET /ip/{ip}/spam
 >
 
 **ip** : especifique o bloco de IP recuperado no passo anterior com a máscara de rede. Por exemplo, 122.122.122.121/28.<br>
@@ -131,7 +131,7 @@ Para obter informações sobre o bloqueio, aceda à seguinte chamada. Caso contr
 
 > [!api]
 >
-> @api {GET} /ip/{ip}/spam/{ipSpamming}
+> @api {v1} /ip GET /ip/{ip}/spam/{ipSpamming}
 >
 
 **ip** : especifique o bloco de IP recuperado no passo anterior com a máscara de rede.<br>
@@ -158,7 +158,7 @@ Se deseja obter as estatísticas sobre o que foi detetado, utilize a chamada api
 
 > [!api]
 >
-> @api {GET} /ip/{ip}/spam/{ipSpamming}/stats
+> @api {v1} /ip GET /ip/{ip}/spam/{ipSpamming}/stats
 >
 
 **ip** : especifique o bloco de IP recuperado no passo anterior com a máscara de rede.<br>
@@ -187,7 +187,7 @@ Para desbloquear o seu endereço IP, utilize a seguinte chamada:
 
 > [!api]
 >
-> @api {POST} /ip/{ip}/spam/{ipSpamming}/unblock
+> @api {v1} /ip POST /ip/{ip}/spam/{ipSpamming}/unblock
 >
 
 **ip** : especifique o bloco de endereços IP recuperado no passo anterior com a máscara de rede.<br>

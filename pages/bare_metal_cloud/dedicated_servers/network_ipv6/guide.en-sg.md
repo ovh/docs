@@ -45,7 +45,7 @@ Execute the following API call, indicating the internal server name (example: `n
 
 > [!api]
 >
-> @api {GET} /dedicated/server/{serviceName}/specifications/network
+> @api {v1} /dedicated/server GET /dedicated/server/{serviceName}/specifications/network
 >
 
 > [!warning]

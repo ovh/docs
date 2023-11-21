@@ -82,7 +82,7 @@ Numa primeira fase, é preferível verificar se o endereço IP pode ser migrado.
 
 > [!api]
 >
-> @api {GET} /dedicated/server/{serviceName}/ipCanBeMovedTo
+> @api {v1} /dedicated/server GET /dedicated/server/{serviceName}/ipCanBeMovedTo
 >
 
 - `serviceName`: a referência do servidor dedicado de destino
@@ -92,7 +92,7 @@ Para migrar o endereço IP, utilize a seguinte chamada:
 
 > [!api]
 >
-> @api {POST} /dedicated/server/{serviceName}/ipMove
+> @api {v1} /dedicated/server POST /dedicated/server/{serviceName}/ipMove
 >
 
 - `serviceName`: a referência do servidor dedicado de destino

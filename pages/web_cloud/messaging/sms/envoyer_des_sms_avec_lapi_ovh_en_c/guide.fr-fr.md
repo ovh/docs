@@ -30,14 +30,14 @@ Dans ce guide nous appellerons deux méthodes :
 
 > [!api]
 >
-> @api {GET} /sms
+> @api {v1} /sms GET /sms
 >
 
 - Envoyer des SMS :
 
 > [!api]
 >
-> @api {POST} /sms/{serviceName}/jobs
+> @api {v1} /sms POST /sms/{serviceName}/jobs
 >
 
 ### Création des identifiants
@@ -177,7 +177,7 @@ Pour envoyer des SMS, nous utilisons la méthode POST jobs :
 
 > [!api]
 >
-> @api {POST} /sms/{serviceName}/jobs
+> @api {v1} /sms POST /sms/{serviceName}/jobs
 >
 
 Le paramètre senderForResponse va permettre d’utiliser un numéro court, ce qui vous permet d’envoyer directement des SMS sans devoir créer un expéditeur (ex : votre nom).

@@ -81,7 +81,7 @@ Um Ihr Image zu deployen, verwenden Sie folgenden Aufruf und vervollständigen S
 
 > [!api]
 >
-> @api {POST} /dedicated/server/{serviceName}/bringYourOwnImage
+> @api {v1} /dedicated/server POST /dedicated/server/{serviceName}/bringYourOwnImage
 >
 
 #### Deployment-Optionen <a name="options"></a>
@@ -114,7 +114,7 @@ Sie können die Bereitstellung Ihres Images über den unten stehenden API Aufruf
 
 > [!api]
 >
-> @api {GET} /dedicated/server/{serviceName}/bringYourOwnImage
+> @api {v1} /dedicated/server GET /dedicated/server/{serviceName}/bringYourOwnImage
 >
 
 In diesem Beispiel ist das Deployment im Status "starting".
@@ -144,7 +144,7 @@ Sie können die Deployment-Option mit folgendem Aufruf löschen:
 
 > [!api]
 >
-> @api {DELETE} /dedicated/server/{serviceName}/bringYourOwnImage
+> @api {v1} /dedicated/server DELETE /dedicated/server/{serviceName}/bringYourOwnImage
 >
 
 Dadurch wird der Deployment-Status gelöscht und Ihr Server in den Rescue-Modus versetzt.

@@ -96,7 +96,7 @@ Jeśli posiadasz serwer VPS 2014, może wystąpić *błąd 1 06*. Przegląd API 
 >
 >> > [!api]
 >> >
->> > @api {POST} /vps/{serviceName}/openConsoleAccess
+>> > @api {v1} /vps POST /vps/{serviceName}/openConsoleAccess
 >> >
 >>
 >
@@ -130,7 +130,7 @@ W przypadku problemów z KVM, postępuj zgodnie z poleceniem API dotyczącym dos
 >
 >> > [!api]
 >> >
->> > @api {POST} /vps/{serviceName}/getConsoleUrl
+>> > @api {v1} /vps POST /vps/{serviceName}/getConsoleUrl
 >> >
 >>
 >

@@ -55,7 +55,7 @@ Questa chiamata API consente di consultare il dettaglio di una farm a partire da
 
 > [!api]
 >
-> @api {GET} /ipLoadbalancing/{serviceName}/http/farm/{farmId}
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/http/farm/{farmId}
 > 
 
 |Parametro|Significato|
@@ -79,7 +79,7 @@ Questa chiamata API consente di consultare il dettaglio di una farm a partire da
 
 > [!api]
 >
-> @api {PUT} /ipLoadbalancing/{serviceName}/http/farm/{id}
+> @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/http/farm/{id}
 > 
 
 |Parametro|Significato|
@@ -92,7 +92,7 @@ Questa chiamata API consente di consultare il dettaglio di una farm a partire da
 
 > [!api]
 >
-> @api {POST} /ipLoadbalancing/{serviceName}/refresh
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/refresh
 > 
 
 |Parametro|Significato|

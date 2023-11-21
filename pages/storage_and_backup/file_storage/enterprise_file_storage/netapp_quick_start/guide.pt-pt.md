@@ -41,7 +41,7 @@ Todos os seus serviços ativos podem ser recuperados utilizando a seguinte rota 
 
 > [!api]
 >
-> @api {GET} /storage/netapp
+> @api {v1} /storage GET /storage/netapp
 >
 
 ### Criar um novo volume
@@ -56,7 +56,7 @@ Para criar um volume, utilize a seguinte rota API:
 >
 >> > [!api]
 >> >
->> > @api {POST} /storage/netapp/{serviceName}/share
+>> > @api {v1} /storage POST /storage/netapp/{serviceName}/share
 >> >
 >>
 >
@@ -106,7 +106,7 @@ Para criar um novo ACL que lhe permitirá ligar-se ao seu volume, utilize a segu
 >
 >> > [!api]
 >> >
->> > @api {POST} /storage/netapp/{serviceName}/share/{shareId}/acl
+>> > @api {v1} /storage POST /storage/netapp/{serviceName}/share/{shareId}/acl
 >> >
 >>
 >
@@ -147,7 +147,7 @@ Verifique o estado de criação do ACL através da seguinte rota API:
 >
 >> > [!api]
 >> >
->> > @api {GET} /storage/netapp/{serviceName}/share/{shareId}/acl/{aclRuleId}
+>> > @api {v1} /storage GET /storage/netapp/{serviceName}/share/{shareId}/acl/{aclRuleId}
 >> >
 >>
 >
@@ -181,7 +181,7 @@ Uma vez ativa a ACL, recupere os caminhos de acesso ao volume através da seguin
 >
 >> > [!api]
 >> >
->> > @api {GET} /storage/netapp/{serviceName}/share/{shareId}/accessPath
+>> > @api {v1} /storage GET /storage/netapp/{serviceName}/share/{shareId}/accessPath
 >> >
 >>
 >
@@ -221,7 +221,7 @@ Pode eliminar o seu volume através da seguinte rota API:
 >
 >> > [!api]
 >> >
->> > @api {DELETE} /storage/netapp/{serviceName}/share/{shareId}
+>> > @api {v1} /storage DELETE /storage/netapp/{serviceName}/share/{shareId}
 >> >
 >>
 >

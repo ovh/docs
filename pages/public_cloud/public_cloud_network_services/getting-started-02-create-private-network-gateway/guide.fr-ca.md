@@ -128,14 +128,14 @@ Avant de poursuivre, il est recommandé de consulter ces guides :
 >>
 >> > [!api]
 >> >
->> > @api {GET} /cloud/project
+>> > @api {v1} /cloud GET /cloud/project
 >>
 >> > [!primary]
 >> > Cet appel récupère la liste des projets.
 >>
 >> > [!api]
 >> >
->> > @api {GET} /cloud/project/{serviceName}
+>> > @api {v1} /cloud GET /cloud/project/{serviceName}
 >>
 >> > [!primary]
 >> > Cet appel identifie le projet via le champ "description".
@@ -146,7 +146,7 @@ Avant de poursuivre, il est recommandé de consulter ces guides :
 >> 
 >> > [!api]
 >> >
->> > @api {POST} /cloud/project/{serviceName}/region/{regionName}/gateway
+>> > @api {v1} /cloud POST /cloud/project/{serviceName}/region/{regionName}/gateway
 >>
 >> Remplissez les champs selon le tableau suivant :
 >>
@@ -175,7 +175,7 @@ Avant de poursuivre, il est recommandé de consulter ces guides :
 >>
 >> > [!api]
 >> >
->> > @api {GET} /cloud/project/{serviceName}/region/{regionName}/gateway
+>> > @api {v1} /cloud GET /cloud/project/{serviceName}/region/{regionName}/gateway
 >> >
 >> > Renseignez les champs avec les informations précédemment obtenues :
 >> >

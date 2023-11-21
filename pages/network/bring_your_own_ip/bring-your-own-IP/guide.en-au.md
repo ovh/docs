@@ -147,7 +147,7 @@ To slice a block, use the following API call :
 
 > [!api]
 >
-> @api {POST} /ip/{ip}/bringYourOwnIp/slice
+> @api {v1} /ip POST /ip/{ip}/bringYourOwnIp/slice
 >
 
 Use the following parameters:
@@ -162,7 +162,7 @@ You can preview the resulting blocks that would be created for each block size, 
 
 > [!api]
 >
-> @api {GET} /ip/{ip}/bringYourOwnIp/slice
+> @api {v1} /ip GET /ip/{ip}/bringYourOwnIp/slice
 >
 
 Use the following parameters:
@@ -173,7 +173,7 @@ To merge back a block into a parent block, use this API call :
 
 > [!api]
 >
-> @api {POST} /ip/{ip}/bringYourOwnIp/aggregate
+> @api {v1} /ip POST /ip/{ip}/bringYourOwnIp/aggregate
 >
 
 Use the following parameters:
@@ -190,7 +190,7 @@ You can preview all the possible configurations of aggregated blocks for a given
 
 > [!api]
 >
-> @api {GET} /ip/{ip}/bringYourOwnIp/aggregate
+> @api {v1} /ip GET /ip/{ip}/bringYourOwnIp/aggregate
 >
 
 Use the following parameters:

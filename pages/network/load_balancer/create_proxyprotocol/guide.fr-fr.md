@@ -53,7 +53,7 @@ La liste des IPv4 de sortie potentiellement utilisées par votre service OVHclou
 
 > [!api]
 >
-> @api {GET} /ipLoadbalancing/{serviceName}/natIp
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/natIp
 > 
 
 ### Présentation du ProxyProtocol
@@ -109,14 +109,14 @@ Le champ d'API correspondant dans le serveur est proxyProtocolVersion.
 
 > [!api]
 >
-> @api {PUT} /ipLoadbalancing/{serviceName}/http/farm/{farmId}/server/{serverId}
+> @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/http/farm/{farmId}/server/{serverId}
 > 
 
 - Appliquer les modifications:
 
 > [!api]
 >
-> @api {POST} /ipLoadbalancing/{serviceName}/refresh
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/refresh
 > 
 
 ### Configuration du ProxyProtocol coté serveur

@@ -26,7 +26,7 @@ Open the following API endpoint in the API console:
 
 > [!api]
 >
-> @api {GET} /dedicated/server/{serviceName}/specifications/network
+> @api {v1} /dedicated/server GET /dedicated/server/{serviceName}/specifications/network
 >
 
 Enter the internal server name into the `serviceName` field, then click `Execute`{.action}.

@@ -110,14 +110,14 @@ En primer lugar, debe obtener el id. de la forma de pago:
 
 > [!api]
 >
-> @api {GET} /me/payment/method
+> @api {v1} /me GET /me/payment/method
 >
 
 A continuación, elimine la forma de pago utilizando el ID obtenido en el paso anterior:
 
 > [!api]
 >
-> @api {DELETE} /me/payment/method/{paymentMethodId}
+> @api {v1} /me DELETE /me/payment/method/{paymentMethodId}
 >
 
 > [!primary]

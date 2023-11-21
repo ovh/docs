@@ -105,7 +105,7 @@ Get your OpenStack Tenant ID and store it into the serviceName variable.
 > API
 >> > [!api]
 >> >
->> > @api {GET} /cloud/project/{serviceName}
+>> > @api {v1} /cloud GET /cloud/project/{serviceName}
 
 You should have a result like this:
 
@@ -140,9 +140,9 @@ Create the private network named `demo-pvnw` in `GRA9` and `GRA11` regions and g
 > API
 >> > [!api]
 >> >
->> > @api {POST} /cloud/project/{serviceName}/network/private
+>> > @api {v1} /cloud POST /cloud/project/{serviceName}/network/private
 >> >
->> > @api {GET} /cloud/project/{serviceName}/network/private
+>> > @api {v1} /cloud GET /cloud/project/{serviceName}/network/private
 
 You should have a result like this:
 
@@ -204,7 +204,7 @@ Then create subnets with appropriate routes, and finally get IDs (subnGRA9 & sub
 > API
 >> > [!api]
 >> > 
->> > @api {POST} /cloud/project/{serviceName}/network/private/{networkId}/subnet
+>> > @api {v1} /cloud POST /cloud/project/{serviceName}/network/private/{networkId}/subnet
 
 You should have a result like this:
 
@@ -358,11 +358,11 @@ First, get the private network IDs (pvnwGRA9Id & pvnwGRA11Id), then create the O
 > API
 >> > [!api]
 >> >
->> > @api {GET} /cloud/project/{serviceName}/network/private/{networkId}
+>> > @api {v1} /cloud GET /cloud/project/{serviceName}/network/private/{networkId}
 >> > 
->> > @api {POST} /cloud/project/{serviceName}/kube
+>> > @api {v1} /cloud POST /cloud/project/{serviceName}/kube
 >> > 
->> > @api {GET} /cloud/project/{serviceName}/kube
+>> > @api {v1} /cloud GET /cloud/project/{serviceName}/kube
 > OVHcloud Control Panel
 >> Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
 >> 
@@ -431,7 +431,7 @@ To proceed with the freshly created Kubernetes cluster, you must get the Kubecon
 > API
 >> > [!api]
 >> >
->> > @api {POST} /cloud/project/{serviceName}/kube/{kubeId}/kubeconfig
+>> > @api {v1} /cloud POST /cloud/project/{serviceName}/kube/{kubeId}/kubeconfig
 
 To use this kubeconfig file and access to your cluster, you can follow our [configuring kubectl](/pages/public_cloud/containers_orchestration/managed_kubernetes/configuring-kubectl-on-an-ovh-managed-kubernetes-cluster) tutorial, or simply add the `--kubeconfig` flag in your `kubectl` commands.
 
@@ -504,7 +504,7 @@ To delete created resources, please follow these instructions:
 > API
 >> > [!api]
 >> >
->> > @api {DELETE} /cloud/project/{serviceName}/kube/{kubeId}
+>> > @api {v1} /cloud DELETE /cloud/project/{serviceName}/kube/{kubeId}
 
 ### Routers
 
@@ -537,7 +537,7 @@ To delete an Openstack router, you must first remove the linked ports.
 > API
 >> > [!api]
 >> >
->> > @api {DELETE} /cloud/project/{serviceName}/network/private/{networkId}/subnet/{subnetId}
+>> > @api {v1} /cloud DELETE /cloud/project/{serviceName}/network/private/{networkId}/subnet/{subnetId}
 
 ### Private Network
 > [!tabs]
@@ -548,7 +548,7 @@ To delete an Openstack router, you must first remove the linked ports.
 > API
 >> > [!api]
 >> >
->> > @api {DELETE} /cloud/project/{serviceName}/network/private/{networkId}/region/{region}
+>> > @api {v1} /cloud DELETE /cloud/project/{serviceName}/network/private/{networkId}/region/{region}
 
 ## Go further
 

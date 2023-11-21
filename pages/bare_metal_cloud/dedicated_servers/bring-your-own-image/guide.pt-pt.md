@@ -81,7 +81,7 @@ Para criar e implementar a sua imagem, utilize a seguinte chamada e complete os 
 
 > [!api]
 >
-> @api {POST} /dedicated/server/{serviceName}/bringYourOwnImage
+> @api {v1} /dedicated/server POST /dedicated/server/{serviceName}/bringYourOwnImage
 >
 
 | Campo | Descrição |
@@ -109,7 +109,7 @@ Pode seguir a implementação da sua imagem através da chamada API abaixo ou at
 
 > [!api]
 >
-> @api {GET} /dedicated/server/{serviceName}/bringYourOwnImage
+> @api {v1} /dedicated/server GET /dedicated/server/{serviceName}/bringYourOwnImage
 >
 
 Neste exemplo, a implementação está em curso de arranque.
@@ -139,7 +139,7 @@ Pode optar por eliminar a sua implementação graças à seguinte chamada:
 
 > [!api]
 >
-> @api {DELETE} /dedicated/server/{serviceName}/bringYourOwnImage
+> @api {v1} /dedicated/server DELETE /dedicated/server/{serviceName}/bringYourOwnImage
 >
 
 Isto eliminará o estado da implementação e colocará o seu servidor em modo rescue.

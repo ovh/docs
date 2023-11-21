@@ -35,14 +35,14 @@ You first need to find out the name of the service you need to cancel. Use the f
 
 > [!api]
 >
-> @api {GET} /ip/service
+> @api {v1} /ip GET /ip/service
 >
 
 To cancel the service, use the following API call:
 
 > [!api]
 >
-> @api {POST} /ip/service/{serviceName}/terminate
+> @api {v1} /ip POST /ip/service/{serviceName}/terminate
 >
 
 - `serviceName` : name of the Additional IP service obtained with the previous call.

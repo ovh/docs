@@ -43,7 +43,7 @@ Depuis l'API OVHcloud :
 
 > [!api]
 >
-> @api {GET} /ipLoadbalancing
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing
 > 
 
 Pour plus d'informations sur les fonctionnalités de l'API, consultez la page « [Détails des fonctions API](/pages/network/load_balancer/use_api_details) ».
@@ -76,35 +76,35 @@ Votre ferme de serveurs devrait apparaître dans la liste, sous l'onglet `Fermes
 
 > [!api]
 >
-> @api {GET} /ipLoadbalancing/{serviceName}/tcp/farm
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/tcp/farm
 > 
 
 - Détails d'un serveur TCP spécifique :
 
 > [!api]
 >
-> @api {GET} /ipLoadbalancing/{serviceName}/tcp/farm/{farmId}
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/tcp/farm/{farmId}
 > 
 
 - Ajout d'une nouvelle ferme de serveurs TCP :
 
 > [!api]
 >
-> @api {POST} /ipLoadbalancing/{serviceName}/tcp/farm
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/tcp/farm
 > 
 
 - Modification d'une ferme de serveurs spécifique :
 
 > [!api]
 >
-> @api {PUT} /ipLoadbalancing/{serviceName}/tcp/farm/{farmId}
+> @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/tcp/farm/{farmId}
 > 
 
 - Suppression d'une ferme de serveurs spécifique :
 
 > [!api]
 >
-> @api {DELETE} /ipLoadbalancing/{serviceName}/tcp/farm/{farmId}
+> @api {v1} /ipLoadbalancing DELETE /ipLoadbalancing/{serviceName}/tcp/farm/{farmId}
 > 
 
 ### Ajouter un serveur
@@ -138,35 +138,35 @@ Votre serveur devrait apparaître dans la liste des serveurs dans l'onglet `Ferm
 
 > [!api]
 >
-> @api {GET} /ipLoadbalancing/{serviceName}/tcp/farm/{farmId}/server
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/tcp/farm/{farmId}/server
 > 
 
 - Détails d'un serveur spécifique :
 
 > [!api]
 >
-> @api {GET} /ipLoadbalancing/{serviceName}/tcp/farm/{farmId}/server/{serverId}
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/tcp/farm/{farmId}/server/{serverId}
 > 
 
 - Ajout d'un nouveau serveur :
 
 > [!api]
 >
-> @api {POST} /ipLoadbalancing/{serviceName}/tcp/farm/{farmId}/server
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/tcp/farm/{farmId}/server
 > 
 
 - Modification d'un serveur spécifique :
 
 > [!api]
 >
-> @api {PUT} /ipLoadbalancing/{serviceName}/tcp/farm/{farmId}/server
+> @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/tcp/farm/{farmId}/server
 > 
 
 - Suppression d'un serveur spécifique :
 
 > [!api]
 >
-> @api {DELETE} /ipLoadbalancing/{serviceName}/tcp/farm/{farmId}/server
+> @api {v1} /ipLoadbalancing DELETE /ipLoadbalancing/{serviceName}/tcp/farm/{farmId}/server
 > 
 
 ### Ajouter un frontend
@@ -197,35 +197,35 @@ Votre frontend devrait apparaître dans la liste, sous l'onglet `Frontends`{.act
 
 > [!api]
 >
-> @api {GET} /ipLoadbalancing/{serviceName}/tcp/frontend
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/tcp/frontend
 > 
 
 - Détails d'un frontend spécifique :
 
 > [!api]
 >
-> @api {GET} /ipLoadbalancing/{serviceName}/tcp/frontend/{frontendId}
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/tcp/frontend/{frontendId}
 > 
 
 - Ajout d'un nouveau frontend :
 
 > [!api]
 >
-> @api {POST} /ipLoadbalancing/{serviceName}/tcp/frontend
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/tcp/frontend
 > 
 
 - Modification d'un frontend spécifique :
 
 > [!api]
 >
-> @api {PUT} /ipLoadbalancing/{serviceName}/tcp/frontend/{frontendId}
+> @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/tcp/frontend/{frontendId}
 > 
 
 - Suppression d'un frontend spécifique :
 
 > [!api]
 >
-> @api {DELETE} /ipLoadbalancing/{serviceName}/tcp/frontend/{frontendId}
+> @api {v1} /ipLoadbalancing DELETE /ipLoadbalancing/{serviceName}/tcp/frontend/{frontendId}
 > 
 
 ### Appliquer les modifications
@@ -244,7 +244,7 @@ Rendez-vous sur la page principale de votre service OVHcloud Load Balancer et cl
 
 > [!api]
 >
-> @api {POST} /ipLoadbalancing/{serviceName}/refresh
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/refresh
 > 
 
 ### Configuration de postfix

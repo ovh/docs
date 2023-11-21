@@ -94,7 +94,7 @@ Pobierz listę adresów IP każdej usługi OVHcloud (Hosted Private Cloud / VPS 
 
 > [!api]
 >
-> @api {GET} /ip
+> @api {v1} /ip GET /ip
 >
 
 **type**: Wskaż rodzaj IP (Dedicated, PCC, VPS, vRack, PCI, itp.)
@@ -115,7 +115,7 @@ Następnie wyszukaj adresy IP w danym stanie, korzystając z następującego po�
 
 > [!api]
 >
-> @api {GET} /ip/{ip}/spam
+> @api {v1} /ip GET /ip/{ip}/spam
 >
 
 **ip** : określić pobrany blok IP na poprzednim etapie za pomocą maski sieciowej. Na przykład 122.122.122.121/28<br>
@@ -131,7 +131,7 @@ Możesz uzyskać informacje na temat blokady za pomocą następującego połącz
 
 > [!api]
 >
-> @api {GET} /ip/{ip}/spam/{ipSpamming}
+> @api {v1} /ip GET /ip/{ip}/spam/{ipSpamming}
 >
 
 **ip** : określić pobrany blok IP na poprzednim etapie za pomocą maski sieciowej.<br>
@@ -158,7 +158,7 @@ Jeśli chcesz uzyskać statystyki dotyczące tego, co zostało wykryte, skorzyst
 
 > [!api]
 >
-> @api {GET} /ip/{ip}/spam/{ipSpamming}/states
+> @api {v1} /ip GET /ip/{ip}/spam/{ipSpamming}/states
 >
 
 **ip** : określić pobrany blok IP na poprzednim etapie za pomocą maski sieciowej.<br>
@@ -187,7 +187,7 @@ Aby odblokować Destination IP, zadzwoń w następujący sposób:
 
 > [!api]
 >
-> @api {POST} /ip/{ip}/spam/{ipSpamming}/unblock
+> @api {v1} /ip POST /ip/{ip}/spam/{ipSpamming}/unblock
 >
 
 **ip** : podaj blok adresów IP odzyskany na poprzednim etapie za pomocą maski sieciowej.<br>

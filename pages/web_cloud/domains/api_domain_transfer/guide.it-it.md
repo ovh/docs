@@ -62,7 +62,7 @@ You can check what state your domain name is in by using the following route:
 
 > [!api]
 >
-> @api {GET} /domain/{serviceName}
+> @api {v1} /domain GET /domain/{serviceName}
 
 | Parameter     | Required | Default | Description |
 | ------------- | -------- | ------- | ----------- |
@@ -97,7 +97,7 @@ To put your domain name in an `unlocked` state, use the same route with a `PUT` 
 
 > [!api]
 >
-> @api {PUT} /domain/{serviceName}
+> @api {v1} /domain PUT /domain/{serviceName}
 
 | Parameter            | Required | Default | Description   |
 | -------------------- | -------- | ------- | ------------- |
@@ -114,7 +114,7 @@ The following route allows you to retrieve it:
 
 > [!api]
 >
-> @api {GET} /domain/{serviceName}/authInfo
+> @api {v1} /domain GET /domain/{serviceName}/authInfo
 
 | Parameter     | Required | Default | Description |
 | ------------- | -------- | ------- | ----------- |

@@ -81,7 +81,7 @@ Para crear y desplegar su imagen, utilice la siguiente llamada y complete los ca
 
 > [!api]
 >
-> @api {POST} /dedicated/server/{serviceName}/bringYourOwnImage
+> @api {v1} /dedicated/server POST /dedicated/server/{serviceName}/bringYourOwnImage
 >
 
 | Campo | Descripción |
@@ -112,7 +112,7 @@ Puede seguir el despliegue de su imagen a través de la siguiente llamada a la A
 
 > [!api]
 >
-> @api {GET} /dedicated/server/{serviceName}/bringYourOwnImage
+> @api {v1} /dedicated/server GET /dedicated/server/{serviceName}/bringYourOwnImage
 >
 
 En este ejemplo, el despliegue se está iniciando.
@@ -142,7 +142,7 @@ Puede eliminar su despliegue gracias a la siguiente llamada:
 
 > [!api]
 >
-> @api {DELETE} /dedicated/server/{serviceName}/bringYourOwnImage
+> @api {v1} /dedicated/server DELETE /dedicated/server/{serviceName}/bringYourOwnImage
 >
 
 Esto borrará el estado del despliegue y pondrá el servidor en modo de rescate.

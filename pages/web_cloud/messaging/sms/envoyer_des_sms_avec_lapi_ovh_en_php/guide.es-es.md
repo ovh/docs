@@ -107,7 +107,7 @@ Para enviar SMS, utilice la siguiente llamada a la API:
 
 > [!api]
 >
-> @api {POST} /sms/{serviceName}/jobs
+> @api {v1} /sms POST /sms/{serviceName}/jobs
 >
 
 > [!primary]

@@ -30,7 +30,7 @@ Use this call to create the cart:
 
 > [!api]
 >
-> @api {POST} /order/cart
+> @api {v1} /order POST /order/cart
 >
 
 Make sure to choose your appropriate OVHcloud API subsidiary. Take note of the cart number ("cartId") in the response; it will be required to identify this cart.
@@ -39,7 +39,7 @@ Next you will need to add a Public Cloud project as an item. Use this call with 
 
 > [!api]
 >
-> @api {GET} /order/cart/{cartId}/cloud
+> @api {v1} /order GET /order/cart/{cartId}/cloud
 >
 
 In the response you can verify the parameters pertaining to a Public Cloud project:
@@ -56,7 +56,7 @@ Now use this call to add the item to your cart:
 
 > [!api]
 >
-> @api {POST} /order/cart/{cartId}/cloud
+> @api {v1} /order POST /order/cart/{cartId}/cloud
 >
 
 The following information, retrieved in the previous steps, needs to be provided:
@@ -73,21 +73,21 @@ The response will include an "itemId" which can be used (together with the "cart
 
 > [!api]
 >
-> @api {GET} /order/cart/{cartId}/item/{itemId}
+> @api {v1} /order GET /order/cart/{cartId}/item/{itemId}
 >
 
 You can check the list of available configuration settings for this item with this call:
 
 > [!api]
 >
-> @api {GET} /order/cart/{cartId}/item/{itemId}/requiredConfiguration
+> @api {v1} /order GET /order/cart/{cartId}/item/{itemId}/requiredConfiguration
 >
 
 Use the following endpoint to name your project (`label: "description"`):
 
 > [!api]
 >
-> @api {POST} /order/cart/{cartId}/item/{itemId}/configuration
+> @api {v1} /order POST /order/cart/{cartId}/item/{itemId}/configuration
 >
 
 |Field|Value|
@@ -103,7 +103,7 @@ The responses will include a "configurationId" which can be used (together with 
 
 > [!api]
 >
-> @api {DELETE} /order/cart/{cartId}/item/{itemId}/configuration/{configurationId}
+> @api {v1} /order DELETE /order/cart/{cartId}/item/{itemId}/configuration/{configurationId}
 >
 
 ### Step 2: Checking out the cart
@@ -112,14 +112,14 @@ You can verify your cart contents using the "cartId":
 
 > [!api]
 >
-> @api {GET} /order/cart/{cartId}/checkout
+> @api {v1} /order GET /order/cart/{cartId}/checkout
 >
 
 With the following call you can create a link to your order. It is required to first tick the relevant checkbox in order to waive the right of withdrawal.
 
 > [!api]
 >
-> @api {POST} /order/cart/{cartId}/checkout
+> @api {v1} /order POST /order/cart/{cartId}/checkout
 >
 
 ## Go further

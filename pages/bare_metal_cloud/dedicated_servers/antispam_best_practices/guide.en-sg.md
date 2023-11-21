@@ -90,7 +90,7 @@ First, retrieve the list of IPs for each OVHcloud service (Dedicated Server/Host
 
 > [!api]
 >
-> @api {GET} /ip
+> @api {v1} /ip GET /ip
 >
 
 **type**: Indicate the type of IP (Dedicated, PCC, VPS, vRack, PCI, etc.)
@@ -111,7 +111,7 @@ Next, search for IPs in a particular state with the following call. If you alrea
 
 > [!api]
 >
-> @api {GET} /ip/{ip}/spam
+> @api {v1} /ip GET /ip/{ip}/spam
 >
 
 **ip**:	Specify the IP block retrieved in the previous step with the netmask. For example 122.122.122.121/28.<br>
@@ -127,7 +127,7 @@ If the IP is blocked, you can get information on the blocking with the following
 
 > [!api]
 >
-> @api {GET} /ip/{ip}/spam/{ipSpamming}
+> @api {v1} /ip GET /ip/{ip}/spam/{ipSpamming}
 >
 
 **ip**: Specify the IP block retrieved in the previous step with the netmask.<br>
@@ -154,7 +154,7 @@ If you wish to obtain the statistics on what has been detected, use the followin
 
 > [!api]
 >
-> @api {GET} /ip/{ip}/spam/{ipSpamming}/stats
+> @api {v1} /ip GET /ip/{ip}/spam/{ipSpamming}/stats
 >
 
 **ip**:	Specify the IP block retrieved in the previous step with the netmask.<br>
@@ -183,7 +183,7 @@ To unblock your IP, use the following call:
 
 > [!api]
 >
-> @api {POST} /ip/{ip}/spam/{ipSpamming}/unblock
+> @api {v1} /ip POST /ip/{ip}/spam/{ipSpamming}/unblock
 >
 
 **ip**: Specify the IP block retrieved in the previous step with the netmask.<br>

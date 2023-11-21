@@ -34,7 +34,7 @@ The **/service** API route consists of actions common to all types of services a
 
 > [!api]
 >
-> @api {POST} /service/{serviceId}/suspend
+> @api {v1} /service POST /service/{serviceId}/suspend
 >
 
 The call changes service status into suspend :
@@ -49,7 +49,7 @@ Where applicable:
 
 > [!api]
 >
-> @api {POST} /service/{serviceId}/reopen
+> @api {v1} /service POST /service/{serviceId}/reopen
 >
 
 The call will reopen the service and issue the invoice for the period between the suspension date and the reopen date.
@@ -60,7 +60,7 @@ Finally:
 
 > [!api]
 >
-> @api {POST} /service/{serviceId}/terminate
+> @api {v1} /service POST /service/{serviceId}/terminate
 >
 
 The call will delete the service and data and issue the invoice for the period between the date of suspension and the date of deletion.

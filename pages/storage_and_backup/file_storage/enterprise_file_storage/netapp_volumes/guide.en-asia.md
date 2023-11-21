@@ -45,7 +45,7 @@ All existing volumes can be retrieved using the following route:
 >
 >> > [!api]
 >> >
->> > @api {GET} /storage/netapp/{serviceName}/share
+>> > @api {v1} /storage GET /storage/netapp/{serviceName}/share
 >> >
 >>
 >
@@ -69,7 +69,7 @@ To retrieve the information about a volume, use the following route:
 >
 >> > [!api]
 >> >
->> > @api {GET} /storage/netapp/{serviceName}/share/{shareId}
+>> > @api {v1} /storage GET /storage/netapp/{serviceName}/share/{shareId}
 >> >
 >>
 >
@@ -96,7 +96,7 @@ To create a new volume, use the following route:
 >
 >> > [!api]
 >> >
->> > @api {POST} /storage/netapp/{serviceName}/share
+>> > @api {v1} /storage POST /storage/netapp/{serviceName}/share
 >> >
 >>
 >
@@ -123,7 +123,7 @@ To determine the mount path of a volume, use the following route:
 >
 >> > [!api]
 >> >
->> > @api {GET} /storage/netapp/{serviceName}/share/{shareId}/accessPath
+>> > @api {v1} /storage GET /storage/netapp/{serviceName}/share/{shareId}/accessPath
 >> >
 >>
 >
@@ -161,7 +161,7 @@ To remove a volume, use the following route:
 >
 >> > [!api]
 >> >
->> > @api {DELETE} /storage/netapp/{serviceName}/share/{shareId}
+>> > @api {v1} /storage DELETE /storage/netapp/{serviceName}/share/{shareId}
 >> >
 >>
 >

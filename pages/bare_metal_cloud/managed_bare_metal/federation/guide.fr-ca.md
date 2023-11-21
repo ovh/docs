@@ -112,7 +112,7 @@ Récupérez votre « serviceName » en utilisant l'appel API suivant :
 
 > [!api]
 >
-> @api {GET} /dedicatedCloud
+> @api {v1} /dedicatedCloud GET /dedicatedCloud
 >
 
 Effectuez ensuite la mise en place du serveur Active Directory comme source d'authentification.
@@ -121,7 +121,7 @@ Vous devrez spécifier les informations récupérées précédemment. Ne cochez 
 
 > [!api]
 >
-> @api {POST} /dedicatedCloud/{serviceName}/federation/activeDirectory
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/federation/activeDirectory
 >
 
 ![POST /dedicatedCloud/{serviceName}/federation/activeDirectory](images/federation_create.png){.thumbnail}
@@ -142,7 +142,7 @@ Récupérez votre « activeDirectoryId » en utilisant l'appel API suivant :
 
 > [!api]
 >
-> @api {GET} /dedicatedCloud/{serviceName}/federation/activeDirectory
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/federation/activeDirectory
 >
 
 Effectuez l'ajout de l'utilisateur issu de votre Active Directory.
@@ -151,7 +151,7 @@ Vous devrez spécifier le nom d'utilisateur « pre-Windows 2000 » tel qu'indiqu
 
 > [!api]
 >
-> @api {POST} /dedicatedCloud/{serviceName}/federation/activeDirectory/{activeDirectoryId}/grantActiveDirectoryUser
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/federation/activeDirectory/{activeDirectoryId}/grantActiveDirectoryUser
 
 ![POST /dedicatedCloud/{serviceName}/federation/activeDirectory/{activeDirectoryId}/grantActiveDirectoryUser](images/federation_grant_user.png){.thumbnail}
 
@@ -173,7 +173,7 @@ Récupérez votre « activeDirectoryId » en utilisant l'appel API suivant :
 
 > [!api]
 >
-> @api {GET} /dedicatedCloud/{serviceName}/federation/activeDirectory
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/federation/activeDirectory
 >
 
 Effectuez l'ajout du groupe issu de votre Active Directory.
@@ -182,7 +182,7 @@ Vous devrez spécifier le nom du groupe « pre-Windows 2000 » tel qu'indiqué d
 
 > [!api]
 >
-> @api {POST} /dedicatedCloud/{serviceName}/federation/activeDirectory/{activeDirectoryId}/grantActiveDirectoryGroup
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/federation/activeDirectory/{activeDirectoryId}/grantActiveDirectoryGroup
 
 ![POST /dedicatedCloud/{serviceName}/federation/activeDirectory/{activeDirectoryId}/grantActiveDirectoryGroup](images/federation_grant_group.png){.thumbnail}
 

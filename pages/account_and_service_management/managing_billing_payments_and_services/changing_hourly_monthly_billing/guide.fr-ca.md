@@ -58,7 +58,7 @@ Connectez-vous à l’[interface API OVHcloud](https://ca.api.ovh.com/) et utili
 
 > [!api]
 >
-> @api {POST} /cloud/project/{serviceName}/instance/{instanceId}/activeMonthlyBilling
+> @api {v1} /cloud POST /cloud/project/{serviceName}/instance/{instanceId}/activeMonthlyBilling
 >
 
 Vous trouverez plus d'informations sur l'utilisation de l'API OVHcloud sur notre guide « [Premiers pas avec les API OVHcloud](/pages/manage_and_operate/api/first-steps) ».

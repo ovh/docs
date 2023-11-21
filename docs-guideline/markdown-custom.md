@@ -172,7 +172,7 @@
 
 > [!api]
 >
-> @api {POST} /ipLoadbalancing/{serviceName}/tcp/route
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/tcp/route
 >
 ```
 
@@ -220,7 +220,7 @@ You can mix different custom syntax
 >
 >> > [!api]
 >> >
->> > @api {POST} /ipLoadbalancing/{serviceName}/tcp/route
+>> > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/tcp/route
 >> >
 >>
 >

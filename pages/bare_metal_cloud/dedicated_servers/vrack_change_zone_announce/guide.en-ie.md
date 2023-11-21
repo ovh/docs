@@ -47,14 +47,14 @@ Go to <https://api.ovh.com/console/>, then sign in with your OVHcloud customer I
 
 > [!api]
 >
-> @api {GET} /vrack#GET
+> @api {v1} /vrack GET /vrack
 > 
 
 This API allows you to retrieve the list of vRack services. If you can't identify the service concerned with these references, they can be found in the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}. To do this, go to the `Bare Metal Cloud`{.action} section, click on `Network`{.action} then “vRack”.
 
 > [!api]
 >
-> @api {POST} /vrack/{serviceName}/ip/{ip}/announceInZone#POST
+> @api {v1} /vrack POST /vrack/{serviceName}/ip/{ip}/announceInZone#POST
 > 
 
 This API makes it possible to change the announcement of an IP block. Fill in the requested fields:

@@ -49,7 +49,7 @@ Via l'API OVHcloud, utilisez l'appel suivant :
 
 > [!api]
 >
-> @api {GET} /ipLoadbalancing
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing
 > 
 
 Pour plus d'informations sur les fonctionnalités de l'API, consultez la page [Détails des fonctions API](/pages/network/load_balancer/use_api_details){.ref}
@@ -80,35 +80,35 @@ Votre ferme de serveurs devrait apparaitre dans la liste, sous l'onglet `Fermes 
 
 > [!api]
 >
-> @api {GET} /ipLoadbalancing/{serviceName}/http/farm
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/http/farm
 > 
 
 - Détails d'un serveur HTTP spécifique :
 
 > [!api]
 >
-> @api {GET} /ipLoadbalancing/{serviceName}/http/farm/{farmId}
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/http/farm/{farmId}
 > 
 
 - Ajout d'une nouvelle ferme de serveurs HTTP :
 
 > [!api]
 >
-> @api {POST} /ipLoadbalancing/{serviceName}/http/farm
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/http/farm
 > 
 
 - Modification d'une ferme de serveurs spécifique :
 
 > [!api]
 >
-> @api {PUT} /ipLoadbalancing/{serviceName}/http/farm/{farmId}
+> @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/http/farm/{farmId}
 > 
 
 - Suppression d'une ferme de serveurs spécifique :
 
 > [!api]
 >
-> @api {DELETE} /ipLoadbalancing/{serviceName}/http/farm/{farmId}
+> @api {v1} /ipLoadbalancing DELETE /ipLoadbalancing/{serviceName}/http/farm/{farmId}
 > 
 
 ### Ajouter un Serveur
@@ -135,35 +135,35 @@ Votre serveur devrait apparaître dans la liste des serveurs, dans l'onglet `Fer
 
 > [!api]
 >
-> @api {GET} /ipLoadbalancing/{serviceName}/http/farm/{farmId}/server
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/http/farm/{farmId}/server
 > 
 
 - Détails d'un serveur spécifique :
 
 > [!api]
 >
-> @api {GET} /ipLoadbalancing/{serviceName}/http/farm/{farmId}/server/{serverId}
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/http/farm/{farmId}/server/{serverId}
 > 
 
 - Ajout d'un nouveau serveur :
 
 > [!api]
 >
-> @api {POST} /ipLoadbalancing/{serviceName}/http/farm/{farmId}/server
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/http/farm/{farmId}/server
 > 
 
 - Modification d'un Serveur spécifique :
 
 > [!api]
 >
-> @api {PUT} /ipLoadbalancing/{serviceName}/http/farm/{farmId}/server
+> @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/http/farm/{farmId}/server
 > 
 
 - Suppression d'un serveur spécifique :
 
 > [!api]
 >
-> @api {DELETE} /ipLoadbalancing/{serviceName}/http/farm/{farmId}/server
+> @api {v1} /ipLoadbalancing DELETE /ipLoadbalancing/{serviceName}/http/farm/{farmId}/server
 > 
 
 ### Ajouter un frontend
@@ -192,35 +192,35 @@ Votre frontend devrait apparaître dans la liste, sous l'onglet `Frontends`{.act
 
 > [!api]
 >
-> @api {GET} /ipLoadbalancing/{serviceName}/http/frontend
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/http/frontend
 > 
 
 - Détails d'un frontend spécifique :
 
 > [!api]
 >
-> @api {GET} /ipLoadbalancing/{serviceName}/http/frontend/{frontendId}
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/http/frontend/{frontendId}
 > 
 
 - Ajout d'un nouveau frontend :
 
 > [!api]
 >
-> @api {POST} /ipLoadbalancing/{serviceName}/http/frontend
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/http/frontend
 > 
 
 - Modification d'un frontend spécifique :
 
 > [!api]
 >
-> @api {PUT} /ipLoadbalancing/{serviceName}/http/frontend/{frontendId}
+> @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/http/frontend/{frontendId}
 > 
 
 - Suppression d'un frontend spécifique :
 
 > [!api]
 >
-> @api {DELETE} /ipLoadbalancing/{serviceName}/http/frontend/{frontendId}
+> @api {v1} /ipLoadbalancing DELETE /ipLoadbalancing/{serviceName}/http/frontend/{frontendId}
 > 
 
 ### Ajouter un certificat SSL/TLS
@@ -278,35 +278,35 @@ Optionnellement, vous pouvez également activer l'option *HSTS*. Si cette option
 
 > [!api]
 >
-> @api {GET} /ipLoadbalancing/{serviceName}/ssl
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/ssl
 > 
 
 - Obtenir les détails d'un certificat SSL/TLS :
 
 > [!api]
 >
-> @api {GET} /ipLoadbalancing/{serviceName}/ssl/{id}
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/ssl/{id}
 > 
 
 - Ajout d'un nouveau certificat SSL/TLS existant :
 
 > [!api]
 >
-> @api {POST} /ipLoadbalancing/{serviceName}/ssl
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/ssl
 > 
 
 - Modification d'un certificat SSL/TLS spécifique (seul le nom affiché peut être modifié) :
 
 > [!api]
 >
-> @api {PUT} /ipLoadbalancing/{serviceName}/ssl/{id}
+> @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/ssl/{id}
 > 
 
 - Suppression d'un certificat SSL/TLS spécifique :
 
 > [!api]
 >
-> @api {DELETE} /ipLoadbalancing/{serviceName}/ssl/{id}
+> @api {v1} /ipLoadbalancing DELETE /ipLoadbalancing/{serviceName}/ssl/{id}
 > 
 
 ### Appliquer les modifications
@@ -331,7 +331,7 @@ Selectionnez ensuite la liste des zones que vous souhaitez deployer et cliquez s
 
 > [!api]
 >
-> @api {POST} /ipLoadbalancing/{serviceName}/refresh
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/refresh
 > 
 
 ### Validation

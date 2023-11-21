@@ -94,7 +94,7 @@ Per prima cosa recupera la lista degli IP di ogni servizio OVHcloud (Hosted Priv
 
 > [!api]
 >
-> @api {GET} /ip
+> @api {v1} /ip GET /ip
 >
 
 **tipo**: Indica il tipo di IP (Dedicated, PCC, VPS, vRack, PCI, ecc...)
@@ -115,7 +115,7 @@ Cerca poi gli IP in uno stato particolare grazie alla chiamata seguente. Se cono
 
 > [!api]
 >
-> @api {GET} /ip/{ip}/spam
+> @api {v1} /ip GET /ip/{ip}/spam
 >
 
 **ip** : specifica il blocco IP recuperato allo step precedente con la maschera di rete. Ad esempio 122.122.122.121/28.<br>
@@ -131,7 +131,7 @@ Puoi ottenere informazioni sul blocco con la chiamata successiva, altrimenti pas
 
 > [!api]
 >
-> @api {GET} /ip/{ip}/spam/{ipSpamming}
+> @api {v1} /ip GET /ip/{ip}/spam/{ipSpamming}
 >
 
 **ip** : specifica il blocco IP recuperato allo step precedente con la maschera di rete.<br>
@@ -158,7 +158,7 @@ Per ottenere le statistiche su ciò che è stato rilevato, utilizza questa chiam
 
 > [!api]
 >
-> @api {GET} /ip/{ip}/spam/{ipSpamming}/stats
+> @api {v1} /ip GET /ip/{ip}/spam/{ipSpamming}/stats
 >
 
 **ip** : specifica il blocco IP recuperato allo step precedente con la maschera di rete.<br>
@@ -187,7 +187,7 @@ Per sbloccare il tuo indirizzo IP, utilizza questa chiamata:
 
 > [!api]
 >
-> @api {POST} /ip/{ip}/spam/{ipSpamming}/unblock
+> @api {v1} /ip POST /ip/{ip}/spam/{ipSpamming}/unblock
 >
 
 **ip** : specifica il blocco di indirizzi IP recuperato allo step precedente con la maschera di rete.<br>

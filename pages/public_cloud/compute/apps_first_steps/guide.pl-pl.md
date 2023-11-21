@@ -36,7 +36,7 @@ Po utworzeniu instancji i wybraniu aplikacji możesz odzyskać dane do logowania
 > Połączenie
 >> > [!api]
 >> >
->> > @api {POST} /cloud/project/{serviceName}/instance/{instanceId}/applicationAccess
+>> > @api {v1} /cloud POST /cloud/project/{serviceName}/instance/{instanceId}/applicationAccess
 >> >
 >
 > Parametry

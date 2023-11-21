@@ -51,7 +51,7 @@ Utilisez l'appel API :
 
 > [!api]
 >
-> @api {POST} /xdsl/{serviceName}/requestPPPLoginMail
+> @api {v1} /xdsl POST /xdsl/{serviceName}/requestPPPLoginMail
 >
 
 Saisissez, dans le champ `serviceName`, la référence de votre accès obtenue à l'étape précédente. Cliquez alors sur `Execute`{.action}. Le message `null` confirmera la bonne prise en compte de votre demande.

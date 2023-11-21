@@ -51,7 +51,7 @@ Pour créer un token nous allons utiliser la console API (il est possible de cr�
 
 > [!api]
 >
-> @api {POST} /telephony/{billingAccount}/service/{serviceName}/eventToken
+> @api {v1} /telephony POST /telephony/{billingAccount}/service/{serviceName}/eventToken
 > 
 
 ![Connectez vous avec votre compte client.](images/img_2582.jpg){.thumbnail}
@@ -62,14 +62,14 @@ Pour récupérer votre *billingAccount* vous pouvez utiliser l'API suivante :
 
 > [!api]
 >
-> @api {POST} /telephony
+> @api {v1} /telephony POST /telephony
 > 
 
 Pour récupérer votre *serviceName* vous pouvez utiliser :
 
 > [!api]
 >
-> @api {GET} /telephony/{billingAccount}/service
+> @api {v1} /telephony GET /telephony/{billingAccount}/service
 > 
 
 Exécutez la requete *POST* et en retour vous recevez votre token pour votre ligne. Par exemple : "XXXXXXXX-XXXX-XXXX-XXXX-XXXXXXXXXXXX"

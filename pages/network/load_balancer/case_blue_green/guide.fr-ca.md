@@ -52,7 +52,7 @@ Via l'Api :
 
 > [!api]
 >
-> @api {POST} /ipLoadbalancing/{serviceName}/http/farm
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/http/farm
 > 
 
 |Paramètre|Signification|
@@ -63,17 +63,17 @@ Les appels complémentaires suivants vous permettront respectivement de lister, 
 
 > [!api]
 >
-> @api {GET} /ipLoadbalancing/{serviceName}/http/farm
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/http/farm
 > 
 
 > [!api]
 >
-> @api {PUT} /ipLoadbalancing/{serviceName}/http/farm
+> @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/http/farm
 > 
 
 > [!api]
 >
-> @api {DELETE} /ipLoadbalancing/{serviceName}/http/farm
+> @api {v1} /ipLoadbalancing DELETE /ipLoadbalancing/{serviceName}/http/farm
 > 
 
 Associer un serveur à votre ferme, il s'agit ici du serveur physique portant votre infrastructure de production. Le service exposé au frontend est fournis par le port 8080 du serveur. A noter que vous pouvez associer à chaque ferme un ou plusieurs serveurs (pour par exemple répartir la charge et / ou offrir une meilleur tolérance aux pannes).
@@ -88,7 +88,7 @@ Via l'Api :
 
 > [!api]
 >
-> @api {POST} /ipLoadbalancing/{serviceName}/http/farm/{farmId}/server
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/http/farm/{farmId}/server
 > 
 
 |Paramètre|Requis|Signification|Exemple|
@@ -103,17 +103,17 @@ Les appels complémentaires suivants vous permettront respectivement de lister, 
 
 > [!api]
 >
-> @api {GET} /ipLoadbalancing/{serviceName}/http/farm/{farmId}/server
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/http/farm/{farmId}/server
 > 
 
 > [!api]
 >
-> @api {PUT} /ipLoadbalancing/{serviceName}/http/farm/{farmId}/server
+> @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/http/farm/{farmId}/server
 > 
 
 > [!api]
 >
-> @api {DELETE} /ipLoadbalancing/{serviceName}/http/farm/{farmId}/server
+> @api {v1} /ipLoadbalancing DELETE /ipLoadbalancing/{serviceName}/http/farm/{farmId}/server
 > 
 
 ### Infrastructure B
@@ -131,7 +131,7 @@ Via l'Api :
 
 > [!api]
 >
-> @api {POST} /ipLoadbalancing/{serviceName}/http/farm
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/http/farm
 > 
 
 |Paramètre|Signification|
@@ -150,7 +150,7 @@ Via l'Api :
 
 > [!api]
 >
-> @api {POST} /ipLoadbalancing/{serviceName}/http/farm/{farmId}/server
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/http/farm/{farmId}/server
 > 
 
 |Paramètre|Requis|Signification|Exemple|
@@ -190,7 +190,7 @@ Via l'Api :
 
 > [!api]
 >
-> @api {POST} /ipLoadbalancing/{serviceName}/http/frontend
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/http/frontend
 > 
 
 |Paramètre|Requis|Signification|Exemple|
@@ -214,7 +214,7 @@ Via l'Api :
 
 > [!api]
 >
-> @api {POST} /ipLoadbalancing/{serviceName}/http/frontend
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/http/frontend
 > 
 
 |Paramètre|Requis|Signification|Exemple|
@@ -238,7 +238,7 @@ Via l'Api :
 
 > [!api]
 >
-> @api {POST} /ipLoadbalancing/{serviceName}/refresh
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/refresh
 > 
 
 |Paramètre|Signification|
@@ -271,7 +271,7 @@ Via l'Api : mise à jour des frontends et application des modifications
 
 > [!api]
 >
-> @api {PUT} /ipLoadbalancing/{serviceName}/http/frontend/{frontendId}
+> @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/http/frontend/{frontendId}
 > 
 
 |Paramètre|Signification|Exemple|
@@ -282,7 +282,7 @@ Via l'Api : mise à jour des frontends et application des modifications
 
 > [!api]
 >
-> @api {PUT} /ipLoadbalancing/{serviceName}/http/frontend/{frontendId}
+> @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/http/frontend/{frontendId}
 > 
 
 |Paramètre|Signification|Exemple|
@@ -295,7 +295,7 @@ Pour appliquer vos changements et réaliser effectivement la bascule production 
 
 > [!api]
 >
-> @api {POST} /ipLoadbalancing/{serviceName}/refresh
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/refresh
 > 
 
 |Paramètre|Signification|

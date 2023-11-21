@@ -36,7 +36,7 @@ After the pool creation, you are back to manager. You can see that cluster statu
 
 > [!api]
 >
-> @api {POST} /dedicated/ceph/{serviceName}/acl
+> @api {v1} /dedicated/ceph POST /dedicated/ceph/{serviceName}/acl
 >
 serviceName is the fsid of your cluster.
 
@@ -44,7 +44,7 @@ You can check ACL creation by listing ACL.
 
 > [!api]
 >
-> @api {GET} /dedicated/ceph/{serviceName}/acl
+> @api {v1} /dedicated/ceph GET /dedicated/ceph/{serviceName}/acl
 >
 Example:
 

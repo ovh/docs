@@ -36,7 +36,7 @@ Une fois connecté sur <https://ca.api.ovh.com/console/>, vous pourrez récupér
 
 > [!api]
 >
-> @api {GET} /dedicated/server
+> @api {v1} /dedicated/server GET /dedicated/server
 >
 
 Ensuite, récupérez le nom de votre serveur hybride en cliquant sur `Execute`{.action}:
@@ -51,7 +51,7 @@ Voici l'appel API à réaliser pour cela :
 
 > [!api]
 >
-> @api {GET} /dedicated/server/{serviceName}/specifications/hardware
+> @api {v1} /dedicated/server GET /dedicated/server/{serviceName}/specifications/hardware
 >
 
 Entrez le nom de votre serveur récupéré précédemment dans le champ « **serviceName** », puis cliquez sur le bouton `Execute`{.action}. Les informations sur le matériel de votre serveur s'affichent alors. Repérez le `diskGroupId` concerné dans la partie `diskGroups`.
@@ -68,7 +68,7 @@ Pour cela, effectuez l’appel d’API suivant pour récupérer la liste des sys
 
 > [!api]
 >
-> @api {GET} /dedicated/server/{serviceName}/install/compatibleTemplates
+> @api {v1} /dedicated/server GET /dedicated/server/{serviceName}/install/compatibleTemplates
 >
 
 ![Modèles compatibles](images/templates-01.png){.thumbnail}
@@ -77,7 +77,7 @@ Notez le nom du modèle correspondant au système d'exploitation que vous avez c
 
 > [!api]
 >
-> @api {POST} /dedicated/server/{serviceName}/install/start
+> @api {v1} /dedicated/server POST /dedicated/server/{serviceName}/install/start
 >
 
 Entrez la référence de votre serveur dans le champ **serviceName**, entrez « diskGroupId » (2) dans le champ **diskGroupId**, puis entrez le nom du modèle dans le champ **templateName** (tous les autres champs sont facultatifs).
@@ -90,7 +90,7 @@ Votre système d'exploitation va maintenant être installé. Vous pouvez vérifi
 
 > [!api]
 >
-> @api {GET} /dedicated/server/{serviceName}/install/status
+> @api {v1} /dedicated/server GET /dedicated/server/{serviceName}/install/status
 >
 
 ## Aller plus loin

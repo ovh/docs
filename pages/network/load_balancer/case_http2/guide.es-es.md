@@ -32,7 +32,7 @@ Vamos a añadir una ruta al servicio.
 
 > [!api]
 >
-> @api {POST} /ipLoadbalancing/{serviceName}/tcp/route
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/tcp/route
 >
 
 |Parámetros|Significado o valor|
@@ -49,7 +49,7 @@ A continuación, vamos a añadir una regla a la ruta.
 
 > [!api]
 >
-> @api {POST} /ipLoadbalancing/{serviceName}/tcp/route/{routeId}/rule
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/tcp/route/{routeId}/rule
 >
 
 |Parámetros|Significado o valor|
@@ -72,7 +72,7 @@ A continuación vamos a actualizar una zona.
 
 > [!api]
 >
-> @api {POST} /ipLoadbalancing/{serviceName}/refresh
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/refresh
 >
 
 |Parámetros|Significado o valor|

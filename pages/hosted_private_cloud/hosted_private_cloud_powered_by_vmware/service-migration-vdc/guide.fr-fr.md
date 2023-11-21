@@ -143,7 +143,7 @@ Vous avez maintenant choisi votre gamme commerciale et vos hosts. Veuillez noter
 
 > [!api]
 >
-> @api {GET} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/filer/{filerId}/checkGlobalCompatible
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/filer/{filerId}/checkGlobalCompatible
 >
 
 **Résultat attendu :** boolean
@@ -187,7 +187,7 @@ Exécutez l'API OVHcloud pour convertir les datastores en global:
 
 > [!api]
 >
-> @api {POST}  /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/filer/{filerId}/convertToGlobal
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/filer/{filerId}/convertToGlobal
 >
 
 **Résultat attendu :** Informations de tâche
@@ -477,14 +477,14 @@ Exécutez l'API OVHcloud pour préparer la migration :
 
 > [!api]
 >
-> @api {POST} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/disasterRecovery/zerto/startMigration
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/disasterRecovery/zerto/startMigration
 >
 
 `{datacenterId}` est le **nouvel** id vDC, vous pouvez l'obtenir avec l'appel API suivant :
 
 > [!api]
 >
-> @api {GET} /dedicatedCloud/{serviceName}/datacenter
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/datacenter
 >
 
 Une tâche est lancée sur l'infrastructure pour déployer vRA sur chacun des hosts du nouveau vDC. 
@@ -551,7 +551,7 @@ Voici comment procéder:
 >
 > > [!api]
 > >
-> > @api {GET} /dedicatedCloud/{serviceName}/datacenter
+> > @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/datacenter
 > >
 >
 
@@ -567,7 +567,7 @@ Voici comment procéder:
 
 > [!api]
 >
-> @api {POST} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/checkBackupJobs
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/checkBackupJobs
 >
 
 4\. Si vous n'aviez migré qu'une partie des machines virtuelles dont les sauvegardes sont activées, vous pouvez répéter les étapes 2 et 3 afin de transférer leurs piles de backups vers le nouveau vDC.
@@ -576,7 +576,7 @@ Avant de continuer, vous pouvez vérifier visuellement, dans le plug-in graphiqu
 
 > [!api]
 >
-> @api {POST} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/backup/disable
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/backup/disable
 
 > [!warning]
 >
@@ -592,14 +592,14 @@ Exécutez l'API OVHcloud pour finaliser la migration :
 
 > [!api]
 >
-> @api {POST} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/disasterRecovery/zerto/endMigration
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/disasterRecovery/zerto/endMigration
 >
 
 `{datacenterId}` est le **nouvel** id vDC, vous pouvez l'obtenir avec l'appel API suivant :
 
 > [!api]
 >
-> @api {GET} /dedicatedCloud/{serviceName}/datacenter
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/datacenter
 >
 
 Une tâche est lancée pour :
@@ -647,35 +647,35 @@ Dans les instructions suivantes, `{datacenterId}` est l'**ancien** id vDC, vous 
 
 > [!api]
 >
-> @api {GET} /dedicatedCloud/{serviceName}/datacenter
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/datacenter
 >
 
 Avec l'API, obtenez la liste des ID du filer (datastore) :
 
 > [!api]
 >
-> @api {GET} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/filer
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/filer
 >
 
 Puis pour chaque ID :
 
 > [!api]
 >
-> @api {POST} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/filer/{filerId}/remove
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/filer/{filerId}/remove
 >
 
 Dans le cas d'un datastore global, vous pouvez utiliser l'appel API suivant :
 
 > [!api]
 >
-> @api {POST} /dedicatedCloud/{serviceName}/filer/{filerId}/remove
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/filer/{filerId}/remove
 >
 
 Une tâche est créée pour chaque appel, vous pouvez suivre l'avancement avec :
 
 > [!api]
 >
-> @api {GET} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/filer/{filerId}/task/{taskId}
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/filer/{filerId}/task/{taskId}
 >
 
 > [!warning]
@@ -690,28 +690,28 @@ Dans les instructions suivantes, `{datacenterId}` est l'**ancien** id vDC, vous 
 
 > [!api]
 >
-> @api {GET} /dedicatedCloud/{serviceName}/datacenter
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/datacenter
 >
 
 Avec l'API, obtenez la liste des ID d'hôte :
 
 > [!api]
 >
-> @api {GET} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/host
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/host
 >
 
 Puis pour chaque ID :
 
 > [!api]
 >
-> @api {POST} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/host/{hostId}/remove
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/host/{hostId}/remove
 >
 
 Une tâche est créée pour chaque appel, vous pouvez suivre l'avancement avec :
 
 > [!api]
 >
-> @api {GET} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/host/{hostId}/task/{taskId}
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/host/{hostId}/task/{taskId}
 >
 
 > [!warning]
@@ -726,14 +726,14 @@ Dans les instructions suivantes, `{datacenterId}` est l'**ancien** id vDC, vous 
 
 > [!api]
 >
-> @api {GET} /dedicatedCloud/{serviceName}/datacenter
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/datacenter
 >
 
 Avec l'API, demandez la suppression du vDC :
 
 > [!api]
 >
-> @api {DELETE} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}
+> @api {v1} /dedicatedCloud DELETE /dedicatedCloud/{serviceName}/datacenter/{datacenterId}
 >
 
 ## FAQ

@@ -41,7 +41,7 @@ Alle Ihre aktiven Dienste können über folgende Route abgerufen werden:
 
 > [!api]
 >
-> @api {GET} /storage/netapp
+> @api {v1} /storage GET /storage/netapp
 >
 
 ### Ein neues Volume erstellen
@@ -56,7 +56,7 @@ Um ein Volume zu erstellen, verwenden Sie die folgende Route:
 >
 >> > [!api]
 >> >
->> > @api {POST} /storage/netapp/{serviceName}/share
+>> > @api {v1} /storage POST /storage/netapp/{serviceName}/share
 >> >
 >>
 >
@@ -106,7 +106,7 @@ Um eine neue ACL zu erstellen, verwenden Sie die folgende Route:
 >
 >> > [!api]
 >> >
->> > @api {POST} /storage/netapp/{serviceName}/share/{shareId}/acl
+>> > @api {v1} /storage POST /storage/netapp/{serviceName}/share/{shareId}/acl
 >> >
 >>
 >
@@ -147,7 +147,7 @@ Um eine neue ACL zu erstellen, verwenden Sie die folgende Route:
 >
 >> > [!api]
 >> >
->> > @api {GET} /storage/netapp/{serviceName}/share/{shareId}/acl/{aclRuleId}
+>> > @api {v1} /storage GET /storage/netapp/{serviceName}/share/{shareId}/acl/{aclRuleId}
 >> >
 >>
 >
@@ -181,7 +181,7 @@ Sobald die ACL aktiviert ist, rufen Sie die Zugriffspfade des Volumes über folg
 >
 >> > [!api]
 >> >
->> > @api {GET} /storage/netapp/{serviceName}/share/{shareId}/accessPath
+>> > @api {v1} /storage GET /storage/netapp/{serviceName}/share/{shareId}/accessPath
 >> >
 >>
 >
@@ -221,7 +221,7 @@ Sie können Ihr Volume mit folgender Route löschen:
 >
 >> > [!api]
 >> >
->> > @api {DELETE} /storage/netapp/{serviceName}/share/{shareId}
+>> > @api {v1} /storage DELETE /storage/netapp/{serviceName}/share/{shareId}
 >> >
 >>
 >

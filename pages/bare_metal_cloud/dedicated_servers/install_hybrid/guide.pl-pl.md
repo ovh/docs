@@ -36,7 +36,7 @@ Po zalogowaniu do API na stronie <https://api.ovh.com/console/> możesz uzyskać
 
 > [!api]
 >
-> @api {GET} /dedicated/server
+> @api {v1} /dedicated/server GET /dedicated/server
 >
 
 Wyświetl nazwę serwera hybrydowego, klikając Execute`{.action}:
@@ -51,7 +51,7 @@ Poniżej wywołanie API, które należy zastosować:
 
 > [!api]
 >
-> @api {GET} /dedicated/server/{serviceName}/specifications/hardware
+> @api {v1} /dedicated/server GET /dedicated/server/{serviceName}/specifications/hardware
 >
 
 Wprowadź uzyskaną wcześniej nazwę serwera w polu **serviceName**, następnie kliknij przycisk `Execute`{.action}. Wyświetlą się wówczas informacje o sprzęcie, z jakiego składa się Twój serwer. Odszukaj odpowiedni `diskGroupId` w części `diskGroups`.
@@ -68,7 +68,7 @@ W tym celu wywołaj API, jak pokazano poniżej, aby pobrać listę kompatybilnyc
 
 > [!api]
 >
-> @api {GET} /dedicated/server/{serviceName}/install/compatibleTemplates
+> @api {v1} /dedicated/server GET /dedicated/server/{serviceName}/install/compatibleTemplates
 >
 
 ![Kompatybilne systemy](images/templates-01.png){.thumbnail}
@@ -77,7 +77,7 @@ Zapisz nazwę szablonu odpowiadającego wybranemu przez Ciebie systemowi operacy
 
 > [!api]
 >
-> @api {POST} /dedicated/server/{serviceName}/install/start
+> @api {v1} /dedicated/server POST /dedicated/server/{serviceName}/install/start
 >
 
 Wprowadź nazwę Twojego serwera w polu **serviceName**, wprowadź diskGroupId (2) w polu **diskGroupId**, następnie wprowadź nazwę szablonu w polu **templateName** (wszystkie pozostałe pola są opcjonalne).
@@ -90,7 +90,7 @@ Twój system operacyjny zostanie teraz zainstalowany. Możesz sprawdzić postęp
 
 > [!api]
 >
-> @api {GET} /dedicated/server/{serviceName}/install/status
+> @api {v1} /dedicated/server GET /dedicated/server/{serviceName}/install/status
 >
 
 ## Sprawdź również

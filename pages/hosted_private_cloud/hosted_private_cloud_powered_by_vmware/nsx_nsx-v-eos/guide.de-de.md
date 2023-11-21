@@ -43,7 +43,7 @@ If you wish to migrate to VLAN, to help you to configure your network, you can u
 
 > [!api]
 >
-> @api {POST} /dedicatedCloud/{serviceName}/generateVxlanToVrackMapping
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/generateVxlanToVrackMapping
 >
 
 > **Parameters:**

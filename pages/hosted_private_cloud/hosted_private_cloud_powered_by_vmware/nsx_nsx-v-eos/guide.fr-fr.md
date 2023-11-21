@@ -41,7 +41,7 @@ Si vous souhaitez le migrer vers des VLAN, pour vous aider à configurer votre r
 
 > [!api]
 >
-> @api {POST} /dedicatedCloud/{serviceName}/generateVxlanToVrackMapping
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/generateVxlanToVrackMapping
 >
 
 > **Paramètres:**

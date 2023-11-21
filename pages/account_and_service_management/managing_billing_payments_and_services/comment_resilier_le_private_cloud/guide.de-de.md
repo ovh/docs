@@ -65,7 +65,7 @@ Außerdem können Sie den Antrag auf Kündigung über folgendes API von OVHcloud
 
 > [!api]
 >
-> @api {POST} /dedicatedCloud/{serviceName}/confirmTermination
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/confirmTermination
 >
 
 In diesem Fall müssen Sie das Token zur Bestätigung eingeben. Es befindet sich in der E-Mail zur Bestätigung der Kündigung.

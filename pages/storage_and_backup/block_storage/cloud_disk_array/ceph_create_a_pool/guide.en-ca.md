@@ -29,7 +29,7 @@ After pool creation you are back to manager, you can see that cluster status has
 
 > [!api]
 >
-> @api {POST} /dedicated/ceph/{serviceName}/pool
+> @api {v1} /dedicated/ceph POST /dedicated/ceph/{serviceName}/pool
 >
 serviceName is the fsid of your cluster.
 
@@ -37,7 +37,7 @@ You can check pool creation by listing pools.
 
 > [!api]
 >
-> @api {GET} /dedicated/ceph/{serviceName}/pool
+> @api {v1} /dedicated/ceph GET /dedicated/ceph/{serviceName}/pool
 >
 For example:
 
