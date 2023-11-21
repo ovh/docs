@@ -1,6 +1,6 @@
 ---
 title: "Tutorial - Instalar manualmente WordPress"
-excerpt: "Descubra como instalar manualmente o CMS WordPress"
+excerpt: "Saoba como instalar manualmente o CMS WordPress"
 updated: 2023-04-06
 ---
 
@@ -27,7 +27,7 @@ Este tutorial tem como objetivo ajudá-lo a instalar manualmente o CMS (Content 
 > Para instalar **manualmente outro CMS** (Joomla!, Drupal, PrestaShop), consulte o nosso manual sobre a [instalação manual de um CMS](/pages/web_cloud/web_hosting/cms_manual_installation).
 >
 
-**Descubra como instalar manualmente o CMS WordPress.**
+**Saoba como instalar manualmente o CMS WordPress.**
 
 ## Requisitos
 
