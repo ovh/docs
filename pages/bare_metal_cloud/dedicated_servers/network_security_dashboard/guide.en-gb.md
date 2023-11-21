@@ -6,7 +6,9 @@ updated: 2023-09-20
 
 ## Objective
 
-This guide aims at introducing the Network Security Dashboard and its features.
+For many years now, OVHcloud protects its customers from such threats at no additional cost. Millions of active network IP addresses are under a shield of globally distributed Anti-DDoS Infrastructure system.
+
+This guide aims at introducing the Network Security Dashboard - an overview of what’s happening to your network services. The new dashboard will guide you through the details of protections put in place to keep your services up & running. Suspected network activities, attack vectors, Scrubbing Center activity log, amount of legitimate vs malicious traffic, number of attacks, or amount of data cleaned – all that can be found now in your Control Panel!
 
 ## Requirements
 
