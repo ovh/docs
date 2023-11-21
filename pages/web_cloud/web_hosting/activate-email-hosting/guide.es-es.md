@@ -1,6 +1,6 @@
 ---
-title: 'Activar el servicio de correo incluido en un plan de hosting'
-excerpt: 'Cómo activar las direcciones de correo electrónico incluidas en un plan de alojamiento web'
+title: "Activar el servicio de correo incluido en un plan de hosting"
+excerpt: "Descubra cómo activar las direcciones de correo electrónico incluidas en un plan de alojamiento web"
 updated: 2023-03-02
 ---
 
