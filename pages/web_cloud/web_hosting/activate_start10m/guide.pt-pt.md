@@ -1,6 +1,6 @@
 ---
-title: 'Ativar o alojamento gratuito 100M'
-excerpt: 'Saiba como ativar o alojamento gratuito 100M'
+title: "Ativar o alojamento gratuito 100M"
+excerpt: "Saiba como ativar o alojamento gratuito 100M"
 updated: 2023-11-10
 ---
 
