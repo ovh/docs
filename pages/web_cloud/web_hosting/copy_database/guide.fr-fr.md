@@ -40,7 +40,7 @@ Selon votre situation, le chemin pour accéder à votre base de données source 
 
 #### Base de données Start SQL
 
-Dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), sélectionnez `Web Cloud`{.action} dans le menu en haut de l'interface. Dans la colonne de gauche, dirigez-vous dans l’onglet `Hébergements`{.action}, puis cliquez sur l’hébergement web où se trouve la base de donnée source dont le contenu est à copier.
+Dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), sélectionnez `Web Cloud`{.action} dans le menu en haut de l'interface. Dans la colonne de gauche, dirigez-vous dans l’onglet `Hébergements`{.action}, puis cliquez sur l’hébergement web où se trouve la base de données source dont le contenu est à copier.
 
 ![Liste des hébergements](images/list-web-hosting.png){.thumbnail}
 
@@ -60,7 +60,7 @@ En cliquant sur l’onglet `Bases de données`{.action}, la liste des bases de d
 
 ### Copier le contenu d'une base de données
 
-Toujours dans l'onglet `Bases de données`{.action} et quel que soit votre offre, cliquez sur le bouton `...`{.action} à droite de la ligne correspondant à la base de données dont vous souhaitez copier le contenu, puis sélectionnez `Copier la base de données`{.action}.
+Toujours dans l'onglet `Bases de données`{.action} et quelle que soit votre offre, cliquez sur le bouton `...`{.action} à droite de la ligne correspondant à la base de données dont vous souhaitez copier le contenu, puis sélectionnez `Copier la base de données`{.action}.
 
 ![CTA_copier_BDD](images/cta-copy-database.png){.thumbnail}
 
