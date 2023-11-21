@@ -1,6 +1,6 @@
 ---
-title: 'Tutorial - Eigene Webseite bei OVHcloud erstellen'
-excerpt: Erfahren Sie hier, wie Sie Ihre erste Webseite mit &laquo;Kostenloses Hosting 100M&laquo; erstellen
+title: "Tutorial - Eigene Webseite bei OVHcloud erstellen"
+excerpt: "Erfahren Sie hier, wie Sie Ihre erste Webseite mit Kostenloses Hosting 100M erstellen"
 updated: 2023-07-16
 ---
 

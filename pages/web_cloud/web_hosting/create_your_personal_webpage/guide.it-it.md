@@ -1,6 +1,6 @@
 ---
-title: Tutorial - Creare la propria pagina personale in OVHcloud
-excerpt: Come creare la tua prima pagina Web su un hosting gratuito 100M
+title: "Tutorial - Creare la propria pagina personale in OVHcloud"
+excerpt: "Come creare la tua prima pagina Web su un hosting gratuito 100M"
 updated: 2023-07-16
 ---
 

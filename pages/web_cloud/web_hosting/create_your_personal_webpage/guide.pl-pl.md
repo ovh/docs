@@ -1,6 +1,6 @@
 ---
-title: 'Tutorial - Tworzenie strony WWW w OVHcloud'
-excerpt: 'Dowiedz się, jak utworzyć pierwszą stronę internetową na Darmowy hosting 100M'
+title: "Tutorial - Tworzenie strony WWW w OVHcloud"
+excerpt: "Dowiedz się, jak utworzyć pierwszą stronę internetową na Darmowy hosting 100M"
 updated: 2023-07-16
 ---
 
