@@ -1,7 +1,7 @@
 ---
-title: 'Guia de utilização do acelerador CDN num alojamento web'
-excerpt: 'Melhore o seu site acelerando o seu carregamento no alojamento Web graças ao CDN'
-updated: 2023-09-22
+title: "Guia de utilização do acelerador CDN num alojamento web"
+excerpt: "Saiba como melhorar o seu website acelerando o seu carregamento no seu alojamento Web graças ao CDN"
+updated: 2023-11-21
 ---
 
 > [!primary]
@@ -13,7 +13,7 @@ updated: 2023-09-22
 
 Se deseja melhorar a experiência dos seus utilizadores acelerando o seu site, a técnica mais eficaz é ativar um CDN (Content Delivery Network). Este último permite colocar em cache os ficheiros estáticos tais como as imagens, os css e os javascript, nos servidores mais próximos dos seus clientes.
 
-**Descubra como gerar a opção CDN do seu alojamento Web.**
+**Saiba como melhorar o seu website acelerando o seu carregamento no seu alojamento Web graças ao CDN.**
 
 ## Definição
 
@@ -385,4 +385,8 @@ A ausência da menção "*X-CDN*" indica que não passou através do CDN.
 
 ## Quer saber mais?
 
-Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
+
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
+
+Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

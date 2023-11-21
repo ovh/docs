@@ -1,7 +1,7 @@
 ---
-title: 'Aumentare la velocità di un sito Web con la CDN'
-excerpt: 'Come ottimizzare il tuo sito accelerando la velocità di caricamento dell’hosting Web con la CDN'
-updated: 2023-09-22
+title: "Aumentare la velocità di un sito Web con la CDN"
+excerpt: "Questa guida ti mostra come ottimizzare il tuo sito accelerando la velocità di caricamento dell’hosting Web con la CDN"
+updated: 2023-11-21
 ---
 
 > [!primary]
@@ -383,4 +383,8 @@ L’assenza dell’intestazione "*X-CDN*" indica che il traffico del tuo sito We
 
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
+
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
+
+Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.

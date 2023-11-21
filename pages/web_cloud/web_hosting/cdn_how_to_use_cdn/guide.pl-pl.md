@@ -1,7 +1,7 @@
 ---
-title: 'Przewodnik dotyczący usługi CDN na hostingu www'
-excerpt: 'Zoptymalizuj Twoją witrynę internetową, przyspieszając jej ładowanie w hostingu WWW dzięki usłudze CDN'
-updated: 2023-09-22
+title: "Przewodnik dotyczący usługi CDN na hostingu www"
+excerpt: "Dowiedz się, jak ulepszyć stronę WWW, przyspieszając jej ładowanie w hostingu WWW dzięki usłudze CDN"
+updated: 2023-11-21
 ---
 
 > [!primary]
@@ -12,7 +12,7 @@ updated: 2023-09-22
 
 Jeśli chcesz poprawić doświadczenia użytkowników Twojej witryny, przyspieszając jej działanie, najskuteczniejszym sposobem będzie aktywacja usługi GeoCache. Umożliwia ona przeniesienie do pamięci podręcznej plików statycznych, takich jak obrazy, pliki CSS i JavaScript, na serwerach znajdujących się najbliżej klientów.
 
-**Odkryj, jak zarządzać opcją GeoCache w Twoim hostingu WWW.**
+**Dowiedz się, jak ulepszyć stronę WWW, przyspieszając jej ładowanie w hostingu WWW dzięki usłudze CDN.**
 
 ## Definicja
 
@@ -382,4 +382,8 @@ Brak pozycji "*X-CDN*" oznacza, że domena nie korzysta z GeoCache.
 
 ## Sprawdź również
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
+
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
