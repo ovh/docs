@@ -1,6 +1,6 @@
 ---
 title: "Inhalt einer Datenbank in eine andere duplizieren"
-excerpt: "Diese Anleitung erklärt, wie Sie so kopieren Sie den Inhalt einer OVHcloud-Datenbank in eine andere OVHcloud-Datenbank"
+excerpt: "Erfahren Sie hier, wie Sie den Inhalt einer OVHcloud Datenbank in eine andere OVHcloud Datenbank kopieren"
 updated: 2023-11-22
 ---
 
@@ -10,41 +10,39 @@ updated: 2023-11-22
 
 ## Ziel
 
-Ihre Datenbank ist ein zentrales Element beim Aufbau Ihrer dynamischen Website. Während des Lebenszyklus Ihrer Website kann es aus praktischen oder technischen Gründen erforderlich sein, den Inhalt Ihrer Datenbank in eine andere Ihrer Datenbanken zu kopieren [start SQL](https://www.ovhcloud.com/de/web-hosting/options/start-sql/) oder [Web Cloud Databases](https://www.ovhcloud.com/de/web-cloud/databases/).
+Ihre Datenbank ist ein zentrales Element Ihrer dynamischen Website. Während des Lebenszyklus Ihrer Website kann es aus praktischen oder technischen Gründen erforderlich sein, den Inhalt Ihrer Datenbank in eine andere Ihrer Datenbanken zu kopieren. Dies is möglich innerhalb der Angebote [Start SQL](https://www.ovhcloud.com/de/web-hosting/options/start-sql/) oder [Web Cloud Databases](https://www.ovhcloud.com/de/web-cloud/databases/).
 
-**Diese Anleitung erklärt, wie Sie den Inhalt einer OVHcloud-Datenbank in eine andere OVHcloud-Datenbank kopieren.**
+**Diese Anleitung erklärt, wie Sie den Inhalt einer OVHcloud Datenbank in eine andere OVHcloud Datenbank kopieren.**
 
 > [!primary]
 >
-> Mit dieser Funktion werden Datenbanken nicht verschoben, sondern kopiert. Im Gegensatz zu einem Migrationsprozess wird die ursprüngliche Datenbank nicht automatisch gelöscht. Nur der Inhalt der Quelldatenbank wird dupliziert, um in die Zieldatenbank kopiert zu werden.
->
+> Mit dieser Funktion werden Datenbanken nicht verschoben, sondern kopiert. Im Gegensatz zu einem Migrationsprozess wird die ursprüngliche Datenbank nicht automatisch gelöscht. Der Inhalt der Quelldatenbank wird in die Zieldatenbank dupliziert.
 
 ## Voraussetzungen
 
-- Sie verfügen über Datenbankangebote [start SQL](https://www.ovhcloud.com/de/web-hosting/options/start-sql/) und/oder [Web Cloud Databases](https://www.ovhcloud.com/de/web-cloud/databases/). Beide Datenbanken müssen erstellt werden, bevor das Replikations-Tool verwendet werden kann.
-- Sie sind im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) eingeloggt
-- Über ausreichende Rechte für alle betroffenen Datenbankdienste verfügen. Weitere Informationen finden Sie in unserer Anleitung [Verwaltung der Kontakte der Dienste](/pages/account_and_service_management/account_information/managing_contacts).
+- Sie verfügen über Datenbanken der Dienste [Start SQL](https://www.ovhcloud.com/de/web-hosting/options/start-sql/) oder [Web Cloud Databases](https://www.ovhcloud.com/de/web-cloud/databases/). Beide Datenbanken müssen erstellt sein, bevor die Duplikationsfunktion verwendet werden kann.
+- Sie haben Zugriff auf Ihr Webhosting über das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) mit den erforderlichen Berechtigungen zur Verwaltung aller betroffenen Datenbankdienste. Weitere Informationen finden Sie in unserer Anleitung [Verwaltung der Kontakte der Dienste](/pages/account_and_service_management/account_information/managing_contacts).
 
 ## In der praktischen Anwendung
 
-Bevor Sie beginnen, stellen Sie sicher, dass:
+Bevor Sie beginnen, überprüfen Sie diese Voraussetzungen:
 
-- Ihr **D**ata**b**ase **M**anagement **S**ystem (MySQL, PostgreSQL usw.) ist für Ihre beiden Datenbanken (Quelle und Ziel) identisch.
-- Die Version Ihres DBMS ist die gleiche für Ihre beiden Datenbanken (Quelle und Ziel). Obwohl die Kopie mit verschiedenen Versionen verwendet werden kann, sollten Sie die gleichen Versionen verwenden.
+- Beide Datenbanken (Quelle und Ziel) verwenden dasselbe **D**ata**b**ase **M**anagement **S**ystem (MySQL, PostgreSQL etc.).
+- Die Version des DBMS für beide Datenbanken ist identisch. Obwohl das Duplizieren mit verschiedenen Versionen funktioniert, sollten Sie dieselben Versionen verwenden.
 - Der Inhalt der Quelldatenbank darf die Größe der Zieldatenbank nicht überschreiten.
 
 ### Quelldatenbank identifizieren
 
-Diese Funktion ist für die Kopie verfügbar: 
+Die Duplikationsfunktion ist verfügbar für folgende Dienste:
 
-- einer Datenbank [Start SQL](https://www.ovhcloud.com/de/web-hosting/options/start-sql/) (in einigen unserer [Webhostings](https://www.ovhcloud.com/de/web-hosting/) oder [separat bestellt](https://www.ovhcloud.com/de/web-hosting/options/start-sql/));
-- einer Datenbank auf einem Server [Web Cloud Databases](https://www.ovhcloud.com/de/web-cloud/databases/) (bei unseren [Performance Hostings](https://www.ovhcloud.com/de/web-hosting/performance-offer/) oder [separat bestellt](https://www.ovhcloud.com/de/web-cloud/databases/) enthalten. 
+- [Start SQL](https://www.ovhcloud.com/de/web-hosting/options/start-sql/) (in einigen unserer [Webhostings](https://www.ovhcloud.com/de/web-hosting/) enthalten oder [separat bestellt](https://www.ovhcloud.com/de/web-hosting/options/start-sql/))
+- [Web Cloud Databases](https://www.ovhcloud.com/de/web-cloud/databases/) (in unseren [Performance Hostings](https://www.ovhcloud.com/de/web-hosting/performance-offer/) enthalten oder [separat bestellt](https://www.ovhcloud.com/de/web-cloud/databases/)). 
 
-Je nach Ihrer Situation ist der Zugriffspfad zur Quelldatenbank unterschiedlich.
+Je nach Ihrer Ausgangslage ist der Zugriffspfad zur Quelldatenbank unterschiedlich.
 
-#### Start SQL-Datenbank
+#### Start SQL
 
-Wählen Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) `Web Cloud`{.action} aus dem Menü oben im Interface aus. Gehen Sie in der linken Spalte in den Tab `Hosting-Pakete`{.action} und klicken Sie auf das Webhosting, in dem sich die Quelldatenbank befindet, deren Inhalt kopiert werden soll.
+Wählen Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) `Web Cloud`{.action} aus dem Menü oben aus. Öffnen Sie in der linken Spalte `Hosting-Pakete`{.action} und klicken Sie auf das Webhosting mit der Quelldatenbank.
 
 ![Liste der Hostings](images/list-web-hosting.png){.thumbnail}
 
@@ -54,7 +52,7 @@ Wenn Sie auf den Tab `Datenbanken`{.action} klicken, wird eine Liste Ihrer Start
 
 #### Web Cloud Databases
 
-Wählen Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) `Web Cloud`{.action} aus dem Menü oben im Interface aus. Gehen Sie in der linken Spalte in den Tab `Web Cloud Databases`{.action} und wählen Sie den Web Cloud Databases Server aus, auf dem sich Ihre Quelldatenbank befindet, deren Inhalt kopiert werden soll.
+Wählen Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) `Web Cloud`{.action} aus dem Menü oben aus. Öffnen Sie in der linken Spalte `Web Cloud Databases`{.action} und wählen Sie den Web Cloud Databases Server mit der Quelldatenbank aus.
 
 ![Liste der WCD-Server](images/list-wcd-server.png){.thumbnail}
 
@@ -64,7 +62,7 @@ Wenn Sie auf den Tab `Datenbanken`{.action} klicken, wird eine Liste der Datenba
 
 ### Inhalt einer Datenbank kopieren
 
-Bleiben Sie im Tab `Datenbanken`{.action} und klicken Sie unabhängig von Ihrem Angebot auf den Button `...`{.action} rechts neben der Zeile für die Datenbank, deren Inhalt Sie kopieren möchten, und wählen Sie `Datenbank kopieren`{.action}.
+Klicken Sie im Tab `Datenbanken`{.action} auf den Button `...`{.action} rechts in der Zeile der Datenbank, deren Inhalt Sie kopieren möchten. Wählen Sie `Datenbank kopieren`{.action}.
 
 ![CTA_copy_BDD](images/cta-copy-database.png){.thumbnail}
 
@@ -72,54 +70,54 @@ Es wird ein Fenster angezeigt, in dem Sie Ihre Zieldatenbank identifizieren kön
 
 ![Interface Copy BDD](images/interface-copy-database.png){.thumbnail}
 
-Wenn Sie keine Zieldatenbank haben, klicken Sie auf den Link, um eine neue Datenbank zu kaufen, wie im folgenden Screenshot dargestellt:
+Wenn Sie keine Zieldatenbank haben, klicken Sie auf den Link im Text, um eine neue Datenbank zu bestellen.
 
 ![WCD DB-Liste](images/link-buy-database.png){.thumbnail}
 
-Sie haben die Wahl zwischen einem Angebot „[start SQL](https://www.ovhcloud.com/de/web-hosting/options/start-sql/)“ oder einem Datenbankserver „[Web Cloud Databases](https://www.ovhcloud.com/de/web-cloud/databases/)“.
+Sie haben die Wahl zwischen [Start SQL](https://www.ovhcloud.com/de/web-hosting/options/start-sql/) oder [Web Cloud Databases](https://www.ovhcloud.com/de/web-cloud/databases/).
 
 > [!primary]
 >
-> Beim Kauf Ihrer neuen Datenbank ist diese nicht standardmäßig aktiviert. Vergessen Sie nicht, es zu aktivieren. Loggen Sie sich hierzu in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und gehen Sie in den Bereich `Web Cloud`{.action}.
+> Ihre neu bestellte Datenbank wird nicht automatisch aktiviert. Loggen Sie sich zum Aktivieren der Datenbank in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und gehen Sie in den Bereich `Web Cloud`{.action}.
 > 
-> - Für eine „Shared SQL“ Datenbank: Folgen Sie unserer Anleitung „[Datenbank auf Ihrem Webhosting erstellen](/pages/web_cloud/web_hosting/sql_create_database)“;
-> - Für eine Datenbank, die auf einem „Web Cloud Databases“ Server vorhanden sein wird: Folgen Sie unserer Anleitung „[Datenbank auf einem Web Cloud Databases Server erstellen](/pages/web_cloud/web_cloud_databases/create-db-and-user-on-db-server)“.
+> - Für eine Shared SQL Datenbank: Folgen Sie unserer Anleitung „[Datenbank auf Ihrem Webhosting erstellen](/pages/web_cloud/web_hosting/sql_create_database)“.
+> - Für eine Datenbank auf einem Web Cloud Databases Server: Folgen Sie unserer Anleitung „[Datenbank auf einem Web Cloud Databases Server erstellen](/pages/web_cloud/web_cloud_databases/create-db-and-user-on-db-server)“.
 >
 
 Wenn Sie bereits über eine Zieldatenbank verfügen, wählen Sie zunächst deren Typ aus:
 
-- `In Datenbank kopieren`{.action}: Wenn Sie den Inhalt der Quelldatenbank in eine **Start SQL**-Datenbank (Ziel) kopieren möchten.
-- `In eine Web Cloud Databases kopieren`{.action} : wenn Sie den Inhalt Ihrer Quelldatenbank in eine **Web Cloud Databases** (Ziel) Datenbank kopieren möchten.
+- `In Datenbank kopieren`{.action}: Wenn Sie den Inhalt der Quelldatenbank nach **Start SQL** kopieren möchten.
+- `In eine Web Cloud Databases kopieren`{.action}: Wenn Sie den Inhalt der Quelldatenbank nach **Web Cloud Databases** kopieren möchten.
 
-#### Wahl 1 - In eine Start SQL-Datenbank kopieren
+#### Auswahl 1: Start SQL
 
-Sie haben `In Datenbank kopieren`{.action} ausgewählt. Es werden zwei Dropdownlisten angezeigt. Klicken Sie auf das erste Webhosting und wählen Sie das Webhosting aus, auf dem sich Ihre Start SQL-Zieldatenbank befindet. Wenn Sie das Webhosting ausgewählt haben, klicken Sie auf die zweite Dropdown-Liste, um die Start SQL-Zieldatenbank auszuwählen.
+Sie haben `In Datenbank kopieren`{.action} ausgewählt. Es werden zwei Dropdownlisten angezeigt. Wählen Sie zuerst das Webhosting aus, auf dem sich Ihre Zieldatenbank befindet. Klicken Sie auf die zweite Dropdown-Liste, um die Start SQL Zieldatenbank auszuwählen.
 
 Klicken Sie auf `Weiter`{.action}. Die folgende Bestätigungsmeldung wird angezeigt:
 
 ![BDD-Kopierbestätigungsnachricht](images/confirmation-copy-database.png){.thumbnail}
 
-Wenn Sie die ausgewählte Zieldatenbank nicht überschreiben möchten, klicken Sie auf `Zurück`{.action}, um Ihre Auswahl zu ändern, oder auf `Abbrechen`{.action}, um alle Änderungen abzubrechen. Klicken Sie andernfalls auf `Bestätigen`{.action}, um zu bestätigen, dass der Inhalt der Quelldatenbank in die Zieldatenbank dupliziert werden soll.
+Wenn Sie die ausgewählte Zieldatenbank nicht überschreiben möchten, klicken Sie auf `Zurück`{.action}, um Ihre Auswahl zu ändern, oder auf `Abbrechen`{.action}, um den Vorgang abzubrechen. Klicken Sie andernfalls auf `Bestätigen`{.action}, um den Inhalt der Quelldatenbank in die Zieldatenbank zu duplizieren.
 
 Die folgende Bestätigungsmeldung wird angezeigt:
 
 ![BDD-Erfolgsmeldung](images/success-copy-database.png){.thumbnail}
 
-Die Datenbankkopie kann einige Minuten dauern. Um zu überprüfen, ob die Kopie erfolgreich ausgeführt wurde, gehen Sie zum Tab `Aktuelle Tasks`{.action}. In der Tabelle wird eine neue Zeile für Ihre Kopie mit dem Status „Geplant“ angezeigt. Wenn der Vorgang abgeschlossen ist, wird die Zeile gelöscht.
+Der Kopiervorgang kann einige Minuten dauern. Um den Status zu überprüfen, öffnen Sie den Tab `Aktuelle Tasks`{.action}. In der Tabelle wird eine Zeile für das Kopieren mit dem Status „Geplant“ angezeigt. Wenn der Vorgang abgeschlossen ist, wird die Zeile gelöscht.
 
 ![Aktuelle Tasks](images/ongoing-tasks.png){.thumbnail}
 
-#### Wahl 2 - In eine Datenbank auf einem Web Cloud Databases Server kopieren
+#### Auswahl 2: Web Cloud Databases
 
-Sie haben `In eine Web Cloud Databases kopieren`{.action} ausgewählt. Es werden zwei Dropdownlisten angezeigt. Klicken Sie auf das erste Angebot und wählen Sie das Angebot Web Cloud Databases aus, auf dem sich Ihre Zieldatenbank befindet. Wenn Sie das Angebot Web Cloud Databases ausgewählt haben, klicken Sie auf die zweite Dropdown-Liste, um die Zieldatenbank auf Ihrem Web Cloud Databases Server auszuwählen.
+Sie haben `In eine Web Cloud Databases kopieren`{.action} ausgewählt. Es werden zwei Dropdownlisten angezeigt. Wählen Sie zuerst den Server von Web Cloud Databases aus, auf dem sich Ihre Zieldatenbank befindet. Klicken Sie auf die zweite Dropdown-Liste, um die Zieldatenbank auf Ihrem Web Cloud Databases Server auszuwählen.
 
 Klicken Sie auf `Weiter`{.action}. Die folgende Bestätigungsmeldung wird angezeigt:
 
 ![BDD-Kopierbestätigungsnachricht](images/confirmation-copy-database.png){.thumbnail}
 
-Wenn Sie die ausgewählte Zieldatenbank nicht überschreiben möchten, klicken Sie auf `Zurück`{.action}, um Ihre Auswahl zu ändern, oder auf `Abbrechen`{.action}, um alle Änderungen abzubrechen. Klicken Sie andernfalls auf `Bestätigen`{.action}, um zu bestätigen, dass der Inhalt der Quelldatenbank in die Zieldatenbank dupliziert werden soll.
+Wenn Sie die ausgewählte Zieldatenbank nicht überschreiben möchten, klicken Sie auf `Zurück`{.action}, um Ihre Auswahl zu ändern, oder auf `Abbrechen`{.action}, um den Vorgang abzubrechen. Klicken Sie andernfalls auf `Bestätigen`{.action}, um den Inhalt der Quelldatenbank in die Zieldatenbank zu duplizieren.
 
-Die Datenbankkopie kann einige Minuten dauern. Um zu überprüfen, ob die Kopie erfolgreich ausgeführt wurde, gehen Sie zum Tab `Aktuelle Tasks`{.action}. In der Tabelle wird eine neue Zeile für Ihre Kopie mit dem Status „Geplant“ angezeigt. Wenn der Vorgang abgeschlossen ist, wird die Zeile gelöscht.
+Der Kopiervorgang kann einige Minuten dauern. Um den Status zu überprüfen, öffnen Sie den Tab `Aktuelle Tasks`{.action}. In der Tabelle wird eine Zeile für das Kopieren mit dem Status „Geplant“ angezeigt. Wenn der Vorgang abgeschlossen ist, wird die Zeile gelöscht.
 
 ![Aktuelle Tasks](images/ongoing-tasks.png){.thumbnail}
 
@@ -127,9 +125,9 @@ Die Datenbankkopie kann einige Minuten dauern. Um zu überprüfen, ob die Kopie 
 
 Nachdem Sie die Quelldatenbank kopiert haben, müssen Sie eine letzte Aktion ausführen, wenn Sie die neue Datenbank verwenden möchten.
 
-Stellen Sie auf der Registerkarte `Aktuelle Tasks`{.action} sicher, dass der Kopiervorgang abgeschlossen ist (die Zeile Ihrer Kopie ist nicht mehr vorhanden).
+Prüfen Sie im Tab `Aktuelle Tasks`{.action}, dass der Kopiervorgang abgeschlossen ist (also der Fortschritt der Kopie nicht mehr angezeigt wird).
 
-Um die neue Datenbank mit Ihrer Website zu verbinden, bearbeiten Sie die Konfigurationsdatei Ihres **C**ontent **M**anagement **S**ystem (**CMS**) und geben Sie die Verbindungsinformationen für die neue Datenbank ein.
+Um die neue Datenbank mit Ihrer Website zu verbinden, bearbeiten Sie die Konfigurationsdatei Ihres **C**ontent **M**anagement **S**ystem (**CMS**) und geben Sie die Zugangsdaten für die neue Datenbank ein.
 
 > [!warning]
 >
@@ -146,33 +144,33 @@ Für weitere Informationen oder wenn Sie ein anderes CMS verwenden, lesen Sie un
 
 > [!primary]
 >
-> Die Kopie Ihrer Datenbank ist keine Migration. Die Quelldatenbank ist noch vorhanden, bis Sie sie löschen. So können Sie Ihre Website weiterhin mit der alten Datenbank neu konfigurieren.
+> Die Duplikaton Ihrer Datenbank ist keine Migration. Die Quelldatenbank bleibt bestehen, bis Sie sie löschen. Sie können also Ihre Website weiterhin mit der alten Datenbank betreiben.
 >
 
-### Anwendungsbeispiele
+### Fehlerbehebung
 
 Beim Kopieren des Datenbankinhalts können Probleme auftreten.
 
 #### In der Liste werden keine Datenbanken angezeigt
 
-Diese Benachrichtigung bedeutet, dass nur eine Datenbank aktiv ist. Zum Kopieren der Quelldatenbank ist auch eine aktive Zieldatenbank erforderlich. Dazu können Sie:
+Dies bedeutet, dass nur eine Datenbank aktiv ist. Zum Kopieren der Quelldatenbank ist auch eine aktive Zieldatenbank erforderlich. Sie haben mehrere Möglichkeiten:
 
-- Konfigurieren Sie eine neue Datenbank auf Ihrem Webhosting;
-- Konfigurieren Sie eine neue Datenbank auf Ihrem Server [Web Cloud Databases](https://www.ovhcloud.com/de/web-cloud/databases/);
-- Ein Angebot „[start SQL](https://www.ovhcloud.com/de/web-hosting/options/start-sql/)“ oder einen Datenbankserver „[Web Cloud Databases](https://www.ovhcloud.com/de/web-cloud/databases/)“ bestellen
+- Konfigurieren Sie eine neue Datenbank auf Ihrem Webhosting.
+- Konfigurieren Sie eine neue Datenbank auf Ihrem [Web Cloud Databases](https://www.ovhcloud.com/de/web-cloud/databases/) Server.
+- Bestellen Sie eine neue Datenbank innerhalb der Angebote [Start SQL](https://www.ovhcloud.com/de/web-hosting/options/start-sql/) oder [Web Cloud Databases](https://www.ovhcloud.com/de/web-cloud/databases/).
 
 #### Es wird bereits eine Aktion ausgeführt
 
-Diese Meldung bedeutet, dass bereits ein Task für die Datenbank ausgeführt wird. Gehen Sie auf den Tab `Aktuelle Tasks`{.action} und überprüfen Sie, ob Sie eine Operation durchgeführt haben. Ist das der Fall, warten Sie, bis die Kopie der Datenbank abgeschlossen ist, und wiederholen Sie dann ggf. die Kopie der Datenbank.
+Diese Meldung bedeutet, dass bereits ein Task für die Datenbank ausgeführt wird. Gehen Sie auf den Tab `Aktuelle Tasks`{.action} zum Überprüfen laufender Operationen. Ist das der Fall, warten Sie, bis der Vorgang abgeschlossen ist, und starten Sie dann ggf. die Duplikation neu.
 
 #### Die Zieldatenbank enthält nicht genügend Speicherplatz
 
 Ihre Zieldatenbank enthält nicht genügend Speicherplatz. Sie haben zwei Möglichkeiten:
 
-- Eine neue Datenbank mit mehr Speicherplatz bestellen [start-sql](https://www.ovhcloud.com/de/web-hosting/options/start-sql/).
-- Wenn Sie über einen [Web Cloud Databases](https://www.ovhcloud.com/de/web-cloud/databases/) Server verfügen, wechseln Sie zu einem Angebot Web Cloud Databases mit mehr Speicherplatz.
+- Eine neue Datenbank des Typs [Start SQL](https://www.ovhcloud.com/de/web-hosting/options/start-sql/) mit mehr Speicherplatz bestellen.
+- Wenn Sie bereits über einen [Web Cloud Databases](https://www.ovhcloud.com/de/web-cloud/databases/) Server verfügen, wechseln Sie zu einem Angebot mit mehr Speicherplatz.
 
-#### Die Quell- und Zieldatenbanken sind nicht kompatibel
+#### Quell- und Zieldatenbank sind nicht kompatibel
 
 Diese Benachrichtigung bedeutet, dass das **D**ata**b**ase **M**anagement **S**ystem (**DBMS**) Ihrer Quelldatenbank nicht mit dem DBMS Ihrer Zieldatenbank übereinstimmt.
 
@@ -182,7 +180,7 @@ Dieser Fehler kann beispielsweise auftreten, wenn Sie MySQL für die Quelldatenb
 
 [In das OVHcloud Kundencenter einloggen](/pages/account_and_service_management/account_information/ovhcloud-account-login)
 
-[Eine Datenbank auf Ihrem Datenbankserver sichern und exportieren](/pages/web_cloud/web_cloud_databases/save-export-on-database-server)
+[Datenbank auf Ihrem Datenbankserver sichern und exportieren](/pages/web_cloud/web_cloud_databases/save-export-on-database-server)
 
 [Datenbank auf Ihrem Datenbankserver wiederherstellen und importieren](/pages/web_cloud/web_cloud_databases/restore-import-on-database-server/)
 
