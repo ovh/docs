@@ -66,8 +66,10 @@ You will then be asked to confirm.
 | Then click `Edge Network Firewall configuration`{.action} to start configuring it. |
 
 On this page you can choose to **Enable** or **Disable** the firewall using the switch button. 
+It is also possible to do it using an other way explained just below.
 
 You can set up to **20 rules per IP**.
+
 
 
 > [!warning]
@@ -91,7 +93,7 @@ You can set up to **20 rules per IP**.
 > For more information, please refer to the following guides: [Configuring the firewall on Windows](/pages/bare_metal_cloud/dedicated_servers/activate-port-firewall-soft-win) and [Configuring the firewall on Linux with iptables](/pages/bare_metal_cloud/dedicated_servers/firewall-Linux-iptable).
 >
 
-To add a rule :
+**To add a rule :**
 
 | ![add-rule-btn](images/edge-firewall-add-rule.png) | 
 |:--:| 
@@ -118,6 +120,14 @@ For each **TCP** rule, you must choose :
 > [!warning]
 > Firewall setups with only "Accept" mode rules are not effective at all. There must be an instruction what to be dropped by the firewall. You will see warning unless such "Deny" rule is created.
 > 
+
+**To Activate / Desactivate firewall:**
+
+| ![activate-desactivate](images/activate-desactivate.png) | 
+|:--:| 
+| `Switch on`{.action} to activate |
+
+Please notice deactivation will only maintain the rules for as long as the Scrubbing Center is active.
 
 ### Configuration example
 
