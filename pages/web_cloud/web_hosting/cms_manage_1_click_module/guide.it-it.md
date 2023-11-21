@@ -1,6 +1,6 @@
 ---
-title: Come gestire il tuo modulo in 1 click?
-excerpt: Come gestire il tuo modulo in 1 click dallo Spazio Cliente OVHcloud
+title: "Come gestire il tuo modulo in 1 click?"
+excerpt: "Questa guida ti mostra come gestire il tuo modulo in 1 click dallo Spazio Cliente OVHcloud"
 updated: 2022-09-05
 ---
 

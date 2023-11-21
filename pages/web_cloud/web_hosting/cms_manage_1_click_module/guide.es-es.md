@@ -1,7 +1,7 @@
 ---
-title: ¿Cómo gestionar su módulo en 1 clic?
-excerpt: Cómo gestionar su módulo en 1 clic desde el área de cliente de OVHcloud
-updated: 2022-09-05
+title: "¿Cómo gestionar su módulo en 1 clic?"
+excerpt: "Descubra cómo gestionar su módulo en 1 clic desde el área de cliente de OVHcloud"
+updated: 2022-11-21
 ---
 
 > [!primary]
@@ -12,7 +12,7 @@ updated: 2022-09-05
 
 Los módulos en 1 clic permiten la instalación fácil y rápida de un programa en línea de ayuda a la creación de sitios web (comúnmente llamado "CMS"). OVHcloud le ofrece los más conocidos: WordPress, PrestaShop, Drupal y Joomla!.
 
-**Esta guía explica cómo gestionar el módulo en 1 clic desde el área de cliente de OVHcloud.**
+**Descubra cómo gestionar el módulo en 1 clic desde el área de cliente de OVHcloud.**
 
 > [!warning]
 >
