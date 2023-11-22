@@ -1,7 +1,7 @@
 ---
 title: 'Configuring a HTTP/HTTPS OVH Load Balancer service'
 excerpt: 'Find out how to configure an OVH Load Balancer service'
-updated: 2020-09-30
+updated: 2023-11-22
 ---
 
 ## Objective
