@@ -1,7 +1,7 @@
 ---
 title: "Fixing the 500 Internal Server Error"
 excerpt: "Find out how to fix some of the most common website errors"
-updated: 2023-05-16
+updated: 2023-11-22
 ---
 
 ## Objective
