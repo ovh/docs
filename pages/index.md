@@ -1067,6 +1067,7 @@
         + [Databases](web-cloud-hosting-databases)
             + [Creating and managing a database in your Web Hosting plan](web_cloud/web_hosting/sql_create_database)
             + [Changing the password for a Web Hosting plan’s database](web_cloud/web_hosting/sql_change_password)
+            + [Duplicating the contents of one database to another](web_cloud/web_hosting/copy_database)
             + [Retrieving the backup of a Web Hosting plan’s database](web_cloud/web_hosting/sql_database_export)
             + [Importing a backup into a Web Hosting plan database](web_cloud/web_hosting/sql_importing_mysql_database)
             + [Tutorial - What do I do when my database is full?](web_cloud/web_hosting/sql_overquota_database)
