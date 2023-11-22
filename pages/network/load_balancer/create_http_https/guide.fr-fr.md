@@ -1,7 +1,7 @@
 ---
 title: "Configuration d'un service OVHcloud Load Balancer avec HTTP/HTTPS"
 excerpt: Configuration d’un service Load Balancer
-updated: 2022-04-04
+updated: 2023-11-22
 ---
 
 ## Objectif
