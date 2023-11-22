@@ -1,5 +1,5 @@
 ---
-title: Risolvi gli errori più frequenti associati ai database 
+title: "Risolvi gli errori più frequenti associati ai database"
 excerpt: "Diagnostica i casi di errore più frequenti associati ai database"
 updated: 2023-10-26
 ---
