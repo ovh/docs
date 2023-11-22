@@ -1,6 +1,6 @@
 ---
-title: Cosa fare in caso di pagina « Index of »?
-excerpt: Come caricare il tuo sito online, quando visualizza una pagina « Index of »
+title: Cosa fare in caso di pagina "Index of"?
+excerpt: Come caricare il tuo sito online, quando visualizza una pagina "Index of"
 updated: 2023-05-04
 ---
 

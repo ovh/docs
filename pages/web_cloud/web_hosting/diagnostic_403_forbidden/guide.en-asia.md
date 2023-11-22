@@ -1,6 +1,6 @@
 ---
-title: What do I do if I have a 403 forbidden page?
-excerpt: How to get your website back online if it displays a 403 forbidden page
+title: "What do I do if I have a 403 forbidden page?"
+excerpt: "Find out how to get your website back online if it displays a 403 forbidden page"
 updated: 2023-06-09
 ---
 
@@ -197,4 +197,4 @@ For specialised services (SEO, development, etc.), contact [OVHcloud partners](h
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/asia/support-levels/).
 
-Join our community of users on <https://community.ovh.com/en/>. 
+Join our community of users on <https://community.ovh.com/en/>.
