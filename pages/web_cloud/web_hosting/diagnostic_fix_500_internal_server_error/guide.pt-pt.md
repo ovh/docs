@@ -1,6 +1,6 @@
 ---
-title: O que fazer em caso de erro 500 Internal Server Error?
-excerpt: Diagnosticar os casos mais comuns de erros 500
+title: "O que fazer em caso de erro 500 Internal Server Error?"
+excerpt: "Diagnosticar os casos mais comuns de erros 500"
 updated: 2023-05-16
 ---
 

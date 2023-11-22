@@ -1,6 +1,6 @@
 ---
-title: Co zrobić w przypadku błędu 500 Internal Server Error?
-excerpt: Zdiagnozuj najczęstsze przypadki błędów 500
+title: "Co zrobić w przypadku błędu 500 Internal Server Error?"
+excerpt: "Zdiagnozuj najczęstsze przypadki błędów 500"
 updated: 2023-05-16
 ---
 
