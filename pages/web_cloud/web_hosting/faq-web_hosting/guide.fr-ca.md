@@ -1,6 +1,6 @@
 ---
-title: FAQ Web Hosting
-excerpt: Retrouvez les questions les plus fréquemment posées sur les hébergements web OVHcloud
+title: "FAQ Web Hosting"
+excerpt: "Retrouvez les questions les plus fréquemment posées sur les hébergements web OVHcloud"
 updated: 2023-04-24
 ---
 

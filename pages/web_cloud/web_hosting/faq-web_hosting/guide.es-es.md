@@ -1,6 +1,6 @@
 ---
-title: FAQ Web Hosting
-excerpt: Encuentre las respuestas a las preguntas más frecuentes sobre alojamiento web
+title: "FAQ Web Hosting"
+excerpt: "Encuentre las respuestas a las preguntas más frecuentes sobre alojamiento web"
 updated: 2023-04-24
 ---
 
