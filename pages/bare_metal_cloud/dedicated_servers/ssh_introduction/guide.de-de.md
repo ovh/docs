@@ -63,7 +63,7 @@ Wenn der SSH-Port des Servers nicht der Standard-Port ist, verwenden Sie folgend
 ssh username@server_IP -p port_number
 ```
 
-### Verbindung von einem System mit Windows 10/11
+### Verbindung von einem System mit Windows
 
 Die neuesten Windows-Versionen beinhalten OpenSSH nativ für Verbindungen aus dem PowerShell-Tool oder der Eingabeaufforderung.
 

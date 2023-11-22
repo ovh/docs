@@ -61,7 +61,7 @@ Jeśli port SSH serwera nie jest portem standard, zastosuj następujące polecen
 ssh username@server_IP -p port_number
 ```
 
-### Połączenie z komputera z systemem Windows 10/11
+### Połączenie z komputera z systemem Windows
 
 Najnowsze wersje systemu Windows natywnie integrują OpenSSH, aby połączyć się z poziomu Powershell lub wiersza poleceń.
 

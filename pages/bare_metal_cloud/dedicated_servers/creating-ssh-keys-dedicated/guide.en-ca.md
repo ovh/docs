@@ -342,7 +342,7 @@ From now on, you can click on this `Session` item and open a connection to your 
 To configure another server connection, repeat the steps:
 
 - [Create the key pair](#useputty).
-- [Add the public key to your server](#addserverkey.)
+- [Add the public key to your server](#addserverkey).
 - [Enter the server details and add the key file in `PuTTY`](#puttykeys).
 
 ### Importing your SSH key into the OVHcloud Control Panel <a name="importkey"></a>
