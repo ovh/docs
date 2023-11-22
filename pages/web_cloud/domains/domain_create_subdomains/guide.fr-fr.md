@@ -47,44 +47,37 @@ Les sous-domaines (parfois appelés **préfixes**) répondent au besoin de segme
 
 En d'autres termes, les sous-domaines permettent de structurer facilement l'ensemble des services web (serveurs DNS, site web, intranet, e-mail, etc.) associés à un même nom de domaine.
 
-Comme précisé plus haut dans la partie « [objectif](#goal) », les sous-domaines correspondent au troisième niveau (*Third Level Domain*) d'un nom de domaine. Le sous-domaine le plus connu des internautes est, à ce jour, le sous-domaine **W**orld **W**ide **W**eb (**www**).
-
-En effet, beaucoup de sites web utilisent encore ce sous-domaine pour être consulté sur Internet.
+Comme précisé plus haut dans la partie « [objectif](#goal) », les sous-domaines correspondent au troisième niveau (*Third Level Domain*) d'un nom de domaine. Le sous-domaine le plus connu des internautes est, à ce jour, le sous-domaine **W**orld **W**ide **W**eb (**www**). En effet, beaucoup de sites web utilisent encore ce sous-domaine pour être consulté sur Internet.
 
 Ainsi, *www.ovhcloud.com* est un sous-domaine du nom de domaine *ovhcloud.com*.
 
-Vous pouvez créer un nombre quasi illimité de sous-domaines à partir d'un seul nom de domaine.
+Vous pouvez créer une infinité de sous-domaines à partir d'un seul nom de domaine.
 
-Si, par exemple, vous disposez du nom de domaine *domain.tld*, vous pouvez créer les sous-domaines suivants :
+Si, par exemple, vous disposez du nom de domaine *example.com*, vous pouvez créer les sous-domaines suivants :
 
-- *dns1.domain.tld* et *dns2.domain.tld* pour personnaliser vos serveurs DNS à l'aide des [GLUE records](/pages/web_cloud/domains/glue_registry);
-- *www.domain.tld* pour afficher votre site web;
-- *preprod.domain.tld* pour tester votre site web dans de nouvelles versions. Ceci sans couper l'accès de votre site web actuel à vos utilisateurs;
-- *intranet.domain.tld* pour que vos collaborateurs puissent échanger entres-eux sur votre site web interne;
-- *forum.domain.tld* ou *community.domain.tld* pour que votre communauté d'utilisateurs puisse échanger et partager son expérience;
-- *app.domain.tld* pour accéder à votre application en ligne ou pour la télécharger directement;
-- *recruitment.domain.tld* pour permettre à des candidats en recherche d'emploi de postuler sur votre propre interface de recrutement;
-- *sav.domain.tld*, *sales.domain.tld*, *legal.domain.tld* pour permettre à vos clients de contacter différentes structures interne à votre entreprise ou encore pour hiérarchiser vos salariés en fonction des services internes auxquels ils appartiennent;
+- *dns1.example.com* et *dns2.example.com* pour personnaliser vos serveurs DNS à l'aide des [GLUE records](/pages/web_cloud/domains/glue_registry);
+- *www.example.com* pour afficher votre site web;
+- *preprod.example.com* pour tester votre site web dans de nouvelles versions. Ceci sans couper l'accès de votre site web actuel à vos utilisateurs;
+- *intranet.example.com* pour que vos collaborateurs puissent échanger entres-eux sur votre site web interne;
+- *forum.example.com* ou *community.example.com* pour que votre communauté d'utilisateurs puisse échanger et partager son expérience;
+- *app.example.com* pour accéder à votre application en ligne ou pour la télécharger directement;
+- *recruitment.example.com* pour permettre à des candidats en recherche d'emploi de postuler sur votre propre interface de recrutement;
+- *sav.example.com*, *sales.example.com*, *legal.example.com* pour permettre à vos clients de contacter différentes structures interne à votre entreprise ou encore pour hiérarchiser vos salariés en fonction des services internes auxquels ils appartiennent;
 - etc.
 
-> [!success]
->
-> Au delà du troisième niveau de domaine (quatrième, cinquième, etc.), on considère qu'il s'agit là également de **sous-domaines**.
->
-> Effectivement, pour reprendre l'un des exemples ci-dessus, vous pouvez tout à fait créer le sous-domaine *preprod.app.domain.tld* pour tester la nouvelle version de votre application web. Ceci sans couper l'accès à la version actuelle de votre application sur *app.domain.tld*.
->
+Au delà du troisième niveau de domaine, on considère qu'il s'agit là également de **sous-domaines**. Pour reprendre l'un des exemples ci-dessus, vous pouvez tout à fait créer le sous-domaine *preprod.app.example.com* pour tester la nouvelle version de votre application web. Ceci sans couper l'accès à la version actuelle de votre application sur *app.example.com*.
 
 ### Créer un sous-domaine
 
 Les [noms de domaine](https://www.ovhcloud.com/fr/domains/) ont tous besoin d'une **zone DNS** pour fonctionner. La zone DNS se compose d’informations techniques, appelées *enregistrements DNS*. Elle est, en quelque sorte, comme un centre d'aiguillage.
 
-Pour plus de détails sur les zones DNS, consultez notre guide « [Créer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_create) ».
+Pour plus de détails sur les zones DNS, consultez notre guide « [Créer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_create) » et « [Editer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit) ».
 
 **Tous les sous-domaines se configurent dans la zone DNS active du nom de domaine. Ceci en y ajoutant des enregistrements DNS**
 
 #### 1 - Identifier l'endroit où se trouve la zone DNS active de votre nom de domaine
 
-Deux cas de figure sont possibles : 
+Deux cas de figure sont possibles :
 
 - La zone DNS active de votre nom de domaine est présente chez OVHcloud;
 - La zone DNS active de votre nom de domaine est hébergée ailleurs.
@@ -100,16 +93,16 @@ Deux cas de figure sont possibles :
 
 Si les serveurs DNS déclarés pour votre nom de domaine ont l'une des deux formes suivantes :
 
-- *dnsXX.ovh.net* et *nsXX.ovh.net* (ou chacun des « X » représente un chiffre compris entre 0 et 9);
+- *dnsXX.ovh.net* et *nsXX.ovh.net* (ou chacun des « X » représente un chiffre);
 - *dns200.anycast.me* et *ns200.anycast.me*.
 
-Cela signifie que la zone DNS active de votre nom de domaine est bien présente chez OVHcloud.
+Cela signifie que la zone DNS active de votre nom de domaine est bien active chez OVHcloud.
 
 Dans le cas contraire, contactez votre fournisseur DNS pour créer des sous-domaines avec votre nom de domaine.
 
 #### 2 - Créer les enregistrements DNS pour vos sous-domaines
 
-Pour ajouter vos sous-domaines, à l'aide d'enregistrements DNS, dans la zone DNS active de votre nom de domaine, consultez notre guide « [Editer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit) ».
+Pour ajouter vos sous-domaines dans la zone DNS active de votre nom de domaine, consultez notre guide « [Editer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit) ».
 
 Par exemple, vous pourrez y ajouter :
 
@@ -117,7 +110,7 @@ Par exemple, vous pourrez y ajouter :
 - Les serveurs e-mail (enregistrements DNS de type *MX*) vers lesquels votre sous-domaine doit rediriger les e-mails qu'il reçoit. Cela vous permet de les consulter sur votre (vos) adresse(s) e-mail(s) personnalisée(s) avec votre sous-domaine.
 - Des informations liées à la sécurité / l'authentification de vos services (hébergement web, serveur web, e-mail, etc.) associés à l'un de vos sous-domaines (enregistrements DNS de type *SPF*, *DKIM*, *DMARC*, etc.).
 
-> [!success]
+> [!primary]
 >
 > La modification d'une zone DNS associée à un nom de domaine entraine un délai de propagation de **4** à **24** heures maximum pour que celle-ci soit effective.
 >
@@ -126,35 +119,35 @@ Par exemple, vous pourrez y ajouter :
 > Effectivement, pour des raisons de sécurité, vous devrez également autoriser le sous-domaine à pouvoir accéder au service *cible* (hébergement web, e-mail, etc.).
 >
 
-Dans la partie qui suit, nous allons vous indiquer quelques exemples sur la façon d'autoriser un sous-domaine à pouvoir accéder sur différents services de l'univers « Web cloud » (hébergement web, serveur Exchange, etc.) proposés par OVHcloud.
+Dans la partie suivante, découvrez comment autoriser un sous-domaine à pouvoir accéder aux différents services de l'univers « Web cloud » (hébergement web, serveur Exchange, etc.) proposés par OVHcloud.
 
-> [!primary]
+> [!warning]
 >
 > Si vous souhaitez configurer un sous-domaine pour un service hébergé ailleurs que chez OVHcloud, nous ne serons pas en mesure de vous apporter une assistance sur le sujet. Nous vous invitons à contacter le fournisseur de votre service externe pour poursuivre votre configuration. 
 >
 
 ### Associer, autoriser et configurer votre sous-domaine avec un service OVHcloud
 
-Plusieurs services de l'univers « Web cloud » peuvent être utilisées avec un sous-domaine. Les procédures d'association sont similaires à celles que vous devriez exécuter avec un nom de domaine. Nous allons ci-après vous exposer uniquement les cas les plus courants.
+Plusieurs services de l'univers « Web cloud » peuvent être utilisées avec un sous-domaine. Les procédures d'association sont similaires à celles que vous devriez exécuter avec un nom de domaine. Nous allons vous exposer uniquement les cas les plus courants.
 
-Pour les autres services qui ne seraient pas mentionnés ci-après, consultez la documentation relative au service concerné. Ceci afin de savoir si ce dernier peut êre utilisé avec un sous-domaine.
+Pour les services qui ne seraient pas mentionnés, consultez la documentation relative au service concerné. Ceci afin d'identifier si ce dernier peut êre utilisé avec un sous-domaine.
 
 #### Cas 1 : Afficher un site web présent sur mon hébergement web OVHcloud avec un sous-domaine
 
 Tout comme pour un nom de domaine et pour autoriser un sous-domaine à afficher le contenu d'un dossier *cible* présent sur un hébergement web, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} et sélectionnez `Web Cloud`{.action}. Cliquez sur `Hébergements`{.action} dans la colonne de gauche, sélectionnez l'offre concernée où se trouve votre site web, puis choisissez l'onglet `Multisite`{.action}.
 
-C'est à cet endroit que vous pourrez autoriser l'accès de votre sous-domaine à votre hébergement web où se trouve votre site web.
+C'est ici que vous autorisez l'accès de votre sous-domaine à votre hébergement web où se trouve votre site web.
 
-Pour plus de détails sur la configuration d'un domaine ou d'un sous-domaine sur un hébergement web, consultez notre guide « [Partager son hébergement entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite) ». Qu'il s'agisse d'un nom de domaine ou un sous-domaine, la procédure est strictement la même.
+Pour plus de détails sur la configuration d'un domaine ou d'un sous-domaine sur un hébergement web, consultez notre guide « [Partager son hébergement entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite) ». Qu'il s'agisse d'un nom de domaine ou un sous-domaine, la procédure est la même.
 
 > [!warning]
 >
-> L'ajout en multisite d'un nom de domaine ou d'un sous-domaine peut parfois nécessiter la mise en place d'un *token* de validation. Parfois, pour un sous-domaine, ce même *token* n'est pas pris en compte et doit être ajouter non pas pour le sous-domaine mais pour le nom de domaine en lui-même. Dans ce cas, ajouter en complément le *token* sous la forme d'un enregistrement DNS de type TXT pour le nom de domaine, et ce, dans la zone DNS active de votre nom de domaine.
+> L'ajout en multisite d'un nom de domaine ou d'un sous-domaine peut nécessiter la mise en place d'un *token* de validation. Pour un sous-domaine, ce même *token* n'est pas pris en compte et doit être ajouter non pas pour le sous-domaine mais pour le nom de domaine. Dans ce cas, ajouter en complément le *token* sous la forme d'un enregistrement DNS de type TXT pour le nom de domaine dans la zone DNS active de votre nom de domaine.
 >
 
 #### Cas 2 - Créer des adresses e-mail Exchange avec un sous-domaine
 
-Tout comme pour un nom de domaine et pour débloquer la création d'adresses e-mail Exchange personnalisées avec un sous-domaine, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} et sélectionnez `Web Cloud`{.action}. Cliquez sur `Microsoft`{.action} dans la colonne de gauche, puis sur `Exchange`{.action}. Sélectionnez ensuite la plateforme Exchange que vous souhaitez utiliser avec votre sous-domaine. Sur la page qui s'affiche, rendez-vous dans l'onglet `Domaine associés`{.action} puis cliquez sur le bouton `Ajouter un domaine`{.action} à droite.
+Pour débloquer la création d'adresses e-mail Exchange personnalisées avec un sous-domaine, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} et sélectionnez `Web Cloud`{.action}. Cliquez sur `Microsoft`{.action} dans la colonne de gauche, puis sur `Exchange`{.action}. Sélectionnez ensuite la plateforme Exchange que vous souhaitez utiliser avec votre sous-domaine. Sur la page qui s'affiche, rendez-vous dans l'onglet `Domaine associés`{.action} puis cliquez sur le bouton `Ajouter un domaine`{.action} à droite.
 
 Vous pourrez ainsi déclarer votre sous-domaine sur votre plateforme Exchange.
 
@@ -166,7 +159,7 @@ Pour plus de détails sur la configuration d'une plateforme Exchange, consultez 
 
 #### Cas 3 - Créer des adresses E-mail Pro avec un sous-domaine
 
-Tout comme pour un nom de domaine et pour débloquer la création d'adresses E-mail Pro personnalisées avec un sous-domaine, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} et sélectionnez `Web Cloud`{.action}. Cliquez sur `E-mails Pro`{.action}, puis sélectionnez ensuite la plateforme E-mail Pro que vous souhaitez utiliser avec votre sous-domaine. Su la page qui s'affiche, rendez-vous dans l'onglet `Domaine associés`{.action} puis cliquez sur le bouton `Ajouter un domaine`{.action} à droite.
+Pour débloquer la création d'adresses E-mail Pro personnalisées avec un sous-domaine, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} et sélectionnez `Web Cloud`{.action}. Cliquez sur `E-mails Pro`{.action}, puis sélectionnez ensuite la plateforme E-mail Pro que vous souhaitez utiliser avec votre sous-domaine. Su la page qui s'affiche, rendez-vous dans l'onglet `Domaine associés`{.action} puis cliquez sur le bouton `Ajouter un domaine`{.action} à droite.
 
 Vous pourrez ainsi déclarer votre sous-domaine sur votre plateforme E-mail Pro.
 
@@ -193,9 +186,9 @@ Pour plus de détails sur la configuration d'une plateforme E-mail Pro, consulte
 [Ajouter un nom de domaine sur une plateforme e-mail](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain)
 
 [Ajouter un enregistrement CNAME pour valider votre domaine sur votre offre e-mail](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_dns_cname)
- 
+
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
- 
+
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
- 
+
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
