@@ -16,13 +16,13 @@ The goal of this tutorial is to see how it is possible to deploy **Triton Infere
 
 ## Requirements
 
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es).
-- [ovhai CLI](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli) installed.
-- An AI Training project created inside a [Public Cloud project](https://www.ovhcloud.com/es-es/public-cloud/) in your OVHcloud account.
-- A [user for AI Training](/pages/public_cloud/ai_machine_learning/gi_01_manage_users).
-- [Docker](https://www.docker.com/get-started) installed on your local computer or on a Virtual Machine.
-- Some knowledge about Docker images and [Dockerfile](https://docs.docker.com/engine/reference/builder/).
-- Some basics on [NVIDIA Triton Inference Server](https://docs.nvidia.com/deeplearning/triton-inference-server/user-guide/docs/getting_started/quickstart.html).
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es)
+- [ovhai CLI](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli) installed
+- An AI Training project created inside a [Public Cloud project](https://www.ovhcloud.com/es-es/public-cloud/) in your OVHcloud account
+- A [user for AI Training](/pages/public_cloud/ai_machine_learning/gi_01_manage_users)
+- [Docker](https://www.docker.com/get-started) installed on your local computer or on a Virtual Machine
+- Some knowledge about Docker images and [Dockerfile](https://docs.docker.com/engine/reference/builder/)
+- Some basics on [NVIDIA Triton Inference Server](https://docs.nvidia.com/deeplearning/triton-inference-server/user-guide/docs/getting_started/quickstart.html)
 
 ## Instructions
 

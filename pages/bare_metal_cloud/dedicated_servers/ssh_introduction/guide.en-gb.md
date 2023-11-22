@@ -53,7 +53,7 @@ If the SSH port of the server is not the standard one, use this command instead:
 ssh username@server_IP -p port_number
 ```
 
-### Connecting from a Windows 10/11 device
+### Connecting from a Windows device
 
 The latest versions of Windows natively include OpenSSH for connections from the PowerShell or the Command Prompt application.
 
@@ -122,7 +122,7 @@ Alternatively, open the `known_hosts` file located in your home folder with a te
 nano ~/.ssh/known_hosts
 ```
 
-Save the changes and exit the editor. The new fingerprint has to be accepted at the next server login.
+Save the changes and exit the editor. You will have to confirm the new fingerprint at the next server login.
 
 On Windows, the location of the `known_hosts` file and the line you have to delete are specified as well, for example:
 
@@ -134,7 +134,7 @@ Navigate to this folder, right-click on the file and open it with the Notepad ap
 
 ![known_hosts](images/windowskh.png){.thumbnail}
 
-Delete the pertinent line, in this case the third one. Save the changes and exit the editor. The new fingerprint has to be accepted at the next server login.
+Delete the pertinent line, in this case the third one. Save the changes and exit the editor. You will have to confirm the new fingerprint at the next server login.
 
 ### Using GUI clients or SSH-compatible software
 

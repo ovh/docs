@@ -1,7 +1,7 @@
 ---
 title: Crear y utilizar llaves SSH
 excerpt: Cómo crear una llave SSH para realizar una conexión segura a un servidor
-updated: 2023-07-24
+updated: 2023-11-22
 ---
 
 > [!primary]
@@ -211,7 +211,7 @@ Para almacenar la clave para el usuario actual, abra (o cree) el archivo `author
 nano ~/.ssh/authorized_keys
 ```
 
-Pegue su [clave pública](#publickey) en este archivo. Guarde el archivo y salga del editor. Reinicie el servidor o reinicie únicamente el servicio OpenSSH con uno de los siguientes comandos (el comando adecuado puede variar en función del sistema operativo):
+Pegue su [clave pública](#publickey) en este archivo. Guarde el archivo y salga del editor. Reinicie el servidor (`sudo reboot`) o reinicie únicamente el servicio OpenSSH con uno de los siguientes comandos (el comando adecuado puede variar en función del sistema operativo):
 
 ```bash
 sudo systemctl restart ssh

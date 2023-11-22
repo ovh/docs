@@ -1,7 +1,7 @@
 ---
 title: Créer et utiliser des clés SSH
 excerpt: Découvrez comment créer une clé SSH pour effectuer une connexion sécurisée à votre serveur dédié
-updated: 2023-07-24
+updated: 2023-11-22
 ---
 
 ## Objectif
@@ -209,7 +209,7 @@ Pour stocker la clé pour l'utilisateur actuel, ouvrez (ou créez) le fichier `a
 nano ~/.ssh/authorized_keys
 ```
 
-Collez votre [**clé publique**](#publickey) dans ce fichier. Enregistrez le fichier et quittez l’éditeur. Redémarrez votre serveur ou redémarrez uniquement le service OpenSSH avec l'une des commandes suivantes (la commande appropriée peut varier en fonction de votre système d'exploitation) :
+Collez votre [**clé publique**](#publickey) dans ce fichier. Enregistrez le fichier et quittez l’éditeur. Redémarrez votre serveur (`sudo reboot`) ou redémarrez uniquement le service OpenSSH avec l'une des commandes suivantes (la commande appropriée peut varier en fonction de votre système d'exploitation) :
 
 ```bash
 sudo systemctl restart ssh

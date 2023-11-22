@@ -432,7 +432,7 @@ Im Web finden Sie viele Wissensressourcen, um Ihre Praxis zu verbessern, ganze E
 
 Zahlreiche kostenlose Tools erlauben es, Ihre Bilddateien zu überarbeiten:
 
-- Windows 10/11 [Photos App](https://apps.microsoft.com/store/detail/photos-microsoft/9WZDNCRFJBH4)
+- Windows [Photos App](https://apps.microsoft.com/store/detail/photos-microsoft/9WZDNCRFJBH4)
 - macOS [Photos App](https://support.apple.com/de-de/guide/photos/welcome/mac)
 - [Paint.Net](https://www.getpaint.net/), [GIMP](https://www.gimp.org/), [darktable](https://www.darktable.org/)
 - Für Android oder iOS verfügbare Apps
@@ -441,7 +441,7 @@ Online-Ressourcen:
 
 - [Compressor](https://compressor.io/)
 - [ShrinkMe](https://shrinkme.app/)
-- [Free Online Image Optimiser]](https://kraken.io/web-interface)
+- [Free Online Image Optimiser](https://kraken.io/web-interface)
 - [TinyJPG](https://tinyjpg.com/) und [TinyPNG](https://tinypng.com/)
 
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
