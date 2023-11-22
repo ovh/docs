@@ -1,7 +1,7 @@
 ---
 title: "Configuration d'un service OVHcloud Load Balancer avec HTTP/HTTPS"
 excerpt: Configuration d’un service Load Balancer
-updated: 2022-04-04
+updated: 2023-11-22
 ---
 
 ## Objectif
@@ -247,6 +247,15 @@ Pour que les opérations de validation et de renouvellement fonctionnent, il est
 > 
 
 Les certificats configurés sur votre service OVHcloud Load Balancer sont automatiquement disponibles pour l'ensemble des frontend de votre service OVHcloud Load Balancer sur lesquels l'options *SSL* est activée.
+
+#### Support de TLS 1.3
+Avec l'évolution constante des normes de sécurité sur Internet, OVHcloud s'engage à fournir les technologies les plus récentes et les plus sûres pour vos services. Le Load Balancer OVHcloud supporte désormais TLS 1.3.
+
+##### Qu'est-ce que TLS 1.3 ?
+TLS 1.3 est la dernière version du protocole TLS, offrant des améliorations significatives en matière de sécurité et de performance par rapport à TLS 1.2. Les avantages clés incluent un processus de handshake plus rapide, réduisant ainsi le temps nécessaire pour établir des connexions sécurisées, et l'utilisation de suites de chiffrement plus sûres pour renforcer la sécurité des données transmises.
+
+##### Pourquoi utiliser TLS 1.3 avec OVHcloud Load Balancer ?
+En intégrant TLS 1.3, votre Load Balancer OVHcloud bénéficiera d'une sécurité renforcée et d'une performance améliorée, assurant une expérience utilisateur optimale pour vos visiteurs. La réduction du temps de handshake accélère le chargement des pages, tandis que les améliorations de sécurité garantissent que vos données sont protégées avec les normes les plus récentes et les plus sûres.
 
 #### Depuis l'espace client OVHcloud
 
