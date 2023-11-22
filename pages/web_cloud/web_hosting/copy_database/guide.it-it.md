@@ -146,7 +146,7 @@ Per maggiori informazioni o se utilizzi un altro CMS, consulta la nostra guida [
 
 > [!primary]
 >
-> Copiare il database non è una migrazione. Il database di origine esiste ancora fino a quando non viene eliminato. In questo modo è possibile riconfigurare il sito Web con il database precedente.
+> Copiare il database non è una migrazione. Il database di origine esiste ancora fino a quando non viene eliminato. Ciò significa che, se necessario, potrete sempre riconfigurare il vostro sito web con il vecchio database.
 >
 
 ### Casi d'uso
@@ -174,7 +174,7 @@ Spazio insufficiente nel database di destinazione. Le soluzioni disponibili sono
 
 #### I database di origine e di destinazione sono incompatibili
 
-Questa notifica significa che il **D**ata**b**ase **M**anagement **S**ystem (**DBMS**) del database di origine non è lo stesso del SGBD del database di destinazione.
+Questa notifica significa che il **D**ata**b**ase **M**anagement **S**ystem (**DBMS**) del database di origine non è lo stesso del DBMS del database di destinazione.
 
 Ad esempio, questo errore può verificarsi quando si utilizza MySQL per il database di origine e PostgreSQL per il database di destinazione.
 

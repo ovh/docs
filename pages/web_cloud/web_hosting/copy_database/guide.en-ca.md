@@ -142,7 +142,7 @@ For more details, or if you are using another CMS, please refer to our guide on 
 
 > [!primary]
 >
-> Copying your database is not a migration. Your source database still exists until you delete it. This way, you can still reconfigure your website with its old database.
+> Copying your database is not a migration. Your source database still exists until you delete it. This way, you can still reconfigure your website with its old database if necessary.
 >
 
 ### Troubleshooting
