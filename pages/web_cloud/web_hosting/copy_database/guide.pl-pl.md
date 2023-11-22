@@ -30,7 +30,7 @@ Twoja baza danych jest kluczowym elementem w budowaniu dynamicznej strony WWW. W
 Zanim rozpoczniesz, upewnij się, że:
 
 - Twój **D**ata**b**ase **M**anagement **S**ystem (MySQL, PostgreSQL, etc.) jest taki sam dla obu baz danych (źródłowa i docelowa).
-- Wersja systemu zarządzania bazami danych jest taka sama dla obu baz (źródłowej i docelowej). Nawet jeśli kopiowanie może działać z różnymi wersjami, zaleca się korzystanie z tych samych wersji.
+- Wersja DBMS jest taka sama dla obu baz (źródłowej i docelowej). Nawet jeśli kopiowanie może działać z różnymi wersjami, zaleca się korzystanie z tych samych wersji.
 - Zawartość źródłowej bazy danych nie może przekraczać rozmiaru docelowej bazy danych.
 
 ### Identyfikacja źródłowej bazy danych

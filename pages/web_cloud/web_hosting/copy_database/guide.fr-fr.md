@@ -142,7 +142,7 @@ Pour plus de détail, ou si vous utilisez un autre CMS, consultez notre guide [M
 
 > [!primary]
 >
-> La copie de votre base de données n’est pas une migration. Votre base de données source existe toujours tant que vous ne la supprimez pas. Vous pourrez ainsi toujours reconfigurer votre site web avec son ancienne base de données.
+> La copie de votre base de données n’est pas une migration. Votre base de données source existe toujours tant que vous ne la supprimez pas. Vous pourrez ainsi toujours reconfigurer votre site web avec son ancienne base de données si nécessaire.
 >
 
 ### Cas d'usages
@@ -153,8 +153,8 @@ Durant le processus de copie du contenu de la base de données, vous pouvez renc
 
 Cette notification signifie que vous ne possédez qu’une seule base de données active. Pour copier votre base de données source, il vous faut également une base de données de destination active. Pour cela, vous pouvez:
 
-- Configurez une nouvelle base de données disponible sur votre hébergement web;
-- Configurez une nouvelle base de données sur votre serveur [Web Cloud Databases](https://www.ovhcloud.com/fr/web-cloud/databases/);
+- Configurer une nouvelle base de données disponible sur votre hébergement web;
+- Configurer une nouvelle base de données sur votre serveur [Web Cloud Databases](https://www.ovhcloud.com/fr/web-cloud/databases/);
 - Commander une offre « [start SQL](https://www.ovhcloud.com/fr/web-hosting/options/start-sql/) » ou un serveur de bases de données « [Web Cloud Databases](https://www.ovhcloud.com/fr/web-cloud/databases/) »
 
 #### Vous avez déjà une action en cours

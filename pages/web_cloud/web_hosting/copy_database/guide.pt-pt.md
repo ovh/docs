@@ -30,7 +30,7 @@ A sua base de dados é um elemento central na construção do seu website dinâm
 Antes de começar, certifique-se de que:
 
 - O seu **D**ata**b**ase **M**anagement **S**ystem (MySQL, PostgreSQL, etc.) é o mesmo para as suas duas bases de dados (origem e destino).
-- A versão do seu SGBD é a mesma para as suas duas bases de dados (origem e destino). Embora a cópia possa funcionar com versões diferentes, é aconselhável usar as mesmas versões.
+- A versão do seu DBMS é a mesma para as suas duas bases de dados (origem e destino). Embora a cópia possa funcionar com versões diferentes, é aconselhável usar as mesmas versões.
 - O conteúdo da base de dados de origem não deve exceder a dimensão da base de dados de destino.
 
 ### Identificar a minha base de dados de origem
@@ -157,8 +157,8 @@ Durante o processo de cópia do conteúdo da base de dados, poderá encontrar di
 
 Esta notificação significa que dispõe de apenas uma base de dados ativa. Para copiar a base de dados de origem, é também necessário um banco de dados de destino ativo. Para isso, pode:
 
-- Configure uma nova base de dados disponível no seu alojamento web;
-- Configure uma nova base de dados no seu servidor [Web Cloud Databases](https://www.ovhcloud.com/pt/web-cloud/databases/);
+- Configurar uma nova base de dados disponível no seu alojamento web;
+- Configurar uma nova base de dados no seu servidor [Web Cloud Databases](https://www.ovhcloud.com/pt/web-cloud/databases/);
 - Encomendar uma oferta "[start SQL](https://www.ovhcloud.com/pt/web-hosting/options/start-sql/)" ou um servidor de bases de dados "[Web Cloud Databases](https://www.ovhcloud.com/pt/web-cloud/databases/)"
 
 #### Já tem uma ação em curso
@@ -174,7 +174,7 @@ A sua base de dados de destino não contém espaço suficiente. Pode usufruir de
 
 #### As bases de dados de origem e de destino são incompatíveis
 
-Esta notificação significa que o **D**ata**b**ase **M**anagement **S**ystem (**DBMS**) da sua base de dados de origem não é o mesmo que o SGBD da sua base de dados de destino.
+Esta notificação significa que o **D**ata**b**ase **M**anagement **S**ystem (**DBMS**) da sua base de dados de origem não é o mesmo que o DBMS da sua base de dados de destino.
 
 Por exemplo, este erro pode ocorrer quando utiliza MySQL para a sua base de dados source e PostgreSQL para a sua base de dados de destino.
 

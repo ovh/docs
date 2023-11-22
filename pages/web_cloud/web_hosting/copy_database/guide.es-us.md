@@ -146,7 +146,7 @@ Para más información, o si utiliza otro CMS, consulte nuestra guía [Cambiar l
 
 > [!primary]
 >
-> La copia de la base de datos no es una migración. La base de datos de origen seguirá existiendo hasta que la elimine. De este modo, siempre podrá reconfigurar su sitio web con su antigua base de datos.
+> La copia de la base de datos no es una migración. La base de datos de origen seguirá existiendo hasta que la elimine. De este modo, siempre podrá reconfigurar su sitio web con su antigua base de datos, si es necesario.
 >
 
 ### Casos prácticos
@@ -157,8 +157,8 @@ Puede haber problemas durante el proceso de copia del contenido de la base de da
 
 Esta notificación significa que sólo tiene una base de datos activa. Para copiar la base de datos de origen, también necesita una base de datos de destino activa. Para ello, puede:
 
-- Configure una nueva base de datos disponible en su alojamiento web;
-- Configure una nueva base de datos en su servidor [Web Cloud Databases](https://www.ovhcloud.com/es/web-cloud/databases/);
+- Configurar una nueva base de datos disponible en su alojamiento web;
+- Configurar una nueva base de datos en su servidor [Web Cloud Databases](https://www.ovhcloud.com/es/web-cloud/databases/);
 - Contratar un servicio "[start SQL](https://www.ovhcloud.com/es/web-hosting/options/start-sql/)" o un servidor de bases de datos "[Web Cloud Databases](https://www.ovhcloud.com/es/web-cloud/databases/)"
 
 #### Ya tiene una acción en curso
@@ -174,7 +174,7 @@ No hay suficiente espacio en la base de datos de destino. Puede elegir entre dos
 
 #### Las bases de datos de origen y de destino no son compatibles
 
-Esta notificación significa que el **S**istema de **G**estión de **B**ases de **D**atos (**SGBD**) de la base de datos de origen no es el mismo que el DBMS de la base de datos de destino.
+Esta notificación significa que el **S**istema de **G**estión de **B**ases de **D**atos (**SGBD**) de la base de datos de origen no es el mismo que el SGBD de la base de datos de destino.
 
 Por ejemplo, este error puede producirse al utilizar MySQL para la base de datos de origen y PostgreSQL para la base de datos de destino.
 
