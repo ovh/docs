@@ -1,7 +1,7 @@
 ---
 title: SSH-Schlüssel erstellen und verwenden
 excerpt: Erfahren Sie hier, wie Sie SSH-Schlüssel für eine sichere Verbindung zu Ihrem Server verwenden
-updated: 2023-07-24
+updated: 2023-11-22
 ---
 
 > [!primary]
@@ -227,7 +227,7 @@ Um den Schlüssel für den aktuellen Benutzer zu speichern, öffnen (oder erstel
 nano ~/.ssh/authorized_keys
 ```
 
-Fügen Sie Ihren [**öffentlichen Schlüssel**](#publickey) in diese Datei ein. Speichern Sie die Datei, und beenden Sie den Editor. Starten Sie Ihren Server oder nur den OpenSSH-Dienst mit einem der folgenden Befehle neu (der entsprechende Befehl kann je nach Betriebssystem variieren):
+Fügen Sie Ihren [**öffentlichen Schlüssel**](#publickey) in diese Datei ein. Speichern Sie die Datei, und beenden Sie den Editor. Starten Sie Ihren Server neu (`sudo reboot`) oder nur den OpenSSH-Dienst mit einem der folgenden Befehle (der entsprechende Befehl kann je nach Betriebssystem variieren):
 
 ```bash
 sudo systemctl restart ssh

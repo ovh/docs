@@ -1,7 +1,7 @@
 ---
 title: Twórz i używaj kluczy SSH
 excerpt: Dowiedz się, jak utworzyć klucz SSH w celu nawiązania bezpiecznego połączenia z serwerem
-updated: 2023-07-24
+updated: 2023-11-22
 ---
 
 > [!primary]
@@ -213,7 +213,7 @@ Aby zapisać klucz dla bieżącego użytkownika, otwórz (lub utwórz) plik `aut
 nano ~/.ssh/authorized_keys
 ```
 
-Wklej [**klucz publiczny**](#publickey) do tego pliku. Zapisz plik i zamknij edytor. Uruchom ponownie serwer lub tylko zrestartuj usługę OpenSSH za pomocą jednego z następujących poleceń (odpowiednie polecenie może się różnić w zależności od Twojego systemu operacyjnego):
+Wklej [**klucz publiczny**](#publickey) do tego pliku. Zapisz plik i zamknij edytor. Uruchom ponownie serwer  (`sudo reboot`) lub tylko zrestartuj usługę OpenSSH za pomocą jednego z następujących poleceń (odpowiednie polecenie może się różnić w zależności od Twojego systemu operacyjnego):
 
 ```bash
 sudo systemctl restart ssh

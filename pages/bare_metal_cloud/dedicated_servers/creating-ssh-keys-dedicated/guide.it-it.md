@@ -1,7 +1,7 @@
 ---
 title: Creare e utilizzare chiavi SSH
 excerpt: Scopri come creare una chiave SSH per effettuare una connessione sicura al tuo server
-updated: 2023-07-24
+updated: 2023-11-22
 ---
 
 > [!primary]
@@ -213,7 +213,7 @@ Per archiviare la chiave per l’utente corrente, aprire (o creare) il file `aut
 nano ~/.ssh/authorized_keys
 ```
 
-Incolla la tua [chiave pubblica](#publickey) in questo file. Salvare il file e uscire dall'editor. Riavvia il server o riavvia il servizio OpenSSH utilizzando uno dei comandi seguenti (il comando appropriato può variare in base al sistema operativo):
+Incolla la tua [chiave pubblica](#publickey) in questo file. Salvare il file e uscire dall'editor. Riavvia il server (`sudo reboot`) o riavvia il servizio OpenSSH utilizzando uno dei comandi seguenti (il comando appropriato può variare in base al sistema operativo):
 
 ```bash
 sudo systemctl restart ssh
