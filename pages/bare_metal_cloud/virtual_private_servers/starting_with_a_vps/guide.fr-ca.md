@@ -92,7 +92,7 @@ Vous trouverez toutes les informations sur les solutions de sauvegarde disponibl
 
 #### Abonnement
 
-Ces sections présentent les informations les plus importantes concernant la facturation de votre service. Retrouvez toutes les informations sur ce sujet dans la [documentation correspondante](/products/account-and-service-management-billing-payment-and-services).
+Ces sections présentent les informations les plus importantes concernant la facturation de votre service. Retrouvez toutes les informations sur ce sujet dans la [documentation correspondante](/products/account-and-service-management-managing-billing-payments-and-services).
 
 ### Fonctions VPS disponibles dans l’onglet « Accueil »
 

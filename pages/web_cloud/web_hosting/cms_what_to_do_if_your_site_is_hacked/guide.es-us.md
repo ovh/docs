@@ -178,7 +178,7 @@ Su sitio web debería reaparecer si estas acciones se han realizado correctament
 
 #### Caso n°3 - No hay ninguna copia de seguridad disponible para su sitio web
 
-Deberá eliminar manualmente los archivos y códigos maliciosos detectados anteriormente en [el paso 2] (#step2) de esta guía y corregir los fallos de seguridad de su sitio web.
+Deberá eliminar manualmente los archivos y códigos maliciosos detectados anteriormente en [el paso 2](#step2) de esta guía y corregir los fallos de seguridad de su sitio web.
 
 Para conectarse al espacio de almacenamiento de su alojamiento, consulte [nuestra guía](/pages/web_cloud/web_hosting/ftp_connection) sobre el asunto.
 
