@@ -26,7 +26,7 @@ Il est possible de voir apparaître sur votre navigateur Internet la page d'erre
 
 ## En pratique
 
-La page **Site non installé** s’affiche dans deux situations :
+La page **Site non installé** s’affiche pour deux raisons :
 
 - 1: [Votre nom de domaine ou votre sous-domaine n’est pas déclaré correctement sur votre hébergement web](#check-multisites).
 
@@ -48,11 +48,11 @@ Sélectionnez l'hébergement web concerné dans la liste, puis cliquez sur l’o
 
 ### Étape 2 - Vérifier le pointage IP dans la zone DNS active de votre nom de domaine <a name="check-dns-domain"></a>
 
+Cette étape consiste à vérifier que votre nom de domaine ou sous-domaine pointe bien vers l'adresse IP de votre hébergement web, depuis sa zone DNS active.
+
 > [!primary]
 >
-> Cette étape consiste à vérifier que, dans la zone DNS active de votre nom de domaine ou votre sous-domaine, celui-ci pointe bien vers l'adresse IP de l’hébergement où se trouve votre site web.
->
-> Pour en savoir plus sur la notion de DNS, consultez les guides suivants : 
+> Pour en savoir plus sur la notion de DNS, consultez les pages suivantes :
 > 
 > -[Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit);
 > -[Créer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_create);
@@ -61,9 +61,9 @@ Sélectionnez l'hébergement web concerné dans la liste, puis cliquez sur l’o
 
 #### 2\.1 Identifier l’adresse IP de votre hébergement web OVHcloud
 
-Pour retrouver l'adresse IP, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), puis rendez-vous dans la partie `Web Cloud`{.action} situé en haut de la page. Cliquez sur l'onglet `Hébergements`{.action} dans la colonne de gauche, puis sélectionnez l'hébergement web concerné dans la liste.
+Pour retrouver l'adresse IP de votre hébergement web, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), puis rendez-vous dans la partie `Web Cloud`{.action} situé en haut de la page. Cliquez sur l'onglet `Hébergements`{.action} dans la colonne de gauche, puis sélectionnez l'hébergement web concerné dans la liste.
 
-Vous y retrouverez l'adresse `IPv4` dans l'encadré `Informations générales`{.action}.
+Vous retrouverez l'adresse `IPv4` dans l'encadré `Informations générales`{.action}.
 
 ![hosting-general-informations](images/hosting-general-informations.png){.thumbnail}
 
@@ -75,7 +75,7 @@ Vous devez maintenant vérifier que l'adresse IP de votre hébergement web appar
 
 > [!primary]
 >
-> Avant de poursuivre, sachez que, dès lors où une modification survient dans la **zone DNS** active d'un nom de domaine, un délai de **4 à 24 heures** est nécessaire à la propagation de cette mise à jour sur le réseau DNS.
+> Avant de poursuivre, dès lors où une modification survient dans la **zone DNS** active d'un nom de domaine, un délai de propagation de **4 à 24 heures** peut être nécessaire pour mettre les informations à jour sur le réseau DNS.
 >
 > Si vous modifiez directement les **serveurs DNS** associés à votre nom de domaine, ce délai peut aller jusqu'à **48 heures** maximum.
 >
