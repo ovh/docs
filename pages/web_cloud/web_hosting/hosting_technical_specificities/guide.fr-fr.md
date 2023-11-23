@@ -6,9 +6,9 @@ updated: 2023-11-16
 
 ## Objectif
 
-Les offres d'hébergement web OVHcloud sont mutualisées. Par conséquent, la configuration de ces offres contient certaines spécificités techniques. Nous vous recommandons de connaître ces spécificités *avant* d'utiliser votre hébergement web OVHcloud.
+Les offres d'hébergement web OVHcloud sont mutualisées. Par conséquent, la configuration de ces offres contient certaines spécificités techniques. Nous vous recommandons de prendre connaissance de ces spécificités *avant* d'utiliser votre hébergement web OVHcloud.
 
-**Découvrez dans ce guide un ensemble de détails techniques sur l'infrastructure d'hébergement Web OVHcloud, en fonction des questions les plus fréquemment posées**
+**Découvrez dans ce guide différentes informations et spécificités techniques liées aux hébergements Web**
 
 ## Prérequis
 
@@ -20,19 +20,19 @@ Les offres d'hébergement web OVHcloud sont mutualisées. Par conséquent, la co
 > [!warning]
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
-> 
+>
 > Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « [Aller plus loin](#go-further) » de ce guide.
-> 
+>
 
 ### FTP
 
-- Les connexions FTP doivent utiliser le **mode passif**. Assurez-vous que votre script ou votre client FTP est configuré en conséquence.
+- Utilisez le **mode passif** pour les connexions FTP. Assurez-vous que votre script ou votre client FTP est configuré en conséquence.
 
-- Si, lors de la connexion à votre espace de stockage FTP, vous rencontrez l'erreur d'accès « Échec de l'authentification de connexion 530 »: Assurez-vous que les informations d'accès à votre espace FTP sont correctes. Pour cela, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) puis rendez-vous dans la partie `Web Cloud`{.action}. Dans la colonne de gauche, cliquez sur `Hébergements`{.action} puis sélectionnez l'hébergement web concerné. Sur la page qui s'affiche, cliquez sur l'onglet `FTP - SSH`{.action}.
+- Si vous rencontrez l'erreur d'accès « Échec de l'authentification de connexion 530 » lors de la connexion à votre espace de stockage FTP: Assurez-vous que les informations d'accès à votre espace FTP sont correctes. Pour cela, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) puis rendez-vous dans la partie `Web Cloud`{.action}. Dans la colonne de gauche, cliquez sur `Hébergements`{.action} puis sélectionnez l'hébergement web concerné. Sur la page qui s'affiche, cliquez sur l'onglet `FTP - SSH`{.action}.
 
 Vous y retrouverez l'ensemble des informations de connexion à votre espace de stockage FTP à l'exception du mot de passe.
 
-En effet, les mots de passe ne sont jamais affichés, mais ils peuvent être modifiés. 
+En effet, les mots de passe ne sont jamais affichés, mais ils peuvent être modifiés.
 
 Retrouvez plus d'informations sur le sujet dans notre guide « [Se connecter à l'espace de stockage FTP de son hébergement Web](/pages/web_cloud/web_hosting/ftp_connection) ».
 
@@ -48,12 +48,12 @@ Sur une période glissante de 3600 secondes (1 heure), votre offre d'hébergemen
 
 > [!primary]
 >
-> Ces limitations concernent **uniquement** les e-mails émis à l'aide de la fonction *mail()* de PHP et ne concerne pas les autres offres e-mail.
+> Ces limitations concernent **uniquement** les e-mails émis à l'aide de la fonction *mail()* de PHP et ne concerne pas les autres offres e-mail (envoi SMTP).
 >
 
-En dehors des suspicions de spamming ou de phishing, l'expédition de vos e-mails pourra être différée. Vos e-mails seront conservés dans une file d'attente jusqu'à ce que le nombre d'e-mails envoyés au cours de l'heure écoulée soit inférieur au quota.
+À l'exception des suspicions de spamming ou de phishing, l'expédition de vos e-mails pourra être différée. Vos e-mails seront conservés dans une file d'attente jusqu'à ce que le nombre d'e-mails envoyés au cours de l'heure écoulée soit inférieur au quota.
 
-En cas d'abus, de risque avéré ou de piratage, tout ou partie de votre service sera suspendu (conformément aux CGU/CGV et Conditions particulières de votre offre). Vous serez notifié par e-mail de la suspension de celui-ci. Pour débloquer cette situation, consultez les guides suivants :
+En cas d'abus ou de piratage, une partie ou l'ensemble de votre service pourra être suspendu (conformément aux CGU/CGV et Conditions particulières de votre offre). Vous serez notifié par e-mail de la suspension de celui-ci. Dans ce cas de fugure, appuyez-vous des guides suivants :
 
 - [Suivre et gérer les e-mails automatisés de son hébergement web](/pages/web_cloud/web_hosting/mail_function_script_records);
 - [Cas d'usage - Conseils suite au piratage de votre site Web](/pages/web_cloud/web_hosting/cms_what_to_do_if_your_site_is_hacked).
@@ -79,7 +79,7 @@ Pour des raisons de sécurité, il n'est pas possible de se connecter d'un serve
 Warning: MySQL Connection Failed: Host ip.your.connection is not allowed to connect ...
 ```
 
-Seuls les serveurs de bases de données [Web Cloud Databases](https://www.ovhcloud.com/fr/web-cloud/databases/) permettent à des serveurs externes de s'y connecter. Ceci en ayant au préalable autorisé l'adresse IP de votre serveur externe sur votre serveur de bases de données. Si besoin, consultez le guide « [Premiers pas avec votre offre Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) ».
+Seuls les serveurs de bases de données [Web Cloud Databases](https://www.ovhcloud.com/fr/web-cloud/databases/) permettent à des serveurs externes de s'y connecter. Ceci en ayant préalablement autorisé l'adresse IP de votre serveur externe sur votre serveur de bases de données. Au besoin, consultez notre guide « [Premiers pas avec votre offre Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) ».
 
 #### Variables serveur SQL mutualisé
 
@@ -98,7 +98,7 @@ Pour plus d'informations sur la gestion des bases de données et sur la connecti
 
 ### PHP
 
-Nous vous recommandons de consulter nos [offres d'hébergement web](https://www.ovhcloud.com/fr/web-hosting/uc-programming-language/) pour vous assurer que l'offre d'hébergement Web que vous souhaitez commander sera compatible avec vos besoins.
+Nous vous recommandons de consulter nos [offres d'hébergement web](https://www.ovhcloud.com/fr/web-hosting/uc-programming-language/) pour vous assurer que l'offre d'hébergement Web que vous souhaitez commander convient à vos besoins.
 
 > [!warning]
 >
@@ -109,7 +109,7 @@ Nous vous recommandons de consulter nos [offres d'hébergement web](https://www.
 > Retrouvez plus de détails sur ce sujet dans notre guide « [Hébergement web : environnement, version PHP, « .ovhconfig »](/pages/web_cloud/web_hosting/configure_your_web_hosting) »
 >
 
-Par ailleurs, vous pouvez aussi vérifier les détails de la configuration de votre hébergement web. Pour cela, consultez la rubrique « [Informations techniques de votre hébergement Web](#technical-infos-web-hosting) » en bas de ce guide. 
+Par ailleurs, vous pouvez aussi vérifier les détails de la configuration de votre hébergement web. Pour cela, consultez la rubrique « [Informations techniques de votre hébergement Web](#technical-infos-web-hosting) » en bas de ce guide.
 
 #### PHP-FPM
 
@@ -137,14 +137,14 @@ Par exemple, vous pouvez utiliser la fonction *gethostbyaddr()* pour récupérer
 
 > [!warning]
 >
-> OVHcloud ne force pas les mises à jour PHP. Les clients sont entièrement responsables de la sécurité de leurs services et de la mise à jour régulière des logiciels installés.
+> OVHcloud ne change pas automatiquement la version de PHP de votre hébergement lorsqu'une nouvelle version est implémentée. Vous êtes maître de la sécurité du contenu services et de la mise à jour régulière de ces derniers.
 >
 
 ### Informations techniques de votre hébergement Web <a name="#technical-infos-web-hosting"></a>
 
-Vous pouvez retrouver et vérifier les librairies, langages et versions disponibles pour votre offre d'hébergement web via ce lien suivant : <https://webhosting-infos.hosting.ovh.net>
+Retrouvez et vérifiez les librairies, langages et versions disponibles pour votre offre d'hébergement web depuis cette page : <https://webhosting-infos.hosting.ovh.net>
 
-Pour connaitre les spécificités techniques de l'offre Cloud Web, dirigez-vous directement vers le lien <https://cloudweb-infos.hosting.ovh.net/>.
+Pour connaitre les spécificités techniques de l'offre Cloud Web, dirigez-vous vers cette page : <https://cloudweb-infos.hosting.ovh.net/>.
 
 ### Informations sur les sauvegardes automatiques <a name="backup"></a>
 
@@ -204,8 +204,8 @@ S'agissant d'un cookie :
 
  - 1 : nécessaire au fonctionnement du service d’hébergement web mutualisé;
  - 2 : anonyme.
- 
-Il n'est pas concerné par le recueil préalable du consentement du visiteur du site internet au sens de la Réglementation Générale de Protection des données (RGPD). 
+
+Il n'est pas concerné par le recueil préalable du consentement du visiteur du site internet au sens de la Réglementation Générale de Protection des données (RGPD).
 
 ### Informations sur les outils de statistiques
 
