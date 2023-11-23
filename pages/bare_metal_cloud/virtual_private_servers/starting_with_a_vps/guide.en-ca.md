@@ -187,6 +187,10 @@ Please note that if you have selected a **distribution with application** (Plesk
 > Connecting with the "root" user is disabled by default as a security measure. If you want to permit these connections, refer to the instructions in [this guide](/pages/bare_metal_cloud/virtual_private_servers/root_password#enabling-root-login).
 >
 
+#### Update root password
+
+To change or update your "root" password, refer to the instructions in [this guide](/pages/bare_metal_cloud/virtual_private_servers/root_password).
+
 ### Connecting to your Windows VPS
 
 After your Windows VPS is installed, you receive an email with the name of the default `Windows user`.
