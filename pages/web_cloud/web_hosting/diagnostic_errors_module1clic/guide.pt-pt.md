@@ -111,7 +111,7 @@ Uma vez concluído, poderá instalar um novo "módulo com 1 clique".
 >
 > Neste caso, poderá guardar os dados de um único website utilizando um [script PHP ou um comando SSH](/pages/web_cloud/web_hosting/sql_database_export).
 >
-> Para qualquer questão sobre as manipulações a realizar, contacte a [comunidade OVHcloud](https://community.ovh.com/en/) ou um dos nossos [parceiros](https://partner.ovhcloud.com/pt/diretory/).<br>
+> Para qualquer questão sobre as manipulações a realizar, contacte a [comunidade OVHcloud](https://community.ovh.com/en/) ou um dos nossos [parceiros](https://partner.ovhcloud.com/pt/directory/).<br>
 > Não poderemos proporcionar-lhe assistência técnica.
 >
 
