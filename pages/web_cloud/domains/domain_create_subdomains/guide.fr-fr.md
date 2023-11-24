@@ -8,7 +8,7 @@ updated: 2023-11-24
 
 Internet est composé de *serveurs* et d'*appareils* qui interagissent entre eux via un réseau global. Lorsque ces *serveurs* et ses *appareils* sont connectés au réseau Internet, une *adresse IP publique* (équivalent à une adresse postale) leur est attribuée. Cette *adresse IP* permet de joindre à distance un serveur ou un appareil, ainsi, un utilisateur est en mesure de consulter un site web en saisissant cette *adresse IP* grâce à son navigateur Internet installé sur son ordinateur.
 
-Les **noms de domaine** ont été instaurés pour faciliter l'accès à un site web pour les utilisateurs du réseau Internet. En effet, il est plus simple de retenir un nom composé d'une chaîne de caractères choisis (exemple: ovhcloud.com), plutôt qu'une suite de chiffres que compose une *adresse IP* (exemple: 54.39.46.56).
+Les **noms de domaine** ont été instaurés pour faciliter l'accès à un site web pour les utilisateurs du réseau Internet. En effet, il est plus aisé de retenir un nom composé d'une chaîne de caractères choisis (exemple: ovhcloud.com), plutôt qu'une suite de chiffres que compose une *adresse IP* (exemple: 54.39.46.56).
 
 Un **nom de domaine** est composé de niveaux. Ces niveaux sont eux-mêmes généralement séparés par un `.` (à l'exception de certaines **extensions** du *premier niveau* comme le *.co.uk*, *.gouv.fr* ou encore *.notaires.fr*):
 
