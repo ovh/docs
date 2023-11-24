@@ -23,6 +23,8 @@ Un **nom de domaine** est composé de niveaux. Ces niveaux sont eux-mêmes gén�
 - **S**econd **L**evel **D**omain (**SLD**) : représente les domaines de *deuxième niveau*. Nous les appelons plus communément les **labels**. Lorsque vous commandez un nom de domaine, c'est le **label** que vous pouvez définir librement (sous réserve que celui-ci n'ait pas déjà été enregistré par un autre utilisateur sur la même extension et dans la limite de 63 caractères). Par exemple, *ovhcloud* correspond au label du nom de domaine *ovhcloud.com*.
 
 - Third Level Domain (**subdomain**) : c'est à partir de ce troisième niveau que l'on parle de *sous-domaine*. Nous allons détailler dans le présent guide sa définition et vous expliquer comment les mettre en place avec vos différents services.
+
+![URL content](images/url-composition.png){.thumbnail}
   
 **Découvrez les sous-domaines et comment en créer chez OVHcloud**
   
