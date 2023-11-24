@@ -53,7 +53,7 @@ Sur une période glissante de 3600 secondes (1 heure), votre offre d'hébergemen
 
 À l'exception des suspicions de spamming ou de phishing, l'expédition de vos e-mails pourra être différée. Vos e-mails seront conservés dans une file d'attente jusqu'à ce que le nombre d'e-mails envoyés au cours de l'heure écoulée soit inférieur au quota.
 
-En cas d'abus ou de piratage, une partie ou l'ensemble de votre service pourra être suspendu (conformément aux CGU/CGV et Conditions particulières de votre offre). Vous serez notifié par e-mail de la suspension de celui-ci. Dans ce cas de fugure, appuyez-vous des guides suivants :
+En cas d'abus ou de piratage, une partie ou l'ensemble de votre service pourra être suspendu (conformément aux CGU/CGV et Conditions particulières de votre offre). Vous serez notifié par e-mail de la suspension de celui-ci. Dans ce cas de figure, appuyez-vous les guides suivants :
 
 - [Suivre et gérer les e-mails automatisés de son hébergement web](/pages/web_cloud/web_hosting/mail_function_script_records);
 - [Cas d'usage - Conseils suite au piratage de votre site Web](/pages/web_cloud/web_hosting/cms_what_to_do_if_your_site_is_hacked).
