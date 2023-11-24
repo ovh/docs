@@ -86,7 +86,7 @@ Uma vez concluído, poderá instalar um novo "módulo com 1 clique".
 
 > [!warning]
 >
-> A eliminação de uma base de dados é definitiva. Esta operação levará igualmente à eliminação dos backups da base de dados em causa. Em caso de dúvida, contacte o seu webmaster ou um dos nossos [parceiros](https://partner.ovhcloud.com/pt/diretory/).
+> A eliminação de uma base de dados é definitiva. Esta operação levará igualmente à eliminação dos backups da base de dados em causa. Em caso de dúvida, contacte o seu webmaster ou um dos nossos [parceiros](https://partner.ovhcloud.com/pt/directory/).
 >
 
 Para eliminar uma base de dados a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), aceda à secção `Web Cloud`{.action}. Clique em `Alojamentos`{.action} na coluna da esquerda e, em seguida, selecione o alojamento web correspondente.
