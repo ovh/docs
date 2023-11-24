@@ -12,7 +12,7 @@ updated: 2021-05-18
 
 W przeglądarce internetowej możesz wyświetlić nie zainstalowaną stronę **błędu**, zwłaszcza podczas pierwszej instalacji strony.
 
-![site-not-installed](images/site-not-installed2021.png){.thumbnail}
+![website not installed](images/site-not-installed2021.png){.thumbnail}
 
 **Dowiedz się, jak zidentyfikować i usunąć błąd "Strona nie została zainstalowana"**
 

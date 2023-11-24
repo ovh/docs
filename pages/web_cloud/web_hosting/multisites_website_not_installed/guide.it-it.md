@@ -12,7 +12,7 @@ updated: 2021-05-18
 
 È possibile vedere apparire sul browser la pagina di errore `Sito non installato`, in particolare al momento della prima installazione del tuo sito Web.
 
-![site-not-installed](images/site-not-installed2021.png){.thumbnail}
+![website not installed](images/site-not-installed2021.png){.thumbnail}
 
 **Come identificare e risolvere la pagina di errore "Sito non installato"**
 
