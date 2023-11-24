@@ -157,7 +157,7 @@ Nesta situação, [ligue-se em FTP](/pages/web_cloud/web_hosting/ftp_connection)
 
 > [!primary]
 >
-> Para qualquer questão relativa à eliminação de dados para reduzir a quantidade de dados no seu alojamento web, contacte a nossa [comunidade de utilizadores](https://community.ovh.com/en/) ou os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/diretory/).<br>
+> Para qualquer questão relativa à eliminação de dados para reduzir a quantidade de dados no seu alojamento web, contacte a nossa [comunidade de utilizadores](https://community.ovh.com/en/) ou os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).<br>
 > O suporte OVHcloud não pode prestar assistência.
 >
 
