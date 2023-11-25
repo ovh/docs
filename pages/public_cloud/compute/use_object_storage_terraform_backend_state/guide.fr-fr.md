@@ -81,12 +81,15 @@ Créez un fichier `backend.tf` avec le contenu suivant :
 terraform {
     backend "s3" {
       bucket = "terraform-state-hp"
-      key = "terraform.tfstate"
+      key    = "terraform.tfstate"
       region = "gra"
- #or sbg or any activated high performance storage region
-      endpoint = "s3.gra.perf.cloud.ovh.net"
+      # sbg or any activated high performance storage region
+      endpoints = {
+        s3 = "https://s3.gra.perf.cloud.ovh.net/"
+      }
       skip_credentials_validation = true
-      skip_region_validation = true
+      skip_region_validation      = true
+      skip_requesting_account_id  = true
     }
 }
 ```
