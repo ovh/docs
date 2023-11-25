@@ -1,7 +1,7 @@
 ---
 title: 'Tryb bridge IP'
 excerpt: 'Dowiedz się, jak używać trybu bridge do konfiguracji dostępu do Internetu Twoich wirtualnych maszyn'
-updated: 2022-12-20
+updated: 2023-11-24
 ---
 
 > [!primary]
@@ -70,11 +70,32 @@ Wybierz "ovh" z rozwijanej listy "Typ", wpisz nazwę w polu "Nazwa wirtualnej ma
 
 Aby skonfigurować wirtualne maszyny umożliwiające dostęp do Internetu, musisz znać bramę maszyny hosta, czyli serwera dedykowanego. Adres bramy składa się z pierwszych trzech bajtów głównego adresu IP Twojego serwera. Ostatni bajt to 254. Na przykład, jeśli głównym adresem IP Twojego serwera jest:
 
-- 169.254.10.020
+- 169.254.10.20
 
 Adres bramy:
 
 - 169.254.10.254
+
+Adres bramy możesz również pobrać z poziomu [Panelu klienta](#viacontrolpanel) lub [API OVHcloud](#viaapi).
+
+#### W panelu klienta <a name="viacontrolpanel"></a>
+
+Zaloguj się do [Panelu client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przejdź do sekcji `Bare Metal Cloud`{.action} i wybierz Twój serwer w części `Serwery dedykowane`{.action}.
+
+Adres bramy IPv4 przypisany do Twojego serwera wyświetla się w sekcji `Sieć` w zakładce `Informacje ogólne`{.action}. Po skopiowaniu ustawień kontynuuj konfigurację.
+
+![gateway](images/ipv4_information.png){.thumbnail}
+
+#### Za pośrednictwem API OVHcloud <a name="viaapi"></a>
+
+Na [stronie API OVHcloud](https://api.ovh.com/console/) kliknij na `Login`{.action} w prawym górnym rogu. Na następnej stronie wpisz Twój identyfikator klienta OVHcloud.
+
+Wykonaj następujące wywołanie API, wskazując wewnętrzną nazwę serwera (przykład: `ns3956771.ip-169-254-10.eu`):
+
+> [!api]
+>
+> @api {v1} /dedicated/server GET /dedicated/server/{serviceName}/specifications/network
+>
 
 ### Przygotowanie hosta
 
