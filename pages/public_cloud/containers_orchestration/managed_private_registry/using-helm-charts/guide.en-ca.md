@@ -1,7 +1,7 @@
 ---
-title: 'Managing Helm charts in the OVHcloud Managed Private Registry'
-excerpt: 'Find out how to manage Helm charts in the OVHcloud Managed Private Registry'
-updated: 2023-11-20
+title: Managing Helm charts in the OVHcloud Managed Private Registry
+excerpt: Find out how to manage Helm charts in the OVHcloud Managed Private Registry
+updated: 2023-11-27
 ---
 
 OVHcloud Managed Private Registry service is a composite cloud-native registry which supports both container image management and [Helm](https://helm.sh/){.external} [chart](https://helm.sh/docs/topics/charts/){.external} management.
@@ -43,7 +43,7 @@ The first step is downloading the WordPress chart using `helm`:
 helm fetch bitnami/wordpress
 ```
 
-The Wordpress Helm chart is downloaded as a `tgz` file.
+the WordPress Helm chart is downloaded as a `tgz` file.
 
 ```console
 $ helm fetch bitnami/wordpress
@@ -120,7 +120,7 @@ Successfully packaged chart and saved it to: /Users/avache/tmp/test-doc-k8s/helm
 
 #### Login
 
-Before being able to pull or push Helm charts, login to Harbor:
+Before being able to pull or push Helm charts, log in to Harbor:
 
 ```bash
 helm registry login <registry url>
@@ -187,7 +187,7 @@ The charts pushed to the OCI-compatible registry of Harbor are treated like any 
 
 We can list, copy, delete, update labels, get details, add or remove tags for them just like we can for container images.
 
-In the following example we pushed the Wordpress Helm chart in version 18.1.14 and the Wordpress Docker image in version 6.4.1:
+In the following example we pushed the WordPress Helm chart in version 18.1.14 and the WordPress Docker image in version 6.4.1:
 
 ![Project list](images/harbor-ui-001.png){.thumbnail}
 

@@ -5,7 +5,7 @@ kb: Public Cloud
 category_l1: Containers & Orchestration
 category_l2: Managed Private Registry
 category_l3: Tutorials
-updated: 2023-11-20
+updated: 2023-11-27
 ---
 
 OVHcloud Managed Private Registry service is a composite cloud-native registry which supports both container image management and [Helm](https://helm.sh/){.external} [chart](https://helm.sh/docs/topics/charts/){.external} management.
