@@ -37,7 +37,7 @@ Pour autoriser le service corosync à obtenir les informations des nœuds SAP HA
 
 Nous recommandons d'utiliser un utilisateur dédié avec des droits limités pour interagir avec vSphere.
 
-Cet utilisateur dédié n'a besoin que du droit de « Lecture seule » sur le datacenter où sont hébergées les machines virtuelles SAP HANA. Pour connaître les étapes de création d'un utilisateur dédié, veuillez vous référer à [notre guide](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/change_users_rights).
+Cet utilisateur dédié n'a besoin que du droit en « Lecture seule » sur le datacenter où sont hébergées les machines virtuelles SAP HANA. Pour connaître les étapes de création d'un utilisateur dédié, veuillez vous référer à [notre guide](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/change_users_rights).
 
 ### Paquets SUSE
 
@@ -177,7 +177,7 @@ Le provider hook SAP HANA HA/SR améliore la détection d'erreurs SAP HANA.
     site name: node1
     ```
 
-    La réplication peut prendre un certain temps, cela dépend de la taille des données dans votre base de données SAP HANA. Une fois l'initialisation de la réplication terminée, le statut du système de réplication doit être `ACTIVE`.
+    La réplication peut prendre un certain temps, cela dépend du volume de données dans votre base de données SAP HANA. Une fois l'initialisation de la réplication terminée, le statut du système de réplication doit être `ACTIVE`.
 
 ### Corosync
 
@@ -257,7 +257,7 @@ Le provider hook SAP HANA HA/SR améliore la détection d'erreurs SAP HANA.
     service corosync start
     ```
 
-2. Nous conseillons de retarder le démarrage du service corosync durant le démarrage de la machine virtuelle.
+2. Nous conseillons de retarder le démarrage du service corosync lors du démarrage de la machine virtuelle.
 
     a. Éditez le service corosync sur les deux nœuds :
 
@@ -265,7 +265,7 @@ Le provider hook SAP HANA HA/SR améliore la détection d'erreurs SAP HANA.
     systemctl edit corosync.service
     ```
 
-    b. Insérez ces lignes entre les lignes numéro 3 et 6 :
+    b. Insérez ces lignes entre les lignes 3 et 6 :
 
     ```bash
     [Service]
@@ -634,7 +634,7 @@ Dans ce cas, le comportement attendu est la bascule de toutes les ressources hé
 >>
 >> Le cluster détecte la perte du node1 qui était le Master et déclenche la bascule sur le node2.
 >>
->> La bascule peut prendre plusieurs minutes, cela dépend de la taille de la base de données SAP HANA.
+>> La bascule peut prendre plusieurs minutes, cela dépend du volume de la base de données SAP HANA.
 >>
 >> ```console
 >> Cluster Summary:
