@@ -13,8 +13,8 @@ Ce guide vous détaille les étapes pour le déploiement d'une machine virtuelle
 - Un accès à l’[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 - Une [solution SAP HANA on Private Cloud](https://www.ovhcloud.com/fr/hosted-private-cloud/sap-hana/) déployée.
 - [Un projet Public Cloud](/pages/public_cloud/compute/create_a_public_cloud_project) dans votre compte OVHcloud avec :
-    - [Un bucket Object Storage S3](/pages/storage_and_backup/object_storage/s3_create_bucket) et [un utilisateur S3](/pages/storage_and_backup/object_storage/s3_identity_and_access_management#creation-dun-utilsateur) avec le droit de lecture.
-    - [Un second bucket Object Storage S3](/pages/storage_and_backup/object_storage/s3_create_bucket) et [un utilisateur S3](/pages/storage_and_backup/object_storage/s3_identity_and_access_management#creation-dun-utilsateur) avec les droits de lecture et d'écriture.
+  - [Un bucket Object Storage S3](/pages/storage_and_backup/object_storage/s3_create_bucket) et [un utilisateur S3](/pages/storage_and_backup/object_storage/s3_identity_and_access_management#creation-dun-utilsateur) avec le droit de lecture.
+  - [Un second bucket Object Storage S3](/pages/storage_and_backup/object_storage/s3_create_bucket) et [un utilisateur S3](/pages/storage_and_backup/object_storage/s3_identity_and_access_management#creation-dun-utilsateur) avec les droits de lecture et d'écriture.
 
 ## En pratique
 
@@ -61,12 +61,12 @@ Une fois les sources SAP HANA déposées dans votre bucket Object Storage S3, vo
 
 2. Entrez l'URL suivante pour atteindre notre template OVF pour SAP HANA, puis cliquez sur `Next`{.action}.
     <a name="ovf_link"></a>  
+
     ```console
     https://templates-pcc-for-hana.s3.sbg.perf.cloud.ovh.net/sles4sap-sap-hana-SLE-15-SP4-Full-x86_64/sles4sap-sap-hana-SLE-15-SP4-Full-x86_64.ovf
     ```
 
     ![deploy-from-template](images/step-2.png){.thumbnail}
-
 
 3. Donnez un nom à votre machine virtuelle et sélectionnez votre datacenter, puis cliquez sur `Next`{.action}.
 
@@ -101,7 +101,7 @@ Une fois les sources SAP HANA déposées dans votre bucket Object Storage S3, vo
     - OVHcloud Backint Agent installation.
 
     Dans la catégorie `SAP HANA disks`{.action}, vous devez renseigner les tailles des disques qui seront créés.
-    
+
     Notre template OVF est configuré par défaut pour déployer une machine virtuelle de 8vCPUs et 128GB de RAM. Les valeurs pré-remplies correspondent aux recommandations SAP de stockage pour ce modèle.
 
     ![disks](images/step-8.png){.thumbnail}

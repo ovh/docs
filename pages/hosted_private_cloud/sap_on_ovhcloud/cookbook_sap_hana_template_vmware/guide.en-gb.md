@@ -13,8 +13,8 @@ This guide provides instructions for deploying a SLES for SAP virtual machine wi
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
 - A [SAP HANA on Private Cloud solution](https://www.ovhcloud.com/en-gb/hosted-private-cloud/sap-hana/) deployed.
 - A [Public Cloud project](/pages/public_cloud/compute/create_a_public_cloud_project)in your OVHcloud account with:
-    - [An S3 Object Storage bucket](/pages/storage_and_backup/object_storage/s3_create_bucket). and [an S3 user](/pages/storage_and_backup/object_storage/s3_identity_and_access_management#creation-dun-utilsateur) with read right.
-    - [A second S3 Object Storage bucket](/pages/storage_and_backup/object_storage/s3_create_bucket) and [an S3 user](/pages/storage_and_backup/object_storage/s3_identity_and_access_management#creation-dun-utilsateur) with read/write rights.
+  - [An S3 Object Storage bucket](/pages/storage_and_backup/object_storage/s3_create_bucket). and [an S3 user](/pages/storage_and_backup/object_storage/s3_identity_and_access_management#creation-dun-utilsateur) with read right.
+  - [A second S3 Object Storage bucket](/pages/storage_and_backup/object_storage/s3_create_bucket) and [an S3 user](/pages/storage_and_backup/object_storage/s3_identity_and_access_management#creation-dun-utilsateur) with read/write rights.
 
 ## Instructions
 
@@ -61,6 +61,7 @@ Once the SAP HANA sources have been uploaded in your S3 Object Storage bucket, y
 
 2. Set the following URL to reach the OVF template for SAP HANA, then click on `Next`{.action}.
     <a name="ovf_link"></a>
+
     ```console
     https://templates-pcc-for-hana.s3.sbg.perf.cloud.ovh.net/sles4sap-sap-hana-SLE-15-SP4-Full-x86_64/sles4sap-sap-hana-SLE-15-SP4-Full-x86_64.ovf
     ```
@@ -99,7 +100,9 @@ Once the SAP HANA sources have been uploaded in your S3 Object Storage bucket, y
     - SAP HANA installation ;
     - OVHcloud Backint Agent installation.
 
-    In the `SAP HANA disks`{.action} category, you must set the disks size which will be created. The pre-filled values follow the storage recommendations for a SAP HANA database with 64 GB of RAM.
+    In the `SAP HANA disks`{.action} category, you must set the disks size which will be created.
+
+    Our OVF template has a default configuration to deploy a virtual machine with 8vCPUS and 128GB of memory. The pre-filled values follow the SAP storage recommendations for this model.
 
     ![disks](images/step-8.png){.thumbnail}
 
