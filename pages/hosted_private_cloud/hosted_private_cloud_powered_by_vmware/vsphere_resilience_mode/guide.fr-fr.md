@@ -5,7 +5,7 @@ excerpt: Découvrez comment tester la perte temporaire d'un hôte avec le mode r
 
 ## Objectif
 
-Si vous souhaitez réaliser un test de résilience sur votre infrastructure Hosted Private Cloud OVHcloud. Le mode résilience permet de simuler la perte temporaire d'un host afin de valider la continuité d'activité de votre production en cas d'incident.
+Si vous souhaitez réaliser un test de résilience sur votre infrastructure Hosted Private Cloud OVHcloud, le mode résilience permet de simuler la perte temporaire d'un host afin de valider la continuité d'activité de votre production en cas d'incident.
 
 **Découvrez comment tester la perte temporaire d'un hôte avec le mode résilience sur votre infrastructure Hosted Private Cloud OVHcloud**
 
