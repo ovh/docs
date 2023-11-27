@@ -60,11 +60,11 @@ Ces sections fournissent des informations sur la localisation de votre VPS. Cela
 
 ##### **Modèle**
 
-Cet élément indique la référence commerciale identifiant le modèle de VPS correspondant aux [offres VPS sur notre site] (https://www.ovhcloud.com/fr/vps).
+Cet élément indique la référence commerciale identifiant le modèle de VPS correspondant aux [offres VPS sur notre site](https://www.ovhcloud.com/fr/vps).
 
 ##### **vCores** / **Mémoire** / **Stockage**
 
-Les ressources actuelles de votre VPS sont affichées ici et peuvent être mises à jour séparément en cliquant sur le bouton correspondant. À noter que les mises à niveau sont limitées par le modèle de VPS choisi et peuvent uniquement être disponibles en passant à une [gamme supérieure] (https://www.ovhcloud.com/fr/vps).
+Les ressources actuelles de votre VPS sont affichées ici et peuvent être mises à jour séparément en cliquant sur le bouton correspondant. À noter que les mises à niveau sont limitées par le modèle de VPS choisi et peuvent uniquement être disponibles en passant à une [gamme supérieure](https://www.ovhcloud.com/fr/vps).
 
 #### IP
 
@@ -92,7 +92,7 @@ Vous trouverez toutes les informations sur les solutions de sauvegarde disponibl
 
 #### Abonnement
 
-Ces sections présentent les informations les plus importantes concernant la facturation de votre service. Retrouvez toutes les informations sur ce sujet dans la [documentation correspondante](/products/account-and-service-management-billing-payment-and-services).
+Ces sections présentent les informations les plus importantes concernant la facturation de votre service. Retrouvez toutes les informations sur ce sujet dans la [documentation correspondante](/products/account-and-service-management-managing-billing-payments-and-services).
 
 ### Fonctions VPS disponibles dans l’onglet « Accueil »
 
