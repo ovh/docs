@@ -1,7 +1,7 @@
 ---
 title: 'Using OVHcloud High Performance (S3) Object Storage as Terraform Backend to store your Terraform state'
 excerpt: 'Find out how to use an OVHcloud High Performance (S3) Object Storage as a Terraform Backend to store your Terraform state'
-updated: 2023-07-31
+updated: 2023-11-27
 ---
 
 ## Objective
