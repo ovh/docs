@@ -64,19 +64,10 @@ The Anti-DDoS Infrastructure together with Edge Network Firewall are keeping net
 > The Game Firewall protects the IP associated with a server. As a result, if you have a server with multiple IP addresses (i.e. Additional IP addresses), you need to configure each of them separately.
 >
 
-In order to configure gaming rules in the Game Firewall, you will first need to log in to the OVHcloud Control Panel.
-
-| ![bare-metal-cloud-tab](images/bare-metal-cloud-tab.png) | 
-|:--:| 
-| Click the `Bare Metal Cloud`{.action} tab |
-
-| ![network-tab](images/network-tab.png) | 
-|:--:| 
-| Then go to `Network`{.action} |
-
-| ![ip-tab](images/ip-tab.png) | 
-|:--:| 
-| Open `IP`{.action} |
+To configure gaming rules in the Gaming Firewall, you must first log in to the OVHcloud Control Panel and then follow these steps : 
+ - Click the `Bare Metal Cloud`{.action} tab
+ - Then go to `Network`{.action}
+ - Open `IP`{.action}
 
 | ![game-server](images/game-server.png) | 
 |:--:| 

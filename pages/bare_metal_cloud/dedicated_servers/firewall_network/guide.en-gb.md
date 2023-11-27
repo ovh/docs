@@ -95,21 +95,21 @@ You can set up to **20 rules per IP**.
 
 **To add a rule :**
 
-| ![add-rule-btn](images/edge-firewall-add-rule.png) | 
+| ![add-rule-btn](images/enf_add_rule.png) | 
 |:--:| 
 | click on `Add a rule`{.action}. |
 
 For each rule (excluding TCP), you must choose :
 
-| ![add-rule-btn](images/basic-rule.png) | 
+| ![add-rule-btn](images/enf_add_rule_other_than_tcp.png) | 
 |:--| 
 | &bull; A priority (from 0 to 19, 0 being the first rule to be applied, followed by the others) <br>&bull; An action (`Accept`{.action} or `Deny`{.action}) <br>&bull; The protocol <br>&bull; Source IP (optional) |
 
 For each **TCP** rule, you must choose :
 
-| ![add-rule-btn](images/tcp-rule.png) | 
+| ![add-rule-btn](images/enf_add_rule_tcp.png) | 
 |:--| 
-| &bull; A priority (from 0 to 19, 0 being the first rule to be applied, followed by the others) <br>&bull; An action (`Accept`{.action} or `Deny`{.action}) <br>&bull; The protocol <br>&bull; Source IP (optional) <br>&bull; The source port <br>&bull; The destination port <br>&bull; The TCP state <br>&bull; Fragments|
+| &bull; A priority (from 0 to 19, 0 being the first rule to be applied, followed by the others) <br>&bull; An action (`Accept`{.action} or `Deny`{.action}) <br>&bull; The protocol <br>&bull; Source IP (optional) <br>&bull; The source port (optional) <br>&bull; The destination port (optional) <br>&bull; The TCP state (optional) <br>&bull; Fragments (optional)|
 
 > [!primary]
 >
@@ -121,13 +121,29 @@ For each **TCP** rule, you must choose :
 > Firewall setups with only "Accept" mode rules are not effective at all. There must be an instruction what to be dropped by the firewall. You will see warning unless such "Deny" rule is created.
 > 
 
-**To Activate / Desactivate firewall:**
+**Enable Firewall:**
 
-| ![activate-desactivate](images/activate-desactivate.png) | 
+| ![activate-desactivate](images/enf_enabled_button_01.png) | 
 |:--:| 
-| `Switch on`{.action} to activate |
+| `Switch on`{.action} to enable |
 
-Please notice deactivation will only maintain the rules for as long as the Scrubbing Center is active.
+
+| ![activate-desactivate](images/enf_enabled_button_02.png) | 
+|:--:| 
+| Then `Confirm`{.action} |
+
+**Disable Firewall:**
+
+| ![activate-desactivate](images/enf_enabled_button_04.png) | 
+|:--:| 
+| `Switch on`{.action} to enable |
+
+
+| ![activate-desactivate](images/enf_enabled_button_03.png) | 
+|:--:| 
+| Then `Confirm`{.action} |
+
+Please notice rules are disabled until the moment an attack is detected - then they are activated. This mechanic can be used for rules that are only active when a known repeated attack comes.
 
 ### Configuration example
 
@@ -147,7 +163,7 @@ For example, a packet for TCP port 80 will be captured by rule 2, and the rules 
 
 #### **Global Attack Filtering Capacity: Advanced Protection**
 
-OVHcloud stands out in the management of digital threats with a DDoS attack filtering capacity of over 17 Tbit/s. This robust infrastructure effectively identifies and neutralises attacks before they impact customer servers. Distributed across OVHcloud's global network, this capacity ensures constant protection, regardless of where servers are located.
+OVHcloud excels in digital threat management. This robust infrastructure effectively identifies and neutralises attacks before they reach customers' servers. Distributed across OVHcloud's global network, this capacity ensures constant protection no matter where the servers are located.
 
 Designed to absorb a large volume of malicious traffic, this infrastructure guarantees the continuity of business operations, even in the event of major DDoS attacks. It forms an essential part of OVHcloud's security strategy, reinforcing existing measures such as firewalls and anti-intrusion systems.
 
@@ -173,34 +189,25 @@ All traffic permanently gets through the mitigation system before reaching the s
 Please note that enabling this mode is **not** increasing level of protection compared to automatic mode.
 
 To enable it follow these steps: 
+ - Click on the `Bare Metal Cloud`{.action} menu
+ - Select `Network`{.action} section
+ - Go to `IP`{.action} section
 
-| ![bare-metal-cloud-tab](images/bare-metal-cloud-tab.png) | 
-|:--:| 
-| Click on the `Bare Metal Cloud`{.action} menu |
-
-| ![network-tab](images/network-tab.png) | 
-|:--:| 
-| Select `Network`{.action} section |
-
-| ![ip-tab](images/ip-tab.png) | 
-|:--:| 
-| Go to `IP`{.action} section |
-
-| ![menu-ipv4](images/menu-ipv4.png) | 
+| ![menu-ipv4](images/mitigation_menu.png) | 
 |:--:| 
 |  Next, click on the `...`{.action} button to the right of the relevant IPv4 |
 
 
-| ![mitigation-option](images/mitigation-option.png) | 
+| ![mitigation-option](images/mitigation_menu_step_2.png) | 
 |:--:| 
 |  Select `Mitigation: permanent mode`{.action} |
 
 
-| ![confirm-mitigation](images/confirm-mitigation.png) | 
+| ![confirm-mitigation](images/mitigation_menu_step_3.png) | 
 |:--:| 
-|  And `Confirm`{.action} |
+|  And `Confirm`{.action} TODO: Blur data|
 
-- **Forced mitigation**: This mode is automatically enabled once an attack is detected on the server. Once enabled on our Anti-DDoS infrastructure, it cannot be disabled. In order to protect our infrastructure, it will be enabled throughout the attack until it is completely mitigated.
+- **Forced mitigation**: This mode turns on by itself when an attack is detected on the server. Once it starts in our Anti-DDoS system, it can't be turned off. It stays on to protect our system until the attack is fully stopped.
 
 > [!success]
 > **Tips**
@@ -216,7 +223,17 @@ To enable it follow these steps:
 
 ## Network Security Dashboard
 
-You can read more information about our [Network Security Dashboard](/pages/bare_metal_cloud/dedicated_servers/network_security_dashboard) in order to get more details about your traffic.
+When the Scrubbing Center is activated during an attack and the Edge network firewall can also block packets, it is crucial to be able to observe and analyse these events. This is where the OVHcloud Network Security Dashboard comes in.
+
+This dashboard provides a detailed, real-time view of network security activities affecting your services. It allows you to track attacks detected, actions taken by the Anti-DDoS infrastructure, and the effectiveness of your Edge Network firewall rules. It also provides valuable information about inbound and outbound traffic, helping you to understand and react quickly to potential threats.
+
+### Key dashboard features :
+ - **Attack Visualisation :** Displays current and past attacks, with details such as duration, intensity and attack type.
+ - **Mitigation status :** Indicates whether the Cleansing Centre is active and whether mitigation measures are underway.
+ - **Traffic Analysis :** Provides graphs and statistics on network traffic, including the distinction between legitimate and malicious traffic.
+ - **Firewall Rules Management :** Allows you to see the impact of Edge Network firewall rules on traffic, particularly during periods of attack.
+
+You can read more information about our [Network Security Dashboard](/pages/bare_metal_cloud/dedicated_servers/network_security_dashboard) article.
 
 ### Conclusion
 
