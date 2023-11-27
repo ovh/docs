@@ -83,6 +83,7 @@ If you are using your OpenStack infrastructure with the command line, you will n
 export OS_AUTH_TYPE=v3oidcclientcredentials
 export OS_PROTOCOL=openid
 export OS_ACCESS_TOKEN_TYPE=id_token
+export OS_OPENID_SCOPE="openid profile email publicCloudProject/all"
 export OS_AUTH_URL=https://auth.cloud.ovh.net/v3
 ```
 
@@ -147,6 +148,7 @@ clouds:
     auth:
       protocol: 'openid'
       access_token_type: 'id_token'
+      openid_scope: 'openid profile email publicCloudProject/all'
       auth_url: 'https://auth.cloud.ovh.net/v3'
       identity_provider: 'ovhcloud-emea'
       discovery_endpoint: 'https://iam.ovh.net/role-adapter/urn:v1:eu:resource:publicCloudProject:pci/.well-known/openid-configuration'
@@ -182,6 +184,7 @@ clouds:
     auth:
       protocol: 'openid'
       access_token_type: 'id_token'
+      openid_scope: 'openid profile email publicCloudProject/all'
       auth_url: 'https://auth.cloud.ovh.net/v3'
       identity_provider: 'ovhcloud-emea'
       discovery_endpoint: 'https://iam.ovh.net/role-adapter/urn:v1:eu:resource:publicCloudProject:pci/.well-known/openid-configuration'
@@ -216,6 +219,7 @@ clouds:
     auth:
       protocol: 'openid'
       access_token_type: 'id_token'
+      openid_scope: 'openid profile email publicCloudProject/all'
       auth_url: 'https://auth.cloud.ovh.net/v3'
       identity_provider: 'ovhcloud-emea'
       discovery_endpoint: 'https://iam.ovh.net/role-adapter/urn:v1:eu:resource:publicCloudProject:pci/.well-known/openid-configuration'
