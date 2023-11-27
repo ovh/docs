@@ -121,7 +121,7 @@ docker build . -f Dockerfile -t <shared-regristry-name>/rock-paper-scissors-app:
 
 > [!warning]
 > **Warning**
-> The shared registry of AI Deploy should only be used for testing purpose. Please consider attaching your own Docker registry. More information about this can be found [here](/pages/public_cloud/ai_machine_learning/gi_07_manage_registry).
+> The shared registry of AI Deploy should only be used for testing purpose. Please consider attaching your own Docker registry. More information about this can be found [here](/pages/public_cloud/ai_machine_learning/gi_07_manage_registry). The images pushed to this registry are for AI Tools workloads only, and will not be accessible for external uses.
 
 Find the address of your shared registry by launching this command:
 
