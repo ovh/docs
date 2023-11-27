@@ -78,7 +78,7 @@ Une fois les sources SAP HANA déposées dans votre bucket Object Storage S3, vo
 
 5. Vérifiez que le modèle sélectionné a bien pour nom « SLES for SAP SLE-15-SP4-Full-x86_64 for SAP HANA (BYOL) » puis cliquez sur `Next`{.action}.
 
-    Un bloc d'avertissement est affiché dû aux configurations avancées intégrées au template OVF.
+    Le bloc d'avertissement qui s'affiche conserne les configurations avancées intégrées au template OVF.
 
     ![review](images/step-5.png){.thumbnail}
 
@@ -120,7 +120,7 @@ Une fois les sources SAP HANA déposées dans votre bucket Object Storage S3, vo
 
     > [!primary]
     >
-    > Veuillez prendre connaissance de la [SAP Note 1979280](https://me.sap.com/notes/1979280/) qui liste les SID SAP HANA ne pouvant être utilisés.
+    > Veuillez prendre connaissance de la [SAP Note 1979280](https://me.sap.com/notes/1979280/) qui liste les SID SAP HANA ne pouvant pas être utilisés.
     >
 
     ![sap-hana-installation](images/step-9.png){.thumbnail}
@@ -142,7 +142,7 @@ Nous vous conseillons de prendre connaissance et de réaliser les actions du cha
 
 ### Configuration des paramètres avancés
 
-Le template OVF créé par OVHcloud prend en compte de nombreux paramètres. Cependant, des paramètres additionnels doivent être configurés dans des cas précis après déploiement.
+Le template OVF créé par OVHcloud prend en compte de nombreux paramètres. Cependant, des paramètres additionnels doivent être configurés dans certains cas, après déploiement.
 
 1. Pour réaliser cet ajout de paramètres, sélectionnez votre machine virtuelle, cliquez sur `Action`{.action} puis `Modifier les paramètres`{.action}.  
 
