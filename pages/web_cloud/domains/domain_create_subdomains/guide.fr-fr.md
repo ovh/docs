@@ -33,7 +33,7 @@ Un **nom de domaine** est composé de niveaux. Ces niveaux sont eux-mêmes gén�
 - Disposer d'au moins un [nom de domaine](https://www.ovhcloud.com/fr/domains/);
 - Disposer d'une zone DNS active pour votre nom de domaine. Si besoin, consultez notre guide « [Créer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_create) »;
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr);
-- Disposer des droits suffisants sur l’ensemble des services concernées. Retrouvez plus d'informations sur notre guide [Gérer les contacts de ses services](/pages/account_and_service_management/account_information/managing_contacts).
+- Disposer des droits suffisants sur l’ensemble des services concernés. Retrouvez plus d'informations sur notre guide [Gérer les contacts de ses services](/pages/account_and_service_management/account_information/managing_contacts).
   
 ## En pratique
 
@@ -140,7 +140,7 @@ Tout comme pour un nom de domaine et pour autoriser un sous-domaine à afficher 
 
 C'est ici que vous autorisez l'accès de votre sous-domaine à votre hébergement web où se trouve votre site web.
 
-Pour plus de détails sur la configuration d'un domaine ou d'un sous-domaine sur un hébergement web, consultez notre guide « [Partager son hébergement entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite) ». Qu'il s'agisse d'un nom de domaine ou un sous-domaine, la procédure est la même.
+Pour plus de détails sur la configuration d'un domaine ou d'un sous-domaine sur un hébergement web, consultez notre guide « [Partager son hébergement entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite) ». Qu'il s'agisse d'un nom de domaine ou d'un sous-domaine, la procédure est la même.
 
 > [!warning]
 >
