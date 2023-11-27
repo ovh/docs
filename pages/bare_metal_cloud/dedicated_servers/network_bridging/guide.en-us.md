@@ -72,7 +72,7 @@ Your gateway address would therefore be:
 
 - 169.254.10.**254**
 
-You can also retrieve the gateway via the [OVHcloud Control Panel](#viacontrolpanel) or the [OVHcloud API](viaapi).
+You can also retrieve the gateway via the [OVHcloud Control Panel](#viacontrolpanel) or the [OVHcloud API](#viaapi).
 
 #### Via the OVHcloud Control Panel <a name="viacontrolpanel"></a>
 

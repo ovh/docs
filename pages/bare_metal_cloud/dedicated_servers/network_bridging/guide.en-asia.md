@@ -72,7 +72,7 @@ Your gateway address would therefore be:
 
 - 169.254.10.**254**
 
-You can also retrieve the gateway via the [OVHcloud Control Panel](#viacontrolpanel) or the [OVHcloud API](viaapi).
+You can also retrieve the gateway via the [OVHcloud Control Panel](#viacontrolpanel) or the [OVHcloud API](#viaapi).
 
 #### Via the OVHcloud Control Panel <a name="viacontrolpanel"></a>
 
@@ -80,7 +80,7 @@ Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanag
 
 The IPv4 gateway assigned to your server will appear in the `Network` section of the `General Information`{.action} tab. Once you have copied it, continue with applying the configuration.
 
-![configureipv4](images/ipv4_information.png){.thumbnail}
+![gateway](images/ipv4_information.png){.thumbnail}
 
 #### Via the OVHcloud API <a name="viaapi"></a>
 
