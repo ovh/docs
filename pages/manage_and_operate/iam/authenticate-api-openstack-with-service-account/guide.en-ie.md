@@ -1,7 +1,7 @@
 ---
 title: How to use service accounts to connect to OpenStack
 excerpt: "How to log in to OpenStack APIs or command lines with OVHcloud service accounts"
-updated: 2023-08-24
+updated: 2023-11-27
 ---
 
 

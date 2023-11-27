@@ -1,7 +1,7 @@
 ---
 title: Comment utiliser les comptes de service pour se connecter à OpenStack
 excerpt: "Comment se connecter aux API ou lignes de commande OpenStack avec ses comptes de service OVHcloud"
-updated: 2023-08-24
+updated: 2023-11-27
 ---
 
  
