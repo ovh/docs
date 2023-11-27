@@ -5,10 +5,10 @@ kb: Public Cloud
 category_l1: Containers & Orchestration
 category_l2: Managed Private Registry
 category_l3: Tutorials
-updated: 2022-04-14
+updated: 2023-11-20
 ---
 
-OVHcloud Managed Private Registry service is a composite cloud-native registry which supports both container image management and [Helm](https://helm.sh/){.external} [chart](https://helm.sh/docs/topics/charts/){.external} management. 
+OVHcloud Managed Private Registry service is a composite cloud-native registry which supports both container image management and [Helm](https://helm.sh/){.external} [chart](https://helm.sh/docs/topics/charts/){.external} management.
 
 This guide will explain how to deploy a Helm chart from your OVHcloud Managed Private Registry in a Kubernetes cluster.
 
@@ -16,184 +16,86 @@ This guide will explain how to deploy a Helm chart from your OVHcloud Managed Pr
 
 This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it. If you want to know more on those topics, please look at the [deploying a Hello World application](/pages/public_cloud/containers_orchestration/managed_kubernetes/deploying-hello-world) documentation. You will need to have Helm installed on your cluster (see the [installing helm](/pages/public_cloud/containers_orchestration/managed_kubernetes/installing-helm) guide for more information).
 
-You also need to have a working OVHcloud Managed Private Registry and have followed the guide on [managing Helm charts in the OVHcloud Managed Private Registry](/pages/public_cloud/containers_orchestration/managed_private_registry/using-helm-chart-museum).
+You also need to have a working OVHcloud Managed Private Registry and have followed the guide on [managing Helm charts in the OVHcloud Managed Private Registry](/pages/public_cloud/containers_orchestration/managed_private_registry/using-helm-charts).
 
-You should have at least one wordpress Helm chart in your Private Registry:
+After following the previous guide, you should have at least one Wordpress Helm chart in your Managed Private Registry:
 
 ![Helm charts in OVHcloud Managed Private Registry](images/helm-chart-in-ovh-private-registry.png)
 
 ## Prerequisites
 
-We (the OVHcloud Managed Kubernetes Service team) are working on a patch to be released in early 2022. In the meantime, please remove the default storage class and install the new one.
+### Install Helm v3.8+
 
-- Delete the concerned `StorageClass` that you are using by default
-
-```bash
-kubectl delete storageclasses.storage.k8s.io csi-cinder-high-speed
-```
-
-It will delete the existing `StorageClass`:
-
-```console
-$ kubectl delete storageclasses.storage.k8s.io csi-cinder-high-speed
-storageclass.storage.k8s.io "csi-cinder-high-speed" deleted
-```
-
-- Create a new `StorageClass` with the required fix
+Check if Helm is installed in the required version:
 
 ```bash
-kubectl apply -f https://raw.githubusercontent.com/ovh/docs/develop/pages/public_cloud/containers_orchestration/managed_kubernetes/fix-persistent-volumes-permissions/files/fixed-cinder-high-speed-storage-class.yaml
+$ helm version
+version.BuildInfo{Version:"v3.12.0", GitCommit:"c9f554d75773799f72ceef38c51210f1842a1dea", GitTreeState:"clean", GoVersion:"go1.20.3"}
 ```
 
-It will apply the correct `StorageClass` YAML manifest:
-
-```console
-$ kubectl apply -f https://raw.githubusercontent.com/ovh/docs/develop/pages/public_cloud/containers_orchestration/managed_kubernetes/fix-persistent-volumes-permissions/files/fixed-cinder-high-speed-storage-class.yaml
-storageclass.storage.k8s.io/csi-cinder-high-speed created
-```
-
-If you have already installed a previous version of Bitnami's WordPress Helm chart, please follow the following step by step guide.
-
-- Delete the concerned Helm Chart
-
-For example with the Helm Chart `wordpress` which is concerned by this behavior:
-
-```bash
-helm uninstall wordpress
-```
-
-And don't forget to verify if concerned `PersistentVolumeClaim` (PVC) and `PersistentVolume` (PV) have been deleted before reinstalling the Helm Chart:
-
-```bash
-kubectl get persistentvolumeclaims -A | grep wordpress
-kubectl get persistentvolumes 
-```
-
-If a `PersistentVolumeClaim` is listed, please delete it (the `PersistentVolume` will be deleted automatically).
-
-```bash
-kubectl delete pvc data-my-first-k8s-wordpress-mariadb-0
-```
-
-The command will delete the remaining `PersistentVolumeClaim`:
-
-```console
-$ kubectl delete pvc data-my-first-k8s-wordpress-mariadb-0
-persistentvolumeclaim "data-my-first-k8s-wordpress-mariadb-0" deleted
-```
+If the version is less than v3.8.0, follow the [official instructions](https://helm.sh/docs/intro/install/) to install Helm in latest version.
 
 ## Instructions
 
 ### Deploying a chart from your registry in Kubernetes
 
-In this step you are going to deploy a chart from your OVHcloud Managed Private Registry into an OVHcloud Managed Kubernetes cluster (or any other Kubernetes cluster).
+#### Login to the OVHcloud Managed Private Registry
 
-As indicated in the *Before you begin* section, you need to have `helm` installed in your cluster and a working `helm` CLI in your workstation (see the [installing Helm](/pages/public_cloud/containers_orchestration/managed_kubernetes/installing-helm) guide for more information if needed).
-
-Run the command `helm version` to make sure the `helm` CLI is correctly installed locally.
-
-```console
-$ helm version
-version.BuildInfo{Version:"v3.7.0", GitCommit:"eeac83883cb4014fe60267ec6373570374ce770b", GitTreeState:"clean", GoVersion:"go1.17"}
-```
-
-#### Add your OVHcloud Managed Private Registry to the repository list
-
-The first thing to do is add your OVHcloud Managed Private Registry to the Helm's repository list, with `helm repo add` command.
-
-You can do it in two ways: adding your private registry as single index entry point or adding each project as a separate index entry point.
-
-- Adding your OVHcloud Managed Private Registry as a unified single index entry point
-
-  In this mode, Helm will be able to use all the charts in any of your projects which are accessible by the currently authenticated user.
-  
+Before being able to pull or push Helm charts, login to Harbor:
 
 ```bash
-helm repo add --username <username> --password <password> <repo name> https://<repo url>/chartrepo
+helm registry login <registry url>
 ```
 
-- Adding a project in your OVHcloud Managed Private Registry as a separate index entry point
-
-  In this mode, Helm only can pull charts from the specified project.
-
-```bash
-helm repo add --username <username> --password <password> <repo name> https://<repo url>/chartrepo/<project>
-```
-
-In my example, I added the project in the private registry as a separate index entry point:
+For example:
 
 ```console
-$ helm repo add --username private-user --password xxxxxx privreg https://ab1cd23e.gra7.container-registry.ovh.net/chartrepo/private
-"privreg" has been added to your repositories
+$ helm registry login https://8xghzr01.c1.bhs5.container-registry.ovh.net
+Username: MbwQLGCglA
+Password: 
+Login Succeeded
 ```
 
 #### Install charts
 
-Before installing, make sure your the chart index is synchronized with the `helm repo update` command.
-
-In my case:
-
-```console
-$ helm repo update
-Hang tight while we grab the latest from your chart repositories...
-...Successfully got an update from the "gpu-helm-charts" chart repository
-...
-...Successfully got an update from the "privreg" chart repository
-...
-Update Complete. ⎈Happy Helming!⎈
-```
-
-Look for your chart:
-
-```bash 
-helm search repo wordpress
-```
-
-In my case, it finds several versions of WordPress chart, the official ones in the `bitnami` Helm repository, and the one in my `privreg` private registry project:
-
-```console
-$ helm search repo wordpress
-NAME                   	CHART VERSION	APP VERSION	DESCRIPTION
-bitnami/wordpress      	13.2.1       	5.9.3      	WordPress is the world's most popular blogging ...
-bitnami/wordpress-intel	0.2.0        	5.9.3      	WordPress for Intel is the most popular bloggin...
-privreg/wordpress      	13.1.4       	5.9.2      	WordPress is the world's most popular blogging ...
-```
-
-Everything is ready, so now you can install the chart into your Kubernetes:
+Deploy the Wordpress Helm chart inside the Kubernetes cluster:
 
 ```bash
-helm install wordpress --username <username> --password <password> privreg/wordpress
+helm install myrelease oci://<registry url>/<project>/<chart name> --version <version>
 ```
 
 In my case:
 
 ```console
-$ helm install wordpress --username private-user --password xxxxxx privreg/wordpress
-NAME: wordpress
-LAST DEPLOYED: Thu Apr 14 09:33:33 2022
+$ helm install my-wordpress-release oci://8xghzr01.c1.bhs5.container-registry.ovh.net/private/wordpress --version 18.1.14
+
+Pulled: 8xghzr01.c1.bhs5.container-registry.ovh.net/private/wordpress:18.1.14
+Digest: sha256:89afb47c221899db67c7b125f49394eecd078245181715337b5691a0ee199cb7
+NAME: my-wordpress-release
+LAST DEPLOYED: Mon Nov 20 17:46:16 2023
 NAMESPACE: default
 STATUS: deployed
 REVISION: 1
 TEST SUITE: None
 NOTES:
 CHART NAME: wordpress
-CHART VERSION: 13.1.4
-APP VERSION: 5.9.2
+CHART VERSION: 18.1.14
+APP VERSION: 6.4.1
 
 ** Please be patient while the chart is being deployed **
 
 Your WordPress site can be accessed through the following DNS name from within your cluster:
 
-    wordpress.default.svc.cluster.local (port 80)
+    my-wordpress-release.default.svc.cluster.local (port 80)
 
 To access your WordPress site from outside the cluster follow the steps below:
 
 1. Get the WordPress URL by running these commands:
 
   NOTE: It may take a few minutes for the LoadBalancer IP to be available.
-        Watch the status with: 'kubectl get svc --namespace default -w wordpress'
+        Watch the status with: 'kubectl get svc --namespace default -w my-wordpress-release'
 
-   export SERVICE_IP=$(kubectl get svc --namespace default wordpress --include "{{ range (index .status.loadBalancer.ingress 0) }}{{ . }}{{ end }}")
+   export SERVICE_IP=$(kubectl get svc --namespace default my-wordpress-release --template "{{ range (index .status.loadBalancer.ingress 0) }}{{ . }}{{ end }}")
    echo "WordPress URL: http://$SERVICE_IP/"
    echo "WordPress Admin URL: http://$SERVICE_IP/admin"
 
@@ -202,16 +104,18 @@ To access your WordPress site from outside the cluster follow the steps below:
 3. Login with the following credentials below to see your blog:
 
   echo Username: user
-  echo Password: $(kubectl get secret --namespace default wordpress -o jsonpath="{.data.wordpress-password}" | base64 --decode)
+  echo Password: $(kubectl get secret --namespace default my-wordpress-release -o jsonpath="{.data.wordpress-password}" | base64 -d)
+
 ```
 
-Check your WordPress is running correctly:
+Check WordPress is running correctly:
 
 ```console
-$ kubectl get pod -l app.kubernetes.io/instance=wordpress
-NAME                         READY   STATUS    RESTARTS   AGE
-wordpress-8586785c5d-cttz4   1/1     Running   0          85s
-wordpress-mariadb-0          1/1     Running   0          85s
+$ kubectl get pod -l app.kubernetes.io/instance=my-wordpress-release
+NAME                                    READY   STATUS    RESTARTS   AGE
+my-wordpress-release-796cc4d6b8-ckb6c   1/1     Running   0          3m25s
+my-wordpress-release-mariadb-0          1/1     Running   0          3m25s
+
 ```
 
 ## Go further
