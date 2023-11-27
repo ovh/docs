@@ -1,7 +1,7 @@
 ---
 title: "Utiliser OVHcloud Object Storage comme Backend Terraform pour stocker votre état (state) Terraform"
 excerpt: "Découvrez comment utiliser l’Object Storage d’OVHcloud comme Backend Terraform pour stocker votre état (state) Terraform"
-updated: 2023-07-31
+updated: 2023-11-27
 ---
 
 ## Objectif
