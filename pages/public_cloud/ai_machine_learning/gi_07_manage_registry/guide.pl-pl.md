@@ -31,7 +31,7 @@ The Public Cloud provides a default registry called `shared registry`, where use
 
 > [!warning]
 >
->This `shared registry` can help you perform your tests, but **should not be used in production**, as we reserve the right to delete its content if deemed necessary.
+>This `shared registry` can help you perform your tests, but **should not be used in production**, as we reserve the right to delete its content if deemed necessary. The images pushed to this registry are for AI Tools workloads only, and will not be accessible for external uses.
 >
 
 This is why it can be interesting to add and manage other registries. We can either do this by using the OVHcloud Control Panel (UI) or the `ovhai` CLI.
