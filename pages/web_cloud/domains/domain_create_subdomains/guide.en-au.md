@@ -140,7 +140,7 @@ As with a domain name, and to authorize a subdomain to display the contents of a
 
 This is where you authorize your subdomain to access your web hosting plan, where your website is located.
 
-For more details on setting up a domain or subdomain on a web hosting plan, please read our guide on [Hosting multiple websites on your web hosting plan](/pages/web_cloud/web_hosting/multisites_configure_multisite) . The procedure is the same whether you are using a domain name or a subdomain.
+For more details on setting up a domain or subdomain on a web hosting plan, please read our guide on [Hosting multiple websites on your web hosting plan](/pages/web_cloud/web_hosting/multisites_configure_multisite). The procedure is the same whether you are using a domain name or a subdomain.
 
 > [!warning]
 >
