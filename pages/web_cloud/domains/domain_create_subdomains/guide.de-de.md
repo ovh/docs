@@ -31,3 +31,170 @@ Ein **Domainname** besteht aus Stufen. Diese Level sind in der Regel durch ein `
 ![URL content](images/url-composition.png){.thumbnail}
   
 **Diese Anleitung erklärt, Sie mehr über Subdomains und wie Sie Subdomains bei OVHcloud erstellen.**
+
+## Voraussetzungen
+
+- Sie besitzen mindestens eine [Domain](https://www.ovhcloud.com/de/domains/);
+- Sie verfügen über eine aktive DNS-Zone für Ihre Domain. Bei Bedarf lesen Sie unsere Anleitung „[OVHcloud DNS-Zone erstellen](/pages/web_cloud/domains/dns_zone_create)“;
+- Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) eingeloggt;
+- Über ausreichende Rechte für alle betroffenen Dienste verfügen. Weitere Informationen finden Sie in unserer Anleitung [Verwaltung der Kontakte der Dienste](/pages/account_and_service_management/account_information/managing_contacts).
+  
+## In der praktischen Anwendung
+
+### Definition einer Subdomain
+
+Ein [Domainname](https://www.ovhcloud.com/de/domains/) kann mehreren Arten von Diensten zugeordnet werden (E-Mail, Website etc.).
+
+Ein Domainname kann jedoch immer nur einer Website zugewiesen werden.
+
+Einige Benutzer oder Organisationen müssen jedoch ihre Websites oder E-Mail-Dienste segmentieren, während sie den gleichen Domainnamen beibehalten.
+
+Die Subdomains (manchmal auch **Präfixe** genannt) erfüllen die Notwendigkeit, einen Domainnamen zu segmentieren. Sie bieten dem Inhaber die Möglichkeit, die mit seinem Domainnamen verbundenen Webdienste in verschiedene Unterkategorien zu unterteilen, ohne einen neuen Domainnamen abonnieren zu müssen.
+
+Mit anderen Worten: Subdomains ermöglichen es, alle Webdienste (DNS-Server, Website, Intranet, E-Mail etc.), die mit einem einzigen Domainnamen verbunden sind, einfach zu strukturieren.
+
+Wie bereits im Abschnitt „[Ziel](#goal)“ erwähnt, entsprechen Subdomains der dritten Ebene (*Third Level Domain*) eines Domainnamens. Die bekannteste Subdomain für Internetnutzer ist die Subdomain **W**orld **W**ide **W**eb (**www**). Viele Webseiten nutzen diese Subdomain noch immer, um im Internet darauf zuzugreifen.
+
+So ist *www.ovhcloud.com* eine Subdomain des Domainnamens *ovhcloud.com*.
+
+Sie können aus einem einzigen Domainnamen eine unbegrenzte Anzahl an Subdomains erstellen.
+
+Wenn Sie beispielsweise über die Domain *example.com* verfügen, können Sie folgende Subdomains erstellen:
+
+- *dns1.example.com* und *dns2.example.com* zur Anpassung Ihrer DNS Server mithilfe von [GLUE records](/pages/web_cloud/domains/glue_registry);
+- *www.example.com*, um Ihre Website anzuzeigen;
+- *preprod.example.com*, um Ihre Website in neuen Versionen zu testen. Dies ohne den Zugriff Ihrer Benutzer auf Ihre aktuelle Website zu unterbrechen;
+- *intranet.example.com*, damit Ihre Mitarbeiter sich auf Ihrer internen Website austauschen können;
+- *forum.example.com* oder *community.example.com*, damit Ihre User Community ihre Erfahrungen austauschen und teilen kann;
+- *app.example.com*, um online auf Ihre Anwendung zuzugreifen oder sie direkt herunterzuladen;
+- *recruitment.example.com*, um es Bewerbern auf der Suche nach einer Stelle zu ermöglichen, sich auf Ihrem eigenen Recruitment-Interface zu bewerben;
+- *sav.example.com*, *sales.example.com*, *legal.example.com*, um es Ihren Kunden zu ermöglichen, verschiedene interne Strukturen Ihres Unternehmens zu kontaktieren, oder um Ihre Mitarbeiter nach den internen Abteilungen zu priorisieren, denen sie angehören;
+- usw.
+
+Über die dritte Ebene hinaus werden diese auch als **Subdomains** eingestuft. Um eines der oben genannten Beispiele zu verwenden, können Sie die Subdomain *preprod.app.example.com* erstellen, um die neue Version Ihrer Webanwendung zu testen. Dies ohne den Zugriff auf die aktuelle Version Ihrer Anwendung auf *app.example.com* zu unterbrechen.
+
+### Subdomain erstellen
+
+Alle [Domainnamen](https://www.ovhcloud.com/de/domains/) benötigen eine **DNS-Zone**. Die DNS-Zone besteht aus technischen Informationen, die als *DNS-Einträge* bezeichnet werden. Sie ist, mehr oder weniger, ein Weichenstellplatz.
+
+Weitere Informationen zu den DNS-Zonen finden Sie in unserer Anleitung „[OVHcloud DNS-Zone erstellen](/pages/web_cloud/domains/dns_zone_create)“ und „[OVHcloud DNS-Zone bearbeiten](/pages/web_cloud/domains/dns_zone_edit)“.
+
+**Alle Subdomains werden in der aktiven DNS-Zone der Domain konfiguriert. Dazu werden DNS-Einträge hinzugefügt**
+
+#### 1 - Identifizieren Sie den Standort der aktiven DNS-Zone Ihrer Domain
+
+Es gibt zwei mögliche Szenarien:
+
+- Die aktive DNS-Zone Ihrer Domain ist bei OVHcloud vorhanden;
+- Die aktive DNS-Zone Ihrer Domain wird an einem anderen Ort gehostet.
+
+> [!warning]
+>
+> Die aktive DNS-Zone Ihrer Domain wird nicht zwingend bei demselben Anbieter verwaltet wie Ihre Domain.
+>
+> 1: Um zu ermitteln, wo sich die aktive DNS-Zone einer bei OVHcloud registrierten Domain befindet, lesen Sie unsere Anleitung „[DNS-Server einer OVHcloud Domain bearbeiten](/pages/web_cloud/domains/dns_server_general_information)“.
+>
+> 2: Wenn Ihre Domain nicht bei OVHcloud registriert ist, kontaktieren Sie bitte den aktuellen * Registrar* Ihrer Domain, um herauszufinden, wo ihre aktive DNS-Zone gehostet ist.
+>
+
+Wenn die für Ihre Domain deklarierten DNS-Server eine der folgenden Formen haben:
+
+- *dnsXX.ovh.net* und *nsXX.ovh.net* (wobei jedes „X“ eine Ziffer darstellt);
+- *dns200.anycast.me* und *ns200.anycast.me*.
+
+Das bedeutet, dass die aktive DNS-Zone Ihrer Domain bei OVHcloud aktiv ist.
+
+Wenden Sie sich andernfalls an Ihren DNS-Anbieter, um Subdomains mit Ihrem Domainnamen zu erstellen.
+
+#### 2 - DNS-Einträge für Ihre Subdomains erstellen
+
+Um Ihre Subdomains zur aktiven DNS-Zone Ihrer Domain hinzuzufügen, lesen Sie unsere Anleitung „[OVHcloud DNS-Zone bearbeiten](/pages/web_cloud/domains/dns_zone_edit)“.
+
+Sie können beispielsweise Folgendes hinzufügen:
+
+- Die IP-Adresse (DNS-Einträge vom Typ *A* und *AAAA*) Ihres Webhostings, um eine Ihrer Websites mit einer Subdomain anzuzeigen.
+- Die E-Mail-Server (DNS-Einträge vom Typ *MX*), auf die Ihre Subdomain die empfangenen E-Mails weiterleiten soll. So können Sie diese auf Ihrer personalisierten E-Mail-Adresse(n) mit Ihrer Subdomain einsehen.
+- Informationen zur Sicherheit / Authentifizierung Ihrer Dienste (Webhosting, Webserver, E-Mail etc.), die mit einer Ihrer Subdomains verbunden sind (DNS-Einträge vom Typ *SPF*, *DKIM*, *DMARC* etc.).
+
+> [!primary]
+>
+> Die Änderung einer DNS-Zone, die mit einem Domainnamen verbunden ist, führt zu einer Propagationsverzögerung von **4** bis **24** Stunden, bis die Änderung wirksam wird.
+>
+> Wie bei einem Domainnamen als solchem reicht es in der Regel nicht aus, einen DNS-Eintrag für eine Subdomain zu erstellen, um diese mit dem *Ziel*-Dienst zu verwenden, den Sie im DNS-Eintrag definiert haben. 
+>
+> Aus Sicherheitsgründen müssen Sie der Subdomain auch den Zugriff auf den *Ziel*-Dienst erlauben (Webhosting, E-Mail etc.).
+>
+
+Im nächsten Teil erfahren Sie, wie Sie einer Subdomain den Zugriff auf die verschiedenen von OVHcloud angebotenen Dienste im „Web Cloud“ Universum (Webhosting, Exchange Server etc.) erlauben.
+
+> [!warning]
+>
+> Wenn Sie eine Subdomain für einen Dienst einrichten möchten, der nicht bei OVHcloud gehostet wird, können wir Ihnen diesbezüglich keine Unterstützung bieten. Bitte wenden Sie sich an Ihren externen Dienstleister, um mit der Konfiguration fortzufahren. 
+>
+
+### Ihre Subdomain mit einem OVHcloud Dienst verbinden, autorisieren und konfigurieren
+
+Mehrere Dienste aus dem „Web Cloud“ Universum können mit einer Subdomain verwendet werden. Die Zuordnungsprozeduren ähneln denen, die Sie mit einem Domänennamen ausführen sollten. Wir werden Ihnen nur die häufigsten Fälle zeigen.
+
+Nicht aufgeführte Dienste finden Sie in der jeweiligen Service-Dokumentation. So können Sie erkennen, ob diese mit einer Subdomain genutzt werden kann.
+
+#### Fall 1: Eine Website auf meinem OVHcloud Webhosting mit einer Subdomain anzeigen
+
+Loggen Sie sich wie bei einem Domainnamen und um einer Subdomain die Berechtigung zu erteilen, den Inhalt eines *Ziel*-Ordners auf einem Webhosting anzuzeigen, in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und wählen Sie `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Hosting-Pakete`{.action}, wählen Sie das betreffende Angebot aus, in dem sich Ihre Website befindet, und klicken Sie dann auf den Tab `Multisite`{.action}.
+
+Hier autorisieren Sie den Zugriff Ihrer Subdomain auf Ihr Webhosting, auf dem sich Ihre Website befindet.
+
+Weitere Informationen zur Konfiguration einer Domain oder Subdomain auf einem Webhosting finden Sie in unserer Anleitung „[Mehrere Websites auf einem Webhosting einrichten](/pages/web_cloud/web_hosting/multisites_configure_multisite)“. Egal ob es sich um eine Domain oder eine Subdomain handelt, die Vorgehensweise ist die gleiche.
+
+> [!warning]
+>
+> Um eine Domain oder Subdomain an mehreren Standorten hinzuzufügen, muss möglicherweise ein *token* zur Validierung der Domain eingerichtet werden. Bei einer Subdomain wird das gleiche *token* nicht berücksichtigt und muss nicht für die Subdomain, sondern für den Domainnamen hinzugefügt werden. Fügen Sie in diesem Fall zusätzlich das *token* als DNS-Eintrag vom Typ TXT für den Domainnamen in der aktiven DNS-Zone Ihrer Domain hinzu.
+>
+
+#### Fall 2 - Exchange E-Mail-Adressen mit einer Subdomain erstellen
+
+Um die Erstellung personalisierter Exchange E-Mail-Adressen mit einer Subdomain zu entsperren, loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und wählen Sie `Web Cloud`{.action} aus. Klicken Sie in der linken Spalte auf `Microsoft`{.action} und dann auf `Exchange`{.action}. Wählen Sie anschließend die Exchange Plattform aus, die Sie mit Ihrer Subdomain verwenden möchten. Gehen Sie auf der angezeigten Seite in den Tab `Assoziierte Domains`{.action} und klicken Sie dann rechts auf den Button `Eine Domain hinzufügen`{.action}.
+
+So können Sie Ihre Subdomain auf Ihrer Exchange Plattform deklarieren.
+
+Weitere Informationen zur Konfiguration einer Exchange-Plattform finden Sie in den folgenden Anleitungen:
+
+- [Erste Schritte mit Hosted Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_starting_hosted)
+- [Einen Domainnamen auf einer E-Mail-Plattform hinzufügen](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain)
+- [CNAME-Eintrag hinzufügen, um Ihre Domain für Ihr E-Mail-Angebot zu validieren](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_dns_cname)
+
+#### Fall 3 - E-Mail Pro Adressen mit einer Subdomain erstellen
+
+Um die Erstellung personalisierter E-Mail Pro Adressen mit einer Subdomain zu entsperren, loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und wählen Sie `Web Cloud`{.action} aus. Klicken Sie auf `E-Mail für Profis`{.action} und wählen Sie dann die E-Mail Pro Plattform aus, die Sie mit Ihrer Subdomain verwenden möchten. Gehen Sie auf der angezeigten Seite in den Tab `Assoziierte Domains`{.action} und klicken Sie dann rechts auf den Button `Eine Domain hinzufügen`{.action}.
+
+So können Sie Ihre Subdomain auf Ihrer E-Mail Pro Plattform deklarieren.
+
+Weitere Informationen zur Konfiguration einer E-Mail Pro Plattform finden Sie in den folgenden Anleitungen:
+
+- [Erste Schritte mit E-Mail Pro](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config)
+- [Einen Domainnamen auf einer E-Mail-Plattform hinzufügen](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain)
+- [CNAME-Eintrag hinzufügen, um Ihre Domain für Ihr E-Mail-Angebot zu validieren](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_dns_cname)
+
+## Weiterführende Informationen <a name="go-further"></a>
+
+[OVHcloud DNS-Zone erstellen](/pages/web_cloud/domains/dns_zone_create)
+
+[Bearbeiten einer OVHcloud DNS-Zone](/pages/web_cloud/domains/dns_zone_edit)
+
+[DNS-Server einer OVHcloud Domain bearbeiten](/pages/web_cloud/domains/dns_server_general_information)
+
+[Mehrere Websites auf einem Webhosting einrichten](/pages/web_cloud/web_hosting/multisites_configure_multisite)
+
+[Erste Schritte mit Hosted Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_starting_hosted)
+
+[Erste Schritte mit der E-Mail Pro Lösung](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config)
+
+[Einen Domainnamen auf einer E-Mail-Plattform hinzufügen](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain)
+
+[CNAME-Eintrag hinzufügen, um Ihre Domain für Ihr E-Mail-Angebot zu validieren](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_dns_cname)
+
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
+
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
