@@ -188,6 +188,10 @@ Veuillez noter que si vous avez sélectionné une **distribution avec applicatio
 > La connexion avec l'utilisateur « root » est désactivée par défaut par mesure de sécurité. Si vous souhaitez autoriser ces connexions, reportez-vous aux instructions de [ce guide](/pages/bare_metal_cloud/virtual_private_servers/root_password#enable-root-login).
 >
 
+#### Mise à jour du mot de passe root
+
+Pour modifier ou mettre à jour votre mot de passe « root », reportez-vous aux instructions de [ce guide](/pages/bare_metal_cloud/virtual_private_servers/root_password).
+
 ### Connexion à votre VPS Windows
 
 Une fois votre VPS Windows installé, vous recevez un e-mail avec le nom de l'utilisateur par défaut `Windows user`.

@@ -1,7 +1,7 @@
 ---
 title: Modo Bridge IP
 excerpt: El modo bridge IP se utiliza para configurar las maquinas virtuales. Es necesario realizar diversas modificaciones en las MV para que la configuracion de red este operativa.
-updated: 2022-12-20
+updated: 2023-11-24
 ---
 
 > [!primary]
@@ -69,11 +69,32 @@ Seleccione "ovh" en la lista desplegable "Tipo", escriba un nombre en el campo "
 
 Para configurar sus máquinas virtuales para el acceso a Internet, debe conocer la pasarela de su máquina host, es decir, su servidor dedicado. La dirección de la pasarela está formada por los tres primeros bytes de la dirección IP principal del servidor, el último byte es de 254. Por ejemplo, si la dirección IP principal del servidor es:
 
-- 169.254.10.020
+- 169.254.10.20
 
 Su dirección de pasarela será:
 
 - 169.254.10.254
+
+También puede recuperar la dirección de la pasarela a través de [su área de cliente](#viacontrolpanel) o la [API de OVHcloud](#viaapi).
+
+#### Desde el área de cliente <a name="viacontrolpanel"></a>
+
+Conéctese al [Panel de configuración de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), acceda a la sección `Bare Metal Cloud`{.action} y seleccione el servidor en la sección `Servidores dedicados`{.action}.
+
+La dirección de la pasarela IPv4 asignada a su servidor se muestra en la sección `Red` de la pestaña `Información general`{.action}. Una vez copiada, continúe aplicando la configuración.
+
+![gateway](images/ipv4_information.png){.thumbnail}
+
+#### A través de la API de OVHcloud <a name="viaapi"></a>
+
+En la [página API de OVHcloud](https://ca.api.ovh.com/console/), haga clic en `Login`{.action}, situado en la esquina superior derecha. En la siguiente página, introduzca su ID de cliente de OVHcloud.
+
+Ejecute la siguiente llamada a la API, indicando el nombre interno del servidor (por ejemplo: `ns3956771.ip-169-254-10.eu`):
+
+> [!api]
+>
+> @api {v1} /dedicated/server GET /dedicated/server/{serviceName}/specifications/network
+>
 
 ### Preparar el host
 
