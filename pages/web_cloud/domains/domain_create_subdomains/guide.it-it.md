@@ -35,7 +35,7 @@ Un **dominio** è composto da diversi livelli. Questi livelli sono generalmente 
 ## Prerequisiti
 
 - Disporre di almeno un [dominio](https://www.ovhcloud.com/it/domains/);
-- Disporre di una zona DNS attiva per il dominio. Se necessario, consulta la nostra guida "[Creare una zona DNS in OVHcloud](/pages/web_cloud/domains/dns_zone_creat)";
+- Disporre di una zona DNS attiva per il dominio. Se necessario, consulta la nostra guida "[Creare una zona DNS in OVHcloud](/pages/web_cloud/domains/dns_zone_create)";
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it);
 - Disporre dei diritti necessari per tutti i servizi in questione. Per maggiori informazioni consulta la nostra guida [Gestire i contatti dei servizi](/pages/account_and_service_management/account_information/managing_contacts).
   
