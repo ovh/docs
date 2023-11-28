@@ -37,7 +37,7 @@ Un **nombre de dominio** se compone de niveles. Estos niveles suelen estar separ
 - tener al menos un [dominio](https://www.ovhcloud.com/es/domains/);
 - Tener una zona DNS activa para el dominio. Si lo necesita, consulte nuestra guía "[Crear una zona DNS en OVHcloud](/pages/web_cloud/domains/dns_zone_create)".
 - Estar conectado a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es);
-- Disponer de los derechos necesarios sobre todos los servicios afectados. Para más información, consulte nuestra guía [Gestionar los contactos de sus servicios] (/pages/account_and_service_management/account_information/managing_contacts).
+- Disponer de los derechos necesarios sobre todos los servicios afectados. Para más información, consulte nuestra guía [Gestionar los contactos de sus servicios](/pages/account_and_service_management/account_information/managing_contacts).
   
 ## Procedimiento
 
