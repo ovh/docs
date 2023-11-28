@@ -84,7 +84,7 @@ Para añadir un conector de envío a su plataforma Exchange, utilice la siguient
 
 > [!api]
 >
-> @api {POST} /email/exchange/{organizationName}/service/{exchangeService}/sendConnector
+> @api {v1} /email/exchange POST /email/exchange/{organizationName}/service/{exchangeService}/sendConnector
 
 - `organizationName` : Introduzca el nombre de su plataforma Exchange con el formato «private-zz111111-1» o «dedicated-zz11111-1».
 - `exchangeService` : Introduzca el nombre de su plataforma Exchange con el formato «private-zz111111-1» o «dedicated-zz11111-1».
@@ -113,7 +113,7 @@ Una vez creado el conector de envío, utilice la siguiente llamada a la API para
 
 > [!api]
 >
-> @api {GET} email/exchange/{organizationName}/service/{exchangeService}/sendConnector
+> @api {v1} /email/exchange GET email/exchange/{organizationName}/service/{exchangeService}/sendConnector
 
 - `organizationName` : Introduzca el nombre de su plataforma Exchange con el formato «private-zz111111-1» o «dedicated-zz11111-1».
 - `exchangeService` : Introduzca el nombre de su plataforma Exchange con el formato «private-zz111111-1» o «dedicated-zz11111-1».
@@ -130,7 +130,7 @@ Puede consultar los detalles de su conector de envío utilizando esta API: <a na
 
 > [!api]
 >
-> @api {GET} /email/exchange/{organizationName}/service/{exchangeService}/sendConnector/{id}
+> @api {v1} /email/exchange GET /email/exchange/{organizationName}/service/{exchangeService}/sendConnector/{id}
 
 - `organizationName` : Introduzca el nombre de su plataforma Exchange con el formato «private-zz111111-1» o «dedicated-zz11111-1».
 - `id`: Introduzca el ID del conector de envío, que se obtiene como número en el paso anterior.
@@ -162,7 +162,7 @@ Utilizar la llamada API de configuración de una cuenta Exchange para añadir el
 
 > [!api]
 >
-> @api {PUT} /email/exchange/{organizationName}/service/{exchangeService}/account/{primaryEmailAddress}
+> @api {v1} /email/exchange PUT /email/exchange/{organizationName}/service/{exchangeService}/account/{primaryEmailAddress}
 
 - `organizationName` : Introduzca el nombre de su plataforma Exchange con el formato «private-zz111111-1» o «dedicated-zz11111-1».
 - `primaryEmailAddress` : Introduzca una de las direcciones de correo electrónico de su plataforma Exchange a la que quiera asociar el conector de envío.
@@ -243,7 +243,7 @@ Para retirar un conector de envío asociado a una cuenta de la plataforma Exchan
 
 > [!api]
 >
-> @api {PUT} /email/exchange/{organizationName}/service/{exchangeService}/account/{primaryEmailAddress}
+> @api {v1} /email/exchange PUT /email/exchange/{organizationName}/service/{exchangeService}/account/{primaryEmailAddress}
 
 - `organizationName` : Introduzca el nombre de su plataforma Exchange con el formato «private-zz111111-1» o «dedicated-zz11111-1».
 - `primaryEmailAddress` : Introduzca una de las direcciones de correo de su plataforma Exchange, a la que quiere desvincular el conector de envío.
@@ -268,7 +268,7 @@ Para ello, utilice la siguiente llamada a la API:
 
 > [!api]
 >
-> @api {PUT} /email/exchange/{organizationName}/service/{exchangeService}/domain/{domainName}/changeDefaultSBR
+> @api {v1} /email/exchange PUT /email/exchange/{organizationName}/service/{exchangeService}/domain/{domainName}/changeDefaultSBR
 
 - `organizationName` : Introduzca el nombre de su plataforma Exchange con el formato «private-zz111111-1» o «dedicated-zz11111-1».
 - `exchangeService` : Introduzca el nombre de su plataforma Exchange con el formato «private-zz111111-1» o «dedicated-zz11111-1».
@@ -294,31 +294,31 @@ El resultado es el siguiente:
 
 > [!api]
 >
-> @api {GET} email/exchange/{organizationName}/service/{exchangeService}/sendConnector
+> @api {v1} /email/exchange GET email/exchange/{organizationName}/service/{exchangeService}/sendConnector
 
 - Eliminar un conector de envío existente:
 
 > [!api]
 >
-> @api {DELETE} /email/exchange/{organizationName}/service/{exchangeService}/sendConnector/{id}
+> @api {v1} /email/exchange DELETE /email/exchange/{organizationName}/service/{exchangeService}/sendConnector/{id}
 
 - Obtener los detalles de un conector de envío existente:
 
 > [!api]
 >
-> @api {GET} /email/exchange/{organizationName}/service/{exchangeService}/sendConnector/{id}
+> @api {v1} /email/exchange GET /email/exchange/{organizationName}/service/{exchangeService}/sendConnector/{id}
 
 - Editar un conector de envío existente:
 
 > [!api]
 >
-> @api {PUT} /email/exchange/{organizationName}/service/{exchangeService}/sendConnector/{id}
+> @api {v1} /email/exchange PUT /email/exchange/{organizationName}/service/{exchangeService}/sendConnector/{id}
 
 - Cambiar el método de autenticación de un conector de envío existente:
 
 > [!api]
 >
-> @api {POST} /email/exchange/{organizationName}/service/{exchangeService}/sendConnector/{id}/changeAuthentication
+> @api {v1} /email/exchange POST /email/exchange/{organizationName}/service/{exchangeService}/sendConnector/{id}/changeAuthentication
 
 ## Más información
 

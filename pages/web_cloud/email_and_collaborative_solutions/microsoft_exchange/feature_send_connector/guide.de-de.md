@@ -90,7 +90,7 @@ Verwenden Sie den folgenden API-Aufruf, um Ihrer Exchange Plattform einen Send C
 
 > [!api]
 >
-> @api {POST} /email/exchange/{organizationName}/service/{exchangeService}/sendConnector
+> @api {v1} /email/exchange POST /email/exchange/{organizationName}/service/{exchangeService}/sendConnector
 
 - `organizationName`: Geben Sie den Namen Ihrer Exchange Plattform in der Form „private-zz111111-1“ oder „dedicated-zz11111-1“ ein.
 - `exchangeService`: Geben Sie den Namen Ihrer Exchange Plattform in der Form „private-zz111111-1“ oder „dedicated-zz11111-1“ ein.
@@ -119,7 +119,7 @@ Nachdem der Send Connector erstellt wurde, rufen Sie die ID des Send Connectors 
 
 > [!api]
 >
-> @api {GET} email/exchange/{organizationName}/service/{exchangeService}/sendConnector
+> @api {v1} /email/exchange GET email/exchange/{organizationName}/service/{exchangeService}/sendConnector
 
 - `organizationName`: Geben Sie den Namen Ihrer Exchange Plattform in der Form „private-zz111111-1“ oder „dedicated-zz11111-1“ ein.
 - `exchangeService`: Geben Sie den Namen Ihrer Exchange Plattform in der Form „private-zz111111-1“ oder „dedicated-zz11111-1“ ein.
@@ -136,7 +136,7 @@ Sie finden die Details Ihres Send Connectors über diesen Aufruf: <a name="idcon
 
 > [!api]
 >
-> @api {GET} /email/exchange/{organizationName}/service/{exchangeService}/sendConnector/{id}
+> @api {v1} /email/exchange GET /email/exchange/{organizationName}/service/{exchangeService}/sendConnector/{id}
 
 - `organizationName`: Geben Sie den Namen Ihrer Exchange Plattform in der Form „private-zz111111-1“ oder „dedicated-zz11111-1“ ein.
 - `id`: Geben Sie die ID Ihres Send Connectors ein, die Sie im vorherigen Schritt erhalten haben.
@@ -168,7 +168,7 @@ Verwenden Sie den API-Aufruf zur Einrichtung eines Exchange Accounts, um die ID 
 
 > [!api]
 >
-> @api {PUT} /email/exchange/{organizationName}/service/{exchangeService}/account/{primaryEmailAddress}
+> @api {v1} /email/exchange PUT /email/exchange/{organizationName}/service/{exchangeService}/account/{primaryEmailAddress}
 
 - `organizationName`: Geben Sie den Namen Ihrer Exchange Plattform in der Form „private-zz111111-1“ oder „dedicated-zz11111-1“ ein.
 - `primaryEmailAddress`: Geben Sie eine der E-Mail-Adressen Ihrer Exchange Plattform ein, an die Sie den Send Connector anhängen möchten.
@@ -249,7 +249,7 @@ Um einen Send Connector zu entfernen, verwenden Sie den API-Aufruf zum Einrichte
 
 > [!api]
 >
-> @api {PUT} /email/exchange/{organizationName}/service/{exchangeService}/account/{primaryEmailAddress}
+> @api {v1} /email/exchange PUT /email/exchange/{organizationName}/service/{exchangeService}/account/{primaryEmailAddress}
 
 - `organizationName`: Geben Sie den Namen Ihrer Exchange Plattform in der Form „private-zz111111-1“ oder „dedicated-zz11111-1“ ein.
 - `primaryEmailAddress`: Geben Sie eine der E-Mail-Adressen Ihrer Exchange Plattform ein, von der Sie den Send Connector trennen möchten.
@@ -274,7 +274,7 @@ Verwenden Sie hierzu folgenden API-Aufruf:
 
 > [!api]
 >
-> @api {PUT} /email/exchange/{organizationName}/service/{exchangeService}/domain/{domainName}/changeDefaultSBR
+> @api {v1} /email/exchange PUT /email/exchange/{organizationName}/service/{exchangeService}/domain/{domainName}/changeDefaultSBR
 
 - `organizationName`: Geben Sie den Namen Ihrer Exchange Plattform in der Form „private-zz111111-1“ oder „dedicated-zz11111-1“ ein.
 - `exchangeService`: Geben Sie den Namen Ihrer Exchange Plattform in der Form „private-zz111111-1“ oder „dedicated-zz11111-1“ ein.
@@ -300,31 +300,31 @@ Sie erhalten folgendes Ergebnis:
 
 > [!api]
 >
-> @api {GET} email/exchange/{organizationName}/service/{exchangeService}/sendConnector
+> @api {v1} /email/exchange GET email/exchange/{organizationName}/service/{exchangeService}/sendConnector
 
 - Vorhandenen Send Connector löschen:
 
 > [!api]
 >
-> @api {DELETE} /email/exchange/{organizationName}/service/{exchangeService}/sendConnector/{id}
+> @api {v1} /email/exchange DELETE /email/exchange/{organizationName}/service/{exchangeService}/sendConnector/{id}
 
 - Details eines vorhandenen Send Connectors abrufen:
 
 > [!api]
 >
-> @api {GET} /email/exchange/{organizationName}/service/{exchangeService}/sendConnector/{id}
+> @api {v1} /email/exchange GET /email/exchange/{organizationName}/service/{exchangeService}/sendConnector/{id}
 
 - Vorhandenen Send Connector bearbeiten:
 
 > [!api]
 >
-> @api {PUT} /email/exchange/{organizationName}/service/{exchangeService}/sendConnector/{id}
+> @api {v1} /email/exchange PUT /email/exchange/{organizationName}/service/{exchangeService}/sendConnector/{id}
 
 - Authentifizierungsmethode für einen vorhandenen Send Connector ändern:
 
 > [!api]
 >
-> @api {POST} /email/exchange/{organizationName}/service/{exchangeService}/sendConnector/{id}/changeAuthentication
+> @api {v1} /email/exchange POST /email/exchange/{organizationName}/service/{exchangeService}/sendConnector/{id}/changeAuthentication
 
 ## Weiterführende Informationen <a name="go-further"></a>
 

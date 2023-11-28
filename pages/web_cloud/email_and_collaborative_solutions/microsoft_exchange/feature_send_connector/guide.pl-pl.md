@@ -84,7 +84,7 @@ Aby dodać łącznik wysyłania do platformy Exchange, użyj następującego wyw
 
 > [!api]
 >
-> @api {POST} /email/exchange/{organizationName}/service/{exchangeService}/sendConnector
+> @api {v1} /email/exchange POST /email/exchange/{organizationName}/service/{exchangeService}/sendConnector
 
 - `organizationName` : podaj nazwę platformy Exchange w formie "private-zz111111-1" lub "dedicated-zz11111-1".
 - `exchangeService` : podaj nazwę platformy Exchange w formie "private-zz111111-1" lub "dedicated-zz11111-1".
@@ -113,7 +113,7 @@ Po utworzeniu łącznika przesyłania, użyj następującego wywołania API, aby
 
 > [!api]
 >
-> @api {GET} email/exchange/{organizationName}/service/{exchangeService}/sendConnector
+> @api {v1} /email/exchange GET email/exchange/{organizationName}/service/{exchangeService}/sendConnector
 
 - `organizationName` : podaj nazwę platformy Exchange w formie "private-zz111111-1" lub "dedicated-zz11111-1".
 - `exchangeService` : podaj nazwę platformy Exchange w formie "private-zz111111-1" lub "dedicated-zz11111-1".
@@ -130,7 +130,7 @@ Szczegółowe informacje na temat konektora poczty wychodzącej można znaleźć
 
 > [!api]
 >
-> @api {GET} /email/exchange/{organizationName}/service/{exchangeService}/sendConnector/{id}
+> @api {v1} /email/exchange GET /email/exchange/{organizationName}/service/{exchangeService}/sendConnector/{id}
 
 - `organizationName` : podaj nazwę platformy Exchange w formie "private-zz111111-1" lub "dedicated-zz11111-1".
 - `id` : wprowadź ID łącznika wysyłania, otrzymany jako numer na poprzednim etapie.
@@ -162,7 +162,7 @@ Skorzystaj z wywołania API konfiguracji konta Exchange, aby dodać identyfikato
 
 > [!api]
 >
-> @api {PUT} /email/exchange/{organizationName}/service/{exchangeService}/account/{primaryEmailAddress}
+> @api {v1} /email/exchange PUT /email/exchange/{organizationName}/service/{exchangeService}/account/{primaryEmailAddress}
 
 - `organizationName` : podaj nazwę platformy Exchange w formie "private-zz111111-1" lub "dedicated-zz11111-1".
 - `primaryEmailAddress` : wprowadź jeden z adresów e-mail na platformie Exchange, do którego chcesz przypisać łącznik przesyłania.
@@ -243,7 +243,7 @@ Aby usunąć łącznik poczty wychodzącej przypisany do konta z platformy Excha
 
 > [!api]
 >
-> @api {PUT} /email/exchange/{organizationName}/service/{exchangeService}/account/{primaryEmailAddress}
+> @api {v1} /email/exchange PUT /email/exchange/{organizationName}/service/{exchangeService}/account/{primaryEmailAddress}
 
 - `organizationName`: podaj nazwę platformy Exchange w formie "private-zz111111-1" lub "dedicated-zz11111-1".
 - `primaryEmailAddress` : wprowadź jeden z adresów e-mail na platformie Exchange, od którego chcesz odłączyć łącznik przesyłania.
@@ -268,7 +268,7 @@ W tym celu użyj następującego wywołania API:
 
 > [!api]
 >
-> @api {PUT} /email/exchange/{organizationName}/service/{exchangeService}/domain/{domainName}/changeDefaultSBR
+> @api {v1} /email/exchange PUT /email/exchange/{organizationName}/service/{exchangeService}/domain/{domainName}/changeDefaultSBR
 
 - `organizationName` : podaj nazwę platformy Exchange w formie "private-zz111111-1" lub "dedicated-zz11111-1".
 - `exchangeService` : podaj nazwę platformy Exchange w formie "private-zz111111-1" lub "dedicated-zz11111-1".
@@ -294,31 +294,31 @@ Otrzymasz następujący wynik:
 
 > [!api]
 >
-> @api {GET} email/exchange/{organizationName}/service/{exchangeService}/sendConnector
+> @api {v1} /email/exchange GET email/exchange/{organizationName}/service/{exchangeService}/sendConnector
 
 - Usuń istniejący łącznik przesyłania:
 
 > [!api]
 >
-> @api {DELETE} /email/exchange/{organizationName}/service/{exchangeService}/sendConnector/{id}
+> @api {v1} /email/exchange DELETE /email/exchange/{organizationName}/service/{exchangeService}/sendConnector/{id}
 
 - Pobierz szczegóły istniejącego łącznika przesyłania:
 
 > [!api]
 >
-> @api {GET} /email/exchange/{organizationName}/service/{exchangeService}/sendConnector/{id}
+> @api {v1} /email/exchange GET /email/exchange/{organizationName}/service/{exchangeService}/sendConnector/{id}
 
 - Edytuj istniejący łącznik przesyłania:
 
 > [!api]
 >
-> @api {PUT} /email/exchange/{organizationName}/service/{exchangeService}/sendConnector/{id}
+> @api {v1} /email/exchange PUT /email/exchange/{organizationName}/service/{exchangeService}/sendConnector/{id}
 
 - Zmień metodę uwierzytelniania istniejącego łącznika przesyłania:
 
 > [!api]
 >
-> @api {POST} /email/exchange/{organizationName}/service/{exchangeService}/sendConnector/{id}/changeAuthentication
+> @api {v1} /email/exchange POST /email/exchange/{organizationName}/service/{exchangeService}/sendConnector/{id}/changeAuthentication
 
 ## Sprawdź również
 

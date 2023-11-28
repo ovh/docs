@@ -84,7 +84,7 @@ Per aggiungere un connector di invio alla piattaforma Exchange, utilizza questa 
 
 > [!api]
 >
-> @api {POST} /email/exchange/{organizationName}/service/{exchangeService}/sendConnector
+> @api {v1} /email/exchange POST /email/exchange/{organizationName}/service/{exchangeService}/sendConnector
 
 - `organizationName` : inserisci il nome del tuo servizio Exchange nel formato "private-zz111111-1" o "dedicated-zz111111-1".
 - `exchangeService` : inserisci il nome della piattaforma Exchange che si presenta sotto forma "private-zz111111-1" o "dedicated-zz11111-1".
@@ -113,7 +113,7 @@ Una volta creato il connettore di invio, utilizza questa chiamata API per recupe
 
 > [!api]
 >
-> @api {GET} email/exchange/{organizationName}/service/{exchangeService}/sendConnector
+> @api {v1} /email/exchange GET email/exchange/{organizationName}/service/{exchangeService}/sendConnector
 
 - `organizationName` : inserisci il nome del tuo servizio Exchange nel formato "private-zz111111-1" o "dedicated-zz111111-1".
 - `exchangeService` : inserisci il nome della piattaforma Exchange che si presenta sotto forma "private-zz111111-1" o "dedicated-zz11111-1".
@@ -130,7 +130,7 @@ Per visualizzare i dettagli dello slot di invio, utilizza questa API: <a name="i
 
 > [!api]
 >
-> @api {GET} /email/exchange/{organizationName}/service/{exchangeService}/sendConnector/{id}
+> @api {v1} /email/exchange GET /email/exchange/{organizationName}/service/{exchangeService}/sendConnector/{id}
 
 - `organizationName` : inserisci il nome del tuo servizio Exchange nel formato "private-zz111111-1" o "dedicated-zz111111-1".
 - `id`: inserire l'ID del connettore di invio, ottenuto come numero nel passaggio precedente.
@@ -162,7 +162,7 @@ Utilizza la chiamata API di configurazione di un account Exchange per aggiungere
 
 > [!api]
 >
-> @api {PUT} /email/exchange/{organizationName}/service/{exchangeService}/account/{primaryEmailAddress}
+> @api {v1} /email/exchange PUT /email/exchange/{organizationName}/service/{exchangeService}/account/{primaryEmailAddress}
 
 - `organizationName` : inserisci il nome del tuo servizio Exchange nel formato "private-zz111111-1" o "dedicated-zz111111-1".
 - `primaryEmailAddress` : inserisci uno degli indirizzi email del tuo servizio Exchange, a cui vuoi associare il connettore di invio.
@@ -243,7 +243,7 @@ Per rimuovere un socket di invio associato a un account della piattaforma Exchan
 
 > [!api]
 >
-> @api {PUT} /email/exchange/{organizationName}/service/{exchangeService}/account/{primaryEmailAddress}
+> @api {v1} /email/exchange PUT /email/exchange/{organizationName}/service/{exchangeService}/account/{primaryEmailAddress}
 
 - `organizationName` : inserisci il nome del tuo servizio Exchange nel formato "private-zz111111-1" o "dedicated-zz111111-1".
 - `primaryEmailAddress` : inserisci uno degli indirizzi email del tuo servizio Exchange, da cui vuoi scollegare il connettore di invio.
@@ -268,7 +268,7 @@ Per farlo, utilizza questa chiamata API:
 
 > [!api]
 >
-> @api {PUT} /email/exchange/{organizationName}/service/{exchangeService}/domain/{domainName}/changeDefaultSBR
+> @api {v1} /email/exchange PUT /email/exchange/{organizationName}/service/{exchangeService}/domain/{domainName}/changeDefaultSBR
 
 - `organizationName` : inserisci il nome del tuo servizio Exchange nel formato "private-zz111111-1" o "dedicated-zz111111-1".
 - `exchangeService` : inserisci il nome della piattaforma Exchange che si presenta sotto forma "private-zz111111-1" o "dedicated-zz11111-1".
@@ -294,31 +294,31 @@ Il risultato restituito è il seguente:
 
 > [!api]
 >
-> @api {GET} email/exchange/{organizationName}/service/{exchangeService}/sendConnector
+> @api {v1} /email/exchange GET email/exchange/{organizationName}/service/{exchangeService}/sendConnector
 
 - Elimina un connettore di invio esistente:
 
 > [!api]
 >
-> @api {DELETE} /email/exchange/{organizationName}/service/{exchangeService}/sendConnector/{id}
+> @api {v1} /email/exchange DELETE /email/exchange/{organizationName}/service/{exchangeService}/sendConnector/{id}
 
 - Recupera i dettagli di un connettore di invio esistente:
 
 > [!api]
 >
-> @api {GET} /email/exchange/{organizationName}/service/{exchangeService}/sendConnector/{id}
+> @api {v1} /email/exchange GET /email/exchange/{organizationName}/service/{exchangeService}/sendConnector/{id}
 
 - Modifica un connettore di invio esistente:
 
 > [!api]
 >
-> @api {PUT} /email/exchange/{organizationName}/service/{exchangeService}/sendConnector/{id}
+> @api {v1} /email/exchange PUT /email/exchange/{organizationName}/service/{exchangeService}/sendConnector/{id}
 
 - Modificare il metodo di autenticazione di un connettore di invio esistente:
 
 > [!api]
 >
-> @api {POST} /email/exchange/{organizationName}/service/{exchangeService}/sendConnector/{id}/changeAuthentication
+> @api {v1} /email/exchange POST /email/exchange/{organizationName}/service/{exchangeService}/sendConnector/{id}/changeAuthentication
 
 ## Per saperne di più
 
