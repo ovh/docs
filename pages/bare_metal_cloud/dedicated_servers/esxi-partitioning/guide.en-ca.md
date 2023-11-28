@@ -109,7 +109,7 @@ When triggering an OS installation, the customer can optionally provide a `parti
 
 > [!api]
 >
-> @api {POST} /dedicated/server/{serviceName}/install/start
+> @api {v1} /dedicated/server POST /dedicated/server/{serviceName}/install/start
 >
 
 Example of payload:
@@ -126,7 +126,7 @@ To list the different available partitioning schemes for an OVHcloud template, y
 
 > [!api]
 >
-> @api {GET} /dedicated/installationTemplate/{templateName}/partitionScheme
+> @api {v1} /dedicated/installationTemplate GET /dedicated/installationTemplate/{templateName}/partitionScheme
 >
 
 For example, for `esxi70_64` it will return:
@@ -144,14 +144,14 @@ In order to get the details of the partitioning scheme dynamically, you can use 
 
 > [!api]
 >
-> @api {GET} /dedicated/installationTemplate/{templateName}/partitionScheme/{schemeName}/partition
+> @api {v1} /dedicated/installationTemplate GET /dedicated/installationTemplate/{templateName}/partitionScheme/{schemeName}/partition
 >
 
 You can use the following API call to get the details for each partition:
 
 > [!api]
 >
-> @api {GET} /dedicated/installationTemplate/{templateName}/partitionScheme/{schemeName}/partition/{mountpoint}
+> @api {v1} /dedicated/installationTemplate GET /dedicated/installationTemplate/{templateName}/partitionScheme/{schemeName}/partition/{mountpoint}
 >
 
 ## Go further <a name="gofurther"></a>

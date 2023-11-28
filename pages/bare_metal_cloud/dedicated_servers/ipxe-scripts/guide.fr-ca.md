@@ -42,7 +42,7 @@ Utiliser un script personnalisé peut-être intéressant dans les cas suivants :
 
 > [!api]
 >
-> @api {PUT} /dedicated/server/{serviceName}
+> @api {v1} /dedicated/server PUT /dedicated/server/{serviceName}
 >
 
 Spécifiez votre script dans l'attribut `bootScript` directement.
@@ -51,7 +51,7 @@ Spécifiez votre script dans l'attribut `bootScript` directement.
 
 > [!api]
 >
-> @api {GET} /dedicated/server/{serviceName}
+> @api {v1} /dedicated/server GET /dedicated/server/{serviceName}
 >
 
 Votre script se situe dans l'attribut `bootScript`.
@@ -93,14 +93,14 @@ Vous pouvez à tout moment basculer à nouveau sur le disque ou sur le mode resc
 
 > [!api]
 >
-> @api {PUT} /dedicated/server/{serviceName}
+> @api {v1} /dedicated/server PUT /dedicated/server/{serviceName}
 >
 
 Spécifiez `1` dans l'attribut `bootId`.
 
 > [!api]
 >
-> @api {GET} /dedicated/server/{serviceName}
+> @api {v1} /dedicated/server GET /dedicated/server/{serviceName}
 >
 
 Vous observerez que la valeur de l'attribut `bootScript` est désormais nulle.

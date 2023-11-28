@@ -57,7 +57,7 @@ Esta llamada a la API permite consultar el detalle de una granja a partir de su 
 
 > [!api]
 >
-> @api {GET} /ipLoadbalancing/{serviceName}/http/farm/{farmId}
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/http/farm/{farmId}
 > 
 
 |Parámetro|Significado|
@@ -81,7 +81,7 @@ Esta llamada a la API permite modificar la configuración de una granja a partir
 
 > [!api]
 >
-> @api {PUT} /ipLoadbalancing/{serviceName}/http/farm/{farmId}
+> @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/http/farm/{farmId}
 > 
 
 |Parámetro|Significado|
@@ -94,7 +94,7 @@ Esta llamada a la API permite modificar la configuración de una granja a partir
 
 > [!api]
 >
-> @api {POST} /ipLoadbalancing/{serviceName}/refresh
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/refresh
 > 
 
 |Parámetro|Significado|

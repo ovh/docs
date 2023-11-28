@@ -1,7 +1,7 @@
 ---
 title: Migrer son site et ses e-mails vers OVHcloud
 excerpt: Découvrez comment migrer votre site internet, vos e-mails et votre nom de domaine chez OVHcloud sans interruption de services
-updated: 2022-11-24
+updated: 2023-11-15
 ---
 
 ## Objectif
@@ -141,7 +141,7 @@ Après la propagation DNS, le site qui s'affichera avec votre nom de domaine ser
 
 Recréez à l'identique les adresses e-mail présentes chez votre fournisseur e-mail à l'aide de notre guide sur la [création d'adresses e-mail « MX Plan »](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_creation).
 
-Si vous avez opté pour une solution « Exchange », consultez notre documentation sur le sujet pour créer vos adresses e-mail : </pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_starting_hosted>
+Si vous avez opté pour une solution « Exchange », [consultez notre documentation sur le sujet pour créer vos adresses e-mail ](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_starting_hosted)
 
 ### Etape 6 : déclarer les serveurs e-mail OVHcloud dans la zone DNS active de votre nom de domaine <a name="step6"></a>
 

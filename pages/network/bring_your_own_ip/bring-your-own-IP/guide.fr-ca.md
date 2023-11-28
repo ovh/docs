@@ -1,7 +1,7 @@
 ---
 title: Utiliser la fonctionnalité Bring Your Own IP
 excerpt: Découvrez comment importer facilement votre propre adresse IP comme Additional IP dans votre compte OVHcloud
-updated: 2023-09-05
+updated: 2023-11-20
 ---
 
 ## Objectif
@@ -36,18 +36,10 @@ Contrairement à la politique précédente, où un bloc ARIN ne pouvait être ut
 
 Pour que le bloc soit considéré comme valide, les blocs importés doivent être de type suivants :
 
-- ARIN (object «Network type »)
-    - Direct Allocation
-    - Direct Assignment
-
-Vous pouvez consulter les pages <https://www.arin.net/resources/registry/whois/#network> et <https://www.arin.net/resources/registry/reassignments/> pour plus d’informations sur les objets « Network type ».
-
-- RIPE (object « status »)
-    - ASSIGNED PI
-    - LEGACY
-    - ALLOCATED PA
-
-Vous pouvez consulter la page [« Description of the INETNUM Object »](https://apps.db.ripe.net/docs/04.RPSL-Object-Types/02-Descriptions-of-Primary-Objects.html#description-of-the-inetnum-object) pour plus d’informations sur les objets « status ».
+| ARIN (object « Network type ») | RIPE (object « status ») |
+| :--- | :--- |
+| &bull; Direct Allocation <br>&bull; Direct Assignment <br>&bull; Reallocated <br>&bull; Reassigned  |  &bull; ALLOCATED PA <br>&bull; LIR-PARTITIONED PA  <br>&bull; SUB-ALLOCATED PA  <br>&bull; ASSIGNED PA  <br>&bull; ASSIGNED PI  <br>&bull; LEGACY   |
+| **Pour plus d’informations :** <br>&bull; [« Using WhoIs - Network »](https://www.arin.net/resources/registry/whois/#network) <br>&bull; [« Reporting Reassignments »](https://www.arin.net/resources/registry/reassignments/) | **Pour plus d'informations :** <br>[« Description of the INETNUM Object »](https://apps.db.ripe.net/docs/04.RPSL-Object-Types/02-Descriptions-of-Primary-Objects.html#description-of-the-inetnum-object) |
 
 ### Avoir une plage d'IP d'une taille prise en charge <a name="haveaniprangeofasupportedsize"></a>
 
@@ -157,7 +149,7 @@ Pour découper un bloc, utilisez l'appel API suivant :
 
 > [!api]
 >
-> @api {POST} /ip/{ip}/bringYourOwnIp/slice
+> @api {v1} /ip POST /ip/{ip}/bringYourOwnIp/slice
 >
 
 Avec les paramètres suivants :
@@ -172,7 +164,7 @@ Vous pouvez prévisualiser les blocs résultants qui seraient créés pour chaqu
 
 > [!api]
 >
-> @api {GET} /ip/{ip}/bringYourOwnIp/slice
+> @api {v1} /ip GET /ip/{ip}/bringYourOwnIp/slice
 >
 
 Avec les paramètres suivants :
@@ -183,7 +175,7 @@ Pour fusionner un bloc dans un bloc parent, utilisez cet appel API :
 
 > [!api]
 >
-> @api {POST} /ip/{ip}/bringYourOwnIp/aggregate
+> @api {v1} /ip POST /ip/{ip}/bringYourOwnIp/aggregate
 >
 
 Avec les paramètres suivants :
@@ -200,7 +192,7 @@ Vous pouvez prévisualiser toutes les configurations possibles des blocs agrég�
 
 > [!api]
 >
-> @api {GET} /ip/{ip}/bringYourOwnIp/aggregate
+> @api {v1} /ip GET /ip/{ip}/bringYourOwnIp/aggregate
 >
 
 Avec les paramètres suivants :

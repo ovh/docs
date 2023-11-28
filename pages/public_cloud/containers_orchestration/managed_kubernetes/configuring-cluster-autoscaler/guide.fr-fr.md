@@ -47,7 +47,7 @@ Here you have a description of the parameters used in the autoscaler configurati
 
 You can get more information on those parameters on the [Kubernetes autoscaler documentation](https://github.com/kubernetes/autoscaler/blob/master/cluster-autoscaler/FAQ.md).
 
-If you consider we should reevaluate the default value and/or prioritize the possible customization of one of those parameters, you are welcome to create an issue on our [Public roadmap](https://github.com/ovh/public-cloud-roadmap/projects/1).
+If you consider we should reevaluate the default value and/or prioritize the possible customization of one of those parameters, you are welcome to create an issue on our [Public roadmap](https://github.com/orgs/ovh/projects/16/).
 
 ### Configuring the autoscaler
 
@@ -119,7 +119,7 @@ For the moment, only these following parameters are editable:
 - minNodes
 - maxNodes
 
-If you consider that we should prioritize the possible customization of other autoscaling parameters, you are welcome to create an issue on our [Public roadmap](https://github.com/ovh/public-cloud-roadmap/projects/1).
+If you consider that we should prioritize the possible customization of other autoscaling parameters, you are welcome to create an issue on our [Public roadmap](https://github.com/orgs/ovh/projects/16/).
 
 ## Go further
 

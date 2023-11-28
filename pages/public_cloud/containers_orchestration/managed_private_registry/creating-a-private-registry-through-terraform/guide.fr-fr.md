@@ -172,7 +172,7 @@ And we tell Terraform to create a user attached to the registry.
 
 > [!primary]
 >
-> OVHcloud Managed private registries are only available in the `GRA` region for the moment and several [other regions are coming](https://github.com/ovh/public-cloud-roadmap/projects/1).
+> OVHcloud Managed private registries are only available in the `GRA` region for the moment and several [other regions are coming](https://github.com/orgs/ovh/projects/16/).
 
 Finally, create a `output.tf` file with the following content:
 

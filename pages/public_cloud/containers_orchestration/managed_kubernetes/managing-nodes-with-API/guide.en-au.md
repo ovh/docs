@@ -60,7 +60,7 @@ The `GET /cloud/project` API endpoint lists all the available Public Cloud Servi
 
 > [!api]
 >
-> @api {GET} /cloud/project
+> @api {v1} /cloud GET /cloud/project
 > 
 
 **Result:**
@@ -77,7 +77,7 @@ The `GET /cloud/project/{serviceName}/kube` API endpoint lists all the available
 
 > [!api]
 >
-> @api {GET} /cloud/project/{serviceName}/kube
+> @api {v1} /cloud GET /cloud/project/{serviceName}/kube
 > 
 
 **Result:**
@@ -100,7 +100,7 @@ The `GET /cloud/project/{serviceName}/kube/{kubeId}` API endpoint provides impor
 
 > [!api]
 >
-> @api {GET} /cloud/project/{serviceName}/kube/{kubeId}
+> @api {v1} /cloud GET /cloud/project/{serviceName}/kube/{kubeId}
 > 
 
 **Result:**
@@ -147,7 +147,7 @@ The `GET /cloud/project/{serviceName}/kube/{kubeId}/nodepool` API endpoint lists
 
 > [!api]
 >
-> @api {GET} /cloud/project/{serviceName}/kube/{kubeId}/nodepool
+> @api {v1} /cloud GET /cloud/project/{serviceName}/kube/{kubeId}/nodepool
 > 
 
 **Result:**
@@ -233,7 +233,7 @@ Use the `POST /cloud/project/{serviceName}/kube/{kubeId}/nodepool` API endpoint 
 
 > [!api]
 >
-> @api {POST} /cloud/project/{serviceName}/kube/{kubeId}/nodepool
+> @api {v1} /cloud POST /cloud/project/{serviceName}/kube/{kubeId}/nodepool
 > 
 
 **Request:**
@@ -301,7 +301,7 @@ Use the `GET /cloud/project/{serviceName}/kube/{kubeId}/nodepool/{nodePoolId}` A
 
 > [!api]
 >
-> @api {GET} /cloud/project/{serviceName}/kube/{kubeId}/nodepool/{nodePoolId}
+> @api {v1} /cloud GET /cloud/project/{serviceName}/kube/{kubeId}/nodepool/{nodePoolId}
 > 
 
 **Result:**
@@ -350,7 +350,7 @@ To upsize or downsize your node pool, you can use the `PUT /cloud/project/{servi
 
 > [!api]
 >
-> @api {PUT} /cloud/project/{serviceName}/kube/{kubeId}/nodepool/{nodePoolId}
+> @api {v1} /cloud PUT /cloud/project/{serviceName}/kube/{kubeId}/nodepool/{nodePoolId}
 > 
 
 ```json
@@ -374,7 +374,7 @@ To delete a node pool, use the `DELETE /cloud/project/{serviceName}/kube/{kubeId
 
 > [!api]
 >
-> @api {DELETE} /cloud/project/{serviceName}/kube/{kubeId}/nodepool/{nodePoolId}
+> @api {v1} /cloud DELETE /cloud/project/{serviceName}/kube/{kubeId}/nodepool/{nodePoolId}
 > 
 
 ## Go further

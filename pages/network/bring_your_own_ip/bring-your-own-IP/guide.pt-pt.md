@@ -1,7 +1,7 @@
 ---
 title: How to use the Bring Your Own IP feature (EN)
 excerpt: Find out how to easily import your own IP as Additional IP to your OVHcloud account
-updated: 2023-09-05
+updated: 2023-11-20
 ---
 
 ## Objective
@@ -34,20 +34,10 @@ It is now possible to use ARIN or RIPE IP blocks on any OVHcloud campus. This en
 
 Unlike the previous policy, where an ARIN block could only be used with OVHcloud services located in Canada or the USA, and a RIPE block could only be used with OVHcloud services located in Europe, this restriction has been lifted.
 
-To be considered as a valid owned block, imported blocks must be one of the following types :
-
-- ARIN (object «Network type »)
-    - Direct Allocation
-    - Direct Assignment
-
-See <https://www.arin.net/resources/registry/whois/#network> and <https://www.arin.net/resources/registry/reassignments/> for more information on Net Types objects.
-
-- RIPE (object « status »)
-    - ASSIGNED PI
-    - LEGACY
-    - ALLOCATED PA
-
-See [« Description of the INETNUM Object »](https://apps.db.ripe.net/docs/04.RPSL-Object-Types/02-Descriptions-of-Primary-Objects.html#description-of-the-inetnum-object) for more information on status objects.
+| ARIN (object *Network type*) | RIPE (object *status*) |
+| :--- | :--- |
+| &bull; Direct Allocation <br>&bull; Direct Assignment <br>&bull; Reallocated <br>&bull; Reassigned  |  &bull; ALLOCATED PA <br>&bull; LIR-PARTITIONED PA  <br>&bull; SUB-ALLOCATED PA  <br>&bull; ASSIGNED PA  <br>&bull; ASSIGNED PI  <br>&bull; LEGACY   |
+| **For more information :** <br>&bull; [Using WhoIs - Network](https://www.arin.net/resources/registry/whois/#network) <br>&bull; [Reporting Reassignments](https://www.arin.net/resources/registry/reassignments/) | **For more information :** <br>[Description of the INETNUM Object](https://apps.db.ripe.net/docs/04.RPSL-Object-Types/02-Descriptions-of-Primary-Objects.html#description-of-the-inetnum-object) |
 
 ### Your IP range must have a supported size <a name="supportedsize"></a>
 
@@ -155,7 +145,7 @@ To slice a block, use the following API call :
 
 > [!api]
 >
-> @api {POST} /ip/{ip}/bringYourOwnIp/slice
+> @api {v1} /ip POST /ip/{ip}/bringYourOwnIp/slice
 >
 
 Use the following parameters:
@@ -170,7 +160,7 @@ You can preview the resulting blocks that would be created for each block size, 
 
 > [!api]
 >
-> @api {GET} /ip/{ip}/bringYourOwnIp/slice
+> @api {v1} /ip GET /ip/{ip}/bringYourOwnIp/slice
 >
 
 Use the following parameters:
@@ -181,7 +171,7 @@ To merge back a block into a parent block, use this API call :
 
 > [!api]
 >
-> @api {POST} /ip/{ip}/bringYourOwnIp/aggregate
+> @api {v1} /ip POST /ip/{ip}/bringYourOwnIp/aggregate
 >
 
 Use the following parameters:
@@ -198,7 +188,7 @@ You can preview all the possible configurations of aggregated blocks for a given
 
 > [!api]
 >
-> @api {GET} /ip/{ip}/bringYourOwnIp/aggregate
+> @api {v1} /ip GET /ip/{ip}/bringYourOwnIp/aggregate
 >
 
 Use the following parameters:

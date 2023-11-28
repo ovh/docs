@@ -33,7 +33,7 @@ Next, go to the following API call:
 
 > [!api]
 >
-> @api {GET} /dedicated/server
+> @api {v1} /dedicated/server GET /dedicated/server
 >
 
 Next, retrieve the name of your hybrid server by clicking `Execute`{.action}:
@@ -48,7 +48,7 @@ Go to the following API call:
 
 > [!api]
 >
-> @api {GET} /dedicated/server/{serviceName}/specifications/hardware
+> @api {v1} /dedicated/server GET /dedicated/server/{serviceName}/specifications/hardware
 >
 
 Enter the name of your server in the **serviceName** field, and click the `Execute`{.action} button. You will then see your server's hardware information.
@@ -66,7 +66,7 @@ To do this, go to the following API call to retrieve a list of compatible operat
 
 > [!api]
 >
-> @api {GET} /dedicated/server/{serviceName}/install/compatibleTemplates
+> @api {v1} /dedicated/server GET /dedicated/server/{serviceName}/install/compatibleTemplates
 >
 
 ![Compatible templates](images/templates-01.png){.thumbnail}
@@ -75,7 +75,7 @@ Make a note of the template name for your chosen operating system, then go to th
 
 > [!api]
 >
-> @api {POST} /dedicated/server/{serviceName}/install/start
+> @api {v1} /dedicated/server POST /dedicated/server/{serviceName}/install/start
 >
 
 Enter your server's reference into the **serviceName** field, enter the diskGroupId (2) into the **diskGroupId** field, and enter the template name into the **templateName** field (all other fields are optional).
@@ -88,7 +88,7 @@ Your operating system will now be installed. You can check the progress of the i
 
 > [!api]
 >
-> @api {GET} /dedicated/server/{serviceName}/install/status
+> @api {v1} /dedicated/server GET /dedicated/server/{serviceName}/install/status
 >
 
 ## Go further

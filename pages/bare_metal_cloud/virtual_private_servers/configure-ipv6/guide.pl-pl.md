@@ -66,14 +66,14 @@ Pierwsze umożliwia pobranie adresu IPv6 przypisanego do Twojego serwera.
 
 > [!api]
 >
-> @api {GET} /vps/{serviceName}/ips
+> @api {v1} /vps GET /vps/{serviceName}/ips
 >
 
 Drugie zapytanie API umożliwia pobranie bramy IPv6 przypisanej do Twojego serwera.
 
 > [!api]
 >
-> @api {GET} /vps/{serviceName}/ips/{ipAddress}
+> @api {v1} /vps GET /vps/{serviceName}/ips/{ipAddress}
 >
 
 Po pobraniu adresów przejdź do etap 2 "[Zastosuj konfigurację IPv6](#applyipv6)".

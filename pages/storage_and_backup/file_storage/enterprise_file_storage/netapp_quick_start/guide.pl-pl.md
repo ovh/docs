@@ -41,7 +41,7 @@ Wszystkie Twoje aktywne usługi mogą zostać odzyskane przy użyciu następują
 
 > [!api]
 >
-> @api {GET} /storage/netapp
+> @api {v1} /storage GET /storage/netapp
 >
 
 ### Utwórz nowy wolumen
@@ -56,7 +56,7 @@ Aby utworzyć wolumen, użyj następującej drogi API:
 >
 >> > [!api]
 >> >
->> > @api {POST} /storage/netapp/{serviceName}/share
+>> > @api {v1} /storage POST /storage/netapp/{serviceName}/share
 >> >
 >>
 >
@@ -106,7 +106,7 @@ Aby utworzyć nowy ACL, który pozwoli Ci łączyć się z wolumenem, użyj nast
 >
 >> > [!api]
 >> >
->> > @api {POST} /storage/netapp/{serviceName}/share/{shareId}/acl
+>> > @api {v1} /storage POST /storage/netapp/{serviceName}/share/{shareId}/acl
 >> >
 >>
 >
@@ -147,7 +147,7 @@ Sprawdź status utworzenia ACL przy użyciu następującej drogi API:
 >
 >> > [!api]
 >> >
->> > @api {GET} /storage/netapp/{serviceName}/share/{shareId}/acl/{aclRuleId}
+>> > @api {v1} /storage GET /storage/netapp/{serviceName}/share/{shareId}/acl/{aclRuleId}
 >> >
 >>
 >
@@ -181,7 +181,7 @@ Po aktywacji ACL pobierz ścieżki dostępu wolumenu za pomocą następującego 
 >
 >> > [!api]
 >> >
->> > @api {GET} /storage/netapp/{serviceName}/share/{shareId}/accessPath
+>> > @api {v1} /storage GET /storage/netapp/{serviceName}/share/{shareId}/accessPath
 >> >
 >>
 >
@@ -221,7 +221,7 @@ Możesz usunąć wolumen za pomocą następującej drogi API:
 >
 >> > [!api]
 >> >
->> > @api {DELETE} /storage/netapp/{serviceName}/share/{shareId}
+>> > @api {v1} /storage DELETE /storage/netapp/{serviceName}/share/{shareId}
 >> >
 >>
 >

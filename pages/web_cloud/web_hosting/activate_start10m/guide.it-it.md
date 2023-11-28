@@ -1,7 +1,7 @@
 ---
 title: "Attivare l'hosting gratuito 100M"
-excerpt: 'Come attivare il piano di Hosting gratuito 100M'
-updated: 2022-09-15
+excerpt: "Questa guida ti mostra come attivare il piano di Hosting gratuito 100M"
+updated: 2023-11-10
 ---
 
 > [!primary]
@@ -19,7 +19,7 @@ Con [Hosting gratuito 100M](https://www.ovhcloud.com/it/domains/free-web-hosting
 > Per creare un sito Web composto da più pagine e che necessita di database, come un CMS (WordPress, Joomla!, PrestaShop, Drupal, ecc...), ti consigliamo di ordinare direttamente uno [dei nostri hosting Web](https://www.ovhcloud.com/it/web-hosting/) dal nostro sito o dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}.
 >
 
-**Come attivare il tuo hosting gratuito 100M**
+**Questa guida ti mostra come attivare il tuo hosting gratuito 100M**
 
 ## Prerequisiti
 
@@ -76,6 +76,8 @@ Consulta la guida di [creazione di un account MX Plan](/pages/web_cloud/email_an
 [Accedere allo spazio di storage di un hosting Web](/pages/web_cloud/web_hosting/ftp_connection){.external}
 
 [Creare un indirizzo email con la soluzione MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_creation){.external}
+
+[Gestire un certificato SSL su un hosting Web](/pages/web_cloud/web_hosting/ssl_on_webhosting)
 
 Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
 

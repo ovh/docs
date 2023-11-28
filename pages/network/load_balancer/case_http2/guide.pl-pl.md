@@ -36,7 +36,7 @@ Dodaj trasę do Twojej usługi.
 >
 >> > [!api]
 >> >
->> > @api {POST} /ipLoadbalancing/{serviceName}/tcp/route
+>> > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/tcp/route
 >> >
 >>
 >
@@ -73,7 +73,7 @@ Dodaj regułę do trasy.
 >
 >> > [!api]
 >> >
->> > @api {POST} /ipLoadbalancing/{serviceName}/tcp/route/{routeId}/rule
+>> > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/tcp/route/{routeId}/rule
 >> >
 >>
 >
@@ -116,7 +116,7 @@ Odświeżanie strefy:
 >
 >> > [!api]
 >> >
->> > @api {POST} /ipLoadbalancing/{serviceName}/refresh
+>> > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/refresh
 >> >
 >>
 >

@@ -63,7 +63,7 @@ You can also validate the termination request through the following OVHcloud API
 
 > [!api]
 >
-> @api {POST} /dedicatedCloud/{serviceName}/confirmTermination
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/confirmTermination
 >
 
 You will then need to fill in the validation token available in the termination confirmation email.

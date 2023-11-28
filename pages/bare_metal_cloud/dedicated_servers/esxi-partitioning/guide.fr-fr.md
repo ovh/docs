@@ -108,7 +108,7 @@ Lorsque vous lancez une installation d'OS, vous pouvez fournir une option `parti
 
 > [!api]
 >
-> @api {POST} /dedicated/server/{serviceName}/install/start
+> @api {v1} /dedicated/server POST /dedicated/server/{serviceName}/install/start
 >
 
 Exemple de requête :
@@ -125,7 +125,7 @@ Pour lister les différents schémas de partitionnement d'un template OS OVHclou
 
 > [!api]
 >
-> @api {GET} /dedicated/installationTemplate/{templateName}/partitionScheme
+> @api {v1} /dedicated/installationTemplate GET /dedicated/installationTemplate/{templateName}/partitionScheme
 >
 
 Exemple de retour pour `esxi70_64` :
@@ -143,14 +143,14 @@ Afin d'obtenir les détails du schéma de partitionnement de manière dynamique,
 
 > [!api]
 >
-> @api {GET} /dedicated/installationTemplate/{templateName}/partitionScheme/{schemeName}/partition
+> @api {v1} /dedicated/installationTemplate GET /dedicated/installationTemplate/{templateName}/partitionScheme/{schemeName}/partition
 >
 
 Vous pouvez utiliser l'appel API suivant afin d'obtenir le détail de chaque partition :
 
 > [!api]
 >
-> @api {GET} /dedicated/installationTemplate/{templateName}/partitionScheme/{schemeName}/partition/{mountpoint}
+> @api {v1} /dedicated/installationTemplate GET /dedicated/installationTemplate/{templateName}/partitionScheme/{schemeName}/partition/{mountpoint}
 >
 
 ## Aller plus loin <a name="gofurther"></a>

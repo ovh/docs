@@ -1,7 +1,7 @@
 ---
 title: "Gérer son hébergement web avec Visual Studio Code via SFTP"
 excerpt: "Administrer un site internet sur un hébergement web avec Visual Studio Code grâce à une extension SFTP"
-updated: 2023-10-24
+updated: 2023-11-06
 ---
 
 ## Objectif
@@ -70,7 +70,7 @@ Grâce à cette commande, Visual Studio Code va créer le fichier de configurati
 
 ![hosting](images/SFTP_folder.png){.thumbnail}
 
-Cliquez sur `Open Folder`{.action}, dirigez-vous à l’emplacement du dossier local de votre choix et cliquez sur  `Sélectionner un dossier`{.action} pour confirmer.
+Cliquez sur `Open Folder`{.action}, dirigez-vous à l’emplacement du dossier local de votre choix et cliquez sur  `Select Folder`{.action} pour confirmer.
 
 ![hosting](images/select_folder.png){.thumbnail}
 
@@ -99,7 +99,7 @@ Repérez-le aux deux emplacements surlignés en orange.
 
 #### host
 
-Toujours dans l’onglet `FTP-SSH`{.action}, le nom d'hôte (`host`) est visible sous la mention Serveur `FTP et SFTP`{.action}.
+Toujours dans l’onglet `FTP-SSH`{.action}, le nom d'hôte (`host`) est visible sous la mention `Serveur FTP et SFTP`{.action}.
 
 ![hosting](images/ftp_host_name.png){.thumbnail}
 
@@ -149,7 +149,7 @@ Visual Studio Code vous demande de sélectionner le dossier que vous souhaitez t
 
 ![hosting](images/download_project.png){.thumbnail}
 
-S'il est demandé, saisissez le mot de passe associé à l’utilisateur renseigné dans le fichier « sftp.json » , puis cliquez sur `valider`. Après le téléchargement, vous visualisez l’ensemble des dossiers et fichiers de votre projet dans l’explorateur de fichiers situé dans la colonne à gauche de l’interface Visual Studio Code.
+S'il est demandé, saisissez le mot de passe associé à l’utilisateur renseigné dans le fichier « sftp.json » , puis cliquez sur `enter`. Après le téléchargement, vous visualisez l’ensemble des dossiers et fichiers de votre projet dans l’explorateur de fichiers situé dans la colonne à gauche de l’interface Visual Studio Code.
 
 ![hosting](images/explorer.png){.thumbnail}
 
@@ -175,7 +175,7 @@ Retrouvez la liste des commandes [ici](https://github.com/Natizyskunk/vscode-sft
 À présent, vous êtes en mesure d'accéder et de modifier le contenu de votre hébergement web via Visual Studio Code.
 Ce guide a pour but de présenter d'une manière efficace la gestion d'un projet depuis Visual Studio Code. Il convient pour une première expérience. Néanmoins, si vous modifiez plusieurs fichiers et que ces derniers sont synchronisés sur votre hébergement web, il vous sera impossible de voir l'historique de vos modifications pour éventuellement revenir dessus ou rattraper une erreur.
 
-## Aller plus loin
+## Aller plus loin <a name="go-further"></a>
 
 [Se connecter à l'espace de stockage FTP de son hébergement web](/pages/web_cloud/web_hosting/ftp_connection)
 

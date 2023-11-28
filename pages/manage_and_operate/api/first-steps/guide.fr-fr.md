@@ -67,7 +67,7 @@ Par exemple, pour récupérer la liste de vos noms de domaine, utilisez l'API su
  
 > [!api]
 >
-> @api {GET} /domain
+> @api {v1} /domain GET /domain
 >
 
 **POST**
@@ -78,7 +78,7 @@ Par exemple, pour ajouter un enregistrement à votre zone DNS, utilisez l'API su
 
 > [!api]
 >
-> @api {POST} /domain/zone/{zoneName}/record
+> @api {v1} /domain POST /domain/zone/{zoneName}/record
 >
 
 **PUT**
@@ -89,7 +89,7 @@ Par exemple, si vous vous êtes trompé dans un enregistrement de votre zone DNS
 
 > [!api]
 >
-> @api {PUT} /domain/zone/{zoneName}/record/{id}
+> @api {v1} /domain PUT /domain/zone/{zoneName}/record/{id}
 >
 
 **DELETE**
@@ -100,7 +100,7 @@ Par exemple, si vous ne souhaitez finalement pas conserver l'enregistrement DNS 
 
 > [!api]
 >
-> @api {DELETE}  /domain/zone/{zoneName}/record/{id}
+> @api {v1} /domain DELETE /domain/zone/{zoneName}/record/{id}
 >
 
 ##### Paramètres de l'API

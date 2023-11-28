@@ -49,7 +49,7 @@ Todos los snapshots existentes de un volumen pueden recuperarse utilizando la si
 >
 >> > [!api]
 >> >
->> > @api {GET} /storage/netapp/{serviceName}/share/{shareId}/snapshot
+>> > @api {v1} /storage GET /storage/netapp/{serviceName}/share/{shareId}/snapshot
 >>
 >>
 >
@@ -78,7 +78,7 @@ Para crear un snapshot, utilice la siguiente ruta de la API:
 >
 >> > [!api]
 >> >
->> > @api {POST} /storage/netapp/{serviceName}/share/{shareId}/snapshot
+>> > @api {v1} /storage POST /storage/netapp/{serviceName}/share/{shareId}/snapshot
 >> >
 >>
 >
@@ -117,7 +117,7 @@ Para obtener la información de un snapshot, utilice la siguiente ruta de la API
 >
 >> > [!api]
 >> >
->> > @api {GET} /storage/netapp/{serviceName}/share/{shareId}/snapshot/{snapshotId}
+>> > @api {v1} /storage GET /storage/netapp/{serviceName}/share/{shareId}/snapshot/{snapshotId}
 >>
 >>
 >
@@ -148,7 +148,7 @@ Para eliminar un snapshot, utilice la siguiente ruta de la API:
 >
 >> > [!api]
 >> >
->> > @api {DELETE} /storage/netapp/{serviceName}/share/{shareId}/snapshot/{snapshotId}
+>> > @api {v1} /storage DELETE /storage/netapp/{serviceName}/share/{shareId}/snapshot/{snapshotId}
 >>
 >>
 >

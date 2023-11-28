@@ -66,7 +66,7 @@ Para ello, utilice la siguiente llamada:
 
 > [!api]
 >
-> @api {POST} /ip/{ip}/move
+> @api {v1} /ip POST /ip/{ip}/move
 > 
 
 Rellene los campos utilizando los siguientes parámetros:
@@ -85,7 +85,7 @@ A continuación utilice la siguiente llamada para mover la IP en el parking de I
 
 > [!api]
 >
-> @api {POST} /ip/{ip}/park
+> @api {v1} /ip POST /ip/{ip}/park
 > 
 
 > [!warning]

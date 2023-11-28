@@ -80,6 +80,8 @@ Sustituya el número **22** por el número de puerto que desee.<br>
 Para mayor seguridad, utilice un número entre 49152 y 65535.<br>
 Guarde y cierre el archivo de configuración.
 
+Si la línea está "comentada" (es decir, precedida de un "#"), asegúrese de borrar el "#" antes de guardar el archivo para que el cambio surta efecto.
+
 Reinicie el servicio:
 
 ```bash

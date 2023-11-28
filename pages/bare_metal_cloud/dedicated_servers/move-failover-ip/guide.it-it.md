@@ -85,7 +85,7 @@ Per prima cosa, è meglio verificare se l'indirizzo IP può essere spostato.
 
 > [!api]
 >
-> @api {GET} /dedicated/server/{serviceName}/ipCanBeMovedTo
+> @api {v1} /dedicated/server GET /dedicated/server/{serviceName}/ipCanBeMovedTo
 >
 
 - `serviceName`: il riferimento del server dedicato di destinazione
@@ -95,7 +95,7 @@ Per spostare l'indirizzo IP, utilizza questa chiamata:
 
 > [!api]
 >
-> @api {POST} /dedicated/server/{serviceName}/ipMove
+> @api {v1} /dedicated/server POST /dedicated/server/{serviceName}/ipMove
 >
 
 - `serviceName`: il riferimento del server dedicato di destinazione

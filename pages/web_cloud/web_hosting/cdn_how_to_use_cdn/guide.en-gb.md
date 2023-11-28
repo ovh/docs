@@ -1,14 +1,14 @@
 ---
-title: 'Speeding up your website with CDN'
-excerpt: 'Find out how to improve your website by reducing loading times on a Web Hosting plan using the CDN'
-updated: 2023-09-22
+title: "Speeding up your website with CDN"
+excerpt: "Find out how to improve your website by reducing loading times on a Web Hosting plan using the CDN"
+updated: 2023-11-21
 ---
 
 ## Objective
 
 If you want to improve user experience by speeding up your website, the most effective technique is to enable the CDN (Content Delivery Network) option. This allows you to cache static files, such as images, CSS and JavaScript, on the closest servers to your visitors.
 
-**This guide explains how to manage the CDN option on your Web Hosting plan.**
+**Find out how to manage the CDN option on your Web Hosting plan.**
 
 ## Definition
 
@@ -376,4 +376,8 @@ The absence of the “*X-CDN*” header shows that you are not using a CDN.
 
 ## Go further
 
-Join our community of users on <https://community.ovh.com/en/>.
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory/).
+
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-gb/support-levels/).
+
+Join our community of users on <https://community.ovh.com/en/>. 

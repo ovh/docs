@@ -42,7 +42,7 @@ Dans la fenêtre qui s’ouvre, sélectionnez les informations suivantes :
 |---|---|
 |**Sélectionnez le type de base de données**|Choisissez la taille de la base de données. Cette taille fait référence à l'espace dont dispose votre base de données pour le stockage des données.|
 |**Sélectionnez le moteur de la base de données à ajouter**|Choisissez le moteur que la base de données doit utiliser. Les bases de données inclues dans votre [offre d’hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/) sont uniquement disponibles avec le moteur MySQL.|
-|**Sélectionnez la version de la base de données à ajouter**|Choisissez la version utilisée par le moteur de la base de données. Assurez-vous que votre site web soit compatible avec la version que vous avez choisie. |
+|**Sélectionnez la version de la base de données à ajouter**|Choisissez la version utilisée par le moteur de la base de données. Assurez-vous que votre site web soit compatible avec la version que vous avez choisie.|
 
 Ensuite, cliquez sur `Suivant`{.action}.
 
@@ -80,7 +80,7 @@ Complétez les informations requises et cliquez sur `Suivant`{.action}.
 
 Vérifiez que toutes les informations affichées dans le résumé sont correctes. Si tel est le cas, cliquez sur `Confirmer`{.action} pour lancer la création de votre base de données.
 
-> [primary]
+> [!primary]
 >
 > Lorsque vous cliquez sur `Confirmer`{.action}, la création de la base de données peut prendre jusqu'à **15 minutes**. Rechargez la page web de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) si la base de données n'apparaît pas automatiquement dans le tableau listant vos bases de données.
 >
@@ -106,7 +106,7 @@ Si besoin, pour récupérer ces informations de connexion, connectez-vous à vot
 
 Vous retrouverez l'ensemble des informations de connexion à votre base de données dans le tableau qui s'affiche. Ceci à l'exception du *mot de passe* pour des raisons de sécurité.
 
-> [warning]
+> [!warning]
 >
 > Si vous ne vous souvenez plus de votre mot de passe de connexion à votre base de données, consultez notre guide « [Changer le mot de passe de sa base de données](/pages/web_cloud/web_hosting/sql_change_password) ».
 >
@@ -133,7 +133,7 @@ Pour vérifier les snapshots disponibles ainsi que leur date et heure de créati
 
 **Trop de connexions**
 
-Les bases de données d'hébergement web sont limitées à 30 connexions simultanées (variable système *max_connections*). Les demandes SQL doivent donc être optimisées pour éviter ce genre d'erreur. Si les problèmes persistent malgré tout, des mesures alternatives doivent être envisagées. Par exemple, vous pouvez migrer votre base de données sur une base de données [Web Cloud Databases](https://www.ovh.com/fr/cloud/cloud-databases/) ou encore réaliser une [mise à niveau de votre offre d'hébergement web](https://www.ovhcloud.com/fr/web-hosting/uc-best-web-hosting/).
+Les bases de données d'hébergement web sont limitées à 30 connexions simultanées (variable système *max_connections*). Les demandes SQL doivent donc être optimisées pour éviter ce genre d'erreur. Si les problèmes persistent malgré tout, des mesures alternatives doivent être envisagées. Par exemple, vous pouvez migrer votre base de données sur une base de données [Web Cloud Databases](https://www.ovhcloud.com/fr/web-cloud/databases/) ou encore réaliser une [mise à niveau de votre offre d'hébergement web](https://www.ovhcloud.com/fr/web-hosting/uc-best-web-hosting/).
 
 **Erreurs de connexion / « introuvable »**
 

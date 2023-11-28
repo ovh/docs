@@ -78,7 +78,7 @@ To deploy your image, use the following API call and complete the required field
 
 > [!api]
 >
-> @api {POST} /dedicated/server/{serviceName}/bringYourOwnImage
+> @api {v1} /dedicated/server POST /dedicated/server/{serviceName}/bringYourOwnImage
 >
 
 #### Deployment options <a name="options"></a>
@@ -111,7 +111,7 @@ You can track the deployment of your image through the API call below or through
 
 > [!api]
 >
-> @api {GET} /dedicated/server/{serviceName}/bringYourOwnImage
+> @api {v1} /dedicated/server GET /dedicated/server/{serviceName}/bringYourOwnImage
 >
 
 In this example, the deployment is "starting".
@@ -141,7 +141,7 @@ You can choose to remove your deployment by using the following API call:
 
 > [!api]
 >
-> @api {DELETE} /dedicated/server/{serviceName}/bringYourOwnImage
+> @api {v1} /dedicated/server DELETE /dedicated/server/{serviceName}/bringYourOwnImage
 >
 
 This will erase the deployment status and put your server in rescue mode.

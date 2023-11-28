@@ -1,7 +1,7 @@
 ---
-title: Co zrobić w przypadku błędu 500 Internal Server Error?
-excerpt: Zdiagnozuj najczęstsze przypadki błędów 500
-updated: 2023-05-16
+title: "Co zrobić w przypadku błędu 500 Internal Server Error?"
+excerpt: "Zdiagnozuj najczęstsze przypadki błędów 500"
+updated: 2023-11-22
 ---
 
 > [!primary]
@@ -114,5 +114,7 @@ Jeśli po aktualizacji wersji PHP na Twoim hostingu wystąpił błąd 500, zapoz
 [Moja strona jest powolny. Co robić? ](/pages/web_cloud/web_hosting/diagnostic_slownesses)
 
 [Usunięcie błędu "Strona nie została zainstalowana"](/pages/web_cloud/web_hosting/multisites_website_not_installed)
+
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

@@ -1,7 +1,7 @@
 ---
 title: 'Iniziare a utilizzare la soluzione MX Plan'
 excerpt: 'Come eseguire le prime operazioni sul servizio MX Plan'
-updated: 2021-07-19
+updated: 2023-11-15
 ---
 
 > [!primary]
@@ -244,8 +244,6 @@ Invia regolarmente una newsletter ai tuoi contatti
 Per creare una mailing list. Per maggiori informazioni, consulta la guida [Gestire e utilizzare le mailing list](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_mailing_list).
 
 ## Per saperne di più
-
-La migrazione delle offerte storiche MX Plan verso le nuove offerte MX Plan è in corso. Per richiedere la migrazione della tua offerta, segui le indicazioni di [questa pagina](https://www.ovh.it/mxplan-migration/#accordion_6001-4).
 
 Se le tue esigenze cambiano e vuoi usufruire di funzionalità aggiuntive, puoi anche [migrare un indirizzo email MX Plan verso un account Email Pro o Exchange](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel).
 

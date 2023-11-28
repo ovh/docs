@@ -36,7 +36,7 @@ Depois de escolher a instância criada e uma aplicação pré-instalada, pode re
 > Chamada API
 >> > [!api]
 >> >
->> > @api {POST} /cloud/project/{serviceName}/instance/{instanceId}/applicationAccess
+>> > @api {v1} /cloud POST /cloud/project/{serviceName}/instance/{instanceId}/applicationAccess
 >> >
 >
 > Parâmetros

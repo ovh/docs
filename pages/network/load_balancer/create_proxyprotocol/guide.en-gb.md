@@ -80,7 +80,7 @@ Create a new farm for each port on backend.
 
 > [!api]
 >
-> @api {POST} /ipLoadbalancing/{serviceName}/http/farm
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/http/farm
 > 
 |Parameter|Call 1|Call 2|
 |---|---|---|
@@ -97,7 +97,7 @@ Create a new farm for each port on backend.
 
 > [!api]
 >
-> @api {POST} /ipLoadbalancing/{serviceName}/http/farm/{farmId}/server
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/http/farm/{farmId}/server
 > 
 |Parameter|Call 1|Call 2|Call 3|Call 4|
 |---|---|---|---|---|
@@ -122,7 +122,7 @@ Create a new farm for each port on backend.
 
 > [!api]
 >
-> @api {POST} /ipLoadbalancing/{serviceName}/http/frontend
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/http/frontend
 > 
 |Parameter|Call 1|Call 2|
 |---|---|---|
@@ -143,7 +143,7 @@ Create a new farm for each port on backend.
 
 > [!api]
 >
-> @api {POST} /ipLoadbalancing/{serviceName}/refresh
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/refresh
 > 
 
 ### Firewall
@@ -151,7 +151,7 @@ Don't forget to allow IPLoadbalancing trafic to your backends:
 
 > [!api]
 >
-> @api {GET} /ipLoadbalancing/{serviceName}/natIp
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/natIp
 > 
 Get IP range used by OVH Load Balancer: 10.108.0.0/16
 

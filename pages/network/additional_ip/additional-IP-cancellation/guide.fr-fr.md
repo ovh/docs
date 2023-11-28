@@ -35,14 +35,14 @@ Vous devez d'abord déterminer le nom du service à résilier. Pour cela, utilis
 
 > [!api]
 >
-> @api {GET} /ip/service
+> @api {v1} /ip GET /ip/service
 >
 
 Pour résilier le service, utilisez l'appel suivant :
 
 > [!api]
 >
-> @api {POST} /ip/service/{serviceName}/terminate
+> @api {v1} /ip POST /ip/service/{serviceName}/terminate
 >
 
 - `serviceName` : le nom du service Additional IP obtenu via l'appel API précédent.

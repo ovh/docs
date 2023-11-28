@@ -115,7 +115,11 @@ You will need to specify the RAID number (/dev/sg0 = 1er RAID, /dev/sg1 = 2e RAI
 
 #### Servers with NVMe disks
 
-If you have an NVMe disk, you will need to put the server into [rescue mode](/pages/bare_metal_cloud/dedicated_servers/rescue_mode){.external}, on which the **nvme-cli** tool is installed by default.
+If you have an NVMe disk, you will need to put the server into [rescue mode](/pages/bare_metal_cloud/dedicated_servers/rescue_mode){.external} and install the `nvme-cli` tool.
+
+```sh
+apt install nvme-cli
+```
 
 You will then need to use the `nvme list` command, and retrieve your disks’ serial numbers:
 

@@ -1,6 +1,6 @@
 ---
-title: Instalacja Composer na hostingu
-excerpt: Dowiedz się, jak zainstalować i zrobić pierwsze kroki w Composer.
+title: "Instalacja Composer na hostingu"
+excerpt: "Dowiedz się, jak zainstalować i zrobić pierwsze kroki w Composer"
 updated: 2023-02-24
 ---
 

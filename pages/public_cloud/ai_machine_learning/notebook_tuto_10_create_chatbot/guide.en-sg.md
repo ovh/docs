@@ -80,7 +80,7 @@ Explanation of each line:
 
 Your notebook is ready, you can access it and log in. 
 
-Before training an AI model inside the notebook, you must install all the dependencies of Rasa. Open a terminal and launch this command:
+Before training an AI model inside the notebook, you must install all the dependencies of Rasa. To do this, open a terminal by clicking the menu icon > Terminal > New Terminal, and launch the following command:
 
 ```console 
 pip install rasa

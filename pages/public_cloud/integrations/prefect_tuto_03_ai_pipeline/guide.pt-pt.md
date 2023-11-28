@@ -207,7 +207,7 @@ The second task will use the OVHcloud SDK for Python. This library provides a PO
 
 > [!api]
 >
-> @api {POST}  /cloud/project/{serviceName}/ai/job
+> @api {v1} /cloud POST /cloud/project/{serviceName}/ai/job
 >
 
 To launch a job, we must define some parameters. We can't launch a job without a name and an image. With the OVHcloud SDK, parameters are very easy to provide. 
@@ -257,7 +257,7 @@ Once the job is launched, the next step is to determine whether it was successfu
 
 > [!api]
 >
-> @api {GET}  /cloud/project/{serviceName}/ai/job/{jobId}
+> @api {v1} /cloud GET /cloud/project/{serviceName}/ai/job/{jobId}
 >
 
 The task that ensured the verification of the end of the job:

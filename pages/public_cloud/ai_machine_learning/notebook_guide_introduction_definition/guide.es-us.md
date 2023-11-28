@@ -1,7 +1,7 @@
 ---
 title: AI Notebooks - Getting started
 excerpt: Learn how to simply bootstrap an AI Notebook
-updated: 2022-11-24
+updated: 2023-11-21
 ---
 
 ## Objective
@@ -107,6 +107,8 @@ At the end of the wizard, review your settings and click on the `Create a Notebo
 > [!primary]
 >
 > Note at the bottom of the screen the equivalent of all these steps with the Command Line Interface (CLI) `ovhai`.
+>
+> Discover how to [install the OVHcloud AI CLI](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli).
 >
 
 When your notebook is created, it will appear on your dashboard.

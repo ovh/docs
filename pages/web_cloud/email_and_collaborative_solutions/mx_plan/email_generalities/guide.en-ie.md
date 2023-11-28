@@ -1,7 +1,7 @@
 ---
 title: 'Getting started with an MX Plan solution'
 excerpt: 'Find out how to get started with an MX Plan solution'
-updated: 2021-07-19
+updated: 2023-11-15
 ---
 
 ## Objective
@@ -239,8 +239,6 @@ You may want to send a regular newsletter to your contacts.
 To do this, you can create a mailing list. Please follow our guide on [Managing and using mailing lists](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_mailing_list).
 
 ## Go further
-
-The legacy MX Plan solutions are being migrated to the new MX Plan solutions. If you would like to migrate your solution as a priority, you can follow the instructions on [this page](https://www.ovh.co.uk/mxplan-migration/#accordion_6001-4).
 
 If your needs change and you want additional features, you can also [migrate an MX Plan email address to an Email Pro or Exchange account](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel).
 

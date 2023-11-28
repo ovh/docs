@@ -32,7 +32,7 @@ Une fois l'instance créée et une application préinstallée choisie, vous pouv
 > Appel API
 >> > [!api]
 >> >
->> > @api {POST} /cloud/project/{serviceName}/instance/{instanceId}/applicationAccess
+>> > @api {v1} /cloud POST /cloud/project/{serviceName}/instance/{instanceId}/applicationAccess
 >> >
 >
 > Paramètres

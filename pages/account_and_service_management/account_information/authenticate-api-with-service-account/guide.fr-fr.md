@@ -114,7 +114,7 @@ Pour obtenir des informations sur votre hébergement web, vous pouvez désormais
 
 > [!api]
 >
-> @api {GET} /hosting/web/xxxxxxx.cluster001.hosting.ovh.net
+> @api {v1} /hosting/web GET /hosting/web/xxxxxxx.cluster001.hosting.ovh.net
 >
 
 Pour ce faire, vous devez fournir le token récupéré précédemment en header de votre requête de la façon suivante :

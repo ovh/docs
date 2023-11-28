@@ -294,7 +294,8 @@ Vous obtenez le résultat suivant :
 
 > [!api]
 >
-> @api {v1} /email/exchange GET email/exchange/{organizationName}/service/{exchangeService}/sendConnector
+> @api {v1} /email/exchange GET /email/exchange/{organizationName}/service/{exchangeService}/sendConnector
+
 
 - Supprimer un connecteur d'envoi existant:
 

@@ -74,7 +74,7 @@ Cette première section de l'API contient une liste à jour des actions et règl
 
 > [!api]
 >
-> @api {GET} /ipLoadbalancing/{serviceName}/availableRouteActions
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/availableRouteActions
 > 
 
 Pour plus d'information sur cet appel, nous vous invitons à consulter la section [Actions disponibles](#actions-disponibles){.internal}, en bas de ce guide.
@@ -83,7 +83,7 @@ Pour plus d'information sur cet appel, nous vous invitons à consulter la sectio
 
 > [!api]
 >
-> @api {GET} /ipLoadbalancing/{serviceName}/availableRouteRules
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/availableRouteRules
 > 
 
 Pour plus d'information sur cet appel, nous vous invitons à consulter la section [Règles disponibles](#regles-disponibles){.internal}, en bas de ce guide.
@@ -93,7 +93,7 @@ Cette deuxième section de l'API ne contient qu'un seul appel. Il a principaleme
 
 > [!api]
 >
-> @api {GET} /ipLoadbalancing/{serviceName}/definedRoutes
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/definedRoutes
 > 
 
 Pour plus d'information sur cet appel, nous vous invitons à consulter la section [Manipulation des routes](#manipulation-des-routes){.internal}, en bas de ce guide.
@@ -343,7 +343,7 @@ Cet appel retourne la liste des identifiants numériques des routes définies po
 
 > [!api]
 >
-> @api {GET} /ipLoadbalancing/{serviceName}/http/route
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/http/route
 > 
 
 |Paramètre|Requis|Signification|
@@ -356,7 +356,7 @@ Cet appel permet de créer une route. Seule l'action est obligatoire. Une route 
 
 > [!api]
 >
-> @api {POST} /ipLoadbalancing/{serviceName}/http/route
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/http/route
 > 
 
 |Paramètre|Requis|Signification|
@@ -384,7 +384,7 @@ Cet appel permet de consulter le détail d'une route HTTP, connaissant son ident
 
 > [!api]
 >
-> @api {GET} /ipLoadbalancing/{serviceName}/http/route/{routeId}
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/http/route/{routeId}
 > 
 
 Requête
@@ -414,7 +414,7 @@ Cet appel permet de modifier une route HTTP, connaissant son identifiant. Votre 
 
 > [!api]
 >
-> @api {PUT} /ipLoadbalancing/{serviceName}/http/route/{routeId}
+> @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/http/route/{routeId}
 >
 
 |Paramètre|Requis|Signification|
@@ -435,7 +435,7 @@ Cet appel permet de supprimer une route HTTP, connaissant son identifiant. Lorsq
 
 > [!api]
 >
-> @api {DELETE} /ipLoadbalancing/{serviceName}/http/route/{routeId}
+> @api {v1} /ipLoadbalancing DELETE /ipLoadbalancing/{serviceName}/http/route/{routeId}
 > 
 
 |Paramètre|Requis|Signification|
@@ -450,7 +450,7 @@ Cet appel retourne la liste des identifiants numérique des règles définies po
 
 > [!api]
 >
-> @api {GET} /ipLoadbalancing/{serviceName}/http/route/{routeId}/rule
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/http/route/{routeId}/rule
 > 
 
 |Paramètre|Requis|Signification|
@@ -463,7 +463,7 @@ Cet appel permet d'attacher une règle à une route. Il est possible d'attacher 
 
 > [!api]
 >
-> @api {POST} /ipLoadbalancing/{serviceName}/http/route/{routeId}/rule
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/http/route/{routeId}/rule
 > 
 
 |Paramètre|Requis|Signification|
@@ -508,7 +508,7 @@ Cet appel permet de consulter le détail d'une règle attachée à une route HTT
 
 > [!api]
 >
-> @api {GET} /ipLoadbalancing/{serviceName}/http/route/{routeId}/rule/{ruleId}
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/http/route/{routeId}/rule/{ruleId}
 > 
 
 Requête
@@ -537,7 +537,7 @@ Cet appel permet de modifier une règle attachée à une route HTTP, connaissant
 
 > [!api]
 >
-> @api {PUT} /ipLoadbalancing/{serviceName}/http/route/{routeId}/rule/{ruleId}
+> @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/http/route/{routeId}/rule/{ruleId}
 > 
 
 |Paramètre|Requis|Signification|
@@ -558,7 +558,7 @@ Cet appel permet de supprimer une règle attachée à une route HTTP, connaissan
 
 > [!api]
 >
-> @api {DELETE} /ipLoadbalancing/{serviceName}/http/route/{routeId}/rule/{ruleId}
+> @api {v1} /ipLoadbalancing DELETE /ipLoadbalancing/{serviceName}/http/route/{routeId}/rule/{ruleId}
 > 
 
 |Paramètre|Requis|Signification|
@@ -577,7 +577,7 @@ Cet appel permet de lister l'ensemble des identifiants, nom d'affichage et type 
 
 > [!api]
 >
-> @api {GET} /ipLoadbalancing/{serviceName}/definedRoutes
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/definedRoutes
 > 
 
 Requête
@@ -603,7 +603,7 @@ L'ensemble des actions gérées par le service OVH Load Balancer sont finales. C
 
 > [!api]
 >
-> @api {GET} /ipLoadbalancing/{serviceName}/availableRouteActions
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/availableRouteActions
 > 
 
 Requête
@@ -707,7 +707,7 @@ Si un champ est "null", cela signifie qu'aucune valeur n'est attendue. Si une va
 
 > [!api]
 >
-> @api {GET} /ipLoadbalancing/{serviceName}/availableRouteRules
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/availableRouteRules
 > 
 
 Requête

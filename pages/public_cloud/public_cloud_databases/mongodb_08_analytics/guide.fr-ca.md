@@ -35,7 +35,7 @@ Using the API, you can create a new cluster with:
 
 > [!api]
 >
-> @api {POST} /cloud/project/{serviceName}/database/mongodb
+> @api {v1} /cloud POST /cloud/project/{serviceName}/database/mongodb
 >
 
 Using the **nodeList** parameter, you can define the nodes for the cluster. The **role** attribute can take the value `STANDARD` or `ANALYTICS` depending on the role you want for the given node.
@@ -46,7 +46,7 @@ In case you already have an existing cluster, you can add a new node using the A
 
 > [!api]
 >
-> @api {POST} /cloud/project/{serviceName}/database/mongodb/{clusterId}/node
+> @api {v1} /cloud POST /cloud/project/{serviceName}/database/mongodb/{clusterId}/node
 >
 
 Specifying the **role** attribute, `STANDARD` or `ANALYTICS`, allows to request the role you want for the given node.
@@ -57,7 +57,7 @@ You can change the role of a given node using:
 
 > [!api]
 >
-> @api {PUT} /cloud/project/{serviceName}/database/mongodb/{clusterId}/node/{nodeId}
+> @api {v1} /cloud PUT /cloud/project/{serviceName}/database/mongodb/{clusterId}/node/{nodeId}
 >
 
 Once again the **role** attribute (`STANDARD` / `ANALYTICS`) allows to make a node fulfill the requested role.
@@ -79,7 +79,7 @@ Notice the extra query parameters `readPreference=secondary` and `readPreference
 
 > [!api]
 >
-> @api {PUT} /cloud/project/{serviceName}/database/mongodb/{clusterId}
+> @api {v1} /cloud PUT /cloud/project/{serviceName}/database/mongodb/{clusterId}
 >
 
 You can either use the delete node endpoint to remove the Analytics node, or turn that Analytics node into a standard one before scaling down the cluster.

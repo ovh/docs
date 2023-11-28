@@ -113,7 +113,12 @@ Le numéro du RAID est à préciser (/dev/sg0 = 1er RAID, /dev/sg1 = 2e RAID, et
 
 #### Serveur avec un disque NVMe
 
-Dans le cas d'un disque NVMe, il sera nécessaire de placer le serveur en mode [« Rescue-pro »](/pages/bare_metal_cloud/dedicated_servers/rescue_mode){.external} sur lequel l'outil **nvme-cli** est installé par défaut.
+Dans le cas d'un disque NVMe, il sera nécessaire de placer le serveur en [mode rescue](/pages/bare_metal_cloud/dedicated_servers/rescue_mode){.external} et installer l'outil `nvme-cli`.
+
+
+```sh
+apt install nvme-cli
+```
 
 Il faudra alors utiliser la commande `nvme list` afin de récupérer les numéros de série de vos disques :
 

@@ -55,21 +55,21 @@ Dans l'API, la terminaison SSL est spécifiée par le booléen ssl (n'oubliez pa
 
 > [!api]
 >
-> @api {POST} /ipLoadbalancing/{serviceName}/http/frontend
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/http/frontend
 >
 
 Appliquez ensuite les modifications :
 
 > [!api]
 >
-> @api {POST} /ipLoadbalancing/{serviceName}/refresh
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/refresh
 >
 
 Dans l'API, la commande se fait via l'appel suivant :
 
 > [!api]
 >
-> @api {POST} /ipLoadbalancing/{serviceName}/freeCertificate
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/freeCertificate
 >
 
 Pour que la commande se finalise, il faut obligatoirement que le nom de domaine choisi pointe vers votre service OVHcloud Load Balancer.
@@ -82,14 +82,14 @@ Vous pouvez spécifier le type d'action `orderFreeCertificate` pour affiner la r
 
 > [!api]
 >
-> @api {GET} /ipLoadbalancing/{serviceName}/task
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/task
 >
 
 - Retourner le statut d'une tâche en particulier
 
 > [!api]
 >
-> @api {GET} /ipLoadbalancing/{serviceName}/task/{id}
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/task/{id}
 >
 
 Une fois la commande finie, le certificat SSL est automatiquement installé sur votre service OVHcloud Load Balancer.

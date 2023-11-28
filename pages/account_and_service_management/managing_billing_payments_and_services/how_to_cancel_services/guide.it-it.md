@@ -1,7 +1,7 @@
 ---
 title: Come disattivare i tuoi servizi OVHcloud
 excerpt: Come interrompere i vostri abbonamenti OVHcloud
-updated: 2022-03-22
+updated: 2023-11-16
 ---
 
 > [!primary]
@@ -219,7 +219,7 @@ Per disattivare la soluzione [Hosted Exchange](https://www.ovhcloud.com/it/email
 
 #### Private Exchange <a name="private"></a>
 
-Per disattivare la tua offerta [Private Exchange](https://www.ovhcloud.com/it/emails/private-exchange/), segui le indicazioni di questa [guida](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_billing_exchange#elimina-account).
+Per disattivare la tua offerta [Private Exchange](https://www.ovhcloud.com/it/emails/private-exchange/), segui le indicazioni di questa [guida](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_billing_exchange#elimina-account_1).
 
 #### Office 365 csp 1 <a name="office-csp1"></a>
 

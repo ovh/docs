@@ -1,6 +1,6 @@
 ---
 title: "IPv6 für Ihre Website konfigurieren"
-excerpt: "Erfahren Sie hier, wie Sie Ihre Website über eine IPv6-Adresse verfügbar machen"
+excerpt: "Diese Anleitung erklärt, wie Sie Ihre Website über eine IPv6-Adresse verfügbar machen"
 updated: 2023-02-10
 ---
 

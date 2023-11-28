@@ -34,7 +34,7 @@ Wszystkie Twoje aktywne usługi można odzyskać przy użyciu następującej dro
 
 > [!api]
 >
-> @api {GET} /dedicated/nasha
+> @api {v1} /dedicated/nasha GET /dedicated/nasha
 >
 
 ### Lista wszystkich partycji
@@ -47,7 +47,7 @@ Użyj następującej drogi, aby pobrać partycje usługi:
 >
 >> > [!api]
 >> >
->> > @api {GET} /dedicated/nasha/{serviceName}/partition
+>> > @api {v1} /dedicated/nasha GET /dedicated/nasha/{serviceName}/partition
 >> >
 >>
 >
@@ -68,7 +68,7 @@ Aby wyświetlić szczegóły partycji, użyj następującej drogi:
 >
 >> > [!api]
 >> >
->> > @api {GET} /dedicated/nasha/{serviceName}/partition/{partitionName}
+>> > @api {v1} /dedicated/nasha GET /dedicated/nasha/{serviceName}/partition/{partitionName}
 >> >
 >>
 >
@@ -93,7 +93,7 @@ Użyj następującej drogi, aby pobrać informacje dotyczące korzystania z part
 >
 >> > [!api]
 >> >
->> > @api {GET} /dedicated/nasha/{serviceName}/partition/{partitionName}/use
+>> > @api {v1} /dedicated/nasha GET /dedicated/nasha/{serviceName}/partition/{partitionName}/use
 >> >
 >>
 >
@@ -122,7 +122,7 @@ Użyj następującej drogi, aby utworzyć nową partycję:
 >
 >> > [!api]
 >> >
->> > @api {POST} /dedicated/nasha/{serviceName}/partition
+>> > @api {v1} /dedicated/nasha POST /dedicated/nasha/{serviceName}/partition
 >> >
 >>
 >
@@ -161,7 +161,7 @@ Użyj następującej drogi, aby zmienić partycję:
 >
 >> > [!api]
 >> >
->> > @api {PUT} /dedicated/nasha/{serviceName}/partition/{partitionName}
+>> > @api {v1} /dedicated/nasha PUT /dedicated/nasha/{serviceName}/partition/{partitionName}
 >> >
 >>
 >
@@ -194,7 +194,7 @@ Użyj następującej drogi, aby pobrać ustawienia ZFS:
 >
 >> > [!api]
 >> >
->> > @api {GET} /dedicated/nasha/{serviceName}/partition/{partitionName}/options
+>> > @api {v1} /dedicated/nasha GET /dedicated/nasha/{serviceName}/partition/{partitionName}/options
 >> >
 >>
 >
@@ -224,7 +224,7 @@ Użyj następującej drogi, aby zmienić ustawienia ZFS:
 >
 >> > [!api]
 >> >
->> > @api {POST} /dedicated/nasha/{serviceName}/partition/{partionName}/options
+>> > @api {v1} /dedicated/nasha POST /dedicated/nasha/{serviceName}/partition/{partionName}/options
 >> >
 >>
 >
@@ -261,7 +261,7 @@ Użyj następującej drogi, aby usunąć partycję:
 >
 >> > [!api]
 >> >
->> > @api {DELETE} /dedicated/nasha/{serviceName}/partition/{partitionName}
+>> > @api {v1} /dedicated/nasha DELETE /dedicated/nasha/{serviceName}/partition/{partitionName}
 >> >
 >>
 >

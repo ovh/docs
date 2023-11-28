@@ -33,7 +33,7 @@ Dans l'APIv6 et dans votre manager, dans vos moyens de paiement apparaitra un no
 
 > [!api]
 >
-> @api {GET} /me/payment/method
+> @api {v1} /me GET /me/payment/method
 >
 
 #### Comment renseigner un numéro de "Purchase Order" (PO)
@@ -50,14 +50,14 @@ Récupérez la liste des factures associées à ce sous-compte :
 
 > [!api]
 >
-> @api {GET} /me/bill
+> @api {v1} /me GET /me/bill
 >
 
 Récupérez la facture détaillée grâce à l'identifiant de votre facture billID :
 
 > [!api]
 >
-> @api {GET}  /me/bill/{billId}/details
+> @api {v1} /me GET /me/bill/{billId}/details
 >
 
 ## Aller plus loin

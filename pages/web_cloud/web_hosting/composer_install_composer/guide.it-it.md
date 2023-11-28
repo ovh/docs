@@ -1,6 +1,6 @@
 ---
-title: Installare Composer su un hosting Web
-excerpt: Scopri come installare e fare i primi passi su Composer.
+title: "Installare Composer su un hosting Web"
+excerpt: "Questa guida ti mostra come installare e fare i primi passi su Composer"
 updated: 2023-02-24
 ---
 
@@ -12,7 +12,7 @@ updated: 2023-02-24
 
 [Composer](https://getcomposer.org/){.external} è un gestore di dipendenze creato per il linguaggio PHP. Permette agli sviluppatori PHP di includere librerie esterne nei loro programmi. "Composer" ha permesso ai progetti PHP di facilitare la distribuzione delle librerie e la manutenzione del loro codice. Inoltre, dalla creazione di questo strumento, sono state proposte numerose buone pratiche di sviluppo all'interno della comunità PHP e hanno migliorato le librerie della comunità PHP. Tali buone pratiche sono documentate sotto forma di [PSR](http://www.php-fig.org/){.external}.
 
-**Come installare e fare i primi passi su Composer**
+**Questa guida ti mostra come installare e fare i primi passi su Composer**
 
 > [!warning]
 >

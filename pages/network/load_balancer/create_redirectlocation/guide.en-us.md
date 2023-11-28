@@ -73,7 +73,7 @@ In the [OVH API](https://ca.api.ovh.com/){.external}, redirections are specified
 
 > [!api]
 >
-> @api {POST} /ipLoadbalancing/{serviceName}/http/frontend
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/http/frontend
 > 
 
 |Setting|Meaning|
@@ -87,7 +87,7 @@ In the [OVH API](https://ca.api.ovh.com/){.external}, redirections are specified
 
 > [!api]
 >
-> @api {PUT} /ipLoadbalancing/{serviceName}/http/frontend/{frontendId}
+> @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/http/frontend/{frontendId}
 > 
 
 |Setting|Meaning|
@@ -100,7 +100,7 @@ Then apply the modifications:
 
 > [!api]
 >
-> @api {POST} /ipLoadbalancing/{serviceName}/refresh
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/refresh
 >
 
 |Setting|Meaning|

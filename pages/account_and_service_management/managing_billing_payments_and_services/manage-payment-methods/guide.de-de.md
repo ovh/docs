@@ -111,14 +111,14 @@ Fordern Sie zuerst die ID der Zahlungsart an:
 
 > [!api]
 >
-> @api {GET} /me/payment/method
+> @api {v1} /me GET /me/payment/method
 >
 
 Löschen Sie anschließend die Zahlungsart mithilfe der im vorigen Schritt erhaltenen ID:
 
 > [!api]
 >
-> @api {DELETE} /me/payment/method/{paymentMethodId}
+> @api {v1} /me DELETE /me/payment/method/{paymentMethodId}
 >
 
 > [!primary]

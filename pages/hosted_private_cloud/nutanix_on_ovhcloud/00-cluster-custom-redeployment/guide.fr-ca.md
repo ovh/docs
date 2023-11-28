@@ -141,7 +141,7 @@ Utilisez l'appel API suivant :
 
 > [!api]
 >
-> @api {put} /nutanix/{serviceName}
+> @api {v1} /nutanix PUT /nutanix/{serviceName}
 >
 
 Saisissez ces données :

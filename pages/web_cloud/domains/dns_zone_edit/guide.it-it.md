@@ -56,6 +56,10 @@ La zona DNS di un dominio è un file di configurazione composto da **record**. c
 
 ### Accedere alla gestione di una zona DNS OVHcloud
 
+> [!primary]
+>
+> A differenza del nome di dominio, per una zona DNS non esiste la nozione di proprietario, ma di gestione dei contatti per una zona DNS OVHcloud. Se desideri trasferire la gestione della tua zona DNS su un altro account OVHcloud, segui la nostra guida [Gestire i contatti di servizio](/pages/account_and_service_management/account_information/managing_contacts).
+
 Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} nella sezione `Web Cloud`{.action}. Clicca su `Domini`{.action} e poi seleziona il dominio. e clicca sulla scheda `Zona DNS`{.action}.
 
 Visualizzi una tabella con tutti i record DNS associati al tuo dominio presso OVHcloud. Il contenuto può essere filtrato per tipo di record o per dominio.

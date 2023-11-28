@@ -174,13 +174,13 @@ Les [API OVHcloud](https://api.ovh.com/) actuellement disponibles pour l'offre d
 
 > [!api]
 >
-> @api {GET} /hosting/web/{serviceName}/availableConfigurations
+> @api {v1} /hosting/web GET /hosting/web/{serviceName}/availableConfigurations
 
 #### Visualiser la configuration active <a name="api-get-active-configuration"></a>
 
 > [!api]
 >
-> @api {GET} /hosting/web/{serviceName}/configuration
+> @api {v1} /hosting/web GET /hosting/web/{serviceName}/configuration
 
 > Cet appel vous permet, par exemple, de vérifier votre point d'entrée.
 
@@ -188,7 +188,7 @@ Les [API OVHcloud](https://api.ovh.com/) actuellement disponibles pour l'offre d
 
 > [!api]
 >
-> @api {PUT} /hosting/web/{serviceName}/configuration
+> @api {v1} /hosting/web PUT /hosting/web/{serviceName}/configuration
 
 > Cet appel vous permet, par exemple, de modifier votre point d'entrée.
 
@@ -196,7 +196,7 @@ Les [API OVHcloud](https://api.ovh.com/) actuellement disponibles pour l'offre d
 
 > [!api]
 >
-> @api {POST} /hosting/web/{serviceName}/attachedDomain/{domain}/restart
+> @api {v1} /hosting/web POST /hosting/web/{serviceName}/attachedDomain/{domain}/restart
 
 ### Créer une redirection HTTP vers HTTPS
 

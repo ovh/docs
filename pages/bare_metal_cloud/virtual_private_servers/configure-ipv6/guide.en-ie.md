@@ -59,14 +59,14 @@ Use this call to retrieve the IPv6 address assigned to your server:
 
 > [!api]
 >
-> @api {GET} /vps/{serviceName}/ips
+> @api {v1} /vps GET /vps/{serviceName}/ips
 >
 
 The following call allows you to recover the IPv6 gateway assigned to your server:
 
 > [!api]
 >
-> @api {GET} /vps/{serviceName}/ips/{ipAddress}
+> @api {v1} /vps GET /vps/{serviceName}/ips/{ipAddress}
 >
 
 Once you have retrieved these addresses, continue with [applying the IPv6 configuration](#applyipv6).

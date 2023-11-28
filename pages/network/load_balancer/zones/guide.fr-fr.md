@@ -47,7 +47,7 @@ Pour commander une zone via l'API, vous devez tout d'abord créer un panier (*ca
 
 > [!api]
 >
-> @api {POST} /order/cart
+> @api {v1} /order POST /order/cart
 >
 
 Veuillez noter le numéro du panier (*cart*), il vous sera utile pour la suite.
@@ -56,27 +56,27 @@ Assignez-vous le panier via l'appel suivant :
 
 > [!api]
 >
-> @api {POST} /order/cart/{cartId}/assign
+> @api {v1} /order POST /order/cart/{cartId}/assign
 >
 
 Vous pouvez lister les options disponibles sur votre service Load Balancer via :
 
 > [!api]
 >
-> @api {GET} /order/cartServiceOption/ipLoadbalancing/{serviceName}
+> @api {v1} /order GET /order/cartServiceOption/ipLoadbalancing/{serviceName}
 >
 
 Quand vous avez trouvé l'option correspondant à la zone souhaitée, vous pouvez l'ajouter à votre panier (*cart*) via :
 
 > [!api]
 >
-> @api {POST} /order/cartServiceOption/ipLoadbalancing/{serviceName}
+> @api {v1} /order POST /order/cartServiceOption/ipLoadbalancing/{serviceName}
 >
 
 Enfin, vous pouvez valider votre panier (*cart*) via :
 
 > [!api]
-> @api {POST} /order/cart/{cartId}/checkout
+> @api {v1} /order POST /order/cart/{cartId}/checkout
 >
 
 N'oubliez pas de régler le bon de commande ainsi généré.

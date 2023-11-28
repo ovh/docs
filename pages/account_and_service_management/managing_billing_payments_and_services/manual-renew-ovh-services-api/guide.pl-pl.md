@@ -21,14 +21,14 @@ Aby użyć [API do odnowienia usługi](https://api.ovh.com/console/#/service/{se
 
 > [!api]
 >
-> @api {GET} /vps/{serviceName}/serviceInfos
+> @api {v1} /vps GET /vps/{serviceName}/serviceInfos
 >
 
 Możesz również skorzystać z API, aby uzyskać listę Twoich usług:
 
 > [!api]
 >
-> @api {GET} /service
+> @api {v1} /service GET /service
 >
 
 ### Uzyskanie listy dostępnych strategii odnawiania
@@ -37,7 +37,7 @@ Aby uzyskać listę dostępnych strategii odnawiania usług, skorzystaj z nastę
 
 > [!api]
 >
-> @api {GET} /service/{serviceId}/renew
+> @api {v1} /service GET /service/{serviceId}/renew
 >
 
 Lista `RenewDescription` pojawi się z dwoma kluczami:
@@ -107,7 +107,7 @@ Aby dowiedzieć się więcej o formacie wyniku, skorzystaj z API `renew`:
 
 > [!api]
 >
-> @api {GET} /service/{serviceId}/renew
+> @api {v1} /service GET /service/{serviceId}/renew
 >
 
  
@@ -163,7 +163,7 @@ Następnie zamówienie można opłacić za pośrednictwem API `order`:
      
 > [!api]
 >
-> @api {POST} /me/order/{orderId}/payWithRegisteredPaymentMean
+> @api {v1} /me POST /me/order/{orderId}/payWithRegisteredPaymentMean
 >
 
 ### Przykładowa operacja: odnowienie VPS

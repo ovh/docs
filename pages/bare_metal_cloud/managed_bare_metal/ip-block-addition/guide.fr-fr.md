@@ -59,7 +59,7 @@ Utilisez l'appel API suivant :
 
 > [!api]
 >
-> @api {POST} /ip/{ip}/move
+> @api {v1} /ip POST /ip/{ip}/move
 > 
 
 Les champs doivent être complétés ainsi :
@@ -78,7 +78,7 @@ Utilisez ensuite cet appel API pour déplacer l'IP dans le parking des IPS :
 
 > [!api]
 >
-> @api {POST} /ip/{ip}/park
+> @api {v1} /ip POST /ip/{ip}/park
 > 
 
 > [!warning]

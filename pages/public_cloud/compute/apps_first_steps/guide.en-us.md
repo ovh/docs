@@ -32,7 +32,7 @@ Once the instance has been installed with your chosen pre-installed application,
 > API call
 >> > [!api]
 >> >
->> > @api {POST} /cloud/project/{serviceName}/instance/{instanceId}/applicationAccess
+>> > @api {v1} /cloud POST /cloud/project/{serviceName}/instance/{instanceId}/applicationAccess
 >> >
 >
 > Parameters

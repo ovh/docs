@@ -1,7 +1,7 @@
 ---
 title: 'Beheben des Fehlers “500 Internal Server Error”'
-excerpt: Erfahren Sie hier, welche Maßnahmen Sie bei einem Fehlercode 500 anwenden können
-updated: 2023-05-16
+excerpt: "Erfahren Sie hier, welche Maßnahmen Sie bei einem Fehlercode 500 anwenden können"
+updated: 2023-11-22
 ---
 
 > [!primary]
@@ -115,4 +115,6 @@ Wenn Ihre Website eine Datenbank nutzt, lesen Sie unsere Anleitung "[Backup in e
 
 [Fehler "Seite nicht installiert" beheben](/pages/web_cloud/web_hosting/multisites_website_not_installed)
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

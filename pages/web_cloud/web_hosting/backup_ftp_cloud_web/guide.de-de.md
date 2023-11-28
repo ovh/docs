@@ -1,6 +1,7 @@
 ---
 title: "Backup des FTP-Speicherplatzes Ihres Cloud Web Hostings abrufen"
-updated: 2022-09-13
+excerpt: "Diese Anleitung erklärt, wie Sie ein Backup des FTP-Speicherplatzes Ihres Cloud Web Hostings abrufen"
+updated: 2023-11-16
 ---
 
 > [!primary]
@@ -12,7 +13,7 @@ updated: 2022-09-13
 
 Ihr Cloud Web Hosting verfügt über einen Speicherplatz, in dem Sie Ihre Websites oder Anwendungen hosten können.
 
-**Hier erfahren Sie, wie Sie ein Backup des FTP-Speicherplatzes Ihres Cloud Web Hostings abrufen.**
+**Diese Anleitung erklärt, wie Sie ein Backup des FTP-Speicherplatzes Ihres Cloud Web Hostings abrufen.**
 
 > [!primary]
 > 

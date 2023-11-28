@@ -49,7 +49,7 @@ Eseguite la chiamata API che segue, indicando il nome interno del server (esempi
 
 > [!api]
 >
-> @api {GET} /dedicated/server/{serviceName}/specifications/network
+> @api {v1} /dedicated/server GET /dedicated/server/{serviceName}/specifications/network
 
 > [!warning]
 > 

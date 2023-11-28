@@ -61,7 +61,7 @@ Si el puerto SSH del servidor no es el puerto estándar, utilice el siguiente co
 ssh username@server_IP -p port_number
 ```
 
-### Conexión desde un equipo con Windows 10/11
+### Conexión desde un equipo con Windows
 
 Las últimas versiones de Windows incorporan de forma nativa OpenSSH para las conexiones desde el PowerShell o desde la línea de comandos.
 

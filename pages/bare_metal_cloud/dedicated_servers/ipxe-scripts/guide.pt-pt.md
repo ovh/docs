@@ -46,7 +46,7 @@ Utilizar um script personalizado pode ser interessante nos seguintes casos:
 
 > [!api]
 >
-> @api {PUT} /dedicated/server/{serviceName}
+> @api {v1} /dedicated/server PUT /dedicated/server/{serviceName}
 >
 
 Especifique o seu script no atributo `bootScript` diretamente.
@@ -55,7 +55,7 @@ Especifique o seu script no atributo `bootScript` diretamente.
 
 > [!api]
 >
-> @api {GET} /dedicated/server/{serviceName}
+> @api {v1} /dedicated/server GET /dedicated/server/{serviceName}
 >
 
 O seu script situa-se no atributo `bootScript`.
@@ -97,14 +97,14 @@ Pode alternar de novo entre o disco ou o modo rescue a partir da [Área de Clien
 
 > [!api]
 >
-> @api {PUT} /dedicated/server/{serviceName}
+> @api {v1} /dedicated/server PUT /dedicated/server/{serviceName}
 >
 
 Especifique `1` no atributo `bootId`.
 
 > [!api]
 >
-> @api {GET} /dedicated/server/{serviceName}
+> @api {v1} /dedicated/server GET /dedicated/server/{serviceName}
 >
 
 Verificará que o valor do atributo `bootScript` é agora zero.

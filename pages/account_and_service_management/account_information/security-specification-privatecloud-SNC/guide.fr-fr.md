@@ -60,7 +60,6 @@ Liste des fonctionnalités et options de backups adaptées au service :
 
 | **Nom de l'option** | **Granularité** | **RPO** | **RTO** | **Documentation et tutoriels**| **chiffrement des jobs**|
 | --- | --- | --- | --- | --- | --- |
-| Veeam Managed Backup(Standard) | la VM | dépend de la date de la dernière sauvegarde et de la durée de résolution de l'incident | dépend de la taille de la VM sauvegardée | [Activer et utiliser Veeam Managed Backup](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/veeam_backup_as_a_service) | Oui |
 | Veeam Managed Backup(Advanced) | la VM | dépend de la date de la dernière sauvegarde et de la durée de résolution de l'incident | dépend de la taille de la VM sauvegardée | [Activer et utiliser Veeam Managed Backup](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/veeam_backup_as_a_service) | Oui |
 |Veeam Managed Backup(Premium) | la VM | dépend de la date de la dernière sauvegarde et de la durée de résolution de l'incident | dépend de la taille de la VM sauvegardée | [Activer et utiliser Veeam Managed Backup](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/veeam_backup_as_a_service) | Oui |
 

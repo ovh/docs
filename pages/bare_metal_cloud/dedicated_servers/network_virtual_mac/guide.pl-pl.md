@@ -72,7 +72,7 @@ Skorzystaj z następującego wywołania API:
 
 > [!api]
 >
-> @api {POST} /dedicated/server/{serviceName}/virtualMac/{macAddress}/virtualAddress/{ipAddress}
+> @api {v1} /dedicated/server POST /dedicated/server/{serviceName}/virtualMac/{macAddress}/virtualAddress/{ipAddress}
 
 ### Usuwanie adresu MAC
 
@@ -93,7 +93,7 @@ Skorzystaj z następującego wywołania API:
 
 > [!api]
 >
-> @api {DELETE} /dedicated/server/{serviceName}/virtualMac/{macAddress}/virtualAddress/{ipAddress}
+> @api {v1} /dedicated/server DELETE /dedicated/server/{serviceName}/virtualMac/{macAddress}/virtualAddress/{ipAddress}
 >
 
 ## Sprawdź również

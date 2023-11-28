@@ -1,6 +1,6 @@
 ---
-title: Installer Composer sur un hebergement web
-excerpt: Découvrez comment installer et faire vos premiers pas sur Composer.
+title: "Installer Composer sur un hebergement web"
+excerpt: "Découvrez comment installer et faire vos premiers pas sur Composer"
 updated: 2023-02-24
 ---
 

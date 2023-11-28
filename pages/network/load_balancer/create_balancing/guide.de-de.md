@@ -55,7 +55,7 @@ Mit dieser API-Funktion können Sie sich die Details einer Farm anzeigen lassen,
 
 > [!api]
 >
-> @api {GET} /ipLoadbalancing/{serviceName}/http/farm/{farmId}
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/http/farm/{farmId}
 > 
 
 |Einstellung|Bedeutung|
@@ -79,7 +79,7 @@ Mit diesem Aufrufbefehl können Sie die Konfiguration einer Farm bearbeiten, wen
 
 > [!api]
 >
-> @api {PUT} /ipLoadbalancing/{serviceName}/http/farm/{id}
+> @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/http/farm/{id}
 > 
 
 |Einstellung|Bedeutung|
@@ -92,7 +92,7 @@ Mit diesem Aufrufbefehl können Sie die Konfiguration einer Farm bearbeiten, wen
 
 > [!api]
 >
-> @api {POST} /ipLoadbalancing/{serviceName}/refresh
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/refresh
 > 
 
 |Einstellung|Bedeutung|

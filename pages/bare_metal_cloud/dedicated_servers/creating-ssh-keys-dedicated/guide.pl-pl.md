@@ -1,7 +1,7 @@
 ---
 title: Twórz i używaj kluczy SSH
 excerpt: Dowiedz się, jak utworzyć klucz SSH w celu nawiązania bezpiecznego połączenia z serwerem
-updated: 2023-07-24
+updated: 2023-11-22
 ---
 
 > [!primary]
@@ -201,6 +201,46 @@ Aby dowiedzieć się więcej o połączeniach SSH, sprawdź przewodniki [pierwsz
 
 ### Dodawanie kluczy SSH do serwera <a name="addserverkey"></a>
 
+#### Transfer kluczy publicznych utworzonych w systemach opartych na GNU/Linux, MacOS lub BSD
+
+Jeśli stworzyłeś pary kluczy SSH w systemie opartym na GNU/Linux, MacOS lub BSD, możesz użyć komendy `ssh-copy-id`, aby dodać publiczne klucze do Twojego serwera.
+
+Narzędzie `ssh-copy-id` kopiuje klucze publiczne do pliku `~/.ssh/authorized_keys` na określonym serwerze zdalnym i w razie potrzeby automatycznie tworzy plik w tym katalogu.
+
+```bash
+ssh-copy-id user@IP_ADDRESS
+```
+
+Domyślnie funkcja `ssh-copy-id` spróbuje przetransferować wszystkie klucze publiczne do katalogu `~/.ssh` użytkownika lokalnego. Jeśli jednak potrzebujesz dodać tylko jeden klucz publiczny, możesz określić ten plik klucza za pomocą opcji `-i` ze ścieżką do pliku:
+
+```bash
+ssh-copy-id -i ~/.ssh/KeyFileName user@IP_ADDRESS
+```
+
+Przykład:
+
+```bash
+ssh-copy-id -i ~/.ssh/VPS_rsa.pub ubuntu@169.254.10.250
+```
+
+Zostanie wyświetlony monit o podanie hasła użytkownika, który otrzyma taką wiadomość, jak poniżej.
+
+```console
+Number of key(s) added: 1
+
+Now try logging into the machine, with:   "ssh 'user@server-ip'"
+and check to make sure that only the key(s) you wanted were added.
+```
+
+Jeśli pojawi się komunikat o błędzie, możesz dodać klucze publiczne ręcznie, wykonując poniższe czynności.
+
+> [!primary]
+>
+> Ze względu na obowiązujące zasady bezpieczeństwa para kluczy nie powinna być używana przez wielu użytkowników. Ponieważ każdy użytkownik w systemach GNU/Linux ma własny plik `authorized_keys` w `~/.ssh/`, możesz użyć polecenia `ssh-copy-id`, jak pokazano powyżej, i dostosować `KeyFileName` i `user` po [utworzeniu pary kluczy](#openssh).
+>
+
+#### Ręczne dodawanie kluczy publicznych do serwera
+
 [Zaloguj się](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction) do Twojego serwera i upewnij się, że znajdujesz się w katalogu`$HOME` Twojego użytkownika. Jeśli taki katalog jeszcze nie istnieje, utwórz folder `.ssh`:
 
 ```bash
@@ -213,7 +253,7 @@ Aby zapisać klucz dla bieżącego użytkownika, otwórz (lub utwórz) plik `aut
 nano ~/.ssh/authorized_keys
 ```
 
-Wklej [**klucz publiczny**](#publickey) do tego pliku. Zapisz plik i zamknij edytor. Uruchom ponownie serwer lub tylko zrestartuj usługę OpenSSH za pomocą jednego z następujących poleceń (odpowiednie polecenie może się różnić w zależności od Twojego systemu operacyjnego):
+Wklej [**klucz publiczny**](#publickey) do tego pliku. Zapisz plik i zamknij edytor. Uruchom ponownie serwer  (`sudo reboot`) lub tylko zrestartuj usługę OpenSSH za pomocą jednego z następujących poleceń (odpowiednie polecenie może się różnić w zależności od Twojego systemu operacyjnego):
 
 ```bash
 sudo systemctl restart ssh

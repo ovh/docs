@@ -102,7 +102,7 @@ Log in to [https://ca.api.ovh.com/](https://ca.api.ovh.com/) and use the followi
 
 > [!api]
 >
-> @api {POST} vps/{serviceName}/backupftp/access
+> @api {v1} /vps POST /vps/{serviceName}/backupftp/access
 >
 
 Fill in the fields as follows:
@@ -119,7 +119,7 @@ To verify that your IP address is authorised, use the following call:
 
 > [!api]
 >
-> @api {GET} /vps/{serviceName}/backupftp/access
+> @api {v1} /vps GET /vps/{serviceName}/backupftp/access
 >
 
 ![screenshot 1](images/get-api.png){.thumbnail}
