@@ -82,7 +82,7 @@ Sie können das Gateway auch über [Ihr Kundencenter](#viacontrolpanel) oder die
 
 Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, gehen Sie in den Bereich `Bare Metal Cloud`{.action} und wählen Sie Ihren Server in `Dedicated Server`{.action} aus.
 
-Das Ihrem Server zugewiesene IPv4-Gateway wird im Tab `Allgemeine Informationen`{.action} im Bereich `Netzwerk` angezeigt. Nachdem Sie die Datei kopiert haben, setzen Sie die Konfiguration fort.
+Das Ihrem Server zugewiesene IPv4-Gateway wird im Tab `Allgemeine Informationen`{.action} im Bereich `Netzwerk` angezeigt. Nachdem Sie die Adresse kopiert haben, setzen Sie die Konfiguration fort.
 
 ![gateway](images/ipv4information.png){.thumbnail}
 
