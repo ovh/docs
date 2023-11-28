@@ -26,7 +26,7 @@ Un **nom de domaine** est composé de niveaux. Ces niveaux sont eux-mêmes gén�
 
 ![URL content](images/url-composition.png){.thumbnail}
   
-**Découvrez les sous-domaines et comment en créer chez OVHcloud**
+**Découvrez les sous-domaines et comment en créer chez OVHcloud.**
   
 ## Prérequis
 
