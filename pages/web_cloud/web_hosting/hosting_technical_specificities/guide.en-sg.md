@@ -18,9 +18,10 @@ OVHcloud web hosting plans are shared. As a result, the configuration of these s
 ## Instructions
 
 > [!warning]
->OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 >
->This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend contacting a specialised provider and/or the software publisher for the service if you encounter any difficulties. We will not be able to assist you ourselves. You can find more information in the “Go further” section of this guide.
+> OVHcloud provides services that you are responsible for configuring, managing and managing. It is therefore up to you to ensure that it works properly.
+>
+> We have provided you with this guide in order to help you with common tasks. Nevertheless, we recommend contacting a [specialist provider](https://partner.ovhcloud.com/en-sg/directory/) and/or the service’s publisher if you encounter any difficulties. We will not be able to assist you. You can find more information in the "[Go further](#go-further)" section of this guide.
 >
 
 ### FTP
