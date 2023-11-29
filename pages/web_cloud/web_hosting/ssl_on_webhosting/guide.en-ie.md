@@ -1,7 +1,7 @@
 ---
 title: 'Managing SSL certificates on a Web Hosting plan'
 excerpt: 'Find out how to configure your SSL certificate on an OVHcloud Web Hosting plan'
-updated: 2022-08-01
+updated: 2023-11-29
 ---
 
 ## Objective
@@ -48,7 +48,7 @@ To activate SSL on a multisite, click on `...`{.action} icon to the right of the
 
 ![managessl](images/manage-ssl-step6.png){.thumbnail}
 
-Once you have submitted the activation request, the SSL secure connection status for the mutisite concerned should refresh in a few seconds, with the status changed to "To generate". Repeat this action as necessary if you would like to activate SSL for other multisites. 
+Once you have submitted the activation request, the SSL secure connection status for the multisite concerned should refresh in a few seconds, with the status changed to "To generate". Repeat this action as necessary if you would like to activate SSL for other multisites. 
 
 > [!primary]
 >
@@ -138,5 +138,9 @@ On the page that appears, confirm the deletion. The deletion will take effect wi
 ![managessl](images/manage-ssl-step9.png){.thumbnail}
 
 ## Go further
+
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-ie/directory/).
+
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-ie/support-levels/).
 
 Join our community of users on <https://community.ovh.com/en/>.

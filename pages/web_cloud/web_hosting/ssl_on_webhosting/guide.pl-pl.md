@@ -1,7 +1,7 @@
 ---
 title: 'Zarządzanie certyfikatem SSL na hostingu'
 excerpt: 'Dowiedz się, jak zarządzać certyfikatem SSL na Twoim hostingu OVHcloud'
-updated: 2022-08-01
+updated: 2023-11-29
 ---
 
 > [!primary]
@@ -141,4 +141,8 @@ Na stronie, która się wyświetli, zatwierdź usunięcie certyfikatu. Certyfika
 
 ## Sprawdź również
 
-Przyłącz się do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
+
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
