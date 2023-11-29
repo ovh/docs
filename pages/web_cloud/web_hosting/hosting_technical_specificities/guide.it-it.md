@@ -10,6 +10,8 @@ updated: 2023-11-29
 
 ## Obiettivo
 
+I pacchetti di web hosting OVHcloud sono condivisi. Di conseguenza, la configurazione di queste offerte contiene alcune specificità tecniche. Vi consigliamo di prendere nota di queste specificità *prima* di utilizzare il vostro web hosting OVHcloud.
+
 **Questa guida ti mostra i dettagli tecnici relativi all’infrastruttura degli hosting Web OVHcloud, in base alle domande più frequenti.**
 
 ## Prerequisiti

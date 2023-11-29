@@ -10,6 +10,8 @@ updated: 2023-11-29
 
 ## Objetivo
 
+As ofertas de alojamento web da OVHcloud são partilhadas. Por conseguinte, a configuração destas propostas contém algumas especificidades técnicas. Recomendamos que consulte estas especificações *antes* de utilizar o seu alojamento web da OVHcloud.
+
 **Saiba neste guia diferentes informações e especificidades técnicas relacionadas com os alojamentos Web.**
 
 ## Requisitos

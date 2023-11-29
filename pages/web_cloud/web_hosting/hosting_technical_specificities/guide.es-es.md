@@ -10,6 +10,8 @@ updated: 2023-11-29
 
 ## Objetivo
 
+Los planes de hosting de OVHcloud son compartidos. Por lo tanto, la configuración de estos productos contiene determinadas especificaciones técnicas. Le recomendamos que lea estas especificaciones *antes* de utilizar su alojamiento web de OVHcloud.
+
 **Descubra en esta guía diferentes informaciones y particularidades técnicas relativas a los alojamientos web.**
 
 ## Requisitos

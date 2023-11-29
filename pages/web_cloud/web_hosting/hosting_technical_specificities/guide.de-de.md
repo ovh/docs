@@ -8,7 +8,9 @@ updated: 2023-11-29
 > Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
 >
 
-## Ziel 
+## Ziel
+
+Die OVHcloud Webhosting-Angebote werden geteilt. Daher enthält die Konfiguration dieser Angebote einige technische Besonderheiten. Wir empfehlen Ihnen, diese Besonderheiten *vor* der Verwendung Ihres OVHcloud Webhostings zu lesen.
 
 **Diese Anleitung erklärt, wie Sie verschiedene Informationen und technische Details zu Webhostings.**
 

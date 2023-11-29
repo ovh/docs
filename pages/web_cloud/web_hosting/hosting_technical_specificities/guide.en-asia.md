@@ -6,6 +6,8 @@ updated: 2023-11-29
 
 ## Objective
 
+OVHcloud web hosting plans are shared. As a result, the configuration of these solutions contains certain technical specifications. We recommend that you familiarize yourself with these details *before* using your OVHcloud Web Hosting plan.
+
 **This guide collects some technical details about the OVHcloud Web Hosting infrastructure, based on frequently asked questions.**
 
 ## Requirements
