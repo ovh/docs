@@ -6,7 +6,7 @@ updated: 2023-08-07
 
 ## Objectif
 
-L'enregistrement **D**omain-based **M**essage **A**uthentication, **R**eporting, and **C**onformance (DMARC) est un mécanisme de sécurité e-mail. Il s'appuie sur le résultat des vérifications [SPF](/pages/web/domains/dns_zone_spf) et [DKIM](/pages/web/domains/dns_zone_dkim).
+L'enregistrement **D**omain-based **M**essage **A**uthentication, **R**eporting, and **C**onformance (DMARC) est un mécanisme de sécurité e-mail. Il s'appuie sur le résultat des vérifications [SPF](/pages/web_cloud/domains/dns_zone_spf) et [DKIM](/pages/web_cloud/domains/dns_zone_dkim).
 
 **Découvrez comment fonctionne DMARC et comment le mettre en place pour votre service e-mail.**
 
@@ -22,7 +22,7 @@ L'enregistrement **D**omain-based **M**essage **A**uthentication, **R**eporting,
 ## Prérequis
 
 - Disposer d'un accès à la gestion du nom de domaine (attaché à votre solution e-mail) depuis l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
-- Un des mécanismes d'authentification, [SPF](/pages/web/domains/dns_zone_spf) et/ou [DKIM](/pages/web/domains/dns_zone_dkim) doit être configuré dans la zone DNS du nom de domaine de l'offre e-mail.
+- Un des mécanismes d'authentification, [SPF](/pages/web_cloud/domains/dns_zone_spf) et/ou [DKIM](/pages/web_cloud/domains/dns_zone_dkim) doit être configuré dans la zone DNS du nom de domaine de l'offre e-mail.
 
 ## En pratique
 
@@ -32,7 +32,7 @@ Le DMARC permet au propriétaire d’un nom de domaine de gérer la sécurité d
 - De mieux maitriser l’usage de son nom de domaine et détecter les tentatives d’usurpation à l'aide des rapports envoyés en cas d’échec d’authentification des e-mails par ailleurs, Il augmente également la sécurité en créant le lien entre les protocoles SPF/DKIM
 
 L' enregistrement DMARC contient des informations sur la politique à appliquer pour les e-mails malveillants qui tentent d'usurper votre nom de domaine.<br>
-DMARC interroge les mécanismes d'authentification [SPF](/pages/web/domains/dns_zone_spf) et [DKIM](/pages/web/domains/dns_zone_dkim) pour vérifier les e-mails entrants.<br>
+DMARC interroge les mécanismes d'authentification [SPF](/pages/web_cloud/domains/dns_zone_spf) et [DKIM](/pages/web_cloud/domains/dns_zone_dkim) pour vérifier les e-mails entrants.<br>
 Le résultat de ces vérifications SPF et/ou DKIM est traduit par DMARC en « mesures à prendre » lorsqu'un e-mail échoue aux contrôles. Ces mesures peuvent être la mise en quarantaine ou le rejet des e-mails concernés.
 
 ### Comment le DMARC fonctionne-t-il ? <a name="how-dmarc-works"></a>
@@ -47,7 +47,7 @@ Après lecture des instructions de l'enregistrement DMARC du nom de domaine **my
 
 ![dmarc](images/dns-dmarc-diagram.png){.thumbnail}
 
-### Configurer le DMARC 
+### Configurer le DMARC
 
 Il y a deux façons de configurer le DMARC dans votre zone DNS OVHcloud :
 
@@ -73,7 +73,7 @@ Vous trouverez ci-dessous le descriptif exhaustif des balises utilisées pour **
 
 > [!warning]
 >
-> la configuration du paramètre `p=` peut avoir un impact important sur la délivrabilité des emails de votre nom de domaine. Il est conseillé de configurer `p=none` et effectuer une analyse des rapports d’échec pendant plusieurs semaines pour régler les éventuelles anomalies. Passer en `p=quarantine` ou `p=reject` nécessite une pleine maitrise des paramètres de sécurité e-mail, concernant le [SPF](/pages/web/domains/dns_zone_spf) et le [DKIM](/pages/web/domains/dns_zone_dkim). L’utilisation du facteur `pct=`, présenté en-dessous, permet une transition progressive.
+> la configuration du paramètre `p=` peut avoir un impact important sur la délivrabilité des emails de votre nom de domaine. Il est conseillé de configurer `p=none` et effectuer une analyse des rapports d’échec pendant plusieurs semaines pour régler les éventuelles anomalies. Passer en `p=quarantine` ou `p=reject` nécessite une pleine maitrise des paramètres de sécurité e-mail, concernant le [SPF](/pages/web_cloud/domains/dns_zone_spf) et le [DKIM](/pages/web_cloud/domains/dns_zone_dkim). L’utilisation du facteur `pct=`, présenté en-dessous, permet une transition progressive.
 
 - **Pourcentage des messages filtrés (pct=)** (valeur comprise entre 0 et 100, la valeur par défaut est 100) : pourcentage du flux de messages auquel la politique DMARC doit être appliquée. Le but de la balise « pct » est de permettre aux propriétaires de domaines d'adopter une mise en œuvre lente du mécanisme DMARC.
 
@@ -131,7 +131,7 @@ Vous trouverez ci-dessous la liste des balises utilisées pour créer un **enreg
 >
 > Dans nos 2 exemples le paramètre `p=`est utilisé sous sa forme restrictive pour illustrer le comportement d'un service e-mail dans ce cas de figure.
 >
-> La configuration du paramètre `p=` peut avoir un impact important sur la délivrabilité des emails de votre nom de domaine. Il est conseillé de configurer `p=none` et effectuer une analyse des rapports d’échec pendant plusieurs semaines pour régler les éventuelles anomalies. Passer en `p=quarantine` ou `p=reject` nécessite une pleine maitrise des paramètres de sécurité e-mail, concernant le [SPF](/pages/web/domains/dns_zone_spf) et le [DKIM](/pages/web/domains/dns_zone_dkim). L’utilisation du facteur `pct=`, présenté en-dessous, permet une transition progressive.
+> La configuration du paramètre `p=` peut avoir un impact important sur la délivrabilité des emails de votre nom de domaine. Il est conseillé de configurer `p=none` et effectuer une analyse des rapports d’échec pendant plusieurs semaines pour régler les éventuelles anomalies. Passer en `p=quarantine` ou `p=reject` nécessite une pleine maitrise des paramètres de sécurité e-mail, concernant le [SPF](/pages/web_cloud/domains/dns_zone_spf) et le [DKIM](/pages/web_cloud/domains/dns_zone_dkim). L’utilisation du facteur `pct=`, présenté en-dessous, permet une transition progressive.
 
 ##### Premier exemple
 
