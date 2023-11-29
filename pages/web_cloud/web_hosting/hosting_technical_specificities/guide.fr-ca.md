@@ -42,9 +42,9 @@ Afin de garantir une bonne qualité de service sur l'ensemble de l'infrastructur
 
 Sur une période glissante de 3600 secondes (1 heure), votre offre d'hébergement web vous permettra d'envoyer les quotas d'e-mails suivants :
 
-|Offres|Hébergement gratuit 100M|Starter|Perso|Pro|Performance|
-|---|---|---|---|---|---|
-|Quantité maximale d'envoi d'e-mails par heure et par service|10|20|100|200|2000|
+|Offres|Starter|Perso|Pro|Performance|
+|---|---|---|---|---|
+|Quantité maximale d'envoi d'e-mails par heure et par service|20|100|200|2000|
 
 > [!primary]
 >
@@ -140,7 +140,7 @@ Par exemple, vous pouvez utiliser la fonction *gethostbyaddr()* pour récupérer
 > OVHcloud ne change pas automatiquement la version de PHP de votre hébergement lorsqu'une nouvelle version est implémentée. Vous êtes maître de la sécurité du contenu services et de la mise à jour régulière de ces derniers.
 >
 
-### Informations techniques de votre hébergement Web <a name="#technical-infos-web-hosting"></a>
+### Informations techniques de votre hébergement Web <a name="technical-infos-web-hosting"></a>
 
 Retrouvez et vérifiez les librairies, langages et versions disponibles pour votre offre d'hébergement web depuis cette page : <https://webhosting-infos.hosting.ovh.net>
 

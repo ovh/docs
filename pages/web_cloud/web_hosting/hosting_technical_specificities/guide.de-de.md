@@ -144,7 +144,7 @@ Sie können z. B. die Funktion *gethostbyaddr()* verwenden, um den Hostnamen abz
 > OVHcloud ändert die PHP-Version Ihres Hostings nicht automatisch, wenn eine neue Version implementiert wird. Sie sind für die Sicherheit der Inhalte und die regelmäßigen Updates der Dienste verantwortlich.
 >
 
-### Technische Informationen zu Ihrem Webhosting <a name="#technical-infos-web-hosting"></a>
+### Technische Informationen zu Ihrem Webhosting <a name="technical-infos-web-hosting"></a>
 
 Auf dieser Seite finden und überprüfen Sie die für Ihr Webhosting Angebot verfügbaren Bibliotheken, Sprachen und Versionen: <https://webhosting-infos.hosting.ovh.net>
 
