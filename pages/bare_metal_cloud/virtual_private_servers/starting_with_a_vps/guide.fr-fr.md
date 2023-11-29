@@ -219,7 +219,7 @@ Si vous rencontrez des problèmes avec cette procédure, vérifiez que les conne
 
 En tant qu’administrateur de votre VPS, vous êtes responsable de la sécurité des applications et des données qui y sont hébergées.
 
-Reportez-vous à notre guide [Éditer une zone DNS OVHcloud](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps) pour obtenir des conseils essentiels afin de protéger votre système.
+Reportez-vous à notre guide [Sécuriser un VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps) pour obtenir des conseils essentiels afin de protéger votre système.
 
 > [!primary]
 >
