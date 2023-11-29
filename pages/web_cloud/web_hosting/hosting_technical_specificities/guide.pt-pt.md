@@ -1,7 +1,7 @@
 ---
-title: 'Especificidades técnicas relacionadas com os alojamentos partilhados'
-excerpt: 'Neste guia encontrará as diferentes informações e especificidades técnicas relacionadas com os alojamentos partilhados'
-updated: 2022-11-18
+title: "Especificidades técnicas relacionadas com os alojamentos partilhados"
+excerpt: "Saiba neste guia diferentes informações e especificidades técnicas relacionadas com os alojamentos Web"
+updated: 2023-11-29
 ---
 
 > [!primary]
@@ -10,7 +10,7 @@ updated: 2022-11-18
 
 ## Objetivo
 
-**Este guia trata dos pormenores técnicos da infraestrutura dos alojamentos web OVHcloud, em função das dúvidas mais frequentes.**
+**Saiba neste guia diferentes informações e especificidades técnicas relacionadas com os alojamentos Web.**
 
 ## Requisitos
 

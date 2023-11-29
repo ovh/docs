@@ -1,7 +1,7 @@
 ---
-title: 'Technical specifications of Web Hostings'
-excerpt: 'Find out details about the technical capabilities of your Web Hosting plan '
-updated: 2022-11-18
+title: "Technical specifications of Web Hostings"
+excerpt: "Find out details about the technical capabilities of your Web Hosting plan"
+updated: 2023-11-29
 ---
 
 ## Objective

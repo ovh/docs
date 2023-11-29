@@ -1,16 +1,16 @@
 ---
-title: 'Particularidades técnicas de los alojamientos compartidos'
-excerpt: 'Esta guía ofrece toda la información relativa a las particularidades técnicas de los alojamientos compartidos'
-updated: 2022-11-18
+title: "Particularidades técnicas de los alojamientos compartidos"
+excerpt: "Descubra en esta guía diferentes informaciones y particularidades técnicas relativas a los alojamientos web"
+updated: 2023-11-29
 ---
 
 > [!primary]
-> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón "Contribuir" de esta página.
 >
 
 ## Objetivo
 
-**Esta guía le informa de los detalles técnicos de la infraestructura de los alojamientos Web OVHcloud, en función de las preguntas más frecuentes**
+**Descubra en esta guía diferentes informaciones y particularidades técnicas relativas a los alojamientos web.**
 
 ## Requisitos
 

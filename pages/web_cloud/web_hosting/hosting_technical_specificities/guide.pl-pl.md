@@ -1,7 +1,7 @@
 ---
-title: 'Informacje techniczne związane z hostingiem współdzielonym'
-excerpt: 'Zapoznaj się z różnego rodzaju informacjami technicznymi dotyczącymi hostingu współdzielonego'
-updated: 2022-11-18
+title: "Informacje techniczne związane z hostingiem współdzielonym"
+excerpt: "Zapoznaj się z różnego rodzaju informacjami technicznymi dotyczącymi hostingu WWW"
+updated: 2023-11-29
 ---
 
 > [!primary]
@@ -10,7 +10,7 @@ updated: 2022-11-18
 
 ## Wprowadzenie 
 
-**Niniejszy przewodnik zawiera szczegółowe informacje techniczne dotyczące infrastruktury hostingu WWW OVHcloud, zebrane na podstawie najczęściej zadawanych pytań**
+**Zapoznaj się z różnego rodzaju informacjami technicznymi dotyczącymi hostingu WWW.**
 
 ## Wymagania początkowe
 
