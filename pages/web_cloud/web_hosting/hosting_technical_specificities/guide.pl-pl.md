@@ -40,7 +40,7 @@ Dzieje się tak, ponieważ hasła nigdy nie są wyświetlane, ale można je zmie
 
 Więcej informacji na ten temat znajdziesz w naszym przewodniku "[Logowanie do przestrzeni dyskowej FTP hostingu WWW](/pages/web_cloud/web_hosting/ftp_connection)".
 
-### Emaile <a name="Emails"></a>
+### Emaile <a name="emails"></a>
 
 Aby zagwarantować wysoką jakość usługi na całej infrastrukturze współdzielonej i tym samym usprawnić wysyłkę e-maili do odbiorców, stosujemy limity wysyłki w naszych usługach hostingowych.
 
