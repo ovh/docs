@@ -1,6 +1,7 @@
 ---
-title: Test temporary host loss by enabling resilience mode
+title: Testing temporary host loss by enabling resilience mode
 excerpt: Find out how to test temporary host loss with resilience mode on your OVHcloud Hosted Private Cloud infrastructure
+updated: 2023-11-29
 ---
 
 ## Objective
@@ -11,12 +12,12 @@ If you would like to carry out a resilience test on your OVHcloud Hosted Private
 
 ## Requirements
 
-- a [Hosted Private Cloud solution](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/).
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
+- A [Hosted Private Cloud solution](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/)
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 
 ## Instructions
 
-This operation is carried out using the OVHcloud APIs, and will result in the selected host being unable to access the network, then deactivated for a defined period of time (min:10min, max:24h, default:1h).
+This operation is carried out using the OVHcloud API, and will result in the selected host being unable to access the network, then deactivated for a defined period of time (min:10min, max:24h, default:1h).
 
 This test is independent of the monitoring system, thus avoiding automatic replacement of the host.
 
@@ -26,21 +27,21 @@ For more information about vSphere HA, you can read the VMware documentation “
 
 This way, you can estimate the time it takes to recover from the test launch and the incident simulation (RTO) until the VMs are rebooted.
 
-Here are the calls to execute in order to list and obtain the credentials of your infrastructure, your datacentre and the host on which we wish to carry out this test:
+Here are the calls to execute in order to list and obtain the credentials of your infrastructure, your data centre and the host on which we wish to carry out this test:
 
-To retrieve the name of your infrastructure: (pcc-xx-xx-xx):
+To retrieve the name of your infrastructure: (`pcc-xx-xx-xx`):
 
 > [!api]
 >
 > @api {v1} /dedicatedCloud GET /dedicatedCloud
 
-To retrieve your datacentre ID:
+To retrieve your `datacenterId`:
 
 > [!api]
 >
 > @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/datacenter
 
-And finally, to retrieve your host ID:
+And finally, to retrieve your `hostId`:
 
 > [!api]
 >
@@ -52,7 +53,7 @@ Once you have this information, in order to confirm that you can launch the acti
 >
 > @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/host/{hostId}/resilience/canBeEnabled
 
-If the test is feasible, the result is: true.
+If the test is feasible, the result is: `true`.
 
 To start the test, you can use the following call:
 
@@ -70,7 +71,7 @@ You can check the status of the action, using the following call:
 >
 > @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/host/{hostId}/resilience
 
-If the test has been launched on the host, the result will be enabled.
+If the test has been launched on the host, the result will be: `enabled`.
 
 If necessary, you can also stop the test before the duration you have chosen by using this call:
 
@@ -80,7 +81,7 @@ If necessary, you can also stop the test before the duration you have chosen by 
 
 The information returned will include the schedule for the "updateHostResilienceOff" task.
 
-Host connectivity will be restored once the test is complete, and your HPC infrastructure will return to normal use.
+Host connectivity will be restored once the test is complete, and your Hosted Private Cloud infrastructure will return to normal use.
 
 ## Go further
 
