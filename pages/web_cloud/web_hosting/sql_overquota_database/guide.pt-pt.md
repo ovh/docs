@@ -1,7 +1,7 @@
 ---
 title: "Alojamento web: a minha base de dados está saturada, o que fazer?"
 excerpt: "Saiba como agir quando a base de dados está sobrecarregada"
-updated: 2023-11-22
+updated: 2023-11-30
 ---
 
 > [!primary]

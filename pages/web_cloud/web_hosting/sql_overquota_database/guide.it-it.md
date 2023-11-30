@@ -1,7 +1,7 @@
 ---
 title: "Hosting Web: il mio database è saturo, cosa fare?"
 excerpt: "Questa guida ti mostra come agire in caso di saturazione del database"
-updated: 2023-11-22
+updated: 2023-11-30
 ---
 
 > [!primary]

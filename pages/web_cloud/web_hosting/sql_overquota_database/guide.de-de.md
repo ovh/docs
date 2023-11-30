@@ -1,7 +1,7 @@
 ---
 title: "Webhosting: Was tun, wenn meine Datenbank voll ist?"
 excerpt: "Erfahren Sie hier, wie Sie vorgehen, wenn Ihre Datenbank voll ist"
-updated: 2023-11-22
+updated: 2023-11-30
 ---
 
 > [!primary]
