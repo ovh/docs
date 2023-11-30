@@ -1,6 +1,6 @@
 ---
-title: 'Restoring your Web Hosting plan’s storage space'
-excerpt: 'Find out how to restore a file or an entire storage space from your Web Hosting plan'
+title: "Restoring your Web Hosting plan’s storage space"
+excerpt: "Find out how to restore a file or an entire storage space from your Web Hosting plan"
 updated: 2023-01-12
 ---
 
@@ -180,4 +180,4 @@ For specialised services (SEO, development, etc.), contact [OVHcloud partners](h
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/asia/support-levels/).
 
-Join our community of users on <https://community.ovh.com/en/>. 
+Join our community of users on <https://community.ovh.com/en/>.
