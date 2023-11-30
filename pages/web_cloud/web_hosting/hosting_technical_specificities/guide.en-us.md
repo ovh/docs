@@ -144,7 +144,6 @@ For example, you can use the *gethostbyaddr()* function to retrieve the host nam
 
 Find and check the libraries, languages and versions available for your web hosting plan on this page: <https://webhosting-infos.hosting.ovh.net>
 
-For the technical specifications of the Cloud Web solution, please visit this page: <https://cloudweb-infos.hosting.ovh.net/>.
 
 ### Automatic backup information <a name="backup"></a>
 
