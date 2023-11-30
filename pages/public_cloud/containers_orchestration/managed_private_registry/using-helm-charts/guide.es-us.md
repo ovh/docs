@@ -43,7 +43,7 @@ The first step is downloading the WordPress chart using `helm`:
 helm fetch bitnami/wordpress
 ```
 
-the WordPress Helm chart is downloaded as a `tgz` file.
+The WordPress Helm chart is downloaded as a `tgz` file.
 
 ```console
 $ helm fetch bitnami/wordpress
@@ -140,7 +140,7 @@ Upload a chart to a registry:
 helm push <chart name>-<version>.tgz oci://<registry url>/<project>
 ```
 
-For example, to push the Helm chart Wordpress in the version "18.1.14" in the Harbor project named "private":
+For example, to push the Helm chart WordPress in the version "18.1.14" in the Harbor project named "private":
 
 ```bash
 helm push wordpress-18.1.14.tgz oci://8xghzr01.c1.bhs5.container-registry.ovh.net/private
@@ -154,7 +154,7 @@ Download a chart from a registry:
 helm pull oci://<registry url>/<project>/<chart name> --version <version>
 ```
 
-For example po Pull the Helm chart Wordpress in the version "18.1.14" from the Harbor project named "private":
+For example to pull the Helm chart WordPress in the version "18.1.14" from the Harbor project named "private":
 
 ```bash
 helm pull oci://8xghzr01.c1.bhs5.container-registry.ovh.net/private/wordpress --version 18.1.14
@@ -175,7 +175,7 @@ Install a chart to a Kubernetes cluster:
 helm install myrelease oci://<registry url>/<project>/<chart name> --version <version>
 ```
 
-For example, to install the Helm chart Wordpress in the version "18.1.14" from the Harbor project named "private":
+For example, to install the Helm chart WordPress in the version "18.1.14" from the Harbor project named "private":
 
 ```bash
 helm install myrelease oci://8xghzr01.c1.bhs5.container-registry.ovh.net/private/wordpress --version 18.1.14
