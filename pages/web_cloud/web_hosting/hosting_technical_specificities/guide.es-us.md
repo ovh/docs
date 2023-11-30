@@ -148,7 +148,6 @@ Por ejemplo, se puede utilizar la función *gethostbyaddr()* para recuperar el n
 
 Consulte y compruebe las librerías, lenguajes y versiones disponibles para su plan de hosting desde esta página: <https://webhosting-infos.hosting.ovh.net>
 
-Para conocer las especificaciones técnicas de la solución Cloud Web, acceda a la siguiente página: <https://cloudweb-infos.hosting.ovh.net/>.
 
 ### Información sobre las copias de seguridad automáticas <a name="backup"></a>
 
