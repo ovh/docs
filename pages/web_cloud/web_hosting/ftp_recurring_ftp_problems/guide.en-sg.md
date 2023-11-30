@@ -1,6 +1,6 @@
 ---
-title: Troubleshooting recurring errors when using FTP software
-excerpt: Find out how to resolve the most common FTP software related issues
+title: "Troubleshooting recurring errors when using FTP software"
+excerpt: "Find out how to resolve the most common FTP software related issues"
 updated: 2022-01-05
 ---
 
@@ -13,7 +13,7 @@ Using FTP software when logging in to your [Web Hosting plan](https://www.ovhclo
 > [!warning]
 > OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 >
->This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider](https://partner.ovhcloud.com/en-sg/directory/) and/or discuss the issue with our community on if you have difficulties or doubts. You can find more information in the [Go further](#gofurther) section of this guide.
+>This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider](https://partner.ovhcloud.com/en-sg/directory/) and/or discuss the issue with our community on if you have difficulties or doubts. You can find more information in the [Go further](#go-further) section of this guide.
 >
 
 ## Requirements
@@ -82,7 +82,7 @@ This link is installed by default on OVHcloud Web Hosting plans. It displays thi
 
 If you did not use the "[1-click module](/pages/web_cloud/web_hosting/cms_install_1_click_modules)" feature to create your website, you will need to use the [Net2FTP](/pages/web_cloud/web_hosting/ftp_connection#1-log-in-via-ftp-explorer) software accessible via the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg) in order to manually delete the "Website under construction" page.
 
-## Go further <a name="gofurther"></a>
+## Go further <a name="go-further"></a>
 
 [Using FileZilla software with your hosting](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)
 

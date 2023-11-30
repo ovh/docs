@@ -1,6 +1,6 @@
 ---
-title: 'Eine Website auf Ihrem Webhosting online stellen'
-excerpt: 'So stellen Sie eine Website auf Ihrem OVHcloud Webhosting online'
+title: "Eine Website auf Ihrem Webhosting online stellen"
+excerpt: "So stellen Sie eine Website auf Ihrem OVHcloud Webhosting online"
 updated: 2022-07-21
 ---
 
@@ -28,17 +28,17 @@ Im Internet gibt es viele verschiedene Websites. Egal ob Sie einen Blog einricht
 
 Um Ihr Vorhaben erfolgreich umzusetzen, ist es wichtig, dass Sie Ihr Ziel klar vor Augen haben. Was ist der Zweck Ihrer Website? Wie soll Sie online gestellt werden? Über Ihr OVHcloud Webhosting Angebot stehen Ihnen mehrere Möglichkeiten für Ihr Website-Projekt zur Verfügung.
 
-- **Website mithilfe von 1-Klick-Modulen online stellen**: Sie können auf einer gebrauchsfertigen Websitestruktur aufbauen und diese nach Belieben anpassen (Themes, Texte usw.). OVHcloud stellt Ihnen 4 verschiedene 1-Klick-Module zur Verfügung, die mit unseren Infrastrukturen kompatibel sind. Nähere Informationen finden Sie in der Anleitung [„Installation Ihrer Website mit 1-Klick-Modulen“](/pages/web_cloud/web_hosting/cms_install_1_click_modules){.external}.
+- **Website mithilfe von 1-Klick-Modulen online stellen**: Sie können auf einer gebrauchsfertigen Websitestruktur aufbauen und diese nach Belieben anpassen (Themes, Texte usw.). OVHcloud stellt Ihnen 4 verschiedene 1-Klick-Module zur Verfügung, die mit unseren Infrastrukturen kompatibel sind. Nähere Informationen finden Sie in der Anleitung [„Installation Ihrer Website mit 1-Klick-Modulen“](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
 
 - **Website über gebrauchsfertige Vorlage manuell installieren**: Sie können auf einer gebrauchsfertigen Websitestruktur aufbauen und diese nach Belieben anpassen (Themes, Texte usw.). Die Vorlage installieren Sie selbst auf Ihrem OVHcloud Webhosting.
 
 - **Website selbst erstellen**: Hier sind sowohl technische als auch Programmierkenntnisse erforderlich. Aber Sie haben auch die größte Gestaltungsfreiheit für eine Website ganz nach Ihren Vorstellungen.
 
-- **Bestehende Website zu OVHcloud migrieren**: Die Migration einer Website kann sich als schwierig erweisen, wenn dabei eine Unterbrechung des Dienstes vermieden werden soll. Um Ihnen bei diesem Vorgang zu helfen, haben wir die folgende Anleitung erstellt: [„Migration Ihrer Website und E-Mails zu OVHcloud“](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh){.external}.
+- **Bestehende Website zu OVHcloud migrieren**: Die Migration einer Website kann sich als schwierig erweisen, wenn dabei eine Unterbrechung des Dienstes vermieden werden soll. Um Ihnen bei diesem Vorgang zu helfen, haben wir die folgende Anleitung erstellt: [„Migration Ihrer Website und E-Mails zu OVHcloud“](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh).
 
 Nachdem Sie eine der Möglichkeiten ausgewählt haben, ergeben sich die folgenden zwei Optionen:
 
-- **Sie möchten Ihre Website mithilfe von 1-Klick-Modulen online stellen**: Lesen Sie die zugehörige Anleitung [„Installation Ihrer Website mit 1-Klick-Modulen“](/pages/web_cloud/web_hosting/cms_install_1_click_modules){.external}.
+- **Sie möchten Ihre Website mithilfe von 1-Klick-Modulen online stellen**: Lesen Sie die zugehörige Anleitung [„Installation Ihrer Website mit 1-Klick-Modulen“](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
 
 - **Sie möchten keine 1-Klick-Module verwenden**: Stellen Sie Ihre Website manuell auf Ihrem Hosting online. In dieser Anleitung geben wir Ihnen einige Informationen, die Ihnen hierbei helfen. Sie ersetzen jedoch nicht die Unterstützung eines Webmasters.
  
@@ -72,7 +72,7 @@ Diese Informationen wurden Ihnen per E-Mail bei der Installation Ihres Webhostin
 
 ![website installation](images/get-website-online-step1.png){.thumbnail}
 
-Es werden nun die Informationen für Ihren Speicherplatz angezeigt. Sie sollten hier alle Elemente finden, die Sie für die Verbindung mit Ihrem Speicherplatz brauchen. Falls nötig, lesen Sie unsere Anleitung: [„Mit dem Speicherplatz eines Webhostings verbinden“](/pages/web_cloud/web_hosting/ftp_connection){.external}. Wenn Sie kein Passwort besitzen, lesen Sie bitte die Anleitung [„Passwort eines FTP-Benutzers ändern“](/pages/web_cloud/web_hosting/ftp_change_password){.external}.
+Es werden nun die Informationen für Ihren Speicherplatz angezeigt. Sie sollten hier alle Elemente finden, die Sie für die Verbindung mit Ihrem Speicherplatz brauchen. Falls nötig, lesen Sie unsere Anleitung: [„Mit dem Speicherplatz eines Webhostings verbinden“](/pages/web_cloud/web_hosting/ftp_connection). Wenn Sie kein Passwort besitzen, lesen Sie bitte die Anleitung [„Passwort eines FTP-Benutzers ändern“](/pages/web_cloud/web_hosting/ftp_change_password).
 
 Wenn Sie alle nötigen Informationen haben, können Sie sich in Ihren Speicherplatz einloggen. Hierfür haben Sie drei Möglichkeiten:
 
@@ -145,10 +145,14 @@ Sollten Sie bei der Veröffentlichung Ihrer Website Schwierigkeiten haben, empfe
 
 ## Weiterführende Informationen
 
-[Migration Ihrer Website und E-Mails zu OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh){.external}
+[Migration Ihrer Website und E-Mails zu OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)
 
-[Installation Ihrer Website mit 1-Klick-Modulen](/pages/web_cloud/web_hosting/cms_install_1_click_modules){.external}
+[Installation Ihrer Website mit 1-Klick-Modulen](/pages/web_cloud/web_hosting/cms_install_1_click_modules)
 
-[Passwort eines FTP-Benutzers ändern](/pages/web_cloud/web_hosting/ftp_change_password){.external}
+[Passwort eines FTP-Benutzers ändern](/pages/web_cloud/web_hosting/ftp_change_password)
+
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
