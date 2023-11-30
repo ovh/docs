@@ -144,8 +144,6 @@ Par exemple, vous pouvez utiliser la fonction *gethostbyaddr()* pour récupérer
 
 Retrouvez et vérifiez les librairies, langages et versions disponibles pour votre offre d'hébergement web depuis cette page : <https://webhosting-infos.hosting.ovh.net>
 
-Pour connaitre les spécificités techniques de l'offre Cloud Web, dirigez-vous vers cette page : <https://cloudweb-infos.hosting.ovh.net/>.
-
 ### Informations sur les sauvegardes automatiques <a name="backup"></a>
 
 > [!warning]
