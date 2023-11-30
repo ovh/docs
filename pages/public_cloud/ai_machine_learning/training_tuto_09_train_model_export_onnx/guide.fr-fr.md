@@ -1,7 +1,7 @@
 ---
 title: "AI Training - Tutoriel - Entraîner un modèle PyTorch et l'exporter au format ONNX (EN)"
 excerpt: "Comment entraîner et exporter un modèle de classification d'images au format ONNX avec AI Training"
-updated: 2023-09-08
+updated: 2023-11-27
 ---
 
 ## Objective

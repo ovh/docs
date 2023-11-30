@@ -1,7 +1,7 @@
 ---
 title: AI Deploy - Tutoriel - Déployer LLaMA 2 dans une application Streamlit (EN)
 excerpt: Comment construire et déployer un chatbot avec LLaMA 2 et Streamlit
-updated: 2023-09-19
+updated: 2023-11-27
 ---
 
 On July 18, 2023, [Meta](https://about.meta.com/) released [LLaMA 2](https://ai.meta.com/llama/), the latest version of their open-source Large Language Model (LLM).

@@ -1,7 +1,7 @@
 ---
 title: AI Deploy - Tutoriel - Déployer une app de segmentation de tumeurs (EN)
 excerpt: Comment créer et déployer une application permettant de segmenter des tumeurs cérébrales présentes dans des images IRM
-updated: 2023-05-11
+updated: 2023-11-27
 ---
 
 > [!primary]

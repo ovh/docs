@@ -1,7 +1,7 @@
 ---
 title: AI Deploy - Tutorial - Create a web service to recognize sign language with YOLOv7
 excerpt: How to build a sign language recognition app with Streamlit
-updated: 2023-04-03
+updated: 2023-11-27
 ---
 
 ## Objective

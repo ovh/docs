@@ -1,7 +1,7 @@
 ---
 title: "AI Deploy - Tutoriel - Déployer une app pour de l'analyse de sentiment avec Hugging Face et Flask (EN)"
 excerpt: "Comment déployer une app pour analyser les sentiments d'un texte en utilisant Hugging Face et Flask"
-updated: 2023-04-04
+updated: 2023-11-27
 ---
 
 > [!primary]

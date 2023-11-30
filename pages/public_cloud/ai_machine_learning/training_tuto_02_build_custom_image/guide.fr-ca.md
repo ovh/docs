@@ -1,7 +1,7 @@
 ---
 title: AI Training - Tutoriel - Construire & utiliser une image Docker personnalisée (EN)
 excerpt: Comment construire et utiliser votre propre image Docker
-updated: 2023-05-04
+updated: 2023-11-27
 ---
 
 ## Objective

@@ -1,7 +1,7 @@
 ---
 title: AI Deploy - Tutorial - Deploy an app for audio classification task using Streamlit
 excerpt: How to deploy a Streamlit app to classify marine mammal sounds
-updated: 2023-04-06
+updated: 2023-11-27
 ---
 
 > [!primary]

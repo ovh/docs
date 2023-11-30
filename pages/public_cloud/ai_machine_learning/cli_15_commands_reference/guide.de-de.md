@@ -1,7 +1,7 @@
 ---
 title: CLI - Commands reference
 excerpt: Learn how to use the CLI to interact with AI Training
-updated: 2023-05-11
+updated: 2023-11-27
 ---
 
 ## Objective

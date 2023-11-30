@@ -1,7 +1,7 @@
 ---
 title: AI Deploy - Tutorial - Build & use a custom Docker image
 excerpt: Explanations on how to build and use your own custom image
-updated: 2023-06-15
+updated: 2023-11-27
 ---
 
 > [!primary]
