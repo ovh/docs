@@ -41,7 +41,7 @@ You can select the major and minor version. Patch versions are applied periodica
 
 ### Specify the language
 
-To use Go, specify golang as your app's `golang`
+To use Go, specify type as your app's `type`
 
 
 
