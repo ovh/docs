@@ -1,7 +1,7 @@
 ---
 title: AI Training - Tutorial - Train a PyTorch model and export it to ONNX
 excerpt: How to train and export an image classification model to ONNX using AI Training
-updated: 2023-09-08
+updated: 2023-11-27
 ---
 
 ## Objective

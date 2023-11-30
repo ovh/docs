@@ -1,7 +1,7 @@
 ---
 title: Registres - Utiliser et gérer vos registres (EN)
 excerpt: Découvrez comment vous pouvez gérer vos registres existants, mais aussi en utiliser de nouveaux
-updated: 2023-05-12
+updated: 2023-11-27
 ---
 
 ## Objective

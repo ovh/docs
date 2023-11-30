@@ -1,7 +1,7 @@
 ---
 title: 'Zmienne środowiskowe OpenStack'
 excerpt: 'Zarządzaj środowiskiem OpenStack z linii komend'
-updated: 2023-11-06
+updated: 2023-11-29
 ---
 
 > [!primary]

@@ -1,7 +1,7 @@
 ---
 title: AI Deploy - Tutorial - Deploy a web service for YOLOv5 using Flask
 excerpt: How to deploy a web service for YOLOv5 using your own weights with Flask
-updated: 2023-04-04
+updated: 2023-11-27
 ---
 
 > [!primary]

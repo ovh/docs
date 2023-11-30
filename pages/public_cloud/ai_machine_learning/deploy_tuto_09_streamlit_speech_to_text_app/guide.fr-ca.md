@@ -1,7 +1,7 @@
 ---
 title: "AI Deploy - Tutoriel - Créer et déployer une application de Speech to Text (EN)"
 excerpt: "Comment créer et déployer une application de Speech to Text / Transcription audio"
-updated: 2023-04-04
+updated: 2023-11-27
 ---
 
 > [!primary]

@@ -1,7 +1,7 @@
 ---
 title: AI Training - Tutorial - Train YOLOv8 to play to "rock paper scissors" 
 excerpt: Understand how simple it is to train a model using AI Training
-updated: 2023-10-19
+updated: 2023-11-27
 ---
 
 ## Objective

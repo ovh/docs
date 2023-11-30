@@ -1,7 +1,7 @@
 ---
 title: AI Deploy - Tutoriel - Déployer et appeler un classificateur de spam avec FastAPI (EN)
 excerpt: Comment déployer et appeler une API pour la classification de spam avec FastAPI
-updated: 2023-04-04
+updated: 2023-11-27
 ---
 
 > [!primary]

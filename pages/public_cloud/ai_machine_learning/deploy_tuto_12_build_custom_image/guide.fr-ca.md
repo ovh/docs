@@ -1,7 +1,7 @@
 ---
 title: AI Deploy - Tutoriel - Créer et utiliser une image Docker personnalisée (EN)
 excerpt: "Explications sur la construction et l'utilisation de votre propre image personnalisée"
-updated: 2023-06-15
+updated: 2023-11-27
 ---
 
 > [!primary]

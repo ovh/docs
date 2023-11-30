@@ -1,7 +1,7 @@
 ---
 title: AI Deploy - Tutoriel - Créer une application pour jouer à pierre papier ciseaux avec YOLOv8 (EN)
 excerpt: Comment créer une application basée sur la vision par ordinateur et YOLOv8
-updated: 2023-10-19
+updated: 2023-11-27
 ---
 
 ## Objective

@@ -1,7 +1,7 @@
 ---
 title: AI Training - Tutoriel - Entraîner YOLOv8 pour jouer à pierre papier ciseaux (EN)
 excerpt: Découvrez comment entraîner un modèle avec AI Training
-updated: 2023-10-19
+updated: 2023-11-27
 ---
 
 ## Objective

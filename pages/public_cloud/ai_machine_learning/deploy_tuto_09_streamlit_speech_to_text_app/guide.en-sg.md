@@ -1,7 +1,7 @@
 ---
 title: AI Deploy - Tutorial - Create and deploy a Speech to Text application using Streamlit
 excerpt: How to create and deploy a Streamlit Application for Speech To Text 
-updated: 2023-04-04
+updated: 2023-11-27
 ---
 
 > [!primary]

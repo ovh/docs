@@ -1,7 +1,7 @@
 ---
 title: AI Deploy - Tutorial - Deploy a brain tumor segmentation app using Streamlit
 excerpt: How to build and deploy a brain tumor segmentation application using streamlit
-updated: 2023-05-11
+updated: 2023-11-27
 ---
 
 > [!primary]

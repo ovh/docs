@@ -1,7 +1,7 @@
 ---
 title: AI Deploy - Tutoriel - Construire & utiliser une image Streamlit (EN)
 excerpt: Comment construire et utiliser votre propre image Docker contenant une application Streamlit
-updated: 2023-04-04
+updated: 2023-11-27
 ---
 
 > [!primary]

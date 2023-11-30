@@ -1,7 +1,7 @@
 ---
 title: CLI - Commandes principales (EN)
 excerpt: Découvrez les principales commandes de la CLI pour interagir sur les AI Tools
-updated: 2023-05-11
+updated: 2023-11-27
 ---
 
 ## Objective

@@ -1,7 +1,7 @@
 ---
 title: AI Deploy - Tutoriel - Déployer un modèle ONNX avec FastAPI (EN)
 excerpt: Découvrez comment déployer le modèle DenseNet au format ONNX pour une inférence optimisée
-updated: 2023-09-20
+updated: 2023-11-27
 ---
 
 ## Objective
