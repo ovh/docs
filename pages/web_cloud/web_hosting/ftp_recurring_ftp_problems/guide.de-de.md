@@ -1,6 +1,6 @@
 ---
-title: Häufige FTP-Probleme beheben
-excerpt: Erfahren Sie hier, wie Sie Fehlermeldungen bei FTP-Verbindungen beheben 
+title: "Häufige FTP-Probleme beheben"
+excerpt: "Diese Anleitung erklärt, wie Sie Fehlermeldungen bei FTP-Verbindungen beheben"
 updated: 2022-01-05
 ---
 
@@ -17,7 +17,7 @@ Die Verwendung von FTP-Software beim Login auf Ihr [Hosting-Pakete](https://www.
 > [!warning]
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 > 
-> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren und/oder Ihre Fragen in der OVHcloud Community zu stellen. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#gofurther).
+> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren und/oder Ihre Fragen in der OVHcloud Community zu stellen. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
 >
 
 ## Voraussetzungen
@@ -86,7 +86,7 @@ Dieser Link ist standardmäßig auf den Shared Hosting Paketen von OVHcloud inst
 
 Wenn Sie die Funktion “[1-Klick-Modul](/pages/web_cloud/web_hosting/cms_install_1_click_modules)“ nicht für Ihre Website verwendet haben, müssen Sie das über das [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) zugängliche [Net2FTP-Programm](/pages/web_cloud/web_hosting/ftp_connection#1-via-ftp-explorer-verbinden) verwenden, um die Seite “Site under construction“ manuell zu löschen.
 
-## Weiterführende Informationen <a name="gofurther"></a>
+## Weiterführende Informationen <a name="go-further"></a>
 
 [Verwendung des FileZilla Programms mit Ihrem Hosting](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)
 
