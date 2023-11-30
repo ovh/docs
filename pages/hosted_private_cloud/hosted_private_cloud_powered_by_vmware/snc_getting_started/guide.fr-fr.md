@@ -128,13 +128,13 @@ Le guide suivant vous décrit comment effectuer cette manipulation :
 
 A l'issue de cette étape, vous serez en capacité d'ouvrir une session sur l'interface vSphere et valider toutes les opérations sensibles sur l'infrastructure lors les prochaines étapes.
 
-### Etape 3 : configurer un VPN IPSec avec NSX-V
+### Etape 3 : configurer un VPN IPSec avec NSX
 
 La mise en place d'un VPN est nécessaire pour vous permettre de vous connecter via Internet aux réseaux privés de votre environnement SecNumCloud.
 
 Le guide suivant vous décrit comment effectuer cette manipulation :
 
-* [Configurer un VPN IPSec via une Gateway Edge](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx_configurer_un_vpn_via_une_gateway_edge#ipsec-vpn)
+* [Mise en place d'un tunnel IPsec avec NSX ](https://help.ovhcloud.com/csm/fr-vmware-nsx-configure-ipsec?id=kb_article_view&sysparm_article=KB0058688)
 
 ### Etape 4 : activer la private gateway
 
@@ -152,13 +152,13 @@ Nous passons ensuite à la mise en place du chiffrement pour les machines virtue
 
 Le prérequis est d'avoir un KMS compatible avec la solution VMware vSphere.
 
+Configurez le KMS (VNKP) dans vSphere en vous aidant du guide suivant :
+
+* [Activation du chiffrement des machines virtuelles (VM Encryption)](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vm_encrypt)
+
 Le guide suivant vous décrit comment déployer la solution KMS Thales :
 
 * [Mise en route du KMS CipherTrust Manager](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/kms_cipher_trust)
-
-Configurez alors le KMS dans vSphere en vous aidant du guide suivant :
-
-* [Activation du chiffrement des machines virtuelles (VM Encryption)](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vm_encrypt)
 
 ### Etape  6: vérification de la conformité SecNumCloud
 
