@@ -188,7 +188,7 @@ Please note that if you have selected a **distribution with application** (Plesk
 >
 
 
-#### Root password
+#### Update root password
 
 To change or update your "root" password, refer to the instructions in [this guide](/pages/bare_metal_cloud/virtual_private_servers/root_password).
 
