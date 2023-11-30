@@ -962,6 +962,10 @@
             + [Prefect - Guide - Getting Started](public_cloud/integrations/prefect_guide_01_getting_started)
             + [Prefect - Tutorial - Emails notification with blocks and automations](public_cloud/integrations/prefect_tuto_02_block_automation)
             + [Prefect - Tutorial - AI pipeline with training job](public_cloud/integrations/prefect_tuto_03_ai_pipeline)
+    + [Data Platform](products/public-cloud-data-platform)
+        + [General information](public-cloud-data-platform-general-information)
+            + [Signin Signup](public_cloud/data_platform/general/signin_signup)
+            + [Getting started](public_cloud/data_platform/general/getting_started)
 + Web Cloud
     + [Domains](products/web-cloud-domains)
         + [Domain names](products/web-cloud-domains-domain-names)
