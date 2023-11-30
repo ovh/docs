@@ -1,6 +1,6 @@
 ---
-title: Primeros pasos con un hosting Cloud Web
-excerpt: Cómo empezar con un alojamiento Cloud Web
+title: "Primeros pasos con un hosting Cloud Web"
+excerpt: "Descubra cómo empezar con un alojamiento Cloud Web"
 updated: 2022-05-04
 ---
 
