@@ -1,6 +1,6 @@
 ---
-title: 'Changer le propriétaire d’un nom de domaine'
-excerpt: 'Vous trouverez dans ce guide différentes informations concernant le changement de propriétaire d’un nom de domaine.'
+title: "Changer le propriétaire d’un nom de domaine"
+excerpt: "Vous trouverez dans ce guide différentes informations concernant le changement de propriétaire d’un nom de domaine."
 updated: 2023-10-23
 ---
 
