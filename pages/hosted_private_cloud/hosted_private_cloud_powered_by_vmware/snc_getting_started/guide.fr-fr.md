@@ -2,7 +2,7 @@
 title: Mise en route de votre vSphere SecNumCloud
 excerpt: Découvrez comment prendre en main et configurer votre environnement vSphere SecNumCloud
 hidden: true
-updated: 2021-11-23
+updated: 2023-12-01
 ---
 
 ## Objectif
