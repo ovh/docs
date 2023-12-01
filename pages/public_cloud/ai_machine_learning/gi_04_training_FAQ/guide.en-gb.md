@@ -98,6 +98,11 @@ Here are the most frequently asked questions about `ovhai` CLI & OVHcloud AI Sol
 > > Make sure your AI Task is in a `RUNNING` state and that your UI is exposed either on the default port or that you specified the correct port in your URL (see [public ports](/pages/public_cloud/ai_machine_learning/training_guide_01_capabilities#available-ports-to-public-network)).
 > > Only the HTTP layer is accessible and check that your UI is correctly binded to the network interfaces (e.g. with tensorboard user the `--bind-all` flag).
 > >
+> How can I share my AI Tools publicly, without any authentication?
+> > When launching an AI Task through the control panel, make sure to select `Public access` during the `Privacy Settings` step for AI Notebooks & Training, or during the `Configure your app` step for AI Deploy. 
+> > If you use the `ovhai CLI`, make sure to use the `--unsecure-http` attribute. 
+> > This way, your AI Tool HTTP link will not require authentication to be accessed.
+> >
 > Do OVHcloud AI Solutions support Public and Private networking?
 > > - Public networking can be used for all the AI Tools.
 > > - Private networking (OVHcloud vRack) is not supported.
