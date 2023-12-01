@@ -1,6 +1,6 @@
 ---
 title: FAQ - AI Tools
-updated: 2023-09-05
+updated: 2023-12-01
 ---
 
 ## Objective
