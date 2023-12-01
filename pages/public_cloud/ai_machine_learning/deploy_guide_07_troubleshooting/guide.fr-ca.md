@@ -1,6 +1,6 @@
 ---
 title: AI Deploy - Dépannage (EN)
-excerpt: Find here all the most popular questions and answers to troubleshoot your issues
+excerpt: Principales erreurs et comment dépanner vos apps AI Deploy
 updated: 2023-03-30
 ---
 
