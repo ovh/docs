@@ -1,6 +1,6 @@
 ---
-title: AI Deploy - App concept
-excerpt: Learn the concept behind AI Deploy apps
+title: AI Deploy - App concept (EN)
+excerpt: Découvrez le concept des apps AI Deploy
 updated: 2023-12-04
 ---
 
@@ -54,7 +54,7 @@ During its lifetime, the app will transit between the following states:
 - You can check the [OVHcloud documentation on how to create a data container](/pages/storage_and_backup/object_storage/pcs_create_container).
 - You can check the [OVHcloud documentation on how to submit an app](/pages/public_cloud/ai_machine_learning/deploy_guide_02_getting_started).
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/fr/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 ## Feedback
 
