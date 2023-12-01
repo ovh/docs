@@ -105,7 +105,7 @@ Here are the most frequently asked questions about `ovhai` CLI & OVHcloud AI Sol
 > What are the available ports to public network?
 > > Each notebook has a public URL, by default this URL accesses the port 8080 of the notebook. The default port cannot be changed.
 > >
-> > However, you can access other ports by appending them to the URL. For example, the notebook URL (starting with the notebook's ID, filled with 0 here) for accessing the 8501 port will be https://081e7b35-1665-4c37-a1f9-fb0d0a76c42e-8501.job.gra.ai.cloud.ovh.net/
+> > However, you can access other ports by appending them to the URL. For example, the notebook URL (starting with the notebook's ID, filled with 0 here) for accessing the 8501 port will be https://00000000-0000-0000-0000-000000000000-8501.job.gra.ai.cloud.ovh.net/
 > >
 > > Concerning jobs and apps, you can map them to only one port. Each of these has a public URL. By default, this URL accesses the port 8080 of your job or app. This default port can be configured when you submit your job or your app.
 > >
