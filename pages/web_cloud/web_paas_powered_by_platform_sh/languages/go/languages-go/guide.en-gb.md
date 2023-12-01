@@ -1,8 +1,6 @@
 ---
 title: Go
-slug: languages-go
-section: Languages
-order: 4
+updated: 2023-12-01
 ---
 
 **Last updated 30th November 2023**
