@@ -6,7 +6,7 @@ updated: 2023-11-20
 
 ## Definition
 
-An **AI Notebook** is the workload unit submitted to the cluster. **AI notebooks** are managed Jupyter or VSCode notebooks, with prepackaged Machine Learning frameworks linked to computing resources (CPU or GPU) and storage space. They are running within OVHcloud infrastructure.
+An **AI Notebook** is the workload unit submitted to the cluster. **AI notebooks** are managed Jupyter or VSCode notebooks, with prepackaged Machine Learning frameworks linked to computing resources (CPU or GPU) and storage space. They are running within the OVHcloud infrastructure.
 
 Each AI Notebook is linked to a **Public Cloud** project and specifies the following:
 
