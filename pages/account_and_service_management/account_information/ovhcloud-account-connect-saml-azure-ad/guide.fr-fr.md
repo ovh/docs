@@ -161,6 +161,22 @@ Dans la section `Attributes & Claims`{.action}, cliquez sur le bouton `Modifier`
 
 ![Entra ID SSO étape 9](images/azure_ad_sso_9.png){.thumbnail}
 
+Ajoutons l'attribut UPN (User Principal Name) aux infos SAML pour informer OVHcloud du mail de l'utilisateur. Cette étape est indispensable.
+
+Cliquez sur `Add a new claim`{.action} dans le menu du haut.
+
+Dans le champ `Name`{.action} saisissez la valeur `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn`{.action}.
+
+Dans le champ `Source attribute`{.action} saisissez `user.mail`{.action}.
+
+Vous devriez maintenant avoir quelque chose proche de l'écran suivant:
+
+![Azure AD SSO saisie UPN](images/azure_ad_sso_9bis.png){.thumbnail}
+
+Cliquez sur `Save`{.action}
+
+Déclarons maintenant l'attribut utilisé pour le groupe de l'utilisateur.
+
 Cliquez sur `Add a group claim`{.action} dans le menu du haut.
 
 ![Entra ID SSO étape 10](images/azure_ad_sso_10.png){.thumbnail}
@@ -258,6 +274,8 @@ Entrez le mot de passe de l'utilisateur de l'application Entra ID puis cliquez s
 Vous êtes maintenant connecté avec le même [nichandle](/pages/account_and_service_management/account_information/ovhcloud-account-creation#quel-est-mon-identifiant-client), mais via votre utilisateur Active Directory et en utilisant votre SSO d'application Entra ID.
 
 ![Ovhcloud SSO Login step 2](images/ovhcloud_sso_login_2.png){.thumbnail}
+
+Si votre email n'apparait pas en dessous de `Connected via SSO`{.action}, vous n'avez pas correctement configuré l'attribut `UPN`{.action} et une partie des fonctionnalités ne fonctionnera pas correctement.
 
 ## Aller plus loin
 
