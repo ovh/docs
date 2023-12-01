@@ -6,12 +6,13 @@ updated: 2023-11-20
 
 ## Definition
 
-An **AI Notebook** is the workload unit submitted to the cluster. **AI notebooks** are managed Jupyter or VSCode notebooks, with pre-packaged Machine Learning frameworks linked to computing resources (CPU or GPU) and storage space. They are running within OVHcloud infrastructure.
+An **AI Notebook** is the workload unit submitted to the cluster. **AI notebooks** are managed Jupyter or VSCode notebooks, with prepackaged Machine Learning frameworks linked to computing resources (CPU or GPU) and storage space. They are running within OVHcloud infrastructure.
 
 Each AI Notebook is linked to a **Public Cloud** project and specifies the following:
-- a type and quantity of computing resources
-- a code editor
-- a pre-configured Machine Learning framework
+
+- A type and quantity of computing resources
+- A code editor
+- A preconfigured Machine Learning framework
 
 ## Considerations
 
@@ -28,7 +29,7 @@ Each AI Notebook is linked to a **Public Cloud** project and specifies the follo
 ## Under the hood
 
 **AI Notebooks** are Docker containers created, deployed and maintained by OVHcloud's AI teams.
-They include a managed code editor and the Machine Learning framework pre-packaged for users according to their needs (computing resources, library versions, ...).
+They include a managed code editor and the Machine Learning framework prepackaged for users according to their needs (computing resources, library versions, etc.).
 
 ## Notebook lifecycle
 
@@ -39,21 +40,21 @@ During its lifetime, the notebook will transit between the following states:
 > Only the `RUNNING` time of the notebook **is billed**. For more information about notebooks billing, refer to this [documentation](/pages/public_cloud/ai_machine_learning/notebook_guide_billing_concept).
 >
 
-- `STARTING` the notebook is being started and, if any, the remote data is synchronized. To learn more about data synchronization
-- `RUNNING` the notebook is running, you can connect to it and use it
-- `STOPPING` the notebook is stopping, your compute resources are freed, your status is saved and, if any, the data is synchronized back
-- `STOPPED` the notebook ended normally and you can restart it whenever you want or delete it
-- `FAILED` the notebook ended in error, e.g. the process in the notebook finished with a non 0 exit code
-- `ERROR` the notebook ended due to a backend error, you may reach our support
-- `DELETING` the notebook is being removed
-- `DELETE` the notebook and its [workspace](/pages/public_cloud/ai_machine_learning/notebook_guide_workspace) are fully deleted
+- `STARTING`: The notebook is being started and, if any, the remote data is synchronized. To learn more about data synchronization.
+- `RUNNING`: The notebook is running, you can connect to it and use it.
+- `STOPPING`: The notebook is stopping, your compute resources are freed, your status is saved and, if any, the data is synchronized back.
+- `STOPPED`: The notebook ended normally and you can restart it whenever you want or delete it.
+- `FAILED`: The notebook ended in error, e.g. the process in the notebook finished with an exit code that is not 0.
+- `ERROR`: The notebook ended due to a backend error, you may contact our support.
+- `DELETING`: The notebook is being removed.
+- `DELETE`: The notebook and its [workspace](/pages/public_cloud/ai_machine_learning/notebook_guide_workspace) are fully deleted.
 
 ![image](images/notebooks_concept.svg){.thumbnail}
 
-## Going further
+## Go further
 
 - You can check the [OVHcloud documentation on how to create a data container](/pages/storage_and_backup/object_storage/pcs_create_container).
-- You can check the [OVHcloud documentation on how to create a notebook](/pages/public_cloud/ai_machine_learning/notebook_tuto_01_first_ml_model_miniconda)
+- You can check the [OVHcloud documentation on how to create a notebook](/pages/public_cloud/ai_machine_learning/notebook_tuto_01_first_ml_model_miniconda).
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
