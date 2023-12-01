@@ -1,7 +1,7 @@
 ---
 title: AI Notebooks - Troubleshooting
 excerpt: Tutorial about how to debug your notebooks
-updated: 2022-04-14
+updated: 2023-12-01
 ---
 
 ## Objective
