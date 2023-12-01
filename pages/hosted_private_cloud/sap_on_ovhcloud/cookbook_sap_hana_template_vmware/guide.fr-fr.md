@@ -1,7 +1,7 @@
 ---
 title: "Déployer une machine virtuelle avec SAP HANA et OVHcloud Backint Agent pré-installés"
 excerpt: "Ce guide fournit les instructions pour le déploiement d'une machine virtuelle SLES for SAP avec SAP HANA et OVHcloud Backint Agent pré-installés"
-updated: 2023-11-16
+updated: 2023-12-04
 ---
 
 ## Objectif
@@ -78,7 +78,7 @@ Une fois les sources SAP HANA déposées dans votre bucket Object Storage S3, vo
 
 5. Vérifiez que le modèle sélectionné a bien pour nom « SLES for SAP SLE-15-SP4-Full-x86_64 for SAP HANA (BYOL) » puis cliquez sur `Next`{.action}.
 
-    Le bloc d'avertissement qui s'affiche conserne les configurations avancées intégrées au template OVF.
+    Le bloc d'avertissement qui s'affiche concerne les configurations avancées intégrées au template OVF.
 
     ![review](images/step-5.png){.thumbnail}
 
@@ -116,7 +116,7 @@ Une fois les sources SAP HANA déposées dans votre bucket Object Storage S3, vo
     | hanashared | MIN(1 x RAM; 1 TB)                                    |
     | hanabackup | hanadata + hanalog                                    |
 
-9. Si vous souhaitez bénéficier de l'installation automatisée de votre base de données SAP HANA, cochez l'activation de l'installation et renseignez les informations de la catégorie `SAP HANA installation`{.action}`.
+9. Si vous souhaitez bénéficier de l'installation automatisée de votre base de données SAP HANA, cochez l'activation de l'installation et renseignez les informations de la catégorie `SAP HANA installation`{.action}.
 
     > [!primary]
     >
@@ -125,7 +125,7 @@ Une fois les sources SAP HANA déposées dans votre bucket Object Storage S3, vo
 
     ![sap-hana-installation](images/step-9.png){.thumbnail}
 
-10. Si vous souhaitez bénéficier de l’installation automatisée d'OVHcloud Backint Agent for SAP HANA pour sauvegarder votre base de données sur un Object Storage S3, cochez l'activation de l'installation et renseignez les informations de la catégorie `OVHcloud Backint Agent installation`{.action}`.
+10. Si vous souhaitez bénéficier de l’installation automatisée d'OVHcloud Backint Agent for SAP HANA pour sauvegarder votre base de données sur un Object Storage S3, cochez l'activation de l'installation et renseignez les informations de la catégorie `OVHcloud Backint Agent installation`{.action}.
 
     > [!warning]
     >
@@ -190,7 +190,7 @@ Le template OVF créé par OVHcloud prend en compte de nombreux paramètres. Cep
 
 6. Vous pouvez à présent démarrer votre machine virtuelle.
 
-    Dans le cas où vous avez activé l'installation SAP HANA à minima, l'installation démarrera lors du premier démarrage de votre machine virtuelle. L'installation dure un peu plus de 15 minutes, veuillez à ne réaliser aucune action sur votre machine virtuelle durant le processus d'installation.
+    Dans le cas où vous avez activé l'installation SAP HANA à minima, l'installation démarrera lors du premier démarrage de votre machine virtuelle. L'installation dure un peu plus de 15 minutes, veillez à ne réaliser aucune action sur votre machine virtuelle durant le processus d'installation.
 
     Vous serez informé de l'avancée de l'installation par l'affichage d'un statut lors de votre connexion SSH à votre machine virtuelle, ainsi que par des messages une fois connecté.
 

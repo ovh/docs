@@ -1,7 +1,7 @@
 ---
 title: "Deploy a virtual machine with SAP HANA and OVHcloud Backint Agent pre-installed"
 excerpt: "This guide provides instructions for deploying a SLES for SAP virtual machine with SAP HANA and OVHcloud Backint Agent pre-installed"
-updated: 2023-11-16
+updated: 2023-12-04
 ---
 
 ## Objective
@@ -52,7 +52,7 @@ Once the SAP HANA sources have been uploaded in your S3 Object Storage bucket, y
 
 > [!warning]
 >
-> A current issue with the Content Library and the dynamic disk feature ([KB85842](https://kb.vmware.com/s/article/85842)) force us to use the direct link of the OVF template.
+> A current issue with the Content Library and the dynamic disk feature ([KB85842](https://kb.vmware.com/s/article/85842)) forces us to use the direct link of the OVF template.
 >
 
 1. In the vSphere interface, select your datacenter, click on `Action`{.action}, then `Deploy OVF template`{.action}.
@@ -116,7 +116,7 @@ Once the SAP HANA sources have been uploaded in your S3 Object Storage bucket, y
     | hanashared | MIN(1 x RAM; 1 TB)                                    |
     | hanabackup | hanadata + hanalog                                    |
 
-9. If you want to use the automation of the SAP HANA installation, tick the installation enable box and fill the information in the `SAP HANA installation`{.action}` category.
+9. If you want to use the automation of the SAP HANA installation, tick the installation enable box and fill in the information in the `SAP HANA installation`{.action} category.
 
     > [!primary]
     >
@@ -210,7 +210,7 @@ We suggest you perform the following actions before putting your SAP HANA databa
 
 4. We suggest setting the same time servers (NTP) as the ones used by your ESXi hosts of your VMware on OVHcloud solution at the OS level.
 
-    This information is available in your vSphere interface, selecting an ESXi host, `Configure`{.action} tab, `Time Configuration`{.action} menu.
+    This information is available in your vSphere interface, selecting an ESXi host, in the `Configure`{.action} tab and `Time Configuration`{.action} menu.
 
     On SLES, edit the /etc/chrony.conf file and add the IP address of NTP servers:
 
