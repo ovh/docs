@@ -155,19 +155,18 @@ Por último, haga clic en el botón `Añadir una llave SSH`{.action}. Aparecerá
 
 Conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), acceda a la sección `Public Cloud`{.action} y seleccione el proyecto correspondiente. Desde la página de inicio, haga clic en el botón `Crear una instancia`{.action}. También puede crear su instancia desde el menú `Instancias`{.action}, en la sección «Compute» del menú de la izquierda.
 
-![instance select](images/instance-creation-01-2023.png){.thumbnail}
+![instance select](images/instance-creation-01-02-2023.png){.thumbnail}
 
 En primer lugar, seleccione el modelo que mejor se adapta a sus necesidades. Podrá consultar las características de las diferentes instancias y los modelos de servidor disponibles de entre las siguientes categorías:
 
 | Tipo de servidor | Recursos garantizados | Uso |
 | :---         |     :---:      |          :--- |
 | General Purpose   | ✓     | Servidores de desarrollo, aplicaciones web o comerciales    |
-| CPU     | ✓       | Codificación de vídeo o alta computación      |
-| RAM   | ✓     | Bases de datos, análisis y cálculos en memoria    |
+| Compute Optimized     | ✓       | Codificación de vídeo o alta computación      |
+| Memory Optimized   | ✓     | Bases de datos, análisis y cálculos en memoria    |
 | GPU     | ✓       | Procesamiento de tareas masivamente paralelas para aplicaciones especializadas (renderizado, big data, deep learning, etc.)       |
-| Sandbox    | -       | Alojado en recursos compartidos para entornos de testeo y desarrollo      |
 | Discovery    | -       | Alojado en recursos compartidos para entornos de testeo y desarrollo      |
-| IOPS   | ✓     | Optimizado para transferencia de datos en disco    |
+| Storage Optimized   | ✓     | Optimizado para transferencia de datos en disco    |
 | Metal | ✓ | Recursos dedicados con acceso directo a recursos informáticos, de almacenamiento y de red|
 
 > [!primary]
@@ -181,7 +180,7 @@ En el próximo paso, deberá seleccionar un datacenter para su instancia de Publ
 
 En tercer lugar, deberá seleccionar un sistema operativo para su instancia. Las imágenes disponibles en este paso dependerán de las opciones que haya seleccionado en los pasos anteriores (p. ej., la compatibilidad con el tipo de servidor y la localización). También hay disponibles sistemas operativos con aplicaciones preinstaladas.
 
-![image select](images/instance-creation-02-2022.png){.thumbnail}
+![image select](images/instance-creation-02-2023.png){.thumbnail}
 
 > [!primary]
 >

@@ -151,19 +151,18 @@ Klicken Sie auf den Button `SSH-Schlüssel hinzufügen`{.action}. Geben Sie im n
 
 Loggen Sie sich im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie das betreffende Public Cloud Projekt aus. Klicken Sie auf der “Start”-Seite auf `Instanz erstellen`{.action}. (Sie finden dieselbe Funktion auch auf der “Instanzen”-Seite, indem Sie in der linken Menüzeile unter “Compute” auf `Instances`{.action} klicken.)
 
-![Instanz auswählen](images/instance-creation-01-2023.png){.thumbnail}
+![Instanz auswählen](images/instance-creation-01-02-2023.png){.thumbnail}
 
 Wählen Sie zunächst entsprechend Ihren Anforderungen ein Server-Template aus. Der Assistent zeigt Ihnen Beschreibungen zu den verschiedenen Einsatzzwecken sowie die Verfügbarkeit der Servermodelle. Sie können aus den folgenden angepassten Kategorien auswählen:
 
 | Servertyp | Garantierte Ressourcen | Verwendungshinweise |
 | :---         |     :---:      |          :--- |
 | General Purpose   | ✓     | Entwicklungsserver, Web- oder Geschäftsanwendungen    |
-| CPU     | ✓       | Videokodierung oder anderes High Performance Computing      |
-| RAM   | ✓     | Datenbanken, Analysen und In-Memory-Berechnungen    |
+| Compute Optimized     | ✓       | Videokodierung oder anderes High Performance Computing      |
+| Memory Optimized   | ✓     | Datenbanken, Analysen und In-Memory-Berechnungen    |
 | GPU     | ✓       | Massiv-Parallel-Processing-Leistung für spezialisierte Anwendungen (Rendering, Big Data, Deep Learning etc.)       |
-| Sandbox    | -       | Auf geteilten Ressourcen gehostet, für Test- und Entwicklungsumgebungen      |
 | Discovery    | -       | Auf geteilten Ressourcen gehostet, für Test- und Entwicklungsumgebungen      |
-| IOPS   | ✓     | Optimiert für Festplattentransaktionen    |
+| Storage Optimized   | ✓     | Optimiert für Festplattentransaktionen    |
 | Metal | ✓ | Dedizierte Ressourcen mit direktem Zugriff auf Rechen-, Speicher- und Netzwerkressourcen |
 
 > [!primary]
@@ -177,7 +176,7 @@ Wählen Sie im nächsten Schritt ein Rechenzentrum für Ihre Public Cloud Instan
 
 Im dritten Schritt wählen Sie das Betriebssystem für Ihre Instanz aus. Welche Images in diesem Schritt verfügbar sind, ist abhängig von Ihrer Auswahl in den vorangegangen Schritten, d. h. der Kompatibilität mit dem Servertyp und der Region. Es stehen auch Betriebssysteme mit vorinstallierten Anwendungen zur Verfügung.
 
-![Image auswählen](images/instance-creation-02-2022.png){.thumbnail}
+![Image auswählen](images/instance-creation-02-2023.png){.thumbnail}
 
 > [!primary]
 >
