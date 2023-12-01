@@ -1,7 +1,7 @@
 ---
 title: "SAP HANA cluster with SLES on VMware on OVHcloud"
 excerpt: "This guide provides instructions for configuring a SAP HANA cluster with SLES on VMware on OVHcloud using Corosync and Pacemaker"
-updated: 2023-11-16
+updated: 2023-12-04
 ---
 
 ## Objective
@@ -37,7 +37,7 @@ To allow the Corosync service to get information from your SAP HANA nodes, you h
 
 We recommend creating a dedicated user with limited permissions to interact with vSphere.
 
-This dedicated user needs only the "Read only" right to the datacenter where are hosted SAP HANA virtual machines. To know how to create this dedicated user, please refer to [our guide on changing user rights](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/change_users_rights).
+This dedicated user needs only the "Read only" right to the datacenter on which the SAP HANA virtual machines are hosted. To know how to create this dedicated user, please refer to [our guide on changing user rights](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/change_users_rights).
 
 ### SUSE packages
 
@@ -104,7 +104,7 @@ The SAP HANA HA/SR provider hook improves SAP HANA failure detection.
     sapcontrol -nr <NI> -function Start
     ```
 
-2. As (sid)adm SAP HANA user, enable the SAP HANA System Replication (HSR) on the primary node which will be the source of the replication:
+2. As the (sid)adm SAP HANA user, enable the SAP HANA System Replication (HSR) on the primary node which will be the source of the replication:
 
     ```bash
     hdbnsutil -sr_enable --name=node1
@@ -368,7 +368,7 @@ The `res_vip_<SID>_HDB<NI>` resource manages and monitors the Floating IP addres
 
 > [!primary]
 >
-> - `<floating_ip_address>` is the floating IP address which will be used by the cluster.
+> - `<floating_ip_address>` is the Floating IP address which will be used by the cluster.
 > - If you have several network cards, you can specify a network card by adding the parameter `nic`.
 >
 
@@ -631,7 +631,7 @@ In this case, the expected behaviour is the switch of all resources hosted on th
 >>
 >> The cluster detects the loss of the node1 which was the Master and triggers the takeover to the node2.
 >>
->> The takeover can take many minutes, depending on the size of your SAP HANA database.
+>> The takeover can take several minutes, depending on the size of your SAP HANA database.
 >>
 >> ```console
 >> Cluster Summary:
