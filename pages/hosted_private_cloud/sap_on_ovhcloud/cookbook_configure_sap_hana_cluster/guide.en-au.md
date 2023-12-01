@@ -364,11 +364,11 @@ crm configure primitive stonith stonith:fence_vmware_rest \
 
 #### Floating IP address resource
 
-The `res_vip_<SID>_HDB<NI>` resource manages and monitors the Floating IP address which will be the point of entry for all communications with the primary SAP HANA node.
+The `res_vip_<SID>_HDB<NI>` resource manages and monitors the floating IP address which will be the point of entry for all communications with the primary SAP HANA node.
 
 > [!primary]
 >
-> - `<floating_ip_address>` is the Floating IP address which will be used by the cluster.
+> - `<floating_ip_address>` is the floating IP address which will be used by the cluster.
 > - If you have several network cards, you can specify a network card by adding the parameter `nic`.
 >
 
@@ -543,7 +543,7 @@ crm configure primitive res_vip_<SID>_HDB<NI> ocf:heartbeat:IPaddr2 \
             * Started: [ node1 node2 ]
         ```
 
-    On the network interface, the Floating IP address is attached:
+    On the network interface, the floating IP address is attached:
 
     ```bash
     ip a

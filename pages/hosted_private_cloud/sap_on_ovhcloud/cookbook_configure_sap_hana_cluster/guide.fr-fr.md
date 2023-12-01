@@ -365,13 +365,13 @@ crm configure primitive stonith stonith:fence_vmware_rest \
       * stonith	(stonith:fence_vmware_rest):	 Stopped (unmanaged)
     ```
 
-#### Ressource adresse Floating IP
+#### Ressource adresse IP flottante
 
-La ressource `res_vip_<SID>_HDB<NI>` gère et surveille l'adresse Floating IP qui est le point d'entrée des communications avec le nœud primaire.
+La ressource `res_vip_<SID>_HDB<NI>` gère et surveille l'adresse IP flottante qui est le point d'entrée des communications avec le nœud primaire.
 
 > [!primary]
 >
-> - `<floating_ip_address>` est l'adresse Floating IP qui sera utilisée par le cluster.
+> - `<floating_ip_address>` est l'adresse IP flottante qui sera utilisée par le cluster.
 > - Si vous avez plusieurs cartes réseau, vous pouvez spécifier la carte réseau en ajoutant le paramètre `nic`.
 >
 
@@ -546,7 +546,7 @@ crm configure primitive res_vip_<SID>_HDB<NI> ocf:heartbeat:IPaddr2 \
           * Started: [ node1 node2 ]
       ```
 
-    L'adresse Floating IP est attachée sur la carte réseau :
+    L'adresse IP flottante est attachée sur la carte réseau :
 
     ```bash
     ip a
