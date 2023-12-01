@@ -1,6 +1,6 @@
 ---
-title: 'Getting started with a Cloud Web hosting plan'
-excerpt: 'Find out how to get started with a Cloud Web hosting plan'
+title: "Getting started with a Cloud Web hosting plan"
+excerpt: "Find out how to get started with a Cloud Web hosting plan"
 updated: 2022-05-04
 ---
 

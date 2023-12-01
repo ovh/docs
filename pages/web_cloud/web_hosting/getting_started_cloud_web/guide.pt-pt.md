@@ -1,6 +1,6 @@
 ---
-title: 'Alojamento Cloud Web: primeira utilização'
-excerpt: 'Saiba como começar num plano de alojamento Cloud Web'
+title: "Alojamento Cloud Web: primeira utilização"
+excerpt: "Saiba como começar num plano de alojamento Cloud Web"
 updated: 2022-05-04
 ---
 
@@ -8,7 +8,7 @@ updated: 2022-05-04
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-## Sumário
+## Objetivo
 
 A nossa oferta de alojamento [Cloud Web](https://www.ovhcloud.com/pt/web-hosting/cloud-web-offer/){.external} combina os nossos 20 anos de experiência no alojamento web e a robustez da nossa Public Cloud. Como nos alojamentos web clássicos, os seus sites são alojados num serviço gerido 24 horas por dia, mas com muitas mais funcionalidades, como o elevado desempenho dos nossos discos SSD.
 
@@ -185,7 +185,7 @@ Os seus endereços de e-mail podem ser usados com o Roundcube, um serviço de we
 
 Para saber mais sobre o RoundCube, consulte o guia: [Utilização do RoundCube](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube){.external} Se desejar associar o seu endereço de e-mail a um software (cliente) de correio eletrónico no computador, smartphone ou um tablet, consulte a página: </products/web-cloud-email-collaborative-solutions-mx-plan>.
 
-## Quer saber mais? Veja os guias abaixo
+## Quer saber mais?
 
 [Transferir o meu site para a OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh){.external} (Versão PT disponível em breve)
 
@@ -203,4 +203,4 @@ Para serviços especializados (referenciamento, desenvolvimento, etc), contacte 
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
 
-Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>. 
+Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

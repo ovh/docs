@@ -1,7 +1,7 @@
 ---
 title: AI Training - Tutorial - Train YOLOv8 to play to "rock paper scissors" 
 excerpt: Understand how simple it is to train a model using AI Training
-updated: 2023-10-19
+updated: 2023-11-27
 ---
 
 ## Objective
@@ -127,7 +127,7 @@ The push refers to repository [my-registry.gra7.container-registry.ovh.net/rock-
 > [!warning]
 > **Warning**
 > 
-> The shared registry should only be used for testing purposes. Please consider creating and attaching your own registry. More information about this can be found [here](/pages/public_cloud/ai_machine_learning/gi_07_manage_registry).
+> The shared registry should only be used for testing purposes. Please consider creating and attaching your own registry. More information about this can be found [here](/pages/public_cloud/ai_machine_learning/gi_07_manage_registry). The images pushed to this registry are for AI Tools workloads only, and will not be accessible for external uses.
 
 You can find the address of your shared registry by launching this command:
 

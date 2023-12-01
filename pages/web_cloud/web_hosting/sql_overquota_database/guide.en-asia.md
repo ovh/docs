@@ -1,7 +1,7 @@
 ---
 title: "Web hosting: My database is full, what should I do?"
 excerpt: "Find out what to do when your database is saturated"
-updated: 2023-10-26
+updated: 2023-11-30
 ---
 
 ## Objective
@@ -124,7 +124,9 @@ Consult our [Web Cloud Databasess](https://www.ovhcloud.com/asia/web-cloud/datab
 
 We recommend this solution for large databases.
 
-Then follow our guides to move the content from your old database to the new one:
+You can duplicate the content of your OVHcloud database directly to another of your OVHcloud databases, using a feature in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia). To do this, please refer to our guide "[Duplicating the contents of one database to another](/pages/web_cloud/web_hosting/copy_database)".
+
+If you are migrating to a database outside of the [Start SQL](https://www.ovhcloud.com/asia/web-hosting/options/start-sql/) and [Web Cloud Databases](https://www.ovhcloud.com/asia/web-cloud/databases/) solutions, you can manually move the content from your old database to a new one using our guides:
 
 - [Export your existing database](/pages/web_cloud/web_hosting/sql_database_export)
 - [First steps with Web Cloud Databasess](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)
@@ -190,6 +192,8 @@ DROP TABLE `table_1`
 > In this example, the command deletes the table **table_1** and all rows in it.
 
 ## Go further <a name="go-further"></a>
+
+[Duplicating the contents of one database to another](/pages/web_cloud/web_hosting/copy_database)
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/asia/directory/).
 

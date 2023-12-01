@@ -1,7 +1,7 @@
 ---
 title: 'Crear y conectarse a una instancia de Public Cloud'
 excerpt: 'Cómo empezar a utilizar el servicio Public Cloud tras haber creado un proyecto'
-updated: 2023-01-26
+updated: 2023-11-29
 ---
 
 > [!primary]
@@ -219,6 +219,11 @@ Una vez que hay seleccionado las opciones deseadas, haga clic en `Siguiente`{.ac
 ![billing select](images/instance-creation-05-2022.png){.thumbnail}
 
 Le recomendamos que elija la facturación por horas si no está seguro del periodo de uso, ya que no es posible elegirla después de la prestación del servicio. Tendrá la opción de cambiar a una suscripción mensual tan pronto como la instancia esté disponible en la página «Instances».
+
+> [!primary]
+>
+>Tenga en cuenta que si elige una de nuestras instancias *Compute* actuales, solo la opción de facturación **por horas** estará disponible por razones técnicas.
+>
 
 > [!warning]
 >

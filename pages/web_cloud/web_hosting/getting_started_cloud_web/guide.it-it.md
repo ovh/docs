@@ -1,6 +1,6 @@
 ---
-title: Iniziare a utilizzare un hosting Cloud Web
-excerpt: Come eseguire le prime operazioni su un Cloud Web
+title: "Iniziare a utilizzare un hosting Cloud Web"
+excerpt: "Questa guida ti mostra come eseguire le prime operazioni su un Cloud Web"
 updated: 2022-05-04
 ---
 

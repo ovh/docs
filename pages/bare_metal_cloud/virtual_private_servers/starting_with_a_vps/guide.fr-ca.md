@@ -92,7 +92,7 @@ Vous trouverez toutes les informations sur les solutions de sauvegarde disponibl
 
 #### Abonnement
 
-Ces sections présentent les informations les plus importantes concernant la facturation de votre service. Retrouvez toutes les informations sur ce sujet dans la [documentation correspondante](/products/account-and-service-management-billing-payment-and-services).
+Ces sections présentent les informations les plus importantes concernant la facturation de votre service. Retrouvez toutes les informations sur ce sujet dans la [documentation correspondante](/products/account-and-service-management-managing-billing-payments-and-services).
 
 ### Fonctions VPS disponibles dans l’onglet « Accueil »
 
@@ -188,6 +188,10 @@ Veuillez noter que si vous avez sélectionné une **distribution avec applicatio
 > La connexion avec l'utilisateur « root » est désactivée par défaut par mesure de sécurité. Si vous souhaitez autoriser ces connexions, reportez-vous aux instructions de [ce guide](/pages/bare_metal_cloud/virtual_private_servers/root_password#enable-root-login).
 >
 
+#### Mise à jour du mot de passe root
+
+Pour modifier ou mettre à jour votre mot de passe « root », reportez-vous aux instructions de [ce guide](/pages/bare_metal_cloud/virtual_private_servers/root_password).
+
 ### Connexion à votre VPS Windows
 
 Une fois votre VPS Windows installé, vous recevez un e-mail avec le nom de l'utilisateur par défaut `Windows user`.
@@ -215,7 +219,7 @@ Si vous rencontrez des problèmes avec cette procédure, vérifiez que les conne
 
 En tant qu’administrateur de votre VPS, vous êtes responsable de la sécurité des applications et des données qui y sont hébergées.
 
-Reportez-vous à notre guide [Éditer une zone DNS OVHcloud](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps) pour obtenir des conseils essentiels afin de protéger votre système.
+Reportez-vous à notre guide [Sécuriser un VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps) pour obtenir des conseils essentiels afin de protéger votre système.
 
 > [!primary]
 >

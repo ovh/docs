@@ -1,7 +1,7 @@
 ---
 title: 'Tworzenie pierwszej instancji Public Cloud i łączenie się z nią'
 excerpt: 'Dowiedz się, jak rozpocząć korzystanie z usługi Public Cloud po utworzeniu projektu'
-updated: 2023-01-26
+updated: 2023-11-29
 ---
 
 > [!primary]
@@ -219,6 +219,11 @@ Po zastosowaniu wybranych opcji kliknij przycisk `Dalej`{.action}, aby przejść
 ![billing select](images/instance-creation-05-2022.png){.thumbnail}
 
 Zalecamy wybór rozliczenia godzinowego w przypadku braku pewności co do okresu korzystania z usługi, ponieważ nie ma możliwości jego wyboru po jej wykonaniu. Będziesz miał możliwość przejścia na miesięczny abonament, gdy tylko instancja będzie dostępna na stronie "Instances".
+
+> [!primary]
+>
+>Pamiętaj, że w przypadku wybrania jednej z aktualnych instancji *Compute*, opcja płatności **za godzinę** będzie dostępna wyłącznie ze względów technicznych.
+>
 
 > [!warning]
 >
