@@ -1,14 +1,14 @@
 ---
 title: What are the IP addresses of the OVHcloud monitoring?
 excerpt: Find here the IP addresses to fill in when setting up a firewall so that OVHcloud monitoring will continue to work on your server
-updated: 2023-10-12
+updated: 2023-11-30
 ---
 
 ## Objective
 
 The monitoring service allows OVHcloud to monitor the status of your machine and triggers the intervention of a technician in the datacenter (when applicable).
 
-All the servers of our customers and the entire network can be monitored 24/7 by OVHcloud technical teams. In addition, the monitoring system can be customized via the OVHcloud Control Panel. For more information on how to customize it on your services, please consult [this section](#monitoring) of the guide.
+All the servers of our customers and the entire network can be monitored 24/7 by OVHcloud technical teams. In addition, the monitoring system can be customized via the OVHcloud Control Panel. For more information on how to customize it, please consult [this section](#monitoring) of the guide.
 
 If you are implementing a restrictive firewall, especially on ICMP, and have chosen to benefit from the OVHcloud monitoring, it is necessary to authorize the IPs that you will find below.
 
