@@ -1,7 +1,7 @@
 ---
 title: "Suivre et gérer les e-mails automatisés de son hébergement web"
 excerpt: "Découvrez comment suivre et gérer les e-mails automatisés envoyés depuis votre hébergement web OVHcloud"
-updated: 2022-10-12
+updated: 2023-12-01
 ---
 
 ## Objectif
@@ -208,7 +208,7 @@ $mail->Password = "YourEmailPassword";
 
 > [!primary]
 >
-> Si vous utilisez une adresse mail OVHcloud et uniquement dans ce cas, vous pouvez également utiliser le `SMTPSecure` *"starttls"* ou *"tls"* avec le `Port` **587**. Toutefois, le `SMTPSecure` *"ssl"* avec le `Port` **465** restent à privilégier.
+> Si vous utilisez une adresse mail OVHcloud et uniquement dans ce cas, vous pouvez également utiliser le `SMTPSecure` *"starttls"* ou *"tls"* avec le `Port` **587**. Toutefois, le `SMTPSecure` *"ssl"* avec le `Port` **465** restent la configuration à privilégier sur notre infrastructure.
 > 
 
 ## Aller plus loin <a name="go-further"></a>
