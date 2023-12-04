@@ -115,7 +115,7 @@ Selon le logiciel utilisé, il est possible que cette connexion nécessite d'êt
 
 > [!primary]
 >
-> Les bases de données liées à votre hébergement web sont uniquement accessibles via une application/script directement installé sur votre hébergement web ou via l'interface phpMyAdmin.
+> Les bases de données liées à votre hébergement web sont uniquement accessibles via une application ou un script directement installés sur votre hébergement web ou via l'interface phpMyAdmin.
 >
 
 #### Accéder à l’interface phpMyAdmin
