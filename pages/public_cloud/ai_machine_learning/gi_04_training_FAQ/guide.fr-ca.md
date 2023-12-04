@@ -1,5 +1,5 @@
 ---
-title: FAQ - AI training (EN)
+title: FAQ - Produits IA (EN)
 updated: 2023-12-04
 ---
 
