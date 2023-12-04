@@ -1,6 +1,6 @@
 ---
 title: FAQ - AI Tools
-updated: 2023-12-01
+updated: 2023-12-04
 ---
 
 ## Objective
@@ -18,18 +18,19 @@ Here are the most frequently asked questions about `ovhai` CLI & OVHcloud AI Sol
 > > To install the ovhai CLI, you can follow the installation instructions provided by OVHcloud in the official [ovhai installation documentation](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli).
 > >
 > When I try to use the ovhai CLI, I get a `AI Training error: not authenticated` error.
-> > After completing the ovhai CLI installation, remember to connect to your Public Cloud project user. This will enable you to manage the notebooks, jobs, and apps associated with this user. To log in, run the command `ovhai login` and enter the credentials of your public cloud project user.
+> > After completing the ovhai CLI installation, remember to connect to your Public Cloud project user. This will enable you to manage the notebooks, jobs, and apps associated with this user. To log in, run the command `ovhai login` and enter the credentials of your Public Cloud project user.
 > >
-> I can't login with `--token` parameter inside ovhai CLI
+> I can't login with the `--token` parameter inside ovhai CLI
 > > You will have to use `ovhai login` with your user credentials to authenticate yourself. The `--token` parameter has been created for AI Solutions usage (e.g. authentification to an app).
 > >
 > I would like to perform an action with the ovhai CLI, but I do not know the associated command. What can I do?
-> > You can use the `-h` or `--help` flag after the command. This will provide you with a list of possible commands and their usage instructions (available options, arguments, …). The basic command is: `ovhai -h`. Additionally, you can refer to the [ovhai CLI cheat sheet](https://help.ovhcloud.com/csm/en-gb-public-cloud-ai-cheat-sheet?id=kb_article_view&sysparm_article=KB0048221) for a comprehensive overview of available commands.
+> > You can use the `-h` or `--help` flag after the command. This will provide you with a list of possible commands and their usage instructions (available options, arguments, …). The basic command is: `ovhai -h`. Additionally, you can refer to the [ovhai CLI cheat sheet](/pages/public_cloud/ai_machine_learning/gi_05_ovhai_cheatsheet) for a comprehensive overview of available commands.
 > 
 > **AI Solutions (AI Notebooks, AI Training, AI Deploy)**
 > >
 > What flavors are available?
 > > Currently, the available hardware for AI Tools is:
+> >
 > > - `CPU`: Intel CPU vCores
 > > - `GPU`:  NVIDIA V100S, NVIDIA A100
 > >
@@ -40,6 +41,7 @@ Here are the most frequently asked questions about `ovhai` CLI & OVHcloud AI Sol
 > How many resources can I use when working with OVHcloud AI Tools?
 > > Each Public Cloud project grants a customer by default a maximum number of GPUs used simultaneously. Reach out to our support if you need to increase this limitation.
 > > For your information, the current limits are:
+> >
 > > - `CPU`: 12 per notebook / job / app
 > > - `GPU`: 4 for V100S, and 2 for A100
 > >
@@ -47,7 +49,7 @@ Here are the most frequently asked questions about `ovhai` CLI & OVHcloud AI Sol
 > > Each tool provides local storage. However, it is limited and not the recommended way to handle data. Indeed, if you delete your notebook, job or app, all files contained in this local storage will be lost. A better practice is to attach Object Storage containers.
 > >
 > How to attach and use storage?
-> > See this [OVHcloud documentation](/pages/public_cloud/ai_machine_learning/gi_02_concepts_data) on data for more information. You can also check the [S3 compliance documentation](/pages/public_cloud/ai_machine_learning/gi_08_s3_compliance) if you are interested in S3 buckets.
+> > Read this [OVHcloud documentation](/pages/public_cloud/ai_machine_learning/gi_02_concepts_data) on data for more information. You can also check the [S3 compliance documentation](/pages/public_cloud/ai_machine_learning/gi_08_s3_compliance) if you are interested in S3 buckets.
 > >
 > Is there an expected format for data to upload?
 > > You can upload any file or directory to the OVHcloud Object Storage without any format constraints.
@@ -104,6 +106,7 @@ Here are the most frequently asked questions about `ovhai` CLI & OVHcloud AI Sol
 > > This way, your AI Tool HTTP link will not require authentication to be accessed.
 > >
 > Do OVHcloud AI Solutions support Public and Private networking?
+>>
 > > - Public networking can be used for all the AI Tools.
 > > - Private networking (OVHcloud vRack) is not supported.
 > >
@@ -114,7 +117,7 @@ Here are the most frequently asked questions about `ovhai` CLI & OVHcloud AI Sol
 > >
 > > Concerning jobs and apps, you can map them to only one port. Each of these has a public URL. By default, this URL accesses the port 8080 of your job or app. This default port can be configured when you submit your job or your app.
 > >
-> > As for AI Notebooks, you can also access other ports by appending them to the URL. For example, your default Job URL,starting with the job's ID and which accesses the default port is `https://00000000-0000-0000-0000-000000000000.job.gra.ai.cloud.ovh.net`. If you want to access the port 9000, you will have to append the port number to your job's URL: `https://00000000-0000-0000-0000-000000000000-9000.job.gra.ai.cloud.ovh.net`
+> > As for AI Notebooks, you can also access other ports by appending them to the URL. For example, your default Job URL, starting with the job's ID and which accesses the default port is `https://00000000-0000-0000-0000-000000000000.job.gra.ai.cloud.ovh.net`. If you want to access the port 9000, you will have to append the port number to your job's URL: `https://00000000-0000-0000-0000-000000000000-9000.job.gra.ai.cloud.ovh.net`
 > >
 > Do AI solutions allow the use of the gRPC protocol?
 > > Although not available with AI Notebooks, you can use gRPC on your AI Training jobs and AI Deploy apps. 
