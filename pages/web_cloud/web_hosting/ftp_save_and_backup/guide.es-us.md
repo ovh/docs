@@ -167,11 +167,25 @@ Una vez que se haya conectado, deberá descargar los archivos que quiera restaur
 
 Antes de continuar en el siguiente paso, asegúrese de haber descargado todos los archivos que quiera restaurar y desconéctese del espacio de almacenamiento.
 
+> [!success]
+>
+> Si utiliza la interfaz del **FTP Explorer**, no dude en consultar la [página de ayuda](https://net2ftp.cluster020.hosting.ovh.net/help.html){.external} para realizar correctamente la recuperación de sus archivos. Esta página también está disponible a través del botón `Help Guide`{.action} situado en la parte inferior de la interfaz de conexión al **FTP Explorer**.
+>
+> Si utiliza otro programa para conectarse a su espacio de almacenamiento FTP, le recomendamos que consulte la documentación oficial de su programa para realizar las operaciones correctamente.
+>
+
 #### 4. Restaurar los archivos 
 
 Una vez que haya descargado los archivos, vuelva a conectarse al espacio de almacenamiento, pero esta vez sin añadir ningún sufijo al usuario FTP. Así se conectará al contenido actual del espacio de almacenamiento y no a una copia de seguridad anterior.
 
 Una vez que se haya conectado, solo tiene que restaurar los archivos que desee. Para ello, navegue por el contenido del espacio de almacenamiento hasta localizar los archivos que quiera remplazar y sustitúyalos por los archivos descargados en el paso anterior.
+
+> [!success]
+>
+> Si utiliza la interfaz del **FTP explorer**, no dude en consultar la [página de ayuda](https://net2ftp.cluster020.hosting.ovh.net/help.html){.external} para restaurar correctamente los archivos. Esta página también está disponible a través del botón `Help Guide`{.action} situado en la parte inferior de la interfaz de conexión al **FTP Explorer**.
+>
+> Si utiliza otro programa para conectarse a su espacio de almacenamiento FTP, le recomendamos que consulte la documentación oficial de su programa para realizar las operaciones correctamente.
+>
 
 ## Más información
 
