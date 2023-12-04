@@ -117,6 +117,11 @@ Tutte le informazioni di connessione al database sono disponibili nella tabella.
 
 In base al software utilizzato, è possibile che questa connessione richieda una configurazione manuale o un’interfaccia generata dall’interfaccia di configurazione (backend) del sito Web. Dato che questa procedura riguarda la configurazione del sito Web e non l’hosting OVHcloud, consigliamo di consultare le risorse disponibili online o ricorrere a un [provider specializzato](https://partner.ovhcloud.com/it/directory/).
 
+> [!primary]
+>
+> I database associati all’hosting Web sono accessibili esclusivamente tramite un’applicazione o uno script installato direttamente sul tuo hosting Web o tramite l’interfaccia phpMyAdmin.
+>
+
 #### Accedi all'interfaccia phpMyAdmin
 
 OVHcloud fornisce uno strumento online per la gestione dei database, "phpMyAdmin". Per trovare il link di accesso a questa applicazione, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e clicca sulla sezione `Web Cloud`{.action}. Clicca su `Hosting`{.action} nella colonna a sinistra, scegli l’offerta di hosting su cui vuoi recuperare le informazioni di connessione al tuo database e poi clicca sulla scheda `Database`{.action}. Nella tabella che appare, clicca sul pulsante `...`{.action} a destra del database interessato e poi su `Accedi a phpMyAdmin`{.action} nel menu a tendina.
