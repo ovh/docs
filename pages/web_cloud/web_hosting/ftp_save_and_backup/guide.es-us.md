@@ -1,7 +1,7 @@
 ---
 title: "Restaurar el espacio de almacenamiento de un alojamiento web"
 excerpt: "Descubra cómo restaurar un archivo o el espacio de almacenamiento completo de un alojamiento web"
-updated: 2023-01-12
+updated: 2023-12-04
 ---
 
 > [!primary]

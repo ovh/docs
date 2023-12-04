@@ -1,7 +1,7 @@
 ---
 title: "Restaurar o espaço de armazenamento do alojamento web"
 excerpt: "Saiba como restaurar um ficheiro ou a totalidade do espaço de armazenamento do seu alojamento web"
-updated: 2023-01-12
+updated: 2023-12-04
 ---
 
 > [!primary]
