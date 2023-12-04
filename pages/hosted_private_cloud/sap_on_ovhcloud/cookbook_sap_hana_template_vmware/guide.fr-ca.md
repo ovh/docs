@@ -62,9 +62,9 @@ Une fois les sources SAP HANA déposées dans votre bucket Object Storage S3, vo
 2. Entrez l'URL suivante pour atteindre notre template OVF pour SAP HANA, puis cliquez sur `Next`{.action}.
     <a name="ovf_link"></a>  
 
-    ```console
-    https://templates-pcc-for-hana.s3.sbg.perf.cloud.ovh.net/sles4sap-sap-hana-SLE-15-SP4-Full-x86_64/sles4sap-sap-hana-SLE-15-SP4-Full-x86_64.ovf
-    ```
+```console
+https://templates-pcc-for-hana.s3.sbg.perf.cloud.ovh.net/sles4sap-sap-hana-SLE-15-SP4-Full-x86_64/sles4sap-sap-hana-SLE-15-SP4-Full-x86_64.ovf
+```
 
     ![deploy-from-template](images/step-2.png){.thumbnail}
 
@@ -186,7 +186,8 @@ Le template OVF créé par OVHcloud prend en compte de nombreux paramètres. Cep
     | Efficacité de l'utilisation de l'espace    | Déduplication et compression      |
     | Niveau de stockage                         | Intégralement Flash               |
 
-    Cette stratégie de stockage VM est à appliquer pour les disques hébergeant les volumes /hana/shared (Hard disk 3), /hana/data (Hard disk 4) et /hana/log (Hard disk 5) de votre machine virtuelle.
+    Cette stratégie de stockage VM est à appliquer pour les disques hébergeant les volumes /hana/shared (Hard disk 3),
+    /hana/data (Hard disk 4) et /hana/log (Hard disk 5) de votre machine virtuelle.
 
 6. Vous pouvez à présent démarrer votre machine virtuelle.
 
@@ -200,9 +201,9 @@ Nous vous recommandons de réaliser ces actions avant la mise en production de v
 
 1. Enregistrez votre système d'exploitation SUSE Linux Enterprise Server for SAP Applications et récupérez les dernières mises à jour en exécutant la commande suivante :
 
-    ```bash
-    zypper update -y
-    ```
+```bash
+zypper update -y
+```
 
 2. Installez la licence de votre base de données SAP HANA.
 
@@ -214,22 +215,22 @@ Nous vous recommandons de réaliser ces actions avant la mise en production de v
 
     Sur SLES, éditez le fichier /etc/chrony.conf et ajoutez les adresses IP des serveurs de temps :
 
-    ```console
-    # Allow NTP client access from local network.
-    # Use public servers from the pool.ntp.org project.
-    # Please consider joining the pool (https://www.pool.ntp.org/join.html).
-    server {ip-ntp-server1}
-    server {ip-ntp-server2}
-    server {ip-ntp-server3}
-    server {ip-ntp-server4}
-    ```
+```console
+# Allow NTP client access from local network.
+# Use public servers from the pool.ntp.org project.
+# Please consider joining the pool (https://www.pool.ntp.org/join.html).
+server {ip-ntp-server1}
+server {ip-ntp-server2}
+server {ip-ntp-server3}
+server {ip-ntp-server4}
+```
 
-    Il vous suffit de démarrer le service et de l'activer pour les prochains démarrages :
+Il vous suffit de démarrer le service et de l'activer pour les prochains démarrages :
 
-    ```bash
-    systemctl start chronyd.service
-    systemctl enable chronyd.service
-    ```
+```bash
+systemctl start chronyd.service
+systemctl enable chronyd.service
+```
 
 ## Aller plus loin
 

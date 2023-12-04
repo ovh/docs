@@ -62,9 +62,9 @@ Once the SAP HANA sources have been uploaded in your S3 Object Storage bucket, y
 2. Set the following URL to reach the OVF template for SAP HANA, then click on `Next`{.action}.
     <a name="ovf_link"></a>
 
-    ```console
-    https://templates-pcc-for-hana.s3.sbg.perf.cloud.ovh.net/sles4sap-sap-hana-SLE-15-SP4-Full-x86_64/sles4sap-sap-hana-SLE-15-SP4-Full-x86_64.ovf
-    ```
+```console
+https://templates-pcc-for-hana.s3.sbg.perf.cloud.ovh.net/sles4sap-sap-hana-SLE-15-SP4-Full-x86_64/sles4sap-sap-hana-SLE-15-SP4-Full-x86_64.ovf
+```
 
     ![deploy-from-template](images/step-2.png){.thumbnail}
 
@@ -186,7 +186,8 @@ The OVF template created by OVHcloud takes in charge many parameters. However, s
     | Space efficiency                  | Deduplication and compression  |
     | Storage tier                      | All flash                      |
 
-    This VM Storage Policy must be applied on disks which host /hana/shared (Hard disk 3), /hana/data (Hard disk 4) and /hana/log (Hard disk 5) volumes of your virtual machine.
+    This VM Storage Policy must be applied on disks which host /hana/shared (Hard disk 3), /hana/data (Hard disk 4)
+    and /hana/log (Hard disk 5) volumes of your virtual machine.
 
 6. You can now start your virtual machine.
 
@@ -200,9 +201,9 @@ We suggest you perform the following actions before putting your SAP HANA databa
 
 1. Register your SUSE Linux Enterprise Server for SAP Applications operating system and get the latest updates with the command:
 
-    ```bash
-    zypper update -y
-    ```
+```bash
+zypper update -y
+```
 
 2. Install your SAP HANA licence.
 
@@ -214,22 +215,22 @@ We suggest you perform the following actions before putting your SAP HANA databa
 
     On SLES, edit the /etc/chrony.conf file and add the IP address of NTP servers:
 
-    ```console
-    # Allow NTP client access from local network.
-    # Use public servers from the pool.ntp.org project.
-    # Please consider joining the pool (https://www.pool.ntp.org/join.html).
-    server {ip-ntp-server1}
-    server {ip-ntp-server2}
-    server {ip-ntp-server3}
-    server {ip-ntp-server4}
-    ```
+```console
+# Allow NTP client access from local network.
+# Use public servers from the pool.ntp.org project.
+# Please consider joining the pool (https://www.pool.ntp.org/join.html).
+server {ip-ntp-server1}
+server {ip-ntp-server2}
+server {ip-ntp-server3}
+server {ip-ntp-server4}
+```
 
-    Just start and enable this service for next startup:
+Just start and enable this service for next startup:
 
-    ```bash
-    systemctl start chronyd.service
-    systemctl enable chronyd.service
-    ```
+```bash
+systemctl start chronyd.service
+systemctl enable chronyd.service
+```
 
 ## Go further
 
