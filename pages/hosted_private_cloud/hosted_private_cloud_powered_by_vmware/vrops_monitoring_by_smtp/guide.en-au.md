@@ -11,13 +11,16 @@ updated: 2023-12-04
 ## Requirements
 
 - A working SMTP server
-- STMP *flows* allowed between your servers
+- STMP flows allowed between  your SMTP server and your vROps instance
 
 ## Instructions
 
 ### Open the flow
 
 The first step is to open a *flow* on the OVHcloud API to enable vROps to communicate with your SMTP server.
+
+You can check that the flow has been opened using this [endpoint](https://api.ovh.com/console/#/dedicatedCloud/%7BserviceName%7D/vrops/outgoingFlow/%7BoutgoingFlowId%7D~GET).
+
 To do this, use the following API call :
 
 > [!api]
@@ -78,7 +81,7 @@ A series of options will appear, just fill in the fields.
 
 You can test your configuration using the `Test`{.action} button at the bottom of the page.
 
-Once completed, you should find your alert in the previous summary.
+Once these operations are complete, you will find the details of your alert configuration in the previous summary.
 
 Finally, check that your alert is working properly by verifying that the emails are being received correctly.
 
