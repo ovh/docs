@@ -1,7 +1,7 @@
 ---
 title: AI Deploy - Tutorial - Create and deploy a Speech to Text application using Streamlit
 excerpt: How to create and deploy a Streamlit Application for Speech To Text 
-updated: 2023-04-04
+updated: 2023-11-27
 ---
 
 > [!primary]
@@ -142,7 +142,7 @@ docker build . -t streamlit_app:latest
 
 > [!warning]
 >
-> The shared registry should only be used for testing purposes. Please consider creating and attaching your own registry. More information about this can be found [here](/pages/public_cloud/ai_machine_learning/gi_07_manage_registry).
+> The shared registry should only be used for testing purposes. Please consider creating and attaching your own registry. More information about this can be found [here](/pages/public_cloud/ai_machine_learning/gi_07_manage_registry). The images pushed to this registry are for AI Tools workloads only, and will not be accessible for external uses.
 >
 
 Find the address of your shared registry by launching this command:

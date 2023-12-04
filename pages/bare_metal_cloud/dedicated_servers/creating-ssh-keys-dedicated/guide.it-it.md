@@ -201,6 +201,46 @@ Per saperne di più sulle connessioni SSH, consulta le guide di [primi passi](#g
 
 ### Aggiungere chiavi SSH al tuo server <a name="addserverkey"></a>
 
+#### Trasferimento di chiavi pubbliche create su sistemi basati su GNU/Linux, MacOS o BSD
+
+Se hai creato le coppie di chiavi SSH su un sistema basato su GNU/Linux, MacOS o BSD, puoi utilizzare il comando `ssh-copy-id` per aggiungere le chiavi pubbliche al tuo server.
+
+L'utilità `ssh-copy-id` copia le chiavi pubbliche nel file `~/.ssh/authorized_keys` sul server remoto specificato e crea automaticamente il file in questa directory, se necessario.
+
+```bash
+ssh-copy-id user@IP_ADDRESS
+```
+
+Di default, `ssh-copy-id` tenterà di trasferire tutte le chiavi pubbliche nella directory `~/.ssh` dell’utente locale. Tuttavia, se è necessario aggiungere una sola chiave pubblica, è possibile specificare il file di chiave con l'opzione `-i` seguita dal percorso del file:
+
+```bash
+ssh-copy-id -i ~/.ssh/KeyFileName user@IP_ADDRESS
+```
+
+Esempio:
+
+```bash
+ssh-copy-id -i ~/.ssh/VPS_rsa.pub ubuntu@169.254.10.250
+```
+
+Ti verrà chiesto di inserire la password associata all’utente e riceverai un messaggio simile a quello riportato di seguito.
+
+```console
+Number of key added: 1
+
+Now try logging into the machine, with: "ssh 'user@server-ip'"
+and check to make sure that only the key(s) you wanted were added.
+```
+
+Se viene visualizzato un messaggio di errore, è possibile aggiungere manualmente le chiavi pubbliche eseguendo la procedura seguente.
+
+> [!primary]
+>
+> Per motivi di sicurezza, è consigliabile evitare l'utilizzo di una singola coppia di chiavi da parte di più utenti. Poiché ciascun utente su sistemi GNU/Linux dispone del proprio file `authorized_keys` in `~/.ssh/`, è possibile utilizzare il comando `ssh-copy-id` come mostrato sopra e adattare `KeyFileName` e `user` dopo [aver creato la coppia di chiavi](#openssh).
+>
+
+#### Aggiunta manuale di chiavi pubbliche a un server
+
 [Accedi](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction) al server e assicurati di trovarti nella directory `$HOME` dell’utente. Se non esiste già, crea la cartella `.ssh`:
 
 ```bash

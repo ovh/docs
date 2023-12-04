@@ -1,7 +1,7 @@
 ---
 title: 'Configuring a network bridge'
 excerpt: 'Find out how to configure your virtual machines for access to the public internet'
-updated: 2022-12-20
+updated: 2023-11-24
 ---
 
 > [!primary]
@@ -71,6 +71,27 @@ To configure your virtual machines for internet access, you will need to know th
 Your gateway address would therefore be:
 
 - 169.254.10.**254**
+
+You can also retrieve the gateway via the [OVHcloud Control Panel](#viacontrolpanel) or the [OVHcloud API](#viaapi).
+
+#### Via the OVHcloud Control Panel <a name="viacontrolpanel"></a>
+
+Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we), go to the `Bare Metal Cloud`{.action} section and select your server from `Dedicated servers`{.action}.
+
+The IPv4 gateway assigned to your server will appear in the `Network` section of the `General Information`{.action} tab. Once you have copied it, continue with applying the configuration.
+
+![gateway](images/ipv4_information.png){.thumbnail}
+
+#### Via the OVHcloud API <a name="viaapi"></a>
+
+On the [OVHcloud API page](https://ca.api.ovh.com/console/), click on `Login`{.action} in the top right-hand corner. On the next page, enter your OVHcloud credentials.
+
+Execute the following API call, indicating the internal server name (example: `ns3956771.ip-169-254-10.eu`):
+
+> [!api]
+>
+> @api {v1} /dedicated/server GET /dedicated/server/{serviceName}/specifications/network
+>
 
 ###  Step 3: Prepare the host
 

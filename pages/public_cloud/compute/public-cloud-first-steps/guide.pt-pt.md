@@ -1,7 +1,7 @@
 ---
 title: 'Criação e conexão a uma primeira instância Public Cloud'
 excerpt: 'Saiba como dar os primeiros passos com o serviço Public Cloud depois da criação de um projeto'
-updated: 2023-01-26
+updated: 2023-11-29
 ---
 
 > [!primary]
@@ -219,6 +219,11 @@ Quando tiver concluído, clique em `Seguinte`{.action} para avançar para o últ
 ![billing select](images/instance-creation-05-2022.png){.thumbnail}
 
 Recomendamos que escolha a facturação horária se não tiver a certeza do período de utilização, uma vez que não é possível escolhê-la depois de o serviço ter sido entregue. Terá a opção de mudar para uma assinatura mensal assim que a instância estiver disponível na página "Instances"
+
+> [!primary]
+>
+>Tenha em conta que se escolher uma das nossas instâncias *Compute* atuais, apenas a opção de faturação **à hora** estará disponível por razões técnicas.
+>
 
 > [!warning]
 >

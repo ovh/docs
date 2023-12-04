@@ -1,7 +1,7 @@
 ---
 title: AI Training - Tutorial - Get started with NVIDIA Triton Inference Server and AI Training
 excerpt: How to use optimally AI models with NVIDIA Triton Inference Server and AI Training
-updated: 2023-11-06
+updated: 2023-11-27
 ---
 
 ## Objective
@@ -277,7 +277,7 @@ docker build . -t triton-inference-server:23.03-py3
 
 > [!warning]
 >
-> The shared registry of AI Training should only be used for testing purposes. Please consider attaching your own registry. More information about this can be found [here](/pages/public_cloud/ai_machine_learning/training_guide_05_howto_add_registry).
+> The shared registry of AI Training should only be used for testing purposes. Please consider attaching your own registry. More information about this can be found [here](/pages/public_cloud/ai_machine_learning/training_guide_05_howto_add_registry). The images pushed to this registry are for AI Tools workloads only, and will not be accessible for external uses.
 >
 
 Find the address of your shared registry by launching this command:

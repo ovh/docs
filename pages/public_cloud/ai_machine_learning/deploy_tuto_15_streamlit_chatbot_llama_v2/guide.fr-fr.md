@@ -1,7 +1,7 @@
 ---
 title: AI Deploy - Tutoriel - Déployer LLaMA 2 dans une application Streamlit (EN)
 excerpt: Comment construire et déployer un chatbot avec LLaMA 2 et Streamlit
-updated: 2023-09-19
+updated: 2023-11-27
 ---
 
 On July 18, 2023, [Meta](https://about.meta.com/) released [LLaMA 2](https://ai.meta.com/llama/), the latest version of their open-source Large Language Model (LLM).
@@ -142,7 +142,7 @@ Once started, your application should be available on `http://localhost:8501`.
 
 > [!warning]
 > **Warning**
-> The shared registry should only be used for testing purposes. Please consider creating and attaching your own registry. More information about this can be found [here](/pages/public_cloud/ai_machine_learning/gi_07_manage_registry).
+> The shared registry should only be used for testing purposes. Please consider creating and attaching your own registry. More information about this can be found [here](/pages/public_cloud/ai_machine_learning/gi_07_manage_registry). The images pushed to this registry are for AI Tools workloads only, and will not be accessible for external uses.
 
 Find the address of your shared registry by launching this command:
 

@@ -8,12 +8,12 @@ updated: 2023-11-16
 
 Dans ce guide, vous apprendrez à transformer vos événements de compte client OVHcloud en données exploitables grâce à Logs Data Platform, une solution entièrement gérée qui vous aide à stocker, archiver, interroger et visualiser vos logs.
 
-Pour découvrir Logs Data Platform avant de poursuivre ce guide, référez-vous à [cette documentation](/pages/manage_and_operation/observability/logs_data_platform/getting_started_introduction_to_LDP).
+Pour découvrir Logs Data Platform avant de poursuivre ce guide, référez-vous à [cette documentation](/pages/manage_and_operate/observability/logs_data_platform/getting_started_introduction_to_LDP).
 
 ## Prérequis
 
 - Disposer d'un [compte client OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-creation).
-- Disposer d'un compte Logs Data Platform (LDP) au sein de votre compte OVHcloud avec au moins un flux actif configuré. [Ce guide](/pages/manage_and_operation/observability/logs_data_platform/getting_started_quick_start) vous guidera dans toutes les étapes nécessaires.
+- Disposer d'un compte Logs Data Platform (LDP) au sein de votre compte OVHcloud avec au moins un flux actif configuré. [Ce guide](/pages/manage_and_operate/observability/logs_data_platform/getting_started_quick_start) vous guidera dans toutes les étapes nécessaires.
 
 ## Glossaire
 

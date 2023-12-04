@@ -1,7 +1,7 @@
 ---
 title: AI Training - Tutorial - Train a PyTorch model and export it to ONNX
 excerpt: How to train and export an image classification model to ONNX using AI Training
-updated: 2023-09-08
+updated: 2023-11-27
 ---
 
 ## Objective
@@ -299,7 +299,7 @@ docker build . -t train-cnn-model-export-onnx:latest
 
 > [!warning]
 >
-> The shared registry of AI Deploy should only be used for testing purposes. Please consider attaching your own docker registry. More information about this can be found [here](/pages/public_cloud/ai_machine_learning/gi_07_manage_registry).
+> The shared registry of AI Deploy should only be used for testing purposes. Please consider attaching your own docker registry. More information about this can be found [here](/pages/public_cloud/ai_machine_learning/gi_07_manage_registry). The images pushed to this registry are for AI Tools workloads only, and will not be accessible for external uses.
 >
 
 Find the address of your shared registry by launching this command:

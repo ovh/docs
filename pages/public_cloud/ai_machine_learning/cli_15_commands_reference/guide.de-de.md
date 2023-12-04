@@ -1,7 +1,7 @@
 ---
 title: CLI - Commands reference
 excerpt: Learn how to use the CLI to interact with AI Training
-updated: 2023-05-11
+updated: 2023-11-27
 ---
 
 ## Objective
@@ -182,7 +182,7 @@ By default, you have access to public registries, and a shared registry scoped t
 
 > [!warning]
 >
-> This shared registry can help you perform your tests, but should not be used in production, as we reserve the right to delete its content if deemed necessary.
+> This shared registry can help you perform your tests, but should not be used in production, as we reserve the right to delete its content if deemed necessary. The images pushed to this registry are for AI Tools workloads only, and will not be accessible for external uses.
 >
 
 This is why it can be interesting to add and manage other registries. To add a private registry, use:

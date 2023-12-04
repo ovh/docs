@@ -1,7 +1,7 @@
 ---
 title: 'Mode bridge IP'
 excerpt: 'Apprenez à utiliser le mode bridge pour configurer l’accès à Internet de vos machines virtuelles'
-updated: 2022-12-20
+updated: 2023-11-24
 ---
 
 > [!primary]
@@ -62,15 +62,36 @@ Sélectionnez « ovh » dans la liste déroulante « Type », tapez un nom dan
 
 ![Ajouter une MAC virtuelle (2)](images/addvmac2.png){.thumbnail}
 
-### Déterminer l'adresse de la passerelle
+### Déterminer l'adresse de la passerelle (gateway)
 
 Pour configurer vos machines virtuelles pour l'accès à Internet, vous devez connaître la passerelle de votre machine hôte, c’est-à-dire, votre serveur dédié. L'adresse de la passerelle est constituée des trois premiers octets de l'adresse IP principale de votre serveur, le dernier octet étant de 254. Par exemple, si l’adresse IP principale de votre serveur est :
 
-- 169.254.10.020
+- 169.254.10.20
 
 Votre adresse de passerelle sera alors :
 
 - 169.254.10.254
+
+Vous pouvez également récupérer la passerelle via [votre espace client](#viacontrolpanel) ou l’[API OVHcloud](#viaapi).
+
+#### Via votre espace client <a name="viacontrolpanel"></a>
+
+Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), rendez-vous dans la section `Bare Metal Cloud`{.action} et sélectionnez votre serveur sous la partie `Serveur dédies`{.action}.
+
+La gateway IPv4 assignée à votre serveur est affichée dans la section `Réseau` de l'onglet `Informations générales`{.action}. Une fois copié, poursuivez l'application de la configuration.
+
+![gateway](images/ipv4_information.png){.thumbnail}
+
+#### Via les API OVHcloud <a name="viaapi"></a>
+
+Sur la [page API OVHcloud](https://api.ovh.com/console/), cliquez en haut à droite sur `Login`{.action}. Sur la page suivante, saisissez votre identifiant client OVHcloud.
+
+Exécutez l'appel API suivant, en indiquant le nom interne du serveur (exemple : `ns3956771.ip-169-254-10.eu`) :
+
+> [!api]
+>
+> @api {v1} /dedicated/server GET /dedicated/server/{serviceName}/specifications/network
+>
 
 ### Préparer l'hôte
 
