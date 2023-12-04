@@ -2,19 +2,18 @@
 title: Mise en route de votre vSphere SecNumCloud
 excerpt: Découvrez comment prendre en main et configurer votre environnement vSphere SecNumCloud
 hidden: true
-updated: 2021-11-23
+updated: 2023-11-24
 ---
 
 ## Objectif
 
-A la suite de la livraison de votre environnement vSphere SecNumCloud, vous devez configurer les accès à celui-ci
-tout en maintenant le niveau de sécurité.
+A la suite de la livraison de votre environnement vSphere SecNumCloud, vous devez configurer les accès à celui-ci tout en maintenant le niveau de sécurité.
 
 **Ce guide vous explique étape par étape les actions à effectuer.**
 
 ## Prérequis
 
-* Posséder une offre [Hosted Private Cloud SecNumCloud](https://www.ovh.com/fr/private-cloud/){.external}.
+* Posséder une offre [Hosted Private Cloud SecNumCvbloud](https://www.ovh.com/fr/private-cloud/){.external}.
 * Être connecté à [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 * Être connecté aux [API OVHCloud](https://api.ovh.com/){.external}.
 * Avoir [créé ses identifiants pour l'API OVHCloud](/pages/manage_and_operate/api/first-steps){.external}.
@@ -134,7 +133,7 @@ La mise en place d'un VPN est nécessaire pour vous permettre de vous connecter 
 
 Le guide suivant vous décrit comment effectuer cette manipulation :
 
-* [Configurer un VPN IPSec via une Gateway Edge](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx_configurer_un_vpn_via_une_gateway_edge#ipsec-vpn)
+* [Configurer un VPN IPSec via NSX](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx-12-configure-ipsec)
 
 ### Etape 4 : activer la private gateway
 
@@ -152,11 +151,11 @@ Nous passons ensuite à la mise en place du chiffrement pour les machines virtue
 
 Le prérequis est d'avoir un KMS compatible avec la solution VMware vSphere.
 
-Le guide suivant vous décrit comment déployer la solution KMS Thales :
+Le guide suivant vous décrit comment déployer la solution VMware vNKP :
 
-* [Mise en route du KMS CipherTrust Manager](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/kms_cipher_trust)
+* [Configuration de la solution VMware vNKP](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vm-encrypt-vnkp)
 
-Configurez alors le KMS dans vSphere en vous aidant du guide suivant :
+Si vous utilisez un outil tierce de chiffrement KMS, ce guide vous decrit comment configurer le KMS dans vSphere :
 
 * [Activation du chiffrement des machines virtuelles (VM Encryption)](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vm_encrypt)
 
