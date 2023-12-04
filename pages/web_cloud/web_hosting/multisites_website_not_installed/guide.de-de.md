@@ -1,6 +1,6 @@
 ---
 title: 'Fehler "Seite nicht installiert" beheben'
-excerpt: 'Diese Anleitung erklärt, wie Sie den Fehler "Seite nicht installiert" beheben'
+excerpt: 'Erfahren Sie hier, wie Sie den Fehler "Seite nicht installiert" beheben'
 updated: 2023-11-24
 ---
 
@@ -14,19 +14,19 @@ Möglicherweise wird in Ihrem Webbrowser die Fehlerseite **Seite nicht installie
 
 ![website not installed](images/site-not-installed2021.png){.thumbnail}
 
-**Diese Anleitung erklärt, wie Sie so identifizieren und beheben Sie die Fehlerseite „Seite nicht installiert“**
+**Diese Anleitung erklärt, wie Sie die Ursachen dieses Fehlers ermitteln und beheben.**
 
 > [!warning]
+> OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
+> 
+> Diese Anleitung soll Sie bei allgemeinen Aufgaben bestmöglich unterstützen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren oder Ihre Fragen an die [OVHcloud Community](https://community.ovh.com/en/) zu richten. Leider können wir Ihnen für administrative Aufgaben keine weitergehende technische Unterstützung anbieten. Weitere Informationen finden Sie am [Ende dieser Anleitung](#go-further).
 >
-> OVHcloud stellt Ihnen Dienste zur Verfügung, für deren Konfiguration, Verwaltung und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit in Ihrer Verantwortung, sicherzustellen, dass diese ordnungsgemäß funktionieren.
->
-> Wir stellen Ihnen diese Anleitung zur Verfügung, um Sie bei gängigen Aufgaben bestmöglich zu begleiten. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) und/oder den Herausgeber des Dienstes zu kontaktieren. Für externe Dienstleistungen bieten wir leider keine Unterstützung. Weitere Informationen finden Sie im Abschnitt „[Weiterführende Informationen](#go-further)“ in dieser Anleitung.
 
 ## Voraussetzungen
 
-- Sie verfügen über ein [Shared Hosting Angebot](https://www.ovhcloud.com/de/web-hosting/)
-- Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) eingeloggt
-- Sie haben auch die Verwaltung der [DNS Zone](/pages/web_cloud/domains/dns_zone_edit), mit der Ihre Domain verbunden ist.
+- Sie haben ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) in Ihrem Kunden-Account.
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie verfügen über die erforderlichen Berechtigungen zum Verwalten der [DNS-Zone](/pages/web_cloud/domains/dns_zone_edit) des Domainnamens.
 
 ## In der praktischen Anwendung
 
@@ -34,7 +34,7 @@ Die Seite **Seite nicht installiert** wird aus zwei Gründen angezeigt:
 
 - 1: [Ihr Domainname oder Ihre Subdomain ist auf Ihrem Webhosting nicht korrekt deklariert](#check-multisites).
 
-- 2: [Ihr Domainname zeigt nicht auf die IP-Adresse Ihres Webhosting Angebots.](#check-dns-domain)
+- 2: [Ihr Domainname zeigt nicht auf die IP-Adresse Ihres Webhostings](#check-dns-domain).
 
 Mit den folgenden Schritten können Sie in beiden Fällen den Fehler `Seite nicht installiert` beheben.
 
@@ -46,13 +46,13 @@ Wählen Sie das betreffende Webhosting aus der Liste aus und klicken Sie dann au
 
 |Szenario|Auszuführende Aktion|
 |---|---|
-|Der Domainname bzw. die Subdomain Ihrer Website wird in der Tabelle „Multisite“ angezeigt.|Wenn Sie die Domain bzw. Subdomain im Bereich `Multisite`{.action} Ihres Webhostings hinzugefügt haben, warten Sie bitte eine Minute **20 Minuten** und laden Sie den Cache Ihres Webbrowsers neu. Wenn weiterhin die Meldung „Seite nicht installiert“ angezeigt wird, fahren Sie mit [Schritt 2](#check-dns-domain) fort.|
-|Der Domainname oder die Subdomain, die mit Ihrer Website verbunden ist, wird nicht in der Tabelle „Multisite“ angezeigt.|Fügen Sie Ihren Domainnamen/Ihre Subdomain im Bereich `Multisite`{.action} hinzu, indem Sie den entsprechenden Abschnitt der Anleitung „[Mehrere Websites auf einem Webhosting einrichten - Eine Domain oder Subdomain hinzufügen](/pages/web_cloud/web_hosting/multisites_configure_multisite)“ folgen.|
-|Der Domainname oder die Subdomain wurde ohne Aktion Ihrerseits aus der Tabelle „Multisite“ entfernt.|Ihre Domain oder die dazugehörige DNS-Zone wird möglicherweise von einem anderen Konto aus verwaltet. Fügen Sie Ihren Domainnamen/Ihre Subdomain im Bereich `Multisite`{.action} hinzu, indem Sie den entsprechenden Abschnitt der Anleitung „[Mehrere Websites auf einem Webhosting einrichten - Eine externe Domain hinzufügen](/pages/web_cloud/web_hosting/multisites_configure_multisite)“ folgen.|
+|Der Domainname bzw. die Subdomain Ihrer Website wird in der Tabelle „Multisite“ angezeigt.|Wenn Sie die Domain bzw. Subdomain im Bereich `Multisite`{.action} Ihres Webhostings hinzugefügt haben, warten Sie etwa **20 Minuten** und leeren Sie den Cache Ihres Browsers. Wenn weiterhin die Meldung „Seite nicht installiert“ angezeigt wird, fahren Sie mit [Schritt 2](#check-dns-domain) fort.|
+|Der Domainname oder die Subdomain Ihrer Website wird nicht in der Tabelle „Multisite“ angezeigt.|Fügen Sie Ihren Domainnamen/Ihre Subdomain im Bereich `Multisite`{.action} hinzu, indem Sie den entsprechenden Abschnitt der Anleitung „[Mehrere Websites auf einem Webhosting einrichten - Eine Domain oder Subdomain hinzufügen](/pages/web_cloud/web_hosting/multisites_configure_multisite)“ folgen.|
+|Der Domainname oder die Subdomain wurde ohne Aktion Ihrerseits aus der Tabelle „Multisite“ entfernt.|Ihre Domain oder die dazugehörige DNS-Zone wird möglicherweise von einem anderen Kunden-Account aus verwaltet. Fügen Sie Ihren Domainnamen/Ihre Subdomain im Bereich `Multisite`{.action} hinzu, indem Sie den entsprechenden Abschnitt der Anleitung „[Mehrere Websites auf einem Webhosting einrichten - Eine externe Domain hinzufügen](/pages/web_cloud/web_hosting/multisites_configure_multisite)“ folgen.|
 
-### Schritt 2 - Überprüfen Sie den IP-Verweis in der aktiven DNS-Zone Ihrer Domain <a name="check-dns-domain"></a>
+### Schritt 2 - Überprüfen Sie den IP-Eintrag in der aktiven DNS-Zone Ihrer Domain <a name="check-dns-domain"></a>
 
-In diesem Schritt überprüfen Sie, dass Ihre Domain bzw. Subdomain über die aktive DNS Zone auf die IP-Adresse Ihres Webhostings verweist.
+In diesem Schritt überprüfen Sie, dass Ihre Domain oder Subdomain über die aktive DNS-Zone auf die IP-Adresse Ihres Webhostings verweist.
 
 > [!primary]
 >
@@ -67,7 +67,7 @@ In diesem Schritt überprüfen Sie, dass Ihre Domain bzw. Subdomain über die ak
 
 Um die IP-Adresse Ihres Webhostings zu finden, loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und gehen Sie dann oben auf der Seite in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus der Liste aus.
 
-Die Adresse `IPv4` finden Sie in der Box `Allgemeine Informationen`{.action}.
+Die `IPv4` Adresse finden Sie in der Box `Allgemeine Informationen`{.action}.
 
 ![hosting-general-informations](images/hosting-general-informations.png){.thumbnail}
 
@@ -81,7 +81,7 @@ Die Ihrem Webhosting zugeordnete IP-Adresse finden Sie auch in unserer Anleitung
 >
 > Vor dem Fortsetzen des Vorgangs kann es bei einer Änderung der aktiven **DNS Zone** einer Domain zu einer Propagationsverzögerung von **4 bis 24 Stunden** kommen, um die Informationen im DNS-Netzwerk zu aktualisieren.
 >
-> Wenn Sie die mit Ihrer Domain verbundenen **DNS** Server direkt ändern, kann die Bearbeitungszeit bis zu **48 Stunden** betragen.
+> Wenn Sie die mit Ihrer Domain verbundenen **DNS-Server** ändern, kann die Bearbeitungszeit bis zu **48 Stunden** betragen.
 >
 
 Loggen Sie sich hierzu in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und gehen Sie oben auf der Seite in den Bereich `Web Cloud`{.action}. Gehen Sie in den Bereich `Domainnamen`{.action}, wählen Sie Ihren Domainnamen aus und gehen Sie dann in den Tab `DNS-Zone`{.action}.
@@ -90,10 +90,10 @@ Eine Tabelle mit verschiedenen DNS-Einträgen wird angezeigt.
 
 |Mögliche Szenarien|Auszuführende Aktion|
 |---|---|
-|In der aktiven DNS-Zone zeigt Ihr Domainname/Ihre Subdomain auf die IP-Adresse Ihres Webhostings mit einem A Eintrag (für eine IPv4) oder AAAA Eintrag (für eine IPv6).<br><br>![DNS-Zone_IP2](images/zonedns_ip2.png){.thumbnail}|Dies weist darauf hin, dass die Konfiguration Ihres Domainnamens korrekt ist.<br><br> Warten Sie, bis die DNS Propagation abgeschlossen ist.<br><br> Denken Sie auch daran, Ihre Geräte (PC, Smartphone, Box usw.) neu zu starten.) und leeren Sie den Cache Ihres Internetbrowsers. Die alte Konfiguration Ihrer Domain kann im Cache gespeichert werden, was die Anzeige Ihres Updates verlangsamen kann.|
+|In der aktiven DNS-Zone zeigt Ihr Domainname/Ihre Subdomain auf die IP-Adresse Ihres Webhostings mit einem A-Eintrag (für eine IPv4) oder AAAA-Eintrag (für eine IPv6).<br><br>![DNS-Zone_IP2](images/zonedns_ip2.png){.thumbnail}|Dies weist darauf hin, dass die Konfiguration Ihres Domainnamens korrekt ist.<br><br> Warten Sie, bis die DNS Propagation abgeschlossen ist.<br><br> (Denken Sie auch daran, Ihre Geräte (PC, Smartphone, Box usw.) neu zu starten und leeren Sie den Cache Ihres Browsers). Die alte Konfiguration Ihrer Domain kann im Cache gespeichert werden, was die Anzeige Ihres Updates verzögern kann.|
 |Die aktive DNS-Zone enthält keine A- oder AAAA-Einträge, die Ihre Domain/Subdomain mit der IP-Adresse Ihres Webhostings verbinden. Oder der vorhandene Eintrag verweist auf eine andere IP-Adresse.|Fügen Sie den neuen A- oder AAAA-Eintrag hinzu, oder korrigieren Sie den vorhandenen Eintrag, indem Sie [diese Anleitung](/pages/web_cloud/domains/dns_zone_edit) befolgen.|
-|Ihre Domain wird nicht im Bereich `DomaDomainnamenins`{.action} Ihres OVHcloud Kundencenters angezeigt.<br><br>Oder der Tab `DNS-Zone`{.action} Ihres Domainnamens erscheint wie folgt:<br><br>![zonedns_ndd_pas_sur_lec2](images/zonedns_ndd_pas_sur_lec2.png){.thumbnail}|Das bedeutet, dass Ihr Domainname nicht über Ihr OVHcloud Kundencenter verwaltet wird.<br><br>Stellen Sie seinen „Registrar“ über unser Tool [WHOIS](https://www.ovhcloud.com/de/domains/whois/) fest und die DNS-Server, denen es zugeordnet ist. <br><br>Suchen Sie die betreffende DNS-Zone und ändern Sie sie entsprechend. Folgen Sie hierzu dem entsprechenden Abschnitt in der Anleitung „[Mehrere Websites auf einem Webhosting einrichten - Eine externe Domain hinzufügen](/pages/web_cloud/web_hosting/multisites_configure_multisite)“.|
-|Diese Warnung erscheint in der Registerkarte `DNS Zone`{.action}:<br><br>![Warnung_zonedns_pas_sur_srv_dns](images/avertissement_zonedns_pas_sur_srv_dns.png){.thumbnail}|Sie müssen die DNS Server Ihrer Domain entsprechend anpassen, indem Sie unsere Anleitung „[DNS Server einer OVHcloud Domain bearbeiten](/pages/web_cloud/domains/dns_server_general_information)“ befolgen.|
+|Ihre Domain wird nicht im Bereich `Domainnamen`{.action} Ihres OVHcloud Kundencenters angezeigt.<br><br>Oder der Tab `DNS-Zone`{.action} Ihres Domainnamens erscheint wie folgt:<br><br>![zonedns_ndd_pas_sur_lec2](images/zonedns_ndd_pas_sur_lec2.png){.thumbnail}|Das bedeutet, dass Ihr Domainname nicht über Ihr OVHcloud Kundencenter verwaltet wird.<br><br>Finden Sie über unser [WHOIS-Tool](https://www.ovhcloud.com/de/domains/whois/) den Registrar heraus sowie die zugehörigen DNS-Server. <br><br>Suchen Sie die betreffende DNS-Zone und ändern Sie sie entsprechend. Folgen Sie hierzu dem entsprechenden Abschnitt in der Anleitung „[Mehrere Websites auf einem Webhosting einrichten - Eine externe Domain hinzufügen](/pages/web_cloud/web_hosting/multisites_configure_multisite)“.|
+|Diese Warnung erscheint in der Registerkarte `DNS Zone`{.action}:<br><br>![Warnung_zonedns_pas_sur_srv_dns](images/avertissement_zonedns_pas_sur_srv_dns.png){.thumbnail}|Sie müssen die DNS-Server Ihrer Domain entsprechend anpassen, indem Sie unsere Anleitung „[DNS Server einer OVHcloud Domain bearbeiten](/pages/web_cloud/domains/dns_server_general_information)“ befolgen.|
 
 ## Weitere Informationen <a name="go-further"></a>
 
