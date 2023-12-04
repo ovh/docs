@@ -85,7 +85,7 @@ Sobald beide Empfänger die Anfrage per E-Mail bestätigt haben, wird die Änder
 > 
 > Wird die Änderung von einer der beiden Parteien abgelehnt, wird der Vorgang abgebrochen.
 >
-> Wenn die E-Mail-Adresse des aktuellen Inhabers veraltet oder nicht erreichbar ist, können Sie **in diesem Fall*** direkt den Support kontaktieren, indem Sie ein Support-Ticket in Ihrem [OVHcloud Help Center](https://help.ovhcloud.com/csm?id=csm_cases_requests) erstellen.
+> Wenn die E-Mail-Adresse des aktuellen Inhabers veraltet oder nicht erreichbar ist, können Sie **in diesem Fall** direkt den Support kontaktieren, indem Sie ein Support-Ticket in Ihrem [OVHcloud Help Center](https://help.ovhcloud.com/csm?id=csm_cases_requests) erstellen.
 >
 
 > [!warning]
