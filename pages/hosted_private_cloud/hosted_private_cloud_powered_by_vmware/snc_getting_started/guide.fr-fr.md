@@ -134,7 +134,7 @@ La mise en place d'un VPN est nécessaire pour vous permettre de vous connecter 
 
 Le guide suivant vous décrit comment effectuer cette manipulation :
 
-* [Configurer un VPN IPSec via une Gateway Edge](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx_configurer_un_vpn_via_une_gateway_edge#ipsec-vpn)
+* [Configurer un VPN IPSec via NSX](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx-12-configure-ipsec)
 
 ### Etape 4 : activer la private gateway
 
