@@ -1,7 +1,7 @@
 ---
 title: 'Erste Public Cloud Instanz erstellen und auf dieser einloggen'
 excerpt: 'So starten Sie nach der Erstellung eines Projekts mit der Verwendung Ihres Public Cloud Dienstes'
-updated: 2023-11-29
+updated: 2023-12-01
 ---
 
 ## Ziel

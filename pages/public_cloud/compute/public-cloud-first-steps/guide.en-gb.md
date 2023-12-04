@@ -1,7 +1,7 @@
 ---
 title: 'Creating and connecting to your first Public Cloud instance'
 excerpt: 'Find out how to get started with your Public Cloud service after the creation of a project'
-updated: 2023-11-29
+updated: 2023-12-01
 ---
 
 ## Objective

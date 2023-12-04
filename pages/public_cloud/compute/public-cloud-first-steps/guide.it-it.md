@@ -1,7 +1,7 @@
 ---
 title: Creare e connettersi a un’istanza Public Cloud
 excerpt: Come eseguire le prime operazioni su un servizio Public Cloud dopo aver creato un progetto
-updated: 2023-11-29
+updated: 2023-12-01
 ---
 
 > [!primary]

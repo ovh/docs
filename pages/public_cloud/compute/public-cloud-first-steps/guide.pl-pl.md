@@ -1,7 +1,7 @@
 ---
 title: 'Tworzenie pierwszej instancji Public Cloud i łączenie się z nią'
 excerpt: 'Dowiedz się, jak rozpocząć korzystanie z usługi Public Cloud po utworzeniu projektu'
-updated: 2023-11-29
+updated: 2023-12-01
 ---
 
 > [!primary]

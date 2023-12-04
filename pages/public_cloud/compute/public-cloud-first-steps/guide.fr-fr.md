@@ -1,7 +1,7 @@
 ---
 title: "Créer une première instance Public Cloud et s'y connecter"
 excerpt: 'Découvrez les bonnes pratiques pour bien débuter avec votre première instance Public Cloud'
-updated: 2023-11-29
+updated: 2023-12-01
 ---
 
 ## Objectif

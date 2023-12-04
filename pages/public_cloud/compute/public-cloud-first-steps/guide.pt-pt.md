@@ -1,7 +1,7 @@
 ---
 title: 'Criação e conexão a uma primeira instância Public Cloud'
 excerpt: 'Saiba como dar os primeiros passos com o serviço Public Cloud depois da criação de um projeto'
-updated: 2023-11-29
+updated: 2023-12-01
 ---
 
 > [!primary]

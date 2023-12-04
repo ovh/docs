@@ -1,7 +1,7 @@
 ---
 title: 'Crear y conectarse a una instancia de Public Cloud'
 excerpt: 'Cómo empezar a utilizar el servicio Public Cloud tras haber creado un proyecto'
-updated: 2023-11-29
+updated: 2023-12-01
 ---
 
 > [!primary]
