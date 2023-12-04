@@ -1,6 +1,6 @@
 ---
-title: 'Zmiana właściciela domeny'
-excerpt: 'W tym przewodniku znajdziesz różne informacje na temat zmiany właściciela domeny.'
+title: "Zmiana właściciela domeny"
+excerpt: "W tym przewodniku znajdziesz różne informacje na temat zmiany właściciela domeny."
 updated: 2023-12-04
 ---
 
@@ -84,6 +84,9 @@ Jeśli adres e-mail nie został zmieniony w związku ze zmianą właściciela, r
 > Procedura musi zostać zatwierdzona przez obie strony w ciągu 14 dni od złożenia wniosku.
 > 
 > Jeżeli jedna ze stron odrzuci zmianę, wniosek zostaje anulowany.
+>
+> Jeśli adres e-mail aktualnego właściciela jest przestarzały lub niedostępny, możesz **w tym przypadku** skontaktować się bezpośrednio z działem pomocy, wysyłając zgłoszenie w [Centrum pomocy OVHcloud](https://help.ovhcloud.com/csm?id=csm_cases_requests).
+>
 
 > [!warning]
 >
