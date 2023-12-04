@@ -1,11 +1,11 @@
 ---
-title: 'Cómo cambiar el propietario de un nombre de dominio'
-excerpt: 'En esta guía, encontrará diversas informaciones en relación con el cambio de propietario del nombre de un dominio.'
+title: "Cómo cambiar el propietario de un nombre de dominio"
+excerpt: "En esta guía, encontrará diversas informaciones en relación con el cambio de propietario del nombre de un dominio."
 updated: 2023-12-04
 ---
 
 > [!primary]
-> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón "Contribuir" de esta página.
 >
 
 ## Objetivo
@@ -84,6 +84,9 @@ Si la dirección de correo electrónico no se modifica como parte del cambio de 
 > El procedimiento deberá ser validado por ambas partes en un plazo de 14 días a partir de la solicitud.
 >
 > Si una de las partes rechaza la modificación, la solicitud se anulará.
+>
+> Si la dirección de correo electrónico del propietario actual no está actualizada o no se puede acceder a ella, **en este caso**, puede contactar directamente con el soporte creando un tíquet de asistencia desde su [centro de ayuda de OVHcloud](https://help.ovhcloud.com/csm?id=csm_cases_requests).
+>
 
 > [!warning]
 >
