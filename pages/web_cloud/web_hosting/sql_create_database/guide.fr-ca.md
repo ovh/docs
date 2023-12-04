@@ -1,7 +1,7 @@
 ---
 title: "Créer une base de données sur son hébergement web"
 excerpt: "Découvrez comment créer une base de données sur votre hébergement web OVHcloud"
-updated: 2023-10-31
+updated: 2023-12-04
 ---
 
 ## Objectif
@@ -112,6 +112,11 @@ Vous retrouverez l'ensemble des informations de connexion à votre base de donn�
 >
 
 Selon le logiciel utilisé, il est possible que cette connexion nécessite d'être configurée manuellement ou via une interface générée par l'interface de configuration (backend) du site web. Étant donné que cette procédure concerne la configuration de votre site web et non votre hébergement OVHcloud, nous vous recommandons de consulter les ressources disponibles en ligne ou de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/directory/).
+
+> [!primary]
+>
+> Les bases de données liées à votre hébergement web sont uniquement accessibles via une application ou un script directement installé sur votre hébergement web ou via l'interface phpMyAdmin.
+>
 
 #### Accéder à l’interface phpMyAdmin
 
