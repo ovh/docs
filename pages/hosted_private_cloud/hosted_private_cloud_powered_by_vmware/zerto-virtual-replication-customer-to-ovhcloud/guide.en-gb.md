@@ -1,7 +1,7 @@
 ---
 title: Using Zerto between OVHcloud and a third party platform
 excerpt: Learn how to setup Zerto between your OVHcloud Private Cloud and another platform
-updated: 2023-10-23
+updated: 2023-12-04
 ---
 
 ## Objective
@@ -24,14 +24,13 @@ Check out [Zerto between two OVHcloud datacenters](/pages/hosted_private_cloud/h
 >
 > For an operational Zerto installation:
 >
-> [Download Zerto](https://www.zerto.com/myzerto/login/?redirect_to=%2Fmyzerto%2Fsupport%2Fdownloads%2F). (You need to have an account.)
->
-> [Install Zerto Documentation](https://help.zerto.com/bundle/Install.VC.HTML/page/Installing_the_Zerto_Solution.htm).
+> - [Download Zerto](https://www.zerto.com/myzerto/login/?redirect_to=%2Fmyzerto%2Fsupport%2Fdownloads%2F). You need to have an account.
+> - [Read the Zerto installation documentation](https://help.zerto.com/bundle/Install.VC.HTML/page/Installing_the_Zerto_Solution.htm).
 >
 
 > [!warning]
 >
-> OVHcloud supports the N-1 version of Zerto (Currently up to and including version 9.7)
+> OVHcloud supports the N-1 version of Zerto (currently up to and including version 9.7).
 > You can find the different versions available here : <https://help.zerto.com/kb/000004585>.
 >
 
