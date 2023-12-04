@@ -116,8 +116,9 @@ hdbnsutil -sr_enable --name=node1
 >
 
 3\. Pour autoriser le nœud secondaire à s'enregistrer sur le nœud primaire, vous devez transférer deux fichiers du nœud primaire sur le nœud secondaire :
-    - /usr/sap/`<SID>`/SYS/global/security/rsecssfs/data/SSFS_`<SID>`.DAT
-    - /usr/sap/`<SID>`/SYS/global/security/rsecssfs/key/SSFS_`<SID>`.KEY
+
+- /usr/sap/`<SID>`/SYS/global/security/rsecssfs/data/SSFS_`<SID>`.DAT
+- /usr/sap/`<SID>`/SYS/global/security/rsecssfs/key/SSFS_`<SID>`.KEY
 
 ```bash
 scp /usr/sap/<SID>/SYS/global/security/rsecssfs/data/SSFS_<SID>.DAT \
