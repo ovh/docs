@@ -134,7 +134,7 @@ La mise en place d'un VPN est nécessaire pour vous permettre de vous connecter 
 
 Le guide suivant vous décrit comment effectuer cette manipulation :
 
-* [Mise en place d'un tunnel IPsec avec NSX ](https://help.ovhcloud.com/csm/fr-vmware-nsx-configure-ipsec?id=kb_article_view&sysparm_article=KB0058688)
+* [Mise en place d'un tunnel IPsec avec NSX ](pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/nsx-12-configure-ipsec)
 
 ### Etape 4 : activer la private gateway
 
