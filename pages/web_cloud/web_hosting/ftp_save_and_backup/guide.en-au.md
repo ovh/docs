@@ -164,11 +164,25 @@ Once you have connected, gather the files you want to restore. To do this, explo
 
 Before you move on to the next step, ensure that you have gathered all the files you would like to restore, then disconnect from your storage space.
 
+> [!success]
+>
+> If you are using the **FTP Explorer** interface, please refer to the [help page](https://net2ftp.cluster020.hosting.ovh.net/help.html){.external} to recover your files correctly. You can also access this page via the `Help`{.action} button at the bottom of the interface for connecting to the **FTP Explorer**.
+>
+> If you use another program to log in to your FTP storage space, we recommend that you consult the official documentation for your program to make the changes correctly.
+>
+
 #### Step 4: Restore the files.
 
 Once you have got the files you need to restore, connect to your storage space again. This time, however, do not add the suffix to connect but write only the FTP username. By not entering this suffix, you will connect to the current content on your storage space, and not a backup from an earlier date.
 
 Once you have connected, you can now restore the files you want. To do this, explore the content of your storage space until you find them, then download them, overwriting the old files.
+
+> [!success]
+>
+> If you are using the **FTP Explorer** interface, please refer to the [help page](https://net2ftp.cluster020.hosting.ovh.net/help.html){.external} to restore your files correctly. You can also access this page via the `Help`{.action} button at the bottom of the interface for connecting to the **FTP Explorer**.
+>
+> If you use another program to log in to your FTP storage space, we recommend that you consult the official documentation for your program to make the changes correctly.
+>
 
 ## Go further
 
