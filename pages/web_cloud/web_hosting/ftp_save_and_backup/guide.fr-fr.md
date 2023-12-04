@@ -1,7 +1,7 @@
 ---
 title: "Restaurer l'espace de stockage de son hébergement web"
 excerpt: "Apprenez à restaurer un fichier ou l'intégralité de l'espace de stockage de votre hébergement web"
-updated: 2023-12-01
+updated: 2023-12-04
 ---
 
 ## Objectif
