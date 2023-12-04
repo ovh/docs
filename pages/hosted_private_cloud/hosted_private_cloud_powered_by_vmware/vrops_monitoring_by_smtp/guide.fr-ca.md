@@ -6,18 +6,20 @@ updated: 2023-12-04
 
 ## Objectif
 
-**Ce guide vous montre comment configurer votre serveusr SMTP afin d'automatiser l'envoi d'alertes et de rapports par e-mail au vRops.**
+**Ce guide vous montre comment configurer votre serveur SMTP afin d'automatiser l'envoi d'alertes et de rapports par e-mail depuis vRops.**
 
 ## Prérequis
 
 - Avoir un serveur SMTP fonctionnel
-- Autoriser les flux STMP sur votre serveur
+- Autoriser les flux STMP entre votre serveur SMTP et votre instance vROps
 
 ## En pratique
 
 ### Ouverture d'un flux
 
-La première étape est d'ouvrir un flux (*Flow*) sur l'API OVHcloud pour permettre au vRops de communiquer avec votre serveur SMTP.
+La première étape est d'ouvrir un flux (*Flow*) sur l'API OVHcloud pour permettre à vROps de communiquer avec votre serveur SMTP.
+
+Vous pouvez controler que le flux a bien été ouvert grâce à ce [endpoint](https://api.ovh.com/console/#/dedicatedCloud/%7BserviceName%7D/vrops/outgoingFlow/%7BoutgoingFlowId%7D~GET).
 
 Pour cela, utilisez l'appel API suivant :
 
@@ -26,7 +28,7 @@ Pour cela, utilisez l'appel API suivant :
 > @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/vrops/outgoingFlow
 >
 
-Complétez les champs de l'appel API. S'il ne fonctionne pas, n'hésitez pas à vérifier vos ouvertures de ports du serveur.
+Complétez les champs de l'appel API. Si les résultats ne sont pas escomptés, n'hésitez pas à vérifier vos informations d'ouvertures de port du serveur.
 
 | Paramètre | Description |
 | :-: | :-: |
@@ -39,7 +41,7 @@ Complétez les champs de l'appel API. S'il ne fonctionne pas, n'hésitez pas à 
 
 ### Configuration de l'alerte au niveau du vRops
 
-Une fois l'ouverture du flux effectuée, vous devez configurer l'alerte e-mail sur votre vRops.
+Une fois l'ouverture du flux effectuée, vous devez configurer l'alerte e-mail sur votre vROps.
 Pour ce faire, rendez-vous dans la section `Configure` puis l'onglet `Alerts`{.action}.
 
 ![PannelAlert](images/vrops_alerts_pannel.png)
@@ -78,7 +80,7 @@ Une série d'options va apparaitre, complétez les champs indiqués.
 
 Vous pouvez tester votre configuration avec le bouton `Test`{.action} situé en bas de la page.
 
-Une fois la configuration terminée, vous devez retrouver votre alerte dans le récapitulatif précédent.
+Une fois ces opérations terminées, vous retrouvez le détail de la configuration de votre alerte dans le récapitulatif précédent.
 
 Il ne vous reste plus qu'à tester le bon fonctionnement de votre alerte en vérifiant la bonne réception des e-mails.
 
