@@ -12,8 +12,8 @@ If you would like to carry out a resilience test on your VMware on OVHcloud infr
 
 ## Requirements
 
-- A [VMware on OVHcloud solution](https://www.ovhcloud.com/en-gb/hosted-private-cloud/vmware/)
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- A [VMware on OVHcloud solution](https://www.ovhcloud.com/en-ie/hosted-private-cloud/vmware/)
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie)
 
 ## Instructions
 
@@ -85,6 +85,6 @@ Host connectivity will be restored once the test is complete, and your VMware on
 
 ## Go further
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-ie/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.

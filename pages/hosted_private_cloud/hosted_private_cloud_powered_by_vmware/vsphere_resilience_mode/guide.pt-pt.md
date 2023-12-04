@@ -1,87 +1,90 @@
 ---
-title: Testar a perda temporária de um host através da ativação do modo Resiliência
-excerpt: Saiba como testar a perda temporária de um host com o modo Resiliência na sua infraestrutura Hosted Private Cloud da OVHcloud
+title: Testar a perda temporária de um host através da ativação do modo Resiliência (EN)
+excerpt: Find out how to test a temporary host loss with resilience mode on your VMware on OVHcloud infrastructure
+updated: 2023-12-04
 ---
 
-## Objetivo
+## Objective
 
-Se deseja realizar um teste de resiliência na sua infraestrutura Hosted Private Cloud da OVHcloud, o modo Resiliência permite simular a perda temporária de um host, a fim de validar a continuidade da atividade da sua produção em caso de incidente.
+If you would like to carry out a resilience test on your VMware on OVHcloud infrastructure, resilience mode simulates the temporary loss of a host, and validates the continuity of your production activity in the event of an incident.
 
-**Saiba como testar a perda temporária de um host com o modo Resiliência na sua infraestrutura Hosted Private Cloud da OVHcloud**
+**Find out how to test a temporary host loss with resilience mode on your VMware on OVHcloud infrastructure**
 
-## Requisitos
+## Requirements
 
-- Dispor de uma oferta [Hosted Private Cloud](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/).
-- Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+- A [VMware on OVHcloud solution](https://www.ovhcloud.com/pt/hosted-private-cloud/vmware/)
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
 
-## Instruções
+## Instructions
 
-Esta operação efetua-se a partir das API OVHcloud e terá por efeito o corte da acessibilidade à rede para o host selecionado e a sua desativação por um período definido previamente (min:10min, max:24h, default:1h).
+This operation is carried out using the OVHcloud API, and will result in the selected host being unable to access the network, then deactivated for a defined period of time (min: 10min, max: 24h, default: 1h).
 
-Este teste é independente do sistema de vigilância, evitando assim a substituição automática do host.
+This test is independent of the monitoring system, thus avoiding automatic replacement of the host.
 
-Desta forma, as VMs serão desligadas e a migração para o(s) host(s) restante(s) será(ão) operada(s) pelo vSphere HA se a funcionalidade estiver corretamente configurada no seu cluster.
+The VMs will be powered off, and the migration and reboot to the remaining host(s) will be carried out by vSphere HA if the feature is correctly configured on your cluster.
 
-Para mais informações sobre o vSphere HA pode consultar a documentação VMware «[Funcionamento do vSphere HA](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.avail.doc/GUID-33A65FF7-DA22-4DC5-8B18-5A7F97CCA536.html)».
+For more information about vSphere HA, you can read the VMware documentation [Functioning of vSphere HA](https://docs.vmware.com/en/VMware-vSphere/7.0/com.vmware.vsphere.avail.doc/GUID-33A65FF7-DA22-4DC5-8B18-5A7F97CCA536.html).
 
-Assim, poderá estimar o tempo de retoma de atividade a partir do lançamento do teste e da simulação do incidente (RTO) até que as VMs sejam reiniciadas.
+This way, you can estimate the time it takes to recover from the test launch and the incident simulation (RTO) until the VMs are rebooted.
 
-Aqui estão as chamadas a executar a fim de listar e obter os identificadores da sua infraestrutura, do seu datacenter e do host sobre os quais deseja realizar este teste:
+Here are the calls to execute in order to list and obtain the credentials of your infrastructure, your data centre and the host on which you wish to carry out this test:
 
-Para obter o nome da sua infraestrutura: (pcc-xx-xx-xx):
+To retrieve the name of your infrastructure (`pcc-xx-xx-xx`):
 
 > [!api]
 >
 > @api {v1} /dedicatedCloud GET /dedicatedCloud
 
-Para recuperar o identificador do seu datacenter:
+To retrieve your `datacenterId`:
 
 > [!api]
 >
 > @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/datacenter
 
-E finalmente para recuperar o identificador do seu host:
+And finally, to retrieve your `hostId`:
 
 > [!api]
 >
 > @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/host
 
-Depois de obter estas informações, para validar que pode lançar a ação, pode utilizar a seguinte chamada que vai validar as condições de realização do teste e assim evitar qualquer perda de atividade:
+Once you have this information, in order to confirm that you can launch the action, you can use the following call which will validate the test conditions and thus avoid any loss of activity:
 
 > [!api]
 >
-> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/host/{hostId}/resiliência/canBeEnabled
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/host/{hostId}/resilience/canBeEnabled
 
-Se o teste for possível, o resultado será verdadeiro.
+If the test is feasible, the result is: `true`.
 
-Poderá utilizar a seguinte chamada para realizar o teste:
+To start the test, you can use the following call:
 
 > [!api]
 >
-> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/host/{hostId}/resiliência/enable
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/host/{hostId}/resilience/enable
 
-O host será então desligado e passará para o modo "Sem resposta" até ao fim do teste:
+The host will then be disconnected and switch to "No response" mode until the test is complete:
 
 ![vsphere](images/resilience_mode.png){.thumbnail}
 
-Pode verificar o estado da ação utilizando a seguinte chamada:
+You can check the status of the action, using the following call:
 
 > [!api]
 >
-> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/host/{hostId}/resiliência
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/host/{hostId}/resilience
 
-Se o teste foi corretamente iniciado no host, o resultado será: enabled.
+If the test has been launched on the host, the result will be: `enabled`.
 
-Se for necessário, também pode interromper o teste antes da duração escolhida por meio desta chamada:
+If necessary, you can also stop the test before the duration you have chosen by using this call:
 
 > [!api]
 >
-> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/host/{hostId}/resiliência/disable
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/host/{hostId}/resilience/disable
 
-Entre as informações devolvidas encontrará a planificação da tarefa "updateHostResilienceOff".
+The information returned will include the schedule for the "updateHostResilienceOff" task.
 
-A conectividade do host será restabelecida no final do teste e a sua infraestrutura HPC será restabelecida nas condições normais de utilização.
+Host connectivity will be restored once the test is complete, and your VMware on OVHcloud infrastructure will return to normal use.
 
-## Saiba mais
+## Go further
 
-Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/pt/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+
+Join our community of users on <https://community.ovh.com/en/>.
