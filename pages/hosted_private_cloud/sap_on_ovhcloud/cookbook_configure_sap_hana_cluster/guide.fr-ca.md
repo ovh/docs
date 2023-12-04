@@ -78,13 +78,13 @@ Si vous exécutez cette configuration sur des nouvelles machines virtuelles SAP 
 
 Le provider hook SAP HANA HA/SR améliore la détection d'erreurs SAP HANA.
 
-1. Arrêtez les services SAP HANA sur les deux nœuds :
+1\. Arrêtez les services SAP HANA sur les deux nœuds :
 
 ```bash
 sapcontrol -nr <NI> -function Stop
 ```
 
-2. Ajoutez ce bloc dans le fichier global.ini sur les deux nœuds :
+2\. Ajoutez ce bloc dans le fichier global.ini sur les deux nœuds :
 
 ```ini
 [ha_dr_provider_SAPHanaSR]
@@ -98,13 +98,13 @@ ha_dr_saphanasr = info
 
 #### Système de réplication
 
-1. Démarrez les services SAP HANA sur le nœud primaire :
+1\. Démarrez les services SAP HANA sur le nœud primaire :
 
 ```bash
 sapcontrol -nr <NI> -function Start
 ```
 
-2. Avec l'utilisateur SAP HANA (sid)adm, activez le système de réplication SAP HANA (HSR) sur le nœud primaire qui sera la source de la réplication :  
+2\. Avec l'utilisateur SAP HANA (sid)adm, activez le système de réplication SAP HANA (HSR) sur le nœud primaire qui sera la source de la réplication :  
 
 ```bash
 hdbnsutil -sr_enable --name=node1
@@ -115,7 +115,7 @@ hdbnsutil -sr_enable --name=node1
 > L'option `--name` est obligatoire et est utilisée pour définir le nœud SAP HANA dans le système de réplication.
 >
 
-3. Pour autoriser le nœud secondaire à s'enregistrer sur le nœud primaire, vous devez transférer deux fichiers du nœud primaire sur le nœud secondaire :
+3\. Pour autoriser le nœud secondaire à s'enregistrer sur le nœud primaire, vous devez transférer deux fichiers du nœud primaire sur le nœud secondaire :
 
 - /usr/sap/`<SID>`/SYS/global/security/rsecssfs/data/SSFS_`<SID>`.DAT
 - /usr/sap/`<SID>`/SYS/global/security/rsecssfs/key/SSFS_`<SID>`.KEY
@@ -128,7 +128,7 @@ scp /usr/sap/<SID>/SYS/global/security/rsecssfs/key/SSFS_<SID>.KEY \
 node2:/usr/sap/<SID>/SYS/global/security/rsecssfs/key/SSFS_<SID>.KEY
 ```
 
-4. Une fois ces fichiers transférés sur le nœud secondaire, vous pouvez enregistrer le nœud secondaire sur le nœud primaire :
+4\. Une fois ces fichiers transférés sur le nœud secondaire, vous pouvez enregistrer le nœud secondaire sur le nœud primaire :
 
 ```bash
 hdbnsutil -sr_register --name=node2 \
@@ -146,7 +146,7 @@ Dans le cadre de notre guide, les deux nœuds SAP HANA sont hébergés sur la m�
 | replicationMode | sync       |
 | operationMode   | logreplay  |
 
-5. Démarrez les services SAP HANA sur le nœud secondaire. Le démarrage des services SAP HANA déclenche l'initialisation de la réplication du nœud primaire vers le nœud secondaire :
+5\. Démarrez les services SAP HANA sur le nœud secondaire. Le démarrage des services SAP HANA déclenche l'initialisation de la réplication du nœud primaire vers le nœud secondaire :
 
 ```bash
 sapcontrol -nr <NI> -function Start
@@ -186,7 +186,7 @@ La réplication peut prendre un certain temps, cela dépend du volume de donnée
 > Dans ce chapitre, toutes les commandes doivent être exécutées en tant que root.
 >
 
-1. Sur le nœud primaire, générez le fichier /etc/corosync/authkey :
+1\. Sur le nœud primaire, générez le fichier /etc/corosync/authkey :
 
 ```bash
 corosync-keygen
@@ -194,7 +194,7 @@ corosync-keygen
 
 Ce fichier est la clef privée qui garantit l'authenticité et le chiffrement des messages échangés entre les nœuds du cluster.
 
-2. Créez le fichier /etc/corosync/corosync.conf sur le nœud primaire et ajoutez la configuration suivante (remplacez `<ip_address_node1>` et `<ip_address_node2>` par vos adresses IP) :
+2\. Créez le fichier /etc/corosync/corosync.conf sur le nœud primaire et ajoutez la configuration suivante (remplacez `<ip_address_node1>` et `<ip_address_node2>` par vos adresses IP) :
 
 ```console
 totem {
@@ -241,7 +241,7 @@ quorum {
 > Pour découvrir tous les paramètres de configuration, veuillez vous référer au manuel corosync.conf.5 avec la commande `man corosync.conf.5`.
 >
 
-3. Transférez ces fichiers sur le nœud secondaire pour partager la configuration et la clef privée :
+3\. Transférez ces fichiers sur le nœud secondaire pour partager la configuration et la clef privée :
 
 ```bash
 scp /etc/corosync/authkey node2:/etc/corosync/authkey
@@ -250,14 +250,14 @@ scp /etc/corosync/corosync.conf node2:/etc/corosync/corosync.conf
 
 ### Pacemaker
 
-1. Démarrez les services corosync et pacemaker sur les deux nœuds :
+1\. Démarrez les services corosync et pacemaker sur les deux nœuds :
 
 ```bash
 service pacemaker start
 service corosync start
 ```
 
-2. Nous conseillons de retarder le démarrage du service corosync lors du démarrage de la machine virtuelle.
+2\. Nous conseillons de retarder le démarrage du service corosync lors du démarrage de la machine virtuelle.
 
 a. Éditez le service corosync sur les deux nœuds :
 
@@ -300,7 +300,7 @@ systemctl enable corosync.service
 systemctl enable corosync-notifyd.service
 ```
 
-3. Sur le nœud primaire, configurez les propriétés générales du cluster SUSE pour SAP HANA :
+3\. Sur le nœud primaire, configurez les propriétés générales du cluster SUSE pour SAP HANA :
 
 ```bash
 crm configure property stonith-enabled="true"
@@ -312,7 +312,7 @@ crm configure rsc_defaults migration-threshold="5000"
 crm configure op_defaults timeout="600"
 ```
 
-4. Sur le nœud primaire, activez le mode maintenance du cluster :
+4\. Sur le nœud primaire, activez le mode maintenance du cluster :
 
 ```bash
 crm configure property maintenance-mode=true
@@ -409,7 +409,7 @@ Full List of Resources:
 
 #### Ressources SAP HANA
 
-1. La ressource `rsc_SAPHana_<SID>_HDB<NI>` gère et surveille les services SAP HANA sur les deux nœuds.
+1\. La ressource `rsc_SAPHana_<SID>_HDB<NI>` gère et surveille les services SAP HANA sur les deux nœuds.
 
 ```bash
 crm configure primitive rsc_SAPHana_<SID>_HDB<NI> ocf:suse:SAPHana \
@@ -431,7 +431,7 @@ crm configure clone msl_SAPHana_<SID>_HDB<NI> rsc_SAPHana_<SID>_HDB<NI> \
 > Pour découvrir tous les paramètres de cette ressource, veuillez vous référer au manuel ocf_suse_SAPHana avec la commande `man ocf_suse_SAPHana`.
 >
 
-2. La ressource `rsc_SAPHanaTopology_<SID>_HDB<NI>` surveille la réplication SAP HANA.
+2\. La ressource `rsc_SAPHanaTopology_<SID>_HDB<NI>` surveille la réplication SAP HANA.
 
 ```bash
 crm configure primitive rsc_SAPHanaTopology_<SID>_HDB<NI> ocf:suse:SAPHanaTopology \
@@ -491,14 +491,14 @@ Full List of Resources:
 > `crm resource refresh`
 >
 
-3. Pour éviter un comportement inattendu, nous vous conseillons de désactiver les ressources `rsc_SAPHana_<SID>_HDB<NI>` et `rsc_SAPHanaTopology_<SID>_HDB<NI>`
+3\. Pour éviter un comportement inattendu, nous vous conseillons de désactiver les ressources `rsc_SAPHana_<SID>_HDB<NI>` et `rsc_SAPHanaTopology_<SID>_HDB<NI>`
 
 ```bash
 crm resource unmanage rsc_SAPHana_<SID>_HDB<NI>
 crm resource unmanage rsc_SAPHanaTopology_<SID>_HDB<NI>
 ```
 
-4. Quittez le mode maintenance :
+4\. Quittez le mode maintenance :
 
 ```bash
 crm configure property maintenance-mode=false
@@ -506,13 +506,13 @@ crm configure property maintenance-mode=false
 'is-managed' conflicts with 'maintenance' in cln_SAPHanaTopology_<SID>_HDB<NI>. Remove it (y/n)? n
 ```
 
-5. Rafraîchissez le cluster sur le nœud primaire :
+5\. Rafraîchissez le cluster sur le nœud primaire :
 
 ```bash
 crm resource refresh
 ```
 
-6. Activez les ressources précédemment désactivées à l'étape 3 :
+6\. Activez les ressources précédemment désactivées à l'étape 3 :
 
 ```bash
 crm resource manage rsc_SAPHana_<SID>_HDB<NI> && crm resource manage rsc_SAPHanaTopology_<SID>_HDB<NI>
@@ -567,7 +567,7 @@ ip a
     valid_lft forever preferred_lft forever
 ```
 
-7. Créez le fichier /etc/sudoers.d/SAPHanaSR-srHook et ajoutez le contenu suivant sur les deux nœuds :
+7\. Créez le fichier /etc/sudoers.d/SAPHanaSR-srHook et ajoutez le contenu suivant sur les deux nœuds :
 
 > [!primary]
 >
