@@ -1,7 +1,7 @@
 ---
 title: "Tworzenie bazy danych na hostingu"
 excerpt: "Dowiedz się, jak utworzyć bazę danych na hostingu OVHcloud"
-updated: 2023-11-03
+updated: 2023-12-04
 ---
 
 > [!primary]
