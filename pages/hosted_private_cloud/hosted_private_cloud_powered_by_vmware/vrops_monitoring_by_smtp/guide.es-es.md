@@ -1,6 +1,6 @@
 ---
-title: "Configuring a vROps alert by the smtp protocol"
-excerpt: "Find out how to create an Outbound Smtp alert in vROps"
+title: "Configuración de una alerta vROps a través del protocolo SMTP (EN)"
+excerpt: "Find out how to create an outbound SMTP alert in vROps"
 updated: 2023-12-04
 ---
 
@@ -92,6 +92,6 @@ You can modify an existing alert by clicking on it from the menu.
 
 ## Go further
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-au/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/es-es/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.

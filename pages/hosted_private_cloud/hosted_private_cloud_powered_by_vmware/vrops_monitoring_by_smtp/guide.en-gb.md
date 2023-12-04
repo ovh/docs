@@ -1,30 +1,35 @@
 ---
 title: "Configuring a vROps alert via the SMTP protocol"
 excerpt: "Find out how to create an outbound SMTP alert in vROps"
-updated: 2023-11-23
+updated: 2023-12-04
 ---
- 
+
 ## Objective
-  
+
 **This guide shows you how to configure your SMTP server to automate the sending of alerts and reports by email to vROps.**
-  
+
 ## Requirements
-  
+
 - A working SMTP server
 - STMP *flows* allowed between your servers
 
 ## Instructions
-  
+
 ### Open the flow
 
 The first step is to open a *flow* on the OVHcloud API to enable vROps to communicate with your SMTP server.
-To do this, simply go to [here](https://api.ovh.com/console-preview/?section=%2FdedicatedCloud&branch=v1#post-/dedicatedCloud/-serviceName-/vrops/outgoingFlow).
+To do this, use the following API call :
 
-Simply fill in the API call fields. If the results are not as expected, check your server port openings.
+> [!api]
+>
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/vrops/outgoingFlow
+>
+
+Fill in the API call fields. If the results are not as expected, check your server port openings.
 
 | PARAMETER | DESCRIPTION |
 | :-: | :-: |
-| servicename | Domain of the service |
+| serviceName | Domain of the service |
 | description | Outgoing flow description (for example, here connect to SMTP) |
 | ip | IP address of the remote service, e.g 123.100.200.0 |
 | servicePort | Remote service port (25,465,587 or 2525 for SMTP) |
@@ -36,15 +41,15 @@ Simply fill in the API call fields. If the results are not as expected, check yo
 Once the flow has been opened, you need to configure the email alert on your vROps.
 To do this, go to the `Configure` section, then the `Alerts`{.action} section.
 
-![PannelAlert](images/vrops_alerts_pannel.png)
+![Panel Alert](images/vrops_alerts_pannel.png)
 
 Several types of alerts are available, just select `Outbound Settings`.{.action}.
 
-![PannelAlert2](images/vrops_alert_menu2.png)
+![Panel Alert2](images/vrops_alert_menu2.png)
 
 The page shows a summary of all your Outbound Settings. Click on the `ADD`{.action} button.
 
-![AddButton](images/vrops_add_button.png)
+![Add Button](images/vrops_add_button.png)
 
 In the `Plugin type` option, select `Standard Email Plugin`{. action}.
 A series of options will appear, just fill in the fields.
@@ -63,12 +68,12 @@ A series of options will appear, just fill in the fields.
 | Receiver Email Address | Receiver's email address. |
 
 
-![AlertConfigure](images/vrops_configure_alert.png)
+![Alert Configure](images/vrops_configure_alert.png)
 
 >[!warning]
 >
->For the sake of this documentation, the SMTP server has not configured authentication. 
->However, for obvious security reasons, we strongly advise you to do so!
+> For the sake of this documentation, no authentication has been configured on the SMTP server.
+> However, for obvious security reasons, we strongly advise you to do so!
 >
 
 You can test your configuration using the `Test`{.action} button at the bottom of the page.
@@ -86,5 +91,7 @@ You can modify an existing alert by clicking on it from the menu.
 ![EditAlert](images/vrops_edit_alert.png){.thumbnail}
 
 ## Go further
-  
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+
 Join our community of users on <https://community.ovh.com/en/>.
