@@ -117,6 +117,11 @@ Die Verbindungsinformationen zu Ihrer Datenbank finden Sie in der angezeigten Ta
 
 Je nach verwendeter Software muss diese Verbindung gegebenenfalls manuell oder über ein vom Website-Backend generiertes Interface konfiguriert werden. Da dieser Prozess eher die Konfiguration Ihrer Website als der von OVHcloud bereitgestellten Dienste betrifft, empfehlen wir Ihnen, die entsprechenden Online-Ressourcen zu konsultieren oder einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren.
 
+> [!primary]
+>
+> Auf die zu Ihrem Webhosting gehörenden Datenbanken kann nur über eine direkt auf Ihrem Webhosting installierte Anwendung oder ein Skript oder über das phpMyAdmin-Interface zugegriffen werden.
+>
+
 #### Auf das phpMyAdmin-Interface zugreifen
 
 OVHcloud stellt Ihnen ein Online-Tool für das Datenbankmanagement zur Verfügung: phpMyAdmin. Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Hosting-Pakete`{.action}, wählen Sie das betreffende Hosting aus, und klicken Sie dann auf den Tab `Datenbanken`{.action}.

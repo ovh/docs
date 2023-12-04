@@ -117,6 +117,11 @@ Se mostrará una tabla con toda la información relativa a la conexión a la bas
 
 Según el programa utilizado, es posible que esta conexión necesite ser configurada manualmente o a través de una interfaz generada por la interfaz de configuración (backend) del sitio web. Este procedimiento afecta a la configuración del sitio web y no al alojamiento de OVHcloud, por lo que le recomendamos que consulte los recursos disponibles en internet o que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es/directory/).
 
+> [!primary]
+>
+> Solo es posible acceder a las bases de datos asociadas a un alojamiento web a través de una aplicación o un script directamente instalado en el alojamiento web o a través de la interfaz phpMyAdmin.
+>
+
 #### Acceder a la interfaz phpMyAdmin
 
 OVHcloud ofrece una herramienta en línea para la gestión de bases de datos llamada phpMyAdmin. Para acceder a la aplicación, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws) y acceda a la sección `Web Cloud`{.action}. Haga clic en `Alojamientos`{.action} en la columna izquierda, seleccione el alojamiento en el que desea recuperar la información de conexión a la base de datos y abra la pestaña `Bases de datos`{.action}. En la tabla que se abre, haga clic en el botón `...`{.action} a la derecha de la base de datos correspondiente y, a continuación, haga clic en `Acceder a phpMyAdmin`{.action} en el menú desplegable.
