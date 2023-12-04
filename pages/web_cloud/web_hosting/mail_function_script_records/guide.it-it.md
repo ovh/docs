@@ -1,7 +1,7 @@
 ---
 title: "Gestire l’invio delle email automatiche"
 excerpt: "Come monitorare e gestire le email automatiche inviate da un hosting Web OVHcloud"
-updated: 2022-10-12
+updated: 2023-12-04
 ---
 
 > [!primary]
