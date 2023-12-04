@@ -23,14 +23,9 @@ As of today, other setups (including cross-universe usage with baremetal servers
 
 A beta is ongoing to provide integration with Managed Kubernetes Service. Please reach out on the [Discord community](https://discord.gg/ovhcloud) on the channel **#beta-lb-for-k8s**
 
-
-### Does the Load Balancer account use bandwidth?
-
-No, it doesn't.
-
 ### I want to monitor Octavia Load Balancer. Is it possible to enable [metrics](https://docs.openstack.org/octavia/latest/user/guides/monitoring.html) automatically on Load Balancer?
 
-Yes this feature is available since we rolled out Zed version in XXXXX
+Yes this feature is available since we rolled out Zed version in June 2023
 
 ### How is the redundancy implemented for each type of service plan? Are the Amphoras configured in a ACT/STBY mode?
 
@@ -48,7 +43,7 @@ Yes, multiple listeners (frontends) and pool (backends) can be configured. There
 
 First of all, the values shown are only a rough estimate of the Load Balancer's capabilities. The price will not increase. Pricing is linked to the flavors (small, medium, large) and we cannot change the flavor at this time. This is up to customers' orchestration services. 
 
-It is up to the customer to monitor the load balancer load and to change the flavor accordingly.
+It is up to the customer to monitor the load balancer using the metrics feature and to change the flavor accordingly.
 
 ### I don't see the Load Balancer interface in the OVHcloud Control Panel. Where can I create services and modify settings?
 
@@ -79,7 +74,7 @@ Yes, you can use a L3 router without SNAT option through the Openstack GUI / CLI
 
 It depends on the usage:
 
-- For outbound use cases we offer a public IP which is included in the Gateway price. This IP is associated to the instantiated Gateway and cannot be moved to another one. 
+- For outbound use cases we offer a public IP which is included in the Gateway price. This IP is associated to the instantiated Gateway and cannot be moved to another one. In other words, the IP used for outbound traffic is not a 'Floating IP'. If this is creating friction for you use case, please upvote for this [roadmap item](https://github.com/ovh/public-cloud-roadmap/issues/448)
 - For inbound use cases (to expose a service running on a private instance to the Internet) you need to have a Floating IP to attach via Gateway to your instance or network service.
 
 ### How can I spawn a private instance to be used with Gateway and SNAT option?
@@ -91,7 +86,7 @@ You can create a private network in a selected region and attach Gateway to it. 
 Two options can be used: 
 
 - Using a "jump host" (SSH proxy): You need to use another instance that has Floating IP (allowing for external access) and a private port in the same private network that your new instance is in. Log on to it and connect via SSH to the private IP of your new instance.
-- Attaching a Floating IP address (at least for the time of maintenance) to your newly created instance and connect to it using that Floating IP, then de attach the Floating IP.
+- Attaching a Floating IP address (at least for the time of maintenance) to your newly created instance and connect to it using that Floating IP, then detach the Floating IP.
 
 ## Floating IPs
 
