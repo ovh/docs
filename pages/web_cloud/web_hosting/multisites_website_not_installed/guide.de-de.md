@@ -58,9 +58,9 @@ In diesem Schritt überprüfen Sie, dass Ihre Domain bzw. Subdomain über die ak
 >
 > Weitere Informationen zum Begriff DNS finden Sie auf den folgenden Seiten:
 > 
-> -[OVHcloud DNS-Zone bearbeiten](/pages/web_cloud/domains/dns_zone_edit);
-> -[OVHcloud DNS-Zone erstellen](/pages/web_cloud/domains/dns_zone_create);
-> -[DNS-Server einer OVHcloud Domain bearbeiten](/pages/web_cloud/domains/dns_server_general_information).
+> - [OVHcloud DNS-Zone bearbeiten](/pages/web_cloud/domains/dns_zone_edit);
+> - [OVHcloud DNS-Zone erstellen](/pages/web_cloud/domains/dns_zone_create);
+> - [DNS-Server einer OVHcloud Domain bearbeiten](/pages/web_cloud/domains/dns_server_general_information).
 >
 
 #### 2\.1 IP-Adresse Ihres OVHcloud Webhostings identifizieren

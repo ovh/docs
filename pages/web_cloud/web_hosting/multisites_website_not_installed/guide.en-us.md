@@ -54,9 +54,9 @@ This step involves checking that your domain or subdomain points to your Web Hos
 >
 > To find out more about DNS, visit the following pages:
 > 
-> -[Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit);
-> -[Creating an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_create);
-> -[Modify an OVHcloud domain name’s DNS servers](/pages/web_cloud/domains/dns_server_general_information).
+> - [Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit);
+> - [Creating an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_create);
+> - [Modify an OVHcloud domain name’s DNS servers](/pages/web_cloud/domains/dns_server_general_information).
 >
 
 #### 2\.1 Identify the IP address of your OVHcloud web hosting plan

@@ -58,9 +58,9 @@ Este passo consiste em verificar se o seu domínio ou subdomínio aponta correta
 >
 > Para saber mais sobre a noção de DNS, consulte as seguintes páginas:
 > 
-> -[Editar uma zona DNS da OVHcloud](/pages/web_cloud/domains/dns_zone_edit);
-> -[Criar uma zona DNS da OVHcloud](/pages/web_cloud/domains/dns_zone_create);
-> -[Alterar os servidores DNS de um nome de domínio OVHcloud](/pages/web_cloud/domains/dns_server_general_information).
+> - [Editar uma zona DNS da OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
+> - [Criar uma zona DNS da OVHcloud](/pages/web_cloud/domains/dns_zone_create)
+> - [Alterar os servidores DNS de um nome de domínio OVHcloud](/pages/web_cloud/domains/dns_server_general_information)
 >
 
 #### 2\.1 Identificar o endereço IP do seu alojamento web da OVHcloud

@@ -40,7 +40,7 @@ A continuación se explica cómo corregir el error `Sitio no instalado` en ambos
 
 ### Etapa 1 - Compruebe la declaración de su dominio o subdominio en su alojamiento web <a name="check-multisites"></a>
 
-{.action} En su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), acceda a la sección `Web Cloud`{.action} de la parte superior de la página y, en la columna izquierda, haga clic en `Alojamientos`{.action}.
+En su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), acceda a la sección `Web Cloud`{.action} de la parte superior de la página y, en la columna izquierda, haga clic en `Alojamientos`{.action}.
 
 Seleccione el alojamiento web correspondiente en la lista y abra la pestaña de `Multisitio`{.action}.
 
@@ -58,14 +58,14 @@ Este paso consiste en comprobar que el dominio o subdominio apuntan hacia la dir
 >
 > Para más información sobre la noción de DNS, consulte las siguientes páginas:
 > 
-> -[Editar una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit);
-> -[Crear una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_create);
-> -[Modificar los servidores DNS de un dominio de OVHcloud](/pages/web_cloud/domains/dns_server_general_information).
+> - [Editar una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
+> - [Crear una zona DNS de OVHcloud](/pages/web_cloud/domains/dns_zone_create)
+> - [Modificar los servidores DNS de un dominio de OVHcloud](/pages/web_cloud/domains/dns_server_general_information)
 >
 
 #### 2\.1 Identificar la dirección IP de su alojamiento web de OVHcloud
 
-{.action} Para conocer la dirección IP de su alojamiento web, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y acceda a la sección `Web Cloud`{.action} de la parte superior de la página. En la columna izquierda, haga clic en la pestaña `Alojamientos`{.action} y seleccione el alojamiento correspondiente.
+Para conocer la dirección IP de su alojamiento web, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) y acceda a la sección `Web Cloud`{.action} de la parte superior de la página. En la columna izquierda, haga clic en la pestaña `Alojamientos`{.action} y seleccione el alojamiento correspondiente.
 
 La dirección `IPv4` se encuentra en el recuadro `Información general`{.action}.
 

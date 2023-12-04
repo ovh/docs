@@ -58,9 +58,9 @@ Etap ten polega na upewnieniu się, że Twoja domena lub subdomena wskazuje z ak
 >
 > Więcej informacji na temat DNS znajdziesz na następujących stronach:
 > 
-> -[Edycja strefy DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit);
-> -[Utwórz strefę DNS OVHcloud](/pages/web_cloud/domains/dns_zone_create);
-> -[Modyfikacja serwerów DNS domeny OVHcloud](/pages/web_cloud/domains/dns_server_general_information).
+> - [Edycja strefy DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit)
+> - [Utwórz strefę DNS OVHcloud](/pages/web_cloud/domains/dns_zone_create)
+> - [Modyfikacja serwerów DNS domeny OVHcloud](/pages/web_cloud/domains/dns_server_general_information)
 >
 
 #### 2\.1 Identyfikacja adresu IP hostingu OVHcloud
