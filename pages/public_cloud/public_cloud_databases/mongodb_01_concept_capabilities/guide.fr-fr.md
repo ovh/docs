@@ -1,7 +1,7 @@
 ---
 title: MongoDB - Capacités et limitations (EN)
 excerpt: Find out what are the capabilities and limitations of the Public Cloud Databases for MongoDB offer
-updated: 2023-08-17
+updated: 2023-12-04
 ---
 
 ## Objective
@@ -118,6 +118,8 @@ MongoDB clusters are reachable through default port 27017.
 Public as well as private networking (vRack) can be used for all the offers.
 
 Ingress and Egress traffic are included in the service plans and unmetered.
+
+The database service's IP address is subject to change periodically. Thus, it is advised not to rely on these IPs for any configuration, such as connection or egress policy. Instead, utilize the provided DNS record and implement CIDR-based egress policies for more robust and flexible network management.
 
 ##### Private network considerations
 

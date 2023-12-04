@@ -1,7 +1,7 @@
 ---
 title: Kafka - Capabilities and Limitations
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for Kafka
-updated: 2023-08-17
+updated: 2023-12-04
 ---
 
 ## Objective
@@ -129,6 +129,8 @@ Kafka clusters are reachable through a random port, attributed during cluster cr
 Public as well as private networking (vRack) can be used for all the offers.
 
 Ingress and Egress traffic are included in the service plans and unmetered.
+
+The database service's IP address is subject to change periodically. Thus, it is advised not to rely on these IPs for any configuration, such as connection or egress policy. Instead, utilize the provided DNS record and implement CIDR-based egress policies for more robust and flexible network management.
 
 ##### Private network considerations
 Here are some considerations to take into account when using private network:
