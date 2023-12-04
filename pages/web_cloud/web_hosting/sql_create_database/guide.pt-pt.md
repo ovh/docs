@@ -117,6 +117,11 @@ Consulte a tabela que se apresenta para ver o conjunto das informações de liga
 
 Em função do software utilizado, é possível que esta ligação tenha de ser configurada manualmente ou através de uma interface gerida pela interface de configuração (backend) do website. Uma vez que este procedimento diz respeito à configuração do seu website e não ao seu alojamento OVHcloud, recomendamos que consulte os recursos disponíveis online ou que recorra a um [fornecedor especializado](https://partner.ovhcloud.com/pt/directory/).
 
+> [!primary]
+>
+> As bases de dados associadas ao seu alojamento web só estão acessíveis através de uma aplicação ou de um script diretamente instalado no seu alojamento web ou através da interface phpMyAdmin.
+>
+
 #### Aceder à interface phpMyAdmin
 
 A OVHcloud fornece uma ferramenta online para a gestão das bases de dados, "phpMyAdmin". Para encontrar o link de acesso a esta aplicação, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e aceda à secção `Web Cloud`{.action}. Clique em `Alojamentos`{.action} na coluna da esquerda, escolha a oferta de alojamento para a qual pretende recuperar as informações de ligação à base de dados e clique no separador `Bases de dados`{.action}. No quadro que se abrir, clique no botão `...`{.action} à direita da base de dados em causa e, a seguir, clique em `Aceder ao phpMyAdmin`{.action} no menu pendente.
