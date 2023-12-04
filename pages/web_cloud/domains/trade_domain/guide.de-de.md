@@ -1,6 +1,6 @@
 ---
-title: 'Inhaber eines Domainnamens ändern'
-excerpt: 'Erfahren Sie hier, wie Sie den Inhaber eines Domainnamens wechseln können'
+title: "Inhaber eines Domainnamens ändern"
+excerpt: "Erfahren Sie hier, wie Sie den Inhaber eines Domainnamens wechseln können"
 updated: 2023-12-04
 ---
 
@@ -84,6 +84,9 @@ Sobald beide Empfänger die Anfrage per E-Mail bestätigt haben, wird die Änder
 > Das Verfahren kann von beiden Parteien innerhalb einer Frist von 14 Tagen validiert werden.
 > 
 > Wird die Änderung von einer der beiden Parteien abgelehnt, wird der Vorgang abgebrochen.
+>
+> Wenn die E-Mail-Adresse des aktuellen Inhabers veraltet oder nicht erreichbar ist, können Sie **in diesem Fall*** direkt den Support kontaktieren, indem Sie ein Support-Ticket in Ihrem [OVHcloud Help Center](https://help.ovhcloud.com/csm?id=csm_cases_requests) erstellen.
+>
 
 > [!warning]
 >
