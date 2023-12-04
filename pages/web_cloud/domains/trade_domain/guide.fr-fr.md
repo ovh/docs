@@ -82,7 +82,7 @@ Une fois que les deux destinataires ont confirmé la demande par e-mail, le chan
 > 
 > Si la modification est refusée par l'une des deux parties, la demande est annulée.
 >
-> Si l'adresse e-mail de l'actuel propriétaire est obsolète ou inaccessible, vous pouvez, **dans ce cas précis**, contacter directement le support en créant un ticket d'assistance depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
+> Si l'adresse e-mail de l'actuel propriétaire est obsolète ou inaccessible, vous pouvez, **dans ce cas précis**, contacter directement le support en créant un ticket d'assistance depuis votre [centre d'aide OVHcloud](https://help.ovhcloud.com/csm?id=csm_cases_requests).
 >
 
 > [!warning]
