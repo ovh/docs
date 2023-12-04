@@ -165,7 +165,7 @@ Avant de passer à l'étape suivante, assurez-vous d'avoir récupéré tous les 
 
 > [!success]
 >
-> Si vous utilisez l'interface du **FTP Explorer**, n'hésitez pas à consulter la [page d'aide](https://net2ftp.cluster020.hosting.ovh.net/help.html){.external} pour réaliser correctement la récupération de vos fichiers. Cette page est également accessible via le bouton `Aide`{.action} situé sur la partie basse de l'interface de connexion au **FTP Explorer**.
+> Si vous utilisez l'interface du **FTP Explorer**, n'hésitez pas à consulter la [page d'aide](https://net2ftp.cluster020.hosting.ovh.net/help.html){.external} pour réaliser correctement la récupération de vos fichiers. Cette page est également accessible via le bouton `Aide`{.action} situé en bas de l'interface de connexion au **FTP Explorer**.
 >
 > Si vous utilisez un autre logiciel pour vous connecter à votre espace de stockage FTP, nous vous recommandons de consulter la documentation officielle de votre logiciel pour effectuer correctement les manipulations.
 >
