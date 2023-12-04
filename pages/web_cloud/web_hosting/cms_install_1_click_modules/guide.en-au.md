@@ -1,7 +1,7 @@
 ---
 title: "Setting up your website with a 1-click module (CMS)"
 excerpt: "Find out how to set up your website using our 1-click modules"
-updated: 2023-09-14
+updated: 2023-11-14
 ---
 
 ## Objective
@@ -15,7 +15,7 @@ OVHcloud 1-click modules allow quick and easy website setups (without technical 
 ## Requirements
 
 - You have access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au).
-- You have an [OVHcloud web hosting plan](https://www.ovhcloud.com/en-au/web-hosting/) that contains at least one unused database.
+- You have an [OVHcloud web hosting plan](https://www.ovhcloud.com/en-au/web-hosting/) that contains at least one database.
 - Your OVHcloud web hosting uses a recent PHP version and a compatible runtime environment. If you need assistance with this, please refer to our [guide](/pages/web_cloud/web_hosting/configure_your_web_hosting), to change this configuration quickly.
 - If you want to install the 1-click module in an existing folder, this folder must be empty.
 - The domain name (with subdomain if desired) that will be used for your website must be declared as a [Multisite](/pages/web_cloud/web_hosting/multisites_configure_multisite) on your OVHcloud web hosting plan.
@@ -56,6 +56,15 @@ In the window that pops up, choose the CMS you want to use, then select the doma
 ![Choose a module](images/add_a_module.png){.thumbnail}
 
 If your domain is not in the list, go to the `Multisite`{.action} tab to add it. See our guide [Hosting multiple websites on your web hosting plan](/pages/web_cloud/web_hosting/multisites_configure_multisite){.external} if required.
+
+> [!primary]
+>
+> Below the form for selecting a domain name (or subdomain), verify that the default `Installation path` is the one in which you want to install your 1-click module.
+>
+> As a reminder, this directory must be completely empty.
+>
+> If you need assistance, please refer to our guide on [Hosting multiple websites on your web hosting plan](/pages/web_cloud/web_hosting/multisites_configure_multisite) to modify your domain name’s target directory.
+>
 
 Once your domain has been correctly added, try adding a 1-click module again.
 
@@ -146,6 +155,18 @@ Enter the following information for the module configuration:
 - *Domain:* The domain name you would like to install your CMS with. If you need help with this, please refer to our guide on [How to host multiple websites on your web hosting plan](/pages/web_cloud/web_hosting/multisites_configure_multisite).
 - *Language:* The language in which the CMS will be installed.
 - *Installation path:* This is automatically entered when you select your domain name. You can complete it by entering subdirectories (for informed users).
+
+> [!primary]
+>
+> Check that the `Installation path` contains the directory where you want to install your 1-click module with your domain name.
+>
+> As a reminder, this directory must be completely empty.
+>
+> In addition, if you enter a subdirectory in the `Installation path` field, it will appear in the URL used to access your 1-click module.
+> For example, if you enter the subdirectory *test*, the URL to access the 1-click module will look like this: **http://domain.tld/test/**.
+>
+> If you need assistance, please refer to our guide on [Hosting multiple websites on your web hosting plan](/pages/web_cloud/web_hosting/multisites_configure_multisite) to modify your domain name’s target directory.
+>
 
 Once you have entered this information, click `Next`{.action}:
 

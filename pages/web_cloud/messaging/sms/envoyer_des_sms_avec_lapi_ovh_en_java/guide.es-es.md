@@ -27,14 +27,14 @@ En esta guía utilizamos dos llamadas a la API:
 
 > [!api]
 >
-> @api {GET} /sms
+> @api {v1} /sms GET /sms
 >
 
 - Enviar SMS:
 
 > [!api]
 >
-> @api {POST} /sms/{serviceName}/jobs
+> @api {v1} /sms POST /sms/{serviceName}/jobs
 >
 
 ### 1. Generar las claves
@@ -185,7 +185,7 @@ Para enviar SMS, utilice la siguiente llamada a la API:
 
 > [!api]
 >
-> @api {POST} /sms/{serviceName}/jobs
+> @api {v1} /sms POST /sms/{serviceName}/jobs
 >
 
 > [!primary]

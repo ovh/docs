@@ -68,7 +68,7 @@ Zaloguj się na [api.ovh.com/](https://api.ovh.com/) i użyj następującego int
 
 > [!api]
 >
-> @api {post} /sms/{serviceName}/templatesControl
+> @api {v1} /sms POST /sms/{serviceName}/templatesControl
 >
 
 ![Wiadomości SMS do Stanów Zjednoczonych](images/smstousa4.png){.thumbnail}

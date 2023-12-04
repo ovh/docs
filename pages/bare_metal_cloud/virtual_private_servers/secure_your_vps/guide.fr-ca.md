@@ -76,6 +76,8 @@ Remplacez le nombre **22** par le numéro de port de votre choix.<br>
 Pour plus de sécurité, utilisez un numéro entre 49152 et 65535.<br>
 Enregistrez et quittez le fichier de configuration.
 
+Si la ligne est "commentée" (c'est-à-dire si elle est précédée d'un "#"), veillez à supprimer le "#" avant d'enregistrer le fichier pour que la modification prenne effet.
+
 Redémarrez le service :
 
 ```bash

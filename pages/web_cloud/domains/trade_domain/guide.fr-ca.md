@@ -1,7 +1,7 @@
 ---
-title: 'Changer le propriétaire d’un nom de domaine'
-excerpt: 'Vous trouverez dans ce guide différentes informations concernant le changement de propriétaire d’un nom de domaine.'
-updated: 2023-06-19
+title: "Changer le propriétaire d’un nom de domaine"
+excerpt: "Vous trouverez dans ce guide différentes informations concernant le changement de propriétaire d’un nom de domaine."
+updated: 2023-12-04
 ---
 
 ## Objectif
@@ -46,7 +46,7 @@ En dehors de la [gestion des contacts](/pages/account_and_service_management/acc
 
 ### Étape 1 : sélectionner le domaine
 
-Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), dans la section `Web Cloud`{.action}. Cliquez sur `Noms de Domaine`{.action}, sélectionnez le nom domaine générique (gTLD) dont vous souhaitez modifier le propriétaire.
+Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), dans la section `Web Cloud`{.action}. Cliquez sur `Noms de Domaine`{.action}, sélectionnez le nom de domaine générique (gTLD) dont vous souhaitez modifier le propriétaire.
 
 ### Étape 2 : lancer la procédure de changement de propriétaire
 
@@ -80,6 +80,9 @@ Si l'adresse e-mail n'est pas modifiée dans le cadre du changement de propriét
 > La procédure doit-être validée par les deux parties dans les 14 jours qui suivent la demande.
 > 
 > Si la modification est refusée par l'une des deux parties, la demande est annulée.
+>
+> Si l'adresse e-mail de l'actuel propriétaire est obsolète ou inaccessible, vous pouvez, **dans ce cas précis**, contacter directement le support en créant un ticket d'assistance depuis votre [centre d'aide OVHcloud](https://help.ovhcloud.com/csm?id=csm_cases_requests).
+>
 
 > [!warning]
 >

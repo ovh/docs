@@ -56,7 +56,7 @@ The following API allows you to retrieve the disclosure rules applicable to a do
 
 > [!api]
 >
-> @api {GET} /domain/{serviceName}/rules/optin
+> @api {v1} /domain GET /domain/{serviceName}/rules/optin
 
 | Parameter     | Required | Description              |
 | ------------- | -------- | ------------------------ |
@@ -103,7 +103,7 @@ The following API is used to retrieve the disclosure configuration applied to a 
 
 > [!api]
 >
-> @api {GET} /domain/{serviceName}/configurations/optin
+> @api {v1} /domain GET /domain/{serviceName}/configurations/optin
 
 | Parameter     | Required | Description              |
 | ------------- | -------- | ------------------------ |
@@ -139,7 +139,7 @@ The following API allows you to update the disclosure configuration applied to a
 
 > [!api]
 >
-> @api {PUT} /domain/{serviceName}/configurations/optin
+> @api {v1} /domain PUT /domain/{serviceName}/configurations/optin
 
 | Parameter      | Required | Default | Description              |
 | -------------- | -------- | ------- | ------------------------ |
@@ -189,7 +189,7 @@ The following API allows to know the email obfuscation rules that apply on a dom
 
 > [!api]
 >
-> @api {GET} /domain/{serviceName}/rules/emailsObfuscation
+> @api {v1} /domain GET /domain/{serviceName}/rules/emailsObfuscation
 
 | Parameter     | Required | Description              |
 | ------------- | -------- | ------------------------ |
@@ -217,7 +217,7 @@ The following API allows to retrieve the obfuscation configuration applied on a 
 
 > [!api]
 >
-> @api {GET} /domain/{serviceName}/configurations/obfuscatedEmails
+> @api {v1} /domain GET /domain/{serviceName}/configurations/obfuscatedEmails
 
 | Parameter     | Required | Description              |
 | ------------- | -------- | ------------------------ |
@@ -260,7 +260,7 @@ The following API allows to update the email obfuscation configuration applied o
 
 > [!api]
 >
-> @api {PUT} /domain/{serviceName}/configurations/obfuscatedEmails
+> @api {v1} /domain PUT /domain/{serviceName}/configurations/obfuscatedEmails
 
 | Parameter         | Required | Default | Description                                                |
 | ----------------- | -------- | ------- | ---------------------------------------------------------- |
@@ -301,7 +301,7 @@ The following API allows you to regenerate obfuscated emails of a domain name.
 
 > [!api]
 >
-> @api {POST} /domain/{serviceName}/configurations/obfuscatedEmails/refresh
+> @api {v1} /domain POST /domain/{serviceName}/configurations/obfuscatedEmails/refresh
 
 | Parameter         | Required | Default | Description                                                    |
 | ----------------- | -------- | ------- | -------------------------------------------------------------- |

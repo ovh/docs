@@ -307,6 +307,8 @@ En caso de incidente mayor en el sitio principal o en el marco de un ejercicio e
 >
 > El failover en modo **LIVE** en Zerto Replication se realiza considerando el sitio principal como no disponible, por lo tanto hay que prestar atención a la configuración de red para evitar cualquier conflicto de direccionamiento IP.
 >
+> Además, en caso de que los dos Private Cloud se encuentren en dos países diferentes, es imposible mover el bloque de IP de un Private Cloud a otro.
+>
 > Todos los recursos que se inicien en el sitio secundario estarán activos a nivel de tratamiento de datos.
 >
 > Tenga en cuenta que la replicación entre los dos sitios se modifica o interrumpe (Más información más adelante)

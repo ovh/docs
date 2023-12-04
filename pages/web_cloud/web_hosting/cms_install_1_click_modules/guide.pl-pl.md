@@ -1,7 +1,7 @@
 ---
 title: "Instalacja strony WWW za pomocą 'modułu za 1 kliknięciem' (CMS)"
 excerpt: "Dowiedz się, jak zainstalować Twoją stronę WWW za pomocą 'modułów za 1 kliknięciem'"
-updated: 2023-09-14
+updated: 2023-11-14
 ---
 
 > [!primary]
@@ -60,6 +60,15 @@ W oknie, które się wyświetla wybierz odpowiedni CMS, a następnie wybierz dom
 ![Wybór modułu](images/add_a_module.png){.thumbnail}
 
 Jeśli Twoja domena nie jest na liście, przejdź do zakładki `MultiSite`{.action}, aby ją dodać. Zapoznaj się z naszym przewodnikiem [Jak rozdzielić hosting WWW na kilka stron](/pages/web_cloud/web_hosting/multisites_configure_multisite), jeśli potrzebujesz.
+
+> [!primary]
+>
+> Sprawdź, tuż pod formularzem pozwalającym na wybranie domeny (lub subdomeny), że `Domyślny katalog instalacyjny to` ten, w którym chcesz zainstalować swój "moduł za 1 kliknięciem".
+>
+> Przypominamy, że ten katalog musi być całkowicie pusty.
+>
+> W razie potrzeby sprawdź przewodnik "[Jak rozdzielić swój hosting WWW na kilka stron](/pages/web_cloud/web_hosting/multisites_configure_multisite)", aby zmienić katalog docelowy Twojej domeny.
+>
 
 Po poprawnym dodaniu domeny spróbuj ponownie dodać "moduł za 1 kliknięciem".
 
@@ -153,6 +162,18 @@ Wprowadź następujące informacje dotyczące konfiguracji modułu:
 - *domena:* domena, z którą chcesz zainstalować CMS-a. Jeśli potrzebujesz pomocy, zapoznaj się z naszym przewodnikiem [Jak rozdzielić swój hosting na kilka stron](/pages/web_cloud/web_hosting/multisites_configure_multisite).
 - *język:* język instalacji CMS.
 - *Ścieżka instalacji:* domena jest wprowadzana automatycznie podczas wyboru domeny. Możesz go uzupełnić, wprowadzając podkatalogi (dla zaawansowanych użytkowników).
+
+> [!primary]
+>
+> Sprawdź, czy w formularzu `Ścieżka instalacji` wstępnie wypełniony katalog jest katalogiem, w którym chcesz zainstalować "moduł za 1 kliknięciem" z nazwą domeny.
+>
+> Przypominamy, że ten katalog musi być całkowicie pusty.
+>
+> Ponadto, jeśli podasz podkatalog w `Ścieżka instalacji`, pojawi się on w adresie URL dostępu do Twojego "modułu za 1 kliknięciem".
+> Na przykład, jeśli wpiszę do formularza podkatalog *test*, adres URL dostępu do mojego "modułu za 1 kliknięciem" będzie wyglądał następująco: **http://domain.tld/test/**.
+>
+> W razie potrzeby sprawdź przewodnik "[Jak rozdzielić swój hosting WWW na kilka stron](/pages/web_cloud/web_hosting/multisites_configure_multisite)", aby zmienić katalog docelowy Twojej domeny.
+>
 
 Po uzupełnieniu tych informacji kliknij przycisk `Dalej`{.action}:
 

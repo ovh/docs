@@ -66,7 +66,7 @@ For example, to retrieve a list of your domain names, use the following API:
  
 > [!api]
 >
-> @api {GET} /domain
+> @api {v1} /domain GET /domain
 >
 
 **POST**
@@ -77,7 +77,7 @@ For example, to add a record to your DNS zone, use the following API:
 
 > [!api]
 >
-> @api {POST} /domain/zone/{zoneName}/record
+> @api {v1} /domain POST /domain/zone/{zoneName}/record
 >
 
 **PUT**
@@ -88,7 +88,7 @@ For example, if you have mistakenly set a record in your DNS zone, use the follo
 
 > [!api]
 >
-> @api {PUT} /domain/zone/{zoneName}/record/{id}
+> @api {v1} /domain PUT /domain/zone/{zoneName}/record/{id}
 >
 
 **DELETE**
@@ -99,7 +99,7 @@ For example, if you do not want to keep the DNS record that you added to your DN
 
 > [!api]
 >
-> @api {DELETE} /domain/zone/{zoneName}/record/{id}
+> @api {v1} /domain DELETE /domain/zone/{zoneName}/record/{id}
 >
 
 ##### **API parameters**
@@ -170,11 +170,11 @@ Once you have obtained your three keys (**AK**, **AS**, **CK**), you can sign AP
 To simplify the development of your applications, OVHcloud provides API wrappers in multiple languages.
 Using them will help you to avoid worrying about signing requests, so that you can focus on developing your application.
 
+- *Go* : <https://github.com/ovh/go-ovh>
 - *Perl* : <https://github.com/ovh/perl-ovh>
 - *Python* : <https://github.com/ovh/python-ovh>
 - *PHP* : <https://github.com/ovh/php-ovh>
 - *Node.js* : <https://github.com/ovh/node-ovh>
-- *Swift* : <https://github.com/ovh/swift-ovh>
 - *C#* : <https://github.com/ovh/csharp-ovh>
 
 Here is an example of how to use the `/me` section to manage your OVHcloud account:

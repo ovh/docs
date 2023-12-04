@@ -1,6 +1,7 @@
 ---
 title: "Exportar la copia de seguridad del espacio FTP de su hosting Cloud Web"
-updated: 2022-09-13
+excerpt: "Descubra cómo descargar una copia de seguridad del espacio FTP de un alojamiento Cloud Web"
+updated: 2023-11-16
 ---
 
 > [!primary]
@@ -90,7 +91,7 @@ Una vez que haya cargado los archivos, podrá [conectarse a su espacio FTP](/pag
 
 ## Más información 
 
-[Conectarse al espacio de almacenamiento de un alojamiento web](/pages/web_cloud/web_hosting/ftp_connection){.external}
+[Conectarse al espacio de almacenamiento de un alojamiento web](/pages/web_cloud/web_hosting/ftp_connection)
 
 [Conectarse mediante Filezilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)
 
@@ -99,4 +100,3 @@ Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con 
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestros distintos [servicios de soporte](https://www.ovhcloud.com/es-es/support-levels/).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>
-

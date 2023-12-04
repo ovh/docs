@@ -1,5 +1,5 @@
 ---
-title: "Tutorial -  Instalar manualmente WordPress"
+title: "Tutorial - Instalar manualmente WordPress"
 excerpt: "Descubra cómo instalar manualmente un CMS WordPress"
 updated: 2023-04-06
 ---

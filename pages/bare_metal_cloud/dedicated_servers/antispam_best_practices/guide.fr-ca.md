@@ -62,7 +62,7 @@ Une fois le problème résolu, vous pouvez débloquer votre adresse IP en effect
 
 #### Débloquer votre adresse IP depuis l'espace client
 
-Dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), rendez-vous dans la section `Bare Metal Cloud`{.action} et cliquez sur `IP`{.action}.
+Dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc),rendez-vous dans la section `Bare Metal Cloud`{.action} et cliquez sur `Network`{.action}. Cliquez ensuite sur `IP`{.action}.
 
 Dans le cadre jaune dédié aux alertes, cliquez sur la flèche déroulante `Voir toutes mes alertes`{.action} pour afficher toutes les alertes sur votre ou vos adresses IP.
 
@@ -90,7 +90,7 @@ Récupérez tout d'abord la liste des IPs de chaque service OVHcloud (Hosted Pri
 
 > [!api]
 >
-> @api {GET} /ip
+> @api {v1} /ip GET /ip
 >
 
 **type** : Indiquez le type d'IP (Dedicated, PCC, VPS, vRack, PCI, etc.)
@@ -111,7 +111,7 @@ Recherchez ensuite les IPs dans un état particulier grâce à l'appel suivant. 
 
 > [!api]
 >
-> @api {GET} /ip/{ip}/spam
+> @api {v1} /ip GET /ip/{ip}/spam
 >
 
 **ip** : spécifiez le bloc IP récupéré à l'étape précédente avec le masque de réseau. Par exemple 122.122.122.121/28.<br>
@@ -127,7 +127,7 @@ Vous pouvez obtenir des informations sur le blocage avec l'appel suivant, sinon 
 
 > [!api]
 >
-> @api {GET} /ip/{ip}/spam/{ipSpamming}
+> @api {v1} /ip GET /ip/{ip}/spam/{ipSpamming}
 >
 
 **ip** : spécifiez le bloc IP récupéré à l'étape précédente avec le masque de réseau.<br>
@@ -154,7 +154,7 @@ Si vous souhaitez obtenir les statistiques sur ce qui a été détecté, utilise
 
 > [!api]
 >
-> @api {GET} /ip/{ip}/spam/{ipSpamming}/stats
+> @api {v1} /ip GET /ip/{ip}/spam/{ipSpamming}/stats
 >
 
 **ip** : spécifiez le bloc IP récupéré à l'étape précédente avec le masque de réseau.<br>
@@ -183,7 +183,7 @@ Pour débloquer votre adresse IP, utilisez l'appel suivant :
 
 > [!api]
 >
-> @api {POST} /ip/{ip}/spam/{ipSpamming}/unblock
+> @api {v1} /ip POST /ip/{ip}/spam/{ipSpamming}/unblock
 >
 
 **ip** : spécifiez le bloc d'adresses IP récupéré à l'étape précédente avec le masque de réseau.<br>

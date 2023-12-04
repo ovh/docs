@@ -1,6 +1,6 @@
 ---
 title: "Tutorial - Installing WordPress manually"
-excerpt: "Find out how to  install WordPress manually"
+excerpt: "Find out how to install WordPress manually"
 updated: 2023-03-24
 ---
 

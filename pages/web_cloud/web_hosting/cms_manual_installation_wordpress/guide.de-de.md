@@ -1,6 +1,6 @@
 ---
 title: "Tutorial - Manuelle Installation von WordPress"
-excerpt: "Erfahren Sie hier, wie Sie Ihr WordPress CMS eigenständig installieren"
+excerpt: "Diese Anleitung erklärt, wie Sie Ihr WordPress CMS eigenständig installieren"
 updated: 2023-04-03
 ---
 

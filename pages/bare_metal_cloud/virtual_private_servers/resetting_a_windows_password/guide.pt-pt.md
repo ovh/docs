@@ -1,59 +1,149 @@
 ---
-title: 'Reinicializar uma palavra-passe Windows'
-excerpt: "Guia de reinicialização de uma palavra-passe em Windows"
-updated: 2020-11-25
+title: Alterar a palavra-passe de administrador num servidor Windows
+excerpt: "Descubra como redefinir a palavra-passe da sua conta de Administrador Windows num VPS ou numa instância Public Cloud graças ao modo Rescue da OVHcloud"
+updated: 2023-10-12
 ---
 
 > [!primary]
-> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir"nesta página.
 >
 
 ## Objetivo
 
-É possível que tenha de repor uma palavra-passe no seu VPS em Windows. Este manual permite-lhe reinicializar facilmente uma palavra-passe e restabelecer a ligação ao seu VPS.
+Quando instalar ou reiniciar um sistema operativo Windows Server, irá receber uma palavra-passe de administrador (conta do *Administrator*).
+
+Se perder a sua palavra-passe de administrador, pode repô-la através do modo rescue da OVHcloud.
+
+**Saiba como repor a palavra-passe da conta de administrador de um sistema operativo Windows Server através do modo rescue OVHcloud.**
 
 ## Requisitos
 
-- O VPS deve estar em modo rescue (para mais informações consulte [Ativar o modo rescue num VPS](/pages/bare_metal_cloud/virtual_private_servers/rescue)).
+- Dispor de uma [VPS](https://www.ovhcloud.com/pt/vps/) ou de uma [instância Public Cloud](https://www.ovhcloud.com/pt/public-cloud/) na sua conta OVHcloud
+- Estar ligado à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 
 ## Instruções
 
-Ligue-se ao VPS através do VNC da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) com os dados de acesso que recebeu por e-mail.
+### Etapa 1: Reiniciar o servidor em modo Rescue
 
-Introduza os seguintes comandos para montar o sistema de ficheiros distante:
+O modo rescue deve ser ativado para que a palavra-passe do administrador possa ser alterada.
 
-```sh
+Consulte o guia correspondente ao seu serviço para o reiniciar em modo rescue:
+
+- [VPS](/pages/bare_metal_cloud/virtual_private_servers/rescue)
+- [Instância Public Cloud](/pages/public_cloud/compute/put_an_instance_in_rescue_mode)
+
+### Etapa 2: Montar a partição do sistema
+
+Ligue-se ao servidor através de SSH. (Se necessário, consulte o nosso [guia de introdução SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction).)
+
+Pode igualmente abrir uma ligação ao servidor utilizando o [KVM (VPS)](/pages/bare_metal_cloud/virtual_private_servers/using_kvm_for_vps) ou a [consola VNC (instância Public Cloud)](/pages/public_cloud/compute/first_steps_with_public_cloud_instance#accessvnc).
+
+Digite os seguintes comandos para montar o sistema de arquivos do Windows:
+
+```bash
 ntfsfix /dev/sdb2
-mount-t ntfs-3g /dev/sdb2 /mnt
 ```
 
-Agora, inicie o procedimento de recuperação da password:
-
-```sh
-cd /mnt/Windows/System32/config
-chntpw -l SAM
+```bash
+mount -t ntfs-3g /dev/sdb2 /mnt
 ```
 
-Vão ver uma lista de utilizadores. Queira tomar nota da conta de administrador (ou de uma conta cuja palavra-passe deve reinicializar). Neste exemplo, vamos utilizar a conta `Administrator`. Tenha em conta que as encomendas são sensíveis ao desmantelamento.
+### Etapa 3: Eliminar a palavra-passe atual
 
-```sh
-chntpw -u Administrator SAM
+Neste passo, o ficheiro *SAM* é modificado com uma ferramenta em modo Rescue. Listar utilizadores do Windows com este comando:
+
+```bash
+chntpw -l /mnt/Windows/System32/config/SAM
 ```
 
-Carregue em `1`{.action} e `Enter`{.action} para apagar a palavra-passe. Carregue em `q`{.action} para sair da linha de comandos de alteração da palavra-passe. De seguida, carregue `y`{.action} para escrever as alterações.
+```text
+| RID -|---------- Username ------------| Admin? |- Lock? --|
+| 01f4 | Administrator                  | ADMIN  | dis/lock |
+| 01f7 | DefaultAccount                 |        | dis/lock |
+| 01f5 | Guest                          |        | dis/lock |
+| 01f8 | WDAGUtilityAccount             |        | dis/lock |
+```
 
-Agora pode tirar o VPS do modo rescue. (para mais informações, consulte o guia [Ativar o modo rescue num VPS](/pages/bare_metal_cloud/virtual_private_servers/rescue)).
+Neste exemplo de saída, `Administrator` é a conta de administrador local. Inicie o processo de reinicialização com o seguinte comando. (Utilize `admin` se não existir o `Administrator`.)
 
-Na sua próxima ligação, não será obrigado a introduzir uma palavra-passe para a sessão cuja palavra-passe alterou.
+```bash
+chntpw -u Administrator /mnt/Windows/System32/config/SAM
+```
+
+```text
+RID     : 0500 [01f4]
+Username: Administrator
+fullname:
+comment : Built-in account for administering the computer/domain
+homedir :
+
+00000220 = Administrators (which has 1 members)
+
+Account bits: 0x0010 =
+[ ] Disabled        | [ ] Homedir req.    | [ ] Passwd not req. |
+[ ] Temp. duplicate | [X] Normal account  | [ ] NMS account     |
+[ ] Domain trust ac | [ ] Wks trust act.  | [ ] Srv trust act   |
+[ ] Pwd don't expir | [ ] Auto lockout    | [ ] (unknown 0x08)  |
+[ ] (unknown 0x10)  | [ ] (unknown 0x20)  | [ ] (unknown 0x40)  |
+
+Failed login count: 47034, while max tries is: 0
+Total  login count: 5
+
+- - - - User Edit Menu:
+ 1 - Clear (blank) user password
+ 2 - Unlock and enable user account [probably locked now]
+ 3 - Promote user (make user an administrator)
+ 4 - Add user to a group
+ 5 - Remove user from a group
+ q - Quit editing user, back to user select
+Select: [q] >
+```
+
+Digite "1" e pressione "Enter". (Utilize primeiro a opção 2 se houver um "X" junto de "Desativado".)
+
+```text
+Select: [q] > 1
+Password cleared!
+```
+
+Digite "q" e pressione "Enter "para sair da ferramenta. Digite "y" quando solicitado e pressione "Enter ".
+
+```text
+Select: [q] > q
+ 
+Hives that have changed:
+ #  Name
+ 0  </mnt/Windows/System32/config/SAM>
+Write hive files? (y/n) [n] : y
+ 0  </mnt/Windows/System32/config/SAM> - OK
+```
+
+### Etapa 4: Reiniciar o servidor
+
+Em seguida, pode sair do modo rescue e reiniciar o servidor. Se necessário, consulte o guia correspondente ao seu serviço:
+
+- [VPS](/pages/bare_metal_cloud/virtual_private_servers/rescue)
+- [Instância Public Cloud](/pages/public_cloud/compute/put_an_instance_in_rescue_mode)
+
+### Etapa 5: Definir uma nova palavra-passe (KVM / VNC)
 
 > [!warning]
 >
-> É extremamente arriscado deixar a conta de administrador (ou qualquer conta com direitos elevados) com uma palavra-passe vazia. Conecte-se imediatamente à sua instalação do Windows para reinicializar a sua palavra-passe.
-> 
+> Não ignore este passo. Uma conta de administrador desprotegida representa um elevado risco de segurança.
+>
 
-Depois de aceder à sua sessão, prima o `CTRL`{.action} + `ALT`{.action} + `DELETE`{.action} e, a seguir, clique em `Alterar palavra-passe`{.action}. Se utilizar o VNC, clique no botão situado no canto superior direito, intitulado `Send CtrlAltDel`{.action}.
+Aceda ao seu servidor e introduza `cmd` na barra de procura para abrir a linha de comandos.
 
-Deixe o campo `Antigo password` vazio e escreva a sua nova password duas vezes. Assegure-se de que a sua password é idêntica.
+Defina a palavra-passe do utilizador atual ("Administrator"):
+
+```powershell
+net user Administrator *
+```
+
+![administratorpe](images/adminpw_win.png){.thumbnail}
+
+Já se pode iniciar sessão como "Administrator"com esta nova palavra-passe.
+
 
 ## Saiba mais
 

@@ -1,7 +1,7 @@
 ---
 title: 'Using Zerto between OVHcloud and a third party platform'
 excerpt: 'Learn how to setup Zerto between your OVHcloud Private Cloud and another platform'
-updated: 2022-02-11
+updated: 2023-10-23
 ---
 
 ## Objective
@@ -20,14 +20,14 @@ Check out [Zerto between two OVHcloud datacenters](/pages/hosted_private_cloud/h
 - VRAs (Virtual Replication Appliances) on both sides that are able to connect to the counterpart on TCP ports 4007 and 4008
 - Zerto administration consoles or ZVMs (Zerto Virtual Managers) that are able to connect to the counterpart on TCP port 9081
 
->[!primary]
+> [!primary]
 >
 > For an operational Zerto installation
 > [Download Zerto](https://www.zerto.com/myzerto/login/?redirect_to=%2Fmyzerto%2Fsupport%2Fdownloads%2F) (you need to have an account)
 > [Install Documentation Zerto](https://help.zerto.com/bundle/Install.VC.HTML/page/Installing_the_Zerto_Solution.htm)
 >
 
->[!warning]
+> [!warning]
 >
 > OVHcloud supports the N-1 version of Zerto (Currently up to and including version 9.7)
 > You can find the different versions available here : <https://help.zerto.com/kb/000004585>.

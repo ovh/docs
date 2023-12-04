@@ -62,35 +62,35 @@ Rendez-vous sur le lien <https://api.ovh.com/console/> puis connectez-vous avec 
 
 > [!api]
 >
-> @api {POST} /telephony/{billingAccount}/line/{serviceName}/click2CallUser
+> @api {v1} /telephony POST /telephony/{billingAccount}/line/{serviceName}/click2CallUser
 > 
 
 Permet de créer un nouvel identifiant Click2Call et de lui définir son mot de passe.
 
 > [!api]
 >
-> @api {GET} /telephony/{billingAccount}/line/{serviceName}/click2CallUser
+> @api {v1} /telephony GET /telephony/{billingAccount}/line/{serviceName}/click2CallUser
 > 
 
 Permet de récupérer l'*id* d'un identifiant Click2Call créé précédemment.
  
 > [!api]
 >
-> @api {GET} /telephony/{billingAccount}/line/{serviceName}/click2CallUser/{id}
+> @api {v1} /telephony GET /telephony/{billingAccount}/line/{serviceName}/click2CallUser/{id}
 > 
 
 Permet de récupérer les informations de configuration d'un identifiant Click2Call, excepté son mot de passe.
 
 > [!api]
 >
-> @api {POST} /telephony/{billingAccount}/line/{serviceName}/click2CallUser/{id}/changePassword
+> @api {v1} /telephony POST /telephony/{billingAccount}/line/{serviceName}/click2CallUser/{id}/changePassword
 > 
 
 Permet de modifier le mot de passe d'un identifiant Click2Call.
 
 > [!api]
 >
-> @api {DELETE} /telephony/{billingAccount}/line/{serviceName}/click2CallUser/{id}
+> @api {v1} /telephony DELETE /telephony/{billingAccount}/line/{serviceName}/click2CallUser/{id}
 > 
 
 Permet de supprimer un identifiant Click2Call.
@@ -122,14 +122,14 @@ Rendez-vous sur le lien <https://api.ovh.com/console/> puis connectez-vous avec 
 
 > [!api]
 >
-> @api {POST} /telephony/{billingAccount}/line/{serviceName}/click2CallUser/{id}/click2Call
+> @api {v1} /telephony POST /telephony/{billingAccount}/line/{serviceName}/click2CallUser/{id}/click2Call
 > 
 
 Permet d'exécuter les appels depuis la ligne où a été activé le Click2Call.
 
 > [!api]
 >
-> @api {POST} /telephony/{billingAccount}/line/{serviceName}/click2Call
+> @api {v1} /telephony POST /telephony/{billingAccount}/line/{serviceName}/click2Call
 > 
 
 Permet d'exécuter les appels depuis la ligne en activant le mode intercom de votre téléphone.

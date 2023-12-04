@@ -4,10 +4,7 @@ excerpt: "How to connect to APIs with OVHcloud service accounts using the Oauth2
 updated: 2023-08-24
 ---
 
-> [!warning]
->
-> This feature is currently in beta. You can find more information on <https://labs.ovhcloud.com/en/>.
->
+ 
 
 ## Objective
 
@@ -117,7 +114,7 @@ To get information on your web hosting plan, you can now make a call on:
 
 > [!api]
 >
-> @api {GET} /hosting/web/xxxxxxx.cluster001.hosting.ovh.net
+> @api {v1} /hosting/web GET /hosting/web/xxxxxxx.cluster001.hosting.ovh.net
 >
 
 To do this, you will need to provide the token retrieved earlier in the header of your request, as follows:

@@ -29,7 +29,7 @@ Zaloguj się na stronie [https://api.ovh.com/](https://api.ovh.com/) i skorzysta
 
 > [!api]
 >
-> @api {POST} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/backup/generateReport
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/backup/generateReport
 
 Wpisz zmienne:
 
@@ -63,7 +63,7 @@ Zaloguj się na stronie [https://api.ovh.com/](https://api.ovh.com/) i skorzysta
 
 > [!api]
 >
-> @api {POST} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/backup/batchRestore
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/backup/batchRestore
 >
 
 Wpisz zmienne:

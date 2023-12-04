@@ -69,7 +69,7 @@ La liste des IPv4 de sortie potentiellement utilisées par votre service OVHclou
 
 > [!api]
 >
-> @api {GET} /ipLoadbalancing/{serviceName}/natIp
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/natIp
 > 
 
 ### Correction de l'IP source dans les logs <a name="ip-source-logs"></a>
@@ -231,7 +231,7 @@ Si vous utilisez l'API dans votre code, cela correspond à une liste json telle 
 
 > [!api]
 >
-> @api {PUT} /ipLoadbalancing/{serviceName}/http/frontend/{frontendId}
+> @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/http/frontend/{frontendId}
 > 
 
 |Paramètre|Signification|
@@ -244,7 +244,7 @@ Si vous utilisez l'API dans votre code, cela correspond à une liste json telle 
 
 > [!api]
 >
-> @api {POST} /ipLoadbalancing/{serviceName}/refresh
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/refresh
 > 
 
 |Paramètre|Signification|

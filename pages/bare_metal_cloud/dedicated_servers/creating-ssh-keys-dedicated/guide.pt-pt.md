@@ -1,7 +1,7 @@
 ---
 title: Criar e utilizar chaves SSH
 excerpt: Descubra como criar uma chave SSH para efetuar uma ligação segura ao seu servidor
-updated: 2023-07-24
+updated: 2023-11-22
 ---
 
 > [!primary]
@@ -201,6 +201,46 @@ Para saber mais sobre as ligações SSH, consulte os guias de [primeiros passos]
 
 ### Adicionar chaves SSH ao servidor <a name="addserverkey"></a>
 
+#### Transferência de chaves públicas criadas em sistemas baseados em GNU/Linux, MacOS ou BSD
+
+Se criou os seus pares de chaves SSH num sistema baseado em GNU/Linux, MacOS ou BSD, pode utilizar o comando `ssh-copy-id` para adicionar as chaves públicas ao seu servidor.
+
+O utilitário `ssh-copy-id` copia as chaves públicas no ficheiro `~/.ssh/authorized_keys` no servidor remoto especificado e cria automaticamente o ficheiro nesse diretório, se necessário.
+
+```bash
+ssh-copy-id user@IP_ADDRESS
+```
+
+Por predefinição, o `ssh-copy-id` tentará transferir todas as chaves públicas para o diretório `~/.ssh` do seu utilizador local. No entanto, se precisar de adicionar apenas uma chave pública, pode especificar este ficheiro de chave com a opção `-i` seguida do caminho do ficheiro:
+
+```bash
+ssh-copy-id -i ~/.ssh/KeyFileName user@IP_ADDRESS
+```
+
+Por exemplo:
+
+```bash
+ssh-copy-id -i ~/.ssh/VPS_rsa.pub ubuntu@169.254.10.250
+```
+
+A palavra-passe do utilizador será solicitada. receberá uma mensagem conforme indicado abaixo.
+
+```console
+Number of key(s) added: 1
+
+Now try logging into the machine, with:   "ssh 'user@server-ip'"
+and check to make sure that only the key(s) you wanted were added.
+```
+
+Se aparecer uma mensagem de erro, pode adicionar manualmente as suas chaves públicas seguindo os passos indicados abaixo.
+
+> [!primary]
+>
+> Como boa prática e por razões de segurança, um único par de chaves não deve ser utilizado por vários utilizadores. Como cada utilizador dos sistemas GNU/Linux possui o seu próprio ficheiro `authorized_keys` em `~/.ssh/`, pode utilizar o comando `ssh-copy-id` como se mostra acima e adaptar `KeyFileName` e `user` depois de ter [criado o par de chaves](#openssh).
+>
+
+#### Adição manual de chaves públicas a um servidor
+
 [Ligue-se](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction) ao seu servidor e certifique-se de que está no diretório `$HOME` do seu utilizador. Se já não existir, crie a pasta `.ssh`:
 
 ```bash
@@ -213,7 +253,7 @@ Para armazenar a chave para o utilizador atual, abra (ou crie) o ficheiro `autho
 nano ~/.ssh/authorized_keys
 ```
 
-Cole a [**chave pública**](#publickey) neste ficheiro. Guarde o ficheiro e saia do editor. Reinicie o seu servidor ou reinicie apenas o serviço OpenSSH com um dos seguintes comandos (o comando apropriado pode variar em função do seu sistema operativo):
+Cole a [**chave pública**](#publickey) neste ficheiro. Guarde o ficheiro e saia do editor. Reinicie o seu servidor (`sudo reboot`) ou reinicie apenas o serviço OpenSSH com um dos seguintes comandos (o comando apropriado pode variar em função do seu sistema operativo):
 
 ```bash
 sudo systemctl restart ssh

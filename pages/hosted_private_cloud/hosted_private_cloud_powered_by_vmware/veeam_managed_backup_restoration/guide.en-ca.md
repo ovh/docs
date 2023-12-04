@@ -25,7 +25,7 @@ Log in to [https://ca.api.ovh.com/](https://ca.api.ovh.com/) and use the followi
 
 > [!api]
 >
-> @api {POST} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/backup/generateReport
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/backup/generateReport
 
 Enter the variables:
 
@@ -59,7 +59,7 @@ Log in to [https://ca.api.ovh.com/](https://ca.api.ovh.com/) and use the followi
 
 > [!api]
 >
-> @api {POST} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/backup/batchRestore
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/backup/batchRestore
 >
 
 Enter the variables:

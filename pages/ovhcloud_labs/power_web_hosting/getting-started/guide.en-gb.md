@@ -188,13 +188,13 @@ The [OVHcloud APIs](https://api.ovh.com/) currently available for POWER hosting 
 
 > [!api]
 >
-> @api {GET} /web hosting/web/{serviceName}/availableConfigurations
+> @api {v1} /hosting/web WE /hosting/web/{serviceName}/availableConfigurations
 
 #### Retrieve active configuration <a name="api-get-active-configuration"></a>
 
 > [!api]
 >
-> @api {GET} /web hosting/web/{serviceName}/configuration
+> @api {v1} /hosting/web WE /hosting/web/{serviceName}/configuration
 .
 > This endpoint allows you to verify your configuration parameters, for example your entry point.
  
@@ -202,7 +202,7 @@ The [OVHcloud APIs](https://api.ovh.com/) currently available for POWER hosting 
 
 > [!api]
 >
-> @api {PUT} /web hosting/web/{serviceName}/configuration
+> @api {v1} /hosting/web WE /hosting/web/{serviceName}/configuration
 
 > This endpoint allows you to modify your configuration parameters, for example your entry point.
 
@@ -210,7 +210,7 @@ The [OVHcloud APIs](https://api.ovh.com/) currently available for POWER hosting 
 
 > [!api]
 >
-> @api {POST} /web hosting/web/{serviceName}/attachedDomain/{domain}/restart
+> @api {v1} /hosting/web WE /hosting/web/{serviceName}/attachedDomain/{domain}/restart
 
 ### Setting up a redirection from HTTP to HTTPS
 

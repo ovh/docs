@@ -47,7 +47,7 @@ In this case, you want to restore your volume to its latest manual snapshot, cre
 
 > [!api]
 >
-> @api {GET} /storage/netapp/{serviceName}/share/{shareId}/snapshot
+> @api {v1} /storage GET /storage/netapp/{serviceName}/share/{shareId}/snapshot
 >
 
 - `{serviceName}` is the service unique ID
@@ -59,7 +59,7 @@ In this case, you want to restore your volume to its latest manual snapshot, cre
 
 > [!api]
 >
-> @api {POST} /storage/netapp/{serviceName}/share/{shareId}/revert
+> @api {v1} /storage POST /storage/netapp/{serviceName}/share/{shareId}/revert
 >
 
 - `{serviceName}` is the service unique ID
@@ -92,7 +92,7 @@ You will have to hold the latest snapshot taken by the snapshot policy associate
 
 > [!api]
 >
-> @api {GET} /storage/netapp/{serviceName}/share/{shareId}/snapshot
+> @api {v1} /storage GET /storage/netapp/{serviceName}/share/{shareId}/snapshot
 >
 
 - `{serviceName}` is the service unique ID
@@ -104,7 +104,7 @@ You will have to hold the latest snapshot taken by the snapshot policy associate
 
 > [!api]
 >
-> @api {POST} /storage/netapp/{serviceName}/share/{shareId}/snapshot/{snapshotId}/hold
+> @api {v1} /storage POST /storage/netapp/{serviceName}/share/{shareId}/snapshot/{snapshotId}/hold
 
 - `{serviceName}` is the service unique ID
 - `{shareId}` is the share to restore
@@ -129,7 +129,7 @@ If other `manual` snapshots were taken before this snapshot, they will have to b
 
 > [!api]
 >
-> @api {POST} /storage/netapp/{serviceName}/share/{shareId}/revert
+> @api {v1} /storage POST /storage/netapp/{serviceName}/share/{shareId}/revert
 >
 
 - `{serviceName}` is the Service unique ID

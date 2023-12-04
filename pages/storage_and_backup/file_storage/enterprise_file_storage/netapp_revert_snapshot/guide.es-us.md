@@ -51,7 +51,7 @@ En este caso, desea restaurar el volumen a su último snapshot de tipo "manual",
 
 > [!api]
 >
-> @api {GET} /storage/netapp/{serviceName}/share/{shareId}/snapshot
+> @api {v1} /storage GET /storage/netapp/{serviceName}/share/{shareId}/snapshot
 >
 
 - `{serviceName}` es el identificador único del servicio
@@ -63,7 +63,7 @@ En este caso, desea restaurar el volumen a su último snapshot de tipo "manual",
 
 > [!api]
 >
-> @api {POST} /storage/netapp/{serviceName}/share/{shareId}/revert
+> @api {v1} /storage POST /storage/netapp/{serviceName}/share/{shareId}/revert
 >
 
 - `{serviceName}` es el identificador único del servicio
@@ -96,7 +96,7 @@ Deberá "conservar" (`hold`) el último snapshot realizado por la política de s
 
 > [!api]
 >
-> @api {GET} /storage/netapp/{serviceName}/share/{shareId}/snapshot
+> @api {v1} /storage GET /storage/netapp/{serviceName}/share/{shareId}/snapshot
 >
 
 - `{serviceName}` es el identificador único del servicio
@@ -108,7 +108,7 @@ Deberá "conservar" (`hold`) el último snapshot realizado por la política de s
 
 > [!api]
 >
-> @api {POST} /storage/netapp/{serviceName}/share/{shareId}/snapshot/{snapshotId}/hold
+> @api {v1} /storage POST /storage/netapp/{serviceName}/share/{shareId}/snapshot/{snapshotId}/hold
 
 - `{serviceName}` es el identificador único del servicio
 - `{shareId}` es el volumen a restaurar
@@ -133,7 +133,7 @@ Si se han realizado otros snapshots de tipo `manual` antes de realizar el snapsh
 
 > [!api]
 >
-> @api {POST} /storage/netapp/{serviceName}/share/{shareId}/revert
+> @api {v1} /storage POST /storage/netapp/{serviceName}/share/{shareId}/revert
 >
 
 - `{serviceName}` es el identificador único del servicio

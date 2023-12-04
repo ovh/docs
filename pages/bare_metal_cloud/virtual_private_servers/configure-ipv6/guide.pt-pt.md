@@ -66,14 +66,14 @@ A primeira permite-lhe obter o endereço IPv6 associado ao seu servidor.
 
 > [!api]
 >
-> @api {GET} /vps/{serviceName}/ips
+> @api {v1} /vps GET /vps/{serviceName}/ips
 >
 
 A segunda serve para obter a gateway IPv6 associada ao seu servidor.
 
 > [!api]
 >
-> @api {GET} /vps/{serviceName}/ips/{ipAddress}
+> @api {v1} /vps GET /vps/{serviceName}/ips/{ipAddress}
 >
 
 Depois de obter os endereços, consulte o passo 2 "[Aplicar a configuração IPv6](#applyipv6)".

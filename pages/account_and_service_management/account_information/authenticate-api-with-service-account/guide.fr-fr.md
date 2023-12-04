@@ -4,10 +4,7 @@ excerpt: "Comment se connecter aux API avec ses comptes de service OVHcloud grâ
 updated: 2023-08-24
 ---
 
-> [!warning]
->
-> Cette fonctionnalité est actuellement en bêta. Retrouvez plus d'informations sur <https://labs.ovhcloud.com/fr/>.
->
+ 
 
 ## Objectif
 
@@ -117,7 +114,7 @@ Pour obtenir des informations sur votre hébergement web, vous pouvez désormais
 
 > [!api]
 >
-> @api {GET} /hosting/web/xxxxxxx.cluster001.hosting.ovh.net
+> @api {v1} /hosting/web GET /hosting/web/xxxxxxx.cluster001.hosting.ovh.net
 >
 
 Pour ce faire, vous devez fournir le token récupéré précédemment en header de votre requête de la façon suivante :

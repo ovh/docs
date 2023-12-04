@@ -1,7 +1,7 @@
 ---
 title: OVHcloud Dienste kündigen
 excerpt: Erfahren Sie hier, wie Sie OVHcloud Abonnements beenden
-updated: 2022-03-22
+updated: 2023-11-16
 ---
 
 > [!primary]
@@ -219,7 +219,7 @@ Um Ihr [Hosted Exchange](https://www.ovhcloud.com/de/emails/hosted-exchange/) zu
 
 #### Private Exchange <a name="private"></a>
 
-Um Ihr [Private Exchange](https://www.ovhcloud.com/de/emails/private-exchange/) zu kündigen, folgen Sie den Anweisungen in dieser [Anleitung](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_billing_exchange#accounts-entfernen).
+Um Ihr [Private Exchange](https://www.ovhcloud.com/de/emails/private-exchange/) zu kündigen, folgen Sie den Anweisungen in dieser [Anleitung](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_billing_exchange#accounts-entfernen_1).
 
 #### Office 365 CSP1 <a name="office-csp1"></a>
 

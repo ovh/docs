@@ -66,7 +66,7 @@ Utilisez l'appel API suivant :
 
 > [!api]
 >
-> @api {POST} /ip/{ip}/move
+> @api {v1} /ip POST /ip/{ip}/move
 > 
 
 Les champs doivent être complétés ainsi :
@@ -85,7 +85,7 @@ Si, par la suite, vous devez détacher le bloc IP, vous pouvez utiliser cet appe
 
 > [!api]
 >
-> @api {POST} /ip/{ip}/park
+> @api {v1} /ip POST /ip/{ip}/park
 > 
 
 > [!warning]

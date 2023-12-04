@@ -62,7 +62,7 @@ When triggering an OS installation, the customer can either choose between sever
 
 > [!api]
 >
-> @api {POST} /dedicated/server/{serviceName}/install/start
+> @api {v1} /dedicated/server POST /dedicated/server/{serviceName}/install/start
 >
 
 **OVHcloud templates <a name="OVHcloudtemplates"></a>**
@@ -73,14 +73,14 @@ To list available templates (depending on your server's hardware), use the follo
 
 > [!api]
 >
-> @api {GET} /dedicated/installationTemplate
+> @api {v1} /dedicated/installationTemplate GET /dedicated/installationTemplate
 >
 
 You can get the details such as LVM compatibility, filesystem availability of a specific OVHcloud template with the following API call:
 
 > [!api]
 >
-> @api {GET} /dedicated/installationTemplate/{templateName}
+> @api {v1} /dedicated/installationTemplate GET /dedicated/installationTemplate/{templateName}
 >
 
 Example:
@@ -103,8 +103,8 @@ The partitioning layout defined within an OVHcloud template cannot be changed: t
 
 > [!api]
 >
-> @api {GET} /dedicated/installationTemplate/{templateName}/partitionScheme/{schemeName}/partition
-> @api {GET} /dedicated/installationTemplate/{templateName}/partitionScheme/{schemeName}/partition/{mountpoint}
+> @api {v1} /dedicated/installationTemplate GET /dedicated/installationTemplate/{templateName}/partitionScheme/{schemeName}/partition
+> @api {v1} /dedicated/installationTemplate GET /dedicated/installationTemplate/{templateName}/partitionScheme/{schemeName}/partition/{mountpoint}
 >
 
 **Customer Templates <a name="customertemplates"></a>**
@@ -113,24 +113,24 @@ Users can create custom installation templates based on OVHcloud templates in or
 
 > [!api]
 >
-> @api {POST} /me/installationTemplate
+> @api {v1} /me POST /me/installationTemplate
 >
 
 Once created, the template inherits the default partitioning layout and partitions can be listed on the "default" scheme:
 
 > [!api]
 >
-> @api {GET} /me/installationTemplate/{templateName}/partitionScheme/{schemeName}/partition
+> @api {v1} /me GET /me/installationTemplate/{templateName}/partitionScheme/{schemeName}/partition
 >
 
 Of course a partition can be altered, deleted, added and then displayed:
 
 > [!api]
 >
-> @api {PUT} /me/installationTemplate/{templateName}/partitionScheme/{schemeName}/partition/{mountpoint}
-> @api {DELETE} /me/installationTemplate/{templateName}/partitionScheme/{schemeName}/partition/{mountpoint}
-> @api {POST} /me/installationTemplate/{templateName}/partitionScheme/{schemeName}/partition
-> @api {GET} /me/installationTemplate/{templateName}/partitionScheme/{schemeName}/partition/{mountpoint}
+> @api {v1} /me PUT /me/installationTemplate/{templateName}/partitionScheme/{schemeName}/partition/{mountpoint}
+> @api {v1} /me DELETE /me/installationTemplate/{templateName}/partitionScheme/{schemeName}/partition/{mountpoint}
+> @api {v1} /me POST /me/installationTemplate/{templateName}/partitionScheme/{schemeName}/partition
+> @api {v1} /me GET /me/installationTemplate/{templateName}/partitionScheme/{schemeName}/partition/{mountpoint}
 >
 
 #### API Partition Layout
@@ -239,7 +239,7 @@ From the [OVHcloud API](https://ca.api.ovh.com/), this status can be obtained wi
 
 > [!api]
 >
-> @api {GET} /dedicated/server/{serviceName}/install/status
+> @api {v1} /dedicated/server GET /dedicated/server/{serviceName}/install/status
 >
 
 There are 2 types of errors:

@@ -1,5 +1,5 @@
 ---
-title: 'Activer les adresses e-mails incluses dans votre hébergement web'
+title: "Activer les adresses e-mails incluses dans votre hébergement web"
 excerpt: "Découvrez comment activer les adresses e-mails incluses avec votre offre d'hébergement web"
 updated: 2023-03-02
 ---

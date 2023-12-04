@@ -1,6 +1,7 @@
 ---
-title: 'Lista dos endereços IP dos clusters e alojamentos web'
-updated: 2023-08-22
+title: "Lista dos endereços IP dos clusters e alojamentos web"
+excerpt: "Saiba todos os endereços IP disponíveis nos nossos alojamentos web"
+updated: 2023-11-23
 ---
 
 > [!primary]
@@ -14,6 +15,8 @@ Neste guia encontrará todos os endereços IP dos alojamentos web OVHcloud. Assi
 - do seu cluster;
 - das suas opções (CDN, SSL pago, SSL gratuito...);
 - do país desejado.
+
+**Saiba todos os endereços IP disponíveis nos nossos alojamentos web.**
 
 > [!primary]
 >

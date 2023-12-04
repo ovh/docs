@@ -44,6 +44,12 @@ Once the process is complete, your new Public Cloud project will be available in
 
 ## Go further
 
+[Creating and connecting to your first Public Cloud instance](/pages/public_cloud/compute/public-cloud-first-steps)
+[Changing project contacts](/pages/public_cloud/compute/change_project_contacts)
+[Delegating projects](/pages/public_cloud/compute/delegate_projects)
+[Deleting a Public Cloud project](/pages/public_cloud/compute/delete_a_project)
+[Information regarding Public Cloud billing options](/pages/public_cloud/compute/analyze_billing)
+
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.

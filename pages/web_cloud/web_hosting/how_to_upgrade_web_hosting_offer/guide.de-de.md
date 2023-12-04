@@ -66,7 +66,7 @@ Löschen Sie andernfalls nicht verwendete Datenbanken, und reduzieren Sie ggf. d
 
 Nach der Löschung der Daten Ihrer Datenbanken müssen Sie das verwendete Quota neu berechnen. Loggen Sie sich hierzu in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus. Gehen Sie auf der angezeigten Seite in den Tab `Datenbanken`{.action} und klicken Sie dann auf den Button `...`{.action} rechts neben der betreffenden Datenbank und dann auf `Quota neu berechnen`{.action}.
 
-![quota](bilder/quota.png){.thumbnail}
+![quota](images/quota.png){.thumbnail}
 
 > [!primary]
 >

@@ -1,9 +1,8 @@
 ---
 title: "Mon site est lent. Que faire ?" 
 excerpt: "Identifiez l'origine des lenteurs de votre site web et découvrez comment résoudre cette situation"
-updated: 2022-11-17
+updated: 2023-10-26
 ---
-
  
 ## Objectif
 
@@ -155,7 +154,7 @@ Si vous utilisez une base de données sur une offre **Web Cloud Databases**, con
 
 Si la connexion est réussie, vous arrivez sur l'interface suivante :
 
-![PHPMyAdmin](images/pma.png){.thumbnail}
+![PHPMyAdmin](images/pma-main-page.png){.thumbnail}
 
 > [!warning]
 >

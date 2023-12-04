@@ -1,8 +1,9 @@
 ---
 title: Migrating an infrastructure to a new vDC
 excerpt: Find out how to move your workload from an existing vDC to a new vDC in the same VMware infrastructure
-updated: 2023-07-31
+updated: 2023-11-22
 ---
+
 <style>
 .ovh-api-main { background:#fff;}
 </style> 
@@ -144,7 +145,7 @@ You have now chosen your commercial range and your hosts. Please note that some 
 
 > [!api]
 >
-> @api {GET} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/filer/{filerId}/checkGlobalCompatible
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/filer/{filerId}/checkGlobalCompatible
 >
 
 **Expected return:** boolean
@@ -185,7 +186,7 @@ Run the OVHcloud API to convert the datastore to global:
 
 > [!api]
 >
-> @api {POST}  /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/filer/{filerId}/convertToGlobal
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/filer/{filerId}/convertToGlobal
 >
 
 **Expected return:** Task information
@@ -338,8 +339,6 @@ As a first step, please read our documentation on [getting started with NSX](/pa
 <a name="dfw"></a>
 ##### Step 4.8.1 NSX Distributed Firewall
 
-The NSX distributed firewall automatically protects the entire vDC. The Migration Coordinator tool allows you to do this, though a ticket must be created so that a support agent can trigger it. You can also call our [Professional Services](https://www.ovhcloud.com/en-gb/professional-services/) team to trigger the procedure.
-
 However, it is crucial to understand that objects placed in the Distributed Firewall will correspond to the significant object ID locally. For example, if a vRack VLAN port group is used in a rule in the Distributed Firewall, it will reference the port group from the original vDC only, not from a recreated vRack port group in the destination vDC.
 
 It will be necessary to verify if the Distributed Firewall contains significant local objects and modify the Distributed Firewall so that it can also see the objects in the new vDC. For example, a rule that uses a vRack VLAN port group from the original vDC can be modified to use both the original vRack VLAN port group and the new vRack VLAN port group in the destination vDC.
@@ -368,8 +367,6 @@ Generally, depending on the number of edges deployed via NSX-V in the source vDC
 Additionally, if your production requires zero service interruption, solutions can be implemented to avoid these disruptions.
 
 In both cases mentioned above, our [Professional Services](https://www.ovhcloud.com/en-gb/professional-services/) team can assist you in this process.
-
-Professional Services can also use the Migration Coordinator Tool to generate an NSX network blueprint based on your existing NSX-V architecture, in order to expedite or simplify the migration process.
 
 <a name="t1seg"></a>
 ##### Step 4.8.3.1 Create T1 and segments
@@ -455,14 +452,14 @@ Run the OVHcloud API to prepare the migration:
 
 > [!api]
 >
-> @api {POST} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/disasterRecovery/zerto/startMigration
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/disasterRecovery/zerto/startMigration
 >
 
 `{datacenterId}` is the **new** vDC id, you can get it with the following API call:
 
 > [!api]
 >
-> @api {GET} /dedicatedCloud/{serviceName}/datacenter
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/datacenter
 >
 
 A task is launched on the infrastructure to deploy vRA on each of the hosts of the new vDC.
@@ -529,7 +526,7 @@ Here is how to proceed:
 >
 > > [!api]
 > >
-> > @api {GET} /dedicatedCloud/{serviceName}/datacenter
+> > @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/datacenter
 > >
 >
 
@@ -545,7 +542,7 @@ Here is how to proceed:
 
 > [!api]
 >
-> @api {POST} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/checkBackupJobs
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/checkBackupJobs
 >
 
 4\. If you have migrated only part of the virtual machines whose backups are enabled, you can repeat steps 2 and 3 in order to transfer their backup jobs to the new vDC.
@@ -554,7 +551,7 @@ Before you continue, you can check visually, in the graphic Backup Management pl
 
 > [!api]
 >
-> @api {POST} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/backup/disable
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/backup/disable
 >
 
 > [!warning]
@@ -571,14 +568,14 @@ Run the OVHcloud API to finalize the migration:
 
 > [!api]
 >
-> @api {POST} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/disasterRecovery/zerto/endMigration
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/disasterRecovery/zerto/endMigration
 >
 
 `{datacenterId}` is the **new** vDC id, you can get it with the following API call:
 
 > [!api]
 >
-> @api {GET} /dedicatedCloud/{serviceName}/datacenter
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/datacenter
 >
 
 A task is launched to:
@@ -626,35 +623,35 @@ In the following instructions, `{datacenterId}` is the **old** vDC id, you can g
 
 > [!api]
 >
-> @api {GET} /dedicatedCloud/{serviceName}/datacenter
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/datacenter
 >
 
 With the API, get the filer (datastore) ID list:
 
 > [!api]
 >
-> @api {GET} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/filer
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/filer
 >
 
 Then for each id:
 
 > [!api]
 >
-> @api {POST} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/filer/{filerId}/remove
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/filer/{filerId}/remove
 >
 
 For global datastores, you can use the following API call:
 
 > [!api]
 >
-> @api {POST} /dedicatedCloud/{serviceName}/filer/{filerId}/remove
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/filer/{filerId}/remove
 >
 
 A task is created for each call, you can follow the progress with:
 
 > [!api]
 >
-> @api {GET} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/filer/{filerId}/task/{taskId}
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/filer/{filerId}/task/{taskId}
 >
 
 > [!warning]
@@ -669,28 +666,28 @@ In the following instructions, `{datacenterId}` is the **old** vDC id, you can g
 
 > [!api]
 >
-> @api {GET} /dedicatedCloud/{serviceName}/datacenter
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/datacenter
 >
 
 With the API, get the host id list:
 
 > [!api]
 >
-> @api {GET} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/host
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/host
 >
 
 Then for each id:
 
 > [!api]
 >
-> @api {POST} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/host/{hostId}/remove
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/host/{hostId}/remove
 >
 
 A task is created for each call, you can follow the progress with:
 
 > [!api]
 >
-> @api {GET} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/host/{hostId}/task/{taskId}
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/host/{hostId}/task/{taskId}
 >
 
 > [!warning]
@@ -705,14 +702,14 @@ In the following instructions, `{datacenterId}` is the **old** vDC id, you can g
 
 > [!api]
 >
-> @api {GET} /dedicatedCloud/{serviceName}/datacenter
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/datacenter
 >
 
 With the API, ask for the vDC deletion:
 
 > [!api]
 >
-> @api {DELETE} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}
+> @api {v1} /dedicatedCloud DELETE /dedicatedCloud/{serviceName}/datacenter/{datacenterId}
 >
 
 ## Go further

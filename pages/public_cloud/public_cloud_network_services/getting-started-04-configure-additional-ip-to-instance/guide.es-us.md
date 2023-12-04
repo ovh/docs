@@ -53,6 +53,11 @@ En cuanto a las distintas versiones de distribuciones, tenga en cuenta que puede
 |NETWORK_INTERFACE|Nombre de la interfaz de red|*eth0*, *ens3*|
 |ID|ID del alias IP, comenzando por *0* (en función del número de direcciones IP adicionales a configurar)|*0*, *1*|
 
+> [!primary]
+>
+> Para configurar una dirección Additional IP en una instancia de Public Cloud no es necesario tener una puerta de enlace (gateway) ni una máscara de subred.
+>
+
 ### Debian 11
 
 #### Paso 1: desactivar la configuración automática de red

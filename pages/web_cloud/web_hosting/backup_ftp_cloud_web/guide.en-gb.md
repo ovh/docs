@@ -1,6 +1,7 @@
 ---
 title: "Retrieving the backup of the FTP space on your Cloud Web hosting plan"
-updated: 2022-09-13
+excerpt: "Find out how to retrieve a backup of the FTP space in your Cloud Web hosting plan"
+updated: 2023-11-16
 ---
 
 ## Objective

@@ -143,7 +143,7 @@ In qualsiasi momento è inoltre possibile creare Snapshot manuali, conservarli s
 
 > [!api]
 >
-> @api {POST} /dedicated/nasha/{serviceName}/partition/{partitionName}/customSnapshot
+> @api {v1} /dedicated/nasha POST /dedicated/nasha/{serviceName}/partition/{partitionName}/customSnapshot
 >
 
 > [!primary]

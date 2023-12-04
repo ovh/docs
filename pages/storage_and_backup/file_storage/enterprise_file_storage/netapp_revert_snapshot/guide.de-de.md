@@ -51,7 +51,7 @@ In diesem Szenario setzen Sie Ihr Volume auf den neuesten Snapshot vom Typ `manu
 
 > [!api]
 >
-> @api {GET} /storage/netapp/{serviceName}/share/{shareId}/snapshot
+> @api {v1} /storage GET /storage/netapp/{serviceName}/share/{shareId}/snapshot
 >
 
 - `{serviceName}` ist die eindeutige Kennung des Dienstes.
@@ -63,7 +63,7 @@ In diesem Szenario setzen Sie Ihr Volume auf den neuesten Snapshot vom Typ `manu
 
 > [!api]
 >
-> @api {POST} /storage/netapp/{serviceName}/share/{shareId}/revert
+> @api {v1} /storage POST /storage/netapp/{serviceName}/share/{shareId}/revert
 >
 
 - `{serviceName}` ist die eindeutige Kennung des Dienstes.
@@ -96,7 +96,7 @@ Sie müssen den letzten Snapshot, der von der einem Volume zugeordneten Snapshot
 
 > [!api]
 >
-> @api {GET} /storage/netapp/{serviceName}/share/{shareId}/snapshot
+> @api {v1} /storage GET /storage/netapp/{serviceName}/share/{shareId}/snapshot
 >
 
 - `{serviceName}` ist die eindeutige Kennung des Dienstes.
@@ -108,7 +108,7 @@ Sie müssen den letzten Snapshot, der von der einem Volume zugeordneten Snapshot
 
 > [!api]
 >
-> @api {POST} /storage/netapp/{serviceName}/share/{shareId}/snapshot/{snapshotId}/hold
+> @api {v1} /storage POST /storage/netapp/{serviceName}/share/{shareId}/snapshot/{snapshotId}/hold
 
 - `{serviceName}` ist die eindeutige Kennung des Dienstes.
 - `{shareId}` ist das wiederherzustellende Volume.
@@ -133,7 +133,7 @@ Wenn vor diesem Snapshot andere Snapshots vom Typ `manual` erstellt wurden, müs
 
 > [!api]
 >
-> @api {POST} /storage/netapp/{serviceName}/share/{shareId}/revert
+> @api {v1} /storage POST /storage/netapp/{serviceName}/share/{shareId}/revert
 >
 
 - `{serviceName}` ist die eindeutige Kennung des Dienstes.

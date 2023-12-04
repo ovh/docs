@@ -1,7 +1,7 @@
 ---
 title: "Como configurar o seu NIC para a agregação de ligações OVHcloud no SLES 15"
 excerpt: 'Ativar o OVHcloud Link Aggregation no seu servidor SLES 15'
-updated: 2023-03-07
+updated: 2023-10-26
 ---
 
 > [!primary]
@@ -31,7 +31,7 @@ A seguir, clique no separador `IPMI`{.action} (1) e no botão `A partir de apple
 
 Um programa JNLP será descarregado. Execute o software para aceder ao IPMI. Ligue-se utilizando as informações de identificação associadas ao servidor.
 
-Por predefinição, utilizando um modelo OVHcloud, os NIC serão designados por *eth1* e *eth2*. Se não utiliza um modelo OVHcloud, pode encontrar os nomes das suas interfaces utilizando o seguinte comando:
+Por predefinição, utilizando um modelo OVHcloud, os NIC serão designados por *eth0* e *eth1*. Se não utiliza um modelo OVHcloud, pode encontrar os nomes das suas interfaces utilizando o seguinte comando:
 
 ```bash
 ip a
@@ -55,18 +55,18 @@ STARTMODE='onboot'
 BOOTPROTO='static'
 IPADDR='10.0.0.1/24'
 BONDING_MASTER='yes'
-BONDING_SLAVE_0='eth1'
-BONDING_SLAVE_1='eth2'
+BONDING_SLAVE_0='eth0'
+BONDING_SLAVE_1='eth1'
 BONDING_MODULE_OPTS='mode=802.3ad miimon=100 xmit_hash_policy=layer3+4'
 ```
 
 > [!primary]
 >
 > Pode utilizar qualquer endereço IP e sub-rede privada que deseje.
-> Se o seu servidor possuir mais do que 2 interfaces de rede, pode adicioná-las na configuração aumentando o número do parâmetro `BONDING_SLAVE_`, por exemplo, `BONDING_SLAVE_2='eth3'`.
+> Se o seu servidor possuir mais do que 2 interfaces de rede, pode adicioná-las na configuração aumentando o número do parâmetro `BONDING_SLAVE_`, por exemplo, `BONDING_SLAVE_2='eth2'`.
 >
 
-Guarde e saia o ficheiro assim que confirmar que a informação está correta.  Agora tem de configurar as duas interfaces físicas. Por predefinição, para um servidor OVHcloud, só a *eth1* terá um ficheiro de configuração. Abra-o através do seguinte comando:
+Guarde e saia o ficheiro assim que confirmar que a informação está correta.  Agora tem de configurar as duas interfaces físicas. Por predefinição, para um servidor OVHcloud, só a *eth0* terá um ficheiro de configuração. Abra-o através do seguinte comando:
 
 ```bash
 vi/etc/sysconfig/network/ifcfg-eth1
@@ -102,9 +102,9 @@ STARTMODE='hotplug'
 > O endereço de hardware (endereço MAC) do NIC pode ser encontrado através da encomenda `ip que` utilizou anteriormente. Será o número ao lado do `link/ether` do resultado apresentado.
 >
 
-O *#* à frente de uma linha indica que o servidor ignorará esta linha ao ler o ficheiro. Isto significa que estas linhas não serão tidas em conta ao criar o ficheiro de interface para *eth1*.
+O *#* à frente de uma linha indica que o servidor ignorará esta linha ao ler o ficheiro. Isto significa que estas linhas não serão tidas em conta ao criar o ficheiro de interface para *eth0*.
 
-Deverá criar o ficheiro de configuração *eth2* através do seguinte comando:
+Deverá criar o ficheiro de configuração *eth1* através do seguinte comando:
 
 ```bash
 vi/etc/sysconfig/network/ifcfg-eth2

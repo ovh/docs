@@ -1,7 +1,7 @@
 ---
 title: How to use the Bring Your Own IP feature
 excerpt: Find out how to easily import your own IP as Additional IP to your OVHcloud account
-updated: 2023-09-05
+updated: 2023-11-20
 ---
 
 ## Objective
@@ -30,22 +30,16 @@ You need to own (see below) a public IPv4 block with one of the following RIRs:
 - [ARIN](https://www.arin.net/)
 - [RIPE](https://www.ripe.net/)
 
-An ARIN block can only be used with OVHcloud services located in Canada or the USA, while a RIPE block can only be used with OVHcloud services located in Europe.
+It is now possible to use ARIN or RIPE IP blocks on any OVHcloud campus. This enhanced flexibility enables more efficient management and optimized allocation of IP addresses to meet your company's specific needs.
+
+Unlike the previous policy, where an ARIN block could only be used with OVHcloud services located in Canada or the USA, and a RIPE block could only be used with OVHcloud services located in Europe, this restriction has been lifted.
 
 To be considered as a valid owned block, imported blocks must be one of the following types :
 
-- ARIN (object «Network type »)
-    - Direct Allocation
-    - Direct Assignment
-
-See <https://www.arin.net/resources/registry/whois/#network> and <https://www.arin.net/resources/registry/reassignments/> for more information on Net Types objects.
-
-- RIPE (object « status »)
-    - ASSIGNED PI
-    - LEGACY
-    - ALLOCATED PA
-
-See [« Description of the INETNUM Object »](https://apps.db.ripe.net/docs/04.RPSL-Object-Types/02-Descriptions-of-Primary-Objects.html#description-of-the-inetnum-object) for more information on status objects.
+| ARIN (object *Network type*) | RIPE (object *status*) |
+| :--- | :--- |
+| &bull; Direct Allocation <br>&bull; Direct Assignment <br>&bull; Reallocated <br>&bull; Reassigned  |  &bull; ALLOCATED PA <br>&bull; LIR-PARTITIONED PA  <br>&bull; SUB-ALLOCATED PA  <br>&bull; ASSIGNED PA  <br>&bull; ASSIGNED PI  <br>&bull; LEGACY   |
+| **For more information :** <br>&bull; [Using WhoIs - Network](https://www.arin.net/resources/registry/whois/#network) <br>&bull; [Reporting Reassignments](https://www.arin.net/resources/registry/reassignments/) | **For more information :** <br>[Description of the INETNUM Object](https://apps.db.ripe.net/docs/04.RPSL-Object-Types/02-Descriptions-of-Primary-Objects.html#description-of-the-inetnum-object) |
 
 ### Your IP range must have a supported size <a name="supportedsize"></a>
 
@@ -92,16 +86,8 @@ Below is a list of current campuses:
     - bhs (1-8)
 - SGP (Singapore)
     - sgp1
-- VIN (Vint Hill)
-    - vin1
-- HIL (Hillsboro)
-    - hil1
-
-The list of available campuses will depend on your geographical location, and on the RIR of the IP. Below are listed all IP campuses where we plan to launch the BYOIP product. However, note that not all campuses may be supported at launch:
-
-|**Customer IPs' RIR is:**|**ARIN**|**RIPE**|
-|---|---|---|
-|**Available campuses** |BHS<br>SGP|RBX<br>GRA<br>SBG<br>WAW<br>LIM<br>ERI|
+- YNM (Mumbai)
+    - ynm1
 
 ### You must prove ownership of the IP range <a name="proveownershipip"></a>
 
@@ -161,7 +147,7 @@ To slice a block, use the following API call :
 
 > [!api]
 >
-> @api {POST} /ip/{ip}/bringYourOwnIp/slice
+> @api {v1} /ip POST /ip/{ip}/bringYourOwnIp/slice
 >
 
 Use the following parameters:
@@ -176,7 +162,7 @@ You can preview the resulting blocks that would be created for each block size, 
 
 > [!api]
 >
-> @api {GET} /ip/{ip}/bringYourOwnIp/slice
+> @api {v1} /ip GET /ip/{ip}/bringYourOwnIp/slice
 >
 
 Use the following parameters:
@@ -187,7 +173,7 @@ To merge back a block into a parent block, use this API call :
 
 > [!api]
 >
-> @api {POST} /ip/{ip}/bringYourOwnIp/aggregate
+> @api {v1} /ip POST /ip/{ip}/bringYourOwnIp/aggregate
 >
 
 Use the following parameters:
@@ -204,7 +190,7 @@ You can preview all the possible configurations of aggregated blocks for a given
 
 > [!api]
 >
-> @api {GET} /ip/{ip}/bringYourOwnIp/aggregate
+> @api {v1} /ip GET /ip/{ip}/bringYourOwnIp/aggregate
 >
 
 Use the following parameters:
@@ -240,7 +226,7 @@ Yes, please see the [Range slicing](#range-slicing) section for more details.
 
 ### Can I import an ARIN range in campuses accepting only RIPE ranges, and vice-versa?
 
-Not for the moment.
+Yes, with our updated policy, it is now possible to use ARIN or RIPE IP blocks on OVHcloud campus where the BYOIP product is available. We've removed previous restrictions to offer greater flexibility and efficiency in IP address management and allocation. You can import and use your IP blocks according to your specific needs, regardless of the geographical location of the campus.
 
 ### Can I import an ARIN AS number with a RIPE IP range, and vice-versa?
 

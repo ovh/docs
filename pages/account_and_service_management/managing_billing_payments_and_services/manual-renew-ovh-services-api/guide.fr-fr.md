@@ -21,14 +21,14 @@ Pour utiliser l'[API de renouvellement](https://api.ovh.com/console/#/service/{s
 
 > [!api]
 >
-> @api {GET} /vps/{serviceName}/serviceInfos
+> @api {v1} /vps GET /vps/{serviceName}/serviceInfos
 >
 
 Il est également possible de lister vos services avec l'API service :
 
 > [!api]
 >
-> @api {GET} /service
+> @api {v1} /service GET /service
 >
 
 ### Lister les différentes stratégies de renouvellement
@@ -37,7 +37,7 @@ Afin de lister les différentes stratégies de renouvellement disponibles pour u
 
 > [!api]
 >
-> @api {GET} /service/{serviceId}/renew
+> @api {v1} /service GET /service/{serviceId}/renew
 >
 
 Une liste de `RenewDescription` va apparaître avec deux clés :
@@ -107,7 +107,7 @@ Référez-vous à l'API `renew`pour plus d'information sur le format de retour :
 
 > [!api]
 >
-> @api {GET} /service/{serviceId}/renew
+> @api {v1} /service GET /service/{serviceId}/renew
 >
 
  
@@ -163,7 +163,7 @@ Il sera alors possible de régler ce bon de commande via l'API `order` :
      
 > [!api]
 >
-> @api {POST} /me/order/{orderId}/payWithRegisteredPaymentMean
+> @api {v1} /me POST /me/order/{orderId}/payWithRegisteredPaymentMean
 >
 
 ### Exemple : renouveler un VPS

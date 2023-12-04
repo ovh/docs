@@ -50,7 +50,7 @@ Use the following API call:
 
 > [!api]
 >
-> @api {get} /nutanix/{serviceName}
+> @api {v1} /nutanix GET /nutanix/{serviceName}
 >
 
 Enter this data:

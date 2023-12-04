@@ -51,12 +51,12 @@ Click `Edit additional storage`{.action} and adjust the storage space of your cl
 As an example, for MongoDB services, you can perform a storage space increase or decrease using this endpoint:
 
 > [!api]
-> @api {PUT} /cloud/project/{serviceName}/database/mongodb/{clusterId}
+> @api {v1} /cloud PUT /cloud/project/{serviceName}/database/mongodb/{clusterId}
 
 Other engines using a storage space provide similar endpoints, e.g.:
 
 > [!api]
-> @api {PUT} /cloud/project/{serviceName}/database/postgresql/{clusterId}
+> @api {v1} /cloud PUT /cloud/project/{serviceName}/database/postgresql/{clusterId}
 
 ## We want your feedback!
 

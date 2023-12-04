@@ -1,7 +1,7 @@
 ---
-title: 'Accélérer mon site web en utilisant le CDN'
-excerpt: 'Améliorez votre site en accélérant son chargement sur votre hébergement Web grâce au CDN'
-updated: 2023-09-22
+title: "Accélérer mon site web en utilisant le CDN"
+excerpt: "Découvrez comment améliorer votre site web en accélérant son chargement sur votre hébergement Web grâce au CDN"
+updated: 2023-11-21
 ---
 
 ## Objectif
@@ -380,4 +380,8 @@ L'absence de la mention « *X-CDN* » indique que vous ne passez pas à travers 
 
 ## Aller plus loin
 
-Échangez avec notre communauté d’utilisateurs sur [https://community.ovh.com/](https://community.ovh.com/).
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/directory/).
+
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr-ca/support-levels/).
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

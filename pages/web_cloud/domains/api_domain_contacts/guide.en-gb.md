@@ -86,13 +86,13 @@ The following API route can be used to create an OVHcloud nichandle.
 
 > [!api]
 >
-> @api {POST} /newAccount
+> @api {v1} /newAccount POST /newAccount
 
 The creation rules can also be fetched with the API.
 
 > [!api]
 >
-> @api {GET} /newAccount/creationRules
+> @api {v1} /newAccount GET /newAccount/creationRules
 
 Once created, all actions associated with the new nichandle can be performed with API routes starting with `/me/*`.
 
@@ -102,8 +102,8 @@ Nichandle information may be retrieved and changed with these API routes.
 
 > [!api]
 >
-> @api {GET} /me
-> @api {PUT} /me
+> @api {v1} /me GET /me
+> @api {v1} /me PUT /me
 
 ### Nichandle Change on a Domain Service
 
@@ -114,7 +114,7 @@ Using the following API route, we are going to initiate a "task" which will allo
 
 > [!api]
 >
-> @api {POST} /domain/{serviceName}/changeContact
+> @api {v1} /domain POST /domain/{serviceName}/changeContact
 
 | Body parameter   | Description                 |
 | ---------------- | --------------------------- |
@@ -131,11 +131,11 @@ These tasks can be monitored or updated by calling the following API routes:
 
 > [!api]
 >
-> @api {GET} /me/task/contactChange
-> @api {GET} /me/task/contactChange/{id}
-> @api {POST} /me/task/contactChange/{id}/accept
-> @api {POST} /me/task/contactChange/{id}/refuse
-> @api {POST} /me/task/contactChange/{id}/resendEmail
+> @api {v1} /me GET /me/task/contactChange
+> @api {v1} /me GET /me/task/contactChange/{id}
+> @api {v1} /me POST /me/task/contactChange/{id}/accept
+> @api {v1} /me POST /me/task/contactChange/{id}/refuse
+> @api {v1} /me POST /me/task/contactChange/{id}/resendEmail
 
 ## Owner Contact Management
 
@@ -157,10 +157,10 @@ The following API routes can be used to handle domain contacts.
 
 > [!api]
 >
-> @api {POST} /domain/contact
-> @api {GET} /domain/contact
-> @api {GET} /domain/contact/{contactId}
-> @api {PUT} /domain/contact/{contactId}
+> @api {v1} /domain POST /domain/contact
+> @api {v1} /domain GET /domain/contact
+> @api {v1} /domain GET /domain/contact/{contactId}
+> @api {v1} /domain PUT /domain/contact/{contactId}
 
 > [!primary]
 >
@@ -219,7 +219,7 @@ The following steps are described with more details in the [domain name order](/
 
 > [!api]
 >
-> @api {GET} /order/cartServiceOption/domain/{serviceName}
+> @api {v1} /order GET /order/cartServiceOption/domain/{serviceName}
 
 <!-- prettier-ignore -->
 > [!tabs]
@@ -275,13 +275,13 @@ Cart creation can be performed with:
 
 > [!api]
 >
-> @api {POST} /order/cart
+> @api {v1} /order POST /order/cart
 
 Then, the owner change product can be added to the cart:
 
 > [!api]
 >
-> @api {POST} /order/cartServiceOption/domain/{serviceName}
+> @api {v1} /order POST /order/cartServiceOption/domain/{serviceName}
 
 | Body parameter | Description                                             |
 | -------------- | ------------------------------------------------------- |
@@ -298,7 +298,7 @@ To know which configurations are required, call the following API route:
 
 > [!api]
 >
-> @api {GET} /order/cart/{cartId}/item/{itemId}/requiredConfiguration
+> @api {v1} /order GET /order/cart/{cartId}/item/{itemId}/requiredConfiguration
 
 | Parameter | Required | Default | Description              |
 | --------- | -------- | ------- | ------------------------ |
@@ -326,7 +326,7 @@ The desired contact is added to the order process using this API.
 
 > [!api]
 >
-> @api {POST} /order/cart/{cartId}/item/{itemId}/configuration
+> @api {v1} /order POST /order/cart/{cartId}/item/{itemId}/configuration
 
 | Parameter | Required | Default | Description              |
 | --------- | -------- | ------- | ------------------------ |
@@ -356,7 +356,7 @@ This step is probably the most important of the order process, and can be perfor
 
 > [!api]
 >
-> @api {GET} /order/cart/{cartId}/checkout
+> @api {v1} /order GET /order/cart/{cartId}/checkout
 
 It allows to get the final purchase order, without generating it (it is a "dry-run").
 
@@ -366,7 +366,7 @@ This call also checks that eligibility rules are satisfied by the owner data.
 
 > [!api]
 >
-> @api {POST} /order/cart/{cartId}/checkout
+> @api {v1} /order POST /order/cart/{cartId}/checkout
 
 | Parameter                           | Required | Default | Description                                                                             |
 | ----------------------------------- | -------- | ------- | --------------------------------------------------------------------------------------- |
@@ -380,7 +380,7 @@ This task can be found using the following API route:
 
 > [!api]
 >
-> @api {POST} /domain/{serviceName}/task
+> @api {v1} /domain POST /domain/{serviceName}/task
 
 More details about task management can be seen [on this page](/pages/web_cloud/domains/api_domain_tasks).
 

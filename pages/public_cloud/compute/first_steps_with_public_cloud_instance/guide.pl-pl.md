@@ -122,7 +122,7 @@ Operacja ta spowoduje definitywne usunięcie instancji oraz wszystkich jej danyc
 
 Potwierdź zlecenie usunięcia w oknie, które się wyświetli.
 
-### Dostęp do konsoli VNC
+### Dostęp do konsoli VNC <a name="accessvnc"></a>
 
 Kliknij `Instances`{.action} w menu po lewej stronie. Na stronie z interfejsem zarządzania instancjami kliknij nazwę instancji w tabeli.
 

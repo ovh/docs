@@ -25,7 +25,7 @@ The `serviceName` in the API below is the one for your vRack, ex : `pn-1234`.
 
 > [!api]
 >
-> @api {GET} /vrack/{serviceName}/allowedServices
+> @api {v1} /vrack GET /vrack/{serviceName}/allowedServices
 >
 
 You will find your Load Balancer services in the index : `ipLoadbalancing`.
@@ -34,7 +34,7 @@ You can also see the eligibility of a particular Load Balancer service through t
 
 > [!api]
 >
-> @api {GET} /ipLoadbalancing/{serviceName}
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}
 >
 >
 
@@ -44,7 +44,7 @@ To attach your Load Balancer service to your vRack, here is the relevant API cal
 
 > [!api]
 >
-> @api {POST} /vrack/{serviceName}/ipLoadbalancing
+> @api {v1} /vrack POST /vrack/{serviceName}/ipLoadbalancing
 >
 
 As previously mention, the `serviceName` here is the name of your vRack, ex: `pn-1234`.
@@ -55,7 +55,7 @@ In order to work, your Load Balancer needs to know the network topology that you
 
 > [!api]
 >
-> @api {POST} /ipLoadbalancing/{serviceName}/vrack/network
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/vrack/network
 >
 
 Example configuration :
@@ -73,7 +73,7 @@ To find out the minimum range size to be assigned to natIp, an API call is avail
 
 > [!api]
 >
-> @api {GET} /ipLoadbalancing/{serviceName}/vrack/networkCreationRules
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/vrack/networkCreationRules
 >
 
 ## Setting up a farm linked to a vRack
@@ -82,12 +82,12 @@ You can now create your server farm in the vRack. To do so, configure your TCP o
 
 > [!api]
 >
-> @api {POST} /ipLoadbalancing/{serviceName}/http/farm
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/http/farm
 >
 
 > [!api]
 >
-> @api {POST} /ipLoadbalancing/{serviceName}/tcp/farm
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/tcp/farm
 >
 
 ## Continuing the configuration

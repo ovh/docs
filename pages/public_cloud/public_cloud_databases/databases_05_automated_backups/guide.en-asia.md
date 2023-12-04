@@ -8,7 +8,7 @@ updated: 2023-05-23
 
 This page provides the technical descriptions of the automated backup methods and routines for each engine.
 
-We continuously improve our offers. You can follow and submit ideas to add to our roadmap at <https://github.com/ovh/public-cloud-roadmap/projects/2>.
+We continuously improve our offers. You can follow and submit ideas to add to our roadmap at <https://github.com/orgs/ovh/projects/16/views/5>.
 
 ## Backup Methods
 
@@ -70,7 +70,7 @@ As a reminder, here is the API endpoint for database creation.
 
 > [!api]
 >
-> @api {POST} /cloud/project/{serviceName}/database/{engine}/
+> @api {v1} /cloud POST /cloud/project/{serviceName}/database/{engine}/
 >
 
 Backup settings must respect the following rules:

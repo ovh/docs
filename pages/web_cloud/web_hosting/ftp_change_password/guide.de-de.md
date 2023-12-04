@@ -1,6 +1,6 @@
 ---
-title: Passwort eines FTP-Benutzers ändern
-excerpt: Erfahren Sie hier, wie Sie das Passwort eines auf Ihrem OVHcloud Webhosting erstellten FTP-Benutzers ändern
+title: "Passwort eines FTP-Benutzers ändern"
+excerpt: "Erfahren Sie hier, wie Sie das Passwort eines auf Ihrem OVHcloud Webhosting erstellten FTP-Benutzers ändern"
 updated: 2023-05-29
 ---
 

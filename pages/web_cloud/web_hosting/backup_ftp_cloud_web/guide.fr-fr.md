@@ -1,6 +1,7 @@
 ---
 title: "Récupérer la sauvegarde de l'espace FTP de son hébergement Cloud Web"
-updated: 2022-09-13
+excerpt: "Découvrez comment récupérer une sauvegarde de l'espace FTP de votre hébergement Cloud Web"
+updated: 2023-11-16
 ---
 
 ## Objectif
@@ -85,7 +86,7 @@ Une fois vos fichiers téléchargés, vous pourrez vous [connecter à votre espa
 
 ## Aller plus loin 
 
-[Se connecter à l’espace de stockage de son hébergement Web](/pages/web_cloud/web_hosting/ftp_connection){.external}
+[Se connecter à l’espace de stockage de son hébergement Web](/pages/web_cloud/web_hosting/ftp_connection)
 
 [Se connecter à l'aide du logiciel Filezilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)
 
@@ -94,4 +95,3 @@ Pour des prestations spécialisées (référencement, développement, etc), cont
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>
-

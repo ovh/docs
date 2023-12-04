@@ -82,13 +82,13 @@ Obtenga el nombre de su servidor de la lista que devuelve la siguiente llamada:
 
 > [!api]
 >
-> @api {GET} /dedicated/server
+> @api {v1} /dedicated/server GET /dedicated/server
 
 Compruebe que su servicio tiene la opción SGX con la siguiente llamada:
 
 > [!api]
 >
-> @api {GET} /dedicated/server/{serviceName}/biosSettings/sgx
+> @api {v1} /dedicated/server GET /dedicated/server/{serviceName}/biosSettings/sgx
 
 ![SGX disabled](images/get-disabled.png){.thumbnail}
 
@@ -100,7 +100,7 @@ A continuación, active la opción SGX:
 
 > [!api]
 >
-> @api {POST} /dedicated/server/{serviceName}/biosSettings/sgx/configure
+> @api {v1} /dedicated/server POST /dedicated/server/{serviceName}/biosSettings/sgx/configure
 
 ![Configure SGX](images/post-configure.png){.thumbnail}
 
@@ -108,7 +108,7 @@ Compruebe el progreso de la tarea de configuración llamando al siguiente endpoi
 
 > [!api]
 >
-> @api {GET} /dedicated/server/{serviceName}/task/{taskId}
+> @api {v1} /dedicated/server GET /dedicated/server/{serviceName}/task/{taskId}
 
 ![Get SGX configuration task](images/get-task.png){.thumbnail}
 
@@ -116,7 +116,7 @@ Puede comprobar que el estado ahora es «Activo»:
 
 > [!api]
 >
-> @api {GET} /dedicated/server/{serviceName}/biosSettings/sgx
+> @api {v1} /dedicated/server GET /dedicated/server/{serviceName}/biosSettings/sgx
 
 ![SGX enabled](images/get-enabled.png){.thumbnail}
 

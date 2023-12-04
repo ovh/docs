@@ -1,7 +1,7 @@
 ---
 title: Veeam Cloud Connect
 excerpt: Poznaj ofertę Veeam Cloud Connect
-updated: 2021-12-07
+updated: 2023-11-02
 ---
 
 ## Wprowadzenie
@@ -16,7 +16,7 @@ Veeam Cloud Connect to rozwiązanie oferowane przez wydawcę Veeam. Umożliwia o
 
 > [!primary]
 >
-> Nasze pakiety Veeam nie są obecnie kompatybilne z najnowszą wersją (11) proponowaną przez Veeam. OVHcloud będzie nadal proponować wersję 10, aż do odwołania. Prosimy o uwzględnienie tego punktu podczas konfiguracji usługi Veeam.
+> Nasze pakiety Veeam Cloud Connect nie są obecnie kompatybilne z najnowszą wersją (12) proponowaną przez Veeam. OVHcloud będzie nadal proponować wersję 11, aż do odwołania. Prosimy o uwzględnienie tego punktu podczas konfiguracji usługi Veeam Cloud Connect.
 >
 
 ## W praktyce

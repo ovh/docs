@@ -1,7 +1,7 @@
 ---
 title: 'Migrare un sito e un servizio di posta in OVHcloud'
 excerpt: "Come migrare il tuo sito Web, le tue email e il tuo dominio in OVHcloud senza interruzione di servizi"
-updated: 2022-11-24
+updated: 2023-11-15
 ---
 
 > [!primary]
@@ -153,8 +153,8 @@ Ricevi allo stesso modo gli indirizzi email presenti presso il tuo provider tram
 
 Se hai scelto una soluzione Email Pro o Exchange, consulta la nostra documentazione per creare i tuoi indirizzi email:
 
-- Per Email-Pro: </pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config>
-- Per "Exchange": </pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_starting_hosted>
+- Per [Email-Pro](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config)
+- Per [Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_starting_hosted)
 
 ### Step 6: dichiarare i server di posta OVHcloud nella zona DNS attiva del dominio <a name="step6"></a>
 

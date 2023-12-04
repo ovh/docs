@@ -130,7 +130,7 @@ mount /dev/hda1 /mnt/
 
 Um den Rescue-Modus zu verlassen, ändern Sie im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) den Bootmodus wieder auf `Von Festplatte Booten`{.action} und starten Sie den Server über die Kommandozeile neu.
 
-#### Mounten eines Datastores
+#### VMware - Mounten eines Datastores
 
 Sie können einen VMware Datastore auf ähnliche Weise mounten wie im vorherigen Segment beschrieben.
 

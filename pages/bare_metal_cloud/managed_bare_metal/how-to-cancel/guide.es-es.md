@@ -63,7 +63,7 @@ Asimismo, también es posible confirmar la solicitud de baja a través de la sig
 
 > [!api]
 >
-> @api {POST} /dedicatedCloud/{serviceName}/confirmTermination
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/confirmTermination
 >
 
 Deberá introducir el token de validación disponible en el correo electrónico de confirmación de la baja del servicio.

@@ -1,6 +1,7 @@
 ---
-title: 'Direcciones IP de los clusters y alojamientos web'
-updated: 2023-08-22
+title: "Direcciones IP de los clusters y alojamientos web"
+excerpt: "Descubra todas las direcciones IP disponibles con nuestros alojamientos web"
+updated: 2023-11-21
 ---
 
 > [!primary]
@@ -14,6 +15,8 @@ Esta guía recoge todas las direcciones IP de los alojamientos web de OVHcloud. 
 - su cluster
 - sus opciones (CDN, SSL de pago, SSL gratuito...)
 - el país deseado...
+
+**Descubra todas las direcciones IP disponibles con nuestros alojamientos web.**
 
 > [!primary]
 >

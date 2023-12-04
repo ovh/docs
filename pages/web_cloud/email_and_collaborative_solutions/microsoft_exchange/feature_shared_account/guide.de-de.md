@@ -62,7 +62,7 @@ Ein freigegebenes Postfach ist nicht direkt erreichbar, da es kein Passwort besi
 
 Es muss daher eine Delegation zwischen einem Exchange Account und dem freigegebenen Postfach eingerichtet werden.
 
-Klicken Sie im Tab Tab `Freigegebene Postfächer`{.action} des Exchange-Dienstes auf den Button `...`{.action} und anschließend auf `Berechtigungen konfigurieren`{.action}. Sie können dann in der Liste auswählen, welche Konten auf das freigegebene Postfach zugreifen können sollen.
+Klicken Sie im Tab `Freigegebene Postfächer`{.action} des Exchange-Dienstes auf den Button `...`{.action} und anschließend auf `Berechtigungen konfigurieren`{.action}. Sie können dann in der Liste auswählen, welche Konten auf das freigegebene Postfach zugreifen können sollen.
 
 ![E-Mails](images/exchange-shared_accounts03.png){.thumbnail}
 

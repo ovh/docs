@@ -1,125 +1,168 @@
 ---
-title: 'Tworzenie bazy danych i zarządzanie nią w hostingu WWW'
-excerpt: 'Dowiedz się, jak korzystać z baz danych zawartych w usłudze hostingu WWW OVHcloud'
-updated: 2022-02-03
+title: "Tworzenie bazy danych na hostingu"
+excerpt: "Dowiedz się, jak utworzyć bazę danych na hostingu OVHcloud"
+updated: 2023-11-03
 ---
 
-## Wprowadzenie 
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zgłóś propozycję modyfikacji” na tej stronie.
+>
 
-Baza danych (DB, ang. database) służy do przechowywania tak zwanych elementów dynamicznych, takich jak komentarze lub artykuły. Bazy danych są używane praktycznie we wszystkich nowoczesnych systemach zarządzania treścią (CMS, ang. Content Management System), takich jak Joomla! czy WordPress.
+## Wprowadzenie
 
-**Poznaj pierwsze kroki pracy z bazą danych w ramach hostingu WWW OVHcloud i dowiedz się, jak nią zarządzać.**
+Baza danych (bazy danych) służy do przechowywania elementów dynamicznych (danych logowania, danych użytkowników, danych wyświetlanych, danych niezbędnych do prawidłowego działania Twojej strony WWW, etc.). Bazy danych są wykorzystywane w większości nowoczesnych systemów zarządzania treścią (CMS), takich jak *WordPress*, *Joomla!*, *Drupal* lub *PrestaShop*.
+
+**Dowiedz się, jak utworzyć bazę danych na hostingu OVHcloud**
 
 ## Wymagania początkowe
 
-- [pakiet hostingu WWW OVHcloud](https://www.ovhcloud.com/pl/web-hosting/)
-- dostępna baza danych zawarta w Twojej usłudze hostingu WWW
-- dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) z uprawnieniami niezbędnymi do zarządzania hostingiem WWW 
+- Posiadanie hostingu [OVHcloud](https://www.ovhcloud.com/pl/web-hosting/) zawierającego co najmniej jedną bazę danych.
+- Posiadanie bazy danych dostępnej w opcji "create", spośród baz danych zawartych w Twojej usłudze hostingu.
+- Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) z [niezbędnymi uprawnieniami](/pages/account_and_service_management/account_information/managing_contacts) w celu zarządzania hostingiem.
 
 ## W praktyce
 
-### Krok 1: dostęp do sekcji zarządzania bazą danych w ramach hostingu WWW
+### Etap 1 - Dostęp do karty zarządzania bazami danych na hostingu WWW
 
-Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i wybierz pozycję `Web Cloud`{.action} na górnym pasku nawigacyjnym. Kliknij pozycję `Hosting`{.action}, a następnie wybierz odpowiedni pakiet hostingu WWW. Następnie przejdź do karty `Bazy danych`{.action}.
+Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i przejdź do sekcji `Web Cloud`{.action}. W kolumnie po lewej stronie kliknij pozycję `Hosting`{.action}, wybierz ofertę hostingu, na której chcesz utworzyć bazę danych, następnie kliknij zakładkę `Bazy danych`{.action}.
 
-Tabela w tej sekcji zawiera wszystkie bazy danych utworzone w ramach Twojego pakietu hostingu WWW.
+Tabela w tej sekcji zawiera wszystkie bazy danych utworzone w ramach Twojego hostingu.
 
 ![databasecreation](images/database-creation-step1.png){.thumbnail}
 
-### Krok 2: tworzenie bazy danych
+### Etap 2 - Tworzenie bazy danych
 
-Bazę danych można utworzyć na dwa sposoby:
+Istnieją dwa sposoby tworzenia nowej bazy danych:
 
-- **Jeśli jeszcze nie masz utworzonej bazy danych**\: kliknij przycisk `Utwórz bazę danych`{.action}.
+- **Jeśli jeszcze nie utworzyłeś bazy danych** : kliknij przycisk `Tworzenie bazy danych`{.action}.
 
-- **Jeśli już masz utworzoną bazę danych**\: kliknij przycisk `Działania`{.action}, a następnie `Utwórz bazę danych`{.action}.
+- **Jeśli już utworzyłeś bazę danych** : kliknij przycisk `Operacje`{.action}, a następnie `Tworzenie bazy danych`{.action}.
 
-W wyświetlonym oknie dialogowym wybierz odpowiednie informacje, a następnie kliknij przycisk `Dalej`{.action}.
+W wyświetlonym oknie wybierz następujące informacje:
+
+![database-creation-step1](images/database-creation-1.png){.thumbnail}
 
 |Informacje|Opis|  
-|---|---|  
-|Silnik bazy danych|Wybierz silnik, z którego będzie korzystać baza danych. W ramach usługi [hostingu WWW OVHcloud](https://www.ovhcloud.com/pl/web-hosting/) są dostępne tylko bazy danych z silnikiem MySQL.|  
-|Wersja bazy danych|Wybierz wersję silnika bazy danych. Sprawdź, czy Twoja strona internetowa jest zgodna z wybraną wersją. |  
-|Typ bazy danych|Wybierz rozmiar bazy danych. Rozmiar odnosi się do dostępnego miejsca na przechowywanie danych w bazie.|   
+|---|---| 
+|**Wybierz typ bazy danych**|Wybierz rozmiar bazy danych. Rozmiar ten odnosi się do przestrzeni, na którą przeznaczona jest Twoja baza danych.|
+|**Wybierz silnik dla bazy danych**|Wybierz silnik, którego ma używać baza danych. Bazy danych zawarte w [usłudze hostingu OVHcloud](https://www.ovhcloud.com/pl/web-hosting/) są dostępne tylko w silniku MySQL.|
+|**Wybierz wersję bazy danych, którą chcesz dodać**|Wybierz wersję używaną przez silnik bazy danych. Upewnij się, że Twoja strona WWW jest zgodna z wybraną wersją.|
 
-Podaj żądane informacje, a następnie kliknij przycisk `Dalej`{.action}.
+Następnie kliknij przycisk `Dalej`{.action}.
 
-|Informacje|Opis|   
-|---|---|   
-|Użytkownik|Podaj własną nazwę użytkownika, która będzie powiązana z bazą danych.|   
-|Hasło|Podaj hasło dla tego użytkownika, a następnie je potwierdź.|   
+Pojawi się nowe okno:
 
-Sprawdź, czy wszystkie wyświetlane informacje są prawidłowe. Jeśli tak, kliknij przycisk `Potwierdź`{.action}, aby uruchomić proces tworzenia bazy danych. Aby utworzyć wiele baz danych (w zależności od maksymalnej liczby baz danych zawartych w usłudze), powtórz ten proces odpowiednią ilość razy.
+![database-creation-step2](images/database-creation-2.png){.thumbnail}
+
+|Informacje|Opis|
+|---|---| 
+|**Użytkownik**|Wpisz nazwę użytkownika, która zostanie skojarzona z Twoją bazą danych (maksymalnie 6 znaków poza już wprowadzonym prefiksem użytkownika).|
+|**Hasło**|Wprowadź hasło dla tego użytkownika, spełniając podane poniżej *kryteria*.|
+|**Wpisz ponownie hasło**|Wpisz ponownie hasło dla tego użytkownika.|
 
 > [!primary]
 >
-> Ze względów bezpieczeństwa przestrzegaj warunków wymaganych przy wyborze hasła. Zalecamy, aby:
+> Ze względów bezpieczeństwa podczas tworzenia hasła postępuj zgodnie z wymaganiami.
 >
-> - nie używać dwukrotnie tego samego hasła;
+> Zalecamy również:
 >
-> - ustawić hasło, które nie zawiera danych osobowych (takich jak nazwisko, imię, data urodzenia itp.);
->
-> - regularnie zmieniać hasło;
->
-> - nie zapisywać haseł na kartce ani nie wysyłać go innym osobom używając Twojego adresu e-mail;
->
-> - nie zachowywać haseł w przeglądarce, nawet jeśli zostanie wyświetlona taka propozycja.
+> - zdefiniowanie innego hasła dla każdej usługi;
+> - utwórz hasło, które nie zawiera żadnych danych osobowych (nazwisko, imię, data urodzenia, etc.);
+> - regularnie odnawiaj hasło;
+> - nie zachowuj zapisanych logów hasła i nie wysyłaj ich do innych osób (w tym za pośrednictwem Twojego konta e-mail);
+> - nie zachowywać haseł w przeglądarce internetowej, nawet jeśli zostanie wyświetlona taka propozycja.
 >
 
 > [!warning]
->Po zmianie hasła do bazy danych należy odpowiednio zaktualizować wszystkie aplikacje, które mają do niej dostęp.
+>
+> Pamiętaj, że po zmianie hasła do bazy danych wszystkie aplikacje uzyskujące dostęp do tej bazy danych muszą zostać odpowiednio zaktualizowane.
 >
 
-![databasecreation](images/database-creation-step2.png){.thumbnail}
+Uzupełnij wymagane informacje i kliknij na `Dalej`{.action}.
 
-### Krok 3: zarządzanie bazą danych
+![database-creation-step3](images/database-creation-3.png){.thumbnail}
+
+Sprawdź, czy wszystkie wyświetlane informacje są poprawne. Jeśli tak, kliknij przycisk `Zatwierdź`{.action}, aby uruchomić proces tworzenia bazy danych.
+
+> [!primary]
+>
+> Po kliknięciu przycisku `Zatwierdź`{.action} utworzenie bazy danych może potrwać do **15 minut**. Odśwież stronę internetową [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), jeśli baza danych nie wyświetla się automatycznie w tabeli zawierającej listę Twoich baz danych.
+>
+
+Powtórz ten proces tyle razy, ile chcesz, aby utworzyć kilka baz danych (w ramach limitu baz danych dostępnych w Twojej ofercie).
+
+### Etap 3 - Zarządzanie bazą danych <a name="step3"></a>
 
 > [!warning]
->Ten przewodnik nie zastępuje pomocy specjalisty, takiego jak webmaster. W przypadku wystąpienia problemów zalecamy skorzystać z usług specjalisty i/lub skontaktować się z wydawcą oprogramowania, ponieważ nie będziemy w stanie udzielić pomocy. Więcej informacji zawiera sekcja „Sprawdź również” tego przewodnika.
+>
+> Ten przewodnik nie zastępuje pomocy technicznej dewelopera. W przypadku trudności zalecamy skontaktowanie się z [wyspecjalizowanym dostawcą](https://partner.ovhcloud.com/pl/directory/) lub skontaktuj się z producentem oprogramowania. OVHcloud nie będzie w stanie udzielić wsparcia w tym zakresie. Więcej informacji znajdziesz w sekcji ["Sprawdź również"](#go-further) niniejszego przewodnika.
 >
 
-Teraz możesz korzystać z bazy danych. Aby to zrobić, są potrzebne określone wcześniej dane logowania, czyli nazwa użytkownika i hasło, zdefiniowana nazwa bazy danych i adres serwera. Te informacje są niezbędne, aby strona internetowa mogła się łączyć z bazą danych.
+Teraz możesz korzystać z bazy danych. W tym celu potrzebujesz danych do logowania:
 
-W zależności od używanego oprogramowania może być konieczne ręczne skonfigurowanie połączenia albo wystarczy interfejs wygenerowany przez stronę internetową. Niniejsza procedura wiąże się z konfigurowaniem strony internetowej, a nie usług świadczonych przez OVHcloud, więc zalecamy skorzystanie z odpowiednich informacji dostępnych w Internecie. 
+- *nazwa użytkownika* i *hasło*, które ustawiłeś,
+- *nazwa bazy danych*, którą wskazałeś,
+- *adres serwera*.
+
+Informacje te są niezbędne, aby Twoja strona WWW mogła połączyć się z bazą danych.
+
+W razie potrzeby, aby pobrać dane do logowania, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i przejdź do sekcji `Web Cloud`{.action}. W kolumnie po lewej stronie kliknij przycisk `Hosting`{.action}, wybierz ofertę hostingu, dla której chcesz pobrać dane do połączenia z bazą danych, następnie kliknij zakładkę `Bazy danych`{.action}.
+
+Wszystkie informacje dotyczące połączenia z bazą danych odnajdziesz w tabeli, która się wyświetli. Powyższe nie dotyczy *hasła* ze względów bezpieczeństwa.
+
+> [!warning]
+>
+> Jeśli nie pamiętasz hasła do bazy danych, zapoznaj się z naszym przewodnikiem "[Zmiana hasła do bazy danych](/pages/web_cloud/web_hosting/sql_change_password)".
+>
+
+W zależności od używanego oprogramowania może być konieczne ręczne skonfigurowanie połączenia albo wystarczy interfejs wygenerowany przez interfejs konfiguracyjny strony WWW (backend). Ponieważ procedura ta dotyczy konfiguracji Twojej strony WWW, a nie Twojego hostingu OVHcloud, zalecamy skorzystanie z zasobów dostępnych online lub skorzystanie z pomocy [wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/pl/directory/).
 
 #### Dostęp do interfejsu phpMyAdmin
 
-OVHcloud udostępnia narzędzie online do zarządzania bazami danych — phpMyAdmin. Aby znaleźć link dostępu do tej aplikacji, na karcie `Bazy danych`{.action} kliknij ikonę `...`{.action} po prawej stronie bazy danych, a następnie wybierz z menu rozwijanego polecenie `Dostęp do phpMyAdmin`{.action}.
+OVHcloud udostępnia narzędzie online do zarządzania bazami danych "phpMyAdmin". Aby odnaleźć link dostępu do tej aplikacji, zaloguj się do [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i przejdź do sekcji `Web Cloud`{.action}. W kolumnie po lewej stronie kliknij przycisk `Hosting`{.action}, wybierz ofertę hostingu, dla której chcesz pobrać dane do połączenia z bazą danych, następnie kliknij zakładkę `Bazy danych`{.action}. W tabeli, która się wyświetli kliknij przycisk `...`{.action} po prawej stronie odpowiedniej bazy danych, a następnie z menu rozwijanego kliknij `Dostęp do phpMyAdmin`{.action}.
 
-Dane logowania będą już wypełnione w nowym oknie, więc wpisz tylko hasło do bazy danych. To również dobry sposób na sprawdzenie swojego bieżącego hasła, jeśli na przykład w systemie CMS występują problemy w postaci komunikatu o błędzie „odmowa dostępu”.
+![phpMyAdmin Go Login](images/pma-interface-login.png){.thumbnail}
 
-![databasecreation](images/database-creation-step3.png){.thumbnail}
+Wprowadź dane dostępowe do Twojej bazy danych, a następnie kliknij `Login`{.action}.
 
-#### Korzystanie z kopii zapasowych bazy danych
+W razie potrzeby skorzystaj z [etapu 3](#step3) niniejszego przewodnika, aby uzyskać informacje na temat logowania do bazy danych.
 
-W przypadku każdej bazy danych w ramach hostingu WWW codziennie będą automatycznie tworzone migawki (maksymalnie 32). To oznacza, że można łatwo przywrócić wcześniejszą wersję bazy danych z poziomu Panelu klienta OVHcloud. 
+#### Korzystanie z kopii zapasowych baz danych
 
-Aby sprawdzić, czy są dostępne migawki oraz ich sygnaturę czasową utworzenia, kliknij symbol obok zielonego kółka w tabeli baz danych. Z tego miejsca można też pobrać kopię zapasową bazy danych. Szczegółowe informacje na ten temat zawiera przewodnik [Pobieranie kopii zapasowej bazy danych w ramach hostingu WWW](/pages/web_cloud/web_hosting/sql_database_export).
+W przypadku każdej bazy danych w ramach hostingu WWW codziennie będą automatycznie tworzone migawki (maksymalnie do 32 migawek). To oznacza, że można szybko przywrócić wcześniejszą wersję bazy danych z poziomu Panelu klienta OVHcloud.
 
-#### Typowe problemy
+Aby sprawdzić, czy są dostępne migawki oraz ich datę i godzinę utworzenia, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i przejdź do sekcji `Web Cloud`{.action}. W kolumnie po lewej stronie kliknij pozycję `Hosting`{.action}, wybierz ofertę hostingu, dla której chcesz sprawdzić snapshoty dostępne dla Twojej bazy danych, następnie kliknij zakładkę `Bazy danych`{.action}. W tabeli, która się wyświetli kliknij symbol obok zielonego kółka. Z tego miejsca można też pobrać kopię zapasową bazy danych. Więcej informacji na ten temat znajdziesz w naszym przewodniku "[Tworzenie i pobieranie kopii zapasowej bazy danych na hostingu WWW](/pages/web_cloud/web_hosting/sql_database_export)".
+
+#### Zrozum typowe problemy
 
 **Zbyt dużo połączeń**
 
-Bazy danych w ramach hostingu WWW mają limit 30 jednoczesnych połączeń (zmienna systemowa *max_connections*). Aby zapobiec takim błędom, należy zoptymalizować żądania SQL. Jeśli mimo tego problem będzie się powtarzać, należy rozważyć podjęcie innych środków, tj. wybór prywatnej bazy danych SQL ([Web Cloud Databases](https://www.ovh.pl/cloud/cloud-databases/)) lub [zmianę pakietu hostingu na wyższy](https://www.ovhcloud.com/pl/web-hosting/uc-best-web-hosting/). 
+Bazy danych w ramach hostingu są ograniczone do 30 jednoczesnych połączeń (zmienna systemowa *max_connections*). Aby zapobiec takim błędom, należy zoptymalizować żądania SQL. Jeżeli problemy nadal się utrzymują, należy rozważyć alternatywne środki. Możesz na przykład migrować Twoją bazę danych do bazy danych [Web Cloud Databases](https://www.ovhcloud.com/pl/web-cloud/databases/) lub przeprowadzić [aktualizację Twojej oferty hostingu](https://www.ovhcloud.com/pl/web-hosting/uc-best-web-hosting/).
 
-**Błędy połączenia typu „nie można znaleźć”**
+**Błędy połączenia "nie można znaleźć"**
 
-Najlepszą praktyką jest używanie rzeczywistej nazwy bazy danych w skryptach i plikach konfiguracji, a nie adresów IP czy nazwy _localhost_.
+Zwykle pojawia się, gdy w pliku połączenia z bazą danych, na stronie WWW bazy danych nie jest używana rzeczywista nazwa bazy danych.
 
-**Przekroczenie limitu przydziału bazy danych**
+Najlepszą praktyką jest zawsze używanie rzeczywistej nazwy bazy danych dla skryptów i plików konfiguracyjnych zamiast adresów IP lub _localhost_.
 
-Jeśli baza danych w ramach hostingu WWW przekroczy zalecane miejsce w przestrzeni dyskowej, zostanie automatycznie przełączona na tryb „tylko do odczytu” / „tylko wybór”. Administrator dostanie powiadomienie e-mail.
+**Przekroczenie limitu rozmiaru bazy danych**
 
-Po optymalizacji bazy danych (oczyszczeniu) można ponownie obliczyć limit w Panelu klienta OVHcloud, aby ją odblokować. Najlepszą praktyką jest pobranie bazy danych, wprowadzenie zmian lokalnie, a następnie zastąpienie bazy przez import. Więcej informacji zawiera [ten przewodnik](/pages/web_cloud/web_hosting/optimise_your_website_performance).
+Jeśli baza danych w ramach hostingu WWW przekroczy zalecane miejsce w przestrzeni dyskowej, zostanie automatycznie przełączona na tryb "tylko do odczytu" / "tylko wybór". Administrator otrzyma powiadomienie e-mail.
 
-## Sprawdź również
+Po optymalizacji bazy danych (oczyszczeniu) należy ponownie obliczyć limit w Panelu klienta OVHcloud, aby ją odblokować. Więcej informacji na ten temat znajdziesz w naszym przewodniku "[Co zrobić w przypadku przekroczenia rozmiaru przestrzeni dyskowej bazy danych?](/pages/web_cloud/web_hosting/sql_overquota_database)"
 
-[Zmiana hasła do bazy danych w ramach hostingu WWW](/pages/web_cloud/web_hosting/sql_change_password)
+## Sprawdź również <a name="go-further"></a>
 
-[Pobieranie kopii zapasowej bazy danych w ramach hostingu WWW](/pages/web_cloud/web_hosting/sql_database_export)
+[Zmień hasło do bazy danych hostingu WWW](/pages/web_cloud/web_hosting/sql_change_password)
 
-[Import kopii zapasowej do bazy danych hostingu WWW](/pages/web_cloud/web_hosting/sql_importing_mysql_database)
+[Tworzenie i pobieranie kopii zapasowej bazy danych na hostingu WWW](/pages/web_cloud/web_hosting/sql_database_export)
 
-[Optymalizacja wydajności witryny internetowej](/pages/web_cloud/web_hosting/optimise_your_website_performance)
+[Importuj kopię zapasową do bazy danych hostingu WWW](/pages/web_cloud/web_hosting/sql_importing_mysql_database)
 
-Dołącz do naszej społeczności użytkowników: <https://community.ovh.com/en/>.
+[Optymalizacja wydajności witryny sieci Web](/pages/web_cloud/web_hosting/optimise_your_website_performance)
+
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+ 
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
+ 
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

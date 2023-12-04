@@ -1,7 +1,7 @@
 ---
 title: "Installer votre site web avec un « module en 1 clic » (CMS)"
 excerpt: "Découvrez comment installer votre site web via nos « modules en 1 clic »"
-updated: 2023-09-14
+updated: 2023-11-14
 ---
 
 ## Objectif
@@ -56,6 +56,15 @@ Dans la fenêtre qui s'affiche, choisissez le CMS souhaité puis sélectionnez l
 ![Choix du module](images/add_a_module.png){.thumbnail}
 
 Si votre domaine n'est pas dans la liste, rendez-vous dans l'onglet `Multisite`{.action} pour l'ajouter. Consultez notre guide [Comment partager mon hébergement web entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite){.external} si besoin.
+
+> [!primary]
+>
+> Vérifiez, juste en dessous du formulaire permettant de sélectionner un nom de domaine (ou un sous-domaine), que `Le répertoire d'installation par défaut` est bien celui dans lequel vous souhaitez installer votre « module en 1 clic ».
+>
+> Pour rappel, ce répertoire doit être totalement vide.
+>
+> Si besoin, consulter notre guide « [Comment partager mon hébergement web entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite) » pour modifier le répertoire cible de votre nom de domaine.
+>
 
 Une fois votre domaine correctement ajouté, essayez à nouveau d'ajouter un « module en 1 clic ».
 
@@ -148,6 +157,18 @@ Renseignez les informations suivantes pour la configuration du module :
 - *langue :* langue dans laquelle le CMS sera installé.
 - *chemin d’installation :* ce dernier est automatiquement renseigné à la sélection du nom de domaine. Vous pouvez le compléter en y renseignant des sous-répertoires (pour les utilisateurs avertis).
 
+> [!primary]
+>
+> Vérifiez, pour le formulaire `chemin d’installation`, que le répertoire pré-rempli est bien celui dans lequel vous souhaitez installer votre « module en 1 clic » avec votre nom de domaine.
+>
+> Pour rappel, ce répertoire doit être totalement vide.
+>
+> De plus, si vous renseignez un sous-répertoire dans le `chemin d’installation`, celui-ci apparaîtra dans l'URL d'accès à votre « module en 1 clic ».
+> Par exemple, si je renseigne dans le formulaire un sous répertoire *test*, l'URL d'accès à mon « module en 1 clic » aura cette forme : **http://domain.tld/test/**.
+>
+> Si besoin, consulter notre guide « [Comment partager mon hébergement web entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite) » pour modifier le répertoire cible de votre nom de domaine.
+>
+
 Une fois ces informations complétées, cliquez sur le bouton `Suivant`{.action} :
 
 > [!warning]
@@ -191,7 +212,7 @@ Si vous désirez obtenir de l'aide concernant les fonctionnalités de votre CMS,
 
 [Gestion d’une base de données depuis un hébergement mutualisé](/pages/web_cloud/web_hosting/sql_create_database){.external}
 
-Découvrez nos [offres Web Cloud Databases](https://www.ovh.com/fr/cloud/cloud-databases/){.external}
+Découvrez nos [offres Web Cloud Databases](https://www.ovhcloud.com/fr-ca/web-cloud/databases/){.external}
 
 [Gérer votre CMS](/pages/web_cloud/web_hosting/cms_manage_1_click_module)
 

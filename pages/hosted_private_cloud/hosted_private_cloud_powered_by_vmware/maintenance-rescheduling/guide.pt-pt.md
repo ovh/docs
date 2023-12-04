@@ -60,7 +60,7 @@ Execute a seguinte chamada API:
 
 > [!api]
 >
-> @api {POST} /dedicatedCloud/{serviceName}/task/{task id}/changeMaintenanceExecutionDate
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/task/{taskId}/changeMaintenanceExecutionDate
 >
 
 Introduza as variáveis:

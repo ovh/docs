@@ -1,7 +1,7 @@
 ---
 title: 'Alterar o titular de um nome de domínio'
 excerpt: 'Neste guia, encontrará várias informações sobre a alteração de titular de um nome de domínio.'
-updated: 2023-06-19
+updated: 2023-10-23
 ---
 
 > [!primary]

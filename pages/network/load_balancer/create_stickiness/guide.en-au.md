@@ -70,7 +70,7 @@ With this call instruction, you can view details on a server farm if you know it
 
 > [!api]
 >
-> @api {GET} /ipLoadbalancing/{serviceName}/http/farm/{farmId}
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/http/farm/{farmId}
 > 
 
 |Setting|Meaning|
@@ -94,7 +94,7 @@ With this call instruction, you can edit the settings of a server farm if you kn
 
 > [!api]
 >
-> @api {PUT} /ipLoadbalancing/{serviceName}/http/farm/{id}
+> @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/http/farm/{id}
 > 
 
 |Setting|Meaning|
@@ -107,7 +107,7 @@ With this call instruction, you can edit the settings of a server farm if you kn
 
 > [!api]
 >
-> @api {POST} /ipLoadbalancing/{serviceName}/refresh
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/refresh
 > 
 
 |Setting|Meaning|

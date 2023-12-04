@@ -25,7 +25,7 @@ updated: 2023-09-20
 
 ## Procedura
 
-#### VPS GNU/Linux
+### VPS GNU/Linux
 
 Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e avvia il riavvio del server in modalità Rescue. Se necessario, consulta la nostra [guida sulla modalità Rescue](/pages/bare_metal_cloud/virtual_private_servers/rescue).
 

@@ -1,6 +1,6 @@
 ---
-title: 'Attivare gli indirizzi email inclusi in un hosting Web'
-excerpt: 'Come attivare gli account di posta inclusi nella tua soluzione di hosting Web'
+title: "Attivare gli indirizzi email inclusi in un hosting Web"
+excerpt: "Questa guida ti mostra come attivare gli account di posta inclusi nella tua soluzione di hosting Web"
 updated: 2023-03-02
 ---
 

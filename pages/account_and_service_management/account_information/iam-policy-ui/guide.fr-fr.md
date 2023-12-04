@@ -4,10 +4,7 @@ excerpt: "Découvrez comment donner des droits d'accès spécifiques aux utilisa
 updated: 2023-07-06
 ---
 
-> [!warning]
->
-> Cette fonctionnalité est actuellement en version bêta. Retrouvez plus d'informations sur <https://labs.ovhcloud.com/en/>.
->
+ 
 
 ## Objectif
 

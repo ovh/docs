@@ -122,7 +122,7 @@ Esta ação terá por efeito eliminar definitivamente a instância, bem como tod
 
 Confirme o pedido de eliminação na janela que aparecer.
 
-### Aceder à consola VNC
+### Aceder à consola VNC <a name="accessvnc"></a>
 
 Clique em `Instances`{.action} no menu à esquerda. Na página de gestão das instâncias, clique no nome da instância.
 

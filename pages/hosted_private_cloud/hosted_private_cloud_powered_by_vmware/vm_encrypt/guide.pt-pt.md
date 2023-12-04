@@ -74,14 +74,14 @@ De modo a obter o seu «serviceName», utilize o comando seguinte:
 
 > [!api]
 >
-> @api {GET} /dedicatedCloud
+> @api {v1} /dedicatedCloud GET /dedicatedCloud
 >
 
 Para verificar se a encriptação ainda não foi ativada, utilize este comando:
 
 > [!api]
 >
-> @api {GET} /dedicatedCloud/{serviceName}/vmEncryption
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/vmEncryption
 >
 
 ```shell
@@ -92,7 +92,7 @@ A seguir, efetue o registo do KMS:
 
 > [!api]
 >
-> @api {POST} /dedicatedCloud/{serviceName}/kms
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/kms
 >
 
 A fim de realizar esta operação, precisará das seguintes informações:

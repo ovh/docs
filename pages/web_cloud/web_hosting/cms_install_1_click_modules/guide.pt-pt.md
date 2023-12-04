@@ -1,7 +1,7 @@
 ---
 title: "Instalar o seu website com um 'módulo 1 clique' (CMS)"
 excerpt: "Descubra como instalar o seu website através dos nossos 'módulos 1 clique'"
-updated: 2023-09-14
+updated: 2023-11-14
 ---
 
 > [!primary]
@@ -60,6 +60,15 @@ Na nova janela, selecione o CMS desejado e selecione o domínio com o qual desej
 ![Escolher módulo](images/add_a_module.png){.thumbnail}
 
 Se o seu domínio não está na lista, aceda ao separador `Multisite`{.action} para o adicionar. Consulte o nosso manual [Como partilhar o meu alojamento web com vários sites](/pages/web_cloud/web_hosting/multisites_configure_multisite), se necessário.
+
+> [!primary]
+>
+> Verifique, logo abaixo do formulário que permite selecionar um nome de domínio (ou um subdomínio), que `O diretório de instalação predefinido` é aquele em que deseja instalar o seu "módulo em 1 clique".
+>
+> Nota: este diretório deve estar totalmente vazio.
+>
+> Se necessário, consulte o nosso guia "[Como partilhar o meu alojamento web entre vários sites](/pages/web_cloud/web_hosting/multisites_configure_multisite)" para modificar o diretório alvo do seu domínio.
+>
 
 Depois de adicionar o domínio corretamente, tente novamente adicionar um "módulo 1 clique".
 
@@ -152,6 +161,18 @@ Introduza as seguintes informações para a configuração do módulo:
 - *Linguagem:* língua na qual o CMS será instalado.
 - *caminho de instalação:* este é automaticamente indicado ao selecionar o domínio. Pode completá-lo introduzindo sub-diretórios (para os utilizadores mais experientes).
 
+> [!primary]
+>
+> Verifique, para o formulário `Caminho da instalação`, se o diretório pré-preenchido é aquele no qual deseja instalar o seu « módulo em 1 clique » com o seu nome de domínio.
+>
+> Nota: este diretório deve estar totalmente vazio.
+>
+> Além disso, se introduzir um subdiretório no `Caminho da instalação`, este aparecerá no URL de acesso ao seu "módulo em 1 clique".
+> Por exemplo, se introduzir no formulário um subdiretório *test*, o URL de acesso ao meu "módulo 1 clique" terá esta forma: **http://domain.tld/test/**.
+>
+> Se necessário, consulte o nosso guia "[Como partilhar o meu alojamento web entre vários sites](/pages/web_cloud/web_hosting/multisites_configure_multisite)" para modificar o diretório alvo do seu domínio.
+>
+
 Depois de preencher estas informações, clique no botão `Seguinte`{.action}:
 
 > [!warning]
@@ -205,4 +226,4 @@ Para serviços especializados (referenciamento, desenvolvimento, etc), contacte 
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
 
-Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>. 
+Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

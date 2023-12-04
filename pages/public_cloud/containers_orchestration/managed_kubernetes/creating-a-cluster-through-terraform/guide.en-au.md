@@ -422,7 +422,7 @@ Our cluster is created, now we need to connect to it in order to check our nodes
 In order to do this, retrieve the kubeconfig file locally:
 
 ```
-$ terraform output kubeconfig > /Users/<your-user>/.kube/my_kube_cluster.yml
+$ terraform output -raw kubeconfig > /Users/<your-user>/.kube/my_kube_cluster.yml
 ```
 
 You can define it in your `$KUBECONFIG` environment variable or you can use it directly in the `kubectl` command with `--kubeconfig` option.

@@ -36,7 +36,7 @@ Wenn Sie die Instanz erstellt und eine vorinstallierte Anwendung ausgewählt hab
 > API Aufruf
 >> > [!api]
 >> >
->> > @api {POST} /cloud/project/{serviceName}/instance/{instanceId}/applicationAccess
+>> > @api {v1} /cloud POST /cloud/project/{serviceName}/instance/{instanceId}/applicationAccess
 >> >
 >
 > Parameter

@@ -67,21 +67,21 @@ Dès lors, utilisez les trois API ci-dessous afin de configurer le backend ACS.
 
 > [!api]
 >
-> @api {GET} /xdsl/{serviceName}/modem/availableACSBackend
+> @api {v1} /xdsl GET /xdsl/{serviceName}/modem/availableACSBackend
 >
 
 Permet de récupérer les backends ACS disponibles pour votre modem.
 
 > [!api]
 >
-> @api {GET} /xdsl/{serviceName}/modem
+> @api {v1} /xdsl GET /xdsl/{serviceName}/modem
 >
 
 Permet de récupérer différentes informations sur votre modem, y compris le backend actuellement utilisé par votre modem.
 
 > [!api]
 >
-> @api {PUT} /xdsl/{serviceName}/modem
+> @api {v1} /xdsl PUT /xdsl/{serviceName}/modem
 >
 
 Modifiez le champ `acsBackend` pour appliquer le changement de backend ACS.

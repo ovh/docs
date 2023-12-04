@@ -25,7 +25,7 @@ Connectez-vous sur [https://ca.api.ovh.com/](https://ca.api.ovh.com/) et utilise
 
 > [!api]
 >
-> @api {POST} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/backup/generateReport
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/backup/generateReport
 
 Renseignez les variables :
 
@@ -59,7 +59,7 @@ Connectez-vous sur [https://ca.api.ovh.com/](https://ca.api.ovh.com/) et utilise
 
 > [!api]
 >
-> @api {POST} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/backup/batchRestore
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/backup/batchRestore
 >
 
 Renseignez les variables :

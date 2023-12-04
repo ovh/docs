@@ -61,10 +61,10 @@ For these engines, call the respective API endpoint to temporarily allow write o
 > [!tabs]
 > PostgreSQL
 >> > [!api]
->> > @api {POST} /cloud/project/{serviceName}/database/postgresql/{clusterId}/enableWrites
+>> > @api {v1} /cloud POST /cloud/project/{serviceName}/database/postgresql/{clusterId}/enableWrites
 > MySQL
 >> > [!api]
->> > @api {POST} /cloud/project/{serviceName}/database/mysql/{clusterId}/enableWrites
+>> > @api {v1} /cloud POST /cloud/project/{serviceName}/database/mysql/{clusterId}/enableWrites
 
 This will give you a 15 minutes time window to write again to your database. At the end of this window, either you were able to execute queries that reduce disk usage (e.g. DROPs, DELETEs), and thus your service changes to the read-write state, or disk usage stays too high and your service will return to the read-only state.
 

@@ -1,7 +1,7 @@
 ---
 title: 'Configuring an email address on the Gmail online interface'
 excerpt: 'Find out how to configure an email address on the Gmail online interface'
-updated: 2021-01-08
+updated: 2023-11-20
 ---
 
 ## Objective
@@ -21,7 +21,7 @@ You can configure email addresses on email clients and online interfaces, if the
 
 - an MX Plan email address, available as part of our [Web Hosting plans](https://www.ovhcloud.com/en-sg/web-hosting/)
 - credentials for the OVHcloud email address you want to configure
-- credentials for the Gmail account you want to configure the OVHcloud email address on
+- credentials for the Gmail account (Personal or Professional) you want to configure the OVHcloud email address on
 
 > [!primary]
 >

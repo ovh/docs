@@ -70,7 +70,7 @@ Um zum Beispiel die Liste Ihrer Domainnamen abzurufen, verwenden Sie folgenden A
  
 > [!api]
 >
-> @api {GET} /domain
+> @api {v1} /domain GET /domain
 >
 
 **POST**
@@ -81,7 +81,7 @@ Um zum Beispiel einen Eintrag zu Ihrer DNS Zone hinzuzufügen, verwenden Sie fol
 
 > [!api]
 >
-> @api {POST} /domain/zone/{zoneName}/record
+> @api {v1} /domain POST /domain/zone/{zoneName}/record
 >
 
 **PUT**
@@ -92,7 +92,7 @@ Um beispielsweise einen Eintrag in Ihrer DNS Zone zu korrigieren, verwenden Sie 
 
 > [!api]
 >
-> @api {PUT} /domain/zone/{zoneName}/record/{id}
+> @api {v1} /domain PUT /domain/zone/{zoneName}/record/{id}
 >
 
 **DELETE**
@@ -103,7 +103,7 @@ Um beispielsweise einen Eintrag in Ihrer DNS Zone zu löschen, verwenden Sie fol
 
 > [!api]
 >
-> @api {DELETE} /domain/zone/{zoneName}/record/{id}
+> @api {v1} /domain DELETE /domain/zone/{zoneName}/record/{id}
 >
 
 ##### Parameter der API
@@ -174,11 +174,11 @@ Sobald Ihre drei Schlüssel (**AK**, **AS**, **CK**) verfügbar sind, können Si
 Um die Entwicklung Ihrer Anwendungen zu vereinfachen, stellt OVHcloud API-Wrapper in mehreren Sprachen bereit.
 Wenn Sie diese verwenden, müssen Sie sich nicht um die Berechnung der Signatur kümmern und können sich auf die Programmierung Ihrer Anwendung konzentrieren.
 
+- *Go* : <https://github.com/ovh/go-ovh>
 - *Perl*: <https://github.com/ovh/perl-ovh>
 - *Python*: <https://github.com/ovh/python-ovh>
 - *PHP*: <https://github.com/ovh/php-ovh>
 - *Node.js*: <https://github.com/ovh/node-ovh>
-- *Swift*: <https://github.com/ovh/swift-ovh>
 - *C#*: <https://github.com/ovh/csharp-ovh>
 
 Hier ein Beispiel für die Nutzung der Rubrik `/me` zur Verwaltung Ihres OVHcloud Kunden-Accounts:

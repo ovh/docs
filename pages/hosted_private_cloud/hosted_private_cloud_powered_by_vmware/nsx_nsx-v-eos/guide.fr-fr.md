@@ -24,7 +24,7 @@ Pour identifier votre utilisation de la fonctionnalité NSX-v dans votre environ
 
 #### Je n'utilise aucune des fonctionnalités de NSX-v
 
-Si vous n'utilisez aucune des fonctionnalités ci-dessus, vous pourrez désactiver NSX-v. Vous serez notifié lorsque le processus de désactivation sera disponible.
+Nous désactiverons NSX-V à partir du 1er Décembre 2023 si vous n'utilisez aucune fonctionnalité de NSX-V. 
 
 Quelle que soit votre gamme Hosted Private Cloud, si vous souhaitez désactiver NSX-v, vous n'aurez pas à effectuer la migration vers un nouveau Datacenter. Vous pourrez conserver vos ressources actuelles.
 
@@ -41,7 +41,7 @@ Si vous souhaitez le migrer vers des VLAN, pour vous aider à configurer votre r
 
 > [!api]
 >
-> @api {POST} /dedicatedCloud/{serviceName}/generateVxlanToVrackMapping
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/generateVxlanToVrackMapping
 >
 
 > **Paramètres:**
@@ -57,8 +57,7 @@ Il s'agit là uniquement d'une proposition contenant une liste de vos VMs et des
 
 Pour créer vos réseaux VLAN, vous pouvez suivre cette documentation : [Création de VLAN](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/creation_vlan).
 
-Vous devrez ensuite désactiver NSX-v. Vous serez notifié lorsque le processus de désactivation sera disponible.
-Après les opérations précédentes, vous pouvez maintenant migrer vos Machines Virtuelles des VXLAN vers les DVS vRACK.
+Vous serez notifié lorsque le processus de désactivation sera disponible. Après les opérations précédentes, vous pouvez maintenant migrer vos Machines Virtuelles des VXLAN vers les DVS vRACK.
 
 Depuis la vue `Réseaux`{.action} sur la console vSphere UI, faire un cliv droit sur le portgroup VXLAN où résident vos Machines Virtuelles et sélectionnez `Migrer les VM vers un autre réseau...`{.action}.
 
@@ -70,9 +69,6 @@ Depuis la vue `Réseaux`{.action} sur la console vSphere UI, faire un cliv droit
 Terminez l'opération et reproduisez-la pour chaque portgroup VXLAN utilisé.
 
 Les Machines Virtuelles ne connaîtront qu’une très brève reconnexion. Dans certains cas, il se peut qu'une seule requête ping soit perdue.
-
-Nous désactiverons NSX-V à partir du 1er septembre 2023 si vous n'utilisez aucune fonctionnalité de NSX-V.
-Vous serez averti lorsque le processus de désactivation sera disponible.
 
 #### J'utilise certaines des fonctionnalités de NSX-v
 

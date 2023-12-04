@@ -1,7 +1,7 @@
 ---
 title: 'Erste Schritte mit MX Plan'
 excerpt: 'Erfahren Sie hier, wie Sie Ihr MX Plan Angebot verwenden'
-updated: 2021-07-19
+updated: 2023-11-15
 ---
 
 > [!primary]
@@ -240,8 +240,6 @@ Sie können regelmäßig Mails an bestimmte Empfänger, etwa einen Newsletter, a
 Hierzu können Sie eine Mailingliste erstellen, mithilfe unserer Anleitung "[Mailinglisten verwalten und nutzen](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_mailing_list)".
 
 ## Weiterführende Informationen
-
-Die Migration eines alten MX Plan Dienstes (*Legacy*) auf das neuere MX Plan Angebot kann angefordert werden, wenn Sie nach Beachtung der Hinweise auf [dieser Seite](https://www.ovh.de/mxplan-migration/#accordion_6001-4) die dort angegebene Mailingliste anschreiben (EN/FR).
 
 Wenn Ihre Bedürfnisse sich ändern und Sie zusätzliche Funktionen benötigen, können Sie auch [eine MX Plan E-Mail-Adresse auf einen E-Mail Pro oder Exchange Account migrieren](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel).
 

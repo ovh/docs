@@ -1,7 +1,7 @@
 ---
-title: 'Aumentare la velocità di un sito Web con la CDN'
-excerpt: 'Come ottimizzare il tuo sito accelerando la velocità di caricamento dell’hosting Web con la CDN'
-updated: 2021-12-23
+title: "Aumentare la velocità di un sito Web con la CDN"
+excerpt: "Questa guida ti mostra come ottimizzare il tuo sito accelerando la velocità di caricamento dell’hosting Web con la CDN"
+updated: 2023-11-21
 ---
 
 > [!primary]
@@ -305,6 +305,19 @@ Se non utilizzi un CMS, puoi usufruire della cache della CDN. Per farlo, è nece
 
 Questa azione permette di disattivare la CDN per uno o più ingressi multisito, senza eliminare l'opzione CDN del tuo hosting Web.
 
+> [!warning]
+>
+> Per disattivare l’opzione CDN su un sito Web è necessario modificare l’indirizzo IP da utilizzare per reindirizzare il dominio verso l’hosting Web.
+> Questa operazione viene eseguita automaticamente se la zona DNS attiva del dominio è gestita anche dall’[account OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) che contiene l’hosting Web.
+>
+> In caso contrario, esegui queste due operazioni:
+>
+> - recupera l’indirizzo IP **di default** del cluster in cui si trova l’hosting Web utilizzando la guida "[Hosting Web: gli indirizzi IP dei nostri cluster](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)";
+> - modifica manualmente l'indirizzo IP nella zona DNS attiva del tuo dominio o contatta il tuo provider della zona DNS per l'aggiornamento.
+>
+> La modifica di un record nella zona DNS attiva di un dominio comporta un tempo di propagazione da **4** a **24** ore per essere pienamente efficace. Una pagina contenente il codice **520** potrebbe apparire casualmente fino al termine della propagazione. Questo fenomeno è legato al fatto che alcune parti della rete DNS reindirizzano ancora le richieste verso l'indirizzo IP della CDN associato al tuo hosting Web.
+>
+
 Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e seleziona `Web Cloud`{.action}. e seleziona il tuo servizio nella sezione `Hosting`{.action}. Nella scheda `Multisito`{.action}, clicca sui tre puntini `...`{.action} a destra del record multisito e seleziona `Modifica`{.action}.
 
 A questo punto, deseleziona la voce "Attiva la CDN", clicca su `Seguente`{.action} e infine su`Conferma`{.action}.
@@ -370,4 +383,8 @@ L’assenza dell’intestazione "*X-CDN*" indica che il traffico del tuo sito We
 
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
+
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
+
+Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.

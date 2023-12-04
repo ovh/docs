@@ -21,14 +21,14 @@ Per utilizzare l'[API di rinnovo](https://api.ovh.com/console/#/service/{service
 
 > [!api]
 >
-> @api {GET} /vps/{serviceName}/serviceInfos
+> @api {v1} /vps GET /vps/{serviceName}/serviceInfos
 >
 
 È inoltre possibile visualizzare la lista dei tuoi servizi con l’API service:
 
 > [!api]
 >
-> @api {GET} /service
+> @api {v1} /service GET /service
 >
 
 ### Crea una lista delle diverse strategie di rinnovo
@@ -37,7 +37,7 @@ Per consultare le diverse strategie di rinnovo disponibili per un servizio, util
 
 > [!api]
 >
-> @api {GET} /service/{serviceId}/renew
+> @api {v1} /service GET /service/{serviceId}/renew
 >
 
 Visualizzerai una lista di `RenewDescription` con due chiavi:
@@ -107,7 +107,7 @@ Per ulteriori informazioni sul formato della risposta, puoi fare riferimento all
 
 > [!api]
 >
-> @api {GET} /service/{serviceId}/renew
+> @api {v1} /service GET /service/{serviceId}/renew
 >
 
  
@@ -163,7 +163,7 @@ A questo punto, sarà possibile saldare questo buono d’ordine tramite l’API 
      
 > [!api]
 >
-> @api {POST} /me/order/{orderId}/payWithRegisteredPaymentMean
+> @api {v1} /me POST /me/order/{orderId}/payWithRegisteredPaymentMean
 >
 
 ### Esempio: rinnovare un VPS

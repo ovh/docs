@@ -1,7 +1,7 @@
 ---
-title: "Tutorial - Was tun, wenn meine Datenbank voll ist?"
+title: "Webhosting: Was tun, wenn meine Datenbank voll ist?"
 excerpt: "Erfahren Sie hier, wie Sie vorgehen, wenn Ihre Datenbank voll ist"
-updated: 2023-02-16
+updated: 2023-11-30
 ---
 
 > [!primary]
@@ -57,15 +57,19 @@ Im ersten Schritt werden die großen Tabellen in der Datenbank identifiziert.
 
 Das Passwort für den Zugriff auf Ihre Datenbank erhalten Sie direkt aus der Konfigurationsdatei Ihrer Seite. Führen Sie diese Aktion mithilfe von **Schritt 1** in unserer Anleitung zur [Änderung des Datenbankpassworts](/pages/web_cloud/web_hosting/sql_change_password) durch.
 
-Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie in der Navigationsleiste oben `Web Cloud`{.action} aus. Klicken Sie auf `Hosting-Pakete`{.action} und wählen Sie den relevanten Dienst aus. Gehen Sie anschließend zum Tab `Datenbanken`{.action}.
+Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie in der Navigationsleiste oben `Web Cloud`{.action} aus. Klicken Sie auf `Hosting-Pakete`{.action} und wählen Sie den relevanten Dienst mit der Datenbank aus. Gehen Sie anschließend zum Tab `Datenbanken`{.action}.
+
+Unten auf dem Bildschirm wird eine Tabelle mit den Datenbanken angezeigt.
 
 ![phpMyAdmin Access](images/pma_access.png){.thumbnail}
 
-Klicken Sie im Tab `Datenbanken`{.action} auf den Button `...`{.action} rechts neben der vollen Datenbank und wählen Sie `Zugang zu phpMyAdmin`{.action}.
+Beachten Sie für Ihre **überlastete Datenbank** den `Benutzernamen` und die `Server-Adresse` in der Tabelle Ihrer Datenbanken. 
+
+Klicken Sie auf den Button `...`{.action} rechts neben der relevanten Datenbank und dann auf `Zugang zu phpMyAdmin`{.action}.
 
 ![phpMyAdmin Go Login](images/pma_interface.png){.thumbnail}
 
-Geben Sie zusätzlich zu den bereits ausgefüllten Informationen Ihr Datenbankpasswort ein und klicken Sie dann auf `Ausführen`{.action}.
+Geben Sie die Zugangsdaten für Ihre Datenbank ein und klicken Sie auf `Anmeldung`{.action}.
 
 #### 1.2 - Finden der größten Tabellen
 
@@ -78,11 +82,11 @@ Geben Sie zusätzlich zu den bereits ausgefüllten Informationen Ihr Datenbankpa
 
 Sobald die Verbindung hergestellt wurde, wird die folgende Seite angezeigt:
 
-![phpMyAdmin Login](images/pma_login.png){.thumbnail}
+![phpMyAdmin Login](images/pma-main-page.png){.thumbnail}
 
 Klicken Sie in der linken Spalte auf `"Ihr Datenbankname"`{.action} und dann in der rechten oberen Ecke der Tabelle auf `Size`{.action}:
 
-![phpMyAdmin Tables](images/pma_show_table.png){.thumbnail}
+![phpMyAdmin Tables](images/pma-check-size.png){.thumbnail}
 
 Die größten Tabellen werden oben in der sortierten Liste angezeigt. Identifizieren Sie diese, und fahren Sie mit **Schritt 2** fort.
 
@@ -119,11 +123,13 @@ Sobald Sie festgestellt haben, ob der Inhalt der Tabellen für das Funktionieren
 
 Führen Sie ein Upgrade Ihres Datenbankdienstes auf ein Angebot durch, das mehr Speicherplatz für Datenbanken enthält.
 
-Konsultieren Sie unser Angebot [Web Cloud Databasess](https://www.ovh.de/cloud/cloud-databases/), um sich über die Optionen zu informieren. 
+Konsultieren Sie unsere Angebotsseite [Web Cloud Databases](https://www.ovhcloud.com/de/web-cloud/databases/), um sich über die Optionen zu informieren. 
 
 Wir empfehlen diese Lösung für große Datenbanken.
 
-Folgen Sie dann unseren Anleitungen, um den Inhalt Ihrer alten Datenbank auf die neue zu verschieben:
+Es ist möglich, den Inhalt Ihrer OVHcloud Datenbank direkt in eine andere Ihrer OVHcloud Datenbanken zu kopieren, indem Sie eine Funktion in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) nutzen. Weitere Informationen finden Sie in unserer Anleitung „[Inhalt einer Datenbank in eine andere duplizieren](/pages/web_cloud/web_hosting/copy_database)“.
+
+Zur Migration auf eine Datenbank außerhalb der Angebote [Start SQL](https://www.ovhcloud.com/de/web-hosting/options/start-sql/) und [Web Cloud Databases](https://www.ovhcloud.com/de/web-cloud/databases/) können Sie den Inhalt Ihrer alten Datenbank mithilfe unserer Anleitungen manuell in eine neue Datenbank verschieben:
 
 - [Exportieren Sie Ihre bestehende Datenbank](/pages/web_cloud/web_hosting/sql_database_export)
 - [Erste Schritte mit Web Cloud Databasess](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)
@@ -150,7 +156,7 @@ Bei **overquota** oder einer großen Tabelle sind **drei Befehle** verfügbar.
 
 Sie können diese Anfragen über das **phpMyAdmin** Interface, über den Tab `SQL`{.action} durchführen:
 
-![SQL PHPMyAdmin Anfrage](images/pma_sql_request.png){.thumbnail}
+![SQL PHPMyAdmin Anfrage](images/pma-sql-menu.png){.thumbnail}
 
 - Der Befehl **DELETE**:
 
@@ -189,6 +195,8 @@ DROP TABLE `table_1`
 > In diesem Beispiel löscht der Befehl die Tabelle **table_1** und alle darin enthaltenen Zeilen.
 
 ## Weiterführende Informationen <a name="go-further"></a>
+
+[Inhalt einer Datenbank in eine andere duplizieren](/pages/web_cloud/web_hosting/copy_database)
 
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
 

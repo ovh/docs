@@ -4,10 +4,7 @@ excerpt: "Comment créer et utiliser un token permettant de se connecter à l'en
 updated: 2023-08-24
 ---
 
-> [!warning]
->
-> Cette fonctionnalité est actuellement en bêta. Retrouvez plus d'informations sur <https://labs.ovhcloud.com/fr/>.
->
+ 
 
 ## Objectif
 
@@ -49,7 +46,7 @@ Afin de créer un compte de service, utilisez l'appel API suivant :
 
 > [!api]
 >
-> @api {POST} /me/api/oauth2/client
+> @api {v1} /me POST /me/api/oauth2/client
 >
 
 Cet appel API permet de créer des identifiants Oauth2 pour plusieurs mécanismes d'authentification. Celui qui nous intéresse ici est **CLIENT_CREDENTIALS**. Ce mécanisme ne nécessite pas d'URL de callback.
@@ -70,7 +67,7 @@ Afin de récupérer l'**URN** nécessaire pour éditer une politique d'accès, v
 
 > [!api]
 >
-> @api {GET} /me/api/oauth2/client/{clientId}
+> @api {v1} /me GET /me/api/oauth2/client/{clientId}
 >
 
 Utilisez la valeur de l'identifiant récupéré en résultat de l'appel précédent.<br>
@@ -86,7 +83,7 @@ Si vous n'utilisez plus un compte de service, ou bien que vous voulez supprimer 
 
 > [!api]
 >
-> @api {DELETE} /me/api/oauth2/client/{clientId}
+> @api {v1} /me DELETE /me/api/oauth2/client/{clientId}
 >
 
 > [!warning]
@@ -137,7 +134,7 @@ Cet exemple peut être utilisé directement au sein de l'appel suivant pour cré
 
 > [!api]
 >
-> @api {POST} /v2/iam/policy
+> @api {v2} /iam POST /iam/policy
 >
 
 ### Utilisation des comptes de services

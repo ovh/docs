@@ -1,6 +1,7 @@
 ---
-title: 'Lista adresów IP klastrów i hostingów WWW'
-updated: 2023-08-22
+title: "Lista adresów IP klastrów i hostingów WWW"
+excerpt: "Poznaj wszystkie dostępne adresy IP dostępne na naszych hostingach"
+updated: 2023-11-21
 ---
 
 > [!primary]
@@ -14,6 +15,8 @@ W tym przewodniku znajdziesz wszystkie adresy IP hostingów WWW OVHcloud. Dzięk
 - klaster,
 - opcje (CDN, płatny certyfikat SSL, darmowy certyfikat SSL itp.),
 - szukany kraj.
+
+**Poznaj wszystkie dostępne adresy IP dostępne na naszych hostingach.**
 
 > [!primary]
 >

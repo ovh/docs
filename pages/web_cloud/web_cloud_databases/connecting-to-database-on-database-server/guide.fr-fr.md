@@ -1,7 +1,7 @@
 ---
-title: 'Se connecter à la base de données de votre serveur de bases de données'
-excerpt: 'Découvrez comment se connecter à votre base de données'
-updated: 2023-02-15
+title: "Se connecter à la base de données de votre serveur de bases de données"
+excerpt: "Découvrez comment se connecter à votre base de données"
+updated: 2023-10-31
 ---
 
 ## Objectif
@@ -12,14 +12,14 @@ Il est possible de consulter le contenu de votre base de données via une interf
 
 ## Prérequis
 
-- Disposer d'une [instance Web Cloud Databases](https://www.ovh.com/fr/cloud/cloud-databases/){.external} (incluse dans une offre d'[hébergement web Performance](https://www.ovhcloud.com/fr/web-hosting/)).
+- Disposer d'une [instance Web Cloud Databases](https://www.ovhcloud.com/fr/web-cloud/databases/){.external} (incluse dans une offre d'[hébergement web Performance](https://www.ovhcloud.com/fr/web-hosting/)).
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 
 ## En pratique
 
 > [!primary]
 >
-> Il est à noter que les offres [Web Cloud Databases](https://www.ovh.com/fr/cloud-databases){.external} ne donnent pas accès au système de gestion de base de données, mais aux bases de données hébergées sur celui-ci. 
+> Il est à noter que les offres [Web Cloud Databases](https://www.ovhcloud.com/fr/web-cloud/databases/){.external} ne donnent pas accès au système de gestion de base de données, mais aux bases de données hébergées sur celui-ci. 
 > <br> - Il n'y a pas d'accès super utilisateur « root ». 
 > <br> - Les commandes SQL génériques fonctionnent normalement, et les logiciels de type HeidiSQL, SQuirreL SQL ou Adminer sont pleinement compatibles.
 > 
@@ -33,24 +33,32 @@ Il est possible de consulter le contenu de votre base de données via une interf
 
 #### Par phpMyAdmin OVHcloud 
 
-Rendez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Cliquez sur l'onglet `Web Cloud`, puis sur `Web Cloud Databases`{.action}. Sélectionnez le nom de votre serveur de bases de données.
+Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} puis rendez-vous dans la partie `Web Cloud`. Cliquez sur l'onglet `Web Cloud Databases`{.action} dans la colonne de gauche puis sélectionnez le nom de votre serveur de bases de données.
 
-Depuis l'onglet `Informations générales`, vous trouverez le lien d'accès dans le cadre **« Administration de la base de données »** sous la mention « Interface utilisateur ».
+Depuis l'onglet `Informations générales`, vous trouverez le lien d'accès à phpMyAdmin dans le cadre **« Administration de la base de données »** sous la mention « Interface utilisateur ».
 
-![private-sql](images/private-sql-phpma01.png){.thumbnail}
+![web-cloud-databases](images/private-sql-phpma01.png){.thumbnail}
 
 Vous arrivez sur la page de connexion de phpMyAdmin.
 
-![private-sql](images/private-sql-phpma02.png){.thumbnail}
+![web-cloud-databases](images/pma-login-web-cloud-db.png){.thumbnail}
 
-- **Serveur :** renseignez le nom d'hôte de votre serveur visible dans l'onglet `Informations générales`, dans le cadre **« Administration de la base de données »** sous la mention « Nom d'hôte » de la partie **SQL**.
-- **Utilisateur :** renseignez le nom d'utilisateur créé dans l'onglet `Utilisateurs et droits` de votre serveur de bases de données.
-- **Mot de passe :** renseignez le mot de passe associé à l'utilisateur concerné.
-- **Port :** renseignez le port mentionné dans l'onglet `Informations générales`, dans le cadre **« Administration de la base de données »** sous la mention « Port» de la partie **SQL**.
+Renseignez les éléments suivants pour vous connecter à votre base de données :
+
+- **Serveur :** renseignez le *nom d'hôte* de votre serveur de bases de données suivi de son *numéro de port*. Le *numéro de port* doit être séparé du *nom d'hôte* par un « **espace** » ou par « **:** ». Par exemple, si le *nom d'hôte* est **aaXXXXX-XXX.eu.clouddb.ovh.net** et le *numéro de port* est **12345**, il faudrait alors saisir **aaXXXXX-XXX.eu.clouddb.ovh.net:12345** ou **aaXXXXX-XXX.eu.clouddb.ovh.net 12345**. Pour retrouver le *nom d'hôte* et le *numéro de port* de votre serveur Web Cloud Databases, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} puis rendez-vous dans la partie `Web Cloud`. Cliquez sur l'onglet `Web Cloud Databases`{.action} dans la colonne de gauche puis sélectionnez le nom de votre serveur de bases de données. Sur la page `Informations générales` qui s'affiche, vous retrouverez le *nom d'hôte* et le *numéro de port* dans l'encadré `Informations de connexion`.
+
+- **Utilisateur :** renseignez le *nom d'utilisateur* de votre serveur de bases de données. Pour retrouver le *nom d'utilisateur* de votre base de données, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} puis rendez-vous dans la partie `Web Cloud`. Cliquez sur l'onglet `Web Cloud Databases`{.action} dans la colonne de gauche puis sélectionnez le nom de votre serveur de bases de données. Sur la page qui s'affiche, cliquez sur l'onglet `Utilisateurs et droits`{.action}. Vous y trouverez un tableau avec l'ensemble des utilisateurs créés sur votre offre Web Cloud Databases.
+
+- **Mot de passe :** renseignez le *mot de passe* associé au *nom d'utilisateur* concerné. Si vous ne vous souvenez plus du *mot de passe* associé à votre *nom d'utilisateur*, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} puis rendez-vous dans la partie `Web Cloud`. Cliquez sur l'onglet `Web Cloud Databases`{.action} dans la colonne de gauche puis sélectionnez le nom de votre serveur de bases de données. Sur la page qui s'affiche, cliquez sur l'onglet `Utilisateurs et droits`{.action}. Cliquez sur le bouton `...`{.action} situé à droite de *l'utilisateur* concerné pour `Changer le mot de passe`{.action}.
+
+> [!warning]
+>
+> Si vous changez le mot de passe de l'utilisateur d'une base de données, toutes les applications/site web qui accèdent à cette base doivent être mises à jour en conséquence.
+>
 
 Si la connexion aboutit, la page suivante de phpMyAdmin apparaîtra.
 
-![private-sql](images/private-sql-phpma03.png){.thumbnail}
+![web-cloud-databases](images/pma-main-page-web-cloud-db.png){.thumbnail}
 
 > [!warning]
 >
@@ -172,9 +180,8 @@ Vous êtes maintenant bien connecté à votre base de données :
 
 ## Aller plus loin
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
-

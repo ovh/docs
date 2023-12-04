@@ -1,7 +1,7 @@
 ---
 title: 'Using Zerto between OVHcloud and a third party platform'
 excerpt: 'Learn how to setup Zerto between your OVHcloud Private Cloud and another platform'
-updated: 2022-02-11
+updated: 2023-10-23
 ---
 
 ## Objective
@@ -31,6 +31,11 @@ Check out [Zerto between two OVHcloud datacenters](/pages/hosted_private_cloud/h
 >
 > OVHcloud supports the N-1 version of Zerto (Currently up to and including version 9.7)
 > You can find the different versions available here : <https://help.zerto.com/kb/000004585>.
+
+>[!warning]
+>
+> OVHcloud supports the N-1 version of Zerto.
+> You can find the different versions available here: <https://help.zerto.com/kb/000004585>.
 >
 
 ### Solution overview

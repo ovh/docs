@@ -29,14 +29,14 @@ Dans l'API, la terminaison SSL est spécifiée par le booléen ssl : (N'oubliez 
 
 > [!api]
 >
-> @api {POST} /ipLoadbalancing/{serviceName}/http/frontend
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/http/frontend
 >
 
 Puis appliquer les modifications :
 
 > [!api]
 >
-> @api {POST} /ipLoadbalancing/{serviceName}/refresh
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/refresh
 >
 
 ## Commander le certificate SSL gratuit
@@ -51,7 +51,7 @@ Dans l'API, la commande se fait comme suit. Pour que la commande se finalise, il
 
 > [!api]
 >
-> @api {POST} /ipLoadbalancing/{serviceName}/freeCertificate
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/freeCertificate
 >
 
 ## Suivi de la commande
@@ -66,14 +66,14 @@ Vous pouvez spécifier le type d'action orderFreeCertificate pour affiner la rec
 
 > [!api]
 >
-> @api {GET} /ipLoadbalancing/{serviceName}/task
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/task
 >
 
 #### Retourner le statut d'une tache en particulier
 
 > [!api]
 >
-> @api {GET} /ipLoadbalancing/{serviceName}/task/{id}
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/task/{id}
 >
 
 ## Livraison du certificat SSL gratuit

@@ -4,6 +4,20 @@ excerpt: Learn how to use Lettria models
 updated: 2023-08-08
 ---
 
+<style>
+details>summary {
+    color:rgb(33, 153, 232) !important;
+    cursor: pointer;
+}
+details>summary::before {
+    content:'\25B6';
+    padding-right:1ch;
+}
+details[open]>summary::before {
+    content:'\25BC';
+}
+</style>
+
 ## Objective
 
 OVHcloud offers different Artificial Intelligence services through its AI Partners Ecosystem. You will benefit from a catalogue of **ready-to-use applications** provided by our partners which you will easily be able to deploy according to your needs through **AI Deploy**.
@@ -173,7 +187,7 @@ The Emotion Analysis API is an effective solution for businesses looking to enha
 By reaching the root endpoint `/` of your API, you can access the full API documentation.
 
 <details>
-<summary>The model is trained to detect the folowing emotions</summary>
+<summary>The model is trained to detect the following emotions</summary>
 
 ```json
 {

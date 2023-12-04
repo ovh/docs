@@ -1,13 +1,10 @@
 ---
 title: Comment utiliser les comptes de service pour se connecter à OpenStack
 excerpt: "Comment se connecter aux API ou lignes de commande OpenStack avec ses comptes de service OVHcloud"
-updated: 2023-08-24
+updated: 2023-11-27
 ---
 
-> [!warning]
->
-> Cette fonctionnalité est actuellement en bêta. Retrouvez plus d'informations sur <https://labs.ovhcloud.com/fr/>.
->
+ 
 
 ## Objectif
 
@@ -86,6 +83,7 @@ Si vous utilisez votre infrastructure OpenStack avec la ligne de commande, vous 
 export OS_AUTH_TYPE=v3oidcclientcredentials
 export OS_PROTOCOL=openid
 export OS_ACCESS_TOKEN_TYPE=id_token
+export OS_OPENID_SCOPE="openid profile email publicCloudProject/all"
 export OS_AUTH_URL=https://auth.cloud.ovh.net/v3
 ```
 
@@ -150,6 +148,7 @@ clouds:
     auth:
       protocol: 'openid'
       access_token_type: 'id_token'
+      openid_scope: 'openid profile email publicCloudProject/all'
       auth_url: 'https://auth.cloud.ovh.net/v3'
       identity_provider: 'ovhcloud-emea'
       discovery_endpoint: 'https://iam.ovh.net/role-adapter/urn:v1:eu:resource:publicCloudProject:pci/.well-known/openid-configuration'
@@ -161,7 +160,7 @@ clouds:
 L'exemple précédent fonctionne sur la région EMEA. Si vous utilisez les services de OVHcloud depuis la région "Rest of the World", modifiez les lignes suivantes avec ces valeurs :
 
 -  identity_provider: `ovhcloud-world`
--  discovery_endpoint: `https://iam.ovh.ca/role-adapter/urn:v1:eu:resource:publicCloudProject:pci/.well-known/openid-configuration`
+-  discovery_endpoint: `https://iam.ovh.ca/role-adapter/urn:v1:ca:resource:publicCloudProject:pci/.well-known/openid-configuration`
 
 Pour rappel, n'oubliez pas de remplacer les variables de ces exemples par les valeurs correspondant à votre configuration.
 
@@ -185,6 +184,7 @@ clouds:
     auth:
       protocol: 'openid'
       access_token_type: 'id_token'
+      openid_scope: 'openid profile email publicCloudProject/all'
       auth_url: 'https://auth.cloud.ovh.net/v3'
       identity_provider: 'ovhcloud-emea'
       discovery_endpoint: 'https://iam.ovh.net/role-adapter/urn:v1:eu:resource:publicCloudProject:pci/.well-known/openid-configuration'
@@ -219,6 +219,7 @@ clouds:
     auth:
       protocol: 'openid'
       access_token_type: 'id_token'
+      openid_scope: 'openid profile email publicCloudProject/all'
       auth_url: 'https://auth.cloud.ovh.net/v3'
       identity_provider: 'ovhcloud-emea'
       discovery_endpoint: 'https://iam.ovh.net/role-adapter/urn:v1:eu:resource:publicCloudProject:pci/.well-known/openid-configuration'

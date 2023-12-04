@@ -1,7 +1,7 @@
 ---
-title: 'Accessing a website’s logs and statistics on a Web Hosting'
-excerpt: Find out how to review statistics and logs of your websites
-updated: 2023-08-04
+title: "Accessing a website’s logs and statistics on a Web Hosting"
+excerpt: "Find out how to review statistics and logs of your websites"
+updated: 2023-11-20
 ---
 
 ## Objective
@@ -102,5 +102,9 @@ You can display different types of graphics from the drop-down menu in the top l
 - SQL response time: Response time of requests sent to your hosting database.
 
 ## Go further
+
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-ie/directory/).
+
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-ie/support-levels/).
 
 Join our community of users on <https://community.ovh.com/en/>.

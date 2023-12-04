@@ -47,14 +47,14 @@ Kliknij link <https://api.ovh.com/console/> i zaloguj się za pomocą identyfika
 
 > [!api]
 >
-> @api {GET} /vrack#GET
+> @api {v1} /vrack GET /vrack
 > 
 
 To żądanie API jest używany do pobierania listy usług vRack. Jeśli nie możesz odnaleźć odpowiedniej usługi za pomocą wyświetlonych nazw, skorzystaj z [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, aby ją odszukać. W tym celu przejdź do sekcji `Bare Metal Cloud`{.action}, następnie `Network`{.action} i następnie "vRack". 
 
 > [!api]
 >
-> @api {POST} /vrack/{serviceName}/ip/{ip}/announceInZone#POST
+> @api {v1} /vrack POST /vrack/{serviceName}/ip/{ip}/announceInZone#POST
 > 
 
 To zapytanie API umożliwia zmianę strefy rozgłaszania bloku IP. Wypełnij teraz wymagane pola:

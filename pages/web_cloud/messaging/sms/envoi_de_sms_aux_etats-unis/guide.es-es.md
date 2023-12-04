@@ -68,7 +68,7 @@ Conéctese a [api.ovh.com](https://api.ovh.com/) y realice la siguiente llamada:
 
 > [!api]
 >
-> @api {post} /sms/{serviceName}/templatesControl
+> @api {v1} /sms POST /sms/{serviceName}/templatesControl
 >
 
 ![SMS a Estados Unidos](images/smstousa4.png){.thumbnail}

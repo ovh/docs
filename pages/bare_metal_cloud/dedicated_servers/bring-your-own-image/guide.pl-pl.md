@@ -77,7 +77,7 @@ Aby utworzyć i wdrożyć obraz, zadzwoń i uzupełnij wymagane pola:
 
 > [!api]
 >
-> @api {POST} /dedicated/server/{serviceName}/bringYourOwnImage
+> @api {v1} /dedicated/server POST /dedicated/server/{serviceName}/bringYourOwnImage
 >
 
 #### Tabele opcji <a name="options"></a>
@@ -110,7 +110,7 @@ Możesz śledzić wdrażanie obrazu za pomocą następującego wywołania API lu
 
 > [!api]
 >
-> @api {GET} /dedicated/server/{serviceName}/bringYourOwnImage
+> @api {v1} /dedicated/server GET /dedicated/server/{serviceName}/bringYourOwnImage
 >
 
 W tym przykładzie wdrażanie jest w trakcie uruchamiania.
@@ -140,7 +140,7 @@ Możesz usunąć wdrożenie, wykonując następujące połączenie:
 
 > [!api]
 >
-> @api {DELETE} /dedicated/server/{serviceName}/bringYourOwnImage
+> @api {v1} /dedicated/server DELETE /dedicated/server/{serviceName}/bringYourOwnImage
 >
 
 Dzięki temu będziesz mógł usunąć stan wdrożenia i umieścić serwer w trybie rescue.

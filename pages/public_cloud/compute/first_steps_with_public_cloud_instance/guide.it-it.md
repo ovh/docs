@@ -122,7 +122,7 @@ Questa azione comporta la cancellazione definitiva dell'istanza e di tutti i suo
 
 Nella nuova finestra, conferma l'operazione.
 
-### Accedi alla console VNC
+### Accedi alla console VNC <a name="accessvnc"></a>
 
 Clicca sulle `Instances`{.action} nel menu a sinistra. Nella pagina di gestione delle istanze, clicca sul nome dell'istanza nella tabella.
 

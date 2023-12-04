@@ -69,7 +69,7 @@ Vous pouvez vérifier dans quel état se trouve votre nom de domaine en utlisant
 
 > [!api]
 >
-> @api {GET} /domain/{serviceName}
+> @api {v1} /domain GET /domain/{serviceName}
 
 | Paramètre     | Obligatoire | Défaut | Description                |
 | ------------- | ----------- | ------ | -------------------------- |
@@ -104,7 +104,7 @@ Pour mettre votre nom de domaine dans un état `unlocked`, utilisez la même rou
 
 > [!api]
 >
-> @api {PUT} /domain/{serviceName}
+> @api {v1} /domain PUT /domain/{serviceName}
 
 | Paramètre            | Obligatoire | Défaut | Description                |
 | -------------------- | ----------- | ------ | -------------------------- |
@@ -121,7 +121,7 @@ La route suivante vous permet de le récupérer :
 
 > [!api]
 >
-> @api {GET} /domain/{serviceName}/authInfo
+> @api {v1} /domain GET /domain/{serviceName}/authInfo
 
 | Paramètre     | Obligatoire | Défaut | Description                |
 | ------------- | ----------- | ------ | -------------------------- |

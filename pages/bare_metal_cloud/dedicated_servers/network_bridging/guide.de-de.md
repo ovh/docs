@@ -1,7 +1,7 @@
 ---
 title: Network Bridge einrichten
 excerpt: Erfahren Sie hier, wie Sie den Internet-Zugang Ihrer virtuellen Maschinen konfigurieren
-updated: 2022-12-20
+updated: 2023-11-24
 ---
 
 > [!primary]
@@ -52,7 +52,7 @@ Die Codebeispiele in den folgenden Anweisungen sind durch Ihre eigenen Werte zu 
 
 ### Schritt 1: Eine virtuelle MAC-Adresse zuweisen
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external}, gehen Sie zum Bereich `Bare Metal Cloud`{.action} und öffnen Sie `IP`{.action}.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external}, gehen Sie zum Bereich `Bare Metal Cloud`{.action} und öffnen Sie `Network`{.action}. Klicken Sie dann auf `IP`{.action}.
 
 Klicken Sie auf den Tab `Additional IP`{.action}.
 
@@ -70,11 +70,32 @@ Wählen Sie `ovh`{.action} in der Drop-down-Liste "Typ" aus, wenn Sie nicht VMwa
 
 Um Ihre virtuellen Maschinen für den Internetzugang zu konfigurieren, müssen Sie das Gateway Ihrer Host-Maschine kennen, d. h. Ihres dedizierten Servers. Die Gateway-Adresse besteht aus den ersten drei Oktetten der Haupt-IP-Adresse Ihres Servers und 254 als das letzte Oktett. Angenommen, die Haupt-IP-Adresse Ihres Servers wäre:
 
-- 169.254.10.020
+- 169.254.10.20
 
 Ihre Gateway-Adresse wäre dann:
 
 - 169.254.10.**254**
+
+Sie können das Gateway auch über [Ihr Kundencenter](#viacontrolpanel) oder die [OVHcloud API](#viaapi) abrufen.
+
+#### Über Ihr Kundencenter <a name="viacontrolpanel"></a>
+
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein, gehen Sie in den Bereich `Bare Metal Cloud`{.action} und wählen Sie Ihren Server in `Dedicated Server`{.action} aus.
+
+Das Ihrem Server zugewiesene IPv4-Gateway wird im Tab `Allgemeine Informationen`{.action} im Bereich `Netzwerk` angezeigt. Nachdem Sie die Adresse kopiert haben, setzen Sie die Konfiguration fort.
+
+![gateway](images/ipv4information.png){.thumbnail}
+
+#### Über die OVHcloud API <a name="viaapi"></a>
+
+Klicken Sie auf der [OVHcloud API Seite](https://api.ovh.com/console/) oben rechts auf `Login`{.action} ein. Geben Sie auf der nächsten Seite Ihre OVHcloud Kundenkennung ein.
+
+Führen Sie den folgenden API-Aufruf unter Angabe des internen Servernamens (Beispiel: `ns3956771.ip-169-254-10.eu`) aus:
+
+> [!api]
+>
+> @api {v1} /dedicated/server GET /dedicated/server/{serviceName}/specifications/network
+>
 
 ### Schritt 3: Host vorbereiten
 

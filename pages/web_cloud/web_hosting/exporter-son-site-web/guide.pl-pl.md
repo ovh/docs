@@ -1,6 +1,6 @@
 ---
-title: 'Eksportowanie witryny internetowej'
-excerpt: 'Dowiedz się, jak wyeksportować swoją witrynę internetową OVHcloud'
+title: "Eksportowanie witryny internetowej"
+excerpt: "Dowiedz się, jak wyeksportować swoją witrynę internetową OVHcloud"
 updated: 2022-02-03
 ---
 

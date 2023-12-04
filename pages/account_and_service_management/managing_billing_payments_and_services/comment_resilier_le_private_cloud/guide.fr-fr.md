@@ -72,7 +72,7 @@ Vous pouvez également valider la demande de résiliation via l'API OVHcloud sui
 
 > [!api]
 >
-> @api {POST} /dedicatedCloud/{serviceName}/confirmTermination
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/confirmTermination
 >
 
 Vous devrez alors renseigner le token de validation disponible dans l'e-mail de confirmation de résiliation.

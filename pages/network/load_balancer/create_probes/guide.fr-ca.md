@@ -34,7 +34,7 @@ La liste des sondes disponibles et de leurs paramètres peut être consultée av
 
 > [!api]
 >
-> @api {GET} /ipLoadbalancing/{serviceName}/availableFarmProbes
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/availableFarmProbes
 > 
 
 Pour plus d'informations sur cet appel, nous vous invitons à consulter la section *Sondes disponibles* en bas de ce guide.
@@ -43,22 +43,22 @@ Les sondes retournées par cette liste peuvent être configurées sur les fermes
 
 > [!api]
 >
-> @api {POST} /ipLoadbalancing/{serviceName}/http/farm
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/http/farm
 > 
 
 > [!api]
 >
-> @api {PUT} /ipLoadbalancing/{serviceName}/http/farm/{farmId}
+> @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/http/farm/{farmId}
 > 
 
 > [!api]
 >
-> @api {POST} /ipLoadbalancing/{serviceName}/tcp/farm
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/tcp/farm
 > 
 
 > [!api]
 >
-> @api {PUT} /ipLoadbalancing/{serviceName}/tcp/farm/{farmId}
+> @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/tcp/farm/{farmId}
 > 
 
 Pour plus d'informations sur ces appels, vous pouvez consulter la section *Manipulation des sondes* en bas de ce guide.
@@ -139,7 +139,7 @@ Les sondes peuvent être configurées sur une nouvelle ferme (`POST`) ou une fer
 >
 >> > [!api]
 >> >
->> > @api {PUT} /ipLoadbalancing/{serviceName}/http/farm/{farmId}
+>> > @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/http/farm/{farmId}
 >> >
 >>
 >
@@ -225,7 +225,7 @@ Pour qu'une sonde soit active, il faut qu'elle ait été configurée sur la ferm
 >
 >> > [!api]
 >> >
->> > @api {PUT} /ipLoadbalancing/{serviceName}/http/farm/{farmId}/server/{serverId}
+>> > @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/http/farm/{farmId}/server/{serverId}
 >> >
 >>
 >
@@ -273,7 +273,7 @@ La liste des sondes disponibles peut être obtenue avec l'appel API :
 >
 >> > [!api]
 >> >
->> > @api {GET} /ipLoadbalancing/{serviceName}/availableFarmProbes
+>> > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/availableFarmProbes
 >> >
 >>
 >

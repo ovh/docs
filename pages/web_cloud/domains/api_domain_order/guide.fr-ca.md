@@ -82,7 +82,7 @@ La première étape de commande d'un nom de domaine est la création du panier a
 
 > [!api]
 >
-> @api {POST} /order/cart
+> @api {v1} /order POST /order/cart
 
 | Paramètre     | Obligatoire | Défaut              | Description                         |
 | ------------- | ----------- | ------------------- | ----------------------------------- |
@@ -111,7 +111,7 @@ La seconde étape consiste à récupérer les offres accessibles pour un domaine
 
 > [!api]
 >
-> @api {GET} /order/cart/{cartId}/domain
+> @api {v1} /order GET /order/cart/{cartId}/domain
 
 | Paramètre | Obligatoire | Défaut | Description                |
 | --------- | ----------- | ------ | -------------------------- |
@@ -221,7 +221,7 @@ L'appel suivant permet en effet d'ajouter le domaine désiré dans le panier :
 
 > [!api]
 >
-> @api {POST} /order/cart/{cartId}/domain
+> @api {v1} /order POST /order/cart/{cartId}/domain
 
 | Paramètre     | Obligatoire | Description                                                                                                                                      |
 | ------------- | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -296,7 +296,7 @@ Cette étape est optionnelle. Elle donne un aperçu du contenu du panier, mais e
 
 > [!api]
 >
-> @api {GET} /order/cart/{cartId}/summary
+> @api {v1} /order GET /order/cart/{cartId}/summary
 
 <!-- prettier-ignore -->
 > [!tabs]
@@ -502,7 +502,7 @@ Bien que cette opération puisse se faire dès la création du panier, elle devi
 
 > [!api]
 >
-> @api {POST} /order/cart/{cartId}/assign
+> @api {v1} /order POST /order/cart/{cartId}/assign
 
 ## Gestion des configurations <a name="configurations-management"></a>
 
@@ -514,7 +514,7 @@ Pour connaître les configurations requises, il suffit d'appeler l'API suivante.
 
 > [!api]
 >
-> @api {GET} /order/cart/{cartId}/item/{itemId}/requiredConfiguration
+> @api {v1} /order GET /order/cart/{cartId}/item/{itemId}/requiredConfiguration
 
 | Paramètre | Obligatoire | Défaut | Description                                   |
 | --------- | ----------- | ------ | --------------------------------------------- |
@@ -593,7 +593,7 @@ Maintenant qu'on a récupéré la liste des configurations requises, il suffit d
 
 > [!api]
 >
-> @api {POST} /order/cart/{cartId}/item/{itemId}/configuration
+> @api {v1} /order POST /order/cart/{cartId}/item/{itemId}/configuration
 
 | Paramètre                  | Obligatoire | Défaut | Description                                                                              |
 | -------------------------- | ----------- | ------ | ---------------------------------------------------------------------------------------- |
@@ -617,19 +617,19 @@ Maintenant qu'on a récupéré la liste des configurations requises, il suffit d
 
 > [!api]
 >
-> @api {GET} /order/cart/{cartId}/item/{itemId}/configuration
+> @api {v1} /order GET /order/cart/{cartId}/item/{itemId}/configuration
 
 #### Récupération de la valeur d'une configuration
 
 > [!api]
 >
-> @api {GET} /order/cart/{cartId}/item/{itemId}/configuration/{configurationId}
+> @api {v1} /order GET /order/cart/{cartId}/item/{itemId}/configuration/{configurationId}
 
 #### Suppression d'une configuration
 
 > [!api]
 >
-> @api {DELETE} /order/cart/{cartId}/item/{itemId}/configuration/{configurationId}
+> @api {v1} /order DELETE /order/cart/{cartId}/item/{itemId}/configuration/{configurationId}
 
 ## Gestion du panier
 
@@ -639,19 +639,19 @@ A tout moment, il est bien entendu possible de visualiser et manipuler le panier
 
 > [!api]
 >
-> @api {GET} /order/cart/{cartId}
+> @api {v1} /order GET /order/cart/{cartId}
 
 #### Récupération du détail d'un item
 
 > [!api]
 >
-> @api {GET} /order/cart/{cartId}/item/{itemId}
+> @api {v1} /order GET /order/cart/{cartId}/item/{itemId}
 
 #### Suppression d'un item
 
 > [!api]
 >
-> @api {DELETE} /order/cart/{cartId}/item/{itemId}
+> @api {v1} /order DELETE /order/cart/{cartId}/item/{itemId}
 
 ## Validation du panier
 
@@ -659,7 +659,7 @@ Cette étape est sans doute la plus importante du processus de commande et se fa
 
 > [!api]
 >
-> @api {GET} /order/cart/{cartId}/checkout
+> @api {v1} /order GET /order/cart/{cartId}/checkout
 
 Elle permet de récupérer le bon de commande dans sa forme finale sans le générer (c'est un "dry-run"). L'objet retourné contient les contrats associés aux différents produits.
 
@@ -669,7 +669,7 @@ Cet appel permet également de valider les configurations comme par exemple les 
 
 > [!api]
 >
-> @api {POST} /order/cart/{cartId}/checkout
+> @api {v1} /order POST /order/cart/{cartId}/checkout
 
 | Paramètre                           | Obligatoire | Défaut | Description                                                                                    |
 | ----------------------------------- | ----------- | ------ | ---------------------------------------------------------------------------------------------- |
@@ -686,7 +686,7 @@ Dans un premier temps, récupérons les moyens de paiement disponibles pour le b
 
 > [!api]
 >
-> @api {GET} /me/order/{orderId}/availableRegisteredPaymentMean
+> @api {v1} /me GET /me/order/{orderId}/availableRegisteredPaymentMean
 
 | Paramètre | Obligatoire | Défaut | Description                                                                                     |
 | --------- | ----------- | ------ | ----------------------------------------------------------------------------------------------- |
@@ -723,7 +723,7 @@ Le paiement du bon de commande se fait via l'API ci-dessous. Celle-ci ne retourn
 
 > [!api]
 >
-> @api {POST} /me/order/{orderId}/payWithRegisteredPaymentMean
+> @api {v1} /me POST /me/order/{orderId}/payWithRegisteredPaymentMean
 
 | Paramètre       | Obligatoire             | Défaut | Description                                                                                                                             |
 | --------------- | ----------------------- | ------ | --------------------------------------------------------------------------------------------------------------------------------------- |
@@ -737,7 +737,7 @@ L'API suivante permet de connaître l'état d'un bon de commande.
 
 > [!api]
 >
-> @api {GET} /me/order/{orderId}/status
+> @api {v1} /me GET /me/order/{orderId}/status
 
 | Paramètre | Obligatoire | Défaut | Description                                                                                     |
 | --------- | ----------- | ------ | ----------------------------------------------------------------------------------------------- |

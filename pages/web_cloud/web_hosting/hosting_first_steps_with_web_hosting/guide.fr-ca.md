@@ -1,7 +1,7 @@
 ---
-title: Premiers pas avec un hébergement web
-excerpt: Découvrez comment bien débuter avec un hébergement web
-updated: 2022-11-11
+title: "Premiers pas avec un hébergement web"
+excerpt: "Découvrez comment bien débuter avec un hébergement web"
+updated: 2023-11-16
 ---
 
 ## Objectif
@@ -18,6 +18,11 @@ Vous venez d’acquérir un hébergement web pour créer votre site internet. Ce
 - Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
 
 ## En pratique
+
+> [!success]
+>
+> Avant de poursuivre la lecture de ce guide, assurez-vous que le nom de domaine ou le sous-domaine que vous souhaitez utiliser soit correctement associé avec votre hébergement web OVHcloud. Pour cela, consultez notre guide « [Partager son hébergement web OVHcloud entre plusieurs sites web](/pages/web_cloud/web_hosting/multisites_configure_multisite) ».
+>
 
 ### Étape 1 : délimiter votre projet
 

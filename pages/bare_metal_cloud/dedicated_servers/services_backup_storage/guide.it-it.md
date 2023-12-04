@@ -93,7 +93,7 @@ Accedi all'[api.ovh.com](https://api.ovh.com/) e utilizza questa chiamata:
 
 > [!api]
 >
-> @api {POST} /dedicated/server/{serviceName}/features/backupFTP/access
+> @api {v1} /dedicated/server POST /dedicated/server/{serviceName}/features/backupFTP/access
 >
 
 Inserisci i campi in questo modo:
@@ -110,7 +110,7 @@ Per verificare che il tuo indirizzo IP sia autorizzato, utilizza questa chiamata
 
 > [!api]
 >
-> @api {GET} /dedicated/server/{serviceName}/features/backupFTP/access
+> @api {v1} /dedicated/server GET /dedicated/server/{serviceName}/features/backupFTP/access
 >
 
 ![apiacladri](images/aclapi02.png){.thumbnail}

@@ -37,13 +37,13 @@ Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=
 
 Klicken Sie im linken Menü auf `Quota and Regions`{.action}.
 
-![access quota](images/raisepciquota2021.png){.thumbnail}
+![access quota](images/raisepciquota1-2023.png){.thumbnail}
 
 Diese Seite bietet einen Überblick über die Regionen und ihre verfügbaren Ressourcen. Eine Warnung wird neben einer Ressource angezeigt, sobald 80 % ihrer derzeitigen Quote erreicht sind.
 
 Um eine Quota-Erhöhung zu beantragen, klicken Sie auf `Quota erhöhen`{.action}.
 
-![raise-pci-quota](images/raisepciquota2021b.png){.thumbnail}
+![raise-pci-quota](images/raisepciquota2023.png){.thumbnail}
 
 Klicken Sie dann auf den Dropdown-Pfeil neben "Wählen Sie die Menge aus", um die Liste der derzeit verfügbaren Kontingente anzuzeigen, auf die Sie Ihre Ressourcen aktualisieren können. In diesem Abschnitt wird auch der fällige Betrag angezeigt, um diese Ressourcen nutzen zu können.
 
@@ -79,7 +79,7 @@ Klicken Sie im linken Menü auf `Quota and Regions`{.action}.
 
 Sie können auf den Button `?`{.action} klicken, um weitere Informationen zu dieser Funktion anzuzeigen. Klicken Sie dann auf den `Schieberegler`{.action}, um den Status auf "**Aktiviert**" zu setzen.
 
-![auto scaling](images/autoscaling.png){.thumbnail}
+![auto scaling](images/autoscaling2023.png){.thumbnail}
 
 Nach Abschluss des Vorgangs wird *Autoscaling* für Ihr Projekt aktiviert und Ihre Ressourcenquote wird im Laufe der Zeit erhöht.
 

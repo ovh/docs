@@ -1,7 +1,7 @@
 ---
 title: 'Primeros pasos con la solución MX Plan'
 excerpt: 'Cómo empezar a utilizar la solución de correo electrónico MX Plan'
-updated: 2021-07-19
+updated: 2023-11-15
 ---
 
 > [!primary]
@@ -243,8 +243,6 @@ Desea enviar una newsletter regularmente a sus contactos.
 Para ello, puede crear una lista de difusión. Siga nuestra guía [Gestionar y utilizar las listas de correo](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_mailing_list).
 
 ## Más información
-
-Migrando los productos MX Plan a los nuevos productos MX Plan en curso. Si desea solicitar la migración de su plan con prioridad, siga las indicaciones de [esta página](https://www.ovh.es/mxplan-migration/#accordion_6001-4).
 
 Si sus necesidades evolucionan y quiere disfrutar de funcionalidades adicionales, también puede [migrar una dirección de correo MX Plan a una cuenta Email Pro o Exchange](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel).
 

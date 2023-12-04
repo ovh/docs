@@ -69,14 +69,14 @@ Here are a few exemples of the role API calls you can use:
 
 > [!api]
 >
-> @api {GET} /dbaas/logs
+> @api {v1} /dbaas/logs GET /dbaas/logs
 >
 
 ### Returning the list of roles associated with the service
 
 > [!api]
 >
-> @api {GET} /dbaas/logs/{serviceName}/role
+> @api {v1} /dbaas/logs GET /dbaas/logs/{serviceName}/role
 >
 
 **Parameters:**
@@ -87,7 +87,7 @@ Here are a few exemples of the role API calls you can use:
 
 > [!api]
 >
-> @api {GET} /dbaas/logs/{serviceName}/role/{roleId}
+> @api {v1} /dbaas/logs GET /dbaas/logs/{serviceName}/role/{roleId}
 >
 
 **Parameters:**
@@ -99,7 +99,7 @@ Here are a few exemples of the role API calls you can use:
 
 > [!api]
 >
-> @api {POST} /dbaas/logs/{serviceName}/role/{roleId}/member
+> @api {v1} /dbaas/logs POST /dbaas/logs/{serviceName}/role/{roleId}/member
 >
 
 **Parameters:**
@@ -112,7 +112,7 @@ Here are a few exemples of the role API calls you can use:
 
 > [!api]
 >
-> @api {POST} /dbaas/logs/{serviceName}/role/{roleId}/permissions/alias
+> @api {v1} /dbaas/logs POST /dbaas/logs/{serviceName}/role/{roleId}/permissions/alias
 >
 
 **Parameters:**

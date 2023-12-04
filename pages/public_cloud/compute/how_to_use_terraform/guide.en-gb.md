@@ -239,7 +239,7 @@ You can find all region names by checking this OVHcloud API endpoint:
 
 > [!api]
 >
-> @api {GET} cloud/project/{serviceName}/region
+> @api {v1} /cloud GET /cloud/project/{serviceName}/region
 >
 
 We will use the following OVHcloud regions for this example:
