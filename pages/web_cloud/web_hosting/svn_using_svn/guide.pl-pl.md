@@ -30,7 +30,7 @@ SVN, który jest skrótem od "subwersji", jest systemem zarządzania wersjami.
 
 ### Tworzenie zgłoszenia
 
-Po zalogowaniu się przez [SSH na Twoim hostingu](/pages/web_cloud/web_hosting/ssh_on_webhosting){.external} utwórz katalog główny depozytów SVN, a następnie wpłata.
+Po zalogowaniu się przez [SSH na Twoim hostingu](/pages/web_cloud/web_hosting/ssh_on_webhosting) utwórz katalog główny depozytów SVN, a następnie wpłata.
 
 W tym celu wystarczy wpisać polecenie:
 
@@ -83,7 +83,7 @@ Postępuj zgodnie z poprzednio utworzonym kluczem, wszystko w tej samej linii.
 > Zastąp "/home.XXX/loginFTP" i "john" Twoimi identyfikatorami SSH.
 > Aby dowiedzieć się, jakie liczby należy użyć do zastąpienia "/home.XXX/loginFTP", wpisz komendę "pwd" przez SSH.
 >
-> Informacje te znajdziesz również w przewodniku [Korzystanie z dostępu SSH do hostingu](/pages/web_cloud/web_hosting/ssh_on_webhosting){.external}.
+> Informacje te znajdziesz również w przewodniku [Korzystanie z dostępu SSH do hostingu](/pages/web_cloud/web_hosting/ssh_on_webhosting).
 > 
 
 ![hosting](images/3080.png){.thumbnail}
@@ -149,6 +149,6 @@ svn+ssh://login@ftp.nom-du-site.tld/home.XXX/login/svn/depot_test
 
 ## Sprawdź również
 
-[Korzystanie z dostępu SSH do hostingu](/pages/web_cloud/web_hosting/ssh_on_webhosting){.external}
+[Korzystanie z dostępu SSH do hostingu](/pages/web_cloud/web_hosting/ssh_on_webhosting)
 
 Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com/en/>.

@@ -30,7 +30,7 @@ SVN, abreviación de "subversion", es un sistema de gestión de versiones.
 
 ### Creación del repositorio
 
-Una vez conectado en [SSH al alojamiento](/pages/web_cloud/web_hosting/ssh_on_webhosting){.external}, cree el directorio raíz de los repositorios SVN y el repositorio.
+Una vez conectado en [SSH al alojamiento](/pages/web_cloud/web_hosting/ssh_on_webhosting), cree el directorio raíz de los repositorios SVN y el repositorio.
 
 Para ello, introduzca el siguiente comando:
 
@@ -83,7 +83,7 @@ A continuación de la clave creada anteriormente, todo ello en la misma línea.
 > Sustituya "/home.XXX/loginFTP" y "john" por sus claves SSH.
 > Para consultar los símbolos utilizados para sustituir "/home.XXX/loginFTP", introduzca el comando "pwd" en SSH.
 >
-> Consulte nuestra guía [Utilizar el acceso SSH de un alojamiento web](/pages/web_cloud/web_hosting/ssh_on_webhosting){.external}.
+> Consulte nuestra guía [Utilizar el acceso SSH de un alojamiento web](/pages/web_cloud/web_hosting/ssh_on_webhosting).
 > 
 
 ![hosting](images/3080.png){.thumbnail}

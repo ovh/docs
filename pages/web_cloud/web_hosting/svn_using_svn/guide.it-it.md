@@ -18,7 +18,7 @@ SVN, che è l'abbreviazione di "sovversione", è un sistema di gestione delle ve
 >
 > OVHcloud mette a tua disposizione servizi di cui tu sei responsabile per la configurazione e la gestione. Garantirne quotidianamente il corretto funzionamento è quindi responsabilità dell’utente.
 > 
-> Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione del tuo account. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un fornitore specializzato o l’amministratore del servizio. OVHcloud non può fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione “Per saperne di più”.
+> Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione del tuo account. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un fornitore specializzato o l’amministratore del servizio. OVHcloud non può fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione “[Per saperne di più](#go-further)”.
 > 
 
 ## Pre-obbligatorio
@@ -30,7 +30,7 @@ SVN, che è l'abbreviazione di "sovversione", è un sistema di gestione delle ve
 
 ### Creazione del deposito
 
-Una volta connesso in [SSH al tuo hosting](/pages/web_cloud/web_hosting/ssh_on_webhosting){.external}, crea la directory di root dei depositi SVN e poi la deposizione.
+Una volta connesso in [SSH al tuo hosting](/pages/web_cloud/web_hosting/ssh_on_webhosting), crea la directory di root dei depositi SVN e poi la deposizione.
 
 Ti basta digitare il comando:
 
@@ -83,7 +83,7 @@ Segui la chiave precedentemente creata, il tutto sulla stessa linea.
 > Sostituisci "/home.XXX/loginFTP" e "john" con le credenziali SSH.
 > Per conoscere le cifre da utilizzare per sostituire "/home.XXX/loginFTP", digita il comando "pwd" in SSH.
 >
-> Per maggiori informazioni, consulta la guida [Utilizzare l'accesso SSH di un hosting Web](/pages/web_cloud/web_hosting/ssh_on_webhosting){.external}.
+> Per maggiori informazioni, consulta la guida [Utilizzare l'accesso SSH di un hosting Web](/pages/web_cloud/web_hosting/ssh_on_webhosting).
 > 
 
 ![hosting](images/3080.png){.thumbnail}
@@ -149,6 +149,8 @@ svn+ssh://login@ftp.nom-du-site.tld/home.XXX/login/svn/depot_test
 
 ## Per saperne di più <a name="go-further"></a>
 
-[Utilizza l'accesso SSH di un hosting Web](/pages/web_cloud/web_hosting/ssh_on_webhosting){.external}
+[Utilizza l'accesso SSH di un hosting Web](/pages/web_cloud/web_hosting/ssh_on_webhosting)
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
+
+Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.

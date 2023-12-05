@@ -26,7 +26,7 @@ SVN, qui est l'abrévation de « subversion », est un système de gestion de ve
 
 ### Création du dépôt
 
-Une fois connecté en [SSH sur votre hébergement](/pages/web_cloud/web_hosting/ssh_on_webhosting){.external}, créez le répertoire racine des dépôts SVN, puis le dépôt.
+Une fois connecté en [SSH sur votre hébergement](/pages/web_cloud/web_hosting/ssh_on_webhosting), créez le répertoire racine des dépôts SVN, puis le dépôt.
 
 Il vous suffit pour cela de taper la commande :
 
@@ -79,7 +79,7 @@ Suivie de la clé précédemment créée, le tout sur la même ligne.
 > Remplacez « /home.XXX/loginFTP » et « john » par vos identifiants SSH. 
 > Pour connaître les chiffres à utiliser pour remplacer « /home.XXX/loginFTP »  tapez la commande « pwd » en SSH.
 >
-> Vous retrouverez également ces infrormations on consultant notre guide [Utiliser l’accès SSH de son hébergement web](/pages/web_cloud/web_hosting/ssh_on_webhosting){.external}.
+> Vous retrouverez également ces infrormations on consultant notre guide [Utiliser l’accès SSH de son hébergement web](/pages/web_cloud/web_hosting/ssh_on_webhosting).
 > 
 
 ![hosting](images/3080.png){.thumbnail}
@@ -145,7 +145,7 @@ svn+ssh://login@ftp.nom-du-site.tld/home.XXX/login/svn/depot_test
 
 ## Aller plus loin <a name="go-further"></a>
 
-[Utiliser l’accès SSH de son hébergement web](/pages/web_cloud/web_hosting/ssh_on_webhosting){.external}
+[Utiliser l’accès SSH de son hébergement web](/pages/web_cloud/web_hosting/ssh_on_webhosting)
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/directory/).
 

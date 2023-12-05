@@ -30,7 +30,7 @@ SVN, que é a abreviação de "subversion", é um sistema de gestão de versões
 
 ### Criação do depósito
 
-Depois de aceder ao [SSH no seu alojamento](/pages/web_cloud/web_hosting/ssh_on_webhosting){.external}, crie a pasta raiz dos depósitos SVN e, a seguir, o depósito.
+Depois de aceder ao [SSH no seu alojamento](/pages/web_cloud/web_hosting/ssh_on_webhosting), crie a pasta raiz dos depósitos SVN e, a seguir, o depósito.
 
 Para isso, basta introduzir o comando:
 
@@ -83,7 +83,7 @@ Seguir a chave criada anteriormente, tudo na mesma linha.
 > Substitua "/home.XXX/loginFTP" e "john" pelos seus ID SSH.
 > Para conhecer os números a utilizar para substituir "/home.XXX/loginFTP" introduza o comando "pwd" em SSH.
 >
-> Também poderá consultar estas informações consultando o nosso guia [Utilizar o acesso SSH do seu alojamento web](/pages/web_cloud/web_hosting/ssh_on_webhosting){.external}.
+> Também poderá consultar estas informações consultando o nosso guia [Utilizar o acesso SSH do seu alojamento web](/pages/web_cloud/web_hosting/ssh_on_webhosting).
 > 
 
 ![alojamento](images/3080.png){.thumbnail}
@@ -149,6 +149,6 @@ svn+ssh://login@ftp.nom-du-site.tld/home.XXX/login/svn/depot_test
 
 ## Quer saber mais?
 
-[Utilizar o acesso SSH do seu alojamento web](/pages/web_cloud/web_hosting/ssh_on_webhosting){.external}
+[Utilizar o acesso SSH do seu alojamento web](/pages/web_cloud/web_hosting/ssh_on_webhosting)
 
 Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

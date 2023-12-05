@@ -135,7 +135,7 @@ svn+ssh://login@ftp.name-of-site.tld/home.XXX/login/svn/depot_test
 
 ## Go further <a name="go-further"></a>
 
-[Accessing a Web Hosting plan via SSH](/pages/web_cloud/web_hosting/ssh_on_webhosting){.external}
+[Accessing a Web Hosting plan via SSH](/pages/web_cloud/web_hosting/ssh_on_webhosting)
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-au/directory/).
 
