@@ -29,7 +29,7 @@ This section displays basic information about this VPS and the state of the serv
 
 ##### **Name**
 
-If you click on `...`{.action} and then select `Change the name`{.action}, you can enter a distinct name for this VPS. This is useful for an easier Control Panel navigation in case you are managing multiple VPS services but it has no impact otherwise. The internal service name remains in the format *vps-XXXXXXX.vps.ovh.net*.
+If you click on `...`{.action} and then select `Change the name`{.action}, you can enter a distinguishing name for this VPS. This is useful for an easier Control Panel navigation in case you are managing multiple VPS services but it has no impact otherwise. The internal service name remains in the format *vps-XXXXXXX.vps.ovh.net*.
 
 ##### **Boot**
 
@@ -187,7 +187,7 @@ Please note that if you have selected a **distribution with application** (Plesk
 > Connecting with the "root" user is disabled by default as a security measure. If you want to permit these connections, refer to the instructions in [this guide](/pages/bare_metal_cloud/virtual_private_servers/root_password#enabling-root-login).
 >
 
-#### Update root password
+#### Root password
 
 To change or update your "root" password, refer to the instructions in [this guide](/pages/bare_metal_cloud/virtual_private_servers/root_password).
 
@@ -235,11 +235,11 @@ Once you have configured your VPS, you may want to secure your domain name and y
 
 You can install this SSL certificate manually, directly on the VPS. Please refer to the official documentation of your VPS distribution.
 
-For a more automated process, OVHcloud also offers the SSL Gateway solution. Please refer to the [product page](https://www.ovh.ie/ssl-gateway/) or our [documentation](/products/web-cloud-ssl-gateway) for further information.
+To automate this process, OVHcloud also offers the SSL Gateway solution. Please refer to the [product page](https://www.ovh.ie/ssl-gateway/) or our [documentation](/products/web-cloud-ssl-gateway) for further information.
 
 ## Go further
 
-[VPS FAQ](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction)
+[VPS FAQ](/pages/bare_metal_cloud/virtual_private_servers/vps-faq)
 
 [Introduction to SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction)
 
