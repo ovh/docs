@@ -422,7 +422,7 @@ If you are using SSL VPN functionality, unfortunately, this feature no longer ex
 ##### Step 4.8.3.8 Reconfiguration of the Initial IP Block
 
 > [!warning]
-> This step will result in a service interruption as all traffic will be redirected to the T0 VIP.
+> This step will result in a service interruption as all traffic will be redirected to the T0 VIP (you will no longer be able to use this IP block with VMs on the VM Network portgroup).
 > It is up to you to decide whether you want to point the primary IP block of NSX-V to the NSX-T0 before or after migrating your VMs (see [Step 5.2](#vmotion)).
 >
 
