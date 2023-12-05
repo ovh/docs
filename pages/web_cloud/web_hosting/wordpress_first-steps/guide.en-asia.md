@@ -4,7 +4,6 @@ excerpt: "Find out how to create a website with the WordPress CMS"
 updated: 2023-02-17
 ---
 
-  
 ## Objective
 
 This tutorial will help you create your first content, organise it, put it online and change the theme of your website with the Content Management System (CMS) **WordPress**. You can build your website without any particular knowledge of programming, with a wide range of topics such as a company website, a blog, or even a website to publicise your activity or passion.

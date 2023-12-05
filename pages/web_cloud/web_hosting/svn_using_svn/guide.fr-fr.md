@@ -1,7 +1,7 @@
 ---
-title: Utiliser SVN
-excerpt: Découvrez comment utiliser SVN en SSH sur votre hebergement web
-updated: 2021-01-06
+title: "Utiliser SVN"
+excerpt: "Découvrez comment utiliser SVN en SSH sur votre hebergement web"
+updated: 2023-12-05
 ---
 
 ## Objectif
@@ -14,7 +14,7 @@ SVN, qui est l'abrévation de « subversion », est un système de gestion de ve
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 > 
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « Aller plus loin » de ce guide.
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « [Aller plus loin](#go-further) » de ce guide.
 > 
 
 ## Pre-requis
@@ -26,7 +26,7 @@ SVN, qui est l'abrévation de « subversion », est un système de gestion de ve
 
 ### Création du dépôt
 
-Une fois connecté en [SSH sur votre hébergement](/pages/web_cloud/web_hosting/ssh_on_webhosting){.external}, créez le répertoire racine des dépôts SVN, puis le dépôt.
+Une fois connecté en [SSH sur votre hébergement](/pages/web_cloud/web_hosting/ssh_on_webhosting), créez le répertoire racine des dépôts SVN, puis le dépôt.
 
 Il vous suffit pour cela de taper la commande :
 
@@ -79,7 +79,7 @@ Suivie de la clé précédemment créée, le tout sur la même ligne.
 > Remplacez « /home.XXX/loginFTP » et « john » par vos identifiants SSH. 
 > Pour connaître les chiffres à utiliser pour remplacer « /home.XXX/loginFTP »  tapez la commande « pwd » en SSH.
 >
-> Vous retrouverez également ces infrormations on consultant notre guide [Utiliser l’accès SSH de son hébergement web](/pages/web_cloud/web_hosting/ssh_on_webhosting){.external}.
+> Vous retrouverez également ces infrormations on consultant notre guide [Utiliser l’accès SSH de son hébergement web](/pages/web_cloud/web_hosting/ssh_on_webhosting).
 > 
 
 ![hosting](images/3080.png){.thumbnail}
@@ -143,8 +143,10 @@ Lorsque vous voudrez faire une vérification en local, les exemples fournis ne f
 svn+ssh://login@ftp.nom-du-site.tld/home.XXX/login/svn/depot_test
 ```
 
-## Aller plus loin
+## Aller plus loin <a name="go-further"></a>
 
-[Utiliser l’accès SSH de son hébergement web](/pages/web_cloud/web_hosting/ssh_on_webhosting){.external}
+[Utiliser l’accès SSH de son hébergement web](/pages/web_cloud/web_hosting/ssh_on_webhosting)
+
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

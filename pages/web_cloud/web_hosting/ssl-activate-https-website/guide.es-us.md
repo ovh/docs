@@ -1,6 +1,6 @@
 ---
 title: "Web hosting : cambiar el sitio web a HTTPS"
-excerpt: Descubra cómo cambiar su sitio web a HTTPS después de activar un certificado SSL
+excerpt: "Descubra cómo cambiar su sitio web a HTTPS después de activar un certificado SSL"
 updated: 2023-09-22
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Hosting WWW : przełączenie strony WWW na HTTPS"
-excerpt: Dowiedz się, jak ustawić protokół HTTPS na Twojej stronie WWW po aktywacji certyfikatu SSL
+excerpt: "Dowiedz się, jak ustawić protokół HTTPS na Twojej stronie WWW po aktywacji certyfikatu SSL"
 updated: 2023-09-22
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Hosting Web : passare il proprio sito Web in HTTPS"
-excerpt: Questa guida ti mostra come attivare il protocollo *HTTPS* sul tuo sito dopo aver attivato un certificato SSL
+excerpt: "Questa guida ti mostra come attivare il protocollo *HTTPS* sul tuo sito dopo aver attivato un certificato SSL"
 updated: 2023-09-22
 ---
 

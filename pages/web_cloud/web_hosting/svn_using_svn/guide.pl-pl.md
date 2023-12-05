@@ -1,7 +1,7 @@
 ---
-title: SVN
-excerpt: Dowiedz się, jak korzystać z SVN przez SSH na Twoim hostingu
-updated: 2021-01-06
+title: "SVN"
+excerpt: "Dowiedz się, jak korzystać z SVN przez SSH na Twoim hostingu"
+updated: 2023-12-05
 ---
 
 > [!primary]
@@ -18,7 +18,7 @@ SVN, który jest skrótem od "subwersji", jest systemem zarządzania wersjami.
 >
 > OVHcloud udostępnia różnorodne usługi, jednak to Ty odpowiadasz za ich konfigurację i zarządzanie nimi. Ponosisz więc odpowiedzialność za ich prawidłowe funkcjonowanie.
 > 
-> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy wyspecjalizowanego webmastera lub kontakt z producentem oprogramowania. Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji „Sprawdź również”.
+> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy wyspecjalizowanego webmastera lub kontakt z producentem oprogramowania. Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji „[Sprawdź również](#go-further)”.
 > 
 
 ## Wymagania
@@ -30,7 +30,7 @@ SVN, który jest skrótem od "subwersji", jest systemem zarządzania wersjami.
 
 ### Tworzenie zgłoszenia
 
-Po zalogowaniu się przez [SSH na Twoim hostingu](/pages/web_cloud/web_hosting/ssh_on_webhosting){.external} utwórz katalog główny depozytów SVN, a następnie wpłata.
+Po zalogowaniu się przez [SSH na Twoim hostingu](/pages/web_cloud/web_hosting/ssh_on_webhosting) utwórz katalog główny depozytów SVN, a następnie wpłata.
 
 W tym celu wystarczy wpisać polecenie:
 
@@ -83,7 +83,7 @@ Postępuj zgodnie z poprzednio utworzonym kluczem, wszystko w tej samej linii.
 > Zastąp "/home.XXX/loginFTP" i "john" Twoimi identyfikatorami SSH.
 > Aby dowiedzieć się, jakie liczby należy użyć do zastąpienia "/home.XXX/loginFTP", wpisz komendę "pwd" przez SSH.
 >
-> Informacje te znajdziesz również w przewodniku [Korzystanie z dostępu SSH do hostingu](/pages/web_cloud/web_hosting/ssh_on_webhosting){.external}.
+> Informacje te znajdziesz również w przewodniku [Korzystanie z dostępu SSH do hostingu](/pages/web_cloud/web_hosting/ssh_on_webhosting).
 > 
 
 ![hosting](images/3080.png){.thumbnail}
@@ -147,8 +147,10 @@ Jeśli chcesz przeprowadzić lokalną weryfikację, dostarczone przykłady nie b
 svn+ssh://login@ftp.nom-du-site.tld/home.XXX/login/svn/depot_test
 ```
 
-## Sprawdź również
+## Sprawdź również <a name="go-further"></a>
 
-[Korzystanie z dostępu SSH do hostingu](/pages/web_cloud/web_hosting/ssh_on_webhosting){.external}
+[Korzystanie z dostępu SSH do hostingu](/pages/web_cloud/web_hosting/ssh_on_webhosting)
 
-Dołącz do społeczności naszych użytkowników na stronie<https://community.ovh.com/en/>.
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
