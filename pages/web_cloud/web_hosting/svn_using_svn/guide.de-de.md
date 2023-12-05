@@ -1,7 +1,7 @@
 ---
-title: SVN verwenden
-excerpt: So verwenden Sie SVN via SSH auf Ihrem Webhosting
-updated: 2021-01-06
+title: "SVN verwenden"
+excerpt: "So verwenden Sie SVN via SSH auf Ihrem Webhosting"
+updated: 2023-12-05
 ---
 
 > [!primary]
@@ -18,7 +18,7 @@ SVN, die Abkürzung für "Subversion", ist ein Versionsverwaltungssystem.
 >
 > OVHcloud stellt Ihnen Dienstleistungen zur Verfügung, für deren Konfiguration und Verwaltung Sie die alleinige Verantwortung tragen. Es liegt somit bei Ihnen, sicherzustellen, dass diese ordnungsgemäß funktionieren.
 > 
-> Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) und/oder den Herausgeber des Dienstes zu kontaktieren. Für externe Dienstleistungen bietet OVHcloud leider keine Unterstützung. Genauere Informationen finden Sie im Teil „Weiterführende Informationen" dieser Anleitung.
+> Wir stellen Ihnen diese Anleitung zur Verfügung, um Ihnen bei der Bewältigung alltäglicher Verwaltungsaufgaben zu helfen. Dennoch empfehlen wir Ihnen, falls Sie Hilfe brauchen, einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) und/oder den Herausgeber des Dienstes zu kontaktieren. Für externe Dienstleistungen bietet OVHcloud leider keine Unterstützung. Genauere Informationen finden Sie im Teil „[Weiterführende Informationen](#go-further)" dieser Anleitung.
 > 
 
 ## Voraussetzungen
@@ -138,8 +138,10 @@ Wenn Sie eine lokale Überprüfung durchführen möchten, funktionieren die aufg
 svn+ssh://login@ftp.ftp.name-of-site.tld/home.XXX/login/svn/depot_test
 ```
 
-## Weiterführende Informationen
+## Weiterführende Informationen <a name="go-further"></a>
 
 [SSH-Zugang Ihres Webhostings verwenden](/pages/web_cloud/web_hosting/ssh_on_webhosting){.external}
+
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

@@ -1,7 +1,7 @@
 ---
 title: SVN
 excerpt: Dowiedz się, jak korzystać z SVN przez SSH na Twoim hostingu
-updated: 2021-01-06
+updated: 2023-12-05
 ---
 
 > [!primary]

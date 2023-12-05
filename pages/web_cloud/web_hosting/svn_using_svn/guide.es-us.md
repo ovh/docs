@@ -1,7 +1,7 @@
 ---
 title: Utilizar SVN
 excerpt: Cómo utilizar SVN por SSH en un alojamiento web
-updated: 2021-01-06
+updated: 2023-12-05
 ---
 
 > [!primary]
