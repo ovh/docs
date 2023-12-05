@@ -1,7 +1,7 @@
 ---
 title: Migrer une infrastructure vers un nouveau vDC
 excerpt: Découvrez comment déplacer vos VMs d'un vDC existant vers un nouveau vDC dans la même infrastructure VMware
-updated: 2023-11-22
+updated: 2023-12-05
 ---
 <style>
 .ovh-api-main { background:#fff;}
