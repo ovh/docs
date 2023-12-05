@@ -1,7 +1,7 @@
 ---
 title: AI Training - Troubleshooting
 excerpt: Tutorial about how to debug your jobs
-updated: 2023-12-01
+updated: 2023-12-05
 ---
 
 ## Objective
@@ -16,12 +16,14 @@ This tutorial gives you some hints on how to debug your jobs if things go wrong.
 ## Instructions
 
 ### What is an AI Training job and how to run one?
+
 All steps for starting and working on AI Training are described in the [AI Training - Getting Started](/pages/public_cloud/ai_machine_learning/training_guide_02_howto_submit_job) guide.
 
 ### How do I get my files back once I have finished training?
-When you use AI Training, be careful to mount Object Storage containers to your job. It is on these volumes that you will need to back up your files. Once your training job is complete (reached `DONE` status, your job should synchronise your data on the mounted Object Storage container(s).
 
-If no volumes are mounted in the specified location, your files will be saved in the job's local and ephemeral storage, which will delete them once the job has finished.
+When you use AI Training, make sure to mount Object Storage containers to your job. You will need to back up your files on these volumes. Once your training job is complete (status is `DONE` ), your job should synchronise your data on the mounted Object Storage container(s).
+
+If no volumes are mounted in the specified location, your files will be saved in the job's local and ephemeral storage, then deleted once the job is finished.
 
 ### Which commands and arguments can I use to debug?
 
@@ -39,17 +41,17 @@ Further details on each sub-command can be accessed by:
 ovhai <subcommand> --help
 ```
 
-### Where to find the UUID of my job?
+### Where can I find the UUID of my job?
 
-The UUIDs of your projects appear on the Control Panel when you go to the `AI Training` section. 
+The UUIDs of your projects appear in the Control Panel when you go to the `AI Training` section. 
 
-You can also find them when you list your existing jobs, using the `ovhai` CLI by using the following command:
+You can also find them when you list your existing jobs, using the `ovhai` CLI with the following command:
 
 ``` {.bash}
 ovhai job list
 ```
 
-If your job is not listed, you may use this command to list all jobs:
+If your job is not listed, you may use this command to list all the jobs:
 
 ``` {.bash}
 $ ovhai job list -a
@@ -136,9 +138,9 @@ It is not possible to update a running job. If you wish to change the specificat
 
 ### How is the product billed?
 
-During its lifetime the job should transit between the following statuses (`QUEUED`, `INITIALIZING`, `PENDING`, `RUNNING`, `INTERRUPTING`, `FINALIZING`, `DONE`).
+During its lifetime the job should transit between the following statuses:`QUEUED`, `INITIALIZING`, `PENDING`, `RUNNING`, `INTERRUPTING`, `FINALIZING`, `DONE`.
 
-Billing is minute-based and starts from the beginning to the end of the job's `RUNNING` status. Each commenced minute is billed completely. Jobs that do not reach the `RUNNING` state will not be billed.
+Billing is minute-based and starts from the beginning until the end of the job's `RUNNING` status. Each commenced minute is billed completely. Jobs that do not reach the `RUNNING` state will not be billed.
 
 The price will depend on the compute resources you use (CPUs and GPUs) and their running time. Pricing examples can be found [here](/pages/public_cloud/ai_machine_learning/training_guide_08_billing_concept).
 
@@ -146,7 +148,7 @@ For more information about AI Training, please check the [Troubleshooting docume
 
 ### How long can I use my AI Training job?
 
-An AI Training job runs continuously until manually interrupted by the user or until it is done, unless it exceeds **7 days of running**. It will then be automatically stopped. You can choose to automatically restart it using the `auto-restart` option (set this parameter to `True`). The job will then restart as is. To increase this 7-day limit, you will have to contact the support to ask for an upgrade of this quota for your Public Cloud Project.
+An AI Training job runs continuously until manually interrupted by the user or until it is done, unless it exceeds **7 days of running**. It will then be automatically stopped. You can choose to automatically restart it using the `auto-restart` option (set this parameter to `True`). The job will then restart as is. To increase this 7-day limit, you will have to contact the support to ask for an upgrade of this quota for your Public Cloud project.
 
 ## Feedback
 
