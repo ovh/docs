@@ -148,7 +148,7 @@ Sur la page qui apparaît, confirmez la suppression. Celle-ci sera effective sou
 
 > [!warning]
 >
-> Si vous supprimer un certificat SSL payant **Sectigo** (DV ou EV), celui-ci sera définitivement supprimé même si ce dernier n'avait pas encore expiré. Aucun remboursement au prorata du temps restant ne pourra être effectué également. Si vous souhaitez réinstaller un certificat SSL **Sectigo** (DV ou EV), vous devrez donc obligatoirement réaliser une nouvelle commande, et payer l'intégralité du nouveau certificat SSL souscrit.
+> Si vous supprimez un certificat SSL payant **Sectigo** (DV ou EV), celui-ci sera définitivement supprimé même si ce dernier n'avait pas encore expiré. Aucun remboursement au prorata du temps restant ne pourra être effectué également. Si vous souhaitez réinstaller un certificat SSL **Sectigo** (DV ou EV), vous devrez donc obligatoirement réaliser une nouvelle commande, et payer l'intégralité du nouveau certificat SSL souscrit.
 >
 
 ### Corriger les erreurs fréquemment rencontrées avec les certificats SSL proposés sur les hébergements web
