@@ -4,7 +4,6 @@ excerpt: "Find out how to use the WooCommerce solution with the WordPress CMS"
 updated: 2023-03-07
 ---
 
-  
 ## Objective
 
 This tutorial explains how to create an online store with the open-source plugin **WooCommerce** for the Content Management System (CMS) **WordPress**. 
