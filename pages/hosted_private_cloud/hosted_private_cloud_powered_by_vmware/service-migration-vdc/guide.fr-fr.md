@@ -1,7 +1,7 @@
 ---
 title: Migrer une infrastructure vers un nouveau vDC
 excerpt: Découvrez comment déplacer vos VMs d'un vDC existant vers un nouveau vDC dans la même infrastructure VMware
-updated: 2023-11-22
+updated: 2023-12-05
 ---
 <style>
 .ovh-api-main { background:#fff;}
@@ -444,7 +444,7 @@ Ces applications réseau sont à monter sur des VMs dédiées hébergées sur vo
 ##### Etape 4.8.3.8 Reconfiguration du bloc IP initial
 
 > [!warning]
-> Cette étape entraine une interruption de service car tout le trafic sera redirigé vers la VIP de la T0.
+> Cette étape entraine une interruption de service car tout le trafic sera redirigé vers la VIP de la T0 (vous ne pourrez plus utiliser ce bloc IP avec des VMs sur le portgroup VM Network).
 > Vous devez décider si vous voulez faire pointer le bloc IP primaire de NSX-V vers la T0 de NSX avant ou après avoir migré vos VMs (cf [Etape 5.2](#vmotion))
 >
 
