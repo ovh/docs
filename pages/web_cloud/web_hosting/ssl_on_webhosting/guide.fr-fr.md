@@ -52,7 +52,7 @@ Pour activer SSL sur un multisite, cliquez sur le bouton `...`{.action} à droit
 >
 > Effectivement, pour les certificats SSL payants **Sectigo** (DV et EV), ces derniers ne sont valables que pour un seul nom de domaine (et son sous-domaine en *www*). La mention *Activé* ne pourra donc pas apparaître à droite des autres multisites déclarés sur l'hébergement web.
 >
-> Pour les certificats SSL **Externes**, certains peuvent être valables pour plusieurs noms de domaine à la fois. Si vous utilisez l'un d'eux, la mention *Activé* n'apparaîtra pas non plus pour tous vos noms de domaines déclarés dans le tableau « multisite ».
+> Pour les certificats SSL **Externes**, certains peuvent être valables pour plusieurs noms de domaine à la fois. Si vous utilisez l'un d'eux, la mention *Activé* n'apparaîtra pas non plus pour tous vos noms de domaines déclarés dans le tableau « multisite ». Malgré cela, votre certificat SSL sera tout de même valable pour les noms de domaines qu'il *englobe*.
 >
 
 ![managessl](images/manage-ssl-step6.png){.thumbnail}
