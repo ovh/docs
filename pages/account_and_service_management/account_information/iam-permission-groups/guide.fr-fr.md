@@ -66,7 +66,7 @@ Les groupes de permissions sont accessibles via l'API suivante :
 },
 ```
 
-#### UTiliser les groupes de permissions dans le control panel
+#### Utiliser les groupes de permissions dans le control panel
 
 Ces groupes de permissions peuvent ensuite être utilisés en complément ou à la place des actions unitaires dans les politiques d'accès :
 
