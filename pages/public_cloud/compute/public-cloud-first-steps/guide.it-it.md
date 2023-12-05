@@ -1,7 +1,7 @@
 ---
 title: Creare e connettersi a un’istanza Public Cloud
 excerpt: Come eseguire le prime operazioni su un servizio Public Cloud dopo aver creato un progetto
-updated: 2023-11-29
+updated: 2023-12-01
 ---
 
 > [!primary]
@@ -155,19 +155,18 @@ Clicca sul pulsante `Aggiungi una chiave SSH`{.action}. Nella nuova pagina, inse
 
 Accedi allo [Spazio Cliente OVHcloud, vai alla sezione `Public Cloud`{.action} e seleziona il tuo progetto Public Cloud. Nella Home page, clicca su `Crea un’istanza`{.action}. (È possibile trovare la stessa funzionalità nella pagina “Istanze”, cliccando su`Istanze`{.action} nella barra di navigazione a sinistra sotto alla voce “Compute”.)
 
-![instance select](images/instance-creation-01-2023.png){.thumbnail}
+![instance select](images/instance-creation-01-02-2023.png){.thumbnail}
 
 Per prima cosa, seleziona un modello di server in base alle tue esigenze. La procedura guidata fornisce una descrizione dei diversi casi d'uso e della disponibilità del modello di server. Puoi scegliere tra le seguenti categorie personalizzate:
 
 | Tipo di Server | Risorse garantite | Note di utilizzo |
 | :---         |     :---:      |          :--- |
 | General Purpose   | ✓     | Server di sviluppo, applicazioni business o web    |
-| CPU     | ✓       | Codifica video o altri calcoli intensivi      |
-| RAM   | ✓     | Database, analisi e calcoli in-memory    |
+| Compute Optimized     | ✓       | Codifica video o altri calcoli intensivi      |
+| Memory Optimized   | ✓     | Database, analisi e calcoli in-memory    |
 | GPU     | ✓       | Potenza di elaborazione parallela di massa (rendering, Big Data, deep learning, etc.)       |
-| Sandbox    | -       | Hosting in risorse condivise per ambienti di test e sviluppo      |
 | Discovery    | -       | Hosting in risorse condivise per ambienti di test e sviluppo      |
-| IOPS   | ✓     | Ottimizzato per il trasferimento dei dati su disco    |
+| Storage Optimized   | ✓     | Ottimizzato per il trasferimento dei dati su disco    |
 | Metal | ✓ | Risorse dedicate con accesso diretto alle risorse di calcolo, di storage e di rete|
 
 > [!primary]
@@ -181,7 +180,7 @@ Nello step successivo, seleziona un datacenter per la tua istanza Public Cloud.
 
 Nello step 3 seleziona un sistema operativo per l’istanza. Le immagini disponibili in questo step dipenderanno dalle scelte effettuate negli step precedenti, ad esempio per quanto riguarda la compatibilità con il tipo di server e la regione. Sono disponibili anche sistemi operativi con applicazioni preinstallate. 
 
-![image select](images/instance-creation-02-2022.png){.thumbnail}
+![image select](images/instance-creation-02-2023.png){.thumbnail}
 
 > [!primary]
 >

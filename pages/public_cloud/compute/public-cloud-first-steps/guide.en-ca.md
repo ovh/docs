@@ -1,7 +1,7 @@
 ---
 title: 'Creating and connecting to your first Public Cloud instance'
 excerpt: 'Find out how to get started with your Public Cloud service after the creation of a project'
-updated: 2023-11-29
+updated: 2023-12-01
 ---
 
 ## Objective
@@ -151,19 +151,18 @@ Click on the `Add an SSH key`{.action} button. In the new window, enter a name f
 
 Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned. On the "Home" page, click on `Create an instance`{.action}. (You can find the same functionality on the "Instances" page by clicking `Instances`{.action} in the left-hand navigation bar under "Compute".)
 
-![instance select](images/instance-creation-01-2023.png){.thumbnail}
+![instance select](images/instance-creation-01-02-2023.png){.thumbnail}
 
 First, choose a server template according to your needs. The assistant will provide descriptions about the various use cases and server model availability. You can choose from these customised categories:
 
 | Server Type | Guaranteed Resources | Usage notes |
 | :---         |     :---:      |          :--- |
 | General Purpose   | ✓     | Development servers, web or business applications    |
-| CPU     | ✓       | Video encoding or other high-performance computing      |
-| RAM   | ✓     | Databases, analysis, and in-memory calculations    |
+| Compute Optimized     | ✓       | Video encoding or other high-performance computing      |
+| Memory Optimized    | ✓     | Databases, analysis, and in-memory calculations    |
 | GPU     | ✓       | Massively parallel processing power for specialised applications (rendering, big data, deep learning, etc.)       |
-| Sandbox    | -       | Hosted on shared resources for testing and development environments      |
 | Discovery    | -       | Hosted on shared resources for testing and development environments      |
-| IOPS   | ✓     | Optimised for disk data transfer    |
+| Storage Optimized   | ✓     | Optimised for disk data transfer    |
 | Metal | ✓ | Dedicated resources with direct access to compute, storage and network resources|
 
 > [!primary]
@@ -177,7 +176,7 @@ In the next step, choose a data centre for your Public Cloud instance.
 
 The third option is where you select an operating system for the instance. Which images are available in this step depends on the choices made in previous steps, i.e. compatibility with the server type and the region. Operating systems with pre-installed applications are also available.
 
-![image select](images/instance-creation-02-2022.png){.thumbnail}
+![image select](images/instance-creation-02-2023.png){.thumbnail}
 
 > [!primary]
 >

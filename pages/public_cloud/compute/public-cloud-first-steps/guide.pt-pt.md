@@ -1,7 +1,7 @@
 ---
 title: 'Criação e conexão a uma primeira instância Public Cloud'
 excerpt: 'Saiba como dar os primeiros passos com o serviço Public Cloud depois da criação de um projeto'
-updated: 2023-11-29
+updated: 2023-12-01
 ---
 
 > [!primary]
@@ -155,19 +155,18 @@ Clique no botão `Adicionar uma chave SSH`{.action}. Na janela que se abrir, int
 
 Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), secção `Public Cloud`{.action}, e selecione o serviço Public Cloud em questão. Na página «Home», clique em `Criar uma instância`{.action}. (Encontrará a mesma funcionalidade na página «Instâncias», clicando em `Instâncias`{.action} na barra de navegação à esquerda, sob «Compute».)
 
-![instance select](images/instance-creation-01-2023.png){.thumbnail}
+![instance select](images/instance-creation-01-02-2023.png){.thumbnail}
 
 Antes de mais, escolha um modelo de servidor de acordo com as suas necessidades. O assistente vai fornecer descrições dos vários casos de uso e da disponibilidade dos modelos. Pode escolher entre as seguintes categorias personalizadas:
 
 | Tipo de Servidor | Recursos Assegurados | Notas de Uso |
 | :---         |     :---:      |          :--- |
 | Propósito Genérico   | ✓     | Servidores de desenvolvimento, aplicações web ou comerciais    |
-| CPU     | ✓       | Codificação de vídeo ou outra computação de elevado desempenho      |
-| RAM   | ✓     | Bases de dados, análise e cálculos in-memory    |
+| Compute Optimized     | ✓       | Codificação de vídeo ou outra computação de elevado desempenho      |
+| Memory Optimized   | ✓     | Bases de dados, análise e cálculos in-memory    |
 | GPU     | ✓       | Cálculo acelerado para aplicações especializadas (rendering, Big Data, deep learning, etc.)       |
-| Sandbox    | -       | Alojado em recursos partilhados para testes e ambientes de desenvolvimento      |
 | Discovery    | -       | Alojado em recursos partilhados para testes e ambientes de desenvolvimento      |
-| IOPS   | ✓     | Otimizado para transferências de dados de disco    |
+| Storage Optimized   | ✓     | Otimizado para transferências de dados de disco    |
 | Metal | ✓ | Recursos dedicados com acesso directo a recursos informáticos, de armazenamento e de rede|
 
 > [!primary]
@@ -181,7 +180,7 @@ A seguir, escolha um datacenter para a sua instância Public Cloud.
 
 Neste passo, deve escolher um sistema operativo para a instância. As imagens disponíveis dependerão das escolhas feitas nos passos anteriores, nomeadamente no que se refere ao tipo de servidor e à região. Estarão igualmente disponíveis sistemas operativos com aplicações pré-instaladas.
 
-![image select](images/instance-creation-02-2022.png){.thumbnail}
+![image select](images/instance-creation-02-2023.png){.thumbnail}
 
 > [!primary]
 >
