@@ -1,6 +1,6 @@
 ---
 title: "Web Hosting: Switch your website to HTTPS"
-excerpt: Find out how to activate HTTPS on your website after you have installed an SSL certificate
+excerpt: "Find out how to activate HTTPS on your website after you have installed an SSL certificate"
 updated: 2023-09-22
 ---
 
@@ -155,4 +155,4 @@ For specialised services (SEO, development, etc.), contact [OVHcloud partners](h
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-gb/support-levels/).
 
-Join our community of users on <https://community.ovh.com/en/>. 
+Join our community of users on <https://community.ovh.com/en/>.

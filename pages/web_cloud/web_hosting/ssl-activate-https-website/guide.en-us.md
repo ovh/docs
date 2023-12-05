@@ -1,6 +1,6 @@
 ---
 title: "Web Hosting: Switch your website to HTTPS"
-excerpt: Find out how to activate HTTPS on your website after you have installed an SSL certificate
+excerpt: "Find out how to activate HTTPS on your website after you have installed an SSL certificate"
 updated: 2023-09-22
 ---
 
