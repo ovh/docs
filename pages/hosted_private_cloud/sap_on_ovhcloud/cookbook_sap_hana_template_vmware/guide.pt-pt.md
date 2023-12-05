@@ -57,82 +57,82 @@ Once the SAP HANA sources have been uploaded in your S3 Object Storage bucket, y
 
 1\. In the vSphere interface, select your datacenter, click on `Action`{.action}, then `Deploy OVF template`{.action}.
 
-    ![new-virtual-machine](images/step-1.png){.thumbnail}
+![new-virtual-machine](images/step-1.png){.thumbnail}
 
 2\. Set the following URL to reach the OVF template for SAP HANA, then click on `Next`{.action}.
-    <a name="ovf_link"></a>
+<a name="ovf_link"></a>
 
 ```console
 https://templates-pcc-for-hana.s3.sbg.perf.cloud.ovh.net/sles4sap-sap-hana-SLE-15-SP4-Full-x86_64/sles4sap-sap-hana-SLE-15-SP4-Full-x86_64.ovf
 ```
 
-    ![deploy-from-template](images/step-2.png){.thumbnail}
+![deploy-from-template](images/step-2.png){.thumbnail}
 
 3\. Give a name to your virtual machine and select your datacenter, then click on `Next`{.action}.
 
-    ![virtual-machine](images/step-3.png){.thumbnail}
+![virtual-machine](images/step-3.png){.thumbnail}
 
 4\. Select "Cluster1", then click on `Next`{.action}.
 
-    ![cluster1](images/step-4.png){.thumbnail}
+![cluster1](images/step-4.png){.thumbnail}
 
 5\. The product name must be "SLES for SAP SLE-15-SP4-Full-x86_64 for SAP HANA (BYOL)". Click on `Next`{.action}.
 
-    Due to advanced configurations in the OVF template, a warning block is displayed.
+Due to advanced configurations in the OVF template, a warning block is displayed.
 
-    ![review](images/step-5.png){.thumbnail}
+![review](images/step-5.png){.thumbnail}
 
 6\. Select "vsanDatastore" to store your SAP HANA virtual machine, to be compliant with SAP and VMware recommendations.
 
-    ![storage](images/step-6.png){.thumbnail}
+![storage](images/step-6.png){.thumbnail}
 
 7\. Select the network where you want to deploy your SAP HANA database, then click on `Next`{.action}.
 
-    At the end of the deployment, you will have the possibility to edit your virtual machine to add another network card, if needed.
+At the end of the deployment, you will have the possibility to edit your virtual machine to add another network card, if needed.
 
-    ![network](images/step-7.png){.thumbnail}
+![network](images/step-7.png){.thumbnail}
 
 8\. The « SLES for SAP SLE-15-SP4-Full-x86_64 for SAP HANA (BYOL) » model offers many parameters to customize the virtual machine.
 
-    In this guide, we focus on these three categories:
+In this guide, we focus on these three categories:
 
-    - SAP HANA disks ;
-    - SAP HANA installation ;
-    - OVHcloud Backint Agent installation.
+- SAP HANA disks ;
+- SAP HANA installation ;
+- OVHcloud Backint Agent installation.
 
-    In the `SAP HANA disks`{.action} category, you must set the disks size which will be created.
+In the `SAP HANA disks`{.action} category, you must set the disks size which will be created.
 
-    Our OVF template has a default configuration to deploy a virtual machine with 8vCPUS and 128GB of memory. The pre-filled values follow the SAP storage recommendations for this model.
+Our OVF template has a default configuration to deploy a virtual machine with 8vCPUS and 128GB of memory. The pre-filled values follow the SAP storage recommendations for this model.
 
-    ![disks](images/step-8.png){.thumbnail}
+![disks](images/step-8.png){.thumbnail}
 
-    Find below the table of SAP recommendations to size SAP HANA disks:
+Find below the table of SAP recommendations to size SAP HANA disks:
 
-    | Disk       | Size                                                  |
-    |------------|-------------------------------------------------------|
-    | usrsap     | MIN(32 GB)                                            |
-    | hanadata   | 1 x RAM                                               |
-    | hanalog    | [RAM ≤ 512 GB] = 1/2 x RAM<br>[RAM > 512 GB] = 512 GB |
-    | hanashared | MIN(1 x RAM; 1 TB)                                    |
-    | hanabackup | hanadata + hanalog                                    |
+| Disk       | Size                                                  |
+|------------|-------------------------------------------------------|
+| usrsap     | MIN(32 GB)                                            |
+| hanadata   | 1 x RAM                                               |
+| hanalog    | [RAM ≤ 512 GB] = 1/2 x RAM<br>[RAM > 512 GB] = 512 GB |
+| hanashared | MIN(1 x RAM; 1 TB)                                    |
+| hanabackup | hanadata + hanalog                                    |
 
 9\. If you want to use the automation of the SAP HANA installation, tick the installation enable box and fill in the information in the `SAP HANA installation`{.action} category.
 
-    > [!primary]
-    >
-    > Take note of the [SAP Note 1979280](https://me.sap.com/notes/1979280/E) which describes all SAP HANA SID which cannot be used.
-    >
+> [!primary]
+>
+> Take note of the [SAP Note 1979280](https://me.sap.com/notes/1979280/E) which describes all SAP HANA SID which cannot be used.
+>
 
-    ![sap-hana-installation](images/step-9.png){.thumbnail}
+![sap-hana-installation](images/step-9.png){.thumbnail}
 
 10\. If you want to use the automation of the OVHcloud Backint Agent for SAP HANA installation to backup your SAP HANA database on an S3 Object Storage, tick the installation enable box and fill in the information in the `OVHcloud Backint Agent installation`{.action}` category.
 
-    > [!warning]
-    >
-    > This option is only available if you have enabled the SAP HANA installation in the previous category.
-    >
+> [!warning]
+>
+> This option is only available if you have enabled the SAP HANA installation in the previous category.
+>
 
-    ![ovhcloud-backint-agent-installation](images/step-10.png){.thumbnail}
+![ovhcloud-backint-agent-installation](images/step-10.png){.thumbnail}
 
 Once these steps have been done, the deployment of your virtual machine from the OVF template created by OVHcloud starts.
 
@@ -146,54 +146,54 @@ The OVF template created by OVHcloud takes in charge many parameters. However, s
 
 1\. To add these parameters, select your virtual machine, click on `Action`{.action}, then `Edit Settings`{.action}.
 
-    ![edit-vm](images/vm-step-1.png){.thumbnail}
+![edit-vm](images/vm-step-1.png){.thumbnail}
 
 2\. Click on the `Options VM`{.action} tab, then expand the `Advanced`{.action} menu and click on `Edit Configuration`{.action}.
 
-    ![vm-options](images/vm-step-2.png){.thumbnail}
+![vm-options](images/vm-step-2.png){.thumbnail}
 
 3\. These following parameters are included in the OVF template:
 
-    | Parameter                     | Value  |
-    |-------------------------------|--------|
-    | tools.guestlib.enableHostInfo | TRUE   |
-    | numa.memory.gransize          | 32768  |
+| Parameter                     | Value  |
+|-------------------------------|--------|
+| tools.guestlib.enableHostInfo | TRUE   |
+| numa.memory.gransize          | 32768  |
 
-    To get more details about these parameters, we invite you to take note of the [SAP Note 1606643](https://me.sap.com/notes/1606643/E) as well as the [VMware documentation](https://core.vmware.com/resource/sap-hana-vmware-vsphere-best-practices-and-reference-architecture-guide).
+To get more details about these parameters, we invite you to take note of the [SAP Note 1606643](https://me.sap.com/notes/1606643/E) as well as the [VMware documentation](https://core.vmware.com/resource/sap-hana-vmware-vsphere-best-practices-and-reference-architecture-guide).
 
 4\. If your SAP HANA virtual machine uses a half-socket or only one socket, it's recommended applying this parameter:
 
-    | Parameter          | Value  |
-    |--------------------|--------|
-    | numa.vcpu.preferHT | TRUE   |
+| Parameter          | Value  |
+|--------------------|--------|
+| numa.vcpu.preferHT | TRUE   |
 
 5\. We recommend applying a VM Storage Policy with a thick provisioning. To create a VM Storage Policy, click the `vSphere Client`{.action}, then click the `VM Storage Policies`{.action} icon.
 
-    Find below the parameters for the rule that we advise creating for SAP HANA.
+Find below the parameters for the rule that we advise creating for SAP HANA.
 
-    | Parameter                         | Value                          |
-    |-----------------------------------|--------------------------------|
-    | Storage Type                      | VSAN                           |
-    | Site disaster tolerance           | None - standard cluster        |
-    | Failures to tolerate              | 1 failure - RAID-1 (Mirroring) |
-    | Number of disk stripes per object | 1                              |
-    | IOPS limit for object             | 0                              |
-    | Object space reservation          | Thick provisioning             |
-    | Flash read cache reservation      | 0%                             |
-    | Disable object checksum           | No                             |
-    | Force provisioning                | No                             |
-    | Encryption services               | No preference                  |
-    | Space efficiency                  | Deduplication and compression  |
-    | Storage tier                      | All flash                      |
+| Parameter                         | Value                          |
+|-----------------------------------|--------------------------------|
+| Storage Type                      | VSAN                           |
+| Site disaster tolerance           | None - standard cluster        |
+| Failures to tolerate              | 1 failure - RAID-1 (Mirroring) |
+| Number of disk stripes per object | 1                              |
+| IOPS limit for object             | 0                              |
+| Object space reservation          | Thick provisioning             |
+| Flash read cache reservation      | 0%                             |
+| Disable object checksum           | No                             |
+| Force provisioning                | No                             |
+| Encryption services               | No preference                  |
+| Space efficiency                  | Deduplication and compression  |
+| Storage tier                      | All flash                      |
 
-    This VM Storage Policy must be applied on disks which host /hana/shared (Hard disk 3), /hana/data (Hard disk 4)
-    and /hana/log (Hard disk 5) volumes of your virtual machine.
+This VM Storage Policy must be applied on disks which host /hana/shared (Hard disk 3), /hana/data (Hard disk 4)
+and /hana/log (Hard disk 5) volumes of your virtual machine.
 
 6\. You can now start your virtual machine.
 
-    If you have enabled the installation of SAP HANA, the installation will start during the first boot of your virtual machine. The installation takes a bit more than 15 minutes, please don't perform any action on your virtual machine during the installation process.
+If you have enabled the installation of SAP HANA, the installation will start during the first boot of your virtual machine. The installation takes a bit more than 15 minutes, please don't perform any action on your virtual machine during the installation process.
 
-    A status will inform you about progress during your SSH connection to your virtual machine as well as prompt messages once connected.
+A status will inform you about progress during your SSH connection to your virtual machine as well as prompt messages once connected.
 
 ### Post-configuration
 
@@ -211,9 +211,9 @@ zypper update -y
 
 4\. We suggest setting the same time servers (NTP) as the ones used by your ESXi hosts of your VMware on OVHcloud solution at the OS level.
 
-    This information is available in your vSphere interface, selecting an ESXi host, in the `Configure`{.action} tab and `Time Configuration`{.action} menu.
+This information is available in your vSphere interface, selecting an ESXi host, in the `Configure`{.action} tab and `Time Configuration`{.action} menu.
 
-    On SLES, edit the /etc/chrony.conf file and add the IP address of NTP servers:
+On SLES, edit the /etc/chrony.conf file and add the IP address of NTP servers:
 
 ```console
 # Allow NTP client access from local network.
@@ -244,4 +244,4 @@ systemctl enable chronyd.service
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/pt/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
-Join our community of users on [https://community.ovh.com/en/](https://community.ovh.com/en/).
+Join our community of users on <https://community.ovh.com/en/>.
