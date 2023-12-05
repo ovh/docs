@@ -1,7 +1,7 @@
 ---
 title: Enabling Azure SSO connections with your OVHcloud account
 excerpt: "Find out how to associate your Entra ID (formerly Azure Active Directory) to your OVHcloud account using SAML 2.0"
-updated: 2023-04-05
+updated: 2023-12-05
 ---
 
 ## Objective
@@ -161,21 +161,21 @@ In the `Attributes & Claims`{.action} section, click on the `Edit`{.action} butt
 
 ![Entra ID SSO step 9](images/azure_ad_sso_9.png){.thumbnail}
 
-Let's add UPN attribute (User Principal Name) to SAML infos, so as to inform OVHcloud about user's email. This step is mandatory.
+You now need to add a UPN (User Principal Name) attribute to SAML infos, in order to inform OVHcloud about the user's email. This step is mandatory.
 
 Click on `Add a new claim`{.action} in the top menu.
 
-Fill `Name`{.action} field with `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn`{.action}.
+Fill in the `Name`{.action} field with `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn`.
 
-Fill `Source attribute`{.action} field with `user.mail`{.action}.
+Fill in the `Source attribute`{.action} field with `user.mail`{.action}.
 
-You should now have something looking like the following screen:
+Your interface should look like the following:
 
 ![Azure AD SSO saisie UPN](images/azure_ad_sso_9bis.png){.thumbnail}
 
-click on `Save`{.action}
+Click on `Save`{.action}.
 
-Let's now declare the attribute for user group.
+Let's now declare the attribute for the user group.
 
 Click on `Add a group claim`{.action} in the top menu.
 
@@ -275,7 +275,7 @@ You are now logged in with the same [NIC handle](/pages/account_and_service_mana
 
 ![Ovhcloud SSO Login step 2](images/ovhcloud_sso_login_2.png){.thumbnail}
 
-If your email does not appear below `Connected via SSO`{.action}, you have not configured the `UPN`{.action} attribute correctly, and some of the features will not work correctly.
+If your email does not appear below `Connected via SSO`{.action}, this means you have not configured the `UPN`{.action} attribute correctly, and some of the features will not work correctly.
 
 ## Go further
 

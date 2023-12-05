@@ -1,7 +1,7 @@
 ---
 title: Activer les connexions Azure SSO avec votre compte OVHcloud
-excerpt: "Découvrez comment associer votre Entra ID (anciennement Azure Active Directory) à votre compte OVHcloud en utilisant SAML 2.0"
-updated: 2023-04-05
+excerpt: "Découvrez comment associer votre Azure Active Directory à votre compte OVHcloud en utilisant SAML 2.0"
+updated: 2023-12-05
 ---
 
 ## Objectif
@@ -142,7 +142,7 @@ Cliquez sur `Upload metadata file`{.action} dans le menu du haut.
 
 ![Entra ID SSO étape 3](images/azure_ad_sso_3.png){.thumbnail}
 
-Cliquez sur l'icône du bouton `Select a file`{.action} , sélectionnez le fichier de métadonnées OVH Service Provider et cliquez sur le bouton `Add`{.action} .
+Cliquez sur l'icône du bouton `Select a file`{.action} , sélectionnez le fichier de métadonnées OVH Service Provider et cliquez sur le bouton `Add`{.action}.
 
 Vous pouvez obtenir le fichier de métadonnées approprié via les liens suivants :
 
@@ -161,21 +161,21 @@ Dans la section `Attributes & Claims`{.action}, cliquez sur le bouton `Modifier`
 
 ![Entra ID SSO étape 9](images/azure_ad_sso_9.png){.thumbnail}
 
-Ajoutons l'attribut UPN (User Principal Name) aux infos SAML pour informer OVHcloud du mail de l'utilisateur. Cette étape est indispensable.
+Ajoutons l'attribut UPN (User Principal Name) aux infos SAML pour informer OVHcloud de l'e-mail de l'utilisateur. Cette étape est indispensable.
 
 Cliquez sur `Add a new claim`{.action} dans le menu du haut.
 
-Dans le champ `Name`{.action} saisissez la valeur `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn`{.action}.
+Dans le champ `Name`{.action}, saisissez la valeur `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn`.
 
-Dans le champ `Source attribute`{.action} saisissez `user.mail`{.action}.
+Dans le champ `Source attribute`{.action}, saisissez `user.mail`{.action}.
 
-Vous devriez maintenant avoir quelque chose proche de l'écran suivant:
+Votre interface devrait alors être assez similaire à l'écran suivant:
 
 ![Azure AD SSO saisie UPN](images/azure_ad_sso_9bis.png){.thumbnail}
 
 Cliquez sur `Save`{.action}
 
-Déclarons maintenant l'attribut utilisé pour le groupe de l'utilisateur.
+Déclarez maintenant l'attribut utilisé pour le groupe de l'utilisateur.
 
 Cliquez sur `Add a group claim`{.action} dans le menu du haut.
 
@@ -275,7 +275,7 @@ Vous êtes maintenant connecté avec le même [nichandle](/pages/account_and_ser
 
 ![Ovhcloud SSO Login step 2](images/ovhcloud_sso_login_2.png){.thumbnail}
 
-Si votre email n'apparait pas en dessous de `Connected via SSO`{.action}, vous n'avez pas correctement configuré l'attribut `UPN`{.action} et une partie des fonctionnalités ne fonctionnera pas correctement.
+Si votre e-mail n'apparait pas en dessous de `Connected via SSO`{.action}, cela signifie que vous n'avez pas correctement configuré l'attribut `UPN`{.action} et une partie des fonctionnalités ne fonctionnera pas correctement.
 
 ## Aller plus loin
 
