@@ -57,82 +57,82 @@ Une fois les sources SAP HANA déposées dans votre bucket Object Storage S3, vo
 
 1\. Dans votre interface vSphere, sélectionnez votre datacenter, cliquez sur `Action`{.action} puis `Déployer un modèle OVF`{.action}.
 
-    ![new-virtual-machine](images/step-1.png){.thumbnail}
+![new-virtual-machine](images/step-1.png){.thumbnail}
 
 2\. Entrez l'URL suivante pour atteindre notre template OVF pour SAP HANA, puis cliquez sur `Next`{.action}.
-    <a name="ovf_link"></a>  
+<a name="ovf_link"></a>  
 
 ```console
 https://templates-pcc-for-hana.s3.sbg.perf.cloud.ovh.net/sles4sap-sap-hana-SLE-15-SP4-Full-x86_64/sles4sap-sap-hana-SLE-15-SP4-Full-x86_64.ovf
 ```
 
-    ![deploy-from-template](images/step-2.png){.thumbnail}
+![deploy-from-template](images/step-2.png){.thumbnail}
 
 3\. Donnez un nom à votre machine virtuelle et sélectionnez votre datacenter, puis cliquez sur `Next`{.action}.
 
-    ![virtual-machine](images/step-3.png){.thumbnail}
+![virtual-machine](images/step-3.png){.thumbnail}
 
 4\. Sélectionnez « Cluster1 » puis cliquez sur `Next`{.action}.
 
-    ![cluster1](images/step-4.png){.thumbnail}
+![cluster1](images/step-4.png){.thumbnail}
 
 5\. Vérifiez que le modèle sélectionné a bien pour nom « SLES for SAP SLE-15-SP4-Full-x86_64 for SAP HANA (BYOL) » puis cliquez sur `Next`{.action}.
 
-    Le bloc d'avertissement qui s'affiche concerne les configurations avancées intégrées au template OVF.
+Le bloc d'avertissement qui s'affiche concerne les configurations avancées intégrées au template OVF.
 
-    ![review](images/step-5.png){.thumbnail}
+![review](images/step-5.png){.thumbnail}
 
 6\. Sélectionnez « vsanDatastore » pour le stockage de votre machine virtuelle SAP HANA, afin de respecter les recommandations SAP et VMware puis cliquez sur `Next`{.action}.
 
-    ![storage](images/step-6.png){.thumbnail}
+![storage](images/step-6.png){.thumbnail}
 
 7\. Sélectionnez le réseau dans lequel vous souhaitez déployer votre base de données SAP HANA, puis cliquez sur `Next`{.action}.
 
-    À la fin du déploiement, vous aurez la possibilité d'éditer la machine virtuelle pour ajouter d'autres cartes réseaux si vous le désirez.
+À la fin du déploiement, vous aurez la possibilité d'éditer la machine virtuelle pour ajouter d'autres cartes réseaux si vous le désirez.
 
-    ![network](images/step-7.png){.thumbnail}
+![network](images/step-7.png){.thumbnail}
 
 8\. Le modèle « SLES for SAP SLE-15-SP4-Full-x86_64 for SAP HANA (BYOL) » offre plusieurs paramètres pour personnaliser la machine virtuelle.
 
-    Dans ce guide, nous nous focalisons sur les trois catégories suivantes :
+Dans ce guide, nous nous focalisons sur les trois catégories suivantes :
 
-    - SAP HANA disks ;
-    - SAP HANA installation ;
-    - OVHcloud Backint Agent installation.
+- SAP HANA disks ;
+- SAP HANA installation ;
+- OVHcloud Backint Agent installation.
 
-    Dans la catégorie `SAP HANA disks`{.action}, vous devez renseigner les tailles des disques qui seront créés.
+Dans la catégorie `SAP HANA disks`{.action}, vous devez renseigner les tailles des disques qui seront créés.
 
-    Notre template OVF est configuré par défaut pour déployer une machine virtuelle de 8vCPUs et 128GB de RAM. Les valeurs pré-remplies correspondent aux recommandations SAP de stockage pour ce modèle.
+Notre template OVF est configuré par défaut pour déployer une machine virtuelle de 8vCPUs et 128GB de RAM. Les valeurs pré-remplies correspondent aux recommandations SAP de stockage pour ce modèle.
 
-    ![disks](images/step-8.png){.thumbnail}
+![disks](images/step-8.png){.thumbnail}
 
-    Voici un tableau des recommandations SAP pour les tailles des disques :
+Voici un tableau des recommandations SAP pour les tailles des disques :
 
-    | Disque     | Taille                                                |
-    |------------|-------------------------------------------------------|
-    | usrsap     | MIN(32 GB)                                            |
-    | hanadata   | 1 x RAM                                               |
-    | hanalog    | [RAM ≤ 512 GB] = 1/2 x RAM<br>[RAM > 512 GB] = 512 GB |
-    | hanashared | MIN(1 x RAM; 1 TB)                                    |
-    | hanabackup | hanadata + hanalog                                    |
+| Disque     | Taille                                                |
+|------------|-------------------------------------------------------|
+| usrsap     | MIN(32 GB)                                            |
+| hanadata   | 1 x RAM                                               |
+| hanalog    | [RAM ≤ 512 GB] = 1/2 x RAM<br>[RAM > 512 GB] = 512 GB |
+| hanashared | MIN(1 x RAM; 1 TB)                                    |
+| hanabackup | hanadata + hanalog                                    |
 
 9\. Si vous souhaitez bénéficier de l'installation automatisée de votre base de données SAP HANA, cochez l'activation de l'installation et renseignez les informations de la catégorie `SAP HANA installation`{.action}.
 
-    > [!primary]
-    >
-    > Veuillez prendre connaissance de la [SAP Note 1979280](https://me.sap.com/notes/1979280/) qui liste les SID SAP HANA ne pouvant pas être utilisés.
-    >
+> [!primary]
+>
+> Veuillez prendre connaissance de la [SAP Note 1979280](https://me.sap.com/notes/1979280/) qui liste les SID SAP HANA ne pouvant pas être utilisés.
+>
 
-    ![sap-hana-installation](images/step-9.png){.thumbnail}
+![sap-hana-installation](images/step-9.png){.thumbnail}
 
 10\. Si vous souhaitez bénéficier de l’installation automatisée d'OVHcloud Backint Agent for SAP HANA pour sauvegarder votre base de données sur un Object Storage S3, cochez l'activation de l'installation et renseignez les informations de la catégorie `OVHcloud Backint Agent installation`{.action}.
 
-    > [!warning]
-    >
-    > Cette option est uniquement disponible dans le cas où vous avez activé l'installation de SAP HANA dans la précédente catégorie.
-    >
+> [!warning]
+>
+> Cette option est uniquement disponible dans le cas où vous avez activé l'installation de SAP HANA dans la précédente catégorie.
+>
 
-    ![ovhcloud-backint-agent-installation](images/step-10.png){.thumbnail}
+![ovhcloud-backint-agent-installation](images/step-10.png){.thumbnail}
 
 Une fois ces étapes réalisées, le déploiement de votre machine virtuelle à partir du template OVF créé par OVHcloud s'exécute.
 
@@ -146,54 +146,54 @@ Le template OVF créé par OVHcloud prend en compte de nombreux paramètres. Cep
 
 1\. Pour réaliser cet ajout de paramètres, sélectionnez votre machine virtuelle, cliquez sur `Action`{.action} puis `Modifier les paramètres`{.action}.  
 
-    ![edit-vm](images/vm-step-1.png){.thumbnail}
+![edit-vm](images/vm-step-1.png){.thumbnail}
 
 2\. Cliquez sur l'onglet `Options VM`{.action}, puis développez le menu `Avancé`{.action} et cliquez sur `Modifier la configuration`{.action}.
 
-    ![vm-options](images/vm-step-2.png){.thumbnail}
+![vm-options](images/vm-step-2.png){.thumbnail}
 
 3\. Les paramètres suivants sont inclus dans le template OVF :
 
-    | Paramètre                     | Valeur |
-    |-------------------------------|--------|
-    | tools.guestlib.enableHostInfo | TRUE   |
-    | numa.memory.gransize          | 32768  |
+| Paramètre                     | Valeur |
+|-------------------------------|--------|
+| tools.guestlib.enableHostInfo | TRUE   |
+| numa.memory.gransize          | 32768  |
 
-    Pour plus de détails à propos de ces paramètres, nous vous invitons à prendre connaissance de la [SAP Note 1606643](https://me.sap.com/notes/1606643/E), ainsi que la [documentation VMware](https://core.vmware.com/resource/sap-hana-vmware-vsphere-best-practices-and-reference-architecture-guide).
+Pour plus de détails à propos de ces paramètres, nous vous invitons à prendre connaissance de la [SAP Note 1606643](https://me.sap.com/notes/1606643/E), ainsi que la [documentation VMware](https://core.vmware.com/resource/sap-hana-vmware-vsphere-best-practices-and-reference-architecture-guide).
 
 4\. Dans le cas où votre machine virtuelle SAP HANA utilise un demi socket ou un socket, il est recommandé d'appliquer le paramètre suivant :
 
-    | Paramètre          | Valeur |
-    |--------------------|--------|
-    | numa.vcpu.preferHT | TRUE   |
+| Paramètre          | Valeur |
+|--------------------|--------|
+| numa.vcpu.preferHT | TRUE   |
 
 5\. Nous vous recommandons d'appliquer une stratégie de stockage VM en provisionnement statique. Pour créer une stratégie de stockage VM, cliquez sur `vSphere Client`{.action} puis sur l'icône `Stratégies de stockage VM`{.action}.
 
-    Ci-dessous, les paramètres de la règle que nous conseillons de créer pour SAP HANA.
+Ci-dessous, les paramètres de la règle que nous conseillons de créer pour SAP HANA.
 
-    | Paramètre                                  | Valeur                            |
-    |--------------------------------------------|-----------------------------------|
-    | Type de stockage                           | VSAN                              |
-    | Tolérance aux pannes du site               | Aucun - cluster standard          |
-    | Pannes tolérées                            | 1 panne : RAID-1 (mise en miroir) |
-    | Nombre de bandes de disque par objet       | 1                                 |
-    | Limite d'IOPS pour un objet                | 0                                 |
-    | Réservation d'espace d'objet               | Provisionnement statique          |
-    | Réservation de Flash Read Cache            | 0 %                               |
-    | Désactiver le total de contrôle de l'objet | Non                               |
-    | Forcer le provisionnement                  | Non                               |
-    | Services de chiffrement                    | Aucune préférence                 |
-    | Efficacité de l'utilisation de l'espace    | Déduplication et compression      |
-    | Niveau de stockage                         | Intégralement Flash               |
+| Paramètre                                  | Valeur                            |
+|--------------------------------------------|-----------------------------------|
+| Type de stockage                           | VSAN                              |
+| Tolérance aux pannes du site               | Aucun - cluster standard          |
+| Pannes tolérées                            | 1 panne : RAID-1 (mise en miroir) |
+| Nombre de bandes de disque par objet       | 1                                 |
+| Limite d'IOPS pour un objet                | 0                                 |
+| Réservation d'espace d'objet               | Provisionnement statique          |
+| Réservation de Flash Read Cache            | 0 %                               |
+| Désactiver le total de contrôle de l'objet | Non                               |
+| Forcer le provisionnement                  | Non                               |
+| Services de chiffrement                    | Aucune préférence                 |
+| Efficacité de l'utilisation de l'espace    | Déduplication et compression      |
+| Niveau de stockage                         | Intégralement Flash               |
 
-    Cette stratégie de stockage VM est à appliquer pour les disques hébergeant les volumes /hana/shared (Hard disk 3),
-    /hana/data (Hard disk 4) et /hana/log (Hard disk 5) de votre machine virtuelle.
+Cette stratégie de stockage VM est à appliquer pour les disques hébergeant les volumes /hana/shared (Hard disk 3),
+/hana/data (Hard disk 4) et /hana/log (Hard disk 5) de votre machine virtuelle.
 
 6\. Vous pouvez à présent démarrer votre machine virtuelle.
 
-    Dans le cas où vous avez activé l'installation SAP HANA à minima, l'installation démarrera lors du premier démarrage de votre machine virtuelle. L'installation dure un peu plus de 15 minutes, veillez à ne réaliser aucune action sur votre machine virtuelle durant le processus d'installation.
+Dans le cas où vous avez activé l'installation SAP HANA à minima, l'installation démarrera lors du premier démarrage de votre machine virtuelle. L'installation dure un peu plus de 15 minutes, veillez à ne réaliser aucune action sur votre machine virtuelle durant le processus d'installation.
 
-    Vous serez informé de l'avancée de l'installation par l'affichage d'un statut lors de votre connexion SSH à votre machine virtuelle, ainsi que par des messages une fois connecté.
+Vous serez informé de l'avancée de l'installation par l'affichage d'un statut lors de votre connexion SSH à votre machine virtuelle, ainsi que par des messages une fois connecté.
 
 ### Post-configuration
 
@@ -211,9 +211,9 @@ zypper update -y
 
 4\. Nous vous recommandons de configurer les mêmes serveurs de temps (NTP) utilisés par vos hosts ESXi de votre solution VMware on OVHcloud au niveau de votre OS.
 
-    Cette information est disponible dans votre interface vSphere, en sélectionnant un host ESXi, onglet `Configurer`{.action}, menu `Configuration de l'heure`{.action}.
+Cette information est disponible dans votre interface vSphere, en sélectionnant un host ESXi, onglet `Configurer`{.action}, menu `Configuration de l'heure`{.action}.
 
-    Sur SLES, éditez le fichier /etc/chrony.conf et ajoutez les adresses IP des serveurs de temps :
+Sur SLES, éditez le fichier /etc/chrony.conf et ajoutez les adresses IP des serveurs de temps :
 
 ```console
 # Allow NTP client access from local network.
@@ -244,4 +244,4 @@ systemctl enable chronyd.service
 
 Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr-ca/professional-services/?_gl=1*39h6u1*_gcl_au*MzU3MTAzMzA5LjE2ODY1NTk4MTE.) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
-Échangez avec notre communauté d'utilisateurs sur [https://community.ovh.com](https://community.ovh.com).
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
