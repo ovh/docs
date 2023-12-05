@@ -46,6 +46,15 @@ Trois états peuvent alors apparaître :
 
 Pour activer SSL sur un multisite, cliquez sur le bouton `...`{.action} à droite du multisite concerné, puis sur `Modifier le domaine`{.action}. Dans la fenêtre qui s'affiche, cochez la case `SSL`{.action}. Vous pouvez également activer l'option pour modifier le sous-domaine www en même temps que le nom de domaine associé. Suivez les étapes jusqu'à confirmer la modification.
 
+> [!warning]
+>
+> L'attribution d'un certificat SSL à une entrée multisite via le tableau « multisite » ne peut se faire que si vous avez commandé le certificat SSL gratuit **Let's Encrypt** fourni par OVHcloud.
+>
+> Effectivement, pour les certificats SSL payants **Sectigo** (DV et EV), ces derniers ne sont valables que pour un seul nom de domaine (et son sous-domaine en *www*). La mention *Activé* ne pourra donc pas apparaître à droite des autres multisites déclarés sur l'hébergement web.
+>
+> Pour les certificats SSL **Externes**, certains peuvent être valables pour plusieurs noms de domaine à la fois. Si vous utilisez l'un d'eux, la mention *Activé* n'apparaîtra pas non plus pour tous vos noms de domaines déclarés dans le tableau « multisite ».
+>
+
 ![managessl](images/manage-ssl-step6.png){.thumbnail}
 
 Une fois que vous avez soumis la demande d'activation, le statut de la connexion sécurisée SSL pour le multisite concerné sera actualisé au bout de quelques secondes et remplacé par « À générer ». Répétez cette action si nécessaire si vous souhaitez activer SSL pour d'autres multisites.
@@ -136,6 +145,11 @@ Dès que vous êtes prêt à supprimer le certificat SSL, connectez-vous à votr
 Sur la page qui apparaît, confirmez la suppression. Celle-ci sera effective sous quelques heures au maximum.
 
 ![managessl](images/manage-ssl-step9.png){.thumbnail}
+
+> [!warning]
+>
+> Si vous supprimer un certificat SSL payant **Sectigo** (DV ou EV), celui-ci sera définitivement supprimé même si ce dernier n'avait pas encore expiré. Aucun remboursement au prorata du temps restant ne pourra être effectué également. Si vous souhaitez réinstaller un certificat SSL **Sectigo** (DV ou EV), vous devrez donc obligatoirement réaliser une nouvelle commande, et payer l'intégralité du nouveau certificat SSL souscrit.
+>
 
 ### Corriger les erreurs fréquemment rencontrées avec les certificats SSL proposés sur les hébergements web
 
