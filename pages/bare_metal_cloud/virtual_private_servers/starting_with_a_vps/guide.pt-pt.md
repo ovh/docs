@@ -243,7 +243,7 @@ Para um processo mais automatizado, a OVHcloud propõe igualmente a solução SS
 
 ## Quer saber mais?
 
-[VPS FAQ](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction)
+[VPS FAQ](/pages/bare_metal_cloud/virtual_private_servers/vps-faq)
 
 [Introdução ao SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction)
 

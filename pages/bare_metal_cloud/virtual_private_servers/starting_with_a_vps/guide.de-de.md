@@ -243,7 +243,7 @@ OVHcloud bietet auch die Lösung SSL Gateway zur Automatisierung dieses Prozesse
 
 ## Weiterführende Informationen
 
-[VPS FAQ](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction)
+[VPS FAQ](/pages/bare_metal_cloud/virtual_private_servers/vps-faq)
 
 [SSH Einführung](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction)
 

@@ -243,7 +243,7 @@ Para un proceso más automatizado, OVHcloud también ofrece la solución SSL Gat
 
 ## Más información
 
-[FAQ VPS](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction)
+[FAQ VPS](/pages/bare_metal_cloud/virtual_private_servers/vps-faq)
 
 [Introducción al SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction)
 
