@@ -1,7 +1,7 @@
 ---
 title: AI Notebooks - Troubleshooting
 excerpt: Tutorial about how to debug your notebooks
-updated: 2023-12-01
+updated: 2023-12-05
 ---
 
 ## Objective
@@ -17,13 +17,14 @@ This tutorial gives you some hints on how to debug your notebooks if things go w
 ## Instructions
 
 ### What is an AI Notebook and how to launch one?
+
 All steps for starting and working on AI Notebooks are described in the [AI Notebooks - Getting Started](/pages/public_cloud/ai_machine_learning/notebook_guide_introduction_definition) guide.
 
 ### I can't connect to my notebook
 
 If you are unable to connect to AI Notebooks, please ensure the following:
 
-- **Your notebook is up and running:** To connect to your notebook, it must be in `RUNNING` or in `IN SERVICE` status (green colored on the OVHcloud Control Panel). If your notebook is starting up, wait a few moments until your data synchronizes and you will be able to connect. Starting time may vary due to some parameters. The more data you synchronize, the more time it will take.
+- **Your notebook is up and running:** To connect to your notebook, it must be in `RUNNING` or in `IN SERVICE` status (green color in the OVHcloud Control Panel). If your notebook is starting up, wait a few moments until your data synchronizes and you will be able to connect. Starting time may vary due to some parameters. The more data you synchronize, the more time it will take.
 
 - **You have an authorized user or an authorized token:** To be able to connect to your notebook, you must have created a user or token. To create a new user, log into the OVHcloud Control Panel and open your Public Cloud project. Click on `Users & Roles` in the left menu under `Project Management`. In the roles assignment, don't forget to select `Administrator` and/or `AI Training Operator` for your user.
 To follow all the steps in detail, please refer to this [documentation](/pages/public_cloud/ai_machine_learning/gi_01_manage_users).
@@ -98,16 +99,16 @@ You will have to pay for the resources you use. Check [this documentation](/page
 
 ### I don't see my data synchronized in the Object Storage
 
-When you create an AI Notebook, we copy your data in attached Object Storage containers near you compute resources (`CPU` and `GPU`) to increase performance and reduce latency.
+When you create an AI Notebook, we copy your data in attached Object Storage containers near your compute resources (`CPU` and `GPU`) to increase performance and reduce latency.
 
 > [!primary]
 >
 > When you write data inside an attached volume, we wait for the AI Notebook to stop to synchronize back your data.
 >
 
-If you are unable to see your synchronized data, please ensure the following:
+If you are unable to see your synchronized data, please ensure that:
 
-- **Your notebook is stopped:** To see your synchronized data in the Object Storage, your notebook must be stopped beforehand. The status of your notebook must be stopped (red colored). If your notebook is `STOPPING`, wait a few moments and you will be able to see your synchronized data.
+- **Your notebook is stopped:** To see your synchronized data in the Object Storage, your notebook must be stopped beforehand. The status of your notebook must be stopped (red colored). If your notebook is `STOPPING`, wait a little and you will be able to see your synchronized data.
 
 - **Your object container is not empty:** If your object container is empty, you may not have saved your data in the right place when using it in your notebook. Check how the volume was mounted when you started your notebook.
 
@@ -132,12 +133,12 @@ If it is not the case, contact our support.
 ### Can I install a new notebook editor?
 
 Currently, you can choose between three live-code editors to launch and edit your notebook:
+
 - VSCode
 - JupyterLab
 - JupyterLab collaborative
 
-You can get the list of available editors using the ovhai CLI and the following command:
-`ovhai capabilities editor list`
+You can get the list of available editors using the ovhai CLI with the following command: `ovhai capabilities editor list`
 
 You cannot install your own code editor on AI Notebooks.
 
@@ -154,7 +155,8 @@ AI Training allows you to benefit from the same technology and pricing, but you 
 If you want to build and use a custom Docker image, you can do it with AI Training by following this [tutorial](/pages/public_cloud/ai_machine_learning/training_tuto_02_build_custom_image).
 
 ### What are the available ports to public network?
-Each notebook has a public URL, by default this URL accesses the port 8080 of the notebook. The default port cannot be changed.
+
+Each notebook has a public URL. By default this URL accesses the port 8080 of the notebook. The default port cannot be changed.
 
 However, you can access other ports by appending them to the URL. For example, the notebook URL (starting with the notebook's ID, filled with 0 here) for accessing the 8501 port is https://00000000-0000-0000-0000-000000000000-8501.job.gra.ai.cloud.ovh.net/
 
@@ -174,7 +176,7 @@ You will know if the `failed` status is related to data synchronization and whic
 
 ### How long can I use my AI Notebook?
 
-An AI Notebook runs continuously until manually interrupted by the user, unless it exceeds **7 days of running**. It will then be automatically stopped. You can choose to automatically restart it using the `auto-restart` option (set this parameter to `True`). The notebook will then restart as is. To increase this 7-day limit, you will have to contact the support to ask for an upgrade of this quota for your Public Cloud Project.
+An AI Notebook runs continuously until manually interrupted by the user, unless it exceeds **7 days of running**. It will then be automatically stopped. You can choose to automatically restart it using the `auto-restart` option (set this parameter to `True`). The notebook will then restart as is. To increase this 7-day limit, you will have to contact the support to ask for an upgrade of this quota for your Public Cloud project.
 
 ### My notebook shut down unexpectedly
 
