@@ -1,6 +1,6 @@
 ---
-title: Utilizza SVN
-excerpt: Scopri come utilizzare SVN in SSH sul tuo hosting Web
+title: "Utilizza SVN"
+excerpt: "Scopri come utilizzare SVN in SSH sul tuo hosting Web"
 updated: 2023-12-05
 ---
 
@@ -147,7 +147,7 @@ Quando vuoi effettuare una verifica in locale, gli esempi forniti non funzionano
 svn+ssh://login@ftp.nom-du-site.tld/home.XXX/login/svn/depot_test
 ```
 
-## Per saperne di più
+## Per saperne di più <a name="go-further"></a>
 
 [Utilizza l'accesso SSH di un hosting Web](/pages/web_cloud/web_hosting/ssh_on_webhosting){.external}
 
