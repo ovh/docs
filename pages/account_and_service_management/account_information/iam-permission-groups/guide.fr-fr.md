@@ -1,7 +1,7 @@
 ---
 title: "Liste des groupes de permissions d'OVHcloud"
 excerpt: "Détail des groupes de permissions mis à disposition par OVHcloud"
-updated: 2023-10-16
+updated: 2023-12-06
 ---
 
 <style>
@@ -66,7 +66,7 @@ Les groupes de permissions sont accessibles via l'API suivante :
 },
 ```
 
-#### Utiliser les groupes de permissions dans le control panel
+#### Utiliser les groupes de permissions depuis l'espace client
 
 Ces groupes de permissions peuvent ensuite être utilisés en complément ou à la place des actions unitaires dans les politiques d'accès :
 

@@ -1,7 +1,7 @@
 ---
 title: Jak korzystać z polityki IAM w Panelu klienta
 excerpt: Dowiedz się, jak przypisać użytkownikom uprawnienia dostępu do konta OVHcloud
-updated: 2023-07-06
+updated: 2023-12-06
 ---
 
 > [!primary]
@@ -82,6 +82,17 @@ Istnieją 3 sposoby dodawania operacji:
 ![Tworzenie polityki](images/create_a_policy_02.png){.thumbnail}
 
 Podczas aktywacji tej opcji zatwierdzisz wszystkie operacje związane z wybranymi produktami. Obejmuje to wszystkie istniejące działania oraz przyszłe działania dodane do tych kategorii produktów.
+
+- Wybierając grupę uprawnień zarządzanych
+
+Udostępniamy wstępnie skonfigurowane grupy uprawnień zarządzane przez OVHcloud.
+Możesz wybrać jedną lub kilka grup, wybierając je z dostępnej listy.
+
+![Utwórz politykę](images/create_a_policy_05.png){.thumbnail}
+
+Szczegółowe informacje na temat zawartości grup uprawnień zarządzanych można znaleźć w [powiązanej dokumentacji](/pages/account_and_service_management/account_information/iam-permission-groups).
+
+Zarządzane grupy akcji mogą być używane jako uzupełnienie akcji jednostkowych.
 
 - Ręcznie dodając operacje
 

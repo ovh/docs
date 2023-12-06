@@ -1,10 +1,8 @@
 ---
 title: Comment utiliser les politiques IAM depuis votre espace client
 excerpt: "Découvrez comment donner des droits d'accès spécifiques aux utilisateurs depuis un compte OVHcloud"
-updated: 2023-07-06
+updated: 2023-12-06
 ---
-
- 
 
 ## Objectif
 
@@ -20,7 +18,7 @@ En détail, une politique contient :
     - Une ressource est un produit OVHcloud qui sera concerné par cette politique (un nom de domaine, un serveur Nutanix, un Load Balancer, etc.).
 - Une ou plusieurs **actions** autorisées ou exceptées par cette politique.
     - Les actions sont les droits spécifiques concernés par cette politique (redémarrage d'un serveur, création d'un compte e-mail, résiliation d'un abonnement, etc.)
-  
+
 Par exemple, nous pouvons créer une politique pour donner à un utilisateur nommé John, pour un VPS, l'accès à l'action « redémarrer ».
 
 **Ce guide vous explique en détail comment déclarer ces politiques à l'aide de l'espace client OVHcloud et comment lister les identités, ressources et actions disponibles pour celles-ci.**
@@ -82,13 +80,14 @@ Lors de l'activation de cette option, vous autorisez toutes les actions liées a
 
 - En sélectionnant un groupe de permissions managées
 
-OVHcloud met à disposition des groupes de permissions préconfigurées et managées par OVHcloud.
-Il est possible de sélectionner un ou plusieurs groupes en les sélectionnants parmis la liste disponible
+Nous mettons à disposition des groupes de permissions préconfigurées et managées par OVHcloud.
+Vous pouuvez sélectionner un ou plusieurs groupes en les sélectionnant parmi la liste disponible.
 
 ![Créer une politique](images/create_a_policy_05.png){.thumbnail}
 
-La détail du contenu des groupes de permissions managées est disponible dans la [documentation associée](/pages/account_and_service_management/account_information/iam-permission-groups)
-Il est possible d'utiliser des les groupes d'actions managées en complément d'actions unitaires
+Le détail du contenu des groupes de permissions managées est disponible dans la [documentation associée](/pages/account_and_service_management/account_information/iam-permission-groups).
+
+Il est possible d'utiliser les groupes d'actions managées en complément d'actions unitaires.
 
 - En ajoutant manuellement des actions
 
@@ -100,9 +99,9 @@ Vous pouvez utiliser une *wildcard* au début ou à la fin du nom de l'action av
 
 Par exemple, l'ajout de `vps:apiovh:ips/*` accordera les droits suivants :
 
-**vps:apiovh:ips/edit**
-**vps:apiovh:ips/delete**
-**vps:apiovh:ips/get**
+- **vps:apiovh:ips/edit**
+- **vps:apiovh:ips/delete**
+- **vps:apiovh:ips/get**
 
 - En sélectionnant des actions dans la liste
 
