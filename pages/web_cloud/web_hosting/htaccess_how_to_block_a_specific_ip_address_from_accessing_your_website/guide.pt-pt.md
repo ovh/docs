@@ -1,5 +1,5 @@
 ---
-title: 'Tutorial - Como bloquear o acesso ao meu site para alguns endereços IP através de um ficheiro .htaccess ?'
+title: "Tutorial - Como bloquear o acesso ao meu site para alguns endereços IP através de um ficheiro .htaccess ?"
 excerpt: "Descubra as ações possíveis através de um ficheiro .htaccess para bloquear o acesso ao seu site a determinados endereços IP"
 updated: 2022-09-12
 ---
@@ -372,4 +372,4 @@ Para serviços especializados (referenciamento, desenvolvimento, etc), contacte 
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
 
-Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>. 
+Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

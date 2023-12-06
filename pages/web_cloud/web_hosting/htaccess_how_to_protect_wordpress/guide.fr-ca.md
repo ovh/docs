@@ -1,6 +1,6 @@
 ---
-title: 'Tutoriel - Utiliser le fichier htaccess avec WordPress'
-excerpt: 'Découvrez comment sécuriser votre blog WordPress avec un ou plusieurs fichiers htaccess'
+title: "Tutoriel - Utiliser le fichier htaccess avec WordPress"
+excerpt: "Découvrez comment sécuriser votre blog WordPress avec un ou plusieurs fichiers htaccess"
 updated: 2023-06-22
 ---
 
