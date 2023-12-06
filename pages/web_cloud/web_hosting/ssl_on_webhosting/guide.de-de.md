@@ -50,6 +50,17 @@ Es können drei Zustände entstehen:
 
 Um SSL für eine Multisite zu aktivieren, klicken Sie rechts neben der betreffenden Multisite auf `...`{.action} und dann auf `Domain bearbeiten`{.action}. Setzen Sie im angezeigten Fenster einen Haken bei `SSL`{.action}. Sie können auch die Option anhaken, um die www-Subdomain gleichzeitig mit dem dazugehörigen Domainnamen zu aktivieren. Folgen Sie den Schritten, bis Sie die Änderung bestätigen.
 
+> [!warning]
+>
+> Die Zuweisung eines SSL-Zertifikats für einen Multisite-Eintrag über die Multisite-Tabelle ist nur möglich, wenn Sie das kostenlose SSL-Zertifikat **Let's Encrypt** von OVHcloud bestellt haben.
+>
+> Die kostenpflichtigen SSL-Zertifikate **Sectigo** (DV und EV) gelten nur für einen Domainnamen (und dessen Subdomain mit *www*). Der Vermerk *Aktiviert* darf daher nicht rechts neben den anderen auf dem Webhosting deklarierten Multisites angezeigt werden.
+>
+> Bestimmte SSL-Zertifikate **Extern** können für mehrere Domainnamen gleichzeitig gelten. Wenn Sie einen dieser Domainnamen verwenden, erscheint der Zusatz *Aktiviert* auch nicht für alle Ihre Domainnamen, die in der Tabelle „Multisite“ deklariert sind. Ihr SSL Zertifikat ist jedoch weiterhin für die Domainnamen gültig, die es *enthält*.
+>
+
+![managessl](images/manage-ssl-step6.png){.thumbnail}
+
 Sobald Sie die Aktivierungsanfrage eingereicht haben, sollte sich der Zustand der sicheren SSL-Verbindung für die betreffende Multisite innerhalb weniger Sekunden aktualisieren, wobei der Status auf "Zu erstellen" gesetzt wird. Falls Sie für weitere Multisites SSL aktivieren möchten, wiederholen Sie den Vorgang entsprechend.
 
 > [!primary]

@@ -46,6 +46,15 @@ There are three status types that may appear:
 
 To activate SSL on a multisite, click on `...`{.action} icon to the right of the multisite concerned, then `Modify domain`{.action}. In the window that pops up, tick the `SSL`{.action} box. You can also tick the option to include the www subdomain when you modify the corresponding domain name. Then follow the steps until you confirm the change.
 
+> [!warning]
+>
+> You can only assign an SSL certificate to a multisite entry via the “multisite” table if you have ordered the free SSL certificate **Let's Encrypt** provided by OVHcloud.
+>
+> Paid SSL certificates **Sectigo** (DV and EV) are only valid for one domain name (and its sub-domain in *www*). *Enabled* will not be able to appear to the right of other multisites declared on the web hosting plan.
+>
+> Some **External** SSL certificates may be valid for several domain names at once. If you use one of them, the *Enabled* comment will not appear for all of your domain names declared in the “multisite” table. However, your SSL certificate will still be valid for the domain names it *includes*.
+>
+
 ![managessl](images/manage-ssl-step6.png){.thumbnail}
 
 Once you have submitted the activation request, the SSL secure connection status for the multisite concerned should refresh in a few seconds, with the status changed to "To generate". Repeat this action as necessary if you would like to activate SSL for other multisites. 
