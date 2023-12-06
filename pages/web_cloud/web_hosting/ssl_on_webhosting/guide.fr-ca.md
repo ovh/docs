@@ -176,7 +176,7 @@ Pour résoudre cette situation, via la zone DNS active de votre nom de domaine, 
 Si vous avez activé une option CDN sur votre hébergement web, vous pouvez également utiliser l'adresse IP de l'hébergement web avec CDN.
 
 Pour récupérer l'adresse IP de votre hébergement web, consultez notre guide « [Liste des adresses IP des clusters et hebergements web](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP) ».
-Pour éditer la zone DNS active de votre nom de domaine, consultez notre guide « [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit) »
+Pour éditer la zone DNS active de votre nom de domaine, consultez notre guide « [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit) ».
 
 - 3 : Aucun des noms de domaines présent dans l'onglet « multisite » ne dispose d'une option SSL « active » :
 
@@ -216,7 +216,7 @@ Si besoin, consultez notre guide « [Utiliser un certificat SSL EV pour votre si
 Cette erreur survient chaque fois que le Certificat SSL Sectigo (activé directement depuis l'hébergement web) expire et que l'adresse IP de l'hébergement web change. De ce fait, vous devez faire pointer votre nom de domaine vers la bonne adresse IP (enregistrement de type A), directement depuis la zone DNS active de votre nom de domaine.
 
 Pour récupérer l'adresse IP de votre hébergement web, consultez notre guide « [Liste des adresses IP des clusters et hebergements web](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP) ».
-Pour éditer la zone DNS active de votre nom de domaine, consultez notre guide « [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit) »
+Pour éditer la zone DNS active de votre nom de domaine, consultez notre guide « [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit) ».
 
 ## Aller plus loin
 
