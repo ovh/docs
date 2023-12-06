@@ -104,9 +104,9 @@ Sie können die *Wildcard* `*` am Anfang oder Ende des Aktionsnamens verwenden.
 
 Wenn Sie beispielsweise `vps:apiovh:ips/*` hinzufügen, geben Sie folgende Rechte:
 
-vps:apiovh:ips/edit <br>
-vps:apiovh:ips/delete <br>
-vps:apiovh:ips/get <br>
+- **vps:apiovh:ips/edit**
+- **vps:apiovh:ips/delete**
+- **vps:apiovh:ips/get**
 
 - Auswählen von Aktionen aus der Liste
 
