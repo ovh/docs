@@ -26,6 +26,11 @@ Public Cloud Databases MongoDB Discovery plan is for testing purpose. The migrat
 However, you might want to do it anyway. The process to do it is to create a new Discoevry cluster then migrate data from your deprecated cluster with the CLI.
 For that you will need to backup your deprecated cluster data then restore it in the new Discovery cluster.
 
+> [!warning]
+>
+> Because the disk space is low for MongoDB Discover, your deprecated Mongodb should not have more data than the new MongoDB Discovery can handle. 
+>
+
 ## Instructions
 
 ### Ensure you can connect to your database
