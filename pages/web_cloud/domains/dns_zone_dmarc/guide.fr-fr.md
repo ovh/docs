@@ -1,7 +1,7 @@
 ---
 title: Configurer un enregistrement DMARC sur votre nom de domaine
 excerpt: Découvrez comment fonctionne DMARC et comment le mettre en place pour votre service e-mail
-updated: 2023-08-07
+updated: 2023-12-06
 ---
 
 ## Objectif
