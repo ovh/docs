@@ -466,6 +466,7 @@
             + [SAP infrastructure with VMware on OVHcloud solution](hosted_private_cloud/sap_on_ovhcloud/concept_vmware_for_sap)
         + [Getting started](hosted-private-cloud-sap-ovhcloud-getting-started)
             + [Install SAP HANA on Bare Metal with SLES 15 for SAP](hosted_private_cloud/sap_on_ovhcloud/cookbook_install_sles_sap_hana_dedicated_server)
+            + [Responsibility sharing for SAP on OVHcloud](hosted_private_cloud/sap_on_ovhcloud/sap_raci)
         + [Advanced usage](hosted-private-cloud-sap-ovhcloud-advanced-usage)
             + [Deploy virtual machines of SAP Application Server on VMware on OVHcloud solution with Terraform](hosted_private_cloud/sap_on_ovhcloud/cookbook_terraform_sap_application_server)
             + [Deploy virtual machines of SAP HANA database on VMware on OVHcloud solution with Terraform](hosted_private_cloud/sap_on_ovhcloud/cookbook_terraform_sap_hana_database)
