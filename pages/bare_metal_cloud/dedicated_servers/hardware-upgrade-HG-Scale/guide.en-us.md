@@ -15,12 +15,12 @@ Our High Grade and Scale servers offer a scalable option that can allow you to i
 
 ## Requirements
 
-- A [High Grade](https://www.ovhcloud.com/en-gb/bare-metal/high-grade/) or [SCALE](https://www.ovhcloud.com/en-gb/bare-metal/scale/) server 
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- A [High Grade](https://www.ovhcloud.com/en/bare-metal/high-grade/) or [SCALE](https://www.ovhcloud.com/en/bare-metal/scale/) server 
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we)
 
 ## Instructions
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). Switch to the `Bare Metal Cloud`{.action} section and select your server from **Dedicated Servers**. In the `Hardware`{.action} tab, click on `Increase storage`{.action}. If you wish to increase RAM instead, click on `Increase RAM`{.action}.
+Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we). Switch to the `Bare Metal Cloud`{.action} section and select your server from **Dedicated Servers**. In the `Hardware`{.action} tab, click on `Increase storage`{.action}. If you wish to increase RAM instead, click on `Increase RAM`{.action}.
 
 ![increase storage](images/increasestorage.png){.thumbnail}
 
