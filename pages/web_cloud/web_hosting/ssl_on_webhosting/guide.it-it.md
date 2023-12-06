@@ -50,6 +50,17 @@ A questo punto, tre stati potrebbero apparire:
 
 Per attivare un certificato SSL su un multisito, clicca sui tre puntini `...`{.action} in corrispondenza del multisito interessato e seleziona `Modifica il dominio`{.action}. Nella finestra che appare seleziona la casella `SSL`{.action}. Puoi anche attivare l'opzione per modificare il sottodominio www insieme al dominio associato. Segui gli step fino alla conferma della modifica.
 
+> [!warning]
+>
+> L'attribuzione di un certificato SSL a un ingresso multisito tramite la tabella "Multisito" è possibile solo se è stato ordinato il certificato SSL gratuito **Let's Encrypt** fornito da OVHcloud.
+>
+> I certificati SSL a pagamento **Sectigo** (DV ed EV) sono validi per un solo dominio (e il suo sottodominio **www*). La dicitura *Attivato* non potrà quindi comparire a destra degli altri multisiti dichiarati sull’hosting Web.
+>
+> Alcuni certificati SSL **Esterni** possono essere validi per più domini contemporaneamente. Se utilizzi uno di essi, la dicitura *Attivato* non comparirà per tutti i domini dichiarati nella tabella "multisito". *Il tuo certificato SSL sarà comunque valido per i domini inclusi*.
+>
+
+![managessl](images/manage-ssl-step6.png){.thumbnail}
+
 Una volta inoltrata la richiesta di attivazione, lo stato della connessione SSL per il multisito deve essere aggiornato dopo pochi secondi e lo stato viene sostituito con "Da generare". Ripeti questa operazione per tutti i multisiti su cui vuoi attivare L’SSL.
 
 > [!primary]
