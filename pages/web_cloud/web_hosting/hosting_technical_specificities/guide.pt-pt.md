@@ -219,7 +219,7 @@ A OVHcloud coloca à disposição do cliente estatísticas de frequência e de m
 
 Os relatórios "OVHcloud Web Statistics" são estabelecidos a partir de dados de tráfego anónimos, tais como o endereço IP e os logs dos utilizadores dos websites alojados no âmbito de uma oferta de alojamento partilhado, o URL do pedido, a duração do pedido e o "utilizador".
 
-Para serem utilizados no âmbito "OVHcloud Web Statistics", os dados citados são anonimizados e agregados através de algoritmos operados pela OVHcloud, dentro das suas próprias infraestruturas. Em particular, o endereço IP do visitante presente nos dados de tráfego é extraído sob forma anonimizada, de forma a ser tratado e analisado para determinar a sua geolocalização (limitada a um nível regional). Assim, no quadro das OVHcloud Web Statistics", não se conserva nenhum dado pessoal que permita a identificação, direta ou indireta"dos visitantes citados.  
+Para serem utilizados no âmbito "OVHcloud Web Statistics", os dados citados são anonimizados e agregados através de algoritmos operados pela OVHcloud, dentro das suas próprias infraestruturas. Em particular, o endereço IP do visitante presente nos dados de tráfego é extraído sob forma anonimizada, de forma a ser tratado e analisado para determinar a sua geolocalização (limitada a um nível regional). Assim, no quadro das "OVHcloud Web Statistics", não se conserva nenhum dado pessoal que permita a identificação, direta ou indireta"dos visitantes citados.  
 
 ## Quer saber mais? <a name="go-further"></a>
 
