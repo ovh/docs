@@ -50,6 +50,17 @@ Pueden aparecer tres estados:
 
 Para activar el SSL en un multisitio, haga clic en el botón `...`{.action} situado al final de la línea correspondiente al multisitio y seleccione `Cambiar el dominio`{.action}. En la nueva ventana, marque la casilla `SSL`{.action}. También puede activar la opción para cambiar el subdominio www junto con el dominio asociado. Siga los pasos que se le indican para confirmar el cambio.
 
+> [!warning]
+>
+> La atribución de un certificado SSL a una entrada multisitio a través de la tabla "multisitio" solo puede realizarse si ha contratado el certificado SSL gratuito **Let's Encrypt** proporcionado por OVHcloud.
+>
+> Los certificados SSL de pago **Sectigo** (DV y EV) solo son válidos para un único dominio (y su subdominio en *www*). La mención *Activado* no podrá aparecer a la derecha de los otros multisitios declarados en el alojamiento web.
+>
+> Algunos certificados SSL **Externos** pueden ser válidos para varios dominios al mismo tiempo. Si utiliza uno de ellos, la mención *Activado* no aparecerá para todos sus dominios declarados en la tabla "multisitio". No obstante, su certificado SSL seguirá siendo válido para los nombres de dominio que *engloba*.
+>
+
+![managessl](images/manage-ssl-step6.png){.thumbnail}
+
 Una vez enviada la solicitud de activación, el estado de la conexión segura SSL para el multisitio debe actualizarse al cabo de unos segundos, sustituyéndose el estado por "Por generar". Repita esta operación para todos los multisitios en los que quiera activar el SSL.
 
 > [!primary]
