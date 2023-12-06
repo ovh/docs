@@ -146,6 +146,78 @@ On the page that appears, confirm the deletion. The deletion will take effect wi
 
 ![managessl](images/manage-ssl-step9.png){.thumbnail}
 
+> [!warning]
+>
+> The deletion of a paid SSL certificate **Sectigo** (DV or EV) is permanent, even if the certificate has not yet expired. No refund may be made on a pro rata basis for the remaining time. If you would like to reinstall an SSL certificate **Sectigo** (DV or EV), you will need to place a new order and pay for the new SSL certificate.
+>
+
+### Correct currently encountered errors with SSL certificates offered on web hosting plans
+
+#### "You already have an SSL certificate on your account. It will be migrated on new SSL offers in the next week."
+
+This message indicates that you already own an SSL certificate. You do not need to activate a new SSL certificate (Let's Encrypt) on your Web Hosting plan.
+
+Refer to the “[Activating an SSL certificate on a multisite](#multisite)” section of this guide to continue with your actions.
+
+#### "No attached domain with ssl enabled or no attached domain that redirect on hosting IPs, please use hosting IP in your domain zone."
+
+There are three possible reasons for this notification.
+
+- 1: The domain name associated with your website points to the IP address of your web hosting plan’s CDN, with no CDN option enabled on your web hosting plan:
+
+To resolve this situation, via your domain name’s active DNS zone, assign the CDN-free web hosting plan’s IP address to your domain name.
+
+To retrieve the IP address of your web hosting plan, please refer to our guide on [List of IP addresses for clusters and web hosting plans](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP).
+To edit your domain name’s active DNS zone, please read our guide on [Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit).
+
+- 2: The domain name associated with your website does not point to the IP address of your web hosting plan:
+
+To resolve this situation, via your domain name’s active DNS zone, assign the web hosting plan’s IP address to your domain name.
+If you have enabled a CDN option on your web hosting plan, you can also use the web hosting plan’s IP address with CDN.
+
+To retrieve the IP address of your web hosting plan, please refer to our guide on [List of IP addresses for clusters and web hosting plans](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP).
+To edit your domain name’s active DNS zone, please read our guide on [Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit).
+
+- 3: None of the domain names listed in the “multisite” tab have an “active” SSL option:
+
+To resolve the situation, activate the SSL certificate for the domain name(s). If you need to, please read the “[Activating an SSL certificate on a multisite](#multisite)” section of this guide to continue with your actions.
+
+### The SSL certificate is active on your web hosting plan, but you will see the message "Your connection is not private" on your website
+
+This message appears in the following cases:
+
+- 1: The redirection rule to your URL in HTTPS is misconfigured or does not exist in the .htaccess file:
+
+To correct this, read our tutorial “[Rewrite the URL for accessing my website using mod_rewrite via the .htaccess file](/pages/web_cloud/web_hosting/htaccess_url_rewriting_using_mod_rewrite)” or contact a [specialist provider](https://partner.ovhcloud.com/en-ca/directory/) if you experience any difficulties.
+
+- 2: Some elements of the web page are not redirected correctly to elements encrypted in "HTTPS":
+
+To correct this, you need to ensure that your entire website is encrypted using HTTPS protocol.
+If you need help with this, please refer to our tutorial [Web Hosting: switching your website to HTTPS](/pages/web_cloud/web_hosting/ssl-activate-https-website) , or contact a [specialist provider](https://partner.ovhcloud.com/en-ca/directory/) if you experience any difficulties.
+
+> [!success]
+>
+> The elements concerned on the web page can be seen directly from the SSL information of the web browser, by consulting the *details of the Certificate*.
+>
+
+#### You have ordered a Sectigo EV SSL along with your Web Hosting plan, but the certificate is not yet active and the Web Hosting plan is not working properly
+
+This situation is linked to the steps you need to take to activate SSL EV on your web hosting plan.
+
+If you need help with this, please refer to our guide on [Using an EV SSL certificate for your website](/pages/web_cloud/web_hosting/ssl_ev) to resolve this situation.
+
+> [!primary]
+>
+> If the EV SSL certificate is not fully active, the order will never be closed and will never generate an invoice. As a result, the web hosting service will not work properly.
+>
+
+#### After the Sectigo SSL Certificate (DV or EV) expires, you receive the error "No attached domain with ssl enabled or no attached domain that redirect on hosting IPs, please use hosting IP in your domain zone"
+
+This error occurs whenever the Sectigo SSL Certificate (activated directly from the Web Hosting plan) expires and the IP address of the Web Hosting plan changes. For this reason, you will need to point your domain name to the correct IP address (type A record), directly from your domain name’s active DNS zone.
+
+To retrieve the IP address of your web hosting plan, please refer to our guide on [List of IP addresses for clusters and web hosting plans](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP).
+To edit your domain name’s active DNS zone, please read our guide on [Editing an OVHcloud DNS zone](/pages/web_cloud/domains/dns_zone_edit).
+
 ## Go further
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-ca/directory/).
