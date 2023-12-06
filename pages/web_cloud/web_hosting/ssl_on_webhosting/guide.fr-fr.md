@@ -163,7 +163,7 @@ Consultez la partie « [activation d'un certificat SSL sur un site multisite](#m
 
 Trois cas de figure peuvent expliquer cette notification.
 
-- 1 : Le nom de domaine associé à votre site web pointe vers l'adresse IP du CDN de votre hébergement web :
+- 1 : Le nom de domaine associé à votre site web pointe vers l'adresse IP du CDN de votre hébergement web, avec aucune option CDN active sur votre hébergement web :
 
 Pour résoudre cette situation, via la zone DNS active de votre nom de domaine, assignez l'adresse IP de l'hébergement web sans CDN à votre nom de domaine.
 
@@ -172,7 +172,8 @@ Pour éditer la zone DNS active de votre nom de domaine, consultez notre guide �
 
 - 2 : Le nom de domaine associé à votre site web ne pointe pas vers l'adresse IP de votre hébergement web :
 
-Pour résoudre cette situation, via la zone DNS active de votre nom de domaine, assignez l'adresse IP de l'hébergement web sans CDN à votre nom de domaine.
+Pour résoudre cette situation, via la zone DNS active de votre nom de domaine, assignez l'adresse IP de l'hébergement web à votre nom de domaine.
+Si vous avez activé une option CDN sur votre hébergement web, vous pouvez également utiliser l'adresse IP de l'hébergement web avec CDN.
 
 Pour récupérer l'adresse IP de votre hébergement web, consultez notre guide « [Liste des adresses IP des clusters et hebergements web](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP) ».
 Pour éditer la zone DNS active de votre nom de domaine, consultez notre guide « [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit) »
