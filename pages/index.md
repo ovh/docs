@@ -628,6 +628,7 @@
                 + [MongoDB - Backups and Restores with the CLI](public_cloud/public_cloud_databases/mongodb_06_howto_backup_restore)
                 + [MongoDB - Configure an Analytics node](public_cloud/public_cloud_databases/mongodb_08_analytics)
                 + [MongoDB - Understand the connection strings URI format](public_cloud/public_cloud_databases/mongodb_10_connection_strings)
+                + [MongoDB - Migrate From Essential or Business to Discovery with the CLI](public_cloud/public_cloud_databases/mongodb_11_howto_migrate_to_discovery/guide.en-gb.md)
             + [Tutorials](public-cloud-databases-mongodb-tutorials)
                 + [MongoDB - Tutorial - Build a NodeJS application connected to OVHcloud Managed MongoDB service](public_cloud/public_cloud_databases/mongodb_tuto_01_connect_nodejs_to_managed_mongodb)
         + [MySQL](products/public-cloud-databases-mysql)

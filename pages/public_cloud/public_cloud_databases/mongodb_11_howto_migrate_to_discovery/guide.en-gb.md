@@ -22,8 +22,9 @@ But if you want to migrate to a new Discovery cluster from an deprecated Essenti
 
 ## Concept
 
-Public Cloud Databases MongoDB Discovery plan is for testing purpose. The migration from an deprecated plan cluster is not automatic.
-However, you might want to do it anyway. The process to do it is to create a new Discoevry cluster then migrate data from your deprecated cluster with the CLI.
+Public Cloud Databases MongoDB Discovery plan is intended for testing purposes.
+The migration of a cluster using a deprecated plan is not automatic.
+If you want to perform such a migration (e.g. from an `essential` cluster to a `discovery` one), then the process is to first create a new Discovery cluster, then migrate data from your deprecated cluster with the CLI.
 For that you will need to backup your deprecated cluster data then restore it in the new Discovery cluster.
 
 > [!warning]
