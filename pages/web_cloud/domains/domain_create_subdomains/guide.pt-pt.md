@@ -62,7 +62,7 @@ Pode criar infinitos subdomínios a partir de um único domínio.
 Se, por exemplo, tiver o nome de domínio *example.com*, pode criar os seguintes subdomínios:
 
 - *dns1.example.com* e *dns2.example.com* para personalizar os seus servidores DNS através dos [GLUE records](/pages/web_cloud/domains/glue_registry);
-- *www.exemplo.pt* para apresentar o seu website;
+- *www.example.com* para apresentar o seu website;
 - *preprod.example.com* para testar o seu website em novas versões. sem cortar o acesso do seu website atual aos seus utilizadores;
 - *intranet.example.com* para que os seus colaboradores possam trocar informações no seu website interno;
 - *forum.example.com* ou *community.example.com* para que a sua comunidade de utilizadores possa trocar e partilhar a sua experiência;
