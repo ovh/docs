@@ -1,7 +1,7 @@
 ---
-title: 'Gérer un certificat SSL sur son hébergement web'
-excerpt: 'Apprenez à gérer un certificat SSL sur votre hébergement web OVHcloud'
-updated: 2023-11-29
+title: "Gérer un certificat SSL sur son hébergement web"
+excerpt: "Apprenez à gérer un certificat SSL sur votre hébergement web OVHcloud"
+updated: 2023-12-06
 ---
 
 ## Objectif
@@ -45,6 +45,15 @@ Trois états peuvent alors apparaître :
 |Désactivé|Aucun certificat SSL n'est activé pour ce multisite. Pour l'activer, suivez les étapes ci-dessous.|
 
 Pour activer SSL sur un multisite, cliquez sur le bouton `...`{.action} à droite du multisite concerné, puis sur `Modifier le domaine`{.action}. Dans la fenêtre qui s'affiche, cochez la case `SSL`{.action}. Vous pouvez également activer l'option pour modifier le sous-domaine www en même temps que le nom de domaine associé. Suivez les étapes jusqu'à confirmer la modification.
+
+> [!warning]
+>
+> L'attribution d'un certificat SSL à une entrée multisite via le tableau « multisite » ne peut se faire que si vous avez commandé le certificat SSL gratuit **Let's Encrypt** fourni par OVHcloud.
+>
+> Les certificats SSL payants **Sectigo** (DV et EV) ne sont valables que pour un seul nom de domaine (et son sous-domaine en *www*). La mention *Activé* ne pourra donc pas apparaître à droite des autres multisites déclarés sur l'hébergement web.
+>
+> Certains certificats SSL **Externes** peuvent être valables pour plusieurs noms de domaine à la fois. Si vous utilisez l'un d'eux, la mention *Activé* n'apparaîtra pas non plus pour tous vos noms de domaines déclarés dans le tableau « multisite ». Néanmoins, votre certificat SSL sera tout de même valable pour les noms de domaines qu'il *englobe*.
+>
 
 ![managessl](images/manage-ssl-step6.png){.thumbnail}
 
@@ -136,6 +145,78 @@ Dès que vous êtes prêt à supprimer le certificat SSL, connectez-vous à votr
 Sur la page qui apparaît, confirmez la suppression. Celle-ci sera effective sous quelques heures au maximum.
 
 ![managessl](images/manage-ssl-step9.png){.thumbnail}
+
+> [!warning]
+>
+> La suppression d'un certificat SSL payant **Sectigo** (DV ou EV) est définitive, même si le certificat n'avait pas encore expiré. Aucun remboursement au prorata du temps restant ne pourra être effectué. Si vous souhaitez réinstaller un certificat SSL **Sectigo** (DV ou EV), vous devrez donc obligatoirement réaliser une nouvelle commande et payer l'intégralité du nouveau certificat SSL souscrit.
+>
+
+### Corriger les erreurs fréquemment rencontrées avec les certificats SSL proposés sur les hébergements web
+
+#### "You already have an SSL certificate on your account. It will be migrated on new SSL offers in the next week."
+
+Ce message indique que vous êtes déjà propriétaire d'un certificat SSL. Il n'est donc pas nécessaire d'activer un nouveau certificat SSL (Let's Encrypt) sur votre hébergement web.
+
+Consultez la partie « [activation d'un certificat SSL sur un site multisite](#multisite) » du présent guide pour poursuivre vos actions.
+
+#### "No attached domain with ssl enabled or no attached domain that redirect on hosting IPs, please use hosting IP in your domain zone."
+
+Trois cas de figure peuvent expliquer cette notification.
+
+- 1 : Le nom de domaine associé à votre site web pointe vers l'adresse IP du CDN de votre hébergement web, avec aucune option CDN active sur votre hébergement web :
+
+Pour résoudre cette situation, via la zone DNS active de votre nom de domaine, assignez l'adresse IP de l'hébergement web sans CDN à votre nom de domaine.
+
+Pour récupérer l'adresse IP de votre hébergement web, consultez notre guide « [Liste des adresses IP des clusters et hebergements web](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP) ».
+Pour éditer la zone DNS active de votre nom de domaine, consultez notre guide « [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit) ».
+
+- 2 : Le nom de domaine associé à votre site web ne pointe pas vers l'adresse IP de votre hébergement web :
+
+Pour résoudre cette situation, via la zone DNS active de votre nom de domaine, assignez l'adresse IP de l'hébergement web à votre nom de domaine.
+Si vous avez activé une option CDN sur votre hébergement web, vous pouvez également utiliser l'adresse IP de l'hébergement web avec CDN.
+
+Pour récupérer l'adresse IP de votre hébergement web, consultez notre guide « [Liste des adresses IP des clusters et hebergements web](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP) ».
+Pour éditer la zone DNS active de votre nom de domaine, consultez notre guide « [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit) »
+
+- 3 : Aucun des noms de domaines présent dans l'onglet « multisite » ne dispose d'une option SSL « active » :
+
+Pour résoudre la situation, activez le certificat SSL pour le (les) nom(s) de domaine. Si besoin, consultez la partie « [activation d'un certificat SSL sur un site multisite](#multisite) » du présent guide pour poursuivre vos actions.
+
+#### Le certificat SSL est actif sur votre hébergement web, mais vous rencontrez le message "Your connection is not private" sur votre site web
+
+Ce message apparaît dans les cas suivants :
+
+- 1 : La règle de redirection vers votre URL en « HTTPS » est mal configurée ou inexistante dans le fichier « .htaccess » :
+
+Pour corriger cela, consultez notre tutoriel « [Réécrire l'URL d'accès à mon site grâce au mod_rewrite via le fichier .htaccess](/pages/web_cloud/web_hosting/htaccess_url_rewriting_using_mod_rewrite) » ou faites appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) si vous épprouvez des difficultés.
+
+- 2 : Certains éléments de la page web ne sont pas correctement redirigés vers des éléments chiffrés en « HTTPS » :
+
+Pour corriger cela, vous devez vous assurer que l'ensemble de votre site web est chiffré à l'aide du protocole « HTTPS ».
+Si besoin, consultez notre tutoriel « [Hébergement web : passer son site web en HTTPS](/pages/web_cloud/web_hosting/ssl-activate-https-website) » ou faites appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) si vous épprouvez des difficultés.
+
+> [!success]
+>
+> Les éléments concernés sur la page web peuvent être vus directement à partir des informations SSL du navigateur internet, en consultant les *détails du Certificat*.
+>
+
+#### Vous avez commandé un SSL Sectigo EV en même temps que votre hébergement web, mais le certificat n'est pas encore actif et l'hébergement web ne fonctionne pas correctement
+
+Cette situation est liée aux étapes que vous devez réaliser afin d'activer le SSL EV sur votre hébergement web.
+
+Si besoin, consultez notre guide « [Utiliser un certificat SSL EV pour votre site Web](/pages/web_cloud/web_hosting/ssl_ev) » pour résoudre cette situation.
+
+> [!primary]
+>
+> Si le certificat SSL EV n'est pas totalement actif, la commande ne sera jamais clôturée et ne générera jamais de facture. De ce fait, le service d'hébergement web ne fonctionnera pas correctement.
+>
+
+#### Après l'expiration du Certificat SSL Sectigo (DV ou EV), vous rencontrez l'erreur "No attached domain with ssl enabled or no attached domain that redirect on hosting IPs, please use hosting IP in your domain zone"
+
+Cette erreur survient chaque fois que le Certificat SSL Sectigo (activé directement depuis l'hébergement web) expire et que l'adresse IP de l'hébergement web change. De ce fait, vous devez faire pointer votre nom de domaine vers la bonne adresse IP (enregistrement de type A), directement depuis la zone DNS active de votre nom de domaine.
+
+Pour récupérer l'adresse IP de votre hébergement web, consultez notre guide « [Liste des adresses IP des clusters et hebergements web](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP) ».
+Pour éditer la zone DNS active de votre nom de domaine, consultez notre guide « [Éditer une zone DNS OVHcloud](/pages/web_cloud/domains/dns_zone_edit) »
 
 ## Aller plus loin
 
