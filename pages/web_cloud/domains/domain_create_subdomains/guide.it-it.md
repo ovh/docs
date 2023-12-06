@@ -120,7 +120,7 @@ Ad esempio, è possibile aggiungere:
 >
 > La modifica di una zona DNS associata a un dominio comporta un tempo di propagazione che va da **4** a **24** ore massimo perché abbia effetto.
 >
-Inoltre, come per i domini in sé, la semplice creazione di un record DNS per un sottodominio non è in genere sufficiente per farlo funzionare con il servizio *destinazione* definito nel record DNS. 
+> Inoltre, come per i domini in sé, la semplice creazione di un record DNS per un sottodominio non è in genere sufficiente per farlo funzionare con il servizio *destinazione* definito nel record DNS. 
 >
 > Per motivi di sicurezza, è necessario autorizzare il sottodominio ad accedere al servizio *destinazione* (hosting Web, email, ecc...).
 >
