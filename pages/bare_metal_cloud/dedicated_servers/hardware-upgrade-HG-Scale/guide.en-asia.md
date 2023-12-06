@@ -11,7 +11,7 @@ updated: 2023-12-06
 
 ## Objective
 
-Our High Grade and Scale servers offer a scalable option that can allow you to increase your disks space.
+Our High Grade and Scale servers offer a scalable option that allows you increase your disk space or RAM.
 
 ## Requirements
 
