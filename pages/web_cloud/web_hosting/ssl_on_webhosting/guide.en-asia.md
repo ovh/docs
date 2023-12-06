@@ -1,7 +1,7 @@
 ---
-title: 'Managing SSL certificates on a Web Hosting plan'
-excerpt: 'Find out how to configure your SSL certificate on an OVHcloud Web Hosting plan'
-updated: 2023-11-29
+title: "Managing SSL certificates on a Web Hosting plan"
+excerpt: "Find out how to configure your SSL certificate on an OVHcloud Web Hosting plan"
+updated: 2023-12-06
 ---
 
 ## Objective

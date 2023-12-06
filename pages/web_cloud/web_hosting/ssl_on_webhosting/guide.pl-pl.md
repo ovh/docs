@@ -1,7 +1,7 @@
 ---
-title: 'Zarządzanie certyfikatem SSL na hostingu'
-excerpt: 'Dowiedz się, jak zarządzać certyfikatem SSL na Twoim hostingu OVHcloud'
-updated: 2023-11-29
+title: "Zarządzanie certyfikatem SSL na hostingu"
+excerpt: "Dowiedz się, jak zarządzać certyfikatem SSL na Twoim hostingu OVHcloud"
+updated: 2023-12-06
 ---
 
 > [!primary]

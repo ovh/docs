@@ -1,7 +1,7 @@
 ---
-title: 'SSL-Zertifikat auf einem Webhosting verwalten'
-excerpt: 'Erfahren Sie hier, wie Sie ein SSL-Zertifikat auf Ihrem OVHcloud Webhosting verwalten'
-updated: 2023-11-29
+title: "SSL-Zertifikat auf einem Webhosting verwalten"
+excerpt: "Erfahren Sie hier, wie Sie ein SSL-Zertifikat auf Ihrem OVHcloud Webhosting verwalten"
+updated: 2023-12-06
 ---
 
 > [!primary]

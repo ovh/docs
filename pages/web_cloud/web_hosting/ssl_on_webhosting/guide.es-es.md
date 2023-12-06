@@ -1,11 +1,11 @@
 ---
-title: 'Gestionar un certificado SSL en un alojamiento web'
-excerpt: 'Operaciones relativas a los certificados SSL en los alojamientos web de OVHcloud'
-updated: 2023-11-29
+title: "Gestionar un certificado SSL en un alojamiento web"
+excerpt: "Operaciones relativas a los certificados SSL en los alojamientos web de OVHcloud"
+updated: 2023-12-06
 ---
 
 > [!primary]
-> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón "Contribuir" de esta página.
 >
 
 ## Objetivo
