@@ -42,13 +42,24 @@ Tabela, która się wyświetla zawiera wszystkie nazwy domen dodanych do Twojego
 
 Mogą pojawić się wówczas trzy statusy:
 
-|Statusy|Opis |
+|Statusy|Opis|
 |---|---|
 |Aktywny|Wskazuje, że certyfikat SSL jest już aktywny dla tej strony podpiętej w opcji MultiSite. Jeśli Twoja strona WWW nie używa protokołu HTTPS, skorzystaj z instrukcji zawartych w dokumentacji OVHcloud [Aktywacja protokołu HTTPS na stronie WWW za pomocą certyfikatu SSL](/pages/web_cloud/web_hosting/ssl-activate-https-website){.external}.|
 |Do wygenerowania|Wskazuje, że certyfikat SSL został aktywowany dla danej strony podpiętej w opcji MutiSite, ale nie jest jeszcze aktywny. Odnów certyfikat SSL dla Twojego hostingu, aby uwzględniał nowe domeny.|
 |Wyłączony|Wskazuje, że certyfikat SSL nie jest aktywny dla danej strony podpiętej w opcji MultiSite. Aby go aktywować, postępuj zgodnie z instrukcjami podanymi poniżej.|
 
 Aby aktywować certyfikat SSL na stronie podpiętej w opcji MultiSite, kliknij przycisk `...`{.action} po prawej stronie podpiętej w opcji MultiSite, a następnie `Zmień domenę`{.action}. W oknie, które się wyświetla zaznacz kratkę `SSL`{.action}. Możesz również włączyć opcję, aby zmienić subdomenę www w tym samym czasie co powiązana nazwa domeny. Postępuj zgodnie z instrukcjami, aż do potwierdzenia modyfikacji.
+
+> [!warning]
+>
+> Przypisanie certyfikatu SSL do wielokrotnego wejścia poprzez tabelę "MultiSite" jest możliwe tylko wtedy, gdy zamówiłeś bezpłatny certyfikat SSL **Let's Encrypt** dostarczony przez OVHcloud.
+>
+> Płatne certyfikaty SSL **Sectigo** (DV i EV) są ważne tylko dla jednej domeny (i jej subdomeny *www*). Informacja *Aktywny* nie będzie mogła pojawić się po prawej stronie innych stron podpiętych w opcji MultiSite.
+>
+> Niektóre certyfikaty SSL **Zewnętrzne** mogą być ważne dla kilku domen jednocześnie. Jeśli korzystasz z jednej z domen, informacja *Aktywny* nie pojawi się również dla wszystkich domen zadeklarowanych w tabeli "MultiSite". Certyfikat SSL będzie ważny dla domen, które *zawiera*.
+>
+
+![managessl](images/manage-ssl-step6.png){.thumbnail}
 
 Po zatwierdzeniu, status bezpiecznego połączenia SSL dla strony podpiętej w opcji MultiSite zaktualizuje się w ciągu kilku sekund, po czym zostaje wyświetlony komunikat "Do wygenerowania". Powtórz operację, jeśli chcesz aktywować SSL na innych stronach podpiętych w opcji MultiSite.
 
