@@ -1,7 +1,7 @@
 ---
 title: Activer les connexions Azure SSO avec votre compte OVHcloud
-excerpt: "Découvrez comment associer votre Azure Active Directory à votre compte OVHcloud en utilisant SAML 2.0"
-updated: 2023-12-05
+excerpt: "Découvrez comment associer votre Entra ID (anciennement Azure Active Directory) à votre compte OVHcloud en utilisant SAML 2.0"
+updated: 2023-12-06
 ---
 
 ## Objectif
@@ -161,7 +161,7 @@ Dans la section `Attributes & Claims`{.action}, cliquez sur le bouton `Modifier`
 
 ![Entra ID SSO étape 9](images/azure_ad_sso_9.png){.thumbnail}
 
-Ajoutons l'attribut UPN (User Principal Name) aux infos SAML pour informer OVHcloud de l'e-mail de l'utilisateur. Cette étape est indispensable.
+Ajoutez l'attribut UPN (User Principal Name) aux infos SAML pour informer OVHcloud de l'e-mail de l'utilisateur. Cette étape est indispensable.
 
 Cliquez sur `Add a new claim`{.action} dans le menu du haut.
 
@@ -169,7 +169,7 @@ Dans le champ `Name`{.action}, saisissez la valeur `http://schemas.xmlsoap.org/w
 
 Dans le champ `Source attribute`{.action}, saisissez `user.mail`{.action}.
 
-Votre interface devrait alors être assez similaire à l'écran suivant:
+Votre interface devrait alors être assez similaire à la capture d'écran suivante :
 
 ![Azure AD SSO saisie UPN](images/azure_ad_sso_9bis.png){.thumbnail}
 
@@ -271,11 +271,11 @@ Entrez le mot de passe de l'utilisateur de l'application Entra ID puis cliquez s
 
 ![Entra ID Login étape 3](images/azure_ad_login_3.png){.thumbnail}
 
-Vous êtes maintenant connecté avec le même [nichandle](/pages/account_and_service_management/account_information/ovhcloud-account-creation#quel-est-mon-identifiant-client), mais via votre utilisateur Active Directory et en utilisant votre SSO d'application Entra ID.
+Vous êtes maintenant connecté avec le même [identifiant client OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-creation#quel-est-mon-identifiant-client), mais via votre utilisateur Active Directory et en utilisant votre SSO d'application Entra ID.
 
 ![Ovhcloud SSO Login step 2](images/ovhcloud_sso_login_2.png){.thumbnail}
 
-Si votre e-mail n'apparait pas en dessous de `Connected via SSO`{.action}, cela signifie que vous n'avez pas correctement configuré l'attribut `UPN`{.action} et une partie des fonctionnalités ne fonctionnera pas correctement.
+Si votre e-mail n'apparait pas en dessous de `Connected via SSO`, cela signifie que vous n'avez pas correctement configuré l'attribut **UPN** et une partie des fonctionnalités ne pourra donc pas fonctionner.
 
 ## Aller plus loin
 

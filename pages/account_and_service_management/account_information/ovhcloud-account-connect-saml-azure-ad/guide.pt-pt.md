@@ -1,6 +1,6 @@
 ---
-title: Ativar as ligações Azure AD SSO com a sua conta OVHcloud
-excerpt: "Saiba como associar o Azure Active Directory à sua conta OVHcloud utilizando o SAML 2.0"
+title: Ativar as ligações Azure SSO com a sua conta OVHcloud
+excerpt: "Saiba como associar o seu Entra ID (anteriormente Azure Active Directory) à sua conta OVHcloud utilizando SAML 2.0"
 updated: 2023-04-05
 ---
 
@@ -10,13 +10,13 @@ updated: 2023-04-05
 
 ## Objetivo
 
-Pode utilizar a autenticação **SSO** (*Single Sign-On*) para se ligar à sua conta OVHcloud. Para ativar estas ligações, a sua conta e o seu Azure AD (Active Directory) devem ser configurados com a ajuda de SAML (*Security Assertion Markup Language*).
+Pode utilizar a autenticação **SSO** (*Single Sign-On*) para se ligar à sua conta OVHcloud. Para ativar estas ligações, a sua conta e o seu Entra ID (anteriormente Azure Active Directory) devem ser configurados através do SAML (*Security Assertion Markup Language*).
 
-**Saiba como associar a sua conta OVHcloud a um Azure AD externo.**
+**Saiba como associar a sua conta OVHcloud a um Entra ID externo.**
 
 ## Requisitos
 
-- Ter acesso às funções de **Administrador de aplicações** e **Administrador de utilizadores** de um serviço Azure AD
+- Ter acesso às funções de **Administrador de aplicações** e **Administrador de utilizadores** de um serviço Entra ID
 - Ter uma [conta OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-creation)
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt)
 
@@ -24,48 +24,48 @@ Pode utilizar a autenticação **SSO** (*Single Sign-On*) para se ligar à sua c
 
 > [!primary]
 >
-> Para que um prestador de serviços (por exemplo, a sua conta OVHcloud) estabeleça uma ligação SSO com um fornecedor de identidade (por exemplo, o seu Azure AD), deve estabelecer uma relação de confiança mútua ao registar a ligação SSO em ambos os serviços.
+> Para que um prestador de serviços (por exemplo, a sua conta OVHcloud) estabeleça uma ligação SSO com um fornecedor de identidade (por exemplo, o seu Entra ID), deve estabelecer uma relação de confiança mútua ao registar a ligação SSO em ambos os serviços.
 >
 
-### Utilizadores e grupos Azure AD
+### Utilizadores e grupos Entra ID
 
-O seu Azure AD atua como fornecedor de identidade. Os pedidos de autenticação da sua conta OVHcloud só serão aceites se o tiver declarado como terceiro de confiança.
+O seu Entra ID atua como fornecedor de identidade. Os pedidos de autenticação da sua conta OVHcloud só serão aceites se o tiver declarado como terceiro de confiança.
 
 Concentremo-nos, por um momento, nas identidades do lado do fornecedor de identidade.
 
-#### Utilizadores Azure AD
+#### Utilizadores Entra ID
 
-Para começar, aceda ao painel de controlo Azure AD.
+Para começar, aceda ao painel de controlo Entra ID.
 
-![Painel de controlo Azure AD](images/azure_ad_dashboard.png){.thumbnail}
+![Painel de controlo Entra ID](images/azure_ad_dashboard.png){.thumbnail}
 
 A seguir, clique em `Users`{.action} no menu à esquerda.
 
-![Utilizador do menu Azure AD](images/azure_ad_menu_user.png){.thumbnail}
+![Utilizador do menu Entra ID](images/azure_ad_menu_user.png){.thumbnail}
 
 Crie tantos utilizadores quantos desejar e/ou verifique os seus utilizadores clicando em cima.
 
 Neste exemplo, será utilizado o utilizador **John Smith**.
 
-![Utilizador Azure AD](images/azure_ad_user.png){.thumbnail}
+![Utilizador Entra ID](images/azure_ad_user.png){.thumbnail}
 
-Quando é efetuada uma autenticação SSO, a identidade de **John Smith** é fornecida pela Azure AD à conta OVHcloud. No entanto, é necessário que essa identidade contenha pelo menos um grupo. Se nenhum grupo existir, veja abaixo como criar um grupo para adicionar **John Smith**.
+Quando é efetuada uma autenticação SSO, a identidade de **John Smith** é fornecida pela Entra ID à conta OVHcloud. No entanto, é necessário que essa identidade contenha pelo menos um grupo. Se nenhum grupo existir, veja abaixo como criar um grupo para adicionar **John Smith**.
 
-#### Grupos Azure AD
+#### Grupos Entra ID
 
 Clique em `Groups`{.action} no menu à esquerda.
 
-![Grupos de menus Azure AD](images/azure_ad_menu_groups.png){.thumbnail}
+![Grupos de menus Entra ID](images/azure_ad_menu_groups.png){.thumbnail}
 
 Clique em `New group`{.action} no menu superior e introduza todas as informações necessárias.
 
 Para este exemplo, utilizar-se-á o grupo **manager@ovhcloudsaml**.
 
-![Azure AD Group etapa 1](images/azure_ad_group_1.png){.thumbnail}
+![Entra ID Group etapa 1](images/azure_ad_group_1.png){.thumbnail}
 
 Clique no botão `Create`{.action} para apresentar todas as informações sobre este grupo.
 
-![Azure AD Group etapa 2](images/azure_ad_group_2.png){.thumbnail}
+![Entra ID Group etapa 2](images/azure_ad_group_2.png){.thumbnail}
 
 Agora, os utilizadores que serão utilizados para a autenticação SSO devem ser adicionados a um grupo.
 
@@ -73,78 +73,78 @@ Neste exemplo, associemos o utilizador **John Smith** ao grupo **manager@ovhclou
 
 Na interface do grupo selecionado, clique em `Members`{.action} no menu à esquerda e, a seguir, em `Add members`{.action} no menu superior.
 
-![Azure AD Group User Assignment Passo 1](images/azure_ad_group_user_assignment_1.png){.thumbnail}
+![Entra ID Group User Assignment Passo 1](images/azure_ad_group_user_assignment_1.png){.thumbnail}
 
 Selecione o utilizador a adicionar neste grupo e clique no botão `Select`{.action}.
 
-![Azure AD Group User Assignment Passo 2](images/azure_ad_group_user_assignment_2.png){.thumbnail}
+![Entra ID Group User Assignment Passo 2](images/azure_ad_group_user_assignment_2.png){.thumbnail}
 
 Agora, o utilizador é atribuído ao grupo.
 
-Para efetuar as autenticações SSO, deve ser criada uma aplicação Azure AD.
+Para efetuar as autenticações SSO, deve ser criada uma aplicação Entra ID.
 
 A autenticação única deve ser configurada nesta aplicação.
 
-### Aplicações Azure AD
+### Aplicações Entra ID
 
 Em primeiro lugar, crie uma aplicação se ela ainda não existir.
 
-#### Criar uma aplicação Azure AD
+#### Criar uma aplicação Entra ID
 
 Clique em `Enterprise applications`{.action} no menu à esquerda.
 
-![Aplicações de menu Azure AD](images/azure_ad_menu_applications.png){.thumbnail}
+![Aplicações de menu Entra ID](images/azure_ad_menu_applications.png){.thumbnail}
 
 Clique em `New application`{.action} no menu superior.
 
-![Aplicações Azure AD etapa 1](images/azure_ad_applications_1.png){.thumbnail}
+![Aplicações Entra ID etapa 1](images/azure_ad_applications_1.png){.thumbnail}
 
 Clique em `Create your own application`{.action} no menu superior.
 
-![Aplicações Azure AD etapa 2](images/azure_ad_applications_2.png){.thumbnail}
+![Aplicações Entra ID etapa 2](images/azure_ad_applications_2.png){.thumbnail}
 
 Selecione `Non-Gallery`{.action} no menu à esquerda e clique no botão `Create`{.action}.
 
-![Aplicações Azure AD etapa 3](images/azure_ad_applications_3.png){.thumbnail}
+![Aplicações Entra ID etapa 3](images/azure_ad_applications_3.png){.thumbnail}
 
 Os detalhes da aplicação serão apresentados.
 
-![Aplicações Azure AD etapa 4](images/azure_ad_applications_4.png){.thumbnail}
+![Aplicações Entra ID etapa 4](images/azure_ad_applications_4.png){.thumbnail}
 
-A aplicação Azure AD foi criada. Os utilizadores que pretendam efetuar autenticações SSO através desta aplicação devem agora ser acrescentados.
+A aplicação Entra ID foi criada. Os utilizadores que pretendam efetuar autenticações SSO através desta aplicação devem agora ser acrescentados.
 
-#### Aplicação Azure AD - Afetação de utilizadores
+#### Aplicação Entra ID - Afetação de utilizadores
 
 > [!primary]
 >
-> Para que um utilizador efetue uma autenticação SSO a partir de uma aplicação Azure AD, deve ser adicionado a esta aplicação. Encontre aqui como adicionar um utilizador a uma aplicação Azure AD.
+> Para que um utilizador efetue uma autenticação SSO a partir de uma aplicação Entra ID, deve ser adicionado a esta aplicação. Encontre aqui como adicionar um utilizador a uma aplicação Entra ID.
 >
-> No entanto, é melhor adicionar um grupo de utilizadores do que utilizadores se tiver **Azure AD Premium**.
+> No entanto, é melhor adicionar um grupo de utilizadores do que utilizadores se tiver **Entra ID Premium**.
 >
 
 Clique em `Users and groups`{.action} no menu à esquerda e, em seguida, em `Add user/group`{.action} no menu superior.
 
 A seguir, clique na secção `Users`{.action}, selecione o utilizador a adicionar à aplicação e clique no botão `Select`{.action}.
 
-![Azure AD Application User Assignment Passo 1](images/azure_ad_application_user_assignment_1.png){.thumbnail}
+![Entra ID Application User Assignment Passo 1](images/azure_ad_application_user_assignment_1.png){.thumbnail}
 
-![Azure AD Application User Assignment Passo 2](images/azure_ad_application_user_assignment_2.png){.thumbnail}
+![Entra ID Application User Assignment Passo 2](images/azure_ad_application_user_assignment_2.png){.thumbnail}
 
 A aplicação é criada, o utilizador é atribuído, só precisa de configurar o SSO via SAML.
 
-#### Azure AD aplicação SSO
+#### Entra ID aplicação SSO
 
 Consulte o conjunto através do botão `Overview`{.action} no menu à esquerda e clique na secção `Set up single sign on`{.action} on.
 
-![Azure AD SSO etapa 1](images/azure_ad_sso_1.png){.thumbnail}
+![Entra ID SSO etapa 1](images/azure_ad_sso_1.png){.thumbnail}
 
 Clique na secção `SAML`{.action}.
 
-![Azure AD SSO etapa 2](images/azure_ad_sso_2.png){.thumbnail}
+![Entra ID SSO etapa 2](images/azure_ad_sso_2.png){.thumbnail}
 
 Clique em `Upload metadata file`{.action} no menu superior.
 
-![Azure AD SSO etapa 3](images/azure_ad_sso_3.png){.thumbnail}
+![Entra ID SSO etapa 3](images/azure_ad_sso_3.png){.thumbnail}
 
 Clique no ícone do botão `Select a file`{.action}, selecione o ficheiro de metadados OVHcloud Service Provider e clique no botão `Add`{.action}.
 
@@ -155,39 +155,55 @@ Pode obter o ficheiro de metadados adequado através das seguintes ligações:
 
 Faça o download do ficheiro de metadados, terá necessidade dele mais tarde.
 
-![Azure AD SSO etapa 5](images/azure_ad_sso_5.png){.thumbnail}
+![Entra ID SSO etapa 5](images/azure_ad_sso_5.png){.thumbnail}
 
 Aparecerá a configuração SAML.
 
-![Azure AD SSO etapa 6](images/azure_ad_sso_6.png){.thumbnail}
+![Entra ID SSO etapa 6](images/azure_ad_sso_6.png){.thumbnail}
 
 Na secção `Attributes & Claims`{.action}, clique no botão `Edit`{.action}.
 
-![Azure AD SSO etapa 9](images/azure_ad_sso_9.png){.thumbnail}
+![Entra ID SSO etapa 9](images/azure_ad_sso_9.png){.thumbnail}
+
+Adicione o atributo UPN (User Principal Name) às informações SAML para informar a OVHcloud do e-mail do utilizador. Esta etapa é indispensável.
+
+Clique em `Add a new claim`{.action} no menu superior.
+
+No campo `Name`{.action}, introduza o valor `http://schemas.xmlsoap.org/ws/2005/05/identity/claims/upn`.
+
+No campo `Source attribute`{.action}, introduza `user.mail`{.action}.
+
+A sua interface deverá ser bastante semelhante à seguinte captura de ecrã:
+
+![Entra ID SSO entrado UPN](images/azure_ad_sso_9bis.png){.thumbnail}
+
+Clique em `Save`{.action}
+
+Declare o atributo utilizado para o grupo do utilizador.
 
 Clique em `Add a group claim`{.action} no menu superior.
 
-![Azure AD SSO etapa 10](images/azure_ad_sso_10.png){.thumbnail}
+![Entra ID SSO etapa 10](images/azure_ad_sso_10.png){.thumbnail}
 
 Selecione `Security groups`{.action} e **Group ID** na `Source attribute`{.action} e clique no botão `Save`{.action}.
 
-![Azure AD SSO etapa 11](images/azure_ad_sso_11.png){.thumbnail}
+![Entra ID SSO etapa 11](images/azure_ad_sso_11.png){.thumbnail}
 
 A reivindicação de **groups** deve agora constar da lista.
 
 Copie e registe o valor do **Claim name** algures (por exemplo, um bloco de notas), necessitará dele mais tarde.
 
-![Azure AD SSO etapa 12](images/azure_ad_sso_12.png){.thumbnail}
+![Entra ID SSO etapa 12](images/azure_ad_sso_12.png){.thumbnail}
 
 Na secção `SAML certificates`{.action}, copie o valor do campo `App Federation Metadata Url`{.action}.
 
-Utilize esta ligação para descarregar o ficheiro de metadados da aplicação Azure AD para o utilizar mais tarde na conta OVHcloud.
+Utilize esta ligação para descarregar o ficheiro de metadados da aplicação Entra ID para o utilizar mais tarde na conta OVHcloud.
 
-![Azure AD SSO etapa 8](images/azure_ad_sso_8.png){.thumbnail}
+![Entra ID SSO etapa 8](images/azure_ad_sso_8.png){.thumbnail}
 
 ### Criar a confiança de uma conta OVHcloud e configurar a ligação
 
-A adição da sua aplicação Azure AD como fornecedor de identidade aprovado é efetuada na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), onde poderá fornecer os metadados do fornecedor de identidade.
+A adição da sua aplicação Entra ID como fornecedor de identidade aprovado é efetuada na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), onde poderá fornecer os metadados do fornecedor de identidade.
 
 #### Criar confiança na OVHcloud
 
@@ -207,15 +223,15 @@ A seguir, clique no botão `Ligação SSO`{.action}.
 
 ![OVHcloud connect SSO step 1](images/ovhcloud_user_management_connect_sso_1.png){.thumbnail}
 
-Complete o campo **Group Atribute Name** com o valor de **Claim name** dos grupos de aplicações Azure AD registado anteriormente.
+Complete o campo **Group Atribute Name** com o valor de **Claim name** dos grupos de aplicações Entra ID registado anteriormente.
 
-Preencha os metadados XML da sua aplicação Azure AD a partir do ficheiro anteriormente registado.
+Preencha os metadados XML da sua aplicação Entra ID a partir do ficheiro anteriormente registado.
 
 Clique no botão `Validar`{.action}.
 
 ![Ovhcloud SSO step 1](images/ovhcloud_sso_1.png){.thumbnail}
 
-A adição da sua aplicação Azure AD como fornecedor de identidade foi estabelecida, mas deve ainda assim adicionar grupos à sua conta OVHcloud.
+A adição da sua aplicação Entra ID como fornecedor de identidade foi estabelecida, mas deve ainda assim adicionar grupos à sua conta OVHcloud.
 
 > [!warning]
 > Se tentar conectar-se através de SSO, é provável que apareça uma mensagem de erro "`Not in valid groups`".
@@ -223,11 +239,11 @@ A adição da sua aplicação Azure AD como fornecedor de identidade foi estabel
 > A sua conta OVHcloud verifica se o utilizador autenticado pertence a um grupo existente na conta.
 >
 
-Para resolver esta situação, verifique o atributo "Group" devolvido pela sua aplicação Azure AD: o campo **Object Id**.
+Para resolver esta situação, verifique o atributo "Group" devolvido pela sua aplicação Entra ID: o campo **Object Id**.
 
 #### Declaração dos grupos OVHcloud
 
-![Azure AD Group etapa 2](images/azure_ad_group_2.png){.thumbnail}
+![Entra ID Group etapa 2](images/azure_ad_group_2.png){.thumbnail}
 
 Adicione-o clicando no botão `Declarar um grupo`{.action}.
 
@@ -247,21 +263,23 @@ Na [página de identificação da OVHcloud](https://www.ovh.com/auth/?action=got
 
 ![Ovhcloud SSO Login step 1](images/ovhcloud_sso_login_1.png){.thumbnail}
 
-De seguida, será redirecionado para a página de ligação à sua aplicação Azure AD. Selecione `Use another account`{.action}.
+De seguida, será redirecionado para a página de ligação à sua aplicação Entra ID. Selecione `Use another account`{.action}.
 
-![Azure AD Login etapa 1](images/azure_ad_login_1.png){.thumbnail}
+![Entra ID Login etapa 1](images/azure_ad_login_1.png){.thumbnail}
 
-Introduza o e-mail do utilizador da aplicação Azure AD e clique no botão `Next`{.action}.
+Introduza o e-mail do utilizador da aplicação Entra ID e clique no botão `Next`{.action}.
 
-![Azure AD Login etapa 2](images/azure_ad_login_2.png){.thumbnail}
+![Entra ID Login etapa 2](images/azure_ad_login_2.png){.thumbnail}
 
-Introduza a palavra-passe do utilizador da aplicação Azure AD e clique no botão `Sign In`{.action}.
+Introduza a palavra-passe do utilizador da aplicação Entra ID e clique no botão `Sign In`{.action}.
 
-![Azure AD Login etapa 3](images/azure_ad_login_3.png){.thumbnail}
+![Entra ID Login etapa 3](images/azure_ad_login_3.png){.thumbnail}
 
-Já está ligado com o mesmo nichandle, mas através do utilizador Ative Diretory e utilizando o seu SSO de aplicação Azure AD.
+Já está ligado com o mesmo nichandle, mas através do utilizador Ative Diretory e utilizando o seu SSO de aplicação Entra ID.
 
 ![Ovhcloud SSO Login step 2](images/ovhcloud_sso_login_2.png){.thumbnail}
+
+Se o seu e-mail não aparecer abaixo de `Connected via SSO`, isto significa que não configurou corretamente o atributo **UPN** e que uma parte das funcionalidades não poderá funcionar.
 
 ## Quer saber mais?
 

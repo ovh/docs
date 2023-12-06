@@ -1,7 +1,7 @@
 ---
 title: Enabling Azure SSO connections with your OVHcloud account
 excerpt: "Find out how to associate your Entra ID (formerly Azure Active Directory) to your OVHcloud account using SAML 2.0"
-updated: 2023-12-05
+updated: 2023-12-06
 ---
 
 ## Objective
@@ -275,7 +275,7 @@ You are now logged in with the same [NIC handle](/pages/account_and_service_mana
 
 ![Ovhcloud SSO Login step 2](images/ovhcloud_sso_login_2.png){.thumbnail}
 
-If your email does not appear below `Connected via SSO`{.action}, this means you have not configured the `UPN`{.action} attribute correctly, and some of the features will not work correctly.
+If your email does not appear below `Connected via SSO`, this means you have not configured the **UPN** attribute properly, and some of the features will not work in a correct manner.
 
 ## Go further
 
