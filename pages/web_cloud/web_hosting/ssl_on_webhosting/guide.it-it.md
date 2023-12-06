@@ -76,7 +76,7 @@ Una volta inoltrata la richiesta di attivazione, lo stato della connessione SSL 
 
 ### 2. Attivare un certificato SSL su un hosting Web <a name="enablessl"></a>
 
-Prima di procedere con questa configurazione, assicurati che lo step precedente di [attivazione di un certificato SSL su un sito multisito](#multisito) sia stato effettuato correttamente. Almeno un dominio deve avere l'opzione SSL `Attivata` o lo stato `A Genera` per attivare il certificato SSL.<br>
+Prima di procedere con questa configurazione, assicurati che lo step precedente di [attivazione di un certificato SSL su un sito multisito](#multisite) sia stato effettuato correttamente. Almeno un dominio deve avere l'opzione SSL `Attivata` o lo stato `A Genera` per attivare il certificato SSL.<br>
 **Queste informazioni non si applicano se selezioni `Certificato a pagamento`{.action} o `Importa il tuo certificato SSL`{.action}.**
 
 > [!warning]

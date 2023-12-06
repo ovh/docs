@@ -76,7 +76,7 @@ Una vez enviada la solicitud de activación, el estado de la conexión segura SS
 
 ### 2. Activar un certificado SSL en un alojamiento <a name="enablessl"></a>
 
-Antes de realizar esta configuración, asegúrese de que ha realizado correctamente el paso anterior de [activar un certificado SSL en un sitio multisitio](#multisitio). Al menos un dominio debe tener la opción SSL `Activada` o el estado `A generar` para activar el certificado SSL.<br>
+Antes de realizar esta configuración, asegúrese de que ha realizado correctamente el paso anterior de [activar un certificado SSL en un sitio multisitio](#multisite). Al menos un dominio debe tener la opción SSL `Activada` o el estado `A generar` para activar el certificado SSL.<br>
 **Esta información no es pertinente si selecciona `Certificado de pago`{.action} o `Importar su certificado SSL`{.action}.**
 
 > [!warning]
