@@ -50,6 +50,17 @@ Neste caso, podem surgir três estados:
 
 Para ativar o SSL num multi-site, clique no botão `...`{.action} à direita do multi-site em causa e, a seguir, em `Alterar o domínio`{.action}. Na nova janela, selecione a caixa `SSL`{.action}. Também pode ativar a opção para modificar o subdomínio www ao mesmo tempo que o nome de domínio associado. Siga os passos para confirmar a alteração.
 
+> [!warning]
+>
+> A atribuição de um certificado SSL a uma entrada multisite através da tabela "multisite" só pode ser efetuada se encomendou o certificado SSL gratuito **Let's Encrypt** fornecido pela OVHcloud.
+>
+> Os certificados SSL pagos **Sectigo** (DV e EV) só são válidos para um único domínio (e o seu subdomínio em *www*). Por isso, a menção *Ativado* não poderá aparecer à direita dos outros multi-sites declarados no alojamento web.
+>
+> Alguns certificados SSL **Externos** podem ser válidos para vários domínios de uma só vez. Se utilizar um destes, o texto *Ativado* também não será apresentado para todos os domínios declarados na tabela "multisite". No entanto, o seu certificado SSL será válido para os nomes de domínios que ele *engloba*.
+>
+
+![managessl](images/manage-ssl-step6.png){.thumbnail}
+
 Uma vez que tenha submetido o pedido de ativação, o estado da ligação protegida SSL para o multi-site em causa deve ser atualizado ao fim de alguns segundos, sendo o estado substituído por "A gerar / atualizar". Repita este processo se pretender ativar um certificado SSL para outros multisites.
 
 > [!primary]

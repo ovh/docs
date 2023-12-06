@@ -150,6 +150,78 @@ Bestätigen Sie im Popup-Fenster den Löschvorgang. Dieser dauert höchstens ein
 
 ![ssl verwalten](images/manage-ssl-step9.png){.thumbnail}
 
+> [!warning]
+>
+> Die Löschung eines kostenpflichtigen SSL-Zertifikats **Sectigo** (DV oder EV) ist endgültig, auch wenn das Zertifikat noch nicht abgelaufen ist. Für die verbleibende Zeit können keine anteiligen Rückerstattungen vorgenommen werden. Wenn Sie ein SSL-Zertifikat **Sectigo** (DV oder EV) neu installieren möchten, müssen Sie eine neue Bestellung aufgeben und das neue abonnierte SSL-Zertifikat vollständig bezahlen.
+>
+
+### Beheben Sie häufig auftretende Fehler bei SSL-Zertifikaten auf Webhostings
+
+#### "You already have an SSL certificate on your account. It will be migrated on new SSL offers in the next week."
+
+Diese Meldung zeigt an, dass Sie bereits Inhaber eines SSL-Zertifikats sind. Sie müssen also kein neues SSL-Zertifikat (Let's Encrypt) für Ihr Webhosting aktivieren.
+
+Weitere Informationen finden Sie im Abschnitt „[Aktivierung eines SSL-Zertifikats auf einer Multisite-Website](#multisite)“ dieser Anleitung.
+
+#### "No attached domain with ssl enabled or no attached domain that redirect on hosting IPs, please use hosting IP in your domain zone."
+
+Diese Meldung lässt sich in drei Fällen erklären.
+
+- 1: Der zu Ihrer Website gehörende Domainname verweist auf die IP-Adresse des CDN Ihres Webhostings. Auf Ihrem Webhosting sind keine CDN-Optionen aktiv:
+
+Um diese Situation zu beheben, weisen Sie Ihrem Domainnamen über die aktive DNS-Zone die IP-Adresse des Webhostings ohne CDN zu.
+
+Die IP-Adresse Ihres Webhostings finden Sie in unserer Anleitung „[Liste der IP-Adressen der Cluster und Webhostings](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)“.
+Um die aktive DNS-Zone Ihrer Domain zu bearbeiten, lesen Sie unsere Anleitung „[OVHcloud DNS-Zone bearbeiten](/pages/web_cloud/domains/dns_zone_edit)“.
+
+- 2: Der Ihrer Website zugeordnete Domainname verweist nicht auf die IP-Adresse Ihres Webhostings:
+
+Um diese Situation zu beheben, weisen Sie Ihrem Domainnamen über die aktive DNS-Zone die IP-Adresse des Webhostings zu.
+Wenn Sie auf Ihrem Webhosting eine CDN-Option aktiviert haben, können Sie auch die IP-Adresse des Webhostings mit dem CDN verwenden.
+
+Die IP-Adresse Ihres Webhostings finden Sie in unserer Anleitung „[Liste der IP-Adressen der Cluster und Webhostings](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)“.
+Um die aktive DNS-Zone Ihrer Domain zu bearbeiten, lesen Sie unsere Anleitung „[OVHcloud DNS-Zone bearbeiten](/pages/web_cloud/domains/dns_zone_edit)“
+
+- 3: Keiner der im Tab „Multisite“ aufgeführten Domainnamen verfügt über eine „aktive“ SSL Option:
+
+Aktivieren Sie das SSL-Zertifikat für die Domain(n), um die Situation zu beheben. Wenn nötig, lesen Sie den Abschnitt „[Aktivierung eines SSL-Zertifikats auf einer Multisite-Website](#multisite)“ in dieser Anleitung, um Ihre Aktionen fortzusetzen.
+
+#### Das SSL-Zertifikat ist auf Ihrem Webhosting aktiv, aber auf Ihrer Website wird die Meldung „Your connection is not private“ angezeigt
+
+Diese Meldung wird in folgenden Fällen angezeigt:
+
+- 1: Die Weiterleitungsregel zu Ihrer URL in „HTTPS“ ist falsch konfiguriert oder in der Datei “.htaccess“ nicht vorhanden:
+
+Um dies zu korrigieren, lesen Sie unsere Anleitung „[URL für den Zugriff auf meine Website mit mod_rewrite über die Datei .htaccess umschreiben](/pages/web_cloud/web_hosting/htaccess_url_rewriting_using_mod_rewrite)“ oder wenden Sie sich an einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/), wenn Sie Hilfe brauchen.
+
+- 2: Einige Elemente der Webseite werden nicht korrekt auf „HTTPS“ verschlüsselte Elemente umgeleitet:
+
+Um dies zu korrigieren, müssen Sie sicherstellen, dass Ihre gesamte Website mit dem „HTTPS“ Protokoll verschlüsselt ist.
+Wenn nötig, lesen Sie unsere Anleitung „[Webhosting: Website auf HTTPS umstellen](/pages/web_cloud/web_hosting/ssl-activate-https-website)“ oder wenden Sie sich an einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/), wenn Sie Hilfe brauchen.
+
+> [!success]
+>
+> Die betroffenen Elemente auf der Webseite können direkt aus den SSL-Informationen des Internetbrowsers in den *Zertifikatsdetails* eingesehen werden.
+>
+
+#### Sie haben ein Sectigo EV SSL zusammen mit Ihrem Webhosting bestellt, aber das Zertifikat ist noch nicht aktiv und das Webhosting funktioniert nicht korrekt
+
+Diese Situation hängt mit den notwendigen Schritten zur Aktivierung von EV SSL auf Ihrem Webhosting zusammen.
+
+Wenn nötig, lesen Sie unsere Anleitung „[Ein EV SSL-Zertifikat für Ihre Website verwenden](/pages/web_cloud/web_hosting/ssl_ev)“, um diese Situation zu beheben.
+
+> [!primary]
+>
+> Wenn das EV SSL-Zertifikat nicht vollständig aktiv ist, wird die Bestellung niemals abgeschlossen und es werden keine Rechnungen erstellt. Aus diesem Grund wird der Webhosting-Dienst nicht korrekt funktionieren.
+>
+
+#### Nach Ablauf des SSL Sectigo Zertifikats (DV oder EV) erhalten Sie die Fehlermeldung „No attached domain with ssl enabled or no attached domain that redirect on hosting IPs, please use hosting IP in your domain zone“
+
+Dieser Fehler tritt auf, wenn das Sectigo SSL-Zertifikat (direkt über das Webhosting aktiviert) abläuft und sich die IP-Adresse des Webhostings ändert. Aus diesem Grund müssen Sie Ihren Domainnamen direkt in der aktiven DNS Zone Ihrer Domain auf die richtige IP-Adresse zeigen lassen (A-Eintrag).
+
+Die IP-Adresse Ihres Webhostings finden Sie in unserer Anleitung „[Liste der IP-Adressen der Cluster und Webhostings](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)“.
+Um die aktive DNS-Zone Ihrer Domain zu bearbeiten, lesen Sie unsere Anleitung „[OVHcloud DNS-Zone bearbeiten](/pages/web_cloud/domains/dns_zone_edit)“
+
 ## Weiterführende Informationen
 
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
