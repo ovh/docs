@@ -1,6 +1,6 @@
 ---
 title: SSO-Verbindungen zu Ihrem OVHcloud Account über Azure aktivieren
-excerpt: "Erfahren Sie hier, wie Sie Entra ID (früher Azure Active Directory) über SAML 2.0 mit Ihrem OVHcloud Account verbinden"
+excerpt: "Erfahren Sie hier, wie Sie Entra ID (vormals Azure Active Directory) über SAML 2.0 mit Ihrem OVHcloud Account verbinden"
 updated: 2023-12-06
 ---
 
@@ -10,7 +10,7 @@ updated: 2023-12-06
 
 ## Ziel
 
-Sie können die Authentifizierungsmethode **Single Sign-On** (SSO) verwenden, um sich in Ihren OVHcloud Kunden-Account einzuloggen. Um diese Verbindungen zu aktivieren, müssen Ihr Account und Ihr Entra ID (früher Azure Active Directory) mithilfe von SAML-Authentifizierungen (*Security Serving Markup Language*) konfiguriert werden.
+Sie können die Authentifizierungsmethode **Single Sign-On** (SSO) verwenden, um sich in Ihren OVHcloud Kunden-Account einzuloggen. Um diese Verbindungen zu aktivieren, müssen Ihr Account und Ihr Entra ID (vormals Azure Active Directory) mithilfe von SAML-Authentifizierungen (*Security Serving Markup Language*) konfiguriert werden.
 
 **Diese Anleitung erklärt, wie Sie Ihren OVHcloud Kunden-Account mit einem externen AD Azure verbinden.**
 
