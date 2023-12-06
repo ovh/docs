@@ -1,7 +1,7 @@
 ---
 title: "Utiliser OVHcloud Object Storage comme Backend Terraform pour stocker votre état (state) Terraform"
 excerpt: "Découvrez comment utiliser l’Object Storage d’OVHcloud comme Backend Terraform pour stocker votre état (state) Terraform"
-updated: 2023-07-31
+updated: 2023-11-30
 ---
 
 ## Objectif
@@ -77,16 +77,35 @@ $ aws s3 ls
 
 Créez un fichier `backend.tf` avec le contenu suivant :
 
+Avant Terraform version 1.6.0:
 ```yaml
 terraform {
     backend "s3" {
       bucket = "terraform-state-hp"
-      key = "terraform.tfstate"
+      key    = "terraform.tfstate"
       region = "gra"
- #or sbg or any activated high performance storage region
+      # sbg or any activated high performance storage region
       endpoint = "s3.gra.perf.cloud.ovh.net"
       skip_credentials_validation = true
-      skip_region_validation = true
+      skip_region_validation      = true
+    }
+}
+```
+
+Après Terraform version 1.6.0:
+```yaml
+terraform {
+    backend "s3" {
+      bucket = "terraform-state-hp"
+      key    = "terraform.tfstate"
+      region = "gra"
+      # sbg or any activated high performance storage region
+      endpoints = {
+        s3 = "https://s3.gra.perf.cloud.ovh.net/"
+      }
+      skip_credentials_validation = true
+      skip_region_validation      = true
+      skip_requesting_account_id  = true
     }
 }
 ```
