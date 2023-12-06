@@ -1,10 +1,8 @@
 ---
 title: Comment utiliser les politiques IAM depuis votre espace client
 excerpt: "Découvrez comment donner des droits d'accès spécifiques aux utilisateurs depuis un compte OVHcloud"
-updated: 2023-07-06
+updated: 2023-12-06
 ---
-
- 
 
 ## Objectif
 
@@ -14,13 +12,13 @@ La gestion des accès OVHcloud est basée sur un système de gestion des politiq
 
 En détail, une politique contient :
 
-- Une ou plusieurs **identités** visées par cette politique. 
-    - Il peut s'agir d'identifiants de comptes, d'utilisateurs ou de groupes d'utilisateurs (comme ceux utilisés dans [Federation](/pages/account_and_service_management/account_information/ovhcloud-account-connect-saml-adfs) - d'autres guides SSO sont disponibles). 
-- Une ou plusieurs **ressources** concernées par cette politique. 
+- Une ou plusieurs **identités** visées par cette politique.
+    - Il peut s'agir d'identifiants de comptes, d'utilisateurs ou de groupes d'utilisateurs (comme ceux utilisés dans [Federation](/pages/account_and_service_management/account_information/ovhcloud-account-connect-saml-adfs) - d'autres guides SSO sont disponibles).
+- Une ou plusieurs **ressources** concernées par cette politique.
     - Une ressource est un produit OVHcloud qui sera concerné par cette politique (un nom de domaine, un serveur Nutanix, un Load Balancer, etc.).
 - Une ou plusieurs **actions** autorisées ou exceptées par cette politique.
     - Les actions sont les droits spécifiques concernés par cette politique (redémarrage d'un serveur, création d'un compte e-mail, résiliation d'un abonnement, etc.)
- 
+
 Par exemple, nous pouvons créer une politique pour donner à un utilisateur nommé John, pour un VPS, l'accès à l'action « redémarrer ».
 
 **Ce guide vous explique en détail comment déclarer ces politiques à l'aide de l'espace client OVHcloud et comment lister les identités, ressources et actions disponibles pour celles-ci.**
@@ -53,7 +51,7 @@ Chaque politique est affichée avec son nom, le nombre d'identités qui lui sont
 
 > [!primary]
 >
-> Cliquer sur le bouton « Mode avancé » permet d'afficher la liste de toutes les politiques OVHcloud. Ces politiques sont automatiquement créées par OVHcloud pour convertir la délégation préexistante des `NIC Tech` (contact technique) et `NIC Admin` (contact administrateur) sur la nouvelle fonctionnalité IAM. 
+> Cliquer sur le bouton « Mode avancé » permet d'afficher la liste de toutes les politiques OVHcloud. Ces politiques sont automatiquement créées par OVHcloud pour convertir la délégation préexistante des `NIC Tech` (contact technique) et `NIC Admin` (contact administrateur) sur la nouvelle fonctionnalité IAM.
 >
 > Les clients ne sont pas autorisés à modifier ou supprimer ces politiques.
 
@@ -72,13 +70,24 @@ Le formulaire suivant s'affiche :
 - **Ressources** : ajoutez des ressources ou des groupes de ressources à couvrir par la politique. Les ressources disponibles sont filtrées par type de produit préalablement sélectionné.
 - **Actions**.
 
-Il existe 3 façons d'ajouter des actions :
+Il existe 4 façons d'ajouter des actions :
 
 - En activant l'option `Autoriser toutes les actions`{.action}
 
 ![Créer une politique](images/create_a_policy_02.png){.thumbnail}
 
 Lors de l'activation de cette option, vous autorisez toutes les actions liées aux produits sélectionnés. Cela inclut toutes les actions existantes ainsi que les actions ajoutées à l'avenir pour ces catégories de produits.
+
+- En sélectionnant un groupe de permissions managées
+
+Nous mettons à disposition des groupes de permissions préconfigurées et managées par OVHcloud.
+Vous pouuvez sélectionner un ou plusieurs groupes en les sélectionnant parmi la liste disponible.
+
+![Créer une politique](images/create_a_policy_05.png){.thumbnail}
+
+Le détail du contenu des groupes de permissions managées est disponible dans la [documentation associée](/pages/account_and_service_management/account_information/iam-permission-groups).
+
+Il est possible d'utiliser les groupes d'actions managées en complément d'actions unitaires.
 
 - En ajoutant manuellement des actions
 
@@ -90,9 +99,9 @@ Vous pouvez utiliser une *wildcard* au début ou à la fin du nom de l'action av
 
 Par exemple, l'ajout de `vps:apiovh:ips/*` accordera les droits suivants :
 
-vps:apiovh:ips/edit <br>
-vps:apiovh:ips/delete <br>
-vps:apiovh:ips/get <br>
+- **vps:apiovh:ips/edit**
+- **vps:apiovh:ips/delete**
+- **vps:apiovh:ips/get**
 
 - En sélectionnant des actions dans la liste
 

@@ -1,7 +1,7 @@
 ---
 title: Come utilizzare le politiche IAM dallo Spazio Cliente
 excerpt: Come assegnare diritti di accesso specifici agli utenti da un account OVHcloud
-updated: 2023-07-06
+updated: 2023-12-06
 ---
 
 > [!primary]
@@ -83,6 +83,17 @@ Esistono 3 modi per aggiungere azioni:
 
 Al momento dell'attivazione di questa opzione, autorizzi tutte le azioni relative ai prodotti selezionati. Ciò comprende tutte le azioni esistenti e le azioni aggiunte in futuro per queste categorie di prodotti.
 
+- Selezionando un gruppo di permessi gestiti
+
+OVHcloud mette a disposizione gruppi di permessi preconfigurati e gestiti da OVHcloud.
+È possibile selezionare uno o più gruppi selezionandoli dall'elenco disponibile.
+
+![Crea una politica](images/create_a_policy_05.png){.thumbnail}
+
+I dettagli del contenuto dei gruppi di permessi gestiti sono disponibili nella [documentazione associata](/pages/account_and_service_management/account_information/iam-permission-groups).
+
+I gruppi di azioni gestite possono essere utilizzati in aggiunta alle azioni unitarie.
+
 - Aggiungendo manualmente azioni
 
 Se conosci il nome dell'azione, puoi aggiungerla manualmente.
@@ -93,9 +104,9 @@ Si può utilizzare una *wildcard* all'inizio o alla fine dell'azione con `*`.
 
 Ad esempio, l'aggiunta di `vps:apiovh:ips/*` conferirà i seguenti diritti:
 
-vps:apiovh:ips/edit <br>
-vps:apiovh:ips/delete <br>
-vps:apiovh:ips/get <br>
+- **vps:apiovh:ips/edit**
+- **vps:apiovh:ips/delete**
+- **vps:apiovh:ips/get**
 
 - Selezionando azioni nell'elenco
 

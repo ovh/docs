@@ -1,7 +1,7 @@
 ---
 title: Verwendung von IAM-Richtlinie über Ihr Kundencenter
 excerpt: Erfahren Sie hier, wie Sie Benutzern im OVHcloud Kunden-Account spezifische Zugriffsrechte gewähren
-updated: 2023-07-06
+updated: 2023-12-06
 ---
 
 > [!primary]
@@ -83,6 +83,17 @@ Es gibt drei Möglichkeiten, Aktionen hinzuzufügen:
 
 Wenn Sie diese Option aktivieren, lassen Sie alle Aktionen zu, die sich auf die ausgewählten Produkte beziehen. Dies schließt alle bestehenden und in Zukunft hinzugefügten Aktionen für diese Produktkategorien ein.
 
+- Auswählen einer verwalteten Berechtigungsgruppe
+
+Wir stellen Berechtigungsgruppen zur Verfügung, die von OVHcloud vorkonfiguriert und verwaltet werden.
+Sie können eine oder mehrere Gruppen aus der verfügbaren Liste auswählen.
+
+![Richtlinie erstellen](images/create_a_policy_05.png){.thumbnail}
+
+Details zum Inhalt verwalteter Berechtigungsgruppen finden Sie in der zugehörigen [Dokumentation](/pages/account_and_service_management/account_information/iam-permission-groups).
+
+Verwaltete Aktionsgruppen können als Ergänzung zu Komponentenaktionen verwendet werden.
+
 - Manuelles Hinzufügen von Aktionen
 
 Wenn Sie den Namen der Aktion kennen, können Sie sie manuell hinzufügen.
@@ -93,9 +104,9 @@ Sie können die *Wildcard* `*` am Anfang oder Ende des Aktionsnamens verwenden.
 
 Wenn Sie beispielsweise `vps:apiovh:ips/*` hinzufügen, geben Sie folgende Rechte:
 
-vps:apiovh:ips/edit <br>
-vps:apiovh:ips/delete <br>
-vps:apiovh:ips/get <br>
+- **vps:apiovh:ips/edit**
+- **vps:apiovh:ips/delete**
+- **vps:apiovh:ips/get**
 
 - Auswählen von Aktionen aus der Liste
 
