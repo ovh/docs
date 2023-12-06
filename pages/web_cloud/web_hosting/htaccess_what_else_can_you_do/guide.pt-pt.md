@@ -1,6 +1,6 @@
 ---
 title: "Tutorial - Operações realizáveis com um ficheiro .htaccess"
-excerpt: "Descubra alguns exemplos de operações que podem ser realizadas com um ficheiro .htaccess"
+excerpt: "Saiba alguns exemplos de operações que podem ser realizadas com um ficheiro .htaccess"
 updated: 2023-05-23
 ---
 
