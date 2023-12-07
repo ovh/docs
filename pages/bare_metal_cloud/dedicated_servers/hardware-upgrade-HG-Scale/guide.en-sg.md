@@ -4,14 +4,14 @@ excerpt: "Find out how to request a hardware upgrade on High Grade & SCALE range
 updated: 2023-12-06
 ---
 
+## Objective
+
+Our High Grade and Scale servers offer a scalable option that allows you increase your disk space or RAM.
+
 **The purpose of this guide is to walk you through the process of requesting a hardware upgrade on OVHcloud High Grade and SCALE dedicated servers.**
 
 > [!primary]
 > The steps in this guide only apply to our new ranges (High Grade and Scale). For older ranges, the request must be made via a support ticket.
-
-## Objective
-
-Our High Grade and Scale servers offer a scalable option that allows you increase your disk space or RAM.
 
 ## Requirements
 
