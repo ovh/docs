@@ -1,7 +1,7 @@
 ---
 title: "Criar uma base de dados num alojamento web"
 excerpt: "Saiba como criar uma base de dados no seu alojamento web OVHcloud"
-updated: 2023-11-03
+updated: 2023-12-04
 ---
 
 > [!primary]
@@ -116,6 +116,11 @@ Consulte a tabela que se apresenta para ver o conjunto das informações de liga
 >
 
 Em função do software utilizado, é possível que esta ligação tenha de ser configurada manualmente ou através de uma interface gerida pela interface de configuração (backend) do website. Uma vez que este procedimento diz respeito à configuração do seu website e não ao seu alojamento OVHcloud, recomendamos que consulte os recursos disponíveis online ou que recorra a um [fornecedor especializado](https://partner.ovhcloud.com/pt/directory/).
+
+> [!primary]
+>
+> As bases de dados associadas ao seu alojamento web só estão acessíveis através de uma aplicação ou de um script diretamente instalado no seu alojamento web ou através da interface phpMyAdmin.
+>
 
 #### Aceder à interface phpMyAdmin
 

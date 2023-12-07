@@ -1,7 +1,7 @@
 ---
 title: "Tworzenie bazy danych na hostingu"
 excerpt: "Dowiedz się, jak utworzyć bazę danych na hostingu OVHcloud"
-updated: 2023-11-03
+updated: 2023-12-04
 ---
 
 > [!primary]
@@ -116,6 +116,11 @@ Wszystkie informacje dotyczące połączenia z bazą danych odnajdziesz w tabeli
 >
 
 W zależności od używanego oprogramowania może być konieczne ręczne skonfigurowanie połączenia albo wystarczy interfejs wygenerowany przez interfejs konfiguracyjny strony WWW (backend). Ponieważ procedura ta dotyczy konfiguracji Twojej strony WWW, a nie Twojego hostingu OVHcloud, zalecamy skorzystanie z zasobów dostępnych online lub skorzystanie z pomocy [wyspecjalizowanego usługodawcy](https://partner.ovhcloud.com/pl/directory/).
+
+> [!primary]
+>
+> Bazy danych powiązane z Twoim hostingiem są dostępne tylko za pośrednictwem aplikacji lub skryptu zainstalowanego bezpośrednio na Twoim hostingu lub interfejsu phpMyAdmin.
+>
 
 #### Dostęp do interfejsu phpMyAdmin
 

@@ -1,7 +1,7 @@
 ---
 title: "Eine Datenbank auf Ihrem Webhosting erstellen"
 excerpt: "Erfahren Sie hier, wie Sie in OVHcloud Webhostings enthaltene Datenbanken verwenden"
-updated: 2023-11-03
+updated: 2023-12-04
 ---
 
 > [!primary]
@@ -116,6 +116,11 @@ Die Verbindungsinformationen zu Ihrer Datenbank finden Sie in der angezeigten Ta
 >
 
 Je nach verwendeter Software muss diese Verbindung gegebenenfalls manuell oder über ein vom Website-Backend generiertes Interface konfiguriert werden. Da dieser Prozess eher die Konfiguration Ihrer Website als der von OVHcloud bereitgestellten Dienste betrifft, empfehlen wir Ihnen, die entsprechenden Online-Ressourcen zu konsultieren oder einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) zu kontaktieren.
+
+> [!primary]
+>
+> Die im Webhosting inkludierten Datenbanken sind nur erreichbar über direkt auf Ihrem Webhosting installierte Anwendungen oder Skripte, oder über das *phpMyAdmin*-Interface.
+>
 
 #### Auf das phpMyAdmin-Interface zugreifen
 

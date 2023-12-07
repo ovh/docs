@@ -1,7 +1,7 @@
 ---
 title: "Crear una base de datos en un alojamiento web"
 excerpt: "Descubra cómo crear una base de datos en un alojamiento web de OVHcloud"
-updated: 2023-11-03
+updated: 2023-12-04
 ---
 
 > [!primary]
@@ -116,6 +116,11 @@ Se mostrará una tabla con toda la información relativa a la conexión a la bas
 >
 
 Según el programa utilizado, es posible que esta conexión necesite ser configurada manualmente o a través de una interfaz generada por la interfaz de configuración (backend) del sitio web. Este procedimiento afecta a la configuración del sitio web y no al alojamiento de OVHcloud, por lo que le recomendamos que consulte los recursos disponibles en internet o que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es/directory/).
+
+> [!primary]
+>
+> Solo es posible acceder a las bases de datos asociadas a un alojamiento web a través de una aplicación o un script directamente instalado en el alojamiento web o a través de la interfaz phpMyAdmin.
+>
 
 #### Acceder a la interfaz phpMyAdmin
 
