@@ -94,7 +94,7 @@ Grâce à ce guide, vous pouvez désormais comparer deux zones DNS, mais égalem
 
 [Se connecter à l'espace client OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-login)
 
-[Sauvegarder et exporter une base de données sur votre serveur de bases de données](/pages/web_cloud/domains/dns_zone_create/)
+[Créer une zone DNS chez OVHcloud](/pages/web_cloud/domains/dns_zone_create/)
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
 
