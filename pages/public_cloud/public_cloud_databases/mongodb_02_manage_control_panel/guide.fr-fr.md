@@ -1,7 +1,7 @@
 ---
 title: MongoDB - Configurez votre instance MongoDB pour accepter les connexions entrantes (EN)
 excerpt: Find out how to configure your MongoDB instance to accept incoming connections
-updated: 2023-03-14
+updated: 2023-12-06
 ---
 
 ## Objective
@@ -75,11 +75,11 @@ You can specify the MongoDB connection string using either:
 
 > [!tabs]
 > mongodb
->> It should be similar to this when you have a single node (Essential service plan):
+>> It should be similar to this when you have a single node:
 >> ```
 >> mongodb://<username>:<password>@<hostname>/admin?tls=true
 >> ```
->> And like this when you have a MongoDB cluster with multiple nodes, called a replica set (Business or Enterprise service plans):
+>> And like this when you have a MongoDB cluster with multiple nodes, called a replica set:
 >> ```
 >> mongodb://<username>:<password>@<hostname node1>,<hostname node 2>,<hostname node 3>/admin?replicaSet=replicaset&tls=true
 >> ```

@@ -1,7 +1,7 @@
 ---
 title: MongoDB - Capabilities and Limitations
 excerpt: Find out what are the capabilities and limitations of the Public Cloud Databases for MongoDB offer
-updated: 2023-12-04
+updated: 2023-12-06
 ---
 
 ## Objective
@@ -25,7 +25,6 @@ The Public Cloud Databases offer is available in the following regions:
 
 The Public Cloud Databases offer supports the following MongoDB versions:
 
-- MongoDB 4.2 (soon deprecated)
 - MongoDB 4.4
 - MongoDB 5.0
 - MongoDB 6.0
@@ -38,19 +37,25 @@ You can use anyone of the [MongoDB-recommended driver](https://docs.mongodb.com/
 
 ### Plans
 
-Three plans are available:
+Six plans are available:
 
 - *Essential*
+- *Discovery*
 - *Business*
+- *Production*
 - *Enterprise*
+- *Advanced*
 
 Here is an overview of the various plans' capabilities:
 
 | Plan         | Number of nodes | MongoDB License | BI Connector  | Compass   |
 | ------------ | --------------- | --------------- | ------------  | --------- |
 | *Essential*  | 1               | Community       | Not available | Available |
+| *Discovery*  | 3               | Community       | Not available | Available |
 | *Business*   | 3 to 8          | Community       | Not available | Available |
+| *Production* | 3               | Community       | Not available | Available |
 | *Enterprise* | 3 to 8          | Enterprise      | Available     | Available |
+| *Advanced*   | 3 to 7          | Enterprise      | Available     | Available |
 
 Your choice of plan affects the number of nodes your cluster can run as well as the MongoDB license type.
 
@@ -60,12 +65,13 @@ Your choice of plan affects the number of nodes your cluster can run as well as 
 #### Nodes
 
 - *Essential*: The cluster supports at most one node.
-- *Business* or *Enterprise*: The cluster can support 3 to 8 nodes including optionally an analytics node.
+- *Discovery*: The cluster contains 3 nodes.
+- *Business*, *Production*, *Enterprise* and *Advanced*: The cluster can support 3 to 8 nodes including optionally an analytics node.
 
 #### License type
 
-- *Essential* and *Business* plans use the MongoDB Community license.
-- *Enterprise* plans upgrade your cluster so that it uses the MongoDB Enterprise license, giving you the capability to use the [MongoDB BI Connector](https://www.mongodb.com/products/bi-connector){.external} as well as [MongoDB Compass](https://www.mongodb.com/products/compass){.external}.
+- *Essential*, *Discovery*, *Business* and *Production* plans use the MongoDB Community license.
+- *Enterprise* and *Advanced* plans upgrade your cluster so that it uses the MongoDB Enterprise license, giving you the capability to use the [MongoDB BI Connector](https://www.mongodb.com/products/bi-connector){.external} as well as [MongoDB Compass](https://www.mongodb.com/products/compass){.external}.
 
 License cost is included inside the service plans. You cannot bring your own licenses.
 
