@@ -1,7 +1,7 @@
 ---
-title: 'Specifiche tecniche degli hosting condivisi'
-excerpt: 'Questa guida contiene informazioni e specifiche tecniche degli hosting condivisi'
-updated: 2022-11-18
+title: "Specifiche tecniche degli hosting condivisi"
+excerpt: "Questa guida ti mostra le informazioni e le specifiche tecniche relative agli hosting Web"
+updated: 2023-12-07
 ---
 
 > [!primary]
@@ -9,6 +9,8 @@ updated: 2022-11-18
 >
 
 ## Obiettivo
+
+I pacchetti di web hosting OVHcloud sono condivisi. Di conseguenza, la configurazione di queste offerte contiene alcune specificità tecniche. Vi consigliamo di prendere nota di queste specificità *prima* di utilizzare il vostro web hosting OVHcloud.
 
 **Questa guida ti mostra i dettagli tecnici relativi all’infrastruttura degli hosting Web OVHcloud, in base alle domande più frequenti.**
 
@@ -21,85 +23,103 @@ updated: 2022-11-18
 
 > [!warning]
 >
-> OVHcloud mette a tua disposizione servizi di cui tu sei responsabile per la configurazione e la gestione. Garantirne quotidianamente il corretto funzionamento è quindi responsabilità dell’utente.
-> 
-> Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione del tuo account. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un fornitore specializzato o l’amministratore del servizio. OVHcloud non può fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione “Per saperne di più”.
-> 
+> OVHcloud mette a disposizione i servizi ma non si occupa della loro configurazione e gestione. garantirne il corretto funzionamento è quindi responsabilità dell’utente.
+>
+> Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione del tuo account. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un [provider specializzato](https://partner.ovhcloud.com/it/directory/) o il fornitore del servizio. OVH non sarà infatti in grado di fornirti assistenza. Per maggiori informazioni consulta la sezione "[Per saperne di più](#go-further)" di questa guida.
+>
 
 ### FTP
 
-- Errore di accesso (“Autenticazione di connessione 530 non riuscita”): È possibile verificare la correttezza delle credenziali di accesso allo Spazio Cliente FTP dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} nella scheda `FTP - SSH`. La password non vengono mai mostrate, ma possono essere modificate. Consulta le nostre [guide FTP](/pages/web_cloud/web_hosting/ftp_connection).
+- Utilizza la **modalità passiva** per le connessioni FTP. Assicurati che il tuo script o il tuo client FTP siano configurati correttamente.
 
-- Le connessioni FTP devono utilizzare la **modalità passiva**. Assicurati che il tuo script o il tuo client FTP siano configurati correttamente.
+- Se riscontri l’errore di accesso "Autenticazione di connessione 530 non riuscita" durante la connessione al tuo spazio di storage FTP: assicurati che le informazioni di accesso al tuo spazio FTP siano corrette. Per farlo, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e clicca sulla sezione `Web Cloud`{.action}. Nella colonna di sinistra, clicca su `Hosting`{.action} e seleziona l’hosting Web interessato. Clicca sulla scheda `FTP - SSH`{.action}.
 
-### E-mail <a name="emails"></a>
+In questa interfaccia sono disponibili tutte le informazioni di connessione allo spazio di storage FTP, ad eccezione della password.
 
-Per garantire una buona qualità di servizio per tutti e semplificare l'invio delle tue email ai tuoi destinatari, applichiamo delle quote relative ai nostri servizi di hosting Web.
+Le password non vengono mai mostrate, ma possono essere modificate.
 
-Per un periodo di 3600 secondi (1 ora), la tua offerta di hosting ti permetterà di inviare queste email:
+Per maggiori informazioni al riguardo, consulta la nostra guida "[Accedere allo spazio di storage FTP del proprio hosting Web](/pages/web_cloud/web_hosting/ftp_connection)".
 
-|Offerte|Hosting gratuito 100M|Personale|Pro|Performance|
-|---|---|---|---|---|
-|Quantità massima di invio di email per ora e per servizio|10|100|200|2000|
+### E-mail <a name="email"></a>
 
-- A parte spamming o phishing, la spedizione delle tue email può essere differita. Le tue email saranno conservate in coda fino a che il numero di email inviate nell'arco dell'ora è inferiore alla quota.
-- In caso di abuso o rischio accertato, il tuo servizio verrà sospeso e riceverai un'email di notifica della sospensione. Cosa fare in caso di account bloccato per Spam? [Consulta la nostra guida](/pages/web_cloud/email_and_collaborative_solutions/troubleshooting/locked_for_spam).
+Per garantire una buona qualità di servizio sull'intera infrastruttura condivisa e rendere più fluido l'invio delle email verso i tuoi destinatari, applichiamo delle quote di invio sui nostri servizi di hosting Web.
 
-### Database/SQL
+In un periodo di 3600 secondi (1 ora), la tua offerta di hosting Web ti permetterà di inviare le seguenti quote email:
 
-### Connessioni simultanee al database
+|Offerte|Hosting gratuito 100M|Starter|Personale|Pro|Performance|
+|---|---|---|---|---|---| 
+|Quantità massima di invio email per ora e per servizio|10|20|100|200|2000|
 
-- Sui piani di hosting Web (database condivisi), sono possibili un massimo di 30 connessioni simultanee per database (200 con il database Web Cloud Databases). Per verificare le opzioni disponibili in ciascuno dei nostri piani di hosting Web, consulta i [dettagli delle nostre offerte di hosting](https://www.ovhcloud.com/it/web-hosting/).
+> [!primary]
+>
+> Queste limitazioni si applicano a **solo** le email inviate tramite la funzione *mail()* di PHP e non sono applicabili ad altre offerte di posta elettronica (invio SMTP).
+>
 
-- Inoltre è possibile ordinare database **Web Cloud Databases** aggiuntivi, che dispongono di opzioni di personalizzazione.
+Ad eccezione dei sospetti di spamming o di phishing, la spedizione delle tue email potrà essere differita. I messaggi di posta elettronica saranno mantenuti in una coda fino a quando il numero di messaggi inviati nel corso dell'ora trascorsa non sarà inferiore alla quota.
 
-    - *max_connections*: 100 di default, con possibilità di passare a 200
+In caso di abuso o pirateria, una parte o la totalità del servizio potrà essere sospesa (conformemente alle CGU/CGV e Condizioni Particolari della vostra offerta). Riceverai un’email con la notifica della sospensione del servizio. In questo caso, consulta le guide seguenti:
 
-    - *max_user_connections*: 50 di default, con possibilità di passare a 200
+- [Controllare e gestire le email automatiche del proprio hosting Web](/pages/web_cloud/web_hosting/mail_function_script_records);
+- [Case study - Suggerimenti in seguito alla violazione del sito Web](/pages/web_cloud/web_hosting/cms_what_to_do_if_your_site_is_hacked).
 
-Per saperne di più, consulta i dettagli delle nostre [soluzioni di hosting](https://www.ovhcloud.com/it/web-hosting/) e [la nostra guida](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
+### Database / SQL
 
-#### Connessioni dal server esterno
+#### Connessioni simultanee al database
 
-- Per ragioni di sicurezza, non è consentita la connessione al database di un hosting Web OVHcloud da un server esterno, sia che si tratti di database SQL condivisi oppure Web Cloud Databases. Solo i server OVHcloud Web Hosting possono connettersi ai server di database. Qualsiasi altro tipo di connessione genererà il seguente errore: 
+Sui piani di hosting Web (database condivisi), esiste un limite di 30 connessioni simultanee per database (questo limite passa a 200 se utilizzi una soluzione [Web Cloud Databases](https://www.ovhcloud.com/it/web-cloud/databases/). Consulta il [dettaglio delle nostre offerte di hosting Web](https://www.ovhcloud.com/it/web-hosting/) per conoscere le opzioni disponibili in ogni offerta di hosting Web.
+
+È inoltre possibile ordinare soluzioni [Web Cloud Databases](https://www.ovhcloud.com/it/web-cloud/databases/) aggiuntive, che dispongono di opzioni di personalizzazione:
+
+- *max_connections*: 100 di default, con possibilità di passare a 200;
+- *max_user_connections*: 50 di default, con possibilità di passare a 200.
+
+Per saperne di più, consulta i dettagli delle nostre [offerte di hosting Web](https://www.ovhcloud.com/it/web-hosting/) e la nostra guida "[Iniziare a utilizzare il servizio Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)".
+
+#### Connessioni da un server esterno
+
+Per ragioni di sicurezza, non è consentita la connessione a un database incluso in un piano di hosting Web OVHcloud da un server esterno. Solo i server che contengono gli hosting Web OVHcloud possono connettersi ai server di database condivisi. Qualsiasi altra connessione provocherà il seguente errore:
 
 ```bash
 Warning: MySQL Connection Failed: Host ip.your.connection is not allowed to connect ...
 ```
 
-#### Variabili di server SQL condiviso
+Solo i server di database [Web Cloud Databases](https://www.ovhcloud.com/it/web-cloud/databases/) permettono a server esterni di connettersi. previa autorizzazione dell’indirizzo IP del tuo server esterno sul tuo database server. Se necessario, consulta la nostra guida "[Iniziare a utilizzare il servizio Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)".
 
-- Accedi all’interfaccia PhpMyAdmin e inserisci**show variables** per verificare le variabili del server MySQL.
+#### Variabili server SQL condiviso
 
-- La versione MySQL non può essere modificata per i database integrati all’hosting Web.
+Per conoscerne le variabili, accedi al database tramite l’interfaccia *PhpMyAdmin*. Una volta connesso, clicca sulla scheda `SQL` nella parte alta della pagina e poi inserisci la seguente query nel modulo centrale per verificare le variabili del server MySQL:
 
-Per maggiori informazioni sulla gestione dei database, consulta la guida [Creare un database su un hosting Web](/pages/web_cloud/web_hosting/sql_create_database).
+```bash
+SHOW VARIABLES;
+``` 
+
+> [!primary]
+>
+> La versione MySQL non può essere modificata per i database integrati all'hosting Web.
+>
+
+Per maggiori informazioni sulla gestione dei database e la connessione all'interfaccia *phpMyAdmin*, consulta la guida "[Creare un database sul proprio hosting Web](/pages/web_cloud/web_hosting/sql_create_database)".
 
 ### PHP
 
-- Ti consigliamo di consultare le nostre [soluzioni di hosting Web](https://www.ovhcloud.com/it/web-hosting/uc-programming-language/) per assicurarti che il piano che vuoi acquistare sia adatto alle tue esigenze. 
+Ti consigliamo di consultare le nostre [offerte di hosting Web](https://www.ovhcloud.com/it/web-hosting/uc-programming-language/) per assicurarti che l’offerta di hosting Web che vuoi ordinare si adatti alle tue necessità.
 
 > [!warning]
 >
-> La modifica del file **php.ini** non è disponibile sulle offerte di hosting condiviso. La configurazione PHP è globale per l'intera infrastruttura condivisa.
+> La modifica del file **php.ini** non è disponibile sulle offerte di hosting Web. Questo perché la configurazione PHP è globale all'intera infrastruttura condivisa.
+>
+> Puoi modificare alcuni elementi come il *programma d’esecuzione PHP*, l’*ambiente di esecuzione* o la *versione di PHP* del tuo hosting Web.
+>
+> Trovi maggiori dettagli su questo argomento nella nostra guida "[Hosting Web: ambiente, versione PHP, ".ovhconfig"](/pages/web_cloud/web_hosting/configure_your_web_hosting)"
 >
 
-- È possibile verificare i dettagli della configurazione del tuo hosting Web. Per farlo, consulta la rubrica \[”Informazioni tecniche del tuo hosting Web”\](/pages/web_cloud/web_hosting/hosting_technical_specificities#informazioni-tecniche-del-tuo-hosting-web) in fondo a questa guida. 
-
-- È possibile modificare la versione PHP del tuo hosting Web dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)(“**Configurazione**”) oppure modificando il file .ovhconfig.  In questo ultimo caso sono possibili anche configurazioni miste. Per maggiori dettagli, consulta le nostre guide:
-
-[Configurare il file .ovhconfig di un hosting Web](/pages/web_cloud/web_hosting/configure_your_web_hosting)  
-[Modificare la configurazione di un hosting Web](/pages/web_cloud/web_hosting/configure_your_web_hosting)
-
-> [!primary]
-> Il file .ovhconfig è operativo nella cartella radice dell’hosting Web oppure nella sottodirectory di primo livello (di solito _/www/_). L’unico modo per sostituire i parametri principali del file .ovhconfig consiste nell’utilizzare un altro file .ovhconfig in una sottocartella.
-> Posizionare questo file più in profondità nella struttura della directory non produrrà alcun effetto (ad es. /www/test_, _/www/test/test2/_). Assicurati che il file possa essere letto dal tuo CMS (CHMOD 604 o 644).
+È inoltre possibile verificare i dettagli della configurazione dell’hosting Web. Per farlo, consulta la sezione "[Informazioni tecniche del tuo hosting Web](#technical-infos-web-hosting)" in fondo a questa guida.
 
 #### PHP-FPM
 
-PHP-FPM è attivo di default sull’infrastruttura di un hosting Web per accelerare le risposte PHP. Attenzione: potrebbe non essere attivo se utilizzi un vecchio piano di hosting Web che non è stato aggiornato (servizi acquistati prima del 2014).
+PHP-FPM è attivo di default sull’infrastruttura di un hosting Web per accelerare le risposte PHP. Ti ricordiamo che potrebbe non essere attivo se utilizzi una vecchia offerta di hosting Web che non è stata aggiornata (servizi ordinati prima del 2014).
 
-*Senza PHP-FPM, certe variabili possono cambiare:*
+*Alcune variabili sono diverse senza PHP-FPM:*
 
 |Variabile|Senza PHP-FPM|Con PHP-FPM|
 |---|---|---|
@@ -109,84 +129,112 @@ PHP-FPM è attivo di default sull’infrastruttura di un hosting Web per acceler
 
 #### PHP scripts
 
-Una volta connesso al tuo hosting Web in SSH, il traffico sarà bloccato per ragioni di sicurezza. Quindi ti consigliamo di utilizzare gli script PHP. Per maggiori informazioni, consulta la [guida SSH](/pages/web_cloud/web_hosting/ssh_on_webhosting). Per l’esecuzione dei comandi, consulta la documentazione ufficiale[PHP manuale](https://www.php.net/manual/fr/function.system.php).
+Una volta connesso al tuo hosting Web in SSH, il traffico sarà bloccato per ragioni di sicurezza. Ti consigliamo di utilizzare gli script PHP. Per maggiori informazioni, consulta la nostra [guida SSH](/pages/web_cloud/web_hosting/ssh_on_webhosting). Per l’esecuzione dei comandi, consulta la "[PHP manuale](https://www.php.net/manual/en/function.system.php)".
 
-Ad esempio, è possibile utilizzare la funzione *gethostbyaddr()* per recuperare il nome dell’host:
+Ad esempio, è possibile utilizzare la funzione *gethostbyaddr()* per recuperare il nome host:
 
 ```php
 1. <?php
 2. echo gethostbyaddr($_SERVER["REMOTE_ADDR"]);
-3
+3. ?>
 ```
 
 > [!warning]
-> OVHcloud non forza gli aggiornamenti PHP. I clienti sono i soli responsabili della sicurezza dei propri servizi e dell’aggiornamento regolare dei software installati.
+>
+> OVHcloud non cambia automaticamente la versione di PHP del tuo hosting quando ne viene implementata una nuova. L'utente è responsabile della sicurezza e dell'aggiornamento regolare dei contenuti dei servizi.
 >
 
-#### Informazioni tecniche sul tuo hosting Web
+### Informazioni tecniche dell’hosting Web <a name="technical-infos-web-hosting"></a>
 
-Consulta le rispettive pagine informative per verificare le librerie disponibili per il tuo piano di hosting Web.
+Accedi alla pagina <https://webhosting-infos.hosting.ovh.net> e verifica le librerie, i linguaggi e le versioni disponibili per il tuo hosting Web
 
-Ulteriori informazioni relative al tuo cluster sono disponibili a questo link: <https://webhosting-infos.hosting.ovh.net>
-
-Sostituisci il cluster indicato nell’URL con il tuo. Per sapere su quale cluster di hosting Web si trova il tuo servizio, accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} e seleziona `Web Cloud`{.action}. Clicca nella sezione `Hosting`{.action} e seleziona il tuo servizio. A questo punto clicca sulla scheda `FTP - SSH`{.action}. Il numero del cluster è indicato nell’URL di accesso FTP al tuo hosting.
-
-Le specifiche tecniche della soluzione di hosting Cloud Web sono disponibili a questo link: <https://cloudweb-infos.hosting.ovh.net/>
+Per conoscere le specifiche tecniche del servizio Cloud Web, clicca su questa pagina: <https://cloudweb-infos.hosting.ovh.net/>.
 
 ### Informazioni sui backup automatici <a name="backup"></a>
 
 > [!warning]
 >
-> OVHcloud si impegna a fornire un servizio di backup automatico dei dati e la loro messa a disposizione. E' tuttavia sua responsabilità attuare la sua politica di ripristino e individuare i punti di ripristino nei momenti che ritiene opportuni.
+> OVHcloud fornisce un servizio di backup automatico dei dati e la messa a disposizione di questi backup. *non contrattuale* ed è presente in aggiunta ai tuoi servizi. Effettivamente, è vostra responsabilità impostare la vostra propria politica di ripristino e determinare i punti di ripristino nel momento che ritenete opportuno.
+>
 
-##### spazio disco
+#### Spazio disco / spazio di archiviazione FTP
 
-Tutte le nostre offerte di hosting web condiviso situate:
+Tutte le nostre offerte di hosting Web condiviso situate:
 
-- a Gravelines (GRA), in Francia, dispongono di backup automatici a J-1 / J-2 / J-3 / J-7 / J-14. Questi backup sono salvati anche nel datacenter di Roubaix (RBX), in Francia.
+- a Gravelines (GRA), in Francia, dispongono di backup automatici al G-1 / G-2 / G-3 / G-7 / G-14. Questi backup sono salvati anche nel datacenter di Roubaix (RBX), in Francia;
 
-- a Beauharnois (BHS), Canada, dispongono di backup automatici a J-1 / J-2 / J-3 / J-7 / J-14. Questi backup sono salvati anche nel datacenter di Beauharnois (BHS), in Canada.
+- a Beauharnois (BHS), Canada, dispongono di backup automatici al G-1 / G-2 / G-3 / G-7 / G-14. Questi backup sono salvati anche nel datacenter di Beauharnois (BHS), in Canada.
 
-Questa guida ti mostra come [accedere allo spazio di storage](/pages/web_cloud/web_hosting/ftp_connection) o [ripristinare lo spazio di storage di un hosting Web](/pages/web_cloud/web_hosting/ftp_save_and_backup) nelle nostre guide.
+Questa guida ti mostra come [accedere allo spazio di storage FTP del tuo hosting Web](/pages/web_cloud/web_hosting/ftp_connection) o [ripristinare lo spazio di storage FTP del tuo hosting Web](/pages/web_cloud/web_hosting/ftp_save_and_backup) nelle nostre guide.
 
 #### Database / SQL
 
-Per i database condivisi (inclusi nella tua offerta di hosting Web) o i server di database (Web Cloud Databases), proposti su Gravelines (GRA), in Francia e Beauharnois (BHS), in Canada, il backup dei database è effettuato quotidianamente. Questi backup sono accessibili via [Spazio Cliente OVHcloud](	https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} o tramite le [API OVHcloud](https://api.ovh.com/). I backup sono salvati anche su un'altra infrastruttura. Questi dati sono replicati in 3 punti distinti in Francia: Roubaix (RBX), Strasburgo (SBG) e Gravelines (GRA). La politica di mantenimento dei backup è di 30 giorni.
+> [!warning]
+>
+> OVHcloud fornisce un servizio di backup automatico dei dati e la messa a disposizione di questi backup. *non contrattuale* ed è presente in aggiunta ai tuoi servizi. Effettivamente, è vostra responsabilità impostare la vostra propria politica di ripristino e determinare i punti di ripristino nel momento che ritenete opportuno.
+>
 
-Questa guida ti mostra come [Recuperare il backup del database di un hosting Web](/pages/web_cloud/web_hosting/sql_database_export) nella nostra guida.
+Per i database condivisi (inclusi nella tua offerta di hosting Web) o i server di database (Web Cloud Databases), proposti su Gravelines (GRA), in Francia e Beauharnois (BHS), in Canada, il backup dei database è fatto tutti i giorni. Questi backup sono accessibili (dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} o tramite le [API OVHcloud](https://api.ovh.com/). I backup vengono inoltre archiviati su un'altra infrastruttura. Questi dati vengono replicati in 3 localizzazioni differenti in Francia: Roubaix(RBX), Strasburgo(SBG) e Gravelines(GRA). La politica di conservazione dei backup è di 30 giorni.
 
-#### Email
+Questa guida ti mostra come [Recuperare il backup del database di un hosting Web](/pages/web_cloud/web_hosting/sql_database_export) nella nostra documentazione.
 
-Per gli account email condivisi (inclusi nella tua offerta di hosting Web), viene effettuato un backup automatico giornaliero e copiato in un altro datacenter.
+#### E-mail
 
-## Politica di utilizzo dei cookies
+> [!warning]
+>
+> OVHcloud fornisce un servizio di backup automatico dei dati. *non contrattuale* ed è presente in aggiunta ai tuoi servizi. Effettivamente, è vostra responsabilità impostare la vostra propria politica di ripristino e determinare i punti di ripristino nel momento che ritenete opportuno.
+>
 
-**Cookies e tracciatori utilizzati nell’ambito della fornitura del servizio di hosting condiviso.**
+Per gli account email condivisi (inclusi nella soluzione di hosting Web scelta), viene effettuato un backup automatico giornaliero, che viene copiato in un altro datacenter.
 
-Per garantire il buon funzionamento dei siti internet ospitati nell’ambito del servizio di hosting condiviso, il cookie “SERVER ID” è collocato sui terminali dei visitatori del sito. Il cookie « SERVER ID » garantisce un servizio di ripartizione del carico del traffico in entrata tra le diverse infrastrutture utilizzate per l’hosting del sito Internet (OVHcloud Load Balancer). Inoltre, consente all’utente di utilizzare lo stesso server host per tutta la durata della sessione. Questo servizio permette di mantenere e preservare la coerenza del percorso dell’utente.
+### Politica di utilizzo dei cookies
 
-Il cookie SERVER ID è un file di testo salvato nel terminale dell’utente che indica l’istanza (server) dell’infrastruttura con cui l’utente interagisce. Il cookie è anonimo, nel senso che non viene utilizzato nessun dato personale dell’utente.
+**Cookies e tracciatori utilizzati nell'ambito della fornitura del servizio di hosting condiviso.**
 
-Il cookie “SERVER ID” permane sul terminale dell’utente per una durata inferiore a 24 ore.
+Per garantire il buon funzionamento dei siti Internet ospitati nell’ambito del servizio di hosting Web condiviso, il cookie "SERVER ID" è collocato sui terminali dei visitatori del sito. Il cookie "SERVER ID" garantisce un servizio di ripartizione del carico del traffico in entrata tra le diverse infrastrutture utilizzate per l’hosting del sito Internet (OVHcloud Load Balancer). che consente all’utente di utilizzare lo stesso server host per tutta la durata della sessione. 
 
-Poiché si tratta di un cookie necessario al funzionamento del servizio di hosting condiviso e anonimo, non prevede la raccolta preventiva del consenso al trattamento dei dati da parte del visitatore del sito internet, ai sensi del Regolamento Generale sulla Protezione dei Dati (GDPR). 
+> [!success]
+>
+> Nel linguaggio informatico, si definisce "sessione" un periodo di tempo durante il quale un dispositivo (computer, smartphone, ecc.) interagisce con un server.
+>
 
-## Informazioni sugli strumenti di monitoraggio
+In questo modo viene mantenuta e preservata la coerenza del percorso dell’utente.
+
+Il cookie "SERVER ID" è un file di testo salvato nel terminale dell’utente che indica l’istanza (server) dell’infrastruttura con cui l’utente interagisce. Il cookie è anonimo, nel senso che non viene utilizzato alcun dato personale dell’utente.
+
+Il cookie "SERVER ID" è collocato sul terminale dell’utente per una durata inferiore a 24 ore.
+
+Per quanto riguarda un cookie:
+
+ - 1: necessario al funzionamento del servizio di hosting web condiviso;
+ - 2: anonimo.
+
+Non è interessato dalla raccolta preventiva del consenso del visitatore del sito internet ai sensi del Regolamento Generale sulla Protezione dei Dati (GDPR).
+
+### Informazioni sugli strumenti di statistica
 
 **OVHcloud Web Statistics**
 
-OVHcloud mette a disposizione del cliente le statistiche sugli accessi e sull’analisi delle visite al/i sito/i internet ospitato/i nell’ambito di un servizio di hosting condiviso (d’ora in poi “OVHcloud Web Statistics”). OVHcloud Web Statistics consente, in particolare, di individuare la zona geografica degli utenti dei siti internet, le caratteristiche dei loro terminali, le pagine visitate e i codici HTTP.  OVHcloud Web Statistics è attivo, di default, nell’ambito del servizio di hosting condiviso e può’ essere disattivato su semplice richiesta da parte del cliente, contattando il supporto tecnico. Per fornire “OVHcloud Web Statistics”, è necessario il trattamento dei dati personali da parte di OVHcloud.
+OVHcloud mette a disposizione del cliente le statistiche sugli accessi e sull'analisi delle visite al/i sito/i internet ospitato/i nell'ambito del servizio di hosting condiviso. (d’ora in poi "OVHcloud Web Statistics"). "OVHcloud Web Statistics" permette, in particolare, di identificare la zona geografica degli utenti dei siti internet, le caratteristiche dei loro terminali, le pagine visitate e i codici HTTP. "OVHcloud Web Statistics" è attivo, di default, nell’ambito del servizio di un hosting condiviso e può essere disattivato su richiesta del cliente, contattando il supporto tecnico. Per fornire "OVHcloud Web Statistics", è necessario il trattamento dei dati personali da parte di OVHcloud.
 
-I report di OVHCloud Web Statistics si basano su dati di traffico anonimizzati, come l’indirizzo IP e i log dei visitatori dei siti internet ospitati nell’ambito del servizio di hosting condiviso, l’URL della richiesta, la durata della richiesta e lo “useragent”.
+I report "OVHcloud Web Statistics" si basano su dati di traffico anonimizzati, come l’indirizzo IP e i log degli utenti dei siti internet ospitati nell’ambito di un piano di hosting condiviso, l’URL della richiesta, la durata della richiesta e lo "useragent".
 
-Per poter essere utilizzati nell’ambito del servizio OVHcloud Web Statistics, i dati citati precedentemente sono anonimizzati e aggregati mediante algoritmi operati da OVHcloud all’interno delle proprie infrastrutture. In particolare, l’indirizzo IP del visitatore presente nei dati di traffico viene estratto in forma anonima, prima di essere trattato e analizzato per determinarne la geolocalizzazione (unicamente su scala regionale). Pertanto, nell’ambito del servizio OVHcloud Web Statistics, non viene conservato alcun dato personale che consenta l’identificazione, diretta o indiretta, dei visitatori sopra citati.  
+Per poter essere utilizzati nell’ambito di "OVHcloud Web Statistics", i dati citati precedentemente sono anonimizzati e aggregati mediante algoritmi operati da OVHcloud all’interno delle proprie infrastrutture. In particolare, l’indirizzo IP del visitatore presente nei dati di traffico viene estratto in forma anonima, prima di essere trattato e analizzato per determinarne la geolocalizzazione (limitata a un livello regionale). Pertanto, nell’"OVHcloud Web Statistics" non viene conservato alcun dato personale che consenta l’identificazione, diretta o indiretta, dei visitatori sopra citati.  
 
-## Per saperne di più
+## Per saperne di più <a name="go-further"></a>
 
-[Accedere allo spazio di storage di un hosting Web](/pages/web_cloud/web_hosting/ftp_connection)
+[Connettersi allo spazio di storage FTP del proprio hosting Web](/pages/web_cloud/web_hosting/ftp_connection)
 
-[Attivare HTTPS su un sito Internet tramite il certificato SSL](/pages/web_cloud/web_hosting/ssl-activate-https-website)
+[Attivare il protocollo HTTPS su un sito Internet tramite SSL](/pages/web_cloud/web_hosting/ssl-activate-https-website)
 
-[Ottimizza le performance del tuo sito](/pages/web_cloud/web_hosting/optimise_your_website_performance)
+[Ottimizzazione delle prestazioni del sito](/pages/web_cloud/web_hosting/optimise_your_website_performance)
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+[Ripristinare lo spazio di storage FTP di un hosting Web](/pages/web_cloud/web_hosting/ftp_save_and_backup)
+
+[Recuperare il backup del database di un hosting Web](/pages/web_cloud/web_hosting/sql_database_export)
+
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
+
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
+
+Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.

@@ -140,7 +140,7 @@ Par exemple, vous pouvez utiliser la fonction *gethostbyaddr()* pour récupérer
 > OVHcloud ne change pas automatiquement la version de PHP de votre hébergement lorsqu'une nouvelle version est implémentée. Vous êtes maître de la sécurité du contenu services et de la mise à jour régulière de ces derniers.
 >
 
-### Informations techniques de votre hébergement Web <a name="#technical-infos-web-hosting"></a>
+### Informations techniques de votre hébergement Web <a name="technical-infos-web-hosting"></a>
 
 Retrouvez et vérifiez les librairies, langages et versions disponibles pour votre offre d'hébergement web depuis cette page : <https://webhosting-infos.hosting.ovh.net>
 
