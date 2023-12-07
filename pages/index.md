@@ -1000,6 +1000,7 @@
                 + [Editing an OVHcloud DNS zone](web_cloud/domains/dns_zone_edit)
                 + [Creating an OVHcloud DNS zone for a domain name](web_cloud/domains/dns_zone_create)
                 + [Editing the DNS servers for an OVHcloud domain name](web_cloud/domains/dns_server_general_information)
+                + [How to view the history of your DNS records](web_cloud/domains/dns_zone_history)
                 + [Configuring a dynamic DNS for a domain name](web_cloud/domains/dns_dynhost)
                 + [Customising the DNS servers for an OVHcloud domain name](web_cloud/domains/glue_registry)
                 + [Adding an SPF record to the configuration of your domain name](web_cloud/domains/dns_zone_spf)

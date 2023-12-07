@@ -1,5 +1,5 @@
 ---
-title: "Consultez l’historique de vos enregistrements DNS"
+title: "Consulter l’historique de vos enregistrements DNS"
 excerpt: "Découvrez comment consulter et manipuler vos enregistrements DNS"
 updated: 2023-12-07
 ---
@@ -7,8 +7,8 @@ updated: 2023-12-07
 ## Objectif
 
 Le **D**omain **N**ame **S**ystem (DNS) permet de faire le lien entre le nom de domaine de votre site web et son adresse IP. Lorsque vous tapez « mydomain.ovh » dans la barre URL de votre navigateur, le serveur DNS associé traduit ce nom de domaine en adresse IP, en utilisant les informations contenues dans la zone DNS correspondante.
-Les serveurs DNS sont essentiels pour le bon fonctionnement de vos adresses e-mails, sites web ou appels API. Ainsi, toute modification des champs est risquée car elle peut entrainer une indisponibilité du service.
-Désormais, la gestion des DNS est facilitée grâce à l’historique de vos zones DNS.  
+Les serveurs DNS sont essentiels pour le bon fonctionnement de vos adresses e-mail, sites web ou appels API. Ainsi, toute modification des champs est risquée car elle peut entrainer une indisponibilité du service.
+Désormais, la gestion des DNS est facilitée grâce à l’historique de vos zones DNS.
 
 **Découvrez comment consulter et manipuler l'historique de vos zones DNS.**
 
@@ -21,7 +21,10 @@ Désormais, la gestion des DNS est facilitée grâce à l’historique de vos zo
 
 Dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), sélectionnez `Web Cloud`{.action} dans le menu en haut de l'interface. Dans la colonne de gauche, dirigez-vous dans l’onglet `Noms de domaine`, puis sélectionnez le nom de domaine lié à la zone DNS que vous souhaitez manipuler.
 
-Le tableau qui apparaît contient la liste des enregistrements DNS liés à votre nom de domaine chez OVHcloud. Sous ce tableau plusieurs boutons vous permettent d’effectuer des actions sur vos zones DNS. Cliquez sur `Voir l’historique de ma zone DNS`{.action}. Sur la nouvelle page qui s'affiche, un tableau apparaît contenant l'historique de vos zones DNS, classé de la date la plus récente à la plus ancienne. En tête de ce tableau se trouve la version actuelle de votre zone DNS. Sur cette page, il vous est possible d’effectuer les actions suivantes :
+Le tableau qui apparaît contient la liste des enregistrements DNS liés à votre nom de domaine chez OVHcloud. Sous ce tableau, plusieurs boutons vous permettent d’effectuer des actions sur vos zones DNS. Cliquez sur `Voir l’historique de ma zone DNS`{.action}. 
+
+Sur la nouvelle page qui s'affiche, un tableau apparaît contenant l'historique de vos zones DNS, classé de la date la plus récente à la plus ancienne. En tête de ce tableau se trouve la version actuelle de votre zone DNS. Sur cette page, il vous est possible d’effectuer les actions suivantes :
+
 - Visualiser une zone DNS
 - Télécharger une zone DNS
 - Restaurer une zone DNS
@@ -37,7 +40,7 @@ Les données de la zone DNS concernée s’affichent.
 
 ![Détail d'une zone DNS](images/details_dns_zone.png){.thumbnail}
 
-Cliquez sur `fermer`{.action} pour revenir à la page principale « Historique de la zone DNS ».
+Cliquez sur `Fermer`{.action} pour revenir à la page principale « Historique de la zone DNS ».
 
 ### Télécharger une zone DNS
 
@@ -45,7 +48,7 @@ Pour télécharger la zone DNS de votre choix, identifiez la ligne correspondant
 
 ![Télécharger une zone DNS](images/download_dns_zone.png){.thumbnail}
 
-La zone DNS se télécharge en format .txt.
+La zone DNS se télécharge au format .txt.
 
 ### Restaurer une zone DNS
 
@@ -58,20 +61,24 @@ La fenêtre suivante s’affiche.
 ![Confirmation restauration zone DNS](images/confirmation_restore_dns_zone.png){.thumbnail}
 
 Vérifiez que la date indiquée dans le message correspond à la zone DNS que vous voulez restaurer. Comme la bannière jaune l’indique, n’oubliez pas que la zone DNS actuelle (présente tout en haut dans la liste de l’historique des zones DNS) sera supprimée et remplacée par la zone DNS que vous souhaitez restaurer.
-Cliquez sur `Restaurer`{.action} pour confirmer la restauration, ou sur `Annuler`{.action} pour annuler.
+
+Cliquez sur `Restaurer`{.action} pour confirmer la restauration ou sur `Annuler`{.action}.
 
 ### Comparer deux zones DNS
 
-Il est possible de comparer le contenu de deux zones DNS. Dans le tableau contenant l’historique de vos zones DNS, identifiez les deux lignes correspondant aux deux zones DNS que vous voulez restaurer (pensez à bien vérifier la date à gauche de chaque ligne), puis sélectionnez-les. Pour comparer ces deux versions de zone DNS, cliquez en haut à gauche sur `Comparer les versions`{.action}.
+Il est possible de comparer le contenu de deux zones DNS. Dans le tableau contenant l’historique de vos zones DNS, identifiez les deux lignes correspondant aux deux zones DNS que vous voulez restaurer (pensez à bien vérifier la date à gauche de chaque ligne) puis sélectionnez-les. Pour comparer ces deux versions de zone DNS, cliquez en haut à gauche sur `Comparer les versions`{.action}.
 
 ![Comparer deux zones DNS](images/compare_two_dns_zone.png){.thumbnail}
 
-Une nouvelle page apparaît, affichant le contenu des deux zones DNS. Au-dessus de chaque version s’affiche la date correspondante. Par défaut, la version de la zone DNS la plus récente se trouve à gauche, et la plus ancienne à droite. Un code couleur vous aide à identifier les différences de contenu. À gauche, le contenu surligné en rouge a été modifié ou supprimé sur la version plus récente. À droite, le contenu surligné en vert a été modifié ou ajouté par rapport à la version plus ancienne. Vous avez également la possibilité de mettre à jour les dates des versions que vous souhaitez comparer grâce aux deux listes déroulantes.
+Une nouvelle page apparaît, affichant le contenu des deux zones DNS. Au-dessus de chaque version s’affiche la date correspondante. Par défaut, la version de la zone DNS la plus récente se trouve à gauche et la plus ancienne à droite. Un code couleur vous aide à identifier les différences de contenu.<br>
+À gauche, le contenu surligné en rouge a été modifié ou supprimé sur la version plus récente.<br>
+À droite, le contenu surligné en vert a été modifié ou ajouté par rapport à la version plus ancienne. 
+
+Vous avez également la possibilité de mettre à jour les dates des versions que vous souhaitez comparer grâce aux deux listes déroulantes.
 
 ![Détails comparaison deux zones DNS](images/compare_DNS_zone_details.png){.thumbnail}
 
-Grâce à ce guide, vous êtes désormais capable de comparer deux zones DNS, mais également de visualiser, télécharger, restaurer et supprimer une zone DNS. Fini le travail manuel et la crainte d’une indisponibilité due aux DNS.
-
+Grâce à ce guide, vous êtes désormais capable de comparer deux zones DNS, mais également de visualiser, télécharger, restaurer et supprimer une zone DNS.
 
 ## Aller plus loin
 
