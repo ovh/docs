@@ -15,6 +15,8 @@ Vous pouvez, par exemple, y préciser :
 - Des informations liées à la sécurité / l'authentification de vos services (hébergement web, serveur web, serveur e-mail, etc.)  associés à votre nom de domaine (enregistrements DNS de type *SPF*, *DKIM*, *DMARC*, etc.).
 
 N'hésitez pas à consulter notre documentation sur [les enregistrements DNS et l'édition d'une zone DNS](/pages/web_cloud/domains/dns_zone_edit) depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) si vous souhaitez en apprendre plus sur le sujet.
+Pour diverses raisons, vous pouvez être amenés à appliquer une ancienne configuration DNS à votre nom de domaine.
+
 Désormais, la gestion des DNS est facilitée grâce à l’historique de vos zones DNS.
 
 **Découvrez comment consulter, comparer, télécharger et restaurer vos sauvegardes de zone DNS**
