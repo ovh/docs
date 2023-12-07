@@ -1,5 +1,5 @@
 ---
-title: "Consulter l’historique de vos enregistrements DNS"
+title: "Gérer l’historique d'une zone DNS"
 excerpt: "Découvrez comment consulter et manipuler vos enregistrements DNS"
 updated: 2023-12-07
 ---
