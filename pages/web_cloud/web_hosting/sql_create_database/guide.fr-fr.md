@@ -28,7 +28,7 @@ Le tableau de cette section contient toutes les bases de données créées avec 
 
 Dans le tableau, les bases de données peuvent disposer de plusieurs statuts différents :
 
-- **Incluse** : indique que la base de données est comprise dans votre offre d’hébergement web. Elle n’engendre pas de surcoûts supplémentaires.</br></br>
+- **Incluse** : indique que la base de données est comprise dans votre offre d’hébergement web. Elle n’engendre pas de surcoût supplémentaire.</br></br>
 - **Optionnelle** : indique que la base de données a été souscrite en complément des bases de données incluses avec votre hébergement web. Vous payez un complément pour disposer de cette base de données supplémentaire sur votre hébergement web.</br></br>
 - **Incluse - retirée de la vente** : indique que la base de données incluse va bientôt être retirée de la vente et devenir obsolète. </br>Nous vous recommandons, *avant* que la base de données ne devienne obsolète, de récupérer son contenu pour le placer dans une nouvelle base de données plus récente (dont l'obsolescence n'est pas encore programmée).</br></br>
 - **Optionnelle - retirée de la vente** : indique que la base de données souscrite en complément sur votre hébergement web va bientôt être retirée de la vente et devenir obsolète. </br>Nous vous recommandons, *avant* que la base de données ne devienne obsolète, de récupérer son contenu pour le placer dans une nouvelle base de données plus récente (dont l'obsolescence n'est pas encore programmée).
