@@ -64,7 +64,7 @@ Pour télécharger la zone DNS de votre choix, identifiez la ligne correspondant
 
 La zone DNS se télécharge au format .txt.
 
-### Restaurer une zone DNS
+### Restaurer une zone DNS <a name="restore"></a>
 
 Si vous souhaitez remplacer votre zone DNS actuelle par une autre, il vous suffit de restaurer une zone DNS plus ancienne. Dans le tableau contenant l’historique de vos zones DNS, identifiez la ligne correspondant à la zone DNS que vous voulez restaurer (pensez à bien vérifier la date à gauche de la ligne) puis cliquez sur l'icône présente dans la colonne `Restaurer`{.action}.
 
