@@ -29,7 +29,9 @@ Désormais, la gestion des DNS est facilitée grâce à l’historique de vos zo
 
 ## En pratique
 
-Dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), sélectionnez `Web Cloud`{.action} dans le menu en haut de l'interface. Dans la colonne de gauche, dirigez-vous dans l’onglet `Noms de domaine`, puis sélectionnez le nom de domaine lié à la zone DNS que vous souhaitez manipuler.
+Pour accéder à cette fonctionnalité, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) puis rendez-vous dans la partie `Web Cloud`{.action} sur la partie haute de l'interface. Dans la colonne de gauche, dirigez-vous dans l’onglet `Noms de domaine`{.action}, puis sélectionnez le nom de domaine lié à la zone DNS que vous souhaitez manipuler.
+
+Sur la page qui s'affiche et si vous n'êtes pas déjà redirigé dans cet onglet, cliquez sur l'onglet `Zone DNS`{.action}.
 
 Le tableau qui apparaît contient la liste des enregistrements DNS liés à votre nom de domaine chez OVHcloud. Sous ce tableau, plusieurs boutons vous permettent d’effectuer des actions sur vos zones DNS. Cliquez sur `Voir l’historique de ma zone DNS`{.action}. 
 
