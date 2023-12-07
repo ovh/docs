@@ -119,7 +119,7 @@ Je nach verwendeter Software muss diese Verbindung gegebenenfalls manuell oder �
 
 > [!primary]
 >
-> Auf die zu Ihrem Webhosting gehörenden Datenbanken kann nur über eine direkt auf Ihrem Webhosting installierte Anwendung oder ein Skript oder über das phpMyAdmin-Interface zugegriffen werden.
+> Die im Webhosting inkludierten Datenbanken sind nur erreichbar über direkt auf Ihrem Webhosting installierte Anwendungen oder Skripte, oder über das *phpMyAdmin*-Interface.
 >
 
 #### Auf das phpMyAdmin-Interface zugreifen
