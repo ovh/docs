@@ -23,6 +23,7 @@ Désormais, la gestion des DNS est facilitée grâce à l’historique de vos zo
 
 ## Prérequis
 
+- Disposer d'une zone DNS pour votre nom de domaine dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 - Être connecté à l’[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 - Disposer d'un accès à la gestion du nom de domaine concerné
 
