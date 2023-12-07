@@ -44,7 +44,7 @@ Sur la nouvelle page qui s'affiche, un tableau apparaît contenant l'historique 
 - Restaurer une zone DNS (#restore)
 - Comparer deux zones DNS (#compare)
 
-### Visualiser une zone DNS
+### Visualiser une zone DNS <a name="view"></a>
 
 Pour visualiser la zone DNS de votre choix, identifiez la ligne correspondante dans le tableau puis cliquez sur l'icône présente dans la colonne `Voir`{.action}.
 
