@@ -152,6 +152,7 @@
             + [Managing Hardware RAID](bare_metal_cloud/dedicated_servers/raid_hard)
             + [OVHcloud API & Partitioning](bare_metal_cloud/dedicated_servers/partitioning_ovh)
             + [Creating a Windows partition on a server with hardware RAID](bare_metal_cloud/dedicated_servers/windows_raid_hard)
+            + [Hardware upgrade on a High Grade or Scale dedicated server](bare_metal_cloud/dedicated_servers/hardware-upgrade-HG-Scale)
             + [Hot Swap - Raid Hard](bare_metal_cloud/dedicated_servers/hotswap_raid_hard)
             + [Hot-swapping a disk on a server with a software RAID configuration](bare_metal_cloud/dedicated_servers/hotswap_raid_soft)
             + [Configuring MegaRAID for RAID Level 0](bare_metal_cloud/dedicated_servers/megaraid_config)
