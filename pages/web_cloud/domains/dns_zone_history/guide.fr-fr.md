@@ -6,7 +6,13 @@ updated: 2023-12-07
 
 ## Objectif
 
-Le **D**omain **N**ame **S**ystem (DNS) permet de faire le lien entre le nom de domaine de votre site web et son adresse IP. Lorsque vous tapez « mydomain.ovh » dans la barre URL de votre navigateur, le serveur DNS associé traduit ce nom de domaine en adresse IP, en utilisant les informations contenues dans la zone DNS correspondante.
+La zone **D**omain **N**ame **S**ystem (**DNS**) d’un nom de domaine constitue le fichier de configuration de ce dernier. Elle se compose d’informations techniques, appelées *enregistrements DNS*. La zone DNS est, en quelque sorte, comme un centre d'aiguillage.
+
+Vous pouvez, par exemple, y préciser :
+
+- L'adresse IP (enregistrements DNS de type *A* et *AAAA*) de votre hébergement web pour afficher votre site web avec votre nom de domaine.
+- Les serveurs e-mail (enregistrements DNS de type *MX*) vers lesquels votre nom de domaine doit rediriger les e-mails qu'il reçoit. Cela vous permet de les consulter sur votre (vos) adresse(s) e-mail(s) personnalisée(s) avec votre nom de domaine.
+- Des informations liées à la sécurité / l'authentification de vos services (hébergement web, serveur web, serveur e-mail, etc.)  associés à votre nom de domaine (enregistrements DNS de type *SPF*, *DKIM*, *DMARC*, etc.).
 Les serveurs DNS sont essentiels pour le bon fonctionnement de vos adresses e-mail, sites web ou appels API. Ainsi, toute modification des champs est risquée car elle peut entrainer une indisponibilité du service.
 Désormais, la gestion des DNS est facilitée grâce à l’historique de vos zones DNS.
 
