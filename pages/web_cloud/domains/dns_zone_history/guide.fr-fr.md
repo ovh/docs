@@ -103,7 +103,7 @@ Grâce à ce guide, vous pouvez désormais comparer deux zones DNS, mais égalem
 
 [Se connecter à l'espace client OVHcloud](/pages/account_and_service_management/account_information/ovhcloud-account-login)
 
-[Créer une zone DNS chez OVHcloud](/pages/web_cloud/domains/dns_zone_create/)
+[Créer une zone DNS chez OVHcloud](/pages/web_cloud/domains/dns_zone_create)
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
 
