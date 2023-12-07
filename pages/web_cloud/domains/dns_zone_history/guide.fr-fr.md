@@ -41,7 +41,7 @@ Sur la nouvelle page qui s'affiche, un tableau apparaît contenant l'historique 
 
 - Visualiser une zone DNS (#view)
 - Télécharger une zone DNS (#download)
-- Restaurer une zone DNS
+- Restaurer une zone DNS (#restore)
 - Comparer deux zones DNS
 
 ### Visualiser une zone DNS
