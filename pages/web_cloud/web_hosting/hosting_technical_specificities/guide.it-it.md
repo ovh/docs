@@ -1,7 +1,7 @@
 ---
 title: "Specifiche tecniche degli hosting condivisi"
 excerpt: "Questa guida ti mostra le informazioni e le specifiche tecniche relative agli hosting Web"
-updated: 2023-11-29
+updated: 2023-12-07
 ---
 
 > [!primary]

@@ -1,7 +1,7 @@
 ---
 title: "Particularidades técnicas de los alojamientos compartidos"
 excerpt: "Descubra en esta guía diferentes informaciones y particularidades técnicas relativas a los alojamientos web"
-updated: 2023-11-29
+updated: 2023-12-07
 ---
 
 > [!primary]

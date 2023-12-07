@@ -1,7 +1,7 @@
 ---
 title: "Technical specifications of Web Hostings"
 excerpt: "Find out details about the technical capabilities of your Web Hosting plan"
-updated: 2023-11-29
+updated: 2023-12-07
 ---
 
 ## Objective
@@ -233,4 +233,4 @@ For specialised services (SEO, development, etc.), contact [OVHcloud partners](h
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-gb/support-levels/).
 
-Join our community of users on <https://community.ovh.com/en/>. 
+Join our community of users on <https://community.ovh.com/en/>.

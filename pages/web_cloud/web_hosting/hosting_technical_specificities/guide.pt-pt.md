@@ -1,7 +1,7 @@
 ---
 title: "Especificidades técnicas relacionadas com os alojamentos partilhados"
 excerpt: "Saiba neste guia diferentes informações e especificidades técnicas relacionadas com os alojamentos Web"
-updated: 2023-11-29
+updated: 2023-12-07
 ---
 
 > [!primary]

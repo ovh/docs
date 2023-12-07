@@ -1,7 +1,7 @@
 ---
 title: "Technische Eigenschaften von Webhostings"
 excerpt: Erfahren Sie hier verschiedene Informationen und technische Details zu Webhostings
-updated: 2023-11-29
+updated: 2023-12-07
 ---
 
 > [!primary]
