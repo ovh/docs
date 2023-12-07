@@ -85,7 +85,7 @@ Cliquez sur `Restaurer`{.action} pour confirmer la restauration ou sur `Annuler`
 
 ### Comparer deux zones DNS
 
-Il est possible de comparer le contenu de deux zones DNS. Dans le tableau contenant l’historique de vos zones DNS, identifiez les deux lignes correspondant aux deux zones DNS que vous voulez restaurer (pensez à bien vérifier la date à gauche de chaque ligne) puis sélectionnez-les. Pour comparer ces deux versions de zone DNS, cliquez en haut à gauche sur `Comparer les versions`{.action}.
+Vous pouvez comparer le contenu de deux zones DNS. Dans le tableau contenant l’historique de votre zone DNS, identifiez les deux lignes correspondant aux deux zones DNS que vous voulez comparer (vérifiez bien la date à gauche de chaque ligne) puis sélectionnez-les. Pour comparer ces deux versions de zone DNS, cliquez en haut à gauche sur `Comparer les versions`{.action}.
 
 ![Comparer deux zones DNS](images/compare_two_dns_zone.png){.thumbnail}
 
