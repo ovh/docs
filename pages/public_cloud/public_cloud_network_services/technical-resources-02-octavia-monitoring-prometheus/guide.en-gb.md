@@ -52,9 +52,9 @@ Load Balancer statistics queried via the Octavia API include metrics for all lis
 
 ### Monitoring with Prometheus
 
-Some provider drivers, such as the Octavia amphora driver, provide a prometheus endpoint. This allows you to configure your Prometheus infrastructure to collect metrics from Octavia Load Balancers.
+Some provider drivers, such as the Octavia amphora driver, provide a Prometheus endpoint. This allows you to configure your Prometheus infrastructure to collect metrics from Octavia Load Balancers.
 
-To add a Prometheus endpoint on an Octavia Load Balancer, create a listener with a special protocol `PROMETHEUS`. This will enable the endpoint as `/metrics` on the listener. The listener supports all of the features of an Octavia Load Balancer, such as allowed_cidrs, but does not support attaching pools or L7 policies. All metrics will be identified by the Octavia object ID (UUID) of the resources.
+To add a Prometheus endpoint on an Octavia Load Balancer, create a listener with a special protocol `PROMETHEUS`. This will enable the endpoint as `/metrics` on the listener. The listener supports all of the features of an Octavia Load Balancer, such as `allowed_cidrs`, but does not support attaching pools or L7 policies. All metrics will be identified by the Octavia object ID (UUID) of the resources.
 
 > [!primary]
 >
