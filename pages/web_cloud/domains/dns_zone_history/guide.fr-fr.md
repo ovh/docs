@@ -88,7 +88,7 @@ Vous avez également la possibilité de mettre à jour les dates des versions qu
 
 ![Détails comparaison deux zones DNS](images/compare_DNS_zone_details.png){.thumbnail}
 
-Grâce à ce guide, vous êtes désormais capable de comparer deux zones DNS, mais également de visualiser, télécharger, restaurer et supprimer une zone DNS.
+Grâce à ce guide, vous pouvez désormais comparer deux zones DNS, mais également visualiser, télécharger, restaurer et supprimer une zone DNS.
 
 ## Aller plus loin
 
