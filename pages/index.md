@@ -594,6 +594,7 @@
         + [Technical resources](public-cloud-network-technical-resources)
             + [Deploying an Octavia Load Balancer](public_cloud/public_cloud_network_services/technical-resources-01-using-lbaas-in-openstack-environment)
             + [Known limits](public_cloud/public_cloud_network_services/known-limits)
+            + [Octavia LoadBalancer monitoring with Prometheus](public_cloud/public_cloud_network_services/octavia-monitoring-prometheus)
         + [Tutorials](public-cloud-network-tutorials)
             + [Configuring a secure Load Balancer with Let's Encrypt](public_cloud/public_cloud_network_services/tutorials-01-secure-lb-letsencrypt)
     + [Public Cloud Databases](products/public-cloud-databases)
