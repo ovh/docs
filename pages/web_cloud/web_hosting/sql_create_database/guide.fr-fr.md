@@ -26,7 +26,7 @@ Le tableau de cette section contient toutes les bases de données créées avec 
 
 ![databasecreation](images/database-creation-step1.png){.thumbnail}
 
-Les bases de données peuvent disposer de plusieurs « statuts » différents :
+Dans le tableau, les bases de données peuvent disposer de plusieurs « statuts » différents :
 
 - **Incluse** : indique que la base de données est comprise dans votre offre d’hébergement web. Elle n’engendre pas de surcoûts supplémentaires.</br></br>
 - **Optionnelle** : indique que la base de données a été souscrite en complément des bases de données incluses avec votre hébergement web. Vous payez un complément pour disposer de cette base de données supplémentaire sur votre hébergement web.</br></br>
