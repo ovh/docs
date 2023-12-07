@@ -1,6 +1,6 @@
 ---
-title: 'Exporting a website'
-excerpt: 'Find out how to export an OVHcloud website'
+title: "Exporting a website"
+excerpt: "Find out how to export an OVHcloud website"
 updated: 2022-02-03
 ---
 

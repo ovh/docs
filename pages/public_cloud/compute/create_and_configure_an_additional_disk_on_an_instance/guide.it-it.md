@@ -430,4 +430,6 @@ Clicca su `Conferma`{.action} nella finestra che appare per avviare il processo.
 
 ## Per saperne di più
 
+[Aumenta la dimensione di un disco aggiuntivo](/pages/public_cloud/compute/increase_the_size_of_an_additional_disk)
+
 Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.

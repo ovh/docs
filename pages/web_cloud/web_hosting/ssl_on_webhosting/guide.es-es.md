@@ -1,7 +1,7 @@
 ---
 title: 'Gestionar un certificado SSL en un alojamiento web'
 excerpt: 'Operaciones relativas a los certificados SSL en los alojamientos web de OVHcloud'
-updated: 2022-08-01
+updated: 2023-11-29
 ---
 
 > [!primary]
@@ -140,5 +140,9 @@ En el cuadro de diálogo, confirme que desea eliminar el certificado haciendo cl
 ![Contratar un certificado SSL](images/manage-ssl-step9.png){.thumbnail}
 
 ## Más información
+
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
+
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es-es/support-levels/).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

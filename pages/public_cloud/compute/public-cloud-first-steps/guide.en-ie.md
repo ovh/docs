@@ -1,7 +1,7 @@
 ---
 title: 'Creating and connecting to your first Public Cloud instance'
 excerpt: 'Find out how to get started with your Public Cloud service after the creation of a project'
-updated: 2023-01-26
+updated: 2023-11-29
 ---
 
 ## Objective
@@ -215,6 +215,11 @@ When you have applied your choices, click `Next`{.action} to proceed to the fina
 ![billing select](images/instance-creation-05-2022.png){.thumbnail}
 
 We recommend to choose hourly billing if there is any doubt regarding the usage period, because it is not possible to choose it after the service delivery. You will have the option to switch to a monthly subscription as soon as the instance is available on the "Instances" page.
+
+> [!primary]
+>
+>Please note that if you choose one of our current *Compute* instances, only the **hourly** billing option will be available for technical reasons.
+>
 
 > [!warning]
 >

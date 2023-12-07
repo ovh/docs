@@ -1,7 +1,7 @@
 ---
 title: AI Deploy - Tutorial - Deploy an ONNX model using FastAPI
 excerpt: Learn how to deploy the DenseNet model in ONNX format for optimized inference
-updated: 2023-09-20
+updated: 2023-11-27
 ---
 
 ## Objective
@@ -216,7 +216,7 @@ docker build . -t densenet-onnx-fastapi:latest
 
 > [!warning]
 > **Warning**
-> The shared registry of AI Deploy should only be used for testing purposes. Please consider attaching your own Docker registry. More information about this can be found [here](/pages/public_cloud/ai_machine_learning/gi_07_manage_registry).
+> The shared registry of AI Deploy should only be used for testing purposes. Please consider attaching your own Docker registry. More information about this can be found [here](/pages/public_cloud/ai_machine_learning/gi_07_manage_registry). The images pushed to this registry are for AI Tools workloads only, and will not be accessible for external uses.
 >
 
 > [!warning]

@@ -1,6 +1,6 @@
 ---
-title: 'Mettere online un sito Internet su un hosting Web'
-excerpt: 'Come pubblicare un sito su un hosting Web OVHcloud'
+title: "Mettere online un sito Internet su un hosting Web"
+excerpt: "Questa guide ti mostra come pubblicare un sito su un hosting Web OVHcloud"
 updated: 2022-07-21
 ---
 
@@ -34,11 +34,11 @@ Per realizzare al meglio il tuo progetto, è importante avere una visione chiara
 
 - **creare un sito Web in autonomia**: questa soluzione è più tecnica e richiede competenze di programmazione, ma offre la possibilità di realizzare un progetto totalmente personalizzato.
 
-- **migrare in OVHcloud un sito Web esistente**: questa soluzione può risultare un’operazione delicata, soprattutto se eseguita su servizi in produzione per cui non è possibile un’interruzione di servizio. Per conoscere il processo completo, consulta la guida [Migrare un sito e un servizio di posta in OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh){.external}.
+- **migrare in OVHcloud un sito Web esistente**: questa soluzione può risultare un’operazione delicata, soprattutto se eseguita su servizi in produzione per cui non è possibile un’interruzione di servizio. Per conoscere il processo completo, consulta la guida [Migrare un sito e un servizio di posta in OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh).
 
 In base all’opzione scelta, hai quindi due possibilità: 
 
-- **utilizzare i nostri moduli in 1 click**: per maggiori informazioni, consulta la guida [Installare i moduli in 1 click OVHcloud](/pages/web_cloud/web_hosting/cms_install_1_click_modules){.external}
+- **utilizzare i nostri moduli in 1 click**: per maggiori informazioni, consulta la guida [Installare i moduli in 1 click OVHcloud](/pages/web_cloud/web_hosting/cms_install_1_click_modules)
 
 - **non utilizzare i nostri moduli in 1 click**: in questo caso, l’installazione del sito deve essere eseguita manualmente sull’hosting. Questa guida contiene informazioni utili per effettuare questa operazione ma, in caso di necessità, ti consigliamo di rivolgerti a un webmaster.
  
@@ -72,9 +72,9 @@ Se hai necessità di recuperarli, accedi allo [Spazio Cliente OVHcloud](https://
 
 ![Installazione sito](images/get-website-online-step1.png){.thumbnail}
 
-In questa interfaccia sono disponibili le informazioni di accesso allo spazio di storage. In caso di necessità, consulta la guida [Accedere allo spazio di storage di un hosting Web](/pages/web_cloud/web_hosting/ftp_connection){.external}.
+In questa interfaccia sono disponibili le informazioni di accesso allo spazio di storage. In caso di necessità, consulta la guida [Accedere allo spazio di storage di un hosting Web](/pages/web_cloud/web_hosting/ftp_connection).
 
-Se hai smarrito la password, segui la procedura descritta nella guida [Modificare la password di un utente FTP](/pages/web_cloud/web_hosting/ftp_change_password){.external}.
+Se hai smarrito la password, segui la procedura descritta nella guida [Modificare la password di un utente FTP](/pages/web_cloud/web_hosting/ftp_change_password).
 
 Una volta recuperati i dati potrai connetterti allo spazio di storage in tre modi diversi, utilizzando: 
 
@@ -150,12 +150,16 @@ In caso di difficoltà durante la pubblicazione del tuo sito Internet, ti consig
 
 ## Per saperne di più
 
-[Migrare un sito e un servizio di posta in OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh){.external}
+[Migrare un sito e un servizio di posta in OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh)
 
-[Installare i moduli in 1 click OVHcloud](/pages/web_cloud/web_hosting/cms_install_1_click_modules){.external}
+[Installare i moduli in 1 click OVHcloud](/pages/web_cloud/web_hosting/cms_install_1_click_modules)
 
-[Accedere allo spazio di storage di un hosting Web](/pages/web_cloud/web_hosting/ftp_connection){.external}
+[Accedere allo spazio di storage di un hosting Web](/pages/web_cloud/web_hosting/ftp_connection)
 
-[Modificare la password di un utente FTP ](/pages/web_cloud/web_hosting/ftp_change_password){.external}
+[Modificare la password di un utente FTP ](/pages/web_cloud/web_hosting/ftp_change_password)
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
+
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
+
+Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.

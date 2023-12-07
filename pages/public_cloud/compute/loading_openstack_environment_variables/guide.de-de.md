@@ -1,7 +1,7 @@
 ---
 title: 'OpenStack Umgebungsvariablen einrichten'
 excerpt: 'Erfahren Sie hier, wie Sie Ihre Umgebungsvariablen für die Nutzung der OpenStack API einrichten'
-updated: 2021-08-18
+updated: 2023-11-29
 ---
 
 ## Ziel
@@ -47,12 +47,12 @@ Wenn Sie das Passwort nicht zur Verfügung haben, muss es neu erstellt werden.
 Wenn die CLIs schon installiert sind, überprüfen Sie deren Funktion wie folgt:
 
 ```bash
-admin@vpsxxxxxx:~$ nova list
-+--------------------------------------+------+--------+------------+-------------+------------------------+
-| ID | Name | Status | Task State | Power State | Networks |
-+--------------------------------------+------+--------+------------+-------------+------------------------+
-| 2278e269-a529-40cc-9a08-794fda9302d3 | deb8 | ACTIVE | -          | Running     | Ext-Net=xx.xxx.xx.xxx |
-+--------------------------------------+------+--------+------------+-------------+------------------------+
+(env)$ openstack server list
++--------------------------------------+------------+--------+-----------------------------------------------+-----------+--------+
+| ID                                   | Name       | Status | Networks                                      | Image     | Flavor |
++--------------------------------------+------------+--------+-----------------------------------------------+-----------+--------+
+| 8d7c67c0-38e1-4091-88d5-c14844c1f455 | b2-7-gra11 | ACTIVE | Ext-Net=2001:xxxx:xxx:xxx::xxxx, xx.xxx.xx.xx | Debian 12 | b2-7   |
++--------------------------------------+------------+--------+-----------------------------------------------+-----------+--------+
 ```
 
 Das Passwort des Horizon-Nutzers kann fest gespeichert werden. Dazu ersetzen Sie den folgenden Abschnitt:
@@ -91,6 +91,6 @@ set OS_PASSWORD="Ihr Benutzerpasswort"
 
 ## Weiterführende Informationen
 
-[OpenStack Dokumentation](https://docs.openstack.org/train/)
+[OpenStack Dokumentation](https://docs.openstack.org/)
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

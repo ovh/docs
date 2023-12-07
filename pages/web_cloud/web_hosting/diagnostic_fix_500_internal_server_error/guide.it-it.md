@@ -1,7 +1,7 @@
 ---
-title: Cosa fare in caso di errore 500 Internal Server Error?
-excerpt: Diagnostica i casi più comuni di errore 500
-updated: 2023-05-16
+title: "Cosa fare in caso di errore 500 Internal Server Error?"
+excerpt: "Diagnostica i casi più comuni di errore 500"
+updated: 2023-11-22
 ---
 
 > [!primary]
@@ -116,4 +116,6 @@ Se l'errore 500 è apparso a seguito di un aggiornamento della versione PHP del 
 
 [Risolvere l’errore «Sito non installato»](/pages/web_cloud/web_hosting/multisites_website_not_installed)
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
+
+Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.

@@ -1,7 +1,7 @@
 ---
 title: AI Deploy - Tutorial - Build & use a custom Docker image
 excerpt: Explanations on how to build and use your own custom image
-updated: 2023-06-15
+updated: 2023-11-27
 ---
 
 > [!primary]
@@ -262,7 +262,7 @@ AI Deploy provides a default registry called **Shared registry** where users are
 
 > [!warning]
 >
-> The shared registry should only be used for testing purposes. Please consider creating and attaching your own registry. More information about this can be found [here](/pages/public_cloud/ai_machine_learning/gi_07_manage_registry).
+> The shared registry should only be used for testing purposes. Please consider creating and attaching your own registry. More information about this can be found [here](/pages/public_cloud/ai_machine_learning/gi_07_manage_registry). The images pushed to this registry are for AI Tools workloads only, and will not be accessible for external uses.
 
 The basic commands to push a Docker image to a registry is:
 

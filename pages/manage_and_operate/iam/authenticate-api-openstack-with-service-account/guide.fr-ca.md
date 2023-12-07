@@ -1,7 +1,7 @@
 ---
 title: Comment utiliser les comptes de service pour se connecter à OpenStack
 excerpt: "Comment se connecter aux API ou lignes de commande OpenStack avec ses comptes de service OVHcloud"
-updated: 2023-08-24
+updated: 2023-11-27
 ---
 
  
@@ -83,6 +83,7 @@ Si vous utilisez votre infrastructure OpenStack avec la ligne de commande, vous 
 export OS_AUTH_TYPE=v3oidcclientcredentials
 export OS_PROTOCOL=openid
 export OS_ACCESS_TOKEN_TYPE=id_token
+export OS_OPENID_SCOPE="openid profile email publicCloudProject/all"
 export OS_AUTH_URL=https://auth.cloud.ovh.net/v3
 ```
 
@@ -147,6 +148,7 @@ clouds:
     auth:
       protocol: 'openid'
       access_token_type: 'id_token'
+      openid_scope: 'openid profile email publicCloudProject/all'
       auth_url: 'https://auth.cloud.ovh.net/v3'
       identity_provider: 'ovhcloud-emea'
       discovery_endpoint: 'https://iam.ovh.net/role-adapter/urn:v1:eu:resource:publicCloudProject:pci/.well-known/openid-configuration'
@@ -182,6 +184,7 @@ clouds:
     auth:
       protocol: 'openid'
       access_token_type: 'id_token'
+      openid_scope: 'openid profile email publicCloudProject/all'
       auth_url: 'https://auth.cloud.ovh.net/v3'
       identity_provider: 'ovhcloud-emea'
       discovery_endpoint: 'https://iam.ovh.net/role-adapter/urn:v1:eu:resource:publicCloudProject:pci/.well-known/openid-configuration'
@@ -216,6 +219,7 @@ clouds:
     auth:
       protocol: 'openid'
       access_token_type: 'id_token'
+      openid_scope: 'openid profile email publicCloudProject/all'
       auth_url: 'https://auth.cloud.ovh.net/v3'
       identity_provider: 'ovhcloud-emea'
       discovery_endpoint: 'https://iam.ovh.net/role-adapter/urn:v1:eu:resource:publicCloudProject:pci/.well-known/openid-configuration'

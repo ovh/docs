@@ -1,6 +1,6 @@
 ---
-title: 'Exporter son site web'
-excerpt: 'Découvrez comment exporter votre site web OVHcloud'
+title: "Exporter son site web"
+excerpt: "Découvrez comment exporter votre site web OVHcloud"
 updated: 2022-02-03
 ---
 

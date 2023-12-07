@@ -1,7 +1,7 @@
 ---
-title: 'Fixing the 500 Internal Server Error'
-excerpt: Find out how to fix some of the most common website errors
-updated: 2023-05-16
+title: "Fixing the 500 Internal Server Error"
+excerpt: "Find out how to fix some of the most common website errors"
+updated: 2023-11-22
 ---
 
 ## Objective
@@ -111,4 +111,6 @@ If your website uses a database, read our guide [Importing a backup into a Web H
 
 [Resolving a “Website not installed” error](/pages/web_cloud/web_hosting/multisites_website_not_installed)
 
-Join our community of users on <https://community.ovh.com/en/>
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-ie/directory/).
+
+Join our community of users on <https://community.ovh.com/en/>.

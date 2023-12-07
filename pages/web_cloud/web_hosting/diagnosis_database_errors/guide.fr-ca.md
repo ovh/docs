@@ -1,5 +1,5 @@
 ---
-title: Résoudre les erreurs les plus fréquentes liées aux bases de données 
+title: "Résoudre les erreurs les plus fréquentes liées aux bases de données"
 excerpt: "Diagnostiquez les cas les plus courants d'erreurs liées aux bases de données"
 updated: 2023-10-26
 ---
@@ -289,8 +289,6 @@ Si cette connexion s'avère impossible, commencez par vérifier que vous avez bi
 Si cette opération a bien été réalisée, contactez votre Fournisseur d'Accès à Internet ou les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/directory/). Nous ne serons pas en mesure de vous fournir une assistance dans cette situation.
 
 ## Aller plus loin <a name="aller-plus-loin"></a>
-
-[Premiers pas avec le service Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)
 
 [Premiers pas avec le service Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)
 

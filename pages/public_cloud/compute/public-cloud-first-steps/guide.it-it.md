@@ -1,7 +1,7 @@
 ---
 title: Creare e connettersi a un’istanza Public Cloud
 excerpt: Come eseguire le prime operazioni su un servizio Public Cloud dopo aver creato un progetto
-updated: 2023-01-26
+updated: 2023-11-29
 ---
 
 > [!primary]
@@ -219,6 +219,11 @@ Una volta completata l’operazione, clicca su `Continua`{.action} per procedere
 ![billing select](images/instance-creation-05-2022.png){.thumbnail}
 
 Si consiglia di scegliere la fatturazione oraria se non si è sicuri del periodo di utilizzo, poiché non è possibile sceglierla dopo l'erogazione del servizio. Avrete la possibilità di passare a un abbonamento mensile non appena l'istanza sarà disponibile nella pagina "Instances".
+
+> [!primary]
+>
+>Se scegli una delle nostre istanze *Compute* attuali, per motivi tecnici sarà disponibile solo l'opzione di fatturazione **oraria**.
+>
 
 > [!warning]
 >

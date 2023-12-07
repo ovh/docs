@@ -1,7 +1,7 @@
 ---
 title: Creating and using SSH keys
 excerpt: Find out how to use SSH keys for a secure connection to your server
-updated: 2023-07-12
+updated: 2023-11-22
 ---
 
 ## Objective
@@ -195,6 +195,46 @@ You can learn more about SSH connections in the ["Getting started" guides](#gets
 
 ### Adding SSH keys to your server <a name="addserverkey"></a>
 
+#### Transferring public keys created on systems based on GNU/Linux, MacOS or BSD
+
+If you have created your SSH key pairs on a GNU/Linux, MacOS or BSD based system, you can use the command `ssh-copy-id` to add the public keys to your server.
+
+The `ssh-copy-id` utility copies public keys to the file `~/.ssh/authorized_keys` on the specified remote server and will automatically create the file in this directory if necessary.
+
+```bash
+ssh-copy-id user@IP_ADDRESS
+```
+
+By default, `ssh-copy-id` will try to transfer all public keys inside your local user's `~/.ssh` directory. In order to add a single public key, you can specify this key file with the option `-i` followed by the file path:
+
+```bash
+ssh-copy-id -i ~/.ssh/KeyFileName user@IP_ADDRESS
+```
+
+Example:
+    
+```bash
+ssh-copy-id -i ~/.ssh/VPS_rsa.pub ubuntu@169.254.10.250
+```
+
+You will be prompted for the user's password. If the process was successful, you will receive a message similar to the one below.
+
+```console
+Number of key(s) added: 1
+
+Now try logging into the machine, with:   "ssh 'user@server-ip'"
+and check to make sure that only the key(s) you wanted were added.
+```
+
+If you receive an error message instead, you can always add your public keys manually by following the steps described below.
+
+> [!primary]
+>
+> As a best practice and for security reasons, a single key pair should not be used by multiple users. Since each user on GNU/Linux systems has their own `authorized_keys` file in `~/.ssh/`, you can use the command `ssh-copy-id` as shown above and adapt `KeyFileName` and `user` after you have [created the key pair](#openssh).
+>
+
+#### Adding public keys to a server manually
+
 [Connect](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction) to your server and make sure you are in your user's `$HOME` directory. Create the folder `.ssh` (if it does not exist):
 
 ```bash
@@ -207,7 +247,7 @@ To store the key for the current user, open (or create) the file `authorized_key
 nano ~/.ssh/authorized_keys
 ```
 
-Paste your [**public key**](#publickey) into this file. Save the file and exit the editor. Reboot your server or only restart the OpenSSH service with one of the following commands (the appropriate command may vary depending on your OS):
+Paste your [**public key**](#publickey) into this file. Save the file and exit the editor. Reboot your server (`sudo reboot`) or only restart the OpenSSH service with one of the following commands (the appropriate command may vary depending on your OS):
 
 ```bash
 sudo systemctl restart ssh
@@ -231,7 +271,7 @@ ssh ubuntu@169.254.10.250
 
 #### Adding additional public keys to your server
 
-To add SSH keys for other users accessing your server, repeat the key creation steps but use the appropriate `$HOME` folder or **Windows** `Users` directory of the user in question to create and store the SSH keys (or execute the commands on this person's dedicated device). Then add the new public key to the server in `authorized_keys` as described above.
+To add SSH keys for other users accessing your server, repeat the key creation steps but use the appropriate `$HOME` folder or **Windows** `Users` directory of the user in question to create and store the SSH keys (or execute the commands on this person's dedicated device). Then add the new public key to the server in `authorized_keys` as described [above](#addserverkey).
 
 #### Removing public keys from your server
 
@@ -342,7 +382,7 @@ From now on, you can click on this `Session` item and open a connection to your 
 To configure another server connection, repeat the steps:
 
 - [Create the key pair](#useputty).
-- [Add the public key to your server](#addserverkey.)
+- [Add the public key to your server](#addserverkey).
 - [Enter the server details and add the key file in `PuTTY`](#puttykeys).
 
 ### Importing your SSH key into the OVHcloud Control Panel <a name="importkey"></a>

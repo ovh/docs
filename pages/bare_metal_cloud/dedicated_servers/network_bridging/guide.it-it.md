@@ -1,7 +1,7 @@
 ---
 title: 'Modalità bridge IP'
 excerpt: Come configurare l'accesso a Internet delle macchine virtuali utilizzando la modalità bridge
-updated: 2022-12-20
+updated: 2023-11-24
 ---
 
 > [!primary]
@@ -70,11 +70,32 @@ Seleziona "ovh" nel menu a tendina "Tipo", inserisci un nome nel campo "Nome del
 
 Per configurare le tue macchine virtuali per l'accesso a Internet, devi conoscere il gateway della tua macchina host, cioè il tuo server dedicato. L'indirizzo del gateway è composto dai primi tre byte dell'indirizzo IP principale del tuo server, l'ultimo byte è di 254. Ad esempio, se l'indirizzo IP principale del tuo server è:
 
-- 169.254.10.020
+- 169.254.10.20
 
 L'indirizzo del gateway sarà:
 
 - 169.254.10.254
+
+È inoltre possibile recuperare l’indirizzo del gateway tramite [il tuo Spazio Cliente OVHcloud](#viacontrolpanel) o l’[API OVHcloud](#viaapi).
+
+#### Dallo Spazio Cliente OVHcloud <a name="viacontrolpanel"></a>
+
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), clicca su `Bare Metal Cloud`{.action} e seleziona il tuo server nella sezione `Server dedicati`{.action}.
+
+L’indirizzo gateway IPv4 assegnato al tuo server è visualizzato nella sezione `Rete` della scheda `Informazioni generali`{.action}. Una volta effettuata la copia, prosegui con l’applicazione della configurazione.
+
+![gateway](images/ipv4information.png){.thumbnail}
+
+#### Tramite le API OVHcloud <a name="viaapi"></a>
+
+Nella [pagina API OVHcloud](https://api.ovh.com/console/), clicca in alto a destra su `Login`{.action}. Nella pagina successiva, inserisci il tuo identificativo cliente OVHcloud.
+
+Eseguire la chiamata API seguente, indicando il nome interno del server (esempio: `ns3956771.ip-169-254-10.eu`):
+
+> [!api]
+>
+> @api {v1} /dedicated/server GET /dedicated/server/{serviceName}/specifications/network
+>
 
 ### Prepara l'host
 

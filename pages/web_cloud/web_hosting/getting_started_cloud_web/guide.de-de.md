@@ -1,6 +1,6 @@
 ---
-title: 'Erste Schritte mit Cloud Web Hosting'
-excerpt: 'In dieser Anleitung erfahren Sie, wie Sie richtig mit Ihrem Cloud Web Hosting starten'
+title: "Erste Schritte mit Cloud Web Hosting"
+excerpt: "Diese Anleitung erklärt, wie Sie richtig mit Ihrem Cloud Web Hosting starten"
 updated: 2022-05-04
 ---
 
@@ -12,7 +12,7 @@ updated: 2022-05-04
 
 Unser Cloud Web Hosting Angebot kombiniert 20 Jahre Webhosting-Erfahrung mit der Power unserer Public Cloud. Wie bei unseren klassischen Webhostings werden Ihre Internetseiten auch bei Cloud Web auf einem rund um die Uhr verwalteten Dienst gehostet. Darüber hinaus haben Sie Zugriff auf zusätzliche Funktionen und profitieren von der höheren Performance unserer SSD-Festplatten.
 
-**Hier erfahren Sie, wie Sie richtig mit Ihrem Cloud Web Hosting starten.**
+**Diese Anleitung erklärt, wie Sie richtig mit Ihrem Cloud Web Hosting starten.**
 
 ## Voraussetzungen
 
@@ -21,7 +21,7 @@ Unser Cloud Web Hosting Angebot kombiniert 20 Jahre Webhosting-Erfahrung mit der
 - Sie besitzen eine [Domain](https://www.ovhcloud.com/de/domains/), über die Ihre Website erreichbar sein wird.
 - Sie sind in Ihrem [Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) eingeloggt.
 
-## Beschreibung
+## In der praktischen Anwendung
 
 ### Schritt 1: Ihr Projekt definieren
 

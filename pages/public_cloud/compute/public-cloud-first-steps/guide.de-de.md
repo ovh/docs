@@ -1,7 +1,7 @@
 ---
 title: 'Erste Public Cloud Instanz erstellen und auf dieser einloggen'
 excerpt: 'So starten Sie nach der Erstellung eines Projekts mit der Verwendung Ihres Public Cloud Dienstes'
-updated: 2023-01-26
+updated: 2023-11-29
 ---
 
 ## Ziel
@@ -215,6 +215,11 @@ Wenn Sie Ihre Auswahl getroffen haben, klicken Sie auf `Weiter`{.action}, um zum
 ![Abrechnungsmethode auswählen](images/instance-creation-05-2022.png){.thumbnail}
 
 Wir empfehlen Ihnen, bei Unsicherheit bezüglich des Verwendungszeitraums die stündliche Abrechnung auszuwählen, da es nicht möglich ist, nach der Lieferung des Dienstes zu dieser Option zu wechseln. Sobald die Instanz in der “Instanzen”-Übersicht angezeigt wird, können Sie auf monatliche Abrechnung umstellen.
+
+> [!primary]
+>
+>Wenn Sie sich für eine unserer aktuellen *Compute* Instanzen entscheiden, ist aus technischen Gründen möglicherweise nur die Option zur **stündlichen Abrechnung** verfügbar.
+>
 
 > [!warning]
 >

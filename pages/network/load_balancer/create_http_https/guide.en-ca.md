@@ -1,7 +1,7 @@
 ---
 title: 'Configuring a HTTP/HTTPS OVH Load Balancer service'
 excerpt: 'Find out how to configure an OVH Load Balancer service'
-updated: 2020-09-30
+updated: 2023-11-22
 ---
 
 ## Objective
@@ -244,6 +244,16 @@ If you opt for a certificate managed by the OVHcloud Load Balancer service, it w
 > 
 
 The certificates configured on your OVHcloud Load Balancer service are automatically available for all of the front-ends on your service that have *SSL* options enabled.
+
+#### TLS 1.3 support
+With the constant evolution of Internet security standards, OVHcloud is committed to providing the latest and most secure technologies for your services. The OVHcloud Load Balancer now supports TLS 1.3.
+
+##### What is TLS 1.3?
+TLS 1.3 is the latest version of the TLS protocol, offering significant improvements in security and performance over TLS 1.2. Key benefits include a faster handshake process, reducing the time needed to establish secure connections, and the use of more secure cipher suites to strengthen the security of transmitted data.
+
+##### Why use TLS 1.3 with OVHcloud Load Balancer?
+By integrating TLS 1.3, your OVHcloud Load Balancer will benefit from enhanced security and improved performance, ensuring an optimal user experience for your visitors. Reduced handshake times speed up page loading, while security enhancements ensure that your data is protected with the latest, most secure standards.
+
 
 ### Via the Sunrise Control Panel.
 

@@ -61,7 +61,7 @@ Se la porta SSH del server non è la porta standard, esegui questo comando:
 ssh username@server_IP -p port_number
 ```
 
-### Connessione da una postazione Windows 10/11
+### Connessione da una postazione Windows
 
 Le ultime versioni di Windows includono nativamente OpenSSH per le connessioni dal Powershell o dal prompt dei comandi.
 

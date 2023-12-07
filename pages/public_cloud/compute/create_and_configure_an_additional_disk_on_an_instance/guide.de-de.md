@@ -431,4 +431,6 @@ Klicken Sie im neuen Fenster auf `Bestätigen`{.action}, um den Vorgang zu start
 
 ## Weiterführende Informationen
 
+[Die Größe einer zusätzlichen Disk erweitern](/pages/public_cloud/compute/increase_the_size_of_an_additional_disk)
+
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

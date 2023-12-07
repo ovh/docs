@@ -1,6 +1,6 @@
 ---
-title: Resolver los errores más frecuentes asociados a las bases de datos 
-excerpt: Diagnóstico de los errores más comunes relacionados con las bases de datos
+title: "Resolver los errores más frecuentes asociados a las bases de datos"
+excerpt: "Diagnóstico de los errores más comunes relacionados con las bases de datos"
 updated: 2023-10-26
 ---
 

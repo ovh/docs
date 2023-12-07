@@ -1,6 +1,6 @@
 ---
-title: FAQ Webhosting
-excerpt: Hier finden Sie die Antworten zu den am häufigsten gestellten Fragen rund um OVHcloud Webhostings
+title: "FAQ Webhosting"
+excerpt: "Hier finden Sie die Antworten zu den am häufigsten gestellten Fragen rund um OVHcloud Webhostings"
 updated: 2023-04-24
 ---
 

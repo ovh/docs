@@ -187,6 +187,10 @@ Please note that if you have selected a **distribution with application** (Plesk
 > Connecting with the "root" user is disabled by default as a security measure. If you want to permit these connections, refer to the instructions in [this guide](/pages/bare_metal_cloud/virtual_private_servers/root_password#enabling-root-login).
 >
 
+#### Update root password
+
+To change or update your "root" password, refer to the instructions in [this guide](/pages/bare_metal_cloud/virtual_private_servers/root_password).
+
 ### Connecting to your Windows VPS
 
 After your Windows VPS is installed, you receive an email with the name of the default `Windows user`.
@@ -231,7 +235,7 @@ Once you have configured your VPS, you may want to secure your domain name and y
 
 You can install this SSL certificate manually, directly on the VPS. Please refer to the official documentation of your VPS distribution.
 
-For a more automated process, OVHcloud also offers the SSL Gateway solution. Please refer to the [product page](https://www.ovh.ie/ssl-gateway/) or our [guide documents](/products/web-cloud-ssl-gateway) for further information.
+For a more automated process, OVHcloud also offers the SSL Gateway solution. Please refer to the [product page](https://www.ovh.ie/ssl-gateway/) or our [documentation](/products/web-cloud-ssl-gateway) for further information.
 
 ## Go further
 

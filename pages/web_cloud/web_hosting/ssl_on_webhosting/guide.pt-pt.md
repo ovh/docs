@@ -1,7 +1,7 @@
 ---
 title: 'Gerir um certificado SSL num alojamento web'
 excerpt: 'Saiba como gerir um certificado SSL no alojamento web da OVHcloud'
-updated: 2022-08-01
+updated: 2023-11-29
 ---
 
 > [!primary]
@@ -141,4 +141,8 @@ Na página que aparecer, valide a eliminação. Esta última será concluída em
 
 ## Quer saber mais?
 
-Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
+
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
+
+Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>.
