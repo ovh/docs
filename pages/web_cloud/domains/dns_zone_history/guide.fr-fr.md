@@ -13,7 +13,8 @@ Vous pouvez, par exemple, y préciser :
 - L'adresse IP (enregistrements DNS de type *A* et *AAAA*) de votre hébergement web pour afficher votre site web avec votre nom de domaine.
 - Les serveurs e-mail (enregistrements DNS de type *MX*) vers lesquels votre nom de domaine doit rediriger les e-mails qu'il reçoit. Cela vous permet de les consulter sur votre (vos) adresse(s) e-mail(s) personnalisée(s) avec votre nom de domaine.
 - Des informations liées à la sécurité / l'authentification de vos services (hébergement web, serveur web, serveur e-mail, etc.)  associés à votre nom de domaine (enregistrements DNS de type *SPF*, *DKIM*, *DMARC*, etc.).
-Les serveurs DNS sont essentiels pour le bon fonctionnement de vos adresses e-mail, sites web ou appels API. Ainsi, toute modification des champs est risquée car elle peut entrainer une indisponibilité du service.
+
+N'hésitez pas à consulter notre documentation sur [les enregistrements DNS et l'édition d'une zone DNS](/pages/web_cloud/domains/dns_zone_edit) depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) si vous souhaitez en apprendre plus sur le sujet.
 Désormais, la gestion des DNS est facilitée grâce à l’historique de vos zones DNS.
 
 **Découvrez comment consulter et manipuler l'historique de vos zones DNS.**
