@@ -1,6 +1,6 @@
 ---
-title: "Wie erstelle ich eine Subdomain?"
-excerpt: "Diese Anleitung erklärt, wie Sie eine Subdomain bei OVHcloud definieren und erstellen"
+title: "Erstellung einer Subdomain"
+excerpt: "Erfahren Sie hier, wie Sie eine Subdomain bei OVHcloud erstellen und nutzen"
 updated: 2023-11-28
 ---
 
@@ -10,23 +10,22 @@ updated: 2023-11-28
 
 ## Ziel <a name="goal"></a>
 
-Das Internet besteht aus *Servern* und *Geräten*, die über ein globales Netzwerk miteinander interagieren. Wenn diese *Server* und ihre *Geräte* mit dem Internet verbunden sind, wird ihnen eine *öffentliche IP-Adresse* (entspricht einer Postadresse) zugewiesen. Diese *IP-Adresse* ermöglicht es, sich remote an einen Server oder ein Gerät anzuschließen, sodass ein Benutzer eine Website anzeigen kann, indem er diese *IP-Adresse* mithilfe seines auf seinem Computer installierten Internetbrowsers eingibt.
+Das Internet besteht aus *Servern* und *Geräten*, die über ein globales Netzwerk miteinander interagieren. Wenn diese *Server* und ihre *Geräte* mit dem Internet verbunden sind, wird ihnen eine *öffentliche IP-Adresse* (entspricht einer Postadresse) zugewiesen. Diese *IP-Adresse* ermöglicht es, sich mit einem Server oder einem Gerät zu verbinden. Das bedeutet, dass ein Benutzer über einen Webbrowser auf eine Website zugreifen kann, indem er diese *IP-Adresse* eingibt.
 
-Die **Domainnamen** wurden eingerichtet, um den Benutzern des Internet-Netzwerks den Zugriff auf eine Website zu erleichtern. So ist es einfacher, sich einen Namen zu merken, der aus einer ausgewählten Zeichenfolge besteht (Beispiel: ovhcloud.com), als eine Folge von Ziffern, die aus einer *IP-Adresse* besteht (Beispiel: 54.39.46.56).
+Die **Domainnamen** wurden eingerichtet, um den Benutzern des Internets den Zugriff auf eine Website zu erleichtern. So ist es einfacher, sich einen Namen zu merken, der aus einer ausgewählten Zeichenfolge besteht (Beispiel: ovhcloud.com), als eine Folge von Ziffern, aus denen eine *IP-Adresse* besteht (Beispiel: 54.39.46.56).
 
-Ein **Domainname** besteht aus Stufen. Diese Level sind in der Regel durch ein `.` (mit Ausnahme einiger **Endungen** der *ersten Ebene* wie *.co.uk*, *.gouv.fr* oder *.notaires.fr*):
+Ein **Domainname** besteht aus Leveln. Diese Level sind in der Regel durch ein `.` (mit Ausnahme einiger **Endungen** der *ersten Ebene* wie *.co.uk*, *.gouv.fr* oder *.notaires.fr*):
 
-- **T**op **L**evel **D**omain (**TLD**): Stellt die Domains der *Top Level* dar. Sie werden üblicher als **Endungen** bezeichnet. Derzeit gibt es 4 Arten von Top-Level-Domains: 
+- **T**op **L**evel **D**omain (**TLD**): Stellt die Domains des *Top Level* dar. Sie werden üblicherweise als **Endungen** bezeichnet. Derzeit gibt es 4 Arten von Top-Level-Domains: 
 
-    - Die **c**ountry **c**ode **T**op **L**evel **D**omains (**ccTLDs**): bestehen aus zwei Zeichen und entsprechen den verschiedenen Ländern der Welt. Zum Beispiel sind die Endungen *.de*, *.es*, *.it* oder *.pl* ccTLDs;
-    - Die **g**eneric **T**op **L**evel **D**omains (**gTLDs**): Bestehend aus mindestens drei Zeichen, stellen sie allgemeinere Themen oder Branchen dar. Zum Beispiel sind die Endungen *.com*, *.net*, *.org* oder *.info* gTLDs;
-    - Die **new** **g**eneric **T**op **L**evel **D**omains (**new gTLDs**):
-    Neue Endungen, die ab 2012 durch das **I**nternet **C**orporation for **A**ssigned **N**ames and **N**umbers (**ICANN**) erstellt wurden, um den steilen Anstieg der Anfragen zur Erstellung von Domainnamen zu bewältigen. Dabei kann es sich um allgemeine Themen, Marken, Regionen oder Städte handeln. Zum Beispiel sind die Endungen *.love*, *.ovh* oder *.paris* new gTLDs;
+    - Die **c**ountry **c**ode **T**op **L**evel **D**omains (**ccTLDs**): bestehen aus zwei Zeichen und entsprechen den verschiedenen Ländern der Welt. Zum Beispiel sind die Endungen *.de*, *.es*, *.it* oder *.pl* ccTLDs.
+    - Die **g**eneric **T**op **L**evel **D**omains (**gTLDs**): Bestehend aus mindestens drei Zeichen, stellen sie allgemeinere Themen oder Branchen dar. Zum Beispiel sind die Endungen *.com*, *.net*, *.org* oder *.info* gTLDs.
+    - Die **new** **g**eneric **T**op **L**evel **D**omains (**new gTLDs**): Neue Endungen, die ab 2012 von der **I**nternet **C**orporation for **A**ssigned **N**ames and **N**umbers (**ICANN**) erstellt wurden, um den steilen Anstieg der Anfragen zur Erstellung von Domainnamen zu bewältigen. Dabei kann es sich um allgemeine Themen, Marken, Regionen oder Städte handeln. Zum Beispiel sind die Endungen *.love*, *.ovh* oder *.paris* new gTLDs.
     - Die **Corp**oration **T**op **L**evel **D**omains (**CorpTLDs**): Dies ist eine Unterkategorie der neuen gTLDs. Unternehmen oder Organisationen können auf Anfrage bei der **ICANN** die Erstellung einer eigenen TLD beantragen. Zum Beispiel ist die Endung *.ovh* eine CorpTLD, die vor einigen Jahren von OVHcloud erstellt wurde.
 
-- **S**econd **L**evel **D**omain (**SLD**): Stellt Domains der *zweiten Ebene* dar. Wir nennen sie am häufigsten **labels**. Wenn Sie einen Domainnamen bestellen, können Sie das **label** frei definieren (vorausgesetzt, dieser Name wurde nicht bereits von einem anderen Benutzer mit derselben Endung registriert und ist auf 63 Zeichen begrenzt). Zum Beispiel entspricht *ovhcloud* dem Label der Domain *ovhcloud.com*.
+- **S**econd **L**evel **D**omain (**SLD**): Stellt Domains der *zweiten Ebene* dar, auch als **Labels** bezeichnet. Wenn Sie einen Domainnamen bestellen, können Sie das **Label** frei definieren (vorausgesetzt, dieser Name wurde nicht bereits von einem anderen Benutzer mit derselben Endung registriert und ist auf 63 Zeichen begrenzt). Zum Beispiel entspricht *ovhcloud* dem Label der Domain *ovhcloud.com*.
 
-- Third Level Domain (**subdomain**): Ab dieser dritten Ebene spricht man von einer *subdomain*. In dieser Anleitung erfahren Sie, wie Sie diese mit Ihren verschiedenen Diensten einrichten.
+- Third Level Domain (**Subdomain**): Ab dieser dritten Ebene spricht man von einer *Subdomain*. In dieser Anleitung erfahren Sie, wie Sie diese mit Ihren verschiedenen Diensten einrichten.
 
 ![URL content](images/url-composition.png){.thumbnail}
   
@@ -34,9 +33,9 @@ Ein **Domainname** besteht aus Stufen. Diese Level sind in der Regel durch ein `
 
 ## Voraussetzungen
 
-- Sie besitzen mindestens eine [Domain](https://www.ovhcloud.com/de/domains/);
-- Sie verfügen über eine aktive DNS-Zone für Ihre Domain. Bei Bedarf lesen Sie unsere Anleitung „[OVHcloud DNS-Zone erstellen](/pages/web_cloud/domains/dns_zone_create)“;
-- Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) eingeloggt;
+- Sie besitzen mindestens eine [Domain](https://www.ovhcloud.com/de/domains/).
+- Sie verfügen über eine aktive DNS-Zone für Ihre Domain. Bei Bedarf lesen Sie unsere Anleitung „[OVHcloud DNS-Zone erstellen](/pages/web_cloud/domains/dns_zone_create)“.
+- Sie sind in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) eingeloggt.
 - Über ausreichende Rechte für alle betroffenen Dienste verfügen. Weitere Informationen finden Sie in unserer Anleitung [Verwaltung der Kontakte der Dienste](/pages/account_and_service_management/account_information/managing_contacts).
   
 ## In der praktischen Anwendung
@@ -49,7 +48,7 @@ Ein Domainname kann jedoch immer nur einer Website zugewiesen werden.
 
 Einige Benutzer oder Organisationen müssen jedoch ihre Websites oder E-Mail-Dienste segmentieren, während sie den gleichen Domainnamen beibehalten.
 
-Die Subdomains (manchmal auch **Präfixe** genannt) erfüllen die Notwendigkeit, einen Domainnamen zu segmentieren. Sie bieten dem Inhaber die Möglichkeit, die mit seinem Domainnamen verbundenen Webdienste in verschiedene Unterkategorien zu unterteilen, ohne einen neuen Domainnamen abonnieren zu müssen.
+Die Subdomains (u.U. auch **Präfixe** genannt) erfüllen die Notwendigkeit, einen Domainnamen zu segmentieren. Sie bieten dem Inhaber die Möglichkeit, die mit seinem Domainnamen verbundenen Webdienste in verschiedene Unterkategorien zu unterteilen, ohne einen neuen Domainnamen abonnieren zu müssen.
 
 Mit anderen Worten: Subdomains ermöglichen es, alle Webdienste (DNS-Server, Website, Intranet, E-Mail etc.), die mit einem einzigen Domainnamen verbunden sind, einfach zu strukturieren.
 
@@ -61,31 +60,31 @@ Sie können aus einem einzigen Domainnamen eine unbegrenzte Anzahl an Subdomains
 
 Wenn Sie beispielsweise über die Domain *example.com* verfügen, können Sie folgende Subdomains erstellen:
 
-- *dns1.example.com* und *dns2.example.com* zur Anpassung Ihrer DNS Server mithilfe von [GLUE records](/pages/web_cloud/domains/glue_registry);
-- *www.example.com*, um Ihre Website anzuzeigen;
-- *preprod.example.com*, um Ihre Website in neuen Versionen zu testen. Dies ohne den Zugriff Ihrer Benutzer auf Ihre aktuelle Website zu unterbrechen;
-- *intranet.example.com*, damit Ihre Mitarbeiter sich auf Ihrer internen Website austauschen können;
-- *forum.example.com* oder *community.example.com*, damit Ihre User Community ihre Erfahrungen austauschen und teilen kann;
-- *app.example.com*, um online auf Ihre Anwendung zuzugreifen oder sie direkt herunterzuladen;
-- *recruitment.example.com*, um es Bewerbern auf der Suche nach einer Stelle zu ermöglichen, sich auf Ihrem eigenen Recruitment-Interface zu bewerben;
-- *sav.example.com*, *sales.example.com*, *legal.example.com*, um es Ihren Kunden zu ermöglichen, verschiedene interne Strukturen Ihres Unternehmens zu kontaktieren, oder um Ihre Mitarbeiter nach den internen Abteilungen zu priorisieren, denen sie angehören;
-- usw.
+- *dns1.example.com* und *dns2.example.com* zur Anpassung Ihrer DNS-Server mithilfe von [GLUE Records](/pages/web_cloud/domains/glue_registry).
+- *www.example.com*, um Ihre Website anzuzeigen.
+- *preprod.example.com*, um Ihre Website in neuen Versionen zu testen. Dies ohne den Zugriff Ihrer Benutzer auf Ihre aktuelle Website zu unterbrechen.
+- *intranet.example.com*, damit Ihre Mitarbeiter sich auf Ihrer internen Website austauschen können.
+- *forum.example.com* oder *community.example.com*, damit Ihre User Community ihre Erfahrungen austauschen kann.
+- *app.example.com*, um online auf Ihre Anwendung zuzugreifen oder sie direkt herunterzuladen.
+- *recruitment.example.com*, um es Bewerbern zu ermöglichen, sich auf Ihrem eigenen Recruitment-Interface zu bewerben.
+- *sav.example.com*, *sales.example.com*, *legal.example.com*, um es Ihren Kunden zu ermöglichen, verschiedene interne Strukturen Ihres Unternehmens zu kontaktieren, oder um Ihre Mitarbeiter nach den internen Abteilungen zu priorisieren, denen sie angehören.
+- etc.
 
 Über die dritte Ebene hinaus werden diese auch als **Subdomains** eingestuft. Um eines der oben genannten Beispiele zu verwenden, können Sie die Subdomain *preprod.app.example.com* erstellen, um die neue Version Ihrer Webanwendung zu testen. Dies ohne den Zugriff auf die aktuelle Version Ihrer Anwendung auf *app.example.com* zu unterbrechen.
 
 ### Subdomain erstellen
 
-Alle [Domainnamen](https://www.ovhcloud.com/de/domains/) benötigen eine **DNS-Zone**. Die DNS-Zone besteht aus technischen Informationen, die als *DNS-Einträge* bezeichnet werden. Sie ist, mehr oder weniger, ein Weichenstellplatz.
+Alle [Domainnamen](https://www.ovhcloud.com/de/domains/) benötigen eine **DNS-Zone**. Die DNS-Zone ist die Konfigurationsdatei eines Domainnamens, die sich aus **DNS-Einträgen** zusammensetzt. Das sind Datensätze, die dem Domainnamen verschiedene Dienste und Funktionen zuordnen.
 
 Weitere Informationen zu den DNS-Zonen finden Sie in unserer Anleitung „[OVHcloud DNS-Zone erstellen](/pages/web_cloud/domains/dns_zone_create)“ und „[OVHcloud DNS-Zone bearbeiten](/pages/web_cloud/domains/dns_zone_edit)“.
 
-**Alle Subdomains werden in der aktiven DNS-Zone der Domain konfiguriert. Dazu werden DNS-Einträge hinzugefügt**
+**Alle Subdomains werden in der aktiven DNS-Zone der Domain konfiguriert. Dazu werden DNS-Einträge hinzugefügt.**
 
-#### 1 - Identifizieren Sie den Standort der aktiven DNS-Zone Ihrer Domain
+#### 1 - Identifizieren Sie die aktive DNS-Zone Ihrer Domain
 
 Es gibt zwei mögliche Szenarien:
 
-- Die aktive DNS-Zone Ihrer Domain ist bei OVHcloud vorhanden;
+- Die aktive DNS-Zone Ihrer Domain ist bei OVHcloud vorhanden.
 - Die aktive DNS-Zone Ihrer Domain wird an einem anderen Ort gehostet.
 
 > [!warning]
@@ -94,15 +93,15 @@ Es gibt zwei mögliche Szenarien:
 >
 > 1: Um zu ermitteln, wo sich die aktive DNS-Zone einer bei OVHcloud registrierten Domain befindet, lesen Sie unsere Anleitung „[DNS-Server einer OVHcloud Domain bearbeiten](/pages/web_cloud/domains/dns_server_general_information)“.
 >
-> 2: Wenn Ihre Domain nicht bei OVHcloud registriert ist, kontaktieren Sie bitte den aktuellen * Registrar* Ihrer Domain, um herauszufinden, wo ihre aktive DNS-Zone gehostet ist.
+> 2: Wenn Ihre Domain nicht bei OVHcloud registriert ist, kontaktieren Sie den aktuellen *Registrar* Ihrer Domain, um herauszufinden, wo ihre aktive DNS-Zone gehostet ist.
 >
 
 Wenn die für Ihre Domain deklarierten DNS-Server eine der folgenden Formen haben:
 
-- *dnsXX.ovh.net* und *nsXX.ovh.net* (wobei jedes „X“ eine Ziffer darstellt);
+- *dnsXX.ovh.net* und *nsXX.ovh.net* (wobei jedes „X“ eine Ziffer darstellt).
 - *dns200.anycast.me* und *ns200.anycast.me*.
 
-Das bedeutet, dass die aktive DNS-Zone Ihrer Domain bei OVHcloud aktiv ist.
+Das bedeutet, dass die aktive DNS-Zone Ihrer Domain bei OVHcloud ist.
 
 Wenden Sie sich andernfalls an Ihren DNS-Anbieter, um Subdomains mit Ihrem Domainnamen zu erstellen.
 
@@ -125,22 +124,22 @@ Sie können beispielsweise Folgendes hinzufügen:
 > Aus Sicherheitsgründen müssen Sie der Subdomain auch den Zugriff auf den *Ziel*-Dienst erlauben (Webhosting, E-Mail etc.).
 >
 
-Im nächsten Teil erfahren Sie, wie Sie einer Subdomain den Zugriff auf die verschiedenen von OVHcloud angebotenen Dienste im „Web Cloud“ Universum (Webhosting, Exchange Server etc.) erlauben.
+Im nächsten Teil erfahren Sie, wie Sie einer Subdomain den Zugriff auf die verschiedenen von OVHcloud angebotenen Dienste im Universum Web Cloud (Webhosting, Exchange Server etc.) erlauben.
 
 > [!warning]
 >
-> Wenn Sie eine Subdomain für einen Dienst einrichten möchten, der nicht bei OVHcloud gehostet wird, können wir Ihnen diesbezüglich keine Unterstützung bieten. Bitte wenden Sie sich an Ihren externen Dienstleister, um mit der Konfiguration fortzufahren. 
+> Wenn Sie eine Subdomain für einen Dienst einrichten möchten, der nicht bei OVHcloud gehostet wird, können wir Ihnen diesbezüglich keine Unterstützung bieten. Bitte wenden Sie sich an Ihren Dienstleister, um mit der Konfiguration fortzufahren. 
 >
 
 ### Ihre Subdomain mit einem OVHcloud Dienst verbinden, autorisieren und konfigurieren
 
-Mehrere Dienste aus dem „Web Cloud“ Universum können mit einer Subdomain verwendet werden. Die Zuordnungsprozeduren ähneln denen, die Sie mit einem Domänennamen ausführen sollten. Wir werden Ihnen nur die häufigsten Fälle zeigen.
+Mehrere Dienste aus dem Universum Web Cloud können mit einer Subdomain verwendet werden. Die Zuordnungsprozeduren ähneln denen, die Sie mit einem Domänennamen ausführen sollten. Wir werden Ihnen nur die häufigsten Fälle zeigen.
 
 Nicht aufgeführte Dienste finden Sie in der jeweiligen Service-Dokumentation. So können Sie erkennen, ob diese mit einer Subdomain genutzt werden kann.
 
 #### Fall 1: Eine Website auf meinem OVHcloud Webhosting mit einer Subdomain anzeigen
 
-Loggen Sie sich wie bei einem Domainnamen und um einer Subdomain die Berechtigung zu erteilen, den Inhalt eines *Ziel*-Ordners auf einem Webhosting anzuzeigen, in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und wählen Sie `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Hosting-Pakete`{.action}, wählen Sie das betreffende Angebot aus, in dem sich Ihre Website befindet, und klicken Sie dann auf den Tab `Multisite`{.action}.
+Um einer Subdomain die Berechtigung zu erteilen, den Inhalt eines *Ziel*-Ordners auf einem Webhosting anzuzeigen, loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und wählen Sie `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Hosting-Pakete`{.action}, wählen Sie das betreffende Angebot aus, in dem sich Ihre Website befindet, und klicken Sie dann auf den Tab `Multisite`{.action}.
 
 Hier autorisieren Sie den Zugriff Ihrer Subdomain auf Ihr Webhosting, auf dem sich Ihre Website befindet.
 
@@ -148,12 +147,12 @@ Weitere Informationen zur Konfiguration einer Domain oder Subdomain auf einem We
 
 > [!warning]
 >
-> Um eine Domain oder Subdomain an mehreren Standorten hinzuzufügen, muss möglicherweise ein *token* zur Validierung der Domain eingerichtet werden. Bei einer Subdomain wird das gleiche *token* nicht berücksichtigt und muss nicht für die Subdomain, sondern für den Domainnamen hinzugefügt werden. Fügen Sie in diesem Fall zusätzlich das *token* als DNS-Eintrag vom Typ TXT für den Domainnamen in der aktiven DNS-Zone Ihrer Domain hinzu.
+> Um eine Domain oder Subdomain hinzuzufügen, muss möglicherweise ein *token* zur Validierung der Domain eingerichtet werden. Bei einer Subdomain wird das gleiche *token* nicht berücksichtigt und muss nicht für die Subdomain, sondern für den Domainnamen hinzugefügt werden. Fügen Sie in diesem Fall zusätzlich das *token* als DNS-Eintrag vom Typ TXT für den Domainnamen in der aktiven DNS-Zone Ihrer Domain hinzu.
 >
 
 #### Fall 2 - Exchange E-Mail-Adressen mit einer Subdomain erstellen
 
-Um die Erstellung personalisierter Exchange E-Mail-Adressen mit einer Subdomain zu entsperren, loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und wählen Sie `Web Cloud`{.action} aus. Klicken Sie in der linken Spalte auf `Microsoft`{.action} und dann auf `Exchange`{.action}. Wählen Sie anschließend die Exchange Plattform aus, die Sie mit Ihrer Subdomain verwenden möchten. Gehen Sie auf der angezeigten Seite in den Tab `Assoziierte Domains`{.action} und klicken Sie dann rechts auf den Button `Eine Domain hinzufügen`{.action}.
+Um die Erstellung personalisierter Exchange E-Mail-Adressen mit einer Subdomain zu ermöglichen, loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und wählen Sie `Web Cloud`{.action} aus. Klicken Sie in der linken Spalte auf `Microsoft`{.action} und dann auf `Exchange`{.action}. Wählen Sie anschließend die Exchange Plattform aus, die Sie mit Ihrer Subdomain verwenden möchten. Gehen Sie auf der angezeigten Seite in den Tab `Assoziierte Domains`{.action} und klicken Sie dann rechts auf den Button `Eine Domain hinzufügen`{.action}.
 
 So können Sie Ihre Subdomain auf Ihrer Exchange Plattform deklarieren.
 
@@ -165,7 +164,7 @@ Weitere Informationen zur Konfiguration einer Exchange-Plattform finden Sie in d
 
 #### Fall 3 - E-Mail Pro Adressen mit einer Subdomain erstellen
 
-Um die Erstellung personalisierter E-Mail Pro Adressen mit einer Subdomain zu entsperren, loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und wählen Sie `Web Cloud`{.action} aus. Klicken Sie auf `E-Mail für Profis`{.action} und wählen Sie dann die E-Mail Pro Plattform aus, die Sie mit Ihrer Subdomain verwenden möchten. Gehen Sie auf der angezeigten Seite in den Tab `Assoziierte Domains`{.action} und klicken Sie dann rechts auf den Button `Eine Domain hinzufügen`{.action}.
+Um die Erstellung personalisierter E-Mail Pro Adressen mit einer Subdomain zu ermöglichen, loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und wählen Sie `Web Cloud`{.action} aus. Klicken Sie auf `E-Mail für Profis`{.action} und wählen Sie dann die E-Mail Pro Plattform aus, die Sie mit Ihrer Subdomain verwenden möchten. Gehen Sie auf der angezeigten Seite in den Tab `Assoziierte Domains`{.action} und klicken Sie dann rechts auf den Button `Eine Domain hinzufügen`{.action}.
 
 So können Sie Ihre Subdomain auf Ihrer E-Mail Pro Plattform deklarieren.
 
