@@ -1,7 +1,7 @@
 ---
 title: "Créer une base de données sur son hébergement web"
 excerpt: "Découvrez comment créer une base de données sur votre hébergement web OVHcloud"
-updated: 2023-12-04
+updated: 2023-12-07
 ---
 
 ## Objectif
@@ -13,7 +13,7 @@ Une base de données (BDD) est utilisée pour stocker des éléments dynamiques 
 ## Prérequis
 
 - Disposer d'une offre d'[hébergement web OVHcloud](https://www.ovhcloud.com/fr-ca/web-hosting/) incluant au moins une base de données.
-- Disposer d'une base de données disponible en « création » parmi celles incluses dans votre offre d'hébergement web.
+- Disposer d’une base de données disponible en « création » parmi celles incluses dans votre offre d’hébergement web. Si besoin, vous pouvez ajouter des bases de données [Start SQL](https://www.ovhcloud.com/fr-ca/web-hosting/options/start-sql/) à votre hébergement web.
 - Disposer d'un accès à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) avec les [autorisations nécessaires](/pages/account_and_service_management/account_information/managing_contacts) pour gérer votre hébergement web.
 
 ## En pratique
@@ -25,6 +25,18 @@ Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action
 Le tableau de cette section contient toutes les bases de données créées avec votre hébergement web.
 
 ![databasecreation](images/database-creation-step1.png){.thumbnail}
+
+Dans le tableau, les bases de données peuvent disposer de plusieurs statuts différents :
+
+- **Incluse** : indique que la base de données est comprise dans votre offre d’hébergement web. Elle n’engendre pas de surcoût supplémentaire.</br></br>
+- **Optionnelle** : indique que la base de données a été souscrite en complément des bases de données incluses avec votre hébergement web. Vous payez un complément pour disposer de cette base de données supplémentaire sur votre hébergement web.</br></br>
+- **Incluse - retirée de la vente** : indique que la base de données incluse va bientôt être retirée de la vente et devenir obsolète. </br>Nous vous recommandons, **avant** que la base de données ne devienne obsolète, de récupérer son contenu pour le placer dans une nouvelle base de données plus récente (dont la fin de vente n'est pas encore programmée).</br></br>
+- **Optionnelle - retirée de la vente** : indique que la base de données souscrite en complément sur votre hébergement web va bientôt être retirée de la vente et devenir obsolète. </br>Nous vous recommandons, **avant** que la base de données ne devienne obsolète, de récupérer son contenu pour le placer dans une nouvelle base de données plus récente (dont la fin de vente n'est pas encore programmée).
+
+> [!success]
+>
+> Pour dupliquer rapidement le contenu d'une base de données « **Incluse - retirée de la vente** » ou « **Optionnelle - retirée de la vente** » dans une nouvelle base de données dont l'obsolescence n'est pas encore programmée, consultez notre guide « [Dupliquer le contenu d'une base de données OVHcloud dans une autre](/pages/web_cloud/web_hosting/copy_database) ».
+>
 
 ### Étape 2 - Créer la base de données
 
