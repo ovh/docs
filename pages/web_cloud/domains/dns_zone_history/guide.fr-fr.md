@@ -17,7 +17,7 @@ Vous pouvez, par exemple, y préciser :
 N'hésitez pas à consulter notre documentation sur [les enregistrements DNS et l'édition d'une zone DNS](/pages/web_cloud/domains/dns_zone_edit) depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) si vous souhaitez en apprendre plus sur le sujet.
 Désormais, la gestion des DNS est facilitée grâce à l’historique de vos zones DNS.
 
-**Découvrez comment consulter et manipuler l'historique de vos zones DNS.**
+**Découvrez comment consulter, comparer, télécharger et restaurer vos sauvegardes de zone DNS**
 
 ## Prérequis
 
