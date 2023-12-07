@@ -1,22 +1,22 @@
 ---
-title: Octavia LoadBalancer monitoring with Prometheus
-excerpt: ""
-updated: 2023-12-06
+title: Octavia Load Balancer monitoring with Prometheus
+excerpt: "Discover the various options available to monitor your Octavia Load Balancer"
+updated: 2023-12-07
 ---
 
 ## Objective
 
-Octavia provides multiple ways to monitor your load balancers. You can query statistics via the Octavia API or directly from your load balancer.
+Octavia provides multiple ways to monitor your Load Balancers. You can query statistics via the Octavia API or directly from your Load Balancer.
 
-This guide will discuss the various options available to monitor your Octavia load balancer.
+This guide will discuss the various options available to monitor your Octavia Load Balancer.
 
 ## Instructions
 
-### Monitoring Using the Octavia API
+### Monitoring using the Octavia API
 
-Octavia collects key metrics from all load balancers, including load balancers built with third party provider drivers that support collecting statistics. Octavia aggregates these statistics and makes them available via the Octavia API. Load balancer statistics are available at the load balancer or listener level.
+Octavia collects key metrics from all Load Balancers, including Load Balancers built with third party provider drivers that support collecting statistics. Octavia aggregates these statistics and makes them available via the Octavia API. Load Balancer statistics are available at the Load Balancer or listener level.
 
-Load balancer statistics can be queried using the [OpenStack Client](https://docs.openstack.org/python-openstackclient/latest/).
+Load Balancer statistics can be queried using the [OpenStack Client](https://docs.openstack.org/python-openstackclient/latest/).
 
 ```bash
 $ openstack loadbalancer stats show <lb id>
@@ -48,21 +48,20 @@ $ openstack loadbalancer listener stats show <listener id>
 +--------------------+-------+
 ```
 
-Load balancer statistics queried via the Octavia API include metrics for all listener protocols.
+Load Balancer statistics queried via the Octavia API include metrics for all listener protocols.
 
 ### Monitoring with Prometheus
 
-Some provider drivers, such as the Octavia amphora driver, provide a prometheus endpoint. This allows you to configure your Prometheus infrastructure to collect metrics from Octavia load balancers.
+Some provider drivers, such as the Octavia amphora driver, provide a prometheus endpoint. This allows you to configure your Prometheus infrastructure to collect metrics from Octavia Load Balancers.
 
-To add a Prometheus endpoint on an Octavia load balancer, create a listener with a special protocol `PROMETHEUS`. This will enable the endpoint as `/metrics` on the listener. The listener supports all of the features of an Octavia load balancer, such as allowed_cidrs, but does not support attaching pools or L7 policies. All metrics will be identified by the Octavia object ID (UUID) of the resources.
+To add a Prometheus endpoint on an Octavia Load Balancer, create a listener with a special protocol `PROMETHEUS`. This will enable the endpoint as `/metrics` on the listener. The listener supports all of the features of an Octavia Load Balancer, such as allowed_cidrs, but does not support attaching pools or L7 policies. All metrics will be identified by the Octavia object ID (UUID) of the resources.
 
 > [!primary]
 >
->Currectly UDP and SCTP metrics are not reported via Prometheus endpoints when using the amphora provider.
+> Currently UDP and SCTP metrics are not reported via Prometheus endpoints when using the amphora provider.
 >
 
-To create a Prometheus endpoint on port 8088 for load balancer lb1, you would run the following command.
-
+To create a Prometheus endpoint on port 8088 for Load Balancer lb1, you would run the following command:
 
 ```bash
 $ openstack loadbalancer listener create --name stats-listener --protocol PROMETHEUS --protocol-port 8088 lb1
@@ -103,7 +102,7 @@ $ openstack loadbalancer listener create --name stats-listener --protocol PROMET
 +-----------------------------+--------------------------------------+
 ```
 
-Once the `PROMETHEUS` listener is `ACTIVE`, you can configure Prometheus to collect metrics from the load balancer by updating the prometheus.yml file.
+Once the `PROMETHEUS` listener is `ACTIVE`, you can configure Prometheus to collect metrics from the Load Balancer by updating the `prometheus.yml` file.
 
 ```yaml
 [scrape_configs]
@@ -112,14 +111,14 @@ Once the `PROMETHEUS` listener is `ACTIVE`, you can configure Prometheus to coll
   - targets: ['192.0.2.10:8088']
 ```
 
-For more information on setting up Prometheus, see the [Prometheus project web site](https://prometheus.io/).
+For more information on setting up Prometheus, see the [Prometheus project website](https://prometheus.io/).
 
 > [!primary]
 >
 > The metrics exposed via the `/metrics` endpoint will use a custom Octavia namespace.
 >
 
-You can connect [Grafana](https://grafana.com) to the [Prometheus](https://prometheus.io) instance to provide additional graphing and dashboard capabilities. A Grafana dashboard for Octavia load balancers is included in the etc/grafana directory of the Octavia code.
+You can connect [Grafana](https://grafana.com) to the [Prometheus](https://prometheus.io) instance to provide additional graphing and dashboard capabilities. A Grafana dashboard for Octavia Load Balancers is included in the `etc/grafana` directory of the Octavia code.
 
 ## Go further
 
