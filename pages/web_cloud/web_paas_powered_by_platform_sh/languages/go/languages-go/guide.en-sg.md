@@ -1,12 +1,7 @@
 ---
 title: Go
-slug: languages-go
-section: Languages
-order: 4
+updated: 2023-12-07
 ---
-
-**Last updated 30th November 2023**
-
 
 ## Objective  
 
@@ -29,10 +24,14 @@ You can select the major and minor version. Patch versions are applied periodica
     </thead>
     <tbody>
         <tr>
-            <td>1.21 |  
-|  1.20</td>
+            <td>1.21</td>
             <td>None available</td>
-            <td>None available</thd>
+            <td>None available</td>
+        </tr>
+        <tr>
+            <td>1.20</td>
+            <td>None available</td>
+            <td>None available</td>
         </tr>
     </tbody>
 </table>
@@ -45,13 +44,13 @@ To use Go, specify type as your app's `type`
 
 
 
-```yaml {configFile="app"}
+```yaml 
 type: 'golang:<VERSION_NUMBER>'
 ```
 
 For example:
 
-```yaml {configFile="app"}
+```yaml 
 type: 'golang:1.21'
 ```
 
@@ -85,7 +84,7 @@ The following basic `.platform.app.yaml` file is sufficient to run most Go appli
 
 
 
-```yaml {configFile="app"}
+```yaml 
 name: app
 
 type: golang:1.14
