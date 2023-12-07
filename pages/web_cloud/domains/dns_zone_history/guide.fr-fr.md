@@ -37,7 +37,7 @@ Le tableau qui apparaît représente la zone DNS de votre nom de domaine. Vous y
 
 Pour consulter, comparer, télécharger et restaurer vos sauvegardes de zone DNS, cliquez sur `Voir l’historique de ma zone DNS`{.action}. 
 
-Sur la nouvelle page qui s'affiche, un tableau apparaît contenant l'historique de vos zones DNS, classé de la date la plus récente à la plus ancienne. En tête de ce tableau se trouve la version actuelle de votre zone DNS. Sur cette page, il vous est possible d’effectuer les actions suivantes :
+Sur la nouvelle page qui s'affiche, un tableau apparaît contenant l'historique des sauvegardes de votre zone DNS, classé de la date la plus récente à la plus ancienne. En tête de ce tableau se trouve la version actuelle de votre zone DNS. Sur cette page, vous pouvez effectuer les actions suivantes :
 
 - Visualiser une zone DNS
 - Télécharger une zone DNS
