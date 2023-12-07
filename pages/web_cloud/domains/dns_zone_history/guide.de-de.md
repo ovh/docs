@@ -6,7 +6,7 @@ updated: 2023-12-11
 
 ## Ziel
 
-Die **D**omain **N**ame **S**ystem (**DNS**) einer Domain ist die Konfigurationsdatei der Domain. Sie besteht aus technischen Informationen, die als *DNS* Einträge bezeichnet werden. Die DNS-Zone ist wie ein Datacenter.
+Die **D**omain **N**ame **S**ystem (**DNS**) einer Domain ist die Konfigurationsdatei der Domain. Sie besteht aus technischen Informationen, die als *DNS Einträge* bezeichnet werden. Die DNS-Zone ist wie ein Datacenter.
 
 Sie können beispielsweise Folgendes angeben:
 

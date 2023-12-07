@@ -82,7 +82,7 @@ Cliquez sur `Restaurer`{.action} pour confirmer la restauration ou sur `Annuler`
 
 > [!primary]
 >
-> La modification ou la restauration d'une zone DNS entraîne un délai de propagation de **4 à **24** heures pour être totalement prise en compte sur le réseau DNS.
+> La modification ou la restauration d'une zone DNS entraîne un délai de propagation de **4** à **24** heures pour être totalement prise en compte sur le réseau DNS.
 >
 
 ### Comparer deux zones DNS <a name="compare"></a>
