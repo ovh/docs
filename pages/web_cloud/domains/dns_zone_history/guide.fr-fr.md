@@ -56,7 +56,7 @@ Les données de la zone DNS concernée s’affichent.
 
 Cliquez sur `Fermer`{.action} pour revenir à la page principale « Historique de la zone DNS ».
 
-### Télécharger une zone DNS
+### Télécharger une zone DNS <a name="download"></a>
 
 Pour télécharger la zone DNS de votre choix, identifiez la ligne correspondante dans le tableau puis cliquez sur l'icône présente dans la colonne `Télécharger`{.action}.
 
