@@ -78,6 +78,11 @@ Vérifiez que la date indiquée dans le message correspond à la zone DNS que vo
 
 Cliquez sur `Restaurer`{.action} pour confirmer la restauration ou sur `Annuler`{.action}.
 
+> [!primary]
+>
+> La modification ou la restauration d'une zone DNS entraîne un délai de propagation de **4 à **24** heures pour être totalement prise en compte sur le réseau DNS.
+>
+
 ### Comparer deux zones DNS
 
 Il est possible de comparer le contenu de deux zones DNS. Dans le tableau contenant l’historique de vos zones DNS, identifiez les deux lignes correspondant aux deux zones DNS que vous voulez restaurer (pensez à bien vérifier la date à gauche de chaque ligne) puis sélectionnez-les. Pour comparer ces deux versions de zone DNS, cliquez en haut à gauche sur `Comparer les versions`{.action}.
