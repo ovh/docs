@@ -170,7 +170,7 @@ Find out how to [log in to your Web Hosting plan’s FTP storage space](/pages/w
 > OVHcloud provides an automatic data backup service, as well as the provision of these backups. However, this function is *non-contractual* and is provided in addition to your services. It remains your responsibility to set up your own restoration policy, and to determine restore points at times you deem appropriate.
 >
 
-For shared databases (included in your Web Hosting plan) or database servers (Web Cloud Databases) offered in Gravelines (GRA), France and Beauharnois (BHS), Canada, the databases are backed up every day. These backups are accessible via the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} or via the [OVHcloud API](https://api.ovh.com/). Backups are also stored on another infrastructure. This data is replicated in a datacentre in Strasbourg (SBG). The backup retention policy is 30 days.
+For shared databases (included in your Web Hosting plan) or database servers (Web Cloud Databases) offered in Gravelines (GRA), France and Beauharnois (BHS), Canada, the databases are backed up every day. These backups are accessible via the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external} or via the [OVHcloud API](https://api.ovh.com/). Backups are also stored on another infrastructure. This data is replicated in a data centre in Strasbourg (SBG). The backup retention policy is 30 days.
 
 Find out how to [Retrieve a backup of a Web Hosting plan’s database](/pages/web_cloud/web_hosting/sql_database_export) in our documentation.
 
