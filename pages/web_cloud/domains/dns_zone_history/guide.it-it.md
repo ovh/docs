@@ -1,8 +1,8 @@
---- 
+---
 title: "Gestire la cronologia di una zona DNS"
 excerpt: "Questa guide ti mostra come consultare, confrontare, scaricare e ripristinare i tuoi backup della zona DNS"
 updated: 2023-12-11
---- 
+---
 
 > [!primary]
 > Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
@@ -31,7 +31,7 @@ Da questo momento, la gestione dei DNS è semplificata grazie alla cronologia de
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 - Avere accesso alla gestione del dominio
 
-## In pratica
+## Procedura
 
 Per accedere a questa funzionalità, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e clicca sulla sezione `Web Cloud`{.action} nella parte alta dell’interfaccia. Nella colonna di sinistra, clicca sulla scheda `Domini`{.action} e seleziona il dominio associato alla zona DNS che vuoi modificare.
 
