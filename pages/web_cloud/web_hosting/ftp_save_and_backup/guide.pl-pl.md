@@ -1,7 +1,7 @@
 ---
 title: "Przywracanie plików z kopii zapasowej OVHcloud"
 excerpt: "Dowiedz się, jak przywrócić plik lub całą przestrzeń dyskową Twojego hostingu"
-updated: 2023-01-12
+updated: 2023-12-04
 ---
 
 > [!primary]
@@ -167,11 +167,25 @@ Po zalogowaniu się, pobierz wybrany plik lub pliki. W tym celu przejrzyj zawart
 
 Zanim przejdziesz do kolejnego etapu, upewnij się, że pobrałeś wszystkie pliki, które zamierzasz przywrócić, następnie wyloguj się z przestrzeni dyskowej.
 
+> [!success]
+>
+> Jeśli korzystasz z interfejsu **FTP Explorer**, sprawdź [stronę pomocy](https://net2ftp.cluster020.hosting.ovh.net/help.html){.external}, aby poprawnie wykonać odzyskiwanie plików. Strona ta jest również dostępna poprzez przycisk `Help Guide`{.action} na dole interfejsu logowania do **FTP Explorer**.
+>
+> Jeśli do logowania się do przestrzeni dyskowej FTP używasz innego oprogramowania, zalecamy zapoznanie się z oficjalną dokumentacją dotyczącą oprogramowania, aby móc poprawnie wykonywać operacje.
+>
+
 #### Etap 4: przywracanie wybranego pliku lub plików
 
 Kiedy masz już plik lub pliki, zaloguj się ponownie do przestrzeni dyskowej. Nie dodawaj jednak sufiksu do Twojego użytkownika FTP, aby się zalogować. Jeśli nie wpiszesz sufiksu, zyskasz dostęp do aktualnej zawartości Twojej przestrzeni dyskowej, a nie to wcześniejszej kopii zapasowej.
 
 Po zalogowaniu wgraj wybrany plik lub pliki. W tym celu przejrzyj zawartość Twojego komputera, następnie wybierz pliki i zastąp nimi stare pliki.
+
+> [!success]
+>
+> Jeśli korzystasz z interfejsu **FTP Explorer**, sprawdź [stronę pomocy](https://net2ftp.cluster020.hosting.ovh.net/help.html){.external}, aby poprawnie wykonać przywracanie plików. Strona ta jest również dostępna poprzez przycisk `Help Guide`{.action} na dole interfejsu logowania do **FTP Explorer**.
+>
+> Jeśli do logowania się do przestrzeni dyskowej FTP używasz innego oprogramowania, zalecamy zapoznanie się z oficjalną dokumentacją dotyczącą oprogramowania, aby móc poprawnie wykonywać operacje.
+>
 
 ## Sprawdź również
 

@@ -1,7 +1,7 @@
 ---
 title: "Den Speicherplatz Ihres Webhostings wiederherstellen"
 excerpt: "Erfahren Sie hier, wie Sie eine Datei oder den gesamten Speicherplatz Ihres Webhostings wiederherstellen"
-updated: 2023-01-12
+updated: 2023-12-04
 ---
 
 > [!primary]
@@ -167,11 +167,25 @@ Wählen Sie nach dem Login die Dateien aus, die Sie wiederherstellen möchten. G
 
 Vergewissern Sie sich, bevor Sie zum nächsten Schritt übergehen, dass Sie alle Dateien für die Wiederherstellung heruntergeladen haben, und loggen Sie sich dann aus Ihrem Speicherplatz aus.
 
+> [!success]
+>
+> Wenn Sie das **FTP Explorer** Interface verwenden, können Sie die [Hilfeseite](https://net2ftp.cluster020.hosting.ovh.net/help.html){.external} verwenden, um die Wiederherstellung Ihrer Dateien durchzuführen. Diese Seite ist auch über den Button `Hilfe/Anleitung`{.action} am unteren Rand des **FTP Explorer** verfügbar.
+>
+> Wenn Sie eine andere Software verwenden, um sich mit Ihrem FTP-Speicherplatz zu verbinden, empfehlen wir, die offizielle Dokumentation Ihrer Software zu konsultieren, um die notwendigen Änderungen vorzunehmen.
+>
+
 #### Schritt 4: Die gewünschten Dateien wiederherstellen
 
 Wenn Sie alle Dateien heruntergeladen haben, loggen Sie sich erneut auf Ihrem Speicherplatz ein. Verwenden Sie für diesen Login allerdings den FTP-Benutzernamen ohne die zusätzliche Endung. Indem Sie das Suffix nicht verwenden, loggen Sie sich in die aktuelle Version Ihres Speicherplatzes ein und nicht in eine ältere Backup-Version.
 
 Nach dem Login können Sie die gewünschten Dateien wiederherstellen. Gehen Sie hierfür den Inhalt Ihres Speicherplatzes durch bis Sie die entsprechenden Dateien finden, und ersetzen Sie diese mit den zuvor heruntergeladenen Dateien.
+
+> [!success]
+>
+> Wenn Sie das **FTP Explorer** Interface verwenden, können Sie die [Hilfeseite](https://net2ftp.cluster020.hosting.ovh.net/help.html){.external} verwenden, um die Wiederherstellung Ihrer Dateien durchzuführen. Diese Seite ist auch über den Button `Hilfe/Anleitung`{.action} am unteren Rand des **FTP Explorer** verfügbar.
+>
+> Wenn Sie eine andere Software verwenden, um sich mit Ihrem FTP-Speicherplatz zu verbinden, empfehlen wir, die offizielle Dokumentation Ihrer Software zu konsultieren, um die notwendigen Änderungen vorzunehmen.
+>
 
 ## Weiterführende Informationen
 

@@ -1,7 +1,7 @@
 ---
 title: "Restaurar o espaço de armazenamento do alojamento web"
 excerpt: "Saiba como restaurar um ficheiro ou a totalidade do espaço de armazenamento do seu alojamento web"
-updated: 2023-01-12
+updated: 2023-12-04
 ---
 
 > [!primary]
@@ -167,11 +167,25 @@ Uma vez ligado, deve descarregar os ficheiros que pretende restaurar. Para isso,
 
 Antes de avançar para o passo seguinte, certifique-se de que recuperou todos os ficheiros que pretende restaurar e, em seguida, termine a sessão no seu espaço de armazenamento.
 
+> [!success]
+>
+> Se utilizar a interface do **FTP Explorer**, não hesite em consultar a [página de ajuda](https://net2ftp.cluster020.hosting.ovh.net/help.html){.external} para realizar corretamente a recuperação dos seus ficheiros. Esta página também está acessível através do botão `Help Guide`{.action} situado na parte inferior da interface de ligação ao **FTP Explorer**.
+>
+> Se utilizar outro software para aceder ao seu espaço de armazenamento FTP, recomendamos que consulte a documentação oficial do software para efetuar as operações corretas.
+>
+
 #### 4 - Restaurar os ficheiros
 
 Depois de descarregar os ficheiros, ligue-se novamente ao seu espaço de armazenamento. Mas desta vez, não adicione nenhum sufixo ao utilizador FTP. Desta forma, acederá ao conteúdo atual do seu espaço de armazenamento e não a uma cópia de segurança anterior.
 
 Uma vez ligado, só precisará de restaurar os ficheiros. Para isso, navegue pelo conteúdo do seu espaço de armazenamento até localizar os ficheiros e descarregue-os substituindo os ficheiros anteriores.
+
+> [!success]
+>
+> Se utilizar a interface do **FTP Explorer**, não hesite em consultar a [página de ajuda](https://net2ftp.cluster020.hosting.ovh.net/help.html){.external} para realizar corretamente o restauro dos seus ficheiros. Esta página também está acessível através do botão `Help Guide`{.action} situado na parte inferior da interface de ligação ao **FTP Explorer**.
+>
+> Se utilizar outro software para aceder ao seu espaço de armazenamento FTP, recomendamos que consulte a documentação oficial do software para efetuar as operações corretas.
+>
 
 ## Quer saber mais?
 
