@@ -169,9 +169,9 @@ Vergewissern Sie sich, bevor Sie zum nächsten Schritt übergehen, dass Sie alle
 
 > [!success]
 >
-> Wenn Sie das **FTP Explorer** Interface verwenden, können Sie die [Hilfeseite](https://net2ftp.cluster020.hosting.ovh.net/help.html){.external} besuchen, um die Wiederherstellung Ihrer Dateien durchzuführen. Diese Seite ist auch über den Button `Hilfe/Anleintung`{.action} am unteren Rand des **FTP Explorer** verfügbar.
+> Wenn Sie das **FTP Explorer** Interface verwenden, können Sie die [Hilfeseite](https://net2ftp.cluster020.hosting.ovh.net/help.html){.external} verwenden, um die Wiederherstellung Ihrer Dateien durchzuführen. Diese Seite ist auch über den Button `Hilfe/Anleitung`{.action} am unteren Rand des **FTP Explorer** verfügbar.
 >
-> Wenn Sie eine andere Software verwenden, um sich mit Ihrem FTP-Speicherplatz zu verbinden, empfehlen wir Ihnen, die offizielle Dokumentation Ihrer Software zu konsultieren, um die notwendigen Änderungen vorzunehmen.
+> Wenn Sie eine andere Software verwenden, um sich mit Ihrem FTP-Speicherplatz zu verbinden, empfehlen wir, die offizielle Dokumentation Ihrer Software zu konsultieren, um die notwendigen Änderungen vorzunehmen.
 >
 
 #### Schritt 4: Die gewünschten Dateien wiederherstellen
@@ -182,9 +182,9 @@ Nach dem Login können Sie die gewünschten Dateien wiederherstellen. Gehen Sie 
 
 > [!success]
 >
-> Wenn Sie das **FTP Explorer** Interface verwenden, können Sie die [Hilfeseite](https://net2ftp.cluster020.hosting.ovh.net/help.html){.external} besuchen, um die Wiederherstellung Ihrer Dateien korrekt durchzuführen. Diese Seite ist auch über den Button `Hilfe/Anleintung`{.action} am unteren Rand des **FTP Explorer** verfügbar.
+> Wenn Sie das **FTP Explorer** Interface verwenden, können Sie die [Hilfeseite](https://net2ftp.cluster020.hosting.ovh.net/help.html){.external} verwenden, um die Wiederherstellung Ihrer Dateien durchzuführen. Diese Seite ist auch über den Button `Hilfe/Anleitung`{.action} am unteren Rand des **FTP Explorer** verfügbar.
 >
-> Wenn Sie eine andere Software verwenden, um sich mit Ihrem FTP-Speicherplatz zu verbinden, empfehlen wir Ihnen, die offizielle Dokumentation Ihrer Software zu konsultieren, um die notwendigen Änderungen vorzunehmen.
+> Wenn Sie eine andere Software verwenden, um sich mit Ihrem FTP-Speicherplatz zu verbinden, empfehlen wir, die offizielle Dokumentation Ihrer Software zu konsultieren, um die notwendigen Änderungen vorzunehmen.
 >
 
 ## Weiterführende Informationen
