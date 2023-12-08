@@ -212,7 +212,7 @@ $mail->Password = "IhrPasswort";
 
 > [!primary]
 >
-> Nur unter Verwendung eines OVHcloud E-Mail-Accounts können Sie für `SMTPSecure` auch *"starttls"* oder *"tls"* mit dem `Port` **587** nutzen. Die `SMTPSecure` *"ssl"* mit dem `Port` **465** ist jedoch die bevorzugte Konfiguration für unsere Infrastruktur.
+> Nur bei der Verwendung eines OVHcloud E-Mail-Accounts können Sie für `SMTPSecure` auch *"starttls"* oder *"tls"* mit dem `Port` **587** nutzen. Jedoch ist die Einstellung `SMTPSecure` mit *"ssl"* und dem `Port` **465** die bevorzugte Konfiguration für unsere Infrastruktur.
 >
 
 ## Weiterführende Informationen <a name="go-further"></a> 
