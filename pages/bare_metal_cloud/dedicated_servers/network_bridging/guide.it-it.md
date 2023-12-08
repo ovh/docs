@@ -84,7 +84,7 @@ Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanag
 
 L’indirizzo gateway IPv4 assegnato al tuo server è visualizzato nella sezione `Rete` della scheda `Informazioni generali`{.action}. Una volta effettuata la copia, prosegui con l’applicazione della configurazione.
 
-![gateway](images/ipv4information.png){.thumbnail}
+![gateway](images/ipv4_information.png){.thumbnail}
 
 #### Tramite le API OVHcloud <a name="viaapi"></a>
 

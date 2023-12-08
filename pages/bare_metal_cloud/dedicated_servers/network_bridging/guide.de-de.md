@@ -84,7 +84,7 @@ Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=
 
 Das Ihrem Server zugewiesene IPv4-Gateway wird im Tab `Allgemeine Informationen`{.action} im Bereich `Netzwerk` angezeigt. Nachdem Sie die Adresse kopiert haben, setzen Sie die Konfiguration fort.
 
-![gateway](images/ipv4information.png){.thumbnail}
+![gateway](images/ipv4_information.png){.thumbnail}
 
 #### Über die OVHcloud API <a name="viaapi"></a>
 
