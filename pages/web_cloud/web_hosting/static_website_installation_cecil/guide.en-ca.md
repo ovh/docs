@@ -214,8 +214,14 @@ Using a template engine, widely used in the web developer community, will allow 
 
 ## Go further <a name="go-further"></a>
 
+[Add dynamic content to a static web page generated with Cecil](/pages/web_cloud/web_hosting/static_website_installation_cecil_api_call)
+
 [Cecil application official website](https://cecil.app/){.external}
 
 [A Markdown format guide](https://www.markdownguide.org/){.external}
 
 [Our FileZilla user guide](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)
+
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-ca/directory/).
+
+Join our community of users on <https://community.ovh.com/en/>.
