@@ -967,7 +967,7 @@
             + [Prefect - Guide - Getting Started](public_cloud/integrations/prefect_guide_01_getting_started)
             + [Prefect - Tutorial - Emails notification with blocks and automations](public_cloud/integrations/prefect_tuto_02_block_automation)
             + [Prefect - Tutorial - AI pipeline with training job](public_cloud/integrations/prefect_tuto_03_ai_pipeline)
-    + [Data Platform](products/public_cloud/data_platform)
+    + [Data Platform](products/public-cloud-data-platform)
         + [General information](public-cloud-data-platform-general-information)
             + [What is Data Platform](public_cloud/data_platform/general-what_is_the_data_platform)
             + [Signin Signup](public_cloud/data_platform/general-signin_signup)
