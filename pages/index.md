@@ -79,6 +79,7 @@
     + [Responsibility sharing](account-and-service-management-responsibility-sharing)
         + [Dedicated servers - Shared Responsibility](account_and_service_management/responsibility_sharing/dedicated-servers)
         + [VMware on OVHcloud - Shared Responsibility](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/responsibility-sharing)
+        + [Responsibility sharing for SAP on OVHcloud](hosted_private_cloud/sap_on_ovhcloud/sap_raci)
         + [SecNumcloud-qualified VMware on OVHcloud - Shared Responsibility](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/SNC-responsibility-sharing)
         + [Logs Data Platform - Shared Responsibility](manage_and_operate/observability/logs_data_platform/getting_started_responsibility_model)
         + [Public Cloud Instances - Shared Responsibility](public_cloud/compute/responsibility-model-instances)

@@ -1,12 +1,12 @@
 ---
 title: "Partage de responsabilité sur les solutions SAP on OVHcloud"
 excerpt: "Partage de responsabilité entre OVHcloud et le client pour l'utilisation des solutions SAP on OVHcloud"
-updated: 2023-12-05
+updated: 2023-12-08
 ---
 
 ## Objectif
 
-Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et le client pour les solutions SAP on OVHcloud. Ce modèle peut aider le client à utiliser les solutions SAP on OVHcloud au mieux. Il complète le [RACI "Serveurs dédiés"](https://help.ovhcloud.com/csm/fr-managing-billing-payments-services-raci-dedicated-server?id=kb_article_view&sysparm_article=KB0043102) qui s'applique pour le service SAP HANA on Bare Metal, et le [RACI "VMware on OVHcloud"](https://help.ovhcloud.com/csm/fr-vmware-raci?id=kb_article_view&sysparm_article=KB0057046) qui s'applique pour le service SAP HANA on Private Cloud. L'acronyme "SLES4SAP BYOL" est utilisé pour "SUSE Linux Enterprise Server for SAP Applications Bring Your Own License".
+Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et le client pour les solutions SAP on OVHcloud. Ce modèle peut aider le client à utiliser au mieux les solutions SAP on OVHcloud. Il complète le [RACI "Serveurs dédiés"](/pages/account_and_service_management/responsibility_sharing/dedicated-servers) qui s'applique pour le service SAP HANA on Bare Metal, et le [RACI "VMware on OVHcloud"](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/responsibility-sharing) qui s'applique pour le service SAP HANA on Private Cloud. L'acronyme "SLES4SAP BYOL" est utilisé pour "SUSE Linux Enterprise Server for SAP Applications Bring Your Own License".
 
 | Rôles |
 | --- |
@@ -21,7 +21,7 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 
 | **SAP HANA on Bare Metal** | **SAP HANA on Private Cloud** | **Activité** | **Client** | **OVHcloud** |
 | --- | --- | --- | --- | --- |
-| X | X | Choisir de souscrire au service [Serveur Dédié](https://help.ovhcloud.com/csm/fr-managing-billing-payments-services-raci-dedicated-server?id=kb_article_view&sysparm_article=KB0043102) ou [VMware on OVHcloud](https://help.ovhcloud.com/csm/fr-vmware-raci?id=kb_article_view&sysparm_article=KB0057046) en fonction des besoins et suivre les modèles de responsabilités associés | RA | CI |
+| X | X | Choisir de souscrire au service [Serveur Dédié](/pages/account_and_service_management/responsibility_sharing/dedicated-servers) ou [VMware on OVHcloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/responsibility-sharing) en fonction des besoins et suivre les modèles de responsabilités associés | RA | CI |
 | X | X | Souscrire auprès de SUSE la licence OS nécessaire pour l'utilisation de l'image SLES4SAP BYOL | RA |  |
 | X | X | Détenir les droits de licences des logiciels SAP déployés sur les infrastructures | RA |  |
 | X | X | Souscrire à l'offre Object Storage d'OVHcloud s'il est prévu d'utiliser l'agent de sauvegarde OVHcloud Backint Agent for SAP HANA pour les sauvegardes | RA | CI |
@@ -120,7 +120,7 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 | **SAP HANA on Bare Metal** | **SAP HANA on Private Cloud** | **Activité** | **Client** | **OVHcloud** |
 | --- | --- | --- | --- | --- |
 | X | X | Gérer le cycle de vie de l'OS SLES4SAP, réaliser les opérations de patching et de montée de versions | RA |  |
-| X | X | Gérer le cycle de vie des solutions SAP réaliser les opérations de patching et de montée de versions, y compris pour la base de données SAP HANA | RA |  |
+| X | X | Gérer le cycle de vie des solutions SAP, réaliser les opérations de patching et de montée de versions, y compris pour la base de données SAP HANA | RA |  |
 
 ### 4. Réversibilité
 
@@ -134,7 +134,7 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 
 | **SAP HANA on Bare Metal** | **SAP HANA on Private Cloud** | **Activité** | **Client** | **OVHcloud** |
 | --- | --- | --- | --- | --- |
-| X | X | Choisir de migrer les données selon soit le modèle de migration des infrastructures sous-jacentes ou d'utiliser les outils de migration de l'éditeur SP (exemple OS / DB migration ou autre ) | RA |  |
+| X | X | Choisir de migrer les données soit selon le modèle de migration des infrastructures sous-jacentes, soit d'utiliser les outils de migration de l'éditeur SP (exemple OS / DB migration ou autre ) | RA |  |
 
 ### 5. Fin de service
 
@@ -144,7 +144,7 @@ Le RACI ci-dessous détaille le partage des responsabilités entre OVHcloud et l
 | --- | --- | --- | --- | --- |
 | X | X | Suppression des sauvegardes SAP HANA, y compris celles réalisées par "OVHcloud Backint Agent for SAP HANA" sur le service Object Storage d'OVHcloud | RA |  |
 | X | X | Résilier les services sous-jacents en support des logiciels SAP installés | RA | I |
-| X | X | Décommissionner les configurations liés aux services fournis  | I | RA |
+| X | X | Décommissionner les configurations liées aux services fournis  | I | RA |
 
 #### 5.2. Destruction des données
 
