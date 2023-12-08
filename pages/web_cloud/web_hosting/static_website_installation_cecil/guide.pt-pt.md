@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Instalação e configuração de Cecil, um gerador de sites estáticos (SSG) em PHP"
 excerpt: "Descubra como Cecil lhe permite criar o seu site estático com a ajuda de um motor de template moderno (Jamstack)"
-updated: 2023-01-17
+updated: 2023-12-08
 ---
 
 > [!primary]
@@ -211,8 +211,14 @@ A utilização de um motor de template, muito utilizado na comunidade de program
 
 ## Quer saber mais?
 
+[Adicionar conteúdo dinâmico a uma página web estática gerada com Cecil](/pages/web_cloud/web_hosting/static_website_installation_cecil_api_call)
+
 O [site oficial da aplicação Cecil](https://cecil.app/){.external}
 
 Um [guia sobre o formato Markdown](https://www.markdownguide.org/){.external}
 
 Nosso [guia sobre a utilização do FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)
+
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
+
+Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

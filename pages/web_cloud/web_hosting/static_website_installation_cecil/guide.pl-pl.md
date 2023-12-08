@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Instalacja i konfiguracja Cecil, generatora stron statycznych (SSG) w PHP"
 excerpt: "Dowiedz się, jak Cecil pozwala na tworzenie strony statycznej przy użyciu nowoczesnego silnika szablonu (Jamstack)"
-updated: 2023-01-17
+updated: 2023-12-08
 ---
 
 > [!primary]
@@ -211,8 +211,14 @@ Korzystanie z silnika szablonu, bardzo popularnego wśród deweloperów WWW, poz
 
 ## Sprawdź również
 
+[Dodaj dynamiczne treści do statycznej strony internetowej generowanej przez Cecil](/pages/web_cloud/web_hosting/static_website_installation_cecil_api_call)
+
 [Oficjalna strona aplikacji Cecil](https://cecil.app/){.external}
 
 Un [przewodnik na temat formatu Markdown](https://www.markdownguide.org/){.external}
 
 Nasz [Przewodnik dotyczący korzystania z FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)
+
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.
