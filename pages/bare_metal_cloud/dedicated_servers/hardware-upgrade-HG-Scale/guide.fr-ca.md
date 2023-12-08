@@ -1,7 +1,7 @@
 ---
 title: "Mise à niveau du matériel sur un serveur dédié High Grade ou Scale"
 excerpt: 'Découvrez comment demander une mise à niveau du matériel pour les gammes High Grade et SCALE via votre espace client'
-update: 2023-12-06
+updated: 2023-12-06
 ---
 
 ## Objectif

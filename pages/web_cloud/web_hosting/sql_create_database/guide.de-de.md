@@ -16,7 +16,7 @@ Datenbanken (DBs) werden verwendet, um dynamische Elemente (Verbindungsdaten, Be
 
 ## Voraussetzungen
 
-- Sie verfügen über ein [OVHcloud Webhosting](hhttps://www.ovhcloud.com/de/web-hosting/) Angebot mit mindestens einer inkludierten Datenbank.
+- Sie verfügen über ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) Angebot mit mindestens einer inkludierten Datenbank.
 - Eine in Ihrem Webhosting Angebot enthaltene Datenbanken ist noch verfügbar.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) mit den [erforderlichen Berechtigungen](/pages/account_and_service_management/account_information/managing_contacts) zur Verwaltung des Webhostings.
 
