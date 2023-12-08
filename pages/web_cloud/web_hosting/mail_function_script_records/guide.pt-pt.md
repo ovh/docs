@@ -1,7 +1,7 @@
 ---
-title: Alojamento partilhado Seguimento dos emails automatizados
-excerpt: Seguimento dos seus emails enviados a partir de um website num alojamento partilhado OVHcloud
-updated: 2022-10-12
+title: "Alojamento partilhado Seguimento dos emails automatizados"
+excerpt: "Seguimento dos seus emails enviados a partir de um website num alojamento partilhado OVHcloud"
+updated: 2023-12-04
 ---
 
 > [!primary]
@@ -212,7 +212,7 @@ $mail->Password = "YourEmailPassword";
 
 > [!primary]
 >
-> Se utilizar um endereço de e-mail da OVHcloud e apenas neste caso, pode também utilizar o `SMTPSecure` *"startls"* ou *"tls"* através do `Port` **587**. No entanto, o `SMTPSecure` *"ssl"* com o `Port` **465** deve ser privilegiado.
+> Se utilizar um endereço de e-mail da OVHcloud e apenas neste caso, pode também utilizar o `SMTPSecure` *"startls"* ou *"tls"* através do `Port` **587**. No entanto, o `SMTPSecure` *"ssl"* com o `Port` **465** continua a ser a configuração a privilegiar na nossa infraestrutura.
 >
 
 ## Quer saber mais? <a name="go-further"></a>

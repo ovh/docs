@@ -1,7 +1,7 @@
 ---
 title: "Gestire l’invio delle email automatiche"
-excerpt: "Come monitorare e gestire le email automatiche inviate da un hosting Web OVHcloud"
-updated: 2022-10-12
+excerpt: "Questa guida ti mostra come monitorare e gestire le email automatiche inviate da un hosting Web OVHcloud"
+updated: 2023-12-04
 ---
 
 > [!primary]
@@ -212,7 +212,7 @@ $mail->Password = "YourEmailPassword";
 
 > [!primary]
 >
-> Se utilizzi un indirizzo email OVHcloud e solo in questo caso, puoi anche utilizzare `SMTPSecure` *"startls"* o *"tls"* con `Port` **587**. Tuttavia, la `SMTPSecure` *"ssl"* con la `Port` **465** restano da privilegiare.
+> Se utilizzi un indirizzo email OVHcloud e solo in questo caso, puoi anche utilizzare `SMTPSecure` *"startls"* o *"tls"* con `Port` **587**. Tuttavia, il `SMTPSecure` *"ssl"* con il `Port` **465** resta la configurazione da privilegiare sulla nostra infrastruttura.
 >
 
 ## Per saperne di più <a name="go-further"></a>
