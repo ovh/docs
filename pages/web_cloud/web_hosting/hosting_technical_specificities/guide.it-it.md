@@ -1,7 +1,7 @@
 ---
 title: "Specifiche tecniche degli hosting condivisi"
 excerpt: "Questa guida ti mostra le informazioni e le specifiche tecniche relative agli hosting Web"
-updated: 2023-12-07
+updated: 2023-12-08
 ---
 
 > [!primary]
@@ -174,7 +174,7 @@ Questa guida ti mostra come [accedere allo spazio di storage FTP del tuo hosting
 > OVHcloud fornisce un servizio di backup automatico dei dati e la messa a disposizione di questi backup. *non contrattuale* ed è presente in aggiunta ai tuoi servizi. Effettivamente, è vostra responsabilità impostare la vostra propria politica di ripristino e determinare i punti di ripristino nel momento che ritenete opportuno.
 >
 
-Per i database condivisi (inclusi nella tua offerta di hosting Web) o i server di database (Web Cloud Databases), proposti su Gravelines (GRA), in Francia e Beauharnois (BHS), in Canada, il backup dei database è fatto tutti i giorni. Questi backup sono accessibili (dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} o tramite le [API OVHcloud](https://api.ovh.com/). I backup vengono inoltre archiviati su un'altra infrastruttura. Questi dati vengono replicati in 3 localizzazioni differenti in Francia: Roubaix(RBX), Strasburgo(SBG) e Gravelines(GRA). La politica di conservazione dei backup è di 30 giorni.
+Per i database condivisi (inclusi nella tua offerta di hosting Web) o i server di database (Web Cloud Databases), proposti su Gravelines (GRA), in Francia e Beauharnois (BHS), in Canada, il backup dei database è fatto tutti i giorni. Questi backup sono accessibili (dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} o tramite le [API OVHcloud](https://api.ovh.com/). I backup vengono inoltre archiviati su un'altra infrastruttura. Questi dati vengono replicati in un datacenter situato a Strasburgo (SBG). La politica di conservazione dei backup è di 30 giorni.
 
 Questa guida ti mostra come [Recuperare il backup del database di un hosting Web](/pages/web_cloud/web_hosting/sql_database_export) nella nostra documentazione.
 
