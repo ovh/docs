@@ -218,10 +218,14 @@ Die Verwendung einer Template Engine, die in der Web-Entwickler-Community weit v
 
 ## Weiterführende Informationen <a name="go-further"></a>
 
+[Dynamischen Inhalt auf einer statischen Webseite hinzufügen, die mit Cecil erstellt wurde](/pages/web_cloud/web_hosting/static_website_installation_cecil_api_call)
+
 [Offizielle Webseite von Cecil](https://cecil.app/){.external}
 
 [Hilfe zum Markdown-Format](https://www.markdownguide.org/){.external}
 
 [Verwendung von FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)
+
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.
