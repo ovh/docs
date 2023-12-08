@@ -1,6 +1,6 @@
 ---
-title: "Den Verlauf einer DNS-Zone verwalten"
-excerpt: "Erfahren Sie, wie Sie Ihre Backups der DNS-Zone einsehen, vergleichen, herunterladen und wiederherstellen können"
+title: "Den Versionsverlauf einer DNS-Zone verwalten"
+excerpt: "Erfahren Sie hier, wie Sie Backups der DNS-Zone mithilfe der History-Funktion einsehen, vergleichen, herunterladen und wiederherstellen können"
 updated: 2023-12-11
 ---
 
@@ -10,32 +10,28 @@ updated: 2023-12-11
 
 ## Ziel
 
-Die **D**omain **N**ame **S**ystem (**DNS**) einer Domain ist die Konfigurationsdatei der Domain. Sie besteht aus technischen Informationen, die als *DNS Einträge* bezeichnet werden. Die DNS-Zone ist wie ein Datacenter.
+Die **DNS**-Zone (**D**omain **N**ame **S**ystem) ist die Konfigurationsdatei eines Domainnamens, die sich aus **DNS-Einträgen** zusammensetzt. Das sind Datensätze, die dem Domainnamen verschiedene Dienste und Funktionen zuordnen, zum Beispiel:
 
-Sie können beispielsweise Folgendes angeben:
+- Die IP-Adresse (DNS-Einträge vom Typ *A* und *AAAA*) Ihres Hostings muss in der Zone eingetragen sein, damit Ihre Webseite angezeigt wird, wenn der Domainname in einen Browser eingegeben wird.
+- Die E-Mail-Server (DNS-Einträge vom Typ *MX*), die E-Mails erhalten sollen, die an Adressen mit diesem Domainnamen versendet wurden. Wenn Sie die MX-Einträge Ihres Domainnamens konfigurieren, können Sie E-Mails über Ihre personalisierten E-Mail-Adressen empfangen.
+- Informationen zur Sicherheit/Authentifizierung von Diensten (Webhosting, Webserver, E-Mail-Server, etc.), die mit Ihrem Domainnamen verbunden sind (DNS-Einträge vom Typ *SPF*, *DKIM*, *DMARC*, etc.).
 
-- Die IP-Adresse (DNS-Einträge vom Typ *A* und *AAAA*) Ihres Webhostings, um Ihre Website mit Ihrem Domainnamen anzuzeigen.
-- Die E-Mail-Server (DNS-Einträge vom Typ *MX*), auf die Ihre Domain die von ihr empfangenen E-Mails weiterleiten soll. So können Sie diese über Ihre personalisierte(n) E-Mail-Adresse(n) mit Ihrem Domainnamen einsehen.
-- Informationen zur Sicherheit / Authentifizierung Ihrer Dienste (Webhosting, Webserver, E-Mail-Server etc.), die mit Ihrem Domainnamen verbunden sind (DNS-Einträge vom Typ *SPF*, *DKIM*, *DMARC* etc.).
-
-Weitere Informationen hierzu finden Sie in unserer Dokumentation zu [DNS-Einträgen und Bearbeiten einer DNS-Zone](/pages/web_cloud/domains/dns_zone_edit) in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+Für weitere Informationen zu DNS-Zonen und wie Sie diese im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) editieren, lesen Sie [unsere Dokumentation zu DNS](/pages/web_cloud/domains/dns_zone_edit).
 Es kann aus verschiedenen Gründen erforderlich sein, eine alte DNS-Konfiguration auf Ihre Domain anzuwenden.
 
-Ab sofort wird die Verwaltung der DNS dank der History Ihrer DNS Zonen vereinfacht.
+Die Verwaltung von DNS wird mit dem Zugriff auf den Verlauf Ihrer DNS-Zonen vereinfacht.
 
-**Diese Anleitung erklärt, wie Sie Ihre Backups der DNS-Zone einsehen, vergleichen, herunterladen und wiederherstellen können**
+**Diese Anleitung erklärt, wie Sie ältere Versionen Ihrer DNS-Zone einsehen, vergleichen, herunterladen und wiederherstellen können.**
 
 ## Voraussetzungen
 
-- Sie haben eine DNS-Zone für Ihre Domain in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de)
-- Sie sind im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) eingeloggt
-- Sie haben Zugriff auf die Verwaltung der betreffenden Domain
+- Sie haben eine DNS-Zone für Ihren Domainnamens in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
+- Sie haben die erforderlichen Berechtigungen zum Verwalten des Domainnamens.
 
 ## In der praktischen Anwendung
 
-Um auf diese Funktion zuzugreifen, loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und gehen Sie in den Bereich `Web Cloud`{.action} oben im Interface. Gehen Sie in der linken Spalte auf den Tab `Domainnamen`{.action} und wählen Sie den Domainnamen aus, der mit der DNS-Zone verbunden ist, die Sie bearbeiten möchten.
-
-Wenn Sie auf der angezeigten Seite noch nicht auf diesen Tab weitergeleitet wurden, klicken Sie auf den Tab `DNS-Zone`{.action}.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Domainnamen`{.action} und wählen Sie den Domainnamen aus, dessen DNS-Zone Sie bearbeiten möchten. Öffnen Sie den Tab `DNS-Zone`{.action}.
 
 Die angezeigte Tabelle stellt die DNS-Zone Ihrer Domain dar. Dort finden Sie die Liste der darin enthaltenen DNS-Einträge. Rechts in der Tabelle finden Sie mehrere Schaltflächen, mit denen Sie Aktionen in Ihrer DNS-Zone durchführen können. 
 
@@ -43,7 +39,7 @@ Die angezeigte Tabelle stellt die DNS-Zone Ihrer Domain dar. Dort finden Sie die
 
 Klicken Sie auf `Den Verlauf meiner DNS-Zone einsehen`{.action}. 
 
-Auf der neu geöffneten Seite wird eine Tabelle mit dem Backup-Verlauf Ihrer DNS-Zone angezeigt. Diese wird nach dem letzten und dem letzten Datum sortiert. Am Anfang dieser Tabelle steht die aktuelle Version Ihrer DNS-Zone. Auf dieser Seite können Sie folgende Aktionen ausführen:
+Auf der neu geöffneten Seite wird eine Tabelle mit dem Versionsverlauf Ihrer DNS-Zone angezeigt. Er wird absteigend von der jüngsten Version sortiert. Am Anfang der Tabelle befindet sich die aktuelle Version Ihrer DNS-Zone. Auf dieser Seite können Sie folgende Aktionen ausführen:
 
 - [DNS Zone anzeigen](#view)
 - [DNS Zone herunterladen](#download)
@@ -56,7 +52,7 @@ Um die gewünschte DNS-Zone anzuzeigen, geben Sie die Zeile in der Tabelle an un
 
 ![DNS Zone anzeigen](images/visualize-dns-eyes.png){.thumbnail}
 
-Die Daten der betreffenden DNS-Zone werden angezeigt.
+Die Einträge der ausgewählten DNS-Zone werden angezeigt.
 
 ![Details einer DNS-Zone](images/details-dns-zone.png){.thumbnail}
 
@@ -64,11 +60,11 @@ Klicken Sie auf `Schließen`{.action}, um zur Hauptseite „History der DNS-Zone
 
 ### DNS Zone herunterladen <a name="download"></a>
 
-Um die gewünschte DNS-Zone herunterzuladen identifizieren Sie die entsprechende Zeile in der Tabelle und klicken Sie dann auf das Symbol in der Spalte `Herunterladen`{.action}.
+Um die gewünschte DNS-Zone herunterzuladen, identifizieren Sie die entsprechende Zeile in der Tabelle und klicken Sie dann auf das Symbol in der Spalte `Herunterladen`{.action}.
 
 ![DNS-Zone herunterladen](images/download-dns-zone.png){.thumbnail}
 
-Die DNS Zone wird im .txt Format heruntergeladen.
+Die DNS Zone wird im Format *.txt* heruntergeladen.
 
 ### DNS Zone wiederherstellen <a name="restore"></a>
 
@@ -80,7 +76,7 @@ Das folgende Fenster wird angezeigt.
 
 ![Bestätigung DNS-Zone wiederherstellen](images/confirmation-restore-dns-zone.png){.thumbnail}
 
-Stellen Sie sicher, dass das Datum in der Nachricht mit der DNS-Zone übereinstimmt, die Sie wiederherstellen möchten. Wie das gelbe Banner zeigt, wird die aktuelle DNS-Zone (die in der Liste der DNS-Zonenversionen ganz oben angezeigt wird) gelöscht und durch die DNS-Zone ersetzt, die Sie wiederherstellen möchten.
+Stellen Sie sicher, dass das Datum in der Nachricht mit der DNS-Zone übereinstimmt, die Sie wiederherstellen möchten. Wie das gelbe Banner zeigt, wird die aktuelle DNS-Zone (die in der Liste der DNS-Zonenversionen ganz oben angezeigt wird) gelöscht und durch die DNS-Zone ersetzt, die Sie wiederherstellen.
 
 Klicken Sie auf `Wiederherstellen`{.action}, um die Wiederherstellung zu bestätigen, oder auf `Abbrechen`{.action}.
 
@@ -91,7 +87,7 @@ Klicken Sie auf `Wiederherstellen`{.action}, um die Wiederherstellung zu bestät
 
 ### Zwei DNS-Zonen vergleichen <a name="compare"></a>
 
-Sie können den Inhalt zweier DNS-Zonen vergleichen. Suchen Sie in der Tabelle mit der History Ihrer DNS-Zone die beiden Zeilen, die den beiden DNS-Zonen entsprechen, die Sie vergleichen möchten (überprüfen Sie bitte das Datum links neben jeder Zeile), und wählen Sie diese aus. Um diese beiden Versionen der DNS-Zone zu vergleichen, klicken Sie oben links auf `Versionen vergleichen`{.action}.
+Sie können den Inhalt zweier DNS-Zonen vergleichen. Suchen Sie in der Tabelle mit der History Ihrer DNS-Zone die beiden Zeilen, die den beiden DNS-Zonen entsprechen, die Sie vergleichen möchten (überprüfen Sie das Datum links neben jeder Zeile), und wählen Sie diese aus. Um diese beiden Versionen der DNS-Zone zu vergleichen, klicken Sie oben links auf `Versionen vergleichen`{.action}.
 
 ![Zwei DNS-Zonen vergleichen](images/compare-two-dns-zone.png){.thumbnail}
 
