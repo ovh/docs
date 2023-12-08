@@ -1,7 +1,7 @@
 ---
-title: 'Alterar o titular de um nome de domínio'
-excerpt: 'Neste guia, encontrará várias informações sobre a alteração de titular de um nome de domínio.'
-updated: 2023-10-23
+title: "Alterar o titular de um nome de domínio"
+excerpt: "Neste guia, encontrará várias informações sobre a alteração de titular de um nome de domínio."
+updated: 2023-12-04
 ---
 
 > [!primary]
@@ -84,6 +84,9 @@ Se o endereço de e-mail não for alterado devido à mudança de proprietário, 
 > O procedimento deve ser validado por ambas as partes no prazo de 14 dias a contar do pedido.
 >
 > Se uma das partes recusar a alteração, o pedido será anulado.
+>
+> Se o endereço de e-mail do atual proprietário estiver obsoleto ou inacessível, pode, **neste caso preciso**, contactar diretamente o suporte através da criação de um ticket de assistência a partir do seu [centro de ajuda OVHcloud](https://help.ovhcloud.com/csm?id=csm_cases_requests).
+>
 
 > [!warning]
 >
