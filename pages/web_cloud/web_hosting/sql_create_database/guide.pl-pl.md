@@ -17,7 +17,7 @@ Baza danych (bazy danych) służy do przechowywania elementów dynamicznych (dan
 ## Wymagania początkowe
 
 - Posiadanie hostingu [OVHcloud](https://www.ovhcloud.com/pl/web-hosting/) zawierającego co najmniej jedną bazę danych.
-- Posiadanie bazy danych dostępnej w opcji "create", spośród baz danych zawartych w Twojej usłudze hostingu.
+- Posiadanie "utworzonej" bazy danych zawierającej dane zawarte w Twojej usłudze hostingu. W razie potrzeby możesz dodać bazy danych [Start SQL](https://www.ovhcloud.com/pl/web-hosting/options/start-sql/) do Twojego hostingu.
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) z [niezbędnymi uprawnieniami](/pages/account_and_service_management/account_information/managing_contacts) w celu zarządzania hostingiem.
 
 ## W praktyce

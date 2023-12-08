@@ -17,7 +17,7 @@ Un database (BDD) è utilizzato per archiviare elementi dinamici (dati di connes
 ## Prerequisiti
 
 - Disporre di una soluzione di [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/) che includa almeno un database.
-- Disporre di un database disponibile in "creazione" tra quelli inclusi nel piano di hosting Web.
+- Disporre di un database disponibile in "creazione" tra quelli inclusi nel piano di hosting Web. Se necessario, è possibile aggiungere database [Start SQL](https://www.ovhcloud.com/it/web-hosting/options/start-sql/) al proprio hosting Web.
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) con le [autorizzazioni necessarie](/pages/account_and_service_management/account_information/managing_contacts) per gestire l’hosting Web.
 
 ## Procedura
