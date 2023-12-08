@@ -28,7 +28,7 @@ Dzięki historii stref DNS zarządzanie serwerami DNS stało się łatwiejsze.
 ## Wymagania początkowe
 
 - Strefa DNS dla Twojej domeny w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
-- Dostęp do[panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
+- Dostęp do [panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
 - Dostęp do interfejsu zarządzania domeną
 
 ## W praktyce
