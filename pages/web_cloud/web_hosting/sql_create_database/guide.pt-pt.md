@@ -1,7 +1,7 @@
 ---
 title: "Criar uma base de dados num alojamento web"
 excerpt: "Saiba como criar uma base de dados no seu alojamento web OVHcloud"
-updated: 2023-12-04
+updated: 2023-12-08
 ---
 
 > [!primary]

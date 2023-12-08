@@ -1,7 +1,7 @@
 ---
 title: "Eine Datenbank auf Ihrem Webhosting erstellen"
 excerpt: "Erfahren Sie hier, wie Sie in OVHcloud Webhostings enthaltene Datenbanken verwenden"
-updated: 2023-12-04
+updated: 2023-12-08
 ---
 
 > [!primary]
@@ -17,7 +17,7 @@ Datenbanken (DBs) werden verwendet, um dynamische Elemente (Verbindungsdaten, Be
 ## Voraussetzungen
 
 - Sie verfügen über ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) Angebot mit mindestens einer inkludierten Datenbank.
-- Eine in Ihrem Webhosting Angebot enthaltene Datenbanken ist noch verfügbar.
+- Sie verfügen über eine Datenbank, die als „Erstellung“ unter den in Ihrem Webhosting Angebot enthaltenen Datenbanken verfügbar ist. Bei Bedarf können Sie [Start SQL](https://www.ovhcloud.com/de/web-hosting/options/start-sql/) Datenbanken  zu Ihrem Webhosting hinzufügen.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) mit den [erforderlichen Berechtigungen](/pages/account_and_service_management/account_information/managing_contacts) zur Verwaltung des Webhostings.
 
 ## In der praktischen Anwendung

@@ -1,7 +1,7 @@
 ---
 title: "Crear una base de datos en un alojamiento web"
 excerpt: "Descubra cómo crear una base de datos en un alojamiento web de OVHcloud"
-updated: 2023-12-04
+updated: 2023-12-08
 ---
 
 > [!primary]
@@ -17,7 +17,7 @@ Una base de datos (BD) se utiliza para almacenar elementos dinámicos (datos de 
 ## Requisitos
 
 - Tener contratado un plan de [alojamiento web de OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/) que incluya al menos una base de datos.
-- Disponer de una base de datos disponible en "creación" entre las incluidas en su plan de hosting.
+- Disponer de una base de datos disponible en "creación" entre las que se incluyen en el plan de hosting. Si lo necesita, puede añadir bases de datos [Start SQL](https://www.ovhcloud.com/es-es/web-hosting/options/start-sql/) a su alojamiento web.
 - Tener acceso al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) con los [permisos necesarios](/pages/account_and_service_management/account_information/managing_contacts) para gestionar el alojamiento web.
 
 ## Procedimiento

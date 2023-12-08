@@ -1,7 +1,7 @@
 ---
 title: "Creare un database su un hosting Web"
 excerpt: "Questa guida ti mostra come creare un database sul tuo hosting Web OVHcloud"
-updated: 2023-12-04
+updated: 2023-12-08
 ---
 
 > [!primary]
