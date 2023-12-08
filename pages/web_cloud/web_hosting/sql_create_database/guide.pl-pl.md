@@ -30,6 +30,18 @@ Tabela w tej sekcji zawiera wszystkie bazy danych utworzone w ramach Twojego hos
 
 ![databasecreation](images/database-creation-step1.png){.thumbnail}
 
+W tabeli bazy danych mogą mieć kilka różnych statusów:
+
+- **W pakiecie**: wskazuje, że baza danych jest zawarta w Twojej usłudze hostingu. Nie powoduje to dodatkowych kosztów.</br></br>
+- **Opcjonalnie**: wskazuje, że baza danych została wykupiona jako uzupełnienie baz danych zawartych w hostingu. Płacisz jedynie za dodatkową bazę danych na Twoim hostingu.</br></br>
+- **W pakiecie - wycofane ze sprzedaży**: wskazuje, że baza danych zawarta w ofercie zostanie wkrótce wycofana ze sprzedaży i stanie się nieaktualna. </br>Zalecamy, aby baza danych stała się przestarzała **przed**, pobrać jej zawartość i przenieść ją do nowej, nowszej bazy danych (której zakończenie sprzedaży nie jest jeszcze zaplanowane).</br></br>
+- **Opcjonalnie - wycofane ze sprzedaży**: wskazuje, że baza danych wykupiona dodatkowo na Twoim hostingu zostanie wkrótce usunięta ze sprzedaży i stanie się nieaktualna. </br>Zalecamy, aby baza danych stała się przestarzała **przed**, odzyskać jej zawartość i przenieść ją do nowej, nowszej bazy danych (której zakończenie sprzedaży nie jest jeszcze zaplanowane).
+
+> [!success]
+>
+> Aby szybko zduplikować zawartość bazy danych "**W pakiecie - wycofane ze sprzedaży**" lub "**Opcjonalnie - wycofane ze sprzedaży**" w nowej bazie danych, której starzenie się nie zostało jeszcze zaprogramowane, zapoznaj się z naszym przewodnikiem "[Duplikuj zawartość bazy danych OVHcloud w innej](/pages/web_cloud/web_hosting/copy_database)".
+>
+
 ### Etap 2 - Tworzenie bazy danych
 
 Istnieją dwa sposoby tworzenia nowej bazy danych:

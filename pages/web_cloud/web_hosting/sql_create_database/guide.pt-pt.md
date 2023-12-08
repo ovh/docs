@@ -30,16 +30,16 @@ A tabela desta secção contém todas as bases de dados criadas com o seu alojam
 
 ![databasecreation](images/database-creation-step1.png){.thumbnail}
 
-W tabeli bazy danych mogą mieć kilka różnych statusów:
+Na tabela, as bases de dados podem ter vários estados diferentes:
 
-- **W pakiecie**: wskazuje, że baza danych jest zawarta w Twojej usłudze hostingu. Nie powoduje to dodatkowych kosztów.</br></br>
-- **Opcjonalnie**: wskazuje, że baza danych została wykupiona jako uzupełnienie baz danych zawartych w hostingu. Płacisz jedynie za dodatkową bazę danych na Twoim hostingu.</br></br>
-- **W pakiecie - wycofane ze sprzedaży**: wskazuje, że baza danych zawarta w ofercie zostanie wkrótce wycofana ze sprzedaży i stanie się nieaktualna. </br>Zalecamy, aby baza danych stała się przestarzała **przed**, pobrać jej zawartość i przenieść ją do nowej, nowszej bazy danych (której zakończenie sprzedaży nie jest jeszcze zaplanowane).</br></br>
-- **Opcjonalnie - wycofane ze sprzedaży**: wskazuje, że baza danych wykupiona dodatkowo na Twoim hostingu zostanie wkrótce usunięta ze sprzedaży i stanie się nieaktualna. </br>Zalecamy, aby baza danych stała się przestarzała **przed**, odzyskać jej zawartość i przenieść ją do nowej, nowszej bazy danych (której zakończenie sprzedaży nie jest jeszcze zaplanowane).
+- **Incluída**: indica que a base de dados está incluída na sua oferta de alojamento web. Não implica custos adicionais.</br></br>
+- **Opcional** : indica que a base de dados foi subscrita em complemento das bases de dados incluídas com o seu alojamento web. Paga um complemento para dispor desta base de dados suplementar no seu alojamento web.</br></br>
+- **Incluída - retirada da venda**: indica que a base de dados incluída será em breve retirada da venda e tornar-se-á obsoleta. </br>Antes de o banco de dados se tornar obsoleto, recomendamos que recupere o seu conteúdo para o colocar numa nova base de dados mais recente (cujo escoamento ainda não está agendado para terminar).</br></br>
+- **Opcional - retirada da venda** : indica que a base de dados subscrita em complemento do seu alojamento web ficará em breve retirada da venda e tornar-se-á obsoleta. </br>Antes de o banco de dados se tornar obsoleto, recomendamos que recupere o seu conteúdo para o colocar numa nova base de dados mais recente (cuja venda ainda não está agendada para terminar).
 
 > [!success]
 >
-> Aby szybko zduplikować zawartość bazy danych "**W pakiecie - wycofane ze sprzedaży**" lub "**Opcjonalnie - wycofane ze sprzedaży**" w nowej bazie danych, której starzenie się nie zostało jeszcze zaprogramowane, zapoznaj się z naszym przewodnikiem "[Duplikuj zawartość bazy danych OVHcloud w innej](/pages/web_cloud/web_hosting/copy_database)".
+> Para duplicar rapidamente o conteúdo de uma base de dados "**Incluída - retirada da venda**" ou "**Opcional - retirada da venda**" numa nova base de dados cuja obsolescência ainda não está programada, consulte o guia "[Duplicar o conteúdo de uma base de dados OVHcloud noutra](/pages/web_cloud/web_hosting/copy_database)".
 >
 
 ### Etapa 2 - Criar a base de dados
