@@ -1,7 +1,7 @@
 ---
 title: "Informacje techniczne związane z hostingiem współdzielonym"
 excerpt: "Zapoznaj się z różnego rodzaju informacjami technicznymi dotyczącymi hostingu WWW"
-updated: 2023-12-07
+updated: 2023-12-08
 ---
 
 > [!primary]
