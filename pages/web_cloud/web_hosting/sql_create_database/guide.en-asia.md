@@ -26,6 +26,18 @@ The table in this section contains all of the databases created with your web ho
 
 ![databasecreation](images/database-creation-step1.png){.thumbnail}
 
+Databases in the table can have several different statuses:
+
+- **Included** : Indicates that the database is included in your web hosting plan. There is no additional cost.</br></br>
+- **Optional** : Indicates that the database has been subscribed to in addition to the databases included with your web hosting plan. You pay an additional fee to have this additional database on your web hosting plan.</br></br>
+- **Included - Discontinued**: Indicates that the included database will soon be discontinued and become obsolete. </br>We recommend that you **before** the database becomes obsolete, you retrieve its contents and place it in a newer database (which has not yet been scheduled for end of sales).</br></br>
+- **Optional - Discontinued**: Indicates that the database you have subscribed to as an add-on to your web hosting plan will soon be removed from sale and become obsolete. </br>We recommend that you, **before** the database becomes obsolete, retrieve its contents and place it in a newer database (which is not scheduled to end).
+
+> [!success]
+>
+> To quickly duplicate the content of a "**Included - Discontinued**" or "**Optional - Discontinued**" database in a new database that has not yet been scheduled for obsolescence, please read our guide on "[Duplicating the content of an OVHcloud database in another](/pages/web_cloud/web_hosting/copy_database)".
+>
+
 ### Step 2 - Create the database
 
 There are two ways to create a new database:
