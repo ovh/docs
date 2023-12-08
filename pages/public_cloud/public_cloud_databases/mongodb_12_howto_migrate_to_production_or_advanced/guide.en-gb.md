@@ -1,0 +1,63 @@
+---
+title: MongoDB - Migrate to Production or Advanced
+excerpt: Find out how to migrate to the new MongoDB offering
+updated: 2023-12-11
+---
+
+## Objective
+
+Public Cloud Databases allow you to focus on building and deploying cloud applications while OVHcloud takes care of the database infrastructure and maintenance in operational conditions. 
+
+Several plans for MongoDB existed (Essential, Business, Enterprise) and recent updates changed it to Discovery, Production and Advanced.
+This update means your cluster needs to be migrated from one of the deprecated plan to a new one.<br>
+Migration to Production and Advanced plan is automatic. If you want to migrate to Discovery from a deprecated plan, you will need to do it manually following the [dedicated guide](/pages/public_cloud/public_cloud_databases/mongodb_11_howto_migrate_to_discovery).
+
+**This guide explains how to automatically migrate from a deprecated Essential, Business plan to a Production or Advanced plan.**
+
+## Requirements
+
+- A [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account
+- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- A MongoDB database running on your OVHcloud Public Cloud Databases service ([this guide](/pages/public_cloud/public_cloud_databases/databases_01_order_control_panel) can help you to meet this requirement)
+
+## Concept
+
+The Public Cloud Databases MongoDB Production plan is intended for production applications on a high performance, scalable and secure cloud environment, while the Advanced plan will power large Enterprise-grade cloud workloads with advanced features.
+The migration of a cluster using from a deprecated plan is automatic for Production and Advanced plans.
+
+## Instructions
+
+### Find the service to migrate
+
+Locate the service to migrate from the Databases section and click on the menu from the service row.
+
+![TODO](images/todo.png){.thumbnail}
+
+Either click directly on the "Solution upgrade" menu item to proceed to the next step or click on "Manage database" to see the detailed information of your service. From the general information page click on the "Upgrade your plan" to got to the next step.
+
+![TODO](images/todo.png){.thumbnail}
+
+### Initiate the migration
+
+From the "Change solution" page you will be presented with your current plan and the new plan you could migrate to.
+
+> [!primary]
+>
+> The automatic migration to the Discovery plan is disabled, please refer to the [dedicated migration guide](/pages/public_cloud/public_cloud_databases/mongodb_11_howto_migrate_to_discovery) to help you migrate to the Discovery plan. 
+>
+
+Select the plan that suits your needs and you will be presented with the available database models for this plan.
+
+![TODO](images/todo.png){.thumbnail}
+
+TODO
+
+------------------------------------------ TODO
+
+## We want your feedback!
+
+We would love to help answer questions and appreciate any feedback you may have.
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project. Join our community of users on <https://community.ovh.com/en/>.
+
+Are you on Discord? Connect to our channel at <https://discord.gg/ovhcloud> and interact directly with the team that builds our databases service!
