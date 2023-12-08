@@ -109,6 +109,7 @@ This guide will utilise the notions of a **source vDC** and a **destination vDC*
 &ensp;&ensp;[Step 6.6 Remove old datastores](#removeoldds)<br />
 &ensp;&ensp;[Step 6.7 Remove old hosts](#removeoldhosts)<br />
 &ensp;&ensp;[Step 6.8 Remove the source vDC](#removeoldvdc)<br />
+[Step 7 How to recreate an advanced NSXv architecture on NSX](#creatensxvonnsx)<br />
 
 <a name="design"></a>
 ### Step 1 Design your infrastructure
@@ -711,6 +712,12 @@ With the API, ask for the vDC deletion:
 >
 > @api {v1} /dedicatedCloud DELETE /dedicatedCloud/{serviceName}/datacenter/{datacenterId}
 >
+
+### How to recreate an advanced NSXv architecture on NSX
+*
+<a name="removeoldvdc"></a>
+
+You can find all the information on setting up an advanced NSX-v architecture on NSX by watching [this video.](https://vimeo.com/891113062?share=copy)
 
 ## Go further
 
