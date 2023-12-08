@@ -210,8 +210,14 @@ El uso de un motor de plantillas, muy utilizado en la comunidad de desarrollador
 
 ## Más información
 
+[Añadir contenido dinámico a una página web estática generada con Cecil](/pages/web_cloud/web_hosting/static_website_installation_cecil_api_call)
+
 El [sitio oficial de la aplicación Cecil](https://cecil.app/){.external}
 
 Un [guía sobre el formato de Markdown](https://www.markdownguide.org/){.external}
 
 Nuestra [guía sobre el uso de FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)
+
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es/directory/).
+
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
