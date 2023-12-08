@@ -30,6 +30,18 @@ La tabella di questa sezione contiene tutti i database creati con il tuo hosting
 
 ![databasecreation](images/database-creation-step1.png){.thumbnail}
 
+Nella tabella, i database possono avere diversi stati:
+
+- **Inclusa**: indica che il database è incluso nella soluzione di hosting Web. Non comporta costi aggiuntivi.</br></br>
+- **Opzionale**: indica che il database è stato sottoscritto in aggiunta ai database inclusi con il tuo hosting Web. La disponibilità di questo database aggiuntivo sull’hosting Web è fatturata a un costo aggiuntivo.</br></br>
+- **Incluso - ritirata dalla vendita**: indica che il database incluso verrà presto ritirato dalla vendita e diventerà obsoleto. </br>Prima che il database diventi obsoleto, ti consigliamo di **recuperarne il contenuto per inserirlo in un nuovo database più recente (il cui completamento non è ancora stato programmato).</br></br>
+- **Opzionale - ritirata dalla vendita**: indica che il database aggiunto al tuo hosting Web sarà eliminato e diventerà obsoleto. </br>Prima che il database diventi obsoleto, ti consigliamo di **recuperarne il contenuto per inserirlo in un database nuovo e più recente (la cui data di fine vendita non è ancora stata programmata).
+
+> [!success]
+>
+> Per duplicare rapidamente il contenuto di un database "**Incluso - ritirata dalla vendita**" o "**Opzionale - ritirata dalla vendita**" in un nuovo database la cui obsolescenza non è ancora stata programmata, consulta la nostra guida "[Duplicare il contenuto di un database OVHcloud in un altro](/pages/web_cloud/web_hosting/copy_database)".
+>
+
 ### Step 2 - Crea il database
 
 Per creare un nuovo database è possibile procedere in due modi:
