@@ -31,11 +31,11 @@ The migration of a cluster using from a deprecated plan is automatic for Product
 
 Locate the service to migrate from the Databases section and click on the menu from the service row.
 
-![TODO](images/todo.png){.thumbnail}
+![Service list](images/service-list.png){.thumbnail}
 
 Either click directly on the "Solution upgrade" menu item to proceed to the next step or click on "Manage database" to see the detailed information of your service. From the general information page click on the "Upgrade your plan" to got to the next step.
 
-![TODO](images/todo.png){.thumbnail}
+![General information](images/general-information.png){.thumbnail}
 
 ### Initiate the migration
 
@@ -46,13 +46,13 @@ From the "Change solution" page you will be presented with your current plan and
 > The automatic migration to the Discovery plan is disabled, please refer to the [dedicated migration guide](/pages/public_cloud/public_cloud_databases/mongodb_11_howto_migrate_to_discovery) to help you migrate to the Discovery plan. 
 >
 
-Select the plan that suits your needs and you will be presented with the available database models for this plan.
+First select the plan that suits your needs. In the following example we will choose to migrate from a Business to a Production plan.
 
-![TODO](images/todo.png){.thumbnail}
+![Change solution](images/change-solution.png){.thumbnail}
 
-TODO
+Then select the new flavor of your service and confirm the migration.
 
------------------------------------------- TODO
+![Choose flavor](images/choose-flavor.png){.thumbnail}
 
 ## We want your feedback!
 
