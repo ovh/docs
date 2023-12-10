@@ -1,16 +1,14 @@
 ---
 title: Démarrer une instance sur un volume attaché
-updated: 2019-05-20
+updated: 2023-12-08
 ---
-
-*Dernière mise à jour le 20/05/2019**
 
 ## Préambule
 Les serveurs cloud sont livrés avec un disque d'origine qui est copié à partir d'une image système (Debian 8, Windows 10...). Il est possible d'utiliser également des volumes supplémentaires, ce sont des disques persistant qui vont permettre de stocker des données.
 
 Il est également possible de déployer un système d'exploitation sur un volume et de démarrer dessus. Le serveur cloud démarrera alors sur ce volume au lieu du disque d'origine.
 
-![public-cloud](images/3704.png){.thumbnail}
+![Schema](images/schema.png){.thumbnail}
 
 > [!success]
 >
