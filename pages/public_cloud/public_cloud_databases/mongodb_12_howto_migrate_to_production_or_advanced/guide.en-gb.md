@@ -54,6 +54,18 @@ Then select the new flavor of your service and confirm the migration.
 
 ![Choose flavor](images/choose-flavor.png){.thumbnail}
 
+In this example, we choose to keep the same compute resources by moving from DB1-7 to DB2-7.
+
+### Wait until the migration is complete
+
+The migration time is about 10 minutes in average but could be longer depending the size of the data.
+
+![Migration in progress](images/migration-in-progress.png){.thumbnail}
+
+When the migration is complete the status turns to `ready` and the service plan now reflects the new plan of the service.
+
+![Migration complete](images/migration-complete.png){.thumbnail}
+
 ## We want your feedback!
 
 We would love to help answer questions and appreciate any feedback you may have.
