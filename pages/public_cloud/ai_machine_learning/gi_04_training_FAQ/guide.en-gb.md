@@ -18,7 +18,7 @@ Here are the most frequently asked questions about `ovhai` CLI & OVHcloud AI Sol
 > > To install the ovhai CLI, you can follow the installation instructions provided by OVHcloud in the official [ovhai installation documentation](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli).
 > >
 > When I try to use the ovhai CLI, I get a `AI Training error: not authenticated` error.
-> > After completing the ovhai CLI installation, remember to connect to your Public Cloud project user. This will enable you to manage the notebooks, jobs, and apps associated with this user. To log in, run the command `ovhai login` and enter the credentials of your public cloud project user.
+> > After completing the ovhai CLI installation, remember to connect to your AI Platform user. This will enable you to manage the notebooks, jobs, and apps associated with this user. To log in, run the command `ovhai login` and enter the credentials of your public cloud project user.
 > >
 > I can't login with `--token` parameter inside ovhai CLI
 > > You will have to use `ovhai login` with your user credentials to authenticate yourself. The `--token` parameter has been created for AI Solutions usage (e.g. authentification to an app).
@@ -27,6 +27,18 @@ Here are the most frequently asked questions about `ovhai` CLI & OVHcloud AI Sol
 > > You can use the `-h` or `--help` flag after the command. This will provide you with a list of possible commands and their usage instructions (available options, arguments, …). The basic command is: `ovhai -h`. Additionally, you can refer to the [ovhai CLI cheat sheet](https://help.ovhcloud.com/csm/en-gb-public-cloud-ai-cheat-sheet?id=kb_article_view&sysparm_article=KB0048221) for a comprehensive overview of available commands.
 > 
 > **AI Solutions (AI Notebooks, AI Training, AI Deploy)**
+> >
+> When should I use AI Notebooks, AI Training or AI Deploy?
+> >
+> > Although these products are all dedicated to AI, giving you access to powerful resources and the ability to interact with your data, they each have their own specific use:
+> >
+> > **Notebooks** are files which contain both computer code (e.g. python) and rich text elements (paragraph, equations, figures, links, etc…).  This is why Notebooks are mainly used for data exploration, studies and comparing solutions. OVHcloud AI Notebooks provides you managed Jupyter or VSCode notebooks, which come with pre-installed libraries. This way, you do not have to worry about your environment which will save you time.
+> > 
+> > **AI Training** is dedicated to model training. Once your environment has been configured, you can launch a model training session in just a few clicks. As soon as the training is complete, the job will stop automatically.
+> >
+> > **AI Deploy** allows you to deploy your AI applications and models with high availability. If you're looking to make inferences, this is the product you're looking for.
+> >
+> > For more information on these products, please read the [comparative guide for AI Solutions](/pages/public_cloud/ai_machine_learning/gi_00_ai_comparative-table).
 > >
 > What flavors are available?
 > > Currently, the available hardware for AI Tools is:
@@ -57,9 +69,6 @@ Here are the most frequently asked questions about `ovhai` CLI & OVHcloud AI Sol
 > >
 > How to fix file access permission errors?
 > > Within AI Tools, code and users have no root/sudo privileges. To have access to your files, make sure to mount your **data** object at a location available for non-root users. For preset images provided by OVHcloud it is recommended that the destination path is of the form `/workspace/<your-path>` to avoid such errors.
-> >
-> Do I need to master Docker to use AI Training or AI Deploy?
-> > It is not necessary to master Docker to use our AI Tools. A set of ready-to-use images is available on the [`ovhcom` organization of Dockerhub](https://hub.docker.com/u/ovhcom) to get you started. All images prefixed by `ai-training` are images to be used with our AI Tools. They usually include classic tools such as JupyterLab or VScode along with some Machine Learning framework such as PyTorch.
 > >
 > > However, jobs in **AI Training** and apps in **AI Deploy** are basically Docker containers, so a practical understanding of Docker is required to fully benefit from the service.
 > >
@@ -95,7 +104,7 @@ Here are the most frequently asked questions about `ovhai` CLI & OVHcloud AI Sol
 > > * The AI Tool is waiting for resources to be available. Potential resolution: try to launch the job with less resources or wait for resources to be available.
 > >
 > Why can't I access my AI Solution UI?
-> > Make sure your AI Task is in a `RUNNING` state and that your UI is exposed either on the default port or that you specified the correct port in your URL (see [public ports](/pages/public_cloud/ai_machine_learning/training_guide_01_capabilities#available-ports-to-public-network)).
+> > Make sure your AI Task is in a `RUNNING` state and that your UI is exposed either on the default port or that you specified the correct port in your URL (see [public ports](/pages/public_cloud/ai_machine_learning/training_guide_01_capabilities#quotas-per-public-cloud-project)).
 > > Only the HTTP layer is accessible and check that your UI is correctly binded to the network interfaces (e.g. with tensorboard user the `--bind-all` flag).
 > >
 > How can I share my AI Tools publicly, without any authentication?
@@ -115,6 +124,8 @@ Here are the most frequently asked questions about `ovhai` CLI & OVHcloud AI Sol
 > > Concerning jobs and apps, you can map them to only one port. Each of these has a public URL. By default, this URL accesses the port 8080 of your job or app. This default port can be configured when you submit your job or your app.
 > >
 > > As for AI Notebooks, you can also access other ports by appending them to the URL. For example, your default Job URL,starting with the job's ID and which accesses the default port is `https://00000000-0000-0000-0000-000000000000.job.gra.ai.cloud.ovh.net`. If you want to access the port 9000, you will have to append the port number to your job's URL: `https://00000000-0000-0000-0000-000000000000-9000.job.gra.ai.cloud.ovh.net`
+> > 
+> > The same applies to AI Deploy, where another app port can be accessed even after the app has been launched.
 > >
 > Do AI solutions allow the use of the gRPC protocol?
 > > Although not available with AI Notebooks, you can use gRPC on your AI Training jobs and AI Deploy apps. 
