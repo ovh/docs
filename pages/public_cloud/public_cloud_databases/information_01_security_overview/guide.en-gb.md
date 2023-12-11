@@ -74,13 +74,13 @@ Once VM is created by OVHcloud, where the customer Database engines run, a TLS c
 
 ## 8.Features and options available at service delivery
 ### 8.1 High availability
-Three plans are made available on the service : Essential, Business and Enterprise plan.
-You can shoose "Business" or "Enterprise" offer to benefit of a high availability service as your data will be replicated across two or three nodes following the shosen plan.
+Three plans are made available on the service : Essential, Business and Enterprise plan.<br>
+You can shoose "Business" or "Enterprise" offer to benefit of a high availability service as your data will be replicated across two or three nodes following the shosen plan.<br>
 For Mongo DB, high availability is made with "Production" and "Advanced" plans. 
 
 ### 8.2 Data encryption
 #### 8.2.1 Encryptation made by OVHcloud team
-All network traffic on the infrastructure managing Databases service is encrypted. Databases volumes are also encrypted with a unique key specific for each customer project.
+All network traffic on the infrastructure managing Databases service is encrypted. Databases volumes are also encrypted with a unique key specific for each customer project.<br>
 These operations are made, by default, by OVHcloud operation team.
 > [!primary]
 >
@@ -110,14 +110,14 @@ The RSA key-pair is randomly generated for each service. The key lengths are 256
 >
 > Currently, OVHcloud does not offer a KMS as a service, you cannot bring your own keys. KMIP is managed by OVHcloud.
 >
-Currently, we do not provide in-use encryption except for MongoDB Enterprise plans, based on MongoDB Client-Side Field Level Encryption.
-Data is encrypted client-side with customer-controlled encryption keys, before being sent, stored, or retrieved from the database
+Currently, we do not provide in-use encryption except for MongoDB Enterprise plans, based on MongoDB Client-Side Field Level Encryption.<br>
+Data is encrypted client-side with customer-controlled encryption keys, before being sent, stored, or retrieved from the database.<br>
 Client-Side Field Level Encryption (FLE) is an in-use encryption capability that enables a client application to encrypt sensitive data before storing it in the MongoDB database. Sensitive data is transparently encrypted, remains encrypted throughout its lifecycle, and is only decrypted on the client side.
 
 
 ### 8.3 CVE monitoring
 
-OVHcloud operation team in charge of the maintenance of the Public Cloud Databases services is constantly monitoring CVE on the different DBMS available. This monitoring is done through different channels, official mailing lists, security community, internal security check...
+OVHcloud operation team in charge of the maintenance of the Public Cloud Databases services is constantly monitoring CVE on the different DBMS available. This monitoring is done through different channels, official mailing lists, security community, internal security check...<br>
 
 We are also in constant communication with MongoDB team, in order to provide fast and smooth transition to the latest security version of MongoDB.
 
@@ -125,17 +125,17 @@ We are also in constant communication with MongoDB team, in order to provide fas
 You can activate vRack option at the subsription step or after and have your private network for your Database project. [The configuration of your private network could be done by following this link](/pages/public_cloud/public_cloud_databases/databases_08_vrack).
 
 ### 8.5 HDS option
-HDS option could be activated on the service.
-This option is available only for "Business" and "Entreprise" plans for this service.
+HDS option could be activated on the service.<br>
+This option is available only for "Business" and "Entreprise" plans for this service.<br>
 The subscription to the Business support level is at least mandatory to maintain necessary requirements.
 
 ## 9.Reversibility
-You can  import and export your data  following recommndations provided by editors for each Database engine technology. Here are some examples :
-For MongoDB, you can refer to this link : https://www.mongodb.com/docs/compass/current/import-export/
+You can  import and export your data  following recommndations provided by editors for each Database engine technology. Here are some examples :<br>
+For MongoDB, you can refer to this link : https://www.mongodb.com/docs/compass/current/import-export/<br>
 For Redis, you can refer to this link : https://docs.redis.com/latest/rs/databases/import-export/
 
 ### 9.1 Erasure of customer data 
-Once you destroy your public cloud project (your Database project) on the control panel, all allocated ressources are relased automtically including keys encryption used.
+Once you destroy your public cloud project (your Database project) on the control panel, all allocated ressources are relased automtically including keys encryption used.<br>
 As the encryption keys are unique for each project, it will be deleated after service decommmissioning. Data could not be retrieved after.
 
 
