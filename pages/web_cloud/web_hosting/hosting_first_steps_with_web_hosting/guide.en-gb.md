@@ -50,7 +50,7 @@ This solution uses OVHcloud 1-click modules, a tool you can use to install a CMS
 
 To ensure that the OVHcloud module's installation is successful, please ensure that its installation directory is empty (which should be the case if you have not connected to your storage space). To install a 1-click module, please log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}. Go to the `Hosting plans`{.action} section, then click on the domain name corresponding to the Web Hosting plan you have just ordered. In the `1-click modules`{.action} tab, click the `Add a module`{.action} button.
 
-![Access to 1-click modules](images/access_to_the_1_click_modules_section.png){/thumbnail}
+![Access to 1-click modules](images/access_to_the_1_click_modules_section.png){.thumbnail}
 
 Finally, to begin installing the 1-click module, select the CMS you want to install, select the domain you would like to set up your website on, check that the `Install in advanced mode`{.action} box is not ticked, and click the `Install`{.action} button.
 
@@ -69,11 +69,11 @@ To ensure that the OVHcloud module installation is successful, please check that
 
 To create a database, please log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}. Go to the `Hosting plans`{.action} section, then click on the domain name corresponding to the Web Hosting plan you have just ordered. In the `Databases`{.action} tab, click the `Create a database`{.action} button. Enter the information requested, then wait for the installation process to complete.
 
-![Access to 1-click modules](images/create_a_database.png){/thumbnail}
+![Access to 1-click modules](images/create_a_database.png){.thumbnail}
 
 Once you have created a database, to install a 1-click module, go to the `1-click modules`{.action} tab and click `Add a module`{.action}. Select the CMS you want to install, check that the `Install in advanced mode`{.action}box is ticked, then click `Next`{.action}.
 
-![Access to 1-click modules](images/access_to_the_1_click_modules_section.png){/thumbnail}
+![Access to 1-click modules](images/access_to_the_1_click_modules_section.png){.thumbnail}
 
 Enter the information requested to launch the module installation. Once you have done this, please wait a few minutes until you receive an email confirming that the installation has been successful. You can then follow the remaining steps below.
 
@@ -89,7 +89,7 @@ As every website is unique, there is no universal straightforward method for get
 
 This stage is optional if you don’t want to use the email addresses included in your [Web Hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/){.external}. To create one or more email addresses, please ensure that you are logged in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}. Go to the `Emails`{.action} section, then click on the domain name corresponding to the Web Hosting plan you have just ordered. In the `Emails`{.action} section, click `Create an email address`{.action}.
 
-![Create an email address](images/create_an_email_address.png){/thumbnail}
+![Create an email address](images/create_an_email_address.png){.thumbnail}
 
 Enter the information requested to create your email address. Repeat this step for each additional email address you wish to create. If you are in the process of migrating your emails to OVHcloud, we would recommend that you use the [OVH Mail Migrator](https://omm.ovh.net/){.external} tool to help you with this. 
 
@@ -111,13 +111,13 @@ There are several OVHcloud DNS records. We will focus on two particular records 
 
 To check the A record that you need to use in your domain’s DNS zone, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}. Go to the `Hosting plans`{.action} section, then click on the domain name corresponding to the Web Hosting plan you have just ordered. In the `General information`{.action} tab, copy the IP address that appears next to "IPv4".
 
-![Edit the A record](images/know_the_OVH_A_records.png){/thumbnail}
+![Edit the A record](images/know_the_OVH_A_records.png){.thumbnail}
 
 - **The MX records, for emails**
 
 To check the MX records that you need to use in your domain’s DNS zone, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}. Go to the `Emails`{.action} section, then click on the domain name corresponding to the Web Hosting plan you have just ordered. In the `General information`{.action} tab, copy the information that appears next to “MX records”. The MX records can differ from one service to another, depending on the DNS filter that you have decided to apply.
 
-![Edit the MX records](images/know_the_OVH_MX_records.png){/thumbnail}
+![Edit the MX records](images/know_the_OVH_MX_records.png){.thumbnail}
 
 #### Check and/or modify the DNS records
 

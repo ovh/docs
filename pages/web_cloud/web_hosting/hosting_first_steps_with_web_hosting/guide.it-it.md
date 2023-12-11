@@ -54,7 +54,7 @@ Questa soluzione utilizza i moduli in 1 click OVHcloud, che permettono di instal
 
 Affinché l'operazione vada a buon fine è necessario che la directory di installazione del modulo sia vuota. Per installare il tuo modulo in 1 click, accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Clicca su `Hosting`{.action} e seleziona il nome del tuo servizio. Nella scheda `CMS in 1 click`{.action}, clicca sul pulsante `Aggiungi un modulo`{.action}.
 
-![Accesso ai moduli in 1 click](images/access_to_the_1_click_modules_section.png){/thumbnail}
+![Accesso ai moduli in 1 click](images/access_to_the_1_click_modules_section.png){.thumbnail}
 
 Per avviare l’operazione, scegli il CMS da installare assicurandoti che la casella `Installazione avanzata`{.action} non sia selezionata e clicca su `Installa`{.action}.
 
@@ -73,11 +73,11 @@ Affinché l'operazione vada a buon fine è necessario assicurarsi che:
 
 Per creare il database, accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Seleziona `Hosting`{.action} e poi il nome del tuo servizio. Clicca sulla scheda `Database`{.action} e poi su `Crea un database`{.action}. Inserisci le informazioni richieste e attendi che l'installazione sia terminata.
 
-![Accesso ai moduli in 1 click](images/create_a_database.png){/thumbnail}
+![Accesso ai moduli in 1 click](images/create_a_database.png){.thumbnail}
 
 Una volta creato il database, seleziona la scheda `CMS in 1 click`{.action} e clicca sul pulsante `Aggiungi un modulo`{.action}. Scegli il CMS da installare assicurandoti che la casella `Installazione avanzata`{.action} sia selezionata e clicca su `Continua`{.action}.
 
-![Accesso ai moduli in 1 click](images/access_to_the_1_click_modules_section.png){/thumbnail}
+![Accesso ai moduli in 1 click](images/access_to_the_1_click_modules_section.png){.thumbnail}
 
 Inserisci le informazioni richieste e poi avvia il processo di installazione. Attendi di ricevere l'email di conferma dell'installazione con le informazioni necessarie per effettuare l’accesso all’interfaccia di gestione del sito.
 
@@ -93,7 +93,7 @@ I siti Internet sono molto diversi tra loro e non esiste quindi una procedura un
 
 Se non intendi utilizzare gli account email inclusi nel tuo piano di [hosting](https://www.ovhcloud.com/it/web-hosting/){.external}, questo step è facoltativo. Per creare uno o più indirizzi email, assicurati innanzitutto di essere connesso al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Seleziona `Email`{.action}, clicca sul nome del tuo servizio, poi sulla scheda `Email`{.action} e infine sul pulsante `Crea un indirizzo email`{.action}. 
 
-![Crea un indirizzo email](images/create_an_email_address.png){/thumbnail}
+![Crea un indirizzo email](images/create_an_email_address.png){.thumbnail}
 
 Segui la procedura indicata e ripeti l’operazione per creare altri account. Per migrare i tuoi account email in OVHcloud, ti consigliamo di utilizzare il nostro tool [OVH Mail Migrator](https://omm.ovh.net/){.external}. 
 
@@ -115,13 +115,13 @@ Esistono diversi tipi di record DNS ma ci concentreremo in particolare su due di
 
 Per verificare il record A da utilizzare nella zona DNS del tuo dominio, accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} e, clicca su `Hosting`{.action} e poi sul nome del tuo servizio. L'indirizzo IP viene mostrato in corrispondenza della voce "IPv4" nella scheda `Informazioni generali`{.action}.
 
-![Modificare il record A](images/know_the_OVH_A_records.png){/thumbnail}
+![Modificare il record A](images/know_the_OVH_A_records.png){.thumbnail}
 
 - **Record MX, per un server di posta**
 
 Per verificare il record MX da utilizzare nella zona DNS del tuo dominio, accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} e, clicca su `Email`{.action} e poi sul nome del tuo servizio. L’informazione viene mostrata in corrispondenza della voce "Record MX" nella scheda `Informazioni generali`{.action} e può variare da un servizio all'altro in base al filtro DNS applicato.
 
-![Modificare i record MX](images/know_the_OVH_MX_records.png){/thumbnail}
+![Modificare i record MX](images/know_the_OVH_MX_records.png){.thumbnail}
 
 #### Verificare e modificare i record DNS
 

@@ -50,7 +50,7 @@ Cette solution utilise les modules en 1 clic OVHcloud, un outil permettant d'ins
 
 Afin que l'installation du module OVHcloud puisse se réaliser, vous devez vous assurer que le répertoire d'installation du module soit vide (ce qui est le cas si vous ne vous êtes pas encore connecté à votre espace de stockage). Pour réaliser l'installation du module en 1 clic, connectez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Rendez-vous dans la section `Hébergements`{.action}, puis sur le nom de l'hébergement web que vous venez de commander. puis, dans l'onglet `Modules en 1 clic`{.action}, cliquez sur le bouton `Ajouter un module`{.action}.
 
-![Accès aux modules en 1 clic](images/access_to_the_1_click_modules_section.png){/thumbnail}
+![Accès aux modules en 1 clic](images/access_to_the_1_click_modules_section.png){.thumbnail}
 
 Enfin, pour initier l'installation du module en 1 clic, sélectionnez le CMS que vous souhaitez installer, assurez-vous que la case `Installation en mode avancé`{.action} ne soit pas cochée, puis cliquez sur le bouton `Installer`{.action}.
 
@@ -67,13 +67,21 @@ Afin que l'installation du module OVHcloud puisse se réaliser, vous devez vous 
 - le répertoire d'installation du module soit vide (ce qui est le cas si vous ne vous êtes pas encore connecté à votre espace de stockage) ;
 - qu'une base de données soit déjà créée sur votre hébergement (rendez-vous sur l'onglet `Bases de données`{.action} puis sur `Créer une base de données`{.action} pour réaliser la manipulation).
 
-Pour créer la base de données, connectez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.Rendez-vous dans la section `Hébergements`{.action}, puis cliquez sur le nom de l'hébergement web que vous venez de commander. Dans l'onglet `Bases de données`{.action}, cliquez sur le bouton `Créer une base de données`{.action}. Complétez les informations demandées puis patientez le temps que l'installation s'effectue.
+Pour créer la base de données, connectez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.Rendez-vous dans la section `Hébergements`{.action}, puis cliquez sur le nom de l'hébergement web que vous venez de commander. 
 
-![Accès aux modules en 1 clic](images/create_a_database.png){/thumbnail}
+Dans l'onglet `Bases de données`{.action} : 
+
+- 1 : Si aucune base de données n'a déjà été créée : cliquez sur le bouton `Créer une base de données`{.action}. Complétez les informations demandées puis patientez le temps que l'installation s'effectue.
+
+![Accès aux modules en 1 clic](images/create_a_database.png){.thumbnail}
+
+- 2 : Si une base de données a déjà été créée et qu'il vous en reste au moins une disponible en « création » sur votre hébergement web : cliquez sur le bouton `Actions`{.action} au dessus du tableauq ui s'affiche, puis sur le bouton `Créer une base de données`{.action}.
+
+![Accès aux modules en 1 clic](images/create_a_database_2.png){.thumbnail}
 
 Une fois la base de données créée, pour réaliser l'installation du module en 1 clic, rendez-vous dans l'onglet `Modules en 1 clic`{.action}, puis cliquez sur le bouton `Ajouter un module`{.action}. Sélectionnez le CMS que vous souhaitez installer, assurez-vous que la case `Installation en mode avancé`{.action} soit cochée, puis cliquez sur le bouton `Suivant`{.action}.
 
-![Accès aux modules en 1 clic](images/access_to_the_1_click_modules_section.png){/thumbnail}
+![Accès aux modules en 1 clic](images/access_to_the_1_click_modules_section.png){.thumbnail}
 
 Suivez les informations demandées jusqu'à initier l'installation du module. Il ne vous reste plus qu'à patienter le temps de recevoir l'e-mail vous confirmant son installation, puis à poursuivre les étapes restantes ci-dessous.
 
@@ -94,7 +102,7 @@ Il n'existe pas de marche à suivre universelle tant les sites peuvent être dif
 
 Cette étape peut être facultative si vous ne souhaitez pas utiliser les adresses e-mail comprises avec votre offre d'[hébergement web](https://www.ovhcloud.com/fr/web-hosting/){.external}. Pour créer une ou plusieurs adresses e-mail, assurez-vous dans un premier temps d'être connecté dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Rendez-vous dans la section `Emails`{.action} puis sur le nom de l'hébergement web que vous venez de commander. puis, dans l'onglet `Emails`{.action}, cliquez sur le bouton `Créer une adresse e-mail`{.action}.
 
-![Créer une adresse e-mail](images/create_an_email_address.png){/thumbnail}
+![Créer une adresse e-mail](images/create_an_email_address.png){.thumbnail}
 
 Suivez les informations demandées jusqu'à la création de votre adresse e-mail. Répétez cette étape pour en créer plusieurs. Si vous êtes dans un processus de migration de vos e-mails chez OVHcloud, nous vous invitons à utiliser notre outil [OVH Mail Migrator](https://omm.ovh.net/){.external} afin de vous aider dans vos démarches. 
 
@@ -116,13 +124,13 @@ Il existe plusieurs champs DNS inhérents à OVHcloud. Nous allons nous intéres
 
 Pour vérifier le champ A que vous devez utiliser dans la zone DNS de votre domaine, connectez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.Rendez-vous dans la section `Hébergements`{.action} et sur le nom de l'hébergement web que vous venez de commander. puis, dans l'onglet `Informations générales`{.action}, récupérez l'adresse IP qui apparaît à côté de "IPv4".
 
-![Modifier le champ A](images/know_the_OVH_A_records.png){/thumbnail}
+![Modifier le champ A](images/know_the_OVH_A_records.png){.thumbnail}
 
 - **Les champs MX, pour les e-mails**
 
 Pour vérifier les champs MX que vous devez utiliser dans la zone de votre domaine, connectez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.Rendez-vous dans la section `E-mails`{.action} puis sur le nom de l'hébergement web que vous venez de commander. Enfin, dans l'onglet `Informations générales`{.action}, récupérez les informations qui apparaissent à côté de "Champs MX". Ces derniers peuvent être différents d'un service à un autre suivant le filtre DNS que vous avez décidé d'appliquer.
 
-![Modifier les champs MX](images/know_the_OVH_MX_records.png){/thumbnail}
+![Modifier les champs MX](images/know_the_OVH_MX_records.png){.thumbnail}
 
 #### Vérifier et/ou modifier les enregistrement DNS
 

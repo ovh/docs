@@ -54,7 +54,7 @@ Bei dieser Lösung kommen die OVHcloud 1-Klick-Module zum Einsatz, die eine einf
 
 Damit die Installation des OVHcloud Moduls erfolgreich ist, vergewissern Sie sich zunächst, dass das Verzeichnis, in dem das Modul installiert wird, vollständig leer ist (wenn Sie sich vorher noch nie mit Ihrem Storage verbunden haben, sollte das der Fall sein). Um die Installation des 1-Klick-Moduls durchzuführen, loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und wählen Sie im Bereich `Web Cloud`{.action} unter `Hosting-Pakete`{.action} das betreffende Hosting aus. Gehen Sie dann auf den Tab `1 Klick Module`{.action} und klicken Sie auf den Button `Ein Modul hinzufügen`{.action}.
 
-![Zugriff auf die 1-Klick-Module](images/access_to_the_1_click_modules_section.png){/thumbnail}
+![Zugriff auf die 1-Klick-Module](images/access_to_the_1_click_modules_section.png){.thumbnail}
 
 Um die Installation des 1-Klick-Moduls zu starten, wählen Sie Ihr bevorzugtes CMS aus. Achten Sie darauf, dass im Feld `Installation im Experten-Modus`{.action} kein Haken gesetzt ist und klicken Sie anschließend auf `Installieren`{.action}.
 
@@ -73,11 +73,11 @@ Damit die Installation des OVHcloud Moduls erfolgreich ist, überprüfen Sie bit
 
 Um eine Datenbank zu erstellen, loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und wählen Sie im Bereich `Web Cloud`{.action} unter `Hosting-Pakete`{.action} das betreffende Hosting aus. Gehen Sie dann auf den Tab `Datenbanken`{.action} und klicken Sie auf den Button `Eine Datenbank erstellen`{.action}. Füllen Sie die notwendigen Informationen aus und warten Sie, bis die Installation abgeschlossen ist.
 
-![Zugriff auf die 1-Klick-Module](images/create_a_database.png){/thumbnail}
+![Zugriff auf die 1-Klick-Module](images/create_a_database.png){.thumbnail}
 
 Nachdem die Datenbank angelegt wurde, gehen Sie für die Installation des 1-Klick-Moduls in den Tab `1 Klick Module`{.action} und klicken Sie anschließend auf den Button `Ein Modul hinzufügen`{.action}. Wählen Sie Ihr bevorzugtes CMS zur Installation aus, vergewissern Sie sich, dass in dem Feld `Installation im Experten-Modus`{.action} ein Haken gesetzt ist, und klicken Sie dann auf `Weiter`{.action}.
 
-![Zugriff auf die 1-Klick-Module](images/access_to_the_1_click_modules_section.png){/thumbnail}
+![Zugriff auf die 1-Klick-Module](images/access_to_the_1_click_modules_section.png){.thumbnail}
 
 Geben Sie die erforderlichen Informationen ein, um die Installation des Moduls zu starten. Wenn Sie die E-Mail erhalten haben, mit der die Installation bestätigt wird, können Sie die nachfolgenden Schritte vornehmen.
 
@@ -93,7 +93,7 @@ Es gibt keine allgemeingültige Vorgehensweise, da Websites sehr unterschiedlich
 
 Dieser Schritt ist optional, wenn Sie die in Ihrem [Webhosting](https://www.ovhcloud.com/de/web-hosting/) enthaltenen E-Mail-Adressen nicht nutzen möchten. Um eine oder mehrere E-Mail-Adressen anzulegen, loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und wählen Sie im Bereich `Web Cloud`{.action} unter `E-Mails`{.action} das betreffende Hosting aus. Gehen Sie dann auf den Tab `E-Mails`{.action} und klicken Sie auf den Button `Eine E-Mail-Adresse erstellen`{.action}.
 
-![Eine E-Mail-Adresse anlegen](images/create_an_email_address.png){/thumbnail}
+![Eine E-Mail-Adresse anlegen](images/create_an_email_address.png){.thumbnail}
 
 Geben Sie die erforderlichen Informationen ein, um Ihre E-Mail-Adresse zu erstellen. Wiederholen Sie diesen Schritt, um mehrere E-Mail-Adressen anzulegen. Wenn Sie Ihre E-Mail-Adressen zu OVHcloud migrieren möchten, empfehlen wir Ihnen unser Tool [OVH Mail Migrator](https://omm.ovh.net/){.external} zu verwenden, das Sie bei der Migration unterstützt. 
 
@@ -115,13 +115,13 @@ Es gibt mehrere zu OVHcloud gehörige DNS-Einträge. Wir interessieren uns an di
 
 Um den A-Eintrag zu überprüfen, den Sie für die DNS-Zone Ihrer Domain benötigen, loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und wählen Sie im Bereich `Web Cloud`{.action} unter `Hosting-Pakete`{.action} das betreffende Hosting aus. Suchen Sie dann im Tab `Allgemeine Informationen`{.action} die IP-Adresse, die neben „IPv4“ steht.
 
-![A-Eintrag bearbeiten](images/know_the_OVH_A_records.png){/thumbnail}
+![A-Eintrag bearbeiten](images/know_the_OVH_A_records.png){.thumbnail}
 
 - **MX-Einträge für E-Mails**
 
 Um die MX-Einträge zu überprüfen, die Sie für die Zone Ihrer Domain benötigen, loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und wählen Sie im Bereich `Web Cloud`{.action} unter `Hosting-Pakete`{.action} das betreffende Hosting aus. Suchen Sie im Tab `Allgemeine Informationen`{.action} die Informationen, die neben dem Punkt „MX Einträge“ stehen. Diese können sich je nach Dienstleistung unterscheiden, je nachdem, welchen DNS-Filter Sie angewendet haben.
 
-![MX-Einträge bearbeiten](images/know_the_OVH_MX_records.png){/thumbnail}
+![MX-Einträge bearbeiten](images/know_the_OVH_MX_records.png){.thumbnail}
 
 #### DNS-Einträge überprüfen oder bearbeiten
 
