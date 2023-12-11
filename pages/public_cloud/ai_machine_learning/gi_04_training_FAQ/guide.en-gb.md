@@ -18,11 +18,7 @@ Here are the most frequently asked questions about `ovhai` CLI & OVHcloud AI Sol
 > > To install the ovhai CLI, you can follow the installation instructions provided by OVHcloud in the official [ovhai installation documentation](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli).
 > >
 > When I try to use the ovhai CLI, I get a `AI Training error: not authenticated` error.
-<<<<<<< HEAD
 > > After completing the ovhai CLI installation, remember to connect to your AI Platform user. This will enable you to manage the notebooks, jobs, and apps associated with this user. To log in, run the command `ovhai login` and enter the credentials of your public cloud project user.
-=======
-> > After completing the ovhai CLI installation, remember to connect to your Public Cloud project user. This will enable you to manage the notebooks, jobs, and apps associated with this user. To log in, run the command `ovhai login` and enter the credentials of your Public Cloud project user.
->>>>>>> 817f13f52f9e67c856fd4b756f45a04ff77846b6
 > >
 > I can't login with the `--token` parameter inside ovhai CLI
 > > You will have to use `ovhai login` with your user credentials to authenticate yourself. The `--token` parameter has been created for AI Solutions usage (e.g. authentification to an app).
@@ -130,13 +126,9 @@ Here are the most frequently asked questions about `ovhai` CLI & OVHcloud AI Sol
 > >
 > > Concerning jobs and apps, you can map them to only one port. Each of these has a public URL. By default, this URL accesses the port 8080 of your job or app. This default port can be configured when you submit your job or your app.
 > >
-<<<<<<< HEAD
-> > As for AI Notebooks, you can also access other ports by appending them to the URL. For example, your default Job URL,starting with the job's ID and which accesses the default port is `https://00000000-0000-0000-0000-000000000000.job.gra.ai.cloud.ovh.net`. If you want to access the port 9000, you will have to append the port number to your job's URL: `https://00000000-0000-0000-0000-000000000000-9000.job.gra.ai.cloud.ovh.net`
+> > As for AI Notebooks, you can also access other ports by appending them to the URL. For example, your default Job URL, starting with the job's ID and which accesses the default port is `https://00000000-0000-0000-0000-000000000000.job.gra.ai.cloud.ovh.net`. If you want to access the port 9000, you will have to append the port number to your job's URL: `https://00000000-0000-0000-0000-000000000000-9000.job.gra.ai.cloud.ovh.net`
 > > 
 > > The same applies to AI Deploy, where another app port can be accessed even after the app has been launched.
-=======
-> > As for AI Notebooks, you can also access other ports by appending them to the URL. For example, your default Job URL, starting with the job's ID and which accesses the default port is `https://00000000-0000-0000-0000-000000000000.job.gra.ai.cloud.ovh.net`. If you want to access the port 9000, you will have to append the port number to your job's URL: `https://00000000-0000-0000-0000-000000000000-9000.job.gra.ai.cloud.ovh.net`
->>>>>>> 817f13f52f9e67c856fd4b756f45a04ff77846b6
 > >
 > Do AI solutions allow the use of the gRPC protocol?
 > > Although not available with AI Notebooks, you can use gRPC on your AI Training jobs and AI Deploy apps. 
