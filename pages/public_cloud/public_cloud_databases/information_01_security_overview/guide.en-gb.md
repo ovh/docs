@@ -22,19 +22,19 @@ In addition to [the responsibility model for Public Cloud Database services](/pa
 ## 2.Best pratices to be deployed on the service
 
 ### 2.1 Recommandations once service delivered
-Once you have followed [these first steps to subscribe you this service](/pages/public_cloud/public_cloud_databases/databases_01_order_control_panel) and reset the default password communicated to access to the service.
-You must after filter connections by using IPtable.
+Once you have followed [these first steps to subscribe you this service](/pages/public_cloud/public_cloud_databases/databases_01_order_control_panel) and reset the default password communicated to access to the service.<br>
+You must after filter connections by using IPtable.<br>
 You can also activate a private connection by using the vRack option.
 
 ### 2.2 Vulnerability scans
-You are authorized to perform vulnerability scans on the service you have subscribed to. OVHcloud doesn't have to be previously informed.
-Security measures deployed by OVHcloud (especially network protection) aren't disabled, the reason why such audit purpose must demonstrate the clear vision about the security level of customer infrastructure.
+You are authorized to perform vulnerability scans on the service you have subscribed to. OVHcloud doesn't have to be previously informed.<br>
+Security measures deployed by OVHcloud (especially network protection) aren't disabled, the reason why such audit purpose must demonstrate the clear vision about the security level of customer infrastructure.<br>
 You are not authorized to use your service to scan other infrastructure.
 
 ## 3.SLA
-SLA are available only for "Business" and "Enterprise" plans of this service.
-Exception for Mongo DB, SLA are available for "Production" and "Advanced" plans.
-SLA for Business range are 99,90% and for Enterprise range are 99,95%.
+SLA are available only for "Business" and "Enterprise" plans of this service.<br>
+Exception for Mongo DB, SLA are available for "Production" and "Advanced" plans.<br>
+SLA for Business range are 99,90% and for Enterprise range are 99,95%.<br>
 The calculation method of SLA consists on the total number of minutes in the month in question deducted from the number of minutes of unavailability over the month in question. The total is divided by the total number of minutes in the month.
 Service credits could be 10%, 25 % or 100% of the hourly cost per hour of unavailability of the affected Service. You can refer to Particular Conditions of the service to get more details about monthly available rate for each service range or plan and credits limitation.w
 
@@ -43,8 +43,8 @@ Service credits could be 10%, 25 % or 100% of the hourly cost per hour of unavai
 Technical backups are backups made by OVHcloud to maintain Service Level Agreement. These backups could not be activated at customer request.
 
 ### 4.2 Customer data backups
-Customer data (DB) is backed up, automated and oparated following different frequencies. Those backups are encrypted and uploaded to a remote, replicated storage backend, in a different datacenter from the database service. Details about frequencies,, RPO and locations are listed following type of services and ranges at [this link](/pages/public_cloud/public_cloud_databases/databases_05_automated_backups).
-Customer data backup health status is checked daily by OVHcloud.
+Customer data (DB) is backed up, automated and oparated following different frequencies. Those backups are encrypted and uploaded to a remote, replicated storage backend, in a different datacenter from the database service. Details about frequencies,, RPO and locations are listed following type of services and ranges at [this link](/pages/public_cloud/public_cloud_databases/databases_05_automated_backups).<br>
+Customer data backup health status is checked daily by OVHcloud.<br>
 If you need to restore your data using a backup, you can follow [this guide](/pages/public_cloud/public_cloud_databases/databases_06_restore_backup) and create a new service for the purpose.
 
 ## 5.Logs
@@ -61,10 +61,10 @@ If you need to restore your data using a backup, you can follow [this guide](/pa
 
 ## 7.Accounts - User
 ### 7.1 Control plane
-Using your customer account on the OVHcloud Control Panel, you are able to manage your service using [three different contacts](/pages/account_and_service_management/account_information/managing_contacts).
-OVHcloud adopts another account with an internal NIC to refer a customer having subscribed to several services.
-To enforce security access to your account on the control panel, we recommand to activate a [two-factor authentication mechanism](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa) or [SSO(Single Sign-On) authentication](/pages/account_and_service_management/account_information/ovhcloud-account-connect-saml-adfs).
-You can also [create your own IAM policy](/pages/account_and_service_management/account_information/iam-policy-ui) on the service, with user interface or [via API](/pages/account_and_service_management/account_information/iam-policies-api), and manage your users and groups.
+Using your customer account on the OVHcloud Control Panel, you are able to manage your service using [three different contacts](/pages/account_and_service_management/account_information/managing_contacts).<br>
+OVHcloud adopts another account with an internal NIC to refer a customer having subscribed to several services.<br>
+To enforce security access to your account on the control panel, we recommand to activate a [two-factor authentication mechanism](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa) or [SSO(Single Sign-On) authentication](/pages/account_and_service_management/account_information/ovhcloud-account-connect-saml-adfs).<br>
+You can also [create your own IAM policy](/pages/account_and_service_management/account_information/iam-policy-ui) on the service, with user interface or [via API](/pages/account_and_service_management/account_information/iam-policies-api), and manage your users and groups.<br>
 You can follow your IAM policy configuration and analyse actions [by using API calls to get logs and following this link](   /pages/manage_and_operate/iam/iam-troubleshooting).
 
 
