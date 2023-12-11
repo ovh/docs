@@ -1,7 +1,7 @@
 ---
 title: "Premiers pas avec un hébergement web"
 excerpt: "Découvrez comment bien débuter avec un hébergement web"
-updated: 2023-11-16
+updated: 2023-12-11
 ---
 
 ## Objectif
@@ -81,7 +81,12 @@ Si vous désirez obtenir plus de détails sur l'installation d'un module en mode
 
 #### Solution manuelle, compétences techniques requises
 
-Cette solution s'applique si vous souhaitez créer ou migrer un site internet sans utiliser les modules OVHcloud. Vous devrez être en possession des fichiers du site internet que vous souhaitez installer. Vous devrez donc vous connecter manuellement à votre espace de stockage pour y uploader les fichiers du site puis, si possible, lier ce dernier à une base de données préalablement créée.
+Cette solution s'applique si vous souhaitez créer ou migrer un site internet sans utiliser les modules OVHcloud. Vous devrez être en possession des fichiers du site internet que vous souhaitez installer. Vous devrez donc vous [connecter manuellement à votre espace de stockage FTP](/pages/web_cloud/web_hosting/ftp_connection) pour y uploader les fichiers du site puis, si possible, lier ce dernier à une base de données préalablement créée.
+
+> [!success]
+>
+> Si vous avez oublié mot de passe d'accès à votre espace de stockage FTP, changez-le à l'aide de notre guide « [Changer le mot de passe d'accès à l'espace de stockage FTP de son hébergement web](/pages/web_cloud/web_hosting/ftp_change_password) ».
+>
 
 Il n'existe pas de marche à suivre universelle tant les sites peuvent être différents les uns des autres, mais nous pouvons vous aiguiller sur les manipulations à réaliser dans votre hébergement web OVHcloud grâce à nos documentations : [Mettre mon site en ligne](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online){.external} et [Migrer mon site chez OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh){.external} si ce dernier s'applique. Une fois le site installé manuellement sur votre hébergement web, poursuivez les étapes restantes ci-dessous.
 
@@ -123,17 +128,17 @@ Pour vérifier les champs MX que vous devez utiliser dans la zone de votre domai
 
 Maintenant que vous connaissez les enregistrements DNS inhérents à votre hébergement web OVHcloud, il vous faut les vérifier et les modifier si nécessaire. Les manipulations diffèrent suivant le projet que vous réalisez.
 
-- **Commande d'un nom de domaine avec un hébergement web OVH**
+- **Commande d'un nom de domaine avec un hébergement web OVHcloud**
 
 La configuration de votre domaine est déjà correcte. Poursuivez vers l'étape suivante. Cependant, si vous avez réalisé des manipulations dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} sur la zone DNS de votre domaine, il se peut que cette dernière ne le soit plus.
     
 Pour accéder à la zone DNS de votre domaine OVHcloud, rendez-vous dans la section `Noms de domaine`{.action} dans la barre de services à gauche, puis cliquez sur le nom de domaine concerné. Enfin, dans l'onglet `Zone DNS`{.action}, vérifiez et modifiez les informations nécessaires.
 
-- **Nom de domaine n'utilisant pas la zone DNS d'OVH**
+- **Nom de domaine n'utilisant pas la zone DNS d'OVHcloud**
     
 Vous devrez vérifier la zone DNS de votre domaine chez le prestataire qui gère cette dernière. Si nécessaire, modifiez les informations.
 
-- **Migrer vos services (sites et e-mail) vers OVH**
+- **Migrer vos services (sites et e-mail) vers OVHcloud**
 
 Dans ce type de cas, les manipulations liées aux DNS peuvent occasionner une indisponibilité de vos services si elles ne sont pas réalisées au bon moment. En accord avec les différentes étapes décrites dans notre documentation [Migrer mon site chez OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh){.external}, vous devrez modifier les serveurs DNS de votre domaine à la fin processus.
 
