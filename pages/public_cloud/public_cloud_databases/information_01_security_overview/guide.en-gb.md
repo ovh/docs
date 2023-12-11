@@ -6,20 +6,58 @@ updated: 2023-05-23
 
 ## Objective
 
-OVHcloud Public Cloud Databases allow you to focus on building and deploying cloud applications while OVHcloud takes care of the database infrastructure and maintenance.
+In addition to [the responsibility model for Public Cloud Database services](/pages/public_cloud/public_cloud_databases/information_03_shared_responsibility), this security fact sheets aims to describe security features and functions associated to the service. It describes also best practices that the client could adopt to secure his databases. 
 
-**This guide lists and explains security measures implemented for the Cloud Databases services.**
+## 1.Certifications
+- ISO/IEC 27001
+- ISO/IEC 27701
+- ISO/IEC 27017
+- ISO/IEC 27018
+- HDS
+- SOC 1 type 1
+- SOC 2 type 1
+- CSA type 1
+- C5 type 1
 
-## Certifications & Compliance
+## 2.Best pratices to be deployed on the service
 
-OVHcloud Public Cloud Databases as a whole are [ISO/IEC 27001, 27017 and 27018](https://www.ovhcloud.com/en-gb/enterprise/certification-conformity/iso-27001-27017-27018/) and [HDS](https://www.ovhcloud.com/en-gb/enterprise/certification-conformity/hds/) certified.<br> Those certifications assure you that our solutions meet highest security standards.<br>Learn more about certified services at OVHcloud [here](https://www.ovhcloud.com/en-gb/enterprise/certification-conformity/).
-<br>In addition, the service is GDPR compliant.
+### 2.1 Recommandations once service delivered
+Once you have followed [these first steps to subscribe you this service](/pages/public_cloud/public_cloud_databases/databases_01_order_control_panel) and reset the default password communicated to access to the service.
+You must after filter connections by using IPtable.
+You can also activate a private connection by using the vRack option.
 
-![HDS certification badge](images/certificate_badge_hds.png){.align-center}
-![ISO certification badge](images/certificate_badge_iso.png){.align-center}
-![GDPR compliance badge](images/compliance_badge_gdpr.png){.align-center}
+### 2.2 Vulnerability scans
+You are authorized to perform vulnerability scans on the service you have subscribed to. OVHcloud doesn't have to be previously informed.
+Security measures deployed by OVHcloud (especially network protection) aren't disabled, the reason why such audit purpose must demonstrate the clear vision about the security level of customer infrastructure.
+You are not authorized to use your service to scan other infrastructure.
 
-Those certifications cover all DBMS in the Public Cloud Databases offer, you can find the complete list on the [Public Cloud Databases web page](https://www.ovhcloud.com/en-gb/public-cloud/databases/).
+## 3.SLA
+SLA are available only for "Business" and "Enterprise" plans of this service.
+Exception for Mongo DB, SLA are available for "Production" and "Advanced" plans.
+SLA for Business range are 99,90% and for Enterprise range are 99,95%.
+The calculation method of SLA consists on the total number of minutes in the month in question deducted from the number of minutes of unavailability over the month in question. The total is divided by the total number of minutes in the month.
+Service credits could be 10%, 25 % or 100% of the hourly cost per hour of unavailability of the affected Service. You can refer to Particular Conditions of the service to get more details about monthly available rate for each service range or plan and credits limitation.w
+
+## 4.Backups
+### 4.1 Technical backups
+Technical backups are backups made by OVHcloud to maintain Service Level Agreement. These backups could not be activated at customer request.
+
+### 4.2 Customer data backups
+Customer data (DB) is backed up, automated and oparated following different frequencies. Those backups are encrypted and uploaded to a remote, replicated storage backend, in a different datacenter from the database service. Details about frequencies,, RPO and locations are listed following type of services and ranges at [this link](/pages/public_cloud/public_cloud_databases/databases_05_automated_backups).
+Customer data backup health status is checked daily by OVHcloud.
+If you need to restore your data using a backup, you can follow [this guide](/pages/public_cloud/public_cloud_databases/databases_06_restore_backup) and create a new service for the purpose.
+
+## 5.Logs
+| **Source** | **Content** | **Documentation** |
+| --- | --- | --- |
+| Control Panel | Logs of interactions made by admin, technical or billing contacts on customer panel and services they have access to,using API calls. |- <https://api.ovh.com/console/#/me> (see `/me/api/logs`)<br>- [List of API calls done with your account](https://api.ovh.com/console/#/me/api/logs/self~GET)<br>- [List of API calls done on services you have access to](https://api.ovh.com/console/#/me/api/logs/services~GET)<br>-[Get your audit logs (https://api.ovh.com/console/#/me/logs/audit~GET)] |
+| Service | 1000 last logs for service usage | See Sheet 'log' in the control panel or via API (for Cassandra service as an example /cloud/project/{serviceName}/database/cassandra/{clusterId}/logs<br>-/cloud/project/{serviceName}/database/{serviceType}/{clusterId}/logs |
+
+
+
+
+
+
 
 ## Infrastructure & software
 
