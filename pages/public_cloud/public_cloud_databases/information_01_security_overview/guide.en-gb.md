@@ -51,35 +51,72 @@ If you need to restore your data using a backup, you can follow [this guide](/pa
 | **Source** | **Content** | **Documentation** |
 | --- | --- | --- |
 | Control Panel | Logs of interactions made by admin, technical or billing contacts on customer panel and services they have access to,using API calls. |- <https://api.ovh.com/console/#/me> (see `/me/api/logs`)<br>- [List of API calls done with your account](https://api.ovh.com/console/#/me/api/logs/self~GET)<br>- [List of API calls done on services you have access to](https://api.ovh.com/console/#/me/api/logs/services~GET)<br>-[Get your audit logs (https://api.ovh.com/console/#/me/logs/audit~GET)] |
-| Service | 1000 last logs for service usage | See Sheet 'log' in the control panel or via API (for Cassandra service as an example /cloud/project/{serviceName}/database/cassandra/{clusterId}/logs<br>-/cloud/project/{serviceName}/database/{serviceType}/{clusterId}/logs |
+| Service | 1000 last logs for service usage | See Sheet 'log' in the control panel or via API (for Cassandra service as an example /cloud/project/{serviceName}/database/cassandra/{clusterId}/logs<br>- /cloud/project/{serviceName}/database/{serviceType}/{clusterId}/logs |
+
+## 6.API
+
+| **Name** | **Capacity** | **Link** |
+| --- | --- | --- |
+| Control Panel and service | Manage customer accounts and services on which each account has rights to access. | [https://eu.api.ovh.com/console/#/dbaas/logs](https://eu.api.ovh.com/console/#/dbaas/logs)) |
+
+## 7.Accounts - User
+### 7.1 Control plane
+Using your customer account on the OVHcloud Control Panel, you are able to manage your service using [three different contacts](/pages/account_and_service_management/account_information/managing_contacts).
+OVHcloud adopts another account with an internal NIC to refer a customer having subscribed to several services.
+To enforce security access to your account on the control panel, we recommand to activate a [two-factor authentication mechanism](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa) or [SSO(Single Sign-On) authentication](/pages/account_and_service_management/account_information/ovhcloud-account-connect-saml-adfs).
+You can also [create your own IAM policy](/pages/account_and_service_management/account_information/iam-policy-ui) on the service, with user interface or [via API](/pages/account_and_service_management/account_information/iam-policies-api), and manage your users and groups.
+You can follow your IAM policy configuration and analyse actions [by using API calls to get logs and following this link](   /pages/manage_and_operate/iam/iam-troubleshooting).
+
+
+### 7.2 Data plane
+Once VM is created by OVHcloud, where the customer Database engines run, a TLS certficate is generated and used by the customer to access to his DB. The certificate is renewed every three months.
+
+
+## 8.Features and options available at service delivery
+### 8.1 High availability
+Three plans are made available on the service : Essential, Business and Enterprise plan.
+You can shoose "Business" or "Enterprise" offer to benefit of a high availability service as your data will be replicated across two or three nodes following the shosen plan.
+For Mongo DB, high availability is made with "Production" and "Advanced" plans. 
+
+### 8.2 Data encryption
+#### 8.2.1 Encryptation made by OVHcloud team
+All network traffic on the infrastructure managing Databases service is encrypted. Databases volumes are also encrypted with a unique key specific for each customer project.
+These operations are made, by default, by OVHcloud operation team.
+> [!primary]
+>
+> Currently, OVHcloud does not offer a KMS as a service, you cannot bring your own keys. KMIP is managed by OVHcloud.
+>
+For MongoDB engine :
+
+- **Nodes:** service instances and the underlying VMs use full volume encryption using LUKS with a randomly generated ephemeral key for each instance and each volume. 
+The key is never re-used and will be trashed at the destruction of the instance, so there’s a natural key rotation with roll-forward upgrades. 
+We use the LUKS2 mode aes-cbc-essiv:sha256 with a 512-bit key.
+
+- **Backups:** backups are encrypted with a randomly generated key. This key is Asymetric RSA4096.
+
+For all the databases engines such as MySQL, PostgreSQL, Redis, and so on, at-rest data encryption covers both active service instances as well as service backups in cloud object storage :
+
+- **Nodes:** service instances and the underlying VMs use full volume encryption using [LUKS](https://en.wikipedia.org/wiki/Linux_Unified_Key_Setup) with a randomly generated ephemeral key for each instance and each volume. 
+The key is never re-used and will be trashed at the destruction of the instance, so there’s a natural key rotation with roll-forward upgrades. 
+We use the LUKS2 default mode aes-xts-plain64:sha256 with a 512-bit key.
+
+- **Backups:** backups are encrypted with a randomly generated key per file. These keys are in turn encrypted with a RSA key-encryption key-pair and stored in the header section of each backup segment. 
+The file encryption is performed with AES-256 in CTR mode with HMAC-SHA256 for integrity protection. 
+The RSA key-pair is randomly generated for each service. The key lengths are 256-bit for block encryption, 512-bit for the integrity protection and 3072-bits for the RSA key.
+
+
+#### 8.2.2 In-use encryption on client side
+> [!primary]
+>
+> Currently, OVHcloud does not offer a KMS as a service, you cannot bring your own keys. KMIP is managed by OVHcloud.
+>
+Currently, we do not provide in-use encryption except for MongoDB Enterprise plans, based on MongoDB Client-Side Field Level Encryption.
+Data is encrypted client-side with customer-controlled encryption keys, before being sent, stored, or retrieved from the database
+Client-Side Field Level Encryption (FLE) is an in-use encryption capability that enables a client application to encrypt sensitive data before storing it in the MongoDB database. Sensitive data is transparently encrypted, remains encrypted throughout its lifecycle, and is only decrypted on the client side.
 
 
 
 
-
-
-
-## Infrastructure & software
-
-### High-availability
-
-When choosing Business and Enterprise service plan, your data is replicated across multiple nodes, ensuring high availability of your data.
-
-### Automatic daily backups
-
-Public Cloud Databases services are backed up on a daily basis. Those backups are encrypted and uploaded to a remote, replicated storage backend, in a different datacenter from the database service. In case of a catastrophic failure of one of our datacenters,you will still be able to recover your data, with a 24 hours data loss maximum. Backup frequency and retention may vary depending on DBMS and service plan selected.
-
-### Data encryption
-
-We perform end-to-end encryption for all our Public Cloud Databases and backups.
-
-#### In-transit encryption (transport)
-
-All network traffic to managed databases clusters is protected by TLS by default. 
-
-**TLS cannot be disabled**.
-
-Depending on the DBMS selected, the default version may vary but the minimum is TLS v1.1. Data that is transmitted to managed databases clusters, as well as data transmitted between nodes of your clusters, is encrypted in-transit using TLS.
 
 #### At-rest encryption (on disk)
 
