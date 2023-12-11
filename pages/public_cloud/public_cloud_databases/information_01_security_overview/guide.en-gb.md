@@ -115,66 +115,29 @@ Data is encrypted client-side with customer-controlled encryption keys, before b
 Client-Side Field Level Encryption (FLE) is an in-use encryption capability that enables a client application to encrypt sensitive data before storing it in the MongoDB database. Sensitive data is transparently encrypted, remains encrypted throughout its lifecycle, and is only decrypted on the client side.
 
 
+### 8.3 CVE monitoring
 
-
-
-#### At-rest encryption (on disk)
-
-> [!primary]
->
-> Currently, OVHcloud does not offer a KMS as a service, you cannot bring your own keys. KMIP is managed by OVHcloud.
->
-
-At-rest encryption is a database-level protection layer to guarantee that the written files and data are encrypted while stored.
-
-##### All databases engines except MongoDB
-
-For all the databases engines such as MySQL, PostgreSQL, Redis, and so on, at-rest data encryption covers both active service instances as well as service backups in cloud object storage.
-
-- **Nodes:** service instances and the underlying VMs use full volume encryption using [LUKS](https://en.wikipedia.org/wiki/Linux_Unified_Key_Setup) with a randomly generated ephemeral key for each instance and each volume. 
-The key is never re-used and will be trashed at the destruction of the instance, so there’s a natural key rotation with roll-forward upgrades. 
-We use the LUKS2 default mode aes-xts-plain64:sha256 with a 512-bit key.
-
-- **Backups:** backups are encrypted with a randomly generated key per file. These keys are in turn encrypted with a RSA key-encryption key-pair and stored in the header section of each backup segment. 
-The file encryption is performed with AES-256 in CTR mode with HMAC-SHA256 for integrity protection. 
-The RSA key-pair is randomly generated for each service. The key lengths are 256-bit for block encryption, 512-bit for the integrity protection and 3072-bits for the RSA key.
-
-##### MongoDB
-
-- **Nodes:** service instances and the underlying VMs use full volume encryption using LUKS with a randomly generated ephemeral key for each instance and each volume. 
-The key is never re-used and will be trashed at the destruction of the instance, so there’s a natural key rotation with roll-forward upgrades. 
-We use the LUKS2 mode aes-cbc-essiv:sha256 with a 512-bit key.
-
-- **Backups:** backups are encrypted with a randomly generated key. This key is Asymetric RSA4096.
-
-#### In-Use encryption (client side)
-
-> [!primary]
->
-> Currently, OVHcloud does not offer a KMS as a service, you cannot bring your own keys. KMIP is managed by OVHcloud.
->
-
-Currently, we do not provide in-use encryption except for MongoDB Enterprise plans, based on MongoDB Client-Side Field Level Encryption.
-
-Data is encrypted client-side with customer-controlled encryption keys, before being sent, stored, or retrieved from the database
-
-Client-Side Field Level Encryption (FLE) is an in-use encryption capability that enables a client application to encrypt sensitive data before storing it in the MongoDB database. Sensitive data is transparently encrypted, remains encrypted throughout its lifecycle, and is only decrypted on the client side.
-
-### CVE monitoring
-
-The operation team in charge of the maintenance of the Public Cloud Databases services is constantly monitoring CVE on the different DBMS available. This monitoring is done through different channels, official mailing lists, security community, internal security check...
+OVHcloud operation team in charge of the maintenance of the Public Cloud Databases services is constantly monitoring CVE on the different DBMS available. This monitoring is done through different channels, official mailing lists, security community, internal security check...
 
 We are also in constant communication with MongoDB team, in order to provide fast and smooth transition to the latest security version of MongoDB.
 
-## Network
+### 8.4 vRack option
+You can activate vRack option at the subsription step or after and have your private network for your Database project. [The configuration of your private network could be done by following this link](/pages/public_cloud/public_cloud_databases/databases_08_vrack).
 
-### Private network
+### 8.5 HDS option
+HDS option could be activated on the service.
+This option is available only for "Business" and "Entreprise" plans for this service.
+The subscription to the Business support level is at least mandatory to maintain necessary requirements.
 
-Public Cloud Databases provide interconnection with your private network. This option allows you to connect your database to other services in your private network, isolating your service from the outside.
+## 9.Reversibility
+You can  import and export your data  following recommndations provided by editors for each Database engine technology. Here are some examples :
+For MongoDB, you can refer to this link : https://www.mongodb.com/docs/compass/current/import-export/
+For Redis, you can refer to this link : https://docs.redis.com/latest/rs/databases/import-export/
 
-### IP restriction
+### 9.1 Erasure of customer data 
+Once you destroy your public cloud project (your Database project) on the control panel, all allocated ressources are relased automtically including keys encryption used.
+As the encryption keys are unique for each project, it will be deleated after service decommmissioning. Data could not be retrieved after.
 
-All database services are IPv4 restricted. By default, services are not accessible. Users can specify unique IP or IP blocks from which the service will accept connections. IP restriction prevents all attacks from the outside of a specific information system.
 
 ## Go further
 
