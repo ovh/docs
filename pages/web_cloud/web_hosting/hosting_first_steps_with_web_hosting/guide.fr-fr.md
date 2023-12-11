@@ -75,9 +75,11 @@ Dans l'onglet `Bases de données`{.action} :
 
 ![Accès aux modules en 1 clic](images/create_a_database.png){.thumbnail}
 
-- 2 : Si une base de données a déjà été créée et qu'il vous en reste au moins une disponible en « création » sur votre hébergement web : cliquez sur le bouton `Actions`{.action} au dessus du tableauq ui s'affiche, puis sur le bouton `Créer une base de données`{.action}.
+- 2 : Si une base de données a déjà été créée et qu'il vous en reste au moins une disponible en « création » sur votre hébergement web : cliquez sur le bouton `Actions`{.action} au dessus du tableau qui s'affiche, puis sur le bouton `Créer une base de données`{.action}.
 
-![Accès aux modules en 1 clic](images/create_a_database_2.png){.thumbnail}
+![Accès aux modules en 1 clic](images/create-a-database-2.png){.thumbnail}
+
+- 3 : Si vous n'avez plus de bases de données disponibles en « création » sur votre hébergement web : cliquez sur le bouton `Actions`{.action} au dessus du tableau qui s'affiche, puis sur le bouton `Commander une base de données`{.action} pour commander une base de données [Start SQL](https://www.ovhcloud.com/fr/web-hosting/options/start-sql/) en complément de vos bases de données incluses avec votre offre d'hébergement web. </br> Sinon, vous pouvez commander un serveur de bases de données [Web Cloud Databases](https://www.ovhcloud.com/fr/web-cloud/databases/) en cliquant sur le bouton `Actions`{.action} au dessus du tableau, puis sur le bouton `Commander une base de données Web Cloud Databases`{.action}.
 
 Une fois la base de données créée, pour réaliser l'installation du module en 1 clic, rendez-vous dans l'onglet `Modules en 1 clic`{.action}, puis cliquez sur le bouton `Ajouter un module`{.action}. Sélectionnez le CMS que vous souhaitez installer, assurez-vous que la case `Installation en mode avancé`{.action} soit cochée, puis cliquez sur le bouton `Suivant`{.action}.
 
