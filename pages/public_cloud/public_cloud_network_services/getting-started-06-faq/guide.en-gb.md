@@ -67,8 +67,8 @@ We don't support this mode currently. For the moment, Gateway supports only sing
 
 Yes, that's exactly the use case for Gateway (L3 router with SNAT option). Currently, only instances in **private mode** of networking that are connected to a single-region private network are supported. For more information, please refer to our [concept guide on Public Cloud Networking](/pages/public_cloud/public_cloud_network_services/concepts-01-public-cloud-networking-concepts).
 
-### Can I use a L3 router to route traffic between networks inside a public cloud region
-Yes, you can use a L3 router without SNAT option through the Openstack GUI / CLI / Terraform. In that case, the bandwidth limits are the private network one (currently 4Gbps) which is the same for all flavor. Hence, if you choose a `S` flavor, you will receive the full private bandwidth capacity.
+### Can I use a L3 router to route traffic between different subnets inside a public cloud region ?
+Yes, you can use a L3 router without SNAT option through the Openstack GUI / CLI / Terraform. In that case, the bandwidth limits are driven by the quality of service on the instance private bandwidth. Hence, choosing an `S` flavor would not impact the performances.
 
 ### Will Gateway be provided with a public IP and port?
 
