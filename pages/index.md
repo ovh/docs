@@ -335,7 +335,6 @@
             + [How to add a host?](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/how_to_add_host)
             + [Cloning a VM](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/clone_a_vm)
             + [Removing a datastore](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/delete_datastore)
-            + [How to optimise the distribution of VMs on a host server](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/optimizing_distribution_of_vms_on_host)
             + [Removing a host server](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/delete_host)
         + [OVHcloud features and options](hosted-private-cloud-hosted-private-cloud-powered-by-vmware-ovhcloud-features)
             + [OVHcloud hourly snapshots](hosted_private_cloud/hosted_private_cloud_powered_by_vmware/snapshots_horaires_ovh)
