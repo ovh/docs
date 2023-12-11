@@ -1,22 +1,22 @@
 ---
-title: Octavia Load Balancer monitoring with Prometheus
-excerpt: "Discover the various options available to monitor your Octavia Load Balancer"
+title: Public Cloud Load Balancer monitoring with Prometheus
+excerpt: "Discover the various options available to monitor your Load Balancer"
 updated: 2023-12-07
 ---
 
 ## Objective
 
-Octavia provides multiple ways to monitor your Load Balancers. You can query statistics via the Octavia API or directly from your Load Balancer.
+The Public Cloud Load Balancer provides 2 ways to monitor your Load Balancers. You can either query an API to get usage statistics or configure a prometheus listener that can be scraped by your prometheus infrastructure to gather metrics.
 
-This guide will discuss the various options available to monitor your Octavia Load Balancer.
+This guide will discuss those options to monitor your Octavia Load Balancer.
 
 ## Instructions
 
-### Monitoring using the Octavia API
+### Monitoring using CLI
 
-Octavia collects key metrics from all Load Balancers, including Load Balancers built with third party provider drivers that support collecting statistics. Octavia aggregates these statistics and makes them available via the Octavia API. Load Balancer statistics are available at the Load Balancer or listener level.
+Load Balancer service aggregates these statistics and makes them available via the Openstack API. Those statistics are available at the Load Balancer or listener level.
 
-Load Balancer statistics can be queried using the [OpenStack Client](https://docs.openstack.org/python-openstackclient/latest/).
+Load Balancer statistics can be queried using the [OpenStack Client](https://docs.openstack.org/python-openstackclient/latest/). They include metrics for all the listeners configured for the queried Load Balancer.
 
 ```bash
 $ openstack loadbalancer stats show <lb id>
@@ -48,17 +48,13 @@ $ openstack loadbalancer listener stats show <listener id>
 +--------------------+-------+
 ```
 
-Load Balancer statistics queried via the Octavia API include metrics for all listener protocols.
-
 ### Monitoring with Prometheus
 
-Some provider drivers, such as the Octavia amphora driver, provide a Prometheus endpoint. This allows you to configure your Prometheus infrastructure to collect metrics from Octavia Load Balancers.
-
-To add a Prometheus endpoint on an Octavia Load Balancer, create a listener with a special protocol `PROMETHEUS`. This will enable the endpoint as `/metrics` on the listener. The listener supports all of the features of an Octavia Load Balancer, such as `allowed_cidrs`, but does not support attaching pools or L7 policies. All metrics will be identified by the Octavia object ID (UUID) of the resources.
+To add a Prometheus endpoint on a Public Cloud Load Balancer, create a listener with a special protocol `PROMETHEUS`. This will enable the endpoint `/metrics` on the listener. The listener supports all of the features of an Octavia Load Balancer, such as `allowed_cidrs`, but does not support attaching pools or L7 policies. All metrics will be identified by the Octavia object ID (UUID) of the resources.
 
 > [!primary]
 >
-> Currently UDP and SCTP metrics are not reported via Prometheus endpoints when using the amphora provider.
+> Currently UDP and SCTP specific metrics are not reported via Prometheus endpoints.
 >
 
 To create a Prometheus endpoint on port 8088 for Load Balancer lb1, you would run the following command:
@@ -118,7 +114,7 @@ For more information on setting up Prometheus, see the [Prometheus project websi
 > The metrics exposed via the `/metrics` endpoint will use a custom Octavia namespace.
 >
 
-You can connect [Grafana](https://grafana.com) to the [Prometheus](https://prometheus.io) instance to provide additional graphing and dashboard capabilities. A Grafana dashboard for Octavia Load Balancers is included in the `etc/grafana` directory of the Octavia code.
+You can connect [Grafana](https://grafana.com) to the [Prometheus](https://prometheus.io) instance to provide additional graphing and dashboard capabilities. A Grafana dashboard for Octavia Load Balancers is available [here](https://grafana.com/grafana/dashboards/15828-octavia-amphora-load-balancer/)
 
 ## Go further
 
