@@ -54,7 +54,7 @@ Esta solución utiliza los módulos en un clic de OVHcloud, una herramienta que 
 
 Para poder instalar el módulo de OVHcloud, debe asegurarse de que el directorio de instalación del módulo esté vacío (si todavía no se ha conectado a su espacio de almacenamiento, estará vacío). Para instalar el módulo en un clic, acceda al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}. En la sección `Alojamientos`{.action}, haga clic en el nombre de su alojamiento web. A continuación, abra la pestaña `Módulos en un clic`{.action} y haga clic en el botón `Añadir un módulo`{.action}.
 
-![Acceso a los módulos en un clic](images/access_to_the_1_click_modules_section.png){.thumbnail} 
+![Acceso a los módulos en un clic](images/access-to-the-1-click-modules-section.png){.thumbnail} 
 
 Por último, para instalar el módulo en un clic, seleccione el CMS que quiera instalar, asegúrese de que la casilla **Instalación en modo avanzado** no esté marcada y haga clic en el botón `Instalar`{.action}.
 
@@ -77,7 +77,7 @@ Para crear la base de datos, conéctese al [área de cliente de OVHcloud](https:
 
 Para instalar el módulo en un clic, una vez creada la base de datos abra la pestaña `Módulos en un clic`{.action} y haga clic en el botón `Añadir un módulo`{.action}. A continuación, seleccione el CMS que quiera instalar, asegúrese de que la casilla **Instalación en modo avanzado** esté marcada y haga clic en el botón `Siguiente`{.action}.
 
-![Acceso a los módulos en un clic](images/access_to_the_1_click_modules_section.png){.thumbnail} 
+![Acceso a los módulos en un clic](images/access-to-the-1-click-modules-section.png){.thumbnail} 
 
 Introduzca la información solicitada e inicie la instalación del módulo. Una vez haya finalizado la instalación, recibirá por correo electrónico la confirmación de la instalación del módulo. Ya puede entonces pasar a las siguientes etapas descritas en esta guía.
 
@@ -95,7 +95,7 @@ Puede omitir este paso si no desea utilizar las direcciones de correo electróni
 
 Para crear una o más direcciones de correo electrónico, deber estar conectado al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.Haga clic en `Correo electrónico`{.action} y seleccione el nombre del alojamiento al que está asociado el servicio de correo. A continuación, abra la pestaña `Correo electrónico`{.action} y haga clic en el botón `Crear una dirección de correo`{.action}.
 
-![Crear una dirección de correo](images/create_an_email_address.png){.thumbnail} 
+![Crear una dirección de correo](images/create-an-email-address.png){.thumbnail} 
 
 Introduzca la información solicitada para crear su dirección de correo electrónico y repita este mismo proceso si desea crear más direcciones. Para migrar todas sus direcciones de correo electrónico a OVHcloud, le recomendamos que utilice nuestra herramienta [OVH Mail Migrator](https://omm.ovh.net/){.external}, que le simplificará el proceso. 
 

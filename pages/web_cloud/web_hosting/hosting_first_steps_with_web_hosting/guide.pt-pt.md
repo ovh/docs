@@ -52,7 +52,7 @@ Os módulos 1 clique da OVHcloud permitem instalar um CMS de forma simples e rá
 
 Antes continuar, certifique-se que a pasta de instalação está vazia e que o sistema pode criar uma nova base de dados. Na primeira utilização do alojamento, esta verificação não é necessária. Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} para instalar o módulo CMS. Clique em `Alojamentos`{.action} e, de seguida, no nome do alojamento web que contratou. Depois, nos `Módulos 1 clique`{.action}, clique no botão `Adicionar um módulo`{.action}.
 
-![Acesso aos módulos 1 clique](images/access_to_the_1_click_modules_section.png){.thumbnail}
+![Acesso aos módulos 1 clique](images/access-to-the-1-click-modules-section.png){.thumbnail}
 
 Para iniciar a instalação, selecione o CMS pretendido. Certifique-se que a `Instalação em modo avançado`{.action} não está selecionada. Agora clique no botão `Instalar`{.action}.
 
@@ -75,7 +75,7 @@ Para verificar ou criar uma bases de dados, aceda à [Área de Cliente](https://
 
 Depois de criar a base de dados, selecione `Módulos 1 clique`{.action}, e clique no botão `Adicionar um módulo`{.action}. Selecione o CMS, certifique-se que a ` instalação em modo avançado`{.action} está selecionada. Clique no botão `Seguinte`{.action}:
 
-![Acesso aos módulos 1 clique](images/access_to_the_1_click_modules_section.png){.thumbnail}
+![Acesso aos módulos 1 clique](images/access-to-the-1-click-modules-section.png){.thumbnail}
 
 Siga as instruções e aguarde a conclusão da instalação. No final, irá receber o e-mail de confirmação da instalação, com os dados de acesso ao CMS.
 
@@ -91,7 +91,7 @@ Atenção! Este processo pode variar de acordo com o tipo de site. Se precisar d
 
 A utilização dos serviços de e-mail incluídos no [alojamento web](https://www.ovhcloud.com/pt/web-hosting/){.external} é opcional. Para criar e usar um ou vários endereços de e-mail associados ao seu domínio, aceda à [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Selecione `E-mails`{.action} e clique no alojamento contratado. No separador`E-mails`{.action}, clique no botão `Criar um endereço de e-mail`{.action}.
 
-![Criar um endereço de e-mail](images/create_an_email_address.png){.thumbnail}
+![Criar um endereço de e-mail](images/create-an-email-address.png){.thumbnail}
 
 Siga as instruções e insira a informação necessária. Repita este passo para criar mais endereços. Pretende transferir as suas mensagens de e-mail para a OVH? Use o [OVH Mail Migrator](https://omm.ovh.net/){.external}, e siga as instruções apresentadas. 
 
