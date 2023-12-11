@@ -23,7 +23,7 @@ Migration to Production and Advanced plans is automatic. If you want to migrate 
 ## Concept
 
 The Public Cloud Databases MongoDB **Production** plan is intended for production applications on a high performance, scalable and secure cloud environment, while the **Advanced** plan will power large Enterprise-grade cloud workloads with advanced features.
-The migration of a cluster from a deprecated plan tp Production and Advanced plans is automatic.
+The migration of a cluster from a deprecated plan to a Production or Advanced plan is automatic.
 
 ## Instructions
 
