@@ -69,7 +69,7 @@ Afin que l'installation du module OVHcloud puisse se réaliser, vous devez vous 
 
 Pour créer la base de données, connectez-vous dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}. Rendez-vous dans la section `Hébergements`{.action}, puis cliquez sur le nom de l'hébergement web que vous venez de commander. Dans l'onglet `Bases de données`{.action}, cliquez sur le bouton `Créer une base de données`{.action}. Complétez les informations demandées puis patientez le temps que l'installation s'effectue.
 
-![Accès aux modules en 1 clic](images/create_a_database.png){.thumbnail}
+![Accès aux modules en 1 clic](images/create-a-database-2.png){.thumbnail}
 
 Une fois la base de données créée, pour réaliser l'installation du module en 1 clic, rendez-vous dans l'onglet `Modules en 1 clic`{.action}, puis cliquez sur le bouton `Ajouter un module`{.action}. Sélectionnez le CMS que vous souhaitez installer, assurez-vous que la case `Installation en mode avancé`{.action} soit cochée, puis cliquez sur le bouton `Suivant`{.action}.
 
@@ -111,13 +111,13 @@ Il existe plusieurs champs DNS inhérents à OVHcloud. Nous allons nous intéres
 
 Pour vérifier le champ A que vous devez utiliser dans la zone DNS de votre domaine, connectez-vous dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}. Rendez-vous dans la section `Hébergements`{.action} et sur le nom de l'hébergement web que vous venez de commander. puis, dans l'onglet `Informations générales`{.action}, récupérez l'adresse IP qui apparaît à côté de "IPv4".
 
-![Modifier le champ A](images/know_the_OVH_A_records.png){.thumbnail}
+![Modifier le champ A](images/know-the-ovh-a-records.png){.thumbnail}
 
 - **Les champs MX, pour les e-mails**
 
 Pour vérifier les champs MX que vous devez utiliser dans la zone de votre domaine, connectez-vous dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}. Rendez-vous dans la section `E-mails`{.action} puis sur le nom de l'hébergement web que vous venez de commander. Enfin, dans l'onglet `Informations générales`{.action}, récupérez les informations qui apparaissent à côté de "Champs MX". Ces derniers peuvent être différents d'un service à un autre suivant le filtre DNS que vous avez décidé d'appliquer.
 
-![Modifier les champs MX](images/know_the_OVH_MX_records.png){.thumbnail}
+![Modifier les champs MX](images/know-the-ovh-mx-records.png){.thumbnail}
 
 #### Vérifier et/ou modifier les enregistrement DNS
 

@@ -69,7 +69,7 @@ To ensure that the OVHcloud module installation is successful, please check that
 
 To create a database, please log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}. Go to the `Hosting plans`{.action} section, then click on the domain name corresponding to the Web Hosting plan you have just ordered. In the `Databases`{.action} tab, click the `Create a database`{.action} button. Enter the information requested, then wait for the installation process to complete.
 
-![Access to 1-click modules](images/create_a_database.png){.thumbnail}
+![Access to 1-click modules](images/create-a-database-2.png){.thumbnail}
 
 Once you have created a database, to install a 1-click module, go to the `1-click modules`{.action} tab and click `Add a module`{.action}. Select the CMS you want to install, check that the `Install in advanced mode`{.action}box is ticked, then click `Next`{.action}.
 
@@ -111,13 +111,13 @@ There are several OVHcloud DNS records. We will focus on two particular records 
 
 To check the A record that you need to use in your domain’s DNS zone, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}. Go to the `Hosting plans`{.action} section, then click on the domain name corresponding to the Web Hosting plan you have just ordered. In the `General information`{.action} tab, copy the IP address that appears next to "IPv4".
 
-![Edit the A record](images/know_the_OVH_A_records.png){.thumbnail}
+![Edit the A record](images/know-the-ovh-a-records.png){.thumbnail}
 
 - **The MX records, for emails**
 
 To check the MX records that you need to use in your domain’s DNS zone, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}. Go to the `Emails`{.action} section, then click on the domain name corresponding to the Web Hosting plan you have just ordered. In the `General information`{.action} tab, copy the information that appears next to “MX records”. The MX records can differ from one service to another, depending on the DNS filter that you have decided to apply.
 
-![Edit the MX records](images/know_the_OVH_MX_records.png){.thumbnail}
+![Edit the MX records](images/know-the-ovh-mx-records.png){.thumbnail}
 
 #### Check and/or modify the DNS records
 

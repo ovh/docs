@@ -73,7 +73,7 @@ Damit die Installation des OVHcloud Moduls erfolgreich ist, überprüfen Sie bit
 
 Um eine Datenbank zu erstellen, loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und wählen Sie im Bereich `Web Cloud`{.action} unter `Hosting-Pakete`{.action} das betreffende Hosting aus. Gehen Sie dann auf den Tab `Datenbanken`{.action} und klicken Sie auf den Button `Eine Datenbank erstellen`{.action}. Füllen Sie die notwendigen Informationen aus und warten Sie, bis die Installation abgeschlossen ist.
 
-![Zugriff auf die 1-Klick-Module](images/create_a_database.png){.thumbnail}
+![Zugriff auf die 1-Klick-Module](images/create-a-database-2.png){.thumbnail}
 
 Nachdem die Datenbank angelegt wurde, gehen Sie für die Installation des 1-Klick-Moduls in den Tab `1 Klick Module`{.action} und klicken Sie anschließend auf den Button `Ein Modul hinzufügen`{.action}. Wählen Sie Ihr bevorzugtes CMS zur Installation aus, vergewissern Sie sich, dass in dem Feld `Installation im Experten-Modus`{.action} ein Haken gesetzt ist, und klicken Sie dann auf `Weiter`{.action}.
 
@@ -115,13 +115,13 @@ Es gibt mehrere zu OVHcloud gehörige DNS-Einträge. Wir interessieren uns an di
 
 Um den A-Eintrag zu überprüfen, den Sie für die DNS-Zone Ihrer Domain benötigen, loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und wählen Sie im Bereich `Web Cloud`{.action} unter `Hosting-Pakete`{.action} das betreffende Hosting aus. Suchen Sie dann im Tab `Allgemeine Informationen`{.action} die IP-Adresse, die neben „IPv4“ steht.
 
-![A-Eintrag bearbeiten](images/know_the_OVH_A_records.png){.thumbnail}
+![A-Eintrag bearbeiten](images/know-the-ovh-a-records.png){.thumbnail}
 
 - **MX-Einträge für E-Mails**
 
 Um die MX-Einträge zu überprüfen, die Sie für die Zone Ihrer Domain benötigen, loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und wählen Sie im Bereich `Web Cloud`{.action} unter `Hosting-Pakete`{.action} das betreffende Hosting aus. Suchen Sie im Tab `Allgemeine Informationen`{.action} die Informationen, die neben dem Punkt „MX Einträge“ stehen. Diese können sich je nach Dienstleistung unterscheiden, je nachdem, welchen DNS-Filter Sie angewendet haben.
 
-![MX-Einträge bearbeiten](images/know_the_OVH_MX_records.png){.thumbnail}
+![MX-Einträge bearbeiten](images/know-the-ovh-mx-records.png){.thumbnail}
 
 #### DNS-Einträge überprüfen oder bearbeiten
 

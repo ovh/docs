@@ -71,7 +71,7 @@ Para instalar o módulo no modo avançado, certifique-se que:
 
 Para verificar ou criar uma bases de dados, aceda à [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Clique em `Alojamentos`{.action} e selecione o alojamento web que contratou. Selecione `Bases de dados`{.action}. Se não tiver nenhuma base de dados criada, clique no botão `Criar uma base de dados`{.action}. Siga as instruções, e aguarde a conclusão da instalação.
 
-![Acesso aos módulos 1 clique](images/create_a_database.png){.thumbnail}
+![Acesso aos módulos 1 clique](images/create-a-database-2.png){.thumbnail}
 
 Depois de criar a base de dados, selecione `Módulos 1 clique`{.action}, e clique no botão `Adicionar um módulo`{.action}. Selecione o CMS, certifique-se que a ` instalação em modo avançado`{.action} está selecionada. Clique no botão `Seguinte`{.action}:
 
@@ -113,13 +113,13 @@ Existem dois registos DNS (campos A e MX) que permitem aceder ao seu site e rece
 
 Para consultar o campo A, e os dados que deve usar na zona DNS, aceda à [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Selecione `Alojamentos`{.action}, e clique no alojamento contratado. De seguida, em `Informações gerais`{.action}, tome nota do endereço IP indicado para «IPv4».
 
-![Alterar o campo A](images/know_the_OVH_A_records.png){.thumbnail}
+![Alterar o campo A](images/know-the-ovh-a-records.png){.thumbnail}
 
 - **Campos MX (receção de e-mail)**
 
 Para consultar os campos MX, e os dados que deve usar na zona DNS, aceda à [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Selecione `E-mails`{.action} e clique no alojamento web contratado. De seguida, clique em `Informações gerais`{.action}, e tome nota das informações indicadas para os «Campos MX». Estes campos podem diferir entre serviços, em função da filtragem DNS selecionada na área de gestão do alojamento.
 
-![Alterar os campos MX](images/know_the_OVH_MX_records.png){.thumbnail}
+![Alterar os campos MX](images/know-the-ovh-mx-records.png){.thumbnail}
 
 #### Verificar e/ou alterar os registos DNS
 

@@ -73,7 +73,7 @@ Para poder instalar el módulo de OVHcloud, debe asegurarse de lo siguiente:
 
 Para crear la base de datos, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.Haga clic en `Alojamientos`{.action} y seleccione su alojamiento web. A continuación, abra la pestaña `Bases de datos`{.action} y haga clic en el botón `Crear una base de datos`{.action}. Complete la información solicitada y espere a que se efectúe la instalación.
 
-![Acceso a los módulos en un clic](images/create_a_database.png){.thumbnail} 
+![Acceso a los módulos en un clic](images/create-a-database-2.png){.thumbnail} 
 
 Para instalar el módulo en un clic, una vez creada la base de datos abra la pestaña `Módulos en un clic`{.action} y haga clic en el botón `Añadir un módulo`{.action}. A continuación, seleccione el CMS que quiera instalar, asegúrese de que la casilla **Instalación en modo avanzado** esté marcada y haga clic en el botón `Siguiente`{.action}.
 
@@ -117,13 +117,13 @@ Existen varios registros DNS asociados a su alojamiento web de OVHcloud. A conti
 
 Para comprobar el registro A que debe utilizar en la zona de DNS de su dominio, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.Haga clic en `Alojamientos`{.action} y seleccione el nombre del alojamiento. A continuación, en la pestaña `Información general`{.action}, consulte la dirección IP que aparece junto a **IPv4**.
 
-![Modificar el registro A](images/know_the_OVH_A_records.png){.thumbnail} 
+![Modificar el registro A](images/know-the-ovh-a-records.png){.thumbnail} 
 
 **Los registros MX, para el correo electrónico**
 
 Para comprobar los registros MX que debe utilizar en la zona de su dominio, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.Haga clic en `Correo electrónico`{.action} y seleccione el nombre del alojamiento. A continuación, en la pestaña `Información general`{.action}, consulte la información que aparece junto a **Registros MX**. Estos registros pueden variar en función del servicio, según el filtro DNS que haya decidido aplicar.
 
-![Modificar los registros MX](images/know_the_OVH_MX_records.png){.thumbnail} 
+![Modificar los registros MX](images/know-the-ovh-mx-records.png){.thumbnail} 
 
 #### Comprobar y/o modificar los registros DNS
 

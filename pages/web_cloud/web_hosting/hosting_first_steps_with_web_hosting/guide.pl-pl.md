@@ -73,7 +73,7 @@ Aby instalacja modułu OVHcloud była możliwa, koniecznie upewnij się, że:
 
 Aby utworzyć bazę danych, zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.Wybierz sekcję `Hosting`{.action}, a następnie nazwę hostingu, który zakupiłeś. W zakładce `Bazy danych`{.action} wybierz opcję `Stwórz bazę danych`{.action}. Uzupełnij wymagane informacje, a następnie zaczekaj na zakończenie instalacji.
 
-![Dostęp do modułów OVHcloud ](images/create_a_database.png){.thumbnail}
+![Dostęp do modułów OVHcloud ](images/create-a-database-2.png){.thumbnail}
 
 Gdy baza danych została już utworzona, wybierz zakładkę `Moduły`{.action}, by przeprowadzić instalację modułu, a następnie wybierz opcję `Dodaj moduł`{.action}. Wybierz CMS, który chcesz zainstalować i upewnij się, że pole `Instalacja w trybie zaawansowanym`{.action} nie jest zaznaczone, następnie wybierz opcję `Instalacja`{.action}.
 
@@ -115,13 +115,13 @@ Istnieje wiele rekordów DNS dostępnych w OVHcloud. Skupimy się w szczególno�
 
 Aby sprawdzić rekord A, którego należy użyć w strefie DNS Twojej domeny, zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.Wybierz sekcję `Hosting`{.action}, a następnie nazwę hostingu, który zakupiłeś. Następnie w zakładce `Informacje ogólne`{.action} odszukaj adres IP, który znajduje się obok `IPv4`{.action}.
 
-![Zmień rekord A](images/know_the_OVH_A_records.png){.thumbnail}
+![Zmień rekord A](images/know-the-ovh-a-records.png){.thumbnail}
 
 - **Rekordy MX, dla adresów e-mail**
 
 Aby sprawdzić rekordy MX, których należy użyć w strefie Twojej domeny, zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.Wybierz sekcję `E-maile`{.action}, a następnie nazwę hostingu, który zakupiłeś. Następnie w zakładce `Informacje ogólne`{.action} odszukaj informacje, które znajdują się obok `Rekordów MX`{.action}. Rekordy te mogą różnić się w zależności od filtra DNS, który postanowiłeś zastosować.
 
-![Zmień rekordy MX](images/know_the_OVH_MX_records.png){.thumbnail}
+![Zmień rekordy MX](images/know-the-ovh-mx-records.png){.thumbnail}
 
 #### Sprawdzanie lub modyfikowanie rekordów DNS
 
