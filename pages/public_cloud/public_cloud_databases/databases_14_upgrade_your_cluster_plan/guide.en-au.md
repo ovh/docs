@@ -12,12 +12,12 @@ Learn how to upgrade the service plan of your cluster according to your needs.
 > Once you have upgraded your solution, you will not be able to downgrade to a lower solution.
 >
 
-### Requirements
+## Requirements
 
 - Access to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au) 
 - A [Public Cloud project](https://www.ovhcloud.com/en-au/public-cloud/) in your OVHcloud account
 
-### Instructions
+## Instructions
 
 To upgrade the service plan of your cluster, log in to the OVHcloud Control Panel and open your Public Cloud project. Click `Databases`{.action} in the left navigation bar, select your engine instance then click the `General Information`{.action} tab.
 

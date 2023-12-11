@@ -157,8 +157,8 @@ public-cloud-compute: Compute
 public-cloud-compute-getting-started: Per iniziare
 public-cloud-compute-general-information: Informazioni generali
 public-cloud-compute-project-management: Gestione del progetto
-public-cloud-compute-instance-management: Gestión de las instancias
-public-cloud-compute-instance-management-getting-started: Gestión de las instancias - Per iniziare
+public-cloud-compute-instance-management: Gestione delle istanze
+public-cloud-compute-instance-management-getting-started: Gestione delle istanze - Per iniziare
 public-cloud-compute-instance-management-control-panel: Gestione dallo Spazio Cliente OVHcloud
 public-cloud-compute-instance-management-horizon: Gestione via Horizon
 public-cloud-compute-instance-management-openstack: Gestione via API OpenStack
