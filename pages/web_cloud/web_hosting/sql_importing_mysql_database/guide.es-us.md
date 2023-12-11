@@ -1,7 +1,7 @@
 ---
 title: 'Importar una copia de seguridad en la base de datos de un alojamiento web'
 excerpt: 'Cómo importar una copia de seguridad en la base de datos de un alojamiento web de OVHcloud'
-updated: 2018-09-25
+updated: 2023-12-11
 ---
 
 ## Objetivo
@@ -166,4 +166,8 @@ Sustituya la información genérica del comando por la información de la base d
 
 ## Más información
 
-Interactúe con nuestra comunidad de usuarios en [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es/directory/).
+
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es/support-levels/).
+
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

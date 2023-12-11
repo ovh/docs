@@ -1,7 +1,7 @@
 ---
 title: "Importer une sauvegarde dans la base de données d'un hébergement web"
 excerpt: 'Découvrez comment importer une sauvegarde dans la base de données de votre hébergement web OVH'
-updated: 2018-09-25
+updated: 2023-12-11
 ---
 
 ## Objectif
@@ -165,5 +165,9 @@ cat nom_fichier_sauvegarde.sql | mysql --host=adresse_du_serveur --user=nom_util
 Prenez soin de remplacer les informations génériques de cette commande par les informations de la base de données concernée. Une fois l'importation réalisée, nous vous conseillons de supprimer le fichier de sauvegarde du répertoire dans lequel vous l'avez téléchargé.
 
 ## Aller plus loin
+
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
+
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

@@ -1,7 +1,7 @@
 ---
 title: 'Importar una copia de seguridad en la base de datos de un alojamiento web'
 excerpt: 'Cómo importar una copia de seguridad en la base de datos de un alojamiento web de OVH'
-updated: 2018-09-25
+updated: 2023-12-11
 ---
 
 ## Objetivo
@@ -165,5 +165,9 @@ cat nombre_archivo_backup.sql | mysql --host=dirección_servidor --user=nombre_u
 Sustituya la información genérica del comando por la información de la base de datos correspondiente. Una vez que haya finalizado la importación, le recomendamos encarecidamente que elimine el archivo de backup del directorio en el que lo haya cargado.
 
 ## Más información
+
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
+
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es-es/support-levels/).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.
