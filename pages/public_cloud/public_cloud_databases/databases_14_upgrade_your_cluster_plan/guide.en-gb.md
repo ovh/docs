@@ -1,17 +1,15 @@
 ---
 title: Upgrade your cluster service plan
 excerpt: Find out how to upgrade the service plan of your cluster
-updated: 2023-12-10
+updated: 2023-12-11
 ---
 
 ## Objective
 
 Learn how to upgrade the service plan of your cluster according to your needs.
 
-## How to upgrade your service plan
-
 > [!warning]
->Once you have upgraded your solution, you will not be able to downgrade to a lower solution.
+> Once you have upgraded your solution, you will not be able to downgrade to a lower solution.
 >
 
 ### Requirements
