@@ -51,7 +51,7 @@ If you need to restore your data using a backup, you can follow [this guide](/pa
 | **Source** | **Content** | **Documentation** |
 | --- | --- | --- |
 | Control Panel | Logs of interactions made by admin, technical or billing contacts on customer panel and services they have access to,using API calls. |- <https://api.ovh.com/console/#/me> (see `/me/api/logs`)<br>- [List of API calls done with your account](https://api.ovh.com/console/#/me/api/logs/self~GET)<br>- [List of API calls done on services you have access to](https://api.ovh.com/console/#/me/api/logs/services~GET)<br>-[Get your audit logs (https://api.ovh.com/console/#/me/logs/audit~GET)] |
-| Service | 1000 last logs for service usage | See Sheet 'log' in the control panel or via API (for Cassandra service as an example /cloud/project/{serviceName}/database/cassandra/{clusterId}/logs<br>- /cloud/project/{serviceName}/database/{serviceType}/{clusterId}/logs |
+| Service | 1000 last logs for service usage | See Sheet 'log' in the control panel<br>- or via API (for Cassandra service as an example /cloud/project/{serviceName}/database/cassandra/{clusterId}/logs<br>- /cloud/project/{serviceName}/database/{serviceType}/{clusterId}/logs |
 
 ## 6.API
 
