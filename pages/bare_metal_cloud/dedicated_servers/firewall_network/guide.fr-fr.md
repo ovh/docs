@@ -1,14 +1,14 @@
 ---
-title: 'Configurer le Network Firewall'
-excerpt: 'Découvrez comment configurer votre Network Firewall'
-updated: 2023-05-02
+title: 'Activer et configurer le Edge Network Firewall'
+excerpt: 'Découvrez comment configurer le Edge Network Firewall pour vos services'
+updated: 2023-12-11
 ---
 
 ## Objectif
 
-Pour protéger son infrastructure globale et les serveurs de ses clients, OVHcloud propose un pare-feu paramétrable et intégré à la solution **Anti-DDoS** : le Network Firewall. Cette option vous permet de limiter l'exposition de votre service aux attaques provenant du réseau public.
+Pour protéger les services à la clientèle exposés sur les adresses IP publiques, OVHcloud propose un pare-feu sans état (*stateless*) qui est configuré et intégré à l’**infrastructure anti-DDoS** : le Edge Network Firewall. Il permet de limiter l’exposition des services aux attaques DDoS, en supprimant des flux réseau spécifiques qui peuvent provenir de l’extérieur du réseau OVHcloud.
 
-**Ce guide vous explique comment configurer votre Network Firewall.**
+**Ce guide vous explique comment configurer le Edge Network Firewall pour vos services.**
 
 > [!primary]
 >
@@ -21,8 +21,8 @@ Pour protéger son infrastructure globale et les serveurs de ses clients, OVHclo
 
 ## Prérequis
 
-- Posséder un service OVHcloud bénéficiant d’un Network Firewall ([Serveur Dédié](https://www.ovh.com/fr/serveurs_dedies/){.external}, [VPS](https://www.ovh.com/fr/vps/){.external},[instance Public Cloud](https://www.ovhcloud.com/fr/public-cloud/), [Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), [Additional IP](https://www.ovhcloud.com/fr/bare-metal/ip/){.external}, etc.)
-- Avoir accès à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
+- Un service OVHcloud exposé et utilisant une adresse IP publique dédiée ([Serveur Dédié](https://www.ovhcloud.com/fr/bare-metal/), [VPS](https://www.ovhcloud.com/fr/vps/),[instance Public Cloud](https://www.ovhcloud.com/fr/public-cloud/), [Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), [Additional IP](https://www.ovhcloud.com/fr/network/additional-ip/), etc.)
+- Avoir accès à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 
 > [!warning]
 > Cette fonctionnalité peut être indisponible ou limitée sur les [serveurs dédiés **Eco**](https://eco.ovhcloud.com/fr/about/).
@@ -31,121 +31,163 @@ Pour protéger son infrastructure globale et les serveurs de ses clients, OVHclo
 
 ## En pratique
 
-OVHcloud a récemment amélioré son offre de sécurité avec l'introduction de l'Edge Network Firewall. Cette fonctionnalité avancée permet de réduire l'exposition aux attaques de réseau en provenance d'Internet, en déplaçant les règles de pare-feu du serveur vers la périphérie du réseau d'OVHcloud. Cela permet de bloquer les attaques entrantes aussi près que possible de leur origine, réduisant ainsi le risque de saturation de la connectivité du serveur ou du rack pour les attaques plus importantes. La gestion des règles de pare-feu peut être complexe, mais grâce à la récente mise à jour de l'interface de l'Edge Network Firewall, cette tâche est désormais plus simple et plus intuitive.
+Le Edge Network Firewall réduit l’exposition aux attaques DDoS réseau en permettant aux utilisateurs de répliquer certaines règles de pare-feu du serveur à la périphérie du réseau OVHcloud. Cela bloque les attaques entrantes au plus près de leur source, réduisant ainsi le risque de saturation des ressources du serveur ou des connexions rack en cas d’attaque majeure.
 
-### Activer le Network Firewall
-
-> [!primary]
->
-> Le Network Firewall protège l'adresse IP associée à un serveur. Par conséquent, si vous avez un serveur avec plusieurs adresses IP, vous devez configurer chaque IP indépendamment. Une configuration globale du serveur est impossible.
-> 
-
-Connectez-vous à[ l’espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, accédez à la section `Bare Metal Cloud`{.action} et cliquez sur `IP`{.action}.
-
-Vous pouvez utiliser le menu déroulant sous « Mes adresses IP publiques et services associés » pour filtrer vos services par catégorie.
-
-![filter service](images/selectservice.png){.thumbnail}
-
-Cliquez ensuite sur le bouton `...`{.action} pour activer le pare-feu sur une adresse IPv4.
-
-![Activation du Network Firewall](images/firewallcreation2022.png){.thumbnail}
-
-Confirmez votre action.
-
-![Confirmation](images/creationvalid.png){.thumbnail}
-
-Cliquez ensuite sur `Activer le firewall`{.action} (1), puis sur ` Configurer le firewall`{.action} (2) pour commencer le paramétrage.
-
-![Activation de la configuration](images/activationconfig.png){.thumbnail}
-
-Vous pouvez configurer jusqu'à **20 règles par adresse IP**.
-
-> [!warning]
->
-> Si le Network firewall est configuré avec des règles, ces règles sont automatiquement appliquées à chaque attaque DDoS. Le Firewall ne peut pas être désactivé avant la fin de l'attaque, c'est pourquoi il est important de maintenir à jour les règles de pare-feu.
-> Par défaut, vous n’avez pas de règles configurées. Toutes les connexions peuvent donc être établies.
-> Si vous en possédez, nous vous recommandons de les vérifier régulièrement, même si le pare-feu est désactivé.
-> 
+### Activer le Edge Network Firewall
 
 > [!primary]
 >
-> - La fragmentation UDP est bloquée (DROP) par défaut. Lorsque vous activez le Network Firewall, n'oubliez pas de configurer correctement votre unité de transmission maximale (<i>Maximum Transmission Unit</i> ou MTU) si vous utilisez un VPN. Par exemple, sur OpenVPN, vous pouvez cocher `MTU test`{.action} .
-> - Le Network Firewall n'est pas pris en compte au sein du réseau OVHcloud. Par conséquent, les règles configurées n'affectent pas les connexions de ce réseau interne.
+> Le Edge Network Firewall protège une IP spécifique associée à un serveur (ou service). Par conséquent, si vous avez un serveur avec plusieurs adresses IP, vous devez configurer chaque IP séparément.
+> 
+
+Connectez-vous à[ l’espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), accédez à la section `Bare Metal Cloud`{.action} puis au menu `Network`.{action} et ouvrez les `Adresses IP publiques`{.action}. Vous pouvez utiliser le menu déroulant sous **« Mes adresses IP publiques et services associés »** pour filtrer vos services par catégorie.
+
+![filtrer les service](images/selectservice_cut.png){.thumbnail}
+
+Cliquez ensuite sur le bouton `...`{.action} à droite de l'IPv4 concernée et sélectionnez d'abord `Créer un pare-feu`{.action}.
+
+![Activation du Edge Network Firewall](images/firewallcreation2022.png){.thumbnail}
+
+Une confirmation vous sera alors demandée. Après confirmation, un pare-feu sera créé et disponible à la configuration.
+
+> [!primary]
+> Le bouton `Créer un pare-feu`{.action} ne sera disponible que pour les IP n'ayant jamais eu de pare-feu configuré. Si ce n'est pas la première fois que vous configurez votre pare-feu, vous pouvez ignorer cette étape.
 >
 
-### Configurer le Network Firewall
+| ![Activation de la configuration](images/activationconfig.png) |
+|:--:|
+| Cliquez ensuite sur `Edge Network Firewall Configuration`{.action} pour commencer à le configurer. |
+
+Sur cette page, vous pouvez choisir d'**activer** ou de **désactiver** le pare-feu à l'aide du bouton dédié.
+Il est également possible de le faire d'une autre manière expliquée ci-dessous.
+
+Vous pouvez mettre en place jusqu'à **20 règles par adresse IP**.
 
 > [!warning]
-> Veuillez noter que le Network Firewall d'OVHcloud ne peut pas être utilisé pour ouvrir des ports sur un serveur. Pour ouvrir des ports sur un serveur, vous devez passer par le pare-feu du système d'exploitation installé sur le serveur.<br>
-> Pour plus d'informations, consultez les guides suivants : [Configurer le pare-feu sous Windows](/pages/bare_metal_cloud/dedicated_servers/activate-port-firewall-soft-win) et [Configurer le pare-feu sous Linux avec Iptables](/pages/bare_metal_cloud/dedicated_servers/firewall-Linux-iptable).
+>
+> Le Edge Network Firewall est automatiquement activé lorsqu’une attaque DDoS est détectée et ne peut pas être désactivé tant que l’attaque n’est pas terminée. Par conséquent, toutes les règles configurées dans le pare-feu sont appliquées pendant la durée de l’attaque. Cette logique permet à nos clients de décharger les règles de pare-feu du serveur à la périphérie du réseau OVHcloud pendant la durée de l'attaque.
+> Veuillez noter que vous devez configurer vos propres pare-feux locaux même si le Edge Network Firewall a été configuré, car son rôle principal est de gérer le trafic en dehors du réseau OVHcloud.
+> Si vous avez configuré des règles, nous vous recommandons de les vérifier régulièrement ou lors de changements dans le fonctionnement de vos services. Comme évoqué précédemment, le Edge Network Firewall sera automatiquement activé en cas d’attaque DDoS, même s’il est désactivé dans vos paramètres IP.
 >
 
-Pour ajouter une règle:
+> [!primary]
+>
+> - La fragmentation UDP est bloquée (*DROP*) par défaut. Lors de l'activation du Edge Network Firewall, si vous utilisez un VPN, n'oubliez pas de configurer correctement votre unité de transmission maximale (MTU). Par exemple, avec OpenVPN, vous pouvez le vérifier via `MTU test`.
+> - Le Edge Network Firewall (ENF), intégré aux Scrubbing Centers (VAC), gère uniquement le trafic réseau provenant de l’extérieur du réseau OVHcloud.
+>
 
-| ![add-rule-btn](images/edge-firewall-add-rule.png) | 
+### Configurer le Edge Network Firewall
+
+> [!warning]
+> Veuillez noter que le Edge Network Firewall d’OVHcloud ne peut pas être utilisé pour ouvrir des ports sur un serveur. Pour ouvrir des ports sur un serveur, vous devez passer par le pare-feu du système d'exploitation installé sur le serveur.
+> Pour plus d'informations, reportez-vous aux guides suivants : [Configuration du pare-feu sous Windows](/pages/bare_metal_cloud/dedicated_servers/activate-port-firewall-soft-win) et [Configuration du pare-feu sous Linux avec iptables](/pages/bare_metal_cloud/dedicated_servers/firewall-Linux-iptable).
+>
+
+**Pour ajouter une règle :**
+
+| ![add-rule-btn](images/enf_add_rule.png) |
+|:--:|
+| Cliquez sur `Ajouter une règle`{.action}. |
+
+Pour chaque règle (hors TCP), vous devez choisir :
+
+| ![add-rule-btn](images/enf_add_rule_other_than_tcp.png) | 
+|:--| 
+| &bull; Une priorité (de 0 à 19, 0 étant la première règle à appliquer, suivie des autres) <br>&bull; Une action (`Accepter`{.action} ou `Refuser`{.action}) <br>&bull; Le protocole <br>&bull; L'adresse IP source (facultatif) |
+
+Pour chaque règle **TCP**, vous devez choisir :
+
+| ![add-rule-btn](images/enf_add_rule_tcp.png) | 
+|:--| 
+| &bull; Une priority (de 0 à 19, 0 étant la première règle à appliquer, suivie des autres) <br>&bull; Une action (`Accepter`{.action} ou `Refuser`{.action}) <br>&bull; Le protocole <br>&bull; L'adresse IP source (facultatif) <br>&bull; Le port source (facultatif) <br>&bull; Le port de destination (facultatif) <br>&bull; L'état TCP (facultatif) <br>&bull; Fragments (facultatif)|
+
+> [!primary]
+>
+> - Priorité 0 : nous vous conseillons d'autoriser le protocole TCP sur toutes les IP avec une option `established`. L'option `established` permet de vérifier que le paquet fait partie d'une session précédemment ouverte (déjà démarrée). Si vous ne l'autorisez pas, le serveur ne recevra pas les retours du protocole TCP des requêtes SYN/ACK.
+> - Priorité 19 : nous vous conseillons de refuser tout trafic du protocole IPv4 qui n'aurait été accepté par aucune règle antérieure.
+> 
+
+> [!warning]
+> Les configurations de pare-feu avec seulement des règles de mode « Accept » ne sont pas du tout efficaces. Une instruction doit indiquer ce qui doit être supprimé par le pare-feu. Vous recevrez un avertissement à moins qu'une règle « Refuser » ne soit créée.
+> 
+
+**Activer le pare-feu :**
+
+| ![activate-desactivate](images/enf_enabled_button_01.png) |
 |:--:| 
-| Cliquezr sur `Ajouter une règle`{.action}. |
+| Utilisez le bouton `Activer`{.action} pour activer le pare-feu. |
 
+Après validation, le firewall sera activé.
 
-Pour chaque règle (hors TCP), vous devez choisir :
+**Désactiver le pare-feu :**
 
-| ![add-rule-btn](images/basic-rule.png) | 
-|:--| 
-| &bull; une priorité (de 0 à 19, 0 étant la première règle à appliquer) <br>&bull; une action (`Autoriser`{.action} ou `Refuser`{.action}) <br>&bull; le protocol <br>&bull; une adresse IP (facultatif) |
+| ![activate-desactivate](images/enf_enabled_button_04.png) |
+|:--:|
+| Utilisez le bouton `Désactiver`{.action} pour le désactiver. |
 
+Après validation, le firewall sera désactivé.
 
-Pour chaque règle **TCP**, vous devez choisir :
-
-| ![add-rule-btn](images/tcp-rule.png) | 
-|:--| 
-| &bull; une priorité (de 0 à 19, 0 étant la première règle à appliquer) <br>&bull; une action (`Autoriser`{.action} ou `Refuser`{.action}) <br>&bull; le protocol <br>&bull; une adresse IP (facultatif) <br>&bull; le port source <br>&bull; le port de destination <br>&bull; les options <br>&bull; Fragments|
-
-
-> [!primary]
->
-> - Priorité 0 : nous vous conseillons d'autoriser le protocole TCP sur toutes les adresses IP avec une option `établie`{.action}. Celle-ci vous permet de vérifier que le paquet fait partie d'une session précédemment ouverte (déjà initiée). Si vous ne l'autorisez pas, le serveur ne recevra pas les retours du protocole TCP des requêtes SYN/ACK.
-> - Priorité 19 : nous vous conseillons de refuser tout trafic de protocole IPv4 qui n'a été accepté par aucune règle antérieure.
-> 
+Notez que les règles sont désactivées jusqu'au moment où une attaque est détectée, puis qu'elles sont activées. Cette logique peut être utilisée pour les règles qui ne sont actives que lorsqu'une attaque répétée connue arrive.
 
 ### Exemple de configuration
 
-Pour vous assurer que seuls les ports SSH (22), HTTP (80), HTTPS (443) et UDP (10 000) restent ouverts lors de l'autorisation de l'ICMP, suivez les règles ci-dessous :
+Pour vous assurer que seuls les ports SSH (22), HTTP (80), HTTPS (443) et UDP (10 000) restent ouverts lors de l'autorisation de l'ICMP, suivez les règles ci-dessous :
 
 ![Exemple de configuration](images/exemple.png){.thumbnail}
 
-Les règles sont triées de 0 (la première règle lue) à 19 (la dernière). La chaîne cesse d'être analysée dès qu'une règle est appliquée au paquet reçu.
+Les règles sont triées de 0 (la première règle lue) à 19 (la dernière). La chaîne cesse d'être analysée dès qu'une règle est appliquée au paquet.
 
-Par exemple, un paquet pour le port 80/TCP sera capturé par la règle 2 et les règles qui suivent ne seront pas appliquées. Un paquet pour le port 25/TCP ne sera attrapé qu'à la dernière règle (19) qui le bloquera, car le pare-feu n'autorise pas la communication sur le port 25 dans les règles précédentes.
-
-> [!warning]
-> Comme indiqué, la configuration ci-dessus n’est qu’un exemple et doit être utilisée comme référence si les règles ne s'appliquent pas aux services hébergés sur votre serveur. Il est absolument nécessaire de configurer les règles de votre firewall en fonction des services hébergés sur votre serveur. Une mauvaise configuration de vos règles de firewall peut entrainer le blocage du trafic légitime et l'inaccessibilité des services du serveur.
->
-
-### Mitigation
-
-Notre solution Anti-DDoS (VAC) comprend trois modes de mitigation : automatique, permanente ou forcée.
-
-**Mitigation automatique (détection permanente)** : par défaut, toutes les IPs OVHcloud sont soumises à la mitigation automatique.  Avec ce mode, le trafic ne passe par le système de mitigation que s'il est détecté comme « inhabituel » par rapport au trafic normal habituellement reçu par le serveur.
-
-**Mitigation permanente** : ce mode peut être activé ou désactivé depuis votre espace client. Avec la mitigation permanente (si elle est activée), vous appliquez un premier niveau de filtrage constant à travers notre Shield hardware.<br>
-Tout le trafic passe en permanence par le système de mitigation avant d'atteindre le serveur. Nous recommandons ce mode pour les services faisant l'objet d'attaques fréquentes.<br>
-Veuillez noter que la mitigation permanente faisant partie de notre solution Anti-DDoS (VAC), vous pouvez l'activer sur votre IP sans activer le Network Firewall.
-
-Pour l'activer, cliquez sur le menu `Bare Metal Cloud`{.action} et ouvrez `IP`{.action}. Cliquez ensuite sur les `...`{.action} à droite de l'IPv4 concernée et sélectionnez `Mitigation : mode permanent`{.action}.
-
-**Mitigation forcée** : ce mode est activé automatiquement dès qu'une attaque est détectée sur le serveur. Une fois activé sur notre infrastructure Anti-DDoS, ce mode ne peut être désactivé. Afin de protéger notre infrastructure, la protection sera activée pendant toute la durée de l’attaque, jusqu’à ce qu’elle soit totalement mitigée.
+Par exemple, un paquet pour le port TCP 80 sera intercepté par la règle 2 et les règles qui suivent ne seront pas appliquées. Un paquet pour le port TCP 25 ne sera capturé que par la dernière règle (19), ce qui le bloquera car le pare-feu n'autorise pas la communication sur le port 25 dans les règles précédentes.
 
 > [!warning]
+> La configuration ci-dessus n'est qu'un exemple et ne doit être utilisée comme référence que si les règles ne s'appliquent pas aux services hébergés sur votre serveur. Il est indispensable de configurer les règles de votre firewall pour qu'elles correspondent aux services hébergés sur votre serveur. Une configuration incorrecte de vos règles de pare-feu peut entraîner le blocage du trafic légitime et l'inaccessibilité des services du serveur.
 > 
-> Si notre solution anti-DDoS limite une attaque, les règles configurées de votre Network Firewall finiront par être appliquées, même si vous avez désactivé le Firewall. Si vous souhaitez qu'aucune règle ne soit appliquée durant une attaque, vous devez supprimer toute règle préalablement créée.
->
-> La mitigation étant intégrée à notre solution Anti-DDoS (VAC), elle ne peut être désactivée sur un service. Tous les produits OVHcloud sont livrés avec la protection Anti-DDoS.
 
+### Mitigation des attaques - Activité du centre de nettoyage (Scrubbing Center)
+
+Notre infrastructure anti-DDoS (VAC) dispose de deux modes de fonctionnement : **automatique** et **permanent**. Le processus de mitigation est effectué via un centre de nettoyage (*Scrubbing Center*) automatisé. C’est là que notre technologie avancée examine en profondeur les paquets et tente de supprimer le trafic DDoS tout en permettant au trafic légitime de passer.
+
+- **La mitigation automatique** est la valeur par défaut : toutes les adresses IP OVHcloud sont en mitigation automatique et il s'agit en général du meilleur choix pour vos services. Si un trafic malveillant est détecté, le Scrubbing Center est actif. Cet état est alors indiqué par un statut « Forcé » pour une adresse IP donnée. Le Edge Network Firewall est également actif. La situation revient à la normale lorsque l’attaque est mitigée et qu’aucune autre activité suspecte n’est observée.
+
+- **Le mode mitigation permanente** peut être activé ou désactivé depuis votre espace client. Avec la mitigation permanente, vous appliquez de manière permanente le premier niveau de filtrage afin que tout le trafic passe en permanence par le système de mitigation avant d’atteindre le serveur. Il est déconseillé d'activer cette option sur de plus longues périodes, à moins que vous ne connaissiez une gigue (*jitter*) de latence, en raison du fait que le Scrubbing Center redirige le trafic trop fréquemment.
+À noter que, contrairement au mode automatique, il n’y a **pas** d’augmentation du niveau de protection lorsque ce mode est activé.
+
+Pour l'activer, procédez comme suit :
+
+- Cliquez sur `Bare Metal Cloud`{.action}.
+- Sélectionnez le menu `Network`{.action} .
+- Rendez-vous dans la section `IP`{.action} .
+
+| ![menu-ipv4](images/mitigation_menu.png) | 
+|:--:| 
+| Cliquez ensuite sur le bouton `...`{.action} à droite de l'IPv4 concernée |
+
+
+| ![mitigation-option](images/mitigation_menu_step_2.png) | 
+|:--:| 
+| Sélectionnez `Mitigation : mode permanent`{.action} |
+
+> [!success]
+> **Astuces**
+> Vous pouvez créer des règles de pare-feu dédiées aux attaques et qui ne s’appliquent qu’après la détection d’une attaque. Pour ce faire, des règles Edge Network Firewall doivent être créées mais désactivées.
+>
+
+> [!warning]
+> Si notre infrastructure anti-DDoS traite une attaque, les règles de votre Edge Network Firewall finiront par être appliquées, même si vous avez désactivé le pare-feu. Si vous avez désactivé votre pare-feu, n'oubliez pas de supprimer également vos règles.
+> 
+> Veuillez noter que l’infrastructure anti-DDoS ne peut pas être désactivée sur un service. Tous les produits OVHcloud sont livrés avec ce dispositif et cela ne peut pas être modifié.
+>
 
 ## Network Security Dashboard
 
-Vous pouvez lire plus d'informations sur notre [Network Security Dashboard](/pages/bare_metal_cloud/dedicated_servers/network_security_dashboard) afin d'obtenir plus de détails sur votre trafic.
+Pour un aperçu détaillé des attaques détectées et des résultats des activités du Scrubbing Center, nous vous encourageons à consulter notre guide sur le [Network Security Dashboard](/pages/bare_metal_cloud/dedicated_servers/network_security_dashboard).
+
+### Conclusion
+
+Après avoir lu ce tutoriel, vous devriez pouvoir configurer le Edge Network Firewall pour améliorer la sécurité de vos services OVHcloud.
 
 ## Aller plus loin
 
-Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
+- [Protéger un serveur GAME avec le pare-feu applicatif](/pages/bare_metal_cloud/dedicated_servers/firewall_game_ddos)
+
+Échangez avec notre communauté d’utilisateurs sur <https://community.ovh.com/>.
