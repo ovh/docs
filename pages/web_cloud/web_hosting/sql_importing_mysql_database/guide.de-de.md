@@ -1,7 +1,7 @@
 ---
 title: 'Backup in eine Webhosting-Datenbank importieren'
 excerpt: 'In dieser Anleitung erfahren Sie, wie Sie ein Backup in die Datenbank Ihres OVHcloud Webhostings importieren.'
-updated: 2018-09-25
+updated: 2023-12-11
 ---
  
 
@@ -166,5 +166,9 @@ cat name_backup_datei.sql | mysql --host=server_adresse --user=name_benutzer--pa
 Achten Sie außerdem darauf, die allgemeinen Informationen des Beispielbefehls mit den spezifischen Informationen der betreffenden Datenbank zu ersetzen. Wir empfehlen Ihnen, nach dem Import die Backup-Datei aus dem Verzeichnis, in das Sie sie hochgeladen haben, zu löschen.
 
 ## Weiterführende Informationen
+
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

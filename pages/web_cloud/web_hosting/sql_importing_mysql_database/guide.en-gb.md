@@ -1,7 +1,7 @@
 ---
 title: 'Importing a backup into a Web Hosting plan database'
 excerpt: 'Find out how to import a backup into a database on your OVHcloud Web Hosting plan'
-updated: 2018-09-25
+updated: 2023-12-11
 ---
 
 ## Objective

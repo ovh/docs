@@ -1,7 +1,7 @@
 ---
 title: 'Importar una copia de seguridad en la base de datos de un alojamiento web'
 excerpt: 'Cómo importar una copia de seguridad en la base de datos de un alojamiento web de OVHcloud'
-updated: 2018-09-25
+updated: 2023-12-11
 ---
 
 ## Objetivo

@@ -1,7 +1,7 @@
 ---
 title: 'Importar um backup para a base de dados de um alojamento web'
 excerpt: 'Saiba como importar um backup para a base de dados de um alojamento web da OVH'
-updated: 2018-09-25
+updated: 2023-12-11
 ---
 
 ## Sumário

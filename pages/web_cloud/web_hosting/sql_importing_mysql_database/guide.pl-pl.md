@@ -1,7 +1,7 @@
 ---
 title: 'Import kopii zapasowej do bazy danych hostingu'
 excerpt: 'Dowiedz się, jak importować kopię zapasową do bazy danych Twojego hostingu WWW OVH'
-updated: 2018-09-25
+updated: 2023-12-11
 ---
 
 ## Wprowadzenie 
