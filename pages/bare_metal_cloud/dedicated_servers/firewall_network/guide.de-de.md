@@ -143,7 +143,7 @@ Bitte beachten Sie, dass der permanente Schutz Teil unserer Anti-DDoS-Lösung (V
 >
 
 Um die Regeln Ihrer Ports in Armor zu konfigurieren müssen Sie sich zuerst in Ihrem OVHcloud Kundencenter einloggen.<br>
-Gehen Sie dann in das Menü `Bare Metal Cloud`{.action} und klicken Sie auf `Network`{.action}. Klicken Sie dann auf `IP`{.action}. Klicken Sie auf `...`{.action}. neben der IP-Adresse Ihres Gameservers und anschließend auf `Game Firewall konfigurieren`{.action}.
+Gehen Sie anschließend in das Menü `IP`{.action} und klicken Sie auf `...`{.action}. neben der IP-Adresse Ihres Gameservers und anschließend auf `Game Firewall konfigurieren`{.action}.
 
 ![Game_wall](images/GAMEwall2021.png){.thumbnail}
 

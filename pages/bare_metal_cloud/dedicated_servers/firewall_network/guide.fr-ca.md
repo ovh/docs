@@ -19,7 +19,7 @@ Pour protéger son infrastructure globale et les serveurs de ses clients, OVHclo
 
 ## Prérequis
 
-- Posséder un service OVHcloud bénéficiant d’un Network Firewall ([Serveur Dédié](https://www.ovh.com/ca/fr/serveurs_dedies/){.external}, [VPS](https://www.ovh.com/ca/fr/vps/){.external}, [instance Public Cloud](https://www.ovh.com/ca/fr/public-cloud/){.external}, [Hosted Private Cloud](https://www.ovh.com/ca/fr/cloud-prive){.externalP}, [Additional IP](https://www.ovhcloud.com/fr-ca/bare-metal/){.external}, etc.)
+- Posséder un service OVHcloud bénéficiant d’un Network Firewall ([Serveur Dédié](https://www.ovh.com/ca/fr/serveurs_dedies/){.external}, [VPS](https://www.ovh.com/ca/fr/vps/){.external},[instance Public Cloud](https://www.ovh.com/ca/fr/public-cloud/){.external}, [Hosted Private Cloud](https://www.ovh.com/ca/fr/cloud-prive){.externalP}, [Additional IP](https://www.ovhcloud.com/fr-ca/bare-metal/){.external}, etc.)
 - Avoir accès à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
 
 > [!warning]
@@ -36,7 +36,7 @@ Pour protéger son infrastructure globale et les serveurs de ses clients, OVHclo
 > Le Network Firewall protège l'adresse IP associée à un serveur. Par conséquent, si vous avez un serveur avec plusieurs adresses IP, vous devez configurer chaque IP indépendamment. Une configuration globale du serveur est impossible.
 > 
 
-Connectez-vous à [l’espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, accédez à la section `Bare Metal Cloud`{.action} et cliquez sur `Network`{.action}. Cliquez ensuite sur `IP`{.action}.
+Connectez-vous à [l’espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, accédez à la section `Bare Metal Cloud`{.action} et cliquez sur `IP`{.action}.
 
 Vous pouvez utiliser le menu déroulant sous « Mes adresses IP publiques et services associés » pour filtrer vos services par catégorie.
 
@@ -122,7 +122,7 @@ Notre solution Anti-DDoS (VAC) comprend trois modes de mitigation : automatique,
 Tout le trafic passe en permanence par le système de mitigation avant d'atteindre le serveur. Nous recommandons ce mode pour les services faisant l'objet d'attaques fréquentes.<br>
 Veuillez noter que la mitigation permanente faisant partie de notre solution Anti-DDoS (VAC), vous pouvez l'activer sur votre IP sans activer le Network Firewall.
 
-Pour l'activer, cliquez sur le menu `Bare Metal Cloud`{.action} et ouvrez `Network`{.action}, puis cliquez sur `IP`{.action}. Cliquez ensuite sur les `...`{.action} à droite de l'IPv4 concernée et sélectionnez `Mitigation : mode permanent`{.action}.
+Pour l'activer, cliquez sur le menu `Bare Metal Cloud`{.action} et ouvrez `IP`{.action}. Cliquez ensuite sur les `...`{.action} à droite de l'IPv4 concernée et sélectionnez `Mitigation : mode permanent`{.action}.
 
 **Mitigation forcée** : ce mode est activé automatiquement dès qu'une attaque est détectée sur le serveur. Une fois activé sur notre infrastructure Anti-DDoS, ce mode ne peut être désactivé. Afin de protéger notre infrastructure, la protection sera activée pendant toute la durée de l’attaque, jusqu’à ce qu’elle soit totalement mitigée.
 
@@ -139,7 +139,7 @@ Pour l'activer, cliquez sur le menu `Bare Metal Cloud`{.action} et ouvrez `Netwo
 >
 
 Afin de configurer les règles de vos ports sur Armor, vous devez d'abord vous connecter à votre espace client OVHcloud.<br>
-Ensuite, allez dans le menu `Bare Metal Cloud`{.action} et cliquez sur `Network`{.action}, puis sur `IP`{.action}. Cliquez sur `...`{.action} à côté de l'adresse IP de votre serveur de jeu puis sur `Configurer le firewall game`{.action}.
+Ensuite, rendez-vous dans le menu `Bare Metal Cloud`{.action} et cliquez sur la section `IP`{.action} dans la barre latérale de gauche. Cliquez sur `...`{.action} à côté de l'adresse IP de votre serveur de jeu puis sur `Configurer le firewall game`{.action}.
 
 ![Game_wall](images/GAMEwall2021.png){.thumbnail}
 
