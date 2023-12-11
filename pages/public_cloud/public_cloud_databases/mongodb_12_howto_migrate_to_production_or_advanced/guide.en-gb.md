@@ -25,6 +25,11 @@ Migration to Production and Advanced plans is automatic. If you want to migrate 
 The Public Cloud Databases MongoDB **Production** plan is intended for production applications on a high performance, scalable and secure cloud environment, while the **Advanced** plan will power large Enterprise-grade cloud workloads with advanced features.
 The migration of a cluster from a deprecated plan to a Production or Advanced plan is automatic.
 
+> [!primary]
+>
+> Migration to the **Advanced** plan is a two step process. First you will need to migrate from the deprecated plan to the **Production** plan and then to move on to the **Advanced** plan.
+>
+
 ## Instructions
 
 ### Find the service to migrate
@@ -56,9 +61,19 @@ Then select the new flavor of your service and confirm the migration.
 
 In this example, we choose to keep the same compute resources by moving from DB1-7 to DB2-7.
 
+> [!warning]
+>
+> The destination flavor storage must be large enough to handle your current data.
+>
+
+> [!warning]
+>
+> The destination flavor storage must be large enough to handle your current data.
+>
+
 ### Wait until the migration is complete
 
-The migration time is about 10 minutes in average but can be longer, depending on the size of the data.
+The migration time depends on data size.
 
 ![Migration in progress](images/migration-in-progress.png){.thumbnail}
 
