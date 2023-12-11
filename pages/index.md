@@ -613,6 +613,7 @@
             + [Handling "Disk Full" situations](public_cloud/public_cloud_databases/databases_10_full_disk_handling)
             + [Resize your cluster storage](public_cloud/public_cloud_databases/databases_11_resize_your_cluster_storage)
             + [Update your cluster flavor](public_cloud/public_cloud_databases/databases_13_update_your_cluster_flavor)
+            + [Upgrade your cluster service plan](public_cloud/public_cloud_databases/databases_14_upgrade_your_cluster_plan)
             + [Automated Backups](public_cloud/public_cloud_databases/databases_05_automated_backups)
             + [Getting started with Kubernetes database operator](public_cloud/public_cloud_databases/databases_12_operator)
             + [Cross Service Integration](public_cloud/public_cloud_databases/databases_07_cross_service_integration)
