@@ -27,7 +27,7 @@ The migration of a cluster from a deprecated plan to a Production or Advanced pl
 
 > [!primary]
 >
-> Migration to the **Advanced** plan is a two step process. First you will need to migrate from the deprecated plan to the **Production** plan and then to move on to the **Advanced** plan.
+> Migration to the **Advanced** plan is a two step process. First you need to migrate from the deprecated plan to the **Production** plan. Then you have to move on to the **Advanced** plan.
 >
 
 ## Instructions
@@ -60,11 +60,6 @@ Then select the new flavor of your service and confirm the migration.
 ![Choose flavor](images/choose-flavor.png){.thumbnail}
 
 In this example, we choose to keep the same compute resources by moving from DB1-7 to DB2-7.
-
-> [!warning]
->
-> The destination flavor storage must be large enough to handle your current data.
->
 
 > [!warning]
 >

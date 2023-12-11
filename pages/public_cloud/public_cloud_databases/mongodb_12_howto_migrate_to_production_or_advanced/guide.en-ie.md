@@ -27,7 +27,7 @@ The migration of a cluster from a deprecated plan to a Production or Advanced pl
 
 > [!primary]
 >
-> Migration to the **Advanced** plan is a two step process. First you will need to migrate from the deprecated plan to the **Production** plan and then to move on to the **Advanced** plan.
+> Migration to the **Advanced** plan is a two step process. First you need to migrate from the deprecated plan to the **Production** plan. Then you have to move on to the **Advanced** plan.
 >
 
 ## Instructions
