@@ -83,7 +83,12 @@ Se desejar mais informação sobre o processo, consulte o guia: [Como instalar u
 
 #### Transferência de um site já criado.
 
-Nesta situação, precisa de ter acesso aos ficheiros do site que irá transferir para o alojamento OVHcloud. De seguida, terá de aceder ao espaço de alojamento, e efetuar a transferência dos ficheiros para a pasta correta. Se necessário, terá de associar o site a uma base de dados previamente criada.
+Esta solução aplica-se se pretender criar ou migrar um site sem utilizar os módulos da OVHcloud. Deve ter acesso aos ficheiros do site que pretende instalar. Por conseguinte, terá de [ligar-se manualmente ao seu espaço de armazenamento FTP](/pages/web_cloud/web_hosting/ftp_connection) para carregar os ficheiros do sítio e, se possível, ligá-lo a uma base de dados previamente criada.
+
+> [!success]
+>
+> Se se esquecer da palavra-passe de acesso ao espaço de armazenamento FTP, altere-a utilizando o nosso guia "[Alterar a palavra-passe de acesso ao espaço de armazenamento FTP do alojamento web](/pages/web_cloud/web_hosting/ftp_change_password)".
+>
 
 Atenção! Este processo pode variar de acordo com o tipo de site. Se precisar de mais informação, consulte os guias: [Colocar um site online](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online){.external} e [Transferir um site para a OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh){.external} (versão PT disponível em breve). O site está no alojamento OVHcloud. Se quiser usar a solução de e-mail incluída no serviço, siga as instruções abaixo. Senão, passe à secção: **Domínios: Consultar, Verificar e Alterar dados DNS**.
 
