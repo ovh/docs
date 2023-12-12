@@ -71,7 +71,7 @@ Damit die Installation des OVHcloud Moduls erfolgreich ist, überprüfen Sie bit
 - das Verzeichnis, in dem das Modell installiert wird, vollständig leer ist (wenn Sie sich vorher noch nie mit Ihrem Storage verbunden haben, sollte das der Fall sein).
 - auf Ihrem Webhosting bereits eine Datenbank angelegt wurde.
 
-Um die Datenbank zu erstellen, loggen Sie sich im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein. Gehen Sie in den Bereich `Hosting-Pakete`{.action} und klicken Sie auf den Namen des Webhostings, das Sie gerade bestellt haben. 
+Um die Datenbank zu erstellen, loggen Sie sich im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus.
 
 Im Tab `Datenbanken`{.action} sind zwei Szenarien möglich: 
 
