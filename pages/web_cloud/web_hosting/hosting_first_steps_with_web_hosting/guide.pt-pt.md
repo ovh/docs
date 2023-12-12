@@ -69,9 +69,17 @@ Para instalar o módulo no modo avançado, certifique-se que:
 - a pasta de instalação do CMS está vazia; 
 - já tem uma base de dados criada no sistema.
 
-Para verificar ou criar uma bases de dados, aceda à [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Clique em `Alojamentos`{.action} e selecione o alojamento web que contratou. Selecione `Bases de dados`{.action}. Se não tiver nenhuma base de dados criada, clique no botão `Criar uma base de dados`{.action}. Siga as instruções, e aguarde a conclusão da instalação.
+Para criar a base de dados, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} e aceda à secção `Web Cloud`{.action}. Na coluna da esquerda, clique em `Alojamentos`{.action} e selecione o nome do alojamento web em causa.
 
-![Acesso aos módulos 1 clique](images/create-a-database-2.png){.thumbnail}
+No separador `Bases de dados`{.action}, são possíveis dois cenários: 
+
+- **Tem, pelo menos, uma base de dados disponível "criação" no seu alojamento web**: clique no botão `Ações`{.action} na parte superior da tabela e, a seguir, no botão `Criar uma base de dados`{.action}.
+
+![Acesso aos módulos em 1 clique](images/create-a-database-2.png){.thumbnail}
+
+- **Não dispõe de bases de dados disponíveis "criação" no seu alojamento web** : clique no botão `Ações`{.action} no topo da tabela que é apresentada. Poderá (à escolha):
+    - Encomendar uma base de dados [Start SQL](https://www.ovhcloud.com/pt/web-hosting/options/start-sql/) em complemento das suas bases de dados incluídas na sua oferta de alojamento web. Para isso, clique no botão `Ações`{.action} na parte superior da tabela e, a seguir, no botão `Encomendar uma base de dados`{.action}.
+    - Encomendar um servidor de bases de dados [Web Cloud Databases](https://www.ovhcloud.com/pt/web-cloud/databases/). Para isso, clique no botão `Ações`{.action} na parte superior da tabela e, a seguir, no botão `Encomendar uma base de dados Web Cloud Databases`{.action}. Consulte o nosso guia "[Primeiros passos com o seu Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)" para criar uma base de dados sobre esta oferta.
 
 Depois de criar a base de dados, selecione `Módulos 1 clique`{.action}, e clique no botão `Adicionar um módulo`{.action}. Selecione o CMS, certifique-se que a ` instalação em modo avançado`{.action} está selecionada. Clique no botão `Seguinte`{.action}:
 
