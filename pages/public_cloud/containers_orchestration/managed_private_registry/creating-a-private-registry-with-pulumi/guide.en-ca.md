@@ -6,7 +6,7 @@ updated: 2023-12-12
 
 ## Objective
 
-You can create an OVHcloud Managed Private Registry through the OVHcloud Control Panel, but you can also deploy a cluster programmatically, with  Infrastructure as Code (IaC) tools. This can be done through Terraform thanks to our OVHcloud provider, and now also with Pulumi.
+You can create an OVHcloud Managed Private Registry through the OVHcloud Control Panel, but you can also deploy a registry programmatically, with  Infrastructure as Code (IaC) tools. This can be done through Terraform thanks to our OVHcloud provider, and now also with Pulumi.
 
 ### Pulumi
 
@@ -50,7 +50,7 @@ In this guide, we will create several resources:
 
 You will also use the [Harbor Pulumi provider](https://www.pulumi.com/registry/packages/harbor/) to create a project inside the private registry (harbor).
 
-#### Getting your cluster/API tokens information
+#### Getting your registry/API tokens information
 
 The “OVH provider” needs to be configured with a set of credentials, which can be set using [Pulumi stack configuration](https://www.pulumi.com/docs/concepts/config/) or environment variables:
 
@@ -96,7 +96,7 @@ export OVH_CONSUMER_KEY="xxx"
 
 One advantage of Pulumi is that it allows you to build your infrastructures with the programming language of your choice. It supports a variety of programming languages.
 
-In this tutorial you will be able to deploy your Kubernetes cluster and its node pool in the Go/Golang programming language.
+In this tutorial you will be able to deploy your private registry (harbor) with a user and its project in the Go/Golang programming language.
 For your information, our OVH Pulumi provider currently supports Go but also Python, Node.js/Typescript and C#/Dotnet.
 
 Examples:
@@ -167,7 +167,7 @@ And the Pulumi Harbor provider:
 go get github.com/pulumiverse/pulumi-harbor/sdk/v3/go/...
 ```
 
-In order to create an OVHcloud Managed Kubernetes cluster, you need to define the `serviceName`.
+In order to create an OVHcloud Managed Private Registry, you need to define the `serviceName`.
 
 ```bash
 pulumi config set serviceName <your-service-name>
@@ -291,7 +291,7 @@ go mod tidy
 
 #### Create your Private Registry (Harbor) through Pulumi
 
-Now you can deploy your cluster and the node pool. To do that, just execute the `pulumi up` comand.
+Now you can deploy your registry. To do that, just execute the `pulumi up` comand.
 This will display the plan/the preview of the desireed state. You will be prompted to choose the stack (`dev` by default) and to confirm that you want to perform/apply the changes.
 
 ```bash
@@ -354,7 +354,7 @@ As you can see, your registry has been successfuly created:
 
 ![Managed private registry](images/private-registry.png){.thumbnail}
 
-#### Connect to the cluster
+#### Connect to the registry
 
 Your registry is created, with a user, so you have all the information to connect to it.
 
