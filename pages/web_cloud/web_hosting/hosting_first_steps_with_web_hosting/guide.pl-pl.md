@@ -69,11 +69,19 @@ Rozwiązanie to wykorzystuje moduły OVHcloud — narzędzie umożliwiające pro
 Aby instalacja modułu OVHcloud była możliwa, koniecznie upewnij się, że:
 
 - katalog instalacyjny modułu jest pusty (co ma miejsce, jeżeli nie zalogowałeś się jeszcze do Twojej przestrzeni dyskowej);
-- baza danych została już utworzona na Twoim hostingu (w tym celu wybierz zakładkę `Bazy danych`{.action}, a następnie opcję `Stwórz bazę danych`{.action}).
+- baza danych została już utworzona na Twoim hostingu.
 
-Aby utworzyć bazę danych, zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.Wybierz sekcję `Hosting`{.action}, a następnie nazwę hostingu, który zakupiłeś. W zakładce `Bazy danych`{.action} wybierz opcję `Stwórz bazę danych`{.action}. Uzupełnij wymagane informacje, a następnie zaczekaj na zakończenie instalacji.
+Aby utworzyć bazę danych, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, a następnie przejdź do sekcji `Web Cloud`{.action}. W lewej kolumnie kliknij `Hosting`{.action}, następnie wybierz odpowiedni hosting.
 
-![Dostęp do modułów OVHcloud ](images/create-a-database-2.png){.thumbnail}
+W zakładce `Bazy danych`{.action} możliwe są dwa scenariusze: 
+
+- **Masz co najmniej jedną bazę danych dostępną w opcji "utwórz" na Twoim hostingu** : kliknij przycisk `Operacje`{.action} nad tabelą, która się wyświetla następnie kliknij przycisk `Tworzenie bazę danych`{.action}.
+
+![Dostęp do modułów za 1 kliknięciem](images/create-a-database-2.png){.thumbnail}
+
+- **Nie masz już dostępnych baz danych w opcji "utwórz" na Twoim hostingu** : kliknij przycisk `Operacje`{.action} nad tabelą, która się wyświetli. Będziesz mógł (do wyboru):
+    - Zamów bazę danych [Start SQL](https://www.ovhcloud.com/pl/web-hosting/options/start-sql/) jako uzupełnienie baz danych zawartych w hostingu. W tym celu kliknij przycisk `Operacje`{.action} nad tabelą, a następnie przycisk `Zamów bazę danych`{.action}.
+    - Zamów serwer baz danych [Web Cloud Databases](https://www.ovhcloud.com/pl/web-cloud/databases/). W tym celu kliknij przycisk `Operacje`{.action} nad tabelą, a następnie przycisk `Zamów bazę danych Web Cloud Databases`{.action}. Następnie zapoznaj się z naszym przewodnikiem "[Pierwsze kroki z Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)", aby utworzyć bazę danych dla tej oferty.
 
 Gdy baza danych została już utworzona, wybierz zakładkę `Moduły`{.action}, by przeprowadzić instalację modułu, a następnie wybierz opcję `Dodaj moduł`{.action}. Wybierz CMS, który chcesz zainstalować i upewnij się, że pole `Instalacja w trybie zaawansowanym`{.action} nie jest zaznaczone, następnie wybierz opcję `Instalacja`{.action}.
 
