@@ -65,11 +65,19 @@ This solution uses OVHcloud modules, a tool you can use to install a CMS easily.
 To ensure that the OVHcloud module installation is successful, please check that:
 
 - the module’s installation directory is empty (which should be the case if you have not connected to your storage space)
-- you have already created a database in your Web Hosting plan (go to the `Databases`{.action} tab, then `Create a database`{.action} to do this)
+- you have already created a database in your Web Hosting plan.
 
-To create a database, please log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia){.external}. Go to the `Hosting plans`{.action} section, then click on the domain name corresponding to the Web Hosting plan you have just ordered. In the `Databases`{.action} tab, click the `Create a database`{.action} button. Enter the information requested, then wait for the installation process to complete.
+To create the database, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia){.external}, then go to the `Web Cloud`{.action} section. In the left-hand column, click `Hosting plans`{.action}, then select the name of the Web Hosting plan concerned.
+
+In the `Databases`{.action} tab, there are two possible scenarios: 
+
+- **You have at least one database available to "create" on your web hosting plan**: click on the `Actions`{.action} button above the table that pops up, then on the `Create a database`{.action} button.
 
 ![Access to 1-click modules](images/create-a-database-2.png){.thumbnail}
+
+- **You no longer have any databases available to "create" on your web hosting plan**: click on the `Actions`{.action} button above the table that pops up. You can (choose):
+    - Order a database [Start SQL](https://www.ovhcloud.com/asia/web-hosting/options/start-sql/) in addition to the databases included with your web hosting plan. To do this, click the `Actions`{.action} button above the table, then the `Order a database`{.action} button.
+    - Order a database server [Web Cloud Databases](https://www.ovhcloud.com/asia/web-cloud/databases/). To do this, click the `Actions`{.action} button above the table, then the `Order a Web Cloud Databases`{.action} button. Then refer to our guide on Getting started with your Web Cloud Databases (/pages/web_cloud/web_cloud_databases/starting_with_clouddb) to create a database on this solution.
 
 Once you have created a database, to install a 1-click module, go to the `1-click modules`{.action} tab and click `Add a module`{.action}. Select the CMS you want to install, check that the `Install in advanced mode`{.action}box is ticked, then click `Next`{.action}.
 

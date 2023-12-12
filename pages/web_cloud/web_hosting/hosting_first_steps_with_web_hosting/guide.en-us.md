@@ -65,7 +65,7 @@ This solution uses OVHcloud modules, a tool you can use to install a CMS easily.
 To ensure that the OVHcloud module installation is successful, please check that:
 
 - the module’s installation directory is empty (which should be the case if you have not connected to your storage space)
-- you have already created a database in your Web Hosting plan (go to the `Databases`{.action} tab, then `Create a database`{.action} to do this)
+- you have already created a database in your Web Hosting plan.
 
 To create a database, please log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we){.external}. Go to the `Hosting plans`{.action} section, then click on the domain name corresponding to the Web Hosting plan you have just ordered. In the `Databases`{.action} tab, click the `Create a database`{.action} button. Enter the information requested, then wait for the installation process to complete.
 
