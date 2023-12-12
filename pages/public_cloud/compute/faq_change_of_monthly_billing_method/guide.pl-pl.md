@@ -27,3 +27,11 @@ Aby abonament miesięczny dla tej instancji nie został odnowiony, musi ona zost
 Przykładowo, jeśli posiadasz instancję typu C2-15 z rozliczeniem miesięcznym i usuniesz ją 27. dnia bieżącego miesiąca, usługa zostanie zafakturowana za pełny miesiąc 1-go dnia kolejnego miesiąca.
 
 W przypadku zawarcia umowy miesięcznej, cały rozpoczęty miesiąc jest płatny. W kolejnych miesiącach ta instancja nie będzie fakturowana.
+
+## We want your feedback!
+
+We would love to help answer questions and appreciate any feedback you may have.
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+
+Are you on Discord? Connect to our channel at <https://discord.gg/PwPqWUpN8G> and interact directly with the team that builds our databases service!

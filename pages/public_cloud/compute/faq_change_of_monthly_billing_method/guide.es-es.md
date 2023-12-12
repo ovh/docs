@@ -26,3 +26,11 @@ Si no desea que la suscripción mensual se renueve, deberá eliminar esta instan
 Si, por ejemplo, tiene una instancia mensual de tipo C2-15 y la elimina el día 27 del mes en curso, esta instancia será facturada el día 1 del mes siguiente, una vez transcurrido el mes completo, por un importe correspondiente a la totalidad del mes.
 
 Así pues, con un compromiso mensual, cada mes comenzado deberá abonarse en su totalidad. En los meses siguientes, esta instancia ya no se facturará.
+
+## We want your feedback!
+
+We would love to help answer questions and appreciate any feedback you may have.
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+
+Are you on Discord? Connect to our channel at <https://discord.gg/PwPqWUpN8G> and interact directly with the team that builds our databases service!

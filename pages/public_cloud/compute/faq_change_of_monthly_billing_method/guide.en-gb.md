@@ -27,3 +27,11 @@ You will need to delete this instance before 00:00 on the 1st day of the followi
 If, for example, you have a C2-15 monthly instance and you delete it on the 27th day of the current month, you will be billed on the first day of the following month, once the entire current month has elapsed.
 
 With a monthly commitment, any month you start is payable in full. But this instance will not generate any invoices in the following months.
+
+## We want your feedback!
+
+We would love to help answer questions and appreciate any feedback you may have.
+
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+
+Are you on Discord? Connect to our channel at <https://discord.gg/PwPqWUpN8G> and interact directly with the team that builds our databases service!
