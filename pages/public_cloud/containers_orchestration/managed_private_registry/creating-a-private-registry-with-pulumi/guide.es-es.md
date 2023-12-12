@@ -3,33 +3,31 @@ title: Creating a private registry with Pulumi
 excerpt: 'Create an OVHcloud Managed Private Registry (Harbor) with Pulumi'
 updated: 2023-12-12
 ---
-routes:
-    canonical: 
 
 ## Objective
 
-You can create an OVHcloud Managed Private Registry through the OVHcloud Control Panel, but you can also deploy a registry programmatically, with  Infrastructure as Code (IaC) tools. This can be done through Terraform thanks to our OVHcloud provider, and now also with Pulumi.
+You can create an OVHcloud Managed Private Registry via the OVHcloud Control Panel, but you can also deploy a registry programmatically with Infrastructure as Code (IaC) tools. This can be done via Terraform thanks to our OVHcloud provider, and now also with Pulumi.
 
 ### Pulumi
 
 ![Pulumi](images/pulumi.jpg)
 
-[Pulumi](https://www.pulumi.com/) is an Infrastructure as code (IasC) tool that allows you to build your infrastructures with a programming language, in Golang for example.
-Users define the desired state in Pulumi programs and Pulumi create the desired resources.
+[Pulumi](https://www.pulumi.com/) is an Infrastructure as Code (IasC) tool that allows you to build your infrastructures with a programming language, in Golang for example.
+Users define the desired state in Pulumi programs and Pulumi creates the desired resources.
 
 Pulumi offers an intuitive command line interface (CLI), to provision, update or delete your infrastructure. If you are familiar with Docker Compose CLI and Terraform CLI, you will adopt [Pulumi CLI](https://www.pulumi.com/docs/cli/) too.
 
 ## Requirements
 
 - A [Public Cloud project](/pages/public_cloud/compute/create_a_public_cloud_project) in your OVHcloud account
-- Installing [Pulumi CLI](https://www.pulumi.com/docs/install/){.external}
+- Installing the [Pulumi CLI](https://www.pulumi.com/docs/install/){.external}
 - An account in [Pulumi](https://www.pulumi.com/)
 - A [Pulumi access token](https://app.pulumi.com/account/tokens)
-- Installing [kubectl CLI](https://kubernetes.io/docs/tasks/tools/)
+- Installing the [kubectl CLI](https://kubernetes.io/docs/tasks/tools/)
 
 ### Before you begin
 
-You should have installed Pulumi CLI on your machine. Verify the Pulumi CLI is successfully installed in your machine with the `pulumi version` command.
+You should have installed the Pulumi CLI on your machine. Verify the Pulumi CLI is successfully installed in your machine with the `pulumi version` command.
 
 You should have a result like this:
 
@@ -47,7 +45,7 @@ All available Pulumi resources have their definition and [documentation](https:/
 In this guide, we will create several resources:
 
 - a [capabilities datasource](https://www.pulumi.com/registry/packages/ovh/api-docs/cloudproject/getcapabilitiescontainerregistry/){.external} that represents the configuration of the registry
-- a [registry resource](https://www.pulumi.com/registry/packages/ovh/api-docs/cloudproject/containerregistry/){.external} that represents an OVHcloud Managed Private registry
+- a [registry resource](https://www.pulumi.com/registry/packages/ovh/api-docs/cloudproject/containerregistry/){.external} that represents an OVHcloud Managed Private Registry
 - a [registry user resource](https://www.pulumi.com/registry/packages/ovh/api-docs/cloudproject/containerregistryuser/){.external} that represents a user in the private registry
 
 You will also use the [Harbor Pulumi provider](https://www.pulumi.com/registry/packages/harbor/) to create a project inside the private registry (harbor).
@@ -293,8 +291,8 @@ go mod tidy
 
 #### Create your Private Registry (Harbor) through Pulumi
 
-Now you can deploy your registry. To do that, just execute the `pulumi up` comand.
-This will display the plan/the preview of the desireed state. You will be prompted to choose the stack (`dev` by default) and to confirm that you want to perform/apply the changes.
+Now you can deploy your registry. To do that, just execute the `pulumi up` command.
+This will display the plan/the preview of the desired state. You will be prompted to choose the stack (`dev` by default) and to confirm that you want to perform/apply the changes.
 
 ```bash
 $ pulumi up
@@ -351,14 +349,14 @@ Resources:
 Duration: 2m30s
 ```
 
-Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=es), go to the `Public Cloud`{.action} section and click on `Managed Private Registry`. <br>
+Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), go to the `Public Cloud`{.action} section and click on `Managed Private Registry`. <br>
 As you can see, your registry has been successfuly created:
 
 ![Managed private registry](images/private-registry.png){.thumbnail}
 
 #### Connect to the registry
 
-Your registry is created, with a user, so you have all the information to connect to it.
+Your registry is created with a user, so you have all the information to connect to it.
 
 In order to do this, retrieve the registry URL, login and password from the `dev` Pulumi stack:
 
