@@ -65,7 +65,7 @@ Cette solution utilise les modules OVHcloud, un outil permettant d'installer un 
 Afin que l'installation du module OVHcloud puisse se réaliser, vous devez vous assurer que :
 
 - le répertoire d'installation du module soit vide (ce qui est le cas si vous ne vous êtes pas encore connecté à votre espace de stockage) ;
-- qu'une base de données soit déjà créée sur votre hébergement (rendez-vous sur l'onglet `Bases de données`{.action} puis sur `Créer une base de données`{.action} pour réaliser la manipulation).
+- qu'une base de données soit déjà créée sur votre hébergement.
 
 Pour créer la base de données, connectez-vous à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}. Rendez-vous dans la section `Hébergements`{.action}, puis cliquez sur le nom de l'hébergement web que vous venez de commander. 
 

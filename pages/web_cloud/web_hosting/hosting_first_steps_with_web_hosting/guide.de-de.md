@@ -1,7 +1,7 @@
 ---
 title: "Erste Schritte mit Ihrem Webhosting"
 excerpt: "Erfahren Sie hier, wie Sie mit Ihrem Webhosting starten"
-updated: 2023-11-16
+updated: 2023-12-12
 ---
 
 > [!primary]
@@ -69,11 +69,19 @@ Bei dieser Lösung kommen OVHcloud Module zum Einsatz, die eine einfache und sch
 Damit die Installation des OVHcloud Moduls erfolgreich ist, überprüfen Sie bitte, dass:
 
 - das Verzeichnis, in dem das Modell installiert wird, vollständig leer ist (wenn Sie sich vorher noch nie mit Ihrem Storage verbunden haben, sollte das der Fall sein).
-- auf Ihrem Webhosting bereits eine Datenbank angelegt wurde (gehen Sie in den Tab `Datenbanken`{.action} und anschließend auf `Eine Datenbank erstellen`{.action}, um eine Datenbank anzulegen).
+- auf Ihrem Webhosting bereits eine Datenbank angelegt wurde.
 
-Um eine Datenbank zu erstellen, loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und wählen Sie im Bereich `Web Cloud`{.action} unter `Hosting-Pakete`{.action} das betreffende Hosting aus. Gehen Sie dann auf den Tab `Datenbanken`{.action} und klicken Sie auf den Button `Eine Datenbank erstellen`{.action}. Füllen Sie die notwendigen Informationen aus und warten Sie, bis die Installation abgeschlossen ist.
+Um die Datenbank zu erstellen, loggen Sie sich im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein. Gehen Sie in den Bereich `Hosting-Pakete`{.action} und klicken Sie auf den Namen des Webhostings, das Sie gerade bestellt haben. 
 
-![Zugriff auf die 1-Klick-Module](images/create-a-database-2.png){.thumbnail}
+Im Tab `Datenbanken`{.action} sind zwei Szenarien möglich: 
+
+- **Auf Ihrem Webhosting ist mindestens eine Datenbank als „Erstellung“ verfügbar** : Klicken Sie auf den Button `Aktionen`{.action} über der angezeigten Tabelle und dann auf den Button `Datenbank erstellen`{.action}.
+
+![1-Klick-Zugriff auf Module](images/create-a-database-2.png){.thumbnail}
+
+- **Auf Ihrem Webhosting sind keine Datenbanken mehr „erstellt“ verfügbar** : Klicken Sie auf den Button `Aktionen`{.action} über der angezeigten Tabelle. Sie können (nach Wahl):
+    - Eine [Start SQL] Datenbank bestellen (https://www.ovhcloud.com/de/web-hosting/options/start-sql/). Klicken Sie hierzu auf den Button `Aktionen`{.action} über der Tabelle und dann auf den Button `Eine Datenbank bestellen`{.action}.
+    - Einen [Web Cloud Databases] Server bestellen (https://www.ovhcloud.com/de/web-cloud/databases/). Klicken Sie hierzu auf den Button `Aktionen`{.action} über der Tabelle und dann auf den Button `Eine Datenbank mit der Lösung „Web Cloud Databases“ bestellen`{.action}. Dann lesen Sie unsere Anleitung „[Erste Schritte mit Ihren Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)“, um eine Datenbank für dieses Angebot zu erstellen.
 
 Nachdem die Datenbank angelegt wurde, gehen Sie für die Installation des 1-Klick-Moduls in den Tab `1 Klick Module`{.action} und klicken Sie anschließend auf den Button `Ein Modul hinzufügen`{.action}. Wählen Sie Ihr bevorzugtes CMS zur Installation aus, vergewissern Sie sich, dass in dem Feld `Installation im Experten-Modus`{.action} ein Haken gesetzt ist, und klicken Sie dann auf `Weiter`{.action}.
 
@@ -157,7 +165,6 @@ Wenn Sie Hilfe bei der Nutzung der Funktionalitäten Ihrer Website benötigen, g
 Sie können nun auch Ihre E-Mail-Adressen verwenden. Dafür stellt OVHcloud Ihnen eine Webanwendung (Webmail) zur Verfügung: RoundCube. Diese App ist über die Adresse <https://www.ovhcloud.com/de/mail/> erreichbar, auf der Sie die Login-Daten für Ihre von OVHcloud angelegte E-Mail-Adresse eingeben.
 
 Wenn Sie mehr Informationen über die Verwendung von RoundCube benötigen, werfen Sie bitte einen Blick in unsere Anleitung: [Verwendung von RoundCube](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube){.external}. Wenn Sie Ihre E-Mail-Adresse auf einem E-Mail-Client oder einem Gerät (beispielsweise einem Smartphone oder einem Tablet) einrichten möchten, werfen Sie bitte einen Blick in die jeweilige Anleitung unter </products/web-cloud-email-collaborative-solutions-mx-plan>.
-
 ## Weiterführende Informationen
 
 [Migration Ihrer Website und E-Mails zu OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh){.external}

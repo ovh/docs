@@ -1,7 +1,7 @@
 ---
 title: "Getting started with a Web Hosting plan"
 excerpt: "Find out how to build your website and to set up your email addresses"
-updated: 2023-11-16
+updated: 2023-12-12
 ---
 
 ## Objective
@@ -153,7 +153,6 @@ If you need help with your website’s features, we recommend referring to the C
 Now, you just need to start using your email addresses. To do this, OVHcloud offers an online webmail application. The webmail is available at the following address: <https://www.ovhcloud.com/en-ie/mail/>. You will need to enter the credentials for the email addresses that you have created with OVHcloud.
 
 If you would like to configure your email address on an email client or device (e.g. a smartphone or tablet), please refer to our email guides: </products/web-cloud-email-collaborative-solutions-mx-plan>.
-
 ## Go further
 
 [Migrating your website and emails to OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh){.external}

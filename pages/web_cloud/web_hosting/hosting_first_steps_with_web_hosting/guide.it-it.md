@@ -1,7 +1,7 @@
 ---
 title: "Iniziare a utilizzare un hosting Web"
 excerpt: "Questa guida ti mostra come eseguire le prime operazioni su un hosting Web"
-updated: 2023-11-16
+updated: 2023-12-12
 ---
 
 > [!primary]
@@ -157,7 +157,6 @@ Per maggiori informazioni sulle funzionalità disponibili, consulta la documenta
 A questo punto non ti resta che utilizzare i tuoi account di posta. OVHcloud fornisce l'applicazione online RoundCube, disponibile all'indirizzo [https://www.ovh.it/mail/](https://www.ovh.it/mail/){.external}. Per accedervi, inserisci le credenziali associate all’indirizzo di posta creato in OVHcloud.
 
 Per maggiori informazioni su questo servizio, consulta la nostra [guida all’utilizzo di RoundCube](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube){.external}. Per configurare l’account email su un client di posta o un dispositivo (ad esempio, smartphone o tablet), fai riferimento alla documentazione disponibile a questa pagina: </products/web-cloud-email-collaborative-solutions-mx-plan>.
-
 ## Per saperne di più
 
 [Migrare un sito e un servizio di posta in OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh){.external}

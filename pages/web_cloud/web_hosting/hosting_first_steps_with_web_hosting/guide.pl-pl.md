@@ -1,7 +1,7 @@
 ---
 title: "Pierwsze kroki z hostingiem OVHcloud"
 excerpt: "Dowiedz się, jak właściwie rozpocząć korzystanie z hostingu"
-updated: 2023-11-16
+updated: 2023-12-12
 ---
 
 > [!primary]
@@ -156,7 +156,6 @@ Jeżeli chcesz otrzymać pomoc w zakresie funkcjonalności Twojej strony, zachę
 
 Możesz już korzystać z adresów e-mail. W tym celu OVHcloud udostępnia aplikację internetową (Webmail): RoundCube. Jest ona dostępna pod adresem <https://www.ovhcloud.com/pl/mail/>, gdzie uzyskasz informacje dotyczące danych do logowania na pocztę e-mail utworzoną na serwerze.
 Jeżeli chcesz otrzymać więcej informacji odnośnie korzystania z RoundCube, zapoznaj się z naszym przewodnikiem: [Korzystanie z RoundCube](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube){.external}. Jeżeli chcesz skonfigurować adres e-mail na komputerze lub urządzeniu mobilnym (np. na smartphonie lub tablecie), zapoznaj się z dokumentacją dostępną na poniższej stronie: </products/web-cloud-email-collaborative-solutions-mx-plan>.
-
 ## Sprawdź również
 
 [Przenoszenie strony na serwer OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh){.external}
