@@ -67,9 +67,17 @@ To ensure that the OVHcloud module installation is successful, please check that
 - the module’s installation directory is empty (which should be the case if you have not connected to your storage space)
 - you have already created a database in your Web Hosting plan.
 
-To create a database, please log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg){.external}. Go to the `Hosting plans`{.action} section, then click on the domain name corresponding to the Web Hosting plan you have just ordered. In the `Databases`{.action} tab, click the `Create a database`{.action} button. Enter the information requested, then wait for the installation process to complete.
+To create the database, log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/sg/&ovhSubsidiary=sg){.external}, then go to the `Web Cloud`{.action} section. In the left-hand column, click `Hosting plans`{.action}, then select the name of the Web Hosting plan concerned.
+
+In the `Databases`{.action} tab, there are two possible scenarios: 
+
+- **You have at least one database available to "create" on your web hosting plan**: click on the `Actions`{.action} button above the table that pops up, then on the `Create a database`{.action} button.
 
 ![Access to 1-click modules](images/create-a-database-2.png){.thumbnail}
+
+- **You no longer have any databases available to "create" on your web hosting plan**: click on the `Actions`{.action} button above the table that pops up. You can (choose):
+    - Order a database [Start SQL](https://www.ovhcloud.com/en-sg/web-hosting/options/start-sql/) in addition to the databases included with your web hosting plan. To do this, click the `Actions`{.action} button above the table, then the `Order a database`{.action} button.
+    - Order a database server [Web Cloud Databases](https://www.ovhcloud.com/en-sg/web-cloud/databases/). To do this, click the `Actions`{.action} button above the table, then the `Order a Web Cloud Databases`{.action} button. Then refer to our guide on Getting started with your Web Cloud Databases (/pages/web_cloud/web_cloud_databases/starting_with_clouddb) to create a database on this solution.
 
 Once you have created a database, to install a 1-click module, go to the `1-click modules`{.action} tab and click `Add a module`{.action}. Select the CMS you want to install, check that the `Install in advanced mode`{.action}box is ticked, then click `Next`{.action}.
 
@@ -81,7 +89,12 @@ If you need more details on installing a module in advanced mode, please read ou
 
 #### Manual installation – technical knowledge required
 
-This solution is useful if you want to build or migrate a website without using the OVHcloud modules. You will need to have the website files that you wish to install. You will need to manually log in to your storage space to upload the website files onto it, then (if possible) link those files to a database you have already created.
+This solution is useful if you want to create or migrate a website without using OVHcloud modules. You must have the website files that you want to install. You will need to [log in to your FTP storage space manually](/pages/web_cloud/web_hosting/ftp_connection) to upload your website files to it, then if possible, link the website to a database you have created beforehand.
+
+> [!success]
+>
+> If you have forgotten the password for accessing your FTP storage space, change it using our guide “[Changing the password for accessing your web hosting plan’s FTP storage space](/pages/web_cloud/web_hosting/ftp_change_password)”.
+>
 
 As every website is unique, there is no universal straightforward method for getting them online. However, in our documentation, we provide tips on the changes you will need to make to your OVHcloud Web Hosting plan: [How to get my website online](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online). Once you have set up your website in this way, follow the remaining steps below.
 

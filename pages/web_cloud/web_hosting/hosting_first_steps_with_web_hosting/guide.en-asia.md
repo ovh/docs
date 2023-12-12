@@ -89,7 +89,12 @@ If you need more details on installing a module in advanced mode, please read ou
 
 #### Manual installation – technical knowledge required
 
-This solution is useful if you want to build or migrate a website without using the OVHcloud modules. You will need to have the website files that you wish to install. You will need to manually log in to your storage space to upload the website files onto it, then (if possible) link those files to a database you have already created.
+This solution is useful if you want to create or migrate a website without using OVHcloud modules. You must have the website files that you want to install. You will need to [log in to your FTP storage space manually](/pages/web_cloud/web_hosting/ftp_connection) to upload your website files to it, then if possible, link the website to a database you have created beforehand.
+
+> [!success]
+>
+> If you have forgotten the password for accessing your FTP storage space, change it using our guide “[Changing the password for accessing your web hosting plan’s FTP storage space](/pages/web_cloud/web_hosting/ftp_change_password)”.
+>
 
 As every website is unique, there is no universal straightforward method for getting them online. However, in our documentation, we provide tips on the changes you will need to make to your OVHcloud Web Hosting plan: [How to get my website online](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online). Once you have set up your website in this way, follow the remaining steps below.
 
