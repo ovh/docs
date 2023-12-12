@@ -83,7 +83,7 @@ Im Tab `Datenbanken`{.action} sind zwei Szenarien möglich:
     - Eine [Start SQL] Datenbank bestellen (https://www.ovhcloud.com/de/web-hosting/options/start-sql/). Klicken Sie hierzu auf den Button `Aktionen`{.action} über der Tabelle und dann auf den Button `Eine Datenbank bestellen`{.action}.
     - Einen [Web Cloud Databases] Server bestellen (https://www.ovhcloud.com/de/web-cloud/databases/). Klicken Sie hierzu auf den Button `Aktionen`{.action} über der Tabelle und dann auf den Button `Eine Datenbank mit der Lösung „Web Cloud Databases“ bestellen`{.action}. Dann lesen Sie unsere Anleitung „[Erste Schritte mit Ihren Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)“, um eine Datenbank für dieses Angebot zu erstellen.
 
-Nachdem die Datenbank angelegt wurde, gehen Sie für die Installation des 1-Klick-Moduls in den Tab `1 Klick Module`{.action} und klicken Sie anschließend auf den Button `Ein Modul hinzufügen`{.action}. Wählen Sie Ihr bevorzugtes CMS zur Installation aus, vergewissern Sie sich, dass in dem Feld `Installation im Experten-Modus`{.action} ein Haken gesetzt ist, und klicken Sie dann auf `Weiter`{.action}.
+Nachdem die Datenbank angelegt wurde, gehen Sie für die Installation des 1-Klick-Moduls in den Tab `1-Klick-Module`{.action} und klicken Sie anschließend auf den Button `Ein Modul hinzufügen`{.action}. Wählen Sie Ihr bevorzugtes CMS zur Installation aus, vergewissern Sie sich, dass in dem Feld `Installation im Experten-Modus`{.action} ein Haken gesetzt ist, und klicken Sie dann auf `Weiter`{.action}.
 
 ![Zugriff auf die 1-Klick-Module](images/access-to-the-1-click-modules-section.png){.thumbnail}
 
@@ -93,7 +93,12 @@ Weitere Informationen zur Installation eines Moduls im Experten-Modus finden Sie
 
 #### Die manuelle Lösung – technische Kenntnisse erforderlich
 
-Verwenden Sie diese Lösung, wenn Sie eine Website ohne den Einsatz der OVHcloud Module erstellen oder migrieren möchten. Hierzu benötigen Sie die Dateien der Website, die Sie installieren möchten. Loggen Sie sich manuell in Ihren Storage ein, um dort die Dateien der Website hochzuladen und letztere anschließend, sofern möglich, mit einer vorher angelegten Datenbank zu verknüpfen.
+Diese Lösung ist nützlich, wenn Sie eine Website ohne Verwendung der Module von OVHcloud erstellen oder migrieren möchten. Sie müssen im Besitz der Dateien der Website sein, die Sie installieren möchten. Sie müssen sich daher [manuell in Ihren FTP-Speicherplatz einloggen](/pages/web_cloud/web_hosting/ftp_connection), um die Dateien der Website hochzuladen und diese dann, wenn möglich, mit einer zuvor erstellten Datenbank zu verknüpfen.
+
+> [!success]
+>
+> Wenn Sie das Passwort für Ihren FTP-Speicherplatz vergessen haben, ändern Sie es in unserer Anleitung „[Passwort für den Zugriff auf den FTP-Speicherplatz Ihres Webhostings ändern](/pages/web_cloud/web_hosting/ftp_change_password)“.
+>
 
 Es gibt keine allgemeingültige Vorgehensweise, da Websites sehr unterschiedlich sein können. Anhand der folgenden Dokumentation können wir Ihnen jedoch die Aktionen aufzeigen, die in Ihrem OVHcloud Webhosting durchgeführt werden: [Webhosting: Meine Seite online stellen](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online){.external} und [Migration Ihrer Website und E-Mails zu OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh){.external}. Wenn Ihre Website manuell auf Ihrem Webhosting installiert wurde, können Sie die nachfolgenden Schritte durchführen.
 
