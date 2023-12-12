@@ -12,18 +12,16 @@ Retrouvez ici les questions les plus fréquemment posées concernant les service
 
 ### Le tarif de la solution Load Balancer  varie en fonction de la capacité en bande passante. Comment cela peut-il être paramétré / modifié ?
 
-Le Load Balancer est proposé en différentes tailles (S/M/L) pour répondre au mieux aux besoins de nos clients. Ces différentes tailles sont définies par des flavors. À ce jour, pour modifier la taille de votre Load Balancer, il vous faudra en créer un nouveau, le configurer de la même manière (avec les mêmes backends que l'ancien) et reconnecter l'adresse Floating IP au nouveau Loac Balancer. Vous pourrez alors supprimer l'ancien Load Balancer.
+Le Load Balancer est proposé en différentes tailles (S/M/L) pour répondre au mieux aux besoins de nos clients. Ces différentes tailles sont définies par des flavors. À ce jour, pour modifier la taille de votre Load Balancer, il vous faudra en créer un nouveau, le configurer de la même manière (avec les mêmes backends que l'ancien) et reconnecter l'adresse Floating IP au nouveau Load Balancer. Vous pourrez alors supprimer l'ancien Load Balancer.
 
 ### Puis-je utiliser mon Load Balancer avec des serveurs Bare Metal comme backends ? Puis-je utiliser mon Load Balancer avec des backends dans différentes régions Public Cloud ?
 
-Actuellement, ces modes ne soont pas pris en charge. Pour du load balancing public-privé, les produits Gateway devaient être reliés entre eux. À ce jour, Gateway ne prend en charge que le scope mono-région dans les réseaux privés. Cela signifie également que le scope est limité au Public Cloud, seul périmètre suggéré pour des architectures de type production.<br>
+Actuellement, ces modes ne sont pas pris en charge. Pour du load balancing public-privé, les produits Gateway devaient être reliés entre eux. À ce jour, Gateway ne prend en charge que le scope mono-région dans les réseaux privés. Cela signifie également que le scope est limité au Public Cloud, seul périmètre suggéré pour des architectures de type production.<br>
 À ce jour, les autres configurations (y compris l'utilisation interunivers avec des serveurs bare metal ou interrégion) ne sont pas prises en charge.
 
 ### Puis-je connecter mon Load Balancer à mon Managed Kubernetes Service (MKS) ?
 
 Une version bêta est en cours pour fournir une intégration avec Managed Kubernetes Service. Merci de contacter notre [communauté Discord](https://discord.gg/ovhcloud) sur le canal **#beta-lb-for-k8s**
-
-Oui. Pour cela, consultez cette [documentation](https://github.com/kubernetes/cloud-provider-openstack/blob/master/docs/octavia-ingress-controller/using-octavia-ingress-controller.md#get-started-with-octavia-ingress-controller-for-kubernetes).
 
 ### Je souhaite monitorer le Load Balancer Octavia. Est-il possible d’activer [metrics](https://docs.openstack.org/octavia/latest/user/guides/monitoring.html) automatiquement sur le Load Balancer ?
 
@@ -89,7 +87,7 @@ Vous pouvez créer un réseau privé dans une région sélectionnée et y attach
 Deux options peuvent être utilisées : 
 
 - Utiliser un « jump host » (SSH proxy) : Vous devez utiliser une autre instance disposant d'une Floating IP (permettant un accès externe) et d'un port privé dans le même réseau privé que votre nouvelle instance. Connectez-vous dessus et connectez-vous en SSH à l'IP privée de votre nouvelle instance.
-- Associer une adresse Floating IP (au moins pendant le temps de la maintenance) à votre instance nouvellement créée et vous y connecter en utilisant cette adresse Floating IP, pis détacher l'adresse Floating IP.
+- Associer une adresse Floating IP (au moins pendant le temps de la maintenance) à votre instance nouvellement créée et vous y connecter en utilisant cette adresse Floating IP, puis détacher l'adresse Floating IP.
 
 ## Les adresses Floating IP
 
