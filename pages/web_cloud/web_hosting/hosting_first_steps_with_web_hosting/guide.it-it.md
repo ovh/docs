@@ -71,9 +71,17 @@ Affinché l'operazione vada a buon fine è necessario assicurarsi che:
 - la directory di installazione del modulo sia vuota
 - sia già stato creato un database nello spazio di hosting
 
-Per creare il database, accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Seleziona `Hosting`{.action} e poi il nome del tuo servizio. Clicca sulla scheda `Database`{.action} e poi su `Crea un database`{.action}. Inserisci le informazioni richieste e attendi che l'installazione sia terminata.
+Per creare il database, accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, clicca su `Web Cloud`{.action}. Nella colonna di sinistra, clicca su `Hosting`{.action} e seleziona il nome dell’hosting Web interessato.
+
+Nella scheda `Database`{.action} sono possibili due scenari: 
+
+- **Sul tuo hosting Web hai almeno un database disponibile in "Start"** : clicca sul pulsante `Azioni`{.action} in alto nella tabella che appare e poi sul pulsante `Crea un database`{.action}.
 
 ![Accesso ai moduli in 1 click](images/create-a-database-2.png){.thumbnail}
+
+- **Sull’hosting Web non sono più disponibili database in "Start"** : clicca sul pulsante `Azioni`{.action} in alto nella tabella. Potrete (a scelta):
+    - Ordinare un database [Start-SQL](https://www.ovhcloud.com/it/web-hosting/options/start-sql/) in aggiunta ai database inclusi nella soluzione di hosting Web. Per farlo, clicca sul pulsante `Azioni`{.action} in alto a sinistra della tabella e poi sul pulsante `Ordinare un database`{.action}.
+    - Ordinare un database server [Web Cloud Databases](https://www.ovhcloud.com/it/web-cloud/databases/). Per farlo, clicca sul pulsante `Azioni`{.action} in alto a sinistra della tabella e poi sul pulsante `Ordinare un database Web Cloud Databases`{.action}. Consulta la nostra guida "[Iniziare a utilizzare il tuo Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)" per creare un database su questa offerta.
 
 Una volta creato il database, seleziona la scheda `CMS in 1 click`{.action} e clicca sul pulsante `Aggiungi un modulo`{.action}. Scegli il CMS da installare assicurandoti che la casella `Installazione avanzata`{.action} sia selezionata e clicca su `Continua`{.action}.
 
