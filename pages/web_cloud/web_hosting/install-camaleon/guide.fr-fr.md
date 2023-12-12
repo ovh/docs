@@ -1,6 +1,6 @@
 ---
-title: 'Installer Camaleon CMS sur son hébergement Cloud Web'
-excerpt: 'Découvrez comment installer un Camaleon CMS sur Cloud Web'
+title: "Installer Camaleon CMS sur son hébergement Cloud Web"
+excerpt: "Découvrez comment installer un Camaleon CMS sur Cloud Web"
 updated: 2022-05-04
 ---
 
