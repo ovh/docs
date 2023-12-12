@@ -1,7 +1,7 @@
 ---
 title: "Premiers pas avec un hébergement web"
 excerpt: "Découvrez comment bien débuter avec un hébergement web"
-updated: 2023-12-11
+updated: 2023-12-12
 ---
 
 ## Objectif
@@ -67,15 +67,17 @@ Afin que l'installation du module OVHcloud puisse se réaliser, vous devez vous 
 - le répertoire d'installation du module soit vide (ce qui est le cas si vous ne vous êtes pas encore connecté à votre espace de stockage) ;
 - qu'une base de données soit déjà créée sur votre hébergement (rendez-vous sur l'onglet `Bases de données`{.action} puis sur `Créer une base de données`{.action} pour réaliser la manipulation).
 
-Pour créer la base de données, connectez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.Rendez-vous dans la section `Hébergements`{.action}, puis cliquez sur le nom de l'hébergement web que vous venez de commander. 
+Pour créer la base de données, connectez-vous à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Rendez-vous dans la section `Hébergements`{.action}, puis cliquez sur le nom de l'hébergement web que vous venez de commander. 
 
-Dans l'onglet `Bases de données`{.action}, 2 possibilités : 
+Dans l'onglet `Bases de données`{.action}, deux scénarios sont possibles : 
 
-- 1 : Si vous avez au moins une base de données disponible en « création » sur votre hébergement web : cliquez sur le bouton `Actions`{.action} au dessus du tableau qui s'affiche, puis sur le bouton `Créer une base de données`{.action}.
+- **Vous avez au moins une base de données disponible en « création » sur votre hébergement web** : cliquez sur le bouton `Actions`{.action} au dessus du tableau qui s'affiche puis sur le bouton `Créer une base de données`{.action}.
 
 ![Accès aux modules en 1 clic](images/create-a-database-2.png){.thumbnail}
 
-- 2 : Si vous n'avez plus de bases de données disponibles en « création » sur votre hébergement web : cliquez sur le bouton `Actions`{.action} au dessus du tableau qui s'affiche. Vous pourrez (au choix) : </br></br> - 2.1 : Commander une base de données [Start SQL](https://www.ovhcloud.com/fr/web-hosting/options/start-sql/) en complément de vos bases de données incluses avec votre offre d'hébergement web. Pour cela, cliquez sur le bouton `Actions`{.action} au dessus du tableau, puis sur le bouton `Commander une base de données`{.action}.</br></br>- 2.2 : Commander un serveur de bases de données [Web Cloud Databases](https://www.ovhcloud.com/fr/web-cloud/databases/). Pour cela, cliquez sur le bouton `Actions`{.action} au dessus du tableau, puis sur le bouton `Commander une base de données Web Cloud Databases`{.action}. Consultez ensuite notre guide « [Premiers pas avec votre Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) » pour créer une base de données sur cette offre.
+- **Vous n'avez plus de bases de données disponibles en « création » sur votre hébergement web** : cliquez sur le bouton `Actions`{.action} au dessus du tableau qui s'affiche. Vous pourrez (au choix) :
+    - Commander une base de données [Start SQL](https://www.ovhcloud.com/fr/web-hosting/options/start-sql/) en complément de vos bases de données incluses avec votre offre d'hébergement web. Pour cela, cliquez sur le bouton `Actions`{.action} au dessus du tableau puis sur le bouton `Commander une base de données`{.action}.
+    - Commander un serveur de bases de données [Web Cloud Databases](https://www.ovhcloud.com/fr/web-cloud/databases/). Pour cela, cliquez sur le bouton `Actions`{.action} au dessus du tableau puis sur le bouton `Commander une base de données Web Cloud Databases`{.action}. Consultez ensuite notre guide « [Premiers pas avec votre Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) » pour créer une base de données sur cette offre.
 
 Une fois la base de données créée, pour réaliser l'installation du module en 1 clic, rendez-vous dans l'onglet `Modules en 1 clic`{.action}, puis cliquez sur le bouton `Ajouter un module`{.action}. Sélectionnez le CMS que vous souhaitez installer, assurez-vous que la case `Installation en mode avancé`{.action} soit cochée, puis cliquez sur le bouton `Suivant`{.action}.
 
@@ -87,11 +89,11 @@ Si vous désirez obtenir plus de détails sur l'installation d'un module en mode
 
 #### Solution manuelle, compétences techniques requises
 
-Cette solution s'applique si vous souhaitez créer ou migrer un site internet sans utiliser les modules OVHcloud. Vous devrez être en possession des fichiers du site internet que vous souhaitez installer. Vous devrez donc vous [connecter manuellement à votre espace de stockage FTP](/pages/web_cloud/web_hosting/ftp_connection) pour y uploader les fichiers du site puis, si possible, lier ce dernier à une base de données préalablement créée.
+Cette solution s'applique si vous souhaitez créer ou migrer un site internet sans utiliser les modules OVHcloud. Vous devez être en possession des fichiers du site internet que vous souhaitez installer. Vous devrez donc vous [connecter manuellement à votre espace de stockage FTP](/pages/web_cloud/web_hosting/ftp_connection) pour y téléverser les fichiers du site puis, si possible, lier ce dernier à une base de données préalablement créée.
 
 > [!success]
 >
-> Si vous avez oublié mot de passe d'accès à votre espace de stockage FTP, changez-le à l'aide de notre guide « [Changer le mot de passe d'accès à l'espace de stockage FTP de son hébergement web](/pages/web_cloud/web_hosting/ftp_change_password) ».
+> Si vous avez oublié le mot de passe d'accès à votre espace de stockage FTP, modifiez-le à l'aide de notre guide « [Changer le mot de passe d'accès à l'espace de stockage FTP de son hébergement web](/pages/web_cloud/web_hosting/ftp_change_password) ».
 >
 
 Il n'existe pas de marche à suivre universelle tant les sites peuvent être différents les uns des autres, mais nous pouvons vous aiguiller sur les manipulations à réaliser dans votre hébergement web OVHcloud grâce à nos documentations : [Mettre mon site en ligne](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online){.external} et [Migrer mon site chez OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh){.external} si ce dernier s'applique. Une fois le site installé manuellement sur votre hébergement web, poursuivez les étapes restantes ci-dessous.
