@@ -89,7 +89,7 @@ Si vous désirez obtenir plus de détails sur l'installation d'un module en mode
 
 #### Solution manuelle, compétences techniques requises
 
-Cette solution s'applique si vous souhaitez créer ou migrer un site internet sans utiliser les modules OVHcloud. Vous devrez être en possession des fichiers du site internet que vous souhaitez installer. Vous devrez donc vous connecter manuellement à votre espace de stockage pour y uploader les fichiers du site puis, si possible, lier ce dernier à une base de données préalablement créée.
+Cette solution s'applique si vous souhaitez créer ou migrer un site internet sans utiliser les modules OVHcloud. Vous devez être en possession des fichiers du site internet que vous souhaitez installer. Vous devrez donc vous [connecter manuellement à votre espace de stockage FTP](/pages/web_cloud/web_hosting/ftp_connection) pour y téléverser les fichiers du site puis, si possible, lier ce dernier à une base de données préalablement créée.
 
 > [!success]
 >
