@@ -812,6 +812,7 @@
             + [Getting started](public-cloud-containers-orchestration-managed-private-registry-getting-started)
                 + [Creating a private registry](public_cloud/containers_orchestration/managed_private_registry/creating-a-private-registry)
                 + [Creating a private registry (Harbor) through Terraform](public_cloud/containers_orchestration/managed_private_registry/creating-a-private-registry-through-terraform)
+                + [Creating a private registry with Pulumi](public_cloud/containers_orchestration/managed_private_registry/creating-a-private-registry-with-pulumi)
                 + [Connecting to the UI](public_cloud/containers_orchestration/managed_private_registry/connecting-to-the-ui)
                 + [Managing users and projects](public_cloud/containers_orchestration/managed_private_registry/managing-users-and-projects)
                 + [FAQ](public_cloud/containers_orchestration/managed_private_registry/managed-private-registry-faq)
