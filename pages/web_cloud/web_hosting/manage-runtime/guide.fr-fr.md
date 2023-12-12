@@ -1,6 +1,6 @@
 ---
-title: 'Gérer les moteurs d’exécution d’un hébergement Cloud Web'
-excerpt: 'Apprenez à gérer les moteurs d’exécution de votre hébergement pour mener à bien vos projets'
+title: "Gérer les moteurs d’exécution d’un hébergement Cloud Web"
+excerpt: "Apprenez à gérer les moteurs d’exécution de votre hébergement pour mener à bien vos projets"
 updated: 2022-07-27
 ---
 
@@ -19,9 +19,7 @@ Cloud Web met à disposition de multiples langages de développement pour constr
 
 Afin de s'adapter au mieux à votre projet, Cloud Web vous permet de disposer d'un ou de plusieurs moteurs d'exécution. L'utilisation de l'un plutôt qu'un autre dépend alors de ce que vous souhaitez mettre en place. 
 
-Ainsi, si ce n'est pas encore fait, **assurez-vous de la compatibilité technique de votre projet avec votre hébergement Cloud Web**. Les langages sont listés à cette adresse : <https://www.ovhcloud.com/fr/web-hosting/cloud-web-offer/>. 
-
-Après avoir déterminé avec précision le ou les moteurs d'exécution à utiliser, vous pouvez débuter les manipulations décrites ci-dessous.
+Ainsi, si ce n'est pas encore fait, **assurez-vous de la compatibilité technique de votre projet avec votre hébergement Cloud Web**. Les langages sont listés à cette adresse : <https://www.ovhcloud.com/fr/web-hosting/cloud-web-offer/>.Après avoir déterminé avec précision le ou les moteurs d'exécution à utiliser, vous pouvez débuter les manipulations décrites ci-dessous.
 
 ### Étape 1 : accéder à la gestion des moteurs d'exécution
 

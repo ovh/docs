@@ -1,6 +1,6 @@
 ---
-title: 'Installing Ghost on a Cloud Web hosting plan'
-excerpt: 'Find out how to set up a blog with the Ghost platform on Cloud Web'
+title: "Installing Ghost on a Cloud Web hosting plan"
+excerpt: "Find out how to set up a blog with the Ghost platform on Cloud Web"
 updated: 2022-05-04
 ---
 

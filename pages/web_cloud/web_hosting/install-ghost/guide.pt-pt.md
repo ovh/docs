@@ -1,6 +1,6 @@
 ---
-title: 'Instalar o Ghost num alojamento Cloud Web'
-excerpt: 'Saiba como instalar um blogue com a plataforma Ghost num alojamento Cloud Web'
+title: "Instalar o Ghost num alojamento Cloud Web"
+excerpt: "Saiba como instalar um blogue com a plataforma Ghost num alojamento Cloud Web"
 updated: 2022-05-04
 ---
 

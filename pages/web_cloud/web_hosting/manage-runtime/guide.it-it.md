@@ -1,6 +1,6 @@
 ---
-title: 'Gestire i motori di esecuzione di un hosting Cloud Web'
-excerpt: 'Come scegliere i motori di esecuzione del tuo hosting per realizzare al meglio i tuoi progetti'
+title: "Gestire i motori di esecuzione di un hosting Cloud Web"
+excerpt: "Come scegliere i motori di esecuzione del tuo hosting per realizzare al meglio i tuoi progetti"
 updated: 2022-07-27
 ---
 

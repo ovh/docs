@@ -1,6 +1,6 @@
 ---
-title: 'Aktywacja zapory systemowej'
-excerpt: 'Hosting www: Aktywacja zapory systemowej'
+title: "Aktywacja zapory systemowej"
+excerpt: "Hosting www: Aktywacja zapory systemowej"
 updated: 2021-04-26
 ---
 

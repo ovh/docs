@@ -1,6 +1,6 @@
 ---
-title: 'Activating the application firewall'
-excerpt: 'Find out how to activate the application firewall on a Web Hosting plan'
+title: "Activating the application firewall"
+excerpt: "Find out how to activate the application firewall on a Web Hosting plan"
 updated: 2021-04-26
 ---
 
@@ -68,4 +68,4 @@ For specialised services (SEO, development, etc.), contact [OVHcloud partners](h
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-gb/support-levels/).
 
-Join our community of users on <https://community.ovh.com/en/>. 
+Join our community of users on <https://community.ovh.com/en/>.

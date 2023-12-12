@@ -1,6 +1,6 @@
 ---
-title: 'Partilhado: ativação da firewall'
-excerpt: 'Partilhado: ativação da firewall'
+title: "Partilhado: ativação da firewall"
+excerpt: "Partilhado: ativação da firewall"
 updated: 2021-04-26
 ---
 
