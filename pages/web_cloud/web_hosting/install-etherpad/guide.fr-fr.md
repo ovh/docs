@@ -1,5 +1,5 @@
 ---
-title: 'Installer Etherpad sur son hébergement Cloud Web'
+title: "Installer Etherpad sur son hébergement Cloud Web"
 excerpt: "Installez l'éditeur de texte Etherpad sur votre hébergement Cloud Web et rendez-le accessible avec votre nom de domaine"
 updated: 2022-05-04
 ---
