@@ -85,7 +85,12 @@ Per maggiori informazioni su questa soluzione, consulta la nostra guida: [Instal
 
 #### Soluzione manuale (competenze tecniche necessarie)
 
-Questa soluzione permette di creare o migrare un sito Internet senza utilizzare i moduli OVHcloud. Prima di iniziare, assicurati di avere a disposizione i file del sito da installare: dovrai connetterti manualmente al tuo spazio di storage per effettuarne l’upload e, se possibile, associare il sito a un database precedentemente creato.
+Questa soluzione permette di creare o migrare un sito Internet senza utilizzare i moduli OVHcloud. Prima di iniziare, assicurati di avere a disposizione i file del sito da installare. dovrai quindi [accedere manualmente al tuo spazio di storage FTP](/pages/web_cloud/web_hosting/ftp_connection) per caricare i file del sito e, se possibile, associare quest’ultimo a un database precedentemente creato.
+
+> [!success]
+>
+> Se hai dimenticato la password di accesso allo spazio di storage FTP, modificala con la nostra guida "[Modifica la password di accesso allo spazio di storage FTP del tuo hosting Web](/pages/web_cloud/web_hosting/ftp_change_password)".
+>
 
 I siti Internet sono molto diversi tra loro e non esiste quindi una procedura universale ma, in caso di necessità, puoi consultare le nostre guide ​[Mettere online il tuo sito](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online){.external} e [Migrare un sito e un servizio di posta in OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh){.external}. Una volta completata l’installazione, passa agli step successivi.
 

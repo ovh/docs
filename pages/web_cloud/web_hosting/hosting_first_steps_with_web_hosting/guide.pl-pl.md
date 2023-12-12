@@ -85,7 +85,12 @@ Jeżeli chcesz uzyskać więcej informacji dotyczących modułów OVHcloud dost�
 
 #### Konfiguracja ręczna, wymagane umiejętności techniczne
 
-Rozwiązanie to stosowane jest w przypadku tworzenia lub przenoszenia strony internetowej bez wykorzystywania modułów OVHcloud. Konieczne jest posiadanie plików strony internetowej, którą chcesz zainstalować. Należy zalogować się ręcznie do przestrzeni dyskowej, aby wgrać pliki strony internetowej, a następnie, o ile to możliwe, połączyć ją z uprzednio utworzoną bazą danych.
+Rozwiązanie to ma zastosowanie, jeśli chcesz stworzyć lub przenieść stronę WWW bez korzystania z modułów OVHcloud. Musisz mieć dostęp do plików strony WWW, które chcesz zainstalować. Dlatego należy [ręcznie zalogować się do przestrzeni dyskowej FTP](/pages/web_cloud/web_hosting/ftp_connection), aby wgrać pliki strony WWW, a następnie, jeśli to możliwe, powiązać ją z wcześniej utworzoną bazą danych.
+
+> [!success]
+>
+> Jeśli nie pamiętasz hasła dostępowego do przestrzeni dyskowej FTP, zmodyfikuj je za pomocą naszego przewodnika "[Zmiana hasła dostępowego do przestrzeni dyskowej FTP Twojego hostingu](/pages/web_cloud/web_hosting/ftp_change_password)".
+>
 
 Biorąc pod uwagę, że strony internetowe mogą się w znaczącym stopniu od siebie różnić, nie ma uniwersalnego sposobu postępowania, jednak możemy pokierować Cię w zakresie hostingu OVHcloud przy użyciu naszej dokumentacji: [Umieszczanie strony w sieci](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online){.external} oraz [Przenoszenie strony na serwer OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh){.external}, o ile jest on wykorzystywany. Gdy strona zostanie już ręcznie zainstalowana na hostingu, przeprowadź wskazane poniżej etapy.
 
@@ -127,13 +132,13 @@ Aby sprawdzić rekordy MX, których należy użyć w strefie Twojej domeny, zalo
 
 Teraz, gdy znasz już typy rekordów powiązane z Twoim hostingiem OVHcloud, należy je sprawdzić lub zmienić, jeżeli to konieczne. Czynności, które należy przeprowadzić zależą od projektu, który realizujesz.
 
-- **Zakup domeny wraz z hostingiem OVH**
+- **Zakup domeny wraz z hostingiem OVHcloud**
 
 Konfiguracja Twojej domeny jest już prawidłowa. Przejdź do następnego etapu. Jeżeli natomiast dokonałeś zmian w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} w strefie DNS Twojej domeny, może okazać się, że konfiguracja jest nieprawidłowa.
  
 Aby uzyskać dostęp do strefy DNS Twojej domeny OVHcloud wybierz sekcję `Domeny`{.action} Kliknij nazwę danej domeny. Następnie w zakładce `Strefa DNS`{.action} sprawdź i zmodyfikuj niezbędne informacje.
 
-- **Domena nie korzystająca ze strefy DNS OVH**
+- **Domena nie korzystająca ze strefy DNS OVHcloud**
  
 Sprawdź strefę DNS Twojej domeny u usługodawcy, który nią zarządza. Jeżeli to konieczne, zmodyfikuje niezbędne informacje.
 

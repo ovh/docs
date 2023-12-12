@@ -142,13 +142,13 @@ Para comprobar los registros MX que debe utilizar en la zona de su dominio, con�
 
 Una vez conozca los registros DNS asociados a su alojamiento web de OVHcloud, deberá comprobarlos y corregirlos si fuera necesario. El procedimiento para realizar la operación varía en función del proyecto.
 
-**Si el dominio se ha contratado junto con un plan de hosting de OVH**
+**Si el dominio se ha contratado junto con un plan de hosting de OVHcloud**
 
 La configuración de su dominio es correcta y puede pasar a la siguiente etapa. No obstante, si ha realizado alguna modificación en la zona DNS de su dominio desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, es posible que deba revisarla.
     
 Para acceder a la zona de DNS de su dominio de OVHcloud, haga clic en `Dominios`{.action} y seleccione el nombre de dominio. A continuación, abra la pestaña `Zona DNS`{.action} y revise la información, modificándola cuando sea necesario.
 
-**Si el nombre de dominio no utiliza la zona DNS de OVH**
+**Si el nombre de dominio no utiliza la zona DNS de OVHcloud**
     
 Compruebe la zona DNS de su dominio directamente con el proveedor que lo gestiona. Si es necesario, modifique la información.
 
