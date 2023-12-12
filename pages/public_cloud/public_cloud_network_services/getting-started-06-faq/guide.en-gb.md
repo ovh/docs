@@ -1,7 +1,7 @@
 ---
 title: Public Cloud Network Services - FAQ
 excerpt: Frequently Asked Questions on Public Cloud Network Services
-updated: 2022-11-02
+updated: 2023-12-12
 ---
 
 ## Objective
@@ -25,7 +25,7 @@ A beta is ongoing to provide integration with Managed Kubernetes Service. Please
 
 ### I want to monitor Octavia Load Balancer. Is it possible to enable [metrics](https://docs.openstack.org/octavia/latest/user/guides/monitoring.html) automatically on Load Balancer?
 
-Yes this feature is available since we rolled out Zed version in June 2023
+Yes this feature is available since we rolled out Zed version in June 2023.
 
 ### How is the redundancy implemented for each type of service plan? Are the Amphoras configured in a ACT/STBY mode?
 
@@ -67,14 +67,15 @@ We don't support this mode currently. For the moment, Gateway supports only sing
 
 Yes, that's exactly the use case for Gateway (L3 router with SNAT option). Currently, only instances in **private mode** of networking that are connected to a single-region private network are supported. For more information, please refer to our [concept guide on Public Cloud Networking](/pages/public_cloud/public_cloud_network_services/concepts-01-public-cloud-networking-concepts).
 
-### Can I use a L3 router to route traffic between different subnets inside a public cloud region ?
+### Can I use a L3 router to route traffic between different subnets inside a Public Cloud region ?
+
 Yes, you can use a L3 router without SNAT option through the Openstack GUI / CLI / Terraform. In that case, the bandwidth limits are driven by the quality of service on the instance private bandwidth. Hence, choosing an `S` flavor would not impact the performances.
 
 ### Will Gateway be provided with a public IP and port?
 
 It depends on the usage:
 
-- For outbound use cases we offer a public IP which is included in the Gateway price. This IP is associated to the instantiated Gateway and cannot be moved to another one. In other words, the IP used for outbound traffic is not a 'Floating IP'. If this is creating friction for your use case, please upvote for this [roadmap item](https://github.com/ovh/public-cloud-roadmap/issues/448)
+- For outbound use cases we offer a public IP which is included in the Gateway price. This IP is associated to the instantiated Gateway and cannot be moved to another one. In other words, the IP used for outbound traffic is not a 'Floating IP'. If this is creating friction for your use case, please upvote for this [roadmap item](https://github.com/ovh/public-cloud-roadmap/issues/448).
 - For inbound use cases (to expose a service running on a private instance to the Internet) you need to have a Floating IP to attach via Gateway to your instance or network service.
 
 ### How can I spawn a private instance to be used with Gateway and SNAT option?
