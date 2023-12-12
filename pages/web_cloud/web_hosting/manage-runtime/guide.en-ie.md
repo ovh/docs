@@ -1,6 +1,6 @@
 ---
-title: 'Managing Cloud Web runtime software applications'
-excerpt: 'Find out how to manage your Web Hosting plan’s runtime software applications, and complete your projects successfully'
+title: "Managing Cloud Web runtime software applications"
+excerpt: "Find out how to manage your Web Hosting plan’s runtime software applications, and complete your projects successfully"
 updated: 2022-07-27
 ---
 
@@ -19,9 +19,7 @@ With a Cloud Web hosting plan, you can choose from a range of different coding l
 
 With Cloud Web, you can pick from one or more runtime environments that are best adapted to your project. The runtime environment you choose will depend on the kind of project you want to set up. 
 
-So if you have not done so yet, **please ensure that your project is compatible with your Cloud Web hosting plan**. The available coding languages are listed here: <https://www.ovhcloud.com/en-gb/web-hosting/cloud-web-offer/>. 
-
-Once you have chosen the exact runtime environments you will use, you can start following the steps below.
+So if you have not done so yet, **please ensure that your project is compatible with your Cloud Web hosting plan**. The available coding languages are listed here: <https://www.ovhcloud.com/en-gb/web-hosting/cloud-web-offer/>.Once you have chosen the exact runtime environments you will use, you can start following the steps below.
 
 ### Step 1: Access the runtime environment management interface.
 
