@@ -62,7 +62,7 @@ You work for the [Chicago Transit Authority](https://www.transitchicago.com/abou
 
 Before going through this tutorial:
 
-- Download [this zip](https://raw.githubusercontent.com/ovh/docs/develop/pages/public_cloud/data_platform/tutorials/tuto_02_build_an_ai_model_from_scratch_step1/resources/ml-data-csv.zip) containing the two data files necessary for this guide: *ml_dataset.csv* and *ml_sample.csv*.
+- Download [this zip](https://raw.githubusercontent.com/ovh/docs/develop/pages/public_cloud/data_platform/tuto_02_build_an_ai_model_from_scratch_step1/resources/ml-data-csv.zip) containing the two data files necessary for this guide: *ml_dataset.csv* and *ml_sample.csv*.
 - Load the files into your **Data Catalog**
     - Load them into the **Sources tab** of your Data Catalog.
     - Extract their metadata in the **Analyzer**.
