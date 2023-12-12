@@ -1,6 +1,6 @@
 ---
-title: 'Instalar Ghost en un hosting Cloud Web'
-excerpt: 'Cómo instalar un blog basado en la plataforma Ghost en un hosting Cloud Web'
+title: "Instalar Ghost en un hosting Cloud Web"
+excerpt: "Descubra cómo instalar un blog basado en la plataforma Ghost en un hosting Cloud Web"
 updated: 2022-05-04
 ---
 
