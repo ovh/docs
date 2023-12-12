@@ -1,5 +1,5 @@
 ---
-title: : AI Training - Tutoriel - Premiers pas avec Triton Inference Server de NVIDIA et AI Training
+title: AI Training - Tutoriel - Premiers pas avec Triton Inference Server de NVIDIA et AI Training
 excerpt: "Comment utiliser de manière optimale les modèles d'IA avec le serveur d'inférence Triton de NVIDIA et AI Training"
 updated: 2023-11-27
 ---
