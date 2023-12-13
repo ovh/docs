@@ -1,7 +1,7 @@
 ---
 title: "Hébergement web : ma base de données est saturée, que faire ?"
 excerpt: "Découvrez comment agir lorsque votre base de données est saturée"
-updated: 2023-11-30
+updated: 2023-12-13
 ---
 
 ## Objectif
@@ -119,6 +119,11 @@ Une fois que vous avez déterminé si le contenu de vos tables est nécessaire o
 #### Cas n°1 - L'ensemble du contenu de la table volumineuse est nécessaire au bon fonctionnement de votre site
 
 Vous devrez basculer votre base de données sur une base de données plus volumineuse.
+
+> [!primary]
+>
+> Pour augmenter la taille allouée à votre base de données, vous devrez obligatoirement créer une nouvelle base de données plus grande et copier le contenu de l'ancienne dans la nouvelle. En effet, il n'est pas possible d'augmenter directement la taille d'une base de données liée à un hébergement web.
+>
 
 Consultez notre offre de bases de données [Web Cloud Databasess](https://www.ovh.com/fr-ca/cloud-databases/) pour choisir votre nouveau service de base de données.
 
