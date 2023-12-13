@@ -39,7 +39,7 @@ Les adresses e-mail de l'offre MX Plan peuvent être configurées sur différent
 
 Sur l'écran d'accueil de votre appareil, rendez-vous dans l'application `Gmail`{.action}.
 
-![mxplan](images/mxplan-android-00.png){.thumbnail .w-}
+![mxplan](images/mxplan-android-00.png){.thumbnail .w-400}
 
 L’ajout d’un compte peut s’initier de deux manières différentes **si aucun compte n'est paramétré** ou **si un compte a déjà été paramétré**. Sélectionnez l'onglet correspondant à l'une des 2 situations évoquées:
 
@@ -54,7 +54,7 @@ L’ajout d’un compte peut s’initier de deux manières différentes **si auc
 >>
 >> | | |
 >> |---|---|
->> |![mxplan](images/mxplan-android-existing.png){.thumbnail}|1. Dirigez-vous vers le menu burger dans la partie supérieure gauche de l'écran<br>2.Sélectionnez `Paramètres`{.action}<br>3.Sélectionnez `Ajouter un compte`{.action}|
+>> |![mxplan](images/mxplan-android-existing.png){.thumbnail}|1. Dirigez-vous vers le menu burger dans la partie supérieure gauche de l'écran<br><br>2.Sélectionnez `Paramètres`{.action}<br><br>3.Sélectionnez `Ajouter un compte`{.action}|
 >>
 
 Suivez les étapes de configuration en parcourant les onglets ci-dessous :
@@ -83,12 +83,12 @@ Suivez les étapes de configuration en parcourant les onglets ci-dessous :
 > **Etape 5**
 >> | | |
 >> |---|---|
->> |![mxplan](images/mxplan-android-05.png){.thumbnail}|Complétez les « **Paramètres de serveur entrant** »<br>**Nom d'utilisateur** : Votre adresse e-mail complète<br>**Mot de passe** : Le mot de passe de votre adresse e-mail<br>=**Serveur** : saisissez **ssl0.ovh.net** |
+>> |![mxplan](images/mxplan-android-05.png){.thumbnail}|Complétez les « **Paramètres de serveur entrant** »<br><br>- **Nom d'utilisateur** : Votre adresse e-mail complète<br>- **Mot de passe** : Le mot de passe de votre adresse e-mail<br>- **Serveur** : saisissez **ssl0.ovh.net** |
 >>
 > **Etape 6**
 >> | | |
 >> |---|---|
->> |![mxplan](images/mxplan-android-06.png){.thumbnail}|Complétez les « **Paramètres de serveur sortant** »<br>**Nom d'utilisateur** : Votre adresse e-mail complète<br>**Mot de passe** : Le mot de passe de votre adresse e-mail<br>=**Serveur SMTP** : saisissez **ssl0.ovh.net** |
+>> |![mxplan](images/mxplan-android-06.png){.thumbnail}|Complétez les « **Paramètres de serveur sortant** »<br><br>- **Nom d'utilisateur** : Votre adresse e-mail complète<br>- **Mot de passe** : Le mot de passe de votre adresse e-mail<br>- **Serveur SMTP** : saisissez **ssl0.ovh.net** |
 >>
 > **Etape 7**
 >> | | |
