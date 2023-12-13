@@ -124,6 +124,11 @@ Una vez que haya determinado si el contenido de las tablas es necesario para el 
 
 Deberá bascular su base de datos con una base de datos más voluminosa.
 
+> [!primary]
+>
+> Para aumentar el tamaño asignado a la base de datos, es necesario crear una nueva base de datos más grande y copiar el contenido de la antigua en la nueva. No es posible aumentar directamente el tamaño de una base de datos asociada a un alojamiento web.
+>
+
 Consulte nuestra oferta de bases de datos [Web Cloud Databasess](https://www.ovhcloud.com/es-es/web-cloud/databases/) para elegir su nuevo servicio de bases de datos. 
 
 Es recomendable para bases de datos de gran tamaño.
