@@ -26,7 +26,7 @@ L'enregistrement **D**omain-based **M**essage **A**uthentication, **R**eporting,
 
 ## En pratique
 
-Le DMARC permet au propriétaire d’un nom de domaine de gérer la sécurité des e-mails émis avec son nom de domaine. Son rôle est de:
+Le DMARC permet au propriétaire d’un nom de domaine de gérer la sécurité des e-mails émis avec son nom de domaine. Il a pour objectif :
 
 - De déclarer, au serveur destinataire, les actions à mener en cas d’échec des mécanismes d'authentification SPF et/ou DKIM.
 - De mieux maitriser l’usage de son nom de domaine et détecter les tentatives d’usurpation à l'aide des rapports envoyés en cas d’échec d’authentification des e-mails. Par ailleurs, Il augmente également la sécurité en créant le lien entre les protocoles SPF et DKIM.youtu
