@@ -73,7 +73,7 @@ Vous trouverez ci-dessous le descriptif exhaustif des balises utilisées pour **
 
 > [!warning]
 >
-> la configuration du paramètre `p=` peut avoir un impact important sur la délivrabilité des emails de votre nom de domaine. Il est conseillé de configurer `p=none` et effectuer une analyse des rapports d’échec pendant plusieurs semaines pour régler les éventuelles anomalies. Passer en `p=quarantine` ou `p=reject` nécessite une pleine maitrise des paramètres de sécurité e-mail, concernant le [SPF](/pages/web_cloud/domains/dns_zone_spf) et le [DKIM](/pages/web_cloud/domains/dns_zone_dkim). L’utilisation du facteur `pct=`, présenté en-dessous, permet une transition progressive.
+> La configuration du paramètre `p=` peut avoir un impact important sur la délivrabilité des e-mails de votre nom de domaine. Il est conseillé de configurer `p=none` et d'effectuer une analyse des rapports d’échec pendant plusieurs semaines , afin de régler les éventuelles anomalies. Passer en `p=quarantine` ou `p=reject` nécessite une pleine maîtrise des paramètres de sécurité e-mail, concernant le [SPF](/pages/web_cloud/domains/dns_zone_spf) et le [DKIM](/pages/web_cloud/domains/dns_zone_dkim). L’utilisation du facteur `pct=`, présenté ci-dessous, permet une transition progressive.
 
 - **Pourcentage des messages filtrés (pct=)** (valeur comprise entre 0 et 100, la valeur par défaut est 100) : pourcentage du flux de messages auquel la politique DMARC doit être appliquée. Le but de la balise « pct » est de permettre aux propriétaires de domaines d'adopter une mise en œuvre lente du mécanisme DMARC.
 
