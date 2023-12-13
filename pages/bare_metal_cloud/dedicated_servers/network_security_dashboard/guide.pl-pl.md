@@ -31,7 +31,7 @@ W przypadku wykrycia ataku na dowolny adres IP Twojej usługi otrzymujesz e-mail
 
 W trakcie ataku, aktywne filtrowanie jest wskazane przez ikonę ostrzegawczą na stronie z listą adresów IP (w sekcji `Zarządzaj adresami IP`{.action} w Panelu klienta).
 
-![red-line-attack](images/forced_blur.png)
+![red-line-attack](images/forced_blur.png){.thumbnail}
 
 > [!primary]
 >
@@ -45,7 +45,7 @@ W trakcie ataku, aktywne filtrowanie jest wskazane przez ikonę ostrzegawczą na
 
 ### Powiadomienia o zabezpieczeniach sieci
 
-![red-line-attack](images/nsd_04_blur.png)
+![red-line-attack](images/nsd_04_blur.png){.thumbnail}
 
 W Panelu klienta OVHcloud przejdź do sekcji `Bare Metal Cloud`{.action}. Następnie przejdź do sekcji `Sieć`{.action} na lewym pasku bocznym i kliknij pozycję `Adres IP`{.action}. Upewnij się, że `Tryb zaawansowany` jest włączony, aby sprawdzić stan infrastruktury anty-DDoS i konfigurację jej komponentów
 
@@ -172,6 +172,6 @@ W każdym przypadku, kiedy konieczne będą zmiany w naszym systemie Anty-DDoS, 
 
 [Enabling and configuring the Edge Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network)
 
-[Protecting a GAME server with the application firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_game_ddos)
+[Protecting a game server with the application firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_game_ddos)
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

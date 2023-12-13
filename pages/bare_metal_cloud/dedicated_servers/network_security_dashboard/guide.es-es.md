@@ -31,7 +31,7 @@ Cada vez que se detecta un ataque hacia una IP de su servicio, se le notifica po
 
 Durante un ataque, una acción de mitigación activa se indica mediante un icono de advertencia en la página de lista de IP (en la sección `Gestionar las direcciones IP`{.action} del área de cliente).
 
-![red-line-attack](images/forced_blur.png)
+![red-line-attack](images/forced_blur.png){.thumbnail}
 
 > [!primary]
 >
@@ -45,7 +45,7 @@ Durante un ataque, una acción de mitigación activa se indica mediante un icono
 
 ### Notificaciones de seguridad de red
 
-![red-line-attack](images/nsd_04_blur.png)
+![red-line-attack](images/nsd_04_blur.png){.thumbnail}
 
 En el área de cliente de OVHcloud, acceda a la sección «Bare Metal Cloud» {.action}. A continuación, acceda a `Network`{.action} en el menú de la izquierda y haga clic en `IP`{.action}. Asegúrese de que la opción `Modo avanzado` esté activada para ver el estado de la infraestructura anti-DDoS y la configuración de sus componentes.
 

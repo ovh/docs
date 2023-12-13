@@ -162,7 +162,7 @@
         + [Network and IP management](bare-metal-cloud-dedicated-servers-network-and-ip-management)
             + [Moving an Additional IP](bare_metal_cloud/dedicated_servers/move-failover-ip)
             + [Configuring the Edge Network Firewall](bare_metal_cloud/dedicated_servers/firewall_network)
-            + [Protecting a GAME server with the application firewall](bare_metal_cloud/dedicated_servers/firewall_game_ddos)
+            + [Protecting a game server with the application firewall](bare_metal_cloud/dedicated_servers/firewall_game_ddos)
             + [Monitoring DDoS attacks with the Network Security Dashboard](bare_metal_cloud/dedicated_servers/network_security_dashboard)
             + [Configuring a network bridge](bare_metal_cloud/dedicated_servers/network_bridging)
             + [What are the IP addresses of the OVHcloud monitoring ?](bare_metal_cloud/dedicated_servers/network_ip_monitoring)

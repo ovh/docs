@@ -6,7 +6,7 @@ updated: 2023-12-14
 
 ## Objective
 
-This guide explains the Network Security Dashboard and provides an overview of counter measures triggered by our DDoS protection infrastructure when malicious network activity is detected. You can find details on what triggered additional protections to be put in place to keep your services up & running. Moreover, traffic charts are available on the dashboard for scrubbing centre activity periods to better visualize the situation.
+This guide explains the Network Security Dashboard and provides an overview of counter measures triggered by our DDoS protection infrastructure when malicious network activity is detected. You can find details on which additional protections should be implemented to keep your services up and running. Moreover, traffic charts are available on the dashboard for scrubbing centre activity periods to better visualize the situation.
 
 ## Requirements
 
@@ -27,7 +27,7 @@ Every time an attack is detected towards any IP of your service, you are notifie
 
 During an attack, an active mitigation action will be indicated by a warning icon on the IP listing page (in the `Manage IPs`{.action} section of your Control Panel).
 
-![red-line-attack](images/forced_blur.png)
+![red-line-attack](images/forced_blur.png){.thumbnail}
 
 > [!primary]
 >
@@ -41,7 +41,7 @@ During an attack, an active mitigation action will be indicated by a warning ico
 
 ### Network security notifications
 
-![red-line-attack](images/nsd_04_blur.png)
+![red-line-attack](images/nsd_04_blur.png){.thumbnail}
 
 In the OVHcloud Control Panel, access the `Bare Metal Cloud`{.action} section. Then go to `Network`{.action} in the left-hand sidebar and click `Manage IPs`{.action}. Ensure that `Advanced mode` is enabled to see the Anti-DDoS infrastructure status and its components configuration.
 
@@ -168,6 +168,6 @@ In any case where adjustments to our Anti-DDoS system will be necessary, it is m
 
 [Enabling and configuring the Edge Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network)
 
-[Protecting a GAME server with the application firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_game_ddos)
+[Protecting a game server with the application firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_game_ddos)
 
 Join our community of users on <https://community.ovh.com/en/>.

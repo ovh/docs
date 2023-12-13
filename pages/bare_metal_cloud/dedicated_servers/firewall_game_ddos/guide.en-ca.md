@@ -121,7 +121,7 @@ This is possible, if not recommended. You can do it by removing all game protoco
 
 ### My game is not on the supported protocol list, what can I do?
 
-You can propose your need on our [infrastructure solutions roadmap on GitHub](https://github.com/orgs/ovh/projects/16/views/14). This will help us to decide on prioritisation between next features to be developed.
+You can propose your need on our [infrastructure solutions roadmap on GitHub](https://github.com/orgs/ovh/projects/16/views/14). This will help us to decide on prioritisation of the next features to be developed.
 
 ### While having configured my game with appropriate ports and default policy to drop, I still receive attacks that are impacting my game server. What to do?
 

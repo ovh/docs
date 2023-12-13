@@ -31,7 +31,7 @@ Jedes Mal, wenn ein Angriff auf eine IP-Adresse Ihres Dienstes entdeckt wird, we
 
 Während eines Angriffs wird eine aktive Abwehraktion durch ein Warnsymbol auf der Seite IP-Liste (im Bereich `IPs verwalten`{.action} in Ihrem Kundencenter) angezeigt.
 
-![red-line-attack](images/forced_blur.png){.thumbnail}
+![red-line-attack](images/forced_blur.png){.thumbnail}{.thumbnail}
 
 > [!primary]
 >
@@ -45,7 +45,7 @@ Während eines Angriffs wird eine aktive Abwehraktion durch ein Warnsymbol auf d
 
 ### Netzwerksicherheitsbenachrichtigungen
 
-![red-line-attack](images/nsd_04_blur.png){.thumbnail}
+![red-line-attack](images/nsd_04_blur.png){.thumbnail}{.thumbnail}
 
 Rufen Sie im OVHcloud Kundencenter den Bereich `Bare Metal Cloud`{.action} auf. Gehen Sie dann in der linken Seitenleiste zu `Netzwerk`{.action} und klicken Sie auf `IPs verwalten`{.action}. Stellen Sie sicher, dass der `Erweiterte Modus` aktiviert ist, um den Status der Anti-DDoS-Infrastruktur und die Konfiguration ihrer Komponenten anzuzeigen.
 
@@ -74,7 +74,7 @@ Im OVHcloud Kundencenter können Sie das Dashboard entweder über die IP-Liste (
 
 Gehen Sie in den Bereich `Bare Metal Cloud`{.action}, dann links auf `Netzwerk`{.action} und wählen Sie `Network Security Dashboard`{.action}.
 
-Alternativ können Sie von der IP-Liste aus zugreifen (nur verfügbar, wenn das Scrubbing Center aktiv ist): Klicken Sie im OVHcloud Kundencenter auf den Bereich `Bare Metal Cloud`{.action} und anschließend auf das Menü `Netzwerk`.{action} links. Gehen Sie zum Tab `Öffentliche IP Adressen`{.action} und klicken Sie auf `...`{.action}.Öffnen Sie `Network Security Dashboard`{.action}.
+Alternativ können Sie von der IP-Liste aus zugreifen (nur verfügbar, wenn das Scrubbing Center aktiv ist): Klicken Sie im OVHcloud Kundencenter auf den Bereich `Bare Metal Cloud`{.action} und anschließend auf das Menü `Netzwerk`{.action} links. Gehen Sie zum Tab `Öffentliche IP Adressen`{.action} und klicken Sie auf `...`{.action}.Öffnen Sie `Network Security Dashboard`{.action}.
 
 Auf der Registerkarte **Scrubbing Center-Protokoll** können Sie alle Informationen zu Angriffen abrufen, die in der Vergangenheit entdeckt wurden (oder zurzeit aktiv sind).
 
