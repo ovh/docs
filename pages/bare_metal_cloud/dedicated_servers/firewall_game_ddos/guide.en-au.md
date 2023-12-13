@@ -9,7 +9,7 @@ updated: 2023-12-14
 This guide's objective is to help you better understand our GAME DDoS protection (GAME firewall) and to provide instructions on how to configure effective protection for servers that support it.
 
 > [!primary]
-> Find more information on our GAME DDoS protection on our website: <https://www.ovhcloud.com/en-gb/security/game-ddos-protection/>.
+> Find more information on our GAME DDoS protection on our website: <https://www.ovhcloud.com/en-au/security/game-ddos-protection/>.
 > 
 
 Our dedicated Bare Metal gaming servers include a DDoS protection specifically designed to secure gaming applications against targeted attacks, ensuring stability and accessibility for gamers. This dedicated protection solution is both robust and easy to use, allowing you to focus on developing your business without the distraction of defending against cybercrime.
@@ -20,13 +20,13 @@ Our dedicated Bare Metal gaming servers include a DDoS protection specifically d
 
 ## Requirements
 
-- An [OVHcloud **Game** dedicated server](https://www.ovhcloud.com/en-gb/bare-metal/prices/#filterType=range_element&filterValue=game)
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
+- An [OVHcloud **Game** dedicated server](https://www.ovhcloud.com/en-au/bare-metal/prices/#filterType=range_element&filterValue=game)
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
 
 > [!warning]
-> This feature might be unavailable or limited on servers of the [**Eco** product line](https://eco.ovhcloud.com/en-gb/about/).
+> This feature might be unavailable or limited on servers of the [**Eco** product line](https://eco.ovhcloud.com/en-au/about/).
 >
-> Please visit our [comparison page](https://eco.ovhcloud.com/en-gb/compare/) for more information.
+> Please visit our [comparison page](https://eco.ovhcloud.com/en-au/compare/) for more information.
 
 ## Instructions
 
@@ -65,7 +65,7 @@ To configure gaming rules in the GAME firewall, log in to the OVHcloud Control P
 | On the following screen, click the `Add a rule`{.action} button to add a rule to the GAME firewall. |
 
 
-You can set up to **30 rules per IP** to protect one or more games hosted on your server behind the GAME firewall. The list of supported game profiles can be seen [here](https://www.ovhcloud.com/en-gb/security/game-ddos-protection/).
+You can set up to **30 rules per IP** to protect one or more games hosted on your server behind the GAME firewall. The list of supported game profiles can be seen [here](https://www.ovhcloud.com/en-au/security/game-ddos-protection/).
 
 > [!primary]
 > By default, the GAME firewall is preconfigured with certain rules that OVHcloud has determined work with the most popular games. However, for customers with a GAME Dedicated Server, we allow to go one step further and configure rules for ports as well.
@@ -95,7 +95,7 @@ Due to this, we do not plan to release a public FiveM GAME firewall profile for 
 
 #### Rust
 
-GAME firewall supports Rust with a detailed profile. You can read more about hosting Rust on OVHcloud servers [here](https://www.ovhcloud.com/en-gb/bare-metal/game/rust-server/).
+GAME firewall supports Rust with a detailed profile. You can read more about hosting Rust on OVHcloud servers [here](https://www.ovhcloud.com/en-au/bare-metal/game/rust-server/).
 
 #### Minecraft
 
@@ -129,6 +129,6 @@ For that you will need to share relevant network traffic dumps as examples for s
 
 ## Go further
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-au/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.
