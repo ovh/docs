@@ -58,7 +58,7 @@ Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotoman
 
 A table listing your databases will appear at the bottom of the screen.
 
-![phpMyAdmin Access](images/pma_access.png){.thumbnail}
+![phpMyAdmin Access](images/manager-webcloud-webhosting-databases-3p-go-to-pma.png){.thumbnail}
 
 Note that `User name` and `Server address` of your database are listed in the table.
 

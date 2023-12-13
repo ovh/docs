@@ -62,7 +62,7 @@ Conéctese a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=
 
 En la parte inferior de la pantalla aparece una tabla con las bases de datos.
 
-![phpMyAdmin Access](images/pma_access.png){.thumbnail}
+![phpMyAdmin Access](images/manager-webcloud-webhosting-databases-3p-go-to-pma.png){.thumbnail}
 
 Tenga en cuenta que **para su base de datos saturada**, su `Nombre de usuario` y su `Dirección del servidor` aparecen en la tabla que enumera sus bases de datos. 
 

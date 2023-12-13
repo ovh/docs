@@ -62,7 +62,7 @@ Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanage
 
 Na parte inferior do ecrã será apresentada uma tabela com a lista das bases de dados.
 
-![phpMyAdmin Access](images/pma_access.png){.thumbnail}
+![phpMyAdmin Access](images/manager-webcloud-webhosting-databases-3p-go-to-pma.png){.thumbnail}
 
 Anote, **para a sua base de dados saturada**, o seu `Nome de utilizador` e o seu `Endereço do servidor` presentes na tabela que lista as suas bases de dados. 
 
@@ -123,6 +123,11 @@ Depois de determinar se o conteúdo das suas tabelas é necessário para o funci
 #### Caso n.º 1 - O conteúdo da tabela volumosa é necessário para o bom funcionamento do seu site
 
 Deverá migrar a sua base de dados para uma base de dados mais volumosa.
+
+> [!primary]
+>
+> Para aumentar o tamanho alocado à sua base de dados, deverá obrigatoriamente criar uma nova base de dados maior e copiar o conteúdo da antiga para a nova. De facto, não é possível aumentar diretamente o tamanho de uma base de dados associada a um alojamento web.
+>
 
 Consulte a nossa oferta de bases de dados [Web Cloud Databasess](https://www.ovh.pt/cloud/cloud-databases/) para escolher o seu novo serviço de base de dados. 
 

@@ -62,7 +62,7 @@ Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanag
 
 Visualizzi una tabella con tutti i database disponibili nella parte inferiore dello schermo.
 
-![phpMyAdmin Access](images/pma_access.png){.thumbnail}
+![phpMyAdmin Access](images/manager-webcloud-webhosting-databases-3p-go-to-pma.png){.thumbnail}
 
 Ti ricordiamo che **per un database saturo**, il suo `Nome utente` e il suo `Indirizzo del server` sono presenti nella tabella che elenca i tuoi database. 
 
@@ -122,7 +122,12 @@ Una volta stabilito se il contenuto delle tue tabelle è necessario per il funzi
 
 #### Caso n°1 - L'insieme del contenuto della tavola voluminosa è necessario al buon funzionamento del tuo sito
 
-Per spostare il database su un database più voluminoso,
+È necessario migrare il database verso un database più grande.
+
+> [!primary]
+>
+> Per aumentare le dimensioni del database, è necessario creare un nuovo database più grande e copiare il contenuto dal database precedente a quello nuovo. Infatti, non è possibile aumentare direttamente la dimensione di un database associato a un hosting Web.
+>
 
 Consulta la nostra offerta di database [Web Cloud Databasess](https://www.ovh.it/cloud/cloud-databases/) per scegliere il tuo nuovo servizio di database. 
 
