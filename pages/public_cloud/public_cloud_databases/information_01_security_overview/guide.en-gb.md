@@ -1,7 +1,7 @@
 ---
 title: Concepts - Security overview
 excerpt: Public Cloud Databases security overview
-updated: 2023-12-12
+updated: 2023-12-13
 ---
 
 ## Objective
