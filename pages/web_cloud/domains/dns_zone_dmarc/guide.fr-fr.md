@@ -82,7 +82,7 @@ Vous trouverez ci-dessous le descriptif exhaustif des balises utilisées pour **
 - **Règle pour les sous-domaines (sp=)** : politique à adopter par le destinataire pour tous les sous-domaines. Elle s'applique uniquement aux sous-domaines du domaine interrogé et non au domaine lui-même. Sa syntaxe est identique à celle de la balise « p » définie ci-dessus. Si cette balise est absente, la politique spécifiée par la balise « p » est appliquée pour les sous-domaines.
 
 - **Mode d'alignement pour SPF (aspf=)** (la valeur par défaut est `r`) : indique le mode d'allignement SPF. Les valeurs sont les suivantes :
-    - `r`(relaxed) pour le mode souple : les e-mails peuvent être, par exemple, envoyés depuis un sous-domaine du nom de domaine déclaré, on parle ici d'alignement partiel.
+    - `r`(relaxed) pour le mode souple : les e-mails peuvent être, par exemple, envoyés depuis un sous-domaine du nom de domaine déclaré. On parle ici d'alignement partiel.
     - `s`(strict) pour le mode strict : les e-mails doivent être envoyés depuis le nom de domaine déclaré et uniquement celui-ci. Le résultat est donc « aligné ».
 
 > [!primary]
