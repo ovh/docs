@@ -129,7 +129,7 @@ Vous trouverez ci-dessous la liste des balises utilisées pour créer un **enreg
 
 > [!warning]
 >
-> Dans nos 2 exemples le paramètre `p=`est utilisé sous sa forme restrictive pour illustrer le comportement d'un service e-mail dans ce cas de figure.
+> Dans nos 2 exemples, le paramètre `p=`est utilisé sous sa forme restrictive pour illustrer le comportement d'un service e-mail dans ce cas de figure.
 >
 > La configuration du paramètre `p=` peut avoir un impact important sur la délivrabilité des emails de votre nom de domaine. Il est conseillé de configurer `p=none` et effectuer une analyse des rapports d’échec pendant plusieurs semaines pour régler les éventuelles anomalies. Passer en `p=quarantine` ou `p=reject` nécessite une pleine maitrise des paramètres de sécurité e-mail, concernant le [SPF](/pages/web_cloud/domains/dns_zone_spf) et le [DKIM](/pages/web_cloud/domains/dns_zone_dkim). L’utilisation du facteur `pct=`, présenté en-dessous, permet une transition progressive.
 
