@@ -28,9 +28,9 @@ Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotom
 
 Tabela w tej sekcji zawiera wszystkie bazy danych utworzone w ramach Twojego hostingu.
 
-![databasecreation](images/database-creation-step1.png){.thumbnail}
+![databasecreation](images/manager-webcloud-webhosting-databases-dashboard.png){.thumbnail}
 
-W tabeli bazy danych mogą mieć kilka różnych statusów:
+W tabeli bazy danych mogą mieć kilka różnych Opcje:
 
 - **W pakiecie**: wskazuje, że baza danych jest zawarta w Twojej usłudze hostingu. Nie powoduje to dodatkowych kosztów.</br></br>
 - **Opcjonalnie**: wskazuje, że baza danych została wykupiona jako uzupełnienie baz danych zawartych w hostingu. Płacisz jedynie za dodatkową bazę danych na Twoim hostingu.</br></br>

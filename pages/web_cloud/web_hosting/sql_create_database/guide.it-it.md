@@ -28,9 +28,9 @@ Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanag
 
 La tabella di questa sezione contiene tutti i database creati con il tuo hosting Web.
 
-![databasecreation](images/database-creation-step1.png){.thumbnail}
+![databasecreation](images/manager-webcloud-webhosting-databases-dashboard.png){.thumbnail}
 
-Nella tabella, i database possono avere diversi stati:
+Nella tabella, i database possono avere diversi tipi:
 
 - **Inclusa**: indica che il database è incluso nella soluzione di hosting Web. Non comporta costi aggiuntivi.</br></br>
 - **Opzionale**: indica che il database è stato sottoscritto in aggiunta ai database inclusi con il tuo hosting Web. La disponibilità di questo database aggiuntivo sull’hosting Web è fatturata a un costo aggiuntivo.</br></br>

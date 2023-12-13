@@ -28,9 +28,9 @@ Conéctese a su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=g
 
 La tabla de esta sección contiene todas las bases de datos creadas con su alojamiento web.
 
-![databasecreation](images/database-creation-step1.png){.thumbnail}
+![databasecreation](images/manager-webcloud-webhosting-databases-dashboard.png){.thumbnail}
 
-En la tabla, las bases de datos pueden tener varios estados diferentes:
+En la tabla, las bases de datos pueden tener varios tipos diferentes:
 
 - **Incluida**: indica que la base de datos está incluida en el plan de hosting. No genera ningún coste adicional.</br></br>
 - **Opcional**: indica que la base de datos se ha contratado como complemento de las bases de datos incluidas con el alojamiento web. Pague un complemento para disponer de esta base de datos adicional en su alojamiento web.</br></br>

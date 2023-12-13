@@ -24,9 +24,9 @@ Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomana
 
 The table in this section contains all of the databases created with your web hosting plan.
 
-![databasecreation](images/database-creation-step1.png){.thumbnail}
+![databasecreation](images/manager-webcloud-webhosting-databases-dashboard.png){.thumbnail}
 
-Databases in the table can have several different statuses:
+Databases in the table can have several different types:
 
 - **Included** : Indicates that the database is included in your web hosting plan. There is no additional cost.</br></br>
 - **Optional** : Indicates that the database has been subscribed to in addition to the databases included with your web hosting plan. You pay an additional fee to have this additional database on your web hosting plan.</br></br>

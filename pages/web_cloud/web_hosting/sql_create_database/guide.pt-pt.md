@@ -28,9 +28,9 @@ Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanage
 
 A tabela desta secção contém todas as bases de dados criadas com o seu alojamento web.
 
-![databasecreation](images/database-creation-step1.png){.thumbnail}
+![databasecreation](images/manager-webcloud-webhosting-databases-dashboard.png){.thumbnail}
 
-Na tabela, as bases de dados podem ter vários estados diferentes:
+Na tabela, as bases de dados podem ter vários Status diferentes:
 
 - **Incluída**: indica que a base de dados está incluída na sua oferta de alojamento web. Não implica custos adicionais.</br></br>
 - **Opcional** : indica que a base de dados foi subscrita em complemento das bases de dados incluídas com o seu alojamento web. Paga um complemento para dispor desta base de dados suplementar no seu alojamento web.</br></br>
