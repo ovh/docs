@@ -46,55 +46,57 @@ L’ajout d’un compte peut s’initier de deux manières différentes **si auc
 > [!tabs]
 > **première configuration**
 >>
+>> | | |
 >> |---|---|
 >> |![mxplan](images/mxplan-android-first.png){.thumbnail}|Sélectionnez  `Ajouter une adresse e-mail`{.action}|
 >>
 > **configuration existante**
 >>
+>> | | |
 >> |---|---|
 >> |![mxplan](images/mxplan-android-existing.png){.thumbnail}|1. Dirigez-vous vers le menu burger dans la partie supérieure gauche de l'écran<br>2.Sélectionnez `Paramètres`{.action}<br>3.Sélectionnez `Ajouter un compte`{.action}|
 >>
-
 
 Suivez les étapes de configuration en parcourant les onglets ci-dessous :
 
 > [!tabs]
 > **Etape 1**
->>
+>> | | |
 >> |---|---|
 >> |![mxplan](images/mxplan-android-01.png){.thumbnail}|Dans le menu des types de comptes e-mail, sélectionnez `Autre`{.action}|
 >>
 > **Etape 2**
+>> | | |
 >> |---|---|
 >> |![mxplan](images/mxplan-android-02.png){.thumbnail}|Saisissez votre adresse e-mail|
 >>
 > **Etape 3**
->>
+>> | | |
 >> |---|---|
 >> |![mxplan](images/mxplan-android-03.png){.thumbnail}|Sélectionnez le protocole de réception des e-mails, il est conseillé de sélectionnez `Personnel (IMAP)`{.action}<br><br>Retrouvez [plus de détails sur les protocoles POP et IMAP](#popimap) à la fin de ce guides pour comprendre leurs différences|
 >>
 > **Etape 4**
->>
+>> | | |
 >> |---|---|
 >> |![mxplan](images/mxplan-android-04.png){.thumbnail}|Saisissez le mot de passe de votre adresse e-mail |
 >>
 > **Etape 5**
->>
+>> | | |
 >> |---|---|
 >> |![mxplan](images/mxplan-android-05.png){.thumbnail}|Complétez les « **Paramètres de serveur entrant** »<br>**Nom d'utilisateur** : Votre adresse e-mail complète<br>**Mot de passe** : Le mot de passe de votre adresse e-mail<br>=**Serveur** : saisissez **ssl0.ovh.net** |
 >>
 > **Etape 6**
->>
+>> | | |
 >> |---|---|
 >> |![mxplan](images/mxplan-android-06.png){.thumbnail}|Complétez les « **Paramètres de serveur sortant** »<br>**Nom d'utilisateur** : Votre adresse e-mail complète<br>**Mot de passe** : Le mot de passe de votre adresse e-mail<br>=**Serveur SMTP** : saisissez **ssl0.ovh.net** |
 >>
 > **Etape 7**
->>
+>> | | |
 >> |---|---|
 >> |![mxplan](images/mxplan-android-07.png){.thumbnail}|Choisissez la fréquence de synchronisation de vos e-mails selon vos préférences|
 >>
-> **Etape**
->>
+> **Etape 8**
+>> | | |
 >> |---|---|
 >> |![mxplan](images/mxplan-android-08.png){.thumbnail}|Déterminez le nom d'affichage de votre adresse e-mail dans l'application Gmail , puis appuyez sur `Suivante`{.action}|
 >>
