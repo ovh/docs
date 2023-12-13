@@ -1,7 +1,7 @@
 ---
 title: "Hosting WWW: moja baza danych jest przeciążona, co robić?"
 excerpt: "Dowiedz się, jak działać, gdy baza danych jest przeciążona"
-updated: 2023-11-30
+updated: 2023-12-13
 ---
 
 > [!primary]
