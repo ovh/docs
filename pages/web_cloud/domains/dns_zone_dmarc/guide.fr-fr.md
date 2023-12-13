@@ -60,7 +60,7 @@ Vous pouvez ajouter l'enregistrement DMARC à votre zone DNS depuis l'espace cli
 
 Une fois votre zone DNS affichée, cliquez sur le bouton `Ajouter une entrée`{.action} puis sur « Champs mails » `DMARC`{.action}.
 
-- **Sous-domaine** : cette entrée doit **obligatoirement débuter par** `_dmarc`. Si vous appliquez votre DMARC à l'ensemble du domaine vous n'inscrivez rien d'autre que `_dmarc` dans cette case. Si vous définissez votre DMARC à un sous-domaine de votre domaine principal, il faudra ajouter votre sous-domaine après `_dmarc`. Par exemple, si vous devez appliquer le DMARC à votre sous-domaine *subdomain.mydomain.ovh*, il faudra saisir `_dmarc.subdomain` dans la case sous-domaine pour le nom de domaine *mydomain.ovh*.
+- **Sous-domaine** : cette entrée doit **obligatoirement débuter par** `_dmarc`. Si vous appliquez votre DMARC à l'ensemble du domaine, n'inscrivez rien d'autre que `_dmarc` dans cette case. Si vous définissez votre DMARC à un sous-domaine de votre domaine principal, ajoutez votre sous-domaine après `_dmarc`. Par exemple, si on doit appliquer le DMARC à un sous-domaine *subdomain.mydomain.ovh*,  il faut saisir `_dmarc.subdomain` dans la case « sous-domaine » pour le nom de domaine *mydomain.ovh*.
 
 Vous trouverez ci-dessous le descriptif exhaustif des balises utilisées pour **l'enregistrement DMARC** OVHcloud :
 
