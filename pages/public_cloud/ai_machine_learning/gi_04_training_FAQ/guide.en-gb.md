@@ -126,13 +126,13 @@ Here are the most frequently asked questions about `ovhai` CLI & OVHcloud AI Sol
 > >
 > > Concerning jobs and apps, you can map them to only one port. Each of these has a public URL. By default, this URL accesses the port 8080 of your job or app. This default port can be configured when you submit your job or your app.
 > >
-> > As for AI Notebooks, you can also access other ports by appending them to the URL. For example, your default Job URL, starting with the job's ID and which accesses the default port is `https://00000000-0000-0000-0000-000000000000.job.gra.ai.cloud.ovh.net`. If you want to access the port 9000, you will have to append the port number to your job's URL: `https://00000000-0000-0000-0000-000000000000-9000.job.gra.ai.cloud.ovh.net`
+> > As for AI Notebooks, you can also access other ports by appending them to the URL. For example, your default Job URL, starting with the job's ID and which accesses the default port is `https://00000000-0000-0000-0000-000000000000.job.gra.ai.cloud.ovh.net`. If you want to access the port 9000, you will have to append the port number to your job's URL, after the job's unique ID: `https://00000000-0000-0000-0000-000000000000-9000.job.gra.ai.cloud.ovh.net`
 > > 
-> > The same applies to AI Deploy, where another app port can be accessed even after the app has been launched.
+> > The same applies to AI Deploy apps, where another app port can be accessed even after the app has been launched.
 > >
 > Do AI solutions allow the use of the gRPC protocol?
 > > Although not available with AI Notebooks, you can use gRPC on your AI Training jobs and AI Deploy apps. 
-> > To do this, specify a port when you launch your AI Task with the CLI, by using the `--grpc-port <GRPC_PORT>` attribute. You will then get your `Grpc Address` in your task info.
+> > To do this, specify a port when you launch your AI Task with the CLI, by using the `--grpc-port <GRPC_PORT>` attribute. You will then get your `gRPC Address` in your task info.
 > >
 > Is it possible to utilize TensorBoard within my AI Tool?
 > > Yes, you can use the TensorBoard visualization tool. To find out how with AI Notebooks, check this [tutorial](https://github.com/ovh/ai-training-examples/blob/main/notebooks/computer-vision/image-classification/tensorflow/tensorboard/notebook_tutorial_tensorboard.ipynb). For AI Training, refer to this [documentation](/pages/public_cloud/ai_machine_learning/training_tuto_05_tensorboard).
