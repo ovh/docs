@@ -1,7 +1,7 @@
 ---
 title: Korzystanie z Replikacji Zerto Virtual między dwoma centrami danych OVHcloud
 excerpt: Dowiedz się, jak skonfigurować Zerto Virtual Replication w planie awaryjnym w dwóch ofertach Private Cloud
-updated: 2022-02-11
+updated: 2023-10-23
 ---
 
 > [!primary]
@@ -308,6 +308,8 @@ W razie poważnego zdarzenia w lokalizacji głównej lub podczas testu w warunka
 > [!warning]
 >
 > Failover w trybie **LIVE** w Zerto Replication odbywa się po uznaniu lokalizacji głównej za niedostępną, dlatego konieczne jest zwrócenie uwagi na konfigurację sieci w celu uniknięcia konfliktu adresowania IP.
+>
+> Ponadto, jeśli dwie infrastruktury Hosted Private Cloud znajdują się w dwóch różnych krajach, nie ma możliwości przeniesienia bloku IP z jednej infrastruktury Private Cloud do innej.
 >
 > Wszelkie zasoby, które zostaną uruchomione w lokalizacji dodatkowej, staną się aktywne na poziomie przetwarzania danych.
 >

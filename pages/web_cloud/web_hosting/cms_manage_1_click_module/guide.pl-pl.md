@@ -1,6 +1,6 @@
 ---
-title: Jak zarządzać modułem za 1 kliknięciem?
-excerpt: Dowiedz się, jak zarządzać modułem za pomocą 1 kliknięcia w Panelu klienta OVHcloud
+title: "Jak zarządzać modułem za 1 kliknięciem?"
+excerpt: "Dowiedz się, jak zarządzać modułem za pomocą 1 kliknięcia w Panelu klienta OVHcloud"
 updated: 2022-09-05
 ---
 
@@ -138,7 +138,7 @@ Następnie kliknij przycisk `...`{.action} znajdujący się po prawej stronie li
 
 > [!warning]
 >
-> Usunięcie modułu 1 kliknięcia **nie spowoduje automatycznego usunięcia bazy danych**. Jeśli uruchomisz instalację nowego CMS bez wcześniejszego usunięcia bazy danych (a Twój hosting nie pozwala na automatyczne utworzenie nowej bazy), w Panelu klienta wyświetli się komunikat "[Wystąpił błąd podczas pobierania informacji (You need at least one free database)](/pages/web/hosting/diagnostic_errors_module1clic#wystapil-blad-podczas-pobierania-informacji-you-need-at-least-one-free-database)".
+> Usunięcie modułu 1 kliknięcia **nie spowoduje automatycznego usunięcia bazy danych**. Jeśli uruchomisz instalację nowego CMS bez wcześniejszego usunięcia bazy danych (a Twój hosting nie pozwala na automatyczne utworzenie nowej bazy), w Panelu klienta wyświetli się komunikat "[Wystąpił błąd podczas pobierania informacji (You need at least one free database)](/pages/web_cloud/web_hosting/diagnostic_errors_module1clic#wystapil-blad-podczas-pobierania-informacji-you-need-at-least-one-free-database)".
 >
 > Jeśli posiadasz hosting [Perso](https://www.ovhcloud.com/pl/web-hosting/personal-offer/) lub utworzyłeś już cztery bazy danych na hostingu [Hosting Pro](https://www.ovhcloud.com/pl/web-hosting/professional-offer/) lub [Hosting Performance](https://www.ovhcloud.com/pl/web-hosting/performance-offer/), usuń bazę danych zidentyfikowaną w [etapie 1](#step1) **PRZEDADP**, aby utworzyć nowy moduł za pomocą 1 kliknięcia.
 >

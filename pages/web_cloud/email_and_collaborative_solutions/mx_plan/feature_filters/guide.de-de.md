@@ -1,6 +1,5 @@
 ---
 title: Filter für Ihre E-Mail-Adressen erstellen
-legacy_guide_number: 1973
 excerpt: Erfahren Sie hier, wie Sie Filterregeln für Ihre E-Mail-Adresse erstellen und konfigurieren
 updated: 2021-09-27
 ---
@@ -102,6 +101,10 @@ Sie können zwischen diesen Arten von Aktionen wählen:
 ### Beispiele
 
 #### Spam löschen
+
+> [!warning]
+>
+> Das Beispiel bezieht sich auf den Vermerk [SPAM] im Betreff einer E-Mail. Er wird hinzugefügt, wenn vom Antispam-Programm des Empfangsservers als unerwünscht eingestufte E-Mails im Posteingang abgelegt werden. Dies gilt für den MX Plan in der Version *Legacy*.
 
 ||Header|Regel|Wert|Aktion|
 |---|---|---|---|---|

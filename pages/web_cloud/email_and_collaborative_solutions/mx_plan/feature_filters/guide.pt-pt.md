@@ -1,6 +1,5 @@
 ---
 title: Criar filtros para os seus endereços de e-mail
-legacy_guide_number: 1973
 excerpt: Saiba como criar e configurar um filtro no seu endereço de e-mail
 updated: 2021-09-27
 ---
@@ -71,14 +70,14 @@ Primeira escolha (em cabeçalho):
 
 - **De:** designa o endereço de e-mail do remetente, por exemplo: "Se o expedidor ..."
 - **A:** designa o endereço de e-mail do destinatário, por exemplo: "Se o destinatário ..."
-- **Assumpto da mensagem:** significa o conteúdo do assumpto da mensagem, por exemplo: "Se o assumpto da mensagem ... ".
-- **Outra:** indique outro elemento no cabeçalho do e-mail.
+- **Assumpto da mensagem:** significa o conteúdo do assumpto da mensagem, por exemplo: "Se o assumpto da mensagem ... "
+- **Outra:** indique outro elemento no cabeçalho do e-mail
 
 Segunda escolha (regra):
 
-- **spf:** Indique um valor do [registo SPF](/pages/web_cloud/domains/dns_zone_spf) a ter em conta, por exemplo: ".. sem registo SPF ... ".
-- **contém:** exemplo: "... contém ... ".
-- **não contém:** exemplo: "... não contém ... ".
+- **spf:** Indique um valor do [registo SPF](/pages/web_cloud/domains/dns_zone_spf) a ter em conta, por exemplo: ".. sem registo SPF ... "
+- **contém:** exemplo: "... contém ..."
+- **não contém:** exemplo: "... não contém ..."
 
 Terceira escolha (valor):
 
@@ -102,6 +101,10 @@ Pode escolher entre:
 ### Exemplos de filtros
 
 #### Eliminar spams
+
+> [!warning]
+>
+> Neste exemplo, introduzimos [SPAM] no assumpto do e-mail. Esta indicação é apresentada quando o serviço de receção de correio eletrónico anti-spam entrega o correio eletrónico indesejado, o qual é considerado indesejado, diretamente na pasta A receber. Como é o caso da versão antiga da oferta MX Plan.
 
 ||Cabeçalho|Règle|Valor|Cenários|
 |---|---|---|---|---|

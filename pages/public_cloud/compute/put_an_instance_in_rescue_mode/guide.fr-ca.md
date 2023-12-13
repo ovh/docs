@@ -1,7 +1,6 @@
 ---
 title: 'Passer une instance en mode rescue'
 excerpt: 'Ce guide vous explique comment activer le mode rescue pour votre instance Public Cloud'
-legacy_guide_number: 2029
 updated: 2023-01-04
 ---
 

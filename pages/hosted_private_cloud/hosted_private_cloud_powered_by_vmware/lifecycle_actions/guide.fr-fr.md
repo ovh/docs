@@ -1,6 +1,6 @@
 ---
-title: "Cycle de vie du Hosted Private Cloud powered by VMware - Déterminer les actions à entreprendre"
-excerpt: Découvrez les actions à mener sur votre offre Hosted Private Cloud powered by VMware, en fonction de ses caractéristiques
+title: "Cycle de vie du VMware on OVHcloud - Déterminer les actions à entreprendre"
+excerpt: Découvrez les actions à mener sur votre offre VMware on OVHcloud, en fonction de ses caractéristiques
 updated: 2022-12-27
 ---
 
@@ -16,11 +16,11 @@ Dans ce guide, nous détaillons les actions à mener pour les sujets en cours :
 - Version de vSphere antérieure à vCSA 7.0 (build 20845200)
 - Version de NSX-v antérieure à 6.4.14
 
-**Découvrez les actions à mener sur votre offre Hosted Private Cloud powered by VMware, en fonction de ses caractéristiques.**
+**Découvrez les actions à mener sur votre offre VMware on OVHcloud, en fonction de ses caractéristiques.**
 
 ## Prérequis
 
-- Posséder une offre [Hosted Private Cloud powered by VMware](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/){.external}.
+- Posséder une offre [VMware on OVHcloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/){.external}.
 - Être connecté à [l'espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 - Être connecté aux [API OVHCloud](https://api.ovh.com/){.external}. Au besoin, consultez le guide « [Premiers pas avec les API OVHcloud](/pages/manage_and_operate/api/first-steps) ».
 - Avoir [créé ses identifiants pour l'API OVHCloud](/pages/manage_and_operate/api/first-steps){.external}.
@@ -39,7 +39,7 @@ Exécutez l'appel suivant :
 
 > [!api]
 >
-> @api {GET} /dedicatedCloud
+> @api {v1} /dedicatedCloud GET /dedicatedCloud
 >
 
 Vous obtiendrez la liste de vos services, prenez note des **serviceName** obtenus.
@@ -50,7 +50,7 @@ Exécutez l'appel suivant :
 
 > [!api]
 >
-> @api {GET} /dedicatedCloud/{serviceName}/datacenter
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/datacenter
 >
 
 Renseignez les champs de l'appel avec les informations suivantes :
@@ -65,7 +65,7 @@ Exécutez l'appel suivant :
 
 > [!api]
 >
-> @api {GET} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/filer
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/filer
 >
 
 Renseignez les champs de l'appel avec les informations suivantes :
@@ -81,7 +81,7 @@ Exécutez l'appel suivant :
 
 > [!api]
 >
-> @api {GET} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/host
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/host
 >
 
 Renseignez les champs de l'appel avec les informations suivantes :
@@ -108,7 +108,7 @@ Exécutez l'appel suivant :
 
 > [!api]
 >
-> @api {GET}  /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/filer/{filerId}/location
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/filer/{filerId}/location
 >
 
 Renseignez les champs de l'appel avec les informations suivantes :
@@ -131,7 +131,7 @@ Exécutez l'appel suivant :
 
 > [!api]
 >
-> @api {GET} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/filer/{filerId}
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/filer/{filerId}
 >
 
 Renseignez les champs de l'appel avec les informations suivantes :
@@ -158,7 +158,7 @@ Exécutez l'appel suivant :
 
 > [!api]
 >
-> @api {GET} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/filer/{filerId}
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/filer/{filerId}
 >
 
 Renseignez les champs de l'appel avec les informations suivantes :

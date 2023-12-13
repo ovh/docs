@@ -50,7 +50,7 @@ A forma mais segura de recuperar as informações de rede do seu servidor é [ut
 
 > [!api]
 >
-> @api {GET} /dedicated/server/{serviceName}/specifications/network
+> @api {v1} /dedicated/server GET /dedicated/server/{serviceName}/specifications/network
 
 > [!warning]
 > 
@@ -78,7 +78,7 @@ Neste caso, a gateway IPv6 predefinida pode ser escrita do seguinte modo: `fe80:
 
 #### Passo 1: Usar o SSH para se conectar ao servidor
 
-[Encontre mais informações neste guia.](/pages/cloud/dedicated/getting-started-with-dedicated-server#ligar-se-ao-servidor/)
+[Encontre mais informações neste guia.](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server#ligar-se-ao-servidor/)
 
 #### Passo 2: Abrir o ficheiro de configuração da rede do servidor
 
@@ -133,7 +133,7 @@ Se não conseguir que este endereço IPv6 faça ping, verifique a configuração
 
 #### Passo 1: Usar o SSH para se conectar ao servidor
 
-[Encontre mais informações neste guia.](/pages/cloud/dedicated/getting-started-with-dedicated-server#ligar-se-ao-servidor)
+[Encontre mais informações neste guia.](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server#ligar-se-ao-servidor)
 
 #### Passo 2: Abrir o ficheiro de configuração da rede do servidor
 
@@ -182,7 +182,7 @@ Se não conseguir que este endereço IPv6 faça ping, verifique a configuração
 
 #### Passo 1: Usar o SSH para se conectar ao servidor
 
-[Encontre mais informações neste guia.](/pages/cloud/dedicated/getting-started-with-dedicated-server#ligar-se-ao-servidor)
+[Encontre mais informações neste guia.](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server#ligar-se-ao-servidor)
 
 #### Passo 2: Abrir o ficheiro de configuração da rede do servidor
 
@@ -228,7 +228,7 @@ Se não conseguir que este endereço IPv6 faça ping, verifique a configuração
 
 #### Passo 1: Usar o SSH para se conectar ao servidor
 
-[Encontre mais informações neste guia.](/pages/cloud/dedicated/getting-started-with-dedicated-server#ligar-se-ao-servidor)
+[Encontre mais informações neste guia.](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server#ligar-se-ao-servidor)
 
 #### Passo 2: Abrir o ficheiro de configuração da rede do servidor
 
@@ -320,7 +320,7 @@ PING 2001:4860:4860::8888(2001:4860:4860::8888) 56 data bytes
 
 #### Passo 1: Usar o RDP para se conectar ao servidor
 
-[Encontre mais informações neste guia.](/pages/cloud/dedicated/getting-started-with-dedicated-server#ligar-se-ao-servidor)
+[Encontre mais informações neste guia.](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server#ligar-se-ao-servidor)
 
 #### Passo 2: Abrir a configuração da rede do servidor
 

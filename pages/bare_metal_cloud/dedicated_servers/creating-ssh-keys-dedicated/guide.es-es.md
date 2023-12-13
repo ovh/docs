@@ -1,7 +1,7 @@
 ---
 title: Crear y utilizar llaves SSH
 excerpt: Cómo crear una llave SSH para realizar una conexión segura a un servidor
-updated: 2023-07-24
+updated: 2023-11-22
 ---
 
 > [!primary]
@@ -199,6 +199,46 @@ Para más información sobre las conexiones SSH, consulte las guías de [primero
 
 ### Añadir llaves SSH a su servidor <a name="addserverkey"></a>
 
+#### Transferencia de claves públicas creadas en sistemas basados en GNU/Linux, MacOS o BSD
+
+Si ha creado sus pares de claves SSH en un sistema basado en GNU/Linux, MacOS o BSD, puede utilizar el comando `ssh-copy-id` para añadir las claves públicas a su servidor.
+
+La utilidad `ssh-copy-id` copia las claves públicas en el archivo `~/.ssh/authorized_keys` en el servidor remoto especificado y crea automáticamente el archivo en este directorio si es necesario.
+
+```bash
+ssh-copy-id user@IP_ADDRESS
+```
+
+De forma predeterminada, `ssh-copy-id` intentará transferir todas las claves públicas al directorio `~/.ssh` del usuario local. Sin embargo, si sólo necesita agregar una clave pública, puede especificar este archivo de clave con la opción `-i` seguida de la ruta del archivo:
+
+```bash
+ssh-copy-id -i ~/.ssh/KeyFileName user@IP_ADDRESS
+```
+
+Por ejemplo:
+
+```bash
+ssh-copy-id -i ~/.ssh/VPS_rsa.pub ubuntu@169.254.10.250
+```
+
+Se le pedirá la contraseña del usuario. Recibirá un mensaje como el que se muestra a continuación.
+
+```console
+Number of key(s) added: 1
+
+Now try logging into the machine, with:   "ssh 'user@server-ip'"
+and check to make sure that only the key(s) you wanted were added.
+```
+
+Si aparece un mensaje de error, puede agregar las claves públicas manualmente siguiendo los pasos que se indican a continuación.
+
+> [!primary]
+>
+> Como práctica recomendada y por motivos de seguridad, varios usuarios no deben utilizar un único par de claves. Dado que cada usuario en sistemas GNU/Linux tiene su propio archivo `authorized_keys` en `~/.ssh/`, puede utilizar el comando `ssh-copy-id` como se muestra anteriormente y adaptar `KeyFileName` y `user` después de haber [creado el par de claves](#openssh).
+>
+
+#### Adición manual de claves públicas a un servidor
+
 [Conéctese](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction) a su servidor y asegúrese de que se encuentra en el directorio `$HOME` de su usuario. Si aún no existe, cree la carpeta `.ssh`:
 
 ```bash
@@ -211,7 +251,7 @@ Para almacenar la clave para el usuario actual, abra (o cree) el archivo `author
 nano ~/.ssh/authorized_keys
 ```
 
-Pegue su [clave pública](#publickey) en este archivo. Guarde el archivo y salga del editor. Reinicie el servidor o reinicie únicamente el servicio OpenSSH con uno de los siguientes comandos (el comando adecuado puede variar en función del sistema operativo):
+Pegue su [clave pública](#publickey) en este archivo. Guarde el archivo y salga del editor. Reinicie el servidor (`sudo reboot`) o reinicie únicamente el servicio OpenSSH con uno de los siguientes comandos (el comando adecuado puede variar en función del sistema operativo):
 
 ```bash
 sudo systemctl restart ssh
@@ -301,7 +341,7 @@ A continuación, podrá conectarse al VPS con el nombre de alias que haya defini
 ssh ubuntu@vps
 ```
 
-En el ejemplo anterior sólo se especificaron la IP del servidor y el archivo de clave, pero se pueden agregar más detalles. Para configurar una conexión SSH a un segundo servidor con el nombre de usuario «rocky», el [puerto SSH modificado](/pages/cloud/vps/secure_your_vps#changesshport) «49160» y la clave privada en el archivo «myserver_rsa», extienda el contenido del archivo como se muestra en este ejemplo:
+En el ejemplo anterior sólo se especificaron la IP del servidor y el archivo de clave, pero se pueden agregar más detalles. Para configurar una conexión SSH a un segundo servidor con el nombre de usuario «rocky», el [puerto SSH modificado](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps#changesshport) «49160» y la clave privada en el archivo «myserver_rsa», extienda el contenido del archivo como se muestra en este ejemplo:
 
 ```console
 Host vps

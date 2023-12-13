@@ -30,7 +30,7 @@ Este tutorial vai permitir-lhe criar os seus primeiros conteúdos, organizá-los
 
 ## Instruções
 
-Se ainda não o fez, e antes de continuar, [adicione um certificado SSL](/pages/web/hosting/ssl-activate-https-website#1-ativar-o-certificado-ssl-no-alojamento) no domínio associado ao seu website.
+Se ainda não o fez, e antes de continuar, [adicione um certificado SSL](/pages/web_cloud/web_hosting/ssl-activate-https-website#1-ativar-o-certificado-ssl-no-alojamento) no domínio associado ao seu website.
 
 Aquando da instalação do seu CMS em 1 clique, recebeu um e-mail com os elementos necessários para a prossecução deste tutorial:
 

@@ -13,7 +13,7 @@ updated: 2023-03-02
 
 ## Objective
 
-Some storages will no longer be available at the end of March 2023 as they will no longer be maintained, as described in this guide: [Life cycle of Hosted Private Cloud powered by VMware](/pages/cloud/private-cloud/lifecycle_policy#datastores-stockage).
+Some storages will no longer be available at the end of March 2023 as they will no longer be maintained, as described in this guide: [Life cycle of VMware on OVHcloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/lifecycle_policy#datastores-stockage).
 
 We will go through all the steps to migrate your data to more recent storage and disable your obsolete storage.
 
@@ -39,7 +39,7 @@ Click on the `storage`{.action} icon, select your Datastore in `Shared Storage`{
 
 ![01 check existing VM on datastore 01](images/01-check-existing-vm-on-datastore01.png){.thumbnail}
 
-Right-click each of the virtual machines that are on this datastore, choose `Migrate`{.action} and use the [VMware Storage vMotion](/pages/cloud/private-cloud/vmware_storage_vmotion#finalising-the-operation) guide to migrate to a more recent datastore.
+Right-click each of the virtual machines that are on this datastore, choose `Migrate`{.action} and use the [VMware Storage vMotion](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_storage_vmotion#finalising-the-operation) guide to migrate to a more recent datastore.
 
 ![01 check existing VM on datastore 02](images/01-check-existing-vm-on-datastore02.png){.thumbnail}
 

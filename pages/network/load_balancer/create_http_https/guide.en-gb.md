@@ -1,7 +1,7 @@
 ---
 title: 'Configuring a HTTP/HTTPS OVH Load Balancer service'
 excerpt: 'Find out how to configure an OVH Load Balancer service'
-updated: 2020-09-30
+updated: 2023-11-22
 ---
 
 ## Objective
@@ -48,7 +48,7 @@ Similarly, this can be done via the OVHcloud API, in the section:
 
 > [!api]
 >
-> @api {GET} /ipLoadbalancing
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing
 > 
 
 For more information on the API’s features, you can consult [the following guide in French](/pages/network/load_balancer/use_api_reference).
@@ -79,35 +79,35 @@ Your server farm should appear in the list, in the `Server farms`{.action} tab.
 
 > [!api]
 >
-> @api {GET} /ipLoadbalancing/{serviceName}/http/farm
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/http/farm
 > 
 
 - Details of a specific HTTP server:
 
 > [!api]
 >
-> @api {GET} /ipLoadbalancing/{serviceName}/http/farm/{farmId}
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/http/farm/{farmId}
 > 
 
 - Add a new HTTP server farm:
 
 > [!api]
 >
-> @api {POST} /ipLoadbalancing/{serviceName}/http/farm
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/http/farm
 > 
 
 - Modify a specific server farm:
 
 > [!api]
 >
-> @api {PUT} /ipLoadbalancing/{serviceName}/http/farm/{farmId}
+> @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/http/farm/{farmId}
 > 
 
 - Delete a specific server farm:
 
 > [!api]
 >
-> @api {DELETE} /ipLoadbalancing/{serviceName}/http/farm/{farmId}
+> @api {v1} /ipLoadbalancing DELETE /ipLoadbalancing/{serviceName}/http/farm/{farmId}
 > 
 
 ## Add a server.
@@ -134,35 +134,35 @@ Your server should appear in the server list, in the `Server farm`{.action} tab,
 
 > [!api]
 >
-> @api {GET} /ipLoadbalancing/{serviceName}/http/farm/{farmId}/server
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/http/farm/{farmId}/server
 > 
 
 - Details of a specific server:
 
 > [!api]
 >
-> @api {GET} /ipLoadbalancing/{serviceName}/http/farm/{farmId}/server/{serverId}
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/http/farm/{farmId}/server/{serverId}
 > 
 
 - Add a new server:
 
 > [!api]
 >
-> @api {POST} /ipLoadbalancing/{serviceName}/http/farm/{farmId}/server
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/http/farm/{farmId}/server
 > 
 
 - Modify a specific server:
 
 > [!api]
 >
-> @api {PUT} /ipLoadbalancing/{serviceName}/http/farm/{farmId}/server
+> @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/http/farm/{farmId}/server
 > 
 
 - Delete a specific server:
 
 > [!api]
 >
-> @api {DELETE} /ipLoadbalancing/{serviceName}/http/farm/{farmId}/server
+> @api {v1} /ipLoadbalancing DELETE /ipLoadbalancing/{serviceName}/http/farm/{farmId}/server
 > 
 
 ## Add a front-end.
@@ -191,35 +191,35 @@ Your front-end must appear in the list, in the `Front-ends`{.action} tab.
 
 > [!api]
 >
-> @api {GET} /ipLoadbalancing/{serviceName}/http/frontend
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/http/frontend
 > 
 
 - Details of a specific front-end:
 
 > [!api]
 >
-> @api {GET} /ipLoadbalancing/{serviceName}/http/frontend/{frontendId}
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/http/frontend/{frontendId}
 > 
 
 - Add a new front-end:
 
 > [!api]
 >
-> @api {POST} /ipLoadbalancing/{serviceName}/http/frontend
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/http/frontend
 > 
 
 - Modify a specific front-end:
 
 > [!api]
 >
-> @api {PUT} /ipLoadbalancing/{serviceName}/http/frontend/{frontendId}
+> @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/http/frontend/{frontendId}
 > 
 
 - Delete a specific front-end:
 
 > [!api]
 >
-> @api {DELETE} /ipLoadbalancing/{serviceName}/http/frontend/{frontendId}
+> @api {v1} /ipLoadbalancing DELETE /ipLoadbalancing/{serviceName}/http/frontend/{frontendId}
 > 
 
 ## Add an SSL/TLS certificate.
@@ -244,6 +244,15 @@ If you opt for a certificate managed by the OVHcloud Load Balancer service, it w
 > 
 
 The certificates configured on your OVHcloud Load Balancer service are automatically available for all of the front-ends on your service that have *SSL* options enabled.
+
+#### TLS 1.3 support
+With the constant evolution of Internet security standards, OVHcloud is committed to providing the latest and most secure technologies for your services. The OVHcloud Load Balancer now supports TLS 1.3.
+
+##### What is TLS 1.3?
+TLS 1.3 is the latest version of the TLS protocol, offering significant improvements in security and performance over TLS 1.2. Key benefits include a faster handshake process, reducing the time needed to establish secure connections, and the use of more secure cipher suites to strengthen the security of transmitted data.
+
+##### Why use TLS 1.3 with OVHcloud Load Balancer?
+By integrating TLS 1.3, your OVHcloud Load Balancer will benefit from enhanced security and improved performance, ensuring an optimal user experience for your visitors. Reduced handshake times speed up page loading, while security enhancements ensure that your data is protected with the latest, most secure standards.
 
 ### Via the Sunrise Control Panel.
 
@@ -274,35 +283,35 @@ Once your certificates have been configured, you can create a HTTPS front-end, o
 
 > [!api]
 >
-> @api {GET} /ipLoadbalancing/{serviceName}/ssl
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/ssl
 > 
 
 - To view details on an SSL/TLS certificate:
 
 > [!api]
 >
-> @api {GET} /ipLoadbalancing/{serviceName}/ssl/{id}
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/ssl/{id}
 > 
 
 - To add a new, existing SSL/TLS certificate:
 
 > [!api]
 >
-> @api {POST} /ipLoadbalancing/{serviceName}/ssl
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/ssl
 > 
 
 - To modify a specific SSL/TLS certificate (only the display name can be modified):
 
 > [!api]
 >
-> @api {PUT} /ipLoadbalancing/{serviceName}/ssl/{id}
+> @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/ssl/{id}
 > 
 
 - To delete a specific SSL/TLS certificate:
 
 > [!api]
 >
-> @api {DELETE} /ipLoadbalancing/{serviceName}/ssl/{id}
+> @api {v1} /ipLoadbalancing DELETE /ipLoadbalancing/{serviceName}/ssl/{id}
 > 
 
 ## Apply the modifications
@@ -327,7 +336,7 @@ Next, select the zones you want to deploy, and click `Apply configuration`{.acti
 
 > [!api]
 >
-> @api {POST} /ipLoadbalancing/{serviceName}/refresh
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/refresh
 > 
 
 ## Confirmation

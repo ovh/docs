@@ -1,8 +1,11 @@
 ---
 title: Data Integration - CLI - Installation
 excerpt: Learn how to install the Data Integration CLI
-updated: 2023-07-07
+updated: 2023-09-04
 ---
+
+> [!primary]
+> The Data Integration product is in `beta`. During the beta-testing phase, the infrastructure’s availability and performances are not guaranteed. Please do not use this service for applications that are in production while this phase is not finished.
 
 ## Objective
 
@@ -49,7 +52,7 @@ Here is an example for `bash` though other shells are supported:
 
 ``` {.console}
 ovhdata-cli completion bash > ~/ovhdata-cli-completion.sh
-echo 'source ~/ovhdata-cli-completion.sh' > ~/.bashrc
+echo 'source ~/ovhdata-cli-completion.sh' >> ~/.bashrc
 source ~/.bashrc
 ```
 

@@ -1,8 +1,7 @@
 ---
 title: 'Pierwsze kroki z usługą MX Plan'
 excerpt: 'Dowiedz się, jak rozpocząć korzystanie z usługi MX Plan'
-legacy_guide_number: g1474
-updated: 2021-07-19
+updated: 2023-11-15
 ---
 
 > [!primary]
@@ -120,9 +119,9 @@ W tym celu należy utworzyć przekierowanie.
 
 Możesz to zrobić na dwa sposoby:
 
-- utworzyć przekierowanie w interfejsie webmail zgodnie z regułami skrzynki odbiorczej. W tym celu zapoznaj się z naszym przewodnikiem [Reguły skrzynki odbiorczej w interfejsie OWA](/pages/web/emails/creating-inbox-rules-in-owa-mx-plan#przyklad-1-przekierowanie-e-maili-na-inny-adres).
+- utworzyć przekierowanie w interfejsie webmail zgodnie z regułami skrzynki odbiorczej. W tym celu zapoznaj się z naszym przewodnikiem [Reguły skrzynki odbiorczej w interfejsie OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/creating-inbox-rules-in-owa-mx-plan#przyklad-1-przekierowanie-e-maili-na-inny-adres).
 
-- utworzyć przekierowanie w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Metoda ta pozwala na przykład na utworzenie aliasu, czyli przekierowanie nieistniejącego konta e-mail na istniejący adres e-mail. W tym celu zapoznaj się z naszym przewodnikiem [Korzystanie z przekierowań e-mail](/pages/web/emails/feature_redirections#nowa-wersja-uslugi-mx-plan).
+- utworzyć przekierowanie w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Metoda ta pozwala na przykład na utworzenie aliasu, czyli przekierowanie nieistniejącego konta e-mail na istniejący adres e-mail. W tym celu zapoznaj się z naszym przewodnikiem [Korzystanie z przekierowań e-mail](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections#nowa-wersja-uslugi-mx-plan).
 
 ##### **Autoresponder**
 
@@ -223,7 +222,7 @@ Poniżej znajdziesz elementy potrzebne do konfiguracji Twojego konta e-mail:
 
 Chcesz przekierować Twoje e-maile na innego adresata, utworzyć alias lub systematycznie utworzyć kopię innego konta e-mail.
 
-W tym celu należy utworzyć przekierowanie. Zapraszamy do zapoznania się z naszym przewodnikiem [Korzystanie z przekierowań e-mail](/pages/web/emails/feature_redirections#poprzednia-wersja-uslugi-mx-plan).
+W tym celu należy utworzyć przekierowanie. Zapraszamy do zapoznania się z naszym przewodnikiem [Korzystanie z przekierowań e-mail](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections#poprzednia-wersja-uslugi-mx-plan).
 
 ##### **Autoresponder**
 
@@ -244,8 +243,6 @@ Chcesz regularnie wysyłać newsletter do swoich kontaktów.
 W tym celu możesz utworzyć listę mailingową. Zapraszamy do zapoznania się z naszym przewodnikiem [Zarządzanie listami mailingowymi](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_mailing_list) i korzystanie z nich.
 
 ## Sprawdź również
-
-Trwa migracja historycznych ofert MX Plan do nowych ofert MX Plan. Jeśli chcesz najpierw poprosić o migrację Twojej oferty, zapoznaj się z informacjami na [tej stronie](https://www.ovh.pl/mxplan-migration/#accordion_6001-4).
 
 Jeśli Twoje potrzeby się zmienią i chcesz korzystać z dodatkowych funkcji, możesz również [przenieść adres e-mail MX Plan na konto E-mail Pro lub Exchange](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel).
 

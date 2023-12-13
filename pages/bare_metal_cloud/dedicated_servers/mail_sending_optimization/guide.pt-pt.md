@@ -62,13 +62,13 @@ Sempre com o objetivo de otimizar o envio e de reduzir os riscos de bloqueio dos
 
 Em primeiro lugar, deve criar um registo A na zona DNS do seu domínio com o endereço IP do seu servidor como alvo.
 
-Se os seus servidores DNS são geridos pela OVHcloud, consulte este [guia](/pages/web/domains/dns_zone_edit#aceder-a-gestao-de-uma-zona-dns-da-ovhcloud).
+Se os seus servidores DNS são geridos pela OVHcloud, consulte este [guia](/pages/web_cloud/domains/dns_zone_edit#aceder-a-gestao-de-uma-zona-dns-da-ovhcloud).
 
 Depois de alterar a zona DNS do domínio, é necessário aguardar 24 horas até que as alterações sejam efetivas.
 
 Depois de fazer isso, adicione o registo PTR (também conhecido como reverse):
 
-Na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, aceda ao separador `Bare Metal Cloud`{.action} e abra `IP`{.action}. 
+Na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, aceda à secção `Bare Metal Cloud`{.action} e abra `Network`{.action}. De seguida, clique em `IP`{.action}. 
 
 Se deseja configurar a Reverse DNS num endereço Additional IP, clique no separador `Additional IP`{.action}.
 

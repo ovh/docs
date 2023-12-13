@@ -1,7 +1,7 @@
 ---
 title: OVHcloud account management FAQ
 excerpt: Find the most frequently asked questions about managing your OVHcloud account
-updated: 2022-11-21
+updated: 2023-09-28
 ---
 
 ## Objective
@@ -60,6 +60,23 @@ Go to the OVHcloud Control Panel login page, and click “Forgotten your usernam
 If you can no longer access the contact email address, please follow this [procedure](https://www.ovh.com/asia/support/procedures/).
 If you have forgotten your username, you can find it in the top right-hand corner of your last invoice. It is sometimes referred to as a NIC handle, and resembles the following: “ab00001-ovh”. (the first letters are normally the initials of the person who created the account). This username is also provided in the confirmation email when you create your account, as well as in emails confirming or renewing an order.
 
+### As a customer in India, what would happen if I don't complete the Know Your Customer (KYC) procedure?
+
+If you don't fully complete the KYC procedure, you won't be able to order any OVHcloud product.<br>
+As a reminder, you must provide us with the following information:
+
+- A proof of identification among the following:
+    - Passport
+    - Driving license
+    - Proof of possession of Aadhaar number
+    - The voter's Identity Card issued by the Election Commission of India
+    - Job card issued by NREGA duly signed by an officer of the State Government
+    - Letter issued by the National Population Register containing details of name and address
+- A business activity proof among the following:
+    - GST Certification
+    - [Permanent Account Number (PAN)](https://www.incometaxindia.gov.in/tutorials/1.permanent%20account%20number%20(pan).pdf)
+- A proof of address for your company or structure
+
 ### How do I change contacts?
 
 You can delegate the administrative, technical and billing management of your services to other OVHcloud customer accounts from the OVHcloud Control Panel. To do this, go to the “Contact management” section, accessible from the banner on the right.
@@ -72,7 +89,7 @@ If you would like to retrieve a domain name that you are the registered owner of
 
 #### Tips and tricks
 
-A full contact management guide is available here: [/pages/account/customer/managing_contacts#access-contact-management](/pages/account/customer/managing_contacts#access-contact-management)
+A full contact management guide is available here: [/pages/account_and_service_management/account_information/managing_contacts#access-contact-management](/pages/account_and_service_management/account_information/managing_contacts#access-contact-management)
 
 ### How do I set and change a billing contact?
 

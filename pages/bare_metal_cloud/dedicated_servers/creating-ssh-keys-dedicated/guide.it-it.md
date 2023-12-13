@@ -1,7 +1,7 @@
 ---
 title: Creare e utilizzare chiavi SSH
 excerpt: Scopri come creare una chiave SSH per effettuare una connessione sicura al tuo server
-updated: 2023-07-24
+updated: 2023-11-22
 ---
 
 > [!primary]
@@ -201,6 +201,46 @@ Per saperne di più sulle connessioni SSH, consulta le guide di [primi passi](#g
 
 ### Aggiungere chiavi SSH al tuo server <a name="addserverkey"></a>
 
+#### Trasferimento di chiavi pubbliche create su sistemi basati su GNU/Linux, MacOS o BSD
+
+Se hai creato le coppie di chiavi SSH su un sistema basato su GNU/Linux, MacOS o BSD, puoi utilizzare il comando `ssh-copy-id` per aggiungere le chiavi pubbliche al tuo server.
+
+L'utilità `ssh-copy-id` copia le chiavi pubbliche nel file `~/.ssh/authorized_keys` sul server remoto specificato e crea automaticamente il file in questa directory, se necessario.
+
+```bash
+ssh-copy-id user@IP_ADDRESS
+```
+
+Di default, `ssh-copy-id` tenterà di trasferire tutte le chiavi pubbliche nella directory `~/.ssh` dell’utente locale. Tuttavia, se è necessario aggiungere una sola chiave pubblica, è possibile specificare il file di chiave con l'opzione `-i` seguita dal percorso del file:
+
+```bash
+ssh-copy-id -i ~/.ssh/KeyFileName user@IP_ADDRESS
+```
+
+Esempio:
+
+```bash
+ssh-copy-id -i ~/.ssh/VPS_rsa.pub ubuntu@169.254.10.250
+```
+
+Ti verrà chiesto di inserire la password associata all’utente e riceverai un messaggio simile a quello riportato di seguito.
+
+```console
+Number of key added: 1
+
+Now try logging into the machine, with: "ssh 'user@server-ip'"
+and check to make sure that only the key(s) you wanted were added.
+```
+
+Se viene visualizzato un messaggio di errore, è possibile aggiungere manualmente le chiavi pubbliche eseguendo la procedura seguente.
+
+> [!primary]
+>
+> Per motivi di sicurezza, è consigliabile evitare l'utilizzo di una singola coppia di chiavi da parte di più utenti. Poiché ciascun utente su sistemi GNU/Linux dispone del proprio file `authorized_keys` in `~/.ssh/`, è possibile utilizzare il comando `ssh-copy-id` come mostrato sopra e adattare `KeyFileName` e `user` dopo [aver creato la coppia di chiavi](#openssh).
+>
+
+#### Aggiunta manuale di chiavi pubbliche a un server
+
 [Accedi](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction) al server e assicurati di trovarti nella directory `$HOME` dell’utente. Se non esiste già, crea la cartella `.ssh`:
 
 ```bash
@@ -213,7 +253,7 @@ Per archiviare la chiave per l’utente corrente, aprire (o creare) il file `aut
 nano ~/.ssh/authorized_keys
 ```
 
-Incolla la tua [chiave pubblica](#publickey) in questo file. Salvare il file e uscire dall'editor. Riavvia il server o riavvia il servizio OpenSSH utilizzando uno dei comandi seguenti (il comando appropriato può variare in base al sistema operativo):
+Incolla la tua [chiave pubblica](#publickey) in questo file. Salvare il file e uscire dall'editor. Riavvia il server (`sudo reboot`) o riavvia il servizio OpenSSH utilizzando uno dei comandi seguenti (il comando appropriato può variare in base al sistema operativo):
 
 ```bash
 sudo systemctl restart ssh
@@ -303,7 +343,7 @@ Dopodiché potrai accedere al VPS con il nome di alias che hai definito come `Ho
 ssh ubuntu@vps
 ```
 
-Nell'esempio precedente sono stati specificati solo l'IP del server e il file chiave, ma è possibile aggiungere ulteriori dettagli. Per configurare una connessione SSH a un secondo server con il nome utente "rocky", la [porta SSH modificata](/pages/cloud/vps/secure_your_vps#changesshport) "49160" e la chiave privata nel file "myserver_rsa", estendete il contenuto del file come indicato in questo esempio:
+Nell'esempio precedente sono stati specificati solo l'IP del server e il file chiave, ma è possibile aggiungere ulteriori dettagli. Per configurare una connessione SSH a un secondo server con il nome utente "rocky", la [porta SSH modificata](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps#changesshport) "49160" e la chiave privata nel file "myserver_rsa", estendete il contenuto del file come indicato in questo esempio:
 
 ```console
 Host vps

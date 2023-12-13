@@ -1,7 +1,6 @@
 ---
 title: Adding an IP block
 excerpt: Find out how to order an IP block for a Hosted Private Cloud project
-legacy_guide_number: '7766457'
 updated: 2022-04-06
 ---
 
@@ -53,8 +52,6 @@ You will need to fill in several fields in order to create your IP block.
 > [!success]
 >
 > There is a one time setup fee for an IP block that will be due before delivery.
->  
-> IP address renewal is free of charge.
 >
 
 Once you have confirmed the final step, you will receive the purchase order for your IP block. If everything looks correct in the purchase order, you will simply need to pay the total using one of the payment methods listed at the bottom of the page, and your order will then be delivered.
@@ -69,7 +66,7 @@ Use the following API call:
 
 > [!api]
 >
-> @api {POST} /ip/{ip}/move
+> @api {v1} /ip POST /ip/{ip}/move
 > 
 
 You will need to fill in the fields as follows:
@@ -88,7 +85,7 @@ If you need to detach the IP block, you can use the following API call to move t
 
 > [!api]
 >
-> @api {POST} /ip/{ip}/park
+> @api {v1} /ip POST /ip/{ip}/park
 > 
 
 > [!warning]

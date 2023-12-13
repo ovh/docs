@@ -25,7 +25,7 @@ We recommend that you read our guide on [Accessing the Horizon interface](/pages
 
 #### Via Horizon 
 
-Log in to the [Horizon](https://horizon.cloud.ovh.net/auth/login/) interface using the method listed in the [first part of this guide](/pages/platform/network-services/getting-started-07-creating-vrack#horizon).
+Log in to the [Horizon](https://horizon.cloud.ovh.net/auth/login/) interface using the method listed in the [first part of this guide](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack#horizon).
 
 Choose the proper work zone.
 

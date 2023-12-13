@@ -1,6 +1,6 @@
 ---
-title: FAQ Web Hosting
-excerpt: Retrouvez les questions les plus fréquemment posées sur les hébergements web OVHcloud
+title: "FAQ Web Hosting"
+excerpt: "Retrouvez les questions les plus fréquemment posées sur les hébergements web OVHcloud"
 updated: 2023-04-24
 ---
 
@@ -54,7 +54,7 @@ Pour cela, connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/a
 
 Sur la page `Informations générales`{.action} qui s'affiche, vous retrouvez un encadré intitulé `Configuration`{.action} au centre de la page. A droite de la mention `Web Cloud Databases`{.action}, cliquez sur le bouton `...`{.action} puis sur `Délier`{.action}. Choisissez la durée du renouvellement la plus courte puis poursuivez jusqu'à la validation de la commande.
 
-Retrouvez plus d'informations dans notre guide sur la ["Configuration d'une offre Web Cloud Databases"](/pages/web/clouddb/configure-database-server#modify-ram-web-cloud-db)
+Retrouvez plus d'informations dans notre guide sur la ["Configuration d'une offre Web Cloud Databases"](/pages/web_cloud/web_cloud_databases/configure-database-server#modify-ram-web-cloud-db)
 
 **Cette action est irréversible et l'offre Web Cloud Databases sera ensuite facturée indépendamment de votre hébergement web Performance.**
 
@@ -117,7 +117,7 @@ Si votre site s'affiche avec cette URL suite à une manipulation, restaurez-le �
 
 Pour restaurer le code source de votre site, consultez notre guide « [Restaurer l’espace de stockage de son hébergement web](/pages/web_cloud/web_hosting/ftp_save_and_backup) ».
 
-Si votre site comporte une base de données, consultez notre guide « [Restaurer une sauvegarde de votre base de données](/pages/web/hosting/sql_importing_mysql_database#restaurer-une-sauvegarde-depuis-lespace-client) ».
+Si votre site comporte une base de données, consultez notre guide « [Restaurer une sauvegarde de votre base de données](/pages/web_cloud/web_hosting/sql_importing_mysql_database#restaurer-une-sauvegarde-depuis-lespace-client) ».
 
 ### Que faire si mon site redirige vers le webmail OVHcloud ?
 
@@ -133,9 +133,9 @@ Notez ensuite les serveurs DNS indiqués puis rendez-vous dans l'onglet `Zone DN
 
 Comparez les `Cibles` des entrées de type `NS` indiquées dans l'onglet `Zone DNS`{.action} avec les `Serveurs DNS` indiqués dans l'onglet du même nom :
 
-- Si les éléments sont identiques, remplacez la cible `213.186.33.5` par le code à quatre nombres noté dans l'onglet `Informations générales` sous la mention `IPv4` (pour plus de détails sur les manipulations à effectuer, suivez les instructions de [ce guide](/pages/web/domains/dns_zone_edit#en-pratique)).
+- Si les éléments sont identiques, remplacez la cible `213.186.33.5` par le code à quatre nombres noté dans l'onglet `Informations générales` sous la mention `IPv4` (pour plus de détails sur les manipulations à effectuer, suivez les instructions de [ce guide](/pages/web_cloud/domains/dns_zone_edit#en-pratique)).
 
-- Si les éléments ne sont pas identiques, mais que les `Serveurs DNS` indiqués dans l'onglet du même nom apparaissent dans [cette liste](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP), effectuez une réinitialisation en suivant les instructions de [ce guide](/pages/web/domains/dns_server_general_information#reinitialiser-les-serveurs-dns).
+- Si les éléments ne sont pas identiques, mais que les `Serveurs DNS` indiqués dans l'onglet du même nom apparaissent dans [cette liste](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP), effectuez une réinitialisation en suivant les instructions de [ce guide](/pages/web_cloud/domains/dns_server_general_information#reinitialiser-les-serveurs-dns).
 
 - Si les éléments ne sont pas identiques et que les `Serveurs DNS` indiqués dans l'onglet du même nom n'apparaissent pas dans [cette liste](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP), contactez votre Webmaster ou recherchez un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/directory/) via la page des [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/directory/).
 
@@ -154,7 +154,7 @@ Restaurez votre site à son état précédent :
 
 - Pour restaurer le code source de votre site, consultez notre guide [Restaurer l’espace de stockage de son hébergement web](/pages/web_cloud/web_hosting/ftp_save_and_backup).
 
-- Si votre site comporte une base de données, consultez notre guide [Restaurer une sauvegarde de votre base de données](/pages/web/hosting/sql_importing_mysql_database#restaurer-une-sauvegarde-depuis-lespace-client).
+- Si votre site comporte une base de données, consultez notre guide [Restaurer une sauvegarde de votre base de données](/pages/web_cloud/web_hosting/sql_importing_mysql_database#restaurer-une-sauvegarde-depuis-lespace-client).
 
 Si les restaurations ne vous permettent pas de rétablir l'accès à votre site, contactez votre Webmaster ou recherchez un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/directory/) sur le site des [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/directory/).
 

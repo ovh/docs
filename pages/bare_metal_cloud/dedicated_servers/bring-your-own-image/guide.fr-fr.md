@@ -77,7 +77,7 @@ Pour créer et déployer votre image, utilisez l'appel suivant et complétez les
 
 > [!api]
 >
-> @api {POST} /dedicated/server/{serviceName}/bringYourOwnImage
+> @api {v1} /dedicated/server POST /dedicated/server/{serviceName}/bringYourOwnImage
 >
 
 #### Tableaux des options <a name="options"></a>
@@ -110,7 +110,7 @@ Vous pouvez suivre le déploiement de votre image via l'appel API ci-dessous ou 
 
 > [!api]
 >
-> @api {GET} /dedicated/server/{serviceName}/bringYourOwnImage
+> @api {v1} /dedicated/server GET /dedicated/server/{serviceName}/bringYourOwnImage
 >
 
 Dans cet exemple, le déploiement est en cours de démarrage.
@@ -140,7 +140,7 @@ Vous pouvez choisir de supprimer votre déploiement grâce à l'appel suivant :
 
 > [!api]
 >
-> @api {DELETE} /dedicated/server/{serviceName}/bringYourOwnImage
+> @api {v1} /dedicated/server DELETE /dedicated/server/{serviceName}/bringYourOwnImage
 >
 
 Cela aura pour effet d'effacer l'état du déploiement et de placer votre serveur en mode rescue.

@@ -4,28 +4,6 @@ excerpt: 'Find out how to setup and manage Persistent Volumes on OVHcloud Manage
 updated: 2022-10-17
 ---
 
-<style>
- pre {
-     font-size: 14px;
- }
- pre.console {
-   background-color: #300A24; 
-   color: #ccc;
-   font-family: monospace;
-   padding: 5px;
-   margin-bottom: 5px;
- }
- pre.console code {
-   border: solid 0px transparent;
-   font-family: monospace !important;
-   font-size: 0.75em;
-   color: #ccc;
- }
- .small {
-     font-size: 0.75em;
- }
-</style>
-
 ## Before you begin
 
 This tutorial presupposes that you already have a working OVHcloud Managed Kubernetes cluster, and some basic knowledge of how to operate it.  
@@ -72,11 +50,12 @@ We currently support several Storage Classes on OVHcloud Managed Kubernetes:
 
 You can display them with the `kubectl get storageclass` command:
 
-<pre class="console"><code>$ kubectl get storageclass
+```console
+$ kubectl get storageclass
 NAME                              PROVISIONER                RECLAIMPOLICY   VOLUMEBINDINGMODE   ALLOWVOLUMEEXPANSION   AGE
 csi-cinder-classic                cinder.csi.openstack.org   Delete          Immediate           true                   42d
 csi-cinder-high-speed (default)   cinder.csi.openstack.org   Delete          Immediate           true                   42d
-</code></pre>
+```
 
 All of them are based on [Cinder](https://docs.openstack.org/cinder/latest/){.external}, the OpenStack Block Storage service.  
 
@@ -136,7 +115,8 @@ kubectl get pv
 
 You should see the following:
 
-<pre class="console"><code>$ kubectl create ns nginx-example
+```console
+$ kubectl create ns nginx-example
 namespace/nginx-example created
 
 $ kubectl apply -f pvc.yaml
@@ -149,7 +129,7 @@ nginx-logs   Bound    ovh-managed-kubernetes-d6r47l-pvc-a6025a24-c572-4c28-b5e7-
 $ kubectl get pv
 NAME                                                                     CAPACITY   ACCESS MODES   RECLAIM POLICY   STATUS   CLAIM                      STORAGECLASS            REASON   AGE
 ovh-managed-kubernetes-d6r47l-pvc-a6025a24-c572-4c28-b5e7-c6f8311aa47f   1Gi        RWO            Delete           Bound    nginx-example/nginx-logs   csi-cinder-high-speed            19s
-</code></pre>
+```
 
 As you can see the PersistentVolume is created and is Bound to the PersistentVolumeClaim you created.
 
@@ -244,7 +224,8 @@ curl -I http://$NGINX_URL/
 
 You should see the following:
 
-<pre class="console"><code>$ kubectl apply -f deployment.yaml
+```console
+$ kubectl apply -f deployment.yaml
 
 kubedeployment.apps/nginx-deployment created
 
@@ -287,7 +268,7 @@ Last-Modified: Tue, 23 Dec 2014 16:25:09 GMT
 Connection: keep-alive
 ETag: "54999765-264"
 Accept-Ranges: bytes
-</code></pre>
+```
 
 Now we need to connect to the pod to read the log file and verify that our logs are written.
 
@@ -305,12 +286,13 @@ kubectl -n nginx-example exec $POD_NAME -c nginx -- cat /var/log/nginx/access.lo
 
 You should see the following:
 
-<pre class="console"><code>$ export POD_NAME=$(kubectl get po -n nginx-example -o name)
+```console
+$ export POD_NAME=$(kubectl get po -n nginx-example -o name)
 
 $ kubectl -n nginx-example exec $POD_NAME -c nginx -- cat /var/log/nginx/access.log
 10.2.1.0 - - [24/Mar/2022:12:31:03 +0000] "GET / HTTP/1.1" 200 612 "-" "curl/7.64.1" "-"
 10.2.2.0 - - [24/Mar/2022:12:31:12 +0000] "HEAD / HTTP/1.1" 200 0 "-" "curl/7.64.1" "-"
-</code></pre>
+```
 
 ## Go further
 

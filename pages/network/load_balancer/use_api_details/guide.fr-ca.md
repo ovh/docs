@@ -49,14 +49,14 @@ Détails des fonctionnalités de l'API pour le Load Balancer OVHcloud.
 
 > [!api]
 >
-> @api {GET} /ipLoadbalancing
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing
 > 
 
 #### Lister les zones disponibles pour le Load Balancer OVH
 
 > [!api]
 >
-> @api {GET} /ipLoadbalancing/availableZones
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing/availableZones
 > 
 
 #### Retourner les détails d'un service Load Balancer OVH
@@ -67,7 +67,7 @@ Détails des fonctionnalités de l'API pour le Load Balancer OVHcloud.
 >
 >> > [!api]
 >> >
->> > @api {GET} /ipLoadbalancing/{serviceName}
+>> > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}
 >> >
 >>
 >> > **serviceName** *
@@ -83,7 +83,7 @@ Détails des fonctionnalités de l'API pour le Load Balancer OVHcloud.
 >
 >> > [!api]
 >> >
->> > @api {PUT} /ipLoadbalancing/{serviceName}
+>> > @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}
 >> >
 >>
 >
@@ -112,7 +112,7 @@ Détails des fonctionnalités de l'API pour le Load Balancer OVHcloud.
 >
 >> > [!api]
 >> >
->> > @api {GET} /ipLoadbalancing/{serviceName}/allowedServers
+>> > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/allowedServers
 >> >
 >>
 >
@@ -131,7 +131,7 @@ Détails des fonctionnalités de l'API pour le Load Balancer OVHcloud.
 >
 >> > [!api]
 >> >
->> > @api {GET} /ipLoadbalancing/{serviceName}/definedFarms
+>> > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/definedFarms
 >> >
 >>
 >
@@ -154,7 +154,7 @@ Détails des fonctionnalités de l'API pour le Load Balancer OVHcloud.
 >
 >> > [!api]
 >> >
->> > @api {GET} /ipLoadbalancing/{serviceName}/availableServerZones
+>> > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/availableServerZones
 >> >
 >>
 >
@@ -173,7 +173,7 @@ Détails des fonctionnalités de l'API pour le Load Balancer OVHcloud.
 >
 >> > [!api]
 >> >
->> > @api {GET} /ipLoadbalancing/{serviceName}/availableFarmProbes
+>> > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/availableFarmProbes
 >> >
 >>
 >
@@ -192,7 +192,7 @@ Détails des fonctionnalités de l'API pour le Load Balancer OVHcloud.
 >
 >> > [!api]
 >> >
->> > @api {GET} /ipLoadbalancing/{serviceName}/availableFarmType
+>> > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/availableFarmType
 >> >
 >>
 >
@@ -211,7 +211,7 @@ Détails des fonctionnalités de l'API pour le Load Balancer OVHcloud.
 >
 >> > [!api]
 >> >
->> > @api {GET} /ipLoadbalancing/{serviceName}/availableFrontendType
+>> > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/availableFrontendType
 >> >
 >>
 >
@@ -230,7 +230,7 @@ Détails des fonctionnalités de l'API pour le Load Balancer OVHcloud.
 >
 >> > [!api]
 >> >
->> > @api {GET} /ipLoadbalancing/{serviceName}/availableRouteActions
+>> > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/availableRouteActions
 >> >
 >>
 >
@@ -249,7 +249,7 @@ Détails des fonctionnalités de l'API pour le Load Balancer OVHcloud.
 >
 >> > [!api]
 >> >
->> > @api {GET} /ipLoadbalancing/{serviceName}/availableRouteRules
+>> > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/availableRouteRules
 >> >
 >>
 >
@@ -270,7 +270,7 @@ Détails des fonctionnalités de l'API pour le Load Balancer OVHcloud.
 >
 >> > [!api]
 >> >
->> > @api {GET} /ipLoadbalancing/{serviceName}/serviceInfos
+>> > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/serviceInfos
 >> >
 >>
 >
@@ -289,7 +289,7 @@ Détails des fonctionnalités de l'API pour le Load Balancer OVHcloud.
 >
 >> > [!api]
 >> >
->> > @api {PUT} /ipLoadbalancing/{serviceName}/serviceInfos
+>> > @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/serviceInfos
 >> >
 >>
 >
@@ -328,7 +328,7 @@ Détails des fonctionnalités de l'API pour le Load Balancer OVHcloud.
 >
 >> > [!api]
 >> >
->> > @api {GET} /ipLoadbalancing/{serviceName}/zone
+>> > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/zone
 >> > 
 >>
 >
@@ -347,7 +347,7 @@ Détails des fonctionnalités de l'API pour le Load Balancer OVHcloud.
 >
 >> > [!api]
 >> >
->> > @api {GET} /ipLoadbalancing/{serviceName}/zone/{name}
+>> > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/zone/{name}
 >> >
 >>
 >
@@ -373,7 +373,7 @@ Le service sera supprimé à la date d'expiration.
 >
 >> > [!api]
 >> >
->> > @api {POST} /ipLoadbalancing/{serviceName}/zone/{name}/terminate
+>> > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/zone/{name}/terminate
 >> >
 >>
 >
@@ -396,7 +396,7 @@ Le service sera supprimé à la date d'expiration.
 >
 >> > [!api]
 >> >
->> > @api {POST} /ipLoadbalancing/{serviceName}/zone/{name}/cancelTermination
+>> > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/zone/{name}/cancelTermination
 >> >
 >>
 >
@@ -424,7 +424,7 @@ Accéder aux éléments relatifs au protocole HTTP (Frontend, Ferme, etc.).
 >
 >> > [!api]
 >> >
->> > @api {GET} /ipLoadbalancing/{serviceName}/http/farm
+>> > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/http/farm
 >> >
 >>
 >
@@ -447,7 +447,7 @@ Accéder aux éléments relatifs au protocole HTTP (Frontend, Ferme, etc.).
 >
 >> > [!api]
 >> >
->> > @api {POST} /ipLoadbalancing/{serviceName}/http/farm
+>> > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/http/farm
 >> >
 >>
 >
@@ -526,7 +526,7 @@ Accéder aux éléments relatifs au protocole HTTP (Frontend, Ferme, etc.).
 >
 >> > [!api]
 >> >
->> > @api {GET} /ipLoadbalancing/{serviceName}/http/farm/{farmId}
+>> > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/http/farm/{farmId}
 >> >
 >>
 >
@@ -549,7 +549,7 @@ Accéder aux éléments relatifs au protocole HTTP (Frontend, Ferme, etc.).
 >
 >> > [!api]
 >> >
->> > @api {PUT} /ipLoadbalancing/{serviceName}/http/farm/{farmId}
+>> > @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/http/farm/{farmId}
 >> >
 >>
 >
@@ -594,7 +594,7 @@ Accéder aux éléments relatifs au protocole HTTP (Frontend, Ferme, etc.).
 >
 >> > [!api]
 >> >
->> > @api {DELETE} /ipLoadbalancing/{serviceName}/http/farm/{farmId}
+>> > @api {v1} /ipLoadbalancing DELETE /ipLoadbalancing/{serviceName}/http/farm/{farmId}
 >> >
 >>
 >
@@ -619,7 +619,7 @@ Accéder aux éléments relatifs au protocole HTTP (Frontend, Ferme, etc.).
 >
 >> > [!api]
 >> >
->> > @api {GET} /ipLoadbalancing/{serviceName}/http/farm/{farmId}/server
+>> > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/http/farm/{farmId}/server
 >> >
 >>
 >
@@ -654,7 +654,7 @@ Accéder aux éléments relatifs au protocole HTTP (Frontend, Ferme, etc.).
 >
 >> > [!api]
 >> >
->> > @api {POST} /ipLoadbalancing/{serviceName}/http/farm/{farmId}/server
+>> > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/http/farm/{farmId}/server
 >> >
 >>
 >
@@ -722,7 +722,7 @@ Accéder aux éléments relatifs au protocole HTTP (Frontend, Ferme, etc.).
 >
 >> > [!api]
 >> >
->> > @api {GET} /ipLoadbalancing/{serviceName}/http/farm/{farmId}/server/{serverId}
+>> > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/http/farm/{farmId}/server/{serverId}
 >> >
 >>
 >
@@ -749,7 +749,7 @@ Accéder aux éléments relatifs au protocole HTTP (Frontend, Ferme, etc.).
 >
 >> > [!api]
 >> >
->> > @api {PUT} /ipLoadbalancing/{serviceName}/http/farm/{farmId}/server/{serverId}
+>> > @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/http/farm/{farmId}/server/{serverId}
 >> >
 >>
 >
@@ -819,7 +819,7 @@ Accéder aux éléments relatifs au protocole HTTP (Frontend, Ferme, etc.).
 >
 >> > [!api]
 >> >
->> > @api {DELETE} /ipLoadbalancing/{serviceName}/http/farm/{farmId}/server/{serverId}
+>> > @api {v1} /ipLoadbalancing DELETE /ipLoadbalancing/{serviceName}/http/farm/{farmId}/server/{serverId}
 >> >
 >>
 >
@@ -848,7 +848,7 @@ Accéder aux éléments relatifs au protocole HTTP (Frontend, Ferme, etc.).
 >
 >> > [!api]
 >> >
->> > @api {GET} /ipLoadbalancing/{serviceName}/http/frontend
+>> > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/http/frontend
 >> >
 >>
 >
@@ -879,7 +879,7 @@ Accéder aux éléments relatifs au protocole HTTP (Frontend, Ferme, etc.).
 >
 >> > [!api]
 >> >
->> > @api {POST} /ipLoadbalancing/{serviceName}/http/frontend
+>> > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/http/frontend
 >> >
 >>
 >
@@ -948,7 +948,7 @@ Accéder aux éléments relatifs au protocole HTTP (Frontend, Ferme, etc.).
 >
 >> > [!api]
 >> >
->> > @api {GET} /ipLoadbalancing/{serviceName}/http/frontend/{frontendId}
+>> > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/http/frontend/{frontendId}
 >> >
 >>
 >
@@ -971,7 +971,7 @@ Accéder aux éléments relatifs au protocole HTTP (Frontend, Ferme, etc.).
 >
 >> > [!api]
 >> >
->> > @api {PUT} /ipLoadbalancing/{serviceName}/http/frontend/{frontendId}
+>> > @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/http/frontend/{frontendId}
 >> >
 >>
 >
@@ -1030,7 +1030,7 @@ Accéder aux éléments relatifs au protocole HTTP (Frontend, Ferme, etc.).
 >
 >> > [!api]
 >> >
->> > @api {DELETE} /ipLoadbalancing/{serviceName}/http/frontend/{frontendId}
+>> > @api {v1} /ipLoadbalancing DELETE /ipLoadbalancing/{serviceName}/http/frontend/{frontendId}
 >> >
 >>
 >
@@ -1056,7 +1056,7 @@ Les routes sont évaluées une par une, en testant leurs règles de routage. La 
 >
 >> > [!api]
 >> >
->> > @api {GET} /ipLoadbalancing/{serviceName}/http/route
+>> > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/http/route
 >> >
 >>
 >
@@ -1079,7 +1079,7 @@ Les routes sont évaluées une par une, en testant leurs règles de routage. La 
 >
 >> > [!api]
 >> >
->> > @api {POST} /ipLoadbalancing/{serviceName}/http/route
+>> > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/http/route
 >> >
 >>
 >
@@ -1126,7 +1126,7 @@ Les routes sont évaluées une par une, en testant leurs règles de routage. La 
 >
 >> > [!api]
 >> >
->> > @api {GET} /ipLoadbalancing/{serviceName}/http/route/{routeId}
+>> > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/http/route/{routeId}
 >> >
 >>
 >
@@ -1149,7 +1149,7 @@ Les routes sont évaluées une par une, en testant leurs règles de routage. La 
 >
 >> > [!api]
 >> >
->> > @api {PUT} /ipLoadbalancing/{serviceName}/http/route/{routeId}
+>> > @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/http/route/{routeId}
 >> >
 >>
 >
@@ -1202,7 +1202,7 @@ Les routes sont évaluées une par une, en testant leurs règles de routage. La 
 >
 >> > [!api]
 >> >
->> > @api {DELETE} /ipLoadbalancing/{serviceName}/http/route/{routeId}
+>> > @api {v1} /ipLoadbalancing DELETE /ipLoadbalancing/{serviceName}/http/route/{routeId}
 >> >
 >>
 >
@@ -1227,7 +1227,7 @@ Les routes sont évaluées une par une, en testant leurs règles de routage. La 
 >
 >> > [!api]
 >> >
->> > @api {GET} /ipLoadbalancing/{serviceName}/http/route/{routeId}/rule
+>> > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/http/route/{routeId}/rule
 >> >
 >>
 >
@@ -1250,7 +1250,7 @@ Les routes sont évaluées une par une, en testant leurs règles de routage. La 
 >
 >> > [!api]
 >> >
->> > @api {POST} /ipLoadbalancing/{serviceName}/http/route/{routeId}/rule
+>> > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/http/route/{routeId}/rule
 >> >
 >>
 >
@@ -1293,7 +1293,7 @@ Les routes sont évaluées une par une, en testant leurs règles de routage. La 
 >
 >> > [!api]
 >> >
->> > @api {GET} /ipLoadbalancing/{serviceName}/http/route/{routeId}/rule/{ruleId}
+>> > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/http/route/{routeId}/rule/{ruleId}
 >> >
 >>
 >
@@ -1320,7 +1320,7 @@ Les routes sont évaluées une par une, en testant leurs règles de routage. La 
 >
 >> > [!api]
 >> >
->> > @api {PUT} /ipLoadbalancing/{serviceName}/http/route/{routeId}/rule/{ruleId}
+>> > @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/http/route/{routeId}/rule/{ruleId}
 >> >
 >>
 >
@@ -1369,7 +1369,7 @@ Les routes sont évaluées une par une, en testant leurs règles de routage. La 
 >
 >> > [!api]
 >> >
->> > @api {DELETE} /ipLoadbalancing/{serviceName}/http/route/{routeId}/rule/{ruleId}
+>> > @api {v1} /ipLoadbalancing DELETE /ipLoadbalancing/{serviceName}/http/route/{routeId}/rule/{ruleId}
 >> >
 >>
 >
@@ -1401,7 +1401,7 @@ Accéder aux éléments relatifs au protocole TCP (Frontend, Ferme, etc.).
 >
 >> > [!api]
 >> >
->> > @api {GET} /ipLoadbalancing/{serviceName}/tcp/farm
+>> > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/tcp/farm
 >> >
 >>
 >
@@ -1424,7 +1424,7 @@ Accéder aux éléments relatifs au protocole TCP (Frontend, Ferme, etc.).
 >
 >> > [!api]
 >> >
->> > @api {POST} /ipLoadbalancing/{serviceName}/tcp/farm
+>> > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/tcp/farm
 >> >
 >>
 >
@@ -1503,7 +1503,7 @@ Accéder aux éléments relatifs au protocole TCP (Frontend, Ferme, etc.).
 >
 >> > [!api]
 >> >
->> > @api {GET} /ipLoadbalancing/{serviceName}/tcp/farm/{farmId}
+>> > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/tcp/farm/{farmId}
 >> >
 >>
 >
@@ -1526,7 +1526,7 @@ Accéder aux éléments relatifs au protocole TCP (Frontend, Ferme, etc.).
 >
 >> > [!api]
 >> >
->> > @api {PUT} /ipLoadbalancing/{serviceName}/tcp/farm/{farmId}
+>> > @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/tcp/farm/{farmId}
 >> >
 >>
 >
@@ -1571,7 +1571,7 @@ Accéder aux éléments relatifs au protocole TCP (Frontend, Ferme, etc.).
 >
 >> > [!api]
 >> >
->> > @api {DELETE} /ipLoadbalancing/{serviceName}/tcp/farm/{farmId}
+>> > @api {v1} /ipLoadbalancing DELETE /ipLoadbalancing/{serviceName}/tcp/farm/{farmId}
 >> >
 >>
 >
@@ -1596,7 +1596,7 @@ Accéder aux éléments relatifs au protocole TCP (Frontend, Ferme, etc.).
 >
 >> > [!api]
 >> >
->> > @api {GET} /ipLoadbalancing/{serviceName}/tcp/farm/{farmId}/server
+>> > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/tcp/farm/{farmId}/server
 >> >
 >>
 >
@@ -1631,7 +1631,7 @@ Accéder aux éléments relatifs au protocole TCP (Frontend, Ferme, etc.).
 >
 >> > [!api]
 >> >
->> > @api {POST} /ipLoadbalancing/{serviceName}/tcp/farm/{farmId}/server
+>> > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/tcp/farm/{farmId}/server
 >> >
 >>
 >
@@ -1695,7 +1695,7 @@ Accéder aux éléments relatifs au protocole TCP (Frontend, Ferme, etc.).
 >
 >> > [!api]
 >> >
->> > @api {GET} /ipLoadbalancing/{serviceName}/tcp/farm/{farmId}/server/{serverId}
+>> > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/tcp/farm/{farmId}/server/{serverId}
 >> >
 >>
 >
@@ -1722,7 +1722,7 @@ Accéder aux éléments relatifs au protocole TCP (Frontend, Ferme, etc.).
 >
 >> > [!api]
 >> >
->> > @api {PUT} /ipLoadbalancing/{serviceName}/tcp/farm/{farmId}/server/{serverId}
+>> > @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/tcp/farm/{farmId}/server/{serverId}
 >> >
 >>
 >
@@ -1788,7 +1788,7 @@ Accéder aux éléments relatifs au protocole TCP (Frontend, Ferme, etc.).
 >
 >> > [!api]
 >> >
->> > @api {DELETE} /ipLoadbalancing/{serviceName}/tcp/farm/{farmId}/server/{serverId}
+>> > @api {v1} /ipLoadbalancing DELETE /ipLoadbalancing/{serviceName}/tcp/farm/{farmId}/server/{serverId}
 >> >
 >>
 >
@@ -1817,7 +1817,7 @@ Accéder aux éléments relatifs au protocole TCP (Frontend, Ferme, etc.).
 >
 >> > [!api]
 >> >
->> > @api {GET} /ipLoadbalancing/{serviceName}/tcp/frontend
+>> > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/tcp/frontend
 >> >
 >>
 >
@@ -1848,7 +1848,7 @@ Accéder aux éléments relatifs au protocole TCP (Frontend, Ferme, etc.).
 >
 >> > [!api]
 >> >
->> > @api {POST} /ipLoadbalancing/{serviceName}/tcp/frontend
+>> > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/tcp/frontend
 >> >
 >>
 >
@@ -1903,7 +1903,7 @@ Accéder aux éléments relatifs au protocole TCP (Frontend, Ferme, etc.).
 >
 >> > [!api]
 >> >
->> > @api {GET} /ipLoadbalancing/{serviceName}/tcp/frontend/{frontendId}
+>> > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/tcp/frontend/{frontendId}
 >> >
 >>
 >
@@ -1926,7 +1926,7 @@ Accéder aux éléments relatifs au protocole TCP (Frontend, Ferme, etc.).
 >
 >> > [!api]
 >> >
->> > @api {PUT} /ipLoadbalancing/{serviceName}/tcp/frontend/{frontendId}
+>> > @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/tcp/frontend/{frontendId}
 >> >
 >>
 >
@@ -1975,7 +1975,7 @@ Accéder aux éléments relatifs au protocole TCP (Frontend, Ferme, etc.).
 >
 >> > [!api]
 >> >
->> > @api {DELETE} /ipLoadbalancing/{serviceName}/tcp/frontend/{frontendId}
+>> > @api {v1} /ipLoadbalancing DELETE /ipLoadbalancing/{serviceName}/tcp/frontend/{frontendId}
 >> >
 >>
 >
@@ -2001,7 +2001,7 @@ Les routes sont évaluées une par une, en testant leurs règles de routage. La 
 >
 >> > [!api]
 >> >
->> > @api {GET} /ipLoadbalancing/{serviceName}/tcp/route
+>> > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/tcp/route
 >> >
 >>
 >
@@ -2024,7 +2024,7 @@ Les routes sont évaluées une par une, en testant leurs règles de routage. La 
 >
 >> > [!api]
 >> >
->> > @api {POST} /ipLoadbalancing/{serviceName}/tcp/route
+>> > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/tcp/route
 >> >
 >>
 >
@@ -2067,7 +2067,7 @@ Les routes sont évaluées une par une, en testant leurs règles de routage. La 
 >
 >> > [!api]
 >> >
->> > @api {GET} /ipLoadbalancing/{serviceName}/tcp/route/{routeId}
+>> > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/tcp/route/{routeId}
 >> >
 >>
 >
@@ -2090,7 +2090,7 @@ Les routes sont évaluées une par une, en testant leurs règles de routage. La 
 >
 >> > [!api]
 >> >
->> > @api {PUT} /ipLoadbalancing/{serviceName}/tcp/route/{routeId}
+>> > @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/tcp/route/{routeId}
 >> >
 >>
 >
@@ -2139,7 +2139,7 @@ Les routes sont évaluées une par une, en testant leurs règles de routage. La 
 >
 >> > [!api]
 >> >
->> > @api {DELETE} /ipLoadbalancing/{serviceName}/tcp/route/{routeId}
+>> > @api {v1} /ipLoadbalancing DELETE /ipLoadbalancing/{serviceName}/tcp/route/{routeId}
 >> >
 >>
 >
@@ -2164,7 +2164,7 @@ Les routes sont évaluées une par une, en testant leurs règles de routage. La 
 >
 >> > [!api]
 >> >
->> > @api {GET} /ipLoadbalancing/{serviceName}/tcp/route/{routeId}/rule
+>> > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/tcp/route/{routeId}/rule
 >> >
 >>
 >
@@ -2187,7 +2187,7 @@ Les routes sont évaluées une par une, en testant leurs règles de routage. La 
 >
 >> > [!api]
 >> >
->> > @api {POST} /ipLoadbalancing/{serviceName}/tcp/route/{routeId}/rule
+>> > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/tcp/route/{routeId}/rule
 >> >
 >>
 >
@@ -2230,7 +2230,7 @@ Les routes sont évaluées une par une, en testant leurs règles de routage. La 
 >
 >> > [!api]
 >> >
->> > @api {GET} /ipLoadbalancing/{serviceName}/tcp/route/{routeId}/rule/{ruleId}
+>> > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/tcp/route/{routeId}/rule/{ruleId}
 >> >
 >>
 >
@@ -2257,7 +2257,7 @@ Les routes sont évaluées une par une, en testant leurs règles de routage. La 
 >
 >> > [!api]
 >> >
->> > @api {PUT} /ipLoadbalancing/{serviceName}/tcp/route/{routeId}/rule/{ruleId}
+>> > @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/tcp/route/{routeId}/rule/{ruleId}
 >> >
 >>
 >
@@ -2306,7 +2306,7 @@ Les routes sont évaluées une par une, en testant leurs règles de routage. La 
 >
 >> > [!api]
 >> >
->> > @api {DELETE} /ipLoadbalancing/{serviceName}/tcp/route/{routeId}/rule/{ruleId}
+>> > @api {v1} /ipLoadbalancing DELETE /ipLoadbalancing/{serviceName}/tcp/route/{routeId}/rule/{ruleId}
 >> >
 >>
 >
@@ -2338,7 +2338,7 @@ Accéder aux éléments relatifs au protocole UDP (Frontend, Ferme, etc.).
 >
 >> > [!api]
 >> >
->> > @api {GET} /ipLoadbalancing/{serviceName}/udp/farm
+>> > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/udp/farm
 >> >
 >>
 >
@@ -2361,7 +2361,7 @@ Accéder aux éléments relatifs au protocole UDP (Frontend, Ferme, etc.).
 >
 >> > [!api]
 >> >
->> > @api {POST} /ipLoadbalancing/{serviceName}/udp/farm
+>> > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/udp/farm
 >> >
 >>
 >
@@ -2392,7 +2392,7 @@ Accéder aux éléments relatifs au protocole UDP (Frontend, Ferme, etc.).
 >
 >> > [!api]
 >> >
->> > @api {GET} /ipLoadbalancing/{serviceName}/udp/farm/{farmId}
+>> > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/udp/farm/{farmId}
 >> >
 >>
 >
@@ -2415,7 +2415,7 @@ Accéder aux éléments relatifs au protocole UDP (Frontend, Ferme, etc.).
 >
 >> > [!api]
 >> >
->> > @api {PUT} /ipLoadbalancing/{serviceName}/udp/farm/{farmId}
+>> > @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/udp/farm/{farmId}
 >> >
 >>
 >
@@ -2448,7 +2448,7 @@ Accéder aux éléments relatifs au protocole UDP (Frontend, Ferme, etc.).
 >
 >> > [!api]
 >> >
->> > @api {DELETE} /ipLoadbalancing/{serviceName}/udp/farm/{farmId}
+>> > @api {v1} /ipLoadbalancing DELETE /ipLoadbalancing/{serviceName}/udp/farm/{farmId}
 >> >
 >>
 >
@@ -2473,7 +2473,7 @@ Accéder aux éléments relatifs au protocole UDP (Frontend, Ferme, etc.).
 >
 >> > [!api]
 >> >
->> > @api {GET} /ipLoadbalancing/{serviceName}/udp/farm/{farmId}/server
+>> > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/udp/farm/{farmId}/server
 >> >
 >>
 >
@@ -2504,7 +2504,7 @@ Accéder aux éléments relatifs au protocole UDP (Frontend, Ferme, etc.).
 >
 >> > [!api]
 >> >
->> > @api {POST} /ipLoadbalancing/{serviceName}/udp/farm/{farmId}/server
+>> > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/udp/farm/{farmId}/server
 >> >
 >>
 >
@@ -2543,7 +2543,7 @@ Accéder aux éléments relatifs au protocole UDP (Frontend, Ferme, etc.).
 >
 >> > [!api]
 >> >
->> > @api {GET} /ipLoadbalancing/{serviceName}/udp/farm/{farmId}/server/{serverId}
+>> > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/udp/farm/{farmId}/server/{serverId}
 >> >
 >>
 >
@@ -2570,7 +2570,7 @@ Accéder aux éléments relatifs au protocole UDP (Frontend, Ferme, etc.).
 >
 >> > [!api]
 >> >
->> > @api {PUT} /ipLoadbalancing/{serviceName}/udp/farm/{farmId}/server/{serverId}
+>> > @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/udp/farm/{farmId}/server/{serverId}
 >> >
 >>
 >
@@ -2611,7 +2611,7 @@ Accéder aux éléments relatifs au protocole UDP (Frontend, Ferme, etc.).
 >
 >> > [!api]
 >> >
->> > @api {DELETE} /ipLoadbalancing/{serviceName}/udp/farm/{farmId}/server/{serverId}
+>> > @api {v1} /ipLoadbalancing DELETE /ipLoadbalancing/{serviceName}/udp/farm/{farmId}/server/{serverId}
 >> >
 >>
 >
@@ -2640,7 +2640,7 @@ Accéder aux éléments relatifs au protocole UDP (Frontend, Ferme, etc.).
 >
 >> > [!api]
 >> >
->> > @api {GET} /ipLoadbalancing/{serviceName}/udp/frontend
+>> > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/udp/frontend
 >> >
 >>
 >
@@ -2671,7 +2671,7 @@ Accéder aux éléments relatifs au protocole UDP (Frontend, Ferme, etc.).
 >
 >> > [!api]
 >> >
->> > @api {POST} /ipLoadbalancing/{serviceName}/udp/frontend
+>> > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/udp/frontend
 >> >
 >>
 >
@@ -2714,7 +2714,7 @@ Accéder aux éléments relatifs au protocole UDP (Frontend, Ferme, etc.).
 >
 >> > [!api]
 >> >
->> > @api {GET} /ipLoadbalancing/{serviceName}/udp/frontend/{frontendId}
+>> > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/udp/frontend/{frontendId}
 >> >
 >>
 >
@@ -2737,7 +2737,7 @@ Accéder aux éléments relatifs au protocole UDP (Frontend, Ferme, etc.).
 >
 >> > [!api]
 >> >
->> > @api {PUT} /ipLoadbalancing/{serviceName}/udp/frontend/{frontendId}
+>> > @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/udp/frontend/{frontendId}
 >> >
 >>
 >
@@ -2774,7 +2774,7 @@ Accéder aux éléments relatifs au protocole UDP (Frontend, Ferme, etc.).
 >
 >> > [!api]
 >> >
->> > @api {DELETE} /ipLoadbalancing/{serviceName}/udp/frontend/{frontendId}
+>> > @api {v1} /ipLoadbalancing DELETE /ipLoadbalancing/{serviceName}/udp/frontend/{frontendId}
 >> >
 >>
 >
@@ -2801,7 +2801,7 @@ Accéder aux éléments relatifs au protocole UDP (Frontend, Ferme, etc.).
 >
 >> > [!api]
 >> >
->> > @api {GET} /ipLoadbalancing/{serviceName}/failover
+>> > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/failover
 >> >
 >>
 >
@@ -2822,7 +2822,7 @@ Accéder aux éléments relatifs au protocole UDP (Frontend, Ferme, etc.).
 >
 >> > [!api]
 >> >
->> > @api {GET} /ipLoadbalancing/{serviceName}/instancesState
+>> > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/instancesState
 >> >
 >>
 >
@@ -2841,7 +2841,7 @@ Accéder aux éléments relatifs au protocole UDP (Frontend, Ferme, etc.).
 >
 >> > [!api]
 >> >
->> > @api {GET} /ipLoadbalancing/{serviceName}/natIp
+>> > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/natIp
 >> >
 >>
 >
@@ -2860,7 +2860,7 @@ Accéder aux éléments relatifs au protocole UDP (Frontend, Ferme, etc.).
 >
 >> > [!api]
 >> >
->> > @api {GET} /ipLoadbalancing/{serviceName}/refresh
+>> > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/refresh
 >> >
 >>
 >
@@ -2881,7 +2881,7 @@ Accéder aux éléments relatifs au protocole UDP (Frontend, Ferme, etc.).
 >
 >> > [!api]
 >> >
->> > @api {GET} /ipLoadbalancing/{serviceName}/ssl
+>> > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/ssl
 >> >
 >>
 >
@@ -2912,7 +2912,7 @@ Accéder aux éléments relatifs au protocole UDP (Frontend, Ferme, etc.).
 >
 >> > [!api]
 >> >
->> > @api {POST} /ipLoadbalancing/{serviceName}/ssl
+>> > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/ssl
 >> >
 >>
 >
@@ -2943,7 +2943,7 @@ Accéder aux éléments relatifs au protocole UDP (Frontend, Ferme, etc.).
 >
 >> > [!api]
 >> >
->> > @api {GET} /ipLoadbalancing/{serviceName}/ssl/{id}
+>> > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/ssl/{id}
 >> >
 >>
 >
@@ -2966,7 +2966,7 @@ Accéder aux éléments relatifs au protocole UDP (Frontend, Ferme, etc.).
 >
 >> > [!api]
 >> >
->> > @api {DELETE} /ipLoadbalancing/{serviceName}/ssl/{id}
+>> > @api {v1} /ipLoadbalancing DELETE /ipLoadbalancing/{serviceName}/ssl/{id}
 >> >
 >>
 >
@@ -2991,7 +2991,7 @@ Accéder aux éléments relatifs au protocole UDP (Frontend, Ferme, etc.).
 >
 >> > [!api]
 >> >
->> > @api {GET} /ipLoadbalancing/{serviceName}/task
+>> > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/task
 >> >
 >>
 >
@@ -3014,7 +3014,7 @@ Accéder aux éléments relatifs au protocole UDP (Frontend, Ferme, etc.).
 >
 >> > [!api]
 >> >
->> > @api {GET} /ipLoadbalancing/{serviceName}/task/{id}
+>> > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/task/{id}
 >> >
 >>
 >
@@ -3039,7 +3039,7 @@ Accéder aux éléments relatifs au protocole UDP (Frontend, Ferme, etc.).
 >
 >> > [!api]
 >> >
->> > @api {POST} /ipLoadbalancing/{serviceName}/changeContact
+>> > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/changeContact
 >> >
 >>
 >
@@ -3072,7 +3072,7 @@ Accéder aux éléments relatifs au protocole UDP (Frontend, Ferme, etc.).
 >
 >> > [!api]
 >> >
->> > @api {GET} /ipLoadbalancing/{serviceName}/vrack/network
+>> > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/vrack/network
 >> >
 >>
 >
@@ -3099,7 +3099,7 @@ Accéder aux éléments relatifs au protocole UDP (Frontend, Ferme, etc.).
 >
 >> > [!api]
 >> >
->> > @api {POST} /ipLoadbalancing/{serviceName}/vrack/network
+>> > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/vrack/network
 >> >
 >>
 >
@@ -3138,9 +3138,9 @@ Accéder aux éléments relatifs au protocole UDP (Frontend, Ferme, etc.).
 >
 >> > [!api]
 >> >
->> > @api {GET} /ipLoadbalancing/{serviceName}/vrack/network/{vrackNetworkId}
->> > @api {PUT} /ipLoadbalancing/{serviceName}/vrack/network/{vrackNetworkId}
->> > @api {DELETE} /ipLoadbalancing/{serviceName}/vrack/network/{vrackNetworkId}
+>> > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/vrack/network/{vrackNetworkId}
+>> > @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/vrack/network/{vrackNetworkId}
+>> > @api {v1} /ipLoadbalancing DELETE /ipLoadbalancing/{serviceName}/vrack/network/{vrackNetworkId}
 >> >
 >>
 >
@@ -3163,7 +3163,7 @@ Accéder aux éléments relatifs au protocole UDP (Frontend, Ferme, etc.).
 >
 >> > [!api]
 >> >
->> > @api {POST} /ipLoadbalancing/{serviceName}/vrack/network/{vrackNetworkId}/updateFarmId
+>> > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/vrack/network/{vrackNetworkId}/updateFarmId
 >> >
 >>
 >

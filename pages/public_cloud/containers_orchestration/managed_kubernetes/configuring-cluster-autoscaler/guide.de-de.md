@@ -4,27 +4,6 @@ excerpt: ''
 updated: 2022-05-17
 ---
 
-<style>
- pre {
-     font-size: 14px;
- }
- pre.console {
-   background-color: #300A24; 
-   color: #ccc;
-   font-family: monospace;
-   padding: 5px;
-   margin-bottom: 5px;
- }
- pre.console code {
-   b   font-family: monospace !important;
-   font-size: 0.75em;
-   color: #ccc;
- }
- .small {
-     font-size: 0.75em;
- }
-</style>
-
 ## Objective
 
 OVHcloud Managed Kubernetes service provides you Kubernetes clusters without the hassle of installing or operating them.
@@ -68,7 +47,7 @@ Here you have a description of the parameters used in the autoscaler configurati
 
 You can get more information on those parameters on the [Kubernetes autoscaler documentation](https://github.com/kubernetes/autoscaler/blob/master/cluster-autoscaler/FAQ.md).
 
-If you consider we should reevaluate the default value and/or prioritize the possible customization of one of those parameters, you are welcome to create an issue on our [Public roadmap](https://github.com/ovh/public-cloud-roadmap/projects/1).
+If you consider we should reevaluate the default value and/or prioritize the possible customization of one of those parameters, you are welcome to create an issue on our [Public roadmap](https://github.com/orgs/ovh/projects/16/).
 
 ### Configuring the autoscaler
 
@@ -76,7 +55,7 @@ The easiest way to enable the autoscaler is using the Kubernetes API, for exampl
 
 #### Using Kubernetes API
 
-When the autoscaler is enabled on a node pool, it uses a [default configuration](/pages/platform/kubernetes-k8s/configuring-cluster-autoscaler#cluster-autoscaler-configuration).
+When the autoscaler is enabled on a node pool, it uses a [default configuration](/pages/public_cloud/containers_orchestration/managed_kubernetes/configuring-cluster-autoscaler#cluster-autoscaler-configuration).
 
 To list node pools, you can use:
 
@@ -91,7 +70,8 @@ kubectl patch nodepool <your_nodepool_name> --type="merge" --patch='{"spec": {"a
 ```
 
 In my example cluster:
-<pre class="console"><code>$ kubectl get nodepool nodepool-b2-7 -o json | jq .spec
+```console
+$ kubectl get nodepool nodepool-b2-7 -o json | jq .spec
 {
   "antiAffinity": false,
   "autoscale": true,
@@ -106,13 +86,15 @@ In my example cluster:
   "minNodes": 0,
   "monthlyBilled": false
 }
-</code></pre>
+```
 
-<pre class="console"><code>$ kubectl patch nodepool nodepool-b2-7 --type="merge" --patch='{"spec": {"autoscaling": {"scaleDownUnneededTimeSeconds": 900, "scaleDownUnreadyTimeSeconds": 1500, "scaleDownUtilizationThreshold": "0.7"}}}'
+```console
+$ kubectl patch nodepool nodepool-b2-7 --type="merge" --patch='{"spec": {"autoscaling": {"scaleDownUnneededTimeSeconds": 900, "scaleDownUnreadyTimeSeconds": 1500, "scaleDownUtilizationThreshold": "0.7"}}}'
 nodepool.kube.cloud.ovh.com/nodepool-b2-7 patched
-</code></pre>
+```
 
-<pre class="console"><code>$ kubectl get nodepool nodepool-b2-7 -o json | jq .spec
+```console
+$ kubectl get nodepool nodepool-b2-7 -o json | jq .spec
 {
   "antiAffinity": false,
   "autoscale": true,
@@ -127,7 +109,7 @@ nodepool.kube.cloud.ovh.com/nodepool-b2-7 patched
   "minNodes": 0,
   "monthlyBilled": false
 }
-</code></pre>
+```
 
 For the moment, only these following parameters are editable:
 
@@ -137,7 +119,7 @@ For the moment, only these following parameters are editable:
 - minNodes
 - maxNodes
 
-If you consider that we should prioritize the possible customization of other autoscaling parameters, you are welcome to create an issue on our [Public roadmap](https://github.com/ovh/public-cloud-roadmap/projects/1).
+If you consider that we should prioritize the possible customization of other autoscaling parameters, you are welcome to create an issue on our [Public roadmap](https://github.com/orgs/ovh/projects/16/).
 
 ## Go further
 

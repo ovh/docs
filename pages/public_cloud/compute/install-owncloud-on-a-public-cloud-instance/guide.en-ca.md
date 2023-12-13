@@ -246,7 +246,7 @@ To do this, just follow the steps in this guide: [Create an additional disk on P
 
 #### Step 2: Configure the additional disk
 
-To do this, just follow the steps in this guide: [Configure an additional disk on Public Cloud](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance#from-an-instance-on-linux){.external}.
+To do this, just follow the steps in this guide: [Configure an additional disk on Public Cloud](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance#from-an-instance-on-linux){.external}.
 
 > [!primary]
 >

@@ -60,7 +60,7 @@ Use the following call:
 
 > [!api]
 >
-> @api {POST} /cloud/project/{serviceName}/instance/{instanceId}/activeMonthlyBilling
+> @api {v1} /cloud POST /cloud/project/{serviceName}/instance/{instanceId}/activeMonthlyBilling
 >
 
 ### From a Terraform script

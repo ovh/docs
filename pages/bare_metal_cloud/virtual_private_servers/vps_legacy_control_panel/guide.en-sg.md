@@ -65,7 +65,7 @@ When you reinstall your VPS, you will be sent an email containing your root pass
 
 The user "**root**" is created by default on GNU/Linux systems. Root access means having the highest level of permissions on an operating system. It can be dangerous to leave your VPS accessible via the root user login and password, as this account can perform irreversibly damaging operations.
 
-You can disable root user logins via the SSH protocol. Remember to [create another user](/pages/cloud/vps/secure_your_vps#createuser) before following the steps below.
+You can disable root user logins via the SSH protocol. Remember to [create another user](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps#createuser) before following the steps below.
 
 Use a text editor such as *vim* or *nano* to edit this configuration file:
 

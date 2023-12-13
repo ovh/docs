@@ -1,7 +1,7 @@
 ---
 title: 'Rescue-Modus aktivieren und verwenden'
 excerpt: 'Erfahren Sie hier, wie Sie den Rescue-Modus für einen Dedicated Server aktivieren und verwenden'
-updated: 2023-02-07
+updated: 2023-09-05
 ---
 
 > [!primary]
@@ -33,7 +33,7 @@ Falls Sie nicht schon über aktuelle Backups verfügen sollte der erste Schritt 
 ## In der praktischen Anwendung
 
 > [!warning]
-> Bitte beachten Sie, dass Sie beim Neustart eines Servers im Rescue-Modus kein Root-Passwort erhalten, wenn Sie in Ihrer Dienstverwaltung im Kundencenter einen SSH-Standard-Schlüssel festgelegt haben. In diesem Fall müssen Sie zuerst den SSH-Schlüssel deaktivieren, bevor Sie den Server im Rescue-Modus neu starten. Lesen Sie dazu [diesen Abschnitt](/pages/cloud/dedicated/creating-ssh-keys-dedicated#disablesshkey) in der zugehörigen Anleitung.
+> Bitte beachten Sie, dass Sie beim Neustart eines Servers im Rescue-Modus kein Root-Passwort erhalten, wenn Sie in Ihrer Dienstverwaltung im Kundencenter einen SSH-Standard-Schlüssel festgelegt haben. In diesem Fall müssen Sie zuerst den SSH-Schlüssel deaktivieren, bevor Sie den Server im Rescue-Modus neu starten. Lesen Sie dazu [diesen Abschnitt](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated#disablesshkey) in der zugehörigen Anleitung.
 >
 
 Der Rescue-Modus kann nur über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} aktiviert werden. Wählen Sie Ihren Server aus, indem Sie in den Bereich `Bare Metal Cloud`{.action} wechseln und ihn dann unter `Dedicated Server`{.action} anklicken.
@@ -42,7 +42,7 @@ Suchen Sie "Boot" im Bereich **Allgemeine Informationen** und klicken Sie auf `.
 
 ![Startmodus ändern](images/rescue-mode-001.png){.thumbnail}
 
-Auf der nächsten Seite, wählen Sie **Im Rescue-Modus booten**. Wenn Ihr Server über ein Linux-Betriebssystem verfügt, wählen Sie `rescue-customer`{.action} im Drop-down-Menü aus. Wenn Ihr Server auf Windows läuft, können Sie auch `WinRescue`{.action} wählen ([vgl. Abschnitt unten](#windowsrescue)). Geben Sie eine alternative E-Mail-Adresse an, wenn Sie *nicht* möchten, dass die Login-Daten an die Hauptadresse Ihres OVHcloud Kunden-Accounts gesendet werden.
+Auf der nächsten Seite wählen Sie **Im Rescue-Modus booten**. Wenn Ihr Server über ein Linux-Betriebssystem verfügt, wählen Sie `rescue-customer`{.action} im Drop-down-Menü aus. Wenn Ihr Server auf Windows läuft, können Sie auch `WinRescue`{.action} wählen ([vgl. Abschnitt unten](#windowsrescue)). Geben Sie eine alternative E-Mail-Adresse an, wenn Sie *nicht* möchten, dass die Login-Daten an die Hauptadresse Ihres OVHcloud Kunden-Accounts gesendet werden.
 
 > [!warning]
 > OVHcloud Kunden-Accounts können zum Teil von einem Fehler bezüglich der Sprache der Rescue-E-Mails betroffen sein: französische Sprache statt deutsche Sprache. Obwohl die Fehlerursache seit dem 20. September 2022 korrigiert ist, muss die E-Mail-Adresse einmal aktualisiert werden, um das Problem endgültig zu beheben: Geben Sie dazu die E-Mail-Adresse Ihres Kunden-Accounts in diesem Schritt ein, bevor Sie den Rescue-Modus aktivieren.
@@ -71,13 +71,13 @@ Wenn Sie Ihre Tasks im Rescue-Modus beendet haben, denken Sie daran, den Netboot
 
 Nach dem Neustart Ihres Servers erhalten Sie eine E-Mail mit Ihren Login-Daten für den Rescue-Modus. Diese E-Mail ist auch in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) verfügbar. Klicken Sie in der oberen rechten Ecke Ihres Kundencenters auf den Namen Ihrer Kundenkennung und anschließend auf `E-Mails vom Support`{.action}.
 
-Sie müssen dann über die Befehlszeile oder über ein SSH-Tool auf Ihren Server zugreifen, indem Sie das für den Rescue-Modus generierte Root-Passwort verwenden.
+Sie müssen dann über die Befehlszeile oder über ein [SSH-Tool](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction) auf Ihren Server zugreifen, indem Sie das für den Rescue-Modus generierte Root-Passwort verwenden.
 
 Beispiel:
 
-```sh
-ssh root@your_server_IP
-root@your_server_password:
+```bash
+ssh root@ns3956771.ip-169-254-10.eu
+root@ns3956771.ip-169-254-10.eu's password:
 ```
 
 > [!warning]
@@ -94,8 +94,10 @@ Für die meisten Änderungen Ihres Servers via SSH im Rescue-Modus muss eine Par
 Die Partitionen werden über SSH per `mount` Befehl gemountet. Zunächst müssen jedoch Ihre Partitionen aufgelistet werden, um den Namen derjenigen Partition zu ermitteln, die Sie mounten möchten. Im Folgenden finden Sie Codebeispiele, an denen Sie sich orientieren können.
 
 ```bash
-rescue-customer:~# fdisk -l
+fdisk -l
+```
 
+```console
 Disk /dev/hda 40.0 GB, 40020664320 bytes
 255 heads, 63 sectors/track, 4865 cylinders, total 41943040 sectors
 Units = cylinders of 16065 * 512 = 8225280 bytes
@@ -116,7 +118,7 @@ Device Boot Start End Blocks Id System
 Wenn Sie den Namen der gewünschten Partition ermittelt haben, verwenden Sie den folgenden Befehl:
 
 ```bash
-rescue-customer:~# mount /dev/hda1 /mnt/
+mount /dev/hda1 /mnt/
 ```
 
 > [!primary]
@@ -128,54 +130,39 @@ rescue-customer:~# mount /dev/hda1 /mnt/
 
 Um den Rescue-Modus zu verlassen, ändern Sie im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) den Bootmodus wieder auf `Von Festplatte Booten`{.action} und starten Sie den Server über die Kommandozeile neu.
 
-#### Mounten eines Datastores
+#### VMware - Mounten eines Datastores
 
-Sie können einen VMware Datastore auf ähnliche Weise mounten wie im vorherigen Segment beschrieben. Installieren Sie zuerst das erforderliche Paket:
+Sie können einen VMware Datastore auf ähnliche Weise mounten wie im vorherigen Segment beschrieben.
+
+Listen Sie Ihre Partitionen auf, um den Namen der Partition des Datastores abzurufen:
 
 ```bash
-rescue-customer:~# apt-get update && apt-get install vmfs-tools
+fdisk -l
 ```
 
-Listen Sie anschließend Ihre Partitionen auf, um den Namen der Partition des Datastores abzurufen:
+Mounten Sie die Partition mit folgendem Befehl, und ersetzen Sie dabei `sdbX` mit dem im vorherigen Schritt identifizierten Wert:
 
 ```bash
-rescue-customer:~# fdisk -l
+vmfs-fuse /dev/sdbX /mnt
 ```
 
-Mounten Sie nun die Partition mit folgendem Befehl, und ersetzen Sie dabei `sdbX` mit dem im vorherigen Schritt identifizierten Wert:
+Wenn Sie Datastores vom Typ `VMFS 6` haben, wechseln Sie in den Ordner `sbin`, um den Mount-Ordner zu erstellen:
 
 ```bash
-rescue-customer:~# vmfs-fuse /dev/sdbX /mnt
+cd /usr/local/sbin/
+mkdir /mnt/datastore
 ```
 
-Wenn Sie Datastores vom Typ `VMFS 6` haben, installieren Sie manuell das Tool `vmfs6-tools` in der Umgebung des Rescue-Modus:
+Listen Sie Ihre Partitionen auf, um den Namen der Partition des Datastores abzurufen:
 
 ```bash
-rescue-customer:~# apt-get update && apt-get upgrade
-# apt-get install git uuid-dev libfuse-dev pkg-config gcc
-# git clone https://salsa.debian.org/debian/vmfs6-tools.git
-# cd vmfs6-tools
-# make
-# make install
+fdisk -l
 ```
 
-Wechseln Sie in den Ordner `sbin`, um den Mount-Ordner zu erstellen:
+Mounten Sie die Partition mit folgendem Befehl, und ersetzen Sie dabei `sdbX` mit dem im vorherigen Schritt identifizierten Wert:
 
 ```bash
-rescue-customer:~# cd /usr/local/sbin/
-# mkdir /mnt/datastore
-```
-
-Listen Sie anschließend Ihre Partitionen auf, um den Namen der Partition des Datastores abzurufen:
-
-```bash
-rescue-customer:~# fdisk -l
-```
-
-Mounten Sie nun die Partition mit folgendem Befehl, und ersetzen Sie dabei `sdbX` mit dem im vorherigen Schritt identifizierten Wert:
-
-```bash
-rescue-customer:~# vmfs6-fuse /dev/sdbX /mnt/datastore/
+vmfs6-fuse /dev/sdbX /mnt/datastore/
 ```
 
 Um den Rescue-Modus zu verlassen, ändern Sie im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) den Bootmodus wieder auf `Von Festplatte booten`{.action} und starten Sie den Server über die Kommandozeile neu.

@@ -63,7 +63,7 @@ Poderá também validar o pedido de rescisão através da seguinte API OVHcloud:
 
 > [!api]
 >
-> @api {POST} /dedicatedCloud/{serviceName}/confirmTermination
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/confirmTermination
 >
 
 Deverá indicar o token de validação disponível no e-mail de confirmação da rescisão.

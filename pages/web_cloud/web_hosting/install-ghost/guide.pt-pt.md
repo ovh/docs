@@ -1,6 +1,6 @@
 ---
-title: 'Instalar o Ghost num alojamento Cloud Web'
-excerpt: 'Saiba como instalar um blogue com a plataforma Ghost num alojamento Cloud Web'
+title: "Instalar o Ghost num alojamento Cloud Web"
+excerpt: "Saiba como instalar um blogue com a plataforma Ghost num alojamento Cloud Web"
 updated: 2022-05-04
 ---
 
@@ -279,7 +279,7 @@ Neste tutorial, foi-lhe explicado como instalar uma aplicação Node.js num aloj
 
 [Utilização do RoundCube](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube){.external}
 
-Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/).
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
 

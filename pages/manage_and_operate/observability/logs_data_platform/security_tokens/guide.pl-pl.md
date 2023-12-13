@@ -44,14 +44,14 @@ First you will have to retrieve the serviceName you want to generate token for. 
 
 > [!api]
 >
-> @api {GET} /dbaas/logs
+> @api {v1} /dbaas/logs GET /dbaas/logs
 >
 
 If you want to know what is the Logs Data Platform username associated with this serviceName, use the following call:
 
 > [!api]
 >
-> @api {GET} /dbaas/logs/{serviceName}
+> @api {v1} /dbaas/logs GET /dbaas/logs/{serviceName}
 >
 
 This call returns the service object of the connected identity.
@@ -64,7 +64,7 @@ Once you have the login you want, use the following call to add a new token:
 
 > [!api]
 >
-> @api {POST} /dbaas/logs/{serviceName}/token
+> @api {v1} /dbaas/logs POST /dbaas/logs/{serviceName}/token
 >
 
 > Parameters:
@@ -77,7 +77,7 @@ Please replace **serviceName** with your serviceName, and replace **name** by th
 
 > [!api]
 >
-> @api {GET} /dbaas/logs/{serviceName}/token
+> @api {v1} /dbaas/logs GET /dbaas/logs/{serviceName}/token
 >
 
 > Parameters:
@@ -89,7 +89,7 @@ This will give you back the id of your token. The actual value of the token can 
 
 > [!api]
 >
-> @api {GET} /dbaas/logs/{serviceName}/token/{tokenId}
+> @api {v1} /dbaas/logs GET /dbaas/logs/{serviceName}/token/{tokenId}
 >
 
 > Parameters:
@@ -115,7 +115,7 @@ Finally to delete your token, use the following call:
 
 > [!api]
 >
-> @api {DELETE} /dbaas/logs/{serviceName}/token/{tokenId}
+> @api {v1} /dbaas/logs DELETE /dbaas/logs/{serviceName}/token/{tokenId}
 >
 
 > Parameters:

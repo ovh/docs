@@ -1,8 +1,7 @@
 ---
 title: 'Carregar as variáveis de ambiente OpenStack'
 excerpt: 'Aprenda a carregar as suas variáveis de ambiente para utilizar a API do OpenStack'
-legacy_guide_number: 1852
-updated: 2021-08-18
+updated: 2023-11-29
 ---
 
 > [!primary]
@@ -51,12 +50,12 @@ Se se tiver esquecido da palavra-passe, terá de voltar a criá-la.
 Se as CLI já tiverem sido instaladas, basta verificar o bom funcionamento:
 
 ```bash
-admin@vpsxxxxxx:~$ nova list
-+--------------------------------------+------+--------+------------+-------------+------------------------+
-| ID                                   | Name | Status | Task State | Power State | Networks               |
-+--------------------------------------+------+--------+------------+-------------+------------------------+
-| 2278e269-a529-40cc-9a08-794fda9302d3 | deb8 | ACTIVE | -          | Running     | Ext-Net=xx.xxx.xx.xxx |
-+--------------------------------------+------+--------+------------+-------------+------------------------+
+(env)$ openstack server list
++--------------------------------------+------------+--------+-----------------------------------------------+-----------+--------+
+| ID                                   | Name       | Status | Networks                                      | Image     | Flavor |
++--------------------------------------+------------+--------+-----------------------------------------------+-----------+--------+
+| 8d7c67c0-38e1-4091-88d5-c14844c1f455 | b2-7-gra11 | ACTIVE | Ext-Net=2001:xxxx:xxx:xxx::xxxx, xx.xxx.xx.xx | Debian 12 | b2-7   |
++--------------------------------------+------------+--------+-----------------------------------------------+-----------+--------+
 ```
 
 É possível guardar no disco rígido a palavra-passe do utilizador Horizon. Para isso, substitua:
@@ -95,6 +94,6 @@ set OS_PASSWORD="Palavra-passe do utilizador Horizon"
 
 ## Quer saber mais?
 
-Para aprender a utilizar o OpenStack: [Documentação OpenStack](https://docs.openstack.org/train/){.external}
+Para aprender a utilizar o OpenStack: [Documentação OpenStack](https://docs.openstack.org/){.external}
 
 Fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

@@ -50,7 +50,7 @@ hosted-private-cloud-nutanix-on-ovhcloud-advanced-usage: Utilisation avancée
 hosted-private-cloud-nutanix-on-ovhcloud-troubleshooting: Diagnostic
 hosted-private-cloud-nutanix-on-ovhcloud-disaster-recovery-plan: Plan de Reprise d’Activité
 hosted-private-cloud-nutanix-on-ovhcloud-raci: Partage de responsabilité (RACI)
-hosted-private-cloud-hosted-private-cloud-powered-by-vmware: Hosted Private Cloud powered by VMware
+hosted-private-cloud-hosted-private-cloud-powered-by-vmware: VMware on OVHcloud
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware-getting-started: Premiers pas
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware-access-security: Accès et sécurité
 hosted-private-cloud-hosted-private-cloud-powered-by-vmware-managing-virtual-machines: Gestion des machines virtuelles
@@ -69,6 +69,7 @@ hosted-private-cloud-sap-ovhcloud: SAP on OVHcloud
 hosted-private-cloud-sap-ovhcloud-concepts: Concepts
 hosted-private-cloud-sap-ovhcloud-getting-started: Premiers pas
 hosted-private-cloud-sap-ovhcloud-advanced-usage: Utilisation avancée
+hosted-private-cloud-sap-ovhcloud-backups: Sauvegardes
 ovhcloud-labs-data-collector: Data Collector
 ovhcloud-labs-data-collector-getting-started: Premiers pas
 ovhcloud-labs-power-web-hosting: POWER Web Hosting
@@ -172,6 +173,10 @@ public-cloud-network-additional-ip: Additional IP
 public-cloud-network-configuration: Configuration
 public-cloud-network-technical-resources: Ressources techniques
 public-cloud-network-tutorials: Tutoriels
+public-cloud-data-platform: Data Platform
+public-cloud-data-platform-general-information: General information
+public-cloud-data-platform-build-an-ai-model-from-scratch: Build your AI model from scratch
+public-cloud-data-platform-build-a-first-app-from-scratch: Build your analytics app from scratch
 web-cloud-clouddb: Web Cloud Databases
 web-cloud-clouddb-getting-started: Premiers pas
 web-cloud-clouddb-configuration: Configuration

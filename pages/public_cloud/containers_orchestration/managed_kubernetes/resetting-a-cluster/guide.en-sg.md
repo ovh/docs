@@ -108,7 +108,7 @@ If you go to the [Kubernetes section](https://api.ovh.com/console/#/cloud/projec
 
 > [!api]
 >
-> @api {POST} /cloud/project/{serviceName}/kube/{kubeId}/reset
+> @api {v1} /cloud POST /cloud/project/{serviceName}/kube/{kubeId}/reset
 >
 
 **Input:**
@@ -135,7 +135,7 @@ By default, if you don't specify it, the `workerNodesPolicy` option will be equi
 
 > [!api]
 >
-> @api {GET} /cloud/project/{serviceName}/kube/{kubeId}
+> @api {v1} /cloud GET /cloud/project/{serviceName}/kube/{kubeId}
 >
 
 **Result:**

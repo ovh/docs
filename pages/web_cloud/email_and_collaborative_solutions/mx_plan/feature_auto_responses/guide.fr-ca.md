@@ -1,6 +1,5 @@
 ---
 title: 'Créer un répondeur pour son adresse e-mail'
-legacy_guide_number: 2052
 excerpt: 'Découvrez comment mettre en place un répondeur e-mail'
 hidden: true
 updated: 2021-04-20

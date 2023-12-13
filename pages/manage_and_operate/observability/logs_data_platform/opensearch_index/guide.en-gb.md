@@ -65,7 +65,7 @@ Here is a quick explanation of this command:
 
 This command will return with a simple payload indicating if the document has been indexed by all the shards involved.
 
-```json hl_lines="3"
+```json
 {
    "_id": "1",
    "_index": "logs-<username>-i-<suffix>",
@@ -174,7 +174,7 @@ $ curl -u token:<your-token-value> -XGET 'https://<ldp-cluster>.logs.ovh.com:920
 
 This will give you back the documents of your index:
 
-```json hl_lines="13 41 69"
+```json
 {
   "took" : 1,
   "timed_out" : false,
@@ -296,7 +296,7 @@ tcp {
 
 The most important part in this configuration is the filter part:
 
-```ruby  hl_lines="2 3 4"
+```ruby 
 elasticsearch {
     hosts => ["https://gra2.logs.ovh.com:9200"]
     index => "logs-<username>-i-<suffix>"

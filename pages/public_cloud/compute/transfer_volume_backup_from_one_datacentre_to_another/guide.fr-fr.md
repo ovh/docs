@@ -1,6 +1,5 @@
 ---
 title: 'Transférer la sauvegarde d’un volume d’un datacenter à l’autre'
-legacy_guide_number: 1941
 excerpt: 'Apprenez à déplacer une sauvegarde de volume entre différents centres de données'
 updated: 2021-01-19
 ---

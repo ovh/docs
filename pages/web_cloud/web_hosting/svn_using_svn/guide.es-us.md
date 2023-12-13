@@ -1,11 +1,11 @@
 ---
-title: Utilizar SVN
-excerpt: Cómo utilizar SVN por SSH en un alojamiento web
-updated: 2021-01-06
+title: "Utilizar SVN"
+excerpt: "Descubra cómo utilizar SVN por SSH en un alojamiento web"
+updated: 2023-12-05
 ---
 
 > [!primary]
-> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón "Contribuir" de esta página.
 > 
 
 ## Objetivo
@@ -18,7 +18,7 @@ SVN, abreviación de "subversion", es un sistema de gestión de versiones.
 >
 > La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionen correctamente.
 > 
-> Esta guía le ayudará a realizar las operaciones más habituales. No obstante, si tiene alguna duda le recomendamos que contacte con un proveedor de servicios especializado o con el editor del servicio. Nosotros no podremos asistirle. Para más información, consulte el apartado «Más información» de esta guía.
+> Esta guía le ayudará a realizar las operaciones más habituales. No obstante, si tiene alguna duda le recomendamos que contacte con un proveedor de servicios especializado o con el editor del servicio. Nosotros no podremos asistirle. Para más información, consulte el apartado "[Más información](#go-further)" de esta guía.
 > 
 
 ## Requisitos
@@ -30,7 +30,7 @@ SVN, abreviación de "subversion", es un sistema de gestión de versiones.
 
 ### Creación del repositorio
 
-Una vez conectado en [SSH al alojamiento](/pages/web_cloud/web_hosting/ssh_on_webhosting){.external}, cree el directorio raíz de los repositorios SVN y el repositorio.
+Una vez conectado en [SSH al alojamiento](/pages/web_cloud/web_hosting/ssh_on_webhosting), cree el directorio raíz de los repositorios SVN y el repositorio.
 
 Para ello, introduzca el siguiente comando:
 
@@ -58,7 +58,7 @@ Es necesario que los directorios se muestren en la siguiente imagen:
 
 Antes de continuar, deberá crear un par de llaves SSH desde el equipo que utilizará para conectarse al repositorio SVN.
 
-Para más información, consulte la guía [Crear llaves SSH](/pages/platform/public-cloud/public-cloud-first-steps#1-crear-claves-ssh). No es necesario seguir el progreso de la operación [Importar la llave SSH al área de cliente de OVHcloud](/pages/platform/public-cloud/public-cloud-first-steps#1-crear-claves-ssh/#importacion-de-una-clave-ssh-en-el-area-de-cliente-de-ovhcloud) en esta guía.
+Para más información, consulte la guía [Crear llaves SSH](/pages/public_cloud/compute/public-cloud-first-steps#1-crear-claves-ssh). No es necesario seguir el progreso de la operación [Importar la llave SSH al área de cliente de OVHcloud](/pages/public_cloud/compute/public-cloud-first-steps#1-crear-claves-ssh/#importacion-de-una-clave-ssh-en-el-area-de-cliente-de-ovhcloud) en esta guía.
 
 ### Adición de la clave pública al alojamiento
 
@@ -83,7 +83,7 @@ A continuación de la clave creada anteriormente, todo ello en la misma línea.
 > Sustituya "/home.XXX/loginFTP" y "john" por sus claves SSH.
 > Para consultar los símbolos utilizados para sustituir "/home.XXX/loginFTP", introduzca el comando "pwd" en SSH.
 >
-> Consulte nuestra guía [Utilizar el acceso SSH de un alojamiento web](/pages/web_cloud/web_hosting/ssh_on_webhosting){.external}.
+> Consulte nuestra guía [Utilizar el acceso SSH de un alojamiento web](/pages/web_cloud/web_hosting/ssh_on_webhosting).
 > 
 
 ![hosting](images/3080.png){.thumbnail}
@@ -147,8 +147,10 @@ Cuando quiera realizar una comprobación local, los ejemplos proporcionados no f
 svn+ssh://login@ftp.nom-du-site.tld/home.XXX/login/svn/depot_test
 ```
 
-## Más información
+## Más información <a name="go-further"></a>
 
-[Utilizar el acceso SSH de un alojamiento web](/pages/web_cloud/web_hosting/ssh_on_webhosting){.external}
+[Utilizar el acceso SSH de un alojamiento web](/pages/web_cloud/web_hosting/ssh_on_webhosting)
+
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es/directory/).
 
 Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

@@ -1,7 +1,7 @@
 ---
 title: 'Pierwsze kroki z serwerem dedykowanym'
 excerpt: 'Poznaj podstawy korzystania z serwera dedykowanego'
-updated: 2023-08-24
+updated: 2023-09-11
 ---
 
 > [!primary]
@@ -18,9 +18,9 @@ Serwer dedykowany to fizyczny serwer zlokalizowany w jednym z naszych centrów d
 
 ## Wymagania początkowe
 
-- Posiadanie [serwera dedykowanego](https://www.ovhcloud.com/pl/bare-metal/){.external}
-- Połączenie przez SSH (dostęp root) z systemem Linux lub jako administrator z systemem Windows
-- Zalogowanie do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
+- Posiadanie [serwera dedykowanego](https://www.ovhcloud.com/pl/bare-metal/).
+- Połączenie przez SSH (dostęp root) z systemem Linux lub jako administrator z systemem Windows.
+- Zalogowanie do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 
 > [!primary]
 >
@@ -34,7 +34,7 @@ Jeśli Twój serwer dedykowany jest po raz pierwszy skonfigurowany w trakcie pro
 
 W prosty sposób możesz przeprowadzić reinstalację serwera i wybrać inny obraz systemu operacyjnego w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). W zakładce `Informacje ogólne`{.action} kliknij `...`{.action} naprzeciwko systemu operacyjnego, a następnie wybierz `Zainstaluj`{.action}.
 
-![Przycisk Reinstalacja](images/reinstalling-your-server-00.png){.thumbnail}
+![Przycisk Reinstalacja](images/reinstalling-your-server-01.png){.thumbnail}
 
 W oknie, które się pojawi wybierz jedną z opcji instalacji:
 
@@ -59,7 +59,7 @@ Po wybraniu `Instalacji z szablonu OVHcloud`{.action}, możesz wybrać system op
 
 Jeśli musisz zmienić układ partycji systemu operacyjnego, zaznacz kratkę "Personalizacja konfiguracji partycji", zanim klikniesz na `Dalej`{.action}.
 
-![Personalizuj konfigurację partycji](images/SSH_02.png){.thumbnail}
+![Personalizuj konfigurację partycji](images/reinstalling-your-server-04.png){.thumbnail}
 
 Po zakończeniu korekt kliknij Dalej, aby `uzyskać dostęp`{.action} do strony podsumowania.
 
@@ -67,23 +67,23 @@ Po zakończeniu korekt kliknij Dalej, aby `uzyskać dostęp`{.action} do strony 
 
 Jeśli instalujesz system operacyjny GNU/Linux, możesz dodać klucz SSH do ostatniego etapu procesu instalacji.
 
-![Spersonalizuj konfigurację partycji](images/SSH_03.png){.thumbnail}
+![Spersonalizuj konfigurację SSH](images/SSH_01.png){.thumbnail}
 
 Jeśli klucz SSH jest już zarejestrowany, pojawi się on w rozwijanym menu w polu "Klucze SSH" na dole. Jeśli nie, najpierw należy dodać jedną z nich w sekcji "Moje usługi".
 
 Aby to zrobić, otwórz pasek boczny klikając swoją nazwę w prawym górnym rogu i użyj skrótu `Produkty i usługi`{.action}.
 
-![Spersonalizuj konfigurację partycji](images/SSH_keys_panel_2022.png){.thumbnail}
+![Spersonalizuj konfigurację SSH](images/SSH_02.png){.thumbnail}
 
 W sekcji "Moje usługi" przejdź do zakładki `Klucze SSH`{.action} i kliknij `Dodaj klucz SSH`{.action}.
 
-![Spersonalizuj konfigurację partycji](images/SSH_14.png){.thumbnail}
+![Spersonalizuj konfigurację SSH](images/SSH_03.png){.thumbnail}
 
 Ponieważ chodzi o instalację serwera dedykowanego, z rozwijanego menu wybierz "Dedykowany" (kompatybilny również z serwerem VPS).
 
 W nowym oknie wprowadź ID (wybraną nazwę) i klucz (typu RSA, ECDSA lub Ed25519) w odpowiednich polach.
 
-![Spersonalizuj konfigurację partycji](images/SSH_12.png){.thumbnail}
+![Spersonalizuj konfigurację SSH](images/SSH_04.png){.thumbnail}
 
 Aby uzyskać szczegółowe wyjaśnienie dotyczące generowania kluczy SSH, zapoznaj się z naszym [przewodnikiem](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated).
 
@@ -152,6 +152,8 @@ Kliknij przycisk `Skonfiguruj`{.action}. W oknie, które się pojawi, masz trzy 
 - **Aktywny bez aktywnej interwencji**: Otrzymasz e-mail z komunikatem ostrzegawczym, jeśli serwer przestanie odpowiadać. Aby rozpocząć interwencję, należy aktywować opcję aktywną interwencją.
 
 ![Monitoring](images/monitoring-your-server2.png){.thumbnail}
+
+Kliknij na `Zatwierdź`{.action}, aby zaktualizować konfigurację monitorowania.
 
 Więcej informacji na temat monitoringu OVHcloud znajdziesz w [tym przewodniku](/pages/bare_metal_cloud/dedicated_servers/network_ip_monitoring).
 

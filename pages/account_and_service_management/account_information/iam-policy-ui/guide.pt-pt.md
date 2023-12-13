@@ -1,17 +1,13 @@
 ---
 title: Como utilizar as políticas IAM a partir do seu Espaço Cliente
 excerpt: Descubra como dar direitos de acesso específicos aos utilizadores a partir de uma conta OVHcloud
-updated: 2023-07-06
+updated: 2023-12-06
 ---
 
 > [!primary]
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-> [!warning]
->
-> Esta funcionalidade está atualmente em versão beta. Encontre mais informações em <https://labs.ovhcloud.com/en/>.
->
 
 ## Objetivo
 
@@ -87,6 +83,17 @@ Existem 3 formas de adicionar ações:
 
 Ao ativar esta opção, estará a autorizar todas as ações relacionadas com os produtos selecionados. Isto inclui todas as ações existentes, bem como as ações futuras acrescentadas a estas categorias de produtos.
 
+- Selecionando um grupo de permissões geridas
+
+Colocamos à disposição grupos de permissões pré-configuradas e geridas pela OVHcloud.
+Pode selecionar um ou mais grupos selecionando-os na lista disponível.
+
+![Criar uma política](images/create_a_policy_05.png){.thumbnail}
+
+Os detalhes do conteúdo dos grupos de permissão administrados estão disponíveis na [documentação associada](/pages/account_and_service_management/account_information/iam-permission-groups).
+
+É possível utilizar os grupos de ações administradas em complemento de ações unitárias.
+
 - Adicionando manualmente ações
 
 Se conhece o nome da ação, pode adicioná-la manualmente.
@@ -97,9 +104,9 @@ Pode utilizar um *wildcard* no início ou no fim do nome da ação com `*`.
 
 Por exemplo, a adição de `vps:apiovh:ips/*` irá conceder os seguintes direitos:
 
-vps:apiovh:ips/edit <br>
-vps:apiovh:ips/delete <br>
-vps:apiovh:ips/get <br>
+- **vps:apiovh:ips/edit**
+- **vps:apiovh:ips/delete**
+- **vps:apiovh:ips/get**
 
 - Selecionando ações da lista
 

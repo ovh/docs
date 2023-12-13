@@ -1,7 +1,7 @@
 ---
 title: 'Premiers pas avec les API OVHcloud'
 excerpt: 'Découvrez comment utiliser les API OVHcloud'
-updated: 2023-08-24
+updated: 2023-09-08
 ---
 
 ## Objectif
@@ -67,7 +67,7 @@ Par exemple, pour récupérer la liste de vos noms de domaine, utilisez l'API su
  
 > [!api]
 >
-> @api {GET} /domain
+> @api {v1} /domain GET /domain
 >
 
 **POST**
@@ -78,7 +78,7 @@ Par exemple, pour ajouter un enregistrement à votre zone DNS, utilisez l'API su
 
 > [!api]
 >
-> @api {POST} /domain/zone/{zoneName}/record
+> @api {v1} /domain POST /domain/zone/{zoneName}/record
 >
 
 **PUT**
@@ -89,7 +89,7 @@ Par exemple, si vous vous êtes trompé dans un enregistrement de votre zone DNS
 
 > [!api]
 >
-> @api {PUT} /domain/zone/{zoneName}/record/{id}
+> @api {v1} /domain PUT /domain/zone/{zoneName}/record/{id}
 >
 
 **DELETE**
@@ -100,7 +100,7 @@ Par exemple, si vous ne souhaitez finalement pas conserver l'enregistrement DNS 
 
 > [!api]
 >
-> @api {DELETE}  /domain/zone/{zoneName}/record/{id}
+> @api {v1} /domain DELETE /domain/zone/{zoneName}/record/{id}
 >
 
 ##### Paramètres de l'API
@@ -122,11 +122,6 @@ Les onglets `PHP` et `Python` contiennent les éléments à ajouter dans votre s
 ### Utilisation avancée : coupler les API OVHcloud avec une application
 
 #### Créer les clés de votre application
-
-> [!success]
->
-> Les API de OVHcloud sont désormais compatible avec le protocole Oauth2. Retrouvez plus d'informations dans le guide  « [Comment s'authentifier sur l'API OVHcloud avec Oauth2](/pages/account_and_service_management/account_information/authenticate-api-with-service-account) ».
->
 
 Toute application souhaitant communiquer avec l'API OVHcloud doit être déclarée à l'avance.
 
@@ -176,11 +171,11 @@ Une fois vos trois clés obtenues (**AK**, **AS**, **CK**), vous pouvez signer l
 Afin de simplifier le développement de vos applications, OVHcloud vous fournit des wrappers API dans plusieurs langages.
 Les utiliser vous permettra de ne pas vous préoccuper du calcul de la signature et de vous concentrer sur le développement de votre application.
 
+- *Go* : <https://github.com/ovh/go-ovh>
 - *Perl* : <https://github.com/ovh/perl-ovh>
 - *Python* : <https://github.com/ovh/python-ovh>
 - *PHP* : <https://github.com/ovh/php-ovh>
 - *Node.js* : <https://github.com/ovh/node-ovh>
-- *Swift* : <https://github.com/ovh/swift-ovh>
 - *C#* : <https://github.com/ovh/csharp-ovh>
 
 Voici un exemple d'utilisation de la section `/me` qui permet de gérer votre compte OVHcloud :

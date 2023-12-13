@@ -1,8 +1,7 @@
 ---
 title: 'Gestire un certificato SSL su un hosting Web'
 excerpt: 'Come attivare e utilizzare un certificato SSL sugli hosting Web OVHcloud'
-legacy_guide_number: g1594
-updated: 2022-08-01
+updated: 2023-11-29
 ---
 
 > [!primary]
@@ -144,4 +143,8 @@ Nella nuova pagina, conferma l’eliminazione: l’operazione diventerà effetti
 
 [Attivare HTTPS su un sito Internet tramite il certificato SSL](/pages/web_cloud/web_hosting/ssl-activate-https-website){.external}
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
+
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
+
+Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.

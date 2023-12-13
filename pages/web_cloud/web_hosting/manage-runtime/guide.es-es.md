@@ -1,6 +1,6 @@
 ---
-title: 'Gestionar los motores de ejecución en un hosting Cloud Web'
-excerpt: 'Cómo realizar las operaciones relativas a los motores de ejecución en un hosting Cloud Web'
+title: "Gestionar los motores de ejecución en un hosting Cloud Web"
+excerpt: "Cómo realizar las operaciones relativas a los motores de ejecución en un hosting Cloud Web"
 updated: 2022-07-27
 ---
 
@@ -23,9 +23,7 @@ Cloud Web ofrece la posibilidad de utilizar distintos lenguajes de programación
 
 Para adaptarse a todos los proyectos de forma óptima, los planes de alojamiento Cloud Web le permiten disponer de uno o varios motores de ejecución. Por lo tanto, la elección de uno u otro dependerá de lo que desee instrumentar. 
 
-Así pues, **si aún no lo ha hecho, asegúrese de que su proyecto sea técnicamente compatible con su alojamiento Cloud Web**. Puede consultar los lenguajes compatibles visitando el siguiente enlace: <https://www.ovhcloud.com/es-es/web-hosting/cloud-web-offer/>. 
-
-Una vez que sepa exactamente qué motor o motores de ejecución debe utilizar, puede realizar las acciones que se detallan a continuación.
+Así pues, **si aún no lo ha hecho, asegúrese de que su proyecto sea técnicamente compatible con su alojamiento Cloud Web**. Puede consultar los lenguajes compatibles visitando el siguiente enlace: <https://www.ovhcloud.com/es-es/web-hosting/cloud-web-offer/>.Una vez que sepa exactamente qué motor o motores de ejecución debe utilizar, puede realizar las acciones que se detallan a continuación.
 
 ### Etapa 1:  acceder a la gestión de los motores de ejecución
 
@@ -141,7 +139,7 @@ Una vez seleccionado, prosiga con las etapas correspondientes hasta finalizar.
 
 ## Más información
 
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory/).
 
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es-es/support-levels/).
 

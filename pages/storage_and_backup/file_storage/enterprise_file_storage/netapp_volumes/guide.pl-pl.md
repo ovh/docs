@@ -49,7 +49,7 @@ Aby wyświetlić wolumeny usługi, użyj następującej drogi API:
 >
 >> > [!api]
 >> >
->> > @api {GET} /storage/netapp/{serviceName}/share
+>> > @api {v1} /storage GET /storage/netapp/{serviceName}/share
 >> >
 >>
 >
@@ -73,7 +73,7 @@ Aby pobrać informacje dotyczące wolumenu, użyj następującej drogi API:
 >
 >> > [!api]
 >> >
->> > @api {GET} /storage/netapp/{serviceName}/share/{shareId}
+>> > @api {v1} /storage GET /storage/netapp/{serviceName}/share/{shareId}
 >> >
 >>
 >
@@ -100,7 +100,7 @@ Aby utworzyć nowy wolumen, użyj następującej drogi API:
 >
 >> > [!api]
 >> >
->> > @api {POST} /storage/netapp{serviceNme}/share
+>> > @api {v1} /storage POST /storage/netapp{serviceNme}/share
 >> >
 >>
 >
@@ -127,7 +127,7 @@ Aby poznać ścieżkę montowania wolumenu, użyj następującej drogi API:
 >
 >> > [!api]
 >> >
->> > @api {GET} /storage/netapp{serviceName}/share/{shareId}/accessPath
+>> > @api {v1} /storage GET /storage/netapp{serviceName}/share/{shareId}/accessPath
 >> >
 >>
 >
@@ -164,7 +164,7 @@ Aby usunąć wolumen, użyj następującej drogi API:
 >
 >> > [!api]
 >> >
->> > @api {DELETE} /storage/netapp/{serviceName}/share/{shareId}
+>> > @api {v1} /storage DELETE /storage/netapp/{serviceName}/share/{shareId}
 >> >
 >>
 >

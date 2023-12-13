@@ -76,7 +76,7 @@ Execute the following API call:
 
 > [!api]
 >
-> @api {GET} /cloud/project
+> @api {v1} /cloud GET /cloud/project
 >
 
 ![serviceName](images/04_advanced_configuration-20220405143910846.png){.thumbnail}
@@ -91,37 +91,37 @@ Open the following API call, paste your service ID into the `serviceName` input 
 > Cassandra
 >> > [!api]
 >> >
->> > @api {GET} /cloud/project/{serviceName}/database/cassandra
+>> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/cassandra
 >> >
 > Kafka
 >> > [!api]
 >> >
->> > @api {GET} /cloud/project/{serviceName}/database/kafka
+>> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/kafka
 >> >
 > Kafka Connect
 >> > [!api]
 >> >
->> > @api {GET} /cloud/project/{serviceName}/database/kafkaConnect
+>> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/kafkaConnect
 >> >
 > MySQL
 >> > [!api]
 >> >
->> > @api {GET} /cloud/project/{serviceName}/database/mysql
+>> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/mysql
 >> >
 > Opensearch
 >> > [!api]
 >> >
->> > @api {GET} /cloud/project/{serviceName}/database/opensearch
+>> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/opensearch
 >> >
 > PostgreSQL
 >> > [!api]
 >> >
->> > @api {GET} /cloud/project/{serviceName}/database/postgresql
+>> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/postgresql
 >> >
 > Redis
 >> > [!api]
 >> >
->> > @api {GET} /cloud/project/{serviceName}/database/redis
+>> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/redis
 >> >
 
 ![Cluster ID](images/04_advanced_configuration-20220405144109794.png){.thumbnail}
@@ -136,37 +136,37 @@ Open the following API call and paste the corresponding inputs (serviceName, clu
 > Cassandra
 >> > [!api]
 >> >
->> > @api {GET} /cloud/project/{serviceName}/database/cassandra/{clusterId}/advancedConfiguration
+>> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/cassandra/{clusterId}/advancedConfiguration
 >> >
 > Kafka
 >> > [!api]
 >> >
->> > @api {GET} /cloud/project/{serviceName}/database/kafka/{clusterId}/advancedConfiguration
+>> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/kafka/{clusterId}/advancedConfiguration
 >> >
 > Kafka Connect
 >> > [!api]
 >> >
->> > @api {GET} /cloud/project/{serviceName}/database/kafkaConnect/{clusterId}/advancedConfiguration
+>> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/kafkaConnect/{clusterId}/advancedConfiguration
 >> >
 > MySQL
 >> > [!api]
 >> >
->> > @api {GET} /cloud/project/{serviceName}/database/mysql/{clusterId}/advancedConfiguration
+>> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/mysql/{clusterId}/advancedConfiguration
 >> >
 > Opensearch
 >> > [!api]
 >> >
->> > @api {GET} /cloud/project/{serviceName}/database/opensearch/{clusterId}/advancedConfiguration
+>> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/opensearch/{clusterId}/advancedConfiguration
 >> >
 > PostgreSQL
 >> > [!api]
 >> >
->> > @api {GET} /cloud/project/{serviceName}/database/postgresql/{clusterId}/advancedConfiguration
+>> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/postgresql/{clusterId}/advancedConfiguration
 >> >
 > Redis
 >> > [!api]
 >> >
->> > @api {GET} /cloud/project/{serviceName}/database/redis/{clusterId}/advancedConfiguration
+>> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/redis/{clusterId}/advancedConfiguration
 >> >
 
 ![Get PostgreSQL advanced configuration](images/04_advanced_configuration-20220405144438289.png){.thumbnail}
@@ -179,37 +179,37 @@ Open the following API call and paste the corresponding inputs (serviceName, clu
 > Cassandra
 >> > [!api]
 >> >
->> > @api {GET} /cloud/project/{serviceName}/database/cassandra/{clusterId}/capabilities/advancedConfiguration
+>> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/cassandra/{clusterId}/capabilities/advancedConfiguration
 >> >
 > Kafka
 >> > [!api]
 >> >
->> > @api {GET} /cloud/project/{serviceName}/database/kafka/{clusterId}/capabilities/advancedConfiguration
+>> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/kafka/{clusterId}/capabilities/advancedConfiguration
 >> >
 > Kafka Connect
 >> > [!api]
 >> >
->> > @api {GET} /cloud/project/{serviceName}/database/kafkaConnect/{clusterId}/capabilities/advancedConfiguration
+>> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/kafkaConnect/{clusterId}/capabilities/advancedConfiguration
 >> >
 > MySQL
 >> > [!api]
 >> >
->> > @api {GET} /cloud/project/{serviceName}/database/mysql/{clusterId}/capabilities/advancedConfiguration
+>> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/mysql/{clusterId}/capabilities/advancedConfiguration
 >> >
 > Opensearch
 >> > [!api]
 >> >
->> > @api {GET} /cloud/project/{serviceName}/database/opensearch/{clusterId}/capabilities/advancedConfiguration
+>> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/opensearch/{clusterId}/capabilities/advancedConfiguration
 >> >
 > PostgreSQL
 >> > [!api]
 >> >
->> > @api {GET} /cloud/project/{serviceName}/database/postgresql/{clusterId}/capabilities/advancedConfiguration
+>> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/postgresql/{clusterId}/capabilities/advancedConfiguration
 >> >
 > Redis
 >> > [!api]
 >> >
->> > @api {GET} /cloud/project/{serviceName}/database/redis/{clusterId}/capabilities/advancedConfiguration
+>> > @api {v1} /cloud GET /cloud/project/{serviceName}/database/redis/{clusterId}/capabilities/advancedConfiguration
 >> >
 
 ![Get PostgreSQL Advanced Parameters](images/04_advanced_configuration-20220405144738738.png){.thumbnail}
@@ -222,37 +222,37 @@ Open the following API call and paste the corresponding inputs (serviceName, clu
 > Cassandra
 >> > [!api]
 >> >
->> > @api {PUT} /cloud/project/{serviceName}/database/cassandra/{clusterId}/advancedConfiguration
+>> > @api {v1} /cloud PUT /cloud/project/{serviceName}/database/cassandra/{clusterId}/advancedConfiguration
 >> >
 > Kafka
 >> > [!api]
 >> >
->> > @api {PUT} /cloud/project/{serviceName}/database/kafka/{clusterId}/advancedConfiguration
+>> > @api {v1} /cloud PUT /cloud/project/{serviceName}/database/kafka/{clusterId}/advancedConfiguration
 >> >
 > Kafka Connect
 >> > [!api]
 >> >
->> > @api {PUT} /cloud/project/{serviceName}/database/kafkaConnect/{clusterId}/advancedConfiguration
+>> > @api {v1} /cloud PUT /cloud/project/{serviceName}/database/kafkaConnect/{clusterId}/advancedConfiguration
 >> >
 > MySQL
 >> > [!api]
 >> >
->> > @api {PUT} /cloud/project/{serviceName}/database/mysql/{clusterId}/advancedConfiguration
+>> > @api {v1} /cloud PUT /cloud/project/{serviceName}/database/mysql/{clusterId}/advancedConfiguration
 >> >
 > Opensearch
 >> > [!api]
 >> >
->> > @api {PUT} /cloud/project/{serviceName}/database/opensearch/{clusterId}/advancedConfiguration
+>> > @api {v1} /cloud PUT /cloud/project/{serviceName}/database/opensearch/{clusterId}/advancedConfiguration
 >> >
 > PostgreSQL
 >> > [!api]
 >> >
->> > @api {PUT} /cloud/project/{serviceName}/database/postgresql/{clusterId}/advancedConfiguration
+>> > @api {v1} /cloud PUT /cloud/project/{serviceName}/database/postgresql/{clusterId}/advancedConfiguration
 >> >
 > Redis
 >> > [!api]
 >> >
->> > @api {PUT} /cloud/project/{serviceName}/database/redis/{clusterId}/advancedConfiguration
+>> > @api {v1} /cloud PUT /cloud/project/{serviceName}/database/redis/{clusterId}/advancedConfiguration
 >> >
 
 Now, according to the settings you chose, set the different values into the string arrays, such as in the example below:

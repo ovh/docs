@@ -1,7 +1,7 @@
 ---
 title: "Instalar o seu website com um 'módulo 1 clique' (CMS)"
 excerpt: "Descubra como instalar o seu website através dos nossos 'módulos 1 clique'"
-updated: 2023-03-30
+updated: 2023-11-14
 ---
 
 > [!primary]
@@ -20,12 +20,16 @@ Os "módulos 1 clique" permitem a instalação fácil e rápida de um website (s
 
 - Dispor de um serviço de [alojamento web](https://www.ovhcloud.com/pt/web-hosting/) que inclua pelo menos uma base de dados.
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
-- Utilizar [uma versão de PHP compatível](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014) no seu alojamento web.
-- Ter [configurado corretamente o seu ficheiro .ovhconfig](/pages/web_cloud/web_hosting/ovhconfig_configuration).
+- Utilizar uma versão recente de PHP e um ambiente de execução compatível no seu alojamento web da OVHcloud. Caso seja necessário, consulte o nosso [guia](/pages/web_cloud/web_hosting/configure_your_web_hosting) sobre o assumpto, para alterar rapidamente esta configuração.
 - O diretório (pasta raiz) onde será instalado o seu "módulo 1 clique" deve estar vazio ou atualmente inexistente.
 - O domínio (com subdomínio se desejar) que será utilizado no seu website deve ser declarado como [Multi-site](/pages/web_cloud/web_hosting/multisites_configure_multisite) no seu alojamento web da OVHcloud.
 
 ## Instruções
+
+> [!primary]
+>
+> Se encontrar dificuldades durante qualquer uma das etapas descritas abaixo, consulte a nossa documentação específica sobre [os erros mais frequentes associados aos "módulos 1 clique"](/pages/web_cloud/web_hosting/diagnostic_errors_module1clic). 
+>
 
 ### Etapa 1 - escolher corretamente o seu CMS
 
@@ -57,6 +61,15 @@ Na nova janela, selecione o CMS desejado e selecione o domínio com o qual desej
 
 Se o seu domínio não está na lista, aceda ao separador `Multisite`{.action} para o adicionar. Consulte o nosso manual [Como partilhar o meu alojamento web com vários sites](/pages/web_cloud/web_hosting/multisites_configure_multisite), se necessário.
 
+> [!primary]
+>
+> Verifique, logo abaixo do formulário que permite selecionar um nome de domínio (ou um subdomínio), que `O diretório de instalação predefinido` é aquele em que deseja instalar o seu "módulo em 1 clique".
+>
+> Nota: este diretório deve estar totalmente vazio.
+>
+> Se necessário, consulte o nosso guia "[Como partilhar o meu alojamento web entre vários sites](/pages/web_cloud/web_hosting/multisites_configure_multisite)" para modificar o diretório alvo do seu domínio.
+>
+
 Depois de adicionar o domínio corretamente, tente novamente adicionar um "módulo 1 clique".
 
 Uma vez selecionado o CMS, selecione uma instalação **rápida** ou **avançada**:
@@ -83,6 +96,11 @@ Escolha o nome de domínio do seu CMS, controle o diretório alvo que aparece au
 
 Uma vez terminada a instalação, receberá um e-mail com as informações de ligação à interface de administrador (*back office*) do seu CMS. Ligue-se a esta para personalizar o seu website.
 
+> [!primary]
+>
+> A instalação e a receção do e-mail podem levar até 15 minutos a contar do momento em que clicar no botão `Instalar`{.action} na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
+>
+
 #### Instalação avançada
 
 Para realizar esta instalação, certifica-se que a `Instalação em modo avançado`{.action} selecion ada. De seguida, clique no botão `Seguinte`{.action}:
@@ -92,6 +110,15 @@ Para realizar esta instalação, certifica-se que a `Instalação em modo avanç
 ##### Escolher a base de dados
 
 Insira as informações de ligação à sua base de dados.
+
+> [!warning]
+>
+> Se as informações que indica estiverem incorretas, a instalação não chegará ao seu termo. Para evitar esta falha, sugerimos que teste a ligação à sua base de dados.
+> 
+> Para obter as credenciais de acesso à base de dados incluída no alojamento web, consulte [este guia](/pages/web_cloud/web_hosting/sql_create_database).
+>
+> Para obter os dados de acesso à sua base de dados criada numa instância Web Cloud Databases, consulte [este guia](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
+>
 
 ![Base de dados para instalação avançada](images/advanced_installation_database.png){.thumbnail}
 
@@ -124,15 +151,6 @@ Para as bases de dados criadas numa oferta Web Cloud Databases, consulte as info
 
 Depois de preencher as informações, clique no botão `Seguinte`{.action}.
 
-> [!warning]
->
-> Se as informações que indica estiverem incorretas, a instalação não chegará ao seu termo. Para evitar esta falha, sugerimos que teste a ligação à sua base de dados.
-> 
-> Para obter as credenciais de acesso à base de dados incluída no alojamento web, consulte [este guia](/pages/web_cloud/web_hosting/sql_create_database).
->
-> Para obter os dados de acesso à sua base de dados criada numa instância Web Cloud Databases, consulte [este guia](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
->
-
 ##### Configurar o módulo
 
 Introduza as seguintes informações para a configuração do módulo:
@@ -142,6 +160,18 @@ Introduza as seguintes informações para a configuração do módulo:
 - *domínio:* domínio com o qual deseja instalar o seu CMS. Se necessário, consulte o nosso manual [Como partilhar o meu alojamento web com vários sites](/pages/web_cloud/web_hosting/multisites_configure_multisite).
 - *Linguagem:* língua na qual o CMS será instalado.
 - *caminho de instalação:* este é automaticamente indicado ao selecionar o domínio. Pode completá-lo introduzindo sub-diretórios (para os utilizadores mais experientes).
+
+> [!primary]
+>
+> Verifique, para o formulário `Caminho da instalação`, se o diretório pré-preenchido é aquele no qual deseja instalar o seu « módulo em 1 clique » com o seu nome de domínio.
+>
+> Nota: este diretório deve estar totalmente vazio.
+>
+> Além disso, se introduzir um subdiretório no `Caminho da instalação`, este aparecerá no URL de acesso ao seu "módulo em 1 clique".
+> Por exemplo, se introduzir no formulário um subdiretório *test*, o URL de acesso ao meu "módulo 1 clique" terá esta forma: **http://domain.tld/test/**.
+>
+> Se necessário, consulte o nosso guia "[Como partilhar o meu alojamento web entre vários sites](/pages/web_cloud/web_hosting/multisites_configure_multisite)" para modificar o diretório alvo do seu domínio.
+>
 
 Depois de preencher estas informações, clique no botão `Seguinte`{.action}:
 
@@ -190,10 +220,10 @@ Veja a nossa [oferta Web Cloud Databases](https://www.ovh.pt/cloud/cloud-databas
 
 [Gerir o CMS](/pages/web_cloud/web_hosting/cms_manage_1_click_module)
 
-[Desinstalar o seu CMS](/pages/web/hosting/cms_manage_1_click_module#etapa-3-eliminar-o-modulo)
+[Desinstalar o seu CMS](/pages/web_cloud/web_hosting/cms_manage_1_click_module#etapa-3-eliminar-o-modulo)
 
 Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
 
-Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>. 
+Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

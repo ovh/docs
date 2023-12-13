@@ -10,7 +10,7 @@ updated: 2022-08-02
 
 ## Wprowadzenie 
 
-W przypadku niedostępności Twojej strony możesz wyświetlić w przeglądarce kilka zwrotów błędów. Poniższe przykłady wskazują na nieprawidłową konfigurację Twoich [DNS](/pages/web/domains/dns_server_general_information#zrozumienie-pojecia-dns) lub domeny zawieszonej (jeśli Twoja strona nie wyświetla żadnego z komunikatów o błędzie opisanych tutaj, sprawdź sekcję [Sprawdź również](#gofurther)):
+W przypadku niedostępności Twojej strony możesz wyświetlić w przeglądarce kilka zwrotów błędów. Poniższe przykłady wskazują na nieprawidłową konfigurację Twoich [DNS](/pages/web_cloud/domains/dns_server_general_information#zrozumienie-pojecia-dns) lub domeny zawieszonej (jeśli Twoja strona nie wyświetla żadnego z komunikatów o błędzie opisanych tutaj, sprawdź sekcję [Sprawdź również](#gofurther)):
 
 |Przeglądarka|Komunikat błędu|
 |-|---|
@@ -30,9 +30,9 @@ W przypadku niedostępności Twojej strony możesz wyświetlić w przeglądarce 
 
 ## Wymagania początkowe
 
-- Zarządzanie serwerami i [strefą DNS](/pages/web/domains/dns_zone_edit#zrozumienie-pojecia-dns) domeny
+- Zarządzanie serwerami i [strefą DNS](/pages/web_cloud/domains/dns_zone_edit#zrozumienie-pojecia-dns) domeny
 - Zalogowanie do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
-- Aktualizacja w [płatności](/pages/account/billing/invoice_management#pay-bills) i [odnowienie](/pages/account/billing/how_to_use_automatic_renewal#renewal-management) powiązanych usług (domena i hosting)
+- Aktualizacja w [płatności](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) i [odnowienie](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) powiązanych usług (domena i hosting)
 
 ## W praktyce
 
@@ -43,7 +43,7 @@ W przypadku niedostępności Twojej strony możesz wyświetlić w przeglądarce 
 > Odnowienie usług należy do Ciebie.<br>
 > OVHcloud, jako dostawca hostingu, ma obowiązek definitywnie usunąć usługi (domeny, hosting, e-maile, itp.), które nie zostały odnowione na czas, jak również wszystkie zawarte w nich dane.
 >
-> W związku z tym zalecamy włączenie automatycznego[ ](/pages/account/billing/how_to_use_automatic_renewal#w-praktyce) odnowienia wszystkich Twoich subskrypcji OVHcloud.
+> W związku z tym zalecamy włączenie automatycznego[ ](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#w-praktyce) odnowienia wszystkich Twoich subskrypcji OVHcloud.
 >
 
 Aby sprawdzić poprawność subskrypcji Twojej domeny, w prawym górnym rogu Panelu klienta kliknij Twoją nazwę, aby wyświetlić menu PPM, następnie `Produkty i usługi`{.action}.
@@ -78,7 +78,7 @@ Ostrzeżenie w zakładce `Strefa DNS`{.action} wskazuje, że serwery DNS używan
 
 ![warning_other_ovh_dns_srv](images/warning_other_ovh_dns_srv.png){.thumbnail}
 
-Zmień serwery DNS zgodnie z instrukcjami zawartymi w [tym przewodniku](/pages/web/domains/dns_server_general_information#zmien-serwery-dns), aby były one identyczne z celami wpisów typu `NS` w `Strefa DNS`{.action}.
+Zmień serwery DNS zgodnie z instrukcjami zawartymi w [tym przewodniku](/pages/web_cloud/domains/dns_server_general_information#zmien-serwery-dns), aby były one identyczne z celami wpisów typu `NS` w `Strefa DNS`{.action}.
 
 Twoja strona będzie dostępna w ciągu maksymalnie 48 godzin.
 
@@ -90,7 +90,7 @@ Twoja strona będzie dostępna w ciągu maksymalnie 48 godzin.
 >
 > W takiej sytuacji przed przystąpieniem do jakichkolwiek czynności, należy skontaktować się z dostawcą usług hostowanych w strefie DNS, webmasterem lub [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
 >
-> Możliwe, że serwery DNS używane przez Twoją domenę działają i że problem z dostępem do Twojej strony jest związany z brakującym lub nieprawidłowym wpisem w [strefie DNS](/pages/web/domains/dns_zone_edit#zrozumienie-pojecia-dns). Każda zmiana serwerów DNS może spowodować niedostępność Twoich kont e-mail lub innych aplikacji online.
+> Możliwe, że serwery DNS używane przez Twoją domenę działają i że problem z dostępem do Twojej strony jest związany z brakującym lub nieprawidłowym wpisem w [strefie DNS](/pages/web_cloud/domains/dns_zone_edit#zrozumienie-pojecia-dns). Każda zmiana serwerów DNS może spowodować niedostępność Twoich kont e-mail lub innych aplikacji online.
 >
 
 #### Scenariusz 3: w strefie DNS nie pojawia się żaden wpis typu NS
@@ -123,7 +123,7 @@ W zakładce `Informacje ogólne`{.action} skopiuj adres IPV4 i/lub IPV6 Twojej d
 
 ![ipv4-6](images/ipv4-6.png){.thumbnail}
 
-Następnie przenieś domenę do [strefy DNS](/pages/web/domains/dns_zone_edit#modyfikacja-strefy-dns-domeny), modyfikując lub dodając jeden lub więcej rekordów typu `A`.
+Następnie przenieś domenę do [strefy DNS](/pages/web_cloud/domains/dns_zone_edit#modyfikacja-strefy-dns-domeny), modyfikując lub dodając jeden lub więcej rekordów typu `A`.
 
 ![ipv4-DNSzone](images/ipv4-DNSzone.png){.thumbnail}
 

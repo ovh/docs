@@ -32,7 +32,7 @@ Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?actio
 
 ![Volume Snapshot](images/volume_snapshot01.png){.thumbnail}
 
-A droite du volume concerné, cliquez sur `...`{.action} puis sur `Créer un snapshot`{.action} (il n'est pas nécessaire de détacher d'abord le volume de son instance). Cependant, si vous souhaitez détacher votre volume, nous vous invitons à consulter [cette section](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance#sous-linux) du guide correspondant pour Linux et  [cette section](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance#sous-windows) pour Windows.
+A droite du volume concerné, cliquez sur `...`{.action} puis sur `Créer un snapshot`{.action} (il n'est pas nécessaire de détacher d'abord le volume de son instance). Cependant, si vous souhaitez détacher votre volume, nous vous invitons à consulter [cette section](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance#sous-linux) du guide correspondant pour Linux et  [cette section](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance#sous-windows) pour Windows.
 
 ![Volume Snapshot](images/volume_snapshot02.png){.thumbnail}
 

@@ -33,4 +33,4 @@ type: 'php:8.0'
 
 The `.platform.app.yaml` file also supports a `runtime` key that allows selected customizations to the language runtime. As those possibilities vary by language, please see the appropriate language documentation.
 
-* [PHP](/pages/web/web-paas/languages-php#runtime-configuration)
+* [PHP](/pages/web_cloud/web_paas_powered_by_platform_sh/languages/php/languages-php#runtime-configuration)

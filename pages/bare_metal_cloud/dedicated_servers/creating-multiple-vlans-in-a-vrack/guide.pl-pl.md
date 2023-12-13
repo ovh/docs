@@ -1,7 +1,7 @@
 ---
 title: 'Tworzenie kilku sieci VLAN w prywatnej sieci vRack'
 excerpt: 'Dowiedz się, jak utworzyć kilka sieci VLAN w prywatnej sieci vRack'
-updated: 2022-02-24
+updated: 2023-09-12
 ---
 
 ## Wprowadzenie
@@ -71,7 +71,7 @@ ip a
 
 Tutaj interfejs, który chcemy skonfigurować jest `eno2` z adresem MAC: ` d0:50:99:d6:6b:14.
 
-![ubuntu VLAN](images/vrack3-ubuntu-01.png)
+![ubuntu VLAN](images/vrack3-ubuntu-01.png){.thumbnail}
 
 Dodaj konfigurację sieci dla tego interfejsu sieciowego i deklarację sieci VLAN w następującym pliku:
 
@@ -110,7 +110,7 @@ Aby potwierdzić konfigurację, należy użyć następującego polecenia:
 ip a
 ```
 
-![ubuntu VLAN](images/vrack3-ubuntu-02.png)
+![ubuntu VLAN](images/vrack3-ubuntu-02.png){.thumbnail}
 
 #### Debian
 
@@ -152,7 +152,11 @@ Połącz się z serwerem przez zdalny pulpit i otwórz aplikację “Server Mana
 
 ![Windows VLAN](images/vrack2-windows-01.png){.thumbnail}
 
-W kolejnym kroku utwórz nowy zespół kart sieciowych, zaznaczając interfejs sieciowy i wpisując nazwę zespołu w polu **Team name**. Czynność tę zatwierdź, klikając `OK`{.action}:
+Następnie kliknij prawym przyciskiem myszy interfejs sieciowy i wybierz `Add to New Team`{.action}.
+
+![Windows vLAN](images/vrack2-windows-02.0.png){.thumbnail}
+
+W oknie, które się wyświetli, utwórz nowy zespół, wpisując nazwę zespołu w polu **Team name**. Po zakończeniu zatwierdź przyciskiem `OK`{.action}.
 
 ![Windows VLAN](images/vrack2-windows-02.png){.thumbnail}
 
@@ -172,13 +176,15 @@ Kliknij `Network and Sharing Center`{.action}:
 
 ![Windows VLAN](images/vrack2-windows-06.png){.thumbnail}
 
-Kliknij `Zmodyfikuj parametry adaptera`{.action} :
+Kliknij `Modifier les paramètres de l’adaptateur`{.action} :
 
 ![Windows VLAN](images/vrack2-windows-07.png){.thumbnail}
 
 Następnie kliknij prawym przyciskiem myszy interfejs VLAN, po czym kliknij `Properties`{.action}:
 
 ![Windows VLAN](images/vrack2-windows-08.png){.thumbnail}
+
+W naszym przykładzie `Ethernet 2` to interfejs używany w sieci vRack. Możliwe jest jednak, że karta sieciowa vRack używa innego interfejsu. Korzystaj z interfejsu, który nie posiada głównego adresu IP serwera lub który używa przypisanego do siebie adresu IP.
 
 Kliknij dwa razy `Internet Protocol Version 4 (TCP/IP/IPv4)`{.action}.
 

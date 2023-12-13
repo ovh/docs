@@ -1,7 +1,7 @@
 ---
 title: 'Eine Datenbank Ihres Datenbankservers sichern und exportieren'
 excerpt: 'Hier erfahren Sie, wie Sie Ihre Datenbank sichern und exportieren können'
-updated: 2023-02-15
+updated: 2023-10-26
 ---
 
 > [!primary]
@@ -62,13 +62,13 @@ In manchen Fällen kann es sein, dass der auf Ihrem Datenbankserver verfügbare 
 
 ##### 1\.1 MySQL oder MariaDB Datenbank über OVHcloud phpMyAdmin exportieren 
 
-Um Ihre Datenbank direkt über phpMyAdmin zu exportieren, müssen Sie sich zuerst mit ihr verbinden. Folgen Sie hierzu den Schritten im Abschnitt ["Mit einer MySQL oder MariaDB Datenbank verbinden"](/pages/web/clouddb/connecting-to-database-on-database-server#mit-einer-mysql-oder-mariadb-datenbank-verbinden).
+Um Ihre Datenbank direkt über phpMyAdmin zu exportieren, müssen Sie sich zuerst mit ihr verbinden. Folgen Sie hierzu den Schritten im Abschnitt ["Mit einer MySQL oder MariaDB Datenbank verbinden"](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server#mit-einer-mysql-oder-mariadb-datenbank-verbinden).
 
 Wenn Sie in phpMyAdmin eingeloggt sind, klicken Sie auf den Namen der Datenbank, die Sie exportieren möchten, und anschließend auf den Tab `Exportieren`{.action}.
 
 Sie haben zwei mögliche Exportmethoden. Wenn Sie keine besonderen Bedürfnisse haben, empfehlen wir Ihnen die Verwendung des Schnellmodus im **SQL**-Format.
 
-![Web Cloud Databases](images/web-cloud-databases-export01.png){.thumbnail}
+![Web Cloud Databases](images/pma-export-backup-web-cloud-db.png){.thumbnail}
 
 ##### 1\.2 MySQL oder MariaDB Datenbank über die Kommandozeile exportieren
 

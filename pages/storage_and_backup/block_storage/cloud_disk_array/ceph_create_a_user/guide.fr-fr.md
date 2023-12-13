@@ -34,7 +34,7 @@ Après la création de l'utilisateur, vous revenez au gestionnaire. Vous pouvez 
 
 > [!api]
 >
-> @api {POST} /dedicated/ceph/{serviceName}/user
+> @api {v1} /dedicated/ceph POST /dedicated/ceph/{serviceName}/user
 >
 serviceName est le fsid de votre cluster.
 

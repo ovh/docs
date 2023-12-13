@@ -107,7 +107,7 @@ Następnie potwierdź hasło do źródłowego konta e-mail (które chcesz przeni
 >
 >![exchange](images/account_migration_adddomain.png){.thumbnail}
 >
-> Aby uzyskać więcej informacji na temat dodania domeny, sprawdź [przewodnik E-mail Pro](/pages/web/emails-pro/first_config#etap-2-dodanie-domeny) lub [przewodnik Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain).
+> Aby uzyskać więcej informacji na temat dodania domeny, sprawdź [przewodnik E-mail Pro](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config#etap-2-dodanie-domeny) lub [przewodnik Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_adding_domain).
 
 Migracja MXPlan przebiega 3 etapach. **Zmień nazwę**, **Utwórz** i **Migracja**.
 

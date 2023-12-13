@@ -1,7 +1,7 @@
 ---
 title: 'Guardar y exportar una base de datos en un servidor de bases de datos'
 excerpt: 'Cómo realizar el backup y la exportación de la base de datos'
-updated: 2023-02-15
+updated: 2023-10-26
 ---
 
 > [!primary]
@@ -66,7 +66,7 @@ Una vez conectado a phpMyAdmin, haga clic en el nombre de la base de datos que q
 
 Hay dos modos de exportación posibles. Si no necesita ayuda específica, le recomendamos que utilice el modo **rápido** en formato **SQL**.
 
-![Web Cloud Databases](images/web-cloud-databases-export01.png){.thumbnail}
+![Web Cloud Databases](images/pma-export-backup-web-cloud-db.png){.thumbnail}
 
 ##### 1\.2 Exportar la base de datos MySQL o MariaDB en línea de comandos
 
@@ -118,7 +118,7 @@ pg_dump —host=servidor —port=puerto —user=usuario —password=contraseña 
 
 [Restaurar e importar una base de datos en su servidor de bases de datos](/pages/web_cloud/web_cloud_databases/restore-import-on-database-server)
 
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory).
 
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es-es/support-levels/).
 

@@ -55,7 +55,7 @@ Esta instrução permite consultar detalhes de uma Farm se conhecer o seu ID. Ne
 
 > [!api]
 >
-> @api {GET} /ipLoadbalancing/{serviceName}/http/farm/{farmId}
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/http/farm/{farmId}
 > 
 
 |Parâmetro|Significado|
@@ -79,7 +79,7 @@ Esta instrução permite modificar a configuração de uma Farm se conhecer o se
 
 > [!api]
 >
-> @api {PUT} /ipLoadbalancing/{serviceName}/http/farm/{id}
+> @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/http/farm/{id}
 > 
 
 |Parâmetro|Significado|
@@ -92,7 +92,7 @@ Esta instrução permite modificar a configuração de uma Farm se conhecer o se
 
 > [!api]
 >
-> @api {POST} /ipLoadbalancing/{serviceName}/refresh
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/refresh
 > 
 
 |Parâmetro|Significado|

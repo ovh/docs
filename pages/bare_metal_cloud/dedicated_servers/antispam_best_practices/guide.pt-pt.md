@@ -53,7 +53,7 @@ O procedimento consiste em identificar o problema, resolvê-lo e desbloquear o s
 - Elimine o envio de e-mail (por exemplo: parar todos os softwares de e-mail como o qmail, Postfix, Sendmail, etc.).
 - Verifique a fila de espera dos e-mails (por exemplo qmHandle para qmail, postfila -p para Postfix) e esvazie-a.
 - Analise os logs graças à **Message-ID** presente no alerta de bloqueio.
-- Se enviar SPAM ou e-mails ilegítimos, recomendamos vivamente que resolva o problema **antes** de desbloquear o endereço IP. Consulte este guia para [melhores práticas (EN)](/pages/cloud/dedicated/antispam_best_practices#bestpractices) no matéria de envio de e-mails. 
+- Se enviar SPAM ou e-mails ilegítimos, recomendamos vivamente que resolva o problema **antes** de desbloquear o endereço IP. Consulte este guia para [melhores práticas (EN)](/pages/bare_metal_cloud/dedicated_servers/antispam_best_practices#bestpractices) no matéria de envio de e-mails. 
 
 Uma vez o problema resolvido, pode desbloquear o seu endereço IP efetuando os passos seguintes.
 
@@ -66,7 +66,7 @@ Uma vez o problema resolvido, pode desbloquear o seu endereço IP efetuando os p
 
 #### Desbloquear o endereço IP a partir da Área de Cliente
 
-Na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), aceda à secção `Bare Metal Cloud`{.action} e clique em `IP`{.action}.
+Na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), aceda à secção `Bare Metal Cloud`{.action} e clique em `Network`{.action}. De seguida, clique em `IP`{.action}.
 
 No quadro amarelo dedicado aos alertas, clique na seta pendente `Ver todos os meus alertas`{.action} para apresentar todos os alertas no(s) seu(s) endereço(s) IP.
 
@@ -94,7 +94,7 @@ Em primeiro lugar, obtenha a lista dos endereços IP de cada serviço OVHcloud (
 
 > [!api]
 >
-> @api {GET} /ip
+> @api {v1} /ip GET /ip
 >
 
 **tipo**: Indique o tipo de IP (Dedicated, PCC, VPS, vRack, PCI, etc.)
@@ -115,7 +115,7 @@ A seguir, procure os endereços IP num determinado estado graças à seguinte ch
 
 > [!api]
 >
-> @api {GET} /ip/{ip}/spam
+> @api {v1} /ip GET /ip/{ip}/spam
 >
 
 **ip** : especifique o bloco de IP recuperado no passo anterior com a máscara de rede. Por exemplo, 122.122.122.121/28.<br>
@@ -131,7 +131,7 @@ Para obter informações sobre o bloqueio, aceda à seguinte chamada. Caso contr
 
 > [!api]
 >
-> @api {GET} /ip/{ip}/spam/{ipSpamming}
+> @api {v1} /ip GET /ip/{ip}/spam/{ipSpamming}
 >
 
 **ip** : especifique o bloco de IP recuperado no passo anterior com a máscara de rede.<br>
@@ -158,7 +158,7 @@ Se deseja obter as estatísticas sobre o que foi detetado, utilize a chamada api
 
 > [!api]
 >
-> @api {GET} /ip/{ip}/spam/{ipSpamming}/stats
+> @api {v1} /ip GET /ip/{ip}/spam/{ipSpamming}/stats
 >
 
 **ip** : especifique o bloco de IP recuperado no passo anterior com a máscara de rede.<br>
@@ -187,7 +187,7 @@ Para desbloquear o seu endereço IP, utilize a seguinte chamada:
 
 > [!api]
 >
-> @api {POST} /ip/{ip}/spam/{ipSpamming}/unblock
+> @api {v1} /ip POST /ip/{ip}/spam/{ipSpamming}/unblock
 >
 
 **ip** : especifique o bloco de endereços IP recuperado no passo anterior com a máscara de rede.<br>
@@ -212,7 +212,7 @@ O endereço IP está a ser desbloqueado e a operação pode levar alguns minutos
 
 ### Em caso de falsos positivos
 
-Em alguns casos, o alerta de spam pode ser um falso positivo. Se tiver verificado e descoberto que o **ID da mensagem*** está associado a um e-mail legítimo, deve assegurar-se que os seus e-mails estão em conformidade com [RFC (EN)](/pages/cloud/dedicated/antispam_best_practices#rfc) e [boas práticas (EN)](/pages/cloud/dedicated/antispam_best_practices#bestpractices).
+Em alguns casos, o alerta de spam pode ser um falso positivo. Se tiver verificado e descoberto que o **ID da mensagem*** está associado a um e-mail legítimo, deve assegurar-se que os seus e-mails estão em conformidade com [RFC (EN)](/pages/bare_metal_cloud/dedicated_servers/antispam_best_practices#rfc) e [boas práticas (EN)](/pages/bare_metal_cloud/dedicated_servers/antispam_best_practices#bestpractices).
 
 ## Quer saber mais?
  

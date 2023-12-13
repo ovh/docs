@@ -29,7 +29,7 @@ Mithilfe dieser Anleitung können Sie Ihre ersten Inhalte erstellen, organisiere
 
 ## In der praktischen Anwendung
 
-Falls nicht bereits vorhanden, installieren Sie ein [SSL-Zertifikat](/pages/web/hosting/ssl-activate-https-website#schritt-1-ssl-zertifikat-fur-das-hosting-aktivieren) für den zu Ihrer Website gehörenden Domainnamen.
+Falls nicht bereits vorhanden, installieren Sie ein [SSL-Zertifikat](/pages/web_cloud/web_hosting/ssl-activate-https-website#schritt-1-ssl-zertifikat-fur-das-hosting-aktivieren) für den zu Ihrer Website gehörenden Domainnamen.
 
 Bei der Installation Ihres CMS als 1-Klick Modul erhalten Sie eine E-Mail mit den notwendigen Informationen zur Weiterführung dieses Tutorials:
  

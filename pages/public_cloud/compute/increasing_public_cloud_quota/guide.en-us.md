@@ -1,7 +1,6 @@
 ---
 title: 'Increasing Public Cloud quotas'
 excerpt: 'Find out how to apply for a Public Cloud quota extension'
-legacy_guide_number: 1904
 updated: 2023-05-03
 ---
 
@@ -34,13 +33,13 @@ Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanag
 
 In the left-hand sidebar, click on `Quota and Regions`{.action}.
 
-![access quota](images/raisepciquota2021.png){.thumbnail}
+![access quota](images/raisepciquota1-2023.png){.thumbnail}
 
 This page provides an overview of regions and their available resources. A warning will be displayed next to a resource as soon as 80% of its current quota is reached.
 
 Click on the `Increase your quota!`{.action} button.
 
-![raise-pci-quota](images/raisepciquota2021b.png){.thumbnail}
+![raise-pci-quota](images/raisepciquota2023.png){.thumbnail}
 
 Next, click on the drop down arrow next to "Select the volume" to view the list of quotas currently available to upgrade your resources to. This section also shows the amount to pay in order to benefit from these resources.
 
@@ -76,7 +75,7 @@ In the left-hand sidebar, click on `Quota and Regions`{.action}.
 
 Click on the `?`{.action} button for more information on this feature, then click on the `toggle icon`{.action} to switch the status to "**Enabled**".
 
-![auto scaling](images/autoscaling.png){.thumbnail}
+![auto scaling](images/autoscaling2023.png){.thumbnail}
 
 Once done, auto-scaling will be enabled for your project and your resources quota will be increased over the course of time.
 

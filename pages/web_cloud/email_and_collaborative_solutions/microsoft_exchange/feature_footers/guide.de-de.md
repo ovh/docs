@@ -47,7 +47,7 @@ Bitte beachten Sie die folgenden Hinweise, bevor Sie Signaturen für Benutzer ei
 ![Exchange Signaturen](images/exchange-footer-step5.png){.thumbnail}
 
 - Die Signatur wird ohne Abstand zum E-Mail-Körper hinzugefügt. Daher empfiehlt es sich, die Signatur mit mindestens einer leeren Zeile zu beginnen.
-- Im OWA wird nicht angezeigt, ob ein Footer für eine Domain aktiviert wurde, und es gibt **keine Synchronisation**. Wenn Benutzer ihre [eigenen Signaturen](/pages/web/emails/email_owa#eine-signatur-hinzufugen) hinzufügen, werden E-Mails sowohl den eigenen als auch den für die gesamte Domain erstellten Footer enthalten.
+- Im OWA wird nicht angezeigt, ob ein Footer für eine Domain aktiviert wurde, und es gibt **keine Synchronisation**. Wenn Benutzer ihre [eigenen Signaturen](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/email_owa#eine-signatur-hinzufugen) hinzufügen, werden E-Mails sowohl den eigenen als auch den für die gesamte Domain erstellten Footer enthalten.
 - Der Editor unterstützt HTML-Formatierung, Hyperlinks, Bilder etc. Allerdings sollten sich Signaturen nicht zu sehr auf diese Optionen stützen. Empfänger verwenden möglicherweise E-Mail-Clients, die HTML und eingebundene Bilder nicht erlauben, oder die Signaturen werden anders angezeigt, als geplant. Beachten Sie, dass HTML-Tags vollständig entfernt werden, wenn eine E-Mail über OWA als „Plain Text“ versendet wird.
 - „Initialen“ sind für den Dienst nicht aktiv. Wenn Sie diese Variable hinzufügen, hat dies keinerlei Auswirkungen.
 

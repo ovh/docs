@@ -1,7 +1,7 @@
 ---
 title: 'Primeiros passos com as API OVHcloud'
 excerpt: 'Saiba como utilizar as API da OVHcloud'
-updated: 2023-08-24
+updated: 2023-09-08
 ---
 
 > [!primary]
@@ -71,7 +71,7 @@ Por exemplo, para obter a lista dos seus nomes de domínio, utilize a seguinte A
  
 > [!api]
 >
-> @api {GET} /domain
+> @api {v1} /domain GET /domain
 >
 
 **POST**
@@ -82,7 +82,7 @@ Por exemplo, para adicionar um registo à sua zona DNS, utilize a seguinte API:
 
 > [!api]
 >
-> @api {POST} /domain/zone/{zoneName}/record
+> @api {v1} /domain POST /domain/zone/{zoneName}/record
 >
 
 **PUT**
@@ -93,7 +93,7 @@ Por exemplo, se se enganou num registo da sua zona DNS, utilize a seguinte API:
 
 > [!api]
 >
-> @api {PUT} /domain/zone/{zoneName}/record/{id}
+> @api {v1} /domain PUT /domain/zone/{zoneName}/record/{id}
 >
 
 **LETE**
@@ -104,7 +104,7 @@ Por exemplo, se não deseja conservar o registo DNS que adicionou à sua zona DN
 
 > [!api]
 >
-> @api {DELETE}  /domain/zone/{zoneName}/record/{id}
+> @api {v1} /domain DELETE /domain/zone/{zoneName}/record/{id}
 >
 
 ##### Parâmetros da API
@@ -126,11 +126,6 @@ Os separadores `PHP` e `Python` contêm os elementos que devem ser adicionados n
 ### Utilização avançada: associar as API OVHcloud a uma aplicação
 
 #### Criar as chaves da sua aplicação
-
-> [!success]
->
-> As API da OVHcloud são agora compatíveis com o protocolo Oauth2. Encontre mais informações no guia [Como se autenticar na API OVHcloud com Oauth2 (EN)](/pages/account_and_service_management/account_information/authenticate-api-with-service-account).
->
 
 Qualquer aplicação que pretenda comunicar com a API da OVHcloud deve ser declarada previamente.
 

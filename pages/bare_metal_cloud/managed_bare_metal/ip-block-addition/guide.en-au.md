@@ -1,7 +1,6 @@
 ---
 title: Adding an IP block
 excerpt: Find out how to order an IP block on your Managed Bare Metal
-legacy_guide_number: '7766457'
 updated: 2020-11-18
 ---
 
@@ -58,7 +57,7 @@ Use the following API call:
 
 > [!api]
 >
-> @api {POST} /ip/{ip}/move
+> @api {v1} /ip POST /ip/{ip}/move
 > 
 
 The fields must be completed as follows:
@@ -77,7 +76,7 @@ Then use this API call to move the IP addresses to "IP parking":
 
 > [!api]
 >
-> @api {POST} /ip/{ip}/park
+> @api {v1} /ip POST /ip/{ip}/park
 > 
 
 > [!warning]

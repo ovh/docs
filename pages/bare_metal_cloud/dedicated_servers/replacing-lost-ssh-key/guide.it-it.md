@@ -34,7 +34,7 @@ Per accedere al tuo server in [modalità Rescue OVHcloud](/pages/bare_metal_clou
 
 Per accedere al tuo server in modalità Rescue, la chiave SSH attiva deve essere disattivata.
 
-Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e naviga fino alla sezione `Chiavi SSH`{.action}. Se necessario, consulta la guida ["Creare una chiave SSH"](/pages/cloud/dedicated/creating-ssh-keys-dedicated#cpsshkey).
+Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e naviga fino alla sezione `Chiavi SSH`{.action}. Se necessario, consulta la guida ["Creare una chiave SSH"](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated#cpsshkey).
 
 La chiave pubblica salvata nello Spazio Cliente è inutile senza la chiave privata corrispondente, puoi quindi eliminarla. Clicca sul pulsante <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> a destra della chiave e seleziona `Elimina la chiave`{.action}.
 
@@ -52,8 +52,8 @@ Segui gli step della guida sulla [modalità Rescue](/pages/bare_metal_cloud/dedi
 
 Quando hai accesso ai tuoi file, apri il file "authorized_keys" in un editor di testo. Questo file salva le chiavi SSH e si trova nella cartella `home` dell'utente connesso al tuo server. (Sostituisci "USER_NAME" con il tuo nome utente)
 
-```
-rescue-customer:~# sudo nano /mnt/home/USER_NAME/.ssh/authorized_keys
+```bash
+sudo nano /mnt/home/USER_NAME/.ssh/authorized_keys
 ```
 
 Copia e incolla la tua nuova chiave pubblica (creata allo Step 2) nel file. Il contenuto del file dovrebbe essere simile a questo esempio:

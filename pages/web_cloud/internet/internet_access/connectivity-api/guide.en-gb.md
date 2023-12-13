@@ -106,7 +106,7 @@ The request:
 
 > [!api]
 >
-> @api {POST} /connectivity/eligibility/search/cities
+> @api {v1} /connectivity POST /connectivity/eligibility/search/cities
 >
 
 with the following data:
@@ -154,7 +154,7 @@ The request:
 
 > [!api]
 >
-> @api {POST} /connectivity/eligibility/search/streets
+> @api {v1} /connectivity POST /connectivity/eligibility/search/streets
 >
 
 with the following data:
@@ -204,7 +204,7 @@ The request:
 
 > [!api]
 >
-> @api {POST} /connectivity/eligibility/search/streetNumbers
+> @api {v1} /connectivity POST /connectivity/eligibility/search/streetNumbers
 >
 
 with the following data:
@@ -249,7 +249,7 @@ The request:
 
 > [!api]
 >
-> @api {POST} /connectivity/eligibility/search/buildings
+> @api {v1} /connectivity POST /connectivity/eligibility/search/buildings
 >
 
 with the following data:
@@ -287,7 +287,7 @@ The request:
 
 > [!api]
 >
-> @api {POST} /connectivity/eligibility/search/buildingsByLine
+> @api {v1} /connectivity POST /connectivity/eligibility/search/buildingsByLine
 >
 
 with the following data:
@@ -341,7 +341,7 @@ Here is the request:
 
 > [!api]
 >
-> @api {POST} /connectivity/eligibility/test/line
+> @api {v1} /connectivity POST /connectivity/eligibility/test/line
 >
 
 to do with the following POST data:
@@ -549,7 +549,7 @@ The request:
 
 > [!api]
 >
-> @api {POST} /connectivity/eligibility/search/lines
+> @api {v1} /connectivity POST /connectivity/eligibility/search/lines
 >
 
 with the following POST data:
@@ -621,7 +621,7 @@ The request:
 
 > [!api]
 >
-> @api {POST} /connectivity/eligibility/test/address
+> @api {v1} /connectivity POST /connectivity/eligibility/test/address
 >
 
 with the following data:
@@ -777,7 +777,7 @@ The request:
 
 > [!api]
 >
-> @api {POST} /connectivity/eligibility/test/building
+> @api {v1} /connectivity POST /connectivity/eligibility/test/building
 >
 
 with the following data:
@@ -861,7 +861,7 @@ The request:
 
 > [!api]
 >
-> @api {POST} /connectivity/eligibility/test/otp
+> @api {v1} /connectivity POST /connectivity/eligibility/test/otp
 >
 
 with the following data:

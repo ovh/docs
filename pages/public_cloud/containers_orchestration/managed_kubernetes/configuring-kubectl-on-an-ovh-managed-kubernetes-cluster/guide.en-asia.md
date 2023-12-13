@@ -4,28 +4,6 @@ excerpt: Find out how to retrieve the `kubectl` configuration file to interact w
 updated: 2022-04-27
 ---
 
-<style>
- pre {
-     font-size: 14px;
- }
- pre.console {
-   background-color: #300A24; 
-   color: #ccc;
-   font-family: monospace;
-   padding: 5px;
-   margin-bottom: 5px;
- }
- pre.console code {
-   border: solid 0px transparent;
-   font-family: monospace !important;
-   font-size: 0.75em;
-   color: #ccc;
- }
- .small {
-     font-size: 0.75em;
- }
-</style>
-
 ## Objective
 
 The OVHcloud Managed Kubernetes service gives you access to Kubernetes clusters, without the hassle of installing or operating them. 
@@ -99,13 +77,14 @@ kubectl cluster-info
 
 The cluster should return a response with some key information about itself:
 
-<pre class="console"><code>$ kubectl cluster-info
+```console
+$ kubectl cluster-info
 Kubernetes control plane is running at https://xxxxxx.c2.gra.k8s.ovh.net
 CoreDNS is running at https://xxxxxx.c2.gra.k8s.ovh.net/api/v1/namespaces/kube-system/services/kube-dns:dns/proxy
 Metrics-server is running at https://xxxxxx.c2.gra.k8s.ovh.net/api/v1/namespaces/kube-system/services/https:metrics-server:/proxy
 
 To further debug and diagnose cluster problems, use 'kubectl cluster-info dump'.
-</code></pre>
+```
 
 ### Define the access for several Kubernetes clusters
 
@@ -119,12 +98,13 @@ export KUBECONFIG=/Users/myuser/.kube/my-test-cluster.yml:/Users/myuser/.kube/my
 
 You can switch between different clusters by using the `kubectl config`{.action} command.
 
-<pre class="console"><code>$ kubectl config use-context kubernetes-admin@my-test-cluster
+```console
+$ kubectl config use-context kubernetes-admin@my-test-cluster
 Switched to context "kubernetes-admin@my-test-cluster".
 
 $ kubectl config use-context kubernetes-admin@my-test-cluster2
 Switched to context "kubernetes-admin@my-test-cluster2".
-</code></pre>
+```
 
 Or you can install and use [kubectx](https://github.com/ahmetb/kubectx).
 

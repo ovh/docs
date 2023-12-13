@@ -1,10 +1,14 @@
 ---
 title: "Alojamento web: primeira utilização"
-excerpt: Saiba como usar e gerir um alojamento web (primeira utilização)
-updated: 2022-11-11
+excerpt: "Saiba como usar e gerir um alojamento web (primeira utilização)"
+updated: 2023-11-16
 ---
 
-## Sumário
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
+
+## Objetivo
 
 O alojamento web da OVHcloud oferece várias possibilidades de utilização e configuração. Esta guia introdutório contém informação para começar a tirar partido dessas possibilidades. 
 
@@ -18,6 +22,11 @@ O alojamento web da OVHcloud oferece várias possibilidades de utilização e co
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}.
 
 ## Instruções
+
+> [!success]
+>
+> Antes de continuar a ler este manual, certifique-se de que o domínio ou subdomínio que pretende utilizar está corretamente associado ao seu alojamento web da OVHcloud. Para isso, consulte o guia "[Partilhar o alojamento web da OVHcloud entre vários websites](/pages/web_cloud/web_hosting/multisites_configure_multisite)".
+>
 
 ### 1 - Tipo de Projeto: Criar ou Transferir um Site.
 
@@ -43,7 +52,7 @@ Os módulos 1 clique da OVHcloud permitem instalar um CMS de forma simples e rá
 
 Antes continuar, certifique-se que a pasta de instalação está vazia e que o sistema pode criar uma nova base de dados. Na primeira utilização do alojamento, esta verificação não é necessária. Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} para instalar o módulo CMS. Clique em `Alojamentos`{.action} e, de seguida, no nome do alojamento web que contratou. Depois, nos `Módulos 1 clique`{.action}, clique no botão `Adicionar um módulo`{.action}.
 
-![Acesso aos módulos 1 clique](images/access_to_the_1_click_modules_section.png){/thumbnail}
+![Acesso aos módulos 1 clique](images/access-to-the-1-click-modules-section.png){.thumbnail}
 
 Para iniciar a instalação, selecione o CMS pretendido. Certifique-se que a `Instalação em modo avançado`{.action} não está selecionada. Agora clique no botão `Instalar`{.action}.
 
@@ -62,11 +71,11 @@ Para instalar o módulo no modo avançado, certifique-se que:
 
 Para verificar ou criar uma bases de dados, aceda à [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Clique em `Alojamentos`{.action} e selecione o alojamento web que contratou. Selecione `Bases de dados`{.action}. Se não tiver nenhuma base de dados criada, clique no botão `Criar uma base de dados`{.action}. Siga as instruções, e aguarde a conclusão da instalação.
 
-![Acesso aos módulos 1 clique](images/create_a_database.png){/thumbnail}
+![Acesso aos módulos 1 clique](images/create-a-database-2.png){.thumbnail}
 
 Depois de criar a base de dados, selecione `Módulos 1 clique`{.action}, e clique no botão `Adicionar um módulo`{.action}. Selecione o CMS, certifique-se que a ` instalação em modo avançado`{.action} está selecionada. Clique no botão `Seguinte`{.action}:
 
-![Acesso aos módulos 1 clique](images/access_to_the_1_click_modules_section.png){/thumbnail}
+![Acesso aos módulos 1 clique](images/access-to-the-1-click-modules-section.png){.thumbnail}
 
 Siga as instruções e aguarde a conclusão da instalação. No final, irá receber o e-mail de confirmação da instalação, com os dados de acesso ao CMS.
 
@@ -82,7 +91,7 @@ Atenção! Este processo pode variar de acordo com o tipo de site. Se precisar d
 
 A utilização dos serviços de e-mail incluídos no [alojamento web](https://www.ovhcloud.com/pt/web-hosting/){.external} é opcional. Para criar e usar um ou vários endereços de e-mail associados ao seu domínio, aceda à [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Selecione `E-mails`{.action} e clique no alojamento contratado. No separador`E-mails`{.action}, clique no botão `Criar um endereço de e-mail`{.action}.
 
-![Criar um endereço de e-mail](images/create_an_email_address.png){/thumbnail}
+![Criar um endereço de e-mail](images/create-an-email-address.png){.thumbnail}
 
 Siga as instruções e insira a informação necessária. Repita este passo para criar mais endereços. Pretende transferir as suas mensagens de e-mail para a OVH? Use o [OVH Mail Migrator](https://omm.ovh.net/){.external}, e siga as instruções apresentadas. 
 
@@ -104,13 +113,13 @@ Existem dois registos DNS (campos A e MX) que permitem aceder ao seu site e rece
 
 Para consultar o campo A, e os dados que deve usar na zona DNS, aceda à [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Selecione `Alojamentos`{.action}, e clique no alojamento contratado. De seguida, em `Informações gerais`{.action}, tome nota do endereço IP indicado para «IPv4».
 
-![Alterar o campo A](images/know_the_OVH_A_records.png){/thumbnail}
+![Alterar o campo A](images/know-the-ovh-a-records.png){.thumbnail}
 
 - **Campos MX (receção de e-mail)**
 
 Para consultar os campos MX, e os dados que deve usar na zona DNS, aceda à [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Selecione `E-mails`{.action} e clique no alojamento web contratado. De seguida, clique em `Informações gerais`{.action}, e tome nota das informações indicadas para os «Campos MX». Estes campos podem diferir entre serviços, em função da filtragem DNS selecionada na área de gestão do alojamento.
 
-![Alterar os campos MX](images/know_the_OVH_MX_records.png){/thumbnail}
+![Alterar os campos MX](images/know-the-ovh-mx-records.png){.thumbnail}
 
 #### Verificar e/ou alterar os registos DNS
 
@@ -143,9 +152,9 @@ Instalou um CMS com um dos Módulos 1 Clique e recebeu um e-mail com os dados do
 
 Os seus endereços de e-mail podem ser usados com o Roundcube, um serviço de webmail incluído na oferta de alojamento OVHcloud. Aceda a <https://www.ovhcloud.com/pt/mail/>, e preencha os dados associados ao endereço de e-mail criado através do sistema OVHcloud.
 
-Para saber mais sobre o RoundCube, consulte o guia: [Utilização do RoundCube](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube){.external}. Se desejar associar o seu endereço de e-mail a um software (cliente) de correio eletrónico no computador, smartphone ou um tablet, consulte a página:</products/web-cloud-email-collaborative-solutions-mx-plan>.
+Para saber mais sobre o RoundCube, consulte o guia: [Utilização do RoundCube](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube){.external}. Se desejar associar o seu endereço de e-mail a um software (cliente) de correio eletrónico no computador, smartphone ou um tablet, consulte a página: </products/web-cloud-email-collaborative-solutions-mx-plan>.
 
-## Quer saber mais? Veja os guias abaixo
+## Quer saber mais?
 
 [Transferir o meu site para a OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh){.external} (Versão PT disponível em breve)
 
@@ -157,4 +166,8 @@ Para saber mais sobre o RoundCube, consulte o guia: [Utilização do RoundCube](
 
 [Utilização do RoundCube](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube){.external}
 
-Ou fale com a nossa comunidade de utilizadores: <https://community.ovh.com/en/>.
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
+
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
+
+Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>. 

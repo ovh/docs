@@ -637,7 +637,7 @@ Il est également possible de déployer votre instance via API, en utilisant l'a
 
 > [!api]
 >
-> @api {POST} /cloud/project/{serviceName}/instance
+> @api {v1} /cloud POST /cloud/project/{serviceName}/instance
 >
 
 - Exemple avec une flavor D2-4, Debian 10 et la facturation à l'heure :

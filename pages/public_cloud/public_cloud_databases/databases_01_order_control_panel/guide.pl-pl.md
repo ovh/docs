@@ -17,7 +17,7 @@ OVHcloud Databases as-a-service (DBaaS) allow you to focus on building and deplo
 
 ## Instructions
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) and switch to the `Public Cloud`{.action} section. After selecting your Public Cloud project, click on `Databases`{.action} in the left-hand navigation bar under **Storage**.
+Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) and switch to the `Public Cloud`{.action} section. After selecting your Public Cloud project, click on `Databases`{.action} in the left-hand navigation bar under **Databases & Analytics**.
 
 Click on the button `Create a database instance`{.action}. (`Create a service`{.action} if your project already contains databases.)
 
@@ -25,13 +25,13 @@ Click on the button `Create a database instance`{.action}. (`Create a service`{.
 
 Click on the type of database you want to use and then select the version to install from the respective drop-down menu.
 
-![Choose database](images/databases_01_order_control_panel-20230414145850.png){.thumbnail}
+![Choose database](images/databases_01_order_control_panel-20231208145850.png){.thumbnail}
 
-### Step 2: Select a solution
+### Step 2: Select a Plan
 
 In this step, choose an appropriate service plan. You will be able to upgrade the plan after creation.
 
-![Choose plan](images/databases_01_order_control_panel-20230414150215.png){.thumbnail}
+![Choose plan](images/databases_01_order_control_panel-20231208150215.png){.thumbnail}
 
 Please visit the [capabilities page](/products/public-cloud-databases) of your selected database type for detailed information on each plan's properties.
 
@@ -39,13 +39,13 @@ Please visit the [capabilities page](/products/public-cloud-databases) of your s
 
 Choose the geographical region of the data centre in which your database will be hosted.
 
-![Choose region](images/databases_01_order_control_panel-20230414150326.png){.thumbnail}
+![Choose region](images/databases_01_order_control_panel-20231208150326.png){.thumbnail}
 
 ### Step 4: Configure database nodes
 
 You can choose the node template in this step.
 
-![Order nodes](images/databases_01_order_control_panel-20230414150805.png){.thumbnail}
+![Order nodes](images/databases_01_order_control_panel-20231208150805.png){.thumbnail}
 
 Please visit the [capabilities page](/products/public-cloud-databases) of your selected database type for detailed information on the hardware resources and other properties of the database installation.
 
@@ -77,7 +77,7 @@ Please follow [this guide](/pages/public_cloud/public_cloud_network_services/get
 
 The final section will display a summary of your order as well as the API equivalent of creating this database instance with the [OVHcloud API](/pages/manage_and_operate/api/first-steps).
 
-![Confirm order](images/databases_01_order_control_panel-20230414153010.png){.thumbnail}
+![Confirm order](images/databases_01_order_control_panel-20231208153010.png){.thumbnail}
 
 Within a few minutes your new database service will be deployed. Messages in the OVHcloud Control Panel will inform you when the database is ready to use.
 

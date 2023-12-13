@@ -30,7 +30,7 @@ Należy zastosować następujące wywołanie API:
 
 > [!api]
 >
-> @api {GET} /dedicated/server/{serviceName}/specifications/network
+> @api {v1} /dedicated/server GET /dedicated/server/{serviceName}/specifications/network
 >
 
 Wprowadź nazwę Twojego serwera w polu `serviceName`, następnie kliknij `Execute`{.action}.

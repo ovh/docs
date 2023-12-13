@@ -1,7 +1,6 @@
 ---
 title: 'Konfiguracja filtrów e-mail w Panelu klienta'
 excerpt: 'Dowiedz się, jak utworzyć i skonfigurować filtr na Twoim koncie e-mail'
-legacy_guide_number: g1973
 updated: 2021-09-27
 ---
 
@@ -102,6 +101,10 @@ Możesz wybrać:
 ### Przykłady filtrów
 
 #### Usuń spam
+
+> [!warning]
+>
+> W naszym przykładzie w temacie wiadomości e-mail mowa jest o wzmiance [SPAM]. Informacja ta pojawia się, gdy antyspam serwera odbierającego dostarcza wiadomości, które uważa za spam, bezpośrednio do skrzynki odbiorczej. Tak jest w przypadku poprzedniej wersji usługi MX Plan.
 
 ||Nagłówek|Zasada|Wartość|Działanie|
 |---|---|---|---|---|

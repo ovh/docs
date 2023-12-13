@@ -34,7 +34,7 @@ Tutti i tuoi servizi attivi possono essere recuperati utilizzando la strada segu
 
 > [!api]
 >
-> @api {GET} /dedicated/nasha
+> @api {v1} /dedicated/nasha GET /dedicated/nasha
 >
 
 > [!warning]
@@ -52,7 +52,7 @@ Per recuperare gli indirizzi IP che possono accedere alla partizione, utilizza q
 >
 >> > [!api]
 >> >
->> > @api {GET} /dedicated/nasha/{serviceName}/partition/{partitionName}/access
+>> > @api {v1} /dedicated/nasha GET /dedicated/nasha/{serviceName}/partition/{partitionName}/access
 >> >
 >>
 >
@@ -77,9 +77,9 @@ Puoi verificare gli indirizzi IP che possono essere ammessi ad un accesso tramit
 >
 >> > [!api]
 >> >
->> > @api {GET} /dedicated/nasha/{serviceName}/partition/{partitionName}/authorizableIps
+>> > @api {v1} /dedicated/nasha GET /dedicated/nasha/{serviceName}/partition/{partitionName}/authorizableIps
 >> >
->> > @api {GET} /dedicated/nasha/{serviceName}/partition/{partitionName}/authorizableBlocks
+>> > @api {v1} /dedicated/nasha GET /dedicated/nasha/{serviceName}/partition/{partitionName}/authorizableBlocks
 >> >
 >>
 >
@@ -104,7 +104,7 @@ Per creare un nuovo accesso ACL che ti permetta di connetterti alla tua partizio
 >
 >> > [!api]
 >> >
->> > @api {POST} /dedicated/nasha/{serviceName}/partition/{partitionName}/access
+>> > @api {v1} /dedicated/nasha POST /dedicated/nasha/{serviceName}/partition/{partitionName}/access
 >> >
 >>
 >
@@ -142,7 +142,7 @@ Per eliminare un indirizzo IP o una gamma di indirizzi dell'ACL, utilizza questa
 >
 >> > [!api]
 >> >
->> > @api {DELETE} /dedicated/nasha/{serviceName}/partition/{partitionName}/access/{ip}
+>> > @api {v1} /dedicated/nasha DELETE /dedicated/nasha/{serviceName}/partition/{partitionName}/access/{ip}
 >> >
 >>
 >

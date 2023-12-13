@@ -1,7 +1,7 @@
 ---
 title: 'Zmienne środowiskowe OpenStack'
 excerpt: 'Zarządzaj środowiskiem OpenStack z linii komend'
-updated: 2021-08-18
+updated: 2023-11-29
 ---
 
 > [!primary]
@@ -50,12 +50,12 @@ Jeśli zapomnisz hasła, konieczne będzie jego ponowne utworzenie.
 Jeśli CLI są już zainstalowane, sprawdź, czy działają prawidłowo:
 
 ```bash
-admin@vpsxxxxxx:~$ nova list
-+--------------------------------------+------+--------+------------+-------------+------------------------+
-| ID                                   | Name | Status | Task State | Power State | Networks               |
-+--------------------------------------+------+--------+------------+-------------+------------------------+
-| 2278e269-a529-40cc-9a08-794fda9302d3 | deb8 | ACTIVE | -          | Running     | Ext-Net=xx.xxx.xx.xxx |
-+--------------------------------------+------+--------+------------+-------------+------------------------+
+(env)$ openstack server list
++--------------------------------------+------------+--------+-----------------------------------------------+-----------+--------+
+| ID                                   | Name       | Status | Networks                                      | Image     | Flavor |
++--------------------------------------+------------+--------+-----------------------------------------------+-----------+--------+
+| 8d7c67c0-38e1-4091-88d5-c14844c1f455 | b2-7-gra11 | ACTIVE | Ext-Net=2001:xxxx:xxx:xxx::xxxx, xx.xxx.xx.xx | Debian 12 | b2-7   |
++--------------------------------------+------------+--------+-----------------------------------------------+-----------+--------+
 ```
 
 Hasło użytkownika Horizon można zaszyć w kodzie. W tym celu zastąp element:
@@ -94,6 +94,6 @@ set OS_PASSWORD="Hasło użytkownika Horizon"
 
 ## Sprawdź również
 
-Informacje na temat korzystania z OpenStack: [Dokumentacja OpenStack](https://docs.openstack.org/train/){.external}
+Informacje na temat korzystania z OpenStack: [Dokumentacja OpenStack](https://docs.openstack.org/){.external}
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

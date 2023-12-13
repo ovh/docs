@@ -1,7 +1,6 @@
 ---
 title: 'Creare una risposta automatica per il proprio indirizzo email'
 excerpt: 'Come configurare una risposta automatica'
-legacy_guide_number: g2052
 updated: 2021-04-20
 ---
 

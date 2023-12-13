@@ -1,7 +1,6 @@
 ---
 title: 'Iniciar una instancia en un volumen asociado'
 excerpt: 'Iniciar una instancia en un volumen asociado'
-legacy_guide_number: g2064
 updated: 2021-11-01
 ---
 

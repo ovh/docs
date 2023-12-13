@@ -1,6 +1,6 @@
 ---
-title: Como gerir o seu módulo em 1 clique?
-excerpt: Saiba como gerir o módulo 1 clique na Área de Cliente OVHcloud
+title: "Como gerir o seu módulo em 1 clique?"
+excerpt: "Saiba como gerir o módulo 1 clique na Área de Cliente OVHcloud"
 updated: 2022-09-05
 ---
 
@@ -138,7 +138,7 @@ A seguir, clique no botão `...`{.action} à direita da linha que designa o seu 
 
 > [!warning]
 >
-> A eliminação do módulo 1 clique **não levará automaticamente à eliminação da base de dados**. Se ativar a instalação de um novo CMS sem eliminar previamente a base de dados do anterior (e o alojamento não permitir a criação automática de uma nova base de dados), aparecerá a mensagem "[Ocorreu um erro aquando do carregamento das informações (You need at least one free database)](/pages/web/hosting/diagnostic_errors_module1clic#ocorreu-um-erro-aquando-do-carregamento-das-informacoes-you-need-at-least-one-free-database)" na sua Área de Cliente.
+> A eliminação do módulo 1 clique **não levará automaticamente à eliminação da base de dados**. Se ativar a instalação de um novo CMS sem eliminar previamente a base de dados do anterior (e o alojamento não permitir a criação automática de uma nova base de dados), aparecerá a mensagem "[Ocorreu um erro aquando do carregamento das informações (You need at least one free database)](/pages/web_cloud/web_hosting/diagnostic_errors_module1clic#ocorreu-um-erro-aquando-do-carregamento-das-informacoes-you-need-at-least-one-free-database)" na sua Área de Cliente.
 >
 > Se dispõe de uma subscrição [Hosting Perso](https://www.ovhcloud.com/pt/web-hosting/personal-offer/) ou se já criou quatro bases de dados sobre o seu alojamento [Hosting Pro](https://www.ovhcloud.com/pt/web-hosting/professional-offer/) ou [Hosting Performance](https://www.ovhcloud.com/pt/web-hosting/performance-offer/), deverá eliminar a base de dados identificada [no passo 1](#step1) **ANTES** de poder criar um novo módulo 1 clique.
 >

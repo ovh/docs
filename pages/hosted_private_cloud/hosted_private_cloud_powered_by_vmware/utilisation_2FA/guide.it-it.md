@@ -76,7 +76,7 @@ L’unica differenza consisterà nell’autonomia dell’utente per confermare i
 
 È possibile utilizzare diverse applicazioni terze che richiedono la connessione al vCenter.
 
-Queste applicazioni devono essere precedentemente autorizzate attraverso una politica di accesso al vCenter che può essere configurata nello [Spazio Cliente](/pages/cloud/private-cloud/manager_ovh_private_cloud#sicurezza).
+Queste applicazioni devono essere precedentemente autorizzate attraverso una politica di accesso al vCenter che può essere configurata nello [Spazio Cliente](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/manager_ovh_private_cloud#sicurezza).
 
 Queste applicazioni potranno accedere alle nostre infrastrutture ma non supporteranno necessariamente l’autenticazione a due fattori.
 
@@ -90,35 +90,35 @@ Per aggiungere gli indirizzi IP pubblici degli applicativi a questa seconda *whi
 
 > [!api]
 >
-> @api {GET} /dedicatedCloud/{serviceName}/twoFAWhitelist
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/twoFAWhitelist
 >
 
 - Aggiungere un indirizzo IP al *bypass* dell’autenticazione a due fattori:
 
 > [!api]
 >
-> @api {POST} /dedicatedCloud/{serviceName}/twoFAWhitelist
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/twoFAWhitelist
 >
 
 - Visualizzare le informazioni di un indirizzo IP autorizzato (è necessario un ID recuperato con la prima chiamata):
 
 > [!api]
 >
-> @api {GET} /dedicatedCloud/{serviceName}/twoFAWhitelist/{id}
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/twoFAWhitelist/{id}
 >
 
 - Eliminare un indirizzo IP dalla lista delle autorizzazioni:
 
 > [!api]
 >
-> @api {DELETE} /dedicatedCloud/{serviceName}/twoFAWhitelist/{id}
+> @api {v1} /dedicatedCloud DELETE /dedicatedCloud/{serviceName}/twoFAWhitelist/{id}
 >
 
 - Modificare le informazioni di un indirizzo IP autorizzato:
 
 > [!api]
 >
-> @api {POST} /dedicatedCloud/{serviceName}/twoFAWhitelist/{id}/changeProperties
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/twoFAWhitelist/{id}/changeProperties
 >
 
 ## Per saperne di più

@@ -4,26 +4,6 @@ excerpt: 'Find out how to install Helm on OVHcloud Managed Kubernetes'
 updated: 2023-01-11
 ---
 
-<style>
- pre {
-     font-size: 14px;
- }
- pre.console {
-   background-color: #300A24; 
-   color: #ccc;
-   font-family: monospace;
-   padding: 5px;
-   margin-bottom: 5px;
- }
- pre.console code {
-   border: solid 0px transparent;
-   font-family: monospace !important;
- }
- .small {
-     font-size: 0.75em;
- }
-</style>
-
 [Helm](https://docs.helm.sh/){.external} is a package manager for Kubernetes. It works with packages of pre-configured Kubernetes resources, called Helm charts. 
 
 With Helm you can:
@@ -69,9 +49,10 @@ helm version
 
 You can show the installed version:
 
-<pre class="console"><code>$ helm version
+```console
+$ helm version
 version.BuildInfo{Version:"v3.10.3", GitCommit:"835b7334cfe2e5e27870ab3ed4135f136eecc704", GitTreeState:"clean", GoVersion:"go1.19.4"}
-</code></pre>
+```
 
 ## Initialize a Helm Chart Repository
 
@@ -88,14 +69,15 @@ helm repo add bitnami https://charts.bitnami.com/bitnami
 
 Once the repository added, run `helm repo update` to make sure we get the latest list of charts.
 
-<pre class="console"><code>$ helm repo add bitnami https://charts.bitnami.com/bitnami
+```console
+$ helm repo add bitnami https://charts.bitnami.com/bitnami
 "bitnami" has been added to your repositories
 
 $ helm repo update
 Hang tight while we grab the latest from your chart repositories...
 ...Successfully got an update from the "bitnami" chart repository
 Update Complete. ⎈ Happy Helming!⎈
-</code></pre>
+```
 
 ## Installing an example chart
 
@@ -107,7 +89,8 @@ helm install test-redis bitnami/redis --set master.persistence.enabled=false
 
 This will install the required elements and initialize the services. And at the end, it will give you the connection parameters for your new Redis database:
 
-<pre class="console"><code>$ helm install test-redis bitnami/redis --set master.persistence.enabled=false
+```console
+$ helm install test-redis bitnami/redis --set master.persistence.enabled=false
 
 helm list -A
 NAME: test-redis
@@ -151,13 +134,14 @@ To connect to your database from outside the cluster execute the following comma
 
     kubectl port-forward --namespace default svc/test-redis-master 6379:6379 &
     REDISCLI_AUTH="$REDIS_PASSWORD" redis-cli -h 127.0.0.1 -p 6379
-</code></pre>
+```
 
 ## Verifying your Redis
 
 After installing the chart, follow the instructions on your console to test your Redis deployment and delete it when your tests are finished.
 
-<pre class="console"><code>$ export REDIS_PASSWORD=$(kubectl get secret --namespace default test-redis -o jsonpath="{.data.redis-password}" | base64 -d)
+```console
+$ export REDIS_PASSWORD=$(kubectl get secret --namespace default test-redis -o jsonpath="{.data.redis-password}" | base64 -d)
 
 $ kubectl run --namespace default redis-client --restart='Never'  --env REDIS_PASSWORD=$REDIS_PASSWORD  --image docker.io/bitnami/redis:7.0.7-debian-11-r7 --command -- sleep infinity
 pod/redis-client created
@@ -178,19 +162,20 @@ exit
 
 $ kubectl delete pod redis-client
 pod "redis-client" deleted
-</code></pre>
+```
 
 ## Cleaning up
 
 To clean up your cluster, simply delete your Redis installation. You can use `helm list` to get the Redis release, in the current namespace, and then use `helm delete [REDIS_RELEASE]` to uninstall it.
 
-<pre class="console"><code>$ helm list
+```console
+$ helm list
 NAME      	NAMESPACE	REVISION	UPDATED                            	STATUS  	CHART       	APP VERSION
 test-redis	default  	1       	2023-01-11 12:02:08.08556 +0100 CET	deployed	redis-17.4.2	7.0.7
 
 $ helm uninstall test-redis
 release "test-redis" uninstalled
-</code></pre>
+```
 
 ## Go further
 

@@ -1,7 +1,6 @@
 ---
 title: 'Enviar SMS con PHP usando la API de OVHcloud'
 excerpt: 'Cómo enviar SMS con PHP usando la API RESTful de OVHcloud'
-legacy_guide_number: g1639
 updated: 2020-06-25
 ---
 
@@ -108,7 +107,7 @@ Para enviar SMS, utilice la siguiente llamada a la API:
 
 > [!api]
 >
-> @api {POST} /sms/{serviceName}/jobs
+> @api {v1} /sms POST /sms/{serviceName}/jobs
 >
 
 > [!primary]

@@ -16,11 +16,11 @@ Połączenie z tą bazą danych jest możliwe za pomocą **pliku konfiguracyjneg
 
 Zmiana hasła do bazy danych musi zatem zawsze być wykonywana:
 
-- W [pliku konfiguracyjnym](/pages/web/hosting/cms_manage_1_click_module#etap-1-zidentyfikowac-baze-danych-powiazana-z-modulem) Twojej strony WWW za [pomocą przestrzeni FTP Twojego hostingu](/pages/web_cloud/web_hosting/ftp_connection);
+- W [pliku konfiguracyjnym](/pages/web_cloud/web_hosting/cms_manage_1_click_module#etap-1-zidentyfikowac-baze-danych-powiazana-z-modulem) Twojej strony WWW za [pomocą przestrzeni FTP Twojego hostingu](/pages/web_cloud/web_hosting/ftp_connection);
 
 - **I** w serwerze zawierającym bazę danych w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 
-Dopóki zmiana nie zostanie dokonana **w tych dwóch miejscach**, Twoja strona WWW będzie wyświetlać "[błąd w logowaniu do bazy danych](/pages/web/hosting/diagnosis_database_errors#blad-podczas-logowania-do-bazy-danych)".
+Dopóki zmiana nie zostanie dokonana **w tych dwóch miejscach**, Twoja strona WWW będzie wyświetlać "[błąd w logowaniu do bazy danych](/pages/web_cloud/web_hosting/diagnosis_database_errors#blad-podczas-logowania-do-bazy-danych)".
 
 Jeśli chcesz zmienić hasło do bazy danych, wykonaj **wszystkie operacje** opisane w tym przewodniku. W przypadku wątpliwości dotyczących sposobu postępowania skontaktuj się z webmasterem lub skontaktuj się z [wyspecjalizowanym](https://partner.ovhcloud.com/pl/directory/) dostawcą usług hostingowych.
 

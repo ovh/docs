@@ -1,7 +1,7 @@
 ---
 title: VMware NSX-v - Fin de prise en charge
 excerpt: "Analysez votre utilisation des fonctionnalités NSX-v et choisissez entre les différents scénarios possibles d’évolution, allant de la désactivation du composant NSX-v jusqu'à la migration vers NSX"
-updated: 2023-08-14
+updated: 2023-09-20
 ---
 
 ## Objectif
@@ -24,7 +24,11 @@ Pour identifier votre utilisation de la fonctionnalité NSX-v dans votre environ
 
 #### Je n'utilise aucune des fonctionnalités de NSX-v
 
-Si vous n'utilisez aucune des fonctionnalités ci-dessus, vous pourrez désactiver NSX-v. Vous serez notifié lorsque le processus de désactivation sera disponible.
+Nous désactiverons NSX-V à partir du 1er Décembre 2023 si vous n'utilisez aucune fonctionnalité de NSX-V. 
+
+Quelle que soit votre gamme Hosted Private Cloud, si vous souhaitez désactiver NSX-v, vous n'aurez pas à effectuer la migration vers un nouveau Datacenter. Vous pourrez conserver vos ressources actuelles.
+
+Consultez notre page sur le [cycle de vie de la solution VMware on OVHcloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/lifecycle_policy).
 
 #### Je n'utilise que du VXLAN
 
@@ -37,7 +41,7 @@ Si vous souhaitez le migrer vers des VLAN, pour vous aider à configurer votre r
 
 > [!api]
 >
-> @api {POST} /dedicatedCloud/{serviceName}/generateVxlanToVrackMapping
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/generateVxlanToVrackMapping
 >
 
 > **Paramètres:**
@@ -48,10 +52,12 @@ Si vous souhaitez le migrer vers des VLAN, pour vous aider à configurer votre r
 >
 > Retrouvez plus d'informations sur l'utilisation des API OVHcloud dans notre guide « [Premiers pas avec les API OVHcloud](/pages/manage_and_operate/api/first-steps) ».
 
+Suite à la validation de ce appel API, un e-mail vous sera envoyé. Ce dernier contiendra une proposition de correspondance entre VXLAN et VLAN. 
+Il s'agit là uniquement d'une proposition contenant une liste de vos VMs et des réseaux utilisés. Il vous appartient de vérifier que ces VLAN ne sont pas utilisés par d'autres services OVHcloud.
+
 Pour créer vos réseaux VLAN, vous pouvez suivre cette documentation : [Création de VLAN](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/creation_vlan).
 
-Vous devrez ensuite désactiver NSX-v. Vous serez notifié lorsque le processus de désactivation sera disponible.
-Après les opérations précédentes, vous pouvez maintenant migrer vos Machines Virtuelles des VXLAN vers les DVS vRACK.
+Vous serez notifié lorsque le processus de désactivation sera disponible. Après les opérations précédentes, vous pouvez maintenant migrer vos Machines Virtuelles des VXLAN vers les DVS vRACK."
 
 Depuis la vue `Réseaux`{.action} sur la console vSphere UI, faire un cliv droit sur le portgroup VXLAN où résident vos Machines Virtuelles et sélectionnez `Migrer les VM vers un autre réseau...`{.action}.
 
@@ -63,9 +69,6 @@ Depuis la vue `Réseaux`{.action} sur la console vSphere UI, faire un cliv droit
 Terminez l'opération et reproduisez-la pour chaque portgroup VXLAN utilisé.
 
 Les Machines Virtuelles ne connaîtront qu’une très brève reconnexion. Dans certains cas, il se peut qu'une seule requête ping soit perdue.
-
-Nous désactiverons NSX-V à partir du 1er septembre 2023 si vous n'utilisez aucune fonctionnalité de NSX-V.
-Vous serez averti lorsque le processus de désactivation sera disponible.
 
 #### J'utilise certaines des fonctionnalités de NSX-v
 

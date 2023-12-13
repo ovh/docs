@@ -1,6 +1,6 @@
 ---
-title: 'Ativar os endereços de e-mail incluídos no seu alojamento web'
-excerpt: 'Saiba como ativar os endereços de e-mail incluídos na sua oferta de alojamento web'
+title: "Ativar os endereços de e-mail incluídos no seu alojamento web"
+excerpt: "Saiba como ativar os endereços de e-mail incluídos na sua oferta de alojamento web"
 updated: 2023-03-02
 ---
 
@@ -74,4 +74,3 @@ Para serviços especializados (referenciamento, desenvolvimento, etc), contacte 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
 
 Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>. 
-

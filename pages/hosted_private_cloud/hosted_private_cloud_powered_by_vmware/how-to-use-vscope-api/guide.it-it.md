@@ -42,21 +42,21 @@ Per recuperarle tramite APIv6 è necessario eseguire queste tre chiamate:
 
 > [!api]
 >
-> @api {GET} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/filer/{filerId}
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/filer/{filerId}
 >
 
 #### Host
 
 > [!api]
 >
-> @api {GET} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/host/{hostId}
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/host/{hostId}
 > 
 
 #### Macchine virtuali
 
 > [!api]
 > 
-> @api {GET} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/vm/{vmId}
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/vm/{vmId}
 > 
 
 ### Ottieni lo storico dei dati (Graphs)
@@ -71,7 +71,7 @@ Per recuperare il codice di un utente specifico, effettua questa chiamata APIv6:
 
 > [!api]
 > 
-> @api {POST} /dedicatedCloud/{serviceName}/user/{userId}/metricsToken
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/user/{userId}/metricsToken
 > 
 
 L’informazione richiesta viene mostrata nel campo **token** del risultato.

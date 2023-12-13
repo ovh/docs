@@ -1,7 +1,7 @@
 ---
 title: "Configurer son adresse e-mail sur l'interface en ligne de Gmail"
 excerpt: "Apprenez à configurer une adresse e-mail MX Plan sur l'interface en ligne de Gmail"
-updated: 2021-01-08
+updated: 2023-11-20
 ---
 
 ## Objectif
@@ -21,7 +21,7 @@ Les adresses e-mail de l'offre MX Plan peuvent être configurées sur différent
 
 - Disposer d’une adresse e-mail MX Plan (comprise dans l’offre MX Plan ou dans une offre d’[hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/){.external}).
 - Disposer des identifiants relatifs à l'adresse e-mail OVHcloud que vous souhaitez paramétrer.
-- Disposer des identifiants du compte Gmail sur lequel vous souhaitez paramétrer l'adresse OVHcloud.
+- Disposer des identifiants du compte Gmail (Personnel ou Professionnel) sur lequel vous souhaitez paramétrer l'adresse OVHcloud.
 
 > [!primary]
 >

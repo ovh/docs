@@ -1,7 +1,6 @@
 ---
 title: Utiliser le protocole SSLv3 sur Private Cloud
 excerpt: Vérifier l'état du protocole SSLv3 sur votre Private Cloud
-legacy_guide_number: '1442264'
 updated: 2019-02-15
 ---
 
@@ -43,9 +42,9 @@ Si vous devez impérativement ré-activer SSLv3, voici comment procéder.
 
 **Attention : La réactivation de SSLv3 nécessite au préalable la mise en place des configurations suivantes :**
 
-- [Restreindre l'accès au vCenter aux IPs autorisées](/pages/cloud/private-cloud/manager_ovh_private_cloud#securite){.external-link}
+- [Restreindre l'accès au vCenter aux IPs autorisées](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/manager_ovh_private_cloud#securite){.external-link}
 
-- [Ajouter explicitement les IPs qui seront autorisées à se connecter](/pages/cloud/private-cloud/manager_ovh_private_cloud#securite){.external-link}
+- [Ajouter explicitement les IPs qui seront autorisées à se connecter](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/manager_ovh_private_cloud#securite){.external-link}
 
 Vous devez tout d'abord vous rendre sur l'API ovh.com : <http://api.ovh.com> et vous connecter à l'aide de votre identifiant client ([guide sur l'utilisation de l'API](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/connexion_a_l_api_ovh)
 

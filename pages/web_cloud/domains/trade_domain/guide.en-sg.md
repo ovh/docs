@@ -1,7 +1,7 @@
 ---
-title: Changing the owner of a domain name
-excerpt: Find out how to change the owner of a a domain name in the OVHcloud Control Panel
-updated: 2023-06-19
+title: "Changing the owner of a domain name"
+excerpt: "Find out how to change the owner of a a domain name in the OVHcloud Control Panel"
+updated: 2023-12-04
 ---
 
 ## Objective
@@ -28,7 +28,7 @@ In addition to providing [contacts](/pages/account_and_service_management/accoun
 
 > [!warning]
 >
-> The following instructions describe the most common way to change a domain name owner. They are valid for for most **T**op **L**evel **D**omains (**TLD**). The **TLD** is the domain name extension, i.e. the last part of a domain name, such as *.com*, *.net*, *.fr*, etc.
+> The following instructions describe the most common way to change a domain name owner. They are valid for most **T**op **L**evel **D**omains (**TLD**). The **TLD** is the domain name extension, i.e. the last part of a domain name, such as *.com*, *.net*, *.fr*, etc.
 >
 > The specific rules for processes regarding **TLD**s are defined by the corresponding allocation authority i.e. the **registry**. Registrars such as OVHcloud must adhere to these rules and have no influence on registry decisions.
 >
@@ -77,6 +77,9 @@ If the email address is not changed as part of the domain trade, one recipient w
 > The procedure can be validated by both parties during a period of 14 days.
 > 
 > If the change is declined by one of the two parties, the action will be cancelled.
+>
+> If the current owner's email address is obsolete or inaccessible, you can **in this case**, contact support directly by creating a support ticket from your [OVHcloud Help Center](https://help.ovhcloud.com/csm?id=csm_cases_requests).
+>
 
 > [!warning]
 >

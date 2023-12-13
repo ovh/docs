@@ -1,7 +1,7 @@
 ---
 title: SSH-Schlüssel erstellen und verwenden
 excerpt: Erfahren Sie hier, wie Sie SSH-Schlüssel für eine sichere Verbindung zu Ihrem Server verwenden
-updated: 2023-07-24
+updated: 2023-11-22
 ---
 
 > [!primary]
@@ -215,6 +215,46 @@ Weitere Informationen zu SSH-Verbindungen finden Sie in den "[Erste Schritte](#g
 
 ### SSH-Schlüssel zu Ihrem Server hinzufügen <a name="addserverkey"></a>
 
+#### Transfer von öffentlichen Schlüsseln (nur wenn erstellt auf Systemen basiert auf GNU/Linux, MacOS oder BSD)
+
+Wenn Sie Ihre SSH-Schlüsselpaare auf einem System basierend auf GNU/Linux MacOS oder BSD erzeugt haben, können Sie den Befehl `ssh-copy-id` verwenden, um die öffentlichen Schlüssel zu Ihrem Server hinzuzufügen.
+
+Das Tool `ssh-copy-id` kopiert die öffentlichen Schlüssel in die Datei `~/.ssh/authorized_keys` auf dem angegebenen Remoteserver und erstellt die Datei bei Bedarf auch automatisch in diesem Verzeichnis.
+
+```bash
+ssh-copy-id user@IP_ADDRESS
+```
+
+Ohne weitere Angaben versucht `ssh-copy-id`, alle öffentlichen Schlüssel in das Verzeichnis `~/.ssh` des lokalen Benutzers zu übertragen. Um nur einen öffentlichen Schlüssel hinzuzufügen, können Sie diese Schlüsseldatei mit der Option `-i` und dem Dateipfad angeben:
+
+```bash
+ssh-copy-id -i ~/.ssh/KeyFileName user@IP_ADDRESS
+```
+
+Beispiel:
+
+```bash
+ssh-copy-id -i ~/.ssh/VPS_rsa.pub ubuntu@169.254.10.250
+```
+
+Sie werden nach dem Passwort des Benutzers gefragt. Sie erhalten eine Bestätigung wie die folgende:
+
+```console
+Number of key(s) added: 1
+
+Now try logging into the machine, with:   "ssh 'user@server-ip'"
+and check to make sure that only the key(s) you wanted were added.
+```
+
+Wenn stattdessen eine Fehlermeldung angezeigt wird, können Sie die öffentlichen Schlüssel manuell hinzufügen, indem Sie die nachfolgenden Schritte ausführen.
+
+> [!primary]
+>
+> Aus Sicherheitsgründen sollte ein Schlüsselpaar nicht von mehreren Benutzern verwendet werden. Da jeder Benutzer auf GNU/Linux-Systemen über eine eigene `authorized_keys` Datei in `~/.ssh/` verfügt, können Sie den Befehl `ssh-copy-id` wie oben beschrieben verwenden und dabei `KeyFileName` und `user` jeweils anpassen, nachdem [das Schlüsselpaar erzeugt wurde](#openssh).
+>
+
+#### Manuelles Hinzufügen öffentlicher Schlüssel zu einem Server
+
 [Verbinden Sie sich mit Ihrem Server](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction) und stellen Sie sicher, dass Sie sich im Verzeichnis `$HOME` Ihres Benutzers befinden. Wenn er noch nicht existiert, erstellen Sie den Ordner `.ssh`:
 
 ```bash
@@ -227,7 +267,7 @@ Um den Schlüssel für den aktuellen Benutzer zu speichern, öffnen (oder erstel
 nano ~/.ssh/authorized_keys
 ```
 
-Fügen Sie Ihren [**öffentlichen Schlüssel**](#publickey) in diese Datei ein. Speichern Sie die Datei, und beenden Sie den Editor. Starten Sie Ihren Server oder nur den OpenSSH-Dienst mit einem der folgenden Befehle neu (der entsprechende Befehl kann je nach Betriebssystem variieren):
+Fügen Sie Ihren [**öffentlichen Schlüssel**](#publickey) in diese Datei ein. Speichern Sie die Datei, und beenden Sie den Editor. Starten Sie Ihren Server neu (`sudo reboot`) oder nur den OpenSSH-Dienst mit einem der folgenden Befehle (der entsprechende Befehl kann je nach Betriebssystem variieren):
 
 ```bash
 sudo systemctl restart ssh
@@ -317,7 +357,7 @@ Sie können sich dann mit dem Alias-Namen, den Sie als `Host` festgelegt haben, 
 ssh ubuntu@vps
 ```
 
-Im vorherigen Beispiel wurden nur die Server-IP und die Schlüsseldatei angegeben, es können jedoch weitere Details hinzugefügt werden. Um eine SSH-Verbindung zu einem zweiten Server mit dem Benutzernamen "rocky", dem [geänderten SSH-Port](/pages/cloud/vps/secure_your_vps#changesshport) "49160" und dem privaten Schlüssel in der Datei "myserver_rsa" einzurichten, erweitern Sie den Inhalt der Datei wie in diesem Beispiel:
+Im vorherigen Beispiel wurden nur die Server-IP und die Schlüsseldatei angegeben, es können jedoch weitere Details hinzugefügt werden. Um eine SSH-Verbindung zu einem zweiten Server mit dem Benutzernamen "rocky", dem [geänderten SSH-Port](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps#changesshport) "49160" und dem privaten Schlüssel in der Datei "myserver_rsa" einzurichten, erweitern Sie den Inhalt der Datei wie in diesem Beispiel:
 
 ```console
 Host vps

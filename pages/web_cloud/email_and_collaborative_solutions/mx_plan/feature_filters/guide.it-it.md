@@ -1,7 +1,6 @@
 ---
 title: Creare filtri per i tuoi indirizzi email
 excerpt: Come creare e configurare un filtro sul tuo indirizzo email
-legacy_guide_number: g1973
 updated: 2021-09-27
 ---
 
@@ -102,6 +101,10 @@ Puoi scegliere tra:
 ### Esempi di filtri
 
 #### Elimina Spam
+
+> [!warning]
+>
+> Nel nostro esempio menzioniamo la dicitura [SPAM] nell’oggetto di un’email. Questa dicitura compare quando l'antispam del server di ricezione consegna le email, che considera indesiderate, direttamente nella casella di posta. Come per la versione storica della soluzione MX Plan.
 
 ||Intestazione|Regola|Valore|Scenario possibile|
 |---|---|---|---|---|

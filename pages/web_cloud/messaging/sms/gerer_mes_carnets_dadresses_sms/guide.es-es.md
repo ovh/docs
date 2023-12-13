@@ -1,7 +1,6 @@
 ---
 title: 'Agenda de contactos de SMS'
 excerpt: 'Cómo gestionar la agenda de contactos de SMS en OVHcloud'
-legacy_guide_number: g2118
 updated: 2022-08-05
 ---
 

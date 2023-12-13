@@ -1,7 +1,7 @@
 ---
 title: 'Konfiguration Ihrer E-Mail-Adresse im Gmail-Webinterface'
 excerpt: 'In dieser Anleitung erfahren Sie, wie Sie eine MX Plan Adresse im Webinterface von Gmail einrichten.'
-updated: 2021-01-08
+updated: 2023-11-20
 ---
 
 ## Einleitung
@@ -21,7 +21,7 @@ E-Mail-Adressen aus dem MX Plan Angebot können auf verschiedenen, kompatiblen E
 
 - Sie besitzen eine MX Plan E-Mail-Adresse (im MX Plan Angebot oder in einem [Webhosting Angebot von OVHcloud](https://www.ovhcloud.com/de/web-hosting/){.external} enthalten).
 - Sie haben die Login-Daten der OVHcloud E-Mail-Adresse, die Sie einrichten möchten.
-- Sie haben die Login-Daten des Gmail-Accounts, auf dem Sie die OVHcloud Adresse einrichten möchten.
+- Sie haben die Login-Daten des Gmail-Accounts (Privat oder beruflich), auf dem Sie die OVHcloud Adresse einrichten möchten.
 
 > [!primary]
 >

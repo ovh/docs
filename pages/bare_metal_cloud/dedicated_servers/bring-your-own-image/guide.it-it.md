@@ -81,7 +81,7 @@ Per creare e configurare la tua immagine, utilizza questa chiamata e inserisci i
 
 > [!api]
 >
-> @api {POST} /dedicated/server/{serviceName}/bringYourOwnImage
+> @api {v1} /dedicated/server POST /dedicated/server/{serviceName}/bringYourOwnImage
 >
 
 | Champ | Descrizione |
@@ -112,7 +112,7 @@ Per monitorare lo sviluppo della tua immagine, utilizza la chiamata API qui sott
 
 > [!api]
 >
-> @api {GET} /dedicated/server/{serviceName}/bringYourOwnImage
+> @api {v1} /dedicated/server GET /dedicated/server/{serviceName}/bringYourOwnImage
 >
 
 In questo esempio, il deploy è in fase di avvio.
@@ -142,7 +142,7 @@ Puoi scegliere di eliminare il tuo deploy utilizzando questa chiamata:
 
 > [!api]
 >
-> @api {DELETE} /dedicated/server/{serviceName}/bringYourOwnImage
+> @api {v1} /dedicated/server DELETE /dedicated/server/{serviceName}/bringYourOwnImage
 >
 
 eliminando lo stato di deploy e impostando il server in modalità Rescue.

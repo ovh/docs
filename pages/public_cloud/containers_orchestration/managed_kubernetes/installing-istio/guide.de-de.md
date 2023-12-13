@@ -4,28 +4,6 @@ excerpt: Find out how to install Istio on OVHcloud Managed Kubernetes
 updated: 2022-05-30
 ---
 
-<style>
- pre {
-     font-size: 14px;
- }
- pre.console {
-   background-color: #300A24; 
-   color: #ccc;
-   font-family: monospace;
-   padding: 5px;
-   margin-bottom: 5px;
- }
- pre.console code {
-   border: solid 0px transparent;
-   font-family: monospace !important;
-   font-size: 0.75em;
-   color: #ccc;
- }
- .small {
-     font-size: 0.75em;
- }
-</style>
-
 [Istio](https://istio.io){.external} is a open source service mesh and platform to reduce the complexity of deploying, securing, controlling and observing distributed services. As the Istio site explains, Istio helps you to:
 
 - Control the flow of traffic between services
@@ -79,14 +57,15 @@ In this tutorial you're going to install Istio with the default profile, [other 
 istioctl install
 ```
 
-<pre class="console"><code>$ istioctl install
+```console
+$ istioctl install
 This will install the Istio 1.11.2 default profile with ["Istio core" "Istiod" "Ingress gateways"] components into the cluster. Proceed? (y/N) y
 ✔ Istio core installed
 ✔ Istiod installed
 ✔ Ingress gateways installed
 ✔ Installation complete
 Thank you for installing Istio 1.11.  Please take a few minutes to tell us about your install/upgrade experience!  https://forms.gle/kWULBRjUv7hHci7T6
-</code></pre>
+```
 
 The `istio-system` namespace is created with all Istio components.
 
@@ -104,7 +83,7 @@ kubectl apply -f samples/addons
 
 In my example cluster I get:
 
-<pre class="console"><code>
+```console
 $ kubectl apply -f samples/addons
 serviceaccount/grafana created
 configmap/grafana created
@@ -119,7 +98,7 @@ service/jaeger-collector created
 ...
 service/prometheus created
 deployment.apps/prometheus created
-</code></pre>
+```
 
 ## Verifying the installation
 
@@ -127,7 +106,8 @@ deployment.apps/prometheus created
 
     In my example cluster I get:
 
-    <pre class="console"><code>$  kubectl get services -n istio-system
+    ```console
+$  kubectl get services -n istio-system
     NAME                   TYPE           CLUSTER-IP     EXTERNAL-IP     PORT(S)                                      AGE
     grafana                ClusterIP      10.3.75.230    <none>          3000/TCP                                     2m19s
     istio-ingressgateway   LoadBalancer   10.3.175.205   51.178.69.212   15021:31288/TCP,80:32588/TCP,443:30085/TCP   4m38s
@@ -137,7 +117,8 @@ deployment.apps/prometheus created
     prometheus             ClusterIP      10.3.9.246     <none>          9090/TCP                                     2m15s
     tracing                ClusterIP      10.3.220.9     <none>          80/TCP,16685/TCP                             2m16s
     zipkin                 ClusterIP      10.3.165.183   <none>          9411/TCP                                     2m16s
-    </code></pre>
+    
+```
 
     As the `LoadBalancer` creation is asynchronous, and the provisioning of the load balancer can take several minutes, you will surely get a `pending` for `istio-ingressgateway` `EXTERNAL-IP` field. Please try again in a few minutes to get the external URL to call your Istio. 
 
@@ -145,7 +126,8 @@ deployment.apps/prometheus created
 
     In my example cluster I get:
 
-    <pre class="console"><code>$ kubectl get pods -n istio-system
+    ```console
+$ kubectl get pods -n istio-system
     NAME                                    READY   STATUS    RESTARTS   AGE
     grafana-556f8998cd-kmn6l                1/1     Running   0          4m23s
     istio-ingressgateway-65668fd4dd-t8t4q   1/1     Running   0          6m43s
@@ -153,7 +135,8 @@ deployment.apps/prometheus created
     jaeger-5f65fdbf9b-ctjkn                 1/1     Running   0          4m20s
     kiali-787bc487b7-h9ck9                  1/1     Running   0          4m19s
     prometheus-9f4947649-7wszv              2/2     Running   0          4m19s
-    </code></pre>
+    
+```
 
 ## Deploying an application
 
@@ -179,12 +162,13 @@ kubectl label namespace istio-apps istio-injection=enabled
 
 In my example cluster I get:
 
-<pre class="console"><code>$ kubectl create namespace istio-apps
+```console
+$ kubectl create namespace istio-apps
 namespace/istio-apps created
 
 $ kubectl label namespace istio-apps istio-injection=enabled
 namespace/istio-apps labeled
-</code></pre>
+```
 
 And now, deploy the `bookinfo` manifest into the namespace:
 
@@ -194,7 +178,8 @@ kubectl apply -f samples/bookinfo/platform/kube/bookinfo.yaml -n istio-apps
 
 The above command installs and launches, in `istio-apps` namespace, all four microservices as illustrated in the above diagram: `details`, `productpage`, `ratings` and  the three versions of `reviews`:
 
-<pre class="console"><code>$ kubectl apply -f samples/bookinfo/platform/kube/bookinfo.yaml -n istio-apps
+```console
+$ kubectl apply -f samples/bookinfo/platform/kube/bookinfo.yaml -n istio-apps
 service/details created
 serviceaccount/bookinfo-details created
 deployment.apps/details-v1 created
@@ -209,26 +194,29 @@ deployment.apps/reviews-v3 created
 service/productpage created
 serviceaccount/bookinfo-productpage created
 deployment.apps/productpage-v1 created
-</code></pre>
+```
     
 
 Now you can verify that all services and pods are correctly defined and running:
 
 1. Use `kubectl -n istio-apps get services` to verify that the `details`, `productpage`, `ratings` and `reviews` services are up un running:
 
-    <pre class="console"><code>$ kubectl -n istio-apps get services
+    ```console
+$ kubectl -n istio-apps get services
 NAME          TYPE        CLUSTER-IP     EXTERNAL-IP   PORT(S)    AGE
 details       ClusterIP   10.3.131.63    <none>        9080/TCP   6s
 productpage   ClusterIP   10.3.141.189   <none>        9080/TCP   4s
 ratings       ClusterIP   10.3.133.82    <none>        9080/TCP   5s
 reviews       ClusterIP   10.3.60.119    <none>        9080/TCP   5s
-    </code></pre>
+    
+```
 
 1. Use `kubectl -n istio-apps get pods` to verify that the `details-v1-*`, `productpage-v1-*`, `ratings-v1-*`, `reviews-v1-*`, `reviews-v2-*` and `reviews-v3-*` are up and running:
  
     In the case of my example cluster:
 
-    <pre class="console"><code>$ kubectl -n istio-apps get pods
+    ```console
+$ kubectl -n istio-apps get pods
 NAME                              READY   STATUS    RESTARTS   AGE
 details-v1-79f774bdb9-wnklv       2/2     Running   0          88s
 productpage-v1-6b746f74dc-4d77c   2/2     Running   0          87s
@@ -236,7 +224,8 @@ ratings-v1-b6994bb9-s6kwq         2/2     Running   0          88s
 reviews-v1-545db77b95-rf58h       2/2     Running   0          88s
 reviews-v2-7bf8c9648f-5dt4x       2/2     Running   0          88s
 reviews-v3-84779c7bbc-f5jbw       2/2     Running   0          87s
-    </code></pre>
+    
+```
 
 As you can see, each pod has 2 containers, the app container and the Istio sidecar that is deployed with it.
 
@@ -254,23 +243,29 @@ An [Istio Gateway](https://istio.io/docs/concepts/traffic-management/#gateways){
 
 1. Associate this application with the Istio gateway:
 
-    <pre class="console"><code>$ kubectl apply -f samples/bookinfo/networking/bookinfo-gateway.yaml -n istio-apps
+    ```console
+$ kubectl apply -f samples/bookinfo/networking/bookinfo-gateway.yaml -n istio-apps
     gateway.networking.istio.io/bookinfo-gateway created
     virtualservice.networking.istio.io/bookinfo created
-    </code></pre>
+    
+```
 
 1. Ensure that there are no issues with the configuration:
 
-    <pre class="console"><code>$ istioctl analyze -n istio-apps
+    ```console
+$ istioctl analyze -n istio-apps
     ✔ No validation issues found when analyzing namespace: istio-apps.
-    </code></pre>
+    
+```
 
 1. Confirm the gateway has been created:
     
-    <pre class="console"><code>$ kubectl -n istio-apps get gateway
+    ```console
+$ kubectl -n istio-apps get gateway
     NAME               AGE
     bookinfo-gateway   53s
-    </code></pre>
+    
+```
 
 ### Determining the ingress IP and port
 
@@ -278,13 +273,14 @@ Set `GATEWAY_URL`, the URL of the `istio-gateway` service.
 
 You can get it with the following commands:
 
-<pre class="console"><code>$ export INGRESS_HOST=$(kubectl -n istio-system get service istio-ingressgateway -o jsonpath='{.status.loadBalancer.ingress[0].ip}')
+```console
+$ export INGRESS_HOST=$(kubectl -n istio-system get service istio-ingressgateway -o jsonpath='{.status.loadBalancer.ingress[0].ip}')
 $ export INGRESS_PORT=$(kubectl -n istio-system get service istio-ingressgateway -o jsonpath='{.spec.ports[?(@.name=="http2")].port}')
 $ export GATEWAY_URL=$INGRESS_HOST:$INGRESS_PORT
 
 $ echo $GATEWAY_URL
 135.125.84.93
-</code></pre>
+```
 
 ### Confirm the app is running
 
@@ -296,9 +292,10 @@ curl -o /dev/null -s -w "%{http_code}\n"  http://$GATEWAY_URL/productpage
 
 You should get an [HTTP status code 200](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes#2xx_Success) indicating that your `productpage` is OK.
 
-<pre class="console"><code>$ curl -o /dev/null -s -w "%{http_code}\n"  http://$GATEWAY_URL/productpage
+```console
+$ curl -o /dev/null -s -w "%{http_code}\n"  http://$GATEWAY_URL/productpage
 200
-</code></pre>
+```
 
 You can also point your browser to `http://<YOUR_GATEWAY_URL>/productpage` (in my example to http://135.125.84.93:80/productpage) to view the Bookinfo web page. If you refresh the page several times, you should see different versions of reviews shown in productpage, presented in a round robin style (red stars, black stars, no stars), since we haven’t yet used Istio to control the version routing.
 
@@ -334,7 +331,8 @@ Now you have a working Bookinfo app deployed on Istio, you can follow the sugges
 
 To uninstall the Bookinfo app, the easiest way is to use the provided `cleanup.sh` script:
 
-<pre class="console"><code>$ ./samples/bookinfo/platform/kube/cleanup.sh
+```console
+$ ./samples/bookinfo/platform/kube/cleanup.sh
 namespace ? [default] istio-apps
 using NAMESPACE=istio-apps
 virtualservice.networking.istio.io "bookinfo" deleted
@@ -355,7 +353,7 @@ service "productpage" deleted
 serviceaccount "bookinfo-productpage" deleted
 deployment.apps "productpage-v1" deleted
 Application cleanup successful
-</code></pre>
+```
 
 To confirm the shutdown you can list the virtual services, destination rules, gateway and pods in the `istio-apps` namespace:
 
@@ -368,7 +366,8 @@ kubectl -n istio-apps get pods              #-- there should be no pod
 
 In my example cluster:
 
-<pre class="console"><code>$ kubectl -n istio-apps get virtualservices   #-- there should be no virtual services
+```console
+$ kubectl -n istio-apps get virtualservices   #-- there should be no virtual services
 No resources found in istio-apps namespace.
 kubectl -n istio-apps get destinationrules  #-- there should be no destination rules
 No resources found in istio-apps namespace.
@@ -376,7 +375,7 @@ kubectl -n istio-apps get gateway           #-- there should be no gateway
 No resources found in istio-apps namespace.
 kubectl -n istio-apps get pods              #-- there should be no pod
 No resources found in istio-apps namespace.
-</code></pre>
+```
 
 Now you can uninstall Istio with `istioctl` command:
 
@@ -400,7 +399,7 @@ kubectl delete namespace istio-apps
 
 Example on my cluster:
 
-<pre class="console"><code>
+```console
 $ istioctl manifest generate | kubectl delete --ignore-not-found=true -f -
 customresourcedefinition.apiextensions.k8s.io "authorizationpolicies.security.istio.io" deleted
 customresourcedefinition.apiextensions.k8s.io "destinationrules.networking.istio.io" deleted
@@ -431,7 +430,7 @@ namespace "istio-system" deleted
 
 $ kubectl delete namespace istio-apps
 namespace "istio-apps" deleted
-</code></pre>
+```
 
 ## Go further
 

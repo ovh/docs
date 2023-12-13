@@ -1,6 +1,6 @@
 ---
-title: Cycle de vie du Hosted Private Cloud powered by VMware
-excerpt: Hosted Private Cloud Powered by VMware
+title: Cycle de vie de la solution VMware on OVHcloud
+excerpt: VMware on OVHcloud
 updated: 2023-06-26
 ---
 
@@ -11,7 +11,7 @@ updated: 2023-06-26
 
 ## Objectif
 
-**Cette page donne un aperçu de la politique de cycle de vie des services OVHcloud Hosted Private Cloud powered by VMware.**
+**Cette page donne un aperçu de la politique de cycle de vie des services VMware on OVHcloud.**
 
 Le service Hosted Private Cloud d'OVHcloud propose une infrastructure dédiée basée sur les technologies VMware SDDC ainsi que sur les technologies d'autres partenaires (Veeam, Zerto...).
 
@@ -98,7 +98,7 @@ Le tableau suivant présente un résumé des différentes phases du cycle de vie
 | DC2014 (AMD PileDriver) | 2014 | 31/08/2017 | 28/02/2022 | 30/09/2022 |
 | DC2016 (AMD PileDriver) | 2016 | 30/11/2018 | 28/02/2022 | 30/09/2022 |
 | SDDC2014 & SDDC2016 (Intel Ivy Bridge, Intel Haswell) | 2016 | 30/04/2017 | 28/02/2024 | 31/08/2024 |
-| SDDC2018 (Intel Broadwell) | 2018 | 30/11/2018 | 28/02/2024 | 31/08/2025 |
+| SDDC2018 (Intel Broadwell) | 2018 | 30/11/2018 | 28/02/2025 | 31/08/2025 |
 | Essentials (Intel Broadwell) | 2020 |            |            |            |
 | Premier (Intel Xeon Gold) | 2020 |            |            |            |
 

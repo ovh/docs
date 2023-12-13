@@ -12,7 +12,7 @@ Vous pouvez créer plusieurs groupes de téléphonie, pour mieux organiser vos s
 
 Rattacher plusieurs lignes au sein d'un seul groupe permet aussi la supervision de lignes entre elles, depuis un téléphone ou un logiciel compatible.
 
-**Découvez comment gérer des groupes de téléphonie et déplacer vos lignes SIP et numéros alias entre ces groupes**
+**Découvrez comment gérer des groupes de téléphonie et déplacer vos lignes SIP et numéros alias entre ces groupes**
 
 ## Prérequis
 

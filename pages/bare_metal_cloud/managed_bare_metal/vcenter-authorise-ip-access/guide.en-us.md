@@ -1,9 +1,6 @@
 ---
 title: 'Authorising IP addresses for vCenter access'
 excerpt: 'Find out how to manage IP address access restrictions for vCenter'
-legacy_guide_number: '1442255'
-space_key: VS
-space_name: vSphere as a Service
 updated: 2020-11-18
 ---
 

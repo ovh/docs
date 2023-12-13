@@ -1,7 +1,7 @@
 ---
-title: 'Conexão à base de dados do servidor de bases de dados'
-excerpt: 'Saiba como se conectar a uma base de dados'
-updated: 2023-02-15
+title: "Conexão à base de dados do servidor de bases de dados"
+excerpt: "Saiba como se conectar a uma base de dados"
+updated: 2023-10-31
 ---
 
 > [!primary]
@@ -16,14 +16,14 @@ Se desejar, pode consultar o conteúdo da sua base de dados através de uma inte
 
 ## Requisitos
 
-- Dispor de uma [instância Web Cloud Databases](https://www.ovh.com/pt/cloud/cloud-databases/) (incluída numa oferta de [alojamento web Performance](https://www.ovhcloud.com/pt/web-hosting/).
+- Dispor de uma [instância Web Cloud Databases](https://www.ovhcloud.com/pt/web-cloud/databases/) (incluída numa oferta de [alojamento web Performance](https://www.ovhcloud.com/pt/web-hosting/).
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt).
 
 ## Instruções
 
 > [!primary]
 >
-> Note que as ofertas [Web Cloud Databases](https://www.ovh.com/pt/cloud/cloud-databases/) não dão acesso ao sistema de gestão de base de dados, mas às bases de dados alojadas nesse sistema.
+> Note que as ofertas [Web Cloud Databases](https://www.ovhcloud.com/pt/web-cloud/databases/) não dão acesso ao sistema de gestão de base de dados, mas às bases de dados alojadas nesse sistema.
 > <br> - Não existe um acesso super-utilizador "root".
 > <br> - Os comandos SQL genéricos funcionam normalmente e os softwares do tipo HeidiSQL, SQuirreL SQL ou Adminer são plenamente compatíveis.
 >
@@ -37,24 +37,32 @@ Se desejar, pode consultar o conteúdo da sua base de dados através de uma inte
 
 ####  Pelo phpMyAdmin OVHcloud 
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Clique no separador `Web Cloud` e, a seguir, em `Web Cloud Databases`{.action}. Selecione o nome do seu servidor de bases de dados.
+Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} e aceda à secção `Web Cloud`. Clique no separador `Web Cloud Databases`{.action} na coluna à esquerda e selecione o nome do servidor de bases de dados.
 
-No separador `Informações gerais`, vai encontrar o link de acesso no quadro **«Gestão da base de dados»** sob a menção «Interface do utilizador».
+No separador `Informações gerais`, encontrará a ligação de acesso ao phpMyAdmin no quadro **"Gestão da base de dados"** sob a menção "Interface do utilizador".
 
 ![sql-privado](images/private-sql-phpma01.png){.thumbnail}
 
 Será conduzido à página de conexão do phpMyAdmin.
 
-![sql-privado](images/private-sql-phpma02.png){.thumbnail}
+![sql-privado](images/pma-login-web-cloud-db.png){.thumbnail}
 
-- **Servidor**: indique o host do servidor, visível no separador `Informações gerais`, no quadro **«Gestão da base de dados»** sob a menção «Host» da secção **SQL**.
-- **Utilizador**: indique o utilizador criado no separador `Utilizadores e permissões` do servidor de bases de dados.
-- **Palavra-pase**: indique a palavra-passe associada ao utilizador em causa.
-- **Porta**: indique a porta mencionada no separador `Informações gerais`, no quadro **«Gestão da base de dados»** sob a menção «Porta» da secção **SQL**.
+Introduza os seguintes elementos para se ligar à sua base de dados:
+
+- **Servidor:** Indique o *nome do host* do seu servidor de bases de dados, seguido do *número da porta*. O *número da porta* deve ser separado do *nome do host* por um "**espaço**" ou por "**:**". Por exemplo, se o *nome do host* for **aaXXXXX-XXX.eu.clouddb.ovh.net** e o *número da porta* for **12345**, deverá introduzir-se **aaXXXXXXX-XXX.eu.clouddb.ovh.net:12345** ou **aaXXXXX-XXX.eu.clouddb.ovh.net:12345**. Para encontrar o *nome do host* e o *número da porta* do seu servidor Web Cloud Databases, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} e aceda à secção `Web Cloud`. Clique no separador `Web Cloud Databases`{.action} na coluna à esquerda e selecione o nome do servidor de bases de dados. Na página `Informações gerais`, aparecerá o *nome do host* e o *número da porta* na caixa `Informações da ligação`.
+
+- **Utilizador:** indique o *nome de utilizador* do servidor de bases de dados. Para encontrar o *nome de utilizador* da sua base de dados, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} e aceda à secção `Web Cloud`. Clique no separador `Web Cloud Databases`{.action} na coluna à esquerda e selecione o nome do servidor de bases de dados. Na página que se abrir, clique no separador `Utilizadores e permissões`{.action}. Encontrará uma tabela com o conjunto dos utilizadores criados no seu serviço Web Cloud Databases.
+
+- **Palavra-passe:** indique a *palavra-passe* associada ao *nome de utilizador* em questão. Se já não se lembra da *palavra-passe* associada ao seu *nome de utilizador*, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} e aceda à secção `Web Cloud`. Clique no separador `Web Cloud Databases`{.action} na coluna à esquerda e selecione o nome do servidor de bases de dados. Na página que se abrir, clique no separador `Utilizadores e permissões`{.action}. Clique no botão `...`{.action} situado à direita de *o utilizador* em causa para `Alterar palavra-passe`{.action}.
+
+> [!warning]
+>
+> Se alterar a palavra-passe de utilizador de uma base de dados, todas as aplicações/websites que acedam a essa base de dados deverão ser atualizadas em conformidade.
+>
 
 Se a conexão for bem-sucedida, acederá à página seguinte do phpMyAdmin.
 
-![sql-privado](images/private-sql-phpma03.png){.thumbnail}
+![sql-privado](images/pma-main-page-web-cloud-db.png){.thumbnail}
 
 > [!warning]
 >
@@ -175,9 +183,8 @@ Já está conectado à base de dados:
 
 ## Quer saber mais?
 
-Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/).
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
 
 Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>. 
-

@@ -62,7 +62,7 @@ In our scenario, we will declare a farm of servers for the HTTP service. Please 
 
 > [!api]
 >
-> @api {POST} /ipLoadbalancing/{serviceName}/http/farm
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/http/farm
 > 
 
 |Setting|Meaning|
@@ -73,17 +73,17 @@ With the additional calls listed below, you can list, modify and delete your ser
 
 > [!api]
 >
-> @api {GET} /ipLoadbalancing/{serviceName}/http/farm
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/http/farm
 > 
 
 > [!api]
 >
-> @api {PUT} /ipLoadbalancing/{serviceName}/http/farm
+> @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/http/farm
 > 
 
 > [!api]
 >
-> @api {DELETE} /ipLoadbalancing/{serviceName}/http/farm
+> @api {v1} /ipLoadbalancing DELETE /ipLoadbalancing/{serviceName}/http/farm
 > 
 
 Associate a server with your farm, if it is a physical server hosting your production infrastructure. The service exposed to the front-end is supplied by the server’s port 8080. Please note that you can associate one or more servers with each farm (to balance the load and/or offer higher fault tolerance, for ex.).
@@ -98,7 +98,7 @@ Associate a server with your farm, if it is a physical server hosting your produ
 
 > [!api]
 >
-> @api {POST} /ipLoadbalancing/{serviceName}/http/farm/{farmId}/server
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/http/farm/{farmId}/server
 > 
 
 |Setting|Required|Meaning|Example|
@@ -113,17 +113,17 @@ With the additional calls listed below, you can list, modify and delete your ser
 
 > [!api]
 >
-> @api {GET} /ipLoadbalancing/{serviceName}/http/farm/{farmId}/server
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/http/farm/{farmId}/server
 > 
 
 > [!api]
 >
-> @api {PUT} /ipLoadbalancing/{serviceName}/http/farm/{farmId}/server
+> @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/http/farm/{farmId}/server
 > 
 
 > [!api]
 >
-> @api {DELETE} /ipLoadbalancing/{serviceName}/http/farm/{farmId}/server
+> @api {v1} /ipLoadbalancing DELETE /ipLoadbalancing/{serviceName}/http/farm/{farmId}/server
 > 
 
 ### Infrastructure B.
@@ -142,7 +142,7 @@ Deploy the server farm for the HTTP service (and/or any other TCP or UDP service
 
 > [!api]
 >
-> @api {POST} /ipLoadbalancing/{serviceName}/http/farm
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/http/farm
 > 
 
 |Setting|Meaning|
@@ -161,7 +161,7 @@ Associate a server with your farm. Here, it involves one or more physical server
 
 > [!api]
 >
-> @api {POST} /ipLoadbalancing/{serviceName}/http/farm/{farmId}/server
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/http/farm/{farmId}/server
 > 
 
 |Setting|Required|Meaning|Example|
@@ -202,7 +202,7 @@ This `front-end`{.action} is dedicated to accessing the production infrastructur
 
 > [!api]
 >
-> @api {POST} /ipLoadbalancing/{serviceName}/http/frontend
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/http/frontend
 > 
 
 |Setting|Required|Meaning|Example|
@@ -227,7 +227,7 @@ This `front-end`{.action} is dedicated to accessing the development infrastructu
 
 > [!api]
 >
-> @api {POST} /ipLoadbalancing/{serviceName}/http/frontend
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/http/frontend
 > 
 
 |Setting|Required|Meaning|Example|
@@ -252,7 +252,7 @@ Once you have finished configuring the components of the OVH Load Balancer servi
 
 > [!api]
 >
-> @api {POST} /ipLoadbalancing/{serviceName}/refresh
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/refresh
 > 
 
 |Setting|Meaning|
@@ -286,7 +286,7 @@ This should be the result on the Sunrise Control Panel after updating the front-
 
 > [!api]
 >
-> @api {PUT} /ipLoadbalancing/{serviceName}/http/frontend/{frontendId}
+> @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/http/frontend/{frontendId}
 > 
 
 |Setting|Meaning|Example|
@@ -297,7 +297,7 @@ This should be the result on the Sunrise Control Panel after updating the front-
 
 > [!api]
 >
-> @api {PUT} /ipLoadbalancing/{serviceName}/http/frontend/{frontendId}
+> @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/http/frontend/{frontendId}
 > 
 
 |Setting|Meaning|Example|
@@ -310,7 +310,7 @@ This should be the result on the Sunrise Control Panel after updating the front-
 
 > [!api]
 >
-> @api {POST} /ipLoadbalancing/{serviceName}/refresh
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/refresh
 > 
 
 |Setting|Meaning|

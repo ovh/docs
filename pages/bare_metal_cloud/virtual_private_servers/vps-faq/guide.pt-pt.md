@@ -106,7 +106,7 @@ Aceda a [https://api.ovh.com/](https://api.ovh.com/) e utilize a seguinte chamad
 
 > [!api]
 >
-> @api {POST} vps/{serviceName}/backupftp/access
+> @api {v1} /vps POST /vps/{serviceName}/backupftp/access
 >
 
 Introduza os campos da seguinte forma:
@@ -123,7 +123,7 @@ Para verificar se o seu endereço IP está corretamente autorizado, utilize a se
 
 > [!api]
 >
-> @api {GET} /vps/{serviceName}/backupftp/access
+> @api {v1} /vps GET /vps/{serviceName}/backupftp/access
 >
 
 ![get api](images/get-api.png){.thumbnail}

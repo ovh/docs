@@ -46,7 +46,7 @@ Spersonalizowany skrypt może być interesujący w następujących przypadkach:
 
 > [!api]
 >
-> @api {PUT} /dedicated/server/{serviceName}
+> @api {v1} /dedicated/server PUT /dedicated/server/{serviceName}
 >
 
 Określ skrypt w atrybucie `bootScript` bezpośrednio.
@@ -55,7 +55,7 @@ Określ skrypt w atrybucie `bootScript` bezpośrednio.
 
 > [!api]
 >
-> @api {GET} /dedicated/server/{serviceName}
+> @api {v1} /dedicated/server GET /dedicated/server/{serviceName}
 >
 
 Twój skrypt znajduje się w atrybucie `bootScript`.
@@ -97,21 +97,21 @@ W każdej chwili możesz ponownie przełączyć się na dysk lub na tryb Rescue 
 
 > [!api]
 >
-> @api {PUT} /dedicated/server/{serviceName}
+> @api {v1} /dedicated/server PUT /dedicated/server/{serviceName}
 >
 
 Określ `1` w atrybucie `bootId`.
 
 > [!api]
 >
-> @api {GET} /dedicated/server/{serviceName}
+> @api {v1} /dedicated/server GET /dedicated/server/{serviceName}
 >
 
 Zauważcie, że wartość atrybutu `bootScript` jest teraz zerowa.
 
 ## Więcej informacji <a name="gofurther"></a>
 
-[Restart serwera dedykowanego](/pages/cloud/dedicated/getting-started-with-dedicated-server#reboot)
+[Restart serwera dedykowanego](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server#reboot)
 
 [Uruchamianie i korzystanie z trybu Rescue](/pages/bare_metal_cloud/dedicated_servers/rescue_mode)
 

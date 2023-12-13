@@ -1,16 +1,11 @@
 ---
 title: Cómo utilizar las políticas IAM desde el área de cliente
 excerpt: Cómo conceder permisos de acceso específicos a los usuarios desde una cuenta de OVHcloud
-updated: 2023-07-06
+updated: 2023-12-06
 ---
 
 > [!primary]
 > Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón "Contribuir" de esta página.
->
-
-> [!warning]
->
-> Esta funcionalidad está actualmente en versión beta. Para más información, consulte <https://labs.ovhcloud.com/en/>.
 >
 
 ## Objetivo
@@ -87,6 +82,17 @@ Hay tres maneras de agregar acciones:
 
 Al activar esta opción, autoriza todas las acciones relacionadas con los productos seleccionados. Esto incluye todas las acciones existentes, así como las acciones que se añadan en el futuro para estas categorías de productos.
 
+- Seleccionando un grupo de permisos administrados
+
+OVHcloud pone a su disposición grupos de permisos preconfigurados y administrados.
+Puede seleccionar uno o varios grupos seleccionándolos de la lista disponible.
+
+![Crear una política](images/create_a_policy_05.png){.thumbnail}
+
+Los detalles del contenido de los grupos de permisos administrados están disponibles en la [documentación asociada](/pages/account_and_service_management/account_information/iam-permission-groups).
+
+Los grupos de acciones administradas se pueden utilizar como complemento de las acciones unitarias.
+
 - Añadiendo manualmente acciones
 
 Si conoce el nombre de la acción, puede agregarla manualmente.
@@ -97,9 +103,9 @@ Puede utilizar una *wildcard* al principio o al final del nombre de la acción c
 
 Por ejemplo, la adición de `vps:apiovh:ips/*` concederá los siguientes permisos:
 
-vps:apiovh:ips/edit <br>
-vps:apiovh:ips/delete <br>
-vps:apiovh:ips/get <br>
+- **vps:apiovh:ips/edit**
+- **vps:apiovh:ips/delete**
+- **vps:apiovh:ips/get**
 
 - Seleccionando acciones de la lista
 

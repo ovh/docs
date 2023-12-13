@@ -6,7 +6,7 @@ updated: 2022-11-15
 
 ## Objective
 
-**This guide introduces Tanzu Kubernetes Grid and the possibilities for its integration into your Hosted Private Cloud powered by VMware solution.**
+**This guide introduces Tanzu Kubernetes Grid and the possibilities for its integration into your VMware on OVHcloud solution.**
 
 > [!warning]
 > OVHcloud provides services for which you are responsible, with regard to their configuration and management. It is therefore your responsibility to ensure that they work properly.
@@ -22,7 +22,7 @@ updated: 2022-11-15
 
 ## Step-by-step introduction to the Tanzu Kubernetes Grid solution
 
-VMware Tanzu Kubernetes Grid is a Kubernetes platform provided by **VMware** and maintained as part of the **Hosted Private Cloud powered by VMware** solution.
+VMware Tanzu Kubernetes Grid is a Kubernetes platform provided by **VMware** and maintained as part of the **VMware on OVHcloud** solution.
 
 You can deploy this product on your OVHcloud infrastructure to take advantage of its features and scalability.
 

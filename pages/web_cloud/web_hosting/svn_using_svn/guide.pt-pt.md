@@ -1,7 +1,7 @@
 ---
-title: Utilizar SVN
-excerpt: Saiba como utilizar o SVN em SSH no seu alojamento web
-updated: 2021-01-06
+title: "Utilizar SVN"
+excerpt: "Saiba como utilizar o SVN em SSH no seu alojamento web"
+updated: 2023-12-05
 ---
 
 > [!primary]
@@ -18,7 +18,7 @@ SVN, que é a abreviação de "subversion", é um sistema de gestão de versões
 >
 > A responsabilidade sobre a configuração e a gestão dos serviços que a OVHcloud disponibiliza recai sobre o utilizador. Assim, deverá certificar-se de que estes funcionam corretamente.
 > 
-> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [prestador de serviços especializado](https://partner.ovhcloud.com/pt/directory/) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção «Quer saber mais?» deste guia.
+> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [prestador de serviços especializado](https://partner.ovhcloud.com/pt/directory/) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção "[Quer saber mais?](#go-further)" deste guia.
 > 
 
 ## Pré-requisitos
@@ -30,7 +30,7 @@ SVN, que é a abreviação de "subversion", é um sistema de gestão de versões
 
 ### Criação do depósito
 
-Depois de aceder ao [SSH no seu alojamento](/pages/web_cloud/web_hosting/ssh_on_webhosting){.external}, crie a pasta raiz dos depósitos SVN e, a seguir, o depósito.
+Depois de aceder ao [SSH no seu alojamento](/pages/web_cloud/web_hosting/ssh_on_webhosting), crie a pasta raiz dos depósitos SVN e, a seguir, o depósito.
 
 Para isso, basta introduzir o comando:
 
@@ -58,7 +58,7 @@ Deve obter os diretórios conforme indicado na seguinte imagem:
 
 Antes de prosseguir, terá de criar um par de chaves SSH a partir do posto que utiliza para se ligar ao depósito SVN.
 
-Sugerimos que siga o guia [Criar chaves SSH](/pages/platform/public-cloud/public-cloud-first-steps#1o-passo-criacao-de-chaves-ssh). Neste guia, não é necessário seguir o passo [Importar a chave SSH para a Área de Cliente OVHcloud](/pages/platform/public-cloud/public-cloud-first-steps#1o-passo-criacao-de-chaves-ssh/#como-importar-a-sua-chave-ssh-para-a-area-de-cliente-ovh).
+Sugerimos que siga o guia [Criar chaves SSH](/pages/public_cloud/compute/public-cloud-first-steps#1o-passo-criacao-de-chaves-ssh). Neste guia, não é necessário seguir o passo [Importar a chave SSH para a Área de Cliente OVHcloud](/pages/public_cloud/compute/public-cloud-first-steps#1o-passo-criacao-de-chaves-ssh/#como-importar-a-sua-chave-ssh-para-a-area-de-cliente-ovh).
 
 ### Adicionar chave pública ao alojamento
 
@@ -83,7 +83,7 @@ Seguir a chave criada anteriormente, tudo na mesma linha.
 > Substitua "/home.XXX/loginFTP" e "john" pelos seus ID SSH.
 > Para conhecer os números a utilizar para substituir "/home.XXX/loginFTP" introduza o comando "pwd" em SSH.
 >
-> Também poderá consultar estas informações consultando o nosso guia [Utilizar o acesso SSH do seu alojamento web](/pages/web_cloud/web_hosting/ssh_on_webhosting){.external}.
+> Também poderá consultar estas informações consultando o nosso guia [Utilizar o acesso SSH do seu alojamento web](/pages/web_cloud/web_hosting/ssh_on_webhosting).
 > 
 
 ![alojamento](images/3080.png){.thumbnail}
@@ -147,8 +147,10 @@ Quando deseja efetuar uma verificação local, os exemplos fornecidos não funci
 svn+ssh://login@ftp.nom-du-site.tld/home.XXX/login/svn/depot_test
 ```
 
-## Quer saber mais?
+## Quer saber mais? <a name="go-further"></a>
 
-[Utilizar o acesso SSH do seu alojamento web](/pages/web_cloud/web_hosting/ssh_on_webhosting){.external}
+[Utilizar o acesso SSH do seu alojamento web](/pages/web_cloud/web_hosting/ssh_on_webhosting)
 
-Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
+
+Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

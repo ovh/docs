@@ -122,7 +122,7 @@ Dans l'espace client OVHcloud, il n'y a pas d'indication de disponibilité. Si u
 
 ## Licences Windows
 
-Depuis votre espace client OVHcloud, vous pouvez activer les licences SPLA, afin de [déployer des machines virtuelles Windows avec une licence OVHcloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/ovf_template)).
+Depuis votre espace client OVHcloud, vous pouvez activer les licences SPLA, afin de [déployer des machines virtuelles Windows avec une licence OVHcloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/ovf_template).
 
 Après avoir cliqué sur le bouton `Activer le SPLA`{.action}, la fenêtre suivante s'ouvrira :
 

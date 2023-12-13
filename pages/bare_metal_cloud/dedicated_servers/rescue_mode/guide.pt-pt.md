@@ -1,7 +1,7 @@
 ---
 title: 'Ativar e utilizar o modo rescue'
 excerpt: 'Como ativar e utilizar o modo rescue num servidor dedicado'
-updated: 2023-02-07
+updated: 2023-09-05
 ---
 
 > [!primary]
@@ -33,7 +33,7 @@ O backup dos seus dados deve ser a primeira etapa do modo de recuperação se ai
 ## Instruções
 
 > [!warning]
-> Tenha em conta que se definiu uma chave SSH predefinida no seu espaço para os produtos dedicados, não receberá nenhuma palavra-passe root durante o reboot de um servidor em modo rescue. Neste caso, deve desativar primeiro a chave SSH predefinida antes de reiniciar o servidor em modo rescue. Para isso, consulte a [secção](/pages/cloud/dedicated/creating-ssh-keys-dedicated#disablesshkey) do guia correspondente.
+> Tenha em conta que se definiu uma chave SSH predefinida no seu espaço para os produtos dedicados, não receberá nenhuma palavra-passe root durante o reboot de um servidor em modo rescue. Neste caso, deve desativar primeiro a chave SSH predefinida antes de reiniciar o servidor em modo rescue. Para isso, consulte a [secção](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated#disablesshkey) do guia correspondente.
 >
 
 O modo rescue só pode ser ativado a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Selecione o seu servidor indo à secção `Bare Metal Cloud`{.action} e depois `Servidores dedicados`{.action}. 
@@ -72,13 +72,13 @@ Quando tiver terminado as suas tarefas em modo rescue, não se esqueça de redef
 
 Após o reboot do seu servidor, receberá um e-mail com os dados de acesso em modo rescue. Este e-mail também está disponível na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Clique no nome associado ao seu ID de cliente no canto superior direito da sua Área de Cliente e, a seguir, em `E-mails de serviço`{.action}.
 
-De seguida, deverá aceder ao servidor através de uma linha de comandos ou através de uma ferramenta SSH, utilizando a palavra-passe root gerada para o modo rescue.
+De seguida, deverá aceder ao servidor através de uma linha de comandos ou através de uma ferramenta [SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction), utilizando a palavra-passe root gerada para o modo rescue.
 
 Por exemplo:
 
 ```bash
-ssh root@your_server_IP
-root@your_server_password:
+ssh root@ns3956771.ip-169-254-10.eu
+root@ns3956771.ip-169-254-10.eu's password:
 ```
 
 > [!warning]
@@ -88,15 +88,17 @@ root@your_server_password:
 > Para contornar este problema, pode comentar a pegada do seu sistema habitual adicionando um `#` à frente da sua linha no ficheiro *known_hosts*. Tenha o cuidado de retirar este caráter antes que o servidor volte ao estado normal.
 >
 
-##### Montagem das suas partições
+#### Montagem das suas partições
 
 A maior parte das modificações efetuadas no seu servidor através de SSH em modo rescue requerem a montagem de uma partição. De facto, este modo possui o seu próprio sistema de ficheiros temporários. Por isso, as modificações realizadas no sistema de ficheiros em modo rescue serão perdidas ao reiniciar o servido em modo normal.
 
 Para montar as partições, utilize o comando `mount` em SSH. Deverá listar as suas partições com antecedência para poder recuperar o nome da partição que pretende montar. Aqui tem alguns exemplos de códigos:
 
 ```bash
-rescue-customer:~# fdisk -l
+fdisk -l
+```
 
+```console
 Disk /dev/hda 40.0 GB, 40020664320 bytes
 255 heads, 63 sectors/track, 4865 cylinders
 Units = cylinders of 16065 * 512 = 8225280 bytes
@@ -117,7 +119,7 @@ Device Boot Start End Blocks Id System
 Depois de identificar o nome da partição que pretende montar, utilize o seguinte comando:
 
 ```bash
-rescue-customer:~# mount /dev/hda1 /mnt/
+mount /dev/hda1 /mnt/
 ```
 
 > [!primary]
@@ -129,54 +131,39 @@ rescue-customer:~# mount /dev/hda1 /mnt/
 
 Para sair do modo rescue, redefina o modo de arranque em `Fazer boot no disco rígido`{.action} na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e reinicie o servidor em linha de comandos.
 
-##### Montagem de um datastore
+#### VMware - Montagem de um datastore
 
-Pode montar um datastore VMware da forma descrita no segmento anterior. Em primeiro lugar, instale o package necessário:
+Pode montar um datastore VMware da mesma forma que descrito no passo anterior.
+
+Liste as suas partições para recuperar o nome da partição do datastore:
 
 ```bash
-rescue-customer:~# apt-get update && apt-get install vmfs-tools
+fdisk -l
 ```
 
-De seguida, retorize as suas partições para recuperar o nome da partição do datastore:
+Monte a partição com o seguinte comando, substituindo `sdbX` pelo valor identificado no passo anterior:
 
 ```bash
-rescue-customer:~# fdisk -l
+vmfs-fuse /dev/sdbX /mnt
 ```
 
-Agora, execute o seguinte comando para montar a partição, substituindo `sdbX` pelo valor indicado na etapa anterior:
+Se possui datastores `VMFS 6`, aceda à pasta `sbin` e crie a pasta de montagem:
 
 ```bash
-rescue-customer:~# vmfs-fuse /dev/sdbX /mnt
+cd /usr/local/sbin/
+mkdir /mnt/datastore
 ```
 
-Se possui datastores do tipo `VMFS 6`, deve instalar manualmente a ferramenta `vmfs6-tools` no ambiente do modo rescue:
+Liste as suas partições para recuperar o nome da partição do datastore:
 
 ```bash
-rescue-customer:~# apt-get update && apt-get upgrade
-# apt-get install git uuid-dev libfuse-dev pkg-config gcc
-# git clone https://salsa.debian.org/debian/vmfs6-tools.git
-# cd vmfs6-tools
-# make
-# make install
+fdisk -l
 ```
 
-Aceda à pasta `sbin` para criar a pasta de montagem:
+Monte a partição com o seguinte comando, substituindo `sdbX` pelo valor identificado no passo anterior:
 
 ```bash
-rescue-customer:~# cd /usr/local/sbin/
-# mkdir /mnt/datastore
-```
-
-De seguida, retorize as suas partições para recuperar o nome da partição do datastore:
-
-```bash
-rescue-customer:~# fdisk -l
-```
-
-Agora, execute o seguinte comando para montar a partição, substituindo `sdbX` pelo valor indicado na etapa anterior:
-
-```bash
-rescue-customer:~# vmfs6-fuse /dev/sdbX /mnt/datastore/
+vmfs6-fuse /dev/sdbX /mnt/datastore/
 ```
 
 Para sair do modo rescue, redefina o modo de arranque em `Fazer boot no disco rígido`{.action} na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e reinicie o servidor em linha de comandos.

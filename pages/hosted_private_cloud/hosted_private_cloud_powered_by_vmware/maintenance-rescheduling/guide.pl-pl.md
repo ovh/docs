@@ -1,6 +1,6 @@
 ---
 title: "Przeniesienie zaplanowanej konserwacji do Hosted Private Cloud"
-excerpt: "Dowiedz się, jak przenieść zaplanowaną konserwację na usługę Hosted Private Cloud powered by VMware"
+excerpt: "Dowiedz się, jak przenieść zaplanowaną konserwację na usługę VMware on OVHcloud"
 updated: 2022-11-30
 ---
 
@@ -17,12 +17,12 @@ Po zaplanowaniu prac konserwacyjnych na Twojej usłudze Hosted Private Cloud otr
 >
 > Jeśli data konserwacji może zostać zmieniona przez użytkownika, proponowane nowe daty mieszczą się w skróconym przedziale czasowym.
 
-**Dowiedz się, jak zmienić datę zaplanowanej konserwacji na Hosted Private Cloud powered by VMware w Panelu klienta OVHcloud lub w API OVHcloud.**
+**Dowiedz się, jak zmienić datę zaplanowanej konserwacji na VMware on OVHcloud w Panelu klienta OVHcloud lub w API OVHcloud.**
 
 ## Wymagania początkowe
 
 - Otrzymałeś e-mail z powiadomieniem o pracach konserwacyjnych informujący, że możesz **zmienić datę wykonania prac konserwacyjnych**. W przeciwnym razie data utrzymania nie może zostać zmieniona.
-- Posiadanie kontaktu administracyjnego lub technicznego w infrastrukturze [Hosted Private Cloud powered by VMware](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/).
+- Posiadanie kontaktu administracyjnego lub technicznego w infrastrukturze [VMware on OVHcloud](https://www.ovhcloud.com/pl/enterprise/products/hosted-private-cloud/).
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) lub [interfejsu administracyjnego usług przez API](https://eu.api.ovh.com/).
 
 ## W praktyce
@@ -60,7 +60,7 @@ Wykonaj następujące wywołanie API:
 
 > [!api]
 >
-> @api {POST} /dedicatedCloud/{serviceName}/task/{taskId}/changeMaintenanceExecutionDate
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/task/{taskId}/changeMaintenanceExecutionDate
 >
 
 Wpisz zmienne:

@@ -85,7 +85,7 @@ If you no longer want to use one of your payment methods, you can delete it by c
 
 ![manage-payment-methods](images/managepaymentmethods4.png){.thumbnail}
 
-If you would like to delete all of your payment methods, all of your services must be set to [manual renewal](/pages/account/billing/how_to_use_automatic_renewal#manual-renewal).
+If you would like to delete all of your payment methods, all of your services must be set to [manual renewal](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#manual-renewal).
 
 #### Delete a payment method via the OVHcloud API
 
@@ -95,14 +95,14 @@ Start by getting the payment method’s ID:
 
 > [!api]
 >
-> @api {GET} /me/payment/method
+> @api {v1} /me GET /me/payment/method
 >
 
 Then delete the payment method using the ID you obtained in the previous step:
 
 > [!api]
 >
-> @api {DELETE} /me/payment/method/{paymentMethodId}
+> @api {v1} /me DELETE /me/payment/method/{paymentMethodId}
 >
 
 > [!primary]
@@ -118,7 +118,7 @@ Then delete the payment method using the ID you obtained in the previous step:
 
 The *prepaid account* is added to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) as soon as it is created. It allows you to credit your customer account in advance and use these funds to pay for your orders and renewal invoices.
 
-By crediting your account regularly, you will ensure that your services will never be interrupted for default on their [automatic renewal](/pages/account/billing/how_to_use_automatic_renewal#automatic-renewal).
+By crediting your account regularly, you will ensure that your services will never be interrupted for default on their [automatic renewal](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#automatic-renewal).
 
 To do this, simply go to the `Payment methods` section in your Control Panel:
 

@@ -46,7 +46,7 @@ Utilizar un script personalizado puede ser interesante en los siguientes casos:
 
 > [!api]
 >
-> @api {PUT} /dedicated/server/{serviceName}
+> @api {v1} /dedicated/server PUT /dedicated/server/{serviceName}
 >
 
 Indique su script en el atributo `bootScript` directamente.
@@ -55,7 +55,7 @@ Indique su script en el atributo `bootScript` directamente.
 
 > [!api]
 >
-> @api {GET} /dedicated/server/{serviceName}
+> @api {v1} /dedicated/server GET /dedicated/server/{serviceName}
 >
 
 Su script se encuentra en el atributo `bootScript`.
@@ -97,21 +97,21 @@ En cualquier momento puede volver al disco o al modo de rescate desde el [área 
 
 > [!api]
 >
-> @api {PUT} /dedicated/server/{serviceName}
+> @api {v1} /dedicated/server PUT /dedicated/server/{serviceName}
 >
 
 Especifique `1` en el atributo `bootId`.
 
 > [!api]
 >
-> @api {GET} /dedicated/server/{serviceName}
+> @api {v1} /dedicated/server GET /dedicated/server/{serviceName}
 >
 
 Observará que el valor del atributo `bootScript` es ahora cero.
 
 ## Más información <a name="gofurther"></a>
 
-[Reinicio del servidor dedicado](/pages/cloud/dedicated/getting-started-with-dedicated-server#reboot)
+[Reinicio del servidor dedicado](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server#reboot)
 
 [Activar y utilizar el modo de rescate](/pages/bare_metal_cloud/dedicated_servers/rescue_mode)
 

@@ -29,7 +29,7 @@ Loggen Sie sich auf [https://api.ovh.com/](https://api.ovh.com/) ein und verwend
 
 > [!api]
 >
-> @api {POST} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/backup/generateReport
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/backup/generateReport
 
 Geben Sie die Variablen an:
 
@@ -61,7 +61,7 @@ Dieser API-Aufruf wird die letzten gültigen Wiederherstellungspunkte jedes im S
 
 > [!api]
 >
-> @api {POST} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/backup/batchRestore
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/backup/batchRestore
 >
 
 Geben Sie die Variablen an:

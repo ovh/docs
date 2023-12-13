@@ -39,7 +39,7 @@ Koszt wysyłki wiadomości SMS (w zasileniach) w zależności od ich miejsca prz
 >
 > Wiadomość SMS może zawierać ograniczoną liczbę znaków, zależną od rodzaju kodowania. Szczegóły dotyczące kodowania i dopuszczalnych znaków są dostępne w tym przewodniku:
 > 
-> [Wysyłanie wiadomości SMS z Panelu klienta OVHcloud](/pages/telecom/sms/envoyer_des_sms_depuis_mon_espace_client#etap-2-tworzenie-wiadomosci-sms)
+> [Wysyłanie wiadomości SMS z Panelu klienta OVHcloud](/pages/web_cloud/messaging/sms/envoyer_des_sms_depuis_mon_espace_client#etap-2-tworzenie-wiadomosci-sms)
 >
 
 ### Automatyczne doładowanie

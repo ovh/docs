@@ -44,21 +44,21 @@ Die Verwendung geschieht über drei API-Aufrufe:
 
 > [!api]
 >
-> @api {GET} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/filer/{filerId}
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/filer/{filerId}
 >
 
 #### Hosts
 
 > [!api]
 >
-> @api {GET} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/host/{hostId}
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/host/{hostId}
 > 
 
 #### VMs
 
 > [!api]
 > 
-> @api {GET} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/vm/{vmId}
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/vm/{vmId}
 > 
 
 ### Die historischen Daten sammeln (Grafiken)
@@ -75,7 +75,7 @@ Für den jeweiligen Nutzer verwenden Sie den folgenden APIv6-Aufruf für das Les
 
 > [!api]
 > 
-> @api {POST} /dedicatedCloud/{serviceName}/user/{userId}/metricsToken
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/user/{userId}/metricsToken
 > 
 
 Ihr Token befindet sich im Feld **token** des Ergebnisses.

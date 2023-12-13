@@ -16,14 +16,14 @@ Um bestimmte Verwaltungsfunktionen auf Ihrer Instanz auszuführen (zum Beispiel 
 
 ## Voraussetzungen
 
-- Sie haben eine [Public Cloud Instanz](/pages/platform/public-cloud/public-cloud-first-steps#schritt-3-instanz-erstellen) erstellt.
+- Sie haben eine [Public Cloud Instanz](/pages/public_cloud/compute/public-cloud-first-steps#schritt-3-instanz-erstellen) erstellt.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
 
 ## In der praktischen Anwendung
 
 ### Festlegen des Root-Passworts <a name="settingtherootpassword"></a>
 
-Stellen Sie zunächst eine [SSH-Verbindung](/pages/platform/public-cloud/public-cloud-first-steps#schritt-4-mit-ihrer-instanz-verbinden) zu Ihrer Instanz her.
+Stellen Sie zunächst eine [SSH-Verbindung](/pages/public_cloud/compute/public-cloud-first-steps#schritt-4-mit-ihrer-instanz-verbinden) zu Ihrer Instanz her.
 
 Geben Sie auf der Kommandozeile ein Passwort für den root-Benutzer ein (aus Sicherheitsgründen wird das Passwort beim Eingeben nicht angezeigt):
 

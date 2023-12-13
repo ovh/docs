@@ -1,7 +1,7 @@
 ---
 title: 'Crear y conectarse a una instancia de Public Cloud'
 excerpt: 'Cómo empezar a utilizar el servicio Public Cloud tras haber creado un proyecto'
-updated: 2023-01-26
+updated: 2023-12-01
 ---
 
 > [!primary]
@@ -155,19 +155,18 @@ Por último, haga clic en el botón `Añadir una llave SSH`{.action}. Aparecerá
 
 Conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), acceda a la sección `Public Cloud`{.action} y seleccione el proyecto correspondiente. Desde la página de inicio, haga clic en el botón `Crear una instancia`{.action}. También puede crear su instancia desde el menú `Instancias`{.action}, en la sección «Compute» del menú de la izquierda.
 
-![instance select](images/instance-creation-01-2023.png){.thumbnail}
+![instance select](images/instance-creation-01-02-2023.png){.thumbnail}
 
 En primer lugar, seleccione el modelo que mejor se adapta a sus necesidades. Podrá consultar las características de las diferentes instancias y los modelos de servidor disponibles de entre las siguientes categorías:
 
 | Tipo de servidor | Recursos garantizados | Uso |
 | :---         |     :---:      |          :--- |
 | General Purpose   | ✓     | Servidores de desarrollo, aplicaciones web o comerciales    |
-| CPU     | ✓       | Codificación de vídeo o alta computación      |
-| RAM   | ✓     | Bases de datos, análisis y cálculos en memoria    |
+| Compute Optimized     | ✓       | Codificación de vídeo o alta computación      |
+| Memory Optimized   | ✓     | Bases de datos, análisis y cálculos en memoria    |
 | GPU     | ✓       | Procesamiento de tareas masivamente paralelas para aplicaciones especializadas (renderizado, big data, deep learning, etc.)       |
-| Sandbox    | -       | Alojado en recursos compartidos para entornos de testeo y desarrollo      |
 | Discovery    | -       | Alojado en recursos compartidos para entornos de testeo y desarrollo      |
-| IOPS   | ✓     | Optimizado para transferencia de datos en disco    |
+| Storage Optimized   | ✓     | Optimizado para transferencia de datos en disco    |
 | Metal | ✓ | Recursos dedicados con acceso directo a recursos informáticos, de almacenamiento y de red|
 
 > [!primary]
@@ -181,7 +180,7 @@ En el próximo paso, deberá seleccionar un datacenter para su instancia de Publ
 
 En tercer lugar, deberá seleccionar un sistema operativo para su instancia. Las imágenes disponibles en este paso dependerán de las opciones que haya seleccionado en los pasos anteriores (p. ej., la compatibilidad con el tipo de servidor y la localización). También hay disponibles sistemas operativos con aplicaciones preinstaladas.
 
-![image select](images/instance-creation-02-2022.png){.thumbnail}
+![image select](images/instance-creation-02-2023.png){.thumbnail}
 
 > [!primary]
 >
@@ -220,6 +219,11 @@ Una vez que hay seleccionado las opciones deseadas, haga clic en `Siguiente`{.ac
 
 Le recomendamos que elija la facturación por horas si no está seguro del periodo de uso, ya que no es posible elegirla después de la prestación del servicio. Tendrá la opción de cambiar a una suscripción mensual tan pronto como la instancia esté disponible en la página «Instances».
 
+> [!primary]
+>
+>Tenga en cuenta que si elige una de nuestras instancias *Compute* actuales, solo la opción de facturación **por horas** estará disponible por razones técnicas.
+>
+
 > [!warning]
 >
 >Si elige la opción de facturación por horas, esta se mantendrá hasta que se elimine la instancia, independientemente de si la está o no utilizando.
@@ -242,7 +246,7 @@ Si tiene problemas con la conexión a través de sus claves SSH, consulte nuestr
 
 > [!primary]
 >
-Si ha creado una instancia sin llave SSH, a través de la API OVHcloud o la interfaz Openstack Horizon, solo podrá añadir una llave SSH a su instancia a través del [modo de rescate](/pages/public_cloud/compute/put_an_instance_in_rescue_mode) siguiendo las instrucciones descritas en [esta sección de la guía adecuada](/pages/platform/public-cloud/replacing_lost_ssh_key#procedimiento).
+Si ha creado una instancia sin llave SSH, a través de la API OVHcloud o la interfaz Openstack Horizon, solo podrá añadir una llave SSH a su instancia a través del [modo de rescate](/pages/public_cloud/compute/put_an_instance_in_rescue_mode) siguiendo las instrucciones descritas en [esta sección de la guía adecuada](/pages/public_cloud/compute/replacing_lost_ssh_key#procedimiento).
 >
 
 #### Conexión a una instancia Linux en Linux o Mac

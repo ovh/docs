@@ -1,7 +1,6 @@
 ---
 title: 'Everything you need to know about SMS users'
 excerpt: 'Explore the features for API users to send SMS messages'
-legacy_guide_number: g2144
 updated: 2022-08-05
 ---
 
@@ -116,7 +115,7 @@ To get a description of a specific ptt code, you can use the following API:
 
 > [!api]
 >
-> @api {GET} /sms/ptts
+> @api {v1} /sms GET /sms/ptts
 >
 
 For more information on using OVHcloud APIs, please refer to our guide [Getting started with OVHcloud APIs](/pages/manage_and_operate/api/first-steps).

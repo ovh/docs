@@ -1,7 +1,6 @@
 ---
 title: 'Comment fonctionne OverTheBox Intel ou ITv1?'
 keywords: 'Fonctionnement, Principe'
-legacy_guide_number: 2237
 description: 'Comment fonctionne OverTheBox Intel ou ITv1?'
 excerpt: 'Le boitier OverTheBox ne possède qu’un seul port Ethernet. Pourtant, c’est grâce à ce boitier que vos différentes connexions sont agrégées pour n’en former qu’une. Comment cela fonctionne-t-il ?'
 updated: 2021-04-14

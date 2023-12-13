@@ -4,26 +4,6 @@ excerpt: Find out how to install Etherpad  on your POWER web hosting plan
 updated: 2023-04-27
 ---
 
-<style>
- pre {
-     font-size: 14px;
- }
- pre.console {
-   background-color: #300A24; 
-   color: #ccc;
-   font-family: monospace;
-   padding: 5px;
-   margin-bottom: 5px;
- }
- pre.console code {
-   border: solid 0px transparent;
-   font-family: monospace !important;
- }
- .small {
-     font-size: 0.75em;
- }
-</style>
-
 ## Objective
 
 You've subscribed to a Web POWER web hosting plan to deploy **Node.js** applications, and you want to deploy an [Etherpad](https://etherpad.org/){.external} server on it.
@@ -49,9 +29,9 @@ Let's suppose you have the default configuration for Node.js hosting:
 
 > [!primary]
 >
-> To verify your configuration, you can use the [Retrieve active configuration](/pages/labs/web-power/getting-started#api-get-active-configuration) API endpoint.
+> To verify your configuration, you can use the [Retrieve active configuration](/pages/ovhcloud_labs/power_web_hosting/getting-started#api-get-active-configuration) API endpoint.
 
-[Access via SSH](/pages/labs/web-power/getting-started#ssh) to your POWER web hosting, and retrieve Etherpad sources into the `www` folder:
+[Access via SSH](/pages/ovhcloud_labs/power_web_hosting/getting-started#ssh) to your POWER web hosting, and retrieve Etherpad sources into the `www` folder:
 
 ```sh
 cd www
@@ -71,13 +51,14 @@ bash bin/installDeps.sh
 ln -fs node_modules/ep_etherpad-lite/node/server.js index.js
 ```
 
-[Restart your instance](/pages/labs/web-power/getting-started#restart) and your Etherpad will be online.
+[Restart your instance](/pages/ovhcloud_labs/power_web_hosting/getting-started#restart) and your Etherpad will be online.
 
 ![Etherpad](images/nodejs-install-etherpad-01.png){.thumbnail}
 
 Terminal output:
 
-<pre class="console"><code>~ $ node -v
+```console
+~ $ node -v
 v14.15.4
 ~ $ rm -rf www
 ~ $ mkdir www
@@ -106,7 +87,8 @@ added 799 packages in 11.642s
 Clearing minified cache...
 ~/www $ ln -fs node_modules/ep_etherpad-lite/node/server.js index.js
 ~/www $ mkdir -p tmp
-~/www $ touch tmp/restart.txt</code></pre>
+~/www $ touch tmp/restart.txt
+```
 
 ## Go further
 

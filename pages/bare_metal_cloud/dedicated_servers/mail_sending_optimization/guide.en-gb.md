@@ -57,13 +57,13 @@ To further optimise email sending and lower the risk of your emails being blocke
 
 To begin, you first have to create an A record in the DNS Zone of your domain with the IP address of your server as a target.
 
-If your DNS Servers are managed by OVHcloud, please consult this [guide](/pages/web/domains/dns_zone_edit#instructions).
+If your DNS Servers are managed by OVHcloud, please consult this [guide](/pages/web_cloud/domains/dns_zone_edit#instructions).
 
 Once you have modified your domain name’s DNS zone, you will need to allow a maximum of 24 hours for the changes to propagate fully, and be effective.
 
 Once done, add the PTR record (also known as the reverse):
 
-In the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, go to the `Bare Metal Cloud`{.action} section, then open `IP`{.action}. 
+In the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, go to the `Bare Metal Cloud`{.action} section and open `Network`{.action}. Next, click on `IP`{.action}.
 
 If you wish to configure the reverse DNS on an Additional IP, click on the `Additional IP`{.action} tab.
 

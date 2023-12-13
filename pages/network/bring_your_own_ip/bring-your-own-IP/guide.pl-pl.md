@@ -1,7 +1,7 @@
 ---
 title: How to use the Bring Your Own IP feature (EN)
 excerpt: Find out how to easily import your own IP as Additional IP to your OVHcloud account
-updated: 2023-07-19
+updated: 2023-11-20
 ---
 
 ## Objective
@@ -30,22 +30,16 @@ You need to own (see below) a public IPv4 block with one of the following RIRs:
 - [ARIN](https://www.arin.net/)
 - [RIPE](https://www.ripe.net/)
 
-An ARIN block can only be used with OVHcloud services located in Canada or the USA, while a RIPE block can only be used with OVHcloud services located in Europe.
+It is now possible to use ARIN or RIPE IP blocks on any OVHcloud campus. This enhanced flexibility enables more efficient management and optimized allocation of IP addresses to meet your company's specific needs.
+
+Unlike the previous policy, where an ARIN block could only be used with OVHcloud services located in Canada or the USA, and a RIPE block could only be used with OVHcloud services located in Europe, this restriction has been lifted.
 
 To be considered as a valid owned block, imported blocks must be one of the following types :
 
-- ARIN (object «Network type »)
-    - Direct Allocation
-    - Direct Assignment
-
-See <https://www.arin.net/resources/registry/whois/#network> and <https://www.arin.net/resources/registry/reassignments/> for more information on Net Types objects.
-
-- RIPE (object « status »)
-    - ASSIGNED PI
-    - LEGACY
-    - ALLOCATED PA
-
-See [« Description of the INETNUM Object »](https://apps.db.ripe.net/docs/04.RPSL-Object-Types/02-Descriptions-of-Primary-Objects.html#description-of-the-inetnum-object) for more information on status objects.
+| ARIN (object *Network type*) | RIPE (object *status*) |
+| :--- | :--- |
+| &bull; Direct Allocation <br>&bull; Direct Assignment <br>&bull; Reallocated <br>&bull; Reassigned  |  &bull; ALLOCATED PA <br>&bull; LIR-PARTITIONED PA  <br>&bull; SUB-ALLOCATED PA  <br>&bull; ASSIGNED PA  <br>&bull; ASSIGNED PI  <br>&bull; LEGACY   |
+| **For more information :** <br>&bull; [Using WhoIs - Network](https://www.arin.net/resources/registry/whois/#network) <br>&bull; [Reporting Reassignments](https://www.arin.net/resources/registry/reassignments/) | **For more information :** <br>[Description of the INETNUM Object](https://apps.db.ripe.net/docs/04.RPSL-Object-Types/02-Descriptions-of-Primary-Objects.html#description-of-the-inetnum-object) |
 
 ### Your IP range must have a supported size <a name="supportedsize"></a>
 
@@ -92,16 +86,8 @@ Below is a list of current campuses:
     - bhs (1-8)
 - SGP (Singapore)
     - sgp1
-- VIN (Vint Hill)
-    - vin1
-- HIL (Hillsboro)
-    - hil1
-
-The list of available campuses will depend on your geographical location, and on the RIR of the IP. Below are listed all IP campuses where we plan to launch the BYOIP product. However, note that not all campuses may be supported at launch:
-
-|**Customer IPs' RIR is:**|**ARIN**|**RIPE**|
-|---|---|---|
-|**Available campuses** |BHS<br>SGP|RBX<br>GRA<br>SBG<br>WAW<br>LIM<br>ERI|
+- YNM (Mumbai)
+    - ynm1
 
 ### You must prove ownership of the IP range <a name="proveownershipip"></a>
 
@@ -150,6 +136,80 @@ To activate the announcement of your imported IP range on the Internet, simply a
 
 <br>During the delivery, we will create ARPA zones on our DNS servers and any reverse DNS modification via the OVHcloud Control Panel/API will be applied on them. However, these modifications will be visible to the public when our DNS servers receive delegations of the ARPA zones by the RIR. (This is optional, if you want to continue managing your reverse DNS on your own, you can).
 
+### Range slicing <a name="range-slicing"></a>
+
+Any imported IP block can be further split into smaller blocks and/or individual addresses.
+
+> [!warning] 
+> To be able to slice/merge an existing IP block, it must be unused (i.e. in the parking area) and there must not be any pending task associated with it (e.g. no pending move operation).
+
+To slice a block, use the following API call :
+
+> [!api]
+>
+> @api {v1} /ip POST /ip/{ip}/bringYourOwnIp/slice
+>
+
+Use the following parameters:
+
+- ip : the IP block you want to slice, in CIDR notation.
+- slicingSize : the resulting size of the sliced blocks, expressed as a network prefix size, in bits. For example if you want to slice a /24 block into 2 smaller blocks of size /25, you should enter the value "25".
+
+> [!primary]
+> This API call is asynchronous, the newly created blocks are made available shortly after the call. They will be usable as any other Additional IP block or individual address.
+
+You can preview the resulting blocks that would be created for each block size, by using the following API call:
+
+> [!api]
+>
+> @api {v1} /ip GET /ip/{ip}/bringYourOwnIp/slice
+>
+
+Use the following parameters:
+
+- ip : the IP block you want to slice, in CIDR notation.
+
+To merge back a block into a parent block, use this API call :
+
+> [!api]
+>
+> @api {v1} /ip POST /ip/{ip}/bringYourOwnIp/aggregate
+>
+
+Use the following parameters:
+
+- ip : the IP block you want to slice, in CIDR notation.
+- aggregationIp : the resulting block, in CIDR notation.
+
+The resulting block will be an aggregate of all its children blocks.
+
+> [!primary]
+> This API call is asynchronous, the re-aggregated blocks are made available shortly after the call.
+
+You can preview all the possible configurations of aggregated blocks for a given IP block, by using the following API call:
+
+> [!api]
+>
+> @api {v1} /ip GET /ip/{ip}/bringYourOwnIp/aggregate
+>
+
+Use the following parameters:
+
+- ip : the IP block you want to merge into a parent block, in CIDR notation.
+
+This call returns a list of possible aggregated blocks and, for each one of them, gives the list of children blocks to be merged back.
+
+**Limitations**:
+
+- This feature is currently available via API only. It will be added to the OVHcloud Control Panel in the near future.
+- Configuration elements associated to individual IP addresses (/32) such as firewall rules or reverse DNS entries will be kept after slicing/merging operations.
+- Slice/Aggregate API tasks cannot be followed up by the asynchronous task number returned by API, as associated IP objects will be destroyed in the slice/aggregate process.
+- The listing of IP addresses and blocks returned by API is ordered by network prefix size. We are working to provide a solution to list IPs by numerical order.
+- Once sliced, smaller blocks are not movable outside the campus chosen during the order of the product.
+- Moving a /24 block across french campuses won't work if :
+    - It has been reaggregated from a previous slicing.
+    - The /24 block was imported from a bigger block (/23 to /19).
+
 ## FAQ
 
 ### Is it possible to import an IP range lower than a /24?
@@ -160,13 +220,13 @@ No, the minimum accepted size is a /24.
 
 Not at product launch, but feel free to contact us to discuss this.
 
-### Is splitting the imported /24 into smaller block size (/25, /26, /27, /28, /29 /30) or into /32 supported?
+### Is splitting the imported /24 into smaller block size (/25, /26, /27, /28, /29, /30) or into /32 supported?
 
-Not for the moment.
+Yes, please see the [Range slicing](#range-slicing) section for more details.
 
 ### Can I import an ARIN range in campuses accepting only RIPE ranges, and vice-versa?
 
-Not for the moment.
+Yes, with our updated policy, it is now possible to use ARIN or RIPE IP blocks on OVHcloud campus where the BYOIP product is available. We've removed previous restrictions to offer greater flexibility and efficiency in IP address management and allocation. You can import and use your IP blocks according to your specific needs, regardless of the geographical location of the campus.
 
 ### Can I import an ARIN AS number with a RIPE IP range, and vice-versa?
 

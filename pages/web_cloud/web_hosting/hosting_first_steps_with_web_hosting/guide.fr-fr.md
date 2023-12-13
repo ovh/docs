@@ -1,7 +1,7 @@
 ---
-title: Premiers pas avec un hébergement web
-excerpt: Découvrez comment bien débuter avec un hébergement web
-updated: 2022-11-11
+title: "Premiers pas avec un hébergement web"
+excerpt: "Découvrez comment bien débuter avec un hébergement web"
+updated: 2023-12-12
 ---
 
 ## Objectif
@@ -18,6 +18,11 @@ Vous venez d’acquérir un hébergement web pour créer votre site internet. Ce
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 
 ## En pratique
+
+> [!success]
+>
+> Avant de poursuivre la lecture de ce guide, assurez-vous que le nom de domaine ou le sous-domaine que vous souhaitez utiliser soit correctement associé avec votre hébergement web OVHcloud. Pour cela, consultez notre guide « [Partager son hébergement web OVHcloud entre plusieurs sites web](/pages/web_cloud/web_hosting/multisites_configure_multisite) ».
+>
 
 ### Étape 1 : délimiter votre projet
 
@@ -45,7 +50,7 @@ Cette solution utilise les modules en 1 clic OVHcloud, un outil permettant d'ins
 
 Afin que l'installation du module OVHcloud puisse se réaliser, vous devez vous assurer que le répertoire d'installation du module soit vide (ce qui est le cas si vous ne vous êtes pas encore connecté à votre espace de stockage). Pour réaliser l'installation du module en 1 clic, connectez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Rendez-vous dans la section `Hébergements`{.action}, puis sur le nom de l'hébergement web que vous venez de commander. puis, dans l'onglet `Modules en 1 clic`{.action}, cliquez sur le bouton `Ajouter un module`{.action}.
 
-![Accès aux modules en 1 clic](images/access_to_the_1_click_modules_section.png){/thumbnail}
+![Accès aux modules en 1 clic](images/access-to-the-1-click-modules-section.png){.thumbnail}
 
 Enfin, pour initier l'installation du module en 1 clic, sélectionnez le CMS que vous souhaitez installer, assurez-vous que la case `Installation en mode avancé`{.action} ne soit pas cochée, puis cliquez sur le bouton `Installer`{.action}.
 
@@ -60,15 +65,23 @@ Cette solution utilise les modules OVHcloud, un outil permettant d'installer un 
 Afin que l'installation du module OVHcloud puisse se réaliser, vous devez vous assurer que :
 
 - le répertoire d'installation du module soit vide (ce qui est le cas si vous ne vous êtes pas encore connecté à votre espace de stockage) ;
-- qu'une base de données soit déjà créée sur votre hébergement (rendez-vous sur l'onglet `Bases de données`{.action} puis sur `Créer une base de données`{.action} pour réaliser la manipulation).
+- qu'une base de données soit déjà créée sur votre hébergement.
 
-Pour créer la base de données, connectez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.Rendez-vous dans la section `Hébergements`{.action}, puis cliquez sur le nom de l'hébergement web que vous venez de commander. Dans l'onglet `Bases de données`{.action}, cliquez sur le bouton `Créer une base de données`{.action}. Complétez les informations demandées puis patientez le temps que l'installation s'effectue.
+Pour créer la base de données, connectez-vous à l'[espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, puis rendez-vous dans la partie `Web Cloud`{.action}. Dans la colonne de gauche, cliquez sur `Hébergements`{.action}, puis sélectionnez le nom de l'hébergement web concerné.
 
-![Accès aux modules en 1 clic](images/create_a_database.png){/thumbnail}
+Dans l'onglet `Bases de données`{.action}, deux scénarios sont possibles : 
+
+- **Vous avez au moins une base de données disponible en « création » sur votre hébergement web** : cliquez sur le bouton `Actions`{.action} au dessus du tableau qui s'affiche puis sur le bouton `Créer une base de données`{.action}.
+
+![Accès aux modules en 1 clic](images/create-a-database-2.png){.thumbnail}
+
+- **Vous n'avez plus de bases de données disponibles en « création » sur votre hébergement web** : cliquez sur le bouton `Actions`{.action} au dessus du tableau qui s'affiche. Vous pourrez (au choix) :
+    - Commander une base de données [Start SQL](https://www.ovhcloud.com/fr/web-hosting/options/start-sql/) en complément de vos bases de données incluses avec votre offre d'hébergement web. Pour cela, cliquez sur le bouton `Actions`{.action} au dessus du tableau puis sur le bouton `Commander une base de données`{.action}.
+    - Commander un serveur de bases de données [Web Cloud Databases](https://www.ovhcloud.com/fr/web-cloud/databases/). Pour cela, cliquez sur le bouton `Actions`{.action} au dessus du tableau puis sur le bouton `Commander une base de données Web Cloud Databases`{.action}. Consultez ensuite notre guide « [Premiers pas avec votre Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) » pour créer une base de données sur cette offre.
 
 Une fois la base de données créée, pour réaliser l'installation du module en 1 clic, rendez-vous dans l'onglet `Modules en 1 clic`{.action}, puis cliquez sur le bouton `Ajouter un module`{.action}. Sélectionnez le CMS que vous souhaitez installer, assurez-vous que la case `Installation en mode avancé`{.action} soit cochée, puis cliquez sur le bouton `Suivant`{.action}.
 
-![Accès aux modules en 1 clic](images/access_to_the_1_click_modules_section.png){/thumbnail}
+![Accès aux modules en 1 clic](images/access-to-the-1-click-modules-section.png){.thumbnail}
 
 Suivez les informations demandées jusqu'à initier l'installation du module. Il ne vous reste plus qu'à patienter le temps de recevoir l'e-mail vous confirmant son installation, puis à poursuivre les étapes restantes ci-dessous.
 
@@ -76,7 +89,12 @@ Si vous désirez obtenir plus de détails sur l'installation d'un module en mode
 
 #### Solution manuelle, compétences techniques requises
 
-Cette solution s'applique si vous souhaitez créer ou migrer un site internet sans utiliser les modules OVHcloud. Vous devrez être en possession des fichiers du site internet que vous souhaitez installer. Vous devrez donc vous connecter manuellement à votre espace de stockage pour y uploader les fichiers du site puis, si possible, lier ce dernier à une base de données préalablement créée.
+Cette solution s'applique si vous souhaitez créer ou migrer un site internet sans utiliser les modules OVHcloud. Vous devez être en possession des fichiers du site internet que vous souhaitez installer. Vous devrez donc vous [connecter manuellement à votre espace de stockage FTP](/pages/web_cloud/web_hosting/ftp_connection) pour y téléverser les fichiers du site puis, si possible, lier ce dernier à une base de données préalablement créée.
+
+> [!success]
+>
+> Si vous avez oublié le mot de passe d'accès à votre espace de stockage FTP, modifiez-le à l'aide de notre guide « [Changer le mot de passe d'accès à l'espace de stockage FTP de son hébergement web](/pages/web_cloud/web_hosting/ftp_change_password) ».
+>
 
 Il n'existe pas de marche à suivre universelle tant les sites peuvent être différents les uns des autres, mais nous pouvons vous aiguiller sur les manipulations à réaliser dans votre hébergement web OVHcloud grâce à nos documentations : [Mettre mon site en ligne](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online){.external} et [Migrer mon site chez OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh){.external} si ce dernier s'applique. Une fois le site installé manuellement sur votre hébergement web, poursuivez les étapes restantes ci-dessous.
 
@@ -84,7 +102,7 @@ Il n'existe pas de marche à suivre universelle tant les sites peuvent être dif
 
 Cette étape peut être facultative si vous ne souhaitez pas utiliser les adresses e-mail comprises avec votre offre d'[hébergement web](https://www.ovhcloud.com/fr/web-hosting/){.external}. Pour créer une ou plusieurs adresses e-mail, assurez-vous dans un premier temps d'être connecté dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}. Rendez-vous dans la section `Emails`{.action} puis sur le nom de l'hébergement web que vous venez de commander. puis, dans l'onglet `Emails`{.action}, cliquez sur le bouton `Créer une adresse e-mail`{.action}.
 
-![Créer une adresse e-mail](images/create_an_email_address.png){/thumbnail}
+![Créer une adresse e-mail](images/create-an-email-address.png){.thumbnail}
 
 Suivez les informations demandées jusqu'à la création de votre adresse e-mail. Répétez cette étape pour en créer plusieurs. Si vous êtes dans un processus de migration de vos e-mails chez OVHcloud, nous vous invitons à utiliser notre outil [OVH Mail Migrator](https://omm.ovh.net/){.external} afin de vous aider dans vos démarches. 
 
@@ -106,29 +124,29 @@ Il existe plusieurs champs DNS inhérents à OVHcloud. Nous allons nous intéres
 
 Pour vérifier le champ A que vous devez utiliser dans la zone DNS de votre domaine, connectez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.Rendez-vous dans la section `Hébergements`{.action} et sur le nom de l'hébergement web que vous venez de commander. puis, dans l'onglet `Informations générales`{.action}, récupérez l'adresse IP qui apparaît à côté de "IPv4".
 
-![Modifier le champ A](images/know_the_OVH_A_records.png){/thumbnail}
+![Modifier le champ A](images/know-the-ovh-a-records.png){.thumbnail}
 
 - **Les champs MX, pour les e-mails**
 
 Pour vérifier les champs MX que vous devez utiliser dans la zone de votre domaine, connectez-vous dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.Rendez-vous dans la section `E-mails`{.action} puis sur le nom de l'hébergement web que vous venez de commander. Enfin, dans l'onglet `Informations générales`{.action}, récupérez les informations qui apparaissent à côté de "Champs MX". Ces derniers peuvent être différents d'un service à un autre suivant le filtre DNS que vous avez décidé d'appliquer.
 
-![Modifier les champs MX](images/know_the_OVH_MX_records.png){/thumbnail}
+![Modifier les champs MX](images/know-the-ovh-mx-records.png){.thumbnail}
 
 #### Vérifier et/ou modifier les enregistrement DNS
 
 Maintenant que vous connaissez les enregistrements DNS inhérents à votre hébergement web OVHcloud, il vous faut les vérifier et les modifier si nécessaire. Les manipulations diffèrent suivant le projet que vous réalisez.
 
-- **Commande d'un nom de domaine avec un hébergement web OVH**
+- **Commande d'un nom de domaine avec un hébergement web OVHcloud**
 
 La configuration de votre domaine est déjà correcte. Poursuivez vers l'étape suivante. Cependant, si vous avez réalisé des manipulations dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} sur la zone DNS de votre domaine, il se peut que cette dernière ne le soit plus.
     
 Pour accéder à la zone DNS de votre domaine OVHcloud, rendez-vous dans la section `Noms de domaine`{.action} dans la barre de services à gauche, puis cliquez sur le nom de domaine concerné. Enfin, dans l'onglet `Zone DNS`{.action}, vérifiez et modifiez les informations nécessaires.
 
-- **Nom de domaine n'utilisant pas la zone DNS d'OVH**
+- **Nom de domaine n'utilisant pas la zone DNS d'OVHcloud**
     
 Vous devrez vérifier la zone DNS de votre domaine chez le prestataire qui gère cette dernière. Si nécessaire, modifiez les informations.
 
-- **Migrer vos services (sites et e-mail) vers OVH**
+- **Migrer vos services (sites et e-mail) vers OVHcloud**
 
 Dans ce type de cas, les manipulations liées aux DNS peuvent occasionner une indisponibilité de vos services si elles ne sont pas réalisées au bon moment. En accord avec les différentes étapes décrites dans notre documentation [Migrer mon site chez OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh){.external}, vous devrez modifier les serveurs DNS de votre domaine à la fin processus.
 
@@ -162,5 +180,9 @@ Si vous désirez obtenir plus de détails sur l'utilisation de RoundCube, consul
 [Utilisation de RoundCube](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube){.external}
 
 [Les certificats SSL sur les hébergements web](/pages/web_cloud/web_hosting/ssl_on_webhosting){.external}
+
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
+
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

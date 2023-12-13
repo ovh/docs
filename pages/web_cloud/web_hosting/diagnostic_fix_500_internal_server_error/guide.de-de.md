@@ -1,7 +1,7 @@
 ---
 title: 'Beheben des Fehlers “500 Internal Server Error”'
-excerpt: Erfahren Sie hier, welche Maßnahmen Sie bei einem Fehlercode 500 anwenden können
-updated: 2023-05-16
+excerpt: "Erfahren Sie hier, welche Maßnahmen Sie bei einem Fehlercode 500 anwenden können"
+updated: 2023-11-22
 ---
 
 > [!primary]
@@ -29,7 +29,7 @@ Diese Fehler können auch durch Updates entstehen, die **automatisch** von Kompo
 
 - Sie haben ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) in Ihrem Kunden-Account.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de)
-- Sie haben keine ausstehenden [Zahlungen](/pages/account/billing/invoice_management#pay-bills) und [Verlängerungen](/pages/account/billing/how_to_use_automatic_renewal#renewal-management) der dazugehörigen Dienstleistungen (Domainname und Webhosting).
+- Sie haben keine ausstehenden [Zahlungen](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) und [Verlängerungen](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) der dazugehörigen Dienstleistungen (Domainname und Webhosting).
 
 ## In der praktischen Anwendung
 
@@ -48,7 +48,7 @@ Lesen Sie zuerst [diese Anleitung](/pages/web_cloud/web_hosting/logs_and_statist
 
 ### Ihre Website in den Entwicklermodus versetzen
 
-Um mögliche PHP-Fehler anzuzeigen, versetzen Sie Ihr Hosting anschließend mithilfe [dieser Instruktionen](/pages/web/hosting/ovhconfig_modify_system_runtime#schritt-2-webhosting-konfiguration-bearbeiten) in den Entwicklermodus (`development`).
+Um mögliche PHP-Fehler anzuzeigen, versetzen Sie Ihr Hosting anschließend mithilfe [dieser Instruktionen](/pages/web_cloud/web_hosting/configure_your_web_hosting#schritt-2-webhosting-konfiguration-bearbeiten) in den Entwicklermodus (`development`).
 
 ### Die .htaccess Datei testen
 
@@ -68,7 +68,7 @@ Ein "Fehler 500" kann mit einem falschen Level an Zugriffsrechten auf Ordner ode
 
 Um auf diese Dateien zuzugreifen, [verbinden Sie sich via FTP mit Ihrem Hosting](/pages/web_cloud/web_hosting/ftp_connection).
 
-Die Anleitung "[Verwendung von FileZilla](/pages/web/hosting/ftp_filezilla_user_guide#datei-und-ordnerrechte)" hilft Ihnen anschließend, folgende Elemente zu überprüfen:
+Die Anleitung "[Verwendung von FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide#datei-und-ordnerrechte)" hilft Ihnen anschließend, folgende Elemente zu überprüfen:
 
 - Das **Root**-Verzeichnis Ihres Hostings (es handelt sich um das als `/` oder `.` angezeigte Verzeichnis in Ihrem FTP-Programm) müssen die Berechtigungen auf `705` gesetzt sein (Standardberechtigungen). Wir empfehlen Ihnen, diese Berechtigungen nicht zu ändern.
 - Verzeichnisse müssen `705` haben.
@@ -86,7 +86,7 @@ Für alle "Fehler 500", die mit der Datenbank Ihrer Website in Zusammenhang steh
 
 ### Ihre Website auf einen vorherigen Zustand zurücksetzen <a name="restore"></a>
 
-Wenn der "Fehler 500" nach dem Ändern der PHP-Konfiguration Ihres Webhostings aufgetreten ist, kehren Sie zur vorherigen Einstellung zurück, indem Sie [unserer Anleitung folgen](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014).
+Wenn der "Fehler 500" nach dem Ändern der PHP-Konfiguration Ihres Webhostings aufgetreten ist, kehren Sie zur vorherigen Einstellung zurück, indem Sie [unserer Anleitung folgen](/pages/web_cloud/web_hosting/configure_your_web_hosting).
 
 > [!warning]
 >
@@ -97,7 +97,7 @@ Wenn der "Fehler 500" nach dem Ändern der PHP-Konfiguration Ihres Webhostings a
 
 Um den Quellcode Ihrer Website wiederherzustellen, lesen Sie unsere Anleitung "[Den Speicherplatz Ihres Webhostings wiederherstellen](/pages/web_cloud/web_hosting/ftp_save_and_backup)". Beachten Sie, dass diese Operation allein keine dauerhafte Lösung darstellt.
 
-Wenn Ihre Website eine Datenbank nutzt, lesen Sie unsere Anleitung "[Backup in eine Webhosting-Datenbank importieren](/pages/web/hosting/sql_importing_mysql_database#backup-uber-das-kundencenter-wiederherstellen)", um diese auf einen früheren Zustand zurückzusetzen.
+Wenn Ihre Website eine Datenbank nutzt, lesen Sie unsere Anleitung "[Backup in eine Webhosting-Datenbank importieren](/pages/web_cloud/web_hosting/sql_importing_mysql_database#backup-uber-das-kundencenter-wiederherstellen)", um diese auf einen früheren Zustand zurückzusetzen.
 
 ## Weiterführende Informationen <a name="gofurther"></a>
 
@@ -115,4 +115,6 @@ Wenn Ihre Website eine Datenbank nutzt, lesen Sie unsere Anleitung "[Backup in e
 
 [Fehler "Seite nicht installiert" beheben](/pages/web_cloud/web_hosting/multisites_website_not_installed)
 
-Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+
+Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

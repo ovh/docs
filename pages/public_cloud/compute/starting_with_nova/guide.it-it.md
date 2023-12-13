@@ -1,7 +1,6 @@
 ---
 title: Come utilizzare l’API OpenStack
 excerpt: Come gestire le tue istanze con il client Python OpenStack
-legacy_guide_number: g1935
 updated: 2022-10-13
 ---
 

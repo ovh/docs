@@ -29,7 +29,7 @@ Ce guide vous permettra aussi d'ajouter un ou des logins a ce sous-compte pour l
 
 > [!api]
 >
-> @api {POST} /me/subAccount
+> @api {v1} /me POST /me/subAccount
 >
 
 Récupérez et sauvegardez l'ID obtenu.
@@ -38,7 +38,7 @@ Récupérez et sauvegardez l'ID obtenu.
 
 > [!api]
 >
-> @api {POST} /me/subAccount/{id}/createConsumerKey
+> @api {v1} /me POST /me/subAccount/{id}/createConsumerKey
 >
 
 La ConsumerKey permet d'effectuer des actions sur l'API avec l'identité du sous-compte.
@@ -49,7 +49,7 @@ Avec la ConsumerKey précédemment obtenue
 
 > [!api]
 >
-> @api {POST} /me/identity/user
+> @api {v1} /me POST /me/identity/user
 >
 
 * email : ajoutez une adresse mail pour cet utilisateur

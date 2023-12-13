@@ -1,7 +1,6 @@
 ---
 title: 'Aumentare le quote Public Cloud'
 excerpt: 'Come aumentare la quota Public Cloud'
-legacy_guide_number: g1904
 updated: 2023-05-03
 ---
 
@@ -38,13 +37,13 @@ Accedi allo [Spazio cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanag
 
 Clicca su `Quota and Regions`{.action} nella barra laterale sinistra.
 
-![access quota](images/raisepciquota2021.png){.thumbnail}
+![access quota](images/raisepciquota1-2023.png){.thumbnail}
 
 In questa pagina visualizzi un riepilogo delle quote attuali del tuo progetto, per regione. Se l'80% della quota è raggiunta, accanto a una risorsa compare un avviso.
 
 Per richiedere un aumento della quota, clicca su `Aumenta la quota disponibile`{.action}.
 
-![raise-pci-quota](images/raisepciquota2021b.png){.thumbnail}
+![raise-pci-quota](images/raisepciquota2023.png){.thumbnail}
 
 In seguito, clicca sulla freccia a discesa accanto a "Seleziona il volume" per visualizzare l'elenco delle quote attualmente disponibili risorse. In questa sezione viene inoltre indicato l'importo da pagare per poter beneficiare di tali risorse.
 
@@ -80,7 +79,7 @@ Nella barra laterale sinistra, clicca su `Quota and Regions`{.action}.
 
 Clicca sul pulsante `?`{.action} per maggiori informazioni su questa funzionalità, poi clicca sull' `icona interruttore`{.action} per cambiare lo stato in "**Attivo**".
 
-![auto scaling](images/autoscaling.png){.thumbnail}
+![auto scaling](images/autoscaling2023.png){.thumbnail}
 
 Una volta fatto, *Autoscaling* sarà abilitato per il tuo progetto e la tua quota di risorse sarà aumentata nel corso del tempo.
 

@@ -26,7 +26,7 @@ Ce tutoriel va vous permettre de créer vos premiers contenus, les organiser, le
 
 ## En pratique
 
-Si ce n'est pas déjà le cas et avant de poursuivre, [ajoutez un certificat SSL](/pages/web/hosting/ssl-activate-https-website#etape-1-activer-le-certificat-ssl-sur-lhebergement) sur le nom de domaine associé à votre site web.
+Si ce n'est pas déjà le cas et avant de poursuivre, [ajoutez un certificat SSL](/pages/web_cloud/web_hosting/ssl-activate-https-website#etape-1-activer-le-certificat-ssl-sur-lhebergement) sur le nom de domaine associé à votre site web.
 
 Lors de l'installation de votre CMS en 1-clic, vous avez reçu un e-mail contenant les éléments nécessaires à la poursuite de ce tutoriel :
 

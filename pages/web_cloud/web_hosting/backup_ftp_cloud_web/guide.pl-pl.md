@@ -1,6 +1,7 @@
 ---
 title: "Tworzenie i pobieranie kopii zapasowej przestrzeni FTP na hostingu Cloud Web"
-updated: 2022-09-13
+excerpt: "Dowiedz się, jak pobrać kopię zapasową przestrzeni FTP Twojego hostingu Cloud Web"
+updated: 2023-11-16
 ---
 
 > [!primary]
@@ -90,13 +91,12 @@ Po pobraniu plików możesz [połączyć się z przestrzenią FTP](/pages/web_cl
 
 ## Sprawdź również 
 
-[Logowanie do przestrzeni dyskowej hostingu WWW](/pages/web_cloud/web_hosting/ftp_connection){.external}
+[Logowanie do przestrzeni dyskowej hostingu WWW](/pages/web_cloud/web_hosting/ftp_connection)
 
 [Logowanie za pomocą programu Filezilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)
 
-Skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/), jeśli szukasz zaawansowanych rozwiązań (indeksowanie, rozwój, etc).
+Skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/), jeśli szukasz zaawansowanych rozwiązań (indeksowanie, rozwój, etc).
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i korzystania z rozwiązań OVHcloud, sprawdź naszą [ofertę wsparcia](https://www.ovhcloud.com/pl/support-levels/).
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>
-

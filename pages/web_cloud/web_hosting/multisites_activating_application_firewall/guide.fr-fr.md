@@ -1,6 +1,6 @@
 ---
-title: Activation du pare-feu applicatif
-excerpt: "Découvez comment activer le pare-feu applicatif sur une offre d'hébergement Web."
+title: "Activation du pare-feu applicatif"
+excerpt: "Découvrez comment activer le pare-feu applicatif sur une offre d'hébergement Web"
 updated: 2021-04-26
 ---
 
@@ -65,4 +65,8 @@ Le tableau affiché contient tous les noms de domaine qui ont été ajoutés à 
 
 ## Aller plus loin
 
-Echangez avec notre communauté d'utilisateurs sur <https://community.ovh.com/>.
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
+
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

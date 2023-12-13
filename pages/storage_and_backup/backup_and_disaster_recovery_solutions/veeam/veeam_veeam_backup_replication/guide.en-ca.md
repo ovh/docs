@@ -19,12 +19,6 @@ Veeam Backup & Replication is a data protection software. It offers its users a 
 
 ### Setting up Veeam Backup & Replication
 
-> [!primary]
-> The latest version of Veeam Backup & Replication (version 12) is supported by OVHcloud only with **Microsoft SQL Server databases**.
->
-> We will support Veeam Backup & Replication v12 with PostgreSQL [soon](https://github.com/ovh/private-cloud-provider/issues/125).
-> 
-
 Download the **Veeam Backup & Replication** solution from the [Veeam website](https://www.veeam.com/downloads.html?ad=top-sub-menu){.external}. If you do not have an account, you will need to set one up (account setup is free).
 
 The file will appear in ISO disk image format. Once you have transferred it onto your server, select the server’s CD reader, then select the image.
@@ -181,14 +175,14 @@ First, retrieve your serviceName:
 
 > [!api]
 >
-> @api {GET} /veeam/veeamEnterprise
+> @api {v1} /veeam/veeamEnterprise GET /veeam/veeamEnterprise
 >
 
 Then register it:
 
 > [!api]
 >
-> @api {POST} /veeam/veeamEnterprise/{serviceName}/register
+> @api {v1} /veeam/veeamEnterprise POST /veeam/veeamEnterprise/{serviceName}/register
 >
 
 You will need the following information:
@@ -202,7 +196,7 @@ You can retrieve the public IP used by Veeam Enterprise to contact your **Veeam 
 
 > [!api]
 >
-> @api {GET} /veeam/veeamEnterprise/{serviceName}
+> @api {v1} /veeam/veeamEnterprise GET /veeam/veeamEnterprise/{serviceName}
 >
 
 > [!primary]

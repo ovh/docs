@@ -61,7 +61,7 @@ Lembrete da sua definição e do seu princípio de funcionamento:
 > 
 > Se este sistema for ativado e pretender conectar-se ao seu ESXi imediatamente, terá de desbloquear manualmente a conta de administrador.
 >
-> Para isso, será necessário [reiniciar](/pages/cloud/dedicated/getting-started-with-dedicated-server#reinicializacao-do-seu-servidor-dedicado) o seu servidor ESXi através da Área de Cliente OVHcloud.
+> Para isso, será necessário [reiniciar](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server#reinicializacao-do-seu-servidor-dedicado) o seu servidor ESXi através da Área de Cliente OVHcloud.
 > 
 
 Pode consultar o histórico dos logs de acesso nos seguintes ficheiros a partir de uma shell SSH:

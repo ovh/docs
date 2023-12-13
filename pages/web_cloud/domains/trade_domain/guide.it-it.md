@@ -1,7 +1,7 @@
 ---
-title: 'Cambiare il proprietario di un dominio'
-excerpt: 'In questa guida troverai le informazioni necessarie per cambiare il proprietario di un dominio'
-updated: 2023-06-19
+title: "Cambiare il proprietario di un dominio"
+excerpt: "In questa guida troverai le informazioni necessarie per cambiare il proprietario di un dominio"
+updated: 2023-12-04
 ---
 
 > [!primary]
@@ -84,6 +84,9 @@ Se l'indirizzo email non viene modificato in seguito alla modifica del proprieta
 > La procedura deve essere convalidata da entrambe le parti entro 14 giorni dalla richiesta.
 >
 > Se la modifica è rifiutata da una delle parti, la domanda è annullata.
+>
+> Se l'indirizzo e-mail del proprietario attuale è obsoleto o inaccessibile, è possibile, **in questo caso specifico**, contattare direttamente l'assistenza creando un ticket di assistenza dal proprio [centro assistenza OVHcloud](https://help.ovhcloud.com/csm?id=csm_cases_requests).
+>
 
 > [!warning]
 >

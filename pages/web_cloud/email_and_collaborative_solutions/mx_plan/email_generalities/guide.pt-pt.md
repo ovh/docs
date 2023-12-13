@@ -1,8 +1,7 @@
 ---
 title: 'Introdução à oferta MX Plan'
 excerpt: 'Saiba como começar a usar a oferta MX Plan'
-legacy_guide_number: g1474
-updated: 2021-07-19
+updated: 2023-11-15
 ---
 
 > [!primary]
@@ -120,9 +119,9 @@ Para isso, é preciso criar um reencaminhamento.
 
 Pode realizar de duas formas:
 
-- criar o seu reencaminhamento a partir do webmail, através das regras de caixa de entrada. Para isso, siga o manual [Regras da caixa de entrada na interface OWA](/pages/web/emails/creating-inbox-rules-in-owa-mx-plan#exemplo-1-redirecionar-e-mails-para-outro-endereco).
+- criar o seu reencaminhamento a partir do webmail, através das regras de caixa de entrada. Para isso, siga o manual [Regras da caixa de entrada na interface OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/creating-inbox-rules-in-owa-mx-plan#exemplo-1-redirecionar-e-mails-para-outro-endereco).
 
-- criar o seu reencaminhamento a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Este método permite-lhe, por exemplo, criar um alias, ou seja, reencaminhar um endereço de e-mail que não existe para um endereço de e-mail existente. Para isso, siga o nosso manual [Utilizar os reencaminhamentos de e-mail](/pages/web/emails/feature_redirections#nova-versao-da-oferta-mx-plan).
+- criar o seu reencaminhamento a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Este método permite-lhe, por exemplo, criar um alias, ou seja, reencaminhar um endereço de e-mail que não existe para um endereço de e-mail existente. Para isso, siga o nosso manual [Utilizar os reencaminhamentos de e-mail](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections#nova-versao-da-oferta-mx-plan).
 
 ##### **Voicemail**
 
@@ -223,7 +222,7 @@ Se pretender obter mais informações sobre os elementos necessários para confi
 
 Deseja reencaminhar os seus e-mails para outro destinatário, criar um alias ou ainda fazer sistematicamente uma cópia de outro endereço de e-mail.
 
-Para isso, é preciso criar um reencaminhamento. Sugerimos que siga o nosso manual [Utilizar os reencaminhamentos de e-mail](/pages/web/emails/feature_redirections#versao-antiga-da-oferta-mx-plan).
+Para isso, é preciso criar um reencaminhamento. Sugerimos que siga o nosso manual [Utilizar os reencaminhamentos de e-mail](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections#versao-antiga-da-oferta-mx-plan).
 
 ##### **Voicemail**
 
@@ -244,8 +243,6 @@ Deseja enviar regularmente uma newsletter aos seus contactos.
 Para isso, pode criar uma mailing list. Sugerimos que siga o nosso manual [Gerir e utilizar as mailing lists](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_mailing_list).
 
 ## Saiba mais
-
-A migração das ofertas históricas MX Plan para as novas ofertas MX Plan está em curso. Se deseja solicitar a migração da sua oferta prioritariamente, pode seguir as indicações [desta página](https://www.ovh.pt/mxplan-migration/#accordion_6001-4).
 
 Se as suas necessidades evoluírem e pretender usufruir de funcionalidades suplementares, pode igualmente [migrar um endereço de e-mail MX Plan para uma conta E-mail Pro ou Exchange](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel).
 

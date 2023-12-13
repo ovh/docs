@@ -1,7 +1,7 @@
 ---
-title: 'Przywracanie plików z kopii zapasowej OVHcloud'
-excerpt: 'Dowiedz się, jak przywrócić plik lub całą przestrzeń dyskową Twojego hostingu'
-updated: 2023-01-12
+title: "Przywracanie plików z kopii zapasowej OVHcloud"
+excerpt: "Dowiedz się, jak przywrócić plik lub całą przestrzeń dyskową Twojego hostingu"
+updated: 2023-12-04
 ---
 
 > [!primary]
@@ -82,7 +82,7 @@ Przejdź do sekcji dotyczącej wybranej przez Ciebie metody przywracania przestr
 > 
 > W tym przypadku:
 >
-> - Do [kontaktu administratora](/pages/account/customer/managing_contacts#dostep-do-zarzadzania-kontaktami) hostingu wysyłamy e-mail z naszymi zespołami. 
+> - Do [kontaktu administratora](/pages/account_and_service_management/account_information/managing_contacts#dostep-do-zarzadzania-kontaktami) hostingu wysyłamy e-mail z naszymi zespołami. 
 > - Status "konserwacji" pojawia się w Twoim [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. W sekcji `Web Cloud`{.action} kliknij Twoją usługę w sekcji `Hosting`{.action}, a następnie zakładkę `Informacje ogólne`{.action}.
 > - Strona (-y), na której (-ych) hostowane są strony "403 Forbidden".
 >
@@ -167,11 +167,25 @@ Po zalogowaniu się, pobierz wybrany plik lub pliki. W tym celu przejrzyj zawart
 
 Zanim przejdziesz do kolejnego etapu, upewnij się, że pobrałeś wszystkie pliki, które zamierzasz przywrócić, następnie wyloguj się z przestrzeni dyskowej.
 
+> [!success]
+>
+> Jeśli korzystasz z interfejsu **FTP Explorer**, sprawdź [stronę pomocy](https://net2ftp.cluster020.hosting.ovh.net/help.html){.external}, aby poprawnie wykonać odzyskiwanie plików. Strona ta jest również dostępna poprzez przycisk `Help Guide`{.action} na dole interfejsu logowania do **FTP Explorer**.
+>
+> Jeśli do logowania się do przestrzeni dyskowej FTP używasz innego oprogramowania, zalecamy zapoznanie się z oficjalną dokumentacją dotyczącą oprogramowania, aby móc poprawnie wykonywać operacje.
+>
+
 #### Etap 4: przywracanie wybranego pliku lub plików
 
 Kiedy masz już plik lub pliki, zaloguj się ponownie do przestrzeni dyskowej. Nie dodawaj jednak sufiksu do Twojego użytkownika FTP, aby się zalogować. Jeśli nie wpiszesz sufiksu, zyskasz dostęp do aktualnej zawartości Twojej przestrzeni dyskowej, a nie to wcześniejszej kopii zapasowej.
 
 Po zalogowaniu wgraj wybrany plik lub pliki. W tym celu przejrzyj zawartość Twojego komputera, następnie wybierz pliki i zastąp nimi stare pliki.
+
+> [!success]
+>
+> Jeśli korzystasz z interfejsu **FTP Explorer**, sprawdź [stronę pomocy](https://net2ftp.cluster020.hosting.ovh.net/help.html){.external}, aby poprawnie wykonać przywracanie plików. Strona ta jest również dostępna poprzez przycisk `Help Guide`{.action} na dole interfejsu logowania do **FTP Explorer**.
+>
+> Jeśli do logowania się do przestrzeni dyskowej FTP używasz innego oprogramowania, zalecamy zapoznanie się z oficjalną dokumentacją dotyczącą oprogramowania, aby móc poprawnie wykonywać operacje.
+>
 
 ## Sprawdź również
 

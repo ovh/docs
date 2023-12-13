@@ -1,18 +1,18 @@
 ---
-title: ¿Cómo gestionar su módulo en 1 clic?
-excerpt: Cómo gestionar su módulo en 1 clic desde el área de cliente de OVHcloud
-updated: 2022-09-05
+title: "¿Cómo gestionar su módulo en 1 clic?"
+excerpt: "Descubra cómo gestionar su módulo en 1 clic desde el área de cliente de OVHcloud"
+updated: 2022-11-21
 ---
 
 > [!primary]
-> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón "Contribuir" de esta página.
 >
 
 ## Objetivo
 
 Los módulos en 1 clic permiten la instalación fácil y rápida de un programa en línea de ayuda a la creación de sitios web (comúnmente llamado "CMS"). OVHcloud le ofrece los más conocidos: WordPress, PrestaShop, Drupal y Joomla!.
 
-**Esta guía explica cómo gestionar el módulo en 1 clic desde el área de cliente de OVHcloud.**
+**Descubra cómo gestionar el módulo en 1 clic desde el área de cliente de OVHcloud.**
 
 > [!warning]
 >
@@ -136,7 +136,7 @@ Haga clic en el botón `...`{.action} a la derecha de la línea que designa el m
 
 > [!warning]
 >
-> Si elimina el módulo 1 clic **no se eliminará automáticamente la base de datos**. Si inicia la instalación de un nuevo CMS sin haber eliminado previamente la base de datos del anterior (y su alojamiento no permite la creación automática de una nueva base de datos), el mensaje "[Se ha producido un error al cargar la información. (You need at least one free database)](/pages/web/hosting/diagnostic_errors_module1clic#se-ha-producido-un-error-al-cargar-la-informacion-you-need-at-least-one-free-database)" se mostrará en su área de cliente.
+> Si elimina el módulo 1 clic **no se eliminará automáticamente la base de datos**. Si inicia la instalación de un nuevo CMS sin haber eliminado previamente la base de datos del anterior (y su alojamiento no permite la creación automática de una nueva base de datos), el mensaje "[Se ha producido un error al cargar la información. (You need at least one free database)](/pages/web_cloud/web_hosting/diagnostic_errors_module1clic#se-ha-producido-un-error-al-cargar-la-informacion-you-need-at-least-one-free-database)" se mostrará en su área de cliente.
 >
 > Si tiene contratado [Hosting Personal](https://www.ovhcloud.com/es/web-hosting/personal-offer/), o si ya ha creado cuatro bases de datos en su alojamiento [Hosting Pro](https://www.ovhcloud.com/es/web-hosting/professional-offer/) o [Hosting Performance](https://www.ovhcloud.com/es/web-hosting/performance-offer/), deberá eliminar la base de datos indicada en el [paso 1](#step1) **ANTES** de poder crear un nuevo módulo en 1 clic.
 >

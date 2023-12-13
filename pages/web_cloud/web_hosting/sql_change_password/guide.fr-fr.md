@@ -12,11 +12,11 @@ La connexion à cette base de données est rendue possible par un **fichier de c
 
 Le changement de mot de passe d'une base de données doit donc toujours être effectué :
 
-- Dans le [fichier de configuration](/pages/web/hosting/cms_manage_1_click_module#etape-1-identifier-la-base-de-donnees-lie-a-votre-module) de votre site via [l'espace FTP de votre hébergement](/pages/web_cloud/web_hosting/ftp_connection);
+- Dans le [fichier de configuration](/pages/web_cloud/web_hosting/cms_manage_1_click_module#etape-1-identifier-la-base-de-donnees-lie-a-votre-module) de votre site via [l'espace FTP de votre hébergement](/pages/web_cloud/web_hosting/ftp_connection);
 
 - **Et** dans le serveur contenant sa base de données via votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
 
-Tant que ce changement n'aura pas été effectué **dans ces deux endroits**, votre site affichera une « [erreur de connexion à la base de données](/pages/web/hosting/diagnosis_database_errors#erreur-lors-de-la-connexion-a-la-base-de-donnees) ».
+Tant que ce changement n'aura pas été effectué **dans ces deux endroits**, votre site affichera une « [erreur de connexion à la base de données](/pages/web_cloud/web_hosting/diagnosis_database_errors#erreur-lors-de-la-connexion-a-la-base-de-donnees) ».
 
 Il est donc impératif, si vous souhaitez changer le mot de passe de votre base de données, que vous réalisiez **l'ensemble des opérations** indiquées dans ce guide. En cas de doutes sur les manipulations à réaliser, contactez votre webmaster ou faites appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/).
 
@@ -40,7 +40,7 @@ La modification du mot de passe de la base de données de votre site se fait en 
 
 - Disposer d'une [offre d'hébergement web OVHcloud](https://www.ovhcloud.com/fr/web-hosting/).
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr).
-- Utiliser une [base de données associée à votre offre d'hébergement mutualisé](https://www.ovhcloud.com/fr/web-hosting/options/start-sql/) ou à un [serveur Web Cloud Databases](https://www.ovh.com/fr/cloud-databases/).
+- Utiliser une [base de données associée à votre offre d'hébergement mutualisé](https://www.ovhcloud.com/fr/web-hosting/options/start-sql/) ou à un [serveur Web Cloud Databases](https://www.ovhcloud.com/fr/web-cloud/databases/).
 - Être en possession des identifiants FTP permettant de se connecter à l'[espace de stockage](/pages/web_cloud/web_hosting/ftp_connection) de votre hébergement.
 
 ## En pratique
@@ -91,7 +91,7 @@ Retournez ensuite dans votre [espace client OVHcloud](https://www.ovh.com/auth/?
 
 Si vous avez retrouvé dans cette partie de votre espace client le nom de la base indiqué dans le fichier de configuration, passez à [l'étape 3](#step3).
 
-Dans le cas contraire, la base de données de votre site est liée à une offre [Web Cloud Databases](https://www.ovh.com/fr/cloud-databases/).
+Dans le cas contraire, la base de données de votre site est liée à une offre [Web Cloud Databases](https://www.ovhcloud.com/fr/web-cloud/databases/).
 
 Vous devez donc retourner dans le fichier de configuration de votre site, afin de noter le *nom du serveur* ainsi que le *nom d'utilisateur* de votre base de données :
 
@@ -102,7 +102,7 @@ Vous devez donc retourner dans le fichier de configuration de votre site, afin d
 
 Cliquez ensuite, dans la partie `Bases de données`{.action} dans la section `Web Cloud`{.action}.
 
-Dans l'onglet `Informations générales`{.action}, identifiez, dans votre offre [Web Cloud Databases](https://www.ovh.com/fr/cloud-databases/), celle qui contient, sous la mention `Nom d'hôte`{.action}, le nom du serveur de votre base de données trouvé précédemment.
+Dans l'onglet `Informations générales`{.action}, identifiez, dans votre offre [Web Cloud Databases](https://www.ovhcloud.com/fr/web-cloud/databases/), celle qui contient, sous la mention `Nom d'hôte`{.action}, le nom du serveur de votre base de données trouvé précédemment.
 
 Toujours dans cette partie de votre espace client, rendez-vous dans l'onglet `Utilisateur et droits`{.action}, afin de repérer également le `Nom d'utilisateur`{.action} de votre base de données.
 

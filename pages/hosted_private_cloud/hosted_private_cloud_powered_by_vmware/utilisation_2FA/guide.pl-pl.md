@@ -80,7 +80,7 @@ Jedyna różnica będzie polegała na tym, czy użytkownik będzie mógł samodz
 
 Możliwe jest korzystanie z kilku aplikacji innych firm, które wymagają zalogowania do vCenter.
 
-Aplikacje te muszą wcześniej uzyskać autoryzację poprzez politykę dostępu do vCenter, którą możesz skonfigurować w [Panelu klienta](/pages/cloud/private-cloud/manager_ovh_private_cloud#bezpieczenstwo).
+Aplikacje te muszą wcześniej uzyskać autoryzację poprzez politykę dostępu do vCenter, którą możesz skonfigurować w [Panelu klienta](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/manager_ovh_private_cloud#bezpieczenstwo).
 
 Aplikacje te będą mogły uzyskać dostęp do infrastruktur OVH, ale nie będą zarządzać bezpośrednio weryfikacją dwuetapową.
 
@@ -94,35 +94,35 @@ Aby dodać publiczne adresy IP aplikacji do tej drugiej *białej listy*, musisz 
 
 > [!api]
 >
-> @api {GET} /dedicatedCloud/{serviceName}/twoFAWhitelist
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/twoFAWhitelist
 >
 
 - Dodanie adresu IP do *listy z obejściem* weryfikacji dwuetapowej.
 
 > [!api]
 >
-> @api {POST} /dedicatedCloud/{serviceName}/twoFAWhitelist
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/twoFAWhitelist
 >
 
 - Wyświetlenie informacji o upoważnionym adresie IP (wymagany identyfikator pobrany przy pierwszym wywołaniu).
 
 > [!api]
 >
-> @api {GET} /dedicatedCloud/{serviceName}/twoFAWhitelist/{id}
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/twoFAWhitelist/{id}
 >
 
 - Usunięcie adresu IP z listy adresów upoważnionych.
 
 > [!api]
 >
-> @api {DELETE} /dedicatedCloud/{serviceName}/twoFAWhitelist/{id}
+> @api {v1} /dedicatedCloud DELETE /dedicatedCloud/{serviceName}/twoFAWhitelist/{id}
 >
 
 - Zmiana informacji o upoważnionym adresie IP.
 
 > [!api]
 >
-> @api {POST} /dedicatedCloud/{serviceName}/twoFAWhitelist/{id}/changeProperties
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/twoFAWhitelist/{id}/changeProperties
 >
 
 ## Sprawdź również

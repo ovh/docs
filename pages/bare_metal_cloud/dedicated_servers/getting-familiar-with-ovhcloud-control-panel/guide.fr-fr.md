@@ -49,7 +49,7 @@ Une fois dans le menu `Serveurs Dédiés`{.action}, cliquez sur le serveur de vo
 **Etat des services**
 
 - Statut : cliquez sur les `...`{.action} à côté de cette option pour redémarrer ou supprimer votre serveur.
-- Monitoring : cliquez sur `Configurer`{.action} pour modifier les [paramètres de monitoring de votre serveur](/pages/cloud/dedicated/getting-started-with-dedicated-server#monitoring-server).
+- Monitoring : cliquez sur `Configurer`{.action} pour modifier les [paramètres de monitoring de votre serveur](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server#monitoring-server).
 
 **Réseau**
 
@@ -70,7 +70,7 @@ Pour plus d'informations sur la gestion de votre serveur dédié via l'espace cl
 
 ### Section IP
 
-Pour accéder à la section « IP » de votre espace client OVHcloud, cliquez sur le menu `Bare Metal Cloud`{.action} et ensuite sur `IP`{.action} :
+Pour accéder à la section « IP » de votre espace client OVHcloud, cliquez sur le menu `Bare Metal Cloud`{.action} et ouvrez `Network`{.action}. Cliquez ensuite sur `IP`{.action} :
 
 ![section ip](images/manageIP2023.png){.thumbnail}
 

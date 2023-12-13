@@ -21,14 +21,14 @@ To use the [renewal API](https://ca.api.ovh.com/console/#/service/{serviceId}/re
 
 > [!api]
 >
-> @api {GET} /vps/{serviceName}/serviceInfos
+> @api {v1} /vps GET /vps/{serviceName}/serviceInfos
 >
 
 You can also use the following API to list your services:
 
 > [!api]
 >
-> @api {GET} /service
+> @api {v1} /service GET /service
 >
 
 ### List the different renewal strategies
@@ -37,7 +37,7 @@ If you want to list the different renewal strategies available for a given servi
 
 > [!api]
 >
-> @api {GET} /service/{serviceId}/renew
+> @api {v1} /service GET /service/{serviceId}/renew
 >
 
 A `RenewDescription` list will appear with two keys:
@@ -107,7 +107,7 @@ Please refer to the `renew` API for more information on the format of the result
 
 > [!api]
 >
-> @api {GET} /service/{serviceId}/renew
+> @api {v1} /service GET /service/{serviceId}/renew
 >
 
  
@@ -163,7 +163,7 @@ You will now be able to settle this purchase order via the `order` API:
      
 > [!api]
 >
-> @api {POST} /me/order/{orderId}/payWithRegisteredPaymentMean
+> @api {v1} /me POST /me/order/{orderId}/payWithRegisteredPaymentMean
 >
 
 ### Example: renewing a VPS

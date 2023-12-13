@@ -17,7 +17,7 @@ Zusätzlich zum OVHcloud Kundencenter können Sie Ihre OVHcloud Public Cloud Pro
 ## Voraussetzungen
 
 - Sie haben eine Public Cloud Instanz über Ihr [OVHcloud Kundencenter](/pages/public_cloud/compute/public-cloud-first-steps) oder über das [Horizon-Interface](/pages/public_cloud/compute/create_instance_in_horizon) erstellt.
-- Sie haben einen [SSH-Schlüssel erstellt](/pages/platform/public-cloud/public-cloud-first-steps#schritt-1-ssh-schlussel-erstellen).
+- Sie haben einen [SSH-Schlüssel erstellt](/pages/public_cloud/compute/public-cloud-first-steps#schritt-1-ssh-schlussel-erstellen).
 
 ## In der praktischen Anwendung
 
@@ -64,8 +64,8 @@ Wählen Sie im Verwaltungsinterface der Instanz die gewünschte Option aus der D
 
 ![public-cloud](images/list2022.png){.thumbnail}
 
-- Attach Interface: Mit dieser Option können Sie über das VLAN eine oder mehrere private Interfaces zu Ihrer Instanz hinzufügen. Weitere Informationen finden Sie in [diesem Abschnitt](/pages/platform/network-services/getting-started-07-creating-vrack#ein-privates-interface-hinzufugen) der vRack-Anleitung.
-- Detach Interface: Mit dieser Option können Sie ein Interface löschen, das zu einer Instanz gehört. Weitere Informationen finden Sie in [diesem Abschnitt](/pages/platform/network-services/getting-started-07-creating-vrack#loschung-eines-interfaces) der vRack-Anleitung.
+- Attach Interface: Mit dieser Option können Sie über das VLAN eine oder mehrere private Interfaces zu Ihrer Instanz hinzufügen. Weitere Informationen finden Sie in [diesem Abschnitt](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack#ein-privates-interface-hinzufugen) der vRack-Anleitung.
+- Detach Interface: Mit dieser Option können Sie ein Interface löschen, das zu einer Instanz gehört. Weitere Informationen finden Sie in [diesem Abschnitt](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack#loschung-eines-interfaces) der vRack-Anleitung.
 - Edit Instance: Mit dieser Option können Sie den Namen der Instanz und die [Sicherheitsgruppen ändern](/pages/public_cloud/compute/setup_security_group).
 
 > [!warning]

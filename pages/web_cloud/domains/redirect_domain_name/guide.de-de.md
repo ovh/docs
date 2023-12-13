@@ -1,7 +1,7 @@
 ---
 title: "Weiterleitung von bei OVHcloud verwalteten Domainnamen"
 excerpt: "Erfahren Sie hier, wie Sie verschiedene Weiterleitungsarten für einen von OVHcloud verwalteten Domainnamen erstellen"
-updated: 2022-10-06
+updated: 2023-10-24
 ---
 
 > [!primary]

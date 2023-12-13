@@ -33,7 +33,7 @@ Sie können sich jedoch weiterhin über den [OVHcloud Rescue-Modus](/pages/bare_
 
 Um auf Ihren Server im Rescue-Modus zuzugreifen, muss zuerst der aktuell genutzte SSH-Schlüssel deaktiviert werden.
 
-Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und gehen Sie zum Bereich `SSH-Schlüssel`{.action}. Folgen hierzu Sie bei Bedarf unserer Anleitung zu [SSH-Schlüsseln](/pages/cloud/dedicated/creating-ssh-keys-dedicated#cpsshkey).
+Loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und gehen Sie zum Bereich `SSH-Schlüssel`{.action}. Folgen hierzu Sie bei Bedarf unserer Anleitung zu [SSH-Schlüsseln](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated#cpsshkey).
 
 Da der im Kundencenter hinterlegte öffentliche Schlüssel ohne den zugehörigen privaten Schlüssel nutzlos ist, können Sie diesen einfach entfernen. Klicken Sie auf den Button <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> in der Zeile des Schlüssels und wählen Sie `Schlüssel löschen`{.action}.
 
@@ -51,8 +51,8 @@ Folgen Sie den Anweisungen in der [Anleitung zum Rescue-Modus](/pages/bare_metal
 
 Sobald Sie Zugriff auf Ihre Dateien haben, öffnen Sie die relevante Datei "authorized_keys" mit einem Texteditor. Diese Datei speichert SSH-Schlüssel und befindet sich im Verzeichnis `home` des Benutzers, mit dem Sie sich auf dem Server einloggen. (Ersetzen Sie "USER_NAME" mit Ihrem verwendeten Benutzernamen.)
 
-```
-rescue-customer:~# sudo nano /mnt/home/USER_NAME/.ssh/authorized_keys
+```bash
+sudo nano /mnt/home/USER_NAME/.ssh/authorized_keys
 ```
 
 Kopieren Sie Ihren neuen öffentlichen Schlüssel (erstellt in Schritt 2) und fügen Sie ihn in die Datei ein. Es sollte dann ähnlich dem folgenden Beispiel aussehen:

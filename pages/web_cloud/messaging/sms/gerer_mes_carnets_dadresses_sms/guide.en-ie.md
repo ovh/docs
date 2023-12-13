@@ -1,7 +1,6 @@
 ---
 title: 'Managing SMS address books'
 excerpt: 'Find out how to create an SMS address book in your OVHcloud account'
-legacy_guide_number: g2118
 updated: 2022-08-05
 ---
 

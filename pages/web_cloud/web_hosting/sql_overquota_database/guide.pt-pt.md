@@ -1,7 +1,7 @@
 ---
-title: "Tutorial - O que fazer quando a minha base de dados está saturada?"
-excerpt: "Descubra como agir quando a base de dados está sobrecarregada"
-updated: 2023-02-16
+title: "Alojamento web: a minha base de dados está saturada, o que fazer?"
+excerpt: "Saiba como agir quando a base de dados está sobrecarregada"
+updated: 2023-11-30
 ---
 
 > [!primary]
@@ -18,7 +18,7 @@ Em certos casos, a base de dados regista uma quantidade de informações tão el
 
 Este tutorial propõe-lhe as ações a empreender quando a sua base de dados partilhada OVHcloud está próxima da saturação ou já está em **overquota**.
 
-**Descubra como agir quando a base de dados está sobrecarregada.**
+**Saiba como agir quando a base de dados está sobrecarregada.**
 
 ## Requisitos
 
@@ -56,17 +56,21 @@ A primeira etapa consiste em identificar a ou as tabelas volumosas presentes na 
 
 #### 1.1 - Aceder à base de dados via phpMyAdmin
 
-Obtenha a palavra-passe de acesso à sua base de dados diretamente no ficheiro de configuração do seu website. Para isso, utilize o **etapa 1** do nosso manual sobre [a alteração da palavra-passe de uma base de dados](/pages/web_cloud/web_hosting/sql_change_password).
+Recupere as informações de acesso à sua base de dados diretamente no ficheiro de configuração do seu website. Realize esta ação através da **etapa 1** do nosso guia sobre [a alteração da palavra-passe de uma base de dados](/pages/web_cloud/web_hosting/sql_change_password).
 
-Ligue-se ao seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e selecione `Web Cloud`{.action} na barra de navegação no topo do ecrã. Clique em `Alojamentos`{.action} e escolha o alojamento web associado à sua base de dados partilhada OVHcloud. Por fim, clique no separador `Bases de dados`{.action}.
+Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e selecione `Web Cloud`{.action} na barra de navegação no topo do ecrã. Clique em `Alojamentos`{.action} e escolha o alojamento web associado à sua base de dados partilhada da OVHcloud. Por fim, clique no separador `Bases de dados`{.action}.
+
+Na parte inferior do ecrã será apresentada uma tabela com a lista das bases de dados.
 
 ![phpMyAdmin Access](images/pma_access.png){.thumbnail}
 
-Ainda no separador `Bases de dados`{.action}, clique no botão `...`{.action} à direita da base de dados que está saturada e depois sur `Acceder a phpMyAdmin`{.action}.
+Anote, **para a sua base de dados saturada**, o seu `Nome de utilizador` e o seu `Endereço do servidor` presentes na tabela que lista as suas bases de dados. 
+
+Ainda no separador `Bases de dados`{.action}", clique no botão `...`{.action} à direita da base de dados que está saturada e, a seguir, em `Aceder ao phpMyAdmin`{.action}".
 
 ![phpMyAdmin Go Login](images/pma_interface.png){.thumbnail}
 
-Introduza a password de acesso à sua base de dados para além das informações pré-preenchidas e clique em `Executar`{.action}.
+Introduza as informações de acesso à sua base de dados e depois clique em `Entrada`{.action}.
 
 #### 1.2 - Pesquisar as tabelas mais volumosas
 
@@ -79,11 +83,11 @@ Introduza a password de acesso à sua base de dados para além das informações
 
 Uma vez ligado, aparecerá a seguinte página:
 
-![phpMyAdmin Login](images/pma_login.png){.thumbnail}
+![phpMyAdmin Login](images/pma-main-page.png){.thumbnail}
 
 Clique em `"Nome da sua base de dados"`{.action} na coluna da esquerda, depois em `Taille`{.action} no canto superior direito da tabela que aparece:
 
-![phpMyAdmin Tables](images/pma_show_table.png){.thumbnail}
+![phpMyAdmin Tables](images/pma-check-size.png){.thumbnail}
 
 As tabelas mais volumosas figuram no topo da tabela. Identifique-as e passe à **etapa 2**.
 
@@ -124,7 +128,9 @@ Consulte a nossa oferta de bases de dados [Web Cloud Databasess](https://www.ovh
 
 Recomendamos esta oferta para bases de dados volumosas.
 
-De seguida, siga os nossos guias para mover o conteúdo da sua antiga base de dados para a nova:
+É possível duplicar o conteúdo da sua base de dados OVHcloud diretamente para outra das suas bases de dados OVHcloud graças a uma funcionalidade presente na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt). Para isso, consulte o guia "[Duplicar o conteúdo de uma base de dados noutra](/pages/web_cloud/web_hosting/copy_database)".
+
+No caso de uma migração para uma base de dados externa às ofertas [Start SQL](https://www.ovhcloud.com/pt/web-hosting/options/start-sql/) e [Web Cloud Databases](https://www.ovhcloud.com/pt/web-cloud/databases/), pode migrar manualmente o conteúdo da sua antiga base de dados para uma nova através dos nossos guias:
 
 - [Exportar a sua base de dados existente](/pages/web_cloud/web_hosting/sql_database_export)
 - [Primeiros passos com a oferta Web Cloud Databasess](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)
@@ -151,7 +157,7 @@ No caso de uma overquota ou de uma tabela volumosa, estão disponíveis **três 
 
 Pode efetuar diretamente estes pedidos a partir da interface **phpMyAdmin**, através do separador `SQL`{.action}:
 
-![phpMyAdmin SQL request](images/pma_sql_request.png){.thumbnail}
+![phpMyAdmin SQL request](images/pma-sql-menu.png){.thumbnail}
 
 - A encomenda **DELETE**: 
 
@@ -190,6 +196,8 @@ DROP TABLE `table_1`
 > Neste exemplo, o comando suprime a tabela **table_1** e o conjunto das linhas que contém.
 
 ## Quer saber mais? <a name="go-further"></a>
+
+[Duplicar o conteúdo de uma base de dados noutra](/pages/web_cloud/web_hosting/copy_database)
 
 Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
 

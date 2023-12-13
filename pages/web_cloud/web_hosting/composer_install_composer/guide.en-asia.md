@@ -1,6 +1,6 @@
 ---
-title: Installing Composer on a Web Hosting plan
-excerpt: Find out how to install and take your first steps with Composer
+title: "Installing Composer on a Web Hosting plan"
+excerpt: "Find out how to install and take your first steps with Composer"
 updated: 2023-03-07
 ---
 

@@ -32,7 +32,7 @@ After user creation, you are back to manager. You can see that cluster status ha
 
 > [!api]
 >
-> @api {POST} /dedicated/ceph/{serviceName}/user
+> @api {v1} /dedicated/ceph POST /dedicated/ceph/{serviceName}/user
 >
 serviceName is the fsid of your cluster.
 

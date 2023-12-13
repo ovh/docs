@@ -1,7 +1,6 @@
 ---
 title: Object Storage Swift - Pierwsze kroki z API Swift
 excerpt: Pierwsze kroki z API Swift
-legacy_guide_number: g1916
 updated: 2021-05-25
 ---
 

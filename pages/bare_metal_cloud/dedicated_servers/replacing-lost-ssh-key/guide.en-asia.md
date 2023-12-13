@@ -29,7 +29,7 @@ However, you can still connect to your server via the OVHcloud [rescue mode](/pa
 
 In order to access your server in rescue mode, the currently active SSH key has to be disabled first.
 
-Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia) and navigate to the `SSH keys`{.action} section. Use our [SSH key guide](/pages/cloud/dedicated/creating-ssh-keys-dedicated#cpsshkey) if necessary.
+Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia) and navigate to the `SSH keys`{.action} section. Use our [SSH key guide](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated#cpsshkey) if necessary.
 
 Since the public key stored in the Control Panel is useless without the corresponding private key, you can simply remove it. Click on the <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> button in the row of the key and select `Delete key`{.action}.
 
@@ -47,8 +47,8 @@ Follow the steps in the [rescue mode guide](/pages/bare_metal_cloud/dedicated_se
 
 When you have access to your files, open the "authorized_keys" file concerned with a text editor. This file stores SSH keys and is located in the `home` folder of the user with which you connect to your server. (Replace "USER_NAME" with your actual user name.)
 
-```
-rescue-customer:~# sudo nano /mnt/home/USER_NAME/.ssh/authorized_keys
+```bash
+sudo nano /mnt/home/USER_NAME/.ssh/authorized_keys
 ```
 
 Copy and paste your new public key (created in step 2) into the file. It should look similar to the following example:

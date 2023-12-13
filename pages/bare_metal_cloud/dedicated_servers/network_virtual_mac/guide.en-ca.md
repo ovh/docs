@@ -34,7 +34,7 @@ OVHcloud allows you to associate a virtual MAC address with an IP address, so th
 
 #### Via the OVHcloud Control Panel
 
-To assign a virtual MAC address to an Additional IP, you first need to connect to your OVHcloud Control Panel. Next, go to the `Bare Metal Cloud`{.action} section and open the `IP`{.action} menu.
+To assign a virtual MAC address to an Additional IP, you first need to connect to your OVHcloud Control Panel. Next, go to the `Bare Metal Cloud`{.action} section and click on `Network`{.action}. Next, open the `IP`{.action} menu.
 
 Click the `Additional IP`{.action} tab.
 
@@ -66,7 +66,7 @@ Use the following API call:
 
 > [!api]
 >
-> @api {POST} /dedicated/server/{serviceName}/virtualMac/{macAddress}/virtualAddress/{ipAddress}
+> @api {v1} /dedicated/server POST /dedicated/server/{serviceName}/virtualMac/{macAddress}/virtualAddress/{ipAddress}
 
 ### Delete a MAC address
 
@@ -77,7 +77,7 @@ Use the following API call:
 
 #### Via the OVHcloud Control Panel
 
-To remove a virtual MAC address associated with an Additional IP, you must first connect to your [control panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}. Once connected, go to the `Bare Metal Cloud`{.action} section and open the `IP`{.action} menu. Select the correct server, so that the Additional IP (or IP block) attached to it appears.
+To remove a virtual MAC address associated with an Additional IP, you must first connect to your [control panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}. Once connected, go to the `Bare Metal Cloud`{.action} section and click on `Network`{.action}. Next, open the `IP`{.action} menu. Select the correct server, so that the Additional IP (or IP block) attached to it appears.
 
 Finally, click on the `...`{.action} button on the right, then click `Delete a Virtual MAC`{.action}.
 
@@ -87,7 +87,7 @@ Use the following API call:
 
 > [!api]
 >
-> @api {DELETE} /dedicated/server/{serviceName}/virtualMac/{macAddress}/virtualAddress/{ipAddress}
+> @api {v1} /dedicated/server DELETE /dedicated/server/{serviceName}/virtualMac/{macAddress}/virtualAddress/{ipAddress}
 >
 
 ## Go further

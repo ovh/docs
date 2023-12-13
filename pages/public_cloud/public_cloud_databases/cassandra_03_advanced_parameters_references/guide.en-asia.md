@@ -46,11 +46,11 @@ This guide lists all the supported advanced parameters that allow you to configu
 
 ### Using the OVHcloud Control Panel
 
-Please refer to this [guide](/pages/platform/databases/databases_03_advanced_configuration#using-the-ovhcloud-control-panel) to find out how to change your advanced parameters from the OVHcloud Control Panel.
+Please refer to this [guide](/pages/public_cloud/public_cloud_databases/databases_03_advanced_configuration#using-the-ovhcloud-control-panel) to find out how to change your advanced parameters from the OVHcloud Control Panel.
 
 ### Using API
 
-Please refer to this [guide](/pages/platform/databases/databases_03_advanced_configuration#using-api) to find out how to change your advanced parameters from the OVHcloud API.
+Please refer to this [guide](/pages/public_cloud/public_cloud_databases/databases_03_advanced_configuration#using-api) to find out how to change your advanced parameters from the OVHcloud API.
 
 ### Advanced parameters for Cassandra
 
@@ -60,7 +60,7 @@ Below you can find a summary of every configuration option available for Cassand
 |---|---|
 | Parameter | `cassandra.batch_size_fail_threshold_in_kb` |
 | Value type | long |
-| Minumum | 1 |
+| Minimum | 1 |
 | Maximum | 1000000 |
 | Description | Fail any multiple-partition batch exceeding this value. 50kb (10x warn threshold) by default. |
 
@@ -68,7 +68,7 @@ Below you can find a summary of every configuration option available for Cassand
 |---|---|
 | Parameter | `cassandra.batch_size_warn_threshold_in_kb` |
 | Value type | long |
-| Minumum | 1 |
+| Minimum | 1 |
 | Maximum | 1000000 |
 | Description | Log a warning message on any multiple-partition batch size exceeding this value. 5kb per batch by default. Caution should be taken on increasing the size of this threshold as it can lead to node instability. |
 
@@ -76,7 +76,7 @@ Below you can find a summary of every configuration option available for Cassand
 |---|---|
 | Parameter | `cassandra.datacenter` |
 | Value type | string |
-| Minumum | |
+| Minimum | |
 | Maximum | |
 | Description | Name of the datacenter to which nodes of this service belong. Can be set only when creating the service. |
 

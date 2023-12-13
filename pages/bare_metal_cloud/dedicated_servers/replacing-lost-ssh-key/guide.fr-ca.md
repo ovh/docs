@@ -30,7 +30,7 @@ Vous pouvez cependant vous connecter à votre serveur via le [mode rescue OVHclo
 
 Afin d'accéder à votre serveur en mode rescue, la clé SSH active doit d'abord être désactivée.
 
-Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) et naviguez jusqu'à la section `Clés SSH`{.action}. Aidez-vous de notre guide [« Créer une clé SSH »](/pages/cloud/dedicated/creating-ssh-keys-dedicated#cpsshkey) si nécessaire.
+Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) et naviguez jusqu'à la section `Clés SSH`{.action}. Aidez-vous de notre guide [« Créer une clé SSH »](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated#cpsshkey) si nécessaire.
 
 La clé publique stockée dans l'espace client est inutile sans la clé privée correspondante, vous pouvez donc la supprimer. Cliquez sur le bouton <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> à droite de la clé et sélectionnez `Supprimer la clé`{.action}.
 
@@ -49,7 +49,7 @@ Suivez les étapes du guide sur le [mode rescue](/pages/bare_metal_cloud/dedicat
 Lorsque vous avez accès à vos fichiers, ouvrez le fichier « authorized_keys » concerné dans un éditeur de texte. Ce fichier stocke les clés SSH et se trouve dans le dossier `home` de l'utilisateur connecté à votre serveur. (Remplacez « USER_NAME » par votre nom d'utilisateur.)
 
 ```bash
-rescue-customer:~# sudo nano /mnt/home/USER_NAME/.ssh/authorized_keys
+sudo nano /mnt/home/USER_NAME/.ssh/authorized_keys
 ```
 
 Copiez-collez votre nouvelle clé publique (créée à l'étape 2) dans le fichier. Le contenu du fichier devrait ressembler à l'exemple suivant :

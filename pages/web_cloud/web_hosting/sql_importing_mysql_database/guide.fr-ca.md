@@ -1,7 +1,7 @@
 ---
 title: "Importer une sauvegarde dans la base de données d'un hébergement web"
 excerpt: 'Découvrez comment importer une sauvegarde dans la base de données de votre hébergement web OVHcloud'
-updated: 2018-09-25
+updated: 2023-12-11
 ---
 
 ## Objectif
@@ -135,7 +135,7 @@ Prenez soin de remplacer les informations génériques présentes dans ce script
 
 #### Étape 2 : télécharger le script et la sauvegarde sur l'espace de stockage
 
-Une fois le script d'import correctement créé, vous devez le télécharger ainsi que le fichier de sauvegarde que vous souhaitez importer sur l'espace de stockage de votre hébergement web. Pour cela, vous devrez vous connecter à ce dernier. Si vous ne savez pas comment faire, reportez-vous aux informations décrites dans l'étape 2 de la documentation intitulée « [Se connecter à l’espace de stockage](/pages/web/hosting/hosting_how_to_get_my_website_online#2-se-connecter-a-lespace-de-stockage){.external} ».
+Une fois le script d'import correctement créé, vous devez le télécharger ainsi que le fichier de sauvegarde que vous souhaitez importer sur l'espace de stockage de votre hébergement web. Pour cela, vous devrez vous connecter à ce dernier. Si vous ne savez pas comment faire, reportez-vous aux informations décrites dans l'étape 2 de la documentation intitulée « [Se connecter à l’espace de stockage](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online#2-se-connecter-a-lespace-de-stockage){.external} ».
 
 Afin de pouvoir mener à bien les étapes suivantes, téléchargez le script d'import et le fichier de sauvegarde dans le dossier « www ». **Nous vous invitons à être particulièrement attentif quant au nom du fichier du script d'import.** Assurez-vous de ne pas écraser un fichier déjà existant portant le même nom sur l'espace de stockage lorsque vous allez télécharger le script. Si un message d'avertissement de ce type apparaît, modifiez le nom du script nouvellement créé pour un autre, puis tentez de nouveau de le télécharger.
 
@@ -165,5 +165,9 @@ cat nom_fichier_sauvegarde.sql | mysql --host=adresse_du_serveur --user=nom_util
 Prenez soin de remplacer les informations génériques de cette commande par les informations de la base de données concernée. Une fois l'importation réalisée, nous vous conseillons de supprimer le fichier de sauvegarde du répertoire dans lequel vous l'avez téléchargé.
 
 ## Aller plus loin
+
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/directory/).
+
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr-ca/support-levels/).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

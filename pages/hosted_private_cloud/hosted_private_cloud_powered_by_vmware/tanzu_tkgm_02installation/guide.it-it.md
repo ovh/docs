@@ -1,12 +1,12 @@
 ---
 title: Installazione della griglia Tanzu Kubernetes (EN)
-excerpt: Learn how to integrate Tanzu Kubernetes Grid into your Hosted Private Cloud powered by VMware infrastructure 
+excerpt: Learn how to integrate Tanzu Kubernetes Grid into your VMware on OVHcloud infrastructure 
 updated: 2022-11-10
 ---
 
 ## Objective
 
-**This guide documents how to install Tanzu Kubernetes Grid on your Hosted Private Cloud powered by VMware cluster**
+**This guide documents how to install Tanzu Kubernetes Grid on your VMware on OVHcloud cluster**
 
 > [!warning]
 > OVHcloud provides services for which you are responsible, with regard to their configuration and management. It is therefore your responsibility to ensure that they work properly.
@@ -16,7 +16,7 @@ updated: 2022-11-10
 
 ## Introduction
 
-VMware Tanzu Kubernetes Grid is a Kubernetes platform provided by **VMware** and maintained as part of the **Hosted Private Cloud powered by VMware** solution.
+VMware Tanzu Kubernetes Grid is a Kubernetes platform provided by **VMware** and maintained as part of the **VMware on OVHcloud** solution.
 
 You can install this product on your OVHcloud infrastructure to take advantage of its features and scalability.
 
@@ -32,7 +32,7 @@ You can install this product on your OVHcloud infrastructure to take advantage o
 
 ## Instructions
 
-We will install **VMware Tanzu Kubernetes Grid** on a **Hosted Private Cloud powered by VMware** cluster and use VLAN 10 with these settings:
+We will install **VMware Tanzu Kubernetes Grid** on a **VMware on OVHcloud** cluster and use VLAN 10 with these settings:
 
 - **LAN**: `192.168.0.0/24`.
 - **DHCP Range**: `192.168.0.50 -> 192.168.0.100`.

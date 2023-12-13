@@ -17,7 +17,7 @@ Bei der Erstellung eines Domainnamens, dem Transfer oder dem Inhaberwechsel hand
 
 - Sie verfügen über eine oder mehrere Domains.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
-- Sie haben keine ausstehenden [Zahlungen](/pages/account/billing/invoice_management#pay-bills) und [Verlängerungen](/pages/account/billing/how_to_use_automatic_renewal#renewal-management) der dazugehörigen Dienstleistungen (Domainname und Webhosting).
+- Sie haben keine ausstehenden [Zahlungen](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) und [Verlängerungen](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) der dazugehörigen Dienstleistungen (Domainname und Webhosting).
 
 ## In der praktischen Anwendung
 
@@ -46,7 +46,7 @@ Diese Anleitung ist fokussiert auf **fehlerhafte** Operationen anhand von Beispi
 >
 > Die nachstehende Beispielliste ist nicht erschöpfend. Falls Sie einen Fehler feststellen, der in dieser Anleitung nicht im Einzelnen aufgeführt ist, führen Sie folgende Überprüfungen durch:
 >
-> - Stellen Sie sicher, dass für Domains keine [Zahlungen](/pages/account/billing/invoice_management#pay-bills) und [Verlängerungen](/pages/account/billing/how_to_use_automatic_renewal#renewal-management) ausstehen.
+> - Stellen Sie sicher, dass für Domains keine [Zahlungen](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) und [Verlängerungen](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) ausstehen.
 > - Überprüfen Sie, ob Sie das Problem beheben können, indem Sie auf `...`{.action} rechts neben der betreffenden Operation klicken.
 > - Lesen Sie die beschreibende Nachricht und überprüfen Sie, ob aufgrund dieser Information der Fehler korrigiert werden kann.
 >

@@ -1,6 +1,6 @@
 ---
 title: "Risolvere gli errori ricorrenti nell'utilizzo di un software FTP"
-excerpt: Ritrova qui le anomalie più frequenti associate al tuo software FTP
+excerpt: "Ritrova qui le anomalie più frequenti associate al tuo software FTP"
 updated: 2022-01-05
 ---
 
@@ -18,7 +18,7 @@ L'utilizzo di software FTP durante la connessione al tuo [hosting Web Cloud](htt
 >
 > OVHcloud mette a tua disposizione servizi di cui tu sei responsabile per la configurazione e la gestione. Garantirne quotidianamente il corretto funzionamento è quindi responsabilità dell’utente.
 >
-> Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione del tuo account. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un fornitore specializzato o l’amministratore del servizio. OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione [Per saperne di più](#gofurther) su questa guida.
+> Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione del tuo account. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un fornitore specializzato o l’amministratore del servizio. OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione [Per saperne di più](#go-further) su questa guida.
 >
 
 ## Prerequisiti
@@ -51,9 +51,9 @@ Scegli `SFTP`{.action} o `Attivo`{.action} (per attivare il protocollo SSH sul t
 
 ### Ho trasferito i miei file con un software FTP, ma il mio sito non appare.
 
-Per prima cosa verifica che i file e le cartelle del tuo sito siano presenti nella [cartella root](/pages/web/hosting/hosting_how_to_get_my_website_online#3-caricare-i-file) del tuo hosting.
+Per prima cosa verifica che i file e le cartelle del tuo sito siano presenti nella [cartella root](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online#3-caricare-i-file) del tuo hosting.
 
-Se hai apportato modifiche ai tuoi [server o alla tua zona DNS](/pages/web/domains/dns_zone_edit#capire-il-concetto-di-dns) meno di 48 ore fa, attendi e riavvia regolarmente i tuoi dispositivi per svuotare la cache.
+Se hai apportato modifiche ai tuoi [server o alla tua zona DNS](/pages/web_cloud/domains/dns_zone_edit#capire-il-concetto-di-dns) meno di 48 ore fa, attendi e riavvia regolarmente i tuoi dispositivi per svuotare la cache.
 
 ### Le credenziali FTP non funzionano
 
@@ -85,9 +85,9 @@ Questo collegamento è installato di default sugli hosting condivisi OVHcloud. D
 
 ![site_under_construction](images/site_under_construction.png){.thumbnail}
 
-Se non hai utilizzato la funzionalità "[Modulo in 1 click](/pages/web_cloud/web_hosting/cms_install_1_click_modules)" per creare il tuo sito, è necessario utilizzare il software [Net2FTP](/pages/web/hosting/ftp_connection#1-ftp-explorer) accessibile tramite lo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) per eliminare manualmente la pagina "Sito in costruzione".
+Se non hai utilizzato la funzionalità "[Modulo in 1 click](/pages/web_cloud/web_hosting/cms_install_1_click_modules)" per creare il tuo sito, è necessario utilizzare il software [Net2FTP](/pages/web_cloud/web_hosting/ftp_connection#1-ftp-explorer) accessibile tramite lo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) per eliminare manualmente la pagina "Sito in costruzione".
 
-## Per saperne di più <a name="gofurther"></a>
+## Per saperne di più <a name="go-further"></a>
 
 [Hosting Condiviso: guida all’utilizzo di FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)
 

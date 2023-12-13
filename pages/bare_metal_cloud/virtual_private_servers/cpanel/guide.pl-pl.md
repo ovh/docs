@@ -72,7 +72,7 @@ Należy teraz mieć możliwość logowania się do WHM i SSH, używając użytko
 
 Zalecamy podjęcie wszelkich niezbędnych kroków w celu zabezpieczenia WHM i VPS. W tym celu zalecamy zapoznanie się z zaleceniami [cPanel tutaj](https://docs.cpanel.net/knowledge-base/security/tips-to-make-your-server-more-secure/).
 
-Zapoznaj się również z naszym przewodnikiem dotyczącym [zabezpieczenia serwera VPS](/pages/cloud/vps/secure_your_vps#tworzenie-kopii-zapasowej-systemu-i-danych), korzystania z [naszych rozwiązań do tworzenia kopii zapasowych](/products/bare-metal-cloud-virtual-private-servers) oraz konfiguracji [Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network).
+Zapoznaj się również z naszym przewodnikiem dotyczącym [zabezpieczenia serwera VPS](/pages/bare_metal_cloud/virtual_private_servers/secure_your_vps#tworzenie-kopii-zapasowej-systemu-i-danych), korzystania z [naszych rozwiązań do tworzenia kopii zapasowych](/products/bare-metal-cloud-virtual-private-servers) oraz konfiguracji [Network Firewall](/pages/bare_metal_cloud/dedicated_servers/firewall_network).
 
 ## Sprawdź również
 

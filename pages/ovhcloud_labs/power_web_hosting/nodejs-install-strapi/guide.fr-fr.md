@@ -4,26 +4,6 @@ excerpt: Découvrez comment installer Strapi sur votre hébergement web POWER
 updated: 2021-02-04
 ---
 
-<style>
- pre {
-     font-size: 14px;
- }
- pre.console {
-   background-color: #300A24; 
-   color: #ccc;
-   font-family: monospace;
-   padding: 5px;
-   margin-bottom: 5px;
- }
- pre.console code {
-   border: solid 0px transparent;
-   font-family: monospace !important;
- }
- .small {
-     font-size: 0.75em;
- }
-</style>
-
 ## Objectif
 
 Vous avez souscrit à un hébergement web POWER Node.js et vous souhaitez y déployer un CMS *headless* basé sur [Strapi](https://strapi.io/){.external}.
@@ -47,9 +27,9 @@ Supposons que vous avez la configuration normale pour un hébergement web POWER 
 
 > [!primary]
 >
-> Vous pouvez appeler l'API OVHcloud pour [visualiser la configuration active](/pages/labs/web-power/getting-started#api-get-active-configuration).
+> Vous pouvez appeler l'API OVHcloud pour [visualiser la configuration active](/pages/ovhcloud_labs/power_web_hosting/getting-started#api-get-active-configuration).
 
-[Accédez via SSH](/pages/labs/web-power/getting-started#ssh) à votre hébergement web POWER.
+[Accédez via SSH](/pages/ovhcloud_labs/power_web_hosting/getting-started#ssh) à votre hébergement web POWER.
 
 Effacez le répertoire `www` et installez ensuite Strapi :
 
@@ -79,13 +59,14 @@ RewriteCond %{ENV:HTTPS} !on
 RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 ```
 
-[Redémarrez votre instance](/pages/labs/web-power/getting-started#restart), votre CMS sur Strapi sera alors en ligne.
+[Redémarrez votre instance](/pages/ovhcloud_labs/power_web_hosting/getting-started#restart), votre CMS sur Strapi sera alors en ligne.
 
 ![Strapi](images/nodejs-install-strapi-01.png){.thumbnail}
 
 Sortie du terminal :
 
-<pre class="console"><code> ~ $ rm -rf www
+```console
+ ~ $ rm -rf www
 
 ~ $ npx create-strapi-app www --quickstart --no-run
 npx : 91 installé(s) en 6.741s
@@ -108,8 +89,7 @@ EOF
 ~/www $ mkdir -p tmp
 
 ~/www $ touch tmp/restart.txt
-
-</code></pre>
+```
 
 ## Aller plus loin
 

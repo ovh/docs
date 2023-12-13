@@ -1,6 +1,6 @@
 ---
-title: Web Hosting FAQ
-excerpt: Find the answers to the most frequently asked questions about OVHcloud Web Hosting plans
+title: "Web Hosting FAQ"
+excerpt: "Find the answers to the most frequently asked questions about OVHcloud Web Hosting plans"
 updated: 2023-04-24
 ---
 
@@ -60,7 +60,7 @@ To do this, log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?act
 
 On the new `General information`{.action} page that appears, you will see a box labelled `Configuration`{.action} in the centre of the page. To the right of `Web Cloud Databases`{.action}, click on the `...`{.action} button then `Detach`{.action}. Select the shortest renewal duration, then continue until you confirm your order.
 
-You can find more information in our guide on [Configuring a Web Cloud Databases solution](/pages/web/clouddb/configure-database-server#modify-ram-web-cloud-db)
+You can find more information in our guide on [Configuring a Web Cloud Databases solution](/pages/web_cloud/web_cloud_databases/configure-database-server#modify-ram-web-cloud-db)
 
 **This action cannot be undone, and the Cloud Databases Web hosting plan will then be billed separately from your Performance Web Hosting plan.**
 
@@ -123,7 +123,7 @@ If your website appears with this URL following a change, restore it to its prev
 
 To restore your website’s source code, please refer to our guide on [Restoring your Web Hosting plan’s storage space](/pages/web_cloud/web_hosting/ftp_save_and_backup).
 
-If your website has a database, please refer to our guide on [Restoring a backup of your database](/pages/web/hosting/sql_importing_mysql_database#restore-a-backup-from-the-control-panel).
+If your website has a database, please refer to our guide on [Restoring a backup of your database](/pages/web_cloud/web_hosting/sql_importing_mysql_database#restore-a-backup-from-the-control-panel).
 
 ### What do I do if my website redirects to the OVHcloud webmail?
 
@@ -139,9 +139,9 @@ Then note down the DNS servers listed and go to the `DNS zone`{.action} tab.
 
 Compare the `Target` of the `NS` type records listed in the `DNS zone`{.action} tab with the servers listed in the `DNS servers`{.action} tab:
 
-- If the elements are identical, replace target `213.186.33.5` with the four-number code noted in the `General information` tab under `IPv4` (for more details on how to make changes, follow the instructions in [this guide](/pages/web/domains/dns_zone_edit#instructions)).
+- If the elements are identical, replace target `213.186.33.5` with the four-number code noted in the `General information` tab under `IPv4` (for more details on how to make changes, follow the instructions in [this guide](/pages/web_cloud/domains/dns_zone_edit#instructions)).
 
-- If the elements are not identical, but the servers listed in the `DNS servers` tab appear in [this list](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP), perform a reset as described in [this guide](/pages/web/domains/dns_server_general_information#resetting-dns-servers).
+- If the elements are not identical, but the servers listed in the `DNS servers` tab appear in [this list](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP), perform a reset as described in [this guide](/pages/web_cloud/domains/dns_server_general_information#resetting-dns-servers).
 
 - If the elements are not identical and the servers listed in the `DNS server`{.action} tab do not appear in [this list](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP), contact your webmaster or search for a [specialist service provider](https://partner.ovhcloud.com/en-ca/directory/) via the [OVHcloud partners](https://partner.ovhcloud.com/en-ca/directory/) page.
 
@@ -160,7 +160,7 @@ Restore your website to its previous state:
 
 - To restore your website’s source code, please refer to our guide [Restoring your Web Hosting plan’s storage space](/pages/web_cloud/web_hosting/ftp_save_and_backup).
 
-- If your website has a database, please refer to our guide [Importing a backup into a Web Hosting plan database](/pages/web/hosting/sql_importing_mysql_database#restore-a-backup-from-the-control-panel).
+- If your website has a database, please refer to our guide [Importing a backup into a Web Hosting plan database](/pages/web_cloud/web_hosting/sql_importing_mysql_database#restore-a-backup-from-the-control-panel).
 
 If the restores do not allow you to restore access to your site, contact your webmaster or search for a [specialist service provider](https://partner.ovhcloud.com/en-ca/directory/) on the [OVHcloud partners](https://partner.ovhcloud.com/en-ca/directory/) website.
 

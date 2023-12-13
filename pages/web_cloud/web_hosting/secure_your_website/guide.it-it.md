@@ -26,7 +26,7 @@ Il progetto è organizzato gradualmente in ordine crescente di importanza e diff
 ## Prerequisiti
 
 - un [piano OVHcloud Web Hosting](https://www.ovhcloud.com/it/web-hosting/)
-- avere le [informazioni di accesso](/pages/web/hosting/ftp_connection#step-1-recupera-i-dati-necessari-a-effettuare-laccesso) per accedere allo spazio di archiviazione del piano di hosting
+- avere le [informazioni di accesso](/pages/web_cloud/web_hosting/ftp_connection#step-1-recupera-i-dati-necessari-a-effettuare-laccesso) per accedere allo spazio di archiviazione del piano di hosting
 - accesso a [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it)
 - accesso all'interfaccia [admin per il sito Web](https://codex.wordpress.org/it:Primi_passi_con_WordPress){.external}
 
@@ -42,13 +42,13 @@ Per prima cosa verifica la sicurezza della tua postazione Windows, Mac o Linux:
 
 - verificate gli aggiornamenti della vostra macchina;
 - esegui una scansione completa della tua postazione dopo aver aggiornato il software antivirus/anti-malware;
-- modificare regolarmente la password amministratore del tuo dispositivo (per maggiori informazioni sulla scelta delle password, segui le istruzioni di questa [guida](/pages/account/customer/all_about_username#creare-una-password-solida-e-unica)).
+- modificare regolarmente la password amministratore del tuo dispositivo (per maggiori informazioni sulla scelta delle password, segui le istruzioni di questa [guida](/pages/account_and_service_management/account_information/all_about_username#creare-una-password-solida-e-unica)).
 
 ### Step 2: proteggi il tuo Spazio Cliente OVHcloud
 
 Per rendere sicuro il tuo account cliente, [attiva la doppia autenticazione](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa) e segui le istruzioni di questa [guida](/pages/account_and_service_management/account_information/all_about_username).
 
-In particolare, aggiorna le [informazioni del tuo account cliente](/pages/account/customer/all_about_username#modifica-le-tue-informazioni-personali) e aggiungi un **email di recupero**.<br>
+In particolare, aggiorna le [informazioni del tuo account cliente](/pages/account_and_service_management/account_information/all_about_username#modifica-le-tue-informazioni-personali) e aggiungi un **email di recupero**.<br>
 In caso di perdita delle credenziali e/o indisponibilità dell'indirizzo email principale dell'account cliente OVHcloud, per aiutarti a trovare il tuo servizio è necessario un'email di recupero o informazioni personali aggiornate.
 
 ### Step 3: effettua regolarmente backup del tuo sito <a name="backup"></a>
@@ -74,14 +74,14 @@ Le email di phishing rappresentano una minaccia per la sicurezza del tuo sito, i
 In caso di mancato rinnovo dei servizi, OVHcloud ha l'obbligo legale, alla scadenza del tuo abbonamento, di eliminare integralmente i dati associati alla tua offerta di hosting e tutti i loro backup. Invitiamo i nostri clienti a ricordare i termini di rinnovo.<br>
 ma è possibile che le email di recupero arrivino nello spam o l'indirizzo email associato all'account OVHcloud possa essere errato o non essere più disponibile.
 
-Se il tuo sito occupa un posto preminente nella tua attività professionale, [attiva il rinnovo automatico](/pages/account/billing/how_to_use_automatic_renewal#accedere-alle-impostazioni-dei-servizi) su tutti i tuoi servizi OVHcloud.<br>
+Se il tuo sito occupa un posto preminente nella tua attività professionale, [attiva il rinnovo automatico](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#accedere-alle-impostazioni-dei-servizi) su tutti i tuoi servizi OVHcloud.<br>
 Ti consigliamo inoltre di verificare regolarmente la **validità dei metodi di pagamento** registrati.
 
 ### Step 6: verifica che il tuo sito sia aggiornato
 
-Verifica regolarmente gli aggiornamenti del tuo sito seguendo le istruzioni di questa [guida](/pages/web/hosting/diagnostic_403_forbidden#22-aggiorna-il-sito-internet).
+Verifica regolarmente gli aggiornamenti del tuo sito seguendo le istruzioni di questa [guida](/pages/web_cloud/web_hosting/diagnostic_403_forbidden#22-aggiorna-il-sito-internet).
 
-Utilizza anche una versione recente del [linguaggio PHP](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014) sul tuo hosting.
+Utilizza anche una versione recente del [linguaggio PHP](/pages/web_cloud/web_hosting/configure_your_web_hosting) sul tuo hosting.
 
 ### Step 7: attiva l'https
 

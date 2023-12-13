@@ -1,7 +1,7 @@
 ---
-title: "Moja strona jest powolny. Co robić? " 
+title: "Moja strona jest powolny. Co robić?" 
 excerpt: "Dowiedz się, skąd pochodzą opóźnienia Twojej strony WWW i jak je rozwiązać"
-updated: 2022-11-17
+updated: 2023-10-26
 ---
 
  
@@ -159,7 +159,7 @@ Jeśli korzystasz z bazy danych w ofercie **Web Cloud Databases**, zapoznaj się
 
 Jeśli logowanie się powiodło się, otrzymasz następujący interfejs:
 
-![PHPMyAdmin](images/pma.png){.thumbnail}
+![PHPMyAdmin](images/pma-main-page.png){.thumbnail}
 
 > [!warning]
 >
@@ -199,11 +199,11 @@ Poniżej znajdziesz działania, które należy przeprowadzić, aby zidentyfikowa
 
 #### 2.1 - Sprawdź konfigurację hostingu
 
-Sprawdź framework PHP, wersję PHP i środowisko wykonawcze używane na Twoim hostingu. Zapoznaj się z naszym przewodnikiem dotyczącym [konfiguracji Twojego hostingu](/pages/web_cloud/web_hosting/ovhconfig_modify_system_runtime).
+Sprawdź framework PHP, wersję PHP i środowisko wykonawcze używane na Twoim hostingu. Zapoznaj się z naszym przewodnikiem dotyczącym [konfiguracji Twojego hostingu](/pages/web_cloud/web_hosting/configure_your_web_hosting).
 
 Jeśli korzystasz z przestarzałej wersji PHP na Twoim hostingu, silnik "**PHP CGI**" i/lub środowisko "**legacy**" i **jeśli Twoja strona WWW jest kompatybilna**, skorzystaj z silnika "**PHP**" (PHP FPM), środowisko "**stable**" lub "**stable64**" z najnowsza wersja PHP.
 
-Aby porównać dostępne wersje PHP w zależności od używanego środowiska uruchomieniowego, sprawdź **etap 2** w przewodniku dotyczącym [konfiguracji wersji PHP na Twoim hostingu](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014).
+Aby porównać dostępne wersje PHP w zależności od używanego środowiska uruchomieniowego, sprawdź **etap 2** w przewodniku dotyczącym [konfiguracji wersji PHP na Twoim hostingu](/pages/web_cloud/web_hosting/configure_your_web_hosting).
 
 Korzystanie z najnowszej wersji PHP, środowisko uruchomieniowe "**stable**" lub "**stable64**" z silnikiem "**PHP**" (PHP FPM) sprawi, że Twoja strona będzie płynniejsza i szybsza. Do wykonywania swoich zadań silnik "**PHP**" (PHP FPM) może być nawet 50 razy wydajniejszy od silnika "**PHP CGI**".
 
@@ -303,4 +303,4 @@ W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>. 
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

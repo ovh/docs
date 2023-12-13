@@ -1,7 +1,7 @@
 ---
 title: MongoDB - Configurer un nœud Analytics (EN)
 excerpt: Configure a dedicated Analytics node in your Public Cloud Databases for MongoDB to support analytics workloads
-updated: 2022-09-19
+updated: 2023-12-06
 ---
 
 ## Objective
@@ -12,7 +12,7 @@ This guide shows how to configure a node in your cluster dedicated to analytics-
 
 - A [Public Cloud project](https://www.ovhcloud.com/fr/public-cloud/) in your OVHcloud account
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
-- A multi-node capable (so, either *Business* or *Enterprise* plan) MongoDB database cluster running on your OVHcloud Public Cloud Databases ([this guide](/pages/public_cloud/public_cloud_databases/databases_01_order_control_panel) can help you to meet this requirement)
+- A multi-node capable (so, either *Business*, *Production*, *Enterprise* or *Advanced* plan) MongoDB database cluster running on your OVHcloud Public Cloud Databases ([this guide](/pages/public_cloud/public_cloud_databases/databases_01_order_control_panel) can help you to meet this requirement)
 - [Configure your MongoDB instance](/pages/public_cloud/public_cloud_databases/mongodb_02_manage_control_panel) to accept incoming connections
 
 ## What purpose does an Analytics node serve?
@@ -35,7 +35,7 @@ Using the API, you can create a new cluster with:
 
 > [!api]
 >
-> @api {POST} /cloud/project/{serviceName}/database/mongodb
+> @api {v1} /cloud POST /cloud/project/{serviceName}/database/mongodb
 >
 
 Using the **nodeList** parameter, you can define the nodes for the cluster. The **role** attribute can take the value `STANDARD` or `ANALYTICS` depending on the role you want for the given node.
@@ -46,7 +46,7 @@ In case you already have an existing cluster, you can add a new node using the A
 
 > [!api]
 >
-> @api {POST} /cloud/project/{serviceName}/database/mongodb/{clusterId}/node
+> @api {v1} /cloud POST /cloud/project/{serviceName}/database/mongodb/{clusterId}/node
 >
 
 Specifying the **role** attribute, `STANDARD` or `ANALYTICS`, allows to request the role you want for the given node.
@@ -57,7 +57,7 @@ You can change the role of a given node using:
 
 > [!api]
 >
-> @api {PUT} /cloud/project/{serviceName}/database/mongodb/{clusterId}/node/{nodeId}
+> @api {v1} /cloud PUT /cloud/project/{serviceName}/database/mongodb/{clusterId}/node/{nodeId}
 >
 
 Once again the **role** attribute (`STANDARD` / `ANALYTICS`) allows to make a node fulfill the requested role.
@@ -79,7 +79,7 @@ Notice the extra query parameters `readPreference=secondary` and `readPreference
 
 > [!api]
 >
-> @api {PUT} /cloud/project/{serviceName}/database/mongodb/{clusterId}
+> @api {v1} /cloud PUT /cloud/project/{serviceName}/database/mongodb/{clusterId}
 >
 
 You can either use the delete node endpoint to remove the Analytics node, or turn that Analytics node into a standard one before scaling down the cluster.

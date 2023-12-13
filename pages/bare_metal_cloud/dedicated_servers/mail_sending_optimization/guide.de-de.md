@@ -62,13 +62,13 @@ Um den Versand zu optimieren und das Risiko einer Blockierung Ihrer E-Mails zu v
 
 Erstellen Sie zunächst einen A-Eintrag in der DNS-Zone Ihres Domainnamens mit der IP-Adresse Ihres Servers als Ziel.
 
-Wenn Sie DNS-Server von OVHcloud nutzen, verwenden Sie dazu [unsere Anleitung](/pages/web/domains/dns_zone_edit#zugang-zur-verwaltung-einer-ovhcloud-dns-zone).
+Wenn Sie DNS-Server von OVHcloud nutzen, verwenden Sie dazu [unsere Anleitung](/pages/web_cloud/domains/dns_zone_edit#zugang-zur-verwaltung-einer-ovhcloud-dns-zone).
 
 Nach der Änderung der DNS-Zone Ihres Domainnamens ist eine Propagationszeit von maximal 24 Stunden erforderlich, bis die Änderungen wirksam sind.
 
 Anschließend fügen Sie den PTR-Eintrag (auch *Reverse* genannt) hinzu:
 
-Gehen Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} auf den Tab `Bare Metal Cloud`{.action} und öffnen Sie `IP`{.action}. 
+Gehen Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} auf den Tab `Bare Metal Cloud`{.action} und öffnen Sie `Network`{.action}. Klicken Sie dann auf `IP`{.action}.
 
 Wenn Sie den *Reverse DNS* auf eine Additional IP-Adresse konfigurieren möchten, klicken Sie auf den Tab `Additional IP`{.action}.
 

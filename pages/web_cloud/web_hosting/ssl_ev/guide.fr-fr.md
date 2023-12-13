@@ -4,7 +4,6 @@ excerpt: "Découvrez comment commander et installer un certificat SSL EV sur vot
 updated: 2023-06-07
 ---
 
- 
 ## Objectif
 
 Les certificats Secure Socket Layer (SSL) permettent de chiffrer les échanges effectués depuis ou vers votre site web. Cela évite qu'une personne ou un robot malveillant ne vienne « écouter » clairement les requêtes envoyées ou émises avec votre site web.

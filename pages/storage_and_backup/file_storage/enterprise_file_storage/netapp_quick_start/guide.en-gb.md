@@ -37,7 +37,7 @@ All your active services can be retrieved by using the following route:
 
 > [!api]
 >
-> @api {GET} /storage/netapp
+> @api {v1} /storage GET /storage/netapp
 >
 
 ### Creating a new volume
@@ -52,7 +52,7 @@ To create a new volume use the following route:
 >
 >> > [!api]
 >> >
->> > @api {POST} /storage/netapp/{serviceName}/share
+>> > @api {v1} /storage POST /storage/netapp/{serviceName}/share
 >> >
 >>
 >
@@ -102,7 +102,7 @@ To create a new ACL that will allow you to connect to your newly created volume,
 >
 >> > [!api]
 >> >
->> > @api {POST} /storage/netapp/{serviceName}/share/{shareId}/acl
+>> > @api {v1} /storage POST /storage/netapp/{serviceName}/share/{shareId}/acl
 >> >
 >>
 >
@@ -143,7 +143,7 @@ Inspect the ACL creation status using the following route:
 >
 >> > [!api]
 >> >
->> > @api {GET} /storage/netapp/{serviceName}/share/{shareId}/acl/{aclRuleId}
+>> > @api {v1} /storage GET /storage/netapp/{serviceName}/share/{shareId}/acl/{aclRuleId}
 >> >
 >>
 >
@@ -177,7 +177,7 @@ Once the ACL is active, retrieve access paths for the volume using the following
 >
 >> > [!api]
 >> >
->> > @api {GET} /storage/netapp/{serviceName}/share/{shareId}/accessPath
+>> > @api {v1} /storage GET /storage/netapp/{serviceName}/share/{shareId}/accessPath
 >> >
 >>
 >
@@ -217,7 +217,7 @@ You can remove your volume using the following route:
 >
 >> > [!api]
 >> >
->> > @api {DELETE} /storage/netapp/{serviceName}/share/{shareId}
+>> > @api {v1} /storage DELETE /storage/netapp/{serviceName}/share/{shareId}
 >> >
 >>
 >

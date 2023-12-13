@@ -1,69 +1,92 @@
 ---
-title: 'Partizionare un VPS in seguito a un upgrade'
-updated: 2021-05-18
+title: Partizionare un VPS dopo un upgrade di storage
+excerpt: "Come aumentare lo spazio su disco utilizzabile in seguito a un aggiornamento"
+updated: 2023-09-05
 ---
-
-> [!primary]
-> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
->
 
 ## Obiettivo
 
-È possibile che, dopo un upgrade del tuo VPS, sia necessario effettuare un nuovo partizionamento dello spazio di storage. Questa guida ti mostra come eseguire questa operazione.
+Una volta aumentata la capacità di storage del VPS, sarà necessario ripartizionare lo spazio disco per usufruire delle dimensioni reali. Nei passaggi seguenti viene descritto come eseguire questa operazione.
 
 > [!warning]
 >
-> Il partizionamento potrebbe danneggiare i tuoi dati in modo irreversibile. OVHcloud non è responsabile del loro eventuale deterioramento o perdita, ti consigliamo pertanto di realizzarne una copia prima di qualsiasi operazione.
+> Il partizionamento potrebbe danneggiare i tuoi dati in modo irreversibile. OVHcloud non può essere ritenuta responsabile del loro eventuale deterioramento o perdita. Prima di qualsiasi operazione, consigliamo di effettuare un backup delle informazioni. 
 >
+
+**Questa guida ti mostra come aumentare lo spazio di storage dopo un upgrade del disco.**
 
 ## Prerequisiti
 
-- Avere un accesso amministratore al VPS (Windows)
-- Aver riavviato il server in [Rescue mode](/pages/bare_metal_cloud/virtual_private_servers/rescue) (Linux)
+- Avere accesso amministratore al VPS ([Windows](#windows)).
+- Aver riavviato il server in [modalità Rescue](/pages/bare_metal_cloud/virtual_private_servers/rescue) (solo Linux).
 
 ## Procedura
 
-In seguito a un upgrade, RAM e processore (CPU) vengono ridimensionati automaticamente. Lo spazio di storage disponibile resta invece invariato.
+Dopo un upgrade della memoria (RAM) o del processore (vCore), queste due risorse vengono adattate automaticamente sul VPS, diversamente dallo spazio disco durante l'upgrade di storage del VPS.
 
-**Questa guida ti mostra come aumentare il tuo spazio di storage dopo un upgrade del tuo VPS.**
+### Linux
 
-### Effettua il backup dei dati
+#### Effettua il backup dei dati
 
-Estendere una partizione può comportare la perdita dei dati presenti sul tuo VPS, motivo per il quale è **fortemente consigliato** realizzarne una copia.
+Il tentativo di estendere una partizione può causare la perdita di dati. Effettuare un backup dei dati del VPS è quindi **consigliato**.
 
-#### Smonta la partizione
+#### Attiva la modalità Rescue e verifica le partizioni
 
-Sulle gamme precedenti di VPS, le tue partizioni saranno automaticamente installate in modalità Rescue. Utilizza questo comando per identificare la posizione di montaggio della tua partizione:
+Per attivare un VPS non ancora in modalità Rescue, consulta la [nostra guida](/pages/bare_metal_cloud/virtual_private_servers/rescue).
 
-```sh
+In seguito sarà possibile verificare la configurazione dei dischi:
+
+```bash
 lsblk
 ```
 
-La partizione corrispondente al Rescue mode sarà quella montata nella directory `/`che è la radice del sistema. La partizione del tuo VPS, invece, potrebbe essere ospitata in una directory associata a "/mnt".
+La partizione corrispondente al Rescue mode (`sda1` in questo esempio) è montata nella directory `/` .Mentre il disco del VPS è denominato `sdb` e non deve avere alcun punto di mount.
 
-Tuttavia, se il tuo VPS appartiene alla gamma attuale, la partizione non verrà automaticamente aumentata. Se la colonna MOUNTPOINT del risultato lo conferma, puoi ignorare lo step di rimozione.
+ad esempio,
 
-```sh
+```console
 NAME MAJ:MIN RM SIZE RO TYPE MOUNTPOINT
 sda 254:0 0 10G 0 disk
 └─sda1 254:1 0 10G 0 part /
 sdb 254:16 0 25G 0 disk
+└─sdb1 254:17 0 25G 0 part
+```
+
+Se il risultato è simile a quello dell'esempio precedente e la colonna `MOUNTPOINT` è vuota nella riga corrispondente, è possibile passare [allo step successivo](#checkfs).
+
+Tuttavia, se il risultato indica l’esistenza di un punto di mount per la partizione VPS, è necessario smontarla.
+
+ad esempio,
+
+
+```console
+sdb 254:16 0 25G 0 disk
 └─sdb1 254:17 0 25G 0 part /mnt/sdb1
 ```
 
-Per ridimensionare la partizione, è necessario smontarla. Per smontare la partizione, esegui il comando:
+Nell'output di esempio sopra riportato, la partizione `sdb1` viene montata su `/mnt/`. Per ridimensionare la partizione, è necessario che non sia montata.
 
-```sh
+Per smontare la partizione, esegui il comando:
+
+```bash
+umount /dev/partition_name
+```
+
+In questo esempio di configurazione, il comando sarebbe:
+
+```bash
 umount /dev/sdb1
 ```
 
-### Verifica il filesystem
+#### Verifica il file system <a name="checkfs"></a>
 
-Una volta effettuata questa operazione, è opportuno assicurarsi che non siano presenti errori sulla partizione verificando il filesystem (`filesystem check`) con il comando:
+Prima di continuare, si consiglia di controllare il file system (`filesystem check`) per vedere se ci sono errori nella partizione. Il comando è il seguente:
 
 ```sh
 e2fsck -yf /dev/sdb1
- 
+```
+
+```console
 e2fsck 1.42.9 (4-Feb-2014)
 Pass 1: Checking inodes, blocks, and sizes
 Pass 2: Checking directory structure
@@ -83,7 +106,7 @@ Questa lista non è esaustiva.
 
 ### Apri l’applicazione fdisk
 
-Se la verifica del filesystem avviene correttamente, esegui l’applicazione `fdisk`. Come parametro sarà necessario inserire il nome del disco, non quello della partizione. Ad esempio, se la tua partizione è `sdb1` invece di `vdb1`, il nome del disco sarà /dev/sdb.
+Se la verifica del filesystem avviene correttamente, esegui l’applicazione `fdisk`. Come parametro sarà necessario inserire il nome del disco, non quello della partizione. Ad esempio, se la tua partizione è `sdb1`, il nome del disco sarà `/dev/sdb`.
 
 ```sh
 fdisk -u /dev/sdb
@@ -98,7 +121,7 @@ fdisk -u /dev/sdb
 
 Prima di eliminare la vecchia partizione, ti consigliamo di conservare il numero corrispondente al primo settore. Puoi ottenere questa informazione utilizzando il comando `p`{.action}. Il valore corrispondente è indicato sotto il campo `Start`. Conserva questo dato per gli step successivi.
 
-```sh
+```console
 Command (m for help): p
  
 Disk /dev/sdb: 21.5 GB, 21474836480 bytes
@@ -119,7 +142,7 @@ Device Boot Start End Blocks Id System
 
 Elimina la partizione eseguendo il comando `d`{.action}.
 
-```sh
+```console
 Command (m for help): d
 Selected partition 1
 ```
@@ -128,9 +151,9 @@ La rimozione verrà effettuata automaticamente.
 
 ### Crea una nuova partizione
 
-A questo punto, è necessario creare una nuova partizione con il comando `n`{.action}.  Ti consigliamo di utilizzare i valori predefiniti.
+A questo punto, è necessario creare una nuova partizione con il comando `n`{.action}. Ti consigliamo di utilizzare i valori predefiniti.
 
-```sh
+```console
 Command (m for help): n
 Partition type:
 p primary (0 primary, 0 extended, 4 free)
@@ -147,7 +170,7 @@ Assicurati che il valore predefinito indicato nella riga `First sector` corrispo
 
 Per assicurarti che la partizione sia avviabile, esegui il comando `a`{.action}: 
 
-```sh
+```console
 Command (m for help): a
  
 Partition number (1-4): 1
@@ -155,7 +178,7 @@ Partition number (1-4): 1
 
 Salva le modifiche ed esci dall’applicazione utilizzando il comando `w`{.action}:
 
-```sh
+```console
 Command (m for help): w
  
 The partition table has been altered!
@@ -170,7 +193,9 @@ Hai aumentato la partizione ma il suo filesystem occupa ancora lo stesso spazio.
 
 ```sh
 resize2fs /dev/sdb1
- 
+```
+
+```console
 resize2fs 1.42.9 (4-Feb-2014)
 Resizing the filesystem on /dev/sdb1 to 5242624 (4k) blocks.
 The filesystem on /dev/sdb1 is now 5242624 blocks long.
@@ -186,7 +211,9 @@ mount /dev/sdb1 /mnt
 
 ```sh
 df -h
- 
+```
+
+```console
 Filesystem Size Used Avail Use% Mounted on
 /dev/sda1 991M 793M 132M 86% /
 none 4.0K 0 4.0K 0% /sys/fs/cgroup
@@ -206,7 +233,9 @@ Se il comando `e2fsck`{.action} restituisce il messaggio di errore `bad magic nu
 
 ```sh
 dumpe2fs /dev/sdb1 | grep superblock
- 
+```
+
+```console
 Primary superblock at 0, Group descriptors at 1-6
 Backup superblock at 32768, Group descriptors at 32769-32774
 Backup superblock at 98304, Group descriptors at 98305-98310
@@ -230,7 +259,7 @@ Per controllare e riparare il filesystem, utilizza il primo superblock di backup
 fsck -b 32768 /dev/sdb1
 ```
 
-### Windows
+### Windows <a name="windows"></a>
 
 #### Accedi a File and Storage Services
 

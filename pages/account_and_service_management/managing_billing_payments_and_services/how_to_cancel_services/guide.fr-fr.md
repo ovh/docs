@@ -1,7 +1,7 @@
 ---
 title: Comment résilier vos services OVHcloud
 excerpt: Découvrez comment interrompre vos abonnements OVHcloud
-updated: 2022-03-22
+updated: 2023-11-16
 ---
 
 ## Objectif
@@ -37,7 +37,7 @@ Ceci implique que, avant toute résiliation, vous devez être **certain** :
 >
 > La résiliation ne peut être appliquée que si les conditions suivantes sont remplies :
 >
-> * vous êtes le « contact administrateur » du service (pour plus d'informations, consultez [ce guide](/pages/account/customer/managing_contacts#definition));
+> * vous êtes le « contact administrateur » du service (pour plus d'informations, consultez [ce guide](/pages/account_and_service_management/account_information/managing_contacts#definition));
 > * le service n'est pas en renouvellement manuel;
 > * le service n'est pas suspendu, notamment en raison d'un défaut de régularisation d'une facture.
 >
@@ -53,7 +53,7 @@ Cliquez sur le type de produit à résilier dans la liste suivante des principal
 &emsp;&emsp;[Licences](#licences)<br />
 
 [Hosted Private Cloud](#privatecloud)<br />
-&emsp;&emsp;[Hosted Private Cloud powered by VMware](#hostedprivatecloud-vmware)<br />
+&emsp;&emsp;[VMware on OVHcloud](#hostedprivatecloud-vmware)<br />
 &emsp;&emsp;[Veeam Cloud Connect](#veeamcloudconnect)<br />
 
 [Public Cloud](#publiccloud)<br />
@@ -130,9 +130,9 @@ Précisez les raisons de votre demande de résiliation puis cliquez sur `Valider
 
 ### Hosted Private Cloud <a name="privatecloud"></a>
 
-#### Hosted Private Cloud powered by VMware <a name="hostedprivatecloud-vmware"></a>
+#### VMware on OVHcloud <a name="hostedprivatecloud-vmware"></a>
 
-Pour résilier votre offre [Hosted Private Cloud powered by VMware](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), suivez les instructions de ce [guide](/pages/account_and_service_management/managing_billing_payments_and_services/comment_resilier_le_private_cloud).
+Pour résilier votre offre [VMware on OVHcloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), suivez les instructions de ce [guide](/pages/account_and_service_management/managing_billing_payments_and_services/comment_resilier_le_private_cloud).
 
 #### Veeam Cloud Connect <a name="veeamcloudconnect"></a>
 
@@ -150,7 +150,7 @@ Chaque service [Public Cloud](https://www.ovhcloud.com/fr/public-cloud/) peut ê
 
 Le Public Cloud OVHcloud repose sur le principe du *Pay as you go* (plus de détails sur notre page d'[informations concernant le mode de facturation Public Cloud](/pages/public_cloud/compute/analyze_billing)). Vous ne payez en fin de mois que pour le temps d'utilisation effectif des ressources.
 
-Vous pouvez également [consulter votre consommation actuelle](/pages/platform/public-cloud/analyze_billing#consulter-sa-consommation-actuelle) depuis l'espace client OVHcloud et être alerté par e-mail lorsque la projection de votre consommation dépasse un certain seuil.
+Vous pouvez également [consulter votre consommation actuelle](/pages/public_cloud/compute/analyze_billing#consulter-sa-consommation-actuelle) depuis l'espace client OVHcloud et être alerté par e-mail lorsque la projection de votre consommation dépasse un certain seuil.
 
 ### Web Cloud <a name="webcloud"></a>
 
@@ -214,23 +214,23 @@ Un e-mail contenant la procédure de fermeture de votre MX Plan vous sera alors 
 
 #### E-mail Pro <a name="emailpro"></a>
 
-Pour résilier votre offre [E-mail Pro](https://www.ovhcloud.com/fr/emails/email-pro/), suivez les instructions de ce [guide](/pages/web/emails-pro/manage_billing_emailpro#supprimer-un-compte).
+Pour résilier votre offre [E-mail Pro](https://www.ovhcloud.com/fr/emails/email-pro/), suivez les instructions de ce [guide](/pages/web_cloud/email_and_collaborative_solutions/email_pro/manage_billing_emailpro#supprimer-un-compte).
 
 #### Hosted Exchange <a name="hosted"></a>
 
-Pour résilier votre offre [Hosted Exchange](https://www.ovhcloud.com/fr/emails/hosted-exchange/), suivez les instructions de ce [guide](/pages/web/microsoft-collaborative-solutions/manage_billing_exchange#supprimer-des-comptes).
+Pour résilier votre offre [Hosted Exchange](https://www.ovhcloud.com/fr/emails/hosted-exchange/), suivez les instructions de ce [guide](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_billing_exchange#supprimer-des-comptes).
 
 #### Private Exchange <a name="private"></a>
 
-Pour résilier votre offre [Private Exchange](https://www.ovhcloud.com/fr/emails/private-exchange/), suivez les instructions de ce [guide](/pages/web/microsoft-collaborative-solutions/manage_billing_exchange#supprimer-des-comptes).
+Pour résilier votre offre [Private Exchange](https://www.ovhcloud.com/fr/emails/private-exchange/), suivez les instructions de ce [guide](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_billing_exchange#supprimer-des-comptes_1).
 
 #### Office 365 csp 1 <a name="office-csp1"></a>
 
-Pour résilier votre offre [Office 365 csp 1](https://www.ovhcloud.com/fr/collaborative-tools/microsoft-365/), suivez les instructions de ce [guide](/pages/web/microsoft-collaborative-solutions/office_csp1#gerer-vos-abonnements).
+Pour résilier votre offre [Office 365 csp 1](https://www.ovhcloud.com/fr/collaborative-tools/microsoft-365/), suivez les instructions de ce [guide](/pages/web_cloud/email_and_collaborative_solutions/microsoft_office/office_csp1#gerer-vos-abonnements).
 
 #### Office 365 csp 2 <a name="office-csp2"></a>
 
-Pour résilier votre offre [Office 365 csp 2](https://www.ovhcloud.com/fr/collaborative-tools/microsoft-365/reseller/), suivez les instructions de ce [guide](/pages/web/microsoft-collaborative-solutions/office_csp2#gerer-vos-abonnements).
+Pour résilier votre offre [Office 365 csp 2](https://www.ovhcloud.com/fr/collaborative-tools/microsoft-365/reseller/), suivez les instructions de ce [guide](/pages/web_cloud/email_and_collaborative_solutions/microsoft_office/office_csp2#gerer-vos-abonnements).
 
 #### Sharepoint <a name="sharepoint"></a>
 
@@ -261,7 +261,7 @@ Pour résilier votre offre [FTTH ou xDSL](https://www.ovhtelecom.fr/offre-intern
 
 #### VoIP <a name="voip"></a>
 
-Pour résilier une offre [VoIP](https://www.ovhtelecom.fr/telephonie/voip/), suivez les instructions de ce guide pour [résilier une ligne SIP ou Trunk](/pages/telecom/voip/changer_l_offre_et_les_options_d_une_ligne_voip#resilier-sip-trunk) ou pour [résilier un numéro alias](/pages/telecom/voip/changer_l_offre_et_les_options_d_une_ligne_voip#resilier-alias).
+Pour résilier une offre [VoIP](https://www.ovhtelecom.fr/telephonie/voip/), suivez les instructions de ce guide pour [résilier une ligne SIP ou Trunk](/pages/web_cloud/phone_and_fax/voip/changer_l_offre_et_les_options_d_une_ligne_voip#resilier-sip-trunk) ou pour [résilier un numéro alias](/pages/web_cloud/phone_and_fax/voip/changer_l_offre_et_les_options_d_une_ligne_voip#resilier-alias).
 
 #### OverTheBox <a name="otb"></a>
 
@@ -279,7 +279,7 @@ Si vous souhaitez supprimer un compte SMS, nous vous invitons à créer une dema
 
 #### FAX <a name="fax"></a>
 
-Pour résilier une offre [FAX](https://www.ovhtelecom.fr/fax/), suivez les instructions de [ce guide](/pages/telecom/voip/changer_l_offre_et_les_options_d_une_ligne_voip#resilier-fax).
+Pour résilier une offre [FAX](https://www.ovhtelecom.fr/fax/), suivez les instructions de [ce guide](/pages/web_cloud/phone_and_fax/voip/changer_l_offre_et_les_options_d_une_ligne_voip#resilier-fax).
 
 ### Solutions transverses <a name="transversal"></a>
 

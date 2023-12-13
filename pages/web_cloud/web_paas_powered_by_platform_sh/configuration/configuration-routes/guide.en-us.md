@@ -56,7 +56,7 @@ If your `routes.yaml` file would result in too large of a route information valu
 
 The full list of generated route information is often much larger than what is literally specified in the `routes.yaml` file.  For example, by default all HTTPS routes will be duplicated to create an HTTP redirect route.  Also, the `{all}` placeholder will create two routes (one HTTP, one HTTPS) for each domain that is configured.
 
-As a general rule we recommend keeping the defined routes under 100.  Should you find your `routes.yaml` file rejected due to an excessive size the best alternative is to move any redirect routes to the application rather than relying on the router, or collapsing them into a [regular expression-based redirect](/pages/web/web-paas/configuration-routes/redirects#partial-redirects) within a route definition.
+As a general rule we recommend keeping the defined routes under 100.  Should you find your `routes.yaml` file rejected due to an excessive size the best alternative is to move any redirect routes to the application rather than relying on the router, or collapsing them into a [regular expression-based redirect](/pages/web_cloud/web_paas_powered_by_platform_sh/configuration/redirects#partial-redirects) within a route definition.
 
 Let's Encrypt also limits an environment to 100 configured domains.  If you try to add more than that some of them will fail to get an SSL certificate.
 
@@ -222,7 +222,7 @@ If you need to see more detailed info, such as cache and ssi, use `webpaas route
 
 Web PaaS supports wildcard routes, so you can map multiple subdomains to the same application. This works both for redirect and upstream routes. You can simply prefix the route with a star (`*`), for example `*.example.com`, and HTTP request to `www.example.com`, `blog.example.com`, `us.example.com` will all get routed to the same endpoint.
 
-For your master environment, this would function as a catch-all domain once you [added the parent domain](/pages/web/web-paas/administration-web/configure-project#domains) to the project settings.
+For your master environment, this would function as a catch-all domain once you [added the parent domain](/pages/web_cloud/web_paas_powered_by_platform_sh/administration/configure-project#domains) to the project settings.
 
 For development environments, we will also be able to handle this. Here is how:
 
@@ -246,7 +246,7 @@ To use WebSocket on a route, `cache` must be disabled because WebSocket is incom
         enabled: false
 ```
 
-You will also need to [disable request buffering](/pages/web/web-paas/configuration-app/web#locations) in the `.platform.app.yaml`.
+You will also need to [disable request buffering](/pages/web_cloud/web_paas_powered_by_platform_sh/configuration/web#locations) in the `.platform.app.yaml`.
 
 ```yaml
 web:

@@ -1,7 +1,6 @@
 ---
 title: Ajout de bloc IP
 excerpt: Commander un bloc IP sur votre Hosted Private Cloud
-legacy_guide_number: '7766457'
 updated: 2022-04-06
 ---
 
@@ -53,8 +52,6 @@ Plusieurs champs seront à remplir pour la création de votre bloc IP
 > [!success]
 >
 > Vous devrez vous acquitter des frais d'activation de votre bloc IP avant livraison.
->  
-> Les frais de renouvellement sont eux gratuits.
 >
 
 Après avoir confirmé la dernière étape, vous obtenez le bon de commande de votre bloc IP. Si celui-ci est conforme à votre souhait, il vous suffit de le payer avec les moyens de paiement proposés en bas de page afin que celui-ci soit livré.
@@ -69,7 +66,7 @@ Utilisez l'appel API suivant :
 
 > [!api]
 >
-> @api {POST} /ip/{ip}/move
+> @api {v1} /ip POST /ip/{ip}/move
 > 
 
 Les champs doivent être complétés ainsi :
@@ -88,7 +85,7 @@ Si, par la suite, vous devez détacher le bloc IP, vous pouvez utiliser cet appe
 
 > [!api]
 >
-> @api {POST} /ip/{ip}/park
+> @api {v1} /ip POST /ip/{ip}/park
 > 
 
 > [!warning]

@@ -1,6 +1,7 @@
 ---
-title: 'Liste des adresses IP des clusters et hebergements web'
-updated: 2023-08-22
+title: "Liste des adresses IP des clusters et hebergements web"
+excerpt: "Découvrez l'ensemble des adresses IP disponibles avec nos hébergements web"
+updated: 2023-11-21
 ---
 
 ## Objectif
@@ -10,6 +11,8 @@ Retrouvez dans ce guide toutes les adresses IP des hébergements web OVHcloud. C
 - votre cluster/votre hébergement
 - vos options (CDN, SSL payant, SSL gratuit...)
 - le pays recherché ...
+
+**Découvrez l'ensemble des adresses IP disponibles avec nos hébergements web.**
 
 > [!primary]
 >

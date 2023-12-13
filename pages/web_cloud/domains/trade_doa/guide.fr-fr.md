@@ -1,7 +1,7 @@
 ---
 title: "Changer le propriétaire d’un domaine avec une Demande d'Opération AFNIC (DOA)"
 excerpt: "Découvrez comment réaliser une Demande d'Opération AFNIC (DOA)"
-updated: 2023-06-13
+updated: 2023-10-23
 ---
 
 ## Objectif
@@ -132,16 +132,19 @@ Retrouvez ci-dessous la liste des documents à fournir en fonction de la situati
     - Extrait K-Bis de moins de 3 mois (ou équivalent s'il s'agit d'une société étrangère).
     - Photocopie recto-verso d'une pièce d'identité de l'un des gérants apparaissant sur l'extrait K-Bis.
     - Un acte de décès.
+    - Un acte notarié désignant le nouveau propriétaire.
 
 - Si le nouveau propriétaire est une association :
     - Extrait du Journal Officiel de moins de 3 mois (ou équivalent s'il s'agit d'une association étrangère).
     - Photocopie recto-verso d'une pièce d'identité de l'un des gérants apparaissant sur l'extrait du Journal Officiel.
     - Un acte de décès.
+    - Un acte notarié désignant le nouveau propriétaire.
 
 - Si le nouveau propriétaire est un particulier :
     - Photocopie recto-verso d'une pièce d'identité.
     - Justificatif de domicile de moins de 3 mois (facture d'électricité par exemple).
     - Un acte de décès.
+    - Un acte notarié désignant le nouveau propriétaire.
 
 > [!primary]
 >

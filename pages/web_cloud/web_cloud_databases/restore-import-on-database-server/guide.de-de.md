@@ -1,7 +1,7 @@
 ---
 title: 'Datenbank auf Ihrem Datenbankserver wiederherstellen und importieren'
 excerpt: 'Erfahren Sie hier, wie Sie Ihre Datenbank wiederherstellen und importieren'
-updated: 2023-02-15
+updated: 2023-10-26
 ---
 
 ## Ziel
@@ -81,7 +81,7 @@ In einigen Fällen reicht der auf Ihrem Datenbankserver verfügbare RAM möglich
 
 #### MySQL oder MariaDB Datenbank über phpMyAdmin importieren
 
-Um Ihre Datenbank direkt über phpMyAdmin zu importieren, müssen Sie sich zuerst mit ihr verbinden. Folgen Sie hierzu den Schritten im Abschnitt ["Mit einer MySQL oder MariaDB Datenbank verbinden"](/pages/web/clouddb/connecting-to-database-on-database-server#mit-einer-mysql-oder-mariadb-datenbank-verbinden).
+Um Ihre Datenbank direkt über phpMyAdmin zu importieren, müssen Sie sich zuerst mit ihr verbinden. Folgen Sie hierzu den Schritten im Abschnitt ["Mit einer MySQL oder MariaDB Datenbank verbinden"](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server#mit-einer-mysql-oder-mariadb-datenbank-verbinden).
 
 Wenn Sie in phpMyAdmin eingeloggt sind, wählen Sie die Datenbank aus, indem Sie auf ihren Namen klicken.
 
@@ -96,7 +96,7 @@ Wählen Sie Ihre Backup-Datei aus, indem Sie `Durchsuchen`{.action} klicken. (Di
 
 Lassen Sie die Standardoptionen aktiviert und klicken Sie auf `Ausführen`{.action}, um den Import zu starten.
 
-![Web Cloud Databases](images/web-cloud-databases-import04.png){.thumbnail}
+![Web Cloud Databases](images/pma-upload-backup-web-cloud-db.png){.thumbnail}
 
 #### MySQL oder MariaDB Datenbank über die Kommandozeile importieren
 

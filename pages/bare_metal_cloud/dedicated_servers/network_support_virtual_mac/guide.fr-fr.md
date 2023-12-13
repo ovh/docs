@@ -28,7 +28,7 @@ Utilisez l'appel API suivant :
 
 > [!api]
 >
-> @api {GET} /dedicated/server/{serviceName}/specifications/network
+> @api {v1} /dedicated/server GET /dedicated/server/{serviceName}/specifications/network
 >
 
 Saisissez le nom de votre serveur dans le champ `serviceName`, puis cliquez sur `Execute`{.action}.

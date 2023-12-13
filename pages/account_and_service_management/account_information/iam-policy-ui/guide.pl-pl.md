@@ -1,17 +1,13 @@
 ---
 title: Jak korzystać z polityki IAM w Panelu klienta
 excerpt: Dowiedz się, jak przypisać użytkownikom uprawnienia dostępu do konta OVHcloud
-updated: 2023-07-06
+updated: 2023-12-06
 ---
 
 > [!primary]
 > Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zgłóś propozycję modyfikacji” na tej stronie.
 >
 
-> [!warning]
->
-> Ta funkcja jest aktualnie dostępna w wersji beta. Więcej informacji na temat <https://labs.ovhcloud.com/en/>
->
 
 ## Wprowadzenie
 
@@ -87,6 +83,17 @@ Istnieją 3 sposoby dodawania operacji:
 
 Podczas aktywacji tej opcji zatwierdzisz wszystkie operacje związane z wybranymi produktami. Obejmuje to wszystkie istniejące działania oraz przyszłe działania dodane do tych kategorii produktów.
 
+- Wybierając grupę uprawnień zarządzanych
+
+Udostępniamy wstępnie skonfigurowane grupy uprawnień zarządzane przez OVHcloud.
+Możesz wybrać jedną lub kilka grup, wybierając je z dostępnej listy.
+
+![Utwórz politykę](images/create_a_policy_05.png){.thumbnail}
+
+Szczegółowe informacje na temat zawartości grup uprawnień zarządzanych można znaleźć w [powiązanej dokumentacji](/pages/account_and_service_management/account_information/iam-permission-groups).
+
+Zarządzane grupy akcji mogą być używane jako uzupełnienie akcji jednostkowych.
+
 - Ręcznie dodając operacje
 
 Jeśli znasz nazwę działania, możesz dodać ją ręcznie.
@@ -97,9 +104,9 @@ Można użyć *wildcard* na początku lub na końcu nazwy działania z `*`.
 
 Na przykład, dodanie `vps:apiovh:ips/*` przyznaje następujące uprawnienia:
 
-vps:apiovh:ips/edit <br>
-vps:apiovh:ips/delete <br>
-vps:apiovh:ips/get <br>
+- **vps:apiovh:ips/edit**
+- **vps:apiovh:ips/delete**
+- **vps:apiovh:ips/get**
 
 - Wybierając działania z listy
 

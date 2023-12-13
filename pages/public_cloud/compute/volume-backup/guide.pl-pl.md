@@ -38,7 +38,7 @@ Zaloguj się do Panelu [klienta OVHcloud](https://www.ovh.com/auth/?action=gotom
 
 Następnie otwórz menu `Block Storage`{.action} na pasku nawigacji po lewej stronie w **usłudze Storage**.
 
-Po prawej stronie wybranego wolumenu kliknij przycisk `...`{.action} a następnie `Utwórz kopię zapasową`{.action}. Nie ma potrzeby odłączania najpierw wolumenu od instancji. Jeśli jednak chcesz odłączyć wolumen od instancji, sprawdź tę [sekcję](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance#linux) odpowiedniego przewodnika dla systemu Linux i tę [sekcję](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance#windows) dla systemu Windows.
+Po prawej stronie wybranego wolumenu kliknij przycisk `...`{.action} a następnie `Utwórz kopię zapasową`{.action}. Nie ma potrzeby odłączania najpierw wolumenu od instancji. Jeśli jednak chcesz odłączyć wolumen od instancji, sprawdź tę [sekcję](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance#linux) odpowiedniego przewodnika dla systemu Linux i tę [sekcję](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance#windows) dla systemu Windows.
 
 ![Backup - tworzenie](images/volumebackup01.png){.thumbnail}
 

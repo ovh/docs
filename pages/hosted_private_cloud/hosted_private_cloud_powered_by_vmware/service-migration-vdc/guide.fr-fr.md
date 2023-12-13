@@ -1,8 +1,7 @@
 ---
 title: Migrer une infrastructure vers un nouveau vDC
 excerpt: Découvrez comment déplacer vos VMs d'un vDC existant vers un nouveau vDC dans la même infrastructure VMware
-hidden: true
-updated: 2023-07-31
+updated: 2023-12-05
 ---
 <style>
 .ovh-api-main { background:#fff;}
@@ -143,7 +142,7 @@ Vous avez maintenant choisi votre gamme commerciale et vos hosts. Veuillez noter
 
 > [!api]
 >
-> @api {GET} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/filer/{filerId}/checkGlobalCompatible
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/filer/{filerId}/checkGlobalCompatible
 >
 
 **Résultat attendu :** boolean
@@ -176,7 +175,7 @@ Vous pouvez ajouter un vDC de destination en procédant comme suit :
 <a name="addhostandds"></a>
 #### Etape 2.2 Ajouter des nouveaux hosts et datastores
 
-Au sein de l'espace client OVHcloud, vous devriez voir votre nouveau vDC dans votre infrastructure. vous pouvez procéder à la commande des nouvelles ressources (sélectionnées à l'étape 1) dans le nouveau vDC de destination en suivant ce [guide d'informations sur la facturation Private Cloud](/pages/cloud/private-cloud/facturation_private_cloud#ressources-mensuelles).
+Au sein de l'espace client OVHcloud, vous devriez voir votre nouveau vDC dans votre infrastructure. vous pouvez procéder à la commande des nouvelles ressources (sélectionnées à l'étape 1) dans le nouveau vDC de destination en suivant ce [guide d'informations sur la facturation Private Cloud](/pages/account_and_service_management/managing_billing_payments_and_services/facturation_private_cloud#ressources-mensuelles).
 
 <a name="converttoglobal"></a>
 #### Etape 2.3 Convertir une datastore comme global
@@ -187,7 +186,7 @@ Exécutez l'API OVHcloud pour convertir les datastores en global:
 
 > [!api]
 >
-> @api {POST}  /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/filer/{filerId}/convertToGlobal
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/filer/{filerId}/convertToGlobal
 >
 
 **Résultat attendu :** Informations de tâche
@@ -323,7 +322,7 @@ Voici une liste des éléments à prendre en compte:
 - Paramètres de Teaming et de Failover
 - Allocation des ressources réseau du client
 
-Pour plus d'informations, consultez le guide OVHcloud sur [comment créer un V(x)LAN dans un vRack](/pages/cloud/private-cloud/creation_vlan#vlan-vrack) et la documentation de VMware sur [comment modifier les paramètres des groupes de ports distribués](https://docs.vmware.com/fr/VMware-vSphere/7.0/com.vmware.vsphere.networking.doc/GUID-FCA2AE5E-83D7-4FEE-8DFF-540BDB559363.html){.external}.
+Pour plus d'informations, consultez le guide OVHcloud sur [comment créer un V(x)LAN dans un vRack](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/creation_vlan#vlan-vrack) et la documentation de VMware sur [comment modifier les paramètres des groupes de ports distribués](https://docs.vmware.com/fr/VMware-vSphere/7.0/com.vmware.vsphere.networking.doc/GUID-FCA2AE5E-83D7-4FEE-8DFF-540BDB559363.html){.external}.
 
 **Conseils d'automatisation :** L'applet de commande Powercli « Export-VDPortGroup » peut récupérer des informations de Portgroups virtuels distribués qui peuvent ensuite être importées dans le Distributed Switch de destination à l'aide de l'applet de commande « New-VDPortgroup -BackupPath ».
 
@@ -355,8 +354,6 @@ Dans un premier temps, nous vous invitions à consulter notre documentation sur 
 <a name="dfw"></a>
 ##### Etape 4.8.1 NSX Distributed Firewall
 
-Le pare-feu distribué NSX protège automatiquement l'intégralité du vDC. L'outil Migration Coordinator permet de le faire, cependant un ticket doit être créé afin qu'un intervenant puisse le déclencher. Vous pouvez également faire appel à notre équipe [Professional Services](https://www.ovhcloud.com/fr/professional-services/) pour déclencher la procédure.
-
 Il est extrêmement important de comprendre que les objets placés dans le pare-feu distribué correspondront à l'ID d'objet significatif en local. Par exemple, si un groupe de ports VLAN vRack est utilisé dans une règle dans le pare-feu distribué, il référencera le groupe de ports à partir du vDC d'origine uniquement et non à partir d'un groupe de ports vRack recréé dans le vDC de destination.
 
 Il sera nécessaire de vérifier si le pare-feu distribué contient des objets significatifs en local et de modifier le pare-feu distribué afin qu'il puisse également voir les objets dans le nouveau vDC. Par exemple, une règle qui utilise un groupe de ports VLAN vRack à partir du vDC d'origine peut être modifiée pour utiliser à la fois le groupe de ports VLAN vRack d'origine et le nouveau groupe de ports VLAN vRack dans le vDC de destination.
@@ -384,7 +381,7 @@ De manière générale, en fonction du nombre de *Edges* déployées via NSX-V d
 
 De plus, si votre production nécessite de n'avoir aucune interruption de service, des solutions peuvent être mises en place pour éviter ces coupures.
 
-Dans ces deux cas et comme indiqué plus haut, notre équipe [Professional Services](https://www.ovhcloud.com/fr/professional-services/) peut vous accompagner dans cette démarche. Nos experts de cette équipe peuvent aussi utiliser le Migration Coordinator Tool pour générer un squelette réseau NSX basé sur votre ancienne architecture NSX-V afin d'accélérer / simplifier la procédure de migration.
+Dans ces deux cas et comme indiqué plus haut, notre équipe [Professional Services](https://www.ovhcloud.com/fr/professional-services/) peut vous accompagner dans cette démarche. 
 
 <a name="t1seg"></a>
 ##### Etape 4.8.3.1 Créer les T1 et les segments
@@ -447,7 +444,7 @@ Ces applications réseau sont à monter sur des VMs dédiées hébergées sur vo
 ##### Etape 4.8.3.8 Reconfiguration du bloc IP initial
 
 > [!warning]
-> Cette étape entraine une interruption de service car tout le trafic sera redirigé vers la VIP de la T0.
+> Cette étape entraine une interruption de service car tout le trafic sera redirigé vers la VIP de la T0 (vous ne pourrez plus utiliser ce bloc IP avec des VMs sur le portgroup VM Network).
 > Vous devez décider si vous voulez faire pointer le bloc IP primaire de NSX-V vers la T0 de NSX avant ou après avoir migré vos VMs (cf [Etape 5.2](#vmotion))
 >
 
@@ -477,14 +474,14 @@ Exécutez l'API OVHcloud pour préparer la migration :
 
 > [!api]
 >
-> @api {POST} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/disasterRecovery/zerto/startMigration
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/disasterRecovery/zerto/startMigration
 >
 
 `{datacenterId}` est le **nouvel** id vDC, vous pouvez l'obtenir avec l'appel API suivant :
 
 > [!api]
 >
-> @api {GET} /dedicatedCloud/{serviceName}/datacenter
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/datacenter
 >
 
 Une tâche est lancée sur l'infrastructure pour déployer vRA sur chacun des hosts du nouveau vDC. 
@@ -551,7 +548,7 @@ Voici comment procéder:
 >
 > > [!api]
 > >
-> > @api {GET} /dedicatedCloud/{serviceName}/datacenter
+> > @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/datacenter
 > >
 >
 
@@ -567,7 +564,7 @@ Voici comment procéder:
 
 > [!api]
 >
-> @api {POST} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/checkBackupJobs
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/checkBackupJobs
 >
 
 4\. Si vous n'aviez migré qu'une partie des machines virtuelles dont les sauvegardes sont activées, vous pouvez répéter les étapes 2 et 3 afin de transférer leurs piles de backups vers le nouveau vDC.
@@ -576,7 +573,7 @@ Avant de continuer, vous pouvez vérifier visuellement, dans le plug-in graphiqu
 
 > [!api]
 >
-> @api {POST} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/backup/disable
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/backup/disable
 
 > [!warning]
 >
@@ -592,14 +589,14 @@ Exécutez l'API OVHcloud pour finaliser la migration :
 
 > [!api]
 >
-> @api {POST} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/disasterRecovery/zerto/endMigration
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/disasterRecovery/zerto/endMigration
 >
 
 `{datacenterId}` est le **nouvel** id vDC, vous pouvez l'obtenir avec l'appel API suivant :
 
 > [!api]
 >
-> @api {GET} /dedicatedCloud/{serviceName}/datacenter
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/datacenter
 >
 
 Une tâche est lancée pour :
@@ -617,14 +614,14 @@ Les règles d'affinité sont basées sur des objets de VM de sorte que les règl
 <a name="privategw"></a>
 #### Etape 6.4 Reconfigurer la Private Gateway (si pertinent)
 
-Pour changer la Private Gateway de virtual datacenter (vDC), pour devez d'abord la désactiver en suivant les étapes du guide pour [désactiver la private gateway](/pages/cloud/private-cloud/private_gateway#disablegw).
+Pour changer la Private Gateway de virtual datacenter (vDC), pour devez d'abord la désactiver en suivant les étapes du guide pour [désactiver la private gateway](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/private_gateway#disablegw).
 
 > [!warning]
 >
 > Si vous avez activé des certifications ou un niveau de sécurité qui requiert l'usage de la Private Gateway, vous seul êtes responsable de la réactivation de celle-ci (lancement de l'activation).
 >
 
-Puis activez de nouvelle celle-ci en en suivant les étapes du guide pour [activer la private gateway](/pages/cloud/private-cloud/private_gateway#enablegw) et en choisissant le datacenterId du nouveau vDC.
+Puis activez de nouvelle celle-ci en en suivant les étapes du guide pour [activer la private gateway](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/private_gateway#enablegw) et en choisissant le datacenterId du nouveau vDC.
 
 <a name="hostmm"></a>
 #### Etape 6.5 Passer les hosts en mode maintenance
@@ -647,35 +644,35 @@ Dans les instructions suivantes, `{datacenterId}` est l'**ancien** id vDC, vous 
 
 > [!api]
 >
-> @api {GET} /dedicatedCloud/{serviceName}/datacenter
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/datacenter
 >
 
 Avec l'API, obtenez la liste des ID du filer (datastore) :
 
 > [!api]
 >
-> @api {GET} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/filer
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/filer
 >
 
 Puis pour chaque ID :
 
 > [!api]
 >
-> @api {POST} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/filer/{filerId}/remove
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/filer/{filerId}/remove
 >
 
 Dans le cas d'un datastore global, vous pouvez utiliser l'appel API suivant :
 
 > [!api]
 >
-> @api {POST} /dedicatedCloud/{serviceName}/filer/{filerId}/remove
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/filer/{filerId}/remove
 >
 
 Une tâche est créée pour chaque appel, vous pouvez suivre l'avancement avec :
 
 > [!api]
 >
-> @api {GET} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/filer/{filerId}/task/{taskId}
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/filer/{filerId}/task/{taskId}
 >
 
 > [!warning]
@@ -690,28 +687,28 @@ Dans les instructions suivantes, `{datacenterId}` est l'**ancien** id vDC, vous 
 
 > [!api]
 >
-> @api {GET} /dedicatedCloud/{serviceName}/datacenter
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/datacenter
 >
 
 Avec l'API, obtenez la liste des ID d'hôte :
 
 > [!api]
 >
-> @api {GET} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/host
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/host
 >
 
 Puis pour chaque ID :
 
 > [!api]
 >
-> @api {POST} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/host/{hostId}/remove
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/host/{hostId}/remove
 >
 
 Une tâche est créée pour chaque appel, vous pouvez suivre l'avancement avec :
 
 > [!api]
 >
-> @api {GET} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/host/{hostId}/task/{taskId}
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/host/{hostId}/task/{taskId}
 >
 
 > [!warning]
@@ -726,14 +723,14 @@ Dans les instructions suivantes, `{datacenterId}` est l'**ancien** id vDC, vous 
 
 > [!api]
 >
-> @api {GET} /dedicatedCloud/{serviceName}/datacenter
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/datacenter
 >
 
 Avec l'API, demandez la suppression du vDC :
 
 > [!api]
 >
-> @api {DELETE} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}
+> @api {v1} /dedicatedCloud DELETE /dedicatedCloud/{serviceName}/datacenter/{datacenterId}
 >
 
 ## FAQ

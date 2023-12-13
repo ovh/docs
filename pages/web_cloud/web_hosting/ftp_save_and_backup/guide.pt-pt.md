@@ -1,7 +1,7 @@
 ---
-title: 'Restaurar o espaço de armazenamento do alojamento web'
-excerpt: 'Saiba como restaurar um ficheiro ou a totalidade do espaço de armazenamento do seu alojamento web'
-updated: 2023-01-12
+title: "Restaurar o espaço de armazenamento do alojamento web"
+excerpt: "Saiba como restaurar um ficheiro ou a totalidade do espaço de armazenamento do seu alojamento web"
+updated: 2023-12-04
 ---
 
 > [!primary]
@@ -82,7 +82,7 @@ Aceda à informação correspondente ao método de restauração escolhido.
 > 
 > Nesse caso:
 >
-> - As nossas equipas enviam um e-mail ao [administrador](/pages/account/customer/managing_contacts#aceder-a-area-de-gestao-dos-contactos) do alojamento. 
+> - As nossas equipas enviam um e-mail ao [administrador](/pages/account_and_service_management/account_information/managing_contacts#aceder-a-area-de-gestao-dos-contactos) do alojamento. 
 > - O estado "manutenção" aparece na sua [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Na secção `Web Cloud`{.action}, clique no serviço na secção `Alojamento`{.action} e, a seguir, no separador `Informações gerais`{.action}.
 > - O(s) site(s) alojado(s) apresenta(m) uma página "403 Forbidden".
 >
@@ -167,11 +167,25 @@ Uma vez ligado, deve descarregar os ficheiros que pretende restaurar. Para isso,
 
 Antes de avançar para o passo seguinte, certifique-se de que recuperou todos os ficheiros que pretende restaurar e, em seguida, termine a sessão no seu espaço de armazenamento.
 
+> [!success]
+>
+> Se utilizar a interface do **FTP Explorer**, não hesite em consultar a [página de ajuda](https://net2ftp.cluster020.hosting.ovh.net/help.html){.external} para realizar corretamente a recuperação dos seus ficheiros. Esta página também está acessível através do botão `Help Guide`{.action} situado na parte inferior da interface de ligação ao **FTP Explorer**.
+>
+> Se utilizar outro software para aceder ao seu espaço de armazenamento FTP, recomendamos que consulte a documentação oficial do software para efetuar as operações corretas.
+>
+
 #### 4 - Restaurar os ficheiros
 
 Depois de descarregar os ficheiros, ligue-se novamente ao seu espaço de armazenamento. Mas desta vez, não adicione nenhum sufixo ao utilizador FTP. Desta forma, acederá ao conteúdo atual do seu espaço de armazenamento e não a uma cópia de segurança anterior.
 
 Uma vez ligado, só precisará de restaurar os ficheiros. Para isso, navegue pelo conteúdo do seu espaço de armazenamento até localizar os ficheiros e descarregue-os substituindo os ficheiros anteriores.
+
+> [!success]
+>
+> Se utilizar a interface do **FTP Explorer**, não hesite em consultar a [página de ajuda](https://net2ftp.cluster020.hosting.ovh.net/help.html){.external} para realizar corretamente o restauro dos seus ficheiros. Esta página também está acessível através do botão `Help Guide`{.action} situado na parte inferior da interface de ligação ao **FTP Explorer**.
+>
+> Se utilizar outro software para aceder ao seu espaço de armazenamento FTP, recomendamos que consulte a documentação oficial do software para efetuar as operações corretas.
+>
 
 ## Quer saber mais?
 
@@ -185,4 +199,4 @@ Para serviços especializados (referenciamento, desenvolvimento, etc), contacte 
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
 
-Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>. 
+Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

@@ -1,6 +1,6 @@
 ---
 title: "Décaler une maintenance programmée sur votre Hosted Private Cloud"
-excerpt: "Découvrez comment décaler une maintenance programmée sur votre service Hosted Private Cloud powered by VMware"
+excerpt: "Découvrez comment décaler une maintenance programmée sur votre service VMware on OVHcloud"
 updated: 2022-11-30
 ---
 
@@ -13,12 +13,12 @@ Lorsqu'une maintenance est programmée sur votre Hosted Private Cloud, un e-mail
 >
 > Pour information, lorsqu'une date de maintenance peut être modifiée par vos soins, les nouvelles dates proposées sont comprises dans un intervalle de temps réduit.
 
-**Découvrez comment reporter la date d'une maintenance programmée sur votre Hosted Private Cloud powered by VMware, depuis votre espace client OVHcloud ou l'API OVHcloud.**
+**Découvrez comment reporter la date d'une maintenance programmée sur votre VMware on OVHcloud, depuis votre espace client OVHcloud ou l'API OVHcloud.**
 
 ## Prérequis
 
 - Avoir reçu un e-mail de notification de maintenance indiquant spécifiquement que vous pouvez « **modifier la date d'exécution de la maintenance** ». Dans le cas contraire, la date de la maintenance ne peut pas être modifiée.
-- Être contact administrateur ou technique de l'infrastructure [Hosted Private Cloud powered by VMware](https://www.ovhcloud.com/fr-ca/enterprise/products/hosted-private-cloud/).
+- Être contact administrateur ou technique de l'infrastructure [VMware on OVHcloud](https://www.ovhcloud.com/fr-ca/enterprise/products/hosted-private-cloud/).
 - Être connecté à l'[espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) ou à l'[interface d'administration de vos services par API](https://ca.api.ovh.com/).
 
 ## En pratique
@@ -56,7 +56,7 @@ Exécutez l'appel API suivant :
 
 > [!api]
 >
-> @api {POST} /dedicatedCloud/{serviceName}/task/{taskId}/changeMaintenanceExecutionDate
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/task/{taskId}/changeMaintenanceExecutionDate
 >
 
 Renseignez les variables :

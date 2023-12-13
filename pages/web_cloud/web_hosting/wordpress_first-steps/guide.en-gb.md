@@ -4,7 +4,6 @@ excerpt: "Find out how to create a website with the WordPress CMS"
 updated: 2023-02-17
 ---
 
-  
 ## Objective
 
 This tutorial will help you create your first content, organise it, put it online and change the theme of your website with the Content Management System (CMS) **WordPress**. You can build your website without any particular knowledge of programming, with a wide range of topics such as a company website, a blog, or even a website to publicise your activity or passion.
@@ -27,7 +26,7 @@ This tutorial will help you create your first content, organise it, put it onlin
 
 ## Instructions
 
-If one is not already installed, [add an SSL certificate](/pages/web/hosting/ssl-activate-https-website#step-1-activate-the-ssl-certificate-on-the-web-hosting-plan) for the domain name associated with your website before you continue.
+If one is not already installed, [add an SSL certificate](/pages/web_cloud/web_hosting/ssl-activate-https-website#step-1-activate-the-ssl-certificate-on-the-web-hosting-plan) for the domain name associated with your website before you continue.
 
 When you installed your 1-click CMS, you received an email containing the information you need to follow this tutorial:
 
@@ -190,4 +189,4 @@ For specialised services (SEO, development, etc.), contact [OVHcloud partners](h
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-gb/support-levels/).
 
-Join our community of users on <https://community.ovh.com/en/>. 
+Join our community of users on <https://community.ovh.com/en/>.

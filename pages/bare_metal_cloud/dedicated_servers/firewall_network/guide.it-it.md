@@ -40,7 +40,7 @@ Per proteggere la propria infrastruttura e i server dei propri clienti, OVHcloud
 > Il Network Firewall protegge l'indirizzo IP associato a un server. Pertanto, se hai un server con più indirizzi IP, devi configurare ciascun IP separatamente. Una configurazione globale del server non è possibile.
 > 
 
-Dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, accedi al menu `Bare Metal Cloud`{.action} e apri `IP`{.action}. 
+Dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, accedi al menu `Bare Metal Cloud`{.action} e clicca su `Network`{.action}. Clicca su `IP`{.action}. 
 
 Puoi utilizzare il menu a tendina "I tuoi indirizzi IP pubblici e servizi associati" per filtrare i tuoi servizi per categoria.
 
@@ -126,7 +126,7 @@ La nostra soluzione anti-DDoS (VAC) comprende tre modalità di mitigazione: auto
 Tutto il traffico passa sempre attraverso il sistema di mitigazione prima di raggiungere il server. Consigliamo questa modalità per i servizi oggetto di attacchi frequenti.<br>
 Ti ricordiamo che la mitigazione permanente è parte della nostra soluzione anti-DDoS (VAC) e che è possibile attivarla sul tuo IP senza attivare il Network Firewall.
 
-Per attivarlo, clicca sul menu `Bare Metal Cloud`{.action} e apri `IP`{.action}. Poi clicca sui `...`{.action} a destra dell'IPv4 in questione e seleziona `Mitigation: modalità permanente`{.action}.
+Per attivarlo, clicca sul menu `Bare Metal Cloud`{.action} e apri `Network`{.action}, poi clicca su `IP`{.action}. Clicca sui `...`{.action} a destra dell'IPv4 in questione e seleziona `Mitigation: modalità permanente`{.action}.
 
 **Mitigazione forzata**: questa modalità viene attivata automaticamente non appena viene rilevato un attacco sul server. Una volta attivata sull'infrastruttura anti-DDoS, questa modalità non può essere disattivata. Per proteggere la nostra infrastruttura, la protezione sarà attivata per tutta la durata dell'attacco fino a quando non sarà completamente mitigata.
 
@@ -143,7 +143,7 @@ Per attivarlo, clicca sul menu `Bare Metal Cloud`{.action} e apri `IP`{.action}.
 >
 
 Per configurare le regole delle porte in Armor, accedi allo Spazio Cliente OVHcloud.<br>
-In seguito accedi al menu `Bare Metal Cloud`{.action} e apri la sezione `IP`{.action}. Clicca sui `...`{.action} in corrispondenza dell'indirizzo IP del tuo server di gioco e poi su `Configura il Firewall Game`{.action}.
+In seguito accedi al menu `Bare Metal Cloud`{.action}, clicca su `Network`{.action} e apri la sezione `IP`{.action}. Clicca sui `...`{.action} in corrispondenza dell'indirizzo IP del tuo server di gioco e poi su `Configura il Firewall Game`{.action}.
 
 ![Game_wall](images/GAMEwall2021.png){.thumbnail}
 

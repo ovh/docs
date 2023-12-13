@@ -1,6 +1,6 @@
 ---
 title: "Wartungsarbeiten auf Ihrer Hosted Private Cloud verschieben"
-excerpt: "Erfahren Sie hier, wie Sie geplante Wartungsarbeiten auf Ihrer Hosted Private Cloud Powered by VMware "
+excerpt: "Erfahren Sie hier, wie Sie geplante Wartungsarbeiten auf Ihrer VMware on OVHcloud "
 updated: 2022-11-30
 ---
 
@@ -17,12 +17,12 @@ Wenn Wartungsarbeiten geplant sind, die Ihre Hosted Private Cloud Infrastruktur 
 >
 > Zur Information: Wenn ein Wartungsdatum von Ihnen selbst geändert werden kann, sind die vorgeschlagenen neuen Termine innerhalb kürzerer Zeitperioden.
 
-**Diese Anleitung erklärt, wie Sie das Datum für eine geplante Wartung an Ihrer Hosted Private Cloud powered by VMware über das OVHcloud Kundencenter oder die OVHcloud API verschieben.**
+**Diese Anleitung erklärt, wie Sie das Datum für eine geplante Wartung an Ihrer VMware on OVHcloud über das OVHcloud Kundencenter oder die OVHcloud API verschieben.**
 
 ## Voraussetzungen
 
 - Sie haben eine E-Mail mit der Benachrichtigung über die Wartungsarbeiten erhalten, in der ausdrücklich darauf hingewiesen wird, dass Sie **das Datum der Wartungsarbeiten** ändern können. Andernfalls können die Arbeiten nicht verschoben werden.
-- Sie sind als administrativer oder technischer Kontakt für die [[Hosted Private Cloud powered by VMware](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/) Infrastruktur eingetragen.
+- Sie sind als administrativer oder technischer Kontakt für die [[VMware on OVHcloud](https://www.ovhcloud.com/de/enterprise/products/hosted-private-cloud/) Infrastruktur eingetragen.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) oder auf die  [OVHcloud API ](https://eu.api.ovh.com/).
 
 ## In der praktischen Anwendung
@@ -60,7 +60,7 @@ Führen Sie folgenden Aufruf aus:
 
 > [!api]
 >
-> @api {POST} /dedicatedCloud/{serviceName}/task/{taskId}/changeMaintenanceExecutionDate
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/task/{taskId}/changeMaintenanceExecutionDate
 >
 
 Geben Sie die Werte ein:

@@ -20,7 +20,7 @@ Cette technologie vous permet d’échanger les adresses IP d'une solution à l'
 >
 > La migration ne fonctionne que pour des blocs entiers, il n'est pas possible de migrer des IP individuelles au sein d'un bloc.
 
-**Découvez comment déplacer une Additional IP depuis votre espace client OVHcloud ou via les API OVHcloud.**
+**Découvrez comment déplacer une Additional IP depuis votre espace client OVHcloud ou via les API OVHcloud.**
 
 ## Prérequis
 
@@ -56,7 +56,7 @@ Cette technologie vous permet d’échanger les adresses IP d'une solution à l'
 > Seul un bloc de taille unique (/32) pourra être déplacé depuis un serveur dédié vers un VPS.
 >
 
-Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), cliquez sur le menu `Bare Metal Cloud`{.action} puis ouvrez la section `IP`{.action}.
+Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), cliquez sur le menu `Bare Metal Cloud`{.action} puis ouvrez la section `Network`{.action}. Ensuite, cliquez sur `IP`{.action}.
 
 Cliquez sur l'onglet `Additional IP`{.action}.
 
@@ -74,14 +74,14 @@ Cliquez sur `Suivant`{.action} puis sur `Valider`{.action}.
 
 ### Déplacer une IP via les API
 
-Connectez-vous sur la page page web des [API OVHcloud](https://ca.api.ovh.com/).
+Connectez-vous sur la page web des [API OVHcloud](https://ca.api.ovh.com/).
 
 Dans un premier temps, il est préférable de vérifier si l'adresse IP peut bien être déplacée.
 <br>Pour vérifier si l'IP peut être déplacée vers un de vos serveurs dédiés, utilisez l'appel suivant :
 
 > [!api]
 >
-> @api {GET} /dedicated/server/{serviceName}/ipCanBeMovedTo
+> @api {v1} /dedicated/server GET /dedicated/server/{serviceName}/ipCanBeMovedTo
 >
 
 - `serviceName` : la référence du serveur dédié de destination
@@ -91,7 +91,7 @@ Pour déplacer l'adresse IP, utilisez l'appel suivant :
 
 > [!api]
 >
-> @api {POST} /dedicated/server/{serviceName}/ipMove
+> @api {v1} /dedicated/server POST /dedicated/server/{serviceName}/ipMove
 >
 
 - `serviceName` : la référence du serveur dédié de destination

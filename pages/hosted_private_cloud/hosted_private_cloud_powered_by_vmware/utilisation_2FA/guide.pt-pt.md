@@ -80,7 +80,7 @@ A única diferença será a autonomia ou não do utilizador para a validação d
 
 É possível utilizar várias aplicações de terceiros que requerem a ligação ao vCenter.
 
-Essas aplicações devem ser previamente autorizadas através da política de acesso ao vCenter, que é configurável na [Área de Cliente](/pages/cloud/private-cloud/manager_ovh_private_cloud#securite).
+Essas aplicações devem ser previamente autorizadas através da política de acesso ao vCenter, que é configurável na [Área de Cliente](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/manager_ovh_private_cloud#securite).
 
 As aplicações poderão aceder às nossas infraestruturas, mas não irão necessariamente gerir a dupla autenticação.
 
@@ -94,35 +94,35 @@ Para adicionar os endereços IP públicos das suas aplicações a esta *whitelis
 
 > [!api]
 >
-> @api {GET} /dedicatedCloud/{serviceName}/twoFAWhitelist
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/twoFAWhitelist
 >
 
 - Adicionar um endereço IP ao *bypass* da dupla autenticação.
 
 > [!api]
 >
-> @api {POST} /dedicatedCloud/{serviceName}/twoFAWhitelist
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/twoFAWhitelist
 >
 
 - Mostrar as informações de um endereço IP autorizado (requer um ID recuperado com a primeira chamada).
 
 > [!api]
 >
-> @api {GET} /dedicatedCloud/{serviceName}/twoFAWhitelist/{id}
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/twoFAWhitelist/{id}
 >
 
 - Eliminar um endereço IP da lista de autorização.
 
 > [!api]
 >
-> @api {DELETE} /dedicatedCloud/{serviceName}/twoFAWhitelist/{id}
+> @api {v1} /dedicatedCloud DELETE /dedicatedCloud/{serviceName}/twoFAWhitelist/{id}
 >
 
 - Modificar as informações de um endereço IP autorizado.
 
 > [!api]
 >
-> @api {POST} /dedicatedCloud/{serviceName}/twoFAWhitelist/{id}/changeProperties
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/twoFAWhitelist/{id}/changeProperties
 >
 
 ## Quer saber mais?

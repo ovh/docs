@@ -8,7 +8,7 @@ updated: 2022-02-16
 
 Les *logs radius* disponibles via les API OVHcloud permettent de vérifier la stabilité d'un accès à Internet.
 
-**Découvez comment vérifier la stabilité d'un lien xDSL ou FTTH en utilisant les logs fournis par les API OVHcloud**
+**Découvrez comment vérifier la stabilité d'un lien xDSL ou FTTH en utilisant les logs fournis par les API OVHcloud**
 
 ## Prérequis
 
@@ -51,7 +51,7 @@ Utilisez l'appel API suivant pour récupérer les logs :
 
 > [!api]
 >
-> @api {GET} /xdsl/{serviceName}/radiusConnectionLogs
+> @api {v1} /xdsl GET /xdsl/{serviceName}/radiusConnectionLogs
 >
 
 Saisissez, dans le champ `serviceName`, la référence de votre accès obtenue à l'étape précédente. Cliquez alors sur `Execute`{.action} 

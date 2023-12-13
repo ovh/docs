@@ -5,7 +5,7 @@ updated: 2023-02-17
 ---
 
 > [!primary]
-> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón "Contribuir" de esta página.
 >
   
 ## Objetivo
@@ -30,7 +30,7 @@ La configuración, la gestión y la responsabilidad de los servicios que OVHclou
 
 ## Procedimiento
 
-Si todavía no lo ha hecho, [añada un certificado SSL](/pages/web/hosting/ssl-activate-https-website#1-activar-el-certificado-ssl-en-el-alojamiento-web) al nombre de dominio asociado a su sitio web.
+Si todavía no lo ha hecho, [añada un certificado SSL](/pages/web_cloud/web_hosting/ssl-activate-https-website#1-activar-el-certificado-ssl-en-el-alojamiento-web) al nombre de dominio asociado a su sitio web.
 
 Al instalar el CMS en 1-clic, le enviamos por correo electrónico los elementos necesarios para continuar con este tutorial:
 

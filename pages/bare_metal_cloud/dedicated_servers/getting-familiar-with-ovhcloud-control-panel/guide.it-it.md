@@ -53,7 +53,7 @@ Nel menu `Server Dedicati`{.action}, clicca sul server che preferisci per accede
 **Stato dei servizi**
 
 - Stato: clicca sui `...`{.action} in corrispondenza di questa opzione per riavviare o eliminare il tuo server.
-- Monitoraggio: clicca su `Configura`{.action} per modificare le [impostazioni di monitoraggio del tuo server](/pages/cloud/dedicated/getting-started-with-dedicated-server#monitoring-server).
+- Monitoraggio: clicca su `Configura`{.action} per modificare le [impostazioni di monitoraggio del tuo server](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server#monitoring-server).
 
 **Rete**
 
@@ -74,9 +74,9 @@ Per maggiori informazioni sulla gestione del tuo server dedicato, consulta [ques
 
 ### Sezione IP
 
-Per accedere alla sezione **IP** dello Spazio Cliente OVHcloud, clicca sul menu `Bare Metal Cloud`{.action} e poi su `IP`{.action}.
+Per accedere alla sezione **IP** dello Spazio Cliente OVHcloud, clicca sul menu `Bare Metal Cloud`{.action} e apri `Network`{.action}. Clicca su `IP`{.action}.
 
-![sezione ip](images/manageIPOVHcloud.png){.thumbnail}
+![sezione ip](images/manageIP2023.png){.thumbnail}
 
 ### Scheda Licenze (non disponibile su Kimsufi)
 

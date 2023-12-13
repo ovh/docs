@@ -1,8 +1,7 @@
 ---
 title: 'Charger les variables d’environnement OpenStack'
 excerpt: 'Apprenez à charger vos variables d’environnement pour utiliser l’API d’OpenStack'
-legacy_guide_number: 1852
-updated: 2021-08-18
+updated: 2023-11-29
 ---
 
 ## Objectif
@@ -47,12 +46,12 @@ Si vous avez oublié celui-ci, il faudra le recréer.
 Si les CLI ont déjà été installés, vérifiez simplement le bon fonctionnement :
 
 ```bash
-admin@vpsxxxxxx:~$ nova list
-+--------------------------------------+------+--------+------------+-------------+------------------------+
-| ID                                   | Name | Status | Task State | Power State | Networks               |
-+--------------------------------------+------+--------+------------+-------------+------------------------+
-| 2278e269-a529-40cc-9a08-794fda9302d3 | deb8 | ACTIVE | -          | Running     | Ext-Net=xx.xxx.xx.xxx |
-+--------------------------------------+------+--------+------------+-------------+------------------------+
+(env)$ openstack server list
++--------------------------------------+------------+--------+-----------------------------------------------+-----------+--------+
+| ID                                   | Name       | Status | Networks                                      | Image     | Flavor |
++--------------------------------------+------------+--------+-----------------------------------------------+-----------+--------+
+| 8d7c67c0-38e1-4091-88d5-c14844c1f455 | b2-7-gra11 | ACTIVE | Ext-Net=2001:xxxx:xxx:xxx::xxxx, xx.xxx.xx.xx | Debian 12 | b2-7   |
++--------------------------------------+------------+--------+-----------------------------------------------+-----------+--------+
 ```
 
 Il est possible de stocker en dur le mot de passe de l'utilisateur Horizon. Pour cela, remplacez :
@@ -91,6 +90,6 @@ set OS_PASSWORD="Mot de passe de l'utilisateur Horizon"
 
 ## Aller plus loin
 
-Pour apprendre à utiliser OpenStack : [Documentation OpenStack](https://docs.openstack.org/train/){.external}
+Pour apprendre à utiliser OpenStack : [Documentation OpenStack](https://docs.openstack.org/){.external}
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

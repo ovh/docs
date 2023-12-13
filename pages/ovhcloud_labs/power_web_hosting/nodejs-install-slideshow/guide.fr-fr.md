@@ -4,26 +4,6 @@ excerpt: Découvrez comment installer Slideshow sur votre hébergement web POWER
 updated: 2021-02-04
 ---
 
-<style>
- pre {
-     font-size: 14px;
- }
- pre.console {
-   background-color: #300A24; 
-   color: #ccc;
-   font-family: monospace;
-   padding: 5px;
-   margin-bottom: 5px;
- }
- pre.console code {
-   border: solid 0px transparent;
-   font-family: monospace !important;
- }
- .small {
-     font-size: 0.75em;
- }
-</style>
-
 ## Objectif
 
 Vous avez souscrit à un hébergement web POWER Node.js et vous souhaitez y déployer une [solution de présentation de slides](https://nafeu.medium.com/real-time-presentation-slides-with-socket-io-express-node-js-and-javascript-cf08a95ff098){.external}.
@@ -47,9 +27,9 @@ Supposons que vous avez la configuration normale pour un hébergement web POWER 
 
 > [!primary]
 >
-> Vous pouvez appeler l'API OVHcloud pour [visualiser la configuration active](/pages/labs/web-power/getting-started#api-get-active-configuration)
+> Vous pouvez appeler l'API OVHcloud pour [visualiser la configuration active](/pages/ovhcloud_labs/power_web_hosting/getting-started#api-get-active-configuration)
 
-[Accédez via SSH](/pages/labs/web-power/getting-started#ssh) à votre hébergement web POWER. Commencez par recupérer les sources du projet :
+[Accédez via SSH](/pages/ovhcloud_labs/power_web_hosting/getting-started#ssh) à votre hébergement web POWER. Commencez par recupérer les sources du projet :
 
 ```sh
 rm -rf www
@@ -64,13 +44,14 @@ npm install --save
 ln -fs server.js index.js
 ```
 
-[Redémarrez votre instance](/pages/labs/web-power/getting-started#restart), votre application de présentation de slides sera alors en ligne.
+[Redémarrez votre instance](/pages/ovhcloud_labs/power_web_hosting/getting-started#restart), votre application de présentation de slides sera alors en ligne.
 
 ![Slideshow](images/nodejs-install-slideshow-01.png){.thumbnail}
 
 Sortie du terminal:
 
-<pre class="console"><code> ~ $ rm -rf www
+```console
+ ~ $ rm -rf www
 
 ~ $ git clone https://github.com/nafeu/realtime-slides-tut.git www
 Clonage dans 'www'...
@@ -91,8 +72,7 @@ found 18 vulnerabilities (9 low, 3 moderate, 5 high, 1 critical)
 ~/www $ mkdir -p tmp
 
 ~/www $ touch tmp/restart.txt
-
-</code></pre>
+```
 
 ## Aller plus loin
 

@@ -156,31 +156,31 @@ For more information on configuring a given service, see the page for that servi
 
 > [!tabs]      
 > Elasticsearch     
->> [Elasticsearch - example](https://github.com/ovh/docs/blob/develop/pages/web/web-paas/static/files/fetch/examples/python/elasticsearch)  
+>> [Elasticsearch - example](https://github.com/ovh/docs/blob/develop/pages/web_cloud/web_paas_powered_by_platform_sh/static/files/fetch/examples/python/elasticsearch)  
 >>     
 > Kafka     
->> [Kafka - example](https://github.com/ovh/docs/blob/develop/pages/web/web-paas/static/files/fetch/examples/python/kafka)  
+>> [Kafka - example](https://github.com/ovh/docs/blob/develop/pages/web_cloud/web_paas_powered_by_platform_sh/static/files/fetch/examples/python/kafka)  
 >>     
 > Memcached     
->> [Memcached - example](https://github.com/ovh/docs/blob/develop/pages/web/web-paas/static/files/fetch/examples/python/memcached)  
+>> [Memcached - example](https://github.com/ovh/docs/blob/develop/pages/web_cloud/web_paas_powered_by_platform_sh/static/files/fetch/examples/python/memcached)  
 >>     
 > MongoDB     
->> [MongoDB - example](https://github.com/ovh/docs/blob/develop/pages/web/web-paas/static/files/fetch/examples/python/mongodb)  
+>> [MongoDB - example](https://github.com/ovh/docs/blob/develop/pages/web_cloud/web_paas_powered_by_platform_sh/static/files/fetch/examples/python/mongodb)  
 >>     
 > MySQL     
->> [MySQL - example](https://github.com/ovh/docs/blob/develop/pages/web/web-paas/static/files/fetch/examples/python/mysql)  
+>> [MySQL - example](https://github.com/ovh/docs/blob/develop/pages/web_cloud/web_paas_powered_by_platform_sh/static/files/fetch/examples/python/mysql)  
 >>     
 > PostgreSQL     
->> [PostgreSQL - example](https://github.com/ovh/docs/blob/develop/pages/web/web-paas/static/files/fetch/examples/python/postgresql)  
+>> [PostgreSQL - example](https://github.com/ovh/docs/blob/develop/pages/web_cloud/web_paas_powered_by_platform_sh/static/files/fetch/examples/python/postgresql)  
 >>     
 > RabbitMQ     
->> [RabbitMQ - example](https://github.com/ovh/docs/blob/develop/pages/web/web-paas/static/files/fetch/examples/python/rabbitmq)  
+>> [RabbitMQ - example](https://github.com/ovh/docs/blob/develop/pages/web_cloud/web_paas_powered_by_platform_sh/static/files/fetch/examples/python/rabbitmq)  
 >>     
 > Redis     
->> [Redis - example](https://github.com/ovh/docs/blob/develop/pages/web/web-paas/static/files/fetch/examples/python/redis)  
+>> [Redis - example](https://github.com/ovh/docs/blob/develop/pages/web_cloud/web_paas_powered_by_platform_sh/static/files/fetch/examples/python/redis)  
 >>     
 > Solr     
->> [Solr - example](https://github.com/ovh/docs/blob/develop/pages/web/web-paas/static/files/fetch/examples/python/solr)  
+>> [Solr - example](https://github.com/ovh/docs/blob/develop/pages/web_cloud/web_paas_powered_by_platform_sh/static/files/fetch/examples/python/solr)  
 >>     
 
 ## Configuration reader

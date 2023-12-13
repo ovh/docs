@@ -1,8 +1,7 @@
 ---
 title: 'Iniziare a utilizzare la soluzione MX Plan'
 excerpt: 'Come eseguire le prime operazioni sul servizio MX Plan'
-legacy_guide_number: g1474
-updated: 2021-07-19
+updated: 2023-11-15
 ---
 
 > [!primary]
@@ -121,9 +120,9 @@ Per farlo, è necessario creare un reindirizzamento.
 
 Puoi procedere in due modi:
 
-- creare il reindirizzamento dalla Webmail, tramite le regole della casella di ricezione. Per effettuare questa operazione, consulta la guida "[Regole di Posta in arrivo dall'interfaccia OWA](/pages/web/emails/creating-inbox-rules-in-owa-mx-plan#esempio-1-inoltrare-unemail-a-un-altro-indirizzo)".
+- creare il reindirizzamento dalla Webmail, tramite le regole della casella di ricezione. Per effettuare questa operazione, consulta la guida "[Regole di Posta in arrivo dall'interfaccia OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/creating-inbox-rules-in-owa-mx-plan#esempio-1-inoltrare-unemail-a-un-altro-indirizzo)".
 
-- creare il reindirizzamento dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Questo metodo permette, ad esempio, di creare un alias, cioè di reindirizzare un indirizzo email che non esiste verso un indirizzo email esistente. Per effettuare questa operazione, consulta la guida [Utilizzare i reindirizzamenti email](/pages/web/emails/feature_redirections#nuova-versione-della-soluzione-mx-plan).
+- creare il reindirizzamento dal tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Questo metodo permette, ad esempio, di creare un alias, cioè di reindirizzare un indirizzo email che non esiste verso un indirizzo email esistente. Per effettuare questa operazione, consulta la guida [Utilizzare i reindirizzamenti email](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections#nuova-versione-della-soluzione-mx-plan).
 
 ##### **Segreteria**
 
@@ -224,7 +223,7 @@ Se non conosci i parametri necessari alla configurazione dell’account email, e
 
 Vuoi reindirizzare le tue email verso un altro destinatario, creare un alias o inviare sistematicamente in copia un altro indirizzo email.
 
-Per effettuare questa operazione è necessario creare un reindirizzamento. Segui la guida [Utilizzare i reindirizzamenti email](/pages/web/emails/feature_redirections#vecchia-versione-della-soluzione-mx-plan).
+Per effettuare questa operazione è necessario creare un reindirizzamento. Segui la guida [Utilizzare i reindirizzamenti email](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections#vecchia-versione-della-soluzione-mx-plan).
 
 ##### **Segreteria**
 
@@ -245,8 +244,6 @@ Invia regolarmente una newsletter ai tuoi contatti
 Per creare una mailing list. Per maggiori informazioni, consulta la guida [Gestire e utilizzare le mailing list](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_mailing_list).
 
 ## Per saperne di più
-
-La migrazione delle offerte storiche MX Plan verso le nuove offerte MX Plan è in corso. Per richiedere la migrazione della tua offerta, segui le indicazioni di [questa pagina](https://www.ovh.it/mxplan-migration/#accordion_6001-4).
 
 Se le tue esigenze cambiano e vuoi usufruire di funzionalità aggiuntive, puoi anche [migrare un indirizzo email MX Plan verso un account Email Pro o Exchange](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel).
 

@@ -54,7 +54,7 @@ The new page displays a modified version of the [instance creation options](/pag
 
 - **Renaming the instance**: You can give a name to the instance for easier identification.
 - **Changing the image**: You can choose a different operating system for the instance. (Note that reinstalling an instance will delete all data stored on it.)
-- **Changing the template**: You can switch to a different instance model. Please refer to [this guide](/pages/platform/public-cloud/public-cloud-first-steps#create-instance) for more information about the options.
+- **Changing the template**: You can switch to a different instance model. Please refer to [this guide](/pages/public_cloud/compute/public-cloud-first-steps#create-instance) for more information about the options.
 - **Changing the billing type**: You can change the billing period of the instance from hourly to monthly. Please refer to [this guide](/pages/account_and_service_management/managing_billing_payments_and_services/changing_hourly_monthly_billing) for detailed information).
 
 #### Creating a backup of the instance
@@ -67,13 +67,13 @@ Refer to our guide [Backing up an instance](/pages/public_cloud/compute/save_an_
 
 Click on `Create an automatic backup`{.action}.
 
-Refer to our guide [Backing up an instance](/pages/platform/public-cloud/save_an_instance#creating-an-automated-backup-of-an-instance) for detailed information.
+Refer to our guide [Backing up an instance](/pages/public_cloud/compute/save_an_instance#creating-an-automated-backup-of-an-instance) for detailed information.
 
 #### Suspending the instance
 
 Click on `Stop`{.action}.
 
-This will put the instance in a suspended state. Refer to our guide [Shelve or pause an instance](/pages/platform/public-cloud/suspend_or_pause_an_instance#suspend-stop-an-instance) for detailed information.
+This will put the instance in a suspended state. Refer to our guide [Shelve or pause an instance](/pages/public_cloud/compute/suspend_or_pause_an_instance#suspend-stop-an-instance) for detailed information.
 
 Click on `Boot`{.action} to reactivate the instance.
 
@@ -94,7 +94,7 @@ Confirm the reboot request in the popup window.
 
 Click on `Suspend`{.action}.
 
-This will put the instance in the "shelved" state, here displayed as `Suspended`. Consult our guide [Shelve or pause an instance](/pages/platform/public-cloud/suspend_or_pause_an_instance#shelve-suspend-an-instance) to learn more about the different states.
+This will put the instance in the "shelved" state, here displayed as `Suspended`. Consult our guide [Shelve or pause an instance](/pages/public_cloud/compute/suspend_or_pause_an_instance#shelve-suspend-an-instance) to learn more about the different states.
 
 Click on `Reactivate`{.action} to restore the `Activated` state.
 
@@ -114,7 +114,7 @@ This action will permanently delete the instance, as well as all of the data sto
 
 Confirm the request in the popup window.
 
-### Accessing the VNC console
+### Accessing the VNC console <a name="accessvnc"></a>
 
 Click on `Instances`{.action} the left-hand menu. On the instance management page, click on the name of the instance in the table.
 
@@ -124,7 +124,7 @@ Switch from the dashboard to the tab `VNC console`{.action}.
 
 The VNC console provides direct access to your instance. In order for this access to work you need to configure a username and password on the instance first. 
 
-Consult our [Getting started guide](/pages/platform/public-cloud/public-cloud-first-steps#connect-to-instance) to learn more about the necessary steps.
+Consult our [Getting started guide](/pages/public_cloud/compute/public-cloud-first-steps#connect-to-instance) to learn more about the necessary steps.
 
 ## Go further
 

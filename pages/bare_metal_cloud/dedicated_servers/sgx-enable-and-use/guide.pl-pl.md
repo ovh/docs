@@ -82,13 +82,13 @@ Uzyskaj nazwę swojego serwera z listy zwróconej po wywołaniu następującej p
 
 > [!api]
 >
-> @api {GET} /dedicated/server
+> @api {v1} /dedicated/server GET /dedicated/server
 
 Sprawdź, czy usługa ma włączoną opcję SGX, wywołując następującą procedurę: 
 
 > [!api]
 >
-> @api {GET} /dedicated/server/{serviceName}/biosSettings/sgx
+> @api {v1} /dedicated/server GET /dedicated/server/{serviceName}/biosSettings/sgx
 
 ![SGX disabled](images/get-disabled.png){.thumbnail}
 
@@ -100,7 +100,7 @@ Następnie włącz funkcję SGX:
 
 > [!api]
 >
-> @api {POST} /dedicated/server/{serviceName}/biosSettings/sgx/configure
+> @api {v1} /dedicated/server POST /dedicated/server/{serviceName}/biosSettings/sgx/configure
 
 ![Configure SGX](images/post-configure.png){.thumbnail}
 
@@ -108,7 +108,7 @@ Sprawdź postęp zadania konfiguracji, wywołując następujący punkt końcowy 
 
 > [!api]
 >
-> @api {GET} /dedicated/server/{serviceName}/task/{taskId}
+> @api {v1} /dedicated/server GET /dedicated/server/{serviceName}/task/{taskId}
 
 ![Get SGX configuration task](images/get-task.png){.thumbnail}
 
@@ -116,7 +116,7 @@ Teraz można sprawdzić, że status to “włączono” (enabled):
 
 > [!api]
 >
-> @api {GET} /dedicated/server/{serviceName}/biosSettings/sgx
+> @api {v1} /dedicated/server GET /dedicated/server/{serviceName}/biosSettings/sgx
 
 ![SGX enabled](images/get-enabled.png){.thumbnail}
 

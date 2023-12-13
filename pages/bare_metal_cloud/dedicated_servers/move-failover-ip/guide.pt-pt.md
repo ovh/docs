@@ -57,7 +57,7 @@ Esta tecnologia permite-lhe trocar os endereços IP de uma solução para outra 
 > Apenas um único bloco de tamanho (/32) poderá ser movido de um servidor dedicado para um VPS.
 >
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), clique no menu `Bare Metal Cloud`{.action} e abra a secção `IP`{.action}.
+Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), clique no menu `Bare Metal Cloud`{.action} e abra a secção `Network`{.action}. De seguida, clique em `IP`{.action}.
 
 Clique no separador `Additional IP`{.action}.
 
@@ -82,7 +82,7 @@ Numa primeira fase, é preferível verificar se o endereço IP pode ser migrado.
 
 > [!api]
 >
-> @api {GET} /dedicated/server/{serviceName}/ipCanBeMovedTo
+> @api {v1} /dedicated/server GET /dedicated/server/{serviceName}/ipCanBeMovedTo
 >
 
 - `serviceName`: a referência do servidor dedicado de destino
@@ -92,7 +92,7 @@ Para migrar o endereço IP, utilize a seguinte chamada:
 
 > [!api]
 >
-> @api {POST} /dedicated/server/{serviceName}/ipMove
+> @api {v1} /dedicated/server POST /dedicated/server/{serviceName}/ipMove
 >
 
 - `serviceName`: a referência do servidor dedicado de destino

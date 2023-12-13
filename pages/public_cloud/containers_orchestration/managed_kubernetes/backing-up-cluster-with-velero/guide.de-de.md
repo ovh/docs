@@ -4,27 +4,6 @@ excerpt: Find out how to back-up an OVHcloud Managed Kubernetes cluster using Ve
 updated: 2023-01-11
 ---
 
-<style>
- pre {
-     font-size: 14px;
- }
- pre.console {
-   background-color: #300A24;
-   color: #ccc;
-   font-family: monospace;
-   padding: 5px;
-   margin-bottom: 5px;
- }
- pre.console code {
-   b   font-family: monospace !important;
-   font-size: 0.75em;
-   color: #ccc;
- }
- .small {
-     font-size: 0.75em;
- }
-</style>
-
 ## Objective
 
 In this tutorial, we are using [Velero](https://velero.io/){.external} to backup and restore an OVHcloud Managed Kubernetes cluster.
@@ -65,9 +44,10 @@ source <user_name>-openrc.sh
 
 The shell will ask you for your OpenStack password:
 
-<pre class="console"><code>$ source <user_name>-openrc.sh
+```console
+$ source <user_name>-openrc.sh
 Please enter your OpenStack Password for project <project_name> as user <user_name>:
-</code></pre>
+```
 
 #### Creating EC2 credentials
 
@@ -81,7 +61,8 @@ openstack ec2 credentials create
 
 Please write down the **access** and **secret** parameters:
 
-<pre class="console"><code>$ openstack ec2 credentials create
+```console
+$ openstack ec2 credentials create
 +------------+----------------------------------------------------------------------------------------------------------------------------+
 | Field      | Value
 +------------+----------------------------------------------------------------------------------------------------------------------------+
@@ -91,7 +72,8 @@ Please write down the **access** and **secret** parameters:
 | secret     | 925d5fcfcd9f436d8ffcb20548cc53a2
 | trust_id   | None
 | user_id    | d74d05ff121b44bea9216495e7f0df61
-+------------+----------------------------------------------------------------------------------------------------------------------------+</code></pre>
++------------+----------------------------------------------------------------------------------------------------------------------------+
+```
 
 #### Configuring awscli client
 
@@ -172,7 +154,8 @@ velero install \
   --snapshot-location-config region=gra,enableSharedConfig=true
 ```
 
-<pre class="console"><code>$ velero install \
+```console
+$ velero install \
   --features=EnableCSI \
   --provider aws \
   --plugins velero/velero-plugin-for-aws:v1.6.0,velero/velero-plugin-for-csi:v0.4.0 \
@@ -197,7 +180,7 @@ Deployment/velero: attempting to create resource
 Deployment/velero: attempting to create resource client
 Deployment/velero: created
 Velero is installed! ⛵ Use 'kubectl logs deployment/velero -n velero' to view the status.
-</code></pre>
+```
 
 In order to allow Velero to do Volume Snapshots, we need to deploy a new `VolumeSnapshotClass`.
 Create a `velero-snapclass.yaml` file with this content:
@@ -223,7 +206,8 @@ kubectl apply -f velero-snapclass.yaml
 
 In our case, the result looks like this:
 
-<pre class="console"><code>$ kubectl apply -f velero-snapclass.yaml
+```console
+$ kubectl apply -f velero-snapclass.yaml
 
 volumesnapshotclass.snapshot.storage.k8s.io/csi-cinder-snapclass-in-use-v1-velero created
 
@@ -232,7 +216,7 @@ NAME                                    DRIVER                     DELETIONPOLIC
 csi-cinder-snapclass-in-use-v1          cinder.csi.openstack.org   Delete           4h46m   <none>
 csi-cinder-snapclass-in-use-v1-velero   cinder.csi.openstack.org   Delete           5s      velero.io/csi-volumesnapshot-class=true
 csi-cinder-snapclass-v1                 cinder.csi.openstack.org   Delete           4h46m   <none>
-</code></pre>
+```
 
 ### Verifying Velero is working without Persistent Volumes
 
@@ -336,7 +320,8 @@ kubectl get all -n nginx-example
 
 In our case, the result looks like this:
 
-<pre class="console"><code>$ kubectl apply -f nginx-example-without-pv.yml
+```console
+$ kubectl apply -f nginx-example-without-pv.yml
 namespace/nginx-example created
 deployment.apps/nginx-deployment created
 service/my-nginx created
@@ -393,7 +378,7 @@ deployment.apps/nginx-deployment   2/2     2            2           2m39s
 NAME                                          DESIRED   CURRENT   READY   AGE
 replicaset.apps/nginx-deployment-5bfc8c9f6f   0         0         0       2m39s
 replicaset.apps/nginx-deployment-84df99548d   2         2         2       2m39s
-</code></pre>
+```
 
 Before continuing, clean the `nginx-example` namespace:
 
@@ -512,7 +497,8 @@ curl -I $LB_IP
 
 You should have a result like this:
 
-<pre class="console"><code>$ kubectl apply -f nginx-example-with-pv.yml
+```console
+$ kubectl apply -f nginx-example-with-pv.yml
 
 namespace/nginx-example unchanged
 persistentvolumeclaim/nginx-logs created
@@ -553,7 +539,7 @@ Last-Modified: Tue, 23 Dec 2014 16:25:09 GMT
 Connection: keep-alive
 ETag: "54999765-264"
 Accept-Ranges: bytes
-</code></pre>
+```
 
 Now we need to connect to the Pod to read the log file and verify that our logs are written.
 
@@ -571,7 +557,8 @@ kubectl -n nginx-example exec $POD_NAME -c nginx -- cat /var/log/nginx/access.lo
 
 You should have a result like this:
 
-<pre class="console"><code>$ export POD_NAME=$(kubectl -n nginx-example get pods -o name)
+```console
+$ export POD_NAME=$(kubectl -n nginx-example get pods -o name)
 
 $ echo $POD_NAME
 pod/nginx-deployment-5bfc8c9f6f-xkw5x
@@ -579,7 +566,7 @@ pod/nginx-deployment-5bfc8c9f6f-xkw5x
 $  kubectl -n nginx-example exec $POD_NAME -c nginx -- cat /var/log/nginx/access.log
 xxx.xxx.xxx.xxx - - [11/Jan/2023:08:37:30 +0000] "HEAD / HTTP/1.1" 200 0 "-" "curl/7.64.1" "-"
 xxx.xxx.xxx.xxx - - [11/Jan/2023:08:37:33 +0000] "HEAD / HTTP/1.1" 200 0 "-" "curl/7.64.1" "-"
-</code></pre>
+```
 
 Now we can ask velero to do the backup of the namespace:
 
@@ -634,7 +621,8 @@ kubectl -n nginx-example exec $POD_NAME -c nginx -- cat /var/log/nginx/access.lo
 
 You should have a result like this:
 
-<pre class="console"><code>$ velero backup create nginx-backup-with-pv --include-namespaces nginx-example --wait
+```console
+$ velero backup create nginx-backup-with-pv --include-namespaces nginx-example --wait
 
 Backup request "nginx-backup-with-pv" submitted successfully.
 Waiting for backup to complete. You may safely press ctrl-c to stop waiting - your backup will continue in the background.
@@ -771,7 +759,7 @@ $ kubectl -n nginx-example exec $POD_NAME -c nginx -- cat /var/log/nginx/access.
 
 141.94.167.92 - - [11/Jan/2023:08:37:30 +0000] "HEAD / HTTP/1.1" 200 0 "-" "curl/7.64.1" "-"
 141.94.167.92 - - [11/Jan/2023:08:37:33 +0000] "HEAD / HTTP/1.1" 200 0 "-" "curl/7.64.1" "-"
-</code></pre>
+```
 
 Your namespace with resources and PVC have been correctly restored.
 
@@ -821,14 +809,15 @@ velero backup get
 
 You should have a result like this:
 
-<pre class="console"><code>$ velero schedule get
+```console
+$ velero schedule get
 NAME             STATUS    CREATED                          SCHEDULE     BACKUP TTL   LAST BACKUP   SELECTOR
 daily-snapshot   Enabled   2023-01-11 09:43:00 +0100 CET   15 0 * * *   168h0m0s     9h ago        <none>
 
 $ velero backup get
 NAME                            STATUS             ERRORS   WARNINGS   CREATED                          EXPIRES   STORAGE LOCATION   SELECTOR
 daily-snapshot-20230111084430   Completed          0        1          2023-01-11 09:44:30 +0100 CET   6d        default            <none>
-</code></pre>
+```
 
 ### Cleanup
 

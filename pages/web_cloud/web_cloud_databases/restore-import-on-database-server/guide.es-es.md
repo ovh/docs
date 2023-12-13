@@ -1,7 +1,7 @@
 ---
 title: 'Restaurar e importar una base de datos en su servidor de bases de datos'
 excerpt: 'Cómo restaurar e importar la base de datos'
-updated: 2023-02-15
+updated: 2023-10-26
 ---
 
 > [!primary]
@@ -86,7 +86,7 @@ En algunos casos, la RAM disponible en su servidor de bases de datos no permite 
 
 #### Importar una base MySQL o MariaDB desde phpMyAdmin
 
-Para importar su base de datos directamente desde phpMyAdmin, es necesario conectarse a ella previamente. Para ello, puede utilizar el apartado ["Conectarse a una base de datos MySQL o MariaDB"](/pages/web/clouddb/connecting-to-database-on-database-server#importar-una-base-de-datos-mysql-o-mariadb).
+Para importar su base de datos directamente desde phpMyAdmin, es necesario conectarse a ella previamente. Para ello, puede utilizar el apartado ["Conectarse a una base de datos MySQL o MariaDB"](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server#importar-una-base-de-datos-mysql-o-mariadb).
 
 Una vez conectado a phpMyAdmin, seleccione la base de datos haciendo clic en su nombre.
 
@@ -101,7 +101,7 @@ Seleccione el archivo de backup haciendo clic en `Navegar`{.action} (atención: 
 
 Deje las opciones predeterminadas y haga clic en `Ejecutar`{.action} para iniciar la importación.
 
-![Web Cloud Databases](images/web-cloud-databases-import04.png){.thumbnail}
+![Web Cloud Databases](images/pma-upload-backup-web-cloud-db.png){.thumbnail}
 
 #### Importar una base de datos MySQL o MariaDB en línea de comandos
 
@@ -157,7 +157,7 @@ psql —host=servidor —port=puerto —user=usuario —password=contraseña nom
 
 ## Más información
 
-Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/).
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es-es/directory).
 
 Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es-es/support-levels/).
 

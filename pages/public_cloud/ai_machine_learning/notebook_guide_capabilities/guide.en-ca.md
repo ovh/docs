@@ -1,7 +1,7 @@
 ---
 title: AI Notebooks - Features, Capabilities and Limitations
 excerpt: Find out about current features, capabilities and limitations of AI Notebooks
-updated: 2023-04-04
+updated: 2023-11-21
 ---
 
 > [!primary]
@@ -43,9 +43,13 @@ AI Notebooks are Managed Jupyter or VS Code notebooks, linked to compute resourc
 | Easy billing                               | You only pay for what you consume, billed per minute.                                                                                                                                                                                        |
 | Available in many countries                | AI Notebooks requires an OVHcloud account. We currently accept dozens of countries. Once created, you will have access to the whole set of features.                                                                                         |
 
+#### Command line interface (CLI)
+
+AI Notebooks is compliant with the OVHcloud AI CLI. Discover how to [install the OVHcloud AI CLI](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli).
+
 #### **Monitoring tools**
 
-To observe the metrics of your notebook, you can do so with the `ovhai` CLI using the command above:
+To see information of your notebook, you can do so with the `ovhai` CLI using the command above:
 
 ```console
 ovhai notebook get <notebook-id>
@@ -54,10 +58,6 @@ ovhai notebook get <notebook-id>
 You can then access your metrics through the `Monitoring Url`.
 
 You are also able to check it from the OVHcloud Control Panel in your notebook's general information by clicking the `Go to Graph Dashboard`{.action} button.
-
-#### Command line interface (CLI)
-
-AI Notebooks is compliant with the OVHcloud AI CLI. Discover how to [install the OVHcloud AI CLI](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli).
 
 ### Planned features
 We continuously improve our offers. You can follow, vote and submit ideas to add to our roadmap at <https://github.com/ovh/public-cloud-roadmap/projects/4>.

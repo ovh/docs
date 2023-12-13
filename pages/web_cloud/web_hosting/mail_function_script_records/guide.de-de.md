@@ -1,7 +1,7 @@
 ---
-title: 'Automatische E-Mails eines Webhostings verwalten'
-excerpt: 'Erfahren Sie hier, wie Sie über ein Webhosting versendete automatische E-Mails verwalten'
-updated: 2022-10-12
+title: "Automatische E-Mails eines Webhostings verwalten"
+excerpt: "Erfahren Sie hier, wie Sie über ein Webhosting versendete automatische E-Mails verwalten"
+updated: 2023-12-04
 ---
 
 > [!primary]
@@ -212,8 +212,8 @@ $mail->Password = "IhrPasswort";
 
 > [!primary]
 >
-> Nur unter Verwendung eines OVHcloud E-Mail-Accounts können Sie für `SMTPSecure` auch *"starttls"* oder *"tls"* mit dem `Port` **587** nutzen. `SMTPSecure` *"ssl"* mit dem `Port` **465** sollte aber bevorzugt werden.
-> 
+> Nur bei der Verwendung eines OVHcloud E-Mail-Accounts können Sie für `SMTPSecure` auch *"starttls"* oder *"tls"* mit dem `Port` **587** nutzen. Jedoch ist die Einstellung `SMTPSecure` mit *"ssl"* und dem `Port` **465** die bevorzugte Konfiguration für unsere Infrastruktur.
+>
 
 ## Weiterführende Informationen <a name="go-further"></a> 
 

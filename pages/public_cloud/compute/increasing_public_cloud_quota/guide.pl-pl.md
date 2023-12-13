@@ -1,7 +1,6 @@
 ---
 title: 'Zwiększenie limitów Public Cloud'
 excerpt: 'Dowiedz się, jak zwiększyć limity Public Cloud'
-legacy_guide_number: g1904
 updated: 2023-05-03
 ---
 
@@ -38,13 +37,13 @@ Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotom
 
 Na lewym pasku bocznym kliknij pozycję `Quota and Regions`{.action}.
 
-![access quota](images/raisepciquota2021.png){.thumbnail}
+![access quota](images/raisepciquota1-2023.png){.thumbnail}
 
 Na stronie tej znajdziesz podsumowanie aktualnych kwot Twojego projektu w rozbiciu na regiony. Obok zasobu pojawia się ostrzeżenie, gdy osiągnie się 80% jego limitu.
 
 Aby zwiększyć limit, kliknij `Zwiększ limity`{.action}.
 
-![raise-pci-quota](images/raisepciquota2021b.png){.thumbnail}
+![raise-pci-quota](images/raisepciquota2023.png){.thumbnail}
 
 Następnie kliknij na strzałkę rozwijaną obok "Wybierz wolumen", aby wyświetlić listę limitów zasobów, na które można aktualnie uaktualnić zasoby. W tej sekcji pokazano również kwotę do zapłaty w celu skorzystania z tych zasobów.
 
@@ -80,7 +79,7 @@ Na lewym pasku bocznym kliknij pozycję `Quota and Regions`{.action}.
 
 Kliknij na `?`{.action} aby uzyskać więcej informacji na temat tej funkcji, kliknij `ikonę przełącznika`{.action}, aby przełączyć stan na "**Aktywny**".
 
-![autoscaling](images/autoscaling.png){.thumbnail}
+![autoscaling](images/autoscaling2023.png){.thumbnail}
 
 Po wykonaniu tej czynności, autoscalingu zostanie włączony dla Twojego projektu, a Twój limit zasobów będzie zwiększany z biegiem czasu.
 

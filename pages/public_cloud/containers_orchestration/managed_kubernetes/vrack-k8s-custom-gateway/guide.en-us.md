@@ -4,27 +4,6 @@ excerpt: Find out how to use a custom gateway on an OVHcloud Managed Kubernetes 
 updated: 2022-07-25
 ---
 
-<style>
- pre {
-     font-size: 14px;
- }
- pre.console {
-   background-color: #300A24; 
-   color: #ccc;
-   font-family: monospace;
-   padding: 5px;
-   margin-bottom: 5px;
- }
- pre.console code {
-   b   font-family: monospace !important;
-   font-size: 0.75em;
-   color: #ccc;
- }
- .small {
-     font-size: 0.75em;
- }
-</style>
-
 ## Objectives
 
 In this tutorial we are going to use a custom gateway deployed in vRack with a Managed Kubernetes cluster.
@@ -64,7 +43,7 @@ To setup a functional environment, you have to load the OpenStack and the OVHclo
 To help you we also created for you several useful scripts and templates.
 
 First, create a `utils` folder in your environment/local machine. 
-Then, download the [ovhAPI.sh](https://raw.githubusercontent.com/ovh/docs/master/pages/platform/kubernetes-k8s/vrack-k8s-custom-gateway/utils/ovhAPI.sh) script into it.
+Then, download the [ovhAPI.sh](https://raw.githubusercontent.com/ovh/docs/master/pages/public_cloud/containers_orchestration/managed_kubernetes/vrack-k8s-custom-gateway/utils/ovhAPI.sh) script into it.
 
 And then add execution rights to the `ovhAPI.sh` script:
 
@@ -126,13 +105,14 @@ Get your OpenStack Tenant ID and store it into the serviceName variable.
 > API
 >> > [!api]
 >> >
->> > @api {GET} /cloud/project/{serviceName}
+>> > @api {v1} /cloud GET /cloud/project/{serviceName}
 
 You should have a result like this:
 
-<pre class="console"><code>$ export serviceName=$(utils/ovhAPI.sh GET /cloud/project/$OS_TENANT_ID | jq -r .description) && echo $serviceName
+```console
+$ export serviceName=$(utils/ovhAPI.sh GET /cloud/project/$OS_TENANT_ID | jq -r .description) && echo $serviceName
 EXAMPLE
-</code></pre>
+```
 
 ## Create Private Network
 
@@ -160,15 +140,16 @@ Create the private network named `demo-pvnw` in `GRA9` and `GRA11` regions and g
 > API
 >> > [!api]
 >> >
->> > @api {POST} /cloud/project/{serviceName}/network/private
+>> > @api {v1} /cloud POST /cloud/project/{serviceName}/network/private
 >> >
->> > @api {GET} /cloud/project/{serviceName}/network/private
+>> > @api {v1} /cloud GET /cloud/project/{serviceName}/network/private
 
 You should have a result like this:
 
-<pre class="console"><code>$ export vlanId="$(utils/ovhAPI.sh POST /cloud/project/$OS_TENANT_ID/network/private "$(cat tpl/data-pvnw.json)" | jq -r .id)" && echo $vlanId
+```console
+$ export vlanId="$(utils/ovhAPI.sh POST /cloud/project/$OS_TENANT_ID/network/private "$(cat tpl/data-pvnw.json)" | jq -r .id)" && echo $vlanId
 pn-1083678_20
-</code></pre>
+```
 
 At this point, your private network is created and its ID is `pn-1083678_20`.
 
@@ -223,16 +204,17 @@ Then create subnets with appropriate routes, and finally get IDs (subnGRA9 & sub
 > API
 >> > [!api]
 >> > 
->> > @api {POST} /cloud/project/{serviceName}/network/private/{networkId}/subnet
+>> > @api {v1} /cloud POST /cloud/project/{serviceName}/network/private/{networkId}/subnet
 
 You should have a result like this:
 
-<pre class="console"><code>$ export subnGRA9="$(utils/ovhAPI.sh POST /cloud/project/$OS_TENANT_ID/network/private/$vlanId/subnet "$(cat tpl/data-subnetGRA9.json)" | jq -r .id)" && echo $subnGRA9
+```console
+$ export subnGRA9="$(utils/ovhAPI.sh POST /cloud/project/$OS_TENANT_ID/network/private/$vlanId/subnet "$(cat tpl/data-subnetGRA9.json)" | jq -r .id)" && echo $subnGRA9
 668fd889-5477-445b-b4e1-b30432e39045
 
 $ export subnGRA11="$(utils/ovhAPI.sh POST /cloud/project/$OS_TENANT_ID/network/private/$vlanId/subnet "$(cat tpl/data-subnetGRA11.json)" | jq -r .id)" && echo $subnGRA11
 e76f2b49-2b9f-4248-98ae-179d596d6e45
-</code></pre>
+```
 
 > For now, it's not possible to add routes to the subnet via the API, so we must use the OpenStack CLI instead.
 
@@ -260,12 +242,13 @@ Create routers and get their IDs (rtrGRA9Id & rtrGRA11Id):
 
 You should have a result like this:
 
-<pre class="console"><code>$ export rtrGRA9Id="$(openstack --os-region-name=GRA9 router create rtr-GRA9 -f json | jq -r .id)" && echo $rtrGRA9Id
+```console
+$ export rtrGRA9Id="$(openstack --os-region-name=GRA9 router create rtr-GRA9 -f json | jq -r .id)" && echo $rtrGRA9Id
 26bf99c8-d6fa-4c5a-9d42-1358776ee0a2
 
 $ export rtrGRA11Id="$(openstack --os-region-name=GRA11 router create rtr-GRA11 -f json | jq -r .id)" && echo $rtrGRA11Id
 ResourceNotFound: 404: Client Error for url: https://network.compute.gra11.cloud.ovh.net/v2.0/routers, The resource could not be found.
-</code></pre>
+```
 
 > [!primary]
 >
@@ -273,7 +256,8 @@ ResourceNotFound: 404: Client Error for url: https://network.compute.gra11.cloud
 
 Now, you can display the information of your new virtual router on GRA9 in order to display its IP:
 
-<pre class="console"><code>$ openstack --os-region-name=GRA9 router show $rtrGRA9Id -c id -c name -c status -c created_at -c external_gateway_info
+```console
+$ openstack --os-region-name=GRA9 router show $rtrGRA9Id -c id -c name -c status -c created_at -c external_gateway_info
 +-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
 | Field                 | Value                                                                                                                                                                                                                                                                                     |
 +-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -283,7 +267,7 @@ Now, you can display the information of your new virtual router on GRA9 in order
 | name                  | rtr-GRA9                                                                                                                                                                                                                                                                                  |
 | status                | ACTIVE                                                                                                                                                                                                                                                                                    |
 +-----------------------+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-</code></pre>
+```
 
 As you can see, in this example, the IP of the gateway will be `141.94.209.244`.
 
@@ -304,14 +288,15 @@ First, get the regional external network ID (extNwGRA9Id & extNwGRA11Id), then l
 
 You should have a result like this:
 
-<pre class="console"><code>$ export extNwGRA9Id="$(openstack --os-region-name=GRA9 network list -f json | jq -r '.[] | select(.Name=="Ext-Net") | .ID')" && echo $extNwGRA9Id
+```console
+$ export extNwGRA9Id="$(openstack --os-region-name=GRA9 network list -f json | jq -r '.[] | select(.Name=="Ext-Net") | .ID')" && echo $extNwGRA9Id
 b2c02fdc-ffdf-40f6-9722-533bd7058c06
 $ openstack --os-region-name=GRA9 router set $rtrGRA9Id --external-gateway $extNwGRA9Id
 
 $ export extNwGRA11Id="$(openstack --os-region-name=GRA11 network list -f json | jq -r '.[] | select(.Name=="Ext-Net") | .ID')" && echo $extNwGRA11Id
 bcf59eb2-9d83-41cc-b4f5-0435ed594833
 $ openstack --os-region-name=GRA11 router set $rtrGRA11Id --external-gateway $extNwGRA11Id
-</code></pre>
+```
 
 ### Link the router to the subnet
 
@@ -373,11 +358,11 @@ First, get the private network IDs (pvnwGRA9Id & pvnwGRA11Id), then create the O
 > API
 >> > [!api]
 >> >
->> > @api {GET} /cloud/project/{serviceName}/network/private/{networkId}
+>> > @api {v1} /cloud GET /cloud/project/{serviceName}/network/private/{networkId}
 >> > 
->> > @api {POST} /cloud/project/{serviceName}/kube
+>> > @api {v1} /cloud POST /cloud/project/{serviceName}/kube
 >> > 
->> > @api {GET} /cloud/project/{serviceName}/kube
+>> > @api {v1} /cloud GET /cloud/project/{serviceName}/kube
 > OVHcloud Control Panel
 >> Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we), go to the `Public Cloud`{.action} section and select the Public Cloud project concerned.
 >> 
@@ -387,7 +372,8 @@ First, get the private network IDs (pvnwGRA9Id & pvnwGRA11Id), then create the O
 
 If you followed the Bash choice, you should have a result like this:
 
-<pre class="console"><code>$ export pvnwGRA9Id="$(utils/ovhAPI.sh GET /cloud/project/$OS_TENANT_ID/network/private/${vlanId} | jq '.regions[] | select(.region=="GRA9")' | jq -r .openstackId)" && echo $pvnwGRA9Id
+```console
+$ export pvnwGRA9Id="$(utils/ovhAPI.sh GET /cloud/project/$OS_TENANT_ID/network/private/${vlanId} | jq '.regions[] | select(.region=="GRA9")' | jq -r .openstackId)" && echo $pvnwGRA9Id
 d9775b7c-c267-44b4-b758-6e827b0a69bb
 
 $ cat tpl/data-kube.json.tpl | sed -e "s|@privateNetworkId@|$pvnwGRA9Id|g" > tpl/data-kube.json
@@ -413,7 +399,7 @@ $ cat tpl/data-kube.json
 
 $ export kubeId="$(utils/ovhAPI.sh POST /cloud/project/$OS_TENANT_ID/kube "$(cat tpl/data-kube.json)" | jq -r .id)" && echo $kubeId
 6bc9c71a-e570-4ed6-848b-de212fbab7da
-</code></pre>
+```
 
 Now wait until your OVHcloud Managed Kubernetes cluster is READY.
 
@@ -445,7 +431,7 @@ To proceed with the freshly created Kubernetes cluster, you must get the Kubecon
 > API
 >> > [!api]
 >> >
->> > @api {POST} /cloud/project/{serviceName}/kube/{kubeId}/kubeconfig
+>> > @api {v1} /cloud POST /cloud/project/{serviceName}/kube/{kubeId}/kubeconfig
 
 To use this kubeconfig file and access to your cluster, you can follow our [configuring kubectl](/pages/public_cloud/containers_orchestration/managed_kubernetes/configuring-kubectl-on-an-ovh-managed-kubernetes-cluster) tutorial, or simply add the `--kubeconfig` flag in your `kubectl` commands.
 
@@ -459,12 +445,13 @@ kubectl --kubeconfig=kubeconfig-demo get no -o wide
 
 You should obtain a result like this:
 
-<pre class="console"><code>$ kubectl --kubeconfig=kubeconfig-demo get no -o wide
+```console
+$ kubectl --kubeconfig=kubeconfig-demo get no -o wide
 NAME                                         STATUS   ROLES    AGE   VERSION   INTERNAL-IP    EXTERNAL-IP      OS-IMAGE             KERNEL-VERSION       CONTAINER-RUNTIME
 nodepool-8f0b4d98-874a-4cfd-b8-node-c74f26   Ready    <none>   56m   v1.23.6   192.168.0.71   141.94.215.23    Ubuntu 18.04.6 LTS   4.15.0-189-generic   containerd://1.4.6
 nodepool-8f0b4d98-874a-4cfd-b8-node-c9bf60   Ready    <none>   57m   v1.23.6   192.168.0.96   141.94.208.78    Ubuntu 18.04.6 LTS   4.15.0-189-generic   containerd://1.4.6
 nodepool-8f0b4d98-874a-4cfd-b8-node-e666f5   Ready    <none>   56m   v1.23.6   192.168.0.31   141.94.212.214   Ubuntu 18.04.6 LTS   4.15.0-189-generic   containerd://1.4.6
-</code></pre>
+```
 
 Now test the cluster by running a simple container that requests its published IP address.
 
@@ -477,7 +464,8 @@ curl ifconfig.me
 
 You should obtain a result like this:
 
-<pre class="console"><code>$ kubectl --kubeconfig=kubeconfig-demo run --image=debian debian  -it -- bash
+```console
+$ kubectl --kubeconfig=kubeconfig-demo run --image=debian debian  -it -- bash
 If you don't see a command prompt, try pressing enter.
 root@debian:/# apt update
 Get:1 http://deb.debian.org/debian bullseye InRelease [116 kB]
@@ -499,7 +487,7 @@ Suggested packages:
 
 root@debian:/# curl ifconfig.me
 141.94.209.244
-</code></pre>
+```
 
 The IP address of our Pod is indeed that of our gateway!
 
@@ -516,7 +504,7 @@ To delete created resources, please follow these instructions:
 > API
 >> > [!api]
 >> >
->> > @api {DELETE} /cloud/project/{serviceName}/kube/{kubeId}
+>> > @api {v1} /cloud DELETE /cloud/project/{serviceName}/kube/{kubeId}
 
 ### Routers
 
@@ -549,7 +537,7 @@ To delete an Openstack router, you must first remove the linked ports.
 > API
 >> > [!api]
 >> >
->> > @api {DELETE} /cloud/project/{serviceName}/network/private/{networkId}/subnet/{subnetId}
+>> > @api {v1} /cloud DELETE /cloud/project/{serviceName}/network/private/{networkId}/subnet/{subnetId}
 
 ### Private Network
 > [!tabs]
@@ -560,7 +548,7 @@ To delete an Openstack router, you must first remove the linked ports.
 > API
 >> > [!api]
 >> >
->> > @api {DELETE} /cloud/project/{serviceName}/network/private/{networkId}/region/{region}
+>> > @api {v1} /cloud DELETE /cloud/project/{serviceName}/network/private/{networkId}/region/{region}
 
 ## Go further
 

@@ -23,7 +23,7 @@ Toutefois, si vous rencontrez des difficultés à réaliser certaines d'entre el
 ## Prérequis
 
 - Disposer d'une [offre d'hébergement web](https://www.ovhcloud.com/fr-ca/web-hosting/) OVHcloud.
-- Disposer des identifiants de connexion à [l'interface administrateur de votre site](https://codex.wordpress.org/fr:Premiers_pas_avec_WordPress){.external}, ainsi qu'à [l'espace de stockage de votre hébergement](/pages/web/hosting/ftp_connection#etape-1-recuperer-les-informations-necessaires-pour-se-connecter).
+- Disposer des identifiants de connexion à [l'interface administrateur de votre site](https://codex.wordpress.org/fr:Premiers_pas_avec_WordPress){.external}, ainsi qu'à [l'espace de stockage de votre hébergement](/pages/web_cloud/web_hosting/ftp_connection#etape-1-recuperer-les-informations-necessaires-pour-se-connecter).
 - Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
 
 ## En pratique
@@ -38,13 +38,13 @@ Vérifiez donc tout d'abord la sécurité de votre poste Windows, Mac ou Linux :
 
 - vérifiez les mises à jour de votre machine;
 - lancez un scan complet de votre poste, après avoir mis à jour votre logiciel antivirus / anti-malware;
-- changez régulièrement le mot de passe administrateur de votre poste (pour plus d'informations sur le choix des mots de passe, suivez les instructions de ce [guide](/pages/account/customer/all_about_username#creer-un-mot-de-passe-solide-et-unique)).
+- changez régulièrement le mot de passe administrateur de votre poste (pour plus d'informations sur le choix des mots de passe, suivez les instructions de ce [guide](/pages/account_and_service_management/account_information/all_about_username#creer-un-mot-de-passe-solide-et-unique)).
 
 ### Étape 2. Sécurisez votre espace client OVHcloud
 
 Pour sécuriser votre compte client, [activez la double authentification](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa) et suivez les instructions de ce [guide](/pages/account_and_service_management/account_information/all_about_username).
 
-Pensez notamment à mettre à jour les [informations de votre compte client](/pages/account/customer/all_about_username#modifier-mes-informations-personnelles) et à y ajouter un **e-mail de secours**.<br>
+Pensez notamment à mettre à jour les [informations de votre compte client](/pages/account_and_service_management/account_information/all_about_username#modifier-mes-informations-personnelles) et à y ajouter un **e-mail de secours**.<br>
 En cas de perte de vos identifiants et/ou d'indisponibilité de l'adresse e-mail principale de votre compte client OVHcloud, un e-mail de secours ou des informations personnelles à jour nous seront indispensables pour vous aider à retrouver l'accès à vos solutions.
 
 ### Étape 3. Effectuez régulièrement des sauvegardes de votre site <a name="backup"></a>
@@ -70,14 +70,14 @@ Les e-mails de phishing constituent également une menace à la sécurité de vo
 En cas de non-renouvellement de vos services, OVHcloud a l'obligation légale, à l'échéance de votre abonnement, de supprimer intégralement les données liées à votre offre d'hébergement, ainsi que la totalité de leurs sauvegardes. Nous envoyons des messages de rappels à nos clients afin de leur rappeler leurs échéances de renouvellement.<br>
 Pour autant, ces e-mails de relance peuvent arriver dans vos spams, ou l'adresse e-mail associée à votre compte OVHcloud peut être erronée ou ne plus être disponible.
 
-Si votre site a une place prépondérante dans votre activité professionnelle, [activez le renouvellement automatique](/pages/account/billing/how_to_use_automatic_renewal#acceder-au-parametrage-de-vos-services) sur l'ensemble de vos services OVHcloud.<br>
+Si votre site a une place prépondérante dans votre activité professionnelle, [activez le renouvellement automatique](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#acceder-au-parametrage-de-vos-services) sur l'ensemble de vos services OVHcloud.<br>
 Nous vous recommandons aussi de vérifier régulièrement la **validité des moyens de paiement** que vous avez enregistrés.
 
 ### Étape 6. Vérifiez que votre site est à jour
 
-Vérifiez régulièrement les mises à jour de votre site en suivant les instructions de ce [guide](/pages/web/hosting/diagnostic_403_forbidden#22-mettre-a-jour-votre-site-internet).
+Vérifiez régulièrement les mises à jour de votre site en suivant les instructions de ce [guide](/pages/web_cloud/web_hosting/diagnostic_403_forbidden#22-mettre-a-jour-votre-site-internet).
 
-Pensez également à utiliser une version récente du [langage informatique PHP](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014) sur votre hébergement.
+Pensez également à utiliser une version récente du [langage informatique PHP](/pages/web_cloud/web_hosting/configure_your_web_hosting) sur votre hébergement.
 
 ### Étape 7. Activez le https
 

@@ -1,7 +1,6 @@
 ---
 title: 'Aumentar las cuotas de Public Cloud'
 excerpt: 'Cómo aumentar el límite en Public Cloud'
-legacy_guide_number: g1904
 updated: 2023-05-03
 ---
 
@@ -36,13 +35,13 @@ Este procedimiento le permite solicitar manualmente un aumento de cuota y valida
 
 Conéctese a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), acceda a la sección `Public Cloud`{.action} y seleccione su proyecto de Public Cloud. En el apartado `Project Management`, haga clic en `Quota and Regions`{.action}.
 
-![access quota](images/raisepciquota2021.png){.thumbnail}
+![access quota](images/raisepciquota1-2023.png){.thumbnail}
 
 Esta página presenta un resumen de los límites actuales de su proyecto, por región. Cuando se alcance el 80% de su cuota, aparecerá una advertencia junto a un recurso.
 
 Para solicitar un aumento de cuota, haga clic en `Aumentar los límites de mi cuota`{.action}.
 
-![raise-pci-quota](images/raisepciquota2021b.png){.thumbnail}
+![raise-pci-quota](images/raisepciquota2023.png){.thumbnail}
 
 A continuación, haga clic en la flecha desplegable situada junto a "Seleccione el volumen" para ver la lista de cuotas actualmente disponibles para actualizar sus recursos a. En esta sección también se indica la cantidad que se debe pagar para beneficiarse de esos recursos.
 
@@ -78,7 +77,7 @@ En la barra lateral izquierda, haga clic en `Cuota y regiones`{.action}.
 
 ¿Hacer clic en el `?`{.action} para obtener más información sobre esta característica, haga clic en el `icono de alternar`{.action} para cambiar el estado a "**Activada**".
 
-![auto scaling](images/autoscaling.png){.thumbnail}
+![auto scaling](images/autoscaling2023.png){.thumbnail}
 
 Una vez hecho, se habilitará el *Autoscaling* para su proyecto y su cuota de recursos se incrementará con el paso del tiempo.
 

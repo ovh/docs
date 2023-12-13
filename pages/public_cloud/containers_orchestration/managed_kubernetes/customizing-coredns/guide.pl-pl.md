@@ -4,28 +4,6 @@ excerpt: 'Find out how to customize CoreDNS on an OVHcloud Managed Kubernetes cl
 updated: 2023-05-31
 ---
 
-<style>
- pre {
-     font-size: 14px;
- }
- pre.console {
-   background-color: #300A24; 
-   color: #ccc;
-   font-family: monospace;
-   padding: 5px;
-   margin-bottom: 5px;
- }
- pre.console code {
-   border: solid 0px transparent;
-   font-family: monospace !important;
-   font-size: 0.75em;
-   color: #ccc;
- }
- .small {
-     font-size: 0.75em;
- }
-</style>
-
 ## Objective
 
 The OVHcloud Managed Kubernetes service provides you with Kubernetes clusters without the hassle of installing or operating them.
@@ -52,7 +30,8 @@ kubectl get configmap coredns -n kube-system -o yaml
 
 The result should be similar to the following:
 
-<pre class="console"><code>$ kubectl get configmap coredns -n kube-system -o yaml
+```console
+$ kubectl get configmap coredns -n kube-system -o yaml
 apiVersion: v1
 data:
   Corefile: |
@@ -89,7 +68,7 @@ metadata:
   namespace: kube-system
   resourceVersion: "5786561917"
   uid: a4e7310b-50b9-4976-a014-13e4bee12344
-</code></pre>
+```
 
 > [!warning]
 > When the Kubernetes Control Plane is redeployed or when the cluster is upgrading to the latest patch, this default CoreDNS configuration is restored to the default one. 
@@ -129,7 +108,8 @@ kubectl edit cm coredns-custom -n kube-system
 
 For example, if you want to use a custom nameserver that will point to your private DNS all FQDN resolutions for `*.myprivatedomain.com`:
 
-<pre class="console"><code>$ kubectl edit cm coredns-custom -n kube-system
+```console
+$ kubectl edit cm coredns-custom -n kube-system
 # Please edit the object below. Lines beginning with a '#' will be ignored,
 # and an empty file will abort the edit. If an error occurs while saving this file will be
 # reopened with the relevant failures.
@@ -151,7 +131,7 @@ metadata:
   namespace: kube-system
   resourceVersion: "5786561924"
   uid: 95c51a5d-c413-4520-b84d-a16892626620
-</code></pre>
+```
 
 Check the logs to make sure that the customization has been applied:
 

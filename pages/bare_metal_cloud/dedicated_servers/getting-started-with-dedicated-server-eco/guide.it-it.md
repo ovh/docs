@@ -1,7 +1,7 @@
 ---
 title: Iniziare a utilizzare un server dedicato Kimsufi, So You Start o Rise
 excerpt: Come eseguire le prime operazioni sul tuo nuovo server dedicato Kimsufi, So You Start o Rise
-updated: 2023-02-28
+updated: 2023-09-11
 ---
 
 > [!primary]
@@ -28,7 +28,7 @@ Quando il tuo server dedicato è configurato per la prima volta durante il proce
 
 Reinstalla facilmente il tuo server e scegli un altro modello di sistema operativo nel tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Nella scheda `Informazioni generali`{.action}, clicca sui tre puntini `...`{.action} in corrispondenza del Sistema operativo e seleziona `Installa`{.action}.
 
-![Pulsante Reinstalla](images/reinstalling-your-server-00.png){.thumbnail}
+![Pulsante Reinstalla](images/reinstalling-your-server-01.png){.thumbnail}
 
 Nella nuova finestra, seleziona una delle opzioni di installazione:
 
@@ -53,7 +53,7 @@ Dopo aver scelto di `Installare a partire da un template OVHcloud`{.action}, puo
 
 Per modificare lo schema di partizione del tuo sistema operativo, seleziona la casella "Personalizza la configurazione delle partizioni" e clicca su `Seguente`{.action}.
 
-![Personalizzare la configurazione delle partizioni](images/SSH_02.png){.thumbnail}
+![Personalizzare la configurazione delle partizioni](images/reinstalling-your-server-04.png){.thumbnail}
 
 Una volta terminate le modifiche, clicca su `Seguente`{.action} per accedere alla pagina di riepilogo.
 
@@ -61,23 +61,23 @@ Una volta terminate le modifiche, clicca su `Seguente`{.action} per accedere all
 
 Se installi un sistema operativo GNU/Linux, aggiungi la tua chiave SSH all'ultima fase del processo di installazione.
 
-![Personalizza la configurazione della partizione](images/SSH_03.png){.thumbnail}
+![Personalizza SSH](images/SSH_01.png){.thumbnail}
 
 Se una chiave SSH è già registrata, appare nel menu a tendina con "Chiavi SSH" in basso. In caso contrario, è necessario aggiungerne una nella sezione "I tuoi servizi".
 
 Per farlo, apri la barra laterale cliccando sul tuo nome nell'angolo in alto a destra e utilizza la scorciatoia `Prodotti e servizi`{.action}.
 
-![Personalizza la configurazione della partizione](images/SSH_keys_panel_2022.png){.thumbnail}
+![Personalizza SSH](images/SSH_02.png){.thumbnail}
 
 In "I tuoi servizi", passa alla scheda `Chiavi SSH`{.action} e clicca su `Aggiungi una chiave SSH`{.action}.
 
-![Personalizza la configurazione della partizione](images/SSH_14.png){.thumbnail}
+![Personalizza SSH](images/SSH_03.png){.thumbnail}
 
 Trattandosi dell'installazione di un server dedicato, seleziona "Dedicato" nel menu a tendina (compatibile anche con un VPS).
 
 Nella nuova finestra inserisci un ID (nome a tua scelta) e la chiave stessa (tipo RSA, ECDSA o Ed25519) nei campi corrispondenti.
 
-![Personalizza la configurazione della partizione](images/SSH_12.png){.thumbnail}
+![Personalizza SSH](images/SSH_04.png){.thumbnail}
 
 Per maggiori informazioni sulla generazione di chiavi SSH, consulta la nostra [guida](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated).
 
@@ -98,13 +98,13 @@ Utilizza questi esempi per connetterti al tuo server e sostituisci le informazio
 **Esempio con root:**
 
 ```bash
-sh ssh root@IPv4_del_tuo_server 
+ssh root@IPv4_del_tuo_server 
 ```
 
 **Esempio con un utente preconfigurato:**
 
 ```bash
-ssh root@nome_di_riferimento_del_tuo_server
+ssh ubuntu@nome_di_riferimento_del_tuo_server
 ```
 
 Per saperne di più su SSH, consulta la nostra guida [Introduzione a SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction).
@@ -133,7 +133,7 @@ Come spiegato nella parte iniziale di questa guida, in quanto amministratore del
 
 Se utilizzi un server Windows, consulta [questa guida](/pages/bare_metal_cloud/dedicated_servers/activate-port-firewall-soft-win).
 
-### Monitoraggio OVHcloud
+### Monitoraggio OVHcloud <a name="monitoring-server"></a>
 
 È possibile attivare o disattivare il monitoraggio di un server dedicato dalla scheda `Informazioni generali`{.action} dello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). L'opzione si trova nella sezione `Stato dei servizi`.
 
@@ -210,6 +210,10 @@ I server dedicati OVHcloud includono uno spazio di storage con controllo degli a
 Per attivare e utilizzare l'opzione Backup Storage, consulta [questa guida](/pages/bare_metal_cloud/dedicated_servers/services_backup_storage).
 
 ## Per saperne di più
+
+[Mettere in sicurezza un server dedicato](/pages/bare_metal_cloud/dedicated_servers/securing-a-dedicated-server)
+
+[Attivare e utilizzare il Rescue mode](/pages/bare_metal_cloud/dedicated_servers/rescue_mode)
 
 Se avete bisogno di formazione o di assistenza tecnica per implementare le nostre soluzioni, contattate il vostro rappresentante o cliccate su [questo link](https://www.ovhcloud.com/it/professional-services/) per ottenere un preventivo e richiedere un'analisi personalizzata del vostro progetto da parte dei nostri esperti del team Professional Services.
 

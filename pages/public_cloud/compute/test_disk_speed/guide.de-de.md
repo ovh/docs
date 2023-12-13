@@ -1,7 +1,6 @@
 ---
 title: Die Geschwindigkeit der Festplatten testen
 excerpt: Die Geschwindigkeit der Festplatten testen
-legacy_guide_number: g1956
 updated: 2022-01-04
 ---
 

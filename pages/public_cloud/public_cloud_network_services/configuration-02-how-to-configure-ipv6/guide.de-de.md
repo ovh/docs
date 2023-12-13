@@ -20,7 +20,7 @@ Standardmäßig ist nur die IPv4-Adresse eingerichtet.
 
 > [!primary]
 > 
-> Floating IP und Gateway sind derzeit nicht mit IPv6 kompatibel. Sie können IPv6 nur mit Instanzen im [Public Mode](#/pages/platform/network-services/concepts-01-public-cloud-networking-concepts#publicmode) verwenden.
+> Floating IP und Gateway sind derzeit nicht mit IPv6 kompatibel. Sie können IPv6 nur mit Instanzen im [Public Mode](#/pages/public_cloud/public_cloud_network_services/concepts-01-public-cloud-networking-concepts#publicmode) verwenden.
 >
 
 ## Voraussetzungen

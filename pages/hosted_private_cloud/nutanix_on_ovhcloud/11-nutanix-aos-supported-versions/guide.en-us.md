@@ -50,7 +50,7 @@ Use the following API call:
 
 > [!api]
 >
-> @api {get} /nutanix/{serviceName}
+> @api {v1} /nutanix GET /nutanix/{serviceName}
 >
 
 Enter this data:
@@ -69,7 +69,7 @@ The query result appears below `availableVersions` with both versions supported 
 
 [Nutanix AOS Update Plan](https://portal.nutanix.com/page/documents/kbs/details?targetId=kA00e000000LIi9CAG)
 
-[Using the OVHcloud API](/products/infrastructure-as-code-api-apiv6)
+[Using the OVHcloud API](/products/manage-operate-api-apiv6)
 
 If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 

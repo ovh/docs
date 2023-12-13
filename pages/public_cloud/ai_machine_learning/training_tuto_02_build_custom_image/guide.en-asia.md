@@ -1,7 +1,7 @@
 ---
 title: AI Training - Tutorial -  Build & use custom Docker image
 excerpt: Explanations on how to build and use your own custom image
-updated: 2023-05-04
+updated: 2023-11-27
 ---
 
 ## Objective
@@ -337,7 +337,7 @@ AI Training provides, for each Public Cloud project, a default registry called *
 
 > [!warning]
 >
-> This shared registry can help you perform your tests, but **should not be used in production**, as we reserve the right to delete its content if deemed necessary.
+> This shared registry can help you perform your tests, but **should not be used in production**, as we reserve the right to delete its content if deemed necessary. The images pushed to this registry are for AI Tools workloads only, and will not be accessible for external uses.
 > This is why it can be interesting to add other registries. Learn how to do it by following [this documentation](/pages/public_cloud/ai_machine_learning/gi_07_manage_registry).
 >
 

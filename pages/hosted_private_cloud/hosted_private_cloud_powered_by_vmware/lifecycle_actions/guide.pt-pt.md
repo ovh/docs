@@ -1,6 +1,6 @@
 ---
-title: "Ciclo de vida do Hosted Private Cloud powered by VMware - Determinar as ações a empreender (EN)"
-excerpt: Find out what to do with your Hosted Private Cloud powered by VMware solution, depending on its features
+title: "Ciclo de vida do VMware on OVHcloud - Determinar as ações a empreender (EN)"
+excerpt: Find out what to do with your VMware on OVHcloud solution, depending on its features
 updated: 2022-12-27
 ---
 
@@ -16,7 +16,7 @@ In this guide, we detail the actions to take for the topics in progress:
 - vSphere version prior to vCSA 7.0 (build 20845200)
 - Version of NSX-v before 6.4.14
 
-**Find out what to do with your Hosted Private Cloud powered by VMware solution, depending on its features.**
+**Find out what to do with your VMware on OVHcloud solution, depending on its features.**
 
 ## Requirements
 
@@ -39,7 +39,7 @@ Run the following call:
 
 > [!api]
 >
-> @api {GET} /dedicatedCloud
+> @api {v1} /dedicatedCloud GET /dedicatedCloud
 >
 
 You will see a list of your services. Please note the **serviceName** you have retrieved.
@@ -50,7 +50,7 @@ Run the following call:
 
 > [!api]
 >
-> @api {GET} /dedicatedCloud/{serviceName}/datacenter
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/datacenter
 >
 
 Fill in the call fields with the following information:
@@ -65,7 +65,7 @@ Run the following call:
 
 > [!api]
 >
-> @api {GET} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/filer
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/filer
 >
 
 Fill in the call fields with the following information:
@@ -81,7 +81,7 @@ Run the following call:
 
 > [!api]
 >
-> @api {GET} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/host
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/host
 >
 
 Fill in the call fields with the following information:
@@ -108,7 +108,7 @@ Run the following call:
 
 > [!api]
 >
-> @api {GET} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/filer/{filerId}/location
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/filer/{filerId}/location
 >
 
 Fill in the call fields with the following information:
@@ -131,7 +131,7 @@ Run the following call:
 
 > [!api]
 >
-> @api {GET} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/filer/{filerId}
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/filer/{filerId}
 >
 
 Fill in the call fields with the following information:
@@ -158,7 +158,7 @@ Run the following call:
 
 > [!api]
 >
-> @api {GET} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/filer/{filerId}
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/filer/{filerId}
 >
 
 Fill in the call fields with the following information:

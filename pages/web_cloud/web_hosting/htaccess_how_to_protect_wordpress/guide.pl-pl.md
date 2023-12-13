@@ -114,7 +114,7 @@ Istnieje kilka sposobów definiowania i modyfikowania parametrów, które zmieni
 
 > [!warning]
 >
-> Przed przejściem przez kolejne etapy, należy przekierować protokół HTTP na HTTPS. W tym celu postępuj zgodnie z instrukcjami zawartymi w naszym przewodniku ["Aktywacja protokołu HTTPS na stronie WWW za pomocą certyfikatu SSL"](/pages/web/hosting/ssl-activate-https-website#etap-1-aktywacja-certyfikatu-ssl-na-hostingu).
+> Przed przejściem przez kolejne etapy, należy przekierować protokół HTTP na HTTPS. W tym celu postępuj zgodnie z instrukcjami zawartymi w naszym przewodniku ["Aktywacja protokołu HTTPS na stronie WWW za pomocą certyfikatu SSL"](/pages/web_cloud/web_hosting/ssl-activate-https-website#etap-1-aktywacja-certyfikatu-ssl-na-hostingu).
 
 ### Nie wyświetlaj katalogów i podkatalogów
 
@@ -178,4 +178,4 @@ W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
 
-Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>. 
+Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

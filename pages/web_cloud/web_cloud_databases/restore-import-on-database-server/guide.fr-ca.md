@@ -1,7 +1,7 @@
 ---
 title: 'Restaurer et importer une base de données sur votre serveur de bases de données'
 excerpt: 'Découvrez comment restaurer et importer votre base de données'
-updated: 2023-02-15
+updated: 2023-10-26
 ---
 
 ## Objectif
@@ -12,7 +12,7 @@ updated: 2023-02-15
 
 ## Prérequis
 
-- Disposer d'une [instance Web Cloud Databases](https://www.ovh.com/fr/cloud/cloud-databases/) (incluse dans une offre d'[hébergement web Performance](https://www.ovhcloud.com/fr-ca/web-hosting/)).
+- Disposer d'une [instance Web Cloud Databases](https://www.ovhcloud.com/fr-ca/web-cloud/databases/) (incluse dans une offre d'[hébergement web Performance](https://www.ovhcloud.com/fr-ca/web-hosting/)).
 - Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
 
 ## En pratique
@@ -81,7 +81,7 @@ Cochez, si vous le désirez, **« Vider la base de données actuelle »** avant 
 Dans certains cas, la RAM disponible dans votre serveur de bases de données ne permet pas de réaliser l'import souhaité en dehors de l'espace client. Si tel est le cas, nous vous recommandons d'utiliser l'outil OVHcloud dans l'espace client. Reportez-vous à la section [« Restaurer et importer une base de données depuis l'espace client »](./#sauvegarde-restauration-et-importation-depuis-lespace-client) de cette documentation.
 
 #### Importer ma base MySQL ou MariaDB depuis phpMyAdmin
-Pour importer votre base de données directement depuis phpMyAdmin, il est nécessaire de vous y connecter au préalable, vous pouvez pour cela vous aider du paragraphe [« Se connecter a une base de données MySQL ou MariaDB »](/pages/web/clouddb/connecting-to-database-on-database-server#se-connecter-a-une-base-de-donnees-mysql-ou-mariadb)
+Pour importer votre base de données directement depuis phpMyAdmin, il est nécessaire de vous y connecter au préalable, vous pouvez pour cela vous aider du paragraphe [« Se connecter a une base de données MySQL ou MariaDB »](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server#se-connecter-a-une-base-de-donnees-mysql-ou-mariadb)
 
 Une fois connecté sur phpMyAdmin, sélectionnez votre base de données en cliquant sur son nom.
 
@@ -96,7 +96,7 @@ Sélectionnez votre fichier de sauvegarde en cliquant `Parcourir`{.action} (atte
 
 Laissez les options par défaut et cliquez sur `Exécuter`{.action} pour lancer l'importation.
 
-![Web Cloud Databases](images/web-cloud-databases-import04.png){.thumbnail}
+![Web Cloud Databases](images/pma-upload-backup-web-cloud-db.png){.thumbnail}
 
 #### Importer ma base MySQL ou MariaDB en ligne de commande
 

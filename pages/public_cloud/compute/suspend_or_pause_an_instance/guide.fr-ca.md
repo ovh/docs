@@ -1,6 +1,5 @@
 ---
 title: Suspendre ou mettre en pause une instance
-legacy_guide_number: 1781
 updated: 2023-06-20
 ---
 

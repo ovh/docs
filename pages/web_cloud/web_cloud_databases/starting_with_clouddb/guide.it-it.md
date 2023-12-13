@@ -1,6 +1,5 @@
 ---
 title: 'Inziare a utilizzare Web Cloud Databases'
-legacy_guide_number: 2216
 excerpt: 'Scopri come utilizzare la soluzione Web Cloud Databases'
 updated: 2023-05-31
 ---
@@ -222,7 +221,7 @@ Il file di log, chiamato `stdout.log`, si trova alla radice.
 
 ## Per saperne di più
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory).
 
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
 

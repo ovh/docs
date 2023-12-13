@@ -80,7 +80,7 @@ Der einzige Unterschied besteht in der Autonomie des Benutzers, Token zu validie
 
 Es ist möglich, mehrere Drittanwendungen zu verwenden, die Zugriff auf vCenter benötigen.
 
-Diese Anwendungen müssen zuerst über die vCenter-Zugangseinstellungen, die Sie über Ihr [Kundencenter](/pages/cloud/private-cloud/manager_ovh_private_cloud#sicherheit) festlegen, autorisiert werden.
+Diese Anwendungen müssen zuerst über die vCenter-Zugangseinstellungen, die Sie über Ihr [Kundencenter](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/manager_ovh_private_cloud#sicherheit) festlegen, autorisiert werden.
 
 Daraufhin können die Anwendungen auf unsere Infrastrukturen zugreifen; das heißt allerdings nicht, dass sie zwangsweise auch die Zwei-Faktor-Authentifizierung verarbeiten.
 
@@ -94,35 +94,35 @@ Um die öffentlichen IP-Adressen Ihrer Anwendungen zu dieser zweiten *Whitelist*
 
 >[!api]
 >
-> @api {GET} /dedicatedCloud/{serviceName}/twoFAWhitelist
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/twoFAWhitelist
 >
 
 - Eine IP-Adresse zur *Bypass*-Whitelist der Zwei-Faktor-Authentifizierung hinzufügen:
 
 >[!api]
 >
-> @api {POST} /dedicatedCloud/{serviceName}/twoFAWhitelist
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/twoFAWhitelist
 >
 
 - Informationen einer autorisierten IP-Adresse anzeigen (hierzu wird eine mit dem vorstehenden Aufruf erhaltene ID benötigt):
 
 >[!api]
 >
-> @api {GET} /dedicatedCloud/{serviceName}/twoFAWhitelist/{id}
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/twoFAWhitelist/{id}
 >
 
 - Eine IP-Adresse von der Autorisierungsliste entfernen:
 
 >[!api]
 >
-> @api {DELETE} /dedicatedCloud/{serviceName}/twoFAWhitelist/{id}
+> @api {v1} /dedicatedCloud DELETE /dedicatedCloud/{serviceName}/twoFAWhitelist/{id}
 >
 
 - Die Informationen einer autorisierten IP-Adresse bearbeiten:
 
 >[!api]
 >
-> @api {POST} /dedicatedCloud/{serviceName}/twoFAWhitelist/{id}/changeProperties
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/twoFAWhitelist/{id}/changeProperties
 >
 
 ## Weiterführende Informationen

@@ -10,7 +10,7 @@ This page shows you how to update your Redis user ACLs with the OVHcloud API.
 
 ## Users and roles
 
-As explained on this page: [Redis Capabilities, Users & roles](/pages/platform/databases/redis_01_capabilities#users-and-roles), the users' ACLs can not be updated via the OVHcloud Control Panel.
+As explained on this page: [Redis Capabilities, Users & roles](/pages/public_cloud/public_cloud_databases/redis_01_capabilities#users-and-roles), the users' ACLs can not be updated via the OVHcloud Control Panel.
 
 You must therefore use the [OVHcloud API](/pages/manage_and_operate/api/first-steps).
 
@@ -35,7 +35,7 @@ Execute the following API call:
 
 > [!api]
 >
-> @api {GET} /cloud/project
+> @api {v1} /cloud GET /cloud/project
 >
 
 From the resulting list, select and copy the service identifier corresponding to the desired service, also known as **serviceName**.
@@ -48,7 +48,7 @@ Open the following API call, paste your service ID into the **serviceName** inpu
 
 > [!api]
 >
-> @api {GET} /cloud/project/{serviceName}/database/redis
+> @api {v1} /cloud GET /cloud/project/{serviceName}/database/redis
 >
 
 From the resulting list, select and copy the Redis cluster ID, also known as **clusterId**.
@@ -65,7 +65,7 @@ Open the following API call and do the following steps:
 
 > [!api]
 >
-> @api {GET} /cloud/project/{serviceName}/database/redis/{clusterId}/user
+> @api {v1} /cloud GET /cloud/project/{serviceName}/database/redis/{clusterId}/user
 >
 
 From the resulting list, find and select the desired **user**.
@@ -81,7 +81,7 @@ To get more details on a user, open the following API call and do the following 
 
 > [!api]
 >
-> @api {GET} /cloud/project/{serviceName}/database/redis/{clusterId}/user/{userId}
+> @api {v1} /cloud GET /cloud/project/{serviceName}/database/redis/{clusterId}/user/{userId}
 >
 
 Example:
@@ -103,7 +103,7 @@ Open the following API call and paste the corresponding inputs (**serviceName**,
 
 > [!api]
 >
-> @api {PUT} /cloud/project/{serviceName}/database/redis/{clusterId}/user/{userId}
+> @api {v1} /cloud PUT /cloud/project/{serviceName}/database/redis/{clusterId}/user/{userId}
 >
 
 Now, according the strategy you choosed, set the different values into the string arrays, such as in the example below:

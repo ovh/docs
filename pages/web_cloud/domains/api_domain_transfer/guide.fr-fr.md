@@ -35,17 +35,17 @@ Si vous êtes le propriétaire du domaine, vous pouvez déléguer sa gestion à 
 
 2. **Commander un transfert** : cela consiste en les mêmes étapes que la [commande d'un nouveau nom de domaine](/pages/web_cloud/domains/api_domain_order).
 
-    - Seule l'[offre](/pages/web/domains/api_domain_order#fetch-available-offers) diffère, étant donné que l'action disponible sera `transfer` (au lieu de `create`) et le pricing-mode sera `transfer-default`.
+    - Seule l'[offre](/pages/web_cloud/domains/api_domain_order#fetch-available-offers) diffère, étant donné que l'action disponible sera `transfer` (au lieu de `create`) et le pricing-mode sera `transfer-default`.
 
-    - Pensez à ajouter le code d'autorisation à la commande, en tant que valeur associée à la [configuration](/pages/web/domains/api_domain_order#add-configuration) `AUTH_INFO`.
+    - Pensez à ajouter le code d'autorisation à la commande, en tant que valeur associée à la [configuration](/pages/web_cloud/domains/api_domain_order#add-configuration) `AUTH_INFO`.
 
     Quand la commande est terminée, une nouvelle tâche `DomainIncomingTransfer` va être générée.
 
-3. **Surveiller** l'avancement de la tâche `DomainIncomingTransfer` à l'aide de l'[API de gestion des tâches](/pages/web/domains/api_domain_tasks#view-pending-tasks).
+3. **Surveiller** l'avancement de la tâche `DomainIncomingTransfer` à l'aide de l'[API de gestion des tâches](/pages/web_cloud/domains/api_domain_tasks#view-pending-tasks).
 
 4. Si le code d'autorisation n'a pas été ajouté à la commande, ou s'il est invalide, la tâche `DomainIncomingTransfer` va produire une erreur.
 
-    Dans ce cas, utilisez l'[API de gestion des tâches](/pages/web/domains/api_domain_tasks#fix-and-relaunch-a-task-in-error) pour envoyer le bon code avec la clé `authInfo`, puis relancez la tâche.
+    Dans ce cas, utilisez l'[API de gestion des tâches](/pages/web_cloud/domains/api_domain_tasks#fix-and-relaunch-a-task-in-error) pour envoyer le bon code avec la clé `authInfo`, puis relancez la tâche.
 
 Le transfert sera normalement validé par le registre au bout de quelques jours.
 
@@ -64,7 +64,7 @@ Vous pouvez vérifier dans quel état se trouve votre nom de domaine en utlisant
 
 > [!api]
 >
-> @api {GET} /domain/{serviceName}
+> @api {v1} /domain GET /domain/{serviceName}
 
 | Paramètre     | Obligatoire | Défaut | Description                |
 | ------------- | ----------- | ------ | -------------------------- |
@@ -99,7 +99,7 @@ Pour mettre votre nom de domaine dans un état `unlocked`, utilisez la même rou
 
 > [!api]
 >
-> @api {PUT} /domain/{serviceName}
+> @api {v1} /domain PUT /domain/{serviceName}
 
 | Paramètre            | Obligatoire | Défaut | Description                |
 | -------------------- | ----------- | ------ | -------------------------- |
@@ -116,7 +116,7 @@ La route suivante vous permet de le récupérer :
 
 > [!api]
 >
-> @api {GET} /domain/{serviceName}/authInfo
+> @api {v1} /domain GET /domain/{serviceName}/authInfo
 
 | Paramètre     | Obligatoire | Défaut | Description                |
 | ------------- | ----------- | ------ | -------------------------- |

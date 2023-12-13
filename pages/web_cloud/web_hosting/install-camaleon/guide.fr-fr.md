@@ -1,6 +1,6 @@
 ---
-title: 'Installer Camaleon CMS sur son hébergement Cloud Web'
-excerpt: 'Découvrez comment installer un Camaleon CMS sur Cloud Web'
+title: "Installer Camaleon CMS sur son hébergement Cloud Web"
+excerpt: "Découvrez comment installer un Camaleon CMS sur Cloud Web"
 updated: 2022-05-04
 ---
 
@@ -259,7 +259,7 @@ Nous avons vu comment installer une application Ruby sur un hébergement Cloud W
 
 [Partager son hébergement entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite){.external}
 
-Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/).
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
 
 Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
 

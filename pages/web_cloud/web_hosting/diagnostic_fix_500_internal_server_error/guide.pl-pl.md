@@ -1,7 +1,7 @@
 ---
-title: Co zrobić w przypadku błędu 500 Internal Server Error?
-excerpt: Zdiagnozuj najczęstsze przypadki błędów 500
-updated: 2023-05-16
+title: "Co zrobić w przypadku błędu 500 Internal Server Error?"
+excerpt: "Zdiagnozuj najczęstsze przypadki błędów 500"
+updated: 2023-11-22
 ---
 
 > [!primary]
@@ -29,7 +29,7 @@ Zdarza się to również w wyniku aktualizacji przeprowadzonej **automatycznie**
 
 - Posiadanie [hostingu](https://www.ovhcloud.com/pl/web-hosting/)
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
-- Aktualizacja w [płatności](/pages/account/billing/invoice_management#pay-bills) i [odnowienie](/pages/account/billing/how_to_use_automatic_renewal#renewal-management) powiązanych usług (domena i hosting)
+- Aktualizacja w [płatności](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) i [odnowienie](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) powiązanych usług (domena i hosting)
 
 ## W praktyce
 
@@ -49,7 +49,7 @@ Zapoznaj się najpierw z tym [przewodnikiem](/pages/web_cloud/web_hosting/logs_a
 
 ### Przejdź na tryb programowania
 
-Aby wyświetlić ewentualne błędy PHP, przejdź do trybu `programowania`, korzystając z tych [wskazówek](/pages/web/hosting/ovhconfig_modify_system_runtime#etap-2-zmiana-konfiguracji-hostingu).
+Aby wyświetlić ewentualne błędy PHP, przejdź do trybu `programowania`, korzystając z tych [wskazówek](/pages/web_cloud/web_hosting/configure_your_web_hosting#etap-2-zmiana-konfiguracji-hostingu).
 
 ### Przetestuj plik .htaccess
 
@@ -69,7 +69,7 @@ Błąd 500 może być związany z nieprawidłowym poziomem praw dostępu do niek
 
 Aby uzyskać dostęp do tych plików, zaloguj się przez FTP do Twojego hostingu zgodnie z naszą [dokumentacją](/pages/web_cloud/web_hosting/ftp_connection).
 
-Przewodnik "[Przewodnik dotyczący korzystania z programu FileZilla](/pages/web/hosting/ftp_filezilla_user_guide#uprawnienia-do-plikow-i-katalogow)" pomoże Ci w weryfikacji następujących elementów : 
+Przewodnik "[Przewodnik dotyczący korzystania z programu FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide#uprawnienia-do-plikow-i-katalogow)" pomoże Ci w weryfikacji następujących elementów : 
 
 - **Korzeń** hostingu (katalog jest zapisany `/` lub `.` w programie FTP) musi mieć uprawnienia 705 (są to uprawnienia domyślne). Zalecamy, aby nie zmieniać tego poziomu uprawnień.
 - Dokumentacja musi być w 705 r.
@@ -95,9 +95,9 @@ W przypadku błędu 500 związanego z bazą danych na Twojej stronie WWW, skorzy
 
 Aby przywrócić kod źródłowy Twojej strony, zapoznaj się z naszym przewodnikiem "[Przywracanie plików z kopii zapasowej OVHcloud](/pages/web_cloud/web_hosting/ftp_save_and_backup)".
 
-Jeśli Twoja strona WWW zawiera bazę danych, zapoznaj się z naszym przewodnikiem "[Import kopii zapasowej do bazy danych hostingu](/pages/web/hosting/sql_importing_mysql_database#przywracanie-kopii-zapasowej-w-panelu-klienta)", aby przywrócić ją do poprzedniego stanu.
+Jeśli Twoja strona WWW zawiera bazę danych, zapoznaj się z naszym przewodnikiem "[Import kopii zapasowej do bazy danych hostingu](/pages/web_cloud/web_hosting/sql_importing_mysql_database#przywracanie-kopii-zapasowej-w-panelu-klienta)", aby przywrócić ją do poprzedniego stanu.
 
-Jeśli po aktualizacji wersji PHP na Twoim hostingu wystąpił błąd 500, zapoznaj się z naszym przewodnikiem "[Zmiana wersji PHP na hostingu](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014)" i wróć do poprzedniej konfiguracji.
+Jeśli po aktualizacji wersji PHP na Twoim hostingu wystąpił błąd 500, zapoznaj się z naszym przewodnikiem "[Zmiana wersji PHP na hostingu](/pages/web_cloud/web_hosting/configure_your_web_hosting)" i wróć do poprzedniej konfiguracji.
 
 ## Sprawdź również <a name="gofurther"></a>
 
@@ -114,5 +114,7 @@ Jeśli po aktualizacji wersji PHP na Twoim hostingu wystąpił błąd 500, zapoz
 [Moja strona jest powolny. Co robić? ](/pages/web_cloud/web_hosting/diagnostic_slownesses)
 
 [Usunięcie błędu "Strona nie została zainstalowana"](/pages/web_cloud/web_hosting/multisites_website_not_installed)
+
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

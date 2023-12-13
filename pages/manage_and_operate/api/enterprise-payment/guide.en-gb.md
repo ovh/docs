@@ -34,7 +34,7 @@ In the APIv6 and in your control panel, in your payment methods will appear a ne
 
 > [!api]
 >
-> @api {GET} /me/payment/method
+> @api {v1} /me GET /me/payment/method
 >
 
 #### How to enter a Purchase Order number (PO)
@@ -51,14 +51,14 @@ Retrieve the list of bills associated with this subaccount:
 
 > [!api]
 >
-> @api {GET} /me/bill
+> @api {v1} /me GET /me/bill
 >
 
 Retrieve the detailed bill using the billID:
 
 > [!api]
 >
-> @api {GET}  /me/bill/{billId}/details
+> @api {v1} /me GET /me/bill/{billId}/details
 >
 
 ## Go further

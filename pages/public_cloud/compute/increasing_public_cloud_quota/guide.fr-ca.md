@@ -1,7 +1,6 @@
 ---
 title: 'Augmenter les quotas Public Cloud'
-excerpt: 'Découvez comment demander l’augmentation de vos quotas Public Cloud'
-legacy_guide_number: 1904
+excerpt: 'Découvrez comment demander l’augmentation de vos quotas Public Cloud'
 updated: 2023-05-03
 ---
 
@@ -33,13 +32,13 @@ Cette procédure vous permet de demander manuellement une augmentation de quota 
 Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}, accédez à la section `Public Cloud`{.action} et sélectionnez votre projet Public Cloud.
 <br> Dans la rubrique `Project Management`, cliquez sur `Quota and Regions`{.action}.
 
-![access quota](images/raisepciquota2021.png){.thumbnail}
+![access quota](images/raisepciquota1-2023.png){.thumbnail}
 
 Cette page présente un récapitulatif des quotas actuels de votre projet, par région. Un avertissement apparaît à côté d'une ressource dès lors que 80 % de son quota est atteint.
 
 Cliquez sur `Augmenter mes quotas`{.action}.
 
-![raise-pci-quota](images/raisepciquota2021b.png){.thumbnail}
+![raise-pci-quota](images/raisepciquota2023.png){.thumbnail}
 
 Cliquez sur la flèche à côté de « Sélectionnez le volume » pour afficher la liste des quotas actuellement disponibles. Ce menu déroulant affiche également le montant à payer pour bénéficier de ces ressources.
 
@@ -74,7 +73,7 @@ Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action
 
 Pour avoir plus d'informations sur cette fonctionnalité, cliquez sur le bouton `?`{.action}. Cliquez ensuite sur le bouton dédié afin de passer l'état à « **Activé** ».
 
-![auto scaling](images/autoscaling.png){.thumbnail}
+![auto scaling](images/autoscaling2023.png){.thumbnail}
 
 L'auto-scaling sera alors activé sur votre projet et votre quota de ressources sera augmenté au fil du temps.
 

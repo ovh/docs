@@ -1,7 +1,6 @@
 ---
 title: 'Enviar SMS con Java usando la API de OVHcloud'
 excerpt: 'Cómo enviar SMS con Java usando la API RESTful de OVHcloud'
-legacy_guide_number: g1670
 updated: 2020-06-01
 ---
 
@@ -28,14 +27,14 @@ En esta guía utilizamos dos llamadas a la API:
 
 > [!api]
 >
-> @api {GET} /sms
+> @api {v1} /sms GET /sms
 >
 
 - Enviar SMS:
 
 > [!api]
 >
-> @api {POST} /sms/{serviceName}/jobs
+> @api {v1} /sms POST /sms/{serviceName}/jobs
 >
 
 ### 1. Generar las claves
@@ -186,7 +185,7 @@ Para enviar SMS, utilice la siguiente llamada a la API:
 
 > [!api]
 >
-> @api {POST} /sms/{serviceName}/jobs
+> @api {v1} /sms POST /sms/{serviceName}/jobs
 >
 
 > [!primary]

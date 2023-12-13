@@ -1,7 +1,7 @@
 ---
-title: "Tutorial - What do I do when my database is full?"
+title: "Web hosting: My database is full, what should I do?"
 excerpt: "Find out what to do when your database is saturated"
-updated: 2023-02-16
+updated: 2023-11-30
 ---
 
 ## Objective
@@ -52,17 +52,21 @@ The first step is to identify the large table or tables in your database.
 
 #### 1.1 - Connect to the database via phpMyAdmin
 
-Retrieve the password for accessing your database directly from your website’s configuration file. Perform this action using **step 1** in our guide to [changing a database password](/pages/web_cloud/web_hosting/sql_change_password).
+Retrieve your database access data directly from your website’s configuration file. Perform this action using **step 1** in our guide to [changing a database password](/pages/web_cloud/web_hosting/sql_change_password).
 
-Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au) and select `Web Cloud`{.action} in the navigation bar at the top of the screen. Click on `Hosting plans`{.action} and choose the web hosting plan associated with your OVHcloud shared database. Next, go to the `Databases`{.action} tab.
+Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au) and select `Web Cloud`{.action} in the top navigation bar. Click `Hosting plans`{.action} , then choose the web hosting plan associated to your OVHcloud shared database. Go to the `Databases`{.action} tab.
+
+A table listing your databases will appear at the bottom of the screen.
 
 ![phpMyAdmin Access](images/pma_access.png){.thumbnail}
 
-From the `Databases`{.action} tab, click on the button `...`{.action} to the right of the database that is full, then `Go to phpMyAdmin`{.action}.
+Note that `User name` and `Server address` of your database are listed in the table.
+
+In the `Databases`{.action} tab, click the `...`{.action} button to the right of the database that is full, then `Go to phpMyAdmin`{.action}.
 
 ![phpMyAdmin Go Login](images/pma_interface.png){.thumbnail}
 
-Enter your database password in addition to the pre-filled information, then click `Go`{.action}.
+Enter the login information for your database, then click `Login`{.action}.
 
 #### 1.2 - Find the largest tables
 
@@ -75,11 +79,11 @@ Enter your database password in addition to the pre-filled information, then cli
 
 Once connected, the following page is displayed:
 
-![phpMyAdmin Login](images/pma_login.png){.thumbnail}
+![phpMyAdmin Login](images/pma-main-page.png){.thumbnail}
 
 Click on `"Your database name"`{.action} in the left-hand column, then on `Size`{.action} in the top right-hand corner of the table that appears:
 
-![phpMyAdmin Tables](images/pma_show_table.png){.thumbnail}
+![phpMyAdmin Tables](images/pma-check-size.png){.thumbnail}
 
 The largest tables appear at the top of the sorted list. Identify them, then go to **Step 2**.
 
@@ -116,15 +120,17 @@ Once you have determined whether or not the contents of your tables are necessar
 
 You will need to upgrade your database service to one that includes more space for databases.
 
-Consult our [Private SQL/Web Cloud Databases](https://www.ovhcloud.com/en-au/web-hosting/options/) offer to choose your new database service. 
+Consult our [Web Cloud Databasess](https://www.ovhcloud.com/en-au/web-cloud/databases/) offer to choose your new database service. 
 
 We recommend this solution for large databases.
 
-Then follow our guides to move the content from your old database to the new one:
+You can duplicate the content of your OVHcloud database directly to another of your OVHcloud databases, using a feature in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au). To do this, please refer to our guide "[Duplicating the contents of one database to another](/pages/web_cloud/web_hosting/copy_database)".
+
+If you are migrating to a database outside of the [Start SQL](https://www.ovhcloud.com/en-au/web-hosting/options/start-sql/) and [Web Cloud Databases](https://www.ovhcloud.com/en-au/web-cloud/databases/) solutions, you can manually move the content from your old database to a new one using our guides:
 
 - [Export your existing database](/pages/web_cloud/web_hosting/sql_database_export)
-- [First steps with Private SQL/Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)
-- [Import your old database into your Private SQL/Web Cloud Databases](/pages/web_cloud/web_cloud_databases/restore-import-on-database-server)
+- [First steps with Web Cloud Databasess](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)
+- [Import your old database into your Web Cloud Databasess solution](/pages/web_cloud/web_cloud_databases/restore-import-on-database-server)
 
 #### Case 2 - Some or all of the contents of the large table are not necessary for your site to work
 
@@ -147,7 +153,7 @@ In the case of an overquota or large table, **three commands** are available.
 
 You can perform these requests from the **phpMyAdmin** interface, via the `SQL`{.action} tab:
 
-![phpMyAdmin SQL request](images/pma_sql_request.png){.thumbnail}
+![phpMyAdmin SQL request](images/pma-sql-menu.png){.thumbnail}
 
 - The **DELETE** command
 
@@ -186,6 +192,8 @@ DROP TABLE `table_1`
 > In this example, the command deletes the table **table_1** and all rows in it.
 
 ## Go further <a name="go-further"></a>
+
+[Duplicating the contents of one database to another](/pages/web_cloud/web_hosting/copy_database)
 
 For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-au/directory/).
 

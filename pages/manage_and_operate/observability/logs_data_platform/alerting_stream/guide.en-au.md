@@ -116,7 +116,7 @@ $ ldp@ubuntu:~$ sudo filebeat modules enable apache
 
 It will generate a new module file: **/etc/filebeat/modules.d/apache.yml**, please change it to include all your apache2 access/error path files:
 
-```yaml hl_lines="8 16"
+```yaml
 - module: apache
   # Access logs
   access:

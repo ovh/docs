@@ -36,7 +36,7 @@ Vamos adicionar um encaminhamento ao serviço.
 >
 >> > [!api]
 >> >
->> > @api {POST} /ipLoadbalancing/{serviceName}/tcp/route
+>> > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/tcp/route
 >> >
 >>
 >
@@ -73,7 +73,7 @@ Agora vamos adicionar uma regra à nossa route.
 >
 >> > [!api]
 >> >
->> > @api {POST} /ipLoadbalancing/{serviceName}/tcp/route/{routeId}/rule
+>> > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/tcp/route/{routeId}/rule
 >> >
 >>
 >
@@ -116,7 +116,7 @@ Atualizar uma zona:
 >
 >> > [!api]
 >> >
->> > @api {POST} /ipLoadbalancing/{serviceName}/refresh
+>> > @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/refresh
 >> >
 >>
 >

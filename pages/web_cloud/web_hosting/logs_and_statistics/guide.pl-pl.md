@@ -1,7 +1,7 @@
 ---
-title: 'Hosting: Statystyki i logi strony'
-excerpt: Dostęp do statystyk strony www
-updated: 2023-08-04
+title: "Hosting: Statystyki i logi strony"
+excerpt: "Dostęp do statystyk strony www"
+updated: 2023-11-20
 ---
 
 > [!primary]
@@ -52,7 +52,7 @@ Z karty przeglądarki, która wyświetla okno statystyk, pobierz link, który b�
 
 > [!warning] 
 >
-> Jeśli włączyłeś oddzielne logi w [pozycji MultiSite](/pages/web/hosting/multisites_configure_multisite#etap-2-dodanie-domeny-lub-subdomeny), użytkownicy utworzeni tutaj nie mogą uzyskać dostępu do statystyk dla tego wpisu MultiSite.
+> Jeśli włączyłeś oddzielne logi w [pozycji MultiSite](/pages/web_cloud/web_hosting/multisites_configure_multisite#etap-2-dodanie-domeny-lub-subdomeny), użytkownicy utworzeni tutaj nie mogą uzyskać dostępu do statystyk dla tego wpisu MultiSite.
 >
 
 ### Statystyki odwiedzin
@@ -106,5 +106,9 @@ Możesz wyświetlić różne rodzaje wykresów z menu rozwijanego w lewym górny
 - Czas odpowiedzi SQL: czas odpowiedzi zapytań wysyłanych do baz danych Twojego hostingu.
 
 ## Sprawdź również
+
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
+
+Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
 
 Dołącz do społeczności naszych użytkowników na stronie <https://community.ovh.com/en/>.

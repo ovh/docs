@@ -1,7 +1,7 @@
 ---
 title: 'Backing up and exporting a database of your database server'
 excerpt: 'Find out how to back up and export your database'
-updated: 2023-02-15
+updated: 2023-10-26
 ---
 
 ## Objective
@@ -62,7 +62,7 @@ Once you have logged in to phpMyAdmin, click on the name of the database you wan
 
 You have two possible export modes. If you do not have a specific need, we recommend using **quick** mode in **SQL** format.
 
-![Web Cloud Databases](images/web-cloud-databases-export01.png){.thumbnail}
+![Web Cloud Databases](images/pma-export-backup-web-cloud-db.png){.thumbnail}
 
 ##### 1\.2 Exporting a MySQL or MariaDB database from the command line
 
@@ -114,7 +114,7 @@ pg_dump --host=server --port=port --user=usernmame --password=password database_
 
 [Restoring and importing a database to your database server](/pages/web_cloud/web_cloud_databases/restore-import-on-database-server)
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory).
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-sg/support-levels/).
 

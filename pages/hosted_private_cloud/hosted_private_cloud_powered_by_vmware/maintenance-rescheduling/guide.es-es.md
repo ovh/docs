@@ -1,6 +1,6 @@
 ---
 title: Desplazar un mantenimiento programado en su Hosted Private Cloud
-excerpt: "Esta guía explica cómo descubrir un mantenimiento programado en un servicio Hosted Private Cloud powered by VMware"
+excerpt: "Esta guía explica cómo descubrir un mantenimiento programado en un servicio VMware on OVHcloud"
 updated: 2022-11-30
 ---
 
@@ -17,12 +17,12 @@ Cuando se haya programado un mantenimiento en su Hosted Private Cloud, recibirá
 >
 > A título informativo, si una fecha de mantenimiento puede ser modificada por el usuario, las nuevas fechas propuestas estarán dentro de un intervalo de tiempo reducido.
 
-**Esta guía explica cómo transferir la fecha de un mantenimiento programado a la solución Hosted Private Cloud powered by VMware desde el Panel de configuración de OVHcloud o la API de OVHcloud.**
+**Esta guía explica cómo transferir la fecha de un mantenimiento programado a la solución VMware on OVHcloud desde el Panel de configuración de OVHcloud o la API de OVHcloud.**
 
 ## Requisitos
 
 - Haber recibido una notificación de mantenimiento por correo electrónico en la que se indique específicamente que puede "**modificar la fecha de ejecución del mantenimiento**". En caso contrario, la fecha del mantenimiento no puede modificarse.
-- Ser contacto administrador o técnico de la infraestructura [Hosted Private Cloud powered by VMware](https://www.ovhcloud.com/es-es/enterprise/products/hosted-private-cloud/).
+- Ser contacto administrador o técnico de la infraestructura [VMware on OVHcloud](https://www.ovhcloud.com/es-es/enterprise/products/hosted-private-cloud/).
 - Tienes acceso a tu [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) o al panel de [administración de sus servicios a través de la API](https://eu.api.ovh.com/).
 
 ## Procedimiento
@@ -60,7 +60,7 @@ Ejecute la siguiente llamada a la API:
 
 > [!api]
 >
-> @api {POST} /dedicatedCloud/{serviceName}/task/{taskId}/changeMaintenanceExecutionDate
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/task/{taskId}/changeMaintenanceExecutionDate
 >
 
 Introduzca las variables:

@@ -1,7 +1,7 @@
 ---
 title: "Premiers pas avec l'offre MX Plan"
 excerpt: 'Découvrez comment bien débuter avec votre offre MX Plan'
-updated: 2021-07-19
+updated: 2023-11-15
 ---
 
 ## Objectif
@@ -48,7 +48,7 @@ Dans la fenêtre qui s'affiche, renseignez les informations demandées :
 |Prénom|Renseignez un prénom.|
 |Nom|Renseignez un nom.|
 |Nom à afficher|Indiquez le nom qui s'affichera en tant qu'expéditeur lorsque des e-mails seront envoyés avec cette adresse.|
-|Mot de passe|[Définissez un mot de passe](/pages/account/customer/manage-ovh-password#en-pratique) et confirmez-le. Pour des raisons de sécurité, nous vous recommandons de ne pas utiliser deux fois le même mot de passe, d'en choisir un qui n'a aucun rapport avec vos informations personnelles (évitez les mentions à vos nom, prénom et date de naissance, par exemple) et de le renouveler régulièrement.|
+|Mot de passe|[Définissez un mot de passe](/pages/account_and_service_management/account_information/manage-ovh-password#en-pratique) et confirmez-le. Pour des raisons de sécurité, nous vous recommandons de ne pas utiliser deux fois le même mot de passe, d'en choisir un qui n'a aucun rapport avec vos informations personnelles (évitez les mentions à vos nom, prénom et date de naissance, par exemple) et de le renouveler régulièrement.|
 
 Une fois les champs complétés, cliquez sur `Suivant`{.action} puis vérifiez les informations qui s'affichent dans le récapitulatif. Si celles-ci sont correctes, cliquez sur `Valider`{.action}. Réalisez cette étape autant de fois que nécessaire, selon le nombre de comptes à votre disposition.
 
@@ -115,9 +115,9 @@ Pour cela, il vous faut créer une redirection.
 
 Vous pouvez procéder de deux manières :
 
-- créer votre redirection depuis le webmail, via les règles de boite de réception. Pour cela, nous vous invitons à suivre notre guide « [Règles de boîte de réception depuis l’interface OWA](/pages/web/emails/creating-inbox-rules-in-owa-mx-plan#exemple-1-rediriger-des-e-mails-vers-une-autre-adresse) ».
+- créer votre redirection depuis le webmail, via les règles de boite de réception. Pour cela, nous vous invitons à suivre notre guide « [Règles de boîte de réception depuis l’interface OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/creating-inbox-rules-in-owa-mx-plan#exemple-1-rediriger-des-e-mails-vers-une-autre-adresse) ».
 
-- créer votre redirection depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Cette méthode vous permet par exemple de créer un alias, c'est à dire rediriger une adresse e-mail qui n'existe pas vers une adresse e-mail existante. Pour cela, nous vous invitons à suivre notre guide « [Utiliser les redirections e-mail](/pages/web/emails/feature_redirections#nouvelle-version-de-loffre-mx-plan) ».
+- créer votre redirection depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Cette méthode vous permet par exemple de créer un alias, c'est à dire rediriger une adresse e-mail qui n'existe pas vers une adresse e-mail existante. Pour cela, nous vous invitons à suivre notre guide « [Utiliser les redirections e-mail](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections#nouvelle-version-de-loffre-mx-plan) ».
 
 ##### **Répondeur**
 
@@ -218,7 +218,7 @@ Si vous désirez simplement obtenir les éléments nécessaires pour configurer 
 
 Vous souhaitez rediriger vos e-mails vers un autre destinataire, créer un alias ou encore mettre systématiquement en copie une autre adresse e-mail.
 
-Pour cela il vous faut créer une redirection. Nous vous invitons à suivre notre guide « [Utiliser les redirections e-mail](/pages/web/emails/feature_redirections#version-historique-de-loffre-mx-plan) ».
+Pour cela il vous faut créer une redirection. Nous vous invitons à suivre notre guide « [Utiliser les redirections e-mail](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections#version-historique-de-loffre-mx-plan) ».
 
 ##### **Répondeur**
 
@@ -239,8 +239,6 @@ Vous souhaitez envoyer régulièrement une newsletter à vos contacts.
 Pour cela, vous pouvez créer une mailing list. Nous vous invitons à suivre notre guide « [Gérer et utiliser les mailing lists](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_mailing_list) ».
 
 ## Aller plus loin
-
-La migration des offres historiques MX Plan vers les nouvelles offres MX Plan est en cours. Si vous souhaitez demander la migration de votre offre en priorité, vous pouvez suivre les indications de [cette page](https://www.ovh.com/fr/mxplan-migration/#accordion_6001-4).
 
 Si vos besoins évoluent et que vous souhaitez bénéficier de fonctionnalités supplémentaires, vous pouvez également [migrer une adresse e-mail MX Plan vers un compte E-mail Pro ou Exchange](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel).
 

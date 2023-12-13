@@ -1,7 +1,7 @@
 ---
-title: 'Restoring your Web Hosting plan’s storage space'
-excerpt: 'Find out how to restore a file or an entire storage space from your Web Hosting plan'
-updated: 2023-01-12
+title: "Restoring your Web Hosting plan’s storage space"
+excerpt: "Find out how to restore a file or an entire storage space from your Web Hosting plan"
+updated: 2023-12-04
 ---
 
 ## Objective
@@ -79,7 +79,7 @@ Once you are ready to do so, carry on reading the section of this guide that is 
 > 
 > In this case:
 >
-> - Our teams send an email to the hosting [administrator contact](/pages/account/customer/managing_contacts#access-contact-management).
+> - Our teams send an email to the hosting [administrator contact](/pages/account_and_service_management/account_information/managing_contacts#access-contact-management).
 > - The “maintenance” status will appear in your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca){.external}. In the `Web Cloud`{.action} section, click on your service in the `Hosting plans`{.action} section, then on the `General information`{.action} tab.
 > - The hosted site(s) will display a "403 Forbidden" page.
 >
@@ -152,7 +152,7 @@ You will need to enter your primary username (or FTP login) with a suffix determ
 |Last Sunday, at 01:00 (UTC+1)|-snap3|ftpuser**-snap3**|
 |Sunday, 2 weeks ago, at 01:00 (UTC+1)|-snap4|ftpuser**-snap4**|
 
-Please ensure that you replace ‘ftpuser’ with with your own primary FTP username in the above examples. Keep the suffix defining the backup date you would like to access.
+Please ensure that you replace ‘ftpuser’ with your own primary FTP username in the above examples. Keep the suffix defining the backup date you would like to access.
 
 The method for connecting to your storage space will differ depending on the interface or software you are using. Below, we have included an image showing how to connect via the FTP Explorer interface.
 
@@ -164,11 +164,25 @@ Once you have connected, gather the files you want to restore. To do this, explo
 
 Before you move on to the next step, ensure that you have gathered all the files you would like to restore, then disconnect from your storage space.
 
+> [!success]
+>
+> If you are using the **FTP Explorer** interface, please refer to the [help page](https://net2ftp.cluster020.hosting.ovh.net/help.html){.external} to recover your files correctly. You can also access this page via the `Help`{.action} button at the bottom of the interface for connecting to the **FTP Explorer**.
+>
+> If you use another program to log in to your FTP storage space, we recommend that you consult the official documentation for your program to make the changes correctly.
+>
+
 #### Step 4: Restore the files.
 
 Once you have got the files you need to restore, connect to your storage space again. This time, however, do not add the suffix to connect but write only the FTP username. By not entering this suffix, you will connect to the current content on your storage space, and not a backup from an earlier date.
 
 Once you have connected, you can now restore the files you want. To do this, explore the content of your storage space until you find them, then download them, overwriting the old files.
+
+> [!success]
+>
+> If you are using the **FTP Explorer** interface, please refer to the [help page](https://net2ftp.cluster020.hosting.ovh.net/help.html){.external} to restore your files correctly. You can also access this page via the `Help`{.action} button at the bottom of the interface for connecting to the **FTP Explorer**.
+>
+> If you use another program to log in to your FTP storage space, we recommend that you consult the official documentation for your program to make the changes correctly.
+>
 
 ## Go further
 

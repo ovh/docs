@@ -1,7 +1,6 @@
 ---
 title: VMware Storage vMotion
 excerpt: Migrar a quente uma máquina virtual para um host diferente
-legacy_guide_number: g687
 updated: 2020-11-18
 ---
 

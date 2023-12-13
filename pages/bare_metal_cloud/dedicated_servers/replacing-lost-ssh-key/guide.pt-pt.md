@@ -34,7 +34,7 @@ No entanto, pode ligar-se ao seu servidor através do [modo rescue OVHcloud](/pa
 
 Para aceder ao servidor em modo rescue, a chave SSH ativa deve ser desativada primeiro.
 
-Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e navegue até à secção `Chaves SSH`{.action}. Se necessário, consulte o nosso manual ["Criar chaves SSH"](/pages/cloud/dedicated/creating-ssh-keys-dedicated#cpsshkey).
+Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) e navegue até à secção `Chaves SSH`{.action}. Se necessário, consulte o nosso manual ["Criar chaves SSH"](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated#cpsshkey).
 
 A chave pública armazenada na Área de Cliente é inútil sem a chave privada correspondente, pode eliminá-la. Clique no botão <i class="icons-ellipsis icons-border-rounded icons-masterbrand-blue"></i> à direita da chave e selecione a opção `Eliminar a chave`{.action}.
 
@@ -52,8 +52,8 @@ Siga os passos indicados no manual sobre o [modo rescue](/pages/bare_metal_cloud
 
 Quando tiver acesso aos seus ficheiros, abra o ficheiro "authorized_keys" em causa num editor de texto. Este ficheiro armazena as chaves SSH e encontra-se na pasta `home` do utilizador ligado ao seu servidor. (Substitua "USER_NAME" pelo seu nome de utilizador)
 
-```
-rescue-customer:~# sudo nano /mnt/home/USER_NAME/.ssh/authorized_keys
+```bash
+sudo nano /mnt/home/USER_NAME/.ssh/authorized_keys
 ```
 
 Copie a sua nova chave pública (criada na etapa 2) no ficheiro. O conteúdo do ficheiro deverá ser o seguinte exemplo:

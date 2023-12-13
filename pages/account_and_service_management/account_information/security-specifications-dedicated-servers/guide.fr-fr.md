@@ -97,7 +97,7 @@ Les interventions sont des actions réalisées par les équipes OVHcloud dans le
 
 ### 7.1 - Control Plane
 
-A travers son espace client OVHcloud, le client a la possibilité de gérer le service à l'aide de [trois contacts types](/pages/account/customer/managing_contacts#definition).
+A travers son espace client OVHcloud, le client a la possibilité de gérer le service à l'aide de [trois contacts types](/pages/account_and_service_management/account_information/managing_contacts#definition).
 
 Afin de référencer chaque client ayant souscrit à un ou plusieurs services, OVHcloud utilise un compte propriétaire avec un NIC interne. 
 

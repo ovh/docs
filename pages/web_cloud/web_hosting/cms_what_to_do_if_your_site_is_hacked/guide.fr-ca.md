@@ -75,7 +75,7 @@ Concernant OVHcloud, utilisez notre documentation pour :
 - [Modifier le mot de passe d'accès à l'espace de stockage FTP de votre hébergement Web](/pages/web_cloud/web_hosting/ftp_change_password).
 - [Changer le mot de passe d'accès à votre base de données](/pages/web_cloud/web_hosting/sql_change_password).
 
-Nous vous recommandons également d'utiliser un [gestionnaire de mots de passe](/pages/account/customer/manage-ovh-password#utiliser-un-gestionnaire-de-mots-de-passe).
+Nous vous recommandons également d'utiliser un [gestionnaire de mots de passe](/pages/account_and_service_management/account_information/manage-ovh-password#utiliser-un-gestionnaire-de-mots-de-passe).
 
 > [!warning]
 > 
@@ -196,7 +196,7 @@ Mettez à jour votre site web au niveau de son code source, des paramètres de s
 
 Vérifiez les droits d'accès FTP « CHMOD » pour chacun de vos dossiers et fichiers hébergés dans votre espace de stockage.
 Par défaut, nous recommandons d'utiliser au maximum les droits « CHMOD » **705** pour les dossiers et **604** pour les fichiers.
-Retrouvez plus de détails sur les droits « CHMOD » dans la section « Informations utiles » de notre [tutoriel sur l'utilisation du client FTP Filezilla](/pages/web/hosting/ftp_filezilla_user_guide#useful-information).
+Retrouvez plus de détails sur les droits « CHMOD » dans la section « Informations utiles » de notre [tutoriel sur l'utilisation du client FTP Filezilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide#useful-information).
 
 Si vous utilisez un CMS (Wordpress, Joomla!, PrestaShop, Drupal, ...), mettez à jour vos plugins, votre thème et le CMS en lui-même.
 Privilégiez l'utilisation de plugins/thèmes « officiels » et maintenez à jour votre site web le plus régulièrement possible et de manière exhaustive.
@@ -209,7 +209,7 @@ Consultez également notre guide sur [comment sécuriser votre site Web](/pages/
 
 [Se connecter à l'espace de stockage de son hébergement Web](/pages/web_cloud/web_hosting/ftp_connection)
 
-[Modifier la configuration de son hébergement Web](/pages/web_cloud/web_hosting/ovhconfig_modify_system_runtime)
+[Modifier la configuration de son hébergement Web](/pages/web_cloud/web_hosting/configure_your_web_hosting)
 
 [Activer le pare-feu applicatif](/pages/web_cloud/web_hosting/multisites_activating_application_firewall)
 

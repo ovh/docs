@@ -1,12 +1,12 @@
 ---
 title: "Mi sitio es lento. ¿Qué hacer?" 
 excerpt: "Identifique el origen de la lentitud de su sitio web y descubra cómo solucionar esta situación"
-updated: 2022-11-17
+updated: 2023-10-26
 ---
 
  
 > [!primary]
-> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón "Contribuir" de esta página.
 >
 
 ## Objetivo
@@ -159,7 +159,7 @@ Si utiliza una base de datos en una solución **Web Cloud Databases**, consulte 
 
 Si la conexión se ha realizado correctamente, acceda a la siguiente interfaz:
 
-![PHPMyAdmin](images/pma.png){.thumbnail}
+![PHPMyAdmin](images/pma-main-page.png){.thumbnail}
 
 > [!warning]
 >
@@ -199,11 +199,11 @@ A continuación se indican las acciones que debe realizar para identificar las f
 
 #### 2.1 - Compruebe la configuración de su alojamiento web
 
-Compruebe el motor PHP, la versión PHP y el entorno de ejecución utilizados en su alojamiento web, con ayuda de nuestra guía sobre la [configuración de su alojamiento web](/pages/web_cloud/web_hosting/ovhconfig_modify_system_runtime).
+Compruebe el motor PHP, la versión PHP y el entorno de ejecución utilizados en su alojamiento web, con ayuda de nuestra guía sobre la [configuración de su alojamiento web](/pages/web_cloud/web_hosting/configure_your_web_hosting).
 
 Si utiliza en su alojamiento web una versión de PHP obsoleta, el motor "**PHP CGI**" y/o el entorno "**legacy**" y **si su sitio web es compatible**, privilegie el uso del motor "**PHP**" (PHP FPM), el entorno "**stable**" o "**stable64**". con la versión más reciente posible de PHP.
 
-Para comparar las versiones de PHP disponibles en función del entorno de ejecución utilizado, consulte **el etapa 2** de la guía sobre la [configuración de la versión PHP en su alojamiento](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014).
+Para comparar las versiones de PHP disponibles en función del entorno de ejecución utilizado, consulte **el etapa 2** de la guía sobre la [configuración de la versión PHP en su alojamiento](/pages/web_cloud/web_hosting/configure_your_web_hosting).
 
 Utilizar una versión de PHP reciente, el entorno de ejecución "**stable**" o "**stable64**" con el motor "**PHP**" (PHP FPM) hace su sitio mucho más fluido y rápido. A título informativo, el motor "**PHP**" (PHP-FPM) puede ser hasta 50 veces más potente que el motor "**PHP CGI**" para llevar a cabo sus tareas.
 

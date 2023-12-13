@@ -1,7 +1,7 @@
 ---
 title: 'Sauvegarder et exporter une base de données sur votre serveur de bases de données'
 excerpt: 'Découvrez comment sauvegarder et exporter votre base de données'
-updated: 2023-02-15
+updated: 2023-10-26
 ---
 
 ## Objectif
@@ -12,7 +12,7 @@ Votre base de données peut contenir un grand nombre d'informations essentielles
 
 ## Prérequis
 
-- Disposer d'une [instance Web Cloud Databases](https://www.ovh.com/fr/cloud/cloud-databases/){.external} (incluse dans une offre d'[hébergement web Performance](https://www.ovhcloud.com/fr/web-hosting/)).
+- Disposer d'une [instance Web Cloud Databases](https://www.ovhcloud.com/fr/web-cloud/databases/){.external} (incluse dans une offre d'[hébergement web Performance](https://www.ovhcloud.com/fr/web-hosting/)).
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}.
 
 ## En pratique
@@ -65,7 +65,7 @@ Une fois connecté sur phpMyAdmin, cliquez sur le nom de la base de données que
 
 Vous avez deux modes d'exportation possibles. Si vous n'avez pas de besoin spécifique, nous vous conseillons d'utiliser le mode **rapide** au format **SQL**.
 
-![Web Cloud Databases](images/web-cloud-databases-export01.png){.thumbnail}
+![Web Cloud Databases](images/pma-export-backup-web-cloud-db.png){.thumbnail}
 
 ##### 1\.2 Exporter ma base MySQL ou MariaDB en ligne de commande
 

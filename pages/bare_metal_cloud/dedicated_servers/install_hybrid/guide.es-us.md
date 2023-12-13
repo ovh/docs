@@ -36,7 +36,7 @@ Una vez conectado a la [API de OVHcloud](https://ca.api.ovh.com/){.external}, de
 
 > [!api]
 >
-> @api {GET} /dedicated/server
+> @api {v1} /dedicated/server GET /dedicated/server
 >
 
 Haga clic en `Execute`{.action} e identifique el nombre del servidor híbrido.
@@ -51,7 +51,7 @@ Para obtenerlo, vaya a la siguiente llamada a la API:
 
 > [!api]
 >
-> @api {GET} /dedicated/server/{serviceName}/specifications/hardware
+> @api {v1} /dedicated/server GET /dedicated/server/{serviceName}/specifications/hardware
 >
 
 Introduzca en el campo **serviceName** el nombre del servidor obtenido anteriormente y haga clic en el botón `Execute`{.action}. Se mostrará la información relativa al hardware del servidor. Localice el **diskGroupId** en el apartado **diskGroups**.
@@ -68,7 +68,7 @@ Realice la siguiente llamada a la API para ver la lista de sistemas operativos c
 
 > [!api]
 >
-> @api {GET} /dedicated/server/{serviceName}/install/compatibleTemplates
+> @api {v1} /dedicated/server GET /dedicated/server/{serviceName}/install/compatibleTemplates
 >
 
 ![Plantillas compatibles](images/templates-01.png){.thumbnail}
@@ -77,7 +77,7 @@ Anote el nombre de la plantilla correspondiente al sistema operativo que haya el
 
 > [!api]
 >
-> @api {POST} /dedicated/server/{serviceName}/install/start
+> @api {v1} /dedicated/server POST /dedicated/server/{serviceName}/install/start
 >
 
 Introduzca la referencia del servidor en el campo **serviceName**, el diskGroupId (1) en el campo **diskGroupId** y, por último, el nombre de la plantilla en el campo **templateName**.
@@ -90,7 +90,7 @@ El sistema operativo se instalará. Puede consultar el progreso de la operación
 
 > [!api]
 >
-> @api {GET} /dedicated/server/{serviceName}/install/status
+> @api {v1} /dedicated/server GET /dedicated/server/{serviceName}/install/status
 >
 
 ## Más información

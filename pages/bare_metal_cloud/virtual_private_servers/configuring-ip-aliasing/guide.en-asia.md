@@ -41,7 +41,7 @@ Concerning different distribution releases, please note that the proper procedur
 
 |Term|Description|Examples|
 |---|---|---|
-|ADDITIONAL_IP|An Additional IP IP address assigned to your service|169.254.10.254|
+|ADDITIONAL_IP|An Additional IP address assigned to your service|169.254.10.254|
 |NETWORK_INTERFACE|The name of the network interface|*eth0*, *ens3*|
 |ID|ID of the IP alias, starting with *0* (depending on the number of additional IPs there are to configure)|*0*, *1*|
 

@@ -34,12 +34,12 @@ Dans l'API, l'état de santé des serveurs est disponible dans le tableau server
 
 > [!api]
 >
-> @api {GET} /ipLoadbalancing/{serviceName}/http/farm/{farmId}/server/{serverId}
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/http/farm/{farmId}/server/{serverId}
 > 
 
 > [!api]
 >
-> @api {GET} /ipLoadbalancing/{serviceName}/tcp/farm/{farmId}/server/{serverId}
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/tcp/farm/{farmId}/server/{serverId}
 > 
 
 #### Résultat
@@ -80,7 +80,7 @@ Pour chaque instance, nous avons plusieurs informations :
 
 > [!api]
 >
-> @api {GET} /ipLoadbalancing/{serviceName}/instancesState
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/instancesState
 > 
 
 ## Aller plus loin

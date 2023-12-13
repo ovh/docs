@@ -29,7 +29,7 @@ Les attributs principaux d'un pool sont l'algorithme (par exemple `Round Robin`)
 
 Un membre définit la configuration d'un serveur à qui le trafic est envoyé. Ses attributs principaux sont une IP (`192.168.1.10`) et le port (`443`). Un membre fait partie d'un pool.
 
-### Heath Monitor
+### Health Monitor
 
 Le Health Monitor définit comment le load balancer va vérifier la santé des membres qui constituent le pool. Ses attributs principaux sont la méthode de vérification (par exemple `PING`) et des délais / timeouts. Un Health Monitor est associé à exactement un pool. 
 

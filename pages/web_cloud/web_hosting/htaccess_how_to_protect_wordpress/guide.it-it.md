@@ -114,7 +114,7 @@ Esistono diversi modi per definire e modificare i parametri che cambieranno il c
 
 > [!warning]
 >
-> Prima di seguire gli step qui sotto, è necessario reindirizzare il protocollo HTTP verso HTTPS. Per effettuare questa operazione, segui le istruzioni contenute nella guida [Attivare il protocollo HTTPS su un sito Internet tramite SSL](/pages/web/hosting/ssl-activate-https-website#step-1-attiva-il-certificato-ssl-sullhosting).
+> Prima di seguire gli step qui sotto, è necessario reindirizzare il protocollo HTTP verso HTTPS. Per effettuare questa operazione, segui le istruzioni contenute nella guida [Attivare il protocollo HTTPS su un sito Internet tramite SSL](/pages/web_cloud/web_hosting/ssl-activate-https-website#step-1-attiva-il-certificato-ssl-sullhosting).
 
 ### Impedire la visualizzazione delle directory e delle sottodirectory
 

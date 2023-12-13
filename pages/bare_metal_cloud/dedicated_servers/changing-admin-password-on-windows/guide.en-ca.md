@@ -1,14 +1,14 @@
 ---
-title: 'Changing the admin password on a Windows dedicated server'
-excerpt: 'Find out how to change the admin password on a Windows dedicated server'
-updated: 2021-01-12
+title: Changing the admin password on a Windows dedicated server
+excerpt: Find out how to use the OVHcloud rescue mode to reset the password of the Administrator account on a Windows dedicated server
+updated: 2023-09-18
 ---
 
 ## Objective
 
 When you install or reinstall a Windows operating system, you are provided with a password for administrative access. We strongly recommend that you change this initial password, as detailed in our guide about [securing a dedicated server](/pages/bare_metal_cloud/dedicated_servers/securing-a-dedicated-server). In case you have lost your admin password, it needs to be reset using rescue mode.
 
-**This guide will take you through the process of changing your server's admin password via the available rescue mode configurations for a Windows OS.**
+**This guide explains how to reset the password of the admin account of a Windows Server OS via the OVHcloud rescue mode.**
 
 ## Requirements
 
@@ -21,26 +21,19 @@ The following steps describe the process of changing the local admin password by
 
 ### Step 1: Rebooting the server into rescue mode
 
-The system has to be started in rescue mode before the admin password can be changed. Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca), go to the `Bare Metal Cloud`{.action} section and select your server from `Dedicated Servers`{.action}.
+The system has to be started in rescue mode before the admin password can be changed.
 
-The netboot needs to be switched to "rescue64-pro (Customer rescue system (Linux))". Look for "Boot" in the **General information** box and click on `...`{.action}, then on `Edit`{.action}.<br>
-In the next page, select **Boot in rescue mode** and select "rescue64-pro" from the menu. Specify an alternative email address below if you do *not* want the login credentials sent to your customer account's primary address.
-<br>Click on `Next`{.action} and `Confirm`{.action}.
-
-![rescuemode](images/adminpw_win_001.png){.thumbnail}
-
-Once the change is completed, click on `...`{.action} next to "Status" in the box labelled **Service status**. Select `Restart`{.action} and the server will restart into rescue mode.<br>This might take a few minutes; you can check the status on the `Tasks`{.action} tab. An email will be sent which contains some information and the login password for the rescue mode's "root" user.
-
-![rescuereboot](images/adminpw_win_02.png){.thumbnail}
-
-For more information about rescue mode, please refer to [this guide](/pages/bare_metal_cloud/dedicated_servers/rescue_mode).
+For detailed instructions, please refer to the [rescue mode guide](/pages/bare_metal_cloud/dedicated_servers/rescue_mode).
 
 ### Step 2: Mounting the system partition
 
 Connect to your server via SSH. (Consult the [SSH introduction guide](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction) if necessary.) Since it is a Windows server, you will see partitions labelled "Microsoft LDM data".
 
+```bash
+fdisk -l
 ```
-# fdisk -l
+
+```text
 Disk /dev/sda: 1.8 TiB, 2000398934016 bytes, 3907029168 sectors
 Units: sectors of 1 * 512 = 512 bytes
 Sector size (logical/physical): 512 bytes / 512 bytes
@@ -58,13 +51,16 @@ Device          Start        End    Sectors  Size Type
 
 In the example output, "sda4" must be the (file) system partition, as determined by its size. Usually, there is a mirrored second output which in this case would be "/dev/sdb**X**". That is because in most cases, the server will have multiple disks with identical partition schemes. For the password reset process, only the first one is important. Next, mount this partition:
 
-```
-# mount /dev/sda4 /mnt
+```bash
+mount /dev/sda4 /mnt
 ```
 Verify the mountpoint:
 
+```bash
+lsblk
 ```
-# lsblk
+
+```text
 NAME   MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
 sdb      8:16   0  1.8T  0 disk
 ├─sdb4   8:20   0  1.8T  0 part
@@ -82,7 +78,7 @@ sda      8:0    0  1.8T  0 disk
 
 In the example above, the operation succeeded. If the mounting failed, you might receive an error message like this: 
 
-```
+```text
 The disk contains an unclean file system (0, 0).
 Metadata kept in Windows cache, refused to mount.
 Failed to mount '/dev/sda4': Operation not permitted
@@ -93,20 +89,27 @@ read-only with the 'ro' mount option.
 
 In this case, use the following command and then try to mount again.
 
-```
-# ntfsfix /dev/sda4
-# mount /dev/sda4 /mnt
+```bash
+ntfsfix /dev/sda4
+mount /dev/sda4 /mnt
 ```
 
 ### Step 3: Clearing the current password
 
 This step involves manipulating the *SAM* file with a tool to clear the admin user's password. Change to the appropriate directory and list the Windows users:
 
+```bash
+cd /mnt/Windows/System32/config
+/mnt/Windows/System32/config#
 ```
-# cd /mnt/Windows/System32/config
-/mnt/Windows/System32/config# chntpw -l SAM
 
-chntpw version 1.00 140201, (c) Petter N Hagen
+
+```bash
+chntpw -l SAM
+```
+
+```text
+chntpw version 140201, (c) Petter N Hagen
 Hive <SAM> name (from header): <\SystemRoot\System32\Config\SAM>
 ROOT KEY at offset: 0x001020 * Subkey indexing type is: 686c <lh>
 File size 65536 [10000] bytes, containing 8 pages (+ 1 headerpage)
@@ -120,13 +123,16 @@ Used for data: 359/39024 blocks/bytes, unused: 33/18064 blocks/bytes.
 | 01f8 | WDAGUtilityAccount             |        | dis/lock |
 ```
 
-If the command does not work, install the tool first: `apt get install chntpw`.
+If the command does not work, install the tool first: `apt install chntpw`.
 
 Clear the password for the admin user with the following command. (Choose "Administrator" if "admin" does not exist.)
 
+```bash
+chntpw -u admin SAM
 ```
-# chntpw -u admin SAM
-chntpw version 1.00 140201, (c) Petter N Hagen
+
+```text
+chntpw version 140201, (c) Petter N Hagen
 Hive <SAM> name (from header): <\SystemRoot\System32\Config\SAM>
 ROOT KEY at offset: 0x001020 * Subkey indexing type is: 686c <lh>
 File size 65536 [10000] bytes, containing 8 pages (+ 1 headerpage)
@@ -162,9 +168,9 @@ Total  login count: 5
  q - Quit editing user, back to user select
 Select: [q] >
 ```
-Type "1" and press Enter ("↩"). (Make use of option 2 first if there is an "X" next to "Disabled".)
+Type "1" and press Enter . (Make use of option 2 first if there is an "X" next to "Disabled".)
 
-```
+```text
 Select: [q] > 1
 Password cleared!
 ================= USER EDIT ====================
@@ -201,7 +207,7 @@ Select: [q] >
 ```
 Type "q" and press Enter to quit the tool. Type "y" when prompted and press Enter.
 
-```
+```text
 Select: [q] > q
  
 Hives that have changed:
@@ -217,11 +223,19 @@ First, change the netboot back to **Boot from the hard disk** in your [OVHcloud 
 
 Back in the CLI, unmount the partition and restart the server with these commands:
 
+```bash
+cd
 ```
-# cd
-# umount /mnt
-# reboot
 
+```bash
+umount /mnt
+```
+
+```bash
+reboot
+```
+
+```text
 Broadcast message from root@rescue.ovh.net on pts/0 (Wed 2020-05-27 11:28:53 CEST):
 
 The system is going down for reboot NOW!
@@ -253,7 +267,7 @@ A command line window (cmd) should open when the KVM session is established.
 
 Set the password for the current user ("Administrator"):
 
-```
+```powershell
 net user Administrator *
 ```
 
@@ -268,17 +282,9 @@ It is advisable to use the virtual keyboard when typing passwords in this interf
 
 #### Step 1: Rebooting the server into rescue mode
 
-The system has to be started in rescue mode before the admin password can be changed. Log in to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca), go to the `Bare Metal Cloud`{.action} section and select your server from `Dedicated Servers`{.action}.
+The system has to be started in rescue mode (WinRescue) before the admin password can be changed.
 
-The netboot needs to be switched to "WinRescue (Rescue System for Windows)". Look for "Boot" in the **General information** box and click on `...`{.action}, then on `Edit`{.action}. In the next page, select **Boot in rescue mode** and select "WinRescue" from the menu. Specify an email address below if the login credentials should *not* be sent to your customer account's primary address. Click on `Next`{.action} and `Confirm`{.action}.
-
-![winrescuemode](images/adminpw_win_008.png){.thumbnail}
-
-Once the change is completed, click on `...`{.action} next to "Status" in the box labelled **Service status**. Select `Restart`{.action} and the server will restart into rescue mode. This might take a few minutes; you can check the status on the `Tasks`{.action} tab. An email will be sent which contains some information and the login password for the rescue mode's "root" user.
-
-![rescuereboot](images/adminpw_win_02.png){.thumbnail}
-
-For more information about rescue mode, please refer to [this guide](/pages/bare_metal_cloud/dedicated_servers/rescue_mode).
+For detailed instructions, please refer to the [rescue mode guide](/pages/bare_metal_cloud/dedicated_servers/rescue_mode).
 
 #### Step 2: Clearing the current password
 

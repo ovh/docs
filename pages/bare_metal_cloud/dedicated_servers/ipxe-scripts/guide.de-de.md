@@ -45,7 +45,7 @@ Personalisierte Skripte können in folgenden Fällen interessant sein:
 
 > [!api]
 >
-> @api {PUT} /dedicated/server/{serviceName}
+> @api {v1} /dedicated/server PUT /dedicated/server/{serviceName}
 >
 
 Geben Sie Ihr Skript direkt im Attribut `bootScript` ein.
@@ -54,7 +54,7 @@ Geben Sie Ihr Skript direkt im Attribut `bootScript` ein.
 
 > [!api]
 >
-> @api {GET} /dedicated/server/{serviceName}
+> @api {v1} /dedicated/server GET /dedicated/server/{serviceName}
 >
 
 Ihr Skript ist sichtbar im Attribut `bootScript`.
@@ -95,21 +95,21 @@ Sie können nun im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=goto
 
 > [!api]
 >
-> @api {PUT} /dedicated/server/{serviceName}
+> @api {v1} /dedicated/server PUT /dedicated/server/{serviceName}
 >
 
 Wählen Sie `1` für das Attribut `bootId` aus.
 
 > [!api]
 >
-> @api {GET} /dedicated/server/{serviceName}
+> @api {v1} /dedicated/server GET /dedicated/server/{serviceName}
 >
 
 Sie werden feststellen, dass der Wert des Attributs `bootScript` jetzt null ist.
 
 ## Weiterführende Informationen <a name="gofurther"></a>
 
-[Dedicated Server neu starten](/pages/cloud/dedicated/getting-started-with-dedicated-server#reboot)
+[Dedicated Server neu starten](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server#reboot)
 
 [Rescue-Modus](/pages/bare_metal_cloud/dedicated_servers/rescue_mode)
 

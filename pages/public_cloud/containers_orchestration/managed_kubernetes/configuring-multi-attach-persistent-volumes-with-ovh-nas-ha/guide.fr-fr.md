@@ -4,27 +4,6 @@ excerpt: 'Find out how to configure a multi-attach persistent volume using OVHcl
 updated: 2023-06-30
 ---
 
-<style>
- pre {
-     font-size: 14px;
- }
- pre.console {
-   background-color: #300A24;
-   color: #ccc;
-   font-family: monospace;
-   padding: 5px;
-   margin-bottom: 5px;
- }
- pre.console code {
-   b   font-family: monospace !important;
-   font-size: 0.75em;
-   color: #ccc;
- }
- .small {
-     font-size: 0.75em;
- }
-</style>
-
 ## Objective
 
 OVHcloud Managed Kubernetes natively integrates Block Storage as persistent volumes. This technology may however not be suited to some legacy or non cloud-native applications, often requiring to share this persistent data accross different pods on multiple worker nodes (ReadWriteMany or RWX). If you would need to do this for some of your workloads, one solution is to use NFS volumes. [OVHcloud NAS-HA](https://www.ovh.co.uk/nas/) is a managed solution that lets you easily configure an NFS server and multiple NFS volumes. In this tutorial we are going to see how to configure your OVHcloud Managed Kubernetes cluster to use [OVHcloud NAS-HA](https://www.ovh.co.uk/nas/) as an NFS provider for [Kubernetes Persistent Volumes](https://kubernetes.io/docs/concepts/storage/persistent-volumes/).
@@ -56,9 +35,10 @@ Get our Kubernetes nodes IP:
 kubectl get nodes -o jsonpath='{ $.items[*].status.addresses[?(@.type=="InternalIP")].address }'
 ```
 
-<pre class="console"><code>$ kubectl get nodes -o jsonpath='{ $.items[*].status.addresses[?(@.type=="InternalIP")].address }'
+```console
+$ kubectl get nodes -o jsonpath='{ $.items[*].status.addresses[?(@.type=="InternalIP")].address }'
 51.77.204.175 51.77.205.79
-</code></pre>
+```
 
 Click on the *Manage Access* menu of our newly created partition:
 ![Manage Access of the NFS partition](images/manage-nfs-partition-access.png){.thumbnail}
@@ -95,14 +75,15 @@ helm repo add nfs-subdir-external-provisioner https://kubernetes-sigs.github.io/
 helm install nfs-subdir-external-provisioner -n kube-system nfs-subdir-external-provisioner/nfs-subdir-external-provisioner -f values.yaml
 ```
 
-<pre class="console"><code>$ helm install nfs-subdir-external-provisioner -n kube-system nfs-subdir-external-provisioner/nfs-subdir-external-provisioner -f values.yaml
+```console
+$ helm install nfs-subdir-external-provisioner -n kube-system nfs-subdir-external-provisioner/nfs-subdir-external-provisioner -f values.yaml
 NAME: nfs-subdir-external-provisioner
 LAST DEPLOYED: Mon Jun  8 14:39:57 2020
 NAMESPACE: kube-system
 STATUS: deployed
 REVISION: 1
 TEST SUITE: None
-</code></pre>
+```
 
 Let's verify our installation:
 
@@ -110,10 +91,11 @@ Let's verify our installation:
 kubectl get deploy nfs-subdir-external-provisioner -n kube-system
 ```
 
-<pre class="console"><code>$ kubectl get deploy nfs-subdir-external-provisioner -n kube-system
+```console
+$ kubectl get deploy nfs-subdir-external-provisioner -n kube-system
 NAME                              READY   UP-TO-DATE   AVAILABLE   AGE
 nfs-subdir-external-provisioner   1/1     1            1           36s
-</code></pre>
+```
 
 ### Step 3 - Create and use an NFS persistent volume
 

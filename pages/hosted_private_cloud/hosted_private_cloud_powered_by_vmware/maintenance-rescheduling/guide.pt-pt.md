@@ -1,6 +1,6 @@
 ---
 title: "Desativar uma manutenção programada no seu Hosted Private Cloud"
-excerpt: "Saiba como transferir uma manutenção programada para o seu serviço Hosted Private Cloud powered by VMware"
+excerpt: "Saiba como transferir uma manutenção programada para o seu serviço VMware on OVHcloud"
 updated: 2022-11-30
 ---
 
@@ -17,12 +17,12 @@ Quando uma manutenção é programada no seu Hosted Private Cloud, ser-lhe-á en
 >
 > Para informação, quando uma data de manutenção pode ser alterada por si, as novas datas propostas estão incluídas num intervalo de tempo reduzido.
 
-**Saiba como adiar a data de uma manutenção programada para o seu Hosted Private Cloud powered by VMware a partir da Área de Cliente OVHcloud ou da API OVHcloud.**
+**Saiba como adiar a data de uma manutenção programada para o seu VMware on OVHcloud a partir da Área de Cliente OVHcloud ou da API OVHcloud.**
 
 ## Requisitos
 
 - Ter recebido um e-mail de notificação de manutenção indicando especificamente que pode "**alterar a data de execução da manutenção**". Caso contrário, a data da manutenção não pode ser alterada.
-- Ser o contacto administrador ou técnico da infraestrutura [Hosted Private Cloud powered by VMware](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/).
+- Ser o contacto administrador ou técnico da infraestrutura [VMware on OVHcloud](https://www.ovhcloud.com/pt/enterprise/products/hosted-private-cloud/).
 - Ter acesso à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt) ou à [interface de administração dos seus serviços através da API](https://eu.api.ovh.com/).
 
 ## Instruções
@@ -60,7 +60,7 @@ Execute a seguinte chamada API:
 
 > [!api]
 >
-> @api {POST} /dedicatedCloud/{serviceName}/task/{task id}/changeMaintenanceExecutionDate
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/task/{taskId}/changeMaintenanceExecutionDate
 >
 
 Introduza as variáveis:

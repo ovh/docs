@@ -80,7 +80,7 @@ La seule différence sera l'autonomie ou non de l'utilisateur pour la validation
 
 Il est possible d'utiliser plusieurs applications tierces nécessitant la connexion au vCenter.
 
-Ces applications doivent être préalablement autorisées au travers de la politique d'accès au vCenter qui est paramétrable dans votre [espace client](/pages/cloud/private-cloud/manager_ovh_private_cloud#securite)
+Ces applications doivent être préalablement autorisées au travers de la politique d'accès au vCenter qui est paramétrable dans votre [espace client](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/manager_ovh_private_cloud#securite)
 
 Ces applications vont alors pouvoir accéder à nos infrastructures, mais ne vont pas forcément gérer la double authentification.
 
@@ -94,35 +94,35 @@ Pour ajouter les adresses IP publiques de vos applicatifs à cette seconde *whit
 
 > [!api]
 >
-> @api {GET} /dedicatedCloud/{serviceName}/twoFAWhitelist
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/twoFAWhitelist
 >
 
 - Ajouter une adresse IP au *bypass* de la double authentification.
 
 > [!api]
 >
-> @api {POST} /dedicatedCloud/{serviceName}/twoFAWhitelist
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/twoFAWhitelist
 >
 
 - Afficher les informations d'une adresse IP autorisée (nécessite un ID récupéré avec le premier appel).
 
 > [!api]
 >
-> @api {GET} /dedicatedCloud/{serviceName}/twoFAWhitelist/{id}
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/twoFAWhitelist/{id}
 >
 
 - Supprimer une adresse IP de la liste d'autorisation.
 
 > [!api]
 >
-> @api {DELETE} /dedicatedCloud/{serviceName}/twoFAWhitelist/{id}
+> @api {v1} /dedicatedCloud DELETE /dedicatedCloud/{serviceName}/twoFAWhitelist/{id}
 >
 
 - Modifier les informations d'une adresse IP autorisée.
 
 > [!api]
 >
-> @api {POST} /dedicatedCloud/{serviceName}/twoFAWhitelist/{id}/changeProperties
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/twoFAWhitelist/{id}/changeProperties
 >
 
 ## Aller plus loin

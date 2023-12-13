@@ -1,7 +1,7 @@
 ---
 title: Creare e connettersi a un’istanza Public Cloud
 excerpt: Come eseguire le prime operazioni su un servizio Public Cloud dopo aver creato un progetto
-updated: 2023-01-26
+updated: 2023-12-01
 ---
 
 > [!primary]
@@ -155,19 +155,18 @@ Clicca sul pulsante `Aggiungi una chiave SSH`{.action}. Nella nuova pagina, inse
 
 Accedi allo [Spazio Cliente OVHcloud, vai alla sezione `Public Cloud`{.action} e seleziona il tuo progetto Public Cloud. Nella Home page, clicca su `Crea un’istanza`{.action}. (È possibile trovare la stessa funzionalità nella pagina “Istanze”, cliccando su`Istanze`{.action} nella barra di navigazione a sinistra sotto alla voce “Compute”.)
 
-![instance select](images/instance-creation-01-2023.png){.thumbnail}
+![instance select](images/instance-creation-01-02-2023.png){.thumbnail}
 
 Per prima cosa, seleziona un modello di server in base alle tue esigenze. La procedura guidata fornisce una descrizione dei diversi casi d'uso e della disponibilità del modello di server. Puoi scegliere tra le seguenti categorie personalizzate:
 
 | Tipo di Server | Risorse garantite | Note di utilizzo |
 | :---         |     :---:      |          :--- |
 | General Purpose   | ✓     | Server di sviluppo, applicazioni business o web    |
-| CPU     | ✓       | Codifica video o altri calcoli intensivi      |
-| RAM   | ✓     | Database, analisi e calcoli in-memory    |
+| Compute Optimized     | ✓       | Codifica video o altri calcoli intensivi      |
+| Memory Optimized   | ✓     | Database, analisi e calcoli in-memory    |
 | GPU     | ✓       | Potenza di elaborazione parallela di massa (rendering, Big Data, deep learning, etc.)       |
-| Sandbox    | -       | Hosting in risorse condivise per ambienti di test e sviluppo      |
 | Discovery    | -       | Hosting in risorse condivise per ambienti di test e sviluppo      |
-| IOPS   | ✓     | Ottimizzato per il trasferimento dei dati su disco    |
+| Storage Optimized   | ✓     | Ottimizzato per il trasferimento dei dati su disco    |
 | Metal | ✓ | Risorse dedicate con accesso diretto alle risorse di calcolo, di storage e di rete|
 
 > [!primary]
@@ -181,7 +180,7 @@ Nello step successivo, seleziona un datacenter per la tua istanza Public Cloud.
 
 Nello step 3 seleziona un sistema operativo per l’istanza. Le immagini disponibili in questo step dipenderanno dalle scelte effettuate negli step precedenti, ad esempio per quanto riguarda la compatibilità con il tipo di server e la regione. Sono disponibili anche sistemi operativi con applicazioni preinstallate. 
 
-![image select](images/instance-creation-02-2022.png){.thumbnail}
+![image select](images/instance-creation-02-2023.png){.thumbnail}
 
 > [!primary]
 >
@@ -220,6 +219,11 @@ Una volta completata l’operazione, clicca su `Continua`{.action} per procedere
 
 Si consiglia di scegliere la fatturazione oraria se non si è sicuri del periodo di utilizzo, poiché non è possibile sceglierla dopo l'erogazione del servizio. Avrete la possibilità di passare a un abbonamento mensile non appena l'istanza sarà disponibile nella pagina "Instances".
 
+> [!primary]
+>
+>Se scegli una delle nostre istanze *Compute* attuali, per motivi tecnici sarà disponibile solo l'opzione di fatturazione **oraria**.
+>
+
 > [!warning]
 >
 >Scegliendo la fatturazione mensile per la tua istanza, ti impegni a mantenere questa tariffa almeno fino alla fine del mese in corso. A prescindere dal fatto che l’istanza sia in uso oppure no.
@@ -242,7 +246,7 @@ In caso di problemi di connessione, ad esempio errori relativi alle chiavi SSH, 
 
 > [!primary]
 >
-Se hai creato un'istanza senza chiave SSH tramite l'API OVHcloud o l'interfaccia Openstack Horizon, puoi aggiungere una chiave SSH alla tua istanza solo attraverso [modalità rescue](/pages/public_cloud/compute/put_an_instance_in_rescue_mode), seguendo le istruzioni descritte in [questa sezione della guida appropriata](/pages/platform/public-cloud/replacing_lost_ssh_key#procedura).
+Se hai creato un'istanza senza chiave SSH tramite l'API OVHcloud o l'interfaccia Openstack Horizon, puoi aggiungere una chiave SSH alla tua istanza solo attraverso [modalità rescue](/pages/public_cloud/compute/put_an_instance_in_rescue_mode), seguendo le istruzioni descritte in [questa sezione della guida appropriata](/pages/public_cloud/compute/replacing_lost_ssh_key#procedura).
 >
 
 #### Connettersi a un’istanza Linux da Linux/Mac

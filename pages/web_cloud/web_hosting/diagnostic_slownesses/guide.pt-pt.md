@@ -1,7 +1,7 @@
 ---
 title: "O meu site é lento. O que fazer?" 
 excerpt: "Identifique a origem da lentidão do seu website e descubra como resolver esta situação"
-updated: 2022-11-17
+updated: 2023-10-26
 ---
 
  
@@ -159,7 +159,7 @@ Se utiliza uma base de dados numa oferta **Web Cloud Databases**, consulte o nos
 
 Se a ligação for bem-sucedida, poderá aceder à seguinte interface:
 
-![PHPMyAdmin](images/pma.png){.thumbnail}
+![PHPMyAdmin](images/pma-main-page.png){.thumbnail}
 
 > [!warning]
 >
@@ -199,11 +199,11 @@ Encontre aqui as ações a realizar para identificar a(s) fonte(s) da(s) lentid�
 
 #### 2.1 - Verifique a configuração do seu alojamento web
 
-Verifique o motor PHP, a versão PHP e o ambiente de execução utilizados no seu alojamento web, através do nosso guia sobre a [configuração do seu alojamento web](/pages/web_cloud/web_hosting/ovhconfig_modify_system_runtime).
+Verifique o motor PHP, a versão PHP e o ambiente de execução utilizados no seu alojamento web, através do nosso guia sobre a [configuração do seu alojamento web](/pages/web_cloud/web_hosting/configure_your_web_hosting).
 
 Se utiliza no seu alojamento web uma versão de PHP obsoleta, o motor "**PHP CGI**" e/ou o ambiente "**legacy**" e **se o seu website for compatível**, dê preferência à utilização do motor "**PHP**" (PHP FPM), o ambiente "**stable**" ou "**stable64**" com a versão de PHP mais recente possível.
 
-Para comparar as versões de PHP disponíveis em função do ambiente de execução utilizado, consulte ***a etapa 2** do guia sobre a [configuração da versão PHP no seu alojamento](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014).
+Para comparar as versões de PHP disponíveis em função do ambiente de execução utilizado, consulte ***a etapa 2** do guia sobre a [configuração da versão PHP no seu alojamento](/pages/web_cloud/web_hosting/configure_your_web_hosting).
 
 Utilizar uma versão de PHP recente, o ambiente de execução "**stable**" ou "**stable64**" com o motor "**PHP**" (PHP FPM) torna o seu site muito mais fluido e rápido. A título indicativo, o motor "**PHP**" (PHP FPM) pode ter um desempenho 50 vezes superior ao do motor "**PHP CGI**" para executar as suas tarefas.
 
@@ -303,4 +303,4 @@ Para serviços especializados (referenciamento, desenvolvimento, etc), contacte 
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
 
-Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>. 
+Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

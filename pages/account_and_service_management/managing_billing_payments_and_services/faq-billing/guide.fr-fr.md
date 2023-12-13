@@ -138,7 +138,7 @@ Si vous n'avez pas enregistré de moyen de paiement, mais que vous possédez des
 #### Trucs et astuces
 
 Vous êtes en possession de votre identifiant et de votre mot de passe OVHcloud ? Vous pouvez régler votre facture.
-Vous pouvez également consulter ce guide détaillé : [Gérer ses factures OVHcloud - Régler mon solde](/pages/account/billing/invoice_management#regler-mon-solde).
+Vous pouvez également consulter ce guide détaillé : [Gérer ses factures OVHcloud - Régler mon solde](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#regler-mon-solde).
 
 ### Comment vérifier l'état de mon paiement ?
 

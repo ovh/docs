@@ -52,8 +52,6 @@ Vários campos deverão ser preenchidos para criar o seu bloco IP
 > [!success]
 >
 > Antes da entrega, terá de pagar as taxas de ativação do bloco IP.
->  
-> Os custos de renovação dos IP são gratuitos.
 >
 
 Após ter confirmado o último passo, receberá uma nota de encomenda do seu bloco IP. Se esta estiver correta, só precisará de a pagar através dos métodos de pagamento disponíveis na parte inferior da página.
@@ -68,7 +66,7 @@ Utilize a seguinte chamada API:
 
 > [!api]
 >
-> @api {POST} /ip/{ip}/move
+> @api {v1} /ip POST /ip/{ip}/move
 > 
 
 Os campos devem ser preenchidos da seguinte forma:
@@ -87,7 +85,7 @@ Se tiver de desassociar o bloco IP mais tarde, pode utilizar esta chamada API pa
 
 > [!api]
 >
-> @api {POST} /ip/{ip}/park
+> @api {v1} /ip POST /ip/{ip}/park
 > 
 
 > [!warning]

@@ -1,7 +1,7 @@
 ---
-title: Statistiken und Logs eines Webhostings einsehen
-excerpt: Erfahren Sie hier, wie Sie die Statistiken und Logs Ihrer Webseiten abrufen
-updated: 2023-08-04
+title: "Statistiken und Logs eines Webhostings einsehen"
+excerpt: "Erfahren Sie hier, wie Sie die Statistiken und Logs Ihrer Webseiten abrufen"
+updated: 2023-11-20
 ---
 
 > [!primary]
@@ -52,7 +52,7 @@ Rufen Sie im Tab Ihres Browsers, in dem das Statistikfenster angezeigt wird, den
 
 > [!warning] 
 >
-> Wenn Sie die separaten Logs bei einem [Multisite-Eintrag](/pages/web/hosting/multisites_configure_multisite#schritt-2-eine-domain-oder-subdomain-hinzufugen) aktiviert haben, können die hier erstellten Benutzer nicht auf die Statistiken dieses Multisite-Eintrags zugreifen.
+> Wenn Sie die separaten Logs bei einem [Multisite-Eintrag](/pages/web_cloud/web_hosting/multisites_configure_multisite#schritt-2-eine-domain-oder-subdomain-hinzufugen) aktiviert haben, können die hier erstellten Benutzer nicht auf die Statistiken dieses Multisite-Eintrags zugreifen.
 >
 
 ### Besucherstatistiken
@@ -106,5 +106,9 @@ Sie können im Dropdown-Menü in der oberen linken Ecke verschiedene Arten von G
 - SQL Antwortzeiten: Antwortzeit der an die Datenbanken Ihres Hostings gesendeten Anfragen.
 
 ## Weiterführende Informationen
+
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

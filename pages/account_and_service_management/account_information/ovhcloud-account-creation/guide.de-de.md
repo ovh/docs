@@ -31,7 +31,7 @@ Um einen OVHcloud Kunden-Account zu erstellen, gehen Sie einfach auf [diese Seit
 |---|---|
 |Vorname - Name|Geben Sie hier einen nachweisbaren Vor- und Nachnamen ein.|
 |E-Mail-Adresse|Geben Sie eine gültige **E-Mail-Adresse, auf die Sie Zugriff haben**, ein.<br><br>Vermeiden Sie hierbei generell E-Mail-Adressen mit Domainnamen, die über denselben Kunden-Account verwaltet werden. Sollte der Domainname eine Dienstunterbrechung erleiden, erhalten Sie unsere Benachrichtigungen nicht mehr.|
-|Passwort|Das Passwort muss einzigartig sein (erstellt und ausschließlich verwendet für Ihren OVHcloud Kunden-Account) und hinreichend komplex sein.<br><br>Um ein effizientes Passwort [zu erstellen, lesen Sie unsere](/pages/account/customer/manage-ovh-password#in-der-praktischen-anwendung) Anleitung zur Passwortverwaltung.|
+|Passwort|Das Passwort muss einzigartig sein (erstellt und ausschließlich verwendet für Ihren OVHcloud Kunden-Account) und hinreichend komplex sein.<br><br>Um ein effizientes Passwort [zu erstellen, lesen Sie unsere](/pages/account_and_service_management/account_information/manage-ovh-password#in-der-praktischen-anwendung) Anleitung zur Passwortverwaltung.|
 
 Sobald Sie das erste Formular ausgefüllt haben, wird Ihnen ein Code zur einmaligen Verwendung an die von Ihnen angegebene E-Mail-Adresse zugesandt. Mit diesem Code können Sie Ihre E-Mail-Adresse validieren. Geben Sie ihn in die dafür vorgesehenen Felder ein.
 

@@ -1,6 +1,5 @@
 ---
 title: 'Creating filters for your email addresses'
-legacy_guide_number: 1973
 excerpt: 'Find out how to create and configure filter rules on your email address'
 updated: 2021-09-27
 ---
@@ -98,6 +97,10 @@ You can choose between these types of actions:
 ### Examples
 
 #### Deleting spam emails
+
+> [!warning]
+>
+> In our example, we will mention [SPAM] as it appears in the subject line of an email. It is added automatically when the receiving server’s anti-spam solution delivers emails that it considers unwanted directly to the inbox. This is the case with the legacy version of the MX Plan solution.
 
 ||Header|Rule|Value|Action|
 |---|---|---|---|---|

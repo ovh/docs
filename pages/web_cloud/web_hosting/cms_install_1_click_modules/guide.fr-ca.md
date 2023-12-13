@@ -1,7 +1,7 @@
 ---
 title: "Installer votre site web avec un « module en 1 clic » (CMS)"
 excerpt: "Découvrez comment installer votre site web via nos « modules en 1 clic »"
-updated: 2023-03-17
+updated: 2023-11-14
 ---
 
 ## Objectif
@@ -14,14 +14,18 @@ Les « modules en 1 clic » permettent l'installation facile et rapide d'un site
 
 ## Prérequis
 
-- Disposer d'une offre d'[hébergement web OVHcloud](https://www.ovhcloud.com/fr-ca/web-hosting/) incluant au moins une base de données.
+- Disposer d'une offre d'[hébergement web OVHcloud](https://www.ovhcloud.com/fr-ca/web-hosting/) incluant au moins une base de données. 
 - Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
-- Utiliser [une version de PHP compatible](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014) sur votre hébergement web OVHcloud.
-- Avoir [configuré correctement votre fichier .ovhconfig](/pages/web_cloud/web_hosting/ovhconfig_configuration).
+- Utiliser une version récente de PHP et un environnement d'exécution compatible sur votre hébergement web OVHcloud. Si besoin, consultez notre [guide](/pages/web_cloud/web_hosting/configure_your_web_hosting) sur le sujet pour changer rapidement cette configuration.
 - Le répertoire (dossier racine) où sera installé votre « module en 1 clic » doit être vide ou actuellement inexistant.
 - Le domaine (avec sous-domaine si souhaité) qui sera utilisé pour votre site web doit être déclaré en tant que [Multisite](/pages/web_cloud/web_hosting/multisites_configure_multisite) sur votre hébergement web OVHcloud.
 
 ## En pratique
+
+> [!primary]
+>
+> Si vous rencontrez des difficultés en suivant l'une des étapes décrites ci-dessous, consultez notre documentation spécifique sur les [erreurs les plus fréquentes liées aux « modules en 1 clic »](/pages/web_cloud/web_hosting/diagnostic_errors_module1clic). 
+>
 
 ### Étape 1 - choisir correctement son CMS
 
@@ -53,6 +57,15 @@ Dans la fenêtre qui s'affiche, choisissez le CMS souhaité puis sélectionnez l
 
 Si votre domaine n'est pas dans la liste, rendez-vous dans l'onglet `Multisite`{.action} pour l'ajouter. Consultez notre guide [Comment partager mon hébergement web entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite){.external} si besoin.
 
+> [!primary]
+>
+> Vérifiez, juste en dessous du formulaire permettant de sélectionner un nom de domaine (ou un sous-domaine), que `Le répertoire d'installation par défaut` est bien celui dans lequel vous souhaitez installer votre « module en 1 clic ».
+>
+> Pour rappel, ce répertoire doit être totalement vide.
+>
+> Si besoin, consulter notre guide « [Comment partager mon hébergement web entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite) » pour modifier le répertoire cible de votre nom de domaine.
+>
+
 Une fois votre domaine correctement ajouté, essayez à nouveau d'ajouter un « module en 1 clic ».
 
 Une fois le CMS sélectionné, choisissez entre une installation **rapide** ou **avancée** :
@@ -79,6 +92,11 @@ Choisissez le nom de domaine de votre CMS, contrôlez le répertoire cible qui a
 
 Une fois l'installation terminée, vous recevrez un e-mail contenant les informations de connexion à l'interface administrateur (*back office*) de votre CMS. Connectez-vous à celle-ci pour personnaliser votre site web.
 
+> [!primary]
+>
+> L'installation et la réception de l'e-mail peuvent prendre jusqu'à 15 minutes à compter du moment où vous avez cliqué sur le bouton `Installer`{.action} dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
+>
+
 #### Installation avancée d'un « module en 1 clic »
 
 Pour réaliser cette méthode d'installation, assurez-vous que la case `Installation en mode avancé`{.action} est cochée, puis cliquez sur le bouton `Suivant`{.action} :
@@ -88,6 +106,15 @@ Pour réaliser cette méthode d'installation, assurez-vous que la case `Installa
 ##### Choisir la base de données
 
 Renseignez les informations de connexion à votre base de données. 
+
+> [!warning]
+>
+> Si les informations que vous indiquez sont incorrectes, l'installation n'arrivera pas à son terme. Pour éviter cela, nous vous invitons en premier lieu à tester la connexion à votre base de données.
+> 
+> Pour récupérer les identifiants de connexion à votre base de données incluse avec votre hébergement web, consultez [ce guide](/pages/web_cloud/web_hosting/sql_create_database).
+>
+> Pour récupérer les identifiants de connexion à votre base de données créée sur une instance Web Cloud Databases, consultez [ce guide](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
+>
 
 ![Base de données pour installation avancée](images/advanced_installation_database.png){.thumbnail}
 
@@ -120,15 +147,6 @@ Pour les bases de données créées sur une offre Web Cloud Databases, référez
 
 Une fois les informations complétées, cliquez sur le bouton `Suivant`{.action}.
 
-> [!warning]
->
-> Si les informations que vous indiquez sont incorrectes, l'installation n'arrivera pas à son terme. Pour éviter cela, nous vous invitons en premier lieu à tester la connexion à votre base de données.
-> 
-> Pour récupérer les identifiants de connexion à votre base de données incluse avec votre hébergement web, consultez [ce guide](/pages/web_cloud/web_hosting/sql_create_database).
->
-> Pour récupérer les identifiants de connexion à votre base de données créée sur une instance Web Cloud Databases, consultez [ce guide](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
->
-
 ##### Configurer le module
 
 Renseignez les informations suivantes pour la configuration du module :
@@ -138,6 +156,18 @@ Renseignez les informations suivantes pour la configuration du module :
 - *domaine :* nom de domaine avec lequel vous souhaitez installer votre CMS. Si besoin, consultez notre guide [Comment partager mon hébergement web entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite).
 - *langue :* langue dans laquelle le CMS sera installé.
 - *chemin d’installation :* ce dernier est automatiquement renseigné à la sélection du nom de domaine. Vous pouvez le compléter en y renseignant des sous-répertoires (pour les utilisateurs avertis).
+
+> [!primary]
+>
+> Vérifiez, pour le formulaire `chemin d’installation`, que le répertoire pré-rempli est bien celui dans lequel vous souhaitez installer votre « module en 1 clic » avec votre nom de domaine.
+>
+> Pour rappel, ce répertoire doit être totalement vide.
+>
+> De plus, si vous renseignez un sous-répertoire dans le `chemin d’installation`, celui-ci apparaîtra dans l'URL d'accès à votre « module en 1 clic ».
+> Par exemple, si je renseigne dans le formulaire un sous répertoire *test*, l'URL d'accès à mon « module en 1 clic » aura cette forme : **http://domain.tld/test/**.
+>
+> Si besoin, consulter notre guide « [Comment partager mon hébergement web entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite) » pour modifier le répertoire cible de votre nom de domaine.
+>
 
 Une fois ces informations complétées, cliquez sur le bouton `Suivant`{.action} :
 
@@ -182,11 +212,11 @@ Si vous désirez obtenir de l'aide concernant les fonctionnalités de votre CMS,
 
 [Gestion d’une base de données depuis un hébergement mutualisé](/pages/web_cloud/web_hosting/sql_create_database){.external}
 
-Découvrez nos [offres Web Cloud Databases](https://www.ovh.com/fr/cloud/cloud-databases/){.external}
+Découvrez nos [offres Web Cloud Databases](https://www.ovhcloud.com/fr-ca/web-cloud/databases/){.external}
 
 [Gérer votre CMS](/pages/web_cloud/web_hosting/cms_manage_1_click_module)
 
-[Désinstaller votre CMS](/pages/web/hosting/cms_manage_1_click_module#etape-3-supprimer-votre-module)
+[Désinstaller votre CMS](/pages/web_cloud/web_hosting/cms_manage_1_click_module#etape-3-supprimer-votre-module)
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/directory/).
 

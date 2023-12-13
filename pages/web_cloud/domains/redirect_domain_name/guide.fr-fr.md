@@ -1,7 +1,7 @@
 ---
 title: "Rediriger un nom de domaine géré par OVHcloud"
 excerpt: "Découvrez les différents types de redirections et comment en créer une pour un nom de domaine géré par OVHcloud"
-updated: 2022-10-06
+updated: 2023-10-24
 ---
 
 ## Objectif
@@ -56,7 +56,7 @@ Trois options de redirections sont disponibles depuis l'[espace client OVHcloud]
 > L'onglet `Redirection`{.action} présente une quatrième option permettant de faire pointer rapidement votre domaine vers les entrées DNS A, AAAA et CNAME.<br>
 > Du fait qu'il ne s'agit pas là à proprement parler d'une « redirection », cette option ne sera pas détaillée dans ce guide.
 >
-> Pour plus d'informations sur les entrées DNS, consultez notre documentation sur les [enregistrements DNS](/pages/web/domains/dns_zone_edit#les-enregistrements-dns).
+> Pour plus d'informations sur les entrées DNS, consultez notre documentation sur les [enregistrements DNS](/pages/web_cloud/domains/dns_zone_edit#les-enregistrements-dns).
 >
 
 Retrouvez ci-dessous les trois types de redirections détaillés étape par étape.

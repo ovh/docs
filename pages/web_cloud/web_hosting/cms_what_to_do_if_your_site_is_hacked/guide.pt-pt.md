@@ -1,6 +1,6 @@
 ---
 title: "Casos de uso - Conselhos após a pirataria do seu website"
-excerpt: "Descubra os nossos conselhos para reparar o seu website pirateado"
+excerpt: "Saiba os nossos conselhos para reparar o seu website pirateado"
 updated: 2022-11-15
 ---
 
@@ -20,7 +20,7 @@ A pirataria pode manifestar - se de várias formas (lista não exaustiva):
 - a base de dados do seu website está subitamente preenchida;
 - recebe a partir do seu alojamento SPAM gerados por scripts infetados.
 
-**Descubra os nossos conselhos para reparar o seu website pirateado**
+**Saiba os nossos conselhos para reparar o seu website pirateado**
 
 > [!warning]
 >
@@ -79,7 +79,7 @@ No que diz respeito à OVHcloud, utilize a nossa documentação para:
 - [Alterar a palavra-passe de acesso ao espaço de armazenamento FTP do seu alojamento Web](/pages/web_cloud/web_hosting/ftp_change_password).
 - [Alterar palavra-passe de acesso à base de dados](/pages/web_cloud/web_hosting/sql_change_password).
 
-Também recomendamos que utilize um [gestor de palavras-passe](/pages/account/customer/manage-ovh-password#utilizar-um-gestor-de-palavras-passe).
+Também recomendamos que utilize um [gestor de palavras-passe](/pages/account_and_service_management/account_information/manage-ovh-password#utilizar-um-gestor-de-palavras-passe).
 
 > [!warning]
 > 
@@ -200,7 +200,7 @@ Atualize o seu website ao nível do código fonte, dos parâmetros de segurança
 
 Verifique as permissões de acesso FTP "CHMOD" para cada uma das pastas e ficheiros alojados no seu espaço de armazenamento.
 Por predefinição, recomendamos que se utilizem ao máximo as permissões "CHMOD" **705** para os dossiers e **604** para os ficheiros.
-Encontre mais detalhes sobre as permissões "CHMOD" na secção "Informações úteis" do nosso [tutorial sobre a utilização do cliente FTP Filezilla](/pages/web/hosting/ftp_filezilla_user_guide#useful-information).
+Encontre mais detalhes sobre as permissões "CHMOD" na secção "Informações úteis" do nosso [tutorial sobre a utilização do cliente FTP Filezilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide#useful-information).
 
 Se utilizar um CMS (Wordpress, Joomla!, PrestaShop, Drupal, etc.), atualize os seus plugins, o seu tema e o CMS em si.
 Privilegie a utilização de plugins/temas "oficiais" e mantenha o seu website atualizado o mais regularmente possível e de forma exaustiva.
@@ -213,7 +213,7 @@ Consulte também o nosso manual sobre [como proteger o seu website](/pages/web_c
 
 [Aceder ao espaço de armazenamento do alojamento web](/pages/web_cloud/web_hosting/ftp_connection)
 
-[Alterar a configuração do alojamento web](/pages/web_cloud/web_hosting/ovhconfig_modify_system_runtime)
+[Alterar a configuração do alojamento web](/pages/web_cloud/web_hosting/configure_your_web_hosting)
 
 [Ativar firewall da aplicação](/pages/web_cloud/web_hosting/multisites_activating_application_firewall)
 
@@ -223,4 +223,4 @@ Para serviços especializados (referenciamento, desenvolvimento, etc), contacte 
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
 
-Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>. 
+Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.

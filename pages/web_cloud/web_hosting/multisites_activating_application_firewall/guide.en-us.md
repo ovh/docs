@@ -1,6 +1,6 @@
 ---
-title: 'Activating the application firewall'
-excerpt: 'Find out how to activate the application firewall on a Web Hosting plan'
+title: "Activating the application firewall"
+excerpt: "Find out how to activate the application firewall on a Web Hosting plan"
 updated: 2021-04-26
 ---
 
@@ -63,5 +63,9 @@ The `Multisite`{.action} tab of your hosting plan provides information on which 
 The table displayed contains all of the domain names that have been added to your Web Hosting plan. In the "Firewall" column, you will see the activation status for each domain. 
 
 ## Go further
+
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en/directory/).
+
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en/support-levels/).
 
 Join our community of users on <https://community.ovh.com/en/>.

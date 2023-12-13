@@ -25,12 +25,12 @@ As usual cluster status and task list changes.
 
 > [!api]
 >
-> @api {PUT} /dedicated/ceph/{serviceName}/pool
+> @api {v1} /dedicated/ceph PUT /dedicated/ceph/{serviceName}/pool
 >
 
 > [!api]
 >
-> @api {GET} /dedicated/ceph/{serviceName}/user
+> @api {v1} /dedicated/ceph GET /dedicated/ceph/{serviceName}/user
 >
 Result example:
 

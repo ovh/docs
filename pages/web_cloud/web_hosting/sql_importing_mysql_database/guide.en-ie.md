@@ -1,7 +1,7 @@
 ---
 title: 'Importing a backup into a Web Hosting plan database'
 excerpt: 'Find out how to import a backup into a database on your OVHcloud Web Hosting plan'
-updated: 2018-09-25
+updated: 2023-12-11
 ---
 
 ## Objective
@@ -133,7 +133,7 @@ Make sure you replace the generic information given in this script (e.g. ‘serv
 
 #### Step 2: Upload the script and the backup to the storage space.
 
-Once the import script has been written, you will need to upload it, along with the backup file you want to import to the storage space of your Web Hosting plan. To do this, you will need to log in to your storage space. If you do not know how to do this, please refer to the instructions in step 2 of our guide on getting your website online, “[Log in to your storage space](/pages/web/hosting/hosting_how_to_get_my_website_online#2-log-in-to-your-storage-space){.external}”.
+Once the import script has been written, you will need to upload it, along with the backup file you want to import to the storage space of your Web Hosting plan. To do this, you will need to log in to your storage space. If you do not know how to do this, please refer to the instructions in step 2 of our guide on getting your website online, “[Log in to your storage space](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online#2-log-in-to-your-storage-space){.external}”.
 
 In order to carry out the following steps, you will need to upload the script and the backup file to the “www” folder. **We recommend taking special care when you name the import script file.** Make sure you do not overwrite an existing file with the same name in your storage space when you upload the script. If a warning message appears for this, change the name of the script you have just created, and try to upload it again.
 
@@ -163,5 +163,9 @@ cat backup_filename.sql | mysql --host=server_address --user=user_name --passwor
 Make sure you replace the generic information in this command (e.g. ‘user_name’, ‘user_password’ etc.) with the actual information for the database concerned. Once you have imported the backup, we recommend deleting the backup file, and the script from the directory to which you uploaded them.
 
 ## Go further
+
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-ie/directory/).
+
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-ie/support-levels/).
 
 Join our community of users on <https://community.ovh.com/en/>.

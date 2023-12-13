@@ -1,7 +1,7 @@
 ---
 title: Przeniesienie strony WWW i kont e-mail do OVHcloud
 excerpt: "Dowiedz się, jak migrować Twoją stronę WWW, konta e-mail i domenę do OVHcloud bez przerwy w dostępności usług"
-updated: 2022-11-24
+updated: 2023-11-15
 ---
 
 > [!primary]
@@ -153,8 +153,8 @@ Skorzystaj z naszego przewodnika dotyczącego [tworzenia kont e-mail "MX Plan"](
 
 Jeśli wybrałeś rozwiązanie "Email Pro" lub "Exchange", zapoznaj się z naszą dokumentacją dotyczącą tworzenia kont e-mail:
 
-- Dla "Email-Pro": </pages/web/emails-pro/first_config>
-- W przypadku "Exchange": </pages/web/microsoft-collaborative-solutions/exchange_starting_hosted>
+- Dla [Email-Pro](/pages/web_cloud/email_and_collaborative_solutions/email_pro/first_config)
+- W przypadku [Exchange](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/exchange_starting_hosted)
 
 ### Etap 6: zadeklarować serwery e-mail OVHcloud w strefie DNS domeny <a name="step6"></a>
 
@@ -205,7 +205,7 @@ Po zakończeniu migracji Twoich poprzednich kont e-mail do OVHcloud możesz pono
 
 #### Dla kont e-mail "MX Plan": 
 
-- Wszystkie parametry konfiguracji znajdziesz w naszym przewodniku "[Informacje ogólne na temat e-maili MX Plan](/pages/web/emails/email_generalities#2-skorzystaj-z-wybranego-programu)". Znajdziesz tam również linki do przewodników dotyczących konfiguracji dla głównych programów pocztowych.
+- Wszystkie parametry konfiguracji znajdziesz w naszym przewodniku "[Informacje ogólne na temat e-maili MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities#2-skorzystaj-z-wybranego-programu)". Znajdziesz tam również linki do przewodników dotyczących konfiguracji dla głównych programów pocztowych.
 
 #### Dla kont "Email-Pro":
 

@@ -1,7 +1,7 @@
 ---
-title: 'Partilhado: Consultar as estatísticas e os logs do meu site'
-excerpt: Acesso às estatísticas do seu site
-updated: 2023-08-04
+title: "Partilhado: Consultar as estatísticas e os logs do meu site"
+excerpt: "Acesso às estatísticas do seu site"
+updated: 2023-11-20
 ---
 
 > [!primary]
@@ -52,7 +52,7 @@ No separador do browser que apresenta a janela de estatísticas, obtenha o link 
 
 > [!warning] 
 >
-> Se ativou os logs separados numa [entrada multi-site](/pages/web/hosting/multisites_configure_multisite#2-adicionar-um-dominio-ou-subdominio), os utilizadores criados aqui não podem aceder às estatísticas desta entrada multi-site.
+> Se ativou os logs separados numa [entrada multi-site](/pages/web_cloud/web_hosting/multisites_configure_multisite#2-adicionar-um-dominio-ou-subdominio), os utilizadores criados aqui não podem aceder às estatísticas desta entrada multi-site.
 >
 
 ### Estatísticas das visitas
@@ -107,4 +107,8 @@ Clique no separador `Informações gerais`{.action} e, a seguir, desça na parte
 
 ## Quer saber mais?
 
-Fale com a nossa comunidade de utilizadores em <https://community.ovh.com/en/>.
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
+
+Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
+
+Fale com nossa comunidade de utilizadores: <https://community.ovh.com/en/>.

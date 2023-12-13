@@ -1,7 +1,7 @@
 ---
 title: 'Zmiana hasła administratora na serwerze dedykowanym z systemem Windows'
 excerpt: 'Dowiedz się, jak zmienić hasło administratora na serwerze dedykowanym z systemem Windows'
-updated: 2021-01-12
+updated: 2023-09-18
 ---
 
 > [!primary]
@@ -25,20 +25,7 @@ Kolejne etapy opisują proces zmiany lokalnego hasła administratora w trybie Re
 
 ### Etap 1: restart serwera w trybie rescue
 
-System musi zostać uruchomiony w trybie Rescue, zanim będzie można zmienić hasło administratora. Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przejdź do sekcji `Bare Metal Cloud`{.action} i wybierz swój serwer z menu `Serwery dedykowane`{.action}.
-
-Netboot musi zostać przełączony na "rescue64-pro (Customer rescue system (Linux)". Wyszukaj "Boot" w sekcji **Informacje ogólne** i kliknij `...`{.action}, a następnie `Zmień`{.action}.
-<br>Na następnej stronie wybierz **Uruchom w trybie diagnostycznym (Rescue).** i w menu wybierz "rescue64-pro". Określ adres e-mail w ostatnim polu, jeśli dane do logowania mają zostać wysłane na adres inny niż adres główny Twojego konta OVHcloud. 
-
-Kliknij `Dalej`{.action}, a następnie `Zatwierdź`{.action}.
-
-![rescuemode](images/adminpw_win_001.png){.thumbnail}
-
-Po zakończeniu modyfikacji kliknij `...`{.action} po prawej stronie "Status" w obszarze zatytułowanym **Status**.
-<br>Kliknij `Restart`{.action}, a serwer zrestartuje się w trybie rescue. Operacja ta może zająć kilka minut.
-<br>Możesz sprawdzić postęp w zakładce `Zadania`{.action}. Otrzymasz e-mail z danymi do logowania dla użytkownika "root" trybu Rescue.
-
-![rescuereboot](images/adminpw_win_02.png){.thumbnail}
+System musi zostać uruchomiony w trybie Rescue, zanim będzie można zmienić hasło administratora.
 
 Więcej informacji o trybie Rescue znajdziesz w [tym przewodniku](/pages/bare_metal_cloud/dedicated_servers/rescue_mode).
 
@@ -46,8 +33,11 @@ Więcej informacji o trybie Rescue znajdziesz w [tym przewodniku](/pages/bare_me
 
 Zaloguj się do serwera przez SSH. Jeśli potrzebujesz pomocy, zapoznaj się z przewodnikiem dotyczącym >systemu Windows, partycje będą zatytułowane "Microsoft LDM data".
 
+```bash
+fdisk -l
 ```
-# fdisk -l
+
+```text
 Disk /dev/sda: 1.8 TiB, 2000398934016 bytes, 3907029168 sectors
 Units: sectors of 1 * 512 = 512 bytes
 Sector size (logical/physical): 512 bytes / 512 bytes
@@ -67,14 +57,17 @@ W tym przykładzie "sda4" oznacza partycję systemu, określoną przez jej rozmi
 
 Teraz zamontuj tę partycję:
 
-```
-# mount /dev/sda4 /mnt
+```bash
+mount /dev/sda4 /mnt
 ```
 
 Sprawdź punkt montowania:
 
+```bash
+lsblk
 ```
-# lsblk
+
+```text
 NAME   MAJ:MIN RM  SIZE RO TYPE MOUNTPOINT
 sdb      8:16   0  1.8T  0 disk
 ├─sdb4   8:20   0  1.8T  0 part
@@ -92,7 +85,7 @@ sda      8:0    0  1.8T  0 disk
 
 W powyższym przykładzie operacja powiodła się. Jeśli instalacja nie powiodła się, prawdopodobnie otrzymasz komunikat błędu podobny do tego: 
 
-```
+```text
 The disk contains an unclean file system (0, 0).
 Metadata kept in Windows cache, refused to mount.
 Failed to mount '/dev/sda4': Operation not permitted
@@ -103,20 +96,27 @@ read-only with the 'ro' mount option.
 
 W takim przypadku użyj następującego polecenia i spróbuj ponownie zamontować partycję.
 
-```
-# ntfsfix /dev/sda4
-# mount /dev/sda4 /mnt
+```bash
+ntfsfix /dev/sda4
+mount /dev/sda4 /mnt
 ```
 
 ### Etap 3: usuń aktualne hasło
 
 Etap ten polega na manipulowaniu plikiem *SAM* przy użyciu narzędzia pozwalającego usunąć hasło użytkownika administratora. Dostęp do właściwego katalogu i katalogu użytkowników Windows:
 
+```bash
+cd /mnt/Windows/System32/config
+/mnt/Windows/System32/config#
 ```
-# cd /mnt/Windows/System32/config
-/mnt/Windows/System32/config# chntpw -l SAM
 
-chntpw version 1.00 140201, (c) Petter N Hagen
+
+```bash
+chntpw -l SAM
+```
+
+```text
+chntpw version 140201, (c) Petter N Hagen
 Hive <SAM> name (from header): <\SystemRoot\System32\Config\SAM>
 ROOT KEY at offset: 0x001020 * Subkey indexing type is: 686c <lh>
 File size 65536 [10000] bytes, containing 8 pages (+ 1 headerpage)
@@ -130,13 +130,16 @@ Used for data: 359/39024 blocks/bytes, unused: 33/18064 blocks/bytes.
 | 01f8 | WDAGUtilityAccount             |        | dis/lock |
 ```
 
-Jeśli polecenie nie działa, najpierw zainstaluj narzędzie: `apt get install chntpw`.
+Jeśli polecenie nie działa, najpierw zainstaluj narzędzie: `apt install chntpw`.
 
 Usuń hasło użytkownika administratora za pomocą następującego polecenia. (Wybierz "Administrator", jeśli "admin" nie istnieje.)
 
+```bash
+chntpw -u admin SAM
 ```
-# chntpw -u admin SAM
-chntpw version 1.00 140201, (c) Petter N Hagen
+
+```text
+chntpw version 140201, (c) Petter N Hagen
 Hive <SAM> name (from header): <\SystemRoot\System32\Config\SAM>
 ROOT KEY at offset: 0x001020 * Subkey indexing type is: 686c <lh>
 File size 65536 [10000] bytes, containing 8 pages (+ 1 headerpage)
@@ -173,9 +176,9 @@ Total  login count: 5
 Select: [q] >
 ```
 
-Wpisz "1" i naciśnij Enter ( ↩). (Należy najpierw skorzystać z opcji 2, jeśli przed "Disabled" pojawi się "X").
+Wpisz "1" i naciśnij Enter. (Należy najpierw skorzystać z opcji 2, jeśli przed "Disabled" pojawi się "X").
 
-```
+```text
 Select: [q] > 1
 Password cleared!
 ================= USER EDIT ====================
@@ -213,7 +216,7 @@ Select: [q] >
 
 Wpisz "q" i naciśnij Enter, aby opuścić narzędzie. Wpisz "y", gdy zostaniesz zaproszony i naciśnij Enter.
 
-```
+```text
 Select: [q] > q
  
 Hives that have changed:
@@ -229,11 +232,19 @@ Zacznij od zastąpienia netbootu **Uruchom z dysku twardego** w Panelu [klienta 
 
 Wróć do wiersza poleceń, odmontuj partycję i zrestartuj serwer, używając następujących poleceń:
 
+```bash
+cd
 ```
-# cd
-# umount /mnt
-# reboot
 
+```bash
+umount /mnt
+```
+
+```bash
+reboot
+```
+
+```text
 Broadcast message from root@rescue.ovh.net on pts/0 (Wed 2020-05-27 11:28:53 CEST):
 
 System is going down for reboot NOW!
@@ -266,7 +277,7 @@ Otworzy się okno wiersza poleceń (cmd), gdy sesja KVM jest utworzona.
 
 Zdefiniuj hasło dla aktualnego użytkownika ("Administrator"):
 
-```
+```powershell
 net user Administrator *
 ```
 
@@ -281,21 +292,7 @@ Zalecamy używanie wirtualnej klawiatury podczas wprowadzania haseł w tym inter
 
 #### Etap 1: restart serwera w trybie rescue
 
-System musi zostać uruchomiony w trybie Rescue, zanim będzie można zmienić hasło administratora. Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przejdź do sekcji `Bare Metal Cloud`{.action} i wybierz swój serwer z menu `Serwery dedykowane`{.action}.
-
-Netboot musi zostać przełączony na WinRescue (Rescue System for Windows). Wyszukaj "Boot" w sekcji **Informacje ogólne** i kliknij `...`{.action}, a następnie `Zmień`{.action}.
-<br>Na następnej stronie wybierz **Uruchom w trybie diagnostycznym (Rescue).** i w menu wybierz "WinRescue". Określ adres e-mail w ostatnim polu, jeśli dane do logowania mają zostać wysłane na adres inny niż adres główny Twojego konta OVHcloud. 
-
-Kliknij `Dalej`{.action}, a następnie `Zatwierdź`{.action}.
-
-![winrescuemode](images/adminpw_win_008.png){.thumbnail}
-
-Po zakończeniu modyfikacji kliknij `...`{.action} po prawej stronie "Status" w obszarze zatytułowanym **Status**.
-<br>Kliknij `Restart`{.action}, a serwer zrestartuje się w trybie rescue. Operacja ta może zająć kilka minut.
-<br>Możesz sprawdzić postęp w zakładce `Zadania`{.action}.
-<br>Otrzymasz e-mail z danymi do logowania (w tym hasłem do logowania) użytkownika "root" trybu Rescue.
-
-![rescuereboot](images/adminpw_win_02.png){.thumbnail}
+System musi zostać uruchomiony w trybie Rescue (WinRescue), zanim będzie można zmienić hasło administratora.
 
 Więcej informacji o trybie Rescue znajdziesz w [tym przewodniku](/pages/bare_metal_cloud/dedicated_servers/rescue_mode).
 

@@ -1,7 +1,7 @@
 ---
 title: 'Crear varias VLAN en el vRack'
 excerpt: 'Cómo crear varias VLAN en el vRack'
-updated: 2022-02-24
+updated: 2023-09-12
 ---
 
 > [!primary]
@@ -69,7 +69,7 @@ network: {config: disabled}
 
 Aquí la interfaz que queremos configurar es `eno2` con dirección MAC: `d0:50:99:d6:6b:14`.
 
-![ubuntu VLAN](images/vrack3-ubuntu-01.png)
+![ubuntu VLAN](images/vrack3-ubuntu-01.png){.thumbnail}
 
 Agregue la configuración de red para esta interfaz de red y la declaración de VLAN en el siguiente archivo:
 
@@ -108,7 +108,7 @@ Utilice el siguiente comando para confirmar la configuración:
 ip a
 ```
 
-![ubuntu VLAN](images/vrack3-ubuntu-02.png)
+![ubuntu VLAN](images/vrack3-ubuntu-02.png){.thumbnail}
 
 #### Debian
 
@@ -146,47 +146,53 @@ broadcast 192.168.255.255
 
 ### En Windows
 
-Conéctese al servidor mediante el escritorio remoto y abra la aplicación **Administrador del servidor**. Haga clic en `Servidor local`{.action} del menú izquierdo. En el panel **Propiedades**, haga clic en el enlace `Deshabilitado`{.action} situado junto a **Formación de equipos de NIC**.
+Conéctese al servidor mediante el escritorio remoto y abra la aplicación **Administrador del servidor**. Haga clic en `Local Server`{.action} del menú izquierdo. En el panel **Propiedades**, haga clic en el enlace `Disabled`{.action} situado junto a **Formación de equipos de NIC**.
 
 ![Windows VLAN](images/vrack2-windows-01.png){.thumbnail}
 
-Para crear un nuevo equipo, seleccione una interfaz de red e introduzca el nombre del equipo en el campo **Nombre del equipo**. Haga clic en `Aceptar`{.action} para terminar.
+A continuación, haga clic con el botón derecho en la interfaz de red y seleccione `Add to New Team`{.action}.
+
+![Windows vLAN](images/vrack2-windows-02.0.png){.thumbnail}
+
+En la ventana emergente, cree un nuevo equipo introduciendo un nombre de equipo en el campo **Team name**. Cuando haya terminado, haga clic en `OK`{.action}
 
 ![Windows VLAN](images/vrack2-windows-02.png){.thumbnail}
 
-A continuación, es recomendable indicar la etiqueta de la VLAN. Para ello, en el panel **Adaptadores e interfaces** de la pantalla **Formación de equipos de NIC**, haga clic derecho en la interfaz que acaba de añadir al nuevo equipo y seleccione `Propiedades`{.action}. Después marque la opción `VLAN específica`{.action} e introduzca la etiqueta.
+A continuación, es recomendable indicar la etiqueta de la VLAN. Para ello, en el panel **Adaptadores e interfaces** de la pantalla **Formación de equipos de NIC**, haga clic derecho en la interfaz que acaba de añadir al nuevo equipo y seleccione `Properties`{.action}. Después marque la opción `Specific VLAN`{.action} e introduzca la etiqueta.
 
 ![Windows VLAN](images/vrack2-windows-03.png){.thumbnail}
 
-Ahora hay que configurar la dirección IP de la VLAN. Para ello, abra la pantalla de inicio y haga clic en `Panel de control`{.action}.
+Ahora hay que configurar la dirección IP de la VLAN. Para ello, abra la pantalla de inicio y haga clic en `Control Panel`{.action}.
 
 ![Windows VLAN](images/vrack2-windows-04.png){.thumbnail}
 
-Haga clic en `Redes e Internet`{.action}.
+Haga clic en `Network and Internet`{.action}.
 
 ![Windows VLAN](images/vrack2-windows-05.png){.thumbnail}
 
-Haga clic en `Centro de redes y recursos compartidos`{.action}.
+Haga clic en `Network and Sharing Center`{.action}.
 
 ![Windows VLAN](images/vrack2-windows-06.png){.thumbnail}
 
-Haga clic en `Cambiar configuración del adaptador`{.action}.
+Haga clic en `Change adapter settings`{.action}.
 
 ![Windows VLAN](images/vrack2-windows-07.png){.thumbnail}
 
-A continuación, haga clic derecho en la interfaz VLAN y seleccione `Propiedades`{.action}.
+A continuación, haga clic derecho en la interfaz VLAN y seleccione `Properties`{.action}.
 
 ![Windows VLAN](images/vrack2-windows-08.png){.thumbnail}
 
-Haga doble clic en `Protocolo de Internet versión 4 (TCP/IPv4)`{.action}.
+Tenga en cuenta que en nuestro ejemplo, `Ethernet 2` es la interfaz utilizada para el vRack. Sin embargo, es posible que el vRack NIC sea una interfaz diferente en su configuración. La correcta será la interfaz que no tenga la dirección IP principal del servidor o que tenga una IP autoasignada.
+
+Haga doble clic en `Internet Protocol Version 4 (TCP/IPv4)`{.action}.
 
 ![Windows VLAN](images/vrack2-windows-09.png){.thumbnail}
 
-Marque la opción `Usar la siguiente dirección IP`{.action}. En **Dirección IP**, introduzca una dirección IP de su rango interno. En **Máscara de subred** introduzca **255.255.0.0**.
+Marque la opción `Use the following IP address`{.action}. En **Dirección IP**, introduzca una dirección IP de su rango interno. En **Máscara de subred** introduzca **255.255.0.0**.
 
 ![Windows VLAN](images/vrack2-windows-10.png){.thumbnail}
 
-Por último, haga clic en `Aceptar`{.action} para guardar los cambios y reinicie el servidor.
+Por último, haga clic en `OK`{.action} para guardar los cambios y reinicie el servidor.
 
 ## Más información
 

@@ -1,7 +1,6 @@
 ---
 title: 'Aumentar as quotas Public Cloud'
 excerpt: 'Saiba como solicitar o aumento das suas quotas Public Cloud'
-legacy_guide_number: g1904
 updated: 2023-05-03
 ---
 
@@ -38,13 +37,13 @@ Depois de aceder à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action
 
 <br>  Na rubrica `Project Management`, clique em `Quota and Regions`{.action}.
 
-![access quota](images/raisepciquota2021.png){.thumbnail}
+![access quota](images/raisepciquota1-2023.png){.thumbnail}
 
 Esta página apresenta um resumo das quotas atuais do seu projeto, por região. Ao lado de um recurso surge uma advertência quando 80% da sua quota é atingida.
 
 Para solicitar um aumento de quota, clique em `Aumentar os meus limites`{.action}.
 
-![raise-pci-quota](images/raisepciquota2021b.png){.thumbnail}
+![raise-pci-quota](images/raisepciquota2023.png){.thumbnail}
 
 Em seguida, clique na seta descendente ao lado de "Selecione o volume" para exibir a lista de cotas atualmente disponíveis para atualizar seus recursos. Esta seção apresenta igualmente o montante a pagar para beneficiar destes recursos.
 
@@ -80,7 +79,7 @@ Depois de aceder à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action
 
 Clique no `?`{.action} para obter mais informações sobre esse recurso, clique no `ícone de alternância`{.action} para alternar o status para "**Ativado**".
 
-![auto scaling](images/autoscaling.png){.thumbnail}
+![auto scaling](images/autoscaling2023.png){.thumbnail}
 
 Uma vez terminada a operação, *Autoscaling* é ativado para o seu projeto e a sua quota de recursos é aumentada ao longo do tempo.
 

@@ -637,7 +637,7 @@ You can also deploy your instance via API, using the following call:
 
 > [!api]
 >
-> @api {POST} /cloud/project/{serviceName}/instance
+> @api {v1} /cloud POST /cloud/project/{serviceName}/instance
 >
 
 - Example with a D2-4 flavor, Debian 10 and hourly billing:

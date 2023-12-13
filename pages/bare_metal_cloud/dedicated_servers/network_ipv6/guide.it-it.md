@@ -49,7 +49,7 @@ Eseguite la chiamata API che segue, indicando il nome interno del server (esempi
 
 > [!api]
 >
-> @api {GET} /dedicated/server/{serviceName}/specifications/network
+> @api {v1} /dedicated/server GET /dedicated/server/{serviceName}/specifications/network
 
 > [!warning]
 > 
@@ -77,7 +77,7 @@ In questo caso, il gateway IPv6 predefinito può essere scritto come segue: `fe8
 
 #### Step 1: Utilizza l’SSH per connetterti al tuo server
 
-Per ulteriori informazioni fai riferimento a [questa guida](/pages/cloud/dedicated/getting-started-with-dedicated-server#accedi-al-tuo-server).
+Per ulteriori informazioni fai riferimento a [questa guida](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server#accedi-al-tuo-server).
 
 #### Step 2: Apri il file di configurazione di rete del tuo server
 
@@ -132,7 +132,7 @@ Se non sei in grado di testare (effettuare il ping di) questo indirizzo IPv6, ve
 
 #### Step 1: Utilizza l’SSH per connetterti al tuo server
 
-Per ulteriori informazioni fai riferimento a [questa guida](/pages/cloud/dedicated/getting-started-with-dedicated-server#accedi-al-tuo-server).
+Per ulteriori informazioni fai riferimento a [questa guida](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server#accedi-al-tuo-server).
 
 #### Step 2: Apri il file di configurazione di rete del tuo server
 
@@ -181,7 +181,7 @@ Se non sei in grado di testare (effettuare il ping di) questo indirizzo IPv6, ve
 
 #### Step 1: Utilizza l’SSH per connetterti al tuo server
 
-Per ulteriori informazioni fai riferimento a [questa guida](/pages/cloud/dedicated/getting-started-with-dedicated-server#accedi-al-tuo-server).
+Per ulteriori informazioni fai riferimento a [questa guida](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server#accedi-al-tuo-server).
 
 #### Step 2: Apri il file di configurazione di rete del tuo server
 
@@ -227,7 +227,7 @@ Se non sei in grado di testare (effettuare il ping di) questo indirizzo IPv6, ve
 
 #### Step 1: Utilizza l’SSH per connetterti al tuo server
 
-Per ulteriori informazioni fai riferimento a [questa guida](/pages/cloud/dedicated/getting-started-with-dedicated-server#accedi-al-tuo-server).
+Per ulteriori informazioni fai riferimento a [questa guida](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server#accedi-al-tuo-server).
 
 #### Step 2: Apri il file di configurazione di rete del tuo server
 
@@ -319,7 +319,7 @@ rtt min/avg/max/mdev = 4.075/4.079/4.083/0.045 ms
 
 #### Step 1: Utilizza l’RDP per connetterti al tuo server
 
-Per ulteriori informazioni fai riferimento a [questa guida](/pages/cloud/dedicated/getting-started-with-dedicated-server#accedi-al-tuo-server).
+Per ulteriori informazioni fai riferimento a [questa guida](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server#accedi-al-tuo-server).
 
 #### Step 2: Apri la configurazione di rete del tuo server
 

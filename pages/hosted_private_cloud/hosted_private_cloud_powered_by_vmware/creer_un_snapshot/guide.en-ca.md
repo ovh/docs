@@ -1,7 +1,6 @@
 ---
 title: Taking a snapshot
 excerpt: Return to a previous VM state using snapshots
-legacy_guide_number: '7766547'
 updated: 2022-01-19
 ---
 

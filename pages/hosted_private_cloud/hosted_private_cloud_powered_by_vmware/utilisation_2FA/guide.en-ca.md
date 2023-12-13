@@ -79,7 +79,7 @@ The only difference will be the user's autonomy in token validation.
 ### Application access permission
 
 Multiple third-party applications can be used that require connection to the vCenter.
-These applications must first be authorised through the vCenter access policy that is settable in your OVHcloud [Control Panel](/pages/cloud/private-cloud/manager_ovh_private_cloud#security).
+These applications must first be authorised through the vCenter access policy that is settable in your OVHcloud [Control Panel](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/manager_ovh_private_cloud#security).
 
 These applications will then be able to access our infrastructures, but they will not necessarily handle two-factor authentication.
 
@@ -93,35 +93,35 @@ To add your application's public IP addresses to this second whitelist, the foll
 
 > [!api]
 >
-> @api {GET} /dedicatedCloud/{serviceName}/twoFAWhitelist
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/twoFAWhitelist
 >
 
 - Add an IP to the bypass whitelist of 2FA:
 
 > [!api]
 >
-> @api {POST} /dedicatedCloud/{serviceName}/twoFAWhitelist
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/twoFAWhitelist
 >
 
 - Display information for an allowed IP (requires an ID retrieved with the first call):
 
 > [!api]
 >
-> @api {GET} /dedicatedCloud/{serviceName}/twoFAWhitelist/{id}
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/twoFAWhitelist/{id}
 >
 
 - Remove an IP from the whitelist:
 
 > [!api]
 >
-> @api {DELETE} /dedicatedCloud/{serviceName}/twoFAWhitelist/{id}
+> @api {v1} /dedicatedCloud DELETE /dedicatedCloud/{serviceName}/twoFAWhitelist/{id}
 >
 
 - Change the information for an allowed IP:
 
 > [!api]
 >
-> @api {POST} /dedicatedCloud/{serviceName}/twoFAWhitelist/{id}/changeProperties
+> @api {v1} /dedicatedCloud POST /dedicatedCloud/{serviceName}/twoFAWhitelist/{id}/changeProperties
 >
 
 ## Go further

@@ -1,7 +1,7 @@
 ---
 title: Créer et utiliser un compte partagé
 excerpt: Ajouter et utiliser un compte partagé sur votre offre E-mail Exchange
-updated: 2021-06-15
+updated: 2023-09-15
 ---
 
 ## Objectif
@@ -31,9 +31,19 @@ Renseignez les champs demandés :
 |Fonction|Description|
 |---|---|
 |Compte e-mail|Choisissez le nom de votre compte partagé. **Il ne doit pas s'agir d'une adresse e-mail existante.**|
-|Quota|Indiquez le quota de stockage souhaité pour votre compte partagé. Le quota maximal est de **10 Go pour l'ensemble de vos comptes partagés**.|
+|Quota|Indiquez le quota de stockage souhaité pour votre compte partagé, [selon l'espace disponible](#size).|
 |Nom à afficher|Le nom d'affichage que vous souhaitez faire apparaître lors d'un envoi depuis votre compte partagé.|
 |Cacher l'adresse dans l'annuaire|Cacher l’adresse dans l’annuaire permet de faire en sorte que l’adresse du compte partagé ne soit pas visible dans la liste des adresses de votre plateforme Exchange.|
+
+<a name="size"></a>
+
+> [!primary]
+>
+> L'espace disponible pour créer un compte partagé dépend du nombre de comptes souscrits sur votre plateforme. Chaque compte Exchange souscrit sur votre plateforme débloque 5 Go pour les comptes partagés.
+>
+> **exemple:**
+>
+> Vous avez souscrit à 4 comptes Exchange sur votre plateforme, vous avez donc **4 x 5Go**, soit **20 Go** d'espace alloué pour les comptes partagés de votre plateforme.
 
 Cliquez ensuite sur `Suivant`{.action} pour accéder au récapitulatif. Finalisez l'opération en cliquant sur `Valider`{.action}.
 

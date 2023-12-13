@@ -1,7 +1,7 @@
 ---
 title: "Créer une première instance Public Cloud et s'y connecter"
 excerpt: 'Découvrez les bonnes pratiques pour bien débuter avec votre première instance Public Cloud'
-updated: 2023-01-26
+updated: 2023-12-01
 ---
 
 ## Objectif
@@ -151,19 +151,18 @@ Cliquez sur le bouton `Ajouter une clé SSH`{.action}. Dans la nouvelle fenêtre
 
 Connectez-vous à l'espace client [OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc), accédez à la section `Public Cloud`{.action} et sélectionnez le projet Public Cloud concerné. Sur la page d'accueil, cliquez sur `Créer une instance`{.action}. (Vous pouvez trouver la même fonctionnalité en cliquant sur `Instances`{.action} dans la barre de navigation de gauche sous `Compute`.)
 
-![instance select](images/instance-creation-01-2023.png){.thumbnail}
+![instance select](images/instance-creation-01-02-2023.png){.thumbnail}
 
 Commencez par choisir un modèle de serveur en fonction de vos besoins. L'assistant fournit une description des différents cas d'usage et de la disponibilité du modèle de serveur. Vous avez le choix entre les catégories personnalisées suivantes:
 
 | Type de serveur | Ressources garanties | Utilisation |
 | :---         |     :---:      |          ---: |
 | General Purpose   | ✓     | Serveurs de développement, applications web ou commerciales    |
-| CPU     | ✓       | Encodage vidéo ou autres calculs haute performance      |
-| RAM   | ✓     | Base de données, analyse et calculs en mémoire   |
+| Compute Optimized     | ✓       | Encodage vidéo ou autres calculs haute performance      |
+| Memory Optimized   | ✓     | Base de données, analyse et calculs en mémoire   |
 | GPU     | ✓       | Calcul accéléré pour des applications spécifiques (rendering, transcodage vidéo, bio-informatique, Big Data, deep learning, etc.)      |
-| Sandbox    | -       | Tests, recettes et environnements de développement.     |
 | Discovery    | -       | Tests, recettes et environnements de développement.     |
-| IOPS   | ✓     | Optimisé pour les transactions disque les plus rapides    |
+| Storage Optimized   | ✓     | Optimisé pour les transactions disque les plus rapides    |
  Metal | ✓ | Ressources dédiées avec accès direct aux ressources de calcul, de stockage et de réseau|
 
 > [!primary]
@@ -177,7 +176,7 @@ Notez que vous pouvez mettre à niveau votre instance ultérieurement, mais vous
 
 À l'étape 3, sélectionnez un système d'exploitation pour l'instance. Les images disponibles dépendent des choix effectués dans les étapes précédentes, c'est-à-dire la compatibilité avec le type de serveur et la région. Des systèmes d'exploitation avec des applications préinstallées sont également disponibles.
 
-![image select](images/instance-creation-02-2022.png){.thumbnail}
+![image select](images/instance-creation-02-2023.png){.thumbnail}
 
 > [!primary]
 >
@@ -216,6 +215,11 @@ Lorsque vous avez terminé, cliquez sur `Suivant`{.action} pour passer à la der
 
 Nous recommandons de choisir la facturation horaire en cas de doute sur la période d'utilisation, car il n'est pas possible de la choisir après la livraison du service. Vous aurez la possibilité de passer à un abonnement mensuel dès que l'instance sera disponible sur la page « Instances ».
 
+> [!primary]
+>
+>Veuillez noter que si vous choisissez l'une de nos instances *Compute* actuelles, seule l'option de facturation **à l'heure** sera disponible pour des raisons techniques.
+>
+
 > [!warning]
 >
 >Si vous choisissez d'être facturé à l'heure, vous continuerez à être facturé tant que l'instance n'est pas supprimée. Même si l'instance n'est pas utilisée.
@@ -238,7 +242,7 @@ Si vous rencontrez des problèmes avec votre connexion, c'est-à-dire des erreur
 
 > [!primary]
 >
-Si vous avez créé une instance sans clé SSH, via l’API OVHcloud ou l’interface Openstack Horizon, vous ne pourrez ajouter une clé SSH à votre instance qu'à travers le [mode rescue](/pages/public_cloud/compute/put_an_instance_in_rescue_mode), en suivant les instructions décrites dans [cette section du guide approprié](/pages/platform/public-cloud/replacing_lost_ssh_key#en-pratique).
+Si vous avez créé une instance sans clé SSH, via l’API OVHcloud ou l’interface Openstack Horizon, vous ne pourrez ajouter une clé SSH à votre instance qu'à travers le [mode rescue](/pages/public_cloud/compute/put_an_instance_in_rescue_mode), en suivant les instructions décrites dans [cette section du guide approprié](/pages/public_cloud/compute/replacing_lost_ssh_key#en-pratique).
 >
 
 #### Connexion à une instance Linux à partir de Linux / Mac

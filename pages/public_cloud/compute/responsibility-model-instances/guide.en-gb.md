@@ -1,7 +1,7 @@
 ---
 title: Public Cloud Instances - Shared responsibilities
 excerpt: "Shared responsibilities between OVHcloud and the customer for Public Cloud Instances"
-updated: 2022-12-22
+updated: 2023-10-12
 ---
 
 ## Objective
@@ -101,7 +101,10 @@ The RACI below details shared responsibilities between OVHcloud and the customer
 | --- | --- | --- |
 | Manage IP addressing plan and choose appropriate network protocols | RA | I |
 | Filter network accesses to Instances | RA | I |
+| Filter network connections and deploy a secured architecture following business needs (FW, WAF, IPS/IDS, trusted protocols, etc.) | RA |  |
 | Operate automatic network management systems (architecture, implementation, software and hardware maintenance for deployed public and private networks) | I | RA |
+
+
 
 ##### **3.1.6. Management**
 

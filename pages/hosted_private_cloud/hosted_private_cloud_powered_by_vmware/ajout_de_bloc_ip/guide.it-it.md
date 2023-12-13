@@ -52,8 +52,6 @@ Per la creazione del tuo blocco IP è necessario compilare diversi campi.
 > [!success]
 >
 > Prima della consegna, pagherai le spese di attivazione del tuo blocco IP.
->  
-> Le spese per il rinnovo degli indirizzi IP sono gratuite.
 >
 
 Dopo aver confermato l’ultimo step, ottieni il buono d’ordine del tuo blocco IP. Se il buono d’ordine è corretto, non ti resta che procedere al pagamento con uno dei metodi proposti in fondo alla pagina.
@@ -66,7 +64,7 @@ Utilizza la seguente chiamata API:
 
 > [!api]
 >
-> @api {POST} /ip/{ip}/move
+> @api {v1} /ip POST /ip/{ip}/move
 > 
 
 Completa i campi nel modo seguente:
@@ -85,7 +83,7 @@ Se, in seguito, devi scollegare il blocco IP, puoi utilizzare questa chiamata AP
 
 > [!api]
 >
-> @api {POST} /ip/{ip}/park
+> @api {v1} /ip POST /ip/{ip}/park
 > 
 
 > [!warning]

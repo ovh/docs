@@ -9,7 +9,7 @@ updated: 2023-05-23
 Pour utiliser les services OVHcloud, vous devez d'abord créer votre compte.
 La création d'un compte peut s'effectuer avant ou pendant la commande de votre premier service OVHcloud.
 
-**Découvez comment vous créer un compte OVHcloud.**
+**Découvrez comment vous créer un compte OVHcloud.**
 
 ## Prérequis
 
@@ -27,7 +27,7 @@ Pour créer un compte OVHcloud, il suffit de vous rendre sur [cette page](https:
 |---|---|
 |Prénom - Nom|Renseignez **impérativement** ici un prénom et un nom usuels.|
 |Adresse e-mail|Renseignez une adresse e-mail **valide et à laquelle vous avez actuellement accès**.<br><br>Évitez d'utiliser une adresse e-mail liée à un nom de domaine que vous gérez depuis votre espace client. En cas de coupure sur ce domaine, vous ne recevriez plus nos notifications.|
-|Mot de passe|Votre mot de passe doit être unique (créé et utilisé uniquement pour votre compte OVHcloud) et suffisamment complexe.<br><br>Consultez les conseils de [notre guide sur la gestion du mot de passe](/pages/account/customer/manage-ovh-password#en-pratique) pour créer un mot de passe efficace.|
+|Mot de passe|Votre mot de passe doit être unique (créé et utilisé uniquement pour votre compte OVHcloud) et suffisamment complexe.<br><br>Consultez les conseils de [notre guide sur la gestion du mot de passe](/pages/account_and_service_management/account_information/manage-ovh-password#en-pratique) pour créer un mot de passe efficace.|
 
 Une fois ce premier formulaire complété, un code à usage unique vous sera envoyé à l'adresse e-mail que vous avez renseignée. Ce code permettra de valider votre adresse e-mail. Renseignez-le dans les cases prévues à cet effet.
 

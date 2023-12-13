@@ -1,7 +1,7 @@
 ---
 title: Configurer un enregistrement DMARC sur votre nom de domaine
 excerpt: Découvrez comment fonctionne DMARC et comment le mettre en place pour votre service e-mail
-updated: 2023-12-06
+updated: 2023-12-13
 ---
 
 ## Objectif
@@ -175,7 +175,7 @@ Nous obtenons le résultat suivant :
 
 - **ri=86400** : définit l'intervalle demandé entre les rapports agrégés, en secondes. Dans ce cas, un rapport agrégé doit être généré au moins une fois toutes les 86400 secondes (soit une fois par jour).
 
-## Aller plus loin
+## Aller plus loin <a name="go-further"></a>
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
 

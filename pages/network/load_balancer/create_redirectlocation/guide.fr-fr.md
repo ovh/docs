@@ -73,7 +73,7 @@ Dans l'[API OVHcloud](https://api.ovh.com/){.external}, les redirections sont sp
 
 > [!api]
 >
-> @api {POST} /ipLoadbalancing/{serviceName}/http/frontend
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/http/frontend
 > 
 
 |Paramètre|Signification|
@@ -87,7 +87,7 @@ Dans l'[API OVHcloud](https://api.ovh.com/){.external}, les redirections sont sp
 
 > [!api]
 >
-> @api {PUT} /ipLoadbalancing/{serviceName}/http/frontend/{frontendId}
+> @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/http/frontend/{frontendId}
 > 
 
 |Paramètre|Signification|
@@ -100,7 +100,7 @@ Dans l'[API OVHcloud](https://api.ovh.com/){.external}, les redirections sont sp
 
 > [!api]
 >
-> @api {POST} /ipLoadbalancing/{serviceName}/refresh
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/refresh
 >
 
 |Paramètre|Signification|

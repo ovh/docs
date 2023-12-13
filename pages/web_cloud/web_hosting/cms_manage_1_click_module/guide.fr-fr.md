@@ -1,6 +1,6 @@
 ---
-title: Comment gérer votre module en 1 clic ?
-excerpt: Découvrez comment gérer votre module en 1 clic depuis votre espace client OVHcloud
+title: "Comment gérer votre module en 1 clic ?"
+excerpt: "Découvrez comment gérer votre module en 1 clic depuis votre espace client OVHcloud"
 updated: 2022-09-05
 ---
 
@@ -107,7 +107,7 @@ Toutefois, nous vous recommandons vivement d’effectuer l’opération à l’a
 
 Pour supprimer votre module en 1 clic, vous devez commencer par identifier sa base de données de façon **certaine**. Rendez-vous pour cela dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Cliquez sur `Web Cloud`{.action}, `Hébergements`{.action}, sur l'hébergement concerné puis sur l'onglet `Bases de données`{.action}.
 
-Si vous disposez d'une seule base de données dans cette partie de votre espace client et que vous ne possédez pas de solutions [Cloud Database](https://www.ovh.com/fr/cloud-databases/), vous pouvez considérer qu'il s'agit de celle de votre site.
+Si vous disposez d'une seule base de données dans cette partie de votre espace client et que vous ne possédez pas de solutions [Cloud Database](https://www.ovhcloud.com/fr/web-cloud/databases/), vous pouvez considérer qu'il s'agit de celle de votre site.
 
 Dans le cas contraire, rendez-vous dans l'onglet `Multisite`{.action}. Notez le nom du `Dossier racine` : il s'agit du répertoire dans lequel se trouvent les fichiers qui constituent votre module en 1 clic sur le serveur FTP.
 
@@ -135,7 +135,7 @@ Cliquez ensuite sur le bouton `...`{.action} à droite de la ligne désignant vo
 
 > [!warning]
 >
-> La suppression de votre module 1 clic **n'entraînera pas automatiquement celle de sa base de données**. Si vous lancez l'installation d'un nouveau CMS sans avoir supprimé préalablement la base de données du précédent (et que votre hébergement ne permet pas la création automatique d'une nouvelle base), le message « [Une erreur s’est produite lors du chargement des informations (You need at least one free database)](/pages/web/hosting/diagnostic_errors_module1clic#une-erreur-sest-produite-lors-du-chargement-des-informations-you-need-at-least-one-free-database) » s'affichera sur votre espace client.
+> La suppression de votre module 1 clic **n'entraînera pas automatiquement celle de sa base de données**. Si vous lancez l'installation d'un nouveau CMS sans avoir supprimé préalablement la base de données du précédent (et que votre hébergement ne permet pas la création automatique d'une nouvelle base), le message « [Une erreur s’est produite lors du chargement des informations (You need at least one free database)](/pages/web_cloud/web_hosting/diagnostic_errors_module1clic#une-erreur-sest-produite-lors-du-chargement-des-informations-you-need-at-least-one-free-database) » s'affichera sur votre espace client.
 >
 > Si vous disposez d'un abonnement [Perso](https://www.ovhcloud.com/fr/web-hosting/personal-offer/) ou si vous avez déjà créé quatre bases de données sur votre hébergement [Pro](https://www.ovhcloud.com/fr/web-hosting/professional-offer/) ou [Performance](https://www.ovhcloud.com/fr/web-hosting/performance-offer/), vous devrez donc supprimer la base de données identifiée à [l'étape 1](#step1) **AVANT** de pouvoir créer un nouveau module en 1 clic.
 >

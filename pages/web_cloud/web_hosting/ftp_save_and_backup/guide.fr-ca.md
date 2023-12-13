@@ -1,7 +1,7 @@
 ---
 title: "Restaurer l'espace de stockage de son hébergement web"
 excerpt: "Apprenez à restaurer un fichier ou l'intégralité de l'espace de stockage de votre hébergement web"
-updated: 2023-01-12
+updated: 2023-12-04
 ---
 
 ## Objectif
@@ -78,7 +78,7 @@ Une fois prêt, poursuivez la lecture de cette documentation en fonction de la m
 > 
 > Dans ce cas de figure :
 >
-> - Un e-mail est envoyé au [contact administrateur](/pages/account/customer/managing_contacts#acceder-a-la-gestion-des-contacts) de l'hébergement par nos équipes. 
+> - Un e-mail est envoyé au [contact administrateur](/pages/account_and_service_management/account_information/managing_contacts#acceder-a-la-gestion-des-contacts) de l'hébergement par nos équipes. 
 > - Le statut « maintenance » apparaît dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}. Dans la partie `Web Cloud`{.action}, cliquez sur votre service dans la section `Hébergement`{.action} puis sur l'onglet `Informations générales`{.action}.
 > - Le(s) site(s) hébergé(s) affiche(nt) une page « 403 Forbidden ».
 >
@@ -163,19 +163,33 @@ Une fois connecté, récupérez le ou les fichiers que vous souhaitez restaurer.
 
 Avant de passer à l'étape suivante, assurez-vous d'avoir récupéré tous les fichiers que vous souhaitez restaurer, puis déconnectez-vous de votre espace de stockage.
 
+> [!success]
+>
+> Si vous utilisez l'interface du **FTP Explorer**, n'hésitez pas à consulter la [page d'aide](https://net2ftp.cluster020.hosting.ovh.net/help.html){.external} pour réaliser correctement la récupération de vos fichiers. Cette page est également accessible via le bouton `Aide`{.action} situé en bas de l'interface de connexion au **FTP Explorer**.
+>
+> Si vous utilisez un autre logiciel pour vous connecter à votre espace de stockage FTP, nous vous recommandons de consulter la documentation officielle de votre logiciel pour effectuer correctement les manipulations.
+>
+
 #### Étape 4 : restaurer le ou les fichiers souhaités
 
 Une fois le ou les fichiers en votre possession, connectez-vous de nouveau à votre espace de stockage. Cependant, n'ajoutez pas de suffixe à votre utilisateur FTP pour vous connecter. En ne renseignant pas ce suffixe, vous vous connecterez au contenu actuel de votre espace de stockage et non à une sauvegarde antérieure.
 
 Une fois connecté, il ne vous reste plus qu'à restaurer le ou les fichiers souhaités. Pour cela, explorez le contenu de votre espace de stockage jusqu'à ces derniers, puis téléchargez-les en remplaçant les anciens fichiers.
 
+> [!success]
+>
+> Si vous utilisez l'interface du **FTP Explorer**, n'hésitez pas à consulter la [page d'aide](https://net2ftp.cluster020.hosting.ovh.net/help.html){.external} pour réaliser correctement la restauration de vos fichiers. Cette page est également accessible via le bouton `Aide`{.action} situé en bas de l'interface de connexion au **FTP Explorer**.
+>
+> Si vous utilisez un autre logiciel pour vous connecter à votre espace de stockage FTP, nous vous recommandons de consulter la documentation officielle de votre logiciel pour effectuer correctement les manipulations.
+>
+
 ## Aller plus loin
 
-[Utiliser le logiciel FileZilla avec son hébergement web](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide){.external}.
+[Utiliser le logiciel FileZilla avec son hébergement web](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)
 
-[Utiliser le logiciel Cyberduck avec son hébergement web](/pages/web_cloud/web_hosting/ftp_cyberduck_user_guide_on_mac){.external}.
+[Utiliser le logiciel Cyberduck avec son hébergement web](/pages/web_cloud/web_hosting/ftp_cyberduck_user_guide_on_mac)
 
-[Récupérer la sauvegarde de la base de données d’un hébergement web](/pages/web_cloud/web_hosting/sql_database_export){.external}.
+[Récupérer la sauvegarde de la base de données d’un hébergement web](/pages/web_cloud/web_hosting/sql_database_export)
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/directory/).
 

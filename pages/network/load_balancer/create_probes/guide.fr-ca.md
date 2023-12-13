@@ -10,7 +10,7 @@ L'OVH Load Balancer permet de répartir le trafic entrant sur un front-end vers 
 
 Il peut arriver que l'un des serveurs de votre ferme ne soit plus disponible pour différentes raisons, comme une surcharge, un incident ou une maintenance planifiée. Lorsqu'il rencontre une erreur de connexion, votre OVH Load Balancer va tenter de basculer le trafic sur un autre serveur. La connexion sera ralentie, mais continuera de fonctionner.
 
-Cependant, les causes de certaines indisponibilités sont plus subtiles. Par exemple, si une nouvelle version du code est en cours de déploiement, l'application peut se trouver momentanément dans un état transitoire et retourner des erreurs 500. Dans ce cas précis, une solution serait de marquer les serveurs concernés comme indisponibles dans l'API avant le début de la maintenance, appliquer la configuration et la mise à jour, puis marquer à nouveau le serveur comme disponible. Cette méthode n'est pas idéale mais fonctionne. Pour plus de détail sur le déploiement d'une architecture Blue-Green avec votre OVH Load Balancer, référez-vous à la documentation suivante : </pages/cloud/load_balancer/case_blue_green>.
+Cependant, les causes de certaines indisponibilités sont plus subtiles. Par exemple, si une nouvelle version du code est en cours de déploiement, l'application peut se trouver momentanément dans un état transitoire et retourner des erreurs 500. Dans ce cas précis, une solution serait de marquer les serveurs concernés comme indisponibles dans l'API avant le début de la maintenance, appliquer la configuration et la mise à jour, puis marquer à nouveau le serveur comme disponible. Cette méthode n'est pas idéale mais fonctionne. Pour plus de détail sur le déploiement d'une architecture Blue-Green avec votre OVH Load Balancer, référez-vous à la documentation suivante : </pages/network/load_balancer/case_blue_green>.
 
 Les sondes (probes en anglais) sont des tests de santé. Elles interrogent périodiquement chacun de vos serveurs pour s'assurer qu'ils sont opérationnels. Si une erreur est détectée, le serveur est automatiquement désactivé jusqu'à ce que la situation soit rétablie.
 
@@ -34,7 +34,7 @@ La liste des sondes disponibles et de leurs paramètres peut être consultée av
 
 > [!api]
 >
-> @api {GET} /ipLoadbalancing/{serviceName}/availableFarmProbes
+> @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/availableFarmProbes
 > 
 
 Pour plus d'informations sur cet appel, nous vous invitons à consulter la section *Sondes disponibles* en bas de ce guide.
@@ -43,22 +43,22 @@ Les sondes retournées par cette liste peuvent être configurées sur les fermes
 
 > [!api]
 >
-> @api {POST} /ipLoadbalancing/{serviceName}/http/farm
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/http/farm
 > 
 
 > [!api]
 >
-> @api {PUT} /ipLoadbalancing/{serviceName}/http/farm/{farmId}
+> @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/http/farm/{farmId}
 > 
 
 > [!api]
 >
-> @api {POST} /ipLoadbalancing/{serviceName}/tcp/farm
+> @api {v1} /ipLoadbalancing POST /ipLoadbalancing/{serviceName}/tcp/farm
 > 
 
 > [!api]
 >
-> @api {PUT} /ipLoadbalancing/{serviceName}/tcp/farm/{farmId}
+> @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/tcp/farm/{farmId}
 > 
 
 Pour plus d'informations sur ces appels, vous pouvez consulter la section *Manipulation des sondes* en bas de ce guide.
@@ -139,7 +139,7 @@ Les sondes peuvent être configurées sur une nouvelle ferme (`POST`) ou une fer
 >
 >> > [!api]
 >> >
->> > @api {PUT} /ipLoadbalancing/{serviceName}/http/farm/{farmId}
+>> > @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/http/farm/{farmId}
 >> >
 >>
 >
@@ -225,7 +225,7 @@ Pour qu'une sonde soit active, il faut qu'elle ait été configurée sur la ferm
 >
 >> > [!api]
 >> >
->> > @api {PUT} /ipLoadbalancing/{serviceName}/http/farm/{farmId}/server/{serverId}
+>> > @api {v1} /ipLoadbalancing PUT /ipLoadbalancing/{serviceName}/http/farm/{farmId}/server/{serverId}
 >> >
 >>
 >
@@ -273,7 +273,7 @@ La liste des sondes disponibles peut être obtenue avec l'appel API :
 >
 >> > [!api]
 >> >
->> > @api {GET} /ipLoadbalancing/{serviceName}/availableFarmProbes
+>> > @api {v1} /ipLoadbalancing GET /ipLoadbalancing/{serviceName}/availableFarmProbes
 >> >
 >>
 >

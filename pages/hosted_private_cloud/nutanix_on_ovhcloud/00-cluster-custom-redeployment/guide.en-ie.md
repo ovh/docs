@@ -139,7 +139,7 @@ Use the following API call:
 
 > [!api]
 >
-> @api {put} /nutanix/{serviceName}
+> @api {v1} /nutanix PUT /nutanix/{serviceName}
 >
 
 Enter this data:
@@ -196,7 +196,7 @@ Click `Execute`{.action} to start the cluster redeployment.
 
 ## Go further
 
-[Using the OVHcloud API](/products/infrastructure-as-code-api-apiv6)
+[Using the OVHcloud API](/products/manage-operate-api-apiv6)
 
 [Manage licences in your Nutanix on OVHcloud BYOL Offer cluster](/pages/hosted_private_cloud/nutanix_on_ovhcloud/12-activate-licenses-on-byol)
 

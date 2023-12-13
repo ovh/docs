@@ -88,7 +88,7 @@ Le tableau ci-dessous récapitule les manipulations à effectuer pour réinitial
 **Une fois le téléphone réinitialisé, la date et l'heure affichées sur son écran sont-elles exactes ?**
 
 - **OUI** : Cela indique que le téléphone contacte bien les serveurs OVHcloud pour récupérer sa configuration. Poursuivez la lecture de ce guide afin d'effectuer un dépannage du téléphone. Cela lui permettra de récupérer les informations nécessaires à l'enregistrement de sa ligne SIP.
-- **NON** : Le téléphone ne parvient pas à contacter efficacement les serveurs OVHcloud. Cela peut venir d'un défaut de configuration du réseau local. Consultez tout d'abord la partie « **Vérifier la connectivité réseau du téléphone** » de notre [tutoriel dédié au diagnostic du réseau local](/pages/telecom/voip/troubleshoot-01-local-network#connectivity).
+- **NON** : Le téléphone ne parvient pas à contacter efficacement les serveurs OVHcloud. Cela peut venir d'un défaut de configuration du réseau local. Consultez tout d'abord la partie « **Vérifier la connectivité réseau du téléphone** » de notre [tutoriel dédié au diagnostic du réseau local](/pages/web_cloud/phone_and_fax/voip/troubleshoot-01-local-network#connectivity).
 
 ### Étape 3 - Dépanner le téléphone depuis l'espace client OVHcloud <a name="step3"></a>
 
@@ -145,7 +145,7 @@ Si le dépannage de votre téléphone n'a pas permis de résoudre votre problém
 
 Il se peut que votre routeur / modem / Box Internet ne permette plus à votre téléphone de fonctionner correctement. Afin d'écarter cette éventualité, vous pouvez effectuer une réinitialisation de celui-ci. Pour cela, deux possibilités :
 
-- **vous disposez d'une box OVHcloud** : reportez-vous aux instructions décrites dans notre documentation « [Réinitialiser votre box OVHcloud](/pages/telecom/xdsl/restart_reboot_modem#reinitialiser-votre-box-ovhcloud) » ;
+- **vous disposez d'une box OVHcloud** : reportez-vous aux instructions décrites dans notre documentation « [Réinitialiser votre box OVHcloud](/pages/web_cloud/internet/internet_access/restart_reboot_modem#reinitialiser-votre-box-ovhcloud) » ;
 
 - **vous disposez d'un routeur / modem / Box Internet d'un autre opérateur** : reportez-vous à la documentation fournie par votre opérateur. 
 

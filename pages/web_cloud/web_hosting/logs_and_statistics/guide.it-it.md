@@ -1,7 +1,7 @@
 ---
-title: 'Hosting condiviso: consulta le statistiche e i log del tuo sito'
-excerpt: Accedi alle statistiche del tuo sito
-updated: 2023-08-04
+title: "Hosting condiviso: consulta le statistiche e i log del tuo sito"
+excerpt: "Accedi alle statistiche del tuo sito"
+updated: 2023-11-20
 ---
 
 > [!primary]
@@ -52,7 +52,7 @@ Dalla scheda del tuo browser che visualizza la finestra di statistiche, recupera
 
 > [!warning] 
 >
-> Se hai attivato i log separati su un [record multisito](/pages/web/hosting/multisites_configure_multisite#step-2-aggiungi-un-dominio-o-un-sottodominio), gli utenti creati qui non possono accedere alle statistiche di questo record multisito.
+> Se hai attivato i log separati su un [record multisito](/pages/web_cloud/web_hosting/multisites_configure_multisite#step-2-aggiungi-un-dominio-o-un-sottodominio), gli utenti creati qui non possono accedere alle statistiche di questo record multisito.
 >
 
 ### Statistiche delle visite
@@ -107,4 +107,8 @@ Clicca sulla scheda `Informazioni generali`{.action} e poi giù in fondo alla pa
 
 ## Per saperne di più
 
-Contatta la nostra Community di utenti all’indirizzo <https://community.ovh.com/en/>.
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
+
+Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
+
+Contatta la nostra Community di utenti all'indirizzo <https://community.ovh.com/en/>.

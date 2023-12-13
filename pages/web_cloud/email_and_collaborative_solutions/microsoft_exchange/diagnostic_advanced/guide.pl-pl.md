@@ -19,7 +19,7 @@ Błędy na kontach e-mail Exchange mogą mieć wiele przyczyn. Automatyczna diag
 - Posiadanie [rozwiązania Exchange OVHcloud](https://www.ovhcloud.com/pl/emails/hosted-exchange/)
 - Posiadanie danych identyfikacyjnych konta Exchange do sprawdzenia
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl)
-- Aktualizacja w [płatności](/pages/account/billing/invoice_management#pay-bills) tej usługi i powiązanej domeny
+- Aktualizacja w [płatności](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) tej usługi i powiązanej domeny
 
 ## W praktyce
 
@@ -58,7 +58,7 @@ Zapoznaj się z naszym przewodnikiem [Co zrobić w przypadku blokady konta ze wz
 ### Abonament dotyczący konta wygasł <a name="expired"></a>
 
 Ponieważ abonament nie jest już aktywny, wysyłka i odbiór zostały wyłączone.<br>
-Aby ponownie włączyć abonament, wystarczy zmienić jego konfigurację [częstotliwość płatności](/pages/web/microsoft-collaborative-solutions/manage_billing_exchange#periodicity) w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
+Aby ponownie włączyć abonament, wystarczy zmienić jego konfigurację [częstotliwość płatności](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_billing_exchange#periodicity) w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl).
 
 ### Konto zostało zablokowane z powodu polityki bezpieczeństwa
 

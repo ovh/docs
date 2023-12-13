@@ -52,7 +52,7 @@ Next, we will use this Floating IP to connect to the instance (VM) from the outs
 >> 
 >> Before creating your instance, make sure you have created a [private network with Gateway](/pages/public_cloud/public_cloud_network_services/getting-started-02-create-private-network-gateway).
 >>
->> To create a new instance, follow [this guide](/pages/platform/public-cloud/public-cloud-first-steps#create-instance) if necessary.
+>> To create a new instance, follow [this guide](/pages/public_cloud/compute/public-cloud-first-steps#create-instance) if necessary.
 >>
 >> > [!warning]
 >> > As of today, all regions do not support this feature. Make sure to create an instance in a valid region. For more information, please refer to our [regions availability](https://www.ovhcloud.com/asia/public-cloud/regions-availability/) page. 
@@ -391,7 +391,7 @@ With the OVHcloud API, you can only attach a Floating IP to an existing instance
 >>
 >> > [!api]
 >> >
->> > @api {GET} /cloud/project
+>> > @api {v1} /cloud GET /cloud/project
 >>
 >>
 >> > [!primary]
@@ -399,7 +399,7 @@ With the OVHcloud API, you can only attach a Floating IP to an existing instance
 >> 
 >> > [!api]
 >> >
->> >@api {GET} /cloud/project/{serviceName}
+>> >@api {v1} /cloud GET /cloud/project/{serviceName}
 >>
 >> > [!primary]
 >> > This call identifies the project via the "description" field.
@@ -410,7 +410,7 @@ With the OVHcloud API, you can only attach a Floating IP to an existing instance
 >>
 >> > [!api]
 >> >
->> > @api {GET} /cloud/project/{serviceName}/instance
+>> > @api {v1} /cloud GET /cloud/project/{serviceName}/instance
 >>
 >>
 >> > [!primary]
@@ -427,7 +427,7 @@ With the OVHcloud API, you can only attach a Floating IP to an existing instance
 >> 
 >> > [!api]
 >> >
->> > @api {POST} /cloud/project/{serviceName}/region/{regionName}/instance/{instanceId}/floatingIp 
+>> > @api {v1} /cloud GET /cloud/project/{serviceName}/instance
 >>
 >> Fill in the fields according the following table.
 >>
@@ -459,7 +459,7 @@ For the project ID, the calls below allow you to retrieve it.
 
 > [!api]
 >
-> @api {GET} /cloud/project
+> @api {v1} /cloud GET /cloud/project
 
 > [!primary]
 > This call retrieves the list of projects.
@@ -467,7 +467,7 @@ For the project ID, the calls below allow you to retrieve it.
 
 > [!api]
 >
-> @api {GET} /cloud/project/{serviceName}
+> @api {v1} /cloud GET /cloud/project/{serviceName}
 >
 
 > [!primary]
@@ -478,7 +478,7 @@ For the Floating IP ID, the call below allows you to retrieve it.
 
 > [!api]
 >
-> @api {GET} /cloud/project/{serviceName}/region/{regionName}/floatingip
+> @api {v1} /cloud GET /cloud/project/{serviceName}/region/{regionName}/floatingip
 >
 
 > [!primary]
@@ -491,7 +491,7 @@ Once the information has been retrieved, use the following call to delete the Fl
 
 > [!api]
 >
-> @api {DELETE} /cloud/project/{serviceName}/region/{regionName}/floatingip/{floatingIpId}
+> @api {v1} /cloud DELETE /cloud/project/{serviceName}/region/{regionName}/floatingip/{floatingIpId}
 >
 
 > [!primary]

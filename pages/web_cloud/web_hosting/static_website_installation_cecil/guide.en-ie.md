@@ -1,7 +1,7 @@
 ---
 title: "Tutorial - Installation and configuration of Cecil, a static site generator (SSG) in PHP"
 excerpt: "This tutorial explains how Cecil allows you to create your static website using a modern template engine (Jamstack)"
-updated: 2023-01-17
+updated: 2023-12-08
 ---
 
 ## Objective
@@ -214,8 +214,14 @@ Using a template engine, widely used in the web developer community, will allow 
 
 ## Go further <a name="go-further"></a>
 
+[Add dynamic content to a static web page generated with Cecil](/pages/web_cloud/web_hosting/static_website_installation_cecil_api_call)
+
 [Cecil application official website](https://cecil.app/){.external}
 
 [A Markdown format guide](https://www.markdownguide.org/){.external}
 
 [Our FileZilla user guide](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)
+
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-ie/directory/).
+
+Join our community of users on <https://community.ovh.com/en/>.

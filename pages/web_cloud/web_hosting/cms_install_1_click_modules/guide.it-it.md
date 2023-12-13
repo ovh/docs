@@ -1,7 +1,7 @@
 ---
 title: "Installare il tuo sito Web con un 'CMS in 1 click'"
 excerpt: "Questa guida ti mostra come creare il tuo sito Web con i nostri 'moduli in 1 click'"
-updated: 2023-03-30
+updated: 2023-11-14
 ---
 
 > [!primary]
@@ -18,14 +18,18 @@ I "moduli in 1 click" permettono l'installazione semplice e rapida di un sito We
 
 ## Prerequisiti
 
-- Disporre di una soluzione di [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/) che includa almeno un database
+- Disporre di una soluzione di [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/) che includa almeno un database.
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
-- Utilizzare [una versione di PHP compatibile](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014) sul tuo hosting Web.
-- Aver [configurato correttamente il file.ovhconfig](/pages/web_cloud/web_hosting/ovhconfig_configuration)
+- Utilizzare una versione recente di PHP e un ambiente di esecuzione compatibile sul tuo hosting Web OVHcloud. Se necessario, consulta la nostra [guida](/pages/web_cloud/web_hosting/configure_your_web_hosting) sull’argomento per modificare rapidamente questa configurazione.
 - La directory (cartella di root) in cui sarà installato il tuo "modulo in 1 click" deve essere vuota o al momento inesistente.
 - Il dominio (con sottodominio se necessario) che verrà utilizzato per il tuo sito web deve essere dichiarato come [Multisito](/pages/web_cloud/web_hosting/multisites_configure_multisite) sul tuo hosting Web OVHcloud.
 
 ## Procedura
+
+> [!primary]
+>
+> In caso di difficoltà durante l’esecuzione di uno degli step descritti qui sotto, consulta la nostra documentazione specifica sugli [errori più frequenti associati ai "moduli in 1 click"](/pages/web_cloud/web_hosting/diagnostic_errors_module1clic). 
+>
 
 ### Step 1 - Scegli correttamente il CMS
 
@@ -57,6 +61,15 @@ Nella nuova finestra, scegli il CMS e seleziona il dominio con cui vuoi installa
 
 Se il tuo dominio non è nella lista, clicca sulla scheda `Multisito`{.action} per aggiungerlo. Consulta la nostra guida [Come condividere un hosting Web tra più siti](/pages/web_cloud/web_hosting/multisites_configure_multisite){.external} in caso di necessità.
 
+> [!primary]
+>
+> Verifica, proprio sotto il modulo che permette di selezionare un dominio (o un sottodominio), che `La directory di installazione predefinita è` sia quella in cui vuoi installare il tuo "modulo in 1 click".
+>
+> Ti ricordiamo che questa directory deve essere completamente vuota.
+>
+> Se necessario, consulta la nostra guida "[Come condividere il tuo hosting Web tra più siti](/pages/web_cloud/web_hosting/multisites_configure_multisite)" per modificare la directory di destinazione del tuo dominio.
+>
+
 Una volta aggiunto correttamente il dominio, prova di nuovo ad aggiungere un "modulo in 1 click".
 
 Una volta selezionato il CMS, scegli tra un'installazione **rapida** o **avanzata**:
@@ -85,6 +98,11 @@ Scegli il dominio del tuo CMS, controlla la directory di destinazione che appare
 
 Una volta completata l'installazione, riceverai un'email con le informazioni di connessione all'interfaccia amministratore (*back office*) del tuo CMS. Accedi alla pagina per personalizzare il tuo sito Web.
 
+> [!primary]
+>
+> L’installazione e la ricezione dell’email possono richiedere fino a 15 minuti a partire dal momento in cui hai cliccato sul pulsante `Installa`{.action} nel tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it).
+>
+
 #### Installazione avanzata di un "modulo in 1 click"
 
 Assicurati che la casella `Installazione avanzata`{.action} sia selezionata e clicca su `Continua`{.action}:
@@ -94,6 +112,15 @@ Assicurati che la casella `Installazione avanzata`{.action} sia selezionata e cl
 ##### Scegli il database
 
 Inserisci le informazioni di connessione al tuo database.
+
+> [!warning]
+>
+> Se le informazioni fornite non sono corrette, l'installazione non verrà completata. Per evitare questo problema, ti consigliamo di testare la connessione al tuo database.
+> 
+> Per recuperare le credenziali di accesso al tuo database incluso nel tuo hosting Web, consulta [questa guida](/pages/web_cloud/web_hosting/sql_create_database).
+>
+> Per recuperare le credenziali di accesso al database creato su un'istanza Web Cloud Databases, consulta [questa guida](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
+>
 
 ![Database per l'installazione avanzata](images/advanced_installation_database.png){.thumbnail}
 
@@ -126,15 +153,6 @@ Per i database creati su un'offerta Web Cloud Database, consulta le informazioni
 
 Una volta inseriti tutti i dati, clicca su `Continua`{.action}.
 
-> [!warning]
->
-> Se le informazioni fornite non sono corrette, l'installazione non verrà completata. Per evitare questo problema, ti consigliamo di testare la connessione al tuo database.
-> 
-> Per recuperare le credenziali di accesso al tuo database incluso nel tuo hosting Web, consulta [questa guida](/pages/web_cloud/web_hosting/sql_create_database).
->
-> Per recuperare le credenziali di accesso al database creato su un'istanza Web Cloud Databases, consulta [questa guida](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
->
-
 ##### Configura il modulo
 
 Per configurare il modulo, inserisci queste informazioni:
@@ -144,6 +162,18 @@ Per configurare il modulo, inserisci queste informazioni:
 - *dominio:* dominio con cui vuoi installare il tuo CMS. Se necessario, consulta la guida su [Come condividere un hosting Web tra più siti](/pages/web_cloud/web_hosting/multisites_configure_multisite).
 - *lingua:* lingua in cui sarà installato il CMS.
 - *percorso di installazione:* è inserito automaticamente nella selezione del dominio. completandolo con sottocartelle (per utenti esperti).
+
+> [!primary]
+>
+> Verifica, per il modulo `Percorso di installazione`, che la directory precompilata sia quella in cui vuoi installare il tuo "modulo in 1 click" con il tuo dominio.
+>
+> Ti ricordiamo che questa directory deve essere completamente vuota.
+>
+> Inoltre, se inserisci una sottodirectory nel `Percorso di installazione`, questa comparirà nell’URL di accesso al tuo "modulo in 1 click".
+> Ad esempio, se inserisci nel modulo una sottodirectory *test*, l’URL di accesso al tuo "modulo in 1 click" avrà questo formato: **http://domain.tld/test/**.
+>
+> Se necessario, consulta la nostra guida "[Come condividere il tuo hosting Web tra più siti](/pages/web_cloud/web_hosting/multisites_configure_multisite)" per modificare la directory di destinazione del tuo dominio.
+>
 
 Una volta inseriti tutti i dati, clicca su `Continua`{.action}:
 
@@ -190,7 +220,7 @@ Per maggiori informazioni sulle funzionalità del tuo CMS, contatta il produttor
 
 [Gestire il vostro CMS](/pages/web_cloud/web_hosting/cms_manage_1_click_module)
 
-[Disinstallare il tuo CMS](/pages/web/hosting/cms_manage_1_click_module#step-3-elimina-il-tuo-modulo)
+[Disinstallare il tuo CMS](/pages/web_cloud/web_hosting/cms_manage_1_click_module#step-3-elimina-il-tuo-modulo)
 
 Scopri la nostra soluzione [Web Cloud Database](https://www.ovh.it/cloud/cloud-databases/){.external}
 

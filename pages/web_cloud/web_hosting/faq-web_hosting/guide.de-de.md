@@ -1,6 +1,6 @@
 ---
-title: FAQ Webhosting
-excerpt: Hier finden Sie die Antworten zu den am häufigsten gestellten Fragen rund um OVHcloud Webhostings
+title: "FAQ Webhosting"
+excerpt: "Hier finden Sie die Antworten zu den am häufigsten gestellten Fragen rund um OVHcloud Webhostings"
 updated: 2023-04-24
 ---
 
@@ -71,7 +71,7 @@ Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=
 
 Auf der neuen Seite `Allgemeine Informationen`{.action} finden Sie mittig den Bereich `Konfiguration`{.action}. Klicken Sie rechts neben `Web Cloud Databases`{.action} auf `...`{.action} und dann auf `Abtrennen`{.action}. Wählen Sie die kürzeste Verlängerungsdauer aus und fahren Sie fort bis zur Bestätigung der Bestellung.
 
-Weitere Informationen finden Sie in unserer Anleitung zur ["Konfiguration eines Web Cloud Databases Anbgebots"](/pages/web/clouddb/configure-database-server#modify-ram-web-cloud-db).
+Weitere Informationen finden Sie in unserer Anleitung zur ["Konfiguration eines Web Cloud Databases Anbgebots"](/pages/web_cloud/web_cloud_databases/configure-database-server#modify-ram-web-cloud-db).
 
 **Diese Aktion ist unwiderruflich. Der Web Cloud Databases Dienst wird anschließend unabhängig von Ihrem Performance Webhosting abgerechnet.**
 
@@ -134,7 +134,7 @@ Sollte Ihre Website nach einem Eingriff mit dieser URL angezeigt werden, setzen 
 
 Um den Quellcode Ihrer Webseite wiederherzustellen, lesen Sie unsere Anleitung [Den Speicherplatz Ihres Webhostings wiederherstellen](/pages/web_cloud/web_hosting/ftp_save_and_backup).
 
-Wenn Ihre Webseite eine Datenbank enthält, lesen Sie unsere Anleitung [Backup in eine Webhosting-Datenbank importieren](/pages/web/hosting/sql_importing_mysql_database#backup-uber-das-kundencenter-wiederherstellen).
+Wenn Ihre Webseite eine Datenbank enthält, lesen Sie unsere Anleitung [Backup in eine Webhosting-Datenbank importieren](/pages/web_cloud/web_hosting/sql_importing_mysql_database#backup-uber-das-kundencenter-wiederherstellen).
 
 ### Was kann ich tun, wenn meine Website auf das OVHcloud Webmail umgeleitet wird?
 
@@ -150,9 +150,9 @@ Notieren Sie sich die angegebenen DNS-Server und gehen Sie dann auf den Tab `DNS
 
 Vergleichen Sie die **Ziele** der `NS`-Einträge im Tab `DNS-Zone`{.action} mit den **DNS-Servern** im Tab desselben Namens:
 
-- Wenn die Elemente identisch sind, ersetzen Sie das Ziel `213.186.33.5` durch den Vierzahlencode im Tab `Allgemeine Informationen` unter der Rubrik `IPv4` (weitere Informationen zu den durchzuführenden Aktionen finden Sie in [dieser Anleitung](/pages/web/domains/dns_zone_edit#in-der-praktischen-anwendung)).
+- Wenn die Elemente identisch sind, ersetzen Sie das Ziel `213.186.33.5` durch den Vierzahlencode im Tab `Allgemeine Informationen` unter der Rubrik `IPv4` (weitere Informationen zu den durchzuführenden Aktionen finden Sie in [dieser Anleitung](/pages/web_cloud/domains/dns_zone_edit#in-der-praktischen-anwendung)).
 
-- Wenn die Elemente nicht identisch sind, aber die im Tab desselben Namens aufgeführten `DNS-Server` in [dieser Liste](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP) aufgeführt sind, setzen Sie die Anweisungen in [dieser Anleitung](/pages/web/domains/dns_server_general_information#dns-server-zurucksetzen) fort.
+- Wenn die Elemente nicht identisch sind, aber die im Tab desselben Namens aufgeführten `DNS-Server` in [dieser Liste](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP) aufgeführt sind, setzen Sie die Anweisungen in [dieser Anleitung](/pages/web_cloud/domains/dns_server_general_information#dns-server-zurucksetzen) fort.
 
 - Wenn die Elemente nicht identisch sind und die `DNS-Server` im Tab desselben Namens nicht in [dieser Liste](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP) aufgeführt sind, kontaktieren Sie Ihren Webmaster oder suchen Sie einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) auf der [Seite der OVHcloud-Partner](https://partner.ovhcloud.com/de/directory/).
 
@@ -171,7 +171,7 @@ Stellen Sie Ihre Website in ihrem vorherigen Zustand wieder her:
 
 - Um den Quellcode Ihrer Website wiederherzustellen, lesen Sie unsere Anleitung [Den Speicherplatz Ihres Webhostings wiederherstellen](/pages/web_cloud/web_hosting/ftp_save_and_backup);
 
-- Wenn Ihre Website eine Datenbank enthält, lesen Sie unsere Anleitung [Backup Ihrer Datenbank wiederherstellen](/pages/web/hosting/sql_importing_mysql_database#backup-uber-das-kundencenter-wiederherstellen).
+- Wenn Ihre Website eine Datenbank enthält, lesen Sie unsere Anleitung [Backup Ihrer Datenbank wiederherstellen](/pages/web_cloud/web_hosting/sql_importing_mysql_database#backup-uber-das-kundencenter-wiederherstellen).
 
 Wenn Sie über die Wiederherstellungen den Zugang zu Ihrer Webseite nicht wiederherstellen können, kontaktieren Sie Ihren Webmaster oder suchen Sie einen [spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/) auf der [Seite der OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
 

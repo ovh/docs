@@ -14,7 +14,7 @@ Restoration can take some time as it needs to be read on tapes.
 
 ## Requirements
 
-- [Getting started with Object Storage](/pages/cloud/storage/object_storage/s3_getting_started_with_object_storage#using-aws-cli)
+- [Getting started with Object Storage](/pages/storage_and_backup/object_storage/s3_getting_started_with_object_storage#using-aws-cli)
 - `awscli` version >= 1.16.62
 
 ## Instructions

@@ -1,11 +1,11 @@
 ---
 title: "¿Qué hacer en caso de página 403 forbidden?"
-excerpt: Descubra cómo volver a publicar un sitio web cuando este muestre la página 403 forbidden
+excerpt: "Descubra cómo volver a publicar un sitio web cuando este muestre la página 403 forbidden"
 updated: 2023-06-09
 ---
 
 > [!primary]
-> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón "Contribuir" de esta página.
 >
 
 ## Objetivo
@@ -193,7 +193,7 @@ Una respuesta **"200 Permissions changed on /"** confirma que la operación se h
 
 [Activación del firewall de aplicación](/pages/web_cloud/web_hosting/multisites_activating_application_firewall)
 
-[Cambiar la versión de PHP de un alojamiento web](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014)
+[Cambiar la versión de PHP de un alojamiento web](/pages/web_cloud/web_hosting/configure_your_web_hosting)
 
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es/directory/).
 

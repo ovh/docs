@@ -1,6 +1,6 @@
 ---
-title: 'Exporter son site web'
-excerpt: 'Découvrez comment exporter votre site web OVHcloud'
+title: "Exporter son site web"
+excerpt: "Découvrez comment exporter votre site web OVHcloud"
 updated: 2022-02-03
 ---
 
@@ -100,5 +100,9 @@ Lorsque vous avez sélectionné le type de logs sur le mois qui vous intéresse,
 [Récupérer la sauvegarde de la base de données d’un hébergement web](/pages/web_cloud/web_hosting/sql_database_export){.external}.
 
 [Premiers pas avec le service Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb){.external}.
+
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
+
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr/support-levels/).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

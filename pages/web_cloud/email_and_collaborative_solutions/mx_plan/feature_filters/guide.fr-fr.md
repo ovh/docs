@@ -1,6 +1,5 @@
 ---
 title: 'Créer des filtres pour vos adresses e-mail'
-legacy_guide_number: 1973
 excerpt: 'Découvrez comment créer et configurer un filtre sur votre adresse e-mail'
 updated: 2021-09-27
 ---
@@ -98,6 +97,10 @@ Vous avez le choix entre :
 ### Exemples de filtres
 
 #### Supprimer les spams
+
+> [!warning]
+>
+> Dans notre exemple nous évoquons la mention [SPAM] dans l'object d'un e-mail. Cette mention apparait lorsque l'antispam du serveur de réception délivre les e-mails, qu'il considère comme indésirable, directement dans la boite de réception. Ce qui est le cas de la version historique de l'offre MX Plan.
 
 ||En-tête|Règle|Valeur|Action|
 |---|---|---|---|---|

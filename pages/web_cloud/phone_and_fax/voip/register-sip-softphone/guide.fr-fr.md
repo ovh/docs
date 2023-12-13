@@ -14,7 +14,7 @@ OVHcloud propose des lignes SIP sans matériel pouvant être enregistrées sur d
 
 Le softphone est une application ou un logiciel qui vous permet d'enregistrer votre ligne SIP et de l'utiliser depuis un ordinateur, un smartphone ou une tablette.
 
-**Découvez comment enregistrer et utiliser votre ligne SIP OVHcloud sur un softphone.**
+**Découvrez comment enregistrer et utiliser votre ligne SIP OVHcloud sur un softphone.**
 
 > [!warning]
 >

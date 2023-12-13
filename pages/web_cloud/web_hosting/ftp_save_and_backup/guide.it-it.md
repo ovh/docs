@@ -1,7 +1,7 @@
 ---
-title: 'Ripristinare i dati dello spazio di storage di un hosting Web'
-excerpt: 'Come recuperare un file o l’intero contenuto dello spazio di storage di un hosting Web OVHcloud'
-updated: 2023-01-12
+title: "Ripristinare i dati dello spazio di storage di un hosting Web"
+excerpt: "Questa guida ti mostra come recuperare un file o l’intero contenuto dello spazio di storage di un hosting Web OVHcloud"
+updated: 2023-12-04
 ---
 
 > [!primary]
@@ -82,7 +82,7 @@ Una volta scelto il metodo di ripristino più adatto alle tue esigenze, prosegui
 > 
 > In questo caso:
 >
-> - I nostri team inviano un'email al [contatto amministratore](/pages/account/customer/managing_contacts#accedi-alla-pagina-di-gestione-dei-contatti) dell'hosting. 
+> - I nostri team inviano un'email al [contatto amministratore](/pages/account_and_service_management/account_information/managing_contacts#accedi-alla-pagina-di-gestione-dei-contatti) dell'hosting. 
 > - Lo stato di "manutenzione" compare nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Nella sezione `Web Cloud`{.action}, clicca sul tuo servizio nella sezione `Hosting`{.action} e poi sulla scheda `Informazioni generali`{.action}.
 > - Il(i) sito(i) ospita(i) mostra(no) una pagina "403 Forbidden".
 >
@@ -167,11 +167,25 @@ A questo punto recupera i file da ripristinare esplorando il contenuto del tuo s
 
 Prima di passare allo step successivo, assicurati di aver recuperato tutti i file necessari e poi esci dallo spazio di storage.
 
+> [!success]
+>
+> Se utilizzi l'interfaccia di **FTP Explorer**, consulta la [pagina della Guida](https://net2ftp.cluster020.hosting.ovh.net/help.html){.external} per effettuare correttamente il recupero dei tuoi file. Per accedere a questa pagina, clicca sul pulsante `Help Guide`{.action} nella parte inferiore dell’interfaccia di connessione al **FTP Explorer**.
+>
+> Se utilizzi un altro software per accedere allo spazio di storage FTP, ti consigliamo di consultare la documentazione ufficiale del tuo client per effettuare correttamente le operazioni.
+>
+
 #### 4. Ripristinare i file
 
 Dopo aver recuperato i file, accedi di nuovo allo storage senza aggiungere suffissi al nome utente FTP: ti connetterai al contenuto corrente del tuo storage e non a un backup precedente.
 
 A questo punto non ti resta che ripristinare i file: recuperali esplorando il contenuto del tuo spazio di storage e scaricali sostituendoli ai file precedenti.
+
+> [!success]
+>
+> Se utilizzi l’interfaccia di **FTP Explorer**, consulta la [pagina della Guida](https://net2ftp.cluster020.hosting.ovh.net/help.html){.external} per effettuare correttamente il ripristino dei tuoi file. Per accedere a questa pagina, clicca sul pulsante `Help Guide`{.action} nella parte inferiore dell’interfaccia di connessione al **FTP Explorer**.
+>
+> Se utilizzi un altro software per accedere allo spazio di storage FTP, ti consigliamo di consultare la documentazione ufficiale del tuo client per effettuare correttamente le operazioni.
+>
 
 ## Per saperne di più
 

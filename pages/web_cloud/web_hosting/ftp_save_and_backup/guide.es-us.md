@@ -1,7 +1,7 @@
 ---
-title: 'Restaurar el espacio de almacenamiento de un alojamiento web'
-excerpt: 'Cómo restaurar un archivo o el espacio de almacenamiento completo de un alojamiento web'
-updated: 2023-01-12
+title: "Restaurar el espacio de almacenamiento de un alojamiento web"
+excerpt: "Descubra cómo restaurar un archivo o el espacio de almacenamiento completo de un alojamiento web"
+updated: 2023-12-04
 ---
 
 > [!primary]
@@ -82,7 +82,7 @@ Una vez que haya elegido el método de restauración más adecuado en función d
 > 
 > En este caso:
 >
-> - Nuestro equipo envía un mensaje de correo electrónico al [contacto administrador](/pages/account/customer/managing_contacts#acceder-a-la-gestion-de-los-contactos) del alojamiento. 
+> - Nuestro equipo envía un mensaje de correo electrónico al [contacto administrador](/pages/account_and_service_management/account_information/managing_contacts#acceder-a-la-gestion-de-los-contactos) del alojamiento. 
 > - El estado de mantenimiento aparecerá en el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}. En la sección `Web Cloud`{.action}, haga clic en su servicio en la sección `Alojamientos`{.action} y seleccione la pestaña `Información general`{.action}.
 > - Los sitios web alojados muestran una página "403 Forbidden".
 >
@@ -167,11 +167,25 @@ Una vez que se haya conectado, deberá descargar los archivos que quiera restaur
 
 Antes de continuar en el siguiente paso, asegúrese de haber descargado todos los archivos que quiera restaurar y desconéctese del espacio de almacenamiento.
 
+> [!success]
+>
+> Si utiliza la interfaz del **FTP Explorer**, no dude en consultar la [página de ayuda](https://net2ftp.cluster020.hosting.ovh.net/help.html){.external} para realizar correctamente la recuperación de sus archivos. Esta página también está disponible a través del botón `Help Guide`{.action} situado en la parte inferior de la interfaz de conexión al **FTP Explorer**.
+>
+> Si utiliza otro programa para conectarse a su espacio de almacenamiento FTP, le recomendamos que consulte la documentación oficial de su programa para realizar las operaciones correctamente.
+>
+
 #### 4. Restaurar los archivos 
 
 Una vez que haya descargado los archivos, vuelva a conectarse al espacio de almacenamiento, pero esta vez sin añadir ningún sufijo al usuario FTP. Así se conectará al contenido actual del espacio de almacenamiento y no a una copia de seguridad anterior.
 
 Una vez que se haya conectado, solo tiene que restaurar los archivos que desee. Para ello, navegue por el contenido del espacio de almacenamiento hasta localizar los archivos que quiera remplazar y sustitúyalos por los archivos descargados en el paso anterior.
+
+> [!success]
+>
+> Si utiliza la interfaz del **FTP explorer**, no dude en consultar la [página de ayuda](https://net2ftp.cluster020.hosting.ovh.net/help.html){.external} para restaurar correctamente los archivos. Esta página también está disponible a través del botón `Help Guide`{.action} situado en la parte inferior de la interfaz de conexión al **FTP Explorer**.
+>
+> Si utiliza otro programa para conectarse a su espacio de almacenamiento FTP, le recomendamos que consulte la documentación oficial de su programa para realizar las operaciones correctamente.
+>
 
 ## Más información
 

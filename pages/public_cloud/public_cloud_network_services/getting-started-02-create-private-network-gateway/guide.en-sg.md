@@ -32,7 +32,7 @@ This can be created via the [OVHcloud Control Panel](https://ca.ovh.com/auth/?ac
 >>
 >> Click on `Gateway`{.action} in the left-hand menu under **Network**.
 >>
->> Please note that you need to have activated the vRack before proceeding, if you do not have a vRack, please consult [this section](/pages/platform/network-services/getting-started-07-creating-vrack#activation) of the relevant guide.
+>> Please note that you need to have activated the vRack before proceeding, if you do not have a vRack, please consult [this section](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack#activation) of the relevant guide.
 >> 
 >> Next, click on `Create a Gateway`{.action}. 
 >>
@@ -128,14 +128,14 @@ Before proceeding, it is recommended that you consult these guides:
 >>
 >> > [!api]
 >> >
->> > @api {GET} /cloud/project
+>> > @api {v1} /cloud GET /cloud/project
 >>
 >> > [!primary]
 >> > This call retrieves the list of projects.
 >>
 >> > [!api]
 >> >
->> > @api {GET} /cloud/project/{serviceName}
+>> > @api {v1} /cloud GET /cloud/project/{serviceName}
 >>
 >> > [!primary]
 >> > This call identifies the project via the "description" field.
@@ -145,7 +145,7 @@ Before proceeding, it is recommended that you consult these guides:
 >> 
 >> > [!api]
 >> >
->> > @api {POST} /cloud/project/{serviceName}/region/{regionName}/gateway
+>> > @api {v1} /cloud POST /cloud/project/{serviceName}/region/{regionName}/gateway
 >>
 >> Fill in the fields according the following table.
 >>
@@ -174,7 +174,7 @@ Before proceeding, it is recommended that you consult these guides:
 >>
 >> > [!api]
 >> >
->> > @api {GET} /cloud/project/{serviceName}/region/{regionName}/gateway
+>> > @api {v1} /cloud GET /cloud/project/{serviceName}/region/{regionName}/gateway
 >> >
 >> > Fill in the field with the previously obtained information:
 >> >

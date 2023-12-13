@@ -1,7 +1,6 @@
 ---
 title: IP-Block hinzufügen
 excerpt: Erfahren Sie hier, wie Sie einen IP-Block für Ihr Hosted Private Cloud Projekt bestellen
-legacy_guide_number: '7766457'
 updated: 2022-04-06
 ---
 
@@ -53,8 +52,6 @@ Zur Erstellung Ihres IP-Blocks sind zunächst mehrere Felder auszufüllen:
 > [!success]
 >
 > Sie müssen die Aktivierungsgebühr für Ihren IP-Block vor der Lieferung bezahlen.
->  
-> Die Verlängerung der IPs ist kostenlos.
 >
 
 Sobald Sie den letzten Schritt bestätigt haben, erhalten Sie den Bestellschein Ihres IP-Blocks. Wenn dieser Ihren Wünschen entspricht, können Sie ihn einfach mithilfe der unten auf der Seite vorgeschlagenen Zahlungsmittel begleichen, damit er geliefert wird.
@@ -69,7 +66,7 @@ Verwenden Sie hierzu folgenden Befehl:
 
 > [!api]
 >
-> @api {POST} /ip/{ip}/move
+> @api {v1} /ip POST /ip/{ip}/move
 > 
 
 Die Felder müssen wie folgt ausgefüllt werden:
@@ -88,7 +85,7 @@ Wenn Sie anschließend den IP-Block abtrennen müssen, können Sie diesen API-Au
 
 > [!api]
 >
-> @api {POST} /ip/{ip}/park
+> @api {v1} /ip POST /ip/{ip}/park
 > 
 
 > [!warning]

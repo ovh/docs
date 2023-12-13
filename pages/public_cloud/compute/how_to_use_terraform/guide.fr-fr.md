@@ -6,28 +6,6 @@ excerpt: Décrouvez comment utiliser l'outil Terraform pour abstraire le déploi
 updated: 2022-05-27
 ---
 
-<style>
- pre {
-     font-size: 14px;
- }
- pre.console {
-   background-color: #300A24;
-   color: #ccc;
-   font-family: monospace;
-   padding: 5px;
-   margin-bottom: 5px;
- }
- pre.console code {
-   border: solid 0px transparent;
-   font-family: monospace !important;
-   font-size: 0.75em;
-   color: #ccc;
- }
- .small {
-     font-size: 0.75em;
- }
-</style>
-
 ## Objectif
 
 OpenStack est un système d'exploitation de Cloud open source pour la création et la gestion de plateformes de cloud computing publiques et privées. Les composants logiciels OpenStack constituent la base de l'infrastructure Public Cloud de OVHcloud.
@@ -124,7 +102,7 @@ provider "ovh" {
 
 Un « alias » est un identifiant unique pour un type de fournisseur. Par exemple, si vous avez deux fournisseurs OpenStack avec des informations d'identification différentes, vous devez spécifier chaque fournisseur dans la ressource.
 
-Il faut maintenant [créer un nouvel utilisateur OpenStack](/pages/public_cloud/compute/create_and_delete_a_user), puis [générer le fichier OpenRC ](/pages/platform/public-cloud/loading_openstack_environment_variables#etape-1-recuperer-les-variables) contenant tous les identifiants que vous souhaitez exporter en tant qu'environnement variables.
+Il faut maintenant [créer un nouvel utilisateur OpenStack](/pages/public_cloud/compute/create_and_delete_a_user), puis [générer le fichier OpenRC ](/pages/public_cloud/compute/loading_openstack_environment_variables#etape-1-recuperer-les-variables) contenant tous les identifiants que vous souhaitez exporter en tant qu'environnement variables.
 
 Chargez ce fichier, puis entrez le mot de passe de l'utilisateur que vous avez créé précédemment :
 
@@ -188,7 +166,8 @@ terraform apply
 
 La sortie devrait ressembler à ceci :
 
-<pre class="console"><code>$ terraform apply
+```console
+$ terraform apply
 openstack_compute_keypair_v2.test_keypair: Refreshing state... [id=test_keypair]
 
 Terraform used the selected providers to generate the following execution plan. Resource actions are indicated with the following symbols:
@@ -242,7 +221,7 @@ openstack_compute_instance_v2.test_terraform_instance: Still creating... [20s el
 openstack_compute_instance_v2.test_terraform_instance: Creation complete after 25s [id=f83d3a7a-xxxx-xxxx-xxxx-53c2cee0b0fd]
 
 Apply complete! Resources: 1 added, 0 changed, 0 destroyed.
-</code></pre>
+```
 
 Connectez-vous maintenant à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), cliquez sur ` Public Cloud`{.action} et cliquez sur `Instances`{.action}.
 Comme vous pouvez le voir, votre instance nommée "terraform_instance" est en train de se créer.
@@ -260,7 +239,7 @@ Vous pouvez rechercher tous les noms de régions en utilisant cet appel API OVHc
 
 > [!api]
 >
-> @api {GET} cloud/project/{serviceName}/region
+> @api {v1} /cloud GET /cloud/project/{serviceName}/region
 >
 
 Nous utiliserons les régions OVHcloud suivantes pour cet exemple :

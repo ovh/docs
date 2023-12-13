@@ -1,7 +1,6 @@
 ---
 title: Dodawanie bloku IP
 excerpt: Jak zamówić blok IP dla swojej usługi Managed Bare Metal
-legacy_guide_number: '7766457'
 updated: 2020-11-18
 ---
 
@@ -60,7 +59,7 @@ Należy zastosować następujące wywołanie API:
 
 > [!api]
 >
-> @api {POST} /ip/{ip}/move
+> @api {v1} /ip POST /ip/{ip}/move
 >
 
 Pola należy wypełnić w następujący sposób:
@@ -79,7 +78,7 @@ Następnie użyj tego wywołania API, aby przenieść IP na “parking adresów 
 
 > [!api]
 >
-> @api {POST} /ip/{ip}/park
+> @api {v1} /ip POST /ip/{ip}/park
 > 
 
 > [!warning]

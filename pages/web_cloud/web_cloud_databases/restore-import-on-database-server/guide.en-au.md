@@ -1,7 +1,7 @@
 ---
 title: 'Restoring and importing a database to your database server'
 excerpt: 'Find out how to restore and import your database'
-updated: 2023-02-15
+updated: 2023-10-26
 ---
 
 ## Objective
@@ -81,7 +81,7 @@ In some cases, the RAM available in your database server may not be sufficient t
 
 #### Importing MySQL or MariaDB databases with phpMyAdmin
 
-To import your database directly from phpMyAdmin, you will need to log in to the interface first. To do this, you can refer to the [section in this guide](/pages/web/clouddb/connecting-to-database-on-database-server#logging-in-to-a-mysql-or-mariadb-database).
+To import your database directly from phpMyAdmin, you will need to log in to the interface first. To do this, you can refer to the [section in this guide](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server#logging-in-to-a-mysql-or-mariadb-database).
 
 Once you have logged in to phpMyAdmin, select your database by clicking on its name.
 
@@ -96,7 +96,7 @@ Select your backup file by clicking `Browse`{.action}. (Please note that the fil
 
 Keep the default options and click `Run`{.action} to start the import.
 
-![Web Cloud Databases](images/web-cloud-databases-import04.png){.thumbnail}
+![Web Cloud Databases](images/pma-upload-backup-web-cloud-db.png){.thumbnail}
 
 #### Exporting a MySQL or MariaDB database from the command line
 
@@ -152,7 +152,7 @@ psql --host=server --port=port --user=username --password=password database_name
 
 ## Go further
 
-For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/).
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-gb/directory).
 
 If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-au/support-levels/).
 

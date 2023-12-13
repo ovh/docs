@@ -13,7 +13,7 @@ Une instance *flex* est une instance à disque unique (50 Go) offrant un process
 
 ## Prérequis
 
-- Posséder une [instance Public Cloud OVHcloud](/pages/platform/public-cloud/public-cloud-first-steps#etape-3-creer-une-instance) de type *flex*.
+- Posséder une [instance Public Cloud OVHcloud](/pages/public_cloud/compute/public-cloud-first-steps#etape-3-creer-une-instance) de type *flex*.
 - [Créer un accès à l'interface Horizon](/pages/public_cloud/compute/introducing_horizon)
 
 ## En pratique
@@ -54,7 +54,7 @@ Une fois le processus terminé, votre instance sera basculée vers un modèle cl
 
 Dans le cas où vous souhaitez rebasculer à un modèle *flex*, vous pouvez le faire en effectuant les mêmes étapes mentionnées [ci-dessus](#flavorchoice) en sélectionnant un gabarit *flex* au lieu d'un gabarit classique. 
 
-Vous pouvez également [modifier la configuration de l'instance](/pages/platform/public-cloud/first_steps_with_public_cloud_instance#modifier-la-configuration-dune-instance) depuis votre espace client.
+Vous pouvez également [modifier la configuration de l'instance](/pages/public_cloud/compute/first_steps_with_public_cloud_instance#modifier-la-configuration-dune-instance) depuis votre espace client.
 
 ## Aller plus loin
 

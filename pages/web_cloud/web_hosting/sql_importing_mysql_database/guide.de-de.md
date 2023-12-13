@@ -1,7 +1,7 @@
 ---
 title: 'Backup in eine Webhosting-Datenbank importieren'
 excerpt: 'In dieser Anleitung erfahren Sie, wie Sie ein Backup in die Datenbank Ihres OVHcloud Webhostings importieren.'
-updated: 2018-09-25
+updated: 2023-12-11
 ---
  
 
@@ -136,7 +136,7 @@ Achten Sie darauf, die allgemeinen Informationen im Beispielskript mit den Infor
 
 #### Schritt 2: Skript und Backup auf Ihren Speicherplatz hochladen
 
-Nachdem Sie das Importskript erstellt haben, laden Sie es zusammen mit der Backup-Datei hoch, die Sie in den Speicherplatz Ihres Webhostings importieren möchten. Loggen Sie sich hierfür in Ihren Speicherplatz ein. Sollten Sie nicht wissen, wie der Login funktioniert, lesen Sie Schritt 2 der Anleitung „[Log in to your storage space](/pages/web/hosting/hosting_how_to_get_my_website_online#2-log-in-to-your-storage-space){.external}“ (Englisch).
+Nachdem Sie das Importskript erstellt haben, laden Sie es zusammen mit der Backup-Datei hoch, die Sie in den Speicherplatz Ihres Webhostings importieren möchten. Loggen Sie sich hierfür in Ihren Speicherplatz ein. Sollten Sie nicht wissen, wie der Login funktioniert, lesen Sie Schritt 2 der Anleitung „[Log in to your storage space](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online#2-log-in-to-your-storage-space){.external}“ (Englisch).
 
 Laden Sie das Importskript und die Backup-Datei in den „www“-Ordner, um die folgenden Schritte durchzuführen. **Achten Sie bitte besonders auf den Dateinamen des Importskripts.** Stellen Sie sicher, dass Sie beim Hochladen des Skripts keine bereits im Speicherplatz vorhandene Datei löschen, die denselben Namen trägt. Erscheint ein entsprechender Warnhinweis, ändern Sie den Skriptnamen und laden Sie es anschließend erneut hoch.
 
@@ -166,5 +166,9 @@ cat name_backup_datei.sql | mysql --host=server_adresse --user=name_benutzer--pa
 Achten Sie außerdem darauf, die allgemeinen Informationen des Beispielbefehls mit den spezifischen Informationen der betreffenden Datenbank zu ersetzen. Wir empfehlen Ihnen, nach dem Import die Backup-Datei aus dem Verzeichnis, in das Sie sie hochgeladen haben, zu löschen.
 
 ## Weiterführende Informationen
+
+Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
+
+Wenn Sie Hilfe bei der Nutzung und Konfiguration Ihrer OVHcloud Lösungen benötigen, beachten Sie unsere [Support-Angebote](https://www.ovhcloud.com/de/support-levels/).
 
 Für den Austausch mit unserer User Community gehen Sie auf <https://community.ovh.com/en/>.

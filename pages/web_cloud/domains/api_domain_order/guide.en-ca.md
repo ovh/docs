@@ -81,7 +81,7 @@ The first step when ordering a domain name is to create a cart with this API rou
 
 > [!api]
 >
-> @api {POST} /order/cart
+> @api {v1} /order POST /order/cart
 
 | Parameter     | Required | Default     | Description                 |
 | ------------- | -------- | ----------- | --------------------------- |
@@ -110,7 +110,7 @@ The second step consists in fetching available offers for a domain name.
 
 > [!api]
 >
-> @api {GET} /order/cart/{cartId}/domain
+> @api {v1} /order GET /order/cart/{cartId}/domain
 
 | Parameter | Required | Default | Description         |
 | --------- | -------- | ------- | ------------------- |
@@ -220,7 +220,7 @@ The following call allows to add the desired domain to the cart:
 
 > [!api]
 >
-> @api {POST} /order/cart/{cartId}/domain
+> @api {v1} /order POST /order/cart/{cartId}/domain
 
 | Parameter     | Required | Description                                                                                             |
 | ------------- | -------- | ------------------------------------------------------------------------------------------------------- |
@@ -295,7 +295,7 @@ This step is optional. It returns a preview of the cart contents, but does not c
 
 > [!api]
 >
-> @api {GET} /order/cart/{cartId}/summary
+> @api {v1} /order GET /order/cart/{cartId}/summary
 
 <!-- prettier-ignore -->
 > [!tabs]
@@ -499,7 +499,7 @@ As we will see later indeed, domain configurations and their validation depends 
 
 > [!api]
 >
-> @api {POST} /order/cart/{cartId}/assign
+> @api {v1} /order POST /order/cart/{cartId}/assign
 
 ## Configurations Management
 
@@ -512,7 +512,7 @@ To know which configurations are required, you should call this API endpoint.
 
 > [!api]
 >
-> @api {GET} /order/cart/{cartId}/item/{itemId}/requiredConfiguration
+> @api {v1} /order GET /order/cart/{cartId}/item/{itemId}/requiredConfiguration
 
 | Parameter | Required | Default | Description              |
 | --------- | -------- | ------- | ------------------------ |
@@ -592,7 +592,7 @@ Now that we have fetched the required configurations list, we should add them to
 
 > [!api]
 >
-> @api {POST} /order/cart/{cartId}/item/{itemId}/configuration
+> @api {v1} /order POST /order/cart/{cartId}/item/{itemId}/configuration
 
 | Parameter      | Required | Default | Description                                                            |
 | -------------- | -------- | ------- | ---------------------------------------------------------------------- |
@@ -616,19 +616,19 @@ Now that we have fetched the required configurations list, we should add them to
 
 > [!api]
 >
-> @api {GET} /order/cart/{cartId}/item/{itemId}/configuration
+> @api {v1} /order GET /order/cart/{cartId}/item/{itemId}/configuration
 
 #### Fetch Configuration Value
 
 > [!api]
 >
-> @api {GET} /order/cart/{cartId}/item/{itemId}/configuration/{configurationId}
+> @api {v1} /order GET /order/cart/{cartId}/item/{itemId}/configuration/{configurationId}
 
 #### Configuration Removal
 
 > [!api]
 >
-> @api {DELETE} /order/cart/{cartId}/item/{itemId}/configuration/{configurationId}
+> @api {v1} /order DELETE /order/cart/{cartId}/item/{itemId}/configuration/{configurationId}
 
 ## Cart Management
 
@@ -638,19 +638,19 @@ Of course, at any time, you may visualize and manipulate the cart with the follo
 
 > [!api]
 >
-> @api {GET} /order/cart/{cartId}
+> @api {v1} /order GET /order/cart/{cartId}
 
 #### Fetch Item Details
 
 > [!api]
 >
-> @api {GET} /order/cart/{cartId}/item/{itemId}
+> @api {v1} /order GET /order/cart/{cartId}/item/{itemId}
 
 #### Item Removal
 
 > [!api]
 >
-> @api {DELETE} /order/cart/{cartId}/item/{itemId}
+> @api {v1} /order DELETE /order/cart/{cartId}/item/{itemId}
 
 ## Cart Validation
 
@@ -658,7 +658,7 @@ This step is probably the most important of the order process, and can be perfor
 
 > [!api]
 >
-> @api {GET} /order/cart/{cartId}/checkout
+> @api {v1} /order GET /order/cart/{cartId}/checkout
 
 It allows to get the final purchase order, without generating it (it is a "dry-run").
 The returned object contains the contracts associated with the different products.
@@ -669,7 +669,7 @@ This call also validates the configurations, like owner eligibility for a domain
 
 > [!api]
 >
-> @api {POST} /order/cart/{cartId}/checkout
+> @api {v1} /order POST /order/cart/{cartId}/checkout
 
 | Parameter                           | Required | Default | Description                                                                            |
 | ----------------------------------- | -------- | ------- | -------------------------------------------------------------------------------------- |
@@ -687,7 +687,7 @@ First, let us fetch available payment methods for the purchase order above with 
 
 > [!api]
 >
-> @api {GET} /me/order/{orderId}/availableRegisteredPaymentMean
+> @api {v1} /me GET /me/order/{orderId}/availableRegisteredPaymentMean
 
 | Parameter | Required | Default | Description                                                                               |
 | --------- | -------- | ------- | ----------------------------------------------------------------------------------------- |
@@ -725,7 +725,7 @@ It does not return any data, but status 200 indicates that it succeeded.
 
 > [!api]
 >
-> @api {POST} /me/order/{orderId}/payWithRegisteredPaymentMean
+> @api {v1} /me POST /me/order/{orderId}/payWithRegisteredPaymentMean
 
 | Parameter       | Required                  | Default | Description                                                                                       |
 | --------------- | ------------------------- | ------- | ------------------------------------------------------------------------------------------------- |
@@ -739,7 +739,7 @@ The following API route allows to get the purchase order status.
 
 > [!api]
 >
-> @api {GET} /me/order/{orderId}/status
+> @api {v1} /me GET /me/order/{orderId}/status
 
 | Parameter | Required | Default | Description                                                                               |
 | --------- | -------- | ------- | ----------------------------------------------------------------------------------------- |

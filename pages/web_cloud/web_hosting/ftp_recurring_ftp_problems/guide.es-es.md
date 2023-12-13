@@ -1,6 +1,6 @@
 ---
-title: Resolver los errores recurrentes durante el uso de un programa FTP
-excerpt: Encuentre aquí las anomalías más frecuentes asociadas a su programa FTP
+title: "Resolver los errores recurrentes durante el uso de un programa FTP"
+excerpt: "Encuentre aquí las anomalías más frecuentes asociadas a su programa FTP"
 updated: 2022-01-05
 ---
 
@@ -18,7 +18,7 @@ El uso de software FTP durante la conexión a su [hosting Web Cloud](https://www
 >
 > La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionen correctamente.
 >
-> Esta guía le ayudará a realizar las operaciones más habituales. No obstante, si tiene alguna duda le recomendamos que contacte con un proveedor de servicios especializado o con el editor del servicio. Nosotros no podremos asistirle al respecto. Para más información, consulte el apartado [Más información](#gofurther) de esta guía.
+> Esta guía le ayudará a realizar las operaciones más habituales. No obstante, si tiene alguna duda le recomendamos que contacte con un proveedor de servicios especializado o con el editor del servicio. Nosotros no podremos asistirle al respecto. Para más información, consulte el apartado [Más información](#go-further) de esta guía.
 >
 
 ## Requisitos
@@ -51,9 +51,9 @@ Seleccione `SFTP`{.action} o `Activado`{.action} (para activar el protocolo SSH 
 
 ### He transferido mis archivos con un programa FTP, pero mi sitio web no aparece.
 
-En primer lugar, compruebe que los archivos y carpetas del sitio web estén presentes en la [carpeta raíz](/pages/web/hosting/hosting_how_to_get_my_website_online#23-cargar-los-archivos-en-el-espacio-de-almacenamiento) del alojamiento.
+En primer lugar, compruebe que los archivos y carpetas del sitio web estén presentes en la [carpeta raíz](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online#23-cargar-los-archivos-en-el-espacio-de-almacenamiento) del alojamiento.
 
-Si ha realizado alguna modificación en sus [servidores o su zona DNS](/pages/web/domains/dns_zone_edit#entender-el-concepto-de-dns) hace menos de 48 horas, espere y reinicie regularmente sus dispositivos para vaciar su caché.
+Si ha realizado alguna modificación en sus [servidores o su zona DNS](/pages/web_cloud/domains/dns_zone_edit#entender-el-concepto-de-dns) hace menos de 48 horas, espere y reinicie regularmente sus dispositivos para vaciar su caché.
 
 ### Mis claves FTP no funcionan.
 
@@ -85,9 +85,9 @@ Este enlace se instala por defecto en los alojamientos compartidos de OVHcloud. 
 
 ![site_under_construction](images/site_under_construction.png){.thumbnail}
 
-Si no ha utilizado la funcionalidad "[Módulo en 1 clic](/pages/web_cloud/web_hosting/cms_install_1_click_modules)" para crear su sitio web, deberá utilizar el programa [Net2FTP](/pages/web/hosting/ftp_connection#21-conexion-mediante-un-explorador-ftp) accesible desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) para eliminar manualmente la página "Sitio en construcción".
+Si no ha utilizado la funcionalidad "[Módulo en 1 clic](/pages/web_cloud/web_hosting/cms_install_1_click_modules)" para crear su sitio web, deberá utilizar el programa [Net2FTP](/pages/web_cloud/web_hosting/ftp_connection#21-conexion-mediante-un-explorador-ftp) accesible desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es) para eliminar manualmente la página "Sitio en construcción".
 
-## Más información <a name="gofurther"></a>
+## Más información <a name="go-further"></a>
 
 [Uso de FileZilla con el alojamiento](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)
 

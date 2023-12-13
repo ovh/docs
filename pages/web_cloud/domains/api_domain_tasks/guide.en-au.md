@@ -65,7 +65,7 @@ To list your tasks, you can use the following API:
 
 > [!api]
 >
-> @api {GET} /me/task/domain
+> @api {v1} /me GET /me/task/domain
 
 | Parameter  | Mandatory | Description                              |
 | ---------- | :-------: | ---------------------------------------- |
@@ -79,7 +79,7 @@ To retrieve the details related to a particular task, you can use the following 
 
 > [!api]
 >
-> @api {GET} /me/task/domain/{id}
+> @api {v1} /me GET /me/task/domain/{id}
 
 The most interesting fields in the answer are the following:
 
@@ -120,7 +120,7 @@ To correct it, it is possible to list the fields to be modified using the follow
 
 > [!api]
 >
-> @api {GET} /me/task/domain/{id}/argument
+> @api {v1} /me GET /me/task/domain/{id}/argument
 
 In our example, it will only return a single field:
 
@@ -132,7 +132,7 @@ You can list more information about how to fill this field and its current value
 
 > [!api]
 >
-> @api {GET} /me/task/domain/{id}/argument/{key}
+> @api {v1} /me GET /me/task/domain/{id}/argument/{key}
 
 <!-- prettier-ignore -->
 > [!tabs]
@@ -157,7 +157,7 @@ To modify the `legitimacyAfnic` field, you will have to use the following API by
 
 > [!api]
 >
-> @api {PUT} /me/task/domain/{id}/argument/{key}
+> @api {v1} /me PUT /me/task/domain/{id}/argument/{key}
 
 <!-- prettier-ignore -->
 > [!tabs]
@@ -172,7 +172,7 @@ Once the value is modified, you can, if you wish, reuse the API:
 
 > [!api]
 >
-> @api {GET} /me/task/domain/{id}/argument/{key}
+> @api {v1} /me GET /me/task/domain/{id}/argument/{key}
 
 to verify that it has been taken into account.
 
@@ -180,7 +180,7 @@ Finally, all that remains is to relaunch the task via the API:
 
 > [!api]
 >
-> @api {POST} /me/task/domain/{id}/relaunch
+> @api {v1} /me POST /me/task/domain/{id}/relaunch
 
 The task should be executed in the next few minutes and end correctly.
 

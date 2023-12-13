@@ -63,7 +63,7 @@ Proces łączenia dysku z Twoją instancją rozpocznie się i może zająć kilk
 Podczas łączenia dysku unikaj przeglądania strony poza zakładką w trakcie. Może to zakłócić proces.
 >
 
-Po podłączeniu możesz przejść do kolejnych etapów [w systemie Linux](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance#w-systemie-linux) lub [Windows](/pages/platform/public-cloud/create_and_configure_an_additional_disk_on_an_instance#w-systemie-windows).
+Po podłączeniu możesz przejść do kolejnych etapów [w systemie Linux](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance#w-systemie-linux) lub [Windows](/pages/public_cloud/compute/create_and_configure_an_additional_disk_on_an_instance#w-systemie-windows).
 
 ## Sprawdź również
 

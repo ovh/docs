@@ -1,6 +1,6 @@
 ---
-title: 'Publishing a website on your Web Hosting plan'
-excerpt: 'Find how to publish a website on your OVHcloud Web Hosting plan'
+title: "Publishing a website on your Web Hosting plan"
+excerpt: "Find how to publish a website on your OVHcloud Web Hosting plan"
 updated: 2022-07-21
 ---
 
@@ -16,7 +16,7 @@ There are many different types of website you can put online. Whether you are cr
 - an email confirming that your web hosting plan has been set up
 - a [domain name](https://www.ovhcloud.com/en-au/domains/) which can be used to access your website
 - access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
-- being up-to-date in the [payments](/pages/account/billing/invoice_management#pay-bills) and [renewals](/pages/account/billing/how_to_use_automatic_renewal#renewal-management) of related services (domain name and web hosting plan)
+- being up-to-date in the [payments](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) and [renewals](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) of related services (domain name and web hosting plan)
 
 ## Instructions
 
@@ -68,7 +68,7 @@ These elements were sent to you in the email informing you that your web hosting
 
 ![websitesetup](images/get-website-online-step1.png){.thumbnail}
 
-The information associated with your storage space will now appear, and you should be able to find the information you need to log in to it. If you need help with this, please refer to our guide on on [Logging in to your Web Hosting plan’s storage space](/pages/web_cloud/web_hosting/ftp_change_password){.external}. If you no longer have the password, refer to the instructions set out in our documentation on [Modifying a FTP user password](/pages/web_cloud/web_hosting/ftp_change_password).
+The information associated with your storage space will now appear, and you should be able to find the information you need to log in to it. If you need help with this, please refer to our guide on on [Logging in to your Web Hosting plan’s storage space](/pages/web_cloud/web_hosting/ftp_change_password). If you no longer have the password, refer to the instructions set out in our documentation on [Modifying a FTP user password](/pages/web_cloud/web_hosting/ftp_change_password).
 
 Once you have everything you need, there are three different ways of connecting to your storage space:
 
@@ -150,5 +150,9 @@ As a reminder, if you encounter any difficulties publishing your website, we rec
 [Setting up your website with 1-click modules](/pages/web_cloud/web_hosting/cms_install_1_click_modules)
 
 [Modifying an FTP user password](/pages/web_cloud/web_hosting/ftp_change_password)
+
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-au/directory/).
+
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-au/support-levels/).
 
 Join our community of users on <https://community.ovh.com/en/>.

@@ -62,11 +62,11 @@ Once the issue has been resolved, you can unblock your IP by performing the foll
 
 #### Unblocking your IP from the OVHcloud Control Panel
 
-In your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), go to the `Bare Metal Cloud`{.action} section and click on `IP`{.action}.
+In your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/asia/&ovhSubsidiary=asia), go to the `Bare Metal Cloud`{.action} section and click on `Network`{.action}. Then click on `IP`{.action}.
 
 In the yellow window for IP alerts, click on the `View all alerts`{.action} drop-down arrow to view all alerts on your IP(s).
 
-If you have an alert on any your IP(s), the information will be displayed right underneath:
+If you have an alert on any of your IP(s), the information will be displayed right underneath:
 
 ![Anti spam alert](images/alertblockedip.png){.thumbnail}
 
@@ -90,7 +90,7 @@ First, retrieve the list of IPs for each OVHcloud service (Dedicated Server/Host
 
 > [!api]
 >
-> @api {GET} /ip
+> @api {v1} /ip GET /ip
 >
 
 **type**: Indicate the type of IP (Dedicated, PCC, VPS, vRack, PCI, etc.)
@@ -111,7 +111,7 @@ Next, search for IPs in a particular state with the following call. If you alrea
 
 > [!api]
 >
-> @api {GET} /ip/{ip}/spam
+> @api {v1} /ip GET /ip/{ip}/spam
 >
 
 **ip**:	Specify the IP block retrieved in the previous step with the netmask. For example 122.122.122.121/28.<br>
@@ -127,7 +127,7 @@ If the IP is blocked, you can get information on the blocking with the following
 
 > [!api]
 >
-> @api {GET} /ip/{ip}/spam/{ipSpamming}
+> @api {v1} /ip GET /ip/{ip}/spam/{ipSpamming}
 >
 
 **ip**: Specify the IP block retrieved in the previous step with the netmask.<br>
@@ -154,7 +154,7 @@ If you wish to obtain the statistics on what has been detected, use the followin
 
 > [!api]
 >
-> @api {GET} /ip/{ip}/spam/{ipSpamming}/stats
+> @api {v1} /ip GET /ip/{ip}/spam/{ipSpamming}/stats
 >
 
 **ip**:	Specify the IP block retrieved in the previous step with the netmask.<br>
@@ -183,7 +183,7 @@ To unblock your IP, use the following call:
 
 > [!api]
 >
-> @api {POST} /ip/{ip}/spam/{ipSpamming}/unblock
+> @api {v1} /ip POST /ip/{ip}/spam/{ipSpamming}/unblock
 >
 
 **ip**: Specify the IP block retrieved in the previous step with the netmask.<br>
@@ -225,7 +225,7 @@ If your outgoing email volume is very high, you are advised to:
 
 - reserve an IP block dedicated solely to email usage.
 - provide an 'abuse' address on this block in order to receive complaints.
-- configure [Reverses](/pages/cloud/dedicated/mail_sending_optimization#configure-the-reverse-ip) on all IPs correctly.
+- configure [Reverses](/pages/bare_metal_cloud/dedicated_servers/mail_sending_optimization#configure-the-reverse-ip) on all IPs correctly.
 
 This operation will enable you to simultaneously isolate the IP and domain reputation if you send emails from various domains, to receive the complaints, and thus do what is necessary to get unblocked by various organisations. It also enables you to locate a problem more quickly on a form that uses domain X or Y, as the emails are not sent out from the same IP and don't have the same reverse.
 
@@ -259,7 +259,7 @@ For more information on the above services, please consult our guide on [Optimis
 
 - **To a Microsoft server (Outlook, etc.)**
 
-Microsoft uses a whitelist policy. This means that initially, everything starts off on a blacklist, and a specific procedure is required to validate your email server. For more information, please consult [this section](/pages/cloud/dedicated/mail_sending_optimization#to-a-microsoft-server-outlook-etc) of the corresponding guide.
+Microsoft uses a whitelist policy. This means that initially, everything starts off on a blacklist, and a specific procedure is required to validate your email server. For more information, please consult [this section](/pages/bare_metal_cloud/dedicated_servers/mail_sending_optimization#to-a-microsoft-server-outlook-etc) of the corresponding guide.
 
 - **To a Gmail server**
 

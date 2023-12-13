@@ -25,7 +25,7 @@ Niniejszy przewodnik zawiera elementy niezbędne do prawidłowego zarządzania k
 
 #### Zabezpiecz swoje konto
 
-- [Utwórz silne](/pages/account/customer/manage-ovh-password#generowanie-hasla) hasło, które zapewni poufność Twojego konta.
+- [Utwórz silne](/pages/account_and_service_management/account_information/manage-ovh-password#generowanie-hasla) hasło, które zapewni poufność Twojego konta.
 
 - [Włącz weryfikację](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa) dwuetapową, aby uniknąć ryzyka nielegalnego dostępu do panelu klienta.
 
@@ -40,7 +40,7 @@ W sekcji `Mój profil`{.action} po prawej stronie ekranu (kliknij ponownie nazw�
 
 ![miprofile](images/myprofile.png){.thumbnail}
 
-Aby uzyskać więcej informacji, zapoznaj się z przewodnikiem [Zabezpieczenie konta OVHcloud i zarządzanie danymi osobowymi](/pages/account/customer/all_about_username#jak-zarzadzac-danymi-osobowymi).
+Aby uzyskać więcej informacji, zapoznaj się z przewodnikiem [Zabezpieczenie konta OVHcloud i zarządzanie danymi osobowymi](/pages/account_and_service_management/account_information/all_about_username#jak-zarzadzac-danymi-osobowymi).
 
 Upewnij się, czy Twoje konto e-mail jest zawsze **aktualne, bezpieczne i dostępne.** Wiadomości e-mail z naszych usług zostaną wysłane na ten adres, w tym **wiadomości z resetu** w przypadku utraty hasła.
 

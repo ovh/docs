@@ -23,7 +23,7 @@ Nach der Neuinstallation eines Windows Server Betriebssystems auf einem Dedicate
 
 ### Schritt 1: KVM Zugang
 
-Um auf die KVM-Konsole Ihres Servers zuzugreifen, folgen Sie dieser [Anleitung](/pages/cloud/dedicated/using_ipmi_on_dedicated_servers#kvm-uber-ihren-webbrowser-verwenden-nur-fur-neuere-server).
+Um auf die KVM-Konsole Ihres Servers zuzugreifen, folgen Sie dieser [Anleitung](/pages/bare_metal_cloud/dedicated_servers/using_ipmi_on_dedicated_servers#kvm-uber-ihren-webbrowser-verwenden-nur-fur-neuere-server).
 
 ### Schritt 2: Die Installation von Windows abschließen
 
@@ -65,7 +65,7 @@ Ihr Server sollte nun auf Anfragen antworten, die diese Protokolle verwenden.
 
 Die Aktivierung von Windows-Startprotokollen kann bei der Serverfehlerdiagnose hilfreich sein.
 
-Loggen Sie sich via Remote-Desktop-Verbindung oder [KVM](/pages/cloud/dedicated/using_ipmi_on_dedicated_servers#kvm-uber-ihren-webbrowser-verwenden-nur-fur-neuere-server) auf dem Server ein. Öffnen Sie das Windows Startmenü und klicken Sie auf `Run`{.action}.
+Loggen Sie sich via Remote-Desktop-Verbindung oder [KVM](/pages/bare_metal_cloud/dedicated_servers/using_ipmi_on_dedicated_servers#kvm-uber-ihren-webbrowser-verwenden-nur-fur-neuere-server) auf dem Server ein. Öffnen Sie das Windows Startmenü und klicken Sie auf `Run`{.action}.
 
 ![Bootlog](images/windowsboot1.png){.thumbnail}
 

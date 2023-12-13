@@ -77,6 +77,8 @@ Port 22
 Ersetzen Sie die Nummer **22** mit der Port-Nummer Ihrer Wahl.<br>
 **Geben Sie keine bereits auf Ihrem System verwendete Port-Nummer ein**. Um sicher zu gehen, verwenden Sie eine Zahl zwischen 49152 und 65535. <br>Speichern und schließen Sie die Konfigurationsdatei.
 
+Wenn die Zeile "auskommentiert" ist (d. h. wenn ihr ein "#" vorangestellt ist), achten Sie darauf, das "#" vor dem Speichern der Datei zu entfernen, damit die Änderung wirksam wird.
+
 Starten Sie den Dienst neu:
 
 ```bash

@@ -1,7 +1,6 @@
 ---
 title: IP-Block hinzufügen
 excerpt: Erfahren Sie hier, wie Sie einen IP-Block für Ihr Managed Bare Metal Projekt bestellen
-legacy_guide_number: '7766457'
 updated: 2020-11-18
 ---
 
@@ -60,7 +59,7 @@ Verwenden Sie hierzu folgenden Befehl:
 
 > [!api]
 >
-> @api {POST} /ip/{ip}/move
+> @api {v1} /ip POST /ip/{ip}/move
 > 
 
 Die Felder müssen wie folgt ausgefüllt werden:
@@ -79,7 +78,7 @@ Verwenden Sie anschließend diesen API-Aufruf, um die IP in den IP-Parkplatz zu 
 
 > [!api]
 >
-> @api {POST} /ip/{ip}/park
+> @api {v1} /ip POST /ip/{ip}/park
 > 
 
 > [!warning]

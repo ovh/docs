@@ -1,7 +1,7 @@
 ---
 title: Ripristinare e importare un database sul tuo server di database
 excerpt: Come ripristinare e importare il database
-updated: 2023-02-15
+updated: 2023-10-26
 ---
 
 > [!primary]
@@ -86,7 +86,7 @@ In alcuni casi, la RAM disponibile nel tuo database potrebbe non consentire di e
 
 #### Importare il mio database MySQL o MariaDB da phpMyAdmin
 
-Per importare il tuo database direttamente da phpMyAdmin, è necessario connetterti prima a questo database. Per farlo, fare riferimento a [questa guida](/pages/web/clouddb/connecting-to-database-on-database-server#connettersi-a-un-database-mysql-o-mariadb).
+Per importare il tuo database direttamente da phpMyAdmin, è necessario connetterti prima a questo database. Per farlo, fare riferimento a [questa guida](/pages/web_cloud/web_cloud_databases/connecting-to-database-on-database-server#connettersi-a-un-database-mysql-o-mariadb).
 
 Una volta connesso a phpMyAdmin, seleziona il tuo database cliccando sul suo nome.
 
@@ -101,7 +101,7 @@ Seleziona il tuo file di backup cliccando `Sfoglia`{.action} (attenzione, il fil
 
 Lascia le opzioni predefinite e clicca su `Esegui`{.action} per avviare l'importazione.
 
-![Web Cloud Databases](images/web-cloud-databases-import04.png){.thumbnail}
+![Web Cloud Databases](images/pma-upload-backup-web-cloud-db.png){.thumbnail}
 
 #### Importare il tuo database MySQL o MariaDB da riga di comando
 
@@ -156,7 +156,7 @@ psql —host=server —port=port —user=utente —password=password nome_databa
 
 ## Per saperne di più
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory).
 
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
 

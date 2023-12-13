@@ -51,7 +51,7 @@ Click the `Add IP`{.action} button to add IP addresses to this list.
 
 ### Manage senders and credits
 
-See our guides on [sender management](/pages/telecom/sms/envoyer_des_sms_depuis_mon_espace_client#step-3-choose-an-sms-sender) and [managing SMS credits and enabling automatic re-crediting](/pages/web_cloud/messaging/sms/activer_la_recharge_automatique_du_credit_sms).
+See our guides on [sender management](/pages/web_cloud/messaging/sms/envoyer_des_sms_depuis_mon_espace_client#step-3-choose-an-sms-sender) and [managing SMS credits and enabling automatic re-crediting](/pages/web_cloud/messaging/sms/activer_la_recharge_automatique_du_credit_sms).
 
 ## Go further
 

@@ -1,7 +1,6 @@
 ---
 title: 'Envoi de SMS aux Etats-Unis'
 excerpt: 'Découvrez comment envoyer des SMS aux États-Unis'
-legacy_guide_number: g1754
 updated: 2022-08-05
 ---
 
@@ -65,7 +64,7 @@ Connectez-vous sur [api.ovh.com](https://api.ovh.com/) puis utilisez l’API sui
 
 > [!api]
 >
-> @api {post} /sms/{serviceName}/templatesControl
+> @api {v1} /sms POST /sms/{serviceName}/templatesControl
 >
 
 ![SMS aux Etats-Unis](images/smstousa4.png){.thumbnail}

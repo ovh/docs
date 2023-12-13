@@ -30,7 +30,7 @@ updated: 2023-08-25
 
 The OVHcloud Managed Private Registry service, a cloud-native registry built on Harbor, allows you to store, manage and access your container images (OCI artifacts) and Helm charts.
 
-By default, to log in to your OVHloud Managed private registries you have to generate credentials (from the OVHcloud Control Panel, the APIv6 or Terraform), then log in with this user and administrate other users in the Harbor HMI.
+By default, to log in to your OVHcloud Managed private registries you have to generate credentials (from the OVHcloud Control Panel, the APIv6 or Terraform), then log in with this user and administrate other users in the Harbor HMI.
 
 However, you can also configure an Open ID Connect (OIDC) provider, for the OVHcloud Managed Private registry authentication, such as Keycloack.
 
@@ -85,7 +85,7 @@ Do a POST HTTP request and fill the input fields with the keycloack/OIDC provide
 
 > [!api]
 >
-> @api {POST} /cloud/project/{serviceName}/containerRegistry/{registryID}/openIdConnect
+> @api {v1} /cloud POST /cloud/project/{serviceName}/containerRegistry/{registryID}/openIdConnect
 >
 
 **Input:**
@@ -137,7 +137,7 @@ Click on the `Save`{.action} button to finally log in to Harbor with the OIDC pr
 
 > [!api]
 >
-> @api {GET} /cloud/project/{serviceName}/containerRegistry/{registryID}/openIdConnect
+> @api {v1} /cloud GET /cloud/project/{serviceName}/containerRegistry/{registryID}/openIdConnect
 >
 
 **Input:**
@@ -185,7 +185,7 @@ Then, update the configuration with a PUT request.
 
 > [!api]
 >
-> @api {PUT} /cloud/project/{serviceName}/containerRegistry/{registryID}/openIdConnect
+> @api {v1} /cloud PUT /cloud/project/{serviceName}/containerRegistry/{registryID}/openIdConnect
 >
 
 ```
@@ -207,7 +207,7 @@ When you log in to the Harbor HMI with an OIDC provider user, the user will be s
 
 > [!api]
 >
-> @api {GET} /cloud/project/{serviceName}/containerRegistry/{registryID}/users
+> @api {v1} /cloud GET /cloud/project/{serviceName}/containerRegistry/{registryID}/users
 > 
 
 **Input:**
@@ -236,7 +236,7 @@ By default a user created in an OIDC provider doesn't have the admin rights. To 
 
 > [!api]
 >
-> @api {PUT} /cloud/project/{serviceName}/containerRegistry/{registryID}/users/{userID}/setAsAdmin
+> @api {v1} /cloud PUT /cloud/project/{serviceName}/containerRegistry/{registryID}/users/{userID}/setAsAdmin
 > 
 
 **Input:**
@@ -266,7 +266,7 @@ If you want to delete the authentication with OIDC configuration, execute a DELE
 
 > [!api]
 >
-> @api {DELETE} /cloud/project/{serviceName}/containerRegistry/{registryID}/openIdConnect
+> @api {v1} /cloud DELETE /cloud/project/{serviceName}/containerRegistry/{registryID}/openIdConnect
 > 
 
 **Input:**

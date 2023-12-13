@@ -45,7 +45,7 @@ Using the following API will allow you to retrieve the name server type defined 
 
 > [!api]
 >
-> @api {GET} /domain/{serviceName}
+> @api {v1} /domain GET /domain/{serviceName}
 
 | Parameter     | Required | Description              |
 | ------------- | -------- | ------------------------ |
@@ -81,7 +81,7 @@ The following API allows to update some domain name setup, including the name se
 
 > [!api]
 >
-> @api {PUT} /domain/{serviceName}
+> @api {v1} /domain PUT /domain/{serviceName}
 
 | Parameter               | Required | Description                                |
 | ----------------------- | -------- | ------------------------------------------ |
@@ -114,7 +114,7 @@ The management of your OVHcloud zones must be done using the route:
 
 > [!api]
 >
-> @api {GET} /domain/zone/{zoneName}
+> @api {v1} /domain GET /domain/zone/{zoneName}
 
 ### Retrieve the Name Servers Declared on a Domain Name
 
@@ -122,7 +122,7 @@ Using the following API will allow you to retrieve the IDs of the name servers d
 
 > [!api]
 >
-> @api {GET} /domain/{serviceName}/nameServer
+> @api {v1} /domain GET /domain/{serviceName}/nameServer
 
 | Parameter     | Required | Description              |
 | ------------- | -------- | ------------------------ |
@@ -144,7 +144,7 @@ To get the details of a name server, you need to call the following API:
 
 > [!api]
 >
-> @api {GET} /domain/{serviceName}/nameServer/{id}
+> @api {v1} /domain GET /domain/{serviceName}/nameServer/{id}
 
 | Parameter     | Required | Description                                           |
 | ------------- | -------- | ----------------------------------------------------- |
@@ -169,7 +169,7 @@ More information is also available through the following API:
 
 > [!api]
 >
-> @api {GET} /domain/{serviceName}/nameServer/{id}/status
+> @api {v1} /domain GET /domain/{serviceName}/nameServer/{id}/status
 
 | Parameter     | Required | Description                                           |
 | ------------- | -------- | ----------------------------------------------------- |
@@ -196,7 +196,7 @@ The following API allows you to add new name servers on your domain name:
 
 > [!api]
 >
-> @api {POST} /domain/{serviceName}/nameServer
+> @api {v1} /domain POST /domain/{serviceName}/nameServer
 
 | Parameter           | Required | Description              |
 | ------------------- | -------- | ------------------------ |
@@ -236,13 +236,13 @@ The following API allows you to add new name servers on your domain name:
 >> }
 >> ```
 
-This route will add the new name servers on the domain name and trigger a `DomainDnsUpdate` synchronisation task on the registry side. You will be able to track this task via the [dedicated APIs](/pages/web/domains/api_domain_tasks#view-pending-tasks).
+This route will add the new name servers on the domain name and trigger a `DomainDnsUpdate` synchronisation task on the registry side. You will be able to track this task via the [dedicated APIs](/pages/web_cloud/domains/api_domain_tasks#view-pending-tasks).
 
 It is also possible to completely replace the name servers declaration of a domain name through the following API:
 
 > [!api]
 >
-> @api {POST} /domain/{serviceName}/nameServers/update
+> @api {v1} /domain POST /domain/{serviceName}/nameServers/update
 
 | Parameter           | Required | Description                                    |
 | ------------------- | -------- | ---------------------------------------------- |
@@ -277,13 +277,13 @@ It is also possible to completely replace the name servers declaration of a doma
 >> ```
 
 This route will replace the name servers declaration on the domain name and, as the previous route, trigger a `DomainDnsUpdate` synchronisation task with the registry.
-You will be able to track this task via the [dedicated APIs](/pages/web/domains/api_domain_tasks#view-pending-tasks).
+You will be able to track this task via the [dedicated APIs](/pages/web_cloud/domains/api_domain_tasks#view-pending-tasks).
 
 It is also possible to delete a name server declared on a domain name through the following API:
 
 > [!api]
 >
-> @api {DELETE} /domain/{serviceName}/nameServer/{id}
+> @api {v1} /domain DELETE /domain/{serviceName}/nameServer/{id}
 
 | Parameter     | Required | Description                                           |
 | ------------- | -------- | ----------------------------------------------------- |
@@ -309,7 +309,7 @@ It is also possible to delete a name server declared on a domain name through th
 >> ```
 
 This route will delete the name server declared on your domain name and trigger a `DomainDnsUpdate` update task on the registry.
-You will be able to track this task via the [dedicated APIs](/pages/web/domains/api_domain_tasks#view-pending-tasks).
+You will be able to track this task via the [dedicated APIs](/pages/web_cloud/domains/api_domain_tasks#view-pending-tasks).
 
 ## Glue Records Declaration
 
@@ -326,14 +326,14 @@ Depending on the registry, the glue records can be:
 
     > [!api]
     >
-    > @api {GET} /domain/{serviceName}/glueRecord
+    > @api {v1} /domain DELETE /domain/{serviceName}/nameServer/{id}
 
 - declared together with the name servers by providing an IP.
     In this case you will have to use the name server APIs.
 
     > [!api]
     >
-    > @api {GET} /domain/{serviceName}/nameServer
+    > @api {v1} /domain DELETE /domain/{serviceName}/nameServer/{id}
 
 To know which APIs to use, it is necessary to retrieve the information via [the DNS setup](#retrieve-the-DNS-setup-type-of-a-domain-name) of the domain name, in the `hostSupported` field.
 
@@ -345,7 +345,7 @@ If the `hostSupported` field of the DNS setup of the domain name is set to `true
 
 > [!api]
 >
-> @api {GET} /domain/{serviceName}/glueRecord
+> @api {v1} /domain GET /domain/{serviceName}/glueRecord
 
 | Parameter     | Required | Description              |
 | ------------- | -------- | ------------------------ |
@@ -365,7 +365,7 @@ To get the details of a **glue record**, you will have to retrieve the host and 
 
 > [!api]
 >
-> @api {GET} /domain/{serviceName}/glueRecord/{host}
+> @api {v1} /domain GET /domain/{serviceName}/glueRecord/{host}
 
 | Parameter     | Required | Description                  |
 | ------------- | -------- | ---------------------------- |
@@ -396,7 +396,7 @@ The following API allows you to add a **glue record** on your domain name:
 
 > [!api]
 >
-> @api {POST} /domain/{serviceName}/glueRecord
+> @api {v1} /domain POST /domain/{serviceName}/glueRecord
 
 | Parameter     | Required | Description                    |
 | ------------- | -------- | ------------------------------ |
@@ -432,7 +432,7 @@ The following API allows you to add a **glue record** on your domain name:
 >> ```
 
 This route will trigger a `DomainHostCreate` task to create the **host** on the domain name registry.
-You will be able to track this task via the [dedicated APIs](/pages/web/domains/api_domain_tasks#view-pending-tasks).
+You will be able to track this task via the [dedicated APIs](/pages/web_cloud/domains/api_domain_tasks#view-pending-tasks).
 
 > [!warning]
 >
@@ -444,7 +444,7 @@ It is also possible to update a **glue record** through the following API:
 
 > [!api]
 >
-> @api {POST} /domain/{serviceName}/glueRecord/{host}
+> @api {v1} /domain POST /domain/{serviceName}/glueRecord/{host}
 
 | Parameter     | Required | Description                    |
 | ------------- | -------- | ------------------------------ |
@@ -481,7 +481,7 @@ It is also possible to update a **glue record** through the following API:
 >> ```
 
 This route will trigger a `DomainHostUpdate` task to modify the **host** on the domain name registry.
-You will be able to track this task via the [dedicated APIs](/pages/web/domains/api_domain_tasks#view-pending-tasks), and you will not have to re-declare the name server on the domain name.
+You will be able to track this task via the [dedicated APIs](/pages/web_cloud/domains/api_domain_tasks#view-pending-tasks), and you will not have to re-declare the name server on the domain name.
 
 #### Delete an Existing Glue Record
 
@@ -491,7 +491,7 @@ Then you can call the following API to delete the **glue record**:
 
 > [!api]
 >
-> @api {DELETE} /domain/{serviceName}/glueRecord/{host}
+> @api {v1} /domain DELETE /domain/{serviceName}/glueRecord/{host}
 
 | Parameter     | Required | Description                                         |
 | ------------- | -------- | --------------------------------------------------- |
@@ -517,4 +517,4 @@ Then you can call the following API to delete the **glue record**:
 >> ```
 
 This route will trigger a `DomainHostDelete` task to delete the **host** on the domain name registry.
-You will be able to track this task via the [dedicated APIs](/pages/web/domains/api_domain_tasks#view-pending-tasks).
+You will be able to track this task via the [dedicated APIs](/pages/web_cloud/domains/api_domain_tasks#view-pending-tasks).

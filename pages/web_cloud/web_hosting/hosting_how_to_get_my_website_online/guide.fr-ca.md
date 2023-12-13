@@ -1,6 +1,6 @@
 ---
-title: 'Mettre en ligne un site internet sur son hébergement web'
-excerpt: 'Découvrez comment mettre en ligne un site internet sur votre hébergement web OVHcloud'
+title: "Mettre en ligne un site internet sur son hébergement web"
+excerpt: "Découvrez comment mettre en ligne un site internet sur votre hébergement web OVHcloud"
 updated: 2022-07-21
 ---
 
@@ -16,7 +16,7 @@ Sur le web, il existe une multitude de sites internet. Qu'il s'agisse de créer 
 - Avoir reçu l'e-mail vous confirmant l'installation de votre hébergement web.
 - Disposer d'un [nom de domaine](https://www.ovhcloud.com/fr-ca/domains/){.external} qui sera l'adresse sur laquelle votre site sera accessible.
 - Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}.
-- Être à jour dans les [paiements](/pages/account/billing/invoice_management#pay-bills) et [renouvellements](/pages/account/billing/how_to_use_automatic_renewal#renewal-management) des services liés (nom de domaine et hébergement web).
+- Être à jour dans les [paiements](/pages/account_and_service_management/managing_billing_payments_and_services/invoice_management#pay-bills) et [renouvellements](/pages/account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal#renewal-management) des services liés (nom de domaine et hébergement web).
 
 ## En pratique
 
@@ -30,11 +30,11 @@ Avoir une vision claire de votre objectif est primordial pour mener à bien votr
 
 - **Créer vous même votre site internet** : cette solution est plus technique et requiert des compétences en programmation, mais offre la possibilité de créer un projet sur mesure.
 
-- **Migrer un site internet déjà existant chez OVHcloud** : cette solution peut s’avérer sensible si une interruption n’est pas envisageable pour le site concerné. Pour vous aider dans cette démarche, nous vous invitons également à consulter cette documentation : [« Migrer son site et ses e-mails vers OVHcloud »](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh){.external}.
+- **Migrer un site internet déjà existant chez OVHcloud** : cette solution peut s’avérer sensible si une interruption n’est pas envisageable pour le site concerné. Pour vous aider dans cette démarche, nous vous invitons également à consulter cette documentation : [« Migrer son site et ses e-mails vers OVHcloud »](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh).
 
 Après avoir évalué les différentes possibilités ci-dessus, deux choix s'offrent à vous :
 
-- **vous souhaitez utiliser nos modules en 1 clic** : reportez-vous aux instructions décrites dans notre documentation [« Installer son site avec les modules en 1 clic »](/pages/web_cloud/web_hosting/cms_install_1_click_modules){.external} ;
+- **vous souhaitez utiliser nos modules en 1 clic** : reportez-vous aux instructions décrites dans notre documentation [« Installer son site avec les modules en 1 clic »](/pages/web_cloud/web_hosting/cms_install_1_click_modules) ;
 
 - **vous ne souhaitez pas utiliser nos modules en 1 clic** : vous devrez réaliser l'installation de votre site manuellement sur votre hébergement. Pour cela, les informations présentes dans cette documentation pourront vous aider dans vos démarches, mais elles ne se substituent pas à l'aide d'un webmaster.
  
@@ -68,7 +68,7 @@ Ces éléments vous ont été communiqués dans l’e-mail vous notifiant l’in
 
 ![siteinstallation](images/get-website-online-step1.png){.thumbnail}
 
-Les informations liées à votre espace de stockage apparaissent alors. Vous devriez pouvoir retrouver les éléments requis pour vous connecter à celui-ci. Si nécessaire, nous vous invitons à consulter notre guide : [« Se connecter à l’espace de stockage de son hébergement web »](/pages/web_cloud/web_hosting/ftp_connection){.external}. Si vous n'êtes plus en possession du mot de passe, reportez-vous aux instructions décrites dans notre documentation [« Modifier le mot de passe d’un utilisateur FTP »](/pages/web_cloud/web_hosting/ftp_change_password){.external}.
+Les informations liées à votre espace de stockage apparaissent alors. Vous devriez pouvoir retrouver les éléments requis pour vous connecter à celui-ci. Si nécessaire, nous vous invitons à consulter notre guide : [« Se connecter à l’espace de stockage de son hébergement web »](/pages/web_cloud/web_hosting/ftp_connection). Si vous n'êtes plus en possession du mot de passe, reportez-vous aux instructions décrites dans notre documentation [« Modifier le mot de passe d’un utilisateur FTP »](/pages/web_cloud/web_hosting/ftp_change_password).
 
 Une fois tous les éléments en votre possession, la connexion à l'espace de stockage peut s'effectuer de trois manières différentes :
 
@@ -145,12 +145,16 @@ Pour rappel, si vous rencontrez des difficultés lors de la mise en ligne de vot
 
 ## Aller plus loin
 
-[Migrer son site et ses e-mails vers OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh){.external}.
+[Migrer son site et ses e-mails vers OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh).
 
-[Installer son site avec les modules en 1 clic](/pages/web_cloud/web_hosting/cms_install_1_click_modules){.external}.
+[Installer son site avec les modules en 1 clic](/pages/web_cloud/web_hosting/cms_install_1_click_modules).
 
-[Se connecter à l’espace de stockage de son hébergement web](/pages/web_cloud/web_hosting/ftp_connection){.external}.
+[Se connecter à l’espace de stockage de son hébergement web](/pages/web_cloud/web_hosting/ftp_connection).
 
-[Modifier le mot de passe d’un utilisateur FTP](/pages/web_cloud/web_hosting/ftp_change_password){.external}.
+[Modifier le mot de passe d’un utilisateur FTP](/pages/web_cloud/web_hosting/ftp_change_password).
+
+Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/directory/).
+
+Si vous souhaitez bénéficier d'une assistance à l'usage et à la configuration de vos solutions OVHcloud, nous vous proposons de consulter nos différentes [offres de support](https://www.ovhcloud.com/fr-ca/support-levels/).
 
 Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.

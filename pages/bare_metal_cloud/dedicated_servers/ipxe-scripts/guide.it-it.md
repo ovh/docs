@@ -46,7 +46,7 @@ Utilizza uno script personalizzato che potrebbe essere interessante nei seguenti
 
 > [!api]
 >
-> @api {PUT} /dedicated/server/{serviceName}
+> @api {v1} /dedicated/server PUT /dedicated/server/{serviceName}
 >
 
 Specifica i tuoi script nell'attributo `bootScript` direttamente.
@@ -55,7 +55,7 @@ Specifica i tuoi script nell'attributo `bootScript` direttamente.
 
 > [!api]
 >
-> @api {GET} /dedicated/server/{serviceName}
+> @api {v1} /dedicated/server GET /dedicated/server/{serviceName}
 >
 
 Il tuo script si trova nell'attributo `bootScript`.
@@ -97,21 +97,21 @@ In qualsiasi momento è possibile reinstallare il disco o la modalità Rescue da
 
 > [!api]
 >
-> @api {PUT} /dedicated/server/{serviceName}
+> @api {v1} /dedicated/server PUT /dedicated/server/{serviceName}
 >
 
 Specifica `1` nell'attributo `bootId`.
 
 > [!api]
 >
-> @api {GET} /dedicated/server/{serviceName}
+> @api {v1} /dedicated/server GET /dedicated/server/{serviceName}
 >
 
 Ti ricordiamo che il valore dell'attributo `bootScript` è zero.
 
 ## Per saperne di più <a name="gofurther"></a>
 
-[Riavvio del tuo server dedicato](/pages/cloud/dedicated/getting-started-with-dedicated-server#reboot)
+[Riavvio del tuo server dedicato](/pages/bare_metal_cloud/dedicated_servers/getting-started-with-dedicated-server#reboot)
 
 [Attivare e utilizzare la modalità rescue](/pages/bare_metal_cloud/dedicated_servers/rescue_mode)
 

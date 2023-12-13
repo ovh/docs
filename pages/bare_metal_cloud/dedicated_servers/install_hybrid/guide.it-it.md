@@ -36,7 +36,7 @@ Una volta effettuato l’accesso su <https://api.ovh.com/console/>, recupera il 
 
 > [!api]
 >
-> @api {GET} /dedicated/server
+> @api {v1} /dedicated/server GET /dedicated/server
 >
 
 In seguito, clicca su `Execute`{.action} per recuperare il nome del tuo server ibrido:
@@ -51,7 +51,7 @@ Per effettuare l’operazione, utilizza questa chiamata API:
 
 > [!api]
 >
-> @api {GET} /dedicated/server/{serviceName}/specifications/hardware
+> @api {v1} /dedicated/server GET /dedicated/server/{serviceName}/specifications/hardware
 >
 
 Sostituisci **{serviceName}** con il nome del tuo server e clicca su `Execute`{.action}. Visualizzi le informazioni relative all’hardware del tuo server: scegli il `diskGroupId` tra quelli disponibili in `diskGroups` (di default, il sistema operativo è installato sul `diskGroupId 1`).
@@ -66,7 +66,7 @@ Per visualizzare l’elenco dei sistemi operativi compatibili, utilizza questa c
 
 > [!api]
 >
-> @api {GET} /dedicated/server/{serviceName}/install/compatibleTemplates
+> @api {v1} /dedicated/server GET /dedicated/server/{serviceName}/install/compatibleTemplates
 >
 
 ![Modelli compatibili:](images/templates-01.png){.thumbnail}
@@ -75,7 +75,7 @@ Annota il modello corrispondente al sistema operativo scelto ed esegui questa ch
 
 > [!api]
 >
-> @api {POST} /dedicated/server/{serviceName}/install/start
+> @api {v1} /dedicated/server POST /dedicated/server/{serviceName}/install/start
 >
 
 Compila i campi **serviceName**, **diskGroupId** e **TemplateName** con i dati recuperati negli step precedenti. Tutti gli altri campi sono facoltativi.
@@ -88,7 +88,7 @@ A questo punto inizierà l’installazione del sistema operativo: per verificare
 
 > [!api]
 >
-> @api {POST} /dedicated/server/{serviceName}/install/start
+> @api {v1} /dedicated/server POST /dedicated/server/{serviceName}/install/start
 >
 
 ## Per saperne di più

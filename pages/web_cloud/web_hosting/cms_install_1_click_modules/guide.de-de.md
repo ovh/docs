@@ -1,7 +1,7 @@
 ---
 title: "Installation Ihrer Website mit 1-Klick-Modulen (CMS)"
 excerpt: "Erfahren Sie hier, wie Sie Ihre Website mithilfe unserer 1-Klick-Module installieren"
-updated: 2023-03-28
+updated: 2023-11-14
 ---
 
 > [!primary]
@@ -18,14 +18,18 @@ updated: 2023-03-28
 
 ## Voraussetzungen
 
-- Sie verfügen über ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) mit mindestens einer Datenbank.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de).
-- Sie verwenden eine [kompatible PHP-Version](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014) auf Ihrem Webhosting. 
-- Ihre [.ovhconfig-Datei ist korrekt konfiguriert](/pages/web_cloud/web_hosting/ovhconfig_configuration).
-- Das Verzeichnis (Wurzelverzeichnis), in dem Ihr 1-Klick-Modul installiert wird, muss leer sein oder noch nicht vorhanden.
-- Der Domainname (und gegebenenfalls die Subdomain) Ihrer Website ist auf Ihrem OVHcloud Webhosting als [Multisite](/pages/web_cloud/web_hosting/multisites_configure_multisite) deklariert.
+- Sie verfügen über ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) mit mindestens einer Datenbank.
+- Ihr OVHcloud Webhosting verwendet eine aktuelle PHP-Version und eine kompatible Ausführungsumgebung. Wenn nötig, nutzen Sie unsere [Anleitung](/pages/web_cloud/web_hosting/configure_your_web_hosting) zu diesem Thema, um diese Konfiguration schnell anpassen zu können.
+- Falls ein bereits vorhandenes Verzeichnis zur Installation des 1-Klick-Moduls verwendet werden soll, muss dieses leer sein.
+- Der Domainname (und gegebenenfalls die Subdomain) den Sie für Ihre Website verwenden möchten, ist auf Ihrem OVHcloud Webhosting als [Multisite](/pages/web_cloud/web_hosting/multisites_configure_multisite) deklariert.
 
 ## In der praktischen Anwendung
+
+> [!primary]
+>
+> Falls Sie auf Schwierigkeiten beim Ausführen der unten beschriebenen Schritte stoßen, finden Sie Lösungen in unserer [Dokumentation zu den häufigsten Fehlermeldungen bei 1-Klick-Modulen](/pages/web_cloud/web_hosting/diagnostic_errors_module1clic).
+>
 
 ### Schritt 1: Ein CMS auswählen
 
@@ -57,6 +61,15 @@ Wählen Sie im neu angezeigten Fenster das gewünschte CMS aus und dann den Doma
 
 Wenn der Domainname nicht in der Liste steht, gehen Sie in zum Tab `Multisite`{.action}, um ihn hinzuzufügen. Wenn nötig lesen Sie unsere Anleitung "[Mehrere Websites auf einem Webhosting einrichten](/pages/web_cloud/web_hosting/multisites_configure_multisite)".
 
+[!primary]
+>
+> Überprüfen Sie direkt unterhalb des Formulars zur Auswahl einer Domain (oder Subdomain), dass Ihr `Standard-Installationsverzeichnis` tatsächlich dem Verzeichnis entspricht, in dem Sie Ihr 1-Klick-Modul installieren möchten.
+>
+> Zur Erinnerung: Dieses Verzeichnis muss vollständig leer sein.
+>
+> Wenn nötig, lesen Sie unsere Anleitung „[Mehrere Websites auf einem Webhosting einrichten](/pages/web_cloud/web_hosting/multisites_configure_multisite)“, um das Zielverzeichnis des Domainnamnes zu ändern.
+>
+
 Anschließend versuchen Sie erneut, ein Modul zu installieren.
 
 Sie haben nun die Wahl zwischen einer **einfachen Installation** oder der **Installation im Experten-Modus**.
@@ -83,15 +96,29 @@ Wählen Sie den Domainnamen für Ihr CMS aus. Überprüfen Sie das Zielverzeichn
 
 Sobald die Installation abgeschlossen ist, erhalten Sie eine E-Mail mit Login-Daten. Damit können Sie sich in das Administrator-Interface (Backend) Ihres CMS einloggen.
 
+> [!primary]
+>
+> Die Installation kann bis zu 15 Minuten dauern, nachdem Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) auf `Installieren`{.action} geklickt haben.
+>
+
 #### Erweiterte Installation eines Moduls
 
 Um die erweiterte Installation durchzuführen, vergewissern Sie sich, dass im Feld `Installation im Experten-Modus`{.action} ein Haken gesetzt ist, und klicken Sie anschließend auf `Weiter`{.action}:
 
 ![Erweiterte Installation eines Moduls](images/advanced_installation.png){.thumbnail}
 
-###### Datenbank auswählen
+##### Datenbank auswählen
 
 Geben Sie die Verbindungsdaten zu Ihrer Datenbank ein. 
+
+> [!warning]
+>
+> Wenn die von Ihnen angegebenen Informationen nicht korrekt sind, wird die Installation abgebrochen. Um dies zu vermeiden, testen Sie zunächst die Verbindung zu Ihrer Datenbank.
+> 
+> Um die Login-Daten zu Ihrer Webhosting-Datenbank zu ermitteln, lesen Sie [diese Anleitung](/pages/web_cloud/web_hosting/sql_create_database).
+>
+> Um die Login-Daten zu einer mit Web Cloud Databases erstellten Datenbank herauszufinden, lesen Sie [diese Anleitung](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
+>
 
 ![Datenbank für erweiterte Installation](images/advanced_installation_database.png){.thumbnail}
 
@@ -123,15 +150,6 @@ Für die Datenbank sind folgende Angaben erforderlich:
 
 Wenn Sie alle Informationen eingegeben haben, klicken Sie auf den Button `Weiter`{.action}.
 
-> [!warning]
->
-> Wenn die von Ihnen angegebenen Informationen nicht korrekt sind, wird die Installation abgebrochen. Um dies zu vermeiden, testen Sie zunächst die Verbindung zu Ihrer Datenbank.
-> 
-> Um die Login-Daten zu Ihrer Webhosting-Datenbank zu erfahren, lesen Sie [diese Anleitung](/pages/web_cloud/web_hosting/sql_create_database).
->
-> Um die Login-Daten zu einer auf Web Cloud Databases erstellten Datenbank zu erfahren, lesen Sie [diese Anleitung](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
->
-
 ##### Konfiguration des Moduls
 
 Geben Sie die folgenden Informationenein, um das Modul zu konfigurieren:
@@ -141,6 +159,18 @@ Geben Sie die folgenden Informationenein, um das Modul zu konfigurieren:
 - *Domain:* Domainname, mit dem Sie Ihr CMS installieren möchten. Lesen Sie unsere Anleitung "[Mehrere Websites auf einem Webhosting einrichten](/pages/web_cloud/web_hosting/multisites_configure_multisite)" um mehr zu erfahren.
 - *Sprache:* Sprache, in der das CMS installiert wird.
 - *Installationspfad:* Wird bei der Auswahl des Domainnamens automatisch ausgewählt. Ergänzen Sie ihn mit Unterverzeichnissen, falls gewünscht (für fortgeschrittene Benutzer).
+
+> [!primary]
+>
+> Überprüfen Sie für das Formular `Installationspfad`, dass das Verzeichnis, in dem Sie Ihr 1-Klick-Modul unter Ihrem Domainnamen installieren möchten, korrekt ausgefüllt ist.
+>
+> Zur Erinnerung: Dieses Verzeichnis muss vollständig leer sein.
+>
+> Wenn Sie zusätzlich ein Unterverzeichnis im `Installationspfad` eingeben, erscheint es in der URL unter der Ihr 1-Klick-Modul abrufbar sein wird.
+> Wird also beispielsweise ein Verzeichnis namens *test* in das Formular eingetragen, erhält die URL für das 1-Klick-Modul die Form **http://domain.tld/test/**.
+>
+> Wenn nötig, lesen Sie unsere Anleitung „[Mehrere Websites auf einem Webhosting einrichten](/pages/web_cloud/web_hosting/multisites_configure_multisite)“, um das Zielverzeichnis Ihres Domainnamens zu ändern.
+>
 
 Wenn Sie alle Informationen eingegeben haben, klicken Sie auf `Weiter`{.action}.
 
@@ -189,7 +219,7 @@ Entdecken Sie unsere [Web Cloud Databases](https://www.ovh.de/cloud/cloud-databa
 
 [CMS verwalten](/pages/web_cloud/web_hosting/cms_manage_1_click_module)
 
-[Ihr CMS deinstallieren](/pages/web/hosting/cms_manage_1_click_module#schritt-3-ihr-modul-loschen)
+[Ihr CMS deinstallieren](/pages/web_cloud/web_hosting/cms_manage_1_click_module#schritt-3-ihr-modul-loschen)
 
 Kontaktieren Sie für spezialisierte Dienstleistungen (SEO, Web-Entwicklung etc.) die [OVHcloud Partner](https://partner.ovhcloud.com/de/directory/).
 

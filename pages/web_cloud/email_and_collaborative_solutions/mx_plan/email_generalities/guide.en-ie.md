@@ -1,7 +1,7 @@
 ---
 title: 'Getting started with an MX Plan solution'
 excerpt: 'Find out how to get started with an MX Plan solution'
-updated: 2021-07-19
+updated: 2023-11-15
 ---
 
 ## Objective
@@ -115,9 +115,9 @@ To do this, you will need to create a redirection.
 
 You can do this in two ways:
 
-- Creating a redirection in the webmail interface, via inbox rules. To do this, please follow our guide on [Inbox rules in OWA](/pages/web/emails/creating-inbox-rules-in-owa-mx-plan#example-1-redirecting-emails-to-another-address).
+- Creating a redirection in the webmail interface, via inbox rules. To do this, please follow our guide on [Inbox rules in OWA](/pages/web_cloud/email_and_collaborative_solutions/using_the_outlook_web_app_webmail/creating-inbox-rules-in-owa-mx-plan#example-1-redirecting-emails-to-another-address).
 
-- Creating a redirection from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). For example, you can use this method to create an alias, i.e. redirect an email address that does not exist to an existing email address. To do this, please follow our guide on [Using email](/pages/web/emails/feature_redirections#mx-plan-new-version) redirections.
+- Creating a redirection from your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB). For example, you can use this method to create an alias, i.e. redirect an email address that does not exist to an existing email address. To do this, please follow our guide on [Using email](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections#mx-plan-new-version) redirections.
 
 ##### **Automated responses**
 
@@ -218,7 +218,7 @@ If you just need the information required to configure your email accounts, the 
 
 You may want to redirect your emails to another recipient, create an alias or systematically copy another email address.
 
-To do this, you will need to create a redirection. Please follow our guide on [Using email redirections](/pages/web/emails/feature_redirections#mx-plan-legacy-version).
+To do this, you will need to create a redirection. Please follow our guide on [Using email redirections](/pages/web_cloud/email_and_collaborative_solutions/common_email_features/feature_redirections#mx-plan-legacy-version).
 
 ##### **Automated responses**
 
@@ -239,8 +239,6 @@ You may want to send a regular newsletter to your contacts.
 To do this, you can create a mailing list. Please follow our guide on [Managing and using mailing lists](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_mailing_list).
 
 ## Go further
-
-The legacy MX Plan solutions are being migrated to the new MX Plan solutions. If you would like to migrate your solution as a priority, you can follow the instructions on [this page](https://www.ovh.co.uk/mxplan-migration/#accordion_6001-4).
 
 If your needs change and you want additional features, you can also [migrate an MX Plan email address to an Email Pro or Exchange account](/pages/web_cloud/email_and_collaborative_solutions/migrating/migration_control_panel).
 

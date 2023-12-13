@@ -58,13 +58,13 @@ La autenticación se lleva a cabo médiente una clave DKIM que debe de añadir a
 
 Para optimizar el envío de correos electrónicos y evitar que sus correos sean bloqueado, usted puede configurar il Registro inverso con su nombre de dominio.
 
-Si los servidores DNS son gestionados por OVHcloud, consulte esta [guía](/pages/web/domains/dns_zone_edit#acceder-a-la-gestion-de-una-zona-dns-de-ovhcloud).
+Si los servidores DNS son gestionados por OVHcloud, consulte esta [guía](/pages/web_cloud/domains/dns_zone_edit#acceder-a-la-gestion-de-una-zona-dns-de-ovhcloud).
 
 Una vez que haya editado la zona DNS del dominio, los cambios tardarán un máximo de 24 horas en propagarse y ser efectivos.
 
 A continuación, añada el registro PTR (también conocido como registro inverso):
 
-En el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, acceda a la pestaña `Bare Metal Cloud`{.action} y abra `IP`{.action}. 
+En el [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}, a la pestaña `Bare Metal Cloud`{.action} y abra `Network`{.action}. Haga clic en `IP`{.action}.
 
 Si desea configurar el Registro DNS inverso  en una dirección Additional IP, abra la pestaña `Additional IP`{.action}.
 

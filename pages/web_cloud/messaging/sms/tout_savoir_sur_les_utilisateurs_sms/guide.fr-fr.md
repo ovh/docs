@@ -1,7 +1,6 @@
 ---
 title: 'Tout savoir sur les utilisateurs SMS'
 excerpt: 'Découvrez les fonctionnalités des utilisateurs API pour envoyer des SMS'
-legacy_guide_number: g2144
 updated: 2022-08-05
 ---
 
@@ -116,7 +115,7 @@ Pour obtenir la description d'un code ptt spécifique, vous pouvez utiliser l'AP
 
 > [!api]
 >
-> @api {GET} /sms/ptts
+> @api {v1} /sms GET /sms/ptts
 >
 
 Pour plus d'informations sur l'utilisation des API OVHcloud, consultez notre guide [Premiers pas avec les API OVHcloud](/pages/manage_and_operate/api/first-steps).

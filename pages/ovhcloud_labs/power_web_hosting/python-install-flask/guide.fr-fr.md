@@ -4,26 +4,6 @@ excerpt: Découvrez comment installer Flask sur votre hébergement web POWER
 updated: 2021-01-05
 ---
 
-<style>
- pre {
-     font-size: 14px;
- }
- pre.console {
-   background-color: #300A24; 
-   color: #ccc;
-   font-family: monospace;
-   padding: 5px;
-   margin-bottom: 5px;
- }
- pre.console code {
-   border: solid 0px transparent;
-   font-family: monospace !important;
- }
- .small {
-     font-size: 0.75em;
- }
-</style>
-
 ## Objectif
 
 Vous avez souscrit à un hébergement web POWER Python et vous souhaitez y déployer [Flask](https://flask.palletsprojects.com/en/1.1.x/){.external}, le micro-framework Python pour des projets simples mais qui restent extensibles.
@@ -49,11 +29,11 @@ Supposons que vous avez la configuration normale pour un hébergement web POWER 
 
 > [!primary]
 >
-> Vous pouvez appeler l'API OVHcloud pour [visualiser la configuration active](/pages/labs/web-power/getting-started#api-get-active-configuration)
+> Vous pouvez appeler l'API OVHcloud pour [visualiser la configuration active](/pages/ovhcloud_labs/power_web_hosting/getting-started#api-get-active-configuration)
 
 Pour utiliser les frameworks [Python WSGI](https://www.fullstackpython.com/wsgi-servers.html), le plus simple est d'utiliser [virtualenv](https://pypi.org/project/virtualenv/). 
 
-[Accédez via SSH](/pages/labs/web-power/getting-started#ssh) à votre hébergement web POWER et activez `virtualenv` :
+[Accédez via SSH](/pages/ovhcloud_labs/power_web_hosting/getting-started#ssh) à votre hébergement web POWER et activez `virtualenv` :
 
 ```sh
 cd www
@@ -87,13 +67,14 @@ def hello_world():
     return 'Hello, World!'
 ```
 
-[Redémarrez votre instance](/pages/labs/web-power/getting-started#restart), votre projet Flask sera en ligne.
+[Redémarrez votre instance](/pages/ovhcloud_labs/power_web_hosting/getting-started#restart), votre projet Flask sera en ligne.
 
 ![Flask](images/python-install-flask-01.png){.thumbnail}
 
 Sortie de la console:
 
-<pre class="console"><code>~ $ cd www
+```console
+~ $ cd www
 
 ~/www $ virtualenv venv
 created virtual environment CPython3.8.7.final.0-64 in 1273ms
@@ -133,7 +114,7 @@ Successfully installed Flask-1.1.2 Jinja2-2.11.3 MarkupSafe-1.1.1 Werkzeug-1.0.1
 ~/www $ mkdir -p tmp
 
 ~/www $ touch tmp/restart.txt
-</code></pre>
+```
 
 ## Aller plus loin
 

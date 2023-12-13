@@ -45,7 +45,7 @@ Toutes les ACL existantes d'un volume peuvent être récupérées à l'aide de l
 >
 >> > [!api]
 >> >
->> > @api {GET} /storage/netapp/{serviceName}/share/{shareId}/acl
+>> > @api {v1} /storage GET /storage/netapp/{serviceName}/share/{shareId}/acl
 >> >
 >>
 >
@@ -74,7 +74,7 @@ Pour créer une nouvelle ACL, utilisez la route API suivante :
 >
 >> > [!api]
 >> >
->> > @api {POST} /storage/netapp/{serviceName}/share/{shareId}/acl
+>> > @api {v1} /storage POST /storage/netapp/{serviceName}/share/{shareId}/acl
 >> >
 >>
 >
@@ -117,7 +117,7 @@ Pour supprimer une ACL, utilisez la route API suivante :
 >
 >> > [!api]
 >> >
->> > @api {DELETE} /storage/netapp/{serviceName}/share/{shareId}/acl/{aclRuleId}
+>> > @api {v1} /storage DELETE /storage/netapp/{serviceName}/share/{shareId}/acl/{aclRuleId}
 >> >
 >>
 >

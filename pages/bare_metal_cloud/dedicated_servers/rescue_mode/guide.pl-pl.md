@@ -1,7 +1,7 @@
 ---
 title: 'Uruchamianie i korzystanie z trybu Rescue'
 excerpt: 'Dowiedz się, jak uruchomić i korzystać z trybu Rescue na serwerze dedykowanym'
-updated: 2023-02-07
+updated: 2023-09-05
 ---
 
 > [!primary]
@@ -33,7 +33,7 @@ Tworzenie kopii zapasowych danych musi być pierwszym krokiem w sposobie odzyski
 ## W praktyce
 
 > [!warning]
-> Pamiętaj, że jeśli ustaliłeś domyślny klucz SSH dla produktów dedykowanych, podczas restartu serwera w trybie rescue nie otrzymasz hasła root. W tym przypadku najpierw wyłącz domyślny klucz SSH, zanim uruchomisz serwer w trybie rescue. W tym celu zapraszamy do zapoznania się z [sekcją](/pages/cloud/dedicated/creating-ssh-keys-dedicated#disablesshkey) odpowiedniego przewodnika.
+> Pamiętaj, że jeśli ustaliłeś domyślny klucz SSH dla produktów dedykowanych, podczas restartu serwera w trybie rescue nie otrzymasz hasła root. W tym przypadku najpierw wyłącz domyślny klucz SSH, zanim uruchomisz serwer w trybie rescue. W tym celu zapraszamy do zapoznania się z [sekcją](/pages/bare_metal_cloud/dedicated_servers/creating-ssh-keys-dedicated#disablesshkey) odpowiedniego przewodnika.
 >
 
 Tryb Rescue można włączyć tylko w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Wybierz serwer, przechodząc do części `Bare Metal Cloud`{.action}, a następnie `Serwery dedykowane`{.action}. 
@@ -72,13 +72,13 @@ Po zakończeniu zadań w trybie Rescue pamiętaj o ponownym ustawieniu netbootu 
 
 Po restarcie serwera otrzymasz e-mail z danymi do połączenia w trybie Rescue. E-mail ten jest również dostępny w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). Kliknij nazwę powiązaną z Twoim identyfikatorem klienta w prawym górnym rogu Panelu klienta, a następnie `E-maile od działu wsparcia`{.action}.
 
-Zaloguj się do serwera za pomocą wiersza poleceń lub narzędzia SSH, używając wygenerowanego hasła root dla trybu Rescue.
+Zaloguj się do serwera za pomocą wiersza poleceń lub narzędzia [SSH](/pages/bare_metal_cloud/dedicated_servers/ssh_introduction), używając wygenerowanego hasła root dla trybu Rescue.
 
 Przykład:
 
 ```bash
-ssh root@your_server_IP
-root@your_server_password:
+ssh root@ns3956771.ip-169-254-10.eu
+root@ns3956771.ip-169-254-10.eu's password:
 ```
 
 > [!warning]
@@ -95,8 +95,10 @@ Większość modyfikacji wprowadzonych na Twoim serwerze przez SSH w trybie Resc
 Partycje montowane są za pomocą komendy `mount` przez SSH. Wyświetl listę partycji, aby odnaleźć tę, którą chcesz zamontować. Możesz użyć przykładowych poleceń:
 
 ```bash
-rescue-customer:~# fdisk -l
+fdisk -l
+```
 
+```console
 Disk /dev/hda 40.0 GB, 40020664320 bytes
 255 heads, 63 sectors/track, 4865 cylinders
 Units = cylinders of 16065 * 512 = 8225280 bytes
@@ -117,7 +119,7 @@ Device Boot Start End Blocks Id System
 Po odnalezieniu partycji, którą chcesz zamontować, zastosuj poniższe polecenie:
 
 ```bash
-rescue-customer:~# mount /dev/hda1 /mnt/
+mount /dev/hda1 /mnt/
 ```
 
 > [!primary]
@@ -129,54 +131,39 @@ rescue-customer:~# mount /dev/hda1 /mnt/
 
 Aby wyłączyć tryb Rescue, zmień sposób uruchamiania serwera w sekcji `Uruchom z dysku twardego.`{.action} w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i zrestartuj serwer z linii poleceń.
 
-### Montaż datastore
+#### VMware - Montaż datastore
 
-Możesz zamontować datastore VMware w sposób opisany powyżej. Po pierwsze, zainstaluj niezbędny pakiet:
+Możesz zamontować datastore VMware w taki sam sposób, jak opisano w poprzednim etapie.
+
+Wyświetl listę partycji, aby pobrać nazwę partycji datastore:
 
 ```bash
-rescue-customer:~# apt-get update && apt-get install vmfs-tools
+fdisk -l
 ```
 
-Następnie przełącz partycje, aby pobrać nazwę partycji datastore:
+Zamontuj partycję za pomocą następującego polecenia, zastępując `sdbX` wartością zidentyfikowaną w poprzednim kroku:
 
 ```bash
-rescue-customer:~# fdisk -l
+vmfs-fuse /dev/sdbX /mnt
 ```
 
-Teraz zamontuj partycję za pomocą następującego polecenia, zastępując `sdbX` wartością zidentyfikowaną na poprzednim etapie:
+Jeśli posiadasz datastores `VMFS 6`, przejdź do folderu `sbin` i utwórz folder montowania:
 
 ```bash
-rescue-customer:~# vmfs-fuse /dev/sdbX /mnt
+cd /usr/local/sbin/
+mkdir /mnt/datastore
 ```
 
-Jeśli posiadasz datastores typu `VMFS 6`, musisz ręcznie zainstalować narzędzie `vmfs6-tools` w środowisku trybu Rescue:
+Wyświetl listę partycji, aby pobrać nazwę partycji datastore:
 
 ```bash
-rescue-customer:~# apt-get update && apt-get upgrade
-# apt-get install git uuid-dev libfuse-dev pkg-config gcc
-# git clone https://salsa.debian.org/debian/vmfs6-tools.git
-# cd vmfs6-tools
-# make
-# make install
+fdisk -l
 ```
 
-Przejdź do folderu `sbin`, aby utworzyć folder montażowy:
+Zamontuj partycję za pomocą następującego polecenia, zastępując `sdbX` wartością zidentyfikowaną w poprzednim kroku:
 
 ```bash
-rescue-customer:~# cd /usr/local/sbin/
-# mkdir /mnt/datastore
-```
-
-Następnie przełącz partycje, aby pobrać nazwę partycji datastore:
-
-```bash
-rescue-customer:~# fdisk -l
-```
-
-Teraz zamontuj partycję za pomocą następującego polecenia, zastępując `sdbX` wartością zidentyfikowaną na poprzednim etapie:
-
-```bash
-rescue-customer:~# vmfs6-fuse /dev/sdbX /mnt/datastore/
+vmfs6-fuse /dev/sdbX /mnt/datastore/
 ```
 
 Aby wyłączyć tryb Rescue, zmień sposób uruchamiania serwera w sekcji `Uruchom z dysku twardego.`{.action} w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i zrestartuj serwer z linii poleceń.

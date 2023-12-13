@@ -19,7 +19,7 @@ The **General** section shows you the project's region and allows you to update 
 
 ## Access
 
-The *Access* section allows you to [manage user access to the project](/pages/web/web-paas/administration-users#manage-users).
+The *Access* section allows you to [manage user access to the project](/pages/web_cloud/web_paas_powered_by_platform_sh/administration/administration-users#manage-users).
 
 ![Project configure icon](images/settings-project-access.png "0.7")
 

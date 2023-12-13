@@ -1,14 +1,14 @@
 ---
 title: Kafka MirrorMaker - Capacités et limitations (EN)
 excerpt: Discover the capabilities and limitations of Public Cloud Databases for Kafka MirrorMaker
-updated: 2023-08-17
+updated: 2023-12-04
 ---
 
 ## Objective
 
 This page provides the technical capabilities and limitations of the Public Cloud Databases for Kafka MirrorMaker offer.
 
-We continuously improve our offers. You can follow and submit ideas to add to our roadmap at <https://github.com/ovh/public-cloud-roadmap/projects/2>.
+We continuously improve our offers. You can follow and submit ideas to add to our roadmap at <https://github.com/orgs/ovh/projects/16/views/5>.
 
 ## Capabilities and limitations
 
@@ -90,6 +90,8 @@ Right now, all nodes of a given cluster should be of the same type and distribut
 Public as well as private networking (vRack) can be used for all the offers.
 
 Ingress and Egress traffic are included in the service plans and unmetered.
+
+The database service's IP address is subject to change periodically. Thus, it is advised not to rely on these IPs for any configuration, such as connection or egress policy. Instead, utilize the provided DNS record and implement CIDR-based egress policies for more robust and flexible network management.
 
 ##### Private network considerations
 Here are some considerations to take into account when using private network:

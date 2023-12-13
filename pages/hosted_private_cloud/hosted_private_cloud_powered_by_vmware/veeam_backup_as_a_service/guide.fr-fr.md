@@ -1,7 +1,6 @@
 ---
 title: Activer et utiliser Veeam Managed Backup
 excerpt: Découvrez comment activer et utiliser l'option Veeam Managed Backup
-legacy_guide_number: '2883711'
 updated: 2021-12-07
 ---
 
@@ -20,7 +19,7 @@ Les sauvegardes sont réalisées à l'aide d'une machine virtuelle (VM) située 
 * Être connecté au client vSphere.
 * Avoir activé la [haute disponibilité (HA)](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_ha_high_availability){.external}.
 * Avoir activé le [Distributed Ressource Scheduler (DRS)](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vmware_drs_distributed_ressource_scheduler_new){.external} sur le ou les clusters.
-* Mettre en place la [gestion des licences Windows](/pages/cloud/private-cloud/facturation_private_cloud#licences-windows){.external} sur le Private Cloud.
+* Mettre en place la [gestion des licences Windows](/pages/account_and_service_management/managing_billing_payments_and_services/facturation_private_cloud#licences-windows){.external} sur le Private Cloud.
 
 ## En pratique
 

@@ -1,6 +1,5 @@
 ---
 title: Wstrzymanie lub uśpienie instancji
-legacy_guide_number: g1781
 updated: 2023-06-20
 ---
 

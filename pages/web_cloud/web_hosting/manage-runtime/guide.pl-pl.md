@@ -1,6 +1,6 @@
 ---
-title: 'Zarządzanie frameworkami na Cloud Web'
-excerpt: 'Dowiedz się, jak zarządzać frameworkami dostępnymi w ramach hostingu Cloud Web'
+title: "Zarządzanie frameworkami na Cloud Web"
+excerpt: "Dowiedz się, jak zarządzać frameworkami dostępnymi w ramach hostingu Cloud Web"
 updated: 2022-07-27
 ---
 
@@ -23,9 +23,7 @@ W ramach Cloud Web udostępniamy różne języki programowania do tworzenia Twoj
 
 W ramach Cloud Web możesz użyć jednego lub kilku frameworków. Wybór odpowiedniego frameworku będzie zatem zależał od efektu, jaki chcesz uzyskać. 
 
-Dlatego, jeśli jeszcze tego nie zrobiłeś **upewnij się, czy Twój projekt jest kompatybilny pod względem technicznym z Twoim hostingiem Cloud Web**. Lista języków programowania znajduje się tutaj: <https://www.ovhcloud.com/pl/web-hosting/cloud-web-offer/>. 
-
-Po dokładnym wskazaniu frameworku lub frameworków, których będziesz używał, możesz rozpocząć operacje opisane poniżej.
+Dlatego, jeśli jeszcze tego nie zrobiłeś **upewnij się, czy Twój projekt jest kompatybilny pod względem technicznym z Twoim hostingiem Cloud Web**. Lista języków programowania znajduje się tutaj: <https://www.ovhcloud.com/pl/web-hosting/cloud-web-offer/>.Po dokładnym wskazaniu frameworku lub frameworków, których będziesz używał, możesz rozpocząć operacje opisane poniżej.
 
 ### Etap 1: dostęp do zarządzania frameworkami
 
@@ -141,7 +139,7 @@ Po dokonaniu wyboru wykonaj poszczególne kroki aż do zakończenia operacji.
 
 ## Sprawdź również
 
-W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/).
+W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
 
 Jeśli chcesz otrzymywać wsparcie w zakresie konfiguracji i użytkowania Twoich rozwiązań OVHcloud, zapoznaj się z naszymi [ofertami pomocy](https://www.ovhcloud.com/pl/support-levels/).
 

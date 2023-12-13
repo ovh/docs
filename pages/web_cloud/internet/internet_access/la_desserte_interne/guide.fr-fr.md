@@ -1,6 +1,5 @@
 ---
 title: La desserte interne
-legacy_guide_number: '7962664'
 updated: 2018-03-26
 ---
 

@@ -1,7 +1,7 @@
 ---
-title: 'Inhaber eines Domainnamens ändern'
-excerpt: 'Erfahren Sie hier, wie Sie den Inhaber eines Domainnamens wechseln können'
-updated: 2023-06-19
+title: "Inhaber eines Domainnamens ändern"
+excerpt: "Erfahren Sie hier, wie Sie den Inhaber eines Domainnamens wechseln können"
+updated: 2023-12-04
 ---
 
 > [!primary]
@@ -49,7 +49,7 @@ Neben der Angabe von [Kontakten](/pages/account_and_service_management/account_i
 
 ### Schritt 1: Domainnamen auswählen
 
-Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie im Bereich `Web Cloud`{.action} den Domainnamen, deren Inhaber Sie ändern möchten unter `Domainnamen`{.action} aus.
+Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) ein und wählen Sie im Bereich `Web Cloud`{.action} den Domainnamen (gTLD), deren Inhaber Sie ändern möchten unter `Domainnamen`{.action} aus.
 
 ### Schritt 2: Vorgang für den Inhaberwechsel
 
@@ -84,6 +84,9 @@ Sobald beide Empfänger die Anfrage per E-Mail bestätigt haben, wird die Änder
 > Das Verfahren kann von beiden Parteien innerhalb einer Frist von 14 Tagen validiert werden.
 > 
 > Wird die Änderung von einer der beiden Parteien abgelehnt, wird der Vorgang abgebrochen.
+>
+> Wenn die E-Mail-Adresse des aktuellen Inhabers veraltet oder nicht erreichbar ist, können Sie **in diesem Fall** direkt den Support kontaktieren, indem Sie ein Support-Ticket in Ihrem [OVHcloud Help Center](https://help.ovhcloud.com/csm?id=csm_cases_requests) erstellen.
+>
 
 > [!warning]
 >

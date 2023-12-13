@@ -28,7 +28,7 @@ On each block delivered by OVHcloud, five IP addresses are reserved for configur
 This is how a Private Cloud IP block is organised:
 
 - The first IP address that is marked as (`Reserved`) corresponds to the network address
-- The IP addresses that follow it can be used for your virtual machines. The are marked as (`Available`) if no VM is using them, or as (`Used`) if they are being used
+- The IP addresses that follow it can be used for your virtual machines. They are marked as (`Available`) if no VM is using them, or as (`Used`) if they are being used
 - The last four IP addresses in the block are reserved: two are dedicated to OVHcloud routers for operating the block, and the other two are used for the gateway and broadcast
 
 ![Advanced configuration on the OVH Network](images/02config_ip_ovh_network_advanced.png){.thumbnail}
@@ -59,7 +59,7 @@ Mount the adapter using an `ifup` in your interface.
 
 You can also check the configuration with an `ifconfig`.
 
-If your virtual machine cannot find the network, try checking that the network adapter is configured on *VMNetwork* and not on *LocalPortGroup* or a VLAN. Check also that the adapter’s connection box is ticked.
+If your virtual machine cannot find the network, try checking that the network adapter is configured on *VMNetwork* and not on *LocalPortGroup* or a VLAN. Also check that the adapter's connection box is ticked.
 
 #### Windows
 

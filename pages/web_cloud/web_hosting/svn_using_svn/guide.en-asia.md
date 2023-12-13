@@ -1,7 +1,7 @@
 ---
-title: Using SVN
-excerpt: Find out how to use SVN via SSH on your Web Hosting plan
-updated: 2021-01-06
+title: "Using SVN"
+excerpt: "Find out how to use SVN via SSH on your Web Hosting plan"
+updated: 2023-12-05
 ---
 
 ## Objective
@@ -13,7 +13,7 @@ SVN, which stands for "subversion," is a version management system.
 > [!warning]
 >OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 >
->This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend contacting a specialised provider and/or the software publisher for the service if you encounter any difficulties. We will not be able to assist you ourselves. You can find more information in the “Go further” section of this guide.
+>This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend contacting a specialised provider and/or the software publisher for the service if you encounter any difficulties. We will not be able to assist you ourselves. You can find more information in the “[Go further](#go-further)” section of this guide.
 >
 
 ## Requirements
@@ -51,7 +51,7 @@ You should see the directories as shown in the following image:
 
 Before you continue, it is necessary to create a pair of SSH keys from the desktop you will use to connect to the SVN repository.
 
-In order to create a key pair, please follow our guide on [Creating SSH keys](/pages/platform/public-cloud/public-cloud-first-steps#step-1-creating-ssh-keys). You can ignore the step regarding the import of your SSH key to the OVHcloud Control Panel.
+In order to create a key pair, please follow our guide on [Creating SSH keys](/pages/public_cloud/compute/public-cloud-first-steps#step-1-creating-ssh-keys). You can ignore the step regarding the import of your SSH key to the OVHcloud Control Panel.
 
 ### Adding the public key to the Web Hosting plan
 
@@ -133,8 +133,10 @@ If you want to perform a local check, the examples provided will not work. You w
 svn+ssh://login@ftp.name-of-site.tld/home.XXX/login/svn/depot_test
 ```
 
-## Go further
+## Go further <a name="go-further"></a>
 
-[Accessing a Web Hosting plan via SSH](/pages/web_cloud/web_hosting/ssh_on_webhosting){.external}
+[Accessing a Web Hosting plan via SSH](/pages/web_cloud/web_hosting/ssh_on_webhosting)
+
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/asia/directory/).
 
 Join our community of users on <https://community.ovh.com/en/>.

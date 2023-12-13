@@ -1,6 +1,5 @@
 ---
 title: 'Creating, launching and deleting images in Horizon'
-legacy_guide_number: 1784
 updated: 2021-12-30
 ---
 

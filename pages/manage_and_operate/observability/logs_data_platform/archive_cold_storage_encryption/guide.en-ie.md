@@ -92,7 +92,7 @@ gpg (GnuPG) 2.2.27
 
 Now, let's generate your new keypair. An EdDSA/ECDH with Curve 25519 in this example:
 
-```shell-session hl_lines="18 29 37 40 44 45 46 50"
+```shell-session
 $ gpg --expert --full-gen-key
 gpg (GnuPG) 2.2.27; Copyright (C) 2021 Free Software Foundation, Inc.
 This is free software: you are free to change and redistribute it.
@@ -249,7 +249,7 @@ In this archives list, you can see a `PGP encryption keys` column.
 
 #### Download and decrypt your archives
 
-Once your encrypted archives are available, you can retrieve them [following this tutorial](/pages/platform/logs-data-platform/archive_cold_storage#retrieving-the-archives).
+Once your encrypted archives are available, you can retrieve them [following this tutorial](/pages/manage_and_operate/observability/logs_data_platform/archive_cold_storage#retrieving-the-archives).
 To decrypt a given archive, you can use `gpg` on a machine on which your private key is present:
 
 ```shell-session

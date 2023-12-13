@@ -1,7 +1,7 @@
 ---
 title: Cómo dar de baja sus servicios de OVHcloud
 excerpt: Cómo interrumpir las suscripciones a OVHcloud
-updated: 2022-03-22
+updated: 2023-11-16
 ---
 
 > [!primary]
@@ -57,7 +57,7 @@ Haga clic en el tipo de producto que desea dar de baja en la siguiente lista de 
 &emsp;&emsp;[Licencias](#licences)<br />
 
 [Hosted Private Cloud](#privatecloud)<br />
-&emsp;&emsp;[Hosted Private Cloud powered by VMware](#hostedprivatecloud-vmware)<br />
+&emsp;&emsp;[VMware on OVHcloud](#hostedprivatecloud-vmware)<br />
 &emsp;&emsp;[Veeam Cloud Connect](#veeamcloudconnect)<br />
 
 [Public Cloud](#publiccloud)<br />
@@ -120,9 +120,9 @@ Indique los motivos de su solicitud de baja y haga clic en `Aceptar`{.action}.
 
 ### Hosted Private Cloud <a name="privatecloud"></a>
 
-#### Hosted Private Cloud powered by VMware <a name="hostedprivatecloud-vmware"></a>
+#### VMware on OVHcloud <a name="hostedprivatecloud-vmware"></a>
 
-Para dar de baja su servicio [Hosted Private Cloud powered by VMware](https://www.ovhcloud.com/es/enterprise/products/hosted-private-cloud/), siga las indicaciones de esta [guía](/pages/account_and_service_management/managing_billing_payments_and_services/comment_resilier_le_private_cloud).
+Para dar de baja su servicio [VMware on OVHcloud](https://www.ovhcloud.com/es/enterprise/products/hosted-private-cloud/), siga las indicaciones de esta [guía](/pages/account_and_service_management/managing_billing_payments_and_services/comment_resilier_le_private_cloud).
 
 #### Veeam Cloud Connect <a name="veeamcloudconnect"></a>
 
@@ -140,7 +140,7 @@ Cada servicio [Public Cloud](https://www.ovhcloud.com/es/public-cloud/) puede el
 
 El Public Cloud de OVHcloud se basa en el principio de *pago por consumo* (para más información, consulte nuestra página de [información sobre el modo de facturación de Public Cloud](/pages/public_cloud/compute/analyze_billing)). Solo tendrá que pagar a final de mes por el tiempo de uso efectivo de los recursos.
 
-También puede [consultar su consumo actual](/pages/platform/public-cloud/analyze_billing#consumo-actual) desde el área de cliente de OVHcloud y recibir una notificación por correo electrónico cuando la proyección del consumo supere un determinado umbral.
+También puede [consultar su consumo actual](/pages/public_cloud/compute/analyze_billing#consumo-actual) desde el área de cliente de OVHcloud y recibir una notificación por correo electrónico cuando la proyección del consumo supere un determinado umbral.
 
 ### Web Cloud <a name="webcloud"></a>
 
@@ -188,7 +188,7 @@ Recibirá por correo electrónico un mensaje con el procedimiento de cierre de s
 
 #### Hosted Exchange <a name="hosted"></a>
 
-Para dar de baja su servicio [Hosted Exchange](https://www.ovhcloud.com/es/emails/hosted-exchange/), siga las indicaciones de esta [guía](/pages/web/microsoft-collaborative-solutions/manage_billing_exchange#eliminar-cuentas).
+Para dar de baja su servicio [Hosted Exchange](https://www.ovhcloud.com/es/emails/hosted-exchange/), siga las indicaciones de esta [guía](/pages/web_cloud/email_and_collaborative_solutions/microsoft_exchange/manage_billing_exchange#eliminar-cuentas).
 
 ### Soluciones trasversas <a name="transversal"></a>
 

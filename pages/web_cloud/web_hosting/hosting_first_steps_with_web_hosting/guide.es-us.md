@@ -1,8 +1,12 @@
 ---
-title: 'Primeros pasos en un alojamiento web'
-excerpt: 'Cómo empezar con un alojamiento web'
-updated: 2022-11-11
+title: "Primeros pasos en un alojamiento web"
+excerpt: "Descubra cómo empezar con un alojamiento web"
+updated: 2023-11-16
 ---
+
+> [!primary]
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón «Contribuir» de esta página.
+>
 
 ## Objetivo
 
@@ -18,6 +22,11 @@ Los planes de hosting de OVHcloud permiten crear un sitio web de forma fácil y 
 - Estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.
 
 ## Procedimiento
+
+> [!success]
+>
+> Antes de seguir leyendo esta guía, asegúrese de que el dominio o subdominio que quiera utilizar esté correctamente asociado a su alojamiento web de OVHcloud. Para ello, consulte nuestra guía "[Alojar varios sitios web en un mismo hosting de OVHcloud](/pages/web_cloud/web_hosting/multisites_configure_multisite)".
+>
 
 ### 1. Definir el proyecto
 
@@ -45,7 +54,7 @@ Esta solución utiliza los módulos en un clic de OVHcloud, una herramienta que 
 
 Para poder instalar el módulo de OVHcloud, debe asegurarse de que el directorio de instalación del módulo esté vacío (si todavía no se ha conectado a su espacio de almacenamiento, estará vacío). Para instalar el módulo en un clic, acceda al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}. En la sección `Alojamientos`{.action}, haga clic en el nombre de su alojamiento web. A continuación, abra la pestaña `Módulos en un clic`{.action} y haga clic en el botón `Añadir un módulo`{.action}.
 
-![Acceso a los módulos en un clic](images/access_to_the_1_click_modules_section.png){.thumbnail} 
+![Acceso a los módulos en un clic](images/access-to-the-1-click-modules-section.png){.thumbnail} 
 
 Por último, para instalar el módulo en un clic, seleccione el CMS que quiera instalar, asegúrese de que la casilla **Instalación en modo avanzado** no esté marcada y haga clic en el botón `Instalar`{.action}.
 
@@ -64,11 +73,11 @@ Para poder instalar el módulo de OVHcloud, debe asegurarse de lo siguiente:
 
 Para crear la base de datos, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.Haga clic en `Alojamientos`{.action} y seleccione su alojamiento web. A continuación, abra la pestaña `Bases de datos`{.action} y haga clic en el botón `Crear una base de datos`{.action}. Complete la información solicitada y espere a que se efectúe la instalación.
 
-![Acceso a los módulos en un clic](images/create_a_database.png){.thumbnail} 
+![Acceso a los módulos en un clic](images/create-a-database-2.png){.thumbnail} 
 
 Para instalar el módulo en un clic, una vez creada la base de datos abra la pestaña `Módulos en un clic`{.action} y haga clic en el botón `Añadir un módulo`{.action}. A continuación, seleccione el CMS que quiera instalar, asegúrese de que la casilla **Instalación en modo avanzado** esté marcada y haga clic en el botón `Siguiente`{.action}.
 
-![Acceso a los módulos en un clic](images/access_to_the_1_click_modules_section.png){.thumbnail} 
+![Acceso a los módulos en un clic](images/access-to-the-1-click-modules-section.png){.thumbnail} 
 
 Introduzca la información solicitada e inicie la instalación del módulo. Una vez haya finalizado la instalación, recibirá por correo electrónico la confirmación de la instalación del módulo. Ya puede entonces pasar a las siguientes etapas descritas en esta guía.
 
@@ -86,7 +95,7 @@ Puede omitir este paso si no desea utilizar las direcciones de correo electróni
 
 Para crear una o más direcciones de correo electrónico, deber estar conectado al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.Haga clic en `Correo electrónico`{.action} y seleccione el nombre del alojamiento al que está asociado el servicio de correo. A continuación, abra la pestaña `Correo electrónico`{.action} y haga clic en el botón `Crear una dirección de correo`{.action}.
 
-![Crear una dirección de correo](images/create_an_email_address.png){.thumbnail} 
+![Crear una dirección de correo](images/create-an-email-address.png){.thumbnail} 
 
 Introduzca la información solicitada para crear su dirección de correo electrónico y repita este mismo proceso si desea crear más direcciones. Para migrar todas sus direcciones de correo electrónico a OVHcloud, le recomendamos que utilice nuestra herramienta [OVH Mail Migrator](https://omm.ovh.net/){.external}, que le simplificará el proceso. 
 
@@ -108,13 +117,13 @@ Existen varios registros DNS asociados a su alojamiento web de OVHcloud. A conti
 
 Para comprobar el registro A que debe utilizar en la zona de DNS de su dominio, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.Haga clic en `Alojamientos`{.action} y seleccione el nombre del alojamiento. A continuación, en la pestaña `Información general`{.action}, consulte la dirección IP que aparece junto a **IPv4**.
 
-![Modificar el registro A](images/know_the_OVH_A_records.png){.thumbnail} 
+![Modificar el registro A](images/know-the-ovh-a-records.png){.thumbnail} 
 
 **Los registros MX, para el correo electrónico**
 
 Para comprobar los registros MX que debe utilizar en la zona de su dominio, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.Haga clic en `Correo electrónico`{.action} y seleccione el nombre del alojamiento. A continuación, en la pestaña `Información general`{.action}, consulte la información que aparece junto a **Registros MX**. Estos registros pueden variar en función del servicio, según el filtro DNS que haya decidido aplicar.
 
-![Modificar los registros MX](images/know_the_OVH_MX_records.png){.thumbnail} 
+![Modificar los registros MX](images/know-the-ovh-mx-records.png){.thumbnail} 
 
 #### Comprobar y/o modificar los registros DNS
 
@@ -161,4 +170,8 @@ Si desea configurar su dirección de correo electrónico en un cliente de correo
 
 [Crear una dirección de correo electrónico](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_creation)
 
-Interactúe con nuestra comunidad de usuarios en [https://community.ovh.com/en/](https://community.ovh.com/en/){.external}.
+Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con [partners de OVHcloud](https://partner.ovhcloud.com/es/directory/).
+
+Si quiere disfrutar de ayuda para utilizar y configurar sus soluciones de OVHcloud, puede consultar nuestras distintas soluciones [pestañas de soporte](https://www.ovhcloud.com/es/support-levels/).
+
+Interactúe con nuestra comunidad de usuarios en <https://community.ovh.com/en/>.

@@ -1,7 +1,7 @@
 ---
-title: "Tutoriel - Que faire lorsque ma base de données est saturée ?"
+title: "Hébergement web : ma base de données est saturée, que faire ?"
 excerpt: "Découvrez comment agir lorsque votre base de données est saturée"
-updated: 2023-02-16
+updated: 2023-12-13
 ---
 
 ## Objectif
@@ -52,17 +52,21 @@ La première étape consiste à identifier la ou les tables volumineuses présen
 
 #### 1.1 - Se connecter à la base de données via phpMyAdmin
 
-Récupérez le mot de passe d'accès à votre base de données directement dans le fichier de configuration de votre site web. Réalisez cette action à l'aide de l'**étape 1** de notre guide sur [le changement du mot de passe d'une base de données](/pages/web_cloud/web_hosting/sql_change_password).
+Récupérez les informations d'accès à votre base de données directement dans le fichier de configuration de votre site web. Réalisez cette action à l'aide de l'**étape 1** de notre guide sur [le changement du mot de passe d'une base de données](/pages/web_cloud/web_hosting/sql_change_password).
 
 Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) et sélectionnez `Web Cloud`{.action} dans la barre de navigation en haut de l’écran. Cliquez sur `Hébergements`{.action} puis choisissez l’hébergement web associé à votre base de données mutualisée OVHcloud. Positionnez-vous enfin sur l'onglet `Bases de données`{.action}.
 
+Un tableau listant vos bases de données s'affiche sur la partie basse de l'écran.
+
 ![phpMyAdmin Access](images/pma_access.png){.thumbnail}
+
+Notez, **pour votre base de données saturée**, son `Nom d'utilisateur` et son `Adresse du serveur` présents dans le tableau listant vos bases de données. 
 
 Toujours depuis l'onglet `Bases de données`{.action}, cliquez sur le bouton `...`{.action} à droite de la base de données qui est saturée puis sur `Accéder à phpMyAdmin`{.action}.
 
 ![phpMyAdmin Go Login](images/pma_interface.png){.thumbnail}
 
-Renseignez le mot de passe d'accès à votre base de données en complément des informations pré-remplies puis cliquez sur `Exécuter`{.action}.
+Renseignez les informations d'accès à votre base de données puis cliquez sur `Connexion`{.action}.
 
 #### 1.2 - Rechercher les tables les plus volumineuses
 
@@ -75,11 +79,11 @@ Renseignez le mot de passe d'accès à votre base de données en complément des
 
 Une fois connecté, la page suivante s'affiche :
 
-![phpMyAdmin Login](images/pma_login.png){.thumbnail}
+![phpMyAdmin Login](images/pma-main-page.png){.thumbnail}
 
 Cliquez sur le `« Nom de votre base de données »`{.action} dans la colonne de gauche puis sur `Taille`{.action} en haut à droite du tableau qui s'affiche :
 
-![phpMyAdmin Tables](images/pma_show_table.png){.thumbnail}
+![phpMyAdmin Tables](images/pma-check-size.png){.thumbnail}
 
 Les tables les plus volumineuses apparaissent en haut du tableau. Identifiez celles-ci puis passez à l'**étape 2**.
 
@@ -116,11 +120,18 @@ Une fois que vous avez déterminé si le contenu de vos tables est nécessaire o
 
 Vous devrez basculer votre base de données sur une base de données plus volumineuse.
 
-Consultez notre offre de bases de données [Web Cloud Databasess](https://www.ovh.com/fr/cloud-databases/) pour choisir votre nouveau service de base de données. 
+> [!primary]
+>
+> Pour augmenter la taille allouée à votre base de données, vous devrez obligatoirement créer une nouvelle base de données plus grande et copier le contenu de l'ancienne dans la nouvelle. En effet, il n'est pas possible d'augmenter directement la taille d'une base de données liée à un hébergement web.
+>
+
+Consultez notre offre de bases de données [Web Cloud Databasess](https://www.ovhcloud.com/fr/web-cloud/databases/) pour choisir votre nouveau service de base de données. 
 
 Nous recommandons cette offre pour les bases de données volumineuses.
 
-Suivez ensuite nos guides pour déplacer le contenu de votre ancienne base de données vers la nouvelle :
+Il est possible de dupliquer le contenu de votre base de données OVHcloud directement vers une autre de vos bases de données OVHcloud grâce à une fonctionnalité présente dans votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr). Pour cela, consultez notre guide « [Dupliquer le contenu d'une base de données dans une autre](/pages/web_cloud/web_hosting/copy_database) ».
+
+Dans le cas d'une migration vers une base de données externe aux offres [Start SQL](https://www.ovhcloud.com/fr/web-hosting/options/start-sql/) et [Web Cloud Databases](https://www.ovhcloud.com/fr/web-cloud/databases/), vous pouvez déplacer manuellement le contenu de votre ancienne base de données vers une nouvelle à l'aide de nos guides:
 
 - [Exporter votre base de données existante](/pages/web_cloud/web_hosting/sql_database_export)
 - [Premiers pas avec l'offre Web Cloud Databasess](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)
@@ -147,7 +158,7 @@ Dans le cas d'un overquota ou d'une table volumineuse, **trois commandes** sont 
 
 Vous pouvez directement effectuer ces requêtes depuis l'interface **phpMyAdmin**, via l'onglet `SQL`{.action} :
 
-![phpMyAdmin SQL request](images/pma_sql_request.png){.thumbnail}
+![phpMyAdmin SQL request](images/pma-sql-menu.png){.thumbnail}
 
 - La commande **DELETE** : 
 
@@ -186,6 +197,8 @@ DROP TABLE `table_1`
 > Dans cet exemple, la commande supprime la table **table_1** et l'ensemble des lignes qu'elle contient.
 
 ## Aller plus loin <a name="go-further"></a>
+
+[Dupliquer le contenu d'une base de données dans une autre](/pages/web_cloud/web_hosting/copy_database)
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr/directory/).
 

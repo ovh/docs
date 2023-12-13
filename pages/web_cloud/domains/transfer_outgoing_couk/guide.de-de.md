@@ -44,7 +44,7 @@ Der Transferprozess für Top Level Domains (TLDs) des Ländercodes **UK** (**.uk
 >
 > Wenn der Domainname seit **weniger als 90 Tagen** abgelaufen ist, kann er dennoch transferiert werden. Kontaktieren Sie in diesem Fall unsere Support Teams, indem Sie im OVHcloud Kundencenter eine Ticket-Anfrage zur Transferfreigabe erstellen.
 >
-> Wenn Sie der **Inhaber** der Domain sind, deren Verwaltung Ihnen im OVHcloud Kundencenter jedoch nicht möglich ist, weder über Ihren eigenen Zugang noch den Administrator-Kontakt der Domain, konsultieren Sie bitte [diese Anleitung](/pages/account/customer/managing_contacts#sonderfall-bei-domaininhabern), bevor Sie fortfahren.
+> Wenn Sie der **Inhaber** der Domain sind, deren Verwaltung Ihnen im OVHcloud Kundencenter jedoch nicht möglich ist, weder über Ihren eigenen Zugang noch den Administrator-Kontakt der Domain, konsultieren Sie bitte [diese Anleitung](/pages/account_and_service_management/account_information/managing_contacts#sonderfall-bei-domaininhabern), bevor Sie fortfahren.
 >
 
 ## In der praktischen Anwendung

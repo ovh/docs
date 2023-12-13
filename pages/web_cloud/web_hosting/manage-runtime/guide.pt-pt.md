@@ -1,7 +1,6 @@
 ---
-title: 'Gerir os motores de execução de um alojamento Cloud Web'
-excerpt: 'Saiba como gerir os motores de execução do seu alojamento para concretizar os seus projetos'
-hidden: true
+title: "Gerir os motores de execução de um alojamento Cloud Web"
+excerpt: "Saiba como gerir os motores de execução do seu alojamento para concretizar os seus projetos"
 updated: 2022-07-27
 ---
 
@@ -9,7 +8,7 @@ updated: 2022-07-27
 > Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
 >
 
-## Sumário
+## Objetivo
 
 A Cloud Web oferece a possibilidade de construir um projeto em diferentes linguagens de programação. De facto, para concretizar um projeto, é possível que tenha de utilizar um motor de execução específico.
 
@@ -142,7 +141,7 @@ Depois de selecionado, siga os passos até ao fim.
 
 ## Quer saber mais?
 
-Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/).
+Para serviços especializados (referenciamento, desenvolvimento, etc), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
 
 Se pretender usufruir de uma assistência na utilização e na configuração das suas soluções OVHcloud, consulte as nossas diferentes [ofertas de suporte](https://www.ovhcloud.com/pt/support-levels/).
 

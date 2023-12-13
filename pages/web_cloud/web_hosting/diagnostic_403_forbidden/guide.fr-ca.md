@@ -191,7 +191,7 @@ Une réponse **« 200 Permissions changed on / »** confirme que la manipulation
 
 [Activation du pare-feu applicatif](/pages/web_cloud/web_hosting/multisites_activating_application_firewall)
 
-[Changer la version de PHP de son hébergement web](/pages/web_cloud/web_hosting/php_configure_php_on_your_web_hosting_2014)
+[Changer la version de PHP de son hébergement web](/pages/web_cloud/web_hosting/configure_your_web_hosting)
 
 Pour des prestations spécialisées (référencement, développement, etc), contactez les [partenaires OVHcloud](https://partner.ovhcloud.com/fr-ca/directory/).
 

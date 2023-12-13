@@ -110,7 +110,7 @@ Please refer to the [JOSE Cookbook](https://github.com/ietf-jose/cookbook) for e
 
 ## Validate the integration
 
-You can then verify that your integration is functioning properly [using the CLI](/pages/web/web-paas/integrations-overview#validating-integrations) command
+You can then verify that your integration is functioning properly [using the CLI](/pages/web_cloud/web_paas_powered_by_platform_sh/integrations/integrations-overview#validating-integrations) command
 
 ```bash
 $ webpaas integration:validate

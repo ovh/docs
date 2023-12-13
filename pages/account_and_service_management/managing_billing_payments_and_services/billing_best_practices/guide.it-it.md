@@ -25,7 +25,7 @@ Questa guida ti mostra gli elementi essenziali per una corretta gestione del tuo
 
 #### Proteggi il tuo account
 
-- [Crea una password potente](/pages/account/customer/manage-ovh-password#genera-una-password-efficace) che garantisce la riservatezza del tuo account.
+- [Crea una password potente](/pages/account_and_service_management/account_information/manage-ovh-password#genera-una-password-efficace) che garantisce la riservatezza del tuo account.
 
 - [Attiva la doppia autenticazione](/pages/account_and_service_management/account_information/secure-ovhcloud-account-with-2fa) per evitare qualsiasi accesso fraudolento al tuo Spazio Cliente.
 
@@ -40,7 +40,7 @@ Nella sezione `Il tuo profilo`{.action} a destra dello schermo (clicca di nuovo 
 
 ![myprofile](images/myprofile.png){.thumbnail}
 
-Per maggiori informazioni, consulta la guida [Rendere sicuro il tuo account OVHcloud e gestire i tuoi dati personali](/pages/account/customer/all_about_username#come-gestire-le-tue-informazioni-personali).
+Per maggiori informazioni, consulta la guida [Rendere sicuro il tuo account OVHcloud e gestire i tuoi dati personali](/pages/account_and_service_management/account_information/all_about_username#come-gestire-le-tue-informazioni-personali).
 
 Assicurati che il tuo indirizzo email sia sempre **aggiornato, sicuro e accessibile.** Le email provenienti dai nostri servizi ti verranno inviate a questo indirizzo, compresi i **messaggi di reimpostazione** in caso di perdita della password.
 

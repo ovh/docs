@@ -1,6 +1,6 @@
 ---
-title: 'Installare Ghost su un hosting Cloud Web'
-excerpt: 'Come creare un blog con la piattaforma Ghost sul tuo hosting Cloud Web'
+title: "Installare Ghost su un hosting Cloud Web"
+excerpt: "Questa guida ti mostra come creare un blog con la piattaforma Ghost sul tuo hosting Cloud Web"
 updated: 2022-05-04
 ---
 
@@ -273,7 +273,7 @@ In questo tutorial abbiamo descritto gli step necessari per l’installazione di
 
 [Ospitare più siti su uno stesso hosting](/pages/web_cloud/web_hosting/multisites_configure_multisite){.external} (in inglese)
 
-Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/).
+Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
 
 Per usufruire di un supporto per l'utilizzo e la configurazione delle soluzioni OVHcloud, è possibile consultare le nostre soluzioni [offerte di supporto](https://www.ovhcloud.com/it/support-levels/).
 

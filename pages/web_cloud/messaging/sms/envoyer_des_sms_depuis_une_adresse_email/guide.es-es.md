@@ -37,7 +37,7 @@ Tenga en cuenta que, si el texto contiene 2 saltos de línea (doble /n) o si esc
 Si quiere enviar un SMS con estos elementos, deberá hacerlo desde el área de cliente o a través de las API.
 >
 
-Para más información sobre los caracteres autorizados con codificación de 7 bits, consulte el [anexo](/pages/telecom/sms/envoyer_des_sms_depuis_une_adresse_email#anexo) que encontrará al final de esta guía.
+Para más información sobre los caracteres autorizados con codificación de 7 bits, consulte el [anexo](/pages/web_cloud/messaging/sms/envoyer_des_sms_depuis_une_adresse_email#anexo) que encontrará al final de esta guía.
 
 > [!warning]
 >

@@ -1,30 +1,8 @@
 ---
 title: "Utiliser OVHcloud Object Storage comme Backend Terraform pour stocker votre état (state) Terraform"
 excerpt: "Découvrez comment utiliser l’Object Storage d’OVHcloud comme Backend Terraform pour stocker votre état (state) Terraform"
-updated: 2023-07-31
+updated: 2023-12-06
 ---
-
-<style>
- pre {
-     font-size: 14px;
- }
- pre.console {
-   background-color: #300A24; 
-   color: #ccc;
-   font-family: monospace;
-   padding: 5px;
-   margin-bottom: 5px;
- }
- pre.console code {
-   border: solid 0px transparent;
-   font-family: monospace !important;
-   font-size: 0.75em;
-   color: #ccc;
- }
- .small {
-     font-size: 0.75em;
- }
-</style>
 
 ## Objectif
 
@@ -99,16 +77,35 @@ $ aws s3 ls
 
 Créez un fichier `backend.tf` avec le contenu suivant :
 
+Avant Terraform version 1.6.0:
 ```yaml
 terraform {
     backend "s3" {
       bucket = "terraform-state-hp"
-      key = "terraform.tfstate"
+      key    = "terraform.tfstate"
       region = "gra"
- #or sbg or any activated high performance storage region
+      # sbg or any activated high performance storage region
       endpoint = "s3.gra.perf.cloud.ovh.net"
       skip_credentials_validation = true
-      skip_region_validation = true
+      skip_region_validation      = true
+    }
+}
+```
+
+Après Terraform version 1.6.0:
+```yaml
+terraform {
+    backend "s3" {
+      bucket = "terraform-state-hp"
+      key    = "terraform.tfstate"
+      region = "gra"
+      # sbg or any activated high performance storage region
+      endpoints = {
+        s3 = "https://s3.gra.perf.cloud.ovh.net/"
+      }
+      skip_credentials_validation = true
+      skip_region_validation      = true
+      skip_requesting_account_id  = true
     }
 }
 ```
@@ -125,7 +122,8 @@ Cette commande initialise le backend (état distant ou local).
 
 Après avoir exécuté cette commande, vous devriez obtenir un résultat comme ceci :
 
-<pre class="console"><code>$ terraform init
+```console
+$ terraform init
 
 Initializing the backend...
 
@@ -141,7 +139,7 @@ should now work.
 If you ever set or change modules or backend configuration for Terraform,
 rerun this command to reinitialize your working directory. If you forget, other
 commands will detect it and remind you to do so if necessary.
-</code></pre>
+```
 
 Il est maintenant possible de définir vos fichiers de configuration et providers/fournisseurs Terraform et, après l'exécution de la commande `terraform apply`, votre fichier d'état Terraform sera stocké dans un conteneur de l'Object Storage d'OVHcloud.
 

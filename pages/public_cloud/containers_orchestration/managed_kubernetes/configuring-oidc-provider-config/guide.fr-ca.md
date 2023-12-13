@@ -75,7 +75,7 @@ If you go to the [Kubernetes section](https://api.ovh.com/console/#/cloud/projec
 
 > [!api]
 >
-> @api {GET} /cloud/project/{serviceName}/kube/{kubeID}/openIdConnect
+> @api {v1} /cloud GET /cloud/project/{serviceName}/kube/{kubeID}/openIdConnect
 > 
 
 **Result:**
@@ -104,7 +104,7 @@ If you go to the [Kubernetes section](https://api.ovh.com/console/#/cloud/projec
 
 > [!api]
 >
-> @api {PUT} /cloud/project/{serviceName}/kube/{kubeID}/openIdConnect
+> @api {v1} /cloud PUT /cloud/project/{serviceName}/kube/{kubeID}/openIdConnect
 > 
 
 ```json
@@ -131,7 +131,7 @@ If you go to the [Kubernetes section](https://api.ovh.com/console/#/cloud/projec
 
 > [!api]
 >
-> @api {POST} /cloud/project/{serviceName}/kube/{kubeID}/openIdConnect
+> @api {v1} /cloud POST /cloud/project/{serviceName}/kube/{kubeID}/openIdConnect
 > 
 
 ```json
@@ -158,7 +158,7 @@ If you go to the [Kubernetes section](https://api.ovh.com/console/#/cloud/projec
 
 > [!api]
 >
-> @api {DELETE} /cloud/project/{serviceName}/kube/{kubeID}/openIdConnect
+> @api {v1} /cloud DELETE /cloud/project/{serviceName}/kube/{kubeID}/openIdConnect
 > 
 
 ### Configure OIDC provider through Terraform

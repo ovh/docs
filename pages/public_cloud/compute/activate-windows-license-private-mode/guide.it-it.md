@@ -29,7 +29,7 @@ Per familiarizzare con Horizon, consulta la guida [Accedere all'interfaccia Hori
 
 #### Dall'interfaccia Horizon
 
-Accedi all'interfaccia [Horizon](https://horizon.cloud.ovh.net/auth/login/) utilizzando il metodo indicato nella [prima parte di questa guida](/pages/platform/network-services/getting-started-07-creating-vrack#interfaccia-horizon).
+Accedi all'interfaccia [Horizon](https://horizon.cloud.ovh.net/auth/login/) utilizzando il metodo indicato nella [prima parte di questa guida](/pages/public_cloud/public_cloud_network_services/getting-started-07-creating-vrack#interfaccia-horizon).
 
 Accedi alla tua zona di lavoro:
 

@@ -1,6 +1,6 @@
 ---
-title: Composer auf einem Webhosting installieren
-excerpt: Erfahren Sie hier, wie Composer installieren und erste Schritte ausführen
+title: "Composer auf einem Webhosting installieren"
+excerpt: "Diese Anleitung erklärt, wie Sie Composer installieren und erste Schritte ausführen"
 updated: 2023-03-07
 ---
 

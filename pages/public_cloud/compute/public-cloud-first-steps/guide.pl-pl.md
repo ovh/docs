@@ -1,7 +1,7 @@
 ---
 title: 'Tworzenie pierwszej instancji Public Cloud i łączenie się z nią'
 excerpt: 'Dowiedz się, jak rozpocząć korzystanie z usługi Public Cloud po utworzeniu projektu'
-updated: 2023-01-26
+updated: 2023-12-01
 ---
 
 > [!primary]
@@ -155,19 +155,18 @@ Kliknij przycisk `Dodaj klucz SSH`{.action}. W nowym oknie wpisz nazwę klucza i
 
 Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przejdź do sekcji `Public Cloud`{.action} i wybierz odpowiedni projekt Public Cloud. Na stronie głównej kliknij pozycję `Utwórz instancję`{.action}. (To samo można uzyskać na stronie “Instancje”, klikając pozycję `Instancje`{.action} na lewym pasku nawigacyjnym w obszarze “Środowisko obliczeniowe”).
 
-![instance select](images/instance-creation-01-2023.png){.thumbnail}
+![instance select](images/instance-creation-01-02-2023.png){.thumbnail}
 
 Najpierw wybierz odpowiedni do swoich potrzeb szablon serwera. Narzędzie pomocy wyświetli opisy dotyczące różnych zastosowań i dostępności modeli serwera. Do wyboru są następujące dostosowane kategorie:
 
 | Typ serwera | Gwarantowane zasoby | Uwagi dotyczące zastosowana |
 | :---         |     :---:      |          :--- |
 | General Purpose   | ✓     | Serwery programistyczne, aplikacje internetowe i biznesowe    |
-| CPU (procesor)     | ✓       | Kodowanie wideo lub inne zastosowania wymagające dużej wydajności obliczeniowej      |
-| RAM   | ✓     | Bazy danych, analiza i obliczenia w pamięci    |
+| Compute Optimized (procesor)     | ✓       | Kodowanie wideo lub inne zastosowania wymagające dużej wydajności obliczeniowej      |
+| Memory Optimized   | ✓     | Bazy danych, analiza i obliczenia w pamięci    |
 | GPU     | ✓       | Masowe przetwarzanie równoległe na potrzeby aplikacji specjalistycznych (renderowanie, Big Data, zaawansowane uczenie maszynowe itd.)       |
-| Sandbox    | -       | Hostowane we współdzielonych zasobach na potrzeby środowisk testowych i programistycznych      |
 | Discovery    | -       | Hostowane we współdzielonych zasobach na potrzeby środowisk testowych i programistycznych      |
-| IOPS   | ✓     | Zoptymalizowane pod kątem transferu danych na dyskach    |
+| Storage Optimized   | ✓     | Zoptymalizowane pod kątem transferu danych na dyskach    |
 | Metal | ✓ | Dedykowane zasoby z bezpośrednim dostępem do zasobów obliczeniowych, magazynowych i sieciowych|
 
 > [!primary]
@@ -181,7 +180,7 @@ W następnym kroku wybierz centrum danych instancji Public Cloud.
 
 Trzecia opcja służy do wyboru systemu operacyjnego instancji. Obrazy dostępne w tym kroku zależą od wyborów dokonanych w poprzednich krokach, na przykład od zgodności z typem serwera i regionu. Dostępne są również systemy operacyjne z preinstalowanymi aplikacjami.
 
-![image select](images/instance-creation-02-2022.png){.thumbnail}
+![image select](images/instance-creation-02-2023.png){.thumbnail}
 
 > [!primary]
 >
@@ -220,6 +219,11 @@ Po zastosowaniu wybranych opcji kliknij przycisk `Dalej`{.action}, aby przejść
 
 Zalecamy wybór rozliczenia godzinowego w przypadku braku pewności co do okresu korzystania z usługi, ponieważ nie ma możliwości jego wyboru po jej wykonaniu. Będziesz miał możliwość przejścia na miesięczny abonament, gdy tylko instancja będzie dostępna na stronie "Instances".
 
+> [!primary]
+>
+>Pamiętaj, że w przypadku wybrania jednej z aktualnych instancji *Compute*, opcja płatności **za godzinę** będzie dostępna wyłącznie ze względów technicznych.
+>
+
 > [!warning]
 >
 >W przypadku modelu godzinowego opłaty są naliczane aż do momentu usunięcia instancji. Nie ma znaczenia, czy instancja jest faktycznie używana, czy nie.
@@ -242,7 +246,7 @@ W przypadku problemów z połączeniem, tj. błędów dotyczących kluczy SSH, z
 
 > [!primary]
 >
-Jeśli utworzyłeś instancję bez klucza SSH, przez API OVHcloud lub interfejs Openstack Horizon, możesz dodać klucz SSH do instancji tylko przez [tryb Rescue](/pages/public_cloud/compute/put_an_instance_in_rescue_mode), postępując zgodnie z instrukcjami podanymi w [tej sekcji odpowiedniego przewodnika](/pages/platform/public-cloud/replacing_lost_ssh_key#w-praktyce).
+Jeśli utworzyłeś instancję bez klucza SSH, przez API OVHcloud lub interfejs Openstack Horizon, możesz dodać klucz SSH do instancji tylko przez [tryb Rescue](/pages/public_cloud/compute/put_an_instance_in_rescue_mode), postępując zgodnie z instrukcjami podanymi w [tej sekcji odpowiedniego przewodnika](/pages/public_cloud/compute/replacing_lost_ssh_key#w-praktyce).
 >
 
 #### Połączenie z instancją z systemem operacyjnym Linux z systemu Linux/Mac

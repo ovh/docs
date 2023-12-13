@@ -1,7 +1,7 @@
 ---
-title: 'Accessing a website’s logs and statistics on a Web Hosting'
-excerpt: Find out how to review statistics and logs of your websites
-updated: 2023-08-04
+title: "Accessing a website’s logs and statistics on a Web Hosting"
+excerpt: "Find out how to review statistics and logs of your websites"
+updated: 2023-11-20
 ---
 
 ## Objective
@@ -48,7 +48,7 @@ From the tab of your browser that displays the statistics window, retrieve the l
 
 > [!warning] 
 >
-> If you have enabled separate logs on a [multisite entry](/pages/web/hosting/multisites_configure_multisite#step-2-add-a-domain-or-subdomain), users created here cannot access statistics for that multisite entry.
+> If you have enabled separate logs on a [multisite entry](/pages/web_cloud/web_hosting/multisites_configure_multisite#step-2-add-a-domain-or-subdomain), users created here cannot access statistics for that multisite entry.
 >
 
 ### Visit statistics
@@ -102,5 +102,9 @@ You can display different types of graphics from the drop-down menu in the top l
 - SQL response time: Response time of requests sent to your hosting database.
 
 ## Go further
+
+For specialised services (SEO, development, etc.), contact [OVHcloud partners](https://partner.ovhcloud.com/en-sg/directory/).
+
+If you would like assistance using and configuring your OVHcloud solutions, please refer to our [support offers](https://www.ovhcloud.com/en-sg/support-levels/).
 
 Join our community of users on <https://community.ovh.com/en/>.

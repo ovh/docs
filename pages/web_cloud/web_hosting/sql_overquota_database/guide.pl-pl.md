@@ -1,7 +1,7 @@
 ---
-title: "Tutorial - Co robić, gdy moja baza danych jest nasycona?"
+title: "Hosting WWW: moja baza danych jest przeciążona, co robić?"
 excerpt: "Dowiedz się, jak działać, gdy baza danych jest przeciążona"
-updated: 2023-02-16
+updated: 2023-11-30
 ---
 
 > [!primary]
@@ -56,17 +56,21 @@ Pierwszy etap polega na zidentyfikowaniu obszernej(-ych) tabeli(-ych) w Twojej b
 
 #### 1.1 - Logowanie do bazy danych przez phpMyAdmin
 
-Pobierz hasło dostępowe do bazy danych bezpośrednio w pliku konfiguracyjnym Twojej strony WWW. Wykonaj tę operację za pomocą **etapu 1** w naszym przewodniku dotyczącym [zmiany hasła do bazy danych] (/pages/web_cloud/web_hosting/sql_change_password).
+Uzyskaj informacje dotyczące dostępu do bazy danych bezpośrednio w pliku konfiguracyjnym Twojej strony WWW. Operację tę przeprowadź, korzystając z **etapu 1** naszego przewodnika dotyczącego [zmiany hasła bazy danych](/pages/web_cloud/web_hosting/sql_change_password).
 
-Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i wybierz `Web Cloud`{.action} na pasku nawigacyjnym na górze ekranu. Kliknij przycisk `Hosting`{.action}, następnie wybierz hosting powiązany z Twoją bazą danych na hostingu OVHcloud. Teraz przejdź do zakładki `Bazy danych`{.action}.
+Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) i wybierz pozycję `Web Cloud`{.action} na górnym pasku nawigacji. Kliknij `Hosting`{.action}, następnie wybierz hosting www powiązany z Twoją bazą danych na hostingu OVHcloud. Teraz przejdź do zakładki `Bazy danych`{.action}.
+
+Tabela z listą baz danych wyświetla się u dołu ekranu.
 
 ![phpMyAdmin Access](images/pma_access.png){.thumbnail}
 
-Zawsze w zakładce `Bazy danych`{.action}, kliknij przycisk `...`{.action} po prawej stronie bazy danych, która jest nasycona, a następnie `Dostęp do phpMyAdmin`{.action}.
+Zwróć uwagę, **dla bazy danych, która jest wysycona**, jego `Nazwa użytkownika` i `Adres serwera`, które są zawarte w tabeli zawierającej listę Twoich baz danych. 
+
+W zakładce `Bazy danych`{.action} kliknij przycisk `...`{.action} po prawej stronie bazy danych, która jest wysycona, a następnie kliknij `Dostęp do phpMyAdmin`{.action}.
 
 ![phpMyAdmin Go Login](images/pma_interface.png){.thumbnail}
 
-Wpisz hasło dostępowe do bazy danych jako uzupełnienie wypełnionych wcześniej informacji, a następnie kliknij `Uruchom`{.action}.
+Wprowadź dane dostępowe do Twojej bazy danych, a następnie kliknij `Login`{.action}.
 
 #### 1.2 - Wyszukaj największe tabele
 
@@ -79,11 +83,11 @@ Wpisz hasło dostępowe do bazy danych jako uzupełnienie wypełnionych wcześni
 
 Po zalogowaniu wyświetla się następująca strona:
 
-![phpMyAdmin Login](images/pma_login.png){.thumbnail}
+![phpMyAdmin Login](images/pma-main-page.png){.thumbnail}
 
 W kolumnie po lewej stronie kliknij `"Nazwa bazy danych"`{.action}, a następnie `Rozmiar`{.action} w prawym górnym rogu tabeli, która się wyświetli:
 
-![phpMyAdmin Tables](images/pma_show_table.png){.thumbnail}
+![phpMyAdmin Tables](images/pma-check-size.png){.thumbnail}
 
 Największe stoły wyświetlają się na szczycie tabeli. Wyszukaj je i przejdź do **etapu 2**.
 
@@ -124,7 +128,9 @@ Zapoznaj się z naszą ofertą baz danych [Web Cloud Databasess](https://www.ovh
 
 Zalecamy tę ofertę dla dużych baz danych.
 
-Następnie postępuj zgodnie z naszymi przewodnikami, aby przenieść zawartość Twojej starej bazy danych do nowej:
+Zawartość Twojej bazy danych OVHcloud można duplikować bezpośrednio do innej bazy danych OVHcloud, korzystając z funkcji dostępnej w Twoim [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). W tym celu zapoznaj się z przewodnikiem "[Duplikuj zawartość jednej bazy danych w innej](/pages/web_cloud/web_hosting/copy_database)".
+
+W przypadku migracji na zewnętrzną bazę danych [Start SQL](https://www.ovhcloud.com/pl/web-hosting/options/start-sql/) i [Web Cloud Databases](https://www.ovhcloud.com/pl/web-cloud/databases/) możesz ręcznie przenieść zawartość starej bazy danych do nowej za pomocą naszych przewodników:
 
 - [Eksport istniejącej bazy danych](/pages/web_cloud/web_hosting/sql_database_export)
 - [Pierwsze kroki z usługą Web Cloud Databasess](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)
@@ -151,7 +157,7 @@ W przypadku opcji overquota lub dużego stołu, **trzy zamówienia** są dostęp
 
 Możesz wykonywać te zapytania bezpośrednio w interfejsie **phpMyAdmin**, w zakładce `SQL`{.action}:
 
-![phpMyAdmin SQL request](images/pma_sql_request.png){.thumbnail}
+![phpMyAdmin SQL request](images/pma-sql-menu.png){.thumbnail}
 
 - zamówienie **DELETE** : 
 
@@ -190,6 +196,8 @@ DROP TABLE `table_1`
 > W tym przykładzie polecenie usuwa tabelę **table_1** i wszystkie linie, które ona zawiera.
 
 ## Sprawdź również <a name="go-further"></a>
+
+[Duplikuj zawartość jednej bazy danych w innej](/pages/web_cloud/web_hosting/copy_database)
 
 W przypadku wyspecjalizowanych usług (pozycjonowanie, rozwój, etc.) skontaktuj się z [partnerami OVHcloud](https://partner.ovhcloud.com/pl/directory/).
 

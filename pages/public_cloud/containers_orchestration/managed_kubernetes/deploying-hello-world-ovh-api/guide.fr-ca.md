@@ -40,7 +40,7 @@ The `GET /cloud/project/{serviceName}/kube` API endpoint lists all the available
 
 > [!api]
 >
-> @api {GET} /cloud/project/{serviceName}/kube
+> @api {v1} /cloud GET /cloud/project/{serviceName}/kube
 >
 
 **Result:**
@@ -61,7 +61,7 @@ The `GET /cloud/project/{serviceName}/kube/{kubeId}` API endpoint provides impor
 
 > [!api]
 >
-> @api {GET} /cloud/project/{serviceName}/kube/{kubeId}
+> @api {v1} /cloud GET /cloud/project/{serviceName}/kube/{kubeId}
 >
 
 **Result:**
@@ -107,7 +107,7 @@ For this tutorial, we choose a general purpose node, such as the `b2-7` flavor.
 
 > [!api]
 >
-> @api {POST} /cloud/project/{serviceName}/kube/{kubeId}/nodepool
+> @api {v1} /cloud POST /cloud/project/{serviceName}/kube/{kubeId}/nodepool
 >
 
 **Result:**
@@ -161,7 +161,7 @@ You can use the `GET /cloud/project/{serviceName}/kube/{kubeId}/nodepool` entryp
 
 > [!api]
 >
-> @api {GET} /cloud/project/{serviceName}/kube/{kubeId}/nodepool
+> @api {v1} /cloud GET /cloud/project/{serviceName}/kube/{kubeId}/nodepool
 >
 
 **Result:**

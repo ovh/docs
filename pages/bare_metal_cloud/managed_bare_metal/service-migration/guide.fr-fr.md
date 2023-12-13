@@ -11,7 +11,7 @@ La migration d'un service Managed Bare Metal comprend deux aspects :
 * Le contexte Managed Bare Metal OVHcloud qui comprend la partie client, l'administration de votre infrastructure.
 * Le contexte VMware qui comprend tout l'eco-système VMware, sur l'infrastructure elle-même.
 
-**Découvez comment couvrir tous les aspects liés à la migration vers un service Managed Bare Metal**
+**Découvrez comment couvrir tous les aspects liés à la migration vers un service Managed Bare Metal**
 
 > [!primary]
 >
@@ -69,7 +69,7 @@ Vous pouvez, dans le cadre d'une migration, lier vos services Managed Bare Metal
 
 Si les adresses IP publiques attachées à l'infrastructure d'origine sont nécessaires sur le Managed Bare Metal de destination, il sera nécessaire d'en effectuer le transfert.
 
-Consultez notre guide pour [migrer des blocs IP entre deux services Managed Bare Metal](/pages/cloud/managed-bare-metal/ip-block-addition#migrer-un-bloc-ip-entre-deux-managed-bare-metal).
+Consultez notre guide pour [migrer des blocs IP entre deux services Managed Bare Metal](/pages/bare_metal_cloud/managed_bare_metal/ip-block-addition#migrer-un-bloc-ip-entre-deux-managed-bare-metal).
 
 La vidéo ci-dessous vous détaillera également comment déplacer un bloc d'adresses IP entre deux Hosted Private Cloud. Cette méthode est également applicable à une solution Managed Bare Metal.
 
@@ -165,7 +165,7 @@ Consultez notre guide pour [activer et utiliser Veeam Backup Managed](/pages/bar
 
 > [!api]
 >
-> @api {GET} /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/vm/{vmId}
+> @api {v1} /dedicatedCloud GET /dedicatedCloud/{serviceName}/datacenter/{datacenterId}/vm/{vmId}
 >
 
 La section « sauvegarde » du fichier json retourné fournit des informations sur la configuration de sauvegarde actuelle.

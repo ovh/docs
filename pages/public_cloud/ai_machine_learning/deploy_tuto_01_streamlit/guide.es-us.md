@@ -1,7 +1,7 @@
 ---
 title: AI Deploy - Tutorial - Build & use a Streamlit image
 excerpt: How to build and use a custom Docker image containing a Streamlit application
-updated: 2023-04-04
+updated: 2023-11-27
 ---
 
 > [!primary]
@@ -93,7 +93,7 @@ WORKDIR /workspace
 
 > [!primary]
 >
-> This last step is mandatory because streamit needs to be able to write inside the `HOME` directory of the owner of the process in order to work properly.
+> This last step is mandatory because Streamlit needs to be able to write inside the `HOME` directory of the owner of the process in order to work properly.
 
 -   More information about Dockerfiles can be found [here](https://docs.docker.com/engine/reference/builder/)
 -   Direct link to the full Dockerfile can be found here [here](https://github.com/ovh/ai-training-examples/tree/main/apps/streamlit/simple-app/Dockerfile)
@@ -142,7 +142,7 @@ Once started, your application should be available on `http://localhost:8501`.
 
 > [!warning]
 >
-> The shared registry of AI Deploy should only be use for testing purposes. Please consider attaching your own docker registry. More information about this can be found [here](/pages/public_cloud/ai_machine_learning/training_guide_05_howto_add_registry).
+> The shared registry should only be used for testing purposes. Please consider creating and attaching your own registry. More information about this can be found [here](/pages/public_cloud/ai_machine_learning/gi_07_manage_registry). The images pushed to this registry are for AI Tools workloads only, and will not be accessible for external uses.
 
 Find the address of your shared registry by launching this command:
 

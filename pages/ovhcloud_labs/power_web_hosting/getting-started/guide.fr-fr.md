@@ -38,7 +38,7 @@ Par défaut, votre hébergement web POWER est attaché à une URL automatiquemen
 
 ![Adding a domain name](images/getting-started-03.png){.thumbnail}
 
-Pour plus de détails sur la déclaration d'un nom de domaine sur votre hébergement web, consulter notre guide « [Partager son hébergement entre plusieurs sites](/pages/web/hosting/multisites_configure_multisite#etape-1-acceder-a-la-gestion-multisite) ».
+Pour plus de détails sur la déclaration d'un nom de domaine sur votre hébergement web, consulter notre guide « [Partager son hébergement entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite#etape-1-acceder-a-la-gestion-multisite) ».
 
 #### Utiliser une base de données
 
@@ -54,7 +54,7 @@ Retrouvez l'ensemble des logs et statistiques de votre hébergement et de vos si
 
 ![Accessing logs and statistics](images/getting-started-05.png){.thumbnail}
 
-Prenez connaissance du guide « [Consulter les statistiques et les logs de mon site hébergé sur une offre mutualisée](/pages/web/hosting/logs_and_statistics#consulter-les-statistiques-et-les-logs) » pour plus d'informations à ce sujet.
+Prenez connaissance du guide « [Consulter les statistiques et les logs de mon site hébergé sur une offre mutualisée](/pages/web_cloud/web_hosting/logs_and_statistics#consulter-les-statistiques-et-les-logs) » pour plus d'informations à ce sujet.
 
 ### Node.js
 
@@ -174,13 +174,13 @@ Les [API OVHcloud](https://api.ovh.com/) actuellement disponibles pour l'offre d
 
 > [!api]
 >
-> @api {GET} /hosting/web/{serviceName}/availableConfigurations
+> @api {v1} /hosting/web GET /hosting/web/{serviceName}/availableConfigurations
 
 #### Visualiser la configuration active <a name="api-get-active-configuration"></a>
 
 > [!api]
 >
-> @api {GET} /hosting/web/{serviceName}/configuration
+> @api {v1} /hosting/web GET /hosting/web/{serviceName}/configuration
 
 > Cet appel vous permet, par exemple, de vérifier votre point d'entrée.
 
@@ -188,7 +188,7 @@ Les [API OVHcloud](https://api.ovh.com/) actuellement disponibles pour l'offre d
 
 > [!api]
 >
-> @api {PUT} /hosting/web/{serviceName}/configuration
+> @api {v1} /hosting/web PUT /hosting/web/{serviceName}/configuration
 
 > Cet appel vous permet, par exemple, de modifier votre point d'entrée.
 
@@ -196,7 +196,7 @@ Les [API OVHcloud](https://api.ovh.com/) actuellement disponibles pour l'offre d
 
 > [!api]
 >
-> @api {POST} /hosting/web/{serviceName}/attachedDomain/{domain}/restart
+> @api {v1} /hosting/web POST /hosting/web/{serviceName}/attachedDomain/{domain}/restart
 
 ### Créer une redirection HTTP vers HTTPS
 
@@ -225,9 +225,9 @@ Après chaque modification structurante de votre application, il est conseillé 
 
 ## Aller plus loin
 
-[Partager son hébergement entre plusieurs sites](/pages/web/hosting/multisites_configure_multisite#etape-1-acceder-a-la-gestion-multisite)
+[Partager son hébergement entre plusieurs sites](/pages/web_cloud/web_hosting/multisites_configure_multisite#etape-1-acceder-a-la-gestion-multisite)
 
-[Consulter les statistiques et les logs de mon site hébergé sur une offre mutualisée](/pages/web/hosting/logs_and_statistics#consulter-les-statistiques-et-les-logs)
+[Consulter les statistiques et les logs de mon site hébergé sur une offre mutualisée](/pages/web_cloud/web_hosting/logs_and_statistics#consulter-les-statistiques-et-les-logs)
 
 [Premiers pas avec les API OVHcloud](/pages/manage_and_operate/api/first-steps)
 
