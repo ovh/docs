@@ -924,6 +924,7 @@
                 + [AI Deploy - Tutorial - Deploy LLaMA 2 in a Streamlit application](public_cloud/ai_machine_learning/deploy_tuto_15_streamlit_chatbot_llama_v2)
                 + [AI Deploy - Tutorial - Deploy an ONNX model using FastAPI](public_cloud/ai_machine_learning/deploy_tuto_16_fastapi_onnx)
                 + [AI Deploy - Tutorial - Create an application to play rock paper scissors with YoloV8](public_cloud/ai_machine_learning/deploy_tuto_15_rock_paper_scissors)
+                + [AI Deploy - Tutorial - Deploy Whisper Speech Recognition Model](public_cloud/ai_machine_learning/deploy_tuto_17_streamlit_whisper)
         + [AI Partners Ecosystem](products/public-cloud-ai-and-machine-learning-ai-ecosystem)
             + [AI Partners - Guides](public-cloud-ai-and-machine-learning-ai-ecosystem-guides)
                 + [AI Partners Ecosystem - Lettria - Models features, capabilities and billing](public_cloud/ai_machine_learning/ecosystem_01_lettria_billing_features_capabilities)
