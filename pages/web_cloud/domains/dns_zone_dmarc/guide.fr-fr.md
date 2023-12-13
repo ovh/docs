@@ -103,7 +103,7 @@ Vous pouvez ajouter l'enregistrement TXT à votre zone DNS depuis l'[espace clie
 
 Une fois votre zone DNS affichée, cliquez sur le bouton `Ajouter une entrée`{.action} puis sur « Champs étendus » `TXT`{.action}.
 
-- **Sous-domaine** : cette entrée doit **obligatoirement débuter par** `_dmarc`. Si vous appliquez votre DMARC à l'ensemble du domaine vous n'inscrivez rien d'autre que `_dmarc` dans cette case. Si vous définissez votre DMARC à un sous-domaine de votre domaine principal, il faudra ajouter votre sous-domaine après `_dmarc`. Par exemple, si vous devez appliquer le DMARC à votre sous-domaine *subdomain.mydomain.ovh*, il faudra saisir `_dmarc.subdomain` dans la case sous-domaine pour le nom de domaine *mydomain.ovh*.
+- **Sous-domaine** : cette entrée doit **obligatoirement débuter par** `_dmarc`. Si vous appliquez votre DMARC à l'ensemble du domaine, n'inscrivez rien d'autre que `_dmarc` dans cette case. Si vous définissez votre DMARC à un sous-domaine de votre domaine principal, ajoutez votre sous-domaine après `_dmarc`. Par exemple, si on doit appliquer le DMARC à un sous-domaine *subdomain.mydomain.ovh*,  il faut saisir `_dmarc.subdomain` dans la case « sous-domaine » pour le nom de domaine *mydomain.ovh*
 
 Vous trouverez ci-dessous la liste des balises utilisées pour créer un **enregistrement TXT** avec les paramètres DMARC. Cette liste est complémentaire avec les balises mentionnées dans la section précédente « [Enregistrement DMARC](#dmarc-record) ».
 
