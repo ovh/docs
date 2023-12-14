@@ -1,6 +1,6 @@
 ---
 title: FAQ - AI Tools
-updated: 2023-12-12
+updated: 2023-12-14
 ---
 
 ## Objective
@@ -32,11 +32,11 @@ Here are the most frequently asked questions about `ovhai` CLI & OVHcloud AI Sol
 > >
 > > Although these products are all dedicated to AI, giving you access to powerful resources and the ability to interact with your data, they each have their own specific use:
 > >
-> > **Notebooks** are files which contain both computer code (e.g. python) and rich text elements (paragraph, equations, figures, links, etc…).  This is why Notebooks are mainly used for data exploration, studies and comparing solutions. OVHcloud AI Notebooks provides you managed Jupyter or VSCode notebooks, which come with pre-installed libraries. This way, you do not have to worry about your environment which will save you time.
+> > **Notebooks** are files which contain both computer code (e.g. python) and rich text elements (paragraph, equations, figures, links, etc…).  This is why Notebooks are mainly used for data exploration, studies and comparing solutions. OVHcloud AI Notebooks provides you with managed Jupyter or VSCode notebooks, which come with pre-installed libraries. This way, you do not have to worry about your environment, which will save you some time.
 > > 
 > > **AI Training** is dedicated to model training. Once your environment has been configured, you can launch a model training session in just a few clicks. As soon as the training is complete, the job will stop automatically. So it is the perfect tool for training your models without having to worry about the bill.
 > >
-> > **AI Deploy** allows you to deploy your AI applications and models with high availability. If you're looking to make inference, this is the product you are looking for.
+> > **AI Deploy** allows you to deploy your AI applications and models with high availability. If you're looking for a tool to make inference, this is the product you are looking for.
 > >
 > > For more information on these products, please read the [comparative guide for AI Solutions](/pages/public_cloud/ai_machine_learning/gi_00_ai_comparative-table).
 > >
