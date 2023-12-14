@@ -180,7 +180,7 @@ Um diese Situation zu beheben, weisen Sie Ihrem Domainnamen über die aktive DNS
 Wenn Sie auf Ihrem Webhosting eine CDN-Option aktiviert haben, können Sie auch die IP-Adresse des Webhostings mit dem CDN verwenden.
 
 Die IP-Adresse Ihres Webhostings finden Sie in unserer Anleitung "[Liste der IP-Adressen der Cluster und Webhostings](/pages/web_cloud/web_hosting/clusters_and_shared_hosting_IP)".
-Um die aktive DNS-Zone Ihrer Domain zu bearbeiten, lesen Sie unsere Anleitung "[OVHcloud DNS-Zone bearbeiten](/pages/web_cloud/domains/dns_zone_edit").
+Um die aktive DNS-Zone Ihrer Domain zu bearbeiten, lesen Sie unsere Anleitung "[OVHcloud DNS-Zone bearbeiten](/pages/web_cloud/domains/dns_zone_edit).
 
 - 3: Keiner der im Tab Multisite aufgeführten Domainnamen verfügt über eine aktive SSL Option.
 
