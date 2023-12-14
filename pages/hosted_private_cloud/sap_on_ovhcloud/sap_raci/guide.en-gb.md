@@ -1,19 +1,19 @@
 ---
 title: "Sharing responsibility for SAP on OVHcloud solutions"
 excerpt: "Shared responsibility between OVHcloud and the customer for using SAP on OVHcloud solutions"
-updated: 2023-12-08
+updated: 2023-12-14
 ---
 
 ## Objective
 
-The RACI below details the division of responsibilities between OVHcloud and the customer for SAP on OVHcloud solutions. This model can help the customer get the most out of SAP on OVHcloud solutions. It supplements the [RACI "Dedicated Servers"](/pages/account_and_service_management/responsibility_sharing/dedicated-servers) that applies to the SAP HANA on Bare Metal service, and the [RACI "VMware on OVHcloud"](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/responsibility-sharing) that applies to the SAP HANA on Private Cloud service. The acronym "SLES4SAP BYOL" is used for "SUSE Linux Enterprise Server for SAP Applications Bring Your Own License".
+The RACI below details the division of responsibilities between OVHcloud and the customer for SAP on OVHcloud solutions. This model can help the customer get the most out of SAP on OVHcloud solutions. It supplements the [Dedicated Servers RACI](/pages/account_and_service_management/responsibility_sharing/dedicated-servers) that applies to the SAP HANA on Bare Metal service, and the [VMware on OVHcloud RACI](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/responsibility-sharing) that applies to the SAP HANA on Private Cloud service. The acronym "SLES4SAP BYOL" is used for "SUSE Linux Enterprise Server for SAP Applications Bring Your Own License".
 
 | Roles |
 | --- |
-|R: Is in charge of Process Completion|
-|A: Is Process Completion Approver|
-|C: Accessed during the process|
-|I: Is Notified of Process Results|
+|R : Is in charge of carrying out the process|
+|A : is Accountable for the successful completion of the process|
+|C : Is Consulted during the process|
+|I : Is Informed of the results of the process|
 
 ### 1. Before subscription
 
@@ -21,9 +21,9 @@ The RACI below details the division of responsibilities between OVHcloud and the
 
 | **SAP HANA on Bare Metal** | **SAP HANA on Private Cloud** | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- | --- | --- |
-| X | X | Choose to subscribe to the [Dedicated Server](/pages/account_and_service_management/responsibility_sharing/dedicated-servers) service  or [VMware on OVHcloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/responsibility-sharing) depending on your needs, and follow the associated responsibility models | RA | CI |
+| X | X | Choose to subscribe to the [Dedicated Server](/pages/account_and_service_management/responsibility_sharing/dedicated-servers) service or to the [VMware on OVHcloud](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/responsibility-sharing) service depending on your needs, and follow the associated responsibility models | RA | CI |
 | X | X | Subscribe to SUSE for the OS license required to use the SLES4SAP BYOL image | RA |  |
-| X | X | You must own the license rights for the SAP software deployed on the infrastructure | RA |  |
+| X | X | Owning the license rights for the SAP software deployed on the infrastructure | RA |  |
 | X | X | Subscribe to the OVHcloud Object Storage offer if it is planned to use the OVHcloud Backint Agent for SAP HANA for backups | RA | CI |
 
 ### 2. Service availability
@@ -32,8 +32,8 @@ The RACI below details the division of responsibilities between OVHcloud and the
 
 | **SAP HANA on Bare Metal** | **SAP HANA on Private Cloud** | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- | --- | --- |
-| X | X | Provision of the subscribed service and available features (OVHcloud Backint Agent for SAP HANA, OS image SLES4SAP BYOL) | I | RA |
-|  | X | Provision of the subscribed service and available features (Terraform modules for deploying SAP infrastructure as code, SAP HANA pre-installation) | I | RA |
+| X | X | Provide the subscribed service and available features (OVHcloud Backint Agent for SAP HANA, OS image SLES4SAP BYOL) | I | RA |
+|  | X | Provide the subscribed service and available features (Terraform modules for deploying SAP infrastructure as code, SAP HANA pre-installation) | I | RA |
 | X | X | Inform SUSE of the deployment of a SLES4SAP BYOL OS | I | RA |
 | X | X | Provide configuration guides for SAP options and features provided by OVHcloud | I | RA |
 |  | X | Provide SAP HANA installation sources in an OVHcloud S3 Object Storage bucket | RA | I |
@@ -52,7 +52,7 @@ The RACI below details the division of responsibilities between OVHcloud and the
 | X | X | Deploy the OS | RA |  |
 | X | X | Deploy the IT system as needed | RA |  |
 | X | X | Choose to configure SAP HANA backups with "OVHcloud Backint Agent for SAP HANA" | RA |  |
-|  | X | Choosing to launch the deployment of SAP infrastructure as code | RA |  |
+|  | X | Choose to launch the deployment of SAP infrastructure as code | RA |  |
 | X | X | Verify compliance of the SAP installation, underlying infrastructure, and associated best practices | RA |  |
 
 ### 3. Service usage
@@ -111,8 +111,8 @@ The RACI below details the division of responsibilities between OVHcloud and the
 
 | **SAP HANA on Bare Metal** | **SAP HANA on Private Cloud** | **Activity** | **Customer** | **OVHcloud** |
 | --- | --- | --- | --- | --- |
-| X | X | Analyzing and correcting proven development issues (bugs, faults, etc.) of the 'OVHcloud Backint Agent' | I | RA |
-| X | X | Handle incidents related to the SLES4SAP OS in BYOL mode and open tickets with the SUSE publisher if necessary | RA |  |
+| X | X | Analyze and correct proven development issues (bugs, faults, etc.) of the 'OVHcloud Backint Agent' | I | RA |
+| X | X | Handle incidents related to the SLES4SAP OS in BYOL mode and open tickets with the SUSE company if necessary | RA |  |
 | X | X | Manage incidents related to SAP solutions | RA |  |
 
 #### **3.2.2. Changes**
