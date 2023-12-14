@@ -16,8 +16,8 @@ Datenbanken (DBs) werden verwendet, um dynamische Elemente (Verbindungsdaten, Be
 
 ## Voraussetzungen
 
-- Sie verfügen über ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) Angebot mit mindestens einer inkludierten Datenbank.
-- Sie verfügen über eine Datenbank, die als „Erstellung“ unter den in Ihrem Webhosting Angebot enthaltenen Datenbanken verfügbar ist. Bei Bedarf können Sie [Start SQL](https://www.ovhcloud.com/de/web-hosting/options/start-sql/) Datenbanken  zu Ihrem Webhosting hinzufügen.
+- Sie verfügen über ein [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) mit mindestens einer inkludierten Datenbank.
+- Sie haben unter den in Ihrem Webhosting enthaltenen Datenbanken eine zur Erstellung verfügbare Datenbank. Bei Bedarf können Sie [Start SQL](https://www.ovhcloud.com/de/web-hosting/options/start-sql/) Datenbanken zu Ihrem Webhosting hinzufügen.
 - Sie haben Zugriff auf Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) mit den [erforderlichen Berechtigungen](/pages/account_and_service_management/account_information/managing_contacts) zur Verwaltung des Webhostings.
 
 ## In der praktischen Anwendung
@@ -30,16 +30,16 @@ Die Tabelle auf dieser Seite enthält alle Datenbanken, die mit Ihrem Webhosting
 
 ![databasecreation](images/manager-webcloud-webhosting-databases-dashboard.png){.thumbnail}
 
-In der Tabelle können Datenbanken verschiedene Subscription-type haben:
+In der Tabelle können Datenbanken verschiedene Typen haben:
 
 - **Inklusive**: Gibt an, dass die Datenbank in Ihrem Webhosting enthalten ist. Sie verursacht keine zusätzlichen Kosten.</br></br>
 - **Optional**: Gibt an, dass die Datenbank als Ergänzung zu den in Ihrem Webhosting enthaltenen Datenbanken abonniert wurde. Sie zahlen einen Aufpreis, um über diese zusätzliche Datenbank auf Ihrem Webhosting zu verfügen.</br></br>
-- **Inklusive - aus dem Verkauf genommen**: Gibt an, dass die Inklusiv-Datenbank in Kürze aus dem Verkauf genommen und veraltet wird. </br>Es wird empfohlen, **bevor** die Datenbank veraltet ist, ihren Inhalt in eine neue, aktuellere Datenbank zu verschieben (deren Verkaufsende noch nicht geplant ist).</br></br>
-- **Optional – aus dem Verkauf genommen**: Gibt an, dass die zusätzlich auf Ihrem Webhosting abonnierte Datenbank in Kürze aus dem Verkauf genommen und veraltet wird. </br>Es wird empfohlen, **bevor** die Datenbank veraltet ist, den Inhalt der Datenbank in eine neue, aktuellere Datenbank zu verschieben (deren Verkaufsende noch nicht geplant ist).
+- **Inklusive - aus dem Verkauf genommen**: Gibt an, dass die Inklusiv-Datenbank in Kürze aus dem Verkauf genommen wird. </br>Es wird empfohlen, **bevor** die Datenbank veraltet ist, ihren Inhalt in eine neue, aktuellere Datenbank zu verschieben (deren Verkaufsende noch nicht geplant ist).</br></br>
+- **Optional – aus dem Verkauf genommen**: Gibt an, dass die zusätzlich zu Ihrem Webhosting abonnierte Datenbank in Kürze aus dem Verkauf genommen wird. </br>Es wird empfohlen, **bevor** die Datenbank veraltet ist, den Inhalt der Datenbank in eine neue, aktuellere Datenbank zu verschieben (deren Verkaufsende noch nicht geplant ist).
 
 > [!success]
 >
-> Informationen zum schnellen Duplizieren des Inhalts einer Datenbank „**Inklusive - aus dem Verkauf genommen**“ oder „**Optional - aus dem Verkauf genommen**“ in eine neue Datenbank, deren Veraltung noch nicht geplant ist, finden Sie in unserer Anleitung „[Den Inhalt einer OVHcloud-Datenbank in einer anderen Datenbank duplizieren](/pages/web_cloud/web_hosting/copy_database)“.
+> Informationen zum schnellen Duplizieren des Inhalts einer Datenbank im Zustand **Inklusive - aus dem Verkauf genommen** oder **Optional - aus dem Verkauf genommen** in eine neue Datenbank, deren Obsoleszenz noch nicht geplant ist, finden Sie in unserer Anleitung "[Den Inhalt einer OVHcloud-Datenbank in einer anderen Datenbank duplizieren](/pages/web_cloud/web_hosting/copy_database)".
 >
 
 ### Schritt 2: Datenbank erstellen
