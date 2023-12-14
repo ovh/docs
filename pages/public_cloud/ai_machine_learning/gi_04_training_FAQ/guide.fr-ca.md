@@ -115,7 +115,7 @@ Here are the most frequently asked questions about `ovhai` CLI & OVHcloud AI Sol
 > > This way, your AI Tool HTTP link will not require authentication to be accessed.
 > >
 > Do OVHcloud AI Solutions support Public and Private networking?
->>
+> >
 > > - Public networking can be used for all the AI Tools.
 > > - Private networking (OVHcloud vRack) is not supported.
 > >
