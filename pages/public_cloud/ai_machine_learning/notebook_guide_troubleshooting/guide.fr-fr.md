@@ -1,7 +1,7 @@
 ---
 title: AI Notebooks - Dépannage (EN)
 excerpt: Principales erreurs et comment dépanner votre AI Notebooks
-updated: 2023-12-05
+updated: 2023-12-14
 ---
 
 ## Objective
@@ -26,7 +26,7 @@ If you are unable to connect to AI Notebooks, please ensure the following:
 
 - **Your notebook is up and running:** To connect to your notebook, it must be in `RUNNING` or in `IN SERVICE` status (green color in the OVHcloud Control Panel). If your notebook is starting up, wait a few moments until your data synchronizes and you will be able to connect. Starting time may vary due to some parameters. The more data you synchronize, the more time it will take.
 
-- **You have an authorized user or an authorized token:** To be able to connect to your notebook, you must have created a user or token. To create a new user, log into the OVHcloud Control Panel and open your Public Cloud project. Click on `Users & Roles` in the left menu under `Project Management`. In the roles assignment, don't forget to select `Administrator` and/or `AI Training Operator` for your user.
+- **You have an authorized user or an authorized token:** To be able to connect to your notebook, you must have created a user or token. To create a new user, log into the OVHcloud Control Panel and open your Public Cloud project. In the left menu, click on `AI Dashboard`, in the `AI & Machine Learning` section. This will allow you to manage and create AI users. To simply access AI solutions, use the `AI Platform - Read Only` role. For more advanced use, including management, select the `AI Platform - Operator` role.
 To follow all the steps in detail, please refer to this [documentation](/pages/public_cloud/ai_machine_learning/gi_01_manage_users).
 
 As an alternative, you can generate an authorized token directly via our [CLI](/pages/public_cloud/ai_machine_learning/cli_13_howto_app_token_cli).
@@ -95,7 +95,7 @@ AI Notebooks does not allow the use of custom Docker images. In case you need a 
 
 ### I am not sure about the Notebooks billing
 
-You will have to pay for the resources you use. Check [this documentation](/pages/public_cloud/ai_machine_learning/notebook_guide_billing_concept) for detailed examples.
+You only pay for the resources you use and eventually the local storage. Check [this documentation](/pages/public_cloud/ai_machine_learning/notebook_guide_billing_concept) for detailed examples.
 
 ### I don't see my data synchronized in the Object Storage
 
@@ -136,7 +136,7 @@ Currently, you can choose between three live-code editors to launch and edit you
 
 - VSCode
 - JupyterLab
-- JupyterLab collaborative
+- JupyterLab Real Time (collaborative environment)
 
 You can get the list of available editors using the ovhai CLI with the following command: `ovhai capabilities editor list`
 
@@ -164,7 +164,7 @@ However, you can access other ports by appending them to the URL. For example, t
 
 - Check if you have permission to connect to Public Cloud Object Storage (PCS): If you remove the permission to connect to PCS, the data synchronization will fail and so will the notebook.
 
-- Check if you have access to the data of the volume you are trying to connect to your notebook: If you try to connect a volume (from PCS) and you do not have access rights, your notebook will have the `failed` status.
+- Check if you have access to the data of the volume you are trying to connect to your notebook: If you try to connect to a volume (from PCS) and you do not have access rights, your notebook will have the `failed` status.
 
 To debug it yourself, run the following command in the CLI:
 
