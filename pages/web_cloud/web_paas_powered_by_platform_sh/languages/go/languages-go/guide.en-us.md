@@ -1,18 +1,15 @@
 ---
 title: Go
-updated: 2023-12-07
+updated: 2023-12-14
 ---
 
-## Objective  
+## Objective
 
 Web PaaS supports building and deploying applications written in Go using Go modules. They're compiled during the Build hook phase, and support both committed dependencies and download-on-demand.
 
 ## Supported versions
 
 You can select the major and minor version. Patch versions are applied periodically for bug fixes and the like. When you deploy your app, you always get the latest available patches.
-
-
-
 
 <table>
     <thead>
@@ -37,12 +34,9 @@ You can select the major and minor version. Patch versions are applied periodica
 </table>
 
 
-
 ### Specify the language
 
-To use Go, specify type as your app's `type`
-
-
+To use Go, specify type as your app's `type`.
 
 ```yaml 
 type: 'golang:<VERSION_NUMBER>'
@@ -54,22 +48,21 @@ For example:
 type: 'golang:1.21'
 ```
 
-
-
 ### Deprecated versions
- The following versions are deprecated. They're available, but they aren't receiving security updates from upstream and aren't guaranteed to work. They'll be removed in the future, so migrate to one of the [supported versions](#supported-versions).
 
-- 1.19  
-- 1.18  
-- 1.17  
-- 1.16  
-- 1.15  
-- 1.14  
-- 1.13  
-- 1.12  
-- 1.11  
-- 1.10  
-- 1.9  
+The following versions are deprecated. They're available, but they aren't receiving security updates from upstream and aren't guaranteed to work. They will be removed in the future, so we advise you to migrate to one of the [supported versions](#supported-versions).
+
+- 1.19
+- 1.18
+- 1.17
+- 1.16
+- 1.15
+- 1.14
+- 1.13
+- 1.12
+- 1.11
+- 1.10
+- 1.9
 - 1.8
 
 ## Go modules
@@ -81,8 +74,6 @@ The recommended way to handle Go dependencies on Web PaaS is using Go module sup
 Assuming your `go.mod` and `go.sum` files are present in your repository, your application can be built with the command `go build`, to produce a working executable. You can then start it from the `web.commands.start` directive. Note that the start command _must_ run in the foreground. If the program terminates for any reason it is automatically restarted.
 
 The following basic `.platform.app.yaml` file is sufficient to run most Go applications.
-
-
 
 ```yaml 
 name: app
@@ -112,16 +103,10 @@ web:
 disk: 1024
 ```
 
-
-
 Note that there is still an Nginx proxy server sitting in front of your application.
-If desired, certain paths may be served directly by Nginx without hitting your application (for static files, primarily)
-or you may route all requests to the Go application unconditionally, as in the example above.
+If desired, certain paths may be served directly by Nginx without hitting your application (for static files, primarily) or you may route all requests to the Go application unconditionally, as in the example above.
 
 ## Project templates
-
-
-
 
 ### Beego 
 
@@ -166,4 +151,3 @@ or you may route all requests to the Go application unconditionally, as in the e
 - Git module-based build<br />  
  
 [View the repository](https://github.com/platformsh-templates/gin) on GitHub.
-
