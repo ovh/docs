@@ -1,7 +1,7 @@
 ---
 title: AI Training - Troubleshooting
 excerpt: Tutorial about how to debug your jobs
-updated: 2023-12-05
+updated: 2023-12-14
 ---
 
 ## Objective
@@ -142,9 +142,9 @@ During its lifetime the job should transit between the following statuses:`QUEUE
 
 Billing is minute-based and starts from the beginning until the end of the job's `RUNNING` status. Each commenced minute is billed completely. Jobs that do not reach the `RUNNING` state will not be billed.
 
-The price will depend on the compute resources you use (CPUs and GPUs) and their running time. Pricing examples can be found [here](/pages/public_cloud/ai_machine_learning/training_guide_08_billing_concept).
+The price will depend on the compute resources you use (CPUs and GPUs) and their running time. 
 
-For more information about AI Training, please check the [Troubleshooting documentation](/pages/public_cloud/ai_machine_learning/training_guide_07_troubleshooting).
+For more information about AI Training billing and pricing examples, please check the [AI Training - Billing and lifecycle](/pages/public_cloud/ai_machine_learning/training_guide_08_billing_concept) guide.
 
 ### How long can I use my AI Training job?
 

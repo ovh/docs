@@ -1,7 +1,7 @@
 ---
 title: AI Training - Troubleshooting
 excerpt: Tutorial about how to debug your jobs
-updated: 2023-12-05
+updated: 2023-12-14
 ---
 
 ## Objective
