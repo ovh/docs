@@ -8,7 +8,6 @@ updated: 2023-12-14
 Here are the most frequently asked questions about `ovhai` CLI & OVHcloud AI Solutions (AI Notebooks, AI Training, AI Deploy).
 
 > [!faq]
-> >
 > **ovhai CLI**
 > >
 > What is the ovhai CLI?
