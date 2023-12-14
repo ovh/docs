@@ -1,5 +1,5 @@
 ---
-title: Données - Conformité S3 avec les AI Tools (EN)
+title: Données - Conformité S3 avec les Produits IA (EN)
 excerpt: Apprendre à utiliser les buckets S3 avec les AI Tools
 updated: 2023-08-22
 ---
