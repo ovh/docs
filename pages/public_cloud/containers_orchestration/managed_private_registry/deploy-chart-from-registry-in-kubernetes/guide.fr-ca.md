@@ -18,7 +18,7 @@ This tutorial presupposes that you already have a working OVHcloud Managed Kuber
 
 You also need to have a working OVHcloud Managed Private Registry and have followed the guide on [managing Helm charts in the OVHcloud Managed Private Registry](/pages/public_cloud/containers_orchestration/managed_private_registry/using-helm-charts).
 
-After following the previous guide, you should have at least one Wordpress Helm chart in your Managed Private Registry:
+After following the previous guide, you should have at least one WordPress Helm chart in your Managed Private Registry:
 
 ![Helm charts in OVHcloud Managed Private Registry](images/helm-chart-in-ovh-private-registry.png)
 
