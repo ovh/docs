@@ -1,7 +1,7 @@
 ---
 title: AI Training - Troubleshooting
 excerpt: Tutorial about how to debug your jobs
-updated: 2021-10-04
+updated: 2023-12-14
 ---
 
 ## Objective
@@ -10,12 +10,24 @@ This tutorial gives you some hints on how to debug your jobs if things go wrong.
 
 ## Requirements
 
--   an **AI Training Job** you would like to start
--   the [OVHcloud AI CLI](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli) installed
+-   An **AI Training Job** you would like to start
+-   The [OVHcloud AI CLI](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli) installed
 
-## Which commands and arguments can I use to debug?
+## Instructions
 
-A lot of options and sub-commands are available in the ovhai tool.
+### What is an AI Training job and how to run one?
+
+All steps for starting and working on AI Training are described in the [AI Training - Getting Started](/pages/public_cloud/ai_machine_learning/training_guide_02_howto_submit_job) guide.
+
+### How do I get my files back once I have finished training?
+
+When you use AI Training, make sure to mount Object Storage containers to your job. You will need to back up your files on these volumes. Once your training job is complete (status is `DONE` ), your job should synchronise your data on the mounted Object Storage container(s).
+
+If no volumes are mounted in the specified location, your files will be saved in the job's local and ephemeral storage, then deleted once the job is finished.
+
+### Which commands and arguments can I use to debug?
+
+A lot of options and sub-commands are available in the ovhai CLI tool. This is the recommended means of interaction with AI Solutions. To install it, follow the [CLI Installation guide](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli).
 
 To get a list of available sub-commands and arguments, just start run:
 
@@ -29,25 +41,25 @@ Further details on each sub-command can be accessed by:
 ovhai <subcommand> --help
 ```
 
-## Where to find the UUID of my job?
+### Where can I find the UUID of my job?
 
-First you need the UUID of your job, so use:
+The UUIDs of your projects appear in the Control Panel when you go to the `AI Training` section. 
+
+You can also find them when you list your existing jobs, using the `ovhai` CLI with the following command:
 
 ``` {.bash}
 ovhai job list
 ```
 
-If your job is not listed, you may use:
+If your job is not listed, you may use this command to list all the jobs:
 
 ``` {.bash}
 $ ovhai job list -a
 ```
 
-to list all jobs.
+### Why has my job FAILED?
 
-## Why has my job FAILED?
-
-### First, check the return-code / error-code of my job
+#### First, check the return-code / error-code of your job
 
 You can find the return-code of your job by running:
 
@@ -65,13 +77,13 @@ Status:
 ```
 
 The following info is returned if there was an issue with downloading/pulling your image.
-Check for typos and access issues if you try to access a non-public image.
+Check for typos in the image name and assess issues if you try to access a non-public image.
 
 ``` {.bash}
   Infos:          Error image pull
 ```
 
-### Check if there are any error-messages
+#### Check if there are any error-messages
 
 Your stdout (Output) and stderr (Error) messages can be read with:
 
@@ -79,9 +91,11 @@ Your stdout (Output) and stderr (Error) messages can be read with:
 ovhai job logs <UUID>
 ```
 
-### Debug interactively
+Note that you can also consult them from the Control Panel, by going to `AI Training` > `Job UUID` > `Logs`.
 
-If the answers above don't help you solving your issue, it may help running your job a bit more interactively.
+#### Debug interactively
+
+If the answers above don't help you to solve your issue, it may help running your job a bit more interactively.
 
 To skip any "autostart" of your image, you may use a bash with infinite sleep and connect to this by SSH.
 
@@ -100,7 +114,7 @@ $
 
 You may now start your commands and/or use the typical commandline utils to debug your issue within the container.
 
-### Debug your Code
+#### Debug your Code
 
 The easiest way to debug your code may be using above interactive debug-session and run/compile your code interactively checking for:
 
@@ -117,6 +131,24 @@ python -i
 ```
 
 or using any other debugger
+
+### Is it possible to update a running job?
+
+It is not possible to update a running job. If you wish to change the specification of a **job**, you need to interrupt the current one and recreate it.
+
+### How is the product billed?
+
+During its lifetime the job should transit between the following statuses:`QUEUED`, `INITIALIZING`, `PENDING`, `RUNNING`, `INTERRUPTING`, `FINALIZING`, `DONE`.
+
+Billing is minute-based and starts from the beginning until the end of the job's `RUNNING` status. Each commenced minute is billed completely. Jobs that do not reach the `RUNNING` state will not be billed.
+
+The price will depend on the compute resources you use (CPUs and GPUs) and their running time. 
+
+For more information about AI Training billing and pricing examples, please check the [AI Training - Billing and lifecycle](/pages/public_cloud/ai_machine_learning/training_guide_08_billing_concept) guide.
+
+### How long can I use my AI Training job?
+
+An AI Training job runs continuously until manually interrupted by the user or until it is done, unless it exceeds **7 days of running**. It will then be automatically stopped. You can choose to automatically restart it using the `auto-restart` option (set this parameter to `True`). The job will then restart as is. To increase this 7-day limit, you will have to contact the support to ask for an upgrade of this quota for your Public Cloud project.
 
 ## Feedback
 
