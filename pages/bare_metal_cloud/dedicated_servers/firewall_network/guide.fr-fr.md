@@ -6,7 +6,7 @@ updated: 2023-12-11
 
 ## Objectif
 
-Pour protéger les services à la clientèle exposés sur les adresses IP publiques, OVHcloud propose un pare-feu sans état (*stateless*) qui est configuré et intégré à l’**infrastructure anti-DDoS** : le Edge Network Firewall. Il permet de limiter l’exposition des services aux attaques DDoS, en supprimant des flux réseau spécifiques qui peuvent provenir de l’extérieur du réseau OVHcloud.
+Pour protéger les services des clients exposés sur les adresses IP publiques, OVHcloud propose un pare-feu sans état (*stateless*) qui est configuré et intégré à l’**infrastructure anti-DDoS** : le Edge Network Firewall. Il permet de limiter l’exposition des services aux attaques DDoS, en supprimant des flux réseau spécifiques qui peuvent provenir de l’extérieur du réseau OVHcloud.
 
 **Ce guide vous explique comment configurer le Edge Network Firewall pour vos services.**
 
@@ -31,7 +31,7 @@ Pour protéger les services à la clientèle exposés sur les adresses IP publiq
 
 ## En pratique
 
-Le Edge Network Firewall réduit l’exposition aux attaques DDoS réseau en permettant aux utilisateurs de répliquer certaines règles de pare-feu du serveur à la périphérie du réseau OVHcloud. Cela bloque les attaques entrantes au plus près de leur source, réduisant ainsi le risque de saturation des ressources du serveur ou des connexions rack en cas d’attaque majeure.
+Le Edge Network Firewall réduit l’exposition aux attaques DDoS réseau en permettant aux utilisateurs de répliquer certaines règles de pare-feu du serveur à la périphérie du réseau OVHcloud. Cela bloque les attaques entrantes au plus près de leur source, réduisant ainsi le risque de surcharge des ressources du serveur en cas d'attaque importante.
 
 ### Activer le Edge Network Firewall
 
@@ -149,7 +149,7 @@ Notre infrastructure anti-DDoS (VAC) dispose de deux modes de fonctionnement : *
 
 - **La mitigation automatique** est la valeur par défaut : toutes les adresses IP OVHcloud sont en mitigation automatique et il s'agit en général du meilleur choix pour vos services. Si un trafic malveillant est détecté, le Scrubbing Center est actif. Cet état est alors indiqué par un statut « Forcé » pour une adresse IP donnée. Le Edge Network Firewall est également actif. La situation revient à la normale lorsque l’attaque est mitigée et qu’aucune autre activité suspecte n’est observée.
 
-- **Le mode mitigation permanente** peut être activé ou désactivé depuis votre espace client. Avec la mitigation permanente, vous appliquez de manière permanente le premier niveau de filtrage afin que tout le trafic passe en permanence par le système de mitigation avant d’atteindre le serveur. Il est déconseillé d'activer cette option sur de plus longues périodes, à moins que vous ne connaissiez une gigue (*jitter*) de latence, en raison du fait que le Scrubbing Center redirige le trafic trop fréquemment.
+- **Le mode mitigation permanente** peut être activé ou désactivé depuis votre espace client. Avec la mitigation permanente, vous appliquez de manière permanente le premier niveau de filtrage afin que tout le trafic passe en permanence par le système de mitigation avant d’atteindre le serveur. Il est déconseillé d'activer cette option sur de plus longues périodes, à moins que vous ne subissiez de la gigue (variation de la latence), en raison du fait que le Scrubbing Center redirige le trafic trop fréquemment.
 À noter que, contrairement au mode automatique, il n’y a **pas** d’augmentation du niveau de protection lorsque ce mode est activé.
 
 Pour l'activer, procédez comme suit :

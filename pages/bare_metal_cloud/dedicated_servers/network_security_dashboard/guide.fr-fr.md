@@ -1,12 +1,12 @@
 ---
 title: "Monitoring des attaques DDoS avec le Network Security Dashboard"
-excerpt: "Apprenez à naviguer dans le tableau de bord de la sécurité réseau"
+excerpt: "Apprenez à naviguer dans le Network Security Dashboard"
 updated: 2023-12-11
 ---
 
 ## Objectif
 
-Ce guide a pour but de présenter le tableau de bord de la sécurité réseau (*Network Security Dashboard*), un outil d'aperçu de ce qui se passe lorsque une activité réseau malveillante est détectée et que l'infrastructure de protection DDoS est impliquée. Vous y trouverez des détails sur ce qui a déclenché la mise en place de protections supplémentaires pour maintenir vos services opérationnels. Des graphiques de trafic correspondant aux périodes d’activité du centre de nettoyage (*Scrubbing Center*) y sont également disponibles afin de mieux visualiser la situation.
+Ce guide a pour but de présenter le tableau de bord de sécurité réseau (*Network Security Dashboard*), un outil d'aperçu de ce qui se passe lorsqu'une activité réseau malveillante est détectée et que l'infrastructure de protection DDoS est impliquée. Vous y trouverez des détails sur ce qui a déclenché la mise en place de protections supplémentaires pour maintenir vos services opérationnels. Des graphiques de trafic correspondant aux périodes d’activité du centre de nettoyage (*Scrubbing Center*) y sont également disponibles afin de mieux visualiser la situation.
 
 ## Prérequis
 
@@ -66,11 +66,11 @@ Les colonnes correspondent à la disponibilité et aux états de l'anti-DDoS Scr
 
 ### Network Security Dashboard
 
-Dans l'espace client OVHcloud, l'accès au tableau de bord peut se faire soit à partir de la page qui liste les IP (pour une IP particulière), soit en vous rendant directement dans le Network Security Dashboard dans le menu `Network`{.action}.
+Dans l'espace client OVHcloud, l'accès au Network Security Dashboard peut se faire soit à partir de la page qui liste les IP (pour une IP particulière), soit en vous rendant directement dans le Network Security Dashboard dans le menu `Network`{.action}.
 
 Cliquez sur l'onglet `Bare Metal Cloud`{.action} puis sur `Network`{.action} et sélectionnez `Network Security Dashboard`{.action}.
 
-Vous pouvez également, à partir de la liste des adresses IP (cette option n'est disponible que lorsque le Centre de nettoyage est en action), accéder à l'onglet `Bare Metal Cloud`{.action} puis ous rendre dans `Network`{.action} et cliquer sur `Adresses IP publiques`{.action}. Cliquez sur le bouton `...`{.action} et accédez à `Network Security Dashboard`{.action}.
+Vous pouvez également, à partir de la liste des adresses IP (cette option n'est disponible que lorsque le Centre de nettoyage est en action), accéder à l'onglet `Bare Metal Cloud`{.action} puis vous rendre dans `Network`{.action} et cliquer sur `Adresses IP publiques`{.action}. Cliquez sur le bouton `...`{.action} et accédez à `Network Security Dashboard`{.action}.
 
 Dans l'onglet **Journal du Centre de nettoyage**, vous pouvez récupérer toutes les informations sur les attaques détectées dans le passé (ou en cours).
 
@@ -100,7 +100,7 @@ Il présente le trafic malveillant qui a été supprimé (**en rouge**) et le tr
 
 En fonction de la nature de l’attaque, différentes actions peuvent être entreprises pour éliminer au mieux la menace. Dans les deux cas, il est préférable de mitiger les attaques au plus près de leur origine :
 
-- En cas d’attaque arrivant sur le réseau d’OVHcloud (**externe**), le trafic est redirigé vers les centres de nettoyage anti-DDoS pour être nettoyé (il est ainsi visible sur le tableau de bord).
+- En cas d’attaque arrivant sur le réseau d’OVHcloud (**externe**), le trafic est redirigé vers les centres de nettoyage anti-DDoS pour être nettoyé (il est ainsi visible sur le Network Security Dashboard).
 - Les attaques provenant de l’intérieur du réseau OVHcloud (**internes**) sont gérées par nos équipes de sécurité. La mitigation se concentre sur le blocage de l'origine de l'attaque et ne sera pas signalée par les systèmes d'infrastructure anti-DDoS.
 
 ### Je ne vois aucune donnée dans les journaux du centre de nettoyage, est-ce normal ?
@@ -113,7 +113,7 @@ Ces données ne sont disponibles que pour les adresses IP publiques lors des év
 
 ### Je ne peux pas afficher le graphique de trafic pour certains périodes dans les logs du centre de nettoyage
 
-Les données du tableau de bord ne sont disponibles que pour les deux dernières semaines, tandis que les entrées du journal peuvent être examinées pour l'année écoulée.
+Les données du Network Security Dashboard ne sont disponibles que pour les deux dernières semaines, tandis que les entrées du journal peuvent être examinées pour l'année écoulée.
 
 ### Je suis attaqué, comment protéger au mieux mon serveur ?
 

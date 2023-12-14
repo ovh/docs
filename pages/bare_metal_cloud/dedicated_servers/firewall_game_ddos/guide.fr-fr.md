@@ -1,6 +1,6 @@
 ---
 title: "Protéger un serveur GAME avec le firewall applicatif"
-excerpt: "Découvre comment configurer le GAME DDoS firewall"
+excerpt: "Découvrez comment configurer le GAME DDoS firewall"
 updated: 2023-12-11
 ---
 
@@ -32,7 +32,7 @@ Nos serveurs dédiés Game incluent une protection anti-DDoS spécialement conç
 
 ### Introduction
 
-L’infrastructure anti-DDoS, associée au Edge Network Firewall, protège le réseau des menaces courantes (principalement axées sur les couches ISO OSI 3 et 4). D’autre part, l’hébergement d’applications de jeu peut représenter un défi en termes de sécurité réseau. La protection anti-DDoS Game est là pour vous aider : il s’agit d’un pare-feu de couche 7 (application) qui se concentre sur la protection de protocoles de jeu spécifiques (utilisant généralement l’UDP). Ses principaux avantages sont les suivants :
+L’infrastructure anti-DDoS, associée au Edge Network Firewall, protège le réseau des menaces courantes (principalement basées sur les couches réseau et transport du modèle TCP/IP). D’autre part, l’hébergement d’applications de jeu peut représenter un défi en termes de sécurité réseau. La protection anti-DDoS Game est là pour vous aider : il s’agit d’un pare-feu de couche 7 (application) qui se concentre sur la protection de protocoles de jeu spécifiques (utilisant généralement l’UDP). Ses principaux avantages sont les suivants :
 
 - **Distance** : Nous savons que la latence et sa stabilité sont cruciales pour le gaming. Ces solutions sont mises au plus près des serveurs et fonctionnent avec un matériel dédié.
 - **Bidirectionnel** : La plateforme analyse le trafic entrant et sortant pour une meilleure compréhension de la situation de chaque joueur.
