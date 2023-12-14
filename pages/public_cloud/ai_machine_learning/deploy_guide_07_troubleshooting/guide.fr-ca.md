@@ -1,7 +1,7 @@
 ---
 title: AI Deploy - Dépannage (EN)
 excerpt: Principales erreurs et comment dépanner vos apps AI Deploy
-updated: 2023-12-05
+updated: 2023-12-14
 ---
 
 ## Objective
@@ -160,7 +160,11 @@ If you selected a restricted access, don't forget to [generate an applicative to
 By design, AI Deploy links your app to one HTTP endpoint and one port (default is 8080). If you need more than one port, best practice is to split your deployment in multiple apps.
 If you cannot afford it, you can tweak your HTTP endpoint as follows: `https://<unique_id>-<specific_port>.app.<region>.ai.cloud.ovh.net`.
 
-For example, just add `-8000` after your unique ID and you will be routed to this specific port.
+For example, your default app URL, starting with the app's ID and which accesses the default port is `https://00000000-0000-0000-0000-000000000000.gra.gra.ai.cloud.ovh.net`. If you want to access the port `9000`, you will have to append the port number to your app's URL, after the app's unique ID: `https://00000000-0000-0000-0000-000000000000-9000.app.gra.ai.cloud.ovh.net`
+
+This way, you will be routed to this specific port, even after the app has been launched.
+
+You can also use gRPC on your AI Deploy apps. To do this, specify a port when you launch your app with the `ovhai` CLI, by using the `--grpc-port <GRPC_PORT>` attribute. You will then get your `gRPC Address` in your task info.
 
 ### Billing
 
