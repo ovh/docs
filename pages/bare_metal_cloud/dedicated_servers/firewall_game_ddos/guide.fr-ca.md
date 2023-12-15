@@ -9,7 +9,7 @@ updated: 2023-12-19
 L’objectif de ce guide est de vous aider à mieux comprendre notre protection Game DDoS (Game firewall) et de vous fournir des instructions sur la façon de configurer une protection efficace pour les serveurs qui la prennent en charge.
 
 > [!primary]
-> Retrouvez plus d’informations sur notre protection anti-DDoS Game sur <https://www.ovhcloud.com/fr/security/game-ddos-protection/>.
+> Retrouvez plus d’informations sur notre protection anti-DDoS Game sur <https://www.ovhcloud.com/fr-ca/security/game-ddos-protection/>.
 >
 
 Nos serveurs dédiés Game incluent une protection anti-DDoS spécialement conçue pour sécuriser les applications de jeu contre les cyberattaques, assurant ainsi stabilité et accessibilité aux joueurs. Cette solution de protection dédiée est à la fois robuste et facile à utiliser, vous permettant de vous concentrer sur le développement de votre entreprise sans vous laisser distraire par la lutte contre la cybercriminalité.
@@ -20,8 +20,8 @@ Nos serveurs dédiés Game incluent une protection anti-DDoS spécialement conç
 
 ## Prérequis
 
-- Un [serveur dédié OVHcloud **Game**](https://www.ovhcloud.com/fr/bare-metal/prices/#filterType=range_element&filterValue=game)
-- Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
+- Un [serveur dédié OVHcloud **Game**](https://www.ovhcloud.com/fr-ca/bare-metal/prices/#filterType=range_element&filterValue=game)
+- Être connecté à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc)
 
 > [!warning]
 > Cette fonctionnalité peut être indisponible ou limitée sur les serveurs de la [**gamme Eco**](https://eco.ovhcloud.com/fr/about/).
@@ -63,7 +63,7 @@ Pour configurer les règles de gaming dans le firewall Game, vous devez d'abord 
 |:--:|
 | Sur l'écran suivant, cliquez sur le bouton `Ajouter une règle`{.action} pour ajouter une règle au firewall Game |
 
-Vous pouvez mettre en place jusqu’à **30 règles par IP** pour protéger un ou plusieurs jeux hébergés sur votre serveur derrière le Firewall Game. La liste des profils de jeux pris en charge peut être consultée [ici](https://www.ovhcloud.com/fr/security/game-ddos-protection/) :
+Vous pouvez mettre en place jusqu’à **30 règles par IP** pour protéger un ou plusieurs jeux hébergés sur votre serveur derrière le Firewall Game. La liste des profils de jeux pris en charge peut être consultée [ici](https://www.ovhcloud.com/fr-ca/security/game-ddos-protection/) :
 
 > [!primary]
 > Par défaut, le firewall Game est préconfiguré avec certaines règles qu’OVHcloud a déterminées pour fonctionner avec les jeux les plus populaires. Cependant, pour les clients disposant d’un serveur dédié Game, nous vous permettons d’aller plus loin et de configurer également des règles pour les ports.
@@ -126,6 +126,6 @@ Pour cela, vous devrez nous partager un extrait du trafic réseau correspondant 
 
 ## Aller plus loin
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr-ca/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Échangez avec notre communauté d’utilisateurs sur <https://community.ovh.com/>.

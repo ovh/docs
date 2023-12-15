@@ -10,7 +10,7 @@ Ce guide a pour but de présenter le tableau de bord de sécurité réseau (*Net
 
 ## Prérequis
 
-- Un service OVHcloud exposé sur une adresse IP publique dédiée ([Serveur dédié](https://www.ovhcloud.com/fr/bare-metal/), [VPS](https://www.ovhcloud.com/fr/vps/), [Instance Public Cloud](https://www.ovhcloud.com/fr/public-cloud/), [Hosted Private Cloud](https://www.ovhcloud.com/fr/enterprise/products/hosted-private-cloud/), [Additional IP](https://www.ovhcloud.com/fr/network/additional-ip/), etc.)
+- Un service OVHcloud exposé sur une adresse IP publique dédiée ([Serveur dédié](https://www.ovhcloud.com/fr-ca/bare-metal/), [VPS](https://www.ovhcloud.com/fr-ca/vps/), [Instance Public Cloud](https://www.ovhcloud.com/fr-ca/public-cloud/), [Hosted Private Cloud](https://www.ovhcloud.com/fr-ca/enterprise/products/hosted-private-cloud/), [Additional IP](https://www.ovhcloud.com/fr-ca/network/additional-ip/), etc.)
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=FR)
 
 ## En pratique
@@ -31,7 +31,7 @@ Lors d'une attaque, une action de mitigation active sera indiquée par une icôn
 
 > [!primary]
 >
-> Découvrez comment la mitigation des attaques DDoS est réalisée chez OVHcloud [ici](https://www.ovhcloud.com/fr/security/anti-ddos/ddos-attack-mitigation/).
+> Découvrez comment la mitigation des attaques DDoS est réalisée chez OVHcloud [ici](https://www.ovhcloud.com/fr-ca/security/anti-ddos/ddos-attack-mitigation/).
 >
 
 > [!warning]
@@ -57,7 +57,7 @@ Les colonnes correspondent à la disponibilité et aux états de l'anti-DDoS Scr
     - **Désactivé** - le pare-feu est **désactivé** pour cette IP.
     - **(aucun état)** - la configuration du pare-feu n'est pas créée pour cette IP. Cette configuration peut être créée en utilisant le bouton `...`{.action} puis en cliquant sur `Créer un pare-feu`{.action}.
 
-- L’état du **firewall GAME** (disponible uniquement pour les serveurs dédiés [OVHcloud **Game**](https://www.ovhcloud.com/fr/bare-metal/prices/#filterType=range_element&filterValue=game)) peut être :
+- L’état du **firewall GAME** (disponible uniquement pour les serveurs dédiés [OVHcloud **Game**](https://www.ovhcloud.com/fr-ca/bare-metal/prices/#filterType=range_element&filterValue=game)) peut être :
     - **Activé** - La protection anti-DDoS GAME est **activée** sur cette IP.
     - **Désactivé** - Le Firewall GAME est **disponible** mais **désactivé** sur cette IP.
     - **(aucun statut)** - Le Firewall GAME n'est pas disponible pour cette IP. Cela signifie que l'IP répertoriée n'est pas configurée sur la gamme de produits prise en charge.
