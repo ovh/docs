@@ -1,7 +1,7 @@
 ---
 title: "Creare un database su un hosting Web"
 excerpt: "Questa guida ti mostra come creare un database sul tuo hosting Web OVHcloud"
-updated: 2023-12-04
+updated: 2023-12-15
 ---
 
 > [!primary]
@@ -17,7 +17,7 @@ Un database (BDD) è utilizzato per archiviare elementi dinamici (dati di connes
 ## Prerequisiti
 
 - Disporre di una soluzione di [hosting Web OVHcloud](https://www.ovhcloud.com/it/web-hosting/) che includa almeno un database.
-- Disporre di un database disponibile in "creazione" tra quelli inclusi nel piano di hosting Web.
+- Disporre di un database disponibile in "creazione" tra quelli inclusi nel piano di hosting Web. Se necessario, è possibile aggiungere database [Start SQL](https://www.ovhcloud.com/it/web-hosting/options/start-sql/) al proprio hosting Web.
 - Avere accesso allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) con le [autorizzazioni necessarie](/pages/account_and_service_management/account_information/managing_contacts) per gestire l’hosting Web.
 
 ## Procedura
@@ -28,7 +28,19 @@ Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanag
 
 La tabella di questa sezione contiene tutti i database creati con il tuo hosting Web.
 
-![databasecreation](images/database-creation-step1.png){.thumbnail}
+![databasecreation](images/manager-webcloud-webhosting-databases-dashboard.png){.thumbnail}
+
+Nella tabella, i database possono avere diversi tipi:
+
+- **Inclusa**: indica che il database è incluso nella soluzione di hosting Web. Non comporta costi aggiuntivi.</br></br>
+- **Opzionale**: indica che il database è stato sottoscritto in aggiunta ai database inclusi con il tuo hosting Web. La disponibilità di questo database aggiuntivo sull’hosting Web è fatturata a un costo aggiuntivo.</br></br>
+- **Incluso - ritirata dalla vendita**: indica che il database incluso verrà presto ritirato dalla vendita e diventerà obsoleto. </br>Prima che il database diventi obsoleto, ti consigliamo di **recuperarne il contenuto per inserirlo in un nuovo database più recente (il cui completamento non è ancora stato programmato).</br></br>
+- **Opzionale - ritirata dalla vendita**: indica che il database aggiunto al tuo hosting Web sarà eliminato e diventerà obsoleto. </br>Prima che il database diventi obsoleto, ti consigliamo di **recuperarne il contenuto per inserirlo in un database nuovo e più recente (la cui data di fine vendita non è ancora stata programmata).
+
+> [!success]
+>
+> Per duplicare rapidamente il contenuto di un database "**Incluso - ritirata dalla vendita**" o "**Opzionale - ritirata dalla vendita**" in un nuovo database la cui obsolescenza non è ancora stata programmata, consulta la nostra guida "[Duplicare il contenuto di un database OVHcloud in un altro](/pages/web_cloud/web_hosting/copy_database)".
+>
 
 ### Step 2 - Crea il database
 

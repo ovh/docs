@@ -24,7 +24,7 @@ Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?actio
 
 Le tableau de cette section contient toutes les bases de données créées avec votre hébergement web.
 
-![databasecreation](images/database-creation-step1.png){.thumbnail}
+![databasecreation](images/manager-webcloud-webhosting-databases-dashboard.png){.thumbnail}
 
 Dans le tableau, les bases de données peuvent disposer de plusieurs statuts différents :
 

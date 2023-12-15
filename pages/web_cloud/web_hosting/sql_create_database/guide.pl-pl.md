@@ -1,7 +1,7 @@
 ---
 title: "Tworzenie bazy danych na hostingu"
 excerpt: "Dowiedz się, jak utworzyć bazę danych na hostingu OVHcloud"
-updated: 2023-12-04
+updated: 2023-12-15
 ---
 
 > [!primary]
@@ -17,7 +17,7 @@ Baza danych (bazy danych) służy do przechowywania elementów dynamicznych (dan
 ## Wymagania początkowe
 
 - Posiadanie hostingu [OVHcloud](https://www.ovhcloud.com/pl/web-hosting/) zawierającego co najmniej jedną bazę danych.
-- Posiadanie bazy danych dostępnej w opcji "create", spośród baz danych zawartych w Twojej usłudze hostingu.
+- Posiadanie "utworzonej" bazy danych zawierającej dane zawarte w Twojej usłudze hostingu. W razie potrzeby możesz dodać bazy danych [Start SQL](https://www.ovhcloud.com/pl/web-hosting/options/start-sql/) do Twojego hostingu.
 - Dostęp do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) z [niezbędnymi uprawnieniami](/pages/account_and_service_management/account_information/managing_contacts) w celu zarządzania hostingiem.
 
 ## W praktyce
@@ -28,7 +28,19 @@ Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotom
 
 Tabela w tej sekcji zawiera wszystkie bazy danych utworzone w ramach Twojego hostingu.
 
-![databasecreation](images/database-creation-step1.png){.thumbnail}
+![databasecreation](images/manager-webcloud-webhosting-databases-dashboard.png){.thumbnail}
+
+W tabeli bazy danych mogą mieć kilka różnych Opcje:
+
+- **W pakiecie**: wskazuje, że baza danych jest zawarta w Twojej usłudze hostingu. Nie powoduje to dodatkowych kosztów.</br></br>
+- **Opcjonalnie**: wskazuje, że baza danych została wykupiona jako uzupełnienie baz danych zawartych w hostingu. Płacisz jedynie za dodatkową bazę danych na Twoim hostingu.</br></br>
+- **W pakiecie - wycofane ze sprzedaży**: wskazuje, że baza danych zawarta w ofercie zostanie wkrótce wycofana ze sprzedaży i stanie się nieaktualna. </br>Zalecamy, aby baza danych stała się przestarzała **przed**, pobrać jej zawartość i przenieść ją do nowej, nowszej bazy danych (której zakończenie sprzedaży nie jest jeszcze zaplanowane).</br></br>
+- **Opcjonalnie - wycofane ze sprzedaży**: wskazuje, że baza danych wykupiona dodatkowo na Twoim hostingu zostanie wkrótce usunięta ze sprzedaży i stanie się nieaktualna. </br>Zalecamy, aby baza danych stała się przestarzała **przed**, odzyskać jej zawartość i przenieść ją do nowej, nowszej bazy danych (której zakończenie sprzedaży nie jest jeszcze zaplanowane).
+
+> [!success]
+>
+> Aby szybko zduplikować zawartość bazy danych "**W pakiecie - wycofane ze sprzedaży**" lub "**Opcjonalnie - wycofane ze sprzedaży**" w nowej bazie danych, której starzenie się nie zostało jeszcze zaprogramowane, zapoznaj się z naszym przewodnikiem "[Duplikuj zawartość bazy danych OVHcloud w innej](/pages/web_cloud/web_hosting/copy_database)".
+>
 
 ### Etap 2 - Tworzenie bazy danych
 
