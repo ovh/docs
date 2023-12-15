@@ -1,5 +1,5 @@
 ---
-title: "Sharing responsibility for SAP on OVHcloud solutions"
+title: "Shared responsibility for SAP on OVHcloud solutions"
 excerpt: "Shared responsibility between OVHcloud and the customer for using SAP on OVHcloud solutions"
 updated: 2023-12-14
 ---
