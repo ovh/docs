@@ -192,7 +192,7 @@ Depuis Roundcube, cliquez sur `Paramètres`{.action} dans la barre supérieure, 
 
 > [!alert]
 >
-> Compléter la case **Courriel** par une adresse e-mail différente de celle sur laquelle vous êtes connecté est considérée comme une usurpation d'identité électronique (*spoofing*). L'adresse IP utilisée pour l'envoi risque d'être « bannie » et/ou considérée comme « SPAM » auprès de vos destinataires.
+> Compléter la case **Courriel** par une adresse e-mail différente de celle sur laquelle vous êtes connecté est considéré comme une usurpation d'identité électronique (*spoofing*). L'adresse IP utilisée pour l'envoi risque d'être « bannie » et/ou considérée comme « SPAM » auprès de vos destinataires.
 
 #### Ajouter une signature
 
