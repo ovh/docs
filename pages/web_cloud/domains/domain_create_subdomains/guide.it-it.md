@@ -10,9 +10,9 @@ updated: 2023-12-15
 
 ## Obiettivo <a name="goal"></a>
 
-Internet è composto da *server* e da *dispositivi* che interagiscono tra loro attraverso una rete globale. Quando questi *server* e i relativi *dispositivi* sono connessi alla rete Internet, viene loro assegnato un *indirizzo IP pubblico* (equivalente a un indirizzo postale). Questo *indirizzo IP* permette di raggiungere in remoto un server o un dispositivo. In questo modo, un utente è in grado di consultare un sito Web digitando questo *indirizzo IP* grazie al browser Internet installato sul suo computer.
+Internet è composto da server e da dispositivi che interagiscono tra loro attraverso una rete globale. Quando questi server e i relativi dispositivi sono connessi alla rete Internet, viene loro assegnato un **indirizzo IP pubblico** (equivalente a un indirizzo postale). Questo *indirizzo IP* permette di raggiungere in remoto un server o un dispositivo. In questo modo, un utente è in grado di consultare un sito Web digitando questo indirizzo IP grazie al browser Internet installato sul suo computer.
 
-I **domini** sono stati introdotti per facilitare l'accesso a un sito Web per gli utenti della rete Internet. In effetti, è più facile ricordare un nome composto da una stringa di caratteri scelti (esempio: ovhcloud.com), piuttosto che da una serie di cifre che compone un *indirizzo IP* (esempio: 54.39.46.56).
+I **domini** sono stati introdotti per facilitare l'accesso a un sito Web per gli utenti della rete Internet. In effetti, è più facile ricordare un nome composto da una stringa di caratteri scelti (esempio: ovhcloud.com), piuttosto che da una serie di cifre che compone un indirizzo IP (esempio: 54.39.46.56).
 
 Un **dominio** è composto da diversi livelli. Questi livelli sono generalmente separati da un `.` (ad eccezione di alcune **estensioni** del *primo livello* come *.co.uk*, *.gouv.fr* e *.notaires.fr*):
 
@@ -26,7 +26,7 @@ Un **dominio** è composto da diversi livelli. Questi livelli sono generalmente 
 
 - **S**econd **L**evel **D**omain (**SLD**): rappresenta i domini di *secondo livello*. Le chiamiamo più comunemente **label**. Al momento dell'ordine di un dominio, è possibile definire liberamente il **label** (a condizione che non sia già stato registrato da un altro utente sulla stessa estensione e nel limite di 63 caratteri). *ovhcloud*, ad esempio, corrisponde al label del dominio *ovhcloud.com*.
 
-- Third Level Domain (**subdomain**): è a partire da questo terzo livello che si parla di *sottodominio*. Descriveremo in dettaglio la definizione di servizio e ti spiegheremo come utilizzarlo con i tuoi diversi servizi.
+- Third Level Domain (**subdomain**): è a partire da questo terzo livello che si parla di **sottodominio**. Descriveremo in dettaglio la definizione di servizio e ti spiegheremo come utilizzarlo con i tuoi diversi servizi.
 
 ![URL content](images/url-composition.png){.thumbnail}
   
