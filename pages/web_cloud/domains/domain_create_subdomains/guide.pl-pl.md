@@ -120,9 +120,9 @@ Możesz na przykład dodać:
 >
 > Modyfikacja strefy DNS powiązanej z domeną spowoduje opóźnienie propagacji w przedziale od **4** do **24** godzin, co jest maksymalnym czasem propagacji.
 >
-> Ponadto, podobnie jak w przypadku nazwy domeny jako takiej, samo utworzenie rekordu DNS dla subdomeny zazwyczaj nie wystarczy, aby działała ona z *docelową* usługą, którą zdefiniowałeś dla niej w rekordzie DNS. 
+> Ponadto, podobnie jak w przypadku nazwy domeny jako takiej, samo utworzenie rekordu DNS dla subdomeny zazwyczaj nie wystarczy, aby działała ona z "docelową" usługą, którą zdefiniowałeś dla niej w rekordzie DNS. 
 >
-> Ze względów bezpieczeństwa musisz również autoryzować subdomenę, aby miała dostęp do *docelowej* usługi (hosting www, e-mail, itp.).
+> Ze względów bezpieczeństwa musisz również autoryzować subdomenę, aby miała dostęp do "docelowej" usługi (hosting www, e-mail, itp.).
 >
 
 W dalszej części dowiesz się, jak autoryzować subdomenę, aby miała dostęp do różnych usług "Web cloud" (hosting www, serwer Exchange, itp.) oferowanych przez OVHcloud.
@@ -148,7 +148,7 @@ Więcej informacji na temat konfigurowania domeny lub subdomeny na hostingu znaj
 
 > [!warning]
 >
-> Dodanie domeny lub subdomeny w opcji MultiSite może wymagać uruchomienia *tokena* do zatwierdzenia. W przypadku subdomeny ten sam token nie jest brany pod uwagę i musi zostać dodany nie dla subdomeny, ale dla nazwy domeny. W tym przypadku dodaj dodatkowo token w postaci rekordu DNS typu TXT dla nazwy domeny w aktywnej strefie DNS Twojej domeny.
+> Dodanie domeny lub subdomeny w opcji MultiSite może wymagać uruchomienia token do zatwierdzenia. W przypadku subdomeny ten sam token nie jest brany pod uwagę i musi zostać dodany nie dla subdomeny, ale dla nazwy domeny. W tym przypadku dodaj dodatkowo token w postaci rekordu DNS typu TXT dla nazwy domeny w aktywnej strefie DNS Twojej domeny.
 >
 
 #### Przypadek 2 - Tworzenie kont e-mail Exchange z subdomeną
