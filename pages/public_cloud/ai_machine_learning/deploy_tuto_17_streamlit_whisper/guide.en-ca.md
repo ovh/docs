@@ -162,7 +162,7 @@ If you have configured your volumes correctly with the right permissions, and gi
 ```
 
 > [!primary]
-> **Why is nothing is returned when I run the command?**
+> **Why is nothing returned when I run the command?**
 >
 > If nothing is returned when you list your bucket objects, do not hesitate to check your job logs by running `ovhai job logs <job_id>` to see if the model has been downloaded well.
 >
