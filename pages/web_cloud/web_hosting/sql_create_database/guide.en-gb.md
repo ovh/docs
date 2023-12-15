@@ -1,7 +1,7 @@
 ---
 title: "Creating a database on your web hosting plan"
 excerpt: "Find out how to create a database on your OVHcloud web hosting plan"
-updated: 2023-12-08
+updated: 2023-12-15
 ---
 
 ## Objective

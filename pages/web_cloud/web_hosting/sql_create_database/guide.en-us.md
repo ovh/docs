@@ -1,7 +1,7 @@
 ---
 title: "Creating a database on your web hosting plan"
 excerpt: "Find out how to create a database on your OVHcloud web hosting plan"
-updated: 2023-12-08
+updated: 2023-12-15
 ---
 
 ## Objective
@@ -12,9 +12,9 @@ A database is used to store dynamic elements (connection data, user data, displa
 
 ## Requirements
 
-- A [OVHcloud web hosting plan](https://www.ovhcloud.com/en/web-hosting/) that includes at least one database.
-- You need to have a database available to “create” from the databases included in your Web Hosting plan. If required, you can add [Start SQL](https://www.ovhcloud.com/en/web-hosting/options/start-sql/) databases to your web hosting plan.
-- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) with the [necessary permissions](/pages/account_and_service_management/account_information/managing_contacts) to manage your web hosting plan
+- You have an [OVHcloud web hosting plan](https://www.ovhcloud.com/en/web-hosting/) that includes at least one database.
+- You have a database available for creation from the databases included in your web hosting plan. If required, you can add [Start SQL](https://www.ovhcloud.com/en/web-hosting/options/start-sql/) databases to your web hosting plan.
+- You have access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) with the [necessary permissions](/pages/account_and_service_management/account_information/managing_contacts) to manage your web hosting plan.
 
 ## Instructions
 
@@ -28,10 +28,10 @@ The table in this section contains all of the databases created with your web ho
 
 Databases in the table can have several different types:
 
-- **Included** : Indicates that the database is included in your web hosting plan. There is no additional cost.</br></br>
-- **Optional** : Indicates that the database has been subscribed to in addition to the databases included with your web hosting plan. You pay an additional fee to have this additional database on your web hosting plan.</br></br>
-- **Included - Discontinued**: Indicates that the included database will soon be discontinued and become obsolete. </br>We recommend that you **before** the database becomes obsolete, you retrieve its contents and place it in a newer database (which has not yet been scheduled for end of sales).</br></br>
-- **Optional - Discontinued**: Indicates that the database you have subscribed to as an add-on to your web hosting plan will soon be removed from sale and become obsolete. </br>We recommend that you, **before** the database becomes obsolete, retrieve its contents and place it in a newer database (which is not scheduled to end).
+- **Included**: Indicates that the database is included in your web hosting plan. There is no additional cost.</br></br>
+- **Optional**: Indicates that the database has been subscribed to in addition to the databases included with your web hosting plan. You pay an additional fee to have this additional database on your web hosting plan.</br></br>
+- **Included - Discontinued**: Indicates that the included database will soon be discontinued and become obsolete. </br>We recommend that you retrieve its contents and place it in a newer database (which has not yet been scheduled for end of sales) **before** the database becomes obsolete.</br></br>
+- **Optional - Discontinued**: Indicates that the database you have subscribed to as an add-on to your web hosting plan will soon be removed from sale and become obsolete. </br>We recommend that you retrieve its contents and place it in a newer database (which is not scheduled to end) **before** the database becomes obsolete.
 
 > [!success]
 >

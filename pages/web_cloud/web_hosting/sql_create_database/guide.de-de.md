@@ -1,7 +1,7 @@
 ---
 title: "Eine Datenbank auf Ihrem Webhosting erstellen"
 excerpt: "Erfahren Sie hier, wie Sie in OVHcloud Webhostings enthaltene Datenbanken verwenden"
-updated: 2023-12-08
+updated: 2023-12-15
 ---
 
 > [!primary]
