@@ -2,6 +2,7 @@
 title: 'Attivare la doppia autenticazione con chiave di sicurezza'
 excerpt: 'Come proteggere il tuo Spazio Cliente OVHcloud attivando la doppia autenticazione con chiave di sicurezza U2F'
 hidden: true
+flag: unlisted
 updated: 2022-07-08
 ---
 

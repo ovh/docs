@@ -2,6 +2,7 @@
 title: 'Attivare la doppia autenticazione tramite OTP'
 excerpt: 'Come rendere sicuro il tuo Spazio Cliente OVHcloud attivando la doppia autenticazione tramite applicazione OTP'
 hidden: true
+flag: hidden
 updated: 2020-04-16
 ---
 

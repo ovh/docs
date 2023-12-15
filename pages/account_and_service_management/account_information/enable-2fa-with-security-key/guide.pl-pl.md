@@ -2,6 +2,7 @@
 title: 'Aktywacja weryfikacji dwuetapowej za pomocą klucza sprzętowego'
 excerpt: 'Dowiedz się, jak zabezpieczyć swój panel klienta OVHcloud, aktywując weryfikację dwuetapową za pomocą klucza sprzętowego U2F'
 hidden: true
+flag: unlisted
 updated: 2022-07-08
 ---
 
