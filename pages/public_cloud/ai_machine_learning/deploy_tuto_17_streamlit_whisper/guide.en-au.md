@@ -27,8 +27,8 @@ Unlike a locally hosted application, using AI Deploy offers extremely fast infer
 
 To build and deploy your Whisper app, you need:
 
-- Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
-- An AI Deploy Project created inside a [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account
+- Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au)
+- An AI Deploy Project created inside a [Public Cloud project](https://www.ovhcloud.com/en-au/public-cloud/) in your OVHcloud account
 - A [user for AI Deploy](/pages/public_cloud/ai_machine_learning/gi_01_manage_users)
 - [The OVHcloud AI CLI](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli) installed on your local computer
 - [Docker](https://www.docker.com/get-started) installed on your local computer, **or** access to a Debian Docker Instance, which is available on the [Public Cloud](https://www.ovh.com/manager/public-cloud/)
@@ -73,7 +73,7 @@ model = whisper.load_model(model_id, download_root=model_path)
 
 As AI Deploy is based on Docker images, it is advisable to avoid directly downloading the model within the Python code and the Docker image for better manageability and flexibility. Moreover, you should not store the Whisper model directly in the Docker image because it will significantly increase the size of the Docker image.
 
-To do things more efficiently, it is better to save the model in a remote storage, like the [OVHcloud Object Storage](https://www.ovhcloud.com/en-gb/public-cloud/object-storage/). This storage will be linked to the AI Deploy app, which will allow the use of the Whisper model within the app. This way, you can easily access the model and make updates without messing with the Docker container itself. 
+To do things more efficiently, it is better to save the model in a remote storage, like the [OVHcloud Object Storage](https://www.ovhcloud.com/en-au/public-cloud/object-storage/). This storage will be linked to the AI Deploy app, which will allow the use of the Whisper model within the app. This way, you can easily access the model and make updates without messing with the Docker container itself. 
 
 #### Create a Object Storage bucket for you Whisper model
 
@@ -84,7 +84,7 @@ You can create your Object Storage bucket using either the UI (OVHcloud Control 
 >>
 >> If you do not feel comfortable with commands, this method may be more intuitive.
 >> 
->> First, go to the `Public Cloud`{.action} section of the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
+>> First, go to the `Public Cloud`{.action} section of the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com.au/&ovhSubsidiary=au).
 >>
 >> Then, select the `Object Storage`{.action} section (in the Storage category) and create a new object container by clicking `Storage`{.action} > `Object Storage`{.action} > `Create an object container`{.action}.
 >>
@@ -310,7 +310,7 @@ To continue your project, you can add many more features, such as the specificat
 
 You could also combine your transcripts with an LLM. Learn how to [Deploy LLaMA 2 on AI Deploy](/pages/public_cloud/ai_machine_learning/deploy_tuto_15_streamlit_chatbot_llama_v2).
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-au/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 ## Feedback
 
