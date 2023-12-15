@@ -1,7 +1,7 @@
 ---
 title: "Primeros pasos en un alojamiento web"
 excerpt: "Descubra cómo empezar con un alojamiento web"
-updated: 2023-12-12
+updated: 2023-12-15
 ---
 
 > [!primary]

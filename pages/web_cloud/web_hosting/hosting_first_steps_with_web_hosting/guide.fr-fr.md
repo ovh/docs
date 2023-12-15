@@ -1,7 +1,7 @@
 ---
 title: "Premiers pas avec un hébergement web"
 excerpt: "Découvrez comment bien débuter avec un hébergement web"
-updated: 2023-12-12
+updated: 2023-12-15
 ---
 
 ## Objectif

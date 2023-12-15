@@ -1,7 +1,7 @@
 ---
 title: "Pierwsze kroki z hostingiem OVHcloud"
 excerpt: "Dowiedz się, jak właściwie rozpocząć korzystanie z hostingu"
-updated: 2023-12-12
+updated: 2023-12-15
 ---
 
 > [!primary]

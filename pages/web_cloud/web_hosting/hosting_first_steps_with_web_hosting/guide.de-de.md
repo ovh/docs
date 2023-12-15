@@ -1,7 +1,7 @@
 ---
 title: "Erste Schritte mit Ihrem Webhosting"
 excerpt: "Erfahren Sie hier, wie Sie mit Ihrem Webhosting starten"
-updated: 2023-12-12
+updated: 2023-12-15
 ---
 
 > [!primary]

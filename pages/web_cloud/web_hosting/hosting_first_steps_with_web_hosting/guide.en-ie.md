@@ -1,21 +1,21 @@
 ---
 title: "Getting started with a Web Hosting plan"
 excerpt: "Find out how to build your website and to set up your email addresses"
-updated: 2023-12-12
+updated: 2023-12-15
 ---
 
 ## Objective
 
 This guide is designed for customers who have just purchased a Web Hosting plan to build and host a website. With your Web Hosting plan, you can set up a website using a turn-key solution (WordPress, PrestaShop), or develop your own platform on permanently available servers. This guide will help you get started with building your website. Thank you for choosing OVHcloud.
 
-**Find out how to build your website and to set up your email addresses.**
+**This guide explains how to build your website and to set up your email addresses.**
 
 ## Requirements
 
-- You must have an [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/){.external}.
-- You must have received an email confirming that your Web Hosting plan has been set up.
-- You must have a [domain name](https://www.ovhcloud.com/en-ie/domains/){.external} that can be used to access your website.
-- You must be logged in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}.
+- You have ordered an [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-ie/web-hosting/){.external}.
+- You have received an email confirming that your Web Hosting plan has been set up.
+- You have a [domain name](https://www.ovhcloud.com/en-ie/domains/){.external} that can be used to access your website.
+- You have access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie).
 
 ## Instructions
 
@@ -26,7 +26,7 @@ This guide is designed for customers who have just purchased a Web Hosting plan 
 
 ### Step 1: Define your project
 
-Are you looking to create a blog, or an online store? Do you want to share your passion, or boost your company’s online profile? Or do you want to migrate an existing website to OVH? To ensure that your project is a success, it is important to have a clear idea of your objective.
+Are you looking to create a blog, or an online store? Do you want to share your passion, or boost your company’s online profile? Or do you want to migrate an existing website to OVHcloud? To ensure that your project is a success, it is important to have a clear idea of your objective.
 
 With your OVHcloud Web Hosting plan, you can build a website from scratch, or migrate an existing one.
 
@@ -36,7 +36,7 @@ You can either build your website manually, using your own programming skills, o
 
 In the Control Panel, OVHcloud provides a tool that allows you to install a CMS in one click. The choices available are WordPress, PrestaShop, Drupal and Joomla!. Not sure which CMS to use? You can use this [comparison page](https://www.ovhcloud.com/en-ie/web-hosting/uc-cms-comparison/){.external} to help you decide which one is best for you. If the CMS you want to use is not offered by OVHcloud, you can install it manually on your Web Hosting plan.
 
-- **Migrating an existing website to OVH**
+- **Migrating an existing website to OVHcloud**
 
 Website migration can sometimes be quite tricky, particularly if you are migrating a website that is currently online and cannot experience service interruptions. As a result, this guide only includes a few of the steps you will need to take to migrate your services. Please refer to our guide: [Migrating your website and emails to OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh){.external}.
 
@@ -64,22 +64,22 @@ This solution uses OVHcloud modules, a tool you can use to install a CMS easily.
 
 To ensure that the OVHcloud module installation is successful, please check that:
 
-- the module’s installation directory is empty (which should be the case if you have not connected to your storage space)
-- you have already created a database in your Web Hosting plan.
+- The module’s installation directory is empty (which should be the case if you have not connected to your storage space yet).
+- You have already created a database in your Web Hosting plan.
 
 To create the database, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}, then go to the `Web Cloud`{.action} section. In the left-hand column, click `Hosting plans`{.action}, then select the name of the Web Hosting plan concerned.
 
 In the `Databases`{.action} tab, there are two possible scenarios: 
 
-- **You have at least one database available to "create" on your web hosting plan**: click on the `Actions`{.action} button above the table that pops up, then on the `Create a database`{.action} button.
+- **You have at least one database available to create on your web hosting plan**: Click on the `Actions`{.action} button above the table, then on the `Create a database`{.action} button.
 
 ![Access to 1-click modules](images/create-a-database-2.png){.thumbnail}
 
-- **You no longer have any databases available to "create" on your web hosting plan**: click on the `Actions`{.action} button above the table that pops up. You can (choose):
-    - Order a database [Start SQL](https://www.ovhcloud.com/en-ie/web-hosting/options/start-sql/) in addition to the databases included with your web hosting plan. To do this, click the `Actions`{.action} button above the table, then the `Order a database`{.action} button.
-    - Order a database server [Web Cloud Databases](https://www.ovhcloud.com/en-ie/web-cloud/databases/). To do this, click the `Actions`{.action} button above the table, then the `Order a Web Cloud Databases`{.action} button. Then refer to our guide on Getting started with your Web Cloud Databases (/pages/web_cloud/web_cloud_databases/starting_with_clouddb) to create a database on this solution.
+- **You no longer have any databases available to create on your web hosting plan**: Click on the `Actions`{.action} button above the table. You can choose to:
+    - Order a [Start SQL](https://www.ovhcloud.com/en-ie/web-hosting/options/start-sql/) database in addition to the databases included with your web hosting plan. To do this, click the `Actions`{.action} button above the table, then the `Order a database`{.action} button.
+    - Order a [Web Cloud Databases](https://www.ovhcloud.com/en-ie/web-cloud/databases/) database server. To do this, click the `Actions`{.action} button above the table, then the `Order a Web Cloud Databases`{.action} button. Then refer to our guide on [Getting started with your Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) to create a database with this solution.
 
-Once you have created a database, to install a 1-click module, go to the `1-click modules`{.action} tab and click `Add a module`{.action}. Select the CMS you want to install, check that the `Install in advanced mode`{.action}box is ticked, then click `Next`{.action}.
+Once you have created a database, to install a 1-click module, go to the `1-click modules`{.action} tab and click `Add a module`{.action}. Select the CMS you want to install, tick the option `Install in advanced mode`{.action}, then click `Next`{.action}.
 
 ![Access to 1-click modules](images/access-to-the-1-click-modules-section.png){.thumbnail}
 
@@ -93,7 +93,7 @@ This solution is useful if you want to create or migrate a website without using
 
 > [!success]
 >
-> If you have forgotten the password for accessing your FTP storage space, change it using our guide “[Changing the password for accessing your web hosting plan’s FTP storage space](/pages/web_cloud/web_hosting/ftp_change_password)”.
+> If you have forgotten the password for accessing your FTP storage space, change it using our guide “[Changing an FTP user password](/pages/web_cloud/web_hosting/ftp_change_password)”.
 >
 
 As every website is unique, there is no universal straightforward method for getting them online. However, in our documentation, we provide tips on the changes you will need to make to your OVHcloud Web Hosting plan: [How to get my website online](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online){.external}. Once you have set up your website in this way, follow the remaining steps below.
@@ -146,7 +146,7 @@ To access your OVHcloud domain’s DNS zone, go to the `Domains`{.action} sectio
     
 You must check your domain’s DNS zone with the service provider managing your domain name and edit the information, if required.
 
-- **Migrate your services (websites and email) to OVH**
+- **Migrate your services (websites and email) to OVHcloud**
 
 If you are migrating your services, changes to your DNS zone may make your website unavailable if they are not made at the right time. Please note that you must edit your domain’s DNS servers as the final part of the process.
 
