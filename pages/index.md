@@ -491,6 +491,7 @@
             + [Public Cloud & VPS - Image life cycle](public_cloud/compute/image-life-cycle)
             + [Public Cloud API Rate Limits](public_cloud/compute/api_rate_limits)
             + [Public Cloud Instances - Shared Responsibility](public_cloud/compute/responsibility-model-instances)
+            + [Public Cloud FAQ - Change of monthly billing method](public_cloud/compute/faq_change_of_monthly_billing_method)
         + [Project management](public-cloud-compute-project-management)
             + [Increasing Public Cloud quotas](public_cloud/compute/increasing_public_cloud_quota)
             + [Deleting a Public Cloud project](public_cloud/compute/delete_a_project)
