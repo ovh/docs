@@ -74,7 +74,7 @@ Wenn Sie beispielsweise über die Domain *example.com* verfügen, können Sie fo
 
 ### Subdomain erstellen
 
-Alle [Domainnamen](https://www.ovhcloud.com/de/domains/) benötigen eine **DNS-Zone**. Die DNS-Zone ist die Konfigurationsdatei eines Domainnamens, die sich aus **DNS-Einträgen** zusammensetzt. Das sind Datensätze, die dem Domainnamen verschiedene Dienste und Funktionen zuordnen.
+Alle [Domainnamen](https://www.ovhcloud.com/de/domains/) benötigen eine **DNS-Zone**. Die DNS-Zone ist die Konfigurationsdatei eines Domainnamens, die sich aus "DNS-Einträge" zusammensetzt. Das sind Datensätze, die dem Domainnamen verschiedene Dienste und Funktionen zuordnen.
 
 Weitere Informationen zu den DNS-Zonen finden Sie in unserer Anleitung „[OVHcloud DNS-Zone erstellen](/pages/web_cloud/domains/dns_zone_create)“ und „[OVHcloud DNS-Zone bearbeiten](/pages/web_cloud/domains/dns_zone_edit)“.
 
@@ -98,8 +98,8 @@ Es gibt zwei mögliche Szenarien:
 
 Wenn die für Ihre Domain deklarierten DNS-Server eine der folgenden Formen haben:
 
-- *dnsXX.ovh.net* und *nsXX.ovh.net* (wobei jedes „X“ eine Ziffer darstellt).
-- *dns200.anycast.me* und *ns200.anycast.me*.
+- `dnsXX.ovh.net` und `nsXX.ovh.net` (wobei jedes „X“ eine Ziffer darstellt).
+- `dns200.anycast.me` und `ns200.anycast.me`.
 
 Das bedeutet, dass die aktive DNS-Zone Ihrer Domain bei OVHcloud ist.
 
@@ -119,9 +119,9 @@ Sie können beispielsweise Folgendes hinzufügen:
 >
 > Die Änderung einer DNS-Zone, die mit einem Domainnamen verbunden ist, führt zu einer Propagationsverzögerung von **4** bis **24** Stunden, bis die Änderung wirksam wird.
 >
-> Wie bei einem Domainnamen als solchem reicht es in der Regel nicht aus, einen DNS-Eintrag für eine Subdomain zu erstellen, um diese mit dem *Ziel*-Dienst zu verwenden, den Sie im DNS-Eintrag definiert haben. 
+> Wie bei einem Domainnamen als solchem reicht es in der Regel nicht aus, einen DNS-Eintrag für eine Subdomain zu erstellen, um diese mit dem "Ziel"-Dienst zu verwenden, den Sie im DNS-Eintrag definiert haben. 
 >
-> Aus Sicherheitsgründen müssen Sie der Subdomain auch den Zugriff auf den *Ziel*-Dienst erlauben (Webhosting, E-Mail etc.).
+> Aus Sicherheitsgründen müssen Sie der Subdomain auch den Zugriff auf den "Ziel"-Dienst erlauben (Webhosting, E-Mail etc.).
 >
 
 Im nächsten Teil erfahren Sie, wie Sie einer Subdomain den Zugriff auf die verschiedenen von OVHcloud angebotenen Dienste im Universum Web Cloud (Webhosting, Exchange Server etc.) erlauben.
@@ -139,7 +139,7 @@ Nicht aufgeführte Dienste finden Sie in der jeweiligen Service-Dokumentation. S
 
 #### Fall 1: Eine Website auf meinem OVHcloud Webhosting mit einer Subdomain anzeigen
 
-Um einer Subdomain die Berechtigung zu erteilen, den Inhalt eines *Ziel*-Ordners auf einem Webhosting anzuzeigen, loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und wählen Sie `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Hosting-Pakete`{.action}, wählen Sie das betreffende Angebot aus, in dem sich Ihre Website befindet, und klicken Sie dann auf den Tab `Multisite`{.action}.
+Um einer Subdomain die Berechtigung zu erteilen, den Inhalt eines "Ziel"-Ordners auf einem Webhosting anzuzeigen, loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und wählen Sie `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Hosting-Pakete`{.action}, wählen Sie das betreffende Angebot aus, in dem sich Ihre Website befindet, und klicken Sie dann auf den Tab `Multisite`{.action}.
 
 Hier autorisieren Sie den Zugriff Ihrer Subdomain auf Ihr Webhosting, auf dem sich Ihre Website befindet.
 
@@ -147,7 +147,7 @@ Weitere Informationen zur Konfiguration einer Domain oder Subdomain auf einem We
 
 > [!warning]
 >
-> Um eine Domain oder Subdomain hinzuzufügen, muss möglicherweise ein *token* zur Validierung der Domain eingerichtet werden. Bei einer Subdomain wird das gleiche *token* nicht berücksichtigt und muss nicht für die Subdomain, sondern für den Domainnamen hinzugefügt werden. Fügen Sie in diesem Fall zusätzlich das *token* als DNS-Eintrag vom Typ TXT für den Domainnamen in der aktiven DNS-Zone Ihrer Domain hinzu.
+> Um eine Domain oder Subdomain hinzuzufügen, muss möglicherweise ein token zur Validierung der Domain eingerichtet werden. Bei einer Subdomain wird das gleiche token nicht berücksichtigt und muss nicht für die Subdomain, sondern für den Domainnamen hinzugefügt werden. Fügen Sie in diesem Fall zusätzlich das token als DNS-Eintrag vom Typ TXT für den Domainnamen in der aktiven DNS-Zone Ihrer Domain hinzu.
 >
 
 #### Fall 2 - Exchange E-Mail-Adressen mit einer Subdomain erstellen

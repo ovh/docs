@@ -148,7 +148,7 @@ Para mais informações sobre a configuração de um domínio ou subdomínio num
 
 > [!warning]
 >
-> A adição multisite de um domínio ou de um subdomínio pode exigir a implementação de um *token* de validação. Para um subdomínio, este mesmo *token* não é tido em conta e deve ser adicionado não para o subdomínio mas para o nome de domínio. Neste caso, adicionar adicionalmente o *token* sob a forma de um registo DNS de tipo TXT para o nome de domínio na zona DNS ativa do seu domínio.
+> A adição multisite de um domínio ou de um subdomínio pode exigir a implementação de um token de validação. Para um subdomínio, este mesmo token não é tido em conta e deve ser adicionado não para o subdomínio mas para o nome de domínio. Neste caso, adicionar adicionalmente o token sob a forma de um registo DNS de tipo TXT para o nome de domínio na zona DNS ativa do seu domínio.
 >
 
 #### Casos 2 - Criar endereços de e-mail Exchange com um subdomínio

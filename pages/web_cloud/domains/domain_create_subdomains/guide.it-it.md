@@ -148,7 +148,7 @@ Per maggiori informazioni sulla configurazione di un dominio o sottodominio su u
 
 > [!warning]
 >
-> L’aggiunta di un dominio o sottodominio su più siti può richiedere l’utilizzo di un *token* di conferma. Per un sottodominio, lo stesso *token* non viene preso in considerazione e deve essere aggiunto non per il sottodominio ma per il nome di dominio. In questo caso, aggiungi il *token* come record DNS di tipo TXT per il dominio nella zona DNS attiva del tuo dominio.
+> L’aggiunta di un dominio o sottodominio su più siti può richiedere l’utilizzo di un token di conferma. Per un sottodominio, lo stesso token non viene preso in considerazione e deve essere aggiunto non per il sottodominio ma per il nome di dominio. In questo caso, aggiungi il token come record DNS di tipo TXT per il dominio nella zona DNS attiva del tuo dominio.
 >
 
 #### Caso 2 - Crea indirizzi email Exchange con un sottodominio

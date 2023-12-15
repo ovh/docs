@@ -143,7 +143,7 @@ For more details on setting up a domain or subdomain on a web hosting plan, plea
 
 > [!warning]
 >
-> Adding a domain or subdomain to a multisite may require a validation *token* to be set up. For a subdomain, the same *token* is not taken into account and must be added not for the subdomain but for the domain name. In this case, you can add the *token* as a TXT record for the domain name in your domain name’s active DNS zone.
+> Adding a domain or subdomain to a multisite may require a validation token to be set up. For a subdomain, the same token is not taken into account and must be added not for the subdomain but for the domain name. In this case, you can add the token as a TXT record for the domain name in your domain name’s active DNS zone.
 >
 
 #### Case 2 - Create Exchange email addresses with a subdomain
