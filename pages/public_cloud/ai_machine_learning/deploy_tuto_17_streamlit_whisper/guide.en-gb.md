@@ -1,7 +1,7 @@
 ---
 title: AI Deploy - Tutorial - Deploy Whisper Speech Recognition Model
 excerpt: How to deploy OpenAI’s Whisper Speech Recognition Model
-updated: 2023-12-12
+updated: 2023-12-15
 ---
 
 > [!primary]
@@ -26,6 +26,7 @@ Unlike a locally hosted application, using AI Deploy offers extremely fast infer
 ## Requirements
 
 To build and deploy your Whisper app, you need:
+
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 - An AI Deploy Project created inside a [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account
 - A [user for AI Deploy](/pages/public_cloud/ai_machine_learning/gi_01_manage_users)
@@ -33,15 +34,17 @@ To build and deploy your Whisper app, you need:
 - [Docker](https://www.docker.com/get-started) installed on your local computer, **or** access to a Debian Docker Instance, which is available on the [Public Cloud](https://www.ovh.com/manager/public-cloud/)
 
 ## Instructions
+
 You are going to follow different steps to deploy our Whisper application:
-- [Whisper Model Selection](#step-1-whisper-model-selection)
+
+- [Whisper Model Sslection](#step-1-whisper-model-selection)
 - [Download Whisper Model in the Object Storage](#step-2-download-whisper-model-in-the-object-storage)
 - [Whisper app development](#step-3-whisper-app-development)
 - [Whisper app deployment](#step-4-whisper-app-deployment)
 
-### Step 1: Whisper Model Selection
+### Step 1: Whisper Model selection
 
-While there are various implementations of the Whisper model (Distil-Whisper, WhisperX, faster-whisper, Whisper JAX, ...), we will use the [original Whisper implementation](https://github.com/openai/whisper) for this tutorial. Feel free to explore other implementations based on your needs (memory constraints and desired inference speed (live transcription or post-transcription)). 
+While there are various implementations of the Whisper model (Distil-Whisper, WhisperX, faster-whisper, Whisper JAX, ...), we will use the [original Whisper implementation](https://github.com/openai/whisper) for this tutorial. Feel free to explore other implementations based on your needs (memory constraints and desired inference speed (live transcription or post-transcription)).
 
 Original Whisper implementation comes in five distinct model sizes (`tiny`, `base`, `small`, `medium`, and `large`), each designed with specific use cases in mind. Each size has an English-only counterpart (`tiny.en` for `tiny` size for example), which demonstrates optimized performance for English applications, outperforming the multilingual variant.
 
@@ -53,11 +56,11 @@ In this tutorial, we will deploy the latest version of the `large` Whisper model
 
 Once you have selected your model, it is time to download it for use in inference. 
 
-This could be done within the deployed application, by installing the `open-whisper` library and executing the following python code that downloads the Whisper model:
+This can be done within the deployed application, by installing the `open-whisper` library and executing the following python code that downloads the Whisper model:
 
 ```bash
 pip install -U openai-whisper
-``` 
+```
 
 ```python
 import whisper
@@ -72,19 +75,19 @@ As AI Deploy is based on Docker images, it is advisable to avoid directly downlo
 
 To do things more efficiently, it is better to save the model in a remote storage, like the [OVHcloud Object Storage](https://www.ovhcloud.com/en/public-cloud/object-storage/). This storage will be linked to the AI Deploy app, which will allow the use of the Whisper model within the app. This way, you can easily access the model and make updates without messing with the Docker container itself. 
 
-#### Create Object Storage bucket for you Whisper model
+#### Create a Object Storage bucket for you Whisper model
 
 You can create your Object Storage bucket using either the UI (OVHcloud Control Panel) or the `ovhai` CLI, which can be downloaded [here](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli).
 
 > [!tabs]
-> **Using Control Panel (UI)**
+> **Usingthe  Control Panel (UI)**
 >>
 >> If you do not feel comfortable with commands, this method may be more intuitive.
 >> 
->> First, go to the `Public Cloud` section of the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
+>> First, go to the `Public Cloud`{.action} section of the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
 >>
->> Then, select the `Object Storage` section (in the Storage category) and create a new object container by clicking `Storage` > `Object Storage` > `Create an object container`.
->> 
+>> Then, select the `Object Storage`{.action} section (in the Storage category) and create a new object container by clicking `Storage`{.action} > `Object Storage`{.action} > `Create an object container`{.action}.
+>>
 >> ![image](images/new-object-container.png){.thumbnail}
 >>
 >> You can create the bucket that will store your Whisper model. Select the container *type* and the *datastore_alias* that match your needs, and name it as you wish. *`GRA` alias and `whisper-model` name will be used in this tutorial.*
@@ -98,18 +101,18 @@ You can create your Object Storage bucket using either the UI (OVHcloud Control 
 >> ```bash
 >> ovhai bucket create <datastore_alias> <bucket_name>
 >> ```
->> 
+>>
 >> You can access the full alias list by running:
 >>
 >> ```bash
 >> ovhai datastore list
 >> ```
->> 
+>>
 >> To avoid encountering latencies, a good practice is to use the same alias as the one on which you are going to deploy your AI Solutions.
 >> 
 >> *`GRA` alias and `whisper-model` will be used in this tutorial.*
 >>
->> For your information, the previous command is applicable to both Swift and S3 buckets. However, it's important to note that for S3 usage, proper configuration is necessary. If S3 is not configured yet and you wish to use it, please consult the [S3 compliance guide](/pages/public_cloud/ai_machine_learning/gi_08_s3_compliance).
+>> For your information, the previous command is applicable to both Swift and S3 buckets. However, it's important to note that for S3 usage, a proper configuration is necessary. If S3 is not configured yet and you wish to use it, please read the [S3 compliance guide](/pages/public_cloud/ai_machine_learning/gi_08_s3_compliance).
 
 #### Download whisper in the created bucket
 
@@ -118,10 +121,11 @@ To download the model, we will use AI Training. The created job will be based on
 Using 5 CPUs will be enough to download the model, ensuring sufficient memory resources are available.
 
 Two volumes will be associated with this job:
-- The first volume will contain the `ai-training-examples` [GitHub repository](https://github.com/ovh/ai-training-examples/), containing the Python script used to download the Whisper model. For security, this volume is configured with Read-Only (RO) permission, as we just need access to the Python script, located at `ai-training-examples/apps/streamlit/whisper/download_model.py`
+
+- The first volume will contain the `ai-training-examples` [GitHub repository](https://github.com/ovh/ai-training-examples/), containing the Python script used to download the Whisper model. For security, this volume is configured with Read-Only (RO) permission, as we just need access to the Python script, located at `ai-training-examples/apps/streamlit/whisper/download_model.py`.
 - The second volume corresponds to the created bucket, where we will store the Whisper model once downloaded. Therefore, this bucket needs to be with Read-Write (RW) permission, since we will write in it. Make sure to name it correctly, and specify the alias you used during bucket creation.
 
-To launch this job, we will use a `pip install` command, to install the necessary libraries (from the `ai-training-examples/apps/streamlit/whisper/requirements.txt` file), and subsequently, we will execute the python script for Whisper download. 
+To launch this job, we will use a `pip install` command, to install the necessary libraries (from the `ai-training-examples/apps/streamlit/whisper/requirements.txt` file) and, subsequently, we will execute the python script for Whisper download.
 
 These steps can be summed up in the following command, which contains all the points mentioned above:
 
@@ -135,7 +139,7 @@ ovhai job run ovhcom/ai-training-pytorch \
 
 > [!warning]
 > **Warning**
-> In the last line of the command above, you can see that the `download_model.py` file takes two arguments. 
+> In the last line of the command above, you can see that the `download_model.py` file takes two arguments.
 >
 > The first one indicates which model you want to download (here `large-v3`). You can change it to one of the followings: `tiny.en`, `tiny`, `base.en`, `base`, `small.en`, `small`, `medium.en`, `medium`, `large-v1`, `large-v2`, `large-v3`, `large`.
 >
@@ -145,7 +149,7 @@ ovhai job run ovhcom/ai-training-pytorch \
 
 The job will then be launched. It will take a few minutes for the two volumes to be added to the job, the environment to be installed and the Whisper model to be downloaded and synchronized with your bucket (`FINALZING` status).
 
-If you have configured your volumes correctly with the right permissions, and given the right paths to the python script, then you should see your Whisper model in your bucket. This can be checked on the Control Panel, or with the CLI with the following command, that will list all the objects of your bucket:
+If you have configured your volumes correctly with the right permissions, and given the right paths to the python script, then you should see your Whisper model in your bucket. This can be checked on the Control Panel, or with the CLI with the following command that will list all the objects of your bucket:
 
 ```bash
 `ovhai bucket object list <bucket_name>@<datastore_alias>`
@@ -158,9 +162,9 @@ If you have configured your volumes correctly with the right permissions, and gi
 ```
 
 > [!primary]
-> **When I run the command, nothing is returned?**
+> **Why is nothing is returned when I run the command?**
 >
-> If nothing is returned when you list your bucket objects, do not hesitate to check your job logs by running `ovhai job logs <job_id>` to see if the model has well been downloaded.
+> If nothing is returned when you list your bucket objects, do not hesitate to check your job logs by running `ovhai job logs <job_id>` to see if the model has been downloaded well.
 >
 > If an exception occured during the model download, it is probably because you do not have enough memory in your AI Training job. To be sure, check the URL monitoring to see if the total memory has been reached.
 > 
@@ -174,7 +178,7 @@ But in order to interact with the model, we are going to build a very simple app
 
 #### Building a Docker image
 
-As for AI Training, you will need to use a Docker image when using AI Deploy. However you can't use the `ovhcom/ai-training-pytorch` Docker image this time. Indeed, using the Whisper model requires certain system packages, such as `ffmpeg`, to be installed, which is not the case in the previous image. This is why you need to build a new Docker image, dedicated to your AI project.
+As for AI Training, you will need to use a Docker image when using AI Deploy. However you can't use the `ovhcom/ai-training-pytorch` Docker image this time. Indeed, using the Whisper model requires some system packages to be installed, such as `ffmpeg`, which is not the case in the previous image. This is why you need to build a new Docker image, dedicated to your AI project.
 
 To do this, you will need [Docker](https://www.docker.com/get-started), either installed directly on your computer, or using a Debian Docker Instance, available on the [Public Cloud](https://www.ovh.com/manager/public-cloud/).
 
@@ -184,7 +188,8 @@ The Dockerfile to use is already provided. Clone the [ai-training-examples GitHu
 git clone https://github.com/ovh/ai-training-examples.git
 ```
 
-Then run `cd ai-training-examples/apps/streamlit/whisper/` to move to the Whisper app folder. If you run `ls` to list the existing files, You should see several, including the following:
+Then run `cd ai-training-examples/apps/streamlit/whisper/` to move to the Whisper app folder. If you run `ls` to list the existing files, you should see several ones, including the following:
+
 - `app.py`: The python code of the Whisper application.
 - `requirements.txt`: Contains the libraries needed by the Whisper application (streamlit, openai-whisper, ...).
 - `Dockerfile`: Contains all the commands you could call on the command line to run your application (installing `requirements.txt`, running the python script, ...).
@@ -235,7 +240,7 @@ CMD [ "streamlit" , "run" , "/workspace/app.py", "--server.address=0.0.0.0", "$M
 
 #### Push the image into a registry
 
-Once your image is built, you will need to tag it and push it to a registry. Several registries can be used (OVHcloud managed private registry, Docker Hub, GitHub packages, ...). In this tutorial, we will use the **OVHcloud shared registry**.
+Once your image is built, you will need to tag it and push it to a registry. Several registries can be used (OVHcloud Managed Private Registry, Docker Hub, GitHub packages, ...). In this tutorial, we will use the **OVHcloud shared registry**.
 
 > [!warning]
 > **Warning**
@@ -262,7 +267,7 @@ docker push <shared-registry-address>/whisper_app:latest
 
 ### Step 4: Whisper app deployment
 
-Once your image has been pushed, it can be used to deploy new AI Solutions. 
+Once your image has been pushed, it can be used to deploy new AI solutions. 
 
 Run the following command to deploy your Whisper speech-to-text application by running your customised Docker image:
 
