@@ -10,9 +10,9 @@ updated: 2023-12-15
 
 ## Objetivo <a name="goal"></a>
 
-A Internet é composta por *servidores* e *dispositivos* que interagem entre si através de uma rede global. Quando estes *servidores* e os seus *dispositivos* estão ligados à rede Internet, é-lhes atribuído um *endereço IP público* (equivalente a um endereço postal). Este *endereço IP* permite ligar remotamente um servidor ou dispositivo, permitindo assim que um utilizador veja um website introduzindo esse *endereço IP* através do browser instalado no computador do utilizador.
+A Internet é composta por servidores e dispositivos que interagem entre si através de uma rede global. Quando estes servidores e os seus dispositivos estão ligados à rede Internet, é-lhes atribuído um **endereço IP público** (equivalente a um endereço postal). Este endereço IP permite ligar remotamente um servidor ou dispositivo, permitindo assim que um utilizador veja um website introduzindo esse endereço IP através do browser instalado no computador do utilizador.
 
-Os **domínios** foram criados para facilitar o acesso de utilizadores da Internet a um website. De facto, é mais fácil reter um nome composto por uma cadeia de caracteres selecionada (exemplo: ovhcloud.com) do que uma sequência de números composto por um *endereço IP* (exemplo: 54.39.46.56).
+Os **domínios** foram criados para facilitar o acesso de utilizadores da Internet a um website. De facto, é mais fácil reter um nome composto por uma cadeia de caracteres selecionada (exemplo: ovhcloud.com) do que uma sequência de números composto por um endereço IP (exemplo: 54.39.46.56).
 
 Um **nome de domínio** é composto por níveis. Estes níveis são geralmente separados por um `.` (com exceção de algumas **extensões** do *primeiro nível* como o *.co.uk*, *.gouv.fr* ou ainda *.notaires.fr*):
 
@@ -26,7 +26,7 @@ Um **nome de domínio** é composto por níveis. Estes níveis são geralmente s
 
 - **S**econd **L**evel **D**omain (**SLD**): representa os domínios de *segundo nível*. É mais comum chamarmos-lhes **labels**. Quando encomenda um domínio, pode definir livremente o **label** (desde que este não tenha já sido registado por outro utilizador na mesma extensão e com o limite de 63 caracteres). Por exemplo, *ovhcloud* corresponde ao logótipo do nome de domínio *ovhcloud.com*.
 
-- Third Level Domain (**subdomain**): é a partir deste terceiro nível que se fala de *subdomínio*. Neste manual, iremos explicar de forma mais pormenorizada a sua definição e como implementá-las com os seus diferentes serviços.
+- Third Level Domain (**subdomain**): é a partir deste terceiro nível que se fala de **subdomínio**. Neste manual, iremos explicar de forma mais pormenorizada a sua definição e como implementá-las com os seus diferentes serviços.
 
 ![URL content](images/url-composition.png){.thumbnail}
   
