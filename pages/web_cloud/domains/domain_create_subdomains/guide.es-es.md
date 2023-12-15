@@ -10,7 +10,7 @@ updated: 2023-12-15
 
 ## Objetivo <a name="goal"></a>
 
-Internet se compone de *servidores* y *dispositivos* que interactúan entre sí a través de una red global. Cuando estos *servidores* y sus *dispositivos* están conectados a la red Internet, se les asigna una *dirección IP pública* (equivalente a una dirección postal). Esta *dirección IP* permite conectar a distancia un servidor o un dispositivo, de modo que un usuario puede consultar un sitio web introduciendo esta *dirección IP* gracias a su navegador de internet instalado en su ordenador.
+Internet se compone de servidores y dispositivos que interactúan entre sí a través de una red global. Cuando estos servidores y sus dispositivos están conectados a la red Internet, se les asigna una **dirección IP pública** (equivalente a una dirección postal). Esta *dirección IP* permite conectar a distancia un servidor o un dispositivo, de modo que un usuario puede consultar un sitio web introduciendo esta dirección IP gracias a su navegador de internet instalado en su ordenador.
 
 Los **dominios** se han creado para facilitar a los usuarios el acceso a un sitio web. En efecto, es más fácil elegir un nombre compuesto por una cadena de caracteres elegidos (por ejemplo: ovhcloud.com), que una secuencia de números que compone una *dirección IP* (por ejemplo: 54.39.46.56).
 
@@ -26,7 +26,7 @@ Un **nombre de dominio** se compone de niveles. Estos niveles suelen estar separ
 
 - **S**econd **L**evel **D**omain (**SLD**): representa los dominios de *segundo nivel*. Más comúnmente los llamamos **labels**. Al contratar un dominio, puede elegir libremente el **label** (siempre que no haya sido ya registrado por otro usuario con la misma extensión y con un límite de 63 caracteres). Por ejemplo, *ovhcloud* corresponde al sello del dominio *ovhcloud.com*.
 
-- Third Level Domain (**subdomain**): A partir de este tercer nivel, hablamos de *subdominio*. Esta guía explica en detalle su definición y cómo utilizarla con los distintos servicios.
+- Third Level Domain (**subdomain**): A partir de este tercer nivel, hablamos de **subdominio**. Esta guía explica en detalle su definición y cómo utilizarla con los distintos servicios.
 
 ![URL content](images/url-composition.png){.thumbnail}
   
