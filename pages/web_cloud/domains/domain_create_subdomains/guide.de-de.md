@@ -25,7 +25,7 @@ Ein **Domainname** besteht aus Leveln. Diese Level sind in der Regel durch ein `
 
 - **S**econd **L**evel **D**omain (**SLD**): Stellt Domains der *zweiten Ebene* dar, auch als **Labels** bezeichnet. Wenn Sie einen Domainnamen bestellen, können Sie das **Label** frei definieren (vorausgesetzt, dieser Name wurde nicht bereits von einem anderen Benutzer mit derselben Endung registriert und ist auf 63 Zeichen begrenzt). Zum Beispiel entspricht *ovhcloud* dem Label der Domain *ovhcloud.com*.
 
-- Third Level Domain (**Subdomain**): Ab dieser dritten Ebene spricht man von einer *Subdomain*. In dieser Anleitung erfahren Sie, wie Sie diese mit Ihren verschiedenen Diensten einrichten.
+- Third Level Domain (**Subdomain**): Ab dieser dritten Ebene spricht man von einer **Subdomain**. In dieser Anleitung erfahren Sie, wie Sie diese mit Ihren verschiedenen Diensten einrichten.
 
 ![URL content](images/url-composition.png){.thumbnail}
   
