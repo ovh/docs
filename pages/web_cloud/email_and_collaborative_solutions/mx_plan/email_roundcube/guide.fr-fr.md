@@ -294,7 +294,7 @@ Vous souhaitez ajouter une réponse automatique à votre adresse e-mail lorsque 
 
 ### Modifier le mot de passe de votre adresse-mail
 
-Pour modifier le mot de passe de votre adresse e-mail, vous devez vous connecter à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), dans l'interface de gestion de vos adresses e-mail. Pour cela, nous vous invitons à consulter notre guide « [Modifier le mot de passe d'une adresse e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password/) ».
+Pour modifier le mot de passe de votre adresse e-mail, vous devez vous connecter à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), dans l'interface de gestion de vos adresses e-mail. Consultez notre guide « [Modifier le mot de passe d'une adresse e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password/) ».
 
 ### Rédaction d'un e-mail
 
