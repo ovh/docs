@@ -75,12 +75,12 @@ As AI Deploy is based on Docker images, it is advisable to avoid directly downlo
 
 To do things more efficiently, it is better to save the model in a remote storage, like the [OVHcloud Object Storage](https://www.ovhcloud.com/en/public-cloud/object-storage/). This storage will be linked to the AI Deploy app, which will allow the use of the Whisper model within the app. This way, you can easily access the model and make updates without messing with the Docker container itself. 
 
-#### Create a Object Storage bucket for you Whisper model
+#### Create an Object Storage bucket for you Whisper model
 
 You can create your Object Storage bucket using either the UI (OVHcloud Control Panel) or the `ovhai` CLI, which can be downloaded [here](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli).
 
 > [!tabs]
-> **Usingthe  Control Panel (UI)**
+> **Using the Control Panel (UI)**
 >>
 >> If you do not feel comfortable with commands, this method may be more intuitive.
 >> 
