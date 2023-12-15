@@ -120,9 +120,9 @@ Por ejemplo, puede añadir:
 >
 > La modificación de una zona DNS asociada a un dominio conlleva un retraso de propagación de **4** a **24** horas como máximo para que sea efectiva.
 >
-> Además, como en el caso de un dominio en sí mismo, la creación de un registro DNS para un subdominio por sí sola no suele ser suficiente para que funcione con el servicio *destino* que le haya indicado en el registro DNS. 
+> Además, como en el caso de un dominio en sí mismo, la creación de un registro DNS para un subdominio por sí sola no suele ser suficiente para que funcione con el servicio "destino" que le haya indicado en el registro DNS. 
 >
-> Efectivamente, por motivos de seguridad, también deberá autorizar al subdominio a acceder al servicio *cible* (alojamiento web, correo, etc.).
+> Efectivamente, por motivos de seguridad, también deberá autorizar al subdominio a acceder al servicio "destino" (alojamiento web, correo, etc.).
 >
 
 En la siguiente sección, explicamos cómo autorizar a un subdominio a que acceda a los distintos servicios del universo "Web Cloud" (alojamiento web, servidor Exchange...) que ofrece OVHcloud.
@@ -140,7 +140,7 @@ Para los servicios que no se mencionan, consulte la documentación relativa al s
 
 #### Caso 1: Ver un sitio web en mi alojamiento web de OVHcloud con un subdominio
 
-Al igual que para un dominio y para autorizar a un subdominio a mostrar el contenido de una carpeta *destino* presente en un alojamiento web, conéctese a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} y seleccione `Web Cloud`{.action}. En la columna izquierda, haga clic en `Alojamientos`{.action}, seleccione el alojamiento correspondiente y abra la pestaña `Multisitio`{.action}.
+Al igual que para un dominio y para autorizar a un subdominio a mostrar el contenido de una carpeta "destino" presente en un alojamiento web, conéctese a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} y seleccione `Web Cloud`{.action}. En la columna izquierda, haga clic en `Alojamientos`{.action}, seleccione el alojamiento correspondiente y abra la pestaña `Multisitio`{.action}.
 
 Aquí es donde autoriza el acceso de su subdominio al alojamiento web en el que se encuentra su sitio web.
 

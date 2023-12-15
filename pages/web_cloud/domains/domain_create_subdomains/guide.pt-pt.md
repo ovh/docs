@@ -120,7 +120,7 @@ Por exemplo, poderá adicionar:
 >
 > A modificação de uma zona DNS associada a um nome de domínio implica um prazo de propagação de **4** a **24** para que esta última seja efetiva.
 >
-> Como tal, a criação de um registo DNS para um subdomínio, por si só, não é suficiente para executar o serviço *destino* que definiu no registo DNS. 
+> Como tal, a criação de um registo DNS para um subdomínio, por si só, não é suficiente para executar o serviço "destino" que definiu no registo DNS. 
 >
 > De facto, por razões de segurança, deverá também autorizar que o subdomínio tenha acesso ao serviço *alvo* (alojamento web, e-mail, etc.).
 >
