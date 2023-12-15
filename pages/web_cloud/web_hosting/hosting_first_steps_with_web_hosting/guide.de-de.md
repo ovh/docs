@@ -1,7 +1,7 @@
 ---
 title: "Erste Schritte mit Ihrem Webhosting"
 excerpt: "Erfahren Sie hier, wie Sie mit Ihrem Webhosting starten"
-updated: 2023-11-16
+updated: 2023-12-15
 ---
 
 > [!primary]
@@ -36,13 +36,13 @@ Mit Ihrem OVHcloud Webhosting Angebot können Sie eine neue Website erstellen od
 
 - **Eine neue Website einrichten**
 
- Sie können Ihre Website entweder manuell mithilfe Ihrer eigenen Programmierkenntnisse einrichten, oder gebrauchsfertige Lösungen wie Content Management Systeme (CMS) für die Erstellung Ihrer Website verwenden. Die erste Option erfordert ein gewisses Maß an technischer Kompetenz, ermöglicht jedoch ein maßgeschneidertes Ergebnis. Mit der zweiten Lösung profitieren Sie von einer direkt einsetzbaren Website, für deren Einrichtung keine technischen Fachkenntnisse notwendig sind.
+Sie können Ihre Website entweder manuell mithilfe Ihrer eigenen Programmierkenntnisse einrichten, oder gebrauchsfertige Lösungen wie Content Management Systeme (CMS) für die Erstellung Ihrer Website verwenden. Die erste Option erfordert ein gewisses Maß an technischer Kompetenz, ermöglicht jedoch ein maßgeschneidertes Ergebnis. Mit der zweiten Lösung profitieren Sie von einer direkt einsetzbaren Website, für deren Einrichtung keine technischen Fachkenntnisse notwendig sind.
 
 Im Kundencenter stellt OVHcloud seinen Kunden ein Tool zur Verfügung, mit dem ein CMS mit nur einem Klick installiert werden kann. Zur Auswahl stehen WordPress, PrestaShop, Drupal und Joomla!. Wenn Sie noch auf der Suche nach dem richtigen CMS sind, kann Ihnen dieser [CMS Vergleich](https://www.ovhcloud.com/de/web-hosting/uc-cms-comparison/){.external} bei Ihrer Auswahl helfen. Wenn das gewünschte CMS von OVHcloud nicht angeboten wird, können Sie es manuell auf Ihrem Webhosting installieren.
 
 - **Eine bestehende Website zu OVHcloud migrieren**
 
-Die Migration einer Website kann sich als knifflig erweisen. Vor allem, wenn es sich um eine aktive Website handelt und Sie die Unterbrechung des Dienstes vermeiden möchten. Daher enthält die vorliegende Anleitung nur einige der Schritte, die für eine Migration erforderlich sind. Für den kompletten Migrationsprozess einer Website lesen Sie bitte die Anleitung [Migration Ihrer Website und E-Mails zu OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh){.external}.
+Die Migration einer Website kann Komplikationen mit sich bringen, besonders wenn es sich um eine aktive Website handelt und Sie die Unterbrechung des Dienstes vermeiden möchten. Daher enthält die vorliegende Anleitung nur einige der Schritte, die für eine Migration erforderlich sind. Für den kompletten Migrationsprozess einer Website folgen Sie der Anleitung [Migration Ihrer Website und E-Mails zu OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh){.external}.
 
 ### Schritt 2: Ihre Website installieren
 
@@ -58,24 +58,32 @@ Damit die Installation des OVHcloud Moduls erfolgreich ist, vergewissern Sie sic
 
 Um die Installation des 1-Klick-Moduls zu starten, wählen Sie Ihr bevorzugtes CMS aus. Achten Sie darauf, dass im Feld `Installation im Experten-Modus`{.action} kein Haken gesetzt ist und klicken Sie anschließend auf `Installieren`{.action}.
 
-Wenn die Installation erfolgreich durchgeführt wurde, erhalten Sie eine Bestätigungs-E-Mail mit den Zugangsdaten für die Verwaltung Ihrer Website. Sie können dann die nachfolgenden Schritte durchführen.
+Wenn die Installation erfolgreich durchgeführt wurde, erhalten Sie eine E-Mail mit den Zugangsdaten für die Verwaltung Ihrer Website. Sie können dann die nachfolgenden Schritte durchführen.
 
 Wenn Sie mehr über die 1-Klick-Module von OVHcloud wissen möchten, werfen Sie einen Blick in unsere Dokumentation: [Installation Ihrer Website mit 1-Klick-Modulen](/pages/web_cloud/web_hosting/cms_install_1_click_modules){.external}.
 
 #### Die schnelle Lösung in wenigen Klicks – keine technischen Kenntnisse erforderlich
 
-Bei dieser Lösung kommen OVHcloud Module zum Einsatz, die eine einfache und schnelle Installation eines CMS ermöglichen. OVHcloud installiert Ihre Website mithilfe der von Ihnen eingegebenen, personalisierten Daten (z. B. personalisierte Zugangsdaten für den CMS-Login). Um diese Lösung zu nutzen, benötigen Sie mindestens eine Datenbank in Ihrem Webhosting-Paket.
+Bei dieser Lösung kommen OVHcloud Module zum Einsatz, die eine einfache und schnelle Installation eines CMS ermöglichen. OVHcloud installiert Ihre Website mithilfe der von Ihnen eingegebenen, personalisierten Daten (z.B. personalisierte Zugangsdaten für den CMS-Login). Um diese Lösung zu nutzen, benötigen Sie mindestens eine Datenbank in Ihrem Webhosting-Paket.
 
-Damit die Installation des OVHcloud Moduls erfolgreich ist, überprüfen Sie bitte, dass:
+Zur erfolgreichen Installation des OVHcloud Moduls überprüfen Sie die folgenden Punkte:
 
-- das Verzeichnis, in dem das Modell installiert wird, vollständig leer ist (wenn Sie sich vorher noch nie mit Ihrem Storage verbunden haben, sollte das der Fall sein).
-- auf Ihrem Webhosting bereits eine Datenbank angelegt wurde (gehen Sie in den Tab `Datenbanken`{.action} und anschließend auf `Eine Datenbank erstellen`{.action}, um eine Datenbank anzulegen).
+- Das Verzeichnis, in dem das Modell installiert wird, ist vollständig leer (wenn Sie den FTP-Speicherplatz noch nicht verwendet haben, sollte das der Fall sein).
+- Auf Ihrem Webhosting wurde bereits eine Datenbank angelegt.
 
-Um eine Datenbank zu erstellen, loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und wählen Sie im Bereich `Web Cloud`{.action} unter `Hosting-Pakete`{.action} das betreffende Hosting aus. Gehen Sie dann auf den Tab `Datenbanken`{.action} und klicken Sie auf den Button `Eine Datenbank erstellen`{.action}. Füllen Sie die notwendigen Informationen aus und warten Sie, bis die Installation abgeschlossen ist.
+Um die Datenbank zu erstellen, loggen Sie sich im [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und gehen Sie in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus.
 
-![Zugriff auf die 1-Klick-Module](images/create-a-database-2.png){.thumbnail}
+Im Tab `Datenbanken`{.action} sind zwei Szenarien möglich: 
 
-Nachdem die Datenbank angelegt wurde, gehen Sie für die Installation des 1-Klick-Moduls in den Tab `1 Klick Module`{.action} und klicken Sie anschließend auf den Button `Ein Modul hinzufügen`{.action}. Wählen Sie Ihr bevorzugtes CMS zur Installation aus, vergewissern Sie sich, dass in dem Feld `Installation im Experten-Modus`{.action} ein Haken gesetzt ist, und klicken Sie dann auf `Weiter`{.action}.
+- **Auf Ihrem Webhosting ist mindestens eine Datenbank zur Erstellung verfügbar**: Klicken Sie auf den Button `Aktionen`{.action} über der Tabelle und dann auf den Button `Datenbank erstellen`{.action}.
+
+![1-Klick-Zugriff auf Module](images/create-a-database-2.png){.thumbnail}
+
+- **Auf Ihrem Webhosting sind keine Datenbanken zur Erstellung verfügbar**: Klicken Sie auf den Button `Aktionen`{.action} über der Tabelle. Sie haben zwei Optionen:
+    - Eine [Start SQL](https://www.ovhcloud.com/de/web-hosting/options/start-sql/) Datenbank bestellen. Klicken Sie hierzu auf den Button `Aktionen`{.action} über der Tabelle und dann auf den Button `Eine Datenbank bestellen`{.action}.
+    - Einen [Web Cloud Databases](https://www.ovhcloud.com/de/web-cloud/databases/) Server bestellen. Klicken Sie hierzu auf den Button `Aktionen`{.action} über der Tabelle und dann auf den Button `Eine Datenbank mit der Lösung „Web Cloud Databases“ bestellen`{.action}. Folgen Sie unserer Anleitung „[Erste Schritte mit Ihren Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)“, um eine Datenbank für dieses Angebot zu erstellen.
+
+Nachdem die Datenbank angelegt wurde, gehen Sie zur Installation des 1-Klick-Moduls in den Tab `1-Klick-Module`{.action} und klicken Sie anschließend auf den Button `Ein Modul hinzufügen`{.action}. Wählen Sie Ihr bevorzugtes CMS zur Installation aus, aktivieren Sie die Option `Installation im Experten-Modus`{.action}, und klicken Sie dann auf `Weiter`{.action}.
 
 ![Zugriff auf die 1-Klick-Module](images/access-to-the-1-click-modules-section.png){.thumbnail}
 
@@ -85,7 +93,12 @@ Weitere Informationen zur Installation eines Moduls im Experten-Modus finden Sie
 
 #### Die manuelle Lösung – technische Kenntnisse erforderlich
 
-Verwenden Sie diese Lösung, wenn Sie eine Website ohne den Einsatz der OVHcloud Module erstellen oder migrieren möchten. Hierzu benötigen Sie die Dateien der Website, die Sie installieren möchten. Loggen Sie sich manuell in Ihren Storage ein, um dort die Dateien der Website hochzuladen und letztere anschließend, sofern möglich, mit einer vorher angelegten Datenbank zu verknüpfen.
+Diese Lösung ist nützlich, wenn Sie eine Website ohne Verwendung der OVHcloud Module erstellen oder migrieren möchten. Sie müssen über die Dateien der Website verfügen, die Sie installieren möchten. Sie müssen sich dann [manuell in Ihren FTP-Speicherplatz einloggen](/pages/web_cloud/web_hosting/ftp_connection), um die Dateien der Website hochzuladen und diese ggf. mit einer zuvor erstellten Datenbank zu verknüpfen.
+
+> [!success]
+>
+> Wenn Sie das Passwort für Ihren FTP-Speicherplatz vergessen haben, ändern Sie es mit unserer Anleitung: [Passwort für den Zugriff auf den FTP-Speicherplatz Ihres Webhostings ändern](/pages/web_cloud/web_hosting/ftp_change_password).
+>
 
 Es gibt keine allgemeingültige Vorgehensweise, da Websites sehr unterschiedlich sein können. Anhand der folgenden Dokumentation können wir Ihnen jedoch die Aktionen aufzeigen, die in Ihrem OVHcloud Webhosting durchgeführt werden: [Webhosting: Meine Seite online stellen](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online){.external} und [Migration Ihrer Website und E-Mails zu OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh){.external}. Wenn Ihre Website manuell auf Ihrem Webhosting installiert wurde, können Sie die nachfolgenden Schritte durchführen.
 
@@ -157,7 +170,6 @@ Wenn Sie Hilfe bei der Nutzung der Funktionalitäten Ihrer Website benötigen, g
 Sie können nun auch Ihre E-Mail-Adressen verwenden. Dafür stellt OVHcloud Ihnen eine Webanwendung (Webmail) zur Verfügung: RoundCube. Diese App ist über die Adresse <https://www.ovhcloud.com/de/mail/> erreichbar, auf der Sie die Login-Daten für Ihre von OVHcloud angelegte E-Mail-Adresse eingeben.
 
 Wenn Sie mehr Informationen über die Verwendung von RoundCube benötigen, werfen Sie bitte einen Blick in unsere Anleitung: [Verwendung von RoundCube](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube){.external}. Wenn Sie Ihre E-Mail-Adresse auf einem E-Mail-Client oder einem Gerät (beispielsweise einem Smartphone oder einem Tablet) einrichten möchten, werfen Sie bitte einen Blick in die jeweilige Anleitung unter </products/web-cloud-email-collaborative-solutions-mx-plan>.
-
 ## Weiterführende Informationen
 
 [Migration Ihrer Website und E-Mails zu OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh){.external}

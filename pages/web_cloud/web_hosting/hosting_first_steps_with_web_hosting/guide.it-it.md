@@ -1,7 +1,7 @@
 ---
 title: "Iniziare a utilizzare un hosting Web"
 excerpt: "Questa guida ti mostra come eseguire le prime operazioni su un hosting Web"
-updated: 2023-11-16
+updated: 2023-12-15
 ---
 
 > [!primary]
@@ -71,9 +71,17 @@ Affinché l'operazione vada a buon fine è necessario assicurarsi che:
 - la directory di installazione del modulo sia vuota
 - sia già stato creato un database nello spazio di hosting
 
-Per creare il database, accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Seleziona `Hosting`{.action} e poi il nome del tuo servizio. Clicca sulla scheda `Database`{.action} e poi su `Crea un database`{.action}. Inserisci le informazioni richieste e attendi che l'installazione sia terminata.
+Per creare il database, accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}, clicca su `Web Cloud`{.action}. Nella colonna di sinistra, clicca su `Hosting`{.action} e seleziona il nome dell’hosting Web interessato.
+
+Nella scheda `Database`{.action} sono possibili due scenari: 
+
+- **Sul tuo hosting Web hai almeno un database disponibile in "Start"** : clicca sul pulsante `Azioni`{.action} in alto nella tabella che appare e poi sul pulsante `Crea un database`{.action}.
 
 ![Accesso ai moduli in 1 click](images/create-a-database-2.png){.thumbnail}
+
+- **Sull’hosting Web non sono più disponibili database in "Start"** : clicca sul pulsante `Azioni`{.action} in alto nella tabella. Potrete (a scelta):
+    - Ordinare un database [Start-SQL](https://www.ovhcloud.com/it/web-hosting/options/start-sql/) in aggiunta ai database inclusi nella soluzione di hosting Web. Per farlo, clicca sul pulsante `Azioni`{.action} in alto a sinistra della tabella e poi sul pulsante `Ordinare un database`{.action}.
+    - Ordinare un database server [Web Cloud Databases](https://www.ovhcloud.com/it/web-cloud/databases/). Per farlo, clicca sul pulsante `Azioni`{.action} in alto a sinistra della tabella e poi sul pulsante `Ordinare un database Web Cloud Databases`{.action}. Consulta la nostra guida "[Iniziare a utilizzare il tuo Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)" per creare un database su questa offerta.
 
 Una volta creato il database, seleziona la scheda `CMS in 1 click`{.action} e clicca sul pulsante `Aggiungi un modulo`{.action}. Scegli il CMS da installare assicurandoti che la casella `Installazione avanzata`{.action} sia selezionata e clicca su `Continua`{.action}.
 
@@ -85,7 +93,12 @@ Per maggiori informazioni su questa soluzione, consulta la nostra guida: [Instal
 
 #### Soluzione manuale (competenze tecniche necessarie)
 
-Questa soluzione permette di creare o migrare un sito Internet senza utilizzare i moduli OVHcloud. Prima di iniziare, assicurati di avere a disposizione i file del sito da installare: dovrai connetterti manualmente al tuo spazio di storage per effettuarne l’upload e, se possibile, associare il sito a un database precedentemente creato.
+Questa soluzione permette di creare o migrare un sito Internet senza utilizzare i moduli OVHcloud. Prima di iniziare, assicurati di avere a disposizione i file del sito da installare. dovrai quindi [accedere manualmente al tuo spazio di storage FTP](/pages/web_cloud/web_hosting/ftp_connection) per caricare i file del sito e, se possibile, associare quest’ultimo a un database precedentemente creato.
+
+> [!success]
+>
+> Se hai dimenticato la password di accesso allo spazio di storage FTP, modificala con la nostra guida "[Modifica la password di accesso allo spazio di storage FTP del tuo hosting Web](/pages/web_cloud/web_hosting/ftp_change_password)".
+>
 
 I siti Internet sono molto diversi tra loro e non esiste quindi una procedura universale ma, in caso di necessità, puoi consultare le nostre guide ​[Mettere online il tuo sito](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online){.external} e [Migrare un sito e un servizio di posta in OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh){.external}. Una volta completata l’installazione, passa agli step successivi.
 
@@ -157,7 +170,6 @@ Per maggiori informazioni sulle funzionalità disponibili, consulta la documenta
 A questo punto non ti resta che utilizzare i tuoi account di posta. OVHcloud fornisce l'applicazione online RoundCube, disponibile all'indirizzo [https://www.ovh.it/mail/](https://www.ovh.it/mail/){.external}. Per accedervi, inserisci le credenziali associate all’indirizzo di posta creato in OVHcloud.
 
 Per maggiori informazioni su questo servizio, consulta la nostra [guida all’utilizzo di RoundCube](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube){.external}. Per configurare l’account email su un client di posta o un dispositivo (ad esempio, smartphone o tablet), fai riferimento alla documentazione disponibile a questa pagina: </products/web-cloud-email-collaborative-solutions-mx-plan>.
-
 ## Per saperne di più
 
 [Migrare un sito e un servizio di posta in OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh){.external}

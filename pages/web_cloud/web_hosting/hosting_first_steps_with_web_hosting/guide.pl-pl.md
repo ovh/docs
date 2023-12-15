@@ -1,7 +1,7 @@
 ---
 title: "Pierwsze kroki z hostingiem OVHcloud"
 excerpt: "Dowiedz się, jak właściwie rozpocząć korzystanie z hostingu"
-updated: 2023-11-16
+updated: 2023-12-15
 ---
 
 > [!primary]
@@ -69,11 +69,19 @@ Rozwiązanie to wykorzystuje moduły OVHcloud — narzędzie umożliwiające pro
 Aby instalacja modułu OVHcloud była możliwa, koniecznie upewnij się, że:
 
 - katalog instalacyjny modułu jest pusty (co ma miejsce, jeżeli nie zalogowałeś się jeszcze do Twojej przestrzeni dyskowej);
-- baza danych została już utworzona na Twoim hostingu (w tym celu wybierz zakładkę `Bazy danych`{.action}, a następnie opcję `Stwórz bazę danych`{.action}).
+- baza danych została już utworzona na Twoim hostingu.
 
-Aby utworzyć bazę danych, zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.Wybierz sekcję `Hosting`{.action}, a następnie nazwę hostingu, który zakupiłeś. W zakładce `Bazy danych`{.action} wybierz opcję `Stwórz bazę danych`{.action}. Uzupełnij wymagane informacje, a następnie zaczekaj na zakończenie instalacji.
+Aby utworzyć bazę danych, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}, a następnie przejdź do sekcji `Web Cloud`{.action}. W lewej kolumnie kliknij `Hosting`{.action}, następnie wybierz odpowiedni hosting.
 
-![Dostęp do modułów OVHcloud ](images/create-a-database-2.png){.thumbnail}
+W zakładce `Bazy danych`{.action} możliwe są dwa scenariusze: 
+
+- **Masz co najmniej jedną bazę danych dostępną w opcji "utwórz" na Twoim hostingu** : kliknij przycisk `Operacje`{.action} nad tabelą, która się wyświetla następnie kliknij przycisk `Tworzenie bazę danych`{.action}.
+
+![Dostęp do modułów za 1 kliknięciem](images/create-a-database-2.png){.thumbnail}
+
+- **Nie masz już dostępnych baz danych w opcji "utwórz" na Twoim hostingu** : kliknij przycisk `Operacje`{.action} nad tabelą, która się wyświetli. Będziesz mógł (do wyboru):
+    - Zamów bazę danych [Start SQL](https://www.ovhcloud.com/pl/web-hosting/options/start-sql/) jako uzupełnienie baz danych zawartych w hostingu. W tym celu kliknij przycisk `Operacje`{.action} nad tabelą, a następnie przycisk `Zamów bazę danych`{.action}.
+    - Zamów serwer baz danych [Web Cloud Databases](https://www.ovhcloud.com/pl/web-cloud/databases/). W tym celu kliknij przycisk `Operacje`{.action} nad tabelą, a następnie przycisk `Zamów bazę danych Web Cloud Databases`{.action}. Następnie zapoznaj się z naszym przewodnikiem "[Pierwsze kroki z Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)", aby utworzyć bazę danych dla tej oferty.
 
 Gdy baza danych została już utworzona, wybierz zakładkę `Moduły`{.action}, by przeprowadzić instalację modułu, a następnie wybierz opcję `Dodaj moduł`{.action}. Wybierz CMS, który chcesz zainstalować i upewnij się, że pole `Instalacja w trybie zaawansowanym`{.action} nie jest zaznaczone, następnie wybierz opcję `Instalacja`{.action}.
 
@@ -85,7 +93,12 @@ Jeżeli chcesz uzyskać więcej informacji dotyczących modułów OVHcloud dost�
 
 #### Konfiguracja ręczna, wymagane umiejętności techniczne
 
-Rozwiązanie to stosowane jest w przypadku tworzenia lub przenoszenia strony internetowej bez wykorzystywania modułów OVHcloud. Konieczne jest posiadanie plików strony internetowej, którą chcesz zainstalować. Należy zalogować się ręcznie do przestrzeni dyskowej, aby wgrać pliki strony internetowej, a następnie, o ile to możliwe, połączyć ją z uprzednio utworzoną bazą danych.
+Rozwiązanie to ma zastosowanie, jeśli chcesz stworzyć lub przenieść stronę WWW bez korzystania z modułów OVHcloud. Musisz mieć dostęp do plików strony WWW, które chcesz zainstalować. Dlatego należy [ręcznie zalogować się do przestrzeni dyskowej FTP](/pages/web_cloud/web_hosting/ftp_connection), aby wgrać pliki strony WWW, a następnie, jeśli to możliwe, powiązać ją z wcześniej utworzoną bazą danych.
+
+> [!success]
+>
+> Jeśli nie pamiętasz hasła dostępowego do przestrzeni dyskowej FTP, zmodyfikuj je za pomocą naszego przewodnika "[Zmiana hasła dostępowego do przestrzeni dyskowej FTP Twojego hostingu](/pages/web_cloud/web_hosting/ftp_change_password)".
+>
 
 Biorąc pod uwagę, że strony internetowe mogą się w znaczącym stopniu od siebie różnić, nie ma uniwersalnego sposobu postępowania, jednak możemy pokierować Cię w zakresie hostingu OVHcloud przy użyciu naszej dokumentacji: [Umieszczanie strony w sieci](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online){.external} oraz [Przenoszenie strony na serwer OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh){.external}, o ile jest on wykorzystywany. Gdy strona zostanie już ręcznie zainstalowana na hostingu, przeprowadź wskazane poniżej etapy.
 
@@ -127,13 +140,13 @@ Aby sprawdzić rekordy MX, których należy użyć w strefie Twojej domeny, zalo
 
 Teraz, gdy znasz już typy rekordów powiązane z Twoim hostingiem OVHcloud, należy je sprawdzić lub zmienić, jeżeli to konieczne. Czynności, które należy przeprowadzić zależą od projektu, który realizujesz.
 
-- **Zakup domeny wraz z hostingiem OVH**
+- **Zakup domeny wraz z hostingiem OVHcloud**
 
 Konfiguracja Twojej domeny jest już prawidłowa. Przejdź do następnego etapu. Jeżeli natomiast dokonałeś zmian w [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} w strefie DNS Twojej domeny, może okazać się, że konfiguracja jest nieprawidłowa.
  
 Aby uzyskać dostęp do strefy DNS Twojej domeny OVHcloud wybierz sekcję `Domeny`{.action} Kliknij nazwę danej domeny. Następnie w zakładce `Strefa DNS`{.action} sprawdź i zmodyfikuj niezbędne informacje.
 
-- **Domena nie korzystająca ze strefy DNS OVH**
+- **Domena nie korzystająca ze strefy DNS OVHcloud**
  
 Sprawdź strefę DNS Twojej domeny u usługodawcy, który nią zarządza. Jeżeli to konieczne, zmodyfikuje niezbędne informacje.
 
@@ -156,7 +169,6 @@ Jeżeli chcesz otrzymać pomoc w zakresie funkcjonalności Twojej strony, zachę
 
 Możesz już korzystać z adresów e-mail. W tym celu OVHcloud udostępnia aplikację internetową (Webmail): RoundCube. Jest ona dostępna pod adresem <https://www.ovhcloud.com/pl/mail/>, gdzie uzyskasz informacje dotyczące danych do logowania na pocztę e-mail utworzoną na serwerze.
 Jeżeli chcesz otrzymać więcej informacji odnośnie korzystania z RoundCube, zapoznaj się z naszym przewodnikiem: [Korzystanie z RoundCube](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube){.external}. Jeżeli chcesz skonfigurować adres e-mail na komputerze lub urządzeniu mobilnym (np. na smartphonie lub tablecie), zapoznaj się z dokumentacją dostępną na poniższej stronie: </products/web-cloud-email-collaborative-solutions-mx-plan>.
-
 ## Sprawdź również
 
 [Przenoszenie strony na serwer OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh){.external}

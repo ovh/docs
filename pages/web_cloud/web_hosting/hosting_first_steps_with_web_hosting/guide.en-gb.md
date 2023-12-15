@@ -1,21 +1,21 @@
 ---
 title: "Getting started with a Web Hosting plan"
 excerpt: "Find out how to build your website and to set up your email addresses"
-updated: 2023-11-16
+updated: 2023-12-15
 ---
 
 ## Objective
 
 This guide is designed for customers who have just purchased a Web Hosting plan to build and host a website. With your Web Hosting plan, you can set up a website using a turn-key solution (WordPress, PrestaShop), or develop your own platform on permanently available servers. This guide will help you get started with building your website. Thank you for choosing OVHcloud.
 
-**Find out how to build your website and to set up your email addresses.**
+**This guide explains how to build your website and to set up your email addresses.**
 
 ## Requirements
 
-- You must have an [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/){.external}.
-- You must have received an email confirming that your Web Hosting plan has been set up.
-- You must have a [domain name](https://www.ovhcloud.com/en-gb/domains/){.external} that can be used to access your website.
-- You must be logged in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}.
+- You have ordered an [OVHcloud Web Hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/){.external}.
+- You have received an email confirming that your Web Hosting plan has been set up.
+- You have a [domain name](https://www.ovhcloud.com/en-gb/domains/){.external} that can be used to access your website.
+- You have access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB).
 
 ## Instructions
 
@@ -64,14 +64,22 @@ This solution uses OVHcloud modules, a tool you can use to install a CMS easily.
 
 To ensure that the OVHcloud module installation is successful, please check that:
 
-- the module’s installation directory is empty (which should be the case if you have not connected to your storage space)
-- you have already created a database in your Web Hosting plan (go to the `Databases`{.action} tab, then `Create a database`{.action} to do this)
+- The module’s installation directory is empty (which should be the case if you have not connected to your storage space yet).
+- You have already created a database in your Web Hosting plan.
 
-To create a database, please log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}. Go to the `Hosting plans`{.action} section, then click on the domain name corresponding to the Web Hosting plan you have just ordered. In the `Databases`{.action} tab, click the `Create a database`{.action} button. Enter the information requested, then wait for the installation process to complete.
+To create the database, log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB){.external}, then go to the `Web Cloud`{.action} section. In the left-hand column, click `Hosting plans`{.action}, then select the name of the Web Hosting plan concerned.
+
+In the `Databases`{.action} tab, there are two possible scenarios: 
+
+- **You have at least one database available to create on your web hosting plan**: Click on the `Actions`{.action} button above the table, then on the `Create a database`{.action} button.
 
 ![Access to 1-click modules](images/create-a-database-2.png){.thumbnail}
 
-Once you have created a database, to install a 1-click module, go to the `1-click modules`{.action} tab and click `Add a module`{.action}. Select the CMS you want to install, check that the `Install in advanced mode`{.action}box is ticked, then click `Next`{.action}.
+- **You no longer have any databases available to create on your web hosting plan**: Click on the `Actions`{.action} button above the table. You can choose to:
+    - Order a [Start SQL](https://www.ovhcloud.com/en-gb/web-hosting/options/start-sql/) database in addition to the databases included with your web hosting plan. To do this, click the `Actions`{.action} button above the table, then the `Order a database`{.action} button.
+    - Order a [Web Cloud Databases](https://www.ovhcloud.com/en-gb/web-cloud/databases/) database server. To do this, click the `Actions`{.action} button above the table, then the `Order a Web Cloud Databases`{.action} button. Then refer to our guide on [Getting started with your Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) to create a database with this solution.
+
+Once you have created a database, to install a 1-click module, go to the `1-click modules`{.action} tab and click `Add a module`{.action}. Select the CMS you want to install, tick the option `Install in advanced mode`{.action}, then click `Next`{.action}.
 
 ![Access to 1-click modules](images/access-to-the-1-click-modules-section.png){.thumbnail}
 
@@ -81,9 +89,14 @@ If you need more details on installing a module in advanced mode, please read ou
 
 #### Manual installation – technical knowledge required
 
-This solution is useful if you want to build or migrate a website without using the OVHcloud modules. You will need to have the website files that you wish to install. You will need to manually log in to your storage space to upload the website files onto it, then (if possible) link those files to a database you have already created.
+This solution is useful if you want to create or migrate a website without using OVHcloud modules. You must have the website files that you want to install. You will need to [log in to your FTP storage space manually](/pages/web_cloud/web_hosting/ftp_connection) to upload your website files to it, then if possible, link the website to a database you have created beforehand.
 
-As every website is unique, there is no universal straightforward method for getting them online. However, in our documentation, we provide tips on the changes you will need to make to your OVHcloud Web Hosting plan: [How to get my website online](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online){.external}. Once you have set up your website in this way, follow the remaining steps below.
+> [!success]
+>
+> If you have forgotten the password for accessing your FTP storage space, change it using our guide “[Changing an FTP user password](/pages/web_cloud/web_hosting/ftp_change_password)”.
+>
+
+As every website is unique, there is no universal straightforward method for getting them online. However, in our documentation, we provide tips on the changes you will need to make to your OVHcloud Web Hosting plan: [How to get my website online](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online). Once you have set up your website in this way, follow the remaining steps below.
 
 ### Step 3: Create your email addresses
 
@@ -153,7 +166,6 @@ If you need help with your website’s features, we recommend referring to the C
 Now, you just need to start using your email addresses. To do this, OVHcloud offers an online webmail application. The webmail is available at the following address: <https://www.ovhcloud.com/en-gb/mail/>. You will need to enter the credentials for the email addresses that you have created with OVHcloud.
 
 If you would like to configure your email address on an email client or device (e.g. a smartphone or tablet), please refer to our email guides: </products/web-cloud-email-collaborative-solutions-mx-plan>.
-
 ## Go further
 
 [Migrating your website and emails to OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh){.external}

@@ -1,7 +1,7 @@
 ---
 title: "Alojamento web: primeira utilização"
 excerpt: "Saiba como usar e gerir um alojamento web (primeira utilização)"
-updated: 2023-11-16
+updated: 2023-12-15
 ---
 
 > [!primary]
@@ -69,9 +69,17 @@ Para instalar o módulo no modo avançado, certifique-se que:
 - a pasta de instalação do CMS está vazia; 
 - já tem uma base de dados criada no sistema.
 
-Para verificar ou criar uma bases de dados, aceda à [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Clique em `Alojamentos`{.action} e selecione o alojamento web que contratou. Selecione `Bases de dados`{.action}. Se não tiver nenhuma base de dados criada, clique no botão `Criar uma base de dados`{.action}. Siga as instruções, e aguarde a conclusão da instalação.
+Para criar a base de dados, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} e aceda à secção `Web Cloud`{.action}. Na coluna da esquerda, clique em `Alojamentos`{.action} e selecione o nome do alojamento web em causa.
 
-![Acesso aos módulos 1 clique](images/create-a-database-2.png){.thumbnail}
+No separador `Bases de dados`{.action}, são possíveis dois cenários: 
+
+- **Tem, pelo menos, uma base de dados disponível "criação" no seu alojamento web**: clique no botão `Ações`{.action} na parte superior da tabela e, a seguir, no botão `Criar uma base de dados`{.action}.
+
+![Acesso aos módulos em 1 clique](images/create-a-database-2.png){.thumbnail}
+
+- **Não dispõe de bases de dados disponíveis "criação" no seu alojamento web** : clique no botão `Ações`{.action} no topo da tabela que é apresentada. Poderá (à escolha):
+    - Encomendar uma base de dados [Start SQL](https://www.ovhcloud.com/pt/web-hosting/options/start-sql/) em complemento das suas bases de dados incluídas na sua oferta de alojamento web. Para isso, clique no botão `Ações`{.action} na parte superior da tabela e, a seguir, no botão `Encomendar uma base de dados`{.action}.
+    - Encomendar um servidor de bases de dados [Web Cloud Databases](https://www.ovhcloud.com/pt/web-cloud/databases/). Para isso, clique no botão `Ações`{.action} na parte superior da tabela e, a seguir, no botão `Encomendar uma base de dados Web Cloud Databases`{.action}. Consulte o nosso guia "[Primeiros passos com o seu Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)" para criar uma base de dados sobre esta oferta.
 
 Depois de criar a base de dados, selecione `Módulos 1 clique`{.action}, e clique no botão `Adicionar um módulo`{.action}. Selecione o CMS, certifique-se que a ` instalação em modo avançado`{.action} está selecionada. Clique no botão `Seguinte`{.action}:
 
@@ -83,7 +91,12 @@ Se desejar mais informação sobre o processo, consulte o guia: [Como instalar u
 
 #### Transferência de um site já criado.
 
-Nesta situação, precisa de ter acesso aos ficheiros do site que irá transferir para o alojamento OVHcloud. De seguida, terá de aceder ao espaço de alojamento, e efetuar a transferência dos ficheiros para a pasta correta. Se necessário, terá de associar o site a uma base de dados previamente criada.
+Esta solução aplica-se se pretender criar ou migrar um site sem utilizar os módulos da OVHcloud. Deve ter acesso aos ficheiros do site que pretende instalar. Por conseguinte, terá de [ligar-se manualmente ao seu espaço de armazenamento FTP](/pages/web_cloud/web_hosting/ftp_connection) para carregar os ficheiros do sítio e, se possível, ligá-lo a uma base de dados previamente criada.
+
+> [!success]
+>
+> Se se esquecer da palavra-passe de acesso ao espaço de armazenamento FTP, altere-a utilizando o nosso guia "[Alterar a palavra-passe de acesso ao espaço de armazenamento FTP do alojamento web](/pages/web_cloud/web_hosting/ftp_change_password)".
+>
 
 Atenção! Este processo pode variar de acordo com o tipo de site. Se precisar de mais informação, consulte os guias: [Colocar um site online](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online){.external} e [Transferir um site para a OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh){.external} (versão PT disponível em breve). O site está no alojamento OVHcloud. Se quiser usar a solução de e-mail incluída no serviço, siga as instruções abaixo. Senão, passe à secção: **Domínios: Consultar, Verificar e Alterar dados DNS**.
 
@@ -153,7 +166,6 @@ Instalou um CMS com um dos Módulos 1 Clique e recebeu um e-mail com os dados do
 Os seus endereços de e-mail podem ser usados com o Roundcube, um serviço de webmail incluído na oferta de alojamento OVHcloud. Aceda a <https://www.ovhcloud.com/pt/mail/>, e preencha os dados associados ao endereço de e-mail criado através do sistema OVHcloud.
 
 Para saber mais sobre o RoundCube, consulte o guia: [Utilização do RoundCube](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_roundcube){.external}. Se desejar associar o seu endereço de e-mail a um software (cliente) de correio eletrónico no computador, smartphone ou um tablet, consulte a página: </products/web-cloud-email-collaborative-solutions-mx-plan>.
-
 ## Quer saber mais?
 
 [Transferir o meu site para a OVHcloud](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh){.external} (Versão PT disponível em breve)

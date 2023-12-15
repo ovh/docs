@@ -1,7 +1,7 @@
 ---
 title: "Primeros pasos en un alojamiento web"
 excerpt: "Descubra cómo empezar con un alojamiento web"
-updated: 2023-11-16
+updated: 2023-12-15
 ---
 
 > [!primary]
@@ -69,11 +69,19 @@ Esta solución utiliza los módulos de OVHcloud, una herramienta que permite ins
 Para poder instalar el módulo de OVHcloud, debe asegurarse de lo siguiente:
 
 - El directorio de instalación del módulo debe estar vacío (si todavía no se ha conectado a su espacio de almacenamiento, estará vacío).
-- Ya debe haber creado una base de datos en su alojamiento (abra la pestaña `Bases de datos`{.action} y haga clic en `Crear una base de datos`{.action} para realizar la operación).
+- Ya debe haber creado una base de datos en su alojamiento.
 
-Para crear la base de datos, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}.Haga clic en `Alojamientos`{.action} y seleccione su alojamiento web. A continuación, abra la pestaña `Bases de datos`{.action} y haga clic en el botón `Crear una base de datos`{.action}. Complete la información solicitada y espere a que se efectúe la instalación.
+Para crear la base de datos, conéctese al [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external} y acceda a la sección `Web Cloud`{.action}. En la columna izquierda, haga clic en `Alojamientos`{.action} y seleccione el nombre del alojamiento correspondiente.
 
-![Acceso a los módulos en un clic](images/create-a-database-2.png){.thumbnail} 
+En la pestaña `Bases de datos`{.action}, existen dos situaciones posibles: 
+
+- **Tiene al menos una base de datos disponible en "creación" en su alojamiento web** : haga clic en el botón `Acciones`{.action} sobre la tabla que se muestra y luego en el botón `Crear una base de datos`{.action}.
+
+![Acceso a los módulos en un clic](images/create-a-database-2.png){.thumbnail}
+
+- **No tiene más bases de datos disponibles en "creación" en su alojamiento web** : haga clic en el botón `Acciones`{.action} situado sobre la tabla que se muestra. Podrá (a elegir):
+    - Contratar una base de datos [Start SQL](https://www.ovhcloud.com/es-es/web-hosting/options/start-sql/) como complemento de las bases de datos incluidas con el plan de hosting. Para ello, haga clic en el botón `Acciones`{.action} situado sobre la tabla y seleccione el botón `Contratar una base de datos`{.action}.
+    - Contratar un servidor de bases de datos [Web Cloud Databases](https://www.ovhcloud.com/es-es/web-cloud/databases/). Para ello, haga clic en el botón `Acciones`{.action} situado sobre la tabla y seleccione el botón `Contratar una base de datos Web Cloud Databases`{.action}. A continuación, consulte nuestra guía "[Primeros pasos con su Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)" para crear una base de datos en esta solución.
 
 Para instalar el módulo en un clic, una vez creada la base de datos abra la pestaña `Módulos en un clic`{.action} y haga clic en el botón `Añadir un módulo`{.action}. A continuación, seleccione el CMS que quiera instalar, asegúrese de que la casilla **Instalación en modo avanzado** esté marcada y haga clic en el botón `Siguiente`{.action}.
 
@@ -85,7 +93,12 @@ Si desea más información sobre la instalación de un módulo en modo avanzado,
 
 #### Solución manual que requiere conocimientos técnicos
 
-Esta solución es útil si desea crear o migrar un sitio web sin utilizar los módulos de OVHcloud. Para ello, debe tener los archivos del sitio web que desea instalar, ya que deberá conectarse manualmente a su espacio de almacenamiento para subir dichos archivos y luego, si es posible, conectar su sitio a una base de datos previamente creada.
+Esta solución es útil si quiere crear o migrar un sitio web sin utilizar los módulos de OVHcloud. Es necesario tener los archivos del sitio web que quiera instalar. Deberá [conectarse manualmente a su espacio de almacenamiento FTP](/pages/web_cloud/web_hosting/ftp_connection) para descargar los archivos del sitio web y, si es posible, asociar el sitio web a una base de datos previamente creada.
+
+> [!success]
+>
+> Si ha olvidado la contraseña de acceso a su espacio de almacenamiento FTP, modifíquela utilizando nuestra guía "[Cambiar la contraseña de acceso al espacio de almacenamiento FTP de su alojamiento web](/pages/web_cloud/web_hosting/ftp_change_password)".
+>
 
 No existe un procedimiento universal, ya que cada sitio web es diferente, pero podemos orientarle sobre las operaciones que deberá realizar en su alojamiento web de OVHcloud en las guías [Publicar un sitio web en internet](/pages/web_cloud/web_hosting/hosting_how_to_get_my_website_online) y [Transferir un sitio web y el correo sin cortes del servicio](/pages/web_cloud/web_hosting/hosting_migrating_to_ovh). Una vez haya instalado el sitio web manualmente en su alojamiento, continúe con los pasos explicados a continuación.
 
@@ -129,13 +142,13 @@ Para comprobar los registros MX que debe utilizar en la zona de su dominio, con�
 
 Una vez conozca los registros DNS asociados a su alojamiento web de OVHcloud, deberá comprobarlos y corregirlos si fuera necesario. El procedimiento para realizar la operación varía en función del proyecto.
 
-**Si el dominio se ha contratado junto con un plan de hosting de OVH**
+**Si el dominio se ha contratado junto con un plan de hosting de OVHcloud**
 
 La configuración de su dominio es correcta y puede pasar a la siguiente etapa. No obstante, si ha realizado alguna modificación en la zona DNS de su dominio desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}, es posible que deba revisarla.
     
 Para acceder a la zona de DNS de su dominio de OVHcloud, haga clic en `Dominios`{.action} y seleccione el nombre de dominio. A continuación, abra la pestaña `Zona DNS`{.action} y revise la información, modificándola cuando sea necesario.
 
-**Si el nombre de dominio no utiliza la zona DNS de OVH**
+**Si el nombre de dominio no utiliza la zona DNS de OVHcloud**
     
 Compruebe la zona DNS de su dominio directamente con el proveedor que lo gestiona. Si es necesario, modifique la información.
 
