@@ -10,9 +10,9 @@ updated: 2023-12-15
 
 ## Wprowadzenie <a name="goal"></a>
 
-Internet składa się z *serwerów* i *urządzeń*, które współdziałają ze sobą w sieci globalnej. Jeśli te *serwery* i ich *urządzenia* są połączone z siecią internetową, przydzielany jest im *publiczny adres IP* (równoważny adresowi pocztowemu). *Ten adres IP* umożliwia zdalne połączenie z serwerem lub urządzeniem, dzięki czemu użytkownik może wejść na stronę WWW, wprowadzając ten *adres IP* za pomocą przeglądarki internetowej zainstalowanej na jego komputerze.
+Internet składa się z serwerów i urządzeń, które współdziałają ze sobą w sieci globalnej. Jeśli te serwery i ich urządzenia są połączone z siecią internetową, przydzielany jest im **publiczny adres IP** (równoważny adresowi pocztowemu). Ten adres IP umożliwia zdalne połączenie z serwerem lub urządzeniem, dzięki czemu użytkownik może wejść na stronę WWW, wprowadzając ten adres IP za pomocą przeglądarki internetowej zainstalowanej na jego komputerze.
 
-**Domeny** zostały wprowadzone, aby ułatwić dostęp do witryny internetowej użytkownikom sieci Internet. Łatwiej jest bowiem zapamiętać nazwę składającą się z wybranego ciągu znaków (przykład: ovhcloud.com), a nie z ciągu cyfr składającego się z *adresu IP* (przykład: 54.39.46.56).
+**Domeny** zostały wprowadzone, aby ułatwić dostęp do witryny internetowej użytkownikom sieci Internet. Łatwiej jest bowiem zapamiętać nazwę składającą się z wybranego ciągu znaków (przykład: ovhcloud.com), a nie z ciągu cyfr składającego się z adresu IP (przykład: 54.39.46.56).
 
 **Nazwa domeny** składa się z poziomów. Poziomy te są zazwyczaj oddzielone znakiem `.` (z wyjątkiem niektórych **rozszerzeń** od *pierwszego poziomu*, takich jak *.co.uk*, *.gouv.fr* i *.notaires.fr*):
 
@@ -26,7 +26,7 @@ Internet składa się z *serwerów* i *urządzeń*, które współdziałają ze 
 
 - **S**econd **L**evel **D**omain (**SLD**): reprezentuje domeny *drugiego poziomu*. Najczęściej nazywamy je **labels**. W przypadku zamówienia domeny możesz dowolnie zdefiniować **label** (pod warunkiem, że nie została ona wcześniej zarejestrowana przez innego użytkownika dla tego samego rozszerzenia i z ograniczeniem do 63 znaków). Na przykład *ovhcloud* to etykieta domeny *ovhcloud.com*.
 
-- Third Level Domain (**subdomain**): Od tego trzeciego poziomu mówimy o *subdomenie*. W tym przewodniku wyjaśnimy szczegółowo jego definicję i wyjaśnimy, jak wdrożyć je w ramach Twoich różnych usług.
+- Third Level Domain (**subdomain**): Od tego trzeciego poziomu mówimy o **subdomenie**. W tym przewodniku wyjaśnimy szczegółowo jego definicję i wyjaśnimy, jak wdrożyć je w ramach Twoich różnych usług.
 
 ![URL content](images/url-composition.png){.thumbnail}
   
