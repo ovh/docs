@@ -1,7 +1,7 @@
 ---
 title: "Erstellung einer Subdomain"
 excerpt: "Erfahren Sie hier, wie Sie eine Subdomain bei OVHcloud erstellen und nutzen"
-updated: 2023-11-28
+updated: 2023-12-15
 ---
 
 > [!primary]
@@ -10,7 +10,7 @@ updated: 2023-11-28
 
 ## Ziel <a name="goal"></a>
 
-Das Internet besteht aus *Servern* und *Geräten*, die über ein globales Netzwerk miteinander interagieren. Wenn diese *Server* und ihre *Geräte* mit dem Internet verbunden sind, wird ihnen eine *öffentliche IP-Adresse* (entspricht einer Postadresse) zugewiesen. Diese *IP-Adresse* ermöglicht es, sich mit einem Server oder einem Gerät zu verbinden. Das bedeutet, dass ein Benutzer über einen Webbrowser auf eine Website zugreifen kann, indem er diese *IP-Adresse* eingibt.
+Das Internet besteht aus Servern und Geräten, die über ein globales Netzwerk miteinander interagieren. Wenn diese *Server* und ihre *Geräte* mit dem Internet verbunden sind, wird ihnen eine **öffentliche IP-Adresse** (entspricht einer Postadresse) zugewiesen. Diese IP-Adresse ermöglicht es, sich mit einem Server oder einem Gerät zu verbinden. Das bedeutet, dass ein Benutzer über einen Webbrowser auf eine Website zugreifen kann, indem er diese IP-Adresse eingibt.
 
 Die **Domainnamen** wurden eingerichtet, um den Benutzern des Internets den Zugriff auf eine Website zu erleichtern. So ist es einfacher, sich einen Namen zu merken, der aus einer ausgewählten Zeichenfolge besteht (Beispiel: ovhcloud.com), als eine Folge von Ziffern, aus denen eine *IP-Adresse* besteht (Beispiel: 54.39.46.56).
 
