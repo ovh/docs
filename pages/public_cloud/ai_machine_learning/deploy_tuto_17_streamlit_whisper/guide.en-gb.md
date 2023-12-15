@@ -87,16 +87,16 @@ You can create your Object Storage bucket using either the UI (OVHcloud Control 
 >> 
 >> ![image](images/new-object-container.png){.thumbnail}
 >>
->> You can create the bucket that will store your Whisper model. Select the container *type* and the *alias* that match your needs, and name it as you wish. *`GRA` alias and `whisper-model` name will be used in this tutorial.*
+>> You can create the bucket that will store your Whisper model. Select the container *type* and the *datastore_alias* that match your needs, and name it as you wish. *`GRA` alias and `whisper-model` name will be used in this tutorial.*
 >>
 > **Using ovhai CLI**
 >>
 >> To follow this part, make sure you have installed the [ovhai CLI](https://cli.bhs.ai.cloud.ovh.net/) on your computer or on an instance.
 >>
->> As in the Control Panel, you will have to specify the `alias` and the `name` of your bucket. Create your Object Storage bucket as follows:
+>> As in the Control Panel, you will have to specify the `datastore_alias` and the `name` of your bucket. Create your Object Storage bucket as follows:
 >>
 >> ```bash
->> ovhai bucket create <alias> <bucket_name>
+>> ovhai bucket create <datastore_alias> <bucket_name>
 >> ```
 >> 
 >> You can access the full alias list by running:
@@ -141,14 +141,14 @@ ovhai job run ovhcom/ai-training-pytorch \
 >
 > The second one indicates where the model will be saved. **It must be the same place** as where you mounted the first volume. This will allow the model to be backed up in the bucket, and not in the job's ephemeral storage. Here, we use the `/workspace/whisper-model` path.
 >
-> Moreover, you may have to **change the bucket name and alias** of the last `--volume` parameter, based on the name you gave to it and the alias where you created it.
+> Moreover, you may have to **change the bucket name and datastore_alias** of the last `--volume` parameter, based on the name you gave to it and the alias where you created it.
 
 The job will then be launched. It will take a few minutes for the two volumes to be added to the job, the environment to be installed and the Whisper model to be downloaded and synchronized with your bucket (`FINALZING` status).
 
 If you have configured your volumes correctly with the right permissions, and given the right paths to the python script, then you should see your Whisper model in your bucket. This can be checked on the Control Panel, or with the CLI with the following command, that will list all the objects of your bucket:
 
 ```bash
-`ovhai bucket object list <bucket_name>@<alias>`
+`ovhai bucket object list <bucket_name>@<datastore_alias>`
 ```
 
 *Following the example given in this tutorial, we will use:
