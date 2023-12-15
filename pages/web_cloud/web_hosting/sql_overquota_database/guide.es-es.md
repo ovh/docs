@@ -1,7 +1,7 @@
 ---
 title: "Web hosting: mi base de datos está saturada, ¿qué hago?"
 excerpt: "Descubra cómo actuar cuando la base de datos está saturada"
-updated: 2023-11-30
+updated: 2023-12-13
 ---
 
 > [!primary]
@@ -62,7 +62,7 @@ Conéctese a su [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=
 
 En la parte inferior de la pantalla aparece una tabla con las bases de datos.
 
-![phpMyAdmin Access](images/pma_access.png){.thumbnail}
+![phpMyAdmin Access](images/manager-webcloud-webhosting-databases-3p-go-to-pma.png){.thumbnail}
 
 Tenga en cuenta que **para su base de datos saturada**, su `Nombre de usuario` y su `Dirección del servidor` aparecen en la tabla que enumera sus bases de datos. 
 
@@ -123,6 +123,11 @@ Una vez que haya determinado si el contenido de las tablas es necesario para el 
 #### Caso n°1 - Todo el contenido de la tabla voluminosa es necesario para el buen funcionamiento de su sitio web
 
 Deberá bascular su base de datos con una base de datos más voluminosa.
+
+> [!primary]
+>
+> Para aumentar el tamaño asignado a la base de datos, es necesario crear una nueva base de datos más grande y copiar el contenido de la antigua en la nueva. No es posible aumentar directamente el tamaño de una base de datos asociada a un alojamiento web.
+>
 
 Consulte nuestra oferta de bases de datos [Web Cloud Databasess](https://www.ovhcloud.com/es-es/web-cloud/databases/) para elegir su nuevo servicio de bases de datos. 
 
