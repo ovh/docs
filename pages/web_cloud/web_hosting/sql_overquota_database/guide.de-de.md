@@ -125,7 +125,7 @@ Führen Sie ein Upgrade Ihres Datenbankdienstes auf ein Angebot durch, das mehr 
 
 > [!primary]
 >
-> Um die Größe Ihrer Datenbank zu erhöhen, müssen Sie eine neue, größere Datenbank erstellen und den Inhalt der alten Datenbank in die neue Datenbank kopieren. Es ist nicht möglich, die Größe einer Datenbank direkt zu vergrößern, die mit einem Webhosting verbunden ist.
+> Um die Größe Ihrer Datenbank zu erhöhen, müssen Sie eine neue, größere Datenbank erstellen und den Inhalt der alten Datenbank in die neue Datenbank kopieren. Es ist nicht möglich, die Größe einer Datenbank, die mit einem Webhosting verbunden ist, direkt zu vergrößern.
 >
 
 Konsultieren Sie unsere Angebotsseite [Web Cloud Databases](https://www.ovhcloud.com/de/web-cloud/databases/), um sich über die Optionen zu informieren. 
