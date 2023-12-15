@@ -11,7 +11,7 @@ updated: 2023-12-12
 
 ## Introduction
 
-OpenAI's Whisper large-v3 is the latest iteration of the open-source Whisper Automatic Speech Recognition (ASR) model. 
+[OpenAI's Whisper](https://openai.com/research/whisper) large-v3 is the latest iteration of the open-source Whisper Automatic Speech Recognition (ASR) model. 
 
 Released on November 6, 2023, Whisper large-v3 has gained recognition in various benchmarks as the top-performing automatic speech recognition (ASR) model. This is why it represents the state of the art in the ASR field. More generally, Whisper has become a powerful tool for transcribing speech in approximately 100 languages, including non-english speech transcription and translation into English.
 
@@ -87,19 +87,27 @@ You can create your Object Storage bucket using either the UI (OVHcloud Control 
 >> 
 >> ![image](images/new-object-container.png){.thumbnail}
 >>
->> You can create the bucket that will store your Whisper model. Select the container *type* and the *region* that match your needs, and name it as you wish. *`GRA` region and `whisper-model` name will be used in this tutorial.*
+>> You can create the bucket that will store your Whisper model. Select the container *type* and the *alias* that match your needs, and name it as you wish. *`GRA` alias and `whisper-model` name will be used in this tutorial.*
 >>
 > **Using ovhai CLI**
 >>
 >> To follow this part, make sure you have installed the [ovhai CLI](https://cli.bhs.ai.cloud.ovh.net/) on your computer or on an instance.
 >>
->> As in the Control Panel, you will have to specify the `region` and the `name` of your bucket. Create your Object Storage bucket as follows:
+>> As in the Control Panel, you will have to specify the `alias` and the `name` of your bucket. Create your Object Storage bucket as follows:
 >>
 >> ```bash
->> ovhai bucket create <region> <bucket_name>
+>> ovhai bucket create <alias> <bucket_name>
 >> ```
 >> 
->> *`GRA` region and `whisper-model` will be used in this tutorial.*
+>> You can access the full alias list by running:
+>>
+>> ```bash
+>> ovhai datastore list
+>> ```
+>> 
+>> To avoid encountering latencies, a good practice is to use the same alias as the one on which you are going to deploy your AI Solutions.
+>> 
+>> *`GRA` alias and `whisper-model` will be used in this tutorial.*
 >>
 >> For your information, the previous command is applicable to both Swift and S3 buckets. However, it's important to note that for S3 usage, proper configuration is necessary. If S3 is not configured yet and you wish to use it, please consult the [S3 compliance guide](/pages/public_cloud/ai_machine_learning/gi_08_s3_compliance).
 
@@ -111,7 +119,7 @@ Using 5 CPUs will be enough to download the model, ensuring sufficient memory re
 
 Two volumes will be associated with this job:
 - The first volume will contain the `ai-training-examples` [GitHub repository](https://github.com/ovh/ai-training-examples/), containing the Python script used to download the Whisper model. For security, this volume is configured with Read-Only (RO) permission, as we just need access to the Python script, located at `ai-training-examples/apps/streamlit/whisper/download_model.py`
-- The second volume corresponds to the created bucket, where we will store the Whisper model once downloaded. Therefore, this bucket needs to be with Read-Write (RW) permission, since we will write in it. Make sure to name it correctly, and specify the region you used during bucket creation.
+- The second volume corresponds to the created bucket, where we will store the Whisper model once downloaded. Therefore, this bucket needs to be with Read-Write (RW) permission, since we will write in it. Make sure to name it correctly, and specify the alias you used during bucket creation.
 
 To launch this job, we will use a `pip install` command, to install the necessary libraries (from the `ai-training-examples/apps/streamlit/whisper/requirements.txt` file), and subsequently, we will execute the python script for Whisper download. 
 
@@ -133,14 +141,14 @@ ovhai job run ovhcom/ai-training-pytorch \
 >
 > The second one indicates where the model will be saved. **It must be the same place** as where you mounted the first volume. This will allow the model to be backed up in the bucket, and not in the job's ephemeral storage. Here, we use the `/workspace/whisper-model` path.
 >
-> Moreover, you may have to **change the bucket name and region** of the last `--volume` parameter, based on the name you gave to it and the region where you created it.
+> Moreover, you may have to **change the bucket name and alias** of the last `--volume` parameter, based on the name you gave to it and the alias where you created it.
 
 The job will then be launched. It will take a few minutes for the two volumes to be added to the job, the environment to be installed and the Whisper model to be downloaded and synchronized with your bucket (`FINALZING` status).
 
 If you have configured your volumes correctly with the right permissions, and given the right paths to the python script, then you should see your Whisper model in your bucket. This can be checked on the Control Panel, or with the CLI with the following command, that will list all the objects of your bucket:
 
 ```bash
-`ovhai bucket object list <bucket_name>@<region>`
+`ovhai bucket object list <bucket_name>@<alias>`
 ```
 
 *Following the example given in this tutorial, we will use:
@@ -279,7 +287,7 @@ ovhai app run <shared-registry-address>/whisper_app:latest \
 >
 > - `--gpu 1` indicates that we request 1 GPU for that app.
 >
-> - `--volume` allows you to specify what volume you want to add to your app. As mentioned, we add the **Whisper** bucket we created, in `RO` mode. This means that we will only be able to read the data from these volumes and not modify them. This will enable the model to be used. As before, make sure to use the same bucket name and region as when you created the bucket.
+> - `--volume` allows you to specify what volume you want to add to your app. As mentioned, we add the **Whisper** bucket we created, in `RO` mode. This means that we will only be able to read the data from these volumes and not modify them. This will enable the model to be used. As before, make sure to use the same bucket name and alias as when you created the bucket.
 >
 > `--env` parameter allows to set environment variables within the Docker container, that will be accessed in the Python scripts. Two values are specified `MODEL_ID` & `MODEL_PATH`. This will allow the code to load the model from the right place, depending on the one you have chosen (`MODEL_ID`=`"large-v3"`), and the path where you have mounted your Whisper model volume (`MODEL_PATH`=`"/workspace/whisper-model"`).
 >
