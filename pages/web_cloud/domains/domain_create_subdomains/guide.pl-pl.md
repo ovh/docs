@@ -99,8 +99,8 @@ Możliwe są dwa przypadki:
 
 Jeśli serwery DNS zadeklarowane dla Twojej domeny mają jedną z dwóch form:
 
-- *dnsXX.ovh.net* i *nsXX.ovh.net* (gdzie każdy z "X" odpowiada cyfrze);
-- *dns200.anycast.me* i *ns200.anycast.me*.
+- `dnsXX.ovh.net` i `nsXX.ovh.net` (gdzie każdy z "X" odpowiada cyfrze);
+- `dns200.anycast.me` i `ns200.anycast.me`.
 
 Oznacza to, że aktywna strefa DNS Twojej domeny jest aktywna w OVHcloud.
 

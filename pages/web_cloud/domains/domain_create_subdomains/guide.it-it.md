@@ -99,8 +99,8 @@ Sono possibili due scenari:
 
 Se i server DNS dichiarati per il tuo dominio hanno una di queste due forme:
 
-- *dnsXX.ovh.net* e *nsXX.ovh.net* (dove ognuna delle "X" rappresenta una cifra);
-- *dns200.anycast.me* e *ns200.anycast.me*.
+- `dnsXX.ovh.net` e `nsXX.ovh.net` (dove ognuna delle "X" rappresenta una cifra);
+- `dns200.anycast.me` e `ns200.anycast.me`.
 
 Questo significa che la zona DNS attiva del dominio è attiva in OVHcloud.
 
