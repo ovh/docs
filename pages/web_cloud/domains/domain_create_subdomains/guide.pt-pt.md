@@ -122,7 +122,7 @@ Por exemplo, poderá adicionar:
 >
 > Como tal, a criação de um registo DNS para um subdomínio, por si só, não é suficiente para executar o serviço "destino" que definiu no registo DNS. 
 >
-> De facto, por razões de segurança, deverá também autorizar que o subdomínio tenha acesso ao serviço *alvo* (alojamento web, e-mail, etc.).
+> De facto, por razões de segurança, deverá também autorizar que o subdomínio tenha acesso ao serviço "alvo" (alojamento web, e-mail, etc.).
 >
 
 Na parte seguinte, descubra como autorizar um subdomínio a poder aceder aos diferentes serviços do universo "Web Cloud" (alojamento web, servidor Exchange, etc.) propostos pela OVHcloud.
