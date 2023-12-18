@@ -1,7 +1,7 @@
 ---
 title: "Risolvi gli errori più frequenti associati ai database"
 excerpt: "Diagnostica i casi di errore più frequenti associati ai database"
-updated: 2023-10-26
+updated: 2023-12-18
 ---
 
 > [!primary]
@@ -99,7 +99,7 @@ Tre metodi ti permettono di sbloccare il tuo database:
 
 ##### Metodo 1: attiva il tuo abbonamento su un'offerta superiore
 
-Se disponi di una formula **Personale2014** o **Pro2014***, ti consigliamo di passare all'[offerta di hosting superiore](https://www.ovhcloud.com/it/web-hosting/). La modifica dell'abbonamento aumenterà la dimensione del tuo database e la riaprirà automaticamente. Si tratta del metodo più semplice e non richiede particolari competenze tecniche.
+Se disponi di una formula **PersonalePersonale** o **Pro***, ti consigliamo di passare all'[offerta di hosting superiore](https://www.ovhcloud.com/it/web-hosting/). La modifica dell'abbonamento aumenterà la dimensione del tuo database e la riaprirà automaticamente. Si tratta del metodo più semplice e non richiede particolari competenze tecniche.
 
 > [!warning]
 >
