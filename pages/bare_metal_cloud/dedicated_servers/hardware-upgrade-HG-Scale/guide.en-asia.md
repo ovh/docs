@@ -28,11 +28,11 @@ In the `Hardware`{.action} section, click on `Increase RAM`{.action}.
 
 ![increase RAM](images/increaseram.png)
 
-In the next tab, select the desired ram option and click on `Order`{.action}.
+In the next tab, select the desired RAM option and click on `Order`{.action}.
 
 ![storage option](images/selectram.png){.thumbnail}
 
-Once the order is paid, a confirmation email will be sent to your account with a link to schedule the intervention for the ram upgrade.
+Once the order is paid, a confirmation email will be sent to your account with a link to schedule the intervention for the RAM upgrade.
 
 When you click on the link provided in the email, you will be redirected to the dedicated server's dashboard. This time, click on `Schedule your intervention`{.action}.
 

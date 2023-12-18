@@ -34,7 +34,7 @@ Dans l'onglet suivant, sélectionnez l'option de RAM souhaitée et cliquez sur `
 
 ![storage option](images/selectram.png){.thumbnail}
 
-Une fois la commande payée, un e-mail de confirmation sera envoyé à votre compte avec un lien pour planifier l'intervention pour la mise à jour du matériel.
+Une fois la commande payée, un e-mail de confirmation sera envoyé à votre compte avec un lien pour planifier l'intervention pour la mise à jour de la RAM.
 
 En cliquant sur le lien présent dans l’e-mail, vous serez redirigé vers le tableau de bord du serveur dédié. Cette fois, cliquez sur `Planifier votre intervention`{.action}.
 
@@ -58,7 +58,7 @@ Dans l'onglet suivant, sélectionnez l'option de stockage souhaitée et cliquez 
 
 ![option de stockage](images/selectstorage.png){.thumbnail}
 
-Une fois la commande payée, un e-mail de confirmation sera envoyé à votre compte avec un lien pour planifier l'intervention pour la mise à jour du matériel.
+Une fois la commande payée, un e-mail de confirmation sera envoyé à votre compte avec un lien pour planifier l'intervention pour la mise à jour du stockage.
 
 En cliquant sur le lien présent dans l’e-mail, vous serez redirigé vers le tableau de bord du serveur dédié. Cette fois, cliquez sur `Planifier votre intervention`{.action}.
 
