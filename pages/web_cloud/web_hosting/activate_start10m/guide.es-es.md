@@ -1,7 +1,7 @@
 ---
 title: "Activar el Alojamiento gratuito 100M"
 excerpt: "Descubra cómo activar su Alojamiento gratuito 100M"
-updated: 2023-11-10
+updated: 2023-12-18
 ---
 
 > [!primary]

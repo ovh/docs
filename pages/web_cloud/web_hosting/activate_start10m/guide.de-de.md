@@ -1,7 +1,7 @@
 ---
 title: "Kostenloses Hosting 100M aktivieren"
 excerpt: "Diese Anleitung erklärt, wie Sie Ihr kostenloses Hosting 100M aktivieren"
-updated: 2023-11-10
+updated: 2023-12-18
 ---
 
 > [!primary]

@@ -1,7 +1,7 @@
 ---
 title: "Activer l’hébergement gratuit 100M"
 excerpt: "Découvrez comment activer votre hébergement gratuit 100M"
-updated: 2023-11-10
+updated: 2023-12-18
 ---
 
 ## Objectif
