@@ -100,7 +100,7 @@ Trois méthodes vous permettront de débloquer votre base de données :
 
 #### Méthode 1 : passer votre abonnement sur une offre supérieure
 
-Si vous disposez d'une formule **Perso2014** ou **Pro2014**, nous vous conseillons dans cette situation de passer sur l'[offre d'hébergement supérieure](https://www.ovhcloud.com/fr/web-hosting/). Ce changement d'abonnement augmentera la taille de votre base de données, ce qui la réouvrira automatiquement. Cette méthode est la plus simple et ne nécessite aucune compétence technique particulière.
+Si vous disposez d'une formule **Perso** ou **Pro**, nous vous conseillons dans cette situation de passer sur l'[offre d'hébergement supérieure](https://www.ovhcloud.com/fr/web-hosting/). Ce changement d'abonnement augmentera la taille de votre base de données, ce qui la réouvrira automatiquement. Cette méthode est la plus simple et ne nécessite aucune compétence technique particulière.
 
 > [!warning]
 >
