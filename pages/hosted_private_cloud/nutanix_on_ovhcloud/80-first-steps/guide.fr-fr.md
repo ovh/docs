@@ -1,5 +1,5 @@
 ---
-title: Premiers pas avec votre cluster Nutanix 
+title: Premiers pas avec votre cluster Nutanix
 excerpt: Quelle sont les premières opérations à faire sur le cluster pour bien débuter ?
 updated: 2023-12-18
 ---
@@ -8,8 +8,8 @@ updated: 2023-12-18
 
 Ce guide vous présente les opérations que vous devez réaliser pour bien débuter avec votre cluster Nutanix on OVHcloud :
 
-- déployer une VM de rebond ;
-- sécuriser le cluster.
+- [Déployer une VM de rebond](#deploy-vm)
+- [Sécuriser le cluster](#secure-cluster)
 
 > [!warning]
 > OVHcloud vous met à disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous appartient donc de ce fait d’en assurer le bon fonctionnement.
@@ -28,12 +28,14 @@ Ce guide vous présente les opérations que vous devez réaliser pour bien débu
 
 ## En pratique
 
-### Déployer une VM de rebond
+### Déployer une VM de rebond <a name="deploy-vm"></a>
 
 La VM de rebond va vous servir de point d'entrée pour les opérations que vous aurez à effectuer pour sécuriser votre cluster.
 Elle peut également vous servir de relais pour atteindre d'autres VM après la mise en production.
 
-#### Rebond via SSH
+Continuez la lecture de ce guide selon votre OS : [Linux - Rebond via SSH](#ssh) ou [Windows - Rebond via RDP](#rdp).
+
+#### Rebond via SSH <a name="ssh"></a>
 
 ##### Création et configuration de la VM Linux
 
@@ -45,10 +47,10 @@ Dans cet exemple, la configuration du réseau est la suivante :
 
 > [!warning]
 > Adaptez cette configuration à votre cluster.
-> Vous pouvez retrouver ces informations en interrogant l'[API OVHcloud](https://api.ovh.com/).
+> Vous pouvez retrouver ces informations en interrogeant l'[API OVHcloud](https://api.ovh.com/console/#/nutanix/%7BserviceName%7D~GET).
 >
 
-Importez votre image Linux dans le cluster. Consultez notre guide sur l'[importation d'images dans Nutanix](/pages/hosted_private_cloud/nutanix_on_ovhcloud/05-image-import).
+Importez votre image Linux dans le cluster. Pour plus de détails, consultez notre guide sur l'[importation d'images dans Nutanix](/pages/hosted_private_cloud/nutanix_on_ovhcloud/05-image-import).
 
 Dans le menu de gauche de **Prism Central**, dépliez `Compute & Storage`{.action} et cliquez sur `VMs`{.action}.
 
@@ -86,7 +88,7 @@ Selectionnez cloud-init, copiez le script "cloud-init" puis cliquez sur `Next`{.
 
 > [!warning]
 > Adaptez cette configuration à votre cluster.
-> Vous pouvez retrouver ces informations en interrogant l'[API OVHcloud](https://api.ovh.com/).
+> Vous pouvez retrouver ces informations en interrogeant l'[API OVHcloud](https://api.ovh.com/console/#/nutanix/%7BserviceName%7D~GET).
 > Adaptez en particulier le mot de passe et la configuration IP.
 >
 
@@ -221,7 +223,7 @@ ssh nutanix@ipcvm
 
 ![Connect to CVM](images/cvm-ssh-linux.PNG){.thumbnail}
 
-#### Rebond via RDP
+#### Rebond via RDP <a name="rdp"></a>
 
 ##### Création et configuration de la VM Windows
 
@@ -239,7 +241,7 @@ Saisissez un nom dans `Name`{.action}, choisissez les options dans `VM Propertie
 
 ![Création d'une machine virtuelle - Etape 1](images/CreateVM01.PNG){.thumbnail}
 
-###### Ajout d'un disque système
+1\. **Ajout d'un disque système**
 
 Cliquez sur le bouton`Attach Disk`{.action}.
 
@@ -249,11 +251,11 @@ Saisissez **60** dans le champ `capacity` et cliquez sur `Save`{.action} pour cr
 
 ![Création d'une machine virtuelle - Etape 3](images/CreateVM03.PNG){.thumbnail}
 
-###### Ajout de l'image ISO de l'installation de Windows Server 2022
+2\. **Ajout de l'image ISO de l'installation de Windows Server 2022**
 
 L'image doit être importée avant d'être utilisable dans une nouvelle machine virtuelle.
 
-Pour plus de détails sur l'importation d'images, reportez-vous à la section « [Aller plus loin](#gofurther) » de ce guide.
+Pour plus de détails sur l'importation d'images, consultez notre guide sur l'[importation d'images dans Nutanix](/pages/hosted_private_cloud/nutanix_on_ovhcloud/05-image-import).
 
 Cliquez sur `Attach Disk`{.action}.
 
@@ -265,7 +267,7 @@ Cliquez sur `Save`{.action}.
 
 ![Création d'une machine virtuelle - Etape 5](images/CreateVM05.PNG){.thumbnail}
 
-###### Ajout de l'image ISO contenant les pilotes spécifiques à AHV
+3\. **Ajout de l'image ISO contenant les pilotes spécifiques à AHV**
 
 Cette image contient notamment le pilote du contrôleur de disques et doit aussi être importée. Elle est disponible sur le site Internet de Nutanix si vous disposez d'un compte client Nutanix.
 
@@ -279,7 +281,7 @@ Cliquez sur `Save`{.action}.
 
 ![Création d'une machine virtuelle - Etape 7](images/CreateVM07.PNG){.thumbnail}
 
-###### Configuration du réseau
+4\. **Configuration du réseau**
 
 Cliquez sur `Attach Subnet`{.action}.
 
@@ -311,19 +313,19 @@ Sélectionnez la machine virtuelle sur laquelle vous souhaitez installer Windows
 
 ![Installation - WS2022 - Lancement](images/InstallWS2022-01.PNG){.thumbnail}
 
-###### Démarrer la machine virtuelle
+1\. **Démarrer la machine virtuelle**
 
 Cliquez sur le menu `Actions`{.action} puis sur `Power ON`{.action}.
 
 ![Installation - WS2022 - Démarrage ](images/InstallWS2022-02.PNG){.thumbnail}
 
-###### Lancer la console
+2\. **Lancer la console**
 
 Cliquez sur le menu `Actions`{.action} puis sur `Launch Console`{.action}.
 
 ![Installation - WS2022 - Connexion à l'interface ](images/InstallWS2022-03.PNG){.thumbnail}
 
-###### Commencer l'installation
+3\. **Commencer l'installation**
 
 Choisissez vos paramètres régionaux et cliquez sur `Next`{.action}.
 
@@ -380,7 +382,7 @@ L'installation de Windows Server 2022 et des pilotes spécifiques à WS2022 pour
 
 ![Installation - WS2022- Etape9](images/InstallWS2022-15.PNG){.thumbnail}
 
-###### Configuration de Windows
+4\. **CConfiguration de Windows**
 
 Connectez-vous puis attribuez une adresse IP à la machine dans le réseau "infra".
 Dans cet exemple la configuration du réseau est la suivante :
@@ -391,7 +393,7 @@ Dans cet exemple la configuration du réseau est la suivante :
 
 > [!warning]
 > Adaptez cette configuration à votre cluster.
-> Vous pouvez retrouver ces informations en interrogant l'[API OVHcloud](https://api.ovh.com/).
+> Vous pouvez retrouver ces informations en interrogeant l'[API OVHcloud](hhttps://api.ovh.com/console/#/nutanix/%7BserviceName%7D~GET).
 >
 
 ![Configuration - WS2022 - Etape1](images/ConfigWS2022-1.PNG){.thumbnail}
@@ -467,7 +469,7 @@ Dans l'onglet `Tâches`{.action}, vous pourrez suivre l'avancement de l'applicat
 Le Load Balancer est désormais configuré. Utilisez votre client RDP préféré pour vous connecter sur votre machine.
 Vous pouvez saisir le nom DNS de votre cluster ou l'IP du Load Balancer :
 
-![Configure Load Balancer 11](images/ConfigLB11.PNG){.thumbnail}
+![Configure Load Balancer 11](images/config-lb8-rdp.PNG){.thumbnail}
 
 Vous pouvez désormais rebondir sur les différents éléments du cluster :
 
@@ -483,11 +485,11 @@ ssh nutanix@ipcvm
 
 ![Connect to CVM](images/cvm-ssh-windows.PNG){.thumbnail}
 
-### Sécuriser le cluster 
+### Sécuriser le cluster <a name="secure-cluster"></a>
 
 Pour sécuriser votre cluster, il est recommandé de changer les mots de passe. Utilisez la base de connaissances de Nutanix pour effectuer ces opérations : [kb6153 - Secure your Nutanix cluster](https://portal.nutanix.com/page/documents/kbs/details?targetId=kA00e000000LKXcCAO).
 
-Vous pouvez également [sécuriser l'accès à Prism Central](/pages/hosted_private_cloud/nutanix_on_ovhcloud/25-secure-prism-web-access)
+Vous pouvez également [sécuriser l'accès à Prism Central](/pages/hosted_private_cloud/nutanix_on_ovhcloud/25-secure-prism-web-access).
 
 ## Aller plus loin
 
