@@ -57,7 +57,7 @@ Importez votre image Linux dans le cluster. Pour plus de détails, consultez not
 
 Dans le menu de gauche de **Prism Central**, dépliez `Compute & Storage`{.action} et cliquez sur `VMs`{.action}.
 
-![Tableau de Bord Prism Central - Menu VMs](images/PrismCentralDashBooardWithVMMenu.PNG){.thumbnail}
+![Tableau de Bord Prism Central - Menu VMs](images/PrismCentralDashBoardWithVMMenu.PNG){.thumbnail}
 
 Cliquez sur le bouton `Create VM`{.action}.
 
@@ -234,7 +234,7 @@ Importez votre image Windows dans le cluster. Consultez notre guide sur l'[impor
 
 Dans le menu de gauche de **Prism Central**, dépliez `Compute & Storage`{.action} et cliquez sur `VMs`{.action}.
 
-![Tableau de Bord Prism Central - Menu VMs](images/PrismCentralDashBooardWithVMMenu.PNG){.thumbnail}
+![Tableau de Bord Prism Central - Menu VMs](images/PrismCentralDashBoardWithVMMenu.PNG){.thumbnail}
 
 Cliquez sur le bouton `Create VM`{.action}.
 
@@ -385,7 +385,7 @@ L'installation de Windows Server 2022 et des pilotes spécifiques à WS2022 pour
 
 ![Installation - WS2022- Etape9](images/InstallWS2022-15.PNG){.thumbnail}
 
-4\. **CConfiguration de Windows**
+4\. **Configuration de Windows**
 
 Connectez-vous puis attribuez une adresse IP à la machine dans le réseau "infra".
 Dans cet exemple la configuration du réseau est la suivante :
@@ -396,7 +396,7 @@ Dans cet exemple la configuration du réseau est la suivante :
 
 > [!warning]
 > Adaptez cette configuration à votre cluster.
-> Vous pouvez retrouver ces informations en interrogeant l'[API OVHcloud](hhttps://api.ovh.com/console/#/nutanix/%7BserviceName%7D~GET).
+> Vous pouvez retrouver ces informations en interrogeant l'[API OVHcloud](https://api.ovh.com/console/#/nutanix/%7BserviceName%7D~GET).
 >
 
 ![Configuration - WS2022 - Etape1](images/ConfigWS2022-1.PNG){.thumbnail}

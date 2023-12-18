@@ -234,7 +234,7 @@ Import your Windows image into the cluster. Read our guide on [importing images 
 
 In the left-hand menu of **Prism Central**, expand `Compute & Storage`{.action} and click `VMs`{.action}.
 
-![Prism Central Dashboard - Menu VMs](images/PrismCentralDashBooardWithVMMenu.PNG){.thumbnail}
+![Prism Central Dashboard - Menu VMs](images/PrismCentralDashBoardWithVMMenu.PNG){.thumbnail}
 
 Click the `Create VM`{.action} button.
 
