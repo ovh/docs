@@ -39,7 +39,7 @@ Im Bereich **Allgemeine Informationen** finden Sie den Abschnitt *Gratis Webhost
 
 Daraufhin öffnet sich das Aktivierungsfenster. **Schritt 1** zeigt Ihnen Angebotsinformationen an. Klicken Sie auf `Weiter`{.action} und wählen Sie in **Schritt 2** die Änderungen aus, die Sie in Ihrer DNS-Zone vornehmen möchten.
 
-![free100M](images/start10m-step1-02.png){.thumbnail}
+![free100M](images/manager-order-100m-step2.png){.thumbnail}
 
 > [!warning]
 >

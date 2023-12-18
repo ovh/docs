@@ -36,7 +36,7 @@ Nel riquadro **Informazioni generali** visualizzi la voce *Hosting Web e email g
 
 Si apre la pagina di attivazione. **Lo step 1** mostra i dettagli del piano e la relativa tariffa. Quindi clicca su `Continua`{.action}. Allo **step 2**, seleziona le modifiche da apportare alla tua zona DNS.
 
-![free100m](images/start10m-step1-02.png){.thumbnail}
+![free100m](images/manager-order-100m-step2.png){.thumbnail}
 
 > [!warning]
 >

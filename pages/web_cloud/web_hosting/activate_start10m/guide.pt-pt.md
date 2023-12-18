@@ -36,7 +36,7 @@ No menu **Informações gerais**, encontrará *Alojamento web e e-mail gratuito*
 
 Aparecerá a janela de ativação. A **etapa 1** faz menção ao serviço e ao seu custo. Clique em `Seguinte`{.action}. Na **etapa 2**, escolha as alterações a fazer à sua zona DNS:
 
-![free100m](images/start10m-step1-02.png){.thumbnail}
+![free100m](images/manager-order-100m-step2.png){.thumbnail}
 
 > [!warning]
 >
