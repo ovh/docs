@@ -1,20 +1,16 @@
 ---
-title: CCM Octavia
+title: Expose your services using a Load Balancer
 excerpt: ""
 updated: 2023-12-08
 ---
 
 ## Objective
 
-Although the openstack-cloud-controller-manager was initially implemented with Neutron-LBaaS support, Octavia is mandatory now because Neutron-LBaaS has been deprecated since Queens OpenStack release cycle and no longer accepted new feature enhancements. As a result, since v1.26.0 the Neutron-LBaaS is not supported in openstack-cloud-controller-manager and removed from code repo.
-
-## Cloud Controller Manager Octavia
-
-To be able to deploy Octavia load balancers, your Managed Kubernetes Service must have been upgraded to the latest available patch version. This feature is also available to customers using the services of our US subsidiary.
+This guide aim to know how to use our Network Load Balancer as a Service
 
 ## Billing
 
-- One OpenStack gateway is billed for all Octavia LoadBalancers spawned in the subnet <https://www.ovhcloud.com/en-gb/public-cloud/prices/#10394>.
+- One Ovhcloud Gateway gateway is billed for all Octavia LoadBalancers spawned in the subnet <https://www.ovhcloud.com/en-gb/public-cloud/prices/#10394>.
 
     > [!primay]
     >
@@ -61,7 +57,7 @@ spec:
 
 ## Use cases
 
-### Pub to pub (there is no private subnet associated to cluster)
+### Public to Public (you are using a public Managed Kubernetes Cluster)
 
 - From service annotations or spec
 
@@ -114,7 +110,7 @@ Output
 
 Call upstream
 
-### Pub to priv (this is a private subnet associated to cluster)
+### Public to Private (this is a private subnet associated to cluster)
 
 - From service annotations or spec
 
@@ -168,7 +164,7 @@ Output
 
 Call upstream
 
-### Priv to priv (annotation is present service.beta.kubernetes.io/openstack-internal-load-balancer)
+### Private to Private (annotation is present service.beta.kubernetes.io/openstack-internal-load-balancer)
 
 - From service annotations or spec
 
@@ -378,7 +374,7 @@ Call upstream
 ## Limitations
 
 - L7 and TLS Termination are not available yet.
-- You have to set a GatewayIP for your Subnet (we plan to perform it automatically in the future).
+- You have to set a GatewayIP for your Subnet.
 
 > [!primary]
 >
@@ -395,6 +391,7 @@ In order to use a FloatingIP, we need to setup an Openstack Router.
 ## Others resources
 
 - [Exposing applications using services of LoadBalancer type](https://github.com/kubernetes/cloud-provider-openstack/blob/master/docs/openstack-cloud-controller-manager/expose-applications-using-loadbalancer-type-service.md)
+- [Using Octavia Ingress Controller](https://github.com/kubernetes/cloud-provider-openstack/blob/master/docs/octavia-ingress-controller/using-octavia-ingress-controller.md)
 
 ## Go further
 
