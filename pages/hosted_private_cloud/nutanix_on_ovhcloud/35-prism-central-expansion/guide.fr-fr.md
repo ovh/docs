@@ -9,7 +9,7 @@ updated: 2023-01-03
 > Si vous n'êtes pas dans cette configuration, contactez le [support OVHcloud](https://help.ovhcloud.com/csm?id=csm_cases_requests) pour modifier la taille de votre Prism Central.
 
 > [!warning]
-> Vous devez impérativement desenregistrer votre licence Prism Central sur votre portail Nutanix avant modification.
+> Avant toute modification, vous devez impérativement désenregistrer votre licence Prism Central sur votre portail Nutanix.
 
 ## Objectif
 
