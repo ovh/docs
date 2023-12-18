@@ -1,7 +1,7 @@
 ---
 title: "Włączanie darmowy hosting 100M"
 excerpt: "Dowiedz się, jak włączyć darmowy hosting 100M"
-updated: 2023-11-10
+updated: 2023-12-18
 ---
 
 > [!primary]
@@ -36,7 +36,7 @@ W ramce **Informacje ogólne** znajduje się pozycja *Darmowy hosting WWW i e-ma
 
 Pojawi się okno aktywacyjne. W **etapie 1** wyświetla się przypomnienie oferty i cennika. Kliknij przycisk `Dalej`{.action}. W **etapie 2** wybierz zmiany, jakie mają zostać wprowadzone w strefie DNS:
 
-![free100m](images/start10m-step1-02.png){.thumbnail}
+![free100m](images/manager-order-100m-step2.png){.thumbnail}
 
 > [!warning]
 >

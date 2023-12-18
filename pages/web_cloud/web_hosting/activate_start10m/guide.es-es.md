@@ -1,7 +1,7 @@
 ---
 title: "Activar el Alojamiento gratuito 100M"
 excerpt: "Descubra cómo activar su Alojamiento gratuito 100M"
-updated: 2023-11-10
+updated: 2023-12-18
 ---
 
 > [!primary]
@@ -36,7 +36,7 @@ En la sección **« Información general »**, acceda al apartado *«Alojamiento
 
 Se mostrará la ventana de activación. En el **paso 1** se muestra información sobre el plan y el precio. Haga clic en `«Siguiente»`{.action}. En el **paso 2**, seleccione los cambios que quiera realizar en su zona DNS:
 
-![free100m](images/start10m-step1-02.png){.thumbnail}
+![free100m](images/manager-order-100m-step2.png){.thumbnail}
 
 > [!warning]
 >

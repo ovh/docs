@@ -1,7 +1,7 @@
 ---
 title: "Activer l’hébergement gratuit 100M"
 excerpt: "Découvrez comment activer votre hébergement gratuit 100M"
-updated: 2023-11-10
+updated: 2023-12-18
 ---
 
 ## Objectif
@@ -33,7 +33,7 @@ Dans le cadre **Informations générales** vous trouverez la mention *Hébergeme
 
 La fenêtre d'activation s'affiche. **L'étape 1** vous rappelle l'offre et son tarif, cliquez sur `Suivant`{.action}. Pour **l'étape 2**, choisissez les modifications à apporter sur votre zone DNS :
 
-![free100m](images/start10m-step1-02.png){.thumbnail}
+![free100m](images/manager-order-100m-step2.png){.thumbnail}
 
 > [!warning]
 >

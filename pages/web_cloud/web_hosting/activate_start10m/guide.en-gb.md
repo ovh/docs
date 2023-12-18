@@ -1,7 +1,7 @@
 ---
 title: "Activating the 100M free hosting plan"
 excerpt: "Find out how to activate your 100M free hosting plan"
-updated: 2023-11-10
+updated: 2023-12-18
 ---
 
 ## Objective
@@ -32,7 +32,7 @@ In the **General information** box, you will see *Free web hosting and email*. C
 
 The activation window will appear. **Step 1** will detail the plan and its price — click `Next`{.action}. For **step 2**, choose the changes you need to make to your DNS zone:
 
-![free100m](images/start10m-step1-02.png){.thumbnail}
+![free100m](images/manager-order-100m-step2.png){.thumbnail}
 
 > [!warning]
 >
