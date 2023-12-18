@@ -36,7 +36,7 @@ Dans l'onglet suivant, sélectionnez l'option de RAM souhaitée et cliquez sur `
 
 Une fois la commande payée, un e-mail de confirmation sera envoyé à votre compte avec un lien pour planifier l'intervention pour la mise à jour de la RAM.
 
-En cliquant sur le lien présent dans l’e-mail, vous serez redirigé vers le tableau de bord du serveur dédié. Cette fois, cliquez sur `Planifier votre intervention`{.action}.
+Cliquez sur le lien présent dans l’e-mail, vous serez alors redirigé vers le tableau de bord du serveur dédié. Cette fois, cliquez sur `Planifier votre intervention`{.action}.
 
 ![schedule intervention](images/ramintervention.png){.thumbnail}
 
