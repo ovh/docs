@@ -1,7 +1,7 @@
 ---
 title: Remplacement de Prism Central du mode Small au mode X-LARGE
 excerpt: 'Comment remplacer Prism Central par trois machines virtuelles en mode X-LARGE' 
-updated: 2023-01-03
+updated: 2023-12-18
 ---
 
 > [!warning]
