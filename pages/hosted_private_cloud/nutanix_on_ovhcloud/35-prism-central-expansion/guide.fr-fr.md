@@ -5,7 +5,7 @@ updated: 2023-01-03
 ---
 
 > [!warning]
-> Ce guide est destiné uniquement aux client en mode Bring Your Own Licence sur leur cluster Nutanix.
+> Ce guide est destiné uniquement aux client en mode **Bring Your Own Licence** sur leur cluster Nutanix.
 > Si vous n'êtes pas dans cette configuration, contactez le [support OVHcloud](https://help.ovhcloud.com/csm?id=csm_cases_requests) pour modifier la taille de votre Prism Central.
 
 > [!warning]
