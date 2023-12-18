@@ -10,7 +10,7 @@ This guide aim to know how to use our Network Load Balancer as a Service
 
 ## Billing
 
-- One Ovhcloud Gateway gateway is billed for all Octavia LoadBalancers spawned in the subnet <https://www.ovhcloud.com/en-gb/public-cloud/prices/#10394>.
+- One OVHcloud Gateway gateway is billed for all Octavia LoadBalancers spawned in the subnet <https://www.ovhcloud.com/en-gb/public-cloud/prices/#10394>.
 
     > [!primay]
     >
