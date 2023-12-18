@@ -1,6 +1,6 @@
 ---
 title: Premiers pas avec votre cluster Nutanix
-excerpt: Quelle sont les premières opérations à faire sur le cluster pour bien débuter ?
+excerpt: Découvrez les premières opérations à réaliser sur un cluster Nutanix on OVHcloud pour bien débuter
 updated: 2023-12-18
 ---
 
@@ -16,7 +16,6 @@ Ce guide vous présente les opérations que vous devez réaliser pour bien débu
 >
 > Ce guide a pour but de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à l'équipe [Professional Services OVHcloud](https://www.ovhcloud.com/fr/professional-services/) ou à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) si vous éprouvez des difficultés ou des doutes concernant l’administration, l’utilisation ou la mise en place d’un service sur un serveur.
 >
-> Certains logiciels nécessitent une licence comme les produits Microsoft il faudra alors s'assurer que tous les systèmes et logiciels installés possèdent ces licences.
 
 **Découvrez les premières opérations à réaliser sur votre cluster Nutanix.**
 
@@ -25,6 +24,10 @@ Ce guide vous présente les opérations que vous devez réaliser pour bien débu
 - Disposer d'un cluster Nutanix dans votre compte OVHcloud
 - Être connecté à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 - Être connecté à Prism Central sur le cluster
+
+> [!warning]
+>
+> Certains logiciels, comme les produits Microsoft, nécessitent une licence. Vous devez donc vous assurer que tous les systèmes et logiciels installés possèdent ces licences.
 
 ## En pratique
 
@@ -491,7 +494,7 @@ Pour sécuriser votre cluster, il est recommandé de changer les mots de passe. 
 
 Vous pouvez également [sécuriser l'accès à Prism Central](/pages/hosted_private_cloud/nutanix_on_ovhcloud/25-secure-prism-web-access).
 
-## Aller plus loin
+## Aller plus loin <a name="go further"></a>
 
 Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
