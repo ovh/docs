@@ -1,6 +1,6 @@
 ---
 title: Configuring the Network Firewall
-updated: 2023-12-11
+updated: 2023-12-19
 ---
 
 ## Objective

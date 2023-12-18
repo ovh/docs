@@ -1,7 +1,7 @@
 ---
 title: "Monitoring ataków DDoS za pomocą Network Security Dashboard"
 excerpt: "Dowiedz się, jak nawigować za pomocą pulpitu nawigacyjnego zabezpieczeń sieciowych"
-updated: 2023-12-14
+updated: 2023-12-19
 ---
 
 > [!primary]

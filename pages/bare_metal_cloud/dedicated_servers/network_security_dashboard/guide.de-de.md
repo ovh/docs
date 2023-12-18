@@ -1,7 +1,7 @@
 ---
 title: Monitoring von DDoS-Angriffen mit dem Network Security Dashboard
 excerpt: Erfahren Sie hier, wie Sie das Network Security Dashboard im OVHcloud Kundencenter verwenden
-updated: 2023-12-11
+updated: 2023-12-19
 ---
 
 > [!primary]
