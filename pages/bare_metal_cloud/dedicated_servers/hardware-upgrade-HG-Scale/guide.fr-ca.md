@@ -22,7 +22,7 @@ Nos serveurs High Grade et Scale vous proposent une option évolutive qui vous p
 
 Connectez-vous à votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc).
 
-Dans la section `Bare Metal Cloud`{.action}, sélectionnez votre serveur parmi **Serveurs dédiés**. 
+Dans la section `Bare Metal Cloud`{.action}, sélectionnez votre serveur parmi les **Serveurs dédiés**. 
 
 ### Augmenter la RAM
 
@@ -36,7 +36,7 @@ Dans l'onglet suivant, sélectionnez l'option de RAM souhaitée et cliquez sur `
 
 Une fois la commande payée, un e-mail de confirmation sera envoyé à votre compte avec un lien pour planifier l'intervention pour la mise à jour de la RAM.
 
-En cliquant sur le lien présent dans l’e-mail, vous serez redirigé vers le tableau de bord du serveur dédié. Cette fois, cliquez sur `Planifier votre intervention`{.action}.
+Cliquez sur le lien présent dans l’e-mail, vous serez alors redirigé vers le tableau de bord du serveur dédié. Cette fois, cliquez sur `Planifier votre intervention`{.action}.
 
 ![schedule intervention](images/ramintervention.png){.thumbnail}
 
@@ -60,7 +60,7 @@ Dans l'onglet suivant, sélectionnez l'option de stockage souhaitée et cliquez 
 
 Une fois la commande payée, un e-mail de confirmation sera envoyé à votre compte avec un lien pour planifier l'intervention pour la mise à jour du stockage.
 
-En cliquant sur le lien présent dans l’e-mail, vous serez redirigé vers le tableau de bord du serveur dédié. Cette fois, cliquez sur `Planifier votre intervention`{.action}.
+Cliquez sur le lien présent dans l’e-mail, vous serez alors redirigé vers le tableau de bord du serveur dédié. Cette fois, cliquez sur `Planifier votre intervention`{.action}.
 
 ![schedule intervention](images/storageintervention.png){.thumbnail}
 
