@@ -1,7 +1,7 @@
 ---
 title: "Konfiguracja dynamicznego DNS (DynHost/DynDNS) dla Twojej domeny"
 excerpt: "Dowiedz się, jak skonfigurować dynamiczny rekord DNS dla Twojej domeny OVHcloud"
-updated: 2023-08-16
+updated: 2023-12-18
 ---
 
 > [!primary]
@@ -110,7 +110,9 @@ Po wybraniu i zainstalowaniu klienta skonfiguruj go, używając informacji o uż
 
 W zależności od używanego klienta, oprócz elementów użytkownika DynHost i odpowiedniej subdomeny może być wymagany adres URL aktualizacji. W takim przypadku użyj poniższego adresu URL i zastąp w nim informacje ogólne:
 
-`https://www.ovh.com/nic/update?system=dyndns&hostname=**$HOSTNAME**&myip=**$IP**`
+```bash
+https://www.ovh.com/nic/update?system=dyndns&hostname=$HOSTNAME&myip=$IP
+```
 
 |Informacje|Czym należy zastąpić|
 |---|---|

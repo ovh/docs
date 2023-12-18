@@ -1,7 +1,7 @@
 ---
 title: "Konfiguration von dynamischen DNS-Aktualisierungen (DynHost/DynDNS) für Ihren Domainnamen"
 excerpt: "Erfahren Sie hier, wie Sie einen dynamischen DNS-Eintrag (DynHost) für Ihren Domainnamen einrichten"
-updated: 2023-08-16
+updated: 2023-12-18
 ---
 
 > [!primary]
@@ -108,7 +108,9 @@ Wenn Ihr Client einsatzbereit ist, muss er unter Verwendung der zuvor im OVHclou
 
 Je nach verwendetem Client kann zusätzlich zu DynHost-Benutzerinformationen und der Subdomain eine Update-URL erforderlich sein. Ist das der Fall, verwenden Sie die unten stehende URL und ersetzen Sie die generischen Elemente:
 
-`https://www.ovh.com/nic/update?system=dyndns&hostname=**$HOSTNAME**&myip=**$IP**`
+```bash
+https://www.ovh.com/nic/update?system=dyndns&hostname=$HOSTNAME&myip=$IP
+```
 
 |Information|Ersetzen mit|
 |---|---|
