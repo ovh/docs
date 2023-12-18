@@ -110,7 +110,9 @@ Depois de escolher e instalar o cliente, deverá configurá-lo através das info
 
 Consoante o cliente utilizado, pode ser necessário um endereço URL de atualização para além dos elementos do utilizador DynHost e do subdomínio em causa. Se for este o caso, utilize o seguinte endereço URL para substituir as informações genéricas:
 
-`https://www.ovh.com/nic/update?system=dyndns&hostname=$HOSTNAME&myip=$IP`
+```bash
+https://www.ovh.com/nic/update?system=dyndns&hostname=$HOSTNAME&myip=$IP
+```
 
 |Informações|Substituir por|
 |---|---|
