@@ -4,6 +4,13 @@ excerpt: 'Comment remplacer Prism Central par trois machines virtuelles en mode 
 updated: 2023-01-03
 ---
 
+> [!warning]
+> Ce guide est destiné uniquement aux client en mode Bring Your Own Licence sur leur cluster Nutanix.
+> Si vous n'êtes pas dans cette configuration là, contactez le support OVHcloud pour changer la taille de votre Prism Central
+
+> [!warning]
+> Vous devez impérativement desenregistrer votre licence Prism Central sur votre portail Nutanix avant modification.
+
 ## Objectif
 
 **Ce guide vous montre comment redéployer Prism Central en mode X-LARGE sur trois machines virtuelles.**
