@@ -14,10 +14,10 @@ This guide aim to know how to use our Network Load Balancer as a Service
 
     > [!primay]
     >
-    > Note: Each Octavia has his own bandwidth. Outgoing traffic doesn't consume OpenStack gateway bandwidth.
+    > Note: Each Managed Load Balancer has his own bandwidth. Outgoing traffic doesn't consume OpenStack gateway bandwidth.
     >
 
-- Each Octavia is billed regarding his flavor: <https://www.ovhcloud.com/en-gb/public-cloud/prices/#10420>
+- Each Managed Load Balancer is billed regarding his flavor: <https://www.ovhcloud.com/en-gb/public-cloud/prices/#10420>
 - If the Octavia is a public one, an OpenStack Floating IP will be used: https://www.ovhcloud.com/en-gb/public-cloud/prices/#10346
 
 ## Process
