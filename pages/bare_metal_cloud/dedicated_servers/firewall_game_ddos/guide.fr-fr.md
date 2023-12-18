@@ -47,7 +47,7 @@ L’infrastructure anti-DDoS, associée au Edge Network Firewall, protège le r�
 
 Pour configurer les règles de gaming dans le firewall Game, vous devez d'abord vous connecter à votre espace client OVHcloud, puis suivre les étapes ci-dessous :
 
-- Cliquez sur l'onglet `Bare Metal Cloud`{.action} .
+- Cliquez sur l'onglet `Bare Metal Cloud`{.action}.
 - Rendez-vous ensuite dans `Network`{.action}.
 - Ouvrez `IP`{.action}.
 
@@ -63,7 +63,7 @@ Pour configurer les règles de gaming dans le firewall Game, vous devez d'abord 
 |:--:|
 | Sur l'écran suivant, cliquez sur le bouton `Ajouter une règle`{.action} pour ajouter une règle au firewall Game |
 
-Vous pouvez mettre en place jusqu’à **30 règles par IP** pour protéger un ou plusieurs jeux hébergés sur votre serveur derrière le Firewall Game. La liste des profils de jeux pris en charge peut être consultée [ici](https://www.ovhcloud.com/fr/security/game-ddos-protection/) :
+Vous pouvez mettre en place jusqu’à **30 règles par IP** pour protéger un ou plusieurs jeux hébergés sur votre serveur derrière le Firewall Game. La liste des profils de jeux pris en charge peut être consultée [ici](https://www.ovhcloud.com/fr/security/game-ddos-protection/).
 
 > [!primary]
 > Par défaut, le firewall Game est préconfiguré avec certaines règles qu’OVHcloud a déterminées pour fonctionner avec les jeux les plus populaires. Cependant, pour les clients disposant d’un serveur dédié Game, nous vous permettons d’aller plus loin et de configurer également des règles pour les ports.
