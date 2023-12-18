@@ -1,7 +1,7 @@
 ---
 title: "Die häufigsten Datenbankfehler beheben"
 excerpt: "Erfahren Sie hier, wie Sie Fehler in Zusammenhang mit Datenbanken beheben"
-updated: 2023-12-18
+updated: 2023-10-26
 ---
 
 > [!primary]

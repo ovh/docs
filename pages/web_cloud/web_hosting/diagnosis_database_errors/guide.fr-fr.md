@@ -1,7 +1,7 @@
 ---
 title: "Résoudre les erreurs les plus fréquentes liées aux bases de données"
 excerpt: "Diagnostiquez les cas les plus courants d'erreurs liées aux bases de données"
-updated: 2023-12-18
+updated: 2023-10-26
 ---
 
 ## Objectif

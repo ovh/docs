@@ -1,7 +1,7 @@
 ---
 title: "Rozwiąż najczęstsze błędy związane z bazami danych"
 excerpt: "Zdiagnozuj najczęstsze przypadki błędów związanych z bazami danych"
-updated: 2023-12-18
+updated: 2023-10-26
 ---
 
 > [!primary]
