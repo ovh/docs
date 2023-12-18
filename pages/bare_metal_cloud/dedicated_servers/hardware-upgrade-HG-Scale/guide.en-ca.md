@@ -1,7 +1,7 @@
 ---
 title: Hardware upgrade on a High Grade or Scale dedicated server
 excerpt: "Find out how to request a hardware upgrade on High Grade & SCALE ranges via the OVHcloud Control Panel"
-updated: 2023-12-14
+updated: 2023-12-18
 ---
 
 ## Objective

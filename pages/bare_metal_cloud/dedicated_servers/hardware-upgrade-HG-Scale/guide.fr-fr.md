@@ -1,7 +1,7 @@
 ---
 title: "Mise à niveau du matériel sur un serveur dédié High Grade ou Scale"
 excerpt: 'Découvrez comment demander une mise à niveau du matériel pour les gammes High Grade et SCALE via votre espace client'
-updated: 2023-12-14
+updated: 2023-12-18
 ---
 
 ## Objectif
@@ -71,6 +71,8 @@ Cliquez ensuite sur `Valider`{.action}.
 ![confirm intervention](images/confirmintervention.png){.thumbnail}
 
 Vous recevrez alors un e-mail confirmant la date et l'heure de l'intervention.
+
+Si vous souhaitez planifier une évolution de mémoire et de stockage lors de la même intervention, vous devrez commander et payer chaque option l'une après l'autre dans un délai d'une heure.
 
 ## Aller plus loin
 
