@@ -1,7 +1,7 @@
 ---
 title: 'Beheben des Fehlers “500 Internal Server Error”'
 excerpt: "Erfahren Sie hier, welche Maßnahmen Sie bei einem Fehlercode 500 anwenden können"
-updated: 2023-12-18
+updated: 2023-11-22
 ---
 
 > [!primary]
