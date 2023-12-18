@@ -418,6 +418,7 @@
         + [Getting started](hosted-private-cloud-nutanix-on-ovhcloud-getting-started)
             + [Nutanix global high-level documentation](hosted_private_cloud/nutanix_on_ovhcloud/01-global-high-level-doc)
             + [List of included services and licences](hosted_private_cloud/nutanix_on_ovhcloud/02-available-services)
+            + [Getting started with your Nutanix cluster](hosted_private_cloud/nutanix_on_ovhcloud/80-first-steps)
             + [Nutanix Hyperconvergence](hosted_private_cloud/nutanix_on_ovhcloud/03-nutanix-hci)
             + [Customised redeployment of your Cluster](hosted_private_cloud/nutanix_on_ovhcloud/00-cluster-custom-redeployment)
             + [Storage overview on Nutanix](hosted_private_cloud/nutanix_on_ovhcloud/04-storage)

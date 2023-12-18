@@ -1,7 +1,7 @@
 ---
 title: Premiers pas avec votre cluster Nutanix 
 excerpt: Quelle sont les premières opérations à faire sur le cluster pour bien débuter ?
-updated: 2023-11-21
+updated: 2023-12-18
 ---
 
 ## Objectifs
