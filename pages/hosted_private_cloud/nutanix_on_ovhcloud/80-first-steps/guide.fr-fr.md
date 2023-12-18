@@ -445,7 +445,7 @@ Cliquez sur `Ajouter`{.action} pour valider la création du cluster.
 
 Cliquez ensuite sur l'onglet `Frontends`{.action} et sur `Ajouter un frontend`{.action}.
 
-![Configure Load Balancer 06 RDP](images/ConfigLB6.PNG){.thumbnail}
+![Configure Load Balancer 06 RDP](images/config-lb6-rdp.PNG){.thumbnail}
 
 Nommez votre frontend, choisissez le protocole `TCP`{.action} et modifiez ces valeurs :
 
@@ -455,7 +455,7 @@ Nommez votre frontend, choisissez le protocole `TCP`{.action} et modifiez ces va
 
 Cliquez sur `Ajouter`{.action}.
 
-![Configure Load Balancer 07](images/ConfigLB7.PNG){.thumbnail}
+![Configure Load Balancer 07](images/config-lb7-rdp.PNG){.thumbnail}
 
 Cliquez sur `Appliquer la configuration`{.action}.
 
