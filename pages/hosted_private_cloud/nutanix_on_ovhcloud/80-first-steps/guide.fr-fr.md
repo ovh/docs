@@ -159,9 +159,9 @@ Dans l'onglet `Fermes de serveurs`{.action}, cliquez sur `Ajouter une ferme de s
 
 Nommez votre ferme de serveurs puis selectionnez `TCP`{.action} et saisissez ces informations :
 
-Port : 22
-Datacenter : ALL
-Réseau privé : nutanix
+- Port : 22
+- Datacenter : ALL
+- Réseau privé : nutanix
 
 ![Configure Load Balancer 03 ssh](images/config-lb3-ssh.PNG){.thumbnail}
 
