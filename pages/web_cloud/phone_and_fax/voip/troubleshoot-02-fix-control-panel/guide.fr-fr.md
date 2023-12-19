@@ -1,10 +1,9 @@
 ---
 title: 'Dépanner son téléphone OVHcloud'
 excerpt: 'Apprenez à dépanner votre téléphone OVHcloud'
-updated: 2022-05-09
+updated: 2023-12-19
 ---
 
- 
 ## Objectif
 
 À la différence des modèles de téléphones historiques fonctionnant sur la technologie cuivre analogique, les téléphones VoIP fournis par OVHcloud utilisent le réseau Internet.
@@ -16,7 +15,7 @@ Les causes d'un dysfonctionnement d'un téléphone VoIP sont donc variées :
 - un défaut d'alimentation électrique;
 - une problématique réseau;
 - un défaut temporaire de configuration du téléphone.
- 
+
 **Découvrez comment diagnostiquer et dépanner votre téléphone OVHcloud.**
 
 ## Prérequis
@@ -74,16 +73,42 @@ Une réinitialisation permet au téléphone de récupérer une configuration sai
 
 La réinitialisation d'un téléphone s'effectue généralement via son menu lorsqu'il en dispose d'un. Certains modèles de téléphones nécessitent parfois d'effectuer une combinaison de touches ou d'appuyer sur un bouton dédié.
 
-Le tableau ci-dessous récapitule les manipulations à effectuer pour réinitialiser un téléphone, en fonction de la marque de celui-ci.
+Les manipulations pour réinitialiser nos téléphones sont décrites ci-dessous.<br>
+Cliquez sur l'onglet correspondant au modèle de votre téléphone.
 
-|Marque/Gamme|Procédure de réinitialisation|
-|---|---|
-|**Cisco** standard| Appuyez sur le bouton `Engrenage` pour accéder au menu principal.<br>Allez dans le sous-menu `Admin. Appareil`.<br>Sélectionnez l'option `Réinit. Usine`.<br>Validez la réinitialisation.|
-|**Cisco** sans écran (modèle ATA191)|Appuyez pendant 10 secondes, avec un objet pointu, dans le trou `Reset` situé à l'arrière du boîtier Cisco.<br>Le voyant *Power* va clignoter durant la procédure de réinitialisation.<br>Les voyants *Power* puis *Internet* vont ensuite rester allumés, puis le voyant *Line 1* (ou *Line 2*) s'allumera.|
-|**Gigaset** DECT (sans-fil)|Les manipulations sont à effectuer sur **la base éméttrice réceptrice** et non sur le socle de rechargement du combiné.<br>Cliquez sur [ce lien](https://raw.githubusercontent.com/ovh/docs/develop/pages/web_cloud/phone_and_fax/voip/troubleshoot-02-fix-control-panel/images/gigaset-dect.png) pour voir des modèles de bases émettrices/réceptrices Gigaset.<br><br>Débranchez l'alimentation électrique de la base émettrice/réceptrice.<br>Rebranchez l'alimentation électrique en **maintenant enfoncé le bouton unique de la base** (en façade de celle-ci).<br>Relâchez le bouton au bout de 30 secondes après avoir rebranché l'alimentation.|
-|**Gigaset** standard|Dans le menu principal, sélectionnez le sous-menu `Réglages`.<br>Sélectionnez `Réinitialisation`.<br>Appuyez sur `OK` et confirmez la réinitialisation.|
-|**Yealink** DECT (sans-fil)|Appuyez sur le bouton `OK` du combiné pour accéder au menu principal.<br>Sélectionnez les sous-menus `Réglages`puis `Réglages système`.<br>Sélectionnez `Reset Base`<br> Si un code PIN vous est demandé, entrez `0000` et validez.<br>Sélectionnez `Réinit d'usine` et validez.|
-|**Yealink** standard|Appuyez pendant 10 secondes sur le bouton `OK` du téléphone.<br>Confirmez la réinitialisation.|
+> [!tabs]
+> **Cisco** standard
+>>
+>> 1\. Appuyez sur le bouton `Engrenage` pour accéder au menu principal.<br>2\. Allez dans le sous-menu `Admin. Appareil`.<br>3\. Sélectionnez l'option `Réinit. Usine`.<br>4\.Validez la réinitialisation.
+>>
+> **Cisco** sans écran (modèle ATA191)
+>>
+>> 1\. Appuyez pendant 10 secondes, avec un objet pointu, dans le trou `Reset` situé à l'arrière du boîtier Cisco.<br>2\. Le voyant *Power* va clignoter durant la procédure de réinitialisation.<br>3\. Les voyants *Power* puis *Internet* vont ensuite rester allumés, puis le voyant *Line 1* (ou *Line 2*) s'allumera.
+>>
+> **Gigaset** DECT (sans-fil)
+>>
+>> Les manipulations sont à effectuer sur **la base éméttrice réceptrice** et non sur le socle de rechargement du combiné.<br>Cliquez sur [ce lien](https://raw.githubusercontent.com/ovh/docs/develop/pages/web_cloud/phone_and_fax/voip/troubleshoot-02-fix-control-panel/images/gigaset-dect.png) pour voir des modèles de bases émettrices/réceptrices Gigaset.<br>1\.Débranchez l'alimentation électrique de la base émettrice/réceptrice.<br>2\. Rebranchez l'alimentation électrique en **maintenant enfoncé le bouton unique de la base** (en façade de celle-ci).<br>3\. Relâchez le bouton au bout de 30 secondes après avoir rebranché l'alimentation.
+>>
+> **Gigaset** standard
+>>
+>> 1\. Dans le menu principal, sélectionnez le sous-menu `Réglages`.<br>2\. Sélectionnez `Réinitialisation`.<br>3\. Appuyez sur `OK` et confirmez la réinitialisation.
+>>
+> **Yealink** DECT (sans-fil)
+>>
+>> 1\. Appuyez sur le bouton `OK` du combiné pour accéder au menu principal.<br>2\. Sélectionnez les sous-menus `Réglages` puis `Réglages système`.<br>Sélectionnez `Reset Base`<br> 3\.Si un code PIN vous est demandé, entrez `0000` et validez.<br>4\. Sélectionnez `Réinit d'usine` et validez.
+>>
+> **Yealink** standard
+>>
+>> 1\. Appuyez pendant 10 secondes sur le bouton `OK` du téléphone.<br>2\. Confirmez la réinitialisation.
+>>
+> **Yealink** T58 W Pro
+>>
+>> 1\. Maintenez enfoncée la touche `Redial` ![touche redial](images/t58wpro-redial.png){.thumbnail}.<br>2\. Validez la demande de réinitialisation affichée à l'écran du téléphone.
+>>
+> **Yealink** DECT (W73P et W79P)
+>>
+>> 1\. Débranchez l'alimentation électrique de la **la base éméttrice réceptrice** du téléphone.<br>2\. Rebranchez l'alimentation électrique en **maintenant enfoncé le bouton au centre de la base**.<br>3\. Relâchez le bouton quand les 3 voyants sont allumés et fixes.<br>4\. Débranchez l'alimentation électrique de la **la base** du téléphone et rebranchez-la juste après.<br>5\. Patientez environ 5 minutes le temps que la base se mette à jour.<br>6\. Pour associer le **combiné** à la **base**, sur le **combiné**, appuyez sur le bouton `REGISTER` en bas à gauche de l'écran. dans la foulée, maintenez enfoncé le bouton au centre de la **base** pendant 3 à 4 secondes.
+
 
 **Une fois le téléphone réinitialisé, la date et l'heure affichées sur son écran sont-elles exactes ?**
 
@@ -120,8 +145,8 @@ Assurez-vous également que votre téléphone est correctement branché électri
 En fonction des informations sélectionnées, vous pourrez être amené à reconfigurer automatiquement votre téléphone. Si tel est le cas, veillez à bien suivre les trois manipulations qui s'affichent :
 
 |Manipulations|Description|
-|---|---|  
-|Vérifier l'adresse MAC du téléphone|L'adresse affichée dans votre espace client OVHcloud doit être la même que l'adresse MAC, unique, sur votre téléphone. Vous pouvez la retrouver sur l'étiquette du constructeur, généralement à l'arrière ou sous le téléphone.|  
+|---|---|
+|Vérifier l'adresse MAC du téléphone|L'adresse affichée dans votre espace client OVHcloud doit être la même que l'adresse MAC, unique, sur votre téléphone. Vous pouvez la retrouver sur l'étiquette du constructeur, généralement à l'arrière ou sous le téléphone.|
 |Entrer l'adresse IP publique du téléphone|Il s'agit de la dernière adresse IP publique connue de votre téléphone. Assurez-vous de renseigner la bonne adresse afin que la reconfiguration puisse arriver à son terme.|
 |Redémarrer électriquement le téléphone|Après avoir redémarré, le téléphone récupérera un nouveau fichier de configuration, permettant ainsi de le reconfigurer.|
 
