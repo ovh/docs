@@ -74,7 +74,7 @@ Une réinitialisation permet au téléphone de récupérer une configuration sai
 La réinitialisation d'un téléphone s'effectue généralement via son menu lorsqu'il en dispose d'un. Certains modèles de téléphones nécessitent parfois d'effectuer une combinaison de touches ou d'appuyer sur un bouton dédié.
 
 Les manipulations pour réinitialiser nos téléphones sont décrites ci-dessous.<br>
-Cliquez sur l'onglet correspondant au modèle de votre téléphone.
+**Cliquez sur l'onglet correspondant au modèle de votre téléphone.**
 
 > [!tabs]
 > **Cisco** standard
@@ -87,7 +87,7 @@ Cliquez sur l'onglet correspondant au modèle de votre téléphone.
 >>
 > **Gigaset** DECT (sans-fil)
 >>
->> Les manipulations sont à effectuer sur **la base éméttrice réceptrice** et non sur le socle de rechargement du combiné.<br>Cliquez sur [ce lien](https://raw.githubusercontent.com/ovh/docs/develop/pages/web_cloud/phone_and_fax/voip/troubleshoot-02-fix-control-panel/images/gigaset-dect.png) pour voir des modèles de bases émettrices/réceptrices Gigaset.<br>1\.Débranchez l'alimentation électrique de la base émettrice/réceptrice.<br>2\. Rebranchez l'alimentation électrique en **maintenant enfoncé le bouton unique de la base** (en façade de celle-ci).<br>3\. Relâchez le bouton au bout de 30 secondes après avoir rebranché l'alimentation.
+>> Les manipulations sont à effectuer sur **la base éméttrice/réceptrice** et non sur le socle de rechargement du combiné.<br>Cliquez sur [ce lien](https://raw.githubusercontent.com/ovh/docs/develop/pages/web_cloud/phone_and_fax/voip/troubleshoot-02-fix-control-panel/images/gigaset-dect.png) pour voir des modèles de bases émettrices/réceptrices Gigaset.<br>1\. Débranchez l'alimentation électrique de la base émettrice/réceptrice.<br>2\. Rebranchez l'alimentation électrique en **maintenant enfoncé le bouton unique de la base** (en façade de celle-ci).<br>3\. Relâchez le bouton au bout de 30 secondes après avoir rebranché l'alimentation.
 >>
 > **Gigaset** standard
 >>
@@ -95,7 +95,7 @@ Cliquez sur l'onglet correspondant au modèle de votre téléphone.
 >>
 > **Yealink** DECT (sans-fil)
 >>
->> 1\. Appuyez sur le bouton `OK` du combiné pour accéder au menu principal.<br>2\. Sélectionnez les sous-menus `Réglages` puis `Réglages système`.<br>Sélectionnez `Reset Base`<br> 3\.Si un code PIN vous est demandé, entrez `0000` et validez.<br>4\. Sélectionnez `Réinit d'usine` et validez.
+>> 1\. Appuyez sur le bouton `OK` du combiné pour accéder au menu principal.<br>2\. Sélectionnez les sous-menus `Réglages` puis `Réglages système`.<br>3\. Sélectionnez `Reset Base`<br> 4\. Si un code PIN vous est demandé, entrez `0000` et validez.<br>5\. Sélectionnez `Réinit d'usine` et validez.
 >>
 > **Yealink** standard
 >>
@@ -105,9 +105,9 @@ Cliquez sur l'onglet correspondant au modèle de votre téléphone.
 >>
 >> 1\. Maintenez enfoncée la touche `Redial` ![touche redial](images/t58wpro-redial.png){.thumbnail}.<br>2\. Validez la demande de réinitialisation affichée à l'écran du téléphone.
 >>
-> **Yealink** DECT (W73P et W79P)
+> **Yealink** DECT (sans fil)
 >>
->> 1\. Débranchez l'alimentation électrique de la **la base éméttrice réceptrice** du téléphone.<br>2\. Rebranchez l'alimentation électrique en **maintenant enfoncé le bouton au centre de la base**.<br>3\. Relâchez le bouton quand les 3 voyants sont allumés et fixes.<br>4\. Débranchez l'alimentation électrique de la **la base** du téléphone et rebranchez-la juste après.<br>5\. Patientez environ 5 minutes le temps que la base se mette à jour.<br>6\. Pour associer le **combiné** à la **base**, sur le **combiné**, appuyez sur le bouton `REGISTER` en bas à gauche de l'écran. dans la foulée, maintenez enfoncé le bouton au centre de la **base** pendant 3 à 4 secondes.
+>> 1\. Débranchez l'alimentation électrique de la **la base éméttrice/réceptrice** du téléphone.<br>2\. Rebranchez l'alimentation électrique en **maintenant enfoncé le bouton au centre de la base**.<br>3\. Relâchez le bouton quand les 3 voyants sont allumés et fixes.<br>4\. Débranchez l'alimentation électrique de la **la base** du téléphone et rebranchez-la juste après.<br>5\. Patientez environ 5 minutes le temps que la base se mette à jour.<br>6\. Pour associer le **combiné** à la **base**, sur le **combiné**, appuyez sur le bouton `REGISTER` en bas à gauche de l'écran. dans la foulée, maintenez enfoncé le bouton au centre de la **base** pendant 3 à 4 secondes.
 
 
 **Une fois le téléphone réinitialisé, la date et l'heure affichées sur son écran sont-elles exactes ?**
