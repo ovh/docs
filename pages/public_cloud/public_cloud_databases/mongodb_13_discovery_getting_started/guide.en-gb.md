@@ -24,7 +24,7 @@ Then follow these steps:
 1. Select **MongoDB** as database type.
 2. Select **Discovery** as service plan.
 
-The plan Discovery come with these limitations:
+The Discovery solution come with these limitations:
 
 - There is only one region available: Gravelines (GRA).
 - There is only one flavor the db2-free.
