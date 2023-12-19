@@ -1735,6 +1735,8 @@
         + [How to use the Bring Your Own IP feature](network/bring_your_own_ip/bring-your-own-IP)
     + [Additional IP](network-additional-ip)
         + [Cancelling an Additional IP service](network/additional_ip/additional-IP-cancellation)
+    + [Network and Security](network-security)
+        + [Monitoring DDoS attacks with the Network Security Dashboard](bare_metal_cloud/dedicated_servers/network_security_dashboard)
     + [OVHcloud Connect](products/network-ovhcloud-connect)
         + [Concepts](network-ovhcloud-connect-concepts)
             + [Concepts overview](network/ovhcloud_connect/occ-concepts-overview)

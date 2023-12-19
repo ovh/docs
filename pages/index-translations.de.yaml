@@ -326,6 +326,7 @@ storage-backup-and-disaster-recovery-solution-veeam: Veeam
 storage-backup-and-disaster-recovery-solution-kubernetes-data-protection: Managed Kubernetes - Data Protection
 network-byoip: Bring your own IP (BYOIP)
 network-additional-ip: Additional IP
+network-security: Netzwerk und Sicherheit
 network-ovhcloud-connect: OVHcloud Connect
 network-ovhcloud-connect-concepts: Konzepte
 network-ovhcloud-connect-configuration: Konfiguration
