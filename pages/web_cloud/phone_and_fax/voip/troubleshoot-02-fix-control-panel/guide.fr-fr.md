@@ -83,11 +83,11 @@ Les manipulations pour réinitialiser nos téléphones sont décrites ci-dessous
 >>
 > **Cisco** sans écran (modèle ATA191)
 >>
->> 1\. Appuyez pendant 10 secondes, avec un objet pointu, dans le trou `Reset` situé à l'arrière du boîtier Cisco.<br>2\. Le voyant *Power* va clignoter durant la procédure de réinitialisation.<br>3\. Les voyants *Power* puis *Internet* vont ensuite rester allumés, puis le voyant *Line 1* (ou *Line 2*) s'allumera.
+>> 1\. Appuyez pendant 10 secondes, avec un objet pointu, dans le trou `Reset` situé à l'arrière du boîtier Cisco.<br>2\. Le voyant **Power** va clignoter durant la procédure de réinitialisation.<br>3\. Les voyants **Power** puis **Internet** vont ensuite rester allumés, puis le voyant **Line 1** (ou **Line 2**) s'allumera.
 >>
 > **Gigaset** DECT (sans-fil)
 >>
->> Les manipulations sont à effectuer sur **la base éméttrice/réceptrice** et non sur le socle de rechargement du combiné.<br>Cliquez sur [ce lien](https://raw.githubusercontent.com/ovh/docs/develop/pages/web_cloud/phone_and_fax/voip/troubleshoot-02-fix-control-panel/images/gigaset-dect.png) pour voir des modèles de bases émettrices/réceptrices Gigaset.<br>1\. Débranchez l'alimentation électrique de la base émettrice/réceptrice.<br>2\. Rebranchez l'alimentation électrique en **maintenant enfoncé le bouton unique de la base** (en façade de celle-ci).<br>3\. Relâchez le bouton au bout de 30 secondes après avoir rebranché l'alimentation.
+>> Les manipulations sont à effectuer sur **la base émettrice/réceptrice** et non sur le socle de rechargement du combiné.<br>Cliquez sur [ce lien](https://raw.githubusercontent.com/ovh/docs/develop/pages/web_cloud/phone_and_fax/voip/troubleshoot-02-fix-control-panel/images/gigaset-dect.png) pour voir des modèles de bases émettrices/réceptrices Gigaset.<br><br>1\. Débranchez l'alimentation électrique de la base émettrice/réceptrice.<br>2\. Rebranchez l'alimentation électrique en **maintenant enfoncé le bouton unique de la base** (en façade de celle-ci).<br>3\. Relâchez le bouton au bout de 30 secondes après avoir rebranché l'alimentation.
 >>
 > **Gigaset** standard
 >>
@@ -103,11 +103,11 @@ Les manipulations pour réinitialiser nos téléphones sont décrites ci-dessous
 >>
 > **Yealink** T58 W Pro
 >>
->> 1\. Maintenez enfoncée la touche `Redial` ![touche redial](images/t58wpro-redial.png){.thumbnail}.<br>2\. Validez la demande de réinitialisation affichée à l'écran du téléphone.
+>> 1\. Maintenez enfoncée la touche `Redial`.<br>![touche redial](images/t58wpro-redial.png){.thumbnail}.<br>2\. Validez la demande de réinitialisation affichée à l'écran du téléphone.
 >>
 > **Yealink** DECT (sans fil)
 >>
->> 1\. Débranchez l'alimentation électrique de la **la base éméttrice/réceptrice** du téléphone.<br>2\. Rebranchez l'alimentation électrique en **maintenant enfoncé le bouton au centre de la base**.<br>3\. Relâchez le bouton quand les 3 voyants sont allumés et fixes.<br>4\. Débranchez l'alimentation électrique de la **la base** du téléphone et rebranchez-la juste après.<br>5\. Patientez environ 5 minutes le temps que la base se mette à jour.<br>6\. Pour associer le **combiné** à la **base**, sur le **combiné**, appuyez sur le bouton `REGISTER` en bas à gauche de l'écran. dans la foulée, maintenez enfoncé le bouton au centre de la **base** pendant 3 à 4 secondes.
+>> 1\. Débranchez l'alimentation électrique de la **la base émettrice/réceptrice** du téléphone.<br>2\. Rebranchez l'alimentation électrique en **maintenant enfoncé le bouton au centre de la base**.<br>3\. Relâchez le bouton quand les 3 voyants sont allumés et fixes.<br>4\. Débranchez l'alimentation électrique de la **la base** du téléphone et rebranchez-la juste après.<br>5\. Patientez environ 5 minutes le temps que la base se mette à jour.<br>6\. Pour associer le **combiné** à la **base**, appuyez sur le bouton `REGISTER` en bas à gauche de l'écran du **combiné**. Dans la foulée, maintenez enfoncé le bouton au centre de la **base** pendant 3 à 4 secondes.
 
 
 **Une fois le téléphone réinitialisé, la date et l'heure affichées sur son écran sont-elles exactes ?**
