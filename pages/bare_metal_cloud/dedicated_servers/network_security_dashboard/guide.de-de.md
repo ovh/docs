@@ -45,7 +45,7 @@ Während eines Angriffs wird eine aktive Abwehraktion durch ein Warnsymbol auf d
 
 ### Netzwerksicherheitsbenachrichtigungen
 
-![red-line-attack](images/nsd_04_blur.png){.thumbnail}{.thumbnail}
+![red-line-attack](images/nsd_04_blur.PNG){.thumbnail}{.thumbnail}
 
 Rufen Sie im OVHcloud Kundencenter den Bereich `Bare Metal Cloud`{.action} auf. Gehen Sie dann in der linken Seitenleiste zu `Netzwerk`{.action} und klicken Sie auf `IPs verwalten`{.action}. Stellen Sie sicher, dass der `Erweiterte Modus` aktiviert ist, um den Status der Anti-DDoS-Infrastruktur und die Konfiguration ihrer Komponenten anzuzeigen.
 

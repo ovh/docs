@@ -41,7 +41,7 @@ During an attack, an active mitigation action will be indicated by a warning ico
 
 ### Network security notifications
 
-![red-line-attack](images/nsd_04_blur.png){.thumbnail}
+![red-line-attack](images/nsd_04_blur.PNG){.thumbnail}
 
 In the OVHcloud Control Panel, access the `Bare Metal Cloud`{.action} section. Then go to `Network`{.action} in the left-hand sidebar and click `Manage IPs`{.action}. Ensure that `Advanced mode` is enabled to see the Anti-DDoS infrastructure status and its components configuration.
 

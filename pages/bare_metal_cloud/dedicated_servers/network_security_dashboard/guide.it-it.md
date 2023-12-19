@@ -45,7 +45,7 @@ Durante un attacco, un'azione di mitigazione attiva viene indicata da un'icona d
 
 ### Notifiche di sicurezza di rete
 
-![red-line-attack](images/nsd_04_blur.png){.thumbnail}
+![red-line-attack](images/nsd_04_blur.PNG){.thumbnail}
 
 Nello Spazio Cliente OVHcloud, accedi alla sezione `Bare Metal Cloud`{.action}. Vai quindi su `Network`{.action} nella barra laterale sinistra e clicca su `IP`{.action}. Verifica che la `Modalità avanzata` sia abilitata per visualizzare lo stato dell'infrastruttura anti-DDoS e la configurazione dei suoi componenti.
 

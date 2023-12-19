@@ -145,7 +145,7 @@ Tenga en cuenta que las reglas se desactivan hasta que se detecta un ataque y, a
 
 Para asegurarse de que sólo se dejan abiertos los puertos estándar para SSH (22), HTTP (80), HTTPS (443) y UDP (10.000) al autorizar ICMP, siga las reglas siguientes:
 
-![Ejemplo de configuración](images/example.png){.thumbnail}
+![Ejemplo de configuración](images/exemple.png){.thumbnail}
 
 Las reglas se ordenan de 0 (la primera regla leída) a 19 (la última). La cadena de reglas se detiene en cuanto se aplica una regla al paquete.
 
@@ -171,11 +171,11 @@ Para activarla, siga estos pasos:
 - Vaya a `Network`{.action} en la columna izquierda.
 - Acceda a la sección `IP`{.action}.
 
-| ![menu-ipv4](images/migration_menu.png) |
+| ![menu-ipv4](images/mitigation_menu.png) |
 |:--:|
 | A continuación, haga clic en el botón `...`{.action} situado a la derecha de la IPv4 correspondiente. |
 
-| ![mitigación-opción](images/mitigación_menu_step_2.png) |
+| ![mitigación-opción](images/mitigacion_menu_step_2.png) |
 |:--:|
 | Seleccione `Mitigación: modo permanente`{.action}. |
 

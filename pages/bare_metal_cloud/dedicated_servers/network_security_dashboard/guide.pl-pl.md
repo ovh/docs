@@ -45,7 +45,7 @@ W trakcie ataku, aktywne filtrowanie jest wskazane przez ikonę ostrzegawczą na
 
 ### Powiadomienia o zabezpieczeniach sieci
 
-![red-line-attack](images/nsd_04_blur.png){.thumbnail}
+![red-line-attack](images/nsd_04_blur.PNG){.thumbnail}
 
 W Panelu klienta OVHcloud przejdź do sekcji `Bare Metal Cloud`{.action}. Następnie przejdź do sekcji `Sieć`{.action} na lewym pasku bocznym i kliknij pozycję `Adres IP`{.action}. Upewnij się, że `Tryb zaawansowany` jest włączony, aby sprawdzić stan infrastruktury anty-DDoS i konfigurację jej komponentów
 
