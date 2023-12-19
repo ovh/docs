@@ -175,7 +175,7 @@ Para activarla, siga estos pasos:
 |:--:|
 | A continuación, haga clic en el botón `...`{.action} situado a la derecha de la IPv4 correspondiente. |
 
-| ![mitigación-opción](images/mitigacion_menu_step_2.png) |
+| ![mitigación-opción](images/mitigation_menu_step_2.png) |
 |:--:|
 | Seleccione `Mitigación: modo permanente`{.action}. |
 
