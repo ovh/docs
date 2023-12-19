@@ -41,7 +41,7 @@ Lors d'une attaque, une action de mitigation active sera indiquée par une icôn
 
 ### Notifications de sécurité réseau
 
-![red-line-attack](images/nsd_04_blur.png){.thumbnail}
+![red-line-attack](images/nsd_04_blur.PNG){.thumbnail}
 
 Dans votre espace client, accédez à l'onglet `Bare Metal Cloud`{.action}. Cliquez ensuite sur `Network`{.action} puis sur le menu `IP`{.action}. Assurez-vous que le « mode avancé » est activé pour voir l'état de l'infrastructure anti-DDoS et la configuration de ses composants.
 
