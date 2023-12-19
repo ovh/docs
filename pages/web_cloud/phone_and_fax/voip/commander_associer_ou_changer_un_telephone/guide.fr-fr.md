@@ -1,7 +1,7 @@
 ---
 title: "Ligne SIP: commander, modifier, rattacher ou détacher un téléphone OVHcloud"
 excerpt: 'Découvrez comment effectuer la gestion des téléphones associés à vos lignes SIP depuis votre espace client'
-updated: 2023-09-19
+updated: 2023-12-19
 ---
 
 ## Objectif
@@ -25,8 +25,8 @@ Votre ligne SIP OVHcloud vous permet de recevoir et d’émettre des appels depu
 
 Votre ligne SIP OVHcloud peut être associée à un téléphone OVHcloud. Cela vous permet ainsi de gérer ce dernier depuis votre espace client. Cette gestion s'effectue par le biais de plusieurs manipulations. Poursuivez la lecture de cette documentation selon celle que vous souhaitez réaliser.
 
-- [Commander un téléphone OVHcloud](#obtenir-telephone) : vous permet de commander votre premier téléphone OVHcloud ou d'en obtenir un supplémentaire.
-- [Changer ou renvoyer le téléphone de votre ligne](#changer-telephone)) : vous permet de changer le téléphone OVHcloud actuellement associé à votre ligne SIP ou de le renvoyer si vous n'en avez plus l'utilité.
+- [Commander un téléphone OVHcloud](#obtenir-telephone) : vous permet de commander un nouveau téléphone OVHcloud sur une ligne existante dans votre compte.
+- [Changer ou renvoyer le téléphone de votre ligne](#changer-telephone) : vous permet de changer le téléphone OVHcloud actuellement associé à votre ligne SIP ou de le renvoyer si vous n'en avez plus l'utilité.
 - [Rattacher votre ligne à un téléphone](#rattacher-telephone) : vous permet de rattacher une ligne SIP à un téléphone OVHcloud que vous possédez déjà.
 - [Détacher votre ligne d'un téléphone](#detacher-telephone) : vous permet de détacher de votre ligne SIP le téléphone OVHcloud actuellement associé à celle-ci. 
 
