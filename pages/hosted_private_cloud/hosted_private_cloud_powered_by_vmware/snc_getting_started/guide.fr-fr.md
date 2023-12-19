@@ -156,10 +156,6 @@ Configurez le KMS (VNKP) dans vSphere en vous aidant du guide suivant :
 
 * [Activation du chiffrement des machines virtuelles (VM Encryption)](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/vm_encrypt)
 
-Le guide suivant vous décrit comment déployer la solution KMS Thales :
-
-* [Mise en route du KMS CipherTrust Manager](/pages/hosted_private_cloud/hosted_private_cloud_powered_by_vmware/kms_cipher_trust)
-
 ### Etape  6: vérification de la conformité SecNumCloud
 
 Après avoir effectué les démarches de sécurisation de l'infrastructure, vous devez finaliser l'activation SecNumCloud.
