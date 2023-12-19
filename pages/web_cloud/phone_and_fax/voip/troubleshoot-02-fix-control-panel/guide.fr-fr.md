@@ -93,10 +93,6 @@ Les manipulations pour réinitialiser nos téléphones sont décrites ci-dessous
 >>
 >> 1\. Dans le menu principal, sélectionnez le sous-menu `Réglages`.<br>2\. Sélectionnez `Réinitialisation`.<br>3\. Appuyez sur `OK` et confirmez la réinitialisation.
 >>
-> **Yealink** DECT (sans-fil)
->>
->> 1\. Appuyez sur le bouton `OK` du combiné pour accéder au menu principal.<br>2\. Sélectionnez les sous-menus `Réglages` puis `Réglages système`.<br>3\. Sélectionnez `Reset Base`<br> 4\. Si un code PIN vous est demandé, entrez `0000` et validez.<br>5\. Sélectionnez `Réinit d'usine` et validez.
->>
 > **Yealink** standard
 >>
 >> 1\. Appuyez pendant 10 secondes sur le bouton `OK` du téléphone.<br>2\. Confirmez la réinitialisation.
