@@ -87,7 +87,7 @@ Pode configurar até **20 regras por IP**.
 > [!warning]
 > Tenha em conta que o Edge Network Firewall da OVHcloud não pode ser utilizado para abrir portas num servidor. Para abrir portas num servidor, tem de passar pela firewall do sistema operativo instalado no servidor. 
 >
-> Para mais informações, consulte os seguintes guias: [Configurar a firewall no Windows](/pages/bare_metal_cloud/dedicated_servers/enable-port-firewall-soft-win) e [Configurar a firewall no Linux com iptables](/pages/bare_metal_cloud/dedicated_servers/firewall-Linux-iptable).
+> Para mais informações, consulte os seguintes guias: [Configurar a firewall no Windows](/pages/bare_metal_cloud/dedicated_servers/activate-port-firewall-soft-win) e [Configurar a firewall no Linux com iptables](/pages/bare_metal_cloud/dedicated_servers/firewall-Linux-iptable).
 >
 
 **Para adicionar uma regra:**

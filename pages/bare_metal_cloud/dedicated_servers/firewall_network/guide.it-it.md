@@ -140,7 +140,7 @@ Si noti che le regole vengono disattivate fino al momento in cui viene rilevato 
 
 Per assicurarsi che solo le porte standard per SSH (22), HTTP (80), HTTPS (443) e UDP (10.000) siano lasciate aperte durante l'autorizzazione dell'ICMP, segui le regole qui sotto:
 
-![Esempio di configurazione](images/example.png){.thumbnail}
+![Esempio di configurazione](images/exemple.png){.thumbnail}
 
 Le regole sono ordinate da 0 (prima regola letta) a 19 (ultima). La catena di regole si interrompe non appena una regola viene applicata al pacchetto.
 
