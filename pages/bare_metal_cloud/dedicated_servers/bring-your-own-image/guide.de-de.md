@@ -1,7 +1,7 @@
 ---
 title: Bring Your Own Image verwenden
 excerpt: Erfahren Sie hier, wie Sie Ihre eigenen Images bereitstellen
-updated: 2022-11-25
+updated: 2023-12-20
 ---
 
 > [!primary]
@@ -42,6 +42,14 @@ Bitte beachten Sie die unten aufgeführten Anforderungen bei der Vorbereitung Ih
 - Imageformat: **qcow2** oder **raw**
 
 Wenn Ihr Server über **uefi** Boot verfügt, müssen Sie in Ihrem Image unbedingt eine **EFI**-Partition hinzufügen.
+
+**Informationen zum RAID**
+
+Bring Your Own Image unterstützt keine Software-RAID-Konfiguration zum Zeitpunkt der Installation.
+
+Sie können es später in einem Post-Installations-Skript konfigurieren, wenn Ihr Image beispielsweise md RAID 1-Arrays enthält.
+
+Hardware-RAID wird unterstützt, wenn Ihr Server dies unterstützt, da es vor der Bereitstellung des Images auf der Festplatte konfiguriert wird.
 
 **Deployment-Methoden**
 

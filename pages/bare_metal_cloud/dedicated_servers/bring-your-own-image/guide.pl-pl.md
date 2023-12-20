@@ -1,7 +1,7 @@
 ---
 title: Korzystanie z funkcji Bring Your Own Image
 excerpt: Dowiedz się, jak tworzyć obrazy za pomocą Bring Your Own Image
-updated: 2022-11-25
+updated: 2023-12-20
 ---
 
 ## Wprowadzenie
@@ -39,6 +39,14 @@ Przygotowując wdrożenie, należy wziąć pod uwagę wymagania wymienione poni�
 - Format obrazu: **qcow** lub **raw**
 
 Jeśli Twój serwer ma boot **uefi**, należy koniecznie przewidzieć na zdjęciu partycję **EFI**, jeśli chcesz, aby Twój serwer mógł się zwiększyć.
+
+**Informacje o RAID**
+
+Bring Your Own Image nie obsługuje programowej konfiguracji RAID w czasie instalacji.
+
+Możesz skonfigurować ją później w skrypcie po-instalacyjnym, na przykład jeśli Twój obraz zawiera macierze md RAID 1.
+
+Sprzętowa macierz RAID jest obsługiwana, jeśli serwer ją obsługuje, ponieważ jest skonfigurowana przed wdrożeniem obrazu na dysku.
 
 **Metody wdrażania**
 
