@@ -1,6 +1,6 @@
 ---
 title: 'Korzystanie z konta e-mail w interfejsie Webmail RoundCube'
-updated: 2022-05-31
+updated: 2023-12-15
 ---
 
 > [!primary]
@@ -291,6 +291,14 @@ Aby dodać odpowiedź, kliknij przycisk `+`{.action} w dolnej części kolumny `
 > 
 > "Odpowiedzi" mają formę "tekstu niekodowanego".
 
+### Dodaj autoresponder lub automatyczną odpowiedź
+
+Chcesz dodać automatyczną odpowiedź do Twojego konta e-mail, gdy jesteś nieobecny lub niedostępny. Funkcja ta nie może zostać aktywowana w interfejsie webmail, ale w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) w interfejsie zarządzania Twoimi adresami e-mail. Zapoznaj się z przewodnikiem "[Tworzenie autorespondera dla konta e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_auto_responses/)".
+
+### Zmiana hasła do Twojego konta e-mail
+
+Aby zmienić hasło do Twojego konta e-mail, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), w interfejsie zarządzania Twoimi adresami e-mail. Zapoznaj się z naszym przewodnikiem "[Zmiana hasła do konta e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password/)".
+
 ### Redakcja e-maila
 
 W zakładce `Poczta`{.action} na górnym pasku kliknij `Zapisz`{.action}.
@@ -332,6 +340,8 @@ Na górnym pasku dostępne są następujące operacje:
 [Pierwsze kroki z usługą MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)
 
 [Zmiana hasła do konta e-mail MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password)
+
+[Tworzenie autorespondera dla konta e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_auto_responses/)
 
 [Tworzenie filtrów dla Twoich kont e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_filters)
 
