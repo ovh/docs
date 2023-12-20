@@ -14,6 +14,7 @@ We watch the new versions of ISO27017, ISO27018 and ISO27701 actually under revi
 
 ## Actual certified OVHcloud products
 | **Product** | **Certified** | 
+| --- | ---  | 
 | Dedicated Server | yes | 
 | Nutanix on OVHcloud | yes | 
 | File Storage Enterprise | yes | 
