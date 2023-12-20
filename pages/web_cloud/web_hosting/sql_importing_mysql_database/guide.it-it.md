@@ -1,6 +1,6 @@
 ---
 title: 'Importare un backup nel database di un hosting Web'
-excerpt: 'Come importare un backup in un database di un hosting Web OVH'
+excerpt: 'Come importare un backup in un database di un hosting Web OVHcloud'
 updated: 2023-12-11
 ---
 
