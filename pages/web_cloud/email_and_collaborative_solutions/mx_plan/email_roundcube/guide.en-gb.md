@@ -1,6 +1,6 @@
 ---
 title: Using your email account via the RoundCube webmail interface
-updated: 2022-05-31
+updated: 2023-12-15
 ---
 
 ## Objective
@@ -287,6 +287,14 @@ To add a response, click the `+`{.action} button at the bottom of the `Replies` 
 > 
 > `Responses` are written in plain text format.
 
+### Add an auto-reply
+
+You want to add an automatic reply to your email address when you are absent or unavailable. This feature cannot be enabled via webmail, but via your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), in the management interface for your email addresses. Read our guide "[Creating an auto-reply for an email address](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_auto_responses/)".
+
+### Change your email password
+
+To change your email password, you will need to log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB), in the interface for managing your email addresses. Read our guide "[Changing an email password](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password/)".
+
 ### Writing an email
 
 From the `Email`{.action} tab in the top bar, click `Write`{.action}.
@@ -328,6 +336,8 @@ In the top bar, the following actions are available:
 [Getting started with the MX Plan solution](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)
 
 [Changing your password for an MX Plan email address](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password)
+
+[Creating an auto-reply for an email address](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_auto_responses/)
 
 [Creating filters for your email addresses](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_filters)
 

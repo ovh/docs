@@ -1,6 +1,6 @@
 ---
 title: 'Webmail: guida all’utilizzo di RoundCube'
-updated: 2022-05-31
+updated: 2023-12-15
 ---
 
 > [!primary]
@@ -290,6 +290,14 @@ Per aggiungere una risposta, clicca sul pulsante `+`{.action} in fondo alla colo
 > 
 > Le "risposte" sono redatte in formato "testo chiaro".
 
+### Aggiungi una risposta automatica
+
+Aggiungi una risposta automatica al tuo indirizzo email quando sei assente o non sei disponibile. Questa funzione non può essere attivata dalla Webmail ma dallo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), nell’interfaccia di gestione degli indirizzi email. Consulta la nostra guida "[Creare una risposta automatica per il proprio indirizzo email](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_auto_responses/)".
+
+### Modificare la password del tuo indirizzo email
+
+Per modificare la password di un indirizzo email è necessario accedere allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it), nell’interfaccia di gestione degli indirizzi email. Consulta la nostra guida "[Modificare la password di un indirizzo email](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password/)".
+
 ### Redazione di un'email
 
 Nella scheda `E-mail`{.action} nella barra superiore, clicca su `Nuovo messaggio`{.action}.
@@ -331,6 +339,8 @@ Nella barra superiore sono disponibili le seguenti azioni:
 [Iniziare a utilizzare la soluzione MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)
 
 [Modifica la password di un indirizzo email MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password)
+
+[Creare una risposta automatica per il proprio indirizzo email](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_auto_responses/)
 
 [Crea filtri per i tuoi indirizzi email](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_filters)
 

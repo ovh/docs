@@ -1,6 +1,6 @@
 ---
 title: 'Utiliser son adresse e-mail depuis le webmail RoundCube'
-updated: 2022-05-31
+updated: 2023-12-15
 ---
 
 ## Objectif
@@ -179,7 +179,7 @@ Depuis Roundcube, cliquez sur `Paramètres`{.action} dans la barre supérieure, 
 
 ![hosting](images/roundcube07.png){.thumbnail}
 
-#### Paramétrer les attributs d'une identité 
+#### Paramétrer les attributs d'une identité
 
 - **Nom d'affichage** : ce nom apparaîtra dans la partie « expéditeur » du destinataire
 - **Courriel** : correspond à l'adresse depuis laquelle est envoyé l'e-mail.
@@ -188,18 +188,18 @@ Depuis Roundcube, cliquez sur `Paramètres`{.action} dans la barre supérieure, 
 - **Cci** : mettre en copie cachée une adresse e-mail lors d'un envoi.
 - **Définir par défaut** : lorsqu'il y a plusieurs identités (signatures), attribue celle-ci par défaut.
 - **Signature** : personnaliser le pied de page d'un e-mail lors de sa rédaction (nom, prénom, poste occupé, phrases, images...).
-- **Signature HTML** : active le format HTML sur la signature. 
+- **Signature HTML** : active le format HTML sur la signature.
 
 > [!alert]
-> 
-> Compléter la case **Courriel** par une adresse e-mail différente de celle sur laquelle vous êtes connecté est considérée comme une usurpation d'identité électronique (*spoofing*). L'adresse IP utilisée pour l'envoi risque d'être « bannie » et/ou considérée comme « SPAM » auprès de vos destinataires. 
+>
+> Compléter la case **Courriel** par une adresse e-mail différente de celle sur laquelle vous êtes connecté est considéré comme une usurpation d'identité électronique (*spoofing*). L'adresse IP utilisée pour l'envoi risque d'être « bannie » et/ou considérée comme « SPAM » auprès de vos destinataires.
 
 #### Ajouter une signature
 
 Par défaut, la case `signature` est en « texte en clair ». Ce format ne permet pas une édition avancée ou d'insérer une image dans votre signature. Pour bénéficier des options d'édition avancée pour une signature, il est conseillé d'activer le mode HTML en cliquant sur **Signature HTML** sous le cadre de saisie.
 
 > [!warning]
-> 
+>
 > Par conséquent, si la signature est au format HTML, il sera nécessaire de passer en mode HTML pour la rédaction d'un e-mail. Vous pouvez activer cette option par défaut pour chaque rédaction d'e-mail, depuis la section `Paramètres`{.action} de l'interface Roundcube.
 > Cliquez sur `Préférences`{.action} dans la colonne de gauche, puis sur `Rédaction de courriels`{.action}. Pour la mention **Rédiger des courriels HTML**, sélectionnez `Toujours`.
 >
@@ -211,6 +211,7 @@ Cliquez sur le bouton `< >`{.action} dans la barre d'outils HTML, puis insérez 
 
 ```bash
 <img src="your-image-url" border="0" alt="text-if-image-is-not-displayed" />
+
 ```
 
 ![hosting](images/roundcube08.png){.thumbnail}
@@ -240,7 +241,7 @@ Pour affecter un contact à l'un des groupes, sélectionnez un contact dans la c
 Dans la colonne `Groupes`, sélectionnez le carnet d'adresses ou l'un des groupes.
 
 > [!primary]
-> 
+>
 > Lorsque vous créez un contact à partir d'un groupe sélectionné, le contact sera alors automatiquement ajouté au groupe.
 
 Cliquez sur le bouton `+`{.action} en bas de la colonne `Contacts` pour créer un contact.
@@ -284,26 +285,34 @@ Pour ajouter une réponse, cliquez sur le bouton `+`{.action} en bas de la colon
 ![hosting](images/roundcube12.png){.thumbnail}
 
 > [!primary]
-> 
+>
 > Les « réponses » se rédigent au format « texte en clair ».
+
+### Ajouter un répondeur ou réponse automatique
+
+Vous souhaitez ajouter une réponse automatique à votre adresse e-mail lorsque vous êtes absent ou indisponible. Cette fonction ne peut pas s'activer depuis le webmail mais depuis votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), dans l'interface de gestion de vos adresses e-mail. Consultez notre guide « [Créer un répondeur pour son adresse e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_auto_responses/) ».
+
+### Modifier le mot de passe de votre adresse-mail
+
+Pour modifier le mot de passe de votre adresse e-mail, vous devez vous connecter à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr), dans l'interface de gestion de vos adresses e-mail. Consultez notre guide « [Modifier le mot de passe d'une adresse e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password/) ».
 
 ### Rédaction d'un e-mail
 
 Depuis l'onglet `Courriel`{.action} dans la barre supérieure, cliquez sur `Rédiger`{.action}.
 
-Dans la fenêtre de rédaction d'un e-mail, on retrouve les champs suivants : 
+Dans la fenêtre de rédaction d'un e-mail, on retrouve les champs suivants :
 
 - **De** : choisir une [identité](#identity) pour définir l'expéditeur.
 - **À+** : ajouter des destinataires et/ou un [groupe de destinataires](#group).
 
 > [!primary]
-> 
+>
 > Le champ **«À»** ne doit pas excéder les 100 destinataires, cela inclut les contacts contenus dans un [groupe](#group).
 
 - **Ajouter Cc+** : ajouter des destinataires en copie simple.
 - **Ajouter Cci+** : ajouter des destinataires en copie cachée. Les autres destinataires de l'e-mail ne verront pas ceux en Cci.
 - **Ajouter Transférer à** : faire suivre l'e-mail à des destinataires.
-- **Type d'éditeur** :  
+- **Type d'éditeur** :
     - `Texte en clair` : uniquement du texte sans mise en forme.
     - `HTML`: texte avec mise en forme. Une barre d'outils HTML apparaît au-dessus de la fenêtre de saisie.
 - **Priorité** de l'e-mail.
@@ -328,6 +337,8 @@ Dans la barre supérieure, les actions suivantes sont disponibles :
 [Premiers pas avec l’offre MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)
 
 [Modifier le mot de passe d’une adresse e-mail MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password)
+
+[Créer un répondeur pour son adresse e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_auto_responses/)
 
 [Créer des filtres pour vos adresses e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_filters)
 

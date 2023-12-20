@@ -1,6 +1,6 @@
 ---
 title: Verwendung Ihres E-Mail-Accounts mit RoundCube Webmail
-updated: 2022-05-31
+updated: 2023-12-15
 ---
 
 > [!primary]
@@ -66,7 +66,7 @@ Die Checkboxen entsprechen den "Abonnements". Das Abonnement legt fest, ob der O
 
 #### Liste der empfangenen / gesendeten E-Mails (oberes Fenster) <a name="topwindow"></a>
 
-Dieses Fenster zeigt den Inhalt des in der linken Spalte ausgewählten Ordners an. 
+Dieses Fenster zeigt den Inhalt des in der linken Spalte ausgewählten Ordners an.
 
 ##### **Anzeigetyp**
 
@@ -292,6 +292,14 @@ Um eine Antwort hinzuzufügen, klicken Sie unten in der Spalte `Schnellantworten
 > 
 > "Schnellantworten" sind immer im Textformat verfasst.
 
+### Eine automatische Antwort oder einen Beantworter hinzufügen
+
+Sie möchten Ihrer E-Mail-Adresse eine automatische Antwort hinzufügen, wenn Sie abwesend oder nicht verfügbar sind. Diese Funktion kann nicht über Webmail, sondern über Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/de/&ovhSubsidiary=de) im Verwaltungsinterface Ihrer E-Mail-Adressen aktiviert werden. Lesen Sie unsere Anleitung "[Einen Beantworter für seine E-Mail-Adresse erstellen](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_auto_responses/)".
+
+### Passwort Ihrer E-Mail-Adresse ändern
+
+Um das Passwort Ihrer E-Mail-Adresse zu ändern, loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/de/&ovhSubsidiary=de) im Verwaltungsinterface Ihrer E-Mail-Adressen ein. Lesen Sie unsere Anleitung "[Passwort einer E-Mail-Adresse ändern](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password/)".
+
 ### E-Mail Redaktion
 
 Klicken Sie im Tab `E-Mail`{.action} im oberen Menü auf `Verfassen`{.action}.
@@ -333,6 +341,8 @@ Im oberen Menü sind folgende Aktionen verfügbar:
 [Erste Schritte mit MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_generalities)
 
 [Passwort einer MX Plan E-Mail-Adresse ändern](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password)
+
+[Einen Beantworter für seine E-Mail-Adresse erstellen](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_auto_responses/)
 
 [Filter für Ihre E-Mail-Adressen erstellen](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_filters)
 
