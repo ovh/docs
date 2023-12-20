@@ -1,7 +1,7 @@
 ---
 title: Known limits
 excerpt: 'Requirements and limits to respect'
-updated: 2023-06-06
+updated: 2023-12-20
 ---
 
 <style>
@@ -113,7 +113,7 @@ In any case, there are some ports that you shouldn't block on your instances if 
 
 ### About Openstack security groups
 
-In case you want to apply OpenStack security groups onto your nodes, it is mandatory to add the above ports in a ruleset concerning the `0.0.0.0/24` CIDR.
+In case you want to apply OpenStack security groups onto your nodes, it is mandatory to add the above ports in a ruleset concerning the `0.0.0.0/0` CIDR.
 
 > [!warning]
 > If you remove the default rules accepting all input and output when creating a new security group, make sure to allow the ports needed by your application, as well as the mandatory ports mentioned above.
