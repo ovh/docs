@@ -37,7 +37,7 @@ We monitor the new versions of ISO27017, ISO27018 and ISO27701 actually under re
 | Kubernetes | yes |
 | Search engine software platform | ETA : 01/2024 | 
 | Timeseries | ETA : 01/2024 |
-| NoSQL Database | ETA : 01/2024 | 
+| NoSQL Database | MongoDB: yes <br>Others: ETA: 01/2024 | 
 | Relational Database | ETA : 01/2024 | 
 | Message broker | ETA : 01/2024 | 
 | Object Storage | yes | 
