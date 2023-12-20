@@ -88,7 +88,7 @@ Follow the next steps in the configuration process by browsing the tabs below:
 > **Step 6**
 >> | | |
 >> |---|---|
->> |![mxplan](images/mxplan-android-06.png){.thumbnail}|Complete the “**Outgoing server settings**”<br><br>- **Username**: Your full email address<br>- **Password**: Your email password<br>- **SMTP server**: enter **ssl0.ovh.net** |
+>> |![mxplan](images/mxplan-android-06.png){.thumbnail}|Complete the "**Outgoing server settings**"<br><br>- **Username**: Your full email address<br>- **Password**: Your email password<br>- **SMTP server**: enter **ssl0.ovh.net** |
 >>
 > **Step 7**
 >> | | |
