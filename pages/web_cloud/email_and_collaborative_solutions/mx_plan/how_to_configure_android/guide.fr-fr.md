@@ -105,7 +105,7 @@ Une fois l'adresse e-mail configurée, il ne reste plus qu’à l'utiliser ! Vou
 
 > [!success]
 >
-> OVHcloud propose une application web permettant d'accéder à votre adresse e-mail depuis un navigateur web, à l’adresse <https://www.ovh.com/fr/mail/>. Vous pouvez vous y connecter grâce aux identifiants de votre adresse e-mail.
+> OVHcloud propose une application web permettant d'accéder à votre adresse e-mail depuis un navigateur web, à l’adresse <https://www.ovhcloud.com/fr/mail/>. Vous pouvez vous y connecter grâce aux identifiants de votre adresse e-mail.
 
 ### Paramètres POP, IMAP  et SMTP
 
@@ -117,7 +117,7 @@ Pour la réception des e-mails, lors du choix du type de compte, nous vous conse
 |---|---|
 |Nom d'utilisateur|Renseignez l'adresse e-mail **complète**|
 |Mot de passe|Renseignez le mot de passe de l'adresse e-mail|
-|Serveur POP|ssl0.ovh.net|
+|Serveur|ssl0.ovh.net|
 |Port|995|
 |Type de sécurité|SSL/TLS|
 
@@ -127,7 +127,7 @@ Pour la réception des e-mails, lors du choix du type de compte, nous vous conse
 |---|---|
 |Nom d'utilisateur|Renseignez l'adresse e-mail **complète**|
 |Mot de passe|Renseignez le mot de passe de l'adresse e-mail|
-|Serveur POP|ssl0.ovh.net|
+|Serveur|ssl0.ovh.net|
 |Port|993|
 |Type de sécurité|SSL/TLS|
 
@@ -139,7 +139,7 @@ Pour l'envoi des e-mails, si vous devez renseigner manuellement les paramètres 
 |---|---|
 |Nom d'utilisateur|Renseignez l'adresse e-mail **complète**|
 |Mot de passe|Renseignez le mot de passe de l'adresse e-mail|
-|Serveur POP|ssl0.ovh.net|
+|Serveur|ssl0.ovh.net|
 |Port|465|
 |Type de sécurité|SSL/TLS|
 
