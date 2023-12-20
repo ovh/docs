@@ -1,7 +1,7 @@
 ---
 title: How to use the Bring Your Own Image feature
 excerpt: Find out how to easily deploy your own images on dedicated servers
-updated: 2022-11-25
+updated: 2023-12-20
 ---
 
 ## Objective
@@ -19,7 +19,7 @@ The image must be able to boot correctly, whatever the server type. It must also
 
 ## Requirements
 
-- A [dedicated server](https://us.ovhcloud.com/bare-metal/) in your OVHcloud account
+- A [dedicated server](https://www.ovhcloud.com/en/bare-metal/) in your OVHcloud account
 - Access to the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) (for the method "[Deployment via Control Panel](#viacontrolpanel)")
 - Access to the [OVHcloud API](/pages/manage_and_operate/api/first-steps) (for the section "[Deployment via API](#viaapi)" of this guide)
 - Your image must be smaller than the Server RAM minus 3GiB
@@ -40,6 +40,14 @@ There are some technical limitations linked to the use of physical products such
 - Image format: **qcow2** or **raw**
 
 If your server has a **uefi** boot type, be sure to add an **EFI** partition to your image template.
+
+**About RAID**
+
+Bring Your Own Image does not support software RAID configuration at install-time.
+
+You can still configure it later, in a post-installation script, for instance if your image contains md RAID 1 arrays.
+
+Hardware RAID is supported, if your server supports it, because it is configured before the image is deployed on disk.
 
 **Deployment methods**
 
@@ -68,7 +76,7 @@ For more information on activating ConfigDrive, please consult the documentation
 
 ### Deploy your image via the APIs <a name="viaapi"></a>
 
-Log in to the [API console](https://ca.api.ovh.com/) and go to the `/dedicated/server`{.action} section. You can use the `Filter` field to find "BringYourOwnImage".
+Log in to the [API console](https://api.ovh.com/) and go to the `/dedicated/server`{.action} section. You can use the `Filter` field to find "BringYourOwnImage".
 
 The BYOI feature uses 3 API calls.
 

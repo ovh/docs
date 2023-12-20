@@ -1,7 +1,7 @@
 ---
 title: Utilizza la funzionalità Bring Your Own Image
 excerpt: Scopri come creare le tue immagini grazie a Bring Your Own Image
-updated: 2022-11-25
+updated: 2023-12-20
 ---
 
 > [!primary]
@@ -43,6 +43,14 @@ Nel preparare il deploy, è necessario tenere conto dei requisiti elencati qui s
 - Formato dell'immagine: **qcow2** o **raw**
 
 Se il tuo server dispone di un boot **uefi**, sarà necessario prevedere nella tua immagine una partizione **EFI** se desideri che il tuo server possa boot.
+
+**Informazioni sul RAID**
+
+Bring Your Own Image non supporta la configurazione RAID del software al momento dell'installazione.
+
+È sempre possibile configurarla in un secondo momento, utilizzando uno script di post-installazione, ad esempio se l'immagine contiene matrici md RAID 1.
+
+Il RAID hardware è supportato, se supportato dal server, in quanto è configurato prima della distribuzione dell'immagine sul disco.
 
 **Metodi di implementazione**
 

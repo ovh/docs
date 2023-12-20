@@ -1,7 +1,7 @@
 ---
 title: How to use the Bring Your Own Image feature
 excerpt: Find out how to easily deploy your own images on dedicated servers
-updated: 2022-11-25
+updated: 2023-12-20
 ---
 
 ## Objective
@@ -41,6 +41,14 @@ There are some technical limitations linked to the use of physical products such
 
 If your server has a **uefi** boot type, be sure to add an **EFI** partition to your image template.
 
+**About RAID**
+
+Bring Your Own Image does not support software RAID configuration at install-time.
+
+You can still configure it later, in a post-installation script, for instance if your image contains md RAID 1 arrays.
+
+Hardware RAID is supported, if your server supports it, because it is configured before the image is deployed on disk.
+
 **Deployment methods**
 
 - [Deployment via the Control Panel](#viacontrolpanel): allows you to simply deploy your image using the OVHcloud Control Panel.
@@ -68,7 +76,7 @@ For more information on activating ConfigDrive, please consult the documentation
 
 ### Deploy your image via the APIs <a name="viaapi"></a>
 
-Log in to the [API console](https://ca.api.ovh.com/) and go to the `/dedicated/server`{.action} section. You can use the `Filter` field to find "BringYourOwnImage".
+Log in to the [API console](https://api.ovh.com/) and go to the `/dedicated/server`{.action} section. You can use the `Filter` field to find "BringYourOwnImage".
 
 The BYOI feature uses 3 API calls.
 

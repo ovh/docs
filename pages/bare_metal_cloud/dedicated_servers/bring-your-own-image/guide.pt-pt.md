@@ -1,7 +1,7 @@
 ---
 title: Como usar a funcionalidade Bring Your Own Image
 excerpt: Saiba como implementar imagens graças à funcionalidade Bring Your Own Image
-updated: 2022-11-25
+updated: 2023-12-20
 ---
 
 > [!primary]
@@ -43,6 +43,14 @@ Tenha em conta os imperativos listados abaixo aquando da sua preparação de imp
 - O formato de imagem: **qcow2** ou **raw**
 
 Se o seu servidor dispõe de um boot **uefi**, certifique-se de que adiciona uma partição **EFI** ao template da sua imagem.
+
+**Acerca do RAID**
+
+Bring Your Own Image não suporta a configuração RAID de software no momento da instalação.
+
+Também poderá configurá-la posteriormente num script de pós-instalação, por exemplo, se a imagem contiver matrizes md RAID 1.
+
+O RAID por hardware é suportado se o seu servidor suportar, pois está configurado antes de a imagem ser implementada no disco.
 
 **Métodos de implantação**
 

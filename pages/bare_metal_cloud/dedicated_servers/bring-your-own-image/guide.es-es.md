@@ -1,7 +1,7 @@
 ---
 title: Utilizar la funcionalidad Bring Your Own Image
 excerpt: Cómo desplegar las imágenes con Bring Your Own Image
-updated: 2022-11-25
+updated: 2023-12-20
 ---
 
 > [!primary]
@@ -43,6 +43,14 @@ Al preparar el despliegue, tenga en cuenta los siguientes imperativos. La lista 
 - Formato de imagen: **qcow2** o **raw**
 
 Si su servidor dispone de un boot **uefi**, deberá prever en su imagen una partición **EFI** para que su servidor pueda empezar a funcionar.
+
+**Acerca del RAID**
+
+Bring Your Own Image no admite RAID por software en el momento de la instalación.
+
+Siempre podrá configurarla más adelante, en un script de post-instalación, por ejemplo si su imagen contiene matrices md RAID 1.
+
+El RAID por hardware es compatible, si el servidor lo soporta, ya que está configurado antes de implementar la imagen en el disco.
 
 **Métodos de despliegue**
 
