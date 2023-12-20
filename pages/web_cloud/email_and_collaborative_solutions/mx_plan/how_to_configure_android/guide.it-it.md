@@ -149,7 +149,7 @@ Per l’invio delle email, se hai necessità di inserire manualmente le impostaz
 
 ### POP o IMAP, qual è la differenza? <a name="popimap"></a>
 
-Quando si configura l'indirizzo di posta elettronica manualmente, il client di posta elettronica chiede se si desidera utilizzare il protocollo **POP** (**P**ost **O**ffice **P**rotocol) o **IMAP** (**I**nternet **M**essage ******** Access∕Protocol). Per capirlo meglio, è necessario localizzare i protocolli POP e IMAP nella configurazione del tuo indirizzo email.
+Quando si configura l'indirizzo di posta elettronica manualmente, il client di posta elettronica chiede se si desidera utilizzare il protocollo **POP** (**P**ost **O**ffice **P**rotocol) o **IMAP** (**I**nternet **M**essage **A**ccess **P**rotocol). Per capirlo meglio, è necessario localizzare i protocolli POP e IMAP nella configurazione del tuo indirizzo email.
 
 Durante la configurazione del client di posta, è necessario fornire le informazioni sul **server in entrata** per ricevere le email e sul **server in uscita** per inviare le email. Per inviare le email non è possibile scegliere, ma viene utilizzato il protocollo **SMTP** (**S**imple **M**ail **T**ransfer **P**rotocol). Per la ricezione, potrete quindi scegliere tra **POP** o **IMAP**.
 
