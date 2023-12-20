@@ -1,8 +1,14 @@
 ---
 title: Cold Archive - Présentation
 excerpt: Découvrez le service, ses fonctionnalités et sa facturation
-updated: 2023-01-29
+updated: 2023-12-20
 ---
+
+<style>
+.w-100 {
+    width:100% !important;
+}
+</style>
 
 ## Objectif
 
@@ -39,13 +45,15 @@ Le service vous permet de vous concentrer sur la création et le déploiement d'
 
 Le service est entièrement géré par OVHcloud et accessible via l'API S3.
 
-**Opération en 3 étapes**
+**Opération en 5 étapes**
 
 1. Stockez d'abord vos données dans un bucket de la région RBX.
 2. Archivez-le sur des bandes.
 3. Restaurez vos données ou/et supprimez votre archive.
+4. Décider de déplacer ou de supprimer les données de l'espace de stockage temporaire.
+5. En option, vous pouvez décider de réarchiver les données avec les bandes ou de les supprimer si elles sont vides.
 
-![Cold Archive concept](images/cold_archive_overview-20230117154349550.png){.thumbnail}
+![Cold Archive concept](images/cold_archive_overview-20230117154349550.png){.w-100}
 
 ## Téléchargement des données
 
@@ -71,9 +79,11 @@ Vous pouvez suivre les différentes étapes du stockage de vos données via le s
 | **`Archiving`** | Archivage en cours sur bandes. | Liste | <48h | Archive |
 | **`Archived`** | Objets archivés sur bandes uniquement. | Liste | illimité | Archive |
 | **`Restoring`** | Restauration en cours à partir des bandes. | Liste | <48h | Archive |
-| **`Restored`** | Objets restaurés et accessibles. | Lecture seule + Liste | 30 jours | Archive |
+| **`Restored`** | Objets restaurés et accessibles. | Lecture seule + Liste | *(les données sont disponibles pendant)*<br>30 jours | Archive |
 | **`Deleting`** | Suppression des objets des bandes (et des disques si restaurés) en cours. | Liste | <48h | Archive |
 | **`Flushed`** | Le bucket est vide et peut être retiré en toute sécurité. | Liste (bucket vide) | N / A | Archive |
+
+![lifecycle](images/lifecycle.png)
 
 ## Performances réseau, téléchargement et récupération
 
@@ -128,7 +138,7 @@ Object Storage est disponible via un point de terminaison public (IP publique).
 ## Tarification
 
 <!--
-Nos prix sont décrits [ici](https://www.ovhcloud.com/fr-ca/public-cloud/prices/) .
+Nos prix sont décrits [ici](https://www.ovhcloud.com/fr/public-cloud/prices/) .
 -->
 
 La solution Cold Archive est facturée en fonction de l'espace d'archivage utilisé (sur bandes magnétiques) et de l'espace de dépôt utilisé (espace Object Storage) avec une granularité de 1 Go. Pour assurer sa lisibilité, le prix est affiché en Go/mois, mais la granularité de facturation est au Go/heure, considérant qu'il y a en moyenne 720 heures dans un mois.
@@ -140,12 +150,12 @@ Il est possible de commencer à archiver un bucket avec moins de 1 To de donnée
 
 ## Aller plus loin
 
-Exploitez votre cycle de vie et apprenez à créer un bucket, archiver, récupérer des données, répertorier les métadonnées, en suivant [ce guide](/pages/storage_and_backup/object_storage/cold_archive_getting_started).
+Exploitez votre cycle de vie et apprenez à créer un bucket, archiver, récupérer des données, répertorier les métadonnées, en suivant [ce guide](/pages/storage_and_backup/object_storage/cold_archive_getting_started) .
 
 [Toute la documentation Object Storage](/products/storage-object-storage).
 
 Rendez-vous sur notre chaîne Discord dédiée : [https://discord.gg/ovhcloud](https://discord.gg/ovhcloud) . Posez des questions, fournissez des commentaires et interagissez directement avec l'équipe qui construit nos services de stockage et de sauvegarde.
 
-Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr-ca/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
+Si vous avez besoin d'une formation ou d'une assistance technique pour la mise en oeuvre de nos solutions, contactez votre commercial ou cliquez sur [ce lien](https://www.ovhcloud.com/fr/professional-services/) pour obtenir un devis et demander une analyse personnalisée de votre projet à nos experts de l’équipe Professional Services.
 
 Rejoignez notre communauté d'utilisateurs sur <https://community.ovh.com/>.

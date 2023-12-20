@@ -1,8 +1,14 @@
 ---
 title: Cold Archive - Überblick (EN)
 excerpt: Discover the service, understand the capabilities and billing
-updated: 2023-01-29
+updated: 2023-12-20
 ---
+
+<style>
+.w-100 {
+    width:100% !important;
+}
+</style>
 
 ## Objective
 
@@ -39,13 +45,15 @@ The service allows you to focus on building and deploying cloud applications whi
 
 The service is fully managed by OVHcloud and accessible through S3 API.
 
-**3 steps operation**
+**5 steps operation**
 
-1. Store your data in an Object Storage bucket first in RBX Region
-2. Archive it on tapes
-3. Restore your data or/and delete your archive
+1. Store your data in an Object Storage bucket first in RBX Region – this bucket is a temporary bucket,
+2. Archive it on tapes,
+3. Retrieve your data
+4. Decide to move or suppress the data from the temporary bucket
+5. As an option you can decide to rearchive the data with the tapes or to delete them if empty.
 
-![Cold Archive concept](images/cold_archive_overview-20230117154349550.png){.thumbnail}
+![Cold Archive concept](images/cold_archive_overview-20230117154349550.png){.w-100}
 
 ## Uploading the data
 
@@ -57,7 +65,7 @@ Archive and retrieve your data with the methodology of your choice:
 - with rClone
 - with tools of the market 
 
-The bucket limitation is 100To.
+The bucket limitation is 100TB.
 
 ## Data lifecycle 
 
@@ -71,9 +79,11 @@ You can track the different steps of your data by the status of your bucket 
 | **`Archiving`** | Archiving in progress on tapes. | Listing | <48 hrs | Archive   |
 | **`Archived`** | Objects archived on tapes only. | Listing | unlimited | Archive  |
 | **`Restoring`** | Restoration in progress from tapes. | Listing | <48 hrs | Archive  |
-| **`Restored`** | Objects restored and accessible. | Read-only + Listing | 30 days | Archive  |
+| **`Restored`** | Objects restored and accessible. | Read-only + Listing | *(data are available during)*<br>30 days | Archive  |
 | **`Deleting`** | Objects deletion from tapes (and disks if restored) in progress. | Listing | <48 hrs | Archive  |
 | **`Flushed`** | Bucket is empty and can be removed safely. | Listing (empty bucket) | NA | Archive  |
+
+![lifecycle](images/lifecycle.png)
 
 ## Network, upload and retrieval performances  
 
