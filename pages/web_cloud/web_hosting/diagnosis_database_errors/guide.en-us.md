@@ -13,7 +13,7 @@ Your database usage may result in anomalies on your website or error messages in
 > [!warning]
 > OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 >
->This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider](https://partner.ovhcloud.com/en/directory/) and/or discuss the issue with our community on if you have difficulties or doubts. You can find more information in the [Go further](#gofurther) section of this guide.
+>This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider](https://partner.ovhcloud.com/en/directory/) and/or discuss the issue with our community on if you have difficulties or doubts. You can find more information in the [Go further](#go-further) section of this guide.
 >
 
 ## Requirements
@@ -274,7 +274,7 @@ Check the server name for the relevant database service in your [OVHcloud Contro
 > If you want to connect to a database on a [Web Cloud Databases server](/pages/web_cloud/web_cloud_databases/starting_with_clouddb), the server name can be retrieved from the tab `General information`{.action}, in the box `Login information`{.action} under `SQL`{.action} and labelled as `Host name`{.action}.
 >
 
-## Go further <a name="gofurther"></a>
+## Go further <a name="go-further"></a>
 
 [Getting started with Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)
 

@@ -113,7 +113,7 @@ You can perform these tests locally, for example by importing your data on [WAMP
 
 You can also create a **test version** of your website (e.g.: test.mydomain.tld) within another folder in your FTP server (you can still use a basic template).
 
-## Go further <a name="gofurther"></a>
+## Go further <a name="go-further"></a>
 
 [What to do if your WordPress site is hacked](/pages/web_cloud/web_hosting/cms_what_to_do_if_your_site_is_hacked)
 

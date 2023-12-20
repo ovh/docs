@@ -116,7 +116,7 @@ Questi test possono essere effettuati localmente, ad esempio importando i dati s
 
 Puoi anche creare una **versione di test** del tuo sito (ad esempio: test.miodominio.tld) in un'altra cartella del tuo hosting (sarà possibile utilizzare un template di base).
 
-## Per saperne di più <a name="gofurther"></a>
+## Per saperne di più <a name="go-further"></a>
 
 Per prestazioni specializzate (referenziamento, sviluppo, ecc...), contatta i [partner OVHcloud](https://partner.ovhcloud.com/it/directory/).
 

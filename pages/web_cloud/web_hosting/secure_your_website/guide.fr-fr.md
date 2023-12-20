@@ -17,7 +17,7 @@ Toutefois, si vous rencontrez des difficultés à réaliser certaines d'entre el
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 >
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [Aller plus loin](#aller-plus-loin) de ce guide.
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr/directory/) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section [Aller plus loin](#go-further) de ce guide.
 >
 
 ## Prérequis
@@ -112,7 +112,7 @@ Vous pourrez effectuer ces tests localement, par exemple en important vos donné
 
 Vous pouvez également créer une **version de test** de votre site (ex : test.mondomaine.tld) dans un autre dossier de votre hébergement (il vous sera tout à fait possible d'utiliser un template de base).
 
-## Aller plus loin <a name="aller-plus-loin"></a>
+## Aller plus loin <a name="go-further"></a>
 
 [Conseils suite au piratage de votre site WordPress](/pages/web_cloud/web_hosting/cms_what_to_do_if_your_site_is_hacked)
 

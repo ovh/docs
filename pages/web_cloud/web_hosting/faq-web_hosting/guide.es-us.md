@@ -205,7 +205,7 @@ No tiene que hacer nada al respecto. Aunque su dominio se muestre en [notación 
 > No es recomendable utilizar una dirección de correo electrónico con un dominio IDN en un cliente de correo (Outlook, Mail de macOS, etc.), ya que puede causar incompatibilidad.
 >
 
-## Más información <a name="gofurther"></a>
+## Más información <a name="go-further"></a>
 
 [FAQ - Correo en alojamiento compartido MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails)
 

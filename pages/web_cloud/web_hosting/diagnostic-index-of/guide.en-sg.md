@@ -18,7 +18,7 @@ An "**Index of**" page appears in at least one of the following cases:
 > [!warning]
 > OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 >
->This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider](https://partner.ovhcloud.com/en-sg/directory/) and/or discuss the issue with our community on if you have difficulties or doubts. You can find more information in the [Go further](#gofurther) section of this guide.
+>This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider](https://partner.ovhcloud.com/en-sg/directory/) and/or discuss the issue with our community on if you have difficulties or doubts. You can find more information in the [Go further](#go-further) section of this guide.
 >
 
 ## Requirements
@@ -78,7 +78,7 @@ Finally, check that your website appears correctly. Otherwise, reboot your devic
 
 Also make sure that a **index.php** or **index.html** file is present in your target directory.
 
-## Go further <a name="gofurther"></a>
+## Go further <a name="go-further"></a>
 
 [Resolve the most common 1-click module errors](/pages/web_cloud/web_hosting/diagnostic_errors_module1clic)
 

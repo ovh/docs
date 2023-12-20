@@ -37,7 +37,7 @@ A alteração da palavra-passe da base de dados do seu site faz-se em quatro eta
 >
 > A responsabilidade sobre a configuração e a gestão dos serviços que a OVHcloud disponibiliza recai sobre o utilizador. Assim, deverá certificar-se de que estes funcionam corretamente.
 >
-> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [prestador de serviços especializado](https://partner.ovhcloud.com/pt/directory/) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção [Quer saber mais](#gofurther)?
+> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [prestador de serviços especializado](https://partner.ovhcloud.com/pt/directory/) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção [Quer saber mais](#go-further)?
 >
 
 ## Requisitos
@@ -223,7 +223,7 @@ Na nova janela, introduza a nova palavra-passe da base de dados (definida no [Et
 
 ![userDBpassword-step3](images/userDBpassword-step3.png){.thumbnail}
 
-## Quer saber mais? <a name="gofurther"></a>
+## Quer saber mais? <a name="go-further"></a>
 
 [Partilhado: Guia de utilização do FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)
 

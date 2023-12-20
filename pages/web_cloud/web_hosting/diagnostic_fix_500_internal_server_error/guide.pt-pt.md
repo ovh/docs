@@ -22,7 +22,7 @@ Por vezes, provêm também de uma atualização efetuada **automaticamente** por
 >
 > A responsabilidade sobre a configuração e a gestão dos serviços que a OVHcloud disponibiliza recai sobre o utilizador. Assim, deverá certificar-se de que estes funcionam corretamente.
 >
-> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [prestador de serviços especializado](https://partner.ovhcloud.com/pt/directory/) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção [Quer saber mais](#gofurther) ?
+> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [prestador de serviços especializado](https://partner.ovhcloud.com/pt/directory/) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção [Quer saber mais](#go-further) ?
 >
 
 ## Requisitos
@@ -100,7 +100,7 @@ Se o seu site tiver uma base de dados, consulte o nosso manual "[Importar um bac
 
 Por fim, se o erro 500 aparecer após uma atualização da versão PHP do seu alojamento, consulte o nosso guia "[Mudar a versão de PHP do alojamento web](/pages/web_cloud/web_hosting/configure_your_web_hosting)" para voltar à configuração anterior.
 
-## Saiba mais <a name="gofurther"></a>
+## Saiba mais <a name="go-further"></a>
 
 [O que fazer se o meu site está inacessível?](/pages/web_cloud/web_hosting/diagnostic-website-not-accessible)
 

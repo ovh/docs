@@ -6,7 +6,7 @@ updated: 2021-07-08
  
 ## Objective <a name="objective"></a>
 
-Several error messages may appear if your website is inaccessible. The examples below indicate that your web hosting plan does not contain any [SSL certificate](/pages/web_cloud/web_hosting/ssl_on_webhosting) (if your website does not display one of the anomalies described in this guide, please refer to the "[Go further](#gofurther)" section):
+Several error messages may appear if your website is inaccessible. The examples below indicate that your web hosting plan does not contain any [SSL certificate](/pages/web_cloud/web_hosting/ssl_on_webhosting) (if your website does not display one of the anomalies described in this guide, please refer to the "[Go further](#go-further)" section):
 
 |Browser|Error message concerned|
 |-|---|
@@ -21,7 +21,7 @@ Several error messages may appear if your website is inaccessible. The examples 
 >
 > OVHcloud provides services which you are responsible for with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 >
-> We have provided you with this guide in order to help you with common tasks. Nevertheless, we recommend contacting a specialist provider and/or the service’s software publisher if you encounter any difficulties. We will not be able to assist you ourselves. You can find more information in the "[Go further](#gofurther)" section of this guide.
+> We have provided you with this guide in order to help you with common tasks. Nevertheless, we recommend contacting a specialist provider and/or the service’s software publisher if you encounter any difficulties. We will not be able to assist you ourselves. You can find more information in the "[Go further](#go-further)" section of this guide.
 >
 
 ## Requirements
@@ -95,7 +95,7 @@ If you **imported a SSL certificate** from another provider, contact its support
 >![right-menu-email-button](images/right-menu-email-button.png){.thumbnail}
 >
 
-## Go further <a name="gofurther"></a>
+## Go further <a name="go-further"></a>
 
 [Managing SSL certificates on a Web Hosting plan](/pages/web_cloud/web_hosting/ssl_on_webhosting)
 

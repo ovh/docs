@@ -10,7 +10,7 @@ updated: 2022-08-02
 
 ## Objetivo
 
-Em caso de inacessibilidade do seu website, podem ocorrer várias reações de erro. Os exemplos abaixo indicam uma configuração errada dos seus [DNS](/pages/web_cloud/domains/dns_server_general_information#compreender-a-nocao-de-dns) ou um domínio suspenso (se o seu site não apresentar uma das mensagens de erro descritas aqui, consulte a secção [Quer saber mais?](#gofurther)):
+Em caso de inacessibilidade do seu website, podem ocorrer várias reações de erro. Os exemplos abaixo indicam uma configuração errada dos seus [DNS](/pages/web_cloud/domains/dns_server_general_information#compreender-a-nocao-de-dns) ou um domínio suspenso (se o seu site não apresentar uma das mensagens de erro descritas aqui, consulte a secção [Quer saber mais?](#go-further)):
 
 |Browser|Mensagem de Erro|
 |-|---|
@@ -25,7 +25,7 @@ Em caso de inacessibilidade do seu website, podem ocorrer várias reações de e
 >
 > A responsabilidade sobre a configuração e a gestão dos serviços que a OVHcloud disponibiliza recai sobre o utilizador. Assim, deverá certificar-se de que estes funcionam corretamente.
 >
-> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [prestador de serviços especializado](https://partner.ovhcloud.com/pt/directory/) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção [Quer saber mais?](#gofurther).
+> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [prestador de serviços especializado](https://partner.ovhcloud.com/pt/directory/) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção [Quer saber mais?](#go-further).
 >
 
 ## Requisitos
@@ -129,7 +129,7 @@ De seguida, aceda à [Zona DNS](/pages/web_cloud/domains/dns_zone_edit#editar-a-
 
 O seu website estará disponível num prazo máximo de 24 horas.
 
-## Quer saber mais? <a name="gofurther"></a>
+## Quer saber mais? <a name="go-further"></a>
 
 [Resolver o erro “Site não instalado”](/pages/web_cloud/web_hosting/multisites_website_not_installed)
 

@@ -18,7 +18,7 @@ This access allows you to [put your website online](/pages/web_cloud/web_hosting
 >
 > OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 >
-> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider](https://partner.ovhcloud.com/en/directory/) and/or discuss the issue with our community on if you have difficulties or doubts. You can find more information in the ["Go further"](#gofurther) section of this guide.
+> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider](https://partner.ovhcloud.com/en/directory/) and/or discuss the issue with our community on if you have difficulties or doubts. You can find more information in the ["Go further"](#go-further) section of this guide.
 >
 
 ## Requirements
@@ -66,7 +66,7 @@ Then go to the `Ongoing Jobs`{.action} tab and refresh the page regularly. Your 
 
 To access your FTP storage space, please refer to our guide ["Logging in to your Web Hosting plan’s storage space"](/pages/web_cloud/web_hosting/ftp_connection).
 
-## Go further <a name="gofurther"></a>
+## Go further <a name="go-further"></a>
 
 [Setting and managing an account password](/pages/account_and_service_management/account_information/manage-ovh-password)
 

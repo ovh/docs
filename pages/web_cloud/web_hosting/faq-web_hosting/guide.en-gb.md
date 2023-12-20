@@ -208,7 +208,7 @@ You have no action to take in this situation. Even if your domain appears in [in
 > Using an email address with an IDN domain in an email client (Outlook, macOS Mail, etc.) is not recommended and may cause incompatibilities.
 >
 
-## Go further <a name="gofurther"></a>
+## Go further <a name="go-further"></a>
 
 [FAQ - MX Plan shared emails](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails)
 

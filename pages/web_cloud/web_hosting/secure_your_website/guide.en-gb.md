@@ -17,7 +17,7 @@ However, if you experience any difficulties carrying out some of them, please do
 > [!warning]
 > OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 >
->This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider](https://partner.ovhcloud.com/en-gb/directory/) and/or discuss the issue with our community on if you have difficulties or doubts. You can find more information in the [Go further](#gofurther) section of this guide.
+>This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider](https://partner.ovhcloud.com/en-gb/directory/) and/or discuss the issue with our community on if you have difficulties or doubts. You can find more information in the [Go further](#go-further) section of this guide.
 >
 
 ## Requirements
@@ -113,7 +113,7 @@ You can perform these tests locally, for example by importing your data on [WAMP
 
 You can also create a **test version** of your website (e.g. test.mydomain.tld) within another folder of your FTP storage space (you can still use a basic template).
 
-## Go further <a name="gofurther"></a>
+## Go further <a name="go-further"></a>
 
 [What to do if your WordPress site is hacked](/pages/web_cloud/web_hosting/cms_what_to_do_if_your_site_is_hacked)
 

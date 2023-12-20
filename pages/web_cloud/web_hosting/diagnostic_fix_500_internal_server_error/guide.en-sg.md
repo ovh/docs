@@ -18,7 +18,7 @@ These errors may also come from updates carried out **automatically** by compone
 >
 > OVHcloud provides services which you are responsible for with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 >
-> We have provided you with this guide in order to help you with common tasks. Nevertheless, we recommend contacting a specialist provider and/or the service’s software publisher if you encounter any difficulties. We will not be able to assist you ourselves. You can find more information in the [Go further](#gofurther) section of this guide.
+> We have provided you with this guide in order to help you with common tasks. Nevertheless, we recommend contacting a specialist provider and/or the service’s software publisher if you encounter any difficulties. We will not be able to assist you ourselves. You can find more information in the [Go further](#go-further) section of this guide.
 >
 
 ## Requirements
@@ -95,7 +95,7 @@ To restore your website’s source code, read our guide [Restoring your Web Host
 
 If your website uses a database, read our guide [Importing a backup into a Web Hosting plan database](/pages/web_cloud/web_hosting/sql_importing_mysql_database#restore-a-backup-from-the-control-panel).
 
-## Go further <a name="gofurther"></a>
+## Go further <a name="go-further"></a>
 
 [What do I do if my website is down?](/pages/web_cloud/web_hosting/diagnostic-website-not-accessible)
 

@@ -18,7 +18,7 @@ A utilização das suas bases de dados pode dar origem a um certo número de ano
 >
 > A OVHcloud disponibiliza-lhe serviços cuja configuração e gestão são da responsabilidade do cliente. O cliente é o único responsável pelo seu bom funcionamento.
 >
-> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [prestador de serviços especializado](https://partner.ovhcloud.com/pt/directory/) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção [Quer saber mais](#gofurther)?
+> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [prestador de serviços especializado](https://partner.ovhcloud.com/pt/directory/) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção [Quer saber mais](#go-further)?
 >
 
 ## Requisitos
@@ -282,7 +282,7 @@ Verifique o nome do servidor a inscrever no seu [Área de Cliente OVHcloud](http
 > Se pretender ligar-se a uma base de dados num servidor [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb), o nome do servidor a introduzir está inscrito no separador `Informações gerais`{.action}, parte `Informações da ligação`{.action}, `SQL`{.action} e na rubrica `Nome do host`{.action}.
 >
 
-## Quer saber mais? <a name="gofurther"></a>
+## Quer saber mais? <a name="go-further"></a>
 
 [Primeiros passos com o serviço Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)
 

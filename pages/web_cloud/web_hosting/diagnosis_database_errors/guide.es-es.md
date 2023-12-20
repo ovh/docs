@@ -18,7 +18,7 @@ El uso de sus bases de datos puede dar lugar a una serie de anomalías en su sit
 >
 > La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionan correctamente.
 >
-> Le ofrecemos esta guía para ayudarle a completar mejor las tareas más comunes. Sin embargo, le recomendamos que, si necesita ayuda, contacte con un proveedor de servicios especializado o con el editor del programa o la interfaz. Nosotros no podremos asistirle. Más información en la sección [Más información](#gofurther) de esta guía.
+> Le ofrecemos esta guía para ayudarle a completar mejor las tareas más comunes. Sin embargo, le recomendamos que, si necesita ayuda, contacte con un proveedor de servicios especializado o con el editor del programa o la interfaz. Nosotros no podremos asistirle. Más información en la sección [Más información](#go-further) de esta guía.
 >
 
 ## Requisitos
@@ -282,7 +282,7 @@ Compruebe el nombre del servidor que quiera registrar en su [área de cliente de
 > Si desea conectarse a una base de datos en un servidor [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb), el nombre del servidor a introducir se inscribe en la pestaña `Información general`{.action}, parte `Datos de conexión`{.action}, `SQL`{.action} y en el `Nombre del host`{.action}.
 >
 
-## Más información <a name="gofurther"></a>
+## Más información <a name="go-further"></a>
 
 [Primeros pasos con el servicio Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb)
 

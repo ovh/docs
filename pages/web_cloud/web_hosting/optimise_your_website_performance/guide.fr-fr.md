@@ -61,7 +61,7 @@ Pour vérifier si votre site web est compatible avec la dernière version PHP, v
 **PHP-FPM**
 
 Nous avons adapté PHP-FPM à notre infrastructure web afin d’accélérer les réponses PHP et de réduire substantiellement la charge du processeur central.
-Des tests ont révélé un rendement jusqu’à **7 fois supérieur**à l’ancien mécanisme.
+Des tests ont révélé un rendement jusqu’à **7 fois supérieur** à l’ancien mécanisme.
 
 Certaines variables du serveur sont modifiées par l’utilisation de PHP-FPM :
 

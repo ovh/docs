@@ -6,7 +6,7 @@ updated: 2021-07-08
 
 ## Objective <a name="objective"></a>
 
-Several error messages may appear if your website is inaccessible. The examples below indicate that your Web Hosting plan does not contain any [SSL certificate](/pages/web_cloud/web_hosting/ssl_on_webhosting) (if your website does not display one of the anomalies described in this guide, please refer to the "[Go further](#gofurther)" section): 
+Several error messages may appear if your website is inaccessible. The examples below indicate that your Web Hosting plan does not contain any [SSL certificate](/pages/web_cloud/web_hosting/ssl_on_webhosting) (if your website does not display one of the anomalies described in this guide, please refer to the "[Go further](#go-further)" section): 
 
 |Browser|Error message concerned|
 |-|---|
@@ -20,7 +20,7 @@ Several error messages may appear if your website is inaccessible. The examples 
 > [!warning]
 > OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 >
-> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider](https://partner.ovhcloud.com/en-gb/directory/) and/or discuss the issue with our community on if you have difficulties or doubts. You can find more information in the [Go further](#gofurther) section of this guide.
+> This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider](https://partner.ovhcloud.com/en-gb/directory/) and/or discuss the issue with our community on if you have difficulties or doubts. You can find more information in the [Go further](#go-further) section of this guide.
 >
 
 ## Requirements
@@ -94,7 +94,7 @@ If you have **imported a SSL certificate** from another provider, contact the ap
 >![right-menu-email-button](images/right-menu-email-button.png){.thumbnail}
 >
 
-## Go further <a name="gofurther"></a>
+## Go further <a name="go-further"></a>
 
 [Managing SSL certificates on a Web Hosting plan](/pages/web_cloud/web_hosting/ssl_on_webhosting)
 

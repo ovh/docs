@@ -22,7 +22,7 @@ A veces también se actualizan **automáticamente** en un componente del sitio w
 >
 > La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionen correctamente.
 >
-> Esta guía le ayudará a realizar las operaciones más habituales. No obstante, si tiene alguna duda le recomendamos que contacte con un proveedor de servicios especializado o con el editor del servicio. Nosotros no podremos asistirle al respecto. Para más información, consulte el apartado [Más información](#gofurther) de esta guía.
+> Esta guía le ayudará a realizar las operaciones más habituales. No obstante, si tiene alguna duda le recomendamos que contacte con un proveedor de servicios especializado o con el editor del servicio. Nosotros no podremos asistirle al respecto. Para más información, consulte el apartado [Más información](#go-further) de esta guía.
 >
 
 ## Requisitos
@@ -100,7 +100,7 @@ Si su sitio web incluye una base de datos, consulte nuestra guía [Importar una 
 
 Por último, si se ha producido un error al actualizar la versión PHP del alojamiento, consulte nuestra guía "[Cambiar la versión de PHP de un alojamiento web](/pages/web_cloud/web_hosting/configure_your_web_hosting)" para volver a la configuración anterior.
 
-## Más información <a name="gofurther"></a>
+## Más información <a name="go-further"></a>
 
 [¿Qué hacer si mi sitio web no está accesible?](/pages/web_cloud/web_hosting/diagnostic-website-not-accessible)
 

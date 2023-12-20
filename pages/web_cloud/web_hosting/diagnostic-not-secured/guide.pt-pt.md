@@ -10,7 +10,7 @@ updated: 2021-07-08
 
 ## Objetivo <a name="objective"></a>
 
-Em caso de inacessibilidade do seu site, podem surgir várias mensagens de erro. Os exemplos abaixo indicam que o seu alojamento Web não contém [certificado SSL](/pages/web_cloud/web_hosting/ssl_on_webhosting) (se o seu site não apresentar uma das anomalias descritas neste guia, consulte a secção « [Quer saber mais?](#gofurther) »): 
+Em caso de inacessibilidade do seu site, podem surgir várias mensagens de erro. Os exemplos abaixo indicam que o seu alojamento Web não contém [certificado SSL](/pages/web_cloud/web_hosting/ssl_on_webhosting) (se o seu site não apresentar uma das anomalias descritas neste guia, consulte a secção « [Quer saber mais?](#go-further) »): 
 
 |Browser|Mensagem de erro em questão|
 |-|---|
@@ -25,7 +25,7 @@ Em caso de inacessibilidade do seu site, podem surgir várias mensagens de erro.
 >
 > A OVHcloud disponibiliza serviços cuja configuração, gestão e responsabilidade lhe incumbem. Assim, deverá certificar-se de que estes funcionam corretamente.
 >
-> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [prestador de serviços especializado](https://partner.ovhcloud.com/pt/directory/) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção deste manual intitulada: « [Quer saber mais?](#gofurther) ».
+> Este manual fornece as instruções necessárias para realizar as operações mais habituais. No entanto, se encontrar dificuldades, recomendamos que recorra a um [prestador de serviços especializado](https://partner.ovhcloud.com/pt/directory/) e/ou que contacte o editor do serviço. Não poderemos proporcionar-lhe assistência técnica. Para mais informações, aceda à secção deste manual intitulada: « [Quer saber mais?](#go-further) ».
 >
 
 ## Requisitos
@@ -99,7 +99,7 @@ Se encomendou um dos **certificados SSL pagos** do nosso parceiro [SECTIGO](http
 >![right-menu-email-button](images/right-menu-email-button.png){.thumbnail}
 >
 
-## Quer saber mais? <a name="gofurther"></a>
+## Quer saber mais? <a name="go-further"></a>
 
 [Gerir um certificado SSL num alojamento web](/pages/web_cloud/web_hosting/ssl_on_webhosting)
 

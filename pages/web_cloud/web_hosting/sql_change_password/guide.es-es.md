@@ -37,7 +37,7 @@ La modificación de la contraseña de la base de datos del sitio web se realiza 
 >
 > La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionen correctamente.
 >
-> Esta guía le ayudará a realizar las operaciones más habituales. No obstante, si tiene alguna duda le recomendamos que contacte con un proveedor de servicios especializado o con el editor del servicio. Nosotros no podremos asistirle al respecto. Para más información, consulte el apartado [Más información](#gofurther) de esta guía.
+> Esta guía le ayudará a realizar las operaciones más habituales. No obstante, si tiene alguna duda le recomendamos que contacte con un proveedor de servicios especializado o con el editor del servicio. Nosotros no podremos asistirle al respecto. Para más información, consulte el apartado [Más información](#go-further) de esta guía.
 >
 
 ## Requisitos
@@ -223,7 +223,7 @@ Se abrirá una ventana en la que deberá introducir la nueva contraseña de la b
 
 ![userDBpassword-step3](images/userDBpassword-step3.png){.thumbnail}
 
-## Más información <a name="gofurther"></a>
+## Más información <a name="go-further"></a>
 
 [Web hosting: guía de uso de FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)
 

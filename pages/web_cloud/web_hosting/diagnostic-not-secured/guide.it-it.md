@@ -10,7 +10,7 @@ updated: 2021-07-08
 
 ## Obiettivo <a name="objective"></a>
 
-In caso di inaccessibilità del sito, potrebbero comparire diversi messaggi di errore. Gli esempi che seguono indicano che il tuo hosting Web non contiene [certificato SSL](/pages/web_cloud/web_hosting/ssl_on_webhosting) (se il tuo sito non mostra una delle anomalie descritte in questa guida, consulta la sezione [« Per saperne di più »](#gofurther)): 
+In caso di inaccessibilità del sito, potrebbero comparire diversi messaggi di errore. Gli esempi che seguono indicano che il tuo hosting Web non contiene [certificato SSL](/pages/web_cloud/web_hosting/ssl_on_webhosting) (se il tuo sito non mostra una delle anomalie descritte in questa guida, consulta la sezione [« Per saperne di più »](#go-further)): 
 
 |Browser|Messaggio di errore interessato|
 |-|---|
@@ -25,7 +25,7 @@ In caso di inaccessibilità del sito, potrebbero comparire diversi messaggi di e
 >
 > OVHcloud mette a tua disposizione servizi di cui tu sei responsabile per la configurazione e la gestione. Assicurarne il corretto funzionamento è quindi responsabilità dell'utente.
 >
-> Questa guida ti aiuta a eseguire le operazioni necessarie. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di rivolgerti a un [provider specializzato](https://partner.ovhcloud.com/it/directory/) o contattare l'amministratore del servizio. OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione [« Per saperne di più »](#gofurther) di questa guida.
+> Questa guida ti aiuta a eseguire le operazioni necessarie. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di rivolgerti a un [provider specializzato](https://partner.ovhcloud.com/it/directory/) o contattare l'amministratore del servizio. OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione [« Per saperne di più »](#go-further) di questa guida.
 >
 
 ## Prerequisiti
@@ -99,7 +99,7 @@ Se hai ordinato uno dei **certificati SSL a pagamento** del nostro partner [SECT
 >![right-menu-email-button](images/right-menu-email-button.png){.thumbnail}
 >
 
-## Per saperne di più <a name="gofurther"></a>
+## Per saperne di più <a name="go-further"></a>
 
 [Gestire un certificato SSL su un hosting Web](/pages/web_cloud/web_hosting/ssl_on_webhosting)
 

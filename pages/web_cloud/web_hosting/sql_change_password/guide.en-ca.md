@@ -32,7 +32,7 @@ There are four steps to changing your website’s database password:
 > [!warning]
 > OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 >
->This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider](https://partner.ovhcloud.com/en-ca/directory/) and/or discuss the issue with our community on if you have difficulties or doubts. You can find more information in the [Go further](#gofurther) section of this guide.
+>This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider](https://partner.ovhcloud.com/en-ca/directory/) and/or discuss the issue with our community on if you have difficulties or doubts. You can find more information in the [Go further](#go-further) section of this guide.
 >
 
 ## Requirements
@@ -174,7 +174,7 @@ In the window that pops up, enter your database’s new password (defined at [st
 
 ![database-password-step3](images/database-password-step3.png){.thumbnail}
 
-## Go further <a name="gofurther"></a>
+## Go further <a name="go-further"></a>
 
 [FileZilla software usage with your hosting](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)
 

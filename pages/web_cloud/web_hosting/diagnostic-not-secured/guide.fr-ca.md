@@ -6,7 +6,7 @@ updated: 2021-07-08
 
 ## Objectif <a name="objectif"></a>
 
-Plusieurs messages d'erreur peuvent apparaître en cas d'inaccessibilité de votre site. Les exemples ci-dessous indiquent que votre hébergement Web ne contient pas de [certificat SSL](/pages/web_cloud/web_hosting/ssl_on_webhosting) (si votre site n'affiche pas l'une des anomalies décrites dans ce guide, consultez la section « [Aller plus loin](#aller-plus-loin) ») : 
+Plusieurs messages d'erreur peuvent apparaître en cas d'inaccessibilité de votre site. Les exemples ci-dessous indiquent que votre hébergement Web ne contient pas de [certificat SSL](/pages/web_cloud/web_hosting/ssl_on_webhosting) (si votre site n'affiche pas l'une des anomalies décrites dans ce guide, consultez la section « [Aller plus loin](#go-further) ») : 
 
 |Navigateur|Message d'erreur concerné|
 |-|---|
@@ -21,7 +21,7 @@ Plusieurs messages d'erreur peuvent apparaître en cas d'inaccessibilité de vot
 >
 > OVHcloud met à votre disposition des services dont la configuration, la gestion et la responsabilité vous incombent. Il vous revient de ce fait d'en assurer le bon fonctionnement.
 >
-> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/directory/) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « [Aller plus loin](#aller-plus-loin) » de ce guide.
+> Nous mettons à votre disposition ce guide afin de vous accompagner au mieux sur des tâches courantes. Néanmoins, nous vous recommandons de faire appel à un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/directory/) et/ou de contacter l'éditeur du service si vous éprouvez des difficultés. En effet, nous ne serons pas en mesure de vous fournir une assistance. Plus d'informations dans la section « [Aller plus loin](#go-further) » de ce guide.
 >
 
 ## Prérequis
@@ -95,7 +95,7 @@ Si vous avez commandé l'un des **certificats SSL payants** de notre partenaire 
 >![right-menu-email-button](images/right-menu-email-button.png){.thumbnail}
 >
 
-## Aller plus loin <a name="aller-plus-loin"></a>
+## Aller plus loin <a name="go-further"></a>
 
 [Gérer un certificat SSL sur son hébergement web](/pages/web_cloud/web_hosting/ssl_on_webhosting)
 
