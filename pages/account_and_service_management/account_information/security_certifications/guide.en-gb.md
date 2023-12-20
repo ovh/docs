@@ -1,5 +1,5 @@
 title: "OVHcloud products ISO27k certifications"
-date: 2023-12-20
+updated: 2023-12-20
 
 ## Objectifs
 The following page aims to present products covered by ISO/CEI 27k family norms.
