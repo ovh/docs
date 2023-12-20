@@ -1,7 +1,7 @@
 ---
 title: AI Deploy - Tutorial - Deploy Stable Diffusion WebUI
 excerpt: How to deploy Automatic1111’s Stable Diffusion WebUI
-updated: 2023-12-19
+updated: 2023-12-20
 ---
 
 > [!primary]
@@ -43,7 +43,7 @@ You are going to follow different steps to deploy your Stable Diffusion applicat
 
 ### Step 1: Set up the environment
 
-In this section, we will guide you through the process of using a Docker image that will serve as the foundation for deploying the Stable Diffusion model on AI Deploy. 
+In this section, we will guide you through the process of using a Docker image that will serve as the foundation for deploying the Stable Diffusion model on AI Deploy.
 
 To do this, you will need [Docker](https://www.docker.com/get-started), either installed directly on your computer, or using a Debian Docker Instance, available on the [Public Cloud](https://www.ovh.com/manager/public-cloud/).
 
@@ -55,7 +55,7 @@ The Dockerfile that builds the image to use is already provided. Clone the [ai-t
 git clone https://github.com/ovh/ai-training-examples.git
 ```
 
-Then run `cd ai-training-examples/apps/gradio/stable-diffusion/` to move to the Stable Diffusion Web UI folder. If you run `ls` to list the existing files, you should see the `Dockerfile`, which contains all the commands you could call on the command line to run your application (like installing system packages for example). Here is the `Dockerfile`:
+Then run `cd ai-training-examples/apps/gradio/stable-diffusion/` to move to the Stable Diffusion Web UI folder. If you run `ls` to list the existing files, you should see the `Dockerfile`, which contains all the commands you can call on the command line to run your application (like installing system packages for example). Here is the `Dockerfile`:
 
 ```dockerfile
 # 🐳 Base image
@@ -85,7 +85,7 @@ RUN chown -R 42420:42420 /workspace
 ENV HOME=/workspace
 ```
 
-As you can see from the comments, this `Dockerfile` installs several packages, downloads the interface installation script and then run it. These instructions will be executed step by step during the build process.
+As you can see from the comments, this `Dockerfile` installs several packages, downloads the interface installation script and then runs it. These instructions will be executed step by step during the build process.
 
 To launch this process, make sure you are in the `Dockerfile` folder (`ai-training-examples/apps/gradio/stable-diffusion/`). Once you are in it, launch the following command to build your application image.
 
@@ -143,9 +143,9 @@ ovhai app run <shared-registry-address>/sd_webui:latest \
 ```
 
 > [!primary]
-> **Parameters explanation**
+> **Parameters explanations**
 > 
-> - `<shared-registry-address>/sd_webui:latest` is the image on which the app is based. Replace the registry address with yours. Also, make sure to use thr right image name.
+> - `<shared-registry-address>/sd_webui:latest` is the image on which the app is based. Replace the registry address with yours. Also, make sure to use the right image name.
 >
 > - `--name stable_diffusion_webui` is an optional argument that allows you to give your app a custom name, making it easier to manage all your apps.
 > 
@@ -155,7 +155,7 @@ ovhai app run <shared-registry-address>/sd_webui:latest \
 >
 > - `--volume` allows to specify what bucket you want to add to your app. The Stable Diffusion Web UI retrieves model checkpoints from the `stable-diffusion-webui/models/` directory. That is why we mount a volume on this directory. This will allow to interact with it, by adding new model checkpoints, and then use them within the Web UI. This volume is mounted with the RW permission (Read-Write), as this allows models to be added and accessed. However, checkpoints cannot be added directly to the volume. They will have to be added in sub-directories, corresponding to their nature (Stable Diffusion / Variational Autoencoders (VAEs)). The use and addition of new checkpoints will be detailed in [Step 3](#step-3-add-stable-diffusion-checkpoints).
 >
-> - `-- bash -c` allows you to launch the Web UI by running the `webui.sh` script with command line arguments. Customise the arguments to suit your needs. The list of available options is available on the [AUTOMATIC1111's Stable Diffusion Web UI GitHub repository](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Command-Line-Arguments-and-Settings)
+> - `-- bash -c` allows you to launch the Web UI by running the `webui.sh` script with command line arguments. Customise the arguments to suit your needs. The list of available options is available on the [AUTOMATIC1111's Stable Diffusion Web UI GitHub repository](https://github.com/AUTOMATIC1111/stable-diffusion-webui/wiki/Command-Line-Arguments-and-Settings).
 >
 > - Consider adding the `--unsecure-http` attribute if you want your application to be reachable without any authentication.
 
@@ -167,7 +167,7 @@ You can follow the progress of your app's deployment and these steps using the "
 ovhai app logs <app_id> --follow
 ```
 
-When your app will be ready for use, you will be able to generate your first images using the default checkpoint.
+When your app is ready for use, you will be able to generate your first images using the default checkpoint.
 
 For your information, the `--volume` parameter allows to use both Swift and S3 buckets. However, it's important to note that for S3 usage, a proper configuration is necessary. If S3 is not configured yet and you wish to use it, please read the [S3 compliance guide](/pages/public_cloud/ai_machine_learning/gi_08_s3_compliance).
 
@@ -183,10 +183,13 @@ For example, if you want to add and use the XL version of Stable Diffusion, you 
 
 - Look for the model checkpoint. Many are available on the [Stability AI Hugging Face page](https://huggingface.co/stabilityai). 
 - Download the model checkpoint. This can be done manually or via the command line, running:
+
 ```bash
 curl -L -O https://huggingface.co/stabilityai/stable-diffusion-xl-base-1.0/resolve/main/sd_xl_base_1.0.safetensors
 ```
+
 - Add the checkpoint to the bucket you have mounted on your app. Here is the default command to do that:
+
 ```bash
 ovhai bucket object upload <bucket_name>@<datastore_alias> object1 --add-prefix /model_subdirectory/
 ```
@@ -206,7 +209,7 @@ ovhai bucket object upload stable_diff_checkpoints@GRA sd_xl_base_1.0.safetensor
 >
 > **Can I not specify a prefix?**
 > 
-> If you only intend to add Stable Diffusion checkpoints, you could also mount your volume (when deploying the app) directly on `@GRA:/workspace/stable-diffusion-webui/models/Stable-diffusion/` rather than `@GRA:/workspace/stable-diffusion-webui/models/`. This will save you having to specify a prefix when uploading a checkpoint, as the volume will be mounted directly in the right place.
+> If you only intend to add Stable Diffusion checkpoints, you could also mount your volume (when deploying the app) directly on `@GRA:/workspace/stable-diffusion-webui/models/Stable-diffusion/` rather than `@GRA:/workspace/stable-diffusion-webui/models/`. This will spare you from having to specify a prefix when uploading a checkpoint, as the volume will be mounted directly in the right place.
 
 
 Once the checkpoint has been uploaded, you should see it when you list the objects in your volume:
@@ -215,7 +218,7 @@ Once the checkpoint has been uploaded, you should see it when you list the objec
 `ovhai bucket object list <bucket_name>@<datastore_alias>`
 ```
 
-*Following the example given in this tutorial, we will use:
+Following the example given in this tutorial, we will use:
 
 ```console
 `ovhai bucket object list stable_diff_checkpoints@GRA`
