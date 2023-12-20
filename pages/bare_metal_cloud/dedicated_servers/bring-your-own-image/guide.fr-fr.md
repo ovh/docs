@@ -46,7 +46,7 @@ Bring Your Own Image ne prend pas en charge la configuration RAID logicielle au 
 
 Vous pourrez toujours la configurer plus tard, dans un script de post-installation, par exemple si votre image contient des matrices md RAID 1.
 
-Le RAID matériel est pris en charge, si votre serveur le prend en charge, car il est configuré avant le déploiement de l'image sur le disque.
+Le RAID matériel est pris en charge, si votre serveur le supporte, car il est configuré avant le déploiement de l'image sur le disque.
 
 **Méthodes de déploiement**
 
