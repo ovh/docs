@@ -10,6 +10,10 @@ updated: 2023-12-15
 }
 </style>
 
+> [!primary]
+> Questa traduzione è stata generata automaticamente dal nostro partner SYSTRAN. I contenuti potrebbero presentare imprecisioni, ad esempio la nomenclatura dei pulsanti o alcuni dettagli tecnici. In caso di dubbi consigliamo di fare riferimento alla versione inglese o francese della guida. Per aiutarci a migliorare questa traduzione, utilizza il pulsante "Contribuisci" di questa pagina.
+>
+
 ## Obiettivo
 
 Gli indirizzi email dell’offerta MX Plan possono essere configurati su diversi client di posta elettronica compatibili per permetterti di utilizzare il tuo account email dal dispositivo che preferisci. Questa guida ti mostra in dettaglio il processo di configurazione di un indirizzo email MXplan dall’applicazione Gmail presente sui dispositivi Android.
@@ -105,7 +109,7 @@ Una volta configurato l’indirizzo email, non ti resta che utilizzarlo! Da ques
 
 > [!success]
 >
-> OVHcloud propone un'applicazione Web che permette di accedere al tuo indirizzo email da un browser Web, all'indirizzo <https://www.ovh.com/it/mail/>. accessibile utilizzando le credenziali del tuo account.
+> OVHcloud propone un'applicazione Web che permette di accedere al tuo indirizzo email da un browser Web, all'indirizzo <https://www.ovhcloud.com/it/mail/>. accessibile utilizzando le credenziali del tuo account.
 
 ### Impostazioni POP, IMAP e SMTP
 
@@ -117,7 +121,7 @@ Per la ricezione delle email, durante la scelta del tipo di account, ti consigli
 |---|---|
 |Nome utente|Inserisci l’indirizzo email **completo**|
 |Password|Inserisci la password associata all’indirizzo email|
-|Server POP|ssl0.ovh.net|
+|Server|ssl0.ovh.net|
 |Porta|995|
 |Tipo di sicurezza|SSL/TLS|
 
@@ -127,7 +131,7 @@ Per la ricezione delle email, durante la scelta del tipo di account, ti consigli
 |---|---|
 |Nome utente|Inserisci l’indirizzo email **completo**|
 |Password|Inserisci la password associata all’indirizzo email|
-|Server POP|ssl0.ovh.net|
+|Server|ssl0.ovh.net|
 |Porta|993|
 |Tipo di sicurezza|SSL/TLS|
 
@@ -139,7 +143,7 @@ Per l’invio delle email, se hai necessità di inserire manualmente le impostaz
 |---|---|
 |Nome utente|Inserisci l’indirizzo email **completo**|
 |Password|Inserisci la password associata all’indirizzo email|
-|Server POP|ssl0.ovh.net|
+|Server|ssl0.ovh.net|
 |Porta|465|
 |Tipo di sicurezza|SSL/TLS|
 

@@ -10,6 +10,10 @@ updated: 2023-12-15
 }
 </style>
 
+> [!primary]
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón "Contribuir" de esta página.
+>
+
 ## Objetivo
 
 Es posible configurar sus cuentas MX Plan en el cliente de correo que usted utilice, siempre que sea compatible, para enviar y recibir mensajes desde su dispositivo sin necesidad de una nueva aplicación. Esta guía explica cómo configurar una cuenta MXplan desde la aplicación Gmail de los dispositivos Android.
@@ -20,11 +24,11 @@ Es posible configurar sus cuentas MX Plan en el cliente de correo que usted util
 >
 > La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionen correctamente.
 >
-> Esta guía le ayudará a realizar las operaciones más habituales. No obstante, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es/directory/) o con el editor del servicio. Nosotros no podremos asistirle al respecto. Para más información, consulte el apartado «Más información» de esta guía.
+> Esta guía le ayudará a realizar las operaciones más habituales. No obstante, si necesita ayuda, le recomendamos que contacte con un [proveedor especializado](https://partner.ovhcloud.com/es-es/directory/) o con el editor del servicio. Nosotros no podremos asistirle al respecto. Para más información, consulte el apartado «Más información» de esta guía.
 
 ## Requisitos
 
-- Disponer de una dirección de correo electrónico MX Plan (incluida en la solución MX Plan o en un plan de [hosting de OVHcloud](https://www.ovhcloud.com/es/web-hosting/)).
+- Disponer de una dirección de correo electrónico MX Plan (incluida en la solución MX Plan o en un plan de [hosting de OVHcloud](https://www.ovhcloud.com/es-es/web-hosting/)).
 - Tener la aplicación Gmail instalada en su dispositivo. Puede instalarla desde Google Play Store si aún no está presente.
 - Disponer del nombre de usuario y la contraseña de la cuenta de correo electrónico que quiera configurar.
 
@@ -105,7 +109,7 @@ Una vez que haya configurado la dirección de correo electrónico, ya puede empe
 
 > [!success]
 >
-> OVHcloud ofrece una aplicación web con la que podrá acceder a su dirección de correo electrónico desde el navegador, disponible en la dirección <https://www.ovh.com/es/mail/>. Puede conectarse con las credenciales de acceso de su dirección de correo electrónico.
+> OVHcloud ofrece una aplicación web con la que podrá acceder a su dirección de correo electrónico desde el navegador, disponible en la dirección <https://www.ovhcloud.com/es-es/mail/>. Puede conectarse con las credenciales de acceso de su dirección de correo electrónico.
 
 ### Configuración POP, IMAP y SMTP
 
@@ -117,7 +121,7 @@ Para la recepción de mensajes de correo, al elegir el tipo de cuenta, le recome
 |---|---|
 |Nombre de usuario|Introduzca la dirección de correo electrónico **completa**|
 |Contraseña|Introduzca la contraseña de la dirección de correo|
-|Servidor POP|ssl0.ovh.net|
+|Servidor|ssl0.ovh.net|
 |Puerto|995|
 |Tipo de seguridad|SSL/TLS|
 
@@ -127,7 +131,7 @@ Para la recepción de mensajes de correo, al elegir el tipo de cuenta, le recome
 |---|---|
 |Nombre de usuario|Introduzca la dirección de correo electrónico **completa**|
 |Contraseña|Introduzca la contraseña de la dirección de correo|
-|Servidor POP|ssl0.ovh.net|
+|Servidor|ssl0.ovh.net|
 |Puerto|993|
 |Tipo de seguridad|SSL/TLS|
 
@@ -139,7 +143,7 @@ Para el envío de mensajes de correo electrónico, si tiene que introducir manua
 |---|---|
 |Nombre de usuario|Introduzca la dirección de correo electrónico **completa**|
 |Contraseña|Introduzca la contraseña de la dirección de correo|
-|Servidor POP|ssl0.ovh.net|
+|Servidor|ssl0.ovh.net|
 |Puerto|465|
 |Tipo de seguridad|SSL/TLS|
 

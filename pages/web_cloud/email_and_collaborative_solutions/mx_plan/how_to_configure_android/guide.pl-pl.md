@@ -10,6 +10,10 @@ updated: 2023-12-15
 }
 </style>
 
+> [!primary]
+> Tłumaczenie zostało wygenerowane automatycznie przez system naszego partnera SYSTRAN. W niektórych przypadkach mogą wystąpić nieprecyzyjne sformułowania, na przykład w tłumaczeniu nazw przycisków lub szczegółów technicznych. W przypadku jakichkolwiek wątpliwości zalecamy zapoznanie się z angielską/francuską wersją przewodnika. Jeśli chcesz przyczynić się do ulepszenia tłumaczenia, kliknij przycisk “Zgłóś propozycję modyfikacji” na tej stronie.
+>
+
 ## Wprowadzenie
 
 Konta usługi MX Plan mogą być skonfigurowane w jednym z kompatybilnych programów pocztowych. Dzięki temu możesz wysyłać i odbierać wiadomości, korzystając z wybranej przez Ciebie aplikacji. W tym przewodniku wyjaśnimy proces konfiguracji konta e-mail MXplan z poziomu aplikacji Gmail obecnej na urządzeniach z systemem Android.
@@ -105,7 +109,7 @@ Po zakończeniu konfiguracji konto jest gotowe do użytku. Możesz teraz wysyła
 
 > [!success]
 >
-> OVHcloud oferuje aplikację internetową umożliwiającą korzystanie z Twojego konta e-mail przy użyciu wyszukiwarki, dostępną pod adresem <https://www.ovh.com/pl/mail/>. Możesz się do niej zalogować, używając tych samych danych, których używasz do logowania się do konta e-mail.
+> OVHcloud oferuje aplikację internetową umożliwiającą korzystanie z Twojego konta e-mail przy użyciu wyszukiwarki, dostępną pod adresem <https://www.ovhcloud.com/pl/mail/>. Możesz się do niej zalogować, używając tych samych danych, których używasz do logowania się do konta e-mail.
 
 ### Ustawienia POP, IMAP i SMTP
 
@@ -117,7 +121,7 @@ Do odbierania wiadomości e-mail, wybierając rodzaj konta, zalecamy użycie pro
 |---|---|
 |Nazwa użytkownika|Wpisz **kompletny adres e-mail**|
 |Hasło|Wpisz hasło wybrane dla tego konta e-mail|
-|Serwer POP|ssl0.ovh.net|
+|Serwer|ssl0.ovh.net|
 |Port|995|
 |Typ zabezpieczenia|SSL/TLS|
 
@@ -127,7 +131,7 @@ Do odbierania wiadomości e-mail, wybierając rodzaj konta, zalecamy użycie pro
 |---|---|
 |Nazwa użytkownika|Wpisz **kompletny adres e-mail**|
 |Hasło|Wpisz hasło wybrane dla tego konta e-mail|
-|Serwer POP|ssl0.ovh.net|
+|Serwer|ssl0.ovh.net|
 |Port|993|
 |Typ zabezpieczenia|SSL/TLS|
 
@@ -139,7 +143,7 @@ Do wysyłki e-maili, jeśli wprowadzasz ręcznie ustawienia **SMTP** w ustawieni
 |---|---|
 |Nazwa użytkownika|Wpisz **kompletny adres e-mail**|
 |Hasło|Wpisz hasło wybrane dla tego konta e-mail|
-|Serwer POP|ssl0.ovh.net|
+|Serwer|ssl0.ovh.net|
 |Port|465|
 |Typ zabezpieczenia|SSL/TLS|
 

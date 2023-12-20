@@ -10,6 +10,10 @@ updated: 2023-12-15
 }
 </style>
 
+> [!primary]
+> Esta tradução foi automaticamente gerada pelo nosso parceiro SYSTRAN. Em certos casos, poderão ocorrer formulações imprecisas, como por exemplo nomes de botões ou detalhes técnicos. Recomendamos que consulte a versão inglesa ou francesa do manual, caso tenha alguma dúvida. Se nos quiser ajudar a melhorar esta tradução, clique em "Contribuir" nesta página.
+>
+
 ## Objetivo
 
 Os endereços de e-mail do serviço MX Plan podem ser configurados em diferentes programas de e-mail compatíveis. Isto permite-lhe enviar e receber e-mails no dispositivo que preferir. Neste guia, vamos detalhar o processo de configuração de um endereço de e-mail MXplan a partir da aplicação Gmail presente nos dispositivos Android.
@@ -105,7 +109,7 @@ Após a configuração, a conta de e-mail está pronta a usar Pode desde já env
 
 > [!success]
 >
-> A OVHcloud disponibiliza uma aplicação web que pode utilizar para aceder ao seu e-mail diretamente a partir de um browser, no endereço <https://www.ovh.com/pt/mail/>. Para aceder, só precisa dos dados de acesso do seu endereço de e-mail.
+> A OVHcloud disponibiliza uma aplicação web que pode utilizar para aceder ao seu e-mail diretamente a partir de um browser, no endereço <https://www.ovhcloud.com/pt/mail/>. Para aceder, só precisa dos dados de acesso do seu endereço de e-mail.
 
 ### Parâmetros POP, IMAP e SMTP
 
@@ -117,7 +121,7 @@ Para a receção dos e-mails, ao escolher o tipo de conta, recomendamos uma util
 |---|---|
 |Nome de utilizador|Introduza o endereço de e-mail **completo**|
 |Palavra-passe|Insira a palavra-passe do endereço de e-mail|
-|Servidor POP|ssl0.ovh.net|
+|Servidor|ssl0.ovh.net|
 |Porta|995|
 |Tipo de segurança|SSL/TLS|
 
@@ -127,7 +131,7 @@ Para a receção dos e-mails, ao escolher o tipo de conta, recomendamos uma util
 |---|---|
 |Nome de utilizador|Introduza o endereço de e-mail **completo**|
 |Palavra-passe|Insira a palavra-passe do endereço de e-mail|
-|Servidor POP|ssl0.ovh.net|
+|Servidor|ssl0.ovh.net|
 |Porta|993|
 |Tipo de segurança|SSL/TLS|
 
@@ -139,7 +143,7 @@ Se necessitar de inserir manualmente as definições de **SMTP** nas preferênci
 |---|---|
 |Nome de utilizador|Introduza o endereço de e-mail **completo**|
 |Palavra-passe|Insira a palavra-passe do endereço de e-mail|
-|Servidor POP|ssl0.ovh.net|
+|Servidor|ssl0.ovh.net|
 |Porta|465|
 |Tipo de segurança|SSL/TLS|
 

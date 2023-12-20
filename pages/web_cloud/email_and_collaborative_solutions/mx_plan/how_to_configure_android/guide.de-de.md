@@ -10,6 +10,10 @@ updated: 2023-12-15
 }
 </style>
 
+> [!primary]
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
+>
+
 ## Ziel
 
 E-Mail-Adressen aus dem MX Plan Angebot können auf verschiedenen, kompatiblen E-Mail-Clients eingerichtet werden. So können Sie Ihr bevorzugtes Gerät für Versand und Empfang Ihrer E-Mails verwenden. In dieser Anleitung erfahren Sie, wie Sie eine MXplan-E-Mail-Adresse über die Gmail-App auf Android-Geräten einrichten.
@@ -105,7 +109,7 @@ Wenn Ihre E-Mail-Adresse eingerichtet ist, können Sie sie verwenden. Sie könne
 
 > [!success]
 >
-> Eine OVHcloud Webanwendung, mit der Sie über einen Webbrowser auf Ihre E-Mail-Adresse zugreifen können, ist verfügbar unter <https://www.ovh.com/de/mail/>. Sie können sich mit den Login-Daten Ihrer E-Mail-Adresse anmelden.
+> Eine OVHcloud Webanwendung, mit der Sie über einen Webbrowser auf Ihre E-Mail-Adresse zugreifen können, ist verfügbar unter <https://www.ovhcloud.com/de/mail/>. Sie können sich mit den Login-Daten Ihrer E-Mail-Adresse anmelden.
 
 ### POP-, IMAP- und SMTP-Einstellungen
 
