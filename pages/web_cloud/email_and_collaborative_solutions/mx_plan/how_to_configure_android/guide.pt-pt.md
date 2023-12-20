@@ -167,7 +167,7 @@ Para compreender a diferença entre a utilização do protocolo POP e IMAP, vamo
 >
 > Esta descrição é uma síntese, e representa o funcionamento padrão destes dois protocolos. É possível configurar o POP para que os e-mails não sejam eliminados quando recolhe os seus e-mails. O objetivo aqui é descrever o funcionamento nativo destes dois protocolos e evitar manipulações suplementares de forma a corresponder às suas necessidades.
 
-## Saiba mais
+## Quer saber mais?
 
 [Configurar a sua conta E-mail Pro no Android através da aplicação Gmail](/pages/web_cloud/email_and_collaborative_solutions/email_pro/how_to_configure_android).
 
