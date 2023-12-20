@@ -11,7 +11,7 @@ updated: 2023-12-19
 
 ## Introduction
 
-**Stable Diffusion** is a deep learning model released in 2022. It is primarily used to generate detailed images and videos conditioned on text descriptions, though it can also be applied to other tasks such as inpainting, outpainting, and generating image-to-image translations guided by a text prompt. What makes it stand out is that it is **open-source**, making it more accessible than its predecessors.
+[Stable Diffusion](https://stability.ai/stable-diffusion) is a deep learning model released in 2022. It is primarily used to generate detailed images and videos conditioned on text descriptions, though it can also be applied to other tasks such as inpainting, outpainting, and generating image-to-image translations guided by a text prompt. What makes it stand out is that it is **open-source**, making it more accessible than its predecessors.
 
 [Stable Diffusion WebUI](https://github.com/AUTOMATIC1111/stable-diffusion-webui), also known as *AUTOMATIC1111* (its creator), is the **default Web User Interface (WebUI)** for many advanced users of Stable Diffusion. This interface lets you choose your Stable Diffusion models (checkpoints), extensions and generation parameters.
 
