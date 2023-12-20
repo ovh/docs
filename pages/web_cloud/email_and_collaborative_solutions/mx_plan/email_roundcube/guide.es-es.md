@@ -292,7 +292,7 @@ Para añadir una respuesta, haga clic en el botón `+`{.action} situado en la pa
 
 ### Añadir un contestador o respuesta automática
 
-Desea añadir una respuesta automática a su dirección de correo cuando esté ausente o no esté disponible. Esta función no puede activarse desde el webmail, sino desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), en la interfaz de gestión de sus direcciones de correo. Consulte nuestra guía «[Crear un contestador para su dirección de correo electrónico](/pages/web_cloud/email_and_colaborative_solutions/mx_plan/feature_auto_responses/)».
+Desea añadir una respuesta automática a su dirección de correo cuando esté ausente o no esté disponible. Esta función no puede activarse desde el webmail, sino desde el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es), en la interfaz de gestión de sus direcciones de correo. Consulte nuestra guía «[Crear un contestador para su dirección de correo electrónico](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_auto_responses)».
 
 ### Cambiar la contraseña de su dirección de correo
 
@@ -340,7 +340,7 @@ En la barra superior, puede elegir entre las siguientes acciones:
 
 [Cambiar la contraseña de una dirección de correo MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password)
 
-[Crear un contestador para su dirección de correo electrónico](/pages/web_cloud/email_and_colaborative_solutions/mx_plan/feature_auto_responses/)
+[Crear un contestador para su dirección de correo electrónico](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_auto_responses)
 
 [Crear filtros para sus direcciones de correo](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_filters)
 
