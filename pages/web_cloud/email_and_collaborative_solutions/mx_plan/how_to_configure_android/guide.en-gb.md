@@ -165,7 +165,7 @@ To understand the difference between POP and IMAP, we will break down the elemen
 
 > [!primary]
 >
-> This description is a summary, it represents the standard operation of these two protocols. You can set the POP so that emails are not deleted when you check your emails. The goal here is to describe how these two protocols work natively and avoid any additional steps to match your needs.
+> This description is a summary, it represents the standard operation of these two protocols. You can configure the POP so that emails are not deleted when you check your emails. The goal here is to describe how these two protocols work natively and avoid any additional steps to match your needs.
 
 ## Go further
 
