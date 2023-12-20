@@ -293,11 +293,11 @@ Para adicionar uma resposta, clique no botão `+`{.action} no fundo da coluna `R
 
 ### Adicionar uma resposta automática ou resposta automática
 
-Deseja adicionar uma resposta automática ao seu endereço de e-mail quando estiver ausente ou indisponível. Esta função não pode ser ativada a partir do webmail, mas sim a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), na interface de gestão dos seus endereços de e-mail. Consulte o guia « [Criar uma resposta automática para o endereço de e-mail](/pages/web_cloud/email_and_colaborative_solutions/mx_plan/feature_auto_responses/) ».
+Deseja adicionar uma resposta automática ao seu endereço de e-mail quando estiver ausente ou indisponível. Esta função não pode ser ativada a partir do webmail, mas sim a partir da [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), na interface de gestão dos seus endereços de e-mail. Consulte o guia « [Criar uma resposta automática para o endereço de e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_auto_responses) ».
 
 ### Alterar a palavra-passe do endereço de e-mail
 
-Para alterar a palavra-passe do seu endereço de e-mail, deve ligar-se à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), na interface de gestão dos seus endereços de e-mail. Consulte o guia « [Alterar a palavra-passe de um endereço de e-mail](/pages/web_cloud/email_and_colaborative_solutions/mx_plan/email_change_password/) ».
+Para alterar a palavra-passe do seu endereço de e-mail, deve ligar-se à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), na interface de gestão dos seus endereços de e-mail. Consulte o guia « [Alterar a palavra-passe de um endereço de e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password) ».
 
 ### Redação de um e-mail
 
@@ -341,7 +341,7 @@ Na barra superior, estão disponíveis as seguintes ações:
 
 [Alterar a palavra-passe de um endereço de e-mail MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/email_change_password)
 
-[Criar uma resposta automática para o endereço de e-mail](/pages/web_cloud/email_and_colaborative_solutions/mx_plan/feature_auto_responses/)
+[Criar uma resposta automática para o endereço de e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_auto_responses)
 
 [Criar filtros para os seus endereços de e-mail](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/feature_filters)
 
