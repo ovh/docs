@@ -3,11 +3,11 @@ title: "OVHcloud products ISO27k certifications"
 updated: 2023-12-20
 ---
 
-## Objectifs
+## Objective
 
 The following page aims at presenting OVHcloud products covered by ISO/CEI 27k family norms.
 
-## Norm's versions
+## Norms and versions
 
 Our actual certificates are established following these norms and versions:
 
@@ -16,7 +16,7 @@ Our actual certificates are established following these norms and versions:
 - ISO/IEC 27018:2019
 - ISO/IEC 27701:2019
 
-We watch the new versions of ISO27017, ISO27018 and ISO27701 actually under revision by ISO.
+We monitor the new versions of ISO27017, ISO27018 and ISO27701 actually under revision by ISO.
 
 ## Actual certified OVHcloud products
 
@@ -34,14 +34,14 @@ We watch the new versions of ISO27017, ISO27018 and ISO27701 actually under revi
 | AI Notebooks | yes | 
 | AI Training | yes | 
 | Data Processing | yes | 
-| Managed Kubernetes | yes |
+| Kubernetes | yes |
 | Search engine software platform | ETA : 01/2024 | 
 | Timeseries | ETA : 01/2024 |
 | NoSQL Database | ETA : 01/2024 | 
 | Relational Database | ETA : 01/2024 | 
 | Message broker | ETA : 01/2024 | 
 | Object Storage | yes | 
-| Managed Private Registry | yes | 
+| Private Registry | yes | 
 | Cold Storage | ETA : 01/2024 | 
 | Logs Data Platform | yes | 
 | Grafana | ETA : 01/2024 | 
