@@ -3,10 +3,10 @@ title: How to use the Bring Your Own Image feature
 excerpt: Find out how to easily deploy your own images on dedicated servers
 slug: bringyourownimage
 section: Advanced use
-updated: 2022-11-25
+updated: 2023-12-20
 ---
 
-**Last updated 25th November 2022**
+**Last updated 20th December 2023**
 
 ## Objective
 
@@ -44,6 +44,13 @@ There are some technical limitations linked to the use of physical products such
 - Image format: **qcow2** or **raw**
 
 If your server has a **uefi** boot type, be sure to add an **EFI** partition to your image template.
+
+**About RAID**
+
+There is no possibility right now to handle software RAID at the install.
+You can always configure it later, if your image was from a RAID (mdadm), in post-installation.
+
+Hardware RAID is supported, if you have the right hardware, because it is configured before the image is deployed on disk.
 
 **Deployment methods**
 
