@@ -212,7 +212,7 @@ Sie müssen in dieser Situation nichts unternehmen. Selbst wenn Ihre Domain in I
 > Die Verwendung einer E-Mail-Adresse mit einer IDN Domain in einem E-Mail-Programm (Outlook, macOS Mail...) wird nicht empfohlen und kann zu Inkompatibilitäten führen.
 >
 
-## Weiterführende Informationen <a name=“gofurther“></a>
+## Weiterführende Informationen <a name=“go-further“></a>
 
 [FAQ - Webhosting E-Mails](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails)
 

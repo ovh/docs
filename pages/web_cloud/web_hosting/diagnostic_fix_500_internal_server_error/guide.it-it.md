@@ -22,7 +22,7 @@ A volte provengono anche da un aggiornamento effettuato **automaticamente** da u
 >
 > OVHcloud mette a tua disposizione servizi di cui tu sei responsabile per la configurazione e la gestione. Garantirne quotidianamente il corretto funzionamento è quindi responsabilità dell’utente.
 >
-> Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione del tuo account. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un fornitore specializzato o l’amministratore del servizio. OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione [Per saperne di più](#gofurther) su questa guida.
+> Questa guida ti aiuta a eseguire le operazioni necessarie alla configurazione del tuo account. Tuttavia, in caso di difficoltà o dubbi, ti consigliamo di contattare un fornitore specializzato o l’amministratore del servizio. OVHcloud non potrà fornirti alcuna assistenza. Per maggiori informazioni consulta la sezione [Per saperne di più](#go-further) su questa guida.
 >
 
 ## Prerequisiti
@@ -100,7 +100,7 @@ Se il tuo sito contiene un database, consulta la nostra guida [Importare un back
 
 Se l'errore 500 è apparso a seguito di un aggiornamento della versione PHP del tuo hosting, consulta la nostra guida "[Modificare la versione di PHP su un hosting Web](/pages/web_cloud/web_hosting/configure_your_web_hosting)" per ritornare alla configurazione precedente.
 
-## Per saperne di più <a name="gofurther"></a>
+## Per saperne di più <a name="go-further"></a>
 
 [Cosa fare se il tuo sito è inaccessibile?](/pages/web_cloud/web_hosting/diagnostic-website-not-accessible)
 

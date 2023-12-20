@@ -212,7 +212,7 @@ Nie musisz podejmować żadnych działań w tej sytuacji. Nawet jeśli Twoja dom
 > Korzystanie z konta e-mail z domeną IDN w programie pocztowym (Outlook, Mail macOS, etc.) nie jest zalecane i może powodować niezgodności.
 >
 
-## Sprawdź również <a name="gofurther"></a>
+## Sprawdź również <a name="go-further"></a>
 
 [FAQ - E-maile na hostingu MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails)
 

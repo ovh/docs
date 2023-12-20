@@ -212,7 +212,7 @@ Non c'è nulla da fare in questa situazione. Anche se il tuo dominio compare con
 > L'utilizzo di un indirizzo email con un dominio IDN in un client di posta (Outlook, Mail di macOS, ecc...) non è consigliato e può causare incompatibilità.
 >
 
-## Per saperne di più <a name="gofurther"></a>
+## Per saperne di più <a name="go-further"></a>
 
 [FAQ - Email condivise MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails)
 

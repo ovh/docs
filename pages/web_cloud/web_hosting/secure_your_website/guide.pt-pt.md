@@ -20,7 +20,7 @@ Este guia permite-lhe adquirir conhecimentos fundamentais para assegurar a dispo
 >
 > A OVHcloud disponibiliza-lhe serviços cuja configuração e gestão são da responsabilidade do cliente. O cliente é o único responsável pelo seu bom funcionamento.
 >
-> Este manual fornece as instruções necessárias para usar as funcionalidades básicas de um servidor. No entanto, caso encontre dificuldades, recomendamos que contacte um fornecedor especializado e/ou o editor do serviço. De facto, a OVHcloud não lhe poderá fornecer assistência. Para mais informações, aceda à secção deste manual intitulada: [Quer saber mais?](#gofurther)
+> Este manual fornece as instruções necessárias para usar as funcionalidades básicas de um servidor. No entanto, caso encontre dificuldades, recomendamos que contacte um fornecedor especializado e/ou o editor do serviço. De facto, a OVHcloud não lhe poderá fornecer assistência. Para mais informações, aceda à secção deste manual intitulada: [Quer saber mais?](#go-further)
 >
 
 ## Requisitos
@@ -116,7 +116,7 @@ Poderá efetuar estes testes localmente, por exemplo, através da importação d
 
 Também pode criar uma **versão de teste** do seu site (ex: teste.meudominio.tld) noutra pasta do seu alojamento (será perfeitamente possível utilizar um template de base).
 
-## Quer saber mais? <a name="gofurther"></a>
+## Quer saber mais? <a name="go-further"></a>
 
 Para serviços especializados (referenciamento, desenvolvimento, etc.), contacte os [parceiros OVHcloud](https://partner.ovhcloud.com/pt/directory/).
 

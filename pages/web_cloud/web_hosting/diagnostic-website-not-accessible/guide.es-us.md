@@ -10,7 +10,7 @@ updated: 2022-08-02
 
 ## Objetivo
 
-En caso de que su sitio web no sea accesible, puede haber varios errores en su navegador. Los siguientes ejemplos indican una configuración errónea de sus [DNS](/pages/web_cloud/domains/dns_server_general_information#entender-el-concepto-de-dns) o un dominio suspendido (si su sitio no muestra uno de los mensajes de error descritos aquí, consulte la sección [Más información](#gofurther)):
+En caso de que su sitio web no sea accesible, puede haber varios errores en su navegador. Los siguientes ejemplos indican una configuración errónea de sus [DNS](/pages/web_cloud/domains/dns_server_general_information#entender-el-concepto-de-dns) o un dominio suspendido (si su sitio no muestra uno de los mensajes de error descritos aquí, consulte la sección [Más información](#go-further)):
 
 |Navegador|Mensaje de error|
 |-|---|
@@ -25,7 +25,7 @@ En caso de que su sitio web no sea accesible, puede haber varios errores en su n
 >
 > La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionen correctamente.
 >
-> Esta guía le ayudará a realizar las operaciones más habituales. No obstante, si tiene alguna duda le recomendamos que contacte con un proveedor de servicios especializado o con el editor del servicio. Nosotros no podremos asistirle al respecto. Para más información, consulte el apartado [Más información](#gofurther) de esta guía.
+> Esta guía le ayudará a realizar las operaciones más habituales. No obstante, si tiene alguna duda le recomendamos que contacte con un proveedor de servicios especializado o con el editor del servicio. Nosotros no podremos asistirle al respecto. Para más información, consulte el apartado [Más información](#go-further) de esta guía.
 >
 
 ## Requisitos
@@ -129,7 +129,7 @@ A continuación, cópiela en la [zona DNS](/pages/web_cloud/domains/dns_zone_edi
 
 Su sitio web estará disponible en un plazo máximo de 24 horas.
 
-## Más información <a name="gofurther"></a>
+## Más información <a name="go-further"></a>
 
 [Solucionar el error «Sitio no instalado»](/pages/web_cloud/web_hosting/multisites_website_not_installed)
 

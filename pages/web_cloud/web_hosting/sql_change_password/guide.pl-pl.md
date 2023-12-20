@@ -37,7 +37,7 @@ Zmiana hasła do bazy danych składa się z czterech etapów:
 >
 > OVHcloud udostępnia różnorodne usługi, jednak to Ty odpowiadasz za ich konfigurację i zarządzanie nimi. Ponosisz więc odpowiedzialność za ich prawidłowe funkcjonowanie.
 >
-> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy wyspecjalizowanego webmastera lub kontakt z producentem oprogramowania. Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji [Sprawdź](#gofurther) ten przewodnik.
+> Oddajemy w Twoje ręce niniejszy przewodnik, którego celem jest pomoc w wykonywaniu bieżących zadań. W przypadku trudności zalecamy skorzystanie z pomocy wyspecjalizowanego webmastera lub kontakt z producentem oprogramowania. Niestety firma OVHcloud nie będzie mogła udzielić wsparcia w tym zakresie. Więcej informacji znajduje się w sekcji [Sprawdź](#go-further) ten przewodnik.
 >
 
 ## Wymagania początkowe
@@ -223,7 +223,7 @@ W oknie, które się wyświetla wprowadź nowe hasło do Twojej bazy danych (zde
 
 ![userDBpassword-step3](images/userDBpassword-step3.png){.thumbnail}
 
-## Sprawdź <a name="gofurther"></a>
+## Sprawdź <a name="go-further"></a>
 
 [Przewodnik dotyczący korzystania z programu FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide)
 

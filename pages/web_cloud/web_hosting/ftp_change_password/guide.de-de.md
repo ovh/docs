@@ -73,7 +73,7 @@ Gehen Sie dann zum Tab `Aktuelle Tasks`{.action} und laden Sie die Seite ggf. ne
 
 Um auf Ihren FTP-Speicherplatz zuzugreifen, lesen Sie unsere Anleitung ["Mit dem Speicherplatz Ihres Webhostings verbinden"](/pages/web_cloud/web_hosting/ftp_connection).
 
-## Weiterführende Informationen <a name="gofurther"></a>
+## Weiterführende Informationen <a name="go-further"></a>
 
 [Das Passwort Ihres Kunden-Accounts anlegen und verwalten](/pages/account_and_service_management/account_information/manage-ovh-password)
 

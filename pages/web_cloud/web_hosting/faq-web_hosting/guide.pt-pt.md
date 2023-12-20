@@ -212,7 +212,7 @@ Não tem nada a fazer nesta situação. Mesmo que o seu domínio seja apresentad
 > A utilização de um endereço de e-mail com um domínio IDN num software de correio eletrónico (Outlook, Mail de macOS, etc.) não é recomendada e pode provocar incompatibilidades.
 >
 
-## Quer saber mais? <a name="gofurther"></a>
+## Quer saber mais? <a name="go-further"></a>
 
 [FAQ - E-mails partilhados MX Plan](/pages/web_cloud/email_and_collaborative_solutions/mx_plan/faq-emails)
 

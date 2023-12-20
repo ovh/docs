@@ -99,7 +99,7 @@ Um den Quellcode Ihrer Website wiederherzustellen, lesen Sie unsere Anleitung "[
 
 Wenn Ihre Website eine Datenbank nutzt, lesen Sie unsere Anleitung "[Backup in eine Webhosting-Datenbank importieren](/pages/web_cloud/web_hosting/sql_importing_mysql_database#backup-uber-das-kundencenter-wiederherstellen)", um diese auf einen früheren Zustand zurückzusetzen.
 
-## Weiterführende Informationen <a name="gofurther"></a>
+## Weiterführende Informationen <a name="go-further"></a>
 
 [Was tun, wenn Ihre Website nicht erreichbar ist?](/pages/web_cloud/web_hosting/diagnostic-website-not-accessible)
 

@@ -20,7 +20,7 @@ Se organiza por etapas en un orden creciente de importancia y dificultad técnic
 >
 > La configuración, la gestión y la responsabilidad de los servicios que OVHcloud pone a su disposición recaen sobre usted. Por lo tanto, usted deberá asegurarse de que estos funcionan correctamente.
 >
-> Le ofrecemos esta guía para ayudarle a completar mejor las tareas más comunes. Sin embargo, le recomendamos que, si necesita ayuda, contacte con un proveedor de servicios especializado o con el editor del programa o la interfaz. Nosotros no podremos asistirle. Para más información, consulte la sección [Más información](#gofurther) de esta guía.
+> Le ofrecemos esta guía para ayudarle a completar mejor las tareas más comunes. Sin embargo, le recomendamos que, si necesita ayuda, contacte con un proveedor de servicios especializado o con el editor del programa o la interfaz. Nosotros no podremos asistirle. Para más información, consulte la sección [Más información](#go-further) de esta guía.
 >
 
 ## Requisitos
@@ -116,7 +116,7 @@ Puede realizar estas pruebas localmente, por ejemplo importando sus datos en un 
 
 También puede crear una **versión de prueba** del sitio web (p. ej.: test.mondominio.tld) en otra carpeta de su alojamiento (podrá utilizar una plantilla de base).
 
-## Más información <a name="gofurther"></a>
+## Más información <a name="go-further"></a>
 
 Para servicios especializados (posicionamiento, desarrollo, etc.), contacte con los [partners de OVHcloud](https://partner.ovhcloud.com/es/directory/).
 

@@ -6,7 +6,7 @@ updated: 2022-08-02
 
 ## Objective
 
-Several error messages may appear on your browser in the event of your site being inaccessible. The examples below indicate an incorrect configuration of your [DNS](/pages/web_cloud/domains/dns_zone_edit#understanding-dns) or a suspended domain (if your website does not display one of the error messages described here, see the [Go further](#gofurther) section of this guide):
+Several error messages may appear on your browser in the event of your site being inaccessible. The examples below indicate an incorrect configuration of your [DNS](/pages/web_cloud/domains/dns_zone_edit#understanding-dns) or a suspended domain (if your website does not display one of the error messages described here, see the [Go further](#go-further) section of this guide):
 
 |Browser|Error Message|
 |-|---|
@@ -20,7 +20,7 @@ Several error messages may appear on your browser in the event of your site bein
 > [!warning]
 > OVHcloud is providing you with services for which you are responsible, with regard to their configuration and management. You are therefore responsible for ensuring they function correctly.
 >
->This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider](https://partner.ovhcloud.com/en-gb/directory/) and/or discuss the issue with our community on if you have difficulties or doubts. You can find more information in the [Go further](#gofurther) section of this guide.
+>This guide is designed to assist you in common tasks as much as possible. Nevertheless, we recommend that you contact a [specialist service provider](https://partner.ovhcloud.com/en-gb/directory/) and/or discuss the issue with our community on if you have difficulties or doubts. You can find more information in the [Go further](#go-further) section of this guide.
 >
 
 ## Requirements
@@ -124,7 +124,7 @@ Then refer to it in your domain’s [DNS zone](/pages/web_cloud/domains/dns_zone
 
 Your website will then be available within a maximum of 24 hours.
 
-## Go further <a name="gofurther"></a>
+## Go further <a name="go-further"></a>
 
 [Resolving a “Site not installed” error](/pages/web_cloud/web_hosting/multisites_website_not_installed)
 
