@@ -12,6 +12,7 @@ Our actual certificates are established following these norms and versions :
 - ISO/IEC 27017:2015
 - ISO/IEC 27018:2019
 - ISO/IEC 27701:2019
+
 We watch the new versions of ISO27017, ISO27018 and ISO27701 actually under revision by ISO.
 
 ## Actual certified OVHcloud products
