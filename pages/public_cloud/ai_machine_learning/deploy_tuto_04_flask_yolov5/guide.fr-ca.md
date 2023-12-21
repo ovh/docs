@@ -254,7 +254,7 @@ Find the address of your shared registry by launching this command:
 ovhai registry list
 ```
 
-Login on the shared registry with your usual openstack credentials:
+Login on the shared registry with your usual AI Platform user credentials:
 
 ``` {.console}
 docker login -u <user> -p <password> <shared-registry-address>
