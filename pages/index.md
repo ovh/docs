@@ -40,6 +40,7 @@
             + [VMware on OVHcloud - Security Specifications](account_and_service_management/account_information/security-specification-privatecloud-VMware)
             + [SecNumCloud-qualified VMware on OVHcloud - Security Specifications](account_and_service_management/account_information/security-specification-privatecloud-SNC)
             + [OVHcloud products ISO27k certifications](account_and_service_management/account_information/security_certifications)
+            + [OVHcloud products HDS certification](account_and_service_management/account_information/hds_certification)
     + [Managing billing, payments and services](products/account-and-service-management-managing-billing-payments-and-services)
         + [Renewing a service](account-and-service-management-managing-billing-payments-and-services-renewing-a-service)
             + [Managing renewal for OVHcloud services](account_and_service_management/managing_billing_payments_and_services/how_to_use_automatic_renewal)
