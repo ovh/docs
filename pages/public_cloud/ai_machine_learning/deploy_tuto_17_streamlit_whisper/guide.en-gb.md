@@ -205,7 +205,7 @@ docker build . -t whisper_app:latest
 >
 > - The dot `.` argument indicates that our build context (place of the **Dockerfile** and other needed files) is the current directory.
 >
-> - The `-t` argument allows us to choose the identifier to give to our image. Usually image identifiers are composed of a **name** and a **version tag** `<name>:<version>`. For this example we chose **whisper_app:latest**.
+> - The `-t` argument allows us to choose the identifier to give to our image. Usually image identifiers are composed of a **name** and a **version tag** `<name>:<version>`. For this example we choose **whisper_app:latest**.
 
 During the build process, Docker reads the instructions from the Dockerfile and executes them step by step. For your information, here are the steps of this Dockerfile:
 
@@ -240,7 +240,7 @@ CMD [ "streamlit" , "run" , "/workspace/app.py", "--server.address=0.0.0.0", "$M
 
 #### Push the image into a registry
 
-Once your image is built, you will need to tag it and push it to a registry. Several registries can be used (OVHcloud Managed Private Registry, Docker Hub, GitHub packages, ...). In this tutorial, we will use the **OVHcloud shared registry**.
+Once your image is built, you will need to tag it and push it to a registry. Several registries can be used ([OVHcloud Managed Private Registry](https://www.ovhcloud.com/en-gb/public-cloud/managed-private-registry/), [Docker Hub](https://hub.docker.com/), [GitHub packages](https://github.com/features/packages), ...). In this tutorial, we will use the **OVHcloud shared registry**.
 
 > [!warning]
 > **Warning**
