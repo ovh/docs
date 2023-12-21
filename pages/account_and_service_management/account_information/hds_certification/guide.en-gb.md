@@ -9,7 +9,7 @@ The following page aims to present products covered by "Hébergement de Données
 
 ## Norms and versions
 
-Our actual certificates are established following these norms and versions:
+Our actual certificate is established following this norm and version:
 
 - HDS v2018
 
