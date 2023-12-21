@@ -17,7 +17,7 @@ Niveau : Débutant
 Si votre poste est bloqué ou que vous l'avez réinitialisé, voici la procédure pour le reconfigurer :
 
 -   **Connectez-vous** sur votre **EspaceClientTelecom** : <https://www.ovhtelecom.fr/espaceclient/>
--   Cliquez sur le lien "**Administrez vos services de téléphonie via l'ancienne interface**".
+-   Cliquez sur le lien "**Manager v4**".
 -   Cliquez sur la ligne **associée** au poste.
 -   Cliquez sur l'onglet "**Assistance**" dans le menu "**Navigation**".
 -   Cliquez sur "**Dépannage plug and Phone**".

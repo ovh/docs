@@ -13,7 +13,7 @@ Niveau : Débutant
 ## Reconfiguration de l'équipement {#reconfiguration-de-léquipement}
 
 -   Connectez-vous à votre Espace Client OVH : <https://www.ovhtelecom.fr/espaceclient/>
--   Cliquez sur le lien "**Administrez vos services de téléphonie via l'ancienne interface.**"
+-   Cliquez sur le lien "**Manager v4**."
 -   Cliquez sur la ligne à reconfigurer.
 -   Cliquez sur "**Assistance**"
 -   Cliquez "**Dépannage Plug & phone**"

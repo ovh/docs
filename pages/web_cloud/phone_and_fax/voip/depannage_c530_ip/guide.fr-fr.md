@@ -15,7 +15,7 @@ L'Espace Client génère un code spécifique qu'il faut rentrer sur le combiné 
 Pour générer ce code d'auto-configuration rendez-vous dans votre Espace Client :
 
 -   [Connectez-vous avec vos identifiants : https://www.ovhtelecom.fr/espaceclient/](https://www.ovhtelecom.fr/espaceclient/){.external-link}
--   Cliquez sur le lien "**Administrez vos services de téléphonie via l'ancienne interface**".
+-   Cliquez sur le lien "**Manager v4**".
 -   Sélectionnez la ligne que vous souhaitez reconfigurer.
 -   Cliquez sur "**Assistance**".
 -   Cliquez sur "**Dépannage Plug & Phone**".

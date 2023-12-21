@@ -17,7 +17,7 @@ Niveau : Débutant
 Si votre téléphone est bloqué et affiche "**Undefined call server**" ou que vous l'avez réinitialisé, il va falloir le reconfigurer via ces étapes :
 
 -   **Connectez-vous** sur votre **EspaceClientTelecom** : <https://www.ovhtelecom.fr/espaceclient/>
--   Cliquez sur le lien "**Administrez vos services de téléphonie via l'ancienne interface**".
+-   Cliquez sur le lien "**Manager v4**".
 -   Cliquez sur la ligne **associée** au poste.
 -   Cliquez sur l'onglet "**Assistance**" dans le menu "**Navigation**".
 -   Cliquez sur "**Dépannage plug and Phone**".
