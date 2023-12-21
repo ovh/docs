@@ -1,7 +1,7 @@
 ---
 title: 'Configurer un Contact Center Solution'
 excerpt: 'Découvrez comment configurer un Contact Center Solution sur votre numéro alias'
-updated: 2023-08-09
+updated: 2023-12-21
 ---
 
 ## Objectif
@@ -157,6 +157,18 @@ Les options sont les suivantes :
 |Temps d'attente maximum dans la file (en secondes)|Définissez la durée maximale d'attente dans cette file avant que l'appel ne passe à l'étape suivante de votre CCS.|
 |Musique d'attente|Ce son sera joué à l’entrée dans la file d’attente jusqu’au décrochage de l’appel par une ligne.|
 |Annonce sur débordement|Si le nombre maximum d'appelants en attente est atteint, les appelants suivants entendront cette annonce. Ainsi, vous pouvez diffuser un son invitant vos appelants à rappeler ultérieurement.|
+
+**Détails des stratégies proposées :**
+
+|Stratégie|Détails|
+|---|---|
+|Tous en même temps|Tous les téléphones sonnent en même temps. Le premier qui décroche prend l’appel sur son poste.|
+|Selon l'ordre défini dans la liste|Le premier téléphone de la file sonne, puis le second, etc.|
+|Selon l'ordre défini dans la liste, cumulé|Le premier téléphone de la file d’attente sonne. Le deuxième sonne à son tour après quelques secondes, en même temps que le premier. Le troisième commence à sonner quelques secondes après, etc.|
+|Le plus ancien à avoir raccroché|Les téléphones sonnent les uns après les autres en suivant toujours le même ordre.|
+|Du plus disponible au moins disponible|Les téléphones sonneront suivant leur disponibilité depuis l’activation.|
+|Selon une répartition de charge| Les téléphones sonneront suivant leur disponibilité depuis le dernier appel : le plus disponible en premier.|
+|Aléatoire|Les téléphones sonnent les uns après les autres de manière aléatoire.|
 
 Validez vos modifications en cliquant sur `Appliquer les modifications`{.action}.
 

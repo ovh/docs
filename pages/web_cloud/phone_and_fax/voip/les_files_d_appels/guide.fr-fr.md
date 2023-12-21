@@ -1,16 +1,15 @@
 ---
 title: "Configurer une file d'appels"
 excerpt: "Découvrez comment configurer une file d'appels sur un numéro alias"
-updated: 2022-05-17
+updated: 2023-12-21
 ---
 
- 
 ## Objectif
- 
+
 La configuration en file d'appels permet de rediriger un appel entrant vers plusieurs lignes. Cette solution rend notamment possible la création d'une stratégie permettant d'éviter la perte d'appels.
 
 Vous pouvez ainsi décider, lorsqu'un appel entrant arrive sur votre numéro principal, de faire sonner plusieurs lignes en même temps ou l'une après l'autre.
- 
+
 **Découvrez comment configurer intégralement une file d'appels.**
  
 ## Prérequis
@@ -28,7 +27,7 @@ Vous pouvez ainsi décider, lorsqu'un appel entrant arrive sur votre numéro pri
 
 Connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external}, dans la section `Télécom`{.action}.<br>
 Cliquez ensuite sur `Télécom`{.action} et choisissez le numéro alias sur lequel vous souhaitez configurer la file d'appels.
- 
+
 ### Étape 1 : appliquer la configuration
 
 - Si votre numéro n'est actuellement pas configuré, cliquez sur l'onglet `Configuration`{.action}, sélectionnez `File d'appels`{.action} puis cliquez sur `Paramétrer`{.action}.
@@ -38,7 +37,7 @@ Cliquez ensuite sur `Télécom`{.action} et choisissez le numéro alias sur lequ
 ![fileappels](images/2022-VoIP-FA-01.png){.thumbnail}
 
 ### Étape 2 : paramétrer la file d'appels
- 
+
 Une fois la configuration de file d'appels appliquée, les menus de configuration vous sont présentés.
 
 ![fileappels](images/2022-VoIP-FA-02.png){.thumbnail}
@@ -110,6 +109,18 @@ Dès qu'au moins une ligne est présente dans votre file, vous avez la possibili
 - **« Appliquer les renvois définis sur les lignes »** : définissez si les renvois d'appels configurés sur les lignes de la file doivent être appliqués ou non. Sauf besoin spécifique, nous vous conseillons de laisser cette option décochée. 
 
 Une fois vos choix effectués, cliquez sur le bouton `Valider`{.action}.
+
+**Détails des stratégies proposées :**
+
+|Stratégie|Détails|
+|---|---|
+|Tous en même temps|Tous les téléphones sonnent en même temps. Le premier qui décroche prend l’appel sur son poste.|
+|Selon l'ordre défini dans la liste|Le premier téléphone de la file sonne, puis le second, etc.|
+|Selon l'ordre défini dans la liste, cumulé|Le premier téléphone de la file d’attente sonne. Le deuxième sonne à son tour après quelques secondes, en même temps que le premier. Le troisième commence à sonner quelques secondes après, etc.|
+|Le plus ancien à avoir raccroché|Les téléphones sonnent les uns après les autres en suivant toujours le même ordre.|
+|Du plus disponible au moins disponible|Les téléphones sonneront suivant leur disponibilité depuis l’activation.|
+|Selon une répartition de charge| Les téléphones sonneront suivant leur disponibilité depuis le dernier appel : le plus disponible en premier.|
+|Aléatoire|Les téléphones sonnent les uns après les autres de manière aléatoire.|
 
 ##### 3. Organiser les lignes de la file d’appels
 
