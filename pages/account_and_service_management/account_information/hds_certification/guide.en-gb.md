@@ -21,7 +21,7 @@ Clients using HDS products must subscribe Business or Enterprise support. HDS op
 
 | **Product** | **Certified ?** | 
 | --- | ---  | 
-| Dedicated Server | yes excluding Eco and<br> Advance ranges | 
+| Dedicated Server | yes excluding Eco<br> and Advance ranges | 
 | Nutanix on OVHcloud | yes | 
 | Enterprise File Storage | yes | 
 | Block Storage | yes | 
