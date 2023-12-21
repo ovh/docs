@@ -47,7 +47,7 @@ Le service est entièrement géré par OVHcloud et accessible via l'API S3.
 
 **Opération en 5 étapes**
 
-1. Stockez d'abord vos données dans un bucket de la région RBX.
+1. Stockez d'abord vos données dans un bucket de la région rbx-archive.
 2. Archivez-le sur des bandes.
 3. Restaurez vos données ou/et supprimez votre archive.
 4. Décider de déplacer ou de supprimer les données de l'espace de stockage temporaire.

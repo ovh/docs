@@ -47,7 +47,7 @@ The service is fully managed by OVHcloud and accessible through S3 API.
 
 **5 steps operation**
 
-1. Store your data in an Object Storage bucket first in RBX Region – this bucket is a temporary bucket,
+1. Store your data in an Object Storage bucket first in rbx-archive Region – this bucket is a temporary bucket,
 2. Archive it on tapes,
 3. Retrieve your data
 4. Decide to move or suppress the data from the temporary bucket
