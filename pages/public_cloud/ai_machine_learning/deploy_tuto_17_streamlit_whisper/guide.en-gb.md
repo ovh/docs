@@ -29,13 +29,13 @@ To build and deploy your Whisper app, you need:
 
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB)
 - An AI Deploy Project created inside a [Public Cloud project](https://www.ovhcloud.com/en-gb/public-cloud/) in your OVHcloud account
-- A [user for AI Deploy](/pages/public_cloud/ai_machine_learning/gi_01_manage_users)
+- A [user for AI Deploy & Object Storage](/pages/public_cloud/ai_machine_learning/gi_01_manage_users)
 - [The OVHcloud AI CLI](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli) installed on your local computer
 - [Docker](https://www.docker.com/get-started) installed on your local computer, **or** access to a Debian Docker Instance, which is available on the [Public Cloud](https://www.ovh.com/manager/public-cloud/)
 
 ## Instructions
 
-You are going to follow different steps to deploy our Whisper application:
+You are going to follow different steps to deploy your Whisper application:
 
 - [Whisper Model Sslection](#step-1-whisper-model-selection)
 - [Download Whisper Model in the Object Storage](#step-2-download-whisper-model-in-the-object-storage)
