@@ -12,7 +12,7 @@ updated: 2023-12-20
 
 ## Objectif
 
-OVHcloud Cold Archive est une classe de stockage conçue pour un stockage à long terme des données non utilisées.
+OVHcloud Cold Archive est une classe de stockage conçue pour un stockage à long terme des données rarement utilisées.
 
 Ses principales caractéristiques sont :
 
@@ -45,13 +45,11 @@ Le service vous permet de vous concentrer sur la création et le déploiement d'
 
 Le service est entièrement géré par OVHcloud et accessible via l'API S3.
 
-**Opération en 5 étapes**
+**3 opérations possibles**
 
-1. Stockez d'abord vos données dans un bucket de la région rbx-archive.
-2. Archivez-le sur des bandes.
-3. Restaurez vos données ou/et supprimez votre archive.
-4. Décider de déplacer ou de supprimer les données de l'espace de stockage temporaire.
-5. En option, vous pouvez décider de réarchiver les données avec les bandes ou de les supprimer si elles sont vides.
+1. Archivage
+2. Restauration
+3. Suppression
 
 ![Cold Archive concept](images/cold_archive_overview-20230117154349550.png){.w-100}
 
