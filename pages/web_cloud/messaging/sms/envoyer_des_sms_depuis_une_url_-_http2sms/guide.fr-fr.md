@@ -53,7 +53,7 @@ Par exemple :
 ```
 OK
 85.95
-544313144
+123456789
 ```
 
 Retrouvez plus de détails sur l'analyse des envois effectués [dans l'étape 3 de ce guide](#analysis).
