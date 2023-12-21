@@ -29,13 +29,13 @@ To build and deploy your Whisper app, you need:
 
 - Access to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr)
 - An AI Deploy Project created inside a [Public Cloud project](https://www.ovhcloud.com/fr/public-cloud/) in your OVHcloud account
-- A [user for AI Deploy](/pages/public_cloud/ai_machine_learning/gi_01_manage_users)
+- A [user for AI Deploy & Object Storage](/pages/public_cloud/ai_machine_learning/gi_01_manage_users)
 - [The OVHcloud AI CLI](/pages/public_cloud/ai_machine_learning/cli_10_howto_install_cli) installed on your local computer
 - [Docker](https://www.docker.com/get-started) installed on your local computer, **or** access to a Debian Docker Instance, which is available on the [Public Cloud](https://www.ovh.com/manager/public-cloud/)
 
 ## Instructions
 
-You are going to follow different steps to deploy our Whisper application:
+You are going to follow different steps to deploy your Whisper application:
 
 - [Whisper Model Sslection](#step-1-whisper-model-selection)
 - [Download Whisper Model in the Object Storage](#step-2-download-whisper-model-in-the-object-storage)
@@ -205,7 +205,7 @@ docker build . -t whisper_app:latest
 >
 > - The dot `.` argument indicates that our build context (place of the **Dockerfile** and other needed files) is the current directory.
 >
-> - The `-t` argument allows us to choose the identifier to give to our image. Usually image identifiers are composed of a **name** and a **version tag** `<name>:<version>`. For this example we chose **whisper_app:latest**.
+> - The `-t` argument allows us to choose the identifier to give to our image. Usually image identifiers are composed of a **name** and a **version tag** `<name>:<version>`. For this example we choose **whisper_app:latest**.
 
 During the build process, Docker reads the instructions from the Dockerfile and executes them step by step. For your information, here are the steps of this Dockerfile:
 
@@ -240,7 +240,7 @@ CMD [ "streamlit" , "run" , "/workspace/app.py", "--server.address=0.0.0.0", "$M
 
 #### Push the image into a registry
 
-Once your image is built, you will need to tag it and push it to a registry. Several registries can be used (OVHcloud Managed Private Registry, Docker Hub, GitHub packages, ...). In this tutorial, we will use the **OVHcloud shared registry**.
+Once your image is built, you will need to tag it and push it to a registry. Several registries can be used ([OVHcloud Managed Private Registry](https://www.ovhcloud.com/fr/public-cloud/managed-private-registry/), [Docker Hub](https://hub.docker.com/), [GitHub packages](https://github.com/features/packages), ...). In this tutorial, we will use the **OVHcloud shared registry**.
 
 > [!warning]
 > **Warning**
@@ -252,7 +252,7 @@ You can find the address of your shared registry by launching this command:
 ovhai registry list
 ```
 
-Log in on your shared registry with your usual OpenStack credentials:
+Log in on your shared registry with your usual AI Platform user credentials:
 
 ```console
 docker login -u <user> -p <password> <shared-registry-address>
