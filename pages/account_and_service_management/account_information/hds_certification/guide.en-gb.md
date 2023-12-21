@@ -21,29 +21,29 @@ Clients using HDS products must subscribe Business or Enterprise support. HDS op
 
 | **Product** | **Certified ?** | 
 | --- | ---  | 
-| Dedicated Server | yes | 
+| Dedicated Server | yes excluding Eco and<br> Advance ranges | 
 | Nutanix on OVHcloud | yes | 
 | Enterprise File Storage | yes | 
 | Block Storage | yes | 
-| VMware on OVHcloud | yes | 
+| VMware on OVHcloud | yes excluding VMware<br> managed bare metal | 
 | Private Cloud SecNumCloud | yes | 
 | NAS-HA | yes | 
-| OpenStack Instances | yes | 
+| OpenStack Instances | yes excluding VPS | 
 | AI Deploy | yes | 
 | AI Notebooks | yes | 
 | AI Training | yes | 
 | Data Processing | yes | 
 | Kubernetes | yes |
-| Search engine software platform | ETA : 01/2024 | 
-| Timeseries | ETA : 01/2024 |
-| NoSQL Database | MongoDB: yes <br>Others: ETA: 01/2024 | 
-| Relational Database | ETA : 01/2024 | 
-| Message broker | ETA : 01/2024 | 
+| Search engine software platform | ETA : 01/2024 excluding<br> Essential and Discovery<br> plans | 
+| Timeseries | ETA : 01/2024 excluding<br> Essential and Discovery<br> plans |
+| NoSQL Database | MongoDB : yes excluding<br> Essential and Discovery<br> plans<br> Others : ETA 01/2024<br> excluding Essential<br> and Discovery plans | 
+| Relational Database | ETA : 01/2024 excluding<br> Essential and Discovery<br> plans | 
+| Message broker | ETA : 01/2024 excluding<br> Essential and Discovery<br> plans | 
 | Object Storage | yes | 
 | Private Registry | yes | 
 | Cold Storage | ETA : 01/2024 | 
 | Logs Data Platform | yes | 
-| Grafana | ETA : 01/2024 | 
+| Grafana | ETA : 01/2024 excluding<br> Essential and Discovery plans | 
 | Web Hosting | no | 
 | Platform.sh | no | 
 | Emails on mutualized infrastructures | no |
