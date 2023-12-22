@@ -1,7 +1,7 @@
 ---
 title: Migrating an infrastructure to a new vDC
 excerpt: Find out how to move your workload from an existing vDC to a new vDC in the same VMware infrastructure
-updated: 2023-12-05
+updated: 2023-12-22
 ---
 
 <style>
@@ -713,11 +713,11 @@ With the API, ask for the vDC deletion:
 > @api {v1} /dedicatedCloud DELETE /dedicatedCloud/{serviceName}/datacenter/{datacenterId}
 >
 
-### How to recreate an advanced NSXv architecture on NSX
-*
-<a name="removeoldvdc"></a>
+<a name="creatensxvonnsx"></a>
 
-You can find all the information on setting up an advanced NSX-v architecture on NSX by watching [this video.](https://vimeo.com/891113062?share=copy)
+### Step 7 - How to recreate an advanced NSXv architecture on NSX
+
+You can find all the information on setting up an advanced NSX-v architecture on NSX by watching [this video](https://vimeo.com/891113062?share=copy).
 
 ## Go further
 

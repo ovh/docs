@@ -1,7 +1,7 @@
 ---
 title: Migrer une infrastructure vers un nouveau vDC
 excerpt: Découvrez comment déplacer vos VMs d'un vDC existant vers un nouveau vDC dans la même infrastructure VMware
-updated: 2023-12-05
+updated: 2023-12-23
 ---
 <style>
 .ovh-api-main { background:#fff;}
@@ -735,9 +735,10 @@ Avec l'API, demandez la suppression du vDC :
 >
 
 <a name ="creatensxvonnsx"></a>
+
 ### Etape 7 Recréer une architecture NSX-v avancée sur NSX
 
-Vous trouverez toutes les informations relatives à la mise en place d'une architecture NSX-v avancée sur NSX en visionnant [cette vidéo.](https://vimeo.com/891113062?share=copy)
+Vous trouverez toutes les informations relatives à la mise en place d'une architecture NSX-v avancée sur NSX en visionnant [cette vidéo](https://vimeo.com/891113062?share=copy).
 
 ## FAQ
 
