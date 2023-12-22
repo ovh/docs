@@ -99,7 +99,7 @@ Les manipulations pour réinitialiser nos téléphones sont décrites ci-dessous
 >>
 > **Yealink** T58 W Pro
 >>
->> 1\. Maintenez enfoncée la touche `Redial`.<br>![touche redial](images/t58wpro-redial.png){.thumbnail}.<br>2\. Validez la demande de réinitialisation affichée à l'écran du téléphone.
+>> 1\. Maintenez enfoncée la touche `Redial` 🔄 .<br><br>![touche redial](images/t58wpro-redial.png){.thumbnail}.<br>2\. Validez la demande de réinitialisation affichée à l'écran du téléphone.
 >>
 > **Yealink** DECT (sans fil)
 >>
