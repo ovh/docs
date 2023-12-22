@@ -81,7 +81,7 @@ Vous pouvez uniquement désigner un autre contact technique pour vous remplacer.
 
 Vous pouvez uniquement désigner un autre contact facturation pour vous remplacer. Une validation par mail de votre part ainsi que de celle du nouveau contact facturation seront nécessaires.
 
-### Valider, refuser ou suivre un changement de contact
+### Valider, refuser ou suivre un changement de contact <a name="validation"></a>
 
 Pour suivre et gérer les demandes en cours, cliquez sur l'onglet `Mes demandes`{.action}. C'est ici que vous pourrez accepter ou refuser une demande.
 
