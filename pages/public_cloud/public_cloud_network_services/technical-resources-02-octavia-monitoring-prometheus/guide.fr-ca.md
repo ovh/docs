@@ -1,6 +1,6 @@
 ---
-title: Public Cloud Load Balancer monitoring with Prometheus
-excerpt: "Discover the various options available to monitor your Load Balancer"
+title: "Mettre en place un monitoring de Octavia Load Balancer avec Prometheus (EN)"
+excerpt: "Découvrez les différentes options disponibles pour monitorer votre Load Balancer Octavia"
 updated: 2023-12-22
 ---
 
@@ -117,6 +117,6 @@ If you are interested in automating this scenario with terraform and with our ma
 
 Visit our dedicated Discord channel: <https://discord.gg/ovhcloud>. Ask questions, provide feedback and interact directly with the team that builds our databases services.
 
-If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/en-gb/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
+If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/fr-ca/professional-services/) to get a quote and ask our Professional Services experts for a custom analysis of your project.
 
 Join our community of users on <https://community.ovh.com/en/>.

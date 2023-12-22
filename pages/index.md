@@ -592,7 +592,7 @@
             + [Configuring IPv6 on a Public Cloud instance](public_cloud/public_cloud_network_services/configuration-02-how-to-configure-ipv6)
             + [Changing the MTU size for an existing network using OpenStack CLI/API](public_cloud/public_cloud_network_services/configuration-03-change-mtu-size)
         + [Technical resources](public-cloud-network-technical-resources)
-            + [Deploying an Public Cloud Load Balancer](public_cloud/public_cloud_network_services/technical-resources-01-using-lbaas-in-openstack-environment)
+            + [Deploying a Public Cloud Load Balancer](public_cloud/public_cloud_network_services/technical-resources-01-using-lbaas-in-openstack-environment)
             + [Known limits](public_cloud/public_cloud_network_services/known-limits)
             + [Public Cloud Load Balancer monitoring with Prometheus](public_cloud/public_cloud_network_services/octavia-monitoring-prometheus)
         + [Tutorials](public-cloud-network-tutorials)
