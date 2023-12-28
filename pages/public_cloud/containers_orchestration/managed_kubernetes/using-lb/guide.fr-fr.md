@@ -84,8 +84,7 @@ OVHcloud currently provides two typse of load balancers that can be used with Ma
 - [Network Load Balancer](https://www.ovhcloud.com/fr/public-cloud/load-balancer/), based on the OpenStack Octavia project, this load balancer type can also be used with standard OVHcloud instances. You can choose between three Load Balancer sizes (S,M,L), providing up to 40k requests/second and a 2 Gbits/second bandwidth. Other advantages are the capability to expose your Load Balancer privately (private-to-private) or publicly using [Floating IPs](https://www.ovhcloud.com/fr/public-cloud/floating-ip/) and the possibility to collect metrics.
 
 > [!warning] 
-> Usage of the [Network Load Balancer](https://www.ovhcloud.com/en-ie/public-cloud/load-balancer/) with a Managed Kubernetes Service is currently in Alpha phase, you can retrieve all the related information and request an access by joining our [Container & Orchestration dedicated Discord channel](https://discord.com/channels/850031577277792286/1143208429872226325).
-      
+> Usage of the [Network Load Balancer](https://www.ovhcloud.com/fr/public-cloud/load-balancer/) with a Managed Kubernetes Service is currently in Alpha phase, you can retrieve all the related information and request an access by joining our [Container & Orchestration dedicated Discord channel](https://discord.com/channels/850031577277792286/1143208429872226325).
 
 ### Supported annotations
 
@@ -275,4 +274,4 @@ No resources found
 
 - If you need training or technical assistance to implement our solutions, contact your sales representative or click on [this link](https://www.ovhcloud.com/fr/professional-services/) to get a quote and ask our Professional Services experts for assisting you on your specific use case of your project.
 
-- Join our [community of users](https://community.ovh.com/).
+- Join our [community of users](https://community.ovh.com/en/).
