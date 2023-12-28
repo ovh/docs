@@ -1,12 +1,14 @@
 ---
-title: MongoDB Discovery - Getting started
-excerpt: ""
-updated: 2023-12-18
+title: MongoDB - Getting started
+excerpt: Get started with MongoDB through the OVHcloud Control Panel
+updated: 2023-12-29
 ---
 
 ## Objective
 
-**This guide explains how to order a free MongoDB Discovery solution in the OVHcloud Control Panel.**
+TODO
+
+**This guide explains how to get started with MongoDB on OVHcloud for free.**
 
 ## Requirements
 
@@ -15,9 +17,34 @@ updated: 2023-12-18
 
 ## Instructions
 
-Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and switch to the `Public Cloud`{.action} section. After selecting your Public Cloud project, click on `Databases`{.action} in the left-hand navigation bar under **Databases**.
+Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and switch to the `Public Cloud`{.action} section. After selecting your Public Cloud project, click on `Databases`{.action} in the left-hand navigation bar under **Databases & Analytics**.
 
 Click on the button `Create a database instance`{.action}. (`Create a service`{.action} if your project already contains databases.)
+
+### Select the database type
+
+Select **MongoDB** and, eventually, change the version to install from the drop-down menu.
+
+![Choose MongoDB](images/select-mongodb.png){.thumbnail}
+
+### Review the order
+
+All other options TODO
+
+![Confirm order](images/review-order.png){.thumbnail}
+
+
+
+The final section will display a summary of your order as well as the API equivalent of creating this database instance with the [OVHcloud API](/pages/manage_and_operate/api/first-steps).
+
+![Confirm order](images/databases_01_order_control_panel-20231208153010.png){.thumbnail}
+
+Within a few minutes your new database service will be deployed. Messages in the OVHcloud Control Panel will inform you when the database is ready to use.
+
+Continue with the *Configure your instance to accept incoming connections* guide of your selected database type available [here](/products/public-cloud-databases) to configure your service after installation.
+
+
+
 
 Then follow these steps:
 

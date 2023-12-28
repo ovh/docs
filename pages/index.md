@@ -625,7 +625,7 @@
             + [Cross Service Integration](public_cloud/public_cloud_databases/databases_07_cross_service_integration)
         + [MongoDB](products/public-cloud-databases-mongodb)
             + [Guides](public-cloud-databases-mongodb-guides)
-                + [MongoDB - Discovery Getting Started](public_cloud/public_cloud_databases/mongodb_13_discovery_getting_started)
+                + [MongoDB - Discovery Getting Started](public_cloud/public_cloud_databases/mongodb_13_getting_started)
                 + [MongoDB - Capabilities and Limitations](public_cloud/public_cloud_databases/mongodb_01_concept_capabilities)
                 + [MongoDB - Connect with CLI](public_cloud/public_cloud_databases/mongodb_03_connect_cli)
                 + [MongoDB - Managing a database service from the OVHcloud Control Panel](public_cloud/public_cloud_databases/mongodb_02_manage_control_panel)
