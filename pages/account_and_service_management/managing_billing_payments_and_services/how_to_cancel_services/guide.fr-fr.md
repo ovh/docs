@@ -1,7 +1,7 @@
 ---
 title: Comment résilier vos services OVHcloud
 excerpt: Découvrez comment interrompre vos abonnements OVHcloud depuis l'espace client
-updated: 2023-12-28
+updated: 2023-12-29
 ---
 
 ## Objectif
@@ -197,14 +197,22 @@ Si vous ne parvenez toujours pas à résilier votre service, contactez nos équi
 
 Vous devez effectuer la procédure de résiliation pour chaque service de façon unitaire. Il n'est pas possible de résilier plusieurs services à la fois ou de demander une résiliation globale à nos équipes du support client.
 
-### J'ai résilié tous mes services. Comment supprimer mon compte OVHcloud ?
+### Comment supprimer mon compte OVHcloud ?
 
-Vous pouvez demander à supprimer votre compte OVHcloud et les données liées en complétant [le formulaire d'exercice des droits RGPD](https://www.ovh.com/fr/protection-donnees-personnelles/exercer-vos-droits/){.external} et en y choisissant le « Droit d'effacement ».
+La fermeture de votre compte client OVHcloud et la suppression de vos données personnelles n'est possible que si :
 
-> [!warning]
->
-> Votre compte OVHcloud ne pourra pas être supprimé s'il contient toujours au moins un service et/ou si votre compte contient une facture ou commande impayée.
->
+1. Vous n'avez plus de services visibles dans la section « [Mes Services](https://www.ovh.com/manager/dedicated/#/billing/autoRenew) ». Dans le cas contraire, vous devrez dans un premier temps demander leur résiliation et attendre leur suppression.
+2. Vous n'avez pas de factures en attente de paiement. Dans le cas contraire, vous devez procéder à leur règlement en cliquant sur le bouton `Régler immédiatement`{.action} dans les actions de masses de la page « [Mes factures](https://www.ovh.com/manager/#/dedicated/billing/history) ».
+3. Vous n'avez pas de commande en cours. Vérifiez-le sur [cette page](https://www.ovh.com/manager/#/dedicated/billing/orders/orders).
+4. Votre compte prépayé n'est pas positif. Vérifiez-le sur [cette page](https://www.ovh.com/manager/#/dedicated/billing/payment/ovhaccount).
+
+
+Si les conditions ci-dessus sont remplies, vous pouvez demander à supprimer votre compte OVHcloud et les données liées en suivant ces étapes :
+
+1. Connectez-vous au [Centre d'aide OVHcloud](https://help.ovhcloud.com/csm?id=csm_cases_requests)
+2. Cliquez sur le bouton `Créer un ticket`{.action}
+3. Sélectionnez le motif `Gérez votre compte client OVHcloud`
+4. Précisez `Je veux fermer mon compte client OVHcloud` et suivez les étapes décrites.
 
 ## Aller plus loin <a name="gofurther"></a>
 
