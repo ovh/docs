@@ -63,7 +63,7 @@ Dans le menu déroulant, choisissez l'une des options proposées :
 | Option | Action complémentaire |
 |---|---|
 | Répondre un texte prédéfini | Saisissez le texte qui sera envoyé par SMS au destinataire (ce SMS sera débité de votre compte) |
-| Appeler un CGI | Saisissez l'URL de votre JSript CGI |
+| Appeler un CGI | Saisissez l'URL de votre script CGI |
 | Aucune | Aucune |
 
 Une fois votre option configurée, cliquez sur le bouton `Valider`{.action}.
