@@ -1,7 +1,7 @@
 ---
 title: Hosted Private Cloud VMware Lifecycle Policy (EN)
 excerpt: 'Lifecycle policy for VMware on OVHcloud'
-updated: 2023-06-26
+updated: 2023-12-29
 ---
 
 > [!warning]
