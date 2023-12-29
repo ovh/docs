@@ -1,7 +1,7 @@
 ---
 title: Hosted Private Cloud VMware Lifecycle Policy (EN)
 excerpt: 'Lifecycle policy for VMware on OVHcloud'
-updated: 2023-06-26
+updated: 2023-12-29
 ---
 
 > [!warning]
@@ -97,8 +97,8 @@ This table presents a summary of the different phases of the lifecycle of the se
 | DC2013 (AMD Bulldozer) | 2013 | 28/02/2015 | 28/02/2022 | 30/09/2022 |
 | DC2014 (AMD PileDriver) | 2014 | 31/08/2017 | 28/02/2022 | 30/09/2022 |
 | DC2016 (AMD PileDriver) | 2016 | 30/11/2018 | 28/02/2022 | 30/09/2022 |
-| SDDC2014 & SDDC2016 (Intel Ivy Bridge, Intel Haswell) | 2016 | 30/04/2017 | 30/01/2024 | 31/08/2024 |
-| SDDC2018 (Intel Broadwell) | 2018 | 30/11/2018 | 30/01/2025 | 31/08/2025 |
+| SDDC2014 & SDDC2016 (Intel Ivy Bridge, Intel Haswell) | 2016 | 30/04/2017 | 30/09/2024 | 31/08/2025 |
+| SDDC2018 (Intel Broadwell) | 2018 | 30/11/2018 | 30/09/2024 | 31/08/2025 |
 | Essentials (Intel Broadwell) | 2020 |            |            |            |
 | Premier (Intel Xeon Gold) | 2020 |            |            |            |
 
