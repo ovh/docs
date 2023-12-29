@@ -6,8 +6,6 @@ updated: 2023-12-29
 
 ## Objective
 
-TODO
-
 **This guide explains how to get started with MongoDB on OVHcloud for free.**
 
 ## Requirements
@@ -19,7 +17,7 @@ TODO
 
 Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB) and switch to the `Public Cloud`{.action} section. After selecting your Public Cloud project, click on `Databases`{.action} in the left-hand navigation bar under **Databases & Analytics**.
 
-Click on the button `Create a database instance`{.action}. (`Create a service`{.action} if your project already contains databases.)
+Click on the `Create a database instance`{.action} button. (`Create a service`{.action} if your project already contains databases.)
 
 ### Select the database type
 
@@ -29,44 +27,39 @@ Select **MongoDB** and, eventually, change the version to install from the drop-
 
 ### Review the order
 
-All other options TODO
+The **Discovery** plan is selected by default along with the following options:
+
+- The region is set to `Gravelines (GRA)`.
+- The node type is set to `db2-free` (with a 512 MB storage).
+- The number of nodes is set to `3`.
+- The network type is `Public (internet)`.
+
+> [!primary]
+>
+> The **Discovery** plan will let you start with MongoDB for **free** with limited settings options and storage.
+>
+
+Review the service settings and click on the `Order`{.action} button.
 
 ![Confirm order](images/review-order.png){.thumbnail}
 
+Within a few minutes your **Discovery** MongoDB service will be deployed.
 
+### Connectivity settings
 
-The final section will display a summary of your order as well as the API equivalent of creating this database instance with the [OVHcloud API](/pages/manage_and_operate/api/first-steps).
+Once the service is up and running you will be able to configure it to accept incoming connections. A [dedicated guide](/pages/public_cloud/public_cloud_databases/mongodb_02_manage_control_panel) is available to help you configure your service after installation.
 
-![Confirm order](images/databases_01_order_control_panel-20231208153010.png){.thumbnail}
+### Testing the service
 
-Within a few minutes your new database service will be deployed. Messages in the OVHcloud Control Panel will inform you when the database is ready to use.
+The service is running and accepting incoming connections, the next step is to try the access to the service. The common way would be to use **MongoDB Compass** to connect to the service, you could follow [this guide](/pages/public_cloud/public_cloud_databases/mongodb_07_connect_compass) to do so.
 
-Continue with the *Configure your instance to accept incoming connections* guide of your selected database type available [here](/products/public-cloud-databases) to configure your service after installation.
+Other guide could help connect to the service if **MongoDB Compass** is not your prefered way to go:
 
+- [Connect with CLI](/pages/public_cloud/public_cloud_databases/mongodb_03_connect_cli)
+- [Connect with Python](/pages/public_cloud/public_cloud_databases/mongodb_05_connect_python)
+- [Connect with PHP](/pages/public_cloud/public_cloud_databases/mongodb_04_connect_php)
 
-
-
-Then follow these steps:
-
-1. Select **MongoDB** as database type.
-2. Select **Discovery** as service plan.
-
-The Discovery solution come with these limitations:
-
-- There is only one region available: Gravelines (GRA).
-- There is only one flavor the db2-free.
-- 3 nodes for resilience.
-- Disk is limited to 512 MB.
-- No flex disk.
-- No private network.
-
-The final section will display a summary of your order.
-
-Within a few minutes your new database service will be deployed. Messages in the OVHcloud Control Panel will inform you when the database is ready to use.
-
-Continue with the *Configure your instance to accept incoming connections* guide of your selected database type available [here](/products/public-cloud-databases) to configure your service after installation.
-
-Note that the configuration options might be different, depending on the database type. You will find example on this repository: <https://github.com/ovh/public-cloud-databases-examples>.
+Other integration examples could be find on the following repository: <https://github.com/ovh/public-cloud-databases-examples/tree/main/databases/mongodbs>.
 
 ## We want your feedback!
 
