@@ -13,8 +13,8 @@ Lexpéditeur du SMS réponse sera un numéro court aléatoire. Son utilisation e
 > **Important**
 >
 > - Le service SMS réponse n'est disponible que pour la France.
-> - Lorsqu'une réponse est apportée par votre destinataire, un crédit SMS est décompté.
-> - Lorsque vous répondez à nouveau à votre destinataire, un crédit SMS est décompté.
+> - Lorsqu'une réponse est apportée par votre destinataire, un crédit SMS (minimum) vous est décompté.
+> - Lorsque vous répondez à nouveau à votre destinataire, un crédit SMS (minimum) vous est décompté.
 >
 
 ## Prérequis
@@ -62,7 +62,7 @@ Dans le menu déroulant, choisissez l'une des options proposées :
 
 | Option | Action complémentaire |
 |---|---|
-| Répondre un texte prédéfini | Saisissez le texte qui sera envoyé par SMS au destinataire (ce SMS sera débité de votre compte) |
+| Répondre un texte prédéfini | Saisissez le texte qui sera envoyé par SMS au destinataire<br>(le nombre correspondant de crédits sera débité de votre compte SMS à chaque réponse automatique) |
 | Appeler un CGI | Saisissez l'URL de votre script CGI |
 | Aucune | Aucune |
 
