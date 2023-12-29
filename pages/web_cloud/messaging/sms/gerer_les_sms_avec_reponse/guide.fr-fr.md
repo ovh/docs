@@ -1,33 +1,37 @@
 ---
-title: Gérer les SMS avec réponse
-updated: 2020-09-14
+title: Envoyer des SMS permettant la réponse
+updated: 2023-12-29
 ---
 
-### Préambule {#préambule}
+## Objectif
 
-Le service de SMS avec réponse vous permet d'envoyer un SMS avec comme expéditeur un numéro court permettant au destinataire d'y répondre. Vous pouvez ainsi gérer un service via un échange de réponse (programmation RDV médical, jeux, etc.).
+Le service de [SMS réponse](https://www.ovhcloud.com/fr/sms/marketing/sms-response/) vous permet d'envoyer un SMS auquel le destinataire pourra répondre. Vous pouvez ainsi créer un échange de réponses (programmation d'un rendez-vous médical, jeux, etc.) avec votre destinataire.
 
-L'utilisation du numéro court est inclus dans votre offre SMS et la réponse n'est pas surtaxée pour le destinataire. L'envoi d'une réponse à votre destinataire est par contre débitée de votre compte SMS.
+Lexpéditeur du SMS réponse sera un numéro court aléatoire. Son utilisation est incluse dans votre offre SMS et la réponse n'est pas surtaxée pour le destinataire.
 
-**Sommaire :**
+> [!primary]
+> **Important**
+>
+> - Le service SMS réponse n'est disponible que pour la France.
+> - Lorsqu'une réponse est apportée par votre destinataire, un crédit SMS (minimum) vous est décompté.
+> - Lorsque vous répondez à nouveau à votre destinataire, un crédit SMS (minimum) vous est décompté.
+>
 
-Niveau : Expert
+## Prérequis
 
-------------------------------------------------------------------------
+- Disposer d’un compte SMS OVHcloud crédité.
+- Être connecté à l'[espace client OVHcloud](https://www.ovh.com/auth?onsuccess=https%3A%2F%2Fwww.ovhtelecom.fr%2Fmanager&ovhSubsidiary=fr){.external}, partie `Télécom`{.action} puis `SMS`{.action}.
 
-### Prérequis {#prérequis}
+![espace client Telecom SMS](https://raw.githubusercontent.com/ovh/docs/master/templates/control-panel/product-selection/telecom/tpl-telecom-03-fr-sms.png){.thumbnail}
 
-Pour utiliser ce service, il vous faut :
+## En pratique
 
--   un compte SMS crédité ;
--   un destinataire (un mobile français) ;
--   accès au Manager.
+### Principe de fonctionnement et limitations
 
-------------------------------------------------------------------------
+Les réponses sont possibles depuis les opérateurs mobiles français (Bouygues Telecom, Free, Orange, SFR et opérateurs virtuels (MNVO) associés).<br>
+Cela signifie que seuls les numéros géolocalisés en France métropolitaine et associés à un abonnement chez un de ces opérateurs utilisent des SMS compatibles et verront leurs réponses traitées.
 
-### Principe de fonctionnement et limitations {#principe-de-fonctionnement-et-limitations}
-
-Les réponses sont possibles depuis les opérateurs mobiles français (Orange, SFR, Bouygues, Free et MNVO associés). C'est-à-dire que seuls les numéros géolocalisés en France métropolitaine associés à un abonnement chez un de ces opérateurs utilisent des SMS compatibles et verront leurs réponses traitées.
+Les destinataires ne peuvent répondre à votre SMS que lorsque vous utilisez le [numéro virtuel](https://www.ovhcloud.com/fr/sms/virtual-numbers/) ou le numéro court lors de l’envoi. Ce dernier, à 5 chiffres, est attribué aléatoirement et est spécifique à la conversation. Il ne pourra donc pas être conservé.
 
 Le fonctionnement du service de réponse par SMS est très simple :
 
@@ -37,59 +41,80 @@ Le service permet au destinataire de répondre au SMS reçu dans un délai de 48
 
 La réponse (si vous l'activez) peut être ensuite :
 
--   **Automatique** et **unique** : vous définissez une réponse dans le Manager qui sera systématiquement envoyée.
--   **Dynamique** : vous faites appel à un script qui gère la réponse.
+- **Automatique** et **unique** : vous définissez une réponse (dans l'espace client) qui sera systématiquement envoyée.
+- **Dynamique** : vous faites appel à un script qui gère la réponse.
 
-### Utilisation depuis le Manager et configuration {#utilisation-depuis-le-manager-et-configuration}
+### Gérer les options des réponses
 
-Pour envoyer un SMS permettant la réponse depuis le Manager :
+Avant d'envoyer votre SMS réponse, nous vous conseillons de configurer les options de réception des réponses.
 
--   Connectez vous à votre Espace Client : <https://www.ovhtelecom.fr/espaceclient/login/>.
--   Cliquez sur "**Administrez vos services de téléphonie via l'ancienne interface**".
--   Cliquez sur l'icône "**SMS**".
--   Cliquez sur "**Composer un message**".
+Connectez-vous à votre [espace client](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) puis sélectionnez `Télécom`{.action}. Cliquez ensuite sur `SMS`{.action} et choisissez votre compte SMS.
 
-Vous accédez alors au formulaire d'envoi :
+Dans la barre d'onglets, cliquez sur `Options`{.action} puis sur `Options des réponses`{.action}.
 
-![](images/2015-05-27-160330_720x578_scrot.png){.thumbnail}
+![options SMS réponse](images/SMSreponse-options.png){.thumbnail}
 
--   **Expéditeur :** Sélectionnez dans la liste "**Numéro court permettant la réponse (France uniquement)**"
--   **Destinataire :** Indiquez le numéro au format international.
--   **Message :**Entrez le message à envoyer.
--   Bouton **Envoyer:** Cette action envoie le SMS.
+Vous pouvez configurer une **action à la réception** (pour répondre à votre destinataire ou déclencher un script) et / ou une **notification à la réception** (pour vous tenir vous-même informé des réponses de vos destinataires).
 
-Le SMS reçu aura cette forme :
+#### Action à la réception
 
-![](images/Screenshot_2015-05-27-16-16-55.png){.thumbnail}
+Dans le menu déroulant, choisissez l'une des options proposées :
 
-Pour configurer la réponse du SMS :
+| Option | Action complémentaire |
+|---|---|
+| Répondre un texte prédéfini | Saisissez le texte qui sera envoyé par SMS au destinataire<br>(le nombre correspondant de crédits sera débité de votre compte SMS à chaque réponse automatique) |
+| Appeler un CGI | Saisissez l'URL de votre script CGI |
+| Aucune | Aucune |
 
--   connectez vous à votre Espace Client : <https://www.ovhtelecom.fr/espaceclient/login/> ;
--   cliquez sur "**Administrez vos services de téléphonie via l'ancienne interface**" ;
--   cliquez sur l'icône "**SMS**" ;
--   cliquez sur l'onglet "**Options**" ;
--   cliquez sur l'onglet "**Options des réponses**".
+Une fois votre option configurée, cliquez sur le bouton `Valider`{.action}.
 
-Vous accédez à ce formulaire :
+> [!primary]
+>
+> Si vous choisissez de répondre par SMS, le numéro court effectuant l'envoi pourra être différent du numéro court ayant envoyé votre SMS initial.
 
-![](images/2015-05-27-163153_716x612_scrot.png){.thumbnail}
+#### Notification à la réception
 
--   Cliquez sur le bouton "**Gérer**" pour accéder à la modification du formulaire.
+> [!warning]
+> **Informations sur la confidentialité des données**
+> 
+> Ce service de notification doit être réservé à votre propre usage.
+>
+> En effet, les notifications contiennent des informations relatives au destinataire de votre SMS ainsi que des données de votre compte OVHcloud (nom du compte SMS contenant votre identifiant OVHcloud).
 
-Ce formulaire permet de configurer les réponses automatiques aux SMS. Les champs et fonctions sont :
+Cliquez sur `Ajouter une notification`{.action} pour accéder au menu suivant.
 
--   -   **Action à effectuer :** permet de choisir le type de réponse qui sera envoyée.
-        -   **Aucun :** Aucune réponse ne sera envoyée.
-        -   **Appeler un CGI :** Permet d'appeler un script pour envoyer le SMS de votre choix.
-        -   **Répondre à un texte prédéfini :** Envoie un SMS automatiquement à chaque réponse reçue.
+Configurez alors une notification par e-mail ou par SMS.
 
-Lorsqu'une réponse est apportée, un crédit SMS est décompté.
+- Notification par e-mail
+    - Expéditeur : renseignez obligatoirement une adresse e-mail valide vous appartenant.
+    - Adresse e-mail: renseignez l'adresse e-mail destinataire de la notification.
 
--   -   **Notification de réception :** permet de recevoir un mail ou un SMS lors de la réception d'une réponse.
-        -   Pour activer la notification, cliquez sur le bouton "**Ajouter**".
-        -   Dans le champ "**Média**" : sélectionnez le type de réception : **SMS** ou **e-mail**.
-        -   Dans le champ "**Expéditeur**" : entrez l'expéditeur SMS ou l’adresse e-mail d'expédition.
-        -   Dans le champ "**Adresse mail**" entrez l'e-mail destinataire de la notification **OU** dans le champ "**Numéro**", entrez le numéro du destinataire de la notification au **format international**.
+- Notification par SMS
+    - Expéditeur : choisissez un expéditeur parmi ceux déjà validés dans votre compte SMS.
+    - Numéro : entrez le numéro du destinataire de la notification au **format international**.
 
-Lorsqu'une notification est envoyée, un crédit SMS est décompté.
+Une fois votre notification configurée, cliquez sur le bouton `Valider`{.action}. Vous pouvez ajouter plusieurs notifications, les éditer ou les supprimer.
 
+### Envoyer un SMS réponse
+
+Dans l'espace client, sélectionnez l'onglet `Accueil`{.action} de votre compte SMS. Cliquez ensuite sur `Envoyer un SMS`{.action}.
+
+![envoi SMS](images/SMSreponse-envoi.png){.thumbnail}
+
+Assurez-vous que votre expéditeur est bien le `Numéro permettant la réponse (France uniquement`.
+
+![envoi SMS](images/SMSreponse-expediteur.png){.thumbnail}
+
+Complétez ensuite les champs dédiés au(x) destinataire(s) et à votre message. Pour plus de détails, consultez [notre guide sur l'envoi de SMS depuis l'espace client](/pages/web_cloud/messaging/sms/envoyer_des_sms_depuis_mon_espace_client).
+
+### Consulter les réponses
+
+Dans l'espace client, cliquez sur l'onglet `Message et campagne`{.action} de votre compte SMS. Cliquez ensuite sur `SMS reçus`{.action}.
+
+![SMS reçus](images/SMSreponse-recus.png){.thumbnail}
+
+Un tableau liste tous les SMS reçus en réponse de vos envois. Vous pouvez trier ces SMS en cliquant sur les en-têtes des colonnes du tableau.
+
+## Aller plus loin
+
+Échangez avec notre communauté d'utilisateurs sur <https://community.ovh.com>.
