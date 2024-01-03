@@ -36,7 +36,7 @@ Nel riquadro **Informazioni generali** visualizzi la voce *Hosting Web e email g
 
 Si apre la pagina di attivazione. **Lo step 1** mostra i dettagli del piano e la relativa tariffa. Quindi clicca su `Continua`{.action}. Allo **step 2**, seleziona le modifiche da apportare alla tua zona DNS.
 
-![enable 100m](https://raw.githubusercontent.com/ovh/docs/develop/templates/control-panel/product-selection/web-cloud/order/order-100m-step-2.png){.thumbnail}
+![activate100m](https://raw.githubusercontent.com/ovh/docs/develop/templates/control-panel/product-selection/web-cloud/order/order-100m-step-2.png){.thumbnail}
 
 > [!warning]
 >

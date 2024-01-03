@@ -32,7 +32,7 @@ In the **General information** box, you will see *Free web hosting and email*. C
 
 The activation window will appear. **Step 1** will detail the plan and its price — click `Next`{.action}. For **step 2**, choose the changes you need to make to your DNS zone:
 
-![enable 100m](https://raw.githubusercontent.com/ovh/docs/develop/templates/control-panel/product-selection/web-cloud/order/order-100m-step-2.png){.thumbnail}
+![activate100m](https://raw.githubusercontent.com/ovh/docs/develop/templates/control-panel/product-selection/web-cloud/order/order-100m-step-2.png){.thumbnail}
 
 > [!warning]
 >

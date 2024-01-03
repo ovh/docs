@@ -33,7 +33,7 @@ Dans le cadre **Informations générales** vous trouverez la mention *Hébergeme
 
 La fenêtre d'activation s'affiche. **L'étape 1** vous rappelle l'offre et son tarif, cliquez sur `Suivant`{.action}. Pour **l'étape 2**, choisissez les modifications à apporter sur votre zone DNS :
 
-![enable 100m](https://raw.githubusercontent.com/ovh/docs/develop/templates/control-panel/product-selection/web-cloud/order/order-100m-step-2.png){.thumbnail}
+![activate100m](https://raw.githubusercontent.com/ovh/docs/develop/templates/control-panel/product-selection/web-cloud/order/order-100m-step-2.png){.thumbnail}
 
 > [!warning]
 >

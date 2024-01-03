@@ -36,7 +36,7 @@ En la sección **« Información general »**, acceda al apartado *«Alojamiento
 
 Se mostrará la ventana de activación. En el **paso 1** se muestra información sobre el plan y el precio. Haga clic en `«Siguiente»`{.action}. En el **paso 2**, seleccione los cambios que quiera realizar en su zona DNS:
 
-![enable 100m](https://raw.githubusercontent.com/ovh/docs/develop/templates/control-panel/product-selection/web-cloud/order/order-100m-step-2.png){.thumbnail}
+![activate100m](https://raw.githubusercontent.com/ovh/docs/develop/templates/control-panel/product-selection/web-cloud/order/order-100m-step-2.png){.thumbnail}
 
 > [!warning]
 >
