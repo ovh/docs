@@ -43,6 +43,10 @@ Zapoznaj się z [przewodnikiem dotyczącym książek adresowych odbiorców wiado
 
 ### Etap 2: tworzenie wiadomości SMS
 
+> [!primary]
+>
+> Ze względów prawnych wiadomości SMS o charakterze informacji handlowej będą wysyłane **tylko w godz. 8:00-20:00, od poniedziałku do soboty**.
+
 Po wybraniu nadawcy i wpisaniu odbiorców możesz przejść do tworzenia wiadomości.
 
 ![menedżer wysyłki smsów](images/sms-send-control-panel03E.png){.thumbnail}

@@ -43,6 +43,10 @@ Para más información, puede consultar nuestra guía relativa a las [agendas de
 
 ### 2. Escribir un SMS
 
+> [!primary]
+>
+> Por motivos legales, los SMS comerciales solo se enviarán **entre 8:00 y 20:00, de lunes a sábado**.
+
 Una vez que haya seleccionado el remitente y los destinatarios, ya puede empezar a escribir el mensaje.
 
 ![escribir sms](images/sms-send-control-panel03E.png){.thumbnail}
