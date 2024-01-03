@@ -78,7 +78,7 @@ The `LoadBalancer` is the best option for a production environment, with two cav
 
 ### Supported Load Balancers
 
-OVHcloud currently provides two typse of load balancers that can be used with Managed Kubernetes Services:
+OVHcloud currently provides two types of load balancers that can be used with Managed Kubernetes Services:
 
 - [Load Balancer for Managed Kubernetes](https://www.ovhcloud.com/en-ca/public-cloud/load-balancer-kubernetes/), this load balancer type can only be used to expose resources of a Managed Kubernetes Service. It supports up to 2000 requests/second and a 200Mbits/s bandwidth.  
 - [Network Load Balancer](https://www.ovhcloud.com/en-ca/public-cloud/load-balancer/), based on the OpenStack Octavia project, this load balancer type can also be used with standard OVHcloud instances. You can choose between three Load Balancer sizes (S,M,L), providing up to 40k requests/second and a 2 Gbits/second bandwidth. Other advantages are the capability to expose your Load Balancer privately (private-to-private) or publicly using [Floating IPs](https://www.ovhcloud.com/en-ca/public-cloud/floating-ip/) and the possibility to collect metrics.
