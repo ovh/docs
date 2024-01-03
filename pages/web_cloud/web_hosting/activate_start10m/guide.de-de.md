@@ -35,11 +35,11 @@ Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=
 
 Im Bereich **Allgemeine Informationen** finden Sie den Abschnitt *Gratis Webhosting und E-Mail*. Klicken Sie rechts auf den Button `...`{.action} und anschließend auf `Aktivieren`{.action}.
 
-![free100M](images/start10m-step1-01.png){.thumbnail}
+![free100M](images/enable-100m.png){.thumbnail}
 
 Daraufhin öffnet sich das Aktivierungsfenster. **Schritt 1** zeigt Ihnen Angebotsinformationen an. Klicken Sie auf `Weiter`{.action} und wählen Sie in **Schritt 2** die Änderungen aus, die Sie in Ihrer DNS-Zone vornehmen möchten.
 
-![free100M](images/manager-order-100m-step2.png){.thumbnail}
+![free100M](images/order-100m-step-2.png){.thumbnail}
 
 > [!warning]
 >
