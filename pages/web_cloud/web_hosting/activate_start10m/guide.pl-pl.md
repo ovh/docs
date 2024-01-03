@@ -32,11 +32,11 @@ Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotom
 
 W ramce **Informacje ogólne** znajduje się pozycja *Darmowy hosting WWW i e-mail*. Kliknij przycisk `…`{.action} po prawej stronie, a następnie przycisk `Włącz`{.action}.
 
-![free100m](images/enable-100m.png){.thumbnail}
+![enable 100m](https://raw.githubusercontent.com/ovh/docs/develop/templates/control-panel/product-selection/web-cloud/domain-dns/general-information/enable-100m.png){.thumbnail}
 
 Pojawi się okno aktywacyjne. W **etapie 1** wyświetla się przypomnienie oferty i cennika. Kliknij przycisk `Dalej`{.action}. W **etapie 2** wybierz zmiany, jakie mają zostać wprowadzone w strefie DNS:
 
-![free100m](images/order-100m-step-2.png){.thumbnail}
+![enable 100m](https://raw.githubusercontent.com/ovh/docs/develop/templates/control-panel/product-selection/web-cloud/order/order-100m-step-2.png){.thumbnail}
 
 > [!warning]
 >
