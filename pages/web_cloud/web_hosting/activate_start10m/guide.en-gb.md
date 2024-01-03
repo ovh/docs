@@ -28,11 +28,11 @@ Log in to the [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomana
 
 In the **General information** box, you will see *Free web hosting and email*. Click `...`{.action} on the right-hand side, then `Enable`{.action}.
 
-![free100m](images/start10m-step1-01.png){.thumbnail}
+![free100m](images/enable-100m.png){.thumbnail}
 
 The activation window will appear. **Step 1** will detail the plan and its price — click `Next`{.action}. For **step 2**, choose the changes you need to make to your DNS zone:
 
-![free100m](images/manager-order-100m-step2.png){.thumbnail}
+![free100m](images/order-100m-step-2.png){.thumbnail}
 
 > [!warning]
 >

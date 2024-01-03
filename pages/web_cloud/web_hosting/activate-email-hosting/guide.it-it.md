@@ -28,11 +28,11 @@ Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanag
 
 Nel riquadro `Configurazione` è disponibile la dicitura `Account email`: clicca sul pulsante `...`{.action} a destra e poi su `Attiva il tuo servizio di posta`{.action}.
 
-![Attivazione email](images/mail-hosting01.png){.thumbnail}
+![Attivazione email](images/enable-email-included-webhosting.png){.thumbnail}
 
 Si apre la pagina di attivazione. Seleziona il dominio a cui intendi associare gli indirizzi email e conferma la scelta effettuata.
 
-![Attivazione email](images/mail-hosting02.png){.thumbnail}
+![Attivazione email](images/order-activate-email-included-webhosting-step-1.png){.thumbnail}
 
 > [!primary]
 > Per usufruire di più account email inclusi, ordina una [offerta di hosting web](https://www.ovhcloud.com/it/web-hosting/){.external} superiore dalla nostra pagina commerciale.
@@ -45,7 +45,7 @@ Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanag
 
 Nel riquadro `Configurazione`, clicca sul pulsante `...`{.action} in corrispondenza della dicitura `Account email` e seleziona `Scollega la tua opzione email`{.action}.
 
-![Attivazione email](images/mail-hosting03.png){.thumbnail}
+![Attivazione email](images/detach-email-included-webhosting.png){.thumbnail}
 
 Verrà proposto l’acquisto di un'offerta MX personalizzata. Una volta saldato l’ordine, gli account di posta continueranno a funzionare anche dopo la disattivazione dell’hosting Web.
  
@@ -61,7 +61,7 @@ Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanag
 
 Nel riquadro `Configurazione`, clicca sul pulsante `...`{.action} in corrispondenza della dicitura `Account email` e seleziona `Disattiva l’opzione email`{.action}.
 
-![Attivazione email](images/mail-hosting04.png){.thumbnail}
+![Attivazione email](images/cancel-email-included-webhosting.png){.thumbnail}
 
 > [!warning]
 >

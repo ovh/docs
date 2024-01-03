@@ -29,11 +29,11 @@ Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotoman
 
 In the `Configuration` box, you will see `Email addresses`. Click the `...`{.action} button on the right, then `Enable email solution`{.action}.
 
-![email-activation](images/mail-hosting01.png){.thumbnail}
+![email-activation](images/enable-email-included-webhosting.png){.thumbnail}
 
 The activation window appears. Choose the domain name you would like to link your email addresses to, then confirm your choice.
 
-![email-activation](images/mail-hosting02.png){.thumbnail}
+![email-activation](images/order-activate-email-included-webhosting-step-1.png){.thumbnail}
 
 > [!primary]
 > If you would like to have more included email accounts, please order a higher [web hosting plan](https://www.ovhcloud.com/en-gb/web-hosting/){.external} from our webpage.
@@ -46,7 +46,7 @@ Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotoman
 
 In the `Configuration` box, click the `...`{.action} button to the right of the `Email addresses` entry, then click the `Detach my email option`{.action} button
 
-![email-activation](images/mail-hosting03.png){.thumbnail}
+![email-activation](images/detach-email-included-webhosting.png){.thumbnail}
 
 An MX solution will be offered for purchase. Once the order has been settled, your emails will continue to work after the Web Hosting plan is suspended.
  
@@ -62,7 +62,7 @@ Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotoman
 
 In the `Configuration` box, click the `...`{.action} button to the right of the `Email addresses` entry, then click the `Cancel the email option`{.action} button.
 
-![email-activation](images/mail-hosting04.png){.thumbnail}
+![email-activation](images/cancel-email-included-webhosting.png){.thumbnail}
 
 > [!warning]
 >
