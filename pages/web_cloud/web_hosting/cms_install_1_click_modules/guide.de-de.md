@@ -41,7 +41,7 @@ Wählen Sie aus den oben aufgeführten 4 CMS aus und folgen dann den Schritten i
 
 Wenn Sie ein CMS installieren möchten, das nicht als OVHcloud 1-Klick-Modul angeboten wird, können Sie es manuell auf Ihrem Hosting installieren, sofern dieses CMS mit Ihrem [OVHcloud Webhosting](https://www.ovhcloud.com/de/web-hosting/) kompatibel ist.
 
-![CMS-Logos](images/CMS_logo.png){.thumbnail}
+![CMS-Logos](images/cms-logos.png){.thumbnail}
 
 ### Schritt 2: Zugang zur Verwaltung der 1-Klick-Module
 
@@ -49,7 +49,7 @@ Loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=
 
 Hier können Sie die bereits installierten 1-Klick-Module verwalten und neue Module installieren.
 
-![Zugang zur Verwaltung der 1-Klick-Module](images/access_to_the_1_click_modules_section.png){.thumbnail}
+![Zugang zur Verwaltung der 1-Klick-Module](images/1-click-modules-section.png){.thumbnail}
 
 ## Schritt 3: 1-Klick-Modul hinzufügen
 
@@ -57,7 +57,7 @@ Klicken Sie im Tab `1-Klick-Module`{.action} Ihres Hostings auf den Button `Ein 
 
 Wählen Sie im neu angezeigten Fenster das gewünschte CMS aus und dann den Domainnamen, mit dem Sie Ihre Website installieren möchten.
 
-![Modulauswahl](images/add_a_module.png){.thumbnail}
+![Modulauswahl](images/add-a-module-select-module-and-domain.png){.thumbnail}
 
 Wenn der Domainname nicht in der Liste steht, gehen Sie in zum Tab `Multisite`{.action}, um ihn hinzuzufügen. Wenn nötig lesen Sie unsere Anleitung "[Mehrere Websites auf einem Webhosting einrichten](/pages/web_cloud/web_hosting/multisites_configure_multisite)".
 
@@ -92,7 +92,7 @@ Wählen Sie den Domainnamen für Ihr CMS aus. Überprüfen Sie das Zielverzeichn
 > Wenn Sie nicht den Experten-Modus verwenden, erstellen Sie die Datenbank nicht im Voraus, da der Installationsroboter dies ausführt.
 >
 
-![Einfache Installation eines Moduls](images/choose_installation.png){.thumbnail}
+![Einfache Installation eines Moduls](images/add-a-module-quick-mod-step-1-b.png){.thumbnail}
 
 Sobald die Installation abgeschlossen ist, erhalten Sie eine E-Mail mit Login-Daten. Damit können Sie sich in das Administrator-Interface (Backend) Ihres CMS einloggen.
 
@@ -105,7 +105,7 @@ Sobald die Installation abgeschlossen ist, erhalten Sie eine E-Mail mit Login-Da
 
 Um die erweiterte Installation durchzuführen, vergewissern Sie sich, dass im Feld `Installation im Experten-Modus`{.action} ein Haken gesetzt ist, und klicken Sie anschließend auf `Weiter`{.action}:
 
-![Erweiterte Installation eines Moduls](images/advanced_installation.png){.thumbnail}
+![Erweiterte Installation eines Moduls](images/add-a-module-advanced-mod-step-1.png){.thumbnail}
 
 ##### Datenbank auswählen
 
@@ -120,7 +120,7 @@ Geben Sie die Verbindungsdaten zu Ihrer Datenbank ein.
 > Um die Login-Daten zu einer mit Web Cloud Databases erstellten Datenbank herauszufinden, lesen Sie [diese Anleitung](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
 >
 
-![Datenbank für erweiterte Installation](images/advanced_installation_database.png){.thumbnail}
+![Datenbank für erweiterte Installation](images/add-a-module-advanced-mod-step-3.png){.thumbnail}
 
 Es gibt mehrere Möglichkeiten:
 
@@ -179,13 +179,13 @@ Wenn Sie alle Informationen eingegeben haben, klicken Sie auf `Weiter`{.action}.
 > Das Verzeichnis am Ende des Installationspfads muss leer sein, damit die Installation ausgeführt werden kann.
 >
 
-![Modulkonfiguration für die erweiterte Installation](images/advanced_installation_configuration.png){.thumbnail}
+![Modulkonfiguration für die erweiterte Installation](images/add-a-module-advanced-mod-step-2.png){.thumbnail}
 
 ##### Installation bestätigen
 
 Im letzten Schritt der erweiterten Installation überprüfen Sie die eingegebenen Informationen und klicken dann auf `Bestätigen`{.action}.
 
-![Bestätigung der Installation im Experten-Modus](images/advanced_installation_summary.png){.thumbnail}
+![Bestätigung der Installation im Experten-Modus](images/add-a-module-advanced-mod-step-4.png){.thumbnail}
 
 ### Schritt 4: Ihre Website personalisieren
 
