@@ -15,7 +15,7 @@ Eine **Index of**-Seite erscheint in mindestens einem der folgenden Fälle:
 - Ihr Domainname ist in der [Multisite-Konfiguration](/pages/web_cloud/web_hosting/multisites_configure_multisite) nicht korrekt auf Ihr Zielverzeichnis eingestellt.
 - Das Zielverzeichnis, auf das Ihr Domainname verweist, enthält keine Datei namens **index.html** oder **index.php**.
 
-![index_of](images/index_of.png){.thumbnail}
+![index_of](images/index-of.png){.thumbnail}
 
 **Diese Anleitung erklärt, wie Sie die Anzeige einer "Index of"-Seite korrigieren.**
 
@@ -51,11 +51,11 @@ Ihr Domainname muss daher im Bereich `Multisite`{.action} Ihres Webhostings mit 
 
 Sie haben die Dateien Ihrer Website **mydomain.ovh** per [FTP](/pages/web_cloud/web_hosting/ftp_connection) in den `www`-Ordner Ihres OVHcloud Webhostings importiert. Ihr Domainname ist jedoch nicht mit diesem Ordner in der Spalte `Wurzelverzeichnis` Ihrer `Multisite`-Konfiguration verknüpft.
 
-![index_multisite](images/index_of_multisite.png){.thumbnail}
+![index_multisite](images/root-folders-empty.png){.thumbnail}
 
 Ändern Sie das `Wurzelverzeichnis`, indem Sie in der Zeile des betreffenden Domainnames auf die Schaltfläche `...`{.action} klicken und dann `Domain bearbeiten`{.action} auswählen.
 
-![modify_domain](images/modify_domain.png){.thumbnail}
+![modify_domain](images/modify-domain.png){.thumbnail}
 
 Führen Sie im neuen Fenster die folgenden Aktionen aus:
 
@@ -63,7 +63,7 @@ Führen Sie im neuen Fenster die folgenden Aktionen aus:
 - Geben Sie den Ordnernamen Ihrer Webseite, der die **index.php** oder **index.html** enthält, als `Wurzelverzeichnis` (2) an.
 - Klicken Sie auf `Weiter`{.action} (3).
 
-![change_root_folder](images/change_root_folder01.png){.thumbnail}
+![change_root_folder](images/change-root-folder-step-1.png){.thumbnail}
 
 > [!primary]
 >
@@ -72,11 +72,11 @@ Führen Sie im neuen Fenster die folgenden Aktionen aus:
 
 Klicken Sie anschließend auf `Bestätigen`{.action}.
 
-![modify_root_folder_confirm](images/modify_root_folder_confirm.png){.thumbnail}
+![modify_root_folder_confirm](images/change-root-folder-step-2.png){.thumbnail}
 
 Sie erhalten das Ergebnis innerhalb weniger Minuten (denken Sie daran, Ihren Browser zu aktualisieren) wie in der folgenden Abbildung dargestellt:
 
-![multisite_modified](images/multisite_modified.png){.thumbnail}
+![multisite_modified](images/root-folders-full-www.png){.thumbnail}
 
 Überprüfen Sie, ob Ihre Webseite korrekt angezeigt wird. Wenn dies nicht der Fall ist, starten Sie Ihr Gerät neu und leeren Sie den Cache Ihres Browsers.
 
