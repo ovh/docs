@@ -44,35 +44,35 @@ Je nach Ihrer Ausgangslage ist der Zugriffspfad zur Quelldatenbank unterschiedli
 
 Wählen Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) `Web Cloud`{.action} aus dem Menü oben aus. Öffnen Sie in der linken Spalte `Hosting-Pakete`{.action} und klicken Sie auf das Webhosting mit der Quelldatenbank.
 
-![Liste der Hostings](images/list-web-hosting.png){.thumbnail}
+![Liste der Hostings](images/web-hosting-selection.png){.thumbnail}
 
 Wenn Sie auf den Tab `Datenbanken`{.action} klicken, wird eine Liste Ihrer Start SQL-Datenbanken angezeigt.
 
-![Liste der SQL-Start-Datenbanken](images/list-bdd-startsql.png){.thumbnail}
+![Liste der SQL-Start-Datenbanken](images/sharedsql-dashboard-db-list.png){.thumbnail}
 
 #### Web Cloud Databases
 
 Wählen Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) `Web Cloud`{.action} aus dem Menü oben aus. Öffnen Sie in der linken Spalte `Web Cloud Databases`{.action} und wählen Sie den Web Cloud Databases Server mit der Quelldatenbank aus.
 
-![Liste der WCD-Server](images/list-wcd-server.png){.thumbnail}
+![Liste der WCD-Server](images/wcdb-server-selection.png){.thumbnail}
 
 Wenn Sie auf den Tab `Datenbanken`{.action} klicken, wird eine Liste der Datenbanken auf Ihrem Web Cloud Databases Server angezeigt.
 
-![WCD DB-Liste](images/list-database-wcd.png){.thumbnail}
+![WCD DB-Liste](images/wcdb-dashboard-db-list.png){.thumbnail}
 
 ### Inhalt einer Datenbank kopieren
 
 Klicken Sie im Tab `Datenbanken`{.action} auf den Button `...`{.action} rechts in der Zeile der Datenbank, deren Inhalt Sie kopieren möchten. Wählen Sie `Datenbank kopieren`{.action}.
 
-![CTA_copy_BDD](images/cta-copy-database.png){.thumbnail}
+![CTA_copy_BDD](images/copy-db-tool.png){.thumbnail}
 
 Es wird ein Fenster angezeigt, in dem Sie Ihre Zieldatenbank identifizieren können.
 
-![Interface Copy BDD](images/interface-copy-database.png){.thumbnail}
+![Interface Copy BDD](images/copy-db-tool-step-1.png){.thumbnail}
 
 Wenn Sie keine Zieldatenbank haben, klicken Sie auf den Link im Text, um eine neue Datenbank zu bestellen.
 
-![WCD DB-Liste](images/link-buy-database.png){.thumbnail}
+![WCD DB-Liste](images/copy-db-tool-link-to-buy-db.png){.thumbnail}
 
 Sie haben die Wahl zwischen [Start SQL](https://www.ovhcloud.com/de/web-hosting/options/start-sql/) oder [Web Cloud Databases](https://www.ovhcloud.com/de/web-cloud/databases/).
 
@@ -95,17 +95,17 @@ Sie haben `In Datenbank kopieren`{.action} ausgewählt. Es werden zwei Dropdownl
 
 Klicken Sie auf `Weiter`{.action}. Die folgende Bestätigungsmeldung wird angezeigt:
 
-![BDD-Kopierbestätigungsnachricht](images/confirmation-copy-database.png){.thumbnail}
+![BDD-Kopierbestätigungsnachricht](images/copy-db-tool-step-2.png){.thumbnail}
 
 Wenn Sie die ausgewählte Zieldatenbank nicht überschreiben möchten, klicken Sie auf `Zurück`{.action}, um Ihre Auswahl zu ändern, oder auf `Abbrechen`{.action}, um den Vorgang abzubrechen. Klicken Sie andernfalls auf `Bestätigen`{.action}, um den Inhalt der Quelldatenbank in die Zieldatenbank zu duplizieren.
 
 Die folgende Bestätigungsmeldung wird angezeigt:
 
-![BDD-Erfolgsmeldung](images/success-copy-database.png){.thumbnail}
+![BDD-Erfolgsmeldung](images/copy-db-tool-copied-successfull.png){.thumbnail}
 
 Der Kopiervorgang kann einige Minuten dauern. Um den Status zu überprüfen, öffnen Sie den Tab `Aktuelle Tasks`{.action}. In der Tabelle wird eine Zeile für das Kopieren mit dem Status „Geplant“ angezeigt. Wenn der Vorgang abgeschlossen ist, wird die Zeile gelöscht.
 
-![Aktuelle Tasks](images/ongoing-tasks.png){.thumbnail}
+![Aktuelle Tasks](images/copy-db-tool-ongoing-tasks.png){.thumbnail}
 
 #### Auswahl 2: Web Cloud Databases
 
@@ -113,13 +113,13 @@ Sie haben `In eine Web Cloud Databases kopieren`{.action} ausgewählt. Es werden
 
 Klicken Sie auf `Weiter`{.action}. Die folgende Bestätigungsmeldung wird angezeigt:
 
-![BDD-Kopierbestätigungsnachricht](images/confirmation-copy-database.png){.thumbnail}
+![BDD-Kopierbestätigungsnachricht](images/copy-db-tool-step-2.png){.thumbnail}
 
 Wenn Sie die ausgewählte Zieldatenbank nicht überschreiben möchten, klicken Sie auf `Zurück`{.action}, um Ihre Auswahl zu ändern, oder auf `Abbrechen`{.action}, um den Vorgang abzubrechen. Klicken Sie andernfalls auf `Bestätigen`{.action}, um den Inhalt der Quelldatenbank in die Zieldatenbank zu duplizieren.
 
 Der Kopiervorgang kann einige Minuten dauern. Um den Status zu überprüfen, öffnen Sie den Tab `Aktuelle Tasks`{.action}. In der Tabelle wird eine Zeile für das Kopieren mit dem Status „Geplant“ angezeigt. Wenn der Vorgang abgeschlossen ist, wird die Zeile gelöscht.
 
-![Aktuelle Tasks](images/ongoing-tasks.png){.thumbnail}
+![Aktuelle Tasks](images/copy-db-tool-ongoing-tasks.png){.thumbnail}
 
 ### Konfiguration Ihrer Website mit einer neuen Datenbank
 
