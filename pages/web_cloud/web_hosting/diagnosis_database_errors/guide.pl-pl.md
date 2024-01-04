@@ -31,6 +31,8 @@ Korzystanie z baz danych może spowodować pewne nieprawidłowości na Twojej st
 
 ### "Błąd podczas logowania do bazy danych"
 
+![error_establishing_a_DB_connection](images/error-establishing-a-db-connection.png){.thumbnail}
+
 #### Zweryfikuj zdarzenia w trakcie
 
 Sprawdź najpierw na stronie [https://web-cloud.status-ovhcloud.com/](https://web-cloud.status-ovhcloud.com/), że Twoje centrum danych, klaster hostingu, Twój Web Cloud Databases lub Cloud Databases nie są związane z awariami infrastruktury OVHcloud.
@@ -96,7 +98,7 @@ W [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=ht
 
 Otrzymałeś e-mail z naszych usług informujący, że ilość danych na Twojej bazie przekracza dozwolony limit. Twoja baza została przeczytana w trybie tylko do odczytu. Dzięki temu nie można wprowadzać modyfikacji na Twojej stronie WWW.
 
-![mail_overquota](images/mail_overquota.png){.thumbnail}
+![database-overquota-notification-email](images/database-overquota-notification-email.png){.thumbnail}
 
 Odblokuj bazę danych na trzy sposoby:
 
@@ -154,7 +156,7 @@ Aby zoptymalizować bazę danych, postępuj zgodnie z instrukcjami zawartymi w p
 
 Poniższy komunikat w części `Bazy danych`{.action} Twojego [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl) wskazuje, że Twój serwer [Web Cloud Databases](https://www.ovh.pl/cloud/cloud-databases/) wykorzystał zbyt dużą ilość zasobów w infrastrukturze OVHcloud:
 
-![quota_exceeding](images/quota_exceeding.png){.thumbnail}
+![wcdb-ram-exceeded](images/wcdb-ram-exceeded.png){.thumbnail}
 
 W tej sytuacji możesz zwiększyć [ilość pamięci RAM](/pages/web_cloud/web_cloud_databases/configure-database-server#zmiana-oferty-serwera-baz-danych) dostępny w części `Bazy danych`{.action} [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl). W karcie `Informacje ogólne`{.action} kliknij przycisk `...`{.action} w rubryce `RAM`.
 
@@ -186,7 +188,7 @@ Upewnij się, że baza danych jest pusta w zakładce `Bazy danych`{.action} odpo
 
 Możesz również zaznaczyć kratkę `Wyczyść aktualną bazę danych`{.action} tuż przed [uruchomieniem importu](/pages/web_cloud/web_hosting/sql_importing_mysql_database#import-twojej-kopii-zapasowej-w-panelu-klienta):
 
-![database-import-empty](images/database-import-empty.png){.thumbnail}
+![database-import-empty-current-db](images/database-import-empty-current-db.png){.thumbnail}
 
 Ten komunikat błędu oznacza, że baza danych, którą chcesz importować zawiera nieautoryzowane elementy na infrastrukturze współdzielonej OVHcloud. W razie potrzeby skontaktuj się z [społecznością użytkowników](https://community.ovh.com/en/) lub [wyspecjalizowanym dostawcą](https://partner.ovhcloud.com/pl/directory/). Nie będziemy w stanie udzielić wsparcia w zakresie korekty tej nieprawidłowości.
 

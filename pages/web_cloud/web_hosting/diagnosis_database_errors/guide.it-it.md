@@ -30,6 +30,8 @@ L'utilizzo dei database può provocare alcune anomalie sul tuo sito o sul tuo [S
 
 ### "Error establishing a database connection"
 
+![error_establishing_a_DB_connection](images/error-establishing-a-db-connection.png){.thumbnail}
+
 #### Verifica gli incidenti in corso
 
 Per prima cosa verifica su [https://web-cloud.status-ovhcloud.com/](https://web-cloud.status-ovhcloud.com/) che il tuo datacenter, il tuo cluster di hosting, il tuo server Web Cloud Databases o Cloud Database non sia interessato da un incidente sull'infrastruttura OVHcloud.
@@ -93,7 +95,7 @@ Nello Spazio Cliente OVHcloud (https://www.ovh.com/auth/?action=gotomanager&from
 
 Hai ricevuto un'email dai nostri servizi che indica che la quantità di dati sul tuo database supera il limite autorizzato. Il tuo database è quindi passato in sola lettura. In questo modo il sito non può essere modificato.
 
-![mail_overquota](images/mail_overquota.png){.thumbnail}
+![database-overquota-notification-email](images/database-overquota-notification-email.png){.thumbnail}
 
 Tre metodi ti permettono di sbloccare il tuo database:
 
@@ -150,7 +152,7 @@ Superamento della capacità della RAM
 
 Nella sezione `Database`{.action} del tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) è riportato che il tuo server [Web Cloud Databases](https://www.ovh.it/cloud/cloud-databases/) ha consumato troppe risorse sull'infrastruttura OVHcloud:
 
-![quota_exceeding](images/quota_exceeding.png){.thumbnail}
+![wcdb-ram-exceeded](images/wcdb-ram-exceeded.png){.thumbnail}
 
 In questa situazione è possibile aumentare la [quantità di memoria RAM](/pages/web_cloud/web_cloud_databases/configure-database-server#monitora-la-ram-consumata) disponibile nella sezione `Database`{.action} del tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Nella scheda `Informazioni generali`{.action}, clicca sul pulsante `...`{.action} nella sezione `RAM`.
 
@@ -181,7 +183,7 @@ Per prima cosa, assicurati che il database sia vuoto dalla scheda `Database`{.ac
 
 Seleziona la casella `Svuota il database attuale`{.action} immediatamente prima di [avviare l'importazione](/pages/web_cloud/web_cloud_databases/restore-import-on-database-server):
 
-![database-import-empty](images/database-import-empty.png){.thumbnail}
+![database-import-empty-current-db](images/database-import-empty-current-db.png){.thumbnail}
 
 Questo messaggio di errore significa che il database che stai cercando di importare contiene elementi non autorizzati sull'infrastruttura condivisa OVHcloud. Contatta, se necessario, la nostra [Community di utenti](https://community.ovh.com/en/) o un [provider specializzato](https://partner.ovhcloud.com/it/directory/). Non saremo in grado di fornirti assistenza sulla correzione di questa anomalia.
 
