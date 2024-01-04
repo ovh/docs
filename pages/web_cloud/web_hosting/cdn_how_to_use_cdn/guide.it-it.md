@@ -43,7 +43,7 @@ Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanag
 > 
 > Se hai un'opzione CDN precedente al 19/11/2020, puoi ordinare la nuova offerta Shared CDN cliccando su `Aggiorna la CDN verso la versione superiore`{.action}.
 
-![CDN](images/manage_CDN_01.png){.thumbnail}
+![CDN](images/cdn-order.png){.thumbnail}
 
 Sarai reindirizzato verso una pagina in cui è possibile generare un buono d’ordine. Una volta effettuato il pagamento, il tuo servizio sarà disponibile in pochi minuti.
 
@@ -53,7 +53,7 @@ Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanag
 
 A questo punto, seleziona la voce "Attiva la CDN", clicca su `Seguente`{.action} e infine su`Conferma`{.action}.
 
-![CDN](images/manage_CDN_01_02.png){.thumbnail}
+![CDN](images/cdn-activation.png){.thumbnail}
 
 > [!warning]
 > 
@@ -77,7 +77,7 @@ Ogni tanto è utile cancellare la cache della CDN, specialmente quando effettui 
 
 Clicca sulla scheda `Multisito`{.action} del tuo hosting, clicca sui tre puntini `...`{.action} a destra del record multisito e poi `Purger la CDN`{.action}.
 
-![CDN](images/manage_sharedCDN_01.png){.thumbnail}
+![CDN](images/cdn-sharedcdn-clear-cache.png){.thumbnail}
 
 #### Configura le opzioni della CDN Shared
 
@@ -87,7 +87,7 @@ Clicca sulla scheda `Multisito`{.action} del tuo hosting, clicca sui tre puntini
 > 
 > Alcune opzioni sono bloccate sull'offerta Basic e richiedono la sottoscrizione della [CDN security](https://www.ovhcloud.com/it/web-hosting/options/cdn/) o della [CDN Advanced](https://www.ovhcloud.com/it/web-hosting/options/cdn/)
 
-![CDN](images/manage_sharedCDN_02.png){.thumbnail}
+![CDN](images/cdn-sharedcdn-modify-cdn.png){.thumbnail}
 
 - **Sempre online**: Permette il mantenimento dei dati della CDN online in caso di guasto del server.
 
@@ -101,7 +101,7 @@ Clicca sulla scheda `Multisito`{.action} del tuo hosting, clicca sui tre puntini
 
 Dopo aver scelto le opzioni, clicca su `Applica la configurazione`{.action} e poi su `Conferma la configurazione`{.action} nella finestra successiva.
 
-![CDN](images/manage_sharedCDN_03.png){.thumbnail}
+![CDN](images/cdn-sharedcdn-option-settings.png){.thumbnail}
 
 ##### **Crea una regola di inserimento in cache** <a name="cacherules"></a>
 
@@ -109,7 +109,7 @@ Per aggiungere una regola di cache su uno degli elementi del tuo sito, vai alla 
 
 Seleziona **Regole di cache** e clicca sul pulsante `Aggiungi una regola`{.action}.
 
-![CDN](images/manage_sharedCDN_04.png){.thumbnail}
+![CDN](images/cdn-sharedcdn-create-cache-rule.png){.thumbnail}
 
 - **Regola**: Assegna un nome alla tua regola.
 
@@ -123,7 +123,7 @@ Una volta effettuate le scelte, clicca sul pulsante `Crea la regola`{.action}.
 
 Le regole figurano in un elenco. Per modificare una regola, clicca sui tre puntini `...`{.action} in corrispondenza della regola in questione e seleziona `Modifica la regola`{.action}. o eliminarla cliccando su `Elimina la regola`{.action}.
 
-![CDN](images/manage_sharedCDN_05.png){.thumbnail}
+![CDN](images/cdn-sharedcdn-cache-rules.png){.thumbnail}
 
 Una volta configurate le regole e selezionate le opzioni, clicca su `Applica la configurazione`{.action} e poi su `Conferma la configurazione`{.action} nella finestra successiva.
 
@@ -144,7 +144,7 @@ Clicca sulla scheda `Multisito`{.action} del tuo hosting, clicca sui tre puntini
 
 	Una volta attivata la funzione, clicca su `Modifica l'elenco delle risorse esterne`{.action} per aggiungere i domini autorizzati a condividere le tue risorse.
 
-	![CDN](images/manage_CDNsecurity_01.png){.thumbnail}
+	![CDN](images/cdn-security-cors.png){.thumbnail}
 
 	Una volta completata la lista, clicca su `Conferma`{.action}.
 
@@ -156,13 +156,13 @@ Clicca sulla scheda `Multisito`{.action} del tuo hosting, clicca sui tre puntini
 
 	Una volta attivata la funzione, clicca sul menu a tendina per scegliere tra `Reindirizzamento permanente (301)` o `Reindirizzamento temporaneo (302)`.
 
-	![CDN](images/manage_CDNsecurity_02.png){.thumbnail}
+	![CDN](images/cdn-security-https-redirect.png){.thumbnail}
 
 - **HTTP Strict Transport Security (HSTS)**: Imposta l'accesso al tuo sito in HTTPS. In questo modo la tua soluzione Web è protetta contro gli attacchi di declassamento (o attacchi di ripiego).
 
 	Una volta attivata la funzione, determina la durata di vita durante la quale il browser applicherà la funzione HSTS sul tuo sito Web. 
 
-	![CDN](images/manage_CDNsecurity_03.png){.thumbnail}
+	![CDN](images/cdn-security-hsts.png){.thumbnail}
 
 > [!primary]
 > 
@@ -207,7 +207,7 @@ Clicca sulla scheda `Multisito`{.action} del tuo hosting, clicca sui tre puntini
 
 	Nella scheda Multisito, clicca sui tre puntini `...`{.action} in corrispondenza del record multisito e seleziona `Purger CDN`{.action}. 
 
-	![CDN](images/manage_CDNadvanced_01.png){.thumbnail}
+	![CDN](images/cdn-advanced-clear-cache-step-1.png){.thumbnail}
 
 - **Query String**: Gestione della messa in cache di contenuto, basata sulle impostazioni (chiamate anche *Query String*) della richiesta URL. In base alla tua configurazione, scegli il comportamento della cache CDN:
 	- *Disattivato*: La risorsa viene salvata in cache con i parametri non selezionati. Creerà, ad esempio, 2 iterazioni nella cache della CDN per 2 URL con le stesse impostazioni in ordine diverso.
@@ -222,7 +222,7 @@ Clicca sulla scheda `Multisito`{.action} del tuo hosting, clicca sui tre puntini
 
 	Una lista si forma nel riquadro inferiore, con tutti i link che hai elencato, potrai eliminare quello che preferisci selezionandolo e poi cliccando su `Rimuovi`{.action}.
 
-	![CDN](images/manage_CDNadvanced_02.png){.thumbnail}
+	![CDN](images/cdn-advanced-prewarm.png){.thumbnail}
 
 - **Cache rule**: Crea fino a 100 regole. che definiscono la frequenza di aggiornamento della cache per alcune risorse specifiche del tuo sito. Prosegui nella lettura di questa guida [nella fase](#cacherulesadv) successiva per maggiori informazioni.
 
@@ -234,7 +234,7 @@ Per aggiungere una regola di cache su uno degli elementi del tuo sito, vai alla 
 
 Seleziona **Regole di cache** e clicca sul pulsante `Aggiungi una regola`{.action}.
 
-![CDN](images/manage_CDNadvanced_03.png){.thumbnail}
+![CDN](images/cdn-advanced-create-cache-rule.png){.thumbnail}
 
 * **Regola**: Assegna un nome alla tua regola.
 * **Tipo di risorsa**: Scegli tra le seguenti opzioni:
@@ -250,7 +250,7 @@ Una volta effettuate le scelte, clicca sul pulsante `Crea la regola`{.action}.
 
 Le regole figurano in un elenco. Per modificare una regola, clicca sui tre puntini `...`{.action} in corrispondenza della regola in questione e seleziona `Modifica la regola`{.action}. Per eliminarla, clicca su `Elimina la regola`{.action}.
 
-![CDN](images/manage_CDNadvanced_04.png){.thumbnail}
+![CDN](images/cdn-advanced-cache-rules.png){.thumbnail}
 
 Una volta configurate le regole e selezionate le opzioni, clicca su `Applica la configurazione`{.action} e poi su `Conferma la configurazione`{.action} nella finestra successiva.
 
@@ -258,7 +258,7 @@ Una volta configurate le regole e selezionate le opzioni, clicca su `Applica la 
 
 Nella scheda `Multisito`{.action} del tuo hosting, sotto la tabella, puoi visualizzare le statistiche della tua CDN, indicando il numero di richieste al minuto misurate su di esso.
 
-![CDN](images/manage_CDNstat_01.png){.thumbnail}
+![CDN](images/cdn-statistics.png){.thumbnail}
 
 ### Gestisci la tua CDN Business <a name="cdnbusiness"></a>
 
@@ -272,7 +272,7 @@ Ogni tanto è utile cancellare la cache della CDN, specialmente quando effettui 
 
 Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e seleziona `Web Cloud`{.action}. E seleziona il tuo servizio nella sezione `Hosting`{.action}. Clicca sui tre puntini `...`{.action} in corrispondenza di "Opzione CDN" e poi su `Ordina una CDN`{.action}.
 
-![CDN](images/manage_CDN_02.png){.thumbnail}
+![CDN](images/cdn-clear-cache.png){.thumbnail}
 
 ### In che modo è possibile conservare in cache i file nella CDN?
 
@@ -322,7 +322,7 @@ Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanag
 
 A questo punto, deseleziona la voce "Attiva la CDN", clicca su `Seguente`{.action} e infine su`Conferma`{.action}.
 
-![CDN](images/manage_CDN_03.png){.thumbnail}
+![CDN](images/cdn-deactivation.png){.thumbnail}
 
 ### Elimina l'opzione CDN sul tuo hosting
 
@@ -330,7 +330,7 @@ Questa operazione consente di eliminare l’opzione CDN per l’intero hosting W
 
 Accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) e seleziona `Web Cloud`{.action}. e seleziona il tuo servizio nella sezione `Hosting`{.action}. Clicca sui tre puntini `...`{.action} in corrispondenza di "Opzione CDN" e poi su `Disattiva la CDN`{.action}.
 
-![CDN](images/manage_CDN_04.png){.thumbnail}
+![CDN](images/cdn-resiliation.png){.thumbnail}
 
 Clicca su `Conferma`{.action} per completare l’operazione.
 
