@@ -203,7 +203,7 @@ Nachdem Sie die Dateien in Ihrem Ordner "**CMS**" dekomprimiert haben, stellen S
 
 Hier ein Beispiel für *WordPress*:
 
-![hosting](images/wpfl2.png){.thumbnail}
+![hosting](images/ftp-upload-wordpress.png){.thumbnail}
 
 >[!warning]
 >

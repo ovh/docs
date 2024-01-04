@@ -204,7 +204,7 @@ Depois de descomprimir os ficheiros na pasta "**CMS**", [ligue-se ao espaço de 
 
 Abaixo, um exemplo com o CMS *WordPress*:
 
-![hosting](images/wpfl2.png){.thumbnail}
+![hosting](images/ftp-upload-wordpress.png){.thumbnail}
 
 > [!warning]
 >

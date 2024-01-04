@@ -200,7 +200,7 @@ Une fois les fichiers décompressés dans votre dossier « **CMS** », [connecte
 
 Ci-dessous, un exemple avec le CMS *WordPress*:
 
-![hosting](images/wpfl2.png){.thumbnail}
+![hosting](images/ftp-upload-wordpress.png){.thumbnail}
 
 >[!warning]
 >
