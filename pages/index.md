@@ -728,7 +728,7 @@
                 + [Creating a cluster with Pulumi](public_cloud/containers_orchestration/managed_kubernetes/creating-a-cluster-with-pulumi)
                 + [Deploying an application](public_cloud/containers_orchestration/managed_kubernetes/deploying-an-application)
                 + [Persistent Volumes on OVHcloud Managed Kubernetes](public_cloud/containers_orchestration/managed_kubernetes/persistent-volumes-on-ovh-managed-kubernetes)
-                + [Using the OVHcloud Managed Kubernetes LoadBalancer](public_cloud/containers_orchestration/managed_kubernetes/using-lb)
+                + [Expose your app deployed on an OVHcloud Managed Kubernetes Service](public_cloud/containers_orchestration/managed_kubernetes/using-lb)
                 + [Managed Kubernetes - Responsibility model](public_cloud/containers_orchestration/managed_kubernetes/responsibility-model)
             + [User guides](public-cloud-containers-orchestration-managed-kubernetes-k8s-user-guides)
                 + [Configuring kubectl on an OVHcloud Managed Kubernetes cluster](public_cloud/containers_orchestration/managed_kubernetes/configuring-kubectl-on-an-ovh-managed-kubernetes-cluster)
