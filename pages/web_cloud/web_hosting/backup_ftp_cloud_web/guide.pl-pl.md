@@ -67,7 +67,7 @@ Kliknij na `Zatwierdź`{.action}, aby potwierdzić zlecenie.
 
 Jeśli wygenerowana zostanie kopia zapasowa, w [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external} pojawi się następujący komunikat:
 
-![kopia zapasowa](images/backup-notification-progress.png){.thumbnail}
+![kopia zapasowa](images/message-backup-progress.png){.thumbnail}
 
 Tworzenie kopii zapasowej zajmuje od 10 do 15 minut.
 
@@ -76,7 +76,7 @@ Tworzenie kopii zapasowej zajmuje od 10 do 15 minut.
 Po sfinalizowaniu tworzenia kopii zapasowej otrzymasz e-mail na adres e-mail powiązany z identyfikatorem administratora Twojego hostingu Cloud Web.<br>
 E-mail ten zawiera link do pobrania **ważny przez 9 dni** od otrzymania wiadomości e-mail:
 
-![kopia zapasowa](images/backup-notification-email.png){.thumbnail}
+![kopia zapasowa](images/backup-information.png){.thumbnail}
 
 Pobrany plik jest w formacie *.tar.gz*.
 

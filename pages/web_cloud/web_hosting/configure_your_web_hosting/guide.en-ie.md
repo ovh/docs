@@ -229,13 +229,13 @@ Log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotoman
 
 For the FTP user password, please refer to our guide on [Modifying an FTP user password](/pages/web_cloud/web_hosting/ftp_change_password) if necessary.
 
-![ovhconfig](images/tab-ftp-ssh-webhosting.png){.thumbnail}
+![ovhconfig](images/tab-ftp-ssh.png){.thumbnail}
 
 #### 3.2 - Create or open the .ovhconfig file
 
 Once you have logged in to your [FTP storage space](/pages/web_cloud/web_hosting/ftp_connection), you can view all of the files currently hosted on it. Inside the root directory of your hosting (which is indicated by a `/`) you should find the .ovhconfig file.
 
-![ovhconfig](images/ftp-explorer-ovhconfig-file.png){.thumbnail}
+![ovhconfig](images/ovhconfig-file.png){.thumbnail}
 
 There are two ways of doing this:
 
@@ -354,7 +354,7 @@ Refer to our guide on [Configuring a multisite on your web hosting plan](/pages/
 > **You cannot specify a second [runtime environment](#runtime-environment), a second [runtime mode](#runtime-mod) and/or a second [PHP runtime environment](#php-runtime)** on the same web hosting plan. Only those entered in the .ovhconfig file located in the **root folder** of your [FTP storage space](/pages/web_cloud/web_hosting/ftp_connection) will be taken into account.
 >
 
-![ovhconfig](images/multisite-root-folders.png){.thumbnail}
+![ovhconfig](images/root-folders.png){.thumbnail}
 
 ## Go further
 

@@ -67,7 +67,7 @@ Haga clic en `Confirmar`{.action} para aceptar su solicitud.
 
 Si la generación de la copia de seguridad se ha iniciado correctamente, aparecerá el siguiente mensaje en el [área de cliente de OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.es/&ovhSubsidiary=es){.external}:
 
-![backupftpcw](images/backup-notification-progress.png){.thumbnail}
+![backupftpcw](images/message-backup-progress.png){.thumbnail}
 
 La generación de la copia de seguridad tarda entre 10 y 15 minutos en realizarse.
 
@@ -76,7 +76,7 @@ La generación de la copia de seguridad tarda entre 10 y 15 minutos en realizars
 Una vez finalizada la generación del backup, recibirá un mensaje de correo electrónico en la dirección asociada al usuario de administrador de su hosting Cloud Web.<br>
 El mensaje de correo electrónico incluye un enlace de descarga **válido durante 9 días** desde la recepción del mensaje de correo electrónico:
 
-![backupftpcw](images/backup-notification-email.png){.thumbnail}
+![backupftpcw](images/backup-information.png){.thumbnail}
 
 El archivo así descargado está en formato *.tar.gz*.
 

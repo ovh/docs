@@ -67,7 +67,7 @@ Klicken Sie auf `Bestätigen`{.action}, um Ihre Anfrage zu bestätigen.
 
 Wenn die Erstellung des Backups erfolgreich gestartet wurde, erscheint in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) folgende Nachricht:
 
-![backupftpcw](images/backup-notification-progress.png){.thumbnail}
+![backupftpcw](images/message-backup-progress.png){.thumbnail}
 
 Die Erstellung des Backups dauert zwischen 10 und 15 Minuten.
 
@@ -76,7 +76,7 @@ Die Erstellung des Backups dauert zwischen 10 und 15 Minuten.
 Wenn das Backup bereit ist, erhalten Sie eine E-Mail an die E-Mail-Adresse, die der Administrator-Kundenkennung Ihres Cloud Web Hostings zugewiesen ist.<br>
 Diese E-Mail enthält einen Download-Link, der **9 Tage** ab Eingang der E-Mail gültig ist:
 
-![backupftpcw](images/backup-notification-email.png){.thumbnail}
+![backupftpcw](images/backup-information.png){.thumbnail}
 
 Die heruntergeladene Datei ist im Format *.tar.gz*.
 

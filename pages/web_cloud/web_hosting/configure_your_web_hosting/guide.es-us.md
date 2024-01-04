@@ -233,13 +233,13 @@ Para ello, conéctese a su [área de cliente de OVHcloud](https://ca.ovh.com/aut
 
 Para conocer la contraseña del usuario FTP, consulte las instrucciones de la guía "[Cambiar la contraseña de un usuario FTP](/pages/web_cloud/web_hosting/ftp_change_password)".
 
-![ovhconfig](images/tab-ftp-ssh-webhosting.png){.thumbnail}
+![ovhconfig](images/tab-ftp-ssh.png){.thumbnail}
 
 #### 3.2 - Obtener o crear el archivo ".ovhconfig"
 
 Una vez conectado a su [espacio de almacenamiento FTP](/pages/web_cloud/web_hosting/ftp_connection), podrá ver todos los archivos alojados actualmente en este último. En la raíz del alojamiento (representada por el símbolo de barra: "/"). Encontrará el archivo ".ovhconfig".
 
-![ovhconfig](images/ftp-explorer-ovhconfig-file.png){.thumbnail}
+![ovhconfig](images/ovhconfig-file.png){.thumbnail}
 
 Existen dos posibilidades:
 
@@ -358,7 +358,7 @@ Si lo necesita, consulte nuestra guía "[Configurar un multisitio en un alojamie
 > **No es posible especificar un segundo [entorno de ejecución](#runtime-environment), un segundo [modo de ejecución](#runtime-mod) ni un segundo [motor de ejecución PHP](#php-runtime)** en un mismo alojamiento web. Solo se tendrán en cuenta los datos introducidos en el archivo ".ovhconfig" que se encuentra en la raíz de su [espacio de almacenamiento FTP](/pages/web_cloud/web_hosting/ftp_connection).
 >
 
-![ovhconfig](images/multisite-root-folders.png){.thumbnail}
+![ovhconfig](images/root-folders.png){.thumbnail}
 
 ## Más información
 

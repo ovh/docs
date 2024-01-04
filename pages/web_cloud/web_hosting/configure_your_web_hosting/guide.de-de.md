@@ -233,13 +233,13 @@ Loggen Sie sich hierzu in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth
 
 Bezüglich des Passworts des FTP-Benutzers folgen Sie bei Bedarf den Anweisungen in unserer Dokumentation [„Passwort eines FTP-Benutzers ändern“](/pages/web_cloud/web_hosting/ftp_change_password).
 
-![ovhconfig](images/tab-ftp-ssh-webhosting.png){.thumbnail}
+![ovhconfig](images/tab-ftp-ssh.png){.thumbnail}
 
 #### 3.2 - Datei “.ovhconfig“ abrufen oder erstellen
 
 Wenn Sie sich in Ihrem [FTP-Speicherplatz](/pages/web_cloud/web_hosting/ftp_connection) eingeloggt haben, sehen Sie alle Dateien, die derzeit auf diesem gespeichert sind. Bleiben Sie auf dem Wurzelverzeichnis Ihres Hostings (das mit „/“ angegeben werden kann). Dort finden Sie die Datei “.ovhconfig“.
 
-![ovhconfig](images/ftp-explorer-ovhconfig-file.png){.thumbnail}
+![ovhconfig](images/ovhconfig-file.png){.thumbnail}
 
 Es gibt daher zwei Möglichkeiten:
 
@@ -358,7 +358,7 @@ Lesen Sie bei Bedarf unsere Anleitung „[Multisites auf Ihrem Webhosting konfig
 > **Es ist nicht möglich, eine zweite [Laufzeitumgebung](#runtime-environment), einen zweiten [Entwicklungsmodus](#runtime-mod) und/oder eine zweite [PHP-Engine](#php-runtime)** auf demselben Webhosting einzurichten. Es werden nur die Werte berücksichtigt, die in der Datei “.ovhconfig“ im Wurzelverzeichnis Ihres [FTP-Speicherplatzes](/pages/web_cloud/web_hosting/ftp_connection) angegeben sind.
 >
 
-![ovhconfig](images/multisite-root-folders.png){.thumbnail}
+![ovhconfig](images/root-folders.png){.thumbnail}
 
 ## Weiterführende Informationen
 

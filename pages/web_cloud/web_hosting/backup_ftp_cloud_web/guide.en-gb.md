@@ -62,7 +62,7 @@ Click `Confirm`{.action} to confirm your request.
 
 If you have successfully generated the backup, the following message will appear in your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.co.uk/&ovhSubsidiary=GB):
 
-![backupftpcw](images/backup-notification-progress.png){.thumbnail}
+![backupftpcw](images/message-backup-progress.png){.thumbnail}
 
 The backup takes between 10 and 15 minutes to be generated.
 
@@ -71,7 +71,7 @@ The backup takes between 10 and 15 minutes to be generated.
 When the backup is ready, you will receive an email via the email address associated with the admin NIC handle for your Cloud Web hosting plan.<br>
 This email contains a download link **valid for 9 days** from receipt of the email:
 
-![backupftpcw](images/backup-notification-email.png){.thumbnail}
+![backupftpcw](images/backup-information.png){.thumbnail}
 
 The downloaded file is in the format *.tar.gz*.
 

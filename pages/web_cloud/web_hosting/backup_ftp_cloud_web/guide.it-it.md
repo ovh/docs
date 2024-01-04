@@ -67,7 +67,7 @@ Clicca su `Conferma`{.action} per confermare la tua richiesta.
 
 Se la generazione del backup è stata avviata correttamente, visualizzi questo messaggio nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}:
 
-![backupftpcw](images/backup-notification-progress.png){.thumbnail}
+![backupftpcw](images/message-backup-progress.png){.thumbnail}
 
 La generazione del backup richiede tra i 10 e i 15 minuti.
 
@@ -76,7 +76,7 @@ La generazione del backup richiede tra i 10 e i 15 minuti.
 Una volta completata la generazione del backup, ricevi un'email all'indirizzo email associato all'identificativo amministratore del tuo hosting Cloud Web.<br>
 Questa email contiene un link di download **valido 9 giorni** a partire dalla ricezione dell'email:
 
-![backupftpcw](images/backup-notification-email.png){.thumbnail}
+![backupftpcw](images/backup-information.png){.thumbnail}
 
 Il file caricato è in formato *.tar.gz*.
 

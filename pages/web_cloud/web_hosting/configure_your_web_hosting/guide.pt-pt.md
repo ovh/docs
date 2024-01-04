@@ -233,13 +233,13 @@ Para isso, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action
 
 Se for caso disso, consulte as instruções descritas na nossa documentação ["Alterar a palavra-passe de um utilizador FTP"](/pages/web_cloud/web_hosting/ftp_change_password) para obter uma palavra-passe para o utilizador FTP.
 
-![ovhconfig](images/tab-ftp-ssh-webhosting.png){.thumbnail}
+![ovhconfig](images/tab-ftp-ssh.png){.thumbnail}
 
 #### 3.2 - Recuperar ou criar o ficheiro ".ovhconfig"
 
 Quando estiver conectado ao [espaço de armazenamento FTP](/pages/web_cloud/web_hosting/ftp_connection), visualizará o conjunto dos ficheiros alojados atualmente no seu espaço de armazenamento FTP. Fique posicionado na raiz do seu alojamento (que pode ser simbolizado por um "/"). Deverá encontrar o ficheiro ".ovhconfig".
 
-![ovhconfig](images/ftp-explorer-ovhconfig-file.png){.thumbnail}
+![ovhconfig](images/ovhconfig-file.png){.thumbnail}
 
 A partir daí, existem duas possibilidades:
 
@@ -358,7 +358,7 @@ Consulte o guia "[Configurar um multisite no alojamento web](/pages/web_cloud/we
 > **Não é possível especificar um segundo [ambiente de execução](#runtime-environment), um segundo [modo de execução](#runtime-mod) e/ou um segundo [motor de execução PHP](#php-runtime)** num mesmo alojamento web. Apenas serão tidos em conta os que constam do ficheiro ".ovhconfig" que está na raiz do seu [espaço de armazenamento FTP](/pages/web_cloud/web_hosting/ftp_connection).
 >
 
-![ovhconfig](images/multisite-root-folders.png){.thumbnail}
+![ovhconfig](images/root-folders.png){.thumbnail}
 
 ## Quer saber mais?
 

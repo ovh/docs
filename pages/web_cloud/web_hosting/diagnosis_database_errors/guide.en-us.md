@@ -93,7 +93,7 @@ In your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&fro
 
 You have received an email notification stating that the amount of data on your database exceeds the authorised limit. Your database has therefore been switched to read-only mode. This will prevent your website from being modified.
 
-![database-overquota-notification-email](images/database-overquota-notification-email.png){.thumbnail}
+![database-overquota-notification-email](images/overquota-db.png){.thumbnail}
 
 There are three ways you can unblock your database in this situation.
 
@@ -151,7 +151,7 @@ To optimise your database, follow the instructions in our guide "[Configuring yo
 
 The following message in the `Databases`{.action} section of your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) indicates that your [Web Cloud Databases](https://www.ovh.co.uk/cloud/cloud-databases/) server has consumed too much resources on the OVHcloud infrastructure:
 
-![wcdb-ram-exceeded](images/wcdb-ram-exceeded.png){.thumbnail}
+![ram-exceeded](images/ram-exceeded.png){.thumbnail}
 
 In this situation, you can increase the [amount of RAM](/pages/web_cloud/web_cloud_databases/configure-database-server#modifying-the-database-server-solution) available from the `Databases`{.action} section of your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we). In the `General information`{.action} tab, click on the `...`{.action} in the `RAM` section.
 
@@ -185,7 +185,7 @@ First make sure that your database is empty from the `Databases`{.action} tab of
 
 You can also tick the `Empty the current database`{.action} box just before [launching the import](/pages/web_cloud/web_hosting/sql_importing_mysql_database#import-your-own-backup-via-your-control-panel):
 
-![database-import-empty-current-db](images/database-import-empty-current-db.png){.thumbnail}
+![import-empty-current-db](images/import-empty-current-db.png){.thumbnail}
 
 If necessary, contact our [user community](https://community.ovh.com/en/) or [OVHcloud partners](https://partner.ovhcloud.com/en/directory/) for more information. We will not be able to assist you in correcting this issue.
 

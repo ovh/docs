@@ -98,7 +98,7 @@ En el área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&
 
 Nuestros servicios le han enviado por correo electrónico un mensaje indicándole que la cantidad de datos en la base de datos supera el límite autorizado. La base de datos ha pasado a ser de solo lectura. Esto impide realizar cambios en el sitio web.
 
-![database-overquota-notification-email](images/database-overquota-notification-email.png){.thumbnail}
+![database-overquota-notification-email](images/overquota-db.png){.thumbnail}
 
 Desbloquee la base de datos de tres formas distintas:
 
@@ -156,7 +156,7 @@ Para optimizar su base de datos, siga las instrucciones de nuestra guía "[Confi
 
 El siguiente mensaje, situado en la sección `Bases de datos`{.action} de su [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws), indica que su servidor [Web Cloud Databases](https://www.ovh.es/cloud/cloud-databases/) ha consumido una cantidad de recursos demasiado grande en la infraestructura de OVHcloud:
 
-![wcdb-ram-exceeded](images/wcdb-ram-exceeded.png){.thumbnail}
+![ram-exceeded](images/ram-exceeded.png){.thumbnail}
 
 En ese caso, puede aumentar la [cantidad de memoria RAM](/pages/web_cloud/web_cloud_databases/configure-database-server#cambiar-la-oferta-del-servidor-de-bases-de-datos) disponible desde la sección `Bases de datos`{.action} de su [área de cliente OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws). En la pestaña `Información general`{.action}, haga clic en el botón `...`{.action} en la sección `RAM`.
 
@@ -192,7 +192,7 @@ En caso contrario, [guarde los datos presentes](/pages/web_cloud/web_hosting/sql
 
 También puede marcar la casilla `Vaciar la base de datos actual`{.action} justo antes de [iniciar la importación](/pages/web_cloud/web_hosting/sql_importing_mysql_database#importar-una-copia-de-seguridad-desde-el-area-de-cliente):
 
-![database-import-empty-current-db](images/database-import-empty-current-db.png){.thumbnail}
+![import-empty-current-db](images/import-empty-current-db.png){.thumbnail}
 
 Este mensaje de error significa que la base de datos que está intentando importar contiene elementos no autorizados en la infraestructura compartida de OVHcloud. Si lo necesita, puede ponerse en contacto con nuestra [comunidad de usuarios](https://community.ovh.com/en/) o con un [proveedor especializado](https://partner.ovhcloud.com/es/directory/). No podremos asistirle en la corrección de esta anomalía.
 

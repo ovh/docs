@@ -95,7 +95,7 @@ Nello Spazio Cliente OVHcloud (https://www.ovh.com/auth/?action=gotomanager&from
 
 Hai ricevuto un'email dai nostri servizi che indica che la quantità di dati sul tuo database supera il limite autorizzato. Il tuo database è quindi passato in sola lettura. In questo modo il sito non può essere modificato.
 
-![database-overquota-notification-email](images/database-overquota-notification-email.png){.thumbnail}
+![database-overquota-notification-email](images/overquota-db.png){.thumbnail}
 
 Tre metodi ti permettono di sbloccare il tuo database:
 
@@ -152,7 +152,7 @@ Superamento della capacità della RAM
 
 Nella sezione `Database`{.action} del tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it) è riportato che il tuo server [Web Cloud Databases](https://www.ovh.it/cloud/cloud-databases/) ha consumato troppe risorse sull'infrastruttura OVHcloud:
 
-![wcdb-ram-exceeded](images/wcdb-ram-exceeded.png){.thumbnail}
+![ram-exceeded](images/ram-exceeded.png){.thumbnail}
 
 In questa situazione è possibile aumentare la [quantità di memoria RAM](/pages/web_cloud/web_cloud_databases/configure-database-server#monitora-la-ram-consumata) disponibile nella sezione `Database`{.action} del tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it). Nella scheda `Informazioni generali`{.action}, clicca sul pulsante `...`{.action} nella sezione `RAM`.
 
@@ -183,7 +183,7 @@ Per prima cosa, assicurati che il database sia vuoto dalla scheda `Database`{.ac
 
 Seleziona la casella `Svuota il database attuale`{.action} immediatamente prima di [avviare l'importazione](/pages/web_cloud/web_cloud_databases/restore-import-on-database-server):
 
-![database-import-empty-current-db](images/database-import-empty-current-db.png){.thumbnail}
+![import-empty-current-db](images/import-empty-current-db.png){.thumbnail}
 
 Questo messaggio di errore significa che il database che stai cercando di importare contiene elementi non autorizzati sull'infrastruttura condivisa OVHcloud. Contatta, se necessario, la nostra [Community di utenti](https://community.ovh.com/en/) o un [provider specializzato](https://partner.ovhcloud.com/it/directory/). Non saremo in grado di fornirti assistenza sulla correzione di questa anomalia.
 
