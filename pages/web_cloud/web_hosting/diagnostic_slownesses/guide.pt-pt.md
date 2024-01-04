@@ -100,11 +100,11 @@ Para ter a certeza de que os seus serviços (alojamento partilhado **e** base de
 
 Para conhecer o cluster e filer onde se encontra o alojamento partilhado, aceda ao seu [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt), vá à secção `Web Cloud`{.action}, clique em `Alojamentos`{.action} e escolha o alojamento web em causa. No separador `Information gerais`{.action}, localize o `datacenter` do seu alojamento partilhado bem como o `filer` onde está.
 
-![Recuperar Filer](images/DropFilerCluster1.png){.thumbnail}
+![Recuperar Filer](images/find-filer.png){.thumbnail}
 
 A seguir, clique no separador `Multisites`{.action} para obter o número do cluster onde está o seu alojamento partilhado.
 
-![Recuperar o cluster](images/DropFilerCluster2.png){.thumbnail}
+![Recuperar o cluster](images/find-cluster.png){.thumbnail}
 
 > [!success]
 >

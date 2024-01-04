@@ -100,11 +100,11 @@ Aby mieć pewność, że Twoje usługi (hosting współdzielony **i** baza danyc
 
 Aby dowiedzieć się, gdzie znajduje się Twój hosting, zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl), przejdź do sekcji `Web Cloud`{.action}, kliknij przycisk `Hosting`{.action} i wybierz odpowiedni hosting. W zakładce `Informacje ogólne`{.action} znajdziesz `centrum` danych hostingu współdzielonego oraz `filer`, w którym znajduje się ono.
 
-![Pobierz Filer](images/DropFilerCluster1.png){.thumbnail}
+![Pobierz Filer](images/find-filer.png){.thumbnail}
 
 Następnie kliknij zakładkę `MultiSite`{.action}, aby pobrać numer klastra, na którym znajduje się Twój hosting.
 
-![Pobranie klastra](images/DropFilerCluster2.png){.thumbnail}
+![Pobranie klastra](images/find-cluster.png){.thumbnail}
 
 > [!success]
 >
