@@ -31,7 +31,7 @@ Sie können damit Dateien bzw. Ihre Websiten online stellen, indem Sie sich im [
 
 ## Interface Übersicht <a name="interface"></a>
 
-![Hosting](images/1818.png){.thumbnail}
+![Hosting](images/main-interface.png){.thumbnail}
 
 - Die obere Leiste (`Quickconnect`{.action}) ermöglicht die schnelle Verbindung zu Ihrem Hosting, indem Sie den **Hostnamen**, den **Benutzernamen**, das zugehörige **Passwort** und die verwendete **Port-Nummer** eintragen.
 - **Bereich 1**: Details zur Transferhistorie, Verbindung zum FTP Bereich, Dateitransfers, Fehlern etc. Weitere Informationen finden Sie in der offiziellen [FileZilla Dokumentation](https://filezilla-project.org/){.external}.
@@ -45,7 +45,7 @@ Sie können damit Dateien bzw. Ihre Websiten online stellen, indem Sie sich im [
 
 ### FTP-Verbindungen mit FileZilla
 
-![Hosting](images/quickcnt.png){.thumbnail}
+![Hosting](images/quick-connect.png){.thumbnail}
 
 Tragen Sie die nötigen Details in die Schnellverbindungsleiste mithilfe der folgenden Tabelle ein:
 
@@ -58,7 +58,7 @@ Tragen Sie die nötigen Details in die Schnellverbindungsleiste mithilfe der fol
 
 Falls diese Informationen nicht vorliegen, loggen Sie sich in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und klicken Sie dann auf `Hosting-Pakete`{.action}. Wählen Sie das betreffende Hosting aus und gehen Sie dann auf den Tab `FTP - SSH`{.action}. Die Informationen zu Ihrem Speicherplatz werden dort angezeigt.
 
-![Hosting](images/loginFTP-SSH.png){.thumbnail}
+![Hosting](images/tab-pro.png){.thumbnail}
 
 > [!warning]
 >
@@ -67,7 +67,7 @@ Falls diese Informationen nicht vorliegen, loggen Sie sich in Ihrem [OVHcloud Ku
 
 Wenn Sie alle Werte eingetragen haben wie im Bild zu sehen, klicken Sie auf `Quickconnect`{.action}.
 
-![Hosting](images/1819.png){.thumbnail}
+![Hosting](images/quick-connect-successfull.png){.thumbnail}
 
 Wenn die Verbindung erfolgreich hergestellt wurde, werden Sie über den Status im Bereich **2** informiert. So können Sie Ihre Verzeichnisse und Dateien auf Ihrem Hosting einsehen (Bereich **3**).
 
@@ -88,25 +88,25 @@ Gehen Sie in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=goto
 
 Überprüfen Sie anschließend, ob **SFTP** in der Tabelle unten aktiv ist.
 
-![SFTP Start Angebot aktivieren](images/enable_sftp_start.png){.thumbnail}
+![SFTP Start Angebot aktivieren](images/sftp-enabled-pro.png){.thumbnail}
 
 Falls **SFTP** nicht aktiviert ist:
 
 - Klicken Sie auf den Button `...`{.action} rechts neben der Tabelle und dann auf `Bearbeiten`{.action}.
 
-![SFTP 1 Aktivierung](images/enable_sftp_1.png){.thumbnail}
+![SFTP 1 Aktivierung](images/edit-login.png){.thumbnail}
 
 - Überprüfen Sie im neu angezeigten Fenster, ob eine der folgenden Optionen aktiviert ist:
     - **FTP und SFTP**: Um SFTP zusätzlich zu FTP zu aktivieren.
     - **FTP, SFTP und SSH**: Um FTP, SFTP und SSH zu aktivieren.
 
-![SFTP 2 Aktivierung](images/enable_sftp_2.png){.thumbnail}
+![SFTP 2 Aktivierung](images/modify-user-step-1-connexion-protocols.png){.thumbnail}
 
 - Klicken Sie auf `Weiter`{.action} und dann auf `Bestätigen`{.action}.
 
 #### SFTP-Verbindung aufbauen
 
-![Hosting](images/quickcnt.png){.thumbnail}
+![Hosting](images/quick-connect.png){.thumbnail}
 
 Geben Sie in der Verbindungsleiste folgende Werte ein, um die Verbindung zum Remote-Server (Ihrem Hosting) herzustellen:
 
@@ -117,13 +117,13 @@ Geben Sie in der Verbindungsleiste folgende Werte ein, um die Verbindung zum Rem
 
 Nachdem Sie auf den Button `Quickconnect`{.action} geklickt haben, öffnet sich eine Dialogbox (siehe unten stehende Abbildung), um die herzustellende Verbindung mit dem Host zu bestätigen. Wenn Sie sich auf einem OVHcloud Webhosting einloggen, können Sie die Option *Always trust this host, add this key to the cache*, um diese Bestätigung für nachfolgende Verbindungen zu deaktivieren.
 
-![Hosting](images/1834.png){.thumbnail}
+![Hosting](images/unknown-host-key-message.png){.thumbnail}
 
 ### Verbindungsfehler
 
 Die unten abgebildete Nachricht zeigt einen Authentifizierungsfehler bei der Verbindung mit einem Webhosting per FTP oder SFTP an:
 
-![Hosting](images/1820.png){.thumbnail}
+![Hosting](images/authentification-failed-could-not-connect-server.png){.thumbnail}
 
 Diese Nachricht entsteht durch einen Fehler beim eingegebenen Login/Passwort.
 
@@ -134,7 +134,7 @@ Diese Nachricht entsteht durch einen Fehler beim eingegebenen Login/Passwort.
 
 Im folgenden Fall wird der Fehler aufgrund eines falschen Hostnamens generiert:
 
-![Hosting](images/1824.png){.thumbnail}
+![Hosting](images/connection-timed-out-after-20s.png){.thumbnail}
 
 Überprüfen Sie diesen anhand des in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} angezeigten Hostnamens.
 
@@ -158,7 +158,7 @@ Hier finden Sie:
 - Dateien, bei denen der Transfer fehlgeschlagen ist.
 - Dateien, für die der Transfer zum Remote-Server erfolgreich war.
 
-![Hosting](images/1822.png){.thumbnail}
+![Hosting](images/waiting-list-view.png){.thumbnail}
 
 ### Kontextmenü Server
 
@@ -176,7 +176,7 @@ Es erscheint ein Kontextmenü mit mehreren Optionen:
 - **Copy URL(s) to clipboard**: Erlaubt es, den Direktlink zur Datei automatisch zu kopieren. Beispiel einer so generierten URL: `ftp://loginftp@ftp.clusterXXX.hosting.ovh.net/www/VERZEICHNIS/dateiname.jpg`
 - **File permissions...**: Erlaubt es, die Dateiberechtigungen zu bearbeiten (**chmod**).
 
-![Hosting](images/1830.png){.thumbnail}
+![Hosting](images/contextual-menu-server.png){.thumbnail}
 
 ## Nützliche Informationen <a name="useful-information"></a>
 
@@ -201,7 +201,7 @@ Wir empfehlen generell, die *chmod*-Rechte **705** für Ordner und die *chmod*-R
 
 Je höher die Zahl, desto größer die Berechtigungen.
 
-![Hosting](images/1831.png){.thumbnail}
+![Hosting](images/change-file-attributes.png){.thumbnail}
 
 Geben Sie die Berechtigungen ein, die Sie zuweisen möchten. Der *chmod*-Wert wird automatisch geupdatet.
 
@@ -229,7 +229,7 @@ SITE CHMOD 705 /
 > Dieser Befehl ist nicht per SFTP funktionsfähig.
 >
 
-![Hosting](images/1829.png){.thumbnail}
+![Hosting](images/site-chmod-705-command.png){.thumbnail}
 
 Wenn Sie den Fehler `550 would not change perms on /. no such file or directory` erhalten, verwenden Sie folgenden Befehl:
 
@@ -257,11 +257,11 @@ Bei binären Dateien, wie z.B. **CGI**-Dateien, kann es von Interesse sein, wie 
 
 Um den Transfertyp zu ändern, wählen Sie `Transfer`{.action} im Hauptmenü und dann `Transfer type`{.action}.
 
-![Hosting](images/1832.png){.thumbnail}
+![Hosting](images/transfert-binary-files.png){.thumbnail}
 
 ### Ordnervergleich
 
-![Hosting](images/1823.png){.thumbnail}
+![Hosting](images/comparison-tool.png){.thumbnail}
 
 Die Option zum Ordnervergleich von Dateien aktiviert farbkodierte Ansichten in den **Bereichen 4** und **5** (wie im Abschnitt [Interface Übersicht](#interface) dieses Tutorials dargestellt). Mit dieser Option können Sie Unterschiede zwischen lokalen Dateien und Ordnern und denen auf dem Server erkennen. 
 
