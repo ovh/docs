@@ -150,6 +150,7 @@
             + [Installing CUDA on a dedicated GPU server](bare_metal_cloud/dedicated_servers/cuda_installation_on_gpu)
             + [AMD SME/SEV on Ubuntu 20](bare_metal_cloud/dedicated_servers/sme_sev_enable_and_use)
         + [RAID and disks](bare-metal-cloud-dedicated-servers-raid-and-disks)
+            + [Hardware upgrade on a High Grade or Scale dedicated server](bare_metal_cloud/dedicated_servers/hardware-upgrade-HG-Scale)
             + [Configuring software RAID](bare_metal_cloud/dedicated_servers/raid_soft)
             + [Configuring a software mirror (RAID) on Windows](bare_metal_cloud/dedicated_servers/raid_soft-windows)
             + [Managing Hardware RAID](bare_metal_cloud/dedicated_servers/raid_hard)
