@@ -1,7 +1,7 @@
 ---
 title: Enabling and configuring the Edge Network Firewall
 excerpt: Find out how to configure the Edge Network Firewall for your services
-updated: 2023-12-19
+updated: 2024-01-05
 ---
 
 ## Objective
@@ -105,10 +105,14 @@ For each **TCP** rule, you must choose:
 | &bull; A priority (from 0 to 19, 0 being the first rule to be applied, followed by the others) <br>&bull; An action (`Accept`{.action} or `Deny`{.action}) <br>&bull; The protocol <br>&bull; Source IP (optional) <br>&bull; The source port (optional) <br>&bull; The destination port (optional) <br>&bull; The TCP state (optional) <br>&bull; Fragments (optional)|
 
 > [!primary]
+> We advise authorising TCP protocol with an established option (for packets that are part of a previously opened/started session), ICMP packets (for ping and traceroute) and optionally UDP DNS responses from external servers (if you use external DNS servers).
 >
-> - Priority 0: We advise authorising TCP protocol on all the IPs with an `established`{.action} option. With this option, you can verify that the packet is part of a session that has previously been opened (already started). If you do not authorise it, the server will not receive the TCP protocol feedback from the SYN/ACK requests.
-> - Priority 19: We advise to refuse all IPv4 protocol traffic that has not been accepted by any previous rule.
-> 
+> **Configuration example:**
+>
+> - Priority 0: Authorise TCP established
+> - Priority 1: Authorise UDP source port 53
+> - Priority 2: Authorise ICMP
+> - Priority 19: Refuse IPv4
 
 > [!warning]
 > Firewall setups with only "Accept" mode rules are not effective at all. There must be an instruction as to which traffic should be dropped by the firewall. You will see a warning unless such a "Deny" rule is created.
@@ -134,7 +138,7 @@ Note that rules are disabled until the moment an attack is detected - then they 
 
 ### Configuration example
 
-To make sure that only the standard ports for SSH (22), HTTP (80), HTTPS (443) and UDP (10,000) are left open when authorising the ICMP, follow the rules below:
+To make sure that only the standard ports for SSH (22), HTTP (80), HTTPS (443) and UDP (53) are left open when authorising the ICMP, follow the rules below:
 
 ![Configuration example](images/exemple.png){.thumbnail}
 

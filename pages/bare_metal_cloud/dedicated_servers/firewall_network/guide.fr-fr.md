@@ -1,7 +1,7 @@
 ---
 title: 'Activer et configurer le Edge Network Firewall'
 excerpt: 'Découvrez comment configurer le Edge Network Firewall pour vos services'
-updated: 2023-12-19
+updated: 2024-01-05
 ---
 
 ## Objectif
@@ -102,10 +102,14 @@ Pour chaque règle **TCP**, vous devez choisir :
 | &bull; Une priority (de 0 à 19, 0 étant la première règle à appliquer, suivie des autres) <br>&bull; Une action (`Accepter`{.action} ou `Refuser`{.action}) <br>&bull; Le protocole <br>&bull; L'adresse IP source (facultatif) <br>&bull; Le port source (facultatif) <br>&bull; Le port de destination (facultatif) <br>&bull; L'état TCP (facultatif) <br>&bull; Fragments (facultatif)|
 
 > [!primary]
+> Nous vous conseillons d'autoriser le protocole TCP avec une option `established` (pour les paquets qui font partie d'une session précédemment ouverte/démarrée), les paquets ICMP (pour le ping et traceroute) et éventuellement les réponses DNS UDP des serveurs externes (si vous utilisez des serveurs DNS externes).
 >
-> - Priorité 0 : nous vous conseillons d'autoriser le protocole TCP sur toutes les IP avec une option `established`. L'option `established` permet de vérifier que le paquet fait partie d'une session précédemment ouverte (déjà démarrée). Si vous ne l'autorisez pas, le serveur ne recevra pas les retours du protocole TCP des requêtes SYN/ACK.
-> - Priorité 19 : nous vous conseillons de refuser tout trafic du protocole IPv4 qui n'aurait été accepté par aucune règle antérieure.
-> 
+> **Exemple de configuration :**
+>
+> - Priorité 0 : Autoriser TCP `established`
+> - Priorité 1 : Autoriser UDP, port source 53
+> - Priorité 2 : Autoriser ICMP
+> - Priorité 19 : Refuser l'IPv4
 
 > [!warning]
 > Les configurations de pare-feu avec seulement des règles de mode « Accept » ne sont pas du tout efficaces. Une instruction doit indiquer ce qui doit être supprimé par le pare-feu. Vous recevrez un avertissement à moins qu'une règle « Refuser » ne soit créée.
@@ -131,7 +135,7 @@ Notez que les règles sont désactivées jusqu'au moment où une attaque est dé
 
 ### Exemple de configuration
 
-Pour vous assurer que seuls les ports SSH (22), HTTP (80), HTTPS (443) et UDP (10 000) restent ouverts lors de l'autorisation de l'ICMP, suivez les règles ci-dessous :
+Pour vous assurer que seuls les ports SSH (22), HTTP (80), HTTPS (443) et UDP (53) restent ouverts lors de l'autorisation de l'ICMP, suivez les règles ci-dessous :
 
 ![Exemple de configuration](images/exemple.png){.thumbnail}
 

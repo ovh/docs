@@ -1,7 +1,7 @@
 ---
 title: 'Activación y configuración del Edge Network Firewall'
 excerpt: 'Descubra cómo configurar el Edge Network Firewall para sus servicios'
-updated: 2023-12-19
+updated: 2024-01-05
 ---
 
 > [!primary]
@@ -114,10 +114,14 @@ Para cada regla **TCP**, debe elegir:
 | &bull; Una prioridad (de 0 a 19, siendo 0 la primera regla que se aplica, seguida de las demás) <br>&bull; Una acción (`Aceptar`{.action} o `Denegar`{.action}) <br>&bull; El protocolo <br>&bull; IP de origen (opcional) <br>&bull; El puerto de origen (opcional) <br>&bull; El puerto de destino (opcional) <br>&bull; El estado TCP (opcional) <br>&bull; Fragmentos (opcional)|
 
 > [!primary]
+> Le recomendamos que autorice el protocolo TCP con una opción `established` (para los paquetes que forman parte de una sesión previamente abierta/iniciada), los paquetes ICMP (para ping y traceroute) y, opcionalmente, las respuestas DNS UDP de los servidores externos (si utiliza servidores DNS externos).
 >
-> - Prioridad 0: Aconsejamos autorizar el protocolo TCP en todas las IP con la opción `establecida`{.action}. Con esta opción, puede comprobar que el paquete forma parte de una sesión que se ha abierto previamente (que ya se ha iniciado). Si no lo autoriza, el servidor no recibirá los comentarios del protocolo TCP de las solicitudes SYN/ACK.
-> - Prioridad 19: Le recomendamos que rechace todo el tráfico del protocolo IPv4 que no haya sido aceptado por ninguna regla anterior.
+> **Ejemplo de configuración:**
 >
+> - Prioridad 0: Autorizar TCP `established`
+> - Prioridad 1: Autorizar UDP, puerto de origen 53
+> - Prioridad 2: Autorizar ICMP
+> - Prioridad 19: Denegar la IPv4
 
 > [!warning]
 > Las configuraciones de firewall con reglas de modo "Aceptar" únicamente no son efectivas en absoluto. Debe haber una instrucción acerca del tráfico que debe interrumpir el firewall. Verá una advertencia a menos que se cree la regla "Denegar".
@@ -143,7 +147,7 @@ Tenga en cuenta que las reglas se desactivan hasta que se detecta un ataque y, a
 
 ### Ejemplo de configuración
 
-Para asegurarse de que sólo se dejan abiertos los puertos estándar para SSH (22), HTTP (80), HTTPS (443) y UDP (10.000) al autorizar ICMP, siga las reglas siguientes:
+Para asegurarse de que sólo se dejan abiertos los puertos estándar para SSH (22), HTTP (80), HTTPS (443) y UDP (53) al autorizar ICMP, siga las reglas siguientes:
 
 ![Ejemplo de configuración](images/exemple.png){.thumbnail}
 
