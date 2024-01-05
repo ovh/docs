@@ -54,7 +54,7 @@ Bei dieser Lösung kommen die OVHcloud 1-Klick-Module zum Einsatz, die eine einf
 
 Damit die Installation des OVHcloud Moduls erfolgreich ist, vergewissern Sie sich zunächst, dass das Verzeichnis, in dem das Modul installiert wird, vollständig leer ist (wenn Sie sich vorher noch nie mit Ihrem Storage verbunden haben, sollte das der Fall sein). Um die Installation des 1-Klick-Moduls durchzuführen, loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und wählen Sie im Bereich `Web Cloud`{.action} unter `Hosting-Pakete`{.action} das betreffende Hosting aus. Gehen Sie dann auf den Tab `1 Klick Module`{.action} und klicken Sie auf den Button `Ein Modul hinzufügen`{.action}.
 
-![Zugriff auf die 1-Klick-Module](images/access-to-the-1-click-modules-section.png){.thumbnail}
+![Zugriff auf die 1-Klick-Module](images/tab.png){.thumbnail}
 
 Um die Installation des 1-Klick-Moduls zu starten, wählen Sie Ihr bevorzugtes CMS aus. Achten Sie darauf, dass im Feld `Installation im Experten-Modus`{.action} kein Haken gesetzt ist und klicken Sie anschließend auf `Installieren`{.action}.
 
@@ -77,7 +77,7 @@ Im Tab `Datenbanken`{.action} sind zwei Szenarien möglich:
 
 - **Auf Ihrem Webhosting ist mindestens eine Datenbank zur Erstellung verfügbar**: Klicken Sie auf den Button `Aktionen`{.action} über der Tabelle und dann auf den Button `Datenbank erstellen`{.action}.
 
-![1-Klick-Zugriff auf Module](images/create-a-database-2.png){.thumbnail}
+![1-Klick-Zugriff auf Module](images/create-a-database.png){.thumbnail}
 
 - **Auf Ihrem Webhosting sind keine Datenbanken zur Erstellung verfügbar**: Klicken Sie auf den Button `Aktionen`{.action} über der Tabelle. Sie haben zwei Optionen:
     - Eine [Start SQL](https://www.ovhcloud.com/de/web-hosting/options/start-sql/) Datenbank bestellen. Klicken Sie hierzu auf den Button `Aktionen`{.action} über der Tabelle und dann auf den Button `Eine Datenbank bestellen`{.action}.
@@ -85,7 +85,7 @@ Im Tab `Datenbanken`{.action} sind zwei Szenarien möglich:
 
 Nachdem die Datenbank angelegt wurde, gehen Sie zur Installation des 1-Klick-Moduls in den Tab `1-Klick-Module`{.action} und klicken Sie anschließend auf den Button `Ein Modul hinzufügen`{.action}. Wählen Sie Ihr bevorzugtes CMS zur Installation aus, aktivieren Sie die Option `Installation im Experten-Modus`{.action}, und klicken Sie dann auf `Weiter`{.action}.
 
-![Zugriff auf die 1-Klick-Module](images/access-to-the-1-click-modules-section.png){.thumbnail}
+![Zugriff auf die 1-Klick-Module](images/tab.png){.thumbnail}
 
 Geben Sie die erforderlichen Informationen ein, um die Installation des Moduls zu starten. Wenn Sie die E-Mail erhalten haben, mit der die Installation bestätigt wird, können Sie die nachfolgenden Schritte vornehmen.
 
@@ -128,13 +128,13 @@ Es gibt mehrere zu OVHcloud gehörige DNS-Einträge. Wir interessieren uns an di
 
 Um den A-Eintrag zu überprüfen, den Sie für die DNS-Zone Ihrer Domain benötigen, loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und wählen Sie im Bereich `Web Cloud`{.action} unter `Hosting-Pakete`{.action} das betreffende Hosting aus. Suchen Sie dann im Tab `Allgemeine Informationen`{.action} die IP-Adresse, die neben „IPv4“ steht.
 
-![A-Eintrag bearbeiten](images/know-the-ovh-a-records.png){.thumbnail}
+![A-Eintrag bearbeiten](images/find-ipv4.png){.thumbnail}
 
 - **MX-Einträge für E-Mails**
 
 Um die MX-Einträge zu überprüfen, die Sie für die Zone Ihrer Domain benötigen, loggen Sie sich in Ihr [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} ein und wählen Sie im Bereich `Web Cloud`{.action} unter `Hosting-Pakete`{.action} das betreffende Hosting aus. Suchen Sie im Tab `Allgemeine Informationen`{.action} die Informationen, die neben dem Punkt „MX Einträge“ stehen. Diese können sich je nach Dienstleistung unterscheiden, je nachdem, welchen DNS-Filter Sie angewendet haben.
 
-![MX-Einträge bearbeiten](images/know-the-ovh-mx-records.png){.thumbnail}
+![MX-Einträge bearbeiten](images/find-mx-records.png){.thumbnail}
 
 #### DNS-Einträge überprüfen oder bearbeiten
 

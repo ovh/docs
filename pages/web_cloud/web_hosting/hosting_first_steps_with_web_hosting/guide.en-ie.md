@@ -50,7 +50,7 @@ This solution uses OVHcloud 1-click modules, a tool you can use to install a CMS
 
 To ensure that the OVHcloud module's installation is successful, please ensure that its installation directory is empty (which should be the case if you have not connected to your storage space). To install a 1-click module, please log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}. Go to the `Hosting plans`{.action} section, then click on the domain name corresponding to the Web Hosting plan you have just ordered. In the `1-click modules`{.action} tab, click the `Add a module`{.action} button.
 
-![Access to 1-click modules](images/access-to-the-1-click-modules-section.png){.thumbnail}
+![Access to 1-click modules](images/tab.png){.thumbnail}
 
 Finally, to begin installing the 1-click module, select the CMS you want to install, select the domain you would like to set up your website on, check that the `Install in advanced mode`{.action} box is not ticked, and click the `Install`{.action} button.
 
@@ -73,7 +73,7 @@ In the `Databases`{.action} tab, there are two possible scenarios:
 
 - **You have at least one database available to create on your web hosting plan**: Click on the `Actions`{.action} button above the table, then on the `Create a database`{.action} button.
 
-![Access to 1-click modules](images/create-a-database-2.png){.thumbnail}
+![Access to 1-click modules](images/create-a-database.png){.thumbnail}
 
 - **You no longer have any databases available to create on your web hosting plan**: Click on the `Actions`{.action} button above the table. You can choose to:
     - Order a [Start SQL](https://www.ovhcloud.com/en-ie/web-hosting/options/start-sql/) database in addition to the databases included with your web hosting plan. To do this, click the `Actions`{.action} button above the table, then the `Order a database`{.action} button.
@@ -81,7 +81,7 @@ In the `Databases`{.action} tab, there are two possible scenarios:
 
 Once you have created a database, to install a 1-click module, go to the `1-click modules`{.action} tab and click `Add a module`{.action}. Select the CMS you want to install, tick the option `Install in advanced mode`{.action}, then click `Next`{.action}.
 
-![Access to 1-click modules](images/access-to-the-1-click-modules-section.png){.thumbnail}
+![Access to 1-click modules](images/tab.png){.thumbnail}
 
 Enter the information requested to launch the module installation. Once you have done this, please wait a few minutes until you receive an email confirming that the installation has been successful. You can then follow the remaining steps below.
 
@@ -124,13 +124,13 @@ There are several OVHcloud DNS records. We will focus on two particular records 
 
 To check the A record that you need to use in your domain’s DNS zone, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}. Go to the `Hosting plans`{.action} section, then click on the domain name corresponding to the Web Hosting plan you have just ordered. In the `General information`{.action} tab, copy the IP address that appears next to "IPv4".
 
-![Edit the A record](images/know-the-ovh-a-records.png){.thumbnail}
+![Edit the A record](images/find-ipv4.png){.thumbnail}
 
 - **The MX records, for emails**
 
 To check the MX records that you need to use in your domain’s DNS zone, log in to your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie){.external}. Go to the `Emails`{.action} section, then click on the domain name corresponding to the Web Hosting plan you have just ordered. In the `General information`{.action} tab, copy the information that appears next to “MX records”. The MX records can differ from one service to another, depending on the DNS filter that you have decided to apply.
 
-![Edit the MX records](images/know-the-ovh-mx-records.png){.thumbnail}
+![Edit the MX records](images/find-mx-records.png){.thumbnail}
 
 #### Check and/or modify the DNS records
 

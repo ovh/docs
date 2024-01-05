@@ -52,7 +52,7 @@ Os módulos 1 clique da OVHcloud permitem instalar um CMS de forma simples e rá
 
 Antes continuar, certifique-se que a pasta de instalação está vazia e que o sistema pode criar uma nova base de dados. Na primeira utilização do alojamento, esta verificação não é necessária. Aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external} para instalar o módulo CMS. Clique em `Alojamentos`{.action} e, de seguida, no nome do alojamento web que contratou. Depois, nos `Módulos 1 clique`{.action}, clique no botão `Adicionar um módulo`{.action}.
 
-![Acesso aos módulos 1 clique](images/access-to-the-1-click-modules-section.png){.thumbnail}
+![Acesso aos módulos 1 clique](images/tab.png){.thumbnail}
 
 Para iniciar a instalação, selecione o CMS pretendido. Certifique-se que a `Instalação em modo avançado`{.action} não está selecionada. Agora clique no botão `Instalar`{.action}.
 
@@ -75,7 +75,7 @@ No separador `Bases de dados`{.action}, são possíveis dois cenários:
 
 - **Tem, pelo menos, uma base de dados disponível "criação" no seu alojamento web**: clique no botão `Ações`{.action} na parte superior da tabela e, a seguir, no botão `Criar uma base de dados`{.action}.
 
-![Acesso aos módulos em 1 clique](images/create-a-database-2.png){.thumbnail}
+![Acesso aos módulos em 1 clique](images/create-a-database.png){.thumbnail}
 
 - **Não dispõe de bases de dados disponíveis "criação" no seu alojamento web** : clique no botão `Ações`{.action} no topo da tabela que é apresentada. Poderá (à escolha):
     - Encomendar uma base de dados [Start SQL](https://www.ovhcloud.com/pt/web-hosting/options/start-sql/) em complemento das suas bases de dados incluídas na sua oferta de alojamento web. Para isso, clique no botão `Ações`{.action} na parte superior da tabela e, a seguir, no botão `Encomendar uma base de dados`{.action}.
@@ -83,7 +83,7 @@ No separador `Bases de dados`{.action}, são possíveis dois cenários:
 
 Depois de criar a base de dados, selecione `Módulos 1 clique`{.action}, e clique no botão `Adicionar um módulo`{.action}. Selecione o CMS, certifique-se que a ` instalação em modo avançado`{.action} está selecionada. Clique no botão `Seguinte`{.action}:
 
-![Acesso aos módulos 1 clique](images/access-to-the-1-click-modules-section.png){.thumbnail}
+![Acesso aos módulos 1 clique](images/tab.png){.thumbnail}
 
 Siga as instruções e aguarde a conclusão da instalação. No final, irá receber o e-mail de confirmação da instalação, com os dados de acesso ao CMS.
 
@@ -126,13 +126,13 @@ Existem dois registos DNS (campos A e MX) que permitem aceder ao seu site e rece
 
 Para consultar o campo A, e os dados que deve usar na zona DNS, aceda à [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Selecione `Alojamentos`{.action}, e clique no alojamento contratado. De seguida, em `Informações gerais`{.action}, tome nota do endereço IP indicado para «IPv4».
 
-![Alterar o campo A](images/know-the-ovh-a-records.png){.thumbnail}
+![Alterar o campo A](images/find-ipv4.png){.thumbnail}
 
 - **Campos MX (receção de e-mail)**
 
 Para consultar os campos MX, e os dados que deve usar na zona DNS, aceda à [Área de Cliente](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}. Selecione `E-mails`{.action} e clique no alojamento web contratado. De seguida, clique em `Informações gerais`{.action}, e tome nota das informações indicadas para os «Campos MX». Estes campos podem diferir entre serviços, em função da filtragem DNS selecionada na área de gestão do alojamento.
 
-![Alterar os campos MX](images/know-the-ovh-mx-records.png){.thumbnail}
+![Alterar os campos MX](images/find-mx-records.png){.thumbnail}
 
 #### Verificar e/ou alterar os registos DNS
 

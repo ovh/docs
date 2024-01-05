@@ -54,7 +54,7 @@ Esta solución utiliza los módulos en un clic de OVHcloud, una herramienta que 
 
 Para poder instalar el módulo de OVHcloud, debe asegurarse de que el directorio de instalación del módulo esté vacío (si todavía no se ha conectado a su espacio de almacenamiento, estará vacío). Para instalar el módulo en un clic, acceda al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}. En la sección `Alojamientos`{.action}, haga clic en el nombre de su alojamiento web. A continuación, abra la pestaña `Módulos en un clic`{.action} y haga clic en el botón `Añadir un módulo`{.action}.
 
-![Acceso a los módulos en un clic](images/access-to-the-1-click-modules-section.png){.thumbnail} 
+![Acceso a los módulos en un clic](images/tab.png){.thumbnail} 
 
 Por último, para instalar el módulo en un clic, seleccione el CMS que quiera instalar, asegúrese de que la casilla **Instalación en modo avanzado** no esté marcada y haga clic en el botón `Instalar`{.action}.
 
@@ -77,7 +77,7 @@ En la pestaña `Bases de datos`{.action}, existen dos situaciones posibles:
 
 - **Tiene al menos una base de datos disponible en "creación" en su alojamiento web** : haga clic en el botón `Acciones`{.action} sobre la tabla que se muestra y luego en el botón `Crear una base de datos`{.action}.
 
-![Acceso a los módulos en un clic](images/create-a-database-2.png){.thumbnail}
+![Acceso a los módulos en un clic](images/create-a-database.png){.thumbnail}
 
 - **No tiene más bases de datos disponibles en "creación" en su alojamiento web** : haga clic en el botón `Acciones`{.action} situado sobre la tabla que se muestra. Podrá (a elegir):
     - Contratar una base de datos [Start SQL](https://www.ovhcloud.com/es/web-hosting/options/start-sql/) como complemento de las bases de datos incluidas con el plan de hosting. Para ello, haga clic en el botón `Acciones`{.action} situado sobre la tabla y seleccione el botón `Contratar una base de datos`{.action}.
@@ -85,7 +85,7 @@ En la pestaña `Bases de datos`{.action}, existen dos situaciones posibles:
 
 Para instalar el módulo en un clic, una vez creada la base de datos abra la pestaña `Módulos en un clic`{.action} y haga clic en el botón `Añadir un módulo`{.action}. A continuación, seleccione el CMS que quiera instalar, asegúrese de que la casilla **Instalación en modo avanzado** esté marcada y haga clic en el botón `Siguiente`{.action}.
 
-![Acceso a los módulos en un clic](images/access-to-the-1-click-modules-section.png){.thumbnail} 
+![Acceso a los módulos en un clic](images/tab.png){.thumbnail} 
 
 Introduzca la información solicitada e inicie la instalación del módulo. Una vez haya finalizado la instalación, recibirá por correo electrónico la confirmación de la instalación del módulo. Ya puede entonces pasar a las siguientes etapas descritas en esta guía.
 
@@ -130,13 +130,13 @@ Existen varios registros DNS asociados a su alojamiento web de OVHcloud. A conti
 
 Para comprobar el registro A que debe utilizar en la zona de DNS de su dominio, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.Haga clic en `Alojamientos`{.action} y seleccione el nombre del alojamiento. A continuación, en la pestaña `Información general`{.action}, consulte la dirección IP que aparece junto a **IPv4**.
 
-![Modificar el registro A](images/know-the-ovh-a-records.png){.thumbnail} 
+![Modificar el registro A](images/find-ipv4.png){.thumbnail} 
 
 **Los registros MX, para el correo electrónico**
 
 Para comprobar los registros MX que debe utilizar en la zona de su dominio, conéctese al [área de cliente de OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=ws){.external}.Haga clic en `Correo electrónico`{.action} y seleccione el nombre del alojamiento. A continuación, en la pestaña `Información general`{.action}, consulte la información que aparece junto a **Registros MX**. Estos registros pueden variar en función del servicio, según el filtro DNS que haya decidido aplicar.
 
-![Modificar los registros MX](images/know-the-ovh-mx-records.png){.thumbnail} 
+![Modificar los registros MX](images/find-mx-records.png){.thumbnail} 
 
 #### Comprobar y/o modificar los registros DNS
 

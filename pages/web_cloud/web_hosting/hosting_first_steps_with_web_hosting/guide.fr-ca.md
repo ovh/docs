@@ -50,7 +50,7 @@ Cette solution utilise les modules en 1 clic OVHcloud, un outil permettant d'ins
 
 Afin que l'installation du module OVHcloud puisse se réaliser, vous devez vous assurer que le répertoire d'installation du module soit vide (ce qui est le cas si vous ne vous êtes pas encore connecté à votre espace de stockage). Pour réaliser l'installation du module en 1 clic, connectez-vous dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}. Rendez-vous dans la section `Hébergements`{.action}, puis sur le nom de l'hébergement web que vous venez de commander. puis, dans l'onglet `Modules en 1 clic`{.action}, cliquez sur le bouton `Ajouter un module`{.action}.
 
-![Accès aux modules en 1 clic](images/access-to-the-1-click-modules-section.png){.thumbnail}
+![Accès aux modules en 1 clic](images/tab.png){.thumbnail}
 
 Enfin, pour initier l'installation du module en 1 clic, sélectionnez le CMS que vous souhaitez installer, assurez-vous que la case `Installation en mode avancé`{.action} ne soit pas cochée, puis cliquez sur le bouton `Installer`{.action}.
 
@@ -73,7 +73,7 @@ Dans l'onglet `Bases de données`{.action}, deux scénarios sont possibles :
 
 - **Vous avez au moins une base de données disponible en « création » sur votre hébergement web** : cliquez sur le bouton `Actions`{.action} au dessus du tableau qui s'affiche puis sur le bouton `Créer une base de données`{.action}.
 
-![Accès aux modules en 1 clic](images/create-a-database-2.png){.thumbnail}
+![Accès aux modules en 1 clic](images/create-a-database.png){.thumbnail}
 
 - **Vous n'avez plus de bases de données disponibles en « création » sur votre hébergement web** : cliquez sur le bouton `Actions`{.action} au dessus du tableau qui s'affiche. Vous pourrez (au choix) :
     - Commander une base de données [Start SQL](https://www.ovhcloud.com/fr-ca/web-hosting/options/start-sql/) en complément de vos bases de données incluses avec votre offre d'hébergement web. Pour cela, cliquez sur le bouton `Actions`{.action} au dessus du tableau puis sur le bouton `Commander une base de données`{.action}.
@@ -81,7 +81,7 @@ Dans l'onglet `Bases de données`{.action}, deux scénarios sont possibles :
 
 Une fois la base de données créée, pour réaliser l'installation du module en 1 clic, rendez-vous dans l'onglet `Modules en 1 clic`{.action}, puis cliquez sur le bouton `Ajouter un module`{.action}. Sélectionnez le CMS que vous souhaitez installer, assurez-vous que la case `Installation en mode avancé`{.action} soit cochée, puis cliquez sur le bouton `Suivant`{.action}.
 
-![Accès aux modules en 1 clic](images/access-to-the-1-click-modules-section.png){.thumbnail}
+![Accès aux modules en 1 clic](images/tab.png){.thumbnail}
 
 Suivez les informations demandées jusqu'à initier l'installation du module. Il ne vous reste plus qu'à patienter le temps de recevoir l'e-mail vous confirmant son installation, puis à poursuivre les étapes restantes ci-dessous.
 
@@ -124,13 +124,13 @@ Il existe plusieurs champs DNS inhérents à OVHcloud. Nous allons nous intéres
 
 Pour vérifier le champ A que vous devez utiliser dans la zone DNS de votre domaine, connectez-vous dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}. Rendez-vous dans la section `Hébergements`{.action} et sur le nom de l'hébergement web que vous venez de commander. puis, dans l'onglet `Informations générales`{.action}, récupérez l'adresse IP qui apparaît à côté de "IPv4".
 
-![Modifier le champ A](images/know-the-ovh-a-records.png){.thumbnail}
+![Modifier le champ A](images/find-ipv4.png){.thumbnail}
 
 - **Les champs MX, pour les e-mails**
 
 Pour vérifier les champs MX que vous devez utiliser dans la zone de votre domaine, connectez-vous dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc){.external}. Rendez-vous dans la section `E-mails`{.action} puis sur le nom de l'hébergement web que vous venez de commander. Enfin, dans l'onglet `Informations générales`{.action}, récupérez les informations qui apparaissent à côté de "Champs MX". Ces derniers peuvent être différents d'un service à un autre suivant le filtre DNS que vous avez décidé d'appliquer.
 
-![Modifier les champs MX](images/know-the-ovh-mx-records.png){.thumbnail}
+![Modifier les champs MX](images/find-mx-records.png){.thumbnail}
 
 #### Vérifier et/ou modifier les enregistrement DNS
 
