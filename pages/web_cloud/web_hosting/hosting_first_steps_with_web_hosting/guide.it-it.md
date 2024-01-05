@@ -54,7 +54,7 @@ Questa soluzione utilizza i moduli in 1 click OVHcloud, che permettono di instal
 
 Affinché l'operazione vada a buon fine è necessario che la directory di installazione del modulo sia vuota. Per installare il tuo modulo in 1 click, accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}. Clicca su `Hosting`{.action} e seleziona il nome del tuo servizio. Nella scheda `CMS in 1 click`{.action}, clicca sul pulsante `Aggiungi un modulo`{.action}.
 
-![Accesso ai moduli in 1 click](images/access-to-the-1-click-modules-section.png){.thumbnail}
+![Accesso ai moduli in 1 click](images/tab.png){.thumbnail}
 
 Per avviare l’operazione, scegli il CMS da installare assicurandoti che la casella `Installazione avanzata`{.action} non sia selezionata e clicca su `Installa`{.action}.
 
@@ -77,7 +77,7 @@ Nella scheda `Database`{.action} sono possibili due scenari:
 
 - **Sul tuo hosting Web hai almeno un database disponibile in "Start"** : clicca sul pulsante `Azioni`{.action} in alto nella tabella che appare e poi sul pulsante `Crea un database`{.action}.
 
-![Accesso ai moduli in 1 click](images/create-a-database-2.png){.thumbnail}
+![Accesso ai moduli in 1 click](images/create-a-database.png){.thumbnail}
 
 - **Sull’hosting Web non sono più disponibili database in "Start"** : clicca sul pulsante `Azioni`{.action} in alto nella tabella. Potrete (a scelta):
     - Ordinare un database [Start-SQL](https://www.ovhcloud.com/it/web-hosting/options/start-sql/) in aggiunta ai database inclusi nella soluzione di hosting Web. Per farlo, clicca sul pulsante `Azioni`{.action} in alto a sinistra della tabella e poi sul pulsante `Ordinare un database`{.action}.
@@ -85,7 +85,7 @@ Nella scheda `Database`{.action} sono possibili due scenari:
 
 Una volta creato il database, seleziona la scheda `CMS in 1 click`{.action} e clicca sul pulsante `Aggiungi un modulo`{.action}. Scegli il CMS da installare assicurandoti che la casella `Installazione avanzata`{.action} sia selezionata e clicca su `Continua`{.action}.
 
-![Accesso ai moduli in 1 click](images/access-to-the-1-click-modules-section.png){.thumbnail}
+![Accesso ai moduli in 1 click](images/tab.png){.thumbnail}
 
 Inserisci le informazioni richieste e poi avvia il processo di installazione. Attendi di ricevere l'email di conferma dell'installazione con le informazioni necessarie per effettuare l’accesso all’interfaccia di gestione del sito.
 
@@ -128,13 +128,13 @@ Esistono diversi tipi di record DNS ma ci concentreremo in particolare su due di
 
 Per verificare il record A da utilizzare nella zona DNS del tuo dominio, accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} e, clicca su `Hosting`{.action} e poi sul nome del tuo servizio. L'indirizzo IP viene mostrato in corrispondenza della voce "IPv4" nella scheda `Informazioni generali`{.action}.
 
-![Modificare il record A](images/know-the-ovh-a-records.png){.thumbnail}
+![Modificare il record A](images/find-ipv4.png){.thumbnail}
 
 - **Record MX, per un server di posta**
 
 Per verificare il record MX da utilizzare nella zona DNS del tuo dominio, accedi allo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external} e, clicca su `Email`{.action} e poi sul nome del tuo servizio. L’informazione viene mostrata in corrispondenza della voce "Record MX" nella scheda `Informazioni generali`{.action} e può variare da un servizio all'altro in base al filtro DNS applicato.
 
-![Modificare i record MX](images/know-the-ovh-mx-records.png){.thumbnail}
+![Modificare i record MX](images/find-mx-records.png){.thumbnail}
 
 #### Verificare e modificare i record DNS
 

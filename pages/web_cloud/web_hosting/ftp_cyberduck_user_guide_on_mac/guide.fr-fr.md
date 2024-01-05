@@ -26,7 +26,7 @@ Pour en bénéficier, veuillez vous reporter au site officiel de l'application :
 
 - Site officiel Cyberduck (site non OVH) : [cyberduck.io](https://cyberduck.io/){.external}
 
-![hosting](images/2344.png){.thumbnail}
+![hosting](images/logo.png){.thumbnail}
 
 > [!success]
 >
@@ -40,7 +40,7 @@ Lors du premier démarrage de l'application, vous pourrez apercevoir la fenêtre
 - La zone du milieu vous permet par exemple de voir les signets que vous avez ajoutés (vos connexions FTP pré-enregistrées), et une fois connecté le contenu de votre espace d'hébergement.
 - La zone basse vous permet notamment d'avoir des informations sur une action en cours (connexion vers le serveur FTP) ainsi que quelques logos pour ajouter un nouveau signet par exemple.
 
-![hosting](images/2343.png){.thumbnail}
+![hosting](images/start-page.png){.thumbnail}
 
 **Personnaliser l'affichage de Cyberduck** Il est possible de personnaliser l'affichage de Cyberduck afin de le rendre plus efficace et plus personnel.
 
@@ -48,7 +48,7 @@ Pour effectuer cette manipulation, cliquez sur Présentation puis sur Personnali
 
 Sur le cadre qui apparaît, faites glisser les éléments souhaités vers la barre d'outils. Pour valider vos modifications, cliquez sur Terminé
 
-![hosting](images/2345.png){.thumbnail}
+![hosting](images/customize-display.png){.thumbnail}
 
 ## Utiliser Cyberduck
 
@@ -64,7 +64,7 @@ Afin de pouvoir vous connecter à votre espace d'hébergement (FTP), suivez les 
 - Mot de passe
 - Port (21)
 
-![hosting](images/2361.png){.thumbnail}
+![hosting](images/ftp-connection.png){.thumbnail}
 
 > [!success]
 >
@@ -87,7 +87,7 @@ Un message d'avertissement devrait apparaître vous informant que le serveur sup
 - Notre serveur n'étant pas compatible avec le FTP-SSL , vous devez cochez Ne plus afficher et sélectionner impérativement le choix Continuer .
 - Si vous souhaitez utiliser une connexion sécurisée, vous devrez utiliser une [connexion SFTP](#utiliser_cyberduck_connexion_sftp){.external} .
 
-![hosting](images/2349.png){.thumbnail}
+![hosting](images/ftp-ssl-connection.png){.thumbnail}
 
 > [!alert]
 >
@@ -144,7 +144,7 @@ Afin de pouvoir vous connecter à votre espace d'hébergement, suivez les étape
 - Mot de passe
 - Port (22)
 
-![hosting](images/2362.png){.thumbnail}
+![hosting](images/sftp-connection.png){.thumbnail}
 
 > [!success]
 >
@@ -166,7 +166,7 @@ Lorsque vous effectuez une première connexion vers votre espace d'hébergement,
 
 - Cochez la case Toujours puis cliquez sur Permettre . Ceci vous permettra de certifier définitivement l'hôte de connexion (qui est OVH).
 
-![hosting](images/2363.png){.thumbnail}
+![hosting](images/host-unknow-confirmation.png){.thumbnail}
 
 > [!success]
 >
@@ -186,7 +186,7 @@ Lors d'une tentative de connexion à votre espace d'hébergement, il est possibl
 - Vous devez par conséquent vérifier les informations de connexion que vous avez renseignées
 - Si nécessaire, vous devrez également modifier le Signet que vous avez créé (en le sélectionnant et en cliquant sur le logo en forme de crayon)
 
-![hosting](images/2352.png){.thumbnail}
+![hosting](images/open-session-failed.png){.thumbnail}
 
 > [!success]
 >
@@ -205,7 +205,7 @@ Lors d'une tentative de connexion à votre espace d'hébergement, il est possibl
 
 Ceci peut également provenir d'un parefeu ou du réseau local bloquant le port 21 ou 22 qui sont utilisés pour se connecter au FTP. Vous devrez vérifier votre configuration personnelle dans ce cas.
 
-![hosting](images/2353.png){.thumbnail}
+![hosting](images/connection-failed.png){.thumbnail}
 
 > [!success]
 >
@@ -231,7 +231,7 @@ Pour effectuer cet ajout :
 - Placez-vous sur l'affichage des Signets (cadre bleu puis cadre vert de l'image)
 - Cliquez sur le logo en forme de [+] (cadre orange) sur le bas à gauche de la fenêtre
 
-![hosting](images/2346.png){.thumbnail}
+![hosting](images/signet.png){.thumbnail}
 
 Une nouvelle fenêtre s'affiche contenant vos informations de connexion. Au prochain démarrage de Cyberduck, vous pourrez double-cliquer sur le signet pour vous connecter plus rapidement.
 
@@ -242,13 +242,13 @@ Vous pouvez transférer vos fichiers via plusieurs moyens. **Via glissé-dépos�
 
 - Une fois cette action réalisée, vos fichiers vont automatiquement se mettre en file d'attente pour être déposés sur le serveur. Une fenêtre s'affichera en conséquence.
 
-![hosting](images/2354.png){.thumbnail}
+![hosting](images/drag-drop-transfert-file.png){.thumbnail}
 
 **Via l'interface Transférer** Vous avez la possibilité d'utiliser l'interface Transférer qui ouvrira une fenêtre et vous permettra d'explorer vos fichiers. Vous devrez sélectionner les fichiers souhaités puis cliquer sur Transférer.
 
 - Une fois cette action réalisée, vos fichiers vont automatiquement se mettre en file d'attente pour être déposés sur le serveur. Une fenêtre s'affichera en conséquence.
 
-![hosting](images/2355.png){.thumbnail}
+![hosting](images/transfert-files.png){.thumbnail}
 
 **Visionner les transferts en cours** Vous avez la possibilité de visionner l'historique des transferts vers votre espace d'hébergement. Vous pourrez ainsi retrouver :
 
@@ -261,7 +261,7 @@ Cette fenêtre s'affiche de deux manières différentes :
 - automatiquement lorsqu'un transfert est initié
 - en cliquant sur Fenêtre puis Transferts
 
-![hosting](images/2356.png){.thumbnail}
+![hosting](images/transfert-files-progression.png){.thumbnail}
 
 ### Actions possibles sur un fichier/dossier
 En sélectionnant un fichier ou un dossier présent sur votre espace d'hébergement (dans la fenêtre de Cyberduck), vous aurez la possibilité d'effectuer diverses Actions.
@@ -277,7 +277,7 @@ Ces dernières vous permettront notamment de :
 
 La liste ci-dessus n'est pas exhaustive, il existe d'autres actions possibles. Rapprochez-vous du site officiel de Cyberduck en cas de besoin.
 
-![hosting](images/2357.png){.thumbnail}
+![hosting](images/action-on-folder.png){.thumbnail}
 
 ## Informations utiles
 
@@ -297,7 +297,7 @@ Sur la nouvelle fenêtre, cliquez sur Permissions puis effectuez les modificatio
 - Permissions UNIX : la valeur mettra à jour automatiquement les cases des 3 familles du dessous
 - Cochez les cases souhaitées : la valeur se mettra à jour automatiquement pour les Permissions UNIX
 
-![hosting](images/2358.png){.thumbnail}
+![hosting](images/unix-permissions.png){.thumbnail}
 
 ### Reouverture du site
 Vous avez la possibilité d'effectuer la réouverture de votre site en utilisant une commande personnalisée.
@@ -309,7 +309,7 @@ Pour utiliser une commande :
 - Cliquez sur Aller
 - Cliquez sur Envoyer une commande...
 
-![hosting](images/2359.png){.thumbnail}
+![hosting](images/send-ftp-command.png){.thumbnail}
 
 Sur la nouvelle fenêtre, insérez la commande :
 
@@ -320,7 +320,7 @@ En confirmation, le message 200 Permissions changed on / devrait apparaître dan
 
 - Pour vérifier que la réouverture est bien effective, testez tout simplement votre site depuis un navigateur Internet.
 
-![hosting](images/2360.png){.thumbnail}
+![hosting](images/site-chmod-705-command.png){.thumbnail}
 
 > [!alert]
 >
@@ -355,7 +355,7 @@ Un cadre devrait apparaître en dessous de la fenêtre de Cyberduck. Par la suit
 - Remontez tout en haut du cadre du journal
 - Relevez le webmXXX
 
-![hosting](images/2364.png){.thumbnail}
+![hosting](images/show-hidden-daily.png){.thumbnail}
 
 ## Aller plus loin
 

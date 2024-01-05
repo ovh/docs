@@ -43,7 +43,7 @@ To modify your subscription, go to your [OVHcloud Control Panel](https://ca.ovh.
 
 In the `Plan` box, click the `...`{.action} button to the right of `Solution`, then `Change plan`{.action}.
 
-![change_plan](images/change_plan.png){.thumbnail}
+![change_plan](images/pro-change-plan.png){.thumbnail}
 
 Then select your new subscription and its duration. Confirm the corresponding contracts, then click `Send`{.action}.
 
@@ -63,13 +63,13 @@ If the **Boost** option is right for you, please find instructions below on how 
 > **Enable the Boost option**
 >>
 >> To enable the Boost option, log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) then go to the `Web Cloud`{.action} section. In the left-hand column, click `Hosting plans`{.action}, then select the Web Hosting plan concerned. In the `General information` box on the page that opens, click the `...`{.action} button to the right of `Boost`, then `Boost my hosting plan`{.action}.<br><br>
->>![boost](images/enable_boost.png){.thumbnail}<br>
+>>![boost](images/boost-my-hosting-plan.png){.thumbnail}<br>
 >>
 > **Disable the Boost option**
 >>
 >> To disable the Boost option, log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/world/&ovhSubsidiary=we) then go to the `Web Cloud`{.action} section. In the left-hand column, click `Hosting plans`{.action} , then select the Web Hosting plan concerned. On the page that pops up, go to the `More` tab, then click `Boost my hosting plan`{.action}.<br>
 >> The usage table for the Boost option will appear. Click `Disable boost plan`{.action}.<br><br>
->>![boost](images/disable_boost.png){.thumbnail}<br>
+>>![boost](images/deactivate-the-boost-plan.png){.thumbnail}<br>
 
 #### Billing when you change plans <a name="billing"></a>
 

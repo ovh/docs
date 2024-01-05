@@ -9,7 +9,7 @@ Cyberduck è un software MAC che ti permette di pubblicare il tuo sito accedendo
 
 Per utilizzarlo, vai sul sito ufficiale Cyberduck: [cyberduck.io](https://cyberduck.io/)
 
-![cyberduck macOS](images/2344.png){.thumbnail}
+![cyberduck macOS](images/logo.png){.thumbnail}
 Cyberduck è un software MAC. Se utilizzi Windows, ti consigliamo di utilizzare FileZilla: [](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide))
 
 ## Interfaccia
@@ -21,7 +21,7 @@ Al primo avvio, potresti visualizzare questa finestra.
 
 - La parte in basso include le informazioni su un'azione in corso (connessione al server FTP) e le icone per aggiungere nuove operazioni.
 
-![cyberduck macOS](images/2343.png){.thumbnail}
+![cyberduck macOS](images/start-page.png){.thumbnail}
 Personalizza l'interfaccia di Cyberduck
 
 Rendi il tuo Cyberduck perfetto per te. 
@@ -30,7 +30,7 @@ Per effettuare le modifiche, clicca su Visuale poi su Personalizza Barra Strumen
 
 Nella finestra che compare, trascina gli elementi che vuoi aggiungere alla barra degli strumenti poi clicca su Fine per confermare.
 
-![cyberduck macOS](images/2345.png){.thumbnail}
+![cyberduck macOS](images/customize-display.png){.thumbnail}
 
 ## Connessione FTP
 Per accedere al tuo spazio hosting (FTP), segui questi step: 
@@ -48,7 +48,7 @@ Per accedere al tuo spazio hosting (FTP), segui questi step:
 
 4. Clicca su Connessione per connetterti al tuo spazio hosting (FTP)
 
-![cyberduck macOS](images/2361.png){.thumbnail}
+![cyberduck macOS](images/ftp-connection.png){.thumbnail}
 
 - Puoi memorizzare la tua password su Cyberduck cliccando Aggiungi all'Accesso Portachiavi. Questa opzione è facoltativa: se non usi questa opzione dovrai reinserire la password per riconnetterti al tuo spazio hosting.
 
@@ -60,7 +60,7 @@ Un eventuale avviso ti confermerà che il server supporta connessioni cifrate (S
 
 - Se vuoi una connessione sicura, utilizza [connessione SFTP](#utiliser_cyberduck_connexion_sftp). Questa connessione è disponibile solo se la tua offerta di Web hosting include un accesso SSH.
 
-![cyberduck macOS](images/2349.png){.thumbnail}
+![cyberduck macOS](images/ftp-ssl-connection.png){.thumbnail}
 
 - Per verificare se la tua offerta include l'accesso SSH, controlla i [dettagli delle nostre offerte](http://www.ovh.it/hosting-web/). 
 
@@ -94,7 +94,7 @@ Per connetterti al tuo hosting, segui questi step:
 
 5. Clicca su Collegamento per connetterti al tuo spazio hosting (FTP)
 
-![cyberduck macOS](images/2362.png){.thumbnail}
+![cyberduck macOS](images/sftp-connection.png){.thumbnail}
 
 - Puoi memorizzare la tua password su Cyberduck cliccando Aggiungi all'Accesso Portachiavi. Questa opzione è facoltativa: se non usi questa opzione dovrai reinserire la password per riconnetterti al tuo spazio hosting.
 
@@ -104,7 +104,7 @@ Al primo accesso al tuo spazio hosting, apparirà la finestra Questo Host è att
 
 - Clicca su Sempre e poi su Permetti per confermare definitivamente l'host di connessione (OVH).
 
-![cyberduck macOS](images/2363.png){.thumbnail}
+![cyberduck macOS](images/host-unknow-confirmation.png){.thumbnail}
 Per conservare le informazioni di connessione, salvale tra i Preferiti. 
 
 - Se non riesci, consulta questa parte della guida: [Che cos'è un Preferito?](#utiliser_cyberduck_quest-ce_quun_signet).
@@ -118,7 +118,7 @@ Con questo messaggio visualizzerai 530 Login authentification failed e, nella ma
 
 - Se necessario modificale anche nei Preferiti salvati (cliccando sul logo a forma di matita)
 
-![cyberduck macOS](images/2352.png){.thumbnail}
+![cyberduck macOS](images/open-session-failed.png){.thumbnail}
 
 - Se non hai le credenziali FTP, consulta questa guida:
 [Recupera le mie credenziali FTP](http://www.ovh.it/g1374.mettre-mon-site-en-ligne#deposer_mes_fichiers_en_ftp_recuperer_mes_identifiants_ftp).
@@ -132,7 +132,7 @@ Con questo messaggio visualizzerai Timed out waiting for initial connect reply e
 
 Il problema può essere causato anche da un blocco da parte del firewall o di una rete locale delle porte 21 o 22 utilizzate per connettersi all'FTP. In questo caso verifica la tua configurazione personale.
 
-![cyberduck macOS](images/2353.png){.thumbnail}
+![cyberduck macOS](images/connection-failed.png){.thumbnail}
 
 - Reminder: l'host di connessione per il tuo spazio hosting è ftp.tuo-dominio.tld (sostituisci con il tuo dominio) o ftp.clusterXXX.ovh.net (sostituisci XXX con il tuo numero di cluster).
 
@@ -147,7 +147,7 @@ Per farlo:
 - Entra nei Preferiti (in blu e poi in verde nell'immagine)
 - Clicca su [+] (in arancione) nella parte in basso a sinistra della finestra
 
-![cyberduck macOS](images/2346.png){.thumbnail}
+![cyberduck macOS](images/signet.png){.thumbnail}
 Visualizzerai una nuova finestra con le tue informazioni di connessione. Al prossimo accesso a Cyberduck, clicca due volte sul segnalibro per connetterti più rapidamente.
 
 ## Trasferisci i file
@@ -159,13 +159,13 @@ Per spostare i tuoi file in FTP, trascina gli elementi dalla cartella locale (i 
 
 - Automaticamente i tuoi file verranno messi in lista d'attesa per essere trasferiti sul server e si aprirà una nuova finestra.
 
-![cyberduck macOS](images/2354.png){.thumbnail}
+![cyberduck macOS](images/drag-drop-transfert-file.png){.thumbnail}
 Interfaccia Transferire
 Nell'interfaccia Transferire si aprirà una finestra in cui potrai visualizzare i tuoi file. Selezionali e clicca su Transferire.
 
 - Automaticamente i tuoi file verranno messi in lista d'attesa per essere trasferiti sul server e si aprirà una nuova finestra.
 
-![cyberduck macOS](images/2355.png){.thumbnail}
+![cyberduck macOS](images/transfert-files.png){.thumbnail}
 Visualizzare i trasferimenti in corso
 Visualizza la cronologia dei trasferimenti effettuati sul tuo spazio hosting. Qui troverai:
 
@@ -178,7 +178,7 @@ Questa finestra si apre in due modi:
 - automaticamente quando si inizia un trasferimento;
 - cliccando su Finestra > Trasferimenti
 
-![cyberduck macOS](images/2356.png){.thumbnail}
+![cyberduck macOS](images/transfert-files-progression.png){.thumbnail}
 
 ## Operazioni possibili su un file/cartella
 Selezionando un file o una cartella del tuo spazio hosting (nella finestra di Cyberduck), puoi eseguire una serie di Azioni che ti permetteranno di: 
@@ -192,7 +192,7 @@ Selezionando un file o una cartella del tuo spazio hosting (nella finestra di Cy
 
 La lista non è completa: esistono altre azioni possibili. Se hai bisogno, consulta il sito ufficiale di Cyberduck.
 
-![cyberduck macOS](images/2357.png){.thumbnail}
+![cyberduck macOS](images/action-on-folder.png){.thumbnail}
 
 ## Diritti dei file o delle cartelle
 Puoi modificare i diritti (CHMOD) dei file e delle cartelle presenti sul tuo hosting.
@@ -210,7 +210,7 @@ Clicca su Permessi nella nuova finestra e poi esegui le modifiche desiderate.
 - Permessi UNIX: il valore aggiornerà automaticamente le caselle delle tre tipologie di diritti.
 - Seleziona le caselle desiderate: il valore aggiornerà automaticamente per i Permessi UNIX.
 
-![cyberduck macOS](images/2358.png){.thumbnail}
+![cyberduck macOS](images/unix-permissions.png){.thumbnail}
 
 ## Sblocco del sito
 Puoi sbloccare il sito con un comando personalizzato in seguito al blocco di sicurezza del tuo spazio hosting OVHcloud a causa di un attacco.
@@ -220,7 +220,7 @@ Puoi usare il comando:
 - Clicca su Vai
 - Clicca su Invia comando...
 
-![cyberduck macOS](images/2359.png){.thumbnail}
+![cyberduck macOS](images/send-ftp-command.png){.thumbnail}
 Nella nuova finestra, inserisci il comando:
 
 - CHMOD 705 /
@@ -230,7 +230,7 @@ Visualizzerai il messaggio di conferma 200 Permissions changed on /.
 
 - Per verificare lo sblocco, prova ad accedere al tuo sito da un browser Internet.
 
-![cyberduck macOS](images/2360.png){.thumbnail}
+![cyberduck macOS](images/site-chmod-705-command.png){.thumbnail}
 
 - Questo comando non funziona in SFTP. Per utilizzarlo usa una [connessione FTP](#utiliser_cyberduck_connexion_ftp).
 
@@ -254,5 +254,5 @@ Comparirà un riquadro sotto la finestra di Cyberduck, quindi:
 - Ritorna in alto nel Pannello Log
 - Prendi nota del webmXXX
 
-![cyberduck macOS](images/2364.png){.thumbnail}
+![cyberduck macOS](images/show-hidden-daily.png){.thumbnail}
 

@@ -13,7 +13,7 @@ Para beneficiar o mesmo deverá aceder ao website oficial da aplicação
 
 - Site oficial Cyberduck (site externo à OVH): [cyberduck.io](https://cyberduck.io/)
 
-![cyberduck macOS](images/2344.png){.thumbnail}
+![cyberduck macOS](images/logo.png){.thumbnail}
 Cyberduck é um software para os utilizadores que disponham de um MAC. Se possui uma máquina Windows deverá optar pela utilização do FileZilla: [](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide))
 
 ## Interface
@@ -25,7 +25,7 @@ Aquando da primeira ligação ser-lhe-á apresentada a seguinte janela.
 
 - A zona inferior permite-lhe consultar as informações sobre uma ação em curso (ligação ao servidor FTP) bem como alguns logs para adicionar um novo marcador, por exemplo.
 
-![cyberduck macOS](images/2343.png){.thumbnail}
+![cyberduck macOS](images/start-page.png){.thumbnail}
 Personalizar a apresentação do Cyberduck
 É possível personalizar a apresentação do Cyberduck para o tornar mais eficaz e pessoal.
 
@@ -33,7 +33,7 @@ Para efetuar essa manipulação clique em Apresentação e depois aceda a Person
 
 No quadro que aparece basta arrastar os elementos que deseja para a barra de ferramentas. Para validar as modificações clique em Terminar
 
-![cyberduck macOS](images/2345.png){.thumbnail}
+![cyberduck macOS](images/customize-display.png){.thumbnail}
 
 ## Ligação FTP
 Para se poder ligar ao seu espaço de alojamento (FTP), siga as etapas descritas em baixo:
@@ -51,7 +51,7 @@ Para se poder ligar ao seu espaço de alojamento (FTP), siga as etapas descritas
 
 4. Clique em Ligação para estabelecer ligação ao seu espaço de alojamento (FTP)
 
-![cyberduck macOS](images/2361.png){.thumbnail}
+![cyberduck macOS](images/ftp-connection.png){.thumbnail}
 
 - Tem a possibilidade de registar a sua password no Cyberduck ao selecionar a opção Adicionar à chave de acesso. Esta opção não é obrigatória: ao não selecionar esta opção, deverá introduzir a sua password sempre que desejar estabelecer ligação ao seu espaço de alojamento.
 
@@ -63,7 +63,7 @@ Aparecerá uma mensagem de alerta informando-o que o servidor suporta ligações
 
 - Se desejar utilizar uma ligação segura deverá utilizar uma [ligação SFTP](#utiliser_cyberduck_connexion_sftp). No entanto, esta ligação apenas está disponível cdaso disponha de acesso SSH na sua oferta de alojamento Web.
 
-![cyberduck macOS](images/2349.png){.thumbnail}
+![cyberduck macOS](images/ftp-ssl-connection.png){.thumbnail}
 
 - Se não sabe se dispõe de acesso SSH na sua oferta aceda aoa [descritivo das nossas ofertas](http://www.ovh.pt/alojamento-partilhado/).
 
@@ -97,7 +97,7 @@ Para estabelecer ligação ao seu espaço de alojamento, siga as etapas descrita
 
 5. Clique em Ligação para se ligar ao seu espaço de alojamento (FTP)
 
-![cyberduck macOS](images/2362.png){.thumbnail}
+![cyberduck macOS](images/sftp-connection.png){.thumbnail}
 
 - Tem a possibilidade de registar a sua password no Cyberduck ao selecionar a opção Adicionar à chave de acesso. Esta opção não é obrigatória: ao não selecionar esta opção, deverá introduzir a sua password sempre que desejar estabelecer ligação ao seu espaço de alojamento.
 
@@ -107,7 +107,7 @@ Aquando da sua primeira ligação ao seu espaço de alojamento irá aparecer uma
 
 - Selecione a opção Sempre e depois clique em Permitir. Esta opção permite certificar definitivamente o host de ligação (que é a OVH).
 
-![cyberduck macOS](images/2363.png){.thumbnail}
+![cyberduck macOS](images/host-unknow-confirmation.png){.thumbnail}
 
 - Aconselhamos que registe as informações de ligação num bookmark. Desta forma pode guardar em memória certas informações de ligação.
 
@@ -122,7 +122,7 @@ Esta mensagem é igualmente acompanhada pela menção 530 Login authentification
 
 - Se necessário deverá igualmente modificar o bookmark criado (ao selecionar o mesmo e clicando no logo em forma de lápis)
 
-![cyberduck macOS](images/2352.png){.thumbnail}
+![cyberduck macOS](images/open-session-failed.png){.thumbnail}
 
 - Se não conhece os seus identificadores FTP consulte o seguinte guia: [Obter os meus identificadores FTP](http://www.ovh.pt/g1374.mettre-mon-site-en-ligne#colocar_os_meus_ficheiros_no_ftp_obter_os_meus_identificadores_ftp).
 
@@ -135,7 +135,7 @@ Esta mensagem é igualmente acompanhada pela menção Timed out waiting for init
 
 Pode estar igualmente relacionado com uma firewall ou a rede local que esteja a bloquear a porta 21 ou 22 que são utilizadas para a ligação ao FTP. Deverá igualmente verificar a sua configuração pessoal.
 
-![cyberduck macOS](images/2353.png){.thumbnail}
+![cyberduck macOS](images/connection-failed.png){.thumbnail}
 
 - Como lembrança, o host de ligação ao seu espaço de alojamento é ftp.oseu-dominio.tld (substitua pelo seu domínio) ou ftp.clusterXXX.ovh.net (substitua XXX pelo número do cluter).
 
@@ -152,7 +152,7 @@ Para efetuar essa adição:
 
  - Clique no logo em forma de [+] (quadrado laranja) à esquerda da janela.
 
-![cyberduck macOS](images/2346.png){.thumbnail}
+![cyberduck macOS](images/signet.png){.thumbnail}
 Irá aparecer uma nova janela que irá conter as suas informações de ligação. No próximo inicio do Cyberduck poderá efetuar duplo clique nesse bookmark para estabelecer ligação de forma mais rápida.
 
 ## Transferência de ficheiros
@@ -164,13 +164,13 @@ Para transferir os seus ficheiros por FTP poderá simplesmente selecionar e real
 
 - Após efetuar esta ação, os seus ficheiros serão automaticamente colocados na fila de espera para serem transferidos para o servidor. Irá, em consequência desta ação, aparecer uma nova janela.
 
-![cyberduck macOS](images/2354.png){.thumbnail}
+![cyberduck macOS](images/drag-drop-transfert-file.png){.thumbnail}
 Através da interface Transferir
 Têm a possibilidade de utilizar a interface Transferir que irá abrir uma janela e que lhe permitirá explorar os seus ficheiros. Deverá selecionar os ficheiros que pretende e depois clica em Transferir.
 
 - Após efetuar esta ação, os seus ficheiros serão automaticamente colocados na fila de espera para serem transferidos para o servidor. Irá, em consequência desta ação, aparecer uma nova janela.
 
-![cyberduck macOS](images/2355.png){.thumbnail}
+![cyberduck macOS](images/transfert-files.png){.thumbnail}
 Consultar as transferências em curso
 Terá a possibilidade de consultar o histório das transferências para o seu espaço de alojamento. Poderá encontrar:
 
@@ -183,7 +183,7 @@ Esta janela apresenta-se de duas formas diferentes:
 - automaticamente aquando da inicialização de uma transferência
 - ao clicar em Janela e depois Transferências
 
-![cyberduck macOS](images/2356.png){.thumbnail}
+![cyberduck macOS](images/transfert-files-progression.png){.thumbnail}
 
 ## Ações que poderá efetuar num ficheiro/pasta
 Ao selecionar um ficheiro ou uma pasta presente no seu espaço de alojamento (na janela do Cyberduck), terá a possibilidade de efetuar diversas Ações.
@@ -200,7 +200,7 @@ Estas últimas permitem-lhe:
 A lista acima não é exaustiva, ou seja, existem outras ações possíveis.
 Consulte a informação presente no website do Cyberduck se necessário.
 
-![cyberduck macOS](images/2357.png){.thumbnail}
+![cyberduck macOS](images/action-on-folder.png){.thumbnail}
 
 ## Direitos dos ficheiros e pastas
 Tem a possibilidade de modificar os direitos (CHMOD) dos seus ficheiros ou pastas presentes no alojamento
@@ -218,7 +218,7 @@ Nessa nova janela clique em Permissões efetuando as modificações desejadas:
 - Permissões UNIX: o valor irá ser atualizado automaticamente para as 3 famílias indicadas
 - Selecione as opções desejadas: o valor será atualizado automaticamente4 unicamente para as permissões UNIX
 
-![cyberduck macOS](images/2358.png){.thumbnail}
+![cyberduck macOS](images/unix-permissions.png){.thumbnail}
 
 ## Reabertura do site
 Tem a possibilidade de efetuar a reabertura do seu site ao utilizar um comando personalizado.
@@ -230,7 +230,7 @@ Para utilizar um comando:
 - Clique em Ir
 - Clique em Enviar um comando...
 
-![cyberduck macOS](images/2359.png){.thumbnail}
+![cyberduck macOS](images/send-ftp-command.png){.thumbnail}
 Na nova janela introduza o comando:
 
 - CHMOD 705 /
@@ -240,7 +240,7 @@ Ao confirmar, irá aparecer a mensagem 200 Permissions changed on / deverá apar
 
 - Para verificar que a reabertura foi efetuada com sucesso, basta que aceda ao seu website a partir de um browser.
 
-![cyberduck macOS](images/2360.png){.thumbnail}
+![cyberduck macOS](images/site-chmod-705-command.png){.thumbnail}
 
 - Este comando não funciona via SFTP. Para o efetuar, utilize uma [ligação FTP](#utiliser_cyberduck_connexion_ftp).
 
@@ -264,5 +264,5 @@ Deverá depois aparecer um quadro abaixo na janela do Cyberduck. De seguida:
 - Vá até ao topo do separador dos logs
 - Retenha o webmXXX
 
-![cyberduck macOS](images/2364.png){.thumbnail}
+![cyberduck macOS](images/show-hidden-daily.png){.thumbnail}
 

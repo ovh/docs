@@ -44,7 +44,7 @@ A recuperação faz-se através de um cliente FTP como o FileZilla. Para mais in
 
 Quando se liga ao seu servidor através de FTP, deve recuperar (arrastando/largando) o conteúdo do diretório `www` na parte direita. Este diretório contém a totalidade dos ficheiros e diretórios do seu site WordPress (configuração, temas, media, etc.).
 
-![Vista dos ficheiros e diretórios WordPress na raiz](images/how_to_backup_your_wordpress_1.png){.thumbnail}
+![Vista dos ficheiros e diretórios WordPress na raiz](images/wordpress-into-www.png){.thumbnail}
 
 Clique no diretório `www` e selecione a janela da esquerda para aceder ao diretório. A transferência dos ficheiros começará automaticamente.
 
@@ -58,17 +58,17 @@ Para exportar a sua base de dados aceda à interface _PHPMyAdmin_ através do UR
 >
 > Não hesite em consultar o nosso guia sobre a [exportação de uma base de dados](/pages/web_cloud/web_hosting/sql_database_export).
 
-![Acesso PHPMyAdmin - Página inicial](images/how_to_backup_your_wordpress_2.png){.thumbnail}
+![Acesso PHPMyAdmin - Página inicial](images/pma-main-page.png){.thumbnail}
 
 Clique em `Exportação`{.action} no topo da página:
 
-![Acesso PHPMyAdmin - Exportar](images/how_to_backup_your_wordpress_3.png){.thumbnail}
+![Acesso PHPMyAdmin - Exportar](images/pma-export.png){.thumbnail}
 
 Deixe as escolhas propostas por defeito: método de exportação rápido e formato SQL.
 
 Clique em `Executar`{.action}, e poderá descarregar a sua base de dados completa no formato SQL (Structured Query Language).
 
-![Acesso PHPMyAdmin - Exportar - Descarregamento](images/how_to_backup_your_wordpress_4.png){.thumbnail}
+![Acesso PHPMyAdmin - Exportar - Descarregamento](images/dowload-successfull.png){.thumbnail}
 
 ### Método n°2 - realizar um backup com uma extensão
 
@@ -80,44 +80,44 @@ Faça o download da extensão em formato `.zip` para o seu computador. Por razõ
 
 Por predefinição, trata-se do seu nome de domínio seguido de `/wp-admin`:
 
-![Acesso administrador em wp-admin](images/how_to_backup_your_wordpress_5.png){.thumbnail}
+![Acesso administrador em wp-admin](images/login-interface.png){.thumbnail}
 
 Na página inicial, aceda à secção `Plugins`{.action} e clique em `Adicionar novo`{.action}:
 
-![Adicionar uma extensão](images/how_to_backup_your_wordpress_6.png){.thumbnail}
+![Adicionar uma extensão](images/plugins-add-new.png){.thumbnail}
 
 Transfira a extensão ao clicar no botão `Percorrer`{.action}:
 
-![Fazer upload da extensão](images/how_to_backup_your_wordpress_7.png){.thumbnail}
+![Fazer upload da extensão](images/plugins-add-new-updraftplus.png){.thumbnail}
 
 Clique em `Installar`{.action}:
 
-![Instalar a extensão](images/how_to_backup_your_wordpress_8.png){.thumbnail}
+![Instalar a extensão](images/plugins-browse-updraftplus.png){.thumbnail}
 
 Após a instalação, deverá ativar a extensão:
 
-![Confirmação da instalação](images/how_to_backup_your_wordpress_9.png){.thumbnail}
+![Confirmação da instalação](images/plugins-activate-updraftplus.png){.thumbnail}
 
 Uma vez ativada, esta aparecerá na lista das extensões:
 
-![Lista das extensões instaladas](images/how_to_backup_your_wordpress_10.png){.thumbnail}
+![Lista das extensões instaladas](images/plugins-list-updraftplus.png){.thumbnail}
 
 #### 2.2 - Configure os seus backups
 
 Na página acima mencionada, clique em `Opções`{.action} e, na página `UpdraftPlus Backup/Restore`, clique no separador `Opções
 `{.action}:
 
-![Página UpdraftPlus Backup/Restore](images/how_to_backup_your_wordpress_11.png){.thumbnail}
+![Página UpdraftPlus Backup/Restore](images/updraftplus-settings.png){.thumbnail}
 
 Defina o backup diário dos seus ficheiros e da sua base de dados:
 
-![Page UpdraftPlus Regulations](images/how_to_backup_your_wordpress_12.png){.thumbnail}
+![Page UpdraftPlus Regulations](images/updraftplus-settings-2.png){.thumbnail}
 
 Escolha o backup por e-mail.
 
 Os backups serão enviados para o endereço de e-mail da conta de administrador (a conta que utiliza):
 
-![Backup por endereço mail](images/how_to_backup_your_wordpress_13.png){.thumbnail}
+![Backup por endereço mail](images/email-setting.png){.thumbnail}
 
 No final da página, clique em `Guardar alterações`{.action} para validar.
 
@@ -125,11 +125,11 @@ No final da página, clique em `Guardar alterações`{.action} para validar.
 
 Regresse ao separador `Backup/Restore`{.action} e clique no botão `Backup Agora`{.action}:
 
-![Página UpdraftPlus Backup/Restaurar](images/how_to_backup_your_wordpress_14.png){.thumbnail}
+![Página UpdraftPlus Backup/Restaurar](images/updraftplus-backup-now.png){.thumbnail}
 
 Na nova janela, clique em `Backup Agora`{.action}:
 
-![Página UpdraftPlus Modal Backup/Restaurar](images/how_to_backup_your_wordpress_15.png){.thumbnail}
+![Página UpdraftPlus Modal Backup/Restaurar](images/updraftplus-perform-backup.png){.thumbnail}
 
 Uma vez terminados os seus backups, receberá dois e-mails: um com o conteúdo do seu Wordpress, o outro com a base de dados do seu website.
 Se não receber os e-mails, verifique o endereço de e-mail da conta que utiliza (na secção `Utilizadores`{.action}). Verifique também as pastas "SPAM / Correio indesejável".

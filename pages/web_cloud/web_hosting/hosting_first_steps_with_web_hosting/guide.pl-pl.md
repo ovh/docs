@@ -54,7 +54,7 @@ Rozwiązanie to wykorzystuje pre-instalowane moduły OVHcloud dostępne w Panelu
 
 Aby instalacja modułu OVHcloud była możliwa, upewnij się, że katalog instalacyjny modułu jest pusty (co ma miejsce, jeżeli nie zalogowałeś się jeszcze do Twojej przestrzeni dyskowej). Aby dokonać szybkiej instalacji modułu, zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}. Wybierz sekcję `Hosting`{.action}, a następnie nazwę hostingu, który zakupiłeś. W zakładce `Moduły`{.action} wybierz opcję `Dodaj moduł`{.action}.
 
-![Dostęp do modułów](images/access-to-the-1-click-modules-section.png){.thumbnail}
+![Dostęp do modułów](images/tab.png){.thumbnail}
 
 Aby rozpocząć instalację modułu, wybierz CMS, który chcesz zainstalować i upewnij się, że pole `Instalacja w trybie zaawansowanym`{.action} nie jest zaznaczone. Następnie kliknij `Instalacja`{.action}.
 
@@ -77,7 +77,7 @@ W zakładce `Bazy danych`{.action} możliwe są dwa scenariusze:
 
 - **Masz co najmniej jedną bazę danych dostępną w opcji "utwórz" na Twoim hostingu** : kliknij przycisk `Operacje`{.action} nad tabelą, która się wyświetla następnie kliknij przycisk `Tworzenie bazę danych`{.action}.
 
-![Dostęp do modułów za 1 kliknięciem](images/create-a-database-2.png){.thumbnail}
+![Dostęp do modułów za 1 kliknięciem](images/create-a-database.png){.thumbnail}
 
 - **Nie masz już dostępnych baz danych w opcji "utwórz" na Twoim hostingu** : kliknij przycisk `Operacje`{.action} nad tabelą, która się wyświetli. Będziesz mógł (do wyboru):
     - Zamów bazę danych [Start SQL](https://www.ovhcloud.com/pl/web-hosting/options/start-sql/) jako uzupełnienie baz danych zawartych w hostingu. W tym celu kliknij przycisk `Operacje`{.action} nad tabelą, a następnie przycisk `Zamów bazę danych`{.action}.
@@ -85,7 +85,7 @@ W zakładce `Bazy danych`{.action} możliwe są dwa scenariusze:
 
 Gdy baza danych została już utworzona, wybierz zakładkę `Moduły`{.action}, by przeprowadzić instalację modułu, a następnie wybierz opcję `Dodaj moduł`{.action}. Wybierz CMS, który chcesz zainstalować i upewnij się, że pole `Instalacja w trybie zaawansowanym`{.action} nie jest zaznaczone, następnie wybierz opcję `Instalacja`{.action}.
 
-![Dostęp do modułów OVHcloud](images/access-to-the-1-click-modules-section.png){.thumbnail}
+![Dostęp do modułów OVHcloud](images/tab.png){.thumbnail}
 
 Wpisz wymagane informacje aż do rozpoczęcia instalacji modułu. Teraz należy jedynie czekać na wiadomość e-mail z potwierdzeniem instalacji, a następnie przeprowadzić wskazane poniżej etapy.
 
@@ -128,13 +128,13 @@ Istnieje wiele rekordów DNS dostępnych w OVHcloud. Skupimy się w szczególno�
 
 Aby sprawdzić rekord A, którego należy użyć w strefie DNS Twojej domeny, zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.Wybierz sekcję `Hosting`{.action}, a następnie nazwę hostingu, który zakupiłeś. Następnie w zakładce `Informacje ogólne`{.action} odszukaj adres IP, który znajduje się obok `IPv4`{.action}.
 
-![Zmień rekord A](images/know-the-ovh-a-records.png){.thumbnail}
+![Zmień rekord A](images/find-ipv4.png){.thumbnail}
 
 - **Rekordy MX, dla adresów e-mail**
 
 Aby sprawdzić rekordy MX, których należy użyć w strefie Twojej domeny, zaloguj się do [Panelu klienta](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pl/&ovhSubsidiary=pl){.external}.Wybierz sekcję `E-maile`{.action}, a następnie nazwę hostingu, który zakupiłeś. Następnie w zakładce `Informacje ogólne`{.action} odszukaj informacje, które znajdują się obok `Rekordów MX`{.action}. Rekordy te mogą różnić się w zależności od filtra DNS, który postanowiłeś zastosować.
 
-![Zmień rekordy MX](images/know-the-ovh-mx-records.png){.thumbnail}
+![Zmień rekordy MX](images/find-mx-records.png){.thumbnail}
 
 #### Sprawdzanie lub modyfikowanie rekordów DNS
 

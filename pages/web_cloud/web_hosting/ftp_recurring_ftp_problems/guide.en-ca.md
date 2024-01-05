@@ -25,7 +25,7 @@ Using FTP software when logging in to your [Web Hosting plan](https://www.ovhclo
 
 ### "This server does not support FTP on TLS" (FileZilla)
 
-![filezilla_error](images/filezilla_error.png){.thumbnail}
+![doesnt-support-ftp-on-tls](images/doesnt-support-ftp-on-tls.png){.thumbnail}
 
 This message coming from [FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide) indicates that you have not enabled the SFTP or SSH option from your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca). As a result, the information exchanged between your OVHcloud hosting server and your computer will not be encrypted.
 
@@ -62,7 +62,7 @@ To check the remaining storage space on your hosting, log in to your [OVHcloud C
 
 The amount of data storage used on your Web Hosting server (excluding databases) appears in the `General information`{.action} section under `Disk space`.
 
-![disk_space](images/disk_space.png){.thumbnail}
+![disk_space](images/find-disk-space.png){.thumbnail}
 
 ### I can't transfer my files to the FTP server.
 
@@ -78,7 +78,7 @@ If you have a [Pro](https://www.ovhcloud.com/en-ca/web-hosting/professional-offe
 
 This link is installed by default on OVHcloud Web Hosting plans. It displays this image on your web browser:
 
-![site_under_construction](images/site_under_construction.png){.thumbnail}
+![site-under-construction](images/site-under-construction.png){.thumbnail}
 
 If you did not use the "[1-click module](/pages/web_cloud/web_hosting/cms_install_1_click_modules)" feature to create your website, you will need to use the [Net2FTP](/pages/web_cloud/web_hosting/ftp_connection#1-log-in-via-ftp-explorer) software accessible via the [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/en/&ovhSubsidiary=ca) in order to manually delete the "Website under construction" page.
 

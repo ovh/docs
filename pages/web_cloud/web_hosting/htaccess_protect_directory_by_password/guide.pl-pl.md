@@ -77,11 +77,11 @@ Zaloguj się do [przestrzeni dyskowej FTP](/pages/web_cloud/web_hosting/ftp_conn
 
 Utwórz plik "crypt.php" w tym katalogu głównym.
 
-![root_folder](images/root_folder.png){.thumbnail}
+![root_folder](images/root-folder.png){.thumbnail}
 
 Otwórz lub utwórz folder przeznaczony do ochrony Twojej strony WWW. W poniższym przykładzie będzie to folder "admin". Utwórz w tym katalogu plik ".htpasswd" oraz plik ".htaccess".
 
-![folder_admin](images/folder_admin.png){.thumbnail}
+![admin-folder](images/admin-folder.png){.thumbnail}
 
 Aby poprawnie korzystać z plików ".htaccess" i ".htpasswd", musisz znać i przestrzegać następujących zasad: 
 
