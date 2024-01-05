@@ -58,11 +58,11 @@ Según el plan de [hosting de OVHcloud](https://www.ovhcloud.com/es-es/web-hosti
 
 - **productos que no permiten crear un segundo usuario FTP** (*Alojamiento gratuito 100M* y *Personal*): haga clic en el *pictograma con forma de lápiz* en la columna `Contraseña`{.action} de la tabla que aparece, introduzca la nueva contraseña **respetando la política de contraseñas** y luego confirme el cambio haciendo clic en *botón verde* de validación.
 
-![change-ftp-password-step1-perso](images/change-ftp-password-step1-perso.png){.thumbnail}
+![change-ftp-password-step1-perso](images/change-ftp-password-perso.png){.thumbnail}
 
 - **Planes que permiten crear varios usuarios FTP** (planes *Pro* y *Performance*): pulse el botón `...`{.action} a la derecha del usuario FTP correspondiente y luego `Cambiar la contraseña`{.action}. Se abrirá una ventana en la que deberá introducir la nueva contraseña **respetando la política de contraseñas**, confirmarla introduciéndola por segunda vez y haciendo clic en el botón `Aceptar`{.action}.
 
-![change-ftp-password-step1-pro](images/change-ftp-password-step1-pro.png){.thumbnail}
+![change-ftp-password-pro](images/change-ftp-password-pro.png){.thumbnail}
 
 Por último, abra la pestaña `Tareas en curso`{.action} y vuelva a actualizar la página periódicamente. El cambio de contraseña tarda unos minutos en aplicarse.
 
