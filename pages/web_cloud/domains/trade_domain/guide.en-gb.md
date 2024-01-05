@@ -62,7 +62,7 @@ A new browser tab will open with all eligible domains. Select a domain name on t
 
 ![changing owner](images/3657.PNG){.thumbnail}
 
-In the owner details form, make sure to enter valid information into all the required fields. Avoid spelling mistakes and using [non-ASCII printable characters](http://facweb.cs.depaul.edu/sjost/it212/documents/ascii-pr.htm) whenever possible. Please note that any inaccurate or false information may cause a technical error and therefore a delay of the entire trading process. 
+In the owner details form, make sure to enter valid information into all the required fields. Avoid spelling mistakes and using [ASCII printable characters](http://facweb.cs.depaul.edu/sjost/it212/documents/ascii-pr.htm) whenever possible. Please note that any inaccurate or false information may cause a technical error and therefore a delay of the entire trading process. 
 
 Once you have confirmed your trade request, two emails will be sent to confirm or decline this change:
 

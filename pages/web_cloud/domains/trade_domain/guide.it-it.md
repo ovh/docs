@@ -69,7 +69,7 @@ Si apre una nuova scheda del tuo browser con tutti i domini che possono essere u
 
 ![modifica del proprietario](images/3657.PNG){.thumbnail}
 
-Nel form dei dettagli del proprietario, inserisci le informazioni valide in tutti i campi obbligatori. Prestare particolare attenzione agli errori di inserimento e utilizzare [caratteri non ASCII](http://facweb.cs.depaul.edu/sjost/it212/documents/ascii-pr.htm) per quanto possibile. Si ricorda che qualsiasi informazione inesatta o falsa può provocare un errore tecnico e quindi un ritardo dell'intero processo di scambio.
+Nel form dei dettagli del proprietario, inserisci le informazioni valide in tutti i campi obbligatori. Prestare particolare attenzione agli errori di inserimento e utilizzare [caratteri ASCII](http://facweb.cs.depaul.edu/sjost/it212/documents/ascii-pr.htm) per quanto possibile. Si ricorda che qualsiasi informazione inesatta o falsa può provocare un errore tecnico e quindi un ritardo dell'intero processo di scambio.
 
 Una volta confermata la tua richiesta, riceverai due email per confermare o annullare la tua richiesta:
 
