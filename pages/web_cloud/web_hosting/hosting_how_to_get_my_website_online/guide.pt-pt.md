@@ -71,7 +71,7 @@ Para se ligar ao espaço de armazenamento, deve dispor dos seguintes elementos:
 
 Estes elementos foram-lhe enviados por e-mail após a instalação do seu alojamento web. Se não possuir estas informações, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, na secção “Web”, e clique em `Alojamentos`{.action}. De seguida, selecione o nome do alojamento correspondente e aceda à janela `FTP - SSH`{.action}. 
 
-![siteinstallation](images/get-website-online-step1.png){.thumbnail}
+![siteinstallation](images/tab-pro.png){.thumbnail}
 
 Aparecerá a informação relativa ao seu espaço de armazenamento e terá a possibilidade de encontrar os elementos necessários para aceder mesmo. Caso seja necessário, consulte o nosso manual: [“Aceder ao espaço de armazenamento do alojamento web”](/pages/web_cloud/web_hosting/ftp_connection). Caso tenha perdido a palavra-passe, consulte o manual [“Alterar a palavra-passe de um utilizador FTP”](/pages/web_cloud/web_hosting/ftp_change_password).
 
@@ -95,7 +95,7 @@ Para verificar a pasta onde deve colocar o site, clique no separador `Multi-site
 >
 > Um ficheiro "index.php" tomará sempre o controlo sobre um ficheiro "index.html". Por conseguinte, quando ambos estiverem presentes, apenas será chamado "index.php".
 
-![siteinstallation](images/get-website-online-step2.png){.thumbnail}
+![siteinstallation](images/root-folders.png){.thumbnail}
 
 ### 3 - Associar o site a uma base de dados
 
@@ -120,7 +120,7 @@ Se pretende criar uma nova base de dados na OVHcloud, aceda à [Área de Cliente
 
 Clique em `Criar uma base de dados`{.action} ou, se este botão não aparecer, em `Ações`{.action} e `Criar uma base de dados`{.action}. Siga as indicações que surgirem.
 
-![siteinstallation](images/get-website-online-step3.png){.thumbnail}
+![siteinstallation](images/tab.png){.thumbnail}
 
 #### 3.3. Importar a base de dados existente 
 

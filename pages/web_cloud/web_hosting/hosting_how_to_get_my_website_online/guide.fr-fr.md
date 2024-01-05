@@ -66,7 +66,7 @@ Pour vous connecter à votre espace de stockage, vous devez être en possession 
 
 Ces éléments vous ont été communiqués dans l’e-mail vous notifiant l’installation de votre hébergement web. Si vous n’êtes pas en possession de ces derniers, connectez-vous à votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr){.external} dans la partie `Web Cloud`{.action}, puis cliquez sur `Hébergements`{.action}. Choisissez alors le nom de l'hébergement concerné, puis positionnez-vous sur l'onglet `FTP - SSH`{.action}. 
 
-![siteinstallation](images/get-website-online-step1.png){.thumbnail}
+![siteinstallation](images/tab-pro.png){.thumbnail}
 
 Les informations liées à votre espace de stockage apparaissent alors. Vous retrouverez les éléments requis pour vous connecter à celui-ci. Si nécessaire, nous vous invitons à consulter notre guide : [« Se connecter à l’espace de stockage de son hébergement web »](/pages/web_cloud/web_hosting/ftp_connection). Si vous n'êtes plus en possession du mot de passe, reportez-vous aux instructions décrites dans notre documentation [« Modifier le mot de passe d’un utilisateur FTP »](/pages/web_cloud/web_hosting/ftp_change_password).
 
@@ -90,7 +90,7 @@ Il se peut que vous trouviez sur votre espace de stockage un fichier s'intitulan
 >
 > Un fichier « index.php » prendra toujours le dessus sur un fichier « index.html ». Par conséquent, lorsque les deux sont présent, seul « index.php » sera appelé.
 
-![siteinstallation](images/get-website-online-step2.png){.thumbnail}
+![siteinstallation](images/root-folders.png){.thumbnail}
 
 ### Étape 3 : lier le site internet à une base de données
 
@@ -115,7 +115,7 @@ Si vous souhaitez créer une nouvelle base de données chez OVHcloud, connectez-
 
 Dès lors, cliquez sur le bouton `Créer une base de données`{.action} ou, si ce dernier n'apparaît pas, sur `Actions`{.action} puis sur `Créer une base de données`{.action}. Suivez alors les informations qui s'affichent.
 
-![siteinstallation](images/get-website-online-step3.png){.thumbnail}
+![siteinstallation](images/tab.png){.thumbnail}
 
 #### 3. Importer la base de données existante
 
