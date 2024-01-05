@@ -118,6 +118,9 @@ Cette action aura pour effet de supprimer définitivement l'instance ainsi que t
 
 Confirmez la demande de suppression dans la fenêtre qui apparaît.
 
+> [!warning]
+> La suppression d'une instance ne supprime pas automatiquement toutes les options qui lui sont associées (storage, snapshot, backup, etc...), assurez-vous que toutes les autres options associées à l'instance sont également supprimées pour arrêter d'être facturé.
+
 ### Accéder à la console VNC <a name="accessvnc"></a>
 
 Cliquez sur `Instances`{.action} dans le menu de gauche. Sur la page de gestion des instances, cliquez sur le nom de l'instance dans le tableau.
