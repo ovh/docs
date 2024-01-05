@@ -204,7 +204,7 @@ Una vez descomprimidos los archivos en su carpeta "**CMS**", [conéctese por FTP
 
 A continuación, un ejemplo con el CMS *WordPress*:
 
-![hosting](images/wpfl2.png){.thumbnail}
+![hosting](images/ftp-upload-wordpress.png){.thumbnail}
 
 > [!warning]
 

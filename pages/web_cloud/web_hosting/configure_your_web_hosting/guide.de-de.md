@@ -194,7 +194,7 @@ Mit Kenntnis dieser bearbeitbaren Einstellungen für Ihr OVHcloud Webhosting kö
 Verbinden Sie sich mit Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de){.external} und gehen Sie dann in den Bereich `Web Cloud`{.action}. Klicken Sie in der linken Spalte auf `Hosting-Pakete`{.action} und wählen Sie das betreffende Webhosting aus.
 Im Tab `Allgemeine Informationen`{.action} klicken Sie bei `Globale PHP-Version`{.action} auf `...`{.action} und dann auf `Konfiguration ändern`{.action}.
 
-![hostingConfiguration](images/change-hosting-configuration-step1.png){.thumbnail}
+![hostingConfiguration](images/modify-hosting-configuration.png){.thumbnail}
 
 > [!PRIMARY]
 >
@@ -221,7 +221,7 @@ Im Konfigurationsfenster haben Sie zwei Möglichkeiten. Wählen Sie die Aktion a
 
 Wenn Sie bereit sind, klicken Sie auf `Bestätigen`{.action}, um die Änderung zu übernehmen. Warten Sie einen Moment, bis die Operation abgeschlossen ist.
 
-![hostingConfiguration](images/change-hosting-configuration-step3.png){.thumbnail}
+![hostingConfiguration](images/modify-hosting-configuration-step-1-and-2.png){.thumbnail}
 
 ### 3 - Methode 2: Webhosting-Konfiguration in der Datei “.ovhconfig“ ändern <a name="setting-ovhconfig"></a>
 
@@ -233,13 +233,13 @@ Loggen Sie sich hierzu in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth
 
 Bezüglich des Passworts des FTP-Benutzers folgen Sie bei Bedarf den Anweisungen in unserer Dokumentation [„Passwort eines FTP-Benutzers ändern“](/pages/web_cloud/web_hosting/ftp_change_password).
 
-![ovhconfig](images/ovhconfig-step1.png){.thumbnail}
+![ovhconfig](images/tab-perso.png){.thumbnail}
 
 #### 3.2 - Datei “.ovhconfig“ abrufen oder erstellen
 
 Wenn Sie sich in Ihrem [FTP-Speicherplatz](/pages/web_cloud/web_hosting/ftp_connection) eingeloggt haben, sehen Sie alle Dateien, die derzeit auf diesem gespeichert sind. Bleiben Sie auf dem Wurzelverzeichnis Ihres Hostings (das mit „/“ angegeben werden kann). Dort finden Sie die Datei “.ovhconfig“.
 
-![ovhconfig](images/ovhconfig-step2.png){.thumbnail}
+![ovhconfig](images/ovhconfig-file.png){.thumbnail}
 
 Es gibt daher zwei Möglichkeiten:
 
@@ -358,7 +358,7 @@ Lesen Sie bei Bedarf unsere Anleitung „[Multisites auf Ihrem Webhosting konfig
 > **Es ist nicht möglich, eine zweite [Laufzeitumgebung](#runtime-environment), einen zweiten [Entwicklungsmodus](#runtime-mod) und/oder eine zweite [PHP-Engine](#php-runtime)** auf demselben Webhosting einzurichten. Es werden nur die Werte berücksichtigt, die in der Datei “.ovhconfig“ im Wurzelverzeichnis Ihres [FTP-Speicherplatzes](/pages/web_cloud/web_hosting/ftp_connection) angegeben sind.
 >
 
-![ovhconfig](images/ovhconfig-step3.png){.thumbnail}
+![ovhconfig](images/root-folders.png){.thumbnail}
 
 ## Weiterführende Informationen
 

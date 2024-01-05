@@ -53,21 +53,21 @@ Para gerar o link de recuperação, aceda à [Área de Cliente OVHcloud](https:/
 
 Selecione o separador `FTP - SSH`{.action} e clique no botão `Gerar um backup`{.action} à direita.
 
-![backupftpcw](images/GenerateABackup.png){.thumbnail}
+![backupftpcw](images/generate-a-backup.png){.thumbnail}
 
 Na nova janela, selecione um dos backups disponíveis e clique em `Seguinte`{.action}.
 
-![backupftpcw](images/GenerateABackup2.png){.thumbnail}
+![backupftpcw](images/generate-a-backup-step-1.png){.thumbnail}
 
 Aparecerá uma segunda janela que lhe indicará que o link de recuperação do ficheiro de backup lhe será enviado por e-mail e que nenhum restauro automático no seu alojamento Cloud Web será feito pela OVHcloud.
 
-![backupftpcw](images/GenerateABackup3.png){.thumbnail}
+![backupftpcw](images/generate-a-backup-step-2.png){.thumbnail}
 
 Clique em `Confirmar`{.action} para validar o seu pedido.
 
 Se a geração do backup está bem lançada, na [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.pt/&ovhSubsidiary=pt){.external}, aparecerá a seguinte mensagem:
 
-![backupftpcw](images/BackupInProgress.png){.thumbnail}
+![backupftpcw](images/message-backup-progress.png){.thumbnail}
 
 A geração do backup demora entre 10 e 15 minutos para ser realizado.
 
@@ -76,7 +76,7 @@ A geração do backup demora entre 10 e 15 minutos para ser realizado.
 Uma vez finalizada a geração do backup, receberá um e-mail no endereço de e-mail associado ao identificador administrador do seu alojamento Cloud Web.<br>
 Este e-mail contém um link de download **válido para 9 dias** a contar a partir da receção do e-mail:
 
-![backupftpcw](images/mailBackup.png){.thumbnail}
+![backupftpcw](images/backup-information.png){.thumbnail}
 
 O ficheiro assim descarregado está no formato *.tar.gz*.
 

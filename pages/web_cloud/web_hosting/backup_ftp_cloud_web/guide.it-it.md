@@ -53,21 +53,21 @@ Per generare il link di recupero, accedi al tuo [Spazio Cliente OVHcloud](https:
 
 Seleziona la scheda `FTP - SSH`{.action} e clicca sul pulsante `Genera un backup`{.action} a destra.
 
-![backupftpcw](images/GenerateABackup.png){.thumbnail}
+![backupftpcw](images/generate-a-backup.png){.thumbnail}
 
 Nella nuova finestra, seleziona uno dei backup disponibili e clicca su `Avanti`{.action}.
 
-![backupftpcw](images/GenerateABackup2.png){.thumbnail}
+![backupftpcw](images/generate-a-backup-step-1.png){.thumbnail}
 
 Si apre una nuova finestra in cui viene indicato che il link di recupero del file di backup ti verrà inviato via email e che OVHcloud non effettuerà alcun ripristino automatico sul tuo hosting Cloud Web.
 
-![backupftpcw](images/GenerateABackup3.png){.thumbnail}
+![backupftpcw](images/generate-a-backup-step-2.png){.thumbnail}
 
 Clicca su `Conferma`{.action} per confermare la tua richiesta.
 
 Se la generazione del backup è stata avviata correttamente, visualizzi questo messaggio nello [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.it/&ovhSubsidiary=it){.external}:
 
-![backupftpcw](images/BackupInProgress.png){.thumbnail}
+![backupftpcw](images/message-backup-progress.png){.thumbnail}
 
 La generazione del backup richiede tra i 10 e i 15 minuti.
 
@@ -76,7 +76,7 @@ La generazione del backup richiede tra i 10 e i 15 minuti.
 Una volta completata la generazione del backup, ricevi un'email all'indirizzo email associato all'identificativo amministratore del tuo hosting Cloud Web.<br>
 Questa email contiene un link di download **valido 9 giorni** a partire dalla ricezione dell'email:
 
-![backupftpcw](images/mailBackup.png){.thumbnail}
+![backupftpcw](images/backup-information.png){.thumbnail}
 
 Il file caricato è in formato *.tar.gz*.
 

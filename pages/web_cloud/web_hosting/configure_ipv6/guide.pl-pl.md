@@ -49,7 +49,7 @@ Zaloguj się do [Panelu klienta OVHcloud](https://www.ovh.com/auth/?action=gotom
 
 W ramce **IPv6** skopiuj wpis i przejdź do kolejnego etapu.
 
-![IPv6](images/ipv6_01.png){.thumbnail}
+![IPv6](images/find-ipv6.png){.thumbnail}
 
 ### Etap 2: skonfiguruj aktywną strefę DNS Twojej domeny
 
@@ -66,7 +66,7 @@ W części `Web Cloud`{.action} kliknij `Domeny`{.action}. Wybierz nazwę domeny
 
 Wpisz wcześniej skopiowany adres IPv6, używając typu rekordu **AAAA**.
 
-![IPv6](images/ipv6_02.png){.thumbnail}
+![IPv6](images/add-dns-zone-entry-aaaa.png){.thumbnail}
 
 ## Przejdź dalej <a name="go-further"></a>
 

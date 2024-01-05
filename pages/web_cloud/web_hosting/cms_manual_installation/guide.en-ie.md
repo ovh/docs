@@ -200,7 +200,7 @@ Once you have unpacked the files in your **CMS** folder, [log in to your storage
 
 Below is an example with the CMS *WordPress*:
 
-![hosting](images/wpfl2.png){.thumbnail}
+![hosting](images/ftp-upload-wordpress.png){.thumbnail}
 
 >[!warning]
 >

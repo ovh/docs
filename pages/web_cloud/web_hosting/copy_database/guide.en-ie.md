@@ -42,35 +42,35 @@ Depending on your situation, the path to your source database is different.
 
 In your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), select `Web Cloud`{.action} in the menu at the top of the interface. In the left-hand column, go to the `Hosting plans`{.action} tab, then click on the web hosting plan that contains the source database you want to duplicate.
 
-![Hosting list](images/list-web-hosting.png){.thumbnail}
+![Hosting list](images/web-hosting-selection.png){.thumbnail}
 
 By clicking on the `Databases`{.action} tab, you will see a list of your Start SQL databases.
 
-![List of SQL Start databases](images/list-bdd-startsql.png){.thumbnail}
+![List of SQL Start databases](images/sharedsql-dashboard-db-list.png){.thumbnail}
 
 #### Web Cloud Databases
 
 In your [OVHcloud Control Panel](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.ie/&ovhSubsidiary=ie), select `Web Cloud`{.action} in the menu at the top of the interface. In the left-hand column, go to the `Web Cloud Databases`{.action} tab, then select the Web Cloud Databases server that contains the source database you want to duplicate.
 
-![WCD Server List](images/list-wcd-server.png){.thumbnail}
+![WCD Server List](images/wcdb-server-selection.png){.thumbnail}
 
 By clicking on the `Databases`{.action} tab, you will see a list of the databases on your Web Cloud Databases server.
 
-![WCD DB List](images/list-database-wcd.png){.thumbnail}
+![WCD DB List](images/wcdb-dashboard-db-list.png){.thumbnail}
 
 ### Copy the contents of a database
 
 In the `Databases`{.action} tab, regardless of your solution, click the `...`{.action} button to the right of the row of the database you want to duplicate, then select `Copy database`{.action}.
 
-![CTA_copy_DB](images/cta-copy-database.png){.thumbnail}
+![CTA_copy_DB](images/copy-db-tool.png){.thumbnail}
 
 A window will pop up to identify your destination database.
 
-![Copy DB Interface](images/interface-copy-database.png){.thumbnail}
+![Copy DB Interface](images/copy-db-tool-step-1.png){.thumbnail}
 
 If you do not have a destination database, click on the link to purchase a new database as shown in the screenshot below.
 
-![WCD DB List](images/link-buy-database.png){.thumbnail}
+![WCD DB List](images/copy-db-tool-link-to-buy-db.png){.thumbnail}
 
 You can choose between a [Start SQL](https://www.ovhcloud.com/en-ie/web-hosting/options/start-sql/) solution, or a [Web Cloud Databases](https://www.ovhcloud.com/en-ie/web-cloud/databases/) server.
 
@@ -93,17 +93,17 @@ You have selected `Copy to database`{.action}. Two drop-down lists appear. Click
 
 Click `Next`{.action}. The following confirmation message is displayed:
 
-![Copy DB confirmation message](images/confirmation-copy-database.png){.thumbnail}
+![Copy DB confirmation message](images/copy-db-tool-step-2.png){.thumbnail}
 
 If you do not want to overwrite the destination database you have chosen, click `Back`{.action} to change your choice, or `Cancel`{.action} to cancel everything. Otherwise, click `Confirm`{.action} to confirm that you want to duplicate the contents of the source database to the destination database.
 
 The following confirmation message is displayed:
 
-![Database success message](images/success-copy-database.png){.thumbnail}
+![Database success message](images/copy-db-tool-copied-successfull.png){.thumbnail}
 
 It may take several minutes to copy the database. To check the progress, go to the `Ongoing tasks`{.action} tab. In the table, a new row will appear for your copy with a status of "scheduled". Once the operation is complete, the line disappears.
 
-![Ongoing tasks](images/ongoing-tasks.png){.thumbnail}
+![Ongoing tasks](images/copy-db-tool-ongoing-tasks.png){.thumbnail}
 
 #### Choice 2 - Copy to a database on a Web Cloud Databases server
 
@@ -111,13 +111,13 @@ You have selected `Copy to a Web Cloud Databases`{.action}. Two drop-down lists 
 
 Click `Next`{.action}. The following confirmation message is displayed:
 
-![Copy DB confirmation message](images/confirmation-copy-database.png){.thumbnail}
+![Copy DB confirmation message](images/copy-db-tool-step-2.png){.thumbnail}
 
 If you do not want to overwrite the destination database you have chosen, click `Back`{.action} to change your choice, or `Cancel`{.action} to cancel everything. Otherwise, click `Confirm`{.action} to confirm that you want to duplicate the contents of the source database to the destination database.
 
 It may take several minutes to copy the database. To check the progress, go to the `Ongoing tasks`{.action} tab. In the table, a new row will appear for your copy with a status of "scheduled". Once the operation is complete, the line disappears.
 
-![Ongoing tasks](images/ongoing-tasks.png){.thumbnail}
+![Ongoing tasks](images/copy-db-tool-ongoing-tasks.png){.thumbnail}
 
 ### Configuring your website with a new database
 

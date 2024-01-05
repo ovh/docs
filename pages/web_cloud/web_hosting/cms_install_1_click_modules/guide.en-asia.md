@@ -39,7 +39,7 @@ Using this solution, you will need to choose from the 4 CMSs listed above. If yo
 
 If you would like to install a CMS that is not available as a 1-click modules, you can install it manually on your web hosting plan. This is provided that the CMS is compatible with our [OVHcloud web hosting offers](https://www.ovhcloud.com/asia/web-hosting/).
 
-![CMS logos](images/CMS_logo.png){.thumbnail}
+![CMS logos](images/cms-logos.png){.thumbnail}
 
 ### Step 2: Access the 1-click module manager
 
@@ -47,7 +47,7 @@ Log in to your [OVHcloud Control Panel](https://ca.ovh.com/auth/?action=gotomana
 
 You will find any 1-click modules already installed. You can manage your 1-click modules and install new ones.
 
-![Access to the 1-click modules section](images/access_to_the_1_click_modules_section.png){.thumbnail}
+![Access to the 1-click modules section](images/1-click-modules-section.png){.thumbnail}
 
 ### Step 3: Add a 1-click module
 
@@ -55,7 +55,7 @@ In the `1-click modules`{.action} tab of your hosting, click on the `Add a modul
 
 In the window that pops up, choose the CMS you want to use, then select the domain name you want to set up your website with:
 
-![Choose a module](images/add_a_module.png){.thumbnail}
+![Choose a module](images/add-a-module-select-module-and-domain.png){.thumbnail}
 
 If your domain is not in the list, go to the `Multisite`{.action} tab to add it. See our guide [Hosting multiple websites on your web hosting plan](/pages/web_cloud/web_hosting/multisites_configure_multisite){.external} if required.
 
@@ -90,7 +90,7 @@ Choose the domain name for your CMS, verify the target directory that will appea
 > For a quick installation, do not create the database beforehand because the installation robot will take care of it.
 >
 
-![Basic module installation](images/choose_installation.png){.thumbnail}
+![Basic module installation](images/add-a-module-quick-mod-step-1-b.png){.thumbnail}
 
 Once the installation is complete, you will receive an email containing the login details for your CMS administrator interface (back office). Log in to the interface to customise your website.
 
@@ -103,7 +103,7 @@ Once the installation is complete, you will receive an email containing the logi
 
 To perform this installation method, ensure that the `Installation in advanced mode`{.action} box is ticked, then click `Next`{.action}:
 
-![Advanced module installation](images/advanced_installation.png){.thumbnail}
+![Advanced module installation](images/add-a-module-advanced-mod-step-1.png){.thumbnail}
 
 ##### Choose a database
 
@@ -118,7 +118,7 @@ Enter the information required to connect to your database.
 > To retrieve the login details for a database created on a Cloud Web Databases instance, please refer to [this guide](/pages/web_cloud/web_cloud_databases/starting_with_clouddb).
 >
 
-![Database for advanced installation](images/advanced_installation_database.png){.thumbnail}
+![Database for advanced installation](images/add-a-module-advanced-mod-step-3.png){.thumbnail}
 
 There are several possibilities:
 
@@ -177,13 +177,13 @@ Once you have entered this information, click `Next`{.action}:
 > The final folder specified in the installation path must be completely empty for the installation to succeed.
 >
 
-![Module configuration for advanced installation](images/advanced_installation_configuration.png){.thumbnail}
+![Module configuration for advanced installation](images/add-a-module-advanced-mod-step-2.png){.thumbnail}
 
 ##### Confirm the installation
 
 Check the information displayed, then click on `Confirm`{.action} if everything is in order:
 
-![Validating installation in advanced mode](images/advanced_installation_summary.png){.thumbnail}
+![Validating installation in advanced mode](images/add-a-module-advanced-mod-step-4.png){.thumbnail}
 
 ### Step 4: Customise your website
 

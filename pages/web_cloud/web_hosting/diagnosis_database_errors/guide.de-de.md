@@ -30,6 +30,8 @@ Bei der Nutzung von Datenbanken können Unregelmäßigkeiten auftreten. Fehler b
 
 ### Verbindungsfehler "Error establishing a database connection"
 
+![error_establishing_a_DB_connection](images/error-establishing-a-db-connection.png){.thumbnail}
+
 #### Auf aktuelle Störungen überprüfen
 
 Überprüfen Sie zunächst auf [https://web-cloud.status-ovhcloud.com/](https://web-cloud.status-ovhcloud.com/), ob Ihr Rechenzentrum, Hosting-Cluster oder Web Cloud Databases Server von einer Störung auf der OVHcloud Infrastruktur betroffen sind.
@@ -95,7 +97,7 @@ In Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&fr
 
 Sie haben eine E-Mail darüber erhalten, dass die Datenmenge Ihrer Datenbank die erlaubte Grenze überschreitet. Ihre Datenbank wurde deshalb auf Read-only gesetzt, was Änderungen an der Website verhindert.
 
-![overquota](images/mail_overquota.png){.thumbnail}
+![overquota](images/overquota-db.png){.thumbnail}
 
 Sie können Ihre Datenbank mit drei Methoden entsperren:
 
@@ -153,7 +155,7 @@ Um Ihre Datenbank zu optimieren, folgen Sie den Anweisungen in unserer Anleitung
 
 In der unten abgebildeten Nachricht im Bereich `Datenbanken`{.action} in Ihrem [OVHcloud Kundencenter](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) wird darauf hingewiesen, dass Ihre [Web Cloud Databases](https://www.ovh.de/cloud/cloud-databases/) zu viele Ressourcen auf der OVHcloud Infrastruktur verbraucht hat:
 
-![quota_exceeding](images/quota_exceeding.png){.thumbnail}
+![ram-exceeded](images/ram-exceeded.png){.thumbnail}
 
 In diesem Fall können Sie die [RAM-Kapazität](/pages/web_cloud/web_cloud_databases/configure-database-server#wechseln-des-datenbank-angebots) im Bereich `Datenbanken`{.action} Ihres [OVHcloud Kundencenters](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.de/&ovhSubsidiary=de) erhöhen. Klicken Sie im Tab `Allgemeine Informationen`{.action} auf die Schaltfläche `...`{.action} im Bereich `RAM`.
 
@@ -187,7 +189,7 @@ Vergewissern Sie sich zunächst, dass Ihre Datenbank leer ist. Klicken Sie auf `
 
 Sie können beim [Datenbank-Import](/pages/web_cloud/web_hosting/sql_importing_mysql_database#eigene-backup-datei-uber-das-kundencenter-importieren) auch die Option `Datenbank leeren`{.action} anhaken. 
 
-![database-import](images/database-import-empty.png){.thumbnail}
+![database-import](images/import-empty-current-db.png){.thumbnail}
 
 Kontaktieren Sie gegebenenfalls unsere [Community](https://community.ovh.com/en/) oder einen [[spezialisierten Dienstleister](https://partner.ovhcloud.com/de/directory/)](https://partner.ovhcloud.com/de/directory/). Wir werden Sie in diesem Fall nicht unterstützen können.
 

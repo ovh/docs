@@ -204,7 +204,7 @@ Po rozpakowaniu plików w Twoim katalogu "**CMS**", [zaloguj się przez FTP do p
 
 Przykład systemu CMS *WordPress*:
 
-![hosting](images/wpfl2.png){.thumbnail}
+![hosting](images/ftp-upload-wordpress.png){.thumbnail}
 
 > [!warning]
 >

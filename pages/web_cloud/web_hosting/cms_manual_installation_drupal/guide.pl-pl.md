@@ -55,7 +55,7 @@ Wpisz nazwę domeny na pasku wyszukiwania przeglądarki internetowej.
 
 Jeśli pliki źródłowe Drupal zostały poprawnie umieszczone w katalogu głównym, wyświetli się strona z listą wyboru języka dla Drupal:
 
-![Drupal instalacja step 1](images/Drupal-install-language-1.png){.thumbnail}
+![Drupal instalacja step 1](images/install-language-1.png){.thumbnail}
 
 Wybierz język strony i kliknij na `Save and Continue`{.action}.
 
@@ -67,7 +67,7 @@ Drupal oferuje kilka poziomów instalacji:
 - wersja minimalna
 - wersja prezentacji 
 
-![Drupal instalacja step 2](images/Drupal-install-profil-2.png){.thumbnail}
+![Drupal instalacja step 2](images/install-profil-2.png){.thumbnail}
 
 Zalecamy przeprowadzenie instalacji **Standard**. Następnie kliknij polecenie `Save and Continue`{.action}.
 
@@ -75,7 +75,7 @@ Zalecamy przeprowadzenie instalacji **Standard**. Następnie kliknij polecenie `
 
 Wpisz wymagane informacje dotyczące bazy danych:
 
-![Drupal instalacja step 3](images/Drupal-install-db-config-3.png){.thumbnail}
+![Drupal instalacja step 3](images/install-db-config-3.png){.thumbnail}
 
 Przygotuj dane dostępowe do bazy danych (w razie potrzeby sprawdź **etap 1.4** w przewodniku dotyczącym [ręczna instalacja CMS](/pages/web_cloud/web_hosting/cms_manual_installation).
 
@@ -106,13 +106,13 @@ Kliknij polecenie `Save and Continue`{.action}.
 
 Jeśli wszystko zostało poprawnie zrealizowane, Drupal zostanie uruchomiony:
 
-![Drupal instalacja step 4](images/Drupal-install-4.png){.thumbnail}
+![Drupal instalacja step 4](images/install-4.png){.thumbnail}
 
 #### 2.4 - Skonfiguruj informacje o stronie WWW i dostęp "Administrator"
 
 Po zakończeniu poprzedniego etapu wyświetli się następująca strona:
 
-![Drupal instalacja step 5-1](images/Drupal-install-configure-site-5-1.png){.thumbnail}
+![Drupal instalacja step 5-1](images/install-configure-site-5-1.png){.thumbnail}
 
 Wpisz wymagane elementy:
 
@@ -126,7 +126,7 @@ Wpisz wymagane elementy:
 
 Następnie przejdź do dołu strony:
 
-![Drupal instalacja step 5-1](images/Drupal-install-configure-site-5-2.png){.thumbnail}
+![Drupal instalacja step 5-1](images/install-configure-site-5-2.png){.thumbnail}
 
 - *Email address*: wprowadź Twój adres e-mail. W idealnym przypadku wprowadź ten sam adres, który został wskazany powyżej w formularzu *Adres e-mail strony*.
 
@@ -138,7 +138,7 @@ Kliknij polecenie `Save and Continue`{.action}.
 
 Jeśli wszystko przebiegło pomyślnie, wyświetli się następna strona:
 
-![Drupal instalacja step 6](images/Drupal-install-ending-6.png){.thumbnail}
+![Drupal instalacja step 6](images/install-ending-6.png){.thumbnail}
 
 > [!success]
 >

@@ -27,7 +27,7 @@ L'utilisation de vos bases de données peut entraîner un certain nombre d'anoma
 
 ### « Erreur lors de la connexion à la base de données »
 
-![error_establishing_a_DB_connection](images/error_establishing_a_DB_connection.png){.thumbnail}
+![error_establishing_a_DB_connection](images/error-establishing-a-db-connection.png){.thumbnail}
 
 #### Vérifier les incidents en cours
 
@@ -94,7 +94,7 @@ Dans votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&
 
 Vous avez reçu un e-mail de nos services indiquant que la quantité de données sur votre base dépasse la limite autorisée. Votre base est donc passée en lecture seule. Ceci empêche toute modification de votre site.
 
-![mail_overquota](images/mail_overquota.png){.thumbnail}
+![database-overquota-notification-email](images/overquota-db.png){.thumbnail}
 
 Trois méthodes vous permettront de débloquer votre base de données :
 
@@ -152,7 +152,7 @@ Pour optimiser votre base de données, suivez les instructions de notre guide «
 
 Le message suivant dans la partie `Bases de données`{.action} de votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc) indique que votre serveur [Web Cloud Databases](/pages/web_cloud/web_cloud_databases/starting_with_clouddb) ou [Cloud Databases](https://www.ovhcloud.com/fr-ca/web-cloud/databases/) a consommé une quantité de ressources trop importantes sur l'infrastructure OVHcloud :
 
-![quota_exceeding](images/quota_exceeding.png){.thumbnail}
+![ram-exceeded](images/ram-exceeded.png){.thumbnail}
 
 Dans cette situation, vous pouvez augmenter la [quantité de mémoire RAM](/pages/web_cloud/web_cloud_databases/configure-database-server#modifier-loffre-du-serveur-de-bases-de-donnees) disponible depuis la partie `Bases de données`{.action} de votre [espace client OVHcloud](https://ca.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/ca/fr/&ovhSubsidiary=qc). Dans l'onglet `Informations générales`{.action}, cliquez sur le bouton `...`{.action} dans la rubrique `RAM`.
 
@@ -188,7 +188,7 @@ Dans le cas contraire, [sauvegardez les données présentes](/pages/web_cloud/we
 
 Vous pouvez également cocher la case `Vider la base de données actuelle`{.action} juste avant de [lancer l'import](/pages/web_cloud/web_hosting/sql_importing_mysql_database#importer-votre-propre-sauvegarde-depuis-lespace-client) :
 
-![database-import-empty](images/database-import-empty.png){.thumbnail}
+![import-empty-current-db](images/import-empty-current-db.png){.thumbnail}
 
 Contactez si besoin notre [communauté d'utilisateurs](https://community.ovh.com) ou un [prestataire spécialisé](https://partner.ovhcloud.com/fr-ca/directory/) à ce sujet. Nous ne serons pas en mesure de vous fournir une assistance sur la correction de cette anomalie.
 

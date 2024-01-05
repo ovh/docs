@@ -204,7 +204,7 @@ Una volta che i file decomprimono la cartella "**CMS**", [collegati in FTP al tu
 
 Di seguito, un esempio con il CMS *WordPress*:
 
-![hosting](images/wpfl2.png){.thumbnail}
+![hosting](images/ftp-upload-wordpress.png){.thumbnail}
 
 > [!warning]
 >
