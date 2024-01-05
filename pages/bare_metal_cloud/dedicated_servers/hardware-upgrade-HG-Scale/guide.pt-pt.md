@@ -42,7 +42,7 @@ Uma vez a encomenda paga, será enviado um e-mail de confirmação à sua conta 
 
 Clique no link presente no e-mail e será reencaminhado para o painel de controlo do servidor dedicado. Desta vez, clique em `Planear a sua intervenção`{.action}.
 
-![schedule intervenção](images/ramintervenção.png){.thumbnail}
+![schedule intervenção](images/ramintervention.png){.thumbnail}
 
 Marque a caixa em `Efetuou um backup dos seus dados?`{.action} e selecione a data e a hora entre as faixas horárias propostas. Tenha em conta que a intervenção dos técnicos dos nossos datacenters requer um período de preparação. A primeira data de disponibilidade é definida após um período mínimo de 10 dias.
 

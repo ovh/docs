@@ -4,6 +4,10 @@ excerpt: Erfahren Sie hier, wie Sie über das OVHcloud Kundencenter ein Hardware
 updated: 2024-01-04
 ---
 
+> [!primary]
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
+>
+
 ## Ziel
 
 Dedicated Server der Reihen High Grade und SCALE bieten Ihnen eine Skalierungsoption, mit der Sie Speicherplatz und RAM erhöhen können.
@@ -32,7 +36,7 @@ Klicken Sie im Tab `Hardware`{.action} auf `RAM hinzufügen`{.action}.
 
 Wählen Sie auf der nächsten Seite die gewünschte Speicheroption aus und klicken Sie auf `Bestellen`{.action}.
 
-![Storage Option](images/Selectram.png){.thumbnail}
+![Storage Option](images/selectram.png){.thumbnail}
 
 Sobald die Bestellung bezahlt wurde, erhalten Sie eine E-Mail mit einem Link, um den Eingriff für das RAM-Upgrade zu planen.
 
@@ -52,7 +56,7 @@ Sie erhalten dann eine E-Mail, in der Datum und Uhrzeit des Eingriffs bestätigt
 
 Klicken Sie im Tab `Hardware`{.action} auf `Storage erhöhen`{.action}.
 
-![increase Storage](images/increaseStorage.png){.thumbnail}
+![increase Storage](images/increasestorage.png){.thumbnail}
 
 Wählen Sie auf der nächsten Seite die gewünschte Speicheroption aus und klicken Sie auf `Bestellen`{.action}.
 

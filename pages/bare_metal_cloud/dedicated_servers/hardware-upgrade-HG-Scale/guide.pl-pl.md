@@ -1,7 +1,7 @@
 ---
 title: "Modernizacja sprzętu na serwerze dedykowanym High Grade lub Scale"
 excerpt: 'Dowiedz się, jak przeprowadzić modernizację sprzętu zarówno dla gam High Grade, jak i Scale, z poziomu Panelu klienta'
-Updated: 2024-01-04
+updated: 2024-01-04
 ---
 
 > [!primary]
