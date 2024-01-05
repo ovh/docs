@@ -77,11 +77,11 @@ Accedi a [lo spazio di storage FTP](/pages/web_cloud/web_hosting/ftp_connection)
 
 Crea un file "crypt.php" in questa "cartella root".
 
-![root_folder](images/root_folder.png){.thumbnail}
+![root_folder](images/root-folder.png){.thumbnail}
 
 Apri o crea la cartella per essere protetta dal tuo sito Web. Nel nostro esempio, si tratterà della cartella "admin". Crea in questa directory un file ".htpasswd" e un file ".htaccess".
 
-![folder_admin](images/folder_admin.png){.thumbnail}
+![admin-folder](images/admin-folder.png){.thumbnail}
 
 Per utilizzare correttamente i file ".htaccess" e ".htpasswd", è necessario conoscere e rispettare queste regole: 
 
