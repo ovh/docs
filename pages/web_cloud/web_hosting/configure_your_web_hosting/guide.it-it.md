@@ -233,7 +233,7 @@ Per farlo, accedi al tuo [Spazio Cliente OVHcloud](https://www.ovh.com/auth/?act
 
 Per conoscere la password associata a un utente FTP, consulta le istruzioni fornite nella nostra guida ["Modificare la password di un utente FTP"](/pages/web_cloud/web_hosting/ftp_change_password).
 
-![ovhconfig](images/tab-ftp-ssh.png){.thumbnail}
+![ovhconfig](images/tab-perso.png){.thumbnail}
 
 #### 3.2 - Recuperare o creare il file ".ovhconfig"
 

@@ -233,7 +233,7 @@ Para isso, aceda à [Área de Cliente OVHcloud](https://www.ovh.com/auth/?action
 
 Se for caso disso, consulte as instruções descritas na nossa documentação ["Alterar a palavra-passe de um utilizador FTP"](/pages/web_cloud/web_hosting/ftp_change_password) para obter uma palavra-passe para o utilizador FTP.
 
-![ovhconfig](images/tab-ftp-ssh.png){.thumbnail}
+![ovhconfig](images/tab-perso.png){.thumbnail}
 
 #### 3.2 - Recuperar ou criar o ficheiro ".ovhconfig"
 
