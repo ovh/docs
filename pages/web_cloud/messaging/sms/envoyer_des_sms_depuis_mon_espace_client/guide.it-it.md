@@ -43,6 +43,10 @@ Per maggiori informazioni consulta la [guida sulle rubriche SMS](/pages/web_clou
 
 ### Step 2: digita il tuo SMS
 
+> [!primary]
+>
+> Per motivi legali, gli SMS a carattere commerciale saranno inviati esclusivamente tra le **8:00 e le 20:00, dal lunedì al sabato**.
+
 Una volta selezionato il mittente e inseriti i destinatari, è possibile iniziare a digitare il messaggio.
 
 ![envoi sms manager](images/sms-send-control-panel03E.png){.thumbnail}
