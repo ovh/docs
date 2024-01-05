@@ -13,7 +13,7 @@ To get the application, go to the official Cyberduck website:
 
 - Official Cyberduck website: [cyberduck.io](https://cyberduck.io/)
 
-![cyberduck macOS](images/2344.png){.thumbnail}
+![cyberduck macOS](images/logo.png){.thumbnail}
 Cyberduck is an application for Mac users. If you have a machine that uses Windows, use [FileZilla](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide) instead.
 
 ## Interface
@@ -25,7 +25,7 @@ From the first time you start up the application, you will see this window.
 
 - The lower section allows you to get information on any actions in progress (connecting to the FTP server) as well as various icons to add a new Bookmark, for example.
 
-![cyberduck macOS](images/2343.png){.thumbnail}
+![cyberduck macOS](images/start-page.png){.thumbnail}
 
 Customise the Cyberduck display
 You can customise the Cyberduck display to make it more efficient and adapted to your needs.
@@ -34,7 +34,7 @@ To do this, click View then Customise the toolbar.
 
 In the window that appears, drag the elements you want to show in your display to the toolbar. To validate your changes, click Done.
 
-![cyberduck macOS](images/2345.png){.thumbnail}
+![cyberduck macOS](images/customize-display.png){.thumbnail}
 
 ## FTP connection
 Follow the below steps to connect to your FTP server:
@@ -52,7 +52,7 @@ Follow the below steps to connect to your FTP server:
 
 4. Click Connect to connect to your FTP server.
 
-![cyberduck macOS](images/2361.png){.thumbnail}
+![cyberduck macOS](images/ftp-connection.png){.thumbnail}
 
 - Cyberduck will remember your password if you tick Add to Keychain. This is not obligatory, but if you do not tick this box, you will need to re-enter your password every time you connect.
 
@@ -64,7 +64,7 @@ A message should appear notifying you that the server supports encrypted connect
 
 - If you want to use a secure connection, you must use an [SFTP connection](#utiliser_cyberduck_connexion_sftp). However, this connection is only available if SSH access is included in your web hosting plan.
 
-![cyberduck macOS](images/2349.png){.thumbnail}
+![cyberduck macOS](images/ftp-ssl-connection.png){.thumbnail}
 
 - If you do not know if SSH is included in your web hosting plan, have a look at the [details of our web hosting plans](https://www.ovhcloud.com/en/web-hosting/).
 
@@ -96,7 +96,7 @@ Follow the below steps to connect to your FTP server:
 
 4. Click Connect to connect to your FTP server.
 
-![cyberduck macOS](images/2362.png){.thumbnail}
+![cyberduck macOS](images/sftp-connection.png){.thumbnail}
 
 - Cyberduck will remember your password if you tick Add to Keychain. This is not obligatory, but if you do not tick this box, you will need to re-enter your password every time you connect.
 
@@ -106,7 +106,7 @@ When you connect to your FTP server for the first time, a System does not recogn
 
 - Click the Always box and click on  Allow. This will verify the connection host (OVH) for all future connections.
 
-![cyberduck macOS](images/2363.png){.thumbnail}
+![cyberduck macOS](images/host-unknow-confirmation.png){.thumbnail}
 
 - We recommend that you save your login information in a Bookmark. This will allow you to retain a copy of this information.
 
@@ -121,7 +121,7 @@ You will also see this message: 530 Login authentification failed. In most cases
 
 - If necessary, you will also need to update the Bookmark you created (by selecting it and clicking on the pencil icon)/.
 
-![cyberduck macOS](images/2352.png){.thumbnail}
+![cyberduck macOS](images/open-session-failed.png){.thumbnail}
 
 - If you do not know your FTP login details, see [this guide](/pages/web_cloud/web_hosting/ftp_connection).
 
@@ -134,7 +134,7 @@ You will also see this message: Timed out waiting for initial connect reply. In 
 
 This may also be caused by a firewall or local network blocking port 21 or 22, which are used to connect to the FTP server. In this case, you must verify your personal configuration.
 
-![cyberduck macOS](images/2353.png){.thumbnail}
+![cyberduck macOS](images/connection-failed.png){.thumbnail}
 
 - As a reminder, your connection to your virtual host for your website on our servers is ftp.your-domain.tld (remplace with your domain name) or ftp.clusterXXX.ovh.net (replace XXX by your cluster number).
 
@@ -149,7 +149,7 @@ To do this:
 - Navigate to Bookmarks (blue square and green square in the image)
 - Click the [+] logo in the bottom left of the window
 
-![cyberduck macOS](images/2346.png){.thumbnail}
+![cyberduck macOS](images/signet.png){.thumbnail}
 A new window with your login details will appear. The next time you log in to Cyberduck, you may double-click on the Bookmark to connect more quickly.
 
 ## File transfer
@@ -161,13 +161,13 @@ To transfer your files using FTP, you can simply drag and drop them from the win
 
 - Once this is done, your files will automatically be queued to be uploaded to the server. You will see the queue in a new window.
 
-![cyberduck macOS](images/2354.png){.thumbnail}
+![cyberduck macOS](images/drag-drop-transfert-file.png){.thumbnail}
 Via the Transfer interface
 You may use the Transfer interface. This will open a window in which you can see all your files. You will need to select the files you wish to transfer and click Transfer.
 
 - Once this is done, your files will automatically be queued to be uploaded to the server. You will see the queue in a new window.
 
-![cyberduck macOS](images/2355.png){.thumbnail}
+![cyberduck macOS](images/transfert-files.png){.thumbnail}
 See transfers in progress
 You can see your the history of your transfers to your web server. Here you will find:
 
@@ -180,7 +180,7 @@ You can see this window in two ways:
 - it will automatically open when the transfer begins
 - by clicking Window the Transfers
 
-![cyberduck macOS](images/2356.png){.thumbnail}
+![cyberduck macOS](images/transfert-files-progression.png){.thumbnail}
 
 ## Possible actions on a file/folder
 By selecting a file or folder on your web server (in the Cyberduck browser), you will be able to perform various Actions.
@@ -196,7 +196,7 @@ Notably, you will be able to:
 
 The above is not an exhaustive list; you can also perform other actions. Go to the Cyberduck website for more information.
 
-![cyberduck macOS](images/2357.png){.thumbnail}
+![cyberduck macOS](images/action-on-folder.png){.thumbnail}
 
 ## Files and folder permissions
 You have the option to change permissions (CHMOD) on  files and folders on your web server.
@@ -214,7 +214,7 @@ In the new window, click Permissions, then make your changes.
 - Unix permissions: the value will automatically update the permissions for each of these three categories of users.
 - Tick the boxes of your choice: the value will automatically update for Unix permissions.
 
-![cyberduck macOS](images/2358.png){.thumbnail}
+![cyberduck macOS](images/unix-permissions.png){.thumbnail}
 
 ## Re-open the website
 You have the option to re-open your website by running a custom command.
@@ -226,7 +226,7 @@ To use this command:
 - Click Go
 - Click Send Command
 
-![cyberduck macOS](images/2359.png){.thumbnail}
+![cyberduck macOS](images/send-ftp-command.png){.thumbnail}
 In the new window, enter the following command:
 
 - CHMOD 705 /
@@ -236,7 +236,7 @@ The 200 Permissions changed on / message should appear in the box beneath the co
 
 - To verify that the website has been re-opened, simply check it in a web browser.
 
-![cyberduck macOS](images/2360.png){.thumbnail}
+![cyberduck macOS](images/site-chmod-705-command.png){.thumbnail}
 This command cannot be used in SFTP. To perform it, use an [FTP connection](#utiliser_cyberduck_connexion_ftp).
 
 - As a reminder, please check the to see if your website is back online after a maximum of three hours. Our robots check for any modifications every three hours, so your website can take any time up to three hours to go back online.
@@ -259,5 +259,5 @@ A box should appear beneath the Cyberduck window. Then:
 - Go back up to the Toggle Log
 - Remove the webmXXX
 
-![cyberduck macOS](images/2364.png){.thumbnail}
+![cyberduck macOS](images/show-hidden-daily.png){.thumbnail}
 

@@ -13,7 +13,7 @@ Aby skorzystać z tego programu, przejdź na oficjalną stronę aplikacji:
 
 - Oficjalna strona Cyberduck (nie strona OVH): [cyberduck.io](https://cyberduck.io/)
 
-![cyberduck macOS](images/2344.png){.thumbnail}
+![cyberduck macOS](images/logo.png){.thumbnail}
 Cyberduck to aplikacja dla użytkowników korzystających z systemu MAC. Jeśli masz system Windows, skorzystaj z programu FileZilla: [](/pages/web_cloud/web_hosting/ftp_filezilla_user_guide))
 
 ## Interfejs
@@ -25,7 +25,7 @@ Podczas pierwszego uruchamiania aplikacji, pojawi się to okno.
 
 - Dolna strefa pozwala na uzyskanie informacji na temat aktualnie wykonywanej operacji (połączenie z serwerem FTP) oraz logów do dodania nowej zakładki.
 
-![cyberduck macOS](images/2343.png){.thumbnail}
+![cyberduck macOS](images/start-page.png){.thumbnail}
 Personalizacja wyświetlania w aplikacji Cyberduck
 Można spersonalizować wyświetlanie w aplikacji Cyberduck.
 
@@ -33,7 +33,7 @@ Aby tego dokonać, kliknij na Prezentacja i na Personalizacja paska narzędzi...
 
 W ramce, która się pojawi, przenieś wybrane elementy na pasek narzędzi. Aby zatwierdzić zmiany, kliknij na Zakończone
 
-![cyberduck macOS](images/2345.png){.thumbnail}
+![cyberduck macOS](images/customize-display.png){.thumbnail}
 
 ## Logowanie do FTP
 Aby się zalogować do przestrzeni hostingu (FTP), przejdź poniższe etapy:
@@ -51,7 +51,7 @@ Aby się zalogować do przestrzeni hostingu (FTP), przejdź poniższe etapy:
 
 4. Kliknij na Połączenie, aby się zalogować do przestrzeni dyskowej hostingu (FTP).
 
-![cyberduck macOS](images/2361.png){.thumbnail}
+![cyberduck macOS](images/ftp-connection.png){.thumbnail}
 
 - Możesz zarejestrować hasło w programie Cyberduck zaznaczając pole Zapamiętaj hasło. Wybór ten nie jest obowiązkowy. Jeśli nie zaznaczysz tej opcji, będziesz musiał podawać hasło, aby zalogować się do przestrzeni dyskowej hostingu. 
 
@@ -63,7 +63,7 @@ Pojawi się komunikat z ostrzeżeniem informujący, że serwer obsługuje połą
 
 - Jeśli chcesz używać szyfrowanego połączenia, skorzystaj z [połączenia SFTP](#utiliser_cyberduck_connexion_sftp). Połączenie tego typu jest dostępne tylko, gdy Twoja oferta hostingu www ma dostęp SSH.
 
-![cyberduck macOS](images/2349.png){.thumbnail}
+![cyberduck macOS](images/ftp-ssl-connection.png){.thumbnail}
 
 - Jeśli nie wiesz, czy Twój hosting posiada dostęp SSH, przejdź do [opisu naszej oferty](http://www.ovh.pl/hosting/). 
 
@@ -97,7 +97,7 @@ Aby się zalogować do przestrzeni hostingu (FTP), przejdź poniższe etapy:
 
 5. Kliknij na Połączenie, aby się zalogować do przestrzeni dyskowej hostingu (FTP).
 
-![cyberduck macOS](images/2362.png){.thumbnail}
+![cyberduck macOS](images/sftp-connection.png){.thumbnail}
 
 - Możesz zarejestrować hasło w programie Cyberduck zaznaczając pole Zapamiętaj hasło. Wybór ten nie jest obowiązkowy. Jeśli nie zaznaczysz tej opcji, będziesz musiał podawać hasło, aby zalogować się do przestrzeni dyskowej hostingu. 
 
@@ -107,7 +107,7 @@ Po pierwszym zalogowaniu się do przestrzeni dyskowej hostingu pojawi się okno 
 
 - Zaznacz pole Zawsze i kliknij na Zezwalaj. Pozwoli to na zatwierdzenie hosta, z którym się łączysz (serwer OVH).
 
-![cyberduck macOS](images/2363.png){.thumbnail}
+![cyberduck macOS](images/host-unknow-confirmation.png){.thumbnail}
 
 - Zalecamy zarejestrowanie danych do logowania za pomocą Zakładki. Dzięki temu zapiszesz w pamięci niektóre dane do logowania.
 
@@ -122,7 +122,7 @@ Do komunikatu tego dołączana jest informacja 530 Login authentification failed
 
 - Jeśli to konieczne, musisz zmienić utworzoną zakładkę (wybierając ją i klikając na logo w formie ołówka).
 
-![cyberduck macOS](images/2352.png){.thumbnail}
+![cyberduck macOS](images/open-session-failed.png){.thumbnail}
 
 - Jeśli nie znasz danych do logowania do FTP, zapoznaj się w tym przewodnikiem: [Dane do logowania do FTP](http://www.ovh.com/fr/g1374.mettre-mon-site-en-ligne#deposer_mes_fichiers_en_ftp_recuperer_mes_identifiants_ftp).
 
@@ -135,7 +135,7 @@ Do komunikatu tego dołączana jest informacja blue]Timed out waiting for initia
 
 Przyczyną błędu może być również firewall lub sieć lokalna blokująca port 21 lub 22, które są używane do połączenia z FTP. Należy sprawdzić ich konfigurację.
 
-![cyberduck macOS](images/2353.png){.thumbnail}
+![cyberduck macOS](images/connection-failed.png){.thumbnail}
 
 - Przypominamy, że host do połączenia z przestrzenią dyskową hostingu to ftp.twoja_domena.tld (z Twoją nazwą domeny) lub ftp.clusterXXX.ovh.net (zastąp XXX numerem klastra).
 
@@ -150,7 +150,7 @@ Aby dodać zakładkę:
 - Przejdź do wyświetlania Zakładek (niebieska ramka, następnie zielona ramka).
 - Kliknij na logo w formie [+] (pomarańczowa ramka) w dolnej lewej części okna.
 
-![cyberduck macOS](images/2346.png){.thumbnail}
+![cyberduck macOS](images/signet.png){.thumbnail}
 Pojawi się nowe okno z danymi do logowania. Przy kolejnym uruchamianiu aplikacji Cyberduck będziesz mógł dwa razy kliknąć na zakładkę, aby w szybki sposób się zalogować.
 
 ## Transferowanie plików
@@ -162,13 +162,13 @@ Aby przenieść pliki na FTP, możesz wybrać pliki i wykonać operację przeci�
 
 - Po wykonaniu tej operacji pliki zostaną automatycznie umieszczone w kolejce oczekującej na umieszczenie na serwerze. Następnie pojawi się okno.
 
-![cyberduck macOS](images/2354.png){.thumbnail}
+![cyberduck macOS](images/drag-drop-transfert-file.png){.thumbnail}
 Poprzez interfejs transferowania plików
 Masz możliwość skorzystania z interfejsu Transferuj. Otworzy się okno. należy wybrać pliki i kliknąć na Transferuj.
 
 - Po wykonaniu tej operacji pliki zostaną automatycznie umieszczone w kolejce oczekującej na umieszczenie na serwerze. Następnie pojawi się okno.
 
-![cyberduck macOS](images/2355.png){.thumbnail}
+![cyberduck macOS](images/transfert-files.png){.thumbnail}
 Wyświetlanie transferów w trakcie
 Możesz sprawdzać historię transferów na przestrzeń dyskową hostingu. Znajdziesz tutaj:
 
@@ -181,7 +181,7 @@ To okno wyświetla się na dwa różne sposoby:
 - automatycznie po zainicjowaniu transferu, 
 - klikając na Okno i Transfery
 
-![cyberduck macOS](images/2356.png){.thumbnail}
+![cyberduck macOS](images/transfert-files-progression.png){.thumbnail}
 
 ## Operacje dostępne dla pliku/katalogu
 Wybierając plik lub katalog dostępny w ramach przestrzeni dyskowej hostingu (w oknie aplikacji Cyberduck), masz możliwość wykonywania różnych Operacji.
@@ -197,7 +197,7 @@ Pozwalają one na:
 
 Lista ta nie jest pełna. Istnieją inne dostępne operacje.
 
-![cyberduck macOS](images/2357.png){.thumbnail}
+![cyberduck macOS](images/action-on-folder.png){.thumbnail}
 
 ## Uprawnienia dla plików i katalogów
 Możesz zmieniać uprawnienia (CHMOD) dla plików i katalogów znajdujących się na hostingu. 
@@ -216,7 +216,7 @@ W nowym oknie kliknij na  Uprawnienia i dokonaj zmian:
 
 - zaznacz wybrane pola: wartość zaktualizuje się automatycznie dla Uprawnień UNIX
 
-![cyberduck macOS](images/2358.png){.thumbnail}
+![cyberduck macOS](images/unix-permissions.png){.thumbnail}
 
 ## Odblokowanie strony
 Za pomocą spersonalizowanego polecenia możesz odblokować stronę.
@@ -228,7 +228,7 @@ Aby skorzystać z polecenia:
 - Kliknij na Przejdź
 - Kliknij na Wyślij polecenie...
 
-![cyberduck macOS](images/2359.png){.thumbnail}
+![cyberduck macOS](images/send-ftp-command.png){.thumbnail}
 W nowym oknie wpisz polecenie:
 
 - CHMOD 705 /
@@ -238,7 +238,7 @@ Pojawi się komunikat 200 Permissions changed on /.
 
 - Sprawdź, czy strona otwiera się w przeglądarce internetowej.
 
-![cyberduck macOS](images/2360.png){.thumbnail}
+![cyberduck macOS](images/site-chmod-705-command.png){.thumbnail}
 
 - Polecenie to nie działa przez SFTP. Aby użyć tego polecenia, skorzystaj z [połączenia FTP](#utiliser_cyberduck_connexion_ftp).
 
@@ -261,5 +261,5 @@ Pod oknem aplikacji Cyberduck powinna pojawić się ramka. Następnie:
 - Zaloguj się do przestrzeni FTP.
 - Pobierz webmXXX
 
-![cyberduck macOS](images/2364.png){.thumbnail}
+![cyberduck macOS](images/show-hidden-daily.png){.thumbnail}
 
