@@ -1,7 +1,7 @@
 ---
 title: 'Déployer cPanel sur un VPS'
 excerpt: 'Découvrez comment instancier un VPS avec l’application cPanel pré-installée.'
-updated: 2024-01-05
+updated: 2024-01-08
 ---
 
 ## Objectif
@@ -26,7 +26,7 @@ Quand votre VPS est prêt, vous recevez un e-mail vous donnant les accès pour v
 ```
  |    Vos application(s):
  |    Application: cpanel
- |    Vous pouvez vous connecter à cpanel depuis https://<ip>:2087/<session_parameters>
+ |    Vous pouvez vous connecter à cpanel depuis https://<nomduserveur>:2087/<session_parameters>
 ```
 
 Si vous disposez déjà d'un VPS et que vous souhaitez y installer cPanel, vous pouvez réinstaller le VPS à partir de votre [espace client OVHcloud](https://www.ovh.com/auth/?action=gotomanager&from=https://www.ovh.com/fr/&ovhSubsidiary=fr) via un [OS compatible avec cPanel](https://www.ovhcloud.com/en/vps/os/).
@@ -58,7 +58,7 @@ Indiquez les serveurs de messagerie et de noms (nameservers) que vous souhaitez 
 
 ![cPanel](images/change_root.png){.thumbnail}
 
-Vous pouvez maintenant vous connecter à WHM (en SSH également) en utilisant l'utilisateur root avec le mot de passe que vous venez de définir.
+Vous pouvez maintenant vous connecter à votre serveur en SSH en utilisant l'utilisateur root avec le mot de passe que vous venez de définir.
 
 ### Créer un compte cPanel depuis l’interface WHM
 
@@ -83,8 +83,8 @@ Vous pouvez désormais utiliser cPanel. Pour toute information complémentaire c
 > [!primary]
 >
 > Dans la barre de navigation de votre navigateur, entrez les URL suivantes pour vous connecter à :
-> - cPanel : https://<IP_V4>:2083/
-> - WHM : https://<IP_V4>:2087/
+> - cPanel : https://<IP_V4>:2083/ (utilisez les identifiants qui viennent d'être créés dans l'interface WHM)
+> - WHM : https://<IP_V4>:2087/ (utilisez le nom d'utilisateur « root » ainsi que le mot de passe reçu dans l’email d’achat du service ou le mot de passe SSH qui a été modifié dans l’interface WHM)
 >
 > Retrouvez votre adresse IPv4 dans le mail que vous avez reçu suite à la commande de votre VPS avec la > distribution cPanel.
 >
