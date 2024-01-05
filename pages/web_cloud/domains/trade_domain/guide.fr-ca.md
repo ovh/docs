@@ -65,7 +65,7 @@ Un nouvel onglet de votre navigateur s'ouvre avec tous les domaines éligibles a
 
 ![changement de propriétaire](images/3657.PNG){.thumbnail}
 
-Dans le formulaire des détails du propriétaire, veillez à entrer des informations valides dans tous les champs obligatoires. Soyez vigilant sur les erreurs de saisie et utilisez des [caractères imprimables non-ASCII](http://facweb.cs.depaul.edu/sjost/it212/documents/ascii-pr.htm) dans la mesure du possible. Veuillez noter que toute information inexacte ou fausse peut entraîner une erreur technique et donc un retard de l'ensemble du processus d'échange. 
+Dans le formulaire des détails du propriétaire, veillez à entrer des informations valides dans tous les champs obligatoires. Soyez vigilant sur les erreurs de saisie et utilisez des [caractères imprimables ASCII](http://facweb.cs.depaul.edu/sjost/it212/documents/ascii-pr.htm) dans la mesure du possible. Veuillez noter que toute information inexacte ou fausse peut entraîner une erreur technique et donc un retard de l'ensemble du processus d'échange. 
 
 Une fois que vous avez confirmé votre demande d'échange, deux e-mails vous seront envoyés pour confirmer ou annuler cette demande :
 

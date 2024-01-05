@@ -69,7 +69,7 @@ Se abrirá una nueva pestaña de su navegador con todos los dominios compatibles
 
 ![cambio de propietario](images/3657.PNG){.thumbnail}
 
-En el formulario de información del propietario, asegúrese de ingresar información válida en todos los campos obligatorios. Manténgase alerta sobre los errores de entrada y, en la medida de lo posible, utilice [caracteres imprimibles no ASCII](http://facweb.cs.depaul.edu/sjost/it212/documents/ascii-pr.htm). Tenga en cuenta que cualquier información inexacta o falsa puede conllevar un error técnico y, por tanto, un retraso de todo el proceso de intercambio.
+En el formulario de información del propietario, asegúrese de ingresar información válida en todos los campos obligatorios. Manténgase alerta sobre los errores de entrada y, en la medida de lo posible, utilice [caracteres imprimibles ASCII](http://facweb.cs.depaul.edu/sjost/it212/documents/ascii-pr.htm). Tenga en cuenta que cualquier información inexacta o falsa puede conllevar un error técnico y, por tanto, un retraso de todo el proceso de intercambio.
 
 Una vez que haya confirmado su solicitud de cambio, recibirá dos mensajes de correo electrónico para confirmar o cancelar la solicitud.
 

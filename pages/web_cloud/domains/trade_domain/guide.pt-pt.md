@@ -69,7 +69,7 @@ Irá surgir uma nova janela do seu browser com todos os domínios elegíveis par
 
 ![alteração do proprietário](images/3657.PNG){.thumbnail}
 
-No formulário dos detalhes do proprietário, queira introduzir informações válidas em todos os campos obrigatórios. Tenha cuidado com os erros de introdução e, sempre que possível, utilize [caracteres não ASCII](http://facweb.cs.depaul.edu/sjost/it212/documents/ascii-pr.htm). Tenha em conta que qualquer informação incorreta ou falsa pode provocar um erro técnico e, por conseguinte, um atraso no conjunto do processo de intercâmbio.
+No formulário dos detalhes do proprietário, queira introduzir informações válidas em todos os campos obrigatórios. Tenha cuidado com os erros de introdução e, sempre que possível, utilize [caracteres ASCII](http://facweb.cs.depaul.edu/sjost/it212/documents/ascii-pr.htm). Tenha em conta que qualquer informação incorreta ou falsa pode provocar um erro técnico e, por conseguinte, um atraso no conjunto do processo de intercâmbio.
 
 Uma vez confirmado o seu pedido de troca de dados, ser-lhe-ão enviados dois e-mails para confirmar ou anular este pedido:
 
