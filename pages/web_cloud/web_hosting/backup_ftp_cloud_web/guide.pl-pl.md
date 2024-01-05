@@ -57,11 +57,11 @@ Wybierz kartę `FTP - SSH`{.action} i kliknij przycisk `Wygeneruj kopię zapasow
 
 W oknie, które się otworzy wybierz jedną z dostępnych kopii zapasowych, po czym kliknij `Dalej`{.action}.
 
-![kopia zapasowa](images/generate-a-backup2.png){.thumbnail}
+![kopia zapasowa](images/generate-a-backup-step-1.png){.thumbnail}
 
 Pojawi się drugie okno z informacją, że link do pobrania pliku kopii zapasowej zostanie przesłany e-mailem i że OVHcloud nie przywróci automatycznie danych z Twojego hostingu Cloud Web.
 
-![kopia zapasowa](images/generate-a-backup3.png){.thumbnail}
+![kopia zapasowa](images/generate-a-backup-step-2.png){.thumbnail}
 
 Kliknij na `Zatwierdź`{.action}, aby potwierdzić zlecenie.
 

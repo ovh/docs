@@ -52,11 +52,11 @@ Select the `FTP - SSH`{.action} tab and click the `Generate a backup`{.action} b
 
 In the window that opens, select one of the available backups, then click `Next`{.action}.
 
-![backupftpcw](images/generate-a-backup2.png){.thumbnail}
+![backupftpcw](images/generate-a-backup-step-1.png){.thumbnail}
 
 A second window will appear, notifying you that the link to retrieve the backup file will be sent to you by email, and that no automatic restore on your Cloud Web hosting plan will be done by OVHcloud.
 
-![backupftpcw](images/generate-a-backup3.png){.thumbnail}
+![backupftpcw](images/generate-a-backup-step-2.png){.thumbnail}
 
 Click `Confirm`{.action} to confirm your request.
 
