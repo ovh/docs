@@ -110,11 +110,8 @@ For each **TCP** rule, you must choose:
 > **Configuration example:**
 >
 > - Priority 0: Authorise TCP established
->
 > - Priority 1: Authorise UDP source port 53
->
 > - Priority 2: Authorise ICMP
->
 > - Priority 19: Refuse IPv4
 
 > [!warning]

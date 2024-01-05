@@ -1,7 +1,7 @@
 ---
 title: 'Aktywacja i konfiguracja Edge Network Firewall'
 excerpt: 'Dowiedz się, jak skonfigurować Edge Network Firewall dla Twoich usług'
-updated: 2023-12-19
+updated: 2024-01-05
 ---
 
 > [!primary]
@@ -109,10 +109,14 @@ Dla każdej reguły **TCP** należy wybrać:
 | &bull; Priorytet (od 0 do 19, gdzie 0 jest pierwszą zastosowaną regułą) <br>&bull; Akcja (`Accept`{.action} lub `Deny`{.action}) <br>&bull; Protokół <br>&bull; IP źródłowe (opcjonalnie) <br>&bull; Port źródłowy (opcjonalnie) <br>&bull; Port docelowy (opcjonalnie) <br>&bull; Stan TCP (opcjonalnie) <br>&bull; Fragmenty (opcjonalnie)|
 
 > [!primary]
+> Zalecamy autoryzację protokołu TCP za pomocą opcji `established` (dla pakietów, które są częścią poprzednio otwartej/uruchomionej sesji), pakietów ICMP (dla ping i traceroute) oraz opcjonalnie odpowiedzi DNS UDP zewnętrznych serwerów (jeśli używasz zewnętrznych serwerów DNS).
 >
-> - Priorytet 0: Zalecamy autoryzację protokołu TCP dla wszystkich IP z opcją "Established" (ustanowione) {.action}. Opcja ta pozwala sprawdzić, czy pakiet jest częścią poprzednio otwartej sesji (już zainicjowanej). Jeśli na to nie zezwolisz, serwer nie otrzyma zwrotów protokołu TCP z żądań SYN/ACK.
-> - Priorytet 19: Zalecamy odrzucenie całego ruchu protokołu IPv4, który nie został zaakceptowany przez żadną z poprzednich reguł.
-> 
+> **Przykład konfiguracji:**
+>
+> - Priorytet 0: Zezwalaj na TCP `established`
+> - Priorytet 1: Zezwalaj na UDP, port źródłowy 53
+> - Priorytet 2: Zezwalaj na ICMP
+> - Priorytet 19: Odrzuć IPv4
 
 > [!warning]
 > Konfiguracje firewalla zawierające tylko reguły trybu "Akceptuj" nie są w ogóle skuteczne. Instrukcja określająca, który ruch powinien zostać zrzucony przez zaporę. Jeśli nie zostanie utworzona taka reguła, wyświetli się ostrzeżenie.
@@ -138,7 +142,7 @@ Reguły są dezaktywowane do momentu wykrycia ataku, a następnie zostają aktyw
 
 ### Przykład konfiguracji
 
-Aby pozostawić otwarte tylko standardowe porty SSH (22), HTTP (80), HTTPS (443), UDP (10 000) podczas autoryzacji ICMP, należy przestrzegać następujących zasad:
+Aby pozostawić otwarte tylko standardowe porty SSH (22), HTTP (80), HTTPS (443), UDP (53) podczas autoryzacji ICMP, należy przestrzegać następujących zasad:
 
 ![Configuration example](images/exemple.png){.thumbnail}
 

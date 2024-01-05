@@ -1,7 +1,7 @@
 ---
 title: Aktivieren und Konfigurieren der Edge Network Firewall
 excerpt: Erfahren Sie hier, wie Sie die Edge Network Firewall konfigurieren
-updated: 2023-12-19
+updated: 2024-01-05
 ---
 
 > [!primary]
@@ -109,10 +109,14 @@ Für jede **TCP**-Regel müssen Sie Folgendes auswählen:
 | &bull; Eine Priorität (0 bis 19, 0 ist die erste anzuwendende Regel, gefolgt von den anderen) <br>&bull; Eine Aktion (`Accept`{.action} oder `Deny`{.action}) <br>&bull; Das Protokoll <br>&bull; Quell-IP (optional) <br>&bull; Der Quell-Port (optional) <br>&bull; Der Ziel-Port (optional) <br>&bull; Der TCP-Status (optional) <br>&bull; Fragmente (optional)|
 
 > [!primary]
+> Es wird empfohlen, TCP mit der Option `established` (für Pakete, die Teil einer zuvor geöffneten/gestarteten Sitzung sind), ICMP-Pakete (für Ping und Traceroute) und optional DNS-UDP-Antworten von externen Servern zuzulassen (wenn Sie externe DNS-Server verwenden).
 >
-> - Priorität 0: Wir empfehlen die Autorisierung des TCP-Protokolls für alle IPs mit der Option `established`{.action}. Mit dieser Option können Sie überprüfen, ob das Paket Teil einer Sitzung ist, die zuvor geöffnet (bereits gestartet) wurde. Wenn Sie das nicht autorisieren, empfängt der Server kein TCP-Protokoll-Feedback von SYN/ACK Anfragen.
-> - Priorität 19: Wir empfehlen, jeglichen IPv4-Protokollverkehr abzulehnen, der von keiner vorherigen Regel akzeptiert wurde.
-> 
+> **Konfigurationsbeispiel:**
+>
+> - Priorität 0: TCP `established` zulassen
+> - Priorität 1: UDP zulassen, Quellport 53
+> - Priorität 2: ICMP zulassen
+> - Priorität 19: IPv4 ablehnen
 
 > [!warning]
 > Firewall-Setups, die nur akzeptierende Regeln enthalten, sind nicht wirksam. Es muss eine Anweisung geben, welcher Traffic von der Firewall abgelehnt werden soll. Es wird eine Warnung angezeigt, falls eine solche *Deny*-Regel nicht existiert.
@@ -138,7 +142,7 @@ Regeln bleiben deaktiviert, bis ein Angriff erkannt wird und werden dann aktiv. 
 
 ### Konfigurationsbeispiel
 
-Um sicherzustellen, dass bei der Autorisierung des ICMP nur die Standardports für SSH (22), HTTP (80), HTTPS (443) und UDP (10000) geöffnet bleiben, können Sie die folgenden Regeln einsetzen:
+Um sicherzustellen, dass bei der Autorisierung des ICMP nur die Standardports für SSH (22), HTTP (80), HTTPS (443) und UDP (53) geöffnet bleiben, können Sie die folgenden Regeln einsetzen:
 
 ![Konfigurationsbeispiel](images/exemple.png){.thumbnail}
 
