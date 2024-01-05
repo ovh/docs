@@ -1,39 +1,45 @@
 ---
 title: Local Zone Compute - Features, Capabilities and Limitations
 excerpt: Find out about current features, Capabilities and limitations of Local Zones for Public Cloud
-updated: 2024-01-03
+updated: 2024-01-05
 ---
 
 > [!primary]
+> Esta traducción ha sido generada de forma automática por nuestro partner SYSTRAN. En algunos casos puede contener términos imprecisos, como en las etiquetas de los botones o los detalles técnicos. En caso de duda, le recomendamos que consulte la versión inglesa o francesa de la guía. Si quiere ayudarnos a mejorar esta traducción, por favor, utilice el botón "Contribuir" de esta página.
 >
-> Local Zone Compute is currently only deployed as an alpha version. If you experience any difficulties and/or would like to discuss your experience with other users, please contact us on discord <https://discord.gg/ovhcloud>, or get in touch on our community platform: <https://community.ovh.com/en/>.
+
+## Objetivo
+
+> [!primary]
+>
+> Actualmente, las instancias de Local Zone solo se despliegan en versión alfa. Si tiene problemas o quiere hablar de su experiencia con otros usuarios, puede ponerse en contacto con nosotros en Discord <https://discord.gg/ovhcloud> o con nuestra plataforma comunitaria: <https://community.ovh.com/en/>.
 > 
 
-## Objective
+Las instancias Local Zone son una extensión de las regiones que acercan los servicios de OVHcloud a lugares específicos, ofreciendo una latencia reducida y un rendimiento mejorado para las aplicaciones.
+Las instancias Local Zone están situadas estratégicamente cerca de las zonas de alta demanda de los usuarios. Su principal objetivo es minimizar el tiempo necesario para la transferencia de datos entre el usuario y la cloud, con el fin de que los servicios sean más rápidos y reactivos y respondan a las exigencias de Data Residency.
 
-Local Zones are an extension of Regions that bring OVHcloud services closer to specific locations, offering reduced latency and improved performances for applications.
-Local Zones are strategically placed in proximity to areas with high user demand. Their primary goal is to minimize the time it takes for data to travel between the user and the cloud, making services quicker and more responsive.
+Para más información, consulte nuestra [página dedicada a las instancias de Local Zone](https://www.ovhcloud.com/es/public-cloud/local-zone-compute/).
 
-Find more information on our [dedicated Local Zone Compute page](https://www.ovhcloud.com/es/public-cloud/local-zone-compute/).
+**Descubra las funcionalidades y las capacidades actuales y futuras de las instancias de Zonas locales.**
 
-## Available Features
+## Características disponibles
 
-| Action | Alpha (January) |
+| Acción | Alfa (enero) |
 | --- | --- |
-| Instances | Yes |
-| User-data/cloud-init Support | Yes|
-| Add new/existing local private network | Yes |
-| Public IPv6 Support | Yes |
-| Public IPv4 Support | Yes |
-| Boot/Start | Yes |
-| Stop | Yes |
+| Instancias | Sí |
+| Soporte user-data/cloud-init | Sí|
+| Añadir una red privada local nueva o existente | Sí |
+| Soporte IPv6 público | Sí |
+| Soporte IPv4 público | Sí |
+| Boot/Start | Sí |
+| Stop | Sí |
 
-## Capabilities and limitations
+## Capacidades y limitaciones
 
-All instance features which aren't listed here, like rebooting instances, Block or Object Storage support will be released in the next couple months as the goal is to support the entire features set which is supported in global regions.
+Todas las funcionalidades de instancia que no aparecen aquí, como el reinicio (reinicio) de las instancias, la compatibilidad con Block u Object Storage, estarán disponibles en los próximos meses. Nuestro objetivo es admitir todas las funcionalidades que ya son compatibles en las regiones globales.
 
 ## Feedback
 
-Please send us your questions, feedback and suggestions to improve the service:
+No dude en enviarnos sus preguntas, comentarios y sugerencias para mejorar el servicio:
 
-- On the OVHcloud [Discord server](https://discord.gg/ovhcloud)
+- En el [servidor Discord de OVHcloud](https://discord.gg/ovhcloud)

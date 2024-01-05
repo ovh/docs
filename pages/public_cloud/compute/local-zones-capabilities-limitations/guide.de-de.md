@@ -1,39 +1,45 @@
 ---
-title: Local Zone Compute - Features, Capabilities and Limitations
-excerpt: Find out about current features, Capabilities and limitations of Local Zones for Public Cloud
-updated: 2024-01-03
+title: Local Zone Compute - Funktionen, Kapazitäten und Einschränkungen
+excerpt: Informieren Sie sich über die aktuellen Funktionen, Kapazitäten und Einschränkungen von Local Zones-Instanzen
+updated: 2024-01-05
 ---
 
 > [!primary]
+> Diese Übersetzung wurde durch unseren Partner SYSTRAN automatisch erstellt. In manchen Fällen können ungenaue Formulierungen verwendet worden sein, z.B. bei der Beschriftung von Schaltflächen oder technischen Details. Bitte ziehen Sie im Zweifelsfall die englische oder französische Fassung der Anleitung zu Rate. Möchten Sie mithelfen, diese Übersetzung zu verbessern? Dann nutzen Sie dazu bitte den Button "Beitragen" auf dieser Seite.
 >
-> Local Zone Compute is currently only deployed as an alpha version. If you experience any difficulties and/or would like to discuss your experience with other users, please contact us on discord <https://discord.gg/ovhcloud>, or get in touch on our community platform: <https://community.ovh.com/en/>.
+
+## Ziel
+
+> [!primary]
+>
+> Die Local Zone Instances werden derzeit nur in der Alphaversion bereitgestellt. Wenn Sie Schwierigkeiten haben und/oder Ihre Erfahrungen mit anderen Benutzern diskutieren möchten, kontaktieren Sie uns bitte über Discord <https://discord.gg/ovhcloud> oder kontaktieren Sie unsere Community-Plattform: <https://community.ovh.com/en/>.
 > 
 
-## Objective
+Local Zones Instances sind eine Erweiterung von Regionen, die OVHcloud Dienste näher an bestimmten Standorten platzieren und so für reduzierte Latenzen und verbesserte Anwendungsleistung sorgen.
+Die Local Zones-Instanzen befinden sich strategisch in der Nähe von Bereichen mit hoher Benutzeranforderung. Ihr Hauptziel ist es, die für die Übertragung von Daten zwischen dem Benutzer und der Cloud erforderliche Zeit zu minimieren, um die Dienste schneller und reaktionsschneller zu machen und die Anforderungen von Data Residency zu erfüllen.
 
-Local Zones are an extension of Regions that bring OVHcloud services closer to specific locations, offering reduced latency and improved performances for applications.
-Local Zones are strategically placed in proximity to areas with high user demand. Their primary goal is to minimize the time it takes for data to travel between the user and the cloud, making services quicker and more responsive.
+Weitere Informationen finden Sie auf unserer [Seite für Local Zone-Instanzen](https://www.ovhcloud.com/de/public-cloud/local-zone-compute/).
 
-Find more information on our [dedicated Local Zone Compute page](https://www.ovhcloud.com/de/public-cloud/local-zone-compute/).
+**Erfahren Sie mehr über die aktuellen und zukünftigen Funktionen und Funktionen der Local Zones Instanzen.**
 
-## Available Features
+## Verfügbare Funktionen
 
-| Action | Alpha (January) |
+| Aktion | Alpha (Januar) |
 | --- | --- |
-| Instances | Yes |
-| User-data/cloud-init Support | Yes|
-| Add new/existing local private network | Yes |
-| Public IPv6 Support | Yes |
-| Public IPv4 Support | Yes |
-| Boot/Start | Yes |
-| Stop | Yes |
+| Instanzen | Ja |
+| User-data/cloud-init Support | Ja|
+| Neues/vorhandenes privates LAN hinzufügen | Ja |
+| Public IPv6 Support | Ja |
+| Öffentlicher IPv4-Support | Ja |
+| boot/start | Ja |
+| Stopp | Ja |
 
-## Capabilities and limitations
+## Kapazitäten und Einschränkungen
 
-All instance features which aren't listed here, like rebooting instances, Block or Object Storage support will be released in the next couple months as the goal is to support the entire features set which is supported in global regions.
+Alle hier nicht aufgeführten Instanzfunktionen wie Neustart (Reboot) der Instanzen, Unterstützung von Block oder Object Storage werden in den nächsten Monaten verfügbar sein. Unser Ziel ist es, alle Funktionen zu unterstützen, die in globalen Regionen bereits unterstützt werden.
 
 ## Feedback
 
-Please send us your questions, feedback and suggestions to improve the service:
+Zögern Sie nicht, uns Ihre Fragen, Rückmeldungen und Vorschläge zur Verbesserung des Dienstes mitzuteilen:
 
-- On the OVHcloud [Discord server](https://discord.gg/ovhcloud)
+- Auf dem [OVHcloud Discord Server](https://discord.gg/ovhcloud)

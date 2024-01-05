@@ -1,7 +1,7 @@
 ---
 title: Local Zone Compute - Features, Capabilities and Limitations
 excerpt: Find out about current features, Capabilities and limitations of Local Zones for Public Cloud
-updated: 2024-01-03
+updated: 2024-01-05
 ---
 
 > [!primary]
@@ -12,9 +12,11 @@ updated: 2024-01-03
 ## Objective
 
 Local Zones are an extension of Regions that bring OVHcloud services closer to specific locations, offering reduced latency and improved performances for applications.
-Local Zones are strategically placed in proximity to areas with high user demand. Their primary goal is to minimize the time it takes for data to travel between the user and the cloud, making services quicker and more responsive.
+Local Zones are strategically placed in proximity to areas with high user demand. Their main goal is to minimize the time it takes to transfer data between the user and the cloud, in order to make services faster and more responsive, and meet Data residency requirements.
 
 Find more information on our [dedicated Local Zone Compute page](https://www.ovhcloud.com/en-gb/public-cloud/local-zone-compute/).
+
+**Explore the features and capabilities of current and future Local Zones instances.**
 
 ## Available Features
 

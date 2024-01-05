@@ -1,7 +1,7 @@
 ---
 title: Local Zone Compute - Fonctionnalités, capacités et limites
 excerpt: Découvrez les fonctionnalités, les capacités et les limites actuelles des instances Local Zones
-updated: 2024-01-03
+updated: 2024-01-05
 ---
 
 > [!primary]
@@ -12,9 +12,11 @@ updated: 2024-01-03
 ## Objectif
 
 Les instances Local Zones sont une extension des régions qui rapprochent les services OVHcloud de lieux spécifiques, offrant une latence réduite et des performances améliorées pour les applications.
-Les instances Local Zones sont stratégiquement placées à proximité des zones à forte demande des utilisateurs. Leur objectif principal est de minimiser le temps nécessaire au transfert des données entre l'utilisateur et le cloud, afin de rendre les services plus rapides et plus réactifs.
+Les instances Local Zones sont stratégiquement placées à proximité des zones à forte demande des utilisateurs. Leur objectif principal est de minimiser le temps nécessaire au transfert des données entre l'utilisateur et le cloud, afin de rendre les services plus rapides et plus réactifs et de répondre aux exigences de Data residency.
 
 Retrouvez plus d’informations sur notre [page dédiée aux instances Local Zone](https://www.ovhcloud.com/fr/public-cloud/local-zone-compute/).
+
+**Découvrez les fonctionnalités ainsi que les capacités actuelles et à venir des instances Local Zones.**
 
 ## Fonctionnalités disponibles
 
