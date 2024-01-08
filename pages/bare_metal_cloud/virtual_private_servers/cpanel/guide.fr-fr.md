@@ -66,7 +66,7 @@ Indiquez les serveurs de messagerie et de noms (nameservers) que vous souhaitez 
 
 ![cPanel](images/change_root.png){.thumbnail}
 
-Vous pouvez maintenant vous connecter à votre serveur en SSH en utilisant l'utilisateur root avec le mot de passe que vous venez de définir.
+Désormais, vous pouvez vous connecter à votre serveur en SSH en utilisant l'utilisateur root avec le mot de passe que vous venez de définir.
 
 ### Créer un compte cPanel depuis l’interface WHM
 
