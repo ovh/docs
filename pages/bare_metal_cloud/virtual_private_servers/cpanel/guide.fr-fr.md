@@ -90,7 +90,7 @@ Vous pouvez désormais utiliser cPanel. Pour toute information complémentaire c
 
 > [!primary]
 >
-> Dans la barre de navigation de votre navigateur, entrez les URL suivantes pour vous connecter à :
+> Dans la barre de navigation de votre navigateur, entrez les URLs suivantes pour vous connecter à :
 > - cPanel : https://<IP_V4>:2083/ (utilisez les identifiants qui viennent d'être créés dans l'interface WHM)
 > - WHM : https://<IP_V4>:2087/ (utilisez le nom d'utilisateur « root » ainsi que le mot de passe reçu dans l’email d’achat du service ou le mot de passe SSH qui a été modifié dans l’interface WHM)
 >
