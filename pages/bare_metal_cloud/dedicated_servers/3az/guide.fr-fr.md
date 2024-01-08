@@ -31,7 +31,9 @@ Region Selection Tips
 For optimal performance, a region should be selected closest to its users. For global availability, services should be spread across multiple regions. The 3-AZ Region is ideal for customers seeking the highest resilience and should be used to build multi-AZ application designs.
 
 You can list your clusters here with a new tab in the interface:
+   
 ![left_menu](images/02-without-notes-crop-02.png)
+   
 ![list_clusters](images/02-without-notes-crop.png)
 
 When you select your cluster you have the list of the 3 servers inside this one:
