@@ -51,13 +51,13 @@ Die angezeigte Tabelle listet alle Domains und Subdomains auf, die Ihrer Webhost
 > Wenn Sie Ihre Website migrieren und Dienstunterbrechungen vermeiden möchten, folgen Sie [Schritt 3: Ihre Website online stellen](#site-online).
 >
 
-![Multisite](images/access-multisite-ovh.png){.thumbnail}
+![Multisite](images/tab.png){.thumbnail}
 
 ### Schritt 2: Eine Domain oder Subdomain hinzufügen <a name="add-domain"></a>
 
 Um eine neue Domain oder Subdomain zu Ihrem Webhosting hinzuzufügen, klicken Sie links auf den Button `Aktionen`{.action}, dann auf `Eine Domain oder Subdomain hinzufügen`{.action} und wählen Sie den Domainnamen im angezeigten Fenster aus.
 
-![Aktionen](images/actions-multisite-ovh.png){.thumbnail}
+![Aktionen](images/actions-menu.png){.thumbnail}
 
 - **Eine bei OVHcloud registrierte Domain hinzufügen**:
 
@@ -67,7 +67,7 @@ Hier werden nur die Domainnamen bei OVHcloud angezeigt, für die Sie als [techni
 
 Falls die Domain einem anderen Kunden-Account zugeordnet ist oder außerhalb von OVHcloud (externer Provider) registriert ist, wählen Sie `Eine externe Domain hinzufügen`{.action} und klicken Sie auf `Weiter`{.action}. Gehen Sie dann zu [Schritt 2.2: Externe Domain hinzufügen](#add-external-domain).
 
-![Multisite](images/add-multisite-step1.png){.thumbnail}
+![Multisite](images/add-a-domain-or-sub-domain-ovh-step-1.png){.thumbnail}
 
 #### Schritt 2.1: Eine bei OVHcloud registrierte Domain hinzufügen <a name="add-ovhcloud-domain"></a>
 
@@ -79,7 +79,7 @@ Konfigurieren Sie nun das Hinzufügen der Domain oder Subdomain. Je nach Ihrem [
 > [!primary]
 > Um eine Subdomain hinzuzufügen, wählen Sie zuerst die Hauptdomain aus der Liste aus (Beispiel: mydomain.ovh). Im nächsten Schritt können Sie die Subdomain angeben (Beispiel: **blog**.mydomain.ovh).
 
-![multisite](images/add-multisite-step2.png){.thumbnail}
+![multisite](images/add-a-domain-or-sub-domain-ovh-step-2.png){.thumbnail}
 
 |Information|Beschreibung|
 |---|---|
@@ -98,7 +98,7 @@ Konfigurieren Sie nun das Hinzufügen der Domain oder Subdomain. Je nach Ihrem [
 
 Nachdem Sie diese Informationen eingegeben haben, klicken Sie auf `Weiter`{.action}. Überprüfen Sie die angezeigte Zusammenfassung.
 
-![Multisite](images/add-multisite-step3.png){.thumbnail}
+![Multisite](images/add-a-domain-or-sub-domain-ovh-step-3.png){.thumbnail}
 
 Wenn Sie eine bei OVHcloud registrierte Domain ausgewählt haben, können Sie deren DNS-Konfiguration automatisch oder manuell ändern.
 
@@ -125,13 +125,13 @@ Nachdem die Domain hinzugefügt wurde, gehen Sie zu [Schritt 3: Ihre Website onl
 > |---|---|---|
 > |TXT|Tab `Multisite`{.action}, klicken Sie auf `Konfiguration des Tokens ovhcontrol`{.action}|OVHcloud stellt sicher, dass das Hinzufügen jeder externen Domain legitim ist. Achten Sie darauf, den TXT-Eintrag mit der Subdomain `ovhcontrol` (z.B. `ovhcontrol.mydomain.ovh`) in der DNS-Zone zu erstellen, die für die hinzuzufügende Domain zuständig ist.<br></br>Bitte beachten Sie, wenn Sie `blog.mydomain.ovh` hinzufügen möchten, dass der Eintrag für die Subdomain `ovhcontrol.mydomain.ovh` sein muss, und nicht `ovhcontrol.blog.mydomain.ovh`.<br></br> Um die relevante DNS-Zone zu bearbeiten, prüfen Sie, welche [DNS-Server](/pages/web_cloud/domains/dns_server_general_information#dns-konzept-verstehen) Ihre Domain verwendet. Sie müssen nur die Hauptdomain validieren, nicht alle Subdomains.|
 >
-> ![Multisite](images/add-multisite-external-step3.png){.thumbnail}
+> ![Multisite](images/find-token.png){.thumbnail}
 >
 > |Feld|Wo finde ich die Information?|Durchzuführende Maßnahme|
 > |---|---|---|
 > |A und AAAA|Tab `Allgemeine Informationen`{.action}, neben **IPv4** und **IPv6**|Dank diesen beiden Einträgen kann Ihre Domain die Website anzeigen, die Sie auf Ihrem Webhosting online stellen. Weisen Sie Ihre Domain oder Subdomain der IP-Adresse Ihres Hostings zu.|
 >
-> ![Multisite](images/add-multisite-external-step4.png){.thumbnail}
+> ![Multisite](images/find-ipv4-and-ipv6.png){.thumbnail}
 >
 
  Passen Sie nun die Optionen zum Hinzufügen der Domain an. Einige Optionen Ihres [Webhostings](https://www.ovhcloud.com/de/web-hosting/){.external} können nicht direkt beim Hinzufügen der Domain aktiviert werden. Sie können die Optionen erst im Anschluss verwenden, indem Sie die Multisite-Einstellungen ändern, nachdem die Domain hinzugefügt wurde.
@@ -144,11 +144,11 @@ Nachdem die Domain hinzugefügt wurde, gehen Sie zu [Schritt 3: Ihre Website onl
 
 Nachdem Sie diese Informationen eingegeben haben, klicken Sie auf `Weiter`{.action}. Überprüfen Sie die angezeigte Zusammenfassung.
 
-![Multisite](images/add-multisite-external-step1.png){.thumbnail}
+![Multisite](images/add-a-domain-or-sub-domain-external-step-2.png){.thumbnail}
 
 Jedes Hinzufügen einer Domain außerhalb von OVHcloud erfordert eine zusätzliche Validierung. So können wir sicherstellen, dass das Hinzufügen der externen Domain legitim ist. In einer Nachricht werden Sie aufgefordert, die DNS-Konfiguration der Domain zu ändern.
 
-![Multisite](images/add-multisite-external-step2.png){.thumbnail}
+![Multisite](images/add-a-domain-or-sub-domain-external-step-3.png){.thumbnail}
 
 Überprüfen Sie die angezeigten Informationen und klicken Sie dann auf den Button `Bestätigen`{.action}. Die Domain wird nun temporär hinzugefügt, bis Sie die DNS-Konfiguration ändern.
 
