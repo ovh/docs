@@ -1,6 +1,6 @@
 ---
 title: "Actualización del hardware en un servidor dedicado High Grade o Scale"
-excerpt: 'Cómo solicitar la actualización del hardware para las gamas High Grade y SCALE desde el área de cliente'
+excerpt: "Cómo solicitar la actualización del hardware para las gamas High Grade y SCALE desde el área de cliente"
 updated: 2024-01-04
 ---
 

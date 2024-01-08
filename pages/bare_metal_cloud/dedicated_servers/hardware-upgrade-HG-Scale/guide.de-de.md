@@ -66,7 +66,7 @@ Sobald die Bestellung bezahlt wurde, erhalten Sie eine E-Mail mit einem Link, um
 
 Wenn Sie auf den Link in der E-Mail klicken, werden Sie zum Dashboard des Dedicated Servers weitergeleitet. Klicken Sie hier auf `Den Vorgang planen`{.action}.
 
-![schedule intervention](images/scheduleintervention.png){.thumbnail}
+![schedule intervention](images/storageintervention.png){.thumbnail}
 
 Setzen Sie einen Haken unter `Haben Sie bereits ein Backup Ihrer Daten durchgeführt?`{.action} und wählen Sie Datum und Uhrzeit aus den angebotenen Zeitfenstern. Bitte beachten Sie, dass ein Eingriff durch die Techniker in unseren Rechenzentren eine gewisse Vorbereitungszeit erfordert. Das erste Verfügbarkeitsdatum wird daher nach einem Zeitraum von mindestens 10 Tagen festgelegt.
 
