@@ -97,7 +97,6 @@ Vous pouvez désormais utiliser cPanel. Pour toute information complémentaire c
 > Retrouvez votre adresse IPv4 dans le mail que vous avez reçu suite à la commande de votre VPS avec la distribution cPanel.
 >
 
-
 ### Sécurisation de votre service
 
 Nous vous recommandons de prendre toutes les mesures nécessaires pour sécuriser votre WHM et votre VPS. Pour cela, nous vous recommandons de lire les recommandations de cPanel [ici](https://docs.cpanel.net/knowledge-base/security/tips-to-make-your-server-more-secure/).
